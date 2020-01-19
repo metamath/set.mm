@@ -66193,6 +66193,115 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+             Real and complex numbers - basic operations
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Addition
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Commutative/associative law that swaps the first two terms in a triple
+     sum.  (Contributed by NM, 11-May-2004.) $)
+  add12 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( A + ( B + C ) ) = ( B + ( A + C ) ) ) $=
+    ( cc wcel w3a caddc co wceq wa addcom oveq1d 3adant3 addass 3com12 3eqtr3d
+    ) ADEZBDEZCDEZFABGHZCGHZBAGHZCGHZABCGHGHBACGHGHZQRUAUCISQRJTUBCGABKLMABCNRQ
+    SUCUDIBACNOP $.
+
+  $( Commutative/associative law that swaps the last two terms in a triple
+     sum.  (Contributed by NM, 13-Nov-1999.) $)
+  add32 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A + B ) + C ) = ( ( A + C ) + B ) ) $=
+    ( cc wcel w3a caddc co wceq wa addcom oveq2d 3adant1 addass 3com23 3eqtr4d
+    ) ADEZBDEZCDEZFABCGHZGHZACBGHZGHZABGHCGHACGHBGHZRSUAUCIQRSJTUBAGBCKLMABCNQS
+    RUDUCIACBNOP $.
+
+  $( Commutative/associative law that swaps the last two terms in a triple sum,
+     rearranging the parentheses.  (Contributed by Paul Chapman,
+     18-May-2007.) $)
+  add32r $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                          ( A + ( B + C ) ) = ( ( A + C ) + B ) ) $=
+    ( cc wcel w3a caddc co addass add32 eqtr3d ) ADEBDECDEFABGHCGHABCGHGHACGHBG
+    HABCIABCJK $.
+
+  $( Rearrangement of 4 terms in a sum.  (Contributed by NM, 13-Nov-1999.)
+     (Proof shortened by Andrew Salmon, 22-Oct-2011.) $)
+  add4 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+              ( ( A + B ) + ( C + D ) ) = ( ( A + C ) + ( B + D ) ) ) $=
+    ( cc wcel wa caddc wceq add12 3expb oveq2d adantll addcl addass sylan2 an4s
+    co 3expa 3eqtr4d ) AEFZBEFZGZCEFZDEFZGZGABCDHRZHRZHRZACBDHRZHRZHRZABHRUGHRZ
+    ACHRUJHRZUBUFUIULIUAUBUFGUHUKAHUBUDUEUHUKIBCDJKLMUFUCUGEFZUMUIIZCDNUAUBUOUP
+    ABUGOSPUAUDUBUEUNULIZUBUEGUAUDGUJEFZUQBDNUAUDURUQACUJOSPQT $.
+
+  $( Rearrangement of 4 terms in a sum.  (Contributed by NM, 12-May-2005.) $)
+  add42 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+              ( ( A + B ) + ( C + D ) ) = ( ( A + C ) + ( D + B ) ) ) $=
+    ( cc wcel wa caddc co add4 wceq addcom ad2ant2l oveq2d eqtrd ) AEFZBEFZGCEF
+    ZDEFZGGZABHICDHIHIACHIZBDHIZHIUADBHIZHIABCDJTUBUCUAHQSUBUCKPRBDLMNO $.
+
+  ${
+    add.1 $e |- A e. CC $.
+    add.2 $e |- B e. CC $.
+    add.3 $e |- C e. CC $.
+    $( Commutative/associative law that swaps the first two terms in a triple
+       sum.  (Contributed by NM, 21-Jan-1997.) $)
+    add12i $p |- ( A + ( B + C ) ) = ( B + ( A + C ) ) $=
+      ( cc wcel caddc co wceq add12 mp3an ) AGHBGHCGHABCIJIJBACIJIJKDEFABCLM $.
+
+    $( Commutative/associative law that swaps the last two terms in a triple
+       sum.  (Contributed by NM, 21-Jan-1997.) $)
+    add32i $p |- ( ( A + B ) + C ) = ( ( A + C ) + B ) $=
+      ( cc wcel caddc co wceq add32 mp3an ) AGHBGHCGHABIJCIJACIJBIJKDEFABCLM $.
+
+    add4.4 $e |- D e. CC $.
+    $( Rearrangement of 4 terms in a sum.  (Contributed by NM, 9-May-1999.) $)
+    add4i $p |- ( ( A + B ) + ( C + D ) ) = ( ( A + C ) + ( B + D ) ) $=
+      ( cc wcel caddc co wceq add4 mp4an ) AIJBIJCIJDIJABKLCDKLKLACKLBDKLKLMEFG
+      HABCDNO $.
+
+    $( Rearrangement of 4 terms in a sum.  (Contributed by NM, 22-Aug-1999.) $)
+    add42i $p |- ( ( A + B ) + ( C + D ) ) = ( ( A + C ) + ( D + B ) ) $=
+      ( caddc co add4i addcomi oveq2i eqtri ) ABIJCDIJIJACIJZBDIJZIJODBIJZIJABC
+      DEFGHKPQOIBDFHLMN $.
+  $}
+
+  ${
+    addd.1 $e |- ( ph -> A e. CC ) $.
+    addd.2 $e |- ( ph -> B e. CC ) $.
+    addd.3 $e |- ( ph -> C e. CC ) $.
+    $( Commutative/associative law that swaps the first two terms in a triple
+       sum.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    add12d $p |- ( ph -> ( A + ( B + C ) ) = ( B + ( A + C ) ) ) $=
+      ( cc wcel caddc co wceq add12 syl3anc ) ABHICHIDHIBCDJKJKCBDJKJKLEFGBCDMN
+      $.
+
+    $( Commutative/associative law that swaps the last two terms in a triple
+       sum.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    add32d $p |- ( ph -> ( ( A + B ) + C ) = ( ( A + C ) + B ) ) $=
+      ( cc wcel caddc co wceq add32 syl3anc ) ABHICHIDHIBCJKDJKBDJKCJKLEFGBCDMN
+      $.
+
+    add4d.4 $e |- ( ph -> D e. CC ) $.
+    $( Rearrangement of 4 terms in a sum.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    add4d $p |- ( ph ->
+      ( ( A + B ) + ( C + D ) ) = ( ( A + C ) + ( B + D ) ) ) $=
+      ( cc wcel caddc co wceq add4 syl22anc ) ABJKCJKDJKEJKBCLMDELMLMBDLMCELMLM
+      NFGHIBCDEOP $.
+
+    $( Rearrangement of 4 terms in a sum.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    add42d $p |- ( ph ->
+      ( ( A + B ) + ( C + D ) ) = ( ( A + C ) + ( D + B ) ) ) $=
+      ( cc wcel caddc co wceq add42 syl22anc ) ABJKCJKDJKEJKBCLMDELMLMBDLMECLML
+      MNFGHIBCDEOP $.
+  $}
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
