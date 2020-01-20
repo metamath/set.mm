@@ -67888,6 +67888,71 @@ $)
     neii ax-i2m1 3eqtr3g neir ) ABABCZDBCDBBDEBDFPZBDGPZHBIJDIJUNUOKEQBDLMNOUIU
     MBDRSAATSZDRSDBUMBUPDRUMUPABTSBABATUAAUBUCUDUEDUFUGUJUKUHUL $.
 
+  $( Product with negative is negative of product.  Theorem I.12 of [Apostol]
+     p. 18.  (Contributed by NM, 14-May-1999.)  (Proof shortened by Mario
+     Carneiro, 27-May-2016.) $)
+  mulneg1 $p |- ( ( A e. CC /\ B e. CC ) ->
+                 ( -u A x. B ) = -u ( A x. B ) ) $=
+    ( cc wcel wa cmin co cmul cneg wceq subdir mp3an1 simpr mul02d oveq1d eqtrd
+    cc0 0cn df-neg oveq1i 3eqtr4g ) ACDZBCDZEZQAFGZBHGZQABHGZFGZAIZBHGUGIUDUFQB
+    HGZUGFGZUHQCDUBUCUFUKJRQABKLUDUJQUGFUDBUBUCMNOPUIUEBHASTUGSUA $.
+
+  $( The product with a negative is the negative of the product.  (Contributed
+     by NM, 30-Jul-2004.) $)
+  mulneg2 $p |- ( ( A e. CC /\ B e. CC ) ->
+                 ( A x. -u B ) = -u ( A x. B ) ) $=
+    ( cc wcel wa cneg cmul co mulneg1 ancoms negcl mulcom sylan2 negeqd 3eqtr4d
+    wceq ) ACDZBCDZEZBFZAGHZBAGHZFZATGHZABGHZFRQUAUCPBAIJRQTCDUDUAPBKATLMSUEUBA
+    BLNO $.
+
+  $( Swap the negative sign in a product.  (Contributed by NM, 30-Jul-2004.) $)
+  mulneg12 $p |- ( ( A e. CC /\ B e. CC ) ->
+                  ( -u A x. B ) = ( A x. -u B ) ) $=
+    ( cc wcel wa cneg cmul co mulneg1 mulneg2 eqtr4d ) ACDBCDEAFBGHABGHFABFGHAB
+    IABJK $.
+
+  $( Product of two negatives.  Theorem I.12 of [Apostol] p. 18.  (Contributed
+     by NM, 30-Jul-2004.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  mul2neg $p |- ( ( A e. CC /\ B e. CC ) -> ( -u A x. -u B ) = ( A x. B ) ) $=
+    ( cc wcel wa cneg cmul co negcl mulneg12 sylan2 negneg adantl oveq2d eqtrd
+    wceq ) ACDZBCDZEZAFBFZGHZATFZGHZABGHRQTCDUAUCPBIATJKSUBBAGRUBBPQBLMNO $.
+
+  $( Convert a subtraction to addition using multiplication by a negative.
+     (Contributed by NM, 2-Feb-2007.) $)
+  submul2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( A - ( B x. C ) ) = ( A + ( B x. -u C ) ) ) $=
+    ( cc wcel cmul co cmin cneg caddc wceq wa adantl oveq2d mulcl negsub sylan2
+    mulneg2 eqtr2d 3impb ) ADEZBDEZCDEZABCFGZHGZABCIFGZJGZKUAUBUCLZLZUGAUDIZJGZ
+    UEUIUFUJAJUHUFUJKUABCRMNUHUAUDDEUKUEKBCOAUDPQST $.
+
+  $( Product with minus one is negative.  (Contributed by NM, 16-Nov-1999.) $)
+  mulm1 $p |- ( A e. CC -> ( -u 1 x. A ) = -u A ) $=
+    ( cc wcel c1 cneg cmul co wceq ax-1cn mulneg1 mpan mulid2 negeqd eqtrd ) AB
+    CZDEAFGZDAFGZEZAEDBCOPRHIDAJKOQAALMN $.
+
+  $( Product of two differences.  (Contributed by NM, 14-Jan-2006.) $)
+  mulsub $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+               ( ( A - B ) x. ( C - D ) ) =
+       ( ( ( A x. C ) + ( D x. B ) ) - ( ( A x. D ) + ( C x. B ) ) ) ) $=
+    ( cc wcel wa cneg caddc cmul cmin negsub oveqan12d wceq negcl mulneg2 mulcl
+    co ancoms syl2an muladd sylanr2 sylanl2 mul2neg oveq2d negdi eqtr4d ancom2s
+    ad2ant2l an42s oveq12d addcl an4s negsubd 3eqtrd eqtr3d ) AEFZBEFZGZCEFZDEF
+    ZGZGZABHZIRZCDHZIRZJRZABKRZCDKRZJRACJRZDBJRZIRZADJRZCBJRZIRZKRZUSVBVEVIVGVJ
+    JABLCDLMVCVHVKVFVDJRZIRZAVFJRZCVDJRZIRZIRZVMVPHZIRVQURUQVDEFZVBVHWCNZBOVAUQ
+    WEGUTVFEFWFDOAVDCVFUAUBUCVCVSVMWBWDIURVAVSVMNUQUTURVAGZVRVLVKIVAURVRVLNDBUD
+    SUEUIUQVAURUTWBWDNZUQVAGZUTURWHWIUTURGZGWBVNHZVOHZIRZWDWIWJVTWKWAWLIADPCBPM
+    WIVNEFZVOEFZWDWMNWJADQZCBQZVNVOUFTUGUHUJUKVCVMVPUQUTURVAVMEFZUQUTGVKEFVLEFZ
+    WRWGACQVAURWSDBQSVKVLULTUMUQVAURUTVPEFZWIWNWOWTURUTGWPUTURWOWQSVNVOULTUJUNU
+    OUP $.
+
+  $( Swap the order of subtraction in a multiplication.  (Contributed by Scott
+     Fenton, 24-Jun-2013.) $)
+  mulsub2 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+    ( ( A - B ) x. ( C - D ) ) = ( ( B - A ) x. ( D - C ) ) ) $=
+    ( cc wcel wa cmin co cneg cmul wceq subcl syl2an negsubdi2 oveqan12d eqtr3d
+    mul2neg ) AEFBEFGZCEFDEFGZGABHIZJZCDHIZJZKIZUAUCKIZBAHIZDCHIZKISUAEFUCEFUEU
+    FLTABMCDMUAUCRNSTUBUGUDUHKABOCDOPQ $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
