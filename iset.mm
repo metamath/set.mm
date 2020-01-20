@@ -67880,6 +67880,14 @@ $)
       ( cc wcel cc0 cmul co wceq mul01 syl ) ABDEBFGHFICBJK $.
   $}
 
+  $( The imaginary unit ` _i ` is not zero.  (Contributed by NM,
+     6-May-1999.) $)
+  ine0 $p |- _i =/= 0 $=
+    ( ci cc0 wceq c1 0re clt cltrr ax-0lt1 cr wcel wb ltxrlt mp2an mpbir gtneii
+    wbr 1re caddc co cmul oveq2 ax-icn mul01i syl6req oveq1d ax-1cn addid2i mto
+    neii ax-i2m1 3eqtr3g neir ) ABABCZDBCDBBDEBDFPZBDGPZHBIJDIJUNUOKEQBDLMNOUIU
+    MBDRSAATSZDRSDBUMBUPDRUMUPABTSBABATUAAUBUCUDUEDUFUGUJUKUHUL $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
