@@ -48,6 +48,7 @@
 "ax-1re" is used by "1re".
 "ax-addass" is used by "addass".
 "ax-addcl" is used by "addcl".
+"ax-addcom" is used by "addcom".
 "ax-addrcl" is used by "readdcl".
 "ax-cnex" is used by "cnex".
 "ax-cnre" is used by "cnre".
@@ -160,6 +161,8 @@
 "snexgOLD" is used by "uniop".
 "spimh" is used by "spim".
 "spimth" is used by "equveli".
+New usage of "0cnALT" is discouraged (0 uses).
+New usage of "0reALT" is discouraged (0 uses).
 New usage of "19.21h" is discouraged (3 uses).
 New usage of "19.21ht" is discouraged (2 uses).
 New usage of "19.41h" is discouraged (5 uses).
@@ -175,6 +178,7 @@ New usage of "ax-16" is discouraged (0 uses).
 New usage of "ax-1re" is discouraged (1 uses).
 New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
+New usage of "ax-addcom" is discouraged (1 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
@@ -193,6 +197,7 @@ New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
 New usage of "axaddass" is discouraged (0 uses).
 New usage of "axaddcl" is discouraged (0 uses).
+New usage of "axaddcom" is discouraged (0 uses).
 New usage of "axaddrcl" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (0 uses).
 New usage of "axcnre" is discouraged (0 uses).
@@ -255,6 +260,8 @@ New usage of "spimth" is discouraged (1 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
 New usage of "truanOLD" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
+Proof modification of "0cnALT" is discouraged (49 steps).
+Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "a9evsep" is discouraged (63 steps).
 Proof modification of "ax9vsep" is discouraged (19 steps).
 Proof modification of "axi12" is discouraged (47 steps).
