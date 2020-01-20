@@ -18745,6 +18745,20 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
+  ${
+    neii.1 $e |- A =/= B $.
+    $( Inference associated with ~ df-ne .  (Contributed by BJ, 7-Jul-2018.) $)
+    neii $p |- -. A = B $=
+      ( wne wceq wn df-ne mpbi ) ABDABEFCABGH $.
+  $}
+
+  ${
+    neir.1 $e |- -. A = B $.
+    $( Inference associated with ~ df-ne .  (Contributed by BJ, 7-Jul-2018.) $)
+    neir $p |- A =/= B $=
+      ( wne wceq wn df-ne mpbir ) ABDABEFCABGH $.
+  $}
+
   $( Negation of inequality.  (Contributed by Jim Kingdon, 23-Dec-2018.) $)
   nner $p |- ( A = B -> -. A =/= B ) $=
     ( wne wceq wn df-ne biimpi con2i ) ABCZABDZIJEABFGH $.
