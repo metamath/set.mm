@@ -67769,6 +67769,55 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Multiplication
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( k times k minus 1 is a complex number if k is a complex number.
+     (Contributed by Alexander van der Vekens, 11-Mar-2018.) $)
+  kcnktkm1cn $p |- ( K e. CC -> ( K x. ( K - 1 ) ) e. CC ) $=
+    ( cc wcel c1 cmin co id ax-1cn a1i subcld mulcld ) ABCZAADEFLGZLADMDBCLHIJK
+    $.
+
+  $( Product of two sums.  (Contributed by NM, 14-Jan-2006.)  (Proof shortened
+     by Andrew Salmon, 19-Nov-2011.) $)
+  muladd $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+               ( ( A + B ) x. ( C + D ) ) =
+       ( ( ( A x. C ) + ( D x. B ) ) + ( ( A x. D ) + ( C x. B ) ) ) ) $=
+    ( cc wcel wa caddc co cmul wceq addcl 3expa adantrl oveq12d mulcl ad2ant2lr
+    adddir syl2an ad2ant2l adddi adantrr ad2ant2r anandirs add32d mulcom oveq2d
+    3expb sylan ad2ant2rl addassd ancoms 3eqtr3d an4s 3eqtrd ) AEFZBEFZGZCEFZDE
+    FZGZGZABHIZCDHIJIZVCCJIZVCDJIZHIZACJIZBCJIZHIZADJIZBDJIZHIZHIZVHDBJIZHIZVKC
+    BJIZHIHIZURVCEFZVAVDVGKZABLVSUSUTVTVCCDUAUHUIVBVEVJVFVMHURUSVEVJKZUTUPUQUSW
+    AABCRMUBURUTVFVMKZUSUPUQUTWBABDRMNOVBVNVHVMHIZVIHIVPVKHIZVQHIVRVBVHVIVMUPUS
+    VHEFZUQUTACPZUCZUQUSVIEFUPUTBCPQURUTVMEFZUSUPUQUTWHUPUTGVKEFZVLEFZWHUQUTGZA
+    DPZBDPZVKVLLSUDNUEVBWCWDVIVQHVBVHVKHIZVLHIWNVOHIWCWDVBVLVOWNHUQUTVLVOKUPUSB
+    DUFTUGVBVHVKVLWGUPUTWIUQUSWLUJZUQUTWJUPUSWMTUKVBVHVKVOWGWOUQUTVOEFZUPUSUTUQ
+    WPDBPULZTUEUMUQUSVIVQKUPUTBCUFQOVBVPVKVQUPUSUQUTVPEFZUPUSGWEWPWRWKWFWQVHVOL
+    SUNWOUQUSVQEFZUPUTUSUQWSCBPULQUKUOUO $.
+
+  $( Distribution of multiplication over subtraction.  Theorem I.5 of [Apostol]
+     p. 18.  (Contributed by NM, 18-Nov-2004.) $)
+  subdi $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( A x. ( B - C ) ) = ( ( A x. B ) - ( A x. C ) ) ) $=
+    ( cc wcel w3a cmul cmin wceq caddc simp1 simp3 3adant1 adddid pncan3 ancoms
+    co subcl oveq2d mulcl eqtr3d 3adant3 3adant2 wa sylan2 3impb subaddd mpbird
+    eqcomd ) ADEZBDEZCDEZFZABGQZACGQZHQZABCHQZGQZUMUPURIUOURJQZUNIUMACUQJQZGQUS
+    UNUMACUQUJUKULKUJUKULLUKULUQDEZUJBCRZMNUMUTBAGUKULUTBIZUJULUKVCCBOPMSUAUMUN
+    UOURUJUKUNDEULABTUBUJULUODEUKACTUCUJUKULURDEZUKULUDUJVAVDVBAUQTUEUFUGUHUI
+    $.
+
+  $( Distribution of multiplication over subtraction.  Theorem I.5 of [Apostol]
+     p. 18.  (Contributed by NM, 30-Dec-2005.) $)
+  subdir $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A - B ) x. C ) = ( ( A x. C ) - ( B x. C ) ) ) $=
+    ( cc wcel cmin co cmul wceq subdi 3coml wa subcl mulcom sylan 3impa 3adant2
+    w3a 3adant1 oveq12d 3eqtr4d ) ADEZBDEZCDEZRZCABFGZHGZCAHGZCBHGZFGZUFCHGZACH
+    GZBCHGZFGUDUBUCUGUJICABJKUBUCUDUKUGIZUBUCLUFDEUDUNABMUFCNOPUEULUHUMUIFUBUDU
+    LUHIUCACNQUCUDUMUIIUBBCNSTUA $.
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
