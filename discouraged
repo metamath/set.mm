@@ -4069,6 +4069,7 @@
 "chub2i" is used by "qlaxr3i".
 "chub2i" is used by "sumdmdlem2".
 "clmgm" is used by "exidcl".
+"clmgm" is used by "mgmcllaw".
 "cm0" is used by "chirred".
 "cm2j" is used by "cm2ji".
 "cm2ji" is used by "cm2mi".
@@ -4643,6 +4644,7 @@
 "df-m1r" is used by "mappsrpr".
 "df-md" is used by "mdbr".
 "df-metuOLD" is used by "metuvalOLD".
+"df-mgm" is used by "iopmapxp".
 "df-mgm" is used by "ismgm".
 "df-mi" is used by "dmmulpi".
 "df-mi" is used by "mulpiord".
@@ -8781,7 +8783,9 @@
 "isabloi" is used by "cnaddablo".
 "isabloi" is used by "hhssabloi".
 "isabloi" is used by "hilablo".
+"isass" is used by "assasslaw".
 "isass" is used by "issmgrp".
+"isass" is used by "sgrpplusgaop".
 "isblo" is used by "bloln".
 "isblo" is used by "htthlem".
 "isblo" is used by "isblo2".
@@ -8860,7 +8864,9 @@
 "islpolN" is used by "lpolvN".
 "islpoldN" is used by "dochpolN".
 "ismgm" is used by "clmgm".
+"ismgm" is used by "iopmapxp".
 "ismgm" is used by "issmgrp".
+"ismgm" is used by "mgmplusgiop".
 "ismgm" is used by "opidon".
 "ismndo" is used by "ismndo1".
 "ismndo1" is used by "ismndo2".
@@ -14899,7 +14905,7 @@ New usage of "clelabOLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleqfOLD" is discouraged (0 uses).
 New usage of "cleqhOLD" is discouraged (0 uses).
-New usage of "clmgm" is discouraged (1 uses).
+New usage of "clmgm" is discouraged (2 uses).
 New usage of "cm0" is discouraged (1 uses).
 New usage of "cm2j" is discouraged (1 uses).
 New usage of "cm2ji" is discouraged (1 uses).
@@ -15162,7 +15168,7 @@ New usage of "df-ltr" is discouraged (2 uses).
 New usage of "df-m1r" is discouraged (5 uses).
 New usage of "df-md" is discouraged (1 uses).
 New usage of "df-metuOLD" is discouraged (1 uses).
-New usage of "df-mgm" is discouraged (1 uses).
+New usage of "df-mgm" is discouraged (2 uses).
 New usage of "df-mi" is discouraged (2 uses).
 New usage of "df-mndo" is discouraged (3 uses).
 New usage of "df-mnf" is discouraged (3 uses).
@@ -16485,7 +16491,7 @@ New usage of "isablo" is discouraged (6 uses).
 New usage of "isablod" is discouraged (0 uses).
 New usage of "isabloda" is discouraged (1 uses).
 New usage of "isabloi" is discouraged (5 uses).
-New usage of "isass" is discouraged (1 uses).
+New usage of "isass" is discouraged (3 uses).
 New usage of "isblo" is discouraged (5 uses).
 New usage of "isblo2" is discouraged (1 uses).
 New usage of "isblo3i" is discouraged (2 uses).
@@ -16519,7 +16525,7 @@ New usage of "islpoldN" is discouraged (1 uses).
 New usage of "islshpkrN" is discouraged (0 uses).
 New usage of "isltrn2N" is discouraged (0 uses).
 New usage of "islvol2aN" is discouraged (0 uses).
-New usage of "ismgm" is discouraged (3 uses).
+New usage of "ismgm" is discouraged (5 uses).
 New usage of "ismndo" is discouraged (1 uses).
 New usage of "ismndo1" is discouraged (2 uses).
 New usage of "ismndo2" is discouraged (1 uses).
