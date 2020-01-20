@@ -67817,6 +67817,55 @@ $)
     GZBCHGZFGUDUBUCUGUJICABJKUBUCUDUKUGIZUBUCLUFDEUDUNABMUFCNOPUEULUHUMUIFUBUDU
     LUHIUCACNQUCUDUMUIIUBBCNSTUA $.
 
+  ${
+    $d A x y $.
+    $( Multiplication by ` 0 ` .  Theorem I.6 of [Apostol] p. 18.  (Contributed
+       by NM, 10-Aug-1999.) $)
+    mul02 $p |- ( A e. CC -> ( 0 x. A ) = 0 ) $=
+      ( cc wcel cc0 cmul co cmin 0cn subidi oveq1i wceq subdir mp3an12 wa mulcl
+      subidd mpan eqtrd syl5eqr ) ABCZDAEFZDDGFZAEFZDUBDAEDHIJTUCUAUAGFZDDBCZUE
+      TUCUDKHHDDALMUETUDDKHUETNUADAOPQRS $.
+  $}
+
+  $( Zero times a real is zero.  Although we prove it as a corollary of
+     ~ mul02 , the name is for consistency with the Metamath Proof Explorer
+     which proves it before ~ mul02 .  (Contributed by Scott Fenton,
+     3-Jan-2013.) $)
+  mul02lem2 $p |- ( A e. RR -> ( 0 x. A ) = 0 ) $=
+    ( cr wcel cc cc0 cmul co wceq recn mul02 syl ) ABCADCEAFGEHAIAJK $.
+
+  $( Multiplication by ` 0 ` .  Theorem I.6 of [Apostol] p. 18.  (Contributed
+     by NM, 15-May-1999.)  (Revised by Scott Fenton, 3-Jan-2013.) $)
+  mul01 $p |- ( A e. CC -> ( A x. 0 ) = 0 ) $=
+    ( cc wcel cc0 cmul co wceq 0cn mulcom mpan2 mul02 eqtrd ) ABCZADEFZDAEFZDMD
+    BCNOGHADIJAKL $.
+
+  ${
+    mul01i.1 $e |- A e. CC $.
+    $( Multiplication by 0.  Theorem I.6 of [Apostol] p. 18.  (Contributed by
+       NM, 23-Nov-1994.) $)
+    mul02i $p |- ( 0 x. A ) = 0 $=
+      ( cc wcel cc0 cmul co wceq mul02 ax-mp ) ACDEAFGEHBAIJ $.
+
+    $( Multiplication by ` 0 ` .  Theorem I.6 of [Apostol] p. 18.  (Contributed
+       by NM, 23-Nov-1994.)  (Revised by Scott Fenton, 3-Jan-2013.) $)
+    mul01i $p |- ( A x. 0 ) = 0 $=
+      ( cc wcel cc0 cmul co wceq mul01 ax-mp ) ACDAEFGEHBAIJ $.
+  $}
+
+  ${
+    mul01d.1 $e |- ( ph -> A e. CC ) $.
+    $( Multiplication by 0.  Theorem I.6 of [Apostol] p. 18.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    mul02d $p |- ( ph -> ( 0 x. A ) = 0 ) $=
+      ( cc wcel cc0 cmul co wceq mul02 syl ) ABDEFBGHFICBJK $.
+
+    $( Multiplication by ` 0 ` .  Theorem I.6 of [Apostol] p. 18.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    mul01d $p |- ( ph -> ( A x. 0 ) = 0 ) $=
+      ( cc wcel cc0 cmul co wceq mul01 syl ) ABDEBFGHFICBJK $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
