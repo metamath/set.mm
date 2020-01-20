@@ -67953,6 +67953,113 @@ $)
     mul2neg ) AEFBEFGZCEFDEFGZGABHIZJZCDHIZJZKIZUAUCKIZBAHIZDCHIZKISUAEFUCEFUEU
     FLTABMCDMUAUCRNSTUBUGUDUHKABOCDOPQ $.
 
+  ${
+    mulm1.1 $e |- A e. CC $.
+    $( Product with minus one is negative.  (Contributed by NM,
+       31-Jul-1999.) $)
+    mulm1i $p |- ( -u 1 x. A ) = -u A $=
+      ( cc wcel c1 cneg cmul co wceq mulm1 ax-mp ) ACDEFAGHAFIBAJK $.
+
+    mulneg.2 $e |- B e. CC $.
+    $( Product with negative is negative of product.  Theorem I.12 of [Apostol]
+       p. 18.  (Contributed by NM, 10-Feb-1995.)  (Revised by Mario Carneiro,
+       27-May-2016.) $)
+    mulneg1i $p |- ( -u A x. B ) = -u ( A x. B ) $=
+      ( cc wcel cneg cmul co wceq mulneg1 mp2an ) AEFBEFAGBHIABHIGJCDABKL $.
+
+    $( Product with negative is negative of product.  (Contributed by NM,
+       31-Jul-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    mulneg2i $p |- ( A x. -u B ) = -u ( A x. B ) $=
+      ( cc wcel cneg cmul co wceq mulneg2 mp2an ) AEFBEFABGHIABHIGJCDABKL $.
+
+    $( Product of two negatives.  Theorem I.12 of [Apostol] p. 18.
+       (Contributed by NM, 14-Feb-1995.)  (Revised by Mario Carneiro,
+       27-May-2016.) $)
+    mul2negi $p |- ( -u A x. -u B ) = ( A x. B ) $=
+      ( cc wcel cneg cmul co wceq mul2neg mp2an ) AEFBEFAGBGHIABHIJCDABKL $.
+
+    subdi.3 $e |- C e. CC $.
+    $( Distribution of multiplication over subtraction.  Theorem I.5 of
+       [Apostol] p. 18.  (Contributed by NM, 26-Nov-1994.) $)
+    subdii $p |- ( A x. ( B - C ) ) = ( ( A x. B ) - ( A x. C ) ) $=
+      ( cc wcel cmin co cmul wceq subdi mp3an ) AGHBGHCGHABCIJKJABKJACKJIJLDEFA
+      BCMN $.
+
+    $( Distribution of multiplication over subtraction.  Theorem I.5 of
+       [Apostol] p. 18.  (Contributed by NM, 8-May-1999.) $)
+    subdiri $p |- ( ( A - B ) x. C ) = ( ( A x. C ) - ( B x. C ) ) $=
+      ( cc wcel cmin co cmul wceq subdir mp3an ) AGHBGHCGHABIJCKJACKJBCKJIJLDEF
+      ABCMN $.
+
+    muladdi.4 $e |- D e. CC $.
+    $( Product of two sums.  (Contributed by NM, 17-May-1999.) $)
+    muladdi $p |- ( ( A + B ) x. ( C + D ) ) =
+        ( ( ( A x. C ) + ( D x. B ) ) + ( ( A x. D ) + ( C x. B ) ) ) $=
+      ( cc wcel caddc co cmul wceq muladd mp4an ) AIJBIJCIJDIJABKLCDKLMLACMLDBM
+      LKLADMLCBMLKLKLNEFGHABCDOP $.
+  $}
+
+  ${
+    mulm1d.1 $e |- ( ph -> A e. CC ) $.
+    $( Product with minus one is negative.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulm1d $p |- ( ph -> ( -u 1 x. A ) = -u A ) $=
+      ( cc wcel c1 cneg cmul co wceq mulm1 syl ) ABDEFGBHIBGJCBKL $.
+
+    mulnegd.2 $e |- ( ph -> B e. CC ) $.
+    $( Product with negative is negative of product.  Theorem I.12 of [Apostol]
+       p. 18.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    mulneg1d $p |- ( ph -> ( -u A x. B ) = -u ( A x. B ) ) $=
+      ( cc wcel cneg cmul co wceq mulneg1 syl2anc ) ABFGCFGBHCIJBCIJHKDEBCLM $.
+
+    $( Product with negative is negative of product.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    mulneg2d $p |- ( ph -> ( A x. -u B ) = -u ( A x. B ) ) $=
+      ( cc wcel cneg cmul co wceq mulneg2 syl2anc ) ABFGCFGBCHIJBCIJHKDEBCLM $.
+
+    $( Product of two negatives.  Theorem I.12 of [Apostol] p. 18.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    mul2negd $p |- ( ph -> ( -u A x. -u B ) = ( A x. B ) ) $=
+      ( cc wcel cneg cmul co wceq mul2neg syl2anc ) ABFGCFGBHCHIJBCIJKDEBCLM $.
+
+    subdid.3 $e |- ( ph -> C e. CC ) $.
+    $( Distribution of multiplication over subtraction.  Theorem I.5 of
+       [Apostol] p. 18.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    subdid $p |- ( ph -> ( A x. ( B - C ) ) = ( ( A x. B ) - ( A x. C ) ) ) $=
+      ( cc wcel cmin co cmul wceq subdi syl3anc ) ABHICHIDHIBCDJKLKBCLKBDLKJKME
+      FGBCDNO $.
+
+    $( Distribution of multiplication over subtraction.  Theorem I.5 of
+       [Apostol] p. 18.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    subdird $p |- ( ph -> ( ( A - B ) x. C ) = ( ( A x. C ) - ( B x. C ) ) ) $=
+      ( cc wcel cmin co cmul wceq subdir syl3anc ) ABHICHIDHIBCJKDLKBDLKCDLKJKM
+      EFGBCDNO $.
+
+    muladdd.4 $e |- ( ph -> D e. CC ) $.
+    $( Product of two sums.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    muladdd $p |- ( ph -> ( ( A + B ) x. ( C + D ) ) =
+        ( ( ( A x. C ) + ( D x. B ) ) + ( ( A x. D ) + ( C x. B ) ) ) ) $=
+      ( cc wcel caddc co cmul wceq muladd syl22anc ) ABJKCJKDJKEJKBCLMDELMNMBDN
+      MECNMLMBENMDCNMLMLMOFGHIBCDEPQ $.
+
+    $( Product of two differences.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulsubd $p |- ( ph -> ( ( A - B ) x. ( C - D ) ) =
+         ( ( ( A x. C ) + ( D x. B ) ) - ( ( A x. D ) + ( C x. B ) ) ) ) $=
+      ( cc wcel cmin co cmul caddc wceq mulsub syl22anc ) ABJKCJKDJKEJKBCLMDELM
+      NMBDNMECNMOMBENMDCNMOMLMPFGHIBCDEQR $.
+  $}
+
+  ${
+    mulsubfacd.1 $e |- ( ph -> A e. CC ) $.
+    mulsubfacd.2 $e |- ( ph -> B e. CC ) $.
+    $( Multiplication followed by the subtraction of a factor.  (Contributed by
+       Alexander van der Vekens, 28-Aug-2018.) $)
+    mulsubfacd $p |- ( ph -> ( ( A x. B ) - B ) = ( ( A - 1 ) x. B ) ) $=
+      ( c1 cmin co cmul cc wcel ax-1cn a1i subdird mulid2d oveq2d eqtr2d ) ABFG
+      HCIHBCIHZFCIHZGHRCGHABFCDFJKALMENASCRGACEOPQ $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
