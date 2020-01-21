@@ -68061,6 +68061,59 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordering on reals (cont.)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Addition to both sides of 'less than'.  (Contributed by NM,
+       12-Nov-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    ltadd2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                  ( A < B <-> ( C + A ) < ( C + B ) ) ) $=
+      ( vx cr wcel clt wbr caddc co axltadd wceq wi wa readdcld addassd breq12d
+      cc0 recnd cc w3a cv wrex ax-rnegex 3ad2ant3 simpl3 simpl1 syl3anc sylibrd
+      simpl2 simprl simprr wb addcom eqeq1d syl2anc mpbid oveq1d addid2d sylibd
+      eqtrd rexlimddv impbid ) AEFZBEFZCEFZUAZABGHZCAIJZCBIJZGHZABCKVGCDUBZIJZR
+      LZVKVHMDEVFVDVNDEUCVEDCUDUEVGVLEFZVNNZNZVKVLCIJZAIJZVRBIJZGHZVHVQVKVLVIIJ
+      ZVLVJIJZGHZWAVQVIEFVJEFVOVKWDMVQCAVDVEVFVPUFZVDVEVFVPUGZOVQCBWEVDVEVFVPUJ
+      ZOVGVOVNUKZVIVJVLKUHVQVSWBVTWCGVQVLCAVQVLWHSZVQCWESZVQAWFSZPVQVLCBWIWJVQB
+      WGSZPQUIVQVSAVTBGVQVSRAIJAVQVRRAIVQVNVRRLZVGVOVNULVQCTFZVLTFZVNWMUMWJWIWN
+      WONVMVRRCVLUNUOUPUQZURVQAWKUSVAVQVTRBIJBVQVRRBIWPURVQBWLUSVAQUTVBVC $.
+  $}
+
+  ${
+    ltadd2i.1 $e |- A e. RR $.
+    ltadd2i.2 $e |- B e. RR $.
+    ltadd2i.3 $e |- C e. RR $.
+    $( Addition to both sides of 'less than'.  (Contributed by NM,
+       21-Jan-1997.) $)
+    ltadd2i $p |- ( A < B <-> ( C + A ) < ( C + B ) ) $=
+      ( cr wcel clt wbr caddc co wb ltadd2 mp3an ) AGHBGHCGHABIJCAKLCBKLIJMDEFA
+      BCNO $.
+  $}
+
+  ${
+    ltadd2d.1 $e |- ( ph -> A e. RR ) $.
+    ltadd2d.2 $e |- ( ph -> B e. RR ) $.
+    ltadd2d.3 $e |- ( ph -> C e. RR ) $.
+    $( Addition to both sides of 'less than'.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    ltadd2d $p |- ( ph -> ( A < B <-> ( C + A ) < ( C + B ) ) ) $=
+      ( cr wcel clt wbr caddc co wb ltadd2 syl3anc ) ABHICHIDHIBCJKDBLMDCLMJKNE
+      FGBCDOP $.
+
+    ${
+      ltletrd.4 $e |- ( ph -> A < B ) $.
+      $( Addition to both sides of 'less than'.  (Contributed by Mario
+         Carneiro, 30-May-2016.) $)
+      ltadd2dd $p |- ( ph -> ( C + A ) < ( C + B ) ) $=
+        ( clt wbr caddc co ltadd2d mpbid ) ABCIJDBKLDCKLIJHABCDEFGMN $.
+    $}
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
