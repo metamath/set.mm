@@ -68183,6 +68183,15 @@ $)
     co simp3 ) ADEZBDEZCDEZFZABGQCHIACBJQZHIABCJQZHIABCKUBUDUCAHUBBCUBBSTUALMUB
     CSTUARMNOP $.
 
+  $( 'Less than' relationship between addition and subtraction.  (Contributed
+     by NM, 17-Nov-2004.) $)
+  ltaddsub $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A + B ) < C <-> A < ( C - B ) ) ) $=
+    ( cr wcel w3a co clt wbr caddc wb simp1 simp3 simp2 resubcld ltadd1 syl3anc
+    cmin recnd npcand breq2d bitr2d ) ADEZBDEZCDEZFZACBRGZHIZABJGZUGBJGZHIZUICH
+    IUFUCUGDEUDUHUKKUCUDUELUFCBUCUDUEMZUCUDUENZOUMAUGBPQUFUJCUIHUFCBUFCULSUFBUM
+    STUAUB $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
