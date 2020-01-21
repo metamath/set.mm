@@ -68148,6 +68148,41 @@ $)
     breq12d ) ADEZBDEZCDEZFZABGHACIJZBCIJZGHCAIJZCBIJZGHABCKUBUCUEUDUFGUBACUBAS
     TUALMUBCSTUANMZOUBBCUBBSTUAPMUGORQ $.
 
+  $( 'Less than' relationship between subtraction and addition.  (Contributed
+     by NM, 21-Jan-1997.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  ltsubadd $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                  ( ( A - B ) < C <-> A < ( C + B ) ) ) $=
+    ( cr wcel w3a co clt wbr caddc wb simp1 simp2 resubcld simp3 ltadd1 syl3anc
+    cmin recnd npcand breq1d bitrd ) ADEZBDEZCDEZFZABRGZCHIZUGBJGZCBJGZHIZAUJHI
+    UFUGDEUEUDUHUKKUFABUCUDUELZUCUDUEMZNUCUDUEOUMUGCBPQUFUIAUJHUFABUFAULSUFBUMS
+    TUAUB $.
+
+  $( 'Less than' relationship between subtraction and addition.  (Contributed
+     by NM, 21-Jan-1997.) $)
+  ltsubadd2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A - B ) < C <-> A < ( B + C ) ) ) $=
+    ( cr wcel w3a cmin clt wbr caddc ltsubadd simp2 recnd addcomd breq2d bitr4d
+    co simp3 ) ADEZBDEZCDEZFZABGQCHIACBJQZHIABCJQZHIABCKUBUDUCAHUBBCUBBSTUALMUB
+    CSTUARMNOP $.
+
+  $( 'Less than or equal to' relationship between subtraction and addition.
+     (Contributed by NM, 17-Nov-2004.)  (Proof shortened by Mario Carneiro,
+     27-May-2016.) $)
+  lesubadd $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A - B ) <_ C <-> A <_ ( C + B ) ) ) $=
+    ( cr wcel w3a co cle wbr caddc wb simp1 simp2 resubcld simp3 leadd1 syl3anc
+    cmin recnd npcand breq1d bitrd ) ADEZBDEZCDEZFZABRGZCHIZUGBJGZCBJGZHIZAUJHI
+    UFUGDEUEUDUHUKKUFABUCUDUELZUCUDUEMZNUCUDUEOUMUGCBPQUFUIAUJHUFABUFAULSUFBUMS
+    TUAUB $.
+
+  $( 'Less than or equal to' relationship between subtraction and addition.
+     (Contributed by NM, 10-Aug-1999.) $)
+  lesubadd2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A - B ) <_ C <-> A <_ ( B + C ) ) ) $=
+    ( cr wcel w3a cmin cle wbr caddc lesubadd simp2 recnd addcomd breq2d bitr4d
+    co simp3 ) ADEZBDEZCDEZFZABGQCHIACBJQZHIABCJQZHIABCKUBUDUCAHUBBCUBBSTUALMUB
+    CSTUARMNOP $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
