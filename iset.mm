@@ -68209,6 +68209,51 @@ $)
     IUFUCUGDEUDUHUKKUCUDUELUFCBUCUDUEMZUCUDUENZOUMAUGBPQUFUJCUIHUFCBUFCULSUFBUM
     STUAUB $.
 
+  $( 'Less than or equal to' relationship between and addition and
+     subtraction.  (Contributed by NM, 6-Apr-2005.) $)
+  leaddsub2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A + B ) <_ C <-> B <_ ( C - A ) ) ) $=
+    ( cr wcel w3a caddc co cle wbr cmin wceq cc addcom syl2an 3adant3 breq1d wb
+    recn leaddsub 3com12 bitrd ) ADEZBDEZCDEZFZABGHZCIJBAGHZCIJZBCAKHIJZUFUGUHC
+    IUCUDUGUHLZUEUCAMEBMEUKUDASBSABNOPQUDUCUEUIUJRBACTUAUB $.
+
+  $( Swap subtrahends in an inequality.  (Contributed by NM, 29-Sep-2005.) $)
+  suble $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A - B ) <_ C <-> ( A - C ) <_ B ) ) $=
+    ( cr wcel w3a cmin co cle wbr caddc lesubadd wb lesubadd2 3com23 bitr4d ) A
+    DEZBDEZCDEZFABGHCIJACBKHIJZACGHBIJZABCLQSRUATMACBNOP $.
+
+  $( Swap subtrahends in an inequality.  (Contributed by NM, 29-Sep-2005.)
+     (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  lesub $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( A <_ ( B - C ) <-> C <_ ( B - A ) ) ) $=
+    ( cr wcel cmin co cle wbr wb w3a caddc leaddsub leaddsub2 bitr3d 3com23 ) A
+    DEZCDEZBDEZABCFGHIZCBAFGHIZJQRSKACLGBHITUAACBMACBNOP $.
+
+  $( 'Less than' relationship between subtraction and addition.  (Contributed
+     by NM, 4-Oct-1999.) $)
+  ltsub23 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A - B ) < C <-> ( A - C ) < B ) ) $=
+    ( cr wcel w3a cmin co clt wbr caddc ltsubadd wb ltsubadd2 3com23 bitr4d ) A
+    DEZBDEZCDEZFABGHCIJACBKHIJZACGHBIJZABCLQSRUATMACBNOP $.
+
+  $( 'Less than' relationship between subtraction and addition.  (Contributed
+     by NM, 17-Nov-2004.) $)
+  ltsub13 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( A < ( B - C ) <-> C < ( B - A ) ) ) $=
+    ( cr wcel cmin co clt wbr wb w3a caddc ltaddsub ltaddsub2 bitr3d 3com23 ) A
+    DEZCDEZBDEZABCFGHIZCBAFGHIZJQRSKACLGBHITUAACBMACBNOP $.
+
+  $( Adding both sides of two 'less than or equal to' relations.  (Contributed
+     by NM, 17-Apr-2005.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  le2add $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+                ( ( A <_ C /\ B <_ D ) -> ( A + B ) <_ ( C + D ) ) ) $=
+    ( cr wcel wa cle wbr caddc co wb simpll simprl simplr leadd1 syl3anc simprr
+    leadd2 readdcld anbi12d wi letr sylbid ) AEFZBEFZGZCEFZDEFZGZGZACHIZBDHIZGA
+    BJKZCBJKZHIZUOCDJKZHIZGZUNUQHIZUKULUPUMURUKUEUHUFULUPLUEUFUJMZUGUHUINZUEUFU
+    JOZACBPQUKUFUIUHUMURLVCUGUHUIRZVBBDCSQUAUKUNEFUOEFUQEFUSUTUBUKABVAVCTUKCBVB
+    VCTUKCDVBVDTUNUOUQUCQUD $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
