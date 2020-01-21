@@ -68131,6 +68131,23 @@ $)
     breq12d ) ADEZBDEZCDEZFZABGHCAIJZCBIJZGHACIJZBCIJZGHABCKUBUCUEUDUFGUBCAUBCS
     TUALMZUBASTUANMOUBCBUGUBBSTUAPMORQ $.
 
+  $( Addition to both sides of 'less than or equal to'.  (Contributed by NM,
+     18-Oct-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  leadd1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A <_ B <-> ( A + C ) <_ ( B + C ) ) ) $=
+    ( cr w3a clt wbr wn caddc co cle wb ltadd1 3com12 notbid simp1 simp2 lenltd
+    wcel readdcld simp3 3bitr4d ) ADSZBDSZCDSZEZBAFGZHBCIJZACIJZFGZHABKGUIUHKGU
+    FUGUJUDUCUEUGUJLBACMNOUFABUCUDUEPZUCUDUEQZRUFUIUHUFACUKUCUDUEUAZTUFBCULUMTR
+    UB $.
+
+  $( Addition to both sides of 'less than or equal to'.  (Contributed by NM,
+     26-Oct-1999.) $)
+  leadd2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A <_ B <-> ( C + A ) <_ ( C + B ) ) ) $=
+    ( cr wcel w3a cle wbr caddc co leadd1 simp1 recnd simp3 addcomd simp2 bitrd
+    breq12d ) ADEZBDEZCDEZFZABGHACIJZBCIJZGHCAIJZCBIJZGHABCKUBUCUEUDUFGUBACUBAS
+    TUALMUBCSTUANMZOUBBCUBBSTUAPMUGORQ $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
