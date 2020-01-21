@@ -68113,6 +68113,24 @@ $)
     $}
   $}
 
+  $( Positive implies nonzero.  (Contributed by NM, 3-Oct-1999.)  (Proof
+     shortened by Mario Carneiro, 27-May-2016.) $)
+  gt0ne0 $p |- ( ( A e. RR /\ 0 < A ) -> A =/= 0 ) $=
+    ( cr wcel cc0 clt wbr wne 0red ltne sylan ) ABCZDBCDAEFADGKHDAIJ $.
+
+  $( A number which is less than zero is not zero.  (Contributed by Stefan
+     O'Rear, 13-Sep-2014.) $)
+  lt0ne0 $p |- ( ( A e. RR /\ A < 0 ) -> A =/= 0 ) $=
+    ( cr wcel cc0 clt wbr wa ltne necomd ) ABCADEFGDAADHI $.
+
+  $( Addition to both sides of 'less than'.  (Contributed by NM, 12-Nov-1999.)
+     (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  ltadd1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A < B <-> ( A + C ) < ( B + C ) ) ) $=
+    ( cr wcel w3a clt wbr caddc co ltadd2 simp3 recnd simp1 addcomd simp2 bitrd
+    breq12d ) ADEZBDEZCDEZFZABGHCAIJZCBIJZGHACIJZBCIJZGHABCKUBUCUEUDUFGUBCAUBCS
+    TUALMZUBASTUANMOUBCBUGUBBSTUAPMORQ $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
