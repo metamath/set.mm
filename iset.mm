@@ -68200,6 +68200,15 @@ $)
     recn ltaddsub 3com12 bitrd ) ADEZBDEZCDEZFZABGHZCIJBAGHZCIJZBCAKHIJZUFUGUHC
     IUCUDUGUHLZUEUCAMEBMEUKUDASBSABNOPQUDUCUEUIUJRBACTUAUB $.
 
+  $( 'Less than or equal to' relationship between addition and subtraction.
+     (Contributed by NM, 6-Apr-2005.) $)
+  leaddsub $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A + B ) <_ C <-> A <_ ( C - B ) ) ) $=
+    ( cr wcel w3a co cle wbr caddc wb simp1 simp3 simp2 resubcld leadd1 syl3anc
+    cmin recnd npcand breq2d bitr2d ) ADEZBDEZCDEZFZACBRGZHIZABJGZUGBJGZHIZUICH
+    IUFUCUGDEUDUHUKKUCUDUELUFCBUCUDUEMZUCUDUENZOUMAUGBPQUFUJCUIHUFCBUFCULSUFBUM
+    STUAUB $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
