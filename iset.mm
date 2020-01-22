@@ -68265,6 +68265,13 @@ $)
     UJOZACBPQUKBDCVCUGUHUIRZVBSUAUKUNEFUOEFUQEFUSUTUBUKABVAVCTUKCBVBVCTUKCDVBVD
     TUNUOUQUCQUD $.
 
+  $( The sum of 2 positive numbers is positive.  (Contributed by NM,
+     1-Jun-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  addgt0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 < A /\ 0 < B ) ) ->
+                0 < ( A + B ) ) $=
+    ( cr wcel wa cc0 clt wbr caddc co 00id wi 0re lt2add mpanl12 imp syl5eqbrr
+    ) ACDBCDEZFAGHFBGHEZEFFFIJZABIJZGKRSTUAGHZFCDZUCRSUBLMMFFABNOPQ $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
