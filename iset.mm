@@ -68254,6 +68254,17 @@ $)
     JOZACBPQUKUFUIUHUMURLVCUGUHUIRZVBBDCSQUAUKUNEFUOEFUQEFUSUTUBUKABVAVCTUKCBVB
     VCTUKCDVBVDTUNUOUQUCQUD $.
 
+  $( Adding both sides of two 'less than' relations.  Theorem I.25 of [Apostol]
+     p. 20.  (Contributed by NM, 15-Aug-1999.)  (Proof shortened by Mario
+     Carneiro, 27-May-2016.) $)
+  lt2add $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+                ( ( A < C /\ B < D ) -> ( A + B ) < ( C + D ) ) ) $=
+    ( cr wcel wa clt wbr caddc co wb simpll simprl simplr ltadd1 syl3anc simprr
+    ltadd2d readdcld anbi12d wi lttr sylbid ) AEFZBEFZGZCEFZDEFZGZGZACHIZBDHIZG
+    ABJKZCBJKZHIZUOCDJKZHIZGZUNUQHIZUKULUPUMURUKUEUHUFULUPLUEUFUJMZUGUHUINZUEUF
+    UJOZACBPQUKBDCVCUGUHUIRZVBSUAUKUNEFUOEFUQEFUSUTUBUKABVAVCTUKCBVBVCTUKCDVBVD
+    TUNUOUQUCQUD $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
