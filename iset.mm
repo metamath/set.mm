@@ -65855,6 +65855,15 @@ $)
     PNZUJUKULUPOZABPQRSURUQTURUOUSUQUAZUMUNUOUBURUKULUJUOVCUCVBUJUKULUPUDVABCAU
     EUFUGUHUI $.
 
+  $( Transitive law.  Part of Definition 11.2.7(vi) of [HoTT], p.  (varies).
+     (Contributed by NM, 25-Aug-1999.) $)
+  ltletr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A < B /\ B <_ C ) -> A < C ) ) $=
+    ( cr wcel w3a clt wbr cle wa wn simprr wb simpl2 simpl3 lenlt syl2anc mpbid
+    wo simprl wi axltwlin adantr mpd ecased ex ) ADEZBDEZCDEZFZABGHZBCIHZJZACGH
+    ZUJUMJZUNCBGHZUOULUPKZUJUKULLUOUHUIULUQMUGUHUIUMNUGUHUIUMOBCPQRUOUKUNUPSZUJ
+    UKULTUJUKURUAUMABCUBUCUDUEUF $.
+
   $( 'Less than' is antisymmetric and irreflexive.  (Contributed by NM,
      13-Aug-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
   ltnsym2 $p |- ( ( A e. RR /\ B e. RR ) -> -. ( A < B /\ B < A ) ) $=
@@ -65935,6 +65944,12 @@ $)
          NM, 14-May-1999.) $)
       lelttri $p |- ( ( A <_ B /\ B < C ) -> A < C ) $=
         ( cr wcel cle wbr clt wa wi lelttr mp3an ) AGHBGHCGHABIJBCKJLACKJMDEFAB
+        CNO $.
+
+      $( 'Less than', 'less than or equal to' transitive law.  (Contributed by
+         NM, 14-May-1999.) $)
+      ltletri $p |- ( ( A < B /\ B <_ C ) -> A < C ) $=
+        ( cr wcel clt wbr cle wa wi ltletr mp3an ) AGHBGHCGHABIJBCKJLACIJMDEFAB
         CNO $.
 
       $( 'Less than or equal to' is transitive.  (Contributed by NM,
@@ -68136,6 +68151,13 @@ $)
          Carneiro, 30-May-2016.) $)
       ltadd2dd $p |- ( ph -> ( C + A ) < ( C + B ) ) $=
         ( clt wbr caddc co ltadd2d mpbid ) ABCIJDBKLDCKLIJHABCDEFGMN $.
+
+      ltletrd.5 $e |- ( ph -> B <_ C ) $.
+      $( Transitive law deduction for 'less than', 'less than or equal to'.
+         (Contributed by NM, 9-Jan-2006.) $)
+      ltletrd $p |- ( ph -> A < C ) $=
+        ( clt wbr cle cr wcel wa wi ltletr syl3anc mp2and ) ABCJKZCDLKZBDJKZHIA
+        BMNCMNDMNTUAOUBPEFGBCDQRS $.
     $}
   $}
 
