@@ -68446,6 +68446,36 @@ $)
     ( cr wcel wa cc0 cle wbr caddc co addge01 cc wceq recn addcom syl2an breq2d
     bitrd ) ACDZBCDZEZFBGHAABIJZGHABAIJZGHABKUAUBUCAGSALDBLDUBUCMTANBNABOPQR $.
 
+  $( Nonnegative subtraction.  (Contributed by NM, 14-Mar-2005.)  (Proof
+     shortened by Mario Carneiro, 27-May-2016.) $)
+  subge0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( 0 <_ ( A - B ) <-> B <_ A ) ) $=
+    ( cr wcel wa cc0 caddc co cle wbr cmin wb 0red simpr simpl leaddsub syl3anc
+    recnd addid2d breq1d bitr3d ) ACDZBCDZEZFBGHZAIJZFABKHIJZBAIJUDFCDUCUBUFUGL
+    UDMUBUCNZUBUCOFBAPQUDUEBAIUDBUDBUHRSTUA $.
+
+  $( Nonpositive subtraction.  (Contributed by NM, 20-Mar-2008.)  (Proof
+     shortened by Mario Carneiro, 27-May-2016.) $)
+  suble0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( ( A - B ) <_ 0 <-> A <_ B ) ) $=
+    ( cr wcel wa cmin co cc0 cle wbr wb suble mp3an3 simpl recnd subid1d breq1d
+    0re bitrd ) ACDZBCDZEZABFGHIJZAHFGZBIJZABIJTUAHCDUCUEKRABHLMUBUDABIUBAUBATU
+    ANOPQS $.
+
+  $( The sum of a real number and a second real number is less then the real
+     number iff the second real number is negative.  (Contributed by Alexander
+     van der Vekens, 30-May-2018.) $)
+  leaddle0 $p |- ( ( A e. RR /\ B e. RR ) -> ( ( A + B ) <_ A <-> B <_ 0 ) ) $=
+    ( cr wcel wa caddc co cle wbr cmin wb leaddsub2 3anidm13 wceq subidd adantr
+    cc0 recn breq2d bitrd ) ACDZBCDZEZABFGAHIZBAAJGZHIZBQHIUAUBUDUFKABALMUCUEQB
+    HUAUEQNUBUAAAROPST $.
+
+  $( Nonnegative subtraction.  (Contributed by NM, 27-Jul-2005.) $)
+  subge02 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( 0 <_ B <-> ( A - B ) <_ A ) ) $=
+    ( cr wcel wa cc0 cle wbr caddc co cmin addge01 wb lesubadd 3anidm13 bitr4d
+    ) ACDZBCDZEFBGHAABIJGHZABKJAGHZABLQRTSMABANOP $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
