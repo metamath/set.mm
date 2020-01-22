@@ -68433,6 +68433,19 @@ $)
     ( cr wcel cc0 cle wbr cneg wb 0re leneg mpan neg0 breq2i syl6bb ) ABCZDAEFZ
     AGZDGZEFZQDEFDBCOPSHIDAJKRDQELMN $.
 
+  $( A number is less than or equal to itself plus a nonnegative number.
+     (Contributed by NM, 21-Feb-2005.) $)
+  addge01 $p |- ( ( A e. RR /\ B e. RR ) -> ( 0 <_ B <-> A <_ ( A + B ) ) ) $=
+    ( cr wcel wa cc0 cle wbr caddc co wb leadd2 mp3an1 ancoms wceq recn addid1d
+    0re adantr breq1d bitrd ) ACDZBCDZEZFBGHZAFIJZABIJZGHZAUGGHUCUBUEUHKZFCDUCU
+    BUIRFBALMNUDUFAUGGUBUFAOUCUBAAPQSTUA $.
+
+  $( A number is less than or equal to itself plus a nonnegative number.
+     (Contributed by NM, 27-Jul-2005.) $)
+  addge02 $p |- ( ( A e. RR /\ B e. RR ) -> ( 0 <_ B <-> A <_ ( B + A ) ) ) $=
+    ( cr wcel wa cc0 cle wbr caddc co addge01 cc wceq recn addcom syl2an breq2d
+    bitrd ) ACDZBCDZEZFBGHAABIJZGHABAIJZGHABKUAUBUCAGSALDBLDUBUCMTANBNABOPQR $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
