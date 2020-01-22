@@ -68374,6 +68374,65 @@ $)
     co wb ) ACDZBCDZEABFGZHBIQZHAIQZFGZBJZAJZFGSTHCDUAUDRKABHLMUEUBUFUCFBNANOP
     $.
 
+  $( Contraposition of negative in 'less than'.  (Contributed by NM,
+     8-Nov-2004.) $)
+  ltnegcon1 $p |- ( ( A e. RR /\ B e. RR ) -> ( -u A < B <-> -u B < A ) ) $=
+    ( cr wcel wa cneg clt wbr wb renegcl ltneg sylan simpl recnd negnegd breq2d
+    bitrd ) ACDZBCDZEZAFZBGHZBFZUAFZGHZUCAGHRUACDSUBUEIAJUABKLTUDAUCGTATARSMNOP
+    Q $.
+
+  $( Contraposition of negative in 'less than'.  (Contributed by Mario
+     Carneiro, 25-Feb-2015.) $)
+  ltnegcon2 $p |- ( ( A e. RR /\ B e. RR ) -> ( A < -u B <-> B < -u A ) ) $=
+    ( cr wcel wa cneg clt wbr wb renegcl ltneg sylan2 simpr recnd negnegd bitrd
+    breq1d ) ACDZBCDZEZABFZGHZUAFZAFZGHZBUDGHSRUACDUBUEIBJAUAKLTUCBUDGTBTBRSMNO
+    QP $.
+
+  $( Negative of both sides of 'less than or equal to'.  (Contributed by NM,
+     12-Sep-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  leneg $p |- ( ( A e. RR /\ B e. RR ) -> ( A <_ B <-> -u B <_ -u A ) ) $=
+    ( cr wcel wa cle wbr cc0 cmin cneg 0re lesub2 mp3an3 df-neg breq12i syl6bbr
+    co wb ) ACDZBCDZEABFGZHBIQZHAIQZFGZBJZAJZFGSTHCDUAUDRKABHLMUEUBUFUCFBNANOP
+    $.
+
+  $( Contraposition of negative in 'less than or equal to'.  (Contributed by
+     NM, 10-May-2004.) $)
+  lenegcon1 $p |- ( ( A e. RR /\ B e. RR ) -> ( -u A <_ B <-> -u B <_ A ) ) $=
+    ( cr wcel wa cneg cle wbr wb renegcl leneg sylan recn negnegd breq2d adantr
+    bitrd ) ACDZBCDZEAFZBGHZBFZTFZGHZUBAGHZRTCDSUAUDIAJTBKLRUDUEISRUCAUBGRAAMNO
+    PQ $.
+
+  $( Contraposition of negative in 'less than or equal to'.  (Contributed by
+     NM, 8-Oct-2005.) $)
+  lenegcon2 $p |- ( ( A e. RR /\ B e. RR ) -> ( A <_ -u B <-> B <_ -u A ) ) $=
+    ( cr wcel wa cneg cle wbr wb renegcl sylan2 wceq recn negnegd adantl breq1d
+    leneg bitrd ) ACDZBCDZEZABFZGHZUBFZAFZGHZBUEGHTSUBCDUCUFIBJAUBQKUAUDBUEGTUD
+    BLSTBBMNOPR $.
+
+  $( Comparison of a number and its negative to zero.  Theorem I.23 of
+     [Apostol] p. 20.  (Contributed by NM, 14-May-1999.) $)
+  lt0neg1 $p |- ( A e. RR -> ( A < 0 <-> 0 < -u A ) ) $=
+    ( cr wcel cc0 clt wbr cneg wb 0re ltneg mpan2 neg0 breq1i syl6bb ) ABCZADEF
+    ZDGZAGZEFZDREFODBCPSHIADJKQDRELMN $.
+
+  $( Comparison of a number and its negative to zero.  (Contributed by NM,
+     10-May-2004.) $)
+  lt0neg2 $p |- ( A e. RR -> ( 0 < A <-> -u A < 0 ) ) $=
+    ( cr wcel cc0 clt wbr cneg wb 0re ltneg mpan neg0 breq2i syl6bb ) ABCZDAEFZ
+    AGZDGZEFZQDEFDBCOPSHIDAJKRDQELMN $.
+
+  $( Comparison of a number and its negative to zero.  (Contributed by NM,
+     10-May-2004.) $)
+  le0neg1 $p |- ( A e. RR -> ( A <_ 0 <-> 0 <_ -u A ) ) $=
+    ( cr wcel cc0 cle wbr cneg wb 0re leneg mpan2 neg0 breq1i syl6bb ) ABCZADEF
+    ZDGZAGZEFZDREFODBCPSHIADJKQDRELMN $.
+
+  $( Comparison of a number and its negative to zero.  (Contributed by NM,
+     24-Aug-1999.) $)
+  le0neg2 $p |- ( A e. RR -> ( 0 <_ A <-> -u A <_ 0 ) ) $=
+    ( cr wcel cc0 cle wbr cneg wb 0re leneg mpan neg0 breq2i syl6bb ) ABCZDAEFZ
+    AGZDGZEFZQDEFDBCOPSHIDAJKRDQELMN $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
