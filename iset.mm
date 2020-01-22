@@ -68313,12 +68313,44 @@ $)
     UJOZACBPQUKBDCVCUGUHUIRZVBSUAUKUNEFUOEFUQEFUSUTUBUKABVAVCTUKCBVBVCTUKCDVBVD
     TUNUOUQUCQUD $.
 
+  $( Adding both sides of two orderings.  (Contributed by NM, 23-Dec-2007.) $)
+  ltleadd $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+                ( ( A < C /\ B <_ D ) -> ( A + B ) < ( C + D ) ) ) $=
+    ( cr wcel wa clt wbr caddc co wb ltadd1 3com23 3expa adantrr leadd2 readdcl
+    cle 3expb adantll anbi12d wi adantr ancoms ad2ant2lr adantl ltletr syl3anc
+    sylbid ) AEFZBEFZGZCEFZDEFZGZGZACHIZBDSIZGABJKZCBJKZHIZVACDJKZSIZGZUTVCHIZU
+    QURVBUSVDUMUNURVBLZUOUKULUNVGUKUNULVGACBMNOPULUPUSVDLZUKULUNUOVHULUOUNVHBDC
+    QNTUAUBUQUTEFZVAEFZVCEFZVEVFUCUMVIUPABRUDULUNVJUKUOUNULVJCBRUEUFUPVKUMCDRUG
+    UTVAVCUHUIUJ $.
+
+  $( Adding both sides of two orderings.  (Contributed by NM, 15-Aug-2008.) $)
+  leltadd $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+                ( ( A <_ C /\ B < D ) -> ( A + B ) < ( C + D ) ) ) $=
+    ( cr wcel wa cle wbr caddc co wi ltleadd ancomsd cc wceq recn addcom syl2an
+    clt ancom2s ancom1s breqan12d sylibrd ) AEFZBEFZGZCEFZDEFZGZGACHIZBDTIZGZBA
+    JKZDCJKZTIZABJKZCDJKZTIUFUEUJUMUPLZUFUEGZUIUHUSUTUIUHGGULUKUPBADCMNUAUBUGUJ
+    UQUNURUOTUEAOFBOFUQUNPUFAQBQABRSUHCOFDOFURUOPUICQDQCDRSUCUD $.
+
   $( The sum of 2 positive numbers is positive.  (Contributed by NM,
      1-Jun-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
   addgt0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 < A /\ 0 < B ) ) ->
                 0 < ( A + B ) ) $=
     ( cr wcel wa cc0 clt wbr caddc co 00id wi 0re lt2add mpanl12 imp syl5eqbrr
     ) ACDBCDEZFAGHFBGHEZEFFFIJZABIJZGKRSTUAGHZFCDZUCRSUBLMMFFABNOPQ $.
+
+  $( The sum of nonnegative and positive numbers is positive.  (Contributed by
+     NM, 28-Dec-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  addgegt0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ 0 < B ) ) ->
+                  0 < ( A + B ) ) $=
+    ( cr wcel wa cc0 cle wbr clt caddc co 00id wi 0re leltadd mpanl12 syl5eqbrr
+    imp ) ACDBCDEZFAGHFBIHEZEFFFJKZABJKZILSTUAUBIHZFCDZUDSTUCMNNFFABOPRQ $.
+
+  $( The sum of nonnegative and positive numbers is positive.  (Contributed by
+     NM, 28-Dec-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  addgtge0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 < A /\ 0 <_ B ) ) ->
+                  0 < ( A + B ) ) $=
+    ( cr wcel wa cc0 clt wbr cle caddc co 00id wi 0re ltleadd mpanl12 syl5eqbrr
+    imp ) ACDBCDEZFAGHFBIHEZEFFFJKZABJKZGLSTUAUBGHZFCDZUDSTUCMNNFFABOPRQ $.
 
   $( The sum of 2 nonnegative numbers is nonnegative.  (Contributed by NM,
      17-Mar-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
