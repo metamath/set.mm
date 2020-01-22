@@ -68272,6 +68272,108 @@ $)
     ( cr wcel wa cc0 clt wbr caddc co 00id wi 0re lt2add mpanl12 imp syl5eqbrr
     ) ACDBCDEZFAGHFBGHEZEFFFIJZABIJZGKRSTUAGHZFCDZUCRSUBLMMFFABNOPQ $.
 
+  $( The sum of 2 nonnegative numbers is nonnegative.  (Contributed by NM,
+     17-Mar-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  addge0 $p |- ( ( ( A e. RR /\ B e. RR ) /\
+               ( 0 <_ A /\ 0 <_ B ) ) -> 0 <_ ( A + B ) ) $=
+    ( cr wcel wa cc0 cle wbr caddc co 00id wi 0re le2add mpanl12 imp syl5eqbrr
+    ) ACDBCDEZFAGHFBGHEZEFFFIJZABIJZGKRSTUAGHZFCDZUCRSUBLMMFFABNOPQ $.
+
+  $( Adding a positive number to another number increases it.  (Contributed by
+     NM, 17-Nov-2004.) $)
+  ltaddpos $p |- ( ( A e. RR /\ B e. RR ) -> ( 0 < A <-> B < ( B + A ) ) ) $=
+    ( cr wcel wa cc0 clt wbr caddc co wb ltadd2 mp3an1 wceq recn addid1d adantl
+    0re breq1d bitrd ) ACDZBCDZEZFAGHZBFIJZBAIJZGHZBUFGHFCDUAUBUDUGKRFABLMUCUEB
+    UFGUBUEBNUAUBBBOPQST $.
+
+  $( Adding a positive number to another number increases it.  (Contributed by
+     NM, 8-Apr-2005.) $)
+  ltaddpos2 $p |- ( ( A e. RR /\ B e. RR ) -> ( 0 < A <-> B < ( A + B ) ) ) $=
+    ( cr wcel wa cc0 clt wbr caddc co ltaddpos wceq addcom syl2an breq2d bitr4d
+    cc recn ) ACDZBCDZEZFAGHBBAIJZGHBABIJZGHABKUAUCUBBGSAQDBQDUCUBLTARBRABMNOP
+    $.
+
+  $( Subtracting a positive number from another number decreases it.
+     (Contributed by NM, 17-Nov-2004.)  (Proof shortened by Andrew Salmon,
+     19-Nov-2011.) $)
+  ltsubpos $p |- ( ( A e. RR /\ B e. RR ) -> ( 0 < A <-> ( B - A ) < B ) ) $=
+    ( cr wcel wa cc0 clt wbr caddc co cmin ltaddpos wb ltsubadd 3anidm13 ancoms
+    bitr4d ) ACDZBCDZEFAGHBBAIJGHZBAKJBGHZABLSRUATMZSRUBBABNOPQ $.
+
+  $( Comparison of two numbers whose difference is positive.  (Contributed by
+     NM, 17-Nov-2004.) $)
+  posdif $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B <-> 0 < ( B - A ) ) ) $=
+    ( cr wcel wa cc0 cmin co clt caddc wb resubcl ancoms simpl ltaddpos syl2anc
+    wbr cc wceq recn pncan3 syl2an breq2d bitr2d ) ACDZBCDZEZFBAGHZIQZAAUHJHZIQ
+    ZABIQUGUHCDZUEUIUKKUFUEULBALMUEUFNUHAOPUGUJBAIUEARDBRDUJBSUFATBTABUAUBUCUD
+    $.
+
+  $( Subtraction from both sides of 'less than or equal to'.  (Contributed by
+     NM, 13-May-2004.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  lesub1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A <_ B <-> ( A - C ) <_ ( B - C ) ) ) $=
+    ( cr wcel w3a cmin co cle caddc simp1 simp3 simp2 resubcld lesubadd syl3anc
+    wbr wb recnd npcand breq2d bitr2d ) ADEZBDEZCDEZFZACGHBCGHZIQZAUGCJHZIQZABI
+    QUFUCUEUGDEUHUJRUCUDUEKUCUDUELZUFBCUCUDUEMZUKNACUGOPUFUIBAIUFBCUFBULSUFCUKS
+    TUAUB $.
+
+  $( Subtraction of both sides of 'less than or equal to'.  (Contributed by NM,
+     29-Sep-2005.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  lesub2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A <_ B <-> ( C - B ) <_ ( C - A ) ) ) $=
+    ( cr wcel w3a cle wbr cmin co caddc leadd2 wb simp3 simp1 readdcld lesubadd
+    simp2 syl3anc recnd addsubd breq1d 3bitr2d resubcld leaddsub bitrd ) ADEZBD
+    EZCDEZFZABGHZCBIJZAKJZCGHZULCAIJGHZUJUKCAKJZCBKJGHZUPBIJZCGHZUNABCLUJUPDEUH
+    UIUSUQMUJCAUGUHUINZUGUHUIOZPUGUHUIRZUTUPBCQSUJURUMCGUJCABUJCUTTUJAVATUJBVBT
+    UAUBUCUJULDEUGUIUNUOMUJCBUTVBUDVAUTULACUESUF $.
+
+  $( Subtraction from both sides of 'less than'.  (Contributed by FL,
+     3-Jan-2008.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  ltsub1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A < B <-> ( A - C ) < ( B - C ) ) ) $=
+    ( cr wcel w3a cmin co clt caddc simp1 simp3 simp2 resubcld ltsubadd syl3anc
+    wbr wb recnd npcand breq2d bitr2d ) ADEZBDEZCDEZFZACGHBCGHZIQZAUGCJHZIQZABI
+    QUFUCUEUGDEUHUJRUCUDUEKUCUDUELZUFBCUCUDUEMZUKNACUGOPUFUIBAIUFBCUFBULSUFCUKS
+    TUAUB $.
+
+  $( Subtraction of both sides of 'less than'.  (Contributed by NM,
+     29-Sep-2005.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  ltsub2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A < B <-> ( C - B ) < ( C - A ) ) ) $=
+    ( cr wcel w3a clt wbr cmin co caddc ltadd2 wb simp3 simp1 readdcld ltsubadd
+    simp2 syl3anc recnd addsubd breq1d 3bitr2d resubcld ltaddsub bitrd ) ADEZBD
+    EZCDEZFZABGHZCBIJZAKJZCGHZULCAIJGHZUJUKCAKJZCBKJGHZUPBIJZCGHZUNABCLUJUPDEUH
+    UIUSUQMUJCAUGUHUINZUGUHUIOZPUGUHUIRZUTUPBCQSUJURUMCGUJCABUJCUTTUJAVATUJBVBT
+    UAUBUCUJULDEUGUIUNUOMUJCBUTVBUDVAUTULACUESUF $.
+
+  $( Subtracting both sides of two 'less than' relations.  (Contributed by
+     Mario Carneiro, 14-Apr-2016.) $)
+  lt2sub $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+                ( ( A < C /\ D < B ) -> ( A - B ) < ( C - D ) ) ) $=
+    ( cr wcel wa clt wbr cmin simpll simprl simplr ltsub1 syl3anc simprr ltsub2
+    co wb resubcl anbi12d wi adantr resubcld adantl lttr sylbid ) AEFZBEFZGZCEF
+    ZDEFZGZGZACHIZDBHIZGABJRZCBJRZHIZURCDJRZHIZGZUQUTHIZUNUOUSUPVAUNUHUKUIUOUSS
+    UHUIUMKUJUKULLZUHUIUMMZACBNOUNULUIUKUPVASUJUKULPVEVDDBCQOUAUNUQEFZUREFUTEFZ
+    VBVCUBUJVFUMABTUCUNCBVDVEUDUMVGUJCDTUEUQURUTUFOUG $.
+
+  $( Subtracting both sides of two 'less than or equal to' relations.
+     (Contributed by Mario Carneiro, 14-Apr-2016.) $)
+  le2sub $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+                ( ( A <_ C /\ D <_ B ) -> ( A - B ) <_ ( C - D ) ) ) $=
+    ( cr wcel wa cle wbr cmin simpll simprl simplr lesub1 syl3anc simprr lesub2
+    co wb resubcl anbi12d wi adantr resubcld adantl letr sylbid ) AEFZBEFZGZCEF
+    ZDEFZGZGZACHIZDBHIZGABJRZCBJRZHIZURCDJRZHIZGZUQUTHIZUNUOUSUPVAUNUHUKUIUOUSS
+    UHUIUMKUJUKULLZUHUIUMMZACBNOUNULUIUKUPVASUJUKULPVEVDDBCQOUAUNUQEFZUREFUTEFZ
+    VBVCUBUJVFUMABTUCUNCBVDVEUDUMVGUJCDTUEUQURUTUFOUG $.
+
+  $( Negative of both sides of 'less than'.  Theorem I.23 of [Apostol] p. 20.
+     (Contributed by NM, 27-Aug-1999.)  (Proof shortened by Mario Carneiro,
+     27-May-2016.) $)
+  ltneg $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B <-> -u B < -u A ) ) $=
+    ( cr wcel wa clt wbr cc0 cmin cneg 0re ltsub2 mp3an3 df-neg breq12i syl6bbr
+    co wb ) ACDZBCDZEABFGZHBIQZHAIQZFGZBJZAJZFGSTHCDUAUDRKABHLMUEUBUFUCFBNANOP
+    $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
