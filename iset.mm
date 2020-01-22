@@ -65845,6 +65845,16 @@ $)
     ( cr wcel wa clt wbr wn cle ltnsym lenlt sylibrd ) ACDBCDEABFGBAFGHABIGABJA
     BKL $.
 
+  $( Transitive law.  Part of Definition 11.2.7(vi) of [HoTT], p.  (varies).
+     (Contributed by NM, 23-May-1999.) $)
+  lelttr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A <_ B /\ B < C ) -> A < C ) ) $=
+    ( cr wcel w3a cle wbr clt wa wn simprl wb simpl1 simpl2 lenlt syl2anc mpbid
+    pm2.21d idd wo simprr wi simpl3 axltwlin syl3anc mpd mpjaod ex ) ADEZBDEZCD
+    EZFZABGHZBCIHZJZACIHZUMUPJZBAIHZUQUQURUSUQURUNUSKZUMUNUOLURUJUKUNUTMUJUKULU
+    PNZUJUKULUPOZABPQRSURUQTURUOUSUQUAZUMUNUOUBURUKULUJUOVCUCVBUJUKULUPUDVABCAU
+    EUFUGUHUI $.
+
   $( 'Less than' is antisymmetric and irreflexive.  (Contributed by NM,
      13-Aug-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
   ltnsym2 $p |- ( ( A e. RR /\ B e. RR ) -> -. ( A < B /\ B < A ) ) $=
@@ -65920,6 +65930,12 @@ $)
          (Contributed by NM, 14-May-1999.) $)
       lttri $p |- ( ( A < B /\ B < C ) -> A < C ) $=
         ( cr wcel clt wbr wa wi lttr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
+
+      $( 'Less than or equal to', 'less than' transitive law.  (Contributed by
+         NM, 14-May-1999.) $)
+      lelttri $p |- ( ( A <_ B /\ B < C ) -> A < C ) $=
+        ( cr wcel cle wbr clt wa wi lelttr mp3an ) AGHBGHCGHABIJBCKJLACKJMDEFAB
+        CNO $.
 
       $( 'Less than or equal to' is transitive.  (Contributed by NM,
          14-May-1999.) $)
@@ -66000,6 +66016,16 @@ $)
       letrd $p |- ( ph -> A <_ C ) $=
         ( cle wbr cr wcel wa wi letr syl3anc mp2and ) ABCJKZCDJKZBDJKZHIABLMCLM
         DLMSTNUAOEFGBCDPQR $.
+    $}
+
+    ${
+      lelttrd.4 $e |- ( ph -> A <_ B ) $.
+      lelttrd.5 $e |- ( ph -> B < C ) $.
+      $( Transitive law deduction for 'less than or equal to', 'less than'.
+         (Contributed by NM, 8-Jan-2006.) $)
+      lelttrd $p |- ( ph -> A < C ) $=
+        ( cle wbr clt cr wcel wa wi lelttr syl3anc mp2and ) ABCJKZCDLKZBDLKZHIA
+        BMNCMNDMNTUAOUBPEFGBCDQRS $.
     $}
 
     ${
