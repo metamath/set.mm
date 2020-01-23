@@ -68576,6 +68576,564 @@ $)
   0le1 $p |- 0 <_ 1 $=
     ( cc0 c1 0re 1re 0lt1 ltleii ) ABCDEF $.
 
+  ${
+    lt_2.1 $e |- A e. RR $.
+    $( 'Less than or equal to' is reflexive.  (Contributed by NM,
+       18-Aug-1999.) $)
+    leidi $p |- A <_ A $=
+      ( cr wcel cle wbr leid ax-mp ) ACDAAEFBAGH $.
+
+    $( Positive means nonzero (useful for ordering theorems involving
+       division).  (Contributed by NM, 16-Sep-1999.) $)
+    gt0ne0i $p |- ( 0 < A -> A =/= 0 ) $=
+      ( cc0 0re ltnei ) CADBE $.
+
+    ${
+      gt0ne0i.2 $e |- 0 < A $.
+      $( Positive implies nonzero.  (Contributed by NM, 15-May-1999.) $)
+      gt0ne0ii $p |- A =/= 0 $=
+        ( cc0 clt wbr wne gt0ne0i ax-mp ) DAEFADGCABHI $.
+    $}
+
+    lt_2.2 $e |- B e. RR $.
+    $( Addition of 2 positive numbers is positive.  (Contributed by NM,
+       16-May-1999.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+    addgt0i $p |- ( ( 0 < A /\ 0 < B ) -> 0 < ( A + B ) ) $=
+      ( cr wcel cc0 clt wbr wa caddc co addgt0 mpanl12 ) AEFBEFGAHIGBHIJGABKLHI
+      CDABMN $.
+
+    $( Addition of 2 nonnegative numbers is nonnegative.  (Contributed by NM,
+       28-May-1999.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+    addge0i $p |- ( ( 0 <_ A /\ 0 <_ B ) -> 0 <_ ( A + B ) ) $=
+      ( cr wcel cc0 cle wbr wa caddc co addge0 mpanl12 ) AEFBEFGAHIGBHIJGABKLHI
+      CDABMN $.
+
+    $( Addition of nonnegative and positive numbers is positive.  (Contributed
+       by NM, 25-Sep-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    addgegt0i $p |- ( ( 0 <_ A /\ 0 < B ) -> 0 < ( A + B ) ) $=
+      ( cr wcel cc0 cle wbr clt wa caddc co addgegt0 mpanl12 ) AEFBEFGAHIGBJIKG
+      ABLMJICDABNO $.
+
+    ${
+      addgt0i.3 $e |- 0 < A $.
+      addgt0i.4 $e |- 0 < B $.
+      $( Addition of 2 positive numbers is positive.  (Contributed by NM,
+         18-May-1999.) $)
+      addgt0ii $p |- 0 < ( A + B ) $=
+        ( cc0 clt wbr caddc co addgt0i mp2an ) GAHIGBHIGABJKHIEFABCDLM $.
+    $}
+
+    $( Negative of both sides of 'less than'.  Theorem I.23 of [Apostol]
+       p. 20.  (Contributed by NM, 21-Jan-1997.) $)
+    ltnegi $p |- ( A < B <-> -u B < -u A ) $=
+      ( cr wcel clt wbr cneg wb ltneg mp2an ) AEFBEFABGHBIAIGHJCDABKL $.
+
+    $( Negative of both sides of 'less than or equal to'.  (Contributed by NM,
+       1-Aug-1999.) $)
+    lenegi $p |- ( A <_ B <-> -u B <_ -u A ) $=
+      ( cr wcel cle wbr cneg wb leneg mp2an ) AEFBEFABGHBIAIGHJCDABKL $.
+
+    $( Contraposition of negative in 'less than'.  (Contributed by NM,
+       14-May-1999.) $)
+    ltnegcon2i $p |- ( A < -u B <-> B < -u A ) $=
+      ( cr wcel cneg clt wbr wb ltnegcon2 mp2an ) AEFBEFABGHIBAGHIJCDABKL $.
+
+    $( Adding a positive number to another number increases it.  (Contributed
+       by NM, 25-Aug-1999.) $)
+    ltaddposi $p |- ( 0 < A <-> B < ( B + A ) ) $=
+      ( cr wcel cc0 clt wbr caddc co wb ltaddpos mp2an ) AEFBEFGAHIBBAJKHILCDAB
+      MN $.
+
+    $( Comparison of two numbers whose difference is positive.  (Contributed by
+       NM, 19-Aug-2001.) $)
+    posdifi $p |- ( A < B <-> 0 < ( B - A ) ) $=
+      ( cr wcel clt wbr cc0 cmin co wb posdif mp2an ) AEFBEFABGHIBAJKGHLCDABMN
+      $.
+
+    $( Contraposition of negative in 'less than'.  (Contributed by NM,
+       14-May-1999.) $)
+    ltnegcon1i $p |- ( -u A < B <-> -u B < A ) $=
+      ( cr wcel cneg clt wbr wb ltnegcon1 mp2an ) AEFBEFAGBHIBGAHIJCDABKL $.
+
+    $( Contraposition of negative in 'less than or equal to'.  (Contributed by
+       NM, 6-Apr-2005.) $)
+    lenegcon1i $p |- ( -u A <_ B <-> -u B <_ A ) $=
+      ( cr wcel cneg cle wbr wb lenegcon1 mp2an ) AEFBEFAGBHIBGAHIJCDABKL $.
+
+    $( Nonnegative subtraction.  (Contributed by NM, 13-Aug-2000.) $)
+    subge0i $p |- ( 0 <_ ( A - B ) <-> B <_ A ) $=
+      ( cr wcel cc0 cmin co cle wbr wb subge0 mp2an ) AEFBEFGABHIJKBAJKLCDABMN
+      $.
+
+    lt_2.3 $e |- C e. RR $.
+    $( Addition to both sides of 'less than'.  Theorem I.18 of [Apostol]
+       p. 20.  (Contributed by NM, 21-Jan-1997.) $)
+    ltadd1i $p |- ( A < B <-> ( A + C ) < ( B + C ) ) $=
+      ( cr wcel clt wbr caddc co wb ltadd1 mp3an ) AGHBGHCGHABIJACKLBCKLIJMDEFA
+      BCNO $.
+
+    $( Addition to both sides of 'less than or equal to'.  (Contributed by NM,
+       11-Aug-1999.) $)
+    leadd1i $p |- ( A <_ B <-> ( A + C ) <_ ( B + C ) ) $=
+      ( cr wcel cle wbr caddc co wb leadd1 mp3an ) AGHBGHCGHABIJACKLBCKLIJMDEFA
+      BCNO $.
+
+    $( Addition to both sides of 'less than or equal to'.  (Contributed by NM,
+       11-Aug-1999.) $)
+    leadd2i $p |- ( A <_ B <-> ( C + A ) <_ ( C + B ) ) $=
+      ( cr wcel cle wbr caddc co wb leadd2 mp3an ) AGHBGHCGHABIJCAKLCBKLIJMDEFA
+      BCNO $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by NM, 21-Jan-1997.)  (Proof shortened by Andrew Salmon,
+       19-Nov-2011.) $)
+    ltsubaddi $p |- ( ( A - B ) < C <-> A < ( C + B ) ) $=
+      ( cr wcel cmin co clt wbr caddc wb ltsubadd mp3an ) AGHBGHCGHABIJCKLACBMJ
+      KLNDEFABCOP $.
+
+    $( 'Less than or equal to' relationship between subtraction and addition.
+       (Contributed by NM, 30-Sep-1999.)  (Proof shortened by Andrew Salmon,
+       19-Nov-2011.) $)
+    lesubaddi $p |- ( ( A - B ) <_ C <-> A <_ ( C + B ) ) $=
+      ( cr wcel cmin co cle wbr caddc wb lesubadd mp3an ) AGHBGHCGHABIJCKLACBMJ
+      KLNDEFABCOP $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by NM, 21-Jan-1997.) $)
+    ltsubadd2i $p |- ( ( A - B ) < C <-> A < ( B + C ) ) $=
+      ( cr wcel cmin co clt wbr caddc wb ltsubadd2 mp3an ) AGHBGHCGHABIJCKLABCM
+      JKLNDEFABCOP $.
+
+    $( 'Less than or equal to' relationship between subtraction and addition.
+       (Contributed by NM, 3-Aug-1999.) $)
+    lesubadd2i $p |- ( ( A - B ) <_ C <-> A <_ ( B + C ) ) $=
+      ( cr wcel cmin co cle wbr caddc wb lesubadd2 mp3an ) AGHBGHCGHABIJCKLABCM
+      JKLNDEFABCOP $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by NM, 14-May-1999.) $)
+    ltaddsubi $p |- ( ( A + B ) < C <-> A < ( C - B ) ) $=
+      ( cr wcel caddc co clt wbr cmin wb ltaddsub mp3an ) AGHBGHCGHABIJCKLACBMJ
+      KLNDEFABCOP $.
+
+    lt.4 $e |- D e. RR $.
+    $( Adding both side of two inequalities.  Theorem I.25 of [Apostol] p. 20.
+       (Contributed by NM, 14-May-1999.) $)
+    lt2addi $p |- ( ( A < C /\ B < D ) -> ( A + B ) < ( C + D ) ) $=
+      ( cr wcel clt wbr wa caddc co wi lt2add mp4an ) AIJBIJCIJDIJACKLBDKLMABNO
+      CDNOKLPEFGHABCDQR $.
+
+    $( Adding both side of two inequalities.  (Contributed by NM,
+       16-Sep-1999.) $)
+    le2addi $p |- ( ( A <_ C /\ B <_ D ) -> ( A + B ) <_ ( C + D ) ) $=
+      ( cr wcel cle wbr wa caddc co wi le2add mp4an ) AIJBIJCIJDIJACKLBDKLMABNO
+      CDNOKLPEFGHABCDQR $.
+  $}
+
+  ${
+    gt0ne0d.1 $e |- ( ph -> 0 < A ) $.
+    $( Positive implies nonzero.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    gt0ne0d $p |- ( ph -> A =/= 0 ) $=
+      ( cc0 cr wcel clt wbr wne 0re ltne sylancr ) ADEFDBGHBDIJCDBKL $.
+  $}
+
+  ${
+    lt0ne0d.1 $e |- ( ph -> A < 0 ) $.
+    $( Something less than zero is not zero.  Deduction form.  (Contributed by
+       David Moews, 28-Feb-2017.) $)
+    lt0ne0d $p |- ( ph -> A =/= 0 ) $=
+      ( cc0 clt wbr wne wceq 0re ltnri breq1 mtbiri necon2ai syl ) ABDEFZBDGCOB
+      DBDHODDEFDIJBDDEKLMN $.
+  $}
+
+  ${
+    leidd.1 $e |- ( ph -> A e. RR ) $.
+    $( 'Less than or equal to' is reflexive.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    leidd $p |- ( ph -> A <_ A ) $=
+      ( cr wcel cle wbr leid syl ) ABDEBBFGCBHI $.
+
+    $( Comparison of a number and its negative to zero.  Theorem I.23 of
+       [Apostol] p. 20.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    lt0neg1d $p |- ( ph -> ( A < 0 <-> 0 < -u A ) ) $=
+      ( cr wcel cc0 clt wbr cneg wb lt0neg1 syl ) ABDEBFGHFBIGHJCBKL $.
+
+    $( Comparison of a number and its negative to zero.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    lt0neg2d $p |- ( ph -> ( 0 < A <-> -u A < 0 ) ) $=
+      ( cr wcel cc0 clt wbr cneg wb lt0neg2 syl ) ABDEFBGHBIFGHJCBKL $.
+
+    $( Comparison of a number and its negative to zero.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    le0neg1d $p |- ( ph -> ( A <_ 0 <-> 0 <_ -u A ) ) $=
+      ( cr wcel cc0 cle wbr cneg wb le0neg1 syl ) ABDEBFGHFBIGHJCBKL $.
+
+    $( Comparison of a number and its negative to zero.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    le0neg2d $p |- ( ph -> ( 0 <_ A <-> -u A <_ 0 ) ) $=
+      ( cr wcel cc0 cle wbr cneg wb le0neg2 syl ) ABDEFBGHBIFGHJCBKL $.
+
+    ltnegd.2 $e |- ( ph -> B e. RR ) $.
+    ${
+      addgegt0d.3 $e |- ( ph -> 0 <_ A ) $.
+      addgegt0d.4 $e |- ( ph -> 0 < B ) $.
+      $( Addition of nonnegative and positive numbers is positive.
+         (Contributed by Mario Carneiro, 27-May-2016.) $)
+      addgegt0d $p |- ( ph -> 0 < ( A + B ) ) $=
+        ( cr wcel cc0 cle wbr clt caddc co addgegt0 syl22anc ) ABHICHIJBKLJCMLJ
+        BCNOMLDEFGBCPQ $.
+    $}
+
+    ${
+      addgt0d.3 $e |- ( ph -> 0 < A ) $.
+      addgt0d.4 $e |- ( ph -> 0 < B ) $.
+      $( Addition of 2 positive numbers is positive.  (Contributed by Mario
+         Carneiro, 27-May-2016.) $)
+      addgt0d $p |- ( ph -> 0 < ( A + B ) ) $=
+        ( cc0 0red ltled addgegt0d ) ABCDEAHBAIDFJGK $.
+    $}
+
+    ${
+      addge0d.3 $e |- ( ph -> 0 <_ A ) $.
+      addge0d.4 $e |- ( ph -> 0 <_ B ) $.
+      $( Addition of 2 nonnegative numbers is nonnegative.  (Contributed by
+         Mario Carneiro, 27-May-2016.) $)
+      addge0d $p |- ( ph -> 0 <_ ( A + B ) ) $=
+        ( cr wcel cc0 cle wbr caddc co addge0 syl22anc ) ABHICHIJBKLJCKLJBCMNKL
+        DEFGBCOP $.
+    $}
+
+    $( Negative of both sides of 'less than'.  Theorem I.23 of [Apostol]
+       p. 20.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    ltnegd $p |- ( ph -> ( A < B <-> -u B < -u A ) ) $=
+      ( cr wcel clt wbr cneg wb ltneg syl2anc ) ABFGCFGBCHICJBJHIKDEBCLM $.
+
+    $( Negative of both sides of 'less than or equal to'.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    lenegd $p |- ( ph -> ( A <_ B <-> -u B <_ -u A ) ) $=
+      ( cr wcel cle wbr cneg wb leneg syl2anc ) ABFGCFGBCHICJBJHIKDEBCLM $.
+
+    ${
+      ltnegcon1d.3 $e |- ( ph -> -u A < B ) $.
+      $( Contraposition of negative in 'less than'.  (Contributed by Mario
+         Carneiro, 27-May-2016.) $)
+      ltnegcon1d $p |- ( ph -> -u B < A ) $=
+        ( cneg clt wbr cr wcel wb ltnegcon1 syl2anc mpbid ) ABGCHIZCGBHIZFABJKC
+        JKPQLDEBCMNO $.
+    $}
+
+    ${
+      ltnegcon2d.3 $e |- ( ph -> A < -u B ) $.
+      $( Contraposition of negative in 'less than'.  (Contributed by Mario
+         Carneiro, 27-May-2016.) $)
+      ltnegcon2d $p |- ( ph -> B < -u A ) $=
+        ( cneg clt wbr cr wcel wb ltnegcon2 syl2anc mpbid ) ABCGHIZCBGHIZFABJKC
+        JKPQLDEBCMNO $.
+
+    $}
+
+    ${
+      lenegcon1d.3 $e |- ( ph -> -u A <_ B ) $.
+      $( Contraposition of negative in 'less than or equal to'.  (Contributed
+         by Mario Carneiro, 27-May-2016.) $)
+      lenegcon1d $p |- ( ph -> -u B <_ A ) $=
+        ( cneg cle wbr cr wcel wb lenegcon1 syl2anc mpbid ) ABGCHIZCGBHIZFABJKC
+        JKPQLDEBCMNO $.
+
+    $}
+
+    ${
+      lenegcon2d.3 $e |- ( ph -> A <_ -u B ) $.
+      $( Contraposition of negative in 'less than or equal to'.  (Contributed
+         by Mario Carneiro, 27-May-2016.) $)
+      lenegcon2d $p |- ( ph -> B <_ -u A ) $=
+        ( cneg cle wbr cr wcel wb lenegcon2 syl2anc mpbid ) ABCGHIZCBGHIZFABJKC
+        JKPQLDEBCMNO $.
+    $}
+
+    $( Adding a positive number to another number increases it.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    ltaddposd $p |- ( ph -> ( 0 < A <-> B < ( B + A ) ) ) $=
+      ( cr wcel cc0 clt wbr caddc co wb ltaddpos syl2anc ) ABFGCFGHBIJCCBKLIJMD
+      EBCNO $.
+
+    $( Adding a positive number to another number increases it.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    ltaddpos2d $p |- ( ph -> ( 0 < A <-> B < ( A + B ) ) ) $=
+      ( cr wcel cc0 clt wbr caddc co wb ltaddpos2 syl2anc ) ABFGCFGHBIJCBCKLIJM
+      DEBCNO $.
+
+    $( Subtracting a positive number from another number decreases it.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    ltsubposd $p |- ( ph -> ( 0 < A <-> ( B - A ) < B ) ) $=
+      ( cr wcel cc0 clt wbr cmin co wb ltsubpos syl2anc ) ABFGCFGHBIJCBKLCIJMDE
+      BCNO $.
+
+    $( Comparison of two numbers whose difference is positive.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    posdifd $p |- ( ph -> ( A < B <-> 0 < ( B - A ) ) ) $=
+      ( cr wcel clt wbr cc0 cmin co wb posdif syl2anc ) ABFGCFGBCHIJCBKLHIMDEBC
+      NO $.
+
+    $( A number is less than or equal to itself plus a nonnegative number.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    addge01d $p |- ( ph -> ( 0 <_ B <-> A <_ ( A + B ) ) ) $=
+      ( cr wcel cc0 cle wbr caddc co wb addge01 syl2anc ) ABFGCFGHCIJBBCKLIJMDE
+      BCNO $.
+
+    $( A number is less than or equal to itself plus a nonnegative number.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    addge02d $p |- ( ph -> ( 0 <_ B <-> A <_ ( B + A ) ) ) $=
+      ( cr wcel cc0 cle wbr caddc co wb addge02 syl2anc ) ABFGCFGHCIJBCBKLIJMDE
+      BCNO $.
+
+    $( Nonnegative subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subge0d $p |- ( ph -> ( 0 <_ ( A - B ) <-> B <_ A ) ) $=
+      ( cr wcel cc0 cmin co cle wbr wb subge0 syl2anc ) ABFGCFGHBCIJKLCBKLMDEBC
+      NO $.
+
+    $( Nonpositive subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    suble0d $p |- ( ph -> ( ( A - B ) <_ 0 <-> A <_ B ) ) $=
+      ( cr wcel cmin co cc0 cle wbr wb suble0 syl2anc ) ABFGCFGBCHIJKLBCKLMDEBC
+      NO $.
+
+    $( Nonnegative subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subge02d $p |- ( ph -> ( 0 <_ B <-> ( A - B ) <_ A ) ) $=
+      ( cr wcel cc0 cle wbr cmin co wb subge02 syl2anc ) ABFGCFGHCIJBCKLBIJMDEB
+      CNO $.
+
+    ltadd1d.3 $e |- ( ph -> C e. RR ) $.
+    $( Addition to both sides of 'less than'.  Theorem I.18 of [Apostol]
+       p. 20.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    ltadd1d $p |- ( ph -> ( A < B <-> ( A + C ) < ( B + C ) ) ) $=
+      ( cr wcel clt wbr caddc co wb ltadd1 syl3anc ) ABHICHIDHIBCJKBDLMCDLMJKNE
+      FGBCDOP $.
+
+    $( Addition to both sides of 'less than or equal to'.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    leadd1d $p |- ( ph -> ( A <_ B <-> ( A + C ) <_ ( B + C ) ) ) $=
+      ( cr wcel cle wbr caddc co wb leadd1 syl3anc ) ABHICHIDHIBCJKBDLMCDLMJKNE
+      FGBCDOP $.
+
+    $( Addition to both sides of 'less than or equal to'.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    leadd2d $p |- ( ph -> ( A <_ B <-> ( C + A ) <_ ( C + B ) ) ) $=
+      ( cr wcel cle wbr caddc co wb leadd2 syl3anc ) ABHICHIDHIBCJKDBLMDCLMJKNE
+      FGBCDOP $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    ltsubaddd $p |- ( ph -> ( ( A - B ) < C <-> A < ( C + B ) ) ) $=
+      ( cr wcel cmin co clt wbr caddc wb ltsubadd syl3anc ) ABHICHIDHIBCJKDLMBD
+      CNKLMOEFGBCDPQ $.
+
+    $( 'Less than or equal to' relationship between subtraction and addition.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    lesubaddd $p |- ( ph -> ( ( A - B ) <_ C <-> A <_ ( C + B ) ) ) $=
+      ( cr wcel cmin co cle wbr caddc wb lesubadd syl3anc ) ABHICHIDHIBCJKDLMBD
+      CNKLMOEFGBCDPQ $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    ltsubadd2d $p |- ( ph -> ( ( A - B ) < C <-> A < ( B + C ) ) ) $=
+      ( cr wcel cmin co clt wbr caddc wb ltsubadd2 syl3anc ) ABHICHIDHIBCJKDLMB
+      CDNKLMOEFGBCDPQ $.
+
+    $( 'Less than or equal to' relationship between subtraction and addition.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    lesubadd2d $p |- ( ph -> ( ( A - B ) <_ C <-> A <_ ( B + C ) ) ) $=
+      ( cr wcel cmin co cle wbr caddc wb lesubadd2 syl3anc ) ABHICHIDHIBCJKDLMB
+      CDNKLMOEFGBCDPQ $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    ltaddsubd $p |- ( ph -> ( ( A + B ) < C <-> A < ( C - B ) ) ) $=
+      ( cr wcel caddc co clt wbr cmin wb ltaddsub syl3anc ) ABHICHIDHIBCJKDLMBD
+      CNKLMOEFGBCDPQ $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by Mario Carneiro, 29-Dec-2016.) $)
+    ltaddsub2d $p |- ( ph -> ( ( A + B ) < C <-> B < ( C - A ) ) ) $=
+      ( cr wcel caddc co clt wbr cmin wb ltaddsub2 syl3anc ) ABHICHIDHIBCJKDLMC
+      DBNKLMOEFGBCDPQ $.
+
+    $( 'Less than or equal to' relationship between and addition and
+       subtraction.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    leaddsub2d $p |- ( ph -> ( ( A + B ) <_ C <-> B <_ ( C - A ) ) ) $=
+      ( cr wcel caddc co cle wbr cmin wb leaddsub2 syl3anc ) ABHICHIDHIBCJKDLMC
+      DBNKLMOEFGBCDPQ $.
+
+    ${
+      subled.4 $e |- ( ph -> ( A - B ) <_ C ) $.
+      $( Swap subtrahends in an inequality.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      subled $p |- ( ph -> ( A - C ) <_ B ) $=
+        ( cmin co cle wbr cr wcel wb suble syl3anc mpbid ) ABCIJDKLZBDIJCKLZHAB
+        MNCMNDMNSTOEFGBCDPQR $.
+    $}
+
+    ${
+      lesubd.4 $e |- ( ph -> A <_ ( B - C ) ) $.
+      $( Swap subtrahends in an inequality.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      lesubd $p |- ( ph -> C <_ ( B - A ) ) $=
+        ( cmin co cle wbr cr wcel wb lesub syl3anc mpbid ) ABCDIJKLZDCBIJKLZHAB
+        MNCMNDMNSTOEFGBCDPQR $.
+    $}
+
+    ${
+      ltsub23d.4 $e |- ( ph -> ( A - B ) < C ) $.
+      $( 'Less than' relationship between subtraction and addition.
+         (Contributed by Mario Carneiro, 27-May-2016.) $)
+      ltsub23d $p |- ( ph -> ( A - C ) < B ) $=
+        ( cmin co clt wbr cr wcel wb ltsub23 syl3anc mpbid ) ABCIJDKLZBDIJCKLZH
+        ABMNCMNDMNSTOEFGBCDPQR $.
+    $}
+
+    ${
+      ltsub13d.4 $e |- ( ph -> A < ( B - C ) ) $.
+      $( 'Less than' relationship between subtraction and addition.
+         (Contributed by Mario Carneiro, 27-May-2016.) $)
+      ltsub13d $p |- ( ph -> C < ( B - A ) ) $=
+        ( cmin co clt wbr cr wcel wb ltsub13 syl3anc mpbid ) ABCDIJKLZDCBIJKLZH
+        ABMNCMNDMNSTOEFGBCDPQR $.
+    $}
+
+    $( Subtraction from both sides of 'less than or equal to'.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    lesub1d $p |- ( ph -> ( A <_ B <-> ( A - C ) <_ ( B - C ) ) ) $=
+      ( cr wcel cle wbr cmin co wb lesub1 syl3anc ) ABHICHIDHIBCJKBDLMCDLMJKNEF
+      GBCDOP $.
+
+    $( Subtraction of both sides of 'less than or equal to'.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    lesub2d $p |- ( ph -> ( A <_ B <-> ( C - B ) <_ ( C - A ) ) ) $=
+      ( cr wcel cle wbr cmin co wb lesub2 syl3anc ) ABHICHIDHIBCJKDCLMDBLMJKNEF
+      GBCDOP $.
+
+    $( Subtraction from both sides of 'less than'.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    ltsub1d $p |- ( ph -> ( A < B <-> ( A - C ) < ( B - C ) ) ) $=
+      ( cr wcel clt wbr cmin co wb ltsub1 syl3anc ) ABHICHIDHIBCJKBDLMCDLMJKNEF
+      GBCDOP $.
+
+    $( Subtraction of both sides of 'less than'.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    ltsub2d $p |- ( ph -> ( A < B <-> ( C - B ) < ( C - A ) ) ) $=
+      ( cr wcel clt wbr cmin co wb ltsub2 syl3anc ) ABHICHIDHIBCJKDCLMDBLMJKNEF
+      GBCDOP $.
+
+    ${
+      ltadd1dd.4 $e |- ( ph -> A < B ) $.
+      $( Addition to both sides of 'less than'.  Theorem I.18 of [Apostol]
+         p. 20.  (Contributed by Mario Carneiro, 30-May-2016.) $)
+      ltadd1dd $p |- ( ph -> ( A + C ) < ( B + C ) ) $=
+        ( clt wbr caddc co ltadd1d mpbid ) ABCIJBDKLCDKLIJHABCDEFGMN $.
+
+      $( Subtraction from both sides of 'less than'.  (Contributed by Mario
+         Carneiro, 30-May-2016.) $)
+      ltsub1dd $p |- ( ph -> ( A - C ) < ( B - C ) ) $=
+        ( clt wbr cmin co ltsub1d mpbid ) ABCIJBDKLCDKLIJHABCDEFGMN $.
+
+      $( Subtraction of both sides of 'less than'.  (Contributed by Mario
+         Carneiro, 30-May-2016.) $)
+      ltsub2dd $p |- ( ph -> ( C - B ) < ( C - A ) ) $=
+        ( clt wbr cmin co ltsub2d mpbid ) ABCIJDCKLDBKLIJHABCDEFGMN $.
+    $}
+
+    ${
+      leadd1dd.4 $e |- ( ph -> A <_ B ) $.
+      $( Addition to both sides of 'less than or equal to'.  (Contributed by
+         Mario Carneiro, 30-May-2016.) $)
+      leadd1dd $p |- ( ph -> ( A + C ) <_ ( B + C ) ) $=
+        ( cle wbr caddc co leadd1d mpbid ) ABCIJBDKLCDKLIJHABCDEFGMN $.
+
+      $( Addition to both sides of 'less than or equal to'.  (Contributed by
+         Mario Carneiro, 30-May-2016.) $)
+      leadd2dd $p |- ( ph -> ( C + A ) <_ ( C + B ) ) $=
+        ( cle wbr caddc co leadd2d mpbid ) ABCIJDBKLDCKLIJHABCDEFGMN $.
+
+      $( Subtraction from both sides of 'less than or equal to'.  (Contributed
+         by Mario Carneiro, 30-May-2016.) $)
+      lesub1dd $p |- ( ph -> ( A - C ) <_ ( B - C ) ) $=
+        ( cle wbr cmin co lesub1d mpbid ) ABCIJBDKLCDKLIJHABCDEFGMN $.
+
+      $( Subtraction of both sides of 'less than or equal to'.  (Contributed by
+         Mario Carneiro, 30-May-2016.) $)
+      lesub2dd $p |- ( ph -> ( C - B ) <_ ( C - A ) ) $=
+        ( cle wbr cmin co lesub2d mpbid ) ABCIJDCKLDBKLIJHABCDEFGMN $.
+    $}
+
+    lt2addd.4 $e |- ( ph -> D e. RR ) $.
+    ${
+      le2addd.5 $e |- ( ph -> A <_ C ) $.
+      le2addd.6 $e |- ( ph -> B <_ D ) $.
+      $( Adding both side of two inequalities.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      le2addd $p |- ( ph -> ( A + B ) <_ ( C + D ) ) $=
+        ( cle wbr caddc co cr wcel wa wi le2add syl22anc mp2and ) ABDLMZCELMZBC
+        NODENOLMZJKABPQCPQDPQEPQUCUDRUESFGHIBCDETUAUB $.
+
+      $( Subtracting both sides of two 'less than or equal to' relations.
+         (Contributed by Mario Carneiro, 27-May-2016.) $)
+      le2subd $p |- ( ph -> ( A - D ) <_ ( C - B ) ) $=
+        ( cle wbr cmin co cr wcel wa wi le2sub syl22anc mp2and ) ABDLMZCELMZBEN
+        ODCNOLMZJKABPQEPQDPQCPQUCUDRUESFIHGBEDCTUAUB $.
+    $}
+
+    ${
+      ltleaddd.5 $e |- ( ph -> A < C ) $.
+      ltleaddd.6 $e |- ( ph -> B <_ D ) $.
+      $( Adding both sides of two orderings.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      ltleaddd $p |- ( ph -> ( A + B ) < ( C + D ) ) $=
+        ( clt wbr cle caddc co cr wcel wa wi ltleadd syl22anc mp2and ) ABDLMZCE
+        NMZBCOPDEOPLMZJKABQRCQRDQREQRUDUESUFTFGHIBCDEUAUBUC $.
+    $}
+
+    ${
+      leltaddd.5 $e |- ( ph -> A <_ C ) $.
+      leltaddd.6 $e |- ( ph -> B < D ) $.
+      $( Adding both sides of two orderings.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      leltaddd $p |- ( ph -> ( A + B ) < ( C + D ) ) $=
+        ( cle wbr clt caddc co cr wcel wa wi leltadd syl22anc mp2and ) ABDLMZCE
+        NMZBCOPDEOPNMZJKABQRCQRDQREQRUDUESUFTFGHIBCDEUAUBUC $.
+    $}
+
+    ${
+      lt2addd.5 $e |- ( ph -> A < C ) $.
+      lt2addd.6 $e |- ( ph -> B < D ) $.
+      $( Adding both side of two inequalities.  Theorem I.25 of [Apostol]
+         p. 20.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+      lt2addd $p |- ( ph -> ( A + B ) < ( C + D ) ) $=
+        ( ltled ltleaddd ) ABCDEFGHIJACEGIKLM $.
+
+      $( Subtracting both sides of two 'less than' relations.  (Contributed by
+         Mario Carneiro, 27-May-2016.) $)
+      lt2subd $p |- ( ph -> ( A - D ) < ( C - B ) ) $=
+        ( clt wbr cmin co cr wcel wa wi lt2sub syl22anc mp2and ) ABDLMZCELMZBEN
+        ODCNOLMZJKABPQEPQDPQCPQUCUDRUESFIHGBEDCTUAUB $.
+    $}
+  $}
+
+  $( Addition and subtraction on one side of 'less than'.  (Contributed by AV,
+     24-Nov-2018.) $)
+  ltaddsublt $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                    ( B < C <-> ( ( A + B ) - C ) < A ) ) $=
+    ( cr wcel w3a clt caddc co cmin wb ltadd2 3comr readdcl 3adant3 simp3 simp1
+    wbr ltsubaddd bitr4d ) ADEZBDEZCDEZFZBCGRZABHIZACHIGRZUFCJIAGRUBUCUAUEUGKBC
+    ALMUDUFCAUAUBUFDEUCABNOUAUBUCPUAUBUCQST $.
+
+  $( ` 1 <_ 1 ` .  Common special case.  (Contributed by David A. Wheeler,
+     16-Jul-2016.) $)
+  1le1 $p |- 1 <_ 1 $=
+    ( c1 1re leidi ) ABC $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
