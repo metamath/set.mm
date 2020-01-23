@@ -65116,7 +65116,8 @@ $)
   $( $j restatement 'ax-i2m1' of 'axi2m1'; $)
 
   $( 0 is less than 1.  Axiom for real and complex numbers, justified by
-     theorem ~ ax0lt1 .  (Contributed by Jim Kingdon, 12-Jan-2020.) $)
+     theorem ~ ax0lt1 .  Proofs should normally use ~ 0lt1 instead.
+     (New usage is discouraged.)  (Contributed by Jim Kingdon, 12-Jan-2020.) $)
   ax-0lt1 $p |- 0 <RR 1 $=
     ( c0r cop c1r cc0 c1 cltrr wbr cltr 0lt1sr ltresr mpbir df-0 df-1 3brtr4i )
     AABZCABZDEFOPFGACHGIACJKLMN $.
@@ -66053,6 +66054,12 @@ $)
         DLMSTNUAOEFGBCDPQR $.
     $}
   $}
+
+  $( 0 is less than 1.  Theorem I.21 of [Apostol] p. 20.  (Contributed by NM,
+     17-Jan-1997.) $)
+  0lt1 $p |- 0 < 1 $=
+    ( cc0 c1 clt wbr cltrr ax-0lt1 cr wcel wb 0re 1re ltxrlt mp2an mpbir ) ABCD
+    ZABEDZFAGHBGHOPIJKABLMN $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -67924,10 +67931,9 @@ $)
   $( The imaginary unit ` _i ` is not zero.  (Contributed by NM,
      6-May-1999.) $)
   ine0 $p |- _i =/= 0 $=
-    ( ci cc0 wceq c1 0re clt cltrr ax-0lt1 cr wcel wb ltxrlt mp2an mpbir gtneii
-    wbr 1re caddc co cmul oveq2 ax-icn mul01i syl6req oveq1d ax-1cn addid2i mto
-    neii ax-i2m1 3eqtr3g neir ) ABABCZDBCDBBDEBDFPZBDGPZHBIJDIJUNUOKEQBDLMNOUIU
-    MBDRSAATSZDRSDBUMBUPDRUMUPABTSBABATUAAUBUCUDUEDUFUGUJUKUHUL $.
+    ( ci cc0 wceq c1 0lt1 gtneii neii caddc co cmul oveq2 ax-icn mul01i syl6req
+    0re oveq1d ax-1cn addid2i ax-i2m1 3eqtr3g mto neir ) ABABCZDBCDBBDOEFGUCBDH
+    IAAJIZDHIDBUCBUDDHUCUDABJIBABAJKALMNPDQRSTUAUB $.
 
   $( Product with negative is negative of product.  Theorem I.12 of [Apostol]
      p. 18.  (Contributed by NM, 14-May-1999.)  (Proof shortened by Mario
