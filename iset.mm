@@ -68556,6 +68556,15 @@ $)
     ( cr wcel wa cc0 cle wbr caddc co cmin addge01 wb lesubadd 3anidm13 bitr4d
     ) ACDZBCDZEFBGHAABIJGHZABKJAGHZABLQRTSMABANOP $.
 
+  $( The product of two negative numbers is positive.  (Contributed by Jeff
+     Hankins, 8-Jun-2009.) $)
+  mullt0 $p |- ( ( ( A e. RR /\ A < 0 ) /\ ( B e. RR /\ B < 0 ) )
+               -> 0 < ( A x. B ) ) $=
+    ( cr wcel cc0 clt wbr wa cneg cmul renegcl adantr lt0neg1 biimpa jca mulgt0
+    co syl2an cc recn wceq mul2neg ad2ant2r breqtrd ) ACDZAEFGZHZBCDZBEFGZHZHEA
+    IZBIZJQZABJQZFUGUKCDZEUKFGZHULCDZEULFGZHEUMFGUJUGUOUPUEUOUFAKLUEUFUPAMNOUJU
+    QURUHUQUIBKLUHUIURBMNOUKULPRUEUHUMUNUAZUFUIUEASDBSDUSUHATBTABUBRUCUD $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
