@@ -68571,6 +68571,11 @@ $)
     IZBIZJQZABJQZFUGUKCDZEUKFGZHULCDZEULFGZHEUMFGUJUGUOUPUEUOUFAKLUEUFUPAMNOUJU
     QURUHUQUIBKLUHUIURBMNOUKULPRUEUHUMUNUAZUFUIUEASDBSDUSUHATBTABUBRUCUD $.
 
+  $( 0 is less than or equal to 1.  (Contributed by Mario Carneiro,
+     29-Apr-2015.) $)
+  0le1 $p |- 0 <_ 1 $=
+    ( cc0 c1 0re 1re 0lt1 ltleii ) ABCDEF $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
