@@ -1,4 +1,4 @@
-$( iset.mm - Version of 12-Jan-2020
+$( iset.mm - Version of 17-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -18744,6 +18744,20 @@ $(
         Negated equality
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
+
+  ${
+    neii.1 $e |- A =/= B $.
+    $( Inference associated with ~ df-ne .  (Contributed by BJ, 7-Jul-2018.) $)
+    neii $p |- -. A = B $=
+      ( wne wceq wn df-ne mpbi ) ABDABEFCABGH $.
+  $}
+
+  ${
+    neir.1 $e |- -. A = B $.
+    $( Inference associated with ~ df-ne .  (Contributed by BJ, 7-Jul-2018.) $)
+    neir $p |- A =/= B $=
+      ( wne wceq wn df-ne mpbir ) ABDABEFCABGH $.
+  $}
 
   $( Negation of inequality.  (Contributed by Jim Kingdon, 23-Dec-2018.) $)
   nner $p |- ( A = B -> -. A =/= B ) $=
@@ -54017,6 +54031,26 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      Undefined values
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The power set of the union of a set does not belong to the set.  This
+     theorem provides a way of constructing a new set that doesn't belong to a
+     given set.  (Contributed by Stefan O'Rear, 22-Feb-2015.) $)
+  pwuninel2 $p |- ( U. A e. V -> -. ~P U. A e. A ) $=
+    ( cuni wcel cpw wss pwnss elssuni nsyl ) ACZBDJEZJFKADJBGKAHI $.
+
+  $( The power set of the power set of the union of a set does not belong to
+     the set.  This theorem provides a way of constructing a new set that
+     doesn't belong to a given set.  (Contributed by Jim Kingdon,
+     14-Jan-2020.) $)
+  2pwuninelg $p |- ( A e. V -> -. ~P ~P U. A e. A ) $=
+    ( wcel cuni cpw wa en2lp wi wss pwuni elpwg mpbiri ax-ia3 syl mtoi ) ABCZAD
+    EZEZACZARCZSFZARGPTSUAHPTAQIAJAQBKLTSMNO $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Functions on ordinals; strictly monotone ordinal functions
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -64528,6 +64562,19 @@ $)
     ( cr cc c1 axresscn c1r c0r cop df-1 wcel cnr opelreal mpbir eqeltri sselii
     1sr ) ABCDCEFGZAHPAIEJIOEKLMN $.
 
+  $( 1 is a real number.  Axiom for real and complex numbers, derived from set
+     theory.  This construction-dependent theorem should not be referenced
+     directly; instead, use ~ ax-1re .
+
+     In the Metamath Proof Explorer, this is not a complex number axiom but is
+     proved from ~ ax-1cn and the other axioms.  It is not known whether we can
+     do so here, but the Metamath Proof Explorer proof (accessed 13-Jan-2020)
+     uses excluded middle.  (Contributed by Jim Kingdon, 13-Jan-2020.)
+     (New usage is discouraged.) $)
+  ax1re $p |- 1 e. RR $=
+    ( c1 c1r c0r cop cr df-1 wcel cnr 1sr opelreal mpbir eqeltri ) ABCDZEFMEGBH
+    GIBJKL $.
+
   $( ` _i ` is a complex number.  Axiom for real and complex numbers, derived
      from set theory.  This construction-dependent theorem should not be
      referenced directly; instead, use ~ ax-icn .  (Contributed by NM,
@@ -64594,6 +64641,27 @@ $)
       wa mulresr mulclsr opelreal sylibr eqeltrd 2gencl ) CEZFGZDEZFGZHIZJKAUIH
       IZJKABHIZJKCDUGUIABLJCAMDBMUGANUJUKJUGAUIHOPUIBNUKULJUIBAHQPUFLKUHLKSZUJU
       FUHRIZFGZJUFUHTUMUNLKUOJKUFUHUAUNUBUCUDUE $.
+  $}
+
+  ${
+    $d A w x y z $.  $d B w z $.
+    $( Addition commutes.  Axiom for real and complex numbers, derived from set
+       theory.  This construction-dependent theorem should not be referenced
+       directly, nor should the proven axiom ~ ax-addcom be used later.
+       Instead, use ~ addcom .
+
+       In the Metamath Proof Explorer this is not a complex number axiom but is
+       instead proved from other axioms.  That proof relies on real number
+       trichotomy and it is not known whether it is possible to prove this from
+       the other axioms without it.  (Contributed by Jim Kingdon,
+       17-Jan-2020.)  (New usage is discouraged.) $)
+    axaddcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) $=
+      ( vx vy vz vw cv cop caddc co wceq cnr oveq1 oveq2 eqeq12d wcel addcomsrg
+      wa cplr addcnsr cc df-c ad2ant2r ad2ant2l opeq12d ancoms 3eqtr4d 2optocl
+      ) CGZDGZHZEGZFGZHZIJZUNUKIJZKAUNIJZUNAIJZKABIJZBAIJZKCDEFABLLUAUBUKAKUOUQ
+      UPURUKAUNIMUKAUNINOUNBKUQUSURUTUNBAINUNBAIMOUILPZUJLPZRZULLPZUMLPZRZRZUIU
+      LSJZUJUMSJZHULUISJZUMUJSJZHZUOUPVGVHVJVIVKVAVDVHVJKVBVEUIULQUCVBVEVIVKKVA
+      VDUJUMQUDUEUIUJULUMTVFVCUPVLKULUMUIUJTUFUGUH $.
   $}
 
   ${
@@ -64763,6 +64831,25 @@ $)
       AIZUTVBUSAUSAFGOVDPQURVCSUQJSZURKIZVAURKRVFVEVAVEVAVFUQKEZFGHZVGIVEVHVGTK
       EZGHZVGFVIVGGUAUBVEVJUQTUCHZKEZVGVETJSVJVLIUDUQTULUEVEVKUQKUQUFUGUHUIVFUT
       VHUSVGVFUSVGFGURKUQUJZUKVMQUMUNUOUP $.
+  $}
+
+  ${
+    $d A x y $.
+    $( ` 0 ` is an identity element for real addition.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use ~ ax-0id .
+
+       In the Metamath Proof Explorer this is not a complex number axiom but is
+       instead proved from other axioms.  That proof relies on excluded middle
+       and it is not known whether it is possible to prove this from the other
+       axioms without excluded middle.  (Contributed by Jim Kingdon,
+       16-Jan-2020.)  (New usage is discouraged.) $)
+    ax0id $p |- ( A e. CC -> ( A + 0 ) = A ) $=
+      ( vx vy cv cop cc0 caddc co wceq cnr cc df-c oveq1 id eqeq12d wcel c0r 0r
+      cplr 0idsr wa addcnsr mpanr12 eqcomi oveq2d adantr adantl opeq12d 3eqtr3d
+      df-0 a1i optocl ) BDZCDZEZFGHZUOIAFGHZAIBCAJJKLUOAIZUPUQUOAUOAFGMURNOUMJP
+      ZUNJPZUAZUOQQEZGHZUMQSHZUNQSHZEZUPUOVAQJPZVGVCVFIRRUMUNQQUBUCVAVBFUOGVBFI
+      VAFVBUJUDUKUEVAVDUMVEUNUSVDUMIUTUMTUFUTVEUNIUSUNTUGUHUIUL $.
   $}
 
   ${
@@ -64945,6 +65032,12 @@ $)
   ax-1cn $a |- 1 e. CC $.
   $( $j restatement 'ax-1cn' of 'ax1cn'; $)
 
+  $( 1 is a real number.  Axiom for real and complex numbers, justified by
+     theorem ~ ax1re .  Proofs should use ~ 1re instead.  (Contributed by Jim
+     Kingdon, 13-Jan-2020.)  (New usage is discouraged.) $)
+  ax-1re $a |- 1 e. RR $.
+  $( $j restatement 'ax-1re' of 'ax1re'; $)
+
   $( ` _i ` is a complex number.  Axiom for real and complex numbers, justified
      by theorem ~ axicn .  (Contributed by NM, 1-Mar-1995.) $)
   ax-icn $a |- _i e. CC $.
@@ -64978,6 +65071,12 @@ $)
      (New usage is discouraged.)  (Contributed by NM, 22-Nov-1994.) $)
   ax-mulrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $.
   $( $j restatement 'ax-mulrcl' of 'axmulrcl'; $)
+
+  $( Addition commutes.  Axiom for real and complex numbers, justified by
+     theorem ~ axaddcom .  Proofs should normally use ~ addcom instead.
+     (New usage is discouraged.)  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
+  ax-addcom $a |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) $.
+  $( $j restatement 'ax-addcom' of 'axaddcom'; $)
 
   $( Multiplication of complex numbers is commutative.  Axiom for real and
      complex numbers, justified by theorem ~ axmulcom .  Proofs should normally
@@ -65028,6 +65127,14 @@ $)
      29-Jan-1995.) $)
   ax-1rid $a |- ( A e. RR -> ( A x. 1 ) = A ) $.
   $( $j restatement 'ax-1rid' of 'ax1rid'; $)
+
+  $( ` 0 ` is an identity element for real addition.  Axiom for real and
+     complex numbers, justified by theorem ~ ax0id .
+
+     Proofs should normally use ~ addid1 instead.  (New usage is discouraged.)
+     (Contributed by Jim Kingdon, 16-Jan-2020.) $)
+  ax-0id $a |- ( A e. CC -> ( A + 0 ) = A ) $.
+  $( $j restatement 'ax-0id' of 'ax0id'; $)
 
   ${
     $d x A $.
@@ -65155,6 +65262,54 @@ $)
                 ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
     ( ax-distr ) ABCD $.
 
+  $( A real number is a complex number.  (Contributed by NM, 10-Aug-1999.) $)
+  recn $p |- ( A e. RR -> A e. CC ) $=
+    ( cr cc ax-resscn sseli ) BCADE $.
+
+  $( The real numbers form a set.  (Contributed by Mario Carneiro,
+     17-Nov-2014.) $)
+  reex $p |- RR e. _V $=
+    ( cr cc cnex ax-resscn ssexi ) ABCDE $.
+
+  $( Reals are a subset of the pair of real and complex numbers (common case).
+     (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  reelprrecn $p |- RR e. { RR , CC } $=
+    ( cr cc reex prid1 ) ABCD $.
+
+  $( Complex numbers are a subset of the pair of real and complex numbers
+     (common case).  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  cnelprrecn $p |- CC e. { RR , CC } $=
+    ( cr cc cnex prid2 ) ABCD $.
+
+  $( Distributive law for complex numbers (right-distributivity).  (Contributed
+     by NM, 10-Oct-2004.) $)
+  adddir $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+              ( ( A + B ) x. C ) = ( ( A x. C ) + ( B x. C ) ) ) $=
+    ( cc wcel w3a caddc co cmul adddi 3coml wa addcl mulcom sylan 3impa 3adant2
+    wceq 3adant1 oveq12d 3eqtr4d ) ADEZBDEZCDEZFZCABGHZIHZCAIHZCBIHZGHZUFCIHZAC
+    IHZBCIHZGHUDUBUCUGUJRCABJKUBUCUDUKUGRZUBUCLUFDEUDUNABMUFCNOPUEULUHUMUIGUBUD
+    ULUHRUCACNQUCUDUMUIRUBBCNSTUA $.
+
+  $( 0 is a complex number.  (Contributed by NM, 19-Feb-2005.) $)
+  0cn $p |- 0 e. CC $=
+    ( ci cmul co c1 caddc cc0 cc ax-i2m1 wcel ax-icn mulcl mp2an addcl eqeltrri
+    ax-1cn ) AABCZDECZFGHPGIZDGIQGIAGIZSRJJAAKLOPDMLN $.
+
+  $( 0 is a complex number, deductive form.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  0cnd $p |- ( ph -> 0 e. CC ) $=
+    ( cc0 cc wcel 0cn a1i ) BCDAEF $.
+
+  $( 0 is a set (common case).  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  c0ex $p |- 0 e. _V $=
+    ( cc0 cc 0cn elexi ) ABCD $.
+
+  $( 1 is a set.  Common special case.  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  1ex $p |- 1 e. _V $=
+    ( c1 cc ax-1cn elexi ) ABCD $.
+
   ${
     $d A x y $.
     $( Alias for ~ ax-cnre , for naming consistency.  (Contributed by NM,
@@ -65164,20 +65319,51 @@ $)
   $}
 
   ${
-    recni.1 $e |- A e. RR $.
-    axri.2 $e |- B e. RR $.
-    $( Closure law for addition of reals.  (Contributed by NM, 17-Jan-1997.) $)
-    readdcli $p |- ( A + B ) e. RR $=
-      ( cr wcel caddc co readdcl mp2an ) AEFBEFABGHEFCDABIJ $.
-
-    $( Closure law for multiplication of reals.  (Contributed by NM,
-       17-Jan-1997.) $)
-    remulcli $p |- ( A x. B ) e. RR $=
-      ( cr wcel cmul co remulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+    $d A x y $.
+    $( ` 1 ` is an identity element for multiplication.  Based on ideas by Eric
+       Schmidt.  (Contributed by Scott Fenton, 3-Jan-2013.) $)
+    mulid1 $p |- ( A e. CC -> ( A x. 1 ) = A ) $=
+      ( vx vy cc wcel cv ci cmul co caddc wceq cr wrex c1 ax-icn ax-1cn ax-1rid
+      recn syl eqtrd cnre wa sylancr adddir mp3an3 syl2an mulass mp3an13 oveq2d
+      mulcl oveqan12d oveq1 id eqeq12d syl5ibrcom rexlimivv ) ADEABFZGCFZHIZJIZ
+      KZCLMBLMANHIZAKZBCAUAVAVCBCLLUQLEZURLEZUBZVCVAUTNHIZUTKVFVGUQNHIZUSNHIZJI
+      ZUTVDUQDEZUSDEZVGVJKZVEUQRVEGDEZURDEZVLOURRZGURUJUCVKVLNDEZVMPUQUSNUDUEUF
+      VDVEVHUQVIUSJUQQVEVIGURNHIZHIZUSVEVOVIVSKZVPVNVOVQVTOPGURNUGUHSVEVRURGHUR
+      QUITUKTVAVBVGAUTAUTNHULVAUMUNUOUPS $.
   $}
+
+  $( Identity law for multiplication.  Note: see ~ mulid1 for commuted
+     version.  (Contributed by NM, 8-Oct-1999.) $)
+  mulid2 $p |- ( A e. CC -> ( 1 x. A ) = A ) $=
+    ( cc wcel c1 cmul co wceq ax-1cn mulcom mpan mulid1 eqtrd ) ABCZDAEFZADEFZA
+    DBCMNOGHDAIJAKL $.
+
+  $( ` 1 ` is a real number.  (Contributed by Jim Kingdon, 13-Jan-2020.) $)
+  1re $p |- 1 e. RR $=
+    ( ax-1re ) A $.
+
+  $( ` 0 ` is a real number.  (Contributed by Eric Schmidt, 21-May-2007.)
+     (Revised by Scott Fenton, 3-Jan-2013.) $)
+  0re $p |- 0 e. RR $=
+    ( vx c1 cr wcel cv caddc cc0 wceq wrex 1re ax-rnegex readdcl mpan syl5ibcom
+    co eleq1 rexlimiv mp2b ) BCDZBAEZFOZGHZACIGCDZJABKUBUCACTCDZUACDZUBUCSUDUEJ
+    BTLMUAGCPNQR $.
+
+  $( ` 0 ` is a real number, deductive form.  (Contributed by David A. Wheeler,
+     6-Dec-2018.) $)
+  0red $p |- ( ph -> 0 e. RR ) $=
+    ( cc0 cr wcel 0re a1i ) BCDAEF $.
 
   ${
     axi.1 $e |- A e. CC $.
+    $( Identity law for multiplication.  (Contributed by NM, 14-Feb-1995.) $)
+    mulid1i $p |- ( A x. 1 ) = A $=
+      ( cc wcel c1 cmul co wceq mulid1 ax-mp ) ACDAEFGAHBAIJ $.
+
+    $( Identity law for multiplication.  (Contributed by NM, 14-Feb-1995.) $)
+    mulid2i $p |- ( 1 x. A ) = A $=
+      ( cc wcel c1 cmul co wceq mulid2 ax-mp ) ACDEAFGAHBAIJ $.
+
     axi.2 $e |- B e. CC $.
     $( Closure law for addition.  (Contributed by NM, 23-Nov-1994.) $)
     addcli $p |- ( A + B ) e. CC $=
@@ -65191,6 +65377,14 @@ $)
        23-Nov-1994.) $)
     mulcomi $p |- ( A x. B ) = ( B x. A ) $=
       ( cc wcel cmul co wceq mulcom mp2an ) AEFBEFABGHBAGHICDABJK $.
+
+    ${
+      mulcomli.3 $e |- ( A x. B ) = C $.
+      $( Commutative law for multiplication.  (Contributed by NM,
+         23-Nov-1994.) $)
+      mulcomli $p |- ( B x. A ) = C $=
+        ( cmul co mulcomi eqtri ) BAGHABGHCBAEDIFJ $.
+    $}
 
     axi.3 $e |- C e. CC $.
     $( Associative law for addition.  (Contributed by NM, 23-Nov-1994.) $)
@@ -65208,6 +65402,2662 @@ $)
     adddii $p |- ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) $=
       ( cc wcel caddc co cmul wceq adddi mp3an ) AGHBGHCGHABCIJKJABKJACKJIJLDEF
       ABCMN $.
+
+    $( Distributive law (right-distributivity).  (Contributed by NM,
+       16-Feb-1995.) $)
+    adddiri $p |- ( ( A + B ) x. C ) = ( ( A x. C ) + ( B x. C ) ) $=
+      ( cc wcel caddc co cmul wceq adddir mp3an ) AGHBGHCGHABIJCKJACKJBCKJIJLDE
+      FABCMN $.
+  $}
+
+  ${
+    recni.1 $e |- A e. RR $.
+    $( A real number is a complex number.  (Contributed by NM, 1-Mar-1995.) $)
+    recni $p |- A e. CC $=
+      ( cr cc ax-resscn sselii ) CDAEBF $.
+
+    axri.2 $e |- B e. RR $.
+    $( Closure law for addition of reals.  (Contributed by NM, 17-Jan-1997.) $)
+    readdcli $p |- ( A + B ) e. RR $=
+      ( cr wcel caddc co readdcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Closure law for multiplication of reals.  (Contributed by NM,
+       17-Jan-1997.) $)
+    remulcli $p |- ( A x. B ) e. RR $=
+      ( cr wcel cmul co remulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
+  $( 1 is an real number, deductive form (common case).  (Contributed by David
+     A. Wheeler, 6-Dec-2018.) $)
+  1red $p |- ( ph -> 1 e. RR ) $=
+    ( c1 cr wcel 1re a1i ) BCDAEF $.
+
+  $( 1 is a complex number, deductive form (common case).  (Contributed by
+     David A. Wheeler, 6-Dec-2018.) $)
+  1cnd $p |- ( ph -> 1 e. CC ) $=
+    ( c1 cc wcel ax-1cn a1i ) BCDAEF $.
+
+  ${
+    addcld.1 $e |- ( ph -> A e. CC ) $.
+    $( Identity law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulid1d $p |- ( ph -> ( A x. 1 ) = A ) $=
+      ( cc wcel c1 cmul co wceq mulid1 syl ) ABDEBFGHBICBJK $.
+
+    $( Identity law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulid2d $p |- ( ph -> ( 1 x. A ) = A ) $=
+      ( cc wcel c1 cmul co wceq mulid2 syl ) ABDEFBGHBICBJK $.
+
+    addcld.2 $e |- ( ph -> B e. CC ) $.
+    $( Closure law for addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addcld $p |- ( ph -> ( A + B ) e. CC ) $=
+      ( cc wcel caddc co addcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulcld $p |- ( ph -> ( A x. B ) e. CC ) $=
+      ( cc wcel cmul co mulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Commutative law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulcomd $p |- ( ph -> ( A x. B ) = ( B x. A ) ) $=
+      ( cc wcel cmul co wceq mulcom syl2anc ) ABFGCFGBCHICBHIJDEBCKL $.
+
+    addassd.3 $e |- ( ph -> C e. CC ) $.
+    $( Associative law for addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addassd $p |- ( ph -> ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $=
+      ( cc wcel caddc co wceq addass syl3anc ) ABHICHIDHIBCJKDJKBCDJKJKLEFGBCDM
+      N $.
+
+    $( Associative law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulassd $p |- ( ph -> ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $=
+      ( cc wcel cmul co wceq mulass syl3anc ) ABHICHIDHIBCJKDJKBCDJKJKLEFGBCDMN
+      $.
+
+    $( Distributive law (left-distributivity).  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    adddid $p |- ( ph -> ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
+      ( cc wcel caddc co cmul wceq adddi syl3anc ) ABHICHIDHIBCDJKLKBCLKBDLKJKM
+      EFGBCDNO $.
+
+    $( Distributive law (right-distributivity).  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    adddird $p |- ( ph -> ( ( A + B ) x. C ) = ( ( A x. C ) + ( B x. C ) ) ) $=
+      ( cc wcel caddc co cmul wceq adddir syl3anc ) ABHICHIDHIBCJKDLKBDLKCDLKJK
+      MEFGBCDNO $.
+  $}
+
+  ${
+    recnd.1 $e |- ( ph -> A e. RR ) $.
+    $( Deduction from real number to complex number.  (Contributed by NM,
+       26-Oct-1999.) $)
+    recnd $p |- ( ph -> A e. CC ) $=
+      ( cr wcel cc recn syl ) ABDEBFECBGH $.
+
+    readdcld.2 $e |- ( ph -> B e. RR ) $.
+    $( Closure law for addition of reals.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    readdcld $p |- ( ph -> ( A + B ) e. RR ) $=
+      ( cr wcel caddc co readdcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure law for multiplication of reals.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    remulcld $p |- ( ph -> ( A x. B ) e. RR ) $=
+      ( cr wcel cmul co remulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Infinity and the extended real number system
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c <_ $. $( 'Less than or equal to' relation. $)
+  $c +oo $. $( Plus infinity $)
+  $c -oo $. $( Minus infinity $)
+  $c RR* $. $( The set of extended reals $)
+  $c < $. $( 'Less than' relation (over extended reals) $)
+
+  $( Plus infinity. $)
+  cpnf $a class +oo $.
+  $( Minus infinity. $)
+  cmnf $a class -oo $.
+  $( The set of extended reals (includes plus and minus infinity). $)
+  cxr $a class RR* $.
+  $( 'Less than' predicate (extended to include the extended reals). $)
+  clt $a class < $.
+  $( Extend wff notation to include the 'less than or equal to' relation. $)
+  cle $a class <_ $.
+
+  $( Define plus infinity.  Note that the definition is arbitrary, requiring
+     only that ` +oo ` be a set not in ` RR ` and different from ` -oo `
+     ( ~ df-mnf ).  We use ` ~P U. CC ` to make it independent of the
+     construction of ` CC ` , and Cantor's Theorem will show that it is
+     different from any member of ` CC ` and therefore ` RR ` .  See ~ pnfnre
+     and ~ mnfnre , and we'll also be able to prove ` +oo =/= -oo ` .
+
+     A simpler possibility is to define ` +oo ` as ` CC ` and ` -oo ` as
+     ` { CC } ` , but that approach requires the Axiom of Regularity to show
+     that ` +oo ` and ` -oo ` are different from each other and from all
+     members of ` RR ` .  (Contributed by NM, 13-Oct-2005.)
+     (New usage is discouraged.) $)
+  df-pnf $a |- +oo = ~P U. CC $.
+
+  $( Define minus infinity as the power set of plus infinity.  Note that the
+     definition is arbitrary, requiring only that ` -oo ` be a set not in
+     ` RR ` and different from ` +oo ` (see ~ mnfnre ).  (Contributed by NM,
+     13-Oct-2005.)  (New usage is discouraged.) $)
+  df-mnf $a |- -oo = ~P +oo $.
+
+  $( Define the set of extended reals that includes plus and minus infinity.
+     Definition 12-3.1 of [Gleason] p. 173.  (Contributed by NM,
+     13-Oct-2005.) $)
+  df-xr $a |- RR* = ( RR u. { +oo , -oo } ) $.
+
+  ${
+    $d x y $.
+    $( Define 'less than' on the set of extended reals.  Definition 12-3.1 of
+       [Gleason] p. 173.  Note that in our postulates for complex numbers,
+       ` <RR ` is primitive and not necessarily a relation on ` RR ` .
+       (Contributed by NM, 13-Oct-2005.) $)
+    df-ltxr $a |- < = ( { <. x , y >. | ( x e. RR /\ y e. RR /\ x <RR y ) }
+      u. ( ( ( RR u. { -oo } ) X. { +oo } ) u. ( { -oo } X. RR ) ) ) $.
+  $}
+
+  $( Define 'less than or equal to' on the extended real subset of complex
+     numbers.  (Contributed by NM, 13-Oct-2005.) $)
+  df-le $a |- <_ = ( ( RR* X. RR* ) \ `' < ) $.
+
+  $( Plus infinity is not a real number.  (Contributed by NM, 13-Oct-2005.) $)
+  pnfnre $p |- +oo e/ RR $=
+    ( cpnf cr wcel cc cuni cpw cvv wn uniex pwuninel2 ax-mp df-pnf eleq1i mtbir
+    cnex recn mto nelir ) ABABCADCZSDEZFZDCZTGCUBHDOIDGJKAUADLMNAPQR $.
+
+  $( Minus infinity is not a real number.  (Contributed by NM, 13-Oct-2005.) $)
+  mnfnre $p |- -oo e/ RR $=
+    ( cmnf cr wcel cc cuni cpw cvv wn cnex 2pwuninelg ax-mp df-mnf df-pnf pweqi
+    cpnf eqtri eleq1i mtbir recn mto nelir ) ABABCADCZUBDEFZFZDCZDGCUEHIDGJKAUD
+    DAOFUDLOUCMNPQRASTUA $.
+
+  $( The standard reals are a subset of the extended reals.  (Contributed by
+     NM, 14-Oct-2005.) $)
+  ressxr $p |- RR C_ RR* $=
+    ( cr cpnf cmnf cpr cun cxr ssun1 df-xr sseqtr4i ) AABCDZEFAJGHI $.
+
+  $( The Cartesian product of standard reals are a subset of the Cartesian
+     product of extended reals (common case).  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  rexpssxrxp $p |- ( RR X. RR ) C_ ( RR* X. RR* ) $=
+    ( cr cxr wss cxp ressxr xpss12 mp2an ) ABCZHAADBBDCEEABABFG $.
+
+  $( A standard real is an extended real.  (Contributed by NM, 14-Oct-2005.) $)
+  rexr $p |- ( A e. RR -> A e. RR* ) $=
+    ( cr cxr ressxr sseli ) BCADE $.
+
+  $( Zero is an extended real.  (Contributed by Mario Carneiro,
+     15-Jun-2014.) $)
+  0xr $p |- 0 e. RR* $=
+    ( cr cxr cc0 ressxr 0re sselii ) ABCDEF $.
+
+  $( No (finite) real equals plus infinity.  (Contributed by NM, 14-Oct-2005.)
+     (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  renepnf $p |- ( A e. RR -> A =/= +oo ) $=
+    ( cr wcel cpnf wceq pnfnre neli eleq1 mtbiri necon2ai ) ABCZADADEKDBCDBFGAD
+    BHIJ $.
+
+  $( No real equals minus infinity.  (Contributed by NM, 14-Oct-2005.)  (Proof
+     shortened by Andrew Salmon, 19-Nov-2011.) $)
+  renemnf $p |- ( A e. RR -> A =/= -oo ) $=
+    ( cr wcel cmnf wceq mnfnre neli eleq1 mtbiri necon2ai ) ABCZADADEKDBCDBFGAD
+    BHIJ $.
+
+  ${
+    rexrd.1 $e |- ( ph -> A e. RR ) $.
+    $( A standard real is an extended real.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    rexrd $p |- ( ph -> A e. RR* ) $=
+      ( cr cxr ressxr sseldi ) ADEBFCG $.
+
+    $( No (finite) real equals plus infinity.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    renepnfd $p |- ( ph -> A =/= +oo ) $=
+      ( cr wcel cpnf wne renepnf syl ) ABDEBFGCBHI $.
+
+    $( No real equals minus infinity.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    renemnfd $p |- ( ph -> A =/= -oo ) $=
+      ( cr wcel cmnf wne renemnf syl ) ABDEBFGCBHI $.
+  $}
+
+  ${
+    rexri.1 $e |- A e. RR $.
+    $( A standard real is an extended real (inference form.)  (Contributed by
+       David Moews, 28-Feb-2017.) $)
+    rexri $p |- A e. RR* $=
+      ( cr wcel cxr rexr ax-mp ) ACDAEDBAFG $.
+  $}
+
+  $( The reals and the infinities are disjoint.  (Contributed by NM,
+     25-Oct-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  renfdisj $p |- ( RR i^i { +oo , -oo } ) = (/) $=
+    ( vx cr cpnf cmnf cpr cin c0 wceq cv wcel wn disj vex elpr renepnf necon2bi
+    wo renemnf jaoi sylbi con2i mprgbir ) BCDEZFGHAIZUCJZKABABUCLUEUDBJZUEUDCHZ
+    UDDHZQUFKZUDCDAMNUGUIUHUFUDCUDOPUFUDDUDRPSTUAUB $.
+
+  ${
+    $d x y $.
+    $( 'Less than' is a relation on extended reals.  (Contributed by Mario
+       Carneiro, 28-Apr-2015.) $)
+    ltrelxr $p |- < C_ ( RR* X. RR* ) $=
+      ( vx vy cv cr wcel copab cmnf csn cun cxp cxr wa eqsstri sstri wss ressxr
+      cpnf unssi xpss12 mp2an clt cltrr wbr w3a df-ltxr df-3an opabbii opabssxp
+      rexpssxrxp cpr snsspr2 ssun2 df-xr sseqtr4i snsspr1 ) UAACZDEZBCZDEZUPURU
+      BUCZUDZABFZDGHZIZQHZJZVCDJZIZIKKJZABUEVBVHVIVBDDJZVIVBUQUSLUTLZABFVJVAVKA
+      BUQUSUTUFUGUTABDDUHMUINVFVGVIVDKOVEKOVFVIODVCKPVCQGUJZKQGUKVLDVLIKVLDULUM
+      UNZNZRVEVLKQGUOVMNVDKVEKSTVCKODKOVGVIOVNPVCKDKSTRRM $.
+  $}
+
+  $( 'Less than' is a relation.  (Contributed by NM, 14-Oct-2005.) $)
+  ltrel $p |- Rel < $=
+    ( clt cxr cxp wss wrel ltrelxr relxp relss mp2 ) ABBCZDJEAEFBBGAJHI $.
+
+  $( 'Less than or equal' is a relation on extended reals.  (Contributed by
+     Mario Carneiro, 28-Apr-2015.) $)
+  lerelxr $p |- <_ C_ ( RR* X. RR* ) $=
+    ( cle cxr cxp clt ccnv cdif df-le difss eqsstri ) ABBCZDEZFJGJKHI $.
+
+  $( 'Less or equal to' is a relation.  (Contributed by FL, 2-Aug-2009.)
+     (Revised by Mario Carneiro, 28-Apr-2015.) $)
+  lerel $p |- Rel <_ $=
+    ( cle cxr cxp wss wrel lerelxr relxp relss mp2 ) ABBCZDJEAEFBBGAJHI $.
+
+  $( 'Less than or equal to' expressed in terms of 'less than', for extended
+     reals.  (Contributed by NM, 14-Oct-2005.) $)
+  xrlenlt $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A <_ B <-> -. B < A ) ) $=
+    ( cxr wcel wa cle wbr cop clt ccnv wn df-br cxp wb opelxpi cdif df-le eldif
+    eleq2i bitri baib syl syl5bb opelcnvg syl6rbbr notbid bitr4d ) ACDBCDEZABFG
+    ZABHZIJZDZKZBAIGZKUIUJFDZUHUMABFLUHUJCCMZDZUOUMNABCCOUOUQUMUOUJUPUKPZDUQUME
+    FURUJQSUJUPUKRTUAUBUCUHUNULUHULBAHIDUNABCCIUDBAILUEUFUG $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The standard less-than ` <RR ` and the extended real less-than ` < ` are
+       identical when restricted to the non-extended reals ` RR ` .
+       (Contributed by NM, 13-Oct-2005.)  (Revised by Mario Carneiro,
+       28-Apr-2015.) $)
+    ltxrlt $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B <-> A <RR B ) ) $=
+      ( vx vy cr wcel clt wbr cltrr cv w3a cmnf csn cun cpnf cxp wo brun wceq
+      wi wa copab df-ltxr breqi bitri eleq1 breq1 3anbi13d breq2 3anbi23d brabg
+      eqid simp3 syl6bi brxp simprbi elsni syl a1i renepnf neneqd pm2.24 adantl
+      ee21 simplbi renemnf adantr jaod syl5bi 3adant3 ibir sylibr 3expia impbid
+      wn wb orcd ) AEFZBEFZUAZABGHZABIHZWAABCJZEFZDJZEFZWCWEIHZKZCDUBZHZABELMZN
+      ZOMZPZWKEPZNZHZQZVTWBWAABWIWPNZHWRABGWSCDUCUDABWIWPRUEZVTWJWBWQVTWJVRVSWB
+      KZWBWHVRWFAWEIHZKXACDABEEWIWCASWDVRWGXBWFWCAEUFWCAWEIUGUHWEBSWFVSXBWBVRWE
+      BEUFWEBAIUIUJWIULUKZVRVSWBUMUNWQABWNHZABWOHZQVTWBABWNWORVTXDWBXEVSXDWBTVR
+      VSXDBOSZXFVOWBXDXFTVSXDBWMFZXFXDAWLFXGABWLWMUOUPBOUQURUSVSBOBUTVAXFWBVBVD
+      VCVRXEWBTVSVRXEALSZXHVOWBXEXHTVRXEAWKFZXHXEXIVSABWKEUOVEALUQURUSVRALAVFVA
+      XHWBVBVDVGVHVIVHVIVRVSWBWAXAWRWAXAWJWQXAWJVRVSWJXAVPWBXCVJVKVQWTVLVMVN $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      Restate the ordering postulates with extended real "less than"
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Real number less-than is irreflexive.  Axiom for real and complex numbers,
+     derived from set theory.  This restates ~ ax-pre-ltirr with ordering on
+     the extended reals.  New proofs should use ~ ltnr instead for naming
+     consistency.  (New usage is discouraged.)  (Contributed by Jim Kingdon,
+     15-Jan-2020.) $)
+  axltirr $p |- ( A e. RR -> -. A < A ) $=
+    ( cr wcel clt wbr cltrr ax-pre-ltirr wb ltxrlt anidms mtbird ) ABCZAADEZAAF
+    EZAGLMNHAAIJK $.
+
+  $( Real number less-than is weakly linear.  Axiom for real and complex
+     numbers, derived from set theory.  This restates ~ ax-pre-ltwlin with
+     ordering on the extended reals.  (Contributed by Jim Kingdon,
+     15-Jan-2020.) $)
+  axltwlin $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+      ( A < B -> ( A < C \/ C < B ) ) ) $=
+    ( cr wcel w3a cltrr wbr wo clt ax-pre-ltwlin ltxrlt 3adant3 3adant2 3adant1
+    wb ancoms orbi12d 3imtr4d ) ADEZBDEZCDEZFZABGHZACGHZCBGHZIABJHZACJHZCBJHZIA
+    BCKTUAUGUDPUBABLMUCUHUEUIUFTUBUHUEPUAACLNUAUBUIUFPZTUBUAUJCBLQORS $.
+
+  $( Ordering on reals is transitive.  Axiom for real and complex numbers,
+     derived from set theory.  This restates ~ ax-pre-lttrn with ordering on
+     the extended reals.  New proofs should use ~ lttr instead for naming
+     consistency.  (New usage is discouraged.)  (Contributed by NM,
+     13-Oct-2005.) $)
+  axlttrn $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A < B /\ B < C ) -> A < C ) ) $=
+    ( cr wcel w3a cltrr wbr wa clt ax-pre-lttrn 3adant3 3adant1 anbi12d 3adant2
+    wb ltxrlt 3imtr4d ) ADEZBDEZCDEZFZABGHZBCGHZIACGHZABJHZBCJHZIACJHZABCKUBUFU
+    CUGUDSTUFUCPUAABQLTUAUGUDPSBCQMNSUAUHUEPTACQOR $.
+
+  $( Ordering property of addition on reals.  Axiom for real and complex
+     numbers, derived from set theory.  (This restates ~ ax-pre-ltadd with
+     ordering on the extended reals.)  (Contributed by NM, 13-Oct-2005.) $)
+  axltadd $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A < B -> ( C + A ) < ( C + B ) ) ) $=
+    ( cr wcel w3a cltrr wbr caddc co clt ax-pre-ltadd wb ltxrlt 3adant3 readdcl
+    wa syl2an 3impdi 3coml 3imtr4d ) ADEZBDEZCDEZFABGHZCAIJZCBIJZGHZABKHZUFUGKH
+    ZABCLUBUCUIUEMUDABNOUDUBUCUJUHMZUDUBUCUKUDUBQUFDEUGDEUKUDUCQCAPCBPUFUGNRSTU
+    A $.
+
+  $( The product of two positive reals is positive.  Axiom for real and complex
+     numbers, derived from set theory.  (This restates ~ ax-pre-mulgt0 with
+     ordering on the extended reals.)  (Contributed by NM, 13-Oct-2005.) $)
+  axmulgt0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( ( 0 < A /\ 0 < B ) -> 0 < ( A x. B ) ) ) $=
+    ( cr wcel wa cc0 cltrr wbr cmul co clt ax-pre-mulgt0 wb 0re ltxrlt bi2anan9
+    mpan remulcl sylancr 3imtr4d ) ACDZBCDZEZFAGHZFBGHZEFABIJZGHZFAKHZFBKHZEFUF
+    KHZABLUAUHUDUBUIUEFCDZUAUHUDMNFAOQUKUBUIUEMNFBOQPUCUKUFCDUJUGMNABRFUFOST $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordering on reals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Alias for ~ axlttrn , for naming consistency with ~ lttri .  New proofs
+     should generally use this instead of ~ ax-pre-lttrn .  (Contributed by NM,
+     10-Mar-2008.) $)
+  lttr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A < B /\ B < C ) -> A < C ) ) $=
+    ( axlttrn ) ABCD $.
+
+  $( The product of two positive numbers is positive.  (Contributed by NM,
+     10-Mar-2008.) $)
+  mulgt0 $p |- ( ( ( A e. RR /\ 0 < A ) /\
+                ( B e. RR /\ 0 < B ) ) -> 0 < ( A x. B ) ) $=
+    ( cr wcel cc0 clt wbr cmul co wa axmulgt0 imp an4s ) ACDZBCDZEAFGZEBFGZEABH
+    IFGZNOJPQJRABKLM $.
+
+  $( 'Less than or equal to' expressed in terms of 'less than'.  (Contributed
+     by NM, 13-May-1999.) $)
+  lenlt $p |- ( ( A e. RR /\ B e. RR ) -> ( A <_ B <-> -. B < A ) ) $=
+    ( cr wcel cxr cle wbr clt wn wb rexr xrlenlt syl2an ) ACDAEDBEDABFGBAHGIJBC
+    DAKBKABLM $.
+
+  $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
+  ltnr $p |- ( A e. RR -> -. A < A ) $=
+    ( axltirr ) AB $.
+
+  ${
+    $d x y z $.
+    $( 'Less than' is a strict ordering.  (Contributed by NM, 19-Jan-1997.) $)
+    ltso $p |- < Or RR $=
+      ( vx vy vz cr clt wor wpo cv wbr wo wi wral wtru wcel wn ltnr adantl lttr
+      w3a wa ispod trud axltwlin rgen3 df-iso mpbir2an ) DEFDEGZAHZBHZEIZUHCHZE
+      IZUKUIEIJKZCDLBDLADLUGMABCDEUHDNZUHUHEIOMUHPQUNUIDNUKDNSUJUIUKEITULKMUHUI
+      UKRQUAUBUMABCDDDUHUIUKUCUDABCDEUEUF $.
+  $}
+
+  $( 'Greater than' is a strict ordering.  (Contributed by JJ, 11-Oct-2018.) $)
+  gtso $p |- `' < Or RR $=
+    ( vx cr clt wor ccnv ltso cc0 wcel cv wex wb 0re elex2 cnvsom mp2b mpbi ) B
+    CDZBCEDZFGBHAIBHAJQRKLAGBMABCNOP $.
+
+  $( Transitive law, weaker form of ` ( A < B /\ B <_ C ) -> A < C ` .
+     (Contributed by AV, 14-Oct-2018.) $)
+  ltleletr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A < B /\ B <_ C ) -> A <_ C ) ) $=
+    ( cr wcel w3a clt wbr cle wn wi wa lttr 3coml expcomd con3 wb lenlt 3adant1
+    syl6 3adant2 imbi12d sylibrd impd ) ADEZBDEZCDEZFZABGHZBCIHZACIHZUHUICBGHZJ
+    ZCAGHZJZKZUJUKKUHUIUNULKUPUHUNUIULUGUEUFUNUILULKCABMNOUNULPTUHUJUMUKUOUFUGU
+    JUMQUEBCRSUEUGUKUOQUFACRUAUBUCUD $.
+
+  $( Transitive law.  (Contributed by NM, 12-Nov-1999.) $)
+  letr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A <_ B /\ B <_ C ) -> A <_ C ) ) $=
+    ( cr w3a clt wbr wo wn cle wa wi axltwlin 3coml orcom syl6ib con3d wb lenlt
+    wcel 3adant3 3adant1 anbi12d ioran syl6bbr 3adant2 3imtr4d ) ADTZBDTZCDTZEZ
+    BAFGZCBFGZHZIZCAFGZIZABJGZBCJGZKZACJGZUKUPUNUKUPUMULHZUNUJUHUIUPVBLCABMNUMU
+    LOPQUKUTULIZUMIZKUOUKURVCUSVDUHUIURVCRUJABSUAUIUJUSVDRUHBCSUBUCULUMUDUEUHUJ
+    VAUQRUIACSUFUG $.
+
+  $( 'Less than or equal to' is reflexive.  (Contributed by NM,
+     18-Aug-1999.) $)
+  leid $p |- ( A e. RR -> A <_ A ) $=
+    ( cr wcel cle wbr clt wn ltnr wb lenlt anidms mpbird ) ABCZAADEZAAFEGZAHMNO
+    IAAJKL $.
+
+  $( 'Less than' implies not equal.  (Contributed by NM, 9-Oct-1999.)  (Revised
+     by Mario Carneiro, 16-Sep-2015.) $)
+  ltne $p |- ( ( A e. RR /\ A < B ) -> B =/= A ) $=
+    ( cr wcel clt wbr wne wn wceq ltnr breq2 notbid syl5ibrcom necon2ad imp ) A
+    CDZABEFZBAGPQBAPQHBAIZAAEFZHAJRQSBAAEKLMNO $.
+
+  $( 'Less than' is not symmetric.  (Contributed by NM, 8-Jan-2002.) $)
+  ltnsym $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B -> -. B < A ) ) $=
+    ( cr wcel wa clt wbr wi wn lttr 3anidm13 expd ltnr adantr con3 ee21 ) ACDZB
+    CDZEZABFGZBAFGZAAFGZHUBIZUAISTUAUBQRTUAEUBHABAJKLQUCRAMNUAUBOP $.
+
+  $( 'Less than' implies 'less than or equal to'.  (Contributed by NM,
+     25-Aug-1999.) $)
+  ltle $p |- ( ( A e. RR /\ B e. RR ) ->
+               ( A < B -> A <_ B ) ) $=
+    ( cr wcel wa clt wbr wn cle ltnsym lenlt sylibrd ) ACDBCDEABFGBAFGHABIGABJA
+    BKL $.
+
+  $( 'Less than' is antisymmetric and irreflexive.  (Contributed by NM,
+     13-Aug-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  ltnsym2 $p |- ( ( A e. RR /\ B e. RR ) -> -. ( A < B /\ B < A ) ) $=
+    ( cr clt wor wcel wa wbr wn ltso so2nr mpan ) CDEACFBCFGABDHBADHGIJCABDKL
+    $.
+
+  $( Equality implies 'less than or equal to'.  (Contributed by NM,
+     4-Apr-2005.) $)
+  eqle $p |- ( ( A e. RR /\ A = B ) -> A <_ B ) $=
+    ( cr wcel cle wbr wceq leid breq2 biimpac sylan ) ACDAAEFZABGZABEFZAHMLNABA
+    EIJK $.
+
+  ${
+    lt.1 $e |- A e. RR $.
+    $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
+    ltnri $p |- -. A < A $=
+      ( cr wcel clt wbr wn ltnr ax-mp ) ACDAAEFGBAHI $.
+
+    $( Equality implies 'less than or equal to'.  (Contributed by NM,
+       23-May-1999.)  (Revised by Alexander van der Vekens, 20-Mar-2018.) $)
+    eqlei $p |- ( A = B -> A <_ B ) $=
+      ( cr wcel wceq cle wbr eqle mpan ) ADEABFABGHCABIJ $.
+
+    $( Equality implies 'less than or equal to'.  (Contributed by Alexander van
+       der Vekens, 20-Mar-2018.) $)
+    eqlei2 $p |- ( B = A -> B <_ A ) $=
+      ( cr wcel wceq cle wbr eleq1 mpbiri eqle mpancom ) BDEZBAFZBAGHNMADECBADI
+      JBAKL $.
+
+    ${
+      ltneii.2 $e |- A < B $.
+      $( 'Less than' implies not equal.  (Contributed by Mario Carneiro,
+         30-Sep-2013.) $)
+      gtneii $p |- B =/= A $=
+        ( cr wcel clt wbr wne ltne mp2an ) AEFABGHBAICDABJK $.
+
+      $( 'Greater than' implies not equal.  (Contributed by Mario Carneiro,
+         16-Sep-2015.) $)
+      ltneii $p |- A =/= B $=
+        ( gtneii necomi ) BAABCDEF $.
+    $}
+
+    lt.2 $e |- B e. RR $.
+    $( 'Less than' is not symmetric.  (Contributed by NM, 6-May-1999.) $)
+    ltnsymi $p |- ( A < B -> -. B < A ) $=
+      ( cr wcel clt wbr wn wi ltnsym mp2an ) AEFBEFABGHBAGHIJCDABKL $.
+
+    $( 'Less than or equal to' in terms of 'less than'.  (Contributed by NM,
+       24-May-1999.) $)
+    lenlti $p |- ( A <_ B <-> -. B < A ) $=
+      ( cr wcel cle wbr clt wn wb lenlt mp2an ) AEFBEFABGHBAIHJKCDABLM $.
+
+    $( 'Less than' implies 'less than or equal to'.  (Contributed by NM,
+       14-May-1999.) $)
+    ltlei $p |- ( A < B -> A <_ B ) $=
+      ( cr wcel clt wbr cle wi ltle mp2an ) AEFBEFABGHABIHJCDABKL $.
+
+    ${
+      ltlei.1 $e |- A < B $.
+      $( 'Less than' implies 'less than or equal to' (inference).  (Contributed
+         by NM, 22-Aug-1999.) $)
+      ltleii $p |- A <_ B $=
+        ( clt wbr cle ltlei ax-mp ) ABFGABHGEABCDIJ $.
+    $}
+
+    $( 'Less than' implies not equal.  (Contributed by NM, 28-Jul-1999.) $)
+    ltnei $p |- ( A < B -> B =/= A ) $=
+      ( cr wcel clt wbr wne ltne mpan ) AEFABGHBAICABJK $.
+
+    ${
+      lt.3 $e |- C e. RR $.
+      $( 'Less than' is transitive.  Theorem I.17 of [Apostol] p. 20.
+         (Contributed by NM, 14-May-1999.) $)
+      lttri $p |- ( ( A < B /\ B < C ) -> A < C ) $=
+        ( cr wcel clt wbr wa wi lttr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
+
+      $( 'Less than or equal to' is transitive.  (Contributed by NM,
+         14-May-1999.) $)
+      letri $p |- ( ( A <_ B /\ B <_ C ) -> A <_ C ) $=
+        ( cr wcel cle wbr wa wi letr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
+    $}
+
+    $( The product of two positive numbers is positive.  (Contributed by NM,
+       16-May-1999.) $)
+    mulgt0i $p |- ( ( 0 < A /\ 0 < B ) -> 0 < ( A x. B ) ) $=
+      ( cr wcel cc0 clt wbr wa cmul co wi axmulgt0 mp2an ) AEFBEFGAHIGBHIJGABKL
+      HIMCDABNO $.
+
+    mulgt0i.3 $e |- 0 < A $.
+    mulgt0i.4 $e |- 0 < B $.
+    $( The product of two positive numbers is positive.  (Contributed by NM,
+       18-May-1999.) $)
+    mulgt0ii $p |- 0 < ( A x. B ) $=
+      ( cc0 clt wbr cmul co mulgt0i mp2an ) GAHIGBHIGABJKHIEFABCDLM $.
+  $}
+
+  ${
+    ltd.1 $e |- ( ph -> A e. RR ) $.
+    $( 'Less than' is irreflexive.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    ltnrd $p |- ( ph -> -. A < A ) $=
+      ( cr wcel clt wbr wn ltnr syl ) ABDEBBFGHCBIJ $.
+
+    ${
+      ltned.2 $e |- ( ph -> A < B ) $.
+      $( 'Less than' implies not equal.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      gtned $p |- ( ph -> B =/= A ) $=
+        ( cr wcel clt wbr wne ltne syl2anc ) ABFGBCHICBJDEBCKL $.
+
+      $( 'Greater than' implies not equal.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      ltned $p |- ( ph -> A =/= B ) $=
+        ( gtned necomd ) ACBABCDEFG $.
+    $}
+
+    ltd.2 $e |- ( ph -> B e. RR ) $.
+    $( 'Less than or equal to' in terms of 'less than'.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    lenltd $p |- ( ph -> ( A <_ B <-> -. B < A ) ) $=
+      ( cr wcel cle wbr clt wn wb lenlt syl2anc ) ABFGCFGBCHICBJIKLDEBCMN $.
+
+    ${
+      ltled.1 $e |- ( ph -> A < B ) $.
+      $( 'Less than' implies 'less than or equal to'.  (Contributed by Mario
+         Carneiro, 27-May-2016.) $)
+      ltled $p |- ( ph -> A <_ B ) $=
+        ( clt wbr cle cr wcel wi ltle syl2anc mpd ) ABCGHZBCIHZFABJKCJKPQLDEBCM
+        NO $.
+
+      $( 'Less than' implies 'less than or equal to'.  (Contributed by Mario
+         Carneiro, 27-May-2016.) $)
+      ltnsymd $p |- ( ph -> -. B < A ) $=
+        ( cle wbr clt wn ltled lenltd mpbid ) ABCGHCBIHJABCDEFKABCDELM $.
+    $}
+
+    ${
+      mulgt0d.3 $e |- ( ph -> 0 < A ) $.
+      mulgt0d.4 $e |- ( ph -> 0 < B ) $.
+      $( The product of two positive numbers is positive.  (Contributed by
+         Mario Carneiro, 27-May-2016.) $)
+      mulgt0d $p |- ( ph -> 0 < ( A x. B ) ) $=
+        ( cr wcel cc0 clt wbr cmul co mulgt0 syl22anc ) ABHIJBKLCHIJCKLJBCMNKLD
+        FEGBCOP $.
+    $}
+
+    letrd.3 $e |- ( ph -> C e. RR ) $.
+    ${
+      letrd.4 $e |- ( ph -> A <_ B ) $.
+      letrd.5 $e |- ( ph -> B <_ C ) $.
+      $( Transitive law deduction for 'less than or equal to'.  (Contributed by
+         NM, 20-May-2005.) $)
+      letrd $p |- ( ph -> A <_ C ) $=
+        ( cle wbr cr wcel wa wi letr syl3anc mp2and ) ABCJKZCDJKZBDJKZHIABLMCLM
+        DLMSTNUAOEFGBCDPQR $.
+    $}
+
+    ${
+      lttrd.4 $e |- ( ph -> A < B ) $.
+      lttrd.5 $e |- ( ph -> B < C ) $.
+      $( Transitive law deduction for 'less than'.  (Contributed by NM,
+         9-Jan-2006.) $)
+      lttrd $p |- ( ph -> A < C ) $=
+        ( clt wbr cr wcel wa wi lttr syl3anc mp2and ) ABCJKZCDJKZBDJKZHIABLMCLM
+        DLMSTNUAOEFGBCDPQR $.
+    $}
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Initial properties of the complex numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Commutative/associative law for multiplication.  (Contributed by NM,
+     30-Apr-2005.) $)
+  mul12 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( A x. ( B x. C ) ) = ( B x. ( A x. C ) ) ) $=
+    ( cc wcel w3a cmul co wceq wa mulcom oveq1d 3adant3 mulass 3com12 3eqtr3d )
+    ADEZBDEZCDEZFABGHZCGHZBAGHZCGHZABCGHGHBACGHGHZQRUAUCISQRJTUBCGABKLMABCNRQSU
+    CUDIBACNOP $.
+
+  $( Commutative/associative law.  (Contributed by NM, 8-Oct-1999.) $)
+  mul32 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A x. B ) x. C ) = ( ( A x. C ) x. B ) ) $=
+    ( cc wcel w3a cmul co wceq wa mulcom oveq2d 3adant1 mulass 3com23 3eqtr4d )
+    ADEZBDEZCDEZFABCGHZGHZACBGHZGHZABGHCGHACGHBGHZRSUAUCIQRSJTUBAGBCKLMABCNQSRU
+    DUCIACBNOP $.
+
+  $( Commutative/associative law.  (Contributed by Scott Fenton,
+     3-Jan-2013.) $)
+  mul31 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A x. B ) x. C ) = ( ( C x. B ) x. A ) ) $=
+    ( cc wcel cmul co wceq wa mulcom oveq2d 3adant1 mulass mulcl ancoms mulcomd
+    w3a simp1 3eqtr4d ) ADEZBDEZCDEZQZABCFGZFGZACBFGZFGZABFGCFGUFAFGUAUBUEUGHTU
+    AUBIUDUFAFBCJKLABCMUCUFAUAUBUFDEZTUBUAUHCBNOLTUAUBRPS $.
+
+  $( Rearrangement of 4 factors.  (Contributed by NM, 8-Oct-1999.) $)
+  mul4 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+              ( ( A x. B ) x. ( C x. D ) ) =
+                 ( ( A x. C ) x. ( B x. D ) ) ) $=
+    ( cc wcel wa cmul co wceq w3a mul32 oveq1d 3expa adantrr mulcl mulass 3expb
+    sylan an4s 3eqtr3d ) AEFZBEFZGZCEFZDEFZGZGABHIZCHIZDHIZACHIZBHIZDHIZUHCDHIH
+    IZUKBDHIHIZUDUEUJUMJZUFUBUCUEUPUBUCUEKUIULDHABCLMNOUDUHEFZUGUJUNJZABPUQUEUF
+    URUHCDQRSUBUEUCUFUMUOJZUBUEGUKEFZUCUFGUSACPUTUCUFUSUKBDQRSTUA $.
+
+  $( A simple product of sums expansion.  (Contributed by NM, 21-Feb-2005.) $)
+  muladd11 $p |- ( ( A e. CC /\ B e. CC ) -> ( ( 1 + A ) x. ( 1 + B ) ) =
+                 ( ( 1 + A ) + ( B + ( A x. B ) ) ) ) $=
+    ( cc wcel wa c1 caddc cmul wceq ax-1cn addcl mpan adddi mp3an2 sylan adantr
+    co mulid1d adddir eqtrd mp3an1 mulid2 adantl oveq1d oveq12d ) ACDZBCDZEZFAG
+    QZFBGQHQZUIFHQZUIBHQZGQZUIBABHQZGQZGQUFUICDZUGUJUMIZFCDZUFUPJFAKLZUPURUGUQJ
+    UIFBMNOUHUKUIULUOGUFUKUIIUGUFUIUSRPUHULFBHQZUNGQZUOURUFUGULVAIJFABSUAUHUTBU
+    NGUGUTBIUFBUBUCUDTUET $.
+
+  $( Two times a number.  (Contributed by NM, 18-May-1999.)  (Revised by Mario
+     Carneiro, 27-May-2016.) $)
+  1p1times $p |- ( A e. CC -> ( ( 1 + 1 ) x. A ) = ( A + A ) ) $=
+    ( cc wcel c1 caddc co cmul ax-1cn a1i id adddird mulid2 oveq12d eqtrd ) ABC
+    ZDDEFAGFDAGFZPEFAAEFODDADBCOHIZQOJKOPAPAEALZRMN $.
+
+  $( A theorem for complex numbers analogous the second Peano postulate
+     ~ peano2 .  (Contributed by NM, 17-Aug-2005.) $)
+  peano2cn $p |- ( A e. CC -> ( A + 1 ) e. CC ) $=
+    ( cc wcel c1 caddc co ax-1cn addcl mpan2 ) ABCDBCADEFBCGADHI $.
+
+  $( A theorem for reals analogous the second Peano postulate ~ peano2 .
+     (Contributed by NM, 5-Jul-2005.) $)
+  peano2re $p |- ( A e. RR -> ( A + 1 ) e. RR ) $=
+    ( cr wcel c1 caddc co 1re readdcl mpan2 ) ABCDBCADEFBCGADHI $.
+
+  $( Addition commutes.  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
+  addcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) $=
+    ( ax-addcom ) ABC $.
+
+  $( ` 0 ` is an additive identity.  (Contributed by Jim Kingdon,
+     16-Jan-2020.) $)
+  addid1 $p |- ( A e. CC -> ( A + 0 ) = A ) $=
+    ( ax-0id ) AB $.
+
+  $( ` 0 ` is a left identity for addition.  (Contributed by Scott Fenton,
+     3-Jan-2013.) $)
+  addid2 $p |- ( A e. CC -> ( 0 + A ) = A ) $=
+    ( cc wcel cc0 caddc co wceq 0cn addcom mpan2 addid1 eqtr3d ) ABCZADEFZDAEFZ
+    AMDBCNOGHADIJAKL $.
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Cancellation law for addition over the reals.  (Contributed by Scott
+       Fenton, 3-Jan-2013.) $)
+    readdcan $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+        ( ( C + A ) = ( C + B ) <-> A = B ) ) $=
+      ( vx cr wcel caddc co wceq wa oveq2 recnd addassd adantr cc oveq1d addid2
+      cc0 syl eqtrd w3a cv wi ax-rnegex 3ad2ant3 adantl wb simprl simpl3 simpl1
+      simpl2 eqeq12d mpbird addcom syl2anc simplrr 3eqtr3d ex rexlimddv impbid1
+      wrex eqtr3d ) AEFZBEFZCEFZUAZCAGHZCBGHZIZABIZVFCDUBZGHZRIZVIVJUCDEVEVCVMD
+      EVAVDDCUDUEVFVKEFZVMJZJZVIVJVPVIJZVKCGHZAGHZVRBGHZABVQVSVTIZVKVGGHZVKVHGH
+      ZIZVIWDVPVGVHVKGKUFVPWAWDUGVIVPVSWBVTWCVPVKCAVPVKVFVNVMUHLZVPCVCVDVEVOUIL
+      ZVPAVCVDVEVOUJLZMVPVKCBWEWFVPBVCVDVEVOUKLZMULNUMVQVSRAGHZAVQVRRAGVQVLVRRV
+      QCOFZVKOFZVLVRIVPWJVIWFNVPWKVIWENCVKUNUOVFVNVMVIUPVBZPVQAOFZWIAIVPWMVIWGN
+      AQSTVQVTRBGHZBVQVRRBGWLPVQBOFZWNBIVPWOVIWHNBQSTUQURUSABCGKUT $.
+  $}
+
+  $( ` 0 ` is its own additive identity.  (Contributed by Scott Fenton,
+     3-Jan-2013.) $)
+  00id $p |- ( 0 + 0 ) = 0 $=
+    ( cc0 cc wcel caddc co wceq 0cn addid1 ax-mp ) ABCAADEAFGAHI $.
+
+  ${
+    mul.1 $e |- A e. CC $.
+    $( ` 0 ` is an additive identity.  (Contributed by NM, 23-Nov-1994.)
+       (Revised by Scott Fenton, 3-Jan-2013.) $)
+    addid1i $p |- ( A + 0 ) = A $=
+      ( cc wcel cc0 caddc co wceq addid1 ax-mp ) ACDAEFGAHBAIJ $.
+
+    $( ` 0 ` is a left identity for addition.  (Contributed by NM,
+       3-Jan-2013.) $)
+    addid2i $p |- ( 0 + A ) = A $=
+      ( cc wcel cc0 caddc co wceq addid2 ax-mp ) ACDEAFGAHBAIJ $.
+
+    mul.2 $e |- B e. CC $.
+    $( Addition commutes.  Based on ideas by Eric Schmidt.  (Contributed by
+       Scott Fenton, 3-Jan-2013.) $)
+    addcomi $p |- ( A + B ) = ( B + A ) $=
+      ( cc wcel caddc co wceq addcom mp2an ) AEFBEFABGHBAGHICDABJK $.
+
+    ${
+      addcomli.2 $e |- ( A + B ) = C $.
+      $( Addition commutes.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+      addcomli $p |- ( B + A ) = C $=
+        ( caddc co addcomi eqtri ) BAGHABGHCBAEDIFJ $.
+    $}
+
+    mul.3 $e |- C e. CC $.
+    $( Commutative/associative law that swaps the first two factors in a triple
+       product.  (Contributed by NM, 11-May-1999.)  (Proof shortened by Andrew
+       Salmon, 19-Nov-2011.) $)
+    mul12i $p |- ( A x. ( B x. C ) ) = ( B x. ( A x. C ) ) $=
+      ( cc wcel cmul co wceq mul12 mp3an ) AGHBGHCGHABCIJIJBACIJIJKDEFABCLM $.
+
+    $( Commutative/associative law that swaps the last two factors in a triple
+       product.  (Contributed by NM, 11-May-1999.) $)
+    mul32i $p |- ( ( A x. B ) x. C ) = ( ( A x. C ) x. B ) $=
+      ( cc wcel cmul co wceq mul32 mp3an ) AGHBGHCGHABIJCIJACIJBIJKDEFABCLM $.
+
+    mul4.4 $e |- D e. CC $.
+    $( Rearrangement of 4 factors.  (Contributed by NM, 16-Feb-1995.) $)
+    mul4i $p |- ( ( A x. B ) x. ( C x. D ) ) =
+               ( ( A x. C ) x. ( B x. D ) ) $=
+      ( cc wcel cmul co wceq mul4 mp4an ) AIJBIJCIJDIJABKLCDKLKLACKLBDKLKLMEFGH
+      ABCDNO $.
+  $}
+
+  ${
+    muld.1 $e |- ( ph -> A e. CC ) $.
+    $( ` 0 ` is an additive identity.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addid1d $p |- ( ph -> ( A + 0 ) = A ) $=
+      ( cc wcel cc0 caddc co wceq addid1 syl ) ABDEBFGHBICBJK $.
+
+    $( ` 0 ` is a left identity for addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addid2d $p |- ( ph -> ( 0 + A ) = A ) $=
+      ( cc wcel cc0 caddc co wceq addid2 syl ) ABDEFBGHBICBJK $.
+
+    addcomd.2 $e |- ( ph -> B e. CC ) $.
+    $( Addition commutes.  Based on ideas by Eric Schmidt.  (Contributed by
+       Scott Fenton, 3-Jan-2013.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    addcomd $p |- ( ph -> ( A + B ) = ( B + A ) ) $=
+      ( cc wcel caddc co wceq addcom syl2anc ) ABFGCFGBCHICBHIJDEBCKL $.
+
+    mul12d.3 $e |- ( ph -> C e. CC ) $.
+    $( Commutative/associative law that swaps the first two factors in a triple
+       product.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    mul12d $p |- ( ph -> ( A x. ( B x. C ) ) = ( B x. ( A x. C ) ) ) $=
+      ( cc wcel cmul co wceq mul12 syl3anc ) ABHICHIDHIBCDJKJKCBDJKJKLEFGBCDMN
+      $.
+
+    $( Commutative/associative law that swaps the last two factors in a triple
+       product.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    mul32d $p |- ( ph -> ( ( A x. B ) x. C ) = ( ( A x. C ) x. B ) ) $=
+      ( cc wcel cmul co wceq mul32 syl3anc ) ABHICHIDHIBCJKDJKBDJKCJKLEFGBCDMN
+      $.
+
+    $( Commutative/associative law.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mul31d $p |- ( ph -> ( ( A x. B ) x. C ) = ( ( C x. B ) x. A ) ) $=
+      ( cc wcel cmul co wceq mul31 syl3anc ) ABHICHIDHIBCJKDJKDCJKBJKLEFGBCDMN
+      $.
+
+    mul4d.4 $e |- ( ph -> D e. CC ) $.
+    $( Rearrangement of 4 factors.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mul4d $p |- ( ph -> ( ( A x. B ) x. ( C x. D ) ) =
+                        ( ( A x. C ) x. ( B x. D ) ) ) $=
+      ( cc wcel cmul co wceq mul4 syl22anc ) ABJKCJKDJKEJKBCLMDELMLMBDLMCELMLMN
+      FGHIBCDEOP $.
+  $}
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+             Real and complex numbers - basic operations
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Addition
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Commutative/associative law that swaps the first two terms in a triple
+     sum.  (Contributed by NM, 11-May-2004.) $)
+  add12 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( A + ( B + C ) ) = ( B + ( A + C ) ) ) $=
+    ( cc wcel w3a caddc co wceq wa addcom oveq1d 3adant3 addass 3com12 3eqtr3d
+    ) ADEZBDEZCDEZFABGHZCGHZBAGHZCGHZABCGHGHBACGHGHZQRUAUCISQRJTUBCGABKLMABCNRQ
+    SUCUDIBACNOP $.
+
+  $( Commutative/associative law that swaps the last two terms in a triple
+     sum.  (Contributed by NM, 13-Nov-1999.) $)
+  add32 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A + B ) + C ) = ( ( A + C ) + B ) ) $=
+    ( cc wcel w3a caddc co wceq wa addcom oveq2d 3adant1 addass 3com23 3eqtr4d
+    ) ADEZBDEZCDEZFABCGHZGHZACBGHZGHZABGHCGHACGHBGHZRSUAUCIQRSJTUBAGBCKLMABCNQS
+    RUDUCIACBNOP $.
+
+  $( Commutative/associative law that swaps the last two terms in a triple sum,
+     rearranging the parentheses.  (Contributed by Paul Chapman,
+     18-May-2007.) $)
+  add32r $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                          ( A + ( B + C ) ) = ( ( A + C ) + B ) ) $=
+    ( cc wcel w3a caddc co addass add32 eqtr3d ) ADEBDECDEFABGHCGHABCGHGHACGHBG
+    HABCIABCJK $.
+
+  $( Rearrangement of 4 terms in a sum.  (Contributed by NM, 13-Nov-1999.)
+     (Proof shortened by Andrew Salmon, 22-Oct-2011.) $)
+  add4 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+              ( ( A + B ) + ( C + D ) ) = ( ( A + C ) + ( B + D ) ) ) $=
+    ( cc wcel wa caddc wceq add12 3expb oveq2d adantll addcl addass sylan2 an4s
+    co 3expa 3eqtr4d ) AEFZBEFZGZCEFZDEFZGZGABCDHRZHRZHRZACBDHRZHRZHRZABHRUGHRZ
+    ACHRUJHRZUBUFUIULIUAUBUFGUHUKAHUBUDUEUHUKIBCDJKLMUFUCUGEFZUMUIIZCDNUAUBUOUP
+    ABUGOSPUAUDUBUEUNULIZUBUEGUAUDGUJEFZUQBDNUAUDURUQACUJOSPQT $.
+
+  $( Rearrangement of 4 terms in a sum.  (Contributed by NM, 12-May-2005.) $)
+  add42 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+              ( ( A + B ) + ( C + D ) ) = ( ( A + C ) + ( D + B ) ) ) $=
+    ( cc wcel wa caddc co add4 wceq addcom ad2ant2l oveq2d eqtrd ) AEFZBEFZGCEF
+    ZDEFZGGZABHICDHIHIACHIZBDHIZHIUADBHIZHIABCDJTUBUCUAHQSUBUCKPRBDLMNO $.
+
+  ${
+    add.1 $e |- A e. CC $.
+    add.2 $e |- B e. CC $.
+    add.3 $e |- C e. CC $.
+    $( Commutative/associative law that swaps the first two terms in a triple
+       sum.  (Contributed by NM, 21-Jan-1997.) $)
+    add12i $p |- ( A + ( B + C ) ) = ( B + ( A + C ) ) $=
+      ( cc wcel caddc co wceq add12 mp3an ) AGHBGHCGHABCIJIJBACIJIJKDEFABCLM $.
+
+    $( Commutative/associative law that swaps the last two terms in a triple
+       sum.  (Contributed by NM, 21-Jan-1997.) $)
+    add32i $p |- ( ( A + B ) + C ) = ( ( A + C ) + B ) $=
+      ( cc wcel caddc co wceq add32 mp3an ) AGHBGHCGHABIJCIJACIJBIJKDEFABCLM $.
+
+    add4.4 $e |- D e. CC $.
+    $( Rearrangement of 4 terms in a sum.  (Contributed by NM, 9-May-1999.) $)
+    add4i $p |- ( ( A + B ) + ( C + D ) ) = ( ( A + C ) + ( B + D ) ) $=
+      ( cc wcel caddc co wceq add4 mp4an ) AIJBIJCIJDIJABKLCDKLKLACKLBDKLKLMEFG
+      HABCDNO $.
+
+    $( Rearrangement of 4 terms in a sum.  (Contributed by NM, 22-Aug-1999.) $)
+    add42i $p |- ( ( A + B ) + ( C + D ) ) = ( ( A + C ) + ( D + B ) ) $=
+      ( caddc co add4i addcomi oveq2i eqtri ) ABIJCDIJIJACIJZBDIJZIJODBIJZIJABC
+      DEFGHKPQOIBDFHLMN $.
+  $}
+
+  ${
+    addd.1 $e |- ( ph -> A e. CC ) $.
+    addd.2 $e |- ( ph -> B e. CC ) $.
+    addd.3 $e |- ( ph -> C e. CC ) $.
+    $( Commutative/associative law that swaps the first two terms in a triple
+       sum.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    add12d $p |- ( ph -> ( A + ( B + C ) ) = ( B + ( A + C ) ) ) $=
+      ( cc wcel caddc co wceq add12 syl3anc ) ABHICHIDHIBCDJKJKCBDJKJKLEFGBCDMN
+      $.
+
+    $( Commutative/associative law that swaps the last two terms in a triple
+       sum.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    add32d $p |- ( ph -> ( ( A + B ) + C ) = ( ( A + C ) + B ) ) $=
+      ( cc wcel caddc co wceq add32 syl3anc ) ABHICHIDHIBCJKDJKBDJKCJKLEFGBCDMN
+      $.
+
+    add4d.4 $e |- ( ph -> D e. CC ) $.
+    $( Rearrangement of 4 terms in a sum.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    add4d $p |- ( ph ->
+      ( ( A + B ) + ( C + D ) ) = ( ( A + C ) + ( B + D ) ) ) $=
+      ( cc wcel caddc co wceq add4 syl22anc ) ABJKCJKDJKEJKBCLMDELMLMBDLMCELMLM
+      NFGHIBCDEOP $.
+
+    $( Rearrangement of 4 terms in a sum.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    add42d $p |- ( ph ->
+      ( ( A + B ) + ( C + D ) ) = ( ( A + C ) + ( D + B ) ) ) $=
+      ( cc wcel caddc co wceq add42 syl22anc ) ABJKCJKDJKEJKBCLMDELMLMBDLMECLML
+      MNFGHIBCDEOP $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Subtraction
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare symbols needed for some defined terms. $)
+  $c - $. $( Subtraction (binary minus). $)
+  $c -u $. $( Unary minus sign. $)
+
+  $( Extend class notation to include subtraction. $)
+  cmin $a class - $.
+
+  $( Extend class notation to include unary minus.  The symbol ` -u ` is not a
+     class by itself but part of a compound class definition.  We do this
+     rather than making it a formal function since it is so commonly used.
+     Note:  We use different symbols for unary minus ( ` -u ` ) and subtraction
+     ~ cmin ( ` - ` ) to prevent syntax ambiguity.  For example, looking at the
+     syntax definition ~ co , if we used the same symbol
+     then " ` ( - A - B ) ` " could mean either " ` - A ` " minus " ` B ` ", or
+     it could represent the (meaningless) operation of
+     classes " ` - ` " and " ` - B ` " connected with "operation" " ` A ` ".
+     On the other hand, " ` ( -u A - B ) ` " is unambiguous. $)
+  cneg $a class -u A $.
+
+  ${
+    $d x y z $.
+    $( Define subtraction.  Theorem ~ subval shows its value (and describes how
+       this definition works), theorem ~ subaddi relates it to addition, and
+       theorems ~ subcli and ~ resubcli prove its closure laws.  (Contributed
+       by NM, 26-Nov-1994.) $)
+    df-sub $a |- - = ( x e. CC , y e. CC |->
+                   ( iota_ z e. CC ( y + z ) = x ) ) $.
+  $}
+
+  $( Define the negative of a number (unary minus).  We use different symbols
+     for unary minus ( ` -u ` ) and subtraction ( ` - ` ) to prevent syntax
+     ambiguity.  See ~ cneg for a discussion of this.  (Contributed by NM,
+     10-Feb-1995.) $)
+  df-neg $a |- -u A = ( 0 - A ) $.
+
+  ${
+    $d a b c d x y z A $.  $d x B $.  $d x C $.
+    $( Addition cancellation of a real number from two complex numbers.  Lemma
+       for ~ cnegex .  (Contributed by Eric Schmidt, 22-May-2007.) $)
+    cnegexlem1 $p |- ( ( A e. RR /\ B e. CC /\ C e. CC ) ->
+                  ( ( A + B ) = ( A + C ) <-> B = C ) ) $=
+      ( vx cr wcel cc caddc co wceq cc0 wi recn wa oveq2 addassd eqeq12d adantl
+      wb oveq1 w3a wrex ax-rnegex 3ad2ant1 simpr simpll simplrl simplrr syl5ibr
+      cv adantr addcom eqeq1d adantlr addid2 eqeqan12d ad2antrr bitrd ex sylbid
+      imp sylibd sylan2 rexlimdva 3impb syl3an1 mpd impbid1 ) AEFZBGFZCGFZUAZAB
+      HIZACHIZJZBCJZVLADUJZHIZKJZDEUBZVOVPLZVIVJVTVKDAUCUDVIAGFZVJVKVTWALZAMWBV
+      JVKWCWBVJVKNZNZVSWADEVQEFWEVQGFZVSWALVQMWEWFNZVSWAWGVSNVOVQAHIZBHIZWHCHIZ
+      JZVPWGVOWKLVSVOWKWGVQVMHIZVQVNHIZJVMVNVQHOWGWIWLWJWMWGVQABWEWFUEZWBWDWFUF
+      ZWBVJVKWFUGPWGVQACWNWOWBVJVKWFUHPQUIUKWGVSWKVPSZWGVSWHKJZWPWBWFVSWQSWDWBW
+      FNVRWHKAVQULUMUNWGWQWPWGWQNWKKBHIZKCHIZJZVPWQWKWTSWGWQWIWRWJWSWHKBHTWHKCH
+      TQRWEWTVPSZWFWQWDXAWBVJVKWRBWSCBUOCUOUPRUQURUSUTVAVBUSVCVDVEVFVGBCAHOVH
+      $.
+
+    $( Existence of a real number which produces a real number when multiplied
+       by ` _i ` .  (Hint: zero is such a number, although we don't need to
+       prove that yet).  Lemma for ~ cnegex .  (Contributed by Eric Schmidt,
+       22-May-2007.) $)
+    cnegexlem2 $p |- E. y e. RR ( _i x. y ) e. RR $=
+      ( vx vz cc wcel cv ci cmul co caddc wceq cr wrex wa wi adantr recn addid2
+      cc0 oveq1 0cn cnre ax-rnegex ax-icn mulcl sylancr 3ad2ant3 ad2antrl add32
+      w3a 3com23 eqcomd sylan9eq adantrl 3ad2ant2 eqtr3d ex syl3an 3expa simplr
+      3eqtr3d imp eqeltrrd exp32 rexlimdva mpd reximdva rexlimiv mp2b ) SDESBFZ
+      GAFZHIZJIZKZALMZBLMVLLEZALMZUABASUBVOVQBLVJLEZVNVPALVRVKLEZNZVJCFZJIZSKZC
+      LMZVNVPOZVRWDVSCVJUCPVTWCWECLVTWALEZNZWCVNVPWGWCVNNZNWAVLLWGWHWAVLKZVRVSW
+      FWHWIOZVRVJDEZVSVLDEZWFWADEZWJVJQVSGDEVKDEWLUDVKQGVKUEUFWAQWKWLWMUJZWHWIW
+      NWHNZSWAJIZWAVLWNWPWAKZWHWMWKWQWLWARUGPWOWBVLJIZSVLJIZWPVLWCWRWSKWNVNWBSV
+      LJTUHWNVNWRWPKWCWNVNWRVMWAJIZWPWKWMWLWRWTKVJWAVLUIUKVNWPWTSVMWAJTULUMUNWN
+      WSVLKZWHWLWKXAWMVLRUOPVAUPUQURUSVBVTWFWHUTVCVDVEVFVGVHVI $.
+
+    $( Existence of real number difference.  Lemma for ~ cnegex .  (Contributed
+       by Eric Schmidt, 22-May-2007.) $)
+    cnegexlem3 $p |- ( ( b e. RR /\ y e. RR ) -> E. c e. RR ( b + c ) = y ) $=
+      ( vx cv cr wcel wa caddc co wceq wrex ax-rnegex adantlr adantr cc wb recn
+      cc0 anim1i readdcl anim12i add32 3expa addcl addcom sylan eqtr2d adantllr
+      syl sylanl2 ancoms sylan2 id sylan9eq adantlll eqeq12d simpllr cnegexlem1
+      an32s simplr syl3anc bitr3d syl2an rexbidva mpbid adantl r19.29a ) BEZFGZ
+      AEZFGZHZVKDEZIJZSKZVICEZIJZVKKZCFLZDFVMVNFGZHZVPHZVIVNIJZVQIJZSKZCFLZVTWB
+      WGVPVJWAWGVLVJWAHWDFGWGVIVNUACWDMUJNOWCWFVSCFWCVIPGZVKPGZHZWAHZVPHZVQPGZW
+      FVSQVQFGWBWKVPVMWJWAVJWHVLWIVIRVKRUBTTVQRWLWMHZVNVRIJZVNVKIJZKZWFVSWNWOWE
+      WPSWKWMWOWEKZVPWHWAWMWRWIWAWHVNPGZWMWRVNRZWHWSHWMHWEVRVNIJZWOWHWSWMWEXAKV
+      IVNVQUCUDWHWMWSXAWOKZWHWMHVRPGZWSXBVIVQUEZVRVNUFUGUTUHUKUINWLWPSKZWMWIWAV
+      PXEWHWIWAHVPWPVOSWAWIWSWPVOKZWTWSWIXFVNVKUFULUMVPUNUOUPOUQWKWMWQVSQZVPWKW
+      MHWAXCWIXGWJWAWMVAWJWMXCWAWHWMXCWIXDNNWHWIWAWMURVNVRVKUSVBNVCVDVEVFVLVPDF
+      LVJDVKMVGVH $.
+
+    $( Existence of the negative of a complex number.  (Contributed by Eric
+       Schmidt, 21-May-2007.) $)
+    cnegex $p |- ( A e. CC -> E. x e. CC ( A + x ) = 0 ) $=
+      ( va vb vy vc vd cc wcel cv ci cmul co caddc wceq cr wrex cc0 wa ax-icn
+      cnre cnegexlem2 cnegexlem3 ad2ant2lr mulcl sylancr syl2an adantlr adantll
+      addcl adantr anim12i sylan2 ad2antrr ad2antlr simpr addassd simpll adantl
+      recn mpan adddi mp3an1 oveq2d eqtr4d oveq1d eqtr3d adantlrr eqtr2d eqeq1d
+      oveq2 biimpa rspcev syl2anc readdcl ax-rnegex ad2ant2rl r19.29a rexlimddv
+      adantllr syl rexlimdvaa mpi oveq1 rexbidv syl5ibrcom rexlimivv ) BHIBCJZK
+      DJZLMZNMZOZDPQCPQBAJZNMZROZAHQZCDBUAWLWPCDPPWHPIZWIPIZSZWPWLWKWMNMZROZAHQ
+      ZWSKEJZLMZPIZEPQXBEUBWSXEXBEPWSXCPIZXESZSZWIFJZNMZXCOZXBFPWRXFXKFPQWQXEED
+      FUCUDXHXIPIZXKSZSZWHXDNMZGJZNMZROZXBGPXNXPPIZSZXRSKXILMZXPNMZHIZWKYBNMZRO
+      ZXBXTYCXRXMXSYCXHXLXSYCXKXLYAHIZXPHIZYCXSXLKHIZXIHIZYFTXIUTZKXIUEZUFXPUTZ
+      YAXPUJUGUHUIUKXTXRYEXTXQYDRWSXMXSXQYDOXGWSXMSXSSYDWHKXJLMZNMZXPNMZXQWSXLX
+      SYDYOOZXKWSXLSWHHIZWIHIZSZYISZYGYPXSWSYSXLYIWQYQWRYRWHUTWIUTULYJULYLYTYGS
+      ZWKYANMZXPNMYDYOUUAWKYAXPYSWKHIZYIYGYRYQWJHIZUUCYHYRUUDTKWIUEVAZWHWJUJUMU
+      NYIYFYSYGYHYIYFTYKVAZUOYTYGUPUQUUAUUBYNXPNYTUUBYNOYGYTUUBWHWJYANMZNMYNYTW
+      HWJYAYQYRYIURYRUUDYQYIUUEUOYIYFYSUUFUSUQYTYMUUGWHNYRYIYMUUGOZYQYHYRYIUUHT
+      KWIXIVBVCUIVDVEUKVFVGUGVHXMYOXQOZWSXSXKUUIXLXKYNXOXPNXKYMXDWHNXJXCKLVKVDV
+      FUSUOVIVTVJVLXAYEAYBHWMYBOWTYDRWMYBWKNVKVJVMVNXHXRGPQZXMWQXEUUJWRXFWQXESX
+      OPIUUJWHXDVOGXOVPWAVQUKVRVSWBWCWLWOXAAHWLWNWTRBWKWMNWDVJWEWFWGWA $.
+  $}
+
+  ${
+    $d A x $.
+    $( Existence of a left inverse for addition.  (Contributed by Scott Fenton,
+       3-Jan-2013.) $)
+    cnegex2 $p |- ( A e. CC -> E. x e. CC ( x + A ) = 0 ) $=
+      ( cc wcel cv caddc co cc0 wceq wrex cnegex addcom eqeq1d rexbidva mpbid
+      wa ) BCDZBAEZFGZHIZACJRBFGZHIZACJABKQTUBACQRCDPSUAHBRLMNO $.
+  $}
+
+  ${
+    $d x y A $.  $d x B $.  $d x C $.
+    $( Cancellation law for addition.  Theorem I.1 of [Apostol] p. 18.
+       (Contributed by NM, 22-Nov-1994.)  (Proof shortened by Mario Carneiro,
+       27-May-2016.) $)
+    addcan $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                   ( ( A + B ) = ( A + C ) <-> B = C ) ) $=
+      ( vx cc wcel w3a cv caddc co cc0 wceq wb wa oveq1d addassd addid2 3eqtr3d
+      oveq2 syl wrex cnegex2 3ad2ant1 simprr simprl simpl1 simpl2 simpl3 syl5ib
+      eqeq12d impbid1 rexlimddv ) AEFZBEFZCEFZGZDHZAIJZKLZABIJZACIJZLZBCLZMDEUM
+      UNUSDEUAUODAUBUCUPUQEFZUSNZNZVBVCVBUQUTIJZUQVAIJZLVFVCUTVAUQISVFVGBVHCVFU
+      RBIJKBIJZVGBVFURKBIUPVDUSUDZOVFUQABUPVDUSUEZUMUNUOVEUFZUMUNUOVEUGZPVFUNVI
+      BLVMBQTRVFURCIJKCIJZVHCVFURKCIVJOVFUQACVKVLUMUNUOVEUHZPVFUOVNCLVOCQTRUJUI
+      BCAISUKUL $.
+
+    $( Cancellation law for addition.  (Contributed by NM, 30-Jul-2004.)
+       (Revised by Scott Fenton, 3-Jan-2013.) $)
+    addcan2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                    ( ( A + C ) = ( B + C ) <-> A = B ) ) $=
+      ( vx cc wcel w3a cv caddc co cc0 wb wa oveq1 addassd oveq2d addid1 3eqtrd
+      wceq syl wrex cnegex 3ad2ant3 simpl1 simpl3 simprl simprr eqeq12d impbid1
+      simpl2 syl5ib rexlimddv ) AEFZBEFZCEFZGZCDHZIJZKSZACIJZBCIJZSZABSZLDEUOUM
+      USDEUAUNDCUBUCUPUQEFZUSMZMZVBVCVBUTUQIJZVAUQIJZSVFVCUTVAUQINVFVGAVHBVFVGA
+      URIJAKIJZAVFACUQUMUNUOVEUDZUMUNUOVEUEZUPVDUSUFZOVFURKAIUPVDUSUGZPVFUMVIAS
+      VJAQTRVFVHBURIJBKIJZBVFBCUQUMUNUOVEUJZVKVLOVFURKBIVMPVFUNVNBSVOBQTRUHUKAB
+      CINUIUL $.
+  $}
+
+  ${
+    addcani.1 $e |- A e. CC $.
+    addcani.2 $e |- B e. CC $.
+    addcani.3 $e |- C e. CC $.
+    $( Cancellation law for addition.  Theorem I.1 of [Apostol] p. 18.
+       (Contributed by NM, 27-Oct-1999.)  (Revised by Scott Fenton,
+       3-Jan-2013.) $)
+    addcani $p |- ( ( A + B ) = ( A + C ) <-> B = C ) $=
+      ( cc wcel caddc co wceq wb addcan mp3an ) AGHBGHCGHABIJACIJKBCKLDEFABCMN
+      $.
+
+    $( Cancellation law for addition.  Theorem I.1 of [Apostol] p. 18.
+       (Contributed by NM, 14-May-2003.)  (Revised by Scott Fenton,
+       3-Jan-2013.) $)
+    addcan2i $p |- ( ( A + C ) = ( B + C ) <-> A = B ) $=
+      ( cc wcel caddc co wceq wb addcan2 mp3an ) AGHBGHCGHACIJBCIJKABKLDEFABCMN
+      $.
+  $}
+
+  ${
+    addcand.1 $e |- ( ph -> A e. CC ) $.
+    addcand.2 $e |- ( ph -> B e. CC ) $.
+    addcand.3 $e |- ( ph -> C e. CC ) $.
+    $( Cancellation law for addition.  Theorem I.1 of [Apostol] p. 18.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    addcand $p |- ( ph -> ( ( A + B ) = ( A + C ) <-> B = C ) ) $=
+      ( cc wcel caddc co wceq wb addcan syl3anc ) ABHICHIDHIBCJKBDJKLCDLMEFGBCD
+      NO $.
+
+    $( Cancellation law for addition.  Theorem I.1 of [Apostol] p. 18.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    addcan2d $p |- ( ph -> ( ( A + C ) = ( B + C ) <-> A = B ) ) $=
+      ( cc wcel caddc co wceq wb addcan2 syl3anc ) ABHICHIDHIBDJKCDJKLBCLMEFGBC
+      DNO $.
+
+    ${
+      addcanad.4 $e |- ( ph -> ( A + B ) = ( A + C ) ) $.
+      $( Cancelling a term on the left-hand side of a sum in an equality.
+         Consequence of ~ addcand .  (Contributed by David Moews,
+         28-Feb-2017.) $)
+      addcanad $p |- ( ph -> B = C ) $=
+        ( caddc co wceq addcand mpbid ) ABCIJBDIJKCDKHABCDEFGLM $.
+    $}
+
+    ${
+      addcan2ad.4 $e |- ( ph -> ( A + C ) = ( B + C ) ) $.
+      $( Cancelling a term on the right-hand side of a sum in an equality.
+         Consequence of ~ addcan2d .  (Contributed by David Moews,
+         28-Feb-2017.) $)
+      addcan2ad $p |- ( ph -> A = B ) $=
+        ( caddc co wceq addcan2d mpbid ) ABDIJCDIJKBCKHABCDEFGLM $.
+    $}
+
+    ${
+      addneintrd.4 $e |- ( ph -> B =/= C ) $.
+      $( Introducing a term on the left-hand side of a sum in a negated
+         equality.  Contrapositive of ~ addcanad .  Consequence of ~ addcand .
+         (Contributed by David Moews, 28-Feb-2017.) $)
+      addneintrd $p |- ( ph -> ( A + B ) =/= ( A + C ) ) $=
+        ( caddc co wne addcand necon3bid mpbird ) ABCIJZBDIJZKCDKHAOPCDABCDEFGL
+        MN $.
+    $}
+
+    ${
+      addneintr2d.4 $e |- ( ph -> A =/= B ) $.
+      $( Introducing a term on the right-hand side of a sum in a negated
+         equality.  Contrapositive of ~ addcan2ad .  Consequence of
+         ~ addcan2d .  (Contributed by David Moews, 28-Feb-2017.) $)
+      addneintr2d $p |- ( ph -> ( A + C ) =/= ( B + C ) ) $=
+        ( caddc co wne addcan2d necon3bid mpbird ) ABDIJZCDIJZKBCKHAOPBCABCDEFG
+        LMN $.
+    $}
+  $}
+
+  $( Alternate proof of ~ 0cn .  (Contributed by NM, 19-Feb-2005.)  (Revised by
+     Mario Carneiro, 27-May-2016.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  0cnALT $p |- 0 e. CC $=
+    ( vx ci cv caddc co cc0 wceq wrex wcel ax-icn cnegex ax-mp addcl mpan eleq1
+    cc syl5ibcom rexlimiv ) BACZDEZFGZAPHZFPIZBPIZUBJABKLUAUCAPSPIZTPIZUAUCUDUE
+    UFJBSMNTFPOQRL $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Existential uniqueness of negatives.  Theorem I.2 of [Apostol] p. 18.
+       (Contributed by NM, 22-Nov-1994.)  (Proof shortened by Mario Carneiro,
+       27-May-2016.) $)
+    negeu $p |- ( ( A e. CC /\ B e. CC ) -> E! x e. CC ( A + x ) = B ) $=
+      ( vy cc wcel wa cv caddc co wceq wreu wrex cnegex adantr wral simpl simpr
+      cc0 wb addcl syl2anr simplrr oveq1d simplll simplrl simpllr eqeq2d addcld
+      addassd addid2d 3eqtr3rd addcand bitrd ralrimiva reu6i syl2anc rexlimddv
+      ) BEFZCEFZGZBDHZIJZSKZBAHZIJZCKZAELZDEUSVDDEMUTDBNOVAVBEFZVDGZGZVBCIJZEFZ
+      VGVEVLKZTZAEPVHVJVIUTVMVAVIVDQUSUTRVBCUAUBVKVOAEVKVEEFZGZVGVFBVLIJZKVNVQC
+      VRVFVQVCCIJSCIJVRCVQVCSCIVAVIVDVPUCUDVQBVBCUSUTVJVPUEZVAVIVDVPUFZUSUTVJVP
+      UGZUJVQCWAUKULUHVQBVEVLVSVKVPRVQVBCVTWAUIUMUNUOVGAEVLUPUQUR $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.
+    $( Value of subtraction, which is the (unique) element ` x ` such that
+       ` B + x = A ` .  (Contributed by NM, 4-Aug-2007.)  (Revised by Mario
+       Carneiro, 2-Nov-2013.) $)
+    subval $p |- ( ( A e. CC /\ B e. CC ) ->
+                  ( A - B ) = ( iota_ x e. CC ( B + x ) = A ) ) $=
+      ( vy vz cc wcel cv caddc co wceq crio cmin wa negeu riotacl syl riotabidv
+      wreu ancoms eqeq2 oveq1 eqeq1d df-sub ovmpt2g mpd3an3 ) BFGZCFGZCAHZIJZBK
+      ZAFLZFGZBCMJULKUHUGUMUHUGNUKAFSUMACBOUKAFPQTDEBCFFEHZUIIJZDHZKZAFLULMUOBK
+      ZAFLFUPBKUQURAFUPBUOUARUNCKZURUKAFUSUOUJBUNCUIIUBUCRDEAUDUEUF $.
+  $}
+
+  $( Equality theorem for negatives.  (Contributed by NM, 10-Feb-1995.) $)
+  negeq $p |- ( A = B -> -u A = -u B ) $=
+    ( wceq cc0 cmin co cneg oveq2 df-neg 3eqtr4g ) ABCDAEFDBEFAGBGABDEHAIBIJ $.
+
+  ${
+    negeqi.1 $e |- A = B $.
+    $( Equality inference for negatives.  (Contributed by NM, 14-Feb-1995.) $)
+    negeqi $p |- -u A = -u B $=
+      ( wceq cneg negeq ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    negeqd.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for negatives.  (Contributed by NM, 14-May-1999.) $)
+    negeqd $p |- ( ph -> -u A = -u B ) $=
+      ( wceq cneg negeq syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d y z A $.  $d y ph $.  $d x y z $.
+    nfnegd.1 $e |- ( ph -> F/_ x A ) $.
+    $( Deduction version of ~ nfneg .  (Contributed by NM, 29-Feb-2008.)
+       (Revised by Mario Carneiro, 15-Oct-2016.) $)
+    nfnegd $p |- ( ph -> F/_ x -u A ) $=
+      ( cneg cc0 cmin co df-neg nfcvd nfovd nfcxfrd ) ABCEFCGHCIABFCGABFJABGJDK
+      L $.
+  $}
+
+  ${
+    $d y A $.  $d x y $.
+    nfneg.1 $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for the negative of a complex number.
+       (Contributed by NM, 12-Jun-2005.)  (Revised by Mario Carneiro,
+       15-Oct-2016.) $)
+    nfneg $p |- F/_ x -u A $=
+      ( cneg wnfc wtru a1i nfnegd trud ) ABDEFABABEFCGHI $.
+  $}
+
+  ${
+    $d y z A $.  $d y z B $.  $d y z C $.  $d x y z $.
+    $( Move class substitution in and out of the negative of a number.
+       (Contributed by NM, 1-Mar-2008.)  (Proof shortened by Andrew Salmon,
+       22-Oct-2011.) $)
+    csbnegg $p |- ( A e. V -> [_ A / x ]_ -u B = -u [_ A / x ]_ B ) $=
+      ( wcel cc0 cmin co csb cneg csbov2g df-neg csbeq2i 3eqtr4g ) BDEABFCGHZIF
+      ABCIZGHABCJZIPJABFCGDKABQOCLMPLN $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Closure law for subtraction.  (Contributed by NM, 10-May-1999.)
+       (Revised by Mario Carneiro, 21-Dec-2013.) $)
+    subcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A - B ) e. CC ) $=
+      ( vx cc wcel wa cmin co cv caddc wceq crio subval wreu ancoms riotacl syl
+      negeu eqeltrd ) ADEZBDEZFZABGHBCIJHAKZCDLZDCABMUBUCCDNZUDDEUATUECBAROUCCD
+      PQS $.
+  $}
+
+  $( Closure law for negative.  (Contributed by NM, 6-Aug-2003.) $)
+  negcl $p |- ( A e. CC -> -u A e. CC ) $=
+    ( cc wcel cneg cc0 cmin co df-neg 0cn subcl mpan syl5eqel ) ABCZADEAFGZBAHE
+    BCMNBCIEAJKL $.
+
+  $( ` -u _i ` is a complex number (common case).  (Contributed by David A.
+     Wheeler, 7-Dec-2018.) $)
+  negicn $p |- -u _i e. CC $=
+    ( ci cc wcel cneg ax-icn negcl ax-mp ) ABCADBCEAFG $.
+
+  ${
+    $d x y z $.
+    $( Subtraction is an operation on the complex numbers.  (Contributed by NM,
+       4-Aug-2007.)  (Revised by Mario Carneiro, 16-Nov-2013.) $)
+    subf $p |- - : ( CC X. CC ) --> CC $=
+      ( vy vz vx cv caddc co wceq cc crio wcel wral cxp cmin wf wa subval subcl
+      eqeltrrd rgen2a df-sub fmpt2 mpbi ) ADZBDEFCDZGBHIZHJZAHKCHKHHLHMNUFCAHUD
+      HJUCHJOUDUCMFUEHBUDUCPUDUCQRSCAHHUEHMCABTUAUB $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( Relationship between subtraction and addition.  (Contributed by NM,
+       20-Jan-1997.)  (Revised by Mario Carneiro, 21-Dec-2013.) $)
+    subadd $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                  ( ( A - B ) = C <-> ( B + C ) = A ) ) $=
+      ( vx cc wcel w3a cmin co wceq cv caddc crio wb subval eqeq1d 3adant3 wreu
+      wa negeu oveq2 riota2 sylan2 3impb 3com13 bitr4d ) AEFZBEFZCEFZGABHIZCJZB
+      DKZLIZAJZDEMZCJZBCLIZAJZUGUHUKUPNUIUGUHSUJUOCDABOPQUIUHUGURUPNZUIUHUGUSUH
+      UGSUIUNDERUSDBATUNURDECULCJUMUQAULCBLUAPUBUCUDUEUF $.
+  $}
+
+  $( Relationship between subtraction and addition.  (Contributed by Scott
+     Fenton, 5-Jul-2013.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  subadd2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+            ( ( A - B ) = C <-> ( C + B ) = A ) ) $=
+    ( cc wcel w3a cmin co wceq caddc subadd simp2 simp3 addcomd eqeq1d bitrd )
+    ADEZBDEZCDEZFZABGHCIBCJHZAICBJHZAIABCKTUAUBATBCQRSLQRSMNOP $.
+
+  $( Swap subtrahend and result of subtraction.  (Contributed by NM,
+     14-Dec-2007.) $)
+  subsub23 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A - B ) = C <-> ( A - C ) = B ) ) $=
+    ( cc wcel caddc co wceq cmin addcom 3adant1 eqeq1d subadd wb 3com23 3bitr4d
+    w3a ) ADEZBDEZCDEZQZBCFGZAHCBFGZAHZABIGCHACIGBHZUAUBUCASTUBUCHRBCJKLABCMRTS
+    UEUDNACBMOP $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 10-May-2004.)
+     (Revised by Mario Carneiro, 27-May-2016.) $)
+  pncan $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A + B ) - B ) = A ) $=
+    ( cc wcel wa caddc co cmin wceq simpr simpl addcomd wb addcl subadd syl3anc
+    mpbird ) ACDZBCDZEZABFGZBHGAIZBAFGUAIZTBARSJZRSKZLTUACDSRUBUCMABNUDUEUABAOP
+    Q $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 17-Apr-2005.) $)
+  pncan2 $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A + B ) - A ) = B ) $=
+    ( cc wcel caddc co cmin wceq wa addcom oveq1d pncan eqtr3d ancoms ) BCDZACD
+    ZABEFZAGFZBHOPIZBAEFZAGFRBSTQAGBAJKBALMN $.
+
+  $( Subtraction and addition of equals.  (Contributed by NM, 14-Mar-2005.) $)
+  pncan3 $p |- ( ( A e. CC /\ B e. CC ) -> ( A + ( B - A ) ) = B ) $=
+    ( cc wcel wa cmin co wceq caddc eqid simpr simpl subcl ancoms syl3anc mpbii
+    wb subadd ) ACDZBCDZEZBAFGZUBHZAUBIGBHZUBJUATSUBCDZUCUDQSTKSTLTSUEBAMNBAUBR
+    OP $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 10-May-2004.)
+     (Revised by Mario Carneiro, 27-May-2016.) $)
+  npcan $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A - B ) + B ) = A ) $=
+    ( cc wcel wa cmin co caddc subcl simpr addcomd wceq pncan3 ancoms eqtrd ) A
+    CDZBCDZEZABFGZBHGBSHGZARSBABIPQJKQPTALBAMNO $.
+
+  $( Associative-type law for addition and subtraction.  (Contributed by NM,
+     6-Aug-2003.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  addsubass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                   ( ( A + B ) - C ) = ( A + ( B - C ) ) ) $=
+    ( cc wcel cmin co caddc simp1 subcl 3adant1 simp3 addassd wceq npcan oveq2d
+    w3a eqtrd oveq1d addcld pncan syl2anc eqtr3d ) ADEZBDEZCDEZQZABCFGZHGZCHGZC
+    FGZABHGZCFGUIUGUJULCFUGUJAUHCHGZHGULUGAUHCUDUEUFIZUEUFUHDEUDBCJKZUDUEUFLZMU
+    GUMBAHUEUFUMBNUDBCOKPRSUGUIDEUFUKUINUGAUHUNUOTUPUICUAUBUC $.
+
+  $( Law for addition and subtraction.  (Contributed by NM, 19-Aug-2001.)
+     (Proof shortened by Andrew Salmon, 22-Oct-2011.) $)
+  addsub $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                  ( ( A + B ) - C ) = ( ( A - C ) + B ) ) $=
+    ( cc wcel w3a caddc co cmin wa addcom oveq1d 3adant3 addsubass 3com12 subcl
+    wceq sylan2 3impb 3eqtrd ) ADEZBDEZCDEZFABGHZCIHZBAGHZCIHZBACIHZGHZUHBGHZUA
+    UBUEUGQUCUAUBJUDUFCIABKLMUBUAUCUGUIQBACNOUBUAUCUIUJQZUBUAUCUKUAUCJUBUHDEUKA
+    CPBUHKRSOT $.
+
+  $( Commutative/associative law for addition and subtraction.  (Contributed by
+     NM, 1-Feb-2007.) $)
+  subadd23 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A - B ) + C ) = ( A + ( C - B ) ) ) $=
+    ( cc wcel cmin co caddc wceq w3a addsub addsubass eqtr3d 3com23 ) ADEZCDEZB
+    DEZABFGCHGZACBFGHGZIOPQJACHGBFGRSACBKACBLMN $.
+
+  $( Commutative/associative law for addition and subtraction.  (Contributed by
+     NM, 8-Feb-2005.) $)
+  addsub12 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( A + ( B - C ) ) = ( B + ( A - C ) ) ) $=
+    ( cc wcel cmin co caddc w3a subadd23 subcl addcom sylan 3impa eqtr3d 3com23
+    wceq wa ) ADEZCDEZBDEZABCFGHGZBACFGZHGZQSTUAIUCBHGZUBUDACBJSTUAUEUDQZSTRUCD
+    EUAUFACKUCBLMNOP $.
+
+  $( Law for subtraction and addition.  (Contributed by NM, 20-Nov-2005.) $)
+  2addsub $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+                 ( ( ( A + B ) + C ) - D ) = ( ( ( A + C ) - D ) + B ) ) $=
+    ( cc wcel wa caddc co cmin wceq add32 3expa oveq1d addcl addsub 3expb sylan
+    adantrr an4s eqtrd ) AEFZBEFZGZCEFZDEFZGGZABHICHIZDJIACHIZBHIZDJIZUIDJIBHIZ
+    UGUHUJDJUDUEUHUJKZUFUBUCUEUMABCLMSNUBUEUCUFUKULKZUBUEGUIEFZUCUFGUNACOUOUCUF
+    UNUIBDPQRTUA $.
+
+  $( Relation between sums and differences.  (Contributed by Jeff Madsen,
+     17-Jun-2010.) $)
+  addsubeq4 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+                    ( ( A + B ) = ( C + D ) <-> ( C - A ) = ( B - D ) ) ) $=
+    ( cc wcel wa cmin co wceq caddc eqcom subcl ancoms subadd 3expa an4s syl5bb
+    wb sylan addcom adantl oveq1d addsubass 3com12 eqtrd adantlr addcl 3bitr2rd
+    eqeq1d 3expb sylan2 ) AEFZBEFZGZCEFZDEFZGZGZCAHIZBDHIZJZDUTKIZBJZCDKIZAHIZB
+    JZABKIVEJZVBVAUTJZUSVDUTVALUMUPUNUQVIVDSZUMUPGUTEFZUNUQGZVJUPUMVKCAMNVLVKVJ
+    UNUQVKVJBDUTOPNTQRUSVFVCBUMURVFVCJUNUMURGZVFDCKIZAHIZVCVMVEVNAHURVEVNJUMCDU
+    AUBUCURUMVOVCJZUPUQUMVPUQUPUMVPDCAUDUEPNUFUGUJURUOVEEFZVGVHSZCDUHVQUOVRVQUM
+    UNVRVEABOUKNULUI $.
+
+  ${
+    pncan3oi.1 $e |- A e. CC $.
+    pncan3oi.2 $e |- B e. CC $.
+    $( Subtraction and addition of equals.  Almost but not exactly the same as
+       ~ pncan3i and ~ pncan , this order happens often when applying
+       "operations to both sides" so create a theorem specifically for it.  A
+       deduction version of this is available as ~ pncand .  (Contributed by
+       David A. Wheeler, 11-Oct-2018.) $)
+    pncan3oi $p |- ( ( A + B ) - B ) = A $=
+      ( cc wcel caddc co cmin wceq pncan mp2an ) AEFBEFABGHBIHAJCDABKL $.
+  $}
+
+  ${
+    mvlladdi.1 $e |- A e. CC $.
+    mvlladdi.2 $e |- B e. CC $.
+    mvlladdi.3 $e |- ( A + B ) = C $.
+    $( Move LHS left addition to RHS. (Contributed by David A. Wheeler,
+       11-Oct-2018.) $)
+    mvlladdi $p |- B = ( C - A ) $=
+      ( caddc co cmin pncan3oi addcomi eqtr3i oveq1i ) BAGHZAIHBCAIHBAEDJNCAIAB
+      GHNCABDEKFLML $.
+  $}
+
+  $( Subtraction of a number from itself.  (Contributed by NM, 8-Oct-1999.)
+     (Revised by Mario Carneiro, 27-May-2016.) $)
+  subid $p |- ( A e. CC -> ( A - A ) = 0 ) $=
+    ( cc wcel cc0 caddc co cmin addid1 oveq1d wceq 0cn pncan2 mpan2 eqtr3d ) AB
+    CZADEFZAGFZAAGFDOPAAGAHIODBCQDJKADLMN $.
+
+  $( Identity law for subtraction.  (Contributed by NM, 9-May-2004.)  (Revised
+     by Mario Carneiro, 27-May-2016.) $)
+  subid1 $p |- ( A e. CC -> ( A - 0 ) = A ) $=
+    ( cc wcel cc0 caddc co cmin addid1 oveq1d wceq 0cn pncan mpan2 eqtr3d ) ABC
+    ZADEFZDGFZADGFAOPADGAHIODBCQAJKADLMN $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 8-Feb-2005.) $)
+  npncan $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A - B ) + ( B - C ) ) = ( A - C ) ) $=
+    ( cc wcel w3a cmin co caddc wceq subcl 3adant3 addsubass syld3an1 wa oveq1d
+    npcan eqtr3d ) ADEZBDEZCDEZFABGHZBIHZCGHZUBBCGHIHZACGHZUBDEZTSUAUDUEJSTUGUA
+    ABKLUBBCMNSTUDUFJUASTOUCACGABQPLR $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 1-Sep-2005.) $)
+  nppcan $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( ( A - B ) + C ) + B ) = ( A + C ) ) $=
+    ( cc wcel w3a cmin co caddc subcl 3adant3 simp3 simp2 add32d wceq wa oveq1d
+    npcan eqtrd ) ADEZBDEZCDEZFZABGHZCIHBIHUDBIHZCIHZACIHZUCUDCBTUAUDDEUBABJKTU
+    AUBLTUAUBMNTUAUFUGOUBTUAPUEACIABRQKS $.
+
+  $( Cancellation law for subtraction:  ((a-b)-c)+b = a-c holds for complex
+     numbers a,b,c.  (Contributed by Alexander van der Vekens, 24-Mar-2018.) $)
+  nnpcan $p |- ( ( A e. CC /\ B e. CC /\ C e. CC )
+                    -> ( ( ( A - B ) - C ) + B ) = ( A - C ) ) $=
+    ( cc wcel w3a cmin co caddc wceq subcl 3adant3 addsub eqcomd syld3an1 npcan
+    oveq1d eqtrd ) ADEZBDEZCDEZFZABGHZCGHBIHZUCBIHZCGHZACGHUCDEZTSUAUDUFJSTUGUA
+    ABKLUGTUAFUFUDUCBCMNOUBUEACGSTUEAJUAABPLQR $.
+
+  $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+     14-Sep-2015.) $)
+  nppcan3 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A - B ) + ( C + B ) ) = ( A + C ) ) $=
+    ( cc wcel w3a cmin co caddc subcl 3adant3 simp3 simp2 addassd nppcan eqtr3d
+    ) ADEZBDEZCDEZFZABGHZCIHBIHUACBIHIHACIHTUACBQRUADESABJKQRSLQRSMNABCOP $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 8-Feb-2005.) $)
+  subcan2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A - C ) = ( B - C ) <-> A = B ) ) $=
+    ( cc wcel w3a cmin co wceq caddc wb simp1 simp3 subcl 3adant1 subadd2 npcan
+    syl3anc eqeq1d eqcom syl6bb bitrd ) ADEZBDEZCDEZFZACGHBCGHZIZUGCJHZAIZABIZU
+    FUCUEUGDEZUHUJKUCUDUELUCUDUEMUDUEULUCBCNOACUGPRUFUJBAIUKUFUIBAUDUEUIBIUCBCQ
+    OSBATUAUB $.
+
+  $( If the difference between two numbers is zero, they are equal.
+     (Contributed by NM, 16-Nov-1999.) $)
+  subeq0 $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A - B ) = 0 <-> A = B ) ) $=
+    ( cc wcel wa cmin co wceq cc0 subid adantl eqeq2d subcan2 3anidm23 bitr3d
+    wb ) ACDZBCDZEZABFGZBBFGZHZTIHABHZSUAITRUAIHQBJKLQRUBUCPABBMNO $.
+
+  $( Cancellation law for subtraction.  (Contributed by Scott Fenton,
+     21-Jun-2013.) $)
+  npncan2 $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A - B ) + ( B - A ) ) = 0 ) $=
+    ( cc wcel wa cmin co caddc cc0 wceq npncan 3anidm13 subid adantr eqtrd ) AC
+    DZBCDZEABFGBAFGHGZAAFGZIPQRSJABAKLPSIJQAMNO $.
+
+  $( Law for double subtraction.  (Contributed by NM, 30-Jun-2005.)  (Revised
+     by Mario Carneiro, 27-May-2016.) $)
+  subsub2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                  ( A - ( B - C ) ) = ( A + ( C - B ) ) ) $=
+    ( cc wcel w3a cmin co caddc wceq cc0 subcl 3adant1 simp1 simp3 simp2 add12d
+    syl2anc npncan2 oveq2d addid1d 3eqtrd wb addcld subadd syl3anc mpbird ) ADE
+    ZBDEZCDEZFZABCGHZGHACBGHZIHZJZULUNIHZAJZUKUPAULUMIHZIHAKIHAUKULAUMUIUJULDEZ
+    UHBCLMZUHUIUJNZUKUJUIUMDEUHUIUJOUHUIUJPCBLRZQUKURKAIUIUJURKJUHBCSMTUKAVAUAU
+    BUKUHUSUNDEUOUQUCVAUTUKAUMVAVBUDAULUNUEUFUG $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 21-Jun-2005.)
+     (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  nncan $p |- ( ( A e. CC /\ B e. CC ) -> ( A - ( A - B ) ) = B ) $=
+    ( cc wcel wa cmin co caddc wceq subsub2 3anidm12 pncan3 eqtrd ) ACDZBCDZEAA
+    BFGFGZABAFGHGZBNOPQIAABJKABLM $.
+
+  $( Law for double subtraction.  (Contributed by NM, 13-May-2004.) $)
+  subsub $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                  ( A - ( B - C ) ) = ( ( A - B ) + C ) ) $=
+    ( cc wcel w3a cmin caddc subsub2 wceq addsubass addsub eqtr3d 3com23 eqtrd
+    co ) ADEZBDEZCDEZFABCGPGPACBGPHPZABGPCHPZABCIQSRTUAJQSRFACHPBGPTUAACBKACBLM
+    NO $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 29-Sep-2005.) $)
+  nppcan2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A - ( B + C ) ) + C ) = ( A - B ) ) $=
+    ( cc wcel w3a caddc co cmin wceq addcl 3adant1 subsub syld3an2 pncan oveq2d
+    eqtr3d ) ADEZBDEZCDEZFZABCGHZCIHZIHZAUBIHCGHZABIHRUBDEZSTUDUEJSTUFRBCKLAUBC
+    MNUAUCBAISTUCBJRBCOLPQ $.
+
+  $( Law for double subtraction.  (Contributed by NM, 27-Jul-2005.) $)
+  subsub3 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                  ( A - ( B - C ) ) = ( ( A + C ) - B ) ) $=
+    ( cc wcel w3a cmin co caddc subsub2 wceq addsubass 3com23 eqtr4d ) ADEZBDEZ
+    CDEZFABCGHGHACBGHIHZACIHBGHZABCJOQPSRKACBLMN $.
+
+  $( Law for double subtraction.  (Contributed by NM, 19-Aug-2005.)  (Revised
+     by Mario Carneiro, 27-May-2016.) $)
+  subsub4 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                  ( ( A - B ) - C ) = ( A - ( B + C ) ) ) $=
+    ( cc wcel w3a cmin co caddc wceq nppcan2 wb simp1 simp2 subcl syl2anc simp3
+    addcld subadd2 syl3anc mpbird ) ADEZBDEZCDEZFZABGHZCGHABCIHZGHZJZUHCIHUFJZA
+    BCKUEUFDEZUDUHDEZUIUJLUEUBUCUKUBUCUDMZUBUCUDNZABOPUBUCUDQZUEUBUGDEULUMUEBCU
+    NUORAUGOPUFCUHSTUA $.
+
+  $( Swap the second and third terms in a double subtraction.  (Contributed by
+     NM, 19-Aug-2005.) $)
+  sub32 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                  ( ( A - B ) - C ) = ( ( A - C ) - B ) ) $=
+    ( cc wcel w3a caddc cmin wceq addcom 3adant1 oveq2d subsub4 3com23 3eqtr4d
+    co ) ADEZBDEZCDEZFZABCGPZHPACBGPZHPZABHPCHPACHPBHPZTUAUBAHRSUAUBIQBCJKLABCM
+    QSRUDUCIACBMNO $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 4-Sep-2005.) $)
+  nnncan $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A - ( B - C ) ) - C ) = ( A - B ) ) $=
+    ( cc wcel cmin co caddc wceq subcl 3adant1 subsub4 syld3an2 wa npcan oveq2d
+    w3a eqtrd ) ADEZBDEZCDEZQABCFGZFGCFGZAUBCHGZFGZABFGZSUBDEZTUAUCUEITUAUGSBCJ
+    KAUBCLMTUAUEUFISTUANUDBAFBCOPKR $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 8-Feb-2005.)
+     (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  nnncan1 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A - B ) - ( A - C ) ) = ( C - B ) ) $=
+    ( cc wcel w3a cmin co wceq subcl 3adant2 sub32 syld3an3 nncan oveq1d eqtrd
+    ) ADEZBDEZCDEZFZABGHACGHZGHZAUAGHZBGHZCBGHQRSUADEZUBUDIQSUERACJKABUALMTUCCB
+    GQSUCCIRACNKOP $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 1-Oct-2005.) $)
+  nnncan2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A - C ) - ( B - C ) ) = ( A - B ) ) $=
+    ( cc wcel w3a cmin co wceq subcl 3adant1 sub32 syld3an2 nnncan eqtr3d ) ADE
+    ZBDEZCDEZFABCGHZGHCGHZACGHSGHZABGHPSDEZQRTUAIQRUBPBCJKASCLMABCNO $.
+
+  $( Cancellation law for subtraction.  (Contributed by Scott Fenton,
+     23-Jun-2013.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  npncan3 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+    ( ( A - B ) + ( C - A ) ) = ( C - B ) ) $=
+    ( cc wcel w3a cmin co caddc simp1 subcl ancoms 3adant2 simp2 addsub syl3anc
+    wceq pncan3 oveq1d eqtr3d ) ADEZBDEZCDEZFZACAGHZIHZBGHZABGHUEIHZCBGHUDUAUED
+    EZUBUGUHQUAUBUCJUAUCUIUBUCUAUICAKLMUAUBUCNAUEBOPUDUFCBGUAUCUFCQUBACRMST $.
+
+  $( Cancellation law for mixed addition and subtraction.  (Contributed by NM,
+     4-Mar-2005.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  pnpcan $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A + B ) - ( A + C ) ) = ( B - C ) ) $=
+    ( cc wcel w3a caddc co cmin simp1 simp2 addcld simp3 subsub4 syl3anc pncan2
+    wceq 3adant3 oveq1d eqtr3d ) ADEZBDEZCDEZFZABGHZAIHZCIHZUEACGHIHZBCIHUDUEDE
+    UAUCUGUHQUDABUAUBUCJZUAUBUCKLUIUAUBUCMUEACNOUDUFBCIUAUBUFBQUCABPRST $.
+
+  $( Cancellation law for mixed addition and subtraction.  (Contributed by
+     Scott Fenton, 9-Jun-2006.) $)
+  pnpcan2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A + C ) - ( B + C ) ) = ( A - B ) ) $=
+    ( cc wcel w3a caddc co cmin wceq addcom 3adant2 3adant1 oveq12d 3coml eqtrd
+    pnpcan ) ADEZBDEZCDEZFZACGHZBCGHZIHCAGHZCBGHZIHZABIHZUAUBUDUCUEIRTUBUDJSACK
+    LSTUCUEJRBCKMNTRSUFUGJCABQOP $.
+
+  $( Cancellation law for mixed addition and subtraction.  (Contributed by NM,
+     30-Jun-2005.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  pnncan $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A + B ) - ( A - C ) ) = ( B + C ) ) $=
+    ( cc wcel caddc co cmin wceq simp1 simp2 addcld simp3 subsub syl3anc pncan2
+    w3a 3adant3 oveq1d eqtrd ) ADEZBDEZCDEZQZABFGZACHGHGZUEAHGZCFGZBCFGUDUEDEUA
+    UCUFUHIUDABUAUBUCJZUAUBUCKLUIUAUBUCMUEACNOUDUGBCFUAUBUGBIUCABPRST $.
+
+  $( Cancellation law for mixed addition and subtraction.  (Contributed by NM,
+     30-Jun-2005.) $)
+  ppncan $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A + B ) + ( C - B ) ) = ( A + C ) ) $=
+    ( cc wcel w3a caddc co cmin wceq addcom 3adant3 oveq1d addcl subsub2 pnncan
+    syld3an1 3com12 3eqtr3d ) ADEZBDEZCDEZFZABGHZBCIHZIHZBAGHZUEIHZUDCBIHGHZACG
+    HZUCUDUGUEITUAUDUGJUBABKLMUDDEZUATUBUFUIJTUAUKUBABNLUDBCOQUATUBUHUJJBACPRS
+    $.
+
+  $( Rearrangement of 4 terms in a mixed addition and subtraction.
+     (Contributed by NM, 4-Mar-2005.) $)
+  addsub4 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+              ( ( A + B ) - ( C + D ) ) = ( ( A - C ) + ( B - D ) ) ) $=
+    ( cc wcel caddc cmin wceq simpll simplr simprl addsub syl3anc oveq1d addcld
+    wa co simprr subsub4 subcl ad2ant2r addsubass 3eqtr3d ) AEFZBEFZQZCEFZDEFZQ
+    ZQZABGRZCHRZDHRZACHRZBGRZDHRZULCDGRHRZUOBDHRGRZUKUMUPDHUKUEUFUHUMUPIUEUFUJJ
+    ZUEUFUJKZUGUHUILZABCMNOUKULEFUHUIUNURIUKABUTVAPVBUGUHUISZULCDTNUKUOEFZUFUIU
+    QUSIUEUHVDUFUIACUAUBVAVCUOBDUCNUD $.
+
+  $( Rearrangement of 4 terms in a mixed addition and subtraction.
+     (Contributed by NM, 24-Aug-2006.) $)
+  subadd4 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+              ( ( A - B ) - ( C - D ) ) = ( ( A + D ) - ( B + C ) ) ) $=
+    ( cc wcel wa cmin caddc wceq subcl subsub2 3expb sylan addsub4 an42s eqtr4d
+    co ) AEFZBEFZGZCEFZDEFZGZGABHRZCDHRHRZUEDCHRIRZADIRBCIRHRZUAUEEFZUDUFUGJZAB
+    KUIUBUCUJUECDLMNSUCTUBUHUGJADBCOPQ $.
+
+  $( Rearrangement of 4 terms in a subtraction.  (Contributed by NM,
+     23-Nov-2007.) $)
+  sub4 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+              ( ( A - B ) - ( C - D ) ) = ( ( A - C ) - ( B - D ) ) ) $=
+    ( cc wcel wa caddc cmin wceq addcom ad2ant2lr oveq2d subadd4 an4s 3eqtr4d
+    co ) AEFZBEFZGCEFZDEFZGGZADHQZBCHQZIQUCCBHQZIQZABIQCDIQIQACIQBDIQIQZUBUDUEU
+    CISTUDUEJRUABCKLMABCDNRTSUAUGUFJACBDNOP $.
+
+  $( Minus 0 equals 0.  (Contributed by NM, 17-Jan-1997.) $)
+  neg0 $p |- -u 0 = 0 $=
+    ( cc0 cneg cmin co df-neg cc wcel wceq 0cn subid ax-mp eqtri ) ABAACDZAAEAF
+    GMAHIAJKL $.
+
+  $( Addition of a number and its negative.  (Contributed by NM,
+     14-Mar-2005.) $)
+  negid $p |- ( A e. CC -> ( A + -u A ) = 0 ) $=
+    ( cc wcel cneg caddc co cc0 cmin df-neg oveq2i wceq 0cn pncan3 mpan2 syl5eq
+    ) ABCZAADZEFAGAHFZEFZGQRAEAIJPGBCSGKLAGMNO $.
+
+  $( Relationship between subtraction and negative.  Theorem I.3 of [Apostol]
+     p. 18.  (Contributed by NM, 21-Jan-1997.)  (Proof shortened by Mario
+     Carneiro, 27-May-2016.) $)
+  negsub $p |- ( ( A e. CC /\ B e. CC ) -> ( A + -u B ) = ( A - B ) ) $=
+    ( cc wcel wa cneg caddc co cc0 cmin wceq df-neg oveq2i a1i addsubass mp3an2
+    0cn simpl addid1d oveq1d 3eqtr2d ) ACDZBCDZEZABFZGHZAIBJHZGHZAIGHZBJHZABJHU
+    FUHKUDUEUGAGBLMNUBICDUCUJUHKQAIBOPUDUIABJUDAUBUCRSTUA $.
+
+  $( Relationship between subtraction and negative.  (Contributed by NM,
+     10-May-2004.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  subneg $p |- ( ( A e. CC /\ B e. CC ) -> ( A - -u B ) = ( A + B ) ) $=
+    ( cc wcel wa cneg cmin co cc0 caddc df-neg oveq2i wceq subsub mp3an2 syl5eq
+    0cn subid1 adantr oveq1d eqtrd ) ACDZBCDZEZABFZGHZAIGHZBJHZABJHUDUFAIBGHZGH
+    ZUHUEUIAGBKLUBICDUCUJUHMQAIBNOPUDUGABJUBUGAMUCARSTUA $.
+
+  $( A number is equal to the negative of its negative.  Theorem I.4 of
+     [Apostol] p. 18.  (Contributed by NM, 12-Jan-2002.)  (Revised by Mario
+     Carneiro, 27-May-2016.) $)
+  negneg $p |- ( A e. CC -> -u -u A = A ) $=
+    ( cc wcel cneg cc0 caddc co cmin df-neg wceq 0cn subneg syl5eq addid2 eqtrd
+    mpan ) ABCZADZDZEAFGZAQSERHGZTRIEBCQUATJKEALPMANO $.
+
+  $( Negative is one-to-one.  (Contributed by NM, 8-Feb-2005.)  (Revised by
+     Mario Carneiro, 27-May-2016.) $)
+  neg11 $p |- ( ( A e. CC /\ B e. CC ) -> ( -u A = -u B <-> A = B ) ) $=
+    ( cc wcel wa cneg wceq negeq negneg eqeqan12d syl5ib impbid1 ) ACDZBCDZEZAF
+    ZBFZGZABGZRPFZQFZGOSPQHMNTAUABAIBIJKABHL $.
+
+  $( Negative contraposition law.  (Contributed by NM, 9-May-2004.) $)
+  negcon1 $p |- ( ( A e. CC /\ B e. CC ) -> ( -u A = B <-> -u B = A ) ) $=
+    ( cc wcel wa cneg wceq negcl neg11 sylan negneg adantr eqeq1d bitr3d syl6bb
+    wb eqcom ) ACDZBCDZEZAFZBGZABFZGZUCAGTUAFZUCGZUBUDRUACDSUFUBPAHUABIJTUEAUCR
+    UEAGSAKLMNAUCQO $.
+
+  $( Negative contraposition law.  (Contributed by NM, 14-Nov-2004.) $)
+  negcon2 $p |- ( ( A e. CC /\ B e. CC ) -> ( A = -u B <-> B = -u A ) ) $=
+    ( cc wcel wa cneg wceq negcon1 eqcom syl6rbbr syl6bb ) ACDBCDEZABFZGZAFZBGZ
+    BOGLPMAGNABHAMIJOBIK $.
+
+  $( A number is zero iff its negative is zero.  (Contributed by NM,
+     12-Jul-2005.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  negeq0 $p |- ( A e. CC -> ( A = 0 <-> -u A = 0 ) ) $=
+    ( cneg cc0 wceq cc wcel neg0 eqeq2i wb 0cn neg11 mpan2 syl5rbbr ) ABZCDNCBZ
+    DZAEFZACDZOCNGHQCEFPRIJACKLM $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 8-Feb-2005.)
+     (Revised by Mario Carneiro, 27-May-2016.) $)
+  subcan $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A - B ) = ( A - C ) <-> B = C ) ) $=
+    ( cc wcel w3a caddc co wceq cmin simp2 simp1 addcomd eqeq1d simp3 addsubeq4
+    wb syl22anc addcan 3bitr3d ) ADEZBDEZCDEZFZBAGHZACGHZIZABGHZUFIABJHACJHIZBC
+    IUDUEUHUFUDBAUAUBUCKZUAUBUCLZMNUDUBUAUAUCUGUIQUJUKUKUAUBUCOBAACPRABCST $.
+
+  $( Distribution of negative over subtraction.  (Contributed by NM,
+     15-Nov-2004.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  negsubdi $p |- ( ( A e. CC /\ B e. CC ) -> -u ( A - B ) = ( -u A + B ) ) $=
+    ( cc wcel wa cc0 cmin co caddc cneg 0cn subsub mp3an1 df-neg oveq1i 3eqtr4g
+    wceq ) ACDZBCDZEFABGHZGHZFAGHZBIHZTJAJZBIHFCDRSUAUCQKFABLMTNUDUBBIANOP $.
+
+  $( Distribution of negative over addition.  (Contributed by NM,
+     10-May-2004.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  negdi $p |- ( ( A e. CC /\ B e. CC ) ->
+                 -u ( A + B ) = ( -u A + -u B ) ) $=
+    ( cc wcel wa cneg cmin co caddc subneg negeqd negcl negsubdi sylan2 eqtr3d
+    wceq ) ACDZBCDZEZABFZGHZFZABIHZFAFTIHZSUAUCABJKRQTCDUBUDPBLATMNO $.
+
+  $( Distribution of negative over addition.  (Contributed by NM,
+     1-Jan-2006.) $)
+  negdi2 $p |- ( ( A e. CC /\ B e. CC ) ->
+                 -u ( A + B ) = ( -u A - B ) ) $=
+    ( cc wcel wa caddc co cneg cmin negdi wceq negcl negsub sylan eqtrd ) ACDZB
+    CDZEABFGHAHZBHFGZRBIGZABJPRCDQSTKALRBMNO $.
+
+  $( Distribution of negative over subtraction.  (Contributed by NM,
+     4-Oct-1999.) $)
+  negsubdi2 $p |- ( ( A e. CC /\ B e. CC ) -> -u ( A - B ) = ( B - A ) ) $=
+    ( cc wcel wa cmin cneg caddc negsubdi wceq negcl addcom sylan negsub ancoms
+    co 3eqtrd ) ACDZBCDZEABFPGAGZBHPZBTHPZBAFPZABIRTCDSUAUBJAKTBLMSRUBUCJBANOQ
+    $.
+
+  $( Relationship between subtraction and negative.  (Contributed by Paul
+     Chapman, 8-Oct-2007.) $)
+  neg2sub $p |- ( ( A e. CC /\ B e. CC ) -> ( -u A - -u B ) = ( B - A ) ) $=
+    ( cc wcel wa cneg cmin co caddc wceq negcl sylan negsubdi negsubdi2 3eqtr2d
+    subneg ) ACDZBCDZEAFZBFGHZSBIHZABGHFBAGHQSCDRTUAJAKSBPLABMABNO $.
+
+  ${
+    $d A x $.
+    $( Closure law for negative of reals.  (Contributed by NM, 20-Jan-1997.) $)
+    renegcl $p |- ( A e. RR -> -u A e. RR ) $=
+      ( vx cr wcel cv caddc co cc0 wceq wrex cneg ax-rnegex wa recn cmin df-neg
+      cc wb eqeq1i 0cn subadd mp3an1 syl5bb sylan2 wi eleq1a adantl sylbird mpd
+      sylan rexlimdva ) ACDZABEZFGHIZBCJAKZCDZBALULUNUPBCULUMCDZMUNUOUMIZUPUQUL
+      UMQDZURUNRUMNURHAOGZUMIZULUSMUNUOUTUMAPSULAQDZUSVAUNRZANHQDVBUSVCTHAUMUAU
+      BUJUCUDUQURUPUEULUMCUOUFUGUHUKUI $.
+  $}
+
+  ${
+    $d x A $.
+    renegcl.1 $e |- A e. RR $.
+    $( Closure law for negative of reals.  (Note: this inference proof style
+       and the deduction theorem usage in ~ renegcl is deprecated, but is
+       retained for its demonstration value.)  (Contributed by NM,
+       17-Jan-1997.)  (Proof shortened by Andrew Salmon, 22-Oct-2011.) $)
+    renegcli $p |- -u A e. RR $=
+      ( cr wcel cneg renegcl ax-mp ) ACDAECDBAFG $.
+
+    resubcl.2 $e |- B e. RR $.
+    $( Closure law for subtraction of reals.  (Contributed by NM,
+       17-Jan-1997.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    resubcli $p |- ( A - B ) e. RR $=
+      ( cneg caddc co cmin cr cc wcel wceq recni negsub mp2an renegcli readdcli
+      eqeltrri ) ABEZFGZABHGZIAJKBJKTUALACMBDMABNOASCBDPQR $.
+  $}
+
+  $( Closure law for subtraction of reals.  (Contributed by NM,
+     20-Jan-1997.) $)
+  resubcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A - B ) e. RR ) $=
+    ( cr wcel wa cneg caddc cmin wceq recn negsub syl2an renegcl readdcl sylan2
+    co cc eqeltrrd ) ACDZBCDZEABFZGPZABHPZCSAQDBQDUBUCITAJBJABKLTSUACDUBCDBMAUA
+    NOR $.
+
+  $( The negative of a real is real.  (Contributed by NM, 11-Aug-1999.)
+     (Revised by Mario Carneiro, 14-Jul-2014.) $)
+  negreb $p |- ( A e. CC -> ( -u A e. RR <-> A e. RR ) ) $=
+    ( cc wcel cneg cr renegcl negneg eleq1d syl5ib impbid1 ) ABCZADZECZAECZMLDZ
+    ECKNLFKOAEAGHIAFJ $.
+
+  $( "Reverse" second Peano postulate analog for complex numbers:  A complex
+     number minus 1 is a complex number.  (Contributed by Alexander van der
+     Vekens, 18-Mar-2018.) $)
+  peano2cnm $p |- ( N e. CC -> ( N - 1 ) e. CC ) $=
+    ( cc wcel c1 cmin co ax-1cn subcl mpan2 ) ABCDBCADEFBCGADHI $.
+
+  $( "Reverse" second Peano postulate analog for reals.  (Contributed by NM,
+     6-Feb-2007.) $)
+  peano2rem $p |- ( N e. RR -> ( N - 1 ) e. RR ) $=
+    ( cr wcel c1 cmin co 1re resubcl mpan2 ) ABCDBCADEFBCGADHI $.
+
+  ${
+    negidi.1 $e |- A e. CC $.
+    $( Closure law for negative.  (Contributed by NM, 26-Nov-1994.) $)
+    negcli $p |- -u A e. CC $=
+      ( cc wcel cneg negcl ax-mp ) ACDAECDBAFG $.
+
+    $( Addition of a number and its negative.  (Contributed by NM,
+       26-Nov-1994.) $)
+    negidi $p |- ( A + -u A ) = 0 $=
+      ( cc wcel cneg caddc co cc0 wceq negid ax-mp ) ACDAAEFGHIBAJK $.
+
+    $( A number is equal to the negative of its negative.  Theorem I.4 of
+       [Apostol] p. 18.  (Contributed by NM, 8-Feb-1995.)  (Proof shortened by
+       Andrew Salmon, 22-Oct-2011.) $)
+    negnegi $p |- -u -u A = A $=
+      ( cc wcel cneg wceq negneg ax-mp ) ACDAEEAFBAGH $.
+
+    $( Subtraction of a number from itself.  (Contributed by NM,
+       26-Nov-1994.) $)
+    subidi $p |- ( A - A ) = 0 $=
+      ( cc wcel cmin co cc0 wceq subid ax-mp ) ACDAAEFGHBAIJ $.
+
+    $( Identity law for subtraction.  (Contributed by NM, 29-May-1999.) $)
+    subid1i $p |- ( A - 0 ) = A $=
+      ( cc wcel cc0 cmin co wceq subid1 ax-mp ) ACDAEFGAHBAIJ $.
+
+    $( A number is nonzero iff its negative is nonzero.  (Contributed by NM,
+       10-Aug-1999.) $)
+    negne0bi $p |- ( A =/= 0 <-> -u A =/= 0 ) $=
+      ( cc0 cneg cc wcel wceq wb negeq0 ax-mp necon3bii ) ACADZCAEFACGLCGHBAIJK
+      $.
+
+    $( The negative of a real is real.  (Contributed by NM, 11-Aug-1999.) $)
+    negrebi $p |- ( -u A e. RR <-> A e. RR ) $=
+      ( cc wcel cneg cr wb negreb ax-mp ) ACDAEFDAFDGBAHI $.
+
+    ${
+      negne0i.2 $e |- A =/= 0 $.
+      $( The negative of a nonzero number is nonzero.  (Contributed by NM,
+         30-Jul-2004.) $)
+      negne0i $p |- -u A =/= 0 $=
+        ( cc0 wne cneg negne0bi mpbi ) ADEAFDECABGH $.
+    $}
+
+    pncan3i.2 $e |- B e. CC $.
+    $( Closure law for subtraction.  (Contributed by NM, 26-Nov-1994.)
+       (Revised by Mario Carneiro, 21-Dec-2013.) $)
+    subcli $p |- ( A - B ) e. CC $=
+      ( cc wcel cmin co subcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Subtraction and addition of equals.  (Contributed by NM,
+       26-Nov-1994.) $)
+    pncan3i $p |- ( A + ( B - A ) ) = B $=
+      ( cc wcel cmin co caddc wceq pncan3 mp2an ) AEFBEFABAGHIHBJCDABKL $.
+
+    $( Relationship between subtraction and negative.  Theorem I.3 of [Apostol]
+       p. 18.  (Contributed by NM, 26-Nov-1994.)  (Proof shortened by Andrew
+       Salmon, 22-Oct-2011.) $)
+    negsubi $p |- ( A + -u B ) = ( A - B ) $=
+      ( cc wcel cneg caddc co cmin wceq negsub mp2an ) AEFBEFABGHIABJIKCDABLM
+      $.
+
+    $( Relationship between subtraction and negative.  (Contributed by NM,
+       1-Dec-2005.) $)
+    subnegi $p |- ( A - -u B ) = ( A + B ) $=
+      ( cc wcel cneg cmin co caddc wceq subneg mp2an ) AEFBEFABGHIABJIKCDABLM
+      $.
+
+    $( If the difference between two numbers is zero, they are equal.
+       (Contributed by NM, 8-May-1999.) $)
+    subeq0i $p |- ( ( A - B ) = 0 <-> A = B ) $=
+      ( cc wcel cmin co cc0 wceq wb subeq0 mp2an ) AEFBEFABGHIJABJKCDABLM $.
+
+    $( Negative is one-to-one.  (Contributed by NM, 1-Aug-1999.) $)
+    neg11i $p |- ( -u A = -u B <-> A = B ) $=
+      ( cc wcel cneg wceq wb neg11 mp2an ) AEFBEFAGBGHABHICDABJK $.
+
+    $( Negative contraposition law.  (Contributed by NM, 25-Aug-1999.) $)
+    negcon1i $p |- ( -u A = B <-> -u B = A ) $=
+      ( cc wcel cneg wceq wb negcon1 mp2an ) AEFBEFAGBHBGAHICDABJK $.
+
+    $( Negative contraposition law.  (Contributed by NM, 25-Aug-1999.) $)
+    negcon2i $p |- ( A = -u B <-> B = -u A ) $=
+      ( cc wcel cneg wceq wb negcon2 mp2an ) AEFBEFABGHBAGHICDABJK $.
+
+    $( Distribution of negative over addition.  (Contributed by NM,
+       28-Jul-1999.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+    negdii $p |- -u ( A + B ) = ( -u A + -u B ) $=
+      ( caddc co cneg wceq cc0 addcli negidi oveq12i eqtri negcli add4i 3eqtr2i
+      00id addcani mpbi ) ABEFZTGZEFZTAGZBGZEFZEFZHUAUEHUBIAUCEFZBUDEFZEFZUFTAB
+      CDJZKUIIIEFIUGIUHIEACKBDKLQMAUCBUDCACNZDBDNZOPTUAUEUJTUJNUCUDUKULJRS $.
+
+    $( Distribution of negative over subtraction.  (Contributed by NM,
+       6-Aug-1999.) $)
+    negsubdii $p |- -u ( A - B ) = ( -u A + B ) $=
+      ( cneg caddc co cmin negcli negdii negsubi negeqi negnegi oveq2i 3eqtr3i
+      ) ABEZFGZEAEZPEZFGABHGZERBFGAPCBDIJQTABCDKLSBRFBDMNO $.
+
+    $( Distribution of negative over subtraction.  (Contributed by NM,
+       1-Oct-1999.) $)
+    negsubdi2i $p |- -u ( A - B ) = ( B - A ) $=
+      ( cmin co cneg caddc negsubdii negcli negsubi addcomli eqtri ) ABEFGAGZBH
+      FBAEFZABCDIBNODACJBADCKLM $.
+
+    subadd.3 $e |- C e. CC $.
+    $( Relationship between subtraction and addition.  (Contributed by NM,
+       26-Nov-1994.)  (Revised by Mario Carneiro, 21-Dec-2013.) $)
+    subaddi $p |- ( ( A - B ) = C <-> ( B + C ) = A ) $=
+      ( cc wcel cmin co wceq caddc wb subadd mp3an ) AGHBGHCGHABIJCKBCLJAKMDEFA
+      BCNO $.
+
+    $( Relationship between subtraction and addition.  (Contributed by NM,
+       15-Dec-2006.) $)
+    subadd2i $p |- ( ( A - B ) = C <-> ( C + B ) = A ) $=
+      ( cc wcel cmin co wceq caddc wb subadd2 mp3an ) AGHBGHCGHABIJCKCBLJAKMDEF
+      ABCNO $.
+
+    ${
+      subaddri.4 $e |- ( B + C ) = A $.
+      $( Relationship between subtraction and addition.  (Contributed by NM,
+         16-Dec-2006.) $)
+      subaddrii $p |- ( A - B ) = C $=
+        ( cmin co wceq caddc subaddi mpbir ) ABHICJBCKIAJGABCDEFLM $.
+    $}
+
+    $( Swap subtrahend and result of subtraction.  (Contributed by NM,
+       7-Oct-1999.) $)
+    subsub23i $p |- ( ( A - B ) = C <-> ( A - C ) = B ) $=
+      ( cc wcel cmin co wceq wb subsub23 mp3an ) AGHBGHCGHABIJCKACIJBKLDEFABCMN
+      $.
+
+    $( Associative-type law for subtraction and addition.  (Contributed by NM,
+       16-Sep-1999.) $)
+    addsubassi $p |- ( ( A + B ) - C ) = ( A + ( B - C ) ) $=
+      ( cc wcel caddc co cmin wceq addsubass mp3an ) AGHBGHCGHABIJCKJABCKJIJLDE
+      FABCMN $.
+
+    $( Law for subtraction and addition.  (Contributed by NM, 6-Aug-2003.) $)
+    addsubi $p |- ( ( A + B ) - C ) = ( ( A - C ) + B ) $=
+      ( cc wcel caddc co cmin wceq addsub mp3an ) AGHBGHCGHABIJCKJACKJBIJLDEFAB
+      CMN $.
+
+    $( Cancellation law for subtraction.  (Contributed by NM, 8-Feb-2005.) $)
+    subcani $p |- ( ( A - B ) = ( A - C ) <-> B = C ) $=
+      ( cc wcel cmin co wceq wb subcan mp3an ) AGHBGHCGHABIJACIJKBCKLDEFABCMN
+      $.
+
+    $( Cancellation law for subtraction.  (Contributed by NM, 8-Feb-2005.) $)
+    subcan2i $p |- ( ( A - C ) = ( B - C ) <-> A = B ) $=
+      ( cc wcel cmin co wceq wb subcan2 mp3an ) AGHBGHCGHACIJBCIJKABKLDEFABCMN
+      $.
+
+    $( Cancellation law for mixed addition and subtraction.  (Contributed by
+       NM, 14-Jan-2006.) $)
+    pnncani $p |- ( ( A + B ) - ( A - C ) ) = ( B + C ) $=
+      ( cc wcel caddc co cmin wceq pnncan mp3an ) AGHBGHCGHABIJACKJKJBCIJLDEFAB
+      CMN $.
+
+    addsub4i.4 $e |- D e. CC $.
+    $( Rearrangement of 4 terms in a mixed addition and subtraction.
+       (Contributed by NM, 17-Oct-1999.) $)
+    addsub4i $p |- ( ( A + B ) - ( C + D ) ) =
+                 ( ( A - C ) + ( B - D ) ) $=
+      ( cc wcel caddc co cmin wceq addsub4 mp4an ) AIJBIJCIJDIJABKLCDKLMLACMLBD
+      MLKLNEFGHABCDOP $.
+  $}
+
+  $( Alternate proof of ~ 0re .  (Contributed by NM, 19-Feb-2005.)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
+  0reALT $p |- 0 e. RR $=
+    ( c1 cmin co cc0 cr ax-1cn subidi 1re resubcli eqeltrri ) AABCDEAFGAAHHIJ
+    $.
+
+  ${
+    negidd.1 $e |- ( ph -> A e. CC ) $.
+    $( Closure law for negative.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    negcld $p |- ( ph -> -u A e. CC ) $=
+      ( cc wcel cneg negcl syl ) ABDEBFDECBGH $.
+
+    $( Subtraction of a number from itself.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subidd $p |- ( ph -> ( A - A ) = 0 ) $=
+      ( cc wcel cmin co cc0 wceq subid syl ) ABDEBBFGHICBJK $.
+
+    $( Identity law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subid1d $p |- ( ph -> ( A - 0 ) = A ) $=
+      ( cc wcel cc0 cmin co wceq subid1 syl ) ABDEBFGHBICBJK $.
+
+    $( Addition of a number and its negative.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    negidd $p |- ( ph -> ( A + -u A ) = 0 ) $=
+      ( cc wcel cneg caddc co cc0 wceq negid syl ) ABDEBBFGHIJCBKL $.
+
+    $( A number is equal to the negative of its negative.  Theorem I.4 of
+       [Apostol] p. 18.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    negnegd $p |- ( ph -> -u -u A = A ) $=
+      ( cc wcel cneg wceq negneg syl ) ABDEBFFBGCBHI $.
+
+    $( A number is zero iff its negative is zero.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    negeq0d $p |- ( ph -> ( A = 0 <-> -u A = 0 ) ) $=
+      ( cc wcel cc0 wceq cneg wb negeq0 syl ) ABDEBFGBHFGICBJK $.
+
+    $( A number is nonzero iff its negative is nonzero.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    negne0bd $p |- ( ph -> ( A =/= 0 <-> -u A =/= 0 ) ) $=
+      ( cc0 cneg negeq0d necon3bid ) ABDBEDABCFG $.
+
+    ${
+      negcon1d.2 $e |- ( ph -> B e. CC ) $.
+      $( Contraposition law for unary minus.  Deduction form of ~ negcon1 .
+         (Contributed by David Moews, 28-Feb-2017.) $)
+      negcon1d $p |- ( ph -> ( -u A = B <-> -u B = A ) ) $=
+        ( cc wcel cneg wceq wb negcon1 syl2anc ) ABFGCFGBHCICHBIJDEBCKL $.
+    $}
+
+    ${
+      negcon1ad.2 $e |- ( ph -> -u A = B ) $.
+      $( Contraposition law for unary minus.  One-way deduction form of
+         ~ negcon1 .  (Contributed by David Moews, 28-Feb-2017.) $)
+      negcon1ad $p |- ( ph -> -u B = A ) $=
+        ( cneg wceq cc negcld eqeltrrd negcon1d mpbid ) ABFZCGCFBGEABCDAMCHEABD
+        IJKL $.
+    $}
+
+    ${
+      neg11ad.2 $e |- ( ph -> B e. CC ) $.
+      $( The negatives of two complex numbers are equal iff they are equal.
+         Deduction form of ~ neg11 .  Generalization of ~ neg11d .
+         (Contributed by David Moews, 28-Feb-2017.) $)
+      neg11ad $p |- ( ph -> ( -u A = -u B <-> A = B ) ) $=
+        ( cc wcel cneg wceq wb neg11 syl2anc ) ABFGCFGBHCHIBCIJDEBCKL $.
+    $}
+
+    ${
+      negned.2 $e |- ( ph -> B e. CC ) $.
+      negned.3 $e |- ( ph -> A =/= B ) $.
+      $( If two complex numbers are unequal, so are their negatives.
+         Contrapositive of ~ neg11d .  (Contributed by David Moews,
+         28-Feb-2017.) $)
+      negned $p |- ( ph -> -u A =/= -u B ) $=
+        ( cneg wne neg11ad necon3bid mpbird ) ABGZCGZHBCHFALMBCABCDEIJK $.
+    $}
+
+    ${
+      negne0d.2 $e |- ( ph -> A =/= 0 ) $.
+      $( The negative of a nonzero number is nonzero.  (Contributed by Mario
+         Carneiro, 27-May-2016.) $)
+      negne0d $p |- ( ph -> -u A =/= 0 ) $=
+        ( cc0 wne cneg negne0bd mpbid ) ABEFBGEFDABCHI $.
+    $}
+
+    ${
+      negrebd.2 $e |- ( ph -> -u A e. RR ) $.
+      $( The negative of a real is real.  (Contributed by Mario Carneiro,
+         28-May-2016.) $)
+      negrebd $p |- ( ph -> A e. RR ) $=
+        ( cneg cr wcel cc wb negreb syl mpbid ) ABEFGZBFGZDABHGMNICBJKL $.
+    $}
+
+    pncand.2 $e |- ( ph -> B e. CC ) $.
+    $( Closure law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subcld $p |- ( ph -> ( A - B ) e. CC ) $=
+      ( cc wcel cmin co subcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    pncand $p |- ( ph -> ( ( A + B ) - B ) = A ) $=
+      ( cc wcel caddc co cmin wceq pncan syl2anc ) ABFGCFGBCHICJIBKDEBCLM $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    pncan2d $p |- ( ph -> ( ( A + B ) - A ) = B ) $=
+      ( cc wcel caddc co cmin wceq pncan2 syl2anc ) ABFGCFGBCHIBJICKDEBCLM $.
+
+    $( Subtraction and addition of equals.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    pncan3d $p |- ( ph -> ( A + ( B - A ) ) = B ) $=
+      ( cc wcel cmin co caddc wceq pncan3 syl2anc ) ABFGCFGBCBHIJICKDEBCLM $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    npcand $p |- ( ph -> ( ( A - B ) + B ) = A ) $=
+      ( cc wcel cmin co caddc wceq npcan syl2anc ) ABFGCFGBCHICJIBKDEBCLM $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nncand $p |- ( ph -> ( A - ( A - B ) ) = B ) $=
+      ( cc wcel cmin co wceq nncan syl2anc ) ABFGCFGBBCHIHICJDEBCKL $.
+
+    $( Relationship between subtraction and negative.  Theorem I.3 of [Apostol]
+       p. 18.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    negsubd $p |- ( ph -> ( A + -u B ) = ( A - B ) ) $=
+      ( cc wcel cneg caddc co cmin wceq negsub syl2anc ) ABFGCFGBCHIJBCKJLDEBCM
+      N $.
+
+    $( Relationship between subtraction and negative.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    subnegd $p |- ( ph -> ( A - -u B ) = ( A + B ) ) $=
+      ( cc wcel cneg cmin co caddc wceq subneg syl2anc ) ABFGCFGBCHIJBCKJLDEBCM
+      N $.
+
+    ${
+      subeq0d.3 $e |- ( ph -> ( A - B ) = 0 ) $.
+      $( If the difference between two numbers is zero, they are equal.
+         (Contributed by Mario Carneiro, 27-May-2016.) $)
+      subeq0d $p |- ( ph -> A = B ) $=
+        ( cmin co cc0 wceq cc wcel wb subeq0 syl2anc mpbid ) ABCGHIJZBCJZFABKLC
+        KLQRMDEBCNOP $.
+    $}
+
+    ${
+      subne0d.3 $e |- ( ph -> A =/= B ) $.
+      $( Two unequal numbers have nonzero difference.  (Contributed by Mario
+         Carneiro, 1-Jan-2017.) $)
+      subne0d $p |- ( ph -> ( A - B ) =/= 0 ) $=
+        ( cmin co cc0 wne cc wcel wceq wb subeq0 syl2anc necon3bid mpbird ) ABC
+        GHZIJBCJFASIBCABKLCKLSIMBCMNDEBCOPQR $.
+    $}
+
+    ${
+      $( The difference of two complex numbers is zero iff they are equal.
+         Deduction form of ~ subeq0 .  Generalization of ~ subeq0d .
+         (Contributed by David Moews, 28-Feb-2017.) $)
+      subeq0ad $p |- ( ph -> ( ( A - B ) = 0 <-> A = B ) ) $=
+        ( cc wcel cmin co cc0 wceq wb subeq0 syl2anc ) ABFGCFGBCHIJKBCKLDEBCMN
+        $.
+    $}
+
+    ${
+      subne0ad.3 $e |- ( ph -> ( A - B ) =/= 0 ) $.
+      $( If the difference of two complex numbers is nonzero, they are
+         unequal.  Converse of ~ subne0d .  Contrapositive of ~ subeq0bd .
+         (Contributed by David Moews, 28-Feb-2017.) $)
+      subne0ad $p |- ( ph -> A =/= B ) $=
+        ( cmin co cc0 wne subeq0ad necon3bid mpbid ) ABCGHZIJBCJFANIBCABCDEKLM
+        $.
+    $}
+
+    ${
+      neg11d.3 $e |- ( ph -> -u A = -u B ) $.
+      $( If the difference between two numbers is zero, they are equal.
+         (Contributed by Mario Carneiro, 27-May-2016.) $)
+      neg11d $p |- ( ph -> A = B ) $=
+        ( cneg wceq neg11ad mpbid ) ABGCGHBCHFABCDEIJ $.
+    $}
+
+    $( Distribution of negative over addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    negdid $p |- ( ph -> -u ( A + B ) = ( -u A + -u B ) ) $=
+      ( cc wcel caddc co cneg wceq negdi syl2anc ) ABFGCFGBCHIJBJCJHIKDEBCLM $.
+
+    $( Distribution of negative over addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    negdi2d $p |- ( ph -> -u ( A + B ) = ( -u A - B ) ) $=
+      ( cc wcel caddc co cneg cmin wceq negdi2 syl2anc ) ABFGCFGBCHIJBJCKILDEBC
+      MN $.
+
+    $( Distribution of negative over subtraction.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    negsubdid $p |- ( ph -> -u ( A - B ) = ( -u A + B ) ) $=
+      ( cc wcel cmin co cneg caddc wceq negsubdi syl2anc ) ABFGCFGBCHIJBJCKILDE
+      BCMN $.
+
+    $( Distribution of negative over subtraction.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    negsubdi2d $p |- ( ph -> -u ( A - B ) = ( B - A ) ) $=
+      ( cc wcel cmin co cneg wceq negsubdi2 syl2anc ) ABFGCFGBCHIJCBHIKDEBCLM
+      $.
+
+    $( Relationship between subtraction and negative.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    neg2subd $p |- ( ph -> ( -u A - -u B ) = ( B - A ) ) $=
+      ( cc wcel cneg cmin co wceq neg2sub syl2anc ) ABFGCFGBHCHIJCBIJKDEBCLM $.
+
+    subaddd.3 $e |- ( ph -> C e. CC ) $.
+    $( Relationship between subtraction and addition.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    subaddd $p |- ( ph -> ( ( A - B ) = C <-> ( B + C ) = A ) ) $=
+      ( cc wcel cmin co wceq caddc wb subadd syl3anc ) ABHICHIDHIBCJKDLCDMKBLNE
+      FGBCDOP $.
+
+    $( Relationship between subtraction and addition.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    subadd2d $p |- ( ph -> ( ( A - B ) = C <-> ( C + B ) = A ) ) $=
+      ( cc wcel cmin co wceq caddc wb subadd2 syl3anc ) ABHICHIDHIBCJKDLDCMKBLN
+      EFGBCDOP $.
+
+    $( Associative-type law for subtraction and addition.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    addsubassd $p |- ( ph -> ( ( A + B ) - C ) = ( A + ( B - C ) ) ) $=
+      ( cc wcel caddc co cmin wceq addsubass syl3anc ) ABHICHIDHIBCJKDLKBCDLKJK
+      MEFGBCDNO $.
+
+    $( Law for subtraction and addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addsubd $p |- ( ph -> ( ( A + B ) - C ) = ( ( A - C ) + B ) ) $=
+      ( cc wcel caddc co cmin wceq addsub syl3anc ) ABHICHIDHIBCJKDLKBDLKCJKMEF
+      GBCDNO $.
+
+    $( Commutative/associative law for addition and subtraction.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    subadd23d $p |- ( ph -> ( ( A - B ) + C ) = ( A + ( C - B ) ) ) $=
+      ( cc wcel cmin co caddc wceq subadd23 syl3anc ) ABHICHIDHIBCJKDLKBDCJKLKM
+      EFGBCDNO $.
+
+    $( Commutative/associative law for addition and subtraction.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    addsub12d $p |- ( ph -> ( A + ( B - C ) ) = ( B + ( A - C ) ) ) $=
+      ( cc wcel cmin co caddc wceq addsub12 syl3anc ) ABHICHIDHIBCDJKLKCBDJKLKM
+      EFGBCDNO $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    npncand $p |- ( ph -> ( ( A - B ) + ( B - C ) ) = ( A - C ) ) $=
+      ( cc wcel cmin co caddc wceq npncan syl3anc ) ABHICHIDHIBCJKCDJKLKBDJKMEF
+      GBCDNO $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nppcand $p |- ( ph -> ( ( ( A - B ) + C ) + B ) = ( A + C ) ) $=
+      ( cc wcel cmin co caddc wceq nppcan syl3anc ) ABHICHIDHIBCJKDLKCLKBDLKMEF
+      GBCDNO $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nppcan2d $p |- ( ph -> ( ( A - ( B + C ) ) + C ) = ( A - B ) ) $=
+      ( cc wcel caddc co cmin wceq nppcan2 syl3anc ) ABHICHIDHIBCDJKLKDJKBCLKME
+      FGBCDNO $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nppcan3d $p |- ( ph -> ( ( A - B ) + ( C + B ) ) = ( A + C ) ) $=
+      ( cc wcel cmin co caddc wceq nppcan3 syl3anc ) ABHICHIDHIBCJKDCLKLKBDLKME
+      FGBCDNO $.
+
+    $( Law for double subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subsubd $p |- ( ph -> ( A - ( B - C ) ) = ( ( A - B ) + C ) ) $=
+      ( cc wcel cmin co caddc wceq subsub syl3anc ) ABHICHIDHIBCDJKJKBCJKDLKMEF
+      GBCDNO $.
+
+    $( Law for double subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subsub2d $p |- ( ph -> ( A - ( B - C ) ) = ( A + ( C - B ) ) ) $=
+      ( cc wcel cmin co caddc wceq subsub2 syl3anc ) ABHICHIDHIBCDJKJKBDCJKLKME
+      FGBCDNO $.
+
+    $( Law for double subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subsub3d $p |- ( ph -> ( A - ( B - C ) ) = ( ( A + C ) - B ) ) $=
+      ( cc wcel cmin co caddc wceq subsub3 syl3anc ) ABHICHIDHIBCDJKJKBDLKCJKME
+      FGBCDNO $.
+
+    $( Law for double subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subsub4d $p |- ( ph -> ( ( A - B ) - C ) = ( A - ( B + C ) ) ) $=
+      ( cc wcel cmin co caddc wceq subsub4 syl3anc ) ABHICHIDHIBCJKDJKBCDLKJKME
+      FGBCDNO $.
+
+    $( Swap the second and third terms in a double subtraction.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    sub32d $p |- ( ph -> ( ( A - B ) - C ) = ( ( A - C ) - B ) ) $=
+      ( cc wcel cmin co wceq sub32 syl3anc ) ABHICHIDHIBCJKDJKBDJKCJKLEFGBCDMN
+      $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nnncand $p |- ( ph -> ( ( A - ( B - C ) ) - C ) = ( A - B ) ) $=
+      ( cc wcel cmin co wceq nnncan syl3anc ) ABHICHIDHIBCDJKJKDJKBCJKLEFGBCDMN
+      $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nnncan1d $p |- ( ph -> ( ( A - B ) - ( A - C ) ) = ( C - B ) ) $=
+      ( cc wcel cmin co wceq nnncan1 syl3anc ) ABHICHIDHIBCJKBDJKJKDCJKLEFGBCDM
+      N $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nnncan2d $p |- ( ph -> ( ( A - C ) - ( B - C ) ) = ( A - B ) ) $=
+      ( cc wcel cmin co wceq nnncan2 syl3anc ) ABHICHIDHIBDJKCDJKJKBCJKLEFGBCDM
+      N $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    npncan3d $p |- ( ph -> ( ( A - B ) + ( C - A ) ) = ( C - B ) ) $=
+      ( cc wcel cmin co caddc wceq npncan3 syl3anc ) ABHICHIDHIBCJKDBJKLKDCJKME
+      FGBCDNO $.
+
+    $( Cancellation law for mixed addition and subtraction.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    pnpcand $p |- ( ph -> ( ( A + B ) - ( A + C ) ) = ( B - C ) ) $=
+      ( cc wcel caddc co cmin wceq pnpcan syl3anc ) ABHICHIDHIBCJKBDJKLKCDLKMEF
+      GBCDNO $.
+
+    $( Cancellation law for mixed addition and subtraction.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    pnpcan2d $p |- ( ph -> ( ( A + C ) - ( B + C ) ) = ( A - B ) ) $=
+      ( cc wcel caddc co cmin wceq pnpcan2 syl3anc ) ABHICHIDHIBDJKCDJKLKBCLKME
+      FGBCDNO $.
+
+    $( Cancellation law for mixed addition and subtraction.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    pnncand $p |- ( ph -> ( ( A + B ) - ( A - C ) ) = ( B + C ) ) $=
+      ( cc wcel caddc co cmin wceq pnncan syl3anc ) ABHICHIDHIBCJKBDLKLKCDJKMEF
+      GBCDNO $.
+
+    $( Cancellation law for mixed addition and subtraction.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    ppncand $p |- ( ph -> ( ( A + B ) + ( C - B ) ) = ( A + C ) ) $=
+      ( cc wcel caddc co cmin wceq ppncan syl3anc ) ABHICHIDHIBCJKDCLKJKBDJKMEF
+      GBCDNO $.
+
+    ${
+      subcand.4 $e |- ( ph -> ( A - B ) = ( A - C ) ) $.
+      $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      subcand $p |- ( ph -> B = C ) $=
+        ( cmin co wceq cc wcel wb subcan syl3anc mpbid ) ABCIJBDIJKZCDKZHABLMCL
+        MDLMRSNEFGBCDOPQ $.
+    $}
+
+    ${
+      subcan2d.4 $e |- ( ph -> ( A - C ) = ( B - C ) ) $.
+      $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+         22-Sep-2016.) $)
+      subcan2d $p |- ( ph -> A = B ) $=
+        ( cmin co wceq cc wcel wb subcan2 syl3anc mpbid ) ABDIJCDIJKZBCKZHABLMC
+        LMDLMRSNEFGBCDOPQ $.
+    $}
+
+    $( Cancellation law for subtraction.  Deduction form of ~ subcan .
+       Generalization of ~ subcand .  (Contributed by David Moews,
+       28-Feb-2017.) $)
+    subcanad $p |- ( ph -> ( ( A - B ) = ( A - C ) <-> B = C ) ) $=
+      ( cc wcel cmin co wceq wb subcan syl3anc ) ABHICHIDHIBCJKBDJKLCDLMEFGBCDN
+      O $.
+
+    ${
+      subneintrd.4 $e |- ( ph -> B =/= C ) $.
+      $( Introducing subtraction on both sides of a statement of inequality.
+         Contrapositive of ~ subcand .  (Contributed by David Moews,
+         28-Feb-2017.) $)
+      subneintrd $p |- ( ph -> ( A - B ) =/= ( A - C ) ) $=
+        ( cmin co wne subcanad necon3bid mpbird ) ABCIJZBDIJZKCDKHAOPCDABCDEFGL
+        MN $.
+    $}
+
+    ${
+      $( Cancellation law for subtraction.  Deduction form of ~ subcan2 .
+         Generalization of ~ subcan2d .  (Contributed by David Moews,
+         28-Feb-2017.) $)
+      subcan2ad $p |- ( ph -> ( ( A - C ) = ( B - C ) <-> A = B ) ) $=
+        ( cc wcel cmin co wceq wb subcan2 syl3anc ) ABHICHIDHIBDJKCDJKLBCLMEFGB
+        CDNO $.
+    $}
+
+    ${
+      subneintr2d.4 $e |- ( ph -> A =/= B ) $.
+      $( Introducing subtraction on both sides of a statement of inequality.
+         Contrapositive of ~ subcan2d .  (Contributed by David Moews,
+         28-Feb-2017.) $)
+      subneintr2d $p |- ( ph -> ( A - C ) =/= ( B - C ) ) $=
+        ( cmin co wne subcan2ad necon3bid mpbird ) ABDIJZCDIJZKBCKHAOPBCABCDEFG
+        LMN $.
+    $}
+
+    addsub4d.4 $e |- ( ph -> D e. CC ) $.
+    $( Rearrangement of 4 terms in a mixed addition and subtraction.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    addsub4d $p |- ( ph ->
+                ( ( A + B ) - ( C + D ) ) = ( ( A - C ) + ( B - D ) ) ) $=
+      ( cc wcel caddc co cmin wceq addsub4 syl22anc ) ABJKCJKDJKEJKBCLMDELMNMBD
+      NMCENMLMOFGHIBCDEPQ $.
+
+    $( Rearrangement of 4 terms in a mixed addition and subtraction.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    subadd4d $p |- ( ph ->
+                ( ( A - B ) - ( C - D ) ) = ( ( A + D ) - ( B + C ) ) ) $=
+      ( cc wcel cmin co caddc wceq subadd4 syl22anc ) ABJKCJKDJKEJKBCLMDELMLMBE
+      NMCDNMLMOFGHIBCDEPQ $.
+
+    $( Rearrangement of 4 terms in a subtraction.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    sub4d $p |- ( ph ->
+                ( ( A - B ) - ( C - D ) ) = ( ( A - C ) - ( B - D ) ) ) $=
+      ( cc wcel cmin co wceq sub4 syl22anc ) ABJKCJKDJKEJKBCLMDELMLMBDLMCELMLMN
+      FGHIBCDEOP $.
+
+    $( Law for subtraction and addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    2addsubd $p |- ( ph ->
+      ( ( ( A + B ) + C ) - D ) = ( ( ( A + C ) - D ) + B ) ) $=
+      ( cc wcel caddc co cmin wceq 2addsub syl22anc ) ABJKCJKDJKEJKBCLMDLMENMBD
+      LMENMCLMOFGHIBCDEPQ $.
+
+    $( Relation between sums and differences.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addsubeq4d $p |- ( ph ->
+        ( ( A + B ) = ( C + D ) <-> ( C - A ) = ( B - D ) ) ) $=
+      ( cc wcel caddc co wceq cmin wb addsubeq4 syl22anc ) ABJKCJKDJKEJKBCLMDEL
+      MNDBOMCEOMNPFGHIBCDEQR $.
+  $}
+
+  $( Reverse the order of subtraction in an equality.  (Contributed by Scott
+     Fenton, 8-Jul-2013.) $)
+  subeqrev $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+    ( ( A - B ) = ( C - D ) <-> ( B - A ) = ( D - C ) ) ) $=
+    ( cc wcel wa cmin co cneg wb subcl neg11 syl2an negsubdi2 eqeqan12d bitr3d
+    wceq ) AEFBEFGZCEFDEFGZGABHIZJZCDHIZJZRZUAUCRZBAHIZDCHIZRSUAEFUCEFUEUFKTABL
+    CDLUAUCMNSTUBUGUDUHABOCDOPQ $.
+
+  $( Cancellation law for addition and subtraction with 1.  (Contributed by
+     Alexander van der Vekens, 3-Oct-2018.) $)
+  pncan1 $p |- ( A e. CC -> ( ( A + 1 ) - 1 ) = A ) $=
+    ( cc wcel c1 id ax-1cn a1i pncand ) ABCZADIEDBCIFGH $.
+
+  $( Cancellation law for subtraction and addition with 1.  (Contributed by
+     Alexander van der Vekens, 5-Oct-2018.) $)
+  npcan1 $p |- ( A e. CC -> ( ( A - 1 ) + 1 ) = A ) $=
+    ( cc wcel c1 id ax-1cn a1i npcand ) ABCZADIEDBCIFGH $.
+
+  ${
+    subeq0bd.1 $e |- ( ph -> A e. CC ) $.
+    subeq0bd.2 $e |- ( ph -> A = B ) $.
+    $( If two complex numbers are equal, their difference is zero.  Consequence
+       of ~ subeq0ad .  Converse of ~ subeq0d .  Contrapositive of
+       ~ subne0ad .  (Contributed by David Moews, 28-Feb-2017.) $)
+    subeq0bd $p |- ( ph -> ( A - B ) = 0 ) $=
+      ( cmin co cc0 wceq cc eqeltrrd subeq0ad mpbird ) ABCFGHIBCIEABCDABCJEDKLM
+      $.
+  $}
+
+  ${
+    renegcld.1 $e |- ( ph -> A e. RR ) $.
+    $( Closure law for negative of reals.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    renegcld $p |- ( ph -> -u A e. RR ) $=
+      ( cr wcel cneg renegcl syl ) ABDEBFDECBGH $.
+
+    resubcld.2 $e |- ( ph -> B e. RR ) $.
+    $( Closure law for subtraction of reals.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    resubcld $p |- ( ph -> ( A - B ) e. RR ) $=
+      ( cr wcel cmin co resubcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Multiplication
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( k times k minus 1 is a complex number if k is a complex number.
+     (Contributed by Alexander van der Vekens, 11-Mar-2018.) $)
+  kcnktkm1cn $p |- ( K e. CC -> ( K x. ( K - 1 ) ) e. CC ) $=
+    ( cc wcel c1 cmin co id ax-1cn a1i subcld mulcld ) ABCZAADEFLGZLADMDBCLHIJK
+    $.
+
+  $( Product of two sums.  (Contributed by NM, 14-Jan-2006.)  (Proof shortened
+     by Andrew Salmon, 19-Nov-2011.) $)
+  muladd $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+               ( ( A + B ) x. ( C + D ) ) =
+       ( ( ( A x. C ) + ( D x. B ) ) + ( ( A x. D ) + ( C x. B ) ) ) ) $=
+    ( cc wcel wa caddc co cmul wceq addcl 3expa adantrl oveq12d mulcl ad2ant2lr
+    adddir syl2an ad2ant2l adddi adantrr ad2ant2r anandirs add32d mulcom oveq2d
+    3expb sylan ad2ant2rl addassd ancoms 3eqtr3d an4s 3eqtrd ) AEFZBEFZGZCEFZDE
+    FZGZGZABHIZCDHIJIZVCCJIZVCDJIZHIZACJIZBCJIZHIZADJIZBDJIZHIZHIZVHDBJIZHIZVKC
+    BJIZHIHIZURVCEFZVAVDVGKZABLVSUSUTVTVCCDUAUHUIVBVEVJVFVMHURUSVEVJKZUTUPUQUSW
+    AABCRMUBURUTVFVMKZUSUPUQUTWBABDRMNOVBVNVHVMHIZVIHIVPVKHIZVQHIVRVBVHVIVMUPUS
+    VHEFZUQUTACPZUCZUQUSVIEFUPUTBCPQURUTVMEFZUSUPUQUTWHUPUTGVKEFZVLEFZWHUQUTGZA
+    DPZBDPZVKVLLSUDNUEVBWCWDVIVQHVBVHVKHIZVLHIWNVOHIWCWDVBVLVOWNHUQUTVLVOKUPUSB
+    DUFTUGVBVHVKVLWGUPUTWIUQUSWLUJZUQUTWJUPUSWMTUKVBVHVKVOWGWOUQUTVOEFZUPUSUTUQ
+    WPDBPULZTUEUMUQUSVIVQKUPUTBCUFQOVBVPVKVQUPUSUQUTVPEFZUPUSGWEWPWRWKWFWQVHVOL
+    SUNWOUQUSVQEFZUPUTUSUQWSCBPULQUKUOUO $.
+
+  $( Distribution of multiplication over subtraction.  Theorem I.5 of [Apostol]
+     p. 18.  (Contributed by NM, 18-Nov-2004.) $)
+  subdi $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( A x. ( B - C ) ) = ( ( A x. B ) - ( A x. C ) ) ) $=
+    ( cc wcel w3a cmul cmin wceq caddc simp1 simp3 3adant1 adddid pncan3 ancoms
+    co subcl oveq2d mulcl eqtr3d 3adant3 3adant2 wa sylan2 3impb subaddd mpbird
+    eqcomd ) ADEZBDEZCDEZFZABGQZACGQZHQZABCHQZGQZUMUPURIUOURJQZUNIUMACUQJQZGQUS
+    UNUMACUQUJUKULKUJUKULLUKULUQDEZUJBCRZMNUMUTBAGUKULUTBIZUJULUKVCCBOPMSUAUMUN
+    UOURUJUKUNDEULABTUBUJULUODEUKACTUCUJUKULURDEZUKULUDUJVAVDVBAUQTUEUFUGUHUI
+    $.
+
+  $( Distribution of multiplication over subtraction.  Theorem I.5 of [Apostol]
+     p. 18.  (Contributed by NM, 30-Dec-2005.) $)
+  subdir $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A - B ) x. C ) = ( ( A x. C ) - ( B x. C ) ) ) $=
+    ( cc wcel cmin co cmul wceq subdi 3coml wa subcl mulcom sylan 3impa 3adant2
+    w3a 3adant1 oveq12d 3eqtr4d ) ADEZBDEZCDEZRZCABFGZHGZCAHGZCBHGZFGZUFCHGZACH
+    GZBCHGZFGUDUBUCUGUJICABJKUBUCUDUKUGIZUBUCLUFDEUDUNABMUFCNOPUEULUHUMUIFUBUDU
+    LUHIUCACNQUCUDUMUIIUBBCNSTUA $.
+
+  ${
+    $d A x y $.
+    $( Multiplication by ` 0 ` .  Theorem I.6 of [Apostol] p. 18.  (Contributed
+       by NM, 10-Aug-1999.) $)
+    mul02 $p |- ( A e. CC -> ( 0 x. A ) = 0 ) $=
+      ( cc wcel cc0 cmul co cmin 0cn subidi oveq1i wceq subdir mp3an12 wa mulcl
+      subidd mpan eqtrd syl5eqr ) ABCZDAEFZDDGFZAEFZDUBDAEDHIJTUCUAUAGFZDDBCZUE
+      TUCUDKHHDDALMUETUDDKHUETNUADAOPQRS $.
+  $}
+
+  $( Zero times a real is zero.  Although we prove it as a corollary of
+     ~ mul02 , the name is for consistency with the Metamath Proof Explorer
+     which proves it before ~ mul02 .  (Contributed by Scott Fenton,
+     3-Jan-2013.) $)
+  mul02lem2 $p |- ( A e. RR -> ( 0 x. A ) = 0 ) $=
+    ( cr wcel cc cc0 cmul co wceq recn mul02 syl ) ABCADCEAFGEHAIAJK $.
+
+  $( Multiplication by ` 0 ` .  Theorem I.6 of [Apostol] p. 18.  (Contributed
+     by NM, 15-May-1999.)  (Revised by Scott Fenton, 3-Jan-2013.) $)
+  mul01 $p |- ( A e. CC -> ( A x. 0 ) = 0 ) $=
+    ( cc wcel cc0 cmul co wceq 0cn mulcom mpan2 mul02 eqtrd ) ABCZADEFZDAEFZDMD
+    BCNOGHADIJAKL $.
+
+  ${
+    mul01i.1 $e |- A e. CC $.
+    $( Multiplication by 0.  Theorem I.6 of [Apostol] p. 18.  (Contributed by
+       NM, 23-Nov-1994.) $)
+    mul02i $p |- ( 0 x. A ) = 0 $=
+      ( cc wcel cc0 cmul co wceq mul02 ax-mp ) ACDEAFGEHBAIJ $.
+
+    $( Multiplication by ` 0 ` .  Theorem I.6 of [Apostol] p. 18.  (Contributed
+       by NM, 23-Nov-1994.)  (Revised by Scott Fenton, 3-Jan-2013.) $)
+    mul01i $p |- ( A x. 0 ) = 0 $=
+      ( cc wcel cc0 cmul co wceq mul01 ax-mp ) ACDAEFGEHBAIJ $.
+  $}
+
+  ${
+    mul01d.1 $e |- ( ph -> A e. CC ) $.
+    $( Multiplication by 0.  Theorem I.6 of [Apostol] p. 18.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    mul02d $p |- ( ph -> ( 0 x. A ) = 0 ) $=
+      ( cc wcel cc0 cmul co wceq mul02 syl ) ABDEFBGHFICBJK $.
+
+    $( Multiplication by ` 0 ` .  Theorem I.6 of [Apostol] p. 18.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    mul01d $p |- ( ph -> ( A x. 0 ) = 0 ) $=
+      ( cc wcel cc0 cmul co wceq mul01 syl ) ABDEBFGHFICBJK $.
+  $}
+
+  $( The imaginary unit ` _i ` is not zero.  (Contributed by NM,
+     6-May-1999.) $)
+  ine0 $p |- _i =/= 0 $=
+    ( ci cc0 wceq c1 0re clt cltrr ax-0lt1 cr wcel wb ltxrlt mp2an mpbir gtneii
+    wbr 1re caddc co cmul oveq2 ax-icn mul01i syl6req oveq1d ax-1cn addid2i mto
+    neii ax-i2m1 3eqtr3g neir ) ABABCZDBCDBBDEBDFPZBDGPZHBIJDIJUNUOKEQBDLMNOUIU
+    MBDRSAATSZDRSDBUMBUPDRUMUPABTSBABATUAAUBUCUDUEDUFUGUJUKUHUL $.
+
+  $( Product with negative is negative of product.  Theorem I.12 of [Apostol]
+     p. 18.  (Contributed by NM, 14-May-1999.)  (Proof shortened by Mario
+     Carneiro, 27-May-2016.) $)
+  mulneg1 $p |- ( ( A e. CC /\ B e. CC ) ->
+                 ( -u A x. B ) = -u ( A x. B ) ) $=
+    ( cc wcel wa cmin co cmul cneg wceq subdir mp3an1 simpr mul02d oveq1d eqtrd
+    cc0 0cn df-neg oveq1i 3eqtr4g ) ACDZBCDZEZQAFGZBHGZQABHGZFGZAIZBHGUGIUDUFQB
+    HGZUGFGZUHQCDUBUCUFUKJRQABKLUDUJQUGFUDBUBUCMNOPUIUEBHASTUGSUA $.
+
+  $( The product with a negative is the negative of the product.  (Contributed
+     by NM, 30-Jul-2004.) $)
+  mulneg2 $p |- ( ( A e. CC /\ B e. CC ) ->
+                 ( A x. -u B ) = -u ( A x. B ) ) $=
+    ( cc wcel wa cneg cmul co mulneg1 ancoms negcl mulcom sylan2 negeqd 3eqtr4d
+    wceq ) ACDZBCDZEZBFZAGHZBAGHZFZATGHZABGHZFRQUAUCPBAIJRQTCDUDUAPBKATLMSUEUBA
+    BLNO $.
+
+  $( Swap the negative sign in a product.  (Contributed by NM, 30-Jul-2004.) $)
+  mulneg12 $p |- ( ( A e. CC /\ B e. CC ) ->
+                  ( -u A x. B ) = ( A x. -u B ) ) $=
+    ( cc wcel wa cneg cmul co mulneg1 mulneg2 eqtr4d ) ACDBCDEAFBGHABGHFABFGHAB
+    IABJK $.
+
+  $( Product of two negatives.  Theorem I.12 of [Apostol] p. 18.  (Contributed
+     by NM, 30-Jul-2004.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  mul2neg $p |- ( ( A e. CC /\ B e. CC ) -> ( -u A x. -u B ) = ( A x. B ) ) $=
+    ( cc wcel wa cneg cmul co negcl mulneg12 sylan2 negneg adantl oveq2d eqtrd
+    wceq ) ACDZBCDZEZAFBFZGHZATFZGHZABGHRQTCDUAUCPBIATJKSUBBAGRUBBPQBLMNO $.
+
+  $( Convert a subtraction to addition using multiplication by a negative.
+     (Contributed by NM, 2-Feb-2007.) $)
+  submul2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( A - ( B x. C ) ) = ( A + ( B x. -u C ) ) ) $=
+    ( cc wcel cmul co cmin cneg caddc wceq wa adantl oveq2d mulcl negsub sylan2
+    mulneg2 eqtr2d 3impb ) ADEZBDEZCDEZABCFGZHGZABCIFGZJGZKUAUBUCLZLZUGAUDIZJGZ
+    UEUIUFUJAJUHUFUJKUABCRMNUHUAUDDEUKUEKBCOAUDPQST $.
+
+  $( Product with minus one is negative.  (Contributed by NM, 16-Nov-1999.) $)
+  mulm1 $p |- ( A e. CC -> ( -u 1 x. A ) = -u A ) $=
+    ( cc wcel c1 cneg cmul co wceq ax-1cn mulneg1 mpan mulid2 negeqd eqtrd ) AB
+    CZDEAFGZDAFGZEZAEDBCOPRHIDAJKOQAALMN $.
+
+  $( Product of two differences.  (Contributed by NM, 14-Jan-2006.) $)
+  mulsub $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+               ( ( A - B ) x. ( C - D ) ) =
+       ( ( ( A x. C ) + ( D x. B ) ) - ( ( A x. D ) + ( C x. B ) ) ) ) $=
+    ( cc wcel wa cneg caddc cmul cmin negsub oveqan12d wceq negcl mulneg2 mulcl
+    co ancoms syl2an muladd sylanr2 sylanl2 mul2neg oveq2d negdi eqtr4d ancom2s
+    ad2ant2l an42s oveq12d addcl an4s negsubd 3eqtrd eqtr3d ) AEFZBEFZGZCEFZDEF
+    ZGZGZABHZIRZCDHZIRZJRZABKRZCDKRZJRACJRZDBJRZIRZADJRZCBJRZIRZKRZUSVBVEVIVGVJ
+    JABLCDLMVCVHVKVFVDJRZIRZAVFJRZCVDJRZIRZIRZVMVPHZIRVQURUQVDEFZVBVHWCNZBOVAUQ
+    WEGUTVFEFWFDOAVDCVFUAUBUCVCVSVMWBWDIURVAVSVMNUQUTURVAGZVRVLVKIVAURVRVLNDBUD
+    SUEUIUQVAURUTWBWDNZUQVAGZUTURWHWIUTURGZGWBVNHZVOHZIRZWDWIWJVTWKWAWLIADPCBPM
+    WIVNEFZVOEFZWDWMNWJADQZCBQZVNVOUFTUGUHUJUKVCVMVPUQUTURVAVMEFZUQUTGVKEFVLEFZ
+    WRWGACQVAURWSDBQSVKVLULTUMUQVAURUTVPEFZWIWNWOWTURUTGWPUTURWOWQSVNVOULTUJUNU
+    OUP $.
+
+  $( Swap the order of subtraction in a multiplication.  (Contributed by Scott
+     Fenton, 24-Jun-2013.) $)
+  mulsub2 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+    ( ( A - B ) x. ( C - D ) ) = ( ( B - A ) x. ( D - C ) ) ) $=
+    ( cc wcel wa cmin co cneg cmul wceq subcl syl2an negsubdi2 oveqan12d eqtr3d
+    mul2neg ) AEFBEFGZCEFDEFGZGABHIZJZCDHIZJZKIZUAUCKIZBAHIZDCHIZKISUAEFUCEFUEU
+    FLTABMCDMUAUCRNSTUBUGUDUHKABOCDOPQ $.
+
+  ${
+    mulm1.1 $e |- A e. CC $.
+    $( Product with minus one is negative.  (Contributed by NM,
+       31-Jul-1999.) $)
+    mulm1i $p |- ( -u 1 x. A ) = -u A $=
+      ( cc wcel c1 cneg cmul co wceq mulm1 ax-mp ) ACDEFAGHAFIBAJK $.
+
+    mulneg.2 $e |- B e. CC $.
+    $( Product with negative is negative of product.  Theorem I.12 of [Apostol]
+       p. 18.  (Contributed by NM, 10-Feb-1995.)  (Revised by Mario Carneiro,
+       27-May-2016.) $)
+    mulneg1i $p |- ( -u A x. B ) = -u ( A x. B ) $=
+      ( cc wcel cneg cmul co wceq mulneg1 mp2an ) AEFBEFAGBHIABHIGJCDABKL $.
+
+    $( Product with negative is negative of product.  (Contributed by NM,
+       31-Jul-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    mulneg2i $p |- ( A x. -u B ) = -u ( A x. B ) $=
+      ( cc wcel cneg cmul co wceq mulneg2 mp2an ) AEFBEFABGHIABHIGJCDABKL $.
+
+    $( Product of two negatives.  Theorem I.12 of [Apostol] p. 18.
+       (Contributed by NM, 14-Feb-1995.)  (Revised by Mario Carneiro,
+       27-May-2016.) $)
+    mul2negi $p |- ( -u A x. -u B ) = ( A x. B ) $=
+      ( cc wcel cneg cmul co wceq mul2neg mp2an ) AEFBEFAGBGHIABHIJCDABKL $.
+
+    subdi.3 $e |- C e. CC $.
+    $( Distribution of multiplication over subtraction.  Theorem I.5 of
+       [Apostol] p. 18.  (Contributed by NM, 26-Nov-1994.) $)
+    subdii $p |- ( A x. ( B - C ) ) = ( ( A x. B ) - ( A x. C ) ) $=
+      ( cc wcel cmin co cmul wceq subdi mp3an ) AGHBGHCGHABCIJKJABKJACKJIJLDEFA
+      BCMN $.
+
+    $( Distribution of multiplication over subtraction.  Theorem I.5 of
+       [Apostol] p. 18.  (Contributed by NM, 8-May-1999.) $)
+    subdiri $p |- ( ( A - B ) x. C ) = ( ( A x. C ) - ( B x. C ) ) $=
+      ( cc wcel cmin co cmul wceq subdir mp3an ) AGHBGHCGHABIJCKJACKJBCKJIJLDEF
+      ABCMN $.
+
+    muladdi.4 $e |- D e. CC $.
+    $( Product of two sums.  (Contributed by NM, 17-May-1999.) $)
+    muladdi $p |- ( ( A + B ) x. ( C + D ) ) =
+        ( ( ( A x. C ) + ( D x. B ) ) + ( ( A x. D ) + ( C x. B ) ) ) $=
+      ( cc wcel caddc co cmul wceq muladd mp4an ) AIJBIJCIJDIJABKLCDKLMLACMLDBM
+      LKLADMLCBMLKLKLNEFGHABCDOP $.
+  $}
+
+  ${
+    mulm1d.1 $e |- ( ph -> A e. CC ) $.
+    $( Product with minus one is negative.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulm1d $p |- ( ph -> ( -u 1 x. A ) = -u A ) $=
+      ( cc wcel c1 cneg cmul co wceq mulm1 syl ) ABDEFGBHIBGJCBKL $.
+
+    mulnegd.2 $e |- ( ph -> B e. CC ) $.
+    $( Product with negative is negative of product.  Theorem I.12 of [Apostol]
+       p. 18.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    mulneg1d $p |- ( ph -> ( -u A x. B ) = -u ( A x. B ) ) $=
+      ( cc wcel cneg cmul co wceq mulneg1 syl2anc ) ABFGCFGBHCIJBCIJHKDEBCLM $.
+
+    $( Product with negative is negative of product.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    mulneg2d $p |- ( ph -> ( A x. -u B ) = -u ( A x. B ) ) $=
+      ( cc wcel cneg cmul co wceq mulneg2 syl2anc ) ABFGCFGBCHIJBCIJHKDEBCLM $.
+
+    $( Product of two negatives.  Theorem I.12 of [Apostol] p. 18.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    mul2negd $p |- ( ph -> ( -u A x. -u B ) = ( A x. B ) ) $=
+      ( cc wcel cneg cmul co wceq mul2neg syl2anc ) ABFGCFGBHCHIJBCIJKDEBCLM $.
+
+    subdid.3 $e |- ( ph -> C e. CC ) $.
+    $( Distribution of multiplication over subtraction.  Theorem I.5 of
+       [Apostol] p. 18.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    subdid $p |- ( ph -> ( A x. ( B - C ) ) = ( ( A x. B ) - ( A x. C ) ) ) $=
+      ( cc wcel cmin co cmul wceq subdi syl3anc ) ABHICHIDHIBCDJKLKBCLKBDLKJKME
+      FGBCDNO $.
+
+    $( Distribution of multiplication over subtraction.  Theorem I.5 of
+       [Apostol] p. 18.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    subdird $p |- ( ph -> ( ( A - B ) x. C ) = ( ( A x. C ) - ( B x. C ) ) ) $=
+      ( cc wcel cmin co cmul wceq subdir syl3anc ) ABHICHIDHIBCJKDLKBDLKCDLKJKM
+      EFGBCDNO $.
+
+    muladdd.4 $e |- ( ph -> D e. CC ) $.
+    $( Product of two sums.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    muladdd $p |- ( ph -> ( ( A + B ) x. ( C + D ) ) =
+        ( ( ( A x. C ) + ( D x. B ) ) + ( ( A x. D ) + ( C x. B ) ) ) ) $=
+      ( cc wcel caddc co cmul wceq muladd syl22anc ) ABJKCJKDJKEJKBCLMDELMNMBDN
+      MECNMLMBENMDCNMLMLMOFGHIBCDEPQ $.
+
+    $( Product of two differences.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulsubd $p |- ( ph -> ( ( A - B ) x. ( C - D ) ) =
+         ( ( ( A x. C ) + ( D x. B ) ) - ( ( A x. D ) + ( C x. B ) ) ) ) $=
+      ( cc wcel cmin co cmul caddc wceq mulsub syl22anc ) ABJKCJKDJKEJKBCLMDELM
+      NMBDNMECNMOMBENMDCNMOMLMPFGHIBCDEQR $.
+  $}
+
+  ${
+    mulsubfacd.1 $e |- ( ph -> A e. CC ) $.
+    mulsubfacd.2 $e |- ( ph -> B e. CC ) $.
+    $( Multiplication followed by the subtraction of a factor.  (Contributed by
+       Alexander van der Vekens, 28-Aug-2018.) $)
+    mulsubfacd $p |- ( ph -> ( ( A x. B ) - B ) = ( ( A - 1 ) x. B ) ) $=
+      ( c1 cmin co cmul cc wcel ax-1cn a1i subdird mulid2d oveq2d eqtr2d ) ABFG
+      HCIHBCIHZFCIHZGHRCGHABFCDFJKALMENASCRGACEOPQ $.
   $}
 
 $(
@@ -66232,6 +69082,37 @@ htmldef "x." as
     " <IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT=' x.' TITLE='x.'> ";
   althtmldef "x." as ' &middot; '; /* unicode: &#xb7; */
   latexdef "x." as "\cdot";
+htmldef "<_" as
+    " <IMG SRC='le.gif' WIDTH=11 HEIGHT=19 ALT=' &lt;_' TITLE='&lt;_'> ";
+  althtmldef "<_" as ' &le; ';
+  latexdef "<_" as "\le";
+htmldef "+oo" as " <IMG SRC='_pinf.gif' WIDTH=29 HEIGHT=19 ALT='+oo' " +
+    "TITLE='+oo'>";
+  althtmldef "+oo" as '+&infin;';
+  latexdef "+oo" as "+\infty";
+htmldef "-oo" as " <IMG SRC='_minf.gif' WIDTH=24 HEIGHT=19 ALT='-oo' " +
+    "TITLE='-oo'>";
+  althtmldef "-oo" as '-&infin;';
+  latexdef "-oo" as "-\infty";
+htmldef "RR*" as "<IMG SRC='_bbrast.gif' WIDTH=18 HEIGHT=19 ALT=' RR*' " +
+    "TITLE='RR*'>";
+  althtmldef "RR*" as '&#8477;<SUP>*</SUP>';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "RR*" as "\mathbb{R}^*";
+htmldef "<" as
+    " <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT=' &lt;' TITLE='&lt;'> ";
+  althtmldef "<" as ' &lt; ';
+  latexdef "<" as "<";
+htmldef "-" as
+    " <IMG SRC='minus.gif' WIDTH=11 HEIGHT=19 ALT=' -' TITLE='-'> ";
+  althtmldef "-" as ' &minus; ';
+  latexdef "-" as "-";
+htmldef "-u" as
+    "<IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -u' TITLE='-u'>";
+    /* use standard minus sign */
+  althtmldef "-u" as '-';
+  latexdef "-u" as "\textrm{-}"; /* short minus */
+    /*latexdef "-u" as "-_u";*/
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";

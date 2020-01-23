@@ -9357,7 +9357,6 @@
 "ltmpi" is used by "ltsonq".
 "ltneOLD" is used by "coprm".
 "ltneOLD" is used by "ltlen".
-"ltneOLD" is used by "ltnei".
 "ltneOLD" is used by "phibndlem".
 "ltneOLD" is used by "sineq0".
 "ltneOLD" is used by "stadd3i".
@@ -13792,6 +13791,7 @@ New usage of "5oalem5" is discouraged (1 uses).
 New usage of "5oalem6" is discouraged (1 uses).
 New usage of "5oalem7" is discouraged (1 uses).
 New usage of "a1iiOLD" is discouraged (0 uses).
+New usage of "a2andOLD" is discouraged (0 uses).
 New usage of "abbi1dvOLD" is discouraged (0 uses).
 New usage of "abbiOLD" is discouraged (0 uses).
 New usage of "abeq1iOLD" is discouraged (0 uses).
@@ -16752,7 +16752,7 @@ New usage of "ltexprlem6" is discouraged (1 uses).
 New usage of "ltexprlem7" is discouraged (1 uses).
 New usage of "ltmnq" is discouraged (11 uses).
 New usage of "ltmpi" is discouraged (5 uses).
-New usage of "ltneOLD" is discouraged (7 uses).
+New usage of "ltneOLD" is discouraged (6 uses).
 New usage of "ltpiord" is discouraged (7 uses).
 New usage of "ltprord" is discouraged (6 uses).
 New usage of "ltpsrpr" is discouraged (1 uses).
@@ -17031,6 +17031,7 @@ New usage of "nabbiOLD" is discouraged (0 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
 New usage of "natded" is discouraged (0 uses).
 New usage of "nbgraopALT" is discouraged (0 uses).
+New usage of "nbiorOLD" is discouraged (0 uses).
 New usage of "necon1abidOLD" is discouraged (0 uses).
 New usage of "necon1abiiOLD" is discouraged (0 uses).
 New usage of "necon1adOLD" is discouraged (0 uses).
@@ -17413,6 +17414,7 @@ New usage of "ordelordALT" is discouraged (0 uses).
 New usage of "ordelordALTVD" is discouraged (0 uses).
 New usage of "ordpinq" is discouraged (6 uses).
 New usage of "ordpipq" is discouraged (5 uses).
+New usage of "ornldOLD" is discouraged (0 uses).
 New usage of "orthcom" is discouraged (6 uses).
 New usage of "orthin" is discouraged (2 uses).
 New usage of "osum" is discouraged (0 uses).
@@ -17760,6 +17762,8 @@ New usage of "rb-ax3" is discouraged (8 uses).
 New usage of "rb-ax4" is discouraged (6 uses).
 New usage of "rb-bijust" is discouraged (1 uses).
 New usage of "rb-imdf" is discouraged (4 uses).
+New usage of "rbaibOLD" is discouraged (0 uses).
+New usage of "rbaibrOLD" is discouraged (0 uses).
 New usage of "rblem1" is discouraged (4 uses).
 New usage of "rblem2" is discouraged (3 uses).
 New usage of "rblem3" is discouraged (1 uses).
@@ -18495,6 +18499,7 @@ Proof modification of "3ornot23" is discouraged (28 steps).
 Proof modification of "3ornot23VD" is discouraged (74 steps).
 Proof modification of "a1ii" is discouraged (9 steps).
 Proof modification of "a1iiOLD" is discouraged (8 steps).
+Proof modification of "a2andOLD" is discouraged (83 steps).
 Proof modification of "abbi1dvOLD" is discouraged (24 steps).
 Proof modification of "abbiOLD" is discouraged (88 steps).
 Proof modification of "abeq1iOLD" is discouraged (19 steps).
@@ -19410,6 +19415,7 @@ Proof modification of "mvridlemOLD" is discouraged (129 steps).
 Proof modification of "nabbiOLD" is discouraged (63 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nbgraopALT" is discouraged (271 steps).
+Proof modification of "nbiorOLD" is discouraged (23 steps).
 Proof modification of "necon1abidOLD" is discouraged (18 steps).
 Proof modification of "necon1abiiOLD" is discouraged (16 steps).
 Proof modification of "necon1adOLD" is discouraged (18 steps).
@@ -19508,6 +19514,7 @@ Proof modification of "orbi1r" is discouraged (9 steps).
 Proof modification of "orbi1rVD" is discouraged (101 steps).
 Proof modification of "ordelordALT" is discouraged (128 steps).
 Proof modification of "ordelordALTVD" is discouraged (202 steps).
+Proof modification of "ornldOLD" is discouraged (25 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
 Proof modification of "pm110.643" is discouraged (72 steps).
 Proof modification of "pm110.643ALT" is discouraged (35 steps).
@@ -19567,6 +19574,8 @@ Proof modification of "rb-ax3" is discouraged (12 steps).
 Proof modification of "rb-ax4" is discouraged (14 steps).
 Proof modification of "rb-bijust" is discouraged (55 steps).
 Proof modification of "rb-imdf" is discouraged (27 steps).
+Proof modification of "rbaibOLD" is discouraged (16 steps).
+Proof modification of "rbaibrOLD" is discouraged (16 steps).
 Proof modification of "rblem1" is discouraged (57 steps).
 Proof modification of "rblem2" is discouraged (31 steps).
 Proof modification of "rblem3" is discouraged (29 steps).
