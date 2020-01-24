@@ -845,7 +845,7 @@ Non-empty almost always needs to be changed to inhabited (those terms are define
 
 <LI>If the original proof relied on propositional/predicate logic which isn't a theorem of intuitionistic logic, maybe there is a way of expressing the logic more directly. This is perhaps the hardest one to put in cookbook form: you might need to try some things and see if anything works.</LI>
 
-<LI>If the original proof relied on df-ex so that it could prove a theorem for ` A. ` and then get ` E. ` for free (or vice versa), instead go look at the original proof and try to come up the analogues to each step for the other quantifier (for example, ~ cbvrexcsf , ~ sbcrext , ~ rexxpf ).</LI>
+<LI>If the original proof relied on df-ex so that it could prove a theorem for ` A. ` and then get ` E. ` for free (or vice versa), instead go look at the original proof and try to come up the analogues to each step for the other quantifier (for example, ~ cbvrexcsf , ~ sbcrext , ~ rexxpf ). Similarly, if you have a theorem for ` <_ ` and are trying to prove the corresponding theorem for ` < ` you'll probably need to use analogous steps rather than negation (examples: ~ leaddsub , ~ ltsub1 , ~ ltsub2 ).</LI>
 
 <LI>If you are dealing with a definition, try to find the best constructive definition from the literature ([HoTT] book, Stanford Encyclopedia of Philosophy, [Bauer], etc). Once you pick a definition, that'll affect the proofs which rely on that definition.</LI>
 
@@ -2672,20 +2672,6 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-<TD>lelttr , lelttri , lelttrd</TD>
-<TD><I>none yet</I></TD>
-<TD>This should be provable, as it is part of Definition 11.2.7(vi) of
-[HoTT], p. (varies). But the set.mm proof does not work as-is.</TD>
-</TR>
-
-<TR>
-<TD>ltletr , ltletri , ltletrd</TD>
-<TD><I>none yet</I></TD>
-<TD>This should be provable, as it is part of Definition 11.2.7(vi) of
-[HoTT], p. (varies). But the set.mm proof does not work as-is.</TD>
-</TR>
-
-<TR>
 <TD>ltneOLD</TD>
 <TD>~ ltne </TD>
 </TR>
@@ -2699,14 +2685,6 @@ favor of theorems in deduction form.</TD>
 <TR>
 <TD>ltlen , ltleni , ltlend</TD>
 <TD><I>none</I></TD>
-</TR>
-
-<TR>
-<TD>ltadd2 , ltadd2i , ltadd2d , ltadd2dd</TD>
-<TD><I>none yet</I></TD>
-<TD>This will be provable based on additive inverse once we have
-addcom and a few other prerequisites. We'll probably end up moving
-it down to the "Ordering on reals (cont.)" section.
 </TR>
 
 <TR>
@@ -2731,10 +2709,11 @@ only if they are apart" which relies on excluded middle</TD>
 
 <TR>
 <TD>lttri3i</TD>
-<TD><I>none</I></TD>
-<TD>The ` ( -. A < B /\ -. B < A ) -> A = B ` direction (which can
-also be read as "if two real numbers are not apart, then they are
-equal) is proved via trichotomy in set.mm</TD>
+<TD><I>none yet</I></TD>
+<TD>The ` ( -. A < B /\ -. B < A ) -> A = B ` direction can
+be read as "if two real numbers are not apart, then they are
+equal" which is to say "apartness is tight". Therefore this
+should be provable.</TD>
 </TR>
 
 <TR>
@@ -2770,6 +2749,52 @@ equal) is proved via trichotomy in set.mm</TD>
 <TR>
 <TD>negex</TD>
 <TD>~ negcl </TD>
+</TR>
+
+<TR>
+<TD>add20 , lesub0 , add20i , lesub0i</<TD>
+<TD><I>none yet</I></TD>
+<TD>These would appear to only need letri3d , which is tightness of
+real number apartness, and thus should be provable.</TD>
+</TR>
+
+<TR>
+<TD>mulge0 , mulge0OLD , mulge0i , mulge0d</TD>
+<TD>~ mulgt0 </TD>
+<TD>This would require a different proof than the set.mm one.</TD>
+</TR>
+
+<TR>
+<TD>msqgt0 , msqgt0i , msqgt0d</TD>
+<TD>~ mulgt0 , ~ mullt0 </TD>
+<TD>The combination of ~ mulgt0 and ~ mullt0 amount to
+"` 0 < ( A x. A ) ` if ` A ` is apart from zero"</TD>
+</TR>
+
+<TR>
+<TD>msqge0 , msqge0i , msqge0d</TD>
+<TD>~ mulgt0 , ~ mullt0 </TD>
+<TD>The set.mm proof of msqge0 relies on case elimination.</TD>
+</TR>
+
+<TR>
+<TD>relin01</TD>
+<TD><I>none</I></TD>
+<TD>Relies on real number trichotomy.</TD>
+</TR>
+
+<TR>
+<TD>ltordlem , ltord1 , leord1 , eqord1 , ltord2 , leord2 , eqord2</TD>
+<TD><I>none</I></TD>
+<TD>These depend on real number trichotomy and are not used until
+later in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>wloglei , wlogle</TD>
+<TD><I>none</I></TD>
+<TD>These depend on real number trichotomy and are not used until
+later in set.mm.</TD>
 </TR>
 
 </TABLE>
