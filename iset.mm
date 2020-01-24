@@ -9887,37 +9887,27 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-       Auxiliary theorems for Alan Sare's virtual deduction tool, part 1
+       Logical implication (continued)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
   ${
-    ee22.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    ee22.2 $e |- ( ph -> ( ps -> th ) ) $.
-    ee22.3 $e |- ( ch -> ( th -> ta ) ) $.
-    $( Special theorem needed for Alan Sare's virtual deduction translation
-       tool.  (Contributed by Alan Sare, 2-May-2011.) $)
-    ee22 $p |- ( ph -> ( ps -> ta ) ) $=
-      ( syl6c ) ABCDEFGHI $.
-  $}
-
-  ${
-    ee12an.1 $e |- ( ph -> ps ) $.
-    ee12an.2 $e |- ( ph -> ( ch -> th ) ) $.
-    ee12an.3 $e |- ( ( ps /\ th ) -> ta ) $.
-    $( Special theorem needed for Alan Sare's virtual deduction translation
-       tool.  (Contributed by Alan Sare, 28-Oct-2011.) $)
-    ee12an $p |- ( ph -> ( ch -> ta ) ) $=
+    syl6an.1 $e |- ( ph -> ps ) $.
+    syl6an.2 $e |- ( ph -> ( ch -> th ) ) $.
+    syl6an.3 $e |- ( ( ps /\ th ) -> ta ) $.
+    $( A syllogism deduction combined with conjoining antecedents.
+       (Contributed by Alan Sare, 28-Oct-2011.) $)
+    syl6an $p |- ( ph -> ( ch -> ta ) ) $=
       ( wa jctild syl6 ) ACBDIEACDBGFJHK $.
   $}
 
   ${
-    ee23.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    ee23.2 $e |- ( ph -> ( ps -> ( th -> ta ) ) ) $.
-    ee23.3 $e |- ( ch -> ( ta -> et ) ) $.
-    $( Special theorem needed for Alan Sare's virtual deduction translation
-       tool.  (Contributed by Alan Sare, 17-Jul-2011.) $)
-    ee23 $p |- ( ph -> ( ps -> ( th -> et ) ) ) $=
+    syl10.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    syl10.2 $e |- ( ph -> ( ps -> ( th -> ta ) ) ) $.
+    syl10.3 $e |- ( ch -> ( ta -> et ) ) $.
+    $( A nested syllogism inference.  (Contributed by Alan Sare,
+       17-Jul-2011.) $)
+    syl10 $p |- ( ph -> ( ps -> ( th -> et ) ) ) $=
       ( wi syl6 syldd ) ABDEFHABCEFJGIKL $.
   $}
 
@@ -9983,37 +9973,24 @@ $)
   $}
 
   ${
-
-    ee21.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    ee21.2 $e |- ( ph -> th ) $.
-    ee21.3 $e |- ( ch -> ( th -> ta ) ) $.
-    $( Special theorem needed for Alan Sare's virtual deduction translation
-       tool.  (Contributed by Alan Sare, 18-Mar-2012.) $)
-    ee21 $p |- ( ph -> ( ps -> ta ) ) $=
-      ( a1d ee22 ) ABCDEFADBGIHJ $.
+    syl6ci.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    syl6ci.2 $e |- ( ph -> th ) $.
+    syl6ci.3 $e |- ( ch -> ( th -> ta ) ) $.
+    $( A syllogism inference combined with contraction.  (Contributed by Alan
+       Sare, 18-Mar-2012.) $)
+    syl6ci $p |- ( ph -> ( ps -> ta ) ) $=
+      ( a1d syl6c ) ABCDEFADBGIHJ $.
   $}
 
   ${
-    ee10.1 $e |- ( ph -> ps ) $.
-    ee10.2 $e |- ch $.
-    ee10.3 $e |- ( ps -> ( ch -> th ) ) $.
-    $( Special theorem needed for Alan Sare's virtual deduction translation
-       tool.  (Contributed by NM, 25-Jul-2011.) $)
-    ee10 $p |- ( ph -> th ) $=
+    mpisyl.1 $e |- ( ph -> ps ) $.
+    mpisyl.2 $e |- ch $.
+    mpisyl.3 $e |- ( ps -> ( ch -> th ) ) $.
+    $( A syllogism combined with a modus ponens inference.  (Contributed by
+       Alan Sare, 25-Jul-2011.) $)
+    mpisyl $p |- ( ph -> th ) $=
       ( mpi syl ) ABDEBCDFGHI $.
   $}
-
-  ${
-    ee02.1 $e |- ph $.
-    ee02.2 $e |- ( ps -> ( ch -> th ) ) $.
-    ee02.3 $e |- ( ph -> ( th -> ta ) ) $.
-    $( Special theorem needed for Alan Sare's virtual deduction translation
-       tool.  (Contributed by NM, 22-Jul-2012.) $)
-    ee02 $p |- ( ps -> ( ch -> ta ) ) $=
-      ( a1i sylsyld ) BACDEABFIGHJ $.
-  $}
-
-$( End of auxiliary theorems for Alan Sare's virtual deduction tool, part 1 $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -21972,9 +21949,9 @@ $)
        (Contributed by NM, 2-Mar-1995.)  (Revised by Mario Carneiro,
        10-Oct-2016.) $)
     ceqsex $p |- ( E. x ( x = A /\ ph ) <-> ps ) $=
-      ( cv wceq wa wex biimpa exlimi wi wal biimprcd alrimi isseti exintr ee10
-      impbii ) CHDIZAJZCKZBUCBCEUBABGLMBUBANZCOUBCKUDBUECEUBABGPQCDFRUBACSTUA
-      $.
+      ( cv wceq wa wex biimpa exlimi wal biimprcd alrimi isseti exintr mpisyl
+      wi impbii ) CHDIZAJZCKZBUCBCEUBABGLMBUBATZCNUBCKUDBUECEUBABGOPCDFQUBACRSU
+      A $.
   $}
 
   ${
@@ -36428,9 +36405,9 @@ $)
     reusv1 $p |- ( E. y e. B ph -> ( E! x e. A A. y e. B ( ph -> x = C )
                    <-> E. x e. A A. y e. B ( ph -> x = C ) ) ) $=
       ( wrex cv wceq wi wral wmo wrmo wreu wb nfra1 nfmo wcel wa wal impd com12
-      rsp alrimiv moeq moim ee10 ex rexlimi mormo reu5 rbaib 3syl ) ACEGABHFIZJ
-      ZCEKZBLZUPBDMZUPBDNZUPBDGZOAUQCEUPCBUOCEPQCHERZAUQVAASZUPUNJZBTUNBLUQVBVC
-      BUPVBUNUPVAAUNUOCEUCUAUBUDBFUEUPUNBUFUGUHUIUPBDUJUSUTURUPBDUKULUM $.
+      rsp alrimiv moeq moim mpisyl ex rexlimi mormo reu5 rbaib 3syl ) ACEGABHFI
+      ZJZCEKZBLZUPBDMZUPBDNZUPBDGZOAUQCEUPCBUOCEPQCHERZAUQVAASZUPUNJZBTUNBLUQVB
+      VCBUPVBUNUPVAAUNUOCEUCUAUBUDBFUEUPUNBUFUGUHUIUPBDUJUSUTURUPBDUKULUM $.
   $}
 
   ${
@@ -48317,12 +48294,12 @@ $)
        23-Dec-2016.) $)
     fliftcnv $p |- ( ph -> `' F = ran ( x e. X |-> <. B , A >. ) ) $=
       ( vy vz wrel cop wa wceq cv wbr wcel ccnv cmpt crn cxp wss fliftrel relxp
-      eqid relss ee10 relcnv jctil wrex fliftel vex brcnv rexbii 3bitr4g bitr4d
-      ancom df-br 3bitr3g eqrelrdv2 mpancom ) GUAZNZBHDCOUBUCZNZPAVEVGQAVHVFAVG
-      FEUDZUEVINVHABDCFEVGHVGUHZKJUFFEUGVGVIUIUJGUKULALMVEVGALRZMRZVESZVKVLVGSZ
-      VKVLOZVETVOVGTAVMVKDQZVLCQZPZBHUMZVNAVLVKGSVQVPPZBHUMVMVSABCDVLVKEFGHIJKU
-      NVKVLGLUOMUOUPVRVTBHVPVQUTUQURABDCVKVLFEVGHVJKJUNUSVKVLVEVAVKVLVGVAVBVCVD
-      $.
+      eqid relss mpisyl relcnv jctil wrex fliftel vex brcnv ancom rexbii bitr4d
+      3bitr4g df-br 3bitr3g eqrelrdv2 mpancom ) GUAZNZBHDCOUBUCZNZPAVEVGQAVHVFA
+      VGFEUDZUEVINVHABDCFEVGHVGUHZKJUFFEUGVGVIUIUJGUKULALMVEVGALRZMRZVESZVKVLVG
+      SZVKVLOZVETVOVGTAVMVKDQZVLCQZPZBHUMZVNAVLVKGSVQVPPZBHUMVMVSABCDVLVKEFGHIJ
+      KUNVKVLGLUOMUOUPVRVTBHVPVQUQURUTABDCVKVLFEVGHVJKJUNUSVKVLVEVAVKVLVGVAVBVC
+      VD $.
 
     ${
       fliftfun.4 $e |- ( x = y -> A = C ) $.
@@ -48337,20 +48314,20 @@ $)
         funbrfv eqeq2d anbi12d rspcev syl12anc wb fliftel mpbird eqeq12d syl5ib
         anassrs ralrimiva exp31 ralrimd wal cbvrexv syl6bb biimpd reeanv r19.29
         ad2antrr eqtr2 imim1i imp simprlr simprrr 3eqtr4d rexlimivw syl syl5bir
-        syl9 alrimdv wrel cxp wss fliftrel relxp relss ee10 dffun2 baib sylibrd
-        ex impbid ) AJUDZDFQZEGQZUEZCKUFZBKUFZAXIXMBKABUGBJBJBKDEUHZUIZUMLBXPBK
-        XOUJUKULUNAXIBRZKUOZXMAXISZXRSXLCKXSXRCRZKUOZXLXJDJUPZFJUPZQXSXRYASZSZX
-        KDFJUQYEYBEYCGYEXIDEJURZYBEQAXIYDUSZAXRYFXIYAABDEHIJKLMNUTVADEJVEVBYEXI
-        FGJURZYCGQYGYEYHFDQZGEQZSZBKTZYEYAFFQZGGQZYLXSXRYAVCYEFVDYEGVDYKYMYNSBX
-        TKXQXTQZYIYMYJYNYODFFOVFYOEGGPVFVGVHVIAYHYLVJXIYDABDEFGHIJKLMNVKWEVLFGJ
-        VEVBVMVNVOVPVQVRAXNUARZUBRZJURZYPUCRZJURZSZYQYSQZUEZUCVSZUBVSZUAVSZXIAX
-        NUUEUAAXNUUDUBAXNUUCUCAUUAYPDQZYQEQZSZBKTZYPFQZYSGQZSZCKTZSZXNUUBAUUAUU
-        OAYRUUJYTUUNABDEYPYQHIJKLMNVKAYTUUGYSEQZSZBKTUUNABDEYPYSHIJKLMNVKUUQUUM
-        BCKYOUUGUUKUUPUULYODFYPOVFYOEGYSPVFVGVTWAVGWBUUOUUIUUMSZCKTZBKTZXNUUBUU
-        IUUMBCKKWCXNUUTUUBXNUUTSXMUUSSZBKTUUBXMUUSBKWDUVAUUBBKUVAXLUURSZCKTUUBX
-        LUURCKWDUVBUUBCKUVBEGYQYSXLUURXKUURXJXKUUGUUKXJUUHUULYPDFWFVAWGWHXLUUGU
-        UHUUMWIXLUUIUUKUULWJWKWLWMWLWMXGWNWOWPWPWPAJWQZXIUUFVJAJHIWRZWSUVDWQUVC
-        ABDEHIJKLMNWTHIXAJUVDXBXCXIUVCUUFUAUBUCJXDXEWMXFXH $.
+        ex syl9 alrimdv wrel cxp wss fliftrel relxp relss mpisyl dffun2 sylibrd
+        baib impbid ) AJUDZDFQZEGQZUEZCKUFZBKUFZAXIXMBKABUGBJBJBKDEUHZUIZUMLBXP
+        BKXOUJUKULUNAXIBRZKUOZXMAXISZXRSXLCKXSXRCRZKUOZXLXJDJUPZFJUPZQXSXRYASZS
+        ZXKDFJUQYEYBEYCGYEXIDEJURZYBEQAXIYDUSZAXRYFXIYAABDEHIJKLMNUTVADEJVEVBYE
+        XIFGJURZYCGQYGYEYHFDQZGEQZSZBKTZYEYAFFQZGGQZYLXSXRYAVCYEFVDYEGVDYKYMYNS
+        BXTKXQXTQZYIYMYJYNYODFFOVFYOEGGPVFVGVHVIAYHYLVJXIYDABDEFGHIJKLMNVKWEVLF
+        GJVEVBVMVNVOVPVQVRAXNUARZUBRZJURZYPUCRZJURZSZYQYSQZUEZUCVSZUBVSZUAVSZXI
+        AXNUUEUAAXNUUDUBAXNUUCUCAUUAYPDQZYQEQZSZBKTZYPFQZYSGQZSZCKTZSZXNUUBAUUA
+        UUOAYRUUJYTUUNABDEYPYQHIJKLMNVKAYTUUGYSEQZSZBKTUUNABDEYPYSHIJKLMNVKUUQU
+        UMBCKYOUUGUUKUUPUULYODFYPOVFYOEGYSPVFVGVTWAVGWBUUOUUIUUMSZCKTZBKTZXNUUB
+        UUIUUMBCKKWCXNUUTUUBXNUUTSXMUUSSZBKTUUBXMUUSBKWDUVAUUBBKUVAXLUURSZCKTUU
+        BXLUURCKWDUVBUUBCKUVBEGYQYSXLUURXKUURXJXKUUGUUKXJUUHUULYPDFWFVAWGWHXLUU
+        GUUHUUMWIXLUUIUUKUULWJWKWLWMWLWMWOWNWPWQWQWQAJWRZXIUUFVJAJHIWSZWTUVDWRU
+        VCABDEHIJKLMNXAHIXBJUVDXCXDXIUVCUUFUAUBUCJXEXGWMXFXH $.
 
       fliftfund.6 $e |- ( ( ph /\ ( x e. X /\ y e. X /\ A = C ) ) -> B = D ) $.
       $( The function ` F ` is the unique function defined by ` F `` A = B ` ,
@@ -54629,21 +54606,21 @@ $)
          shortened by Mario Carneiro, 24-May-2019.) $)
       tfrlemibfn $p |- ( ph -> U. B Fn x ) $=
         ( wss cvv wcel syl cuni wfun cdm cv wceq wfn crecs tfrlemibacc recsfval
-        unissd syl6sseqr tfrlem7 funss ee10 cxp cpw cfv cop csn cun w3a wex cab
-        wrex wa simpr3 csuc wf wal ad2antrr simplr onelon syl2anc simpr1 simpr2
-        con0 tfrlemisucfn dffn2 sylib fssxp word eloni ordsucss xpss1 sstrd vex
-        sylc tfrlem3-2d simprd opexg sylancr snexg unexg mpbird eqeltrd exlimdv
-        wb elpwg ex rexlimdva abssdv syl5eqss sspwuni dmss dmxpss tfrlemibxssdm
-        syl6ss eqssd df-fn sylanbrc ) AGUAZUBZXKUCZBUDZUEXKXNUFAXKKUGZQXOUBXLAX
-        KFUAXOAGFABCDEFGHIJKLMNOPUHUJBCFHKLUIUKBCFHKLULXKXOUMUNAXMXNAXMXNRUOZUC
-        ZXNAXKXPQZXMXQQAGXPUPZQXRAGIUDZDUDZUFZXTFSZJUDZXTYAXTKUQZURZUSZUTZUEZVA
-        ZIVBZDXNVDZJVCXSNAYLJXSAYKYDXSSZDXNAYAXNSZVEZYJYMIYOYJYMYOYJVEZYDYHXSYO
-        YBYCYIVFYPYHXSSZYHXPQZYPYHYAVGZRUOZXPYPYSRYHVHZYHYTQYPYHYSUFUUAYPBCDFHI
-        KLAKUBZXNKUQRSVEBVIYNYJMVJYPXNVPSZYNYAVPSAUUCYNYJOVJZAYNYJVKZXNYAVLVMYO
-        YBYCYIVNYOYBYCYIVOVQYSYHVRVSYSRYHVTTYPYSXNQZYTXPQYPXNWAZYNUUFYPUUCUUGUU
-        DXNWBTUUEYAXNWCWGYSXNRWDTWEAYQYRWQZYNYJAYHRSZUUHAXTRSYGRSZUUIIWFAYFRSZU
-        UJAYARSYERSZUUKDWFAUUBUULABIKMWHWIYAYERRWJWKYFRWLTXTYGRRWMWKYHXPRWRTVJW
-        NWOWSWPWTXAXBGXPXCVSXKXPXDTXNRXEXGABCDEFGHIJKLMNOPXFXHXKXNXIXJ $.
+        unissd syl6sseqr tfrlem7 funss cxp cpw cfv cop csn cun w3a wex wrex cab
+        mpisyl wa simpr3 csuc wf wal ad2antrr con0 simplr onelon syl2anc simpr1
+        simpr2 tfrlemisucfn dffn2 sylib fssxp word eloni ordsucss sylc xpss1 wb
+        sstrd vex tfrlem3-2d simprd opexg sylancr snexg unexg mpbird eqeltrd ex
+        elpwg exlimdv rexlimdva abssdv sspwuni dmss dmxpss syl6ss tfrlemibxssdm
+        syl5eqss eqssd df-fn sylanbrc ) AGUAZUBZXKUCZBUDZUEXKXNUFAXKKUGZQXOUBXL
+        AXKFUAXOAGFABCDEFGHIJKLMNOPUHUJBCFHKLUIUKBCFHKLULXKXOUMVDAXMXNAXMXNRUNZ
+        UCZXNAXKXPQZXMXQQAGXPUOZQXRAGIUDZDUDZUFZXTFSZJUDZXTYAXTKUPZUQZURZUSZUEZ
+        UTZIVAZDXNVBZJVCXSNAYLJXSAYKYDXSSZDXNAYAXNSZVEZYJYMIYOYJYMYOYJVEZYDYHXS
+        YOYBYCYIVFYPYHXSSZYHXPQZYPYHYAVGZRUNZXPYPYSRYHVHZYHYTQYPYHYSUFUUAYPBCDF
+        HIKLAKUBZXNKUPRSVEBVIYNYJMVJYPXNVKSZYNYAVKSAUUCYNYJOVJZAYNYJVLZXNYAVMVN
+        YOYBYCYIVOYOYBYCYIVPVQYSYHVRVSYSRYHVTTYPYSXNQZYTXPQYPXNWAZYNUUFYPUUCUUG
+        UUDXNWBTUUEYAXNWCWDYSXNRWETWGAYQYRWFZYNYJAYHRSZUUHAXTRSYGRSZUUIIWHAYFRS
+        ZUUJAYARSYERSZUUKDWHAUUBUULABIKMWIWJYAYERRWKWLYFRWMTXTYGRRWNWLYHXPRWRTV
+        JWOWPWQWSWTXAXGGXPXBVSXKXPXCTXNRXDXEABCDEFGHIJKLMNOPXFXHXKXNXIXJ $.
 
       $( The set ` B ` exists.  Lemma for ~ tfrlemi1 .  (Contributed by Jim
          Kingdon, 17-Mar-2019.)  (Proof shortened by Mario Carneiro,
@@ -55177,7 +55154,7 @@ $)
     rdgon $p |- ( ( ph /\ B e. On ) -> ( rec ( F , A ) ` B ) e. On ) $=
       ( vz vw con0 wcel cfv cv wi wceq fveq2 eleq1d wral wa crdg imbi2d r19.21v
       cres ciun cun wb fvres adantl cbvralv sylib rspcv syl5com adantr ralimdva
-      sylbird cvv vex iunon mpan syl6 onun2 ee12an wfn rdgivallem 3expa sylibrd
+      sylbird cvv vex iunon mpan syl6 onun2 syl6an wfn rdgivallem 3expa sylibrd
       jca sylan expcom a2d syl5bi tfis3 impcom ) DKLADECUAZMZKLZAINZVOMZKLZOZAB
       NZVOMZKLZOZAVQOIBDVRWBPZVTWDAWFVSWCKVRWBVOQRUBVRDPZVTVQAWGVSVPKVRDVOQRUBW
       EBVRSAWDBVRSZOVRKLZWAAWDBVRUCWIAWHVTAWIWHVTOAWITZWHCBVRWBVOVRUDMZEMZUEZUF
@@ -61128,7 +61105,7 @@ $)
       cv elprnql simp22 cnq0 nqnq0 sseli nq0a0 syl df-0nq0 oveq1i nq0m0r oveq2d
       syl5reqr sylan9req syl2anc simp1r eqeltrrd 2onn nna0r ax-mp eqeq1i opeq1d
       biimpri eceq1d oveq1d eleq1d biimprcd 3ad2ant3 peano1 opeq1 oveq1 anbi12d
-      wi rspcev mpan ee12an reximdv mpd ) FEHUAIZCFIZUBZGUFIZDUCIZJGUGUDZUEZCGJ
+      wi rspcev mpan syl6an reximdv mpd ) FEHUAIZCFIZUBZGUFIZDUCIZJGUGUDZUEZCGJ
       HZKLZDMNZUHNZEIZUEZOAUQZPNZGQZARUIZCBUQZJHZUJLZDUKNZULNZFIZCXLOPNZXHPNZJH
       ZKLZDMNZUHNZEIZUBZBRUIZARUIXAWQXKXFWRWTXKWSAGUMUNUOXGXJYFARXGCSJHZUJLZDUK
       NZULNZFIZXJCSOPNZXHPNZJHZKLZDMNZUHNZEIZYFXGCYJFXGCUCIZWSCYJQWQXAYSXFCEFUR
@@ -62641,7 +62618,7 @@ $)
       ( vx vy vz vq vr vs cnp cltp cv wbr wi wcel cfv wa cnq wrex cltq sylan ex
       mpd wor wpo wo wral ltpopr w3a c2nd wb ltdfpr 3adant3 cop prnminu prnmaxl
       c1st prop anim12i an4s reeanv sylibr 3adantl3 ltsonq ltrelnq sotri adantl
-      prloc 3ad2antl3 adantr ad2antrr wex elprnqu ax-ia3 19.8a ee12an 3ad2antl1
+      prloc 3ad2antl3 adantr ad2antrr wex elprnqu ax-ia3 19.8a syl6an 3ad2antl1
       imp df-rex biimprd 3adant2 adantrr elprnql pm3.21 3adant1 adantrl orim12d
       3ad2antl2 ancoms adantlr rexlimdvva rexlimdvw sylbid df-iso mpbir2an
       rgen3 ) GHUAGHUBAIZBIZHJZWNCIZHJZWQWOHJZUCZKZCGUDBGUDAGUDUEXAABCGGGWNGLZW
@@ -65693,15 +65670,16 @@ $)
     ltxrlt $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B <-> A <RR B ) ) $=
       ( vx vy cr wcel clt wbr cltrr cv w3a cmnf csn cun cpnf cxp wo brun wceq
       wi wa copab df-ltxr breqi bitri eleq1 breq1 3anbi13d breq2 3anbi23d brabg
-      eqid simp3 syl6bi brxp simprbi elsni syl a1i renepnf neneqd pm2.24 adantl
-      ee21 simplbi renemnf adantr jaod syl5bi 3adant3 ibir sylibr 3expia impbid
-      wn wb orcd ) AEFZBEFZUAZABGHZABIHZWAABCJZEFZDJZEFZWCWEIHZKZCDUBZHZABELMZN
-      ZOMZPZWKEPZNZHZQZVTWBWAABWIWPNZHWRABGWSCDUCUDABWIWPRUEZVTWJWBWQVTWJVRVSWB
-      KZWBWHVRWFAWEIHZKXACDABEEWIWCASWDVRWGXBWFWCAEUFWCAWEIUGUHWEBSWFVSXBWBVRWE
-      BEUFWEBAIUIUJWIULUKZVRVSWBUMUNWQABWNHZABWOHZQVTWBABWNWORVTXDWBXEVSXDWBTVR
-      VSXDBOSZXFVOWBXDXFTVSXDBWMFZXFXDAWLFXGABWLWMUOUPBOUQURUSVSBOBUTVAXFWBVBVD
-      VCVRXEWBTVSVRXEALSZXHVOWBXEXHTVRXEAWKFZXHXEXIVSABWKEUOVEALUQURUSVRALAVFVA
-      XHWBVBVDVGVHVIVHVIVRVSWBWAXAWRWAXAWJWQXAWJVRVSWJXAVPWBXCVJVKVQWTVLVMVN $.
+      eqid simp3 syl6bi brxp simprbi elsni syl a1i renepnf neneqd pm2.24 syl6ci
+      adantl simplbi renemnf adantr jaod syl5bi 3adant3 ibir orcd sylibr 3expia
+      wn wb impbid ) AEFZBEFZUAZABGHZABIHZWAABCJZEFZDJZEFZWCWEIHZKZCDUBZHZABELM
+      ZNZOMZPZWKEPZNZHZQZVTWBWAABWIWPNZHWRABGWSCDUCUDABWIWPRUEZVTWJWBWQVTWJVRVS
+      WBKZWBWHVRWFAWEIHZKXACDABEEWIWCASWDVRWGXBWFWCAEUFWCAWEIUGUHWEBSWFVSXBWBVR
+      WEBEUFWEBAIUIUJWIULUKZVRVSWBUMUNWQABWNHZABWOHZQVTWBABWNWORVTXDWBXEVSXDWBT
+      VRVSXDBOSZXFVOWBXDXFTVSXDBWMFZXFXDAWLFXGABWLWMUOUPBOUQURUSVSBOBUTVAXFWBVB
+      VCVDVRXEWBTVSVRXEALSZXHVOWBXEXHTVRXEAWKFZXHXEXIVSABWKEUOVEALUQURUSVRALAVF
+      VAXHWBVBVCVGVHVIVHVIVRVSWBWAXAWRWAXAWJWQXAWJVRVSWJXAVPWBXCVJVKVLWTVMVNVQ
+      $.
   $}
 
 $(
@@ -65836,8 +65814,8 @@ $)
 
   $( 'Less than' is not symmetric.  (Contributed by NM, 8-Jan-2002.) $)
   ltnsym $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B -> -. B < A ) ) $=
-    ( cr wcel wa clt wbr wi wn lttr 3anidm13 expd ltnr adantr con3 ee21 ) ACDZB
-    CDZEZABFGZBAFGZAAFGZHUBIZUAISTUAUBQRTUAEUBHABAJKLQUCRAMNUAUBOP $.
+    ( cr wcel wa clt wbr wi wn lttr 3anidm13 expd ltnr adantr con3 syl6ci ) ACD
+    ZBCDZEZABFGZBAFGZAAFGZHUBIZUAISTUAUBQRTUAEUBHABAJKLQUCRAMNUAUBOP $.
 
   $( 'Less than' implies 'less than or equal to'.  (Contributed by NM,
      25-Aug-1999.) $)
