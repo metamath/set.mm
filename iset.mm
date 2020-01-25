@@ -5871,33 +5871,6 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Testable propositions
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-  $( Declare connective for testability. $)
-  $c TEST $.
-
-  $( Extend wff definition to include stability. $)
-  wtest $a wff TEST ph $.
-
-  $( Propositions where its negative or double-negative is true are called
-     testable.  See Chapter 2 [Moschovakis] p. 2.
-
-     Our notation for testability is a connective ` TEST ` which we place
-     before the formula in question.  For example, ` TEST x = y ` corresponds
-     to "x = y is testable".
-
-     (Contributed by David A. Wheeler, 13-Aug-2018.) $)
-  df-test $a |- ( TEST ph <-> ( -. ph \/ -. -. ph ) ) $.
-
-  $( A proposition is testable iff its negation is testable.  See also ~ dcn .
-     (Contributed by David A. Wheeler, 6-Dec-2018.) $)
-  testbitestn $p |- ( TEST ph <-> TEST -. ph ) $=
-    ( wn wo wtest notnotnot orbi2i orcom bitri df-test 3bitr4ri ) ABZBZLBZCZKLC
-    ZKDADNLKCOMKLAEFLKGHKIAIJ $.
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Decidable propositions
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -6020,21 +5993,6 @@ $)
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
   dcimpstab $p |- ( DECID ph -> STAB ph ) $=
     ( wdc wn wi wstab notnot2dc df-stab sylibr ) ABACCADAEAFAGH $.
-
-  $( Decidability implies testability.  (Contributed by David A. Wheeler,
-     14-Aug-2018.) $)
-  dcimptest $p |- ( DECID ph -> TEST ph ) $=
-    ( wn wo wdc wtest notnot1 orim1i orcomd df-dc df-test 3imtr4i ) AABZCZLLBZC
-    ADAEMNLANLAFGHAIAJK $.
-
-  $( "Stable and testable" is equivalent to decidable.  (Contributed by David
-     A. Wheeler, 13-Aug-2018.) $)
-  stabtestimpdc $p |-
-    ( ( STAB ph /\ TEST ph ) <-> DECID ph ) $=
-    ( wstab wtest wa wdc df-test biimpi adantl df-stab orim2d adantr mpd orcomd
-    wn wo wi df-dc sylibr dcimpstab dcimptest jca impbii ) ABZACZDZAEZUEAANZOUF
-    UEUGAUEUGUGNZOZUGAOZUDUIUCUDUIAFGHUCUIUJPUDUCUHAUGUCUHAPAIGJKLMAQRUFUCUDASA
-    TUAUB $.
 
   $( Contraposition for a decidable proposition.  Based on theorem *2.15 of
      [WhiteheadRussell] p. 102.  (Contributed by Jim Kingdon, 29-Mar-2018.) $)
@@ -6537,6 +6495,36 @@ $)
   looinvdc $p |- ( DECID ph ->
       ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) ) $=
     ( wi wdc imim1 peircedc syl9r ) ABCZBCBACHACADAHBAEABFG $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Testable propositions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( A proposition is testable iff its negative or double-negative is true.
+     See Chapter 2 [Moschovakis] p. 2.
+
+     Our notation for testability is ` DECID -. ` before the formula in
+     question.  For example, ` DECID -. x = y ` corresponds to "x = y is
+     testable".  (Contributed by David A. Wheeler, 13-Aug-2018.) $)
+  dftest $p |- ( DECID -. ph <-> ( -. ph \/ -. -. ph ) ) $=
+    ( wn df-dc ) ABC $.
+
+  $( A proposition is testable iff its negation is testable.  See also ~ dcn
+     (which could be read as "Decidability implies testability").  (Contributed
+     by David A. Wheeler, 6-Dec-2018.) $)
+  testbitestn $p |- ( DECID -. ph <-> DECID -. -. ph ) $=
+    ( wn wo wdc notnotnot orbi2i orcom bitri df-dc 3bitr4ri ) ABZBZLBZCZKLCZLDK
+    DNLKCOMKLAEFLKGHLIKIJ $.
+
+  $( "Stable and testable" is equivalent to decidable.  (Contributed by David
+     A. Wheeler, 13-Aug-2018.) $)
+  stabtestimpdc $p |-
+    ( ( STAB ph /\ DECID -. ph ) <-> DECID ph ) $=
+    ( wstab wn wdc wa wo exmiddc adantl df-stab biimpi orim2d adantr mpd orcomd
+    wi df-dc sylibr dcimpstab dcn jca impbii ) ABZACZDZEZADZUEAUCFUFUEUCAUEUCUC
+    CZFZUCAFZUDUHUBUCGHUBUHUIOUDUBUGAUCUBUGAOAIJKLMNAPQUFUBUDARASTUA $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -58152,9 +58140,6 @@ $)
   $c .P. $. $( Positive real multiplication $)
   $c <P $. $( Positive real ordering relation $)
 
-  $c +pR $. $( Signed real pre-addition $)
-  $c .pR $. $( Signed real pre-multiplication $)
-
   $c ~R $. $( Equivalence relation to construct signed reals $)
   $c R. $. $( Set of signed reals $)
   $c 0R $. $( Signed real constant 0 $)
@@ -58241,10 +58226,6 @@ $)
   $( Extend class notation with new sets (constants) used in construction of
     signed real numbers: $)
 
-  $( Signed real pre-addition. $)
-  cplpr $a class +pR $.
-  $( Signed real pre-multiplication. $)
-  cmpr $a class .pR $.
   $( Equivalence class used to construct signed reals. $)
   cer $a class ~R $.
   $( Set of signed reals. $)
@@ -70065,14 +70046,6 @@ htmldef "<P" as
     " <IMG SRC='_ltp.gif' WIDTH=19 HEIGHT=19 ALT=' &lt;P' TITLE='&lt;P'> ";
   althtmldef "<P" as '&lt;<I><SUB><B>P</B></SUB></I> ';
   latexdef "<P" as "<_{\cal P}";
-htmldef "+pR" as
-    " <IMG SRC='_plpr.gif' WIDTH=28 HEIGHT=19 ALT=' +pR' TITLE='+pR'> ";
-  althtmldef "+pR" as ' +<I><SUB>p<B>R</B></SUB></I> ';
-  latexdef "+pR" as "+_{p{\cal R}}";
-htmldef ".pR" as
-    " <IMG SRC='_cdpr.gif' WIDTH=19 HEIGHT=19 ALT=' .pR' TITLE='.pR'> ";
-  althtmldef ".pR" as ' &middot;<I><SUB>p<B>R</B></SUB></I> ';
-  latexdef ".pR" as "._{p{\cal R}}";
 htmldef "~R" as
     " <IMG SRC='_simr.gif' WIDTH=23 HEIGHT=19 ALT=' ~R' TITLE='~R'> ";
   althtmldef "~R" as ' ~<I><SUB><B>R</B></SUB></I> ';
@@ -70181,9 +70154,6 @@ htmldef "F." as
 htmldef "STAB" as "<SMALL>STAB</SMALL> ";
   althtmldef "STAB" as "<SMALL>STAB</SMALL> ";
   latexdef "STAB" as "\mathrm{STAB} ";
-htmldef "TEST" as "<SMALL>TEST</SMALL> ";
-  althtmldef "TEST" as "<SMALL>TEST</SMALL> ";
-  latexdef "TEST" as "\mathrm{TEST} ";
 htmldef "DECID" as "<SMALL>DECID</SMALL> ";
   althtmldef "DECID" as "<SMALL>DECID</SMALL> ";
   latexdef "DECID" as "\mathrm{DECID} ";
@@ -70341,13 +70311,6 @@ $)
      9-Oct-2019.) $)
   dcdc $p |- ( DECID DECID ph <-> DECID ph ) $=
     ( wdc wn wo df-dc nndc biorfi bitr4i ) ABZBIICZDIIEJIAFGH $.
-
-  $( Definition of the testability predicate ` TEST ` .  This definition is not
-     very useful in terms of number of tokens saved and readability added,
-     since one can replace everywhere the string ` TEST ` with the string
-     ` DECID -. ` .  (Contributed by BJ, 9-Oct-2019.) $)
-  bj-df-test $p |- ( TEST ph <-> DECID -. ph ) $=
-    ( wtest wn wo wdc df-test df-dc bitr4i ) ABACZICDIEAFIGH $.
 
 
 $(
