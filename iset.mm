@@ -70300,12 +70300,6 @@ $)
   nndc $p |- -. -. DECID ph $=
     ( wdc wn wo nnexmid df-dc notbii mtbir ) ABZCAACDZCAEIJAFGH $.
 
-  $( The decidability of ` -. ph ` is equivalent to that of ` -. -. ph ` .
-     (Contributed by BJ, 9-Oct-2019.) $)
-  dcnbidcnn $p |- ( DECID -. ph <-> DECID -. -. ph ) $=
-    ( wn wo wdc orcom notnotnot orbi1i bitri df-dc 3bitr4ri ) ABZBZLBZCZKLCZLDK
-    DNMLCOLMEMKLAFGHLIKIJ $.
-
   $( Decidability of a proposition is decidable if and only if that proposition
      is decidable. ` DECID ` is idempotent.  (Contributed by BJ,
      9-Oct-2019.) $)
