@@ -845,7 +845,7 @@ Non-empty almost always needs to be changed to inhabited (those terms are define
 
 <LI>If the original proof relied on propositional/predicate logic which isn't a theorem of intuitionistic logic, maybe there is a way of expressing the logic more directly. This is perhaps the hardest one to put in cookbook form: you might need to try some things and see if anything works.</LI>
 
-<LI>If the original proof relied on df-ex so that it could prove a theorem for ` A. ` and then get ` E. ` for free (or vice versa), instead go look at the original proof and try to come up the analogues to each step for the other quantifier (for example, ~ cbvrexcsf , ~ sbcrext , ~ rexxpf ).</LI>
+<LI>If the original proof relied on df-ex so that it could prove a theorem for ` A. ` and then get ` E. ` for free (or vice versa), instead go look at the original proof and try to come up the analogues to each step for the other quantifier (for example, ~ cbvrexcsf , ~ sbcrext , ~ rexxpf ). Similarly, if you have a theorem for ` <_ ` and are trying to prove the corresponding theorem for ` < ` you'll probably need to use analogous steps rather than negation (examples: ~ leaddsub , ~ ltsub1 , ~ ltsub2 ).</LI>
 
 <LI>If you are dealing with a definition, try to find the best constructive definition from the literature ([HoTT] book, Stanford Encyclopedia of Philosophy, [Bauer], etc). Once you pick a definition, that'll affect the proofs which rely on that definition.</LI>
 
@@ -1021,6 +1021,11 @@ pm2.61iii , pm2.61ian , pm2.61dan , pm2.61ddan , pm2.61dda , pm2.61ine , pm2.61n
 pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TD>
 <TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>df-or , pm4.64 , pm2.54 , orri , orrd</TD>
+<TD>~ pm2.53 , ~ ori , ~ ord </TD>
 </TR>
 
 <TR>
@@ -1372,7 +1377,13 @@ example ~ nntri3or , ~ pitri3or , and ~ nqtri3or .
 <TD>issoi</TD>
 <TD>~ issod , ~ ispod </TD>
 <TD>Many of the set.mm usages of issoi don't carry over, so
-there is less need for this convenience theorem.<TD>
+there is less need for this convenience theorem.</TD>
+</TR>
+
+<TR>
+<TD>isso2i</TD>
+<TD>~ issod </TD>
+<TD>Presumably this could be proved if we need it.</TD>
 </TR>
 
 <TR>
@@ -1449,6 +1460,19 @@ is biconditional, but just for natural numbers.</TD>
 </TR>
 
 <TR>
+<TD>ordtr2 , ontr2</TD>
+<TD><I>none</I></TD>
+<TD>See also ordelpss in set.mm</TD>
+</TR>
+
+<TR>
+<TD>ordtr3</TD>
+<TD><I>none</I></TD>
+<TD>This is weak linearity of ordinals, which presumably
+implies excluded middle by ~ ordsoexmid .</TD>
+</TR>
+
+<TR>
 <TD>ordtri2or</TD>
 <TD><I>none</I></TD>
 <TD>Implies excluded middle as shown at ~ ordtri2orexmid .</TD>
@@ -1494,6 +1518,11 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 <TR>
 <TD>opswap</TD>
 <TD>~ opswapg </TD>
+</TR>
+
+<TR>
+<TD>cnvso</TD>
+<TD>~ cnvsom </TD>
 </TR>
 
 <TR>
@@ -1886,6 +1915,12 @@ middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
+<TD>pwuninel</TD>
+<TD>~ pwuninel2 </TD>
+<TD>The set.mm proof of pwuninel uses case elimination.</TD>
+</TR>
+
+<TR>
 <TD>iunonOLD</TD>
 <TD>~ iunon </TD>
 </TR>
@@ -2077,11 +2112,8 @@ middle in its proof.</TD>
 </TR>
 
 <TR>
-<TD>ovec</TD>
-<TD>~ oviec </TD>
-<TD>Although set.mm's ovec could be proved, it is only used in
-a few places, and the corresponding places in iset.mm need the
-modified form at ~ oviec .</TD>
+<TD>2pwuninel</TD>
+<TD>2pwuninelg</TD>
 </TR>
 
 <TR>
@@ -2530,12 +2562,251 @@ be easily generalizable to anything of the form
 <TD>~ distrsrg </TD>
 </TR>
 
+<TR>
+<TD>ltasr</TD>
+<TD>~ ltasrg </TD>
+</TR>
+
+<TR>
+<TD>sqgt0sr</TD>
+<TD>~ mulgt0sr </TD>
+<TD>The ` A <R 0R ` case would also intuitionize (looks like this part
+of set.mm's sqgt0sr proof would intuitionize well), but for the theorem
+as a whole, "not equal to zero" would need to be changed to "apart from
+zero".</TD>
+</TR>
+
+<TR>
+<TD>recexsr</TD>
+<TD>~ recexsrlem </TD>
+<TD>This would follow from sqgt0sr (as in the set.mm proof of recexsr),
+but as noted there "not equal to zero" would need to be changed to
+"apart from zero".</TD>
+</TR>
+
+<TR>
+<TD>mappsrpr , ltpsrpr , map2psrpr</TD>
+<TD><I>none</I></TD>
+<TD>Although variants of these theorems could be intuitionized, in
+set.mm they are only used for supremum theorems, so we can consider
+this in more detail when we tackle what kind of supremum theorems
+to prove.</TD>
+</TR>
+
+<TR>
+<TD>supsrlem , supsr</TD>
+<TD><I>none</I></TD>
+<TD>The Least Upper Bound property for sets of real numbers does not hold,
+in general, without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>axaddf , ax-addf , axmulf , ax-mulf</TD>
+<TD><I>none</I></TD>
+<TD>Because these are described as deprecated in set.mm, we haven't
+figured out what would be involved in proving them for iset.mm.</TD>
+</TR>
+
+<TR>
+<TD>ax1ne0 , ax-1ne0</TD>
+<TD>~ ax0lt1 , ~ ax-0lt1 </TD>
+</TR>
+
+<TR>
+<TD>axrrecex , ax-rrecex</TD>
+<TD>~ axprecex , ~ ax-precex </TD>
+</TR>
+
+<TR>
+<TD>axpre-lttri , ax-pre-lttri</TD>
+<TD>~ axpre-ltirr , ~ axpre-ltwlin , ~ ax-pre-ltirr , ~ ax-pre-ltwlin </TD>
+</TR>
+
+<TR>
+<TD>axpre-sup , ax-pre-sup , axsup</TD>
+<TD><I>none yet</I></TD>
+<TD>The Least Upper Bound property for sets of real numbers does not hold,
+in general, without excluded middle. If we want a set of axioms for real
+numbers which allows us to avoid construction-dependent theorems beyond
+this point, we'll need a modified Least Upper Bound property, a statement
+concerning Dedekind cuts or something similar, or some other axiom(s).</TD>
+</TR>
+
+<TR>
+<TD>elimne0</TD>
+<TD><I>none</I></TD>
+<TD>Even in set.mm, the weak deduction theorem is discouraged in
+favor of theorems in deduction form.</TD>
+</TR>
+
+<TR>
+<TD>xrltnle</TD>
+<TD>~ xrlenlt </TD>
+</TR>
+
+<TR>
+<TD>ssxr</TD>
+<TD>~ df-xr </TD>
+<TD>Lightly used in set.mm</TD>
+</TR>
+
+<TR>
+<TD>ltnle , ltnlei , ltnled</TD>
+<TD>~ lenlt </TD>
+</TR>
+
+<TR>
+<TD>lttri2 , lttri3 , lttri4 , letri3</TD>
+<TD><I>none</I></TD>
+<TD>Real number trichotomy is not provable.</TD>
+</TR>
+
+<TR>
+<TD>leloe , eqlelt , leloei , leloed , eqleltd</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>leltne , leltned</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ltneOLD</TD>
+<TD>~ ltne </TD>
+</TR>
+
+<TR>
+<TD>letric , letrii , letrid</TD>
+<TD><I>none</I></TD>
+<TD>A form of real number trichotomy</TD>
+</TR>
+
+<TR>
+<TD>ltlen , ltleni , ltlend</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ne0gt0</TD>
+<TD><I>none</I></TD>
+<TD>We presumably could prove this if we changed "not equal to zero"
+to "apart from zero".</TD>
+</TR>
+
+<TR>
+<TD>lecasei , lelttric , ltlecasei</TD>
+<TD><I>none</I></TD>
+<TD>These are real number trichotomy</TD>
+</TR>
+
+<TR>
+<TD>lttri2i</TD>
+<TD><I>none</I></TD>
+<TD>This can be read as "two real numbers are non-equal if and
+only if they are apart" which relies on excluded middle</TD>
+</TR>
+
+<TR>
+<TD>lttri3i</TD>
+<TD><I>none yet</I></TD>
+<TD>The ` ( -. A < B /\ -. B < A ) -> A = B ` direction can
+be read as "if two real numbers are not apart, then they are
+equal" which is to say "apartness is tight". Therefore this
+should be provable.</TD>
+</TR>
+
+<TR>
+<TD>letri3i</TD>
+<TD><I>none</I></TD>
+<TD>Equivalent to lttri3i by ~ lenlt </TD>
+</TR>
+
+
+<TR>
+<TD>le2tri3i</TD>
+<TD><I>none</I></TD>
+<TD>This is an elaborated version of letri3i</TD>
+</TR>
+
+<TR>
+<TD>ne0gt0d , lttrid , lttri2d , lttri3d , lttri4d , letri3d</TD>
+<TD><I>none</I></TD>
+<TD>These are real number trichotomy</TD>
+</TR>
+
+<TR>
+<TD>dedekind , dedekindle</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>mul02lem1</TD>
+<TD><I>none</I></TD>
+<TD>The one use in set.mm is not needed in iset.mm.</TD>
+</TR>
+
+<TR>
+<TD>negex</TD>
+<TD>~ negcl </TD>
+</TR>
+
+<TR>
+<TD>add20 , lesub0 , add20i , lesub0i</<TD>
+<TD><I>none yet</I></TD>
+<TD>These would appear to only need letri3d , which is tightness of
+real number apartness, and thus should be provable.</TD>
+</TR>
+
+<TR>
+<TD>mulge0 , mulge0OLD , mulge0i , mulge0d</TD>
+<TD>~ mulgt0 </TD>
+<TD>This would require a different proof than the set.mm one.</TD>
+</TR>
+
+<TR>
+<TD>msqgt0 , msqgt0i , msqgt0d</TD>
+<TD>~ mulgt0 , ~ mullt0 </TD>
+<TD>The combination of ~ mulgt0 and ~ mullt0 amount to
+"` 0 < ( A x. A ) ` if ` A ` is apart from zero"</TD>
+</TR>
+
+<TR>
+<TD>msqge0 , msqge0i , msqge0d</TD>
+<TD>~ mulgt0 , ~ mullt0 </TD>
+<TD>The set.mm proof of msqge0 relies on case elimination.</TD>
+</TR>
+
+<TR>
+<TD>relin01</TD>
+<TD><I>none</I></TD>
+<TD>Relies on real number trichotomy.</TD>
+</TR>
+
+<TR>
+<TD>ltordlem , ltord1 , leord1 , eqord1 , ltord2 , leord2 , eqord2</TD>
+<TD><I>none</I></TD>
+<TD>These depend on real number trichotomy and are not used until
+later in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>wloglei , wlogle</TD>
+<TD><I>none</I></TD>
+<TD>These depend on real number trichotomy and are not used until
+later in set.mm.</TD>
+</TR>
+
 </TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
 COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
 
 <OL>
+
+<LI><A NAME="Apostol"></A> [Apostol] Apostol, Tom M.,
+<I>Calculus,</I> vol. 1, 2nd ed.,
+John Wiley &amp; Sons Inc. (1967) [QA300.A645 1967].</LI>
 
 <LI><A NAME="Bauer"></A> [Bauer] Bauer, Andrej, &quot;Five stages of
 accepting constructive mathematics,&quot; <I>Bulletin (New Series) of

@@ -43,12 +43,32 @@
 "alrimih" is used by "sb4or".
 "alrimih" is used by "sb6rf".
 "alrimih" is used by "sbbid".
+"ax-0id" is used by "addid1".
+"ax-0lt1" is used by "0lt1".
 "ax-10o" is used by "ax10".
+"ax-1re" is used by "1re".
+"ax-addass" is used by "addass".
+"ax-addcl" is used by "addcl".
+"ax-addcom" is used by "addcom".
+"ax-addrcl" is used by "readdcl".
+"ax-cnex" is used by "cnex".
+"ax-cnre" is used by "cnre".
+"ax-distr" is used by "adddi".
 "ax-inf2" is used by "bj-nn0sucALT".
 "ax-inf2" is used by "bj-omex2".
+"ax-mulass" is used by "mulass".
+"ax-mulcl" is used by "mulcl".
+"ax-mulcom" is used by "mulcom".
+"ax-mulrcl" is used by "remulcl".
+"axltirr" is used by "ltnr".
+"axlttrn" is used by "lttr".
+"axresscn" is used by "ax1cn".
 "df-ilim" is used by "dflim2".
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
+"df-mnf" is used by "mnfnre".
+"df-pnf" is used by "mnfnre".
+"df-pnf" is used by "pnfnre".
 "df-tru" is used by "tru".
 "equsalh" is used by "dvelimALT".
 "equsalh" is used by "dvelimfALT2".
@@ -142,6 +162,8 @@
 "snexgOLD" is used by "uniop".
 "spimh" is used by "spim".
 "spimth" is used by "equveli".
+New usage of "0cnALT" is discouraged (0 uses).
+New usage of "0reALT" is discouraged (0 uses).
 New usage of "19.21h" is discouraged (3 uses).
 New usage of "19.21ht" is discouraged (2 uses).
 New usage of "19.41h" is discouraged (5 uses).
@@ -150,13 +172,55 @@ New usage of "19.9hd" is discouraged (2 uses).
 New usage of "4syl" is discouraged (6 uses).
 New usage of "a9evsep" is discouraged (1 uses).
 New usage of "alrimih" is discouraged (25 uses).
+New usage of "ax-0id" is discouraged (1 uses).
+New usage of "ax-0lt1" is discouraged (1 uses).
 New usage of "ax-10o" is discouraged (1 uses).
 New usage of "ax-11o" is discouraged (0 uses).
 New usage of "ax-16" is discouraged (0 uses).
+New usage of "ax-1re" is discouraged (1 uses).
+New usage of "ax-addass" is discouraged (1 uses).
+New usage of "ax-addcl" is discouraged (1 uses).
+New usage of "ax-addcom" is discouraged (1 uses).
+New usage of "ax-addrcl" is discouraged (1 uses).
+New usage of "ax-cnex" is discouraged (1 uses).
+New usage of "ax-cnre" is discouraged (1 uses).
+New usage of "ax-distr" is discouraged (1 uses).
 New usage of "ax-inf2" is discouraged (2 uses).
+New usage of "ax-mulass" is discouraged (1 uses).
+New usage of "ax-mulcl" is discouraged (1 uses).
+New usage of "ax-mulcom" is discouraged (1 uses).
+New usage of "ax-mulrcl" is discouraged (1 uses).
+New usage of "ax0id" is discouraged (0 uses).
+New usage of "ax0lt1" is discouraged (0 uses).
 New usage of "ax10" is discouraged (0 uses).
+New usage of "ax1cn" is discouraged (0 uses).
+New usage of "ax1re" is discouraged (0 uses).
+New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
+New usage of "axaddass" is discouraged (0 uses).
+New usage of "axaddcl" is discouraged (0 uses).
+New usage of "axaddcom" is discouraged (0 uses).
+New usage of "axaddrcl" is discouraged (0 uses).
+New usage of "axcnex" is discouraged (0 uses).
+New usage of "axcnre" is discouraged (0 uses).
+New usage of "axdistr" is discouraged (0 uses).
+New usage of "axi2m1" is discouraged (0 uses).
+New usage of "axicn" is discouraged (0 uses).
+New usage of "axltirr" is discouraged (1 uses).
+New usage of "axlttrn" is discouraged (1 uses).
+New usage of "axmulass" is discouraged (0 uses).
+New usage of "axmulcl" is discouraged (0 uses).
+New usage of "axmulcom" is discouraged (0 uses).
+New usage of "axmulrcl" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
+New usage of "axpre-ltadd" is discouraged (0 uses).
+New usage of "axpre-ltirr" is discouraged (0 uses).
+New usage of "axpre-lttrn" is discouraged (0 uses).
+New usage of "axpre-ltwlin" is discouraged (0 uses).
+New usage of "axpre-mulgt0" is discouraged (0 uses).
+New usage of "axprecex" is discouraged (0 uses).
+New usage of "axresscn" is discouraged (1 uses).
+New usage of "axrnegex" is discouraged (0 uses).
 New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
 New usage of "bdsbcALT" is discouraged (0 uses).
@@ -167,6 +231,8 @@ New usage of "bocardo" is discouraged (0 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
 New usage of "df-iord" is discouraged (1 uses).
+New usage of "df-mnf" is discouraged (1 uses).
+New usage of "df-pnf" is discouraged (2 uses).
 New usage of "df-tru" is discouraged (1 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
@@ -196,6 +262,8 @@ New usage of "spimth" is discouraged (1 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
 New usage of "truanOLD" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
+Proof modification of "0cnALT" is discouraged (49 steps).
+Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "a9evsep" is discouraged (63 steps).
 Proof modification of "ax9vsep" is discouraged (19 steps).
 Proof modification of "axi12" is discouraged (47 steps).
@@ -253,7 +321,7 @@ Proof modification of "bj-omex" is discouraged (25 steps).
 Proof modification of "bj-omex2" is discouraged (48 steps).
 Proof modification of "bj-omord" is discouraged (21 steps).
 Proof modification of "bj-omssind" is discouraged (44 steps).
-Proof modification of "bj-omtrans" is discouraged (260 steps).
+Proof modification of "bj-omtrans" is discouraged (196 steps).
 Proof modification of "bj-omtrans2" is discouraged (14 steps).
 Proof modification of "bj-peano2" is discouraged (15 steps).
 Proof modification of "bj-peano4" is discouraged (168 steps).
