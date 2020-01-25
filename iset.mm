@@ -58140,9 +58140,6 @@ $)
   $c .P. $. $( Positive real multiplication $)
   $c <P $. $( Positive real ordering relation $)
 
-  $c +pR $. $( Signed real pre-addition $)
-  $c .pR $. $( Signed real pre-multiplication $)
-
   $c ~R $. $( Equivalence relation to construct signed reals $)
   $c R. $. $( Set of signed reals $)
   $c 0R $. $( Signed real constant 0 $)
@@ -58229,10 +58226,6 @@ $)
   $( Extend class notation with new sets (constants) used in construction of
     signed real numbers: $)
 
-  $( Signed real pre-addition. $)
-  cplpr $a class +pR $.
-  $( Signed real pre-multiplication. $)
-  cmpr $a class .pR $.
   $( Equivalence class used to construct signed reals. $)
   cer $a class ~R $.
   $( Set of signed reals. $)
@@ -70053,14 +70046,6 @@ htmldef "<P" as
     " <IMG SRC='_ltp.gif' WIDTH=19 HEIGHT=19 ALT=' &lt;P' TITLE='&lt;P'> ";
   althtmldef "<P" as '&lt;<I><SUB><B>P</B></SUB></I> ';
   latexdef "<P" as "<_{\cal P}";
-htmldef "+pR" as
-    " <IMG SRC='_plpr.gif' WIDTH=28 HEIGHT=19 ALT=' +pR' TITLE='+pR'> ";
-  althtmldef "+pR" as ' +<I><SUB>p<B>R</B></SUB></I> ';
-  latexdef "+pR" as "+_{p{\cal R}}";
-htmldef ".pR" as
-    " <IMG SRC='_cdpr.gif' WIDTH=19 HEIGHT=19 ALT=' .pR' TITLE='.pR'> ";
-  althtmldef ".pR" as ' &middot;<I><SUB>p<B>R</B></SUB></I> ';
-  latexdef ".pR" as "._{p{\cal R}}";
 htmldef "~R" as
     " <IMG SRC='_simr.gif' WIDTH=23 HEIGHT=19 ALT=' ~R' TITLE='~R'> ";
   althtmldef "~R" as ' ~<I><SUB><B>R</B></SUB></I> ';
