@@ -1,4 +1,4 @@
-$( iset.mm - Version of 17-Jan-2020
+$( iset.mm - Version of 26-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69095,6 +69095,15 @@ $)
      16-Jul-2016.) $)
   1le1 $p |- 1 <_ 1 $=
     ( c1 1re leidi ) ABC $.
+
+  $( A positive sum must have a positive addend.  Part of Definition 11.2.7(vi)
+     of [HoTT], p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+  gt0add $p |- ( ( A e. RR /\ B e. RR /\ 0 < ( A + B ) ) ->
+      ( 0 < A \/ 0 < B ) ) $=
+    ( cr wcel cc0 caddc co clt wbr w3a wo simp3 wi 0red simp1 readdcld axltwlin
+    simp2 syl3anc mpd ltaddposd orbi2d mpbird ) ACDZBCDZEABFGZHIZJZEAHIZEBHIZKU
+    IAUFHIZKZUHUGULUDUEUGLUHECDUFCDUDUGULMUHNUHABUDUEUGOZUDUEUGRZPUMEUFAQSTUHUJ
+    UKUIUHBAUNUMUAUBUC $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
