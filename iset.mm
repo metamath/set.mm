@@ -35234,10 +35234,9 @@ $)
     $( Define the strict linear order predicate.  The expression ` R Or A ` is
        true if relationship ` R ` orders ` A ` .  The property
        ` x R y -> ( x R z \/ z R y ) ` is called weak linearity by Proposition
-       (11.2.3) of [HoTT], p.  (varies).  If we assumed excluded middle, it
-       would be equivalent to trichotomy, ` x R y \/ x = y \/ y R x ` .
-       (Contributed by NM, 21-Jan-1996.)  (Revised by Jim Kingdon,
-       4-Oct-2018.) $)
+       11.2.3 of [HoTT], p.  (varies).  If we assumed excluded middle, it would
+       be equivalent to trichotomy, ` x R y \/ x = y \/ y R x ` .  (Contributed
+       by NM, 21-Jan-1996.)  (Revised by Jim Kingdon, 4-Oct-2018.) $)
     df-iso $a |- ( R Or A <-> ( R Po A /\ A. x e. A A. y e. A A. z e. A
                 ( x R y -> ( x R z \/ z R y ) ) ) ) $.
   $}
