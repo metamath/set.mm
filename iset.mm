@@ -69187,6 +69187,33 @@ $)
     UKUIUHBAUNUMUAUBUC $.
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Real Apartness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c #RR $. $( 'Apart' relation (over real numbers) $)
+
+  $( Class of real apartness relation. $)
+  creap $a class #RR $.
+
+  $( Define real apartness.  Definition in Section 11.2.1 of [HoTT], p.
+     (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+  df-reap $a |- #RR = { <. x , y >. | ( ( x e. RR /\ y e. RR ) /\
+     ( x < y \/ y < x ) ) } $.
+
+  ${
+    $d A x y $.
+    $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of
+       [[HoTT]], p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+    reapirr $p |- ( A e. RR -> -. A #RR A ) $=
+      ( vx vy cr wcel creap wbr ltnr wa wo cv wceq breq12 ax-ia2 ax-ia1 breq12d
+      clt orbi12d df-reap brab2ga anidm oridm anbi12i bitri baib mtbird ) ADEZA
+      AFGZAAQGZAHUHUGUIUHUGUGIZUIUIJZIUGUIIBKZCKZQGZUMULQGZJUKBCAADDFULALZUMALZ
+      IZUNUIUOUIULAUMAQMURUMAULAQUPUQNUPUQOPRBCSTUJUGUKUIUGUAUIUBUCUDUEUF $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -70231,6 +70258,9 @@ htmldef "-u" as
   althtmldef "-u" as '-';
   latexdef "-u" as "\textrm{-}"; /* short minus */
     /*latexdef "-u" as "-_u";*/
+htmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
+  althtmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
+  latexdef "#RR" as "\apart_\mathbb{R}";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
