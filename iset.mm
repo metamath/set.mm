@@ -65738,8 +65738,9 @@ $)
     ( cr wcel cc0 clt wbr cmul co wa axmulgt0 imp an4s ) ACDZBCDZEAFGZEBFGZEABH
     IFGZNOJPQJRABKLM $.
 
-  $( 'Less than or equal to' expressed in terms of 'less than'.  (Contributed
-     by NM, 13-May-1999.) $)
+  $( 'Less than or equal to' expressed in terms of 'less than'.  Part of
+     definition 11.2.7(vi) of [HoTT], p.  (varies).  (Contributed by NM,
+     13-May-1999.) $)
   lenlt $p |- ( ( A e. RR /\ B e. RR ) -> ( A <_ B <-> -. B < A ) ) $=
     ( cr wcel cxr cle wbr clt wn wb rexr xrlenlt syl2an ) ACDAEDBEDABFGBAHGIJBC
     DAKBKABLM $.
@@ -66014,8 +66015,8 @@ $)
     $}
   $}
 
-  $( 0 is less than 1.  Theorem I.21 of [Apostol] p. 20.  (Contributed by NM,
-     17-Jan-1997.) $)
+  $( 0 is less than 1.  Theorem I.21 of [Apostol] p. 20.  Part of definition
+     11.2.7(vi) of [HoTT], p.  (varies).  (Contributed by NM, 17-Jan-1997.) $)
   0lt1 $p |- 0 < 1 $=
     ( cc0 c1 clt wbr cltrr ax-0lt1 cr wcel wb 0re 1re ltxrlt mp2an mpbir ) ABCD
     ZABEDZFAGHBGHOPIJKABLMN $.
@@ -68136,16 +68137,18 @@ $)
   lt0ne0 $p |- ( ( A e. RR /\ A < 0 ) -> A =/= 0 ) $=
     ( cr wcel cc0 clt wbr wa ltne necomd ) ABCADEFGDAADHI $.
 
-  $( Addition to both sides of 'less than'.  (Contributed by NM, 12-Nov-1999.)
-     (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  $( Addition to both sides of 'less than'.  Part of definition 11.2.7(vi) of
+     [HoTT], p.  (varies).  (Contributed by NM, 12-Nov-1999.)  (Proof shortened
+     by Mario Carneiro, 27-May-2016.) $)
   ltadd1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
                 ( A < B <-> ( A + C ) < ( B + C ) ) ) $=
     ( cr wcel w3a clt wbr caddc co ltadd2 simp3 recnd simp1 addcomd simp2 bitrd
     breq12d ) ADEZBDEZCDEZFZABGHCAIJZCBIJZGHACIJZBCIJZGHABCKUBUCUEUDUFGUBCAUBCS
     TUALMZUBASTUANMOUBCBUGUBBSTUAPMORQ $.
 
-  $( Addition to both sides of 'less than or equal to'.  (Contributed by NM,
-     18-Oct-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  $( Addition to both sides of 'less than or equal to'.  Part of definition
+     11.2.7(vi) of [HoTT], p.  (varies).  (Contributed by NM, 18-Oct-1999.)
+     (Proof shortened by Mario Carneiro, 27-May-2016.) $)
   leadd1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
                 ( A <_ B <-> ( A + C ) <_ ( B + C ) ) ) $=
     ( cr w3a clt wbr wn caddc co cle wb ltadd1 3com12 notbid simp1 simp2 lenltd
