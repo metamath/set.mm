@@ -61159,8 +61159,10 @@ $)
     $( A Dedekind cut is arithmetically located.  Part of Proposition 11.15 of
        [BauerTaylor], p. 52, slightly modified.  It states that given a
        tolerance ` P ` , there are elements of the lower and upper cut which
-       are within that tolerance of each other.  (Contributed by Jim Kingdon,
-       22-Oct-2019.) $)
+       are within that tolerance of each other.
+
+       Usually, proofs will be shorter if they use ~ prarloc2 instead.
+       (Contributed by Jim Kingdon, 22-Oct-2019.) $)
     prarloc $p |- ( ( <. L , U >. e. P. /\ P e. Q. ) ->
         E. a e. L E. b e. U b <Q ( a +Q P ) ) $=
       ( vx vy vq vn vm wcel cnq wa cv co wex wrex df-rex sylib anbi2d cplq cltq
