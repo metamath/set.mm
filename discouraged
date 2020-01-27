@@ -5671,7 +5671,7 @@
 "eexinst01" is used by "vk15.4j".
 "eexinst11" is used by "exinst11".
 "eexinst11" is used by "vk15.4j".
-"efghgrp" is used by "circgrp".
+"efghgrp" is used by "circgrpOLD".
 "eighmre" is used by "eighmorth".
 "eigorth" is used by "eighmorth".
 "eigorthi" is used by "eigorth".
@@ -12069,7 +12069,7 @@
 "re1tbw2" is used by "ltrneq".
 "re1tbw2" is used by "re1tbw4".
 "re1tbw3" is used by "re1tbw4".
-"readdsubgo" is used by "circgrp".
+"readdsubgo" is used by "circgrpOLD".
 "recclnq" is used by "dmrecnq".
 "recclnq" is used by "halfnq".
 "recclnq" is used by "ltrnq".
@@ -14900,7 +14900,7 @@ New usage of "chub1i" is discouraged (18 uses).
 New usage of "chub2" is discouraged (14 uses).
 New usage of "chub2i" is discouraged (24 uses).
 New usage of "chunssji" is discouraged (0 uses).
-New usage of "circgrp" is discouraged (0 uses).
+New usage of "circgrpOLD" is discouraged (0 uses).
 New usage of "clelabOLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleqfOLD" is discouraged (0 uses).
