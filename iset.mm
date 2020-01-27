@@ -71716,7 +71716,40 @@ $)
     ax-bj-d0class.bd $e |- Bdd ph $.
     $( Axiom for ` Delta0 ` -classical logic.  (Contributed by BJ,
        2-Jan-2020.) $)
-    ax-bj-d0cl $a |- ( ph \/ -. ph ) $.
+    ax-bj-d0cl $a |- DECID ph $.
+  $}
+
+  $( Equivalence property for negation.  TODO: minimize all theorems using
+     ~ notbid and ~ notbii .  (Contributed by BJ, 27-Jan-2020.)
+     (Proof modification is discouraged.) $)
+  bj-notbi $p |- ( ( ph <-> ps ) -> ( -. ph <-> -. ps ) ) $=
+    ( wb wn bi2 con3d bi1 impbid ) ABCZADBDIBAABEFIABABGFH $.
+
+  ${
+    bj-notbii.1 $e |- ( ph <-> ps ) $.
+    $( Inference associated with ~ bj-notbi .  (Contributed by BJ,
+       27-Jan-2020.)  (Proof modification is discouraged.) $)
+    bj-notbii $p |- ( -. ph <-> -. ps ) $=
+      ( wb wn bj-notbi ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    bj-notbid.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Deduction form of ~ bj-notbi .  (Contributed by BJ, 27-Jan-2020.)
+       (Proof modification is discouraged.) $)
+    bj-notbid $p |- ( ph -> ( -. ps <-> -. ch ) ) $=
+      ( wb wn bj-notbi syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d a x ph $.
+    $( Equivalence property for ` DECID ` .  TODO: solve conflict with ~ dcbi ;
+       minimize ~ dcbii and ~ dcbid with it, as well as theorems using those.
+       (Contributed by BJ, 27-Jan-2020.)
+       (Proof modification is discouraged.) $)
+    bj-dcbi $p |- ( ( ph <-> ps ) -> ( DECID ph <-> DECID ps ) ) $=
+      ( wb wn wo wdc id bj-notbi orbi12d df-dc 3bitr4g ) ABCZAADZEBBDZEAFBFLABM
+      NLGABHIAJBJK $.
   $}
 
   ${
@@ -71724,13 +71757,12 @@ $)
     $( ` Delta0 ` -classical logic and separation implies classical logic.
        (Contributed by BJ, 2-Jan-2020.)
        (Proof modification is discouraged.) $)
-    bj-d0clsepcl $p |- ( ph \/ -. ph ) $=
-      ( va vx wn wo wex c0 cv wcel wb csn wa wal 0ex bj-snex zfauscl wceq eleq1
-      anbi1d eximii bibi12d spcv snid biantrur bicomi exbii bj-bd0el ax-bj-d0cl
-      bibi2i mpbi id notbid orbi12d mpbii bj-ex ax-mp ) AADZEZBFURGBHZIZAJZURBU
-      TGGKZIZALZJZBFVABFCHZUSIZVFVBIZALZJZCMVEBACBVBGNOPVJVECGNVFGQZVGUTVIVDVFG
-      USRVKVHVCAVFGVBRSUAUBTVEVABVDAUTAVDVCAGNUCUDUEUIUFUJVAUTUTDZEURUTBUGUHVAU
-      TAVLUQVAUKZVAUTAVMULUMUNTURBUOUP $.
+    bj-d0clsepcl $p |- DECID ph $=
+      ( va vx wdc wex c0 cv wcel wb csn wel wal 0ex bj-snex zfauscl wceq anbi1d
+      wa eleq1 eximii bibi12d spcv snid biantrur bicomi bibi2i exbii ax-bj-d0cl
+      mpbi bj-bd0el bj-dcbi mpbii bj-ex ax-mp ) ADZBEUOFBGZHZAIZUOBUQFFJZHZARZI
+      ZBEURBECBKZCGZUSHZARZIZCLVBBACBUSFMNOVGVBCFMVDFPZVCUQVFVAVDFUPSVHVEUTAVDF
+      USSQUAUBTVBURBVAAUQAVAUTAFMUCUDUEUFUGUIURUQDUOUQBUJUHUQAUKULTUOBUMUN $.
   $}
 
 
