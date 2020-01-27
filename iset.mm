@@ -1,4 +1,4 @@
-$( iset.mm - Version of 17-Jan-2020
+$( iset.mm - Version of 26-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35234,10 +35234,9 @@ $)
     $( Define the strict linear order predicate.  The expression ` R Or A ` is
        true if relationship ` R ` orders ` A ` .  The property
        ` x R y -> ( x R z \/ z R y ) ` is called weak linearity by Proposition
-       (11.2.3) of [HoTT], p.  (varies).  If we assumed excluded middle, it
-       would be equivalent to trichotomy, ` x R y \/ x = y \/ y R x ` .
-       (Contributed by NM, 21-Jan-1996.)  (Revised by Jim Kingdon,
-       4-Oct-2018.) $)
+       11.2.3 of [HoTT], p.  (varies).  If we assumed excluded middle, it would
+       be equivalent to trichotomy, ` x R y \/ x = y \/ y R x ` .  (Contributed
+       by NM, 21-Jan-1996.)  (Revised by Jim Kingdon, 4-Oct-2018.) $)
     df-iso $a |- ( R Or A <-> ( R Po A /\ A. x e. A A. y e. A A. z e. A
                 ( x R y -> ( x R z \/ z R y ) ) ) ) $.
   $}
@@ -65735,8 +65734,9 @@ $)
     ( cr wcel cc0 clt wbr cmul co wa axmulgt0 imp an4s ) ACDZBCDZEAFGZEBFGZEABH
     IFGZNOJPQJRABKLM $.
 
-  $( 'Less than or equal to' expressed in terms of 'less than'.  (Contributed
-     by NM, 13-May-1999.) $)
+  $( 'Less than or equal to' expressed in terms of 'less than'.  Part of
+     definition 11.2.7(vi) of [HoTT], p.  (varies).  (Contributed by NM,
+     13-May-1999.) $)
   lenlt $p |- ( ( A e. RR /\ B e. RR ) -> ( A <_ B <-> -. B < A ) ) $=
     ( cr wcel cxr cle wbr clt wn wb rexr xrlenlt syl2an ) ACDAEDBEDABFGBAHGIJBC
     DAKBKABLM $.
@@ -66011,8 +66011,8 @@ $)
     $}
   $}
 
-  $( 0 is less than 1.  Theorem I.21 of [Apostol] p. 20.  (Contributed by NM,
-     17-Jan-1997.) $)
+  $( 0 is less than 1.  Theorem I.21 of [Apostol] p. 20.  Part of definition
+     11.2.7(vi) of [HoTT], p.  (varies).  (Contributed by NM, 17-Jan-1997.) $)
   0lt1 $p |- 0 < 1 $=
     ( cc0 c1 clt wbr cltrr ax-0lt1 cr wcel wb 0re 1re ltxrlt mp2an mpbir ) ABCD
     ZABEDZFAGHBGHOPIJKABLMN $.
@@ -68133,16 +68133,18 @@ $)
   lt0ne0 $p |- ( ( A e. RR /\ A < 0 ) -> A =/= 0 ) $=
     ( cr wcel cc0 clt wbr wa ltne necomd ) ABCADEFGDAADHI $.
 
-  $( Addition to both sides of 'less than'.  (Contributed by NM, 12-Nov-1999.)
-     (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  $( Addition to both sides of 'less than'.  Part of definition 11.2.7(vi) of
+     [HoTT], p.  (varies).  (Contributed by NM, 12-Nov-1999.)  (Proof shortened
+     by Mario Carneiro, 27-May-2016.) $)
   ltadd1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
                 ( A < B <-> ( A + C ) < ( B + C ) ) ) $=
     ( cr wcel w3a clt wbr caddc co ltadd2 simp3 recnd simp1 addcomd simp2 bitrd
     breq12d ) ADEZBDEZCDEZFZABGHCAIJZCBIJZGHACIJZBCIJZGHABCKUBUCUEUDUFGUBCAUBCS
     TUALMZUBASTUANMOUBCBUGUBBSTUAPMORQ $.
 
-  $( Addition to both sides of 'less than or equal to'.  (Contributed by NM,
-     18-Oct-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  $( Addition to both sides of 'less than or equal to'.  Part of definition
+     11.2.7(vi) of [HoTT], p.  (varies).  (Contributed by NM, 18-Oct-1999.)
+     (Proof shortened by Mario Carneiro, 27-May-2016.) $)
   leadd1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
                 ( A <_ B <-> ( A + C ) <_ ( B + C ) ) ) $=
     ( cr w3a clt wbr wn caddc co cle wb ltadd1 3com12 notbid simp1 simp2 lenltd
@@ -69089,6 +69091,15 @@ $)
      16-Jul-2016.) $)
   1le1 $p |- 1 <_ 1 $=
     ( c1 1re leidi ) ABC $.
+
+  $( A positive sum must have a positive addend.  Part of Definition 11.2.7(vi)
+     of [HoTT], p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+  gt0add $p |- ( ( A e. RR /\ B e. RR /\ 0 < ( A + B ) ) ->
+      ( 0 < A \/ 0 < B ) ) $=
+    ( cr wcel cc0 caddc co clt wbr w3a wo simp3 wi 0red simp1 readdcld axltwlin
+    simp2 syl3anc mpd ltaddposd orbi2d mpbird ) ACDZBCDZEABFGZHIZJZEAHIZEBHIZKU
+    IAUFHIZKZUHUGULUDUEUGLUHECDUFCDUDUGULMUHNUHABUDUEUGOZUDUEUGRZPUMEUFAQSTUHUJ
+    UKUIUHBAUNUMUAUBUC $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
