@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Jan-2020
+$( iset.mm - Version of 27-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
