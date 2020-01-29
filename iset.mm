@@ -65880,6 +65880,21 @@ $)
     ( vx cr clt wor ccnv ltso cc0 wcel cv wex wb 0re elex2 cnvsom mp2b mpbi ) B
     CDZBCEDZFGBHAIBHAJQRKLAGBMABCNOP $.
 
+  $( Tightness of real apartness.  (Contributed by NM, 5-May-1999.) $)
+  lttri3 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( A = B <-> ( -. A < B /\ -. B < A ) ) ) $=
+    ( cr wcel wa wceq clt wbr wn wi ltnr breq2 notbid syl5ibcom breq1 adantr wo
+    jcad ioran axapti 3expia syl5bir impbid ) ACDZBCDZEZABFZABGHZIZBAGHZIZEZUDU
+    GULJUEUDUGUIUKUDAAGHZIZUGUIAKZUGUMUHABAGLMNUDUNUGUKUOUGUMUJABAGOMNRPULUHUJQ
+    IZUFUGUHUJSUDUEUPUGABTUAUBUC $.
+
+  $( Tightness of real apartness.  (Contributed by NM, 14-May-1999.) $)
+  letri3 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( A = B <-> ( A <_ B /\ B <_ A ) ) ) $=
+    ( cr wcel wa wceq clt wbr wn cle lttri3 ancom syl6bbr ancoms anbi12d bitr4d
+    lenlt wb ) ACDZBCDZEZABFZBAGHIZABGHIZEZABJHZBAJHZEUAUBUDUCEUEABKUCUDLMUAUFU
+    CUGUDABQTSUGUDRBAQNOP $.
+
   $( Transitive law, weaker form of ` ( A < B /\ B <_ C ) -> A < C ` .
      (Contributed by AV, 14-Oct-2018.) $)
   ltleletr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
