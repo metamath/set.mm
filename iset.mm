@@ -65011,6 +65011,25 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.
+    $( Apartness of reals is tight.  Axiom for real and complex numbers,
+       derived from set theory.  This construction-dependent theorem should not
+       be referenced directly; instead, use ~ ax-pre-apti .
+
+       (Contributed by Jim Kingdon, 29-Jan-2020.)
+       (New usage is discouraged.) $)
+    axpre-apti $p |- ( ( A e. RR /\ B e. RR /\ -. ( A <RR B \/ B <RR A ) ) ->
+        A = B ) $=
+      ( vx vy cr wcel cltrr wbr wo wn wceq cv c0r cop wi cnr elreal breq1 breq2
+      orbi12d notbid eqeq1 imbi12d eqeq2 wa aptisr 3expia ltresr orbi12i notbii
+      cltr vex eqresr 3imtr4g 2gencl 3impia ) AEFBEFABGHZBAGHZIZJZABKZCLZMNZDLZ
+      MNZGHZVEVCGHZIZJZVCVEKZOAVEGHZVEAGHZIZJZAVEKZOUTVAOCDVCVEABPECAQDBQVCAKZV
+      IVNVJVOVPVHVMVPVFVKVGVLVCAVEGRVCAVEGSTUAVCAVEUBUCVEBKZVNUTVOVAVQVMUSVQVKU
+      QVLURVEBAGSVEBAGRTUAVEBAUDUCVBPFZVDPFZUEVBVDUKHZVDVBUKHZIZJZVBVDKZVIVJVRV
+      SWCWDVBVDUFUGVHWBVFVTVGWAVBVDUHVDVBUHUIUJVBVDCULUMUNUOUP $.
+  $}
+
+  ${
     $d x y z A $.  $d x y z B $.  $d x y z C $.
     $( Ordering property of addition on reals.  Axiom for real and complex
        numbers, derived from set theory.  This construction-dependent theorem
@@ -65227,6 +65246,13 @@ $)
   ax-pre-lttrn $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
              ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) $.
   $( $j restatement 'ax-pre-lttrn' of 'axpre-lttrn'; $)
+
+  $( Apartness of reals is tight.  Axiom for real and complex numbers,
+     justified by theorem ~ axpre-apti .  (Contributed by Jim Kingdon,
+     29-Jan-2020.) $)
+  ax-pre-apti $a |- ( ( A e. RR /\ B e. RR /\ -. ( A <RR B \/ B <RR A ) ) ->
+    A = B ) $.
+  $( $j restatement 'ax-pre-apti' of 'axpre-apti'; $)
 
   $( Ordering property of addition on reals.  Axiom for real and complex
      numbers, justified by theorem ~ axpre-ltadd .  (Contributed by NM,
@@ -65789,6 +65815,15 @@ $)
     wa syl2an 3impdi 3coml 3imtr4d ) ADEZBDEZCDEZFABGHZCAIJZCBIJZGHZABKHZUFUGKH
     ZABCLUBUCUIUEMUDABNOUDUBUCUJUHMZUDUBUCUKUDUBQUFDEUGDEUKUDUCQCAPCBPUFUGNRSTU
     A $.
+
+  $( Apartness of reals is tight.  Axiom for real and complex numbers, derived
+     from set theory.  (This restates ~ ax-pre-apti with ordering on the
+     extended reals.)  (Contributed by Jim Kingdon, 29-Jan-2020.) $)
+  axapti $p |- ( ( A e. RR /\ B e. RR /\ -. ( A < B \/ B < A ) ) -> A = B ) $=
+    ( cr wcel clt wo wn wceq wa cltrr ltxrlt wb ancoms orbi12d notbid
+    wbr ax-pre-apti 3expia sylbid 3impia ) ACDZBCDZABEPZBAEPZFZGZABHZ
+    UAUBIZUFABJPZBAJPZFZGZUGUHUEUKUHUCUIUDUJABKUBUAUDUJLBAKMNOUAUBULU
+    GABQRST $.
 
   $( The product of two positive reals is positive.  Axiom for real and complex
      numbers, derived from set theory.  (This restates ~ ax-pre-mulgt0 with
