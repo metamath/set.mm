@@ -65999,6 +65999,15 @@ $)
     $}
 
     lt.2 $e |- B e. RR $.
+    $( Tightness of real apartness.  (Contributed by NM, 14-May-1999.) $)
+    lttri3i $p |- ( A = B <-> ( -. A < B /\ -. B < A ) ) $=
+      ( cr wcel wceq clt wbr wn wa wb lttri3 mp2an ) AEFBEFABGABHIJBAHIJKLCDABM
+      N $.
+
+    $( Tightness of real apartness.  (Contributed by NM, 14-May-1999.) $)
+    letri3i $p |- ( A = B <-> ( A <_ B /\ B <_ A ) ) $=
+      ( cr wcel wceq cle wbr wa wb letri3 mp2an ) AEFBEFABGABHIBAHIJKCDABLM $.
+
     $( 'Less than' is not symmetric.  (Contributed by NM, 6-May-1999.) $)
     ltnsymi $p |- ( A < B -> -. B < A ) $=
       ( cr wcel clt wbr wn wi ltnsym mp2an ) AEFBEFABGHBAGHIJCDABKL $.
@@ -66048,6 +66057,16 @@ $)
          14-May-1999.) $)
       letri $p |- ( ( A <_ B /\ B <_ C ) -> A <_ C ) $=
         ( cr wcel cle wbr wa wi letr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
+
+      $( Extended trichotomy law for 'less than or equal to'.  (Contributed by
+         NM, 14-Aug-2000.) $)
+      le2tri3i $p |- ( ( A <_ B /\ B <_ C /\ C <_ A ) <->
+                      ( A = B /\ B = C /\ C = A ) ) $=
+        ( cle wbr wceq wa letri letri3i biimpri sylan2 3impb 3comr eqcomd sylan
+        w3a eqlei 3impa 3jca 3anim123i impbii ) ABGHZBCGHZCAGHZSZABIZBCIZCAIZSU
+        HUIUJUKUEUFUGUIUFUGJUEBAGHZUIBCAEFDKUIUEULJABDELMNOUFUGUEUJUFUGUEUJUGUE
+        JUFCBGHZUJCABFDEKUJUFUMJBCEFLMNOPUEUFUGUKUEUFJACGHZUGUKABCDEFKUNUGJZACA
+        CIUOACDFLMQRUAUBUIUEUJUFUKUGABDTBCETCAFTUCUD $.
     $}
 
     $( The product of two positive numbers is positive.  (Contributed by NM,
@@ -66085,6 +66104,18 @@ $)
     $}
 
     ltd.2 $e |- ( ph -> B e. RR ) $.
+    $( Tightness of real apartness.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    lttri3d $p |- ( ph -> ( A = B <-> ( -. A < B /\ -. B < A ) ) ) $=
+      ( cr wcel wceq clt wbr wn wa wb lttri3 syl2anc ) ABFGCFGBCHBCIJKCBIJKLMDE
+      BCNO $.
+
+    $( Tightness of real apartness.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    letri3d $p |- ( ph -> ( A = B <-> ( A <_ B /\ B <_ A ) ) ) $=
+      ( cr wcel wceq cle wbr wa wb letri3 syl2anc ) ABFGCFGBCHBCIJCBIJKLDEBCMN
+      $.
+
     $( 'Less than or equal to' in terms of 'less than'.  (Contributed by Mario
        Carneiro, 27-May-2016.) $)
     lenltd $p |- ( ph -> ( A <_ B <-> -. B < A ) ) $=
