@@ -69214,6 +69214,25 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Complex Apartness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c # $. $( 'Apart' relation (over complex numbers) $)
+
+  $( Class of complex apartness relation. $)
+  cap $a class # $.
+
+  $( Define complex apartness.  Definition 6.1 of Skeleton for the Proof
+     development leading to the.  Fundamental Theorem of Algebra, Herman
+     Geuvers, Randy Pollack, Freek Wiedijk, Jan Zwanenburg, October 2, 2000.
+     (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+  df-ap $a |- # = { <. x , y >. | E. r e. RR E. s e. RR E. t e. RR E. u e. RR
+    ( ( x = ( r + ( _i x. s ) ) /\ y = ( t + ( _i x. u ) ) ) /\
+    ( r #RR t \/ s #RR u ) ) } $.
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -70258,6 +70277,9 @@ htmldef "-u" as
   althtmldef "-u" as '-';
   latexdef "-u" as "\textrm{-}"; /* short minus */
     /*latexdef "-u" as "-_u";*/
+htmldef "#" as ' # ';
+  althtmldef "#" as ' # ';
+  latexdef "#" as "\apart";
 htmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   althtmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   latexdef "#RR" as "\apart_\mathbb{R}";
