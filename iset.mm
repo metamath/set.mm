@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Jan-2020
+$( iset.mm - Version of 29-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -64306,6 +64306,25 @@ $)
       UYJUWHQUVCUVNUWBUVFUVEUYJOUWAUWDUWGUUDUUEUVDWIWFWNWKWQUVCUXSUYGUVENGUWKUW
       LUNUXTUYHUVCCDUUFUVDNNNQUVMUWEUWGVNUWHUUIUVEWRWFXDWSWTXEWTXEXFUUCYHIUUIUU
       FUKULUMZJKUUJUUCYGUYMIJXRXSYBYCXAUTUUIUUFVDXBXCXGXHXI $.
+  $}
+
+  ${
+    $d A w x y z $.  $d B w z $.
+    $( Apartness of signed reals is tight.  (Contributed by Jim Kingdon,
+       29-Jan-2020.) $)
+    aptisr $p |- ( ( A e. R. /\ B e. R. /\ -. ( A <R B \/ B <R A ) )
+        -> A = B ) $=
+      ( vx cnr wcel cltr wbr wo wn wceq cv cer wi cnp orbi12d notbid wa co cltp
+      cpp vy vz cop cec df-nr breq1 breq2 imbi12d addcomprg ad2ant2lr ad2ant2rl
+      eqeq1 breq12d orbi2d addclpr aptipr 3expia syl2anc sylbird ltsrprg ancoms
+      vw eqeq2 wb enreceq 3imtr4d 2ecoptocl 3impia ) ADEBDEABFGZBAFGZHZIZABJZCK
+      ZUAKZUCLUDZUBKZVBKZUCLUDZFGZVSVPFGZHZIZVPVSJZMAVSFGZVSAFGZHZIZAVSJZMVLVMM
+      CUAUBVBABNNLDUEVPAJZWCWHWDWIWJWBWGWJVTWEWAWFVPAVSFUFVPAVSFUGOPVPAVSULUHVS
+      BJZWHVLWIVMWKWGVKWKWEVIWFVJVSBAFUGVSBAFUFOPVSBAVCUHVNNEZVONEZQZVQNEZVRNEZ
+      QZQZVNVRTRZVOVQTRZSGZVQVOTRZVRVNTRZSGZHZIZWSWTJZWCWDWRXFXAWTWSSGZHZIZXGWR
+      XIXEWRXHXDXAWRWTXBWSXCSWMWOWTXBJWLWPVOVQUIUJWLWPWSXCJWMWOVNVRUIUKUMUNPWRW
+      SNEZWTNEZXJXGMWLWPXKWMWOVNVRUOUKWMWOXLWLWPVOVQUOUJXKXLXJXGWSWTUPUQURUSWRW
+      BXEWRVTXAWAXDVNVOVQVRUTWQWNWAXDVDVQVRVNVOUTVAOPVNVOVQVRVEVFVGVH $.
   $}
 
   $( Class of complex numbers. $)
