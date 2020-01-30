@@ -69396,6 +69396,32 @@ $)
       ( r #RR t \/ s #RR u ) ) } $.
   $}
 
+  $( The imaginary unit ` _i ` is not a real number.  (Contributed by NM,
+     6-May-1999.) $)
+  inelr $p |- -. _i e. RR $=
+    ( ci cr wcel cc0 wceq ine0 neii clt wbr wn co c1 0re 1re caddc wa anidms ex
+    cmul mtoi 0lt1 ltnsymi cneg renegcli eqeltri ltadd1i ax-1cn addid2i ax-i2m1
+    ax-mp ixi breq12i bitri mtbir mullt0 mulgt0 wb lttri3 mpan2 mpbir2and mto )
+    ABCZADEZADFGVBVCADHIZJZDAHIZJZVBVDDAASKZHIZVILDHIZDLHIVJJUADLMNUBUJVIDLOKZV
+    HLOKZHIVJDVHLMVHLUCBUKLNUDUENUFVKLVLDHLUGUHUIULUMUNZVBVDVIVBVDPVIAAUOQRTVBV
+    FVIVMVBVFVIVBVFPVIAAUPQRTVBDBCVCVEVGPUQMADURUSUTVA $.
+
+  ${
+    $d A x $.
+    $( A real number times the imaginary unit is real only if the number is 0.
+       (Contributed by NM, 28-May-1999.)  (Revised by Mario Carneiro,
+       27-May-2016.) $)
+    rimul $p |- ( ( A e. RR /\ ( _i x. A ) e. RR ) -> A = 0 ) $=
+      ( vx cr wcel ci cmul co wa cc0 wceq creap wbr wn inelr cv c1 recnd ax-icn
+      wrex cc recexre adantlr simplll simprl mulass mp3an1 syl2anc oveq2 syl6eq
+      mulid1i ad2antll eqtrd simpllr remulcld eqeltrrd rexlimddv ex mtoi wb 0re
+      reapti mpan2 adantr mpbird ) ACDZEAFGZCDZHZAIJZAIKLZMZVHVJECDZNVHVJVLVHVJ
+      HZABOZFGZPJZVLBCVEVJVPBCSVGBAUAUBVMVNCDZVPHZHZVFVNFGZECVSVTEVOFGZEVSATDZV
+      NTDZVTWAJZVSAVEVGVJVRUCQVSVNVMVQVPUDZQETDWBWCWDREAVNUEUFUGVPWAEJVMVQVPWAE
+      PFGEVOPEFUHERUJUIUKULVSVFVNVEVGVJVRUMWEUNUOUPUQURVEVIVKUSZVGVEICDWFUTAIVA
+      VBVCVD $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
