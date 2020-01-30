@@ -69312,10 +69312,13 @@ $)
   $( Class of real apartness relation. $)
   creap $a class #RR $.
 
-  $( Define real apartness.  Definition in Section 11.2.1 of [HoTT], p.
-     (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
-  df-reap $a |- #RR = { <. x , y >. | ( ( x e. RR /\ y e. RR ) /\
-     ( x < y \/ y < x ) ) } $.
+  ${
+    $d x y $.
+    $( Define real apartness.  Definition in Section 11.2.1 of [HoTT], p.
+       (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+    df-reap $a |- #RR = { <. x , y >. | ( ( x e. RR /\ y e. RR ) /\
+      ( x < y \/ y < x ) ) } $.
+  $}
 
   ${
     $d A x y $.
@@ -69351,13 +69354,16 @@ $)
   $( Class of complex apartness relation. $)
   cap $a class # $.
 
-  $( Define complex apartness.  Definition 6.1 of Skeleton for the Proof
-     development leading to the.  Fundamental Theorem of Algebra, Herman
-     Geuvers, Randy Pollack, Freek Wiedijk, Jan Zwanenburg, October 2, 2000.
-     (Contributed by Jim Kingdon, 26-Jan-2020.) $)
-  df-ap $a |- # = { <. x , y >. | E. r e. RR E. s e. RR E. t e. RR E. u e. RR
-    ( ( x = ( r + ( _i x. s ) ) /\ y = ( t + ( _i x. u ) ) ) /\
-    ( r #RR t \/ s #RR u ) ) } $.
+  ${
+    $d r s t u x y $.
+    $( Define complex apartness.  Definition 6.1 of Skeleton for the Proof
+       development leading to the.  Fundamental Theorem of Algebra, Herman
+       Geuvers, Randy Pollack, Freek Wiedijk, Jan Zwanenburg, October 2, 2000.
+       (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+    df-ap $a |- # = { <. x , y >. | E. r e. RR E. s e. RR E. t e. RR E. u e. RR
+      ( ( x = ( r + ( _i x. s ) ) /\ y = ( t + ( _i x. u ) ) ) /\
+      ( r #RR t \/ s #RR u ) ) } $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
