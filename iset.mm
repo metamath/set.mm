@@ -65820,10 +65820,9 @@ $)
      from set theory.  (This restates ~ ax-pre-apti with ordering on the
      extended reals.)  (Contributed by Jim Kingdon, 29-Jan-2020.) $)
   axapti $p |- ( ( A e. RR /\ B e. RR /\ -. ( A < B \/ B < A ) ) -> A = B ) $=
-    ( cr wcel clt wo wn wceq wa cltrr ltxrlt wb ancoms orbi12d notbid
-    wbr ax-pre-apti 3expia sylbid 3impia ) ACDZBCDZABEPZBAEPZFZGZABHZ
-    UAUBIZUFABJPZBAJPZFZGZUGUHUEUKUHUCUIUDUJABKUBUAUDUJLBAKMNOUAUBULU
-    GABQRST $.
+    ( cr wcel clt wbr wo wn wceq cltrr ltxrlt ancoms orbi12d notbid ax-pre-apti
+    wa wb 3expia sylbid 3impia ) ACDZBCDZABEFZBAEFZGZHZABIZUAUBPZUFABJFZBAJFZGZ
+    HZUGUHUEUKUHUCUIUDUJABKUBUAUDUJQBAKLMNUAUBULUGABORST $.
 
   $( The product of two positive reals is positive.  Axiom for real and complex
      numbers, derived from set theory.  (This restates ~ ax-pre-mulgt0 with
