@@ -68656,6 +68656,18 @@ $)
     ( cr wcel wa cc0 cle wbr caddc co addge01 cc wceq recn addcom syl2an breq2d
     bitrd ) ACDZBCDZEZFBGHAABIJZGHABAIJZGHABKUAUBUCAGSALDBLDUBUCMTANBNABOPQR $.
 
+  $( Two nonnegative numbers are zero iff their sum is zero.  (Contributed by
+     Jeff Madsen, 2-Sep-2009.)  (Proof shortened by Mario Carneiro,
+     27-May-2016.) $)
+  add20 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) )
+                        -> ( ( A + B ) = 0 <-> ( A = 0 /\ B = 0 ) ) ) $=
+    ( cr wcel cc0 cle wbr wa caddc wceq simpllr simplrl simplll addge02 syl2anc
+    co wb mpbid simpr breqtrd simplrr letri3d mpbir2and oveq2d addid1d 3eqtr3rd
+    0red recnd jca ex oveq12 00id syl6eq impbid1 ) ACDZEAFGZHZBCDZEBFGZHZHZABIP
+    ZEJZAEJZBEJZHZVAVCVFVAVCHZVDVEVGVBAEIPEAVGBEAIVGVEBEFGUSVGBVBEFVGUPBVBFGZUO
+    UPUTVCKVGURUOUPVHQUQURUSVCLZUOUPUTVCMZBANORVAVCSZTUQURUSVCUAVGBEVIVGUGUBUCZ
+    UDVKVGAVGAVJUHUEUFVLUIUJVFVBEEIPEAEBEIUKULUMUN $.
+
   $( Nonnegative subtraction.  (Contributed by NM, 14-Mar-2005.)  (Proof
      shortened by Mario Carneiro, 27-May-2016.) $)
   subge0 $p |- ( ( A e. RR /\ B e. RR ) ->
@@ -68685,6 +68697,16 @@ $)
                 ( 0 <_ B <-> ( A - B ) <_ A ) ) $=
     ( cr wcel wa cc0 cle wbr caddc co cmin addge01 wb lesubadd 3anidm13 bitr4d
     ) ACDZBCDZEFBGHAABIJGHZABKJAGHZABLQRTSMABANOP $.
+
+  $( Lemma to show a nonnegative number is zero.  (Contributed by NM,
+     8-Oct-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  lesub0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( ( 0 <_ A /\ B <_ ( B - A ) ) <-> A = 0 ) ) $=
+    ( cr wcel wa cc0 wceq cle wbr cmin co 0red letri3 sylan2 ancom simpr lesub2
+    wb simpl syl3anc recnd subid1d breq1d bitrd ancoms anbi2d syl5bb bitr2d ) A
+    CDZBCDZEZAFGZAFHIZFAHIZEZUNBBAJKZHIZEZUJUIFCDZULUORUJLAFMNUOUNUMEUKURUMUNOU
+    KUMUQUNUJUIUMUQRUJUIEZUMBFJKZUPHIZUQUTUIUSUJUMVBRUJUIPUTLUJUISZAFBQTUTVABUP
+    HUTBUTBVCUAUBUCUDUEUFUGUH $.
 
   $( The product of two negative numbers is positive.  (Contributed by Jeff
      Hankins, 8-Jun-2009.) $)
@@ -68747,6 +68769,13 @@ $)
         ( cc0 clt wbr caddc co addgt0i mp2an ) GAHIGBHIGABJKHIEFABCDLM $.
     $}
 
+    $( Two nonnegative numbers are zero iff their sum is zero.  (Contributed by
+       NM, 28-Jul-1999.) $)
+    add20i $p |- ( ( 0 <_ A /\ 0 <_ B ) ->
+      ( ( A + B ) = 0 <-> ( A = 0 /\ B = 0 ) ) ) $=
+      ( cr wcel cc0 cle wbr wa caddc co wceq wb add20 an4s mpanl12 ) AEFZBEFZGA
+      HIZGBHIZJABKLGMAGMBGMJNZCDRTSUAUBABOPQ $.
+
     $( Negative of both sides of 'less than'.  Theorem I.23 of [Apostol]
        p. 20.  (Contributed by NM, 21-Jan-1997.) $)
     ltnegi $p |- ( A < B <-> -u B < -u A ) $=
@@ -68761,6 +68790,12 @@ $)
        14-May-1999.) $)
     ltnegcon2i $p |- ( A < -u B <-> B < -u A ) $=
       ( cr wcel cneg clt wbr wb ltnegcon2 mp2an ) AEFBEFABGHIBAGHIJCDABKL $.
+
+    $( Lemma to show a nonnegative number is zero.  (Contributed by NM,
+       8-Oct-1999.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+    lesub0i $p |- ( ( 0 <_ A /\ B <_ ( B - A ) ) <-> A = 0 ) $=
+      ( cr wcel cc0 cle wbr cmin co wa wceq wb lesub0 mp2an ) AEFBEFGAHIBBAJKHI
+      LAGMNCDABOP $.
 
     $( Adding a positive number to another number increases it.  (Contributed
        by NM, 25-Aug-1999.) $)
