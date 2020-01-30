@@ -69321,14 +69321,38 @@ $)
   $}
 
   ${
-    $d A x y $.
-    $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of
-       [[HoTT]], p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
-    reapirr $p |- ( A e. RR -> -. A #RR A ) $=
-      ( vx vy cr wcel creap wbr ltnr wa wo cv wceq breq12 ax-ia2 ax-ia1 breq12d
-      clt orbi12d df-reap brab2ga anidm oridm anbi12i bitri baib mtbird ) ADEZA
-      AFGZAAQGZAHUHUGUIUHUGUGIZUIUIJZIUGUIIBKZCKZQGZUMULQGZJUKBCAADDFULALZUMALZ
-      IZUNUIUOUIULAUMAQMURUMAULAQUPUQNUPUQOPRBCSTUJUGUKUIUGUAUIUBUCUDUEUF $.
+    $d A x y $.  $d B x y $.
+    $( Real apartness in terms of classes.  (Contributed by Jim Kingdon,
+       29-Jan-2020.) $)
+    reapval $p |- ( ( A e. RR /\ B e. RR ) ->
+        ( A #RR B <-> ( A < B \/ B < A ) ) ) $=
+      ( vx vy creap wbr cr wcel wa clt wo cv wceq breq12 ax-ia2 breq12d orbi12d
+      ax-ia1 df-reap brab2ga baib ) ABEFAGHBGHIABJFZBAJFZKZCLZDLZJFZUFUEJFZKUDC
+      DABGGEUEAMZUFBMZIZUGUBUHUCUEAUFBJNUKUFBUEAJUIUJOUIUJRPQCDSTUA $.
+  $}
+
+  $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of [[HoTT]],
+     p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+  reapirr $p |- ( A e. RR -> -. A #RR A ) $=
+    ( cr wcel creap wbr clt ltnr wo wb reapval anidms oridm syl6bb mtbird ) ABC
+    ZAADEZAAFEZAGOPQQHZQOPRIAAJKQLMN $.
+
+  ${
+    $d x y A $.
+    $( Existence of reciprocal of real number.  (Contributed by Jim Kingdon,
+       29-Jan-2020.) $)
+    recexre $p |- ( ( A e. RR /\ A #RR 0 ) -> E. x e. RR ( A x. x ) = 1 ) $=
+      ( vy cr wcel cc0 wbr cmul co c1 wceq wrex clt wb 0re wa cneg pm5.32i recn
+      eqeq1d creap cv wo reapval mpan2 lt0neg1 renegcl ltxrlt sylancr ax-precex
+      cltrr bitrd sylan sylbi negnegd oveq2d negeq rspcev sylbir adantl mul2neg
+      rexlimddv cc syl2an rexbidva adantr mpbid ex mpan jaod sylbid imp ) BDEZB
+      FUAGZBAUBZHIZJKZADLZVMVNBFMGZFBMGZUCZVRVMFDEZVNWANOBFUDUEVMVSVRVTVMVSVRVM
+      VSPZBQZVOQZHIZJKZADLZVRWCWDCUBZHIZJKZWHCDWCVMFWDUKGZPWKCDLZVMVSWLVMVSFWDM
+      GZWLBUFVMWBWDDEZWNWLNOBUGZFWDUHUIULRVMWOWLWMWPCWDUJUMUNWIDEZWKPZWHWCWRWQW
+      DWIQZQZHIZJKZPWHWQXBWKWQXAWJJWQWTWIWDHWQWIWISUOUPTRWQWSDEXBWHWIUGWGXBAWSD
+      VOWSKZWFXAJXCWEWTWDHVOWSUQUPTURUMUSUTVBVMWHVRNVSVMWGVQADVMVODEZPWFVPJVMBV
+      CEVOVCEWFVPKXDBSVOSBVOVAVDTVEVFVGVHVMVTVRVMVTPVMFBUKGZPVRVMVTXEWBVMVTXENO
+      FBUHVIRABUJUNVHVJVKVL $.
   $}
 
 $(
