@@ -15930,6 +15930,7 @@ New usage of "gsummhmOLD" is discouraged (2 uses).
 New usage of "gsummptfsaddOLD" is discouraged (0 uses).
 New usage of "gsummulc1OLD" is discouraged (1 uses).
 New usage of "gsummulc2OLD" is discouraged (1 uses).
+New usage of "gsumply1subrALT" is discouraged (0 uses).
 New usage of "gsumptOLD" is discouraged (1 uses).
 New usage of "gsumresOLD" is discouraged (6 uses).
 New usage of "gsumsplit2OLD" is discouraged (0 uses).
@@ -19229,6 +19230,7 @@ Proof modification of "gsummhmOLD" is discouraged (44 steps).
 Proof modification of "gsummptfsaddOLD" is discouraged (238 steps).
 Proof modification of "gsummulc1OLD" is discouraged (103 steps).
 Proof modification of "gsummulc2OLD" is discouraged (103 steps).
+Proof modification of "gsumply1subrALT" is discouraged (350 steps).
 Proof modification of "gsumptOLD" is discouraged (436 steps).
 Proof modification of "gsumresOLD" is discouraged (42 steps).
 Proof modification of "gsumsplit2OLD" is discouraged (133 steps).
