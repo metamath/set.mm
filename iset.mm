@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Jan-2020
+$( iset.mm - Version of 30-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69354,6 +69354,13 @@ $)
       CEVOVCEWFVPKXDBSVOSBVOVAVDTVEVFVGVHVMVTVRVMVTPVMFBUKGZPVRVMVTXEWBVMVTXENO
       FBUHVIRABUJUNVHVJVKVL $.
   $}
+
+  $( Real apartness is tight.  (Contributed by Jim Kingdon, 30-Jan-2020.) $)
+  reapti $p |- ( ( A e. RR /\ B e. RR ) -> ( A = B <-> -. A #RR B ) ) $=
+    ( cr wcel wa wceq creap wbr wn clt wo ltnr adantr oridm breq2 breq1 orbi12d
+    syl5bbr notbid syl5ibcom reapval sylibrd axapti 3expia sylbid impbid ) ACDZ
+    BCDZEZABFZABGHZIZUIUJABJHZBAJHZKZIZULUIAAJHZIZUJUPUGURUHALMUJUQUOUQUQUQKUJU
+    OUQNUJUQUMUQUNABAJOABAJPQRSTUIUKUOABUASZUBUIULUPUJUSUGUHUPUJABUCUDUEUF $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
