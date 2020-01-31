@@ -69422,6 +69422,17 @@ $)
       VBVCVD $.
   $}
 
+  $( Decomposition of a real number into real part (itself) and imaginary part
+     (zero).  (Contributed by Jim Kingdon, 30-Jan-2020.) $)
+  rereim $p |- ( ( ( A e. RR /\ B e. RR ) /\
+      ( C e. RR /\ A = ( B + ( _i x. C ) ) ) ) -> ( B = A /\ C = 0 ) ) $=
+    ( cr wcel wa ci cmul co caddc wceq cc0 simpll recnd simplr simprr eqcomd cc
+    cmin ax-icn a1i simprl mulcld subaddd mpbird resubcld eqeltrrd rimul oveq2d
+    syl2anc mul01i syl6eq eqtrd subeq0d jca ) ADEZBDEZFZCDEZABGCHIZJIZKZFZFZBAK
+    CLKZVDABVDABVDAUPUQVCMZNZVDBUPUQVCOZNZVDABSIZUTLVDVJUTKVAAKVDAVAURUSVBPQVDA
+    BUTVGVIVDGCGREVDTUAVDCURUSVBUBZNUCUDUEZVDUTGLHILVDCLGHVDUSUTDEVEVKVDVJUTDVL
+    VDABVFVHUFUGCUHUJZUIGTUKULUMUNQVMUO $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
