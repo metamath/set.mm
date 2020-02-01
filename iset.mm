@@ -1,4 +1,4 @@
-$( iset.mm - Version of 31-Jan-2020
+$( iset.mm - Version of 1-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69322,7 +69322,9 @@ $)
 
   ${
     $d A x y $.  $d B x y $.
-    $( Real apartness in terms of classes.  (Contributed by Jim Kingdon,
+    $( Real apartness in terms of classes.  Beyond the development of ` # `
+       itself, proofs should use ~ reaplt instead.
+       (New usage is discouraged.)  (Contributed by Jim Kingdon,
        29-Jan-2020.) $)
     reapval $p |- ( ( A e. RR /\ B e. RR ) ->
         ( A #RR B <-> ( A < B \/ B < A ) ) ) $=
@@ -69469,6 +69471,13 @@ $)
       OUVAUUMWGZWMWIUFUXBYAUVOYBUXBXJAXOKUXCWSWNWLWRRWQWPXEXFXHYHVBXIUUAWTXAXBX
       CXD $.
   $}
+
+  $( Real apartness in terms of less than.  (Contributed by Jim Kingdon,
+     1-Feb-2020.) $)
+  reaplt $p |- ( ( A e. RR /\ B e. RR ) ->
+      ( A # B <-> ( A < B \/ B < A ) ) ) $=
+    ( cr wcel wa cap wbr creap clt wo apreap reapval bitrd ) ACDBCDEABFGABHGABI
+    GBAIGJABKABLM $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
