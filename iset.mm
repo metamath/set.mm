@@ -1,4 +1,4 @@
-$( iset.mm - Version of 17-Jan-2020
+$( iset.mm - Version of 29-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35234,10 +35234,9 @@ $)
     $( Define the strict linear order predicate.  The expression ` R Or A ` is
        true if relationship ` R ` orders ` A ` .  The property
        ` x R y -> ( x R z \/ z R y ) ` is called weak linearity by Proposition
-       (11.2.3) of [HoTT], p.  (varies).  If we assumed excluded middle, it
-       would be equivalent to trichotomy, ` x R y \/ x = y \/ y R x ` .
-       (Contributed by NM, 21-Jan-1996.)  (Revised by Jim Kingdon,
-       4-Oct-2018.) $)
+       11.2.3 of [HoTT], p.  (varies).  If we assumed excluded middle, it would
+       be equivalent to trichotomy, ` x R y \/ x = y \/ y R x ` .  (Contributed
+       by NM, 21-Jan-1996.)  (Revised by Jim Kingdon, 4-Oct-2018.) $)
     df-iso $a |- ( R Or A <-> ( R Po A /\ A. x e. A A. y e. A A. z e. A
                 ( x R y -> ( x R z \/ z R y ) ) ) ) $.
   $}
@@ -61159,8 +61158,10 @@ $)
     $( A Dedekind cut is arithmetically located.  Part of Proposition 11.15 of
        [BauerTaylor], p. 52, slightly modified.  It states that given a
        tolerance ` P ` , there are elements of the lower and upper cut which
-       are within that tolerance of each other.  (Contributed by Jim Kingdon,
-       22-Oct-2019.) $)
+       are within that tolerance of each other.
+
+       Usually, proofs will be shorter if they use ~ prarloc2 instead.
+       (Contributed by Jim Kingdon, 22-Oct-2019.) $)
     prarloc $p |- ( ( <. L , U >. e. P. /\ P e. Q. ) ->
         E. a e. L E. b e. U b <Q ( a +Q P ) ) $=
       ( vx vy vq vn vm wcel cnq wa cv co wex wrex df-rex sylib anbi2d cplq cltq
@@ -62998,37 +62999,32 @@ $)
     $( Lemma for ~ addcanprg .  (Contributed by Jim Kingdon, 25-Dec-2019.) $)
     addcanprleml $p |- ( ( ( A e. P. /\ B e. P. /\ C e. P. ) /\
         ( A +P. B ) = ( A +P. C ) ) -> ( 1st ` B ) C_ ( 1st ` C ) ) $=
-      ( vf vg vh cnp wcel co wceq wa cfv cv cplq cnq c2nd syl ad3antrrr syl2anc
-      adantr vv vw vt vq vu vr vs w3a cpp c1st wrex cop prop prnmaddl 3ad2antl2
-      adantlr simprl halfnqq cltq wbr prarloc 3ad2antl1 ad2ant2r simplll simp1d
-      sylan wn simp2d addclpr simplrl elprnql simplr ad2antrr addclnq prdisj wi
-      df-iplp genpprecll 3adant3 ancomsd imp anassrs addcomnqg adantl addassnqg
-      adantrll caov4d simprr oveq2d syl3anc 3eqtrd simpr simplrr prcunqu simp3d
-      mpd genppreclu mp2and eqeltrrd wb fveq2 eleq2d mpbird mtand ltaddnq prloc
-      jca wo ecased ex rexlimdvva rexlimddv ssrdv ) AGHZBGHZCGHZUHZABUIIZACUIIZ
-      JZKZUABUJLZCUJLZYAUAMZYBHZYDYCHZYAYEKZYDUBMZNIZYBHZYFUBOXQYEYJUBOUKZXTXOX
-      NYEYKXPXOYBBPLZULGHZYEYKBUMZUBYDYLYBUNVFUOUPYGYHOHZYJKZKZUCMZYRNIZYHJZYFU
-      COYQYOYTUCOUKYGYOYJUQUCYHURQYQYROHZYTKZKZUDMZUEMZYRNIZUSUTZUDAPLZUKUEAUJL
-      ZUKZYFYGUUBUUJYPYAUUBUUJYEXQUUAUUJXTYTXNXOUUAUUJXPXNUUIUUHULGHZUUAUUJAUMZ
-      YRUUHUUIUEUDVAVFVBVCUPUPUUCUUGYFUEUDUUIUUHUUCUUEUUIHZUUDUUHHZKZKZUUGYFUUP
-      UUGKZYFYDYRNIZCPLZHZUUQUUTUUEYINIZXRUJLZHZUVAXRPLZHZKZUUQUVBUVDULGHZUVAOH
-      ZUVFVGUUQXRGHZUVGUUQXNXOUVIUUQXNXOXPYQXQUUBUUOUUGXQXTYEYPVDRZVEZUUQXNXOXP
-      UVJVHZABVISXRUMQUUQUUEOHZYIOHZUVHUUQUUKUUMUVMUUQXNUUKUVKUULQUUCUUMUUNUUGV
-      JUUEUUHUUIVKSZUUQYDOHZYOUVNUUQYMYEUVPUUQXOYMUVLYNQYQYEUUBUUOUUGYAYEYPVLRY
-      DYLYBVKSZUUCYOUUOUUGYGYOYJUUBVJZVMYDYHVNSUUEYIVNSUVAUVDUVBVOSUUQUUTKZUVCU
-      VEUUPUVCUUGUUTYQUUMUVCUUBUUNYGYPUUMUVCYGYJUUMUVCYOYGYJUUMKUVCYGUUMYJUVCXQ
-      UUMYJKUVCVPZXTYEXNXOUVTXPDEFUFUGABUUEYIUINUFUGFEDVQZEMZFMZVNZVRVSVMVTWAWF
-      WBVCVMUVSUVEUVAXSPLZHZUVSUUFUURNIZUVAUWEUVSUWGUUEYDNIZYSNIUWHYHNIZUVAUVSD
-      EFUUEYRYDYRONUUQUVMUUTUVOTZUUQUUAUUTUUCUUAUUOUUGYQUUAYTUQVMZTZUUQUVPUUTUV
-      QTZDMZOHZUWBOHZKZUWNUWBNIZUWBUWNNIJUVSUWNUWBWCWDUWOUWPUWCOHUHUWRUWCNIUWNU
-      WBUWCNINIJUVSUWNUWBUWCWEWDUWLUWQUWROHUVSUWNUWBVNWDWGUVSYSYHUWHNUUCYTUUOUU
-      GUUTYQUUAYTWHRWIUVSUVMUVPYOUWIUVAJUWJUWMUUCYOUUOUUGUUTUVRRUUEYDYHWEWJWKUV
-      SUUFUUHHZUUTUWGUWEHZUUQUWSUUTUUQUUGUWSUUPUUGWLUUQXNUUNUUGUWSVPZUVKUUCUUMU
-      UNUUGWMXNUUKUUNUXAUULUUFUUDUUHUUIWNVFSWPTUUQUUTWLUVSXNXPUWSUUTKUWTVPUUQXN
-      UUTUVKTUUQXPUUTUUQXNXOXPUVJWOZTDEFUFUGACUUFUURUINUWAUWDWQSWRWSUVSXTUVEUWF
-      WTUUCXTUUOUUGUUTYAXTYEYPUUBXQXTWLRRXTUVDUWEUVAXRXSPXAXBQXCXGXDUUQYCUUSULG
-      HZYDUURUSUTZYFUUTXHUUQXPUXCUXBCUMQUUQUVPUUAUXDUVQUWKYDYRXESYDUURUUSYCXFSX
-      IXJXKWPXLXLXJXM $.
+      ( vf vg vh cnp wcel co wceq cfv cplq cnq c2nd syl adantr syl2anc ad2antrr
+      wa cv vv vw vt vu vr vs w3a cpp c1st wrex cop prop prnmaddl sylan adantlr
+      3ad2antl2 simprl halfnqq simplll simp1d prarloc2 wn simp2d addclpr simplr
+      elprnql simplrl addclnq simplrr df-iplp genpprecll imp syl22anc addcomnqg
+      prdisj adantl addassnqg caov4d simprr oveq2d syl3anc 3eqtrd wi genppreclu
+      simpr simp3d mp2and eqeltrrd ad3antrrr fveq2 eleq2d mpbird jca mtand cltq
+      wb wbr wo ltaddnq prloc ecased rexlimddv ex ssrdv ) AGHZBGHZCGHZUGZABUHIZ
+      ACUHIZJZSZUABUIKZCUIKZXLUATZXMHZXOXNHZXLXPSZXOUBTZLIZXMHZXQUBMXHXPYAUBMUJ
+      ZXKXFXEXPYBXGXFXMBNKZUKGHZXPYBBULZUBXOYCXMUMUNUPUOXRXSMHZYASZSZUCTZYILIZX
+      SJZXQUCMYHYFYKUCMUJXRYFYAUQUCXSUROYHYIMHZYKSZSZUDTZYILIZANKZHZXQUDAUIKZYN
+      YSYQUKGHZYLYRUDYSUJYNXEYTYNXEXFXGYHXHYMXHXKXPYGUSZPUTAULZOYHYLYKUQZYIYQYS
+      UDVAQYNYOYSHZYRSZSZXQXOYILIZCNKZHZUUFUUIYOXTLIZXIUIKZHZUUJXINKZHZSZUUFUUK
+      UUMUKGHZUUJMHZUUOVBUUFXIGHZUUPUUFXEXFUURUUFXEXFXGYHXHYMUUEUUARZUTZUUFXEXF
+      XGUUSVCZABVDQXIULOUUFYOMHZXTMHZUUQUUFYTUUDUVBUUFXEYTUUTUUBOYNUUDYRUQYOYQY
+      SVFQZUUFXOMHZYFUVCUUFYDXPUVEUUFXFYDUVAYEOYHXPYMUUEXLXPYGVERXOYCXMVFQZYNYF
+      UUEXRYFYAYMVGZPXOXSVHQYOXTVHQUUJUUMUUKVOQUUFUUISZUULUUNUVHXEXFUUDYAUULUUF
+      XEUUIUUTPZUUFXFUUIUVAPYNUUDYRUUIVGYNYAUUEUUIXRYFYAYMVIRXEXFSUUDYASUULDEFU
+      EUFABYOXTUHLUEUFFEDVJZETZFTZVHZVKVLVMUVHUUNUUJXJNKZHZUVHYPUUGLIZUUJUVNUVH
+      UVPYOXOLIZYJLIUVQXSLIZUUJUVHDEFYOYIXOYIMLUUFUVBUUIUVDPZYNYLUUEUUIUUCRZUUF
+      UVEUUIUVFPZDTZMHZUVKMHZSZUWBUVKLIZUVKUWBLIJUVHUWBUVKVNVPUWCUWDUVLMHUGUWFU
+      VLLIUWBUVKUVLLILIJUVHUWBUVKUVLVQVPUVTUWEUWFMHUVHUWBUVKVHVPVRUVHYJXSUVQLYN
+      YKUUEUUIYHYLYKVSRVTUVHUVBUVEYFUVRUUJJUVSUWAYNYFUUEUUIUVGRYOXOXSVQWAWBUVHY
+      RUUIUVPUVNHZYNUUDYRUUIVIUUFUUIWEUVHXEXGYRUUISUWGWCUVIUUFXGUUIUUFXEXFXGUUS
+      WFZPDEFUEUFACYPUUGUHLUVJUVMWDQWGWHUVHXKUUNUVOWPYNXKUUEUUIXLXKXPYGYMXHXKWE
+      WIRXKUUMUVNUUJXIXJNWJWKOWLWMWNUUFXNUUHUKGHZXOUUGWOWQZXQUUIWRUUFXGUWIUWHCU
+      LOUUFUVEYLUWJUVFYHYLYKUUEVGXOYIWSQXOUUGUUHXNWTQXAXBXBXBXCXD $.
 
     $( Lemma for ~ addcanprg .  (Contributed by Jim Kingdon, 25-Dec-2019.) $)
     addcanprlemu $p |- ( ( ( A e. P. /\ B e. P. /\ C e. P. ) /\
@@ -63400,6 +63396,72 @@ $)
       ZVGWGDFWMVBWCTZNZVCWDVFWFVAWBVBWCJUEWOVDWEVEWOVBWCLWMWNUFZUGZUHUIUJUKVNWL
       CEWMVMWKDFWOVJWIVLWJWOVBWCVAWBJWPWMWNUMULWOVDWEVKWQUHUIUJUKUNZUOEFBVPWRUP
       WAVRAVPGVSVPTVTVQSVSVPBQUQURUSUT $.
+  $}
+
+  ${
+    $d A f g h s t u v x $.  $d B f g h s t u v x $.
+    $( Lemma for ~ aptipr .  (Contributed by Jim Kingdon, 28-Jan-2020.) $)
+    aptiprleml $p |- ( ( A e. P. /\ B e. P. /\ -. B <P A ) ->
+        ( 1st ` A ) C_ ( 1st ` B ) ) $=
+      ( vs vt vu vv cnp wcel wbr cfv cv wa cltq wrex sylan cplq co wceq syl2anc
+      cnq vx vf vg vh cltp wn w3a c1st wi c2nd prnmaxl ad2ant2rl simprr ltrelnq
+      cop prop brel ltexnqq biimpd mpcom simplr ad2antrr simprl prarloc2 adantr
+      syl elprnql simpll ad3antrrr nqtri3or simplrl addclnq wb ltanqg addcomnqg
+      w3o adantl caovord2d simplrr eqeltrd prcdnql sylbid jctild anbi12d rspcev
+      imp eleq1 ltdfpr mpbird pm2.21dd syl5ibcom 3jaod mpd rexlimddv expr 3impa
+      ex ssrdv ) AGHZBGHZBAUEIZUFZUGUAAUHJZBUHJZWSWTXBUAKZXCHZXEXDHZUIWSWTLZXBX
+      FXGXHXBXFLZLZXECKZMIZXGCXCWSXFXLCXCNZWTXBWSXCAUJJZUOGHZXFXMAUPZCXEXNXCUKO
+      ULXJXKXCHZXLLZLZXEDKZPQZXKRZXGDTXSXLYBDTNZXJXQXLUMXETHZXKTHLZXLYCXEXKTTMU
+      NUQYEXLYCDXEXKURUSUTVFXSXTTHZYBLZLZEKZXTPQZBUJJZHZXGEXDYHWTYFYLEXDNZXJWTX
+      RYGWSWTXIVAVBZXSYFYBVCWTXDYKUOGHZYFYMBUPZXTYKXDEVDOSYHYIXDHZYLLZLZYIXEMIZ
+      YIXERZXEYIMIZVPZXGYSYITHZYDUUCYSWTYQUUDYHWTYRYNVEZYHYQYLVCZWTYOYQUUDYPYIY
+      KXDVGOSZYSWSXFYDXJWSXRYGYRWSWTXIVHVIZXJXFXRYGYRXHXBXFUMVIWSXOXFYDXPXEXNXC
+      VGOSZYIXEVJSYSYTXGUUAUUBYSYTXGYSYTLZXAXGUUJXAFKZYKHZUUKXCHZLZFTNZUUJYJTHZ
+      YLYJXCHZLZUUOUUJUUDYFUUPYSUUDYTUUGVEYSYFYTXSYFYBYRVKZVEYIXTVLSYSYTUURYSYT
+      UUQYLYSYTYJYAMIZUUQYSUBUCUDYIXEXTMTPUBKZTHZUCKZTHZUDKZTHUGUVAUVCMIUVEUVAP
+      QUVEUVCPQMIVMYSUVAUVCUVEVNVQUUGUUIUUSUVBUVDLUVAUVCPQUVCUVAPQRYSUVAUVCVOVQ
+      VRYSWSYAXCHZUUTUUQUIZUUHYSYAXKXCXSYFYBYRVSXSXQYGYRXJXQXLVCVBVTWSXOUVFUVGX
+      PYAYJXNXCWAOSWBYHYQYLUMWCWFUUNUURFYJTUUKYJRUULYLUUMUUQUUKYJYKWGUUKYJXCWGW
+      DWESYSXAUUOVMZYTYSWTWSUVHUUEUUHBAFWHSVEWIXSXBYGYRYTXHXBXFXRVKVIWJWQYSYQUU
+      AXGUUFYIXEXDWGWKYSWTYQUUBXGUIZUUEUUFWTYOYQUVIYPYIXEYKXDWAOSWLWMWNWNWNWOWP
+      WR $.
+
+    $( Lemma for ~ aptipr .  (Contributed by Jim Kingdon, 28-Jan-2020.) $)
+    aptiprlemu $p |- ( ( A e. P. /\ B e. P. /\ -. B <P A ) ->
+        ( 2nd ` B ) C_ ( 2nd ` A ) ) $=
+      ( vs vt vu cnp wcel wbr cfv cv cltq wrex sylan cplq cnq syl2anc ad3antrrr
+      wa co adantr vx vf vg vh cltp wn w3a c2nd c1st cop prop prnminu 3ad2antl2
+      wceq simprr ltrelnq brel biimpd mpcom syl simpl1 ad2antrr simprl prarloc2
+      ltexnqq simpl2 ax-ia2 elprnqu elprnql addclnq nqtri3or wi simplrr biimprd
+      w3o imp wb ltanqg adantl addcomnqg caovord2d mpbird prcdnql rspe syl12anc
+      breq1 ltdfpr simpll3 pm2.21dd ex eleq1 syl5ibrcom prcunqu 3jaod rexlimddv
+      mpd ssrdv ) AFGZBFGZBAUEHZUFZUGZUABUHIZAUHIZXBUAJZXCGZXEXDGZXBXFRZCJZXEKH
+      ZXGCXCWSWRXFXJCXCLZXAWSBUIIZXCUJFGZXFXKBUKZCXEXCXLULMUMXHXIXCGZXJRZRZXIDJ
+      ZNSZXEUNZXGDOXQXJXTDOLZXHXOXJUOXIOGZXEOGZRZXJYAXIXEOOKUPUQYDXJYADXIXEVEUR
+      USUTXQXROGZXTRZRZEJZXRNSZXDGZXGEAUIIZYGWRYEYJEYKLZXHWRXPYFWRWSXAXFVAZVBXQ
+      YEXTVCZWRYKXDUJFGZYEYLAUKZXRXDYKEVDMPYGYHYKGZYJRZRZXEYIKHZXEYIUNZYIXEKHZV
+      OZXGYSYCYIOGZUUCYSWSXFYCXHWSXPYFYRWRWSXAXFVFZQZXHXFXPYFYRXBXFVGQWSXMXFYCX
+      NXEXCXLVHMPYSYHOGZYEUUDYSWRYQUUGXHWRXPYFYRYMQZYGYQYJVCZWRYOYQUUGYPYHXDYKV
+      IMPZYGYEYRYNTZYHXRVJPXEYIVKPYSYTXGUUAUUBYSYTXGYSYTRZWTXGUULWTXOXIYKGZRZCO
+      LZUULYBXOUUMUUOXQYBYFYRYTXQWSXOYBXHWSXPUUETXHXOXJVCZWSXMXOYBXNXIXCXLVHMPQ
+      ZXQXOYFYRYTUUPQUULXIYHKHZUUMUULUURXSYIKHZYSYTUUSYSXTYTUUSVLXQYEXTYRVMXTUU
+      SYTXSXEYIKWFVNUTVPUULUBUCUDXIYHXRKONUBJZOGZUCJZOGZUDJZOGUGUUTUVBKHUVDUUTN
+      SUVDUVBNSKHVQUULUUTUVBUVDVRVSUUQYSUUGYTUUJTYSYEYTUUKTUVAUVCRUUTUVBNSUVBUU
+      TNSUNUULUUTUVBVTVSWAWBUULWRYQUURUUMVLZYSWRYTUUHTZYSYQYTUUITWRYOYQUVEYPYHX
+      IXDYKWCMPWPUUNCOWDWEUULWSWRWTUUOVQYSWSYTUUFTUVFBACWGPWBXQXAYFYRYTWRWSXAXF
+      XPWHQWIWJYSXGUUAYJYGYQYJUOZXEYIXDWKWLYSWRYJUUBXGVLZUUHUVGWRYOYJUVHYPXEYIX
+      DYKWMMPWNWPWOWOWOWJWQ $.
+
+    $( Apartness of positive reals is tight.  (Contributed by Jim Kingdon,
+       28-Jan-2020.) $)
+    aptipr $p |- ( ( A e. P. /\ B e. P. /\ -. ( A <P B \/ B <P A ) )
+        -> A = B ) $=
+      ( cnp wcel cltp wbr wo wn w3a wceq c1st cfv c2nd simp1 aptiprleml syl3anc
+      wss wa eqssd aptiprlemu simp2 ioran biimpi 3ad2ant3 simprd simpld 3adant3
+      wb preqlu mpbir2and ) ACDZBCDZABEFZBAEFZGHZIZABJZAKLZBKLZJZAMLZBMLZJZUPUR
+      USUPUKULUNHZURUSQUKULUONZUKULUOUAZUPUMHZVDUOUKVGVDRZULUOVHUMUNUBUCUDZUEZA
+      BOPUPULUKVGUSURQVFVEUPVGVDVIUFZBAOPSUPVAVBUPULUKVGVAVBQVFVEVKBATPUPUKULVD
+      VBVAQVEVFVJABTPSUKULUQUTVCRUHUOABUIUGUJ $.
   $}
 
   ${
@@ -64246,6 +64308,25 @@ $)
       FUKULUMZJKUUJUUCYGUYMIJXRXSYBYCXAUTUUIUUFVDXBXCXGXHXI $.
   $}
 
+  ${
+    $d A w x y z $.  $d B w z $.
+    $( Apartness of signed reals is tight.  (Contributed by Jim Kingdon,
+       29-Jan-2020.) $)
+    aptisr $p |- ( ( A e. R. /\ B e. R. /\ -. ( A <R B \/ B <R A ) )
+        -> A = B ) $=
+      ( vx cnr wcel cltr wbr wo wn wceq cv cer wi cnp orbi12d notbid wa co cltp
+      cpp vy vz cop cec df-nr breq1 breq2 imbi12d addcomprg ad2ant2lr ad2ant2rl
+      eqeq1 breq12d orbi2d addclpr aptipr 3expia syl2anc sylbird ltsrprg ancoms
+      vw eqeq2 wb enreceq 3imtr4d 2ecoptocl 3impia ) ADEBDEABFGZBAFGZHZIZABJZCK
+      ZUAKZUCLUDZUBKZVBKZUCLUDZFGZVSVPFGZHZIZVPVSJZMAVSFGZVSAFGZHZIZAVSJZMVLVMM
+      CUAUBVBABNNLDUEVPAJZWCWHWDWIWJWBWGWJVTWEWAWFVPAVSFUFVPAVSFUGOPVPAVSULUHVS
+      BJZWHVLWIVMWKWGVKWKWEVIWFVJVSBAFUGVSBAFUFOPVSBAVCUHVNNEZVONEZQZVQNEZVRNEZ
+      QZQZVNVRTRZVOVQTRZSGZVQVOTRZVRVNTRZSGZHZIZWSWTJZWCWDWRXFXAWTWSSGZHZIZXGWR
+      XIXEWRXHXDXAWRWTXBWSXCSWMWOWTXBJWLWPVOVQUIUJWLWPWSXCJWMWOVNVRUIUKUMUNPWRW
+      SNEZWTNEZXJXGMWLWPXKWMWOVNVRUOUKWMWOXLWLWPVOVQUOUJXKXLXJXGWSWTUPUQURUSWRW
+      BXEWRVTXAWAXDVNVOVQVRUTWQWNWAXDVDVQVRVNVOUTVAOPVNVOVQVRVEVFVGVH $.
+  $}
+
   $( Class of complex numbers. $)
   cc $a class CC $.
   $( Class of real numbers. $)
@@ -64930,6 +65011,25 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.
+    $( Apartness of reals is tight.  Axiom for real and complex numbers,
+       derived from set theory.  This construction-dependent theorem should not
+       be referenced directly; instead, use ~ ax-pre-apti .
+
+       (Contributed by Jim Kingdon, 29-Jan-2020.)
+       (New usage is discouraged.) $)
+    axpre-apti $p |- ( ( A e. RR /\ B e. RR /\ -. ( A <RR B \/ B <RR A ) ) ->
+        A = B ) $=
+      ( vx vy cr wcel cltrr wbr wo wn wceq cv c0r cop wi cnr elreal breq1 breq2
+      orbi12d notbid eqeq1 imbi12d eqeq2 wa aptisr 3expia ltresr orbi12i notbii
+      cltr vex eqresr 3imtr4g 2gencl 3impia ) AEFBEFABGHZBAGHZIZJZABKZCLZMNZDLZ
+      MNZGHZVEVCGHZIZJZVCVEKZOAVEGHZVEAGHZIZJZAVEKZOUTVAOCDVCVEABPECAQDBQVCAKZV
+      IVNVJVOVPVHVMVPVFVKVGVLVCAVEGRVCAVEGSTUAVCAVEUBUCVEBKZVNUTVOVAVQVMUSVQVKU
+      QVLURVEBAGSVEBAGRTUAVEBAUDUCVBPFZVDPFZUEVBVDUKHZVDVBUKHZIZJZVBVDKZVIVJVRV
+      SWCWDVBVDUFUGVHWBVFVTVGWAVBVDUHVDVBUHUIUJVBVDCULUMUNUOUP $.
+  $}
+
+  ${
     $d x y z A $.  $d x y z B $.  $d x y z C $.
     $( Ordering property of addition on reals.  Axiom for real and complex
        numbers, derived from set theory.  This construction-dependent theorem
@@ -65146,6 +65246,13 @@ $)
   ax-pre-lttrn $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
              ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) $.
   $( $j restatement 'ax-pre-lttrn' of 'axpre-lttrn'; $)
+
+  $( Apartness of reals is tight.  Axiom for real and complex numbers,
+     justified by theorem ~ axpre-apti .  (Contributed by Jim Kingdon,
+     29-Jan-2020.) $)
+  ax-pre-apti $a |- ( ( A e. RR /\ B e. RR /\ -. ( A <RR B \/ B <RR A ) ) ->
+    A = B ) $.
+  $( $j restatement 'ax-pre-apti' of 'axpre-apti'; $)
 
   $( Ordering property of addition on reals.  Axiom for real and complex
      numbers, justified by theorem ~ axpre-ltadd .  (Contributed by NM,
@@ -65709,6 +65816,14 @@ $)
     ZABCLUBUCUIUEMUDABNOUDUBUCUJUHMZUDUBUCUKUDUBQUFDEUGDEUKUDUCQCAPCBPUFUGNRSTU
     A $.
 
+  $( Apartness of reals is tight.  Axiom for real and complex numbers, derived
+     from set theory.  (This restates ~ ax-pre-apti with ordering on the
+     extended reals.)  (Contributed by Jim Kingdon, 29-Jan-2020.) $)
+  axapti $p |- ( ( A e. RR /\ B e. RR /\ -. ( A < B \/ B < A ) ) -> A = B ) $=
+    ( cr wcel clt wbr wo wn wceq cltrr ltxrlt ancoms orbi12d notbid ax-pre-apti
+    wa wb 3expia sylbid 3impia ) ACDZBCDZABEFZBAEFZGZHZABIZUAUBPZUFABJFZBAJFZGZ
+    HZUGUHUEUKUHUCUIUDUJABKUBUAUDUJQBAKLMNUAUBULUGABORST $.
+
   $( The product of two positive reals is positive.  Axiom for real and complex
      numbers, derived from set theory.  (This restates ~ ax-pre-mulgt0 with
      ordering on the extended reals.)  (Contributed by NM, 13-Oct-2005.) $)
@@ -65738,8 +65853,9 @@ $)
     ( cr wcel cc0 clt wbr cmul co wa axmulgt0 imp an4s ) ACDZBCDZEAFGZEBFGZEABH
     IFGZNOJPQJRABKLM $.
 
-  $( 'Less than or equal to' expressed in terms of 'less than'.  (Contributed
-     by NM, 13-May-1999.) $)
+  $( 'Less than or equal to' expressed in terms of 'less than'.  Part of
+     definition 11.2.7(vi) of [HoTT], p.  (varies).  (Contributed by NM,
+     13-May-1999.) $)
   lenlt $p |- ( ( A e. RR /\ B e. RR ) -> ( A <_ B <-> -. B < A ) ) $=
     ( cr wcel cxr cle wbr clt wn wb rexr xrlenlt syl2an ) ACDAEDBEDABFGBAHGIJBC
     DAKBKABLM $.
@@ -65762,6 +65878,21 @@ $)
   gtso $p |- `' < Or RR $=
     ( vx cr clt wor ccnv ltso cc0 wcel cv wex wb 0re elex2 cnvsom mp2b mpbi ) B
     CDZBCEDZFGBHAIBHAJQRKLAGBMABCNOP $.
+
+  $( Tightness of real apartness.  (Contributed by NM, 5-May-1999.) $)
+  lttri3 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( A = B <-> ( -. A < B /\ -. B < A ) ) ) $=
+    ( cr wcel wa wceq clt wbr wn wi ltnr breq2 notbid syl5ibcom breq1 adantr wo
+    jcad ioran axapti 3expia syl5bir impbid ) ACDZBCDZEZABFZABGHZIZBAGHZIZEZUDU
+    GULJUEUDUGUIUKUDAAGHZIZUGUIAKZUGUMUHABAGLMNUDUNUGUKUOUGUMUJABAGOMNRPULUHUJQ
+    IZUFUGUHUJSUDUEUPUGABTUAUBUC $.
+
+  $( Tightness of real apartness.  (Contributed by NM, 14-May-1999.) $)
+  letri3 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( A = B <-> ( A <_ B /\ B <_ A ) ) ) $=
+    ( cr wcel wa wceq clt wbr wn cle lttri3 ancom syl6bbr ancoms anbi12d bitr4d
+    lenlt wb ) ACDZBCDZEZABFZBAGHIZABGHIZEZABJHZBAJHZEUAUBUDUCEUEABKUCUDLMUAUFU
+    CUGUDABQTSUGUDRBAQNOP $.
 
   $( Transitive law, weaker form of ` ( A < B /\ B <_ C ) -> A < C ` .
      (Contributed by AV, 14-Oct-2018.) $)
@@ -65867,6 +65998,15 @@ $)
     $}
 
     lt.2 $e |- B e. RR $.
+    $( Tightness of real apartness.  (Contributed by NM, 14-May-1999.) $)
+    lttri3i $p |- ( A = B <-> ( -. A < B /\ -. B < A ) ) $=
+      ( cr wcel wceq clt wbr wn wa wb lttri3 mp2an ) AEFBEFABGABHIJBAHIJKLCDABM
+      N $.
+
+    $( Tightness of real apartness.  (Contributed by NM, 14-May-1999.) $)
+    letri3i $p |- ( A = B <-> ( A <_ B /\ B <_ A ) ) $=
+      ( cr wcel wceq cle wbr wa wb letri3 mp2an ) AEFBEFABGABHIBAHIJKCDABLM $.
+
     $( 'Less than' is not symmetric.  (Contributed by NM, 6-May-1999.) $)
     ltnsymi $p |- ( A < B -> -. B < A ) $=
       ( cr wcel clt wbr wn wi ltnsym mp2an ) AEFBEFABGHBAGHIJCDABKL $.
@@ -65916,6 +66056,16 @@ $)
          14-May-1999.) $)
       letri $p |- ( ( A <_ B /\ B <_ C ) -> A <_ C ) $=
         ( cr wcel cle wbr wa wi letr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
+
+      $( Extended trichotomy law for 'less than or equal to'.  (Contributed by
+         NM, 14-Aug-2000.) $)
+      le2tri3i $p |- ( ( A <_ B /\ B <_ C /\ C <_ A ) <->
+                      ( A = B /\ B = C /\ C = A ) ) $=
+        ( cle wbr wceq wa letri letri3i biimpri sylan2 3impb 3comr eqcomd sylan
+        w3a eqlei 3impa 3jca 3anim123i impbii ) ABGHZBCGHZCAGHZSZABIZBCIZCAIZSU
+        HUIUJUKUEUFUGUIUFUGJUEBAGHZUIBCAEFDKUIUEULJABDELMNOUFUGUEUJUFUGUEUJUGUE
+        JUFCBGHZUJCABFDEKUJUFUMJBCEFLMNOPUEUFUGUKUEUFJACGHZUGUKABCDEFKUNUGJZACA
+        CIUOACDFLMQRUAUBUIUEUJUFUKUGABDTBCETCAFTUCUD $.
     $}
 
     $( The product of two positive numbers is positive.  (Contributed by NM,
@@ -65953,6 +66103,18 @@ $)
     $}
 
     ltd.2 $e |- ( ph -> B e. RR ) $.
+    $( Tightness of real apartness.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    lttri3d $p |- ( ph -> ( A = B <-> ( -. A < B /\ -. B < A ) ) ) $=
+      ( cr wcel wceq clt wbr wn wa wb lttri3 syl2anc ) ABFGCFGBCHBCIJKCBIJKLMDE
+      BCNO $.
+
+    $( Tightness of real apartness.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    letri3d $p |- ( ph -> ( A = B <-> ( A <_ B /\ B <_ A ) ) ) $=
+      ( cr wcel wceq cle wbr wa wb letri3 syl2anc ) ABFGCFGBCHBCIJCBIJKLDEBCMN
+      $.
+
     $( 'Less than or equal to' in terms of 'less than'.  (Contributed by Mario
        Carneiro, 27-May-2016.) $)
     lenltd $p |- ( ph -> ( A <_ B <-> -. B < A ) ) $=
@@ -66014,8 +66176,8 @@ $)
     $}
   $}
 
-  $( 0 is less than 1.  Theorem I.21 of [Apostol] p. 20.  (Contributed by NM,
-     17-Jan-1997.) $)
+  $( 0 is less than 1.  Theorem I.21 of [Apostol] p. 20.  Part of definition
+     11.2.7(vi) of [HoTT], p.  (varies).  (Contributed by NM, 17-Jan-1997.) $)
   0lt1 $p |- 0 < 1 $=
     ( cc0 c1 clt wbr cltrr ax-0lt1 cr wcel wb 0re 1re ltxrlt mp2an mpbir ) ABCD
     ZABEDZFAGHBGHOPIJKABLMN $.
@@ -68136,16 +68298,18 @@ $)
   lt0ne0 $p |- ( ( A e. RR /\ A < 0 ) -> A =/= 0 ) $=
     ( cr wcel cc0 clt wbr wa ltne necomd ) ABCADEFGDAADHI $.
 
-  $( Addition to both sides of 'less than'.  (Contributed by NM, 12-Nov-1999.)
-     (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  $( Addition to both sides of 'less than'.  Part of definition 11.2.7(vi) of
+     [HoTT], p.  (varies).  (Contributed by NM, 12-Nov-1999.)  (Proof shortened
+     by Mario Carneiro, 27-May-2016.) $)
   ltadd1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
                 ( A < B <-> ( A + C ) < ( B + C ) ) ) $=
     ( cr wcel w3a clt wbr caddc co ltadd2 simp3 recnd simp1 addcomd simp2 bitrd
     breq12d ) ADEZBDEZCDEZFZABGHCAIJZCBIJZGHACIJZBCIJZGHABCKUBUCUEUDUFGUBCAUBCS
     TUALMZUBASTUANMOUBCBUGUBBSTUAPMORQ $.
 
-  $( Addition to both sides of 'less than or equal to'.  (Contributed by NM,
-     18-Oct-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  $( Addition to both sides of 'less than or equal to'.  Part of definition
+     11.2.7(vi) of [HoTT], p.  (varies).  (Contributed by NM, 18-Oct-1999.)
+     (Proof shortened by Mario Carneiro, 27-May-2016.) $)
   leadd1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
                 ( A <_ B <-> ( A + C ) <_ ( B + C ) ) ) $=
     ( cr w3a clt wbr wn caddc co cle wb ltadd1 3com12 notbid simp1 simp2 lenltd
@@ -68491,6 +68655,18 @@ $)
     ( cr wcel wa cc0 cle wbr caddc co addge01 cc wceq recn addcom syl2an breq2d
     bitrd ) ACDZBCDZEZFBGHAABIJZGHABAIJZGHABKUAUBUCAGSALDBLDUBUCMTANBNABOPQR $.
 
+  $( Two nonnegative numbers are zero iff their sum is zero.  (Contributed by
+     Jeff Madsen, 2-Sep-2009.)  (Proof shortened by Mario Carneiro,
+     27-May-2016.) $)
+  add20 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) )
+                        -> ( ( A + B ) = 0 <-> ( A = 0 /\ B = 0 ) ) ) $=
+    ( cr wcel cc0 cle wbr wa caddc wceq simpllr simplrl simplll addge02 syl2anc
+    co wb mpbid simpr breqtrd simplrr letri3d mpbir2and oveq2d addid1d 3eqtr3rd
+    0red recnd jca ex oveq12 00id syl6eq impbid1 ) ACDZEAFGZHZBCDZEBFGZHZHZABIP
+    ZEJZAEJZBEJZHZVAVCVFVAVCHZVDVEVGVBAEIPEAVGBEAIVGVEBEFGUSVGBVBEFVGUPBVBFGZUO
+    UPUTVCKVGURUOUPVHQUQURUSVCLZUOUPUTVCMZBANORVAVCSZTUQURUSVCUAVGBEVIVGUGUBUCZ
+    UDVKVGAVGAVJUHUEUFVLUIUJVFVBEEIPEAEBEIUKULUMUN $.
+
   $( Nonnegative subtraction.  (Contributed by NM, 14-Mar-2005.)  (Proof
      shortened by Mario Carneiro, 27-May-2016.) $)
   subge0 $p |- ( ( A e. RR /\ B e. RR ) ->
@@ -68520,6 +68696,16 @@ $)
                 ( 0 <_ B <-> ( A - B ) <_ A ) ) $=
     ( cr wcel wa cc0 cle wbr caddc co cmin addge01 wb lesubadd 3anidm13 bitr4d
     ) ACDZBCDZEFBGHAABIJGHZABKJAGHZABLQRTSMABANOP $.
+
+  $( Lemma to show a nonnegative number is zero.  (Contributed by NM,
+     8-Oct-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  lesub0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( ( 0 <_ A /\ B <_ ( B - A ) ) <-> A = 0 ) ) $=
+    ( cr wcel wa cc0 wceq cle wbr cmin co 0red letri3 sylan2 ancom simpr lesub2
+    wb simpl syl3anc recnd subid1d breq1d bitrd ancoms anbi2d syl5bb bitr2d ) A
+    CDZBCDZEZAFGZAFHIZFAHIZEZUNBBAJKZHIZEZUJUIFCDZULUORUJLAFMNUOUNUMEUKURUMUNOU
+    KUMUQUNUJUIUMUQRUJUIEZUMBFJKZUPHIZUQUTUIUSUJUMVBRUJUIPUTLUJUISZAFBQTUTVABUP
+    HUTBUTBVCUAUBUCUDUEUFUGUH $.
 
   $( The product of two negative numbers is positive.  (Contributed by Jeff
      Hankins, 8-Jun-2009.) $)
@@ -68582,6 +68768,13 @@ $)
         ( cc0 clt wbr caddc co addgt0i mp2an ) GAHIGBHIGABJKHIEFABCDLM $.
     $}
 
+    $( Two nonnegative numbers are zero iff their sum is zero.  (Contributed by
+       NM, 28-Jul-1999.) $)
+    add20i $p |- ( ( 0 <_ A /\ 0 <_ B ) ->
+      ( ( A + B ) = 0 <-> ( A = 0 /\ B = 0 ) ) ) $=
+      ( cr wcel cc0 cle wbr wa caddc co wceq wb add20 an4s mpanl12 ) AEFZBEFZGA
+      HIZGBHIZJABKLGMAGMBGMJNZCDRTSUAUBABOPQ $.
+
     $( Negative of both sides of 'less than'.  Theorem I.23 of [Apostol]
        p. 20.  (Contributed by NM, 21-Jan-1997.) $)
     ltnegi $p |- ( A < B <-> -u B < -u A ) $=
@@ -68596,6 +68789,12 @@ $)
        14-May-1999.) $)
     ltnegcon2i $p |- ( A < -u B <-> B < -u A ) $=
       ( cr wcel cneg clt wbr wb ltnegcon2 mp2an ) AEFBEFABGHIBAGHIJCDABKL $.
+
+    $( Lemma to show a nonnegative number is zero.  (Contributed by NM,
+       8-Oct-1999.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+    lesub0i $p |- ( ( 0 <_ A /\ B <_ ( B - A ) ) <-> A = 0 ) $=
+      ( cr wcel cc0 cle wbr cmin co wa wceq wb lesub0 mp2an ) AEFBEFGAHIBBAJKHI
+      LAGMNCDABOP $.
 
     $( Adding a positive number to another number increases it.  (Contributed
        by NM, 25-Aug-1999.) $)
@@ -69092,6 +69291,79 @@ $)
      16-Jul-2016.) $)
   1le1 $p |- 1 <_ 1 $=
     ( c1 1re leidi ) ABC $.
+
+  $( A positive sum must have a positive addend.  Part of Definition 11.2.7(vi)
+     of [HoTT], p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+  gt0add $p |- ( ( A e. RR /\ B e. RR /\ 0 < ( A + B ) ) ->
+      ( 0 < A \/ 0 < B ) ) $=
+    ( cr wcel cc0 caddc co clt wbr w3a wo simp3 wi 0red simp1 readdcld axltwlin
+    simp2 syl3anc mpd ltaddposd orbi2d mpbird ) ACDZBCDZEABFGZHIZJZEAHIZEBHIZKU
+    IAUFHIZKZUHUGULUDUEUGLUHECDUFCDUDUGULMUHNUHABUDUEUGOZUDUEUGRZPUMEUFAQSTUHUJ
+    UKUIUHBAUNUMUAUBUC $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Real Apartness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c #RR $. $( 'Apart' relation (over real numbers) $)
+
+  $( Class of real apartness relation. $)
+  creap $a class #RR $.
+
+  ${
+    $d x y $.
+    $( Define real apartness.  Definition in Section 11.2.1 of [HoTT], p.
+       (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+    df-reap $a |- #RR = { <. x , y >. | ( ( x e. RR /\ y e. RR ) /\
+      ( x < y \/ y < x ) ) } $.
+  $}
+
+  ${
+    $d A x y $.
+    $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of
+       [[HoTT]], p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+    reapirr $p |- ( A e. RR -> -. A #RR A ) $=
+      ( vx vy cr wcel creap wbr ltnr wa wo cv wceq breq12 ax-ia2 ax-ia1 breq12d
+      clt orbi12d df-reap brab2ga anidm oridm anbi12i bitri baib mtbird ) ADEZA
+      AFGZAAQGZAHUHUGUIUHUGUGIZUIUIJZIUGUIIBKZCKZQGZUMULQGZJUKBCAADDFULALZUMALZ
+      IZUNUIUOUIULAUMAQMURUMAULAQUPUQNUPUQOPRBCSTUJUGUKUIUGUAUIUBUCUDUEUF $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Reciprocals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( ` _i ` times itself is minus 1.  (Contributed by NM, 6-May-1999.)  (Proof
+     shortened by Andrew Salmon, 19-Nov-2011.) $)
+  ixi $p |- ( _i x. _i ) = -u 1 $=
+    ( c1 cneg cc0 cmin co ci cmul df-neg caddc ax-i2m1 0cn ax-1cn ax-icn mulcli
+    wceq subadd2i mpbir eqtr2i ) ABCADEZFFGEZAHSTOTAIECOJCATKLFFMMNPQR $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Complex Apartness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c # $. $( 'Apart' relation (over complex numbers) $)
+
+  $( Class of complex apartness relation. $)
+  cap $a class # $.
+
+  ${
+    $d r s t u x y $.
+    $( Define complex apartness.  Definition 6.1 of Skeleton for the Proof
+       development leading to the.  Fundamental Theorem of Algebra, Herman
+       Geuvers, Randy Pollack, Freek Wiedijk, Jan Zwanenburg, October 2, 2000.
+       (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+    df-ap $a |- # = { <. x , y >. | E. r e. RR E. s e. RR E. t e. RR E. u e. RR
+      ( ( x = ( r + ( _i x. s ) ) /\ y = ( t + ( _i x. u ) ) ) /\
+      ( r #RR t \/ s #RR u ) ) } $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -70138,6 +70410,12 @@ htmldef "-u" as
   althtmldef "-u" as '-';
   latexdef "-u" as "\textrm{-}"; /* short minus */
     /*latexdef "-u" as "-_u";*/
+htmldef "#" as ' # ';
+  althtmldef "#" as ' # ';
+  latexdef "#" as "\apart";
+htmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
+  althtmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
+  latexdef "#RR" as "\apart_\mathbb{R}";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
@@ -71708,7 +71986,40 @@ $)
     ax-bj-d0class.bd $e |- Bdd ph $.
     $( Axiom for ` Delta0 ` -classical logic.  (Contributed by BJ,
        2-Jan-2020.) $)
-    ax-bj-d0cl $a |- ( ph \/ -. ph ) $.
+    ax-bj-d0cl $a |- DECID ph $.
+  $}
+
+  $( Equivalence property for negation.  TODO: minimize all theorems using
+     ~ notbid and ~ notbii .  (Contributed by BJ, 27-Jan-2020.)
+     (Proof modification is discouraged.) $)
+  bj-notbi $p |- ( ( ph <-> ps ) -> ( -. ph <-> -. ps ) ) $=
+    ( wb wn bi2 con3d bi1 impbid ) ABCZADBDIBAABEFIABABGFH $.
+
+  ${
+    bj-notbii.1 $e |- ( ph <-> ps ) $.
+    $( Inference associated with ~ bj-notbi .  (Contributed by BJ,
+       27-Jan-2020.)  (Proof modification is discouraged.) $)
+    bj-notbii $p |- ( -. ph <-> -. ps ) $=
+      ( wb wn bj-notbi ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    bj-notbid.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Deduction form of ~ bj-notbi .  (Contributed by BJ, 27-Jan-2020.)
+       (Proof modification is discouraged.) $)
+    bj-notbid $p |- ( ph -> ( -. ps <-> -. ch ) ) $=
+      ( wb wn bj-notbi syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d a x ph $.
+    $( Equivalence property for ` DECID ` .  TODO: solve conflict with ~ dcbi ;
+       minimize ~ dcbii and ~ dcbid with it, as well as theorems using those.
+       (Contributed by BJ, 27-Jan-2020.)
+       (Proof modification is discouraged.) $)
+    bj-dcbi $p |- ( ( ph <-> ps ) -> ( DECID ph <-> DECID ps ) ) $=
+      ( wb wn wo wdc id bj-notbi orbi12d df-dc 3bitr4g ) ABCZAADZEBBDZEAFBFLABM
+      NLGABHIAJBJK $.
   $}
 
   ${
@@ -71716,13 +72027,12 @@ $)
     $( ` Delta0 ` -classical logic and separation implies classical logic.
        (Contributed by BJ, 2-Jan-2020.)
        (Proof modification is discouraged.) $)
-    bj-d0clsepcl $p |- ( ph \/ -. ph ) $=
-      ( va vx wn wo wex c0 cv wcel wb csn wa wal 0ex bj-snex zfauscl wceq eleq1
-      anbi1d eximii bibi12d spcv snid biantrur bicomi exbii bj-bd0el ax-bj-d0cl
-      bibi2i mpbi id notbid orbi12d mpbii bj-ex ax-mp ) AADZEZBFURGBHZIZAJZURBU
-      TGGKZIZALZJZBFVABFCHZUSIZVFVBIZALZJZCMVEBACBVBGNOPVJVECGNVFGQZVGUTVIVDVFG
-      USRVKVHVCAVFGVBRSUAUBTVEVABVDAUTAVDVCAGNUCUDUEUIUFUJVAUTUTDZEURUTBUGUHVAU
-      TAVLUQVAUKZVAUTAVMULUMUNTURBUOUP $.
+    bj-d0clsepcl $p |- DECID ph $=
+      ( va vx wdc wex c0 cv wcel wb csn wel wal 0ex bj-snex zfauscl wceq anbi1d
+      wa eleq1 eximii bibi12d spcv snid biantrur bicomi bibi2i exbii ax-bj-d0cl
+      mpbi bj-bd0el bj-dcbi mpbii bj-ex ax-mp ) ADZBEUOFBGZHZAIZUOBUQFFJZHZARZI
+      ZBEURBECBKZCGZUSHZARZIZCLVBBACBUSFMNOVGVBCFMVDFPZVCUQVFVAVDFUPSVHVEUTAVDF
+      USSQUAUBTVBURBVAAUQAVAUTAFMUCUDUEUFUGUIURUQDUOUQBUJUHUQAUKULTUOBUMUN $.
   $}
 
 
