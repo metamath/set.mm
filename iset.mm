@@ -1,4 +1,4 @@
-$( iset.mm - Version of 17-Jan-2020
+$( iset.mm - Version of 29-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -5871,33 +5871,6 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Testable propositions
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-  $( Declare connective for testability. $)
-  $c TEST $.
-
-  $( Extend wff definition to include stability. $)
-  wtest $a wff TEST ph $.
-
-  $( Propositions where its negative or double-negative is true are called
-     testable.  See Chapter 2 [Moschovakis] p. 2.
-
-     Our notation for testability is a connective ` TEST ` which we place
-     before the formula in question.  For example, ` TEST x = y ` corresponds
-     to "x = y is testable".
-
-     (Contributed by David A. Wheeler, 13-Aug-2018.) $)
-  df-test $a |- ( TEST ph <-> ( -. ph \/ -. -. ph ) ) $.
-
-  $( A proposition is testable iff its negation is testable.  See also ~ dcn .
-     (Contributed by David A. Wheeler, 6-Dec-2018.) $)
-  testbitestn $p |- ( TEST ph <-> TEST -. ph ) $=
-    ( wn wo wtest notnotnot orbi2i orcom bitri df-test 3bitr4ri ) ABZBZLBZCZKLC
-    ZKDADNLKCOMKLAEFLKGHKIAIJ $.
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Decidable propositions
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -6020,21 +5993,6 @@ $)
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
   dcimpstab $p |- ( DECID ph -> STAB ph ) $=
     ( wdc wn wi wstab notnot2dc df-stab sylibr ) ABACCADAEAFAGH $.
-
-  $( Decidability implies testability.  (Contributed by David A. Wheeler,
-     14-Aug-2018.) $)
-  dcimptest $p |- ( DECID ph -> TEST ph ) $=
-    ( wn wo wdc wtest notnot1 orim1i orcomd df-dc df-test 3imtr4i ) AABZCZLLBZC
-    ADAEMNLANLAFGHAIAJK $.
-
-  $( "Stable and testable" is equivalent to decidable.  (Contributed by David
-     A. Wheeler, 13-Aug-2018.) $)
-  stabtestimpdc $p |-
-    ( ( STAB ph /\ TEST ph ) <-> DECID ph ) $=
-    ( wstab wtest wa wdc df-test biimpi adantl df-stab orim2d adantr mpd orcomd
-    wn wo wi df-dc sylibr dcimpstab dcimptest jca impbii ) ABZACZDZAEZUEAANZOUF
-    UEUGAUEUGUGNZOZUGAOZUDUIUCUDUIAFGHUCUIUJPUDUCUHAUGUCUHAPAIGJKLMAQRUFUCUDASA
-    TUAUB $.
 
   $( Contraposition for a decidable proposition.  Based on theorem *2.15 of
      [WhiteheadRussell] p. 102.  (Contributed by Jim Kingdon, 29-Mar-2018.) $)
@@ -6537,6 +6495,36 @@ $)
   looinvdc $p |- ( DECID ph ->
       ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) ) $=
     ( wi wdc imim1 peircedc syl9r ) ABCZBCBACHACADAHBAEABFG $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Testable propositions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( A proposition is testable iff its negative or double-negative is true.
+     See Chapter 2 [Moschovakis] p. 2.
+
+     Our notation for testability is ` DECID -. ` before the formula in
+     question.  For example, ` DECID -. x = y ` corresponds to "x = y is
+     testable".  (Contributed by David A. Wheeler, 13-Aug-2018.) $)
+  dftest $p |- ( DECID -. ph <-> ( -. ph \/ -. -. ph ) ) $=
+    ( wn df-dc ) ABC $.
+
+  $( A proposition is testable iff its negation is testable.  See also ~ dcn
+     (which could be read as "Decidability implies testability").  (Contributed
+     by David A. Wheeler, 6-Dec-2018.) $)
+  testbitestn $p |- ( DECID -. ph <-> DECID -. -. ph ) $=
+    ( wn wo wdc notnotnot orbi2i orcom bitri df-dc 3bitr4ri ) ABZBZLBZCZKLCZLDK
+    DNLKCOMKLAEFLKGHLIKIJ $.
+
+  $( "Stable and testable" is equivalent to decidable.  (Contributed by David
+     A. Wheeler, 13-Aug-2018.) $)
+  stabtestimpdc $p |-
+    ( ( STAB ph /\ DECID -. ph ) <-> DECID ph ) $=
+    ( wstab wn wdc wa wo exmiddc adantl df-stab biimpi orim2d adantr mpd orcomd
+    wi df-dc sylibr dcimpstab dcn jca impbii ) ABZACZDZEZADZUEAUCFUFUEUCAUEUCUC
+    CZFZUCAFZUDUHUBUCGHUBUHUIOUDUBUGAUCUBUGAOAIJKLMNAPQUFUBUDARASTUA $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -9887,37 +9875,27 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-       Auxiliary theorems for Alan Sare's virtual deduction tool, part 1
+       Logical implication (continued)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
   ${
-    ee22.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    ee22.2 $e |- ( ph -> ( ps -> th ) ) $.
-    ee22.3 $e |- ( ch -> ( th -> ta ) ) $.
-    $( Special theorem needed for Alan Sare's virtual deduction translation
-       tool.  (Contributed by Alan Sare, 2-May-2011.) $)
-    ee22 $p |- ( ph -> ( ps -> ta ) ) $=
-      ( syl6c ) ABCDEFGHI $.
-  $}
-
-  ${
-    ee12an.1 $e |- ( ph -> ps ) $.
-    ee12an.2 $e |- ( ph -> ( ch -> th ) ) $.
-    ee12an.3 $e |- ( ( ps /\ th ) -> ta ) $.
-    $( Special theorem needed for Alan Sare's virtual deduction translation
-       tool.  (Contributed by Alan Sare, 28-Oct-2011.) $)
-    ee12an $p |- ( ph -> ( ch -> ta ) ) $=
+    syl6an.1 $e |- ( ph -> ps ) $.
+    syl6an.2 $e |- ( ph -> ( ch -> th ) ) $.
+    syl6an.3 $e |- ( ( ps /\ th ) -> ta ) $.
+    $( A syllogism deduction combined with conjoining antecedents.
+       (Contributed by Alan Sare, 28-Oct-2011.) $)
+    syl6an $p |- ( ph -> ( ch -> ta ) ) $=
       ( wa jctild syl6 ) ACBDIEACDBGFJHK $.
   $}
 
   ${
-    ee23.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    ee23.2 $e |- ( ph -> ( ps -> ( th -> ta ) ) ) $.
-    ee23.3 $e |- ( ch -> ( ta -> et ) ) $.
-    $( Special theorem needed for Alan Sare's virtual deduction translation
-       tool.  (Contributed by Alan Sare, 17-Jul-2011.) $)
-    ee23 $p |- ( ph -> ( ps -> ( th -> et ) ) ) $=
+    syl10.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    syl10.2 $e |- ( ph -> ( ps -> ( th -> ta ) ) ) $.
+    syl10.3 $e |- ( ch -> ( ta -> et ) ) $.
+    $( A nested syllogism inference.  (Contributed by Alan Sare,
+       17-Jul-2011.) $)
+    syl10 $p |- ( ph -> ( ps -> ( th -> et ) ) ) $=
       ( wi syl6 syldd ) ABDEFHABCEFJGIKL $.
   $}
 
@@ -9983,37 +9961,24 @@ $)
   $}
 
   ${
-
-    ee21.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    ee21.2 $e |- ( ph -> th ) $.
-    ee21.3 $e |- ( ch -> ( th -> ta ) ) $.
-    $( Special theorem needed for Alan Sare's virtual deduction translation
-       tool.  (Contributed by Alan Sare, 18-Mar-2012.) $)
-    ee21 $p |- ( ph -> ( ps -> ta ) ) $=
-      ( a1d ee22 ) ABCDEFADBGIHJ $.
+    syl6ci.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    syl6ci.2 $e |- ( ph -> th ) $.
+    syl6ci.3 $e |- ( ch -> ( th -> ta ) ) $.
+    $( A syllogism inference combined with contraction.  (Contributed by Alan
+       Sare, 18-Mar-2012.) $)
+    syl6ci $p |- ( ph -> ( ps -> ta ) ) $=
+      ( a1d syl6c ) ABCDEFADBGIHJ $.
   $}
 
   ${
-    ee10.1 $e |- ( ph -> ps ) $.
-    ee10.2 $e |- ch $.
-    ee10.3 $e |- ( ps -> ( ch -> th ) ) $.
-    $( Special theorem needed for Alan Sare's virtual deduction translation
-       tool.  (Contributed by NM, 25-Jul-2011.) $)
-    ee10 $p |- ( ph -> th ) $=
+    mpisyl.1 $e |- ( ph -> ps ) $.
+    mpisyl.2 $e |- ch $.
+    mpisyl.3 $e |- ( ps -> ( ch -> th ) ) $.
+    $( A syllogism combined with a modus ponens inference.  (Contributed by
+       Alan Sare, 25-Jul-2011.) $)
+    mpisyl $p |- ( ph -> th ) $=
       ( mpi syl ) ABDEBCDFGHI $.
   $}
-
-  ${
-    ee02.1 $e |- ph $.
-    ee02.2 $e |- ( ps -> ( ch -> th ) ) $.
-    ee02.3 $e |- ( ph -> ( th -> ta ) ) $.
-    $( Special theorem needed for Alan Sare's virtual deduction translation
-       tool.  (Contributed by NM, 22-Jul-2012.) $)
-    ee02 $p |- ( ps -> ( ch -> ta ) ) $=
-      ( a1i sylsyld ) BACDEABFIGHJ $.
-  $}
-
-$( End of auxiliary theorems for Alan Sare's virtual deduction tool, part 1 $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -21972,9 +21937,9 @@ $)
        (Contributed by NM, 2-Mar-1995.)  (Revised by Mario Carneiro,
        10-Oct-2016.) $)
     ceqsex $p |- ( E. x ( x = A /\ ph ) <-> ps ) $=
-      ( cv wceq wa wex biimpa exlimi wi wal biimprcd alrimi isseti exintr ee10
-      impbii ) CHDIZAJZCKZBUCBCEUBABGLMBUBANZCOUBCKUDBUECEUBABGPQCDFRUBACSTUA
-      $.
+      ( cv wceq wa wex biimpa exlimi wal biimprcd alrimi isseti exintr mpisyl
+      wi impbii ) CHDIZAJZCKZBUCBCEUBABGLMBUBATZCNUBCKUDBUECEUBABGOPCDFQUBACRSU
+      A $.
   $}
 
   ${
@@ -35269,10 +35234,9 @@ $)
     $( Define the strict linear order predicate.  The expression ` R Or A ` is
        true if relationship ` R ` orders ` A ` .  The property
        ` x R y -> ( x R z \/ z R y ) ` is called weak linearity by Proposition
-       (11.2.3) of [HoTT], p.  (varies).  If we assumed excluded middle, it
-       would be equivalent to trichotomy, ` x R y \/ x = y \/ y R x ` .
-       (Contributed by NM, 21-Jan-1996.)  (Revised by Jim Kingdon,
-       4-Oct-2018.) $)
+       11.2.3 of [HoTT], p.  (varies).  If we assumed excluded middle, it would
+       be equivalent to trichotomy, ` x R y \/ x = y \/ y R x ` .  (Contributed
+       by NM, 21-Jan-1996.)  (Revised by Jim Kingdon, 4-Oct-2018.) $)
     df-iso $a |- ( R Or A <-> ( R Po A /\ A. x e. A A. y e. A A. z e. A
                 ( x R y -> ( x R z \/ z R y ) ) ) ) $.
   $}
@@ -36428,9 +36392,9 @@ $)
     reusv1 $p |- ( E. y e. B ph -> ( E! x e. A A. y e. B ( ph -> x = C )
                    <-> E. x e. A A. y e. B ( ph -> x = C ) ) ) $=
       ( wrex cv wceq wi wral wmo wrmo wreu wb nfra1 nfmo wcel wa wal impd com12
-      rsp alrimiv moeq moim ee10 ex rexlimi mormo reu5 rbaib 3syl ) ACEGABHFIZJ
-      ZCEKZBLZUPBDMZUPBDNZUPBDGZOAUQCEUPCBUOCEPQCHERZAUQVAASZUPUNJZBTUNBLUQVBVC
-      BUPVBUNUPVAAUNUOCEUCUAUBUDBFUEUPUNBUFUGUHUIUPBDUJUSUTURUPBDUKULUM $.
+      rsp alrimiv moeq moim mpisyl ex rexlimi mormo reu5 rbaib 3syl ) ACEGABHFI
+      ZJZCEKZBLZUPBDMZUPBDNZUPBDGZOAUQCEUPCBUOCEPQCHERZAUQVAASZUPUNJZBTUNBLUQVB
+      VCBUPVBUNUPVAAUNUOCEUCUAUBUDBFUEUPUNBUFUGUHUIUPBDUJUSUTURUPBDUKULUM $.
   $}
 
   ${
@@ -48317,12 +48281,12 @@ $)
        23-Dec-2016.) $)
     fliftcnv $p |- ( ph -> `' F = ran ( x e. X |-> <. B , A >. ) ) $=
       ( vy vz wrel cop wa wceq cv wbr wcel ccnv cmpt crn cxp wss fliftrel relxp
-      eqid relss ee10 relcnv jctil wrex fliftel vex brcnv rexbii 3bitr4g bitr4d
-      ancom df-br 3bitr3g eqrelrdv2 mpancom ) GUAZNZBHDCOUBUCZNZPAVEVGQAVHVFAVG
-      FEUDZUEVINVHABDCFEVGHVGUHZKJUFFEUGVGVIUIUJGUKULALMVEVGALRZMRZVESZVKVLVGSZ
-      VKVLOZVETVOVGTAVMVKDQZVLCQZPZBHUMZVNAVLVKGSVQVPPZBHUMVMVSABCDVLVKEFGHIJKU
-      NVKVLGLUOMUOUPVRVTBHVPVQUTUQURABDCVKVLFEVGHVJKJUNUSVKVLVEVAVKVLVGVAVBVCVD
-      $.
+      eqid relss mpisyl relcnv jctil wrex fliftel vex brcnv ancom rexbii bitr4d
+      3bitr4g df-br 3bitr3g eqrelrdv2 mpancom ) GUAZNZBHDCOUBUCZNZPAVEVGQAVHVFA
+      VGFEUDZUEVINVHABDCFEVGHVGUHZKJUFFEUGVGVIUIUJGUKULALMVEVGALRZMRZVESZVKVLVG
+      SZVKVLOZVETVOVGTAVMVKDQZVLCQZPZBHUMZVNAVLVKGSVQVPPZBHUMVMVSABCDVLVKEFGHIJ
+      KUNVKVLGLUOMUOUPVRVTBHVPVQUQURUTABDCVKVLFEVGHVJKJUNUSVKVLVEVAVKVLVGVAVBVC
+      VD $.
 
     ${
       fliftfun.4 $e |- ( x = y -> A = C ) $.
@@ -48337,20 +48301,20 @@ $)
         funbrfv eqeq2d anbi12d rspcev syl12anc wb fliftel mpbird eqeq12d syl5ib
         anassrs ralrimiva exp31 ralrimd wal cbvrexv syl6bb biimpd reeanv r19.29
         ad2antrr eqtr2 imim1i imp simprlr simprrr 3eqtr4d rexlimivw syl syl5bir
-        syl9 alrimdv wrel cxp wss fliftrel relxp relss ee10 dffun2 baib sylibrd
-        ex impbid ) AJUDZDFQZEGQZUEZCKUFZBKUFZAXIXMBKABUGBJBJBKDEUHZUIZUMLBXPBK
-        XOUJUKULUNAXIBRZKUOZXMAXISZXRSXLCKXSXRCRZKUOZXLXJDJUPZFJUPZQXSXRYASZSZX
-        KDFJUQYEYBEYCGYEXIDEJURZYBEQAXIYDUSZAXRYFXIYAABDEHIJKLMNUTVADEJVEVBYEXI
-        FGJURZYCGQYGYEYHFDQZGEQZSZBKTZYEYAFFQZGGQZYLXSXRYAVCYEFVDYEGVDYKYMYNSBX
-        TKXQXTQZYIYMYJYNYODFFOVFYOEGGPVFVGVHVIAYHYLVJXIYDABDEFGHIJKLMNVKWEVLFGJ
-        VEVBVMVNVOVPVQVRAXNUARZUBRZJURZYPUCRZJURZSZYQYSQZUEZUCVSZUBVSZUAVSZXIAX
-        NUUEUAAXNUUDUBAXNUUCUCAUUAYPDQZYQEQZSZBKTZYPFQZYSGQZSZCKTZSZXNUUBAUUAUU
-        OAYRUUJYTUUNABDEYPYQHIJKLMNVKAYTUUGYSEQZSZBKTUUNABDEYPYSHIJKLMNVKUUQUUM
-        BCKYOUUGUUKUUPUULYODFYPOVFYOEGYSPVFVGVTWAVGWBUUOUUIUUMSZCKTZBKTZXNUUBUU
-        IUUMBCKKWCXNUUTUUBXNUUTSXMUUSSZBKTUUBXMUUSBKWDUVAUUBBKUVAXLUURSZCKTUUBX
-        LUURCKWDUVBUUBCKUVBEGYQYSXLUURXKUURXJXKUUGUUKXJUUHUULYPDFWFVAWGWHXLUUGU
-        UHUUMWIXLUUIUUKUULWJWKWLWMWLWMXGWNWOWPWPWPAJWQZXIUUFVJAJHIWRZWSUVDWQUVC
-        ABDEHIJKLMNWTHIXAJUVDXBXCXIUVCUUFUAUBUCJXDXEWMXFXH $.
+        ex syl9 alrimdv wrel cxp wss fliftrel relxp relss mpisyl dffun2 sylibrd
+        baib impbid ) AJUDZDFQZEGQZUEZCKUFZBKUFZAXIXMBKABUGBJBJBKDEUHZUIZUMLBXP
+        BKXOUJUKULUNAXIBRZKUOZXMAXISZXRSXLCKXSXRCRZKUOZXLXJDJUPZFJUPZQXSXRYASZS
+        ZXKDFJUQYEYBEYCGYEXIDEJURZYBEQAXIYDUSZAXRYFXIYAABDEHIJKLMNUTVADEJVEVBYE
+        XIFGJURZYCGQYGYEYHFDQZGEQZSZBKTZYEYAFFQZGGQZYLXSXRYAVCYEFVDYEGVDYKYMYNS
+        BXTKXQXTQZYIYMYJYNYODFFOVFYOEGGPVFVGVHVIAYHYLVJXIYDABDEFGHIJKLMNVKWEVLF
+        GJVEVBVMVNVOVPVQVRAXNUARZUBRZJURZYPUCRZJURZSZYQYSQZUEZUCVSZUBVSZUAVSZXI
+        AXNUUEUAAXNUUDUBAXNUUCUCAUUAYPDQZYQEQZSZBKTZYPFQZYSGQZSZCKTZSZXNUUBAUUA
+        UUOAYRUUJYTUUNABDEYPYQHIJKLMNVKAYTUUGYSEQZSZBKTUUNABDEYPYSHIJKLMNVKUUQU
+        UMBCKYOUUGUUKUUPUULYODFYPOVFYOEGYSPVFVGVTWAVGWBUUOUUIUUMSZCKTZBKTZXNUUB
+        UUIUUMBCKKWCXNUUTUUBXNUUTSXMUUSSZBKTUUBXMUUSBKWDUVAUUBBKUVAXLUURSZCKTUU
+        BXLUURCKWDUVBUUBCKUVBEGYQYSXLUURXKUURXJXKUUGUUKXJUUHUULYPDFWFVAWGWHXLUU
+        GUUHUUMWIXLUUIUUKUULWJWKWLWMWLWMWOWNWPWQWQWQAJWRZXIUUFVJAJHIWSZWTUVDWRU
+        VCABDEHIJKLMNXAHIXBJUVDXCXDXIUVCUUFUAUBUCJXEXGWMXFXH $.
 
       fliftfund.6 $e |- ( ( ph /\ ( x e. X /\ y e. X /\ A = C ) ) -> B = D ) $.
       $( The function ` F ` is the unique function defined by ` F `` A = B ` ,
@@ -54629,21 +54593,21 @@ $)
          shortened by Mario Carneiro, 24-May-2019.) $)
       tfrlemibfn $p |- ( ph -> U. B Fn x ) $=
         ( wss cvv wcel syl cuni wfun cdm cv wceq wfn crecs tfrlemibacc recsfval
-        unissd syl6sseqr tfrlem7 funss ee10 cxp cpw cfv cop csn cun w3a wex cab
-        wrex wa simpr3 csuc wf wal ad2antrr simplr onelon syl2anc simpr1 simpr2
-        con0 tfrlemisucfn dffn2 sylib fssxp word eloni ordsucss xpss1 sstrd vex
-        sylc tfrlem3-2d simprd opexg sylancr snexg unexg mpbird eqeltrd exlimdv
-        wb elpwg ex rexlimdva abssdv syl5eqss sspwuni dmss dmxpss tfrlemibxssdm
-        syl6ss eqssd df-fn sylanbrc ) AGUAZUBZXKUCZBUDZUEXKXNUFAXKKUGZQXOUBXLAX
-        KFUAXOAGFABCDEFGHIJKLMNOPUHUJBCFHKLUIUKBCFHKLULXKXOUMUNAXMXNAXMXNRUOZUC
-        ZXNAXKXPQZXMXQQAGXPUPZQXRAGIUDZDUDZUFZXTFSZJUDZXTYAXTKUQZURZUSZUTZUEZVA
-        ZIVBZDXNVDZJVCXSNAYLJXSAYKYDXSSZDXNAYAXNSZVEZYJYMIYOYJYMYOYJVEZYDYHXSYO
-        YBYCYIVFYPYHXSSZYHXPQZYPYHYAVGZRUOZXPYPYSRYHVHZYHYTQYPYHYSUFUUAYPBCDFHI
-        KLAKUBZXNKUQRSVEBVIYNYJMVJYPXNVPSZYNYAVPSAUUCYNYJOVJZAYNYJVKZXNYAVLVMYO
-        YBYCYIVNYOYBYCYIVOVQYSYHVRVSYSRYHVTTYPYSXNQZYTXPQYPXNWAZYNUUFYPUUCUUGUU
-        DXNWBTUUEYAXNWCWGYSXNRWDTWEAYQYRWQZYNYJAYHRSZUUHAXTRSYGRSZUUIIWFAYFRSZU
-        UJAYARSYERSZUUKDWFAUUBUULABIKMWHWIYAYERRWJWKYFRWLTXTYGRRWMWKYHXPRWRTVJW
-        NWOWSWPWTXAXBGXPXCVSXKXPXDTXNRXEXGABCDEFGHIJKLMNOPXFXHXKXNXIXJ $.
+        unissd syl6sseqr tfrlem7 funss cxp cpw cfv cop csn cun w3a wex wrex cab
+        mpisyl wa simpr3 csuc wf wal ad2antrr con0 simplr onelon syl2anc simpr1
+        simpr2 tfrlemisucfn dffn2 sylib fssxp word eloni ordsucss sylc xpss1 wb
+        sstrd vex tfrlem3-2d simprd opexg sylancr snexg unexg mpbird eqeltrd ex
+        elpwg exlimdv rexlimdva abssdv sspwuni dmss dmxpss syl6ss tfrlemibxssdm
+        syl5eqss eqssd df-fn sylanbrc ) AGUAZUBZXKUCZBUDZUEXKXNUFAXKKUGZQXOUBXL
+        AXKFUAXOAGFABCDEFGHIJKLMNOPUHUJBCFHKLUIUKBCFHKLULXKXOUMVDAXMXNAXMXNRUNZ
+        UCZXNAXKXPQZXMXQQAGXPUOZQXRAGIUDZDUDZUFZXTFSZJUDZXTYAXTKUPZUQZURZUSZUEZ
+        UTZIVAZDXNVBZJVCXSNAYLJXSAYKYDXSSZDXNAYAXNSZVEZYJYMIYOYJYMYOYJVEZYDYHXS
+        YOYBYCYIVFYPYHXSSZYHXPQZYPYHYAVGZRUNZXPYPYSRYHVHZYHYTQYPYHYSUFUUAYPBCDF
+        HIKLAKUBZXNKUPRSVEBVIYNYJMVJYPXNVKSZYNYAVKSAUUCYNYJOVJZAYNYJVLZXNYAVMVN
+        YOYBYCYIVOYOYBYCYIVPVQYSYHVRVSYSRYHVTTYPYSXNQZYTXPQYPXNWAZYNUUFYPUUCUUG
+        UUDXNWBTUUEYAXNWCWDYSXNRWETWGAYQYRWFZYNYJAYHRSZUUHAXTRSYGRSZUUIIWHAYFRS
+        ZUUJAYARSYERSZUUKDWHAUUBUULABIKMWIWJYAYERRWKWLYFRWMTXTYGRRWNWLYHXPRWRTV
+        JWOWPWQWSWTXAXGGXPXBVSXKXPXCTXNRXDXEABCDEFGHIJKLMNOPXFXHXKXNXIXJ $.
 
       $( The set ` B ` exists.  Lemma for ~ tfrlemi1 .  (Contributed by Jim
          Kingdon, 17-Mar-2019.)  (Proof shortened by Mario Carneiro,
@@ -55177,7 +55141,7 @@ $)
     rdgon $p |- ( ( ph /\ B e. On ) -> ( rec ( F , A ) ` B ) e. On ) $=
       ( vz vw con0 wcel cfv cv wi wceq fveq2 eleq1d wral wa crdg imbi2d r19.21v
       cres ciun cun wb fvres adantl cbvralv sylib rspcv syl5com adantr ralimdva
-      sylbird cvv vex iunon mpan syl6 onun2 ee12an wfn rdgivallem 3expa sylibrd
+      sylbird cvv vex iunon mpan syl6 onun2 syl6an wfn rdgivallem 3expa sylibrd
       jca sylan expcom a2d syl5bi tfis3 impcom ) DKLADECUAZMZKLZAINZVOMZKLZOZAB
       NZVOMZKLZOZAVQOIBDVRWBPZVTWDAWFVSWCKVRWBVOQRUBVRDPZVTVQAWGVSVPKVRDVOQRUBW
       EBVRSAWDBVRSZOVRKLZWAAWDBVRUCWIAWHVTAWIWHVTOAWITZWHCBVRWBVOVRUDMZEMZUEZUF
@@ -58175,9 +58139,6 @@ $)
   $c .P. $. $( Positive real multiplication $)
   $c <P $. $( Positive real ordering relation $)
 
-  $c +pR $. $( Signed real pre-addition $)
-  $c .pR $. $( Signed real pre-multiplication $)
-
   $c ~R $. $( Equivalence relation to construct signed reals $)
   $c R. $. $( Set of signed reals $)
   $c 0R $. $( Signed real constant 0 $)
@@ -58264,10 +58225,6 @@ $)
   $( Extend class notation with new sets (constants) used in construction of
     signed real numbers: $)
 
-  $( Signed real pre-addition. $)
-  cplpr $a class +pR $.
-  $( Signed real pre-multiplication. $)
-  cmpr $a class .pR $.
   $( Equivalence class used to construct signed reals. $)
   cer $a class ~R $.
   $( Set of signed reals. $)
@@ -61128,7 +61085,7 @@ $)
       cv elprnql simp22 cnq0 nqnq0 sseli nq0a0 syl df-0nq0 oveq1i nq0m0r oveq2d
       syl5reqr sylan9req syl2anc simp1r eqeltrrd 2onn nna0r ax-mp eqeq1i opeq1d
       biimpri eceq1d oveq1d eleq1d biimprcd 3ad2ant3 peano1 opeq1 oveq1 anbi12d
-      wi rspcev mpan ee12an reximdv mpd ) FEHUAIZCFIZUBZGUFIZDUCIZJGUGUDZUEZCGJ
+      wi rspcev mpan syl6an reximdv mpd ) FEHUAIZCFIZUBZGUFIZDUCIZJGUGUDZUEZCGJ
       HZKLZDMNZUHNZEIZUEZOAUQZPNZGQZARUIZCBUQZJHZUJLZDUKNZULNZFIZCXLOPNZXHPNZJH
       ZKLZDMNZUHNZEIZUBZBRUIZARUIXAWQXKXFWRWTXKWSAGUMUNUOXGXJYFARXGCSJHZUJLZDUK
       NZULNZFIZXJCSOPNZXHPNZJHZKLZDMNZUHNZEIZYFXGCYJFXGCUCIZWSCYJQWQXAYSXFCEFUR
@@ -61201,8 +61158,10 @@ $)
     $( A Dedekind cut is arithmetically located.  Part of Proposition 11.15 of
        [BauerTaylor], p. 52, slightly modified.  It states that given a
        tolerance ` P ` , there are elements of the lower and upper cut which
-       are within that tolerance of each other.  (Contributed by Jim Kingdon,
-       22-Oct-2019.) $)
+       are within that tolerance of each other.
+
+       Usually, proofs will be shorter if they use ~ prarloc2 instead.
+       (Contributed by Jim Kingdon, 22-Oct-2019.) $)
     prarloc $p |- ( ( <. L , U >. e. P. /\ P e. Q. ) ->
         E. a e. L E. b e. U b <Q ( a +Q P ) ) $=
       ( vx vy vq vn vm wcel cnq wa cv co wex wrex df-rex sylib anbi2d cplq cltq
@@ -62641,7 +62600,7 @@ $)
       ( vx vy vz vq vr vs cnp cltp cv wbr wi wcel cfv wa cnq wrex cltq sylan ex
       mpd wor wpo wo wral ltpopr w3a c2nd wb ltdfpr 3adant3 cop prnminu prnmaxl
       c1st prop anim12i an4s reeanv sylibr 3adantl3 ltsonq ltrelnq sotri adantl
-      prloc 3ad2antl3 adantr ad2antrr wex elprnqu ax-ia3 19.8a ee12an 3ad2antl1
+      prloc 3ad2antl3 adantr ad2antrr wex elprnqu ax-ia3 19.8a syl6an 3ad2antl1
       imp df-rex biimprd 3adant2 adantrr elprnql pm3.21 3adant1 adantrl orim12d
       3ad2antl2 ancoms adantlr rexlimdvva rexlimdvw sylbid df-iso mpbir2an
       rgen3 ) GHUAGHUBAIZBIZHJZWNCIZHJZWQWOHJZUCZKZCGUDBGUDAGUDUEXAABCGGGWNGLZW
@@ -63040,37 +62999,32 @@ $)
     $( Lemma for ~ addcanprg .  (Contributed by Jim Kingdon, 25-Dec-2019.) $)
     addcanprleml $p |- ( ( ( A e. P. /\ B e. P. /\ C e. P. ) /\
         ( A +P. B ) = ( A +P. C ) ) -> ( 1st ` B ) C_ ( 1st ` C ) ) $=
-      ( vf vg vh cnp wcel co wceq wa cfv cv cplq cnq c2nd syl ad3antrrr syl2anc
-      adantr vv vw vt vq vu vr vs w3a cpp c1st wrex cop prop prnmaddl 3ad2antl2
-      adantlr simprl halfnqq cltq wbr prarloc 3ad2antl1 ad2ant2r simplll simp1d
-      sylan wn simp2d addclpr simplrl elprnql simplr ad2antrr addclnq prdisj wi
-      df-iplp genpprecll 3adant3 ancomsd imp anassrs addcomnqg adantl addassnqg
-      adantrll caov4d simprr oveq2d syl3anc 3eqtrd simpr simplrr prcunqu simp3d
-      mpd genppreclu mp2and eqeltrrd wb fveq2 eleq2d mpbird mtand ltaddnq prloc
-      jca wo ecased ex rexlimdvva rexlimddv ssrdv ) AGHZBGHZCGHZUHZABUIIZACUIIZ
-      JZKZUABUJLZCUJLZYAUAMZYBHZYDYCHZYAYEKZYDUBMZNIZYBHZYFUBOXQYEYJUBOUKZXTXOX
-      NYEYKXPXOYBBPLZULGHZYEYKBUMZUBYDYLYBUNVFUOUPYGYHOHZYJKZKZUCMZYRNIZYHJZYFU
-      COYQYOYTUCOUKYGYOYJUQUCYHURQYQYROHZYTKZKZUDMZUEMZYRNIZUSUTZUDAPLZUKUEAUJL
-      ZUKZYFYGUUBUUJYPYAUUBUUJYEXQUUAUUJXTYTXNXOUUAUUJXPXNUUIUUHULGHZUUAUUJAUMZ
-      YRUUHUUIUEUDVAVFVBVCUPUPUUCUUGYFUEUDUUIUUHUUCUUEUUIHZUUDUUHHZKZKZUUGYFUUP
-      UUGKZYFYDYRNIZCPLZHZUUQUUTUUEYINIZXRUJLZHZUVAXRPLZHZKZUUQUVBUVDULGHZUVAOH
-      ZUVFVGUUQXRGHZUVGUUQXNXOUVIUUQXNXOXPYQXQUUBUUOUUGXQXTYEYPVDRZVEZUUQXNXOXP
-      UVJVHZABVISXRUMQUUQUUEOHZYIOHZUVHUUQUUKUUMUVMUUQXNUUKUVKUULQUUCUUMUUNUUGV
-      JUUEUUHUUIVKSZUUQYDOHZYOUVNUUQYMYEUVPUUQXOYMUVLYNQYQYEUUBUUOUUGYAYEYPVLRY
-      DYLYBVKSZUUCYOUUOUUGYGYOYJUUBVJZVMYDYHVNSUUEYIVNSUVAUVDUVBVOSUUQUUTKZUVCU
-      VEUUPUVCUUGUUTYQUUMUVCUUBUUNYGYPUUMUVCYGYJUUMUVCYOYGYJUUMKUVCYGUUMYJUVCXQ
-      UUMYJKUVCVPZXTYEXNXOUVTXPDEFUFUGABUUEYIUINUFUGFEDVQZEMZFMZVNZVRVSVMVTWAWF
-      WBVCVMUVSUVEUVAXSPLZHZUVSUUFUURNIZUVAUWEUVSUWGUUEYDNIZYSNIUWHYHNIZUVAUVSD
-      EFUUEYRYDYRONUUQUVMUUTUVOTZUUQUUAUUTUUCUUAUUOUUGYQUUAYTUQVMZTZUUQUVPUUTUV
-      QTZDMZOHZUWBOHZKZUWNUWBNIZUWBUWNNIJUVSUWNUWBWCWDUWOUWPUWCOHUHUWRUWCNIUWNU
-      WBUWCNINIJUVSUWNUWBUWCWEWDUWLUWQUWROHUVSUWNUWBVNWDWGUVSYSYHUWHNUUCYTUUOUU
-      GUUTYQUUAYTWHRWIUVSUVMUVPYOUWIUVAJUWJUWMUUCYOUUOUUGUUTUVRRUUEYDYHWEWJWKUV
-      SUUFUUHHZUUTUWGUWEHZUUQUWSUUTUUQUUGUWSUUPUUGWLUUQXNUUNUUGUWSVPZUVKUUCUUMU
-      UNUUGWMXNUUKUUNUXAUULUUFUUDUUHUUIWNVFSWPTUUQUUTWLUVSXNXPUWSUUTKUWTVPUUQXN
-      UUTUVKTUUQXPUUTUUQXNXOXPUVJWOZTDEFUFUGACUUFUURUINUWAUWDWQSWRWSUVSXTUVEUWF
-      WTUUCXTUUOUUGUUTYAXTYEYPUUBXQXTWLRRXTUVDUWEUVAXRXSPXAXBQXCXGXDUUQYCUUSULG
-      HZYDUURUSUTZYFUUTXHUUQXPUXCUXBCUMQUUQUVPUUAUXDUVQUWKYDYRXESYDUURUUSYCXFSX
-      IXJXKWPXLXLXJXM $.
+      ( vf vg vh cnp wcel co wceq cfv cplq cnq c2nd syl adantr syl2anc ad2antrr
+      wa cv vv vw vt vu vr vs w3a cpp c1st wrex cop prop prnmaddl sylan adantlr
+      3ad2antl2 simprl halfnqq simplll simp1d prarloc2 wn simp2d addclpr simplr
+      elprnql simplrl addclnq simplrr df-iplp genpprecll imp syl22anc addcomnqg
+      prdisj adantl addassnqg caov4d simprr oveq2d syl3anc 3eqtrd wi genppreclu
+      simpr simp3d mp2and eqeltrrd ad3antrrr fveq2 eleq2d mpbird jca mtand cltq
+      wb wbr wo ltaddnq prloc ecased rexlimddv ex ssrdv ) AGHZBGHZCGHZUGZABUHIZ
+      ACUHIZJZSZUABUIKZCUIKZXLUATZXMHZXOXNHZXLXPSZXOUBTZLIZXMHZXQUBMXHXPYAUBMUJ
+      ZXKXFXEXPYBXGXFXMBNKZUKGHZXPYBBULZUBXOYCXMUMUNUPUOXRXSMHZYASZSZUCTZYILIZX
+      SJZXQUCMYHYFYKUCMUJXRYFYAUQUCXSUROYHYIMHZYKSZSZUDTZYILIZANKZHZXQUDAUIKZYN
+      YSYQUKGHZYLYRUDYSUJYNXEYTYNXEXFXGYHXHYMXHXKXPYGUSZPUTAULZOYHYLYKUQZYIYQYS
+      UDVAQYNYOYSHZYRSZSZXQXOYILIZCNKZHZUUFUUIYOXTLIZXIUIKZHZUUJXINKZHZSZUUFUUK
+      UUMUKGHZUUJMHZUUOVBUUFXIGHZUUPUUFXEXFUURUUFXEXFXGYHXHYMUUEUUARZUTZUUFXEXF
+      XGUUSVCZABVDQXIULOUUFYOMHZXTMHZUUQUUFYTUUDUVBUUFXEYTUUTUUBOYNUUDYRUQYOYQY
+      SVFQZUUFXOMHZYFUVCUUFYDXPUVEUUFXFYDUVAYEOYHXPYMUUEXLXPYGVERXOYCXMVFQZYNYF
+      UUEXRYFYAYMVGZPXOXSVHQYOXTVHQUUJUUMUUKVOQUUFUUISZUULUUNUVHXEXFUUDYAUULUUF
+      XEUUIUUTPZUUFXFUUIUVAPYNUUDYRUUIVGYNYAUUEUUIXRYFYAYMVIRXEXFSUUDYASUULDEFU
+      EUFABYOXTUHLUEUFFEDVJZETZFTZVHZVKVLVMUVHUUNUUJXJNKZHZUVHYPUUGLIZUUJUVNUVH
+      UVPYOXOLIZYJLIUVQXSLIZUUJUVHDEFYOYIXOYIMLUUFUVBUUIUVDPZYNYLUUEUUIUUCRZUUF
+      UVEUUIUVFPZDTZMHZUVKMHZSZUWBUVKLIZUVKUWBLIJUVHUWBUVKVNVPUWCUWDUVLMHUGUWFU
+      VLLIUWBUVKUVLLILIJUVHUWBUVKUVLVQVPUVTUWEUWFMHUVHUWBUVKVHVPVRUVHYJXSUVQLYN
+      YKUUEUUIYHYLYKVSRVTUVHUVBUVEYFUVRUUJJUVSUWAYNYFUUEUUIUVGRYOXOXSVQWAWBUVHY
+      RUUIUVPUVNHZYNUUDYRUUIVIUUFUUIWEUVHXEXGYRUUISUWGWCUVIUUFXGUUIUUFXEXFXGUUS
+      WFZPDEFUEUFACYPUUGUHLUVJUVMWDQWGWHUVHXKUUNUVOWPYNXKUUEUUIXLXKXPYGYMXHXKWE
+      WIRXKUUMUVNUUJXIXJNWJWKOWLWMWNUUFXNUUHUKGHZXOUUGWOWQZXQUUIWRUUFXGUWIUWHCU
+      LOUUFUVEYLUWJUVFYHYLYKUUEVGXOYIWSQXOUUGUUHXNWTQXAXBXBXBXCXD $.
 
     $( Lemma for ~ addcanprg .  (Contributed by Jim Kingdon, 25-Dec-2019.) $)
     addcanprlemu $p |- ( ( ( A e. P. /\ B e. P. /\ C e. P. ) /\
@@ -63442,6 +63396,72 @@ $)
       ZVGWGDFWMVBWCTZNZVCWDVFWFVAWBVBWCJUEWOVDWEVEWOVBWCLWMWNUFZUGZUHUIUJUKVNWL
       CEWMVMWKDFWOVJWIVLWJWOVBWCVAWBJWPWMWNUMULWOVDWEVKWQUHUIUJUKUNZUOEFBVPWRUP
       WAVRAVPGVSVPTVTVQSVSVPBQUQURUSUT $.
+  $}
+
+  ${
+    $d A f g h s t u v x $.  $d B f g h s t u v x $.
+    $( Lemma for ~ aptipr .  (Contributed by Jim Kingdon, 28-Jan-2020.) $)
+    aptiprleml $p |- ( ( A e. P. /\ B e. P. /\ -. B <P A ) ->
+        ( 1st ` A ) C_ ( 1st ` B ) ) $=
+      ( vs vt vu vv cnp wcel wbr cfv cv wa cltq wrex sylan cplq co wceq syl2anc
+      cnq vx vf vg vh cltp wn w3a c1st wi c2nd prnmaxl ad2ant2rl simprr ltrelnq
+      cop prop brel ltexnqq biimpd mpcom simplr ad2antrr simprl prarloc2 adantr
+      syl elprnql simpll ad3antrrr nqtri3or simplrl addclnq wb ltanqg addcomnqg
+      w3o adantl caovord2d simplrr eqeltrd prcdnql sylbid jctild anbi12d rspcev
+      imp eleq1 ltdfpr mpbird pm2.21dd syl5ibcom 3jaod mpd rexlimddv expr 3impa
+      ex ssrdv ) AGHZBGHZBAUEIZUFZUGUAAUHJZBUHJZWSWTXBUAKZXCHZXEXDHZUIWSWTLZXBX
+      FXGXHXBXFLZLZXECKZMIZXGCXCWSXFXLCXCNZWTXBWSXCAUJJZUOGHZXFXMAUPZCXEXNXCUKO
+      ULXJXKXCHZXLLZLZXEDKZPQZXKRZXGDTXSXLYBDTNZXJXQXLUMXETHZXKTHLZXLYCXEXKTTMU
+      NUQYEXLYCDXEXKURUSUTVFXSXTTHZYBLZLZEKZXTPQZBUJJZHZXGEXDYHWTYFYLEXDNZXJWTX
+      RYGWSWTXIVAVBZXSYFYBVCWTXDYKUOGHZYFYMBUPZXTYKXDEVDOSYHYIXDHZYLLZLZYIXEMIZ
+      YIXERZXEYIMIZVPZXGYSYITHZYDUUCYSWTYQUUDYHWTYRYNVEZYHYQYLVCZWTYOYQUUDYPYIY
+      KXDVGOSZYSWSXFYDXJWSXRYGYRWSWTXIVHVIZXJXFXRYGYRXHXBXFUMVIWSXOXFYDXPXEXNXC
+      VGOSZYIXEVJSYSYTXGUUAUUBYSYTXGYSYTLZXAXGUUJXAFKZYKHZUUKXCHZLZFTNZUUJYJTHZ
+      YLYJXCHZLZUUOUUJUUDYFUUPYSUUDYTUUGVEYSYFYTXSYFYBYRVKZVEYIXTVLSYSYTUURYSYT
+      UUQYLYSYTYJYAMIZUUQYSUBUCUDYIXEXTMTPUBKZTHZUCKZTHZUDKZTHUGUVAUVCMIUVEUVAP
+      QUVEUVCPQMIVMYSUVAUVCUVEVNVQUUGUUIUUSUVBUVDLUVAUVCPQUVCUVAPQRYSUVAUVCVOVQ
+      VRYSWSYAXCHZUUTUUQUIZUUHYSYAXKXCXSYFYBYRVSXSXQYGYRXJXQXLVCVBVTWSXOUVFUVGX
+      PYAYJXNXCWAOSWBYHYQYLUMWCWFUUNUURFYJTUUKYJRUULYLUUMUUQUUKYJYKWGUUKYJXCWGW
+      DWESYSXAUUOVMZYTYSWTWSUVHUUEUUHBAFWHSVEWIXSXBYGYRYTXHXBXFXRVKVIWJWQYSYQUU
+      AXGUUFYIXEXDWGWKYSWTYQUUBXGUIZUUEUUFWTYOYQUVIYPYIXEYKXDWAOSWLWMWNWNWNWOWP
+      WR $.
+
+    $( Lemma for ~ aptipr .  (Contributed by Jim Kingdon, 28-Jan-2020.) $)
+    aptiprlemu $p |- ( ( A e. P. /\ B e. P. /\ -. B <P A ) ->
+        ( 2nd ` B ) C_ ( 2nd ` A ) ) $=
+      ( vs vt vu cnp wcel wbr cfv cv cltq wrex sylan cplq cnq syl2anc ad3antrrr
+      wa co adantr vx vf vg vh cltp wn w3a c2nd c1st cop prop prnminu 3ad2antl2
+      wceq simprr ltrelnq brel biimpd mpcom syl simpl1 ad2antrr simprl prarloc2
+      ltexnqq simpl2 ax-ia2 elprnqu elprnql addclnq nqtri3or wi simplrr biimprd
+      w3o imp wb ltanqg adantl addcomnqg caovord2d mpbird prcdnql rspe syl12anc
+      breq1 ltdfpr simpll3 pm2.21dd ex eleq1 syl5ibrcom prcunqu 3jaod rexlimddv
+      mpd ssrdv ) AFGZBFGZBAUEHZUFZUGZUABUHIZAUHIZXBUAJZXCGZXEXDGZXBXFRZCJZXEKH
+      ZXGCXCWSWRXFXJCXCLZXAWSBUIIZXCUJFGZXFXKBUKZCXEXCXLULMUMXHXIXCGZXJRZRZXIDJ
+      ZNSZXEUNZXGDOXQXJXTDOLZXHXOXJUOXIOGZXEOGZRZXJYAXIXEOOKUPUQYDXJYADXIXEVEUR
+      USUTXQXROGZXTRZRZEJZXRNSZXDGZXGEAUIIZYGWRYEYJEYKLZXHWRXPYFWRWSXAXFVAZVBXQ
+      YEXTVCZWRYKXDUJFGZYEYLAUKZXRXDYKEVDMPYGYHYKGZYJRZRZXEYIKHZXEYIUNZYIXEKHZV
+      OZXGYSYCYIOGZUUCYSWSXFYCXHWSXPYFYRWRWSXAXFVFZQZXHXFXPYFYRXBXFVGQWSXMXFYCX
+      NXEXCXLVHMPYSYHOGZYEUUDYSWRYQUUGXHWRXPYFYRYMQZYGYQYJVCZWRYOYQUUGYPYHXDYKV
+      IMPZYGYEYRYNTZYHXRVJPXEYIVKPYSYTXGUUAUUBYSYTXGYSYTRZWTXGUULWTXOXIYKGZRZCO
+      LZUULYBXOUUMUUOXQYBYFYRYTXQWSXOYBXHWSXPUUETXHXOXJVCZWSXMXOYBXNXIXCXLVHMPQ
+      ZXQXOYFYRYTUUPQUULXIYHKHZUUMUULUURXSYIKHZYSYTUUSYSXTYTUUSVLXQYEXTYRVMXTUU
+      SYTXSXEYIKWFVNUTVPUULUBUCUDXIYHXRKONUBJZOGZUCJZOGZUDJZOGUGUUTUVBKHUVDUUTN
+      SUVDUVBNSKHVQUULUUTUVBUVDVRVSUUQYSUUGYTUUJTYSYEYTUUKTUVAUVCRUUTUVBNSUVBUU
+      TNSUNUULUUTUVBVTVSWAWBUULWRYQUURUUMVLZYSWRYTUUHTZYSYQYTUUITWRYOYQUVEYPYHX
+      IXDYKWCMPWPUUNCOWDWEUULWSWRWTUUOVQYSWSYTUUFTUVFBACWGPWBXQXAYFYRYTWRWSXAXF
+      XPWHQWIWJYSXGUUAYJYGYQYJUOZXEYIXDWKWLYSWRYJUUBXGVLZUUHUVGWRYOYJUVHYPXEYIX
+      DYKWMMPWNWPWOWOWOWJWQ $.
+
+    $( Apartness of positive reals is tight.  (Contributed by Jim Kingdon,
+       28-Jan-2020.) $)
+    aptipr $p |- ( ( A e. P. /\ B e. P. /\ -. ( A <P B \/ B <P A ) )
+        -> A = B ) $=
+      ( cnp wcel cltp wbr wo wn w3a wceq c1st cfv c2nd simp1 aptiprleml syl3anc
+      wss wa eqssd aptiprlemu simp2 ioran biimpi 3ad2ant3 simprd simpld 3adant3
+      wb preqlu mpbir2and ) ACDZBCDZABEFZBAEFZGHZIZABJZAKLZBKLZJZAMLZBMLZJZUPUR
+      USUPUKULUNHZURUSQUKULUONZUKULUOUAZUPUMHZVDUOUKVGVDRZULUOVHUMUNUBUCUDZUEZA
+      BOPUPULUKVGUSURQVFVEUPVGVDVIUFZBAOPSUPVAVBUPULUKVGVAVBQVFVEVKBATPUPUKULVD
+      VBVAQVEVFVJABTPSUKULUQUTVCRUHUOABUIUGUJ $.
   $}
 
   ${
@@ -64288,6 +64308,25 @@ $)
       FUKULUMZJKUUJUUCYGUYMIJXRXSYBYCXAUTUUIUUFVDXBXCXGXHXI $.
   $}
 
+  ${
+    $d A w x y z $.  $d B w z $.
+    $( Apartness of signed reals is tight.  (Contributed by Jim Kingdon,
+       29-Jan-2020.) $)
+    aptisr $p |- ( ( A e. R. /\ B e. R. /\ -. ( A <R B \/ B <R A ) )
+        -> A = B ) $=
+      ( vx cnr wcel cltr wbr wo wn wceq cv cer wi cnp orbi12d notbid wa co cltp
+      cpp vy vz cop cec df-nr breq1 breq2 imbi12d addcomprg ad2ant2lr ad2ant2rl
+      eqeq1 breq12d orbi2d addclpr aptipr 3expia syl2anc sylbird ltsrprg ancoms
+      vw eqeq2 wb enreceq 3imtr4d 2ecoptocl 3impia ) ADEBDEABFGZBAFGZHZIZABJZCK
+      ZUAKZUCLUDZUBKZVBKZUCLUDZFGZVSVPFGZHZIZVPVSJZMAVSFGZVSAFGZHZIZAVSJZMVLVMM
+      CUAUBVBABNNLDUEVPAJZWCWHWDWIWJWBWGWJVTWEWAWFVPAVSFUFVPAVSFUGOPVPAVSULUHVS
+      BJZWHVLWIVMWKWGVKWKWEVIWFVJVSBAFUGVSBAFUFOPVSBAVCUHVNNEZVONEZQZVQNEZVRNEZ
+      QZQZVNVRTRZVOVQTRZSGZVQVOTRZVRVNTRZSGZHZIZWSWTJZWCWDWRXFXAWTWSSGZHZIZXGWR
+      XIXEWRXHXDXAWRWTXBWSXCSWMWOWTXBJWLWPVOVQUIUJWLWPWSXCJWMWOVNVRUIUKUMUNPWRW
+      SNEZWTNEZXJXGMWLWPXKWMWOVNVRUOUKWMWOXLWLWPVOVQUOUJXKXLXJXGWSWTUPUQURUSWRW
+      BXEWRVTXAWAXDVNVOVQVRUTWQWNWAXDVDVQVRVNVOUTVAOPVNVOVQVRVEVFVGVH $.
+  $}
+
   $( Class of complex numbers. $)
   cc $a class CC $.
   $( Class of real numbers. $)
@@ -64972,6 +65011,25 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.
+    $( Apartness of reals is tight.  Axiom for real and complex numbers,
+       derived from set theory.  This construction-dependent theorem should not
+       be referenced directly; instead, use ~ ax-pre-apti .
+
+       (Contributed by Jim Kingdon, 29-Jan-2020.)
+       (New usage is discouraged.) $)
+    axpre-apti $p |- ( ( A e. RR /\ B e. RR /\ -. ( A <RR B \/ B <RR A ) ) ->
+        A = B ) $=
+      ( vx vy cr wcel cltrr wbr wo wn wceq cv c0r cop wi cnr elreal breq1 breq2
+      orbi12d notbid eqeq1 imbi12d eqeq2 wa aptisr 3expia ltresr orbi12i notbii
+      cltr vex eqresr 3imtr4g 2gencl 3impia ) AEFBEFABGHZBAGHZIZJZABKZCLZMNZDLZ
+      MNZGHZVEVCGHZIZJZVCVEKZOAVEGHZVEAGHZIZJZAVEKZOUTVAOCDVCVEABPECAQDBQVCAKZV
+      IVNVJVOVPVHVMVPVFVKVGVLVCAVEGRVCAVEGSTUAVCAVEUBUCVEBKZVNUTVOVAVQVMUSVQVKU
+      QVLURVEBAGSVEBAGRTUAVEBAUDUCVBPFZVDPFZUEVBVDUKHZVDVBUKHZIZJZVBVDKZVIVJVRV
+      SWCWDVBVDUFUGVHWBVFVTVGWAVBVDUHVDVBUHUIUJVBVDCULUMUNUOUP $.
+  $}
+
+  ${
     $d x y z A $.  $d x y z B $.  $d x y z C $.
     $( Ordering property of addition on reals.  Axiom for real and complex
        numbers, derived from set theory.  This construction-dependent theorem
@@ -65116,7 +65174,8 @@ $)
   $( $j restatement 'ax-i2m1' of 'axi2m1'; $)
 
   $( 0 is less than 1.  Axiom for real and complex numbers, justified by
-     theorem ~ ax0lt1 .  (Contributed by Jim Kingdon, 12-Jan-2020.) $)
+     theorem ~ ax0lt1 .  Proofs should normally use ~ 0lt1 instead.
+     (New usage is discouraged.)  (Contributed by Jim Kingdon, 12-Jan-2020.) $)
   ax-0lt1 $p |- 0 <RR 1 $=
     ( c0r cop c1r cc0 c1 cltrr wbr cltr 0lt1sr ltresr mpbir df-0 df-1 3brtr4i )
     AABZCABZDEFOPFGACHGIACJKLMN $.
@@ -65187,6 +65246,13 @@ $)
   ax-pre-lttrn $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
              ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) $.
   $( $j restatement 'ax-pre-lttrn' of 'axpre-lttrn'; $)
+
+  $( Apartness of reals is tight.  Axiom for real and complex numbers,
+     justified by theorem ~ axpre-apti .  (Contributed by Jim Kingdon,
+     29-Jan-2020.) $)
+  ax-pre-apti $a |- ( ( A e. RR /\ B e. RR /\ -. ( A <RR B \/ B <RR A ) ) ->
+    A = B ) $.
+  $( $j restatement 'ax-pre-apti' of 'axpre-apti'; $)
 
   $( Ordering property of addition on reals.  Axiom for real and complex
      numbers, justified by theorem ~ axpre-ltadd .  (Contributed by NM,
@@ -65692,15 +65758,16 @@ $)
     ltxrlt $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B <-> A <RR B ) ) $=
       ( vx vy cr wcel clt wbr cltrr cv w3a cmnf csn cun cpnf cxp wo brun wceq
       wi wa copab df-ltxr breqi bitri eleq1 breq1 3anbi13d breq2 3anbi23d brabg
-      eqid simp3 syl6bi brxp simprbi elsni syl a1i renepnf neneqd pm2.24 adantl
-      ee21 simplbi renemnf adantr jaod syl5bi 3adant3 ibir sylibr 3expia impbid
-      wn wb orcd ) AEFZBEFZUAZABGHZABIHZWAABCJZEFZDJZEFZWCWEIHZKZCDUBZHZABELMZN
-      ZOMZPZWKEPZNZHZQZVTWBWAABWIWPNZHWRABGWSCDUCUDABWIWPRUEZVTWJWBWQVTWJVRVSWB
-      KZWBWHVRWFAWEIHZKXACDABEEWIWCASWDVRWGXBWFWCAEUFWCAWEIUGUHWEBSWFVSXBWBVRWE
-      BEUFWEBAIUIUJWIULUKZVRVSWBUMUNWQABWNHZABWOHZQVTWBABWNWORVTXDWBXEVSXDWBTVR
-      VSXDBOSZXFVOWBXDXFTVSXDBWMFZXFXDAWLFXGABWLWMUOUPBOUQURUSVSBOBUTVAXFWBVBVD
-      VCVRXEWBTVSVRXEALSZXHVOWBXEXHTVRXEAWKFZXHXEXIVSABWKEUOVEALUQURUSVRALAVFVA
-      XHWBVBVDVGVHVIVHVIVRVSWBWAXAWRWAXAWJWQXAWJVRVSWJXAVPWBXCVJVKVQWTVLVMVN $.
+      eqid simp3 syl6bi brxp simprbi elsni syl a1i renepnf neneqd pm2.24 syl6ci
+      adantl simplbi renemnf adantr jaod syl5bi 3adant3 ibir orcd sylibr 3expia
+      wn wb impbid ) AEFZBEFZUAZABGHZABIHZWAABCJZEFZDJZEFZWCWEIHZKZCDUBZHZABELM
+      ZNZOMZPZWKEPZNZHZQZVTWBWAABWIWPNZHWRABGWSCDUCUDABWIWPRUEZVTWJWBWQVTWJVRVS
+      WBKZWBWHVRWFAWEIHZKXACDABEEWIWCASWDVRWGXBWFWCAEUFWCAWEIUGUHWEBSWFVSXBWBVR
+      WEBEUFWEBAIUIUJWIULUKZVRVSWBUMUNWQABWNHZABWOHZQVTWBABWNWORVTXDWBXEVSXDWBT
+      VRVSXDBOSZXFVOWBXDXFTVSXDBWMFZXFXDAWLFXGABWLWMUOUPBOUQURUSVSBOBUTVAXFWBVB
+      VCVDVRXEWBTVSVRXEALSZXHVOWBXEXHTVRXEAWKFZXHXEXIVSABWKEUOVEALUQURUSVRALAVF
+      VAXHWBVBVCVGVHVIVHVIVRVSWBWAXAWRWAXAWJWQXAWJVRVSWJXAVPWBXCVJVKVLWTVMVNVQ
+      $.
   $}
 
 $(
@@ -65749,6 +65816,14 @@ $)
     ZABCLUBUCUIUEMUDABNOUDUBUCUJUHMZUDUBUCUKUDUBQUFDEUGDEUKUDUCQCAPCBPUFUGNRSTU
     A $.
 
+  $( Apartness of reals is tight.  Axiom for real and complex numbers, derived
+     from set theory.  (This restates ~ ax-pre-apti with ordering on the
+     extended reals.)  (Contributed by Jim Kingdon, 29-Jan-2020.) $)
+  axapti $p |- ( ( A e. RR /\ B e. RR /\ -. ( A < B \/ B < A ) ) -> A = B ) $=
+    ( cr wcel clt wbr wo wn wceq cltrr ltxrlt ancoms orbi12d notbid ax-pre-apti
+    wa wb 3expia sylbid 3impia ) ACDZBCDZABEFZBAEFZGZHZABIZUAUBPZUFABJFZBAJFZGZ
+    HZUGUHUEUKUHUCUIUDUJABKUBUAUDUJQBAKLMNUAUBULUGABORST $.
+
   $( The product of two positive reals is positive.  Axiom for real and complex
      numbers, derived from set theory.  (This restates ~ ax-pre-mulgt0 with
      ordering on the extended reals.)  (Contributed by NM, 13-Oct-2005.) $)
@@ -65778,8 +65853,9 @@ $)
     ( cr wcel cc0 clt wbr cmul co wa axmulgt0 imp an4s ) ACDZBCDZEAFGZEBFGZEABH
     IFGZNOJPQJRABKLM $.
 
-  $( 'Less than or equal to' expressed in terms of 'less than'.  (Contributed
-     by NM, 13-May-1999.) $)
+  $( 'Less than or equal to' expressed in terms of 'less than'.  Part of
+     definition 11.2.7(vi) of [HoTT], p.  (varies).  (Contributed by NM,
+     13-May-1999.) $)
   lenlt $p |- ( ( A e. RR /\ B e. RR ) -> ( A <_ B <-> -. B < A ) ) $=
     ( cr wcel cxr cle wbr clt wn wb rexr xrlenlt syl2an ) ACDAEDBEDABFGBAHGIJBC
     DAKBKABLM $.
@@ -65802,6 +65878,21 @@ $)
   gtso $p |- `' < Or RR $=
     ( vx cr clt wor ccnv ltso cc0 wcel cv wex wb 0re elex2 cnvsom mp2b mpbi ) B
     CDZBCEDZFGBHAIBHAJQRKLAGBMABCNOP $.
+
+  $( Tightness of real apartness.  (Contributed by NM, 5-May-1999.) $)
+  lttri3 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( A = B <-> ( -. A < B /\ -. B < A ) ) ) $=
+    ( cr wcel wa wceq clt wbr wn wi ltnr breq2 notbid syl5ibcom breq1 adantr wo
+    jcad ioran axapti 3expia syl5bir impbid ) ACDZBCDZEZABFZABGHZIZBAGHZIZEZUDU
+    GULJUEUDUGUIUKUDAAGHZIZUGUIAKZUGUMUHABAGLMNUDUNUGUKUOUGUMUJABAGOMNRPULUHUJQ
+    IZUFUGUHUJSUDUEUPUGABTUAUBUC $.
+
+  $( Tightness of real apartness.  (Contributed by NM, 14-May-1999.) $)
+  letri3 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( A = B <-> ( A <_ B /\ B <_ A ) ) ) $=
+    ( cr wcel wa wceq clt wbr wn cle lttri3 ancom syl6bbr ancoms anbi12d bitr4d
+    lenlt wb ) ACDZBCDZEZABFZBAGHIZABGHIZEZABJHZBAJHZEUAUBUDUCEUEABKUCUDLMUAUFU
+    CUGUDABQTSUGUDRBAQNOP $.
 
   $( Transitive law, weaker form of ` ( A < B /\ B <_ C ) -> A < C ` .
      (Contributed by AV, 14-Oct-2018.) $)
@@ -65835,8 +65926,8 @@ $)
 
   $( 'Less than' is not symmetric.  (Contributed by NM, 8-Jan-2002.) $)
   ltnsym $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B -> -. B < A ) ) $=
-    ( cr wcel wa clt wbr wi wn lttr 3anidm13 expd ltnr adantr con3 ee21 ) ACDZB
-    CDZEZABFGZBAFGZAAFGZHUBIZUAISTUAUBQRTUAEUBHABAJKLQUCRAMNUAUBOP $.
+    ( cr wcel wa clt wbr wi wn lttr 3anidm13 expd ltnr adantr con3 syl6ci ) ACD
+    ZBCDZEZABFGZBAFGZAAFGZHUBIZUAISTUAUBQRTUAEUBHABAJKLQUCRAMNUAUBOP $.
 
   $( 'Less than' implies 'less than or equal to'.  (Contributed by NM,
      25-Aug-1999.) $)
@@ -65844,6 +65935,25 @@ $)
                ( A < B -> A <_ B ) ) $=
     ( cr wcel wa clt wbr wn cle ltnsym lenlt sylibrd ) ACDBCDEABFGBAFGHABIGABJA
     BKL $.
+
+  $( Transitive law.  Part of Definition 11.2.7(vi) of [HoTT], p.  (varies).
+     (Contributed by NM, 23-May-1999.) $)
+  lelttr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A <_ B /\ B < C ) -> A < C ) ) $=
+    ( cr wcel w3a cle wbr clt wa wn simprl wb simpl1 simpl2 lenlt syl2anc mpbid
+    pm2.21d idd wo simprr wi simpl3 axltwlin syl3anc mpd mpjaod ex ) ADEZBDEZCD
+    EZFZABGHZBCIHZJZACIHZUMUPJZBAIHZUQUQURUSUQURUNUSKZUMUNUOLURUJUKUNUTMUJUKULU
+    PNZUJUKULUPOZABPQRSURUQTURUOUSUQUAZUMUNUOUBURUKULUJUOVCUCVBUJUKULUPUDVABCAU
+    EUFUGUHUI $.
+
+  $( Transitive law.  Part of Definition 11.2.7(vi) of [HoTT], p.  (varies).
+     (Contributed by NM, 25-Aug-1999.) $)
+  ltletr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A < B /\ B <_ C ) -> A < C ) ) $=
+    ( cr wcel w3a clt wbr cle wa wn simprr wb simpl2 simpl3 lenlt syl2anc mpbid
+    wo simprl wi axltwlin adantr mpd ecased ex ) ADEZBDEZCDEZFZABGHZBCIHZJZACGH
+    ZUJUMJZUNCBGHZUOULUPKZUJUKULLUOUHUIULUQMUGUHUIUMNUGUHUIUMOBCPQRUOUKUNUPSZUJ
+    UKULTUJUKURUAUMABCUBUCUDUEUF $.
 
   $( 'Less than' is antisymmetric and irreflexive.  (Contributed by NM,
      13-Aug-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
@@ -65888,6 +65998,15 @@ $)
     $}
 
     lt.2 $e |- B e. RR $.
+    $( Tightness of real apartness.  (Contributed by NM, 14-May-1999.) $)
+    lttri3i $p |- ( A = B <-> ( -. A < B /\ -. B < A ) ) $=
+      ( cr wcel wceq clt wbr wn wa wb lttri3 mp2an ) AEFBEFABGABHIJBAHIJKLCDABM
+      N $.
+
+    $( Tightness of real apartness.  (Contributed by NM, 14-May-1999.) $)
+    letri3i $p |- ( A = B <-> ( A <_ B /\ B <_ A ) ) $=
+      ( cr wcel wceq cle wbr wa wb letri3 mp2an ) AEFBEFABGABHIBAHIJKCDABLM $.
+
     $( 'Less than' is not symmetric.  (Contributed by NM, 6-May-1999.) $)
     ltnsymi $p |- ( A < B -> -. B < A ) $=
       ( cr wcel clt wbr wn wi ltnsym mp2an ) AEFBEFABGHBAGHIJCDABKL $.
@@ -65921,10 +66040,32 @@ $)
       lttri $p |- ( ( A < B /\ B < C ) -> A < C ) $=
         ( cr wcel clt wbr wa wi lttr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
 
+      $( 'Less than or equal to', 'less than' transitive law.  (Contributed by
+         NM, 14-May-1999.) $)
+      lelttri $p |- ( ( A <_ B /\ B < C ) -> A < C ) $=
+        ( cr wcel cle wbr clt wa wi lelttr mp3an ) AGHBGHCGHABIJBCKJLACKJMDEFAB
+        CNO $.
+
+      $( 'Less than', 'less than or equal to' transitive law.  (Contributed by
+         NM, 14-May-1999.) $)
+      ltletri $p |- ( ( A < B /\ B <_ C ) -> A < C ) $=
+        ( cr wcel clt wbr cle wa wi ltletr mp3an ) AGHBGHCGHABIJBCKJLACIJMDEFAB
+        CNO $.
+
       $( 'Less than or equal to' is transitive.  (Contributed by NM,
          14-May-1999.) $)
       letri $p |- ( ( A <_ B /\ B <_ C ) -> A <_ C ) $=
         ( cr wcel cle wbr wa wi letr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
+
+      $( Extended trichotomy law for 'less than or equal to'.  (Contributed by
+         NM, 14-Aug-2000.) $)
+      le2tri3i $p |- ( ( A <_ B /\ B <_ C /\ C <_ A ) <->
+                      ( A = B /\ B = C /\ C = A ) ) $=
+        ( cle wbr wceq wa letri letri3i biimpri sylan2 3impb 3comr eqcomd sylan
+        w3a eqlei 3impa 3jca 3anim123i impbii ) ABGHZBCGHZCAGHZSZABIZBCIZCAIZSU
+        HUIUJUKUEUFUGUIUFUGJUEBAGHZUIBCAEFDKUIUEULJABDELMNOUFUGUEUJUFUGUEUJUGUE
+        JUFCBGHZUJCABFDEKUJUFUMJBCEFLMNOPUEUFUGUKUEUFJACGHZUGUKABCDEFKUNUGJZACA
+        CIUOACDFLMQRUAUBUIUEUJUFUKUGABDTBCETCAFTUCUD $.
     $}
 
     $( The product of two positive numbers is positive.  (Contributed by NM,
@@ -65962,6 +66103,18 @@ $)
     $}
 
     ltd.2 $e |- ( ph -> B e. RR ) $.
+    $( Tightness of real apartness.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    lttri3d $p |- ( ph -> ( A = B <-> ( -. A < B /\ -. B < A ) ) ) $=
+      ( cr wcel wceq clt wbr wn wa wb lttri3 syl2anc ) ABFGCFGBCHBCIJKCBIJKLMDE
+      BCNO $.
+
+    $( Tightness of real apartness.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    letri3d $p |- ( ph -> ( A = B <-> ( A <_ B /\ B <_ A ) ) ) $=
+      ( cr wcel wceq cle wbr wa wb letri3 syl2anc ) ABFGCFGBCHBCIJCBIJKLDEBCMN
+      $.
+
     $( 'Less than or equal to' in terms of 'less than'.  (Contributed by Mario
        Carneiro, 27-May-2016.) $)
     lenltd $p |- ( ph -> ( A <_ B <-> -. B < A ) ) $=
@@ -66003,6 +66156,16 @@ $)
     $}
 
     ${
+      lelttrd.4 $e |- ( ph -> A <_ B ) $.
+      lelttrd.5 $e |- ( ph -> B < C ) $.
+      $( Transitive law deduction for 'less than or equal to', 'less than'.
+         (Contributed by NM, 8-Jan-2006.) $)
+      lelttrd $p |- ( ph -> A < C ) $=
+        ( cle wbr clt cr wcel wa wi lelttr syl3anc mp2and ) ABCJKZCDLKZBDLKZHIA
+        BMNCMNDMNTUAOUBPEFGBCDQRS $.
+    $}
+
+    ${
       lttrd.4 $e |- ( ph -> A < B ) $.
       lttrd.5 $e |- ( ph -> B < C ) $.
       $( Transitive law deduction for 'less than'.  (Contributed by NM,
@@ -66012,6 +66175,12 @@ $)
         DLMSTNUAOEFGBCDPQR $.
     $}
   $}
+
+  $( 0 is less than 1.  Theorem I.21 of [Apostol] p. 20.  Part of definition
+     11.2.7(vi) of [HoTT], p.  (varies).  (Contributed by NM, 17-Jan-1997.) $)
+  0lt1 $p |- 0 < 1 $=
+    ( cc0 c1 clt wbr cltrr ax-0lt1 cr wcel wb 0re 1re ltxrlt mp2an mpbir ) ABCD
+    ZABEDZFAGHBGHOPIJKABLMN $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -67883,10 +68052,9 @@ $)
   $( The imaginary unit ` _i ` is not zero.  (Contributed by NM,
      6-May-1999.) $)
   ine0 $p |- _i =/= 0 $=
-    ( ci cc0 wceq c1 0re clt cltrr ax-0lt1 cr wcel wb ltxrlt mp2an mpbir gtneii
-    wbr 1re caddc co cmul oveq2 ax-icn mul01i syl6req oveq1d ax-1cn addid2i mto
-    neii ax-i2m1 3eqtr3g neir ) ABABCZDBCDBBDEBDFPZBDGPZHBIJDIJUNUOKEQBDLMNOUIU
-    MBDRSAATSZDRSDBUMBUPDRUMUPABTSBABATUAAUBUCUDUEDUFUGUJUKUHUL $.
+    ( ci cc0 wceq c1 0lt1 gtneii neii caddc co cmul oveq2 ax-icn mul01i syl6req
+    0re oveq1d ax-1cn addid2i ax-i2m1 3eqtr3g mto neir ) ABABCZDBCDBBDOEFGUCBDH
+    IAAJIZDHIDBUCBUDDHUCUDABJIBABAJKALMNPDQRSTUAUB $.
 
   $( Product with negative is negative of product.  Theorem I.12 of [Apostol]
      p. 18.  (Contributed by NM, 14-May-1999.)  (Proof shortened by Mario
@@ -68058,6 +68226,1143 @@ $)
     mulsubfacd $p |- ( ph -> ( ( A x. B ) - B ) = ( ( A - 1 ) x. B ) ) $=
       ( c1 cmin co cmul cc wcel ax-1cn a1i subdird mulid2d oveq2d eqtr2d ) ABFG
       HCIHBCIHZFCIHZGHRCGHABFCDFJKALMENASCRGACEOPQ $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordering on reals (cont.)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Addition to both sides of 'less than'.  (Contributed by NM,
+       12-Nov-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    ltadd2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                  ( A < B <-> ( C + A ) < ( C + B ) ) ) $=
+      ( vx cr wcel clt wbr caddc co axltadd wceq wi wa readdcld addassd breq12d
+      cc0 recnd cc w3a cv wrex ax-rnegex 3ad2ant3 simpl3 simpl1 syl3anc sylibrd
+      simpl2 simprl simprr wb addcom eqeq1d syl2anc mpbid oveq1d addid2d sylibd
+      eqtrd rexlimddv impbid ) AEFZBEFZCEFZUAZABGHZCAIJZCBIJZGHZABCKVGCDUBZIJZR
+      LZVKVHMDEVFVDVNDEUCVEDCUDUEVGVLEFZVNNZNZVKVLCIJZAIJZVRBIJZGHZVHVQVKVLVIIJ
+      ZVLVJIJZGHZWAVQVIEFVJEFVOVKWDMVQCAVDVEVFVPUFZVDVEVFVPUGZOVQCBWEVDVEVFVPUJ
+      ZOVGVOVNUKZVIVJVLKUHVQVSWBVTWCGVQVLCAVQVLWHSZVQCWESZVQAWFSZPVQVLCBWIWJVQB
+      WGSZPQUIVQVSAVTBGVQVSRAIJAVQVRRAIVQVNVRRLZVGVOVNULVQCTFZVLTFZVNWMUMWJWIWN
+      WONVMVRRCVLUNUOUPUQZURVQAWKUSVAVQVTRBIJBVQVRRBIWPURVQBWLUSVAQUTVBVC $.
+  $}
+
+  ${
+    ltadd2i.1 $e |- A e. RR $.
+    ltadd2i.2 $e |- B e. RR $.
+    ltadd2i.3 $e |- C e. RR $.
+    $( Addition to both sides of 'less than'.  (Contributed by NM,
+       21-Jan-1997.) $)
+    ltadd2i $p |- ( A < B <-> ( C + A ) < ( C + B ) ) $=
+      ( cr wcel clt wbr caddc co wb ltadd2 mp3an ) AGHBGHCGHABIJCAKLCBKLIJMDEFA
+      BCNO $.
+  $}
+
+  ${
+    ltadd2d.1 $e |- ( ph -> A e. RR ) $.
+    ltadd2d.2 $e |- ( ph -> B e. RR ) $.
+    ltadd2d.3 $e |- ( ph -> C e. RR ) $.
+    $( Addition to both sides of 'less than'.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    ltadd2d $p |- ( ph -> ( A < B <-> ( C + A ) < ( C + B ) ) ) $=
+      ( cr wcel clt wbr caddc co wb ltadd2 syl3anc ) ABHICHIDHIBCJKDBLMDCLMJKNE
+      FGBCDOP $.
+
+    ${
+      ltletrd.4 $e |- ( ph -> A < B ) $.
+      $( Addition to both sides of 'less than'.  (Contributed by Mario
+         Carneiro, 30-May-2016.) $)
+      ltadd2dd $p |- ( ph -> ( C + A ) < ( C + B ) ) $=
+        ( clt wbr caddc co ltadd2d mpbid ) ABCIJDBKLDCKLIJHABCDEFGMN $.
+
+      ltletrd.5 $e |- ( ph -> B <_ C ) $.
+      $( Transitive law deduction for 'less than', 'less than or equal to'.
+         (Contributed by NM, 9-Jan-2006.) $)
+      ltletrd $p |- ( ph -> A < C ) $=
+        ( clt wbr cle cr wcel wa wi ltletr syl3anc mp2and ) ABCJKZCDLKZBDJKZHIA
+        BMNCMNDMNTUAOUBPEFGBCDQRS $.
+    $}
+  $}
+
+  $( Positive implies nonzero.  (Contributed by NM, 3-Oct-1999.)  (Proof
+     shortened by Mario Carneiro, 27-May-2016.) $)
+  gt0ne0 $p |- ( ( A e. RR /\ 0 < A ) -> A =/= 0 ) $=
+    ( cr wcel cc0 clt wbr wne 0red ltne sylan ) ABCZDBCDAEFADGKHDAIJ $.
+
+  $( A number which is less than zero is not zero.  (Contributed by Stefan
+     O'Rear, 13-Sep-2014.) $)
+  lt0ne0 $p |- ( ( A e. RR /\ A < 0 ) -> A =/= 0 ) $=
+    ( cr wcel cc0 clt wbr wa ltne necomd ) ABCADEFGDAADHI $.
+
+  $( Addition to both sides of 'less than'.  Part of definition 11.2.7(vi) of
+     [HoTT], p.  (varies).  (Contributed by NM, 12-Nov-1999.)  (Proof shortened
+     by Mario Carneiro, 27-May-2016.) $)
+  ltadd1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A < B <-> ( A + C ) < ( B + C ) ) ) $=
+    ( cr wcel w3a clt wbr caddc co ltadd2 simp3 recnd simp1 addcomd simp2 bitrd
+    breq12d ) ADEZBDEZCDEZFZABGHCAIJZCBIJZGHACIJZBCIJZGHABCKUBUCUEUDUFGUBCAUBCS
+    TUALMZUBASTUANMOUBCBUGUBBSTUAPMORQ $.
+
+  $( Addition to both sides of 'less than or equal to'.  Part of definition
+     11.2.7(vi) of [HoTT], p.  (varies).  (Contributed by NM, 18-Oct-1999.)
+     (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  leadd1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A <_ B <-> ( A + C ) <_ ( B + C ) ) ) $=
+    ( cr w3a clt wbr wn caddc co cle wb ltadd1 3com12 notbid simp1 simp2 lenltd
+    wcel readdcld simp3 3bitr4d ) ADSZBDSZCDSZEZBAFGZHBCIJZACIJZFGZHABKGUIUHKGU
+    FUGUJUDUCUEUGUJLBACMNOUFABUCUDUEPZUCUDUEQZRUFUIUHUFACUKUCUDUEUAZTUFBCULUMTR
+    UB $.
+
+  $( Addition to both sides of 'less than or equal to'.  (Contributed by NM,
+     26-Oct-1999.) $)
+  leadd2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A <_ B <-> ( C + A ) <_ ( C + B ) ) ) $=
+    ( cr wcel w3a cle wbr caddc co leadd1 simp1 recnd simp3 addcomd simp2 bitrd
+    breq12d ) ADEZBDEZCDEZFZABGHACIJZBCIJZGHCAIJZCBIJZGHABCKUBUCUEUDUFGUBACUBAS
+    TUALMUBCSTUANMZOUBBCUBBSTUAPMUGORQ $.
+
+  $( 'Less than' relationship between subtraction and addition.  (Contributed
+     by NM, 21-Jan-1997.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  ltsubadd $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                  ( ( A - B ) < C <-> A < ( C + B ) ) ) $=
+    ( cr wcel w3a co clt wbr caddc wb simp1 simp2 resubcld simp3 ltadd1 syl3anc
+    cmin recnd npcand breq1d bitrd ) ADEZBDEZCDEZFZABRGZCHIZUGBJGZCBJGZHIZAUJHI
+    UFUGDEUEUDUHUKKUFABUCUDUELZUCUDUEMZNUCUDUEOUMUGCBPQUFUIAUJHUFABUFAULSUFBUMS
+    TUAUB $.
+
+  $( 'Less than' relationship between subtraction and addition.  (Contributed
+     by NM, 21-Jan-1997.) $)
+  ltsubadd2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A - B ) < C <-> A < ( B + C ) ) ) $=
+    ( cr wcel w3a cmin clt wbr caddc ltsubadd simp2 recnd addcomd breq2d bitr4d
+    co simp3 ) ADEZBDEZCDEZFZABGQCHIACBJQZHIABCJQZHIABCKUBUDUCAHUBBCUBBSTUALMUB
+    CSTUARMNOP $.
+
+  $( 'Less than or equal to' relationship between subtraction and addition.
+     (Contributed by NM, 17-Nov-2004.)  (Proof shortened by Mario Carneiro,
+     27-May-2016.) $)
+  lesubadd $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A - B ) <_ C <-> A <_ ( C + B ) ) ) $=
+    ( cr wcel w3a co cle wbr caddc wb simp1 simp2 resubcld simp3 leadd1 syl3anc
+    cmin recnd npcand breq1d bitrd ) ADEZBDEZCDEZFZABRGZCHIZUGBJGZCBJGZHIZAUJHI
+    UFUGDEUEUDUHUKKUFABUCUDUELZUCUDUEMZNUCUDUEOUMUGCBPQUFUIAUJHUFABUFAULSUFBUMS
+    TUAUB $.
+
+  $( 'Less than or equal to' relationship between subtraction and addition.
+     (Contributed by NM, 10-Aug-1999.) $)
+  lesubadd2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A - B ) <_ C <-> A <_ ( B + C ) ) ) $=
+    ( cr wcel w3a cmin cle wbr caddc lesubadd simp2 recnd addcomd breq2d bitr4d
+    co simp3 ) ADEZBDEZCDEZFZABGQCHIACBJQZHIABCJQZHIABCKUBUDUCAHUBBCUBBSTUALMUB
+    CSTUARMNOP $.
+
+  $( 'Less than' relationship between addition and subtraction.  (Contributed
+     by NM, 17-Nov-2004.) $)
+  ltaddsub $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A + B ) < C <-> A < ( C - B ) ) ) $=
+    ( cr wcel w3a co clt wbr caddc wb simp1 simp3 simp2 resubcld ltadd1 syl3anc
+    cmin recnd npcand breq2d bitr2d ) ADEZBDEZCDEZFZACBRGZHIZABJGZUGBJGZHIZUICH
+    IUFUCUGDEUDUHUKKUCUDUELUFCBUCUDUEMZUCUDUENZOUMAUGBPQUFUJCUIHUFCBUFCULSUFBUM
+    STUAUB $.
+
+  $( 'Less than' relationship between addition and subtraction.  (Contributed
+     by NM, 17-Nov-2004.) $)
+  ltaddsub2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A + B ) < C <-> B < ( C - A ) ) ) $=
+    ( cr wcel w3a caddc co clt wbr cmin wceq cc addcom syl2an 3adant3 breq1d wb
+    recn ltaddsub 3com12 bitrd ) ADEZBDEZCDEZFZABGHZCIJBAGHZCIJZBCAKHIJZUFUGUHC
+    IUCUDUGUHLZUEUCAMEBMEUKUDASBSABNOPQUDUCUEUIUJRBACTUAUB $.
+
+  $( 'Less than or equal to' relationship between addition and subtraction.
+     (Contributed by NM, 6-Apr-2005.) $)
+  leaddsub $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A + B ) <_ C <-> A <_ ( C - B ) ) ) $=
+    ( cr wcel w3a co cle wbr caddc wb simp1 simp3 simp2 resubcld leadd1 syl3anc
+    cmin recnd npcand breq2d bitr2d ) ADEZBDEZCDEZFZACBRGZHIZABJGZUGBJGZHIZUICH
+    IUFUCUGDEUDUHUKKUCUDUELUFCBUCUDUEMZUCUDUENZOUMAUGBPQUFUJCUIHUFCBUFCULSUFBUM
+    STUAUB $.
+
+  $( 'Less than or equal to' relationship between and addition and
+     subtraction.  (Contributed by NM, 6-Apr-2005.) $)
+  leaddsub2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A + B ) <_ C <-> B <_ ( C - A ) ) ) $=
+    ( cr wcel w3a caddc co cle wbr cmin wceq cc addcom syl2an 3adant3 breq1d wb
+    recn leaddsub 3com12 bitrd ) ADEZBDEZCDEZFZABGHZCIJBAGHZCIJZBCAKHIJZUFUGUHC
+    IUCUDUGUHLZUEUCAMEBMEUKUDASBSABNOPQUDUCUEUIUJRBACTUAUB $.
+
+  $( Swap subtrahends in an inequality.  (Contributed by NM, 29-Sep-2005.) $)
+  suble $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A - B ) <_ C <-> ( A - C ) <_ B ) ) $=
+    ( cr wcel w3a cmin co cle wbr caddc lesubadd wb lesubadd2 3com23 bitr4d ) A
+    DEZBDEZCDEZFABGHCIJACBKHIJZACGHBIJZABCLQSRUATMACBNOP $.
+
+  $( Swap subtrahends in an inequality.  (Contributed by NM, 29-Sep-2005.)
+     (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  lesub $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( A <_ ( B - C ) <-> C <_ ( B - A ) ) ) $=
+    ( cr wcel cmin co cle wbr wb w3a caddc leaddsub leaddsub2 bitr3d 3com23 ) A
+    DEZCDEZBDEZABCFGHIZCBAFGHIZJQRSKACLGBHITUAACBMACBNOP $.
+
+  $( 'Less than' relationship between subtraction and addition.  (Contributed
+     by NM, 4-Oct-1999.) $)
+  ltsub23 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A - B ) < C <-> ( A - C ) < B ) ) $=
+    ( cr wcel w3a cmin co clt wbr caddc ltsubadd wb ltsubadd2 3com23 bitr4d ) A
+    DEZBDEZCDEZFABGHCIJACBKHIJZACGHBIJZABCLQSRUATMACBNOP $.
+
+  $( 'Less than' relationship between subtraction and addition.  (Contributed
+     by NM, 17-Nov-2004.) $)
+  ltsub13 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( A < ( B - C ) <-> C < ( B - A ) ) ) $=
+    ( cr wcel cmin co clt wbr wb w3a caddc ltaddsub ltaddsub2 bitr3d 3com23 ) A
+    DEZCDEZBDEZABCFGHIZCBAFGHIZJQRSKACLGBHITUAACBMACBNOP $.
+
+  $( Adding both sides of two 'less than or equal to' relations.  (Contributed
+     by NM, 17-Apr-2005.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  le2add $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+                ( ( A <_ C /\ B <_ D ) -> ( A + B ) <_ ( C + D ) ) ) $=
+    ( cr wcel wa cle wbr caddc co wb simpll simprl simplr leadd1 syl3anc simprr
+    leadd2 readdcld anbi12d wi letr sylbid ) AEFZBEFZGZCEFZDEFZGZGZACHIZBDHIZGA
+    BJKZCBJKZHIZUOCDJKZHIZGZUNUQHIZUKULUPUMURUKUEUHUFULUPLUEUFUJMZUGUHUINZUEUFU
+    JOZACBPQUKUFUIUHUMURLVCUGUHUIRZVBBDCSQUAUKUNEFUOEFUQEFUSUTUBUKABVAVCTUKCBVB
+    VCTUKCDVBVDTUNUOUQUCQUD $.
+
+  $( Adding both sides of two 'less than' relations.  Theorem I.25 of [Apostol]
+     p. 20.  (Contributed by NM, 15-Aug-1999.)  (Proof shortened by Mario
+     Carneiro, 27-May-2016.) $)
+  lt2add $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+                ( ( A < C /\ B < D ) -> ( A + B ) < ( C + D ) ) ) $=
+    ( cr wcel wa clt wbr caddc co wb simpll simprl simplr ltadd1 syl3anc simprr
+    ltadd2d readdcld anbi12d wi lttr sylbid ) AEFZBEFZGZCEFZDEFZGZGZACHIZBDHIZG
+    ABJKZCBJKZHIZUOCDJKZHIZGZUNUQHIZUKULUPUMURUKUEUHUFULUPLUEUFUJMZUGUHUINZUEUF
+    UJOZACBPQUKBDCVCUGUHUIRZVBSUAUKUNEFUOEFUQEFUSUTUBUKABVAVCTUKCBVBVCTUKCDVBVD
+    TUNUOUQUCQUD $.
+
+  $( Adding both sides of two orderings.  (Contributed by NM, 23-Dec-2007.) $)
+  ltleadd $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+                ( ( A < C /\ B <_ D ) -> ( A + B ) < ( C + D ) ) ) $=
+    ( cr wcel wa clt wbr caddc co wb ltadd1 3com23 3expa adantrr leadd2 readdcl
+    cle 3expb adantll anbi12d wi adantr ancoms ad2ant2lr adantl ltletr syl3anc
+    sylbid ) AEFZBEFZGZCEFZDEFZGZGZACHIZBDSIZGABJKZCBJKZHIZVACDJKZSIZGZUTVCHIZU
+    QURVBUSVDUMUNURVBLZUOUKULUNVGUKUNULVGACBMNOPULUPUSVDLZUKULUNUOVHULUOUNVHBDC
+    QNTUAUBUQUTEFZVAEFZVCEFZVEVFUCUMVIUPABRUDULUNVJUKUOUNULVJCBRUEUFUPVKUMCDRUG
+    UTVAVCUHUIUJ $.
+
+  $( Adding both sides of two orderings.  (Contributed by NM, 15-Aug-2008.) $)
+  leltadd $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+                ( ( A <_ C /\ B < D ) -> ( A + B ) < ( C + D ) ) ) $=
+    ( cr wcel wa cle wbr caddc co wi ltleadd ancomsd cc wceq recn addcom syl2an
+    clt ancom2s ancom1s breqan12d sylibrd ) AEFZBEFZGZCEFZDEFZGZGACHIZBDTIZGZBA
+    JKZDCJKZTIZABJKZCDJKZTIUFUEUJUMUPLZUFUEGZUIUHUSUTUIUHGGULUKUPBADCMNUAUBUGUJ
+    UQUNURUOTUEAOFBOFUQUNPUFAQBQABRSUHCOFDOFURUOPUICQDQCDRSUCUD $.
+
+  $( The sum of 2 positive numbers is positive.  (Contributed by NM,
+     1-Jun-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  addgt0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 < A /\ 0 < B ) ) ->
+                0 < ( A + B ) ) $=
+    ( cr wcel wa cc0 clt wbr caddc co 00id wi 0re lt2add mpanl12 imp syl5eqbrr
+    ) ACDBCDEZFAGHFBGHEZEFFFIJZABIJZGKRSTUAGHZFCDZUCRSUBLMMFFABNOPQ $.
+
+  $( The sum of nonnegative and positive numbers is positive.  (Contributed by
+     NM, 28-Dec-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  addgegt0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ 0 < B ) ) ->
+                  0 < ( A + B ) ) $=
+    ( cr wcel wa cc0 cle wbr clt caddc co 00id wi 0re leltadd mpanl12 syl5eqbrr
+    imp ) ACDBCDEZFAGHFBIHEZEFFFJKZABJKZILSTUAUBIHZFCDZUDSTUCMNNFFABOPRQ $.
+
+  $( The sum of nonnegative and positive numbers is positive.  (Contributed by
+     NM, 28-Dec-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  addgtge0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 < A /\ 0 <_ B ) ) ->
+                  0 < ( A + B ) ) $=
+    ( cr wcel wa cc0 clt wbr cle caddc co 00id wi 0re ltleadd mpanl12 syl5eqbrr
+    imp ) ACDBCDEZFAGHFBIHEZEFFFJKZABJKZGLSTUAUBGHZFCDZUDSTUCMNNFFABOPRQ $.
+
+  $( The sum of 2 nonnegative numbers is nonnegative.  (Contributed by NM,
+     17-Mar-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  addge0 $p |- ( ( ( A e. RR /\ B e. RR ) /\
+               ( 0 <_ A /\ 0 <_ B ) ) -> 0 <_ ( A + B ) ) $=
+    ( cr wcel wa cc0 cle wbr caddc co 00id wi 0re le2add mpanl12 imp syl5eqbrr
+    ) ACDBCDEZFAGHFBGHEZEFFFIJZABIJZGKRSTUAGHZFCDZUCRSUBLMMFFABNOPQ $.
+
+  $( Adding a positive number to another number increases it.  (Contributed by
+     NM, 17-Nov-2004.) $)
+  ltaddpos $p |- ( ( A e. RR /\ B e. RR ) -> ( 0 < A <-> B < ( B + A ) ) ) $=
+    ( cr wcel wa cc0 clt wbr caddc co wb ltadd2 mp3an1 wceq recn addid1d adantl
+    0re breq1d bitrd ) ACDZBCDZEZFAGHZBFIJZBAIJZGHZBUFGHFCDUAUBUDUGKRFABLMUCUEB
+    UFGUBUEBNUAUBBBOPQST $.
+
+  $( Adding a positive number to another number increases it.  (Contributed by
+     NM, 8-Apr-2005.) $)
+  ltaddpos2 $p |- ( ( A e. RR /\ B e. RR ) -> ( 0 < A <-> B < ( A + B ) ) ) $=
+    ( cr wcel wa cc0 clt wbr caddc co ltaddpos wceq addcom syl2an breq2d bitr4d
+    cc recn ) ACDZBCDZEZFAGHBBAIJZGHBABIJZGHABKUAUCUBBGSAQDBQDUCUBLTARBRABMNOP
+    $.
+
+  $( Subtracting a positive number from another number decreases it.
+     (Contributed by NM, 17-Nov-2004.)  (Proof shortened by Andrew Salmon,
+     19-Nov-2011.) $)
+  ltsubpos $p |- ( ( A e. RR /\ B e. RR ) -> ( 0 < A <-> ( B - A ) < B ) ) $=
+    ( cr wcel wa cc0 clt wbr caddc co cmin ltaddpos wb ltsubadd 3anidm13 ancoms
+    bitr4d ) ACDZBCDZEFAGHBBAIJGHZBAKJBGHZABLSRUATMZSRUBBABNOPQ $.
+
+  $( Comparison of two numbers whose difference is positive.  (Contributed by
+     NM, 17-Nov-2004.) $)
+  posdif $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B <-> 0 < ( B - A ) ) ) $=
+    ( cr wcel wa cc0 cmin co clt caddc wb resubcl ancoms simpl ltaddpos syl2anc
+    wbr cc wceq recn pncan3 syl2an breq2d bitr2d ) ACDZBCDZEZFBAGHZIQZAAUHJHZIQ
+    ZABIQUGUHCDZUEUIUKKUFUEULBALMUEUFNUHAOPUGUJBAIUEARDBRDUJBSUFATBTABUAUBUCUD
+    $.
+
+  $( Subtraction from both sides of 'less than or equal to'.  (Contributed by
+     NM, 13-May-2004.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  lesub1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A <_ B <-> ( A - C ) <_ ( B - C ) ) ) $=
+    ( cr wcel w3a cmin co cle caddc simp1 simp3 simp2 resubcld lesubadd syl3anc
+    wbr wb recnd npcand breq2d bitr2d ) ADEZBDEZCDEZFZACGHBCGHZIQZAUGCJHZIQZABI
+    QUFUCUEUGDEUHUJRUCUDUEKUCUDUELZUFBCUCUDUEMZUKNACUGOPUFUIBAIUFBCUFBULSUFCUKS
+    TUAUB $.
+
+  $( Subtraction of both sides of 'less than or equal to'.  (Contributed by NM,
+     29-Sep-2005.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  lesub2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A <_ B <-> ( C - B ) <_ ( C - A ) ) ) $=
+    ( cr wcel w3a cle wbr cmin co caddc leadd2 wb simp3 simp1 readdcld lesubadd
+    simp2 syl3anc recnd addsubd breq1d 3bitr2d resubcld leaddsub bitrd ) ADEZBD
+    EZCDEZFZABGHZCBIJZAKJZCGHZULCAIJGHZUJUKCAKJZCBKJGHZUPBIJZCGHZUNABCLUJUPDEUH
+    UIUSUQMUJCAUGUHUINZUGUHUIOZPUGUHUIRZUTUPBCQSUJURUMCGUJCABUJCUTTUJAVATUJBVBT
+    UAUBUCUJULDEUGUIUNUOMUJCBUTVBUDVAUTULACUESUF $.
+
+  $( Subtraction from both sides of 'less than'.  (Contributed by FL,
+     3-Jan-2008.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  ltsub1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A < B <-> ( A - C ) < ( B - C ) ) ) $=
+    ( cr wcel w3a cmin co clt caddc simp1 simp3 simp2 resubcld ltsubadd syl3anc
+    wbr wb recnd npcand breq2d bitr2d ) ADEZBDEZCDEZFZACGHBCGHZIQZAUGCJHZIQZABI
+    QUFUCUEUGDEUHUJRUCUDUEKUCUDUELZUFBCUCUDUEMZUKNACUGOPUFUIBAIUFBCUFBULSUFCUKS
+    TUAUB $.
+
+  $( Subtraction of both sides of 'less than'.  (Contributed by NM,
+     29-Sep-2005.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  ltsub2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A < B <-> ( C - B ) < ( C - A ) ) ) $=
+    ( cr wcel w3a clt wbr cmin co caddc ltadd2 wb simp3 simp1 readdcld ltsubadd
+    simp2 syl3anc recnd addsubd breq1d 3bitr2d resubcld ltaddsub bitrd ) ADEZBD
+    EZCDEZFZABGHZCBIJZAKJZCGHZULCAIJGHZUJUKCAKJZCBKJGHZUPBIJZCGHZUNABCLUJUPDEUH
+    UIUSUQMUJCAUGUHUINZUGUHUIOZPUGUHUIRZUTUPBCQSUJURUMCGUJCABUJCUTTUJAVATUJBVBT
+    UAUBUCUJULDEUGUIUNUOMUJCBUTVBUDVAUTULACUESUF $.
+
+  $( Subtracting both sides of two 'less than' relations.  (Contributed by
+     Mario Carneiro, 14-Apr-2016.) $)
+  lt2sub $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+                ( ( A < C /\ D < B ) -> ( A - B ) < ( C - D ) ) ) $=
+    ( cr wcel wa clt wbr cmin simpll simprl simplr ltsub1 syl3anc simprr ltsub2
+    co wb resubcl anbi12d wi adantr resubcld adantl lttr sylbid ) AEFZBEFZGZCEF
+    ZDEFZGZGZACHIZDBHIZGABJRZCBJRZHIZURCDJRZHIZGZUQUTHIZUNUOUSUPVAUNUHUKUIUOUSS
+    UHUIUMKUJUKULLZUHUIUMMZACBNOUNULUIUKUPVASUJUKULPVEVDDBCQOUAUNUQEFZUREFUTEFZ
+    VBVCUBUJVFUMABTUCUNCBVDVEUDUMVGUJCDTUEUQURUTUFOUG $.
+
+  $( Subtracting both sides of two 'less than or equal to' relations.
+     (Contributed by Mario Carneiro, 14-Apr-2016.) $)
+  le2sub $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+                ( ( A <_ C /\ D <_ B ) -> ( A - B ) <_ ( C - D ) ) ) $=
+    ( cr wcel wa cle wbr cmin simpll simprl simplr lesub1 syl3anc simprr lesub2
+    co wb resubcl anbi12d wi adantr resubcld adantl letr sylbid ) AEFZBEFZGZCEF
+    ZDEFZGZGZACHIZDBHIZGABJRZCBJRZHIZURCDJRZHIZGZUQUTHIZUNUOUSUPVAUNUHUKUIUOUSS
+    UHUIUMKUJUKULLZUHUIUMMZACBNOUNULUIUKUPVASUJUKULPVEVDDBCQOUAUNUQEFZUREFUTEFZ
+    VBVCUBUJVFUMABTUCUNCBVDVEUDUMVGUJCDTUEUQURUTUFOUG $.
+
+  $( Negative of both sides of 'less than'.  Theorem I.23 of [Apostol] p. 20.
+     (Contributed by NM, 27-Aug-1999.)  (Proof shortened by Mario Carneiro,
+     27-May-2016.) $)
+  ltneg $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B <-> -u B < -u A ) ) $=
+    ( cr wcel wa clt wbr cc0 cmin cneg 0re ltsub2 mp3an3 df-neg breq12i syl6bbr
+    co wb ) ACDZBCDZEABFGZHBIQZHAIQZFGZBJZAJZFGSTHCDUAUDRKABHLMUEUBUFUCFBNANOP
+    $.
+
+  $( Contraposition of negative in 'less than'.  (Contributed by NM,
+     8-Nov-2004.) $)
+  ltnegcon1 $p |- ( ( A e. RR /\ B e. RR ) -> ( -u A < B <-> -u B < A ) ) $=
+    ( cr wcel wa cneg clt wbr wb renegcl ltneg sylan simpl recnd negnegd breq2d
+    bitrd ) ACDZBCDZEZAFZBGHZBFZUAFZGHZUCAGHRUACDSUBUEIAJUABKLTUDAUCGTATARSMNOP
+    Q $.
+
+  $( Contraposition of negative in 'less than'.  (Contributed by Mario
+     Carneiro, 25-Feb-2015.) $)
+  ltnegcon2 $p |- ( ( A e. RR /\ B e. RR ) -> ( A < -u B <-> B < -u A ) ) $=
+    ( cr wcel wa cneg clt wbr wb renegcl ltneg sylan2 simpr recnd negnegd bitrd
+    breq1d ) ACDZBCDZEZABFZGHZUAFZAFZGHZBUDGHSRUACDUBUEIBJAUAKLTUCBUDGTBTBRSMNO
+    QP $.
+
+  $( Negative of both sides of 'less than or equal to'.  (Contributed by NM,
+     12-Sep-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  leneg $p |- ( ( A e. RR /\ B e. RR ) -> ( A <_ B <-> -u B <_ -u A ) ) $=
+    ( cr wcel wa cle wbr cc0 cmin cneg 0re lesub2 mp3an3 df-neg breq12i syl6bbr
+    co wb ) ACDZBCDZEABFGZHBIQZHAIQZFGZBJZAJZFGSTHCDUAUDRKABHLMUEUBUFUCFBNANOP
+    $.
+
+  $( Contraposition of negative in 'less than or equal to'.  (Contributed by
+     NM, 10-May-2004.) $)
+  lenegcon1 $p |- ( ( A e. RR /\ B e. RR ) -> ( -u A <_ B <-> -u B <_ A ) ) $=
+    ( cr wcel wa cneg cle wbr wb renegcl leneg sylan recn negnegd breq2d adantr
+    bitrd ) ACDZBCDZEAFZBGHZBFZTFZGHZUBAGHZRTCDSUAUDIAJTBKLRUDUEISRUCAUBGRAAMNO
+    PQ $.
+
+  $( Contraposition of negative in 'less than or equal to'.  (Contributed by
+     NM, 8-Oct-2005.) $)
+  lenegcon2 $p |- ( ( A e. RR /\ B e. RR ) -> ( A <_ -u B <-> B <_ -u A ) ) $=
+    ( cr wcel wa cneg cle wbr wb renegcl sylan2 wceq recn negnegd adantl breq1d
+    leneg bitrd ) ACDZBCDZEZABFZGHZUBFZAFZGHZBUEGHTSUBCDUCUFIBJAUBQKUAUDBUEGTUD
+    BLSTBBMNOPR $.
+
+  $( Comparison of a number and its negative to zero.  Theorem I.23 of
+     [Apostol] p. 20.  (Contributed by NM, 14-May-1999.) $)
+  lt0neg1 $p |- ( A e. RR -> ( A < 0 <-> 0 < -u A ) ) $=
+    ( cr wcel cc0 clt wbr cneg wb 0re ltneg mpan2 neg0 breq1i syl6bb ) ABCZADEF
+    ZDGZAGZEFZDREFODBCPSHIADJKQDRELMN $.
+
+  $( Comparison of a number and its negative to zero.  (Contributed by NM,
+     10-May-2004.) $)
+  lt0neg2 $p |- ( A e. RR -> ( 0 < A <-> -u A < 0 ) ) $=
+    ( cr wcel cc0 clt wbr cneg wb 0re ltneg mpan neg0 breq2i syl6bb ) ABCZDAEFZ
+    AGZDGZEFZQDEFDBCOPSHIDAJKRDQELMN $.
+
+  $( Comparison of a number and its negative to zero.  (Contributed by NM,
+     10-May-2004.) $)
+  le0neg1 $p |- ( A e. RR -> ( A <_ 0 <-> 0 <_ -u A ) ) $=
+    ( cr wcel cc0 cle wbr cneg wb 0re leneg mpan2 neg0 breq1i syl6bb ) ABCZADEF
+    ZDGZAGZEFZDREFODBCPSHIADJKQDRELMN $.
+
+  $( Comparison of a number and its negative to zero.  (Contributed by NM,
+     24-Aug-1999.) $)
+  le0neg2 $p |- ( A e. RR -> ( 0 <_ A <-> -u A <_ 0 ) ) $=
+    ( cr wcel cc0 cle wbr cneg wb 0re leneg mpan neg0 breq2i syl6bb ) ABCZDAEFZ
+    AGZDGZEFZQDEFDBCOPSHIDAJKRDQELMN $.
+
+  $( A number is less than or equal to itself plus a nonnegative number.
+     (Contributed by NM, 21-Feb-2005.) $)
+  addge01 $p |- ( ( A e. RR /\ B e. RR ) -> ( 0 <_ B <-> A <_ ( A + B ) ) ) $=
+    ( cr wcel wa cc0 cle wbr caddc co wb leadd2 mp3an1 ancoms wceq recn addid1d
+    0re adantr breq1d bitrd ) ACDZBCDZEZFBGHZAFIJZABIJZGHZAUGGHUCUBUEUHKZFCDUCU
+    BUIRFBALMNUDUFAUGGUBUFAOUCUBAAPQSTUA $.
+
+  $( A number is less than or equal to itself plus a nonnegative number.
+     (Contributed by NM, 27-Jul-2005.) $)
+  addge02 $p |- ( ( A e. RR /\ B e. RR ) -> ( 0 <_ B <-> A <_ ( B + A ) ) ) $=
+    ( cr wcel wa cc0 cle wbr caddc co addge01 cc wceq recn addcom syl2an breq2d
+    bitrd ) ACDZBCDZEZFBGHAABIJZGHABAIJZGHABKUAUBUCAGSALDBLDUBUCMTANBNABOPQR $.
+
+  $( Two nonnegative numbers are zero iff their sum is zero.  (Contributed by
+     Jeff Madsen, 2-Sep-2009.)  (Proof shortened by Mario Carneiro,
+     27-May-2016.) $)
+  add20 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) )
+                        -> ( ( A + B ) = 0 <-> ( A = 0 /\ B = 0 ) ) ) $=
+    ( cr wcel cc0 cle wbr wa caddc wceq simpllr simplrl simplll addge02 syl2anc
+    co wb mpbid simpr breqtrd simplrr letri3d mpbir2and oveq2d addid1d 3eqtr3rd
+    0red recnd jca ex oveq12 00id syl6eq impbid1 ) ACDZEAFGZHZBCDZEBFGZHZHZABIP
+    ZEJZAEJZBEJZHZVAVCVFVAVCHZVDVEVGVBAEIPEAVGBEAIVGVEBEFGUSVGBVBEFVGUPBVBFGZUO
+    UPUTVCKVGURUOUPVHQUQURUSVCLZUOUPUTVCMZBANORVAVCSZTUQURUSVCUAVGBEVIVGUGUBUCZ
+    UDVKVGAVGAVJUHUEUFVLUIUJVFVBEEIPEAEBEIUKULUMUN $.
+
+  $( Nonnegative subtraction.  (Contributed by NM, 14-Mar-2005.)  (Proof
+     shortened by Mario Carneiro, 27-May-2016.) $)
+  subge0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( 0 <_ ( A - B ) <-> B <_ A ) ) $=
+    ( cr wcel wa cc0 caddc co cle wbr cmin wb 0red simpr simpl leaddsub syl3anc
+    recnd addid2d breq1d bitr3d ) ACDZBCDZEZFBGHZAIJZFABKHIJZBAIJUDFCDUCUBUFUGL
+    UDMUBUCNZUBUCOFBAPQUDUEBAIUDBUDBUHRSTUA $.
+
+  $( Nonpositive subtraction.  (Contributed by NM, 20-Mar-2008.)  (Proof
+     shortened by Mario Carneiro, 27-May-2016.) $)
+  suble0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( ( A - B ) <_ 0 <-> A <_ B ) ) $=
+    ( cr wcel wa cmin co cc0 cle wbr wb suble mp3an3 simpl recnd subid1d breq1d
+    0re bitrd ) ACDZBCDZEZABFGHIJZAHFGZBIJZABIJTUAHCDUCUEKRABHLMUBUDABIUBAUBATU
+    ANOPQS $.
+
+  $( The sum of a real number and a second real number is less then the real
+     number iff the second real number is negative.  (Contributed by Alexander
+     van der Vekens, 30-May-2018.) $)
+  leaddle0 $p |- ( ( A e. RR /\ B e. RR ) -> ( ( A + B ) <_ A <-> B <_ 0 ) ) $=
+    ( cr wcel wa caddc co cle wbr cmin wb leaddsub2 3anidm13 wceq subidd adantr
+    cc0 recn breq2d bitrd ) ACDZBCDZEZABFGAHIZBAAJGZHIZBQHIUAUBUDUFKABALMUCUEQB
+    HUAUEQNUBUAAAROPST $.
+
+  $( Nonnegative subtraction.  (Contributed by NM, 27-Jul-2005.) $)
+  subge02 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( 0 <_ B <-> ( A - B ) <_ A ) ) $=
+    ( cr wcel wa cc0 cle wbr caddc co cmin addge01 wb lesubadd 3anidm13 bitr4d
+    ) ACDZBCDZEFBGHAABIJGHZABKJAGHZABLQRTSMABANOP $.
+
+  $( Lemma to show a nonnegative number is zero.  (Contributed by NM,
+     8-Oct-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  lesub0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( ( 0 <_ A /\ B <_ ( B - A ) ) <-> A = 0 ) ) $=
+    ( cr wcel wa cc0 wceq cle wbr cmin co 0red letri3 sylan2 ancom simpr lesub2
+    wb simpl syl3anc recnd subid1d breq1d bitrd ancoms anbi2d syl5bb bitr2d ) A
+    CDZBCDZEZAFGZAFHIZFAHIZEZUNBBAJKZHIZEZUJUIFCDZULUORUJLAFMNUOUNUMEUKURUMUNOU
+    KUMUQUNUJUIUMUQRUJUIEZUMBFJKZUPHIZUQUTUIUSUJUMVBRUJUIPUTLUJUISZAFBQTUTVABUP
+    HUTBUTBVCUAUBUCUDUEUFUGUH $.
+
+  $( The product of two negative numbers is positive.  (Contributed by Jeff
+     Hankins, 8-Jun-2009.) $)
+  mullt0 $p |- ( ( ( A e. RR /\ A < 0 ) /\ ( B e. RR /\ B < 0 ) )
+               -> 0 < ( A x. B ) ) $=
+    ( cr wcel cc0 clt wbr wa cneg cmul renegcl adantr lt0neg1 biimpa jca mulgt0
+    co syl2an cc recn wceq mul2neg ad2ant2r breqtrd ) ACDZAEFGZHZBCDZBEFGZHZHEA
+    IZBIZJQZABJQZFUGUKCDZEUKFGZHULCDZEULFGZHEUMFGUJUGUOUPUEUOUFAKLUEUFUPAMNOUJU
+    QURUHUQUIBKLUHUIURBMNOUKULPRUEUHUMUNUAZUFUIUEASDBSDUSUHATBTABUBRUCUD $.
+
+  $( 0 is less than or equal to 1.  (Contributed by Mario Carneiro,
+     29-Apr-2015.) $)
+  0le1 $p |- 0 <_ 1 $=
+    ( cc0 c1 0re 1re 0lt1 ltleii ) ABCDEF $.
+
+  ${
+    lt_2.1 $e |- A e. RR $.
+    $( 'Less than or equal to' is reflexive.  (Contributed by NM,
+       18-Aug-1999.) $)
+    leidi $p |- A <_ A $=
+      ( cr wcel cle wbr leid ax-mp ) ACDAAEFBAGH $.
+
+    $( Positive means nonzero (useful for ordering theorems involving
+       division).  (Contributed by NM, 16-Sep-1999.) $)
+    gt0ne0i $p |- ( 0 < A -> A =/= 0 ) $=
+      ( cc0 0re ltnei ) CADBE $.
+
+    ${
+      gt0ne0i.2 $e |- 0 < A $.
+      $( Positive implies nonzero.  (Contributed by NM, 15-May-1999.) $)
+      gt0ne0ii $p |- A =/= 0 $=
+        ( cc0 clt wbr wne gt0ne0i ax-mp ) DAEFADGCABHI $.
+    $}
+
+    lt_2.2 $e |- B e. RR $.
+    $( Addition of 2 positive numbers is positive.  (Contributed by NM,
+       16-May-1999.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+    addgt0i $p |- ( ( 0 < A /\ 0 < B ) -> 0 < ( A + B ) ) $=
+      ( cr wcel cc0 clt wbr wa caddc co addgt0 mpanl12 ) AEFBEFGAHIGBHIJGABKLHI
+      CDABMN $.
+
+    $( Addition of 2 nonnegative numbers is nonnegative.  (Contributed by NM,
+       28-May-1999.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+    addge0i $p |- ( ( 0 <_ A /\ 0 <_ B ) -> 0 <_ ( A + B ) ) $=
+      ( cr wcel cc0 cle wbr wa caddc co addge0 mpanl12 ) AEFBEFGAHIGBHIJGABKLHI
+      CDABMN $.
+
+    $( Addition of nonnegative and positive numbers is positive.  (Contributed
+       by NM, 25-Sep-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    addgegt0i $p |- ( ( 0 <_ A /\ 0 < B ) -> 0 < ( A + B ) ) $=
+      ( cr wcel cc0 cle wbr clt wa caddc co addgegt0 mpanl12 ) AEFBEFGAHIGBJIKG
+      ABLMJICDABNO $.
+
+    ${
+      addgt0i.3 $e |- 0 < A $.
+      addgt0i.4 $e |- 0 < B $.
+      $( Addition of 2 positive numbers is positive.  (Contributed by NM,
+         18-May-1999.) $)
+      addgt0ii $p |- 0 < ( A + B ) $=
+        ( cc0 clt wbr caddc co addgt0i mp2an ) GAHIGBHIGABJKHIEFABCDLM $.
+    $}
+
+    $( Two nonnegative numbers are zero iff their sum is zero.  (Contributed by
+       NM, 28-Jul-1999.) $)
+    add20i $p |- ( ( 0 <_ A /\ 0 <_ B ) ->
+      ( ( A + B ) = 0 <-> ( A = 0 /\ B = 0 ) ) ) $=
+      ( cr wcel cc0 cle wbr wa caddc co wceq wb add20 an4s mpanl12 ) AEFZBEFZGA
+      HIZGBHIZJABKLGMAGMBGMJNZCDRTSUAUBABOPQ $.
+
+    $( Negative of both sides of 'less than'.  Theorem I.23 of [Apostol]
+       p. 20.  (Contributed by NM, 21-Jan-1997.) $)
+    ltnegi $p |- ( A < B <-> -u B < -u A ) $=
+      ( cr wcel clt wbr cneg wb ltneg mp2an ) AEFBEFABGHBIAIGHJCDABKL $.
+
+    $( Negative of both sides of 'less than or equal to'.  (Contributed by NM,
+       1-Aug-1999.) $)
+    lenegi $p |- ( A <_ B <-> -u B <_ -u A ) $=
+      ( cr wcel cle wbr cneg wb leneg mp2an ) AEFBEFABGHBIAIGHJCDABKL $.
+
+    $( Contraposition of negative in 'less than'.  (Contributed by NM,
+       14-May-1999.) $)
+    ltnegcon2i $p |- ( A < -u B <-> B < -u A ) $=
+      ( cr wcel cneg clt wbr wb ltnegcon2 mp2an ) AEFBEFABGHIBAGHIJCDABKL $.
+
+    $( Lemma to show a nonnegative number is zero.  (Contributed by NM,
+       8-Oct-1999.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+    lesub0i $p |- ( ( 0 <_ A /\ B <_ ( B - A ) ) <-> A = 0 ) $=
+      ( cr wcel cc0 cle wbr cmin co wa wceq wb lesub0 mp2an ) AEFBEFGAHIBBAJKHI
+      LAGMNCDABOP $.
+
+    $( Adding a positive number to another number increases it.  (Contributed
+       by NM, 25-Aug-1999.) $)
+    ltaddposi $p |- ( 0 < A <-> B < ( B + A ) ) $=
+      ( cr wcel cc0 clt wbr caddc co wb ltaddpos mp2an ) AEFBEFGAHIBBAJKHILCDAB
+      MN $.
+
+    $( Comparison of two numbers whose difference is positive.  (Contributed by
+       NM, 19-Aug-2001.) $)
+    posdifi $p |- ( A < B <-> 0 < ( B - A ) ) $=
+      ( cr wcel clt wbr cc0 cmin co wb posdif mp2an ) AEFBEFABGHIBAJKGHLCDABMN
+      $.
+
+    $( Contraposition of negative in 'less than'.  (Contributed by NM,
+       14-May-1999.) $)
+    ltnegcon1i $p |- ( -u A < B <-> -u B < A ) $=
+      ( cr wcel cneg clt wbr wb ltnegcon1 mp2an ) AEFBEFAGBHIBGAHIJCDABKL $.
+
+    $( Contraposition of negative in 'less than or equal to'.  (Contributed by
+       NM, 6-Apr-2005.) $)
+    lenegcon1i $p |- ( -u A <_ B <-> -u B <_ A ) $=
+      ( cr wcel cneg cle wbr wb lenegcon1 mp2an ) AEFBEFAGBHIBGAHIJCDABKL $.
+
+    $( Nonnegative subtraction.  (Contributed by NM, 13-Aug-2000.) $)
+    subge0i $p |- ( 0 <_ ( A - B ) <-> B <_ A ) $=
+      ( cr wcel cc0 cmin co cle wbr wb subge0 mp2an ) AEFBEFGABHIJKBAJKLCDABMN
+      $.
+
+    lt_2.3 $e |- C e. RR $.
+    $( Addition to both sides of 'less than'.  Theorem I.18 of [Apostol]
+       p. 20.  (Contributed by NM, 21-Jan-1997.) $)
+    ltadd1i $p |- ( A < B <-> ( A + C ) < ( B + C ) ) $=
+      ( cr wcel clt wbr caddc co wb ltadd1 mp3an ) AGHBGHCGHABIJACKLBCKLIJMDEFA
+      BCNO $.
+
+    $( Addition to both sides of 'less than or equal to'.  (Contributed by NM,
+       11-Aug-1999.) $)
+    leadd1i $p |- ( A <_ B <-> ( A + C ) <_ ( B + C ) ) $=
+      ( cr wcel cle wbr caddc co wb leadd1 mp3an ) AGHBGHCGHABIJACKLBCKLIJMDEFA
+      BCNO $.
+
+    $( Addition to both sides of 'less than or equal to'.  (Contributed by NM,
+       11-Aug-1999.) $)
+    leadd2i $p |- ( A <_ B <-> ( C + A ) <_ ( C + B ) ) $=
+      ( cr wcel cle wbr caddc co wb leadd2 mp3an ) AGHBGHCGHABIJCAKLCBKLIJMDEFA
+      BCNO $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by NM, 21-Jan-1997.)  (Proof shortened by Andrew Salmon,
+       19-Nov-2011.) $)
+    ltsubaddi $p |- ( ( A - B ) < C <-> A < ( C + B ) ) $=
+      ( cr wcel cmin co clt wbr caddc wb ltsubadd mp3an ) AGHBGHCGHABIJCKLACBMJ
+      KLNDEFABCOP $.
+
+    $( 'Less than or equal to' relationship between subtraction and addition.
+       (Contributed by NM, 30-Sep-1999.)  (Proof shortened by Andrew Salmon,
+       19-Nov-2011.) $)
+    lesubaddi $p |- ( ( A - B ) <_ C <-> A <_ ( C + B ) ) $=
+      ( cr wcel cmin co cle wbr caddc wb lesubadd mp3an ) AGHBGHCGHABIJCKLACBMJ
+      KLNDEFABCOP $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by NM, 21-Jan-1997.) $)
+    ltsubadd2i $p |- ( ( A - B ) < C <-> A < ( B + C ) ) $=
+      ( cr wcel cmin co clt wbr caddc wb ltsubadd2 mp3an ) AGHBGHCGHABIJCKLABCM
+      JKLNDEFABCOP $.
+
+    $( 'Less than or equal to' relationship between subtraction and addition.
+       (Contributed by NM, 3-Aug-1999.) $)
+    lesubadd2i $p |- ( ( A - B ) <_ C <-> A <_ ( B + C ) ) $=
+      ( cr wcel cmin co cle wbr caddc wb lesubadd2 mp3an ) AGHBGHCGHABIJCKLABCM
+      JKLNDEFABCOP $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by NM, 14-May-1999.) $)
+    ltaddsubi $p |- ( ( A + B ) < C <-> A < ( C - B ) ) $=
+      ( cr wcel caddc co clt wbr cmin wb ltaddsub mp3an ) AGHBGHCGHABIJCKLACBMJ
+      KLNDEFABCOP $.
+
+    lt.4 $e |- D e. RR $.
+    $( Adding both side of two inequalities.  Theorem I.25 of [Apostol] p. 20.
+       (Contributed by NM, 14-May-1999.) $)
+    lt2addi $p |- ( ( A < C /\ B < D ) -> ( A + B ) < ( C + D ) ) $=
+      ( cr wcel clt wbr wa caddc co wi lt2add mp4an ) AIJBIJCIJDIJACKLBDKLMABNO
+      CDNOKLPEFGHABCDQR $.
+
+    $( Adding both side of two inequalities.  (Contributed by NM,
+       16-Sep-1999.) $)
+    le2addi $p |- ( ( A <_ C /\ B <_ D ) -> ( A + B ) <_ ( C + D ) ) $=
+      ( cr wcel cle wbr wa caddc co wi le2add mp4an ) AIJBIJCIJDIJACKLBDKLMABNO
+      CDNOKLPEFGHABCDQR $.
+  $}
+
+  ${
+    gt0ne0d.1 $e |- ( ph -> 0 < A ) $.
+    $( Positive implies nonzero.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    gt0ne0d $p |- ( ph -> A =/= 0 ) $=
+      ( cc0 cr wcel clt wbr wne 0re ltne sylancr ) ADEFDBGHBDIJCDBKL $.
+  $}
+
+  ${
+    lt0ne0d.1 $e |- ( ph -> A < 0 ) $.
+    $( Something less than zero is not zero.  Deduction form.  (Contributed by
+       David Moews, 28-Feb-2017.) $)
+    lt0ne0d $p |- ( ph -> A =/= 0 ) $=
+      ( cc0 clt wbr wne wceq 0re ltnri breq1 mtbiri necon2ai syl ) ABDEFZBDGCOB
+      DBDHODDEFDIJBDDEKLMN $.
+  $}
+
+  ${
+    leidd.1 $e |- ( ph -> A e. RR ) $.
+    $( 'Less than or equal to' is reflexive.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    leidd $p |- ( ph -> A <_ A ) $=
+      ( cr wcel cle wbr leid syl ) ABDEBBFGCBHI $.
+
+    $( Comparison of a number and its negative to zero.  Theorem I.23 of
+       [Apostol] p. 20.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    lt0neg1d $p |- ( ph -> ( A < 0 <-> 0 < -u A ) ) $=
+      ( cr wcel cc0 clt wbr cneg wb lt0neg1 syl ) ABDEBFGHFBIGHJCBKL $.
+
+    $( Comparison of a number and its negative to zero.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    lt0neg2d $p |- ( ph -> ( 0 < A <-> -u A < 0 ) ) $=
+      ( cr wcel cc0 clt wbr cneg wb lt0neg2 syl ) ABDEFBGHBIFGHJCBKL $.
+
+    $( Comparison of a number and its negative to zero.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    le0neg1d $p |- ( ph -> ( A <_ 0 <-> 0 <_ -u A ) ) $=
+      ( cr wcel cc0 cle wbr cneg wb le0neg1 syl ) ABDEBFGHFBIGHJCBKL $.
+
+    $( Comparison of a number and its negative to zero.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    le0neg2d $p |- ( ph -> ( 0 <_ A <-> -u A <_ 0 ) ) $=
+      ( cr wcel cc0 cle wbr cneg wb le0neg2 syl ) ABDEFBGHBIFGHJCBKL $.
+
+    ltnegd.2 $e |- ( ph -> B e. RR ) $.
+    ${
+      addgegt0d.3 $e |- ( ph -> 0 <_ A ) $.
+      addgegt0d.4 $e |- ( ph -> 0 < B ) $.
+      $( Addition of nonnegative and positive numbers is positive.
+         (Contributed by Mario Carneiro, 27-May-2016.) $)
+      addgegt0d $p |- ( ph -> 0 < ( A + B ) ) $=
+        ( cr wcel cc0 cle wbr clt caddc co addgegt0 syl22anc ) ABHICHIJBKLJCMLJ
+        BCNOMLDEFGBCPQ $.
+    $}
+
+    ${
+      addgt0d.3 $e |- ( ph -> 0 < A ) $.
+      addgt0d.4 $e |- ( ph -> 0 < B ) $.
+      $( Addition of 2 positive numbers is positive.  (Contributed by Mario
+         Carneiro, 27-May-2016.) $)
+      addgt0d $p |- ( ph -> 0 < ( A + B ) ) $=
+        ( cc0 0red ltled addgegt0d ) ABCDEAHBAIDFJGK $.
+    $}
+
+    ${
+      addge0d.3 $e |- ( ph -> 0 <_ A ) $.
+      addge0d.4 $e |- ( ph -> 0 <_ B ) $.
+      $( Addition of 2 nonnegative numbers is nonnegative.  (Contributed by
+         Mario Carneiro, 27-May-2016.) $)
+      addge0d $p |- ( ph -> 0 <_ ( A + B ) ) $=
+        ( cr wcel cc0 cle wbr caddc co addge0 syl22anc ) ABHICHIJBKLJCKLJBCMNKL
+        DEFGBCOP $.
+    $}
+
+    $( Negative of both sides of 'less than'.  Theorem I.23 of [Apostol]
+       p. 20.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    ltnegd $p |- ( ph -> ( A < B <-> -u B < -u A ) ) $=
+      ( cr wcel clt wbr cneg wb ltneg syl2anc ) ABFGCFGBCHICJBJHIKDEBCLM $.
+
+    $( Negative of both sides of 'less than or equal to'.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    lenegd $p |- ( ph -> ( A <_ B <-> -u B <_ -u A ) ) $=
+      ( cr wcel cle wbr cneg wb leneg syl2anc ) ABFGCFGBCHICJBJHIKDEBCLM $.
+
+    ${
+      ltnegcon1d.3 $e |- ( ph -> -u A < B ) $.
+      $( Contraposition of negative in 'less than'.  (Contributed by Mario
+         Carneiro, 27-May-2016.) $)
+      ltnegcon1d $p |- ( ph -> -u B < A ) $=
+        ( cneg clt wbr cr wcel wb ltnegcon1 syl2anc mpbid ) ABGCHIZCGBHIZFABJKC
+        JKPQLDEBCMNO $.
+    $}
+
+    ${
+      ltnegcon2d.3 $e |- ( ph -> A < -u B ) $.
+      $( Contraposition of negative in 'less than'.  (Contributed by Mario
+         Carneiro, 27-May-2016.) $)
+      ltnegcon2d $p |- ( ph -> B < -u A ) $=
+        ( cneg clt wbr cr wcel wb ltnegcon2 syl2anc mpbid ) ABCGHIZCBGHIZFABJKC
+        JKPQLDEBCMNO $.
+
+    $}
+
+    ${
+      lenegcon1d.3 $e |- ( ph -> -u A <_ B ) $.
+      $( Contraposition of negative in 'less than or equal to'.  (Contributed
+         by Mario Carneiro, 27-May-2016.) $)
+      lenegcon1d $p |- ( ph -> -u B <_ A ) $=
+        ( cneg cle wbr cr wcel wb lenegcon1 syl2anc mpbid ) ABGCHIZCGBHIZFABJKC
+        JKPQLDEBCMNO $.
+
+    $}
+
+    ${
+      lenegcon2d.3 $e |- ( ph -> A <_ -u B ) $.
+      $( Contraposition of negative in 'less than or equal to'.  (Contributed
+         by Mario Carneiro, 27-May-2016.) $)
+      lenegcon2d $p |- ( ph -> B <_ -u A ) $=
+        ( cneg cle wbr cr wcel wb lenegcon2 syl2anc mpbid ) ABCGHIZCBGHIZFABJKC
+        JKPQLDEBCMNO $.
+    $}
+
+    $( Adding a positive number to another number increases it.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    ltaddposd $p |- ( ph -> ( 0 < A <-> B < ( B + A ) ) ) $=
+      ( cr wcel cc0 clt wbr caddc co wb ltaddpos syl2anc ) ABFGCFGHBIJCCBKLIJMD
+      EBCNO $.
+
+    $( Adding a positive number to another number increases it.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    ltaddpos2d $p |- ( ph -> ( 0 < A <-> B < ( A + B ) ) ) $=
+      ( cr wcel cc0 clt wbr caddc co wb ltaddpos2 syl2anc ) ABFGCFGHBIJCBCKLIJM
+      DEBCNO $.
+
+    $( Subtracting a positive number from another number decreases it.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    ltsubposd $p |- ( ph -> ( 0 < A <-> ( B - A ) < B ) ) $=
+      ( cr wcel cc0 clt wbr cmin co wb ltsubpos syl2anc ) ABFGCFGHBIJCBKLCIJMDE
+      BCNO $.
+
+    $( Comparison of two numbers whose difference is positive.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    posdifd $p |- ( ph -> ( A < B <-> 0 < ( B - A ) ) ) $=
+      ( cr wcel clt wbr cc0 cmin co wb posdif syl2anc ) ABFGCFGBCHIJCBKLHIMDEBC
+      NO $.
+
+    $( A number is less than or equal to itself plus a nonnegative number.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    addge01d $p |- ( ph -> ( 0 <_ B <-> A <_ ( A + B ) ) ) $=
+      ( cr wcel cc0 cle wbr caddc co wb addge01 syl2anc ) ABFGCFGHCIJBBCKLIJMDE
+      BCNO $.
+
+    $( A number is less than or equal to itself plus a nonnegative number.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    addge02d $p |- ( ph -> ( 0 <_ B <-> A <_ ( B + A ) ) ) $=
+      ( cr wcel cc0 cle wbr caddc co wb addge02 syl2anc ) ABFGCFGHCIJBCBKLIJMDE
+      BCNO $.
+
+    $( Nonnegative subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subge0d $p |- ( ph -> ( 0 <_ ( A - B ) <-> B <_ A ) ) $=
+      ( cr wcel cc0 cmin co cle wbr wb subge0 syl2anc ) ABFGCFGHBCIJKLCBKLMDEBC
+      NO $.
+
+    $( Nonpositive subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    suble0d $p |- ( ph -> ( ( A - B ) <_ 0 <-> A <_ B ) ) $=
+      ( cr wcel cmin co cc0 cle wbr wb suble0 syl2anc ) ABFGCFGBCHIJKLBCKLMDEBC
+      NO $.
+
+    $( Nonnegative subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subge02d $p |- ( ph -> ( 0 <_ B <-> ( A - B ) <_ A ) ) $=
+      ( cr wcel cc0 cle wbr cmin co wb subge02 syl2anc ) ABFGCFGHCIJBCKLBIJMDEB
+      CNO $.
+
+    ltadd1d.3 $e |- ( ph -> C e. RR ) $.
+    $( Addition to both sides of 'less than'.  Theorem I.18 of [Apostol]
+       p. 20.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    ltadd1d $p |- ( ph -> ( A < B <-> ( A + C ) < ( B + C ) ) ) $=
+      ( cr wcel clt wbr caddc co wb ltadd1 syl3anc ) ABHICHIDHIBCJKBDLMCDLMJKNE
+      FGBCDOP $.
+
+    $( Addition to both sides of 'less than or equal to'.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    leadd1d $p |- ( ph -> ( A <_ B <-> ( A + C ) <_ ( B + C ) ) ) $=
+      ( cr wcel cle wbr caddc co wb leadd1 syl3anc ) ABHICHIDHIBCJKBDLMCDLMJKNE
+      FGBCDOP $.
+
+    $( Addition to both sides of 'less than or equal to'.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    leadd2d $p |- ( ph -> ( A <_ B <-> ( C + A ) <_ ( C + B ) ) ) $=
+      ( cr wcel cle wbr caddc co wb leadd2 syl3anc ) ABHICHIDHIBCJKDBLMDCLMJKNE
+      FGBCDOP $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    ltsubaddd $p |- ( ph -> ( ( A - B ) < C <-> A < ( C + B ) ) ) $=
+      ( cr wcel cmin co clt wbr caddc wb ltsubadd syl3anc ) ABHICHIDHIBCJKDLMBD
+      CNKLMOEFGBCDPQ $.
+
+    $( 'Less than or equal to' relationship between subtraction and addition.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    lesubaddd $p |- ( ph -> ( ( A - B ) <_ C <-> A <_ ( C + B ) ) ) $=
+      ( cr wcel cmin co cle wbr caddc wb lesubadd syl3anc ) ABHICHIDHIBCJKDLMBD
+      CNKLMOEFGBCDPQ $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    ltsubadd2d $p |- ( ph -> ( ( A - B ) < C <-> A < ( B + C ) ) ) $=
+      ( cr wcel cmin co clt wbr caddc wb ltsubadd2 syl3anc ) ABHICHIDHIBCJKDLMB
+      CDNKLMOEFGBCDPQ $.
+
+    $( 'Less than or equal to' relationship between subtraction and addition.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    lesubadd2d $p |- ( ph -> ( ( A - B ) <_ C <-> A <_ ( B + C ) ) ) $=
+      ( cr wcel cmin co cle wbr caddc wb lesubadd2 syl3anc ) ABHICHIDHIBCJKDLMB
+      CDNKLMOEFGBCDPQ $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    ltaddsubd $p |- ( ph -> ( ( A + B ) < C <-> A < ( C - B ) ) ) $=
+      ( cr wcel caddc co clt wbr cmin wb ltaddsub syl3anc ) ABHICHIDHIBCJKDLMBD
+      CNKLMOEFGBCDPQ $.
+
+    $( 'Less than' relationship between subtraction and addition.  (Contributed
+       by Mario Carneiro, 29-Dec-2016.) $)
+    ltaddsub2d $p |- ( ph -> ( ( A + B ) < C <-> B < ( C - A ) ) ) $=
+      ( cr wcel caddc co clt wbr cmin wb ltaddsub2 syl3anc ) ABHICHIDHIBCJKDLMC
+      DBNKLMOEFGBCDPQ $.
+
+    $( 'Less than or equal to' relationship between and addition and
+       subtraction.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    leaddsub2d $p |- ( ph -> ( ( A + B ) <_ C <-> B <_ ( C - A ) ) ) $=
+      ( cr wcel caddc co cle wbr cmin wb leaddsub2 syl3anc ) ABHICHIDHIBCJKDLMC
+      DBNKLMOEFGBCDPQ $.
+
+    ${
+      subled.4 $e |- ( ph -> ( A - B ) <_ C ) $.
+      $( Swap subtrahends in an inequality.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      subled $p |- ( ph -> ( A - C ) <_ B ) $=
+        ( cmin co cle wbr cr wcel wb suble syl3anc mpbid ) ABCIJDKLZBDIJCKLZHAB
+        MNCMNDMNSTOEFGBCDPQR $.
+    $}
+
+    ${
+      lesubd.4 $e |- ( ph -> A <_ ( B - C ) ) $.
+      $( Swap subtrahends in an inequality.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      lesubd $p |- ( ph -> C <_ ( B - A ) ) $=
+        ( cmin co cle wbr cr wcel wb lesub syl3anc mpbid ) ABCDIJKLZDCBIJKLZHAB
+        MNCMNDMNSTOEFGBCDPQR $.
+    $}
+
+    ${
+      ltsub23d.4 $e |- ( ph -> ( A - B ) < C ) $.
+      $( 'Less than' relationship between subtraction and addition.
+         (Contributed by Mario Carneiro, 27-May-2016.) $)
+      ltsub23d $p |- ( ph -> ( A - C ) < B ) $=
+        ( cmin co clt wbr cr wcel wb ltsub23 syl3anc mpbid ) ABCIJDKLZBDIJCKLZH
+        ABMNCMNDMNSTOEFGBCDPQR $.
+    $}
+
+    ${
+      ltsub13d.4 $e |- ( ph -> A < ( B - C ) ) $.
+      $( 'Less than' relationship between subtraction and addition.
+         (Contributed by Mario Carneiro, 27-May-2016.) $)
+      ltsub13d $p |- ( ph -> C < ( B - A ) ) $=
+        ( cmin co clt wbr cr wcel wb ltsub13 syl3anc mpbid ) ABCDIJKLZDCBIJKLZH
+        ABMNCMNDMNSTOEFGBCDPQR $.
+    $}
+
+    $( Subtraction from both sides of 'less than or equal to'.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    lesub1d $p |- ( ph -> ( A <_ B <-> ( A - C ) <_ ( B - C ) ) ) $=
+      ( cr wcel cle wbr cmin co wb lesub1 syl3anc ) ABHICHIDHIBCJKBDLMCDLMJKNEF
+      GBCDOP $.
+
+    $( Subtraction of both sides of 'less than or equal to'.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    lesub2d $p |- ( ph -> ( A <_ B <-> ( C - B ) <_ ( C - A ) ) ) $=
+      ( cr wcel cle wbr cmin co wb lesub2 syl3anc ) ABHICHIDHIBCJKDCLMDBLMJKNEF
+      GBCDOP $.
+
+    $( Subtraction from both sides of 'less than'.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    ltsub1d $p |- ( ph -> ( A < B <-> ( A - C ) < ( B - C ) ) ) $=
+      ( cr wcel clt wbr cmin co wb ltsub1 syl3anc ) ABHICHIDHIBCJKBDLMCDLMJKNEF
+      GBCDOP $.
+
+    $( Subtraction of both sides of 'less than'.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    ltsub2d $p |- ( ph -> ( A < B <-> ( C - B ) < ( C - A ) ) ) $=
+      ( cr wcel clt wbr cmin co wb ltsub2 syl3anc ) ABHICHIDHIBCJKDCLMDBLMJKNEF
+      GBCDOP $.
+
+    ${
+      ltadd1dd.4 $e |- ( ph -> A < B ) $.
+      $( Addition to both sides of 'less than'.  Theorem I.18 of [Apostol]
+         p. 20.  (Contributed by Mario Carneiro, 30-May-2016.) $)
+      ltadd1dd $p |- ( ph -> ( A + C ) < ( B + C ) ) $=
+        ( clt wbr caddc co ltadd1d mpbid ) ABCIJBDKLCDKLIJHABCDEFGMN $.
+
+      $( Subtraction from both sides of 'less than'.  (Contributed by Mario
+         Carneiro, 30-May-2016.) $)
+      ltsub1dd $p |- ( ph -> ( A - C ) < ( B - C ) ) $=
+        ( clt wbr cmin co ltsub1d mpbid ) ABCIJBDKLCDKLIJHABCDEFGMN $.
+
+      $( Subtraction of both sides of 'less than'.  (Contributed by Mario
+         Carneiro, 30-May-2016.) $)
+      ltsub2dd $p |- ( ph -> ( C - B ) < ( C - A ) ) $=
+        ( clt wbr cmin co ltsub2d mpbid ) ABCIJDCKLDBKLIJHABCDEFGMN $.
+    $}
+
+    ${
+      leadd1dd.4 $e |- ( ph -> A <_ B ) $.
+      $( Addition to both sides of 'less than or equal to'.  (Contributed by
+         Mario Carneiro, 30-May-2016.) $)
+      leadd1dd $p |- ( ph -> ( A + C ) <_ ( B + C ) ) $=
+        ( cle wbr caddc co leadd1d mpbid ) ABCIJBDKLCDKLIJHABCDEFGMN $.
+
+      $( Addition to both sides of 'less than or equal to'.  (Contributed by
+         Mario Carneiro, 30-May-2016.) $)
+      leadd2dd $p |- ( ph -> ( C + A ) <_ ( C + B ) ) $=
+        ( cle wbr caddc co leadd2d mpbid ) ABCIJDBKLDCKLIJHABCDEFGMN $.
+
+      $( Subtraction from both sides of 'less than or equal to'.  (Contributed
+         by Mario Carneiro, 30-May-2016.) $)
+      lesub1dd $p |- ( ph -> ( A - C ) <_ ( B - C ) ) $=
+        ( cle wbr cmin co lesub1d mpbid ) ABCIJBDKLCDKLIJHABCDEFGMN $.
+
+      $( Subtraction of both sides of 'less than or equal to'.  (Contributed by
+         Mario Carneiro, 30-May-2016.) $)
+      lesub2dd $p |- ( ph -> ( C - B ) <_ ( C - A ) ) $=
+        ( cle wbr cmin co lesub2d mpbid ) ABCIJDCKLDBKLIJHABCDEFGMN $.
+    $}
+
+    lt2addd.4 $e |- ( ph -> D e. RR ) $.
+    ${
+      le2addd.5 $e |- ( ph -> A <_ C ) $.
+      le2addd.6 $e |- ( ph -> B <_ D ) $.
+      $( Adding both side of two inequalities.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      le2addd $p |- ( ph -> ( A + B ) <_ ( C + D ) ) $=
+        ( cle wbr caddc co cr wcel wa wi le2add syl22anc mp2and ) ABDLMZCELMZBC
+        NODENOLMZJKABPQCPQDPQEPQUCUDRUESFGHIBCDETUAUB $.
+
+      $( Subtracting both sides of two 'less than or equal to' relations.
+         (Contributed by Mario Carneiro, 27-May-2016.) $)
+      le2subd $p |- ( ph -> ( A - D ) <_ ( C - B ) ) $=
+        ( cle wbr cmin co cr wcel wa wi le2sub syl22anc mp2and ) ABDLMZCELMZBEN
+        ODCNOLMZJKABPQEPQDPQCPQUCUDRUESFIHGBEDCTUAUB $.
+    $}
+
+    ${
+      ltleaddd.5 $e |- ( ph -> A < C ) $.
+      ltleaddd.6 $e |- ( ph -> B <_ D ) $.
+      $( Adding both sides of two orderings.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      ltleaddd $p |- ( ph -> ( A + B ) < ( C + D ) ) $=
+        ( clt wbr cle caddc co cr wcel wa wi ltleadd syl22anc mp2and ) ABDLMZCE
+        NMZBCOPDEOPLMZJKABQRCQRDQREQRUDUESUFTFGHIBCDEUAUBUC $.
+    $}
+
+    ${
+      leltaddd.5 $e |- ( ph -> A <_ C ) $.
+      leltaddd.6 $e |- ( ph -> B < D ) $.
+      $( Adding both sides of two orderings.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      leltaddd $p |- ( ph -> ( A + B ) < ( C + D ) ) $=
+        ( cle wbr clt caddc co cr wcel wa wi leltadd syl22anc mp2and ) ABDLMZCE
+        NMZBCOPDEOPNMZJKABQRCQRDQREQRUDUESUFTFGHIBCDEUAUBUC $.
+    $}
+
+    ${
+      lt2addd.5 $e |- ( ph -> A < C ) $.
+      lt2addd.6 $e |- ( ph -> B < D ) $.
+      $( Adding both side of two inequalities.  Theorem I.25 of [Apostol]
+         p. 20.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+      lt2addd $p |- ( ph -> ( A + B ) < ( C + D ) ) $=
+        ( ltled ltleaddd ) ABCDEFGHIJACEGIKLM $.
+
+      $( Subtracting both sides of two 'less than' relations.  (Contributed by
+         Mario Carneiro, 27-May-2016.) $)
+      lt2subd $p |- ( ph -> ( A - D ) < ( C - B ) ) $=
+        ( clt wbr cmin co cr wcel wa wi lt2sub syl22anc mp2and ) ABDLMZCELMZBEN
+        ODCNOLMZJKABPQEPQDPQCPQUCUDRUESFIHGBEDCTUAUB $.
+    $}
+  $}
+
+  $( Addition and subtraction on one side of 'less than'.  (Contributed by AV,
+     24-Nov-2018.) $)
+  ltaddsublt $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                    ( B < C <-> ( ( A + B ) - C ) < A ) ) $=
+    ( cr wcel w3a clt caddc co cmin wb ltadd2 3comr readdcl 3adant3 simp3 simp1
+    wbr ltsubaddd bitr4d ) ADEZBDEZCDEZFZBCGRZABHIZACHIGRZUFCJIAGRUBUCUAUEUGKBC
+    ALMUDUFCAUAUBUFDEUCABNOUAUBUCPUAUBUCQST $.
+
+  $( ` 1 <_ 1 ` .  Common special case.  (Contributed by David A. Wheeler,
+     16-Jul-2016.) $)
+  1le1 $p |- 1 <_ 1 $=
+    ( c1 1re leidi ) ABC $.
+
+  $( A positive sum must have a positive addend.  Part of Definition 11.2.7(vi)
+     of [HoTT], p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+  gt0add $p |- ( ( A e. RR /\ B e. RR /\ 0 < ( A + B ) ) ->
+      ( 0 < A \/ 0 < B ) ) $=
+    ( cr wcel cc0 caddc co clt wbr w3a wo simp3 wi 0red simp1 readdcld axltwlin
+    simp2 syl3anc mpd ltaddposd orbi2d mpbird ) ACDZBCDZEABFGZHIZJZEAHIZEBHIZKU
+    IAUFHIZKZUHUGULUDUEUGLUHECDUFCDUDUGULMUHNUHABUDUEUGOZUDUEUGRZPUMEUFAQSTUHUJ
+    UKUIUHBAUNUMUAUBUC $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Real Apartness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c #RR $. $( 'Apart' relation (over real numbers) $)
+
+  $( Class of real apartness relation. $)
+  creap $a class #RR $.
+
+  ${
+    $d x y $.
+    $( Define real apartness.  Definition in Section 11.2.1 of [HoTT], p.
+       (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+    df-reap $a |- #RR = { <. x , y >. | ( ( x e. RR /\ y e. RR ) /\
+      ( x < y \/ y < x ) ) } $.
+  $}
+
+  ${
+    $d A x y $.
+    $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of
+       [[HoTT]], p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+    reapirr $p |- ( A e. RR -> -. A #RR A ) $=
+      ( vx vy cr wcel creap wbr ltnr wa wo cv wceq breq12 ax-ia2 ax-ia1 breq12d
+      clt orbi12d df-reap brab2ga anidm oridm anbi12i bitri baib mtbird ) ADEZA
+      AFGZAAQGZAHUHUGUIUHUGUGIZUIUIJZIUGUIIBKZCKZQGZUMULQGZJUKBCAADDFULALZUMALZ
+      IZUNUIUOUIULAUMAQMURUMAULAQUPUQNUPUQOPRBCSTUJUGUKUIUGUAUIUBUCUDUEUF $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Reciprocals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( ` _i ` times itself is minus 1.  (Contributed by NM, 6-May-1999.)  (Proof
+     shortened by Andrew Salmon, 19-Nov-2011.) $)
+  ixi $p |- ( _i x. _i ) = -u 1 $=
+    ( c1 cneg cc0 cmin co ci cmul df-neg caddc ax-i2m1 0cn ax-1cn ax-icn mulcli
+    wceq subadd2i mpbir eqtr2i ) ABCADEZFFGEZAHSTOTAIECOJCATKLFFMMNPQR $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Complex Apartness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c # $. $( 'Apart' relation (over complex numbers) $)
+
+  $( Class of complex apartness relation. $)
+  cap $a class # $.
+
+  ${
+    $d r s t u x y $.
+    $( Define complex apartness.  Definition 6.1 of Skeleton for the Proof
+       development leading to the.  Fundamental Theorem of Algebra, Herman
+       Geuvers, Randy Pollack, Freek Wiedijk, Jan Zwanenburg, October 2, 2000.
+       (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+    df-ap $a |- # = { <. x , y >. | E. r e. RR E. s e. RR E. t e. RR E. u e. RR
+      ( ( x = ( r + ( _i x. s ) ) /\ y = ( t + ( _i x. u ) ) ) /\
+      ( r #RR t \/ s #RR u ) ) } $.
   $}
 
 $(
@@ -69013,14 +70318,6 @@ htmldef "<P" as
     " <IMG SRC='_ltp.gif' WIDTH=19 HEIGHT=19 ALT=' &lt;P' TITLE='&lt;P'> ";
   althtmldef "<P" as '&lt;<I><SUB><B>P</B></SUB></I> ';
   latexdef "<P" as "<_{\cal P}";
-htmldef "+pR" as
-    " <IMG SRC='_plpr.gif' WIDTH=28 HEIGHT=19 ALT=' +pR' TITLE='+pR'> ";
-  althtmldef "+pR" as ' +<I><SUB>p<B>R</B></SUB></I> ';
-  latexdef "+pR" as "+_{p{\cal R}}";
-htmldef ".pR" as
-    " <IMG SRC='_cdpr.gif' WIDTH=19 HEIGHT=19 ALT=' .pR' TITLE='.pR'> ";
-  althtmldef ".pR" as ' &middot;<I><SUB>p<B>R</B></SUB></I> ';
-  latexdef ".pR" as "._{p{\cal R}}";
 htmldef "~R" as
     " <IMG SRC='_simr.gif' WIDTH=23 HEIGHT=19 ALT=' ~R' TITLE='~R'> ";
   althtmldef "~R" as ' ~<I><SUB><B>R</B></SUB></I> ';
@@ -69113,6 +70410,12 @@ htmldef "-u" as
   althtmldef "-u" as '-';
   latexdef "-u" as "\textrm{-}"; /* short minus */
     /*latexdef "-u" as "-_u";*/
+htmldef "#" as ' # ';
+  althtmldef "#" as ' # ';
+  latexdef "#" as "\apart";
+htmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
+  althtmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
+  latexdef "#RR" as "\apart_\mathbb{R}";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
@@ -69129,9 +70432,6 @@ htmldef "F." as
 htmldef "STAB" as "<SMALL>STAB</SMALL> ";
   althtmldef "STAB" as "<SMALL>STAB</SMALL> ";
   latexdef "STAB" as "\mathrm{STAB} ";
-htmldef "TEST" as "<SMALL>TEST</SMALL> ";
-  althtmldef "TEST" as "<SMALL>TEST</SMALL> ";
-  latexdef "TEST" as "\mathrm{TEST} ";
 htmldef "DECID" as "<SMALL>DECID</SMALL> ";
   althtmldef "DECID" as "<SMALL>DECID</SMALL> ";
   latexdef "DECID" as "\mathrm{DECID} ";
@@ -69278,24 +70578,11 @@ $)
   nndc $p |- -. -. DECID ph $=
     ( wdc wn wo nnexmid df-dc notbii mtbir ) ABZCAACDZCAEIJAFGH $.
 
-  $( The decidability of ` -. ph ` is equivalent to that of ` -. -. ph ` .
-     (Contributed by BJ, 9-Oct-2019.) $)
-  dcnbidcnn $p |- ( DECID -. ph <-> DECID -. -. ph ) $=
-    ( wn wo wdc orcom notnotnot orbi1i bitri df-dc 3bitr4ri ) ABZBZLBZCZKLCZLDK
-    DNMLCOLMEMKLAFGHLIKIJ $.
-
   $( Decidability of a proposition is decidable if and only if that proposition
      is decidable. ` DECID ` is idempotent.  (Contributed by BJ,
      9-Oct-2019.) $)
   dcdc $p |- ( DECID DECID ph <-> DECID ph ) $=
     ( wdc wn wo df-dc nndc biorfi bitr4i ) ABZBIICZDIIEJIAFGH $.
-
-  $( Definition of the testability predicate ` TEST ` .  This definition is not
-     very useful in terms of number of tokens saved and readability added,
-     since one can replace everywhere the string ` TEST ` with the string
-     ` DECID -. ` .  (Contributed by BJ, 9-Oct-2019.) $)
-  bj-df-test $p |- ( TEST ph <-> DECID -. ph ) $=
-    ( wtest wn wo wdc df-test df-dc bitr4i ) ABACZICDIEAFIGH $.
 
 
 $(
@@ -70699,7 +71986,40 @@ $)
     ax-bj-d0class.bd $e |- Bdd ph $.
     $( Axiom for ` Delta0 ` -classical logic.  (Contributed by BJ,
        2-Jan-2020.) $)
-    ax-bj-d0cl $a |- ( ph \/ -. ph ) $.
+    ax-bj-d0cl $a |- DECID ph $.
+  $}
+
+  $( Equivalence property for negation.  TODO: minimize all theorems using
+     ~ notbid and ~ notbii .  (Contributed by BJ, 27-Jan-2020.)
+     (Proof modification is discouraged.) $)
+  bj-notbi $p |- ( ( ph <-> ps ) -> ( -. ph <-> -. ps ) ) $=
+    ( wb wn bi2 con3d bi1 impbid ) ABCZADBDIBAABEFIABABGFH $.
+
+  ${
+    bj-notbii.1 $e |- ( ph <-> ps ) $.
+    $( Inference associated with ~ bj-notbi .  (Contributed by BJ,
+       27-Jan-2020.)  (Proof modification is discouraged.) $)
+    bj-notbii $p |- ( -. ph <-> -. ps ) $=
+      ( wb wn bj-notbi ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    bj-notbid.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Deduction form of ~ bj-notbi .  (Contributed by BJ, 27-Jan-2020.)
+       (Proof modification is discouraged.) $)
+    bj-notbid $p |- ( ph -> ( -. ps <-> -. ch ) ) $=
+      ( wb wn bj-notbi syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d a x ph $.
+    $( Equivalence property for ` DECID ` .  TODO: solve conflict with ~ dcbi ;
+       minimize ~ dcbii and ~ dcbid with it, as well as theorems using those.
+       (Contributed by BJ, 27-Jan-2020.)
+       (Proof modification is discouraged.) $)
+    bj-dcbi $p |- ( ( ph <-> ps ) -> ( DECID ph <-> DECID ps ) ) $=
+      ( wb wn wo wdc id bj-notbi orbi12d df-dc 3bitr4g ) ABCZAADZEBBDZEAFBFLABM
+      NLGABHIAJBJK $.
   $}
 
   ${
@@ -70707,13 +72027,12 @@ $)
     $( ` Delta0 ` -classical logic and separation implies classical logic.
        (Contributed by BJ, 2-Jan-2020.)
        (Proof modification is discouraged.) $)
-    bj-d0clsepcl $p |- ( ph \/ -. ph ) $=
-      ( va vx wn wo wex c0 cv wcel wb csn wa wal 0ex bj-snex zfauscl wceq eleq1
-      anbi1d eximii bibi12d spcv snid biantrur bicomi exbii bj-bd0el ax-bj-d0cl
-      bibi2i mpbi id notbid orbi12d mpbii bj-ex ax-mp ) AADZEZBFURGBHZIZAJZURBU
-      TGGKZIZALZJZBFVABFCHZUSIZVFVBIZALZJZCMVEBACBVBGNOPVJVECGNVFGQZVGUTVIVDVFG
-      USRVKVHVCAVFGVBRSUAUBTVEVABVDAUTAVDVCAGNUCUDUEUIUFUJVAUTUTDZEURUTBUGUHVAU
-      TAVLUQVAUKZVAUTAVMULUMUNTURBUOUP $.
+    bj-d0clsepcl $p |- DECID ph $=
+      ( va vx wdc wex c0 cv wcel wb csn wel wal 0ex bj-snex zfauscl wceq anbi1d
+      wa eleq1 eximii bibi12d spcv snid biantrur bicomi bibi2i exbii ax-bj-d0cl
+      mpbi bj-bd0el bj-dcbi mpbii bj-ex ax-mp ) ADZBEUOFBGZHZAIZUOBUQFFJZHZARZI
+      ZBEURBECBKZCGZUSHZARZIZCLVBBACBUSFMNOVGVBCFMVDFPZVCUQVFVAVDFUPSVHVEUTAVDF
+      USSQUAUBTVBURBVAAUQAVAUTAFMUCUDUEUFUGUIURUQDUOUQBUJUHUQAUKULTUOBUMUN $.
   $}
 
 
