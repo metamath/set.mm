@@ -69479,6 +69479,17 @@ $)
     ( cr wcel wa cap wbr creap clt wo apreap reapval bitrd ) ACDBCDEABFGABHGABI
     GBAIGJABKABLM $.
 
+  $( Multiplication of both sides of 'less than' by a positive number.  Theorem
+     I.19 of [Apostol] p. 20.  (Contributed by NM, 15-May-1999.)  (Revised by
+     Mario Carneiro, 27-May-2016.) $)
+  ltmul1a $p |- ( ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) /\ A < B )
+      -> ( A x. C ) < ( B x. C ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cmul co simpl2 simpl1 resubcld simpl3l posdifd
+    cmin recnd remulcld simpr mpbid simpl3r mulgt0d subdird breqtrd mpbird ) AD
+    EZBDEZCDEZFCGHZIZJZABGHZIZACKLZBCKLZGHFUQUPRLZGHUOFBARLZCKLURGUOUSCUOBAUHUI
+    ULUNMZUHUIULUNNZOUJUKUHUIUNPZUOUNFUSGHUMUNUAUOABVAUTQUBUJUKUHUIUNUCUDUOBACU
+    OBUTSUOAVASUOCVBSUEUFUOUPUQUOACVAVBTUOBCUTVBTQUG $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
