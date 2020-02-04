@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Jan-2020
+$( iset.mm - Version of 1-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69321,15 +69321,48 @@ $)
   $}
 
   ${
-    $d A x y $.
-    $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of
-       [[HoTT]], p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
-    reapirr $p |- ( A e. RR -> -. A #RR A ) $=
-      ( vx vy cr wcel creap wbr ltnr wa wo cv wceq breq12 ax-ia2 ax-ia1 breq12d
-      clt orbi12d df-reap brab2ga anidm oridm anbi12i bitri baib mtbird ) ADEZA
-      AFGZAAQGZAHUHUGUIUHUGUGIZUIUIJZIUGUIIBKZCKZQGZUMULQGZJUKBCAADDFULALZUMALZ
-      IZUNUIUOUIULAUMAQMURUMAULAQUPUQNUPUQOPRBCSTUJUGUKUIUGUAUIUBUCUDUEUF $.
+    $d A x y $.  $d B x y $.
+    $( Real apartness in terms of classes.  Beyond the development of ` # `
+       itself, proofs should use ~ reaplt instead.
+       (New usage is discouraged.)  (Contributed by Jim Kingdon,
+       29-Jan-2020.) $)
+    reapval $p |- ( ( A e. RR /\ B e. RR ) ->
+        ( A #RR B <-> ( A < B \/ B < A ) ) ) $=
+      ( vx vy creap wbr cr wcel wa clt wo cv wceq breq12 ax-ia2 breq12d orbi12d
+      ax-ia1 df-reap brab2ga baib ) ABEFAGHBGHIABJFZBAJFZKZCLZDLZJFZUFUEJFZKUDC
+      DABGGEUEAMZUFBMZIZUGUBUHUCUEAUFBJNUKUFBUEAJUIUJOUIUJRPQCDSTUA $.
   $}
+
+  $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of [[HoTT]],
+     p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+  reapirr $p |- ( A e. RR -> -. A #RR A ) $=
+    ( cr wcel creap wbr clt ltnr wo wb reapval anidms oridm syl6bb mtbird ) ABC
+    ZAADEZAAFEZAGOPQQHZQOPRIAAJKQLMN $.
+
+  ${
+    $d x y A $.
+    $( Existence of reciprocal of real number.  (Contributed by Jim Kingdon,
+       29-Jan-2020.) $)
+    recexre $p |- ( ( A e. RR /\ A #RR 0 ) -> E. x e. RR ( A x. x ) = 1 ) $=
+      ( vy cr wcel cc0 wbr cmul co c1 wceq wrex clt wb 0re wa cneg pm5.32i recn
+      eqeq1d creap cv wo reapval mpan2 lt0neg1 renegcl ltxrlt sylancr ax-precex
+      cltrr bitrd sylan sylbi negnegd oveq2d negeq rspcev sylbir adantl mul2neg
+      rexlimddv cc syl2an rexbidva adantr mpbid ex mpan jaod sylbid imp ) BDEZB
+      FUAGZBAUBZHIZJKZADLZVMVNBFMGZFBMGZUCZVRVMFDEZVNWANOBFUDUEVMVSVRVTVMVSVRVM
+      VSPZBQZVOQZHIZJKZADLZVRWCWDCUBZHIZJKZWHCDWCVMFWDUKGZPWKCDLZVMVSWLVMVSFWDM
+      GZWLBUFVMWBWDDEZWNWLNOBUGZFWDUHUIULRVMWOWLWMWPCWDUJUMUNWIDEZWKPZWHWCWRWQW
+      DWIQZQZHIZJKZPWHWQXBWKWQXAWJJWQWTWIWDHWQWIWISUOUPTRWQWSDEXBWHWIUGWGXBAWSD
+      VOWSKZWFXAJXCWEWTWDHVOWSUQUPTURUMUSUTVBVMWHVRNVSVMWGVQADVMVODEZPWFVPJVMBV
+      CEVOVCEWFVPKXDBSVOSBVOVAVDTVEVFVGVHVMVTVRVMVTPVMFBUKGZPVRVMVTXEWBVMVTXENO
+      FBUHVIRABUJUNVHVJVKVL $.
+  $}
+
+  $( Real apartness is tight.  (Contributed by Jim Kingdon, 30-Jan-2020.) $)
+  reapti $p |- ( ( A e. RR /\ B e. RR ) -> ( A = B <-> -. A #RR B ) ) $=
+    ( cr wcel wa wceq creap wbr wn clt wo ltnr adantr oridm breq2 breq1 orbi12d
+    syl5bbr notbid syl5ibcom reapval sylibrd axapti 3expia sylbid impbid ) ACDZ
+    BCDZEZABFZABGHZIZUIUJABJHZBAJHZKZIZULUIAAJHZIZUJUPUGURUHALMUJUQUOUQUQUQKUJU
+    OUQNUJUQUMUQUNABAJOABAJPQRSTUIUKUOABUASZUBUIULUPUJUSUGUHUPUJABUCUDUEUF $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -69364,6 +69397,98 @@ $)
       ( ( x = ( r + ( _i x. s ) ) /\ y = ( t + ( _i x. u ) ) ) /\
       ( r #RR t \/ s #RR u ) ) } $.
   $}
+
+  $( The imaginary unit ` _i ` is not a real number.  (Contributed by NM,
+     6-May-1999.) $)
+  inelr $p |- -. _i e. RR $=
+    ( ci cr wcel cc0 wceq ine0 neii clt wbr wn co c1 0re 1re caddc wa anidms ex
+    cmul mtoi 0lt1 ltnsymi cneg renegcli eqeltri ltadd1i ax-1cn addid2i ax-i2m1
+    ax-mp ixi breq12i bitri mtbir mullt0 mulgt0 wb lttri3 mpan2 mpbir2and mto )
+    ABCZADEZADFGVBVCADHIZJZDAHIZJZVBVDDAASKZHIZVILDHIZDLHIVJJUADLMNUBUJVIDLOKZV
+    HLOKZHIVJDVHLMVHLUCBUKLNUDUENUFVKLVLDHLUGUHUIULUMUNZVBVDVIVBVDPVIAAUOQRTVBV
+    FVIVMVBVFVIVBVFPVIAAUPQRTVBDBCVCVEVGPUQMADURUSUTVA $.
+
+  ${
+    $d A x $.
+    $( A real number times the imaginary unit is real only if the number is 0.
+       (Contributed by NM, 28-May-1999.)  (Revised by Mario Carneiro,
+       27-May-2016.) $)
+    rimul $p |- ( ( A e. RR /\ ( _i x. A ) e. RR ) -> A = 0 ) $=
+      ( vx cr wcel ci cmul co wa cc0 wceq creap wbr wn inelr cv c1 recnd ax-icn
+      wrex cc recexre adantlr simplll simprl mulass mp3an1 syl2anc oveq2 syl6eq
+      mulid1i ad2antll eqtrd simpllr remulcld eqeltrrd rexlimddv ex mtoi wb 0re
+      reapti mpan2 adantr mpbird ) ACDZEAFGZCDZHZAIJZAIKLZMZVHVJECDZNVHVJVLVHVJ
+      HZABOZFGZPJZVLBCVEVJVPBCSVGBAUAUBVMVNCDZVPHZHZVFVNFGZECVSVTEVOFGZEVSATDZV
+      NTDZVTWAJZVSAVEVGVJVRUCQVSVNVMVQVPUDZQETDWBWCWDREAVNUEUFUGVPWAEJVMVQVPWAE
+      PFGEVOPEFUHERUJUIUKULVSVFVNVEVGVJVRUMWEUNUOUPUQURVEVIVKUSZVGVEICDWFUTAIVA
+      VBVCVD $.
+  $}
+
+  $( Decomposition of a real number into real part (itself) and imaginary part
+     (zero).  (Contributed by Jim Kingdon, 30-Jan-2020.) $)
+  rereim $p |- ( ( ( A e. RR /\ B e. RR ) /\
+      ( C e. RR /\ A = ( B + ( _i x. C ) ) ) ) -> ( B = A /\ C = 0 ) ) $=
+    ( cr wcel wa ci cmul co caddc wceq cc0 simpll recnd simplr simprr eqcomd cc
+    cmin ax-icn a1i simprl mulcld subaddd mpbird resubcld eqeltrrd rimul oveq2d
+    syl2anc mul01i syl6eq eqtrd subeq0d jca ) ADEZBDEZFZCDEZABGCHIZJIZKZFZFZBAK
+    CLKZVDABVDABVDAUPUQVCMZNZVDBUPUQVCOZNZVDABSIZUTLVDVJUTKVAAKVDAVAURUSVBPQVDA
+    BUTVGVIVDGCGREVDTUAVDCURUSVBUBZNUCUDUEZVDUTGLHILVDCLGHVDUSUTDEVEVKVDVJUTDVL
+    VDABVFVHUFUGCUHUJZUIGTUKULUMUNQVMUO $.
+
+  ${
+    $d A r s t u x y $.  $d B r s t u x y $.
+
+    $( Complex apartness and real apartness agree on the real numbers.
+       (Contributed by Jim Kingdon, 31-Jan-2020.) $)
+    apreap $p |- ( ( A e. RR /\ B e. RR ) -> ( A # B <-> A #RR B ) ) $=
+      ( vr vs vt vu cr wcel wa wbr creap cv ci co caddc wceq wrex 2rexbidv cc0
+      wo vx vy cap cmul eqeq1 anbi1d anbi2d df-ap brabg simplll simplrl simplrr
+      wn adantr simprll rereim syl22anc simprd simpllr simprlr eqtr4d wb reapti
+      syl2anc mpbid simprr ecased simpld ex rexlimdvva sylbid w3a ax-icn mul01i
+      3brtr3d oveq2i simp1 recnd addid1d syl5req simp2 olc 3ad2ant3 orcomd 0red
+      jca31 ax-ia2 oveq2d eqeq2d breq2d orbi2d anbi12d oveq1d orbi1d syld 3syld
+      rspcedv rexbidv breq1d 3adant3 sylibrd mpd 3expia impbid ) AGHZBGHZIZABUC
+      JZABKJZXGXHACLZMDLZUDNZONZPZBELZMFLZUDNZONZPZIZXJXOKJZXKXPKJZTZIZFGQZEGQZ
+      DGQZCGQZXIUALZXMPZUBLZXRPZIZYCIZFGQEGQZDGQCGQXNYLIZYCIZFGQEGQZDGQCGQYHUAU
+      BABGGUCYIAPZYOYRCDGGYSYNYQEFGGYSYMYPYCYSYJXNYLYIAXMUEUFUFRRYKBPZYRYFCDGGY
+      TYQYDEFGGYTYPXTYCYTYLXSXNYKBXRUEUGUFRRUAUBFEDCUHUIZXGYFXICDGGXGXJGHZXKGHZ
+      IZIZYDXIEFGGUUEXOGHZXPGHZIZIZYDXIUUIYDIZXJXOABKUUJYAYBUUJXKXPPZYBUMZUUJXK
+      SXPUUJXJAPZXKSPZUUJXEUUBUUCXNUUMUUNIUUIXEYDXEXFUUDUUHUJUNUUIUUBYDXGUUBUUC
+      UUHUKUNUUIUUCYDXGUUBUUCUUHULUNZUUIXNXSYCUOAXJXKUPUQZURUUJXOBPZXPSPZUUJXFU
+      UFUUGXSUUQUURIUUIXFYDXEXFUUDUUHUSUNUUEUUFUUGYDUKUUEUUFUUGYDULZUUIXNXSYCUT
+      BXOXPUPUQZURVAUUJUUCUUGUUKUULVBUUOUUSXKXPVCVDVEUUIXTYCVFVGUUJUUMUUNUUPVHU
+      UJUUQUURUUTVHVOVIVJVJVKXEXFXIXHXEXFXIVLZAAMSUDNZONZPZBBUVBONZPZIZXISSKJZT
+      ZIZXHUVAUVDUVFUVIUVAUVCASONAUVBSAOMVMVNZVPUVAAUVAAXEXFXIVQZVRVSVTUVAUVEBS
+      ONBUVBSBOUVKVPUVABUVABXEXFXIWAZVRVSVTUVAUVHXIXIXEUVHXITXFXIUVHWBWCWDWFUVA
+      UVJYHXHUVAUVJUVDXSIZAXOKJZSXPKJZTZIZFGQZEGQZAAXLONZPZXSIZUVOYBTZIZFGQZEGQ
+      ZDGQZYHUVAUVJUVDBBXQONZPZIZXIUVPTZIZFGQZUVTUVAUWMUVJFSGUVAWEZUVAUURIZUWKU
+      VGUWLUVIUWPUWJUVFUVDUWPUWIUVEBUWPXQUVBBOUWPXPSMUDUVAUURWGZWHWHWIUGUWPUVPU
+      VHXIUWPXPSSKUWQWJWKWLWQUVAUVSUWNEBGUVMUVAUUQIZUVRUWMFGUWRUVNUWKUVQUWLUWRX
+      SUWJUVDUWRXRUWIBUWRXOBXQOUVAUUQWGZWMWIUGUWRUVOXIUVPUWRXOBAKUWSWJWNWLWRWQW
+      OUVAUWGUVTDSGUWOUVAUUNIZUWEUVREFGGUWTUWCUVNUWDUVQUWTUWBUVDXSUWTUWAUVCAUWT
+      XLUVBAOUWTXKSMUDUVAUUNWGZWHWHWIUFUWTYBUVPUVOUWTXKSXPKUXAWSWKWLRWQUVAYGUWH
+      CAGUVLUVAUUMIZYEUWFDEGGUXBYDUWEFGUXBXTUWCYCUWDUXBXNUWBXSUXBXMUWAAUXBXJAXL
+      OUVAUUMWGZWMWIUFUXBYAUVOYBUXBXJAXOKUXCWSWNWLWRRWQWPXEXFXHYHVBXIUUAWTXAXBX
+      CXD $.
+  $}
+
+  $( Real apartness in terms of less than.  (Contributed by Jim Kingdon,
+     1-Feb-2020.) $)
+  reaplt $p |- ( ( A e. RR /\ B e. RR ) ->
+      ( A # B <-> ( A < B \/ B < A ) ) ) $=
+    ( cr wcel wa cap wbr creap clt wo apreap reapval bitrd ) ACDBCDEABFGABHGABI
+    GBAIGJABKABLM $.
+
+  $( Multiplication of both sides of 'less than' by a positive number.  Theorem
+     I.19 of [Apostol] p. 20.  (Contributed by NM, 15-May-1999.)  (Revised by
+     Mario Carneiro, 27-May-2016.) $)
+  ltmul1a $p |- ( ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) /\ A < B )
+      -> ( A x. C ) < ( B x. C ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cmul co simpl2 simpl1 resubcld simpl3l posdifd
+    cmin recnd remulcld simpr mpbid simpl3r mulgt0d subdird breqtrd mpbird ) AD
+    EZBDEZCDEZFCGHZIZJZABGHZIZACKLZBCKLZGHFUQUPRLZGHUOFBARLZCKLURGUOUSCUOBAUHUI
+    ULUNMZUHUIULUNNZOUJUKUHUIUNPZUOUNFUSGHUMUNUAUOABVAUTQUBUJUKUHUIUNUCUDUOBACU
+    OBUTSUOAVASUOCVBSUEUFUOUPUQUOACVAVBTUOBCUTVBTQUG $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#

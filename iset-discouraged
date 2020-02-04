@@ -121,6 +121,10 @@
 "r19.9rmvOLD" is used by "r19.45mv".
 "rdgivallem" is used by "rdgival".
 "rdgivallem" is used by "rdgon".
+"reapval" is used by "reapirr".
+"reapval" is used by "reaplt".
+"reapval" is used by "reapti".
+"reapval" is used by "recexre".
 "rexsnsOLD" is used by "r19.12sn".
 "rexsnsOLD" is used by "rexsng".
 "sbiedh" is used by "sbcomxyyz".
@@ -251,6 +255,7 @@ New usage of "r19.3rmOLD" is discouraged (2 uses).
 New usage of "r19.9rmvOLD" is discouraged (2 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rdgivallem" is discouraged (2 uses).
+New usage of "reapval" is discouraged (4 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
 New usage of "rexsnsOLD" is discouraged (2 uses).
 New usage of "ruALT" is discouraged (0 uses).
