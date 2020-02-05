@@ -4069,8 +4069,8 @@
 "chub2i" is used by "pjclem1".
 "chub2i" is used by "qlaxr3i".
 "chub2i" is used by "sumdmdlem2".
-"clmgm" is used by "exidcl".
-"clmgm" is used by "mgmcllaw".
+"clmgmOLD" is used by "exidcl".
+"clmgmOLD" is used by "mgmcllaw".
 "cm0" is used by "chirred".
 "cm2j" is used by "cm2ji".
 "cm2ji" is used by "cm2mi".
@@ -4645,13 +4645,13 @@
 "df-m1r" is used by "mappsrpr".
 "df-md" is used by "mdbr".
 "df-metuOLD" is used by "metuvalOLD".
-"df-mgm" is used by "iopmapxp".
-"df-mgm" is used by "ismgm".
+"df-mgmOLD" is used by "iopmapxp".
+"df-mgmOLD" is used by "ismgmOLD".
 "df-mi" is used by "dmmulpi".
 "df-mi" is used by "mulpiord".
 "df-mndo" is used by "ismndo".
 "df-mndo" is used by "mndoisexid".
-"df-mndo" is used by "mndoissmgrp".
+"df-mndo" is used by "mndoissmgrpOLD".
 "df-mnf" is used by "mnfnre".
 "df-mnf" is used by "mnfxr".
 "df-mnf" is used by "pnfnemnf".
@@ -4766,9 +4766,9 @@
 "df-rq" is used by "dmrecnq".
 "df-rq" is used by "recmulnq".
 "df-scon" is used by "isscon".
-"df-sgr" is used by "issmgrp".
-"df-sgr" is used by "smgrpisass".
-"df-sgr" is used by "smgrpismgm".
+"df-sgrOLD" is used by "issmgrpOLD".
+"df-sgrOLD" is used by "smgrpisass".
+"df-sgrOLD" is used by "smgrpismgmOLD".
 "df-sh" is used by "issh".
 "df-shs" is used by "shsval".
 "df-sm" is used by "smfval".
@@ -8785,7 +8785,7 @@
 "isabloi" is used by "hhssabloi".
 "isabloi" is used by "hilablo".
 "isass" is used by "assasslaw".
-"isass" is used by "issmgrp".
+"isass" is used by "issmgrpOLD".
 "isass" is used by "sgrpplusgaop".
 "isblo" is used by "bloln".
 "isblo" is used by "htthlem".
@@ -8820,7 +8820,7 @@
 "isexid" is used by "exidres".
 "isexid" is used by "isexid2".
 "isexid" is used by "ismndo".
-"isexid" is used by "opidon".
+"isexid" is used by "opidonOLD".
 "isexid2" is used by "exidu1".
 "isgrp2d" is used by "ghgrp".
 "isgrp2d" is used by "isgrp2i".
@@ -8864,11 +8864,11 @@
 "islpolN" is used by "lpolsatN".
 "islpolN" is used by "lpolvN".
 "islpoldN" is used by "dochpolN".
-"ismgm" is used by "clmgm".
-"ismgm" is used by "iopmapxp".
-"ismgm" is used by "issmgrp".
-"ismgm" is used by "mgmplusgiop".
-"ismgm" is used by "opidon".
+"ismgmOLD" is used by "clmgmOLD".
+"ismgmOLD" is used by "iopmapxp".
+"ismgmOLD" is used by "issmgrpOLD".
+"ismgmOLD" is used by "mgmplusgiop".
+"ismgmOLD" is used by "opidonOLD".
 "ismndo" is used by "ismndo1".
 "ismndo1" is used by "ismndo2".
 "ismndo1" is used by "rngomndo".
@@ -8917,9 +8917,9 @@
 "issh2" is used by "shmulclOLD".
 "issh2" is used by "shscli".
 "issh3" is used by "nlelshi".
-"issmgrp" is used by "ismndo1".
-"issmgrp" is used by "smgrpass".
-"issmgrp" is used by "smgrpmgm".
+"issmgrpOLD" is used by "ismndo1".
+"issmgrpOLD" is used by "smgrpassOLD".
+"issmgrpOLD" is used by "smgrpmgm".
 "isssp" is used by "hhsssh2".
 "isssp" is used by "hhsst".
 "isssp" is used by "sspba".
@@ -9800,10 +9800,10 @@
 "minvecolem7" is used by "minveco".
 "mndoisexid" is used by "mndomgmid".
 "mndoisexid" is used by "rngo1cl".
-"mndoismgm" is used by "isdrngo2".
-"mndoismgm" is used by "mndomgmid".
-"mndoismgm" is used by "rngo1cl".
-"mndoissmgrp" is used by "mndoismgm".
+"mndoismgmOLD" is used by "isdrngo2".
+"mndoismgmOLD" is used by "mndomgmid".
+"mndoismgmOLD" is used by "rngo1cl".
+"mndoissmgrpOLD" is used by "mndoismgmOLD".
 "mndomgmid" is used by "isdrngo2".
 "mndomgmid" is used by "ismndo2".
 "mndomgmid" is used by "rngoidmlem".
@@ -11267,9 +11267,9 @@
 "opelreal" is used by "axrnegex".
 "opelreal" is used by "axrrecex".
 "opelreal" is used by "ltresr".
-"opidon" is used by "opidon2".
-"opidon" is used by "rngopid".
-"opidon2" is used by "exidreslem".
+"opidon2OLD" is used by "exidreslem".
+"opidonOLD" is used by "opidon2OLD".
+"opidonOLD" is used by "rngopidOLD".
 "opsqrlem2" is used by "opsqrlem6".
 "opsqrlem3" is used by "opsqrlem4".
 "opsqrlem3" is used by "opsqrlem5".
@@ -12257,10 +12257,10 @@
 "rngomndo" is used by "rngo1cl".
 "rngomndo" is used by "rngoidmlem".
 "rngon0" is used by "rngoueqz".
-"rngopid" is used by "exidcl".
-"rngopid" is used by "exidresid".
-"rngopid" is used by "isexid2".
-"rngopid" is used by "ismndo2".
+"rngopidOLD" is used by "exidcl".
+"rngopidOLD" is used by "exidresid".
+"rngopidOLD" is used by "isexid2".
+"rngopidOLD" is used by "ismndo2".
 "rngoridm" is used by "rngonegmn1r".
 "rngoridm" is used by "rngoridfz".
 "rngoridm" is used by "rngoueqz".
@@ -12756,8 +12756,8 @@
 "smfval" is used by "nvvop".
 "smfval" is used by "phop".
 "smfval" is used by "phpar".
-"smgrpass" is used by "ismndo1".
-"smgrpismgm" is used by "mndoismgm".
+"smgrpassOLD" is used by "ismndo1".
+"smgrpismgmOLD" is used by "mndoismgmOLD".
 "smgrpmgm" is used by "ismndo1".
 "snatpsubN" is used by "pclfinN".
 "snatpsubN" is used by "pclfinclN".
@@ -14906,7 +14906,7 @@ New usage of "clelabOLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleqfOLD" is discouraged (0 uses).
 New usage of "cleqhOLD" is discouraged (0 uses).
-New usage of "clmgm" is discouraged (2 uses).
+New usage of "clmgmOLD" is discouraged (2 uses).
 New usage of "cm0" is discouraged (1 uses).
 New usage of "cm2j" is discouraged (1 uses).
 New usage of "cm2ji" is discouraged (1 uses).
@@ -15169,7 +15169,7 @@ New usage of "df-ltr" is discouraged (2 uses).
 New usage of "df-m1r" is discouraged (5 uses).
 New usage of "df-md" is discouraged (1 uses).
 New usage of "df-metuOLD" is discouraged (1 uses).
-New usage of "df-mgm" is discouraged (2 uses).
+New usage of "df-mgmOLD" is discouraged (2 uses).
 New usage of "df-mi" is discouraged (2 uses).
 New usage of "df-mndo" is discouraged (3 uses).
 New usage of "df-mnf" is discouraged (3 uses).
@@ -15203,7 +15203,7 @@ New usage of "df-rngo" is discouraged (2 uses).
 New usage of "df-rq" is discouraged (2 uses).
 New usage of "df-scon" is discouraged (1 uses).
 New usage of "df-sfld" is discouraged (0 uses).
-New usage of "df-sgr" is discouraged (3 uses).
+New usage of "df-sgrOLD" is discouraged (3 uses).
 New usage of "df-sh" is discouraged (1 uses).
 New usage of "df-shs" is discouraged (1 uses).
 New usage of "df-sm" is discouraged (1 uses).
@@ -16527,7 +16527,7 @@ New usage of "islpoldN" is discouraged (1 uses).
 New usage of "islshpkrN" is discouraged (0 uses).
 New usage of "isltrn2N" is discouraged (0 uses).
 New usage of "islvol2aN" is discouraged (0 uses).
-New usage of "ismgm" is discouraged (5 uses).
+New usage of "ismgmOLD" is discouraged (5 uses).
 New usage of "ismndo" is discouraged (1 uses).
 New usage of "ismndo1" is discouraged (2 uses).
 New usage of "ismndo2" is discouraged (1 uses).
@@ -16549,7 +16549,7 @@ New usage of "isrnsigaOLD" is discouraged (0 uses).
 New usage of "issh" is discouraged (3 uses).
 New usage of "issh2" is discouraged (11 uses).
 New usage of "issh3" is discouraged (1 uses).
-New usage of "issmgrp" is discouraged (3 uses).
+New usage of "issmgrpOLD" is discouraged (3 uses).
 New usage of "isssp" is discouraged (8 uses).
 New usage of "isst" is discouraged (4 uses).
 New usage of "issubgo" is discouraged (9 uses).
@@ -16961,8 +16961,8 @@ New usage of "minvecolem5" is discouraged (1 uses).
 New usage of "minvecolem6" is discouraged (1 uses).
 New usage of "minvecolem7" is discouraged (1 uses).
 New usage of "mndoisexid" is discouraged (2 uses).
-New usage of "mndoismgm" is discouraged (3 uses).
-New usage of "mndoissmgrp" is discouraged (1 uses).
+New usage of "mndoismgmOLD" is discouraged (3 uses).
+New usage of "mndoissmgrpOLD" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
 New usage of "mo2OLD" is discouraged (0 uses).
 New usage of "mo2vOLD" is discouraged (0 uses).
@@ -17402,8 +17402,8 @@ New usage of "opelcn" is discouraged (1 uses).
 New usage of "opelopab4" is discouraged (0 uses).
 New usage of "opelopabsbALT" is discouraged (3 uses).
 New usage of "opelreal" is discouraged (8 uses).
-New usage of "opidon" is discouraged (2 uses).
-New usage of "opidon2" is discouraged (1 uses).
+New usage of "opidon2OLD" is discouraged (1 uses).
+New usage of "opidonOLD" is discouraged (2 uses).
 New usage of "opsqrlem1" is discouraged (0 uses).
 New usage of "opsqrlem2" is discouraged (1 uses).
 New usage of "opsqrlem3" is discouraged (2 uses).
@@ -17863,7 +17863,7 @@ New usage of "rngolidm" is discouraged (7 uses).
 New usage of "rngolz" is discouraged (5 uses).
 New usage of "rngomndo" is discouraged (3 uses).
 New usage of "rngon0" is discouraged (1 uses).
-New usage of "rngopid" is discouraged (4 uses).
+New usage of "rngopidOLD" is discouraged (4 uses).
 New usage of "rngorcan" is discouraged (0 uses).
 New usage of "rngoridm" is discouraged (3 uses).
 New usage of "rngorn1" is discouraged (1 uses).
@@ -18036,9 +18036,9 @@ New usage of "sineq0ALT" is discouraged (0 uses).
 New usage of "smcn" is discouraged (3 uses).
 New usage of "smcnlem" is discouraged (1 uses).
 New usage of "smfval" is discouraged (18 uses).
-New usage of "smgrpass" is discouraged (1 uses).
+New usage of "smgrpassOLD" is discouraged (1 uses).
 New usage of "smgrpisass" is discouraged (0 uses).
-New usage of "smgrpismgm" is discouraged (1 uses).
+New usage of "smgrpismgmOLD" is discouraged (1 uses).
 New usage of "smgrpmgm" is discouraged (1 uses).
 New usage of "snatpsubN" is discouraged (3 uses).
 New usage of "snelpwrVD" is discouraged (0 uses).
