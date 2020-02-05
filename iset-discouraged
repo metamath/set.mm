@@ -1,4 +1,3 @@
-"19.21h" is used by "19.21-2".
 "19.21h" is used by "19.21v".
 "19.21h" is used by "hbim1".
 "19.21h" is used by "nf3".
@@ -10,6 +9,7 @@
 "19.41h" is used by "sbh".
 "19.41h" is used by "sbidm".
 "19.42h" is used by "19.42v".
+"19.9hd" is used by "bj-sbimedh".
 "19.9hd" is used by "sbiedh".
 "4syl" is used by "f1ocnvfvrneq".
 "4syl" is used by "fcof1o".
@@ -43,11 +43,32 @@
 "alrimih" is used by "sb4or".
 "alrimih" is used by "sb6rf".
 "alrimih" is used by "sbbid".
+"ax-0id" is used by "addid1".
+"ax-0lt1" is used by "0lt1".
 "ax-10o" is used by "ax10".
-"ax-infvnALT" is used by "bj-omexALT".
+"ax-1re" is used by "1re".
+"ax-addass" is used by "addass".
+"ax-addcl" is used by "addcl".
+"ax-addcom" is used by "addcom".
+"ax-addrcl" is used by "readdcl".
+"ax-cnex" is used by "cnex".
+"ax-cnre" is used by "cnre".
+"ax-distr" is used by "adddi".
+"ax-inf2" is used by "bj-nn0sucALT".
+"ax-inf2" is used by "bj-omex2".
+"ax-mulass" is used by "mulass".
+"ax-mulcl" is used by "mulcl".
+"ax-mulcom" is used by "mulcom".
+"ax-mulrcl" is used by "remulcl".
+"axltirr" is used by "ltnr".
+"axlttrn" is used by "lttr".
+"axresscn" is used by "ax1cn".
 "df-ilim" is used by "dflim2".
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
+"df-mnf" is used by "mnfnre".
+"df-pnf" is used by "mnfnre".
+"df-pnf" is used by "pnfnre".
 "df-tru" is used by "tru".
 "equsalh" is used by "dvelimALT".
 "equsalh" is used by "dvelimfALT2".
@@ -100,6 +121,10 @@
 "r19.9rmvOLD" is used by "r19.45mv".
 "rdgivallem" is used by "rdgival".
 "rdgivallem" is used by "rdgon".
+"reapval" is used by "reapirr".
+"reapval" is used by "reaplt".
+"reapval" is used by "reapti".
+"reapval" is used by "recexre".
 "rexsnsOLD" is used by "r19.12sn".
 "rexsnsOLD" is used by "rexsng".
 "sbiedh" is used by "sbcomxyyz".
@@ -141,31 +166,78 @@
 "snexgOLD" is used by "uniop".
 "spimh" is used by "spim".
 "spimth" is used by "equveli".
-New usage of "19.21h" is discouraged (4 uses).
+New usage of "0cnALT" is discouraged (0 uses).
+New usage of "0reALT" is discouraged (0 uses).
+New usage of "19.21h" is discouraged (3 uses).
 New usage of "19.21ht" is discouraged (2 uses).
 New usage of "19.41h" is discouraged (5 uses).
 New usage of "19.42h" is discouraged (1 uses).
-New usage of "19.9hd" is discouraged (1 uses).
+New usage of "19.9hd" is discouraged (2 uses).
 New usage of "4syl" is discouraged (6 uses).
 New usage of "a9evsep" is discouraged (1 uses).
 New usage of "alrimih" is discouraged (25 uses).
+New usage of "ax-0id" is discouraged (1 uses).
+New usage of "ax-0lt1" is discouraged (1 uses).
 New usage of "ax-10o" is discouraged (1 uses).
 New usage of "ax-11o" is discouraged (0 uses).
 New usage of "ax-16" is discouraged (0 uses).
-New usage of "ax-infvnALT" is discouraged (1 uses).
+New usage of "ax-1re" is discouraged (1 uses).
+New usage of "ax-addass" is discouraged (1 uses).
+New usage of "ax-addcl" is discouraged (1 uses).
+New usage of "ax-addcom" is discouraged (1 uses).
+New usage of "ax-addrcl" is discouraged (1 uses).
+New usage of "ax-cnex" is discouraged (1 uses).
+New usage of "ax-cnre" is discouraged (1 uses).
+New usage of "ax-distr" is discouraged (1 uses).
+New usage of "ax-inf2" is discouraged (2 uses).
+New usage of "ax-mulass" is discouraged (1 uses).
+New usage of "ax-mulcl" is discouraged (1 uses).
+New usage of "ax-mulcom" is discouraged (1 uses).
+New usage of "ax-mulrcl" is discouraged (1 uses).
+New usage of "ax0id" is discouraged (0 uses).
+New usage of "ax0lt1" is discouraged (0 uses).
 New usage of "ax10" is discouraged (0 uses).
+New usage of "ax1cn" is discouraged (0 uses).
+New usage of "ax1re" is discouraged (0 uses).
+New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
+New usage of "axaddass" is discouraged (0 uses).
+New usage of "axaddcl" is discouraged (0 uses).
+New usage of "axaddcom" is discouraged (0 uses).
+New usage of "axaddrcl" is discouraged (0 uses).
+New usage of "axcnex" is discouraged (0 uses).
+New usage of "axcnre" is discouraged (0 uses).
+New usage of "axdistr" is discouraged (0 uses).
+New usage of "axi2m1" is discouraged (0 uses).
+New usage of "axicn" is discouraged (0 uses).
+New usage of "axltirr" is discouraged (1 uses).
+New usage of "axlttrn" is discouraged (1 uses).
+New usage of "axmulass" is discouraged (0 uses).
+New usage of "axmulcl" is discouraged (0 uses).
+New usage of "axmulcom" is discouraged (0 uses).
+New usage of "axmulrcl" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
+New usage of "axpre-apti" is discouraged (0 uses).
+New usage of "axpre-ltadd" is discouraged (0 uses).
+New usage of "axpre-ltirr" is discouraged (0 uses).
+New usage of "axpre-lttrn" is discouraged (0 uses).
+New usage of "axpre-ltwlin" is discouraged (0 uses).
+New usage of "axpre-mulgt0" is discouraged (0 uses).
+New usage of "axprecex" is discouraged (0 uses).
+New usage of "axresscn" is discouraged (1 uses).
+New usage of "axrnegex" is discouraged (0 uses).
 New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
 New usage of "bdsbcALT" is discouraged (0 uses).
 New usage of "bdsepnfALT" is discouraged (0 uses).
 New usage of "bj-nn0sucALT" is discouraged (0 uses).
-New usage of "bj-omexALT" is discouraged (0 uses).
+New usage of "bj-omex2" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
 New usage of "df-iord" is discouraged (1 uses).
+New usage of "df-mnf" is discouraged (1 uses).
+New usage of "df-pnf" is discouraged (2 uses).
 New usage of "df-tru" is discouraged (1 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
@@ -183,6 +255,7 @@ New usage of "r19.3rmOLD" is discouraged (2 uses).
 New usage of "r19.9rmvOLD" is discouraged (2 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rdgivallem" is discouraged (2 uses).
+New usage of "reapval" is discouraged (4 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
 New usage of "rexsnsOLD" is discouraged (2 uses).
 New usage of "ruALT" is discouraged (0 uses).
@@ -195,6 +268,8 @@ New usage of "spimth" is discouraged (1 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
 New usage of "truanOLD" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
+Proof modification of "0cnALT" is discouraged (49 steps).
+Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "a9evsep" is discouraged (63 steps).
 Proof modification of "ax9vsep" is discouraged (19 steps).
 Proof modification of "axi12" is discouraged (47 steps).
@@ -210,47 +285,54 @@ Proof modification of "bdpeano5" is discouraged (35 steps).
 Proof modification of "bdrabexg" is discouraged (27 steps).
 Proof modification of "bdsbcALT" is discouraged (20 steps).
 Proof modification of "bdsepnfALT" is discouraged (72 steps).
-Proof modification of "bdsetindis" is discouraged (117 steps).
+Proof modification of "bdsetindis" is discouraged (115 steps).
 Proof modification of "bdssex" is discouraged (30 steps).
 Proof modification of "bdssexd" is discouraged (18 steps).
 Proof modification of "bdssexg" is discouraged (40 steps).
 Proof modification of "bdssexi" is discouraged (13 steps).
 Proof modification of "bdunexb" is discouraged (94 steps).
-Proof modification of "bj-2inf" is discouraged (107 steps).
+Proof modification of "bj-2inf" is discouraged (104 steps).
 Proof modification of "bj-axun2" is discouraged (47 steps).
 Proof modification of "bj-bdfindes" is discouraged (121 steps).
 Proof modification of "bj-bdfindis" is discouraged (84 steps).
 Proof modification of "bj-bdfindisg" is discouraged (44 steps).
+Proof modification of "bj-d0clsepcl" is discouraged (111 steps).
+Proof modification of "bj-dcbi" is discouraged (31 steps).
 Proof modification of "bj-ex" is discouraged (31 steps).
 Proof modification of "bj-exlimmp" is discouraged (34 steps).
 Proof modification of "bj-exlimmpi" is discouraged (11 steps).
-Proof modification of "bj-findeslem0" is discouraged (76 steps).
-Proof modification of "bj-findeslem1" is discouraged (74 steps).
-Proof modification of "bj-findeslem1BAD" is discouraged (76 steps).
+Proof modification of "bj-findes" is discouraged (120 steps).
+Proof modification of "bj-findis" is discouraged (357 steps).
+Proof modification of "bj-findisg" is discouraged (43 steps).
 Proof modification of "bj-inex" is discouraged (151 steps).
-Proof modification of "bj-inf2vn" is discouraged (93 steps).
-Proof modification of "bj-inf2vn2" is discouraged (90 steps).
+Proof modification of "bj-inf2vn" is discouraged (88 steps).
+Proof modification of "bj-inf2vn2" is discouraged (85 steps).
 Proof modification of "bj-inf2vnlem1" is discouraged (204 steps).
 Proof modification of "bj-inf2vnlem2" is discouraged (240 steps).
-Proof modification of "bj-inf2vnlem3" is discouraged (137 steps).
-Proof modification of "bj-inf2vnlem4" is discouraged (126 steps).
+Proof modification of "bj-inf2vnlem3" is discouraged (139 steps).
+Proof modification of "bj-inf2vnlem4" is discouraged (128 steps).
 Proof modification of "bj-intexr" is discouraged (31 steps).
 Proof modification of "bj-intnexr" is discouraged (16 steps).
 Proof modification of "bj-nalset" is discouraged (105 steps).
-Proof modification of "bj-nn0suc" is discouraged (240 steps).
-Proof modification of "bj-nn0suc0" is discouraged (122 steps).
-Proof modification of "bj-nn0suc1" is discouraged (93 steps).
-Proof modification of "bj-nn0sucALT" is discouraged (47 steps).
-Proof modification of "bj-nnelirr" is discouraged (261 steps).
+Proof modification of "bj-nn0suc" is discouraged (87 steps).
+Proof modification of "bj-nn0suc0" is discouraged (159 steps).
+Proof modification of "bj-nn0sucALT" is discouraged (240 steps).
+Proof modification of "bj-nnelirr" is discouraged (239 steps).
 Proof modification of "bj-nnen2lp" is discouraged (52 steps).
-Proof modification of "bj-nntrans" is discouraged (222 steps).
-Proof modification of "bj-nntrans2" is discouraged (33 steps).
+Proof modification of "bj-nntrans" is discouraged (244 steps).
+Proof modification of "bj-nntrans2" is discouraged (24 steps).
+Proof modification of "bj-notbi" is discouraged (22 steps).
+Proof modification of "bj-notbid" is discouraged (14 steps).
+Proof modification of "bj-notbii" is discouraged (13 steps).
 Proof modification of "bj-nvel" is discouraged (11 steps).
 Proof modification of "bj-om" is discouraged (101 steps).
+Proof modification of "bj-omelon" is discouraged (10 steps).
 Proof modification of "bj-omex" is discouraged (25 steps).
 Proof modification of "bj-omex2" is discouraged (48 steps).
-Proof modification of "bj-omexALT" is discouraged (144 steps).
+Proof modification of "bj-omord" is discouraged (21 steps).
 Proof modification of "bj-omssind" is discouraged (44 steps).
+Proof modification of "bj-omtrans" is discouraged (196 steps).
+Proof modification of "bj-omtrans2" is discouraged (14 steps).
 Proof modification of "bj-peano2" is discouraged (15 steps).
 Proof modification of "bj-peano4" is discouraged (168 steps).
 Proof modification of "bj-prexg" is discouraged (65 steps).

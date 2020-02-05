@@ -13,6 +13,7 @@
 1097625600|Proved ruc - The Non-Denumerability of the Continuum (Norman Megill), Metamath 100 #22
 1110758400|Definition of the cosine function, df-cos
 1115251200|Proved infpn2 - The Infinitude of Primes (Norman Megill), Metamath 100 #11
+1141171200|Publication of "The Seventeen Provers of the World" (including Metamath), ISBN 9783540307044
 1163116800|Proved demoivreALT - De Moivre's Theorem (Steve Rodriguez), Metamath 100 #17
 1163635200|Proved arisum - Sum of an arithmetic series (Frédéric Liné), Metamath 100 #68
 1200096000|Proved sii - The Cauchy-Schwarz Inequality (Norman Megill), Metamath 100 #78
@@ -27,9 +28,14 @@
 1394755200|Proved bpos - Bertrand's Postulate (Mario Carneiro), Metamath 100 #98
 1397865600|Large number of Metamath 100 proofs begin being completed
 1429228800|Decimal constructor df-dec added
+1494115200|Proved ballotth - The Ballot Problem (Thierry Arnoux), Metamath 100 #30 / Tied with Coq
 1503532800|Definition of Tarskian geometry using extensible structures, df-trkg
+1504137600|Proved areacirc - Area of a Circle (Brendan Leahy), Metamath 100 #9 / Tied with Mizar
+1506211200|Proved cevath - Theorem of Ceva (Saveliy Skresanov), Metamath 100 #61
 1534204800|Proved eulerpart - The Partition Theorem (by Euler) (Thierry Arnoux), metamath 100 #45
 1539043200|Proved friendship - The Friendship Theorem (Alexander van der Vekens), metamath 100 #83
 1550707200|Proved cramer - Cramer's Rule (Alexander van der Vekens), Metamath 100 #97
 1552176000|Proved heron - Heron's Formula (Mario Carneiro), Metamath 100 #57
 1559448000|Publication of "Metamath: A Computer Language for Mathematical Proofs" book
+1552176000|Proved cayley - Cayley-Hamilton Theorem (Alexander van der Vekens), Metamath 100 #49
+1576022400|Proved fourier - Fourier convergence (Glauco Siliprandi), Metamath 100 #76 with 400 proven theorems
