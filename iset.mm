@@ -69394,6 +69394,18 @@ $)
     ( c1 cneg cc0 cmin co ci cmul df-neg caddc ax-i2m1 0cn ax-1cn ax-icn mulcli
     wceq subadd2i mpbir eqtr2i ) ABCADEZFFGEZAHSTOTAIECOJCATKLFFMMNPQR $.
 
+  ${
+    $d x A $.
+    $( Existence of reciprocal of positive real number.  (Contributed by Jim
+       Kingdon, 6-Feb-2020.) $)
+    recexgt0 $p |- ( ( A e. RR /\ 0 < A ) ->
+        E. x e. RR ( 0 < x /\ ( A x. x ) = 1 ) ) $=
+      ( cr wcel cc0 cltrr wbr wa cv cmul co c1 wceq wrex ax-precex wb ltxrlt
+      clt 0re mpan pm5.32i anbi1d rexbiia 3imtr4i ) BCDZEBFGZHEAIZFGZBUGJKLMZHZ
+      ACNUEEBRGZHEUGRGZUIHZACNABOUEUKUFECDZUEUKUFPSEBQTUAUMUJACUGCDZULUHUIUNUOU
+      LUHPSEUGQTUBUCUD $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Complex Apartness
@@ -69507,6 +69519,25 @@ $)
     EZBDEZCDEZFCGHZIZJZABGHZIZACKLZBCKLZGHFUQUPRLZGHUOFBARLZCKLURGUOUSCUOBAUHUI
     ULUNMZUHUIULUNNZOUJUKUHUIUNPZUOUNFUSGHUMUNUAUOABVAUTQUBUJUKUHUIUNUCUDUOBACU
     OBUTSUOAVASUOCVBSUEUFUOUPUQUOACVAVBTUOBCUTVBTQUG $.
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Multiplication of both sides of 'less than' by a positive number.
+       Theorem I.19 of [Apostol] p. 20.  (Contributed by NM, 13-Feb-2005.)
+       (Revised by Mario Carneiro, 27-May-2016.) $)
+    ltmul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+                 -> ( A < B <-> ( A x. C ) < ( B x. C ) ) ) $=
+      ( vx cr wcel cc0 clt wbr wa cmul co ltmul1a ex c1 cc recnd adantr 3brtr3d
+      w3a cv wceq wrex recexgt0 3ad2ant3 simpl1 simpl3l remulcld simpl2 simprrl
+      wi simprl jca 3jca sylan mulassd simprrr oveq2d mulid1d rexlimddv impbid
+      ) AEFZBEFZCEFZGCHIZJZTZABHIZACKLZBCKLZHIZVGVHVKABCMNVGGDUAZHIZCVLKLZOUBZJ
+      ZVKVHUKDEVFVBVPDEUCVCDCUDUEVGVLEFZVPJZJZVKVHVSVKJZAOKLZBOKLZABHVTAVNKLZBV
+      NKLZWAWBHVTVIVLKLZVJVLKLZWCWDHVSVIEFZVJEFZVQVMJZTVKWEWFHIVSWGWHWIVSACVBVC
+      VFVRUFZVDVEVBVCVRUGZUHVSBCVBVCVFVRUIZWKUHVSVQVMVGVQVPULZVGVQVMVOUJUMUNVIV
+      JVLMUOVTACVLVSAPFVKVSAWJQRZVSCPFVKVSCWKQRZVSVLPFVKVSVLWMQRZUPVTBCVLVSBPFV
+      KVSBWLQRZWOWPUPSVTVNOAKVSVOVKVGVQVMVOUQRZURVTVNOBKWRURSVTAWNUSVTBWQUSSNUT
+      VA $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
