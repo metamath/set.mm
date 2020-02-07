@@ -64923,25 +64923,30 @@ $)
 
   ${
     $d x y A $.  $d x y z $.
-    $( Existence of reciprocal of positive real number.  Axiom for real and
-       complex numbers, derived from set theory.  This construction-dependent
-       theorem should not be referenced directly; instead, use ~ ax-precex .
+    $( Existence of positive reciprocal of positive real number.  Axiom for
+       real and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly;
+       instead, use ~ ax-precex .
 
        In treatments which assume excluded middle, the ` 0 <RR A ` condition is
-       generally replaced by ` A =/= 0 ` .  (Contributed by Jim Kingdon,
-       12-Jan-2020.)  (New usage is discouraged.) $)
-    axprecex $p |- ( ( A e. RR /\ 0 <RR A ) -> E. x e. RR ( A x. x ) = 1 ) $=
-      ( vy vz cr wcel cc0 cltrr wbr cv cmul co c1 wceq wrex c0r cop cnr wa c1r
-      wi wex elreal df-rex bitri breq2 oveq1 eqeq1d rexbidv imbi12d cltr breq1i
-      df-0 ltresr cmr recexsrlem opelreal anbi1i mulresr df-1 eqeq2i eqid wb 0r
-      opthg2 mp2an mpbiran2 syl6bb pm5.32da syl5bb rspcev syl6bir expd rexlimdv
-      1sr oveq2 syl5 syl5bi gencl imp ) BEFZGBHIZBAJZKLZMNZAEOZGCJZPQZHIZWHWCKL
-      ZMNZAEOZUAWBWFUAWGRFZWACWHBWAWHBNZCROWMWNSCUBCBUCWNCRUDUEWNWIWBWLWFWHBGHU
-      FWNWKWEAEWNWJWDMWHBWCKUGUHUIUJWIPWGUKIZWMWLWIPPQZWHHIWOGWPWHHUMULPWGUNUEW
-      OWGDJZUOLZTNZDROWMWLDWGUPWMWSWLDRWMWQRFZWSWLWMWTWSSZWQPQZEFZWHXBKLZMNZSZW
-      LXFWTXESWMXAXCWTXEWQUQURWMWTXEWSWMWTSZXEWRPQZMNZWSXGXDXHMWGWQUSUHXIXHTPQZ
-      NZWSMXJXHUTVAXKWSPPNZPVBTRFPRFXKWSXLSVCVOVDWRPTPRRVEVFVGUEVHVIVJWKXEAXBEW
-      CXBNWJXDMWCXBWHKVPUHVKVLVMVNVQVRVSVT $.
+       generally replaced by ` A =/= 0 ` , and it may not be necessary to state
+       that the reciproacal is positive.  (Contributed by Jim Kingdon,
+       6-Feb-2020.)  (New usage is discouraged.) $)
+    axprecex $p |- ( ( A e. RR /\ 0 <RR A ) ->
+        E. x e. RR ( 0 <RR x /\ ( A x. x ) = 1 ) ) $=
+      ( vy vz cr wcel cc0 cltrr wbr cmul co c1 wceq wrex c0r cop cnr bitri c1r
+      wa cv wi wex elreal df-rex breq2 oveq1 eqeq1d anbi2d rexbidv imbi12d cltr
+      df-0 breq1i ltresr cmr recexgt0sr opelreal anbi1i a1i mulresr df-1 eqeq2i
+      wb eqid 1sr 0r opthg2 mp2an mpbiran2 syl6bb anbi12d pm5.32da syl5bb oveq2
+      rspcev syl6bir expd rexlimdv syl5 syl5bi gencl imp ) BEFZGBHIZGAUAZHIZBWF
+      JKZLMZTZAENZGCUAZOPZHIZWGWMWFJKZLMZTZAENZUBWEWKUBWLQFZWDCWMBWDWMBMZCQNWSW
+      TTCUCCBUDWTCQUERWTWNWEWRWKWMBGHUFWTWQWJAEWTWPWIWGWTWOWHLWMBWFJUGUHUIUJUKW
+      NOWLULIZWSWRWNOOPZWMHIXAGXBWMHUMUNOWLUORXAODUAZULIZWLXCUPKZSMZTZDQNWSWRDW
+      LUQWSXGWRDQWSXCQFZXGWRWSXHXGTZXCOPZEFZGXJHIZWMXJJKZLMZTZTZWRXPXHXOTWSXIXK
+      XHXOXCURUSWSXHXOXGWSXHTZXLXDXNXFXLXDVDXQXLXBXJHIXDGXBXJHUMUNOXCUORUTXQXNX
+      EOPZLMZXFXQXMXRLWLXCVAUHXSXRSOPZMZXFLXTXRVBVCYAXFOOMZOVESQFOQFYAXFYBTVDVF
+      VGXEOSOQQVHVIVJRVKVLVMVNWQXOAXJEWFXJMZWGXLWPXNWFXJGHUFYCWOXMLWFXJWMJVOUHV
+      LVPVQVRVSVTWAWBWC $.
   $}
 
   ${
@@ -65221,12 +65226,10 @@ $)
   ${
     $d x A $.
     $( Existence of reciprocal of positive real number.  Axiom for real and
-       complex numbers, justified by theorem ~ axprecex .
-
-       In treatments which assume excluded middle, the ` 0 <RR A ` condition is
-       generally replaced by ` A =/= 0 ` .  (Contributed by Jim Kingdon,
-       12-Jan-2020.) $)
-    ax-precex $a |- ( ( A e. RR /\ 0 <RR A ) -> E. x e. RR ( A x. x ) = 1 ) $.
+       complex numbers, justified by theorem ~ axprecex .  (Contributed by Jim
+       Kingdon, 6-Feb-2020.) $)
+    ax-precex $a |- ( ( A e. RR /\ 0 <RR A ) ->
+        E. x e. RR ( 0 <RR x /\ ( A x. x ) = 1 ) ) $.
     $( $j restatement 'ax-precex' of 'axprecex'; $)
   $}
 
@@ -69359,16 +69362,17 @@ $)
        29-Jan-2020.) $)
     recexre $p |- ( ( A e. RR /\ A #RR 0 ) -> E. x e. RR ( A x. x ) = 1 ) $=
       ( vy cr wcel cc0 wbr cmul co c1 wceq wrex clt wb 0re wa cneg pm5.32i recn
-      eqeq1d creap cv wo reapval mpan2 lt0neg1 renegcl ltxrlt sylancr ax-precex
-      cltrr bitrd sylan sylbi negnegd oveq2d negeq rspcev sylbir adantl mul2neg
-      rexlimddv cc syl2an rexbidva adantr mpbid ex mpan jaod sylbid imp ) BDEZB
-      FUAGZBAUBZHIZJKZADLZVMVNBFMGZFBMGZUCZVRVMFDEZVNWANOBFUDUEVMVSVRVTVMVSVRVM
-      VSPZBQZVOQZHIZJKZADLZVRWCWDCUBZHIZJKZWHCDWCVMFWDUKGZPWKCDLZVMVSWLVMVSFWDM
-      GZWLBUFVMWBWDDEZWNWLNOBUGZFWDUHUIULRVMWOWLWMWPCWDUJUMUNWIDEZWKPZWHWCWRWQW
-      DWIQZQZHIZJKZPWHWQXBWKWQXAWJJWQWTWIWDHWQWIWISUOUPTRWQWSDEXBWHWIUGWGXBAWSD
-      VOWSKZWFXAJXCWEWTWDHVOWSUQUPTURUMUSUTVBVMWHVRNVSVMWGVQADVMVODEZPWFVPJVMBV
-      CEVOVCEWFVPKXDBSVOSBVOVAVDTVEVFVGVHVMVTVRVMVTPVMFBUKGZPVRVMVTXEWBVMVTXENO
-      FBUHVIRABUJUNVHVJVKVL $.
+      cltrr creap cv reapval mpan2 lt0neg1 renegcl ltxrlt bitrd ax-precex simpr
+      sylancr reximi syl sylan sylbi negnegd oveq2d eqeq1d rspcev sylbir adantl
+      wo negeq rexlimddv cc mul2neg syl2an rexbidva adantr mpbid ex mpan sylbid
+      jaod imp ) BDEZBFUAGZBAUBZHIZJKZADLZVPVQBFMGZFBMGZVBZWAVPFDEZVQWDNOBFUCUD
+      VPWBWAWCVPWBWAVPWBPZBQZVRQZHIZJKZADLZWAWFWGCUBZHIZJKZWKCDWFVPFWGTGZPWNCDL
+      ZVPWBWOVPWBFWGMGZWOBUEVPWEWGDEZWQWONOBUFZFWGUGUKUHRVPWRWOWPWSWRWOPFWLTGZW
+      NPZCDLWPCWGUIXAWNCDWTWNUJULUMUNUOWLDEZWNPZWKWFXCXBWGWLQZQZHIZJKZPWKXBXGWN
+      XBXFWMJXBXEWLWGHXBWLWLSUPUQURRXBXDDEXGWKWLUFWJXGAXDDVRXDKZWIXFJXHWHXEWGHV
+      RXDVCUQURUSUNUTVAVDVPWKWANWBVPWJVTADVPVRDEZPWIVSJVPBVEEVRVEEWIVSKXIBSVRSB
+      VRVFVGURVHVIVJVKVPWCWAVPWCPVPFBTGZPZWAVPWCXJWEVPWCXJNOFBUGVLRXKFVRTGZVTPZ
+      ADLWAABUIXMVTADXLVTUJULUMUOVKVNVMVO $.
   $}
 
   $( Real apartness is tight.  (Contributed by Jim Kingdon, 30-Jan-2020.) $)
