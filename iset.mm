@@ -69539,6 +69539,15 @@ $)
       VA $.
   $}
 
+  $( Multiplication of both sides of 'less than or equal to' by a positive
+     number.  (Contributed by NM, 21-Feb-2005.) $)
+  lemul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+                -> ( A <_ B <-> ( A x. C ) <_ ( B x. C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a wn cmul co cle wb ltmul1 notbid lenlt remulcld
+    3com12 3adant3 simp1 simp3l simp2 lenltd 3bitr4d ) ADEZBDEZCDEZFCGHZIZJZBAG
+    HZKZBCLMZACLMZGHZKZABNHZUPUONHUHUGUKUNUROUHUGUKJUMUQBACPQTUGUHUSUNOUKABRUAU
+    LUPUOULACUGUHUKUBUGUHUIUJUCZSULBCUGUHUKUDUTSUEUF $.
+
   $( The square of a real number apart from zero is positive.  (Contributed by
      Jim Kingdon, 7-Feb-2020.) $)
   apsqgt0 $p |- ( ( A e. RR /\ A # 0 ) -> 0 < ( A x. A ) ) $=
