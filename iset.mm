@@ -1,4 +1,4 @@
-$( iset.mm - Version of 6-Feb-2020
+$( iset.mm - Version of 7-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69538,6 +69538,13 @@ $)
       KVSBWLQRZWOWPUPSVTVNOAKVSVOVKVGVQVMVOUQRZURVTVNOBKWRURSVTAWNUSVTBWQUSSNUT
       VA $.
   $}
+
+  $( The square of a real number apart from zero is positive.  (Contributed by
+     Jim Kingdon, 7-Feb-2020.) $)
+  apsqgt0 $p |- ( ( A e. RR /\ A # 0 ) -> 0 < ( A x. A ) ) $=
+    ( cr wcel cc0 cap wbr wa clt wo cmul co wb 0re reaplt pm5.32i mullt0 anidms
+    mpan2 mulgt0 jaodan sylbi ) ABCZADEFZGUBADHFZDAHFZIZGDAAJKHFZUBUCUFUBDBCUCU
+    FLMADNROUBUDUGUEUBUDGUGAAPQUBUEGUGAASQTUA $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
