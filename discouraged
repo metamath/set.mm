@@ -15927,7 +15927,6 @@ New usage of "gsummhmOLD" is discouraged (2 uses).
 New usage of "gsummptfsaddOLD" is discouraged (0 uses).
 New usage of "gsummulc1OLD" is discouraged (1 uses).
 New usage of "gsummulc2OLD" is discouraged (1 uses).
-New usage of "gsumply1subrALT" is discouraged (0 uses).
 New usage of "gsumptOLD" is discouraged (1 uses).
 New usage of "gsumresOLD" is discouraged (6 uses).
 New usage of "gsumsplit2OLD" is discouraged (0 uses).
@@ -16957,6 +16956,8 @@ New usage of "minvecolem4c" is discouraged (1 uses).
 New usage of "minvecolem5" is discouraged (1 uses).
 New usage of "minvecolem6" is discouraged (1 uses).
 New usage of "minvecolem7" is discouraged (1 uses).
+New usage of "mndassOLD" is discouraged (0 uses).
+New usage of "mndclOLD" is discouraged (0 uses).
 New usage of "mndoisexid" is discouraged (2 uses).
 New usage of "mndoismgmOLD" is discouraged (3 uses).
 New usage of "mndoissmgrpOLD" is discouraged (1 uses).
@@ -19228,7 +19229,6 @@ Proof modification of "gsummhmOLD" is discouraged (44 steps).
 Proof modification of "gsummptfsaddOLD" is discouraged (238 steps).
 Proof modification of "gsummulc1OLD" is discouraged (103 steps).
 Proof modification of "gsummulc2OLD" is discouraged (103 steps).
-Proof modification of "gsumply1subrALT" is discouraged (318 steps).
 Proof modification of "gsumptOLD" is discouraged (436 steps).
 Proof modification of "gsumresOLD" is discouraged (42 steps).
 Proof modification of "gsumsplit2OLD" is discouraged (133 steps).
@@ -19389,6 +19389,8 @@ Proof modification of "metusttoOLD" is discouraged (341 steps).
 Proof modification of "metutopOLD" is discouraged (627 steps).
 Proof modification of "metuustOLD" is discouraged (78 steps).
 Proof modification of "metuvalOLD" is discouraged (244 steps).
+Proof modification of "mndassOLD" is discouraged (302 steps).
+Proof modification of "mndclOLD" is discouraged (240 steps).
 Proof modification of "mo2OLD" is discouraged (69 steps).
 Proof modification of "mo2vOLD" is discouraged (147 steps).
 Proof modification of "mo2vOLDOLD" is discouraged (147 steps).
