@@ -69400,10 +69400,10 @@ $)
        Kingdon, 6-Feb-2020.) $)
     recexgt0 $p |- ( ( A e. RR /\ 0 < A ) ->
         E. x e. RR ( 0 < x /\ ( A x. x ) = 1 ) ) $=
-      ( cr wcel cc0 cltrr wbr wa cv cmul co c1 wceq wrex ax-precex wb ltxrlt
-      clt 0re mpan pm5.32i anbi1d rexbiia 3imtr4i ) BCDZEBFGZHEAIZFGZBUGJKLMZHZ
-      ACNUEEBRGZHEUGRGZUIHZACNABOUEUKUFECDZUEUKUFPSEBQTUAUMUJACUGCDZULUHUIUNUOU
-      LUHPSEUGQTUBUCUD $.
+      ( cr wcel cc0 cltrr wbr wa cv cmul co c1 wceq clt ax-precex wb 0re ltxrlt
+      wrex mpan pm5.32i anbi1d rexbiia 3imtr4i ) BCDZEBFGZHEAIZFGZBUGJKLMZHZACS
+      UEEBNGZHEUGNGZUIHZACSABOUEUKUFECDZUEUKUFPQEBRTUAUMUJACUGCDZULUHUIUNUOULUH
+      PQEUGRTUBUCUD $.
   $}
 
 $(
