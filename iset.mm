@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Feb-2020
+$( iset.mm - Version of 8-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69547,6 +69547,31 @@ $)
     3com12 3adant3 simp1 simp3l simp2 lenltd 3bitr4d ) ADEZBDEZCDEZFCGHZIZJZBAG
     HZKZBCLMZACLMZGHZKZABNHZUPUONHUHUGUKUNUROUHUGUKJUMUQBACPQTUGUHUSUNOUKABRUAU
     LUPUOULACUGUHUKUBUGUHUIUJUCZSULBCUGUHUKUDUTSUEUF $.
+
+  $( Lemma for ~ reapmul1 .  (Contributed by Jim Kingdon, 8-Feb-2020.) $)
+  reapmul1lem $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) ->
+      ( A # B <-> ( A x. C ) # ( B x. C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a wo cmul co cap ltmul1 wb 3com12 orbi12d reaplt
+    remulcld 3adant3 simp1 simp3l simp2 syl2anc 3bitr4d ) ADEZBDEZCDEZFCGHZIZJZ
+    ABGHZBAGHZKZACLMZBCLMZGHZUQUPGHZKZABNHZUPUQNHZULUMURUNUSABCOUHUGUKUNUSPBACO
+    QRUGUHVAUOPUKABSUAULUPDEUQDEVBUTPULACUGUHUKUBUGUHUIUJUCZTULBCUGUHUKUDVCTUPU
+    QSUEUF $.
+
+  $( Multiplication of both sides of real apartness by a real number apart from
+     zero.  (Contributed by Jim Kingdon, 8-Feb-2020.) $)
+  reapmul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ C # 0 ) ) ->
+      ( A # B <-> ( A x. C ) # ( B x. C ) ) ) $=
+    ( cr wcel cc0 cap wbr wa cmul co wb clt reaplt cneg recnd mulneg2d renegcld
+    wo reapmul1lem 0re mpan2 pm5.32i simp1 simp3l simp2 breq12d simp3r lt0neg1d
+    mpbid syl112anc remulcld ltnegd orbi12d syl2anc orcom 3bitr4d 3expa anassrs
+    w3a syl6bb jaodan anasss sylan2b 3impa ) ADEZBDEZCDEZCFGHZIZABGHZACJKZBCJKZ
+    GHZLZVJVFVGIZVHCFMHZFCMHZSZIVOVHVIVSVHFDEVIVSLUACFNUBUCVPVHVSVOVPVHIVQVOVRV
+    PVHVQVOVFVGVHVQIZVOVFVGVTUTZACOZJKZBWBJKZGHZVLOZVMOZGHZVKVNWAWCWFWDWGGWAACW
+    AAVFVGVTUDZPWACVFVGVHVQUEZPZQWABCWABVFVGVTUFZPWKQUGWAVFVGWBDEFWBMHZVKWELWIW
+    LWACWJRWAVQWMVFVGVHVQUHWACWJUIUJABWBTUKWAVLVMMHZVMVLMHZSZWGWFMHZWFWGMHZSZVN
+    WHWAWNWQWOWRWAVLVMWAACWIWJULZWABCWLWJULZUMWAVMVLXAWTUMUNWAVLDEVMDEVNWPLWTXA
+    VLVMNUOWAWHWRWQSZWSWAWFDEWGDEWHXBLWAVLWTRWAVMXARWFWGNUOWRWQUPVAUQUQURUSVPVH
+    VRVOVFVGVHVRIVOABCTURUSVBVCVDVE $.
 
   $( The square of a real number apart from zero is positive.  (Contributed by
      Jim Kingdon, 7-Feb-2020.) $)
