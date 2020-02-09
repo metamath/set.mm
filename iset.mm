@@ -69502,8 +69502,8 @@ $)
       CXD $.
   $}
 
-  $( Real apartness in terms of less than.  (Contributed by Jim Kingdon,
-     1-Feb-2020.) $)
+  $( Real apartness in terms of less than.  Part of Definition 11.2.7(vi) of
+     [[HoTT]], p.  (varies).  (Contributed by Jim Kingdon, 1-Feb-2020.) $)
   reaplt $p |- ( ( A e. RR /\ B e. RR ) ->
       ( A # B <-> ( A < B \/ B < A ) ) ) $=
     ( cr wcel wa cap wbr creap clt wo apreap reapval bitrd ) ACDBCDEABFGABHGABI
@@ -69523,8 +69523,9 @@ $)
   ${
     $d A x $.  $d B x $.  $d C x $.
     $( Multiplication of both sides of 'less than' by a positive number.
-       Theorem I.19 of [Apostol] p. 20.  (Contributed by NM, 13-Feb-2005.)
-       (Revised by Mario Carneiro, 27-May-2016.) $)
+       Theorem I.19 of [Apostol] p. 20.  Part of Definition 11.2.7(vi) of
+       [[HoTT]], p.  (varies).  (Contributed by NM, 13-Feb-2005.)  (Revised by
+       Mario Carneiro, 27-May-2016.) $)
     ltmul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
                  -> ( A < B <-> ( A x. C ) < ( B x. C ) ) ) $=
       ( vx cr wcel cc0 clt wbr wa cmul co ltmul1a ex c1 cc recnd adantr 3brtr3d
