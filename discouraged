@@ -5988,7 +5988,7 @@
 "erngdvlem1-rN" is used by "erngdvlem3-rN".
 "erngdvlem1-rN" is used by "erngdvlem4-rN".
 "erngdvlem3-rN" is used by "erngdvlem4-rN".
-"erngdvlem3-rN" is used by "erngrng-rN".
+"erngdvlem3-rN" is used by "erngring-rN".
 "erngdvlem4-rN" is used by "erngdv-rN".
 "erngfmul-rN" is used by "erngdvlem3-rN".
 "erngfmul-rN" is used by "erngdvlem4-rN".
@@ -6414,7 +6414,7 @@
 "grpomuldivass" is used by "grpopncan".
 "grpomuldivass" is used by "nvaddsubass".
 "grpon0" is used by "0ngrp".
-"grpon0" is used by "rngon0".
+"grpon0" is used by "rngone0".
 "grpon0" is used by "vcoprnelem".
 "grponnncan2" is used by "nvnnncan2".
 "grponpcan" is used by "ablonnncan".
@@ -12215,7 +12215,7 @@
 "rngogrpo" is used by "rngokerinj".
 "rngogrpo" is used by "rngolcan".
 "rngogrpo" is used by "rngolz".
-"rngogrpo" is used by "rngon0".
+"rngogrpo" is used by "rngone0".
 "rngogrpo" is used by "rngonegcl".
 "rngogrpo" is used by "rngonegmn1l".
 "rngogrpo" is used by "rngonegmn1r".
@@ -12251,7 +12251,7 @@
 "rngomndo" is used by "isdrngo2".
 "rngomndo" is used by "rngo1cl".
 "rngomndo" is used by "rngoidmlem".
-"rngon0" is used by "rngoueqz".
+"rngone0" is used by "rngoueqz".
 "rngopidOLD" is used by "exidcl".
 "rngopidOLD" is used by "exidresid".
 "rngopidOLD" is used by "isexid2".
@@ -15739,7 +15739,7 @@ New usage of "erngfset-rN" is discouraged (1 uses).
 New usage of "erngmul-rN" is discouraged (2 uses).
 New usage of "erngplus-rN" is discouraged (1 uses).
 New usage of "erngplus2-rN" is discouraged (0 uses).
-New usage of "erngrng-rN" is discouraged (0 uses).
+New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "eu1OLD" is discouraged (0 uses).
 New usage of "eu2OLD" is discouraged (0 uses).
@@ -17860,7 +17860,7 @@ New usage of "rngolcan" is discouraged (0 uses).
 New usage of "rngolidm" is discouraged (7 uses).
 New usage of "rngolz" is discouraged (5 uses).
 New usage of "rngomndo" is discouraged (3 uses).
-New usage of "rngon0" is discouraged (1 uses).
+New usage of "rngone0" is discouraged (1 uses).
 New usage of "rngopidOLD" is discouraged (4 uses).
 New usage of "rngorcan" is discouraged (0 uses).
 New usage of "rngoridm" is discouraged (3 uses).
