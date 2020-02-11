@@ -22,10 +22,11 @@ mmfile='set.mm'
 rename_html='true' # Do the renames in the HTML files?
 rewrap='true' # Do we rewrap the database (mmfile)?
 today="$(date '+%d-%b-%y')"
+reason='Rename' # Stub reason so people can replace it later.
 
 usage () {
   echo 'Usage: mass-rename [--database MMDATABASE=set.mm] [--today DATE]' >&2
-  echo '         [--skip-html] [--skip-rewrap] RENAME_LIST' >&2
+  echo '         [--reason R] [--skip-html] [--skip-rewrap] RENAME_LIST' >&2
   echo 'RENAME_LIST is a file with the renames. Each nonblank line says:' >&2
   echo ' # COMMENT' >&2
   echo ' LINE_NUMBER # COMMENT' >&2
@@ -43,6 +44,10 @@ while [ "$#" -gt 0 ] ; do
     --today)
       shift
       today="$1"
+      shift ;;
+    --reason)
+      shift
+      reason="$1"
       shift ;;
     --skip-html) # If set, we don't do renames in the HTML files
       shift
@@ -69,9 +74,22 @@ if [ "$#" -ne 1 ] ; then
   exit 1
 fi
 
+if ! command -v tac > /dev/null ; then
+  echo 'Requires "tac" command to be installed' >&2
+  exit 1
+fi
+
+if ! command -v metamath > /dev/null ; then
+  echo 'Requires "metamath" command to be installed' >&2
+  exit 1
+fi
+
+# Remove leading 0 in date; later formatting will use a space if needed
+today="${today#0}"
+
 input_file="$1"
 
-echo 'Here are the renames, you may want to record them in the database.' >&2
+echo 'Processing renames...' >&2
 
 # Skip the list of "past renames" so we don't accidentally
 # change any historical info.
@@ -81,7 +99,9 @@ is_aep () {
   [ "$1" = '$a' ] || [ "$1" = '$e' ] || [ "$1" = '$p' ]
 }
 
-rm -f ,dated-renames
+rm -f ,dated-renames ,dated-renames.unreversed
+
+# Process renames. "type" is type of assertion ($[aep]), NOT a typecode.
 
 while read -r linenum old new type rest
 do
@@ -98,15 +118,25 @@ do
     # We don't have line_number old_name new_name $[aep] other_info
     # Maybe it is: old_name new_name $[aep] other_info
     if ! is_aep "$new" ; then
-      echo "Error: type is $new in line beginning with $linenum" >&2
+      echo "Error: assertion type is $new in line beginning with $linenum" >&2
       exit 1
     fi
+    type="$new"
     new="$old"
     old="$linenum"
     linenum=0
   fi
-  printf '%s\n' "$today $old $new"
-  printf '%s\n' "$today $old $new" >> ,dated-renames
+  # Output
+  if [ "$type" = '$e' ] ; then
+    info="${reason} (\$e)"
+  else
+    info="$reason"
+  fi
+  msg="$(printf '%9s %-9s %-11s %-s' "$today" "$old" "$new" "$info")"
+  printf '%s\n' "$msg"
+  if [ "$type" != '$e' ]; then
+    printf '%s\n' "$msg" >> ,dated-renames.unreversed
+  fi
   regexed_old="$(printf '%s' "$old" | sed -e 's/\./\\./g')"
   sed -E -e "${range}"'s/(^| )'"${regexed_old}"'( |$)/\1'"$new"'\2/g' \
     < "$mmfile" > "$mmfile.tmp"
@@ -122,7 +152,12 @@ do
   fi
 done < "$input_file"
 
-echo
+echo >&2
+echo >&2
+echo '=== Renames in reverse order (skipping $e) ===' >&2
+
+tac < ,dated-renames.unreversed > ,dated-renames
+cat ,dated-renames
 
 # Rewrap the format to clean it up.
 if [ "$rewrap" = 'true' ]; then
