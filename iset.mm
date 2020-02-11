@@ -1,4 +1,4 @@
-$( iset.mm - Version of 6-Feb-2020
+$( iset.mm - Version of 8-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69400,10 +69400,10 @@ $)
        Kingdon, 6-Feb-2020.) $)
     recexgt0 $p |- ( ( A e. RR /\ 0 < A ) ->
         E. x e. RR ( 0 < x /\ ( A x. x ) = 1 ) ) $=
-      ( cr wcel cc0 cltrr wbr wa cv cmul co c1 wceq wrex ax-precex wb ltxrlt
-      clt 0re mpan pm5.32i anbi1d rexbiia 3imtr4i ) BCDZEBFGZHEAIZFGZBUGJKLMZHZ
-      ACNUEEBRGZHEUGRGZUIHZACNABOUEUKUFECDZUEUKUFPSEBQTUAUMUJACUGCDZULUHUIUNUOU
-      LUHPSEUGQTUBUCUD $.
+      ( cr wcel cc0 cltrr wbr wa cv cmul co c1 wceq clt ax-precex wb 0re ltxrlt
+      wrex mpan pm5.32i anbi1d rexbiia 3imtr4i ) BCDZEBFGZHEAIZFGZBUGJKLMZHZACS
+      UEEBNGZHEUGNGZUIHZACSABOUEUKUFECDZUEUKUFPQEBRTUAUMUJACUGCDZULUHUIUNUOULUH
+      PQEUGRTUBUCUD $.
   $}
 
 $(
@@ -69502,8 +69502,8 @@ $)
       CXD $.
   $}
 
-  $( Real apartness in terms of less than.  (Contributed by Jim Kingdon,
-     1-Feb-2020.) $)
+  $( Real apartness in terms of less than.  Part of Definition 11.2.7(vi) of
+     [[HoTT]], p.  (varies).  (Contributed by Jim Kingdon, 1-Feb-2020.) $)
   reaplt $p |- ( ( A e. RR /\ B e. RR ) ->
       ( A # B <-> ( A < B \/ B < A ) ) ) $=
     ( cr wcel wa cap wbr creap clt wo apreap reapval bitrd ) ACDBCDEABFGABHGABI
@@ -69523,8 +69523,9 @@ $)
   ${
     $d A x $.  $d B x $.  $d C x $.
     $( Multiplication of both sides of 'less than' by a positive number.
-       Theorem I.19 of [Apostol] p. 20.  (Contributed by NM, 13-Feb-2005.)
-       (Revised by Mario Carneiro, 27-May-2016.) $)
+       Theorem I.19 of [Apostol] p. 20.  Part of Definition 11.2.7(vi) of
+       [[HoTT]], p.  (varies).  (Contributed by NM, 13-Feb-2005.)  (Revised by
+       Mario Carneiro, 27-May-2016.) $)
     ltmul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
                  -> ( A < B <-> ( A x. C ) < ( B x. C ) ) ) $=
       ( vx cr wcel cc0 clt wbr wa cmul co ltmul1a ex c1 cc recnd adantr 3brtr3d
@@ -69538,6 +69539,47 @@ $)
       KVSBWLQRZWOWPUPSVTVNOAKVSVOVKVGVQVMVOUQRZURVTVNOBKWRURSVTAWNUSVTBWQUSSNUT
       VA $.
   $}
+
+  $( Multiplication of both sides of 'less than or equal to' by a positive
+     number.  (Contributed by NM, 21-Feb-2005.) $)
+  lemul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+                -> ( A <_ B <-> ( A x. C ) <_ ( B x. C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a wn cmul co cle wb ltmul1 notbid lenlt remulcld
+    3com12 3adant3 simp1 simp3l simp2 lenltd 3bitr4d ) ADEZBDEZCDEZFCGHZIZJZBAG
+    HZKZBCLMZACLMZGHZKZABNHZUPUONHUHUGUKUNUROUHUGUKJUMUQBACPQTUGUHUSUNOUKABRUAU
+    LUPUOULACUGUHUKUBUGUHUIUJUCZSULBCUGUHUKUDUTSUEUF $.
+
+  $( Lemma for ~ reapmul1 .  (Contributed by Jim Kingdon, 8-Feb-2020.) $)
+  reapmul1lem $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) ->
+      ( A # B <-> ( A x. C ) # ( B x. C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a wo cmul co cap ltmul1 wb 3com12 orbi12d reaplt
+    remulcld 3adant3 simp1 simp3l simp2 syl2anc 3bitr4d ) ADEZBDEZCDEZFCGHZIZJZ
+    ABGHZBAGHZKZACLMZBCLMZGHZUQUPGHZKZABNHZUPUQNHZULUMURUNUSABCOUHUGUKUNUSPBACO
+    QRUGUHVAUOPUKABSUAULUPDEUQDEVBUTPULACUGUHUKUBUGUHUIUJUCZTULBCUGUHUKUDVCTUPU
+    QSUEUF $.
+
+  $( Multiplication of both sides of real apartness by a real number apart from
+     zero.  (Contributed by Jim Kingdon, 8-Feb-2020.) $)
+  reapmul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ C # 0 ) ) ->
+      ( A # B <-> ( A x. C ) # ( B x. C ) ) ) $=
+    ( cr wcel cc0 cap wbr wa cmul co wb clt reaplt cneg recnd mulneg2d renegcld
+    wo reapmul1lem 0re mpan2 pm5.32i simp1 simp3l simp2 breq12d simp3r lt0neg1d
+    mpbid syl112anc remulcld ltnegd orbi12d syl2anc orcom 3bitr4d 3expa anassrs
+    w3a syl6bb jaodan anasss sylan2b 3impa ) ADEZBDEZCDEZCFGHZIZABGHZACJKZBCJKZ
+    GHZLZVJVFVGIZVHCFMHZFCMHZSZIVOVHVIVSVHFDEVIVSLUACFNUBUCVPVHVSVOVPVHIVQVOVRV
+    PVHVQVOVFVGVHVQIZVOVFVGVTUTZACOZJKZBWBJKZGHZVLOZVMOZGHZVKVNWAWCWFWDWGGWAACW
+    AAVFVGVTUDZPWACVFVGVHVQUEZPZQWABCWABVFVGVTUFZPWKQUGWAVFVGWBDEFWBMHZVKWELWIW
+    LWACWJRWAVQWMVFVGVHVQUHWACWJUIUJABWBTUKWAVLVMMHZVMVLMHZSZWGWFMHZWFWGMHZSZVN
+    WHWAWNWQWOWRWAVLVMWAACWIWJULZWABCWLWJULZUMWAVMVLXAWTUMUNWAVLDEVMDEVNWPLWTXA
+    VLVMNUOWAWHWRWQSZWSWAWFDEWGDEWHXBLWAVLWTRWAVMXARWFWGNUOWRWQUPVAUQUQURUSVPVH
+    VRVOVFVGVHVRIVOABCTURUSVBVCVDVE $.
+
+  $( The square of a real number apart from zero is positive.  (Contributed by
+     Jim Kingdon, 7-Feb-2020.) $)
+  apsqgt0 $p |- ( ( A e. RR /\ A # 0 ) -> 0 < ( A x. A ) ) $=
+    ( cr wcel cc0 cap wbr wa clt wo cmul co wb 0re reaplt pm5.32i mullt0 anidms
+    mpan2 mulgt0 jaodan sylbi ) ABCZADEFZGUBADHFZDAHFZIZGDAAJKHFZUBUCUFUBDBCUCU
+    FLMADNROUBUDUGUEUBUDGUGAAPQUBUEGUGAASQTUA $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
