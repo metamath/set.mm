@@ -1,17 +1,18 @@
 # Makefile to minimize Metamath proofs. Requires GNU make.
+# "work" is a list of simple numbers.
 
 all: alljobs
-	echo 'DONE.'
+	@echo 'DONE.'
 
 LOG_LIST := \
-  $(foreach num, $(shell seq $(first) $(last)), metamathjobs/job$(num).log)
-
-$(info LOG_LIST is $(LOG_LIST))
+  $(foreach num, $(work), metamathjobs/job$(num).log)
 
 metamathjobs/job%.log: metamathjobs/job%.cmd
-	echo "Running job $*"	
-	metamath 'read set.mm' "submit 'metamathjobs/job$(*).cmd'" quit \
-	   > "metamathjobs/job$(*).log" 2>&1
+	@echo "Running job $*"
+	@rm -f "metamathjobs/job$(*).log"
+	time metamath 'read set.mm' \
+	  "open log 'metamathjobs/job$(*).log'" \
+	  "submit 'metamathjobs/job$(*).cmd' /silent" quit 2>&1
 
 alljobs: $(LOG_LIST)
 
