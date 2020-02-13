@@ -1,7 +1,15 @@
 #!/bin/sh
 
-# Run set of Metamath minimization jobs from $1 (start) through $2 (end).
-# The number of jobs is the environment variable NPROC if set, else # CPUs
+# Run a set of Metamath minimization jobs, maximally parallel,
+# until they are all done.
+# The command line is a space-separated list of entries;
+# each entry is a single number or a range START-END (inclusive).
+# Sample usage:
+# scripts/jobs 112 120-130
+
+# The number of jobs run in parallel is the environment variable NPROC if
+# it is set, otherwise it is the number of CPUs (found with `nproc`).
+# In most cases the default behavior is best.
 
 # Recommended setup:
 # git clone https://github.com/metamath/set.mm.git
@@ -10,18 +18,33 @@
 # scripts/build-metamath
 # # check out the version we want to analyze
 # git checkout 87bc05d4155014c9bc7b8f4f05435347b628b7f0 # or whatever
-# git checkout -b jobs
+# git checkout -b jobs # or whatever branch name you want to use
+#
+# scripts/jobs JOB_NUMBERS
 
 set -e -u
+
 die () {
 printf '%s\n' "$1" >&2
 exit 1
 }
 
+# Expand $@ to individual job numbers
+# We do this ahead-of-time, it's a pain to do this within make.
+find_work_list () {
+  for entry
+  do
+    case "$entry" in
+	    *-*) first="${entry%-*}"
+	         last="${entry#*-}"
+		 seq "$first" "$last" ;;
+	    *) printf '%s\n' "$entry" ;;
+    esac
+  done
+}
+
 command -v metamath > /dev/null || die 'Metamath program not on path'
-[ "$#" = 2 ] || die 'Requires exactly 2 parameters, the start and end job #s'
-first="$1"
-last="$2"
+[ "$#" -gt 0 ] || die 'Requires parameters, e.g., 112 118-140'
 
 # Download jobs if not already downloaded
 test -f min2020-jobs.zip || \
@@ -32,15 +55,17 @@ test -d metamathjobs || unzip min2020-jobs.zip
 
 master_log='metamathjobs/master.log'
 
-echo
+# Generate expanded list of space-separated job numbers
+work="$(find_work_list "$@" | tr '\r\n' ' ')"
+
 echo 'Starting jobs. View job NUM with: tail -c +0 -f metamathjobs/jobNUM.log'
-echo "View overall state with: tail -c +0 ${master_log}"
+echo "View overall state with: tail -c +0 -f ${master_log}"
 echo
 
 # We use "nproc" to find the number of CPUs if NPROC is not set.
 
 nohup make --jobs "${NPROC:-$(nproc)}" -r -f scripts/jobs.makefile \
-           first="$first" last="$last" > "$master_log" 2>&1 &
+           work="$work" > "$master_log" 2>&1 &
 
 echo
 echo 'Run "killall make metamath" to kill all processes.'
