@@ -1,0 +1,47 @@
+#!/bin/sh
+
+# Run set of Metamath minimization jobs from $1 (start) through $2 (end).
+# The number of jobs is the environment variable NPROC if set, else # CPUs
+
+# Recommended setup:
+# git clone https://github.com/metamath/set.mm.git
+# cd set.mm
+# scripts/download-metamath
+# scripts/build-metamath
+# # check out the version we want to analyze
+# git checkout 87bc05d4155014c9bc7b8f4f05435347b628b7f0 # or whatever
+# git checkout -b jobs
+
+set -e -u
+die () {
+printf '%s\n' "$1" >&2
+exit 1
+}
+
+command -v metamath > /dev/null || die 'Metamath program not on path'
+[ "$#" = 2 ] || die 'Requires exactly 2 parameters, the start and end job #s'
+first="$1"
+last="$2"
+
+# Download jobs if not already downloaded
+test -f min2020-jobs.zip || \
+wget http://us2.metamath.org/downloads/min2020-jobs.zip
+
+# unzip if not already unzipped
+test -d metamathjobs || unzip min2020-jobs.zip
+
+master_log='metamathjobs/master.log'
+
+echo
+echo 'Starting jobs. View job NUM with: tail -c +0 -f metamathjobs/jobNUM.log'
+echo "View overall state with: tail -c +0 ${master_log}"
+echo
+
+# We use "nproc" to find the number of CPUs if NPROC is not set.
+
+nohup make --jobs "${NPROC:-$(nproc)}" -r -f scripts/jobs.makefile \
+           first="$first" last="$last" > "$master_log" 2>&1 &
+
+echo
+echo 'Run "killall make metamath" to kill all processes.'
+echo
