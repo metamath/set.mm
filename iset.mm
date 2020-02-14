@@ -1,4 +1,4 @@
-$( iset.mm - Version of 12-Feb-2020
+$( iset.mm - Version of 13-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69573,6 +69573,15 @@ $)
     WHWAWNWQWOWRWAVLVMWAACWIWJULZWABCWLWJULZUMWAVMVLXAWTUMUNWAVLDEVMDEVNWPLWTXA
     VLVMNUOWAWHWRWQSZWSWAWFDEWGDEWHXBLWAVLWTRWAVMXARWFWGNUOWRWQUPVAUQUQURUSVPVH
     VRVOVFVGVHVRIVOABCTURUSVBVCVDVE $.
+
+  $( Real addition respects apartness.  (Contributed by Jim Kingdon,
+     13-Feb-2020.) $)
+  reapadd1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+      ( A # B <-> ( A + C ) # ( B + C ) ) ) $=
+    ( cr wcel w3a clt wbr wo caddc co cap ltadd1 wb 3com12 orbi12d reaplt simp1
+    3adant3 readdcld simp3 simp2 syl2anc 3bitr4d ) ADEZBDEZCDEZFZABGHZBAGHZIZAC
+    JKZBCJKZGHZUMULGHZIZABLHZULUMLHZUHUIUNUJUOABCMUFUEUGUJUONBACMOPUEUFUQUKNUGA
+    BQSUHULDEUMDEURUPNUHACUEUFUGRUEUFUGUAZTUHBCUEUFUGUBUSTULUMQUCUD $.
 
   $( The square of a real number apart from zero is positive.  (Contributed by
      Jim Kingdon, 7-Feb-2020.) $)
