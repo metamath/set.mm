@@ -43,6 +43,10 @@ find_work_list () {
   done
 }
 
+# If metamath is *already* on the PATH, that one will be used.
+# If not, increase the likelihood of finding a working "metamath" command
+PATH="$PATH:${PWD}/metamath:${HOME}/bin"
+
 command -v metamath > /dev/null || die 'Metamath program not on path'
 [ "$#" -gt 0 ] || die 'Requires parameters, e.g., 112 118-140'
 
@@ -58,13 +62,17 @@ master_log='metamathjobs/master.log'
 # Generate expanded list of space-separated job numbers
 work="$(find_work_list "$@" | tr '\r\n' ' ')"
 
-echo 'Starting jobs. View job NUM with: tail -c +0 -f metamathjobs/jobNUM.log'
-echo "View overall state with: tail -c +0 -f ${master_log}"
+echo "Starting jobs at $(date)"
+echo "View overall (master) state log with: tail -c +0 -f ${master_log}"
+echo 'View job NUM log with: tail -c +0 -f metamathjobs/jobNUM.log'
+echo 'Print number of completed jobs with: ls metamathjobs/*.done | wc -l'
 echo
 
+# Use GNU make to run jobs in parallel. We use GNU make, not GNU parallel,
+# to simplify skipping jobs we've already completed (which have .done files).
 # We use "nproc" to find the number of CPUs if NPROC is not set.
 
-nohup make --jobs "${NPROC:-$(nproc)}" -r -f scripts/jobs.makefile \
+nohup nice make --jobs "${NPROC:-$(nproc)}" -r -f scripts/jobs.makefile \
            work="$work" > "$master_log" 2>&1 &
 
 echo
