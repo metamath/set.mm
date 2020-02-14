@@ -69583,6 +69583,14 @@ $)
     JKZBCJKZGHZUMULGHZIZABLHZULUMLHZUHUIUNUJUOABCMUFUEUGUJUONBACMOPUEUFUQUKNUGA
     BQSUHULDEUMDEURUPNUHACUEUFUGRUEUFUGUAZTUHBCUEUFUGUBUSTULUMQUCUD $.
 
+  $( Real negation respects apartness.  (Contributed by Jim Kingdon,
+     13-Feb-2020.) $)
+  reapneg $p |- ( ( A e. RR /\ B e. RR ) -> ( A # B <-> -u A # -u B ) ) $=
+    ( cr wcel wa cap wbr cneg clt wo reaplt ltneg wb ancoms orbi12d bitrd orcom
+    syl6bb ax-ia1 renegcld ax-ia2 syl2anc bitr4d ) ACDZBCDZEZABFGZAHZBHZIGZUIUH
+    IGZJZUHUIFGZUFUGUKUJJZULUFUGABIGZBAIGZJUNABKUFUOUKUPUJABLUEUDUPUJMBALNOPUKU
+    JQRUFUHCDUICDUMULMUFAUDUESTUFBUDUEUATUHUIKUBUC $.
+
   $( The square of a real number apart from zero is positive.  (Contributed by
      Jim Kingdon, 7-Feb-2020.) $)
   apsqgt0 $p |- ( ( A e. RR /\ A # 0 ) -> 0 < ( A x. A ) ) $=
