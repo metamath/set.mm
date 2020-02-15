@@ -57,10 +57,10 @@ wget http://us2.metamath.org/downloads/min2020-jobs.zip
 # unzip if not already unzipped
 test -d metamathjobs || unzip min2020-jobs.zip
 
-master_log='metamathjobs/master.log'
-
 # Generate expanded list of space-separated job numbers
 work="$(find_work_list "$@" | tr '\r\n' ' ')"
+
+master_log="metamathjobs/master$(date +'%Y-%m-%dT%H:%M:%S').log"
 
 echo "Starting jobs at $(date)"
 echo "View overall (master) state log with: tail -c +0 -f ${master_log}"
