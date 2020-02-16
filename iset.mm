@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Feb-2020
+$( iset.mm - Version of 16-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69351,7 +69351,8 @@ $)
   $}
 
   $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of [[HoTT]],
-     p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+     p.  (varies).  Beyond the development of ` # ` itself, proofs should use
+     ~ apirr instead.  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
   reapirr $p |- ( A e. RR -> -. A #RR A ) $=
     ( cr wcel creap wbr clt ltnr wo wb reapval anidms oridm syl6bb mtbird ) ABC
     ZAADEZAAFEZAGOPQQHZQOPRIAAJKQLMN $.
@@ -69591,6 +69592,16 @@ $)
     IGZJZUHUIFGZUFUGUKUJJZULUFUGABIGZBAIGZJUNABKUFUOUKUPUJABLUEUDUPUJMBALNOPUKU
     JQRUFUHCDUICDUMULMUFAUDUESTUFBUDUEUATUHUIKUBUC $.
 
+  $( Real apartness is cotransitive.  Part of Definition 11.2.7(v) of [HoTT],
+     p.  (varies).  (Contributed by Jim Kingdon, 16-Feb-2020.) $)
+  reapcotr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+      ( A # B -> ( A # C \/ B # C ) ) ) $=
+    ( cr w3a cap wbr clt wo wb reaplt 3adant3 axltwlin wi 3com12 orim12d sylbid
+    wcel orcom orbi2i or42 bitri syl6ib 3adant2 3adant1 orbi12d sylibrd ) ADRZB
+    DRZCDRZEZABFGZACHGZCAHGZIZBCHGZCBHGZIZIZACFGZBCFGZIUKULUMUQIZUPUNIZIZUSUKUL
+    ABHGZBAHGZIZVDUHUIULVGJUJABKLUKVEVBVFVCABCMUIUHUJVFVCNBACMOPQVDVBUNUPIZIUSV
+    CVHVBUPUNSTUMUQUNUPUAUBUCUKUTUOVAURUHUJUTUOJUIACKUDUIUJVAURJUHBCKUEUFUG $.
+
   $( The square of a real number apart from zero is positive.  (Contributed by
      Jim Kingdon, 7-Feb-2020.) $)
   apsqgt0 $p |- ( ( A e. RR /\ A # 0 ) -> 0 < ( A x. A ) ) $=
@@ -69650,6 +69661,63 @@ $)
       BUWQYGUXAYAUWPXKXRAXTOWGWFUOUXAYIUWBYJXRAYCSWSWIWJUQXSBRZUWTUWEGHIIUXBUWR
       UWAUWSUWDUXBUWQUVTYGUXBUWPXKXKUXBXTXJAOXSBLMWQWKWFUOUXBYJUWCUWBXSBYDSWSWL
       WJUQWMWOWRWPXIYOUVAUUMWTVNXAVRXB $.
+  $}
+
+  ${
+    $d A x y $.
+    $( Apartness is irreflexive.  (Contributed by Jim Kingdon, 16-Feb-2020.) $)
+    apirr $p |- ( A e. CC -> -. A # A ) $=
+      ( vx vy cc wcel cv ci co cr wrex cap wn wa creap reapirr wb apreap anidms
+      wbr mtbird cmul caddc wceq cnre wo anim12i sylibr apreim ad2antlr breq12d
+      ioran id notbid adantl mpbird ex rexlimdvva mpd ) ADEZABFZGCFZUAHUBHZUCZC
+      IJBIJAAKSZLZBCAUDUSVCVEBCIIUSUTIEZVAIEZMZMZVCVEVIVCMVEVBVBKSZLZVHVKUSVCVH
+      VJUTUTKSZVAVAKSZUEZVHVLLZVMLZMVNLVFVOVGVPVFVLUTUTNSZUTOVFVLVQPUTUTQRTVGVM
+      VAVANSZVAOVGVMVRPVAVAQRTUFVLVMUKUGVHVJVNPUTVAUTVAUHRTUIVCVEVKPVIVCVDVJVCA
+      VBAVBKVCULZVSUJUMUNUOUPUQUR $.
+  $}
+
+  ${
+    $d A w x y z $.  $d B w x y z $.
+    $( Apartness is symmetric.  This theorem for real numbers is part of
+       Definition 11.2.7(v) of [HoTT], p.  (varies).  (Contributed by Jim
+       Kingdon, 16-Feb-2020.) $)
+    apsym $p |- ( ( A e. CC /\ B e. CC ) -> ( A # B <-> B # A ) ) $=
+      ( vz vw vx vy cc wcel wa cv co cr wrex cap wbr wb wo clt reaplt syl2anc
+      ci cmul caddc wceq adantl ad3antrrr simplrl ad2antrr orcom syl6bbr bitr4d
+      simplrr orbi12d apreim syl22anc 3bitr4d ax-ia2 simpllr breq12d rexlimdvva
+      cnre ex mpd ) AGHZBGHZIZBCJZUADJZUBKUCKZUDZDLMCLMZABNOZBANOZPZVEVKVDCDBVA
+      UEVFVJVNCDLLVFVGLHZVHLHZIZIZVJVNVRVJIZAEJZUAFJZUBKUCKZUDZFLMELMZVNVDWDVEV
+      QVJEFAVAUFVSWCVNEFLLVSVTLHZWALHZIZIZWCVNWHWCIZWBVINOZVIWBNOZVLVMWIVTVGNOZ
+      WAVHNOZQZVGVTNOZVHWANOZQZWJWKWIWLWOWMWPWIWLVTVGROZVGVTROZQZWOWIWEVOWLWTPV
+      SWEWFWCUGZVSVOWGWCVFVOVPVJUGUHZVTVGSTWIWOWSWRQZWTWIVOWEWOXCPXBXAVGVTSTWRW
+      SUIUJUKWIWMWAVHROZVHWAROZQZWPWIWFVPWMXFPVSWEWFWCULZVSVPWGWCVFVOVPVJULUHZW
+      AVHSTWIWPXEXDQZXFWIVPWFWPXIPXHXGVHWASTXDXEUIUJUKUMWIWEWFVOVPWJWNPXAXGXBXH
+      VTWAVGVHUNUOWIVOVPWEWFWKWQPXBXHXAXGVGVHVTWAUNUOUPWIAWBBVINWHWCUQZVRVJWGWC
+      URZUSWIBVIAWBNXKXJUSUPVBUTVCVBUTVC $.
+  $}
+
+  ${
+    $d A u v w x y z $.  $d B u v w x y z $.  $d C u v w x y z $.
+    $( Apartness is cotransitive.  (Contributed by Jim Kingdon,
+       16-Feb-2020.) $)
+    apcotr $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+        ( A # B -> ( A # C \/ B # C ) ) ) $=
+      ( vu vv vz vw vx vy cc wcel cv co cr wrex cap wbr wo wa ad3antrrr ci cmul
+      w3a caddc wceq wi cnre 3ad2ant3 3ad2ant2 ad2antrr 3ad2ant1 adantr simpllr
+      ax-ia2 breq12d wb simplrl simplrr simprl simprr syl22anc reapcotr syl3anc
+      apreim orim12d sylbid or4 syl6ib simplr orbi12d sylibrd ex rexlimdvva mpd
+      bitrd ) AJKZBJKZCJKZUCZCDLZUAELZUBMUDMZUEZENODNOZABPQZACPQZBCPQZRZUFZVRVP
+      WDVQDECUGUHVSWCWIDENNVSVTNKZWANKZSZSZWCWIWMWCSZBFLZUAGLZUBMUDMZUEZGNOFNOZ
+      WIVSWSWLWCVQVPWSVRFGBUGUIUJWNWRWIFGNNWNWONKZWPNKZSZSZWRWIXCWRSZAHLZUAILZU
+      BMUDMZUEZINOHNOZWIWMXIWCXBWRVSXIWLVPVQXIVRHIAUGUKULTXDXHWIHINNXDXENKZXFNK
+      ZSZSZXHWIXMXHSZWEXEVTPQZXFWAPQZRZWOVTPQZWPWAPQZRZRZWHXNWEXOXRRZXPXSRZRZYA
+      XNWEXEWOPQZXFWPPQZRZYDXNWEXGWQPQZYGXNAXGBWQPXMXHUNZXCWRXLXHUMZUOXNXJXKWTX
+      AYHYGUPXDXJXKXHUQZXDXJXKXHURZXCWTWRXLXHWNWTXAUSTZXCXAWRXLXHWNWTXAUTTZXEXF
+      WOWPVDVAVOXNYEYBYFYCXNXJWTWJYEYBUFYKYMXCWJWRXLXHWMWJWCXBVSWJWKUSUJTZXEWOV
+      TVBVCXNXKXAWKYFYCUFYLYNXCWKWRXLXHWMWKWCXBVSWJWKUTUJTZXFWPWAVBVCVEVFXOXRXP
+      XSVGVHXNWFXQWGXTXNWFXGWBPQZXQXNAXGCWBPYIXCWCWRXLXHWMWCXBVITZUOXNXJXKWJWKY
+      QXQUPYKYLYOYPXEXFVTWAVDVAVOXNWGWQWBPQZXTXNBWQCWBPYJYRUOXNWTXAWJWKYSXTUPYM
+      YNYOYPWOWPVTWAVDVAVOVJVKVLVMVNVLVMVNVLVMVN $.
   $}
 
   ${
