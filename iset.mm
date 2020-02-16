@@ -69747,6 +69747,27 @@ $)
       WCVKVLXTXQXFWOYCUUAPYFYHUUDXKWTWDVKVLVMVOVOVPVQVRVPVQVRVPVQVR $.
   $}
 
+  $( Addition respects apartness.  (Contributed by Jim Kingdon,
+     16-Feb-2020.) $)
+  apadd2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+      ( A # B <-> ( C + A ) # ( C + B ) ) ) $=
+    ( cc wcel w3a cap wbr caddc apadd1 simp1 simp3 addcomd simp2 breq12d bitrd
+    co ) ADEZBDEZCDEZFZABGHACIQZBCIQZGHCAIQZCBIQZGHABCJUAUBUDUCUEGUAACRSTKRSTLZ
+    MUABCRSTNUFMOP $.
+
+  $( Strong extensionality for addition.  Given excluded middle, apartness
+     would be equivalent to negated equality and this would follow readily (for
+     all operations) from ~ oveq12 .  For us, it is proved a different way.
+     (Contributed by Jim Kingdon, 15-Feb-2020.) $)
+  extadd $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) -> (
+      ( A + B ) # ( C + D ) -> ( A # C \/ B # D ) ) ) $=
+    ( cc wcel wa caddc co cap wbr wo simpll simplr addcld simprl simprr syl3anc
+    wi wb apcotr apadd1 apadd2 apsym syl2anc bitrd orbi12d sylibrd ) AEFZBEFZGZ
+    CEFZDEFZGZGZABHIZCDHIZJKZUPCBHIZJKZUQUSJKZLZACJKZBDJKZLUOUPEFUQEFZUSEFZURVB
+    SUOABUIUJUNMZUIUJUNNZOUOCDUKULUMPZUKULUMQZOZUOCBVIVHOZUPUQUSUARUOVCUTVDVAUO
+    UIULUJVCUTTVGVIVHACBUBRUOVDUSUQJKZVAUOUJUMULVDVMTVHVJVIBDCUCRUOVFVEVMVATVLV
+    KUSUQUDUEUFUGUH $.
+
   ${
     $d A w x y z $.  $d B w x y z $.
     $( Negation respects apartness.  (Contributed by Jim Kingdon,
