@@ -63085,7 +63085,7 @@ $)
       VGVBVEVKMVHVIVJCAUSUIUEVAVKUPMURVBUTBCIUFUGUHUJUKUL $.
 
     $( Ordering property of addition.  Proposition 9-3.5(v) of [Gleason]
-       p. 123.  Part of Definition 11.2.7(vi) of [[HoTT]], p.  (varies).
+       p. 123.  Part of Definition 11.2.7(vi) of [HoTT], p.  (varies).
        (Contributed by Jim Kingdon, 26-Dec-2019.) $)
     ltaprg $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) ->
         ( A <P B <-> ( C +P. A ) <P ( C +P. B ) ) ) $=
@@ -69350,7 +69350,7 @@ $)
       DABGGEUEAMZUFBMZIZUGUBUHUCUEAUFBJNUKUFBUEAJUIUJOUIUJRPQCDSTUA $.
   $}
 
-  $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of [[HoTT]],
+  $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of [HoTT],
      p.  (varies).  Beyond the development of ` # ` itself, proofs should use
      ~ apirr instead.  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
   reapirr $p |- ( A e. RR -> -. A #RR A ) $=
@@ -69504,7 +69504,7 @@ $)
   $}
 
   $( Real apartness in terms of less than.  Part of Definition 11.2.7(vi) of
-     [[HoTT]], p.  (varies).  (Contributed by Jim Kingdon, 1-Feb-2020.) $)
+     [HoTT], p.  (varies).  (Contributed by Jim Kingdon, 1-Feb-2020.) $)
   reaplt $p |- ( ( A e. RR /\ B e. RR ) ->
       ( A # B <-> ( A < B \/ B < A ) ) ) $=
     ( cr wcel wa cap wbr creap clt wo apreap reapval bitrd ) ACDBCDEABFGABHGABI
@@ -69525,7 +69525,7 @@ $)
     $d A x $.  $d B x $.  $d C x $.
     $( Multiplication of both sides of 'less than' by a positive number.
        Theorem I.19 of [Apostol] p. 20.  Part of Definition 11.2.7(vi) of
-       [[HoTT]], p.  (varies).  (Contributed by NM, 13-Feb-2005.)  (Revised by
+       [HoTT], p.  (varies).  (Contributed by NM, 13-Feb-2005.)  (Revised by
        Mario Carneiro, 27-May-2016.) $)
     ltmul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
                  -> ( A < B <-> ( A x. C ) < ( B x. C ) ) ) $=
