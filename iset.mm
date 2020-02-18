@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Feb-2020
+$( iset.mm - Version of 17-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -63097,6 +63097,23 @@ $)
       KJKZBHVPVCVNAVQHIVCVDVEVOUBZVFVNVMUCZAVKUDTVPCVQJKZVIQZVQBQZVCVEVOWAVDVCV
       EOZVOOVLVTVIWCVNVLVTQZVMVCVEVNWDVEVCVNWDCAVKUEUFUIUGWCVNVMUHUJUKVPVEVQEFZ
       VDWAWBLVCVDVEVOULVPVCVNWEVRVSAVKUMTVCVDVEVOUNCVQBUOUPUQURUSUTVAVB $.
+  $}
+
+  ${
+    $d A f g $.  $d B f g $.  $d C f g $.  $d D f g $.
+    $( Strong extensionaltiy of addition (ordering version).  This is similar
+       to ~ extadd but for positive reals and based on less-than rather than
+       apartness.  (Contributed by Jim Kingdon, 17-Feb-2020.) $)
+    extaddpr $p |- ( ( ( A e. P. /\ B e. P. ) /\ ( C e. P. /\ D e. P. ) ) ->
+        ( ( A +P. B ) <P ( C +P. D ) -> ( A <P C \/ B <P D ) ) ) $=
+      ( vf vg cnp wcel wa cpp co cltp wbr wo addclpr adantl syl3anc wb ltaprg
+      cv wi adantr simprl simplr syl2anc wor w3a ltsopr sowlin mpan simpll wceq
+      addcomprg caovcomd breq12d bitr4d simprr orbi12d sylibrd ) AGHZBGHZIZCGHZ
+      DGHZIZIZABJKZCDJKZLMZVGCBJKZLMZVJVHLMZNZACLMZBDLMZNVFVGGHZVHGHZVJGHZVIVMU
+      AZVBVPVEABOUBVEVQVBCDOPVFVCVAVRVBVCVDUCZUTVAVEUDZCBOUEGLUFVPVQVRUGVSUHGVG
+      VHVJLUIUJQVFVNVKVOVLVFVNBAJKZBCJKZLMZVKVFUTVCVAVNWDRUTVAVEUKZVTWAACBSQVFV
+      GWBVJWCLVFEFABGJETZGHFTZGHIWFWGJKWGWFJKULVFWFWGUMPZWEWAUNVFEFCBGJWHVTWAUN
+      UOUPVFVAVDVCVOVLRWAVBVCVDUQVTBDCSQURUS $.
   $}
 
   ${
