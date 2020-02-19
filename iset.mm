@@ -65194,6 +65194,29 @@ $)
       EWAGHZIJWBVTEWEVHWFIEWEOVTQUOVAVDUPUQGWARURUSUT $.
   $}
 
+  ${
+    $d x y z A $.  $d x y z B $.  $d z C $.
+    $( Strong extensionality of multiplication (expressed in terms of
+       ` <RR ` ).  Axiom for real and complex numbers, derived from set
+       theory.  This construction-dependent theorem should not be referenced
+       directly; instead, use ~ ax-pre-mulext .
+
+       (Contributed by Jim Kingdon, 18-Feb-2020.)
+       (New usage is discouraged.) $)
+    axpre-mulext $p |- ( ( A e. RR /\ B e. RR /\ C e. RR )
+        -> ( ( A x. C ) <RR ( B x. C ) -> ( A <RR B \/ B <RR A ) ) ) $=
+      ( vx vz vy cv c0r cop cmul co cltrr wbr wo wi cnr elreal wceq wcel cltr
+      cr oveq1 breq1d breq1 breq2 orbi12d imbi12d breq2d breq12d imbi1d w3a cmr
+      oveq2 mulextsr1 mulresr 3adant2 3adant1 ltresr syl6bb orbi12i a1i 3imtr4d
+      wb 3gencl ) DGZHIZEGZHIZJKZFGZHIZVHJKZLMZVFVKLMZVKVFLMZNZOAVHJKZVLLMZAVKL
+      MZVKALMZNZOVQBVHJKZLMZABLMZBALMZNZOACJKZBCJKZLMZWFODFEVFVKVHAPUABCDAQFBQE
+      CQVFARZVMVRVPWAWJVIVQVLLVFAVHJUBUCWJVNVSVOVTVFAVKLUDVFAVKLUEUFUGVKBRZVRWC
+      WAWFWKVLWBVQLVKBVHJUBUHWKVSWDVTWEVKBALUEVKBALUDUFUGVHCRZWCWIWFWLVQWGWBWHL
+      VHCAJUMVHCBJUMUIUJVEPSZVJPSZVGPSZUKZVEVGULKZVJVGULKZTMZVEVJTMZVJVETMZNZVM
+      VPVEVJVGUNWPVMWQHIZWRHIZLMWSWPVIXCVLXDLWMWOVIXCRWNVEVGUOUPWNWOVLXDRWMVJVG
+      UOUQUIWQWRURUSVPXBVCWPVNWTVOXAVEVJURVJVEURUTVAVBVD $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -65391,6 +65414,14 @@ $)
   ax-pre-mulgt0 $a |- ( ( A e. RR /\ B e. RR ) ->
                 ( ( 0 <RR A /\ 0 <RR B ) -> 0 <RR ( A x. B ) ) ) $.
   $( $j restatement 'ax-pre-mulgt0' of 'axpre-mulgt0'; $)
+
+  $( Strong extensionality of multiplication (expressed in terms of ` <RR ` ).
+     Axiom for real and complex numbers, justified by theorem ~ axpre-mulext
+
+     (Contributed by Jim Kingdon, 18-Feb-2020.) $)
+  ax-pre-mulext $a |- ( ( A e. RR /\ B e. RR /\ C e. RR )
+      -> ( ( A x. C ) <RR ( B x. C ) -> ( A <RR B \/ B <RR A ) ) ) $.
+  $( $j restatement 'ax-pre-mulext' of 'axpre-mulext'; $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
