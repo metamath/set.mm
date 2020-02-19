@@ -1,4 +1,4 @@
-$( iset.mm - Version of 18-Feb-2020
+$( iset.mm - Version of 19-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69740,6 +69740,18 @@ $)
     ABHGZBAHGZIZVDUHUIULVGJUJABKLUKVEVBVFVCABCMUIUHUJVFVCNBACMOPQVDVBUNUPIZIUSV
     CVHVBUPUNSTUMUQUNUPUAUBUCUKUTUOVAURUHUJUTUOJUIACKUDUIUJVAURJUHBCKUEUFUG $.
 
+  $( Left extensionality for multiplication.  (Contributed by Jim Kingdon,
+     19-Feb-2020.) $)
+  remulext1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) -> (
+      ( A x. C ) # ( B x. C ) -> A # B ) ) $=
+    ( cr wcel w3a cmul co cap wbr clt wo wb remulcld reaplt cltrr ax-pre-mulext
+    syl2anc ltxrlt 3imtr4d simp1 simp3 simp2 orbi12d bitrd wi 3com12 orcom jaod
+    syl6bb sylbid ) ADEZBDEZCDEZFZACGHZBCGHZIJZUPUQKJZUQUPKJZLZABIJZUOUPDEZUQDE
+    ZURVAMUOACULUMUNUAZULUMUNUBZNZUOBCULUMUNUCZVFNZUPUQORUOUSVBUTUOUPUQPJZABPJZ
+    BAPJZLZUSVBABCQUOVCVDUSVJMVGVIUPUQSRUOVBABKJZBAKJZLZVMUOULUMVBVPMVEVHABORUO
+    VNVKVOVLUOULUMVNVKMVEVHABSRUOUMULVOVLMVHVEBASRUDUEZTUOUQUPPJZVLVKLZUTVBUMUL
+    UNVRVSUFBACQUGUOVDVCUTVRMVIVGUQUPSRUOVBVMVSVQVKVLUHUJTUIUK $.
+
   $( The square of a real number apart from zero is positive.  (Contributed by
      Jim Kingdon, 7-Feb-2020.) $)
   apsqgt0 $p |- ( ( A e. RR /\ A # 0 ) -> 0 < ( A x. A ) ) $=
@@ -69857,6 +69869,20 @@ $)
       QXQUPYKYLYOYPXEXFVTWAVDVAVOXNWGWQWBPQZXTXNBWQCWBPYJYRUOXNWTXAWJWKYSXTUPYM
       YNYOYPWOWPVTWAVDVAVOVJVKVLVMVNVLVMVNVLVMVN $.
   $}
+
+  $( Strong extensionality for multiplication.  Given excluded middle,
+     apartness would be equivalent to negated equality and this would follow
+     readily (for all operations) from ~ oveq12 .  For us, it is proved a
+     different way.  (Contributed by Jim Kingdon, 18-Feb-2020.) $)
+  remulext $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) -> (
+      ( A x. B ) # ( C x. D ) -> ( A # C \/ B # D ) ) ) $=
+    ( cr wcel wa cmul co cap wbr wo cc wi simpll recnd mulcld syl3anc remulext1
+    mulcomd simplr simprl simprr remulcld apcotr breq12d sylbid wb apsym sylibd
+    syl2anc orim12d syld ) AEFZBEFZGZCEFZDEFZGZGZABHIZCDHIZJKZVACBHIZJKZVBVDJKZ
+    LZACJKZBDJKZLUTVAMFVBMFVDMFVCVGNUTABUTAUNUOUSOZPUTBUNUOUSUAZPZQUTVBUTCDUPUQ
+    URUBZUPUQURUCZUDPUTCBUTCVMPZVLQVAVBVDUERUTVEVHVFVIUTUNUQUOVEVHNVJVMVKACBSRU
+    TVFDBJKZVIUTVFDCHIZBCHIZJKZVPUTVBVQVDVRJUTCDVOUTDVNPZTUTCBVOVLTUFUTURUOUQVS
+    VPNVNVKVMDBCSRUGUTDMFBMFVPVIUHVTVLDBUIUKUJULUM $.
 
   ${
     $d A u v w x y z $.  $d B u v w x y z $.  $d C u v w x y z $.
