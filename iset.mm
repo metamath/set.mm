@@ -1,4 +1,4 @@
-$( iset.mm - Version of 1-Feb-2020
+$( iset.mm - Version of 16-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -64211,47 +64211,61 @@ $)
 
   ${
     $d x y z A $.  $d x y z w v u f g h $.
+    $( The reciprocal of a positive signed real exists and is positive.
+       (Contributed by Jim Kingdon, 6-Feb-2020.) $)
+    recexgt0sr $p |- ( 0R <R A ->
+        E. x e. R. ( 0R <R x /\ ( A .R x ) = 1R ) ) $=
+      ( cnr wcel c0r cltr wbr cv co c1r wceq wa cer cnp cpp cmp c1p 1pr syl2anc
+      adantr vy vz vw vv vf vg vh cmr wrex ltrelsr brel simprd cop cec wi df-nr
+      breq2 oveq1 eqeq1d anbi2d rexbidv imbi12d gt0srpr ltexpri recexpr addclpr
+      cltp sylbi adantl mpan2 ecopqsi sylancl ad2antlr simprr ltaddpr addcomprg
+      enrex mpan breqtrd sylibr syl anim2i mulsrpr adantlrl eqcomd ad2antll w3a
+      jctir mulcomprg 3adant2 3adant1 oveq12d 3coml simp3 3adant3 simplr simprl
+      distrprg 3eqtr2rd caovdird oveq2 sylan9eq adantrr eqtrd oveq1d a1i simpll
+      mulclpr addassprg caov32d syl3anc oveq2d caov12d 3eqtr4d wb eqeltrd mp2an
+      enreceq syl22anc mpbird syl6eqr anbi12d rspcev syl12anc anassrs rexlimdva
+      df-1r exp32 mpd syl5 ecoptocl mpcom ) BCDZEBFGZEAHZFGZBYOUHIZJKZLZACUIZYN
+      ECDYMEBCCFUJUKULEUAHZUBHZUMMUNZFGZYPUUCYOUHIZJKZLZACUIZUOYNYTUOUAUBBNNMCU
+      PUUCBKZUUDYNUUHYTUUCBEFUQUUIUUGYSACUUIUUFYRYPUUIUUEYQJUUCBYOUHURUSUTVAVBU
+      UDUUBUCHZOIZUUAKZUCNUIZUUANDZUUBNDZLZUUHUUDUUBUUAVGGUUMUUAUUBVCUCUUBUUAVD
+      VHUUPUULUUHUCNUUPUUJNDZLZUUJUDHZPIZQKZUDNUIZUULUUHUOZUUQUVBUUPUDUUJVEVIUU
+      RUVAUVCUDNUUPUUQUUSNDZUVAUVCUOUUPUUQUVDLZLZUVAUULUUHUVFUVAUULLZLZUUSQOIZQ
+      UMMUNZCDZEUVJFGZUUCUVJUHIZJKZUUHUVEUVKUUPUVGUVDUVKUUQUVDUVINDZQNDZUVKUVDU
+      VPUVORUUSQVFZVJZRNUVIQMCVQUPVKVLVIVMUVHUVDUVLUVFUVDUVGUUPUUQUVDVNZTUVDQUV
+      IVGGUVLUVDQQUUSOIZUVIVGUVPUVDQUVTVGGRQUUSVOVRUVPUVDUVTUVIKRQUUSVPVRVSUVIQ
+      VCVTWAUVHUVMQQOIZQUMMUNZJUVHUVMUUAUVIPIZUUBQPIZOIZUUAQPIZUUBUVIPIZOIZUMMU
+      NZUWBUUPUVDUVGUVMUWIKZUUQUUPUVDLZUVGLUUPUVOUVPLZLZUWJUWKUWMUVGUVDUWLUUPUV
+      DUVOUVPUVRRWHWBTUUAUUBUVIQWCWAWDUVHUWIUWBKZUWEQOIZUWHUWAOIZKZUVHUUAUUSPIZ
+      UWFUWDOIZOIZQOIZUUBUUSPIZUWSOIZUWAOIZUWOUWPUVHUXAUXCQOIZQOIZUXDUVHUWTUXEQ
+      OUVHUWTUXBQOIZUWSOIZUXEUVHUWRUXGUWSOUVHUWRUUKUUSPIZUXGUULUWRUXIKUVFUVAUUL
+      UXIUWRUUKUUAUUSPURWEWFUVFUVAUXIUXGKUULUVFUVAUXIUXBUUTOIUXGUVFUEUFUGUUBUUJ
+      UUSNOPONUEHZNDZUFHZNDZUGHZNDZWGZUXJUXLOIZUXNPIZUXJUXNPIZUXLUXNPIZOIZKUVFU
+      XPUYAUXNUXJPIZUXNUXLPIZOIZUXNUXQPIZUXRUXPUXSUYBUXTUYCOUXKUXOUXSUYBKUXMUXJ
+      UXNWIWJUXMUXOUXTUYCKUXKUXLUXNWIWKWLUXOUXKUXMUYEUYDKUXNUXJUXLWRWMUXPUXOUXQ
+      NDZUYEUXRKUXKUXMUXOWNUXKUXMUYFUXOUXJUXLVFWOUXNUXQWISWSVIUUNUUOUVEWPZUUPUU
+      QUVDWQUVSWTUUTQUXBOXAXBXCXDXEUVFUXHUXEKUVGUVFUEUFUGUXBQUWSNOUVFUUOUVDUXBN
+      DZUYGUVSUUBUUSXHSZUVPUVFRXFZUVFUWFNDZUWDNDZUWSNDZUVFUUNUVPUYKUUNUUOUVEXGZ
+      RUUAQXHVLZUVFUUOUVPUYLUYGRUUBQXHVLZUWFUWDVFSZUXKUXMLUXQUXLUXJOIKUVFUXJUXL
+      VPVIZUXPUXQUXNOIUXJUXLUXNOIOIKUVFUXJUXLUXNXIVIZXJTXDXEUVHUXCNDZUVPUVPUXFU
+      XDKUVFUYTUVGUVFUYHUYMUYTUYIUYQUXBUWSVFSZTUVPUVHRXFZVUBUXCQQXIXKXDUVFUWOUX
+      AKUVGUVFUWEUWTQOUVFUWEUWRUWFOIZUWDOIZUWTUVFUWCVUCUWDOUVFUUNUVDUVPUWCVUCKU
+      YNUVSUYJUUAUUSQWRXKXEUVFUWRNDZUYKUYLVUDUWTKUVFUUNUVDVUEUYNUVSUUAUUSXHSUYO
+      UYPUWRUWFUWDXIXKXDXETUVFUWPUXDKUVGUVFUWHUXCUWAOUVFUWHUWFUXBUWDOIZOIUXCUVF
+      UWGVUFUWFOUVFUUOUVDUVPUWGVUFKUYGUVSUYJUUBUUSQWRXKXLUVFUEUFUGUWFUXBUWDNOUY
+      OUYIUYPUYRUYSXMXDZXETXNUVFUWNUWQXOZUVGUVFUWENDZUWHNDUWANDZUVPVUHUVFUWCNDZ
+      UYLVUIUVFUUNUVOVUKUYNUVFUVDUVPUVOUVSRUVQVLUUAUVIXHSUYPUWCUWDVFSUVFUWHUXCN
+      VUGVUAXPVUJUVFUVPUVPVUJRRQQVFXQXFUYJUWEUWHUWAQXRXSTXTXDYGYAUUGUVLUVNLAUVJ
+      CYOUVJKZYPUVLUUFUVNYOUVJEFUQVULUUEUVMJYOUVJUUCUHXAUSYBYCYDYHYEYFYIYFYJYKY
+      L $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z w v u f g h $.
     $( The reciprocal of a positive signed real exists.  Part of Proposition
        9-4.3 of [Gleason] p. 126.  (Contributed by NM, 15-May-1996.) $)
     recexsrlem $p |- ( 0R <R A -> E. x e. R. ( A .R x ) = 1R ) $=
-      ( cnr wcel cv co c1r cer cnp cpp wa cmp c1p adantl addclpr adantr syl2anc
-      wceq 1pr eqtrd vy vz vw vv vf vg vh c0r cltr wbr wrex ltrelsr brel simprd
-      cmr cop cec df-nr breq2 oveq1 eqeq1d rexbidv imbi12d cltp gt0srpr ltexpri
-      wi sylbi recexpr mpan2 enrex ecopqsi sylancl ad2antlr simpr jctir mulsrpr
-      anim2i syl eqcomd ad2antll w3a mulcomprg 3adant2 3adant1 oveq12d distrprg
-      sylan 3coml simp3 3adant3 3eqtr2rd simplr caovdird oveq2 sylan9eq adantrr
-      simprl oveq1d mulclpr a1i simpll addcomprg caov32d syl3anc oveq2d caov12d
-      addassprg 3eqtr4d wb eqeltrd mp2an enreceq syl22anc mpbird syl6eqr rspcev
-      df-1r exp32 anassrs rexlimdva mpd syl5 ecoptocl mpcom ) BCDZUHBUIUJZBAEZU
-      OFZGRZACUKZYGUHCDYFUHBCCUIULUMUNUHUAEZUBEZUPHUQZUIUJZYNYHUOFZGRZACUKZVGYG
-      YKVGUAUBBIIHCURYNBRZYOYGYRYKYNBUHUIUSYSYQYJACYSYPYIGYNBYHUOUTVAVBVCYOYMUC
-      EZJFZYLRZUCIUKZYLIDZYMIDZKZYRYOYMYLVDUJUUCYLYMVEUCYMYLVFVHUUFUUBYRUCIUUFY
-      TIDZKZYTUDEZLFZMRZUDIUKZUUBYRVGZUUGUULUUFUDYTVINUUHUUKUUMUDIUUFUUGUUIIDZU
-      UKUUMVGUUFUUGUUNKZKZUUKUUBYRUUPUUKUUBKZKZUUIMJFZMUPHUQZCDZYNUUTUOFZGRZYRU
-      UOUVAUUFUUQUUNUVAUUGUUNUUSIDZMIDZUVAUUNUVEUVDSUUIMOZVJZSIUUSMHCVKURVLVMNV
-      NUURUVBMMJFZMUPHUQZGUURUVBYLUUSLFZYMMLFZJFZYLMLFZYMUUSLFZJFZUPHUQZUVIUUPU
-      UFUUNKZUUQUVBUVPRZUUOUUNUUFUUGUUNVOZVRUVQUUQKUUFUVDUVEKZKZUVRUVQUWAUUQUUN
-      UVTUUFUUNUVDUVEUVGSVPVRPYLYMUUSMVQVSWHUURUVPUVIRZUVLMJFZUVOUVHJFZRZUURYLU
-      UILFZUVMUVKJFZJFZMJFZYMUUILFZUWGJFZUVHJFZUWCUWDUURUWIUWKMJFZMJFZUWLUURUWH
-      UWMMJUURUWHUWJMJFZUWGJFZUWMUURUWFUWOUWGJUURUWFUUAUUILFZUWOUUBUWFUWQRUUPUU
-      KUUBUWQUWFUUAYLUUILUTVTWAUUPUUKUWQUWORUUBUUPUUKUWQUWJUUJJFUWOUUPUEUFUGYMY
-      TUUIIJLJIUEEZIDZUFEZIDZUGEZIDZWBZUWRUWTJFZUXBLFZUWRUXBLFZUWTUXBLFZJFZRUUP
-      UXDUXIUXBUWRLFZUXBUWTLFZJFZUXBUXELFZUXFUXDUXGUXJUXHUXKJUWSUXCUXGUXJRUXAUW
-      RUXBWCWDUXAUXCUXHUXKRUWSUWTUXBWCWEWFUXCUWSUXAUXMUXLRUXBUWRUWTWGWIUXDUXCUX
-      EIDZUXMUXFRUWSUXAUXCWJUWSUXAUXNUXCUWRUWTOWKUXBUXEWCQWLNUUDUUEUUOWMZUUFUUG
-      UUNWRUUOUUNUUFUVSNZWNUUJMUWJJWOWPWQTWSUUPUWPUWMRUUQUUPUEUFUGUWJMUWGIJUUPU
-      UEUUNUWJIDZUXOUXPYMUUIWTQZUVEUUPSXAZUUPUVMIDZUVKIDZUWGIDZUUPUUDUVEUXTUUDU
-      UEUUOXBZSYLMWTVMZUUPUUEUVEUYAUXOSYMMWTVMZUVMUVKOQZUWSUXAKUXEUWTUWRJFRUUPU
-      WRUWTXCNZUXDUXEUXBJFUWRUWTUXBJFJFRUUPUWRUWTUXBXHNZXDPTWSUURUWKIDZUVEUVEUW
-      NUWLRUUPUYIUUQUUPUXQUYBUYIUXRUYFUWJUWGOQZPUVEUURSXAZUYKUWKMMXHXETUUPUWCUW
-      IRUUQUUPUVLUWHMJUUPUVLUWFUVMJFZUVKJFZUWHUUPUVJUYLUVKJUUPUUDUUNUVEUVJUYLRU
-      YCUXPUXSYLUUIMWGXEWSUUPUWFIDZUXTUYAUYMUWHRUUPUUDUUNUYNUYCUXPYLUUIWTQUYDUY
-      EUWFUVMUVKXHXETWSPUUPUWDUWLRUUQUUPUVOUWKUVHJUUPUVOUVMUWJUVKJFZJFUWKUUPUVN
-      UYOUVMJUUPUUEUUNUVEUVNUYORUXOUXPUXSYMUUIMWGXEXFUUPUEUFUGUVMUWJUVKIJUYDUXR
-      UYEUYGUYHXGTZWSPXIUUPUWBUWEXJZUUQUUPUVLIDZUVOIDUVHIDZUVEUYQUUPUVJIDZUYAUY
-      RUUPUUDUVDUYTUYCUUPUUNUVEUVDUXPSUVFVMYLUUSWTQUYEUVJUVKOQUUPUVOUWKIUYPUYJX
-      KUYSUUPUVEUVEUYSSSMMOXLXAUXSUVLUVOUVHMXMXNPXOTXRXPYQUVCAUUTCYHUUTRYPUVBGY
-      HUUTYNUOWOVAXQQXSXTYAYBYAYCYDYE $.
+      ( c0r cltr wbr cv cmr co c1r wceq cnr wrex recexgt0sr ax-ia2 reximi syl
+      wa ) CBDECAFZDEZBRGHIJZQZAKLTAKLABMUATAKSTNOP $.
   $}
 
   $( The sum of two positive signed reals is positive.  (Contributed by NM,
@@ -64909,25 +64923,30 @@ $)
 
   ${
     $d x y A $.  $d x y z $.
-    $( Existence of reciprocal of positive real number.  Axiom for real and
-       complex numbers, derived from set theory.  This construction-dependent
-       theorem should not be referenced directly; instead, use ~ ax-precex .
+    $( Existence of positive reciprocal of positive real number.  Axiom for
+       real and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly;
+       instead, use ~ ax-precex .
 
        In treatments which assume excluded middle, the ` 0 <RR A ` condition is
-       generally replaced by ` A =/= 0 ` .  (Contributed by Jim Kingdon,
-       12-Jan-2020.)  (New usage is discouraged.) $)
-    axprecex $p |- ( ( A e. RR /\ 0 <RR A ) -> E. x e. RR ( A x. x ) = 1 ) $=
-      ( vy vz cr wcel cc0 cltrr wbr cv cmul co c1 wceq wrex c0r cop cnr wa c1r
-      wi wex elreal df-rex bitri breq2 oveq1 eqeq1d rexbidv imbi12d cltr breq1i
-      df-0 ltresr cmr recexsrlem opelreal anbi1i mulresr df-1 eqeq2i eqid wb 0r
-      opthg2 mp2an mpbiran2 syl6bb pm5.32da syl5bb rspcev syl6bir expd rexlimdv
-      1sr oveq2 syl5 syl5bi gencl imp ) BEFZGBHIZBAJZKLZMNZAEOZGCJZPQZHIZWHWCKL
-      ZMNZAEOZUAWBWFUAWGRFZWACWHBWAWHBNZCROWMWNSCUBCBUCWNCRUDUEWNWIWBWLWFWHBGHU
-      FWNWKWEAEWNWJWDMWHBWCKUGUHUIUJWIPWGUKIZWMWLWIPPQZWHHIWOGWPWHHUMULPWGUNUEW
-      OWGDJZUOLZTNZDROWMWLDWGUPWMWSWLDRWMWQRFZWSWLWMWTWSSZWQPQZEFZWHXBKLZMNZSZW
-      LXFWTXESWMXAXCWTXEWQUQURWMWTXEWSWMWTSZXEWRPQZMNZWSXGXDXHMWGWQUSUHXIXHTPQZ
-      NZWSMXJXHUTVAXKWSPPNZPVBTRFPRFXKWSXLSVCVOVDWRPTPRRVEVFVGUEVHVIVJWKXEAXBEW
-      CXBNWJXDMWCXBWHKVPUHVKVLVMVNVQVRVSVT $.
+       generally replaced by ` A =/= 0 ` , and it may not be necessary to state
+       that the reciproacal is positive.  (Contributed by Jim Kingdon,
+       6-Feb-2020.)  (New usage is discouraged.) $)
+    axprecex $p |- ( ( A e. RR /\ 0 <RR A ) ->
+        E. x e. RR ( 0 <RR x /\ ( A x. x ) = 1 ) ) $=
+      ( vy vz cr wcel cc0 cltrr wbr cmul co c1 wceq wrex c0r cop cnr bitri c1r
+      wa cv wi wex elreal df-rex breq2 oveq1 eqeq1d anbi2d rexbidv imbi12d cltr
+      df-0 breq1i ltresr cmr recexgt0sr opelreal anbi1i a1i mulresr df-1 eqeq2i
+      wb eqid 1sr 0r opthg2 mp2an mpbiran2 syl6bb anbi12d pm5.32da syl5bb oveq2
+      rspcev syl6bir expd rexlimdv syl5 syl5bi gencl imp ) BEFZGBHIZGAUAZHIZBWF
+      JKZLMZTZAENZGCUAZOPZHIZWGWMWFJKZLMZTZAENZUBWEWKUBWLQFZWDCWMBWDWMBMZCQNWSW
+      TTCUCCBUDWTCQUERWTWNWEWRWKWMBGHUFWTWQWJAEWTWPWIWGWTWOWHLWMBWFJUGUHUIUJUKW
+      NOWLULIZWSWRWNOOPZWMHIXAGXBWMHUMUNOWLUORXAODUAZULIZWLXCUPKZSMZTZDQNWSWRDW
+      LUQWSXGWRDQWSXCQFZXGWRWSXHXGTZXCOPZEFZGXJHIZWMXJJKZLMZTZTZWRXPXHXOTWSXIXK
+      XHXOXCURUSWSXHXOXGWSXHTZXLXDXNXFXLXDVDXQXLXBXJHIXDGXBXJHUMUNOXCUORUTXQXNX
+      EOPZLMZXFXQXMXRLWLXCVAUHXSXRSOPZMZXFLXTXRVBVCYAXFOOMZOVESQFOQFYAXFYBTVDVF
+      VGXEOSOQQVHVIVJRVKVLVMVNWQXOAXJEWFXJMZWGXLWPXNWFXJGHUFYCWOXMLWFXJWMJVOUHV
+      LVPVQVRVSVTWAWBWC $.
   $}
 
   ${
@@ -65207,12 +65226,10 @@ $)
   ${
     $d x A $.
     $( Existence of reciprocal of positive real number.  Axiom for real and
-       complex numbers, justified by theorem ~ axprecex .
-
-       In treatments which assume excluded middle, the ` 0 <RR A ` condition is
-       generally replaced by ` A =/= 0 ` .  (Contributed by Jim Kingdon,
-       12-Jan-2020.) $)
-    ax-precex $a |- ( ( A e. RR /\ 0 <RR A ) -> E. x e. RR ( A x. x ) = 1 ) $.
+       complex numbers, justified by theorem ~ axprecex .  (Contributed by Jim
+       Kingdon, 6-Feb-2020.) $)
+    ax-precex $a |- ( ( A e. RR /\ 0 <RR A ) ->
+        E. x e. RR ( 0 <RR x /\ ( A x. x ) = 1 ) ) $.
     $( $j restatement 'ax-precex' of 'axprecex'; $)
   $}
 
@@ -69334,7 +69351,8 @@ $)
   $}
 
   $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of [[HoTT]],
-     p.  (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+     p.  (varies).  Beyond the development of ` # ` itself, proofs should use
+     ~ apirr instead.  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
   reapirr $p |- ( A e. RR -> -. A #RR A ) $=
     ( cr wcel creap wbr clt ltnr wo wb reapval anidms oridm syl6bb mtbird ) ABC
     ZAADEZAAFEZAGOPQQHZQOPRIAAJKQLMN $.
@@ -69345,16 +69363,17 @@ $)
        29-Jan-2020.) $)
     recexre $p |- ( ( A e. RR /\ A #RR 0 ) -> E. x e. RR ( A x. x ) = 1 ) $=
       ( vy cr wcel cc0 wbr cmul co c1 wceq wrex clt wb 0re wa cneg pm5.32i recn
-      eqeq1d creap cv wo reapval mpan2 lt0neg1 renegcl ltxrlt sylancr ax-precex
-      cltrr bitrd sylan sylbi negnegd oveq2d negeq rspcev sylbir adantl mul2neg
-      rexlimddv cc syl2an rexbidva adantr mpbid ex mpan jaod sylbid imp ) BDEZB
-      FUAGZBAUBZHIZJKZADLZVMVNBFMGZFBMGZUCZVRVMFDEZVNWANOBFUDUEVMVSVRVTVMVSVRVM
-      VSPZBQZVOQZHIZJKZADLZVRWCWDCUBZHIZJKZWHCDWCVMFWDUKGZPWKCDLZVMVSWLVMVSFWDM
-      GZWLBUFVMWBWDDEZWNWLNOBUGZFWDUHUIULRVMWOWLWMWPCWDUJUMUNWIDEZWKPZWHWCWRWQW
-      DWIQZQZHIZJKZPWHWQXBWKWQXAWJJWQWTWIWDHWQWIWISUOUPTRWQWSDEXBWHWIUGWGXBAWSD
-      VOWSKZWFXAJXCWEWTWDHVOWSUQUPTURUMUSUTVBVMWHVRNVSVMWGVQADVMVODEZPWFVPJVMBV
-      CEVOVCEWFVPKXDBSVOSBVOVAVDTVEVFVGVHVMVTVRVMVTPVMFBUKGZPVRVMVTXEWBVMVTXENO
-      FBUHVIRABUJUNVHVJVKVL $.
+      cltrr creap cv reapval mpan2 lt0neg1 renegcl ltxrlt bitrd ax-precex simpr
+      sylancr reximi syl sylan sylbi negnegd oveq2d eqeq1d rspcev sylbir adantl
+      wo negeq rexlimddv cc mul2neg syl2an rexbidva adantr mpbid ex mpan sylbid
+      jaod imp ) BDEZBFUAGZBAUBZHIZJKZADLZVPVQBFMGZFBMGZVBZWAVPFDEZVQWDNOBFUCUD
+      VPWBWAWCVPWBWAVPWBPZBQZVRQZHIZJKZADLZWAWFWGCUBZHIZJKZWKCDWFVPFWGTGZPWNCDL
+      ZVPWBWOVPWBFWGMGZWOBUEVPWEWGDEZWQWONOBUFZFWGUGUKUHRVPWRWOWPWSWRWOPFWLTGZW
+      NPZCDLWPCWGUIXAWNCDWTWNUJULUMUNUOWLDEZWNPZWKWFXCXBWGWLQZQZHIZJKZPWKXBXGWN
+      XBXFWMJXBXEWLWGHXBWLWLSUPUQURRXBXDDEXGWKWLUFWJXGAXDDVRXDKZWIXFJXHWHXEWGHV
+      RXDVCUQURUSUNUTVAVDVPWKWANWBVPWJVTADVPVRDEZPWIVSJVPBVEEVRVEEWIVSKXIBSVRSB
+      VRVFVGURVHVIVJVKVPWCWAVPWCPVPFBTGZPZWAVPWCXJWEVPWCXJNOFBUGVLRXKFVRTGZVTPZ
+      ADLWAABUIXMVTADXLVTUJULUMUOVKVNVMVO $.
   $}
 
   $( Real apartness is tight.  (Contributed by Jim Kingdon, 30-Jan-2020.) $)
@@ -69375,6 +69394,18 @@ $)
   ixi $p |- ( _i x. _i ) = -u 1 $=
     ( c1 cneg cc0 cmin co ci cmul df-neg caddc ax-i2m1 0cn ax-1cn ax-icn mulcli
     wceq subadd2i mpbir eqtr2i ) ABCADEZFFGEZAHSTOTAIECOJCATKLFFMMNPQR $.
+
+  ${
+    $d x A $.
+    $( Existence of reciprocal of positive real number.  (Contributed by Jim
+       Kingdon, 6-Feb-2020.) $)
+    recexgt0 $p |- ( ( A e. RR /\ 0 < A ) ->
+        E. x e. RR ( 0 < x /\ ( A x. x ) = 1 ) ) $=
+      ( cr wcel cc0 cltrr wbr wa cv cmul co c1 wceq clt ax-precex wb 0re ltxrlt
+      wrex mpan pm5.32i anbi1d rexbiia 3imtr4i ) BCDZEBFGZHEAIZFGZBUGJKLMZHZACS
+      UEEBNGZHEUGNGZUIHZACSABOUEUKUFECDZUEUKUFPQEBRTUAUMUJACUGCDZULUHUIUNUOULUH
+      PQEUGRTUBUCUD $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -69472,8 +69503,8 @@ $)
       CXD $.
   $}
 
-  $( Real apartness in terms of less than.  (Contributed by Jim Kingdon,
-     1-Feb-2020.) $)
+  $( Real apartness in terms of less than.  Part of Definition 11.2.7(vi) of
+     [[HoTT]], p.  (varies).  (Contributed by Jim Kingdon, 1-Feb-2020.) $)
   reaplt $p |- ( ( A e. RR /\ B e. RR ) ->
       ( A # B <-> ( A < B \/ B < A ) ) ) $=
     ( cr wcel wa cap wbr creap clt wo apreap reapval bitrd ) ACDBCDEABFGABHGABI
@@ -69489,6 +69520,274 @@ $)
     EZBDEZCDEZFCGHZIZJZABGHZIZACKLZBCKLZGHFUQUPRLZGHUOFBARLZCKLURGUOUSCUOBAUHUI
     ULUNMZUHUIULUNNZOUJUKUHUIUNPZUOUNFUSGHUMUNUAUOABVAUTQUBUJUKUHUIUNUCUDUOBACU
     OBUTSUOAVASUOCVBSUEUFUOUPUQUOACVAVBTUOBCUTVBTQUG $.
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Multiplication of both sides of 'less than' by a positive number.
+       Theorem I.19 of [Apostol] p. 20.  Part of Definition 11.2.7(vi) of
+       [[HoTT]], p.  (varies).  (Contributed by NM, 13-Feb-2005.)  (Revised by
+       Mario Carneiro, 27-May-2016.) $)
+    ltmul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+                 -> ( A < B <-> ( A x. C ) < ( B x. C ) ) ) $=
+      ( vx cr wcel cc0 clt wbr wa cmul co ltmul1a ex c1 cc recnd adantr 3brtr3d
+      w3a cv wceq wrex recexgt0 3ad2ant3 simpl1 simpl3l remulcld simpl2 simprrl
+      wi simprl jca 3jca sylan mulassd simprrr oveq2d mulid1d rexlimddv impbid
+      ) AEFZBEFZCEFZGCHIZJZTZABHIZACKLZBCKLZHIZVGVHVKABCMNVGGDUAZHIZCVLKLZOUBZJ
+      ZVKVHUKDEVFVBVPDEUCVCDCUDUEVGVLEFZVPJZJZVKVHVSVKJZAOKLZBOKLZABHVTAVNKLZBV
+      NKLZWAWBHVTVIVLKLZVJVLKLZWCWDHVSVIEFZVJEFZVQVMJZTVKWEWFHIVSWGWHWIVSACVBVC
+      VFVRUFZVDVEVBVCVRUGZUHVSBCVBVCVFVRUIZWKUHVSVQVMVGVQVPULZVGVQVMVOUJUMUNVIV
+      JVLMUOVTACVLVSAPFVKVSAWJQRZVSCPFVKVSCWKQRZVSVLPFVKVSVLWMQRZUPVTBCVLVSBPFV
+      KVSBWLQRZWOWPUPSVTVNOAKVSVOVKVGVQVMVOUQRZURVTVNOBKWRURSVTAWNUSVTBWQUSSNUT
+      VA $.
+  $}
+
+  $( Multiplication of both sides of 'less than or equal to' by a positive
+     number.  (Contributed by NM, 21-Feb-2005.) $)
+  lemul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+                -> ( A <_ B <-> ( A x. C ) <_ ( B x. C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a wn cmul co cle wb ltmul1 notbid lenlt remulcld
+    3com12 3adant3 simp1 simp3l simp2 lenltd 3bitr4d ) ADEZBDEZCDEZFCGHZIZJZBAG
+    HZKZBCLMZACLMZGHZKZABNHZUPUONHUHUGUKUNUROUHUGUKJUMUQBACPQTUGUHUSUNOUKABRUAU
+    LUPUOULACUGUHUKUBUGUHUIUJUCZSULBCUGUHUKUDUTSUEUF $.
+
+  $( Lemma for ~ reapmul1 .  (Contributed by Jim Kingdon, 8-Feb-2020.) $)
+  reapmul1lem $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) ->
+      ( A # B <-> ( A x. C ) # ( B x. C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a wo cmul co cap ltmul1 wb 3com12 orbi12d reaplt
+    remulcld 3adant3 simp1 simp3l simp2 syl2anc 3bitr4d ) ADEZBDEZCDEZFCGHZIZJZ
+    ABGHZBAGHZKZACLMZBCLMZGHZUQUPGHZKZABNHZUPUQNHZULUMURUNUSABCOUHUGUKUNUSPBACO
+    QRUGUHVAUOPUKABSUAULUPDEUQDEVBUTPULACUGUHUKUBUGUHUIUJUCZTULBCUGUHUKUDVCTUPU
+    QSUEUF $.
+
+  $( Multiplication of both sides of real apartness by a real number apart from
+     zero.  (Contributed by Jim Kingdon, 8-Feb-2020.) $)
+  reapmul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ C # 0 ) ) ->
+      ( A # B <-> ( A x. C ) # ( B x. C ) ) ) $=
+    ( cr wcel cc0 cap wbr wa cmul co wb clt reaplt cneg recnd mulneg2d renegcld
+    wo reapmul1lem 0re mpan2 pm5.32i simp1 simp3l simp2 breq12d simp3r lt0neg1d
+    mpbid syl112anc remulcld ltnegd orbi12d syl2anc orcom 3bitr4d 3expa anassrs
+    w3a syl6bb jaodan anasss sylan2b 3impa ) ADEZBDEZCDEZCFGHZIZABGHZACJKZBCJKZ
+    GHZLZVJVFVGIZVHCFMHZFCMHZSZIVOVHVIVSVHFDEVIVSLUACFNUBUCVPVHVSVOVPVHIVQVOVRV
+    PVHVQVOVFVGVHVQIZVOVFVGVTUTZACOZJKZBWBJKZGHZVLOZVMOZGHZVKVNWAWCWFWDWGGWAACW
+    AAVFVGVTUDZPWACVFVGVHVQUEZPZQWABCWABVFVGVTUFZPWKQUGWAVFVGWBDEFWBMHZVKWELWIW
+    LWACWJRWAVQWMVFVGVHVQUHWACWJUIUJABWBTUKWAVLVMMHZVMVLMHZSZWGWFMHZWFWGMHZSZVN
+    WHWAWNWQWOWRWAVLVMWAACWIWJULZWABCWLWJULZUMWAVMVLXAWTUMUNWAVLDEVMDEVNWPLWTXA
+    VLVMNUOWAWHWRWQSZWSWAWFDEWGDEWHXBLWAVLWTRWAVMXARWFWGNUOWRWQUPVAUQUQURUSVPVH
+    VRVOVFVGVHVRIVOABCTURUSVBVCVDVE $.
+
+  $( Real addition respects apartness.  (Contributed by Jim Kingdon,
+     13-Feb-2020.) $)
+  reapadd1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+      ( A # B <-> ( A + C ) # ( B + C ) ) ) $=
+    ( cr wcel w3a clt wbr wo caddc co cap ltadd1 wb 3com12 orbi12d reaplt simp1
+    3adant3 readdcld simp3 simp2 syl2anc 3bitr4d ) ADEZBDEZCDEZFZABGHZBAGHZIZAC
+    JKZBCJKZGHZUMULGHZIZABLHZULUMLHZUHUIUNUJUOABCMUFUEUGUJUONBACMOPUEUFUQUKNUGA
+    BQSUHULDEUMDEURUPNUHACUEUFUGRUEUFUGUAZTUHBCUEUFUGUBUSTULUMQUCUD $.
+
+  $( Real negation respects apartness.  (Contributed by Jim Kingdon,
+     13-Feb-2020.) $)
+  reapneg $p |- ( ( A e. RR /\ B e. RR ) -> ( A # B <-> -u A # -u B ) ) $=
+    ( cr wcel wa cap wbr cneg clt wo reaplt ltneg wb ancoms orbi12d bitrd orcom
+    syl6bb ax-ia1 renegcld ax-ia2 syl2anc bitr4d ) ACDZBCDZEZABFGZAHZBHZIGZUIUH
+    IGZJZUHUIFGZUFUGUKUJJZULUFUGABIGZBAIGZJUNABKUFUOUKUPUJABLUEUDUPUJMBALNOPUKU
+    JQRUFUHCDUICDUMULMUFAUDUESTUFBUDUEUATUHUIKUBUC $.
+
+  $( Real apartness is cotransitive.  Part of Definition 11.2.7(v) of [HoTT],
+     p.  (varies).  (Contributed by Jim Kingdon, 16-Feb-2020.) $)
+  reapcotr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+      ( A # B -> ( A # C \/ B # C ) ) ) $=
+    ( cr w3a cap wbr clt wo wb reaplt 3adant3 axltwlin wi 3com12 orim12d sylbid
+    wcel orcom orbi2i or42 bitri syl6ib 3adant2 3adant1 orbi12d sylibrd ) ADRZB
+    DRZCDRZEZABFGZACHGZCAHGZIZBCHGZCBHGZIZIZACFGZBCFGZIUKULUMUQIZUPUNIZIZUSUKUL
+    ABHGZBAHGZIZVDUHUIULVGJUJABKLUKVEVBVFVCABCMUIUHUJVFVCNBACMOPQVDVBUNUPIZIUSV
+    CVHVBUPUNSTUMUQUNUPUAUBUCUKUTUOVAURUHUJUTUOJUIACKUDUIUJVAURJUHBCKUEUFUG $.
+
+  $( The square of a real number apart from zero is positive.  (Contributed by
+     Jim Kingdon, 7-Feb-2020.) $)
+  apsqgt0 $p |- ( ( A e. RR /\ A # 0 ) -> 0 < ( A x. A ) ) $=
+    ( cr wcel cc0 cap wbr wa clt wo cmul co wb 0re reaplt pm5.32i mullt0 anidms
+    mpan2 mulgt0 jaodan sylbi ) ABCZADEFZGUBADHFZDAHFZIZGDAAJKHFZUBUCUFUBDBCUCU
+    FLMADNROUBUDUGUEUBUDGUGAAPQUBUEGUGAASQTUA $.
+
+  $( The representation of complex numbers in terms of real and imaginary parts
+     is unique.  Proposition 10-1.3 of [Gleason] p. 130.  (Contributed by NM,
+     9-May-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  cru $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+      ( ( A + ( _i x. B ) ) = ( C + ( _i x. D ) ) <-> ( A = C /\ B = D ) ) ) $=
+    ( cr wcel wa ci cmul co caddc wceq simplrl simplll cmin cc0 mulcld resubcld
+    recnd subeq0d simpr cc ax-icn a1i simpllr simplrr addsubeq4d subdid eqeltrd
+    mpbid eqtr4d rimul syl2anc oveq2d oveq1d subidd 3eqtrd eqcomd jca ex oveq12
+    oveq2 sylan2 impbid1 ) AEFZBEFZGZCEFZDEFZGZGZAHBIJZKJCHDIJZKJLZACLZBDLZGZVK
+    VNVQVKVNGZVOVPVRCAVRCAVRCVGVHVIVNMZSZVRAVEVFVJVNNZSZVRCAOJZVLVMOJZVMVMOJPVR
+    VNWCWDLVKVNUAVRAVLCVMWBVRHBHUBFVRUCUDZVRBVEVFVJVNUEZSZQVTVRHDWEVRDVGVHVIVNU
+    FZSZQZUGUJZVRVLVMVMOVRBDHIVRBDWGWIVRBDOJZEFHWLIJZEFWLPLVRBDWFWHRVRWMWCEVRWM
+    WDWCVRHBDWEWGWIUHWKUKVRCAVSWARUIWLULUMTZUNUOVRVMWJUPUQTURWNUSUTVPVOVLVMLVNB
+    DHIVBACVLVMKVAVCVD $.
+
+  ${
+    $d A r s t u x y $.  $d B r s t u x y $.  $d C r s t u x y $.
+    $d D r s t u x y $.
+    $( Complex apartness in terms of real and imaginary parts.  (Contributed by
+       Jim Kingdon, 12-Feb-2020.) $)
+    apreim $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+        ( ( A + ( _i x. B ) ) # ( C + ( _i x. D ) ) <-> ( A # C \/ B # D ) )
+        ) $=
+      ( vr vs vt vu cr wcel wa ci cmul co caddc wbr wo wceq creap wrex vx vy cv
+      cc wb simpll recnd ax-icn simplr mulcld addcld simprl simprr eqeq1 anbi1d
+      cap 2rexbidv anbi2d df-ap brabg syl2anc ad3antrrr orbi12d simprll simpllr
+      a1i apreap syl21anc mpbid simpld simprlr breq12d simprd mpbird rexlimdvva
+      cru bitrd ex sylbid ad2ant2r ad2ant2l pm5.32i eqid pm3.2i biantrur eqeq2d
+      oveq1 breq2 orbi1d anbi12d oveq2d orbi2d rspc2ev syl3an3b syl3an3 anassrs
+      oveq2 3expa breq1 adantr sylbi impbid ) AIJZBIJZKZCIJZDIJZKZKZALBMNZONZCL
+      DMNZONZUPPZACUPPZBDUPPZQZXIXNXKEUCZLFUCZMNZONZRZXMGUCZLHUCZMNZONZRZKZXRYC
+      SPZXSYDSPZQZKZHITGITZFITEITZXQXIXKUDJXMUDJXNYNUEZXIAXJXIAXCXDXHUFZUGXILBL
+      UDJXIUHVFZXIBXCXDXHUIZUGUJUKXICXLXICXEXFXGULZUGXILDYQXIDXEXFXGUMZUGUJUKUA
+      UCZYARZUBUCZYFRZKZYKKZHITGITZFITEITYBUUDKZYKKZHITGITZFITEITYNUAUBXKXMUDUD
+      UPUUAXKRZUUGUUJEFIIUUKUUFUUIGHIIUUKUUEUUHYKUUKUUBYBUUDUUAXKYAUNUOUOUQUQUU
+      CXMRZUUJYMEFIIUULUUIYLGHIIUULUUHYHYKUULUUDYGYBUUCXMYFUNURUOUQUQUAUBHGFEUS
+      UTVAZXIYMXQEFIIXIXRIJXSIJKZKZYLXQGHIIUUOYCIJYDIJKZKZYLXQUUQYLKZXQYKUUQYHY
+      KUMUURXQACSPZBDSPZQZYKUURXOUUSXPUUTUURXCXFXOUUSUEZXIXCUUNUUPYLYPVBZXIXFUU
+      NUUPYLYSVBZACVGZVAUURXDXGXPUUTUEZXIXDUUNUUPYLYRVBZXIXGUUNUUPYLYTVBZBDVGZV
+      AVCUURUUSYIUUTYJUURAXRCYCSUURAXRRZBXSRZUURYBUVJUVKKZUUQYBYGYKVDUURXCXDUUN
+      YBUVLUEUVCUVGXIUUNUUPYLVEABXRXSVPVHVIZVJUURCYCRZDYDRZUURYGUVNUVOKZUUQYBYG
+      YKVKUURXFXGUUPYGUVPUEUVDUVHUUOUUPYLUICDYCYDVPVHVIZVJVLUURBXSDYDSUURUVJUVK
+      UVMVMUURUVNUVOUVQVMVLVCVQVNVRVOVOVSXIXQXNXIXQKXIUVAKZXNXIXQUVAXIXOUUSXPUU
+      TXCXFUVBXDXGUVEVTXDXGUVFXCXFUVIWAVCWBUVRXNYNXEXHUVAYNXCXDXHUVAKZYNUVSXCXD
+      XKXKRZYGKZAYCSPZBYDSPZQZKZHITGITZYNXFXGUVAUWFUVAXFXGUVTXMXMRZKZUVAKZUWFUW
+      HUVAUVTUWGXKWCXMWCWDWEUWEUWIUVTXMCYEONZRZKZUUSUWCQZKGHCDIIYCCRZUWAUWLUWDU
+      WMUWNYGUWKUVTUWNYFUWJXMYCCYEOWGWFURUWNUWBUUSUWCYCCASWHWIWJYDDRZUWLUWHUWMU
+      VAUWOUWKUWGUVTUWOUWJXMXMUWOYEXLCOYDDLMWQWKWFURUWOUWCUUTUUSYDDBSWHWLWJWMWN
+      WRYMUWFXKAXTONZRZYGKZUWBYJQZKZHITGITEFABIIXRARZYLUWTGHIIUXAYHUWRYKUWSUXAY
+      BUWQYGUXAYAUWPXKXRAXTOWGWFUOUXAYIUWBYJXRAYCSWSWIWJUQXSBRZUWTUWEGHIIUXBUWR
+      UWAUWSUWDUXBUWQUVTYGUXBUWPXKXKUXBXTXJAOXSBLMWQWKWFUOUXBYJUWCUWBXSBYDSWSWL
+      WJUQWMWOWRWPXIYOUVAUUMWTVNXAVRXB $.
+  $}
+
+  ${
+    $d A x y $.
+    $( Apartness is irreflexive.  (Contributed by Jim Kingdon, 16-Feb-2020.) $)
+    apirr $p |- ( A e. CC -> -. A # A ) $=
+      ( vx vy cc wcel cv ci co cr wrex cap wn wa creap reapirr wb apreap anidms
+      wbr mtbird cmul caddc wceq cnre wo anim12i sylibr apreim ad2antlr breq12d
+      ioran id notbid adantl mpbird ex rexlimdvva mpd ) ADEZABFZGCFZUAHUBHZUCZC
+      IJBIJAAKSZLZBCAUDUSVCVEBCIIUSUTIEZVAIEZMZMZVCVEVIVCMVEVBVBKSZLZVHVKUSVCVH
+      VJUTUTKSZVAVAKSZUEZVHVLLZVMLZMVNLVFVOVGVPVFVLUTUTNSZUTOVFVLVQPUTUTQRTVGVM
+      VAVANSZVAOVGVMVRPVAVAQRTUFVLVMUKUGVHVJVNPUTVAUTVAUHRTUIVCVEVKPVIVCVDVJVCA
+      VBAVBKVCULZVSUJUMUNUOUPUQUR $.
+  $}
+
+  ${
+    $d A w x y z $.  $d B w x y z $.
+    $( Apartness is symmetric.  This theorem for real numbers is part of
+       Definition 11.2.7(v) of [HoTT], p.  (varies).  (Contributed by Jim
+       Kingdon, 16-Feb-2020.) $)
+    apsym $p |- ( ( A e. CC /\ B e. CC ) -> ( A # B <-> B # A ) ) $=
+      ( vz vw vx vy cc wcel wa cv co cr wrex cap wbr wb wo clt reaplt syl2anc
+      ci cmul caddc wceq adantl ad3antrrr simplrl ad2antrr orcom syl6bbr bitr4d
+      simplrr orbi12d apreim syl22anc 3bitr4d ax-ia2 simpllr breq12d rexlimdvva
+      cnre ex mpd ) AGHZBGHZIZBCJZUADJZUBKUCKZUDZDLMCLMZABNOZBANOZPZVEVKVDCDBVA
+      UEVFVJVNCDLLVFVGLHZVHLHZIZIZVJVNVRVJIZAEJZUAFJZUBKUCKZUDZFLMELMZVNVDWDVEV
+      QVJEFAVAUFVSWCVNEFLLVSVTLHZWALHZIZIZWCVNWHWCIZWBVINOZVIWBNOZVLVMWIVTVGNOZ
+      WAVHNOZQZVGVTNOZVHWANOZQZWJWKWIWLWOWMWPWIWLVTVGROZVGVTROZQZWOWIWEVOWLWTPV
+      SWEWFWCUGZVSVOWGWCVFVOVPVJUGUHZVTVGSTWIWOWSWRQZWTWIVOWEWOXCPXBXAVGVTSTWRW
+      SUIUJUKWIWMWAVHROZVHWAROZQZWPWIWFVPWMXFPVSWEWFWCULZVSVPWGWCVFVOVPVJULUHZW
+      AVHSTWIWPXEXDQZXFWIVPWFWPXIPXHXGVHWASTXDXEUIUJUKUMWIWEWFVOVPWJWNPXAXGXBXH
+      VTWAVGVHUNUOWIVOVPWEWFWKWQPXBXHXAXGVGVHVTWAUNUOUPWIAWBBVINWHWCUQZVRVJWGWC
+      URZUSWIBVIAWBNXKXJUSUPVBUTVCVBUTVC $.
+  $}
+
+  ${
+    $d A u v w x y z $.  $d B u v w x y z $.  $d C u v w x y z $.
+    $( Apartness is cotransitive.  (Contributed by Jim Kingdon,
+       16-Feb-2020.) $)
+    apcotr $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+        ( A # B -> ( A # C \/ B # C ) ) ) $=
+      ( vu vv vz vw vx vy cc wcel cv co cr wrex cap wbr wo wa ad3antrrr ci cmul
+      w3a caddc wceq wi cnre 3ad2ant3 3ad2ant2 ad2antrr 3ad2ant1 adantr simpllr
+      ax-ia2 breq12d wb simplrl simplrr simprl simprr syl22anc reapcotr syl3anc
+      apreim orim12d sylbid or4 syl6ib simplr orbi12d sylibrd ex rexlimdvva mpd
+      bitrd ) AJKZBJKZCJKZUCZCDLZUAELZUBMUDMZUEZENODNOZABPQZACPQZBCPQZRZUFZVRVP
+      WDVQDECUGUHVSWCWIDENNVSVTNKZWANKZSZSZWCWIWMWCSZBFLZUAGLZUBMUDMZUEZGNOFNOZ
+      WIVSWSWLWCVQVPWSVRFGBUGUIUJWNWRWIFGNNWNWONKZWPNKZSZSZWRWIXCWRSZAHLZUAILZU
+      BMUDMZUEZINOHNOZWIWMXIWCXBWRVSXIWLVPVQXIVRHIAUGUKULTXDXHWIHINNXDXENKZXFNK
+      ZSZSZXHWIXMXHSZWEXEVTPQZXFWAPQZRZWOVTPQZWPWAPQZRZRZWHXNWEXOXRRZXPXSRZRZYA
+      XNWEXEWOPQZXFWPPQZRZYDXNWEXGWQPQZYGXNAXGBWQPXMXHUNZXCWRXLXHUMZUOXNXJXKWTX
+      AYHYGUPXDXJXKXHUQZXDXJXKXHURZXCWTWRXLXHWNWTXAUSTZXCXAWRXLXHWNWTXAUTTZXEXF
+      WOWPVDVAVOXNYEYBYFYCXNXJWTWJYEYBUFYKYMXCWJWRXLXHWMWJWCXBVSWJWKUSUJTZXEWOV
+      TVBVCXNXKXAWKYFYCUFYLYNXCWKWRXLXHWMWKWCXBVSWJWKUTUJTZXFWPWAVBVCVEVFXOXRXP
+      XSVGVHXNWFXQWGXTXNWFXGWBPQZXQXNAXGCWBPYIXCWCWRXLXHWMWCXBVITZUOXNXJXKWJWKY
+      QXQUPYKYLYOYPXEXFVTWAVDVAVOXNWGWQWBPQZXTXNBWQCWBPYJYRUOXNWTXAWJWKYSXTUPYM
+      YNYOYPWOWPVTWAVDVAVOVJVKVLVMVNVLVMVNVLVMVN $.
+  $}
+
+  ${
+    $d A u v w x y z $.  $d B u v w x y z $.  $d C u v w x y z $.
+    $( Addition respects apartness.  Analogue of ~ addcan for apartness.
+       (Contributed by Jim Kingdon, 13-Feb-2020.) $)
+    apadd1 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+        ( A # B <-> ( A + C ) # ( B + C ) ) ) $=
+      ( vu vv wcel cv ci cmul co caddc cr wrex cap wbr wb wa ad2antrr ad3antrrr
+      recnd vz vw vx vy cc wceq cnre 3ad2ant3 3ad2ant2 3ad2ant1 simplrl simplrr
+      w3a wo simprl simprr apreim syl22anc simpr simpllr readdcld ax-icn mulcld
+      breq12d a1i simplr oveq12d adddid oveq2d 3eqtr4d reapadd1 syl3anc orbi12d
+      add4d 3bitr4d ex rexlimdvva mpd ) AUEFZBUEFZCUEFZUMZCDGZHEGZIJZKJZUFZELMD
+      LMZABNOZACKJZBCKJZNOZPZWAVSWHVTDECUGUHWBWGWMDELLWBWCLFZWDLFZQZQZWGWMWQWGQ
+      ZBUAGZHUBGZIJZKJZUFZUBLMUALMZWMWBXDWPWGVTVSXDWAUAUBBUGUIRWRXCWMUAUBLLWRWS
+      LFZWTLFZQZQZXCWMXHXCQZAUCGZHUDGZIJZKJZUFZUDLMUCLMZWMWRXOXGXCWBXOWPWGVSVTX
+      OWAUCUDAUGUJRRXIXNWMUCUDLLXIXJLFZXKLFZQZQZXNWMXSXNQZXMXBNOZXJWSNOZXKWTNOZ
+      UNZWIWLXTXPXQXEXFYAYDPXIXPXQXNUKZXIXPXQXNULZXHXEXCXRXNWRXEXFUOSZXHXFXCXRX
+      NWRXEXFUPSZXJXKWSWTUQURXTAXMBXBNXSXNUSZXHXCXRXNUTZVDXTXJWCKJZHXKWDKJZIJZK
+      JZWSWCKJZHWTWDKJZIJZKJZNOZYKYONOZYLYPNOZUNZWLYDXTYKLFYLLFYOLFYPLFYSUUBPXT
+      XJWCYEXHWNXCXRXNWQWNWGXGWBWNWOUORSZVAXTXKWDYFXHWOXCXRXNWQWOWGXGWBWNWOUPRS
+      ZVAXTWSWCYGUUCVAXTWTWDYHUUDVAYKYLYOYPUQURXTWJYNWKYRNXTXMWFKJYKXLWEKJZKJWJ
+      YNXTXJXLWCWEXTXJYETXTHXKHUEFXTVBVEZXTXKYFTZVCXTWCUUCTZXTHWDUUFXTWDUUDTZVC
+      ZVNXTAXMCWFKYIXHWGXCXRXNWQWGXGVFSZVGXTYMUUEYKKXTHXKWDUUFUUGUUIVHVIVJXTXBW
+      FKJYOXAWEKJZKJWKYRXTWSXAWCWEXTWSYGTXTHWTUUFXTWTYHTZVCUUHUUJVNXTBXBCWFKYJU
+      UKVGXTYQUULYOKXTHWTWDUUFUUMUUIVHVIVJVDXTYBYTYCUUAXTXPXEWNYBYTPYEYGUUCXJWS
+      WCVKVLXTXQXFWOYCUUAPYFYHUUDXKWTWDVKVLVMVOVOVPVQVRVPVQVRVPVQVR $.
+  $}
+
+  $( Addition respects apartness.  (Contributed by Jim Kingdon,
+     16-Feb-2020.) $)
+  apadd2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+      ( A # B <-> ( C + A ) # ( C + B ) ) ) $=
+    ( cc wcel w3a cap wbr caddc apadd1 simp1 simp3 addcomd simp2 breq12d bitrd
+    co ) ADEZBDEZCDEZFZABGHACIQZBCIQZGHCAIQZCBIQZGHABCJUAUBUDUCUEGUAACRSTKRSTLZ
+    MUABCRSTNUFMOP $.
+
+  $( Strong extensionality for addition.  Given excluded middle, apartness
+     would be equivalent to negated equality and this would follow readily (for
+     all operations) from ~ oveq12 .  For us, it is proved a different way.
+     (Contributed by Jim Kingdon, 15-Feb-2020.) $)
+  extadd $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) -> (
+      ( A + B ) # ( C + D ) -> ( A # C \/ B # D ) ) ) $=
+    ( cc wcel wa caddc co cap wbr wo simpll simplr addcld simprl simprr syl3anc
+    wi wb apcotr apadd1 apadd2 apsym syl2anc bitrd orbi12d sylibrd ) AEFZBEFZGZ
+    CEFZDEFZGZGZABHIZCDHIZJKZUPCBHIZJKZUQUSJKZLZACJKZBDJKZLUOUPEFUQEFZUSEFZURVB
+    SUOABUIUJUNMZUIUJUNNZOUOCDUKULUMPZUKULUMQZOZUOCBVIVHOZUPUQUSUARUOVCUTVDVAUO
+    UIULUJVCUTTVGVIVHACBUBRUOVDUSUQJKZVAUOUJUMULVDVMTVHVJVIBDCUCRUOVFVEVMVATVLV
+    KUSUQUDUEUFUGUH $.
+
+  ${
+    $d A w x y z $.  $d B w x y z $.
+    $( Negation respects apartness.  (Contributed by Jim Kingdon,
+       14-Feb-2020.) $)
+    apneg $p |- ( ( A e. CC /\ B e. CC ) -> ( A # B <-> -u A # -u B ) ) $=
+      ( vz vw vx vy wcel wa cv ci cmul co caddc cr wrex cap wbr cneg renegcld
+      wb cc wceq cnre adantl ad3antrrr wo ax-ia2 simpllr breq12d simplrl simprl
+      simplrr simprr apreim syl22anc recnd ax-icn mulcld negdid negeqd mulneg2d
+      a1i oveq2d 3eqtr4d reapneg syl2anc orbi12d 3bitr4rd 3bitrd rexlimdvva mpd
+      ex ) AUAGZBUAGZHZBCIZJDIZKLZMLZUBZDNOCNOZABPQZARZBRZPQZTZVNWAVMCDBUCUDVOV
+      TWFCDNNVOVPNGZVQNGZHZHZVTWFWJVTHZAEIZJFIZKLZMLZUBZFNOENOZWFVMWQVNWIVTEFAU
+      CUEWKWPWFEFNNWKWLNGZWMNGZHZHZWPWFXAWPHZWBWOVSPQZWLVPPQZWMVQPQZUFZWEXBAWOB
+      VSPXAWPUGZWJVTWTWPUHZUIXBWRWSWGWHXCXFTWKWRWSWPUJZWKWRWSWPULZWJWGVTWTWPVOW
+      GWHUKUEZWJWHVTWTWPVOWGWHUMUEZWLWMVPVQUNUOXBWLRZJWMRZKLZMLZVPRZJVQRZKLZMLZ
+      PQZXMXQPQZXNXRPQZUFZWEXFXBXMNGXNNGXQNGXRNGYAYDTXBWLXISXBWMXJSXBVPXKSXBVQX
+      LSXMXNXQXRUNUOXBWCXPWDXTPXBWORXMWNRZMLWCXPXBWLWNXBWLXIUPXBJWMJUAGXBUQVBZX
+      BWMXJUPZURUSXBAWOXGUTXBXOYEXMMXBJWMYFYGVAVCVDXBVSRXQVRRZMLWDXTXBVPVRXBVPX
+      KUPXBJVQYFXBVQXLUPZURUSXBBVSXHUTXBXSYHXQMXBJVQYFYIVAVCVDUIXBXDYBXEYCXBWRW
+      GXDYBTXIXKWLVPVEVFXBWSWHXEYCTXJXLWMVQVEVFVGVHVIVLVJVKVLVJVK $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
