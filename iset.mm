@@ -59199,7 +59199,7 @@ $)
     $d x y z A $.
     $( Existence of positive fraction reciprocal.  (Contributed by Jim Kingdon,
        20-Sep-2019.) $)
-    recex $p |- ( A e. Q. -> E. y ( y e. Q. /\ ( A .Q y ) = 1Q ) ) $=
+    recexnq $p |- ( A e. Q. -> E. y ( y e. Q. /\ ( A .Q y ) = 1Q ) ) $=
       ( vx vz cv cnq wcel cop ceq cec cmq co c1q wceq wa wex df-nqqs eqeq1d syl
       cnpi oveq1 anbi2d exbidv cxp cqs opelxpi ancoms enqex syl6eleqr mulcompig
       ecelqsi cmi opeq2d eceq1d mulclpi 1qec mulpipqqs an42s 3eqtr4rd jca eleq1
@@ -59218,12 +59218,12 @@ $)
     recmulnqg $p |- ( ( A e. Q. /\ B e. Q. ) ->
       ( ( *Q ` A ) = B <-> ( A .Q B ) = 1Q ) ) $=
       ( vy vx vz vw vv cnq wcel wa crq cfv wceq cmq co c1q oveq1 eqeq1d copab
-      cv anbi2d eleq1 oveq2 anbi12d wex wmo weu 1nq mulcomnqg mulassnqg mulidnq
-      recex caovimo eu5 sylanbrc w3a df-rq 3anass opabbii eqtri fvopab3g adantl
-      wb ibar bitr4d ) AHIZBHIZJAKLBMVGABNOZPMZJZVICTZHIZDTZVKNOZPMZJZVLAVKNOZP
-      MZJVJDCABHHKVMAMZVOVRVLVSVNVQPVMAVKNQRUAVKBMZVLVGVRVIVKBHUBVTVQVHPVKBANUC
-      RUDVMHIZVPCUEVPCUFVPCUGCVMULEFGCVMPHNUHETZFTZUIWBWCGTUJWBUKUMVPCUNUOKWAVL
-      VOUPZDCSWAVPJZDCSDCUQWDWEDCWAVLVOURUSUTVAVGVIVJVCVFVGVIVDVBVE $.
+      cv anbi2d eleq1 oveq2 anbi12d wex wmo weu recexnq 1nq mulcomnqg mulassnqg
+      mulidnq caovimo eu5 sylanbrc w3a df-rq 3anass opabbii eqtri fvopab3g ibar
+      wb adantl bitr4d ) AHIZBHIZJAKLBMVGABNOZPMZJZVICTZHIZDTZVKNOZPMZJZVLAVKNO
+      ZPMZJVJDCABHHKVMAMZVOVRVLVSVNVQPVMAVKNQRUAVKBMZVLVGVRVIVKBHUBVTVQVHPVKBAN
+      UCRUDVMHIZVPCUEVPCUFVPCUGCVMUHEFGCVMPHNUIETZFTZUJWBWCGTUKWBULUMVPCUNUOKWA
+      VLVOUPZDCSWAVPJZDCSDCUQWDWEDCWAVLVOURUSUTVAVGVIVJVCVFVGVIVBVDVE $.
   $}
 
   ${
@@ -59231,9 +59231,9 @@ $)
     $( Closure law for positive fraction reciprocal.  (Contributed by NM,
        6-Mar-1996.)  (Revised by Mario Carneiro, 8-May-2013.) $)
     recclnq $p |- ( A e. Q. -> ( *Q ` A ) e. Q. ) $=
-      ( vy cnq wcel cv cmq co c1q wa wex crq cfv recex recmulnqg biimpar eleq1a
-      wceq wi ad2antlr mpd expl exlimdv ) ACDZBEZCDZAUDFGHQZIZBJAKLZCDZBAMUCUGU
-      IBUCUEUFUIUCUEIZUFIUHUDQZUIUJUKUFAUDNOUEUKUIRUCUFUDCUHPSTUAUBT $.
+      ( vy cnq wcel cv cmq co c1q wceq wa wex crq cfv recexnq recmulnqg biimpar
+      wi eleq1a ad2antlr mpd expl exlimdv ) ACDZBEZCDZAUDFGHIZJZBKALMZCDZBANUCU
+      GUIBUCUEUFUIUCUEJZUFJUHUDIZUIUJUKUFAUDOPUEUKUIQUCUFUDCUHRSTUAUBT $.
   $}
 
   $( A positive fraction times its reciprocal is 1.  (Contributed by NM,
@@ -70010,8 +70010,8 @@ $)
     $( The product of two nonnegative numbers is nonnegative.  (Contributed by
        Mario Carneiro, 27-May-2016.) $)
     mulge0d $p |- ( ph -> 0 <_ ( A x. B ) ) $=
-      ( cr wcel cc0 cle wbr cmul co mulge0 syl22anc ) ABHIJBKLCHIJCKLJBCMNKLD
-      FEGBCOP $.
+      ( cr wcel cc0 cle wbr cmul co mulge0 syl22anc ) ABHIJBKLCHIJCKLJBCMNKLDFE
+      GBCOP $.
   $}
 
 $(
