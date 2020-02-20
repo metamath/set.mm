@@ -69956,6 +69956,32 @@ $)
     BNOPUGUQBQDUTRURVASVGBTUTURULUHUIUQUSAAHIZUSJZUQUOAGEFZHIZVLUQUOGVMHVEUQAUQ
     AVIKZUJLUQUMUNUMVHVNVLMVIVFVIVJABAGNOPUQAQDVKRUSVLSVOATVKUSULUHUIUK $.
 
+  $( A square is nonnegative.  Lemma 2.35 of [Geuvers], p. 9.  (Contributed by
+     NM, 23-May-2007.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  msqge0 $p |- ( A e. RR -> 0 <_ ( A x. A ) ) $=
+    ( cr wcel cc0 cmul co cle wbr clt wn remulcl anidms 0re ltnsym2 sylancl cap
+    wa wo orc wb reaplt syl5ibr wi remulap0 simpld 3expia apsqgt0 ex 3syld mtod
+    w3a ancld lenlt sylancr mpbird ) ABCZDAAEFZGHZUQDIHZJZUPUSUSDUQIHZQZUPUQBCZ
+    DBCZVBJUPVCAAKLZMUQDNOUPUSVAUPUSUQDPHZADPHZVAUSVFUPUSVARZUSVASUPVCVDVFVHTVE
+    MUQDUAOUBUPVFVGUCUPUPVFVGUPUPVFUKVGVGAAUDUEUFLUPVGVAAUGUHUIULUJUPVDVCURUTTM
+    VEDUQUMUNUO $.
+
+  ${
+    msqge0i.1 $e |- A e. RR $.
+    $( A square is nonnegative.  (Contributed by NM, 14-May-1999.)  (Proof
+       shortened by Andrew Salmon, 19-Nov-2011.) $)
+    msqge0i $p |- 0 <_ ( A x. A ) $=
+      ( cr wcel cc0 cmul co cle wbr msqge0 ax-mp ) ACDEAAFGHIBAJK $.
+  $}
+
+  ${
+    msqge0d.1 $e |- ( ph -> A e. RR ) $.
+    $( A square is nonnegative.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    msqge0d $p |- ( ph -> 0 <_ ( A x. A ) ) $=
+      ( cr wcel cc0 cmul co cle wbr msqge0 syl ) ABDEFBBGHIJCBKL $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
