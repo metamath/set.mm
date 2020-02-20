@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Feb-2020
+$( iset.mm - Version of 19-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -63085,7 +63085,7 @@ $)
       VGVBVEVKMVHVIVJCAUSUIUEVAVKUPMURVBUTBCIUFUGUHUJUKUL $.
 
     $( Ordering property of addition.  Proposition 9-3.5(v) of [Gleason]
-       p. 123.  Part of Definition 11.2.7(vi) of [[HoTT]], p.  (varies).
+       p. 123.  Part of Definition 11.2.7(vi) of [HoTT], p.  (varies).
        (Contributed by Jim Kingdon, 26-Dec-2019.) $)
     ltaprg $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) ->
         ( A <P B <-> ( C +P. A ) <P ( C +P. B ) ) ) $=
@@ -63097,6 +63097,23 @@ $)
       KJKZBHVPVCVNAVQHIVCVDVEVOUBZVFVNVMUCZAVKUDTVPCVQJKZVIQZVQBQZVCVEVOWAVDVCV
       EOZVOOVLVTVIWCVNVLVTQZVMVCVEVNWDVEVCVNWDCAVKUEUFUIUGWCVNVMUHUJUKVPVEVQEFZ
       VDWAWBLVCVDVEVOULVPVCVNWEVRVSAVKUMTVCVDVEVOUNCVQBUOUPUQURUSUTVAVB $.
+  $}
+
+  ${
+    $d A f g $.  $d B f g $.  $d C f g $.  $d D f g $.
+    $( Strong extensionality of addition (ordering version).  This is similar
+       to ~ addext but for positive reals and based on less-than rather than
+       apartness.  (Contributed by Jim Kingdon, 17-Feb-2020.) $)
+    addextpr $p |- ( ( ( A e. P. /\ B e. P. ) /\ ( C e. P. /\ D e. P. ) ) ->
+        ( ( A +P. B ) <P ( C +P. D ) -> ( A <P C \/ B <P D ) ) ) $=
+      ( vf vg cnp wcel wa cpp co cltp wbr wo addclpr adantl syl3anc wb ltaprg
+      cv wi adantr simprl simplr syl2anc wor w3a ltsopr sowlin mpan simpll wceq
+      addcomprg caovcomd breq12d bitr4d simprr orbi12d sylibrd ) AGHZBGHZIZCGHZ
+      DGHZIZIZABJKZCDJKZLMZVGCBJKZLMZVJVHLMZNZACLMZBDLMZNVFVGGHZVHGHZVJGHZVIVMU
+      AZVBVPVEABOUBVEVQVBCDOPVFVCVAVRVBVCVDUCZUTVAVEUDZCBOUEGLUFVPVQVRUGVSUHGVG
+      VHVJLUIUJQVFVNVKVOVLVFVNBAJKZBCJKZLMZVKVFUTVCVAVNWDRUTVAVEUKZVTWAACBSQVFV
+      GWBVJWCLVFEFABGJETZGHFTZGHIWFWGJKWGWFJKULVFWFWGUMPZWEWAUNVFEFCBGJWHVTWAUN
+      UOUPVFVAVDVCVOVLRWAVBVCVDUQVTBDCSQURUS $.
   $}
 
   ${
@@ -63462,6 +63479,27 @@ $)
       USUPUKULUNHZURUSQUKULUONZUKULUOUAZUPUMHZVDUOUKVGVDRZULUOVHUMUNUBUCUDZUEZA
       BOPUPULUKVGUSURQVFVEUPVGVDVIUFZBAOPSUPVAVBUPULUKVGVAVBQVFVEVKBATPUPUKULVD
       VBVAQVEVFVJABTPSUKULUQUTVCRUHUOABUIUGUJ $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( Ordering property of multiplication.  (Contributed by Jim Kingdon,
+       18-Feb-2020.) $)
+    ltmprr $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) ->
+        ( ( C .P. A ) <P ( C .P. B ) -> A <P B ) ) $=
+      ( vy vx cnp wcel cmp co cltp wbr wa cv c1p wceq syl2anc syl3anc mulcomprg
+      cpp oveq1d w3a wrex recexpr 3ad2ant3 adantr ltexpri simplll simp1d simprl
+      ad2antlr simplrl mulclpr ltaddpr simprr oveq2d distrprg mulassprg simplrr
+      simp3d eqtrd 1pr mpan2 1idpr eqtr3d syl 3eqtr2d 3eqtr3d breqtrd rexlimddv
+      simp2d ex ) AFGZBFGZCFGZUAZCAHIZCBHIZJKZABJKZVOVRLZCDMZHIZNOZVSDFVOWCDFUB
+      ZVRVNVLWDVMDCUCUDUEVTWAFGZWCLZLZVPEMZSIZVQOZVSEFVRWJEFUBVOWFEVPVQUFUJWGWH
+      FGZWJLZLZAAWAWHHIZSIZBJWMVLWNFGZAWOJKWMVLVMVNVOVRWFWLUGZUHZWMWEWKWPVTWEWC
+      WLUKZWGWKWJUIZWAWHULPAWNUMPWMWAWIHIZWAVQHIZWOBWMWIVQWAHWGWKWJUNUOWMXAWAVP
+      HIZWNSIZWACHIZAHIZWNSIWOWMWEVPFGZWKXAXDOWSWMVNVLXGWMVLVMVNWQUSZWRCAULPWTW
+      AVPWHUPQWMXFXCWNSWMWEVNVLXFXCOWSXHWRWACAUQQTWMXFAWNSWMXFNAHIZAWMXENAHWMXE
+      WBNWMWEVNXEWBOWSXHWACRPVTWEWCWLURUTZTWMVLXIAOWRVLANHIZXIAVLNFGZXKXIOVAANR
+      VBAVCVDVEUTTVFWMXEBHIZNBHIZXBBWMXENBHXJTWMWEVNVMXMXBOWSXHWMVLVMVNWQVJZWAC
+      BUQQWMVMXNBOXOVMBNHIZXNBVMXLXPXNOVABNRVBBVCVDVEVGVGVHVIVIVK $.
   $}
 
   ${
@@ -64341,6 +64379,69 @@ $)
       BXEWRVTXAWAXDVNVOVQVRUTWQWNWAXDVDVQVRVNVOUTVAOPVNVOVQVRVEVFVGVH $.
   $}
 
+  ${
+    $d U f g h $.  $d V f g h $.  $d W f g h $.  $d X f g h $.  $d Y f g h $.
+    $d Z f g h $.
+    $( Lemma for ~ mulextsr1 .  (Contributed by Jim Kingdon, 17-Feb-2020.) $)
+    mulextsr1lem $p |- ( ( ( X e. P. /\ Y e. P. ) /\ ( Z e. P. /\ W e. P. )
+        /\ ( U e. P. /\ V e. P. ) ) -> (
+        ( ( ( X .P. U ) +P. ( Y .P. V ) ) +P.
+          ( ( Z .P. V ) +P. ( W .P. U ) ) )
+        <P ( ( ( X .P. V ) +P. ( Y .P. U ) ) +P.
+          ( ( Z .P. U ) +P. ( W .P. V ) ) ) ->
+        ( ( X +P. W ) <P ( Y +P. Z ) \/ ( Z +P. Y ) <P ( W +P. X ) ) ) ) $=
+      ( vf vg vh cnp wcel cmp co cpp cltp wbr wceq adantl mulclpr syl2anc wa wo
+      w3a addcomprg addclpr simp2l simp3r simp1r caovcld simp1l simp3l caovcomd
+      cv simp2r addassprg caov411d distrprg mulcomprg caovdir2d oveq12d 3eqtr4d
+      eqtr4d breq12d wi eqeltrd addextpr syl22anc 3adant2 3adant1 ltmprr sylbid
+      syl3anc orim12d syld breq2d orbi12d sylibd ) DJKZEJKZUAZFJKZCJKZUAZAJKZBJ
+      KZUAZUCZDALMZEBLMZNMFBLMZCALMZNMNMZDBLMZEALMZNMFALMZCBLMZNMNMZOPZDCNMZFEN
+      MZOPZWTWSOPZUBZWSEFNMZOPZWTCDNMZOPZUBWGWRWSALMZWTBLMZNMZWTALMZWSBLMZNMZOP
+      ZXCWGWLXJWQXMOWGWJWINMZWHWKNMZNMXPXONMWLXJWGGHXOXPJNGUMZJKZHUMZJKZUAZXQXS
+      NMZXSXQNMQWGXQXSUDRZWGGHWJWIJJJNYAYBJKWGXQXSUERZWGWAWEWJJKVTWAWBWFUFZVTWC
+      WDWEUGZFBSTZWGVSWEWIJKVRVSWCWFUHZYFEBSTZUIZWGGHWHWKJJJNYDWGVRWDWHJKVRVSWC
+      WFUJZVTWCWDWEUKZDASTZWGWBWDWKJKVTWAWBWFUNZYLCASTZUIZULWGGHIWHWIWJWKJNYMYI
+      YGYCXRXTIUMZJKUCZYBYQNMXQXSYQNMZNMQWGXQXSYQUORZYOYDUPWGXHXPXIXONWGGHIDCAJ
+      NLYRXQYSLMXQXSLMZXQYQLMNMQWGXQXSYQUQRZYKYNYLYDYAUUAXSXQLMQWGXQXSURRZUSZWG
+      GHIFEBJNLUUBYEYHYFYDUUCUSZUTVAWGWQWOWNNMZWMWPNMZNMXMWGGHIWMWNWOWPJNWGVRWE
+      WMJKYKYFDBSTWGVSWDWNJKYHYLEASTWGWAWDWOJKYEYLFASTYCYTWGWBWEWPJKYNYFCBSTYDU
+      PWGXKUUFXLUUGNWGGHIFEAJNLUUBYEYHYLYDUUCUSWGGHIDCBJNLUUBYKYNYFYDUUCUSUTVBV
+      CWGXNXHXKOPZXIXLOPZUBZXCWGXHJKXIJKXKJKZXLJKZXNUUJVDWGXHXPJUUDYPVEWGXIXOJU
+      UEYJVEWGWTJKZWDUUKWGWAVSUUMYEYHFEUETZYLWTASTWGWSJKZWEUULWGVRWBUUOYKYNDCUE
+      TZYFWSBSTXHXIXKXLVFVGWGUUHXAUUIXBWGUUOUUMWDUUHXAVDUUPUUNYLUUOUUMWDUCZUUHA
+      WSLMZAWTLMZOPXAUUQXHUURXKUUSOUUOWDXHUURQUUMWSAURVHUUMWDXKUUSQUUOWTAURVIVC
+      WSWTAVJVKVLWGUUIBWTLMZBWSLMZOPZXBWGXIUUTXLUVAOWGUUMWEXIUUTQUUNYFWTBURTWGU
+      UOWEXLUVAQUUPYFWSBURTVCWGUUMUUOWEUVBXBVDUUNUUPYFWTWSBVJVLVKVMVNVKWGXAXEXB
+      XGWGWTXDWSOWGWAVSWTXDQYEYHFEUDTVOWGWSXFWTOWGVRWBWSXFQYKYNDCUDTVOVPVQ $.
+  $}
+
+  ${
+    $d A u v w x y z $.  $d B u v w z $.  $d C u v $.
+    $( Strong extensionality of multiplication of signed reals.  (Contributed
+       by Jim Kingdon, 18-Feb-2020.) $)
+    mulextsr1 $p |- ( ( A e. R. /\ B e. R. /\ C e. R. )
+        -> ( ( A .R C ) <R ( B .R C ) -> ( A <R B \/ B <R A ) ) ) $=
+      ( cv cop cer cec cmr co cltr wbr wo cnp wceq wcel cmp cpp mulclpr syl2anc
+      wi vx vy vu vv vz vw df-nr oveq1 breq1d breq1 breq2 orbi12d imbi12d oveq2
+      cnr breq2d breq12d imbi1d wa cltp mulextsr1lem mulsrpr 3adant2 3adant1 wb
+      simp1l simp3l simp1r simp3r addclpr simp2l ltsrprg syl22anc bitrd 3adant3
+      w3a simp2r ancoms 3imtr4d 3ecoptocl ) UADZUBDZEFGZUCDZUDDZEFGZHIZUEDZUFDZ
+      EFGZWFHIZJKZWCWJJKZWJWCJKZLZTAWFHIZWKJKZAWJJKZWJAJKZLZTWPBWFHIZJKZABJKZBA
+      JKZLZTACHIZBCHIZJKZXETUAUBUEUFUCUDABCMFUOUGWCANZWLWQWOWTXIWGWPWKJWCAWFHUH
+      UIXIWMWRWNWSWCAWJJUJWCAWJJUKULUMWJBNZWQXBWTXEXJWKXAWPJWJBWFHUHUPXJWRXCWSX
+      DWJBAJUKWJBAJUJULUMWFCNZXBXHXEXKWPXFXAXGJWFCAHUNWFCBHUNUQURWAMOZWBMOZUSZW
+      HMOZWIMOZUSZWDMOZWEMOZUSZVPZWAWDPIZWBWEPIZQIZWHWEPIZWIWDPIZQIZQIWAWEPIZWB
+      WDPIZQIZWHWDPIZWIWEPIZQIZQIUTKZWAWIQIWBWHQIUTKZWHWBQIWIWAQIUTKZLWLWOWDWEW
+      IWAWBWHVAYAWLYDYJEFGZYMYGEFGZJKZYNYAWGYQWKYRJXNXTWGYQNXQWAWBWDWEVBVCXQXTW
+      KYRNXNWHWIWDWEVBVDUQYAYDMOZYJMOZYMMOZYGMOZYSYNVEYAYBMOZYCMOZYTYAXLXRUUDXL
+      XMXQXTVFZXNXQXRXSVGZWAWDRSYAXMXSUUEXLXMXQXTVHZXNXQXRXSVIZWBWERSYBYCVJSYAY
+      HMOZYIMOZUUAYAXLXSUUJUUFUUIWAWERSYAXMXRUUKUUHUUGWBWDRSYHYIVJSYAYKMOZYLMOZ
+      UUBYAXOXRUULXNXOXPXTVKZUUGWHWDRSYAXPXSUUMXNXOXPXTVQZUUIWIWERSYKYLVJSYAYEM
+      OZYFMOZUUCYAXOXSUUPUUNUUIWHWERSYAXPXRUUQUUOUUGWIWDRSYEYFVJSYDYJYMYGVLVMVN
+      YAWMYOWNYPXNXQWMYOVEXTWAWBWHWIVLVOXNXQWNYPVEZXTXQXNUURWHWIWAWBVLVRVOULVSV
+      T $.
+  $}
+
   $( Class of complex numbers. $)
   cc $a class CC $.
   $( Class of real numbers. $)
@@ -65087,6 +65188,29 @@ $)
       EWAGHZIJWBVTEWEVHWFIEWEOVTQUOVAVDUPUQGWARURUSUT $.
   $}
 
+  ${
+    $d x y z A $.  $d x y z B $.  $d z C $.
+    $( Strong extensionality of multiplication (expressed in terms of
+       ` <RR ` ).  Axiom for real and complex numbers, derived from set
+       theory.  This construction-dependent theorem should not be referenced
+       directly; instead, use ~ ax-pre-mulext .
+
+       (Contributed by Jim Kingdon, 18-Feb-2020.)
+       (New usage is discouraged.) $)
+    axpre-mulext $p |- ( ( A e. RR /\ B e. RR /\ C e. RR )
+        -> ( ( A x. C ) <RR ( B x. C ) -> ( A <RR B \/ B <RR A ) ) ) $=
+      ( vx vz vy cv c0r cop cmul co cltrr wbr wo wi cnr elreal wceq wcel cltr
+      cr oveq1 breq1d breq1 breq2 orbi12d imbi12d breq2d breq12d imbi1d w3a cmr
+      oveq2 mulextsr1 mulresr 3adant2 3adant1 ltresr syl6bb orbi12i a1i 3imtr4d
+      wb 3gencl ) DGZHIZEGZHIZJKZFGZHIZVHJKZLMZVFVKLMZVKVFLMZNZOAVHJKZVLLMZAVKL
+      MZVKALMZNZOVQBVHJKZLMZABLMZBALMZNZOACJKZBCJKZLMZWFODFEVFVKVHAPUABCDAQFBQE
+      CQVFARZVMVRVPWAWJVIVQVLLVFAVHJUBUCWJVNVSVOVTVFAVKLUDVFAVKLUEUFUGVKBRZVRWC
+      WAWFWKVLWBVQLVKBVHJUBUHWKVSWDVTWEVKBALUEVKBALUDUFUGVHCRZWCWIWFWLVQWGWBWHL
+      VHCAJUMVHCBJUMUIUJVEPSZVJPSZVGPSZUKZVEVGULKZVJVGULKZTMZVEVJTMZVJVETMZNZVM
+      VPVEVJVGUNWPVMWQHIZWRHIZLMWSWPVIXCVLXDLWMWOVIXCRWNVEVGUOUPWNWOVLXDRWMVJVG
+      UOUQUIWQWRURUSVPXBVCWPVNWTVOXAVEVJURVJVEURUTVAVBVD $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -65284,6 +65408,14 @@ $)
   ax-pre-mulgt0 $a |- ( ( A e. RR /\ B e. RR ) ->
                 ( ( 0 <RR A /\ 0 <RR B ) -> 0 <RR ( A x. B ) ) ) $.
   $( $j restatement 'ax-pre-mulgt0' of 'axpre-mulgt0'; $)
+
+  $( Strong extensionality of multiplication (expressed in terms of ` <RR ` ).
+     Axiom for real and complex numbers, justified by theorem ~ axpre-mulext
+
+     (Contributed by Jim Kingdon, 18-Feb-2020.) $)
+  ax-pre-mulext $a |- ( ( A e. RR /\ B e. RR /\ C e. RR )
+      -> ( ( A x. C ) <RR ( B x. C ) -> ( A <RR B \/ B <RR A ) ) ) $.
+  $( $j restatement 'ax-pre-mulext' of 'axpre-mulext'; $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -69350,7 +69482,7 @@ $)
       DABGGEUEAMZUFBMZIZUGUBUHUCUEAUFBJNUKUFBUEAJUIUJOUIUJRPQCDSTUA $.
   $}
 
-  $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of [[HoTT]],
+  $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of [HoTT],
      p.  (varies).  Beyond the development of ` # ` itself, proofs should use
      ~ apirr instead.  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
   reapirr $p |- ( A e. RR -> -. A #RR A ) $=
@@ -69420,9 +69552,7 @@ $)
 
   ${
     $d r s t u x y $.
-    $( Define complex apartness.  Definition 6.1 of Skeleton for the Proof
-       development leading to the.  Fundamental Theorem of Algebra, Herman
-       Geuvers, Randy Pollack, Freek Wiedijk, Jan Zwanenburg, October 2, 2000.
+    $( Define complex apartness.  Definition 6.1 of [Geuvers], p. 17.
        (Contributed by Jim Kingdon, 26-Jan-2020.) $)
     df-ap $a |- # = { <. x , y >. | E. r e. RR E. s e. RR E. t e. RR E. u e. RR
       ( ( x = ( r + ( _i x. s ) ) /\ y = ( t + ( _i x. u ) ) ) /\
@@ -69504,7 +69634,7 @@ $)
   $}
 
   $( Real apartness in terms of less than.  Part of Definition 11.2.7(vi) of
-     [[HoTT]], p.  (varies).  (Contributed by Jim Kingdon, 1-Feb-2020.) $)
+     [HoTT], p.  (varies).  (Contributed by Jim Kingdon, 1-Feb-2020.) $)
   reaplt $p |- ( ( A e. RR /\ B e. RR ) ->
       ( A # B <-> ( A < B \/ B < A ) ) ) $=
     ( cr wcel wa cap wbr creap clt wo apreap reapval bitrd ) ACDBCDEABFGABHGABI
@@ -69525,7 +69655,7 @@ $)
     $d A x $.  $d B x $.  $d C x $.
     $( Multiplication of both sides of 'less than' by a positive number.
        Theorem I.19 of [Apostol] p. 20.  Part of Definition 11.2.7(vi) of
-       [[HoTT]], p.  (varies).  (Contributed by NM, 13-Feb-2005.)  (Revised by
+       [HoTT], p.  (varies).  (Contributed by NM, 13-Feb-2005.)  (Revised by
        Mario Carneiro, 27-May-2016.) $)
     ltmul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
                  -> ( A < B <-> ( A x. C ) < ( B x. C ) ) ) $=
@@ -69601,6 +69731,18 @@ $)
     DRZCDRZEZABFGZACHGZCAHGZIZBCHGZCBHGZIZIZACFGZBCFGZIUKULUMUQIZUPUNIZIZUSUKUL
     ABHGZBAHGZIZVDUHUIULVGJUJABKLUKVEVBVFVCABCMUIUHUJVFVCNBACMOPQVDVBUNUPIZIUSV
     CVHVBUPUNSTUMUQUNUPUAUBUCUKUTUOVAURUHUJUTUOJUIACKUDUIUJVAURJUHBCKUEUFUG $.
+
+  $( Left extensionality for multiplication.  (Contributed by Jim Kingdon,
+     19-Feb-2020.) $)
+  remulext1 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) -> (
+      ( A x. C ) # ( B x. C ) -> A # B ) ) $=
+    ( cr wcel w3a cmul co cap wbr clt wo wb remulcld reaplt cltrr ax-pre-mulext
+    syl2anc ltxrlt 3imtr4d simp1 simp3 simp2 orbi12d bitrd wi 3com12 orcom jaod
+    syl6bb sylbid ) ADEZBDEZCDEZFZACGHZBCGHZIJZUPUQKJZUQUPKJZLZABIJZUOUPDEZUQDE
+    ZURVAMUOACULUMUNUAZULUMUNUBZNZUOBCULUMUNUCZVFNZUPUQORUOUSVBUTUOUPUQPJZABPJZ
+    BAPJZLZUSVBABCQUOVCVDUSVJMVGVIUPUQSRUOVBABKJZBAKJZLZVMUOULUMVBVPMVEVHABORUO
+    VNVKVOVLUOULUMVNVKMVEVHABSRUOUMULVOVLMVHVEBASRUDUEZTUOUQUPPJZVLVKLZUTVBUMUL
+    UNVRVSUFBACQUGUOVDVCUTVRMVIVGUQUPSRUOVBVMVSVQVKVLUHUJTUIUK $.
 
   $( The square of a real number apart from zero is positive.  (Contributed by
      Jim Kingdon, 7-Feb-2020.) $)
@@ -69720,6 +69862,20 @@ $)
       YNYOYPWOWPVTWAVDVAVOVJVKVLVMVNVLVMVNVLVMVN $.
   $}
 
+  $( Strong extensionality for multiplication.  Given excluded middle,
+     apartness would be equivalent to negated equality and this would follow
+     readily (for all operations) from ~ oveq12 .  For us, it is proved a
+     different way.  (Contributed by Jim Kingdon, 18-Feb-2020.) $)
+  remulext $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) -> (
+      ( A x. B ) # ( C x. D ) -> ( A # C \/ B # D ) ) ) $=
+    ( cr wcel wa cmul co cap wbr wo cc wi simpll recnd mulcld syl3anc remulext1
+    mulcomd simplr simprl simprr remulcld apcotr breq12d sylbid wb apsym sylibd
+    syl2anc orim12d syld ) AEFZBEFZGZCEFZDEFZGZGZABHIZCDHIZJKZVACBHIZJKZVBVDJKZ
+    LZACJKZBDJKZLUTVAMFVBMFVDMFVCVGNUTABUTAUNUOUSOZPUTBUNUOUSUAZPZQUTVBUTCDUPUQ
+    URUBZUPUQURUCZUDPUTCBUTCVMPZVLQVAVBVDUERUTVEVHVFVIUTUNUQUOVEVHNVJVMVKACBSRU
+    TVFDBJKZVIUTVFDCHIZBCHIZJKZVPUTVBVQVDVRJUTCDVOUTDVNPZTUTCBVOVLTUFUTURUOUQVS
+    VPNVNVKVMDBCSRUGUTDMFBMFVPVIUHVTVLDBUIUKUJULUM $.
+
   ${
     $d A u v w x y z $.  $d B u v w x y z $.  $d C u v w x y z $.
     $( Addition respects apartness.  Analogue of ~ addcan for apartness.
@@ -69759,7 +69915,7 @@ $)
      would be equivalent to negated equality and this would follow readily (for
      all operations) from ~ oveq12 .  For us, it is proved a different way.
      (Contributed by Jim Kingdon, 15-Feb-2020.) $)
-  extadd $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) -> (
+  addext $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) -> (
       ( A + B ) # ( C + D ) -> ( A # C \/ B # D ) ) ) $=
     ( cc wcel wa caddc co cap wbr wo simpll simplr addcld simprl simprr syl3anc
     wi wb apcotr apadd1 apadd2 apsym syl2anc bitrd orbi12d sylibrd ) AEFZBEFZGZ
@@ -69787,6 +69943,43 @@ $)
       BWMXJUPZURUSXBAWOXGUTXBXOYEXMMXBJWMYFYGVAVCVDXBVSRXQVRRZMLWDXTXBVPVRXBVPX
       KUPXBJVQYFXBVQXLUPZURUSXBBVSXHUTXBXSYHXQMXBJVQYFYIVAVCVDUIXBXDYBXEYCXBWRW
       GXDYBTXIXKWLVPVEVFXBWSWHXEYCTXJXLWMVQVEVFVGVHVIVLVJVKVLVJVK $.
+  $}
+
+  $( A product apart from zero.  Lemma 2.13 of [Geuvers], p. 6.  (Contributed
+     by Jim Kingdon, 19-Feb-2020.) $)
+  remulap0 $p |- ( ( A e. RR /\ B e. RR /\ ( A x. B ) # 0 ) ->
+      ( A # 0 /\ B # 0 ) ) $=
+    ( cr wcel cmul co cc0 cap wbr wo recnd breqtrrd wi remulext syl22anc mpd cc
+    wn wb apirr w3a simp3 simp2 mul02d simp1 0red orcomd 3syl mpbird mul01d jca
+    biorf ) ACDZBCDZABEFZGHIZUAZAGHIZBGHIZUQURBBHIZURJZUQURUTUQUOGBEFZHIZURUTJZ
+    UQUOGVBHUMUNUPUBZUQBUQBUMUNUPUCZKZUDLUQUMUNGCDZUNVCVDMUMUNUPUEZVFUQUFZVFABG
+    BNOPUGUQBQDUTRURVASVGBTUTURULUHUIUQUSAAHIZUSJZUQUOAGEFZHIZVLUQUOGVMHVEUQAUQ
+    AVIKZUJLUQUMUNUMVHVNVLMVIVFVIVJABAGNOPUQAQDVKRUSVLSVOATVKUSULUHUIUK $.
+
+  $( A square is nonnegative.  Lemma 2.35 of [Geuvers], p. 9.  (Contributed by
+     NM, 23-May-2007.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  msqge0 $p |- ( A e. RR -> 0 <_ ( A x. A ) ) $=
+    ( cr wcel cc0 cmul co cle wbr clt wn remulcl anidms 0re ltnsym2 sylancl cap
+    wa wo orc wb reaplt syl5ibr wi remulap0 simpld 3expia apsqgt0 ex 3syld mtod
+    w3a ancld lenlt sylancr mpbird ) ABCZDAAEFZGHZUQDIHZJZUPUSUSDUQIHZQZUPUQBCZ
+    DBCZVBJUPVCAAKLZMUQDNOUPUSVAUPUSUQDPHZADPHZVAUSVFUPUSVARZUSVASUPVCVDVFVHTVE
+    MUQDUAOUBUPVFVGUCUPUPVFVGUPUPVFUKVGVGAAUDUEUFLUPVGVAAUGUHUIULUJUPVDVCURUTTM
+    VEDUQUMUNUO $.
+
+  ${
+    msqge0i.1 $e |- A e. RR $.
+    $( A square is nonnegative.  (Contributed by NM, 14-May-1999.)  (Proof
+       shortened by Andrew Salmon, 19-Nov-2011.) $)
+    msqge0i $p |- 0 <_ ( A x. A ) $=
+      ( cr wcel cc0 cmul co cle wbr msqge0 ax-mp ) ACDEAAFGHIBAJK $.
+  $}
+
+  ${
+    msqge0d.1 $e |- ( ph -> A e. RR ) $.
+    $( A square is nonnegative.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    msqge0d $p |- ( ph -> 0 <_ ( A x. A ) ) $=
+      ( cr wcel cc0 cmul co cle wbr msqge0 syl ) ABDEFBBGHIJCBKL $.
   $}
 
 $(
