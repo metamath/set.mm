@@ -69515,18 +69515,6 @@ $)
     BCDZEZABFZABGHZIZUIUJABJHZBAJHZKZIZULUIAAJHZIZUJUPUGURUHALMUJUQUOUQUQUQKUJU
     OUQNUJUQUMUQUNABAJOABAJPQRSTUIUKUOABUASZUBUIULUPUJUSUGUHUPUJABUCUDUEUF $.
 
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-           Reciprocals
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-  $( ` _i ` times itself is minus 1.  (Contributed by NM, 6-May-1999.)  (Proof
-     shortened by Andrew Salmon, 19-Nov-2011.) $)
-  ixi $p |- ( _i x. _i ) = -u 1 $=
-    ( c1 cneg cc0 cmin co ci cmul df-neg caddc ax-i2m1 0cn ax-1cn ax-icn mulcli
-    wceq subadd2i mpbir eqtr2i ) ABCADEZFFGEZAHSTOTAIECOJCATKLFFMMNPQR $.
-
   ${
     $d x A $.
     $( Existence of reciprocal of positive real number.  (Contributed by Jim
@@ -69558,6 +69546,12 @@ $)
       ( ( x = ( r + ( _i x. s ) ) /\ y = ( t + ( _i x. u ) ) ) /\
       ( r #RR t \/ s #RR u ) ) } $.
   $}
+
+  $( ` _i ` times itself is minus 1.  (Contributed by NM, 6-May-1999.)  (Proof
+     shortened by Andrew Salmon, 19-Nov-2011.) $)
+  ixi $p |- ( _i x. _i ) = -u 1 $=
+    ( c1 cneg cc0 cmin co ci cmul df-neg caddc ax-i2m1 0cn ax-1cn ax-icn mulcli
+    wceq subadd2i mpbir eqtr2i ) ABCADEZFFGEZAHSTOTAIECOJCATKLFFMMNPQR $.
 
   $( The imaginary unit ` _i ` is not a real number.  (Contributed by NM,
      6-May-1999.) $)
@@ -70019,6 +70013,12 @@ $)
       ( cr wcel cc0 cle wbr cmul co mulge0 syl22anc ) ABHIJBKLCHIJCKLJBCMNKLD
       FEGBCOP $.
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Reciprocals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
