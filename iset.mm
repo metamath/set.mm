@@ -63101,7 +63101,7 @@ $)
 
   ${
     $d A f g $.  $d B f g $.  $d C f g $.  $d D f g $.
-    $( Strong extensionaltiy of addition (ordering version).  This is similar
+    $( Strong extensionality of addition (ordering version).  This is similar
        to ~ addext but for positive reals and based on less-than rather than
        apartness.  (Contributed by Jim Kingdon, 17-Feb-2020.) $)
     addextpr $p |- ( ( ( A e. P. /\ B e. P. ) /\ ( C e. P. /\ D e. P. ) ) ->
