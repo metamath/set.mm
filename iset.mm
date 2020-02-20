@@ -70020,6 +70020,19 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+  $( Lemma for ~ recexap .  (Contributed by Eric Schmidt, 23-May-2007.) $)
+  recextlem1 $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A + ( _i x. B ) ) x.
+      ( A - ( _i x. B ) ) ) = ( ( A x. A ) + ( B x. B ) ) ) $=
+    ( cc wcel wa ci cmul caddc cmin cneg ax-icn mulcl adantl sylan2 subdid wceq
+    co eqtrd anidms oveq12d simpl subcl adddird mulcom c1 oveq1i mulm1d syl5req
+    mpan ixi mul4 mpanl12 eqtr4d adantr negcld npncand subneg syl2an 3eqtrd ) A
+    CDZBCDZEZAFBGQZHQAVCIQZGQAVDGQZVCVDGQZHQAAGQZAVCGQZIQZVHBBGQZJZIQZHQZVGVJHQ
+    ZVBAVCVDUTVAUAZVAVCCDZUTFCDZVAVPKFBLUIZMZVAUTVPVDCDVRAVCUBNUCVBVEVIVFVLHVBA
+    AVCVOVOVSOVBVFVCAGQZVCVCGQZIQVLVBVCAVCVSVOVSOVBVHVTVKWAIVAUTVPVHVTPVRAVCUDN
+    VAVKWAPZUTVAWBVAVAEZVKFFGQZVJGQZWAWCWEUEJZVJGQVKWDWFVJGUJUFWCVJBBLZUGUHVQVQ
+    WCWEWAPKKFFBBUKULRSMTUMTVBVMVGVKIQZVNVBVGVHVKUTVGCDZVAUTWIAALSZUNVAUTVPVHCD
+    VRAVCLNVAVKCDZUTVAWKWCVJWGUOSMUPUTWIVJCDZWHVNPVAWJVAWLWGSVGVJUQURRUS $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
