@@ -69552,9 +69552,7 @@ $)
 
   ${
     $d r s t u x y $.
-    $( Define complex apartness.  Definition 6.1 of Skeleton for the Proof
-       development leading to the.  Fundamental Theorem of Algebra, Herman
-       Geuvers, Randy Pollack, Freek Wiedijk, Jan Zwanenburg, October 2, 2000.
+    $( Define complex apartness.  Definition 6.1 of [Geuvers], p. 17.
        (Contributed by Jim Kingdon, 26-Jan-2020.) $)
     df-ap $a |- # = { <. x , y >. | E. r e. RR E. s e. RR E. t e. RR E. u e. RR
       ( ( x = ( r + ( _i x. s ) ) /\ y = ( t + ( _i x. u ) ) ) /\
@@ -69946,6 +69944,17 @@ $)
       KUPXBJVQYFXBVQXLUPZURUSXBBVSXHUTXBXSYHXQMXBJVQYFYIVAVCVDUIXBXDYBXEYCXBWRW
       GXDYBTXIXKWLVPVEVFXBWSWHXEYCTXJXLWMVQVEVFVGVHVIVLVJVKVLVJVK $.
   $}
+
+  $( A product apart from zero.  Lemma 2.13 of [Geuvers], p. 6.  (Contributed
+     by Jim Kingdon, 19-Feb-2020.) $)
+  remulap0 $p |- ( ( A e. RR /\ B e. RR /\ ( A x. B ) # 0 ) ->
+      ( A # 0 /\ B # 0 ) ) $=
+    ( cr wcel cmul co cc0 cap wbr wo recnd breqtrrd wi remulext syl22anc mpd cc
+    wn wb apirr w3a simp3 simp2 mul02d simp1 0red orcomd 3syl mpbird mul01d jca
+    biorf ) ACDZBCDZABEFZGHIZUAZAGHIZBGHIZUQURBBHIZURJZUQURUTUQUOGBEFZHIZURUTJZ
+    UQUOGVBHUMUNUPUBZUQBUQBUMUNUPUCZKZUDLUQUMUNGCDZUNVCVDMUMUNUPUEZVFUQUFZVFABG
+    BNOPUGUQBQDUTRURVASVGBTUTURULUHUIUQUSAAHIZUSJZUQUOAGEFZHIZVLUQUOGVMHVEUQAUQ
+    AVIKZUJLUQUMUNUMVHVNVLMVIVFVIVJABAGNOPUQAQDVKRUSVLSVOATVKUSULUHUIUK $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
