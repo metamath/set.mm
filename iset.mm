@@ -69982,6 +69982,44 @@ $)
       ( cr wcel cc0 cmul co cle wbr msqge0 syl ) ABDEFBBGHIJCBKL $.
   $}
 
+  $( The product of two nonnegative numbers is nonnegative.  (Contributed by
+     NM, 8-Oct-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  mulge0 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\
+                ( B e. RR /\ 0 <_ B ) ) -> 0 <_ ( A x. B ) ) $=
+    ( cr wcel cc0 cle wbr wa clt wn ad2ant2r 0re sylancl cap wo wb reaplt mpan2
+    lenlt mpbird co remulcl ltnsym2 orc syl5ibr simplll simplrl remulap0 3expia
+    cmul wi imp simpld ad3antrrr mpbid mpan biimpa ad2antrr syl simprd ad2antrl
+    biorf adantr ad2antlr mulgt0d ex syld ancld mtod sylancr ) ACDZEAFGZHZBCDZE
+    BFGZHZHZEABUJUAZFGZVREIGZJZVQVTVTEVRIGZHZVQVRCDZECDZWCJVKVNWDVLVOABUBKZLVRE
+    UCMVQVTWBVQVTVRENGZWBVTWGVQVTWBOZVTWBUDVQWDWEWGWHPWFLVREQMUEVQWGWBVQWGHZABV
+    KVLVPWGUFVMVNVOWGUGWIEAIGZAEIGZWJOZWIAENGZWLWIWMBENGZVQWGWMWNHZVKVNWGWOUKVL
+    VOVKVNWGWOABUHUIKULZUMVKWMWLPZVLVPWGVKWEWQLAEQRUNUOWIWKJZWJWLPVMWRVPWGVKVLW
+    RWEVKVLWRPLEASUPUQURWKWJVBUSTWIEBIGZBEIGZWSOZWIWNXAWIWMWNWPUTVQWNXAPZWGVNXB
+    VMVOVNWEXBLBEQRVAVCUOWIWTJZWSXAPVPXCVMWGVNVOXCWEVNVOXCPLEBSUPUQVDWTWSVBUSTV
+    EVFVGVHVIVQWEWDVSWAPLWFEVRSVJT $.
+
+  ${
+    mulge0i.1 $e |- A e. RR $.
+    mulge0i.2 $e |- B e. RR $.
+    $( The product of two nonnegative numbers is nonnegative.  (Contributed by
+       NM, 30-Jul-1999.) $)
+    mulge0i $p |- ( ( 0 <_ A /\ 0 <_ B ) -> 0 <_ ( A x. B ) ) $=
+      ( cr wcel cc0 cle wbr wa cmul co mulge0 an4s mpanl12 ) AEFZBEFZGAHIZGBHIZ
+      JGABKLHIZCDPRQSTABMNO $.
+  $}
+
+  ${
+    mulge0d.1 $e |- ( ph -> A e. RR ) $.
+    mulge0d.2 $e |- ( ph -> B e. RR ) $.
+    mulge0d.3 $e |- ( ph -> 0 <_ A ) $.
+    mulge0d.4 $e |- ( ph -> 0 <_ B ) $.
+    $( The product of two nonnegative numbers is nonnegative.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    mulge0d $p |- ( ph -> 0 <_ ( A x. B ) ) $=
+      ( cr wcel cc0 cle wbr cmul co mulge0 syl22anc ) ABHIJBKLCHIJCKLJBCMNKLD
+      FEGBCOP $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
