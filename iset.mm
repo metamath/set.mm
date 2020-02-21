@@ -70158,6 +70158,23 @@ $)
     IZWAVSWBWCLVEFVFUCUDUEUFUGVIVHQFKHZJZVCVJWFFVHFLUJUKVCVGCDZWGVJUSZVCVEVFWDW
     EULWHQCDVSWIUMLVGQFUNUOUPUQVCVEVFWDWEURUT $.
 
+  ${
+    $d x y A $.  $d x y B $.
+    $( Existential uniqueness of reciprocals.  (Contributed by Jim Kingdon,
+       21-Feb-2020.) $)
+    receuap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+        E! x e. CC ( B x. x ) = A ) $=
+      ( vy cc wcel cc0 w3a cv cmul co wceq wrex wa wi wral 3adant1 oveq2 eqeq1d
+      c1 cap wbr wreu recexap simprl simpll mulcld oveq1 simplr mulassd mulid2d
+      ad2antll 3eqtr3d rspcev syl2anc rexlimdvaa 3adant3 mpd eqtr3 syl5ib 3expa
+      mulcanap expcom ralrimivv reu4 sylanbrc ) BEFZCEFZCGUAUBZHZCAIZJKZBLZAEMZ
+      VMCDIZJKZBLZNZVKVOLZOZDEPAEPVMAEUCVJVPTLZDEMZVNVHVIWBVGDCUDQVGVHWBVNOVIVG
+      VHNZWAVNDEWCVOEFZWANZNZVOBJKZEFCWGJKZBLZVNWFVOBWCWDWAUEZVGVHWEUFZUGWFVPBJ
+      KZTBJKZWHBWAWLWMLWCWDVPTBJUHULWFCVOBVGVHWEUIWJWKUJWFBWKUKUMVMWIAWGEVKWGLV
+      LWHBVKWGCJRSUNUOUPUQURVJVTADEEVHVIVKEFZWDNZVTOVGWOVHVINZVTWNWDWPVTVRVLVPL
+      WNWDWPHVSVLVPBUSVKVOCVBUTVAVCQVDVMVQADEVSVLVPBVKVOCJRSVEVF $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
