@@ -70132,6 +70132,19 @@ $)
     ( cc wcel cc0 cap wbr wa w3a simp1 simp2 simp3l simp3r mulcanap2d ) ADEZBDE
     ZCDEZCFGHZIZJABCPQTKPQTLPQRSMPQRSNO $.
 
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    mulcanapi.1 $e |- A e. CC $.
+    mulcanapi.2 $e |- B e. CC $.
+    mulcanapi.3 $e |- C e. CC $.
+    mulcanapi.4 $e |- C # 0 $.
+    $( Cancellation law for multiplication.  (Contributed by Jim Kingdon,
+       21-Feb-2020.) $)
+    mulcanapi $p |- ( ( C x. A ) = ( C x. B ) <-> A = B ) $=
+      ( cc wcel cc0 cap wbr wa cmul co wceq wb pm3.2i mulcanap mp3an ) AHIBHICH
+      IZCJKLZMCANOCBNOPABPQDEUAUBFGRABCST $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
