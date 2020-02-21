@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Feb-2020
+$( iset.mm - Version of 21-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -70068,6 +70068,30 @@ $)
       LXSLYFYRXLOYGWQWRVGTVHVIYAVJVKXHYMAYJFWMYJOXGYLNWMYJWTLVOVLVMVNVPVQVRUJTV
       SVTWAWBTXAWLXFUFXEBWTHIWCWDXAWPXIUFXEXAWOXHAFXAWNXGNBWTWMLWGVLWEWDWFVTWHW
       IWJ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.  $d x ph $.
+    mulcand.1 $e |- ( ph -> A e. CC ) $.
+    mulcand.2 $e |- ( ph -> B e. CC ) $.
+    mulcand.3 $e |- ( ph -> C e. CC ) $.
+    mulcand.4 $e |- ( ph -> C # 0 ) $.
+    $( Cancellation law for multiplication.  (Contributed by Jim Kingdon,
+       21-Feb-2020.) $)
+    mulcanapd $p |- ( ph -> ( ( C x. A ) = ( C x. B ) <-> A = B ) ) $=
+      ( vx cmul co wceq c1 cc wcel wa oveq2 adantr oveq1d mulassd cv wi cc0 cap
+      wrex recexap syl2anc simprl mulcomd simprr mulid2d 3eqtr3d eqeq12d syl5ib
+      wbr eqtrd rexlimddv impbid1 ) ADBJKZDCJKZLZBCLZADIUAZJKZMLZVAVBUBINADNOZD
+      UCUDUOVEINUEGHIDUFUGVAVCUSJKZVCUTJKZLAVCNOZVEPZPZVBUSUTVCJQVKVGBVHCVKVCDJ
+      KZBJKMBJKVGBVKVLMBJVKVLVDMVKVCDAVIVEUHZAVFVJGRZUIAVIVEUJUPZSVKVCDBVMVNABN
+      OVJERZTVKBVPUKULVKVLCJKMCJKVHCVKVLMCJVOSVKVCDCVMVNACNOVJFRZTVKCVQUKULUMUN
+      UQBCDJQUR $.
+
+    $( Cancellation law for multiplication.  (Contributed by Jim Kingdon,
+       21-Feb-2020.) $)
+    mulcanap2d $p |- ( ph -> ( ( A x. C ) = ( B x. C ) <-> A = B ) ) $=
+      ( cmul co wceq mulcomd eqeq12d mulcanapd bitrd ) ABDIJZCDIJZKDBIJZDCIJZKB
+      CKAPRQSABDEGLACDFGLMABCDEFGHNO $.
   $}
 
 $(
