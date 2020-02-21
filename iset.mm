@@ -70094,6 +70094,30 @@ $)
       CKAPRQSABDEGLACDFGLMABCDEFGHNO $.
   $}
 
+  ${
+    mulcanapad.1 $e |- ( ph -> A e. CC ) $.
+    mulcanapad.2 $e |- ( ph -> B e. CC ) $.
+    mulcanapad.3 $e |- ( ph -> C e. CC ) $.
+    mulcanapad.4 $e |- ( ph -> C # 0 ) $.
+    ${
+      mulcanapad.5 $e |- ( ph -> ( C x. A ) = ( C x. B ) ) $.
+      $( Cancellation of a nonzero factor on the left in an equation.  One-way
+         deduction form of ~ mulcanapd .  (Contributed by Jim Kingdon,
+         21-Feb-2020.) $)
+      mulcanapad $p |- ( ph -> A = B ) $=
+        ( cmul co wceq mulcanapd mpbid ) ADBJKDCJKLBCLIABCDEFGHMN $.
+    $}
+
+    ${
+      mulcanap2ad.5 $e |- ( ph -> ( A x. C ) = ( B x. C ) ) $.
+      $( Cancellation of a nonzero factor on the right in an equation.  One-way
+         deduction form of ~ mulcanap2d .  (Contributed by Jim Kingdon,
+         21-Feb-2020.) $)
+      mulcanap2ad $p |- ( ph -> A = B ) $=
+        ( cmul co wceq mulcanap2d mpbid ) ABDJKCDJKLBCLIABCDEFGHMN $.
+    $}
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
