@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Feb-2020
+$( iset.mm - Version of 20-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59199,7 +59199,7 @@ $)
     $d x y z A $.
     $( Existence of positive fraction reciprocal.  (Contributed by Jim Kingdon,
        20-Sep-2019.) $)
-    recex $p |- ( A e. Q. -> E. y ( y e. Q. /\ ( A .Q y ) = 1Q ) ) $=
+    recexnq $p |- ( A e. Q. -> E. y ( y e. Q. /\ ( A .Q y ) = 1Q ) ) $=
       ( vx vz cv cnq wcel cop ceq cec cmq co c1q wceq wa wex df-nqqs eqeq1d syl
       cnpi oveq1 anbi2d exbidv cxp cqs opelxpi ancoms enqex syl6eleqr mulcompig
       ecelqsi cmi opeq2d eceq1d mulclpi 1qec mulpipqqs an42s 3eqtr4rd jca eleq1
@@ -59218,12 +59218,12 @@ $)
     recmulnqg $p |- ( ( A e. Q. /\ B e. Q. ) ->
       ( ( *Q ` A ) = B <-> ( A .Q B ) = 1Q ) ) $=
       ( vy vx vz vw vv cnq wcel wa crq cfv wceq cmq co c1q oveq1 eqeq1d copab
-      cv anbi2d eleq1 oveq2 anbi12d wex wmo weu 1nq mulcomnqg mulassnqg mulidnq
-      recex caovimo eu5 sylanbrc w3a df-rq 3anass opabbii eqtri fvopab3g adantl
-      wb ibar bitr4d ) AHIZBHIZJAKLBMVGABNOZPMZJZVICTZHIZDTZVKNOZPMZJZVLAVKNOZP
-      MZJVJDCABHHKVMAMZVOVRVLVSVNVQPVMAVKNQRUAVKBMZVLVGVRVIVKBHUBVTVQVHPVKBANUC
-      RUDVMHIZVPCUEVPCUFVPCUGCVMULEFGCVMPHNUHETZFTZUIWBWCGTUJWBUKUMVPCUNUOKWAVL
-      VOUPZDCSWAVPJZDCSDCUQWDWEDCWAVLVOURUSUTVAVGVIVJVCVFVGVIVDVBVE $.
+      cv anbi2d eleq1 oveq2 anbi12d wex wmo weu recexnq 1nq mulcomnqg mulassnqg
+      mulidnq caovimo eu5 sylanbrc w3a df-rq 3anass opabbii eqtri fvopab3g ibar
+      wb adantl bitr4d ) AHIZBHIZJAKLBMVGABNOZPMZJZVICTZHIZDTZVKNOZPMZJZVLAVKNO
+      ZPMZJVJDCABHHKVMAMZVOVRVLVSVNVQPVMAVKNQRUAVKBMZVLVGVRVIVKBHUBVTVQVHPVKBAN
+      UCRUDVMHIZVPCUEVPCUFVPCUGCVMUHEFGCVMPHNUIETZFTZUJWBWCGTUKWBULUMVPCUNUOKWA
+      VLVOUPZDCSWAVPJZDCSDCUQWDWEDCWAVLVOURUSUTVAVGVIVJVCVFVGVIVBVDVE $.
   $}
 
   ${
@@ -59231,9 +59231,9 @@ $)
     $( Closure law for positive fraction reciprocal.  (Contributed by NM,
        6-Mar-1996.)  (Revised by Mario Carneiro, 8-May-2013.) $)
     recclnq $p |- ( A e. Q. -> ( *Q ` A ) e. Q. ) $=
-      ( vy cnq wcel cv cmq co c1q wa wex crq cfv recex recmulnqg biimpar eleq1a
-      wceq wi ad2antlr mpd expl exlimdv ) ACDZBEZCDZAUDFGHQZIZBJAKLZCDZBAMUCUGU
-      IBUCUEUFUIUCUEIZUFIUHUDQZUIUJUKUFAUDNOUEUKUIRUCUFUDCUHPSTUAUBT $.
+      ( vy cnq wcel cv cmq co c1q wceq wa wex crq cfv recexnq recmulnqg biimpar
+      wi eleq1a ad2antlr mpd expl exlimdv ) ACDZBEZCDZAUDFGHIZJZBKALMZCDZBANUCU
+      GUIBUCUEUFUIUCUEJZUFJUHUDIZUIUJUKUFAUDOPUEUKUIQUCUFUDCUHRSTUAUBT $.
   $}
 
   $( A positive fraction times its reciprocal is 1.  (Contributed by NM,
@@ -69515,18 +69515,6 @@ $)
     BCDZEZABFZABGHZIZUIUJABJHZBAJHZKZIZULUIAAJHZIZUJUPUGURUHALMUJUQUOUQUQUQKUJU
     OUQNUJUQUMUQUNABAJOABAJPQRSTUIUKUOABUASZUBUIULUPUJUSUGUHUPUJABUCUDUEUF $.
 
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-           Reciprocals
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-  $( ` _i ` times itself is minus 1.  (Contributed by NM, 6-May-1999.)  (Proof
-     shortened by Andrew Salmon, 19-Nov-2011.) $)
-  ixi $p |- ( _i x. _i ) = -u 1 $=
-    ( c1 cneg cc0 cmin co ci cmul df-neg caddc ax-i2m1 0cn ax-1cn ax-icn mulcli
-    wceq subadd2i mpbir eqtr2i ) ABCADEZFFGEZAHSTOTAIECOJCATKLFFMMNPQR $.
-
   ${
     $d x A $.
     $( Existence of reciprocal of positive real number.  (Contributed by Jim
@@ -69558,6 +69546,12 @@ $)
       ( ( x = ( r + ( _i x. s ) ) /\ y = ( t + ( _i x. u ) ) ) /\
       ( r #RR t \/ s #RR u ) ) } $.
   $}
+
+  $( ` _i ` times itself is minus 1.  (Contributed by NM, 6-May-1999.)  (Proof
+     shortened by Andrew Salmon, 19-Nov-2011.) $)
+  ixi $p |- ( _i x. _i ) = -u 1 $=
+    ( c1 cneg cc0 cmin co ci cmul df-neg caddc ax-i2m1 0cn ax-1cn ax-icn mulcli
+    wceq subadd2i mpbir eqtr2i ) ABCADEZFFGEZAHSTOTAIECOJCATKLFFMMNPQR $.
 
   $( The imaginary unit ` _i ` is not a real number.  (Contributed by NM,
      6-May-1999.) $)
@@ -69980,6 +69974,100 @@ $)
        27-May-2016.) $)
     msqge0d $p |- ( ph -> 0 <_ ( A x. A ) ) $=
       ( cr wcel cc0 cmul co cle wbr msqge0 syl ) ABDEFBBGHIJCBKL $.
+  $}
+
+  $( The product of two nonnegative numbers is nonnegative.  (Contributed by
+     NM, 8-Oct-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  mulge0 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\
+                ( B e. RR /\ 0 <_ B ) ) -> 0 <_ ( A x. B ) ) $=
+    ( cr wcel cc0 cle wbr wa clt wn ad2ant2r 0re sylancl cap wo wb reaplt mpan2
+    lenlt mpbird co remulcl ltnsym2 orc syl5ibr simplll simplrl remulap0 3expia
+    cmul wi imp simpld ad3antrrr mpbid mpan biimpa ad2antrr syl simprd ad2antrl
+    biorf adantr ad2antlr mulgt0d ex syld ancld mtod sylancr ) ACDZEAFGZHZBCDZE
+    BFGZHZHZEABUJUAZFGZVREIGZJZVQVTVTEVRIGZHZVQVRCDZECDZWCJVKVNWDVLVOABUBKZLVRE
+    UCMVQVTWBVQVTVRENGZWBVTWGVQVTWBOZVTWBUDVQWDWEWGWHPWFLVREQMUEVQWGWBVQWGHZABV
+    KVLVPWGUFVMVNVOWGUGWIEAIGZAEIGZWJOZWIAENGZWLWIWMBENGZVQWGWMWNHZVKVNWGWOUKVL
+    VOVKVNWGWOABUHUIKULZUMVKWMWLPZVLVPWGVKWEWQLAEQRUNUOWIWKJZWJWLPVMWRVPWGVKVLW
+    RWEVKVLWRPLEASUPUQURWKWJVBUSTWIEBIGZBEIGZWSOZWIWNXAWIWMWNWPUTVQWNXAPZWGVNXB
+    VMVOVNWEXBLBEQRVAVCUOWIWTJZWSXAPVPXCVMWGVNVOXCWEVNVOXCPLEBSUPUQVDWTWSVBUSTV
+    EVFVGVHVIVQWEWDVSWAPLWFEVRSVJT $.
+
+  ${
+    mulge0i.1 $e |- A e. RR $.
+    mulge0i.2 $e |- B e. RR $.
+    $( The product of two nonnegative numbers is nonnegative.  (Contributed by
+       NM, 30-Jul-1999.) $)
+    mulge0i $p |- ( ( 0 <_ A /\ 0 <_ B ) -> 0 <_ ( A x. B ) ) $=
+      ( cr wcel cc0 cle wbr wa cmul co mulge0 an4s mpanl12 ) AEFZBEFZGAHIZGBHIZ
+      JGABKLHIZCDPRQSTABMNO $.
+  $}
+
+  ${
+    mulge0d.1 $e |- ( ph -> A e. RR ) $.
+    mulge0d.2 $e |- ( ph -> B e. RR ) $.
+    mulge0d.3 $e |- ( ph -> 0 <_ A ) $.
+    mulge0d.4 $e |- ( ph -> 0 <_ B ) $.
+    $( The product of two nonnegative numbers is nonnegative.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    mulge0d $p |- ( ph -> 0 <_ ( A x. B ) ) $=
+      ( cr wcel cc0 cle wbr cmul co mulge0 syl22anc ) ABHIJBKLCHIJCKLJBCMNKLDFE
+      GBCOP $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Reciprocals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Lemma for ~ recexap .  (Contributed by Eric Schmidt, 23-May-2007.) $)
+  recextlem1 $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A + ( _i x. B ) ) x.
+      ( A - ( _i x. B ) ) ) = ( ( A x. A ) + ( B x. B ) ) ) $=
+    ( cc wcel wa ci cmul caddc cmin cneg ax-icn mulcl adantl sylan2 subdid wceq
+    co eqtrd anidms oveq12d simpl subcl adddird mulcom c1 oveq1i mulm1d syl5req
+    mpan ixi mul4 mpanl12 eqtr4d adantr negcld npncand subneg syl2an 3eqtrd ) A
+    CDZBCDZEZAFBGQZHQAVCIQZGQAVDGQZVCVDGQZHQAAGQZAVCGQZIQZVHBBGQZJZIQZHQZVGVJHQ
+    ZVBAVCVDUTVAUAZVAVCCDZUTFCDZVAVPKFBLUIZMZVAUTVPVDCDVRAVCUBNUCVBVEVIVFVLHVBA
+    AVCVOVOVSOVBVFVCAGQZVCVCGQZIQVLVBVCAVCVSVOVSOVBVHVTVKWAIVAUTVPVHVTPVRAVCUDN
+    VAVKWAPZUTVAWBVAVAEZVKFFGQZVJGQZWAWCWEUEJZVJGQVKWDWFVJGUJUFWCVJBBLZUGUHVQVQ
+    WCWEWAPKKFFBBUKULRSMTUMTVBVMVGVKIQZVNVBVGVHVKUTVGCDZVAUTWIAALSZUNVAUTVPVHCD
+    VRAVCLNVAVKCDZUTVAWKWCVJWGUOSMUPUTWIVJCDZWHVNPVAWJVAWLWGSVGVJUQURRUS $.
+
+  $( Lemma for ~ recexap .  (Contributed by Jim Kingdon, 20-Feb-2020.) $)
+  recexaplem2 $p |- ( ( A e. RR /\ B e. RR /\ ( A + ( _i x. B ) ) # 0 ) ->
+      ( ( A x. A ) + ( B x. B ) ) # 0 ) $=
+    ( cr wcel ci cmul co caddc cc0 cap wbr clt wo wa wb 0re cle remulcl anim12i
+    anidms w3a ax-icn mul01i oveq2i eqtr2i breq2i apreim mpanr12 syl5bb pm5.32i
+    00id adantr apsqgt0 msqge0 an32s addgtge0 syl2anc anassrs jaodan sylbi olcd
+    addgegt0 3impa simp1 remulcld simp2 readdcld reaplt sylancl mpbird ) ACDZBC
+    DZAEBFGHGZIJKZUAZAAFGZBBFGZHGZIJKZVRILKZIVRLKZMZVOWAVTVKVLVNWAVKVLNZVNNWCAI
+    JKZBIJKZMZNWAWCVNWFVNVMIEIFGZHGZJKZWCWFIWHVMJWHIIHGIWGIIHEUBUCUDUKUEUFWCICD
+    ZWJWIWFOPPABIIUGUHUIUJWCWDWAWEWCWDNVPCDZVQCDZNZIVPLKZIVQQKZNZWAWCWMWDVKWKVL
+    WLVKWKAARTVLWLBBRTSZULVKWDVLWPVKWDNWNVLWOAUMBUNSUOVPVQUPUQWCWENWMIVPQKZIVQL
+    KZNZWAWCWMWEWQULVKVLWEWTVKWRVLWENWSAUNBUMSURVPVQVBUQUSUTVCVAVOVRCDWJVSWBOVO
+    VPVQVOAAVKVLVNVDZXAVEVOBBVKVLVNVFZXBVEVGPVRIVHVIVJ $.
+
+  ${
+    $d x y a b A $.
+    $( Existence of reciprocal of nonzero complex number.  (Contributed by Jim
+       Kingdon, 20-Feb-2020.) $)
+    recexap $p |- ( ( A e. CC /\ A # 0 ) -> E. x e. CC ( A x. x ) = 1 ) $=
+      ( va vb vy cc wcel cc0 cap wbr cv cmul co c1 wceq wrex cr wi wa adantr ci
+      caddc cnre recexaplem2 3expia wb remulcl anidms readdcl syl2an 0re apreap
+      creap sylancl recexre sylan recn cmin ax-icn mulcl mpan subcl addcl simpr
+      sylan2 mulassd recextlem1 oveq1d eqtr3d id sylan9eq eqeq1d rspcev syl2anc
+      oveq2 exp31 syl5 rexlimdv mpd ex sylbid syld breq1 adantl rexbidv 3imtr4d
+      oveq1 rexlimivv syl imp ) BFGZBHIJZBAKZLMZNOZAFPZWKBCKZUADKZLMZUBMZOZDQPC
+      QPWLWPRZCDBUCXAXBCDQQWQQGZWRQGZSZXAXBXEXASWTHIJZWTWMLMZNOZAFPZWLWPXEXFXIR
+      XAXEXFWQWQLMZWRWRLMZUBMZHIJZXIXCXDXFXMWQWRUDUEXEXMXLHUMJZXIXEXLQGZHQGXMXN
+      UFXCXJQGZXKQGZXOXDXCXPWQWQUGUHXDXQWRWRUGUHXJXKUIUJZUKXLHULUNXEXNXIXEXNSXL
+      EKZLMZNOZEQPZXIXEXOXNYBXREXLUOUPXEYBXIRZXNXCWQFGZWRFGZYCXDWQUQWRUQYDYESZY
+      AXIEQXSQGXSFGZYFYAXIRXSUQYFYGYAXIYFYGSZYASWQWSURMZXSLMZFGZWTYJLMZNOZXIYHY
+      KYAYFYIFGZYGYKYEYDWSFGZYNUAFGYEYOUSUAWRUTVAZWQWSVBVEZYIXSUTUPTYHYAYLXTNYH
+      WTYILMZXSLMYLXTYHWTYIXSYFWTFGZYGYEYDYOYSYPWQWSVCVETYFYNYGYQTYFYGVDVFYHYRX
+      LXSLYFYRXLOYGWQWRVGTVHVIYAVJVKXHYMAYJFWMYJOXGYLNWMYJWTLVOVLVMVNVPVQVRUJTV
+      SVTWAWBTXAWLXFUFXEBWTHIWCWDXAWPXIUFXEXAWOXHAFXAWNXGNBWTWMLWGVLWEWDWFVTWHW
+      IWJ $.
   $}
 
 $(
