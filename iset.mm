@@ -70145,6 +70145,19 @@ $)
       IZCJKLZMCANOCBNOPABPQDEUAUBFGRABCST $.
   $}
 
+  $( Property of numbers whose product equals their sum.  Equation 5 of
+     [Kreyszig] p. 12.  (Contributed by NM, 13-Nov-2006.) $)
+  muleqadd $p |- ( ( A e. CC /\ B e. CC ) ->
+             ( ( A x. B ) = ( A + B ) <-> ( ( A - 1 ) x. ( B - 1 ) ) = 1 ) ) $=
+    ( cc wcel wa c1 cmin co cmul wceq caddc ax-1cn mulsub mpanr2 mpanl2 mulid1i
+    cc0 oveq2i a1i mulid1 oveqan12d oveq12d addsub mp3an2 syl2anc 3eqtrd eqeq1d
+    mulcl addcl addid2i eqeq2i subcld 0cn addcan2 mp3an23 syl syl5rbbr subeq0ad
+    wb 3bitr2rd ) ACDZBCDZEZAFGHBFGHIHZFJABIHZABKHZGHZFKHZFJZVGQJZVEVFJVCVDVHFV
+    CVDVEFFIHZKHZAFIHZBFIHZKHZGHZVEFKHZVFGHZVHVAFCDZVBVDVPJZLVAVSEVBVSVTLAFBFMN
+    OVCVLVQVOVFGVLVQJVCVKFVEKFLPRSVAVBVMAVNBKATBTUAUBVCVECDZVFCDZVRVHJZABUHZABU
+    IZWAVSWBWCLVEFVFUCUDUEUFUGVIVHQFKHZJZVCVJWFFVHFLUJUKVCVGCDZWGVJUSZVCVEVFWDW
+    EULWHQCDVSWIUMLVGQFUNUOUPUQVCVEVFWDWEURUT $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
