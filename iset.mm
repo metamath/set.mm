@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Feb-2020
+$( iset.mm - Version of 20-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -70032,6 +70032,43 @@ $)
     VAVKWAPZUTVAWBVAVAEZVKFFGQZVJGQZWAWCWEUEJZVJGQVKWDWFVJGUJUFWCVJBBLZUGUHVQVQ
     WCWEWAPKKFFBBUKULRSMTUMTVBVMVGVKIQZVNVBVGVHVKUTVGCDZVAUTWIAALSZUNVAUTVPVHCD
     VRAVCLNVAVKCDZUTVAWKWCVJWGUOSMUPUTWIVJCDZWHVNPVAWJVAWLWGSVGVJUQURRUS $.
+
+  $( Lemma for ~ recexap .  (Contributed by Jim Kingdon, 20-Feb-2020.) $)
+  recexaplem2 $p |- ( ( A e. RR /\ B e. RR /\ ( A + ( _i x. B ) ) # 0 ) ->
+      ( ( A x. A ) + ( B x. B ) ) # 0 ) $=
+    ( cr wcel ci cmul co caddc cc0 cap wbr clt wo wa wb 0re cle remulcl anim12i
+    anidms w3a ax-icn mul01i oveq2i eqtr2i breq2i apreim mpanr12 syl5bb pm5.32i
+    00id adantr apsqgt0 msqge0 an32s addgtge0 syl2anc anassrs jaodan sylbi olcd
+    addgegt0 3impa simp1 remulcld simp2 readdcld reaplt sylancl mpbird ) ACDZBC
+    DZAEBFGHGZIJKZUAZAAFGZBBFGZHGZIJKZVRILKZIVRLKZMZVOWAVTVKVLVNWAVKVLNZVNNWCAI
+    JKZBIJKZMZNWAWCVNWFVNVMIEIFGZHGZJKZWCWFIWHVMJWHIIHGIWGIIHEUBUCUDUKUEUFWCICD
+    ZWJWIWFOPPABIIUGUHUIUJWCWDWAWEWCWDNVPCDZVQCDZNZIVPLKZIVQQKZNZWAWCWMWDVKWKVL
+    WLVKWKAARTVLWLBBRTSZULVKWDVLWPVKWDNWNVLWOAUMBUNSUOVPVQUPUQWCWENWMIVPQKZIVQL
+    KZNZWAWCWMWEWQULVKVLWEWTVKWRVLWENWSAUNBUMSURVPVQVBUQUSUTVCVAVOVRCDWJVSWBOVO
+    VPVQVOAAVKVLVNVDZXAVEVOBBVKVLVNVFZXBVEVGPVRIVHVIVJ $.
+
+  ${
+    $d x y a b A $.
+    $( Existence of reciprocal of nonzero complex number.  (Contributed by Jim
+       Kingdon, 20-Feb-2020.) $)
+    recexap $p |- ( ( A e. CC /\ A # 0 ) -> E. x e. CC ( A x. x ) = 1 ) $=
+      ( va vb vy cc wcel cc0 cap wbr cv cmul co c1 wceq wrex cr wi wa adantr ci
+      caddc cnre recexaplem2 3expia wb remulcl anidms readdcl syl2an 0re apreap
+      creap sylancl recexre sylan recn cmin ax-icn mulcl mpan subcl addcl simpr
+      sylan2 mulassd recextlem1 oveq1d eqtr3d id sylan9eq eqeq1d rspcev syl2anc
+      oveq2 exp31 syl5 rexlimdv mpd ex sylbid syld breq1 adantl rexbidv 3imtr4d
+      oveq1 rexlimivv syl imp ) BFGZBHIJZBAKZLMZNOZAFPZWKBCKZUADKZLMZUBMZOZDQPC
+      QPWLWPRZCDBUCXAXBCDQQWQQGZWRQGZSZXAXBXEXASWTHIJZWTWMLMZNOZAFPZWLWPXEXFXIR
+      XAXEXFWQWQLMZWRWRLMZUBMZHIJZXIXCXDXFXMWQWRUDUEXEXMXLHUMJZXIXEXLQGZHQGXMXN
+      UFXCXJQGZXKQGZXOXDXCXPWQWQUGUHXDXQWRWRUGUHXJXKUIUJZUKXLHULUNXEXNXIXEXNSXL
+      EKZLMZNOZEQPZXIXEXOXNYBXREXLUOUPXEYBXIRZXNXCWQFGZWRFGZYCXDWQUQWRUQYDYESZY
+      AXIEQXSQGXSFGZYFYAXIRXSUQYFYGYAXIYFYGSZYASWQWSURMZXSLMZFGZWTYJLMZNOZXIYHY
+      KYAYFYIFGZYGYKYEYDWSFGZYNUAFGYEYOUSUAWRUTVAZWQWSVBVEZYIXSUTUPTYHYAYLXTNYH
+      WTYILMZXSLMYLXTYHWTYIXSYFWTFGZYGYEYDYOYSYPWQWSVCVETYFYNYGYQTYFYGVDVFYHYRX
+      LXSLYFYRXLOYGWQWRVGTVHVIYAVJVKXHYMAYJFWMYJOXGYLNWMYJWTLVOVLVMVNVPVQVRUJTV
+      SVTWAWBTXAWLXFUFXEBWTHIWCWDXAWPXIUFXEXAWOXHAFXAWNXGNBWTWMLWGVLWEWDWFVTWHW
+      IWJ $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
