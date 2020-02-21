@@ -70118,6 +70118,20 @@ $)
     $}
   $}
 
+  $( Cancellation law for multiplication (full theorem form).  (Contributed by
+     Jim Kingdon, 21-Feb-2020.) $)
+  mulcanap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) ) ->
+                 ( ( C x. A ) = ( C x. B ) <-> A = B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a simp1 simp2 simp3l simp3r mulcanapd ) ADEZBDEZ
+    CDEZCFGHZIZJABCPQTKPQTLPQRSMPQRSNO $.
+
+  $( Cancellation law for multiplication.  (Contributed by Jim Kingdon,
+     21-Feb-2020.) $)
+  mulcanap2 $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) ) ->
+                 ( ( A x. C ) = ( B x. C ) <-> A = B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a simp1 simp2 simp3l simp3r mulcanap2d ) ADEZBDE
+    ZCDEZCFGHZIZJABCPQTKPQTLPQRSMPQRSNO $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
