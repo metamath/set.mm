@@ -69508,7 +69508,9 @@ $)
       ADLWAABUIXMVTADXLVTUJULUMUOVKVNVMVO $.
   $}
 
-  $( Real apartness is tight.  (Contributed by Jim Kingdon, 30-Jan-2020.) $)
+  $( Real apartness is tight.  Beyond the development of apartness itself,
+     proofs should use ~ apti .  (Contributed by Jim Kingdon, 30-Jan-2020.)
+     (New usage is discouraged.) $)
   reapti $p |- ( ( A e. RR /\ B e. RR ) -> ( A = B <-> -. A #RR B ) ) $=
     ( cr wcel wa wceq creap wbr wn clt wo ltnr adantr oridm breq2 breq1 orbi12d
     syl5bbr notbid syl5ibcom reapval sylibrd axapti 3expia sylbid impbid ) ACDZ
@@ -70013,6 +70015,33 @@ $)
       ( cr wcel cc0 cle wbr cmul co mulge0 syl22anc ) ABHIJBKLCHIJCKLJBCMNKLDFE
       GBCOP $.
   $}
+
+  ${
+    $d A w x y z $.  $d B w x y z $.
+    $( Complex apartness is tight.  (Contributed by Jim Kingdon,
+       21-Feb-2020.) $)
+    apti $p |- ( ( A e. CC /\ B e. CC ) -> ( A = B <-> -. A # B ) ) $=
+      ( vx vy vz vw cc wcel wa cv co wceq cr wrex cap wbr wn wb syl2anc notbid
+      ci cmul caddc cnre adantr adantl ad2antrr ax-ia2 ad3antrrr simplr simpllr
+      cru eqeq12d apreim ioran syl6bb breq12d simpld creap reapti apreap bitr4d
+      wo simprd anbi12d 3bitr4d ex rexlimdvva mpd ) AGHZBGHZIZACJZUADJZUBKUCKZL
+      ZDMNCMNZABLZABOPZQZRZVJVQVKCDAUDUEVLVPWACDMMVLVMMHZVNMHZIZIZVPWAWEVPIZBEJ
+      ZUAFJZUBKUCKZLZFMNEMNZWAVLWKWDVPVKWKVJEFBUDUFUGWFWJWAEFMMWFWGMHZWHMHZIZIZ
+      WJWAWOWJIZVOWILZVMWGLZVNWHLZIZVRVTWPWDWNWQWTRWEWDVPWNWJVLWDUHUIZWFWNWJUJZ
+      VMVNWGWHULSWPAVOBWIWEVPWNWJUKZWOWJUHZUMWPVOWIOPZQZVMWGOPZQZVNWHOPZQZIZVTW
+      TWPWDWNXFXKRXAXBWDWNIZXFXGXIVCZQXKXLXEXMVMVNWGWHUNTXGXIUOUPSWPVSXEWPAVOBW
+      IOXCXDUQTWPWRXHWSXJWPWBWLWRXHRWPWBWCXAURWPWLWMXBURWBWLIZWRVMWGUSPZQXHVMWG
+      UTXNXGXOVMWGVATVBSWPWCWMWSXJRWPWBWCXAVDWPWLWMXBVDWCWMIZWSVNWHUSPZQXJVNWHU
+      TXPXIXQVNWHVATVBSVEVFVFVGVHVIVGVHVI $.
+  $}
+
+  $( Apartness implies negated equality.  We cannot in general prove the
+     converse, which is the whole point of having separate notations for
+     apartness and negated equality.  (Contributed by Jim Kingdon,
+     21-Feb-2020.) $)
+  apne $p |- ( ( A e. CC /\ B e. CC ) -> ( A # B -> A =/= B ) ) $=
+    ( cc wcel wa cap wbr wceq wn apti biimpd necon2ad ) ACDBCDEZABFGZABMABHNIAB
+    JKL $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
