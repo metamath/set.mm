@@ -70223,6 +70223,22 @@ $)
                    ( iota_ z e. CC ( y x. z ) = x ) ) $.
   $}
 
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y C $.
+    $( Value of division: the (unique) element ` x ` such that
+       ` ( B x. x ) = A ` .  This is meaningful only when ` B ` is apart from
+       zero.  (Contributed by Jim Kingdon, 21-Feb-2020.) $)
+    divvalap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+        ( A / B ) = ( iota_ x e. CC ( B x. x ) = A ) ) $=
+      ( vz vy cc wcel cc0 cap wbr w3a csn cdif cv cmul wceq crio cdiv riotabidv
+      co simp1 wne simp2 wi 0cn apne mpan2 adantl eldifsn sylanbrc wreu receuap
+      3impia riotacl syl eqeq2 oveq1 eqeq1d df-div ovmpt2g syl3anc ) BFGZCFGZCH
+      IJZKZVBCFHLMZGZCANZOTZBPZAFQZFGZBCRTVKPVBVCVDUAVEVCCHUBZVGVBVCVDUCVBVCVDV
+      MVCVDVMUDZVBVCHFGVNUECHUFUGUHUMCFHUIUJVEVJAFUKVLABCULVJAFUNUODEBCFVFENZVH
+      OTZDNZPZAFQVKRVPBPZAFQFVQBPVRVSAFVQBVPUPSVOCPZVSVJAFVTVPVIBVOCVHOUQURSDEA
+      USUTVA $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
