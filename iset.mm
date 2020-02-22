@@ -70278,6 +70278,21 @@ $)
     ( c1 cc wcel cc0 cap wbr cdiv co ax-1cn divclap mp3an1 ) BCDACDAEFGBAHICDJB
     AKL $.
 
+  $( A cancellation law for division.  (Contributed by Jim Kingdon,
+     22-Feb-2020.) $)
+  divcanap2 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+      ( B x. ( A / B ) ) = A ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv co wceq cmul eqid wa wb simp1 divclap 3simpc
+    divmulap syl3anc mpbii ) ACDZBCDZBEFGZHZABIJZUFKZBUFLJAKZUFMUEUBUFCDUCUDNUG
+    UHOUBUCUDPABQUBUCUDRAUFBSTUA $.
+
+  $( A cancellation law for division.  (Contributed by Jim Kingdon,
+     22-Feb-2020.) $)
+  divcanap1 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 )
+      -> ( ( A / B ) x. B ) = A ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv cmul divclap simp2 mulcomd divcanap2 eqtrd
+    co ) ACDZBCDZBEFGZHZABIPZBJPBUAJPATUABABKQRSLMABNO $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
