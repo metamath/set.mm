@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Feb-2020
+$( iset.mm - Version of 22-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -70215,7 +70215,7 @@ $)
 
   ${
     $d x y z $.
-    $( Define division.  Theorem ~ divmuli relates it to multiplication, and
+    $( Define division.  Theorem ~ divmulap relates it to multiplication, and
        ~ divcli and ~ redivcli prove its closure laws.  (Contributed by NM,
        2-Feb-1995.)  (Revised by Mario Carneiro, 1-Apr-2014.)
        (New usage is discouraged.) $)
@@ -70237,6 +70237,16 @@ $)
       MVCVDVMUDZVBVCHFGVNUECHUFUGUHUMCFHUIUJVEVJAFUKVLABCULVJAFUNUODEBCFVFENZVH
       OTZDNZPZAFQVKRVPBPZAFQFVQBPVRVSAFVQBVPUPSVOCPZVSVJAFVTVPVIBVOCVHOUQURSDEA
       USUTVA $.
+
+    $( Relationship between division and multiplication.  (Contributed by Jim
+       Kingdon, 22-Feb-2020.) $)
+    divmulap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+        -> ( ( A / C ) = B <-> ( C x. B ) = A ) ) $=
+      ( vx cc wcel cc0 cap wbr wa w3a cdiv co wceq cv cmul 3expb 3adant2 eqeq1d
+      crio divvalap wreu wb simp2 receuap oveq2 riota2 syl2anc bitr4d ) AEFZBEF
+      ZCEFZCGHIZJZKZACLMZBNCDOZPMZANZDETZBNZCBPMZANZUOUPUTBUJUNUPUTNZUKUJULUMVD
+      DACUAQRSUOUKUSDEUBZVCVAUCUJUKUNUDUJUNVEUKUJULUMVEDACUEQRUSVCDEBUQBNURVBAU
+      QBCPUFSUGUHUI $.
   $}
 
 $(
