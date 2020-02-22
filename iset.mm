@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Feb-2020
+$( iset.mm - Version of 21-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -70068,6 +70068,111 @@ $)
       LXSLYFYRXLOYGWQWRVGTVHVIYAVJVKXHYMAYJFWMYJOXGYLNWMYJWTLVOVLVMVNVPVQVRUJTV
       SVTWAWBTXAWLXFUFXEBWTHIWCWDXAWPXIUFXEXAWOXHAFXAWNXGNBWTWMLWGVLWEWDWFVTWHW
       IWJ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.  $d x ph $.
+    mulcand.1 $e |- ( ph -> A e. CC ) $.
+    mulcand.2 $e |- ( ph -> B e. CC ) $.
+    mulcand.3 $e |- ( ph -> C e. CC ) $.
+    mulcand.4 $e |- ( ph -> C # 0 ) $.
+    $( Cancellation law for multiplication.  (Contributed by Jim Kingdon,
+       21-Feb-2020.) $)
+    mulcanapd $p |- ( ph -> ( ( C x. A ) = ( C x. B ) <-> A = B ) ) $=
+      ( vx cmul co wceq c1 cc wcel wa oveq2 adantr oveq1d mulassd cv wi cc0 cap
+      wrex recexap syl2anc simprl mulcomd simprr mulid2d 3eqtr3d eqeq12d syl5ib
+      wbr eqtrd rexlimddv impbid1 ) ADBJKZDCJKZLZBCLZADIUAZJKZMLZVAVBUBINADNOZD
+      UCUDUOVEINUEGHIDUFUGVAVCUSJKZVCUTJKZLAVCNOZVEPZPZVBUSUTVCJQVKVGBVHCVKVCDJ
+      KZBJKMBJKVGBVKVLMBJVKVLVDMVKVCDAVIVEUHZAVFVJGRZUIAVIVEUJUPZSVKVCDBVMVNABN
+      OVJERZTVKBVPUKULVKVLCJKMCJKVHCVKVLMCJVOSVKVCDCVMVNACNOVJFRZTVKCVQUKULUMUN
+      UQBCDJQUR $.
+
+    $( Cancellation law for multiplication.  (Contributed by Jim Kingdon,
+       21-Feb-2020.) $)
+    mulcanap2d $p |- ( ph -> ( ( A x. C ) = ( B x. C ) <-> A = B ) ) $=
+      ( cmul co wceq mulcomd eqeq12d mulcanapd bitrd ) ABDIJZCDIJZKDBIJZDCIJZKB
+      CKAPRQSABDEGLACDFGLMABCDEFGHNO $.
+  $}
+
+  ${
+    mulcanapad.1 $e |- ( ph -> A e. CC ) $.
+    mulcanapad.2 $e |- ( ph -> B e. CC ) $.
+    mulcanapad.3 $e |- ( ph -> C e. CC ) $.
+    mulcanapad.4 $e |- ( ph -> C # 0 ) $.
+    ${
+      mulcanapad.5 $e |- ( ph -> ( C x. A ) = ( C x. B ) ) $.
+      $( Cancellation of a nonzero factor on the left in an equation.  One-way
+         deduction form of ~ mulcanapd .  (Contributed by Jim Kingdon,
+         21-Feb-2020.) $)
+      mulcanapad $p |- ( ph -> A = B ) $=
+        ( cmul co wceq mulcanapd mpbid ) ADBJKDCJKLBCLIABCDEFGHMN $.
+    $}
+
+    ${
+      mulcanap2ad.5 $e |- ( ph -> ( A x. C ) = ( B x. C ) ) $.
+      $( Cancellation of a nonzero factor on the right in an equation.  One-way
+         deduction form of ~ mulcanap2d .  (Contributed by Jim Kingdon,
+         21-Feb-2020.) $)
+      mulcanap2ad $p |- ( ph -> A = B ) $=
+        ( cmul co wceq mulcanap2d mpbid ) ABDJKCDJKLBCLIABCDEFGHMN $.
+    $}
+  $}
+
+  $( Cancellation law for multiplication (full theorem form).  (Contributed by
+     Jim Kingdon, 21-Feb-2020.) $)
+  mulcanap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) ) ->
+                 ( ( C x. A ) = ( C x. B ) <-> A = B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a simp1 simp2 simp3l simp3r mulcanapd ) ADEZBDEZ
+    CDEZCFGHZIZJABCPQTKPQTLPQRSMPQRSNO $.
+
+  $( Cancellation law for multiplication.  (Contributed by Jim Kingdon,
+     21-Feb-2020.) $)
+  mulcanap2 $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) ) ->
+                 ( ( A x. C ) = ( B x. C ) <-> A = B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a simp1 simp2 simp3l simp3r mulcanap2d ) ADEZBDE
+    ZCDEZCFGHZIZJABCPQTKPQTLPQRSMPQRSNO $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    mulcanapi.1 $e |- A e. CC $.
+    mulcanapi.2 $e |- B e. CC $.
+    mulcanapi.3 $e |- C e. CC $.
+    mulcanapi.4 $e |- C # 0 $.
+    $( Cancellation law for multiplication.  (Contributed by Jim Kingdon,
+       21-Feb-2020.) $)
+    mulcanapi $p |- ( ( C x. A ) = ( C x. B ) <-> A = B ) $=
+      ( cc wcel cc0 cap wbr wa cmul co wceq wb pm3.2i mulcanap mp3an ) AHIBHICH
+      IZCJKLZMCANOCBNOPABPQDEUAUBFGRABCST $.
+  $}
+
+  $( Property of numbers whose product equals their sum.  Equation 5 of
+     [Kreyszig] p. 12.  (Contributed by NM, 13-Nov-2006.) $)
+  muleqadd $p |- ( ( A e. CC /\ B e. CC ) ->
+             ( ( A x. B ) = ( A + B ) <-> ( ( A - 1 ) x. ( B - 1 ) ) = 1 ) ) $=
+    ( cc wcel wa c1 cmin co cmul wceq caddc ax-1cn mulsub mpanr2 mpanl2 mulid1i
+    cc0 oveq2i a1i mulid1 oveqan12d oveq12d addsub mp3an2 syl2anc 3eqtrd eqeq1d
+    mulcl addcl addid2i eqeq2i subcld 0cn addcan2 mp3an23 syl syl5rbbr subeq0ad
+    wb 3bitr2rd ) ACDZBCDZEZAFGHBFGHIHZFJABIHZABKHZGHZFKHZFJZVGQJZVEVFJVCVDVHFV
+    CVDVEFFIHZKHZAFIHZBFIHZKHZGHZVEFKHZVFGHZVHVAFCDZVBVDVPJZLVAVSEVBVSVTLAFBFMN
+    OVCVLVQVOVFGVLVQJVCVKFVEKFLPRSVAVBVMAVNBKATBTUAUBVCVECDZVFCDZVRVHJZABUHZABU
+    IZWAVSWBWCLVEFVFUCUDUEUFUGVIVHQFKHZJZVCVJWFFVHFLUJUKVCVGCDZWGVJUSZVCVEVFWDW
+    EULWHQCDVSWIUMLVGQFUNUOUPUQVCVEVFWDWEURUT $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Existential uniqueness of reciprocals.  (Contributed by Jim Kingdon,
+       21-Feb-2020.) $)
+    receuap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+        E! x e. CC ( B x. x ) = A ) $=
+      ( vy cc wcel cc0 w3a cv cmul co wceq wrex wa wi wral 3adant1 oveq2 eqeq1d
+      c1 cap wbr wreu recexap simprl simpll mulcld oveq1 simplr mulassd mulid2d
+      ad2antll 3eqtr3d rspcev syl2anc rexlimdvaa 3adant3 mpd eqtr3 syl5ib 3expa
+      mulcanap expcom ralrimivv reu4 sylanbrc ) BEFZCEFZCGUAUBZHZCAIZJKZBLZAEMZ
+      VMCDIZJKZBLZNZVKVOLZOZDEPAEPVMAEUCVJVPTLZDEMZVNVHVIWBVGDCUDQVGVHWBVNOVIVG
+      VHNZWAVNDEWCVOEFZWANZNZVOBJKZEFCWGJKZBLZVNWFVOBWCWDWAUEZVGVHWEUFZUGWFVPBJ
+      KZTBJKZWHBWAWLWMLWCWDVPTBJUHULWFCVOBVGVHWEUIWJWKUJWFBWKUKUMVMWIAWGEVKWGLV
+      LWHBVKWGCJRSUNUOUPUQURVJVTADEEVHVIVKEFZWDNZVTOVGWOVHVINZVTWNWDWPVTVRVLVPL
+      WNWDWPHVSVLVPBUSVKVOCVBUTVAVCQVDVMVQADEVSVLVPBVKVOCJRSVEVF $.
   $}
 
 $(
