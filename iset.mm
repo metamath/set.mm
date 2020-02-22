@@ -70249,6 +70249,21 @@ $)
       QBCPUFSUGUHUI $.
   $}
 
+  $( Relationship between division and multiplication.  (Contributed by Jim
+     Kingdon, 22-Feb-2020.) $)
+  divmulap2 $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+      -> ( ( A / C ) = B <-> A = ( C x. B ) ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv co wceq cmul divmulap eqcom syl6bb ) ADEB
+    DECDECFGHIJACKLBMCBNLZAMARMABCORAPQ $.
+
+  $( Relationship between division and multiplication.  (Contributed by Jim
+     Kingdon, 22-Feb-2020.) $)
+  divmulap3 $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+      -> ( ( A / C ) = B <-> A = ( B x. C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co wceq cmul divmulap2 mulcom adantrr 3adant1
+    w3a eqeq2d bitr4d ) ADEZBDEZCDEZCFGHZIZRZACJKBLACBMKZLABCMKZLABCNUFUHUGAUBU
+    EUHUGLZUAUBUCUIUDBCOPQST $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
