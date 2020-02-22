@@ -70293,6 +70293,14 @@ $)
     ( cc wcel cc0 cap wbr w3a cdiv cmul divclap simp2 mulcomd divcanap2 eqtrd
     co ) ACDZBCDZBEFGZHZABIPZBJPBUAJPATUABABKQRSLMABNO $.
 
+  $( A ratio is zero iff the numerator is zero.  (Contributed by Jim Kingdon,
+     22-Feb-2020.) $)
+  diveqap0 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+      ( ( A / B ) = 0 <-> A = 0 ) ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv co wceq cmul wa wb simp1 0cnd 3simpc syl3anc
+    divmulap2 simp2 mul01d eqeq2d bitrd ) ACDZBCDZBEFGZHZABIJEKZABELJZKZAEKUGUD
+    ECDUEUFMUHUJNUDUEUFOUGPUDUEUFQAEBSRUGUIEAUGBUDUEUFTUAUBUC $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
