@@ -70216,7 +70216,7 @@ $)
   ${
     $d x y z $.
     $( Define division.  Theorem ~ divmulap relates it to multiplication, and
-       ~ divcli and ~ redivcli prove its closure laws.  (Contributed by NM,
+       ~ divclap and ~ redivclap prove its closure laws.  (Contributed by NM,
        2-Feb-1995.)  (Revised by Mario Carneiro, 1-Apr-2014.)
        (New usage is discouraged.) $)
     df-div $a |- / = ( x e. CC , y e. ( CC \ { 0 } ) |->
@@ -70263,6 +70263,20 @@ $)
     ( cc wcel cc0 cap wbr wa cdiv co wceq cmul divmulap2 mulcom adantrr 3adant1
     w3a eqeq2d bitr4d ) ADEZBDEZCDEZCFGHZIZRZACJKBLACBMKZLABCMKZLABCNUFUHUGAUBU
     EUHUGLZUAUBUCUIUDBCOPQST $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Closure law for division.  (Contributed by Jim Kingdon, 22-Feb-2020.) $)
+    divclap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) -> ( A / B ) e. CC ) $=
+      ( vx cc wcel cc0 cap wbr w3a cdiv co cmul wceq crio divvalap wreu receuap
+      cv riotacl syl eqeltrd ) ADEBDEBFGHIZABJKBCRLKAMZCDNZDCABOUBUCCDPUDDECABQ
+      UCCDSTUA $.
+  $}
+
+  $( Closure law for reciprocal.  (Contributed by Jim Kingdon, 22-Feb-2020.) $)
+  recclap $p |- ( ( A e. CC /\ A # 0 ) -> ( 1 / A ) e. CC ) $=
+    ( c1 cc wcel cc0 cap wbr cdiv co ax-1cn divclap mp3an1 ) BCDACDAEFGBAHICDJB
+    AKL $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
