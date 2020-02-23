@@ -69740,6 +69740,14 @@ $)
     VNVKVOVLUOULUMVNVKMVEVHABSRUOUMULVOVLMVHVEBASRUDUEZTUOUQUPPJZVLVKLZUTVBUMUL
     UNVRVSUFBACQUGUOVDVCUTVRMVIVGUQUPSRUOVBVMVSVQVKVLUHUJTUIUK $.
 
+  $( Right extensionality for real multiplication.  (Contributed by Jim
+     Kingdon, 22-Feb-2020.) $)
+  remulext2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) -> (
+      ( C x. A ) # ( C x. B ) -> A # B ) ) $=
+    ( cr wcel w3a cmul co cap simp1 recnd simp3 mulcomd simp2 breq12d remulext1
+    wbr sylbird ) ADEZBDEZCDEZFZCAGHZCBGHZIQACGHZBCGHZIQABIQUBUEUCUFUDIUBACUBAS
+    TUAJKUBCSTUALKZMUBBCUBBSTUANKUGMOABCPR $.
+
   $( The square of a real number apart from zero is positive.  (Contributed by
      Jim Kingdon, 7-Feb-2020.) $)
   apsqgt0 $p |- ( ( A e. RR /\ A # 0 ) -> 0 < ( A x. A ) ) $=
