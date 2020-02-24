@@ -70354,9 +70354,9 @@ $)
   ${
     $d x y z $.
     $( Define division.  Theorem ~ divmulap relates it to multiplication, and
-       ~ divclap and ~ redivclap prove its closure laws.  (Contributed by NM,
-       2-Feb-1995.)  (Revised by Mario Carneiro, 1-Apr-2014.)
-       (New usage is discouraged.) $)
+       ~ divclap (and the analogue for real numbers) prove its closure laws.
+       (Contributed by NM, 2-Feb-1995.)  (Revised by Mario Carneiro,
+       1-Apr-2014.)  (New usage is discouraged.) $)
     df-div $a |- / = ( x e. CC , y e. ( CC \ { 0 } ) |->
                    ( iota_ z e. CC ( y x. z ) = x ) ) $.
   $}
