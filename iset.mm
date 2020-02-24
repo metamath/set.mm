@@ -70181,6 +70181,13 @@ $)
       EUCUDVJAVNUEUFVJVCVPUIUGVJVFDEFDEVHVMVGUJVJABVNVOUKVJUHVPVFFVCULUMUNUO $.
   $}
 
+  $( The product of two numbers apart from zero is apart from zero.
+     (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+  mulap0b $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A # 0 /\ B # 0 ) <->
+      ( A x. B ) # 0 ) ) $=
+    ( cc wcel wa cc0 cap wbr cmul co mulap0 an4s ex mulap0r 3expia impbid ) ACD
+    ZBCDZEZAFGHZBFGHZEZABIJFGHZSUBUCQTRUAUCABKLMQRUCUBABNOP $.
+
   ${
     mulap0i.1 $e |- A e. CC $.
     mulap0i.2 $e |- B e. CC $.
@@ -70196,6 +70203,12 @@ $)
   ${
     mulap0d.1 $e |- ( ph -> A e. CC ) $.
     mulap0d.2 $e |- ( ph -> B e. CC ) $.
+    $( The product of two numbers apart from zero is apart from zero.
+       (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+    mulap0bd $p |- ( ph -> ( ( A # 0 /\ B # 0 ) <-> ( A x. B ) # 0 ) ) $=
+      ( cc wcel cc0 cap wbr wa cmul co wb mulap0b syl2anc ) ABFGCFGBHIJCHIJKBCL
+      MHIJNDEBCOP $.
+
     mulap0d.3 $e |- ( ph -> A # 0 ) $.
     mulap0d.4 $e |- ( ph -> B # 0 ) $.
     $( The product of two numbers apart from zero is apart from zero.
@@ -70203,6 +70216,25 @@ $)
     mulap0d $p |- ( ph -> ( A x. B ) # 0 ) $=
       ( cc wcel cc0 cap wbr cmul co mulap0 syl22anc ) ABHIBJKLCHICJKLBCMNJKLDFE
       GBCOP $.
+  $}
+
+  ${
+    mulap0bad.1 $e |- ( ph -> A e. CC ) $.
+    mulap0bad.2 $e |- ( ph -> B e. CC ) $.
+    mulap0bad.3 $e |- ( ph -> ( A x. B ) # 0 ) $.
+    $( A factor of a complex number apart from zero is apart from zero.
+       Partial converse of ~ mulap0d and consequence of ~ mulap0bd .
+       (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+    mulap0bad $p |- ( ph -> A # 0 ) $=
+      ( cc0 cap wbr wa cmul co mulap0bd mpbird simpld ) ABGHIZCGHIZAPQJBCKLGHIF
+      ABCDEMNO $.
+
+    $( A factor of a complex number apart from zero is apart from zero.
+       Partial converse of ~ mulap0d and consequence of ~ mulap0bd .
+       (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+    mulap0bbd $p |- ( ph -> B # 0 ) $=
+      ( cc0 cap wbr wa cmul co mulap0bd mpbird simprd ) ABGHIZCGHIZAPQJBCKLGHIF
+      ABCDEMNO $.
   $}
 
   ${
