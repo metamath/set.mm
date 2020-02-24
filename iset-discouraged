@@ -63,6 +63,7 @@
 "axltirr" is used by "ltnr".
 "axlttrn" is used by "lttr".
 "axresscn" is used by "ax1cn".
+"df-div" is used by "divvalap".
 "df-ilim" is used by "dflim2".
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
@@ -121,6 +122,9 @@
 "r19.9rmvOLD" is used by "r19.45mv".
 "rdgivallem" is used by "rdgival".
 "rdgivallem" is used by "rdgon".
+"reapti" is used by "apreap".
+"reapti" is used by "apti".
+"reapti" is used by "rimul".
 "reapval" is used by "reapirr".
 "reapval" is used by "reaplt".
 "reapval" is used by "reapti".
@@ -234,6 +238,7 @@ New usage of "bdsepnfALT" is discouraged (0 uses).
 New usage of "bj-nn0sucALT" is discouraged (0 uses).
 New usage of "bj-omex2" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
+New usage of "df-div" is discouraged (1 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
 New usage of "df-iord" is discouraged (1 uses).
@@ -256,6 +261,7 @@ New usage of "r19.3rmOLD" is discouraged (2 uses).
 New usage of "r19.9rmvOLD" is discouraged (2 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rdgivallem" is discouraged (2 uses).
+New usage of "reapti" is discouraged (3 uses).
 New usage of "reapval" is discouraged (4 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
 New usage of "rexsnsOLD" is discouraged (2 uses).

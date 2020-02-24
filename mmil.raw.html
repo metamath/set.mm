@@ -2787,11 +2787,13 @@ general and has a counterexample.</TD>
 </TR>
 
 <TR>
-<TD>mulne0b , mulne0 , mulne0i , mulne0bd , mulne0d , mulne0bad ,
-mulne0bbd</TD>
-<TD>~ remulap0 </TD>
-<TD>Most of this, for apartness instead of negated equality,
-would be provable.</TD>
+<TD>mulne0b , mulne0bd , mulne0bad , mulne0bbd</TD>
+<TD>~ mulap0b , ~ mulap0bd , ~ mulap0bad , ~ mulap0bbd </TD>
+</TR>
+
+<TR>
+<TD>mulne0 , mulne0i , mulne0d</TD>
+<TD>~ mulap0 , ~ mulap0i , ~ mulap0d </TD>
 </TR>
 
 <TR>
@@ -2818,6 +2820,52 @@ and ` A # 0 /\ B # 0 -> ( A x. B ) # 0 `, but is unused in set.mm.</TD>
 <TD><I>various cancellation theorems</I></TD>
 <TD>Presumably this is unavailable for the same reason that mul0or
 is unavailable.</TD>
+</TR>
+
+<TR>
+<TD>1div0</TD>
+<TD><I>none</I></TD>
+<TD>This could be proved, but the set.mm proof does not work as-is.</TD>
+</TR>
+
+<TR>
+<TD>divval</TD>
+<TD>~ divvalap </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>divmul , divmul2 , divmul3</TD>
+<TD>~ divmulap , ~ divmulap2 , divmulap3 </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>divcl , reccl</TD>
+<TD>~ divclap , ~ recclap </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>divcan1 , divcan2</TD>
+<TD>~ divcanap1 , ~ divcanap2 </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>diveq0</TD>
+<TD>~ diveqap0 </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>divne0b , divne0</TD>
+<TD>~ divap0b , ~ divap0 </TD>
 </TR>
 
 </TABLE>

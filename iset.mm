@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Feb-2020
+$( iset.mm - Version of 24-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69508,7 +69508,9 @@ $)
       ADLWAABUIXMVTADXLVTUJULUMUOVKVNVMVO $.
   $}
 
-  $( Real apartness is tight.  (Contributed by Jim Kingdon, 30-Jan-2020.) $)
+  $( Real apartness is tight.  Beyond the development of apartness itself,
+     proofs should use ~ apti .  (Contributed by Jim Kingdon, 30-Jan-2020.)
+     (New usage is discouraged.) $)
   reapti $p |- ( ( A e. RR /\ B e. RR ) -> ( A = B <-> -. A #RR B ) ) $=
     ( cr wcel wa wceq creap wbr wn clt wo ltnr adantr oridm breq2 breq1 orbi12d
     syl5bbr notbid syl5ibcom reapval sylibrd axapti 3expia sylbid impbid ) ACDZ
@@ -69738,6 +69740,14 @@ $)
     VNVKVOVLUOULUMVNVKMVEVHABSRUOUMULVOVLMVHVEBASRUDUEZTUOUQUPPJZVLVKLZUTVBUMUL
     UNVRVSUFBACQUGUOVDVCUTVRMVIVGUQUPSRUOVBVMVSVQVKVLUHUJTUIUK $.
 
+  $( Right extensionality for real multiplication.  (Contributed by Jim
+     Kingdon, 22-Feb-2020.) $)
+  remulext2 $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) -> (
+      ( C x. A ) # ( C x. B ) -> A # B ) ) $=
+    ( cr wcel w3a cmul co cap simp1 recnd simp3 mulcomd simp2 breq12d remulext1
+    wbr sylbird ) ADEZBDEZCDEZFZCAGHZCBGHZIQACGHZBCGHZIQABIQUBUEUCUFUDIUBACUBAS
+    TUAJKUBCSTUALKZMUBBCUBBSTUANKUGMOABCPR $.
+
   $( The square of a real number apart from zero is positive.  (Contributed by
      Jim Kingdon, 7-Feb-2020.) $)
   apsqgt0 $p |- ( ( A e. RR /\ A # 0 ) -> 0 < ( A x. A ) ) $=
@@ -69799,6 +69809,22 @@ $)
       WJUQWMWOWRWPXIYOUVAUUMWTVNXAVRXB $.
   $}
 
+  $( Complex multiplication in terms of real and imaginary parts.  (Contributed
+     by Jim Kingdon, 23-Feb-2020.) $)
+  mulreim $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) ->
+      ( ( A + ( _i x. B ) ) x. ( C + ( _i x. D ) ) ) =
+      ( ( ( A x. C ) + -u ( B x. D ) ) +
+        ( _i x. ( ( C x. B ) + ( D x. A ) ) ) ) ) $=
+    ( cr wcel wa ci cmul co caddc cneg simpll recnd mulcld mulcomd oveq2d eqtrd
+    mul12d oveq12d cc ax-icn a1i simplr simprl simprr muladdd ixi oveq1i syl6eq
+    c1 mul4d mulm1d negeqd 3eqtrd addcomd adddid 3eqtr4d ) AEFZBEFZGZCEFZDEFZGZ
+    GZAHBIJZKJCHDIJZKJIJACIJZVGVFIJZKJZAVGIJZCVFIJZKJZKJVHBDIJZLZKJZHCBIJZDAIJZ
+    KJIJZKJVEAVFCVGVEAUSUTVDMNZVEHBHUAFVEUBUCZVEBUSUTVDUDNZOVECVAVBVCUENZVEHDWA
+    VEDVAVBVCUFNZOUGVEVJVPVMVSKVEVIVOVHKVEVIUKLZDBIJZIJZWFLVOVEVIHHIJZWFIJWGVEH
+    DHBWAWDWAWBULWHWEWFIUHUIUJVEWFVEDBWDWBOUMVEWFVNVEDBWDWBPUNUOQVEHVRIJZHVQIJZ
+    KJWJWIKJVMVSVEWIWJVEHVRWAVEDAWDVTOZOVEHVQWAVECBWCWBOZOUPVEVKWIVLWJKVEVKHADI
+    JZIJWIVEAHDVTWAWDSVEWMVRHIVEADVTWDPQRVECHBWCWAWBSTVEHVQVRWAWLWKUQURTR $.
+
   ${
     $d A x y $.
     $( Apartness is irreflexive.  (Contributed by Jim Kingdon, 16-Feb-2020.) $)
@@ -69855,20 +69881,6 @@ $)
       QXQUPYKYLYOYPXEXFVTWAVDVAVOXNWGWQWBPQZXTXNBWQCWBPYJYRUOXNWTXAWJWKYSXTUPYM
       YNYOYPWOWPVTWAVDVAVOVJVKVLVMVNVLVMVNVLVMVN $.
   $}
-
-  $( Strong extensionality for multiplication.  Given excluded middle,
-     apartness would be equivalent to negated equality and this would follow
-     readily (for all operations) from ~ oveq12 .  For us, it is proved a
-     different way.  (Contributed by Jim Kingdon, 18-Feb-2020.) $)
-  remulext $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) -> (
-      ( A x. B ) # ( C x. D ) -> ( A # C \/ B # D ) ) ) $=
-    ( cr wcel wa cmul co cap wbr wo cc wi simpll recnd mulcld syl3anc remulext1
-    mulcomd simplr simprl simprr remulcld apcotr breq12d sylbid wb apsym sylibd
-    syl2anc orim12d syld ) AEFZBEFZGZCEFZDEFZGZGZABHIZCDHIZJKZVACBHIZJKZVBVDJKZ
-    LZACJKZBDJKZLUTVAMFVBMFVDMFVCVGNUTABUTAUNUOUSOZPUTBUNUOUSUAZPZQUTVBUTCDUPUQ
-    URUBZUPUQURUCZUDPUTCBUTCVMPZVLQVAVBVDUERUTVEVHVFVIUTUNUQUOVEVHNVJVMVKACBSRU
-    TVFDBJKZVIUTVFDCHIZBCHIZJKZVPUTVBVQVDVRJUTCDVOUTDVNPZTUTCBVOVLTUFUTURUOUQVS
-    VPNVNVKVMDBCSRUGUTDMFBMFVPVIUHVTVLDBUIUKUJULUM $.
 
   ${
     $d A u v w x y z $.  $d B u v w x y z $.  $d C u v w x y z $.
@@ -69939,26 +69951,83 @@ $)
       GXDYBTXIXKWLVPVEVFXBWSWHXEYCTXJXLWMVQVEVFVGVHVIVLVJVKVLVJVK $.
   $}
 
+  ${
+    $d A u v w x y z $.  $d B u v w x y z $.  $d C u v w x y z $.
+    $( Left extensionality for complex multiplication.  (Contributed by Jim
+       Kingdon, 22-Feb-2020.) $)
+    mulext1 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) -> (
+        ( A x. C ) # ( B x. C ) -> A # B ) ) $=
+      ( cc wcel cv cmul co caddc cr wrex cap wbr wi wa ad3antrrr recnd syl22anc
+      mulcld remulcld vu vv vz vw vx vy ci wceq cnre 3ad2ant3 3ad2ant2 ad2antrr
+      w3a 3ad2ant1 adantr cneg wo simplrl simprl simprr negcld addext remulext1
+      simplrr syl3anc apneg syl2anc sylbird orim12d syld remulext2 orcom syl6ib
+      wb ax-ia2 simplr oveq12d simpllr breq12d mulreim renegcld readdcld apreim
+      jaod 3bitrd 3imtr4d sylibrd ex rexlimdvva mpd ) ADEZBDEZCDEZUMZCUAFZUGUBF
+      ZGHIHZUHZUBJKUAJKZACGHZBCGHZLMZABLMZNZWMWKWSWLUAUBCUIUJWNWRXDUAUBJJWNWOJE
+      ZWPJEZOZOZWRXDXHWROZBUCFZUGUDFZGHIHZUHZUDJKUCJKZXDWNXNXGWRWLWKXNWMUCUDBUI
+      UKULXIXMXDUCUDJJXIXJJEZXKJEZOZOZXMXDXRXMOZAUEFZUGUFFZGHIHZUHZUFJKUEJKZXDX
+      HYDWRXQXMWNYDXGWKWLYDWMUEUFAUIUNUOPXSYCXDUEUFJJXSXTJEZYAJEZOZOZYCXDYHYCOZ
+      XBYBXLLMZXCYIXTWOGHZYAWPGHZUPZIHZXJWOGHZXKWPGHZUPZIHZLMZWOYAGHZWPXTGHZIHZ
+      WOXKGHZWPXJGHZIHZLMZUQZXTXJLMZYAXKLMZUQZXBYJYIYSUUJUUFYIYSYKYOLMZYMYQLMZU
+      QZUUJYIYKDEYMDEYODEYQDEYSUUMNYIXTWOYIXTXSYEYFYCURZQZYIWOXRXEXMYGYCXHXEWRX
+      QWNXEXFUSULPZQZSYIYLYIYAWPYIYAXSYEYFYCVDZQZYIWPXRXFXMYGYCXHXFWRXQWNXEXFUT
+      ULPZQZSZVAYIXJWOYIXJXRXOXMYGYCXIXOXPUSPZQZUUQSYIYPYIXKWPYIXKXRXPXMYGYCXIX
+      OXPUTPZQZUVASZVAYKYMYOYQVBRYIUUKUUHUULUUIYIYEXOXEUUKUUHNUUNUVCUUPXTXJWOVC
+      VEYIUULYLYPLMZUUIYIYLDEYPDEUVHUULVNUVBUVGYLYPVFVGYIYFXPXFUVHUUINUURUVEUUT
+      YAXKWPVCVEVHVIVJYIUUFUUIUUHUQZUUJYIUUFYTUUCLMZUUAUUDLMZUQZUVIYIYTDEUUADEU
+      UCDEUUDDEUUFUVLNYIWOYAUUQUUSSYIWPXTUVAUUOSYIWOXKUUQUVFSYIWPXJUVAUVDSYTUUA
+      UUCUUDVBRYIUVJUUIUVKUUHYIYFXPXEUVJUUINUURUVEUUPYAXKWOVKVEYIYEXOXFUVKUUHNU
+      UNUVCUUTXTXJWPVKVEVIVJUUIUUHVLVMWDYIXBYBWQGHZXLWQGHZLMYNUGUUBGHIHZYRUGUUE
+      GHIHZLMZUUGYIWTUVMXAUVNLYIAYBCWQGYHYCVOZXRWRXMYGYCXHWRXQVPPZVQYIBXLCWQGXR
+      XMYGYCVRZUVSVQVSYIUVMUVOUVNUVPLYIYEYFXEXFUVMUVOUHUUNUURUUPUUTXTYAWOWPVTRY
+      IXOXPXEXFUVNUVPUHUVCUVEUUPUUTXJXKWOWPVTRVSYIYNJEUUBJEYRJEUUEJEUVQUUGVNYIY
+      KYMYIXTWOUUNUUPTYIYLYIYAWPUURUUTTWAWBYIYTUUAYIWOYAUUPUURTYIWPXTUUTUUNTWBY
+      IYOYQYIXJWOUVCUUPTYIYPYIXKWPUVEUUTTWAWBYIUUCUUDYIWOXKUUPUVETYIWPXJUUTUVCT
+      WBYNUUBYRUUEWCRWEYIYEYFXOXPYJUUJVNUUNUURUVCUVEXTYAXJXKWCRWFYIAYBBXLLUVRUV
+      TVSWGWHWIWJWHWIWJWHWIWJ $.
+  $}
+
+  $( Right extensionality for complex multiplication.  (Contributed by Jim
+     Kingdon, 22-Feb-2020.) $)
+  mulext2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) -> (
+      ( C x. A ) # ( C x. B ) -> A # B ) ) $=
+    ( cc wcel w3a cmul cap wbr simp3 simp1 mulcomd simp2 breq12d mulext1 sylbid
+    co ) ADEZBDEZCDEZFZCAGQZCBGQZHIACGQZBCGQZHIABHIUAUBUDUCUEHUACARSTJZRSTKLUAC
+    BUFRSTMLNABCOP $.
+
+  $( Strong extensionality for multiplication.  Given excluded middle,
+     apartness would be equivalent to negated equality and this would follow
+     readily (for all operations) from ~ oveq12 .  For us, it is proved a
+     different way.  (Contributed by Jim Kingdon, 23-Feb-2020.) $)
+  mulext $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) -> (
+      ( A x. B ) # ( C x. D ) -> ( A # C \/ B # D ) ) ) $=
+    ( cc wcel wa cmul cap wbr simpll simplr mulcld simprl simprr apcotr syl3anc
+    co wo wi mulext1 mulext2 wb apsym syl2anc sylibd orim12d syld ) AEFZBEFZGZC
+    EFZDEFZGZGZABHRZCDHRZIJZUPCBHRZIJZUQUSIJZSZACIJZBDIJZSUOUPEFUQEFUSEFURVBTUO
+    ABUIUJUNKZUIUJUNLZMUOCDUKULUMNZUKULUMOZMUOCBVGVFMUPUQUSPQUOUTVCVAVDUOUIULUJ
+    UTVCTVEVGVFACBUAQUOVADBIJZVDUOUMUJULVAVITVHVFVGDBCUBQUOUMUJVIVDUCVHVFDBUDUE
+    UFUGUH $.
+
   $( A product apart from zero.  Lemma 2.13 of [Geuvers], p. 6.  (Contributed
-     by Jim Kingdon, 19-Feb-2020.) $)
-  remulap0 $p |- ( ( A e. RR /\ B e. RR /\ ( A x. B ) # 0 ) ->
+     by Jim Kingdon, 24-Feb-2020.) $)
+  mulap0r $p |- ( ( A e. CC /\ B e. CC /\ ( A x. B ) # 0 ) ->
       ( A # 0 /\ B # 0 ) ) $=
-    ( cr wcel cmul co cc0 cap wbr wo recnd breqtrrd wi remulext syl22anc mpd cc
-    wn wb apirr w3a simp3 simp2 mul02d simp1 0red orcomd 3syl mpbird mul01d jca
-    biorf ) ACDZBCDZABEFZGHIZUAZAGHIZBGHIZUQURBBHIZURJZUQURUTUQUOGBEFZHIZURUTJZ
-    UQUOGVBHUMUNUPUBZUQBUQBUMUNUPUCZKZUDLUQUMUNGCDZUNVCVDMUMUNUPUEZVFUQUFZVFABG
-    BNOPUGUQBQDUTRURVASVGBTUTURULUHUIUQUSAAHIZUSJZUQUOAGEFZHIZVLUQUOGVMHVEUQAUQ
-    AVIKZUJLUQUMUNUMVHVNVLMVIVFVIVJABAGNOPUQAQDVKRUSVLSVOATVKUSULUHUIUK $.
+    ( cc wcel cmul co cc0 cap wbr wo breqtrrd wi mulext syl22anc wn apirr biorf
+    mpd wb 3syl w3a simp3 simp2 mul02d simp1 0cnd orcomd mpbird mul01d jca ) AC
+    DZBCDZABEFZGHIZUAZAGHIZBGHIZUOUPBBHIZUPJZUOUPURUOUMGBEFZHIZUPURJZUOUMGUTHUK
+    ULUNUBZUOBUKULUNUCZUDKUOUKULGCDZULVAVBLUKULUNUEZVDUOUFZVDABGBMNRUGUOULUROUP
+    USSVDBPURUPQTUHUOUQAAHIZUQJZUOUMAGEFZHIZVIUOUMGVJHVCUOAVFUIKUOUKULUKVEVKVIL
+    VFVDVFVGABAGMNRUOUKVHOUQVISVFAPVHUQQTUHUJ $.
 
   $( A square is nonnegative.  Lemma 2.35 of [Geuvers], p. 9.  (Contributed by
      NM, 23-May-2007.)  (Revised by Mario Carneiro, 27-May-2016.) $)
   msqge0 $p |- ( A e. RR -> 0 <_ ( A x. A ) ) $=
     ( cr wcel cc0 cmul co cle wbr clt wn remulcl anidms 0re ltnsym2 sylancl cap
-    wa wo orc wb reaplt syl5ibr wi remulap0 simpld 3expia apsqgt0 ex 3syld mtod
-    w3a ancld lenlt sylancr mpbird ) ABCZDAAEFZGHZUQDIHZJZUPUSUSDUQIHZQZUPUQBCZ
-    DBCZVBJUPVCAAKLZMUQDNOUPUSVAUPUSUQDPHZADPHZVAUSVFUPUSVARZUSVASUPVCVDVFVHTVE
-    MUQDUAOUBUPVFVGUCUPUPVFVGUPUPVFUKVGVGAAUDUEUFLUPVGVAAUGUHUIULUJUPVDVCURUTTM
-    VEDUQUMUNUO $.
+    wa wo orc wb reaplt syl5ibr wi w3a cc mulap0r syl3an1 syl3an2 simpld 3expia
+    recn apsqgt0 ex 3syld ancld mtod lenlt sylancr mpbird ) ABCZDAAEFZGHZVADIHZ
+    JZUTVCVCDVAIHZQZUTVABCZDBCZVFJUTVGAAKLZMVADNOUTVCVEUTVCVADPHZADPHZVEVCVJUTV
+    CVERZVCVESUTVGVHVJVLTVIMVADUAOUBUTVJVKUCUTUTVJVKUTUTVJUDVKVKUTUTAUECZVJVKVK
+    QZAUKZUTVMVMVJVNVOAAUFUGUHUIUJLUTVKVEAULUMUNUOUPUTVHVGVBVDTMVIDVAUQURUS $.
 
   ${
     msqge0i.1 $e |- A e. RR $.
@@ -69980,17 +70049,18 @@ $)
      NM, 8-Oct-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
   mulge0 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\
                 ( B e. RR /\ 0 <_ B ) ) -> 0 <_ ( A x. B ) ) $=
-    ( cr wcel cc0 cle wbr wa clt wn ad2ant2r 0re sylancl cap wo wb reaplt mpan2
-    lenlt mpbird co remulcl ltnsym2 orc syl5ibr simplll simplrl remulap0 3expia
-    cmul wi imp simpld ad3antrrr mpbid mpan biimpa ad2antrr syl simprd ad2antrl
-    biorf adantr ad2antlr mulgt0d ex syld ancld mtod sylancr ) ACDZEAFGZHZBCDZE
-    BFGZHZHZEABUJUAZFGZVREIGZJZVQVTVTEVRIGZHZVQVRCDZECDZWCJVKVNWDVLVOABUBKZLVRE
-    UCMVQVTWBVQVTVRENGZWBVTWGVQVTWBOZVTWBUDVQWDWEWGWHPWFLVREQMUEVQWGWBVQWGHZABV
-    KVLVPWGUFVMVNVOWGUGWIEAIGZAEIGZWJOZWIAENGZWLWIWMBENGZVQWGWMWNHZVKVNWGWOUKVL
-    VOVKVNWGWOABUHUIKULZUMVKWMWLPZVLVPWGVKWEWQLAEQRUNUOWIWKJZWJWLPVMWRVPWGVKVLW
-    RWEVKVLWRPLEASUPUQURWKWJVBUSTWIEBIGZBEIGZWSOZWIWNXAWIWMWNWPUTVQWNXAPZWGVNXB
-    VMVOVNWEXBLBEQRVAVCUOWIWTJZWSXAPVPXCVMWGVNVOXCWEVNVOXCPLEBSUPUQVDWTWSVBUSTV
-    EVFVGVHVIVQWEWDVSWAPLWFEVRSVJT $.
+    ( cr wcel cc0 cle wbr wa clt wn ad2ant2r 0re sylancl cap wo wb reaplt lenlt
+    cc mpbird co remulcl ltnsym2 orc syl5ibr simplll simplrl wi mulap0r syl3an1
+    cmul recn syl3an2 3expia imp simpld mpan2 ad3antrrr mpbid mpan biimpa biorf
+    ad2antrr simprd ad2antrl adantr ad2antlr mulgt0d ex syld ancld mtod sylancr
+    syl ) ACDZEAFGZHZBCDZEBFGZHZHZEABUKUAZFGZWBEIGZJZWAWDWDEWBIGZHZWAWBCDZECDZW
+    GJVOVRWHVPVSABUBKZLWBEUCMWAWDWFWAWDWBENGZWFWDWKWAWDWFOZWDWFUDWAWHWIWKWLPWJL
+    WBEQMUEWAWKWFWAWKHZABVOVPVTWKUFVQVRVSWKUGWMEAIGZAEIGZWNOZWMAENGZWPWMWQBENGZ
+    WAWKWQWRHZVOVRWKWSUHVPVSVOVRWKWSVRVOBSDZWKWSBULVOASDWTWKWSAULABUIUJUMUNKUOZ
+    UPVOWQWPPZVPVTWKVOWIXBLAEQUQURUSWMWOJZWNWPPVQXCVTWKVOVPXCWIVOVPXCPLEARUTVAV
+    CWOWNVBVNTWMEBIGZBEIGZXDOZWMWRXFWMWQWRXAVDWAWRXFPZWKVRXGVQVSVRWIXGLBEQUQVEV
+    FUSWMXEJZXDXFPVTXHVQWKVRVSXHWIVRVSXHPLEBRUTVAVGXEXDVBVNTVHVIVJVKVLWAWIWHWCW
+    EPLWJEWBRVMT $.
 
   ${
     mulge0i.1 $e |- A e. RR $.
@@ -70013,6 +70083,33 @@ $)
       ( cr wcel cc0 cle wbr cmul co mulge0 syl22anc ) ABHIJBKLCHIJCKLJBCMNKLDFE
       GBCOP $.
   $}
+
+  ${
+    $d A w x y z $.  $d B w x y z $.
+    $( Complex apartness is tight.  (Contributed by Jim Kingdon,
+       21-Feb-2020.) $)
+    apti $p |- ( ( A e. CC /\ B e. CC ) -> ( A = B <-> -. A # B ) ) $=
+      ( vx vy vz vw cc wcel wa cv co wceq cr wrex cap wbr wn wb syl2anc notbid
+      ci cmul caddc cnre adantr adantl ad2antrr ax-ia2 ad3antrrr simplr simpllr
+      cru eqeq12d apreim ioran syl6bb breq12d simpld creap reapti apreap bitr4d
+      wo simprd anbi12d 3bitr4d ex rexlimdvva mpd ) AGHZBGHZIZACJZUADJZUBKUCKZL
+      ZDMNCMNZABLZABOPZQZRZVJVQVKCDAUDUEVLVPWACDMMVLVMMHZVNMHZIZIZVPWAWEVPIZBEJ
+      ZUAFJZUBKUCKZLZFMNEMNZWAVLWKWDVPVKWKVJEFBUDUFUGWFWJWAEFMMWFWGMHZWHMHZIZIZ
+      WJWAWOWJIZVOWILZVMWGLZVNWHLZIZVRVTWPWDWNWQWTRWEWDVPWNWJVLWDUHUIZWFWNWJUJZ
+      VMVNWGWHULSWPAVOBWIWEVPWNWJUKZWOWJUHZUMWPVOWIOPZQZVMWGOPZQZVNWHOPZQZIZVTW
+      TWPWDWNXFXKRXAXBWDWNIZXFXGXIVCZQXKXLXEXMVMVNWGWHUNTXGXIUOUPSWPVSXEWPAVOBW
+      IOXCXDUQTWPWRXHWSXJWPWBWLWRXHRWPWBWCXAURWPWLWMXBURWBWLIZWRVMWGUSPZQXHVMWG
+      UTXNXGXOVMWGVATVBSWPWCWMWSXJRWPWBWCXAVDWPWLWMXBVDWCWMIZWSVNWHUSPZQXJVNWHU
+      TXPXIXQVNWHVATVBSVEVFVFVGVHVIVGVHVI $.
+  $}
+
+  $( Apartness implies negated equality.  We cannot in general prove the
+     converse, which is the whole point of having separate notations for
+     apartness and negated equality.  (Contributed by Jim Kingdon,
+     21-Feb-2020.) $)
+  apne $p |- ( ( A e. CC /\ B e. CC ) -> ( A # B -> A =/= B ) ) $=
+    ( cc wcel wa cap wbr wceq wn apti biimpd necon2ad ) ACDBCDEZABFGZABMABHNIAB
+    JKL $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -70068,6 +70165,76 @@ $)
       LXSLYFYRXLOYGWQWRVGTVHVIYAVJVKXHYMAYJFWMYJOXGYLNWMYJWTLVOVLVMVNVPVQVRUJTV
       SVTWAWBTXAWLXFUFXEBWTHIWCWDXAWPXIUFXEXAWOXHAFXAWNXGNBWTWMLWGVLWEWDWFVTWHW
       IWJ $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( The product of two numbers apart from zero is apart from zero.  Lemma
+       2.15 of [Geuvers], p. 6.  (Contributed by Jim Kingdon, 22-Feb-2020.) $)
+    mulap0 $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
+        ( A x. B ) # 0 ) $=
+      ( vx cc wcel cc0 cap wa cv cmul co c1 wceq recexap adantl simpllr simplll
+      wbr wrex simplrl simprl mulassd simprr oveq2d mulid1d 3eqtrd 3brtr4d 0cnd
+      mul02d wi mulcld mulext1 syl3anc mpd rexlimddv ) ADEZAFGRZHZBDEZBFGRZHZHZ
+      BCIZJKZLMZABJKZFGRZCDVAVECDSURCBNOVBVCDEZVEHZHZVFVCJKZFVCJKZGRZVGVJAFVKVL
+      GUPUQVAVIPVJVKAVDJKALJKAVJABVCUPUQVAVIQZURUSUTVITZVBVHVEUAZUBVJVDLAJVBVHV
+      EUCUDVJAVNUEUFVJVCVPUIUGVJVFDEFDEVHVMVGUJVJABVNVOUKVJUHVPVFFVCULUMUNUO $.
+  $}
+
+  $( The product of two numbers apart from zero is apart from zero.
+     (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+  mulap0b $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A # 0 /\ B # 0 ) <->
+      ( A x. B ) # 0 ) ) $=
+    ( cc wcel wa cc0 cap wbr cmul co mulap0 an4s ex mulap0r 3expia impbid ) ACD
+    ZBCDZEZAFGHZBFGHZEZABIJFGHZSUBUCQTRUAUCABKLMQRUCUBABNOP $.
+
+  ${
+    mulap0i.1 $e |- A e. CC $.
+    mulap0i.2 $e |- B e. CC $.
+    mulap0i.3 $e |- A # 0 $.
+    mulap0i.4 $e |- B # 0 $.
+    $( The product of two numbers apart from zero is apart from zero.
+       (Contributed by Jim Kingdon, 23-Feb-2020.) $)
+    mulap0i $p |- ( A x. B ) # 0 $=
+      ( cc wcel cc0 cap wbr cmul co mulap0 mp4an ) AGHAIJKBGHBIJKABLMIJKCEDFABN
+      O $.
+  $}
+
+  ${
+    mulap0d.1 $e |- ( ph -> A e. CC ) $.
+    mulap0d.2 $e |- ( ph -> B e. CC ) $.
+    $( The product of two numbers apart from zero is apart from zero.
+       (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+    mulap0bd $p |- ( ph -> ( ( A # 0 /\ B # 0 ) <-> ( A x. B ) # 0 ) ) $=
+      ( cc wcel cc0 cap wbr wa cmul co wb mulap0b syl2anc ) ABFGCFGBHIJCHIJKBCL
+      MHIJNDEBCOP $.
+
+    mulap0d.3 $e |- ( ph -> A # 0 ) $.
+    mulap0d.4 $e |- ( ph -> B # 0 ) $.
+    $( The product of two numbers apart from zero is apart from zero.
+       (Contributed by Jim Kingdon, 23-Feb-2020.) $)
+    mulap0d $p |- ( ph -> ( A x. B ) # 0 ) $=
+      ( cc wcel cc0 cap wbr cmul co mulap0 syl22anc ) ABHIBJKLCHICJKLBCMNJKLDFE
+      GBCOP $.
+  $}
+
+  ${
+    mulap0bad.1 $e |- ( ph -> A e. CC ) $.
+    mulap0bad.2 $e |- ( ph -> B e. CC ) $.
+    mulap0bad.3 $e |- ( ph -> ( A x. B ) # 0 ) $.
+    $( A factor of a complex number apart from zero is apart from zero.
+       Partial converse of ~ mulap0d and consequence of ~ mulap0bd .
+       (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+    mulap0bad $p |- ( ph -> A # 0 ) $=
+      ( cc0 cap wbr wa cmul co mulap0bd mpbird simpld ) ABGHIZCGHIZAPQJBCKLGHIF
+      ABCDEMNO $.
+
+    $( A factor of a complex number apart from zero is apart from zero.
+       Partial converse of ~ mulap0d and consequence of ~ mulap0bd .
+       (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+    mulap0bbd $p |- ( ph -> B # 0 ) $=
+      ( cc0 cap wbr wa cmul co mulap0bd mpbird simprd ) ABGHIZCGHIZAPQJBCKLGHIF
+      ABCDEMNO $.
   $}
 
   ${
@@ -70174,6 +70341,118 @@ $)
       LWHBVKWGCJRSUNUOUPUQURVJVTADEEVHVIVKEFZWDNZVTOVGWOVHVINZVTWNWDWPVTVRVLVPL
       WNWDWPHVSVLVPBUSVKVOCVBUTVAVCQVDVMVQADEVSVLVPBVKVOCJRSVEVF $.
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Division
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Extend class notation to include division. $)
+  cdiv $a class / $.
+
+  ${
+    $d x y z $.
+    $( Define division.  Theorem ~ divmulap relates it to multiplication, and
+       ~ divclap (and the analogue for real numbers) prove its closure laws.
+       (Contributed by NM, 2-Feb-1995.)  (Revised by Mario Carneiro,
+       1-Apr-2014.)  (New usage is discouraged.) $)
+    df-div $a |- / = ( x e. CC , y e. ( CC \ { 0 } ) |->
+                   ( iota_ z e. CC ( y x. z ) = x ) ) $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y C $.
+    $( Value of division: the (unique) element ` x ` such that
+       ` ( B x. x ) = A ` .  This is meaningful only when ` B ` is apart from
+       zero.  (Contributed by Jim Kingdon, 21-Feb-2020.) $)
+    divvalap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+        ( A / B ) = ( iota_ x e. CC ( B x. x ) = A ) ) $=
+      ( vz vy cc wcel cc0 cap wbr w3a csn cdif cv cmul wceq crio cdiv riotabidv
+      co simp1 wne simp2 wi 0cn apne mpan2 adantl eldifsn sylanbrc wreu receuap
+      3impia riotacl syl eqeq2 oveq1 eqeq1d df-div ovmpt2g syl3anc ) BFGZCFGZCH
+      IJZKZVBCFHLMZGZCANZOTZBPZAFQZFGZBCRTVKPVBVCVDUAVEVCCHUBZVGVBVCVDUCVBVCVDV
+      MVCVDVMUDZVBVCHFGVNUECHUFUGUHUMCFHUIUJVEVJAFUKVLABCULVJAFUNUODEBCFVFENZVH
+      OTZDNZPZAFQVKRVPBPZAFQFVQBPVRVSAFVQBVPUPSVOCPZVSVJAFVTVPVIBVOCVHOUQURSDEA
+      USUTVA $.
+
+    $( Relationship between division and multiplication.  (Contributed by Jim
+       Kingdon, 22-Feb-2020.) $)
+    divmulap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+        -> ( ( A / C ) = B <-> ( C x. B ) = A ) ) $=
+      ( vx cc wcel cc0 cap wbr wa w3a cdiv co wceq cv cmul 3expb 3adant2 eqeq1d
+      crio divvalap wreu wb simp2 receuap oveq2 riota2 syl2anc bitr4d ) AEFZBEF
+      ZCEFZCGHIZJZKZACLMZBNCDOZPMZANZDETZBNZCBPMZANZUOUPUTBUJUNUPUTNZUKUJULUMVD
+      DACUAQRSUOUKUSDEUBZVCVAUCUJUKUNUDUJUNVEUKUJULUMVEDACUEQRUSVCDEBUQBNURVBAU
+      QBCPUFSUGUHUI $.
+  $}
+
+  $( Relationship between division and multiplication.  (Contributed by Jim
+     Kingdon, 22-Feb-2020.) $)
+  divmulap2 $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+      -> ( ( A / C ) = B <-> A = ( C x. B ) ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv co wceq cmul divmulap eqcom syl6bb ) ADEB
+    DECDECFGHIJACKLBMCBNLZAMARMABCORAPQ $.
+
+  $( Relationship between division and multiplication.  (Contributed by Jim
+     Kingdon, 22-Feb-2020.) $)
+  divmulap3 $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+      -> ( ( A / C ) = B <-> A = ( B x. C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co wceq cmul divmulap2 mulcom adantrr 3adant1
+    w3a eqeq2d bitr4d ) ADEZBDEZCDEZCFGHZIZRZACJKBLACBMKZLABCMKZLABCNUFUHUGAUBU
+    EUHUGLZUAUBUCUIUDBCOPQST $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Closure law for division.  (Contributed by Jim Kingdon, 22-Feb-2020.) $)
+    divclap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) -> ( A / B ) e. CC ) $=
+      ( vx cc wcel cc0 cap wbr w3a cdiv co cmul wceq crio divvalap wreu receuap
+      cv riotacl syl eqeltrd ) ADEBDEBFGHIZABJKBCRLKAMZCDNZDCABOUBUCCDPUDDECABQ
+      UCCDSTUA $.
+  $}
+
+  $( Closure law for reciprocal.  (Contributed by Jim Kingdon, 22-Feb-2020.) $)
+  recclap $p |- ( ( A e. CC /\ A # 0 ) -> ( 1 / A ) e. CC ) $=
+    ( c1 cc wcel cc0 cap wbr cdiv co ax-1cn divclap mp3an1 ) BCDACDAEFGBAHICDJB
+    AKL $.
+
+  $( A cancellation law for division.  (Contributed by Jim Kingdon,
+     22-Feb-2020.) $)
+  divcanap2 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+      ( B x. ( A / B ) ) = A ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv co wceq cmul eqid wa wb simp1 divclap 3simpc
+    divmulap syl3anc mpbii ) ACDZBCDZBEFGZHZABIJZUFKZBUFLJAKZUFMUEUBUFCDUCUDNUG
+    UHOUBUCUDPABQUBUCUDRAUFBSTUA $.
+
+  $( A cancellation law for division.  (Contributed by Jim Kingdon,
+     22-Feb-2020.) $)
+  divcanap1 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 )
+      -> ( ( A / B ) x. B ) = A ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv cmul divclap simp2 mulcomd divcanap2 eqtrd
+    co ) ACDZBCDZBEFGZHZABIPZBJPBUAJPATUABABKQRSLMABNO $.
+
+  $( A ratio is zero iff the numerator is zero.  (Contributed by Jim Kingdon,
+     22-Feb-2020.) $)
+  diveqap0 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+      ( ( A / B ) = 0 <-> A = 0 ) ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv co wceq cmul wa wb simp1 0cnd 3simpc syl3anc
+    divmulap2 simp2 mul01d eqeq2d bitrd ) ACDZBCDZBEFGZHZABIJEKZABELJZKZAEKUGUD
+    ECDUEUFMUHUJNUDUEUFOUGPUDUEUFQAEBSRUGUIEAUGBUDUEUFTUAUBUC $.
+
+  $( The ratio of numbers apart from zero is apart from zero.  (Contributed by
+     Jim Kingdon, 22-Feb-2020.) $)
+  divap0b $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+      ( A # 0 <-> ( A / B ) # 0 ) ) $=
+    ( cc wcel cc0 cap wbr cdiv co wa cmul simp3 biantrud divclap simp2 mulap0bd
+    w3a divcanap1 breq1d 3bitrrd ) ACDZBCDZBEFGZQZABHIZEFGZUFUCJUEBKIZEFGAEFGUD
+    UCUFUAUBUCLMUDUEBABNUAUBUCOPUDUGAEFABRST $.
+
+  $( The ratio of numbers apart from zero is apart from zero.  (Contributed by
+     Jim Kingdon, 22-Feb-2020.) $)
+  divap0 $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
+      ( A / B ) # 0 ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co wb divap0b 3expb biimpa an32s ) ACDZBCDZBE
+    FGZHZAEFGZABIJEFGZPSHTUAPQRTUAKABLMNO $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
