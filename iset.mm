@@ -70001,6 +70001,27 @@ $)
       TVSWGWHWIWJWHWIWJWHWIWJ $.
   $}
 
+  $( Right extensionality for complex multiplication.  (Contributed by Jim
+     Kingdon, 22-Feb-2020.) $)
+  mulext2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) -> (
+      ( C x. A ) # ( C x. B ) -> A # B ) ) $=
+    ( cc wcel w3a cmul cap wbr simp3 simp1 mulcomd simp2 breq12d mulext1 sylbid
+    co ) ADEZBDEZCDEZFZCAGQZCBGQZHIACGQZBCGQZHIABHIUAUBUDUCUEHUACARSTJZRSTKLUAC
+    BUFRSTMLNABCOP $.
+
+  $( Strong extensionality for multiplication.  Given excluded middle,
+     apartness would be equivalent to negated equality and this would follow
+     readily (for all operations) from ~ oveq12 .  For us, it is proved a
+     different way.  (Contributed by Jim Kingdon, 23-Feb-2020.) $)
+  mulext $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) -> (
+      ( A x. B ) # ( C x. D ) -> ( A # C \/ B # D ) ) ) $=
+    ( cc wcel wa cmul cap wbr simpll simplr mulcld simprl simprr apcotr syl3anc
+    co wo wi mulext1 mulext2 wb apsym syl2anc sylibd orim12d syld ) AEFZBEFZGZC
+    EFZDEFZGZGZABHRZCDHRZIJZUPCBHRZIJZUQUSIJZSZACIJZBDIJZSUOUPEFUQEFUSEFURVBTUO
+    ABUIUJUNKZUIUJUNLZMUOCDUKULUMNZUKULUMOZMUOCBVGVFMUPUQUSPQUOUTVCVAVDUOUIULUJ
+    UTVCTVEVGVFACBUAQUOVADBIJZVDUOUMUJULVAVITVHVFVGDBCUBQUOUMUJVIVDUCVHVFDBUDUE
+    UFUGUH $.
+
   $( A product apart from zero.  Lemma 2.13 of [Geuvers], p. 6.  (Contributed
      by Jim Kingdon, 19-Feb-2020.) $)
   remulap0 $p |- ( ( A e. RR /\ B e. RR /\ ( A x. B ) # 0 ) ->
