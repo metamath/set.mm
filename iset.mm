@@ -70181,6 +70181,44 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.
+    $( The product of two numbers apart from zero is apart from zero.  Lemma
+       2.15 of [Geuvers], p. 6.  (Contributed by Jim Kingdon, 22-Feb-2020.) $)
+    mulap0 $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
+        ( A x. B ) # 0 ) $=
+      ( vx cc wcel cc0 cap wa cv cmul co c1 wceq recexap adantl simpllr simplll
+      wbr wrex simplrl simprl mulassd simprr oveq2d mulid1d 3eqtrd 3brtr4d 0cnd
+      mul02d wi mulcld mulext1 syl3anc mpd rexlimddv ) ADEZAFGRZHZBDEZBFGRZHZHZ
+      BCIZJKZLMZABJKZFGRZCDVAVECDSURCBNOVBVCDEZVEHZHZVFVCJKZFVCJKZGRZVGVJAFVKVL
+      GUPUQVAVIPVJVKAVDJKALJKAVJABVCUPUQVAVIQZURUSUTVITZVBVHVEUAZUBVJVDLAJVBVHV
+      EUCUDVJAVNUEUFVJVCVPUIUGVJVFDEFDEVHVMVGUJVJABVNVOUKVJUHVPVFFVCULUMUNUO $.
+  $}
+
+  ${
+    mulap0i.1 $e |- A e. CC $.
+    mulap0i.2 $e |- B e. CC $.
+    mulap0i.3 $e |- A # 0 $.
+    mulap0i.4 $e |- B # 0 $.
+    $( The product of two numbers apart from zero is apart from zero.
+       (Contributed by Jim Kingdon, 23-Feb-2020.) $)
+    mulap0i $p |- ( A x. B ) # 0 $=
+      ( cc wcel cc0 cap wbr cmul co mulap0 mp4an ) AGHAIJKBGHBIJKABLMIJKCEDFABN
+      O $.
+  $}
+
+  ${
+    mulap0d.1 $e |- ( ph -> A e. CC ) $.
+    mulap0d.2 $e |- ( ph -> B e. CC ) $.
+    mulap0d.3 $e |- ( ph -> A # 0 ) $.
+    mulap0d.4 $e |- ( ph -> B # 0 ) $.
+    $( The product of two numbers apart from zero is apart from zero.
+       (Contributed by Jim Kingdon, 23-Feb-2020.) $)
+    mulap0d $p |- ( ph -> ( A x. B ) # 0 ) $=
+      ( cc wcel cc0 cap wbr cmul co mulap0 syl22anc ) ABHIBJKLCHICJKLBCMNJKLDFE
+      GBCOP $.
+  $}
+
+  ${
     $d x A $.  $d x B $.  $d x C $.  $d x ph $.
     mulcand.1 $e |- ( ph -> A e. CC ) $.
     mulcand.2 $e |- ( ph -> B e. CC ) $.
