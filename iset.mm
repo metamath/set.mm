@@ -70439,6 +70439,21 @@ $)
     divmulap2 simp2 mul01d eqeq2d bitrd ) ACDZBCDZBEFGZHZABIJEKZABELJZKZAEKUGUD
     ECDUEUFMUHUJNUDUEUFOUGPUDUEUFQAEBSRUGUIEAUGBUDUEUFTUAUBUC $.
 
+  $( The ratio of numbers apart from zero is apart from zero.  (Contributed by
+     Jim Kingdon, 22-Feb-2020.) $)
+  divap0b $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+      ( A # 0 <-> ( A / B ) # 0 ) ) $=
+    ( cc wcel cc0 cap wbr cdiv co wa cmul simp3 biantrud divclap simp2 mulap0bd
+    w3a divcanap1 breq1d 3bitrrd ) ACDZBCDZBEFGZQZABHIZEFGZUFUCJUEBKIZEFGAEFGUD
+    UCUFUAUBUCLMUDUEBABNUAUBUCOPUDUGAEFABRST $.
+
+  $( The ratio of numbers apart from zero is apart from zero.  (Contributed by
+     Jim Kingdon, 22-Feb-2020.) $)
+  divap0 $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
+      ( A / B ) # 0 ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co wb divap0b 3expb biimpa an32s ) ACDZBCDZBE
+    FGZHZAEFGZABIJEFGZPSHTUAPQRTUAKABLMNO $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
