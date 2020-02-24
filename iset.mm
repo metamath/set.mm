@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-Feb-2020
+$( iset.mm - Version of 24-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69882,20 +69882,6 @@ $)
       YNYOYPWOWPVTWAVDVAVOVJVKVLVMVNVLVMVNVLVMVN $.
   $}
 
-  $( Strong extensionality for multiplication.  Given excluded middle,
-     apartness would be equivalent to negated equality and this would follow
-     readily (for all operations) from ~ oveq12 .  For us, it is proved a
-     different way.  (Contributed by Jim Kingdon, 18-Feb-2020.) $)
-  remulext $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) ) -> (
-      ( A x. B ) # ( C x. D ) -> ( A # C \/ B # D ) ) ) $=
-    ( cr wcel wa cmul co cap wbr wo cc wi simpll recnd mulcld syl3anc remulext1
-    mulcomd simplr simprl simprr remulcld apcotr breq12d sylbid wb apsym sylibd
-    syl2anc orim12d syld ) AEFZBEFZGZCEFZDEFZGZGZABHIZCDHIZJKZVACBHIZJKZVBVDJKZ
-    LZACJKZBDJKZLUTVAMFVBMFVDMFVCVGNUTABUTAUNUOUSOZPUTBUNUOUSUAZPZQUTVBUTCDUPUQ
-    URUBZUPUQURUCZUDPUTCBUTCVMPZVLQVAVBVDUERUTVEVHVFVIUTUNUQUOVEVHNVJVMVKACBSRU
-    TVFDBJKZVIUTVFDCHIZBCHIZJKZVPUTVBVQVDVRJUTCDVOUTDVNPZTUTCBVOVLTUFUTURUOUQVS
-    VPNVNVKVMDBCSRUGUTDMFBMFVPVIUHVTVLDBUIUKUJULUM $.
-
   ${
     $d A u v w x y z $.  $d B u v w x y z $.  $d C u v w x y z $.
     $( Addition respects apartness.  Analogue of ~ addcan for apartness.
@@ -70023,25 +70009,25 @@ $)
     UFUGUH $.
 
   $( A product apart from zero.  Lemma 2.13 of [Geuvers], p. 6.  (Contributed
-     by Jim Kingdon, 19-Feb-2020.) $)
-  remulap0 $p |- ( ( A e. RR /\ B e. RR /\ ( A x. B ) # 0 ) ->
+     by Jim Kingdon, 24-Feb-2020.) $)
+  mulap0r $p |- ( ( A e. CC /\ B e. CC /\ ( A x. B ) # 0 ) ->
       ( A # 0 /\ B # 0 ) ) $=
-    ( cr wcel cmul co cc0 cap wbr wo recnd breqtrrd wi remulext syl22anc mpd cc
-    wn wb apirr w3a simp3 simp2 mul02d simp1 0red orcomd 3syl mpbird mul01d jca
-    biorf ) ACDZBCDZABEFZGHIZUAZAGHIZBGHIZUQURBBHIZURJZUQURUTUQUOGBEFZHIZURUTJZ
-    UQUOGVBHUMUNUPUBZUQBUQBUMUNUPUCZKZUDLUQUMUNGCDZUNVCVDMUMUNUPUEZVFUQUFZVFABG
-    BNOPUGUQBQDUTRURVASVGBTUTURULUHUIUQUSAAHIZUSJZUQUOAGEFZHIZVLUQUOGVMHVEUQAUQ
-    AVIKZUJLUQUMUNUMVHVNVLMVIVFVIVJABAGNOPUQAQDVKRUSVLSVOATVKUSULUHUIUK $.
+    ( cc wcel cmul co cc0 cap wbr wo breqtrrd wi mulext syl22anc wn apirr biorf
+    mpd wb 3syl w3a simp3 simp2 mul02d simp1 0cnd orcomd mpbird mul01d jca ) AC
+    DZBCDZABEFZGHIZUAZAGHIZBGHIZUOUPBBHIZUPJZUOUPURUOUMGBEFZHIZUPURJZUOUMGUTHUK
+    ULUNUBZUOBUKULUNUCZUDKUOUKULGCDZULVAVBLUKULUNUEZVDUOUFZVDABGBMNRUGUOULUROUP
+    USSVDBPURUPQTUHUOUQAAHIZUQJZUOUMAGEFZHIZVIUOUMGVJHVCUOAVFUIKUOUKULUKVEVKVIL
+    VFVDVFVGABAGMNRUOUKVHOUQVISVFAPVHUQQTUHUJ $.
 
   $( A square is nonnegative.  Lemma 2.35 of [Geuvers], p. 9.  (Contributed by
      NM, 23-May-2007.)  (Revised by Mario Carneiro, 27-May-2016.) $)
   msqge0 $p |- ( A e. RR -> 0 <_ ( A x. A ) ) $=
     ( cr wcel cc0 cmul co cle wbr clt wn remulcl anidms 0re ltnsym2 sylancl cap
-    wa wo orc wb reaplt syl5ibr wi remulap0 simpld 3expia apsqgt0 ex 3syld mtod
-    w3a ancld lenlt sylancr mpbird ) ABCZDAAEFZGHZUQDIHZJZUPUSUSDUQIHZQZUPUQBCZ
-    DBCZVBJUPVCAAKLZMUQDNOUPUSVAUPUSUQDPHZADPHZVAUSVFUPUSVARZUSVASUPVCVDVFVHTVE
-    MUQDUAOUBUPVFVGUCUPUPVFVGUPUPVFUKVGVGAAUDUEUFLUPVGVAAUGUHUIULUJUPVDVCURUTTM
-    VEDUQUMUNUO $.
+    wa wo orc wb reaplt syl5ibr wi w3a cc mulap0r syl3an1 syl3an2 simpld 3expia
+    recn apsqgt0 ex 3syld ancld mtod lenlt sylancr mpbird ) ABCZDAAEFZGHZVADIHZ
+    JZUTVCVCDVAIHZQZUTVABCZDBCZVFJUTVGAAKLZMVADNOUTVCVEUTVCVADPHZADPHZVEVCVJUTV
+    CVERZVCVESUTVGVHVJVLTVIMVADUAOUBUTVJVKUCUTUTVJVKUTUTVJUDVKVKUTUTAUECZVJVKVK
+    QZAUKZUTVMVMVJVNVOAAUFUGUHUIUJLUTVKVEAULUMUNUOUPUTVHVGVBVDTMVIDVAUQURUS $.
 
   ${
     msqge0i.1 $e |- A e. RR $.
@@ -70063,17 +70049,18 @@ $)
      NM, 8-Oct-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
   mulge0 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\
                 ( B e. RR /\ 0 <_ B ) ) -> 0 <_ ( A x. B ) ) $=
-    ( cr wcel cc0 cle wbr wa clt wn ad2ant2r 0re sylancl cap wo wb reaplt mpan2
-    lenlt mpbird co remulcl ltnsym2 orc syl5ibr simplll simplrl remulap0 3expia
-    cmul wi imp simpld ad3antrrr mpbid mpan biimpa ad2antrr syl simprd ad2antrl
-    biorf adantr ad2antlr mulgt0d ex syld ancld mtod sylancr ) ACDZEAFGZHZBCDZE
-    BFGZHZHZEABUJUAZFGZVREIGZJZVQVTVTEVRIGZHZVQVRCDZECDZWCJVKVNWDVLVOABUBKZLVRE
-    UCMVQVTWBVQVTVRENGZWBVTWGVQVTWBOZVTWBUDVQWDWEWGWHPWFLVREQMUEVQWGWBVQWGHZABV
-    KVLVPWGUFVMVNVOWGUGWIEAIGZAEIGZWJOZWIAENGZWLWIWMBENGZVQWGWMWNHZVKVNWGWOUKVL
-    VOVKVNWGWOABUHUIKULZUMVKWMWLPZVLVPWGVKWEWQLAEQRUNUOWIWKJZWJWLPVMWRVPWGVKVLW
-    RWEVKVLWRPLEASUPUQURWKWJVBUSTWIEBIGZBEIGZWSOZWIWNXAWIWMWNWPUTVQWNXAPZWGVNXB
-    VMVOVNWEXBLBEQRVAVCUOWIWTJZWSXAPVPXCVMWGVNVOXCWEVNVOXCPLEBSUPUQVDWTWSVBUSTV
-    EVFVGVHVIVQWEWDVSWAPLWFEVRSVJT $.
+    ( cr wcel cc0 cle wbr wa clt wn ad2ant2r 0re sylancl cap wo wb reaplt lenlt
+    cc mpbird co remulcl ltnsym2 orc syl5ibr simplll simplrl wi mulap0r syl3an1
+    cmul recn syl3an2 3expia imp simpld mpan2 ad3antrrr mpbid mpan biimpa biorf
+    ad2antrr simprd ad2antrl adantr ad2antlr mulgt0d ex syld ancld mtod sylancr
+    syl ) ACDZEAFGZHZBCDZEBFGZHZHZEABUKUAZFGZWBEIGZJZWAWDWDEWBIGZHZWAWBCDZECDZW
+    GJVOVRWHVPVSABUBKZLWBEUCMWAWDWFWAWDWBENGZWFWDWKWAWDWFOZWDWFUDWAWHWIWKWLPWJL
+    WBEQMUEWAWKWFWAWKHZABVOVPVTWKUFVQVRVSWKUGWMEAIGZAEIGZWNOZWMAENGZWPWMWQBENGZ
+    WAWKWQWRHZVOVRWKWSUHVPVSVOVRWKWSVRVOBSDZWKWSBULVOASDWTWKWSAULABUIUJUMUNKUOZ
+    UPVOWQWPPZVPVTWKVOWIXBLAEQUQURUSWMWOJZWNWPPVQXCVTWKVOVPXCWIVOVPXCPLEARUTVAV
+    CWOWNVBVNTWMEBIGZBEIGZXDOZWMWRXFWMWQWRXAVDWAWRXFPZWKVRXGVQVSVRWIXGLBEQUQVEV
+    FUSWMXEJZXDXFPVTXHVQWKVRVSXHWIVRVSXHPLEBRUTVAVGXEXDVBVNTVHVIVJVKVLWAWIWHWCW
+    EPLWJEWBRVMT $.
 
   ${
     mulge0i.1 $e |- A e. RR $.
