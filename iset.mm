@@ -1,4 +1,4 @@
-$( iset.mm - Version of 24-Feb-2020
+$( iset.mm - Version of 25-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -70383,6 +70383,13 @@ $)
     wa wb ) ACDZBCDZBEFGZHZABIJAKBIJZLJZMZBUOLJZAMZUMUQABUNLJZLJAKLJAUMBAUNUJUK
     ULNUJUKULRZUKULUNCDUJBOPZQUMUSKALUKULUSKMUJBSPTUMAUTUAUBUMUJUOCDUKULUHUPURU
     IUTUMAUNUTVAUCUJUKULUDAUOBUEUFUG $.
+
+  $( Relationship between division and reciprocal.  (Contributed by Jim
+     Kingdon, 25-Feb-2020.) $)
+  divrecap2 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+      ( A / B ) = ( ( 1 / B ) x. A ) ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv co c1 divrecap simp1 recclap 3adant1 mulcomd
+    cmul eqtrd ) ACDZBCDZBEFGZHZABIJAKBIJZQJUCAQJABLUBAUCSTUAMTUAUCCDSBNOPR $.
 
 $(
 ###############################################################################
