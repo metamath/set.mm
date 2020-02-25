@@ -13528,7 +13528,8 @@ $)
   ${
     $d x y z $.  $d z ph $.
     $( Version of ~ ax16 that doesn't require ~ ax-10 or ~ ax-12 for its
-       proof.  (Contributed by NM, 17-May-2008.) $)
+       proof.  (Contributed by NM, 17-May-2008.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     ax16ALT $p |- ( A. x x = y -> ( ph -> A. x ph ) ) $=
       ( vz wsb sbequ12 ax-17 hbsb3 ax16i ) AABDEBCDABDFABDADGHI $.
   $}
