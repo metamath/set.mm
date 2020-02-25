@@ -70374,6 +70374,16 @@ $)
     ( c1 cc wcel cc0 cap wbr cdiv co cmul wceq ax-1cn divcanap1 mp3an1 ) BCDACD
     AEFGBAHIAJIBKLBAMN $.
 
+  $( Relationship between division and reciprocal.  (Contributed by Jim
+     Kingdon, 24-Feb-2020.) $)
+  divrecap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+      ( A / B ) = ( A x. ( 1 / B ) ) ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv co c1 cmul wceq simp2 recclap 3adant1 mul12d
+    simp1 recidap oveq2d mulid1d 3eqtrd mulcld 3simpc divmulap syl3anc mpbird
+    wa wb ) ACDZBCDZBEFGZHZABIJAKBIJZLJZMZBUOLJZAMZUMUQABUNLJZLJAKLJAUMBAUNUJUK
+    ULNUJUKULRZUKULUNCDUJBOPZQUMUSKALUKULUSKMUJBSPTUMAUTUAUBUMUJUOCDUKULUHUPURU
+    IUTUMAUNUTVAUCUJUKULUDAUOBUEUFUG $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
