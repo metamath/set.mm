@@ -33582,12 +33582,9 @@ $)
 
   ${
     $d y A $.  $d y B $.  $d x y $.
-    $( The existence of proper substitution into a class.  Although we adopt
-       the name ~ csbexgOLD for consistency with the Metamath Proof Explorer,
-       we do not yet have a version of this theorem without the ` A e. V `
-       condition, so unless/until that happens, this theorem is not obsolete
-       and can be used.  (Contributed by NM, 10-Nov-2005.) $)
-    csbexgOLD $p |- ( ( A e. V /\ A. x B e. W ) -> [_ A / x ]_ B e. _V ) $=
+    $( The existence of proper substitution into a class.  (Contributed by NM,
+       10-Nov-2005.) $)
+    csbexga $p |- ( ( A e. V /\ A. x B e. W ) -> [_ A / x ]_ B e. _V ) $=
       ( vy wcel wal wa csb wsbc cab cvv df-csb abid2 elex syl5eqel alimi spsbc
       cv syl5 imp wb nfcv sbcabel adantr mpbid ) BDGZCEGZAHZIZABCJFTCGZABKFLZMA
       FBCNUKULFLZMGZABKZUMMGZUHUJUPUJUOAHUHUPUIUOAUIUNCMFCOCEPQRUOABDSUAUBUHUPU
@@ -33595,16 +33592,12 @@ $)
   $}
 
   ${
-    csbexOLD.1 $e |- A e. _V $.
-    csbexOLD.2 $e |- B e. _V $.
-    $( The existence of proper substitution into a class.  Although we adopt
-       the name ~ csbexOLD for consistency with the Metamath Proof Explorer, we
-       do not yet have a version of this theorem without the ` A e. V `
-       condition, so unless/until that happens, this theorem is not obsolete
-       and can be used.  (Contributed by NM, 7-Aug-2007.)  (Proof shortened by
-       Andrew Salmon, 29-Jun-2011.) $)
-    csbexOLD $p |- [_ A / x ]_ B e. _V $=
-      ( cvv wcel csb wal csbexgOLD mpan mpg ) CFGZABCHFGZABFGMAINDABCFFJKEL $.
+    csbexa.1 $e |- A e. _V $.
+    csbexa.2 $e |- B e. _V $.
+    $( The existence of proper substitution into a class.  (Contributed by NM,
+       7-Aug-2007.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+    csbexa $p |- [_ A / x ]_ B e. _V $=
+      ( cvv wcel csb wal csbexga mpan mpg ) CFGZABCHFGZABFGMAINDABCFFJKEL $.
   $}
 
 
@@ -53252,12 +53245,12 @@ $)
        (Revised by Mario Carneiro, 31-Aug-2015.) $)
     dfmpt2 $p |- ( x e. A , y e. B |-> C )
                 = U_ x e. A U_ y e. B { <. <. x , y >. , C >. } $=
-      ( vw cv cfv csb cop csn ciun cvv wcel ax-mp csbexOLD nfcv nfcsb1v nfop id
-      cmpt2 cxp c1st c2nd cmpt mpt2mpts vex 1stexg 2ndexg dfmpt nfsn nfcsb wceq
-      csbopeq1a opeq12d sneqd iunxpf 3eqtri ) ABCDEUBGCDUCZAGHZUDIZBVAUEIZEJZJZ
-      UFGUTVAVEKZLZMACBDAHBHKZEKZLZMMABGCDEUGGUTVEAVBVDVANOZVBNOGUHZVANUIPBVCEV
-      KVCNOVLVANUJPFQQUKGABCDVGVJAVFAVAVEAVARAVBVDSTULBVFBVAVEBVARBAVBVDBVBRBVC
-      ESUMTULGVJRVAVHUNZVFVIVMVAVHVEEVMUAABVAEUOUPUQURUS $.
+      ( vw cv cfv csb cop csn ciun cvv wcel ax-mp csbexa nfcv nfcsb1v nfop c1st
+      cmpt2 cxp c2nd cmpt mpt2mpts vex 1stexg 2ndexg dfmpt nfsn nfcsb csbopeq1a
+      wceq id opeq12d sneqd iunxpf 3eqtri ) ABCDEUBGCDUCZAGHZUAIZBVAUDIZEJZJZUE
+      GUTVAVEKZLZMACBDAHBHKZEKZLZMMABGCDEUFGUTVEAVBVDVANOZVBNOGUGZVANUHPBVCEVKV
+      CNOVLVANUIPFQQUJGABCDVGVJAVFAVAVEAVARAVBVDSTUKBVFBVAVEBVARBAVBVDBVBRBVCES
+      ULTUKGVJRVAVHUNZVFVIVMVAVHVEEVMUOABVAEUMUPUQURUS $.
   $}
 
   $( Lemma for ~ cnvf1o .  (Contributed by Mario Carneiro, 27-Apr-2014.) $)
