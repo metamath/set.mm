@@ -69533,6 +69533,11 @@ $)
     ( cr wcel wa cap wbr creap clt wo apreap reapval bitrd ) ACDBCDEABFGABHGABI
     GBAIGJABKABLM $.
 
+  $( One is apart from zero.  (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+  1ap0 $p |- 1 # 0 $=
+    ( c1 cc0 cap wbr clt wo 0lt1 olci cr wcel wb 1re 0re reaplt mp2an mpbir ) A
+    BCDZABEDZBAEDZFZSRGHAIJBIJQTKLMABNOP $.
+
   $( Multiplication of both sides of 'less than' by a positive number.  Theorem
      I.19 of [Apostol] p. 20.  (Contributed by NM, 15-May-1999.)  (Revised by
      Mario Carneiro, 27-May-2016.) $)
