@@ -28498,27 +28498,6 @@ $)
   $}
 
   ${
-    $d x A $.
-    r19.3rmOLD.1 $e |- F/ x ph $.
-    $( Restricted quantification of wff not containing quantified variable.
-       This is a special case of ~ r19.3rm where the two setvar variables are
-       both ` x ` , so new proofs should just use ~ r19.3rm instead.
-       (Contributed by Jim Kingdon, 5-Aug-2018.)
-       (New usage is discouraged.) $)
-    r19.3rmOLD $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
-      ( cv wcel wex wi wral biimt wal df-ral 19.23 bitri syl6bbr ) BECFZBGZAQAH
-      ZABCIZQAJSPAHBKRABCLPABDMNO $.
-
-    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
-       is valid only when the domain of quantification is inhabited.
-       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
-    r19.28m $p |- ( E. x x e. A ->
-                   ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
-      ( cv wcel wex wral wa r19.3rmOLD anbi1d r19.26 syl6rbbr ) CFDGCHZABCDIZJA
-      CDIZPJABJCDIOAQPACDEKLABCDMN $.
-  $}
-
-  ${
     $d a x A $.  $d a y A $.
     r19.3rm.1 $e |- F/ x ph $.
     $( Restricted quantification of wff not containing quantified variable.
@@ -28527,6 +28506,18 @@ $)
       ( va cv wcel wex wral wb eleq1 cbvexv wi biimt df-ral 19.23 bitri syl6bbr
       wal sylbi sylbir ) CGZDHZCIFGZDHZFIZAABDJZKZUFUDFCUEUCDLMUGBGZDHZBIZUIUFU
       KFBUEUJDLMULAULANZUHULAOUHUKANBTUMABDPUKABEQRSUAUB $.
+  $}
+
+  ${
+    $d x A $.
+    r19.28m.1 $e |- F/ x ph $.
+    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.28m $p |- ( E. x x e. A ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
+      ( cv wcel wex wral wa r19.3rm anbi1d r19.26 syl6rbbr ) CFDGCHZABCDIZJACDI
+      ZPJABJCDIOAQPACCDEKLABCDMN $.
   $}
 
   ${
@@ -28580,8 +28571,8 @@ $)
        (Contributed by Jim Kingdon, 5-Aug-2018.) $)
     r19.27m $p |- ( E. x x e. A ->
                    ( A. x e. A ( ph /\ ps ) <-> ( A. x e. A ph /\ ps ) ) ) $=
-      ( cv wcel wex wral wa r19.3rmOLD anbi2d r19.26 syl6rbbr ) CFDGCHZACDIZBJP
-      BCDIZJABJCDIOBQPBCDEKLABCDMN $.
+      ( cv wcel wex wral wa r19.3rm anbi2d r19.26 syl6rbbr ) CFDGCHZACDIZBJPBCD
+      IZJABJCDIOBQPBCCDEKLABCDMN $.
   $}
 
   ${
