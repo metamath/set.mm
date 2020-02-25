@@ -70547,8 +70547,8 @@ $)
        <li><b>Bibliography references.</b>
        The bibliography for the Intuitionistic Logic Explorer is
        separate from the one for the Metamath Proof Explorer but feel
-       free to copy-paste citations in either direction if it would be
-       useful to cite it.</li>
+       free to copy-paste a citation in either direction in order to
+       cite it.</li>
 
        </ul></HTML>
 
