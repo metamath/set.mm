@@ -70356,6 +70356,12 @@ $)
     ( cc wcel cc0 cap wbr wa cdiv co wb divap0b 3expb biimpa an32s ) ACDZBCDZBE
     FGZHZAEFGZABIJEFGZPSHTUAPQRTUAKABLMNO $.
 
+  $( The reciprocal of a number apart from zero is apart from zero.
+     (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+  recap0 $p |- ( ( A e. CC /\ A # 0 ) -> ( 1 / A ) # 0 ) $=
+    ( c1 cc wcel cc0 cap wbr wa cdiv co ax-1cn 1ap0 divap0 mpanl12 ) BCDBEFGACD
+    AEFGHBAIJEFGKLBAMN $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
