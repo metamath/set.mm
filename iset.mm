@@ -14952,8 +14952,12 @@ $( The theorems in this section make use of the $d statement. $)
     $d z ps $.  $d x z $.  $d y z $.
     dvelimALT.1 $e |- ( ph -> A. x ph ) $.
     dvelimALT.2 $e |- ( z = y -> ( ph <-> ps ) ) $.
-    $( Version of ~ dvelim that doesn't use ~ ax-10 .  (Contributed by NM,
-       17-May-2008.)  (Proof modification is discouraged.) $)
+    $( Version of ~ dvelim that doesn't use ~ ax-10 .  Because it has different
+       distinct variable constraints than ~ dvelim and is used in important
+       proofs, it would be better if it had a name which does not end in ALT
+       (ideally more close to set.mm naming).  (Contributed by NM,
+       17-May-2008.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     dvelimALT $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
       ( weq wal wn wi wnf nfv wo ax-i12 orcom orbi2i mpbi a1i nfimd orass mpbir
       nfa1 ax16ALT nfd nfi df-nf id sylbir orim1i ax-mp ori nfald ax-17 equsalh
