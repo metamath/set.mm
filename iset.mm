@@ -3388,16 +3388,6 @@ $)
   anidm $p |- ( ( ph /\ ph ) <-> ph ) $=
     ( wa pm4.24 bicomi ) AAABACD $.
 
-  $( Obsolete proof of ~ anidm as of 14-Mar-2014.  (Contributed by NM,
-     5-Aug-1993.)  (Revised by NM, 6-Nov-2012.) $)
-  anidmOLD $p |- ( ( ph /\ ph ) <-> ph ) $=
-    ( wa simpl id ancli impbii ) AABAAACAAADEF $.
-
-  $( Obsolete proof of ~ pm4.24 as of 14-Mar-2014.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.24OLD $p |- ( ph <-> ( ph /\ ph ) ) $=
-    ( wa anidm bicomi ) AABAACD $.
-
   ${
     anidms.1 $e |- ( ( ph /\ ph ) -> ps ) $.
     $( Inference from idempotent law for conjunction.  (Contributed by NM,
@@ -3735,11 +3725,6 @@ $)
        Wolf Lammen, 7-Apr-2013.) $)
     mpanr2 $p |- ( ( ph /\ ps ) -> th ) $=
       ( wa jctr sylan2 ) BABCGDBCEHFI $.
-
-    $( Obsolete proof of ~ mpanr2 as of 7-Apr-2013.  (Contributed by NM,
-       3-May-1994.)  (Revised by NM, 12-May-2011.) $)
-    mpanr2OLD $p |- ( ( ph /\ ps ) -> th ) $=
-      ( wa expr mpi ) ABGCDEABCDFHI $.
   $}
 
   ${
@@ -4422,12 +4407,6 @@ $)
                 ( ( ph -> ps ) /\ ( ph -> ch ) ) ) $=
     ( wa wi simpl imim2i simpr jca pm3.43 impbii ) ABCDZEZABEZACEZDMNOLBABCFGLC
     ABCHGIABCJK $.
-
-  $( Obsolete proof of ~ pm3.43 as of 27-Nov-2013 (Contributed by NM,
-     3-Jan-2005.) $)
-  pm3.43OLD $p |- ( ( ( ph -> ps ) /\ ( ph -> ch ) ) ->
-                ( ph -> ( ps /\ ch ) ) ) $=
-    ( wa wi jcab biimpri ) ABCDEABEACEDABCFG $.
 
   $( Theorem *4.76 of [WhiteheadRussell] p. 121.  (Contributed by NM,
      3-Jan-2005.) $)
@@ -5760,11 +5739,6 @@ $)
      shortened by Wolf Lammen, 28-Feb-2014.) $)
   orabs $p |- ( ph <-> ( ( ph \/ ps ) /\ ph ) ) $=
     ( wo orc pm4.71ri ) AABCABDE $.
-
-  $( Obsolete proof of ~ orabs as of 28-Feb-2014.  (Contributed by NM,
-     5-Aug-1993.) $)
-  orabsOLD $p |- ( ph <-> ( ( ph \/ ps ) /\ ph ) ) $=
-    ( wo wa orc ancri simpr impbii ) AABCZADAIABEFIAGH $.
 
   $( Absorb a disjunct into a conjunct.  (Contributed by Roy F. Longton,
      23-Jun-2005.)  (Proof shortened by Wolf Lammen, 10-Nov-2013.) $)
@@ -7923,28 +7897,6 @@ $)
        Mario Carneiro, 11-May-2014.) $)
     mpbir3and $p |- ( ph -> ps ) $=
       ( w3a 3jca mpbird ) ABCDEJACDEFGHKIL $.
-  $}
-
-  ${
-    mpbir3anOLD.1 $e |- ( ph <-> ( ps /\ ch /\ th ) ) $.
-    mpbir3anOLD.2 $e |- ps $.
-    mpbir3anOLD.3 $e |- ch $.
-    mpbir3anOLD.4 $e |- th $.
-    $( Obsolete version of ~ mpbir3an as of 9-Jan-2015.  (Contributed by NM,
-       16-Sep-2011.) $)
-    mpbir3anOLD $p |- ph $=
-      ( mpbir3an ) ABCDFGHEI $.
-  $}
-
-  ${
-    mpbir3andOLD.1 $e |- ( ph -> ( ps <-> ( ch /\ th /\ ta ) ) ) $.
-    mpbir3andOLD.2 $e |- ( ph -> ch ) $.
-    mpbir3andOLD.3 $e |- ( ph -> th ) $.
-    mpbir3andOLD.4 $e |- ( ph -> ta ) $.
-    $( Obsolete version of ~ mpbir3and as of 9-Jan-2015.  (Contributed by NM,
-       11-May-2014.) $)
-    mpbir3andOLD $p |- ( ph -> ps ) $=
-      ( mpbir3and ) ABCDEGHIFJ $.
   $}
 
   ${
@@ -10326,12 +10278,6 @@ $)
     ( wal alrot3 albii alcom 3bitri ) AEFDFCFZBFACFZEFZDFZBFMBFZDFLBFEFZDFKNBAC
     DEGHMBDIOPDLBEIHJ $.
 
-  $( Obsolete proof of ~ alrot4 as of 28-Jun-2014.  (Contributed by NM,
-     2-Feb-2005.) $)
-  alrot4OLD $p |- ( A. x A. y A. z A. w ph <-> A. z A. w A. x A. y ph ) $=
-    ( wal alcom albii bitri 3bitri ) AEFZDFCFZBFACFZEFZDFZBFNBFZDFMBFEFZDFLOBLK
-    CFZDFOKCDGRNDACEGHIHNBDGPQDMBEGHJ $.
-
   $( Split a biconditional and distribute quantifier.  (Contributed by NM,
      18-Aug-1993.) $)
   albiim $p |- ( A. x ( ph <-> ps ) <->
@@ -10863,12 +10809,6 @@ $)
   equidqe $p |- -. A. y -. x = x $=
     ( weq wn wal ax-9 ax-8 pm2.43i con3i alimi mto ) AACZDZBEBACZDZBEBAFMOBNLNL
     BAAGHIJK $.
-
-  $( Obsolete proof of ~ equidqe as of 27-Feb-2014.  (Contributed by NM,
-     13-Jan-2011.) $)
-  equidqeOLD $p |- -. A. y -. x = x $=
-    ( weq wn wal ax-9 wi ax-8 pm2.43i con3i ax-gen ax-5 ax-mp mto ) AACZDZBEZBA
-    CZDZBEZBAFPSGZBEQTGUABROROBAAHIJKPSBLMN $.
 
   $( A special case of ~ ax-4 without using ~ ax-4 or ~ ax-17 .  (Contributed
      by NM, 13-Jan-2011.) $)
