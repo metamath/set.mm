@@ -28540,14 +28540,6 @@ $)
 
   ${
     $d x A $.  $d y A $.  $d x ph $.
-    $( Restricted quantification of wff not containing quantified variable.
-       This is a special case of ~ r19.9rmv where ` x ` and ` y ` are the same
-       variable, but new proofs should use ~r19.9rmv instead.
-       (New usage is discouraged.)  (Contributed by Jim Kingdon,
-       5-Aug-2018.) $)
-    r19.9rmvOLD $p |- ( E. x x e. A -> ( ph <-> E. x e. A ph ) ) $=
-      ( r19.9rmv ) ABBCD $.
-
     $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
        is valid only when the domain of quantification is inhabited.
        (Contributed by Jim Kingdon, 6-Aug-2018.) $)
@@ -28559,8 +28551,8 @@ $)
        by NM, 27-May-1998.) $)
     r19.45mv $p |- ( E. x x e. A ->
                    ( E. x e. A ( ph \/ ps ) <-> ( ph \/ E. x e. A ps ) ) ) $=
-      ( cv wcel wex wrex wo r19.9rmvOLD orbi1d r19.43 syl6rbbr ) CEDFCGZABCDHZI
-      ACDHZOIABICDHNAPOACDJKABCDLM $.
+      ( cv wcel wex wrex wo r19.9rmv orbi1d r19.43 syl6rbbr ) CEDFCGZABCDHZIACD
+      HZOIABICDHNAPOACCDJKABCDLM $.
   $}
 
   ${
@@ -31516,8 +31508,8 @@ $)
     $( Indexed union of a constant class, i.e. where ` B ` does not depend on
        ` x ` .  (Contributed by Jim Kingdon, 15-Aug-2018.) $)
     iunconstm $p |- ( E. x x e. A -> U_ x e. A B = B ) $=
-      ( vy cv wcel wex ciun wrex r19.9rmvOLD eliun syl6rbbr eqrdv ) AEBFAGZDABC
-      HZCNDEZCFZQABIPOFQABJAPBCKLM $.
+      ( vy cv wcel wex ciun wrex r19.9rmv eliun syl6rbbr eqrdv ) AEBFAGZDABCHZC
+      NDEZCFZQABIPOFQAABJAPBCKLM $.
   $}
 
   ${
