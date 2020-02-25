@@ -70408,7 +70408,7 @@ practices, which are discussed in more detail in other references.
 The following sources lay out how mathematics is developed without the law
 of the excluded middle. Of course, there are a greater number of sources
 which assume excluded middle and most of what is in them applies here too
-(especially in a treatment such as ours which is build on first order
+(especially in a treatment such as ours which is built on first order
 logic and set theory, rather than, say, type theory). Studying how a topic
 is treated in the Metamath Proof Explorer and the references therein is
 often a good place to start (and is easy to compare with the Intuitionistic
