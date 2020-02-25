@@ -35975,38 +35975,16 @@ $)
   $}
 
   ${
-    $d z y A $.
-    $( The successor of a transtive class is transitive.  (Contributed by Alan
+    $d y z A $.
+    $( The successor of a transitive class is transitive.  (Contributed by Alan
        Sare, 11-Apr-2009.) $)
-    suctrALT $p |- ( Tr A -> Tr suc A ) $=
+    suctr $p |- ( Tr A -> Tr suc A ) $=
       ( vz vy wtr cv wcel csuc wa wi wal wceq simpr vex elsuc sylib simpl eleq2
       wo syl6 mpdi syl5ibcom elelsuc trel expd adantrd syl8 jao alrimivv sylibr
       dftr2 ) ADZBEZCEZFZUMAGZFZHZULUOFZIZCJBJUODUKUSBCUKUQUMAFZUMAKZRZURUQUPVB
       UNUPLUMACMNOUKUQVAURIZVBURIZUQVAULAFZURUQUNVAVEUNUPPUMAULQUAULAUBZSUKUQUT
       URIVCVDIUKUQUTVEURUKUNUTVEIUPUKUNUTVEAULUMUCUDUEVFUFUTURVAUGSTTUHBCUOUJUI
       $.
-  $}
-
-  ${
-    $d z A $.  $d y A $.  $d z y $.
-    $( The sucessor of a transitive class is transitive.  The proof of
-       ~ http://www.virtualdeduction.com/suctrvd.html is a Virtual Deduction
-       proof verified by automatically transforming it into the Metamath proof
-       of ~ suctr using completeusersproof, which is verified by the Metamath
-       program.  The proof of ~ http://www.virtualdeduction.com/suctrro.html is
-       a form of the completed proof which preserves the Virtual Deduction
-       proof's step numbers and their ordering.  (Contributed by Alan Sare,
-       11-Apr-2009.)  See ~ suctrALT for the original proof before this
-       revision.  (Revised by Alan Sare, 12-Jun-2018.)
-       (Proof modification is discouraged.) $)
-    suctr $p |- ( Tr A -> Tr suc A ) $=
-      ( vz vy wtr cv wcel csuc wa wi wal wceq w3a sssucid id simpld trel sseldi
-      adantl ex syl 3impib syl3an 3expia adantr eleqtrd wo simprd elsuci mpjaod
-      idi alrimivv dftr2 biimpri ) ADZBEZCEZFZUPAGZFZHZUOURFZIZCJBJZURDZUNVBBCU
-      NUTVAUNUTHUPAFZVAUPAKZUNUTVEVAUNUTVELAURUOAMZUNUNUTUQVEVEUOAFZUNNUTUQUSUT
-      NZOZVENUNUQVELVHIUNUQVEVHAUOUPPUAUJUBQUCUTVFVAIUNUTVFVAUTVFHZAURUOVGVKUOU
-      PAUTUQVFVJUDVFVFUTVFNRUEQSRUTVEVFUFZUNUTUSVLUTUQUSVIUGUPAUHTRUISUKVDVCBCU
-      RULUMT $.
   $}
 
   $( A set whose successor belongs to a transitive class also belongs.
