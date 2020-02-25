@@ -53,12 +53,7 @@ Theorems which are the same as in set.mm should be named the same (that is,
 where the statement of the theorem is the same; the proof can differ without
 a new name being called for).  Theorems which are different should be named
 differently (although if additional hypotheses are added in iset.mm the name
-need not be changed).  A biconditional in set.mm which is an implication in
-iset.mm should have a "r" (for the reverse direction), or "i"/"im" (for the
-forward direction) appended.  A theorem in set.mm which has a decidability
-condition added should add "dc" to the theorem name.  A theorem in set.mm
-where "nonempty class" is changed to "inhabited class" should add "m" (for
-member) to the theorem name.
+need not be changed).
 
 As with set.mm, we welcome suggestions for better names (such as names which
 are more consistent with naming conventions).
@@ -70453,6 +70448,156 @@ $)
       ( A / B ) # 0 ) $=
     ( cc wcel cc0 cap wbr wa cdiv co wb divap0b 3expb biimpa an32s ) ACDZBCDZBE
     FGZHZAEFGZABIJEFGZPSHTUAPQRTUAKABLMNO $.
+
+$(
+###############################################################################
+               GUIDES AND MISCELLANEA
+###############################################################################
+$)
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+          Guides (conventions, explanations, and examples)
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Conventions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+This section describes the conventions we use.
+However, these conventions often refer to existing mathematical
+practices, which are discussed in more detail in other references.
+
+The following sources lay out how mathematics is developed without the law
+of the excluded middle. Of course, there are a greater number of sources
+which assume excluded middle and most of what is in them applies here too
+(especially in a treatment such as ours which is build on first order
+logic and set theory, rather than, say, type theory). Studying how a topic
+is treated in the Metamath Proof Explorer and the references therein is
+often a good place to start (and is easy to compare with the Intuitionistic
+Logic Explorer).
+
+The
+textbooks provide a motivation for what we are doing, whereas Metamath lets you
+see in detail all hidden and implicit steps.  Most standard theorems are
+accompanied by citations.  Some closely followed texts include the following:
+
+  <HTML><ul>
+  <li>Axioms of propositional calculus - Stanford Encyclopedia of
+  Philosophy or [Heyting].</li>
+  <li>Axioms of predicate calculus - our axioms are adapted from the ones
+  in the Metamath Proof Explorer.</li>
+  <li>Theorems of propositional calculus - [Heyting].</li>
+  <li>Theorems of pure predicate calculus - Metamath Proof Explorer.</li>
+  <li>Theorems of equality and substitution - Metamath Proof Explorer.</li>
+  <li>Axioms of set theory - [Crosilla].</li>
+  <li>Development of set theory - Chapter 10 of [HoTT].</li>
+  <li>Construction of real and complex numbers - Chapter 11 of [HoTT];
+  [BauerTaylor].</li>
+  <li>Theorems about real numbers - [Geuvers].</li></ul></HTML>
+
+$)
+
+  ${
+   $( Dummy premise for "conventions" $)
+    conventions.1 $e |- ph $.
+    $(
+
+       Unless there is a reason to diverge, we follow the conventions of
+       the Metamath Proof Explorer (aka "set.mm"). This list of
+       conventions is intended to be read in conjunction with the
+       corresponding conventions in the Metamath Proof Explorer, and
+       only the differences are described below.
+
+       <HTML><br></HTML>
+
+       <HTML><ul>
+
+       <li><b>Minimizing axioms and the axiom of choice.</b>
+       We prefer proofs that depend on fewer and/or weaker axioms,
+       even if the proofs are longer. In particular, our choice of IZF
+       (Intuitionistic Zermelo-Fraenkel) over CZF (Constructive
+       Zermelo-Fraenkel, a weaker system) was just an expedient choice
+       because IZF is easier to formalize in metamath. You can find some
+       development using CZF in BJ's mathbox starting at ~ ax-bd0 (and the
+       section header just above it).
+       As for the axiom of choice, the full axiom of choice implies
+       excluded middle as seen at ~ acexmid , although some authors will
+       use countable choice or dependent choice. For example, countable
+       choice or excluded middle is needed to show that the Cauchy reals
+       coincide with the Dedekind reals - Corollary 11.4.3 of [HoTT],
+       p. (varies).</li>
+
+       <li><b>Junk/undefined results.</b>
+       Much of the discussion of this topic in the Metamath Proof
+       Explorer applies except that certain techniques are not
+       available to us. For example, the Metamath Proof Explorer will
+       often say "if a function is evaluated within its domain, a
+       certain result follows; if the function is evaluated outside
+       its domain, the same result follows. Since the function must
+       be evaluated within its domain or outside it, the result follows
+       unconditionally" (the use of excluded middle in this argument is
+       perhaps obvious when stated this way). For this reason, we
+       generally need to prove we are evaluating functions within
+       their domains and avoid the reverse closure theorems of the
+       Metamath Proof Explorer.</li>
+
+       <li><b>Bibliography references.</b>
+       The bibliography for the Intuitionistic Logic Explorer is
+       separate from the one for the Metamath Proof Explorer but feel
+       free to copy-paste a citation in either direction in order to
+       cite it.</li>
+
+       </ul></HTML>
+
+       <HTML><b>Label naming conventions</b></HTML>
+
+       Here are a few of the label naming conventions:
+
+       <HTML><ul>
+
+       <li><b>Suffixes.</b>
+       We follow the conventions of the Metamath Proof Explorer with a few
+       additions. A biconditional in set.mm which is an implication in
+       iset.mm should have a "r" (for the reverse direction), or "i"/"im"
+       (for the forward direction) appended.  A theorem in set.mm which has
+       a decidability condition added should add "dc" to the theorem name.
+       A theorem in set.mm where "nonempty class" is changed to "inhabited
+       class" should add "m" (for member) to the theorem name.</li>
+       </ul></HTML>
+
+       <HTML>
+       The following table shows some commonly-used abbreviations in labels
+       which are not found in the Metamath Proof Explorer,
+       in alphabetical order.
+       For each abbreviation we provide a mnenomic to help you remember it,
+       the source theorem/assumption defining it, an expression showing
+       what it looks like, whether or not it is a "syntax fragment"
+       (an abbreviation that indicates a particular kind of syntax), and
+       hyperlinks to label examples that use the abbreviation.
+       The abbreviation is bolded if there is a df-NAME definition but
+       the label fragment is not NAME.
+       <table border="1" id="naming-abbreviation-table">
+       <tr><th>Abbreviation</th><th>Mnenomic</th><th>Source</th>
+       <th>Expression</th><th>Syntax?</th><th>Example(s)</th></tr>
+       <tr><td>ap</td><td>apart</td><td> ~ df-ap </td>
+       <td> </td><td>Yes</td><td> ~ apadd1 , ~ apne </td></tr>
+       </table>
+       </HTML>
+
+       <li><b>Community.</b>
+       The Metamath mailing list also covers the Intuitionistic Logic
+       Explorer and is at:
+       ~ https://groups.google.com/forum/#!forum/metamath .
+       </li>
+       </ul></HTML>
+
+       (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+    conventions $p |- ph $=
+      (  ) B $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
