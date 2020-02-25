@@ -70368,6 +70368,12 @@ $)
     ( c1 cc wcel cc0 cap wbr cdiv co cmul wceq ax-1cn divcanap2 mp3an1 ) BCDACD
     AEFGABAHIJIBKLBAMN $.
 
+  $( Multiplication of a number and its reciprocal.  (Contributed by Jim
+     Kingdon, 24-Feb-2020.) $)
+  recidap2 $p |- ( ( A e. CC /\ A # 0 ) -> ( ( 1 / A ) x. A ) = 1 ) $=
+    ( c1 cc wcel cc0 cap wbr cdiv co cmul wceq ax-1cn divcanap1 mp3an1 ) BCDACD
+    AEFGBAHIAJIBKLBAMN $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
