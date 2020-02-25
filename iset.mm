@@ -70391,6 +70391,16 @@ $)
     ( cc wcel cc0 cap wbr w3a cdiv co c1 divrecap simp1 recclap 3adant1 mulcomd
     cmul eqtrd ) ACDZBCDZBEFGZHZABIJAKBIJZQJUCAQJABLUBAUCSTUAMTUAUCCDSBNOPR $.
 
+  $( An associative law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divassap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) ) ->
+      ( ( A x. B ) / C ) = ( A x. ( B / C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cmul cdiv wceq recclap mulass syl3an3 divrecap
+    co c1 syl3anc mulcl 3adant3 simp3l simp3r simp2 oveq2d 3eqtr4d ) ADEZBDEZCD
+    EZCFGHZIZJZABKRZSCLRZKRZABUOKRZKRZUNCLRZABCLRZKRULUHUIUODEUPURMCNABUOOPUMUN
+    DEZUJUKUSUPMUHUIVAULABUAUBUHUIUJUKUCZUHUIUJUKUDZUNCQTUMUTUQAKUMUIUJUKUTUQMU
+    HUIULUEVBVCBCQTUFUG $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
