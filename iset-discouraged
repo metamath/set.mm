@@ -60,6 +60,8 @@
 "ax-mulcl" is used by "mulcl".
 "ax-mulcom" is used by "mulcom".
 "ax-mulrcl" is used by "remulcl".
+"ax16ALT" is used by "dvelimALT".
+"ax16ALT" is used by "dvelimfv".
 "axltirr" is used by "ltnr".
 "axlttrn" is used by "lttr".
 "axresscn" is used by "ax1cn".
@@ -71,6 +73,7 @@
 "df-pnf" is used by "mnfnre".
 "df-pnf" is used by "pnfnre".
 "df-tru" is used by "tru".
+"dvelimALT" is used by "hbsb4".
 "equsalh" is used by "dvelimALT".
 "equsalh" is used by "dvelimfALT2".
 "equsalh" is used by "dvelimfv".
@@ -116,10 +119,6 @@
 "prexgOLD" is used by "relop".
 "prexgOLD" is used by "unex".
 "prexgOLD" is used by "uniop".
-"r19.3rmOLD" is used by "r19.27m".
-"r19.3rmOLD" is used by "r19.28m".
-"r19.9rmvOLD" is used by "iunconstm".
-"r19.9rmvOLD" is used by "r19.45mv".
 "rdgivallem" is used by "rdgival".
 "rdgivallem" is used by "rdgon".
 "reapti" is used by "apreap".
@@ -201,6 +200,7 @@ New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax0id" is discouraged (0 uses).
 New usage of "ax0lt1" is discouraged (0 uses).
 New usage of "ax10" is discouraged (0 uses).
+New usage of "ax16ALT" is discouraged (2 uses).
 New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax1re" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
@@ -247,6 +247,7 @@ New usage of "df-pnf" is discouraged (2 uses).
 New usage of "df-tru" is discouraged (1 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
+New usage of "dvelimALT" is discouraged (1 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "fnexALT" is discouraged (0 uses).
@@ -257,8 +258,6 @@ New usage of "mo3h" is discouraged (7 uses).
 New usage of "opelopabsbALT" is discouraged (2 uses).
 New usage of "opexgOLD" is discouraged (11 uses).
 New usage of "prexgOLD" is discouraged (12 uses).
-New usage of "r19.3rmOLD" is discouraged (2 uses).
-New usage of "r19.9rmvOLD" is discouraged (2 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rdgivallem" is discouraged (2 uses).
 New usage of "reapti" is discouraged (3 uses).
@@ -278,6 +277,7 @@ New usage of "xpexgALT" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "a9evsep" is discouraged (63 steps).
+Proof modification of "ax16ALT" is discouraged (20 steps).
 Proof modification of "ax9vsep" is discouraged (19 steps).
 Proof modification of "axi12" is discouraged (47 steps).
 Proof modification of "axnul" is discouraged (52 steps).
@@ -363,15 +363,17 @@ Proof modification of "findset" is discouraged (96 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "idref" is discouraged (94 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
+Proof modification of "opexgOLD" is discouraged (51 steps).
 Proof modification of "peano5set" is discouraged (212 steps).
+Proof modification of "prexgOLD" is discouraged (65 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
 Proof modification of "rexsnsOLD" is discouraged (55 steps).
 Proof modification of "ruALT" is discouraged (35 steps).
 Proof modification of "sbc8g" is discouraged (55 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
+Proof modification of "snexgOLD" is discouraged (27 steps).
 Proof modification of "speano5" is discouraged (50 steps).
 Proof modification of "strcollnfALT" is discouraged (79 steps).
-Proof modification of "suctr" is discouraged (153 steps).
 Proof modification of "truanOLD" is discouraged (13 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
