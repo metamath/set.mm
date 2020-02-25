@@ -34077,8 +34077,8 @@ $)
      Theorem 7.12 of [Quine] p. 51, proved using only Extensionality, Power
      Set, and Separation.  Replacement is not needed.  This is a special case
      of ~ snexg and new proofs should use ~ snexg instead.  (Contributed by Jim
-     Kingdon, 26-Jan-2019.)  (New usage is discouraged.)  TODO: remove in favor
-     of ~ snexg . $)
+     Kingdon, 26-Jan-2019.)  (New usage is discouraged.)
+     (Proof modification is discouraged.) $)
   snexgOLD $p |- ( A e. _V -> { A } e. _V ) $=
     ( cvv wcel cpw csn pwexg wss snsspw ssexg mpan syl ) ABCADZBCZAEZBCZABFNLGM
     OAHNLBIJK $.
@@ -34176,8 +34176,8 @@ $)
        p. 51, but restricted to classes which exist.  For proper classes, see
        ~ prprc , ~ prprc1 , and ~ prprc2 .  This is a special case of ~ prexg
        and new proofs should use ~ prexg instead.  (Contributed by Jim Kingdon,
-       25-Jul-2019.)  (New usage is discouraged.)  TODO: remove in favor of
-       ~ prexg . $)
+       25-Jul-2019.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
     prexgOLD $p |- ( ( A e. _V /\ B e. _V ) -> { A , B } e. _V ) $=
       ( vx vy cvv wcel cpr wi cv wceq preq2 eleq1d zfpair2 vtoclg preq1 vtocleg
       syl5ib imp ) AEFBEFZABGZEFZSUAHCAESCIZBGZEFZUBAJZUAUBDIZGZEFUDDBEUFBJUGUC
@@ -34353,8 +34353,8 @@ $)
 
   $( An ordered pair of sets is a set.  This is a special case of ~ opexg and
      new proofs should use ~ opexg instead.  (Contributed by Jim Kingdon,
-     19-Sep-2018.)  (New usage is discouraged.)  TODO: remove in favor of
-     ~ opexg . $)
+     19-Sep-2018.)  (New usage is discouraged.)
+     (Proof modification is discouraged.) $)
   opexgOLD $p |- ( ( A e. _V /\ B e. _V ) -> <. A , B >. e. _V ) $=
     ( cvv wcel wa cop csn cpr dfopg snexgOLD adantr prexgOLD jca syl eqeltrd )
     ACDZBCDZEZABFAGZABHZHZCABCCIRSCDZTCDZEUACDRUBUCPUBQAJKABLMSTLNO $.
