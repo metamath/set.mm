@@ -70459,6 +70459,34 @@ $)
     ( cc wcel cc0 cap wbr w3a cmul co cdiv wceq mulcom 3adant3 oveq1d divcanap3
     eqtrd ) ACDZBCDZBEFGZHZABIJZBKJBAIJZBKJAUAUBUCBKRSUBUCLTABMNOABPQ $.
 
+  $( One-to-one relationship for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  div11ap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) ) ->
+               ( ( A / C ) = ( B / C ) <-> A = B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv co cmul wceq simp1 simp3l divclap syl3anc
+    simp3r divcanap2 simp2 mulcanapd eqeq12d bitr3d ) ADEZBDEZCDEZCFGHZIZJZCACK
+    LZMLZCBCKLZMLZNUKUMNABNUJUKUMCUJUEUGUHUKDEUEUFUIOZUEUFUGUHPZUEUFUGUHSZACQRU
+    JUFUGUHUMDEUEUFUIUAZUPUQBCQRUPUQUBUJULAUNBUJUEUGUHULANUOUPUQACTRUJUFUGUHUNB
+    NURUPUQBCTRUCUD $.
+
+  $( A number divided by itself is one.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  dividap $p |- ( ( A e. CC /\ A # 0 ) -> ( A / A ) = 1 ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co cmul wceq divrecap 3anidm12 recidap eqtrd
+    c1 ) ABCZADEFZGAAHIZAPAHIJIZPQRSTKAALMANO $.
+
+  $( Division into zero is zero.  (Contributed by Jim Kingdon, 25-Feb-2020.) $)
+  div0ap $p |- ( ( A e. CC /\ A # 0 ) -> ( 0 / A ) = 0 ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co wceq cmul simpl mul01d wb divmulap mp3an12
+    0cn mpbird ) ABCZADEFZGZDAHIDJZADKIDJZUAASTLMDBCZUDUAUBUCNQQDDAOPR $.
+
+  $( A number divided by 1 is itself.  (Contributed by NM, 9-Jan-2002.)  (Proof
+     shortened by Mario Carneiro, 27-May-2016.) $)
+  div1 $p |- ( A e. CC -> ( A / 1 ) = A ) $=
+    ( cc wcel c1 cdiv co wceq cmul mulid2 wb cc0 cap wbr ax-1cn pm3.2i divmulap
+    wa 1ap0 mp3an3 anidms mpbird ) ABCZADEFAGZDAHFAGZAIUBUCUDJZUBUBDBCZDKLMZQUE
+    UFUGNROAADPSTUA $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
