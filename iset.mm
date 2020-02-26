@@ -70544,6 +70544,49 @@ $)
     ZHABLJKZHBIJAKZUJHCDZUGUDUEUKULMUJSZUFUGUHNZUDUEUIOZUDUEUIPHBAQTUJUNUDUGUHU
     MULMUOUQUPUFUGUHUAHABUBTUC $.
 
+  $( Multiplication of two ratios.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divmuldivap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
+                    /\ ( D e. CC /\ D # 0 ) ) )
+               -> ( ( A / C ) x. ( B / D ) ) = ( ( A x. B ) / ( C x. D ) ) ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co cmul wceq w3a 3anass mulcl syl2an 3adantr1
+    divclap ad2ant2r 3adantl1 mulap0 divcanap3 syl3anc simp2 jca mul4 divcanap2
+    oveqan12d eqtr3d oveq1d syl2anbr an4s ) AEFZCEFZCGHIZJZBEFZDEFZDGHIZJZACKLZ
+    BDKLZMLZABMLZCDMLZKLZNZUOURJUOUPUQOZUSUTVAOZVIUSVBJUOUPUQPUSUTVAPVJVKJZVGVE
+    MLZVGKLZVEVHVLVEEFZVGEFZVGGHIZVNVENVJVCEFZVDEFZVOVKACTZBDTZVCVDQRUPUQVKVPUO
+    URUTVAVPUSUPUTVPUQVACDQUASUBUPUQVKVQUOURUTVAVQUSCDUCSUBVEVGUDUEVLVMVFVGKVLC
+    VCMLZDVDMLZMLZVMVFVJUPVRJUTVSJWDVMNVKVJUPVRUOUPUQUFVTUGVKUTVSUSUTVAUFWAUGCV
+    CDVDUHRVJVKWBAWCBMACUIBDUIUJUKULUKUMUN $.
+
+  $( Division of two ratios.  Theorem I.15 of [Apostol] p. 18.  (Contributed by
+     Jim Kingdon, 25-Feb-2020.) $)
+  divdivdivap $p |- ( ( ( A e. CC /\ ( B e. CC /\ B # 0 ) ) /\
+                  ( ( C e. CC /\ C # 0 ) /\ ( D e. CC /\ D # 0 ) ) )
+                -> ( ( A / B ) / ( C / D ) ) = ( ( A x. D ) / ( B x. C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co cmul wceq divclap syl3anc mulcomd eqtrd c1
+    mulcld simprrl simprll simprlr simpll simplrl simplr simprl syl22anc oveq2d
+    simplrr divmuldivap simprrr mulap0d dividap syl2anc mulassd mulid2d 3eqtr3d
+    simprr oveq1d eqtr3d wb mulap0 ad2ant2lr divap0 adantl divmulap syl112anc
+    mpbird ) AEFZBEFZBGHIZJZJZCEFZCGHIZJZDEFZDGHIZJZJZJZABKLZCDKLZKLADMLZBCMLZK
+    LZNZWDWGMLZWCNZWBWDDCKLZWCMLZMLZWIWCWBWLWGWDMWBWLWCWKMLZWGWBWKWCWBVRVOVPWKE
+    FVNVQVRVSUAZVNVOVPVTUBZVNVOVPVTUCZDCOPZWBVJVKVLWCEFZVJVMWAUDZVJVKVLWAUEZVJV
+    KVLWAUJABOPZQWBVJVRVMVQWNWGNWTWOVJVMWAUFVNVQVTUGZADBCUKUHRUIWBWDWKMLZWCMLSW
+    CMLWMWCWBXDSWCMWBXDCDMLZDCMLZKLZSWBVOVRVTVQXDXGNWPWOVNVQVTUSXCCDDCUKUHWBXGX
+    FXFKLZSWBXEXFXFKWBCDWPWOQUTWBXFEFXFGHIXHSNWBDCWOWPTWBDCWOWPVNVQVRVSULZWQUMX
+    FUNUORRUTWBWDWKWCWBVOVRVSWDEFZWPWOXICDOPZWRXBUPWBWCXBUQURVAWBWSWGEFZXJWDGHI
+    ZWHWJVBXBWBWEEFWFEFWFGHIZXLWBADWTWOTWBBCXAWPTVMVQXNVJVTBCVCVDWEWFOPXKWAXMVN
+    CDVEVFWCWGWDVGVHVI $.
+
+  $( Cancellation of common factor in a ratio.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divcanap5 $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 ) /\
+       ( C e. CC /\ C # 0 ) ) -> ( ( C x. A ) / ( C x. B ) ) = ( A / B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv co cmul c1 dividap oveq1d 3ad2ant3 simp3l
+    wceq simp1 simp3 simp2 divmuldivap syl22anc divclap mulid2d 3adant3 3eqtr3d
+    3expb ) ADEZBDEZBFGHZIZCDEZCFGHZIZJZCCKLZABKLZMLZNUSMLZCAMLCBMLKLZUSUPUJUTV
+    ASUMUPURNUSMCOPQUQUNUJUPUMUTVBSUJUMUNUORUJUMUPTUJUMUPUAUJUMUPUBCACBUCUDUJUM
+    VAUSSUPUJUMIUSUJUKULUSDEABUEUIUFUGUH $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
