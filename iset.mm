@@ -70520,6 +70520,30 @@ $)
     ZMSUTVDUPVGUSUQMULUOVGUSOZUKULUMUNVHBCUFQRUJUPUQVCUKUOUQDEZULUKUMUNVIACTQUG
     ULUOVCDEZUKULUMUNVJBCTQRUHPP $.
 
+  $( A number is equal to the reciprocal of its reciprocal.  (Contributed by
+     Jim Kingdon, 25-Feb-2020.) $)
+  recrecap $p |- ( ( A e. CC /\ A # 0 ) -> ( 1 / ( 1 / A ) ) = A ) $=
+    ( cc wcel cc0 cap wbr wa c1 cdiv co wceq cmul recidap2 wb 1cnd simpl recap0
+    recclap divmulap syl112anc mpbird ) ABCZADEFZGZHHAIJZIJAKZUEALJHKZAMUDHBCUB
+    UEBCUEDEFUFUGNUDOUBUCPARAQHAUESTUA $.
+
+  $( Reciprocal is one-to-one.  (Contributed by Jim Kingdon, 25-Feb-2020.) $)
+  rec11ap $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) )
+                  -> ( ( 1 / A ) = ( 1 / B ) <-> A = B ) ) $=
+    ( cc wcel cc0 cap wbr wa c1 cdiv co wceq cmul wb 1cnd adantl simpl divmulap
+    recclap syl3anc simpll simprl simprr divrecap eqeq1d diveqap1 3bitr2d ) ACD
+    ZAEFGZHZBCDZBEFGZHZHZIAJKIBJKZLZAUOMKZILZABJKZILZABLZUNICDUOCDZUJUPURNUNOUM
+    VBUJBSPUJUMQIUOARTUNUSUQIUNUHUKULUSUQLUHUIUMUAZUJUKULUBZUJUKULUCZABUDTUEUNU
+    HUKULUTVANVCVDVEABUFTUG $.
+
+  $( Mutual reciprocals.  (Contributed by Jim Kingdon, 25-Feb-2020.) $)
+  rec11rap $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) )
+                  -> ( ( 1 / A ) = B <-> ( 1 / B ) = A ) ) $=
+    ( cc wcel cc0 cap wa c1 cdiv co wceq cmul wb simprl simpll simplr divmulap2
+    wbr 1cnd syl112anc simprr divmulap3 bitr4d ) ACDZAEFRZGZBCDZBEFRZGZGZHAIJBK
+    ZHABLJKZHBIJAKZUJHCDZUGUDUEUKULMUJSZUFUGUHNZUDUEUIOZUDUEUIPHBAQTUJUNUDUGUHU
+    MULMUOUQUPUFUGUHUAHABUBTUC $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
