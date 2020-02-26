@@ -70492,6 +70492,34 @@ $)
   1div1e1 $p |- ( 1 / 1 ) = 1 $=
     ( c1 cc wcel cdiv co wceq ax-1cn div1 ax-mp ) ABCAADEAFGAHI $.
 
+  $( Equality in terms of unit ratio.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  diveqap1 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+      ( ( A / B ) = 1 <-> A = B ) ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv co c1 wceq cmul wb wa ax-1cn divmulap2 3impb
+    mp3an2 simp2 mulid1d eqeq2d bitrd ) ACDZBCDZBEFGZHZABIJKLZABKMJZLZABLUDUEUF
+    UHUJNZUDKCDUEUFOUKPAKBQSRUGUIBAUGBUDUEUFTUAUBUC $.
+
+  $( Move negative sign inside of a division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divnegap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+                -u ( A / B ) = ( -u A / B ) ) $=
+    ( cc wcel cc0 cap wbr w3a cneg c1 cdiv co cmul wceq wa recclap sylan2 3impb
+    mulneg1 divrecap negcl syl3an1 negeqd 3eqtr4rd ) ACDZBCDZBEFGZHZAIZJBKLZMLZ
+    AUJMLZIZUIBKLZABKLZIUEUFUGUKUMNZUFUGOUEUJCDUPBPAUJSQRUEUICDUFUGUNUKNAUAUIBT
+    UBUHUOULABTUCUD $.
+
+  $( Distribution of division over subtraction.  (Contributed by NM,
+     4-Mar-2005.) $)
+  divsubdirap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+               -> ( ( A - B ) / C ) = ( ( A / C ) - ( B / C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv cneg caddc cmin wceq eqtr3d 3expb 3adant1
+    co divclap divdirap syl3an2 negsub oveq1d 3adant3 divnegap 3adant2 negsubd
+    negcl oveq2d ) ADEZBDEZCDEZCFGHZIZJZACKSZBLZCKSZMSZABNSZCKSZUQBCKSZNSZUPAUR
+    MSZCKSZUTVBULUKURDEUOVFUTOBUIAURCUAUBUKULVFVBOUOUKULIVEVACKABUCUDUEPUPUQVCL
+    ZMSUTVDUPVGUSUQMULUOVGUSOZUKULUMUNVHBCUFQRUJUPUQVCUKUOUQDEZULUKUMUNVIACTQUG
+    ULUOVCDEZUKULUMUNVJBCTQRUHPP $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
