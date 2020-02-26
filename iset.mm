@@ -70434,6 +70434,31 @@ $)
     ZUKAMLZACKLZBMLZBUNMLZUFUGUJULUMSZUGUJIUFUKDEZUQUGUHUIURBCNOAUKPQRUGUJUFUMU
     OSBCATUAUFUJUGUOUPSZUFUJUGUSUFUJIUNDEZUGUSUFUHUIUTACNOUNBPUBUCUDUE $.
 
+  $( Distribution of division over addition.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divdirap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+               -> ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a caddc co c1 cdiv cmul simp1 simp2 wceq syl3anc
+    divrecap recclap 3ad2ant3 adddird addcld simp3l simp3r oveq12d 3eqtr4d ) AD
+    EZBDEZCDEZCFGHZIZJZABKLZMCNLZOLZAUPOLZBUPOLZKLUOCNLZACNLZBCNLZKLUNABUPUIUJU
+    MPZUIUJUMQZUMUIUPDEUJCUAUBUCUNUODEUKULUTUQRUNABVCVDUDUIUJUKULUEZUIUJUKULUFZ
+    UOCTSUNVAURVBUSKUNUIUKULVAURRVCVEVFACTSUNUJUKULVBUSRVDVEVFBCTSUGUH $.
+
+  $( A cancellation law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divcanap3 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+                 ( ( B x. A ) / B ) = A ) $=
+    ( cc wcel cc0 cap wbr w3a cmul co cdiv wceq wa wb simp2 simp1 mulcld 3simpc
+    eqid divmulap syl3anc mpbiri ) ACDZBCDZBEFGZHZBAIJZBKJALZUGUGLZUGSUFUGCDUCU
+    DUEMUHUINUFBAUCUDUEOUCUDUEPZQUJUCUDUERUGABTUAUB $.
+
+  $( A cancellation law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divcanap4 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+                 ( ( A x. B ) / B ) = A ) $=
+    ( cc wcel cc0 cap wbr w3a cmul co cdiv wceq mulcom 3adant3 oveq1d divcanap3
+    eqtrd ) ACDZBCDZBEFGZHZABIJZBKJBAIJZBKJAUAUBUCBKRSUBUCLTABMNOABPQ $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
