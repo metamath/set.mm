@@ -70487,6 +70487,11 @@ $)
     wa 1ap0 mp3an3 anidms mpbird ) ABCZADEFAGZDAHFAGZAIUBUCUDJZUBUBDBCZDKLMZQUE
     UFUGNROAADPSTUA $.
 
+  $( 1 divided by 1 is 1 (common case).  (Contributed by David A. Wheeler,
+     7-Dec-2018.) $)
+  1div1e1 $p |- ( 1 / 1 ) = 1 $=
+    ( c1 cc wcel cdiv co wceq ax-1cn div1 ax-mp ) ABCAADEAFGAHI $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
