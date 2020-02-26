@@ -70401,6 +70401,39 @@ $)
     DEZUJUKUSUPMUHUIVAULABUAUBUHUIUJUKUCZUHUIUJUKUDZUNCQTUMUTUQAKUMUIUJUKUTUQMU
     HUIULUEVBVCBCQTUFUG $.
 
+  $( A commutative/associative law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  div23ap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+      -> ( ( A x. B ) / C ) = ( ( A / C ) x. B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cmul co cdiv wceq mulcom oveq1d 3adant3 3com12
+    divassap simp2 divclap 3expb 3adant2 mulcomd 3eqtrd ) ADEZBDEZCDEZCFGHZIZJZ
+    ABKLZCMLZBAKLZCMLZBACMLZKLZUPBKLUFUGUMUONUJUFUGIULUNCMABOPQUGUFUJUOUQNBACSR
+    UKBUPUFUGUJTUFUJUPDEZUGUFUHUIURACUAUBUCUDUE $.
+
+  $( A commutative/associative law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  div32ap $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 ) /\ C e. CC )
+      -> ( ( A / B ) x. C ) = ( A x. ( C / B ) ) ) $=
+    ( cc wcel cc0 cap wbr wa cdiv cmul wceq w3a div23ap divassap eqtr3d 3com23
+    co ) ADEZCDEZBDEBFGHIZABJRCKRZACBJRKRZLSTUAMACKRBJRUBUCACBNACBOPQ $.
+
+  $( A commutative/associative law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  div13ap $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 ) /\ C e. CC )
+      -> ( ( A / B ) x. C ) = ( ( C / B ) x. A ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cmul co cdiv wceq mulcom oveq1d 3adant2 3com23
+    div23ap 3coml 3eqtr3d ) ADEZBDEBFGHIZCDEZJACKLZBMLZCAKLZBMLZABMLCKLZCBMLAKL
+    ZUBUDUFUHNUCUBUDIUEUGBMACOPQUBUDUCUFUINACBSRUDUBUCUHUJNCABSTUA $.
+
+  $( A commutative/associative law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  div12ap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+      -> ( A x. ( B / C ) ) = ( B x. ( A / C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv co cmul divclap 3expb mulcom sylan2 3impb
+    wceq div13ap 3comr sylan 3impa 3com23 3eqtrd ) ADEZBDEZCDEZCFGHZIZJABCKLZML
+    ZUKAMLZACKLZBMLZBUNMLZUFUGUJULUMSZUGUJIUFUKDEZUQUGUHUIURBCNOAUKPQRUGUJUFUMU
+    OSBCATUAUFUJUGUOUPSZUFUJUGUSUFUJIUNDEZUGUSUFUHUIUTACNOUNBPUBUCUDUE $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
