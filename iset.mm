@@ -3388,16 +3388,6 @@ $)
   anidm $p |- ( ( ph /\ ph ) <-> ph ) $=
     ( wa pm4.24 bicomi ) AAABACD $.
 
-  $( Obsolete proof of ~ anidm as of 14-Mar-2014.  (Contributed by NM,
-     5-Aug-1993.)  (Revised by NM, 6-Nov-2012.) $)
-  anidmOLD $p |- ( ( ph /\ ph ) <-> ph ) $=
-    ( wa simpl id ancli impbii ) AABAAACAAADEF $.
-
-  $( Obsolete proof of ~ pm4.24 as of 14-Mar-2014.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.24OLD $p |- ( ph <-> ( ph /\ ph ) ) $=
-    ( wa anidm bicomi ) AABAACD $.
-
   ${
     anidms.1 $e |- ( ( ph /\ ph ) -> ps ) $.
     $( Inference from idempotent law for conjunction.  (Contributed by NM,
@@ -3735,11 +3725,6 @@ $)
        Wolf Lammen, 7-Apr-2013.) $)
     mpanr2 $p |- ( ( ph /\ ps ) -> th ) $=
       ( wa jctr sylan2 ) BABCGDBCEHFI $.
-
-    $( Obsolete proof of ~ mpanr2 as of 7-Apr-2013.  (Contributed by NM,
-       3-May-1994.)  (Revised by NM, 12-May-2011.) $)
-    mpanr2OLD $p |- ( ( ph /\ ps ) -> th ) $=
-      ( wa expr mpi ) ABGCDEABCDFHI $.
   $}
 
   ${
@@ -4422,12 +4407,6 @@ $)
                 ( ( ph -> ps ) /\ ( ph -> ch ) ) ) $=
     ( wa wi simpl imim2i simpr jca pm3.43 impbii ) ABCDZEZABEZACEZDMNOLBABCFGLC
     ABCHGIABCJK $.
-
-  $( Obsolete proof of ~ pm3.43 as of 27-Nov-2013 (Contributed by NM,
-     3-Jan-2005.) $)
-  pm3.43OLD $p |- ( ( ( ph -> ps ) /\ ( ph -> ch ) ) ->
-                ( ph -> ( ps /\ ch ) ) ) $=
-    ( wa wi jcab biimpri ) ABCDEABEACEDABCFG $.
 
   $( Theorem *4.76 of [WhiteheadRussell] p. 121.  (Contributed by NM,
      3-Jan-2005.) $)
@@ -5760,11 +5739,6 @@ $)
      shortened by Wolf Lammen, 28-Feb-2014.) $)
   orabs $p |- ( ph <-> ( ( ph \/ ps ) /\ ph ) ) $=
     ( wo orc pm4.71ri ) AABCABDE $.
-
-  $( Obsolete proof of ~ orabs as of 28-Feb-2014.  (Contributed by NM,
-     5-Aug-1993.) $)
-  orabsOLD $p |- ( ph <-> ( ( ph \/ ps ) /\ ph ) ) $=
-    ( wo wa orc ancri simpr impbii ) AABCZADAIABEFIAGH $.
 
   $( Absorb a disjunct into a conjunct.  (Contributed by Roy F. Longton,
      23-Jun-2005.)  (Proof shortened by Wolf Lammen, 10-Nov-2013.) $)
@@ -7923,28 +7897,6 @@ $)
        Mario Carneiro, 11-May-2014.) $)
     mpbir3and $p |- ( ph -> ps ) $=
       ( w3a 3jca mpbird ) ABCDEJACDEFGHKIL $.
-  $}
-
-  ${
-    mpbir3anOLD.1 $e |- ( ph <-> ( ps /\ ch /\ th ) ) $.
-    mpbir3anOLD.2 $e |- ps $.
-    mpbir3anOLD.3 $e |- ch $.
-    mpbir3anOLD.4 $e |- th $.
-    $( Obsolete version of ~ mpbir3an as of 9-Jan-2015.  (Contributed by NM,
-       16-Sep-2011.) $)
-    mpbir3anOLD $p |- ph $=
-      ( mpbir3an ) ABCDFGHEI $.
-  $}
-
-  ${
-    mpbir3andOLD.1 $e |- ( ph -> ( ps <-> ( ch /\ th /\ ta ) ) ) $.
-    mpbir3andOLD.2 $e |- ( ph -> ch ) $.
-    mpbir3andOLD.3 $e |- ( ph -> th ) $.
-    mpbir3andOLD.4 $e |- ( ph -> ta ) $.
-    $( Obsolete version of ~ mpbir3and as of 9-Jan-2015.  (Contributed by NM,
-       11-May-2014.) $)
-    mpbir3andOLD $p |- ( ph -> ps ) $=
-      ( mpbir3and ) ABCDEGHIFJ $.
   $}
 
   ${
@@ -10326,12 +10278,6 @@ $)
     ( wal alrot3 albii alcom 3bitri ) AEFDFCFZBFACFZEFZDFZBFMBFZDFLBFEFZDFKNBAC
     DEGHMBDIOPDLBEIHJ $.
 
-  $( Obsolete proof of ~ alrot4 as of 28-Jun-2014.  (Contributed by NM,
-     2-Feb-2005.) $)
-  alrot4OLD $p |- ( A. x A. y A. z A. w ph <-> A. z A. w A. x A. y ph ) $=
-    ( wal alcom albii bitri 3bitri ) AEFZDFCFZBFACFZEFZDFZBFNBFZDFMBFEFZDFLOBLK
-    CFZDFOKCDGRNDACEGHIHNBDGPQDMBEGHJ $.
-
   $( Split a biconditional and distribute quantifier.  (Contributed by NM,
      18-Aug-1993.) $)
   albiim $p |- ( A. x ( ph <-> ps ) <->
@@ -10863,12 +10809,6 @@ $)
   equidqe $p |- -. A. y -. x = x $=
     ( weq wn wal ax-9 ax-8 pm2.43i con3i alimi mto ) AACZDZBEBACZDZBEBAFMOBNLNL
     BAAGHIJK $.
-
-  $( Obsolete proof of ~ equidqe as of 27-Feb-2014.  (Contributed by NM,
-     13-Jan-2011.) $)
-  equidqeOLD $p |- -. A. y -. x = x $=
-    ( weq wn wal ax-9 wi ax-8 pm2.43i con3i ax-gen ax-5 ax-mp mto ) AACZDZBEZBA
-    CZDZBEZBAFPSGZBEQTGUABROROBAAHIJKPSBLMN $.
 
   $( A special case of ~ ax-4 without using ~ ax-4 or ~ ax-17 .  (Contributed
      by NM, 13-Jan-2011.) $)
@@ -13588,7 +13528,8 @@ $)
   ${
     $d x y z $.  $d z ph $.
     $( Version of ~ ax16 that doesn't require ~ ax-10 or ~ ax-12 for its
-       proof.  (Contributed by NM, 17-May-2008.) $)
+       proof.  (Contributed by NM, 17-May-2008.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     ax16ALT $p |- ( A. x x = y -> ( ph -> A. x ph ) ) $=
       ( vz wsb sbequ12 ax-17 hbsb3 ax16i ) AABDEBCDABDFABDADGHI $.
   $}
@@ -15011,8 +14952,12 @@ $( The theorems in this section make use of the $d statement. $)
     $d z ps $.  $d x z $.  $d y z $.
     dvelimALT.1 $e |- ( ph -> A. x ph ) $.
     dvelimALT.2 $e |- ( z = y -> ( ph <-> ps ) ) $.
-    $( Version of ~ dvelim that doesn't use ~ ax-10 .  (Contributed by NM,
-       17-May-2008.)  (Proof modification is discouraged.) $)
+    $( Version of ~ dvelim that doesn't use ~ ax-10 .  Because it has different
+       distinct variable constraints than ~ dvelim and is used in important
+       proofs, it would be better if it had a name which does not end in ALT
+       (ideally more close to set.mm naming).  (Contributed by NM,
+       17-May-2008.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     dvelimALT $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
       ( weq wal wn wi wnf nfv wo ax-i12 orcom orbi2i mpbi a1i nfimd orass mpbir
       nfa1 ax16ALT nfd nfi df-nf id sylbir orim1i ax-mp ori nfald ax-17 equsalh
@@ -28553,27 +28498,6 @@ $)
   $}
 
   ${
-    $d x A $.
-    r19.3rmOLD.1 $e |- F/ x ph $.
-    $( Restricted quantification of wff not containing quantified variable.
-       This is a special case of ~ r19.3rm where the two setvar variables are
-       both ` x ` , so new proofs should just use ~ r19.3rm instead.
-       (Contributed by Jim Kingdon, 5-Aug-2018.)
-       (New usage is discouraged.) $)
-    r19.3rmOLD $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
-      ( cv wcel wex wi wral biimt wal df-ral 19.23 bitri syl6bbr ) BECFZBGZAQAH
-      ZABCIZQAJSPAHBKRABCLPABDMNO $.
-
-    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
-       is valid only when the domain of quantification is inhabited.
-       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
-    r19.28m $p |- ( E. x x e. A ->
-                   ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
-      ( cv wcel wex wral wa r19.3rmOLD anbi1d r19.26 syl6rbbr ) CFDGCHZABCDIZJA
-      CDIZPJABJCDIOAQPACDEKLABCDMN $.
-  $}
-
-  ${
     $d a x A $.  $d a y A $.
     r19.3rm.1 $e |- F/ x ph $.
     $( Restricted quantification of wff not containing quantified variable.
@@ -28582,6 +28506,18 @@ $)
       ( va cv wcel wex wral wb eleq1 cbvexv wi biimt df-ral 19.23 bitri syl6bbr
       wal sylbi sylbir ) CGZDHZCIFGZDHZFIZAABDJZKZUFUDFCUEUCDLMUGBGZDHZBIZUIUFU
       KFBUEUJDLMULAULANZUHULAOUHUKANBTUMABDPUKABEQRSUAUB $.
+  $}
+
+  ${
+    $d x A $.
+    r19.28m.1 $e |- F/ x ph $.
+    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.28m $p |- ( E. x x e. A ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
+      ( cv wcel wex wral wa r19.3rm anbi1d r19.26 syl6rbbr ) CFDGCHZABCDIZJACDI
+      ZPJABJCDIOAQPACCDEKLABCDMN $.
   $}
 
   ${
@@ -28604,14 +28540,6 @@ $)
 
   ${
     $d x A $.  $d y A $.  $d x ph $.
-    $( Restricted quantification of wff not containing quantified variable.
-       This is a special case of ~ r19.9rmv where ` x ` and ` y ` are the same
-       variable, but new proofs should use ~r19.9rmv instead.
-       (New usage is discouraged.)  (Contributed by Jim Kingdon,
-       5-Aug-2018.) $)
-    r19.9rmvOLD $p |- ( E. x x e. A -> ( ph <-> E. x e. A ph ) ) $=
-      ( r19.9rmv ) ABBCD $.
-
     $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
        is valid only when the domain of quantification is inhabited.
        (Contributed by Jim Kingdon, 6-Aug-2018.) $)
@@ -28623,8 +28551,8 @@ $)
        by NM, 27-May-1998.) $)
     r19.45mv $p |- ( E. x x e. A ->
                    ( E. x e. A ( ph \/ ps ) <-> ( ph \/ E. x e. A ps ) ) ) $=
-      ( cv wcel wex wrex wo r19.9rmvOLD orbi1d r19.43 syl6rbbr ) CEDFCGZABCDHZI
-      ACDHZOIABICDHNAPOACDJKABCDLM $.
+      ( cv wcel wex wrex wo r19.9rmv orbi1d r19.43 syl6rbbr ) CEDFCGZABCDHZIACD
+      HZOIABICDHNAPOACCDJKABCDLM $.
   $}
 
   ${
@@ -28635,8 +28563,8 @@ $)
        (Contributed by Jim Kingdon, 5-Aug-2018.) $)
     r19.27m $p |- ( E. x x e. A ->
                    ( A. x e. A ( ph /\ ps ) <-> ( A. x e. A ph /\ ps ) ) ) $=
-      ( cv wcel wex wral wa r19.3rmOLD anbi2d r19.26 syl6rbbr ) CFDGCHZACDIZBJP
-      BCDIZJABJCDIOBQPBCDEKLABCDMN $.
+      ( cv wcel wex wral wa r19.3rm anbi2d r19.26 syl6rbbr ) CFDGCHZACDIZBJPBCD
+      IZJABJCDIOBQPBCCDEKLABCDMN $.
   $}
 
   ${
@@ -31580,8 +31508,8 @@ $)
     $( Indexed union of a constant class, i.e. where ` B ` does not depend on
        ` x ` .  (Contributed by Jim Kingdon, 15-Aug-2018.) $)
     iunconstm $p |- ( E. x x e. A -> U_ x e. A B = B ) $=
-      ( vy cv wcel wex ciun wrex r19.9rmvOLD eliun syl6rbbr eqrdv ) AEBFAGZDABC
-      HZCNDEZCFZQABIPOFQABJAPBCKLM $.
+      ( vy cv wcel wex ciun wrex r19.9rmv eliun syl6rbbr eqrdv ) AEBFAGZDABCHZC
+      NDEZCFZQABIPOFQAABJAPBCKLM $.
   $}
 
   ${
@@ -33646,12 +33574,9 @@ $)
 
   ${
     $d y A $.  $d y B $.  $d x y $.
-    $( The existence of proper substitution into a class.  Although we adopt
-       the name ~ csbexgOLD for consistency with the Metamath Proof Explorer,
-       we do not yet have a version of this theorem without the ` A e. V `
-       condition, so unless/until that happens, this theorem is not obsolete
-       and can be used.  (Contributed by NM, 10-Nov-2005.) $)
-    csbexgOLD $p |- ( ( A e. V /\ A. x B e. W ) -> [_ A / x ]_ B e. _V ) $=
+    $( The existence of proper substitution into a class.  (Contributed by NM,
+       10-Nov-2005.) $)
+    csbexga $p |- ( ( A e. V /\ A. x B e. W ) -> [_ A / x ]_ B e. _V ) $=
       ( vy wcel wal wa csb wsbc cab cvv df-csb abid2 elex syl5eqel alimi spsbc
       cv syl5 imp wb nfcv sbcabel adantr mpbid ) BDGZCEGZAHZIZABCJFTCGZABKFLZMA
       FBCNUKULFLZMGZABKZUMMGZUHUJUPUJUOAHUHUPUIUOAUIUNCMFCOCEPQRUOABDSUAUBUHUPU
@@ -33659,16 +33584,12 @@ $)
   $}
 
   ${
-    csbexOLD.1 $e |- A e. _V $.
-    csbexOLD.2 $e |- B e. _V $.
-    $( The existence of proper substitution into a class.  Although we adopt
-       the name ~ csbexOLD for consistency with the Metamath Proof Explorer, we
-       do not yet have a version of this theorem without the ` A e. V `
-       condition, so unless/until that happens, this theorem is not obsolete
-       and can be used.  (Contributed by NM, 7-Aug-2007.)  (Proof shortened by
-       Andrew Salmon, 29-Jun-2011.) $)
-    csbexOLD $p |- [_ A / x ]_ B e. _V $=
-      ( cvv wcel csb wal csbexgOLD mpan mpg ) CFGZABCHFGZABFGMAINDABCFFJKEL $.
+    csbexa.1 $e |- A e. _V $.
+    csbexa.2 $e |- B e. _V $.
+    $( The existence of proper substitution into a class.  (Contributed by NM,
+       7-Aug-2007.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+    csbexa $p |- [_ A / x ]_ B e. _V $=
+      ( cvv wcel csb wal csbexga mpan mpg ) CFGZABCHFGZABFGMAINDABCFFJKEL $.
   $}
 
 
@@ -34156,8 +34077,9 @@ $)
      Theorem 7.12 of [Quine] p. 51, proved using only Extensionality, Power
      Set, and Separation.  Replacement is not needed.  This is a special case
      of ~ snexg and new proofs should use ~ snexg instead.  (Contributed by Jim
-     Kingdon, 26-Jan-2019.)  (New usage is discouraged.)  TODO: remove in favor
-     of ~ snexg . $)
+     Kingdon, 26-Jan-2019.)  (New usage is discouraged.)
+     (Proof modification is discouraged.)  TODO: replace its uses by uses of
+     ~snexg and then remove it. $)
   snexgOLD $p |- ( A e. _V -> { A } e. _V ) $=
     ( cvv wcel cpw csn pwexg wss snsspw ssexg mpan syl ) ABCADZBCZAEZBCZABFNLGM
     OAHNLBIJK $.
@@ -34255,8 +34177,9 @@ $)
        p. 51, but restricted to classes which exist.  For proper classes, see
        ~ prprc , ~ prprc1 , and ~ prprc2 .  This is a special case of ~ prexg
        and new proofs should use ~ prexg instead.  (Contributed by Jim Kingdon,
-       25-Jul-2019.)  (New usage is discouraged.)  TODO: remove in favor of
-       ~ prexg . $)
+       25-Jul-2019.)  (New usage is discouraged.)
+       (Proof modification is discouraged.)  TODO: replace its uses by uses of
+       ~ prexg and then remove it. $)
     prexgOLD $p |- ( ( A e. _V /\ B e. _V ) -> { A , B } e. _V ) $=
       ( vx vy cvv wcel cpr wi cv wceq preq2 eleq1d zfpair2 vtoclg preq1 vtocleg
       syl5ib imp ) AEFBEFZABGZEFZSUAHCAESCIZBGZEFZUBAJZUAUBDIZGZEFUDDBEUFBJUGUC
@@ -34432,8 +34355,9 @@ $)
 
   $( An ordered pair of sets is a set.  This is a special case of ~ opexg and
      new proofs should use ~ opexg instead.  (Contributed by Jim Kingdon,
-     19-Sep-2018.)  (New usage is discouraged.)  TODO: remove in favor of
-     ~ opexg . $)
+     19-Sep-2018.)  (New usage is discouraged.)
+     (Proof modification is discouraged.)  TODO: replace its uses by uses of
+     ~ opexg and then remove it. $)
   opexgOLD $p |- ( ( A e. _V /\ B e. _V ) -> <. A , B >. e. _V ) $=
     ( cvv wcel wa cop csn cpr dfopg snexgOLD adantr prexgOLD jca syl eqeltrd )
     ACDZBCDZEZABFAGZABHZHZCABCCIRSCDZTCDZEUACDRUBUCPUBQAJKABLMSTLNO $.
@@ -36054,38 +35978,16 @@ $)
   $}
 
   ${
-    $d z y A $.
-    $( The successor of a transtive class is transitive.  (Contributed by Alan
+    $d y z A $.
+    $( The successor of a transitive class is transitive.  (Contributed by Alan
        Sare, 11-Apr-2009.) $)
-    suctrALT $p |- ( Tr A -> Tr suc A ) $=
+    suctr $p |- ( Tr A -> Tr suc A ) $=
       ( vz vy wtr cv wcel csuc wa wi wal wceq simpr vex elsuc sylib simpl eleq2
       wo syl6 mpdi syl5ibcom elelsuc trel expd adantrd syl8 jao alrimivv sylibr
       dftr2 ) ADZBEZCEZFZUMAGZFZHZULUOFZIZCJBJUODUKUSBCUKUQUMAFZUMAKZRZURUQUPVB
       UNUPLUMACMNOUKUQVAURIZVBURIZUQVAULAFZURUQUNVAVEUNUPPUMAULQUAULAUBZSUKUQUT
       URIVCVDIUKUQUTVEURUKUNUTVEIUPUKUNUTVEAULUMUCUDUEVFUFUTURVAUGSTTUHBCUOUJUI
       $.
-  $}
-
-  ${
-    $d z A $.  $d y A $.  $d z y $.
-    $( The sucessor of a transitive class is transitive.  The proof of
-       ~ http://www.virtualdeduction.com/suctrvd.html is a Virtual Deduction
-       proof verified by automatically transforming it into the Metamath proof
-       of ~ suctr using completeusersproof, which is verified by the Metamath
-       program.  The proof of ~ http://www.virtualdeduction.com/suctrro.html is
-       a form of the completed proof which preserves the Virtual Deduction
-       proof's step numbers and their ordering.  (Contributed by Alan Sare,
-       11-Apr-2009.)  See ~ suctrALT for the original proof before this
-       revision.  (Revised by Alan Sare, 12-Jun-2018.)
-       (Proof modification is discouraged.) $)
-    suctr $p |- ( Tr A -> Tr suc A ) $=
-      ( vz vy wtr cv wcel csuc wa wi wal wceq w3a sssucid id simpld trel sseldi
-      adantl ex syl 3impib syl3an 3expia adantr eleqtrd wo simprd elsuci mpjaod
-      idi alrimivv dftr2 biimpri ) ADZBEZCEZFZUPAGZFZHZUOURFZIZCJBJZURDZUNVBBCU
-      NUTVAUNUTHUPAFZVAUPAKZUNUTVEVAUNUTVELAURUOAMZUNUNUTUQVEVEUOAFZUNNUTUQUSUT
-      NZOZVENUNUQVELVHIUNUQVEVHAUOUPPUAUJUBQUCUTVFVAIUNUTVFVAUTVFHZAURUOVGVKUOU
-      PAUTUQVFVJUDVFVFUTVFNRUEQSRUTVEVFUFZUNUTUSVLUTUQUSVIUGUPAUHTRUISUKVDVCBCU
-      RULUMT $.
   $}
 
   $( A set whose successor belongs to a transitive class also belongs.
@@ -53316,12 +53218,12 @@ $)
        (Revised by Mario Carneiro, 31-Aug-2015.) $)
     dfmpt2 $p |- ( x e. A , y e. B |-> C )
                 = U_ x e. A U_ y e. B { <. <. x , y >. , C >. } $=
-      ( vw cv cfv csb cop csn ciun cvv wcel ax-mp csbexOLD nfcv nfcsb1v nfop id
-      cmpt2 cxp c1st c2nd cmpt mpt2mpts vex 1stexg 2ndexg dfmpt nfsn nfcsb wceq
-      csbopeq1a opeq12d sneqd iunxpf 3eqtri ) ABCDEUBGCDUCZAGHZUDIZBVAUEIZEJZJZ
-      UFGUTVAVEKZLZMACBDAHBHKZEKZLZMMABGCDEUGGUTVEAVBVDVANOZVBNOGUHZVANUIPBVCEV
-      KVCNOVLVANUJPFQQUKGABCDVGVJAVFAVAVEAVARAVBVDSTULBVFBVAVEBVARBAVBVDBVBRBVC
-      ESUMTULGVJRVAVHUNZVFVIVMVAVHVEEVMUAABVAEUOUPUQURUS $.
+      ( vw cv cfv csb cop csn ciun cvv wcel ax-mp csbexa nfcv nfcsb1v nfop c1st
+      cmpt2 cxp c2nd cmpt mpt2mpts vex 1stexg 2ndexg dfmpt nfsn nfcsb csbopeq1a
+      wceq id opeq12d sneqd iunxpf 3eqtri ) ABCDEUBGCDUCZAGHZUAIZBVAUDIZEJZJZUE
+      GUTVAVEKZLZMACBDAHBHKZEKZLZMMABGCDEUFGUTVEAVBVDVANOZVBNOGUGZVANUHPBVCEVKV
+      CNOVLVANUIPFQQUJGABCDVGVJAVFAVAVEAVARAVBVDSTUKBVFBVAVEBVARBAVBVDBVBRBVCES
+      ULTUKGVJRVAVHUNZVFVIVMVAVHVEEVMUOABVAEUMUPUQURUS $.
   $}
 
   $( Lemma for ~ cnvf1o .  (Contributed by Mario Carneiro, 27-Apr-2014.) $)
