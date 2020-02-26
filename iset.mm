@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Feb-2020
+$( iset.mm - Version of 26-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -70586,6 +70586,77 @@ $)
     3expb ) ADEZBDEZBFGHZIZCDEZCFGHZIZJZCCKLZABKLZMLZNUSMLZCAMLCBMLKLZUSUPUJUTV
     ASUMUPURNUSMCOPQUQUNUJUPUMUTVBSUJUMUNUORUJUMUPTUJUMUPUAUJUMUPUBCACBUCUDUJUM
     VAUSSUPUJUMIUSUJUKULUSDEABUEUIUFUGUH $.
+
+  $( Swap the denominators in the product of two ratios.  (Contributed by Jim
+     Kingdon, 26-Feb-2020.) $)
+  divmul13ap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
+                    /\ ( D e. CC /\ D # 0 ) ) )
+                -> ( ( A / C ) x. ( B / D ) ) = ( ( B / C ) x. ( A / D ) ) ) $=
+    ( cc wcel wa cc0 cap wbr cmul cdiv wceq mulcom adantr divmuldivap
+    co oveq1d ancom1s 3eqtr4d ) AEFZBEFZGZCEFCHIJGDEFDHIJGGZGZABKQZCD
+    KQZLQBAKQZUGLQZACLQBDLQKQBCLQADLQKQZUEUFUHUGLUCUFUHMUDABNORABCDPU
+    BUAUDUJUIMBACDPST $.
+
+  $( Swap the numerators in the product of two ratios.  (Contributed by Jim
+     Kingdon, 26-Feb-2020.) $)
+  divmul24ap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
+                    /\ ( D e. CC /\ D # 0 ) ) )
+                -> ( ( A / C ) x. ( B / D ) ) = ( ( A / D ) x. ( B / C ) ) ) $=
+    ( cc wcel wa cc0 cap wbr cmul co cdiv wceq mulcom ad2ant2r adantl
+    oveq2d divmuldivap ancom2s 3eqtr4d ) AEFBEFGZCEFZCHIJZGZDEFZDHIJZ
+    GZGZGZABKLZCDKLZMLUKDCKLZMLZACMLBDMLKLADMLBCMLKLZUJULUMUKMUIULUMN
+    ZUBUCUFUPUDUGCDOPQRABCDSUBUHUEUOUNNABDCSTUA $.
+
+  $( Cross-multiply in an equality of ratios.  (Contributed by Jim Kingdon,
+     26-Feb-2020.) $)
+  divmuleqap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 ) /\
+                     ( D e. CC /\ D # 0 ) ) ) ->
+                   ( ( A / C ) = ( B / D ) <-> ( A x. D ) = ( B x. C ) ) ) $=
+    ( cc wcel wa cc0 cap wbr cdiv co cmul wceq divclap 3expb ad2ant2r
+    ad2ant2l mulassd divcanap1 wb mulap0 jca adantl mulcanap2 syl3anc
+    mulcl simprll simprrl oveq1d eqtr3d mulcomd oveq2d 3eqtr2d bitr3d
+    eqeq12d ) AEFZBEFZGZCEFZCHIJZGZDEFZDHIJZGZGZGZACKLZCDMLZMLZBDKLZV
+    IMLZNZVHVKNZADMLZBCMLZNVGVHEFZVKEFZVIEFZVIHIJZGZVMVNUAUQVBVQURVEU
+    QUTVAVQACOPQZURVEVRUQVBURVCVDVRBDOPRZVFWAUSVFVSVTUTVCVSVAVDCDUGQC
+    DUBUCUDVHVKVIUEUFVGVJVOVLVPVGVHCMLZDMLVJVOVGVHCDWBUSUTVAVEUHZUSVB
+    VCVDUIZSVGWDADMUQVBWDANZURVEUQUTVAWGACTPQUJUKVGVLVKDCMLZMLVKDMLZC
+    MLVPVGVIWHVKMVGCDWEWFULUMVGVKDCWCWFWESVGWIBCMURVEWIBNZUQVBURVCVDW
+    JBDTPRUJUNUPUO $.
+
+  $( The reciprocal of a ratio.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  recdivap $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
+                ( 1 / ( A / B ) ) = ( B / A ) ) $=
+    ( cc wcel cc0 cap wa c1 cdiv co cmul 1div1e1 oveq1i wceq ax-1cn 1ap0 pm3.2i
+    wbr divdivdivap mulid2 mpanl12 syl5eqr oveqan12rd ad2ant2r eqtrd ) ACDZAEFR
+    ZGBCDZBEFRZGGZHABIJZIJZHBKJZHAKJZIJZBAIJZUJULHHIJZUKIJZUOUQHUKILMHCDZUSHEFR
+    ZGUJURUONOUSUTOPQHHABSUAUBUFUHUOUPNUGUIUHUFUMBUNAIBTATUCUDUE $.
+
+  $( Cancellation of inverted fractions.  (Contributed by Jim Kingdon,
+     26-Feb-2020.) $)
+  divcanap6 $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
+         ( ( A / B ) x. ( B / A ) ) = 1 ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co c1 cmul recdivap oveq2d wceq divclap 3expb
+    adantlr divap0 recidap syl2anc eqtr3d ) ACDZAEFGZHBCDZBEFGZHZHZABIJZKUIIJZL
+    JZUIBAIJZLJKUHUJULUILABMNUHUICDZUIEFGUKKOUCUGUMUDUCUEUFUMABPQRABSUITUAUB $.
+
+  $( Swap denominators in a division.  (Contributed by Jim Kingdon,
+     26-Feb-2020.) $)
+  divdiv32ap $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 )
+      /\ ( C e. CC /\ C # 0 ) ) -> ( ( A / B ) / C ) = ( ( A / C ) / B ) ) $=
+    ( cc wcel cc0 cap wbr wa c1 cdiv cmul wceq recclap div23ap syl3an2 divrecap
+    w3a co 3expb 3adant3 oveq1d divclap syl3an1 3impa 3com23 3eqtr4d ) ADEZBDEZ
+    BFGHZIZCDEZCFGHZIZRZAJBKSZLSZCKSZACKSZUPLSZABKSZCKSUSBKSZUKUHUPDEUNURUTMBNA
+    UPCOPUOVAUQCKUHUKVAUQMZUNUHUIUJVCABQTUAUBUHUNUKVBUTMZUHUNUKVDUHUNIZUIUJVDVE
+    USDEZUIUJVDUHULUMVFACUCTUSBQUDTUEUFUG $.
+
+  $( Cancel equal divisors in a division.  (Contributed by Jim Kingdon,
+     26-Feb-2020.) $)
+  divcanap7 $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 ) /\
+    ( C e. CC /\ C # 0 ) ) -> ( ( A / C ) / ( B / C ) ) = ( A / B ) ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv cmul wceq divdivdivap 3impdir mulcom adantrr
+    wa co 3adant2 oveq1d divcanap5 3eqtrd ) ADEZBDEBFGHQZCDEZCFGHZQZIZACJRBCJRJ
+    RZACKRZCBKRZJRZCAKRZUKJRABJRUCUGUDUIULLACBCMNUHUJUMUKJUCUGUJUMLZUDUCUEUNUFA
+    COPSTABCUAUB $.
 
 $(
 ###############################################################################
