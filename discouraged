@@ -982,28 +982,18 @@
 "ax-cnre" is used by "cnre".
 "ax-distr" is used by "adddi".
 "ax-frege1" is used by "frege11".
-"ax-frege1" is used by "frege24".
 "ax-frege1" is used by "frege26".
 "ax-frege1" is used by "frege27".
 "ax-frege1" is used by "frege3".
 "ax-frege1" is used by "frege36".
 "ax-frege1" is used by "frege5".
-"ax-frege1" is used by "frege55lem1c".
-"ax-frege1" is used by "rp-6frege".
 "ax-frege1" is used by "rp-a1i".
-"ax-frege1" is used by "rp-frege3g".
 "ax-frege1" is used by "rp-simp2-frege".
 "ax-frege2" is used by "frege3".
-"ax-frege2" is used by "frege39".
 "ax-frege2" is used by "frege4".
 "ax-frege2" is used by "rp-7frege".
-"ax-frege2" is used by "rp-8frege".
-"ax-frege2" is used by "rp-frege24".
 "ax-frege2" is used by "rp-frege2i".
-"ax-frege2" is used by "rp-frege2ii".
-"ax-frege2" is used by "rp-frege2iii".
 "ax-frege2" is used by "rp-frege3g".
-"ax-frege2" is used by "rp-frege4g".
 "ax-frege2" is used by "rp-misc1-frege".
 "ax-hcompl" is used by "chscllem2".
 "ax-hcompl" is used by "hhcms".
@@ -1493,8 +1483,6 @@
 "basendx" is used by "resslem".
 "basendx" is used by "rngstr".
 "basendx" is used by "setsmsbas".
-"basendx" is used by "signswbase".
-"basendx" is used by "signswplusg".
 "basendx" is used by "thlbas".
 "basendx" is used by "topgrpstr".
 "basendx" is used by "trkgstr".
@@ -1594,7 +1582,6 @@
 "bnj1000" is used by "bnj965".
 "bnj1001" is used by "bnj1020".
 "bnj1006" is used by "bnj1020".
-"bnj101" is used by "bnj1014".
 "bnj101" is used by "bnj1023".
 "bnj101" is used by "bnj1098".
 "bnj101" is used by "bnj1101".
@@ -1974,7 +1961,6 @@
 "bnj1397" is used by "bnj1408".
 "bnj1397" is used by "bnj1450".
 "bnj1397" is used by "bnj1501".
-"bnj1397" is used by "bnj981".
 "bnj1398" is used by "bnj1415".
 "bnj1400" is used by "bnj1398".
 "bnj1400" is used by "bnj1450".
@@ -2335,7 +2321,6 @@
 "bnj593" is used by "bnj852".
 "bnj593" is used by "bnj907".
 "bnj593" is used by "bnj908".
-"bnj593" is used by "bnj981".
 "bnj593" is used by "bnj996".
 "bnj594" is used by "bnj580".
 "bnj596" is used by "bnj1275".
@@ -4470,7 +4455,6 @@
 "df-bnj17" is used by "bnj312".
 "df-bnj17" is used by "bnj446".
 "df-bnj17" is used by "bnj518".
-"df-bnj17" is used by "bnj557".
 "df-bnj17" is used by "bnj571".
 "df-bnj17" is used by "bnj594".
 "df-bnj17" is used by "bnj645".
@@ -8441,28 +8425,11 @@
 "ifchhv" is used by "pjpyth".
 "ifchhv" is used by "spansncv".
 "ifchhv" is used by "spansnj".
-"ifeq123d" is used by "dirkercncf".
-"ifeq123d" is used by "dirkeritg".
 "ifeq123d" is used by "fourierdlem103".
 "ifeq123d" is used by "fourierdlem104".
-"ifeq123d" is used by "fourierdlem105".
-"ifeq123d" is used by "fourierdlem108".
-"ifeq123d" is used by "fourierdlem110".
 "ifeq123d" is used by "fourierdlem112".
-"ifeq123d" is used by "fourierdlem29".
-"ifeq123d" is used by "fourierdlem37".
-"ifeq123d" is used by "fourierdlem62".
-"ifeq123d" is used by "fourierdlem79".
 "ifeq123d" is used by "fourierdlem81".
-"ifeq123d" is used by "fourierdlem82".
-"ifeq123d" is used by "fourierdlem86".
-"ifeq123d" is used by "fourierdlem92".
-"ifeq123d" is used by "fourierdlem96".
-"ifeq123d" is used by "fourierdlem97".
-"ifeq123d" is used by "fourierdlem98".
-"ifeq123d" is used by "fourierdlem99".
 "ifeq123d" is used by "fouriersw".
-"ifeq123d" is used by "fourierswlem".
 "ifeq123d" is used by "icccncfext".
 "ifhvhv0" is used by "bcs".
 "ifhvhv0" is used by "eigorth".
@@ -14000,8 +13967,8 @@ New usage of "ax-c9" is discouraged (7 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
 New usage of "ax-distr" is discouraged (1 uses).
-New usage of "ax-frege1" is discouraged (12 uses).
-New usage of "ax-frege2" is discouraged (12 uses).
+New usage of "ax-frege1" is discouraged (8 uses).
+New usage of "ax-frege2" is discouraged (6 uses).
 New usage of "ax-hcompl" is discouraged (6 uses).
 New usage of "ax-hfi" is discouraged (3 uses).
 New usage of "ax-hfvadd" is discouraged (14 uses).
@@ -14182,7 +14149,7 @@ New usage of "baerlem5abmN" is discouraged (0 uses).
 New usage of "baerlem5amN" is discouraged (0 uses).
 New usage of "baerlem5bmN" is discouraged (0 uses).
 New usage of "bafval" is discouraged (43 uses).
-New usage of "basendx" is discouraged (24 uses).
+New usage of "basendx" is discouraged (22 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bcs" is discouraged (6 uses).
 New usage of "bcs2" is discouraged (2 uses).
@@ -14244,7 +14211,7 @@ New usage of "bm1.1OLD" is discouraged (0 uses).
 New usage of "bnj1000" is discouraged (1 uses).
 New usage of "bnj1001" is discouraged (1 uses).
 New usage of "bnj1006" is discouraged (1 uses).
-New usage of "bnj101" is discouraged (14 uses).
+New usage of "bnj101" is discouraged (13 uses).
 New usage of "bnj1014" is discouraged (1 uses).
 New usage of "bnj1015" is discouraged (1 uses).
 New usage of "bnj1018" is discouraged (1 uses).
@@ -14383,7 +14350,7 @@ New usage of "bnj1384" is discouraged (1 uses).
 New usage of "bnj1385" is discouraged (1 uses).
 New usage of "bnj1386" is discouraged (1 uses).
 New usage of "bnj1388" is discouraged (2 uses).
-New usage of "bnj1397" is discouraged (5 uses).
+New usage of "bnj1397" is discouraged (4 uses).
 New usage of "bnj1398" is discouraged (1 uses).
 New usage of "bnj1400" is discouraged (4 uses).
 New usage of "bnj1405" is discouraged (3 uses).
@@ -14526,7 +14493,7 @@ New usage of "bnj581" is discouraged (2 uses).
 New usage of "bnj589" is discouraged (3 uses).
 New usage of "bnj590" is discouraged (1 uses).
 New usage of "bnj591" is discouraged (1 uses).
-New usage of "bnj593" is discouraged (24 uses).
+New usage of "bnj593" is discouraged (23 uses).
 New usage of "bnj594" is discouraged (1 uses).
 New usage of "bnj596" is discouraged (4 uses).
 New usage of "bnj60" is discouraged (2 uses).
@@ -15156,7 +15123,7 @@ New usage of "df-blo" is discouraged (1 uses).
 New usage of "df-bnj13" is discouraged (2 uses).
 New usage of "df-bnj14" is discouraged (5 uses).
 New usage of "df-bnj15" is discouraged (4 uses).
-New usage of "df-bnj17" is discouraged (28 uses).
+New usage of "df-bnj17" is discouraged (27 uses).
 New usage of "df-bnj18" is discouraged (2 uses).
 New usage of "df-bnj19" is discouraged (5 uses).
 New usage of "df-bra" is discouraged (3 uses).
@@ -16485,7 +16452,7 @@ New usage of "idn3" is discouraged (12 uses).
 New usage of "idrval" is discouraged (2 uses).
 New usage of "idunop" is discouraged (1 uses).
 New usage of "ifchhv" is discouraged (22 uses).
-New usage of "ifeq123d" is discouraged (23 uses).
+New usage of "ifeq123d" is discouraged (6 uses).
 New usage of "ifhvhv0" is discouraged (48 uses).
 New usage of "iidn3" is discouraged (1 uses).
 New usage of "iin1" is discouraged (3 uses).
