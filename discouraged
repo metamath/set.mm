@@ -18734,6 +18734,7 @@ Proof modification of "bj-abbidv" is discouraged (9 steps).
 Proof modification of "bj-abbii" is discouraged (17 steps).
 Proof modification of "bj-abeq1" is discouraged (36 steps).
 Proof modification of "bj-abeq2" is discouraged (47 steps).
+Proof modification of "bj-abf" is discouraged (13 steps).
 Proof modification of "bj-abfal" is discouraged (54 steps).
 Proof modification of "bj-abid2" is discouraged (14 steps).
 Proof modification of "bj-ablsscmn" is discouraged (10 steps).
@@ -18814,6 +18815,7 @@ Proof modification of "bj-cleqh" is discouraged (108 steps).
 Proof modification of "bj-cmnssmnd" is discouraged (36 steps).
 Proof modification of "bj-cmnssmndel" is discouraged (5 steps).
 Proof modification of "bj-con3ALT" is discouraged (63 steps).
+Proof modification of "bj-csbprc" is discouraged (47 steps).
 Proof modification of "bj-denotes" is discouraged (76 steps).
 Proof modification of "bj-df-clel" is discouraged (4 steps).
 Proof modification of "bj-df-cleq" is discouraged (4 steps).
@@ -18871,6 +18873,7 @@ Proof modification of "bj-hbntbi" is discouraged (31 steps).
 Proof modification of "bj-hbs1" is discouraged (22 steps).
 Proof modification of "bj-hbsb2av" is discouraged (32 steps).
 Proof modification of "bj-hbsb2v" is discouraged (31 steps).
+Proof modification of "bj-hbsb3" is discouraged (20 steps).
 Proof modification of "bj-hbsb3v" is discouraged (24 steps).
 Proof modification of "bj-imim2ALT" is discouraged (10 steps).
 Proof modification of "bj-imn3ani" is discouraged (18 steps).
@@ -18889,6 +18892,7 @@ Proof modification of "bj-nfcri" is discouraged (11 steps).
 Proof modification of "bj-nfcrii" is discouraged (23 steps).
 Proof modification of "bj-nfcsym" is discouraged (38 steps).
 Proof modification of "bj-nfnfc" is discouraged (30 steps).
+Proof modification of "bj-nfs1" is discouraged (16 steps).
 Proof modification of "bj-nfs1v" is discouraged (10 steps).
 Proof modification of "bj-nfsab1" is discouraged (12 steps).
 Proof modification of "bj-nfsb2v" is discouraged (19 steps).
@@ -20189,6 +20193,7 @@ Proof modification of "wl-con4i" is discouraged (14 steps).
 Proof modification of "wl-embant" is discouraged (9 steps).
 Proof modification of "wl-embantALT" is discouraged (12 steps).
 Proof modification of "wl-embantd" is discouraged (11 steps).
+Proof modification of "wl-equsal" is discouraged (32 steps).
 Proof modification of "wl-id" is discouraged (12 steps).
 Proof modification of "wl-imim2" is discouraged (14 steps).
 Proof modification of "wl-imim2i" is discouraged (15 steps).
@@ -20213,6 +20218,8 @@ Proof modification of "wl-pm2.18d" is discouraged (10 steps).
 Proof modification of "wl-pm2.21" is discouraged (8 steps).
 Proof modification of "wl-pm2.24i" is discouraged (10 steps).
 Proof modification of "wl-pm2.27" is discouraged (27 steps).
+Proof modification of "wl-sbal1" is discouraged (36 steps).
+Proof modification of "wl-sbal2" is discouraged (36 steps).
 Proof modification of "wl-sbcom3" is discouraged (93 steps).
 Proof modification of "wl-section-boot" is discouraged (1 steps).
 Proof modification of "wl-section-impchain" is discouraged (1 steps).
