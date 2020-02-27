@@ -70256,9 +70256,9 @@ $)
   ${
     $d x y z $.
     $( Define division.  Theorem ~ divmulap relates it to multiplication, and
-       ~ divclap (and the analogue for real numbers) prove its closure laws.
-       (Contributed by NM, 2-Feb-1995.)  (Revised by Mario Carneiro,
-       1-Apr-2014.)  (New usage is discouraged.) $)
+       ~ divclap and ~ redivclap prove its closure laws.  (Contributed by NM,
+       2-Feb-1995.)  (Revised by Mario Carneiro, 1-Apr-2014.)
+       (New usage is discouraged.) $)
     df-div $a |- / = ( x e. CC , y e. ( CC \ { 0 } ) |->
                    ( iota_ z e. CC ( y x. z ) = x ) ) $.
   $}
@@ -70728,6 +70728,43 @@ $)
     URVFUBZUSVBVCVDUCZUSVBVCVDUDZBDUEQRVGVNVOVGUQUTVAVNEFUQURVFUFZUSUTVAVEUGZUS
     UTVAVEUHACUIQVGURVCVDVOEFWBWCWDBDUIQULSSVGVKVRVLOVGVKVHVQMZNLVRVGVJWGVHNVGB
     CWBWFUMRVGVHVQVGADWEWCUNVGBCWBWFUNULUOUPS $.
+
+  $( Two numbers whose reciprocals sum to 1 are called "conjugates" and satisfy
+     this relationship.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  conjmulap $p |- ( ( ( P e. CC /\ P # 0 ) /\ ( Q e. CC /\ Q # 0 ) ) ->
+      ( ( ( 1 / P ) + ( 1 / Q ) ) = 1 <-> ( ( P - 1 ) x. ( Q - 1 ) ) = 1 ) ) $=
+    ( cc wcel cc0 cap wa cmul co c1 cdiv caddc wceq cmin recclap adantr recidap
+    wbr 3eqtrd ad2ant2r simpll simprl mul32d oveq1d mulid2 adantl oveq2d mulid1
+    ad2antrl mulassd ad2antrr oveq12d mulcl adddid addcom 3eqtr4d mulid1d addcl
+    eqeq12d syl2an mulap0 ax-1cn mulcanap mp3an2 syl12anc eqcom muleqadd syl5bb
+    wb 3bitr3d ) ACDZAEFRZGZBCDZBEFRZGZGZABHIZJAKIZJBKIZLIZHIZVRJHIZMZABLIZVRMZ
+    WAJMZAJNIBJNIHIJMZVQWBWEWCVRVQVRVSHIZVRVTHIZLIBALIZWBWEVQWIBWJALVQWIAVSHIZB
+    HIZJBHIZBVQABVSVKVLVPUAZVMVNVOUBZVMVSCDZVPAOZPZUCVMWMWNMVPVMWLJBHAQUDPVNWNB
+    MVMVOBUEUISVQWJABVTHIZHIZAJHIZAVQABVTWOWPVPVTCDZVMBOZUFZUJVPXAXBMVMVPWTJAHB
+    QUGUFVKXBAMVLVPAUHUKSULVQVRVSVTVKVNVRCDZVLVOABUMZTZWSXEUNVKVNWEWKMVLVOABUOT
+    UPVKVNWCVRMVLVOVKVNGZVRXGUQTUSVQWACDZXFVREFRZWDWGVIZVMWQXCXJVPWRXDVSVTURUTX
+    HABVAXJJCDXFXKGXLVBWAJVRVCVDVEVKVNWFWHVIVLVOWFVRWEMXIWHWEVRVFABVGVHTVJ $.
+
+  ${
+    $d x A $.
+    $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+       26-Feb-2020.) $)
+    rerecclap $p |- ( ( A e. RR /\ A # 0 ) -> ( 1 / A ) e. RR ) $=
+      ( vx cr wcel cc0 cap wbr wa cv c1 cdiv co wceq wrex creap wb 0re cc recnd
+      cmul apreap mpan2 pm5.32i recexre sylbi eqcom 1cnd simpll simplr divmulap
+      simpr syl112anc syl5bb rexbidva mpbird risset sylibr ) ACDZAEFGZHZBIZJAKL
+      ZMZBCNZVBCDUTVDAVATLJMZBCNZUTURAEOGZHVFURUSVGURECDUSVGPQAEUAUBUCBAUDUEUTV
+      CVEBCVCVBVAMZUTVACDZHZVEVAVBUFVJJRDVARDARDUSVHVEPVJUGVJVAUTVIUKSVJAURUSVI
+      UHSURUSVIUIJVAAUJULUMUNUOBVBCUPUQ $.
+  $}
+
+  $( Closure law for division of reals.  (Contributed by Jim Kingdon,
+     26-Feb-2020.) $)
+  redivclap $p |- ( ( A e. RR /\ B e. RR /\ B # 0 ) -> ( A / B ) e. RR ) $=
+    ( cr wcel cc0 cap wbr w3a cdiv co c1 cmul simp1 recnd simp2 simp3
+    cc wceq divrecap syl3anc rerecclap 3adant1 remulcld eqeltrd ) ACD
+    ZBCDZBEFGZHZABIJZAKBIJZLJZCUHAQDBQDUGUIUKRUHAUEUFUGMZNUHBUEUFUGON
+    UEUFUGPABSTUHAUJULUFUGUJCDUEBUAUBUCUD $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
