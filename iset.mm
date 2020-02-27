@@ -70658,6 +70658,41 @@ $)
     RZACKRZCBKRZJRZCAKRZUKJRABJRUCUGUDUIULLACBCMNUHUJUMUKJUCUGUJUMLZUDUCUEUNUFA
     COPSTABCUAUB $.
 
+  $( Cancellation law for division and multiplication.  (Contributed by Jim
+     Kingdon, 26-Feb-2020.) $)
+  dmdcanap $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) /\
+         C e. CC ) ->
+         ( ( A / B ) x. ( C / A ) ) = ( C / B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv co cmul wceq simp1l simp3 divclap syl3anc
+    simp1r simp2l simp2r div23ap syl112anc divcanap2 oveq1d eqtr3d ) ADEZAFGHZI
+    ZBDEZBFGHZIZCDEZJZACAKLZMLZBKLZABKLUOMLZCBKLUNUGUODEZUJUKUQURNUGUHULUMOZUNU
+    MUGUHUSUIULUMPZUTUGUHULUMSZCAQRUIUJUKUMTUIUJUKUMUAAUOBUBUCUNUPCBKUNUMUGUHUP
+    CNVAUTVBCAUDRUEUF $.
+
+  $( Division into a fraction.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  divdivap1 $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 ) /\
+       ( C e. CC /\ C # 0 ) ) -> ( ( A / B ) / C ) = ( A / ( B x. C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv co c1 cmul wceq ax-1cn pm3.2i divdivdivap
+    1ap0 mpanr2 3impa oveq2d ad2antrl 3adant1 mulid1 oveq1d 3ad2ant1 3eqtr3d
+    div1 ) ADEZBDEBFGHIZCDEZCFGHZIZJABKLZCMKLZKLZAMNLZBCNLZKLZUOCKLZAUSKLZUJUKU
+    NUQUTOZUJUKIUNMDEZMFGHZIVCVDVEPSQABCMRTUAUKUNUQVAOZUJULVFUKUMULUPCUOKCUIUBU
+    CUDUJUKUTVBOUNUJURAUSKAUEUFUGUH $.
+
+  $( Division by a fraction.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  divdivap2 $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 ) /\ ( C e. CC /\ C # 0 )
+              ) -> ( A / ( B / C ) ) = ( ( A x. C ) / B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a c1 cdiv co cmul wceq ax-1cn pm3.2i divdivdivap
+    1ap0 mpanl2 3impb 3ad2ant1 oveq1d mulid2 ad2antrl 3adant3 oveq2d 3eqtr3d
+    div1 ) ADEZBDEZBFGHZIZCDECFGHIZJZAKLMZBCLMZLMZACNMZKBNMZLMZAUQLMUSBLMUJUMUN
+    URVAOZUJKDEZKFGHZIUMUNIVBVCVDPSQAKBCRTUAUOUPAUQLUJUMUPAOUNAUIUBUCUOUTBUSLUJ
+    UMUTBOZUNUKVEUJULBUDUEUFUGUH $.
+
+  $( Division into a reciprocal.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  recdivap2 $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
+                ( ( 1 / A ) / B ) = ( 1 / ( A x. B ) ) ) $=
+    ( c1 cc wcel cc0 cap wbr wa cdiv co cmul wceq ax-1cn divdivap1 mp3an1 ) CDE
+    ADEAFGHIBDEBFGHICAJKBJKCABLKJKMNCABOP $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
