@@ -70730,6 +70730,17 @@ $)
     CWBWFUMRVGVHVQVGADWEWCUNVGBCWBWFUNULUOUPS $.
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordering on reals (cont.)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( A number is less than itself plus 1.  (Contributed by NM, 20-Aug-2001.) $)
+  ltp1 $p |- ( A e. RR -> A < ( A + 1 ) ) $=
+    ( c1 cr wcel caddc co clt wbr 1re wa cc0 0lt1 ltaddpos mpbii mpan ) BCDZACD
+    ZAABEFGHZIPQJKBGHRLBAMNO $.
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
