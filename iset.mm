@@ -70740,6 +70740,39 @@ $)
     ( c1 cr wcel caddc co clt wbr 1re wa cc0 0lt1 ltaddpos mpbii mpan ) BCDZACD
     ZAABEFGHZIPQJKBGHRLBAMNO $.
 
+  $( A number is less than or equal to itself plus 1.  (Contributed by NM,
+     5-Jan-2006.) $)
+  lep1 $p |- ( A e. RR -> A <_ ( A + 1 ) ) $=
+    ( cr wcel c1 caddc co clt wbr cle ltp1 wi peano2re ltle mpdan mpd ) ABCZAAD
+    EFZGHZAQIHZAJPQBCRSKALAQMNO $.
+
+  $( A number minus 1 is less than itself.  (Contributed by NM, 9-Apr-2006.) $)
+  ltm1 $p |- ( A e. RR -> ( A - 1 ) < A ) $=
+    ( cr wcel c1 cmin co cc0 clt wbr 0lt1 wb 0re 1re mp3an12 mpbii recn subid1d
+    ltsub2 breqtrd ) ABCZADEFZAGEFZAHTGDHIZUAUBHIZJGBCDBCTUCUDKLMGDARNOTAAPQS
+    $.
+
+  $( A number minus 1 is less than or equal to itself.  (Contributed by Mario
+     Carneiro, 2-Oct-2015.) $)
+  lem1 $p |- ( A e. RR -> ( A - 1 ) <_ A ) $=
+    ( cr wcel c1 cmin co clt wbr cle ltm1 wi peano2rem ltle mpancom mpd ) ABCZA
+    DEFZAGHZQAIHZAJQBCPRSKALQAMNO $.
+
+  $( A transitive property of 'less than or equal' and plus 1.  (Contributed by
+     NM, 5-Aug-2005.) $)
+  letrp1 $p |- ( ( A e. RR /\ B e. RR /\ A <_ B ) -> A <_ ( B + 1 ) ) $=
+    ( cr wcel cle wbr w3a c1 caddc co clt wa adantl peano2re ancli lelttr 3expb
+    ltp1 wi sylan2 mpan2d 3impia ltle 3adant3 mpd ) ACDZBCDZABEFZGABHIJZKFZAUIE
+    FZUFUGUHUJUFUGLUHBUIKFZUJUGULUFBRMUGUFUGUICDZLUHULLUJSZUGUMBNZOUFUGUMUNABUI
+    PQTUAUBUFUGUJUKSZUHUGUFUMUPUOAUIUCTUDUE $.
+
+  $( A transitive property of plus 1 and 'less than or equal'.  (Contributed by
+     NM, 16-Aug-2005.) $)
+  p1le $p |- ( ( A e. RR /\ B e. RR /\ ( A + 1 ) <_ B ) -> A <_ B ) $=
+    ( cr wcel c1 caddc co cle wa lep1 adantr wi peano2re ancli letr 3expa sylan
+    wbr mpand 3impia ) ACDZBCDZAEFGZBHRZABHRZUAUBIAUCHRZUDUEUAUFUBAJKUAUAUCCDZI
+    UBUFUDIUELZUAUGAMNUAUGUBUHAUCBOPQST $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
