@@ -1,4 +1,4 @@
-$( iset.mm - Version of 24-Feb-2020
+$( iset.mm - Version of 26-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69533,6 +69533,11 @@ $)
     ( cr wcel wa cap wbr creap clt wo apreap reapval bitrd ) ACDBCDEABFGABHGABI
     GBAIGJABKABLM $.
 
+  $( One is apart from zero.  (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+  1ap0 $p |- 1 # 0 $=
+    ( c1 cc0 cap wbr clt wo 0lt1 olci cr wcel wb 1re 0re reaplt mp2an mpbir ) A
+    BCDZABEDZBAEDZFZSRGHAIJBIJQTKLMABNOP $.
+
   $( Multiplication of both sides of 'less than' by a positive number.  Theorem
      I.19 of [Apostol] p. 20.  (Contributed by NM, 15-May-1999.)  (Revised by
      Mario Carneiro, 27-May-2016.) $)
@@ -70351,6 +70356,379 @@ $)
     ( cc wcel cc0 cap wbr wa cdiv co wb divap0b 3expb biimpa an32s ) ACDZBCDZBE
     FGZHZAEFGZABIJEFGZPSHTUAPQRTUAKABLMNO $.
 
+  $( The reciprocal of a number apart from zero is apart from zero.
+     (Contributed by Jim Kingdon, 24-Feb-2020.) $)
+  recap0 $p |- ( ( A e. CC /\ A # 0 ) -> ( 1 / A ) # 0 ) $=
+    ( c1 cc wcel cc0 cap wbr wa cdiv co ax-1cn 1ap0 divap0 mpanl12 ) BCDBEFGACD
+    AEFGHBAIJEFGKLBAMN $.
+
+  $( Multiplication of a number and its reciprocal.  (Contributed by Jim
+     Kingdon, 24-Feb-2020.) $)
+  recidap $p |- ( ( A e. CC /\ A # 0 ) -> ( A x. ( 1 / A ) ) = 1 ) $=
+    ( c1 cc wcel cc0 cap wbr cdiv co cmul wceq ax-1cn divcanap2 mp3an1 ) BCDACD
+    AEFGABAHIJIBKLBAMN $.
+
+  $( Multiplication of a number and its reciprocal.  (Contributed by Jim
+     Kingdon, 24-Feb-2020.) $)
+  recidap2 $p |- ( ( A e. CC /\ A # 0 ) -> ( ( 1 / A ) x. A ) = 1 ) $=
+    ( c1 cc wcel cc0 cap wbr cdiv co cmul wceq ax-1cn divcanap1 mp3an1 ) BCDACD
+    AEFGBAHIAJIBKLBAMN $.
+
+  $( Relationship between division and reciprocal.  (Contributed by Jim
+     Kingdon, 24-Feb-2020.) $)
+  divrecap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+      ( A / B ) = ( A x. ( 1 / B ) ) ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv co c1 cmul wceq simp2 recclap 3adant1 mul12d
+    simp1 recidap oveq2d mulid1d 3eqtrd mulcld 3simpc divmulap syl3anc mpbird
+    wa wb ) ACDZBCDZBEFGZHZABIJAKBIJZLJZMZBUOLJZAMZUMUQABUNLJZLJAKLJAUMBAUNUJUK
+    ULNUJUKULRZUKULUNCDUJBOPZQUMUSKALUKULUSKMUJBSPTUMAUTUAUBUMUJUOCDUKULUHUPURU
+    IUTUMAUNUTVAUCUJUKULUDAUOBUEUFUG $.
+
+  $( Relationship between division and reciprocal.  (Contributed by Jim
+     Kingdon, 25-Feb-2020.) $)
+  divrecap2 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+      ( A / B ) = ( ( 1 / B ) x. A ) ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv co c1 divrecap simp1 recclap 3adant1 mulcomd
+    cmul eqtrd ) ACDZBCDZBEFGZHZABIJAKBIJZQJUCAQJABLUBAUCSTUAMTUAUCCDSBNOPR $.
+
+  $( An associative law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divassap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) ) ->
+      ( ( A x. B ) / C ) = ( A x. ( B / C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cmul cdiv wceq recclap mulass syl3an3 divrecap
+    co c1 syl3anc mulcl 3adant3 simp3l simp3r simp2 oveq2d 3eqtr4d ) ADEZBDEZCD
+    EZCFGHZIZJZABKRZSCLRZKRZABUOKRZKRZUNCLRZABCLRZKRULUHUIUODEUPURMCNABUOOPUMUN
+    DEZUJUKUSUPMUHUIVAULABUAUBUHUIUJUKUCZUHUIUJUKUDZUNCQTUMUTUQAKUMUIUJUKUTUQMU
+    HUIULUEVBVCBCQTUFUG $.
+
+  $( A commutative/associative law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  div23ap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+      -> ( ( A x. B ) / C ) = ( ( A / C ) x. B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cmul co cdiv wceq mulcom oveq1d 3adant3 3com12
+    divassap simp2 divclap 3expb 3adant2 mulcomd 3eqtrd ) ADEZBDEZCDEZCFGHZIZJZ
+    ABKLZCMLZBAKLZCMLZBACMLZKLZUPBKLUFUGUMUONUJUFUGIULUNCMABOPQUGUFUJUOUQNBACSR
+    UKBUPUFUGUJTUFUJUPDEZUGUFUHUIURACUAUBUCUDUE $.
+
+  $( A commutative/associative law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  div32ap $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 ) /\ C e. CC )
+      -> ( ( A / B ) x. C ) = ( A x. ( C / B ) ) ) $=
+    ( cc wcel cc0 cap wbr wa cdiv cmul wceq w3a div23ap divassap eqtr3d 3com23
+    co ) ADEZCDEZBDEBFGHIZABJRCKRZACBJRKRZLSTUAMACKRBJRUBUCACBNACBOPQ $.
+
+  $( A commutative/associative law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  div13ap $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 ) /\ C e. CC )
+      -> ( ( A / B ) x. C ) = ( ( C / B ) x. A ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cmul co cdiv wceq mulcom oveq1d 3adant2 3com23
+    div23ap 3coml 3eqtr3d ) ADEZBDEBFGHIZCDEZJACKLZBMLZCAKLZBMLZABMLCKLZCBMLAKL
+    ZUBUDUFUHNUCUBUDIUEUGBMACOPQUBUDUCUFUINACBSRUDUBUCUHUJNCABSTUA $.
+
+  $( A commutative/associative law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  div12ap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+      -> ( A x. ( B / C ) ) = ( B x. ( A / C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv co cmul divclap 3expb mulcom sylan2 3impb
+    wceq div13ap 3comr sylan 3impa 3com23 3eqtrd ) ADEZBDEZCDEZCFGHZIZJABCKLZML
+    ZUKAMLZACKLZBMLZBUNMLZUFUGUJULUMSZUGUJIUFUKDEZUQUGUHUIURBCNOAUKPQRUGUJUFUMU
+    OSBCATUAUFUJUGUOUPSZUFUJUGUSUFUJIUNDEZUGUSUFUHUIUTACNOUNBPUBUCUDUE $.
+
+  $( Distribution of division over addition.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divdirap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+               -> ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a caddc co c1 cdiv cmul simp1 simp2 wceq syl3anc
+    divrecap recclap 3ad2ant3 adddird addcld simp3l simp3r oveq12d 3eqtr4d ) AD
+    EZBDEZCDEZCFGHZIZJZABKLZMCNLZOLZAUPOLZBUPOLZKLUOCNLZACNLZBCNLZKLUNABUPUIUJU
+    MPZUIUJUMQZUMUIUPDEUJCUAUBUCUNUODEUKULUTUQRUNABVCVDUDUIUJUKULUEZUIUJUKULUFZ
+    UOCTSUNVAURVBUSKUNUIUKULVAURRVCVEVFACTSUNUJUKULVBUSRVDVEVFBCTSUGUH $.
+
+  $( A cancellation law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divcanap3 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+                 ( ( B x. A ) / B ) = A ) $=
+    ( cc wcel cc0 cap wbr w3a cmul co cdiv wceq wa wb simp2 simp1 mulcld 3simpc
+    eqid divmulap syl3anc mpbiri ) ACDZBCDZBEFGZHZBAIJZBKJALZUGUGLZUGSUFUGCDUCU
+    DUEMUHUINUFBAUCUDUEOUCUDUEPZQUJUCUDUERUGABTUAUB $.
+
+  $( A cancellation law for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divcanap4 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+                 ( ( A x. B ) / B ) = A ) $=
+    ( cc wcel cc0 cap wbr w3a cmul co cdiv wceq mulcom 3adant3 oveq1d divcanap3
+    eqtrd ) ACDZBCDZBEFGZHZABIJZBKJBAIJZBKJAUAUBUCBKRSUBUCLTABMNOABPQ $.
+
+  $( One-to-one relationship for division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  div11ap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) ) ->
+               ( ( A / C ) = ( B / C ) <-> A = B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv co cmul wceq simp1 simp3l divclap syl3anc
+    simp3r divcanap2 simp2 mulcanapd eqeq12d bitr3d ) ADEZBDEZCDEZCFGHZIZJZCACK
+    LZMLZCBCKLZMLZNUKUMNABNUJUKUMCUJUEUGUHUKDEUEUFUIOZUEUFUGUHPZUEUFUGUHSZACQRU
+    JUFUGUHUMDEUEUFUIUAZUPUQBCQRUPUQUBUJULAUNBUJUEUGUHULANUOUPUQACTRUJUFUGUHUNB
+    NURUPUQBCTRUCUD $.
+
+  $( A number divided by itself is one.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  dividap $p |- ( ( A e. CC /\ A # 0 ) -> ( A / A ) = 1 ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co cmul wceq divrecap 3anidm12 recidap eqtrd
+    c1 ) ABCZADEFZGAAHIZAPAHIJIZPQRSTKAALMANO $.
+
+  $( Division into zero is zero.  (Contributed by Jim Kingdon, 25-Feb-2020.) $)
+  div0ap $p |- ( ( A e. CC /\ A # 0 ) -> ( 0 / A ) = 0 ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co wceq cmul simpl mul01d wb divmulap mp3an12
+    0cn mpbird ) ABCZADEFZGZDAHIDJZADKIDJZUAASTLMDBCZUDUAUBUCNQQDDAOPR $.
+
+  $( A number divided by 1 is itself.  (Contributed by NM, 9-Jan-2002.)  (Proof
+     shortened by Mario Carneiro, 27-May-2016.) $)
+  div1 $p |- ( A e. CC -> ( A / 1 ) = A ) $=
+    ( cc wcel c1 cdiv co wceq cmul mulid2 wb cc0 cap wbr ax-1cn pm3.2i divmulap
+    wa 1ap0 mp3an3 anidms mpbird ) ABCZADEFAGZDAHFAGZAIUBUCUDJZUBUBDBCZDKLMZQUE
+    UFUGNROAADPSTUA $.
+
+  $( 1 divided by 1 is 1 (common case).  (Contributed by David A. Wheeler,
+     7-Dec-2018.) $)
+  1div1e1 $p |- ( 1 / 1 ) = 1 $=
+    ( c1 cc wcel cdiv co wceq ax-1cn div1 ax-mp ) ABCAADEAFGAHI $.
+
+  $( Equality in terms of unit ratio.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  diveqap1 $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+      ( ( A / B ) = 1 <-> A = B ) ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv co c1 wceq cmul wb wa ax-1cn divmulap2 3impb
+    mp3an2 simp2 mulid1d eqeq2d bitrd ) ACDZBCDZBEFGZHZABIJKLZABKMJZLZABLUDUEUF
+    UHUJNZUDKCDUEUFOUKPAKBQSRUGUIBAUGBUDUEUFTUAUBUC $.
+
+  $( Move negative sign inside of a division.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divnegap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+                -u ( A / B ) = ( -u A / B ) ) $=
+    ( cc wcel cc0 cap wbr w3a cneg c1 cdiv co cmul wceq wa recclap sylan2 3impb
+    mulneg1 divrecap negcl syl3an1 negeqd 3eqtr4rd ) ACDZBCDZBEFGZHZAIZJBKLZMLZ
+    AUJMLZIZUIBKLZABKLZIUEUFUGUKUMNZUFUGOUEUJCDUPBPAUJSQRUEUICDUFUGUNUKNAUAUIBT
+    UBUHUOULABTUCUD $.
+
+  $( Distribution of division over subtraction.  (Contributed by NM,
+     4-Mar-2005.) $)
+  divsubdirap $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+               -> ( ( A - B ) / C ) = ( ( A / C ) - ( B / C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv cneg caddc cmin wceq eqtr3d 3expb 3adant1
+    co divclap divdirap syl3an2 negsub oveq1d 3adant3 divnegap 3adant2 negsubd
+    negcl oveq2d ) ADEZBDEZCDEZCFGHZIZJZACKSZBLZCKSZMSZABNSZCKSZUQBCKSZNSZUPAUR
+    MSZCKSZUTVBULUKURDEUOVFUTOBUIAURCUAUBUKULVFVBOUOUKULIVEVACKABUCUDUEPUPUQVCL
+    ZMSUTVDUPVGUSUQMULUOVGUSOZUKULUMUNVHBCUFQRUJUPUQVCUKUOUQDEZULUKUMUNVIACTQUG
+    ULUOVCDEZUKULUMUNVJBCTQRUHPP $.
+
+  $( A number is equal to the reciprocal of its reciprocal.  (Contributed by
+     Jim Kingdon, 25-Feb-2020.) $)
+  recrecap $p |- ( ( A e. CC /\ A # 0 ) -> ( 1 / ( 1 / A ) ) = A ) $=
+    ( cc wcel cc0 cap wbr wa c1 cdiv co wceq cmul recidap2 wb 1cnd simpl recap0
+    recclap divmulap syl112anc mpbird ) ABCZADEFZGZHHAIJZIJAKZUEALJHKZAMUDHBCUB
+    UEBCUEDEFUFUGNUDOUBUCPARAQHAUESTUA $.
+
+  $( Reciprocal is one-to-one.  (Contributed by Jim Kingdon, 25-Feb-2020.) $)
+  rec11ap $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) )
+                  -> ( ( 1 / A ) = ( 1 / B ) <-> A = B ) ) $=
+    ( cc wcel cc0 cap wbr wa c1 cdiv co wceq cmul wb 1cnd adantl simpl divmulap
+    recclap syl3anc simpll simprl simprr divrecap eqeq1d diveqap1 3bitr2d ) ACD
+    ZAEFGZHZBCDZBEFGZHZHZIAJKIBJKZLZAUOMKZILZABJKZILZABLZUNICDUOCDZUJUPURNUNOUM
+    VBUJBSPUJUMQIUOARTUNUSUQIUNUHUKULUSUQLUHUIUMUAZUJUKULUBZUJUKULUCZABUDTUEUNU
+    HUKULUTVANVCVDVEABUFTUG $.
+
+  $( Mutual reciprocals.  (Contributed by Jim Kingdon, 25-Feb-2020.) $)
+  rec11rap $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) )
+                  -> ( ( 1 / A ) = B <-> ( 1 / B ) = A ) ) $=
+    ( cc wcel cc0 cap wa c1 cdiv co wceq cmul wb simprl simpll simplr divmulap2
+    wbr 1cnd syl112anc simprr divmulap3 bitr4d ) ACDZAEFRZGZBCDZBEFRZGZGZHAIJBK
+    ZHABLJKZHBIJAKZUJHCDZUGUDUEUKULMUJSZUFUGUHNZUDUEUIOZUDUEUIPHBAQTUJUNUDUGUHU
+    MULMUOUQUPUFUGUHUAHABUBTUC $.
+
+  $( Multiplication of two ratios.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divmuldivap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
+                    /\ ( D e. CC /\ D # 0 ) ) )
+               -> ( ( A / C ) x. ( B / D ) ) = ( ( A x. B ) / ( C x. D ) ) ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co cmul wceq w3a 3anass mulcl syl2an 3adantr1
+    divclap ad2ant2r 3adantl1 mulap0 divcanap3 syl3anc simp2 jca mul4 divcanap2
+    oveqan12d eqtr3d oveq1d syl2anbr an4s ) AEFZCEFZCGHIZJZBEFZDEFZDGHIZJZACKLZ
+    BDKLZMLZABMLZCDMLZKLZNZUOURJUOUPUQOZUSUTVAOZVIUSVBJUOUPUQPUSUTVAPVJVKJZVGVE
+    MLZVGKLZVEVHVLVEEFZVGEFZVGGHIZVNVENVJVCEFZVDEFZVOVKACTZBDTZVCVDQRUPUQVKVPUO
+    URUTVAVPUSUPUTVPUQVACDQUASUBUPUQVKVQUOURUTVAVQUSCDUCSUBVEVGUDUEVLVMVFVGKVLC
+    VCMLZDVDMLZMLZVMVFVJUPVRJUTVSJWDVMNVKVJUPVRUOUPUQUFVTUGVKUTVSUSUTVAUFWAUGCV
+    CDVDUHRVJVKWBAWCBMACUIBDUIUJUKULUKUMUN $.
+
+  $( Division of two ratios.  Theorem I.15 of [Apostol] p. 18.  (Contributed by
+     Jim Kingdon, 25-Feb-2020.) $)
+  divdivdivap $p |- ( ( ( A e. CC /\ ( B e. CC /\ B # 0 ) ) /\
+                  ( ( C e. CC /\ C # 0 ) /\ ( D e. CC /\ D # 0 ) ) )
+                -> ( ( A / B ) / ( C / D ) ) = ( ( A x. D ) / ( B x. C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co cmul wceq divclap syl3anc mulcomd eqtrd c1
+    mulcld simprrl simprll simprlr simpll simplrl simplr simprl syl22anc oveq2d
+    simplrr divmuldivap simprrr mulap0d dividap syl2anc mulassd mulid2d 3eqtr3d
+    simprr oveq1d eqtr3d wb mulap0 ad2ant2lr divap0 adantl divmulap syl112anc
+    mpbird ) AEFZBEFZBGHIZJZJZCEFZCGHIZJZDEFZDGHIZJZJZJZABKLZCDKLZKLADMLZBCMLZK
+    LZNZWDWGMLZWCNZWBWDDCKLZWCMLZMLZWIWCWBWLWGWDMWBWLWCWKMLZWGWBWKWCWBVRVOVPWKE
+    FVNVQVRVSUAZVNVOVPVTUBZVNVOVPVTUCZDCOPZWBVJVKVLWCEFZVJVMWAUDZVJVKVLWAUEZVJV
+    KVLWAUJABOPZQWBVJVRVMVQWNWGNWTWOVJVMWAUFVNVQVTUGZADBCUKUHRUIWBWDWKMLZWCMLSW
+    CMLWMWCWBXDSWCMWBXDCDMLZDCMLZKLZSWBVOVRVTVQXDXGNWPWOVNVQVTUSXCCDDCUKUHWBXGX
+    FXFKLZSWBXEXFXFKWBCDWPWOQUTWBXFEFXFGHIXHSNWBDCWOWPTWBDCWOWPVNVQVRVSULZWQUMX
+    FUNUORRUTWBWDWKWCWBVOVRVSWDEFZWPWOXICDOPZWRXBUPWBWCXBUQURVAWBWSWGEFZXJWDGHI
+    ZWHWJVBXBWBWEEFWFEFWFGHIZXLWBADWTWOTWBBCXAWPTVMVQXNVJVTBCVCVDWEWFOPXKWAXMVN
+    CDVEVFWCWGWDVGVHVI $.
+
+  $( Cancellation of common factor in a ratio.  (Contributed by Jim Kingdon,
+     25-Feb-2020.) $)
+  divcanap5 $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 ) /\
+       ( C e. CC /\ C # 0 ) ) -> ( ( C x. A ) / ( C x. B ) ) = ( A / B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv co cmul c1 dividap oveq1d 3ad2ant3 simp3l
+    wceq simp1 simp3 simp2 divmuldivap syl22anc divclap mulid2d 3adant3 3eqtr3d
+    3expb ) ADEZBDEZBFGHZIZCDEZCFGHZIZJZCCKLZABKLZMLZNUSMLZCAMLCBMLKLZUSUPUJUTV
+    ASUMUPURNUSMCOPQUQUNUJUPUMUTVBSUJUMUNUORUJUMUPTUJUMUPUAUJUMUPUBCACBUCUDUJUM
+    VAUSSUPUJUMIUSUJUKULUSDEABUEUIUFUGUH $.
+
+  $( Swap the denominators in the product of two ratios.  (Contributed by Jim
+     Kingdon, 26-Feb-2020.) $)
+  divmul13ap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
+                    /\ ( D e. CC /\ D # 0 ) ) )
+                -> ( ( A / C ) x. ( B / D ) ) = ( ( B / C ) x. ( A / D ) ) ) $=
+    ( cc wcel wa cc0 cap wbr cmul cdiv wceq mulcom adantr divmuldivap
+    co oveq1d ancom1s 3eqtr4d ) AEFZBEFZGZCEFCHIJGDEFDHIJGGZGZABKQZCD
+    KQZLQBAKQZUGLQZACLQBDLQKQBCLQADLQKQZUEUFUHUGLUCUFUHMUDABNORABCDPU
+    BUAUDUJUIMBACDPST $.
+
+  $( Swap the numerators in the product of two ratios.  (Contributed by Jim
+     Kingdon, 26-Feb-2020.) $)
+  divmul24ap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
+                    /\ ( D e. CC /\ D # 0 ) ) )
+                -> ( ( A / C ) x. ( B / D ) ) = ( ( A / D ) x. ( B / C ) ) ) $=
+    ( cc wcel wa cc0 cap wbr cmul co cdiv wceq mulcom ad2ant2r adantl
+    oveq2d divmuldivap ancom2s 3eqtr4d ) AEFBEFGZCEFZCHIJZGZDEFZDHIJZ
+    GZGZGZABKLZCDKLZMLUKDCKLZMLZACMLBDMLKLADMLBCMLKLZUJULUMUKMUIULUMN
+    ZUBUCUFUPUDUGCDOPQRABCDSUBUHUEUOUNNABDCSTUA $.
+
+  $( Cross-multiply in an equality of ratios.  (Contributed by Jim Kingdon,
+     26-Feb-2020.) $)
+  divmuleqap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 ) /\
+                     ( D e. CC /\ D # 0 ) ) ) ->
+                   ( ( A / C ) = ( B / D ) <-> ( A x. D ) = ( B x. C ) ) ) $=
+    ( cc wcel wa cc0 cap wbr cdiv co cmul wceq divclap 3expb ad2ant2r
+    ad2ant2l mulassd divcanap1 wb mulap0 jca adantl mulcanap2 syl3anc
+    mulcl simprll simprrl oveq1d eqtr3d mulcomd oveq2d 3eqtr2d bitr3d
+    eqeq12d ) AEFZBEFZGZCEFZCHIJZGZDEFZDHIJZGZGZGZACKLZCDMLZMLZBDKLZV
+    IMLZNZVHVKNZADMLZBCMLZNVGVHEFZVKEFZVIEFZVIHIJZGZVMVNUAUQVBVQURVEU
+    QUTVAVQACOPQZURVEVRUQVBURVCVDVRBDOPRZVFWAUSVFVSVTUTVCVSVAVDCDUGQC
+    DUBUCUDVHVKVIUEUFVGVJVOVLVPVGVHCMLZDMLVJVOVGVHCDWBUSUTVAVEUHZUSVB
+    VCVDUIZSVGWDADMUQVBWDANZURVEUQUTVAWGACTPQUJUKVGVLVKDCMLZMLVKDMLZC
+    MLVPVGVIWHVKMVGCDWEWFULUMVGVKDCWCWFWESVGWIBCMURVEWIBNZUQVBURVCVDW
+    JBDTPRUJUNUPUO $.
+
+  $( The reciprocal of a ratio.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  recdivap $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
+                ( 1 / ( A / B ) ) = ( B / A ) ) $=
+    ( cc wcel cc0 cap wa c1 cdiv co cmul 1div1e1 oveq1i wceq ax-1cn 1ap0 pm3.2i
+    wbr divdivdivap mulid2 mpanl12 syl5eqr oveqan12rd ad2ant2r eqtrd ) ACDZAEFR
+    ZGBCDZBEFRZGGZHABIJZIJZHBKJZHAKJZIJZBAIJZUJULHHIJZUKIJZUOUQHUKILMHCDZUSHEFR
+    ZGUJURUONOUSUTOPQHHABSUAUBUFUHUOUPNUGUIUHUFUMBUNAIBTATUCUDUE $.
+
+  $( Cancellation of inverted fractions.  (Contributed by Jim Kingdon,
+     26-Feb-2020.) $)
+  divcanap6 $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
+         ( ( A / B ) x. ( B / A ) ) = 1 ) $=
+    ( cc wcel cc0 cap wbr wa cdiv co c1 cmul recdivap oveq2d wceq divclap 3expb
+    adantlr divap0 recidap syl2anc eqtr3d ) ACDZAEFGZHBCDZBEFGZHZHZABIJZKUIIJZL
+    JZUIBAIJZLJKUHUJULUILABMNUHUICDZUIEFGUKKOUCUGUMUDUCUEUFUMABPQRABSUITUAUB $.
+
+  $( Swap denominators in a division.  (Contributed by Jim Kingdon,
+     26-Feb-2020.) $)
+  divdiv32ap $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 )
+      /\ ( C e. CC /\ C # 0 ) ) -> ( ( A / B ) / C ) = ( ( A / C ) / B ) ) $=
+    ( cc wcel cc0 cap wbr wa c1 cdiv cmul wceq recclap div23ap syl3an2 divrecap
+    w3a co 3expb 3adant3 oveq1d divclap syl3an1 3impa 3com23 3eqtr4d ) ADEZBDEZ
+    BFGHZIZCDEZCFGHZIZRZAJBKSZLSZCKSZACKSZUPLSZABKSZCKSUSBKSZUKUHUPDEUNURUTMBNA
+    UPCOPUOVAUQCKUHUKVAUQMZUNUHUIUJVCABQTUAUBUHUNUKVBUTMZUHUNUKVDUHUNIZUIUJVDVE
+    USDEZUIUJVDUHULUMVFACUCTUSBQUDTUEUFUG $.
+
+  $( Cancel equal divisors in a division.  (Contributed by Jim Kingdon,
+     26-Feb-2020.) $)
+  divcanap7 $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 ) /\
+    ( C e. CC /\ C # 0 ) ) -> ( ( A / C ) / ( B / C ) ) = ( A / B ) ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv cmul wceq divdivdivap 3impdir mulcom adantrr
+    wa co 3adant2 oveq1d divcanap5 3eqtrd ) ADEZBDEBFGHQZCDEZCFGHZQZIZACJRBCJRJ
+    RZACKRZCBKRZJRZCAKRZUKJRABJRUCUGUDUIULLACBCMNUHUJUMUKJUCUGUJUMLZUDUCUEUNUFA
+    COPSTABCUAUB $.
+
+  $( Cancellation law for division and multiplication.  (Contributed by Jim
+     Kingdon, 26-Feb-2020.) $)
+  dmdcanap $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) /\
+         C e. CC ) ->
+         ( ( A / B ) x. ( C / A ) ) = ( C / B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv co cmul wceq simp1l simp3 divclap syl3anc
+    simp1r simp2l simp2r div23ap syl112anc divcanap2 oveq1d eqtr3d ) ADEZAFGHZI
+    ZBDEZBFGHZIZCDEZJZACAKLZMLZBKLZABKLUOMLZCBKLUNUGUODEZUJUKUQURNUGUHULUMOZUNU
+    MUGUHUSUIULUMPZUTUGUHULUMSZCAQRUIUJUKUMTUIUJUKUMUAAUOBUBUCUNUPCBKUNUMUGUHUP
+    CNVAUTVBCAUDRUEUF $.
+
+  $( Division into a fraction.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  divdivap1 $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 ) /\
+       ( C e. CC /\ C # 0 ) ) -> ( ( A / B ) / C ) = ( A / ( B x. C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a cdiv co c1 cmul wceq ax-1cn pm3.2i divdivdivap
+    1ap0 mpanr2 3impa oveq2d ad2antrl 3adant1 mulid1 oveq1d 3ad2ant1 3eqtr3d
+    div1 ) ADEZBDEBFGHIZCDEZCFGHZIZJABKLZCMKLZKLZAMNLZBCNLZKLZUOCKLZAUSKLZUJUKU
+    NUQUTOZUJUKIUNMDEZMFGHZIVCVDVEPSQABCMRTUAUKUNUQVAOZUJULVFUKUMULUPCUOKCUIUBU
+    CUDUJUKUTVBOUNUJURAUSKAUEUFUGUH $.
+
+  $( Division by a fraction.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  divdivap2 $p |- ( ( A e. CC /\ ( B e. CC /\ B # 0 ) /\ ( C e. CC /\ C # 0 )
+              ) -> ( A / ( B / C ) ) = ( ( A x. C ) / B ) ) $=
+    ( cc wcel cc0 cap wbr wa w3a c1 cdiv co cmul wceq ax-1cn pm3.2i divdivdivap
+    1ap0 mpanl2 3impb 3ad2ant1 oveq1d mulid2 ad2antrl 3adant3 oveq2d 3eqtr3d
+    div1 ) ADEZBDEZBFGHZIZCDECFGHIZJZAKLMZBCLMZLMZACNMZKBNMZLMZAUQLMUSBLMUJUMUN
+    URVAOZUJKDEZKFGHZIUMUNIVBVCVDPSQAKBCRTUAUOUPAUQLUJUMUPAOUNAUIUBUCUOUTBUSLUJ
+    UMUTBOZUNUKVEUJULBUDUEUFUGUH $.
+
+  $( Division into a reciprocal.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  recdivap2 $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
+                ( ( 1 / A ) / B ) = ( 1 / ( A x. B ) ) ) $=
+    ( c1 cc wcel cc0 cap wbr wa cdiv co cmul wceq ax-1cn divdivap1 mp3an1 ) CDE
+    ADEAFGHIBDEBFGHICAJKBJKCABLKJKMNCABOP $.
+
+  $( Cancellation in a double division.  (Contributed by Jim Kingdon,
+     26-Feb-2020.) $)
+  ddcanap $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
+                ( A / ( A / B ) ) = B ) $=
+    ( cc wcel cc0 cap wbr cdiv wceq cmul simpll simprl simprr divcanap1 syl3anc
+    wa co wb divclap divap0 divmulap syl112anc mpbird ) ACDZAEFGZPZBCDZBEFGZPZP
+    ZAABHQZHQBIZUKBJQAIZUJUDUGUHUMUDUEUIKZUFUGUHLZUFUGUHMZABNOUJUDUGUKCDZUKEFGU
+    LUMRUNUOUJUDUGUHUQUNUOUPABSOABTABUKUAUBUC $.
+
+  $( Addition of two ratios.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  divadddivap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
+                    /\ ( D e. CC /\ D # 0 ) ) ) ->
+  ( ( A / C ) + ( B / D ) ) = ( ( ( A x. D ) + ( B x. C ) ) / ( C x. D ) ) ) $=
+    ( cc wcel wa cc0 cap cmul co caddc cdiv wceq mulcl ad2ant2r syl3anc mulcomd
+    wbr oveq12d adantrl adantrr mulap0 jca adantl divdirap simpll simprr simpld
+    ad2ant2lr simprll simprl divcanap5 eqtrd simplr oveq1d eqtr2d ) AEFZBEFZGZC
+    EFZCHISZGZDEFZDHISZGZGZGZADJKZBCJKZLKCDJKZMKZVIVKMKZVJVKMKZLKZACMKZBDMKZLKV
+    HVIEFZVJEFZVKEFZVKHISZGZVLVONUTVFVRVCURVDVRUSVEADOPUAUSVCVSURVFUSVAVSVBBCOU
+    BUJVGWBUTVGVTWAVAVDVTVBVECDOPCDUCUDUEVIVJVKUFQVHVMVPVNVQLVHVMDAJKZDCJKZMKZV
+    PVHVIWCVKWDMVHADURUSVGUGZVHVDVEUTVCVFUHZUIZRVHCDUTVAVBVFUKZWHRTVHURVCVFWEVP
+    NWFUTVCVFULZWGACDUMQUNVHVNCBJKZVKMKZVQVHVJWKVKMVHBCURUSVGUOZWIRUPVHUSVFVCWL
+    VQNWMWGWJBDCUMQUNTUQ $.
+
+  $( Subtraction of two ratios.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  divsubdivap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
+                    /\ ( D e. CC /\ D # 0 ) ) ) ->
+  ( ( A / C ) - ( B / D ) ) = ( ( ( A x. D ) - ( B x. C ) ) / ( C x. D ) ) ) $=
+    ( cc wcel wa cc0 cap wbr cmul co cneg caddc cdiv cmin syl3anc oveq2d eqtr3d
+    wceq sylanl2 simplr simprrl simprrr divnegap simpll simprll simprlr divclap
+    negcl divadddivap negsubd mulneg1d mulcld eqtrd oveq1d ) AEFZBEFZGZCEFZCHIJ
+    ZGZDEFZDHIJZGZGZGZADKLZBMZCKLZNLZCDKLZOLZACOLZBDOLZPLZVHBCKLZPLZVLOLVGVNVID
+    OLZNLZVMVPURUQVIEFVFVTVMTBUJAVICDUKUAVGVNVOMZNLVTVPVGWAVSVNNVGURVCVDWAVSTUQ
+    URVFUBZUSVBVCVDUCZUSVBVCVDUDZBDUEQRVGVNVOVGUQUTVAVNEFUQURVFUFZUSUTVAVEUGZUS
+    UTVAVEUHACUIQVGURVCVDVOEFWBWCWDBDUIQULSSVGVKVRVLOVGVKVHVQMZNLVRVGVJWGVHNVGB
+    CWBWFUMRVGVHVQVGADWEWCUNVGBCWBWFUNULUOUPS $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
@@ -70375,7 +70753,7 @@ practices, which are discussed in more detail in other references.
 The following sources lay out how mathematics is developed without the law
 of the excluded middle. Of course, there are a greater number of sources
 which assume excluded middle and most of what is in them applies here too
-(especially in a treatment such as ours which is build on first order
+(especially in a treatment such as ours which is built on first order
 logic and set theory, rather than, say, type theory). Studying how a topic
 is treated in the Metamath Proof Explorer and the references therein is
 often a good place to start (and is easy to compare with the Intuitionistic
