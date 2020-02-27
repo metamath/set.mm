@@ -70693,6 +70693,42 @@ $)
     ( c1 cc wcel cc0 cap wbr wa cdiv co cmul wceq ax-1cn divdivap1 mp3an1 ) CDE
     ADEAFGHIBDEBFGHICAJKBJKCABLKJKMNCABOP $.
 
+  $( Cancellation in a double division.  (Contributed by Jim Kingdon,
+     26-Feb-2020.) $)
+  ddcanap $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
+                ( A / ( A / B ) ) = B ) $=
+    ( cc wcel cc0 cap wbr cdiv wceq cmul simpll simprl simprr divcanap1 syl3anc
+    wa co wb divclap divap0 divmulap syl112anc mpbird ) ACDZAEFGZPZBCDZBEFGZPZP
+    ZAABHQZHQBIZUKBJQAIZUJUDUGUHUMUDUEUIKZUFUGUHLZUFUGUHMZABNOUJUDUGUKCDZUKEFGU
+    LUMRUNUOUJUDUGUHUQUNUOUPABSOABTABUKUAUBUC $.
+
+  $( Addition of two ratios.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  divadddivap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
+                    /\ ( D e. CC /\ D # 0 ) ) ) ->
+  ( ( A / C ) + ( B / D ) ) = ( ( ( A x. D ) + ( B x. C ) ) / ( C x. D ) ) ) $=
+    ( cc wcel wa cc0 cap cmul co caddc cdiv wceq mulcl ad2ant2r syl3anc mulcomd
+    wbr oveq12d adantrl adantrr mulap0 jca adantl divdirap simpll simprr simpld
+    ad2ant2lr simprll simprl divcanap5 eqtrd simplr oveq1d eqtr2d ) AEFZBEFZGZC
+    EFZCHISZGZDEFZDHISZGZGZGZADJKZBCJKZLKCDJKZMKZVIVKMKZVJVKMKZLKZACMKZBDMKZLKV
+    HVIEFZVJEFZVKEFZVKHISZGZVLVONUTVFVRVCURVDVRUSVEADOPUAUSVCVSURVFUSVAVSVBBCOU
+    BUJVGWBUTVGVTWAVAVDVTVBVECDOPCDUCUDUEVIVJVKUFQVHVMVPVNVQLVHVMDAJKZDCJKZMKZV
+    PVHVIWCVKWDMVHADURUSVGUGZVHVDVEUTVCVFUHZUIZRVHCDUTVAVBVFUKZWHRTVHURVCVFWEVP
+    NWFUTVCVFULZWGACDUMQUNVHVNCBJKZVKMKZVQVHVJWKVKMVHBCURUSVGUOZWIRUPVHUSVFVCWL
+    VQNWMWGWJBDCUMQUNTUQ $.
+
+  $( Subtraction of two ratios.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  divsubdivap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
+                    /\ ( D e. CC /\ D # 0 ) ) ) ->
+  ( ( A / C ) - ( B / D ) ) = ( ( ( A x. D ) - ( B x. C ) ) / ( C x. D ) ) ) $=
+    ( cc wcel wa cc0 cap wbr cmul co cneg caddc cdiv cmin syl3anc oveq2d eqtr3d
+    wceq sylanl2 simplr simprrl simprrr divnegap simpll simprll simprlr divclap
+    negcl divadddivap negsubd mulneg1d mulcld eqtrd oveq1d ) AEFZBEFZGZCEFZCHIJ
+    ZGZDEFZDHIJZGZGZGZADKLZBMZCKLZNLZCDKLZOLZACOLZBDOLZPLZVHBCKLZPLZVLOLVGVNVID
+    OLZNLZVMVPURUQVIEFVFVTVMTBUJAVICDUKUAVGVNVOMZNLVTVPVGWAVSVNNVGURVCVDWAVSTUQ
+    URVFUBZUSVBVCVDUCZUSVBVCVDUDZBDUEQRVGVNVOVGUQUTVAVNEFUQURVFUFZUSUTVAVEUGZUS
+    UTVAVEUHACUIQVGURVCVDVOEFWBWCWDBDUIQULSSVGVKVRVLOVGVKVHVQMZNLVRVGVJWGVHNVGB
+    CWBWFUMRVGVHVQVGADWEWCUNVGBCWBWFUNULUOUPS $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
