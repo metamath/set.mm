@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Feb-2020
+$( iset.mm - Version of 27-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -70012,6 +70012,38 @@ $)
   apne $p |- ( ( A e. CC /\ B e. CC ) -> ( A # B -> A =/= B ) ) $=
     ( cc wcel wa cap wbr wceq wn apti biimpd necon2ad ) ACDBCDEZABFGZABMABHNIAB
     JKL $.
+
+  $( Positive implies apart from zero.  (Contributed by Jim Kingdon,
+     27-Feb-2020.) $)
+  gt0ap0 $p |- ( ( A e. RR /\ 0 < A ) -> A # 0 ) $=
+    ( cr wcel cc0 clt wbr wa cap wo ax-ia2 olcd wb 0red reaplt syldan mpbird )
+    ABCZDAEFZGZADHFZADEFZRIZSRUAQRJKQRDBCTUBLSMADNOP $.
+
+  ${
+    gt0ap0i.1 $e |- A e. RR $.
+    $( Positive means apart from zero (useful for ordering theorems involving
+       division).  (Contributed by Jim Kingdon, 27-Feb-2020.) $)
+    gt0ap0i $p |- ( 0 < A -> A # 0 ) $=
+      ( cr wcel cc0 clt wbr cap gt0ap0 mpan ) ACDEAFGAEHGBAIJ $.
+
+    ${
+      gt0ap0i.2 $e |- 0 < A $.
+      $( Positive implies apart from zero.  (Contributed by Jim Kingdon,
+         27-Feb-2020.) $)
+      gt0ap0ii $p |- A # 0 $=
+        ( cc0 clt wbr cap gt0ap0i ax-mp ) DAEFADGFCABHI $.
+    $}
+  $}
+
+  ${
+    gt0ap0d.1 $e |- ( ph -> A e. RR ) $.
+    gt0ap0d.2 $e |- ( ph -> 0 < A ) $.
+    $( Positive implies apart from zero.  Because of the way we define ` # ` ,
+       ` A ` must be an element of ` RR ` , not just ` RR* ` .  (Contributed by
+       Jim Kingdon, 27-Feb-2020.) $)
+    gt0ap0d $p |- ( ph -> A # 0 ) $=
+      ( cr wcel cc0 clt wbr cap gt0ap0 syl2anc ) ABEFGBHIBGJICDBKL $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
