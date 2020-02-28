@@ -70798,6 +70798,33 @@ $)
     ZBCDZBEFGZHZABIJZAKBIJZLJZCUHAQDBQDUGUIUKRUHAUEUFUGMZNUHBUEUFUGON
     UEUFUGPABSTUHAUJULUFUGUJCDUEBUAUBUCUD $.
 
+  $( A number equal to its negative is zero.  (Contributed by NM,
+     12-Jul-2005.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  eqneg $p |- ( A e. CC -> ( A = -u A <-> A = 0 ) ) $=
+    ( cc wcel c1 caddc cmul cc0 wceq cneg 1p1times negid ax-1cn addcli syl6reqr
+    co mul01i eqeq12d a1i 1re 0lt1 id 0cnd readdcli addgt0ii gt0ap0ii mulcanapd
+    cap wbr negcl addcand 3bitr3rd ) ABCZDDEOZAFOZUMGFOZHAAEOZAAIZEOZHAGHAUQHUL
+    UNUPUOURAJULURGUOAKUMDDLLMZPNQULAGUMULUAZULUBUMBCULUSRUMGUGUHULUMDDSSUCDDSS
+    TTUDUERUFULAAUQUTUTAUIUJUK $.
+
+  ${
+    eqnegd.1 $e |- ( ph -> A e. CC ) $.
+    $( A complex number equals its negative iff it is zero.  Deduction form of
+       ~ eqneg .  (Contributed by David Moews, 28-Feb-2017.) $)
+    eqnegd $p |- ( ph -> ( A = -u A <-> A = 0 ) ) $=
+      ( cc wcel cneg wceq cc0 wb eqneg syl ) ABDEBBFGBHGICBJK $.
+  $}
+
+  ${
+    eqnegad.1 $e |- ( ph -> A e. CC ) $.
+    eqnegad.2 $e |- ( ph -> A = -u A ) $.
+    $( If a complex number equals its own negative, it is zero.  One-way
+       deduction form of ~ eqneg .  (Contributed by David Moews,
+       28-Feb-2017.) $)
+    eqnegad $p |- ( ph -> A = 0 ) $=
+      ( cneg wceq cc0 eqnegd mpbid ) ABBEFBGFDABCHI $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Ordering on reals (cont.)
