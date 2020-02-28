@@ -70972,6 +70972,46 @@ $)
                ( ( 1 / A ) = ( 1 / B ) <-> A = B ) ) $=
       ( cc0 cap wbr cc wcel c1 cdiv co wceq wb wa rec11ap mpanl1 mpanr1 ) AEFGZ
       BHIZBEFGZJAKLJBKLMABMNZDAHISTUAOUBCABPQR $.
+
+    ${
+      divclap.3 $e |- B # 0 $.
+      $( Closure law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divclapi $p |- ( A / B ) e. CC $=
+        ( cc wcel cc0 cap wbr cdiv co divclap mp3an ) AFGBFGBHIJABKLFGCDEABMN
+        $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divcanap2i $p |- ( B x. ( A / B ) ) = A $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap2 mp3an ) AFGBFGBHIJBAB
+        KLMLANCDEABOP $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divcanap1i $p |- ( ( A / B ) x. B ) = A $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap1 mp3an ) AFGBFGBHIJABK
+        LBMLANCDEABOP $.
+
+      $( Relationship between division and reciprocal.  (Contributed by Jim
+         Kingdon, 28-Feb-2020.) $)
+      divrecapi $p |- ( A / B ) = ( A x. ( 1 / B ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co c1 cmul wceq divrecap mp3an ) AFGBFGBHIJA
+        BKLAMBKLNLOCDEABPQ $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divcanap3i $p |- ( ( B x. A ) / B ) = A $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap3 mp3an ) AFGBFGBHIJBAK
+        LBMLANCDEABOP $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divcanap4i $p |- ( ( A x. B ) / B ) = A $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap4 mp3an ) AFGBFGBHIJABK
+        LBMLANCDEABOP $.
+    $}
+
   $}
 
 $(
