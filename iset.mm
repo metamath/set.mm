@@ -70923,6 +70923,24 @@ $)
     divcanap2zi $p |- ( B # 0 -> ( B x. ( A / B ) ) = A ) $=
       ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap2 mp3an12 ) AEFBEFBGHIBAB
       JKLKAMCDABNO $.
+
+    $( Relationship between division and reciprocal.  (Contributed by Jim
+       Kingdon, 27-Feb-2020.) $)
+    divrecapzi $p |- ( B # 0 -> ( A / B ) = ( A x. ( 1 / B ) ) ) $=
+      ( cc wcel cc0 cap wbr cdiv co c1 cmul wceq divrecap mp3an12 ) AEFBEFBGHIA
+      BJKALBJKMKNCDABOP $.
+
+    $( A cancellation law for division.  (Contributed by Jim Kingdon,
+       27-Feb-2020.) $)
+    divcanap3zi $p |- ( B # 0 -> ( ( B x. A ) / B ) = A ) $=
+      ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap3 mp3an12 ) AEFBEFBGHIBAJ
+      KBLKAMCDABNO $.
+
+    $( A cancellation law for division.  (Contributed by Jim Kingdon,
+       27-Feb-2020.) $)
+    divcanap4zi $p |- ( B # 0 -> ( ( A x. B ) / B ) = A ) $=
+      ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap4 mp3an12 ) AEFBEFBGHIABJ
+      KBLKAMCDABNO $.
   $}
 
 $(
