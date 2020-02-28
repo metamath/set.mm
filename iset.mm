@@ -70895,6 +70895,16 @@ $)
       recrecapi $p |- ( 1 / ( 1 / A ) ) = A $=
         ( cc wcel cc0 cap wbr c1 cdiv co wceq recrecap mp2an ) ADEAFGHIIAJKJKAL
         BCAMN $.
+
+      $( A number divided by itself is one.  (Contributed by NM,
+         9-Feb-1995.) $)
+      dividapi $p |- ( A / A ) = 1 $=
+        ( cc wcel cc0 cap wbr cdiv co c1 wceq dividap mp2an ) ADEAFGHAAIJKLBCAM
+        N $.
+
+      $( Division into zero is zero.  (Contributed by NM, 12-Aug-1999.) $)
+      div0api $p |- ( 0 / A ) = 0 $=
+        ( cc wcel cc0 cap wbr cdiv co wceq div0ap mp2an ) ADEAFGHFAIJFKBCALM $.
     $}
   $}
 
