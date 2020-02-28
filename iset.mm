@@ -70906,6 +70906,23 @@ $)
       div0api $p |- ( 0 / A ) = 0 $=
         ( cc wcel cc0 cap wbr cdiv co wceq div0ap mp2an ) ADEAFGHFAIJFKBCALM $.
     $}
+
+    divclz.2 $e |- B e. CC $.
+    $( Closure law for division.  (Contributed by Jim Kingdon, 27-Feb-2020.) $)
+    divclapzi $p |- ( B # 0 -> ( A / B ) e. CC ) $=
+      ( cc wcel cc0 cap wbr cdiv co divclap mp3an12 ) AEFBEFBGHIABJKEFCDABLM $.
+
+    $( A cancellation law for division.  (Contributed by Jim Kingdon,
+       27-Feb-2020.) $)
+    divcanap1zi $p |- ( B # 0 -> ( ( A / B ) x. B ) = A ) $=
+      ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap1 mp3an12 ) AEFBEFBGHIABJ
+      KBLKAMCDABNO $.
+
+    $( A cancellation law for division.  (Contributed by Jim Kingdon,
+       27-Feb-2020.) $)
+    divcanap2zi $p |- ( B # 0 -> ( B x. ( A / B ) ) = A ) $=
+      ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap2 mp3an12 ) AEFBEFBGHIBAB
+      JKLKAMCDABNO $.
   $}
 
 $(
