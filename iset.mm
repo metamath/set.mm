@@ -70868,6 +70868,15 @@ $)
     recidapzi $p |- ( A # 0 -> ( A x. ( 1 / A ) ) = 1 ) $=
       ( cc wcel cc0 cap wbr c1 cdiv co cmul wceq recidap mpan ) ACDAEFGAHAIJKJH
       LBAMN $.
+
+    $( A number divided by 1 is itself.  (Contributed by NM, 9-Jan-2002.) $)
+    div1i $p |- ( A / 1 ) = A $=
+      ( cc wcel c1 cdiv co wceq div1 ax-mp ) ACDAEFGAHBAIJ $.
+
+    $( A number equal to its negative is zero.  (Contributed by NM,
+       29-May-1999.) $)
+    eqnegi $p |- ( A = -u A <-> A = 0 ) $=
+      ( cc wcel cneg wceq cc0 wb eqneg ax-mp ) ACDAAEFAGFHBAIJ $.
   $}
 
 $(
