@@ -70831,6 +70831,26 @@ $)
       ( cneg wceq cc0 eqnegd mpbid ) ABBEFBGFDABCHI $.
   $}
 
+  $( Quotient of two negatives.  (Contributed by Jim Kingdon, 27-Feb-2020.) $)
+  div2negap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+                  ( -u A / -u B ) = ( A / B ) ) $=
+    ( cc wcel cc0 cap wbr w3a cneg cdiv co wceq cmul 3ad2ant2 syl112anc 3adant1
+    negcl c1 eqtrd 3ad2ant1 simp1 simp2 simp3 div12ap divnegap syld3an1 dividap
+    negeqd eqtr3d oveq2d ax-1cn negcli mulcom mpan2 mulm1 divclap negap0 biimpa
+    wb divmulap mpbird ) ACDZBCDZBEFGZHZAIZBIZJKABJKZLZVGVHMKZVFLZVEVJAVGBJKZMK
+    ZVFVEVGCDZVBVCVDVJVMLVCVBVNVDBQNZVBVCVDUAVBVCVDUBZVBVCVDUCVGABUDOVEVMARIZMK
+    ZVFVEVLVQAMVEBBJKZIZVLVQVCVCVBVDVTVLLVPBBUEUFVEVSRVCVDVSRLVBBUGPUHUIUJVBVCV
+    RVFLVDVBVRVQAMKZVFVBVQCDVRWALRUKULAVQUMUNAUOSTSSVEVFCDZVHCDVNVGEFGZVIVKUSVB
+    VCWBVDAQTABUPVOVCVDWCVBVCVDWCBUQURPVFVHVGUTOVA $.
+
+  $( Move negative sign inside of a division.  (Contributed by Jim Kingdon,
+     27-Feb-2020.) $)
+  divneg2ap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+                   -u ( A / B ) = ( A / -u B ) ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv co cneg divnegap wceq negcl div2negap negneg
+    syl3an1 3ad2ant1 oveq1d 3eqtr2d ) ACDZBCDZBEFGZHZABIJKAKZBIJZUEKZBKZIJZAUHI
+    JABLUAUECDUBUCUIUFMANUEBOQUDUGAUHIUAUBUGAMUCAPRST $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Ordering on reals (cont.)
