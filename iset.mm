@@ -70045,6 +70045,12 @@ $)
       ( cr wcel cc0 clt wbr cap gt0ap0 syl2anc ) ABEFGBHIBGJICDBKL $.
   $}
 
+  $( A number is apart from zero iff its negative is apart from zero.
+     (Contributed by Jim Kingdon, 27-Feb-2020.) $)
+  negap0 $p |- ( A e. CC -> ( A # 0 <-> -u A # 0 ) ) $=
+    ( cc wcel cc0 cap wbr cneg wb 0cn apneg mpan2 neg0 breq2i syl6bb ) ABCZADEF
+    ZAGZDGZEFZQDEFODBCPSHIADJKRDQELMN $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
            Reciprocals
