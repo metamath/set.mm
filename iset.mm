@@ -70851,6 +70851,25 @@ $)
     syl3an1 3ad2ant1 oveq1d 3eqtr2d ) ACDZBCDZBEFGZHZABIJKAKZBIJZUEKZBKZIJZAUHI
     JABLUAUECDUBUCUIUFMANUEBOQUDUGAUHIUAUBUGAMUCAPRST $.
 
+  ${
+    divclz.1 $e |- A e. CC $.
+    $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+       27-Feb-2020.) $)
+    recclapzi $p |- ( A # 0 -> ( 1 / A ) e. CC ) $=
+      ( cc wcel cc0 cap wbr c1 cdiv co recclap mpan ) ACDAEFGHAIJCDBAKL $.
+
+    $( The reciprocal of a number apart from zero is apart from zero.
+       (Contributed by Jim Kingdon, 27-Feb-2020.) $)
+    recap0apzi $p |- ( A # 0 -> ( 1 / A ) # 0 ) $=
+      ( cc wcel cc0 cap wbr c1 cdiv co recap0 mpan ) ACDAEFGHAIJEFGBAKL $.
+
+    $( Multiplication of a number and its reciprocal.  (Contributed by Jim
+       Kingdon, 27-Feb-2020.) $)
+    recidapzi $p |- ( A # 0 -> ( A x. ( 1 / A ) ) = 1 ) $=
+      ( cc wcel cc0 cap wbr c1 cdiv co cmul wceq recidap mpan ) ACDAEFGAHAIJKJH
+      LBAMN $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Ordering on reals (cont.)
