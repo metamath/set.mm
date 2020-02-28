@@ -70966,6 +70966,12 @@ $)
     divcanap4zi $p |- ( B # 0 -> ( ( A x. B ) / B ) = A ) $=
       ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap4 mp3an12 ) AEFBEFBGHIABJ
       KBLKAMCDABNO $.
+
+    $( Reciprocal is one-to-one.  (Contributed by Jim Kingdon, 28-Feb-2020.) $)
+    rec11api $p |- ( ( A # 0 /\ B # 0 ) ->
+               ( ( 1 / A ) = ( 1 / B ) <-> A = B ) ) $=
+      ( cc0 cap wbr cc wcel c1 cdiv co wceq wb wa rec11ap mpanl1 mpanr1 ) AEFGZ
+      BHIZBEFGZJAKLJBKLMABMNZDAHISTUAOUBCABPQR $.
   $}
 
 $(
