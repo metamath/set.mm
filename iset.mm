@@ -70877,6 +70877,25 @@ $)
        29-May-1999.) $)
     eqnegi $p |- ( A = -u A <-> A = 0 ) $=
       ( cc wcel cneg wceq cc0 wb eqneg ax-mp ) ACDAAEFAGFHBAIJ $.
+
+    ${
+      recclap.2 $e |- A # 0 $.
+      $( Closure law for reciprocal.  (Contributed by NM, 30-Apr-2005.) $)
+      recclapi $p |- ( 1 / A ) e. CC $=
+        ( cc0 cap wbr c1 cdiv co cc wcel recclapzi ax-mp ) ADEFGAHIJKCABLM $.
+
+      $( Multiplication of a number and its reciprocal.  (Contributed by NM,
+         9-Feb-1995.) $)
+      recidapi $p |- ( A x. ( 1 / A ) ) = 1 $=
+        ( cc0 cap wbr c1 cdiv co cmul wceq recidapzi ax-mp ) ADEFAGAHIJIGKCABLM
+        $.
+
+      $( A number is equal to the reciprocal of its reciprocal.  Theorem I.10
+         of [Apostol] p. 18.  (Contributed by NM, 9-Feb-1995.) $)
+      recrecapi $p |- ( 1 / ( 1 / A ) ) = A $=
+        ( cc wcel cc0 cap wbr c1 cdiv co wceq recrecap mp2an ) ADEAFGHIIAJKJKAL
+        BCAMN $.
+    $}
   $}
 
 $(
