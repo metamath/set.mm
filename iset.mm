@@ -70630,36 +70630,34 @@ $)
   divmul13ap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
                     /\ ( D e. CC /\ D # 0 ) ) )
                 -> ( ( A / C ) x. ( B / D ) ) = ( ( B / C ) x. ( A / D ) ) ) $=
-    ( cc wcel wa cc0 cap wbr cmul cdiv wceq mulcom adantr divmuldivap
-    co oveq1d ancom1s 3eqtr4d ) AEFZBEFZGZCEFCHIJGDEFDHIJGGZGZABKQZCD
-    KQZLQBAKQZUGLQZACLQBDLQKQBCLQADLQKQZUEUFUHUGLUCUFUHMUDABNORABCDPU
-    BUAUDUJUIMBACDPST $.
+    ( cc wcel wa cc0 cap wbr cmul co cdiv wceq mulcom adantr oveq1d divmuldivap
+    ancom1s 3eqtr4d ) AEFZBEFZGZCEFCHIJGDEFDHIJGGZGZABKLZCDKLZMLBAKLZUGMLZACMLB
+    DMLKLBCMLADMLKLZUEUFUHUGMUCUFUHNUDABOPQABCDRUBUAUDUJUINBACDRST $.
 
   $( Swap the numerators in the product of two ratios.  (Contributed by Jim
      Kingdon, 26-Feb-2020.) $)
   divmul24ap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
                     /\ ( D e. CC /\ D # 0 ) ) )
                 -> ( ( A / C ) x. ( B / D ) ) = ( ( A / D ) x. ( B / C ) ) ) $=
-    ( cc wcel wa cc0 cap wbr cmul co cdiv wceq mulcom ad2ant2r adantl
-    oveq2d divmuldivap ancom2s 3eqtr4d ) AEFBEFGZCEFZCHIJZGZDEFZDHIJZ
-    GZGZGZABKLZCDKLZMLUKDCKLZMLZACMLBDMLKLADMLBCMLKLZUJULUMUKMUIULUMN
-    ZUBUCUFUPUDUGCDOPQRABCDSUBUHUEUOUNNABDCSTUA $.
+    ( cc wcel wa cc0 cap wbr cmul co cdiv wceq mulcom adantl oveq2d divmuldivap
+    ad2ant2r ancom2s 3eqtr4d ) AEFBEFGZCEFZCHIJZGZDEFZDHIJZGZGZGZABKLZCDKLZMLUK
+    DCKLZMLZACMLBDMLKLADMLBCMLKLZUJULUMUKMUIULUMNZUBUCUFUPUDUGCDOSPQABCDRUBUHUE
+    UOUNNABDCRTUA $.
 
   $( Cross-multiply in an equality of ratios.  (Contributed by Jim Kingdon,
      26-Feb-2020.) $)
   divmuleqap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 ) /\
                      ( D e. CC /\ D # 0 ) ) ) ->
                    ( ( A / C ) = ( B / D ) <-> ( A x. D ) = ( B x. C ) ) ) $=
-    ( cc wcel wa cc0 cap wbr cdiv co cmul wceq divclap 3expb ad2ant2r
-    ad2ant2l mulassd divcanap1 wb mulap0 jca adantl mulcanap2 syl3anc
-    mulcl simprll simprrl oveq1d eqtr3d mulcomd oveq2d 3eqtr2d bitr3d
-    eqeq12d ) AEFZBEFZGZCEFZCHIJZGZDEFZDHIJZGZGZGZACKLZCDMLZMLZBDKLZV
-    IMLZNZVHVKNZADMLZBCMLZNVGVHEFZVKEFZVIEFZVIHIJZGZVMVNUAUQVBVQURVEU
-    QUTVAVQACOPQZURVEVRUQVBURVCVDVRBDOPRZVFWAUSVFVSVTUTVCVSVAVDCDUGQC
-    DUBUCUDVHVKVIUEUFVGVJVOVLVPVGVHCMLZDMLVJVOVGVHCDWBUSUTVAVEUHZUSVB
-    VCVDUIZSVGWDADMUQVBWDANZURVEUQUTVAWGACTPQUJUKVGVLVKDCMLZMLVKDMLZC
-    MLVPVGVIWHVKMVGCDWEWFULUMVGVKDCWCWFWESVGWIBCMURVEWIBNZUQVBURVCVDW
-    JBDTPRUJUNUPUO $.
+    ( cc wcel wa cc0 cap cdiv cmul wceq divclap 3expb ad2ant2r ad2ant2l mulassd
+    wbr co divcanap1 mulap0 jca adantl mulcanap2 syl3anc simprll simprrl oveq1d
+    wb mulcl eqtr3d mulcomd oveq2d 3eqtr2d eqeq12d bitr3d ) AEFZBEFZGZCEFZCHIRZ
+    GZDEFZDHIRZGZGZGZACJSZCDKSZKSZBDJSZVIKSZLZVHVKLZADKSZBCKSZLVGVHEFZVKEFZVIEF
+    ZVIHIRZGZVMVNUIUQVBVQURVEUQUTVAVQACMNOZURVEVRUQVBURVCVDVRBDMNPZVFWAUSVFVSVT
+    UTVCVSVAVDCDUJOCDUAUBUCVHVKVIUDUEVGVJVOVLVPVGVHCKSZDKSVJVOVGVHCDWBUSUTVAVEU
+    FZUSVBVCVDUGZQVGWDADKUQVBWDALZURVEUQUTVAWGACTNOUHUKVGVLVKDCKSZKSVKDKSZCKSVP
+    VGVIWHVKKVGCDWEWFULUMVGVKDCWCWFWEQVGWIBCKURVEWIBLZUQVBURVCVDWJBDTNPUHUNUOUP
+    $.
 
   $( The reciprocal of a ratio.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
   recdivap $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
@@ -70799,10 +70797,10 @@ $)
   $( Closure law for division of reals.  (Contributed by Jim Kingdon,
      26-Feb-2020.) $)
   redivclap $p |- ( ( A e. RR /\ B e. RR /\ B # 0 ) -> ( A / B ) e. RR ) $=
-    ( cr wcel cc0 cap wbr w3a cdiv co c1 cmul simp1 recnd simp2 simp3
-    cc wceq divrecap syl3anc rerecclap 3adant1 remulcld eqeltrd ) ACD
-    ZBCDZBEFGZHZABIJZAKBIJZLJZCUHAQDBQDUGUIUKRUHAUEUFUGMZNUHBUEUFUGON
-    UEUFUGPABSTUHAUJULUFUGUJCDUEBUAUBUCUD $.
+    ( cr wcel cc0 cap wbr cdiv co c1 cmul wceq simp1 recnd simp2 simp3 divrecap
+    w3a cc syl3anc rerecclap 3adant1 remulcld eqeltrd ) ACDZBCDZBEFGZRZABHIZAJB
+    HIZKIZCUHASDBSDUGUIUKLUHAUEUFUGMZNUHBUEUFUGONUEUFUGPABQTUHAUJULUFUGUJCDUEBU
+    AUBUCUD $.
 
   $( A number equal to its negative is zero.  (Contributed by NM,
      12-Jul-2005.)  (Revised by Mario Carneiro, 27-May-2016.) $)
