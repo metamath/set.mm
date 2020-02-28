@@ -70994,6 +70994,21 @@ $)
     wbr mpand 3impia ) ACDZBCDZAEFGZBHRZABHRZUAUBIAUCHRZUDUEUAUFUBAJKUAUAUCCDZI
     UBUFUDIUELZUAUGAMNUAUGUBUHAUCBOPQST $.
 
+  $( The reciprocal of a positive number is positive.  Exercise 4 of [Apostol]
+     p. 21.  (Contributed by NM, 25-Aug-1999.)  (Revised by Mario Carneiro,
+     27-May-2016.) $)
+  recgt0 $p |- ( ( A e. RR /\ 0 < A ) -> 0 < ( 1 / A ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 co cap wn 0re cneg cmul adantr syl2anc lt0neg1d
+    mpbid cc wb cdiv cle 0lt1 1re ltnsymi ax-mp simpll rerecclap renegcld simpr
+    gt0ap0 simpl simplr mulgt0d recnd recclap mulneg1d wceq recidap2 eqtrd 1red
+    negeqd breqtrd mpbird ex mtoi lenlt sylancr recap0 0cn apsym sylancl ltleap
+    mpbir2and ) ABCZDAEFZGZDHAUAIZEFZDVRUBFZDVRJFZVQVTVRDEFZKZVQWBHDEFZDHEFWDKU
+    CDHLUDUEUFVQWBWDVQWBGZWDDHMZEFWEDVRMZANIZWFEWEWGAWEVRWEVOADJFZVRBCZVOVPWBUG
+    ZVQWIWBAUKZOZAUHZPUIWKWEWBDWGEFVQWBUJWEVRVQWJWBVQVOWIWJVOVPULZWLWNPZOQRVOVP
+    WBUMUNWEWHVRANIZMWFWEVRAWEASCZWIVRSCZVQWRWBVQAWOUOZOZWMAUPZPXAUQWEWQHWEWRWI
+    WQHURXAWMAUSPVBUTVCWEHWEVAQVDVEVFVQDBCZWJVTWCTLWPDVRVGVHVDVQVRDJFZWAVQWRWIX
+    DWTWLAVIPVQWSDSCXDWATVQWRWIWSWTWLXBPVJVRDVKVLRVQXCWJVSVTWAGTLWPDVRVMVHVN $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
