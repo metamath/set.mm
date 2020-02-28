@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Feb-2020
+$( iset.mm - Version of 28-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -70050,6 +70050,15 @@ $)
   negap0 $p |- ( A e. CC -> ( A # 0 <-> -u A # 0 ) ) $=
     ( cc wcel cc0 cap wbr cneg wb 0cn apneg mpan2 neg0 breq2i syl6bb ) ABCZADEF
     ZAGZDGZEFZQDEFODBCPSHIADJKRDQELMN $.
+
+  $( Less than in terms of non-strict order and apartness.  (Contributed by Jim
+     Kingdon, 28-Feb-2020.) $)
+  ltleap $p |- ( ( A e. RR /\ B e. RR ) ->
+      ( A < B <-> ( A <_ B /\ A # B ) ) ) $=
+    ( cr wcel wa clt wbr cle cap ltle wo orc reaplt syl5ibr wn simprl wb adantr
+    jcad mpbid lenlt simprr ecased ex impbid ) ACDBCDEZABFGZABHGZABIGZEZUFUGUHU
+    IABJUGUIUFUGBAFGZKZUGUKLABMZNSUFUJUGUFUJEZUGUKUNUHUKOZUFUHUIPUFUHUOQUJABUAR
+    TUNUIULUFUHUIUBUFUIULQUJUMRTUCUDUE $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
