@@ -71191,16 +71191,16 @@ $)
      p. 21.  (Contributed by NM, 25-Aug-1999.)  (Revised by Mario Carneiro,
      27-May-2016.) $)
   recgt0 $p |- ( ( A e. RR /\ 0 < A ) -> 0 < ( 1 / A ) ) $=
-    ( cr wcel cc0 clt wbr wa c1 co cap wn 0re cneg cmul adantr syl2anc lt0neg1d
-    mpbid cc wb cdiv cle 0lt1 1re ltnsymi ax-mp simpll rerecclap renegcld simpr
-    gt0ap0 simpl simplr mulgt0d recnd recclap mulneg1d wceq recidap2 eqtrd 1red
-    negeqd breqtrd mpbird ex mtoi lenlt sylancr recap0 0cn apsym sylancl ltleap
-    mpbir2and ) ABCZDAEFZGZDHAUAIZEFZDVRUBFZDVRJFZVQVTVRDEFZKZVQWBHDEFZDHEFWDKU
-    CDHLUDUEUFVQWBWDVQWBGZWDDHMZEFWEDVRMZANIZWFEWEWGAWEVRWEVOADJFZVRBCZVOVPWBUG
-    ZVQWIWBAUKZOZAUHZPUIWKWEWBDWGEFVQWBUJWEVRVQWJWBVQVOWIWJVOVPULZWLWNPZOQRVOVP
-    WBUMUNWEWHVRANIZMWFWEVRAWEASCZWIVRSCZVQWRWBVQAWOUOZOZWMAUPZPXAUQWEWQHWEWRWI
-    WQHURXAWMAUSPVBUTVCWEHWEVAQVDVEVFVQDBCZWJVTWCTLWPDVRVGVHVDVQVRDJFZWAVQWRWIX
-    DWTWLAVIPVQWSDSCXDWATVQWRWIWSWTWLXBPVJVRDVKVLRVQXCWJVSVTWAGTLWPDVRVMVHVN $.
+    ( cr wcel cc0 clt wbr wa c1 co cap 0re cneg cmul adantr rerecclapd lt0neg1d
+    wn cc syl2anc wb cdiv cle 0lt1 1re ax-mp simpll gt0ap0 renegcld simpr simpl
+    ltnsymi mpbid simplr mulgt0d recnd recclap mulneg1d recidap2 negeqd breqtrd
+    wceq eqtrd 1red mpbird ex mtoi lenlt sylancr recap0 apsym sylancl mpbir2and
+    0cn ltleap ) ABCZDAEFZGZDHAUAIZEFZDVRUBFZDVRJFZVQVTVRDEFZQZVQWBHDEFZDHEFWDQ
+    UCDHKUDUKUEVQWBWDVQWBGZWDDHLZEFWEDVRLZAMIZWFEWEWGAWEVRWEAVOVPWBUFZVQADJFZWB
+    AUGZNZOUHWIWEWBDWGEFVQWBUIWEVRVQVRBCZWBVQAVOVPUJZWKOZNPULVOVPWBUMUNWEWHVRAM
+    IZLWFWEVRAWEARCZWJVRRCZVQWQWBVQAWNUOZNZWLAUPZSWTUQWEWPHWEWQWJWPHVAWTWLAURSU
+    SVBUTWEHWEVCPVDVEVFVQDBCZWMVTWCTKWODVRVGVHVDVQVRDJFZWAVQWQWJXCWSWKAVISVQWRD
+    RCXCWATVQWQWJWRWSWKXASVMVRDVJVKULVQXBWMVSVTWAGTKWODVRVNVHVL $.
 
   $( Infer that a multiplicand is positive from a positive multiplier and
      positive product.  See ~ prodgt0 for the same theorem with ` 0 < A `
