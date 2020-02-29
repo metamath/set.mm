@@ -71028,6 +71028,32 @@ $)
         EFABCDOP $.
     $}
 
+    divmulz.3 $e |- C e. CC $.
+    $( An associative law for division.  (Contributed by Jim Kingdon,
+       28-Feb-2020.) $)
+    divassapzi $p |- ( C # 0 -> ( ( A x. B ) / C ) = ( A x. ( B / C ) ) ) $=
+      ( cc wcel cc0 cap wbr cmul co cdiv wceq wa divassap mp3an12 mpan ) CGHZCI
+      JKZABLMCNMABCNMLMOZFAGHBGHTUAPUBDEABCQRS $.
+
+    $( Relationship between division and multiplication.  (Contributed by Jim
+       Kingdon, 28-Feb-2020.) $)
+    divmulapzi $p |- ( B # 0 -> ( ( A / B ) = C <-> ( B x. C ) = A ) ) $=
+      ( cc wcel cc0 cap wbr cdiv co wceq cmul wb wa divmulap mp3an12 mpan ) BGH
+      ZBIJKZABLMCNBCOMANPZEAGHCGHUAUBQUCDFACBRST $.
+
+    $( Distribution of division over addition.  (Contributed by Jim Kingdon,
+       28-Feb-2020.) $)
+    divdirapzi $p |- ( C # 0 ->
+                    ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) ) $=
+      ( cc wcel cc0 cap wbr caddc co cdiv wceq wa divdirap mp3an12 mpan ) CGHZC
+      IJKZABLMCNMACNMBCNMLMOZFAGHBGHTUAPUBDEABCQRS $.
+
+    $( Swap denominators in a division.  (Contributed by Jim Kingdon,
+       28-Feb-2020.) $)
+    divdiv23apzi $p |- ( ( B # 0 /\ C # 0 ) ->
+                ( ( A / B ) / C ) = ( ( A / C ) / B ) ) $=
+      ( cc0 cap wbr cc wcel cdiv co wceq wa divdiv32ap mp3an1 mpanl1 mpanr1 ) B
+      GHIZCJKZCGHIZABLMCLMACLMBLMNZFBJKZTUAUBOZUCEAJKUDTOUEUCDABCPQRS $.
   $}
 
 $(
