@@ -71202,6 +71202,34 @@ $)
     WQHURXAWMAUSPVBUTVCWEHWEVAQVDVEVFVQDBCZWJVTWCTLWPDVRVGVHVDVQVRDJFZWAVQWRWIX
     DWTWLAVIPVQWSDSCXDWATVQWRWIWSWTWLXBPVJVRDVKVLRVQXCWJVSVTWAGTLWPDVRVMVHVN $.
 
+  $( Infer that a multiplicand is positive from a positive multiplier and
+     positive product.  See ~ prodgt0 for the same theorem with ` 0 < A `
+     replaced by the weaker condition ` 0 <_ A ` .  (Contributed by Jim
+     Kingdon, 29-Feb-2020.) $)
+  prodgt0gt0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 < A /\ 0 < ( A x. B ) ) )
+                 -> 0 < B ) $=
+    ( cr wcel wa cc0 clt wbr cmul co cdiv simpll simplr remulcld simprl gt0ap0d
+    c1 rerecclapd simprr recnd recgt0 mulgt0d divrecapd simpr adantr divcanap3d
+    ad2ant2r cc eqtr3d breqtrd ) ACDZBCDZEZFAGHZFABIJZGHZEZEZFUOQAKJZIJZBGURUOU
+    SURABUKULUQLZUKULUQMNZURAVAURAVAUMUNUPOPZRUMUNUPSUKUNFUSGHULUPAUAUGUBURUOAK
+    JUTBURUOAURUOVBTURAVATZVCUCURBAUMBUHDUQUMBUKULUDTUEVDVCUFUIUJ $.
+
+  $( Infer that a multiplicand is positive from a nonnegative multiplier and
+     positive product.  (Contributed by NM, 24-Apr-2005.)  (Revised by Mario
+     Carneiro, 27-May-2016.) $)
+  prodgt0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ 0 < ( A x. B ) ) )
+                 -> 0 < B ) $=
+    ( cr wcel wa cc0 cle wbr cmul co clt wn cneg renegcld lt0neg1d recnd negcld
+    cap mpbird 0red simpllr simplll simplr biimpa simprr simpll mulcomd breqtrd
+    mul2negd breqtrrd adantr prodgt0gt0 syl22anc lenltd mpbid pm2.65da remulcld
+    simplrl gt0ap0d mulap0bbd cc wb 0cnd apsym syl2anc ltleap mpbir2and ) ACDZB
+    CDZEZFAGHZFABIJZKHZEZEZFBKHZFBGHZFBRHZVOVQBFKHZLVOVSAFKHZVOVSEZVTFAMZKHZWAB
+    MZCDWBCDFWDKHZFWDWBIJZKHZWCWABVHVIVNVSUANWAAVHVIVNVSUBZNVOVSWEVOBVHVIVNUCZO
+    UDVOWGVSVOFWBWDIJZWFKVOFVLWJKVJVKVMUEZVOABVOAVHVIVNUFZPZVOBWIPZUIUJVOWBWDVO
+    AWMQVOBWNQUGUHUKWDWBULUMWAAWHOSWAVKVTLVJVKVMVSURWAFAWATWHUNUOUPVOFBVOTZWIUN
+    SVOBFRHZVRVOABWMWNVOVLVOABWLWIUQWKUSUTVOBVADFVADWPVRVBWNVOVCBFVDVEUOVOFCDVI
+    VPVQVREVBWOWIFBVFVEVG $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
