@@ -69361,7 +69361,11 @@ $)
   ${
     $d x y $.
     $( Define real apartness.  Definition in Section 11.2.1 of [HoTT], p.
-       (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+       (varies).  Although ` #RR ` is an apartness relation on the reals (see
+       ~ df-ap for more discussion of apartness relations), for our purposes it
+       is just a stepping stone to defining ` # ` which is an apartness
+       relation on complex numbers.  On the reals, ` #RR ` and ` # ` agree
+       ( ~ apreap ).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
     df-reap $a |- #RR = { <. x , y >. | ( ( x e. RR /\ y e. RR ) /\
       ( x < y \/ y < x ) ) } $.
   $}
@@ -69440,6 +69444,20 @@ $)
   ${
     $d r s t u x y $.
     $( Define complex apartness.  Definition 6.1 of [Geuvers], p. 17.
+
+       Two numbers are considered apart if it is possible to separate them.
+       One common usage is that we can divide by a number if it is apart from
+       zero (see for example ~ recclap which says that a number apart from zero
+       has a reciprocal).
+
+       The defining characteristics of an apartness are irreflexivity
+       ( ~ apirr ), symmetry ( ~ apsym ), and cotransitivity ( ~ apcotr ).
+       Apartness implies negated equality, as seen at ~ apne , and the converse
+       would also follow if we assumed excluded middle.
+
+       In addition, apartness of complex numbers is tight, which means that two
+       numbers which are not apart are equal ( ~ apti ).
+
        (Contributed by Jim Kingdon, 26-Jan-2020.) $)
     df-ap $a |- # = { <. x , y >. | E. r e. RR E. s e. RR E. t e. RR E. u e. RR
       ( ( x = ( r + ( _i x. s ) ) /\ y = ( t + ( _i x. u ) ) ) /\
