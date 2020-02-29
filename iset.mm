@@ -71073,6 +71073,27 @@ $)
 
   $}
 
+  ${
+    $d x y B $.
+    redivclapd.1 $e |- ( ph -> A e. RR ) $.
+    ${
+      rerecclapd.2 $e |- ( ph -> A # 0 ) $.
+      $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      rerecclapd $p |- ( ph -> ( 1 / A ) e. RR ) $=
+        ( cr wcel cc0 cap wbr c1 cdiv co rerecclap syl2anc ) ABEFBGHIJBKLEFCDBM
+        N $.
+    $}
+
+    redivclapd.2 $e |- ( ph -> B e. RR ) $.
+    redivclapd.3 $e |- ( ph -> B # 0 ) $.
+    $( Closure law for division of reals.  (Contributed by Jim Kingdon,
+       29-Feb-2020.) $)
+    redivclapd $p |- ( ph -> ( A / B ) e. RR ) $=
+      ( cr wcel cc0 cap wbr cdiv co redivclap syl3anc ) ABGHCGHCIJKBCLMGHDEFBCN
+      O $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Ordering on reals (cont.)
