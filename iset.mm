@@ -71074,6 +71074,55 @@ $)
   $}
 
   ${
+    div1d.1 $e |- ( ph -> A e. CC ) $.
+    divcld.2 $e |- ( ph -> B e. CC ) $.
+    ${
+      divclapd.3 $e |- ( ph -> B # 0 ) $.
+      $( Closure law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divclapd $p |- ( ph -> ( A / B ) e. CC ) $=
+        ( cc wcel cc0 cap wbr cdiv co divclap syl3anc ) ABGHCGHCIJKBCLMGHDEFBCN
+        O $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divcanap1d $p |- ( ph -> ( ( A / B ) x. B ) = A ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap1 syl3anc ) ABGHCGHCIJK
+        BCLMCNMBODEFBCPQ $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divcanap2d $p |- ( ph -> ( B x. ( A / B ) ) = A ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap2 syl3anc ) ABGHCGHCIJK
+        CBCLMNMBODEFBCPQ $.
+
+      $( Relationship between division and reciprocal.  Theorem I.9 of
+         [Apostol] p. 18.  (Contributed by Jim Kingdon, 29-Feb-2020.) $)
+      divrecapd $p |- ( ph -> ( A / B ) = ( A x. ( 1 / B ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co c1 cmul wceq divrecap syl3anc ) ABGHCGHCI
+        JKBCLMBNCLMOMPDEFBCQR $.
+
+      $( Relationship between division and reciprocal.  (Contributed by Jim
+         Kingdon, 29-Feb-2020.) $)
+      divrecap2d $p |- ( ph -> ( A / B ) = ( ( 1 / B ) x. A ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co c1 cmul wceq divrecap2 syl3anc ) ABGHCGHC
+        IJKBCLMNCLMBOMPDEFBCQR $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divcanap3d $p |- ( ph -> ( ( B x. A ) / B ) = A ) $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap3 syl3anc ) ABGHCGHCIJK
+        CBLMCNMBODEFBCPQ $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divcanap4d $p |- ( ph -> ( ( A x. B ) / B ) = A ) $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap4 syl3anc ) ABGHCGHCIJK
+        BCLMCNMBODEFBCPQ $.
+    $}
+  $}
+
+  ${
     $d x y B $.
     redivclapd.1 $e |- ( ph -> A e. RR ) $.
     ${
