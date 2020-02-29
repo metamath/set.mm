@@ -71012,6 +71012,22 @@ $)
         LBMLANCDEABOP $.
     $}
 
+    ${
+      divap0i.3 $e |- A # 0 $.
+      divap0.i4 $e |- B # 0 $.
+      $( The ratio of numbers apart from zero is apart from zero.  (Contributed
+         by Jim Kingdon, 28-Feb-2020.) $)
+      divap0i $p |- ( A / B ) # 0 $=
+        ( cc wcel cc0 cap wbr cdiv co divap0 mp4an ) AGHAIJKBGHBIJKABLMIJKCEDFA
+        BNO $.
+
+      $( Reciprocal is one-to-one.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      rec11apii $p |- ( ( 1 / A ) = ( 1 / B ) <-> A = B ) $=
+        ( cc0 cap wbr c1 cdiv co wceq wb rec11api mp2an ) AGHIBGHIJAKLJBKLMABMN
+        EFABCDOP $.
+    $}
+
   $}
 
 $(
