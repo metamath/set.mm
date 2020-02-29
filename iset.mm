@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Feb-2020
+$( iset.mm - Version of 29-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -71054,6 +71054,23 @@ $)
                 ( ( A / B ) / C ) = ( ( A / C ) / B ) ) $=
       ( cc0 cap wbr cc wcel cdiv co wceq wa divdiv32ap mp3an1 mpanl1 mpanr1 ) B
       GHIZCJKZCGHIZABLMCLMACLMBLMNZFBJKZTUAUBOZUCEAJKUDTOUEUCDABCPQRS $.
+
+    ${
+      divmulapi.4 $e |- B # 0 $.
+      $( Relationship between division and multiplication.  (Contributed by Jim
+         Kingdon, 29-Feb-2020.) $)
+      divmulapi $p |- ( ( A / B ) = C <-> ( B x. C ) = A ) $=
+        ( cc0 cap wbr cdiv co wceq cmul wb divmulapzi ax-mp ) BHIJABKLCMBCNLAMO
+        GABCDEFPQ $.
+
+      divdiv32api.5 $e |- C # 0 $.
+      $( Swap denominators in a division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divdiv32api $p |- ( ( A / B ) / C ) = ( ( A / C ) / B ) $=
+        ( cc0 cap wbr cdiv co wceq divdiv23apzi mp2an ) BIJKCIJKABLMCLMACLMBLMN
+        GHABCDEFOP $.
+    $}
+
   $}
 
 $(
