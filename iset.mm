@@ -71230,6 +71230,15 @@ $)
     SVOBFRHZVRVOABWMWNVOVLVOABWLWIUQWKUSUTVOBVADFVADWPVRVBWNVOVCBFVDVEUOVOFCDVI
     VPVQVREVBWOWIFBVFVEVG $.
 
+  $( Infer that a multiplier is positive from a nonnegative multiplicand and
+     positive product.  (Contributed by NM, 24-Apr-2005.) $)
+  prodgt02 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ B /\ 0 < ( A x. B ) ) )
+                 -> 0 < A ) $=
+    ( cr wcel wa cc0 cle wbr cmul co clt cc wceq mulcom syl2an breq2d biimpd wi
+    recn prodgt0 ex ancoms sylan2d imp ) ACDZBCDZEZFBGHZFABIJZKHZEFAKHZUGUJFBAI
+    JZKHZUHUKUGUJUMUGUIULFKUEALDBLDUIULMUFASBSABNOPQUFUEUHUMEZUKRUFUEEUNUKBATUA
+    UBUCUD $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
