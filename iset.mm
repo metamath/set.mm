@@ -71260,6 +71260,15 @@ $)
     JZKHZUHUKUGUJUMUGUIULFKUEALDBLDUIULMUFASBSABNOPQUFUEUHUMEZUKRUFUEEUNUKBATUA
     UBUCUD $.
 
+  $( Multiplication of both sides of 'less than' by a positive number.  Theorem
+     I.19 of [Apostol] p. 20.  (Contributed by NM, 13-Feb-2005.) $)
+  ltmul2 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+                -> ( A < B <-> ( C x. A ) < ( C x. B ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cmul co ltmul1 wb cc recn mulcom sylan 3adant2
+    wceq 3adant1 breq12d syl3an3 3adant3r bitrd ) ADEZBDEZCDEZFCGHZIJABGHACKLZB
+    CKLZGHZCAKLZCBKLZGHZABCMUFUGUHULUONZUIUHUFUGCOEZUPCPUFUGUQJUJUMUKUNGUFUQUJU
+    MTZUGUFAOEUQURAPACQRSUGUQUKUNTZUFUGBOEUQUSBPBCQRUAUBUCUDUE $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
