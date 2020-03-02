@@ -71403,6 +71403,24 @@ $)
     AUBUJUKVAUQNUNABUCUDUOUSURUJUNUSDEZUKUJULUMVBUJULUMCFUEHZVBULUMVCUJCUFZPACQ
     RTUGUKUNURDEZUJUKULUMVEUKULUMVCVEULUMVCUKVDPBCQRTPUHUI $.
 
+  $( Division of a positive number by a positive number.  (Contributed by NM,
+     28-Sep-2005.) $)
+  gt0div $p |- ( ( A e. RR /\ B e. RR /\ 0 < B ) ->
+               ( 0 < A <-> 0 < ( A / B ) ) ) $=
+    ( cr wcel cc0 clt wbr w3a cdiv co wb wa 0re ltdiv1 mp3an1 3impb wceq gt0ap0
+    cap cc recn div0ap sylan syldan breq1d 3adant1 bitrd ) ACDZBCDZEBFGZHEAFGZE
+    BIJZABIJZFGZEUMFGZUHUIUJUKUNKZECDUHUIUJLZUPMEABNOPUIUJUNUOKUHUQULEUMFUIUJBE
+    SGZULEQZBRUIBTDURUSBUABUBUCUDUEUFUG $.
+
+  $( Division of a nonnegative number by a positive number.  (Contributed by
+     NM, 28-Sep-2005.) $)
+  ge0div $p |- ( ( A e. RR /\ B e. RR /\ 0 < B ) ->
+               ( 0 <_ A <-> 0 <_ ( A / B ) ) ) $=
+    ( cr wcel cc0 clt wbr w3a cle cdiv co wb 0re lediv1 mp3an1 3impb cap gt0ap0
+    wa wceq cc recn div0ap sylan syldan breq1d 3adant1 bitrd ) ACDZBCDZEBFGZHEA
+    IGZEBJKZABJKZIGZEUNIGZUIUJUKULUOLZECDUIUJUKSZUQMEABNOPUJUKUOUPLUIURUMEUNIUJ
+    UKBEQGZUMETZBRUJBUADUSUTBUBBUCUDUEUFUGUH $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
