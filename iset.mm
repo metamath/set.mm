@@ -71288,6 +71288,15 @@ $)
     IULUNMZUHUIULUNNZOUJUKUHUIUNPZUOFUSGHUNUMUNUAUOBAUTVAQUBUJUKUHUIUNUCUDUOBAC
     UOBUTSUOAVASUOCVBSUEUFUOUPUQUOBCUTVBTUOACVAVBTQUG $.
 
+  $( Multiplication of both sides of 'less than or equal to' by a nonnegative
+     number.  (Contributed by Paul Chapman, 7-Sep-2007.) $)
+  lemul2a $p |- ( ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 <_ C ) ) /\
+                      A <_ B ) -> ( C x. A ) <_ ( C x. B ) ) $=
+    ( cr wcel cc0 cle wbr wa cmul co lemul1a wceq cc recn mulcom syl2an adantrr
+    w3a adantr 3adant2 3adant1 3brtr3d ) ADEZBDEZCDEZFCGHZIZSZABGHZIACJKZBCJKZC
+    AJKZCBJKZGABCLUIUKUMMZUJUDUHUOUEUDUFUOUGUDANECNEZUOUFAOCOZACPQRUATUIULUNMZU
+    JUEUHURUDUEUFURUGUEBNEUPURUFBOUQBCPQRUBTUC $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
