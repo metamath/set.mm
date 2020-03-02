@@ -71436,6 +71436,16 @@ $)
     wi ) ACDZEAFGZBCDZEBHGZEABIJFGZSUATUBUCRSUAUBTUCSUAUBTUCRSUAUBKTUCABLMNOPQ
     $.
 
+  $( 'Less than' relationship between division and multiplication.
+     (Contributed by NM, 12-Oct-1999.)  (Proof shortened by Mario Carneiro,
+     27-May-2016.) $)
+  ltmuldiv $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+                -> ( ( A x. C ) < B <-> A < ( B / C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cmul co cdiv wb simp1 simp3l remulcld syld3an1
+    ltdiv1 recnd simp3r gt0ap0d divcanap4d breq1d bitrd ) ADEZBDEZCDEZFCGHZIZJZ
+    ACKLZBGHZULCMLZBCMLZGHZAUOGHULDEUGUFUJUMUPNUKACUFUGUJOZUFUGUHUIPZQULBCSRUKU
+    NAUOGUKACUKAUQTUKCURTUKCURUFUGUHUIUAUBUCUDUE $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
