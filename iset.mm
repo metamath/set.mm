@@ -71337,6 +71337,34 @@ $)
     UJUOUSMUOUKUJUSUKULUNMNVAUNVBUJUMUNUSOUOURVBUJUQUKULUNURVBUKUNULURVBPUKUNUL
     URVBGEFUKUNULURJVBPQGCDRSTUAUBUCUDUEUPUSUFABCDUGUHUI $.
 
+  $( The product of two numbers greater than 1 is greater than 1.  (Contributed
+     by NM, 13-Feb-2005.) $)
+  mulgt1 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 1 < A /\ 1 < B ) ) ->
+                1 < ( A x. B ) ) $=
+    ( cr wcel wa c1 clt wbr cmul co wi a1i cc0 0lt1 1re lttr adantr mp3an1 syld
+    simpl 0re mp3an12 mpani ltmul2 biimpd exp32 impcom impd wceq ax-1rid breq1d
+    w3a sylibd jcad remulcl syldan imp ) ACDZBCDZEZFAGHZFBGHZEZFABIJZGHZUTVCVAA
+    VDGHZEZVEUTVCVAVFVCVAKUTVAVBTLUTVCAFIJZVDGHZVFUTVAVBVIUTVAMAGHZVBVIKZURVAVJ
+    KUSURMFGHZVAVJNMCDFCDZURVLVAEVJKUAOMFAPUBUCQUSURVJVKKUSURVJVKVMUSURVJEZVKOV
+    MUSVNULVBVIFBAUDUERUFUGSUHUTVHAVDGURVHAUIUSAUJQUKUMUNURUSVDCDZVGVEKZABUOVMU
+    RVOVPOFAVDPRUPSUQ $.
+
+  $( Multiplication by a number greater than 1.  (Contributed by NM,
+     24-Dec-2005.) $)
+  ltmulgt11 $p |- ( ( A e. RR /\ B e. RR /\ 0 < A ) ->
+                ( 1 < B <-> A < ( A x. B ) ) ) $=
+    ( cr wcel cc0 clt wbr w3a c1 cmul co wb 1re ltmul2 mp3an1 3impb 3com12 wceq
+    wa ax-1rid 3ad2ant1 breq1d bitrd ) ACDZBCDZEAFGZHZIBFGZAIJKZABJKZFGZAUJFGUE
+    UDUFUHUKLZUEUDUFULICDUEUDUFSULMIBANOPQUGUIAUJFUDUEUIARUFATUAUBUC $.
+
+  $( Multiplication by a number greater than 1.  (Contributed by NM,
+     24-Dec-2005.) $)
+  ltmulgt12 $p |- ( ( A e. RR /\ B e. RR /\ 0 < A ) ->
+                ( 1 < B <-> A < ( B x. A ) ) ) $=
+    ( cr wcel cc0 clt wbr w3a c1 cmul ltmulgt11 wceq recn mulcom syl2an 3adant3
+    co cc breq2d bitrd ) ACDZBCDZEAFGZHZIBFGAABJQZFGABAJQZFGABKUDUEUFAFUAUBUEUF
+    LZUCUAARDBRDUGUBAMBMABNOPST $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
