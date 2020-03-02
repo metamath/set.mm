@@ -71313,6 +71313,30 @@ $)
     TVQEFZWCEFZVREFZWJVEVHWKVFVIACQOVFVHWLVEVIBCQUSVFVIWMVEVHBDQMVQWCVRPUTVBVCV
     D $.
 
+  $( Comparison of product of two nonnegative numbers.  (Contributed by NM,
+     22-Feb-2008.) $)
+  lemul12b $p |- ( ( ( ( A e. RR /\ 0 <_ A ) /\ B e. RR ) /\
+       ( C e. RR /\ ( D e. RR /\ 0 <_ D ) ) ) -> ( ( A <_ B /\ C <_ D ) ->
+                 ( A x. C ) <_ ( B x. D ) ) ) $=
+    ( cr wcel cc0 cle wbr wa cmul co wi w3a lemul2a ex adantlr remulcl ad2ant2r
+    3comr 3expb adantrrr lemul1a 3expa adantllr adantrl anim12d ancomsd adantrr
+    ad2ant2rl ad2ant2l letr syl3anc syld ) AEFZGAHIZJZBEFZJZCEFZDEFZGDHIZJZJZJZ
+    ABHIZCDHIZJACKLZADKLZHIZVIBDKLZHIZJZVHVKHIZVEVGVFVMVEVGVJVFVLUQVDVGVJMZURUQ
+    UTVAVOVBUQUTVAVOUTVAUQVOUTVAUQNVGVJCDAOPTUAUBQUSVCVFVLMZUTUOURVCVPUPUOURVCV
+    PUOURVCNVFVLABDUCPUDUEUFUGUHVEVHEFZVIEFZVKEFZVMVNMUQUTVQURVCUOUTVQUPACRQSUQ
+    VCVRURUTUOVAVRUPVBADRSUJURVCVSUQUTURVAVSVBBDRUIUKVHVIVKULUMUN $.
+
+  $( Comparison of product of two nonnegative numbers.  (Contributed by NM,
+     22-Feb-2008.) $)
+  lemul12a $p |- ( ( ( ( A e. RR /\ 0 <_ A ) /\ B e. RR ) /\
+       ( ( C e. RR /\ 0 <_ C ) /\ D e. RR ) ) -> ( ( A <_ B /\ C <_ D ) ->
+                 ( A x. C ) <_ ( B x. D ) ) ) $=
+    ( cr wcel cc0 cle wbr wa cmul co simpll ad2antlr simplrr wi 0re letr mp3an1
+    exp4b com23 imp41 ad2ant2l jca jca32 simpr lemul12b sylc ex ) AEFGAHIJBEFJZ
+    CEFZGCHIZJZDEFZJZJZABHIZCDHIZJZACKLBDKLHIZUPUSJZUJUKUNGDHIZJZJJUSUTVAUJUKVC
+    UJUOUSMUOUKUJUSUKULUNMNVAUNVBUJUMUNUSOUOURVBUJUQUKULUNURVBUKUNULURVBPUKUNUL
+    URVBGEFUKUNULURJVBPQGCDRSTUAUBUCUDUEUPUSUFABCDUGUHUI $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
