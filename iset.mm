@@ -71269,6 +71269,15 @@ $)
     CKLZGHZCAKLZCBKLZGHZABCMUFUGUHULUONZUIUHUFUGCOEZUPCPUFUGUQJUJUMUKUNGUFUQUJU
     MTZUGUFAOEUQURAPACQRSUGUQUKUNTZUFUGBOEUQUSBPBCQRUAUBUCUDUE $.
 
+  $( Multiplication of both sides of 'less than or equal to' by a positive
+     number.  (Contributed by NM, 16-Mar-2005.) $)
+  lemul2 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+               -> ( A <_ B <-> ( C x. A ) <_ ( C x. B ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cle cmul co lemul1 wb wceq recn mulcom syl2an
+    cc 3adant2 3adant1 breq12d 3adant3r bitrd ) ADEZBDEZCDEZFCGHZIJABKHACLMZBCL
+    MZKHZCALMZCBLMZKHZABCNUFUGUHULUOOUIUFUGUHJUJUMUKUNKUFUHUJUMPZUGUFATECTEZUPU
+    HAQCQZACRSUAUGUHUKUNPZUFUGBTEUQUSUHBQURBCRSUBUCUDUE $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
