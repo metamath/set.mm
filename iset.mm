@@ -71421,6 +71421,21 @@ $)
     IGZEBJKZABJKZIGZEUNIGZUIUJUKULUOLZECDUIUJUKSZUQMEABNOPUJUKUOUPLUIURUMEUNIUJ
     UKBEQGZUMETZBRUJBUADUSUTBUBBUCUDUEUFUGUH $.
 
+  $( The ratio of two positive numbers is positive.  (Contributed by NM,
+     12-Oct-1999.) $)
+  divgt0 $p |- ( ( ( A e. RR /\ 0 < A ) /\
+             ( B e. RR /\ 0 < B ) ) -> 0 < ( A / B ) ) $=
+    ( cr wcel cc0 clt wbr cdiv co wi w3a gt0div biimpd 3exp com34 com23 imp43 )
+    ACDZEAFGZBCDZEBFGZEABHIFGZRTSUAUBJRTUASUBRTUASUBJRTUAKSUBABLMNOPQ $.
+
+  $( The ratio of nonnegative and positive numbers is nonnegative.
+     (Contributed by NM, 27-Sep-1999.) $)
+  divge0 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\
+             ( B e. RR /\ 0 < B ) ) -> 0 <_ ( A / B ) ) $=
+    ( cr wcel cc0 cle wbr clt cdiv co w3a ge0div biimpd 3exp com34 com23 imp43
+    wi ) ACDZEAFGZBCDZEBHGZEABIJFGZSUATUBUCRSUAUBTUCSUAUBTUCRSUAUBKTUCABLMNOPQ
+    $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
