@@ -71297,6 +71297,22 @@ $)
     AJKZCBJKZGABCLUIUKUMMZUJUDUHUOUEUDUFUOUGUDANECNEZUOUFAOCOZACPQRUATUIULUNMZU
     JUEUHURUDUEUFURUGUEBNEUPURUFBOUQBCPQRUBTUC $.
 
+  $( Comparison of product of two positive numbers.  (Contributed by NM,
+     30-Dec-2005.) $)
+  ltmul12a $p |- ( ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ A < B ) ) /\
+               ( ( C e. RR /\ D e. RR ) /\ ( 0 <_ C /\ C < D ) ) ) ->
+                 ( A x. C ) < ( B x. D ) ) $=
+    ( cr wcel cc0 cle wbr clt cmul simpllr ad2ant2l imp ad2ant2r lelttr remulcl
+    wa co wi simplll simpll simprl jca ltle adantrl lemul1a syl31anc wb simplrl
+    simplrr 0re mp3an1 adantlr ltmul2 syl112anc biimpa anasss ad2ant2lr syl3anc
+    adantrrl adantr mp2and an4s ) AEFZBEFZRZCEFZDEFZRZGAHIZABJIZRZGCHIZCDJIZRZA
+    CKSZBDKSZJIZVGVJRZVMVPRZRZVQBCKSZHIZWCVRJIZVSWBVEVFVHVNRZABHIZWDVEVFVJWAUAV
+    EVFVJWALVJVPWFVGVMVJVPRVHVNVHVIVPUBVJVNVOUCUDMVGVMWGVJVPVGVLWGVKVGVLWGABUEN
+    UFOABCUGUHVTVMVOWEVNVTVMVOWEVTVMRZVOWEWHVHVIVFGBJIZVOWEUIVGVHVIVMUJVGVHVIVM
+    UKVEVFVJVMLVGVMWIVJVGVMWIGEFVEVFVMWITULGABPUMNUNCDBUOUPUQURVAVTWDWERVSTZWAV
+    TVQEFZWCEFZVREFZWJVEVHWKVFVIACQOVFVHWLVEVIBCQUSVFVIWMVEVHBDQMVQWCVRPUTVBVCV
+    D $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
