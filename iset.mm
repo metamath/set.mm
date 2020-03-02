@@ -62982,8 +62982,7 @@ $)
       VGVBVEVKMVHVIVJCAUSUIUEVAVKUPMURVBUTBCIUFUGUHUJUKUL $.
 
     $( Ordering property of addition.  Proposition 9-3.5(v) of [Gleason]
-       p. 123.  Part of Definition 11.2.7(vi) of [HoTT], p.  (varies).
-       (Contributed by Jim Kingdon, 26-Dec-2019.) $)
+       p. 123.  (Contributed by Jim Kingdon, 26-Dec-2019.) $)
     ltaprg $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) ->
         ( A <P B <-> ( C +P. A ) <P ( C +P. B ) ) ) $=
       ( vx cnp wcel w3a cltp wbr cpp co wi ltaprlem 3ad2ant3 wa cv wceq ltexpri
