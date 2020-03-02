@@ -71278,6 +71278,17 @@ $)
     MZKHZCALMZCBLMZKHZABCNUFUGUHULUOOUIUFUGUHJUJUMUKUNKUFUHUJUMPZUGUFATECTEZUPU
     HAQCQZACRSUAUGUHUKUNPZUFUGBTEUQUSUHBQURBCRSUBUCUDUE $.
 
+  $( Multiplication of both sides of 'less than or equal to' by a nonnegative
+     number.  Part of Definition 11.2.7(vi) of [HoTT], p.  (varies).
+     (Contributed by NM, 21-Feb-2005.) $)
+  lemul1a $p |- ( ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 <_ C ) ) /\
+                 A <_ B ) -> ( A x. C ) <_ ( B x. C ) ) $=
+    ( cr wcel cc0 cle wbr wa w3a cmul co simpl2 simpl1 resubcld simpl3l subge0d
+    cmin recnd remulcld ax-ia2 mpbird simpl3r mulge0d subdird breqtrd mpbid ) A
+    DEZBDEZCDEZFCGHZIZJZABGHZIZFBCKLZACKLZRLZGHUQUPGHUOFBARLZCKLURGUOUSCUOBAUHU
+    IULUNMZUHUIULUNNZOUJUKUHUIUNPZUOFUSGHUNUMUNUAUOBAUTVAQUBUJUKUHUIUNUCUDUOBAC
+    UOBUTSUOAVASUOCVBSUEUFUOUPUQUOBCUTVBTUOACVAVBTQUG $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
