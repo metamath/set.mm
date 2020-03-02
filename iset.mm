@@ -71365,6 +71365,24 @@ $)
     co cc breq2d bitrd ) ACDZBCDZEAFGZHZIBFGAABJQZFGABAJQZFGABKUDUEUFAFUAUBUEUF
     LZUCUAARDBRDUGUBAMBMABNOPST $.
 
+  $( Multiplication by a number greater than or equal to 1.  (Contributed by
+     NM, 17-Dec-2005.) $)
+  lemulge11 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ 1 <_ B ) ) ->
+                A <_ ( A x. B ) ) $=
+    ( cr wcel wa cc0 cle wbr c1 cmul co wceq ax-1rid ad2antrr simpll simprl jca
+    simplr 1re 0le1 pm3.2i jctil jca31 leid simprr lemul12a sylc eqbrtrrd ) ACD
+    ZBCDZEZFAGHZIBGHZEZEZAIJKZAABJKZGUIUPALUJUNAMNUOUIULEZUIEICDZFIGHZEZUJEZEAA
+    GHZUMEUPUQGHUOURUIVBUOUIULUIUJUNOZUKULUMPQVDUOUJVAUIUJUNRUSUTSTUAUBUCUOVCUM
+    UIVCUJUNAUDNUKULUMUEQAAIBUFUGUH $.
+
+  $( Multiplication by a number greater than or equal to 1.  (Contributed by
+     Paul Chapman, 21-Mar-2011.) $)
+  lemulge12 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ 1 <_ B ) ) ->
+                    A <_ ( B x. A ) ) $=
+    ( cr wcel wa cc0 cle wbr c1 cmul co lemulge11 wb cc wceq recn mulcom syl2an
+    breq2d adantr mpbid ) ACDZBCDZEZFAGHIBGHEZEAABJKZGHZABAJKZGHZABLUDUGUIMUEUD
+    UFUHAGUBANDBNDUFUHOUCAPBPABQRSTUA $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
