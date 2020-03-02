@@ -71393,6 +71393,16 @@ $)
     FUQGHZUPUTOUJUKUNPZUJUKUNQZUOCUJUKULUMTZUOCVFUJUKULUMUAUBZUCUNUJVCUKCUDUEAB
     UQUFUGUOVAURVBUSGUOACUOAVDRUOCVFRZVGSUOBCUOBVERVHVGSUHUI $.
 
+  $( Division of both sides of a less than or equal to relation by a positive
+     number.  (Contributed by NM, 18-Nov-2004.) $)
+  lediv1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) ->
+               ( A <_ B <-> ( A / C ) <_ ( B / C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a wn co cle wb ltdiv1 3adant1 redivclap syld3an3
+    cdiv 3expb 3com12 notbid lenlt 3adant3 cap gt0ap0 3adant2 lenltd 3bitr4d )
+    ADEZBDEZCDEZFCGHZIZJZBAGHZKZBCSLZACSLZGHZKABMHZUSURMHUOUPUTUKUJUNUPUTNBACOU
+    AUBUJUKVAUQNUNABUCUDUOUSURUJUNUSDEZUKUJULUMVBUJULUMCFUEHZVBULUMVCUJCUFZPACQ
+    RTUGUKUNURDEZUJUKULUMVEUKULUMVCVEULUMVCUKVDPBCQRTPUHUI $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
