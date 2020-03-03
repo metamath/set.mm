@@ -71586,6 +71586,15 @@ $)
     QSUQVCABFUQAUQAVJTZUAUBUQVEUTIFUQBAUQBVITVLUQAVJVKUCZUDUEUFUQVGUSCDUNUOVBVA
     RVHUQAVJVMUHVIUMUNUOUIIUSBUGSUJ $.
 
+  $( The reciprocal of both sides of 'less than or equal to'.  (Contributed by
+     NM, 3-Oct-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  lerec $p |- ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) ) ->
+              ( A <_ B <-> ( 1 / B ) <_ ( 1 / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa wn c1 co cle wb ltrec ancoms notbid lenltd gt0ap0d
+    cdiv rerecclapd simpll simprl simprr simplr 3bitr4d ) ACDZEAFGZHZBCDZEBFGZH
+    ZHZBAFGZIJASKZJBSKZFGZIABLGUOUNLGULUMUPUKUHUMUPMBANOPULABUFUGUKUAZUHUIUJUBZ
+    QULUOUNULBURULBURUHUIUJUCRTULAUQULAUQUFUGUKUDRTQUE $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
