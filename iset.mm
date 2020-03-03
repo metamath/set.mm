@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Feb-2020
+$( iset.mm - Version of 2-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -71118,6 +71118,61 @@ $)
       divcanap4d $p |- ( ph -> ( ( A x. B ) / B ) = A ) $=
         ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap4 syl3anc ) ABGHCGHCIJK
         BCLMCNMBODEFBCPQ $.
+    $}
+
+    divmuld.3 $e |- ( ph -> C e. CC ) $.
+    ${
+      divassapd.4 $e |- ( ph -> C # 0 ) $.
+      $( Relationship between division and multiplication.  (Contributed by Jim
+         Kingdon, 2-Mar-2020.) $)
+      divmulap2d $p |- ( ph -> ( ( A / C ) = B <-> A = ( C x. B ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq cmul wb divmulap2 syl112anc ) ABIJCI
+        JDIJDKLMBDNOCPBDCQOPREFGHBCDST $.
+
+      $( Relationship between division and multiplication.  (Contributed by Jim
+         Kingdon, 2-Mar-2020.) $)
+      divmulap3d $p |- ( ph -> ( ( A / C ) = B <-> A = ( B x. C ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq cmul wb divmulap3 syl112anc ) ABIJCI
+        JDIJDKLMBDNOCPBCDQOPREFGHBCDST $.
+
+      $( An associative law for division.  (Contributed by Jim Kingdon,
+         2-Mar-2020.) $)
+      divassapd $p |- ( ph -> ( ( A x. B ) / C ) = ( A x. ( B / C ) ) ) $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divassap syl112anc ) ABIJCIJDIJ
+        DKLMBCNODPOBCDPONOQEFGHBCDRS $.
+
+      $( A commutative/associative law for division.  (Contributed by Jim
+         Kingdon, 2-Mar-2020.) $)
+      div12apd $p |- ( ph -> ( A x. ( B / C ) ) = ( B x. ( A / C ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq div12ap syl112anc ) ABIJCIJDIJD
+        KLMBCDNOPOCBDNOPOQEFGHBCDRS $.
+
+      $( A commutative/associative law for division.  (Contributed by Jim
+         Kingdon, 2-Mar-2020.) $)
+      div23apd $p |- ( ph -> ( ( A x. B ) / C ) = ( ( A / C ) x. B ) ) $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq div23ap syl112anc ) ABIJCIJDIJD
+        KLMBCNODPOBDPOCNOQEFGHBCDRS $.
+
+      $( Distribution of division over addition.  (Contributed by Jim Kingdon,
+         2-Mar-2020.) $)
+      divdirapd $p |- ( ph ->
+          ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) ) $=
+        ( cc wcel cc0 cap wbr caddc co cdiv wceq divdirap syl112anc ) ABIJCIJDI
+        JDKLMBCNODPOBDPOCDPONOQEFGHBCDRS $.
+
+      $( Distribution of division over subtraction.  (Contributed by Jim
+         Kingdon, 2-Mar-2020.) $)
+      divsubdirapd $p |- ( ph ->
+          ( ( A - B ) / C ) = ( ( A / C ) - ( B / C ) ) ) $=
+        ( cc wcel cc0 cap wbr cmin co cdiv wceq divsubdirap syl112anc ) ABIJCIJ
+        DIJDKLMBCNODPOBDPOCDPONOQEFGHBCDRS $.
+
+      div11apd.5 $e |- ( ph -> ( A / C ) = ( B / C ) ) $.
+      $( One-to-one relationship for division.  (Contributed by Jim Kingdon,
+         2-Mar-2020.) $)
+      div11apd $p |- ( ph -> A = B ) $=
+        ( cdiv co wceq cc wcel cc0 cap wbr wb div11ap syl112anc mpbid ) ABDJKCD
+        JKLZBCLZIABMNCMNDMNDOPQUBUCREFGHBCDSTUA $.
     $}
   $}
 
