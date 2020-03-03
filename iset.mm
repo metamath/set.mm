@@ -71549,6 +71549,14 @@ $)
     PUQVDUBUCZUDUEUFVEUOVFEFURVLVHTUOURVDUIZVECDVOVQUGUOURVDUJAVFBUKRVEUOVIEFVC
     VMVKTWAVECBVOVSVTUHUSUTVCULAVIDUMRUN $.
 
+  $( 'Less than or equal to' relationship between division and multiplication.
+     (Contributed by NM, 9-Dec-2005.) $)
+  ledivmul2 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) ->
+                  ( ( A / C ) <_ B <-> A <_ ( B x. C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cdiv cle cmul ledivmul wceq recn mulcom syl2an
+    co cc adantrr 3adant1 breq2d bitr4d ) ADEZBDEZCDEZFCGHZIZJZACKSBLHACBMSZLHA
+    BCMSZLHABCNUJULUKALUFUIULUKOZUEUFUGUMUHUFBTECTEUMUGBPCPBCQRUAUBUCUD $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
