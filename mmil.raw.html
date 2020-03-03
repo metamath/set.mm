@@ -1309,6 +1309,12 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
+<TD>csbexg , csbex</TD>
+<TD>~ csbexga , ~ csbexa </TD>
+<TD>set.mm uses case elimination to remove the ` A e. _V ` condition.</TD>
+</TR>
+
+<TR>
 <TD>moabex</TD>
 <TD>~ euabex </TD>
 <TD>In general, most of the set.mm ` E! ` theorems still hold, but a
@@ -2605,7 +2611,7 @@ figured out what would be involved in proving them for iset.mm.</TD>
 
 <TR>
 <TD>ax1ne0 , ax-1ne0</TD>
-<TD>~ ax0lt1 , ~ ax-0lt1 </TD>
+<TD>~ ax0lt1 , ~ ax-0lt1 , ~ 1ap0 </TD>
 </TR>
 
 <TR>
@@ -2680,7 +2686,7 @@ favor of theorems in deduction form.</TD>
 
 <TR>
 <TD>ltlen , ltleni , ltlend</TD>
-<TD><I>none</I></TD>
+<TD>~ ltleap </TD>
 </TR>
 
 <TR>
@@ -2726,21 +2732,9 @@ only if they are apart" which relies on excluded middle</TD>
 </TR>
 
 <TR>
-<TD>mulge0 , mulge0OLD , mulge0i , mulge0d</TD>
-<TD>~ mulgt0 </TD>
-<TD>This would require a different proof than the set.mm one.</TD>
-</TR>
-
-<TR>
 <TD>msqgt0 , msqgt0i , msqgt0d</TD>
 <TD>~ apsqgt0 </TD>
 <TD>"Not equal to zero" is changed to "apart from zero"</TD>
-</TR>
-
-<TR>
-<TD>msqge0 , msqge0i , msqge0d</TD>
-<TD>~ mulgt0 , ~ mullt0 </TD>
-<TD>The set.mm proof of msqge0 relies on case elimination.</TD>
 </TR>
 
 <TR>
@@ -2761,6 +2755,284 @@ later in set.mm.</TD>
 <TD><I>none</I></TD>
 <TD>These depend on real number trichotomy and are not used until
 later in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>recex</TD>
+<TD>~ recexap </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>mulcand, mulcan2d</TD>
+<TD>~ mulcanapd , ~ mulcanap2d </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>mulcanad , mulcan2ad</TD>
+<TD>~ mulcanapad , ~ mulcanap2ad</TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>mulcan , mulcan2 , mulcani</TD>
+<TD>~ mulcanap , ~ mulcanap2 , ~ mulcanapi </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>mul0or , mul0ori , mul0ord</TD>
+<TD><I>none</I></TD>
+<TD>Remark 2.19 of [Geuvers] says that this does not hold in
+general and has a counterexample.</TD>
+</TR>
+
+<TR>
+<TD>mulne0b , mulne0bd , mulne0bad , mulne0bbd</TD>
+<TD>~ mulap0b , ~ mulap0bd , ~ mulap0bad , ~ mulap0bbd </TD>
+</TR>
+
+<TR>
+<TD>mulne0 , mulne0i , mulne0d</TD>
+<TD>~ mulap0 , ~ mulap0i , ~ mulap0d </TD>
+</TR>
+
+<TR>
+<TD>receu</TD>
+<TD>~ receuap </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>mulnzcnopr</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>msq0i , msq0d</TD>
+<TD><I>none</I></TD>
+<TD>This probably could be proved in terms of tightness of apartness
+and ` A # 0 /\ B # 0 -> ( A x. B ) # 0 `, but is unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>mulcan1g , mulcan2g</TD>
+<TD><I>various cancellation theorems</I></TD>
+<TD>Presumably this is unavailable for the same reason that mul0or
+is unavailable.</TD>
+</TR>
+
+<TR>
+<TD>1div0</TD>
+<TD><I>none</I></TD>
+<TD>This could be proved, but the set.mm proof does not work as-is.</TD>
+</TR>
+
+<TR>
+<TD>divval</TD>
+<TD>~ divvalap </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>divmul , divmul2 , divmul3</TD>
+<TD>~ divmulap , ~ divmulap2 , divmulap3 </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>divcl , reccl</TD>
+<TD>~ divclap , ~ recclap </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>divcan1 , divcan2</TD>
+<TD>~ divcanap1 , ~ divcanap2 </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>diveq0</TD>
+<TD>~ diveqap0 </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>divne0b , divne0</TD>
+<TD>~ divap0b , ~ divap0 </TD>
+</TR>
+
+<TR>
+<TD>recne0</TD>
+<TD>~ recap0 </TD>
+</TR>
+
+<TR>
+<TD>recid , recid2</TD>
+<TD>~ recidap , ~ recidap2 </TD>
+</TR>
+
+<TR>
+<TD>divrec</TD>
+<TD>~ divrecap </TD>
+</TR>
+
+<TR>
+<TD>divrec2</TD>
+<TD>~ divrecap2  </TD>
+</TR>
+
+<TR>
+<TD>divass</TD>
+<TD>~ divassap </TD>
+</TR>
+
+<TR>
+<TD>div23 , div32 , div13 , div12</TD>
+<TD>~ div23ap , ~ div32ap , ~ div13ap , ~ div12ap </TD>
+</TR>
+
+<TR>
+<TD>divdir , divcan3 , divcan4</TD>
+<TD>~ divdirap , ~ divcanap3 , ~ divcanap4 </TD>
+</TR>
+
+<TR>
+<TD>div11 , divid , div0</TD>
+<TD>~ div11ap , ~ dividap , ~ div0ap </TD>
+</TR>
+
+<TR>
+<TD>diveq1 , divneg , divsubdir</TD>
+<TD>~ diveqap1 , ~ divnegap , ~ divsubdirap </TD>
+</TR>
+
+<TR>
+<TD>recrec , rec11 , rec11r</TD>
+<TD>~ recrecap , ~ rec11ap , ~ rec11rap </TD>
+</TR>
+
+<TR>
+<TD>divmuldiv , divdivdiv , divcan5</TD>
+<TD>~ divmuldivap , ~ divdivdivap , ~ divcanap5 </TD>
+</TR>
+
+<TR>
+<TD>divmul13 , divmul24 , divmuleq</TD>
+<TD>~ divmul13ap , ~ divmul24ap , ~ divmuleqap </TD>
+</TR>
+
+<TR>
+<TD>recdiv , divcan6 , divdiv32 , divcan7</TD>
+<TD>~ recdivap , ~ divcanap6 , ~ divdiv32ap , ~ divcanap7 </TD>
+</TR>
+
+<TR>
+<TD>dmdcan , divdiv1 , divdiv2 , recdiv2</TD>
+<TD>~ dmdcanap , ~ divdivap1 , ~ divdivap2 , ~ recdivap2 </TD>
+</TR>
+
+<TR>
+<TD>ddcan , divadddiv , divsubdiv</TD>
+<TD>~ ddcanap , ~ divadddivap , ~ divsubdivap </TD>
+</TR>
+
+<TR>
+<TD>ddcan , divadddiv , divsubdiv</TD>
+<TD>~ ddcanap , ~ divadddivap , ~ divsubdivap </TD>
+</TR>
+
+<TR>
+<TD>conjmul , rereccl, redivcl</TD>
+<TD>~ conjmulap , ~ rerecclap , ~ redivclap </TD>
+</TR>
+
+<TR>
+<TD>div2neg , divneg2</TD>
+<TD>~ div2negap , ~ divneg2ap </TD>
+</TR>
+
+<TR>
+<TD>recclzi , recne0zi , recidzi</TD>
+<TD>~ recclapzi , ~ recap0apzi , ~ recidapzi </TD>
+</TR>
+
+<TR>
+<TD>reccli , recidi , recreci</TD>
+<TD>~ recclapi , ~ recidapi , ~ recrecapi </TD>
+</TR>
+
+<TR>
+<TD>dividi , div0i</TD>
+<TD>~ dividapi , ~ div0api </TD>
+</TR>
+
+<TR>
+<TD>divclzi , divcan1zi , divcan2zi</TD>
+<TD>~ divclapzi , ~ divcanap1zi , ~ divcanap2zi </TD>
+</TR>
+
+<TR>
+<TD>divreczi , divcan3zi , divcan4zi</TD>
+<TD>~ divrecapzi , ~ divcanap3zi , ~ divcanap4zi </TD>
+</TR>
+
+<TR>
+<TD>rec11i , rec11ii</TD>
+<TD>~ rec11api , ~ rec11apii </TD>
+</TR>
+
+<TR>
+<TD>divcli , divcan2i , divcan1i , divreci ,
+divcan3i , divcan4i </TD>
+<TD>~ divclapi , ~ divcanap2i , ~ divcanap1i , ~ divrecapi ,
+~ divcanap3i , ~ divcanap4i </TD>
+</TR>
+
+<TR>
+<TD>div0i</TD>
+<TD>~ divap0i </TD>
+</TR>
+
+<TR>
+<TD>divasszi , divmulzi , divdirzi , divdiv23zi</TD>
+<TD>~ divassapzi , ~ divmulapzi , ~ divdirapzi , ~ divdiv23apzi </TD>
+</TR>
+
+<TR>
+<TD>divmuli , divdiv32i</TD>
+<TD>~ divmulapi , ~ divdiv32api </TD>
+</TR>
+
+<TR>
+<TD>divcld , divcan1d , divcan2d , divrecd , divrec2d ,
+divcan3d , divcan4d</TD>
+<TD>~ divclapd , ~ divcanap1d , ~ divcanap2d , ~ divrecapd , ~ divrecap2d ,
+~ divcanap3d , ~ divcanap4d </TD>
+</TR>
+
+<TR>
+<TD>rereccld , redivcld</TD>
+<TD>~ rerecclapd , ~ redivclapd </TD>
+</TR>
+
+<TR>
+<TD>elimgt0 , elimge0</TD>
+<TD><I>none</I></TD>
+<TD>Even in set.mm, the weak deduction theorem is discouraged in
+favor of theorems in deduction form.</TD>
 </TR>
 
 </TABLE>
@@ -2825,6 +3097,13 @@ Theory,</I> Academic Press, Inc., San Diego, California (1977)
 Abstract Analysis,</I> Jones and Bartlett Publishers, Boston (1991)
 [QA300.G554].</LI>
 
+<LI><A NAME="Geuvers"></A> [Geuvers] Herman Geuvers, Randy Pollack, Freek
+Wiedijk, Jan Zwanenburg, "Skeleton for the Proof development leading to
+the Fundamental Theorem of Algebra", October 2, 2000,
+<A HREF="http://www.cs.ru.nl/~~herman/PUBS/FTA.mathproof.ps.gz"
+>http://www.cs.ru.nl/~~herman/PUBS/FTA.mathproof.ps.gz</A> (accessed
+19 Feb 2020).</LI>
+
 <LI><A NAME="Hamilton"></A> [Hamilton] Hamilton, A. G., <I>Logic for
 Mathematicians,</I> Cambridge University Press, Cambridge, revised
 edition (1988) [QA9.H298 1988].</LI>
@@ -2852,6 +3131,10 @@ Academic Press, San Diego (1978) [QA248.J42].</LI>
 Montague, &quot;On Tarski's formalization of predicate logic with
 identity,&quot; <I>Archiv f&uuml;r Mathematische Logik und
 Grundlagenforschung,</I> 7:81-101 (1965) [QA.A673].</LI>
+
+<LI><A NAME="Kreyszig"></A> [Kreyszig] Kreysig, Erwin, <I>Introductory
+Functional Analysis with Applications</I>, John Wiley &amp; Sons, New
+York (1989) [QA320.K74].  </LI>
 
 <LI><A NAME="Kunen"></A> [Kunen] Kunen, Kenneth, <I>Set Theory:  An
 Introduction to Independence Proofs,</I> Elsevier Science B.V.,

@@ -9,18 +9,19 @@ all: alljobs
 .PHONY: all
 
 MMFILE ?= set.mm
+JOBSDIR ?= metamathjobs
 
 DONE_LIST := \
-  $(foreach num, $(work), metamathjobs/job$(num).done)
+  $(foreach num, $(work), $(JOBSDIR)/job$(num).done)
 
-metamathjobs/job%.done: metamathjobs/job%.cmd
+$(JOBSDIR)/job%.done: $(JOBSDIR)/job%.cmd
 	@echo 'Running job $(*)'
-	@rm -f 'metamathjobs/job$(*).log'
+	@rm -f '$(JOBSDIR)/job$(*).log'
 	time metamath 'read $(MMFILE)' \
-	  "open log 'metamathjobs/job$(*).log'" \
-	  "submit 'metamathjobs/job$(*).cmd' /silent" quit 2>&1
+	  "open log '$(JOBSDIR)/job$(*).log'" \
+	  "submit '$(JOBSDIR)/job$(*).cmd' /silent" quit 2>&1
 	@echo 'Completed job $(*)'
-	@touch 'metamathjobs/job$(*).done'
+	@touch '$(JOBSDIR)/job$(*).done'
 
 alljobs: $(DONE_LIST)
 .PHONY: alljobs
