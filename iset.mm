@@ -71595,6 +71595,29 @@ $)
     ZHZBAFGZIJASKZJBSKZFGZIABLGUOUNLGULUMUPUKUHUMUPMBANOPULABUFUGUKUAZUHUIUJUBZ
     QULUOUNULBURULBURUHUIUJUCRTULAUQULAUQUFUGUKUDRTQUE $.
 
+  $( Lemma for ~ lt2msq .  (Contributed by Mario Carneiro, 27-May-2016.) $)
+  lt2msq1 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ B e. RR /\ A < B ) ->
+                  ( A x. A ) < ( B x. B ) ) $=
+    ( cr wcel cc0 cle wbr wa clt w3a co simp1l remulcld simp2 simp1 simp3 ltled
+    cmul lemul1a lelttrd syl31anc wb 0red simp1r ltmul2 syl112anc mpbid ) ACDZE
+    AFGZHZBCDZABIGZJZAARKZBARKZBBRKZUMAAUHUIUKULLZUQMUMBAUJUKULNZUQMUMBBURURMUM
+    UHUKUJABFGUNUOFGUQURUJUKULOUMABUQURUJUKULPZQABASUAUMULUOUPIGZUSUMUHUKUKEBIG
+    ULUTUBUQURURUMEABUMUCUQURUHUIUKULUDUSTABBUEUFUGT $.
+
+  $( Two nonnegative numbers compare the same as their squares.  (Contributed
+     by Roy F. Longton, 8-Aug-2005.)  (Revised by Mario Carneiro,
+     27-May-2016.) $)
+  lt2msq $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) ) ->
+                  ( A < B <-> ( A x. A ) < ( B x. B ) ) ) $=
+    ( cr wcel cc0 cle wbr wa clt cmul co wi lt2msq1 3expia cap syl2anc remulcld
+    wn lenltd 3imtr4d ax-ia2 simpll con3d simprl wo recnd mulext syl22anc oridm
+    adantrr cc syl6ib anim12d wb ltleap impbid ) ACDZEAFGZHZBCDZEBFGZHZHZABIGZA
+    AJKZBBJKZIGZUSUTVDVGLVAUSUTVDVGABMNUJVCVEVFFGZVEVFOGZHZABFGZABOGZHZVGVDVCVH
+    VKVIVLVCVFVEIGZRBAIGZRVHVKVCVOVNVCVBUQVOVNLUSVBUAUQURVBUBZVBUQVOVNBAMNPUCVC
+    VEVFVCAAVPVPQZVCBBUSUTVAUDZVRQZSVCABVPVRSTVCVIVLVLUEZVLVCAUKDZWABUKDZWBVIVT
+    LVCAVPUFZWCVCBVRUFZWDAABBUGUHVLUIULUMVCVECDVFCDVGVJUNVQVSVEVFUOPVCUQUTVDVMU
+    NVPVRABUOPTUP $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
