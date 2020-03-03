@@ -71575,6 +71575,17 @@ $)
     recn 3adant2 breq1d lemuldiv bitr3d ) ADEZBDEZCDEZFCGHZIZJZACKLZBMHCAKLZBMH
     ABCNLMHUJUKULBMUEUIUKULOZUFUEUGUMUHUEAPECPEUMUGATCTACQRSUAUBABCUCUD $.
 
+  $( The reciprocal of both sides of 'less than'.  (Contributed by NM,
+     26-Sep-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  ltrec $p |- ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) ) ->
+              ( A < B <-> ( 1 / B ) < ( 1 / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co cmul 1red simprl simpll simplr ltmuldiv
+    wb syl112anc recnd mulid2d breq1d gt0ap0d divrecapd breq2d 3bitr3d ltdivmul
+    rerecclapd simprr bitr4d ) ACDZEAFGZHZBCDZEBFGZHZHZABFGZIBIAJKZLKZFGZIBJKUS
+    FGZUQIALKZBFGZIBAJKZFGZURVAUQICDZUNUKULVDVFRUQMZUMUNUONZUKULUPOZUKULUPPZIBA
+    QSUQVCABFUQAUQAVJTZUAUBUQVEUTIFUQBAUQBVITVLUQAVJVKUCZUDUEUFUQVGUSCDUNUOVBVA
+    RVHUQAVJVMUHVIUMUNUOUIIUSBUGSUJ $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
