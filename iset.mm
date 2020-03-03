@@ -71567,6 +71567,14 @@ $)
     OUIUJUMUAZUNBCUIUJUMUBZUIUJUKULUCZUNCVAUIUJUKULUDUEUFTUNUQBUNACUSVAUGUTTUH
     $.
 
+  $( 'Less than or equal' relationship between division and multiplication.
+     (Contributed by NM, 10-Mar-2006.) $)
+  lemuldiv2 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) ->
+                      ( ( C x. A ) <_ B <-> A <_ ( B / C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cmul co cle cdiv wceq cc mulcom syl2an adantrr
+    recn 3adant2 breq1d lemuldiv bitr3d ) ADEZBDEZCDEZFCGHZIZJZACKLZBMHCAKLZBMH
+    ABCNLMHUJUKULBMUEUIUKULOZUFUEUGUMUHUEAPECPEUMUGATCTACQRSUAUBABCUCUD $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
