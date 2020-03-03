@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Feb-2020
+$( iset.mm - Version of 29-Feb-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -70966,6 +70966,181 @@ $)
     divcanap4zi $p |- ( B # 0 -> ( ( A x. B ) / B ) = A ) $=
       ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap4 mp3an12 ) AEFBEFBGHIABJ
       KBLKAMCDABNO $.
+
+    $( Reciprocal is one-to-one.  (Contributed by Jim Kingdon, 28-Feb-2020.) $)
+    rec11api $p |- ( ( A # 0 /\ B # 0 ) ->
+               ( ( 1 / A ) = ( 1 / B ) <-> A = B ) ) $=
+      ( cc0 cap wbr cc wcel c1 cdiv co wceq wb wa rec11ap mpanl1 mpanr1 ) AEFGZ
+      BHIZBEFGZJAKLJBKLMABMNZDAHISTUAOUBCABPQR $.
+
+    ${
+      divclap.3 $e |- B # 0 $.
+      $( Closure law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divclapi $p |- ( A / B ) e. CC $=
+        ( cc wcel cc0 cap wbr cdiv co divclap mp3an ) AFGBFGBHIJABKLFGCDEABMN
+        $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divcanap2i $p |- ( B x. ( A / B ) ) = A $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap2 mp3an ) AFGBFGBHIJBAB
+        KLMLANCDEABOP $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divcanap1i $p |- ( ( A / B ) x. B ) = A $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap1 mp3an ) AFGBFGBHIJABK
+        LBMLANCDEABOP $.
+
+      $( Relationship between division and reciprocal.  (Contributed by Jim
+         Kingdon, 28-Feb-2020.) $)
+      divrecapi $p |- ( A / B ) = ( A x. ( 1 / B ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co c1 cmul wceq divrecap mp3an ) AFGBFGBHIJA
+        BKLAMBKLNLOCDEABPQ $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divcanap3i $p |- ( ( B x. A ) / B ) = A $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap3 mp3an ) AFGBFGBHIJBAK
+        LBMLANCDEABOP $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divcanap4i $p |- ( ( A x. B ) / B ) = A $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap4 mp3an ) AFGBFGBHIJABK
+        LBMLANCDEABOP $.
+    $}
+
+    ${
+      divap0i.3 $e |- A # 0 $.
+      divap0.i4 $e |- B # 0 $.
+      $( The ratio of numbers apart from zero is apart from zero.  (Contributed
+         by Jim Kingdon, 28-Feb-2020.) $)
+      divap0i $p |- ( A / B ) # 0 $=
+        ( cc wcel cc0 cap wbr cdiv co divap0 mp4an ) AGHAIJKBGHBIJKABLMIJKCEDFA
+        BNO $.
+
+      $( Reciprocal is one-to-one.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      rec11apii $p |- ( ( 1 / A ) = ( 1 / B ) <-> A = B ) $=
+        ( cc0 cap wbr c1 cdiv co wceq wb rec11api mp2an ) AGHIBGHIJAKLJBKLMABMN
+        EFABCDOP $.
+    $}
+
+    divmulz.3 $e |- C e. CC $.
+    $( An associative law for division.  (Contributed by Jim Kingdon,
+       28-Feb-2020.) $)
+    divassapzi $p |- ( C # 0 -> ( ( A x. B ) / C ) = ( A x. ( B / C ) ) ) $=
+      ( cc wcel cc0 cap wbr cmul co cdiv wceq wa divassap mp3an12 mpan ) CGHZCI
+      JKZABLMCNMABCNMLMOZFAGHBGHTUAPUBDEABCQRS $.
+
+    $( Relationship between division and multiplication.  (Contributed by Jim
+       Kingdon, 28-Feb-2020.) $)
+    divmulapzi $p |- ( B # 0 -> ( ( A / B ) = C <-> ( B x. C ) = A ) ) $=
+      ( cc wcel cc0 cap wbr cdiv co wceq cmul wb wa divmulap mp3an12 mpan ) BGH
+      ZBIJKZABLMCNBCOMANPZEAGHCGHUAUBQUCDFACBRST $.
+
+    $( Distribution of division over addition.  (Contributed by Jim Kingdon,
+       28-Feb-2020.) $)
+    divdirapzi $p |- ( C # 0 ->
+                    ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) ) $=
+      ( cc wcel cc0 cap wbr caddc co cdiv wceq wa divdirap mp3an12 mpan ) CGHZC
+      IJKZABLMCNMACNMBCNMLMOZFAGHBGHTUAPUBDEABCQRS $.
+
+    $( Swap denominators in a division.  (Contributed by Jim Kingdon,
+       28-Feb-2020.) $)
+    divdiv23apzi $p |- ( ( B # 0 /\ C # 0 ) ->
+                ( ( A / B ) / C ) = ( ( A / C ) / B ) ) $=
+      ( cc0 cap wbr cc wcel cdiv co wceq wa divdiv32ap mp3an1 mpanl1 mpanr1 ) B
+      GHIZCJKZCGHIZABLMCLMACLMBLMNZFBJKZTUAUBOZUCEAJKUDTOUEUCDABCPQRS $.
+
+    ${
+      divmulapi.4 $e |- B # 0 $.
+      $( Relationship between division and multiplication.  (Contributed by Jim
+         Kingdon, 29-Feb-2020.) $)
+      divmulapi $p |- ( ( A / B ) = C <-> ( B x. C ) = A ) $=
+        ( cc0 cap wbr cdiv co wceq cmul wb divmulapzi ax-mp ) BHIJABKLCMBCNLAMO
+        GABCDEFPQ $.
+
+      divdiv32api.5 $e |- C # 0 $.
+      $( Swap denominators in a division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divdiv32api $p |- ( ( A / B ) / C ) = ( ( A / C ) / B ) $=
+        ( cc0 cap wbr cdiv co wceq divdiv23apzi mp2an ) BIJKCIJKABLMCLMACLMBLMN
+        GHABCDEFOP $.
+    $}
+
+  $}
+
+  ${
+    div1d.1 $e |- ( ph -> A e. CC ) $.
+    divcld.2 $e |- ( ph -> B e. CC ) $.
+    ${
+      divclapd.3 $e |- ( ph -> B # 0 ) $.
+      $( Closure law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divclapd $p |- ( ph -> ( A / B ) e. CC ) $=
+        ( cc wcel cc0 cap wbr cdiv co divclap syl3anc ) ABGHCGHCIJKBCLMGHDEFBCN
+        O $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divcanap1d $p |- ( ph -> ( ( A / B ) x. B ) = A ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap1 syl3anc ) ABGHCGHCIJK
+        BCLMCNMBODEFBCPQ $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divcanap2d $p |- ( ph -> ( B x. ( A / B ) ) = A ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap2 syl3anc ) ABGHCGHCIJK
+        CBCLMNMBODEFBCPQ $.
+
+      $( Relationship between division and reciprocal.  Theorem I.9 of
+         [Apostol] p. 18.  (Contributed by Jim Kingdon, 29-Feb-2020.) $)
+      divrecapd $p |- ( ph -> ( A / B ) = ( A x. ( 1 / B ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co c1 cmul wceq divrecap syl3anc ) ABGHCGHCI
+        JKBCLMBNCLMOMPDEFBCQR $.
+
+      $( Relationship between division and reciprocal.  (Contributed by Jim
+         Kingdon, 29-Feb-2020.) $)
+      divrecap2d $p |- ( ph -> ( A / B ) = ( ( 1 / B ) x. A ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co c1 cmul wceq divrecap2 syl3anc ) ABGHCGHC
+        IJKBCLMNCLMBOMPDEFBCQR $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divcanap3d $p |- ( ph -> ( ( B x. A ) / B ) = A ) $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap3 syl3anc ) ABGHCGHCIJK
+        CBLMCNMBODEFBCPQ $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divcanap4d $p |- ( ph -> ( ( A x. B ) / B ) = A ) $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap4 syl3anc ) ABGHCGHCIJK
+        BCLMCNMBODEFBCPQ $.
+    $}
+  $}
+
+  ${
+    $d x y B $.
+    redivclapd.1 $e |- ( ph -> A e. RR ) $.
+    ${
+      rerecclapd.2 $e |- ( ph -> A # 0 ) $.
+      $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      rerecclapd $p |- ( ph -> ( 1 / A ) e. RR ) $=
+        ( cr wcel cc0 cap wbr c1 cdiv co rerecclap syl2anc ) ABEFBGHIJBKLEFCDBM
+        N $.
+    $}
+
+    redivclapd.2 $e |- ( ph -> B e. RR ) $.
+    redivclapd.3 $e |- ( ph -> B # 0 ) $.
+    $( Closure law for division of reals.  (Contributed by Jim Kingdon,
+       29-Feb-2020.) $)
+    redivclapd $p |- ( ph -> ( A / B ) e. RR ) $=
+      ( cr wcel cc0 cap wbr cdiv co redivclap syl3anc ) ABGHCGHCIJKBCLMGHDEFBCN
+      O $.
   $}
 
 $(
@@ -71026,6 +71201,34 @@ $)
     WBUMUNWEWHVRANIZMWFWEVRAWEASCZWIVRSCZVQWRWBVQAWOUOZOZWMAUPZPXAUQWEWQHWEWRWI
     WQHURXAWMAUSPVBUTVCWEHWEVAQVDVEVFVQDBCZWJVTWCTLWPDVRVGVHVDVQVRDJFZWAVQWRWIX
     DWTWLAVIPVQWSDSCXDWATVQWRWIWSWTWLXBPVJVRDVKVLRVQXCWJVSVTWAGTLWPDVRVMVHVN $.
+
+  $( Infer that a multiplicand is positive from a positive multiplier and
+     positive product.  See ~ prodgt0 for the same theorem with ` 0 < A `
+     replaced by the weaker condition ` 0 <_ A ` .  (Contributed by Jim
+     Kingdon, 29-Feb-2020.) $)
+  prodgt0gt0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 < A /\ 0 < ( A x. B ) ) )
+                 -> 0 < B ) $=
+    ( cr wcel wa cc0 clt wbr cmul co cdiv simpll simplr remulcld simprl gt0ap0d
+    c1 rerecclapd simprr recnd recgt0 mulgt0d divrecapd simpr adantr divcanap3d
+    ad2ant2r cc eqtr3d breqtrd ) ACDZBCDZEZFAGHZFABIJZGHZEZEZFUOQAKJZIJZBGURUOU
+    SURABUKULUQLZUKULUQMNZURAVAURAVAUMUNUPOPZRUMUNUPSUKUNFUSGHULUPAUAUGUBURUOAK
+    JUTBURUOAURUOVBTURAVATZVCUCURBAUMBUHDUQUMBUKULUDTUEVDVCUFUIUJ $.
+
+  $( Infer that a multiplicand is positive from a nonnegative multiplier and
+     positive product.  (Contributed by NM, 24-Apr-2005.)  (Revised by Mario
+     Carneiro, 27-May-2016.) $)
+  prodgt0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ 0 < ( A x. B ) ) )
+                 -> 0 < B ) $=
+    ( cr wcel wa cc0 cle wbr cmul co clt wn cneg renegcld lt0neg1d recnd negcld
+    cap mpbird 0red simpllr simplll simplr biimpa simprr simpll mulcomd breqtrd
+    mul2negd breqtrrd adantr prodgt0gt0 syl22anc lenltd mpbid pm2.65da remulcld
+    simplrl gt0ap0d mulap0bbd cc wb 0cnd apsym syl2anc ltleap mpbir2and ) ACDZB
+    CDZEZFAGHZFABIJZKHZEZEZFBKHZFBGHZFBRHZVOVQBFKHZLVOVSAFKHZVOVSEZVTFAMZKHZWAB
+    MZCDWBCDFWDKHZFWDWBIJZKHZWCWABVHVIVNVSUANWAAVHVIVNVSUBZNVOVSWEVOBVHVIVNUCZO
+    UDVOWGVSVOFWBWDIJZWFKVOFVLWJKVJVKVMUEZVOABVOAVHVIVNUFZPZVOBWIPZUIUJVOWBWDVO
+    AWMQVOBWNQUGUHUKWDWBULUMWAAWHOSWAVKVTLVJVKVMVSURWAFAWATWHUNUOUPVOFBVOTZWIUN
+    SVOBFRHZVRVOABWMWNVOVLVOABWLWIUQWKUSUTVOBVADFVADWPVRVBWNVOVCBFVDVEUOVOFCDVI
+    VPVQVREVBWOWIFBVFVEVG $.
 
 $(
 ###############################################################################
