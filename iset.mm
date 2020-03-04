@@ -71618,6 +71618,18 @@ $)
     LVCAVPUFZWCVCBVRUFZWDAABBUGUHVLUIULUMVCVECDVFCDVGVJUNVQVSVEVFUOPVCUQUTVDVMU
     NVPVRABUOPTUP $.
 
+  $( Division of a positive number by both sides of 'less than'.  (Contributed
+     by NM, 27-Apr-2005.) $)
+  ltdiv2 $p |- ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) /\
+      ( C e. RR /\ 0 < C ) ) -> ( A < B <-> ( C / B ) < ( C / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co cmul wb gt0ap0 3ad2ant1 recnd divrecapd
+    w3a cap simp2l 3ad2ant2 rerecclap syldan simp3 ltmul2 syl3anc ltrec 3adant3
+    rerecclapd simp3l simp1l breq12d 3bitr4d ) ADEZFAGHZIZBDEZFBGHZIZCDEZFCGHZI
+    ZSZJBKLZJAKLZGHZCVEMLZCVFMLZGHZABGHZCBKLZCAKLZGHVDVEDEVFDEZVCVGVJNVDBUQURUS
+    VCUAZUTUQBFTHVCBOUBZUJUQUTVNVCUOUPAFTHZVNAOZAUCUDPUQUTVCUEVEVFCUFUGUQUTVKVG
+    NVCABUHUIVDVLVHVMVIGVDCBVDCUQUTVAVBUKQZVDBVOQVPRVDCAVSVDAUOUPUTVCULQUQUTVQV
+    CVRPRUMUN $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
