@@ -71739,6 +71739,19 @@ $)
     ZBCDZEBFGZHZHZAIBJKZLGZIULJKZIAJKZLGZBUOLGUKUGULCDEULFGZUMUPMUGUJNUKBUGUHUI
     OZUKBURUGUHUIRPZQUJUQUGBSTAULUAUBUKUNBUOLUKBUKBURUCUSUDUEUF $.
 
+  $( Invert ratios of positive numbers and swap their ordering.  (Contributed
+     by NM, 9-Jan-2006.) $)
+  ledivdiv $p |- ( ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) ) /\
+                      ( ( C e. RR /\ 0 < C ) /\ ( D e. RR /\ 0 < D ) ) ) ->
+                  ( ( A / B ) <_ ( C / D ) <-> ( D / C ) <_ ( B / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa cdiv co cle c1 gt0ap0d redivclapd divgt0 recdivapd
+    wb recnd simplll simplrl simplrr adantr simprll simprrl simprrr lerec bitrd
+    adantl syl22anc simprlr simpllr breq12d ) AEFZGAHIZJZBEFZGBHIZJZJZCEFZGCHIZ
+    JZDEFZGDHIZJZJZJZABKLZCDKLZMIZNVKKLZNVJKLZMIZDCKLZBAKLZMIVIVJEFGVJHIZVKEFGV
+    KHIZVLVOSVIABUOUPUTVHUAZUQURUSVHUBZVIBWAUQURUSVHUCOZPVAVRVHABQUDVICDVAVBVCV
+    GUEZVAVDVEVFUFZVIDWDVAVDVEVFUGOZPVHVSVACDQUJVJVKUHUKVIVMVPVNVQMVICDVICWCTVI
+    DWDTVICWCVAVBVCVGULOWERVIABVIAVTTVIBWATVIAVTUOUPUTVHUMOWBRUNUI $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
