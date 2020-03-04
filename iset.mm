@@ -71680,6 +71680,15 @@ $)
     NVCABUHUIVDVLVHVMVIGVDCBVDCUQUTVAVBUKQZVDBVOQVPRVDCAVSVDAUOUPUTVCULQUQUTVQV
     CVRPRUMUN $.
 
+  $( Reciprocal swap in a 'less than' relation.  (Contributed by NM,
+     24-Feb-2005.) $)
+  ltrec1 $p |- ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) ) ->
+              ( ( 1 / A ) < B <-> ( 1 / B ) < A ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co simpll simplr gt0ap0d rerecclapd recgt0
+    wb adantr ax-ia2 ltrec syl21anc recnd recrecapd breq2d bitrd ) ACDZEAFGZHZB
+    CDEBFGHZHZIAJKZBFGZIBJKZIUKJKZFGZUMAFGUJUKCDEUKFGZUIULUOQUJAUFUGUILZUJAUQUF
+    UGUIMNZOUHUPUIAPRUHUISUKBTUAUJUNAUMFUJAUJAUQUBURUCUDUE $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
