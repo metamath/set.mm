@@ -71752,6 +71752,17 @@ $)
     GUEZVAVDVEVFUFZVIDWDVAVDVEVFUGOZPVHVSVACDQUJVJVKUHUKVIVMVPVNVQMVICDVICWCTVI
     DWDTVICWCVAVBVCVGULOWERVIABVIAVTTVIBWATVIAVTUOUPUTVHUMOWBRUNUI $.
 
+  $( Division of a positive number by both sides of 'less than or equal to'.
+     (Contributed by NM, 10-Jan-2006.) $)
+  lediv2 $p |- ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) /\
+       ( C e. RR /\ 0 < C ) ) -> ( A <_ B <-> ( C / B ) <_ ( C / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a c1 cdiv co cle wb gt0ap0d rerecclapd divrecapd
+    cmul recnd simp2l simp2r simp1l simp1r simp3l simp3r lemul2 syl112anc lerec
+    3adant3 breq12d 3bitr4d ) ADEZFAGHZIZBDEZFBGHZIZCDEZFCGHZIZJZKBLMZKALMZNHZC
+    VCSMZCVDSMZNHZABNHZCBLMZCALMZNHVBVCDEVDDEUSUTVEVHOVBBUOUPUQVAUAZVBBVLUOUPUQ
+    VAUBPZQVBAUMUNURVAUCZVBAVNUMUNURVAUDPZQUOURUSUTUEZUOURUSUTUFVCVDCUGUHUOURVI
+    VEOVAABUIUJVBVJVFVKVGNVBCBVBCVPTZVBBVLTVMRVBCAVQVBAVNTVORUKUL $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
