@@ -71834,6 +71834,17 @@ $)
     HAEFZGZUIUEUFUKUEHDEFZUFUKKHBCDBCUEUMUFGUKLMNHDAROPQZASTUEUFULUJUNULUFUJAUA
     UBUCUD $.
 
+  $( Construct a number less than 1 from any nonnegative number.  (Contributed
+     by NM, 30-Dec-2005.) $)
+  recp1lt1 $p |- ( ( A e. RR /\ 0 <_ A ) -> ( A / ( 1 + A ) ) < 1 ) $=
+    ( cr wcel cc0 cle wbr wa c1 caddc co cdiv clt cmul ax-ia1 syl recnd addcomd
+    ltp1 1cnd breqtrd addcld 1red readdcld 1re 0lt1 addgtge0 gt0ap0d divcanap1d
+    mpanr1 mpanl1 mulid2d 3brtr4d wb redivclapd ltmul1 syl112anc mpbird ) ABCZD
+    AEFZGZAHAIJZKJZHLFZVBVAMJZHVAMJZLFZUTAVAVDVELUTAAHIJZVALUTURAVGLFURUSNZAROU
+    TAHUTAVHPZUTSZQTUTAVAVIUTHAVJVIUAZUTVAUTHAUTUBZVHUCZHBCZURUSDVALFZUDVNURGDH
+    LFUSVOUEHAUFUIUJZUGZUHUTVAVKUKULUTVBBCVNVABCVOVCVFUMUTAVAVHVMVQUNVLVMVPVBHV
+    AUOUPUQ $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
