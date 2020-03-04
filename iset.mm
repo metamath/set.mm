@@ -71170,6 +71170,47 @@ $)
         BCLMCNMBODEFBCPQ $.
     $}
 
+    ${
+      divap0d.3 $e |- ( ph -> A # 0 ) $.
+      divap0d.4 $e |- ( ph -> B # 0 ) $.
+      $( The ratio of numbers apart from zero is apart from zero.  (Contributed
+         by Jim Kingdon, 3-Mar-2020.) $)
+      divap0d $p |- ( ph -> ( A / B ) # 0 ) $=
+        ( cc wcel cc0 cap wbr cdiv co divap0 syl22anc ) ABHIBJKLCHICJKLBCMNJKLD
+        FEGBCOP $.
+
+      $( The reciprocal of a ratio.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      recdivapd $p |- ( ph -> ( 1 / ( A / B ) ) = ( B / A ) ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co wceq recdivap syl22anc ) ABHIBJKLCHICJ
+        KLMBCNONOCBNOPDFEGBCQR $.
+
+      $( Division into a reciprocal.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      recdivap2d $p |- ( ph -> ( ( 1 / A ) / B ) = ( 1 / ( A x. B ) ) ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co cmul wceq recdivap2 syl22anc ) ABHIBJK
+        LCHICJKLMBNOCNOMBCPONOQDFEGBCRS $.
+
+      $( Cancellation of inverted fractions.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      divcanap6d $p |- ( ph -> ( ( A / B ) x. ( B / A ) ) = 1 ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul c1 wceq divcanap6 syl22anc ) ABHIBJK
+        LCHICJKLBCMNCBMNONPQDFEGBCRS $.
+
+      $( Cancellation in a double division.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      ddcanapd $p |- ( ph -> ( A / ( A / B ) ) = B ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq ddcanap syl22anc ) ABHIBJKLCHICJKLBB
+        CMNMNCODFEGBCPQ $.
+
+      rec11d.5 $e |- ( ph -> ( 1 / A ) = ( 1 / B ) ) $.
+      $( Reciprocal is one-to-one.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      rec11apd $p |- ( ph -> A = B ) $=
+        ( c1 cdiv co wceq cc wcel cc0 cap wbr wb rec11ap syl22anc mpbid ) AIBJK
+        ICJKLZBCLZHABMNBOPQCMNCOPQUBUCRDFEGBCSTUA $.
+    $}
+
     divmuld.3 $e |- ( ph -> C e. CC ) $.
     ${
       divassapd.4 $e |- ( ph -> C # 0 ) $.
