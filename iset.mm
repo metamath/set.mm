@@ -71787,6 +71787,21 @@ $)
     UFVBVHVIVFCKLZMHZVJUOVFDEURVAVHVROVBCBVOVLUGAVFCUHUIVBVQBVIMVBBCVPVBCVOSVBC
     VOUOURUSUTUJRUKULUMUN $.
 
+  $( Comparison of ratio of two nonnegative numbers.  (Contributed by NM,
+     31-Dec-2005.) $)
+  lediv12a $p |- ( ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ A <_ B ) ) /\
+               ( ( C e. RR /\ D e. RR ) /\ ( 0 < C /\ C <_ D ) ) ) ->
+                 ( A / D ) <_ ( B / C ) ) $=
+    ( cr wcel wa cc0 cle wbr clt c1 cdiv cmul syl22anc gt0ap0d rerecclapd recnd
+    co jca simplrr simprrr simprll simprrl simprlr 0red ltletrd simplll simplrl
+    wb lerec mpbid wi simpllr recgt0 syl2anc lemul12a mp2and divrecapd 3brtr4d
+    ltled ) AEFZBEFZGZHAIJZABIJZGZGZCEFZDEFZGZHCKJZCDIJZGZGZGZALDMSZNSZBLCMSZNS
+    ZADMSBCMSIVPVFVQVSIJZVRVTIJZVDVEVFVOUAVPVMWAVHVKVLVMUBZVPVIVLVJHDKJZVMWAUJV
+    HVIVJVNUCZVHVKVLVMUDZVHVIVJVNUEZVPHCDVPUFZWEWGWFWCUGZCDUKOULVPVBVEGVCVQEFZH
+    VQIJZGVSEFVFWAGWBUMVPVBVEVBVCVGVOUHZVDVEVFVOUITVBVCVGVOUNZVPWJWKVPDWGVPDWGW
+    IPZQZVPHVQWHWOVPVJWDHVQKJWGWIDUOUPVATVPCWEVPCWEWFPZQABVQVSUQOURVPADVPAWLRVP
+    DWGRWNUSVPBCVPBWMRVPCWERWPUSUT $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
