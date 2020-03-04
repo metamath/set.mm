@@ -71813,6 +71813,27 @@ $)
     ZCBLMCALMJHULURUSVCUOURVCULUSURUTVBUPUTUQUPUTUPUPNOPUQUPVBUPVAUQCSQRTUAUBUL
     UOUSVFURULUOIZUSIVDVEVGVDUSUJUMVDUKUNVDUIUCPVGUKUSUJUKUOUDUETUFCCABUGUH $.
 
+  $( The reciprocal of a positive number less than 1 is greater than 1.
+     (Contributed by NM, 23-Feb-2005.) $)
+  reclt1 $p |- ( ( A e. RR /\ 0 < A ) -> ( A < 1 <-> 1 < ( 1 / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co wb 1re 0lt1 ltrec mpanr12 breq1i syl6bb
+    1div1e1 ) ABCDAEFGZAHEFZHHIJZHAIJZEFZHUBEFSHBCDHEFTUCKLMAHNOUAHUBERPQ $.
+
+  $( The reciprocal of a positive number greater than 1 is less than 1.
+     (Contributed by NM, 28-Dec-2005.) $)
+  recgt1 $p |- ( ( A e. RR /\ 0 < A ) -> ( 1 < A <-> ( 1 / A ) < 1 ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co wb 1re 0lt1 ltrec mpanl12 breq2i syl6bb
+    1div1e1 ) ABCDAEFGZHAEFZHAIJZHHIJZEFZUAHEFHBCDHEFSTUCKLMHANOUBHUAERPQ $.
+
+  $( The reciprocal of a number greater than 1 is positive and less than 1.
+     (Contributed by NM, 23-Feb-2005.) $)
+  recgt1i $p |- ( ( A e. RR /\ 1 < A ) ->
+               ( 0 < ( 1 / A ) /\ ( 1 / A ) < 1 ) ) $=
+    ( cr wcel c1 clt wbr wa cc0 cdiv co 0lt1 wi 0re 1re mp3an12 mpani imdistani
+    lttr recgt0 syl recgt1 biimpa sylancom jca ) ABCZDAEFZGZHDAIJZEFZUHDEFZUGUE
+    HAEFZGZUIUEUFUKUEHDEFZUFUKKHBCDBCUEUMUFGUKLMNHDAROPQZASTUEUFULUJUNULUFUJAUA
+    UBUCUD $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
