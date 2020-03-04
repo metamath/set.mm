@@ -71775,6 +71775,18 @@ $)
     UFVBVHVIVFCKLZGHZVJUOVFDEURVAVHVQNVBCBVNVLUGAVFCUHUIVBVPBVIGVBBCVOVBCVNTVBC
     VNUOURUSUTUJSUKULUMUN $.
 
+  $( Swap denominator with other side of 'less than or equal to'.  (Contributed
+     by NM, 30-May-2005.) $)
+  lediv23 $p |- ( ( A e. RR /\ ( B e. RR /\ 0 < B ) /\ ( C e. RR /\ 0 < C ) )
+              -> ( ( A / B ) <_ C <-> ( A / C ) <_ B ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cdiv co cle cmul wb simp1 simp2l gt0ap0d recnd
+    simp2r redivclapd simp3l lemul1 syl112anc divcanap1d breq1d remulcld lediv1
+    syld3an2 simp3r divcanap3d breq2d bitrd 3bitrd ) ADEZBDEZFBGHZIZCDEZFCGHZIZ
+    JZABKLZCMHZVCBNLZCBNLZMHZAVFMHZACKLZBMHZVBVCDEUSUPUQVDVGOVBABUOURVAPZUOUPUQ
+    VAQZVBBVLUOUPUQVATZRZUAUOURUSUTUBZVLVMVCCBUCUDVBVEAVFMVBABVBAVKSVBBVLSZVNUE
+    UFVBVHVIVFCKLZMHZVJUOVFDEURVAVHVROVBCBVOVLUGAVFCUHUIVBVQBVIMVBBCVPVBCVOSVBC
+    VOUOURUSUTUJRUKULUMUN $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
