@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Mar-2020
+$( iset.mm - Version of 3-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -71074,6 +71074,56 @@ $)
 
   ${
     div1d.1 $e |- ( ph -> A e. CC ) $.
+    $( A number divided by 1 is itself.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    div1d $p |- ( ph -> ( A / 1 ) = A ) $=
+      ( cc wcel c1 cdiv co wceq div1 syl ) ABDEBFGHBICBJK $.
+
+    ${
+      reccld.2 $e |- ( ph -> A # 0 ) $.
+      $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      recclapd $p |- ( ph -> ( 1 / A ) e. CC ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co recclap syl2anc ) ABEFBGHIJBKLEFCDBMN
+        $.
+
+      $( The reciprocal of a number apart from zero is apart from zero.
+         (Contributed by Jim Kingdon, 3-Mar-2020.) $)
+      recap0d $p |- ( ph -> ( 1 / A ) # 0 ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co recap0 syl2anc ) ABEFBGHIJBKLGHICDBMN
+        $.
+
+      $( Multiplication of a number and its reciprocal.  (Contributed by Jim
+         Kingdon, 3-Mar-2020.) $)
+      recidapd $p |- ( ph -> ( A x. ( 1 / A ) ) = 1 ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co cmul wceq recidap syl2anc ) ABEFBGHIBJ
+        BKLMLJNCDBOP $.
+
+      $( Multiplication of a number and its reciprocal.  (Contributed by Jim
+         Kingdon, 3-Mar-2020.) $)
+      recidap2d $p |- ( ph -> ( ( 1 / A ) x. A ) = 1 ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co cmul wceq recidap2 syl2anc ) ABEFBGHIJ
+        BKLBMLJNCDBOP $.
+
+      $( A number is equal to the reciprocal of its reciprocal.  (Contributed
+         by Jim Kingdon, 3-Mar-2020.) $)
+      recrecapd $p |- ( ph -> ( 1 / ( 1 / A ) ) = A ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co wceq recrecap syl2anc ) ABEFBGHIJJBKLK
+        LBMCDBNO $.
+
+      $( A number divided by itself is one.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      dividapd $p |- ( ph -> ( A / A ) = 1 ) $=
+        ( cc wcel cc0 cap wbr cdiv co c1 wceq dividap syl2anc ) ABEFBGHIBBJKLMC
+        DBNO $.
+
+      $( Division into zero is zero.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      div0apd $p |- ( ph -> ( 0 / A ) = 0 ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq div0ap syl2anc ) ABEFBGHIGBJKGLCDBMN
+        $.
+    $}
+
     divcld.2 $e |- ( ph -> B e. CC ) $.
     ${
       divclapd.3 $e |- ( ph -> B # 0 ) $.
