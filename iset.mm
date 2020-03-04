@@ -71689,6 +71689,15 @@ $)
     CDEBFGHZHZIAJKZBFGZIBJKZIUKJKZFGZUMAFGUJUKCDEUKFGZUIULUOQUJAUFUGUILZUJAUQUF
     UGUIMNZOUHUPUIAPRUHUISUKBTUAUJUNAUMFUJAUJAUQUBURUCUDUE $.
 
+  $( Reciprocal swap in a 'less than or equal to' relation.  (Contributed by
+     NM, 24-Feb-2005.) $)
+  lerec2 $p |- ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) ) ->
+              ( A <_ ( 1 / B ) <-> B <_ ( 1 / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co cle wb ax-ia1 simprl gt0ap0d rerecclapd
+    simprr recgt0 adantl lerec syl12anc recnd recrecapd breq1d bitrd ) ACDEAFGH
+    ZBCDZEBFGZHZHZAIBJKZLGZIULJKZIAJKZLGZBUOLGUKUGULCDEULFGZUMUPMUGUJNUKBUGUHUI
+    OZUKBURUGUHUIRPZQUJUQUGBSTAULUAUBUKUNBUOLUKBUKBURUCUSUDUEUF $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
