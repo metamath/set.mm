@@ -71802,6 +71802,17 @@ $)
     IPZQZVPHVQWHWOVPVJWDHVQKJWGWIDUOUPVATVPCWEVPCWEWFPZQABVQVSUQOURVPADVPAWLRVP
     DWGRWNUSVPBCVPBWMRVPCWERWPUSUT $.
 
+  $( Division of both sides of 'less than or equal to' into a nonnegative
+     number.  (Contributed by Paul Chapman, 7-Sep-2007.) $)
+  lediv2a $p |- ( ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) /\
+                     ( C e. RR /\ 0 <_ C ) ) /\
+                   A <_ B ) -> ( C / B ) <_ ( C / A ) ) $=
+    ( cr wcel cc0 clt wbr wa cle w3a cdiv co pm3.2 pm2.43i adantr anim2i ancoms
+    leid jca ad2antlr 3adantl2 ad2ant2r simplr anim1i 3adantl3 lediv12a syl2anc
+    id ) ADEZFAGHZIZBDEZFBGHZIZCDEZFCJHZIZKABJHZIUPUPIZUQCCJHZIZIZUJUMIZUKUSIZI
+    ZCBLMCALMJHULURUSVCUOURVCULUSURUTVBUPUTUQUPUTUPUPNOPUQUPVBUPVAUQCSQRTUAUBUL
+    UOUSVFURULUOIZUSIVDVEVGVDUSUJUMVDUKUNVDUIUCPVGUKUSUJUKUOUDUETUFCCABUGUH $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
