@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Mar-2020
+$( iset.mm - Version of 5-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -72223,6 +72223,35 @@ $)
     ( ci cmul co caddc cc0 cap wbr cr wcel wa ax-icn mul01i oveq2i eqtri breq2i
     wo 00id 0re wb apreim mpanr12 syl5rbbr ) ACBDEFEZGHIUEGCGDEZFEZHIZAJKBJKLZA
     GHIBGHIRZUGGUEHUGGGFEGUFGGFCMNOSPQUIGJKZUKUHUJUATTABGGUBUCUD $.
+
+  ${
+    $d x y z w A $.
+    $( The real part of a complex number is unique.  Proposition 10-1.3 of
+       [Gleason] p. 130.  (Contributed by NM, 9-May-1999.)  (Proof shortened by
+       Mario Carneiro, 27-May-2016.) $)
+    creur $p |- ( A e. CC -> E! x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $=
+      ( vz vw cc wcel cv ci cmul co caddc wceq cr wrex wreu cnre wa wb wral cru
+      ancoms eqcom ancom 3bitr4g anassrs rexbidva biidd ceqsrexv ad2antlr bitrd
+      ralrimiva reu6i syldan eqeq1 rexbidv reubidv syl5ibrcom rexlimivv syl ) C
+      FGCDHZIEHZJKLKZMZENODNOCAHZIBHZJKLKZMZBNOZANPZDECQVDVJDENNVANGZVBNGZRZVJV
+      DVCVGMZBNOZANPZVKVLVOVEVAMZSZANTVPVMVRANVMVENGZRZVOVFVBMZVQRZBNOZVQVTVNWB
+      BNVMVSVFNGZVNWBSVMVSWDRZRVGVCMZVQWARZVNWBWEVMWFWGSVEVFVAVBUAUBVCVGUCWAVQU
+      DUEUFUGVLWCVQSVKVSVQVQBVBNWAVQUHUIUJUKULVOANVAUMUNVDVIVOANVDVHVNBNCVCVGUO
+      UPUQURUSUT $.
+
+    $( The imaginary part of a complex number is unique.  Proposition 10-1.3 of
+       [Gleason] p. 130.  (Contributed by NM, 9-May-1999.)  (Proof shortened by
+       Mario Carneiro, 27-May-2016.) $)
+    creui $p |- ( A e. CC -> E! y e. RR E. x e. RR A = ( x + ( _i x. y ) ) ) $=
+      ( vz vw cc wcel cv ci cmul co caddc wceq cr wrex wreu cnre wa wb wral cru
+      simpr eqcom ancoms syl5bb anass1rs rexbidva biidd ceqsrexv ad2antrr bitrd
+      ralrimiva reu6i syl2anc eqeq1 rexbidv reubidv syl5ibrcom rexlimivv syl )
+      CFGCDHZIEHZJKLKZMZENODNOCAHZIBHZJKLKZMZANOZBNPZDECQVDVJDENNVANGZVBNGZRZVJ
+      VDVCVGMZANOZBNPZVMVLVOVFVBMZSZBNTVPVKVLUBVMVRBNVMVFNGZRZVOVEVAMZVQRZANOZV
+      QVTVNWBANVMVENGZVSVNWBSVNVGVCMZVMWDVSRZRWBVCVGUCWFVMWEWBSVEVFVAVBUAUDUEUF
+      UGVKWCVQSVLVSVQVQAVANWAVQUHUIUJUKULVOBNVBUMUNVDVIVOBNVDVHVNANCVCVGUOUPUQU
+      RUSUT $.
+  $}
 
 $(
 ###############################################################################
