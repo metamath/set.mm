@@ -71918,14 +71918,7 @@ $)
       $( The reciprocal of a positive number is positive.  Exercise 4 of
          [Apostol] p. 21.  (Contributed by NM, 15-May-1999.) $)
       recgt0ii $p |- 0 < ( 1 / A ) $=
-        ( cc0 c1 cdiv co clt wbr wn recni 0re 1re ax-mp cneg cmul cr wb lt0neg1
-        wcel wceq ax-1cn ax-1ne0 gt0ne0ii divne0i nesymi 0lt1 rereccli renegcli
-        wo ltnsymi mulgt0i mpan2 mulneg1i recidi mulcomli negeqi eqtri syl6breq
-        3imtr4i mto pm3.2ni axlttri mp2an mpbir ) DEAFGZHIZDVFUAZVFDHIZUJJZVHVI
-        VFDEAUBABKZUCABCUDZUEUFVIEDHIZDEHIVMJUGDELMUKNDVFOZHIZDEOZHIZVIVMVODVNA
-        PGZVPHVODAHIDVRHICVNAVFABVLUHZUIBULUMVRVFAPGZOVPVFAVFVSKZVKUNVTEAVFEVKW
-        AAVKVLUOUPUQURUSVFQTZVIVORVSVFSNEQTVMVQRMESNUTVAVBDQTWBVGVJRLVSDVFVCVDV
-        E $.
+        ( cr wcel cc0 clt wbr c1 cdiv co recgt0 mp2an ) ADEFAGHFIAJKGHBCALM $.
     $}
 
     prodgt0.2 $e |- B e. RR $.
