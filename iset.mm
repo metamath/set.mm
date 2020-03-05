@@ -71888,6 +71888,19 @@ $)
     HVAAVBUOUPUTPZVJVAVBVJVAEBVBVAQVIVJUQURUSUAVAURBVBSGVIBUIOZUBZUCZUDVAUQVFEV
     BSGVHUQUTUEVJVMAVBUFUGUJVABVBVIVJVLUHBVBVCUKULVAAVBVAAVKTVAVBVJTVNUMUN $.
 
+  ${
+    $d x A $.
+    $( If a nonnegative number is less than any positive number, it is zero.
+       (Contributed by NM, 11-Feb-2006.) $)
+    squeeze0 $p |- ( ( A e. RR /\ 0 <_ A /\ A. x e. RR ( 0 < x -> A < x ) ) ->
+                   A = 0 ) $=
+      ( cr wcel cc0 cle wbr cv clt wi wral w3a wceq ltnr 3ad2ant1 breq2 imbi12d
+      wn rspcva 3adant2 mtod simp1 0red lenltd mpbird simp2 letri3d mpbir2and )
+      BCDZEBFGZEAHZIGZBUKIGZJZACKZLZBEMBEFGZUJUPUQEBIGZRUPURBBIGZUIUJUSRUOBNOUI
+      UOURUSJZUJUNUTABCUKBMULURUMUSUKBEIPUKBBIPQSTUAUPBEUIUJUOUBZUPUCZUDUEUIUJU
+      OUFUPBEVAVBUGUH $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
