@@ -72048,36 +72048,6 @@ $)
       ( cc0 clt wbr cr wcel cdiv co wb wa ltdiv23 mp3an1 mpanl1 mpanr1 ) GBHIZC
       JKZGCHIZABLMCHIACLMBHINZFBJKZTUAUBOZUCEAJKUDTOUEUCDABCPQRS $.
 
-    $( Less-than-or-equal-to and division relation.  (Lemma for computing upper
-       bounds of products.  The "+ 1" prevents division by zero.)  (Contributed
-       by NM, 17-Sep-2005.) $)
-    ledivp1i $p |- ( ( 0 <_ A /\ 0 <_ C /\ A <_ ( B / ( C + 1 ) ) ) ->
-                  ( A x. C ) <_ B ) $=
-      ( cc0 cle wbr c1 co w3a cmul cr wcel wa mpan2 clt syl recni cdiv readdcli
-      caddc 1re ltp1i ltleii lemul2a mp3an12 3ad2ant1 wi 0re lelttri wb gt0ne0i
-      mpan wne redivclzi lemul1 mp3an1 ex mpani mpcom biimpd imp wceq divcan1zi
-      3syl adantr breqtrd 3adant1 remulcli letri syl2anc ) GAHIZGCHIZABCJUCKZUA
-      KZHIZLACMKZAVPMKZHIZVTBHIZVSBHIVNVOWAVRANOZVNWADCNOZVPNOZWCVNPZWAFCJFUDUB
-      ZWDWEWFLCVPHIWACVPFWGCFUEZUFCVPAUGQUHUOUIVOVRWBVNVOVRPVTVQVPMKZBHVOVRVTWI
-      HIZVOGVPRIZVRWJUJVOCVPRIWKWHGCVPUKFWGULQZWKVRWJVQNOZWKVRWJUMZWKVPGUPZWMVP
-      WGUNZBVPEWGUQSWMWEWKWNWGWMWEWKPZWNWCWMWQWNDAVQVPURUSUTVAVBVCSVDVOWIBVEZVR
-      VOWKWOWRWLWPBVPBETVPWGTVFVGVHVIVJVSVTBACDFVKAVPDWGVKEVLVM $.
-
-    $( Less-than and division relation.  (Lemma for computing upper bounds of
-       products.  The "+ 1" prevents division by zero.)  (Contributed by NM,
-       17-Sep-2005.) $)
-    ltdivp1i $p |- ( ( 0 <_ A /\ 0 <_ C /\ A < ( B / ( C + 1 ) ) ) ->
-                  ( A x. C ) < B ) $=
-      ( cc0 cle wbr c1 co clt w3a cmul cr wcel wa mpan2 lelttri syl caddc ltp1i
-      cdiv 1re readdcli ltleii lemul2a mp3an12 mpan 3ad2ant1 wi 0re wne gt0ne0i
-      wb redivclzi ltmul1 mp3an1 mpanr1 mpancom biimpd imp wceq recni divcan1zi
-      3syl adantr breqtrd 3adant1 remulcli syl2anc ) GAHIZGCHIZABCJUAKZUCKZLIZM
-      ACNKZAVNNKZHIZVRBLIZVQBLIVLVMVSVPAOPZVLVSDCOPZVNOPZWAVLQZVSFCJFUDUEZWBWCW
-      DMCVNHIVSCVNFWECFUBZUFCVNAUGRUHUIUJVMVPVTVLVMVPQVRVOVNNKZBLVMVPVRWGLIZVMG
-      VNLIZVPWHUKVMCVNLIWIWFGCVNULFWESRZWIVPWHVOOPZWIVPWHUOZWIVNGUMZWKVNWEUNZBV
-      NEWEUPTWKWCWIWLWEWAWKWCWIQWLDAVOVNUQURUSUTVATVBVMWGBVCZVPVMWIWMWOWJWNBVNB
-      EVDVNWEVDVEVFVGVHVIVQVRBACDFVJAVNDWEVJESVK $.
-
     ${
       ltdiv23i.4 $e |- 0 < B $.
       ltdiv23i.5 $e |- 0 < C $.
