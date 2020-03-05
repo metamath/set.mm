@@ -71867,6 +71867,15 @@ $)
     GUKUJFGUHUIULUGUDUIULSBAKLMUHABUBUCUGNZUDUEUFOZPUHUKUJUHAAUMUMTUHBBUNUNTPUA
     $.
 
+  $( The square of a nonnegative number is a one-to-one function.  (Contributed
+     by NM, 29-Jul-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  msq11 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) ) ->
+              ( ( A x. A ) = ( B x. B ) <-> A = B ) ) $=
+    ( cr wcel cc0 cle wbr cmul wceq le2msq ancoms anbi12d simpll simprl letri3d
+    wa co wb remulcld 3bitr4rd ) ACDZEAFGZPZBCDZEBFGZPZPZABFGZBAFGZPAAHQZBBHQZF
+    GZUKUJFGZPABIUJUKIUGUHULUIUMABJUFUCUIUMRBAJKLUGABUAUBUFMZUCUDUENZOUGUJUKUGA
+    AUNUNSUGBBUOUOSOT $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
