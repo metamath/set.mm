@@ -71858,6 +71858,15 @@ $)
     EFZVKVFVGVGHKJZVHEVFWBVGWFEFZSVFVOVNWBWGQMVQHVGNRUMVFVGTCHTCWFVHUNVFVGVQUOU
     PVGHUQOURVFVDVEVSVTWEVKQVPVDVEUSWAWDAVHVBUTPVC $.
 
+  $( The square function on nonnegative reals is monotonic.  (Contributed by
+     NM, 3-Aug-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  le2msq $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) ) ->
+              ( A <_ B <-> ( A x. A ) <_ ( B x. B ) ) ) $=
+    ( cr wcel cc0 cle wbr wa clt cmul lt2msq ancoms notbid simpll simprl lenltd
+    wn co wb remulcld 3bitr4d ) ACDZEAFGZHZBCDZEBFGZHZHZBAIGZQBBJRZAAJRZIGZQABF
+    GUKUJFGUHUIULUGUDUIULSBAKLMUHABUBUCUGNZUDUEUFOZPUHUKUJUHAAUMUMTUHBBUNUNTPUA
+    $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
