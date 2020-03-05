@@ -71876,6 +71876,18 @@ $)
     GZUKUJFGZPABIUJUKIUGUHULUIUMABJUFUCUIUMRBAJKLUGABUAUBUFMZUCUDUENZOUGUJUKUGA
     AUNUNSUGBBUOUOSOT $.
 
+  $( Less-than-or-equal-to and division relation.  (Lemma for computing upper
+     bounds of products.  The "+ 1" prevents division by zero.)  (Contributed
+     by NM, 28-Sep-2005.) $)
+  ledivp1 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) ) ->
+                  ( ( A / ( B + 1 ) ) x. B ) <_ A ) $=
+    ( cr wcel cc0 cle wbr wa c1 caddc cdiv cmul simprl peano2re syl simpll 0red
+    co clt recnd simprr lelttrd gt0ap0d redivclapd ax-ia1 divge0 syl12anc ltled
+    ltp1 jca lemul2a syl31anc divcanap1d breqtrd ) ACDZEAFGZHZBCDZEBFGZHZHZABIJ
+    RZKRZBLRZVCVBLRZAFVAURVBCDZVCCDZEVCFGZHBVBFGVDVEFGUQURUSMZVAURVFVIBNOZVAVGV
+    HVAAVBUOUPUTPZVJVAVBVJVAEBVBVAQVIVJUQURUSUAVAURBVBSGVIBUIOZUBZUCZUDVAUQVFEV
+    BSGVHUQUTUEVJVMAVBUFUGUJVABVBVIVJVLUHBVBVCUKULVAAVBVAAVKTVAVBVJTVNUMUN $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
