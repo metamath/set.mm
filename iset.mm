@@ -72202,6 +72202,21 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Imaginary and complex number properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The real representation of complex numbers is apart from zero iff one of
+     its terms is apart from zero.  (Contributed by Jim Kingdon,
+     5-Mar-2020.) $)
+  crap0 $p |- ( ( A e. RR /\ B e. RR ) ->
+      ( ( A # 0 \/ B # 0 ) <-> ( A + ( _i x. B ) ) # 0 ) ) $=
+    ( ci cmul co caddc cc0 cap wbr cr wcel wa ax-icn mul01i oveq2i eqtri breq2i
+    wo 00id 0re wb apreim mpanr12 syl5rbbr ) ACBDEFEZGHIUEGCGDEZFEZHIZAJKBJKLZA
+    GHIBGHIRZUGGUEHUGGGFEGUFGGFCMNOSPQUIGJKZUKUHUJUATTABGGUBUCUD $.
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
