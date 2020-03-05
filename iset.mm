@@ -71845,6 +71845,19 @@ $)
     LFUSVOUEHAUFUIUJZUGZUHUTVAVKUKULUTVBBCVNVABCVOVCVFUMUTAVAVHVMVQUNVLVMVPVBHV
     AUOUPUQ $.
 
+  $( Given a positive number ` A ` , construct a new positive number less than
+     both ` A ` and 1.  (Contributed by NM, 28-Dec-2005.) $)
+  recreclt $p |- ( ( A e. RR /\ 0 < A ) ->
+        ( ( 1 / ( 1 + ( 1 / A ) ) ) < 1 /\ ( 1 / ( 1 + ( 1 / A ) ) ) < A ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co caddc recgt0 1re ltaddpos sylancl mpbid
+    wb sylancr 0lt1 cc ax-ia1 gt0ap0 rerecclapd readdcl wi 0re lttr mp3an12 syl
+    mpani recgt1 syl2anc mpbii wceq recnd ax-1cn addcom breqtrd ax-ia2 syl22anc
+    mpd ltrec1 jca ) ABCZDAEFZGZHHHAIJZKJZIJZHEFZVIAEFZVFHVHEFZVJVFDVGEFZVLALVF
+    VGBCZHBCZVMVLQVFAVDVEUAZAUBUCZMVGHNOPZVFVHBCZDVHEFZVLVJQVFVOVNVSMVQHVGUDRZV
+    FVLVTVRVFDHEFZVLVTSVFVSWBVLGVTUEZWADBCVOVSWCUFMDHVHUGUHUIUJVAZVHUKULPVFVGVH
+    EFZVKVFVGVGHKJZVHEVFWBVGWFEFZSVFVOVNWBWGQMVQHVGNRUMVFVGTCHTCWFVHUNVFVGVQUOU
+    PVGHUQOURVFVDVEVSVTWEVKQVPVDVEUSWAWDAVHVBUTPVC $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
