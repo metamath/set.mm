@@ -4194,6 +4194,14 @@ $)
       ( exp31 com13 imp31 ) CBADABCDABCDEFGH $.
   $}
 
+  ${
+    anass1rs.1 $e |- ( ( ph /\ ( ps /\ ch ) ) -> th ) $.
+    $( Commutative-associative law for conjunction in an antecedent.
+       (Contributed by Jeff Madsen, 19-Jun-2011.) $)
+    anass1rs $p |- ( ( ( ph /\ ch ) /\ ps ) -> th ) $=
+      ( anassrs an32s ) ABCDABCDEFG $.
+  $}
+
   $( Absorption into embedded conjunct.  (Contributed by NM, 4-Sep-1995.)
      (Proof shortened by Wolf Lammen, 16-Nov-2013.) $)
   anabs1 $p |- ( ( ( ph /\ ps ) /\ ph ) <-> ( ph /\ ps ) ) $=
