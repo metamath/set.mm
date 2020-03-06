@@ -1140,6 +1140,16 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TR>
 
 <TR>
+<TD>neor</TD>
+<TD>~ pm2.53 , ~ ori , ~ ord </TD>
+</TR>
+
+<TR>
+<TD>neorian</TD>
+<TD>~ pm3.14 </TD>
+</TR>
+
+<TR>
 <TD>rexnal</TD>
 <TD>~ rexnalim </TD>
 </TR>
@@ -1312,6 +1322,12 @@ favor of theorems in deduction form.</TD>
 <TD>csbexg , csbex</TD>
 <TD>~ csbexga , ~ csbexa </TD>
 <TD>set.mm uses case elimination to remove the ` A e. _V ` condition.</TD>
+</TR>
+
+<TR>
+<TD>intabs</TD>
+<TD><I>none</I></TD>
+<TD>Lightly used in set.mm, and the set.mm proof is not intuitionistic</TD>
 </TR>
 
 <TR>
@@ -1673,6 +1689,19 @@ found in ~ ovi3 .</TD>
 <TR>
 <TD>caovmo</TD>
 <TD>~ caovimo </TD>
+</TR>
+
+<TR>
+<TD>ofval</TD>
+<TD>~ fnofval </TD>
+</TR>
+
+<TR>
+<TD>offn , offveq , caofid0l , caofid0r , caofid1 , caofid2</TD>
+<TD><I>none</I></TD>
+<TD>Assuming we really need to add conditions that the operations
+are functions being evaluated within their domains, there would be a
+fair bit of intuitionizing.</TD>
 </TR>
 
 <TR>
@@ -3017,10 +3046,30 @@ divcan3i , divcan4i </TD>
 </TR>
 
 <TR>
+<TD>reccld , rec0d , recidd , recid2d , recrecd ,
+dividd , div0d</TD>
+<TD>~ recclapd , ~ recap0d , ~ recidapd , ~ recidap2d , ~ recrecapd ,
+~ dividapd , ~ div0apd </TD>
+</TR>
+
+<TR>
 <TD>divcld , divcan1d , divcan2d , divrecd , divrec2d ,
 divcan3d , divcan4d</TD>
 <TD>~ divclapd , ~ divcanap1d , ~ divcanap2d , ~ divrecapd , ~ divrecap2d ,
 ~ divcanap3d , ~ divcanap4d </TD>
+</TR>
+
+<TR>
+<TD>divne0d , recdivd , recdiv2d , divcan6d , ddcand , rec11d</TD>
+<TD>~ divap0d , ~ recdivapd , ~ recdivap2d , ~ divcanap6d , ~ ddcanapd ,
+~ rec11apd </TD>
+</TR>
+
+<TR>
+<TD>divmul2d, divmul3d, divassd, div12d, div23d,
+divdird, divsubdird, div11d</TD>
+<TD>~ divmulap2d , ~ divmulap3d , ~ divassapd , ~ div12apd , ~ div23apd ,
+~ divdirapd , ~ divsubdirapd , ~ div11apd </TD>
 </TR>
 
 <TR>
@@ -3033,6 +3082,29 @@ divcan3d , divcan4d</TD>
 <TD><I>none</I></TD>
 <TD>Even in set.mm, the weak deduction theorem is discouraged in
 favor of theorems in deduction form.</TD>
+</TR>
+
+<TR>
+<TD>mulge0b , mulle0b , mulsuble0b</TD>
+<TD><I>none</I></TD>
+<TD>Presumably unprovable for reasons analogous to mul0or.</TD>
+</TR>
+
+<TR>
+<TD>ledivp1i , ltdivp1i</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could be proved, but unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>crne0</TD>
+<TD>~ crap0 </TD>
+</TR>
+
+<TR>
+<TD>ofsubeq0 , ofnegsub , ofsubge0</TD>
+<TD><I>none</I></TD>
+<TD>Depend on ofval and/or offn .</TD>
 </TR>
 
 </TABLE>

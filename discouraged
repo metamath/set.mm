@@ -487,7 +487,7 @@
 "ablogrpo" is used by "cnnv".
 "ablogrpo" is used by "cnnvba".
 "ablogrpo" is used by "cnrngo".
-"ablogrpo" is used by "efghgrp".
+"ablogrpo" is used by "efghgrpOLD".
 "ablogrpo" is used by "ghablo".
 "ablogrpo" is used by "gxdi".
 "ablogrpo" is used by "hhba".
@@ -925,7 +925,7 @@
 "ax-addf" is used by "cnnv".
 "ax-addf" is used by "cnnvba".
 "ax-addf" is used by "cnrngo".
-"ax-addf" is used by "efghgrp".
+"ax-addf" is used by "efghgrpOLD".
 "ax-addf" is used by "itg1addlem4".
 "ax-addf" is used by "raddcn".
 "ax-addf" is used by "readdsubgo".
@@ -1362,7 +1362,7 @@
 "ax-mulf" is used by "cncvc".
 "ax-mulf" is used by "cnrngo".
 "ax-mulf" is used by "dvdsmulf1o".
-"ax-mulf" is used by "efghgrp".
+"ax-mulf" is used by "efghgrpOLD".
 "ax-mulf" is used by "fsumdvdsmul".
 "ax-mulf" is used by "iimulcn".
 "ax-mulf" is used by "mulcn".
@@ -4201,7 +4201,7 @@
 "cnaddablo" is used by "cnnv".
 "cnaddablo" is used by "cnnvba".
 "cnaddablo" is used by "cnrngo".
-"cnaddablo" is used by "efghgrp".
+"cnaddablo" is used by "efghgrpOLD".
 "cnaddablo" is used by "readdsubgo".
 "cnaddablo" is used by "zaddsubgo".
 "cnbn" is used by "cnchl".
@@ -5702,7 +5702,7 @@
 "eexinst01" is used by "vk15.4j".
 "eexinst11" is used by "exinst11".
 "eexinst11" is used by "vk15.4j".
-"efghgrp" is used by "circgrpOLD".
+"efghgrpOLD" is used by "circgrpOLD".
 "eighmre" is used by "eighmorth".
 "eigorth" is used by "eighmorth".
 "eigorthi" is used by "eigorth".
@@ -6167,8 +6167,8 @@
 "ghomlin" is used by "ghomdiv".
 "ghomlin" is used by "ghomf1olem".
 "ghomlin" is used by "ghomid".
-"ghsubablo" is used by "efghgrp".
-"ghsubgolem" is used by "ghsubablo".
+"ghsubabloOLD" is used by "efghgrpOLD".
+"ghsubgolem" is used by "ghsubabloOLD".
 "ghsubgolem" is used by "ghsubgo".
 "gidsn" is used by "zrdivrng".
 "gidval" is used by "exidresid".
@@ -6502,7 +6502,7 @@
 "grporn" is used by "cnnv".
 "grporn" is used by "cnnvba".
 "grporn" is used by "cnrngo".
-"grporn" is used by "efghgrp".
+"grporn" is used by "efghgrpOLD".
 "grporn" is used by "hhba".
 "grporn" is used by "hhnv".
 "grporn" is used by "hhph".
@@ -8456,8 +8456,6 @@
 "ifchhv" is used by "spansnj".
 "ifeq123d" is used by "fourierdlem103".
 "ifeq123d" is used by "fourierdlem104".
-"ifeq123d" is used by "fourierdlem81".
-"ifeq123d" is used by "fouriersw".
 "ifeq123d" is used by "icccncfext".
 "ifhvhv0" is used by "bcs".
 "ifhvhv0" is used by "eigorth".
@@ -12137,7 +12135,7 @@
 "relrngo" is used by "rngoablo2".
 "relrngo" is used by "rngoi".
 "relrngo" is used by "rngosn3".
-"resgrprn" is used by "efghgrp".
+"resgrprn" is used by "efghgrpOLD".
 "resgrprn" is used by "ghablo".
 "retbwax2" is used by "merco1lem2".
 "retbwax2" is used by "merco1lem3".
@@ -13046,7 +13044,7 @@
 "strlem4" is used by "strlem6".
 "strlem5" is used by "strlem6".
 "strlem6" is used by "stri".
-"subgoablo" is used by "efghgrp".
+"subgoablo" is used by "efghgrpOLD".
 "subgoid" is used by "subgoinv".
 "subgoov" is used by "ghomgsg".
 "subgoov" is used by "ghsubgolem".
@@ -15664,7 +15662,7 @@ New usage of "eelTT1" is discouraged (0 uses).
 New usage of "eelTTT" is discouraged (0 uses).
 New usage of "eexinst01" is discouraged (2 uses).
 New usage of "eexinst11" is discouraged (2 uses).
-New usage of "efghgrp" is discouraged (1 uses).
+New usage of "efghgrpOLD" is discouraged (1 uses).
 New usage of "eighmorth" is discouraged (0 uses).
 New usage of "eighmre" is discouraged (1 uses).
 New usage of "eigorth" is discouraged (1 uses).
@@ -15910,7 +15908,7 @@ New usage of "ghgrplem1" is discouraged (2 uses).
 New usage of "ghgrplem2" is discouraged (2 uses).
 New usage of "ghomid" is discouraged (3 uses).
 New usage of "ghomlin" is discouraged (3 uses).
-New usage of "ghsubablo" is discouraged (1 uses).
+New usage of "ghsubabloOLD" is discouraged (1 uses).
 New usage of "ghsubgo" is discouraged (0 uses).
 New usage of "ghsubgolem" is discouraged (2 uses).
 New usage of "gidsn" is discouraged (1 uses).
@@ -16484,7 +16482,7 @@ New usage of "idn3" is discouraged (12 uses).
 New usage of "idrval" is discouraged (2 uses).
 New usage of "idunop" is discouraged (1 uses).
 New usage of "ifchhv" is discouraged (22 uses).
-New usage of "ifeq123d" is discouraged (5 uses).
+New usage of "ifeq123d" is discouraged (3 uses).
 New usage of "ifhvhv0" is discouraged (48 uses).
 New usage of "iidn3" is discouraged (1 uses).
 New usage of "iin1" is discouraged (3 uses).
