@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Mar-2020
+$( iset.mm - Version of 5-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -4192,6 +4192,14 @@ $)
     $( Swap two conjuncts in antecedent.  (Contributed by NM, 31-May-2006.) $)
     an31s $p |- ( ( ( ch /\ ps ) /\ ph ) -> th ) $=
       ( exp31 com13 imp31 ) CBADABCDABCDEFGH $.
+  $}
+
+  ${
+    anass1rs.1 $e |- ( ( ph /\ ( ps /\ ch ) ) -> th ) $.
+    $( Commutative-associative law for conjunction in an antecedent.
+       (Contributed by Jeff Madsen, 19-Jun-2011.) $)
+    anass1rs $p |- ( ( ( ph /\ ch ) /\ ps ) -> th ) $=
+      ( anassrs an32s ) ABCDABCDEFG $.
   $}
 
   $( Absorption into embedded conjunct.  (Contributed by NM, 4-Sep-1995.)
@@ -72199,6 +72207,82 @@ $)
         OZDENOZBDPQCEPQNOZLMABRSZUABNOZTCRSDRSERSZUAENOZTUGUHTUIUBAUJUKFJUCGHAU
         LUMIKUCBCDEUDUEUF $.
     $}
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Imaginary and complex number properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The real representation of complex numbers is apart from zero iff one of
+     its terms is apart from zero.  (Contributed by Jim Kingdon,
+     5-Mar-2020.) $)
+  crap0 $p |- ( ( A e. RR /\ B e. RR ) ->
+      ( ( A # 0 \/ B # 0 ) <-> ( A + ( _i x. B ) ) # 0 ) ) $=
+    ( ci cmul co caddc cc0 cap wbr cr wcel wa ax-icn mul01i oveq2i eqtri breq2i
+    wo 00id 0re wb apreim mpanr12 syl5rbbr ) ACBDEFEZGHIUEGCGDEZFEZHIZAJKBJKLZA
+    GHIBGHIRZUGGUEHUGGGFEGUFGGFCMNOSPQUIGJKZUKUHUJUATTABGGUBUCUD $.
+
+  ${
+    $d x y z w A $.
+    $( The real part of a complex number is unique.  Proposition 10-1.3 of
+       [Gleason] p. 130.  (Contributed by NM, 9-May-1999.)  (Proof shortened by
+       Mario Carneiro, 27-May-2016.) $)
+    creur $p |- ( A e. CC -> E! x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $=
+      ( vz vw cc wcel cv ci cmul co caddc wceq cr wrex wreu cnre wa wb wral cru
+      ancoms eqcom ancom 3bitr4g anassrs rexbidva biidd ceqsrexv ad2antlr bitrd
+      ralrimiva reu6i syldan eqeq1 rexbidv reubidv syl5ibrcom rexlimivv syl ) C
+      FGCDHZIEHZJKLKZMZENODNOCAHZIBHZJKLKZMZBNOZANPZDECQVDVJDENNVANGZVBNGZRZVJV
+      DVCVGMZBNOZANPZVKVLVOVEVAMZSZANTVPVMVRANVMVENGZRZVOVFVBMZVQRZBNOZVQVTVNWB
+      BNVMVSVFNGZVNWBSVMVSWDRZRVGVCMZVQWARZVNWBWEVMWFWGSVEVFVAVBUAUBVCVGUCWAVQU
+      DUEUFUGVLWCVQSVKVSVQVQBVBNWAVQUHUIUJUKULVOANVAUMUNVDVIVOANVDVHVNBNCVCVGUO
+      UPUQURUSUT $.
+
+    $( The imaginary part of a complex number is unique.  Proposition 10-1.3 of
+       [Gleason] p. 130.  (Contributed by NM, 9-May-1999.)  (Proof shortened by
+       Mario Carneiro, 27-May-2016.) $)
+    creui $p |- ( A e. CC -> E! y e. RR E. x e. RR A = ( x + ( _i x. y ) ) ) $=
+      ( vz vw cc wcel cv ci cmul co caddc wceq cr wrex wreu cnre wa wb wral cru
+      simpr eqcom ancoms syl5bb anass1rs rexbidva biidd ceqsrexv ad2antrr bitrd
+      ralrimiva reu6i syl2anc eqeq1 rexbidv reubidv syl5ibrcom rexlimivv syl )
+      CFGCDHZIEHZJKLKZMZENODNOCAHZIBHZJKLKZMZANOZBNPZDECQVDVJDENNVANGZVBNGZRZVJ
+      VDVCVGMZANOZBNPZVMVLVOVFVBMZSZBNTVPVKVLUBVMVRBNVMVFNGZRZVOVEVAMZVQRZANOZV
+      QVTVNWBANVMVENGZVSVNWBSVNVGVCMZVMWDVSRZRWBVCVGUCWFVMWEWBSVEVFVAVBUAUDUEUF
+      UGVKWCVQSVLVSVQVQAVANWAVQUHUIUJUKULVOBNVBUMUNVDVIVOBNVDVHVNANCVCVGUOUPUQU
+      RUSUT $.
+  $}
+
+  ${
+    $d x y z A $.
+    $( The complex conjugate of a complex number is unique.  (Contributed by
+       Mario Carneiro, 6-Nov-2013.) $)
+    cju $p |- ( A e. CC -> E! x e. CC
+               ( ( A + x ) e. RR /\ ( _i x. ( A - x ) ) e. RR ) ) $=
+      ( vy vz cc wcel cv caddc co cr ci cmin cmul wrex wceq ax-icn oveq2d oveq2
+      wa eleq1d wi wral wreu cnre recn mulcl sylancr subcl syl2an adantr adantl
+      ppncand readdcl anidms eqeltrd pnncand a1i adddid eqtr4d addcld mulass c1
+      mp3an12 syl cneg ixi 1re renegcli eqeltri readdcld remulcl anbi12d rspcev
+      simpr syl12anc rexbidv syl5ibrcom rexlimivv an4 cc0 resubcl pnpcan syl5ib
+      ancoms adantrl adantrr subdid nnncan1 3com23 eqtr3d anim12d subeq0 biimpd
+      oveq1 3expb rimul 3syld syl5bi ralrimivva reu4 sylanbrc ) BEFZBAGZHIZJFZK
+      BXCLIZMIZJFZSZAENZXIBCGZHIZJFZKBXKLIZMIZJFZSZSZXCXKOZUAZCEUBAEUBXIAEUCXBB
+      XKKDGZMIZHIZOZDJNCJNXJCDBUDYDXJCDJJXKJFZYAJFZSZXJYDYCXCHIZJFZKYCXCLIZMIZJ
+      FZSZAENZYGXKYBLIZEFZYCYOHIZJFZKYCYOLIZMIZJFZYNYEXKEFZYBEFZYPYFXKUEZYFKEFZ
+      YAEFZUUCPYAUEZKYAUFUGZXKYBUHUIYGYQXKXKHIZJYGXKYBXKYEUUBYFUUDUJZYFUUCYEUUH
+      UKZUUJULYEUUIJFZYFYEUULXKXKUMUNUJUOYGYTKKMIZYAYAHIZMIZJYGYTKKUUNMIZMIZUUO
+      YGYSUUPKMYGYSYBYBHIUUPYGXKYBYBUUJUUKUUKUPYGKYAYAUUEYGPUQYFUUFYEUUGUKZUURU
+      RUSQYGUUNEFZUUOUUQOZYGYAYAUURUURUTUUEUUEUUSUUTPPKKUUNVAVCVDUSYGUUMJFUUNJF
+      UUOJFUUMVBVEJVFVBVGVHVIYGYAYAYEYFVNZUVAVJUUMUUNVKUGUOYMYRUUASAYOEXCYOOZYI
+      YRYLUUAUVBYHYQJXCYOYCHRTUVBYKYTJUVBYJYSKMXCYOYCLRQTVLVMVOYDXIYMAEYDXEYIXH
+      YLYDXDYHJBYCXCHWNTYDXGYKJYDXFYJKMBYCXCLWNQTVLVPVQVRVDXBXTACEEXRXEXMSZXHXP
+      SZSZXBXCEFZUUBSZSZXSXEXHXMXPVSUVHUVEXCXKLIZJFZKUVIMIZJFZSZUVIVTOZXSUVHUVC
+      UVJUVDUVLUVCXDXLLIZJFUVHUVJXDXLWAUVHUVOUVIJXBUVFUUBUVOUVIOBXCXKWBWOTWCUVD
+      XOXGLIZJFZUVHUVLXPXHUVQXOXGWAWDUVHUVPUVKJUVHKXNXFLIZMIUVPUVKUVHKXNXFUUEUV
+      HPUQXBUUBXNEFUVFBXKUHWEXBUVFXFEFUUBBXCUHWFWGUVHUVRUVIKMXBUVFUUBUVRUVIOZXB
+      UUBUVFUVSBXKXCWHWIWOQWJTWCWKUVMUVNUAUVHUVIWPUQUVGUVNXSUAXBUVGUVNXSXCXKWLW
+      MUKWQWRWSXIXQACEXSXEXMXHXPXSXDXLJXCXKBHRTXSXGXOJXSXFXNKMXCXKBLRQTVLWTXA
+      $.
   $}
 
 $(
