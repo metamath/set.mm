@@ -67,6 +67,7 @@
 "axresscn" is used by "ax1cn".
 "df-div" is used by "divvalap".
 "df-ilim" is used by "dflim2".
+"df-inn" is used by "dfnn2".
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
 "df-mnf" is used by "mnfnre".
@@ -240,6 +241,7 @@ New usage of "bj-omex2" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
 New usage of "df-div" is discouraged (1 uses).
 New usage of "df-ilim" is discouraged (1 uses).
+New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
 New usage of "df-iord" is discouraged (1 uses).
 New usage of "df-mnf" is discouraged (1 uses).

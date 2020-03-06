@@ -72286,6 +72286,54 @@ $)
   $}
 
 $(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+        Integer sets
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Positive integers (as a subset of complex numbers)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c NN $. $( The set of positive integers (blackboard bold N). $)
+
+  $( Extend class notation to include the class of positive integers. $)
+  cn $a class NN $.
+
+  ${
+    $d x y z A $.
+    $( Definition of the set of positive integers.  For naming consistency with
+       the Metamath Proof Explorer usages should refer to ~ dfnn2 instead.
+       (Contributed by Jeff Hankins, 12-Sep-2013.)  (Revised by Mario Carneiro,
+       3-May-2014.)  (New usage is discouraged.) $)
+    df-inn $a |- NN = |^| { x | ( 1 e. x /\ A. y e. x ( y + 1 ) e. x ) } $.
+
+    $( Definition of the set of positive integers.  Another name for
+       ~ df-inn .  (Contributed by Jeff Hankins, 12-Sep-2013.)  (Revised by
+       Mario Carneiro, 3-May-2014.) $)
+    dfnn2 $p |- NN = |^| { x | ( 1 e. x /\ A. y e. x ( y + 1 ) e. x ) } $=
+      ( df-inn ) ABC $.
+  $}
+
+  ${
+    $d n x y z A $.
+    $( Peano's inductive postulate.  Theorem I.36 (principle of mathematical
+       induction) of [Apostol] p. 34.  (Contributed by NM, 10-Jan-1997.)
+       (Revised by Mario Carneiro, 17-Nov-2014.) $)
+    peano5nni $p |- ( ( 1 e. A /\ A. x e. A ( x + 1 ) e. A ) -> NN C_ A ) $=
+      ( vy c1 wcel cv caddc co wral wa cn cr cin wss elin ax-mp syl cvv eleq2
+      wi 1re biimpri mpan2 inss1 ssralv inss2 1red readdcld simplbi2com ralimia
+      sseli reex inex2 wceq raleqbi1dv anbi12d elabg cint dfnn2 intss1 syl5eqss
+      cab syl6bir syl2an syl6ss ) DBEZAFZDGHZBEZABIZJKBLMZBVFDVKEZVHVKEZAVKIZKV
+      KNZVJVFDLEZVLUAVLVFVPJDBLOUBUCVJVIAVKIZVNVKBNVJVQTBLUDZVIAVKBUEPVIVMAVKVG
+      VKEZVHLEZVIVMTVSVGDVKLVGBLUFUKVSUGUHVMVIVTVHBLOUIQUJQVKREZVLVNJZVOTLBULUM
+      WAWBVKDCFZEZVHWCEZAWCIZJZCVBZEZVOWGWBCVKRWCVKUNWDVLWFVNWCVKDSWEVMAWCVKWCV
+      KVHSUOUPUQWIKWHURVKCAUSVKWHUTVAVCPVDVRVE $.
+  $}
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
@@ -73486,6 +73534,10 @@ htmldef "#" as ' # ';
 htmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   althtmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   latexdef "#RR" as "\apart_\mathbb{R}";
+htmldef "NN" as "<IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT=' NN' TITLE='NN'>";
+  althtmldef "NN" as '&#8469;'; /* &Nopf; */
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "NN" as "\mathbb{N}";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
