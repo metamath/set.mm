@@ -71845,6 +71845,362 @@ $)
     LFUSVOUEHAUFUIUJZUGZUHUTVAVKUKULUTVBBCVNVABCVOVCVFUMUTAVAVHVMVQUNVLVMVPVBHV
     AUOUPUQ $.
 
+  $( Given a positive number ` A ` , construct a new positive number less than
+     both ` A ` and 1.  (Contributed by NM, 28-Dec-2005.) $)
+  recreclt $p |- ( ( A e. RR /\ 0 < A ) ->
+        ( ( 1 / ( 1 + ( 1 / A ) ) ) < 1 /\ ( 1 / ( 1 + ( 1 / A ) ) ) < A ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co caddc recgt0 1re ltaddpos sylancl mpbid
+    wb sylancr 0lt1 cc ax-ia1 gt0ap0 rerecclapd readdcl wi 0re lttr mp3an12 syl
+    mpani recgt1 syl2anc mpbii wceq recnd ax-1cn addcom breqtrd ax-ia2 syl22anc
+    mpd ltrec1 jca ) ABCZDAEFZGZHHHAIJZKJZIJZHEFZVIAEFZVFHVHEFZVJVFDVGEFZVLALVF
+    VGBCZHBCZVMVLQVFAVDVEUAZAUBUCZMVGHNOPZVFVHBCZDVHEFZVLVJQVFVOVNVSMVQHVGUDRZV
+    FVLVTVRVFDHEFZVLVTSVFVSWBVLGVTUEZWADBCVOVSWCUFMDHVHUGUHUIUJVAZVHUKULPVFVGVH
+    EFZVKVFVGVGHKJZVHEVFWBVGWFEFZSVFVOVNWBWGQMVQHVGNRUMVFVGTCHTCWFVHUNVFVGVQUOU
+    PVGHUQOURVFVDVEVSVTWEVKQVPVDVEUSWAWDAVHVBUTPVC $.
+
+  $( The square function on nonnegative reals is monotonic.  (Contributed by
+     NM, 3-Aug-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  le2msq $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) ) ->
+              ( A <_ B <-> ( A x. A ) <_ ( B x. B ) ) ) $=
+    ( cr wcel cc0 cle wbr wa clt cmul lt2msq ancoms notbid simpll simprl lenltd
+    wn co wb remulcld 3bitr4d ) ACDZEAFGZHZBCDZEBFGZHZHZBAIGZQBBJRZAAJRZIGZQABF
+    GUKUJFGUHUIULUGUDUIULSBAKLMUHABUBUCUGNZUDUEUFOZPUHUKUJUHAAUMUMTUHBBUNUNTPUA
+    $.
+
+  $( The square of a nonnegative number is a one-to-one function.  (Contributed
+     by NM, 29-Jul-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  msq11 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) ) ->
+              ( ( A x. A ) = ( B x. B ) <-> A = B ) ) $=
+    ( cr wcel cc0 cle wbr cmul wceq le2msq ancoms anbi12d simpll simprl letri3d
+    wa co wb remulcld 3bitr4rd ) ACDZEAFGZPZBCDZEBFGZPZPZABFGZBAFGZPAAHQZBBHQZF
+    GZUKUJFGZPABIUJUKIUGUHULUIUMABJUFUCUIUMRBAJKLUGABUAUBUFMZUCUDUENZOUGUJUKUGA
+    AUNUNSUGBBUOUOSOT $.
+
+  $( Less-than-or-equal-to and division relation.  (Lemma for computing upper
+     bounds of products.  The "+ 1" prevents division by zero.)  (Contributed
+     by NM, 28-Sep-2005.) $)
+  ledivp1 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) ) ->
+                  ( ( A / ( B + 1 ) ) x. B ) <_ A ) $=
+    ( cr wcel cc0 cle wbr wa c1 caddc cdiv cmul simprl peano2re syl simpll 0red
+    co clt recnd simprr lelttrd gt0ap0d redivclapd ax-ia1 divge0 syl12anc ltled
+    ltp1 jca lemul2a syl31anc divcanap1d breqtrd ) ACDZEAFGZHZBCDZEBFGZHZHZABIJ
+    RZKRZBLRZVCVBLRZAFVAURVBCDZVCCDZEVCFGZHBVBFGVDVEFGUQURUSMZVAURVFVIBNOZVAVGV
+    HVAAVBUOUPUTPZVJVAVBVJVAEBVBVAQVIVJUQURUSUAVAURBVBSGVIBUIOZUBZUCZUDVAUQVFEV
+    BSGVHUQUTUEVJVMAVBUFUGUJVABVBVIVJVLUHBVBVCUKULVAAVBVAAVKTVAVBVJTVNUMUN $.
+
+  ${
+    $d x A $.
+    $( If a nonnegative number is less than any positive number, it is zero.
+       (Contributed by NM, 11-Feb-2006.) $)
+    squeeze0 $p |- ( ( A e. RR /\ 0 <_ A /\ A. x e. RR ( 0 < x -> A < x ) ) ->
+                   A = 0 ) $=
+      ( cr wcel cc0 cle wbr cv clt wi wral w3a wceq ltnr 3ad2ant1 breq2 imbi12d
+      wn rspcva 3adant2 mtod simp1 0red lenltd mpbird simp2 letri3d mpbir2and )
+      BCDZEBFGZEAHZIGZBUKIGZJZACKZLZBEMBEFGZUJUPUQEBIGZRUPURBBIGZUIUJUSRUOBNOUI
+      UOURUSJZUJUNUTABCUKBMULURUMUSUKBEIPUKBBIPQSTUAUPBEUIUJUOUBZUPUCZUDUEUIUJU
+      OUFUPBEVAVBUGUH $.
+  $}
+
+  ${
+    ltplus1.1 $e |- A e. RR $.
+    $( A number is less than itself plus 1.  (Contributed by NM,
+       20-Aug-2001.) $)
+    ltp1i $p |- A < ( A + 1 ) $=
+      ( cr wcel c1 caddc co clt wbr ltp1 ax-mp ) ACDAAEFGHIBAJK $.
+
+    $( The reciprocal of a positive number is positive.  Exercise 4 of
+       [Apostol] p. 21.  (Contributed by NM, 15-May-1999.) $)
+    recgt0i $p |- ( 0 < A -> 0 < ( 1 / A ) ) $=
+      ( cr wcel cc0 clt wbr c1 cdiv co recgt0 mpan ) ACDEAFGEHAIJFGBAKL $.
+
+    ${
+      recgt0i.2 $e |- 0 < A $.
+      $( The reciprocal of a positive number is positive.  Exercise 4 of
+         [Apostol] p. 21.  (Contributed by NM, 15-May-1999.) $)
+      recgt0ii $p |- 0 < ( 1 / A ) $=
+        ( cr wcel cc0 clt wbr c1 cdiv co recgt0 mp2an ) ADEFAGHFIAJKGHBCALM $.
+    $}
+
+    prodgt0.2 $e |- B e. RR $.
+    $( Infer that a multiplicand is positive from a nonnegative multiplier and
+       positive product.  (Contributed by NM, 15-May-1999.) $)
+    prodgt0i $p |- ( ( 0 <_ A /\ 0 < ( A x. B ) ) -> 0 < B ) $=
+      ( cr wcel cc0 cle wbr cmul co clt wa prodgt0 mpanl12 ) AEFBEFGAHIGABJKLIM
+      GBLICDABNO $.
+
+    $( Infer that a multiplicand is nonnegative from a positive multiplier and
+       nonnegative product.  (Contributed by NM, 2-Jul-2005.) $)
+    prodge0i $p |- ( ( 0 < A /\ 0 <_ ( A x. B ) ) -> 0 <_ B ) $=
+      ( cr wcel cc0 clt wbr cmul co cle wa prodge0 mpanl12 ) AEFBEFGAHIGABJKLIM
+      GBLICDABNO $.
+
+    $( The ratio of two positive numbers is positive.  (Contributed by NM,
+       16-May-1999.) $)
+    divgt0i $p |- ( ( 0 < A /\ 0 < B ) -> 0 < ( A / B ) ) $=
+      ( cr wcel cc0 clt wbr cdiv co wa divgt0 mpanr1 mpanl1 ) AEFZGAHIZGBHIZGAB
+      JKHIZCPQLBEFRSDABMNO $.
+
+    $( The ratio of nonnegative and positive numbers is nonnegative.
+       (Contributed by NM, 12-Aug-1999.) $)
+    divge0i $p |- ( ( 0 <_ A /\ 0 < B ) -> 0 <_ ( A / B ) ) $=
+      ( cr wcel cc0 cle wbr clt cdiv co wa divge0 mpanr1 mpanl1 ) AEFZGAHIZGBJI
+      ZGABKLHIZCQRMBEFSTDABNOP $.
+
+    $( The reciprocal of both sides of 'less than'.  (Contributed by NM,
+       15-Sep-1999.) $)
+    ltreci $p |- ( ( 0 < A /\ 0 < B ) ->
+                ( A < B <-> ( 1 / B ) < ( 1 / A ) ) ) $=
+      ( cr wcel cc0 clt wbr c1 cdiv co wb wa ltrec mpanr1 mpanl1 ) AEFZGAHIZGBH
+      IZABHIJBKLJAKLHIMZCRSNBEFTUADABOPQ $.
+
+    $( The reciprocal of both sides of 'less than or equal to'.  (Contributed
+       by NM, 16-Sep-1999.) $)
+    lereci $p |- ( ( 0 < A /\ 0 < B ) ->
+                ( A <_ B <-> ( 1 / B ) <_ ( 1 / A ) ) ) $=
+      ( cr wcel cc0 clt wbr cle c1 cdiv co wb wa lerec mpanr1 mpanl1 ) AEFZGAHI
+      ZGBHIZABJIKBLMKALMJINZCSTOBEFUAUBDABPQR $.
+
+    $( The square function on nonnegative reals is strictly monotonic.
+       (Contributed by NM, 3-Aug-1999.) $)
+    lt2msqi $p |- ( ( 0 <_ A /\ 0 <_ B ) ->
+                ( A < B <-> ( A x. A ) < ( B x. B ) ) ) $=
+      ( cr wcel cc0 cle wbr clt cmul co wb wa lt2msq mpanr1 mpanl1 ) AEFZGAHIZG
+      BHIZABJIAAKLBBKLJIMZCRSNBEFTUADABOPQ $.
+
+    $( The square function on nonnegative reals is monotonic.  (Contributed by
+       NM, 2-Aug-1999.) $)
+    le2msqi $p |- ( ( 0 <_ A /\ 0 <_ B ) ->
+                ( A <_ B <-> ( A x. A ) <_ ( B x. B ) ) ) $=
+      ( cr wcel cc0 cle wbr cmul co wb wa le2msq mpanr1 mpanl1 ) AEFZGAHIZGBHIZ
+      ABHIAAJKBBJKHILZCQRMBEFSTDABNOP $.
+
+    $( The square of a nonnegative number is a one-to-one function.
+       (Contributed by NM, 29-Jul-1999.) $)
+    msq11i $p |- ( ( 0 <_ A /\ 0 <_ B ) ->
+                ( ( A x. A ) = ( B x. B ) <-> A = B ) ) $=
+      ( cr wcel cc0 cle wbr cmul co wceq wb wa msq11 mpanr1 mpanl1 ) AEFZGAHIZG
+      BHIZAAJKBBJKLABLMZCRSNBEFTUADABOPQ $.
+
+    ${
+      divgt0i2.3 $e |- 0 < B $.
+      $( The ratio of two positive numbers is positive.  (Contributed by NM,
+         16-May-1999.) $)
+      divgt0i2i $p |- ( 0 < A -> 0 < ( A / B ) ) $=
+        ( cc0 clt wbr cdiv co divgt0i mpan2 ) FAGHFBGHFABIJGHEABCDKL $.
+    $}
+
+    ${
+      ltreci.3 $e |- 0 < A $.
+      ltreci.4 $e |- 0 < B $.
+      $( The reciprocal of both sides of 'less than'.  (Contributed by NM,
+         15-Sep-1999.) $)
+      ltrecii $p |- ( A < B <-> ( 1 / B ) < ( 1 / A ) ) $=
+        ( cc0 clt wbr c1 cdiv co wb ltreci mp2an ) GAHIGBHIABHIJBKLJAKLHIMEFABC
+        DNO $.
+
+      $( The ratio of two positive numbers is positive.  (Contributed by NM,
+         18-May-1999.) $)
+      divgt0ii $p |- 0 < ( A / B ) $=
+        ( cc0 clt wbr cdiv co divgt0i2i ax-mp ) GAHIGABJKHIEABCDFLM $.
+    $}
+
+    ltmul1.3 $e |- C e. RR $.
+    $( Multiplication of both sides of 'less than' by a positive number.
+       Theorem I.19 of [Apostol] p. 20.  (Contributed by NM, 16-May-1999.) $)
+    ltmul1i $p |- ( 0 < C -> ( A < B <-> ( A x. C ) < ( B x. C ) ) ) $=
+      ( cr wcel cc0 clt wbr cmul co wb wa ltmul1 mp3an12 mpan ) CGHZICJKZABJKAC
+      LMBCLMJKNZFAGHBGHSTOUADEABCPQR $.
+
+    $( Division of both sides of 'less than' by a positive number.
+       (Contributed by NM, 16-May-1999.) $)
+    ltdiv1i $p |- ( 0 < C -> ( A < B <-> ( A / C ) < ( B / C ) ) ) $=
+      ( cr wcel cc0 clt wbr cdiv co wb wa ltdiv1 mp3an12 mpan ) CGHZICJKZABJKAC
+      LMBCLMJKNZFAGHBGHSTOUADEABCPQR $.
+
+    $( 'Less than' relationship between division and multiplication.
+       (Contributed by NM, 12-Oct-1999.) $)
+    ltmuldivi $p |- ( 0 < C -> ( ( A x. C ) < B <-> A < ( B / C ) ) ) $=
+      ( cr wcel cc0 clt wbr cmul co cdiv wb wa ltmuldiv mp3an12 mpan ) CGHZICJK
+      ZACLMBJKABCNMJKOZFAGHBGHTUAPUBDEABCQRS $.
+
+    $( Multiplication of both sides of 'less than' by a positive number.
+       Theorem I.19 of [Apostol] p. 20.  (Contributed by NM, 16-May-1999.) $)
+    ltmul2i $p |- ( 0 < C -> ( A < B <-> ( C x. A ) < ( C x. B ) ) ) $=
+      ( cr wcel cc0 clt wbr cmul co wb wa ltmul2 mp3an12 mpan ) CGHZICJKZABJKCA
+      LMCBLMJKNZFAGHBGHSTOUADEABCPQR $.
+
+    $( Multiplication of both sides of 'less than or equal to' by a positive
+       number.  (Contributed by NM, 2-Aug-1999.) $)
+    lemul1i $p |- ( 0 < C -> ( A <_ B <-> ( A x. C ) <_ ( B x. C ) ) ) $=
+      ( cr wcel cc0 clt wbr cle cmul co wb wa lemul1 mp3an12 mpan ) CGHZICJKZAB
+      LKACMNBCMNLKOZFAGHBGHTUAPUBDEABCQRS $.
+
+    $( Multiplication of both sides of 'less than or equal to' by a positive
+       number.  (Contributed by NM, 1-Aug-1999.) $)
+    lemul2i $p |- ( 0 < C -> ( A <_ B <-> ( C x. A ) <_ ( C x. B ) ) ) $=
+      ( cr wcel cc0 clt wbr cle cmul co wb wa lemul2 mp3an12 mpan ) CGHZICJKZAB
+      LKCAMNCBMNLKOZFAGHBGHTUAPUBDEABCQRS $.
+
+    $( Swap denominator with other side of 'less than'.  (Contributed by NM,
+       26-Sep-1999.) $)
+    ltdiv23i $p |- ( ( 0 < B /\ 0 < C ) ->
+                ( ( A / B ) < C <-> ( A / C ) < B ) ) $=
+      ( cc0 clt wbr cr wcel cdiv co wb wa ltdiv23 mp3an1 mpanl1 mpanr1 ) GBHIZC
+      JKZGCHIZABLMCHIACLMBHINZFBJKZTUAUBOZUCEAJKUDTOUEUCDABCPQRS $.
+
+    ${
+      ltdiv23i.4 $e |- 0 < B $.
+      ltdiv23i.5 $e |- 0 < C $.
+      $( Swap denominator with other side of 'less than'.  (Contributed by NM,
+         26-Sep-1999.) $)
+      ltdiv23ii $p |- ( ( A / B ) < C <-> ( A / C ) < B ) $=
+        ( cc0 clt wbr cdiv co wb ltdiv23i mp2an ) IBJKICJKABLMCJKACLMBJKNGHABCD
+        EFOP $.
+    $}
+
+    ${
+      ltmul1i.4 $e |- 0 < C $.
+      $( Multiplication of both sides of 'less than' by a positive number.
+         Theorem I.19 of [Apostol] p. 20.  (Contributed by NM, 16-May-1999.)
+         (Proof shortened by Paul Chapman, 25-Jan-2008.) $)
+      ltmul1ii $p |- ( A < B <-> ( A x. C ) < ( B x. C ) ) $=
+        ( cc0 clt wbr cmul co wb ltmul1i ax-mp ) HCIJABIJACKLBCKLIJMGABCDEFNO
+        $.
+
+      $( Division of both sides of 'less than' by a positive number.
+         (Contributed by NM, 16-May-1999.) $)
+      ltdiv1ii $p |- ( A < B <-> ( A / C ) < ( B / C ) ) $=
+        ( cc0 clt wbr cdiv co wb ltdiv1i ax-mp ) HCIJABIJACKLBCKLIJMGABCDEFNO
+        $.
+    $}
+  $}
+
+  ${
+    ltp1d.1 $e |- ( ph -> A e. RR ) $.
+    $( A number is less than itself plus 1.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    ltp1d $p |- ( ph -> A < ( A + 1 ) ) $=
+      ( cr wcel c1 caddc co clt wbr ltp1 syl ) ABDEBBFGHIJCBKL $.
+
+    $( A number is less than or equal to itself plus 1.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    lep1d $p |- ( ph -> A <_ ( A + 1 ) ) $=
+      ( cr wcel c1 caddc co cle wbr lep1 syl ) ABDEBBFGHIJCBKL $.
+
+    $( A number minus 1 is less than itself.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    ltm1d $p |- ( ph -> ( A - 1 ) < A ) $=
+      ( cr wcel c1 cmin co clt wbr ltm1 syl ) ABDEBFGHBIJCBKL $.
+
+    $( A number minus 1 is less than or equal to itself.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    lem1d $p |- ( ph -> ( A - 1 ) <_ A ) $=
+      ( cr wcel c1 cmin co cle wbr lem1 syl ) ABDEBFGHBIJCBKL $.
+
+    ${
+      recgt0d.2 $e |- ( ph -> 0 < A ) $.
+      $( The reciprocal of a positive number is positive.  Exercise 4 of
+         [Apostol] p. 21.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+      recgt0d $p |- ( ph -> 0 < ( 1 / A ) ) $=
+        ( cr wcel cc0 clt wbr c1 cdiv co recgt0 syl2anc ) ABEFGBHIGJBKLHICDBMN
+        $.
+    $}
+
+    divgt0d.2 $e |- ( ph -> B e. RR ) $.
+    ${
+      divgt0d.3 $e |- ( ph -> 0 < A ) $.
+      divgt0d.4 $e |- ( ph -> 0 < B ) $.
+      $( The ratio of two positive numbers is positive.  (Contributed by Mario
+         Carneiro, 28-May-2016.) $)
+      divgt0d $p |- ( ph -> 0 < ( A / B ) ) $=
+        ( cr wcel cc0 clt wbr cdiv co divgt0 syl22anc ) ABHIJBKLCHIJCKLJBCMNKLD
+        FEGBCOP $.
+    $}
+
+    ${
+      mulgt1d.3 $e |- ( ph -> 1 < A ) $.
+      mulgt1d.4 $e |- ( ph -> 1 < B ) $.
+      $( The product of two numbers greater than 1 is greater than 1.
+         (Contributed by Mario Carneiro, 28-May-2016.) $)
+      mulgt1d $p |- ( ph -> 1 < ( A x. B ) ) $=
+        ( cr wcel c1 clt wbr cmul co mulgt1 syl22anc ) ABHICHIJBKLJCKLJBCMNKLDE
+        FGBCOP $.
+    $}
+
+    ${
+      lemulge11d.3 $e |- ( ph -> 0 <_ A ) $.
+      lemulge11d.4 $e |- ( ph -> 1 <_ B ) $.
+      $( Multiplication by a number greater than or equal to 1.  (Contributed
+         by Mario Carneiro, 28-May-2016.) $)
+      lemulge11d $p |- ( ph -> A <_ ( A x. B ) ) $=
+        ( cr wcel cc0 cle wbr c1 cmul co lemulge11 syl22anc ) ABHICHIJBKLMCKLBB
+        CNOKLDEFGBCPQ $.
+
+      $( Multiplication by a number greater than or equal to 1.  (Contributed
+         by Mario Carneiro, 28-May-2016.) $)
+      lemulge12d $p |- ( ph -> A <_ ( B x. A ) ) $=
+        ( cr wcel cc0 cle wbr c1 cmul co lemulge12 syl22anc ) ABHICHIJBKLMCKLBC
+        BNOKLDEFGBCPQ $.
+    $}
+
+    lemul1ad.3 $e |- ( ph -> C e. RR ) $.
+    ${
+      lemul1ad.4 $e |- ( ph -> 0 <_ C ) $.
+      lemul1ad.5 $e |- ( ph -> A <_ B ) $.
+      $( Multiplication of both sides of 'less than or equal to' by a
+         nonnegative number.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+      lemul1ad $p |- ( ph -> ( A x. C ) <_ ( B x. C ) ) $=
+        ( cr wcel cc0 cle wbr wa cmul co jca lemul1a syl31anc ) ABJKCJKDJKZLDMN
+        ZOBCMNBDPQCDPQMNEFAUAUBGHRIBCDST $.
+
+      $( Multiplication of both sides of 'less than or equal to' by a
+         nonnegative number.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+      lemul2ad $p |- ( ph -> ( C x. A ) <_ ( C x. B ) ) $=
+        ( cr wcel cc0 cle wbr wa cmul co jca lemul2a syl31anc ) ABJKCJKDJKZLDMN
+        ZOBCMNDBPQDCPQMNEFAUAUBGHRIBCDST $.
+    $}
+
+    ltmul12ad.3 $e |- ( ph -> D e. RR ) $.
+    ${
+      ltmul12ad.4 $e |- ( ph -> 0 <_ A ) $.
+      ltmul12ad.5 $e |- ( ph -> A < B ) $.
+      ltmul12ad.6 $e |- ( ph -> 0 <_ C ) $.
+      ltmul12ad.7 $e |- ( ph -> C < D ) $.
+      $( Comparison of product of two positive numbers.  (Contributed by Mario
+         Carneiro, 28-May-2016.) $)
+      ltmul12ad $p |- ( ph -> ( A x. C ) < ( B x. D ) ) $=
+        ( cr wcel wa cc0 wbr clt jca cle cmul co ltmul12a syl22anc ) ABNOZCNOZP
+        QBUARZBCSRZPDNOZENOZPQDUARZDESRZPBDUBUCCEUBUCSRAUFUGFGTAUHUIJKTAUJUKHIT
+        AULUMLMTBCDEUDUE $.
+    $}
+
+    ${
+      lemul12ad.4 $e |- ( ph -> 0 <_ A ) $.
+      lemul12ad.5 $e |- ( ph -> 0 <_ C ) $.
+      lemul12ad.6 $e |- ( ph -> A <_ B ) $.
+      lemul12ad.7 $e |- ( ph -> C <_ D ) $.
+      $( Comparison of product of two nonnegative numbers.  (Contributed by
+         Mario Carneiro, 28-May-2016.) $)
+      lemul12ad $p |- ( ph -> ( A x. C ) <_ ( B x. D ) ) $=
+        ( cle wbr cmul co cr wcel wa cc0 wi jca lemul12a syl22anc mp2and ) ABCN
+        OZDENOZBDPQCEPQNOZLMABRSZUABNOZTCRSDRSZUADNOZTERSUGUHTUIUBAUJUKFJUCGAUL
+        UMHKUCIBCDEUDUEUF $.
+    $}
+
+    ${
+      lemul12bd.4 $e |- ( ph -> 0 <_ A ) $.
+      lemul12bd.5 $e |- ( ph -> 0 <_ D ) $.
+      lemul12bd.6 $e |- ( ph -> A <_ B ) $.
+      lemul12bd.7 $e |- ( ph -> C <_ D ) $.
+      $( Comparison of product of two nonnegative numbers.  (Contributed by
+         Mario Carneiro, 28-May-2016.) $)
+      lemul12bd $p |- ( ph -> ( A x. C ) <_ ( B x. D ) ) $=
+        ( cle wbr cmul co cr wcel wa cc0 wi jca lemul12b syl22anc mp2and ) ABCN
+        OZDENOZBDPQCEPQNOZLMABRSZUABNOZTCRSDRSERSZUAENOZTUGUHTUIUBAUJUKFJUCGHAU
+        LUMIKUCBCDEUDUEUF $.
+    $}
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
