@@ -72505,12 +72505,15 @@ $)
        and for a successor.  (Contributed by NM, 11-Oct-2004.)  (Revised by
        Mario Carneiro, 16-May-2014.) $)
     nn1suc $p |- ( A e. NN -> th ) $=
-      ( cn wcel c1 wceq co wsbc sbcie caddc cmin wi 1ex mpbir 1nn mpbiri sbcieg
-      wb eleq1 syl dfsbcq bitr3d a1i cv ovex oveq1 sbceq1d syl5bbr vtoclga nncn
-      cc ax-1cn npcan sylancl bitrd syl5ib nn1m1nn mpjaod ) GMNZGOPZDGOUAQZMNZV
-      JDUBVIVJDAEORZVMBKABEOUCHSUDVJAEGRZDVMVJVIVNDUHVJVIOMNUEGOMUIUFADEGMJUGZU
-      JAEGOUKULUFUMVLAEVKOTQZRZVIDCVQFVKMCAEFUNZOTQZRVRVKPZVQACEVSVROTUOISVTAEV
-      SVPVRVKOTUPUQURLUSVIVQVNDVIAEVPGVIGVANOVANVPGPGUTVBGOVCVDUQVOVEVFGVGVH $.
+      ( cn wcel c1 wceq co wsbc wb caddc cmin 1ex sbcie mpbir 1nn mpbiri sbcieg
+      wi eleq1 syl dfsbcq bitr3d cv elisset wa pm5.32ri adantr cr nnre peano2re
+      a1i 3syl oveq1 sbceq1d adantl mpbid sylbir exlimddv cc nncn npcan sylancl
+      ax-1cn bitrd syl5ib nn1m1nn mpjaod ) GMNZGOPZDGOUAQZMNZVSDUHVRVSDAEORZWBB
+      KABEOUBHUCUDVSAEGRZDWBVSVRWCDSVSVROMNUEGOMUIUFADEGMJUGZUJAEGOUKULUFVAWAAE
+      VTOTQZRZVRDWAFUMZVTPZWFFFVTMUNWAWHUOWGMNZWHUOZWFWHWIWAWGVTMUIUPWJCWFWICWH
+      LUQWJAEWGOTQZRZCWFWIWLCSZWHWIWGURNWKURNWMWGUSWGUTACEWKURIUGVBUQWHWLWFSWIW
+      HAEWKWEWGVTOTVCVDVEULVFVGVHVRWFWCDVRAEWEGVRGVINOVINWEGPGVJVMGOVKVLVDWDVNV
+      OGVPVQ $.
   $}
 
   ${
