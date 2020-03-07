@@ -72395,6 +72395,24 @@ $)
       UNSUTVATFZVBVMUOUTAGAUPUTUQURVBVAVPFWBVMEVPVAVQMBVAVLTNOSUS $.
   $}
 
+  ${
+    nnred.1 $e |- ( ph -> A e. NN ) $.
+    $( A positive integer is a real number.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nnred $p |- ( ph -> A e. RR ) $=
+      ( cn cr nnssre sseldi ) ADEBFCG $.
+
+    $( A positive integer is a complex number.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nncnd $p |- ( ph -> A e. CC ) $=
+      ( cn cc nnsscn sseldi ) ADEBFCG $.
+
+    $( Peano postulate: a successor of a positive integer is a positive
+       integer.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    peano2nnd $p |- ( ph -> ( A + 1 ) e. NN ) $=
+      ( cn wcel c1 caddc co peano2nn syl ) ABDEBFGHDECBIJ $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
