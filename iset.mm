@@ -72333,6 +72333,44 @@ $)
       KVHSUOUPUQWIKWHURVKCAUSVKWHUTVAVCPVDVRVE $.
   $}
 
+  $( The positive integers are a subset of the reals.  (Contributed by NM,
+     10-Jan-1997.)  (Revised by Mario Carneiro, 16-Jun-2013.) $)
+  nnssre $p |- NN C_ RR $=
+    ( vx c1 cr wcel cv caddc co wral cn wss 1re peano2re rgen peano5nni mp2an )
+    BCDAEZBFGCDZACHICJKQACPLMACNO $.
+
+  $( The positive integers are a subset of the complex numbers.  (Contributed
+     by NM, 2-Aug-2004.) $)
+  nnsscn $p |- NN C_ CC $=
+    ( cn cr cc nnssre ax-resscn sstri ) ABCDEF $.
+
+  $( The set of positive integers exists.  (Contributed by NM, 3-Oct-1999.)
+     (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  nnex $p |- NN e. _V $=
+    ( cn cc cnex nnsscn ssexi ) ABCDE $.
+
+  $( A positive integer is a real number.  (Contributed by NM, 18-Aug-1999.) $)
+  nnre $p |- ( A e. NN -> A e. RR ) $=
+    ( cn cr nnssre sseli ) BCADE $.
+
+  $( A positive integer is a complex number.  (Contributed by NM,
+     18-Aug-1999.) $)
+  nncn $p |- ( A e. NN -> A e. CC ) $=
+    ( cn cc nnsscn sseli ) BCADE $.
+
+  ${
+    nnre.1 $e |- A e. NN $.
+    $( A positive integer is a real number.  (Contributed by NM,
+       18-Aug-1999.) $)
+    nnrei $p |- A e. RR $=
+      ( cn wcel cr nnre ax-mp ) ACDAEDBAFG $.
+
+    $( A positive integer is a complex number.  (Contributed by NM,
+       18-Aug-1999.) $)
+    nncni $p |- A e. CC $=
+      ( nnrei recni ) AABCD $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
