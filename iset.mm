@@ -72414,6 +72414,333 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Principle of mathematical induction
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y $.  $d x A $.  $d x ps $.  $d x ch $.  $d x th $.  $d x ta $.
+    $d y ph $.
+    $( Substitutions. $)
+    nnind.1 $e |- ( x = 1 -> ( ph <-> ps ) ) $.
+    nnind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    nnind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    nnind.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    nnind.5 $e |- ps $.
+    $( Induction step. $)
+    nnind.6 $e |- ( y e. NN -> ( ch -> th ) ) $.
+    $( Principle of Mathematical Induction (inference schema).  The first four
+       hypotheses give us the substitution instances we need; the last two are
+       the basis and the induction step.  See ~ nnaddcl for an example of its
+       use.  See ~ nn0ind for induction on nonnegative integers and ~ uzind ,
+       ~ uzind4 for induction on an arbitrary upper set of integers.  See
+       ~ indstr for strong induction.  See also ~ nnindALT .  This is an
+       alternative for Metamath 100 proof #74.  (Contributed by NM,
+       10-Jan-1997.)  (Revised by Mario Carneiro, 16-Jun-2013.) $)
+    nnind $p |- ( A e. NN -> ta ) $=
+      ( cn wcel crab wa c1 elrab cv caddc wral wss 1nn mpbir2an elrabi peano2nn
+      co a1d anim12d 3imtr4g mpcom rgen peano5nni mp2an sseli sylib simprd ) HO
+      PZUTEUTHAFOQZPUTEROVAHSVAPZGUAZSUBUIZVAPZGVAUCOVAUDVBSOPBUEMABFSOITUFVEGV
+      AVCOPZVCVAPZVEAFVCOUGVFVFCRVDOPZDRVGVEVFVFVHCDVFVHVFVCUHUJNUKACFVCOJTADFV
+      DOKTULUMUNGVAUOUPUQAEFHOLTURUS $.
+  $}
+
+  ${
+    $d x y $.  $d x A $.  $d x ps $.  $d x ch $.  $d x th $.  $d x ta $.
+    $d y ph $.
+    $( Induction step. $)
+    nnindALT.6 $e |- ( y e. NN -> ( ch -> th ) ) $.
+    $( Basis. $)
+    nnindALT.5 $e |- ps $.
+    $( Substitutions. $)
+    nnindALT.1 $e |- ( x = 1 -> ( ph <-> ps ) ) $.
+    nnindALT.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    nnindALT.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    nnindALT.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    $( Principle of Mathematical Induction (inference schema).  The last four
+       hypotheses give us the substitution instances we need; the first two are
+       the induction step and the basis.
+
+       This ALT version of ~ nnind has a different hypothesis order.  It may be
+       easier to use with the metamath program's Proof Assistant, because
+       "MM-PA> assign last" will be applied to the substitution instances
+       first.  We may eventually use this one as the official version.  You may
+       use either version.  After the proof is complete, the ALT version can be
+       changed to the non-ALT version with "MM-PA> minimize nnind /allow".
+       (Contributed by NM, 7-Dec-2005.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    nnindALT $p |- ( A e. NN -> ta ) $=
+      ( nnind ) ABCDEFGHKLMNJIO $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Every positive integer is one or a successor.  (Contributed by Mario
+       Carneiro, 16-May-2014.) $)
+    nn1m1nn $p |- ( A e. NN -> ( A = 1 \/ ( A - 1 ) e. NN ) ) $=
+      ( vx vy cv c1 wceq cmin co cn wcel wo caddc orc 1cnd eqeq1 eleq1d orbi12d
+      cc oveq1 ax-1cn 2thd nncn pncan sylancl id eqeltrd olcd a1d nnind ) BDZEF
+      ZUJEGHZIJZKZERJZCDZEFZUPEGHZIJZKZUPELHZEFZVAEGHZIJZKZAEFZAEGHZIJZKBCAUKUN
+      UOUKUMMUKNUAUJUPFZUKUQUMUSUJUPEOVIULURIUJUPEGSPQUJVAFZUKVBUMVDUJVAEOVJULV
+      CIUJVAEGSPQUJAFZUKVFUMVHUJAEOVKULVGIUJAEGSPQTUPIJZVEUTVLVDVBVLVCUPIVLUPRJ
+      UOVCUPFUPUBTUPEUCUDVLUEUFUGUHUI $.
+  $}
+
+  ${
+    $d x y z $.  $d x y z A $.  $d x ps $.  $d x ch $.  $d x z th $.
+    $d y z ph $.
+    $( Substitutions. $)
+    nn1suc.1 $e |- ( x = 1 -> ( ph <-> ps ) ) $.
+    nn1suc.3 $e |- ( x = ( y + 1 ) -> ( ph <-> ch ) ) $.
+    nn1suc.4 $e |- ( x = A -> ( ph <-> th ) ) $.
+    $( Hypothesis showing it holds for 1. $)
+    nn1suc.5 $e |- ps $.
+    $( Hypothesis showing it holds for a successor. $)
+    nn1suc.6 $e |- ( y e. NN -> ch ) $.
+    $( If a statement holds for 1 and also holds for a successor, it holds for
+       all positive integers.  The first three hypotheses give us the
+       substitution instances we need; the last two show that it holds for 1
+       and for a successor.  (Contributed by NM, 11-Oct-2004.)  (Revised by
+       Mario Carneiro, 16-May-2014.) $)
+    nn1suc $p |- ( A e. NN -> th ) $=
+      ( cn wcel c1 wceq co wsbc sbcie caddc cmin wi 1ex mpbir 1nn mpbiri sbcieg
+      wb eleq1 syl dfsbcq bitr3d a1i cv ovex oveq1 sbceq1d syl5bbr vtoclga nncn
+      cc ax-1cn npcan sylancl bitrd syl5ib nn1m1nn mpjaod ) GMNZGOPZDGOUAQZMNZV
+      JDUBVIVJDAEORZVMBKABEOUCHSUDVJAEGRZDVMVJVIVNDUHVJVIOMNUEGOMUIUFADEGMJUGZU
+      JAEGOUKULUFUMVLAEVKOTQZRZVIDCVQFVKMCAEFUNZOTQZRVRVKPZVQACEVSVROTUOISVTAEV
+      SVPVRVKOTUPUQURLUSVIVQVNDVIAEVPGVIGVANOVANVPGPGUTVBGOVCVDUQVOVEVFGVGVH $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Closure of addition of positive integers, proved by induction on the
+       second addend.  (Contributed by NM, 12-Jan-1997.) $)
+    nnaddcl $p |- ( ( A e. NN /\ B e. NN ) -> ( A + B ) e. NN ) $=
+      ( vx vy cn wcel caddc co cv wi c1 wceq oveq2 eleq1d imbi2d peano2nn wa cc
+      nncn ax-1cn addass mp3an3 syl2an syl5ib expcom a2d nnind impcom ) BEFAEFZ
+      ABGHZEFZUIACIZGHZEFZJUIAKGHZEFZJUIADIZGHZEFZJUIAUQKGHZGHZEFZJUIUKJCDBULKL
+      ZUNUPUIVCUMUOEULKAGMNOULUQLZUNUSUIVDUMUREULUQAGMNOULUTLZUNVBUIVEUMVAEULUT
+      AGMNOULBLZUNUKUIVFUMUJEULBAGMNOAPUQEFZUIUSVBUIVGUSVBJUSURKGHZEFUIVGQZVBUR
+      PVIVHVAEUIARFZUQRFZVHVALZVGASUQSVJVKKRFVLTAUQKUAUBUCNUDUEUFUGUH $.
+
+    $( Closure of multiplication of positive integers.  (Contributed by NM,
+       12-Jan-1997.) $)
+    nnmulcl $p |- ( ( A e. NN /\ B e. NN ) -> ( A x. B ) e. NN ) $=
+      ( vx vy cn wcel cmul co cv wi c1 caddc wceq oveq2 eleq1d imbi2d cc mulid1
+      nncn wa biimprd nnaddcl ancoms ax-1cn mp3an3 oveq2d adantr syl2an syl5ibr
+      mpcom adddi eqtrd exp4b pm2.43b a2d nnind impcom ) BEFAEFZABGHZEFZURACIZG
+      HZEFZJURAKGHZEFZJURADIZGHZEFZJURAVFKLHZGHZEFZJURUTJCDBVAKMZVCVEURVLVBVDEV
+      AKAGNOPVAVFMZVCVHURVMVBVGEVAVFAGNOPVAVIMZVCVKURVNVBVJEVAVIAGNOPVABMZVCUTU
+      RVOVBUSEVABAGNOPAQFZURVEASZVPVEURVPVDAEARZOUAUJVFEFZURVHVKVSURVHVKJURVSUR
+      VHVKURVHTVKURVSTZVGALHZEFZVHURWBVGAUBUCVTVJWAEURVPVFQFZVJWAMVSVQVFSVPWCTV
+      JVGVDLHZWAVPWCKQFVJWDMUDAVFKUKUEVPWDWAMWCVPVDAVGLVRUFUGULUHOUIUMUNUOUPUQ
+      $.
+  $}
+
+  ${
+    nnmulcli.1 $e |- A e. NN $.
+    nnmulcli.2 $e |- B e. NN $.
+    $( Closure of multiplication of positive integers.  (Contributed by Mario
+       Carneiro, 18-Feb-2014.) $)
+    nnmulcli $p |- ( A x. B ) e. NN $=
+      ( cn wcel cmul co nnmulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( There exists a positive integer greater than or equal to any two
+       others.  (Contributed by NM, 18-Aug-1999.) $)
+    nn2ge $p |- ( ( A e. NN /\ B e. NN ) ->
+                E. x e. NN ( A <_ x /\ B <_ x ) ) $=
+      ( cn wcel wa cv cle wbr wrex cr nnre adantr leid sylan wceq breq2 anbi12d
+      rspcev syldan adantl biantrud biimpa adantll anim1i adantlr lecasei ) BDE
+      ZCDEZFBAGZHIZCUJHIZFZADJZBCUHBKEZUIBLZMUICKEZUHCLZUAUIBCHIZUNUHUIUSUSCCHI
+      ZFZUNUIUQUSVAURUQUSVAUQUTUSCNUBUCOUMVAACDUJCPUKUSULUTUJCBHQUJCCHQRSTUDUHC
+      BHIZUNUIUHVBBBHIZVBFZUNUHUOVBVDUPUOVCVBBNUEOUMVDABDUJBPUKVCULVBUJBBHQUJBC
+      HQRSTUFUG $.
+  $}
+
+  ${
+    $d x y A $.
+    $( A positive integer is one or greater.  (Contributed by NM,
+       25-Aug-1999.) $)
+    nnge1 $p |- ( A e. NN -> 1 <_ A ) $=
+      ( vx vy c1 cv cle wbr caddc co breq2 wcel cr wi cc0 clt wn 0re 1re lenlt
+      wb 1le1 cn nnre recn addid1d breq2d 0lt1 axltadd mp3an12 wa readdcl mpan2
+      mpi peano2re mp3an3 syl2anc mpand con3d sylancr 3imtr4d sylbird syl nnind
+      lttr ) DBEZFGDDFGDCEZFGZDVFDHIZFGZDAFGBCAVEDDFJVEVFDFJVEVHDFJVEADFJUAVFUB
+      KVFLKZVGVIMVFUCVJVGDVFNHIZFGZVIVJVKVFDFVJVFVFUDUEUFVJVKDOGZPZVHDOGZPZVLVI
+      VJVOVMVJVKVHOGZVOVMVJNDOGZVQUGNLKZDLKZVJVRVQMQRNDVFUHUIUMVJVKLKZVHLKZVQVO
+      UJVMMZVJVSWAQVFNUKULZVFUNZWAWBVTWCRVKVHDVDUOUPUQURVJVTWAVLVNTRWDDVKSUSVJV
+      TWBVIVPTRWEDVHSUSUTVAVBVC $.
+  $}
+
+  $( A positive integer is greater than one iff it is not equal to one.
+     (Contributed by NM, 7-Oct-2004.) $)
+  nngt1ne1 $p |- ( A e. NN -> ( 1 < A <-> A =/= 1 ) ) $=
+    ( cn wcel cr c1 cle wbr clt wne wb nnre nnge1 1re leltne mp3an1 syl2anc ) A
+    BCADCZEAFGZEAHGAEIJZAKALEDCQRSMEANOP $.
+
+  $( A positive integer is less than or equal to one iff it is equal to one.
+     (Contributed by NM, 3-Apr-2005.) $)
+  nnle1eq1 $p |- ( A e. NN -> ( A <_ 1 <-> A = 1 ) ) $=
+    ( cn wcel c1 cle wbr wa wceq nnge1 biantrud cr wb 1re letri3 sylancl bitr4d
+    nnre ) ABCZADEFZSDAEFZGZADHZRTSAIJRAKCDKCUBUALAQMADNOP $.
+
+  $( A positive integer is positive.  (Contributed by NM, 26-Sep-1999.) $)
+  nngt0 $p |- ( A e. NN -> 0 < A ) $=
+    ( cn wcel cr c1 cle wbr cc0 clt nnre nnge1 0lt1 wa wi 0re 1re mp3an12 mpani
+    ltletr sylc ) ABCADCZEAFGZHAIGZAJAKUAHEIGZUBUCLHDCEDCUAUDUBMUCNOPHEASQRT $.
+
+  $( A positive integer is not less than one.  (Contributed by NM,
+     18-Jan-2004.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  nnnlt1 $p |- ( A e. NN -> -. A < 1 ) $=
+    ( cn wcel c1 cle wbr clt wn nnge1 cr wb 1re nnre lenlt sylancr mpbid ) ABCZ
+    DAEFZADGFHZAIQDJCAJCRSKLAMDANOP $.
+
+  $( Zero is not a positive integer.  (Contributed by NM, 25-Aug-1999.) $)
+  0nnn $p |- -. 0 e. NN $=
+    ( cc0 cn wcel c1 clt wbr 0lt1 nnnlt1 mt2 ) ABCADEFGAHI $.
+
+  $( A positive integer is nonzero.  (Contributed by NM, 27-Sep-1999.) $)
+  nnne0 $p |- ( A e. NN -> A =/= 0 ) $=
+    ( cn wcel cc0 wceq 0nnn eleq1 mtbiri necon2ai ) ABCZADADEJDBCFADBGHI $.
+
+  ${
+    nngt0.1 $e |- A e. NN $.
+    $( A positive integer is positive (inference version).  (Contributed by NM,
+       17-Sep-1999.) $)
+    nngt0i $p |- 0 < A $=
+      ( cn wcel cc0 clt wbr nngt0 ax-mp ) ACDEAFGBAHI $.
+
+    $( A positive integer is nonzero (inference version).  (Contributed by NM,
+       25-Aug-1999.) $)
+    nnne0i $p |- A =/= 0 $=
+      ( nnrei nngt0i gt0ne0ii ) AABCABDE $.
+  $}
+
+  $( The quotient of a real and a positive integer is real.  (Contributed by
+     NM, 28-Nov-2008.) $)
+  nndivre $p |- ( ( A e. RR /\ N e. NN ) -> ( A / N ) e. RR ) $=
+    ( cn wcel cr cc0 wne wa cdiv co nnre nnne0 jca redivcl 3expb sylan2 ) BCDZA
+    EDZBEDZBFGZHABIJEDZQSTBKBLMRSTUAABNOP $.
+
+  $( The reciprocal of a positive integer is real.  (Contributed by NM,
+     8-Feb-2008.) $)
+  nnrecre $p |- ( N e. NN -> ( 1 / N ) e. RR ) $=
+    ( c1 cr wcel cn cdiv co 1re nndivre mpan ) BCDAEDBAFGCDHBAIJ $.
+
+  $( The reciprocal of a positive integer is positive.  (Contributed by NM,
+     25-Aug-1999.) $)
+  nnrecgt0 $p |- ( A e. NN -> 0 < ( 1 / A ) ) $=
+    ( cn wcel c1 cle wbr cc0 cdiv co clt nnge1 0lt1 cr wa wi 0re ltletr mp3an12
+    nnre 1re recgt0 ex syld syl mpani mpd ) ABCZDAEFZGDAHIJFZAKUGGDJFZUHUILUGAM
+    CZUJUHNZUIOASUKULGAJFZUIGMCDMCUKULUMOPTGDAQRUKUMUIAUAUBUCUDUEUF $.
+
+  ${
+    $d z A $.  $d x y z B $.
+    $( Subtraction of positive integers.  (Contributed by NM, 20-Aug-2001.)
+       (Revised by Mario Carneiro, 16-May-2014.) $)
+    nnsub $p |- ( ( A e. NN /\ B e. NN ) -> ( A < B <-> ( B - A ) e. NN ) ) $=
+      ( vz vx cn wcel clt wbr cmin co wi wral wceq breq2 eleq1d imbi12d ralbidv
+      c1 oveq1 cr vy wa cv caddc nnnlt1 pm2.21d rgen breq1 oveq2 cbvralv adantr
+      cc nncn ax-1cn pncan sylancl simpl eqeltrd syl5ibrcom a1dd rspcv nnre 1re
+      ltsubadd mp3an2 syl2anr subsub3 mp3an3 syl2an biimpd syl9r nn1m1nn adantl
+      wb wo mpjaod ralrimdva syl5bi nnind rspcva sylan2 cc0 nngt0 posdif impbid
+      syl5ibr ) AEFZBEFZUBZABGHZBAIJZEFZWHWGCUCZBGHZBWMIJZEFZKZCELZWJWLKZWMDUCZ
+      GHZWTWMIJZEFZKZCELWMRGHZRWMIJZEFZKZCELWMUAUCZGHZXIWMIJZEFZKZCELZWMXIRUDJZ
+      GHZXOWMIJZEFZKZCELZWRDUABWTRMZXDXHCEYAXAXEXCXGWTRWMGNYAXBXFEWTRWMISOPQWTX
+      IMZXDXMCEYBXAXJXCXLWTXIWMGNYBXBXKEWTXIWMISOPQWTXOMZXDXSCEYCXAXPXCXRWTXOWM
+      GNYCXBXQEWTXOWMISOPQWTBMZXDWQCEYDXAWNXCWPWTBWMGNYDXBWOEWTBWMISOPQXHCEWMEF
+      ZXEXGWMUEUFUGXNWTXIGHZXIWTIJZEFZKZDELZXIEFZXTXMYICDEWMWTMZXJYFXLYHWMWTXIG
+      UHYLXKYGEWMWTXIIUIOPUJYKYJXSCEYKYEUBZWMRMZYJXSKWMRIJZEFZYMYNXSYJYMYNXRXPY
+      MXRYNXORIJZEFYMYQXIEYMXIULFZRULFZYQXIMYKYRYEXIUMZUKUNXIRUOUPYKYEUQURYNXQY
+      QEWMRXOIUIOUSUTUTYPYJYOXIGHZXIYOIJZEFZKZYMXSYIUUDDYOEWTYOMZYFUUAYHUUCWTYO
+      XIGUHUUEYGUUBEWTYOXIIUIOPVAYMUUDXSYMUUAXPUUCXRYEWMTFZXITFZUUAXPVNZYKWMVBX
+      IVBUUFRTFUUGUUHVCWMRXIVDVEVFYMUUBXQEYKYRWMULFZUUBXQMZYEYTWMUMYRUUIYSUUJUN
+      XIWMRVGVHVIOPVJVKYEYNYPVOYKWMVLVMVPVQVRVSWQWSCAEWMAMZWNWJWPWLWMABGUHUUKWO
+      WKEWMABIUIOPVTWAWLWJWIWBWKGHZWKWCWGATFBTFWJUULVNWHAVBBVBABWDVIWFWE $.
+
+    nnsub.1 $e |- A e. NN $.
+    nnsub.2 $e |- B e. NN $.
+    $( Subtraction of positive integers.  (Contributed by NM, 19-Aug-2001.) $)
+    nnsubi $p |- ( A < B <-> ( B - A ) e. NN ) $=
+      ( cn wcel clt wbr cmin co wb nnsub mp2an ) AEFBEFABGHBAIJEFKCDABLM $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Two ways to express " ` A ` divides ` B ` " for positive integers.
+       (Contributed by NM, 3-Feb-2004.)  (Proof shortened by Mario Carneiro,
+       16-May-2014.) $)
+    nndiv $p |- ( ( A e. NN /\ B e. NN ) ->
+                ( E. x e. NN ( A x. x ) = B <-> ( B / A ) e. NN ) ) $=
+      ( cdiv co cn wcel cv wceq wrex cmul risset eqcom ad2antlr ad2antrr adantl
+      wa cc nncn cc0 wne nnne0 divmuld syl5bb rexbidva syl5rbb ) CBDEZFGAHZUGIZ
+      AFJBFGZCFGZQZBUHKECIZAFJAUGFLULUIUMAFUIUGUHIULUHFGZQZUMUHUGMUOCBUHUKCRGUJ
+      UNCSNUJBRGUKUNBSOUNUHRGULUHSPUJBTUAUKUNBUBOUCUDUEUF $.
+  $}
+
+  $( Transitive property of divisibility: if ` A ` divides ` B ` and ` B `
+     divides ` C ` , then ` A ` divides ` C ` .  Typically, ` C ` would be an
+     integer, although the theorem holds for complex ` C ` .  (Contributed by
+     NM, 3-May-2005.) $)
+  nndivtr $p |- ( ( ( A e. NN /\ B e. NN /\ C e. CC ) /\
+               ( ( B / A ) e. NN /\ ( C / B ) e. NN ) ) -> ( C / A ) e. NN ) $=
+    ( cn wcel cc w3a cdiv co wa cmul nnmulcl c1 cc0 wne wceq 3ad2ant2 nnne0 jca
+    nncn 3ad2ant1 divmul24 syl22anc dividd oveq1d sylan2 ancoms mulid2d 3adant2
+    simp3 divcl 3expb 3eqtrd eleq1d syl5ib imp ) ADEZBDEZCFEZGZBAHIZDECBHIZDEJZ
+    CAHIZDEZVCVAVBKIZDEUTVEVAVBLUTVFVDDUTVFBBHIZVDKIZMVDKIZVDUTBFEZUSAFEZANOZJZ
+    VJBNOZJZVFVHPURUQVJUSBTZQUQURUSUJUQURVMUSUQVKVLATARSZUAURUQVOUSURVJVNVPBRZS
+    QBCABUBUCURUQVHVIPUSURVGMVDKURBVPVRUDUEQUQUSVIVDPURUQUSJVDUSUQVDFEZUQUSVMVS
+    VQUSVKVLVSCAUKULUFUGUHUIUMUNUOUP $.
+
+  ${
+    nnge1d.1 $e |- ( ph -> A e. NN ) $.
+    $( A positive integer is one or greater.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nnge1d $p |- ( ph -> 1 <_ A ) $=
+      ( cn wcel c1 cle wbr nnge1 syl ) ABDEFBGHCBIJ $.
+
+    $( A positive integer is positive.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nngt0d $p |- ( ph -> 0 < A ) $=
+      ( cn wcel cc0 clt wbr nngt0 syl ) ABDEFBGHCBIJ $.
+
+    $( A positive integer is nonzero.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nnne0d $p |- ( ph -> A =/= 0 ) $=
+      ( cn wcel cc0 wne nnne0 syl ) ABDEBFGCBHI $.
+
+    $( The reciprocal of a positive integer is real.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    nnrecred $p |- ( ph -> ( 1 / A ) e. RR ) $=
+      ( cn wcel c1 cdiv co cr nnrecre syl ) ABDEFBGHIECBJK $.
+
+    nnmulcld.2 $e |- ( ph -> B e. NN ) $.
+    $( Closure of addition of positive integers.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    nnaddcld $p |- ( ph -> ( A + B ) e. NN ) $=
+      ( cn wcel caddc co nnaddcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure of multiplication of positive integers.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    nnmulcld $p |- ( ph -> ( A x. B ) e. NN ) $=
+      ( cn wcel cmul co nnmulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
+  ${
+    nndivred.1 $e |- ( ph -> A e. RR ) $.
+    nndivred.2 $e |- ( ph -> B e. NN ) $.
+    $( A positive integer is one or greater.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nndivred $p |- ( ph -> ( A / B ) e. RR ) $=
+      ( cr wcel cn cdiv co nndivre syl2anc ) ABFGCHGBCIJFGDEBCKL $.
+  $}
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
