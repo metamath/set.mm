@@ -72381,6 +72381,18 @@ $)
       ) DEFZDAGZFZADBGZFZCGDHIZUMFZCUMJZKZBLZUJDUSMZFZULAUSJZEUTDBCNODPFVAVBQRA
       DUSPSUAUBUKUSFULUOUKFZCUKJZURULVDKBUKAUCBAUDUNULUQVDUMUKDTUPVCCUMUKUMUKUO
       TUEUFUGUHUI $.
+
+    $( Peano postulate: a successor of a positive integer is a positive
+       integer.  (Contributed by NM, 11-Jan-1997.)  (Revised by Mario Carneiro,
+       17-Nov-2014.) $)
+    peano2nn $p |- ( A e. NN -> ( A + 1 ) e. NN ) $=
+      ( vz vx vy cn wcel c1 caddc co cv wral wa eleq2i elintg syl5bb wceq eleq2
+      cab syl cr cint dfnn2 ibi vex raleqbi1dv anbi12d elab oveq1 eleq1d rspcva
+      simprbi sylan2 expcom ralimia wb nnre 1red readdcld mpbird ) AEFZAGHIZEFZ
+      VABJZFZBGCJZFZDJZGHIZVEFZDVEKZLZCRZKZUTAVCFZBVLKZVMUTVOUTAVLUAZFUTVOEVPAC
+      DUBZMBAVLENOUCVNVDBVLVNVCVLFZVDVRVNVHVCFZDVCKZVDVRGVCFZVTVKWAVTLCVCBUDVEV
+      CPVFWAVJVTVEVCGQVIVSDVEVCVEVCVHQUEUFUGUKVSVDDAVCVGAPVHVAVCVGAGHUHUIUJULUM
+      UNSUTVATFZVBVMUOUTAGAUPUTUQURVBVAVPFWBVMEVPVAVQMBVAVLTNOSUS $.
   $}
 
 $(
