@@ -72371,6 +72371,18 @@ $)
       ( nnrei recni ) AABCD $.
   $}
 
+  ${
+    $d x y z A $.
+    $( Peano postulate: 1 is a positive integer.  (Contributed by NM,
+       11-Jan-1997.) $)
+    1nn $p |- 1 e. NN $=
+      ( vz vx vy c1 cn wcel cv caddc co wral wa cab cint dfnn2 eleq2i cr wb 1re
+      elintg eleq2 ax-mp bitri vex weq raleqbi1dv anbi12d elab simplbi mprgbir
+      ) DEFZDAGZFZADBGZFZCGDHIZUMFZCUMJZKZBLZUJDUSMZFZULAUSJZEUTDBCNODPFVAVBQRA
+      DUSPSUAUBUKUSFULUOUKFZCUKJZURULVDKBUKAUCBAUDUNULUQVDUMUKDTUPVCCUMUKUMUKUO
+      TUEUFUGUHUI $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
