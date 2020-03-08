@@ -72552,20 +72552,6 @@ $)
   $}
 
   ${
-    $d x A $.  $d x B $.
-    $( There exists a positive integer greater than or equal to any two
-       others.  (Contributed by NM, 18-Aug-1999.) $)
-    nn2ge $p |- ( ( A e. NN /\ B e. NN ) ->
-                E. x e. NN ( A <_ x /\ B <_ x ) ) $=
-      ( cn wcel wa cv cle wbr wrex cr nnre adantr leid sylan wceq breq2 anbi12d
-      rspcev syldan adantl biantrud biimpa adantll anim1i adantlr lecasei ) BDE
-      ZCDEZFBAGZHIZCUJHIZFZADJZBCUHBKEZUIBLZMUICKEZUHCLZUAUIBCHIZUNUHUIUSUSCCHI
-      ZFZUNUIUQUSVAURUQUSVAUQUTUSCNUBUCOUMVAACDUJCPUKUSULUTUJCBHQUJCCHQRSTUDUHC
-      BHIZUNUIUHVBBBHIZVBFZUNUHUOVBVDUPUOVCVBBNUEOUMVDABDUJBPUKVCULVBUJBBHQUJBC
-      HQRSTUFUG $.
-  $}
-
-  ${
     $d x y A $.
     $( A positive integer is one or greater.  (Contributed by NM,
        25-Aug-1999.) $)
@@ -72622,6 +72608,19 @@ $)
        25-Aug-1999.) $)
     nnne0i $p |- A =/= 0 $=
       ( nnrei nngt0i gt0ne0ii ) AABCABDE $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( There exists a positive integer greater than or equal to any two
+       others.  (Contributed by NM, 18-Aug-1999.) $)
+    nn2ge $p |- ( ( A e. NN /\ B e. NN ) ->
+                E. x e. NN ( A <_ x /\ B <_ x ) ) $=
+      ( cn wcel wa caddc co cle wbr cc0 cr nnre adantl nngt0 ltled adantr mpbid
+      clt breq2 cv wrex nnaddcl 0red addge01d addge02d anbi12d rspcev syl12anc
+      wceq ) BDEZCDEZFZBCGHZDEBUNIJZCUNIJZBAUAZIJZCUQIJZFZADUBBCUCUMKCIJUOUMKCU
+      MUDZULCLEUKCMNZULKCSJUKCONPUMBCUKBLEULBMQZVBUERUMKBIJUPUMKBVAVCUKKBSJULBO
+      QPUMCBVBVCUFRUTUOUPFAUNDUQUNUJURUOUSUPUQUNBITUQUNCITUGUHUI $.
   $}
 
   $( The quotient of a real and a positive integer is real.  (Contributed by
