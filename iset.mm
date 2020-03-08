@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Mar-2020
+$( iset.mm - Version of 8-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -72591,6 +72591,11 @@ $)
   nnne0 $p |- ( A e. NN -> A =/= 0 ) $=
     ( cn wcel cc0 wceq 0nnn eleq1 mtbiri necon2ai ) ABCZADADEJDBCFADBGHI $.
 
+  $( A positive integer is apart from zero.  (Contributed by Jim Kingdon,
+     8-Mar-2020.) $)
+  nnap0 $p |- ( A e. NN -> A # 0 ) $=
+    ( cn wcel nnre nngt0 gt0ap0d ) ABCAADAEF $.
+
   ${
     nngt0.1 $e |- A e. NN $.
     $( A positive integer is positive (inference version).  (Contributed by NM,
@@ -72641,8 +72646,8 @@ $)
   $( The quotient of a real and a positive integer is real.  (Contributed by
      NM, 28-Nov-2008.) $)
   nndivre $p |- ( ( A e. RR /\ N e. NN ) -> ( A / N ) e. RR ) $=
-    ( cn wcel cr cc0 wne wa cdiv co nnre nnne0 jca redivcl 3expb sylan2 ) BCDZA
-    EDZBEDZBFGZHABIJEDZQSTBKBLMRSTUAABNOP $.
+    ( cn wcel cr cc0 cap wbr wa cdiv co nnre nnap0 jca redivclap 3expb sylan2 )
+    BCDZAEDZBEDZBFGHZIABJKEDZRTUABLBMNSTUAUBABOPQ $.
 
   $( The reciprocal of a positive integer is real.  (Contributed by NM,
      8-Feb-2008.) $)
