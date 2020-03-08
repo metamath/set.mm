@@ -1,4 +1,4 @@
-$( iset.mm - Version of 5-Mar-2020
+$( iset.mm - Version of 7-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -72566,12 +72566,6 @@ $)
       TWBVIVPTRWEDVHSUSUTVAVBVC $.
   $}
 
-  $( A positive integer is greater than one iff it is not equal to one.
-     (Contributed by NM, 7-Oct-2004.) $)
-  nngt1ne1 $p |- ( A e. NN -> ( 1 < A <-> A =/= 1 ) ) $=
-    ( cn wcel cr c1 cle wbr clt wne wb nnre nnge1 1re leltne mp3an1 syl2anc ) A
-    BCADCZEAFGZEAHGAEIJZAKALEDCQRSMEANOP $.
-
   $( A positive integer is less than or equal to one iff it is equal to one.
      (Contributed by NM, 3-Apr-2005.) $)
   nnle1eq1 $p |- ( A e. NN -> ( A <_ 1 <-> A = 1 ) ) $=
@@ -72622,6 +72616,27 @@ $)
       MUDZULCLEUKCMNZULKCSJUKCONPUMBCUKBLEULBMQZVBUERUMKBIJUPUMKBVAVCUKKBSJULBO
       QPUMCBVBVCUFRUTUOUPFAUNDUQUNUJURUOUSUPUQUNBITUQUNCITUGUHUI $.
   $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( A positive integer is either one or greater than one.  This is for
+       ` NN ` ; ~ 0elnn is a similar theorem for ` _om ` (the natural numbers
+       as ordinals).  (Contributed by Jim Kingdon, 7-Mar-2020.) $)
+    nn1gt1 $p |- ( A e. NN -> ( A = 1 \/ 1 < A ) ) $=
+      ( vx vy cv c1 wceq clt wbr wo caddc co eqeq1 breq2 orbi12d eqid orci wcel
+      cn cc0 cr nngt0 wb nnre 1re ltaddpos2 sylancl mpbid olcd a1d nnind ) BDZE
+      FZEUKGHZIEEFZEEGHZICDZEFZEUPGHZIZUPEJKZEFZEUTGHZIZAEFZEAGHZIBCAULULUNUMUO
+      UKEELUKEEGMNUKUPFULUQUMURUKUPELUKUPEGMNUKUTFULVAUMVBUKUTELUKUTEGMNUKAFULV
+      DUMVEUKAELUKAEGMNUNUOEOPUPRQZVCUSVFVBVAVFSUPGHZVBUPUAVFUPTQETQVGVBUBUPUCU
+      DUPEUEUFUGUHUIUJ $.
+
+  $}
+
+  $( A positive integer is greater than one iff it is not equal to one.
+     (Contributed by NM, 7-Oct-2004.) $)
+  nngt1ne1 $p |- ( A e. NN -> ( 1 < A <-> A =/= 1 ) ) $=
+    ( cn wcel c1 clt wbr wne cr 1re ltne mpan wceq wn nn1gt1 ord syl5bi impbid2
+    df-ne ) ABCZDAEFZADGZDHCTUAIDAJKUAADLZMSTADRSUBTANOPQ $.
 
   $( The quotient of a real and a positive integer is real.  (Contributed by
      NM, 28-Nov-2008.) $)
