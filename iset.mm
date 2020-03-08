@@ -72434,11 +72434,8 @@ $)
     $( Principle of Mathematical Induction (inference schema).  The first four
        hypotheses give us the substitution instances we need; the last two are
        the basis and the induction step.  See ~ nnaddcl for an example of its
-       use.  See ~ nn0ind for induction on nonnegative integers and ~ uzind ,
-       ~ uzind4 for induction on an arbitrary upper set of integers.  See
-       ~ indstr for strong induction.  See also ~ nnindALT .  This is an
-       alternative for Metamath 100 proof #74.  (Contributed by NM,
-       10-Jan-1997.)  (Revised by Mario Carneiro, 16-Jun-2013.) $)
+       use.  This is an alternative for Metamath 100 proof #74.  (Contributed
+       by NM, 10-Jan-1997.)  (Revised by Mario Carneiro, 16-Jun-2013.) $)
     nnind $p |- ( A e. NN -> ta ) $=
       ( cn wcel crab wa c1 elrab cv caddc wral wss 1nn mpbir2an elrabi peano2nn
       co a1d anim12d 3imtr4g mpcom rgen peano5nni mp2an sseli sylib simprd ) HO
