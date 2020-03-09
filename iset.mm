@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-Mar-2020
+$( iset.mm - Version of 9-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -72899,6 +72899,11 @@ $)
   0ne1 $p |- 0 =/= 1 $=
     ( cc0 c1 0re 0lt1 ltneii ) ABCDE $.
 
+  $( ` 1 =/= 0 ` .  See aso ~ 1ap0 .  (Contributed by Jim Kingdon,
+     9-Mar-2020.) $)
+  1ne0 $p |- 1 =/= 0 $=
+    ( cc0 c1 0ne1 necomi ) ABCD $.
+
   $( ` ( 1 - 1 ) = 0 ` (common case).  (Contributed by David A. Wheeler,
      7-Jul-2016.) $)
   1m1e0 $p |- ( 1 - 1 ) = 0 $=
@@ -73086,7 +73091,7 @@ $)
   $( -1 is nonzero (common case).  (Contributed by David A. Wheeler,
      8-Dec-2018.) $)
   neg1ne0 $p |- -u 1 =/= 0 $=
-    ( c1 ax-1cn ax-1ne0 negne0i ) ABCD $.
+    ( c1 ax-1cn 1ne0 negne0i ) ABCD $.
 
   $( -1 is less than 0 (common case).  (Contributed by David A. Wheeler,
      8-Dec-2018.) $)
