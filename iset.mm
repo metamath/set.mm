@@ -71221,6 +71221,75 @@ $)
 
     divmuld.3 $e |- ( ph -> C e. CC ) $.
     ${
+      divmulapd.4 $e |- ( ph -> B # 0 ) $.
+      $( Relationship between division and multiplication.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      divmulapd $p |- ( ph -> ( ( A / B ) = C <-> ( B x. C ) = A ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq cmul wb divmulap syl112anc ) ABIJDIJ
+        CIJCKLMBCNODPCDQOBPREGFHBDCST $.
+
+      $( A commutative/associative law for division.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      div32apd $p |- ( ph -> ( ( A / B ) x. C ) = ( A x. ( C / B ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq div32ap syl121anc ) ABIJCIJCKLM
+        DIJBCNODPOBDCNOPOQEFHGBCDRS $.
+
+      $( A commutative/associative law for division.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      div13apd $p |- ( ph -> ( ( A / B ) x. C ) = ( ( C / B ) x. A ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq div13ap syl121anc ) ABIJCIJCKLM
+        DIJBCNODPODCNOBPOQEFHGBCDRS $.
+
+      divdiv23apd.5 $e |- ( ph -> C # 0 ) $.
+      $( Swap denominators in a division.  (Contributed by Jim Kingdon,
+         8-Mar-2020.) $)
+      divdiv32apd $p |- ( ph -> ( ( A / B ) / C ) = ( ( A / C ) / B ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq divdiv32ap syl122anc ) ABJKCJKCLMNDJ
+        KDLMNBCOPDOPBDOPCOPQEFHGIBCDRS $.
+
+      $( Cancellation of common factor in a ratio.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      divcanap5d $p |- ( ph -> ( ( C x. A ) / ( C x. B ) ) = ( A / B ) ) $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap5 syl122anc ) ABJKCJKCL
+        MNDJKDLMNDBOPDCOPQPBCQPREFHGIBCDST $.
+
+      $( Cancellation of common factor in a ratio.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      divcanap5rd $p |- ( ph -> ( ( A x. C ) / ( B x. C ) ) = ( A / B ) ) $=
+        ( cmul co cdiv mulcomd oveq12d divcanap5d eqtrd ) ABDJKZCDJKZLKDBJKZDCJ
+        KZLKBCLKAQSRTLABDEGMACDFGMNABCDEFGHIOP $.
+
+      $( Cancel equal divisors in a division.  (Contributed by Jim Kingdon,
+         8-Mar-2020.) $)
+      divcanap7d $p |- ( ph -> ( ( A / C ) / ( B / C ) ) = ( A / B ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq divcanap7 syl122anc ) ABJKCJKCLMNDJK
+        DLMNBDOPCDOPOPBCOPQEFHGIBCDRS $.
+
+      $( Cancellation law for division and multiplication.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      dmdcanapd $p |- ( ph -> ( ( B / C ) x. ( A / B ) ) = ( A / C ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq dmdcanap syl221anc ) ACJKCLMNDJ
+        KDLMNBJKCDOPBCOPQPBDOPRFHGIECDBST $.
+
+      $( Cancellation law for division and multiplication.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      dmdcanap2d $p |- ( ph -> ( ( A / B ) x. ( B / C ) ) = ( A / C ) ) $=
+        ( cdiv co cmul divclapd mulcomd dmdcanapd eqtrd ) ABCJKZCDJKZLKRQLKBDJK
+        AQRABCEFHMACDFGIMNABCDEFGHIOP $.
+
+      $( Division into a fraction.  (Contributed by Jim Kingdon,
+         8-Mar-2020.) $)
+      divdivap1d $p |- ( ph -> ( ( A / B ) / C ) = ( A / ( B x. C ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divdivap1 syl122anc ) ABJKCJKCL
+        MNDJKDLMNBCOPDOPBCDQPOPREFHGIBCDST $.
+
+      $( Division by a fraction.  (Contributed by Jim Kingdon, 8-Mar-2020.) $)
+      divdivap2d $p |- ( ph -> ( A / ( B / C ) ) = ( ( A x. C ) / B ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divdivap2 syl122anc ) ABJKCJKCL
+        MNDJKDLMNBCDOPOPBDQPCOPREFHGIBCDST $.
+    $}
+
+    ${
       divassapd.4 $e |- ( ph -> C # 0 ) $.
       $( Relationship between division and multiplication.  (Contributed by Jim
          Kingdon, 2-Mar-2020.) $)
