@@ -73342,8 +73342,8 @@ $)
 
   $( One half of four is two.  (Contributed by NM, 3-Sep-1999.) $)
   4d2e2 $p |- ( 4 / 2 ) = 2 $=
-    ( c4 c2 cdiv co wceq cmul 2t2e4 4cn 2cn 2ne0 divmuli mpbir ) ABCDBEBBFDAEGA
-    BBHIIJKL $.
+    ( c4 c2 cdiv co wceq cmul 2t2e4 4cn 2cn 2ap0 divmulapi mpbir ) ABCDBEBBFDAE
+    GABBHIIJKL $.
 
   $( 2 is a positive integer.  (Contributed by NM, 20-Aug-2001.) $)
   2nn $p |- 2 e. NN $=
