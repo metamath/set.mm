@@ -73789,10 +73789,24 @@ $)
   2mulicn $p |- ( 2 x. _i ) e. CC $=
     ( c2 ci 2cn ax-icn mulcli ) ABCDE $.
 
-  $( ` 2 x. _i ) =/= 0 ` (common case).  (Contributed by David A. Wheeler,
-     8-Dec-2018.) $)
+  $( The imaginary unit ` _i ` is apart from zero.  (Contributed by Jim
+     Kingdon, 9-Mar-2020.) $)
+  iap0 $p |- _i # 0 $=
+    ( cc0 ci c1 cmul co caddc cap wbr wo 1ap0 olci cr wcel wb 0re apreim ax-icn
+    1re oveq2i eqtri mp4an mpbir mulid1i addid2i it0e0 00id 3brtr3i ) ABCDEZFEZ
+    ABADEZFEZBAGUIUKGHZAAGHZCAGHZIZUNUMJKALMZCLMUPUPULUONOROOACAAPUAUBUIABFEBUH
+    BAFBQUCSBQUDTUKAAFEAUJAAFUESUFTUG $.
+
+  $( ` 2 x. _i ` is apart from zero.  (Contributed by Jim Kingdon,
+     9-Mar-2020.) $)
+  2muliap0 $p |- ( 2 x. _i ) # 0 $=
+    ( c2 ci 2cn ax-icn 2ap0 iap0 mulap0i ) ABCDEFG $.
+
+  $( ` ( 2 x. _i ) =/= 0 ` .  See also ~ 2muliap0 .  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
   2muline0 $p |- ( 2 x. _i ) =/= 0 $=
-    ( c2 ci 2cn ax-icn 2ne0 ine0 mulne0i ) ABCDEFG $.
+    ( c2 ci cmul co cc0 cap wbr wne 2muliap0 cc wcel wi 2mulicn 0cn mp2an ax-mp
+    apne ) ABCDZEFGZREHZIRJKEJKSTLMNREQOP $.
 
 $(
 ###############################################################################
