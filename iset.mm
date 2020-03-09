@@ -71078,6 +71078,33 @@ $)
         GHABCDEFOP $.
     $}
 
+    ${
+      divassap.4 $e |- C # 0 $.
+      $( An associative law for division.  (Contributed by Jim Kingdon,
+         9-Mar-2020.) $)
+      divassapi $p |- ( ( A x. B ) / C ) = ( A x. ( B / C ) ) $=
+        ( cc wcel cc0 cap wbr wa cmul co cdiv wceq pm3.2i divassap mp3an ) AHIB
+        HICHIZCJKLZMABNOCPOABCPONOQDEUAUBFGRABCST $.
+
+      $( Distribution of division over addition.  (Contributed by Jim Kingdon,
+         9-Mar-2020.) $)
+      divdirapi $p |- ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) $=
+        ( cc wcel cc0 cap wbr wa caddc co cdiv wceq pm3.2i divdirap mp3an ) AHI
+        BHICHIZCJKLZMABNOCPOACPOBCPONOQDEUAUBFGRABCST $.
+
+      $( A commutative/associative law for division.  (Contributed by Jim
+         Kingdon, 9-Mar-2020.) $)
+      div23api $p |- ( ( A x. B ) / C ) = ( ( A / C ) x. B ) $=
+        ( cc wcel cc0 cap wbr wa cmul co cdiv wceq pm3.2i div23ap mp3an ) AHIBH
+        ICHIZCJKLZMABNOCPOACPOBNOQDEUAUBFGRABCST $.
+
+      $( One-to-one relationship for division.  (Contributed by Jim Kingdon,
+         9-Mar-2020.) $)
+      div11api $p |- ( ( A / C ) = ( B / C ) <-> A = B ) $=
+        ( cc wcel cc0 cap wbr wa cdiv co wceq wb pm3.2i div11ap mp3an ) AHIBHIC
+        HIZCJKLZMACNOBCNOPABPQDEUAUBFGRABCST $.
+    $}
+
     divmuldivap.4 $e |- D e. CC $.
     divmuldivap.5 $e |- B # 0 $.
     divmuldivap.6 $e |- D # 0 $.
