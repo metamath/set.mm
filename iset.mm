@@ -73729,12 +73729,13 @@ $)
   $( An eighth of four thirds is a sixth.  (Contributed by Paul Chapman,
      24-Nov-2007.) $)
   8th4div3 $p |- ( ( 1 / 8 ) x. ( 4 / 3 ) ) = ( 1 / 6 ) $=
-    ( c1 c8 cdiv co c4 c3 cmul c6 ax-1cn 8re recni 4cn gt0ne0ii c2 eqtr3i eqtri
-    3cn 2cn cc wcel divmuldivi mulcomi mul32i 4t2e8 oveq1i mulassi 3t2e6 oveq2i
-    8pos 3ne0 oveq12i cc0 wne wceq 6re 6pos 4ne0 wa divcan5 mp3an1 mp4an ) ABCD
-    EFCDGDZEAGDZEHGDZCDZAHCDZVBAEGDZBFGDZCDVEABEFIBJKLQBJUIMUJUAVGVCVHVDCAEILUB
-    VHEFNGDZGDZVDEFGDNGDZVHVJENGDZFGDVKVHENFLRQUCVLBFGUDUEOEFNLQRUFOVIHEGUGUHPU
-    KPHSTZHULUMZESTZEULUMZVEVFUNZHUOKHUOUPMLUQASTVMVNURVOVPURVQIAHEUSUTVAP $.
+    ( c1 c8 cdiv co c4 c3 cmul c6 ax-1cn 8re recni 4cn gt0ap0ii c2 eqtr3i eqtri
+    3cn 2cn cc wcel 8pos divmuldivapi mulcomi mul32i 4t2e8 oveq1i mulassi 3t2e6
+    3re 3pos oveq2i oveq12i cc0 cap wbr wceq 6re 6pos 4re 4pos divcanap5 mp3an1
+    wa mp4an ) ABCDEFCDGDZEAGDZEHGDZCDZAHCDZVEAEGDZBFGDZCDVHABEFIBJKLQBJUAMFUIU
+    JMUBVJVFVKVGCAEILUCVKEFNGDZGDZVGEFGDNGDZVKVMENGDZFGDVNVKENFLRQUDVOBFGUEUFOE
+    FNLQRUGOVLHEGUHUKPULPHSTZHUMUNUOZESTZEUMUNUOZVHVIUPZHUQKHUQURMLEUSUTMASTVPV
+    QVCVRVSVCVTIAHEVAVBVDP $.
 
   $( One half plus or minus one sixth.  (Contributed by Paul Chapman,
      17-Jan-2008.) $)
