@@ -73017,6 +73017,11 @@ $)
   2ne0 $p |- 2 =/= 0 $=
     ( c2 2re 2pos gt0ne0ii ) ABCD $.
 
+  $( The number 2 is apart from zero.  (Contributed by Jim Kingdon,
+     9-Mar-2020.) $)
+  2ap0 $p |- 2 # 0 $=
+    ( c2 2re 2pos gt0ap0ii ) ABCD $.
+
   $( The number 3 is positive.  (Contributed by NM, 27-May-1999.) $)
   3pos $p |- 0 < 3 $=
     ( cc0 c2 c1 caddc co c3 clt 2re 1re 2pos 0lt1 addgt0ii df-3 breqtrri ) ABCD
@@ -73181,7 +73186,7 @@ $)
   $( 2 divided by 2 is 1 (common case).  (Contributed by David A. Wheeler,
      8-Dec-2018.) $)
   2div2e1 $p |- ( 2 / 2 ) = 1 $=
-    ( c2 2cn 2ne0 dividi ) ABCD $.
+    ( c2 2cn 2ap0 dividapi ) ABCD $.
 
   $( 2 + 1 = 3.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
   2p1e3 $p |- ( 2 + 1 ) = 3 $=
