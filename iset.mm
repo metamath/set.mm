@@ -71081,6 +71081,36 @@ $)
   $}
 
   ${
+    $d x y B $.
+    redivclap.1 $e |- A e. RR $.
+    $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    rerecclapzi $p |- ( A # 0 -> ( 1 / A ) e. RR ) $=
+      ( cr wcel cc0 cap wbr c1 cdiv co rerecclap mpan ) ACDAEFGHAIJCDBAKL $.
+
+    ${
+      rerecclap.2 $e |- A # 0 $.
+      $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+         9-Mar-2020.) $)
+      rerecclapi $p |- ( 1 / A ) e. RR $=
+        ( cc0 cap wbr c1 cdiv co cr wcel rerecclapzi ax-mp ) ADEFGAHIJKCABLM $.
+    $}
+
+    redivclap.2 $e |- B e. RR $.
+    $( Closure law for division of reals.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    redivclapzi $p |- ( B # 0 -> ( A / B ) e. RR ) $=
+      ( cr wcel cc0 cap wbr cdiv co redivclap mp3an12 ) AEFBEFBGHIABJKEFCDABLM
+      $.
+
+    redivclap.3 $e |- B # 0 $.
+    $( Closure law for division of reals.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    redivclapi $p |- ( A / B ) e. RR $=
+      ( cc0 cap wbr cdiv co cr wcel redivclapzi ax-mp ) BFGHABIJKLEABCDMN $.
+  $}
+
+  ${
     div1d.1 $e |- ( ph -> A e. CC ) $.
     $( A number divided by 1 is itself.  (Contributed by Mario Carneiro,
        27-May-2016.) $)
