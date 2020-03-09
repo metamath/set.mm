@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-Mar-2020
+$( iset.mm - Version of 9-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -71078,6 +71078,94 @@ $)
         GHABCDEFOP $.
     $}
 
+    ${
+      divassap.4 $e |- C # 0 $.
+      $( An associative law for division.  (Contributed by Jim Kingdon,
+         9-Mar-2020.) $)
+      divassapi $p |- ( ( A x. B ) / C ) = ( A x. ( B / C ) ) $=
+        ( cc wcel cc0 cap wbr wa cmul co cdiv wceq pm3.2i divassap mp3an ) AHIB
+        HICHIZCJKLZMABNOCPOABCPONOQDEUAUBFGRABCST $.
+
+      $( Distribution of division over addition.  (Contributed by Jim Kingdon,
+         9-Mar-2020.) $)
+      divdirapi $p |- ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) $=
+        ( cc wcel cc0 cap wbr wa caddc co cdiv wceq pm3.2i divdirap mp3an ) AHI
+        BHICHIZCJKLZMABNOCPOACPOBCPONOQDEUAUBFGRABCST $.
+
+      $( A commutative/associative law for division.  (Contributed by Jim
+         Kingdon, 9-Mar-2020.) $)
+      div23api $p |- ( ( A x. B ) / C ) = ( ( A / C ) x. B ) $=
+        ( cc wcel cc0 cap wbr wa cmul co cdiv wceq pm3.2i div23ap mp3an ) AHIBH
+        ICHIZCJKLZMABNOCPOACPOBNOQDEUAUBFGRABCST $.
+
+      $( One-to-one relationship for division.  (Contributed by Jim Kingdon,
+         9-Mar-2020.) $)
+      div11api $p |- ( ( A / C ) = ( B / C ) <-> A = B ) $=
+        ( cc wcel cc0 cap wbr wa cdiv co wceq wb pm3.2i div11ap mp3an ) AHIBHIC
+        HIZCJKLZMACNOBCNOPABPQDEUAUBFGRABCST $.
+    $}
+
+    divmuldivap.4 $e |- D e. CC $.
+    divmuldivap.5 $e |- B # 0 $.
+    divmuldivap.6 $e |- D # 0 $.
+    $( Multiplication of two ratios.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    divmuldivapi $p |- ( ( A / B ) x. ( C / D ) ) =
+                      ( ( A x. C ) / ( B x. D ) ) $=
+      ( cc wcel cc0 cap wbr wa cdiv co cmul pm3.2i wceq divmuldivap mp4an ) AKL
+      CKLBKLZBMNOZPDKLZDMNOZPABQRCDQRSRACSRBDSRQRUAEGUDUEFITUFUGHJTACBDUBUC $.
+
+    $( Swap denominators of two ratios.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    divmul13api $p |- ( ( A / B ) x. ( C / D ) ) =
+                   ( ( C / B ) x. ( A / D ) ) $=
+      ( cc wcel cc0 cap wbr wa cdiv co cmul pm3.2i wceq divmul13ap mp4an ) AKLC
+      KLBKLZBMNOZPDKLZDMNOZPABQRCDQRSRCBQRADQRSRUAEGUDUEFITUFUGHJTACBDUBUC $.
+
+    $( Addition of two ratios.  (Contributed by Jim Kingdon, 9-Mar-2020.) $)
+    divadddivapi $p |- ( ( A / B ) + ( C / D ) ) =
+                      ( ( ( A x. D ) + ( C x. B ) ) / ( B x. D ) ) $=
+      ( cc wcel cc0 cap wbr wa cdiv co caddc cmul wceq pm3.2i divadddivap mp4an
+      ) AKLCKLBKLZBMNOZPDKLZDMNOZPABQRCDQRSRADTRCBTRSRBDTRQRUAEGUEUFFIUBUGUHHJU
+      BACBDUCUD $.
+
+    divdivdivap.7 $e |- C # 0 $.
+    $( Division of two ratios.  (Contributed by Jim Kingdon, 9-Mar-2020.) $)
+    divdivdivapi $p |- ( ( A / B ) / ( C / D ) )
+                        = ( ( A x. D ) / ( B x. C ) ) $=
+      ( cc wcel cc0 cap wbr wa cdiv co pm3.2i cmul wceq divdivdivap mp4an ) ALM
+      BLMZBNOPZQCLMZCNOPZQDLMZDNOPZQABRSCDRSRSADUASBCUASRSUBEUEUFFITUGUHGKTUIUJ
+      HJTABCDUCUD $.
+  $}
+
+  ${
+    $d x y B $.
+    redivclap.1 $e |- A e. RR $.
+    $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    rerecclapzi $p |- ( A # 0 -> ( 1 / A ) e. RR ) $=
+      ( cr wcel cc0 cap wbr c1 cdiv co rerecclap mpan ) ACDAEFGHAIJCDBAKL $.
+
+    ${
+      rerecclap.2 $e |- A # 0 $.
+      $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+         9-Mar-2020.) $)
+      rerecclapi $p |- ( 1 / A ) e. RR $=
+        ( cc0 cap wbr c1 cdiv co cr wcel rerecclapzi ax-mp ) ADEFGAHIJKCABLM $.
+    $}
+
+    redivclap.2 $e |- B e. RR $.
+    $( Closure law for division of reals.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    redivclapzi $p |- ( B # 0 -> ( A / B ) e. RR ) $=
+      ( cr wcel cc0 cap wbr cdiv co redivclap mp3an12 ) AEFBEFBGHIABJKEFCDABLM
+      $.
+
+    redivclap.3 $e |- B # 0 $.
+    $( Closure law for division of reals.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    redivclapi $p |- ( A / B ) e. RR $=
+      ( cc0 cap wbr cdiv co cr wcel redivclapzi ax-mp ) BFGHABIJKLEABCDMN $.
   $}
 
   ${
@@ -72829,6 +72917,898 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Decimal representation of numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  Note that the numbers 0 and 1 are constants defined as primitives of the
+  complex number axiom system (see ~ df-0 and ~ df-1 ).
+
+  Only the digits 0 through 9 ( ~ df-0 through ~ df-9 ) and the
+  number 10 ( ~ df-10 ) are explicitly defined.
+
+  Most abstract math rarely requires numbers larger than 4.  Even in Wiles'
+  proof of Fermat's Last Theorem, the largest number used appears to be 12.
+
+$)
+
+  $c 2 $. $( The decimal number 2 $)
+  $c 3 $. $( The decimal number 3 $)
+  $c 4 $. $( The decimal number 4 $)
+  $c 5 $. $( The decimal number 5 $)
+  $c 6 $. $( The decimal number 6 $)
+  $c 7 $. $( The decimal number 7 $)
+  $c 8 $. $( The decimal number 8 $)
+  $c 9 $. $( The decimal number 9 $)
+  $c 10 $. $( The decimal number 10 $)
+
+  $( Extend class notation to include the number 2. $)
+  c2 $a class 2 $.
+  $( Extend class notation to include the number 3. $)
+  c3 $a class 3 $.
+  $( Extend class notation to include the number 4. $)
+  c4 $a class 4 $.
+  $( Extend class notation to include the number 5. $)
+  c5 $a class 5 $.
+  $( Extend class notation to include the number 6. $)
+  c6 $a class 6 $.
+  $( Extend class notation to include the number 7. $)
+  c7 $a class 7 $.
+  $( Extend class notation to include the number 8. $)
+  c8 $a class 8 $.
+  $( Extend class notation to include the number 9. $)
+  c9 $a class 9 $.
+  $( Extend class notation to include the number 10. $)
+  c10 $a class 10 $.
+
+  $( Define the number 2.  (Contributed by NM, 27-May-1999.) $)
+  df-2 $a |- 2 = ( 1 + 1 ) $.
+
+  $( Define the number 3.  (Contributed by NM, 27-May-1999.) $)
+  df-3 $a |- 3 = ( 2 + 1 ) $.
+  $( Define the number 4.  (Contributed by NM, 27-May-1999.) $)
+  df-4 $a |- 4 = ( 3 + 1 ) $.
+  $( Define the number 5.  (Contributed by NM, 27-May-1999.) $)
+  df-5 $a |- 5 = ( 4 + 1 ) $.
+  $( Define the number 6.  (Contributed by NM, 27-May-1999.) $)
+  df-6 $a |- 6 = ( 5 + 1 ) $.
+  $( Define the number 7.  (Contributed by NM, 27-May-1999.) $)
+  df-7 $a |- 7 = ( 6 + 1 ) $.
+  $( Define the number 8.  (Contributed by NM, 27-May-1999.) $)
+  df-8 $a |- 8 = ( 7 + 1 ) $.
+  $( Define the number 9.  (Contributed by NM, 27-May-1999.) $)
+  df-9 $a |- 9 = ( 8 + 1 ) $.
+  $( Define the number 10.  See remarks under ~ df-2 .  (Contributed by NM,
+     5-Feb-2007.) $)
+  df-10 $a |- 10 = ( 9 + 1 ) $.
+
+  $( ` 0 =/= 1 ` (common case).  See aso ~ 1ap0 .  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  0ne1 $p |- 0 =/= 1 $=
+    ( cc0 c1 0re 0lt1 ltneii ) ABCDE $.
+
+  $( ` 1 =/= 0 ` .  See aso ~ 1ap0 .  (Contributed by Jim Kingdon,
+     9-Mar-2020.) $)
+  1ne0 $p |- 1 =/= 0 $=
+    ( cc0 c1 0ne1 necomi ) ABCD $.
+
+  $( ` ( 1 - 1 ) = 0 ` (common case).  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  1m1e0 $p |- ( 1 - 1 ) = 0 $=
+    ( c1 ax-1cn subidi ) ABC $.
+
+  $( The number 2 is real.  (Contributed by NM, 27-May-1999.) $)
+  2re $p |- 2 e. RR $=
+    ( c2 c1 caddc co cr df-2 1re readdcli eqeltri ) ABBCDEFBBGGHI $.
+
+  $( The number 2 is a complex number.  (Contributed by NM, 30-Jul-2004.) $)
+  2cn $p |- 2 e. CC $=
+    ( c2 2re recni ) ABC $.
+
+  $( 2 is a set (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  2ex $p |- 2 e. _V $=
+    ( c2 cc 2cn elexi ) ABCD $.
+
+  $( 2 is a complex number, deductive form (common case).  (Contributed by
+     David A. Wheeler, 8-Dec-2018.) $)
+  2cnd $p |- ( ph -> 2 e. CC ) $=
+    ( c2 cc wcel 2cn a1i ) BCDAEF $.
+
+  $( The number 3 is real.  (Contributed by NM, 27-May-1999.) $)
+  3re $p |- 3 e. RR $=
+    ( c3 c2 c1 caddc co cr df-3 2re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 3 is a complex number.  (Contributed by FL, 17-Oct-2010.) $)
+  3cn $p |- 3 e. CC $=
+    ( c3 3re recni ) ABC $.
+
+  $( 3 is a set (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  3ex $p |- 3 e. _V $=
+    ( c3 cc 3cn elexi ) ABCD $.
+
+  $( The number 4 is real.  (Contributed by NM, 27-May-1999.) $)
+  4re $p |- 4 e. RR $=
+    ( c4 c3 c1 caddc co cr df-4 3re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 4 is a complex number.  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  4cn $p |- 4 e. CC $=
+    ( c4 4re recni ) ABC $.
+
+  $( The number 5 is real.  (Contributed by NM, 27-May-1999.) $)
+  5re $p |- 5 e. RR $=
+    ( c5 c4 c1 caddc co cr df-5 4re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 5 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  5cn $p |- 5 e. CC $=
+    ( c5 5re recni ) ABC $.
+
+  $( The number 6 is real.  (Contributed by NM, 27-May-1999.) $)
+  6re $p |- 6 e. RR $=
+    ( c6 c5 c1 caddc co cr df-6 5re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 6 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  6cn $p |- 6 e. CC $=
+    ( c6 6re recni ) ABC $.
+
+  $( The number 7 is real.  (Contributed by NM, 27-May-1999.) $)
+  7re $p |- 7 e. RR $=
+    ( c7 c6 c1 caddc co cr df-7 6re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 7 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  7cn $p |- 7 e. CC $=
+    ( c7 7re recni ) ABC $.
+
+  $( The number 8 is real.  (Contributed by NM, 27-May-1999.) $)
+  8re $p |- 8 e. RR $=
+    ( c8 c7 c1 caddc co cr df-8 7re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 8 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  8cn $p |- 8 e. CC $=
+    ( c8 8re recni ) ABC $.
+
+  $( The number 9 is real.  (Contributed by NM, 27-May-1999.) $)
+  9re $p |- 9 e. RR $=
+    ( c9 c8 c1 caddc co cr df-9 8re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 9 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  9cn $p |- 9 e. CC $=
+    ( c9 9re recni ) ABC $.
+
+  $( The number 10 is real.  (Contributed by NM, 5-Feb-2007.) $)
+  10re $p |- 10 e. RR $=
+    ( c10 c9 c1 caddc co cr df-10 9re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( Zero is nonnegative.  (Contributed by David A. Wheeler, 7-Jul-2016.) $)
+  0le0 $p |- 0 <_ 0 $=
+    ( cc0 0re leidi ) ABC $.
+
+  $( 0 is less than or equal to 2.  (Contributed by David A. Wheeler,
+     7-Dec-2018.) $)
+  0le2 $p |- 0 <_ 2 $=
+    ( cc0 c1 caddc co c2 cle wbr 0le1 1re addge0i mp2an df-2 breqtrri ) ABBCDZE
+    FABFGZOANFGHHBBIIJKLM $.
+
+  $( The number 2 is positive.  (Contributed by NM, 27-May-1999.) $)
+  2pos $p |- 0 < 2 $=
+    ( cc0 c1 caddc co c2 clt 1re 0lt1 addgt0ii df-2 breqtrri ) ABBCDEFBBGGHHIJK
+    $.
+
+  $( The number 2 is nonzero.  (Contributed by NM, 9-Nov-2007.) $)
+  2ne0 $p |- 2 =/= 0 $=
+    ( c2 2re 2pos gt0ne0ii ) ABCD $.
+
+  $( The number 2 is apart from zero.  (Contributed by Jim Kingdon,
+     9-Mar-2020.) $)
+  2ap0 $p |- 2 # 0 $=
+    ( c2 2re 2pos gt0ap0ii ) ABCD $.
+
+  $( The number 3 is positive.  (Contributed by NM, 27-May-1999.) $)
+  3pos $p |- 0 < 3 $=
+    ( cc0 c2 c1 caddc co c3 clt 2re 1re 2pos 0lt1 addgt0ii df-3 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 3 is nonzero.  (Contributed by FL, 17-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 7-May-2011.) $)
+  3ne0 $p |- 3 =/= 0 $=
+    ( c3 3re 3pos gt0ne0ii ) ABCD $.
+
+  $( The number 4 is positive.  (Contributed by NM, 27-May-1999.) $)
+  4pos $p |- 0 < 4 $=
+    ( cc0 c3 c1 caddc co c4 clt 3re 1re 3pos 0lt1 addgt0ii df-4 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 4 is nonzero.  (Contributed by David A. Wheeler,
+     5-Dec-2018.) $)
+  4ne0 $p |- 4 =/= 0 $=
+    ( c4 4re 4pos gt0ne0ii ) ABCD $.
+
+  $( The number 5 is positive.  (Contributed by NM, 27-May-1999.) $)
+  5pos $p |- 0 < 5 $=
+    ( cc0 c4 c1 caddc co c5 clt 4re 1re 4pos 0lt1 addgt0ii df-5 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 6 is positive.  (Contributed by NM, 27-May-1999.) $)
+  6pos $p |- 0 < 6 $=
+    ( cc0 c5 c1 caddc co c6 clt 5re 1re 5pos 0lt1 addgt0ii df-6 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 7 is positive.  (Contributed by NM, 27-May-1999.) $)
+  7pos $p |- 0 < 7 $=
+    ( cc0 c6 c1 caddc co c7 clt 6re 1re 6pos 0lt1 addgt0ii df-7 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 8 is positive.  (Contributed by NM, 27-May-1999.) $)
+  8pos $p |- 0 < 8 $=
+    ( cc0 c7 c1 caddc co c8 clt 7re 1re 7pos 0lt1 addgt0ii df-8 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 9 is positive.  (Contributed by NM, 27-May-1999.) $)
+  9pos $p |- 0 < 9 $=
+    ( cc0 c8 c1 caddc co c9 clt 8re 1re 8pos 0lt1 addgt0ii df-9 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 10 is positive.  (Contributed by NM, 5-Feb-2007.) $)
+  10pos $p |- 0 < 10 $=
+    ( cc0 c9 c1 caddc co c10 clt 9re 1re 9pos 0lt1 addgt0ii df-10 breqtrri ) AB
+    CDEFGBCHIJKLMN $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Some properties of specific numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  This includes adding two pairs of values 1..10
+  (where the right is less than the left)
+  and where the left is less than the right for the values 1..10.
+
+$)
+
+  $( -1 is a complex number (common case).  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  neg1cn $p |- -u 1 e. CC $=
+    ( c1 ax-1cn negcli ) ABC $.
+
+  $( -1 is a real number (common case).  (Contributed by David A. Wheeler,
+     5-Dec-2018.) $)
+  neg1rr $p |- -u 1 e. RR $=
+    ( c1 1re renegcli ) ABC $.
+
+  $( -1 is nonzero (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  neg1ne0 $p |- -u 1 =/= 0 $=
+    ( c1 ax-1cn 1ne0 negne0i ) ABCD $.
+
+  $( -1 is less than 0 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  neg1lt0 $p |- -u 1 < 0 $=
+    ( c1 cneg cc0 clt wbr neg0 0lt1 eqbrtri 1re 0re ltnegcon1i mpbir ) ABCDECBZ
+    ADEMCADFGHACIJKL $.
+
+  $( ` -u -u 1 ` is 1 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  negneg1e1 $p |- -u -u 1 = 1 $=
+    ( c1 ax-1cn negnegi ) ABC $.
+
+  $( ` 1 + -u 1 ` is 0 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  1pneg1e0 $p |- ( 1 + -u 1 ) = 0 $=
+    ( c1 ax-1cn negidi ) ABC $.
+
+  $( 0 minus 0 equals 0 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  0m0e0 $p |- ( 0 - 0 ) = 0 $=
+    ( cc0 0cn subidi ) ABC $.
+
+  $( 1 - 0 = 1 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  1m0e1 $p |- ( 1 - 0 ) = 1 $=
+    ( c1 ax-1cn subid1i ) ABC $.
+
+  $( 0 + 1 = 1.  (Contributed by David A. Wheeler, 7-Jul-2016.) $)
+  0p1e1 $p |- ( 0 + 1 ) = 1 $=
+    ( c1 ax-1cn addid2i ) ABC $.
+
+  $( 1 + 0 = 1.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  1p0e1 $p |- ( 1 + 0 ) = 1 $=
+    ( c1 ax-1cn addid1i ) ABC $.
+
+  $( 1 + 1 = 2.  (Contributed by NM, 1-Apr-2008.) $)
+  1p1e2 $p |- ( 1 + 1 ) = 2 $=
+    ( c2 c1 caddc co df-2 eqcomi ) ABBCDEF $.
+
+  $( 2 - 1 = 1.  The result is on the right-hand-side to be consistent with
+     similar proofs like ~ 4p4e8 .  (Contributed by David A. Wheeler,
+     4-Jan-2017.) $)
+  2m1e1 $p |- ( 2 - 1 ) = 1 $=
+    ( c2 c1 2cn ax-1cn 1p1e2 subaddrii ) ABBCDDEF $.
+
+  $( 1 = 2 - 1 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  1e2m1 $p |- 1 = ( 2 - 1 ) $=
+    ( c2 c1 cmin co 2m1e1 eqcomi ) ABCDBEF $.
+
+  $( 3 - 1 = 2.  (Contributed by FL, 17-Oct-2010.)  (Revised by NM,
+     10-Dec-2017.) $)
+  3m1e2 $p |- ( 3 - 1 ) = 2 $=
+    ( c3 c1 c2 3cn ax-1cn 2cn caddc co addcomi df-3 eqtr4i subaddrii ) ABCDEFBC
+    GHCBGHABCEFIJKL $.
+
+  $( Two plus two equals four.  For more information, see "2+2=4 Trivia" on the
+     Metamath Proof Explorer Home Page:
+     ~ http://us.metamath.org/mpeuni/mmset.html#trivia .  (Contributed by NM,
+     27-May-1999.) $)
+  2p2e4 $p |- ( 2 + 2 ) = 4 $=
+    ( c2 caddc co c1 c4 df-2 oveq2i c3 df-4 oveq1i ax-1cn addassi 3eqtri eqtr4i
+    df-3 2cn ) AABCADDBCZBCZEAQABFGEHDBCADBCZDBCRIHSDBOJADDPKKLMN $.
+
+  $( Two times a number.  (Contributed by NM, 10-Oct-2004.)  (Revised by Mario
+     Carneiro, 27-May-2016.)  (Proof shortened by AV, 26-Feb-2020.) $)
+  2times $p |- ( A e. CC -> ( 2 x. A ) = ( A + A ) ) $=
+    ( cc wcel c2 cmul co c1 caddc df-2 oveq1i 1p1times syl5eq ) ABCDAEFGGHFZAEF
+    AAHFDMAEIJAKL $.
+
+  $( A number times 2.  (Contributed by NM, 16-Oct-2007.) $)
+  times2 $p |- ( A e. CC -> ( A x. 2 ) = ( A + A ) ) $=
+    ( cc wcel c2 cmul co caddc wceq 2cn mulcom mpan2 2times eqtrd ) ABCZADEFZDA
+    EFZAAGFNDBCOPHIADJKALM $.
+
+  ${
+    2times.1 $e |- A e. CC $.
+    $( Two times a number.  (Contributed by NM, 1-Aug-1999.) $)
+    2timesi $p |- ( 2 x. A ) = ( A + A ) $=
+      ( cc wcel c2 cmul co caddc wceq 2times ax-mp ) ACDEAFGAAHGIBAJK $.
+
+    $( A number times 2.  (Contributed by NM, 11-May-2004.) $)
+    times2i $p |- ( A x. 2 ) = ( A + A ) $=
+      ( cc wcel c2 cmul co caddc wceq times2 ax-mp ) ACDAEFGAAHGIBAJK $.
+  $}
+
+  $( 2 divided by 2 is 1 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  2div2e1 $p |- ( 2 / 2 ) = 1 $=
+    ( c2 2cn 2ap0 dividapi ) ABCD $.
+
+  $( 2 + 1 = 3.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  2p1e3 $p |- ( 2 + 1 ) = 3 $=
+    ( c3 c2 c1 caddc co df-3 eqcomi ) ABCDEFG $.
+
+  $( 1 + 2 = 3 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  1p2e3 $p |- ( 1 + 2 ) = 3 $=
+    ( c2 c1 c3 2cn ax-1cn 2p1e3 addcomli ) ABCDEFG $.
+
+  $( 3 + 1 = 4.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  3p1e4 $p |- ( 3 + 1 ) = 4 $=
+    ( c4 c3 c1 caddc co df-4 eqcomi ) ABCDEFG $.
+
+  $( 4 + 1 = 5.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  4p1e5 $p |- ( 4 + 1 ) = 5 $=
+    ( c5 c4 c1 caddc co df-5 eqcomi ) ABCDEFG $.
+
+  $( 5 + 1 = 6.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  5p1e6 $p |- ( 5 + 1 ) = 6 $=
+    ( c6 c5 c1 caddc co df-6 eqcomi ) ABCDEFG $.
+
+  $( 6 + 1 = 7.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  6p1e7 $p |- ( 6 + 1 ) = 7 $=
+    ( c7 c6 c1 caddc co df-7 eqcomi ) ABCDEFG $.
+
+  $( 7 + 1 = 8.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  7p1e8 $p |- ( 7 + 1 ) = 8 $=
+    ( c8 c7 c1 caddc co df-8 eqcomi ) ABCDEFG $.
+
+  $( 8 + 1 = 9.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  8p1e9 $p |- ( 8 + 1 ) = 9 $=
+    ( c9 c8 c1 caddc co df-9 eqcomi ) ABCDEFG $.
+
+  $( 9 + 1 = 10.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  9p1e10 $p |- ( 9 + 1 ) = 10 $=
+    ( c10 c9 c1 caddc co df-10 eqcomi ) ABCDEFG $.
+
+  $( 3 + 2 = 5.  (Contributed by NM, 11-May-2004.) $)
+  3p2e5 $p |- ( 3 + 2 ) = 5 $=
+    ( c3 c2 caddc co c4 c1 c5 df-2 oveq2i 3cn ax-1cn addassi eqtr4i df-4 oveq1i
+    df-5 ) ABCDZEFCDZGQAFCDZFCDZRQAFFCDZCDTBUAACHIAFFJKKLMESFCNOMPM $.
+
+  $( 3 + 3 = 6.  (Contributed by NM, 11-May-2004.) $)
+  3p3e6 $p |- ( 3 + 3 ) = 6 $=
+    ( c3 caddc co c2 c1 c6 df-3 oveq2i 3cn 2cn ax-1cn addassi eqtr4i df-6 3p2e5
+    c5 oveq1i ) AABCZADBCZEBCZFRADEBCZBCTAUAABGHADEIJKLMFPEBCTNSPEBOQMM $.
+
+  $( 4 + 2 = 6.  (Contributed by NM, 11-May-2004.) $)
+  4p2e6 $p |- ( 4 + 2 ) = 6 $=
+    ( c4 c2 caddc co c5 c1 c6 df-2 oveq2i 4cn ax-1cn addassi eqtr4i df-5 oveq1i
+    df-6 ) ABCDZEFCDZGQAFCDZFCDZRQAFFCDZCDTBUAACHIAFFJKKLMESFCNOMPM $.
+
+  $( 4 + 3 = 7.  (Contributed by NM, 11-May-2004.) $)
+  4p3e7 $p |- ( 4 + 3 ) = 7 $=
+    ( c4 c3 caddc co c2 c1 c7 df-3 oveq2i 4cn 2cn ax-1cn addassi eqtr4i c6 df-7
+    4p2e6 oveq1i ) ABCDZAECDZFCDZGSAEFCDZCDUABUBACHIAEFJKLMNGOFCDUAPTOFCQRNN $.
+
+  $( 4 + 4 = 8.  (Contributed by NM, 11-May-2004.) $)
+  4p4e8 $p |- ( 4 + 4 ) = 8 $=
+    ( c4 caddc co c3 c1 c8 df-4 oveq2i 4cn 3cn ax-1cn addassi eqtr4i df-8 4p3e7
+    c7 oveq1i ) AABCZADBCZEBCZFRADEBCZBCTAUAABGHADEIJKLMFPEBCTNSPEBOQMM $.
+
+  $( 5 + 2 = 7.  (Contributed by NM, 11-May-2004.) $)
+  5p2e7 $p |- ( 5 + 2 ) = 7 $=
+    ( c5 c2 caddc co c6 c1 c7 df-2 oveq2i 5cn ax-1cn addassi eqtr4i df-6 oveq1i
+    df-7 ) ABCDZEFCDZGQAFCDZFCDZRQAFFCDZCDTBUAACHIAFFJKKLMESFCNOMPM $.
+
+  $( 5 + 3 = 8.  (Contributed by NM, 11-May-2004.) $)
+  5p3e8 $p |- ( 5 + 3 ) = 8 $=
+    ( c5 c3 caddc co c2 c1 c8 df-3 oveq2i 5cn 2cn ax-1cn addassi eqtr4i c7 df-8
+    5p2e7 oveq1i ) ABCDZAECDZFCDZGSAEFCDZCDUABUBACHIAEFJKLMNGOFCDUAPTOFCQRNN $.
+
+  $( 5 + 4 = 9.  (Contributed by NM, 11-May-2004.) $)
+  5p4e9 $p |- ( 5 + 4 ) = 9 $=
+    ( c5 c4 caddc co c3 c1 c9 df-4 oveq2i 5cn 3cn ax-1cn addassi eqtr4i c8 df-9
+    5p3e8 oveq1i ) ABCDZAECDZFCDZGSAEFCDZCDUABUBACHIAEFJKLMNGOFCDUAPTOFCQRNN $.
+
+  $( 5 + 5 = 10.  (Contributed by NM, 5-Feb-2007.) $)
+  5p5e10 $p |- ( 5 + 5 ) = 10 $=
+    ( c5 caddc co c4 c1 c10 oveq2i 5cn 4cn ax-1cn addassi eqtr4i c9 df-10 5p4e9
+    df-5 oveq1i ) AABCZADBCZEBCZFRADEBCZBCTAUAABPGADEHIJKLFMEBCTNSMEBOQLL $.
+
+  $( 6 + 2 = 8.  (Contributed by NM, 11-May-2004.) $)
+  6p2e8 $p |- ( 6 + 2 ) = 8 $=
+    ( c6 c2 caddc co c7 c1 c8 df-2 oveq2i 6cn ax-1cn addassi eqtr4i df-7 oveq1i
+    df-8 ) ABCDZEFCDZGQAFCDZFCDZRQAFFCDZCDTBUAACHIAFFJKKLMESFCNOMPM $.
+
+  $( 6 + 3 = 9.  (Contributed by NM, 11-May-2004.) $)
+  6p3e9 $p |- ( 6 + 3 ) = 9 $=
+    ( c6 c3 caddc co c2 c1 c9 df-3 oveq2i 6cn 2cn ax-1cn addassi eqtr4i c8 df-9
+    6p2e8 oveq1i ) ABCDZAECDZFCDZGSAEFCDZCDUABUBACHIAEFJKLMNGOFCDUAPTOFCQRNN $.
+
+  $( 6 + 4 = 10.  (Contributed by NM, 5-Feb-2007.) $)
+  6p4e10 $p |- ( 6 + 4 ) = 10 $=
+    ( c6 c4 caddc co c3 c1 c10 oveq2i 6cn 3cn ax-1cn addassi eqtr4i df-10 6p3e9
+    df-4 c9 oveq1i ) ABCDZAECDZFCDZGSAEFCDZCDUABUBACPHAEFIJKLMGQFCDUANTQFCORMM
+    $.
+
+  $( 7 + 2 = 9.  (Contributed by NM, 11-May-2004.) $)
+  7p2e9 $p |- ( 7 + 2 ) = 9 $=
+    ( c7 c2 caddc co c8 c1 c9 df-2 oveq2i 7cn ax-1cn addassi eqtr4i df-8 oveq1i
+    df-9 ) ABCDZEFCDZGQAFCDZFCDZRQAFFCDZCDTBUAACHIAFFJKKLMESFCNOMPM $.
+
+  $( 7 + 3 = 10.  (Contributed by NM, 5-Feb-2007.) $)
+  7p3e10 $p |- ( 7 + 3 ) = 10 $=
+    ( c7 c3 caddc co c2 c1 c10 oveq2i 7cn 2cn ax-1cn addassi eqtr4i df-10 7p2e9
+    df-3 c9 oveq1i ) ABCDZAECDZFCDZGSAEFCDZCDUABUBACPHAEFIJKLMGQFCDUANTQFCORMM
+    $.
+
+  $( 8 + 2 = 10.  (Contributed by NM, 5-Feb-2007.) $)
+  8p2e10 $p |- ( 8 + 2 ) = 10 $=
+    ( c8 c2 caddc co c9 c1 c10 df-2 oveq2i 8cn ax-1cn addassi eqtr4i df-9 df-10
+    oveq1i ) ABCDZEFCDZGQAFCDZFCDZRQAFFCDZCDTBUAACHIAFFJKKLMESFCNPMOM $.
+
+  $( 1 times 1 equals 1.  (Contributed by David A. Wheeler, 7-Jul-2016.) $)
+  1t1e1 $p |- ( 1 x. 1 ) = 1 $=
+    ( c1 ax-1cn mulid1i ) ABC $.
+
+  $( 2 times 1 equals 2.  (Contributed by David A. Wheeler, 6-Dec-2018.) $)
+  2t1e2 $p |- ( 2 x. 1 ) = 2 $=
+    ( c2 2cn mulid1i ) ABC $.
+
+  $( 2 times 2 equals 4.  (Contributed by NM, 1-Aug-1999.) $)
+  2t2e4 $p |- ( 2 x. 2 ) = 4 $=
+    ( c2 cmul co caddc c4 2cn 2timesi 2p2e4 eqtri ) AABCAADCEAFGHI $.
+
+  $( 3 times 1 equals 3.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  3t1e3 $p |- ( 3 x. 1 ) = 3 $=
+    ( c3 3cn mulid1i ) ABC $.
+
+  $( 3 times 2 equals 6.  (Contributed by NM, 2-Aug-2004.) $)
+  3t2e6 $p |- ( 3 x. 2 ) = 6 $=
+    ( c3 c2 cmul co caddc c6 3cn times2i 3p3e6 eqtri ) ABCDAAEDFAGHIJ $.
+
+  $( 3 times 3 equals 9.  (Contributed by NM, 11-May-2004.) $)
+  3t3e9 $p |- ( 3 x. 3 ) = 9 $=
+    ( c3 cmul co c2 c1 caddc c9 df-3 oveq2i 3cn 2cn ax-1cn adddii 3t2e6 oveq12i
+    c6 3t1e3 eqtri 6p3e9 ) AABCADEFCZBCZGATABHIUAPAFCZGUAADBCZAEBCZFCUBADEJKLMU
+    CPUDAFNQORSRR $.
+
+  $( 4 times 2 equals 8.  (Contributed by NM, 2-Aug-2004.) $)
+  4t2e8 $p |- ( 4 x. 2 ) = 8 $=
+    ( c4 c2 cmul co caddc c8 4cn times2i 4p4e8 eqtri ) ABCDAAEDFAGHIJ $.
+
+  $( 5 times 2 equals 10.  (Contributed by NM, 5-Feb-2007.) $)
+  5t2e10 $p |- ( 5 x. 2 ) = 10 $=
+    ( c5 c2 cmul co caddc c10 5cn times2i 5p5e10 eqtri ) ABCDAAEDFAGHIJ $.
+
+  $( 2 times 0 equals 0.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  2t0e0 $p |- ( 2 x. 0 ) = 0 $=
+    ( c2 2cn mul01i ) ABC $.
+
+  $( One half of four is two.  (Contributed by NM, 3-Sep-1999.) $)
+  4d2e2 $p |- ( 4 / 2 ) = 2 $=
+    ( c4 c2 cdiv co wceq cmul 2t2e4 4cn 2cn 2ap0 divmulapi mpbir ) ABCDBEBBFDAE
+    GABBHIIJKL $.
+
+  $( 2 is a positive integer.  (Contributed by NM, 20-Aug-2001.) $)
+  2nn $p |- 2 e. NN $=
+    ( c2 c1 caddc co cn df-2 wcel 1nn peano2nn ax-mp eqeltri ) ABBCDZEFBEGLEGHB
+    IJK $.
+
+  $( 3 is a positive integer.  (Contributed by NM, 8-Jan-2006.) $)
+  3nn $p |- 3 e. NN $=
+    ( c3 c2 c1 caddc co cn df-3 wcel 2nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 4 is a positive integer.  (Contributed by NM, 8-Jan-2006.) $)
+  4nn $p |- 4 e. NN $=
+    ( c4 c3 c1 caddc co cn df-4 wcel 3nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 5 is a positive integer.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  5nn $p |- 5 e. NN $=
+    ( c5 c4 c1 caddc co cn df-5 wcel 4nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 6 is a positive integer.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  6nn $p |- 6 e. NN $=
+    ( c6 c5 c1 caddc co cn df-6 wcel 5nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 7 is a positive integer.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  7nn $p |- 7 e. NN $=
+    ( c7 c6 c1 caddc co cn df-7 wcel 6nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 8 is a positive integer.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  8nn $p |- 8 e. NN $=
+    ( c8 c7 c1 caddc co cn df-8 wcel 7nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 9 is a positive integer.  (Contributed by NM, 21-Oct-2012.) $)
+  9nn $p |- 9 e. NN $=
+    ( c9 c8 c1 caddc co cn df-9 wcel 8nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 10 is a positive integer.  (Contributed by NM, 8-Nov-2012.) $)
+  10nn $p |- 10 e. NN $=
+    ( c10 c9 c1 caddc co cn df-10 wcel 9nn peano2nn ax-mp eqeltri ) ABCDEZFGBFH
+    MFHIBJKL $.
+
+  $( 1 is less than 2.  (Contributed by NM, 24-Feb-2005.) $)
+  1lt2 $p |- 1 < 2 $=
+    ( c1 caddc co c2 clt 1re ltp1i df-2 breqtrri ) AAABCDEAFGHI $.
+
+  $( 2 is less than 3.  (Contributed by NM, 26-Sep-2010.) $)
+  2lt3 $p |- 2 < 3 $=
+    ( c2 c1 caddc co c3 clt 2re ltp1i df-3 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 1 is less than 3.  (Contributed by NM, 26-Sep-2010.) $)
+  1lt3 $p |- 1 < 3 $=
+    ( c1 c2 clt wbr c3 1lt2 2lt3 1re 2re 3re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 3 is less than 4.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  3lt4 $p |- 3 < 4 $=
+    ( c3 c1 caddc co c4 clt 3re ltp1i df-4 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 2 is less than 4.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  2lt4 $p |- 2 < 4 $=
+    ( c2 c3 clt wbr c4 2lt3 3lt4 2re 3re 4re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 1 is less than 4.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  1lt4 $p |- 1 < 4 $=
+    ( c1 c2 clt wbr c4 1lt2 2lt4 1re 2re 4re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 4 is less than 5.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  4lt5 $p |- 4 < 5 $=
+    ( c4 c1 caddc co c5 clt 4re ltp1i df-5 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 3 is less than 5.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  3lt5 $p |- 3 < 5 $=
+    ( c3 c4 clt wbr c5 3lt4 4lt5 3re 4re 5re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 2 is less than 5.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  2lt5 $p |- 2 < 5 $=
+    ( c2 c4 clt wbr c5 2lt4 4lt5 2re 4re 5re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 1 is less than 5.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  1lt5 $p |- 1 < 5 $=
+    ( c1 c4 clt wbr c5 1lt4 4lt5 1re 4re 5re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 5 is less than 6.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  5lt6 $p |- 5 < 6 $=
+    ( c5 c1 caddc co c6 clt 5re ltp1i df-6 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 4 is less than 6.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  4lt6 $p |- 4 < 6 $=
+    ( c4 c5 clt wbr c6 4lt5 5lt6 4re 5re 6re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 3 is less than 6.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  3lt6 $p |- 3 < 6 $=
+    ( c3 c4 clt wbr c6 3lt4 4lt6 3re 4re 6re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 2 is less than 6.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  2lt6 $p |- 2 < 6 $=
+    ( c2 c3 clt wbr c6 2lt3 3lt6 2re 3re 6re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 1 is less than 6.  (Contributed by NM, 19-Oct-2012.) $)
+  1lt6 $p |- 1 < 6 $=
+    ( c1 c2 clt wbr c6 1lt2 2lt6 1re 2re 6re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 6 is less than 7.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  6lt7 $p |- 6 < 7 $=
+    ( c6 c1 caddc co c7 clt 6re ltp1i df-7 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 5 is less than 7.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  5lt7 $p |- 5 < 7 $=
+    ( c5 c6 clt wbr c7 5lt6 6lt7 5re 6re 7re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 4 is less than 7.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  4lt7 $p |- 4 < 7 $=
+    ( c4 c5 clt wbr c7 4lt5 5lt7 4re 5re 7re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 3 is less than 7.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  3lt7 $p |- 3 < 7 $=
+    ( c3 c4 clt wbr c7 3lt4 4lt7 3re 4re 7re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 2 is less than 7.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  2lt7 $p |- 2 < 7 $=
+    ( c2 c3 clt wbr c7 2lt3 3lt7 2re 3re 7re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 1 is less than 7.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  1lt7 $p |- 1 < 7 $=
+    ( c1 c2 clt wbr c7 1lt2 2lt7 1re 2re 7re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 7 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  7lt8 $p |- 7 < 8 $=
+    ( c7 c1 caddc co c8 clt 7re ltp1i df-8 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 6 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  6lt8 $p |- 6 < 8 $=
+    ( c6 c7 clt wbr c8 6lt7 7lt8 6re 7re 8re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 5 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  5lt8 $p |- 5 < 8 $=
+    ( c5 c6 clt wbr c8 5lt6 6lt8 5re 6re 8re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 4 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  4lt8 $p |- 4 < 8 $=
+    ( c4 c5 clt wbr c8 4lt5 5lt8 4re 5re 8re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 3 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  3lt8 $p |- 3 < 8 $=
+    ( c3 c4 clt wbr c8 3lt4 4lt8 3re 4re 8re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 2 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  2lt8 $p |- 2 < 8 $=
+    ( c2 c3 clt wbr c8 2lt3 3lt8 2re 3re 8re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 1 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  1lt8 $p |- 1 < 8 $=
+    ( c1 c2 clt wbr c8 1lt2 2lt8 1re 2re 8re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 8 is less than 9.  (Contributed by Mario Carneiro, 19-Feb-2014.) $)
+  8lt9 $p |- 8 < 9 $=
+    ( c8 c1 caddc co c9 clt 8re ltp1i df-9 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 7 is less than 9.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+  7lt9 $p |- 7 < 9 $=
+    ( c7 c8 clt wbr c9 7lt8 8lt9 7re 8re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 6 is less than 9.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+  6lt9 $p |- 6 < 9 $=
+    ( c6 c7 clt wbr c9 6lt7 7lt9 6re 7re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 5 is less than 9.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+  5lt9 $p |- 5 < 9 $=
+    ( c5 c6 clt wbr c9 5lt6 6lt9 5re 6re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 4 is less than 9.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+  4lt9 $p |- 4 < 9 $=
+    ( c4 c5 clt wbr c9 4lt5 5lt9 4re 5re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 3 is less than 9.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+  3lt9 $p |- 3 < 9 $=
+    ( c3 c4 clt wbr c9 3lt4 4lt9 3re 4re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 2 is less than 9.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+  2lt9 $p |- 2 < 9 $=
+    ( c2 c3 clt wbr c9 2lt3 3lt9 2re 3re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 1 is less than 9.  (Contributed by NM, 19-Oct-2012.)  (Revised by Mario
+     Carneiro, 9-Mar-2015.) $)
+  1lt9 $p |- 1 < 9 $=
+    ( c1 c2 clt wbr c9 1lt2 2lt9 1re 2re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 9 is less than 10.  (Contributed by Mario Carneiro, 8-Feb-2015.) $)
+  9lt10 $p |- 9 < 10 $=
+    ( c9 c1 caddc co c10 clt 9re ltp1i df-10 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 8 is less than 10.  (Contributed by Mario Carneiro, 8-Feb-2015.) $)
+  8lt10 $p |- 8 < 10 $=
+    ( c8 c9 clt wbr c10 8lt9 9lt10 8re 9re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 7 is less than 10.  (Contributed by Mario Carneiro, 10-Mar-2015.) $)
+  7lt10 $p |- 7 < 10 $=
+    ( c7 c8 clt wbr c10 7lt8 8lt10 7re 8re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 6 is less than 10.  (Contributed by Mario Carneiro, 10-Mar-2015.) $)
+  6lt10 $p |- 6 < 10 $=
+    ( c6 c7 clt wbr c10 6lt7 7lt10 6re 7re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 5 is less than 10.  (Contributed by Mario Carneiro, 10-Mar-2015.) $)
+  5lt10 $p |- 5 < 10 $=
+    ( c5 c6 clt wbr c10 5lt6 6lt10 5re 6re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 4 is less than 10.  (Contributed by Mario Carneiro, 10-Mar-2015.) $)
+  4lt10 $p |- 4 < 10 $=
+    ( c4 c5 clt wbr c10 4lt5 5lt10 4re 5re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 3 is less than 10.  (Contributed by Mario Carneiro, 10-Mar-2015.) $)
+  3lt10 $p |- 3 < 10 $=
+    ( c3 c4 clt wbr c10 3lt4 4lt10 3re 4re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 2 is less than 10.  (Contributed by Mario Carneiro, 10-Mar-2015.) $)
+  2lt10 $p |- 2 < 10 $=
+    ( c2 c3 clt wbr c10 2lt3 3lt10 2re 3re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 1 is less than 10.  (Contributed by NM, 7-Nov-2012.)  (Revised by Mario
+     Carneiro, 9-Mar-2015.) $)
+  1lt10 $p |- 1 < 10 $=
+    ( c1 c2 clt wbr c10 1lt2 2lt10 1re 2re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 0 is not equal to 2.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  0ne2 $p |- 0 =/= 2 $=
+    ( c2 cc0 2ne0 necomi ) ABCD $.
+
+  $( 1 is not equal to 2.  (Contributed by NM, 19-Oct-2012.) $)
+  1ne2 $p |- 1 =/= 2 $=
+    ( c1 c2 1re 1lt2 ltneii ) ABCDE $.
+
+  $( 1 is less than or equal to 2 (common case).  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  1le2 $p |- 1 <_ 2 $=
+    ( c1 c2 1re 2re 1lt2 ltleii ) ABCDEF $.
+
+  $( 2 is a nonzero complex number (common case).  (Contributed by David A.
+     Wheeler, 7-Dec-2018.) $)
+  2cnne0 $p |- ( 2 e. CC /\ 2 =/= 0 ) $=
+    ( c2 cc wcel cc0 wne 2cn 2ne0 pm3.2i ) ABCADEFGH $.
+
+  $( 2 is a nonzero real number (common case).  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  2rene0 $p |- ( 2 e. RR /\ 2 =/= 0 ) $=
+    ( c2 cr wcel cc0 wne 2re 2ne0 pm3.2i ) ABCADEFGH $.
+
+  $( 1 is less than or equal to 3.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  1le3 $p |- 1 <_ 3 $=
+    ( c1 c3 1re 3re 1lt3 ltleii ) ABCDEF $.
+
+  $( ` -u 1 x. -u 1 ` is 1 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  neg1mulneg1e1 $p |- ( -u 1 x. -u 1 ) = 1 $=
+    ( c1 cneg cmul co ax-1cn mul2negi 1t1e1 eqtri ) ABZICDAACDAAAEEFGH $.
+
+  $( One-half is real.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  halfre $p |- ( 1 / 2 ) e. RR $=
+    ( c2 2re 2ap0 rerecclapi ) ABCD $.
+
+  $( One-half is complex.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  halfcn $p |- ( 1 / 2 ) e. CC $=
+    ( c1 c2 cdiv co halfre recni ) ABCDEF $.
+
+  $( One-half is greater than zero.  (Contributed by NM, 24-Feb-2005.) $)
+  halfgt0 $p |- 0 < ( 1 / 2 ) $=
+    ( c2 2re 2pos recgt0ii ) ABCD $.
+
+  $( One-half is less than one.  (Contributed by NM, 24-Feb-2005.) $)
+  halflt1 $p |- ( 1 / 2 ) < 1 $=
+    ( c1 cdiv co clt wbr 1div1e1 1lt2 eqbrtri 1re 2re 0lt1 2pos ltdiv23ii mpbi
+    c2 ) AABCZODEAOBCADEPAODFGHAAOIIJKLMN $.
+
+  $( Prove that 1 - 1/2 = 1/2.  (Contributed by David A. Wheeler,
+     4-Jan-2017.) $)
+  1mhlfehlf $p |- ( 1 - ( 1 / 2 ) ) = ( 1 / 2 ) $=
+    ( c2 c1 cmin co cdiv cc wcel cc0 cap wbr wceq 2cn ax-1cn pm3.2i divsubdirap
+    wa 2ap0 mp3an 2m1e1 oveq1i 2div2e1 3eqtr3ri ) ABCDZAEDZAAEDZBAEDZCDZUFBUFCD
+    AFGZBFGUHAHIJZPUDUGKLMUHUILQNABAORUCBAESTUEBUFCUATUB $.
+
+  $( An eighth of four thirds is a sixth.  (Contributed by Paul Chapman,
+     24-Nov-2007.) $)
+  8th4div3 $p |- ( ( 1 / 8 ) x. ( 4 / 3 ) ) = ( 1 / 6 ) $=
+    ( c1 c8 cdiv co c4 c3 cmul c6 ax-1cn 8re recni 4cn gt0ap0ii c2 eqtr3i eqtri
+    3cn 2cn cc wcel 8pos divmuldivapi mulcomi mul32i 4t2e8 oveq1i mulassi 3t2e6
+    3re 3pos oveq2i oveq12i cc0 cap wbr wceq 6re 6pos 4re 4pos divcanap5 mp3an1
+    wa mp4an ) ABCDEFCDGDZEAGDZEHGDZCDZAHCDZVEAEGDZBFGDZCDVHABEFIBJKLQBJUAMFUIU
+    JMUBVJVFVKVGCAEILUCVKEFNGDZGDZVGEFGDNGDZVKVMENGDZFGDVNVKENFLRQUDVOBFGUEUFOE
+    FNLQRUGOVLHEGUHUKPULPHSTZHUMUNUOZESTZEUMUNUOZVHVIUPZHUQKHUQURMLEUSUTMASTVPV
+    QVCVRVSVCVTIAHEVAVBVDP $.
+
+  $( One half plus or minus one sixth.  (Contributed by Paul Chapman,
+     17-Jan-2008.) $)
+  halfpm6th $p |- ( ( ( 1 / 2 ) - ( 1 / 6 ) ) = ( 1 / 3 ) /\
+                       ( ( 1 / 2 ) + ( 1 / 6 ) ) = ( 2 / 3 ) ) $=
+    ( c1 c2 cdiv co c6 cmin c3 wceq caddc cmul 3cn ax-1cn 2cn 2ap0 divmuldivapi
+    oveq1i mulid1i 3t2e6 oveq12i 3eqtr3i 3re 3pos gt0ap0ii halfcn mulid2i eqtri
+    dividapi cc wcel cc0 cap wbr wa 6cn 6re 6pos pm3.2i divsubdirap mp3an 3m1e2
+    oveq2i recclapi 3eqtr2i c4 divdirapi df-4 3eqtr4ri 2t2e4 divclapi ) ABCDZAE
+    CDZFDZAGCDZHVJVKIDZBGCDZHVLGECDZVKFDZGAFDZECDZVMVJVPVKFGGCDZVJJDZGAJDZGBJDZ
+    CDVJVPGGABKKLMGUAUBUCZNOWAAVJJDVJVTAVJJGKWDUGPVJUDUEUFWBGWCECGKQRSTZPGUHUIA
+    UHUIEUHUIZEUJUKULZUMVSVQHKLWFWGUNEUOUPUCZUQGAEURUSVSBECDABJDZWCCDZVMVRBECUT
+    PWIBWCECBMUERSVMBBCDZJDVMAJDWJVMWKAVMJBMNUGZVAAGBBLKMMWDNOVMGKWDVBQTVCVCVNV
+    DECDZBBJDZWCCDZVOGAIDZECDVPVKIDWMVNGAEKLUNWHVEVDWPECVFPVJVPVKIWEPVGWNVDWCEC
+    VHRSVOWKJDVOAJDWOVOWKAVOJWLVABGBBMKMMWDNOVOBGMKWDVIQTVCUQ $.
+
+  $( i times 0 equals 0 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  it0e0 $p |- ( _i x. 0 ) = 0 $=
+    ( ci ax-icn mul01i ) ABC $.
+
+  $( ` ( 2 x. _i ) e. CC ` (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  2mulicn $p |- ( 2 x. _i ) e. CC $=
+    ( c2 ci 2cn ax-icn mulcli ) ABCDE $.
+
+  $( The imaginary unit ` _i ` is apart from zero.  (Contributed by Jim
+     Kingdon, 9-Mar-2020.) $)
+  iap0 $p |- _i # 0 $=
+    ( cc0 ci c1 cmul co caddc cap wbr wo 1ap0 olci cr wcel wb 0re apreim ax-icn
+    1re oveq2i eqtri mp4an mpbir mulid1i addid2i it0e0 00id 3brtr3i ) ABCDEZFEZ
+    ABADEZFEZBAGUIUKGHZAAGHZCAGHZIZUNUMJKALMZCLMUPUPULUONOROOACAAPUAUBUIABFEBUH
+    BAFBQUCSBQUDTUKAAFEAUJAAFUESUFTUG $.
+
+  $( ` 2 x. _i ` is apart from zero.  (Contributed by Jim Kingdon,
+     9-Mar-2020.) $)
+  2muliap0 $p |- ( 2 x. _i ) # 0 $=
+    ( c2 ci 2cn ax-icn 2ap0 iap0 mulap0i ) ABCDEFG $.
+
+  $( ` ( 2 x. _i ) =/= 0 ` .  See also ~ 2muliap0 .  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  2muline0 $p |- ( 2 x. _i ) =/= 0 $=
+    ( c2 ci cmul co cc0 cap wbr wne 2muliap0 cc wcel wi 2mulicn 0cn mp2an ax-mp
+    apne ) ABCDZEFGZREHZIRJKEJKSTLMNREQOP $.
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
@@ -74033,6 +75013,33 @@ htmldef "NN" as "<IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT=' NN' TITLE='NN'>";
   althtmldef "NN" as '&#8469;'; /* &Nopf; */
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "NN" as "\mathbb{N}";
+htmldef "2" as "<IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT=' 2' TITLE='2'>";
+  althtmldef "2" as '2';
+  latexdef "2" as "2";
+htmldef "3" as "<IMG SRC='3.gif' WIDTH=8 HEIGHT=19 ALT=' 3' TITLE='3'>";
+  althtmldef "3" as '3';
+  latexdef "3" as "3";
+htmldef "4" as "<IMG SRC='4.gif' WIDTH=9 HEIGHT=19 ALT=' 4' TITLE='4'>";
+  althtmldef "4" as '4';
+  latexdef "4" as "4";
+htmldef "5" as "<IMG SRC='5.gif' WIDTH=8 HEIGHT=19 ALT=' 5' TITLE='5'>";
+  althtmldef "5" as '5';
+  latexdef "5" as "5";
+htmldef "6" as "<IMG SRC='6.gif' WIDTH=8 HEIGHT=19 ALT=' 6' TITLE='6'>";
+  althtmldef "6" as '6';
+  latexdef "6" as "6";
+htmldef "7" as "<IMG SRC='7.gif' WIDTH=9 HEIGHT=19 ALT=' 7' TITLE='7'>";
+  althtmldef "7" as '7';
+  latexdef "7" as "7";
+htmldef "8" as "<IMG SRC='8.gif' WIDTH=8 HEIGHT=19 ALT=' 8' TITLE='8'>";
+  althtmldef "8" as '8';
+  latexdef "8" as "8";
+htmldef "9" as "<IMG SRC='9.gif' WIDTH=8 HEIGHT=19 ALT=' 9' TITLE='9'>";
+  althtmldef "9" as '9';
+  latexdef "9" as "9";
+htmldef "10" as "<IMG SRC='_10.gif' WIDTH=14 HEIGHT=19 ALT=' 10' TITLE='10'>";
+  althtmldef "10" as '10';
+  latexdef "10" as "10";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
