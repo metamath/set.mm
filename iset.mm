@@ -71078,6 +71078,37 @@ $)
         GHABCDEFOP $.
     $}
 
+    divmuldivap.4 $e |- D e. CC $.
+    divmuldivap.5 $e |- B # 0 $.
+    divmuldivap.6 $e |- D # 0 $.
+    $( Multiplication of two ratios.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    divmuldivapi $p |- ( ( A / B ) x. ( C / D ) ) =
+                      ( ( A x. C ) / ( B x. D ) ) $=
+      ( cc wcel cc0 cap wbr wa cdiv co cmul pm3.2i wceq divmuldivap mp4an ) AKL
+      CKLBKLZBMNOZPDKLZDMNOZPABQRCDQRSRACSRBDSRQRUAEGUDUEFITUFUGHJTACBDUBUC $.
+
+    $( Swap denominators of two ratios.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    divmul13api $p |- ( ( A / B ) x. ( C / D ) ) =
+                   ( ( C / B ) x. ( A / D ) ) $=
+      ( cc wcel cc0 cap wbr wa cdiv co cmul pm3.2i wceq divmul13ap mp4an ) AKLC
+      KLBKLZBMNOZPDKLZDMNOZPABQRCDQRSRCBQRADQRSRUAEGUDUEFITUFUGHJTACBDUBUC $.
+
+    $( Addition of two ratios.  (Contributed by Jim Kingdon, 9-Mar-2020.) $)
+    divadddivapi $p |- ( ( A / B ) + ( C / D ) ) =
+                      ( ( ( A x. D ) + ( C x. B ) ) / ( B x. D ) ) $=
+      ( cc wcel cc0 cap wbr wa cdiv co caddc cmul wceq pm3.2i divadddivap mp4an
+      ) AKLCKLBKLZBMNOZPDKLZDMNOZPABQRCDQRSRADTRCBTRSRBDTRQRUAEGUEUFFIUBUGUHHJU
+      BACBDUCUD $.
+
+    divdivdivap.7 $e |- C # 0 $.
+    $( Division of two ratios.  (Contributed by Jim Kingdon, 9-Mar-2020.) $)
+    divdivdivapi $p |- ( ( A / B ) / ( C / D ) )
+                        = ( ( A x. D ) / ( B x. C ) ) $=
+      ( cc wcel cc0 cap wbr wa cdiv co pm3.2i cmul wceq divdivdivap mp4an ) ALM
+      BLMZBNOPZQCLMZCNOPZQDLMZDNOPZQABRSCDRSRSADUASBCUASRSUBEUEUFFITUGUHGKTUIUJ
+      HJTABCDUCUD $.
   $}
 
   ${
