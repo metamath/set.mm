@@ -72839,18 +72839,6 @@ $(
   Only the digits 0 through 9 ( ~ df-0 through ~ df-9 ) and the
   number 10 ( ~ df-10 ) are explicitly defined.
 
-  We will later define the decimal constructor ~ df-dec ,
-  which will allow us to easily express larger integers in base 10.
-  See ~ deccl and the theorems that follow it.  See also ~ 4001prm (4001 is
-  prime) and the proof of ~ bpos .  Note that
-  the decimal constructor builds on the definitions in this section.
-
-  Integers can also be exhibited
-  as sums of powers of 10 or as some other expression built from operations
-  on the numbers 0 through 10.  For example, the prime number 823541 can be
-  expressed as ` ( 7 ^ 7 ) - 2 ` .  Decimals can be expressed as ratios of
-  integers, as in ~ cos2bnd .
-
   Most abstract math rarely requires numbers larger than 4.  Even in Wiles'
   proof of Fermat's Last Theorem, the largest number used appears to be 12.
 
