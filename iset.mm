@@ -73691,9 +73691,9 @@ $)
   $( Prove that 1 - 1/2 = 1/2.  (Contributed by David A. Wheeler,
      4-Jan-2017.) $)
   1mhlfehlf $p |- ( 1 - ( 1 / 2 ) ) = ( 1 / 2 ) $=
-    ( c2 c1 cmin co cdiv cc wcel cc0 wne wceq 2cn ax-1cn 2cnne0 divsubdir mp3an
-    wa 2m1e1 oveq1i 2div2e1 3eqtr3ri ) ABCDZAEDZAAEDZBAEDZCDZUDBUDCDAFGZBFGUFAH
-    IPUBUEJKLMABANOUABAEQRUCBUDCSRT $.
+    ( c2 c1 cmin co cdiv cc wcel cc0 cap wbr wceq 2cn ax-1cn pm3.2i divsubdirap
+    wa 2ap0 mp3an 2m1e1 oveq1i 2div2e1 3eqtr3ri ) ABCDZAEDZAAEDZBAEDZCDZUFBUFCD
+    AFGZBFGUHAHIJZPUDUGKLMUHUILQNABAORUCBAESTUEBUFCUATUB $.
 
   $( An eighth of four thirds is a sixth.  (Contributed by Paul Chapman,
      24-Nov-2007.) $)
