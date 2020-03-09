@@ -72829,6 +72829,252 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Decimal representation of numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  Note that the numbers 0 and 1 are constants defined as primitives of the
+  complex number axiom system (see ~ df-0 and ~ df-1 ).
+
+  Only the digits 0 through 9 ( ~ df-0 through ~ df-9 ) and the
+  number 10 ( ~ df-10 ) are explicitly defined.
+
+  We will later define the decimal constructor ~ df-dec ,
+  which will allow us to easily express larger integers in base 10.
+  See ~ deccl and the theorems that follow it.  See also ~ 4001prm (4001 is
+  prime) and the proof of ~ bpos .  Note that
+  the decimal constructor builds on the definitions in this section.
+
+  Integers can also be exhibited
+  as sums of powers of 10 or as some other expression built from operations
+  on the numbers 0 through 10.  For example, the prime number 823541 can be
+  expressed as ` ( 7 ^ 7 ) - 2 ` .  Decimals can be expressed as ratios of
+  integers, as in ~ cos2bnd .
+
+  Most abstract math rarely requires numbers larger than 4.  Even in Wiles'
+  proof of Fermat's Last Theorem, the largest number used appears to be 12.
+
+$)
+
+  $c 2 $. $( The decimal number 2 $)
+  $c 3 $. $( The decimal number 3 $)
+  $c 4 $. $( The decimal number 4 $)
+  $c 5 $. $( The decimal number 5 $)
+  $c 6 $. $( The decimal number 6 $)
+  $c 7 $. $( The decimal number 7 $)
+  $c 8 $. $( The decimal number 8 $)
+  $c 9 $. $( The decimal number 9 $)
+  $c 10 $. $( The decimal number 10 $)
+
+  $( Extend class notation to include the number 2. $)
+  c2 $a class 2 $.
+  $( Extend class notation to include the number 3. $)
+  c3 $a class 3 $.
+  $( Extend class notation to include the number 4. $)
+  c4 $a class 4 $.
+  $( Extend class notation to include the number 5. $)
+  c5 $a class 5 $.
+  $( Extend class notation to include the number 6. $)
+  c6 $a class 6 $.
+  $( Extend class notation to include the number 7. $)
+  c7 $a class 7 $.
+  $( Extend class notation to include the number 8. $)
+  c8 $a class 8 $.
+  $( Extend class notation to include the number 9. $)
+  c9 $a class 9 $.
+  $( Extend class notation to include the number 10. $)
+  c10 $a class 10 $.
+
+  $( Define the number 2.  (Contributed by NM, 27-May-1999.) $)
+  df-2 $a |- 2 = ( 1 + 1 ) $.
+
+  $( Define the number 3.  (Contributed by NM, 27-May-1999.) $)
+  df-3 $a |- 3 = ( 2 + 1 ) $.
+  $( Define the number 4.  (Contributed by NM, 27-May-1999.) $)
+  df-4 $a |- 4 = ( 3 + 1 ) $.
+  $( Define the number 5.  (Contributed by NM, 27-May-1999.) $)
+  df-5 $a |- 5 = ( 4 + 1 ) $.
+  $( Define the number 6.  (Contributed by NM, 27-May-1999.) $)
+  df-6 $a |- 6 = ( 5 + 1 ) $.
+  $( Define the number 7.  (Contributed by NM, 27-May-1999.) $)
+  df-7 $a |- 7 = ( 6 + 1 ) $.
+  $( Define the number 8.  (Contributed by NM, 27-May-1999.) $)
+  df-8 $a |- 8 = ( 7 + 1 ) $.
+  $( Define the number 9.  (Contributed by NM, 27-May-1999.) $)
+  df-9 $a |- 9 = ( 8 + 1 ) $.
+  $( Define the number 10.  See remarks under ~ df-2 .  (Contributed by NM,
+     5-Feb-2007.) $)
+  df-10 $a |- 10 = ( 9 + 1 ) $.
+
+  $( ` 0 =/= 1 ` (common case); the reverse order is already proved.
+     (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  0ne1 $p |- 0 =/= 1 $=
+    ( c1 cc0 ax-1ne0 necomi ) ABCD $.
+
+  $( ` ( 1 - 1 ) = 0 ` (common case).  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  1m1e0 $p |- ( 1 - 1 ) = 0 $=
+    ( c1 ax-1cn subidi ) ABC $.
+
+  $( The number 2 is real.  (Contributed by NM, 27-May-1999.) $)
+  2re $p |- 2 e. RR $=
+    ( c2 c1 caddc co cr df-2 1re readdcli eqeltri ) ABBCDEFBBGGHI $.
+
+  $( The number 2 is a complex number.  (Contributed by NM, 30-Jul-2004.) $)
+  2cn $p |- 2 e. CC $=
+    ( c2 2re recni ) ABC $.
+
+  $( 2 is a set (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  2ex $p |- 2 e. _V $=
+    ( c2 cc 2cn elexi ) ABCD $.
+
+  $( 2 is a complex number, deductive form (common case).  (Contributed by
+     David A. Wheeler, 8-Dec-2018.) $)
+  2cnd $p |- ( ph -> 2 e. CC ) $=
+    ( c2 cc wcel 2cn a1i ) BCDAEF $.
+
+  $( The number 3 is real.  (Contributed by NM, 27-May-1999.) $)
+  3re $p |- 3 e. RR $=
+    ( c3 c2 c1 caddc co cr df-3 2re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 3 is a complex number.  (Contributed by FL, 17-Oct-2010.) $)
+  3cn $p |- 3 e. CC $=
+    ( c3 3re recni ) ABC $.
+
+  $( 3 is a set (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  3ex $p |- 3 e. _V $=
+    ( c3 cc 3cn elexi ) ABCD $.
+
+  $( The number 4 is real.  (Contributed by NM, 27-May-1999.) $)
+  4re $p |- 4 e. RR $=
+    ( c4 c3 c1 caddc co cr df-4 3re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 4 is a complex number.  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  4cn $p |- 4 e. CC $=
+    ( c4 4re recni ) ABC $.
+
+  $( The number 5 is real.  (Contributed by NM, 27-May-1999.) $)
+  5re $p |- 5 e. RR $=
+    ( c5 c4 c1 caddc co cr df-5 4re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 5 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  5cn $p |- 5 e. CC $=
+    ( c5 5re recni ) ABC $.
+
+  $( The number 6 is real.  (Contributed by NM, 27-May-1999.) $)
+  6re $p |- 6 e. RR $=
+    ( c6 c5 c1 caddc co cr df-6 5re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 6 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  6cn $p |- 6 e. CC $=
+    ( c6 6re recni ) ABC $.
+
+  $( The number 7 is real.  (Contributed by NM, 27-May-1999.) $)
+  7re $p |- 7 e. RR $=
+    ( c7 c6 c1 caddc co cr df-7 6re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 7 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  7cn $p |- 7 e. CC $=
+    ( c7 7re recni ) ABC $.
+
+  $( The number 8 is real.  (Contributed by NM, 27-May-1999.) $)
+  8re $p |- 8 e. RR $=
+    ( c8 c7 c1 caddc co cr df-8 7re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 8 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  8cn $p |- 8 e. CC $=
+    ( c8 8re recni ) ABC $.
+
+  $( The number 9 is real.  (Contributed by NM, 27-May-1999.) $)
+  9re $p |- 9 e. RR $=
+    ( c9 c8 c1 caddc co cr df-9 8re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 9 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  9cn $p |- 9 e. CC $=
+    ( c9 9re recni ) ABC $.
+
+  $( The number 10 is real.  (Contributed by NM, 5-Feb-2007.) $)
+  10re $p |- 10 e. RR $=
+    ( c10 c9 c1 caddc co cr df-10 9re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( Zero is nonnegative.  (Contributed by David A. Wheeler, 7-Jul-2016.) $)
+  0le0 $p |- 0 <_ 0 $=
+    ( cc0 0re leidi ) ABC $.
+
+  $( 0 is less than or equal to 2.  (Contributed by David A. Wheeler,
+     7-Dec-2018.) $)
+  0le2 $p |- 0 <_ 2 $=
+    ( cc0 c1 caddc co c2 cle wbr 0le1 1re addge0i mp2an df-2 breqtrri ) ABBCDZE
+    FABFGZOANFGHHBBIIJKLM $.
+
+  $( The number 2 is positive.  (Contributed by NM, 27-May-1999.) $)
+  2pos $p |- 0 < 2 $=
+    ( cc0 c1 caddc co c2 clt 1re 0lt1 addgt0ii df-2 breqtrri ) ABBCDEFBBGGHHIJK
+    $.
+
+  $( The number 2 is nonzero.  (Contributed by NM, 9-Nov-2007.) $)
+  2ne0 $p |- 2 =/= 0 $=
+    ( c2 2re 2pos gt0ne0ii ) ABCD $.
+
+  $( The number 3 is positive.  (Contributed by NM, 27-May-1999.) $)
+  3pos $p |- 0 < 3 $=
+    ( cc0 c2 c1 caddc co c3 clt 2re 1re 2pos 0lt1 addgt0ii df-3 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 3 is nonzero.  (Contributed by FL, 17-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 7-May-2011.) $)
+  3ne0 $p |- 3 =/= 0 $=
+    ( c3 3re 3pos gt0ne0ii ) ABCD $.
+
+  $( The number 4 is positive.  (Contributed by NM, 27-May-1999.) $)
+  4pos $p |- 0 < 4 $=
+    ( cc0 c3 c1 caddc co c4 clt 3re 1re 3pos 0lt1 addgt0ii df-4 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 4 is nonzero.  (Contributed by David A. Wheeler,
+     5-Dec-2018.) $)
+  4ne0 $p |- 4 =/= 0 $=
+    ( c4 4re 4pos gt0ne0ii ) ABCD $.
+
+  $( The number 5 is positive.  (Contributed by NM, 27-May-1999.) $)
+  5pos $p |- 0 < 5 $=
+    ( cc0 c4 c1 caddc co c5 clt 4re 1re 4pos 0lt1 addgt0ii df-5 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 6 is positive.  (Contributed by NM, 27-May-1999.) $)
+  6pos $p |- 0 < 6 $=
+    ( cc0 c5 c1 caddc co c6 clt 5re 1re 5pos 0lt1 addgt0ii df-6 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 7 is positive.  (Contributed by NM, 27-May-1999.) $)
+  7pos $p |- 0 < 7 $=
+    ( cc0 c6 c1 caddc co c7 clt 6re 1re 6pos 0lt1 addgt0ii df-7 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 8 is positive.  (Contributed by NM, 27-May-1999.) $)
+  8pos $p |- 0 < 8 $=
+    ( cc0 c7 c1 caddc co c8 clt 7re 1re 7pos 0lt1 addgt0ii df-8 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 9 is positive.  (Contributed by NM, 27-May-1999.) $)
+  9pos $p |- 0 < 9 $=
+    ( cc0 c8 c1 caddc co c9 clt 8re 1re 8pos 0lt1 addgt0ii df-9 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 10 is positive.  (Contributed by NM, 5-Feb-2007.) $)
+  10pos $p |- 0 < 10 $=
+    ( cc0 c9 c1 caddc co c10 clt 9re 1re 9pos 0lt1 addgt0ii df-10 breqtrri ) AB
+    CDEFGBCHIJKLMN $.
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
@@ -74033,6 +74279,33 @@ htmldef "NN" as "<IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT=' NN' TITLE='NN'>";
   althtmldef "NN" as '&#8469;'; /* &Nopf; */
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "NN" as "\mathbb{N}";
+htmldef "2" as "<IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT=' 2' TITLE='2'>";
+  althtmldef "2" as '2';
+  latexdef "2" as "2";
+htmldef "3" as "<IMG SRC='3.gif' WIDTH=8 HEIGHT=19 ALT=' 3' TITLE='3'>";
+  althtmldef "3" as '3';
+  latexdef "3" as "3";
+htmldef "4" as "<IMG SRC='4.gif' WIDTH=9 HEIGHT=19 ALT=' 4' TITLE='4'>";
+  althtmldef "4" as '4';
+  latexdef "4" as "4";
+htmldef "5" as "<IMG SRC='5.gif' WIDTH=8 HEIGHT=19 ALT=' 5' TITLE='5'>";
+  althtmldef "5" as '5';
+  latexdef "5" as "5";
+htmldef "6" as "<IMG SRC='6.gif' WIDTH=8 HEIGHT=19 ALT=' 6' TITLE='6'>";
+  althtmldef "6" as '6';
+  latexdef "6" as "6";
+htmldef "7" as "<IMG SRC='7.gif' WIDTH=9 HEIGHT=19 ALT=' 7' TITLE='7'>";
+  althtmldef "7" as '7';
+  latexdef "7" as "7";
+htmldef "8" as "<IMG SRC='8.gif' WIDTH=8 HEIGHT=19 ALT=' 8' TITLE='8'>";
+  althtmldef "8" as '8';
+  latexdef "8" as "8";
+htmldef "9" as "<IMG SRC='9.gif' WIDTH=8 HEIGHT=19 ALT=' 9' TITLE='9'>";
+  althtmldef "9" as '9';
+  latexdef "9" as "9";
+htmldef "10" as "<IMG SRC='_10.gif' WIDTH=14 HEIGHT=19 ALT=' 10' TITLE='10'>";
+  althtmldef "10" as '10';
+  latexdef "10" as "10";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
