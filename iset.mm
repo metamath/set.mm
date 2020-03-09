@@ -73673,11 +73673,11 @@ $)
 
   $( One-half is real.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
   halfre $p |- ( 1 / 2 ) e. RR $=
-    ( c2 2re 2ne0 rereccli ) ABCD $.
+    ( c2 2re 2ap0 rerecclapi ) ABCD $.
 
   $( One-half is complex.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
   halfcn $p |- ( 1 / 2 ) e. CC $=
-    ( c2 2cn 2ne0 reccli ) ABCD $.
+    ( c1 c2 cdiv co halfre recni ) ABCDEF $.
 
   $( One-half is greater than zero.  (Contributed by NM, 24-Feb-2005.) $)
   halfgt0 $p |- 0 < ( 1 / 2 ) $=
