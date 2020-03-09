@@ -72766,9 +72766,9 @@ $)
     nndiv $p |- ( ( A e. NN /\ B e. NN ) ->
                 ( E. x e. NN ( A x. x ) = B <-> ( B / A ) e. NN ) ) $=
       ( cdiv co cn wcel cv wceq wrex cmul risset eqcom ad2antlr ad2antrr adantl
-      wa cc nncn cc0 wne nnne0 divmuld syl5bb rexbidva syl5rbb ) CBDEZFGAHZUGIZ
-      AFJBFGZCFGZQZBUHKECIZAFJAUGFLULUIUMAFUIUGUHIULUHFGZQZUMUHUGMUOCBUHUKCRGUJ
-      UNCSNUJBRGUKUNBSOUNUHRGULUHSPUJBTUAUKUNBUBOUCUDUEUF $.
+      wa cc nncn cc0 cap wbr nnap0 divmulapd syl5bb rexbidva syl5rbb ) CBDEZFGA
+      HZUHIZAFJBFGZCFGZQZBUIKECIZAFJAUHFLUMUJUNAFUJUHUIIUMUIFGZQZUNUIUHMUPCBUIU
+      LCRGUKUOCSNUKBRGULUOBSOUOUIRGUMUISPUKBTUAUBULUOBUCOUDUEUFUG $.
   $}
 
   $( Transitive property of divisibility: if ` A ` divides ` B ` and ` B `
