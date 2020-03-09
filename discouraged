@@ -18244,6 +18244,8 @@ New usage of "stm1i" is discouraged (3 uses).
 New usage of "stm1ri" is discouraged (2 uses).
 New usage of "sto1i" is discouraged (3 uses).
 New usage of "sto2i" is discouraged (1 uses).
+New usage of "stoic2a" is discouraged (0 uses).
+New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strb" is discouraged (1 uses).
 New usage of "strfvn" is discouraged (6 uses).
 New usage of "stri" is discouraged (2 uses).
@@ -18311,8 +18313,6 @@ New usage of "tendospcanN" is discouraged (1 uses).
 New usage of "tfr1ALT" is discouraged (0 uses).
 New usage of "tfr2ALT" is discouraged (0 uses).
 New usage of "tfr3ALT" is discouraged (0 uses).
-New usage of "thema2a" is discouraged (0 uses).
-New usage of "thema2b" is discouraged (0 uses).
 New usage of "tpid3gVD" is discouraged (0 uses).
 New usage of "tpsexOLD" is discouraged (1 uses).
 New usage of "tratrb" is discouraged (2 uses).
