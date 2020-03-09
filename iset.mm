@@ -72906,10 +72906,10 @@ $)
      5-Feb-2007.) $)
   df-10 $a |- 10 = ( 9 + 1 ) $.
 
-  $( ` 0 =/= 1 ` (common case); the reverse order is already proved.
-     (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  $( ` 0 =/= 1 ` (common case).  See aso ~ 1ap0 .  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
   0ne1 $p |- 0 =/= 1 $=
-    ( c1 cc0 ax-1ne0 necomi ) ABCD $.
+    ( cc0 c1 0re 0lt1 ltneii ) ABCDE $.
 
   $( ` ( 1 - 1 ) = 0 ` (common case).  (Contributed by David A. Wheeler,
      7-Jul-2016.) $)
