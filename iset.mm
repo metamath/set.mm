@@ -73828,8 +73828,8 @@ $)
   $( Half of a number is zero iff the number is zero.  (Contributed by NM,
      20-Apr-2006.) $)
   half0 $p |- ( A e. CC -> ( ( A / 2 ) = 0 <-> A = 0 ) ) $=
-    ( cc wcel c2 cc0 wne cdiv co wceq wb 2cn 2ne0 diveq0 mp3an23 ) ABCDBCDEFADG
-    HEIAEIJKLADMN $.
+    ( cc wcel c2 cc0 cap wbr cdiv co wceq wb 2cn 2ap0 diveqap0 mp3an23 ) ABCDBC
+    DEFGADHIEJAEJKLMADNO $.
 
   $( Two halves make a whole.  (Contributed by NM, 11-Apr-2005.) $)
   2halves $p |- ( A e. CC -> ( ( A / 2 ) + ( A / 2 ) ) = A ) $=
