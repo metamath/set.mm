@@ -73822,8 +73822,8 @@ $)
 
   $( Real closure of half.  (Contributed by NM, 1-Jan-2006.) $)
   rehalfcl $p |- ( A e. RR -> ( A / 2 ) e. RR ) $=
-    ( cr wcel c2 cc0 wne cdiv co 2re 2ne0 redivcl mp3an23 ) ABCDBCDEFADGHBCIJAD
-    KL $.
+    ( cr wcel c2 cc0 cap wbr cdiv co 2re 2ap0 redivclap mp3an23 ) ABCDBCDEFGADH
+    IBCJKADLM $.
 
   $( Half of a number is zero iff the number is zero.  (Contributed by NM,
      20-Apr-2006.) $)
