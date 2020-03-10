@@ -73817,8 +73817,8 @@ $)
   $( Closure of half of a number (common case).  (Contributed by NM,
      1-Jan-2006.) $)
   halfcl $p |- ( A e. CC -> ( A / 2 ) e. CC ) $=
-    ( cc wcel c2 cc0 wne cdiv co 2cn 2ne0 divcl mp3an23 ) ABCDBCDEFADGHBCIJADKL
-    $.
+    ( cc wcel c2 cc0 cap wbr cdiv co 2cn 2ap0 divclap mp3an23 ) ABCDBCDEFGADHIB
+    CJKADLM $.
 
   $( Real closure of half.  (Contributed by NM, 1-Jan-2006.) $)
   rehalfcl $p |- ( A e. RR -> ( A / 2 ) e. RR ) $=
