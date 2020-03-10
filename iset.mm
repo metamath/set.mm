@@ -73809,6 +73809,237 @@ $)
     apne ) ABCDZEFGZREHZIRJKEJKSTLMNREQOP $.
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Simple number properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Closure of half of a number (common case).  (Contributed by NM,
+     1-Jan-2006.) $)
+  halfcl $p |- ( A e. CC -> ( A / 2 ) e. CC ) $=
+    ( cc wcel c2 cc0 wne cdiv co 2cn 2ne0 divcl mp3an23 ) ABCDBCDEFADGHBCIJADKL
+    $.
+
+  $( Real closure of half.  (Contributed by NM, 1-Jan-2006.) $)
+  rehalfcl $p |- ( A e. RR -> ( A / 2 ) e. RR ) $=
+    ( cr wcel c2 cc0 wne cdiv co 2re 2ne0 redivcl mp3an23 ) ABCDBCDEFADGHBCIJAD
+    KL $.
+
+  $( Half of a number is zero iff the number is zero.  (Contributed by NM,
+     20-Apr-2006.) $)
+  half0 $p |- ( A e. CC -> ( ( A / 2 ) = 0 <-> A = 0 ) ) $=
+    ( cc wcel c2 cc0 wne cdiv co wceq wb 2cn 2ne0 diveq0 mp3an23 ) ABCDBCDEFADG
+    HEIAEIJKLADMN $.
+
+  $( Two halves make a whole.  (Contributed by NM, 11-Apr-2005.) $)
+  2halves $p |- ( A e. CC -> ( ( A / 2 ) + ( A / 2 ) ) = A ) $=
+    ( cc wcel c2 cmul co cdiv caddc 2times oveq1d cc0 wne wceq 2cn 2ne0 divcan3
+    mp3an23 wa 2cnne0 divdir mp3an3 anidms 3eqtr3rd ) ABCZDAEFZDGFZAAHFZDGFZAAD
+    GFZUIHFZUDUEUGDGAIJUDDBCZDKLZUFAMNOADPQUDUHUJMZUDUDUKULRUMSAADTUAUBUC $.
+
+  $( A number is positive iff its half is positive.  (Contributed by NM,
+     10-Apr-2005.) $)
+  halfpos2 $p |- ( A e. RR -> ( 0 < A <-> 0 < ( A / 2 ) ) ) $=
+    ( cr wcel c2 cc0 clt wbr cdiv co wb 2re 2pos gt0div mp3an23 ) ABCDBCEDFGEAF
+    GEADHIFGJKLADMN $.
+
+  $( A positive number is greater than its half.  (Contributed by NM,
+     28-Oct-2004.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  halfpos $p |- ( A e. RR -> ( 0 < A <-> ( A / 2 ) < A ) ) $=
+    ( cr wcel cc0 clt c2 cdiv co caddc halfpos2 rehalfcl ltaddposd cc wceq recn
+    wbr 2halves syl breq2d 3bitrd ) ABCZDAEPDAFGHZEPUBUBUBIHZEPUBAEPAJUAUBUBAKZ
+    UDLUAUCAUBEUAAMCUCANAOAQRST $.
+
+  $( A number is nonnegative iff its half is nonnegative.  (Contributed by NM,
+     9-Dec-2005.) $)
+  halfnneg2 $p |- ( A e. RR -> ( 0 <_ A <-> 0 <_ ( A / 2 ) ) ) $=
+    ( cr wcel c2 cc0 clt wbr cle cdiv co wb 2re 2pos ge0div mp3an23 ) ABCDBCEDF
+    GEAHGEADIJHGKLMADNO $.
+
+  $( Closure of half-sum and half-difference.  (Contributed by Paul Chapman,
+     12-Oct-2007.) $)
+  halfaddsubcl $p |- ( ( A e. CC /\ B e. CC ) -> ( ( ( A + B ) / 2 ) e. CC /\
+                         ( ( A - B ) / 2 ) e. CC ) ) $=
+    ( cc wcel wa caddc co c2 cdiv cmin addcl halfcl syl subcl jca ) ACDBCDEZABF
+    GZHIGCDZABJGZHIGCDZPQCDRABKQLMPSCDTABNSLMO $.
+
+  $( Sum and difference of half-sum and half-difference.  (Contributed by Paul
+     Chapman, 12-Oct-2007.) $)
+  halfaddsub $p |- ( ( A e. CC /\ B e. CC ) ->
+                      ( ( ( ( A + B ) / 2 ) + ( ( A - B ) / 2 ) ) = A /\
+                        ( ( ( A + B ) / 2 ) - ( ( A - B ) / 2 ) ) = B ) ) $=
+    ( cc wcel wa caddc cdiv cmin wceq 2times adantr eqtr4d oveq1d 2cnne0 mp3an3
+    co c2 cmul syl2anc 2cn ppncan 3anidm13 addcl cc0 wne divdir divcan3 mp3an23
+    subcl 2ne0 3eqtr3d pnncan 3anidm23 adantl divsubdir jca ) ACDZBCDZEZABFPZQG
+    PZABHPZQGPZFPZAIVAVCHPZBIUSUTVBFPZQGPZQARPZQGPZVDAUSVFVHQGUSVFAAFPZVHUQURVF
+    VJIABAUAUBUQVHVJIURAJKLMUSUTCDZVBCDZVGVDIZABUCZABUIZVKVLQCDZQUDUEZEZVMNUTVB
+    QUFOSUQVIAIZURUQVPVQVSTUJAQUGUHKUKUSUTVBHPZQGPZQBRPZQGPZVEBUSVTWBQGUSVTBBFP
+    ZWBUQURVTWDIABBULUMURWBWDIUQBJUNLMUSVKVLWAVEIZVNVOVKVLVRWENUTVBQUOOSURWCBIZ
+    UQURVPVQWFTUJBQUGUHUNUKUP $.
+
+  $( TODO - use this to reduce:
+  Statement "lt2add" is directly referenced in the proofs of 9 statements:
+    2climnn 2climnn0 climaddlem3 climmullem5 climcaui ser1f0i
+  MM> sh us 2halves
+  Statement "2halves" is directly referenced in the proofs of 10 statements:
+    2climnn 2climnn0 climmullem5 climcaui caucvgi ser1f0i
+  MM>
+  $)
+  $( A sum is less than the whole if each term is less than half.  (Contributed
+     by NM, 13-Dec-2006.) $)
+  lt2halves $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( ( A < ( C / 2 ) /\ B < ( C / 2 ) ) -> ( A + B ) < C ) ) $=
+    ( cr wcel w3a c2 co clt wbr wa caddc wi 3simpa rehalfcl jca 3ad2ant3 lt2add
+    cdiv syl2anc wb cc wceq recn 2halves syl breq2d sylibd ) ADEZBDEZCDEZFZACGS
+    HZIJBUMIJKZABLHZUMUMLHZIJZUOCIJZULUIUJKUMDEZUSKZUNUQMUIUJUKNUKUIUTUJUKUSUSC
+    OZVAPQABUMUMRTUKUIUQURUAUJUKUPCUOIUKCUBEUPCUCCUDCUEUFUGQUH $.
+
+  $( Sum is less than product for numbers greater than 2.  (Contributed by
+     Stefan Allan, 24-Sep-2010.) $)
+  addltmul $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 2 < A /\ 2 < B ) )
+              -> ( A + B ) < ( A x. B ) ) $=
+    ( cr wcel wa c2 clt wbr caddc co cmul c1 cmin 2re 1re ltsub1 syl2an remulcl
+    wb cc mp3an13 2m1e1 breq1i syl6bb bi2anan9 wi peano2rem mulgt1 ex wceq recn
+    sylbid ax-1cn mulsub mpanl2 mpanr2 breq2d 1t1e1 oveq2i breq2i mpan2 readdcl
+    remulcli sylancl ltaddsub2 mp3an2 syl2anc syl5rbbr ltadd1 ax-1rid oveqan12d
+    mp3an3 breq1d bitr3d 3bitrd sylibd imp ) ACDZBCDZEZFAGHZFBGHZEZABIJZABKJZGH
+    ZVTWCLALMJZBLMJZKJZGHZWFVTWCLWGGHZLWHGHZEZWJVRWAWKVSWBWLVRWAFLMJZWGGHZWKFCD
+    ZVRLCDZWAWOSNOFALPUAWNLWGGUBUCUDVSWBWNWHGHZWLWPVSWQWBWRSNOFBLPUAWNLWHGUBUCU
+    DUEVRWGCDZWHCDZWMWJUFVSAUGBUGWSWTEWMWJWGWHUHUIQULVTWJLWELLKJZIJZALKJZBLKJZI
+    JZMJZGHZXELIJZWELIJZGHZWFVTWIXFLGVRATDZBTDZWIXFUJZVSAUKBUKXKXLLTDZXMUMXKXNX
+    LXNEXMUMALBLUNUOUPQUQXJXHXBGHZVTXGXBXIXHGXALWEIURUSUTVTXECDZXBCDZXOXGSZVRXC
+    CDZXDCDZXPVSVRWQXSOALRVAVSWQXTOBLRVAXCXDVBQZVTWECDZXACDXQABRZLLOOVCWEXAVBVD
+    XPWQXQXROXELXBVEVFVGVHVTXEWEGHZXJWFVTXPYBYDXJSZYAYCXPYBWQYEOXEWELVIVLVGVTXE
+    WDWEGVRVSXCAXDBIAVJBVJVKVMVNVOVPVQ $.
+
+  ${
+    $d x y $.
+    $( There is no smallest positive real number.  (Contributed by NM,
+       28-Oct-2004.) $)
+    nominpos $p |- -. E. x e. RR ( 0 < x /\
+                   -. E. y e. RR ( 0 < y /\ y < x ) ) $=
+      ( cc0 cv clt wbr wa cr wrex wn wcel wi c2 cdiv co rehalfcl divgt0 mpanr12
+      2re 2pos halfpos biimpd jcad wceq breq2 breq1 anbi12d rspcev syl6an sylib
+      ex iman nrex ) CADZEFZCBDZEFZUPUNEFZGZBHIZJGZAHUNHKZUOUTLVAJVBUNMNOZHKUOC
+      VCEFZVCUNEFZGZUTUNPVBUOVDVEVBUOVDVBUOGMHKCMEFVDSTUNMQRUKVBUOVEUNUAUBUCUSV
+      FBVCHUPVCUDUQVDURVEUPVCCEUEUPVCUNEUFUGUHUIUOUTULUJUM $.
+  $}
+
+  $( Ordering property for average.  (Contributed by Mario Carneiro,
+     28-May-2014.) $)
+  avglt1 $p |- ( ( A e. RR /\ B e. RR ) ->
+                 ( A < B <-> A < ( ( A + B ) / 2 ) ) ) $=
+    ( cr wcel wa clt wbr caddc co c2 cmul cdiv wb ltadd2 3anidm13 cc wceq simpl
+    recnd times2 syl breq1d cc0 readdcl 2re pm3.2i a1i ltmuldiv syl3anc 3bitr2d
+    2pos ) ACDZBCDZEZABFGZAAHIZABHIZFGZAJKIZUQFGZAUQJLIFGZULUMUOURMABANOUNUSUPU
+    QFUNAPDUSUPQUNAULUMRZSATUAUBUNULUQCDJCDZUCJFGZEZUTVAMVBABUDVEUNVCVDUEUKUFUG
+    AUQJUHUIUJ $.
+
+  $( Ordering property for average.  (Contributed by Mario Carneiro,
+     28-May-2014.) $)
+  avglt2 $p |- ( ( A e. RR /\ B e. RR ) ->
+                 ( A < B <-> ( ( A + B ) / 2 ) < B ) ) $=
+    ( cr wcel wa caddc co c2 cmul clt wbr cdiv cc simpr recnd 2times syl breq2d
+    wceq wb cc0 readdcl 2re 2pos pm3.2i a1i ltdivmul syl3anc 3anidm23 3bitr4rd
+    ltadd1 ) ACDZBCDZEZABFGZHBIGZJKZUOBBFGZJKZUOHLGBJKZABJKZUNUPURUOJUNBMDUPURS
+    UNBULUMNZOBPQRUNUOCDUMHCDZUAHJKZEZUTUQTABUBVBVEUNVCVDUCUDUEUFUOBHUGUHULUMVA
+    USTABBUKUIUJ $.
+
+  $( Ordering property for average.  (Contributed by Mario Carneiro,
+     28-May-2014.) $)
+  avgle1 $p |- ( ( A e. RR /\ B e. RR ) ->
+                 ( A <_ B <-> A <_ ( ( A + B ) / 2 ) ) ) $=
+    ( cr wcel wa clt wbr wn caddc co c2 cdiv cle wb avglt2 ancoms cc wceq lenlt
+    recn addcom syl2an oveq1d breq1d bitr4d notbid readdcl rehalfcl syl 3bitr4d
+    syldan ) ACDZBCDZEZBAFGZHABIJZKLJZAFGZHZABMGAUQMGZUNUOURUNUOBAIJZKLJZAFGZUR
+    UMULUOVCNBAOPUNUQVBAFUNUPVAKLULAQDBQDUPVARUMATBTABUAUBUCUDUEUFABSULUMUQCDZU
+    TUSNUNUPCDVDABUGUPUHUIAUQSUKUJ $.
+
+  $( Ordering property for average.  (Contributed by Jeff Hankins,
+     15-Sep-2013.)  (Revised by Mario Carneiro, 28-May-2014.) $)
+  avgle2 $p |- ( ( A e. RR /\ B e. RR ) ->
+                 ( A <_ B <-> ( ( A + B ) / 2 ) <_ B ) ) $=
+    ( cr wcel wa clt wbr wn caddc co c2 cdiv cle wb avglt1 ancoms cc wceq lenlt
+    recn addcom syl2an oveq1d breq2d bitr4d notbid readdcl rehalfcl syl 3bitr4d
+    sylancom ) ACDZBCDZEZBAFGZHBABIJZKLJZFGZHZABMGUQBMGZUNUOURUNUOBBAIJZKLJZFGZ
+    URUMULUOVCNBAOPUNUQVBBFUNUPVAKLULAQDBQDUPVARUMATBTABUAUBUCUDUEUFABSULUMUQCD
+    ZUTUSNUNUPCDVDABUGUPUHUIUQBSUKUJ $.
+
+  $( The average of two numbers is less than or equal to at least one of them.
+     (Contributed by NM, 9-Dec-2005.)  (Revised by Mario Carneiro,
+     28-May-2014.) $)
+  avgle $p |- ( ( A e. RR /\ B e. RR ) ->
+               ( ( ( A + B ) / 2 ) <_ A \/ ( ( A + B ) / 2 ) <_ B ) ) $=
+    ( cr wcel wa cle wo caddc co c2 cdiv letric orcomd wb avgle2 ancoms cc wceq
+    wbr recn addcom syl2an oveq1d breq1d bitr4d orbi12d mpbid ) ACDZBCDZEZBAFSZ
+    ABFSZGABHIZJKIZAFSZUNBFSZGUJULUKABLMUJUKUOULUPUJUKBAHIZJKIZAFSZUOUIUHUKUSNB
+    AOPUJUNURAFUJUMUQJKUHAQDBQDUMUQRUIATBTABUAUBUCUDUEABOUFUG $.
+
+  ${
+    2timesd.1 $e |- ( ph -> A e. CC ) $.
+    $( Two times a number.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    2timesd $p |- ( ph -> ( 2 x. A ) = ( A + A ) ) $=
+      ( cc wcel c2 cmul co caddc wceq 2times syl ) ABDEFBGHBBIHJCBKL $.
+
+    $( A number times 2.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    times2d $p |- ( ph -> ( A x. 2 ) = ( A + A ) ) $=
+      ( cc wcel c2 cmul co caddc wceq times2 syl ) ABDEBFGHBBIHJCBKL $.
+
+    $( Closure of half of a number (frequently used special case).
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    halfcld $p |- ( ph -> ( A / 2 ) e. CC ) $=
+      ( cc wcel c2 cdiv co halfcl syl ) ABDEBFGHDECBIJ $.
+
+    $( Two halves make a whole.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    2halvesd $p |- ( ph -> ( ( A / 2 ) + ( A / 2 ) ) = A ) $=
+      ( cc wcel c2 cdiv co caddc wceq 2halves syl ) ABDEBFGHZMIHBJCBKL $.
+  $}
+
+  ${
+    rehalfcld.1 $e |- ( ph -> A e. RR ) $.
+    $( Real closure of half.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    rehalfcld $p |- ( ph -> ( A / 2 ) e. RR ) $=
+      ( cr wcel c2 cdiv co rehalfcl syl ) ABDEBFGHDECBIJ $.
+
+    lt2halvesd.2 $e |- ( ph -> B e. RR ) $.
+    lt2halvesd.3 $e |- ( ph -> C e. RR ) $.
+    lt2halvesd.4 $e |- ( ph -> A < ( C / 2 ) ) $.
+    lt2halvesd.5 $e |- ( ph -> B < ( C / 2 ) ) $.
+    $( A sum is less than the whole if each term is less than half.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    lt2halvesd $p |- ( ph -> ( A + B ) < C ) $=
+      ( c2 cdiv co clt wbr caddc cr wcel wa wi lt2halves syl3anc mp2and ) ABDJK
+      LZMNZCUCMNZBCOLDMNZHIABPQCPQDPQUDUERUFSEFGBCDTUAUB $.
+  $}
+
+  ${
+    rehalfcli.1 $e |- A e. RR $.
+    $( Half a real number is real.  Inference form.  (Contributed by David
+       Moews, 28-Feb-2017.) $)
+    rehalfcli $p |- ( A / 2 ) e. RR $=
+      ( cr wcel c2 cdiv co rehalfcl ax-mp ) ACDAEFGCDBAHI $.
+  $}
+
+  $( Adding two times 1 to a number.  (Contributed by AV, 22-Sep-2018.) $)
+  add1p1 $p |- ( N e. CC -> ( ( N + 1 ) + 1 ) = ( N + 2 ) ) $=
+    ( cc wcel c1 caddc co c2 id 1cnd addassd wceq 1p1e2 a1i oveq2d eqtrd ) ABCZ
+    ADEFDEFADDEFZEFAGEFPADDPHPIZRJPQGAEQGKPLMNO $.
+
+  $( Subtracting two times 1 from a number.  (Contributed by AV,
+     23-Oct-2018.) $)
+  sub1m1 $p |- ( N e. CC -> ( ( N - 1 ) - 1 ) = ( N - 2 ) ) $=
+    ( cc wcel c1 cmin co caddc c2 id 1cnd subsub4d wceq 1p1e2 a1i oveq2d eqtrd
+    ) ABCZADEFDEFADDGFZEFAHEFQADDQIQJZSKQRHAERHLQMNOP $.
+
+  $( Subtracting 2 and afterwards 1 from a number results in the difference
+     between the number and 3.  (Contributed by Alexander van der Vekens,
+     16-Sep-2018.) $)
+  cnm2m1cnm3 $p |- ( A e. CC -> ( ( A - 2 ) - 1 ) = ( A - 3 ) ) $=
+    ( cc wcel c2 cmin co c1 caddc c3 id 2cnd 1cnd subsub4d wceq 2p1e3 a1i eqtrd
+    oveq2d ) ABCZADEFGEFADGHFZEFAIEFSADGSJSKSLMSTIAETINSOPRQ $.
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
