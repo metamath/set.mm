@@ -73833,9 +73833,10 @@ $)
 
   $( Two halves make a whole.  (Contributed by NM, 11-Apr-2005.) $)
   2halves $p |- ( A e. CC -> ( ( A / 2 ) + ( A / 2 ) ) = A ) $=
-    ( cc wcel c2 cmul co cdiv caddc 2times oveq1d cc0 wne wceq 2cn 2ne0 divcan3
-    mp3an23 wa 2cnne0 divdir mp3an3 anidms 3eqtr3rd ) ABCZDAEFZDGFZAAHFZDGFZAAD
-    GFZUIHFZUDUEUGDGAIJUDDBCZDKLZUFAMNOADPQUDUHUJMZUDUDUKULRUMSAADTUAUBUC $.
+    ( cc wcel c2 cmul co cdiv 2times oveq1d cc0 cap wbr wceq 2cn 2ap0 divcanap3
+    caddc mp3an23 wa pm3.2i divdirap mp3an3 anidms 3eqtr3rd ) ABCZDAEFZDGFZAAQF
+    ZDGFZAADGFZUJQFZUEUFUHDGAHIUEDBCZDJKLZUGAMNOADPRUEUIUKMZUEUEULUMSUNULUMNOTA
+    ADUAUBUCUD $.
 
   $( A number is positive iff its half is positive.  (Contributed by NM,
      10-Apr-2005.) $)
