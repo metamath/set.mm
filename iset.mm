@@ -73966,16 +73966,6 @@ $)
     URUMULUOVCNBAOPUNUQVBBFUNUPVAKLULAQDBQDUPVARUMATBTABUAUBUCUDUEUFABSULUMUQCD
     ZUTUSNUNUPCDVDABUGUPUHUIUQBSUKUJ $.
 
-  $( The average of two numbers is less than or equal to at least one of them.
-     (Contributed by NM, 9-Dec-2005.)  (Revised by Mario Carneiro,
-     28-May-2014.) $)
-  avgle $p |- ( ( A e. RR /\ B e. RR ) ->
-               ( ( ( A + B ) / 2 ) <_ A \/ ( ( A + B ) / 2 ) <_ B ) ) $=
-    ( cr wcel wa cle wo caddc co c2 cdiv letric orcomd wb avgle2 ancoms cc wceq
-    wbr recn addcom syl2an oveq1d breq1d bitr4d orbi12d mpbid ) ACDZBCDZEZBAFSZ
-    ABFSZGABHIZJKIZAFSZUNBFSZGUJULUKABLMUJUKUOULUPUJUKBAHIZJKIZAFSZUOUIUHUKUSNB
-    AOPUJUNURAFUJUMUQJKUHAQDBQDUMUQRUIATBTABUAUBUCUDUEABOUFUG $.
-
   ${
     2timesd.1 $e |- ( ph -> A e. CC ) $.
     $( Two times a number.  (Contributed by Mario Carneiro, 27-May-2016.) $)
