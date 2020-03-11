@@ -73920,10 +73920,10 @@ $)
     nominpos $p |- -. E. x e. RR ( 0 < x /\
                    -. E. y e. RR ( 0 < y /\ y < x ) ) $=
       ( cc0 cv clt wbr wa cr wrex wn wcel wi c2 cdiv co rehalfcl divgt0 mpanr12
-      2re 2pos halfpos biimpd jcad wceq breq2 breq1 anbi12d rspcev syl6an sylib
-      ex iman nrex ) CADZEFZCBDZEFZUPUNEFZGZBHIZJGZAHUNHKZUOUTLVAJVBUNMNOZHKUOC
-      VCEFZVCUNEFZGZUTUNPVBUOVDVEVBUOVDVBUOGMHKCMEFVDSTUNMQRUKVBUOVEUNUAUBUCUSV
-      FBVCHUPVCUDUQVDURVEUPVCCEUEUPVCUNEUFUGUHUIUOUTULUJUM $.
+      2re 2pos ex halfpos biimpd jcad wceq breq2 breq1 rspcev syl6an imanim syl
+      anbi12d nrex ) CADZEFZCBDZEFZUPUNEFZGZBHIZJGZAHUNHKZUOUTLVAJVBUNMNOZHKUOC
+      VCEFZVCUNEFZGZUTUNPVBUOVDVEVBUOVDVBUOGMHKCMEFVDSTUNMQRUAVBUOVEUNUBUCUDUSV
+      FBVCHUPVCUEUQVDURVEUPVCCEUFUPVCUNEUGULUHUIUOUTUJUKUM $.
   $}
 
   $( Ordering property for average.  (Contributed by Mario Carneiro,
