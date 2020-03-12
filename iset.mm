@@ -74225,11 +74225,11 @@ $)
   $( The result of subtracting a positive integer from 0 is not a nonnegative
      integer.  (Contributed by Alexander van der Vekens, 19-Mar-2018.) $)
   0mnnnnn0 $p |- ( N e. NN -> ( 0 - N ) e/ NN0 ) $=
-    ( cn wcel cc0 cmin co cn0 wnel cr 0re wn nnel cneg df-neg eqcomi eleq1i cle
-    wbr nn0ge0 syl5bi nnre le0neg1d clt nngt0 0red ltnled pm2.21 syl6bi sylbird
-    wi mpd syl5 mt4i ) ABCZDAEFZGHZDICZJUPKUOGCZUNUQKZUOGLURAMZGCZUNUSUOUTGUTUO
-    ANOPVADUTQRZUNUSUTSUNVBADQRZUSUNAAUAZUBUNDAUCRZVCUSUJZAUDUNVEVCKVFUNDAUNUEV
-    DUFVCUSUGUHUKUIULTTUM $.
+    ( cn wcel cc0 cmin co cn0 wnel 0re cneg df-neg eqcomi eleq1i cle wbr nn0ge0
+    wn cr nnre le0neg1d clt nngt0 0red lenltd pm2.21 syl6bi mpid sylbird syl5bi
+    wi syl5 mt2i df-nel sylibr ) ABCZDAEFZGCZQUPGHUOUQDRCZIUQAJZGCZUOURQZUPUSGU
+    SUPAKLMUTDUSNOZUOVAUSPUOVBADNOZVAUOAASZTUOVCDAUAOZVAAUBUOVCVEQVEVAUJUOADVDU
+    OUCUDVEVAUEUFUGUHUKUIULUPGUMUN $.
 
   ${
     un0addcl.1 $e |- ( ph -> S C_ CC ) $.
