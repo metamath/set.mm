@@ -74070,7 +74070,8 @@ $)
   $( The set of nonnegative integers exists.  (Contributed by NM,
      18-Jul-2004.) $)
   nn0ex $p |- NN0 e. _V $=
-    ( cn0 cn cc0 csn cun cvv df-n0 nnex snex unex eqeltri ) ABCDZEFGBLHCIJK $.
+    ( cn0 cn cc0 csn cun cvv df-n0 nnex c0ex snex unex eqeltri ) ABCDZEFGBMHCIJ
+    KL $.
 
   $( A positive integer is a nonnegative integer.  (Contributed by NM,
      9-May-2004.) $)
