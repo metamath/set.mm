@@ -74178,9 +74178,9 @@ $)
   $( A nonnegative integer is greater than or equal to zero.  (Contributed by
      NM, 9-May-2004.)  (Revised by Mario Carneiro, 16-May-2014.) $)
   nn0ge0 $p |- ( N e. NN0 -> 0 <_ N ) $=
-    ( cn0 wcel cc0 cle wbr wceq wo cn elnn0 nngt0 id eqcomd orim12i sylbi cr wb
-    clt 0re nn0re leloe sylancr mpbird ) ABCZDAEFZDARFZDAGZHZUDAICZADGZHUHAJUIU
-    FUJUGAKUJADUJLMNOUDDPCAPCUEUHQSATDAUAUBUC $.
+    ( cn0 wcel cn cc0 wceq wo cle wbr elnn0 cr clt nnre nngt0 wi ltle mpan sylc
+    0re 0le0 breq2 mpbiri jaoi sylbi ) ABCADCZAEFZGEAHIZAJUEUGUFUEAKCZEALIZUGAM
+    ANEKCUHUIUGOSEAPQRUFUGEEHITAEEHUAUBUCUD $.
 
   $( A nonnegative integer is not less than zero.  (Contributed by NM,
      9-May-2004.)  (Revised by Mario Carneiro, 27-May-2016.) $)
