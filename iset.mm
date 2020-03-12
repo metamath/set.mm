@@ -74398,33 +74398,14 @@ $)
   $}
 
   $( Two ways to write the support of a function on ` NN0 ` .  (Contributed by
-     Mario Carneiro, 29-Dec-2014.)  (Revised by AV, 7-Jul-2019.) $)
-  frnnn0supp $p |- ( ( I e. V /\ F : I --> NN0 )
-                  -> ( F supp 0 ) = ( `' F " NN ) ) $=
-    ( wcel cn0 wf wa cc0 csupp co ccnv csn cdif cima cn cvv wceq c0ex frnsuppeq
-    imp mpanl2 dfn2 eqcomi imaeq2i syl6eq ) BCDZBEAFZGAHIJZAKZEHLMZNZUIONUFHPDZ
-    UGUHUKQZRUFULGUGUMEABCPHSTUAUJOUIOUJUBUCUDUE $.
-
-  $( Two ways to write the support of a function on ` NN0 ` .  (Contributed by
-     Mario Carneiro, 29-Dec-2014.)  Obsolete version of ~ frnnn0supp as of
-     7-Jul-2019.  (New usage is discouraged.)
-     (Proof modification is discouraged.) $)
-  nn0suppOLD $p |- ( F : I --> NN0 ->
+     Mario Carneiro, 29-Dec-2014.) $)
+  nn0supp $p |- ( F : I --> NN0 ->
     ( `' F " ( _V \ { 0 } ) ) = ( `' F " NN ) ) $=
     ( cn0 wf ccnv cn cima cvv cc0 csn cdif dfn2 invdif eqtr4i imaeq2i wfun wceq
     cin ffun inpreima syl wss cdm cnvimass fimacnv syl5sseq sseqin2 sylib eqtrd
     fdm eqtr4d syl5req ) BCADZAEZFGUNCHIJZKZRZGZUNUPGZFUQUNFCUOKUQLCUOMNOUMURUN
     CGZUSRZUSUMAPURVAQBCASCUPATUAUMUSUTUBVAUSQUMAUCZUSUTAUPUDUMVBBUTBCAUJBCAUEU
     KUFUSUTUGUHUIUL $.
-
-  $( A function on ` NN0 ` is finitely supported iff its support is finite.
-     (Contributed by AV, 8-Jul-2019.) $)
-  frnnn0fsupp $p |- ( ( I e. V /\ F : I --> NN0 )
-                  -> ( F finSupp 0 <-> ( `' F " NN ) e. Fin ) ) $=
-    ( wcel cn0 wf wa cc0 cfsupp wbr ccnv csn cdif cima cfn cn wb cvv wi c0ex
-    frnfsuppbi mpan2 imp wceq dfn2 eqcomi a1i imaeq2d eleq1d bitrd ) BCDZBEAFZG
-    ZAHIJZAKZEHLMZNZODZUOPNZODUKULUNURQZUKHRDULUTSTEABCRHUAUBUCUMUQUSOUMUPPUOUP
-    PUDUMPUPUEUFUGUHUIUJ $.
 
   ${
     nnnn0d.1 $e |- ( ph -> A e. NN ) $.
