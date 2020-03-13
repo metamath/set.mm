@@ -73809,6 +73809,657 @@ $)
     apne ) ABCDZEFGZREHZIRJKEJKSTLMNREQOP $.
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Simple number properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Closure of half of a number (common case).  (Contributed by NM,
+     1-Jan-2006.) $)
+  halfcl $p |- ( A e. CC -> ( A / 2 ) e. CC ) $=
+    ( cc wcel c2 cc0 cap wbr cdiv co 2cn 2ap0 divclap mp3an23 ) ABCDBCDEFGADHIB
+    CJKADLM $.
+
+  $( Real closure of half.  (Contributed by NM, 1-Jan-2006.) $)
+  rehalfcl $p |- ( A e. RR -> ( A / 2 ) e. RR ) $=
+    ( cr wcel c2 cc0 cap wbr cdiv co 2re 2ap0 redivclap mp3an23 ) ABCDBCDEFGADH
+    IBCJKADLM $.
+
+  $( Half of a number is zero iff the number is zero.  (Contributed by NM,
+     20-Apr-2006.) $)
+  half0 $p |- ( A e. CC -> ( ( A / 2 ) = 0 <-> A = 0 ) ) $=
+    ( cc wcel c2 cc0 cap wbr cdiv co wceq wb 2cn 2ap0 diveqap0 mp3an23 ) ABCDBC
+    DEFGADHIEJAEJKLMADNO $.
+
+  $( Two halves make a whole.  (Contributed by NM, 11-Apr-2005.) $)
+  2halves $p |- ( A e. CC -> ( ( A / 2 ) + ( A / 2 ) ) = A ) $=
+    ( cc wcel c2 cmul co cdiv 2times oveq1d cc0 cap wbr wceq 2cn 2ap0 divcanap3
+    caddc mp3an23 wa pm3.2i divdirap mp3an3 anidms 3eqtr3rd ) ABCZDAEFZDGFZAAQF
+    ZDGFZAADGFZUJQFZUEUFUHDGAHIUEDBCZDJKLZUGAMNOADPRUEUIUKMZUEUEULUMSUNULUMNOTA
+    ADUAUBUCUD $.
+
+  $( A number is positive iff its half is positive.  (Contributed by NM,
+     10-Apr-2005.) $)
+  halfpos2 $p |- ( A e. RR -> ( 0 < A <-> 0 < ( A / 2 ) ) ) $=
+    ( cr wcel c2 cc0 clt wbr cdiv co wb 2re 2pos gt0div mp3an23 ) ABCDBCEDFGEAF
+    GEADHIFGJKLADMN $.
+
+  $( A positive number is greater than its half.  (Contributed by NM,
+     28-Oct-2004.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  halfpos $p |- ( A e. RR -> ( 0 < A <-> ( A / 2 ) < A ) ) $=
+    ( cr wcel cc0 clt c2 cdiv co caddc halfpos2 rehalfcl ltaddposd cc wceq recn
+    wbr 2halves syl breq2d 3bitrd ) ABCZDAEPDAFGHZEPUBUBUBIHZEPUBAEPAJUAUBUBAKZ
+    UDLUAUCAUBEUAAMCUCANAOAQRST $.
+
+  $( A number is nonnegative iff its half is nonnegative.  (Contributed by NM,
+     9-Dec-2005.) $)
+  halfnneg2 $p |- ( A e. RR -> ( 0 <_ A <-> 0 <_ ( A / 2 ) ) ) $=
+    ( cr wcel c2 cc0 clt wbr cle cdiv co wb 2re 2pos ge0div mp3an23 ) ABCDBCEDF
+    GEAHGEADIJHGKLMADNO $.
+
+  $( Closure of half-sum and half-difference.  (Contributed by Paul Chapman,
+     12-Oct-2007.) $)
+  halfaddsubcl $p |- ( ( A e. CC /\ B e. CC ) -> ( ( ( A + B ) / 2 ) e. CC /\
+                         ( ( A - B ) / 2 ) e. CC ) ) $=
+    ( cc wcel wa caddc co c2 cdiv cmin addcl halfcl syl subcl jca ) ACDBCDEZABF
+    GZHIGCDZABJGZHIGCDZPQCDRABKQLMPSCDTABNSLMO $.
+
+  $( Sum and difference of half-sum and half-difference.  (Contributed by Paul
+     Chapman, 12-Oct-2007.) $)
+  halfaddsub $p |- ( ( A e. CC /\ B e. CC ) ->
+                      ( ( ( ( A + B ) / 2 ) + ( ( A - B ) / 2 ) ) = A /\
+                        ( ( ( A + B ) / 2 ) - ( ( A - B ) / 2 ) ) = B ) ) $=
+    ( cc wcel wa caddc cdiv cmin wceq cmul 2times adantr eqtr4d oveq1d 2cn 2ap0
+    co c2 mp3an3 syl2anc ppncan 3anidm13 addcl subcl cc0 cap divdirap divcanap3
+    wbr pm3.2i mp3an23 3eqtr3d pnncan 3anidm23 adantl divsubdirap jca ) ACDZBCD
+    ZEZABFQZRGQZABHQZRGQZFQZAIVBVDHQZBIUTVAVCFQZRGQZRAJQZRGQZVEAUTVGVIRGUTVGAAF
+    QZVIURUSVGVKIABAUAUBURVIVKIUSAKLMNUTVACDZVCCDZVHVEIZABUCZABUDZVLVMRCDZRUEUF
+    UIZEZVNVQVROPUJZVAVCRUGSTURVJAIZUSURVQVRWAOPARUHUKLULUTVAVCHQZRGQZRBJQZRGQZ
+    VFBUTWBWDRGUTWBBBFQZWDURUSWBWFIABBUMUNUSWDWFIURBKUOMNUTVLVMWCVFIZVOVPVLVMVS
+    WGVTVAVCRUPSTUSWEBIZURUSVQVRWHOPBRUHUKUOULUQ $.
+
+  $( TODO - use this to reduce:
+  Statement "lt2add" is directly referenced in the proofs of 9 statements:
+    2climnn 2climnn0 climaddlem3 climmullem5 climcaui ser1f0i
+  MM> sh us 2halves
+  Statement "2halves" is directly referenced in the proofs of 10 statements:
+    2climnn 2climnn0 climmullem5 climcaui caucvgi ser1f0i
+  MM>
+  $)
+  $( A sum is less than the whole if each term is less than half.  (Contributed
+     by NM, 13-Dec-2006.) $)
+  lt2halves $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( ( A < ( C / 2 ) /\ B < ( C / 2 ) ) -> ( A + B ) < C ) ) $=
+    ( cr wcel w3a c2 co clt wbr wa caddc wi 3simpa rehalfcl jca 3ad2ant3 lt2add
+    cdiv syl2anc wb cc wceq recn 2halves syl breq2d sylibd ) ADEZBDEZCDEZFZACGS
+    HZIJBUMIJKZABLHZUMUMLHZIJZUOCIJZULUIUJKUMDEZUSKZUNUQMUIUJUKNUKUIUTUJUKUSUSC
+    OZVAPQABUMUMRTUKUIUQURUAUJUKUPCUOIUKCUBEUPCUCCUDCUEUFUGQUH $.
+
+  $( Sum is less than product for numbers greater than 2.  (Contributed by
+     Stefan Allan, 24-Sep-2010.) $)
+  addltmul $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 2 < A /\ 2 < B ) )
+              -> ( A + B ) < ( A x. B ) ) $=
+    ( cr wcel wa c2 clt wbr caddc co cmul c1 cmin 2re 1re ltsub1 syl2an remulcl
+    wb cc mp3an13 2m1e1 breq1i syl6bb bi2anan9 wi peano2rem mulgt1 ex wceq recn
+    sylbid ax-1cn mulsub mpanl2 mpanr2 breq2d 1t1e1 oveq2i breq2i mpan2 readdcl
+    remulcli sylancl ltaddsub2 mp3an2 syl2anc syl5rbbr ltadd1 ax-1rid oveqan12d
+    mp3an3 breq1d bitr3d 3bitrd sylibd imp ) ACDZBCDZEZFAGHZFBGHZEZABIJZABKJZGH
+    ZVTWCLALMJZBLMJZKJZGHZWFVTWCLWGGHZLWHGHZEZWJVRWAWKVSWBWLVRWAFLMJZWGGHZWKFCD
+    ZVRLCDZWAWOSNOFALPUAWNLWGGUBUCUDVSWBWNWHGHZWLWPVSWQWBWRSNOFBLPUAWNLWHGUBUCU
+    DUEVRWGCDZWHCDZWMWJUFVSAUGBUGWSWTEWMWJWGWHUHUIQULVTWJLWELLKJZIJZALKJZBLKJZI
+    JZMJZGHZXELIJZWELIJZGHZWFVTWIXFLGVRATDZBTDZWIXFUJZVSAUKBUKXKXLLTDZXMUMXKXNX
+    LXNEXMUMALBLUNUOUPQUQXJXHXBGHZVTXGXBXIXHGXALWEIURUSUTVTXECDZXBCDZXOXGSZVRXC
+    CDZXDCDZXPVSVRWQXSOALRVAVSWQXTOBLRVAXCXDVBQZVTWECDZXACDXQABRZLLOOVCWEXAVBVD
+    XPWQXQXROXELXBVEVFVGVHVTXEWEGHZXJWFVTXPYBYDXJSZYAYCXPYBWQYEOXEWELVIVLVGVTXE
+    WDWEGVRVSXCAXDBIAVJBVJVKVMVNVOVPVQ $.
+
+  ${
+    $d x y $.
+    $( There is no smallest positive real number.  (Contributed by NM,
+       28-Oct-2004.) $)
+    nominpos $p |- -. E. x e. RR ( 0 < x /\
+                   -. E. y e. RR ( 0 < y /\ y < x ) ) $=
+      ( cc0 cv clt wbr wa cr wrex wn wcel wi c2 cdiv co rehalfcl divgt0 mpanr12
+      2re 2pos ex halfpos biimpd jcad wceq breq2 breq1 rspcev syl6an imanim syl
+      anbi12d nrex ) CADZEFZCBDZEFZUPUNEFZGZBHIZJGZAHUNHKZUOUTLVAJVBUNMNOZHKUOC
+      VCEFZVCUNEFZGZUTUNPVBUOVDVEVBUOVDVBUOGMHKCMEFVDSTUNMQRUAVBUOVEUNUBUCUDUSV
+      FBVCHUPVCUEUQVDURVEUPVCCEUFUPVCUNEUGULUHUIUOUTUJUKUM $.
+  $}
+
+  $( Ordering property for average.  (Contributed by Mario Carneiro,
+     28-May-2014.) $)
+  avglt1 $p |- ( ( A e. RR /\ B e. RR ) ->
+                 ( A < B <-> A < ( ( A + B ) / 2 ) ) ) $=
+    ( cr wcel wa clt wbr caddc co c2 cmul cdiv wb ltadd2 3anidm13 cc wceq simpl
+    recnd times2 syl breq1d cc0 readdcl 2re pm3.2i a1i ltmuldiv syl3anc 3bitr2d
+    2pos ) ACDZBCDZEZABFGZAAHIZABHIZFGZAJKIZUQFGZAUQJLIFGZULUMUOURMABANOUNUSUPU
+    QFUNAPDUSUPQUNAULUMRZSATUAUBUNULUQCDJCDZUCJFGZEZUTVAMVBABUDVEUNVCVDUEUKUFUG
+    AUQJUHUIUJ $.
+
+  $( Ordering property for average.  (Contributed by Mario Carneiro,
+     28-May-2014.) $)
+  avglt2 $p |- ( ( A e. RR /\ B e. RR ) ->
+                 ( A < B <-> ( ( A + B ) / 2 ) < B ) ) $=
+    ( cr wcel wa caddc co c2 cmul clt wbr cdiv cc simpr recnd 2times syl breq2d
+    wceq wb cc0 readdcl 2re 2pos pm3.2i a1i ltdivmul syl3anc 3anidm23 3bitr4rd
+    ltadd1 ) ACDZBCDZEZABFGZHBIGZJKZUOBBFGZJKZUOHLGBJKZABJKZUNUPURUOJUNBMDUPURS
+    UNBULUMNZOBPQRUNUOCDUMHCDZUAHJKZEZUTUQTABUBVBVEUNVCVDUCUDUEUFUOBHUGUHULUMVA
+    USTABBUKUIUJ $.
+
+  $( Ordering property for average.  (Contributed by Mario Carneiro,
+     28-May-2014.) $)
+  avgle1 $p |- ( ( A e. RR /\ B e. RR ) ->
+                 ( A <_ B <-> A <_ ( ( A + B ) / 2 ) ) ) $=
+    ( cr wcel wa clt wbr wn caddc co c2 cdiv cle wb avglt2 ancoms cc wceq lenlt
+    recn addcom syl2an oveq1d breq1d bitr4d notbid readdcl rehalfcl syl 3bitr4d
+    syldan ) ACDZBCDZEZBAFGZHABIJZKLJZAFGZHZABMGAUQMGZUNUOURUNUOBAIJZKLJZAFGZUR
+    UMULUOVCNBAOPUNUQVBAFUNUPVAKLULAQDBQDUPVARUMATBTABUAUBUCUDUEUFABSULUMUQCDZU
+    TUSNUNUPCDVDABUGUPUHUIAUQSUKUJ $.
+
+  $( Ordering property for average.  (Contributed by Jeff Hankins,
+     15-Sep-2013.)  (Revised by Mario Carneiro, 28-May-2014.) $)
+  avgle2 $p |- ( ( A e. RR /\ B e. RR ) ->
+                 ( A <_ B <-> ( ( A + B ) / 2 ) <_ B ) ) $=
+    ( cr wcel wa clt wbr wn caddc co c2 cdiv cle wb avglt1 ancoms cc wceq lenlt
+    recn addcom syl2an oveq1d breq2d bitr4d notbid readdcl rehalfcl syl 3bitr4d
+    sylancom ) ACDZBCDZEZBAFGZHBABIJZKLJZFGZHZABMGUQBMGZUNUOURUNUOBBAIJZKLJZFGZ
+    URUMULUOVCNBAOPUNUQVBBFUNUPVAKLULAQDBQDUPVARUMATBTABUAUBUCUDUEUFABSULUMUQCD
+    ZUTUSNUNUPCDVDABUGUPUHUIUQBSUKUJ $.
+
+  ${
+    2timesd.1 $e |- ( ph -> A e. CC ) $.
+    $( Two times a number.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    2timesd $p |- ( ph -> ( 2 x. A ) = ( A + A ) ) $=
+      ( cc wcel c2 cmul co caddc wceq 2times syl ) ABDEFBGHBBIHJCBKL $.
+
+    $( A number times 2.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    times2d $p |- ( ph -> ( A x. 2 ) = ( A + A ) ) $=
+      ( cc wcel c2 cmul co caddc wceq times2 syl ) ABDEBFGHBBIHJCBKL $.
+
+    $( Closure of half of a number (frequently used special case).
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    halfcld $p |- ( ph -> ( A / 2 ) e. CC ) $=
+      ( cc wcel c2 cdiv co halfcl syl ) ABDEBFGHDECBIJ $.
+
+    $( Two halves make a whole.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    2halvesd $p |- ( ph -> ( ( A / 2 ) + ( A / 2 ) ) = A ) $=
+      ( cc wcel c2 cdiv co caddc wceq 2halves syl ) ABDEBFGHZMIHBJCBKL $.
+  $}
+
+  ${
+    rehalfcld.1 $e |- ( ph -> A e. RR ) $.
+    $( Real closure of half.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    rehalfcld $p |- ( ph -> ( A / 2 ) e. RR ) $=
+      ( cr wcel c2 cdiv co rehalfcl syl ) ABDEBFGHDECBIJ $.
+
+    lt2halvesd.2 $e |- ( ph -> B e. RR ) $.
+    lt2halvesd.3 $e |- ( ph -> C e. RR ) $.
+    lt2halvesd.4 $e |- ( ph -> A < ( C / 2 ) ) $.
+    lt2halvesd.5 $e |- ( ph -> B < ( C / 2 ) ) $.
+    $( A sum is less than the whole if each term is less than half.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    lt2halvesd $p |- ( ph -> ( A + B ) < C ) $=
+      ( c2 cdiv co clt wbr caddc cr wcel wa wi lt2halves syl3anc mp2and ) ABDJK
+      LZMNZCUCMNZBCOLDMNZHIABPQCPQDPQUDUERUFSEFGBCDTUAUB $.
+  $}
+
+  ${
+    rehalfcli.1 $e |- A e. RR $.
+    $( Half a real number is real.  Inference form.  (Contributed by David
+       Moews, 28-Feb-2017.) $)
+    rehalfcli $p |- ( A / 2 ) e. RR $=
+      ( cr wcel c2 cdiv co rehalfcl ax-mp ) ACDAEFGCDBAHI $.
+  $}
+
+  $( Adding two times 1 to a number.  (Contributed by AV, 22-Sep-2018.) $)
+  add1p1 $p |- ( N e. CC -> ( ( N + 1 ) + 1 ) = ( N + 2 ) ) $=
+    ( cc wcel c1 caddc co c2 id 1cnd addassd wceq 1p1e2 a1i oveq2d eqtrd ) ABCZ
+    ADEFDEFADDEFZEFAGEFPADDPHPIZRJPQGAEQGKPLMNO $.
+
+  $( Subtracting two times 1 from a number.  (Contributed by AV,
+     23-Oct-2018.) $)
+  sub1m1 $p |- ( N e. CC -> ( ( N - 1 ) - 1 ) = ( N - 2 ) ) $=
+    ( cc wcel c1 cmin co caddc c2 id 1cnd subsub4d wceq 1p1e2 a1i oveq2d eqtrd
+    ) ABCZADEFDEFADDGFZEFAHEFQADDQIQJZSKQRHAERHLQMNOP $.
+
+  $( Subtracting 2 and afterwards 1 from a number results in the difference
+     between the number and 3.  (Contributed by Alexander van der Vekens,
+     16-Sep-2018.) $)
+  cnm2m1cnm3 $p |- ( A e. CC -> ( ( A - 2 ) - 1 ) = ( A - 3 ) ) $=
+    ( cc wcel c2 cmin co c1 caddc c3 id 2cnd 1cnd subsub4d wceq 2p1e3 a1i eqtrd
+    oveq2d ) ABCZADEFGEFADGHFZEFAIEFSADGSJSKSLMSTIAETINSOPRQ $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Nonnegative integers (as a subset of complex numbers)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c NN0 $. $( The set of nonnegative integers (blackboard bold N_0). $)
+
+  $( Extend class notation to include the class of nonnegative integers. $)
+  cn0 $a class NN0 $.
+
+  $( Define the set of nonnegative integers.  (Contributed by Raph Levien,
+     10-Dec-2002.) $)
+  df-n0 $a |- NN0 = ( NN u. { 0 } ) $.
+
+  $( Nonnegative integers expressed in terms of naturals and zero.
+     (Contributed by Raph Levien, 10-Dec-2002.) $)
+  elnn0 $p |- ( A e. NN0 <-> ( A e. NN \/ A = 0 ) ) $=
+    ( cn0 wcel cn cc0 csn cun wceq df-n0 eleq2i elun c0ex elsnc2 orbi2i 3bitri
+    wo ) ABCADEFZGZCADCZAQCZPSAEHZPBRAIJADQKTUASAELMNO $.
+
+  $( Positive naturals are a subset of nonnegative integers.  (Contributed by
+     Raph Levien, 10-Dec-2002.) $)
+  nnssnn0 $p |- NN C_ NN0 $=
+    ( cn cc0 csn cun cn0 ssun1 df-n0 sseqtr4i ) AABCZDEAIFGH $.
+
+  $( Nonnegative integers are a subset of the reals.  (Contributed by Raph
+     Levien, 10-Dec-2002.) $)
+  nn0ssre $p |- NN0 C_ RR $=
+    ( cn0 cn cc0 csn cun cr df-n0 nnssre wcel wss 0re snssi ax-mp unssi eqsstri
+    ) ABCDZEFGBPFHCFIPFJKCFLMNO $.
+
+  $( Nonnegative integers are a subset of the complex numbers.)  (Contributed
+     by NM, 9-May-2004.) $)
+  nn0sscn $p |- NN0 C_ CC $=
+    ( cn0 cr cc nn0ssre ax-resscn sstri ) ABCDEF $.
+
+  $( The set of nonnegative integers exists.  (Contributed by NM,
+     18-Jul-2004.) $)
+  nn0ex $p |- NN0 e. _V $=
+    ( cn0 cn cc0 csn cun cvv df-n0 nnex c0ex snex unex eqeltri ) ABCDZEFGBMHCIJ
+    KL $.
+
+  $( A positive integer is a nonnegative integer.  (Contributed by NM,
+     9-May-2004.) $)
+  nnnn0 $p |- ( A e. NN -> A e. NN0 ) $=
+    ( cn cn0 nnssnn0 sseli ) BCADE $.
+
+  ${
+    nnnn0.1 $e |- N e. NN $.
+    $( A positive integer is a nonnegative integer.  (Contributed by NM,
+       20-Jun-2005.) $)
+    nnnn0i $p |- N e. NN0 $=
+      ( cn wcel cn0 nnnn0 ax-mp ) ACDAEDBAFG $.
+  $}
+
+  $( A nonnegative integer is a real number.  (Contributed by NM,
+     9-May-2004.) $)
+  nn0re $p |- ( A e. NN0 -> A e. RR ) $=
+    ( cn0 cr nn0ssre sseli ) BCADE $.
+
+  $( A nonnegative integer is a complex number.  (Contributed by NM,
+     9-May-2004.) $)
+  nn0cn $p |- ( A e. NN0 -> A e. CC ) $=
+    ( cn0 cc nn0sscn sseli ) BCADE $.
+
+  ${
+    nn0re.1 $e |- A e. NN0 $.
+    $( A nonnegative integer is a real number.  (Contributed by NM,
+       14-May-2003.) $)
+    nn0rei $p |- A e. RR $=
+      ( cn0 cr nn0ssre sselii ) CDAEBF $.
+
+    $( A nonnegative integer is a complex number.  (Contributed by NM,
+       14-May-2003.) $)
+    nn0cni $p |- A e. CC $=
+      ( nn0rei recni ) AABCD $.
+  $}
+
+  $( The set of positive integers defined in terms of nonnegative integers.
+     (Contributed by NM, 23-Sep-2007.)  (Proof shortened by Mario Carneiro,
+     13-Feb-2013.) $)
+  dfn2 $p |- NN = ( NN0 \ { 0 } ) $=
+    ( cn0 cc0 csn cdif cn cun df-n0 difeq1i difun2 wcel wceq 0nnn difsn 3eqtrri
+    wn ax-mp ) ABCZDEQFZQDEQDZEARQGHEQIBEJOSEKLBEMPN $.
+
+  $( The positive integer property expressed in terms of difference from zero.
+     (Contributed by Stefan O'Rear, 12-Sep-2015.) $)
+  elnnne0 $p |- ( N e. NN <-> ( N e. NN0 /\ N =/= 0 ) ) $=
+    ( cn wcel cn0 cc0 csn cdif wne wa dfn2 eleq2i eldifsn bitri ) ABCADEFGZCADC
+    AEHIBNAJKADELM $.
+
+  $( 0 is a nonnegative integer.  (Contributed by Raph Levien, 10-Dec-2002.) $)
+  0nn0 $p |- 0 e. NN0 $=
+    ( cc0 wceq cn0 wcel eqid cn wo elnn0 biimpri olcs ax-mp ) AABZACDZAEAFDZLMM
+    NLGAHIJK $.
+
+  $( 1 is a nonnegative integer.  (Contributed by Raph Levien, 10-Dec-2002.) $)
+  1nn0 $p |- 1 e. NN0 $=
+    ( c1 1nn nnnn0i ) ABC $.
+
+  $( 2 is a nonnegative integer.  (Contributed by Raph Levien, 10-Dec-2002.) $)
+  2nn0 $p |- 2 e. NN0 $=
+    ( c2 2nn nnnn0i ) ABC $.
+
+  $( 3 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     18-Feb-2014.) $)
+  3nn0 $p |- 3 e. NN0 $=
+    ( c3 3nn nnnn0i ) ABC $.
+
+  $( 4 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     18-Feb-2014.) $)
+  4nn0 $p |- 4 e. NN0 $=
+    ( c4 4nn nnnn0i ) ABC $.
+
+  $( 5 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     19-Apr-2015.) $)
+  5nn0 $p |- 5 e. NN0 $=
+    ( c5 5nn nnnn0i ) ABC $.
+
+  $( 6 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     19-Apr-2015.) $)
+  6nn0 $p |- 6 e. NN0 $=
+    ( c6 6nn nnnn0i ) ABC $.
+
+  $( 7 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     19-Apr-2015.) $)
+  7nn0 $p |- 7 e. NN0 $=
+    ( c7 7nn nnnn0i ) ABC $.
+
+  $( 8 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     19-Apr-2015.) $)
+  8nn0 $p |- 8 e. NN0 $=
+    ( c8 8nn nnnn0i ) ABC $.
+
+  $( 9 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     19-Apr-2015.) $)
+  9nn0 $p |- 9 e. NN0 $=
+    ( c9 9nn nnnn0i ) ABC $.
+
+  $( 10 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     19-Apr-2015.) $)
+  10nn0 $p |- 10 e. NN0 $=
+    ( c10 10nn nnnn0i ) ABC $.
+
+  $( A nonnegative integer is greater than or equal to zero.  (Contributed by
+     NM, 9-May-2004.)  (Revised by Mario Carneiro, 16-May-2014.) $)
+  nn0ge0 $p |- ( N e. NN0 -> 0 <_ N ) $=
+    ( cn0 wcel cn cc0 wceq wo cle wbr elnn0 cr clt nnre nngt0 wi ltle mpan sylc
+    0re 0le0 breq2 mpbiri jaoi sylbi ) ABCADCZAEFZGEAHIZAJUEUGUFUEAKCZEALIZUGAM
+    ANEKCUHUIUGOSEAPQRUFUGEEHITAEEHUAUBUCUD $.
+
+  $( A nonnegative integer is not less than zero.  (Contributed by NM,
+     9-May-2004.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  nn0nlt0 $p |- ( A e. NN0 -> -. A < 0 ) $=
+    ( cn0 wcel cc0 cle wbr clt wn nn0ge0 cr wb 0re nn0re lenlt sylancr mpbid )
+    ABCZDAEFZADGFHZAIQDJCAJCRSKLAMDANOP $.
+
+  ${
+    nn0ge0.1 $e |- N e. NN0 $.
+    $( Nonnegative integers are nonnegative.  (Contributed by Raph Levien,
+       10-Dec-2002.) $)
+    nn0ge0i $p |- 0 <_ N $=
+      ( cn0 wcel cc0 cle wbr nn0ge0 ax-mp ) ACDEAFGBAHI $.
+  $}
+
+  $( A nonnegative integer is less than or equal to zero iff it is equal to
+     zero.  (Contributed by NM, 9-Dec-2005.) $)
+  nn0le0eq0 $p |- ( N e. NN0 -> ( N <_ 0 <-> N = 0 ) ) $=
+    ( cn0 wcel cc0 cle wbr wa nn0ge0 biantrud cr wb nn0re letri3 sylancl bitr4d
+    wceq 0re ) ABCZADEFZSDAEFZGZADPZRTSAHIRAJCDJCUBUAKALQADMNO $.
+
+  $( A nonnegative integer increased by 1 is greater than 0.  (Contributed by
+     Alexander van der Vekens, 3-Oct-2018.) $)
+  nn0p1gt0 $p |- ( N e. NN0 -> 0 < ( N + 1 ) ) $=
+    ( cn0 wcel c1 nn0re 1red nn0ge0 cc0 clt wbr 0lt1 a1i addgegt0d ) ABCZADAENF
+    AGHDIJNKLM $.
+
+  $( A positive integer plus a nonnegative integer is a positive integer.
+     (Contributed by NM, 20-Apr-2005.)  (Proof shortened by Mario Carneiro,
+     16-May-2014.) $)
+  nnnn0addcl $p |- ( ( M e. NN /\ N e. NN0 ) -> ( M + N ) e. NN ) $=
+    ( cn0 wcel cn cc0 wceq wo caddc co elnn0 nnaddcl wa oveq2 addid1d sylan9eqr
+    nncn simpl eqeltrd jaodan sylan2b ) BCDAEDZBEDZBFGZHABIJZEDZBKUBUCUFUDABLUB
+    UDMUEAEUDUBUEAFIJABFAINUBAAQOPUBUDRSTUA $.
+
+  $( A nonnegative integer plus a positive integer is a positive integer.
+     (Contributed by NM, 22-Dec-2005.) $)
+  nn0nnaddcl $p |- ( ( M e. NN0 /\ N e. NN ) -> ( M + N ) e. NN ) $=
+    ( cn wcel cn0 caddc co wa wceq nncn nn0cn addcom syl2an nnnn0addcl eqeltrrd
+    cc ancoms ) BCDZAEDZABFGZCDRSHBAFGZTCRBPDAPDUATISBJAKBALMBANOQ $.
+
+  $( The result of subtracting a positive integer from 0 is not a nonnegative
+     integer.  (Contributed by Alexander van der Vekens, 19-Mar-2018.) $)
+  0mnnnnn0 $p |- ( N e. NN -> ( 0 - N ) e/ NN0 ) $=
+    ( cn wcel cc0 cmin co cn0 wnel 0re cneg df-neg eqcomi eleq1i cle wbr nn0ge0
+    wn cr nnre le0neg1d clt nngt0 0red lenltd pm2.21 syl6bi mpid sylbird syl5bi
+    wi syl5 mt2i df-nel sylibr ) ABCZDAEFZGCZQUPGHUOUQDRCZIUQAJZGCZUOURQZUPUSGU
+    SUPAKLMUTDUSNOZUOVAUSPUOVBADNOZVAUOAASZTUOVCDAUAOZVAAUBUOVCVEQVEVAUJUOADVDU
+    OUCUDVEVAUEUFUGUHUKUIULUPGUMUN $.
+
+  ${
+    un0addcl.1 $e |- ( ph -> S C_ CC ) $.
+    un0addcl.2 $e |- T = ( S u. { 0 } ) $.
+    ${
+      un0addcl.3 $e |- ( ( ph /\ ( M e. S /\ N e. S ) ) -> ( M + N ) e. S ) $.
+      $( If ` S ` is closed under addition, then so is ` S u. { 0 } ` .
+         (Contributed by Mario Carneiro, 17-Jul-2014.) $)
+      un0addcl $p |- ( ( ph /\ ( M e. T /\ N e. T ) ) -> ( M + N ) e. T ) $=
+        ( wcel caddc co cc0 wo wa eleq2i elun bitri cc sselda eqeltrd csn ssun1
+        cun sseqtr4i sseldi expr addid2d wss a1i elsni oveq1d eleq1d syl5ibrcom
+        wi impancom jaodan sylan2b 0cnd snssd unssd syl5eqss addid1d simpr jaod
+        oveq2d syl5bi impr ) ADCIZECIZDEJKZCIZVIEBIZELUAZIZMZAVHNZVKVIEBVMUCZIV
+        OCVQEGOEBVMPQVPVLVKVNVHADBIZDVMIZMZVLVKUNZVHDVQIVTCVQDGODBVMPQAVRWAVSAV
+        RVLVKAVRVLNNBCVJBVQCBVMUBGUDZHUEUFAVLVSVKAVLNZVKVSLEJKZCIWCWDECWCEABREF
+        SUGABCEBCUHAWBUISTVSVJWDCVSDLEJDLUJUKULUMUOUPUQVPVKVNDLJKZCIVPWEDCVPDAC
+        RDACVQRGABVMRFALRAURUSUTVASVBAVHVCTVNVJWECVNELDJELUJVEULUMVDVFVG $.
+    $}
+
+    un0mulcl.3 $e |- ( ( ph /\ ( M e. S /\ N e. S ) ) -> ( M x. N ) e. S ) $.
+    $( If ` S ` is closed under multiplication, then so is ` S u. { 0 } ` .
+       (Contributed by Mario Carneiro, 17-Jul-2014.) $)
+    un0mulcl $p |- ( ( ph /\ ( M e. T /\ N e. T ) ) -> ( M x. N ) e. T ) $=
+      ( wcel cmul co cc0 wo wa eleq2i elun bitri sseqtr4i cc sselda csn wi expr
+      cun ssun1 sseldi mul02d wss ssun2 c0ex mpbir syl6eqel elsni oveq1d eleq1d
+      snss syl5ibrcom impancom jaodan sylan2b 0cnd snssd syl5eqss mul01d oveq2d
+      unssd jaod syl5bi impr ) ADCIZECIZDEJKZCIZVKEBIZELUAZIZMZAVJNZVMVKEBVOUDZ
+      IVQCVSEGOEBVOPQVRVNVMVPVJADBIZDVOIZMZVNVMUBZVJDVSIWBCVSDGODBVOPQAVTWCWAAV
+      TVNVMAVTVNNNBCVLBVSCBVOUEGRHUFUCAVNWAVMAVNNZVMWALEJKZCIWDWELCWDEABSEFTUGL
+      CIVOCUHVOVSCVOBUIGRLCUJUPUKZULWAVLWECWADLEJDLUMUNUOUQURUSUTVRVMVPDLJKZCIV
+      RWGLCVRDACSDACVSSGABVOSFALSAVAVBVFVCTVDWFULVPVLWGCVPELDJELUMVEUOUQVGVHVI
+      $.
+  $}
+
+  $( Closure of addition of nonnegative integers.  (Contributed by Raph Levien,
+     10-Dec-2002.)  (Proof shortened by Mario Carneiro, 17-Jul-2014.) $)
+  nn0addcl $p |- ( ( M e. NN0 /\ N e. NN0 ) -> ( M + N ) e. NN0 ) $=
+    ( cn cc wss cn0 wcel wa caddc co nnsscn df-n0 nnaddcl adantl un0addcl mpan
+    id ) CDEZAFGBFGHABIJZFGKRCFABRQLACGBCGHSCGRABMNOP $.
+
+  $( Closure of multiplication of nonnegative integers.  (Contributed by NM,
+     22-Jul-2004.)  (Proof shortened by Mario Carneiro, 17-Jul-2014.) $)
+  nn0mulcl $p |- ( ( M e. NN0 /\ N e. NN0 ) -> ( M x. N ) e. NN0 ) $=
+    ( cn cc wss cn0 wcel wa cmul co nnsscn df-n0 nnmulcl adantl un0mulcl mpan
+    id ) CDEZAFGBFGHABIJZFGKRCFABRQLACGBCGHSCGRABMNOP $.
+
+  ${
+    nn0addcl.1 $e |- M e. NN0 $.
+    nn0addcl.2 $e |- N e. NN0 $.
+    $( Closure of addition of nonnegative integers, inference form.
+       (Contributed by Raph Levien, 10-Dec-2002.) $)
+    nn0addcli $p |- ( M + N ) e. NN0 $=
+      ( cn0 wcel caddc co nn0addcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Closure of multiplication of nonnegative integers, inference form.
+       (Contributed by Raph Levien, 10-Dec-2002.) $)
+    nn0mulcli $p |- ( M x. N ) e. NN0 $=
+      ( cn0 wcel cmul co nn0mulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
+  $( A nonnegative integer plus 1 is a positive integer.  (Contributed by Raph
+     Levien, 30-Jun-2006.)  (Revised by Mario Carneiro, 16-May-2014.) $)
+  nn0p1nn $p |- ( N e. NN0 -> ( N + 1 ) e. NN ) $=
+    ( cn0 wcel c1 cn caddc co 1nn nn0nnaddcl mpan2 ) ABCDECADFGECHADIJ $.
+
+  $( Second Peano postulate for nonnegative integers.  (Contributed by NM,
+     9-May-2004.) $)
+  peano2nn0 $p |- ( N e. NN0 -> ( N + 1 ) e. NN0 ) $=
+    ( cn0 wcel c1 caddc co 1nn0 nn0addcl mpan2 ) ABCDBCADEFBCGADHI $.
+
+  $( A positive integer minus 1 is a nonnegative integer.  (Contributed by
+     Jason Orendorff, 24-Jan-2007.)  (Revised by Mario Carneiro,
+     16-May-2014.) $)
+  nnm1nn0 $p |- ( N e. NN -> ( N - 1 ) e. NN0 ) $=
+    ( cn wcel c1 cmin co cc0 wceq wo cn0 nn1m1nn oveq1 syl6eq orim1i syl orcomd
+    1m1e0 elnn0 sylibr ) ABCZADEFZBCZUAGHZIUAJCTUCUBTADHZUBIUCUBIAKUDUCUBUDUADD
+    EFGADDELQMNOPUARS $.
+
+  $( The nonnegative integer property expressed in terms of positive integers.
+     (Contributed by NM, 10-May-2004.)  (Proof shortened by Mario Carneiro,
+     16-May-2014.) $)
+  elnn0nn $p |- ( N e. NN0 <-> ( N e. CC /\ ( N + 1 ) e. NN ) ) $=
+    ( cn0 wcel cc c1 caddc co cn nn0cn nn0p1nn jca cmin wceq simpl ax-1cn pncan
+    wa sylancl nnm1nn0 adantl eqeltrrd impbii ) ABCZADCZAEFGZHCZQZUCUDUFAIAJKUG
+    UEELGZABUGUDEDCUHAMUDUFNOAEPRUFUHBCUDUESTUAUB $.
+
+  $( The positive integer property expressed in terms of nonnegative integers.
+     (Contributed by NM, 10-May-2004.) $)
+  elnnnn0 $p |- ( N e. NN <-> ( N e. CC /\ ( N - 1 ) e. NN0 ) ) $=
+    ( cn wcel cc c1 cmin co cn0 nncn caddc wa npcan1 eleq1d peano2cnm biantrurd
+    bitr3d elnn0nn syl6bbr biadan2 ) ABCZADCZAEFGZHCZAIUATUBDCZUBEJGZBCZKZUCUAU
+    FTUGUAUEABALMUAUDUFANOPUBQRS $.
+
+  $( The positive integer property expressed in terms of nonnegative integers.
+     (Contributed by NM, 1-Sep-2005.) $)
+  elnnnn0b $p |- ( N e. NN <-> ( N e. NN0 /\ 0 < N ) ) $=
+    ( cn wcel cn0 cc0 clt wbr wa nnnn0 nngt0 jca wceq wo elnn0 ax-1 breq2 ltnri
+    wi 0re pm2.21i syl6bi jaoi sylbi imp impbii ) ABCZADCZEAFGZHUFUGUHAIAJKUGUH
+    UFUGUFAELZMUHUFRZANUFUJUIUFUHOUIUHEEFGZUFAEEFPUKUFESQTUAUBUCUDUE $.
+
+  $( The positive integer property expressed in terms of nonnegative integers.
+     (Contributed by NM, 10-Jan-2006.) $)
+  elnnnn0c $p |- ( N e. NN <-> ( N e. NN0 /\ 1 <_ N ) ) $=
+    ( cn wcel cn0 c1 cle wbr wa nnnn0 nnge1 jca cc0 clt 0lt1 cr wi nn0re ltletr
+    0re 1re mp3an12 syl mpani imdistani elnnnn0b sylibr impbii ) ABCZADCZEAFGZH
+    ZUHUIUJAIAJKUKUILAMGZHUHUIUJULUILEMGZUJULNUIAOCZUMUJHULPZAQLOCEOCUNUOSTLEAR
+    UAUBUCUDAUEUFUG $.
+
+  $( A number is less than or equal to itself plus a nonnegative integer.
+     (Contributed by NM, 10-Mar-2005.) $)
+  nn0addge1 $p |- ( ( A e. RR /\ N e. NN0 ) -> A <_ ( A + N ) ) $=
+    ( cn0 wcel cr cc0 cle wbr wa caddc co nn0re nn0ge0 jca addge01 3expb sylan2
+    biimp3a ) BCDZAEDZBEDZFBGHZIAABJKGHZSUAUBBLBMNTUAUBUCTUAUBUCABORPQ $.
+
+  $( A number is less than or equal to itself plus a nonnegative integer.
+     (Contributed by NM, 10-Mar-2005.) $)
+  nn0addge2 $p |- ( ( A e. RR /\ N e. NN0 ) -> A <_ ( N + A ) ) $=
+    ( cn0 wcel cr cc0 cle wbr wa caddc co nn0re nn0ge0 jca addge02 3expb sylan2
+    biimp3a ) BCDZAEDZBEDZFBGHZIABAJKGHZSUAUBBLBMNTUAUBUCTUAUBUCABORPQ $.
+
+  ${
+    nn0addge1.1 $e |- A e. RR $.
+    nn0addge1.2 $e |- N e. NN0 $.
+    $( A number is less than or equal to itself plus a nonnegative integer.
+       (Contributed by NM, 10-Mar-2005.) $)
+    nn0addge1i $p |- A <_ ( A + N ) $=
+      ( cr wcel cn0 caddc co cle wbr nn0addge1 mp2an ) AEFBGFAABHIJKCDABLM $.
+
+    $( A number is less than or equal to itself plus a nonnegative integer.
+       (Contributed by NM, 10-Mar-2005.) $)
+    nn0addge2i $p |- A <_ ( N + A ) $=
+      ( cr wcel cn0 caddc co cle wbr nn0addge2 mp2an ) AEFBGFABAHIJKCDABLM $.
+  $}
+
+  ${
+    nn0le2x.1 $e |- N e. NN0 $.
+    $( A nonnegative integer is less than or equal to twice itself.
+       (Contributed by Raph Levien, 10-Dec-2002.) $)
+    nn0le2xi $p |- N <_ ( 2 x. N ) $=
+      ( caddc co c2 cmul cle nn0rei nn0addge1i nn0cni 2timesi breqtrri ) AAACDE
+      AFDGAAABHBIAABJKL $.
+  $}
+
+  ${
+    nn0lele2x.1 $e |- M e. NN0 $.
+    nn0lele2x.2 $e |- N e. NN0 $.
+    $( 'Less than or equal to' implies 'less than or equal to twice' for
+       nonnegative integers.  (Contributed by Raph Levien, 10-Dec-2002.) $)
+    nn0lele2xi $p |- ( N <_ M -> N <_ ( 2 x. M ) ) $=
+      ( cle wbr c2 cmul co nn0le2xi nn0rei 2re remulcli letri mpan2 ) BAEFAGAHI
+      ZEFBPEFACJBAPBDKACKZGALQMNO $.
+  $}
+
+  $( Two ways to write the support of a function on ` NN0 ` .  (Contributed by
+     Mario Carneiro, 29-Dec-2014.) $)
+  nn0supp $p |- ( F : I --> NN0 ->
+    ( `' F " ( _V \ { 0 } ) ) = ( `' F " NN ) ) $=
+    ( cn0 wf ccnv cn cima cvv cc0 csn cdif dfn2 invdif eqtr4i imaeq2i wfun wceq
+    cin ffun inpreima syl wss cdm cnvimass fimacnv syl5sseq sseqin2 sylib eqtrd
+    fdm eqtr4d syl5req ) BCADZAEZFGUNCHIJZKZRZGZUNUPGZFUQUNFCUOKUQLCUOMNOUMURUN
+    CGZUSRZUSUMAPURVAQBCASCUPATUAUMUSUTUBVAUSQUMAUCZUSUTAUPUDUMVBBUTBCAUJBCAUEU
+    KUFUSUTUGUHUIUL $.
+
+  ${
+    nnnn0d.1 $e |- ( ph -> A e. NN ) $.
+    $( A positive integer is a nonnegative integer.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    nnnn0d $p |- ( ph -> A e. NN0 ) $=
+      ( cn cn0 nnssnn0 sseldi ) ADEBFCG $.
+  $}
+
+  ${
+    nn0red.1 $e |- ( ph -> A e. NN0 ) $.
+    $( A nonnegative integer is a real number.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nn0red $p |- ( ph -> A e. RR ) $=
+      ( cn0 cr nn0ssre sseldi ) ADEBFCG $.
+
+    $( A nonnegative integer is a complex number.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    nn0cnd $p |- ( ph -> A e. CC ) $=
+      ( nn0red recnd ) ABABCDE $.
+
+    $( A nonnegative integer is greater than or equal to zero.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    nn0ge0d $p |- ( ph -> 0 <_ A ) $=
+      ( cn0 wcel cc0 cle wbr nn0ge0 syl ) ABDEFBGHCBIJ $.
+
+    nn0addcld.2 $e |- ( ph -> B e. NN0 ) $.
+    $( Closure of addition of nonnegative integers, inference form.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    nn0addcld $p |- ( ph -> ( A + B ) e. NN0 ) $=
+      ( cn0 wcel caddc co nn0addcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure of multiplication of nonnegative integers, inference form.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    nn0mulcld $p |- ( ph -> ( A x. B ) e. NN0 ) $=
+      ( cn0 wcel cmul co nn0mulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
+  $( Closure law for addition of reals, restricted to nonnegative integers.
+     (Contributed by Alexander van der Vekens, 6-Apr-2018.) $)
+  nn0readdcl $p |- ( ( A e. NN0 /\ B e. NN0 ) -> ( A + B ) e. RR ) $=
+    ( cn0 wcel wa caddc co nn0addcl nn0red ) ACDBCDEABFGABHI $.
+
+  $( If a nonnegative integer is greater than or equal to two, the integer
+     decreased by 1 is a positive integer.  (Contributed by Alexander van der
+     Vekens, 1-Aug-2018.)  (Revised by AV, 4-Jan-2020.) $)
+  nn0ge2m1nn $p |- ( ( N e. NN0 /\ 2 <_ N ) -> ( N - 1 ) e. NN ) $=
+    ( cn0 wcel c2 cle wbr wa c1 cmin co cn wo wceq simpl w3a clt 1red 2re 1lt2
+    cr a1i nn0re 3jca adantr simpr jctil ltleletr elnnnn0c sylanbrc nn1m1nn syl
+    sylc wi wn 1re lenlti biimpi breq2 mtbiri pm2.21d com12 adantl orim1d oridm
+    mt2 mpd sylib ) ABCZDAEFZGZAHIJKCZVKLZVKVJAHMZVKLZVLVJAKCZVNVJVHHAEFZVOVHVI
+    NVJHTCZDTCZATCZOZHDPFZVIGVPVHVTVIVHVQVRVSVHQVRVHRUAAUBUCUDVJVIWAVHVIUESUFHD
+    AUGULAUHUIAUJUKVJVMVKVKVIVMVKUMVHVMVIVKVMVIVKVMVIDHEFZWBWASWBWAUNDHRUOUPUQV
+    EAHDEURUSUTVAVBVCVFVKVDVG $.
+
+  $( If a nonnegative integer is greater than or equal to two, the integer
+     decreased by 1 is also a nonnegative integer.  (Contributed by Alexander
+     van der Vekens, 1-Aug-2018.) $)
+  nn0ge2m1nn0 $p |- ( ( N e. NN0 /\ 2 <_ N ) -> ( N - 1 ) e. NN0 ) $=
+    ( cn0 wcel c2 cle wbr wa c1 cmin co nn0ge2m1nn nnnn0d ) ABCDAEFGAHIJAKL $.
+
+  $( Closure law for dividing of a nonnegative integer by a positive integer.
+     (Contributed by Alexander van der Vekens, 14-Apr-2018.) $)
+  nn0nndivcl $p |- ( ( K e. NN0 /\ L e. NN ) -> ( K / L ) e. RR ) $=
+    ( cn0 wcel cn wa cr nn0re adantr ax-ia2 nndivred ) ACDZBEDZFABLAGDMAHILMJK
+    $.
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
@@ -75013,6 +75664,11 @@ htmldef "NN" as "<IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT=' NN' TITLE='NN'>";
   althtmldef "NN" as '&#8469;'; /* &Nopf; */
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "NN" as "\mathbb{N}";
+htmldef "NN0" as
+    "<IMG SRC='_bbn0.gif' WIDTH=19 HEIGHT=19 ALT=' NN0' TITLE='NN0'>";
+  althtmldef "NN0" as '&#8469;<SUB>0</SUB>';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "NN0" as "\mathbb{N}_0";
 htmldef "2" as "<IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT=' 2' TITLE='2'>";
   althtmldef "2" as '2';
   latexdef "2" as "2";
