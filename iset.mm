@@ -74464,6 +74464,577 @@ $)
     $.
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Integers (as a subset of complex numbers)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c ZZ $. $( The set of integers (blackboard bold Z). $)
+
+  $( Extend class notation to include the class of integers. $)
+  cz $a class ZZ $.
+
+  $( Define the set of integers, which are the positive and negative integers
+     together with zero.  Definition of integers in [Apostol] p. 22.  The
+     letter Z abbreviates the German word Zahlen meaning "numbers."
+     (Contributed by NM, 8-Jan-2002.) $)
+  df-z $a |- ZZ = { n e. RR | ( n = 0 \/ n e. NN \/ -u n e. NN ) } $.
+
+  ${
+    $d x N $.
+    $( Membership in the set of integers.  (Contributed by NM, 8-Jan-2002.) $)
+    elz $p |- ( N e. ZZ <->
+              ( N e. RR /\ ( N = 0 \/ N e. NN \/ -u N e. NN ) ) ) $=
+      ( vx cv cc0 wceq cn wcel cneg w3o cr cz eqeq1 eleq1 eleq1d 3orbi123d df-z
+      negeq elrab2 ) BCZDEZSFGZSHZFGZIADEZAFGZAHZFGZIBAJKSAEZTUDUAUEUCUGSADLSAF
+      MUHUBUFFSAQNOBPR $.
+  $}
+
+  $( The negative of a positive integer is an integer.  (Contributed by NM,
+     12-Jan-2002.) $)
+  nnnegz $p |- ( N e. NN -> -u N e. ZZ ) $=
+    ( cn wcel cneg cr cc0 wceq w3o cz nnre renegcld cc nncn negneg eleq1d mpcom
+    biimprd 3mix3d elz sylanbrc ) ABCZADZECUBFGZUBBCZUBDZBCZHUBICUAAAJKUAUFUCUD
+    ALCZUAUFAMUGUFUAUGUEABANOQPRUBST $.
+
+  $( An integer is a real.  (Contributed by NM, 8-Jan-2002.) $)
+  zre $p |- ( N e. ZZ -> N e. RR ) $=
+    ( cz wcel cr cc0 wceq cn cneg w3o elz simplbi ) ABCADCAEFAGCAHGCIAJK $.
+
+  $( An integer is a complex number.  (Contributed by NM, 9-May-2004.) $)
+  zcn $p |- ( N e. ZZ -> N e. CC ) $=
+    ( cz wcel zre recnd ) ABCAADE $.
+
+  ${
+    zre.1 $e |- A e. ZZ $.
+    $( An integer is a real number.  (Contributed by NM, 14-Jul-2005.) $)
+    zrei $p |- A e. RR $=
+      ( cz wcel cr zre ax-mp ) ACDAEDBAFG $.
+  $}
+
+  $( The integers are a subset of the reals.  (Contributed by NM,
+     2-Aug-2004.) $)
+  zssre $p |- ZZ C_ RR $=
+    ( vx cz cr cv zre ssriv ) ABCADEF $.
+
+  $( The integers are a subset of the complex numbers.  (Contributed by NM,
+     2-Aug-2004.) $)
+  zsscn $p |- ZZ C_ CC $=
+    ( vx cz cc cv zcn ssriv ) ABCADEF $.
+
+  $( The set of integers exists.  See also ~ zexALT .  (Contributed by NM,
+     30-Jul-2004.)  (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  zex $p |- ZZ e. _V $=
+    ( cz cc cnex zsscn ssexi ) ABCDE $.
+
+  $( Positive integer property expressed in terms of integers.  (Contributed by
+     NM, 8-Jan-2002.) $)
+  elnnz $p |- ( N e. NN <-> ( N e. ZZ /\ 0 < N ) ) $=
+    ( cn wcel cr cneg cc0 wceq wo wa clt wbr cz orc nngt0 jca31 wi wn w3o bitri
+    nnre idd lt0neg2 renegcl 0re ltnsym sylancl sylbid nsyl gt0ne0 neneqd ioran
+    imp sylanbrc pm2.21d jaod ex com23 imp31 impbii 3orrot 3orass anbi2i anbi1i
+    elz bitr4i ) ABCZADCZVFAEZBCZAFGZHZHZIZFAJKZIZALCZVNIVFVOVFVGVLVNATVFVKMANO
+    VGVLVNVFVGVNVLVFVGVNVLVFPVGVNIZVFVFVKVQVFUAVQVKVFVQVIQVJQVKQVQFVHJKZVIVGVNV
+    RQZVGVNVHFJKZVSAUBVGVHDCFDCVTVSPAUCUDVHFUEUFUGULVHNUHVQAFAUIUJVIVJUKUMUNUOU
+    PUQURUSVPVMVNVPVGVJVFVIRZIVMAVDWAVLVGWAVFVIVJRVLVJVFVIUTVFVIVJVASVBSVCVE $.
+
+  $( Zero is an integer.  (Contributed by NM, 12-Jan-2002.) $)
+  0z $p |- 0 e. ZZ $=
+    ( cc0 cz wcel cr wceq cn cneg w3o 0re eqid 3mix1i elz mpbir2an ) ABCADCAAEZ
+    AFCZAGFCZHINOPAJKALM $.
+
+  $( Zero is an integer, deductive form (common case).  (Contributed by David
+     A. Wheeler, 8-Dec-2018.) $)
+  0zd $p |- ( ph -> 0 e. ZZ ) $=
+    ( cc0 cz wcel 0z a1i ) BCDAEF $.
+
+  $( Nonnegative integer property expressed in terms of integers.  (Contributed
+     by NM, 9-May-2004.) $)
+  elnn0z $p |- ( N e. NN0 <-> ( N e. ZZ /\ 0 <_ N ) ) $=
+    ( cn0 wcel cn cc0 wceq wo cz clt wbr wa cle elnn0 elnnz eqcom orbi12i id 0z
+    eleq1 cr mpbii jaoi orc impbii anbi1i ordir 0re zre sylancr pm5.32i 3bitr4i
+    wb leloe 3bitri ) ABCADCZAEFZGAHCZEAIJZKZEAFZGZUQEALJZKZAMUOUSUPUTANAEOPUQU
+    TGZURUTGZKUQVEKVAVCVDUQVEVDUQUQUQUTUQQUTEHCUQREAHSUAUBUQUTUCUDUEUQURUTUFUQV
+    BVEUQETCATCVBVEULUGAUHEAUMUIUJUKUN $.
+
+  $( Integer property expressed in terms nonnegative integers and positive
+     integers.  (Contributed by NM, 10-May-2004.) $)
+  elznn0nn $p |- ( N e. ZZ <-> ( N e. NN0 \/ ( N e. RR /\ -u N e. NN ) ) ) $=
+    ( cz wcel cr cc0 wceq cn cneg w3o wa cn0 wo elz andi df-3or anbi2i pm4.71ri
+    nn0re elnn0 bitri orcom orbi1i 3bitr4i ) ABCADCZAEFZAGCZAHGCZIZJZAKCZUDUGJZ
+    LZAMUDUEUFLZUGLZJUDUMJZUKLUIULUDUMUGNUHUNUDUEUFUGOPUJUOUKUJUDUJJUOUJUDARQUJ
+    UMUDUJUFUELUMASUFUEUATPTUBUCT $.
+
+  $( Integer property expressed in terms of nonnegative integers.  (Contributed
+     by NM, 9-May-2004.) $)
+  elznn0 $p |- ( N e. ZZ <-> ( N e. RR /\ ( N e. NN0 \/ -u N e. NN0 ) ) ) $=
+    ( cz wcel cr cc0 wceq cn cneg w3o wa cn0 wo elz wb elnn0 a1i recn 0cn bitri
+    cc negcon1 sylancl eqeq1i eqcom syl6bb orbi2d syl5bb orbi12d 3orass orordir
+    neg0 orcom 3bitrri syl6rbb pm5.32i ) ABCADCZAEFZAGCZAHZGCZIZJUPAKCZUSKCZLZJ
+    AMUPVAVDUPVDURUQLZUTUQLZLZVAUPVBVEVCVFVBVENUPAOPVCUTUSEFZLUPVFUSOUPVHUQUTUP
+    VHEHZAFZUQUPATCETCVHVJNAQRAEUAUBVJEAFUQVIEAUKUCEAUDSUEUFUGUHVAUQURUTLZLVKUQ
+    LVGUQURUTUIUQVKULURUTUQUJUMUNUOS $.
+
+  $( Integer property expressed in terms of positive integers and nonnegative
+     integers.  (Contributed by NM, 12-Jul-2005.) $)
+  elznn $p |- ( N e. ZZ <-> ( N e. RR /\ ( N e. NN \/ -u N e. NN0 ) ) ) $=
+    ( cz wcel cr cc0 wceq cn cneg w3o wa cn0 wo elz recn negeq0d elnn0 syl6rbbr
+    orbi2d 3orrot bitri 3orass pm5.32i ) ABCADCZAEFZAGCZAHZGCZIZJUCUEUFKCZLZJAM
+    UCUHUJUCUJUEUGUDLZLZUHUCUIUKUEUCUKUGUFEFZLUIUCUDUMUGUCAANORUFPQRUHUEUGUDIUL
+    UDUEUGSUEUGUDUATQUBT $.
+
+  ${
+    $d x y z N $.
+    $( Membership in the set of integers.  Commonly used in constructions of
+       the integers as equivalence classes under subtraction of the positive
+       integers.  (Contributed by Mario Carneiro, 16-May-2014.) $)
+    elz2 $p |- ( N e. ZZ <-> E. x e. NN E. y e. NN N = ( x - y ) ) $=
+      ( wcel cr cn0 cneg wo wa cv cmin co wceq cn c1 1nn ax-1cn sylancr syl2an
+      cc wrex elznn0 caddc nn0p1nn adantl a1i recn adantr pncan sylancl rspceov
+      eqcomd syl3anc negsub simpr nnnn0addcl eqeltrrd nncan jaodan nnre resubcl
+      cz cle wbr letric syl2anr wb nnnn0 nn0sub negsubdi2 eleq1d bitr4d orbi12d
+      nncn mpbid jca eleq1 negeq anbi12d syl5ibrcom rexlimivv impbii bitri ) CV
+      BDCEDZCFDZCGZFDZHZIZCAJZBJZKLZMZBNUAANUAZCUBWIWNWDWEWNWGWDWEIZCOUCLZNDZON
+      DZCWPOKLZMWNWEWQWDCUDUEWRWOPUFWOWSCWOCTDZOTDZWSCMWDWTWECUGZUHQCOUIUJULABN
+      NWPOCKUKUMWDWGIZWROCKLZNDCOXDKLZMWNWRXCPUFXCOWFUCLZXDNXCXAWTXFXDMQWDWTWGX
+      BUHZOCUNRXCWRWGXFNDPWDWGUOOWFUPRUQXCXECXCXAWTXECMQXGOCURRULABNNOXDCKUKUMU
+      SWMWIABNNWJNDZWKNDZIZWIWMWLEDZWLFDZWLGZFDZHZIXJXKXOXHWJEDZWKEDZXKXIWJUTZW
+      KUTZWJWKVASXJWKWJVCVDZWJWKVCVDZHZXOXIXQXPYBXHXSXRWKWJVEVFXJXTXLYAXNXIWKFD
+      ZWJFDZXTXLVGXHWKVHZWJVHZWKWJVIVFXJYAWKWJKLZFDZXNXHYDYCYAYHVGXIYFYEWJWKVIS
+      XJXMYGFXHWJTDWKTDXMYGMXIWJVNWKVNWJWKVJSVKVLVMVOVPWMWDXKWHXOCWLEVQWMWEXLWG
+      XNCWLFVQWMWFXMFCWLVRVKVMVSVTWAWBWC $.
+
+    $( Alternative definition of the integers, based on ~ elz2 .  (Contributed
+       by Mario Carneiro, 16-May-2014.) $)
+    dfz2 $p |- ZZ = ( - " ( NN X. NN ) ) $=
+      ( vx vy vz cz cmin cn cxp cima cv wcel co wceq wrex elz2 cc wfn wb nnsscn
+      wss mp2an wf subf ffn ax-mp xpss12 ovelimab bitr4i eqriv ) ADEFFGZHZAIZDJ
+      UKBICIEKLCFMBFMZUKUJJZBCUKNEOOGZPZUIUNSZUMULQUNOEUAUOUBUNOEUCUDFOSZUQUPRR
+      FOFOUETBCUNFFUKEUFTUGUH $.
+  $}
+
+  $( Alternate proof of ~ zex .  (Contributed by NM, 30-Jul-2004.)  (Revised by
+     Mario Carneiro, 16-May-2014.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  zexALT $p |- ZZ e. _V $=
+    ( cz cmin cn cxp cima cvv dfz2 cc wfun wcel subf ffun nnexALT xpex funimaex
+    wf mp2b eqeltri ) ABCCDZEZFGHHDZHBPBITFJKUAHBLBSCCMMNOQR $.
+
+  $( Positive integers are a subset of integers.  (Contributed by NM,
+     9-Jan-2002.) $)
+  nnssz $p |- NN C_ ZZ $=
+    ( vx cn cz cv wcel cc0 clt wbr elnnz simplbi ssriv ) ABCADZBELCEFLGHLIJK $.
+
+  $( Nonnegative integers are a subset of the integers.  (Contributed by NM,
+     9-May-2004.) $)
+  nn0ssz $p |- NN0 C_ ZZ $=
+    ( cn0 cn cc0 csn cun cz df-n0 nnssz wcel wss c0ex snss mpbi unssi eqsstri
+    0z ) ABCDZEFGBQFHCFIQFJPCFKLMNO $.
+
+  $( A positive integer is an integer.  (Contributed by NM, 9-May-2004.) $)
+  nnz $p |- ( N e. NN -> N e. ZZ ) $=
+    ( cn cz nnssz sseli ) BCADE $.
+
+  $( A nonnegative integer is an integer.  (Contributed by NM, 9-May-2004.) $)
+  nn0z $p |- ( N e. NN0 -> N e. ZZ ) $=
+    ( cn0 cz nn0ssz sseli ) BCADE $.
+
+  ${
+    nnzi.1 $e |- N e. NN $.
+    $( A positive integer is an integer.  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    nnzi $p |- N e. ZZ $=
+      ( cn cz nnssz sselii ) CDAEBF $.
+  $}
+
+  ${
+    nn0zi.1 $e |- N e. NN0 $.
+    $( A nonnegative integer is an integer.  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    nn0zi $p |- N e. ZZ $=
+      ( cn0 cz nn0ssz sselii ) CDAEBF $.
+  $}
+
+  $( Positive integer property expressed in terms of integers.  (Contributed by
+     NM, 10-May-2004.)  (Proof shortened by Mario Carneiro, 16-May-2014.) $)
+  elnnz1 $p |- ( N e. NN <-> ( N e. ZZ /\ 1 <_ N ) ) $=
+    ( cn wcel cz c1 cle wbr wa nnz nnge1 jca cc0 clt 0lt1 cr zre 0re 1re ltletr
+    wi mp3an12 syl mpani imdistani elnnz sylibr impbii ) ABCZADCZEAFGZHZUHUIUJA
+    IAJKUKUILAMGZHUHUIUJULUILEMGZUJULNUIAOCZUMUJHULTZAPLOCEOCUNUOQRLEASUAUBUCUD
+    AUEUFUG $.
+
+  $( An integer is not a positive integer iff it is less than one.
+     (Contributed by NM, 13-Jul-2005.) $)
+  znnnlt1 $p |- ( N e. ZZ -> ( -. N e. NN <-> N < 1 ) ) $=
+    ( cz wcel cn wn c1 cle wbr clt elnnz1 baib notbid cr zre 1re sylancl bitr4d
+    wb ltnle ) ABCZADCZEFAGHZEZAFIHZTUAUBUATUBAJKLTAMCFMCUDUCRANOAFSPQ $.
+
+  $( Positive integers expressed as a subset of integers.  (Contributed by NM,
+     3-Oct-2004.) $)
+  nnzrab $p |- NN = { x e. ZZ | 1 <_ x } $=
+    ( cn cv cz wcel c1 cle wbr wa cab crab elnnz1 abbi2i df-rab eqtr4i ) BACZDE
+    FPGHZIZAJQADKRABPLMQADNO $.
+
+  $( Nonnegative integers expressed as a subset of integers.  (Contributed by
+     NM, 3-Oct-2004.) $)
+  nn0zrab $p |- NN0 = { x e. ZZ | 0 <_ x } $=
+    ( cn0 cv cz wcel cc0 cle wbr wa cab crab elnn0z abbi2i df-rab eqtr4i ) BACZ
+    DEFPGHZIZAJQADKRABPLMQADNO $.
+
+  $( One is an integer.  (Contributed by NM, 10-May-2004.) $)
+  1z $p |- 1 e. ZZ $=
+    ( c1 1nn nnzi ) ABC $.
+
+  $( 1 is an integer, deductive form (common case).  (Contributed by David A.
+     Wheeler, 6-Dec-2018.) $)
+  1zzd $p |- ( ph -> 1 e. ZZ ) $=
+    ( c1 cz wcel 1z a1i ) BCDAEF $.
+
+  $( Two is an integer.  (Contributed by NM, 10-May-2004.) $)
+  2z $p |- 2 e. ZZ $=
+    ( c2 2nn nnzi ) ABC $.
+
+  $( 3 is an integer.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  3z $p |- 3 e. ZZ $=
+    ( c3 3nn nnzi ) ABC $.
+
+  $( Closure law for negative integers.  (Contributed by NM, 9-May-2004.) $)
+  znegcl $p |- ( N e. ZZ -> -u N e. ZZ ) $=
+    ( cz wcel cr cc0 wceq cn cneg w3o elz negeq neg0 syl6eq syl6eqel nnnegz nnz
+    wa 0z 3jaoi adantl sylbi ) ABCADCZAEFZAGCZAHZGCZIZQUEBCZAJUGUHUBUCUHUDUFUCU
+    EEBUCUEEHEAEKLMRNAOUEPSTUA $.
+
+  $( -1 is an integer (common case).  (Contributed by David A. Wheeler,
+     5-Dec-2018.) $)
+  neg1z $p |- -u 1 e. ZZ $=
+    ( c1 cn wcel cneg cz 1nn nnnegz ax-mp ) ABCADECFAGH $.
+
+  $( A number is an integer iff its negative is.  (Contributed by Stefan
+     O'Rear, 13-Sep-2014.) $)
+  znegclb $p |- ( A e. CC -> ( A e. ZZ <-> -u A e. ZZ ) ) $=
+    ( cc wcel cz cneg znegcl negneg eleq1d syl5ib impbid2 ) ABCZADCZAEZDCZAFNME
+    ZDCKLMFKOADAGHIJ $.
+
+  $( The negative of a nonnegative integer is an integer.  (Contributed by NM,
+     9-May-2004.) $)
+  nn0negz $p |- ( N e. NN0 -> -u N e. ZZ ) $=
+    ( cn0 wcel cz cneg nn0z znegcl syl ) ABCADCAEDCAFAGH $.
+
+  ${
+    nn0negzi.1 $e |- N e. NN0 $.
+    $( The negative of a nonnegative integer is an integer.  (Contributed by
+       Mario Carneiro, 18-Feb-2014.) $)
+    nn0negzi $p |- -u N e. ZZ $=
+      ( cn0 wcel cneg cz nn0negz ax-mp ) ACDAEFDBAGH $.
+  $}
+
+  ${
+    $d u v w x y z M $.  $d w x y z N $.
+    $( Closure of addition of integers.  (Contributed by NM, 9-May-2004.)
+       (Proof shortened by Mario Carneiro, 16-May-2014.) $)
+    zaddcl $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M + N ) e. ZZ ) $=
+      ( vx vy vz vw vu vv cz wcel cv cmin co wceq cn wrex caddc wa cc nncn elz2
+      reeanv nnaddcl adantr adantl anim12i addsub4 syl2an eqcomd rspceov sylibr
+      syl3anc oveq12 eleq1d syl5ibrcom rexlimdvva syl5bir rexlimivv syl2anb
+      sylbir ) AIJACKZDKZLMZNZDOPZCOPZBEKZFKZLMZNZFOPZEOPZABQMZIJZBIJCDAUAEFBUA
+      VFVLRVEVKRZEOPCOPVNVEVKCEOOUBVOVNCEOOVOVDVJRZFOPDOPVAOJZVGOJZRZVNVDVJDFOO
+      UBVSVPVNDFOOVSVBOJZVHOJZRZRZVNVPVCVIQMZIJZWCWDGKHKLMNHOPGOPZWEWCVAVGQMZOJ
+      ZVBVHQMZOJZWDWGWILMZNWFVSWHWBVAVGUCUDWBWJVSVBVHUCUEWCWKWDVSVASJZVGSJZRVBS
+      JZVHSJZRWKWDNWBVQWLVRWMVATVGTUFVTWNWAWOVBTVHTUFVAVGVBVHUGUHUIGHOOWGWIWDLU
+      JULGHWDUAUKVPVMWDIAVCBVIQUMUNUOUPUQURUTUS $.
+  $}
+
+  $( Second Peano postulate generalized to integers.  (Contributed by NM,
+     13-Feb-2005.) $)
+  peano2z $p |- ( N e. ZZ -> ( N + 1 ) e. ZZ ) $=
+    ( cz wcel c1 caddc co 1z zaddcl mpan2 ) ABCDBCADEFBCGADHI $.
+
+  $( Closure of subtraction of integers.  (Contributed by NM, 11-May-2004.) $)
+  zsubcl $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M - N ) e. ZZ ) $=
+    ( cz wcel wa cneg caddc co cmin wceq zcn negsub syl2an znegcl zaddcl sylan2
+    cc eqeltrrd ) ACDZBCDZEABFZGHZABIHZCSAQDBQDUBUCJTAKBKABLMTSUACDUBCDBNAUAOPR
+    $.
+
+  $( "Reverse" second Peano postulate for integers.  (Contributed by NM,
+     12-Sep-2005.) $)
+  peano2zm $p |- ( N e. ZZ -> ( N - 1 ) e. ZZ ) $=
+    ( cz wcel c1 cmin co 1z zsubcl mpan2 ) ABCDBCADEFBCGADHI $.
+
+  $( Transitive law of ordering for integers.  (Contributed by Alexander van
+     der Vekens, 3-Apr-2018.) $)
+  zletr $p |- ( ( J e. ZZ /\ K e. ZZ /\ L e. ZZ )
+                -> ( ( J <_ K /\ K <_ L ) -> J <_ L ) ) $=
+    ( cz wcel cr cle wbr wa wi zre letr syl3an ) ADEAFEBDEBFECDECFEABGHBCGHIACG
+    HJAKBKCKABCLM $.
+
+  $( Reverse closure law for addition of integers.  (Contributed by NM,
+     11-May-2004.) $)
+  zrevaddcl $p |- ( N e. ZZ ->
+                   ( ( M e. CC /\ ( M + N ) e. ZZ ) <-> M e. ZZ ) ) $=
+    ( cz wcel cc caddc co wa cmin zcn pncan sylan2 ancoms adantr zsubcl adantlr
+    wceq eqeltrrd ex wi zaddcl expcom impbid pm5.32da pm4.71ri syl6bbr ) BCDZAE
+    DZABFGZCDZHUHACDZHUKUGUHUJUKUGUHHZUJUKULUJUKULUJHUIBIGZACULUMAQZUJUHUGUNUGU
+    HBEDUNBJABKLMNUGUJUMCDZUHUJUGUOUIBOMPRSUGUKUJTUHUKUGUJABUAUBNUCUDUKUHAJUEUF
+    $.
+
+  $( The positive difference of unequal integers is a positive integer.
+     (Generalization of ~ nnsub .)  (Contributed by NM, 11-May-2004.) $)
+  znnsub $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M < N <-> ( N - M ) e. NN ) ) $=
+    ( cz wcel wa clt wbr cmin co cn cr wb posdif syl2an zsubcl ancoms biantrurd
+    cc0 zre bitrd elnnz syl6bbr ) ACDZBCDZEZABFGZBAHIZCDZRUGFGZEZUGJDUEUFUIUJUC
+    AKDBKDUFUILUDASBSABMNUEUHUIUDUCUHBAOPQTUGUAUB $.
+
+  $( The nonnegative difference of integers is a nonnegative integer.
+     (Generalization of ~ nn0sub .)  (Contributed by NM, 14-Jul-2005.) $)
+  znn0sub $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
+                ( M <_ N <-> ( N - M ) e. NN0 ) ) $=
+    ( cz wcel wa cle wbr co cc0 cn0 wb cr subge0 syl2an zsubcl biantrurd bitr3d
+    cmin zre ancoms elnn0z syl6bbr ) ACDZBCDZEABFGZBARHZCDZIUFFGZEZUFJDUDUCUEUI
+    KUDUCEZUHUEUIUDBLDALDUHUEKUCBSASBAMNUJUGUHBAOPQTUFUAUB $.
+
+  $( Closure of multiplication of integers.  (Contributed by NM,
+     30-Jul-2004.) $)
+  zmulcl $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M x. N ) e. ZZ ) $=
+    ( cz wcel cr cn0 cneg wo wa cmul co elznn0 nn0mulcl jctild cc syl2an eleq1d
+    wceq syl5ib syl6 wi orcd a1i remulcl mulneg1 olc mulneg2 mul2neg orc ccased
+    recn syl6ibr imp an4s syl2anb ) ACDAEDZAFDZAGZFDZHZIBEDZBFDZBGZFDZHZIABJKZC
+    DZBCDALBLUPVAUTVEVGUPVAIZUTVEIZVGVHVIVFEDZVFFDZVFGZFDZHZIZVGVHUQVBUSVDVOVHU
+    QVBIZVNVJVPVNUAVHVPVKVMABMUBUCABUDZNVHUSVBIZVNVJVHVRVMVNVRURBJKZFDVHVMURBMV
+    HVSVLFUPAODZBODZVSVLRVAAUKZBUKZABUEPQSVMVKUFZTVQNVHUQVDIZVNVJVHWEVMVNWEAVCJ
+    KZFDVHVMAVCMVHWFVLFUPVTWAWFVLRVAWBWCABUGPQSWDTVQNVHUSVDIZVNVJVHWGVKVNWGURVC
+    JKZFDVHVKURVCMVHWHVFFUPVTWAWHVFRVAWBWCABUHPQSVKVMUITVQNUJVFLULUMUNUO $.
+
+  $( Integer ordering relation.  (Contributed by NM, 10-May-2004.)  (Proof
+     shortened by Mario Carneiro, 16-May-2014.) $)
+  zltp1le $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M < N <-> ( M + 1 ) <_ N ) ) $=
+    ( cz wcel wa clt wbr c1 caddc co cle cmin cn wi nnge1 a1i znnsub cr wb zre
+    1re leaddsub2 mp3an2 syl2an 3imtr4d adantr ltp1d peano2re syl adantl ltletr
+    syl3anc mpand impbid ) ACDZBCDZEZABFGZAHIJZBKGZUQBALJZMDZHVAKGZURUTVBVCNUQV
+    AOPABQUOARDZBRDZUTVCSZUPATZBTZVDHRDVEVFUAAHBUBUCUDUEUQAUSFGZUTURUQAUOVDUPVG
+    UFZUGUQVDUSRDZVEVIUTEURNVJUQVDVKVJAUHUIUPVEUOVHUJAUSBUKULUMUN $.
+
+  $( Integer ordering relation.  (Contributed by NM, 10-May-2004.) $)
+  zleltp1 $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M <_ N <-> M < ( N + 1 ) ) ) $=
+    ( cz wcel wa cle wbr c1 caddc co clt cr wb zre leadd1 mp3an3 syl2an peano2z
+    1re zltp1le sylan2 bitr4d ) ACDZBCDZEABFGZAHIJBHIJZFGZAUFKGZUCALDZBLDZUEUGM
+    ZUDANBNUIUJHLDUKSABHOPQUDUCUFCDUHUGMBRAUFTUAUB $.
+
+  $( Integer ordering relation.  (Contributed by NM, 13-Nov-2004.) $)
+  zlem1lt $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M <_ N <-> ( M - 1 ) < N ) ) $=
+    ( cz wcel wa c1 cmin co clt wbr caddc cle wb peano2zm zltp1le sylan wceq cc
+    zcn ax-1cn npcan sylancl adantr breq1d bitr2d ) ACDZBCDZEZAFGHZBIJZUIFKHZBL
+    JZABLJUFUICDUGUJULMANUIBOPUHUKABLUFUKAQZUGUFARDFRDUMASTAFUAUBUCUDUE $.
+
+  $( Integer ordering relation.  (Contributed by NM, 13-Nov-2004.) $)
+  zltlem1 $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M < N <-> M <_ ( N - 1 ) ) ) $=
+    ( cz wcel wa c1 cmin co cle wbr caddc clt wb peano2zm zleltp1 sylan2 cc zcn
+    wceq ax-1cn npcan sylancl adantl breq2d bitr2d ) ACDZBCDZEZABFGHZIJZAUIFKHZ
+    LJZABLJUGUFUICDUJULMBNAUIOPUHUKBALUGUKBSZUFUGBQDFQDUMBRTBFUAUBUCUDUE $.
+
+  $( An integer greater than ` 0 ` is greater than or equal to ` 1 ` .
+     (Contributed by AV, 14-Oct-2018.) $)
+  zgt0ge1 $p |- ( Z e. ZZ -> ( 0 < Z <-> 1 <_ Z ) ) $=
+    ( cz wcel cc0 clt wbr c1 caddc co cle wb zltp1le mpan wceq 0p1e1 a1i breq1d
+    0z bitrd ) ABCZDAEFZDGHIZAJFZGAJFDBCTUAUCKRDALMTUBGAJUBGNTOPQS $.
+
+$( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
+   about positive or nonnegative integers which are defined earlier.  But the
+   proofs of these theorems are based on theorems for ` ZZ `.  It should be
+   clarified if these theorems could be proven without theorems for ` ZZ ` and
+   then could be moved up into the corresponding subsections.  Alternatively,
+   these theorems could be moved into a new seperate subsection "Positive and
+   nonnegative integers (cont.)". $)
+
+  $( Positive integer ordering relation.  (Contributed by NM, 13-Aug-2001.)
+     (Proof shortened by Mario Carneiro, 16-May-2014.) $)
+  nnleltp1 $p |- ( ( A e. NN /\ B e. NN ) ->
+                ( A <_ B <-> A < ( B + 1 ) ) ) $=
+    ( cn wcel cz cle wbr c1 caddc co clt wb nnz zleltp1 syl2an ) ACDAEDBEDABFGA
+    BHIJKGLBCDAMBMABNO $.
+
+  $( Positive integer ordering relation.  (Contributed by NM, 19-Aug-2001.) $)
+  nnltp1le $p |- ( ( A e. NN /\ B e. NN ) ->
+                ( A < B <-> ( A + 1 ) <_ B ) ) $=
+    ( cn wcel cz clt wbr c1 caddc co cle wb nnz zltp1le syl2an ) ACDAEDBEDABFGA
+    HIJBKGLBCDAMBMABNO $.
+
+  $( Closure of addition of positive integers minus one.  (Contributed by NM,
+     6-Aug-2003.)  (Proof shortened by Mario Carneiro, 16-May-2014.) $)
+  nnaddm1cl $p |- ( ( A e. NN /\ B e. NN ) -> ( ( A + B ) - 1 ) e. NN ) $=
+    ( cn wcel wa caddc co c1 cmin wceq nncn ax-1cn addsub mp3an3 syl2an nnm1nn0
+    cc cn0 nn0nnaddcl sylan eqeltrd ) ACDZBCDZEABFGHIGZAHIGZBFGZCUBAQDZBQDZUDUF
+    JZUCAKBKUGUHHQDUILABHMNOUBUERDUCUFCDAPUEBSTUA $.
+
+  $( Nonnegative integer ordering relation.  (Contributed by Raph Levien,
+     10-Dec-2002.)  (Proof shortened by Mario Carneiro, 16-May-2014.) $)
+  nn0ltp1le $p |- ( ( M e. NN0 /\ N e. NN0 ) ->
+                ( M < N <-> ( M + 1 ) <_ N ) ) $=
+    ( cn0 wcel cz clt wbr c1 caddc co cle wb nn0z zltp1le syl2an ) ACDAEDBEDABF
+    GAHIJBKGLBCDAMBMABNO $.
+
+  $( Nonnegative integer ordering relation.  (Contributed by Raph Levien,
+     10-Apr-2004.) $)
+  nn0leltp1 $p |- ( ( M e. NN0 /\ N e. NN0 ) ->
+                ( M <_ N <-> M < ( N + 1 ) ) ) $=
+    ( cn0 wcel cz cle wbr c1 caddc co clt wb nn0z zleltp1 syl2an ) ACDAEDBEDABF
+    GABHIJKGLBCDAMBMABNO $.
+
+  $( Nonnegative integer ordering relation.  (Contributed by NM, 10-May-2004.)
+     (Proof shortened by Mario Carneiro, 16-May-2014.) $)
+  nn0ltlem1 $p |- ( ( M e. NN0 /\ N e. NN0 ) ->
+                ( M < N <-> M <_ ( N - 1 ) ) ) $=
+    ( cn0 wcel cz clt wbr c1 cmin co cle wb nn0z zltlem1 syl2an ) ACDAEDBEDABFG
+    ABHIJKGLBCDAMBMABNO $.
+
+  $( Subtraction of nonnegative integers.  (Contributed by NM, 4-Sep-2005.) $)
+  nn0sub2 $p |- ( ( M e. NN0 /\ N e. NN0 /\ M <_ N ) -> ( N - M ) e. NN0 ) $=
+    ( cn0 wcel cle wbr cmin co nn0sub biimp3a ) ACDBCDABEFBAGHCDABIJ $.
+
+  $( A nonnegative integer less than ` 1 ` is ` 0 ` .  (Contributed by Paul
+     Chapman, 22-Jun-2011.) $)
+  nn0lt10b $p |- ( N e. NN0 -> ( N < 1 <-> N = 0 ) ) $=
+    ( cn0 wcel cc0 wceq cle wbr wa c1 clt cr wb nn0re 0re letri3 mpan2 biantrud
+    syl nn0ge0 cz nn0z caddc co 0z zleltp1 0p1e1 breq2i syl6bb 3bitr2rd ) ABCZA
+    DEZADFGZDAFGZHZULAIJGZUJAKCZUKUNLZAMUPDKCUQNADOPRUJUMULASQUJATCZULUOLAUAURU
+    LADIUBUCZJGZUOURDTCULUTLUDADUEPUSIAJUFUGUHRUI $.
+
+  $( A nonnegative integer less than 2 must be 0 or 1.  (Contributed by
+     Alexander van der Vekens, 16-Sep-2018.) $)
+  nn0lt2 $p |- ( ( N e. NN0 /\ N < 2 ) -> ( N = 0 \/ N = 1 ) ) $=
+    ( cn0 wcel c2 clt wbr wa cc0 wceq c1 wo wi olc a1d wne cle cz wb sylancl cr
+    cmin co nn0z 2z zltlem1 2m1e1 breq2i syl6bb necom nn0re 1re nn0lt10b biimpa
+    ltlen orcd ex sylbird expd syl7bi sylbid imp com12 pm2.61ine ) ABCZADEFZGZA
+    HIZAJIZKZLAJVHVIVFVHVGMNVFAJOZVIVDVEVJVILZVDVEAJPFZVKVDVEADJUAUBZPFZVLVDAQC
+    DQCVEVNRAUCUDADUESVMJAPUFUGUHVJJAOZVDVLVIAJUIVDVLVOVIVDVLVOGZAJEFZVIVDATCJT
+    CVQVPRAUJUKAJUNSVDVQVIVDVQGVGVHVDVQVGAULUMUOUPUQURUSUTVAVBVC $.
+
+  $( Nonnegative integer ordering relation.  (Contributed by NM,
+     21-Jun-2005.) $)
+  nn0lem1lt $p |- ( ( M e. NN0 /\ N e. NN0 ) ->
+                   ( M <_ N <-> ( M - 1 ) < N ) ) $=
+    ( cn0 wcel cz cle wbr c1 cmin co clt wb nn0z zlem1lt syl2an ) ACDAEDBEDABFG
+    AHIJBKGLBCDAMBMABNO $.
+
+  $( Positive integer ordering relation.  (Contributed by NM, 21-Jun-2005.) $)
+  nnlem1lt $p |- ( ( M e. NN /\ N e. NN ) -> ( M <_ N <-> ( M - 1 ) < N ) ) $=
+    ( cn wcel cz cle wbr c1 cmin co clt wb nnz zlem1lt syl2an ) ACDAEDBEDABFGAH
+    IJBKGLBCDAMBMABNO $.
+
+  $( Positive integer ordering relation.  (Contributed by NM, 21-Jun-2005.) $)
+  nnltlem1 $p |- ( ( M e. NN /\ N e. NN ) -> ( M < N <-> M <_ ( N - 1 ) ) ) $=
+    ( cn wcel cz clt wbr c1 cmin co cle wb nnz zltlem1 syl2an ) ACDAEDBEDABFGAB
+    HIJKGLBCDAMBMABNO $.
+
+  $( A positive integer decreased by 1 is greater than or equal to 0.
+     (Contributed by AV, 30-Oct-2018.) $)
+  nnm1ge0 $p |- ( N e. NN -> 0 <_ ( N - 1 ) ) $=
+    ( cn wcel cc0 clt wbr c1 cmin co cle nngt0 cz wb nnz zltlem1 sylancr mpbid
+    0z ) ABCZDAEFZDAGHIJFZAKSDLCALCTUAMRANDAOPQ $.
+
+  $( Division of a nonnegative integer by a positive number is not negative.
+     (Contributed by Alexander van der Vekens, 14-Apr-2018.) $)
+  nn0ge0div $p |- ( ( K e. NN0 /\ L e. NN ) -> 0 <_ ( K / L ) ) $=
+    ( cn0 wcel cn wa cc0 cle wbr cdiv co nn0ge0 adantr cr clt wb cz elnnz nn0re
+    w3a zre ad2antrl simprr 3jca sylan2b ge0div syl mpbid ) ACDZBEDZFZGAHIZGABJ
+    KHIZUIULUJALMUKANDZBNDZGBOIZTZULUMPUJUIBQDZUPFZUQBRUIUSFUNUOUPUIUNUSASMURUO
+    UIUPBUAUBUIURUPUCUDUEABUFUGUH $.
+
+  ${
+    $d k M $.  $d k N $.
+    $( Two ways to express " ` M ` divides ` N ` .  (Contributed by NM,
+       3-Oct-2008.) $)
+    zdiv $p |- ( ( M e. NN /\ N e. ZZ )
+                -> ( E. k e. ZZ ( M x. k ) = N <-> ( N / M ) e. ZZ ) ) $=
+      ( cn wcel cz wa cc0 wne cv cmul co wceq wrex cdiv wb nnne0 cc wi zcn nncn
+      adantr divcan3 3coml 3expa sylan2 3adantl2 oveq1 sylan9req eqeltrrd exp31
+      w3a simplr rexlimdv divcan2 3com12 eqeq1d rspcev expcom syl impbid 3expia
+      oveq2 syl2an mpd ) BDEZCFEZGBHIZBAJZKLZCMZAFNZCBOLZFEZPZVFVHVGBQUBVFBREZC
+      REZVHVOSVGBUACTVPVQVHVOVPVQVHULZVLVNVRVKVNAFVRVIFEZVKVNVRVSGZVKGVIVMFVTVK
+      VIVJBOLZVMVPVHVSWAVIMZVQVSVPVHGVIREZWBVITVPVHWCWBWCVPVHWBVIBUCUDUEUFUGVJC
+      BOUHUIVRVSVKUMUJUKUNVRBVMKLZCMZVNVLSVQVPVHWECBUOUPVNWEVLVKWEAVMFVIVMMVJWD
+      CVIVMBKVCUQURUSUTVAVBVDVE $.
+  $}
+
+  $( Property of divisibility: if ` D ` divides ` A ` and ` B ` then it divides
+     ` A + B ` .  (Contributed by NM, 3-Oct-2008.) $)
+  zdivadd $p |- ( ( ( D e. NN /\ A e. ZZ /\ B e. ZZ ) /\
+       ( ( A / D ) e. ZZ /\ ( B / D ) e. ZZ ) ) -> ( ( A + B ) / D ) e. ZZ ) $=
+    ( cn wcel cz w3a cdiv co wa caddc wceq cc cc0 wne zcn nncn nnne0 jca divdir
+    syl3an 3comr adantr zaddcl adantl eqeltrd ) CDEZAFEZBFEZGZACHIZFEBCHIZFEJZJ
+    ABKICHIZUKULKIZFUJUNUOLZUMUHUIUGUPUHAMEUIBMEUGCMEZCNOZJUPAPBPUGUQURCQCRSABC
+    TUAUBUCUMUOFEUJUKULUDUEUF $.
+
+  $( Property of divisibility: if ` D ` divides ` A ` then it divides
+     ` B x. A ` .  (Contributed by NM, 3-Oct-2008.) $)
+  zdivmul $p |- ( ( ( D e. NN /\ A e. ZZ /\ B e. ZZ ) /\
+       ( A / D ) e. ZZ ) -> ( ( B x. A ) / D ) e. ZZ ) $=
+    ( cn wcel cz w3a cdiv co wa cmul wceq cc cc0 wne zcn 3ad2ant2 3ad2ant1 nncn
+    nnne0 jca 3ad2ant3 divass syl3anc 3comr adantr zmulcl 3ad2antl3 eqeltrd ) C
+    DEZAFEZBFEZGZACHIZFEZJBAKICHIZBUNKIZFUMUPUQLZUOUKULUJURUKULUJGBMEZAMEZCMEZC
+    NOZJZURULUKUSUJBPQUKULUTUJAPRUJUKVCULUJVAVBCSCTUAUBBACUCUDUEUFULUJUOUQFEUKB
+    UNUGUHUI $.
+
+  ${
+    $d k M $.  $d k N $.
+    $( An extensionality-like property for integer ordering.  (Contributed by
+       NM, 29-Oct-2005.) $)
+    zextle $p |- ( ( M e. ZZ /\ N e. ZZ /\ A. k e. ZZ ( k <_ M <-> k <_ N ) )
+                  -> M = N ) $=
+      ( cz wcel cv cle wbr wb wral wceq wa zre leidd adantr breq1 bibi12d mpbid
+      rspcva cr adantlr mpbird adantll jca ex letri3 syl2an sylibrd 3impia ) BD
+      EZCDEZAFZBGHZULCGHZIZADJZBCKZUJUKLZUPBCGHZCBGHZLZUQURUPVAURUPLUSUTUJUPUSU
+      KUJUPLBBGHZUSUJVBUPUJBBMZNOUOVBUSIABDULBKUMVBUNUSULBBGPULBCGPQSRUAUKUPUTU
+      JUKUPLUTCCGHZUKVDUPUKCCMZNOUOUTVDIACDULCKUMUTUNVDULCBGPULCCGPQSUBUCUDUEUJ
+      BTECTEUQVAIUKVCVEBCUFUGUHUI $.
+
+    $( An extensionality-like property for integer ordering.  (Contributed by
+       NM, 29-Oct-2005.) $)
+    zextlt $p |- ( ( M e. ZZ /\ N e. ZZ /\ A. k e. ZZ ( k < M <-> k < N ) )
+                  -> M = N ) $=
+      ( cz wcel clt wbr wb wral wceq wa c1 cmin cle zltlem1 peano2zm syl2an zcn
+      co cc cv adantrr adantrl bibi12d ancoms ralbidva wi zextle 3expia subcan2
+      ax-1cn mp3an3 sylibd sylbid 3impia ) BDEZCDEZAUAZBFGZURCFGZHZADIZBCJZUPUQ
+      KZVBURBLMSZNGZURCLMSZNGZHZADIZVCVDVAVIADURDEZVDVAVIHVKVDKUSVFUTVHVKUPUSVF
+      HUQURBOUBVKUQUTVHHUPURCOUCUDUEUFVDVJVEVGJZVCUPVEDEZVGDEZVJVLUGUQBPCPVMVNV
+      JVLAVEVGUHUIQUPBTEZCTEZVLVCHZUQBRCRVOVPLTEVQUKBCLUJULQUMUNUO $.
+  $}
+
+  $( The reciprocal of a number greater than 1 is not an integer.  (Contributed
+     by NM, 3-May-2005.) $)
+  recnz $p |- ( ( A e. RR /\ 1 < A ) -> -. ( 1 / A ) e. ZZ ) $=
+    ( cr wcel c1 clt wbr wa cdiv co cz cc0 recgt1i simprd cle wn simpld zgt0ge1
+    syl5ibcom wb 1re wne 0lt1 wi 0re mp3an12 mpani imdistani gt0ne0 syl rereccl
+    lttr syldan lenlt sylancr sylibd mt2d ) ABCZDAEFZGZDAHIZJCZUTDEFZUSKUTEFZVB
+    ALZMUSVADUTNFZVBOZUSVCVAVEUSVCVBVDPUTQRUSDBCZUTBCZVEVFSTUQURAKUAZVHUSUQKAEF
+    ZGVIUQURVJUQKDEFZURVJUBKBCVGUQVKURGVJUCUDTKDAUKUEUFUGAUHUIAUJULDUTUMUNUOUP
+    $.
+
+  $( A number between an integer and its successor is not an integer.
+     (Contributed by NM, 3-May-2005.) $)
+  btwnnz $p |- ( ( A e. ZZ /\ A < B /\ B < ( A + 1 ) ) -> -. B e. ZZ ) $=
+    ( cz wcel clt wbr c1 caddc co wn wa cle zltp1le cr wb peano2z zre syl lenlt
+    syl2an bitrd biimpd impancom con2d 3impia ) ACDZABEFZBAGHIZEFZBCDZJUFUGKUJU
+    IUFUJUGUIJZUFUJKZUGUKULUGUHBLFZUKABMUFUHNDZBNDUMUKOUJUFUHCDUNAPUHQRBQUHBSTU
+    AUBUCUDUE $.
+
+  $( A larger number does not divide a smaller positive integer.  (Contributed
+     by NM, 3-May-2005.) $)
+  gtndiv $p |- ( ( A e. RR /\ B e. NN /\ B < A ) -> -. ( B / A ) e. ZZ ) $=
+    ( cr wcel cn clt wbr w3a cc0 cdiv co c1 caddc cz wn nnre 3ad2ant2 wa mp3an1
+    wb simp1 nngt0 adantl 0re lttr sylan ancoms mpand 3impia divgt0d simp3 cmul
+    wi 1re ltdivmul2 mp3an2 syl12anc mulid2d breq2d 3ad2ant1 bitrd mpbird 0p1e1
+    recn syl6breqr 0z btwnnz syl2anc ) ACDZBEDZBAFGZHZIBAJKZFGZVMILMKZFGZVMNDOZ
+    VLBAVJVIBCDZVKBPZQZVIVJVKUAZVJVIIBFGZVKBUBZQVIVJVKIAFGZVIVJRWBVKWDVJWBVIWCU
+    CVJVIWBVKRWDUMZVJVRVIWEVSICDVRVIWEUDIBAUESUFUGUHUIZUJVLVMLVOFVLVMLFGZVKVIVJ
+    VKUKVLWGBLAULKZFGZVKVLVRVIWDWGWITZVTWAWFVRLCDVIWDRWJUNBLAUOUPUQVIVJWIVKTVKV
+    IWHABFVIAAVDURUSUTVAVBVCVEINDVNVPVQVFIVMVGSVH $.
+
+  $( One-half is not an integer.  (Contributed by NM, 31-Jul-2004.) $)
+  halfnz $p |- -. ( 1 / 2 ) e. ZZ $=
+    ( c2 cr wcel c1 clt wbr cdiv co cz wn 2re 1lt2 recnz mp2an ) ABCDAEFDAGHICJ
+    KLAMN $.
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
@@ -75673,6 +76244,10 @@ htmldef "NN0" as
   althtmldef "NN0" as '&#8469;<SUB>0</SUB>';
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "NN0" as "\mathbb{N}_0";
+htmldef "ZZ" as "<IMG SRC='bbz.gif' WIDTH=11 HEIGHT=19 ALT=' ZZ' TITLE='ZZ'>";
+  althtmldef "ZZ" as '&#8484;';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "ZZ" as "\mathbb{Z}";
 htmldef "2" as "<IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT=' 2' TITLE='2'>";
   althtmldef "2" as '2';
   latexdef "2" as "2";
