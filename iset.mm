@@ -74439,13 +74439,13 @@ $)
      decreased by 1 is a positive integer.  (Contributed by Alexander van der
      Vekens, 1-Aug-2018.)  (Revised by AV, 4-Jan-2020.) $)
   nn0ge2m1nn $p |- ( ( N e. NN0 /\ 2 <_ N ) -> ( N - 1 ) e. NN ) $=
-    ( c1 wceq cmin co cn wcel wo cn0 c2 cle wbr wa simpl cr w3a clt 2re 1lt2 wi
-    1red a1i nn0re 3jca simpr jctil ltleletr sylc elnnnn0c sylanbrc nn1m1nn syl
-    adantr breq2 1re ltnlei pm2.21 sylbi ax-mp syl6bi adantld ax-1 jaoi mpcom
-    wn ) ABCZABDEFGZHZAIGZJAKLZMZVGVKAFGZVHVKVIBAKLZVLVIVJNVKBOGZJOGZAOGZPZBJQL
-    ZVJMVMVIVQVJVIVNVOVPVIUAVOVIRUBAUCUDUMVKVJVRVIVJUESUFBJAUGUHAUIUJAUKULVFVKV
-    GTVGVFVJVGVIVFVJJBKLZVGABJKUNVRVSVGTZSVRVSVEVTBJUORUPVSVGUQURUSUTVAVGVKVBVC
-    VD $.
+    ( cn0 wcel c2 cle wbr wa c1 cmin co cn wo wceq simpl w3a clt 1red 2re 1lt2
+    cr a1i nn0re 3jca adantr simpr jctil ltleletr elnnnn0c sylanbrc nn1m1nn syl
+    sylc wi wn 1re lenlti biimpi breq2 mtbiri pm2.21d com12 adantl orim1d oridm
+    mt2 mpd sylib ) ABCZDAEFZGZAHIJKCZVKLZVKVJAHMZVKLZVLVJAKCZVNVJVHHAEFZVOVHVI
+    NVJHTCZDTCZATCZOZHDPFZVIGVPVHVTVIVHVQVRVSVHQVRVHRUAAUBUCUDVJVIWAVHVIUESUFHD
+    AUGULAUHUIAUJUKVJVMVKVKVIVMVKUMVHVMVIVKVMVIVKVMVIDHEFZWBWASWBWAUNDHRUOUPUQV
+    EAHDEURUSUTVAVBVCVFVKVDVG $.
 
   $( If a nonnegative integer is greater than or equal to two, the integer
      decreased by 1 is also a nonnegative integer.  (Contributed by Alexander
