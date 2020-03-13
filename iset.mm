@@ -74364,21 +74364,6 @@ $)
       ( cr wcel cn0 caddc co cle wbr nn0addge2 mp2an ) AEFBGFABAHIJKCDABLM $.
   $}
 
-  $( Subtraction of nonnegative integers.  (Contributed by NM, 9-May-2004.)
-     (Proof shortened by Mario Carneiro, 16-May-2014.) $)
-  nn0sub $p |- ( ( M e. NN0 /\ N e. NN0 ) ->
-                ( M <_ N <-> ( N - M ) e. NN0 ) ) $=
-    ( cn0 wcel wbr cmin co cn cc0 wo clt cr wb nn0re elnn0 nngt0 eleq1d bibi12d
-    wceq syl5ibr wa leloe syl2an wi nnsub ex nncn subid1d id eqeltrd 2thd breq1
-    cle oveq2 jaoi sylbi nn0nlt0 pm2.21d posdif sylancl impbid breq2 syl5ibrcom
-    0re oveq1 jaod syl5bi cc nn0cn subeq0 syl2anr eqcom syl6rbb orbi12d syl6bbr
-    imp bitrd ) ACDZBCDZUAZABUMEZBAFGZHDZWBISZJZWBCDVTWAABKEZABSZJZWEVRALDZBLDW
-    AWHMVSANZBNABUBUCVTWFWCWGWDVRVSWFWCMZVSBHDZBISZJVRWKBOVRWLWKWMVRAHDZAISZJWL
-    WKUDZAOWNWPWOWNWLWKABUEUFWLWKWOIBKEZBIFGZHDZMWLWQWSBPWLWRBHWLBBUGUHWLUIUJUK
-    WOWFWQWCWSAIBKULWOWBWRHAIBFUNQRTUOUPVRWKWMAIKEZIAFGZHDZMVRWTXBVRWTXBAUQURXB
-    WTVRIXAKEZXAPVRWIILDWTXCMWJVDAIUSUTTVAWMWFWTWCXBBIAKVBWMWBXAHBIAFVEQRVCVFVG
-    VPVTWDBASZWGVSBVHDAVHDWDXDMVRBVIAVIBAVJVKBAVLVMVNVQWBOVO $.
-
   ${
     nn0le2x.1 $e |- N e. NN0 $.
     $( A nonnegative integer is less than or equal to twice itself.
@@ -74449,27 +74434,6 @@ $)
      (Contributed by Alexander van der Vekens, 6-Apr-2018.) $)
   nn0readdcl $p |- ( ( A e. NN0 /\ B e. NN0 ) -> ( A + B ) e. RR ) $=
     ( cn0 wcel wa caddc co nn0addcl nn0red ) ACDBCDEABFGABHI $.
-
-  $( A nonnegative integer which is neither 0 nor 1 is greater than or equal to
-     2.  (Contributed by Alexander van der Vekens, 6-Dec-2017.) $)
-  nn0n0n1ge2 $p |- ( ( N e. NN0 /\ N =/= 0 /\ N =/= 1 ) -> 2 <_ N ) $=
-    ( cn0 wcel cc0 wne c1 w3a c2 cle wbr cmin co wceq caddc 3ad2ant1 cn elnnne0
-    wa nnm1nn0 syl nn0cn subsub4d oveq2i syl6req 3simpa sylibr subeq0ad necon3d
-    1cnd 1p1e2 biimpd imp 3adant2 sylanbrc eqeltrd wb 2nn0 jctl nn0sub mpbird )
-    ABCZADEZAFEZGZHAIJZAHKLZBCZVDVFAFKLZFKLZBVAVBVFVIMVCVAVIAFFNLZKLVFVAAFFAUAZ
-    VAUIZVLUBVJHAKUJUCUDOVDVHPCZVIBCVDVHBCZVHDEZVMVDAPCZVNVDVAVBRVPVAVBVCUEAQUF
-    ASTVAVCVOVBVAVCVOVAVHDAFVAVHDMAFMVAAFVKVLUGUKUHULUMVHQUNVHSTUOVDHBCZVARZVEV
-    GUPVAVBVRVCVAVQUQUROHAUSTUT $.
-
-  $( A nonnegative integer is neither 0 nor 1 if and only if it is greater than
-     or equal to 2.  (Contributed by Alexander van der Vekens, 17-Jan-2018.) $)
-  nn0n0n1ge2b $p |- ( N e. NN0 -> ( ( N =/= 0 /\ N =/= 1 ) <-> 2 <_ N ) ) $=
-    ( cn0 wcel cc0 wne c1 wa c2 cle wbr nn0n0n1ge2 wn wceq nne clt breq1 mpbiri
-    wo a1d cr 3expib ianor orbi12i bitri wi 2pos 1lt2 impcom wb nn0re 2re jctir
-    jaoi adantr ltnle syl mpbid ex syl5bi impcon4bid ) ABCZADEZAFEZGZHAIJZVAVBV
-    CVEAKUAVDLZADMZAFMZRZVAVELZVFVBLZVCLZRVIVBVCUBVKVGVLVHADNAFNUCUDVAVIVJVAVIG
-    ZAHOJZVJVIVAVNVGVAVNUEVHVGVNVAVGVNDHOJUFADHOPQSVHVNVAVHVNFHOJUGAFHOPQSUMUHV
-    MATCZHTCZGZVNVJUIVAVQVIVAVOVPAUJUKULUNAHUOUPUQURUSUT $.
 
   $( If a nonnegative integer is greater than or equal to two, the integer
      decreased by 1 is a positive integer.  (Contributed by Alexander van der
