@@ -74569,11 +74569,13 @@ $)
   $( Nonnegative integer property expressed in terms of integers.  (Contributed
      by NM, 9-May-2004.) $)
   elnn0z $p |- ( N e. NN0 <-> ( N e. ZZ /\ 0 <_ N ) ) $=
-    ( cn0 wcel cn cc0 wceq wo cz clt wbr wa cle elnn0 elnnz eqcom orbi12i id 0z
-    eleq1 cr mpbii jaoi orc impbii anbi1i ordir 0re zre sylancr pm5.32i 3bitr4i
-    wb leloe 3bitri ) ABCADCZAEFZGAHCZEAIJZKZEAFZGZUQEALJZKZAMUOUSUPUTANAEOPUQU
-    TGZURUTGZKUQVEKVAVCVDUQVEVDUQUQUQUTUQQUTEHCUQREAHSUAUBUQUTUCUDUEUQURUTUFUQV
-    BVEUQETCATCVBVEULUGAUHEAUMUIUJUKUN $.
+    ( cn0 wcel cz cc0 cle wbr wa cr wceq cn cneg w3o nn0re elnn0 adantr a1i clt
+    wo wi biimpi orcomd 3mix1 3mix2 jaoi syl elz sylanbrc nn0ge0 jca 0nn0 eleq1
+    simprbi mpbiri nnnn0 wn simpr 0red lenltd mpbid nngt0 lt0neg1d syl5ibr mtod
+    zre pm2.21d 3jaod mpd impbii ) ABCZADCZEAFGZHZVJVKVLVJAICZAEJZAKCZALZKCZMZV
+    KANVJVOVPSVSVJVPVOVJVPVOSAOUAUBVOVSVPVOVPVRUCVPVOVRUDUEUFAUGZUHAUIUJVMVSVJV
+    KVSVLVKVNVSVTUMPVMVOVJVPVRVOVJTVMVOVJEBCUKAEBULUNQVPVJTVMAUOQVMVRVJVMVRAERG
+    ZVMVLWAUPVKVLUQVMEAVMURVKVNVLAVEPZUSUTVRWAVMEVQRGVQVAVMAWBVBVCVDVFVGVHVI $.
 
   $( Integer property expressed in terms nonnegative integers and positive
      integers.  (Contributed by NM, 10-May-2004.) $)
