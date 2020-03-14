@@ -74603,35 +74603,6 @@ $)
     UCUHUJUCUJUEUGUDLZLZUHUCUIUKUEUCUKUGUFEFZLUIUCUDUMUGUCAANORUFPQRUHUEUGUDIUL
     UDUEUGSUEUGUDUATQUBT $.
 
-  ${
-    $d x y z N $.
-    $( Membership in the set of integers.  Commonly used in constructions of
-       the integers as equivalence classes under subtraction of the positive
-       integers.  (Contributed by Mario Carneiro, 16-May-2014.) $)
-    elz2 $p |- ( N e. ZZ <-> E. x e. NN E. y e. NN N = ( x - y ) ) $=
-      ( wcel cr cn0 cneg wo wa cv cmin co wceq cn c1 1nn ax-1cn sylancr syl2an
-      cc wrex elznn0 caddc nn0p1nn adantl a1i recn adantr pncan sylancl rspceov
-      eqcomd syl3anc negsub simpr nnnn0addcl eqeltrrd nncan jaodan nnre resubcl
-      cz cle wbr letric syl2anr wb nnnn0 nn0sub negsubdi2 eleq1d bitr4d orbi12d
-      nncn mpbid jca eleq1 negeq anbi12d syl5ibrcom rexlimivv impbii bitri ) CV
-      BDCEDZCFDZCGZFDZHZIZCAJZBJZKLZMZBNUAANUAZCUBWIWNWDWEWNWGWDWEIZCOUCLZNDZON
-      DZCWPOKLZMWNWEWQWDCUDUEWRWOPUFWOWSCWOCTDZOTDZWSCMWDWTWECUGZUHQCOUIUJULABN
-      NWPOCKUKUMWDWGIZWROCKLZNDCOXDKLZMWNWRXCPUFXCOWFUCLZXDNXCXAWTXFXDMQWDWTWGX
-      BUHZOCUNRXCWRWGXFNDPWDWGUOOWFUPRUQXCXECXCXAWTXECMQXGOCURRULABNNOXDCKUKUMU
-      SWMWIABNNWJNDZWKNDZIZWIWMWLEDZWLFDZWLGZFDZHZIXJXKXOXHWJEDZWKEDZXKXIWJUTZW
-      KUTZWJWKVASXJWKWJVCVDZWJWKVCVDZHZXOXIXQXPYBXHXSXRWKWJVEVFXJXTXLYAXNXIWKFD
-      ZWJFDZXTXLVGXHWKVHZWJVHZWKWJVIVFXJYAWKWJKLZFDZXNXHYDYCYAYHVGXIYFYEWJWKVIS
-      XJXMYGFXHWJTDWKTDXMYGMXIWJVNWKVNWJWKVJSVKVLVMVOVPWMWDXKWHXOCWLEVQWMWEXLWG
-      XNCWLFVQWMWFXMFCWLVRVKVMVSVTWAWBWC $.
-
-    $( Alternative definition of the integers, based on ~ elz2 .  (Contributed
-       by Mario Carneiro, 16-May-2014.) $)
-    dfz2 $p |- ZZ = ( - " ( NN X. NN ) ) $=
-      ( vx vy vz cz cmin cn cxp cima cv wcel co wceq wrex elz2 cc wfn wb nnsscn
-      wss mp2an wf subf ffn ax-mp xpss12 ovelimab bitr4i eqriv ) ADEFFGZHZAIZDJ
-      UKBICIEKLCFMBFMZUKUJJZBCUKNEOOGZPZUIUNSZUMULQUNOEUAUOUBUNOEUCUDFOSZUQUPRR
-      FOFOUETBCUNFFUKEUFTUGUH $.
-  $}
 
   $( Alternate proof of ~ zex .  (Contributed by NM, 30-Jul-2004.)  (Revised by
      Mario Carneiro, 16-May-2014.)  (Proof modification is discouraged.)
