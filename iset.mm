@@ -74603,14 +74603,6 @@ $)
     UCUHUJUCUJUEUGUDLZLZUHUCUIUKUEUCUKUGUFEFZLUIUCUDUMUGUCAANORUFPQRUHUEUGUDIUL
     UDUEUGSUEUGUDUATQUBT $.
 
-
-  $( Alternate proof of ~ zex .  (Contributed by NM, 30-Jul-2004.)  (Revised by
-     Mario Carneiro, 16-May-2014.)  (Proof modification is discouraged.)
-     (New usage is discouraged.) $)
-  zexALT $p |- ZZ e. _V $=
-    ( cz cmin cn cxp cima cvv dfz2 cc wfun wcel subf ffun nnexALT xpex funimaex
-    wf mp2b eqeltri ) ABCCDZEZFGHHDZHBPBITFJKUAHBLBSCCMMNOQR $.
-
   $( Positive integers are a subset of integers.  (Contributed by NM,
      9-Jan-2002.) $)
   nnssz $p |- NN C_ ZZ $=
