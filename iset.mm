@@ -74460,7 +74460,7 @@ $)
   $( Closure law for dividing of a nonnegative integer by a positive integer.
      (Contributed by Alexander van der Vekens, 14-Apr-2018.) $)
   nn0nndivcl $p |- ( ( K e. NN0 /\ L e. NN ) -> ( K / L ) e. RR ) $=
-    ( cn0 wcel cn wa cr nn0re adantr ax-ia2 nndivred ) ACDZBEDZFABLAGDMAHILMJK
+    ( cn0 wcel cn wa cr nn0re adantr simpr nndivred ) ACDZBEDZFABLAGDMAHILMJK
     $.
 
 $(
