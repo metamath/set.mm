@@ -7854,6 +7854,24 @@ $)
   $}
 
   ${
+    3mixd.1 $e |- ( ph -> ps ) $.
+    $( Deduction introducing triple disjunction.  (Contributed by Scott Fenton,
+       8-Jun-2011.) $)
+    3mix1d $p |- ( ph -> ( ps \/ ch \/ th ) ) $=
+      ( w3o 3mix1 syl ) ABBCDFEBCDGH $.
+
+    $( Deduction introducing triple disjunction.  (Contributed by Scott Fenton,
+       8-Jun-2011.) $)
+    3mix2d $p |- ( ph -> ( ch \/ ps \/ th ) ) $=
+      ( w3o 3mix2 syl ) ABCBDFEBCDGH $.
+
+    $( Deduction introducing triple disjunction.  (Contributed by Scott Fenton,
+       8-Jun-2011.) $)
+    3mix3d $p |- ( ph -> ( ch \/ th \/ ps ) ) $=
+      ( w3o 3mix3 syl ) ABCDBFEBCDGH $.
+  $}
+
+  ${
     3pm3.2i.1 $e |- ph $.
     3pm3.2i.2 $e |- ps $.
     3pm3.2i.3 $e |- ch $.
