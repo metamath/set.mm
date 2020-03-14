@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Mar-2020
+$( iset.mm - Version of 14-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -74711,6 +74711,32 @@ $)
       ( cn0 wcel cneg cz nn0negz ax-mp ) ACDAEFDBAGH $.
   $}
 
+  $( Second Peano postulate generalized to integers.  (Contributed by NM,
+     13-Feb-2005.) $)
+  peano2z $p |- ( N e. ZZ -> ( N + 1 ) e. ZZ ) $=
+    ( cz wcel c1 caddc co cr cn0 cneg wo readdcld cn wa a1i cc recnd cc0 neg1cn
+    1red eqtrd elznn0nn biimpi biantrurd orbi2d mpbird wi peano2nn0 adantr 1cnd
+    renegcld negdid oveq1d negcld addassd ax-1cn 1pneg1e0 oveq2i syl6eq addid1d
+    zre addcomli simpr eqeltrd elnn0nn sylanbrc ex orim12d mpd elznn0 ) ABCZADE
+    FZGCVKHCZVKIZHCZJZVKBCVJADAUTZVJSKVJAHCZAIZLCZJZVOVJVTVQAGCZVSMZJZVJWCAUAUB
+    VJVSWBVQVJWAVSVPUCUDUEVJVQVLVSVNVQVLUFVJAUGNVJVSVNVJVSMZVMOCVMDEFZLCVNWDVMW
+    DVKWDADVJWAVSVPUHZWDSKUJPWDWEVRLWDWEVRQEFZVRWDWEVRDIZDEFZEFZWGWDWEVRWHEFZDE
+    FWJWDVMWKDEWDADWDAWFPZWDUIZUKULWDVRWHDWDAWLUMZWHOCWDRNWMUNTWIQVREDWHQUORUPV
+    AUQURWDVRWNUSTVJVSVBVCVMVDVEVFVGVHVKVIVE $.
+
+  ${
+    $d M x y $.  $d N x $.
+    $( Lemma for ~ zaddcl .  Special case in which ` N ` is a positive
+       integer.  (Contributed by Jim Kingdon, 14-Mar-2020.) $)
+    zaddcllempos $p |- ( ( M e. ZZ /\ N e. NN ) -> ( M + N ) e. ZZ ) $=
+      ( vx vy cn wcel cz caddc co cv wi c1 wceq oveq2 eleq1d imbi2d peano2z zcn
+      wa cc adantl nncn adantr 1cnd addassd syl5ib ex a2d nnind impcom ) BEFAGF
+      ZABHIZGFZUKACJZHIZGFZKUKALHIZGFZKUKADJZHIZGFZKUKAUSLHIZHIZGFZKUKUMKCDBUNL
+      MZUPURUKVEUOUQGUNLAHNOPUNUSMZUPVAUKVFUOUTGUNUSAHNOPUNVBMZUPVDUKVGUOVCGUNV
+      BAHNOPUNBMZUPUMUKVHUOULGUNBAHNOPAQUSEFZUKVAVDVIUKVAVDKVAUTLHIZGFVIUKSZVDU
+      TQVKVJVCGVKAUSLUKATFVIARUAVIUSTFUKUSUBUCVKUDUEOUFUGUHUIUJ $.
+  $}
+
   ${
     $d u v w x y z M $.  $d w x y z N $.
     $( Closure of addition of integers.  (Contributed by NM, 9-May-2004.)
@@ -74726,11 +74752,6 @@ $)
       JZVHSJZRWKWDNWBVQWLVRWMVATVGTUFVTWNWAWOVBTVHTUFVAVGVBVHUGUHUIGHOOWGWIWDLU
       JULGHWDUAUKVPVMWDIAVCBVIQUMUNUOUPUQURUTUS $.
   $}
-
-  $( Second Peano postulate generalized to integers.  (Contributed by NM,
-     13-Feb-2005.) $)
-  peano2z $p |- ( N e. ZZ -> ( N + 1 ) e. ZZ ) $=
-    ( cz wcel c1 caddc co 1z zaddcl mpan2 ) ABCDBCADEFBCGADHI $.
 
   $( Closure of subtraction of integers.  (Contributed by NM, 11-May-2004.) $)
   zsubcl $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M - N ) e. ZZ ) $=
