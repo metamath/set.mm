@@ -74737,6 +74737,13 @@ $)
       TQVKVJVCGVKAUSLUKATFVIARUAVIUSTFUKUSUBUCVKUDUEOUFUGUHUIUJ $.
   $}
 
+  $( "Reverse" second Peano postulate for integers.  (Contributed by NM,
+     12-Sep-2005.) $)
+  peano2zm $p |- ( N e. ZZ -> ( N - 1 ) e. ZZ ) $=
+    ( cz wcel c1 cmin co cneg caddc zcn negsubdid znegcl peano2z syl eqeltrd cc
+    1cnd wb subcld znegclb mpbird ) ABCZADEFZBCZUBGZBCZUAUDAGZDHFZBUAADAIZUAPZJ
+    UAUFBCUGBCAKUFLMNUAUBOCUCUEQUAADUHUIRUBSMT $.
+
   ${
     $d u v w x y z M $.  $d w x y z N $.
     $( Closure of addition of integers.  (Contributed by NM, 9-May-2004.)
@@ -74758,11 +74765,6 @@ $)
     ( cz wcel wa cneg caddc co cmin wceq zcn negsub syl2an znegcl zaddcl sylan2
     cc eqeltrrd ) ACDZBCDZEABFZGHZABIHZCSAQDBQDUBUCJTAKBKABLMTSUACDUBCDBNAUAOPR
     $.
-
-  $( "Reverse" second Peano postulate for integers.  (Contributed by NM,
-     12-Sep-2005.) $)
-  peano2zm $p |- ( N e. ZZ -> ( N - 1 ) e. ZZ ) $=
-    ( cz wcel c1 cmin co 1z zsubcl mpan2 ) ABCDBCADEFBCGADHI $.
 
   $( Transitive law of ordering for integers.  (Contributed by Alexander van
      der Vekens, 3-Apr-2018.) $)
