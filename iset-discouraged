@@ -55,7 +55,6 @@
 "ax-cnre" is used by "cnre".
 "ax-distr" is used by "adddi".
 "ax-ia1" is used by "simpl".
-"ax-ia2" is used by "nn0nndivcl".
 "ax-ia2" is used by "simpr".
 "ax-inf2" is used by "bj-nn0sucALT".
 "ax-inf2" is used by "bj-omex2".
@@ -197,7 +196,7 @@ New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
 New usage of "ax-distr" is discouraged (1 uses).
 New usage of "ax-ia1" is discouraged (1 uses).
-New usage of "ax-ia2" is discouraged (2 uses).
+New usage of "ax-ia2" is discouraged (1 uses).
 New usage of "ax-inf2" is discouraged (2 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
