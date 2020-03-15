@@ -74540,8 +74540,8 @@ $)
   zsscn $p |- ZZ C_ CC $=
     ( vx cz cc cv zcn ssriv ) ABCADEF $.
 
-  $( The set of integers exists.  See also ~ zexALT .  (Contributed by NM,
-     30-Jul-2004.)  (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  $( The set of integers exists.  (Contributed by NM, 30-Jul-2004.)  (Revised
+     by Mario Carneiro, 17-Nov-2014.) $)
   zex $p |- ZZ e. _V $=
     ( cz cc cnex zsscn ssexi ) ABCDE $.
 
