@@ -74763,21 +74763,14 @@ $)
       VEUT $.
   $}
 
-  ${
-    $d u v w x y z M $.  $d w x y z N $.
-    $( Closure of addition of integers.  (Contributed by NM, 9-May-2004.)
-       (Proof shortened by Mario Carneiro, 16-May-2014.) $)
-    zaddcl $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M + N ) e. ZZ ) $=
-      ( vx vy vz vw vu vv cz wcel cv cmin co wceq cn wrex caddc wa cc nncn elz2
-      reeanv nnaddcl adantr adantl anim12i addsub4 syl2an eqcomd rspceov sylibr
-      syl3anc oveq12 eleq1d syl5ibrcom rexlimdvva syl5bir rexlimivv syl2anb
-      sylbir ) AIJACKZDKZLMZNZDOPZCOPZBEKZFKZLMZNZFOPZEOPZABQMZIJZBIJCDAUAEFBUA
-      VFVLRVEVKRZEOPCOPVNVEVKCEOOUBVOVNCEOOVOVDVJRZFOPDOPVAOJZVGOJZRZVNVDVJDFOO
-      UBVSVPVNDFOOVSVBOJZVHOJZRZRZVNVPVCVIQMZIJZWCWDGKHKLMNHOPGOPZWEWCVAVGQMZOJ
-      ZVBVHQMZOJZWDWGWILMZNWFVSWHWBVAVGUCUDWBWJVSVBVHUCUEWCWKWDVSVASJZVGSJZRVBS
-      JZVHSJZRWKWDNWBVQWLVRWMVATVGTUFVTWNWAWOVBTVHTUFVAVGVBVHUGUHUIGHOOWGWIWDLU
-      JULGHWDUAUKVPVMWDIAVCBVIQUMUNUOUPUQURUTUS $.
-  $}
+  $( Closure of addition of integers.  (Contributed by NM, 9-May-2004.)  (Proof
+     shortened by Mario Carneiro, 16-May-2014.) $)
+  zaddcl $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M + N ) e. ZZ ) $=
+    ( cz wcel wa cc0 wceq cn cneg w3o caddc co cr elz simprbi adantl zcn adantr
+    cc wi addid1d simpl eqeltrd eleq1d syl5ibrcom zaddcllempos zre zaddcllemneg
+    oveq2 ex 3expia sylan2 3jaod mpd ) ACDZBCDZEZBFGZBHDZBIHDZJZABKLZCDZUPVAUOU
+    PBMDZVABNOPUQURVCUSUTUQVCURAFKLZCDUQVEACUQAUOASDUPAQRUAUOUPUBUCURVBVECBFAKU
+    IUDUEUOUSVCTUPUOUSVCABUFUJRUPUOVDUTVCTBUGUOVDUTVCABUHUKULUMUN $.
 
   $( Closure of subtraction of integers.  (Contributed by NM, 11-May-2004.) $)
   zsubcl $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M - N ) e. ZZ ) $=
