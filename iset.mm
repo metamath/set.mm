@@ -74979,12 +74979,13 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
   $( A nonnegative integer less than 2 must be 0 or 1.  (Contributed by
      Alexander van der Vekens, 16-Sep-2018.) $)
   nn0lt2 $p |- ( ( N e. NN0 /\ N < 2 ) -> ( N = 0 \/ N = 1 ) ) $=
-    ( cn0 wcel c2 clt wbr wa cc0 wceq c1 wo wi olc a1d wne cle cz wb sylancl cr
-    cmin co nn0z 2z zltlem1 2m1e1 breq2i syl6bb necom nn0re 1re nn0lt10b biimpa
-    ltlen orcd ex sylbird expd syl7bi sylbid imp com12 pm2.61ine ) ABCZADEFZGZA
-    HIZAJIZKZLAJVHVIVFVHVGMNVFAJOZVIVDVEVJVILZVDVEAJPFZVKVDVEADJUAUBZPFZVLVDAQC
-    DQCVEVNRAUCUDADUESVMJAPUFUGUHVJJAOZVDVLVIAJUIVDVLVOVIVDVLVOGZAJEFZVIVDATCJT
-    CVQVPRAUJUKAJUNSVDVQVIVDVQGVGVHVDVQVGAULUMUOUPUQURUSUTVAVBVC $.
+    ( cn0 wcel c2 clt wbr wa c1 wceq cc0 wo wne wi olc a1i cle cz wb sylancl 1z
+    cmin co nn0z 2z zltlem1 2m1e1 breq2i syl6bb necom zltlen nn0lt10b biimpa ex
+    orcd sylbird expd syl7bi sylbid imp wdc zdceq adantr dcne sylib mpjaod ) AB
+    CZADEFZGZAHIZAJIZVIKZAHLZVIVKMVHVIVJNOVFVGVLVKMZVFVGAHPFZVMVFVGADHUAUBZPFZV
+    NVFAQCZDQCVGVPRAUCZUDADUESVOHAPUFUGUHVLHALZVFVNVKAHUIVFVNVSVKVFVNVSGZAHEFZV
+    KVFVQHQCZWAVTRVRTAHUJSVFWAVKVFWAGVJVIVFWAVJAUKULUNUMUOUPUQURUSVHVIUTZVIVLKV
+    FWCVGVFVQWBWCVRTAHVASVBAHVCVDVE $.
 
   $( Nonnegative integer ordering relation.  (Contributed by NM,
      21-Jun-2005.) $)
