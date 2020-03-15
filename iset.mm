@@ -74950,6 +74950,15 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     APGZABPGZQZURUQUTVDUQVCUTVBRZUTVDQZABUCVEUTVBVCRVFVCUTVBUDUTVBVCUEUFUGUMUOA
     SDZBSDZURVDUAUPATBTVGVHEURVCVBQVDABUHVCVBUNUIMUJUKUL $.
 
+  $( Equality of integers is decidable.  (Contributed by Jim Kingdon,
+     14-Mar-2020.) $)
+  zdceq $p |- ( ( A e. ZZ /\ B e. ZZ ) -> DECID A = B ) $=
+    ( cz wcel wa clt wbr wceq w3o wdc ztri3or cr zre wne ltne necomd sylibr syl
+    wi ex wo olc dcne adantr sylan orc a1i adantl 3jaod mpd ) ACDZBCDZEZABFGZAB
+    HZBAFGZIUOJZABKUMUNUQUOUPUKALDZULUNUQSZAMURUSULURUNUQURUNEZABNZUQUTBAABOPVA
+    UOVAUAZUQVAUOUBABUCZQZRTUDUEUOUQSUMUOVBUQUOVAUFVCQUGULUPUQSZUKULBLDZVEBMVFU
+    PUQVFUPEVAUQBAOVDRTRUHUIUJ $.
+
   $( Integer 'Less than' expressed in terms of 'less than or equal to'.  Also
      see ~ ltleap which is a similar result for complex numbers.  (Contributed
      by Jim Kingdon, 14-Mar-2020.) $)
