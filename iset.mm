@@ -74950,6 +74950,15 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     APGZABPGZQZURUQUTVDUQVCUTVBRZUTVDQZABUCVEUTVBVCRVFVCUTVBUDUTVBVCUEUFUGUMUOA
     SDZBSDZURVDUAUPATBTVGVHEURVCVBQVDABUHVCVBUNUIMUJUKUL $.
 
+  $( Integer 'Less than' expressed in terms of 'less than or equal to'.  Also
+     see ~ ltleap which is a similar result for complex numbers.  (Contributed
+     by Jim Kingdon, 14-Mar-2020.) $)
+  zltlen $p |- ( ( A e. ZZ /\ B e. ZZ ) ->
+               ( A < B <-> ( A <_ B /\ B =/= A ) ) ) $=
+    ( cz wcel wa clt wbr cle wne cap cr wb zre ltleap syl2an zapne anbi2d bitrd
+    necom anbi2i syl6bb ) ACDZBCDZEZABFGZABHGZABIZEZUFBAIZEUDUEUFABJGZEZUHUBAKD
+    BKDUEUKLUCAMBMABNOUDUJUGUFABPQRUGUIUFABSTUA $.
+
   $( A nonnegative integer less than ` 1 ` is ` 0 ` .  (Contributed by Paul
      Chapman, 22-Jun-2011.) $)
   nn0lt10b $p |- ( N e. NN0 -> ( N < 1 <-> N = 0 ) ) $=
