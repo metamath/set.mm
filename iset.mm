@@ -74646,12 +74646,6 @@ $)
     IAJKUKUILAMGZHUHUIUJULUILEMGZUJULNUIAOCZUMUJHULTZAPLOCEOCUNUOQRLEASUAUBUCUD
     AUEUFUG $.
 
-  $( An integer is not a positive integer iff it is less than one.
-     (Contributed by NM, 13-Jul-2005.) $)
-  znnnlt1 $p |- ( N e. ZZ -> ( -. N e. NN <-> N < 1 ) ) $=
-    ( cz wcel cn wn c1 cle wbr clt elnnz1 baib notbid cr zre 1re sylancl bitr4d
-    wb ltnle ) ABCZADCZEFAGHZEZAFIHZTUAUBUATUBAJKLTAMCFMCUDUCRANOAFSPQ $.
-
   $( Positive integers expressed as a subset of integers.  (Contributed by NM,
      3-Oct-2004.) $)
   nnzrab $p |- NN = { x e. ZZ | 1 <_ x } $=
@@ -74804,6 +74798,12 @@ $)
     LMNOUQURABPZBAFGZQUTURTZABUAUQURVHVFVGURVHTUQURUTUBUCUQVFUSVHUPUOVBVFUSTZVD
     VBVIUOVBVFUSVFVBBAPUSABUDBAUEUFUGUHUIUSURUJZRUQVGUSVHUPVBVCVGUSTUOVDVEBAUMM
     VJRUKULUN $.
+
+  $( An integer is not a positive integer iff it is less than one.
+     (Contributed by NM, 13-Jul-2005.) $)
+  znnnlt1 $p |- ( N e. ZZ -> ( -. N e. NN <-> N < 1 ) ) $=
+    ( cz wcel cn wn c1 cle wbr clt elnnz1 baib notbid wb 1z zltnle mpan2 bitr4d
+    ) ABCZADCZEFAGHZEZAFIHZRSTSRTAJKLRFBCUBUAMNAFOPQ $.
 
   $( Transitive law of ordering for integers.  (Contributed by Alexander van
      der Vekens, 3-Apr-2018.) $)
