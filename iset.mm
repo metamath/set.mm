@@ -74745,6 +74745,25 @@ $)
     UAUFBCUGBCAKUFLMNUAUBOCUCUEQUAADUHUIRUBSMT $.
 
   ${
+    $d M x y $.  $d N x y $.
+    $( Lemma for ~ zaddcl .  Special case in which ` -u N ` is a positive
+       integer.  (Contributed by Jim Kingdon, 14-Mar-2020.) $)
+    zaddcllemneg $p |- ( ( M e. ZZ /\ N e. RR /\ -u N e. NN ) ->
+        ( M + N ) e. ZZ ) $=
+      ( vx vy cz wcel cneg cn caddc co oveq2d wa cv wi wceq negeq eleq1d imbi2d
+      c1 cmin cr w3a simp2 recnd negnegd cc zcn adantr negsubd peano2zm eqeltrd
+      1cnd nncn ad2antrr negdi2d ad2antlr negcld addsubassd adantl eqeltrrd a2d
+      exp31 nnind impcom 3impa ) AEFZBUAFZBGZHFZUBZAVHGZIJZABIJEVJVKBAIVJBVJBVF
+      VGVIUCUDUEKVFVGVIVLEFZVIVFVGLZVMVNACMZGZIJZEFZNVNASGZIJZEFZNVNADMZGZIJZEF
+      ZNVNAWBSIJZGZIJZEFZNVNVMNCDVHVOSOZVRWAVNWJVQVTEWJVPVSAIVOSPKQRVOWBOZVRWEV
+      NWKVQWDEWKVPWCAIVOWBPKQRVOWFOZVRWIVNWLVQWHEWLVPWGAIVOWFPKQRVOVHOZVRVMVNWM
+      VQVLEWMVPVKAIVOVHPKQRVNVTASTJZEVNASVFAUFFZVGAUGUHZVNULUIVFWNEFVGAUJUHUKWB
+      HFZVNWEWIWQVNWEWIWQVNLZWELZWHAWCSTJZIJZEWSWGWTAIWSWBSWQWBUFFVNWEWBUMUNZWS
+      ULZUOKWSWDSTJZXAEWSAWCSVNWOWQWEWPUPWSWBXBUQXCURWEXDEFWRWDUJUSUTUKVBVAVCVD
+      VEUT $.
+  $}
+
+  ${
     $d u v w x y z M $.  $d w x y z N $.
     $( Closure of addition of integers.  (Contributed by NM, 9-May-2004.)
        (Proof shortened by Mario Carneiro, 16-May-2014.) $)
