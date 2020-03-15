@@ -75047,11 +75047,11 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
      ` B x. A ` .  (Contributed by NM, 3-Oct-2008.) $)
   zdivmul $p |- ( ( ( D e. NN /\ A e. ZZ /\ B e. ZZ ) /\
        ( A / D ) e. ZZ ) -> ( ( B x. A ) / D ) e. ZZ ) $=
-    ( cn wcel cz w3a cdiv co wa cmul wceq cc cc0 wne zcn 3ad2ant2 3ad2ant1 nncn
-    nnne0 jca 3ad2ant3 divass syl3anc 3comr adantr zmulcl 3ad2antl3 eqeltrd ) C
-    DEZAFEZBFEZGZACHIZFEZJBAKICHIZBUNKIZFUMUPUQLZUOUKULUJURUKULUJGBMEZAMEZCMEZC
-    NOZJZURULUKUSUJBPQUKULUTUJAPRUJUKVCULUJVAVBCSCTUAUBBACUCUDUEUFULUJUOUQFEUKB
-    UNUGUHUI $.
+    ( cn wcel cz w3a cdiv co wa cmul wceq cc cc0 cap wbr 3ad2ant2 3ad2ant1 nncn
+    zcn nnap0 3ad2ant3 divassap syl3anc 3comr adantr zmulcl 3ad2antl3 eqeltrd
+    jca ) CDEZAFEZBFEZGZACHIZFEZJBAKICHIZBUOKIZFUNUQURLZUPULUMUKUSULUMUKGBMEZAM
+    EZCMEZCNOPZJZUSUMULUTUKBTQULUMVAUKATRUKULVDUMUKVBVCCSCUAUJUBBACUCUDUEUFUMUK
+    UPURFEULBUOUGUHUI $.
 
   ${
     $d k M $.  $d k N $.
@@ -75082,11 +75082,11 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
      by NM, 3-May-2005.) $)
   recnz $p |- ( ( A e. RR /\ 1 < A ) -> -. ( 1 / A ) e. ZZ ) $=
     ( cr wcel c1 clt wbr wa cdiv co cz cc0 recgt1i simprd cle wn simpld zgt0ge1
-    syl5ibcom wb 1re wne 0lt1 wi 0re mp3an12 mpani imdistani gt0ne0 syl rereccl
-    lttr syldan lenlt sylancr sylibd mt2d ) ABCZDAEFZGZDAHIZJCZUTDEFZUSKUTEFZVB
-    ALZMUSVADUTNFZVBOZUSVCVAVEUSVCVBVDPUTQRUSDBCZUTBCZVEVFSTUQURAKUAZVHUSUQKAEF
-    ZGVIUQURVJUQKDEFZURVJUBKBCVGUQVKURGVJUCUDTKDAUKUEUFUGAUHUIAUJULDUTUMUNUOUP
-    $.
+    syl5ibcom wb 1re cap 0lt1 0re lttr mp3an12 mpani imdistani gt0ap0 rerecclap
+    wi syl syldan lenlt sylancr sylibd mt2d ) ABCZDAEFZGZDAHIZJCZUTDEFZUSKUTEFZ
+    VBALZMUSVADUTNFZVBOZUSVCVAVEUSVCVBVDPUTQRUSDBCZUTBCZVEVFSTUQURAKUAFZVHUSUQK
+    AEFZGVIUQURVJUQKDEFZURVJUBKBCVGUQVKURGVJUJUCTKDAUDUEUFUGAUHUKAUIULDUTUMUNUO
+    UP $.
 
   $( A number between an integer and its successor is not an integer.
      (Contributed by NM, 3-May-2005.) $)
