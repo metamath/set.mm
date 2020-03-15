@@ -75113,6 +75113,25 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     ( c2 cr wcel c1 clt wbr cdiv co cz wn 2re 1lt2 recnz mp2an ) ABCDAEFDAGHICJ
     KLAMN $.
 
+  ${
+    $d x A $.
+    $( Two ways to express " ` A ` is a prime number (or 1)."  See also
+       ~ isprm .  (Contributed by NM, 4-May-2005.) $)
+    prime $p |- ( A e. NN -> (
+                 A. x e. NN ( ( A / x ) e. NN -> ( x = 1 \/ x = A ) ) <->
+          A. x e. NN ( ( 1 < x /\ x <_ A /\ ( A / x ) e. NN ) -> x = A ) ) ) $=
+      ( cn wcel cv cdiv c1 wceq wi clt wbr wa wb cz nnz wn syl6bbr adantl nnre
+      cr co wo cle w3a wne wdc 1z zdceq mpan2 dfordc df-ne imbi1i imbi2d impexp
+      3syl bi2.04 bitri nngt1ne1 anbi1d gtndiv 3expia sylan con2d lenlt sylibrd
+      syl2an ancoms syl5 pm4.71rd anbi2d 3anass bitr3d imbi1d bitrd ralbidva )
+      BCDZBAEZFUAZCDZVQGHZVQBHZUBZIZGVQJKZVQBUCKZVSUDZWAIZACVPVQCDZLZWCVQGUEZVS
+      LZWAIZWGWHWCWLMVPWHWCVSWJWAIZIZWLWHWBWMVSWHVQNDZVTUFZWBWMMVQOWOGNDWPUGVQG
+      UHUIWPWBVTPZWAIWMVTWAUJWJWQWAVQGUKULQUOUMWLWJVSWAIIWNWJVSWAUNWJVSWAUPUQQR
+      WIWKWFWAWIWDVSLZWKWFWIWDWJVSWHWDWJMVPVQURRUSWIWRWDWEVSLZLWFWIVSWSWDWIVSWE
+      VSVRNDZWIWEVROWHVPWTWEIWHVPLZWTBVQJKZPZWEXAXBWTWHVQTDZVPXBWTPZIVQSZXDVPXB
+      XEVQBUTVAVBVCWHXDBTDWEXCMVPXFBSVQBVDVFVEVGVHVIVJWDWEVSVKQVLVMVNVO $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
