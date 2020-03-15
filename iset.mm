@@ -75024,14 +75024,14 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
        3-Oct-2008.) $)
     zdiv $p |- ( ( M e. NN /\ N e. ZZ )
                 -> ( E. k e. ZZ ( M x. k ) = N <-> ( N / M ) e. ZZ ) ) $=
-      ( cn wcel cz wa cc0 wne cv cmul co wceq wrex cdiv wb nnne0 cc wi zcn nncn
-      adantr divcan3 3coml 3expa sylan2 3adantl2 oveq1 sylan9req eqeltrrd exp31
-      w3a simplr rexlimdv divcan2 3com12 eqeq1d rspcev expcom syl impbid 3expia
-      oveq2 syl2an mpd ) BDEZCFEZGBHIZBAJZKLZCMZAFNZCBOLZFEZPZVFVHVGBQUBVFBREZC
-      REZVHVOSVGBUACTVPVQVHVOVPVQVHULZVLVNVRVKVNAFVRVIFEZVKVNVRVSGZVKGVIVMFVTVK
-      VIVJBOLZVMVPVHVSWAVIMZVQVSVPVHGVIREZWBVITVPVHWCWBWCVPVHWBVIBUCUDUEUFUGVJC
-      BOUHUIVRVSVKUMUJUKUNVRBVMKLZCMZVNVLSVQVPVHWECBUOUPVNWEVLVKWEAVMFVIVMMVJWD
-      CVIVMBKVCUQURUSUTVAVBVDVE $.
+      ( cn wcel cz wa cc0 cap wbr cv cmul co wceq wrex cdiv wb cc wi zcn adantr
+      nnap0 nncn divcanap3 3coml 3expa sylan2 3adantl2 oveq1 sylan9req eqeltrrd
+      w3a simplr exp31 rexlimdv divcanap2 3com12 oveq2 eqeq1d rspcev expcom syl
+      impbid 3expia syl2an mpd ) BDEZCFEZGBHIJZBAKZLMZCNZAFOZCBPMZFEZQZVGVIVHBU
+      BUAVGBREZCREZVIVPSVHBUCCTVQVRVIVPVQVRVIULZVMVOVSVLVOAFVSVJFEZVLVOVSVTGZVL
+      GVJVNFWAVLVJVKBPMZVNVQVIVTWBVJNZVRVTVQVIGVJREZWCVJTVQVIWDWCWDVQVIWCVJBUDU
+      EUFUGUHVKCBPUIUJVSVTVLUMUKUNUOVSBVNLMZCNZVOVMSVRVQVIWFCBUPUQVOWFVMVLWFAVN
+      FVJVNNVKWECVJVNBLURUSUTVAVBVCVDVEVF $.
   $}
 
   $( Property of divisibility: if ` D ` divides ` A ` and ` B ` then it divides
