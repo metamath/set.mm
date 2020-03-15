@@ -18709,11 +18709,11 @@ $)
   neirr $p |- -. A =/= A $=
     ( wne wn wceq eqid notnoti df-ne notbii mpbir ) AABZCAADZCZCKAEFJLAAGHI $.
 
-  $( Excluded middle with equality and inequality where equality is decidable.
-     (Contributed by Jim Kingdon, 15-May-2018.) $)
-  exmidnedc $p |- ( DECID A = B -> ( A = B \/ A =/= B ) ) $=
-    ( wceq wdc wn wo wne exmiddc df-ne orbi2i sylibr ) ABCZDLLEZFLABGZFLHNMLABI
-    JK $.
+  $( Decidable equality expressed in terms of ` =/= ` .  Basically the same as
+     ~ df-dc .  (Contributed by Jim Kingdon, 14-Mar-2020.) $)
+  dcne $p |- ( DECID A = B <-> ( A = B \/ A =/= B ) ) $=
+    ( wceq wdc wn wo wne df-dc df-ne orbi2i bitr4i ) ABCZDLLEZFLABGZFLHNMLABIJK
+    $.
 
   $( Law of noncontradiction with equality and inequality.  (Contributed by NM,
      3-Feb-2012.) $)
