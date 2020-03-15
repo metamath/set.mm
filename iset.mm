@@ -74829,14 +74829,6 @@ $)
     cc0 zre bitrd elnnz syl6bbr ) ACDZBCDZEZABFGZBAHIZCDZRUGFGZEZUGJDUEUFUIUJUC
     AKDBKDUFUILUDASBSABMNUEUHUIUDUCUHBAOPQTUGUAUB $.
 
-  $( The nonnegative difference of integers is a nonnegative integer.
-     (Generalization of ~ nn0sub .)  (Contributed by NM, 14-Jul-2005.) $)
-  znn0sub $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
-                ( M <_ N <-> ( N - M ) e. NN0 ) ) $=
-    ( cz wcel wa cle wbr co cc0 cn0 wb cr subge0 syl2an zsubcl biantrurd bitr3d
-    cmin zre ancoms elnn0z syl6bbr ) ACDZBCDZEABFGZBARHZCDZIUFFGZEZUFJDUDUCUEUI
-    KUDUCEZUHUEUIUDBLDALDUHUEKUCBSASBAMNUJUGUHBAOPQTUFUAUB $.
-
   $( Closure of multiplication of integers.  (Contributed by NM,
      30-Jul-2004.) $)
   zmulcl $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M x. N ) e. ZZ ) $=
@@ -74930,6 +74922,20 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
                 ( M < N <-> M <_ ( N - 1 ) ) ) $=
     ( cn0 wcel cz clt wbr c1 cmin co cle wb nn0z zltlem1 syl2an ) ACDAEDBEDABFG
     ABHIJKGLBCDAMBMABNO $.
+
+  $( The nonnegative difference of integers is a nonnegative integer.
+     (Generalization of ~ nn0sub .)  (Contributed by NM, 14-Jul-2005.) $)
+  znn0sub $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
+                ( M <_ N <-> ( N - M ) e. NN0 ) ) $=
+    ( cz wcel wa cle wbr co cc0 cn0 wb cr subge0 syl2an zsubcl biantrurd bitr3d
+    cmin zre ancoms elnn0z syl6bbr ) ACDZBCDZEABFGZBARHZCDZIUFFGZEZUFJDUDUCUEUI
+    KUDUCEZUHUEUIUDBLDALDUHUEKUCBSASBAMNUJUGUHBAOPQTUFUAUB $.
+
+  $( Subtraction of nonnegative integers.  (Contributed by NM, 9-May-2004.) $)
+  nn0sub $p |- ( ( M e. NN0 /\ N e. NN0 ) ->
+                ( M <_ N <-> ( N - M ) e. NN0 ) ) $=
+    ( cn0 wcel cz cle wbr cmin co wb nn0z znn0sub syl2an ) ACDAEDBEDABFGBAHICDJ
+    BCDAKBKABLM $.
 
   $( Subtraction of nonnegative integers.  (Contributed by NM, 4-Sep-2005.) $)
   nn0sub2 $p |- ( ( M e. NN0 /\ N e. NN0 /\ M <_ N ) -> ( N - M ) e. NN0 ) $=
