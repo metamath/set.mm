@@ -74795,6 +74795,16 @@ $)
     UBZQUNVCUNBAVFVEUCUDUNVDURKFUNBAUNBVFTZUNAVETZUEUFUGUNUTUPUNABVHVGUIUHUNBAV
     FVEQUJUK $.
 
+  $( 'Less than' expressed in terms of 'less than or equal to'.  (Contributed
+     by Jim Kingdon, 14-Mar-2020.) $)
+  zltnle $p |- ( ( A e. ZZ /\ B e. ZZ ) -> ( A < B <-> -. B <_ A ) ) $=
+    ( cz wcel wa clt wbr cle wn cr zre lenlt syl2anr biimpd con2d wceq w3o syl6
+    wb wi ztri3or ax-1 a1i eqcom eqle sylan2b ex adantl sylan2 pm2.24 3jaod mpd
+    ltle impbid ) ACDZBCDZEZABFGZBAHGZIZUQUSURUQUSURIZUPBJDZAJDZUSVASUOBKZAKZBA
+    LMNOUQURABPZBAFGZQUTURTZABUAUQURVHVFVGURVHTUQURUTUBUCUQVFUSVHUPUOVBVFUSTZVD
+    VBVIUOVBVFUSVFVBBAPUSABUDBAUEUFUGUHUIUSURUJZRUQVGUSVHUPVBVCVGUSTUOVDVEBAUMM
+    VJRUKULUN $.
+
   $( Transitive law of ordering for integers.  (Contributed by Alexander van
      der Vekens, 3-Apr-2018.) $)
   zletr $p |- ( ( J e. ZZ /\ K e. ZZ /\ L e. ZZ )
