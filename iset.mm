@@ -75038,10 +75038,10 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
      ` A + B ` .  (Contributed by NM, 3-Oct-2008.) $)
   zdivadd $p |- ( ( ( D e. NN /\ A e. ZZ /\ B e. ZZ ) /\
        ( ( A / D ) e. ZZ /\ ( B / D ) e. ZZ ) ) -> ( ( A + B ) / D ) e. ZZ ) $=
-    ( cn wcel cz w3a cdiv co wa caddc wceq cc cc0 wne zcn nncn nnne0 jca divdir
-    syl3an 3comr adantr zaddcl adantl eqeltrd ) CDEZAFEZBFEZGZACHIZFEBCHIZFEJZJ
-    ABKICHIZUKULKIZFUJUNUOLZUMUHUIUGUPUHAMEUIBMEUGCMEZCNOZJUPAPBPUGUQURCQCRSABC
-    TUAUBUCUMUOFEUJUKULUDUEUF $.
+    ( cn wcel cz w3a cdiv co wa caddc wceq cc cc0 cap wbr zcn nncn nnap0 jca
+    divdirap syl3an 3comr adantr zaddcl adantl eqeltrd ) CDEZAFEZBFEZGZACHIZFEB
+    CHIZFEJZJABKICHIZULUMKIZFUKUOUPLZUNUIUJUHUQUIAMEUJBMEUHCMEZCNOPZJUQAQBQUHUR
+    USCRCSTABCUAUBUCUDUNUPFEUKULUMUEUFUG $.
 
   $( Property of divisibility: if ` D ` divides ` A ` then it divides
      ` B x. A ` .  (Contributed by NM, 3-Oct-2008.) $)
