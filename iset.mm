@@ -74778,6 +74778,23 @@ $)
     cc eqeltrrd ) ACDZBCDZEABFZGHZABIHZCSAQDBQDUBUCJTAKBKABLMTSUACDUBCDBNAUAOPR
     $.
 
+  $( Integer trichotomy (with zero).  (Contributed by Jim Kingdon,
+     14-Mar-2020.) $)
+  ztri3or0 $p |- ( N e. ZZ -> ( N < 0 \/ N = 0 \/ 0 < N ) ) $=
+    ( cz wcel cc0 wceq clt wbr w3o cn cneg cr elz simprbi idd wi nngt0 lt0neg1d
+    a1i zre syl5ibr 3orim123d mpd 3orrot sylibr ) ABCZADEZDAFGZADFGZHZUHUFUGHUE
+    UFAICZAJZICZHZUIUEAKCUMALMUEUFUFUJUGULUHUEUFNUJUGOUEAPRULUHUEDUKFGUKPUEAASQ
+    TUAUBUHUFUGUCUD $.
+
+  $( Integer trichotomy.  (Contributed by Jim Kingdon, 14-Mar-2020.) $)
+  ztri3or $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M < N \/ M = N \/ N < M ) ) $=
+    ( cz wcel wa clt wbr wceq w3o cmin cc0 zsubcl ztri3or0 syl cneg zre posdifd
+    co cr recnd adantr adantl resubcld lt0neg2d negsubdi2d breq1d 3bitrd bicomd
+    subeq0ad 3orbi123d mpbird ) ACDZBCDZEZABFGZABHZBAFGZIABJRZKFGZURKHZKURFGZIZ
+    UNURCDVBABLURMNUNUOUSUPUTUQVAUNUOKBAJRZFGVCOZKFGUSUNABULASDUMAPUAZUMBSDULBP
+    UBZQUNVCUNBAVFVEUCUDUNVDURKFUNBAUNBVFTZUNAVETZUEUFUGUNUTUPUNABVHVGUIUHUNBAV
+    FVEQUJUK $.
+
   $( Transitive law of ordering for integers.  (Contributed by Alexander van
      der Vekens, 3-Apr-2018.) $)
   zletr $p |- ( ( J e. ZZ /\ K e. ZZ /\ L e. ZZ )
