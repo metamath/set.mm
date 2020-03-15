@@ -74941,6 +74941,15 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
   nn0sub2 $p |- ( ( M e. NN0 /\ N e. NN0 /\ M <_ N ) -> ( N - M ) e. NN0 ) $=
     ( cn0 wcel cle wbr cmin co nn0sub biimp3a ) ACDBCDABEFBAGHCDABIJ $.
 
+  $( Apartness is equivalent to not equal for integers.  (Contributed by Jim
+     Kingdon, 14-Mar-2020.) $)
+  zapne $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M # N <-> M =/= N ) ) $=
+    ( cz wcel wa cap wbr wne cc wi zcn apne syl2an wceq wn clt wo w3o cr zre wb
+    df-ne ztri3or 3orrot 3orass bitri sylib reaplt syl6bb sylibrd syl5bi impbid
+    ord orcom ) ACDZBCDZEZABFGZABHZUOAIDBIDURUSJUPAKBKABLMUSABNZOZUQURABUBUQVAB
+    APGZABPGZQZURUQUTVDUQVCUTVBRZUTVDQZABUCVEUTVBVCRVFVCUTVBUDUTVBVCUEUFUGUMUOA
+    SDZBSDZURVDUAUPATBTVGVHEURVCVBQVDABUHVCVBUNUIMUJUKUL $.
+
   $( A nonnegative integer less than ` 1 ` is ` 0 ` .  (Contributed by Paul
      Chapman, 22-Jun-2011.) $)
   nn0lt10b $p |- ( N e. NN0 -> ( N < 1 <-> N = 0 ) ) $=
