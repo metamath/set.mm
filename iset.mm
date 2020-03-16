@@ -75153,6 +75153,36 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     UFVGVMFKHZCDVNVLVGVTABNHZCVGFWAGHZFKHVTWAVGWBVMFKVGFABVOVGPTZVQVSUGUHVGWAFV
     GWACDWAODABUIZWAQUJWCFUKUMUNVGULTUOUPWDUQVNVTVKCVMIFKURUSUTVAVDVBVC $.
 
+  ${
+    $d j k N $.
+    $( A positive integer is even or odd but not both.  (Contributed by NM,
+       1-Jan-2006.)  (Proof shortened by Mario Carneiro, 18-May-2014.) $)
+    nneo $p |- ( N e. NN ->
+                ( ( N / 2 ) e. NN <-> -. ( ( N + 1 ) / 2 ) e. NN ) ) $=
+      ( vj vk cn wcel c2 cdiv co c1 caddc cmul wceq cc nncn 2cn oveq1d wo oveq1
+      eleq1d orbi12d wn peano2cn syl a1i cc0 cap wbr 2ap0 divcanap2d eqtr4d wne
+      cz nnz zneo syl2an expcom necon2bd syl5com df-2 oveq1i 2div2e1 eqtr3i 1nn
+      cv eqeltri peano2nn add1p1 wa pm3.2i divdirap mp3an23 oveq2i syl6eq eqtrd
+      orci syl5ibr orim2d orcom syl6ib nnind ord impbid ) ADEZAFGHZDEZAIJHZFGHZ
+      DEZUAZWCFWGKHZFWDKHZIJHZLWEWIWCWJWFWLWCWFFWCAMEWFMEANZAUBUCFMEZWCOUDZFUEU
+      FUGZWCUHUDZUIWCWKAIJWCAFWMWOWQUIPUJWEWHWJWLWHWEWJWLUKZWHWGULEWDULEWRWEWGU
+      MWDUMWGWDUNUOUPUQURWCWHWEBVDZIJHZFGHZDEZWSFGHZDEZQIIJHZFGHZDEZIFGHZDEZQCV
+      DZIJHZFGHZDEZXJFGHZDEZQZXKIJHZFGHZDEZXMQZWHWEQBCAWSILZXBXGXDXIYAXAXFDYAWT
+      XEFGWSIIJRPSYAXCXHDWSIFGRSTWSXJLZXBXMXDXOYBXAXLDYBWTXKFGWSXJIJRPSYBXCXNDW
+      SXJFGRSTWSXKLZXBXSXDXMYCXAXRDYCWTXQFGWSXKIJRPSYCXCXLDWSXKFGRSTWSALZXBWHXD
+      WEYDXAWGDYDWTWFFGWSAIJRPSYDXCWDDWSAFGRSTXGXIXFIDFFGHZXFIFXEFGUSUTVAVBVCVE
+      VOXJDEZXPXMXSQXTYFXOXSXMXOXSYFXNIJHZDEXNVFYFXRYGDYFXJMEZXRYGLXJNYHXRXJFJH
+      ZFGHZYGYHXQYIFGXJVGPYHYJXNYEJHZYGYHWNWNWPVHYJYKLOWNWPOUHVIXJFFVJVKYEIXNJV
+      AVLVMVNUCSVPVQXMXSVRVSVTWAWB $.
+
+    nneo.1 $e |- N e. NN $.
+    $( A positive integer is even or odd but not both.  (Contributed by NM,
+       20-Aug-2001.) $)
+    nneoi $p |- ( ( N / 2 ) e. NN <-> -. ( ( N + 1 ) / 2 ) e. NN ) $=
+      ( cn wcel c2 cdiv co c1 caddc wn wb nneo ax-mp ) ACDAEFGCDAHIGEFGCDJKBALM
+      $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
