@@ -75269,6 +75269,23 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     $}
   $}
 
+  ${
+    $d x y z w v u m N $.
+    dfuz.1 $e |- N e. ZZ $.
+    $( An expression for the upper integers that start at ` N ` that is
+       analogous to ~ dfnn2 for positive integers.  (Contributed by NM,
+       6-Jul-2005.)  (Proof shortened by Mario Carneiro, 3-May-2014.) $)
+    dfuzi $p |- { z e. ZZ | N <_ z } =
+               |^| { x | ( N e. x /\ A. y e. x ( y + 1 ) e. x ) } $=
+      ( cv cle wbr cz crab wcel c1 caddc co wral wa cab wss mpbir2an eleq2 cint
+      ssintab peano5uzi mpgbir zrei leidi breq2 elrab peano2uz2 mpan rgen rabex
+      wi zex wceq raleqbi1dv anbi12d elab intss1 ax-mp eqssi ) DCFZGHZCIJZDAFZK
+      ZBFZLMNZVEKZBVEOZPZAQZUAZVDVMRVKVDVERUMAVKAVDUBBVECDEUCUDVDVLKZVMVDRVNDVD
+      KZVHVDKZBVDOZVODIKZDDGHZEDDEUEUFVCVSCDIVBDDGUGUHSVPBVDVRVGVDKVPECDVGUIUJU
+      KVKVOVQPAVDVCCIUNULVEVDUOVFVOVJVQVEVDDTVIVPBVEVDVEVDVHTUPUQURSVDVLUSUTVA
+      $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
