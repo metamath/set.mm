@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Mar-2020
+$( iset.mm - Version of 15-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -75155,25 +75155,32 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
 
   ${
     $d j k N $.
+    $( A positive integer is even or odd.  (Contributed by Jim Kingdon,
+       15-Mar-2020.) $)
+    nneoor $p |- ( N e. NN ->
+                ( ( N / 2 ) e. NN \/ ( ( N + 1 ) / 2 ) e. NN ) ) $=
+      ( vj vk cn wcel c1 caddc co c2 cdiv cv wceq oveq1d eleq1d orbi12d 2div2e1
+      wo oveq1 cc 2cn df-2 oveq1i eqtr3i 1nn eqeltri orci peano2nn nncn cc0 cap
+      add1p1 wbr wa 2ap0 pm3.2i divdirap mp3an23 oveq2i syl6eq eqtrd syl orim2d
+      syl5ibr orcom syl6ib nnind orcomd ) ADEAFGHZIJHZDEZAIJHZDEZBKZFGHZIJHZDEZ
+      VMIJHZDEZQFFGHZIJHZDEZFIJHZDEZQCKZFGHZIJHZDEZWDIJHZDEZQZWEFGHZIJHZDEZWGQZ
+      VJVLQBCAVMFLZVPWAVRWCWOVOVTDWOVNVSIJVMFFGRMNWOVQWBDVMFIJRNOVMWDLZVPWGVRWI
+      WPVOWFDWPVNWEIJVMWDFGRMNWPVQWHDVMWDIJRNOVMWELZVPWMVRWGWQVOWLDWQVNWKIJVMWE
+      FGRMNWQVQWFDVMWEIJRNOVMALZVPVJVRVLWRVOVIDWRVNVHIJVMAFGRMNWRVQVKDVMAIJRNOW
+      AWCVTFDIIJHZVTFIVSIJUAUBPUCUDUEUFWDDEZWJWGWMQWNWTWIWMWGWIWMWTWHFGHZDEWHUG
+      WTWLXADWTWDSEZWLXALWDUHXBWLWDIGHZIJHZXAXBWKXCIJWDUKMXBXDWHWSGHZXAXBISEZXF
+      IUIUJULZUMXDXELTXFXGTUNUOWDIIUPUQWSFWHGPURUSUTVANVCVBWGWMVDVEVFVG $.
+
     $( A positive integer is even or odd but not both.  (Contributed by NM,
        1-Jan-2006.)  (Proof shortened by Mario Carneiro, 18-May-2014.) $)
     nneo $p |- ( N e. NN ->
                 ( ( N / 2 ) e. NN <-> -. ( ( N + 1 ) / 2 ) e. NN ) ) $=
-      ( vj vk cn wcel c2 cdiv co c1 caddc cmul wceq cc nncn 2cn oveq1d wo oveq1
-      eleq1d orbi12d wn peano2cn syl a1i cc0 cap wbr 2ap0 divcanap2d eqtr4d wne
-      cz nnz zneo syl2an expcom necon2bd syl5com df-2 oveq1i 2div2e1 eqtr3i 1nn
-      cv eqeltri peano2nn add1p1 wa pm3.2i divdirap mp3an23 oveq2i syl6eq eqtrd
-      orci syl5ibr orim2d orcom syl6ib nnind ord impbid ) ADEZAFGHZDEZAIJHZFGHZ
-      DEZUAZWCFWGKHZFWDKHZIJHZLWEWIWCWJWFWLWCWFFWCAMEWFMEANZAUBUCFMEZWCOUDZFUEU
-      FUGZWCUHUDZUIWCWKAIJWCAFWMWOWQUIPUJWEWHWJWLWHWEWJWLUKZWHWGULEWDULEWRWEWGU
-      MWDUMWGWDUNUOUPUQURWCWHWEBVDZIJHZFGHZDEZWSFGHZDEZQIIJHZFGHZDEZIFGHZDEZQCV
-      DZIJHZFGHZDEZXJFGHZDEZQZXKIJHZFGHZDEZXMQZWHWEQBCAWSILZXBXGXDXIYAXAXFDYAWT
-      XEFGWSIIJRPSYAXCXHDWSIFGRSTWSXJLZXBXMXDXOYBXAXLDYBWTXKFGWSXJIJRPSYBXCXNDW
-      SXJFGRSTWSXKLZXBXSXDXMYCXAXRDYCWTXQFGWSXKIJRPSYCXCXLDWSXKFGRSTWSALZXBWHXD
-      WEYDXAWGDYDWTWFFGWSAIJRPSYDXCWDDWSAFGRSTXGXIXFIDFFGHZXFIFXEFGUSUTVAVBVCVE
-      VOXJDEZXPXMXSQXTYFXOXSXMXOXSYFXNIJHZDEXNVFYFXRYGDYFXJMEZXRYGLXJNYHXRXJFJH
-      ZFGHZYGYHXQYIFGXJVGPYHYJXNYEJHZYGYHWNWNWPVHYJYKLOWNWPOUHVIXJFFVJVKYEIXNJV
-      AVLVMVNUCSVPVQXMXSVRVSVTWAWB $.
+      ( cn wcel c2 cdiv co c1 caddc cmul wceq nncn peano2cn syl 2cnd divcanap2d
+      wn cc cc0 cz nnz cap wbr 2ap0 a1i oveq1d eqtr4d wne syl2an expcom syl5com
+      zneo necon2bd nneoor orcomd ord impbid ) ABCZADEFZBCZAGHFZDEFZBCZPZUQDVAI
+      FZDURIFZGHFZJUSVCUQVDUTVFUQUTDUQAQCUTQCAKZALMUQNZDRUAUBUQUCUDZOUQVEAGHUQA
+      DVGVHVIOUEUFUSVBVDVFVBUSVDVFUGZVBVASCURSCVJUSVATURTVAURUKUHUIULUJUQVBUSUQ
+      USVBAUMUNUOUP $.
 
     nneo.1 $e |- N e. NN $.
     $( A positive integer is even or odd but not both.  (Contributed by NM,
