@@ -75220,6 +75220,20 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     CUNUQDUNALCUQLCAMZANOUNPZDQRSUNUKUAZTUNVBAGHUNADVDVEVFTUBUCUPUSVAVCUSUPVAVC
     UDURUOULUEUFUGUNUSUPUNUPUSAUHUIUJUM $.
 
+  ${
+    $d x A $.  $d x B $.
+    $( Second Peano postulate for upper integers.  (Contributed by NM,
+       3-Oct-2004.) $)
+    peano2uz2 $p |- ( ( A e. ZZ /\ B e. { x e. ZZ | A <_ x } ) ->
+                             ( B + 1 ) e. { x e. ZZ | A <_ x } ) $=
+      ( cz wcel cle wbr wa c1 caddc co cv crab peano2z ad2antrl cr wi zre breq2
+      elrab lep1 adantl peano2re ancli letr 3expb sylan2 mpan2d syl2an impr jca
+      anbi2i 3imtr4i ) BDEZCDEZBCFGZHZHZCIJKZDEZBUSFGZHUNCBALZFGZADMZEZHUSVDEUR
+      UTVAUOUTUNUPCNOUNUOUPVAUNBPEZCPEZUPVAQUOBRCRVFVGHUPCUSFGZVAVGVHVFCUAUBVGV
+      FVGUSPEZHUPVHHVAQZVGVICUCUDVFVGVIVJBCUSUEUFUGUHUIUJUKVEUQUNVCUPACDVBCBFST
+      ULVCVAAUSDVBUSBFSTUM $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
