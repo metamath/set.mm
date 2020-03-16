@@ -75234,6 +75234,41 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
       ULVCVAAUSDVBUSBFSTUM $.
   $}
 
+  ${
+    $d k n x A $.  $d k n x N $.
+    $( Peano's inductive postulate for upper integers.  (Contributed by NM,
+       6-Jul-2005.)  (Revised by Mario Carneiro, 25-Jul-2013.) $)
+    peano5uzti $p |- ( N e. ZZ -> ( ( N e. A /\ A. x e. A ( x + 1 ) e. A )
+                          -> { k e. ZZ | N <_ k } C_ A ) ) $=
+      ( vn cz wcel cv c1 caddc co wa cc wceq cn wi oveq1 eleq1d imbi2d ex breq2
+      wral cle wbr crab wss elrab anbi2i cmin ad2antrl 1cnd subcld npcan syl2an
+      zcn ax-1cn subsub mp3an3 cn0 znn0sub biimpa anasss ancoms adantll nn0p1nn
+      eqeltrd simpr simpll adantr pncan3d simprl rspccv ad2antll nncnd ad2antlr
+      syl add32d sylibd a2d nnind syl3c eqeltrrd sylanb expcom expdimp ssrdv )
+      DFGZDBGZAHZIJKZBGZABUBZLZDCHZUCUDZCFUEZBUFWGWMLZEWPBWGWMEHZWPGZWRBGZWMWSL
+      ZWGWTXAWMWRFGZDWRUCUDZLZLZWGWTWSXDWMWOXCCWRFWNWRDUCUAUGUHXEWGLZWRDIUIKZUI
+      KZXGJKZWRBXEWRMGZXGMGZXIWRNWGXBXJWMXCWRUOUJZWGDIDUOZWGUKULZWRXGUMUNXFXHOG
+      WGWMXIBGZXFXHWRDUIKZIJKZOXEXJDMGZXHXQNZWGXLXMXJXRIMGXSUPWRDIUQURUNXFXPUSG
+      ZXQOGXDWGXTWMWGXDXTWGXBXCXTWGXBLXCXTDWRUTVAVBVCVDXPVEVPVFXEWGVGWMXDWGVHWG
+      WMWNXGJKZBGZPZPWGWMIXGJKZBGZPZPWGWMWRXGJKZBGZPZPWGWMWRIJKZXGJKZBGZPZPWGWM
+      XOPZPCEXHWNINZYCYFWGYOYBYEWMYOYAYDBWNIXGJQRSSWNWRNZYCYIWGYPYBYHWMYPYAYGBW
+      NWRXGJQRSSWNYJNZYCYMWGYQYBYLWMYQYAYKBWNYJXGJQRSSWNXHNZYCYNWGYRYBXOWMYRYAX
+      IBWNXHXGJQRSSWGWMYEWQYDDBWQIDWQUKWGXRWMXMVIVJWGWHWLVKVFTWROGZWGYIYMYSWGYI
+      YMPYSWGLZWMYHYLYTWMYHYLPYTWMLZYHYGIJKZBGZYLWLYHUUCPYTWHWKUUCAYGBWIYGNWJUU
+      BBWIYGIJQRVLVMUUAUUBYKBUUAWRXGIUUAWRYSWGWMVHVNWGXKYSWMXNVOUUAUKVQRVRTVSTV
+      SVTWAWBWCWDWEWFT $.
+
+    ${
+      peano5uz.1 $e |- N e. ZZ $.
+      $( Peano's inductive postulate for upper integers.  (Contributed by NM,
+         6-Jul-2005.)  (Revised by Mario Carneiro, 3-May-2014.) $)
+      peano5uzi $p |- ( ( N e. A /\ A. x e. A ( x + 1 ) e. A ) ->
+                    { k e. ZZ | N <_ k } C_ A ) $=
+        ( cz wcel cv c1 caddc co wral wa cle wbr crab wss wi peano5uzti ax-mp )
+        DFGDBGAHIJKBGABLMDCHNOCFPBQREABCDST $.
+    $}
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
