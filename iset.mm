@@ -75210,6 +75210,16 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     PWCYAXEPCZYGYOEZAVTUUIYDYEUUJMNXEHUTQOWDOSWGYGWHWIWRYHXFBWRXFWRXEWRXEAWJWKV
     CVDSVEWOWLWMWPWNWQ $.
 
+  $( An integer is even or odd but not both.  (Contributed by Mario Carneiro,
+     12-Sep-2015.) $)
+  zeo2 $p |- ( N e. ZZ ->
+              ( ( N / 2 ) e. ZZ <-> -. ( ( N + 1 ) / 2 ) e. ZZ ) ) $=
+    ( cz wcel c2 cdiv co c1 caddc wn cmul wceq cc zcn peano2cn syl 2cnd cc0 cap
+    wbr divcanap2d a1i oveq1d eqtr4d wne expcom necon2bd syl5com zeo orcomd ord
+    2ap0 zneo impbid ) ABCZADEFZBCZAGHFZDEFZBCZIZUNDURJFZDUOJFZGHFZKUPUTUNVAUQV
+    CUNUQDUNALCUQLCAMZANOUNPZDQRSUNUKUAZTUNVBAGHUNADVDVEVFTUBUCUPUSVAVCUSUPVAVC
+    UDURUOULUEUFUGUNUSUPUNUPUSAUHUIUJUM $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
