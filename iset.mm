@@ -75115,8 +75115,8 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
 
   ${
     $d x A $.
-    $( Two ways to express " ` A ` is a prime number (or 1)."  See also
-       ~ isprm .  (Contributed by NM, 4-May-2005.) $)
+    $( Two ways to express " ` A ` is a prime number (or 1)."  (Contributed by
+       NM, 4-May-2005.) $)
     prime $p |- ( A e. NN -> (
                  A. x e. NN ( ( A / x ) e. NN -> ( x = 1 \/ x = A ) ) <->
           A. x e. NN ( ( 1 < x /\ x <_ A /\ ( A / x ) e. NN ) -> x = A ) ) ) $=
