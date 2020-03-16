@@ -75140,6 +75140,19 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     BCZDUKIJZUKKCUHULUIUHULAALMNUJUHADRJZFUMUHUNUIUHDBCUNUIOSADPQTUHAUACUNUMAUB
     AUCUDUEUKUFUG $.
 
+  $( No even integer equals an odd integer (i.e. no integer can be both even
+     and odd).  Exercise 10(a) of [Apostol] p. 28.  (Contributed by NM,
+     31-Jul-2004.)  (Proof shortened by Mario Carneiro, 18-May-2014.) $)
+  zneo $p |- ( ( A e. ZZ /\ B e. ZZ ) ->
+             ( 2 x. A ) =/= ( ( 2 x. B ) + 1 ) ) $=
+    ( cz wcel wa c2 cmul co c1 caddc cdiv wn wceq cmin cc 2cn zcn mulcl sylancr
+    a1i wne halfnz adantr adantl 1cnd subaddd subdid oveq1d zsubcl syl cc0 2ap0
+    cap wbr divcanap3d eqtr3d eqeltrd oveq1 eleq1d syl5ibcom sylbird mpi necomd
+    necon3bd ) ACDZBCDZEZFBGHZIJHZFAGHZVGIFKHZCDZLVIVJUAUBVGVLVIVJVGVIVJMVJVHNH
+    ZIMZVLVGVJVHIVGFODZAODZVJODPVEVPVFAQUCZFARSVGVOBODZVHODPVFVRVEBQUDZFBRSVGUE
+    UFVGVMFKHZCDVNVLVGVTABNHZCVGFWAGHZFKHVTWAVGWBVMFKVGFABVOVGPTZVQVSUGUHVGWAFV
+    GWACDWAODABUIZWAQUJWCFUKUMUNVGULTUOUPWDUQVNVTVKCVMIFKURUSUTVAVDVBVC $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
