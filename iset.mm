@@ -75132,6 +75132,14 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
       XEVQBUTVAVBVCWHXDBTDWEXCMVPXFBSVQBVDVFVEVGVHVIVJWDWEVSVKQVLVMVNVO $.
   $}
 
+  $( The square of a nonzero integer is a positive integer.  (Contributed by
+     NM, 2-Aug-2004.) $)
+  msqznn $p |- ( ( A e. ZZ /\ A =/= 0 ) -> ( A x. A ) e. NN ) $=
+    ( cz wcel cc0 wne wa cmul co clt wbr cn zmulcl anidms adantr wb zapne mpan2
+    cap 0z pm5.32i cr zre apsqgt0 sylan sylbir elnnz sylanbrc ) ABCZADEZFZAAGHZ
+    BCZDUKIJZUKKCUHULUIUHULAALMNUJUHADRJZFUMUHUNUIUHDBCUNUIOSADPQTUHAUACUNUMAUB
+    AUCUDUEUKUFUG $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
