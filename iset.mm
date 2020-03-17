@@ -75366,6 +75366,25 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
       NOUOHUAZSTZIURQRZCDUEZUSUTUBUOURUNTVAUMUTGURSULURIQUCUDPUFUGUHUIUJ $.
   $}
 
+  ${
+    $d x y $.  $d A x $.  $d ps x $.  $d ch x $.  $d th x $.  $d ta x $.
+    $d ph y $.
+    nn0ind.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.
+    nn0ind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    nn0ind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    nn0ind.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    nn0ind.5 $e |- ps $.
+    nn0ind.6 $e |- ( y e. NN0 -> ( ch -> th ) ) $.
+    $( Principle of Mathematical Induction (inference schema) on nonnegative
+       integers.  The first four hypotheses give us the substitution instances
+       we need; the last two are the basis and the induction step.
+       (Contributed by NM, 13-May-2004.) $)
+    nn0ind $p |- ( A e. NN0 -> ta ) $=
+      ( cn0 wcel cz cc0 cle wbr wa elnn0z 0z a1i cv sylbir 3adant1 uzind mp3an1
+      wi sylbi ) HOPHQPZRHSTZUAEHUBRQPZULUMEUCABCDEFGRHIJKLBUNMUDGUEZQPZRUOSTZC
+      DUJZUNUPUQUAUOOPURUOUBNUFUGUHUIUK $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
