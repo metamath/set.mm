@@ -75286,6 +75286,37 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
       $.
   $}
 
+  ${
+    $d j z w N $.  $d j z ps $.  $d j z ch $.  $d j z th $.  $d j z ta $.
+    $d k w ph $.  $d j k z w M $.
+    $( Substitutions. $)
+    uzind.1 $e |- ( j = M -> ( ph <-> ps ) ) $.
+    uzind.2 $e |- ( j = k -> ( ph <-> ch ) ) $.
+    uzind.3 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.
+    uzind.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind.6 $e |- ( ( M e. ZZ /\ k e. ZZ /\ M <_ k ) -> ( ch -> th ) ) $.
+    $( Induction on the upper integers that start at ` M ` .  The first four
+       hypotheses give us the substitution instances we need; the last two are
+       the basis and the induction step.  (Contributed by NM, 5-Jul-2005.) $)
+    uzind $p |- ( ( M e. ZZ /\ N e. ZZ /\ M <_ N ) -> ta ) $=
+      ( cz wcel cle wbr wa vw w3a cv crab c1 caddc wral wss zre leidd jca ancli
+      co wceq breq2 anbi12d elrab sylibr wi peano2z a1i adantrd clt ltp1 adantl
+      cr peano2re lelttr 3expb sylan2 mpan2d ltle syld syl2an expimpd 3exp jcad
+      imp4d 3imtr4g ralrimiv peano5uzti mp2and sseld 3imtr3g 3impib simprd ) HP
+      QZIPQZHIRSZUBZWIEWJWHWIETZWGWHWIWHWKTZWGIHUAUCZRSZUAPUDZQIHFUCZRSZATZFPUD
+      ZQWHWITWLWGWOWSIWGHWSQZGUCZUEUFUMZWSQZGWSUGWOWSUHWGWGHHRSZBTZTWTWGXEWGXDB
+      WGHHUIZUJNUKULWRXEFHPWPHUNWQXDABWPHHRUOJUPUQURWGXCGWSWGXAPQZHXARSZCTZTZXB
+      PQZHXBRSZDTZTXAWSQXCWGXJXKXMWGXGXKXIXGXKUSWGXAUTVAVBWGXJXLDWGXGXIXLWGXGTX
+      HXLCWGHVFQZXAVFQZXHXLUSXGXFXAUIXNXOTZXHHXBVCSZXLXPXHXAXBVCSZXQXOXRXNXAVDV
+      EXOXNXOXBVFQZTXHXRTXQUSZXOXSXAVGZULXNXOXSXTHXAXBVHVIVJVKXOXNXSXQXLUSYAHXB
+      VLVJVMVNVBVOWGXGXHCDWGXGXHCDUSOVPVRVQVQWRXIFXAPWPXAUNWQXHACWPXAHRUOKUPUQW
+      RXMFXBPWPXBUNWQXLADWPXBHRUOLUPUQVSVTGWSUAHWAWBWCWNWIUAIPWMIHRUOUQWRWKFIPW
+      PIUNWQWIAEWPIHRUOMUPUQWDWEWFWF $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
