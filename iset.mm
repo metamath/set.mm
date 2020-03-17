@@ -75416,6 +75416,32 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
       VTVEVKWAVNWB $.
   $}
 
+  ${
+    $d K x $.  $d M x y $.  $d N x y $.  $d ch x $.  $d ph y $.  $d ps x $.
+    $d ta x $.  $d th x $.
+    fnn0ind.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.
+    fnn0ind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    fnn0ind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    fnn0ind.4 $e |- ( x = K -> ( ph <-> ta ) ) $.
+    fnn0ind.5 $e |- ( N e. NN0 -> ps ) $.
+    fnn0ind.6 $e |- ( ( N e. NN0 /\ y e. NN0 /\ y < N ) -> ( ch -> th ) ) $.
+    $( Induction on the integers from ` 0 ` to ` N ` inclusive .  The first
+       four hypotheses give us the substitution instances we need; the last two
+       are the basis and the induction step.  (Contributed by Paul Chapman,
+       31-Mar-2011.) $)
+    fnn0ind $p |- ( ( N e. NN0 /\ K e. NN0 /\ K <_ N ) -> ta ) $=
+      ( wcel wbr wa cc0 wi cn0 cle cz elnn0z w3a nn0z 0z sylbir 3adant1 clt zre
+      cv cr 0re lelttr ltle 3adant2 mp3an1 syl2an ex com23 3impib impcom anbi1i
+      syld 3expb syl2anbr expcom 3impa expd mpd adantll fzind mpanl1 syl5 3expa
+      sylanb 3impb ) IUAPZHUAPZHIUBQZEVTWARVSEVTHUCPZSHUBQZRWAVSETZHUDWBWCWAWDV
+      SIUCPZWBWCWAUEZEIUFWEWFESUCPZWEWFEUGABCDEFGHSIJKLMWESIUBQZBWGWEWHRZVSBIUD
+      ZNUHUIWEGULZUCPZSWKUBQZWKIUJQZUEZCDTZWGWEWORWHWPWOWEWHWLWMWNWEWHTWLWEWMWN
+      RZWHWLWEWQWHTZWLWKUMPZIUMPZWRWEWKUKIUKSUMPZWSWTWRUNXAWSWTUEWQSIUJQZWHSWKI
+      UOXAWTXBWHTWSSIUPUQVEURUSUTVAVBVCWOWEWHWPTWOWEWHWPWLWMWNWIWPTWIWLWMRZWNRZ
+      WPWIVSWKUAPZWNRWPXDWJXEXCWNWKUDVDVSXEWNWPOVFVGVHVIVJVCVKVLVMVNVHVOVPVQVCV
+      R $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
