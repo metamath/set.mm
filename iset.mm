@@ -75317,6 +75317,55 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
       PIUNWQWIAEWPIHRUOMUPUQWDWEWFWF $.
   $}
 
+  ${
+    $d j z w N $.  $d j z ps $.  $d j z ch $.  $d j z th $.  $d j z ta $.
+    $d k w ph $.  $d j k z w M $.
+    $( Substitutions. $)
+    uzind2.1 $e |- ( j = ( M + 1 ) -> ( ph <-> ps ) ) $.
+    uzind2.2 $e |- ( j = k -> ( ph <-> ch ) ) $.
+    uzind2.3 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.
+    uzind2.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind2.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind2.6 $e |- ( ( M e. ZZ /\ k e. ZZ /\ M < k ) -> ( ch -> th ) ) $.
+    $( Induction on the upper integers that start _after_ an integer ` M ` .
+       The first four hypotheses give us the substitution instances we need;
+       the last two are the basis and the induction step.  (Contributed by NM,
+       25-Jul-2005.) $)
+    uzind2 $p |- ( ( M e. ZZ /\ N e. ZZ /\ M < N ) -> ta ) $=
+      ( cz wcel wbr wi wceq clt wa c1 caddc co zltp1le peano2z cv imbi2d 3expia
+      cle a1i w3a sylbird ex com3l imp 3adant1 a2d uzind 3exp syl com34 pm2.43a
+      sylbid 3impia ) HPQZIPQZHIUARZEVGVHUBVIHUCUDUEZIUKRZEHIUFVGVHVKESZVHVGVLV
+      GVHVKVGEVGVJPQZVHVKVGESZSSHUGVMVHVKVNVGASVGBSZVGCSVGDSVNFGVJIFUHZVJTABVGJ
+      UIVPGUHZTACVGKUIVPVQUCUDUETADVGLUIVPITAEVGMUIVOVMNULVMVQPQZVJVQUKRZUMVGCD
+      VRVSVGCDSZSZVMVRVSWAVGVRVSVTVGVRVSVTSVGVRUBVSHVQUARZVTHVQUFVGVRWBVTOUJUNU
+      OUPUQURUSUTVAVBVCVDUQVEVF $.
+  $}
+
+  ${
+    $d j k N $.  $d j ps $.  $d j ch $.  $d j th $.  $d j ta $.  $d m ph $.
+    $d j m k M $.
+    $( Substitutions. $)
+    uzind3.1 $e |- ( j = M -> ( ph <-> ps ) ) $.
+    uzind3.2 $e |- ( j = m -> ( ph <-> ch ) ) $.
+    uzind3.3 $e |- ( j = ( m + 1 ) -> ( ph <-> th ) ) $.
+    uzind3.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind3.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind3.6 $e |- ( ( M e. ZZ /\ m e. { k e. ZZ | M <_ k } ) ->
+                   ( ch -> th ) ) $.
+    $( Induction on the upper integers that start at an integer ` M ` .  The
+       first four hypotheses give us the substitution instances we need, and
+       the last two are the basis and the induction step.  (Contributed by NM,
+       26-Jul-2005.) $)
+    uzind3 $p |- ( ( M e. ZZ /\ N e. { k e. ZZ | M <_ k } ) -> ta ) $=
+      ( cle wbr cz wcel cv wa breq2 elrab wi sylan2br 3impb uzind 3expb sylan2b
+      crab ) JIGUAZQRZGSUKZTISTZJSTZIJQRZUBEUMUQGJSULJIQUCUDUOUPUQEABCDEFHIJKLM
+      NOUOHUAZSTZIURQRZCDUEZUSUTUBUOURUNTVAUMUTGURSULURIQUCUDPUFUGUHUIUJ $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
