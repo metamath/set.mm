@@ -75385,6 +75385,37 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
       DUJZUNUPUQUAUOOPURUOUBNUFUGUHUIUK $.
   $}
 
+  ${
+    $d K x $.  $d M x y $.  $d N x y $.  $d ch x $.  $d ph y $.  $d ps x $.
+    $d ta x $.  $d th x $.
+    fzind.1 $e |- ( x = M -> ( ph <-> ps ) ) $.
+    fzind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    fzind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    fzind.4 $e |- ( x = K -> ( ph <-> ta ) ) $.
+    fzind.5 $e |- ( ( M e. ZZ /\ N e. ZZ /\ M <_ N ) -> ps ) $.
+    fzind.6 $e |- ( ( ( M e. ZZ /\ N e. ZZ ) /\
+                      ( y e. ZZ /\ M <_ y /\ y < N ) ) -> ( ch -> th ) ) $.
+    $( Induction on the integers from ` M ` to ` N ` inclusive .  The first
+       four hypotheses give us the substitution instances we need; the last two
+       are the basis and the induction step.  (Contributed by Paul Chapman,
+       31-Mar-2011.) $)
+    fzind $p |- ( ( ( M e. ZZ /\ N e. ZZ ) /\
+                    ( K e. ZZ /\ M <_ K /\ K <_ N ) ) -> ta ) $=
+      ( cle wbr wa wi cz wcel w3a cv c1 caddc co breq1 anbi2d imbi12d 3expib cr
+      wceq zre p1le 3expia syl2an imdistanda imim1d 3ad2ant2 wb zltp1le adantlr
+      clt expcom pm5.32d adantl 3expa com12 sylbird com23 expd 3impib impd syld
+      ex a2d uzind expcomd 3expb 3impia impcom ) HUAUBZIHQRZHJQRZUCZIUAUBZJUAUB
+      ZSZEWFWGWHEWCWDWEWGWHETZTWCWDSZWGWEWJWGWKWEWJTZWGWCWDWLWGWCWDUCWHWEEWHFUD
+      ZJQRZSZATWHIJQRZSZBTWHGUDZJQRZSZCTZWHWRUEUFUGZJQRZSZDTZWHWESZETFGIHWMIUMZ
+      WOWQABXGWNWPWHWMIJQUHUIKUJWMWRUMZWOWTACXHWNWSWHWMWRJQUHUILUJWMXBUMZWOXDAD
+      XIWNXCWHWMXBJQUHUIMUJWMHUMZWOXFAEXJWNWEWHWMHJQUHUINUJWGWHWPBOUKWGWRUAUBZI
+      WRQRZUCZXAXDCTZXEXKWGXAXNTXLXKXDWTCXKWHXCWSXKWRULUBZJULUBZXCWSTWHWRUNJUNX
+      OXPXCWSWRJUOUPUQURUSUTXMXDCDXMWHXCCDTZXMXCWHXQWGXKXLXCWHXQTZTWGXKXLSZXCXR
+      WGWHXSXCSZXQWGWHXTXQTWIXTXSWRJVDRZSZXQWHYBXTVAWGWHXSYAXCXSWHYAXCVAZXKWHYC
+      XLWRJVBVCVEVFVGYBWIXQXKXLYAWIXQTWIXKXLYAUCXQPVEVHVIVJVPVKVLVMVKVNVQVOVRVS
+      VTVEVKWAVNWB $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
