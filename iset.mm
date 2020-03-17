@@ -75499,6 +75499,66 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
       PUQVPVQNUOVRVSVFVNAFHJSOWAWB $.
   $}
 
+  ${
+    nn0zd.1 $e |- ( ph -> A e. NN0 ) $.
+    $( A positive integer is an integer.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    nn0zd $p |- ( ph -> A e. ZZ ) $=
+      ( cn0 cz nn0ssz sseldi ) ADEBFCG $.
+  $}
+
+  ${
+    nnzd.1 $e |- ( ph -> A e. NN ) $.
+    $( A nonnegative integer is an integer.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    nnzd $p |- ( ph -> A e. ZZ ) $=
+      ( nnnn0d nn0zd ) ABABCDE $.
+  $}
+
+  ${
+    zred.1 $e |- ( ph -> A e. ZZ ) $.
+    $( An integer is a real number.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zred $p |- ( ph -> A e. RR ) $=
+      ( cz cr zssre sseldi ) ADEBFCG $.
+
+    $( An integer is a complex number.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zcnd $p |- ( ph -> A e. CC ) $=
+      ( zred recnd ) ABABCDE $.
+
+    $( Closure law for negative integers.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    znegcld $p |- ( ph -> -u A e. ZZ ) $=
+      ( cz wcel cneg znegcl syl ) ABDEBFDECBGH $.
+
+    $( Deduction from second Peano postulate generalized to integers.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    peano2zd $p |- ( ph -> ( A + 1 ) e. ZZ ) $=
+      ( cz wcel c1 caddc co peano2z syl ) ABDEBFGHDECBIJ $.
+
+    zaddcld.1 $e |- ( ph -> B e. ZZ ) $.
+    $( Closure of addition of integers.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zaddcld $p |- ( ph -> ( A + B ) e. ZZ ) $=
+      ( cz wcel caddc co zaddcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure of subtraction of integers.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zsubcld $p |- ( ph -> ( A - B ) e. ZZ ) $=
+      ( cz wcel cmin co zsubcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure of multiplication of integers.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zmulcld $p |- ( ph -> ( A x. B ) e. ZZ ) $=
+      ( cz wcel cmul co zmulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
+  $( Increasing an integer by 2 results in an integer.  (Contributed by
+     Alexander van der Vekens, 16-Sep-2018.) $)
+  zadd2cl $p |- ( N e. ZZ -> ( N + 2 ) e. ZZ ) $=
+    ( cz wcel c2 id 2z a1i zaddcld ) ABCZADIEDBCIFGH $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
