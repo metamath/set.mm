@@ -1146,6 +1146,18 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TR>
 
 <TR>
+<TD>nne</TD>
+<TD><I>none</I></TD>
+<TD>The reverse direction could be proved; the forward direction
+is double negation elimination.</TD>
+</TR>
+
+<TR>
+<TD>exmidne</TD>
+<TD>~ dcne </TD>
+</TR>
+
+<TR>
 <TD>neor</TD>
 <TD>~ pm2.53 , ~ ori , ~ ord </TD>
 </TR>
@@ -1156,18 +1168,20 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TR>
 
 <TR>
+<TD>nnel</TD>
+<TD><I>none</I></TD>
+<TD>The reverse direction could be proved; the forward direction
+is double negation elimination.</TD>
+</TR>
+
+<TR>
+<TD>nfrald</TD>
+<TD>~ nfraldxy , ~ nfraldya </TD>
+</TR>
+
+<TR>
 <TD>rexnal</TD>
 <TD>~ rexnalim </TD>
-</TR>
-
-<TR>
-<TD>dfral2</TD>
-<TD>~ ralexim </TD>
-</TR>
-
-<TR>
-<TD>dfrex2</TD>
-<TD>~ rexalim </TD>
 </TR>
 
 <TR>
@@ -1181,8 +1195,13 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TR>
 
 <TR>
-<TD>nfrald</TD>
-<TD>~ nfraldxy , ~ nfraldya </TD>
+<TD>dfral2</TD>
+<TD>~ ralexim </TD>
+</TR>
+
+<TR>
+<TD>dfrex2</TD>
+<TD>~ rexalim </TD>
 </TR>
 
 <TR>
@@ -2689,12 +2708,12 @@ favor of theorems in deduction form.</TD>
 
 <TR>
 <TD>ltnle , ltnlei , ltnled</TD>
-<TD>~ lenlt </TD>
+<TD>~ lenlt , ~ zltnle </TD>
 </TR>
 
 <TR>
 <TD>lttri2 , lttri4</TD>
-<TD><I>none</I></TD>
+<TD>~ ztri3or </TD>
 <TD>Real number trichotomy is not provable.</TD>
 </TR>
 
@@ -2721,7 +2740,7 @@ favor of theorems in deduction form.</TD>
 
 <TR>
 <TD>ltlen , ltleni , ltlend</TD>
-<TD>~ ltleap </TD>
+<TD>~ ltleap , ~ zltlen </TD>
 </TR>
 
 <TR>
@@ -3145,6 +3164,43 @@ favor of theorems in deduction form.</TD>
 <TD>dfnn3</TD>
 <TD>~ dfnn2 </TD>
 <TD>Presumably could be proved, as it is a slight variation of dfnn2</TD>
+</TR>
+
+<TR>
+<TD>avgle</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>nnunb , arch , nnrecl , bndndx</TD>
+<TD><I>none</I></TD>
+<TD>Dealing with the Archimedean property will need to await adding
+some form of supremum (or other property of sets of reals). Our
+other real number axioms are first-order, and therefore are
+not sufficient to rule out non-Archimedean fields such as
+the hyperreal numbers.</TD>
+</TR>
+
+<TR>
+<TD>nn0n0n1ge2 , nn0n0n1ge2b</TD>
+<TD><I>none yet</I></TD>
+<TD>These should be provable, and might be easy now that we have
+~ztri3or .</TD>
+</TR>
+
+<TR>
+<TD>frnnn0supp , frnnn0fsupp</TD>
+<TD>~ nn0supp </TD>
+<TD>iset.mm does not yet have either the notation, or in some
+cases the theorems, related to the support of a function or
+a fintely supported function.</TD>
+</TR>
+
+<TR>
+<TD>elz2 , dfz2</TD>
+<TD><I>none yet</I></TD>
+<TD>Should be provable, but might need to wait until we have
+proved trichotomy of integers.</TD>
 </TR>
 
 </TABLE>
