@@ -75442,6 +75442,63 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
       R $.
   $}
 
+  ${
+    $d x y z $.  $d A x z $.  $d ps x z $.  $d ch x z $.  $d th x z $.
+    $d ta x z $.  $d ph y z $.
+    nn0ind-raph.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.
+    nn0ind-raph.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    nn0ind-raph.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    nn0ind-raph.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    nn0ind-raph.5 $e |- ps $.
+    nn0ind-raph.6 $e |- ( y e. NN0 -> ( ch -> th ) ) $.
+    $( Principle of Mathematical Induction (inference schema) on nonnegative
+       integers.  The first four hypotheses give us the substitution instances
+       we need; the last two are the basis and the induction step.  Raph Levien
+       remarks:  "This seems a bit painful.  I wonder if an explicit
+       substitution version would be easier."  (Contributed by Raph Levien,
+       10-Apr-2004.) $)
+    nn0ind-raph $p |- ( A e. NN0 -> ta ) $=
+      ( vz wcel cc0 wceq c1 wi cn0 cn wo elnn0 wsb wsbc dfsbcq2 cv sbhypf caddc
+      nfv co nfsbc1v 1ex c0ex wa 0nn0 eleq1a ax-mp mpbiri eqeq2 syl6bir pm5.74d
+      wb mpbii com12 vtocle sylc adantr oveq1 0p1e1 syl6eq eqeq2d imp mpbird ex
+      sbceq1a mpbid vtoclef nnnn0 syl nnind bicomd sylan9bb sylbird eqcoms jaoi
+      eqeq1 sylbi ) HUAPHUBPZHQRZUCEHUDWJEWKAFOUEAFSUFZCDEOGHAFOSUGACFOGUHZCFUK
+      JUIADFOWMSUJULZDFUKKUIAEFOHEFUKLUIWLFSAFSUMUNFUHZSRZAWLWPATGQUOWMQRZWPAWQ
+      WPUPADWQDWPWQWMUAPZCDQUAPWQWRTUQQUAWMURUSWQCTFQUOWQWOQRZCWQWSATWSCTWSABMI
+      UTWQWSACWQWSWOWMRACVDWMQWOVAJVBVCVEVFVGNVHVIWQWPADVDZWQWPWOWNRWTWQWNSWOWQ
+      WNQSUJULSWMQSUJVJVKVLVMKVBVNVOVPVGAFSVQVRVSWMUBPWRCDTWMVTNWAWBEQHQHRZETZF
+      QXBFUKUOWSXAWOHRZEWOQHWHWSXCEWSXCUPBEMWSBAXCEWSABIWCLWDVEVPWEVSWFWGWI $.
+  $}
+
+  ${
+    $d A x $.  $d ch x $.  $d et x $.  $d ph y $.  $d ps x $.  $d ta x $.
+    $d th x $.  $d x y ze $.
+    zindd.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.
+    zindd.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    zindd.3 $e |- ( x = ( y + 1 ) -> ( ph <-> ta ) ) $.
+    zindd.4 $e |- ( x = -u y -> ( ph <-> th ) ) $.
+    zindd.5 $e |- ( x = A -> ( ph <-> et ) ) $.
+    zindd.6 $e |- ( ze -> ps ) $.
+    zindd.7 $e |- ( ze -> ( y e. NN0 -> ( ch -> ta ) ) ) $.
+    zindd.8 $e |- ( ze -> ( y e. NN -> ( ch -> th ) ) ) $.
+    $( Principle of Mathematical Induction on all integers, deduction version.
+       The first five hypotheses give the substitutions; the last three are the
+       basis, the induction, and the extension to negative numbers.
+       (Contributed by Paul Chapman, 17-Apr-2009.)  (Proof shortened by Mario
+       Carneiro, 4-Jan-2017.) $)
+    zindd $p |- ( ze -> ( A e. ZZ -> et ) ) $=
+      ( cz wcel wral wi cv cneg cn0 cn wo cr znegcl elznn0nn sylib simpr orim2i
+      wa syl zcn negnegd eleq1d orbi2d mpbid cc0 wceq imbi2d c1 caddc com12 a2d
+      co nn0ind nnnn0 mpdd jaod syl5 ralrimiv wb sylan9eqr eqcomd bicomd rspcdv
+      negeq rspccv 3syl ) GDISUAZAHSUAJSTFUBGDISIUCZSTZWDUDZUETZWDUFTZUGZGDWEWG
+      WFUDZUFTZUGZWIWEWGWFUHTZWKUNZUGZWLWEWFSTWOWDUIWFUJUKWNWKWGWMWKULUMUOWEWKW
+      HWGWEWJWDUFWEWDWDUPUQURUSUTGWGDWHWGGDGAUBZGBUBZGCUBZGEUBZGDUBHIWFHUCZVAVB
+      ABGKVCZWTWDVBACGLVCZWTWDVDVEVHVBAEGMVCZWTWFVBZADGNVCPWDUETZGCEGXECEUBQVFV
+      GZVIVFGWHCDWHGCWHXEWRWDVJWPWQWRWSWRHIWDXAXBXCXBPXFVIUOVFRVKVLVMVNWCAHSWTS
+      TZWCAXGDAIWTUDZSWTUIXGWDXHVBZUNZADXJXDADVOXJWFWTXIXGWFXHUDWTWDXHVTXGWTWTU
+      PUQVPVQNUOVRVSVFVNAFHJSOWAWB $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
