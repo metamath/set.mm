@@ -75575,11 +75575,6 @@ $)
      (Contributed by Mario Carneiro, 17-Apr-2015.) $)
   df-dec $a |- ; A B = ( ( 10 x. A ) + B ) $.
 
-  $( A decimal number is a set.  (Contributed by Mario Carneiro,
-     17-Apr-2015.) $)
-  decex $p |- ; A B e. _V $=
-    ( cdc c10 cmul co caddc cvv df-dec ovex eqeltri ) ABCDAEFZBGFHABILBGJK $.
-
   $( Equality theorem for the decimal constructor.  (Contributed by Mario
      Carneiro, 17-Apr-2015.) $)
   deceq1 $p |- ( A = B -> ; A C = ; B C ) $=
