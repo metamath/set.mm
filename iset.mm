@@ -75571,8 +75571,8 @@ $)
 
   $( Define the "decimal constructor", which is used to build up "decimal
      integers" or "numeric terms" in base 10.  For example,
-     ` ( ; ; ; 1 0 0 0 + ; ; ; 2 0 0 0 ) = ; ; ; 3 0 0 0 ` ~ 1kp2ke3k .
-     (Contributed by Mario Carneiro, 17-Apr-2015.) $)
+     ` ( ; ; ; 1 0 0 0 + ; ; ; 2 0 0 0 ) = ; ; ; 3 0 0 0 ` .  (Contributed by
+     Mario Carneiro, 17-Apr-2015.) $)
   df-dec $a |- ; A B = ( ( 10 x. A ) + B ) $.
 
   $( Equality theorem for the decimal constructor.  (Contributed by Mario
