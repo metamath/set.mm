@@ -76396,6 +76396,236 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Rational numbers (as a subset of complex numbers)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c QQ $. $( The set of rational numbers (blackboard bold Q). $)
+
+  $( Extend class notation to include the class of rationals. $)
+  cq $a class QQ $.
+
+  $( Define the set of rational numbers.  Based on definition of rationals in
+     [Apostol] p. 22.  See ~ elq for the relation "is rational."  (Contributed
+     by NM, 8-Jan-2002.) $)
+  df-q $a |- QQ = ( / " ( ZZ X. NN ) ) $.
+
+  ${
+    $d x y z A $.
+    $( Membership in the set of rationals.  (Contributed by NM, 8-Jan-2002.)
+       (Revised by Mario Carneiro, 28-Jan-2014.) $)
+    elq $p |- ( A e. QQ <-> E. x e. ZZ E. y e. NN A = ( x / y ) ) $=
+      ( vz cq wcel cdiv cz cn cxp cima cv co wceq wrex df-q cc cc0 wss mp2an wb
+      eleq2i csn cdif wfn cmul crio df-div riotaex fnmpt2i zsscn wne nncn nnne0
+      eldifsn sylanbrc ssriv xpss12 ovelimab bitri ) CEFCGHIJZKZFZCALZBLZGMNBIO
+      AHOZEVBCPUBGQQRUCUDZJZUEVAVHSZVCVFUAABQVGVEDLUFMVDNZDQUGGABDUHVJDQUIUJHQS
+      IVGSVIUKAIVGVDIFVDQFVDRULVDVGFVDUMVDUNVDQRUOUPUQHQIVGURTABVHHICGUSTUT $.
+
+    $( If ` A ` is rational, then some integer multiple of it is an integer.
+       (Contributed by NM, 7-Nov-2008.)  (Revised by Mario Carneiro,
+       22-Jul-2014.) $)
+    qmulz $p |- ( A e. QQ -> E. x e. NN ( A x. x ) e. ZZ ) $=
+      ( vy cq wcel cv cdiv co wceq cn wrex cz elq rexcom wa cc zcn adantr sylbi
+      cmul adantl nncn cc0 nnne0 divcan1d simpr eqeltrd oveq1 eleq1d syl5ibrcom
+      wne rexlimdva reximia ) BDEBCFZAFZGHZIZAJKCLKZBUOTHZLEZAJKZCABMURUQCLKZAJ
+      KVAUQCALJNVBUTAJUOJEZUQUTCLVCUNLEZOZUTUQUPUOTHZLEVEVFUNLVEUNUOVDUNPEVCUNQ
+      UAVCUOPEVDUOUBRVCUOUCUKVDUOUDRUEVCVDUFUGUQUSVFLBUPUOTUHUIUJULUMSS $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The ratio of an integer and a positive integer is a rational number.
+       (Contributed by NM, 12-Jan-2002.) $)
+    znq $p |- ( ( A e. ZZ /\ B e. NN ) -> ( A / B ) e. QQ ) $=
+      ( vx vy cz wcel cn wa cdiv co cv wceq wrex eqid rspceov mp3an3 elq sylibr
+      cq ) AEFZBGFZHABIJZCKDKIJLDGMCEMZUBSFTUAUBUBLUCUBNCDEGABUBIOPCDUBQR $.
+  $}
+
+  ${
+    $d x y A $.
+    $( A rational number is a real number.  (Contributed by NM,
+       14-Nov-2002.) $)
+    qre $p |- ( A e. QQ -> A e. RR ) $=
+      ( vx vy cq wcel cv cdiv co wceq cn wrex cz cr elq cc0 wne zre nnre nnne0
+      wa jca redivcl 3expb syl2an eleq1 syl5ibrcom rexlimivv sylbi ) ADEABFZCFZ
+      GHZIZCJKBLKAMEZBCANULUMBCLJUILEZUJJEZTUMULUKMEZUNUIMEZUJMEZUJOPZTUPUOUIQU
+      OURUSUJRUJSUAUQURUSUPUIUJUBUCUDAUKMUEUFUGUH $.
+
+    $( An integer is a rational number.  (Contributed by NM, 9-Jan-2002.) $)
+    zq $p |- ( A e. ZZ -> A e. QQ ) $=
+      ( vx vy cv wceq cz wrex cdiv co cn wcel cq c1 div1d eqeq2d eqcom syl6rbbr
+      zcn 1nn oveq2 rspcev mpan syl6bi reximia risset elq 3imtr4i ) BDZAEZBFGAU
+      HCDZHIZEZCJGZBFGAFKALKUIUMBFUHFKZUIAUHMHIZEZUMUNUPAUHEUIUNUOUHAUNUHUHRNOU
+      HAPQMJKUPUMSULUPCMJUJMEUKUOAUJMUHHTOUAUBUCUDBAFUEBCAUFUG $.
+  $}
+
+  $( The integers are a subset of the rationals.  (Contributed by NM,
+     9-Jan-2002.) $)
+  zssq $p |- ZZ C_ QQ $=
+    ( vx cz cq cv zq ssriv ) ABCADEF $.
+
+  $( The nonnegative integers are a subset of the rationals.  (Contributed by
+     NM, 31-Jul-2004.) $)
+  nn0ssq $p |- NN0 C_ QQ $=
+    ( cn0 cz cq nn0ssz zssq sstri ) ABCDEF $.
+
+  $( The positive integers are a subset of the rationals.  (Contributed by NM,
+     31-Jul-2004.) $)
+  nnssq $p |- NN C_ QQ $=
+    ( cn cz cq nnssz zssq sstri ) ABCDEF $.
+
+  $( The rationals are a subset of the reals.  (Contributed by NM,
+     9-Jan-2002.) $)
+  qssre $p |- QQ C_ RR $=
+    ( vx cq cr cv qre ssriv ) ABCADEF $.
+
+  $( The rationals are a subset of the complex numbers.  (Contributed by NM,
+     2-Aug-2004.) $)
+  qsscn $p |- QQ C_ CC $=
+    ( cq cr cc qssre ax-resscn sstri ) ABCDEF $.
+
+  $( The set of rational numbers exists.  See also ~ qexALT .  (Contributed by
+     NM, 30-Jul-2004.)  (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  qex $p |- QQ e. _V $=
+    ( cq cc cnex qsscn ssexi ) ABCDE $.
+
+  $( A positive integer is rational.  (Contributed by NM, 17-Nov-2004.) $)
+  nnq $p |- ( A e. NN -> A e. QQ ) $=
+    ( cn cq nnssq sseli ) BCADE $.
+
+  $( A rational number is a complex number.  (Contributed by NM,
+     2-Aug-2004.) $)
+  qcn $p |- ( A e. QQ -> A e. CC ) $=
+    ( cq cc qsscn sseli ) BCADE $.
+
+  ${
+    $d w x y z $.
+    $( Alternate proof of ~ qex .  (Contributed by NM, 30-Jul-2004.)  (Revised
+       by Mario Carneiro, 16-Jun-2013.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    qexALT $p |- QQ e. _V $=
+      ( vy vz vx cq cz cn cv cdiv co cmpt2 crn cvv wcel wceq wrex elq eqid ovex
+      elrnmpt2 bitr4i eqriv zexALT nnexALT mpt2ex rnex eqeltri ) DABEFAGZBGZHIZ
+      JZKZLCDUKCGZDMULUINBFOAEOULUKMABULPABEFUIULUJUJQUGUHHRSTUAUJABEFUIUBUCUDU
+      EUF $.
+  $}
+
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.
+    $( Closure of addition of rationals.  (Contributed by NM, 1-Aug-2004.) $)
+    qaddcl $p |- ( ( A e. QQ /\ B e. QQ ) -> ( A + B ) e. QQ ) $=
+      ( vx vy vz vw vu vv cq wcel cv cdiv co wceq cn wrex cz caddc wa cc elq wi
+      cmul zmulcl sylan2 ad2ant2rl simpl adantl syl2anr zaddcld adantr ad2ant2l
+      nnz nnmulcl oveq12 cc0 wne zcn anim12i nncn nnne0 jca divadddiv sylan9eqr
+      syl2an an4s w3a rspceov sylibr syl3anc exp43 rexlimivv rexlimdvv syl2anb
+      imp ) AIJACKZDKZLMZNZDOPCQPZBEKZFKZLMZNZFOPEQPZABRMZIJZBIJCDAUAEFBUAVTWEW
+      GVTWDWGEFQOVSWAQJZWBOJZSZWDWGUBUBCDQOVPQJZVQOJZSZVSWJWDWGWMWJVSWDWGWMWJSZ
+      VSWDSZSVPWBUCMZWAVQUCMZRMZQJZVQWBUCMZOJZWFWRWTLMZNZWGWNWSWOWNWPWQWKWIWPQJ
+      ZWLWHWIWKWBQJXDWBUMVPWBUDUEUFWJWHVQQJZWQQJWMWHWIUGWLXEWKVQUMUHWAVQUDUIUJU
+      KWNXAWOWLWIXAWKWHVQWBUNULUKWOWNWFVRWCRMZXBAVRBWCRUOWKWHWLWIXFXBNZWKWHSVPT
+      JZWATJZSVQTJZVQUPUQZSZWBTJZWBUPUQZSZSXGWLWISWKXHWHXIVPURWAURUSWLXLWIXOWLX
+      JXKVQUTVQVAVBWIXMXNWBUTWBVAVBUSVPWAVQWBVCVEVFVDWSXAXCVGWFGKHKLMNHOPGQPWGG
+      HQOWRWTWFLVHGHWFUAVIVJVFVKVLVMVOVN $.
+
+    $( Closure law for the negative of a rational.  (Contributed by NM,
+       2-Aug-2004.)  (Revised by Mario Carneiro, 15-Sep-2014.) $)
+    qnegcl $p |- ( A e. QQ -> -u A e. QQ ) $=
+      ( vx vy cq wcel cv cdiv co wceq cn wrex cz cneg elq wa cc zcn adantr nncn
+      adantl cc0 wne nnne0 divnegd znegcl sylan eqeltrd negeq eleq1d syl5ibrcom
+      znq rexlimivv sylbi ) ADEABFZCFZGHZIZCJKBLKAMZDEZBCANUQUSBCLJUNLEZUOJEZOZ
+      USUQUPMZDEVBVCUNMZUOGHZDVBUNUOUTUNPEVAUNQRVAUOPEUTUOSTVAUOUAUBUTUOUCTUDUT
+      VDLEVAVEDEUNUEVDUOUKUFUGUQURVCDAUPUHUIUJULUM $.
+
+    $( Closure of multiplication of rationals.  (Contributed by NM,
+       1-Aug-2004.) $)
+    qmulcl $p |- ( ( A e. QQ /\ B e. QQ ) -> ( A x. B ) e. QQ ) $=
+      ( vx vy vz vw vv vu cq wcel cv cdiv co wceq cn wrex cz cmul wa cc nnmulcl
+      elq zmulcl anim12i an4s adantr oveq12 cc0 wne zcn ad2ant2r nncn nnne0 jca
+      ad2ant2l divmuldiv syl2anc sylan9eqr rspceov 3expa sylibr exp43 rexlimivv
+      wi rexlimdvv imp syl2anb ) AIJACKZDKZLMZNZDOPCQPZBEKZFKZLMZNZFOPEQPZABRMZ
+      IJZBIJCDAUBEFBUBVLVQVSVLVPVSEFQOVKVMQJZVNOJZSZVPVSVDVDCDQOVHQJZVIOJZSZVKW
+      BVPVSWEWBVKVPVSWEWBSZVKVPSZSVHVMRMZQJZVIVNRMZOJZSZVRWHWJLMZNZVSWFWLWGWCVT
+      WDWAWLWCVTSWIWDWASWKVHVMUCVIVNUAUDUEUFWGWFVRVJVORMZWMAVJBVORUGWFVHTJZVMTJ
+      ZSZVITJZVIUHUIZSZVNTJZVNUHUIZSZSZWOWMNWCVTWRWDWAWCWPVTWQVHUJVMUJUDUKWDWAX
+      EWCVTWDXAWAXDWDWSWTVIULVIUMUNWAXBXCVNULVNUMUNUDUOVHVMVIVNUPUQURWLWNSVRGKH
+      KLMNHOPGQPZVSWIWKWNXFGHQOWHWJVRLUSUTGHVRUBVAUQUEVBVCVEVFVG $.
+  $}
+
+  $( Closure of subtraction of rationals.  (Contributed by NM, 2-Aug-2004.) $)
+  qsubcl $p |- ( ( A e. QQ /\ B e. QQ ) -> ( A - B ) e. QQ ) $=
+    ( cq wcel wa cneg caddc co cmin wceq qcn negsub syl2an qnegcl qaddcl sylan2
+    cc eqeltrrd ) ACDZBCDZEABFZGHZABIHZCSAQDBQDUBUCJTAKBKABLMTSUACDUBCDBNAUAOPR
+    $.
+
+  ${
+    $d x y z w A $.
+    $( Closure of reciprocal of rationals.  (Contributed by NM, 3-Aug-2004.) $)
+    qreccl $p |- ( ( A e. QQ /\ A =/= 0 ) -> ( 1 / A ) e. QQ ) $=
+      ( vx vy vz vw cq wcel cc0 wne c1 cdiv co cv wceq cn wrex cz wi wa adantlr
+      elq cmul nnne0 ancli neeq1 cc zcn nncn anim12i divne0b 3expa sylan bicomd
+      wb sylan9bbr nnz zmulcl sylan2 adantr msqznn jca oveq2 divid oveq1d simpl
+      simpll simpr divdivdiv syl22anc eqtr3d anass1rs sylan9eqr an32s ex sylbid
+      an4s anasss rspceov sylibr syl8 rexlimivv sylbi imp ) AFGZAHIZJAKLZFGZWDA
+      BMZCMZKLZNZCOPBQPWEWGRZBCAUAWKWLBCQOWHQGZWIOGZSZWKWEWHWIUBLZQGZWHWHUBLZOG
+      ZSZWFWPWRKLZNZSZWGWNWMWNWIHIZSWKWEXCRZRZWNXDWIUCUDWMWNXDXFWOXDSZWKXEXGWKS
+      ZWEWHHIZXCWKWEWJHIZXGXIAWJHUEXGXIXJWOWHUFGZWIUFGZSZXDXIXJUNZWMXKWNXLWHUGW
+      IUHUIZXKXLXDXNWHWIUJUKULUMUOXHXIXCXHXISWTXBXGXIWTWKWOXIWTXDWOXISWQWSWOWQX
+      IWNWMWIQGWQWIUPWHWIUQURUSWMXIWSWNWHUTTVATTXGXIWKXBWKXGXISWFJWJKLZXAAWJJKV
+      BWOXIXDXPXANZWOXMXIXDSXQXOXKXIXLXDXQXKXISZXLXDSZSZWHWHKLZWJKLZXPXAXTYAJWJ
+      KXRYAJNXSWHVCUSVDXTXKXRXRXSYBXANXKXIXSVFXRXSVEZYCXRXSVGWHWHWHWIVHVIVJVPUL
+      VKVLVMVAVNVOVNVQURXCWFDMEMKLNEOPDQPZWGWQWSXBYDDEQOWPWRWFKVRUKDEWFUAVSVTWA
+      WBWC $.
+  $}
+
+  ${
+    $d x y z w A $.
+    $( Closure of division of rationals.  (Contributed by NM, 3-Aug-2004.) $)
+    qdivcl $p |- ( ( A e. QQ /\ B e. QQ /\ B =/= 0 ) -> ( A / B ) e. QQ ) $=
+      ( cq wcel cc0 wne w3a cdiv co c1 cmul cc wceq qcn id divrec syl3an qreccl
+      wa qmulcl sylan2 3impb eqeltrd ) ACDZBCDZBEFZGABHIZAJBHIZKIZCUDALDUEBLDUF
+      UFUGUIMANBNUFOABPQUDUEUFUICDZUEUFSUDUHCDUJBRAUHTUAUBUC $.
+  $}
+
+  $( Reverse closure law for addition of rationals.  (Contributed by NM,
+     2-Aug-2004.) $)
+  qrevaddcl $p |- ( B e. QQ ->
+                   ( ( A e. CC /\ ( A + B ) e. QQ ) <-> A e. QQ ) ) $=
+    ( cq wcel cc caddc co wa cmin qcn pncan sylan2 ancoms adantr qsubcl adantlr
+    wceq eqeltrrd ex wi qaddcl expcom impbid pm5.32da pm4.71ri syl6bbr ) BCDZAE
+    DZABFGZCDZHUHACDZHUKUGUHUJUKUGUHHZUJUKULUJUKULUJHUIBIGZACULUMAQZUJUHUGUNUGU
+    HBEDUNBJABKLMNUGUJUMCDZUHUJUGUOUIBOMPRSUGUKUJTUHUKUGUJABUAUBNUCUDUKUHAJUEUF
+    $.
+
+  $( The reciprocal of a positive integer is rational.  (Contributed by NM,
+     17-Nov-2004.) $)
+  nnrecq $p |- ( A e. NN -> ( 1 / A ) e. QQ ) $=
+    ( c1 cz wcel cn cdiv co cq 1z znq mpan ) BCDAEDBAFGHDIBAJK $.
+
+  $( The sum of an irrational number and a rational number is irrational.
+     (Contributed by NM, 7-Nov-2008.) $)
+  irradd $p |- ( ( A e. ( RR \ QQ ) /\ B e. QQ )
+                -> ( A + B ) e. ( RR \ QQ ) ) $=
+    ( cr cq cdif wcel wa caddc co wn eldif qre readdcl sylan2 adantlr wi qsubcl
+    cmin expcom cc adantl wceq qcn pncan syl2an eleq1d sylibd con3d com23 imp31
+    recn ex jca sylanb sylibr ) ACDEZFZBDFZGABHIZCFZUSDFZJZGZUSUPFUQACFZADFZJZG
+    ZURVCACDKVGURGUTVBVDURUTVFURVDBCFUTBLABMNOVDVFURVBVDURVFVBVDURVFVBPVDURGZVA
+    VEVHVAUSBRIZDFZVEURVAVJPVDVAURVJUSBQSUAVHVIADVDATFBTFVIAUBURAUKBUCABUDUEUFU
+    GUHULUIUJUMUNUSCDKUO $.
+
+  $( The product of an irrational with a nonzero rational is irrational.
+     (Contributed by NM, 7-Nov-2008.) $)
+  irrmul $p |- ( ( A e. ( RR \ QQ ) /\ B e. QQ /\ B =/= 0 )
+                -> ( A x. B ) e. ( RR \ QQ ) ) $=
+    ( cr cq cdif wcel cc0 wne w3a co wn wa eldif qre remulcl sylan2 wi 3expb cc
+    cmul ad2ant2r cdiv qdivcl expcom adantl wceq divcan4 syl3an1 syl3an2 eleq1d
+    qcn recn sylibd con3d ex com23 imp31 jca 3impb syl3an1b sylibr ) ACDEZFZBDF
+    ZBGHZIABTJZCFZVFDFZKZLZVFVBFVCACFZADFZKZLZVDVEVJACDMVNVDVEVJVNVDVELZLVGVIVK
+    VDVGVMVEVDVKBCFVGBNABOPUAVKVMVOVIVKVOVMVIVKVOVMVIQVKVOLZVHVLVPVHVFBUBJZDFZV
+    LVOVHVRQVKVHVOVRVHVDVEVRVFBUCRUDUEVPVQADVKVDVEVQAUFZVDVKBSFZVEVSBUKVKASFVTV
+    EVSAULABUGUHUIRUJUMUNUOUPUQURUSUTVFCDMVA $.
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
@@ -77609,6 +77839,10 @@ htmldef "ZZ" as "<IMG SRC='bbz.gif' WIDTH=11 HEIGHT=19 ALT=' ZZ' TITLE='ZZ'>";
   althtmldef "ZZ" as '&#8484;';
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "ZZ" as "\mathbb{Z}";
+htmldef "QQ" as "<IMG SRC='bbq.gif' WIDTH=13 HEIGHT=19 ALT=' QQ' TITLE='QQ'>";
+  althtmldef "QQ" as '&#8474;';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "QQ" as "\mathbb{Q}";
 htmldef "2" as "<IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT=' 2' TITLE='2'>";
   althtmldef "2" as '2';
   latexdef "2" as "2";
