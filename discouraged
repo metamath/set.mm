@@ -12137,7 +12137,7 @@
 "retbwax2" is used by "merco1lem2".
 "retbwax2" is used by "merco1lem3".
 "retbwax2" is used by "retbwax3".
-"rexsnsOLD" is used by "r19.12sn".
+"rexsnsOLD" is used by "r19.12snOLD".
 "riesz1" is used by "rnbra".
 "riesz3i" is used by "riesz1".
 "riesz3i" is used by "riesz4i".
@@ -17791,6 +17791,7 @@ New usage of "qlaxr3i" is discouraged (0 uses).
 New usage of "qlaxr4i" is discouraged (0 uses).
 New usage of "qlaxr5i" is discouraged (0 uses).
 New usage of "quoremnn0ALT" is discouraged (0 uses).
+New usage of "r19.12snOLD" is discouraged (0 uses).
 New usage of "r19.21biOLD" is discouraged (0 uses).
 New usage of "r19.21tOLD" is discouraged (0 uses).
 New usage of "r19.21vOLD" is discouraged (0 uses).
