@@ -75560,6 +75560,847 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     ( cz wcel c2 id 2z a1i zaddcld ) ABCZADIEDBCIFGH $.
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                               Decimal arithmetic
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c ; $.
+  $( Constant used for decimal constructor. $)
+  cdc $a class ; A B $.
+
+  $( Define the "decimal constructor", which is used to build up "decimal
+     integers" or "numeric terms" in base 10.  For example,
+     ` ( ; ; ; 1 0 0 0 + ; ; ; 2 0 0 0 ) = ; ; ; 3 0 0 0 ` ~ 1kp2ke3k .
+     (Contributed by Mario Carneiro, 17-Apr-2015.) $)
+  df-dec $a |- ; A B = ( ( 10 x. A ) + B ) $.
+
+  $( A decimal number is a set.  (Contributed by Mario Carneiro,
+     17-Apr-2015.) $)
+  decex $p |- ; A B e. _V $=
+    ( cdc c10 cmul co caddc cvv df-dec ovex eqeltri ) ABCDAEFZBGFHABILBGJK $.
+
+  $( Equality theorem for the decimal constructor.  (Contributed by Mario
+     Carneiro, 17-Apr-2015.) $)
+  deceq1 $p |- ( A = B -> ; A C = ; B C ) $=
+    ( wceq c10 cmul co caddc cdc oveq2 oveq1d df-dec 3eqtr4g ) ABDZEAFGZCHGEBFG
+    ZCHGACIBCINOPCHABEFJKACLBCLM $.
+
+  $( Equality theorem for the decimal constructor.  (Contributed by Mario
+     Carneiro, 17-Apr-2015.) $)
+  deceq2 $p |- ( A = B -> ; C A = ; C B ) $=
+    ( wceq c10 cmul co caddc cdc oveq2 df-dec 3eqtr4g ) ABDECFGZAHGMBHGCAICBIAB
+    MHJCAKCBKL $.
+
+  ${
+    deceq1i.1 $e |- A = B $.
+    $( Equality theorem for the decimal constructor.  (Contributed by Mario
+       Carneiro, 17-Apr-2015.) $)
+    deceq1i $p |- ; A C = ; B C $=
+      ( wceq cdc deceq1 ax-mp ) ABEACFBCFEDABCGH $.
+
+    $( Equality theorem for the decimal constructor.  (Contributed by Mario
+       Carneiro, 17-Apr-2015.) $)
+    deceq2i $p |- ; C A = ; C B $=
+      ( wceq cdc deceq2 ax-mp ) ABECAFCBFEDABCGH $.
+
+    deceq12i.2 $e |- C = D $.
+    $( Equality theorem for the decimal constructor.  (Contributed by Mario
+       Carneiro, 17-Apr-2015.) $)
+    deceq12i $p |- ; A C = ; B D $=
+      ( cdc deceq1i deceq2i eqtri ) ACGBCGBDGABCEHCDBFIJ $.
+  $}
+
+  ${
+    numnncl.1 $e |- T e. NN0 $.
+    numnncl.2 $e |- A e. NN0 $.
+    ${
+      numnncl.3 $e |- B e. NN $.
+      $( Closure for a numeral (with units place).  (Contributed by Mario
+         Carneiro, 18-Feb-2014.) $)
+      numnncl $p |- ( ( T x. A ) + B ) e. NN $=
+        ( cmul co cn0 wcel cn caddc nn0mulcli nn0nnaddcl mp2an ) CAGHZIJBKJPBLH
+        KJCADEMFPBNO $.
+    $}
+
+    $( Add a zero in the units place.  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    num0u $p |- ( T x. A ) = ( ( T x. A ) + 0 ) $=
+      ( cmul co cc0 caddc nn0mulcli nn0cni addid1i eqcomi ) BAEFZGHFMMMBACDIJKL
+      $.
+
+    $( Add a zero in the higher places.  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    num0h $p |- A = ( ( T x. 0 ) + A ) $=
+      ( cc0 cmul co caddc nn0cni mul01i oveq1i addid2i eqtr2i ) BEFGZAHGEAHGANE
+      AHBBCIJKAADILM $.
+
+    numcl.2 $e |- B e. NN0 $.
+    $( Closure for a decimal integer (with units place).  (Contributed by Mario
+       Carneiro, 18-Feb-2014.) $)
+    numcl $p |- ( ( T x. A ) + B ) e. NN0 $=
+      ( cmul co nn0mulcli nn0addcli ) CAGHBCADEIFJ $.
+
+    numsuc.4 $e |- ( B + 1 ) = C $.
+    numsuc.5 $e |- N = ( ( T x. A ) + B ) $.
+    $( The successor of a decimal integer (no carry).  (Contributed by Mario
+       Carneiro, 18-Feb-2014.) $)
+    numsuc $p |- ( N + 1 ) = ( ( T x. A ) + C ) $=
+      ( c1 caddc co cmul oveq1i nn0mulcli nn0cni ax-1cn addassi oveq2i 3eqtri )
+      EKLMDANMZBLMZKLMUBBKLMZLMUBCLMEUCKLJOUBBKUBDAFGPQBHQRSUDCUBLITUA $.
+  $}
+
+  ${
+    decnncl.1 $e |- A e. NN0 $.
+    decnncl.2 $e |- B e. NN $.
+    $( Closure for a numeral.  (Contributed by Mario Carneiro, 17-Apr-2015.) $)
+    decnncl $p |- ; A B e. NN $=
+      ( cdc c10 cmul co caddc cn df-dec 10nn0 numnncl eqeltri ) ABEFAGHBIHJABKA
+      BFLCDMN $.
+  $}
+
+  ${
+    deccl.1 $e |- A e. NN0 $.
+    deccl.2 $e |- B e. NN0 $.
+    $( Closure for a numeral.  (Contributed by Mario Carneiro, 17-Apr-2015.) $)
+    deccl $p |- ; A B e. NN0 $=
+      ( cdc c10 cmul co caddc cn0 df-dec 10nn0 numcl eqeltri ) ABEFAGHBIHJABKAB
+      FLCDMN $.
+  $}
+
+  ${
+    dec0u.1 $e |- A e. NN0 $.
+    $( Add a zero in the units place.  (Contributed by Mario Carneiro,
+       17-Apr-2015.) $)
+    dec0u $p |- ( 10 x. A ) = ; A 0 $=
+      ( c10 cmul co cc0 caddc cdc 10nn0 num0u df-dec eqtr4i ) CADEZMFGEAFHACIBJ
+      AFKL $.
+
+    $( Add a zero in the higher places.  (Contributed by Mario Carneiro,
+       17-Apr-2015.) $)
+    dec0h $p |- A = ; 0 A $=
+      ( c10 cc0 cmul co caddc cdc 10nn0 num0h df-dec eqtr4i ) ACDEFAGFDAHACIBJD
+      AKL $.
+  $}
+
+  ${
+    numnncl2.1 $e |- T e. NN $.
+    numnncl2.2 $e |- A e. NN $.
+    $( Closure for a decimal integer (zero units place).  (Contributed by Mario
+       Carneiro, 9-Mar-2015.) $)
+    numnncl2 $p |- ( ( T x. A ) + 0 ) e. NN $=
+      ( cmul co cc0 caddc cn nnmulcli nncni addid1i eqeltri ) BAEFZGHFNINNBACDJ
+      ZKLOM $.
+  $}
+
+  ${
+    decnncl2.1 $e |- A e. NN $.
+    $( Closure for a decimal integer (zero units place).  (Contributed by Mario
+       Carneiro, 17-Apr-2015.) $)
+    decnncl2 $p |- ; A 0 e. NN $=
+      ( cc0 cdc c10 cmul co caddc cn df-dec 10nn numnncl2 eqeltri ) ACDEAFGCHGI
+      ACJAEKBLM $.
+  $}
+
+  ${
+    numlt.1 $e |- T e. NN $.
+    numlt.2 $e |- A e. NN0 $.
+    numlt.3 $e |- B e. NN0 $.
+    ${
+      numlt.4 $e |- C e. NN $.
+      numlt.5 $e |- B < C $.
+      $( Comparing two decimal integers (equal higher places).  (Contributed by
+         Mario Carneiro, 18-Feb-2014.) $)
+      numlt $p |- ( ( T x. A ) + B ) < ( ( T x. A ) + C ) $=
+        ( clt wbr cmul co caddc nn0rei nnrei nnnn0i nn0mulcli ltadd2i mpbi ) BC
+        JKDALMZBNMUACNMJKIBCUABGOCHPUADADEQFROST $.
+    $}
+
+    numltc.3 $e |- C e. NN0 $.
+    numltc.4 $e |- D e. NN0 $.
+    numltc.5 $e |- C < T $.
+    numltc.6 $e |- A < B $.
+    $( Comparing two decimal integers (unequal higher places).  (Contributed by
+       Mario Carneiro, 18-Feb-2014.) $)
+    numltc $p |- ( ( T x. A ) + C ) < ( ( T x. B ) + D ) $=
+      ( cmul co caddc clt wbr cle nn0rei wcel numlt nnrei ax-1cn adddii mulid1i
+      c1 recni oveq2i eqtri breqtrri cn0 wb nn0ltp1le mp2an cc0 nngt0i peano2re
+      mpbi cr ax-mp lemul2i remulcli readdcli ltletri nn0addge1i ) EAMNZCONZEBM
+      NZPQZVHVHDONZRQVGVJPQVGEAUFONZMNZPQVLVHRQZVIVGVFEONZVLPACEEFGIFKUAVLVFEUF
+      MNZONVNEAUFEEFUBZUGZAAGSZUGUCUDVOEVFOEVQUEUHUIUJVKBRQZVMABPQZVSLAUKTBUKTV
+      TVSULGHABUMUNURUOEPQVSVMULEFUPVKBEAUSTVKUSTVRAUQUTZBHSZVPVAUTURVGVLVHVFCE
+      AVPVRVBCISVCZEVKVPWAVBEBVPWBVBZVDUNVHDWDJVEVGVHVJWCWDVHDWDDJSVCVDUN $.
+  $}
+
+  ${
+    declt.1 $e |- A e. NN0 $.
+    declt.2 $e |- B e. NN0 $.
+    ${
+      declt.3 $e |- C e. NN $.
+      declt.4 $e |- B < C $.
+      $( Comparing two decimal integers (equal higher places).  (Contributed by
+         Mario Carneiro, 17-Apr-2015.) $)
+      declt $p |- ; A B < ; A C $=
+        ( c10 cmul co caddc cdc clt 10nn numlt df-dec 3brtr4i ) HAIJZBKJRCKJABL
+        ACLMABCHNDEFGOABPACPQ $.
+    $}
+
+    ${
+      decltc.3 $e |- C e. NN0 $.
+      decltc.4 $e |- D e. NN0 $.
+      decltc.5 $e |- C < 10 $.
+      decltc.6 $e |- A < B $.
+      $( Comparing two decimal integers (unequal higher places).  (Contributed
+         by Mario Carneiro, 18-Feb-2014.) $)
+      decltc $p |- ; A C < ; B D $=
+        ( c10 cmul co caddc cdc clt 10nn numltc df-dec 3brtr4i ) KALMCNMKBLMDNM
+        ACOBDOPABCDKQEFGHIJRACSBDST $.
+    $}
+
+    decsuc.3 $e |- ( B + 1 ) = C $.
+    decsuc.4 $e |- N = ; A B $.
+    $( The successor of a decimal integer (no carry).  (Contributed by Mario
+       Carneiro, 17-Apr-2015.) $)
+    decsuc $p |- ( N + 1 ) = ; A C $=
+      ( c1 caddc co c10 cmul cdc 10nn0 df-dec eqtri numsuc eqtr4i ) DIJKLAMKZCJ
+      KACNABCLDOEFGDABNTBJKHABPQRACPS $.
+  $}
+
+  ${
+    numlti.1 $e |- T e. NN $.
+    numlti.2 $e |- A e. NN $.
+    numlti.3 $e |- B e. NN0 $.
+    numlti.4 $e |- C e. NN0 $.
+    numlti.5 $e |- C < T $.
+    $( Comparing a digit to a decimal integer.  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    numlti $p |- C < ( ( T x. A ) + B ) $=
+      ( cc0 cmul co caddc clt nnnn0i num0h 0nn0 nngt0i numltc eqbrtri ) CDJKLCM
+      LDAKLBMLNCDDEOHPJACBDEQAFOHGIAFRST $.
+  $}
+
+  ${
+    declti.1 $e |- A e. NN $.
+    declti.2 $e |- B e. NN0 $.
+    declti.3 $e |- C e. NN0 $.
+    declti.4 $e |- C < 10 $.
+    $( Comparing a digit to a decimal integer.  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    declti $p |- C < ; A B $=
+      ( c10 cmul co caddc cdc clt 10nn numlti df-dec breqtrri ) CHAIJBKJABLMABC
+      HNDEFGOABPQ $.
+  $}
+
+  ${
+    numsucc.1 $e |- Y e. NN0 $.
+    numsucc.2 $e |- T = ( Y + 1 ) $.
+    numsucc.3 $e |- A e. NN0 $.
+    numsucc.4 $e |- ( A + 1 ) = B $.
+    numsucc.5 $e |- N = ( ( T x. A ) + Y ) $.
+    $( The successor of a decimal integer (with carry).  (Contributed by Mario
+       Carneiro, 18-Feb-2014.) $)
+    numsucc $p |- ( N + 1 ) = ( ( T x. B ) + 0 ) $=
+      ( c1 caddc co cmul cc0 cn0 1nn0 nn0addcli nn0cni oveq2i 3eqtr4ri eqeltrri
+      eqeltri mulid1i ax-1cn adddii eqcomi numsuc num0u 3eqtri ) DKLMZCAKLMZNMZ
+      CBNMZUNOLMCANMZCKNMZLMUOCLMUMUKUPCUOLCCCEKLMZPGEKFQRUCZSZUDTCAKUSAHSUEUFA
+      ECCDURHFCUQGUGJUHUAULBCNITBCURULBPIAKHQRUBUIUJ $.
+  $}
+
+  ${
+    decsucc.1 $e |- A e. NN0 $.
+    decsucc.2 $e |- ( A + 1 ) = B $.
+    decsucc.3 $e |- N = ; A 9 $.
+    $( The successor of a decimal integer (with carry).  (Contributed by Mario
+       Carneiro, 18-Feb-2014.) $)
+    decsucc $p |- ( N + 1 ) = ; B 0 $=
+      ( c1 caddc co c10 cmul cc0 cdc c9 9nn0 df-10 df-dec eqtri numsucc eqtr4i
+      ) CGHIJBKILHIBLMABJCNOPDECANMJAKINHIFANQRSBLQT $.
+  $}
+
+  $( The successor of zero.  (Contributed by Mario Carneiro, 18-Feb-2014.) $)
+  1e0p1 $p |- 1 = ( 0 + 1 ) $=
+    ( cc0 c1 caddc co 0p1e1 eqcomi ) ABCDBEF $.
+
+  $( Ten plus an integer.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  dec10p $p |- ( 10 + A ) = ; 1 A $=
+    ( c1 cdc c10 cmul co caddc df-dec 10nn nncni mulid1i oveq1i eqtr2i ) BACDBE
+    FZAGFDAGFBAHNDAGDDIJKLM $.
+
+  $( The decimal form of 10.  NB:  In our presentations of large numbers later
+     on, we will use our symbol for 10 at the highest digits when advantageous,
+     because we can use this theorem to convert back to "long form" (where each
+     digit is in the range 0-9) with no extra effort.  However, we _cannot_ do
+     this for lower digits while maintaining the ease of use of the decimal
+     system, since it requires nontrivial number knowledge (more than just
+     equality theorems) to convert back.  (Contributed by Mario Carneiro,
+     18-Feb-2014.) $)
+  dec10 $p |- 10 = ; 1 0 $=
+    ( c10 cc0 caddc co c1 cdc 10nn nncni addid1i dec10p eqtr3i ) ABCDAEBFAAGHIB
+    JK $.
+
+  ${
+    numma.1 $e |- T e. NN0 $.
+    numma.2 $e |- A e. NN0 $.
+    numma.3 $e |- B e. NN0 $.
+    numma.4 $e |- C e. NN0 $.
+    numma.5 $e |- D e. NN0 $.
+    numma.6 $e |- M = ( ( T x. A ) + B ) $.
+    numma.7 $e |- N = ( ( T x. C ) + D ) $.
+    ${
+      numma.8 $e |- P e. NN0 $.
+      numma.9 $e |- ( ( A x. P ) + C ) = E $.
+      numma.10 $e |- ( ( B x. P ) + D ) = F $.
+      $( Perform a multiply-add of two decimal integers ` M ` and ` N ` against
+         a fixed multiplicand ` P ` (no carry).  (Contributed by Mario
+         Carneiro, 18-Feb-2014.) $)
+      numma $p |- ( ( M x. P ) + N ) = ( ( T x. E ) + F ) $=
+        ( cmul caddc oveq1i oveq12i nn0cni mulcli adddii mulassi eqtr4i adddiri
+        co add4i oveq2i 3eqtr2i ) IEUAUKZJUBUKFAUAUKZBUBUKZEUAUKZFCUAUKZDUBUKZU
+        BUKZFAEUAUKZCUBUKZUAUKZBEUAUKZDUBUKZUBUKZFGUAUKZHUBUKUOURJUTUBIUQEUAPUC
+        QUDVGUPEUAUKZUSUBUKZVFUBUKZVAVDVJVFUBVDFVBUAUKZUSUBUKVJFVBCFKUEZAEALUEZ
+        ERUEZUFCNUEZUGVIVLUSUBFAEVMVNVOUHUCUIUCVAVIVEUBUKZUTUBUKVKURVQUTUBUPBEF
+        AVMVNUFZBMUEZVOUJUCVIUSVEDUPEVRVOUFFCVMVPUFBEVSVOUFDOUEULUIUIVDVHVFHUBV
+        CGFUASUMTUDUN $.
+    $}
+
+    ${
+      nummac.8 $e |- P e. NN0 $.
+      nummac.9 $e |- F e. NN0 $.
+      nummac.10 $e |- G e. NN0 $.
+      nummac.11 $e |- ( ( A x. P ) + ( C + G ) ) = E $.
+      nummac.12 $e |- ( ( B x. P ) + D ) = ( ( T x. G ) + F ) $.
+      $( Perform a multiply-add of two decimal integers ` M ` and ` N ` against
+         a fixed multiplicand ` P ` (with carry).  (Contributed by Mario
+         Carneiro, 18-Feb-2014.) $)
+      nummac $p |- ( ( M x. P ) + N ) = ( ( T x. E ) + F ) $=
+        ( cmin co cmul caddc nn0cni mulcli addassi eqtri addcli eqeltrri subdii
+        oveq1i wceq subadd2i mpbir eqcomi numma wcel npcan mp2an subcli 3eqtr4i
+        cc eqtr3i ) FGIUDUEZUFUEZFIUFUEZHUGUEZUGUEFGUFUEZVJUDUEZVKUGUEZJEUFUEKU
+        GUEVLHUGUEZVIVMVKUGFGIFLUHZAEUFUEZCUGUEZIUGUEZGVFVSVQCIUGUEUGUEGVQCIAEA
+        MUHESUHUIZCOUHZIUAUHZUJUBUKZVRIVQCVTWAULZWBULUMZWBUNUOABCDEFVHVKJKLMNOP
+        QRSVHVRVHVRUPVSGUPWCGIVRWEWBWDUQURUSUCUTVMVJUGUEZHUGUEVOVNWFVLHUGVLVFVA
+        VJVFVAWFVLUPFGVPWEUIZFIVPWBUIZVLVJVBVCUOVMVJHVLVJWGWHVDWHHTUHUJVGVE $.
+    $}
+
+    ${
+      numma2c.8 $e |- P e. NN0 $.
+      numma2c.9 $e |- F e. NN0 $.
+      numma2c.10 $e |- G e. NN0 $.
+      numma2c.11 $e |- ( ( P x. A ) + ( C + G ) ) = E $.
+      numma2c.12 $e |- ( ( P x. B ) + D ) = ( ( T x. G ) + F ) $.
+      $( Perform a multiply-add of two decimal integers ` M ` and ` N ` against
+         a fixed multiplicand ` P ` (with carry).  (Contributed by Mario
+         Carneiro, 18-Feb-2014.) $)
+      numma2c $p |- ( ( P x. M ) + N ) = ( ( T x. E ) + F ) $=
+        ( cmul co caddc nn0cni cn0 numcl eqeltri mulcomi oveq1i eqtri nummac )
+        EJUDUEZKUFUEJEUDUEZKUFUEFGUDUEHUFUEUOUPKUFEJESUGZJJFAUDUEBUFUEUHQABFLMN
+        UIUJUGUKULABCDEFGHIJKLMNOPQRSTUAAEUDUEZCIUFUEZUFUEEAUDUEZUSUFUEGURUTUSU
+        FAEAMUGUQUKULUBUMBEUDUEZDUFUEEBUDUEZDUFUEFIUDUEHUFUEVAVBDUFBEBNUGUQUKUL
+        UCUMUNUM $.
+    $}
+
+    ${
+      numadd.8 $e |- ( A + C ) = E $.
+      numadd.9 $e |- ( B + D ) = F $.
+      $( Add two decimal integers ` M ` and ` N ` (no carry).  (Contributed by
+         Mario Carneiro, 18-Feb-2014.) $)
+      numadd $p |- ( M + N ) = ( ( T x. E ) + F ) $=
+        ( co caddc c1 cmul numcl eqeltri nn0cni mulid1i oveq1i 1nn0 eqtri numma
+        cn0 eqtr3i ) HUAUBSZITSHITSEFUBSGTSUMHITHHHEAUBSBTSUKOABEJKLUCUDUEUFUGA
+        BCDUAEFGHIJKLMNOPUHAUAUBSZCTSACTSFUNACTAAKUEUFUGQUIBUAUBSZDTSBDTSGUOBDT
+        BBLUEUFUGRUIUJUL $.
+    $}
+
+    ${
+      numaddc.8 $e |- F e. NN0 $.
+      numaddc.9 $e |- ( ( A + C ) + 1 ) = E $.
+      numaddc.10 $e |- ( B + D ) = ( ( T x. 1 ) + F ) $.
+      $( Add two decimal integers ` M ` and ` N ` (with carry).  (Contributed
+         by Mario Carneiro, 18-Feb-2014.) $)
+      numaddc $p |- ( M + N ) = ( ( T x. E ) + F ) $=
+        ( co c1 cmul caddc cn0 numcl eqeltri nn0cni mulid1i oveq1i 1nn0 addassi
+        ax-1cn 3eqtr2i eqtri nummac eqtr3i ) HUAUBTZIUCTHIUCTEFUBTGUCTUQHIUCHHH
+        EAUBTBUCTUDOABEJKLUEUFUGUHUIABCDUAEFGUAHIJKLMNOPUJQUJAUAUBTZCUAUCTZUCTA
+        USUCTACUCTUAUCTFURAUSUCAAKUGZUHUIACUAUTCMUGULUKRUMBUAUBTZDUCTBDUCTEUAUB
+        TGUCTVABDUCBBLUGUHUISUNUOUP $.
+    $}
+  $}
+
+  ${
+    nummul1c.1 $e |- T e. NN0 $.
+    nummul1c.2 $e |- P e. NN0 $.
+    nummul1c.3 $e |- A e. NN0 $.
+    nummul1c.4 $e |- B e. NN0 $.
+    nummul1c.5 $e |- N = ( ( T x. A ) + B ) $.
+    nummul1c.6 $e |- D e. NN0 $.
+    nummul1c.7 $e |- E e. NN0 $.
+    ${
+      nummul1c.8 $e |- ( ( A x. P ) + E ) = C $.
+      nummul1c.9 $e |- ( B x. P ) = ( ( T x. E ) + D ) $.
+      $( The product of a decimal integer with a number.  (Contributed by Mario
+         Carneiro, 18-Feb-2014.) $)
+      nummul1c $p |- ( N x. P ) = ( ( T x. C ) + D ) $=
+        ( co cc0 caddc cmul cn0 numcl eqeltri num0u num0h nn0cni addid2i oveq2i
+        0nn0 eqtri eqtr3i nummac ) HEUARZUNSTRFCUARDTREHHFAUARBTRUBMABFIKLUCUDJ
+        UEABSSEFCDGHSIKLUJUJMSFIUJUFJNOAEUARZSGTRZTRUOGTRCUPGUOTGGOUGUHUIPUKBEU
+        ARZUQSTRFGUARDTREBLJUEQULUMUK $.
+    $}
+
+    ${
+      nummul2c.7 $e |- ( ( P x. A ) + E ) = C $.
+      nummul2c.8 $e |- ( P x. B ) = ( ( T x. E ) + D ) $.
+      $( The product of a decimal integer with a number (with carry).
+         (Contributed by Mario Carneiro, 18-Feb-2014.) $)
+      nummul2c $p |- ( P x. N ) = ( ( T x. C ) + D ) $=
+        ( cmul co caddc cn0 numcl eqeltri nn0cni oveq1i eqtri mulcomli nummul1c
+        mulcomi ) HEFCRSDTSHHFARSBTSUAMABFIKLUBUCUDEJUDZABCDEFGHIJKLMNOAERSZGTS
+        EARSZGTSCUKULGTAEAKUDUJUIUEPUFEBFGRSDTSUJBLUDQUGUHUG $.
+    $}
+  $}
+
+  ${
+    decma.1 $e |- A e. NN0 $.
+    decma.2 $e |- B e. NN0 $.
+    decma.3 $e |- C e. NN0 $.
+    decma.4 $e |- D e. NN0 $.
+    decma.5 $e |- M = ; A B $.
+    decma.6 $e |- N = ; C D $.
+    ${
+      decma.7 $e |- P e. NN0 $.
+      decma.8 $e |- ( ( A x. P ) + C ) = E $.
+      decma.9 $e |- ( ( B x. P ) + D ) = F $.
+      $( Perform a multiply-add of two numerals ` M ` and ` N ` against a fixed
+         multiplicand ` P ` (no carry).  (Contributed by Mario Carneiro,
+         18-Feb-2014.) $)
+      decma $p |- ( ( M x. P ) + N ) = ; E F $=
+        ( cmul co caddc c10 cdc 10nn0 df-dec eqtri numma eqtr4i ) HESTIUATUBFST
+        GUATFGUCABCDEUBFGHIUDJKLMHABUCUBASTBUATNABUEUFICDUCUBCSTDUATOCDUEUFPQRU
+        GFGUEUH $.
+    $}
+
+    ${
+      decmac.7 $e |- P e. NN0 $.
+      decmac.8 $e |- F e. NN0 $.
+      decmac.9 $e |- G e. NN0 $.
+      decmac.10 $e |- ( ( A x. P ) + ( C + G ) ) = E $.
+      decmac.11 $e |- ( ( B x. P ) + D ) = ; G F $.
+      $( Perform a multiply-add of two numerals ` M ` and ` N ` against a fixed
+         multiplicand ` P ` (with carry).  (Contributed by Mario Carneiro,
+         18-Feb-2014.) $)
+      decmac $p |- ( ( M x. P ) + N ) = ; E F $=
+        ( cmul co caddc c10 cdc 10nn0 df-dec eqtri nummac eqtr4i ) IEUBUCJUDUCU
+        EFUBUCGUDUCFGUFABCDEUEFGHIJUGKLMNIABUFUEAUBUCBUDUCOABUHUIJCDUFUECUBUCDU
+        DUCPCDUHUIQRSTBEUBUCDUDUCHGUFUEHUBUCGUDUCUAHGUHUIUJFGUHUK $.
+    $}
+
+    ${
+      decma2c.7 $e |- P e. NN0 $.
+      decma2c.8 $e |- F e. NN0 $.
+      decma2c.9 $e |- G e. NN0 $.
+      decma2c.10 $e |- ( ( P x. A ) + ( C + G ) ) = E $.
+      decma2c.11 $e |- ( ( P x. B ) + D ) = ; G F $.
+      $( Perform a multiply-add of two numerals ` M ` and ` N ` against a fixed
+         multiplicand ` P ` (with carry).  (Contributed by Mario Carneiro,
+         18-Feb-2014.) $)
+      decma2c $p |- ( ( P x. M ) + N ) = ; E F $=
+        ( cmul co caddc c10 cdc 10nn0 df-dec eqtri numma2c eqtr4i ) EIUBUCJUDUC
+        UEFUBUCGUDUCFGUFABCDEUEFGHIJUGKLMNIABUFUEAUBUCBUDUCOABUHUIJCDUFUECUBUCD
+        UDUCPCDUHUIQRSTEBUBUCDUDUCHGUFUEHUBUCGUDUCUAHGUHUIUJFGUHUK $.
+    $}
+
+    ${
+      decadd.7 $e |- ( A + C ) = E $.
+      decadd.8 $e |- ( B + D ) = F $.
+      $( Add two numerals ` M ` and ` N ` (no carry).  (Contributed by Mario
+         Carneiro, 18-Feb-2014.) $)
+      decadd $p |- ( M + N ) = ; E F $=
+        ( caddc co c10 cmul cdc 10nn0 df-dec eqtri numadd eqtr4i ) GHQRSETRFQRE
+        FUAABCDSEFGHUBIJKLGABUASATRBQRMABUCUDHCDUASCTRDQRNCDUCUDOPUEEFUCUF $.
+    $}
+
+    decaddc.8 $e |- ( ( A + C ) + 1 ) = E $.
+    ${
+      decaddc.7 $e |- F e. NN0 $.
+      decaddc.9 $e |- ( B + D ) = ; 1 F $.
+      $( Add two numerals ` M ` and ` N ` (with carry).  (Contributed by Mario
+         Carneiro, 18-Feb-2014.) $)
+      decaddc $p |- ( M + N ) = ; E F $=
+        ( caddc co c10 cmul cdc 10nn0 df-dec eqtri c1 numaddc eqtr4i ) GHRSTEUA
+        SFRSEFUBABCDTEFGHUCIJKLGABUBTAUASBRSMABUDUEHCDUBTCUASDRSNCDUDUEPOBDRSUF
+        FUBTUFUASFRSQUFFUDUEUGEFUDUH $.
+    $}
+
+    decaddc2.9 $e |- ( B + D ) = 10 $.
+    $( Add two numerals ` M ` and ` N ` (with carry).  (Contributed by Mario
+       Carneiro, 18-Feb-2014.) $)
+    decaddc2 $p |- ( M + N ) = ; E 0 $=
+      ( cc0 0nn0 caddc co c10 c1 cdc dec10 eqtri decaddc ) ABCDEPFGHIJKLMNQBDRS
+      TUAPUBOUCUDUE $.
+  $}
+
+  ${
+    decaddi.1 $e |- A e. NN0 $.
+    decaddi.2 $e |- B e. NN0 $.
+    decaddi.3 $e |- N e. NN0 $.
+    decaddi.4 $e |- M = ; A B $.
+    ${
+      decaddi.5 $e |- ( B + N ) = C $.
+      $( Add two numerals ` M ` and ` N ` (no carry).  (Contributed by Mario
+         Carneiro, 18-Feb-2014.) $)
+      decaddi $p |- ( M + N ) = ; A C $=
+        ( cc0 0nn0 dec0h nn0cni addid1i decadd ) ABKEACDEFGLHIEHMAAFNOJP $.
+    $}
+
+    decaddci.5 $e |- ( A + 1 ) = D $.
+    ${
+      decaddci.6 $e |- C e. NN0 $.
+      decaddci.7 $e |- ( B + N ) = ; 1 C $.
+      $( Add two numerals ` M ` and ` N ` (no carry).  (Contributed by Mario
+         Carneiro, 18-Feb-2014.) $)
+      decaddci $p |- ( M + N ) = ; D C $=
+        ( cc0 0nn0 dec0h caddc co c1 nn0cni addid1i oveq1i eqtri decaddc ) ABNF
+        DCEFGHOIJFIPANQRZSQRASQRDUEASQAAGTUAUBKUCLMUD $.
+    $}
+
+    ${
+      decaddci2.6 $e |- ( B + N ) = 10 $.
+      $( Add two numerals ` M ` and ` N ` (no carry).  (Contributed by Mario
+         Carneiro, 18-Feb-2014.) $)
+      decaddci2 $p |- ( M + N ) = ; D 0 $=
+        ( cc0 0nn0 caddc co c10 c1 cdc dec10 eqtri decaddci ) ABLCDEFGHIJMBENOP
+        QLRKSTUA $.
+    $}
+  $}
+
+  ${
+    decmul1c.1 $e |- P e. NN0 $.
+    decmul1c.2 $e |- A e. NN0 $.
+    decmul1c.3 $e |- B e. NN0 $.
+    decmul1c.4 $e |- N = ; A B $.
+    decmul1c.5 $e |- D e. NN0 $.
+    decmul1c.6 $e |- E e. NN0 $.
+    ${
+      decmul1c.7 $e |- ( ( A x. P ) + E ) = C $.
+      decmul1c.8 $e |- ( B x. P ) = ; E D $.
+      $( The product of a numeral with a number.  (Contributed by Mario
+         Carneiro, 18-Feb-2014.) $)
+      decmul1c $p |- ( N x. P ) = ; C D $=
+        ( cmul co c10 caddc cdc 10nn0 df-dec eqtri nummul1c eqtr4i ) GEPQRCPQDS
+        QCDTABCDERFGUAHIJGABTRAPQBSQKABUBUCLMNBEPQFDTRFPQDSQOFDUBUCUDCDUBUE $.
+    $}
+
+    decmul2c.7 $e |- ( ( P x. A ) + E ) = C $.
+    decmul2c.8 $e |- ( P x. B ) = ; E D $.
+    $( The product of a numeral with a number (with carry).  (Contributed by
+       Mario Carneiro, 18-Feb-2014.) $)
+    decmul2c $p |- ( P x. N ) = ; C D $=
+      ( cmul co c10 caddc cdc 10nn0 df-dec eqtri nummul2c eqtr4i ) EGPQRCPQDSQC
+      DTABCDERFGUAHIJGABTRAPQBSQKABUBUCLMNEBPQFDTRFPQDSQOFDUBUCUDCDUBUE $.
+  $}
+
+  ${
+    6p5lem.1 $e |- A e. NN0 $.
+    6p5lem.2 $e |- D e. NN0 $.
+    6p5lem.3 $e |- E e. NN0 $.
+    6p5lem.4 $e |- B = ( D + 1 ) $.
+    6p5lem.5 $e |- C = ( E + 1 ) $.
+    6p5lem.6 $e |- ( A + D ) = ; 1 E $.
+    $( Lemma for ~ 6p5e11 and related theorems.  (Contributed by Mario
+       Carneiro, 19-Apr-2015.) $)
+    6p5lem $p |- ( A + B ) = ; 1 C $=
+      ( caddc co c1 cdc oveq2i nn0cni ax-1cn addassi 1nn0 eqcomi decsuc 3eqtr2i
+      ) ABLMADNLMZLMADLMZNLMNCOBUDALIPADNAFQDGQRSNECUETHCENLMJUAKUBUC $.
+  $}
+
+  $( 6 + 5 = 11.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  6p5e11 $p |- ( 6 + 5 ) = ; 1 1 $=
+    ( c6 c5 c1 c4 cc0 6nn0 4nn0 0nn0 df-5 1e0p1 caddc co c10 6p4e10 dec10 eqtri
+    cdc 6p5lem ) ABCDEFGHIJADKLMCEQNOPR $.
+
+  $( 6 + 6 = 12.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  6p6e12 $p |- ( 6 + 6 ) = ; 1 2 $=
+    ( c6 c2 c5 c1 6nn0 5nn0 1nn0 df-6 df-2 6p5e11 6p5lem ) AABCDEFGHIJK $.
+
+  $( 7 + 4 = 11.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  7p4e11 $p |- ( 7 + 4 ) = ; 1 1 $=
+    ( c7 c4 c1 c3 cc0 7nn0 3nn0 0nn0 df-4 1e0p1 caddc co c10 7p3e10 dec10 eqtri
+    cdc 6p5lem ) ABCDEFGHIJADKLMCEQNOPR $.
+
+  $( 7 + 5 = 12.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  7p5e12 $p |- ( 7 + 5 ) = ; 1 2 $=
+    ( c7 c5 c2 c4 c1 7nn0 4nn0 1nn0 df-5 df-2 7p4e11 6p5lem ) ABCDEFGHIJKL $.
+
+  $( 7 + 6 = 13.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  7p6e13 $p |- ( 7 + 6 ) = ; 1 3 $=
+    ( c7 c6 c3 c5 c2 7nn0 5nn0 2nn0 df-6 df-3 7p5e12 6p5lem ) ABCDEFGHIJKL $.
+
+  $( 7 + 7 = 14.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  7p7e14 $p |- ( 7 + 7 ) = ; 1 4 $=
+    ( c7 c4 c6 c3 7nn0 6nn0 3nn0 df-7 df-4 7p6e13 6p5lem ) AABCDEFGHIJK $.
+
+  $( 8 + 3 = 11.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8p3e11 $p |- ( 8 + 3 ) = ; 1 1 $=
+    ( c8 c3 c1 c2 cc0 8nn0 2nn0 0nn0 df-3 1e0p1 caddc co c10 8p2e10 dec10 eqtri
+    cdc 6p5lem ) ABCDEFGHIJADKLMCEQNOPR $.
+
+  $( 8 + 4 = 12.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8p4e12 $p |- ( 8 + 4 ) = ; 1 2 $=
+    ( c8 c4 c2 c3 c1 8nn0 3nn0 1nn0 df-4 df-2 8p3e11 6p5lem ) ABCDEFGHIJKL $.
+
+  $( 8 + 5 = 13.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8p5e13 $p |- ( 8 + 5 ) = ; 1 3 $=
+    ( c8 c5 c3 c4 c2 8nn0 4nn0 2nn0 df-5 df-3 8p4e12 6p5lem ) ABCDEFGHIJKL $.
+
+  $( 8 + 6 = 14.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8p6e14 $p |- ( 8 + 6 ) = ; 1 4 $=
+    ( c8 c6 c4 c5 c3 8nn0 5nn0 3nn0 df-6 df-4 8p5e13 6p5lem ) ABCDEFGHIJKL $.
+
+  $( 8 + 7 = 15.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8p7e15 $p |- ( 8 + 7 ) = ; 1 5 $=
+    ( c8 c7 c5 c6 c4 8nn0 6nn0 4nn0 df-7 df-5 8p6e14 6p5lem ) ABCDEFGHIJKL $.
+
+  $( 8 + 8 = 16.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8p8e16 $p |- ( 8 + 8 ) = ; 1 6 $=
+    ( c8 c6 c7 c5 8nn0 7nn0 5nn0 df-8 df-6 8p7e15 6p5lem ) AABCDEFGHIJK $.
+
+  $( 9 + 2 = 11.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9p2e11 $p |- ( 9 + 2 ) = ; 1 1 $=
+    ( c9 c2 c1 cc0 9nn0 1nn0 0nn0 df-2 1e0p1 caddc co df-10 dec10 eqtr3i 6p5lem
+    c10 cdc ) ABCCDEFGHIPACJKCDQLMNO $.
+
+  $( 9 + 3 = 12.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9p3e12 $p |- ( 9 + 3 ) = ; 1 2 $=
+    ( c9 c3 c2 c1 9nn0 2nn0 1nn0 df-3 df-2 9p2e11 6p5lem ) ABCCDEFGHIJK $.
+
+  $( 9 + 4 = 13.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9p4e13 $p |- ( 9 + 4 ) = ; 1 3 $=
+    ( c9 c4 c3 c2 9nn0 3nn0 2nn0 df-4 df-3 9p3e12 6p5lem ) ABCCDEFGHIJK $.
+
+  $( 9 + 5 = 14.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9p5e14 $p |- ( 9 + 5 ) = ; 1 4 $=
+    ( c9 c5 c4 c3 9nn0 4nn0 3nn0 df-5 df-4 9p4e13 6p5lem ) ABCCDEFGHIJK $.
+
+  $( 9 + 6 = 15.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9p6e15 $p |- ( 9 + 6 ) = ; 1 5 $=
+    ( c9 c6 c5 c4 9nn0 5nn0 4nn0 df-6 df-5 9p5e14 6p5lem ) ABCCDEFGHIJK $.
+
+  $( 9 + 7 = 16.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9p7e16 $p |- ( 9 + 7 ) = ; 1 6 $=
+    ( c9 c7 c6 c5 9nn0 6nn0 5nn0 df-7 df-6 9p6e15 6p5lem ) ABCCDEFGHIJK $.
+
+  $( 9 + 8 = 17.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9p8e17 $p |- ( 9 + 8 ) = ; 1 7 $=
+    ( c9 c8 c7 c6 9nn0 7nn0 6nn0 df-8 df-7 9p7e16 6p5lem ) ABCCDEFGHIJK $.
+
+  $( 9 + 9 = 18.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9p9e18 $p |- ( 9 + 9 ) = ; 1 8 $=
+    ( c9 c8 c7 9nn0 8nn0 7nn0 df-9 df-8 9p8e17 6p5lem ) AABBCDEFGHIJ $.
+
+  $( 10 + 10 = 20.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  10p10e20 $p |- ( 10 + 10 ) = ; 2 0 $=
+    ( c1 cc0 c2 c10 1nn0 0nn0 dec10 1p1e2 00id decadd ) ABABCBDDEFEFGGHIJ $.
+
+  ${
+    4t3lem.1 $e |- A e. NN0 $.
+    4t3lem.2 $e |- B e. NN0 $.
+    4t3lem.3 $e |- C = ( B + 1 ) $.
+    4t3lem.4 $e |- ( A x. B ) = D $.
+    4t3lem.5 $e |- ( D + A ) = E $.
+    $( Lemma for ~ 4t3e12 and related theorems.  (Contributed by Mario
+       Carneiro, 19-Apr-2015.) $)
+    4t3lem $p |- ( A x. C ) = E $=
+      ( cmul co c1 caddc oveq2i nn0cni ax-1cn adddii mulid1i eqtri oveq12i ) AC
+      KLABMNLZKLZECUBAKHOUCDANLZEUCABKLZAMKLZNLUDABMAFPZBGPQRUEDUFANIAUGSUATJTT
+      $.
+  $}
+
+  $( 4 times 3 equals 12.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  4t3e12 $p |- ( 4 x. 3 ) = ; 1 2 $=
+    ( c4 c2 c3 c8 c1 cdc 4nn0 2nn0 df-3 4t2e8 8p4e12 4t3lem ) ABCDEBFGHIJKL $.
+
+  $( 4 times 4 equals 16.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  4t4e16 $p |- ( 4 x. 4 ) = ; 1 6 $=
+    ( c4 c3 c1 c2 cdc c6 4nn0 3nn0 df-4 4t3e12 1nn0 2nn0 4cn 2cn 4p2e6 addcomli
+    eqid decaddi 4t3lem ) ABACDEZCFEGHIJCDFTAKLGTQADFMNOPRS $.
+
+  $( 5 times 3 equals 15.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  5t3e15 $p |- ( 5 x. 3 ) = ; 1 5 $=
+    ( c5 c2 c3 c10 c1 cdc 5nn0 2nn0 df-3 5t2e10 dec10p 4t3lem ) ABCDEAFGHIJAKL
+    $.
+
+  $( 5 times 4 equals 20.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  5t4e20 $p |- ( 5 x. 4 ) = ; 2 0 $=
+    ( c5 c3 c4 c1 cdc c2 5nn0 3nn0 df-4 5t3e15 1nn0 eqid 1p1e2 5p5e10 decaddci2
+    cc0 4t3lem ) ABCDAEZFPEGHIJDAFRAKGGRLMNOQ $.
+
+  $( 5 times 5 equals 25.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  5t5e25 $p |- ( 5 x. 5 ) = ; 2 5 $=
+    ( c5 c4 c10 c2 cmul cdc 5nn0 4nn0 df-5 cc0 5t4e20 dec0u eqtr4i caddc df-dec
+    co 2nn0 eqcomi 4t3lem ) ABACDEPZDAFZGHIABEPDJFTKDQLMUATANPDAORS $.
+
+  $( 6 times 2 equals 12.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  6t2e12 $p |- ( 6 x. 2 ) = ; 1 2 $=
+    ( c6 c2 cmul co caddc c1 cdc 6cn times2i 6p6e12 eqtri ) ABCDAAEDFBGAHIJK $.
+
+  $( 6 times 3 equals 18.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  6t3e18 $p |- ( 6 x. 3 ) = ; 1 8 $=
+    ( c6 c2 c3 c1 cdc c8 6nn0 2nn0 df-3 6t2e12 1nn0 eqid 6cn 2cn 6p2e8 addcomli
+    decaddi 4t3lem ) ABCDBEZDFEGHIJDBFSAKHGSLABFMNOPQR $.
+
+  $( 6 times 4 equals 24.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  6t4e24 $p |- ( 6 x. 4 ) = ; 2 4 $=
+    ( c6 c3 c4 c1 c8 cdc 6nn0 3nn0 df-4 6t3e18 1nn0 8nn0 eqid 1p1e2 4nn0 8p6e14
+    c2 decaddci 4t3lem ) ABCDEFZQCFGHIJDECQTAKLGTMNOPRS $.
+
+  $( 6 times 5 equals 30.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  6t5e30 $p |- ( 6 x. 5 ) = ; 3 0 $=
+    ( c6 c4 c5 c2 cdc c3 cc0 6nn0 4nn0 df-5 6t4e24 2nn0 2p1e3 c10 nn0cni 6p4e10
+    eqid addcomli decaddci2 4t3lem ) ABCDBEZFGEHIJKDBFUAALIHUAQMABNAHOBIOPRST
+    $.
+
+  $( 6 times 6 equals 36.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  6t6e36 $p |- ( 6 x. 6 ) = ; 3 6 $=
+    ( c6 c5 c10 c3 cmul cdc 6nn0 5nn0 df-6 cc0 6t5e30 dec0u eqtr4i caddc df-dec
+    co 3nn0 eqcomi 4t3lem ) ABACDEPZDAFZGHIABEPDJFTKDQLMUATANPDAORS $.
+
+  $( 7 times 2 equals 14.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  7t2e14 $p |- ( 7 x. 2 ) = ; 1 4 $=
+    ( c7 c2 cmul co caddc c1 c4 cdc 7cn times2i 7p7e14 eqtri ) ABCDAAEDFGHAIJKL
+    $.
+
+  $( 7 times 3 equals 21.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  7t3e21 $p |- ( 7 x. 3 ) = ; 2 1 $=
+    ( c7 c2 c3 c1 c4 7nn0 2nn0 df-3 7t2e14 1nn0 4nn0 eqid 1p1e2 nn0cni addcomli
+    cdc 7p4e11 decaddci 4t3lem ) ABCDEPZBDPFGHIDEDBTAJKFTLMJAEDDPAFNEKNQORS $.
+
+  $( 7 times 4 equals 28.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  7t4e28 $p |- ( 7 x. 4 ) = ; 2 8 $=
+    ( c7 c3 c4 c2 c1 cdc c8 7nn0 3nn0 df-4 7t3e21 2nn0 1nn0 7cn ax-1cn addcomli
+    eqid 7p1e8 decaddi 4t3lem ) ABCDEFZDGFHIJKDEGUAALMHUAQAEGNORPST $.
+
+  $( 7 times 5 equals 35.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  7t5e35 $p |- ( 7 x. 5 ) = ; 3 5 $=
+    ( c7 c4 c5 c2 c8 cdc 7nn0 4nn0 df-5 7t4e28 2nn0 8nn0 eqid 2p1e3 5nn0 8p7e15
+    c3 decaddci 4t3lem ) ABCDEFZQCFGHIJDECQTAKLGTMNOPRS $.
+
+  $( 7 times 6 equals 42.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  7t6e42 $p |- ( 7 x. 6 ) = ; 4 2 $=
+    ( c7 c5 c6 c3 cdc c4 c2 7nn0 5nn0 df-6 7t5e35 3nn0 eqid 3p1e4 nn0cni 7p5e12
+    2nn0 c1 addcomli decaddci 4t3lem ) ABCDBEZFGEHIJKDBGFUBALIHUBMNQABRGEAHOBIO
+    PSTUA $.
+
+  $( 7 times 7 equals 49.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  7t7e49 $p |- ( 7 x. 7 ) = ; 4 9 $=
+    ( c7 c6 c4 c2 cdc c9 7nn0 6nn0 df-7 7t6e42 4nn0 2nn0 7cn 2cn 7p2e9 addcomli
+    eqid decaddi 4t3lem ) ABACDEZCFEGHIJCDFTAKLGTQADFMNOPRS $.
+
+  $( 8 times 2 equals 16.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8t2e16 $p |- ( 8 x. 2 ) = ; 1 6 $=
+    ( c8 c2 cmul co caddc c1 c6 cdc 8cn times2i 8p8e16 eqtri ) ABCDAAEDFGHAIJKL
+    $.
+
+  $( 8 times 3 equals 24.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8t3e24 $p |- ( 8 x. 3 ) = ; 2 4 $=
+    ( c8 c2 c3 c1 c6 cdc 8nn0 2nn0 df-3 8t2e16 1nn0 6nn0 eqid 1p1e2 4nn0 nn0cni
+    c4 8p6e14 addcomli decaddci 4t3lem ) ABCDEFZBQFGHIJDEQBUBAKLGUBMNOAEDQFAGPE
+    LPRSTUA $.
+
+  $( 8 times 4 equals 32.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8t4e32 $p |- ( 8 x. 4 ) = ; 3 2 $=
+    ( c8 c3 c4 c2 8nn0 3nn0 df-4 8t3e24 2nn0 4nn0 eqid 2p1e3 c1 nn0cni addcomli
+    cdc 8p4e12 decaddci 4t3lem ) ABCDCPZBDPEFGHDCDBTAIJETKLIACMDPAENCJNQORS $.
+
+  $( 8 times 5 equals 40.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8t5e40 $p |- ( 8 x. 5 ) = ; 4 0 $=
+    ( c8 c4 c5 c3 c2 cdc cc0 8nn0 4nn0 df-5 8t4e32 3nn0 2nn0 eqid 3p1e4 c10 8cn
+    2cn 8p2e10 addcomli decaddci2 4t3lem ) ABCDEFZBGFHIJKDEBUCALMHUCNOAEPQRSTUA
+    UB $.
+
+  $( 8 times 6 equals 48.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8t6e48 $p |- ( 8 x. 6 ) = ; 4 8 $=
+    ( c8 c5 c6 c10 c4 cmul co cdc 8nn0 5nn0 df-6 8t5e40 4nn0 dec0u eqtr4i caddc
+    cc0 df-dec eqcomi 4t3lem ) ABCDEFGZEAHZIJKABFGEQHUALEMNOUBUAAPGEARST $.
+
+  $( 8 times 7 equals 56.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8t7e56 $p |- ( 8 x. 7 ) = ; 5 6 $=
+    ( c8 c6 c7 c4 cdc c5 8nn0 6nn0 df-7 8t6e48 4nn0 eqid 8p8e16 decaddci 4t3lem
+    4p1e5 ) ABCDAEZFBEGHIJDABFQAKGGQLPHMNO $.
+
+  $( 8 times 8 equals 64.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  8t8e64 $p |- ( 8 x. 8 ) = ; 6 4 $=
+    ( c8 c7 c5 c6 cdc c4 8nn0 7nn0 df-8 8t7e56 5nn0 6nn0 eqid 5p1e6 4nn0 nn0cni
+    c1 8p6e14 addcomli decaddci 4t3lem ) ABACDEZDFEGHIJCDFDUBAKLGUBMNOADQFEAGPD
+    LPRSTUA $.
+
+  $( 9 times 2 equals 18.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9t2e18 $p |- ( 9 x. 2 ) = ; 1 8 $=
+    ( c9 c2 cmul co caddc c1 c8 cdc 9cn times2i 9p9e18 eqtri ) ABCDAAEDFGHAIJKL
+    $.
+
+  $( 9 times 3 equals 27.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9t3e27 $p |- ( 9 x. 3 ) = ; 2 7 $=
+    ( c9 c2 c3 c1 c8 cdc 9nn0 2nn0 df-3 9t2e18 1nn0 8nn0 eqid 1p1e2 7nn0 nn0cni
+    c7 9p8e17 addcomli decaddci 4t3lem ) ABCDEFZBQFGHIJDEQBUBAKLGUBMNOAEDQFAGPE
+    LPRSTUA $.
+
+  $( 9 times 4 equals 36.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9t4e36 $p |- ( 9 x. 4 ) = ; 3 6 $=
+    ( c9 c3 c4 c2 c7 cdc 9nn0 3nn0 df-4 9t3e27 2nn0 7nn0 eqid 2p1e3 6nn0 nn0cni
+    c6 c1 9p7e16 addcomli decaddci 4t3lem ) ABCDEFZBQFGHIJDEQBUCAKLGUCMNOAERQFA
+    GPELPSTUAUB $.
+
+  $( 9 times 5 equals 45.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9t5e45 $p |- ( 9 x. 5 ) = ; 4 5 $=
+    ( c9 c4 c5 c3 c6 cdc 9nn0 4nn0 df-5 9t4e36 3nn0 6nn0 eqid 3p1e4 5nn0 nn0cni
+    c1 9p6e15 addcomli decaddci 4t3lem ) ABCDEFZBCFGHIJDECBUBAKLGUBMNOAEQCFAGPE
+    LPRSTUA $.
+
+  $( 9 times 6 equals 54.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9t6e54 $p |- ( 9 x. 6 ) = ; 5 4 $=
+    ( c9 c5 c6 cdc 9nn0 5nn0 df-6 9t5e45 4nn0 eqid 4p1e5 nn0cni 9p5e14 addcomli
+    c4 c1 decaddci 4t3lem ) ABCOBDZBODEFGHOBOBSAIFESJKIABPODAELBFLMNQR $.
+
+  $( 9 times 7 equals 63.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9t7e63 $p |- ( 9 x. 7 ) = ; 6 3 $=
+    ( c9 c6 c7 c5 c4 cdc 9nn0 6nn0 df-7 9t6e54 5nn0 4nn0 eqid 5p1e6 3nn0 nn0cni
+    c3 c1 9p4e13 addcomli decaddci 4t3lem ) ABCDEFZBQFGHIJDEQBUCAKLGUCMNOAERQFA
+    GPELPSTUAUB $.
+
+  $( 9 times 8 equals 72.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9t8e72 $p |- ( 9 x. 8 ) = ; 7 2 $=
+    ( c9 c7 c8 c6 c3 cdc c2 9nn0 7nn0 df-8 9t7e63 6nn0 3nn0 eqid 6p1e7 2nn0 9cn
+    c1 3cn 9p3e12 addcomli decaddci 4t3lem ) ABCDEFZBGFHIJKDEGBUDALMHUDNOPAERGF
+    QSTUAUBUC $.
+
+  $( 9 times 9 equals 81.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+  9t9e81 $p |- ( 9 x. 9 ) = ; 8 1 $=
+    ( c9 c8 c7 c2 cdc c1 9nn0 8nn0 df-9 9t8e72 7nn0 2nn0 eqid 7p1e8 1nn0 9p2e11
+    9cn 2cn addcomli decaddci 4t3lem ) ABACDEZBFEGHIJCDFBUBAKLGUBMNOADFFEQRPSTU
+    A $.
+
+  ${
+    decbin.1 $e |- A e. NN0 $.
+    $( Decompose base 4 into base 2.  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    decbin0 $p |- ( 4 x. A ) = ( 2 x. ( 2 x. A ) ) $=
+      ( c2 cmul co c4 2t2e4 oveq1i 2cn nn0cni mulassi eqtr3i ) CCDEZADEFADECCAD
+      EDEMFADGHCCAIIABJKL $.
+
+    $( Decompose base 4 into base 2.  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    decbin2 $p |- ( ( 4 x. A ) + 2 ) = ( 2 x. ( ( 2 x. A ) + 1 ) ) $=
+      ( c2 cmul co c1 caddc c4 2t1e2 oveq2i nn0cni mulcli ax-1cn adddii decbin0
+      2cn oveq1i 3eqtr4ri ) CCADEZDEZCFDEZGETCGECSFGEDEHADEZCGEUACTGIJCSFPCAPAB
+      KLMNUBTCGABOQR $.
+
+    $( Decompose base 4 into base 2.  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    decbin3 $p |- ( ( 4 x. A ) + 3 ) = ( ( 2 x. ( ( 2 x. A ) + 1 ) ) + 1 ) $=
+      ( c2 cmul co c1 caddc c4 c3 4nn0 2nn0 2p1e3 decbin2 eqcomi numsuc ) CCADE
+      FGEDEZFGEHADEZIGEACIHPJBKLQCGEPABMNON $.
+  $}
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
@@ -76800,6 +77641,9 @@ htmldef "9" as "<IMG SRC='9.gif' WIDTH=8 HEIGHT=19 ALT=' 9' TITLE='9'>";
 htmldef "10" as "<IMG SRC='_10.gif' WIDTH=14 HEIGHT=19 ALT=' 10' TITLE='10'>";
   althtmldef "10" as '10';
   latexdef "10" as "10";
+htmldef ";" as '<FONT COLOR="#808080">;</FONT>';
+  althtmldef ";" as '<SPAN CLASS=hidden STYLE="color:gray">;</SPAN>';
+  latexdef ";" as "{\rm;}";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
