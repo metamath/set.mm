@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Mar-2020
+$( iset.mm - Version of 15-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -75112,6 +75112,452 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
   halfnz $p |- -. ( 1 / 2 ) e. ZZ $=
     ( c2 cr wcel c1 clt wbr cdiv co cz wn 2re 1lt2 recnz mp2an ) ABCDAEFDAGHICJ
     KLAMN $.
+
+  ${
+    $d x A $.
+    $( Two ways to express " ` A ` is a prime number (or 1)."  (Contributed by
+       NM, 4-May-2005.) $)
+    prime $p |- ( A e. NN -> (
+                 A. x e. NN ( ( A / x ) e. NN -> ( x = 1 \/ x = A ) ) <->
+          A. x e. NN ( ( 1 < x /\ x <_ A /\ ( A / x ) e. NN ) -> x = A ) ) ) $=
+      ( cn wcel cv cdiv c1 wceq wi clt wbr wa wb cz nnz wn syl6bbr adantl nnre
+      cr co wo cle w3a wne wdc 1z zdceq mpan2 dfordc df-ne imbi1i imbi2d impexp
+      3syl bi2.04 bitri nngt1ne1 anbi1d gtndiv 3expia sylan con2d lenlt sylibrd
+      syl2an ancoms syl5 pm4.71rd anbi2d 3anass bitr3d imbi1d bitrd ralbidva )
+      BCDZBAEZFUAZCDZVQGHZVQBHZUBZIZGVQJKZVQBUCKZVSUDZWAIZACVPVQCDZLZWCVQGUEZVS
+      LZWAIZWGWHWCWLMVPWHWCVSWJWAIZIZWLWHWBWMVSWHVQNDZVTUFZWBWMMVQOWOGNDWPUGVQG
+      UHUIWPWBVTPZWAIWMVTWAUJWJWQWAVQGUKULQUOUMWLWJVSWAIIWNWJVSWAUNWJVSWAUPUQQR
+      WIWKWFWAWIWDVSLZWKWFWIWDWJVSWHWDWJMVPVQURRUSWIWRWDWEVSLZLWFWIVSWSWDWIVSWE
+      VSVRNDZWIWEVROWHVPWTWEIWHVPLZWTBVQJKZPZWEXAXBWTWHVQTDZVPXBWTPZIVQSZXDVPXB
+      XEVQBUTVAVBVCWHXDBTDWEXCMVPXFBSVQBVDVFVEVGVHVIVJWDWEVSVKQVLVMVNVO $.
+  $}
+
+  $( The square of a nonzero integer is a positive integer.  (Contributed by
+     NM, 2-Aug-2004.) $)
+  msqznn $p |- ( ( A e. ZZ /\ A =/= 0 ) -> ( A x. A ) e. NN ) $=
+    ( cz wcel cc0 wne wa cmul co clt wbr cn zmulcl anidms adantr wb zapne mpan2
+    cap 0z pm5.32i cr zre apsqgt0 sylan sylbir elnnz sylanbrc ) ABCZADEZFZAAGHZ
+    BCZDUKIJZUKKCUHULUIUHULAALMNUJUHADRJZFUMUHUNUIUHDBCUNUIOSADPQTUHAUACUNUMAUB
+    AUCUDUEUKUFUG $.
+
+  $( No even integer equals an odd integer (i.e. no integer can be both even
+     and odd).  Exercise 10(a) of [Apostol] p. 28.  (Contributed by NM,
+     31-Jul-2004.)  (Proof shortened by Mario Carneiro, 18-May-2014.) $)
+  zneo $p |- ( ( A e. ZZ /\ B e. ZZ ) ->
+             ( 2 x. A ) =/= ( ( 2 x. B ) + 1 ) ) $=
+    ( cz wcel wa c2 cmul co c1 caddc cdiv wn wceq cmin cc 2cn zcn mulcl sylancr
+    a1i wne halfnz adantr adantl 1cnd subaddd subdid oveq1d zsubcl syl cc0 2ap0
+    cap wbr divcanap3d eqtr3d eqeltrd oveq1 eleq1d syl5ibcom sylbird mpi necomd
+    necon3bd ) ACDZBCDZEZFBGHZIJHZFAGHZVGIFKHZCDZLVIVJUAUBVGVLVIVJVGVIVJMVJVHNH
+    ZIMZVLVGVJVHIVGFODZAODZVJODPVEVPVFAQUCZFARSVGVOBODZVHODPVFVRVEBQUDZFBRSVGUE
+    UFVGVMFKHZCDVNVLVGVTABNHZCVGFWAGHZFKHVTWAVGWBVMFKVGFABVOVGPTZVQVSUGUHVGWAFV
+    GWACDWAODABUIZWAQUJWCFUKUMUNVGULTUOUPWDUQVNVTVKCVMIFKURUSUTVAVDVBVC $.
+
+  ${
+    $d j k N $.
+    $( A positive integer is even or odd.  (Contributed by Jim Kingdon,
+       15-Mar-2020.) $)
+    nneoor $p |- ( N e. NN ->
+                ( ( N / 2 ) e. NN \/ ( ( N + 1 ) / 2 ) e. NN ) ) $=
+      ( vj vk cn wcel c1 caddc co c2 cdiv cv wceq oveq1d eleq1d orbi12d 2div2e1
+      wo oveq1 cc 2cn df-2 oveq1i eqtr3i 1nn eqeltri orci peano2nn nncn cc0 cap
+      add1p1 wbr wa 2ap0 pm3.2i divdirap mp3an23 oveq2i syl6eq eqtrd syl orim2d
+      syl5ibr orcom syl6ib nnind orcomd ) ADEAFGHZIJHZDEZAIJHZDEZBKZFGHZIJHZDEZ
+      VMIJHZDEZQFFGHZIJHZDEZFIJHZDEZQCKZFGHZIJHZDEZWDIJHZDEZQZWEFGHZIJHZDEZWGQZ
+      VJVLQBCAVMFLZVPWAVRWCWOVOVTDWOVNVSIJVMFFGRMNWOVQWBDVMFIJRNOVMWDLZVPWGVRWI
+      WPVOWFDWPVNWEIJVMWDFGRMNWPVQWHDVMWDIJRNOVMWELZVPWMVRWGWQVOWLDWQVNWKIJVMWE
+      FGRMNWQVQWFDVMWEIJRNOVMALZVPVJVRVLWRVOVIDWRVNVHIJVMAFGRMNWRVQVKDVMAIJRNOW
+      AWCVTFDIIJHZVTFIVSIJUAUBPUCUDUEUFWDDEZWJWGWMQWNWTWIWMWGWIWMWTWHFGHZDEWHUG
+      WTWLXADWTWDSEZWLXALWDUHXBWLWDIGHZIJHZXAXBWKXCIJWDUKMXBXDWHWSGHZXAXBISEZXF
+      IUIUJULZUMXDXELTXFXGTUNUOWDIIUPUQWSFWHGPURUSUTVANVCVBWGWMVDVEVFVG $.
+
+    $( A positive integer is even or odd but not both.  (Contributed by NM,
+       1-Jan-2006.)  (Proof shortened by Mario Carneiro, 18-May-2014.) $)
+    nneo $p |- ( N e. NN ->
+                ( ( N / 2 ) e. NN <-> -. ( ( N + 1 ) / 2 ) e. NN ) ) $=
+      ( cn wcel c2 cdiv co c1 caddc cmul wceq nncn peano2cn syl 2cnd divcanap2d
+      wn cc cc0 cz nnz cap wbr 2ap0 a1i oveq1d eqtr4d wne syl2an expcom syl5com
+      zneo necon2bd nneoor orcomd ord impbid ) ABCZADEFZBCZAGHFZDEFZBCZPZUQDVAI
+      FZDURIFZGHFZJUSVCUQVDUTVFUQUTDUQAQCUTQCAKZALMUQNZDRUAUBUQUCUDZOUQVEAGHUQA
+      DVGVHVIOUEUFUSVBVDVFVBUSVDVFUGZVBVASCURSCVJUSVATURTVAURUKUHUIULUJUQVBUSUQ
+      USVBAUMUNUOUP $.
+
+    nneo.1 $e |- N e. NN $.
+    $( A positive integer is even or odd but not both.  (Contributed by NM,
+       20-Aug-2001.) $)
+    nneoi $p |- ( ( N / 2 ) e. NN <-> -. ( ( N + 1 ) / 2 ) e. NN ) $=
+      ( cn wcel c2 cdiv co c1 caddc wn wb nneo ax-mp ) ACDAEFGCDAHIGEFGCDJKBALM
+      $.
+  $}
+
+  $( An integer is even or odd.  (Contributed by NM, 1-Jan-2006.) $)
+  zeo $p |- ( N e. ZZ -> ( ( N / 2 ) e. ZZ \/ ( ( N + 1 ) / 2 ) e. ZZ ) ) $=
+    ( cz wcel cc0 wceq cn cneg c2 cdiv co c1 caddc 2cn 2ap0 syl cc mp3an23 cmin
+    eleq1d ax-1cn cr w3o wa wo elz oveq1 div0api eqeltri syl6eqel adantl nneoor
+    0z orcd nnz orim12i wi recn cap wbr divnegap nnnegz syl6bir halfcld negnegd
+    sylibd peano2zm negsubdi2i 2m1e1 eqtr2i negcon2i mpbi negcl addsubass negdi
+    subcli oveq2i mpan2 3eqtr4a oveq1d peano2cn pm3.2i 2div2e1 syl6reqr 3eqtr4d
+    divsubdirap eqcomi syl5ib znegcl syl6 peano2re recnd orim12d adantr 3jaodan
+    syl5 mpd sylbi ) ABCAUACZADEZAFCZAGZFCZUBUCAHIJZBCZAKLJZHIJZBCZUDZAUEWRWSXH
+    WTXBWSXHWRWSXDXGWSXCDHIJZBADHIUFXIDBHMNUGULUHUIUMUJWTXHWRWTXCFCZXFFCZUDXHAU
+    KXJXDXKXGXCUNXFUNUOOUJWRXBUCXAHIJZFCZXAKLJZHIJZFCZUDZXHXBXQWRXAUKUJWRXQXHUP
+    XBWRXMXDXPXGWRXMXCGZGZBCZXDWRXMXRFCXTWRXRXLFWRAPCZXRXLEZAUQZYAHPCZHDURUSZYB
+    MNAHUTQOSXRVAVBWRXSXCBWRXCWRAYCVCVDSVEXPXOBCZWRXGXOUNWRYFXFGZGZBCZXGWRYFYGB
+    CZYIYFXOKRJZBCWRYJXOVFWRYKYGBWRYAYKYGEYCYAXNHRJZHIJZXEGZHIJZYKYGYAYLYNHIYAX
+    AKHRJZLJZXAKGZLJZYLYNYPYRXALKYPGZEYPYREYTHKRJKKHTMVGVHVIKYPTKHTMVOVJVKVPYAX
+    APCZYLYQEZAVLZUUAKPCZYDUUBTMXAKHVMQOYAUUDYNYSETAKVNVQVRVSYAYMXOHHIJZRJZYKYA
+    XNPCZYMUUFEZYAUUAUUGUUCXAVTOUUGYDYDYEUCUUHMYDYEMNWAXNHHWEQOKUUEXORUUEKWBWFV
+    PWCYAXEPCZYGYOEZAVTUUIYDYEUUJMNXEHUTQOWDOSWGYGWHWIWRYHXFBWRXFWRXEWRXEAWJWKV
+    CVDSVEWOWLWMWPWNWQ $.
+
+  $( An integer is even or odd but not both.  (Contributed by Mario Carneiro,
+     12-Sep-2015.) $)
+  zeo2 $p |- ( N e. ZZ ->
+              ( ( N / 2 ) e. ZZ <-> -. ( ( N + 1 ) / 2 ) e. ZZ ) ) $=
+    ( cz wcel c2 cdiv co c1 caddc wn cmul wceq cc zcn peano2cn syl 2cnd cc0 cap
+    wbr divcanap2d a1i oveq1d eqtr4d wne expcom necon2bd syl5com zeo orcomd ord
+    2ap0 zneo impbid ) ABCZADEFZBCZAGHFZDEFZBCZIZUNDURJFZDUOJFZGHFZKUPUTUNVAUQV
+    CUNUQDUNALCUQLCAMZANOUNPZDQRSUNUKUAZTUNVBAGHUNADVDVEVFTUBUCUPUSVAVCUSUPVAVC
+    UDURUOULUEUFUGUNUSUPUNUPUSAUHUIUJUM $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Second Peano postulate for upper integers.  (Contributed by NM,
+       3-Oct-2004.) $)
+    peano2uz2 $p |- ( ( A e. ZZ /\ B e. { x e. ZZ | A <_ x } ) ->
+                             ( B + 1 ) e. { x e. ZZ | A <_ x } ) $=
+      ( cz wcel cle wbr wa c1 caddc co cv crab peano2z ad2antrl cr wi zre breq2
+      elrab lep1 adantl peano2re ancli letr 3expb sylan2 mpan2d syl2an impr jca
+      anbi2i 3imtr4i ) BDEZCDEZBCFGZHZHZCIJKZDEZBUSFGZHUNCBALZFGZADMZEZHUSVDEUR
+      UTVAUOUTUNUPCNOUNUOUPVAUNBPEZCPEZUPVAQUOBRCRVFVGHUPCUSFGZVAVGVHVFCUAUBVGV
+      FVGUSPEZHUPVHHVAQZVGVICUCUDVFVGVIVJBCUSUEUFUGUHUIUJUKVEUQUNVCUPACDVBCBFST
+      ULVCVAAUSDVBUSBFSTUM $.
+  $}
+
+  ${
+    $d k n x A $.  $d k n x N $.
+    $( Peano's inductive postulate for upper integers.  (Contributed by NM,
+       6-Jul-2005.)  (Revised by Mario Carneiro, 25-Jul-2013.) $)
+    peano5uzti $p |- ( N e. ZZ -> ( ( N e. A /\ A. x e. A ( x + 1 ) e. A )
+                          -> { k e. ZZ | N <_ k } C_ A ) ) $=
+      ( vn cz wcel cv c1 caddc co wa cc wceq cn wi oveq1 eleq1d imbi2d ex breq2
+      wral cle wbr crab wss elrab anbi2i cmin ad2antrl 1cnd subcld npcan syl2an
+      zcn ax-1cn subsub mp3an3 cn0 znn0sub biimpa anasss ancoms adantll nn0p1nn
+      eqeltrd simpr simpll adantr pncan3d simprl rspccv ad2antll nncnd ad2antlr
+      syl add32d sylibd a2d nnind syl3c eqeltrrd sylanb expcom expdimp ssrdv )
+      DFGZDBGZAHZIJKZBGZABUBZLZDCHZUCUDZCFUEZBUFWGWMLZEWPBWGWMEHZWPGZWRBGZWMWSL
+      ZWGWTXAWMWRFGZDWRUCUDZLZLZWGWTWSXDWMWOXCCWRFWNWRDUCUAUGUHXEWGLZWRDIUIKZUI
+      KZXGJKZWRBXEWRMGZXGMGZXIWRNWGXBXJWMXCWRUOUJZWGDIDUOZWGUKULZWRXGUMUNXFXHOG
+      WGWMXIBGZXFXHWRDUIKZIJKZOXEXJDMGZXHXQNZWGXLXMXJXRIMGXSUPWRDIUQURUNXFXPUSG
+      ZXQOGXDWGXTWMWGXDXTWGXBXCXTWGXBLXCXTDWRUTVAVBVCVDXPVEVPVFXEWGVGWMXDWGVHWG
+      WMWNXGJKZBGZPZPWGWMIXGJKZBGZPZPWGWMWRXGJKZBGZPZPWGWMWRIJKZXGJKZBGZPZPWGWM
+      XOPZPCEXHWNINZYCYFWGYOYBYEWMYOYAYDBWNIXGJQRSSWNWRNZYCYIWGYPYBYHWMYPYAYGBW
+      NWRXGJQRSSWNYJNZYCYMWGYQYBYLWMYQYAYKBWNYJXGJQRSSWNXHNZYCYNWGYRYBXOWMYRYAX
+      IBWNXHXGJQRSSWGWMYEWQYDDBWQIDWQUKWGXRWMXMVIVJWGWHWLVKVFTWROGZWGYIYMYSWGYI
+      YMPYSWGLZWMYHYLYTWMYHYLPYTWMLZYHYGIJKZBGZYLWLYHUUCPYTWHWKUUCAYGBWIYGNWJUU
+      BBWIYGIJQRVLVMUUAUUBYKBUUAWRXGIUUAWRYSWGWMVHVNWGXKYSWMXNVOUUAUKVQRVRTVSTV
+      SVTWAWBWCWDWEWFT $.
+
+    ${
+      peano5uz.1 $e |- N e. ZZ $.
+      $( Peano's inductive postulate for upper integers.  (Contributed by NM,
+         6-Jul-2005.)  (Revised by Mario Carneiro, 3-May-2014.) $)
+      peano5uzi $p |- ( ( N e. A /\ A. x e. A ( x + 1 ) e. A ) ->
+                    { k e. ZZ | N <_ k } C_ A ) $=
+        ( cz wcel cv c1 caddc co wral wa cle wbr crab wss wi peano5uzti ax-mp )
+        DFGDBGAHIJKBGABLMDCHNOCFPBQREABCDST $.
+    $}
+  $}
+
+  ${
+    $d x y z w v u m N $.
+    dfuz.1 $e |- N e. ZZ $.
+    $( An expression for the upper integers that start at ` N ` that is
+       analogous to ~ dfnn2 for positive integers.  (Contributed by NM,
+       6-Jul-2005.)  (Proof shortened by Mario Carneiro, 3-May-2014.) $)
+    dfuzi $p |- { z e. ZZ | N <_ z } =
+               |^| { x | ( N e. x /\ A. y e. x ( y + 1 ) e. x ) } $=
+      ( cv cle wbr cz crab wcel c1 caddc co wral wa cab wss mpbir2an eleq2 cint
+      ssintab peano5uzi mpgbir zrei leidi breq2 elrab peano2uz2 mpan rgen rabex
+      wi zex wceq raleqbi1dv anbi12d elab intss1 ax-mp eqssi ) DCFZGHZCIJZDAFZK
+      ZBFZLMNZVEKZBVEOZPZAQZUAZVDVMRVKVDVERUMAVKAVDUBBVECDEUCUDVDVLKZVMVDRVNDVD
+      KZVHVDKZBVDOZVODIKZDDGHZEDDEUEUFVCVSCDIVBDDGUGUHSVPBVDVRVGVDKVPECDVGUIUJU
+      KVKVOVQPAVDVCCIUNULVEVDUOVFVOVJVQVEVDDTVIVPBVEVDVEVDVHTUPUQURSVDVLUSUTVA
+      $.
+  $}
+
+  ${
+    $d j z w N $.  $d j z ps $.  $d j z ch $.  $d j z th $.  $d j z ta $.
+    $d k w ph $.  $d j k z w M $.
+    $( Substitutions. $)
+    uzind.1 $e |- ( j = M -> ( ph <-> ps ) ) $.
+    uzind.2 $e |- ( j = k -> ( ph <-> ch ) ) $.
+    uzind.3 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.
+    uzind.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind.6 $e |- ( ( M e. ZZ /\ k e. ZZ /\ M <_ k ) -> ( ch -> th ) ) $.
+    $( Induction on the upper integers that start at ` M ` .  The first four
+       hypotheses give us the substitution instances we need; the last two are
+       the basis and the induction step.  (Contributed by NM, 5-Jul-2005.) $)
+    uzind $p |- ( ( M e. ZZ /\ N e. ZZ /\ M <_ N ) -> ta ) $=
+      ( cz wcel cle wbr wa vw w3a cv crab c1 caddc wral wss zre leidd jca ancli
+      co wceq breq2 anbi12d elrab sylibr wi peano2z a1i adantrd clt ltp1 adantl
+      cr peano2re lelttr 3expb sylan2 mpan2d ltle syld syl2an expimpd 3exp jcad
+      imp4d 3imtr4g ralrimiv peano5uzti mp2and sseld 3imtr3g 3impib simprd ) HP
+      QZIPQZHIRSZUBZWIEWJWHWIETZWGWHWIWHWKTZWGIHUAUCZRSZUAPUDZQIHFUCZRSZATZFPUD
+      ZQWHWITWLWGWOWSIWGHWSQZGUCZUEUFUMZWSQZGWSUGWOWSUHWGWGHHRSZBTZTWTWGXEWGXDB
+      WGHHUIZUJNUKULWRXEFHPWPHUNWQXDABWPHHRUOJUPUQURWGXCGWSWGXAPQZHXARSZCTZTZXB
+      PQZHXBRSZDTZTXAWSQXCWGXJXKXMWGXGXKXIXGXKUSWGXAUTVAVBWGXJXLDWGXGXIXLWGXGTX
+      HXLCWGHVFQZXAVFQZXHXLUSXGXFXAUIXNXOTZXHHXBVCSZXLXPXHXAXBVCSZXQXOXRXNXAVDV
+      EXOXNXOXBVFQZTXHXRTXQUSZXOXSXAVGZULXNXOXSXTHXAXBVHVIVJVKXOXNXSXQXLUSYAHXB
+      VLVJVMVNVBVOWGXGXHCDWGXGXHCDUSOVPVRVQVQWRXIFXAPWPXAUNWQXHACWPXAHRUOKUPUQW
+      RXMFXBPWPXBUNWQXLADWPXBHRUOLUPUQVSVTGWSUAHWAWBWCWNWIUAIPWMIHRUOUQWRWKFIPW
+      PIUNWQWIAEWPIHRUOMUPUQWDWEWFWF $.
+  $}
+
+  ${
+    $d j z w N $.  $d j z ps $.  $d j z ch $.  $d j z th $.  $d j z ta $.
+    $d k w ph $.  $d j k z w M $.
+    $( Substitutions. $)
+    uzind2.1 $e |- ( j = ( M + 1 ) -> ( ph <-> ps ) ) $.
+    uzind2.2 $e |- ( j = k -> ( ph <-> ch ) ) $.
+    uzind2.3 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.
+    uzind2.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind2.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind2.6 $e |- ( ( M e. ZZ /\ k e. ZZ /\ M < k ) -> ( ch -> th ) ) $.
+    $( Induction on the upper integers that start _after_ an integer ` M ` .
+       The first four hypotheses give us the substitution instances we need;
+       the last two are the basis and the induction step.  (Contributed by NM,
+       25-Jul-2005.) $)
+    uzind2 $p |- ( ( M e. ZZ /\ N e. ZZ /\ M < N ) -> ta ) $=
+      ( cz wcel wbr wi wceq clt wa c1 caddc co zltp1le peano2z cv imbi2d 3expia
+      cle a1i w3a sylbird ex com3l imp 3adant1 a2d uzind 3exp syl com34 pm2.43a
+      sylbid 3impia ) HPQZIPQZHIUARZEVGVHUBVIHUCUDUEZIUKRZEHIUFVGVHVKESZVHVGVLV
+      GVHVKVGEVGVJPQZVHVKVGESZSSHUGVMVHVKVNVGASVGBSZVGCSVGDSVNFGVJIFUHZVJTABVGJ
+      UIVPGUHZTACVGKUIVPVQUCUDUETADVGLUIVPITAEVGMUIVOVMNULVMVQPQZVJVQUKRZUMVGCD
+      VRVSVGCDSZSZVMVRVSWAVGVRVSVTVGVRVSVTSVGVRUBVSHVQUARZVTHVQUFVGVRWBVTOUJUNU
+      OUPUQURUSUTVAVBVCVDUQVEVF $.
+  $}
+
+  ${
+    $d j k N $.  $d j ps $.  $d j ch $.  $d j th $.  $d j ta $.  $d m ph $.
+    $d j m k M $.
+    $( Substitutions. $)
+    uzind3.1 $e |- ( j = M -> ( ph <-> ps ) ) $.
+    uzind3.2 $e |- ( j = m -> ( ph <-> ch ) ) $.
+    uzind3.3 $e |- ( j = ( m + 1 ) -> ( ph <-> th ) ) $.
+    uzind3.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind3.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind3.6 $e |- ( ( M e. ZZ /\ m e. { k e. ZZ | M <_ k } ) ->
+                   ( ch -> th ) ) $.
+    $( Induction on the upper integers that start at an integer ` M ` .  The
+       first four hypotheses give us the substitution instances we need, and
+       the last two are the basis and the induction step.  (Contributed by NM,
+       26-Jul-2005.) $)
+    uzind3 $p |- ( ( M e. ZZ /\ N e. { k e. ZZ | M <_ k } ) -> ta ) $=
+      ( cle wbr cz wcel cv wa breq2 elrab wi sylan2br 3impb uzind 3expb sylan2b
+      crab ) JIGUAZQRZGSUKZTISTZJSTZIJQRZUBEUMUQGJSULJIQUCUDUOUPUQEABCDEFHIJKLM
+      NOUOHUAZSTZIURQRZCDUEZUSUTUBUOURUNTVAUMUTGURSULURIQUCUDPUFUGUHUIUJ $.
+  $}
+
+  ${
+    $d x y $.  $d A x $.  $d ps x $.  $d ch x $.  $d th x $.  $d ta x $.
+    $d ph y $.
+    nn0ind.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.
+    nn0ind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    nn0ind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    nn0ind.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    nn0ind.5 $e |- ps $.
+    nn0ind.6 $e |- ( y e. NN0 -> ( ch -> th ) ) $.
+    $( Principle of Mathematical Induction (inference schema) on nonnegative
+       integers.  The first four hypotheses give us the substitution instances
+       we need; the last two are the basis and the induction step.
+       (Contributed by NM, 13-May-2004.) $)
+    nn0ind $p |- ( A e. NN0 -> ta ) $=
+      ( cn0 wcel cz cc0 cle wbr wa elnn0z 0z a1i cv sylbir 3adant1 uzind mp3an1
+      wi sylbi ) HOPHQPZRHSTZUAEHUBRQPZULUMEUCABCDEFGRHIJKLBUNMUDGUEZQPZRUOSTZC
+      DUJZUNUPUQUAUOOPURUOUBNUFUGUHUIUK $.
+  $}
+
+  ${
+    $d K x $.  $d M x y $.  $d N x y $.  $d ch x $.  $d ph y $.  $d ps x $.
+    $d ta x $.  $d th x $.
+    fzind.1 $e |- ( x = M -> ( ph <-> ps ) ) $.
+    fzind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    fzind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    fzind.4 $e |- ( x = K -> ( ph <-> ta ) ) $.
+    fzind.5 $e |- ( ( M e. ZZ /\ N e. ZZ /\ M <_ N ) -> ps ) $.
+    fzind.6 $e |- ( ( ( M e. ZZ /\ N e. ZZ ) /\
+                      ( y e. ZZ /\ M <_ y /\ y < N ) ) -> ( ch -> th ) ) $.
+    $( Induction on the integers from ` M ` to ` N ` inclusive .  The first
+       four hypotheses give us the substitution instances we need; the last two
+       are the basis and the induction step.  (Contributed by Paul Chapman,
+       31-Mar-2011.) $)
+    fzind $p |- ( ( ( M e. ZZ /\ N e. ZZ ) /\
+                    ( K e. ZZ /\ M <_ K /\ K <_ N ) ) -> ta ) $=
+      ( cle wbr wa wi cz wcel w3a cv c1 caddc co breq1 anbi2d imbi12d 3expib cr
+      wceq zre p1le 3expia syl2an imdistanda imim1d 3ad2ant2 wb zltp1le adantlr
+      clt expcom pm5.32d adantl 3expa com12 sylbird com23 expd 3impib impd syld
+      ex a2d uzind expcomd 3expb 3impia impcom ) HUAUBZIHQRZHJQRZUCZIUAUBZJUAUB
+      ZSZEWFWGWHEWCWDWEWGWHETZTWCWDSZWGWEWJWGWKWEWJTZWGWCWDWLWGWCWDUCWHWEEWHFUD
+      ZJQRZSZATWHIJQRZSZBTWHGUDZJQRZSZCTZWHWRUEUFUGZJQRZSZDTZWHWESZETFGIHWMIUMZ
+      WOWQABXGWNWPWHWMIJQUHUIKUJWMWRUMZWOWTACXHWNWSWHWMWRJQUHUILUJWMXBUMZWOXDAD
+      XIWNXCWHWMXBJQUHUIMUJWMHUMZWOXFAEXJWNWEWHWMHJQUHUINUJWGWHWPBOUKWGWRUAUBZI
+      WRQRZUCZXAXDCTZXEXKWGXAXNTXLXKXDWTCXKWHXCWSXKWRULUBZJULUBZXCWSTWHWRUNJUNX
+      OXPXCWSWRJUOUPUQURUSUTXMXDCDXMWHXCCDTZXMXCWHXQWGXKXLXCWHXQTZTWGXKXLSZXCXR
+      WGWHXSXCSZXQWGWHXTXQTWIXTXSWRJVDRZSZXQWHYBXTVAWGWHXSYAXCXSWHYAXCVAZXKWHYC
+      XLWRJVBVCVEVFVGYBWIXQXKXLYAWIXQTWIXKXLYAUCXQPVEVHVIVJVPVKVLVMVKVNVQVOVRVS
+      VTVEVKWAVNWB $.
+  $}
+
+  ${
+    $d K x $.  $d M x y $.  $d N x y $.  $d ch x $.  $d ph y $.  $d ps x $.
+    $d ta x $.  $d th x $.
+    fnn0ind.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.
+    fnn0ind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    fnn0ind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    fnn0ind.4 $e |- ( x = K -> ( ph <-> ta ) ) $.
+    fnn0ind.5 $e |- ( N e. NN0 -> ps ) $.
+    fnn0ind.6 $e |- ( ( N e. NN0 /\ y e. NN0 /\ y < N ) -> ( ch -> th ) ) $.
+    $( Induction on the integers from ` 0 ` to ` N ` inclusive .  The first
+       four hypotheses give us the substitution instances we need; the last two
+       are the basis and the induction step.  (Contributed by Paul Chapman,
+       31-Mar-2011.) $)
+    fnn0ind $p |- ( ( N e. NN0 /\ K e. NN0 /\ K <_ N ) -> ta ) $=
+      ( wcel wbr wa cc0 wi cn0 cle cz elnn0z w3a nn0z 0z sylbir 3adant1 clt zre
+      cv cr 0re lelttr ltle 3adant2 mp3an1 syl2an ex com23 3impib impcom anbi1i
+      syld 3expb syl2anbr expcom 3impa expd mpd adantll fzind mpanl1 syl5 3expa
+      sylanb 3impb ) IUAPZHUAPZHIUBQZEVTWARVSEVTHUCPZSHUBQZRWAVSETZHUDWBWCWAWDV
+      SIUCPZWBWCWAUEZEIUFWEWFESUCPZWEWFEUGABCDEFGHSIJKLMWESIUBQZBWGWEWHRZVSBIUD
+      ZNUHUIWEGULZUCPZSWKUBQZWKIUJQZUEZCDTZWGWEWORWHWPWOWEWHWLWMWNWEWHTWLWEWMWN
+      RZWHWLWEWQWHTZWLWKUMPZIUMPZWRWEWKUKIUKSUMPZWSWTWRUNXAWSWTUEWQSIUJQZWHSWKI
+      UOXAWTXBWHTWSSIUPUQVEURUSUTVAVBVCWOWEWHWPTWOWEWHWPWLWMWNWIWPTWIWLWMRZWNRZ
+      WPWIVSWKUAPZWNRWPXDWJXEXCWNWKUDVDVSXEWNWPOVFVGVHVIVJVCVKVLVMVNVHVOVPVQVCV
+      R $.
+  $}
+
+  ${
+    $d x y z $.  $d A x z $.  $d ps x z $.  $d ch x z $.  $d th x z $.
+    $d ta x z $.  $d ph y z $.
+    nn0ind-raph.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.
+    nn0ind-raph.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    nn0ind-raph.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    nn0ind-raph.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    nn0ind-raph.5 $e |- ps $.
+    nn0ind-raph.6 $e |- ( y e. NN0 -> ( ch -> th ) ) $.
+    $( Principle of Mathematical Induction (inference schema) on nonnegative
+       integers.  The first four hypotheses give us the substitution instances
+       we need; the last two are the basis and the induction step.  Raph Levien
+       remarks:  "This seems a bit painful.  I wonder if an explicit
+       substitution version would be easier."  (Contributed by Raph Levien,
+       10-Apr-2004.) $)
+    nn0ind-raph $p |- ( A e. NN0 -> ta ) $=
+      ( vz wcel cc0 wceq c1 wi cn0 cn wo elnn0 wsb wsbc dfsbcq2 cv sbhypf caddc
+      nfv co nfsbc1v 1ex c0ex wa 0nn0 eleq1a ax-mp mpbiri eqeq2 syl6bir pm5.74d
+      wb mpbii com12 vtocle sylc adantr oveq1 0p1e1 syl6eq eqeq2d imp mpbird ex
+      sbceq1a mpbid vtoclef nnnn0 syl nnind bicomd sylan9bb sylbird eqcoms jaoi
+      eqeq1 sylbi ) HUAPHUBPZHQRZUCEHUDWJEWKAFOUEAFSUFZCDEOGHAFOSUGACFOGUHZCFUK
+      JUIADFOWMSUJULZDFUKKUIAEFOHEFUKLUIWLFSAFSUMUNFUHZSRZAWLWPATGQUOWMQRZWPAWQ
+      WPUPADWQDWPWQWMUAPZCDQUAPWQWRTUQQUAWMURUSWQCTFQUOWQWOQRZCWQWSATWSCTWSABMI
+      UTWQWSACWQWSWOWMRACVDWMQWOVAJVBVCVEVFVGNVHVIWQWPADVDZWQWPWOWNRWTWQWNSWOWQ
+      WNQSUJULSWMQSUJVJVKVLVMKVBVNVOVPVGAFSVQVRVSWMUBPWRCDTWMVTNWAWBEQHQHRZETZF
+      QXBFUKUOWSXAWOHRZEWOQHWHWSXCEWSXCUPBEMWSBAXCEWSABIWCLWDVEVPWEVSWFWGWI $.
+  $}
+
+  ${
+    $d A x $.  $d ch x $.  $d et x $.  $d ph y $.  $d ps x $.  $d ta x $.
+    $d th x $.  $d x y ze $.
+    zindd.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.
+    zindd.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    zindd.3 $e |- ( x = ( y + 1 ) -> ( ph <-> ta ) ) $.
+    zindd.4 $e |- ( x = -u y -> ( ph <-> th ) ) $.
+    zindd.5 $e |- ( x = A -> ( ph <-> et ) ) $.
+    zindd.6 $e |- ( ze -> ps ) $.
+    zindd.7 $e |- ( ze -> ( y e. NN0 -> ( ch -> ta ) ) ) $.
+    zindd.8 $e |- ( ze -> ( y e. NN -> ( ch -> th ) ) ) $.
+    $( Principle of Mathematical Induction on all integers, deduction version.
+       The first five hypotheses give the substitutions; the last three are the
+       basis, the induction, and the extension to negative numbers.
+       (Contributed by Paul Chapman, 17-Apr-2009.)  (Proof shortened by Mario
+       Carneiro, 4-Jan-2017.) $)
+    zindd $p |- ( ze -> ( A e. ZZ -> et ) ) $=
+      ( cz wcel wral wi cv cneg cn0 cn wo cr znegcl elznn0nn sylib simpr orim2i
+      wa syl zcn negnegd eleq1d orbi2d mpbid cc0 wceq imbi2d c1 caddc com12 a2d
+      co nn0ind nnnn0 mpdd jaod syl5 ralrimiv wb sylan9eqr eqcomd bicomd rspcdv
+      negeq rspccv 3syl ) GDISUAZAHSUAJSTFUBGDISIUCZSTZWDUDZUETZWDUFTZUGZGDWEWG
+      WFUDZUFTZUGZWIWEWGWFUHTZWKUNZUGZWLWEWFSTWOWDUIWFUJUKWNWKWGWMWKULUMUOWEWKW
+      HWGWEWJWDUFWEWDWDUPUQURUSUTGWGDWHWGGDGAUBZGBUBZGCUBZGEUBZGDUBHIWFHUCZVAVB
+      ABGKVCZWTWDVBACGLVCZWTWDVDVEVHVBAEGMVCZWTWFVBZADGNVCPWDUETZGCEGXECEUBQVFV
+      GZVIVFGWHCDWHGCWHXEWRWDVJWPWQWRWSWRHIWDXAXBXCXBPXFVIUOVFRVKVLVMVNWCAHSWTS
+      TZWCAXGDAIWTUDZSWTUIXGWDXHVBZUNZADXJXDADVOXJWFWTXIXGWFXHUDWTWDXHVTXGWTWTU
+      PUQVPVQNUOVRVSVFVNAFHJSOWAWB $.
+  $}
+
+  ${
+    nn0zd.1 $e |- ( ph -> A e. NN0 ) $.
+    $( A positive integer is an integer.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    nn0zd $p |- ( ph -> A e. ZZ ) $=
+      ( cn0 cz nn0ssz sseldi ) ADEBFCG $.
+  $}
+
+  ${
+    nnzd.1 $e |- ( ph -> A e. NN ) $.
+    $( A nonnegative integer is an integer.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    nnzd $p |- ( ph -> A e. ZZ ) $=
+      ( nnnn0d nn0zd ) ABABCDE $.
+  $}
+
+  ${
+    zred.1 $e |- ( ph -> A e. ZZ ) $.
+    $( An integer is a real number.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zred $p |- ( ph -> A e. RR ) $=
+      ( cz cr zssre sseldi ) ADEBFCG $.
+
+    $( An integer is a complex number.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zcnd $p |- ( ph -> A e. CC ) $=
+      ( zred recnd ) ABABCDE $.
+
+    $( Closure law for negative integers.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    znegcld $p |- ( ph -> -u A e. ZZ ) $=
+      ( cz wcel cneg znegcl syl ) ABDEBFDECBGH $.
+
+    $( Deduction from second Peano postulate generalized to integers.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    peano2zd $p |- ( ph -> ( A + 1 ) e. ZZ ) $=
+      ( cz wcel c1 caddc co peano2z syl ) ABDEBFGHDECBIJ $.
+
+    zaddcld.1 $e |- ( ph -> B e. ZZ ) $.
+    $( Closure of addition of integers.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zaddcld $p |- ( ph -> ( A + B ) e. ZZ ) $=
+      ( cz wcel caddc co zaddcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure of subtraction of integers.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zsubcld $p |- ( ph -> ( A - B ) e. ZZ ) $=
+      ( cz wcel cmin co zsubcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure of multiplication of integers.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zmulcld $p |- ( ph -> ( A x. B ) e. ZZ ) $=
+      ( cz wcel cmul co zmulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
+  $( Increasing an integer by 2 results in an integer.  (Contributed by
+     Alexander van der Vekens, 16-Sep-2018.) $)
+  zadd2cl $p |- ( N e. ZZ -> ( N + 2 ) e. ZZ ) $=
+    ( cz wcel c2 id 2z a1i zaddcld ) ABCZADIEDBCIFGH $.
 
 $(
 ###############################################################################
