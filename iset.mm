@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Mar-2020
+$( iset.mm - Version of 19-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -76410,6 +76410,28 @@ $)
      [Apostol] p. 22.  See ~ elq for the relation "is rational."  (Contributed
      by NM, 8-Jan-2002.) $)
   df-q $a |- QQ = ( / " ( ZZ X. NN ) ) $.
+
+  ${
+    $d x y z $.
+
+    $( Division restricted to ` ZZ X. NN ` is a function.  Given excluded
+       middle, it would be easy to prove this for ` CC X. ( CC \ { 0 } ) ` .
+       The key difference is that an element of ` NN ` is apart from zero,
+       whereas being an element of ` CC \ { 0 } ` implies being not equal to
+       zero.  (Contributed by Jim Kingdon, 19-Mar-2020.) $)
+    divfnzn $p |- ( / |` ( ZZ X. NN ) ) Fn ( ZZ X. NN ) $=
+      ( vy vz vx cv co wceq cc crio wcel cn wral cz cdiv cres nncn ad2antlr cc0
+      wa adantl eqeltrrd cmul cxp wfn zcn ad2antrr cap wbr divmulapd riotabidva
+      simpr nnap0 wb eqcom a1i riotabidv simpl divclapd reueq sylib riotacl syl
+      wreu sylan rgen2 csn cdif cmpt2 df-div reseq1i wss zsscn eldifsn sylanbrc
+      wne nnne0 ssriv resmpt2 mp2an eqtri fnmpt2 ax-mp ) ADZBDZUAECDZFZBGHZGIZA
+      JKCLKMLJUBZNZWHUCWGCALJWDLIZWBJIZRZWDWBMEZWCFZBGHZWFGWLWNWEBGWLWCGIZRWDWB
+      WCWJWDGIZWKWPWDUDZUEWKWBGIZWJWPWBOZPWLWPUJWKWBQUFUGZWJWPWBUKZPUHUIWLWCWMF
+      ZBGHZWOGWLXCWNBGXCWNULWLWCWMUMUNUOWJWQWKXDGIZWRWQWKRZXCBGVBZXEXFWMGIXGXFW
+      DWBWQWKUPWKWSWQWTSWKXAWQXBSUQBGWMURUSXCBGUTVAVCTTVDCALJWFWIGWICAGGQVEVFZW
+      FVGZWHNZCALJWFVGZMXIWHCABVHVILGVJJXHVJXJXKFVKCJXHWDJIWQWDQVNWDXHIWDOWDVOW
+      DGQVLVMVPCAGXHLJWFVQVRVSVTWA $.
+  $}
 
   ${
     $d x y z A $.
