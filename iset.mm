@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Mar-2020
+$( iset.mm - Version of 20-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69635,7 +69635,8 @@ $)
     QSUEUF $.
 
   $( Multiplication of both sides of real apartness by a real number apart from
-     zero.  (Contributed by Jim Kingdon, 8-Feb-2020.) $)
+     zero.  Special case of ~ apmul1 .  (Contributed by Jim Kingdon,
+     8-Feb-2020.) $)
   reapmul1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ C # 0 ) ) ->
       ( A # B <-> ( A x. C ) # ( B x. C ) ) ) $=
     ( cr wcel cc0 cap wbr wa cmul co wb clt reaplt cneg recnd mulneg2d renegcld
@@ -71241,7 +71242,22 @@ $)
         ( cc wcel cc0 cap wbr cdiv co wceq div0ap syl2anc ) ABEFBGHIGBJKGLCDBMN
         $.
     $}
+  $}
 
+  $( Multiplication of both sides of complex apartness by a complex number
+     apart from zero.  (Contributed by Jim Kingdon, 20-Mar-2020.) $)
+  apmul1 $p |- ( ( A e. CC /\ B e. CC /\ ( C e. CC /\ C # 0 ) )
+      -> ( A # B <-> ( A x. C ) # ( B x. C ) ) ) $=
+    ( cc wcel cc0 cap wbr wa cmul co c1 mulassd oveq2d mulid1d 3eqtrd wi mulcld
+    w3a mulext1 cdiv simp1 simp3l simp3r recclapd simp2 breq12d syl3anc sylbird
+    recidapd 3adant3r impbid ) ADEZBDEZCDEZCFGHZIZSZABGHZACJKZBCJKZGHZURUSUTLCU
+    AKZJKZVAVCJKZGHZVBURVDAVEBGURVDACVCJKZJKALJKAURACVCUMUNUQUBZUMUNUOUPUCZURCV
+    IUMUNUOUPUDZUEZMURVGLAJURCVIVJUJZNURAVHOPURVEBVGJKBLJKBURBCVCUMUNUQUFZVIVKM
+    URVGLBJVLNURBVMOPUGURUTDEVADEVCDEVFVBQURACVHVIRURBCVMVIRVKUTVAVCTUHUIUMUNUO
+    VBUSQUPABCTUKUL $.
+
+  ${
+    divcld.1 $e |- ( ph -> A e. CC ) $.
     divcld.2 $e |- ( ph -> B e. CC ) $.
     ${
       divclapd.3 $e |- ( ph -> B # 0 ) $.
