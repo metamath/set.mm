@@ -76438,11 +76438,11 @@ $)
     $( Membership in the set of rationals.  (Contributed by NM, 8-Jan-2002.)
        (Revised by Mario Carneiro, 28-Jan-2014.) $)
     elq $p |- ( A e. QQ <-> E. x e. ZZ E. y e. NN A = ( x / y ) ) $=
-      ( vz cq wcel cdiv cz cn cxp cima cv co wceq wrex df-q cc cc0 wss mp2an wb
-      eleq2i csn cdif wfn cmul crio df-div riotaex fnmpt2i zsscn wne nncn nnne0
-      eldifsn sylanbrc ssriv xpss12 ovelimab bitri ) CEFCGHIJZKZFZCALZBLZGMNBIO
-      AHOZEVBCPUBGQQRUCUDZJZUEVAVHSZVCVFUAABQVGVEDLUFMVDNZDQUGGABDUHVJDQUIUJHQS
-      IVGSVIUKAIVGVDIFVDQFVDRULVDVGFVDUMVDUNVDQRUOUPUQHQIVGURTABVHHICGUSTUT $.
+      ( cq wcel cv cdiv cz cn cxp cres co wceq wrex cima df-q eleq2i resima wfn
+      wss wb divfnzn ssid ovelimab mp2an 3bitr2i wa ovres eqeq2d 2rexbiia bitri
+      ) CDEZCAFZBFZGHIJZKZLZMZBINAHNZCUMUNGLZMZBINAHNULCGUOOZECUPUOOZEZUSDVBCPQ
+      VCVBCGUORQUPUOSUOUOTVDUSUAUBUOUCABUOHICUPUDUEUFURVAABHIUMHEUNIEUGUQUTCUMU
+      NHIGUHUIUJUK $.
 
     $( If ` A ` is rational, then some integer multiple of it is an integer.
        (Contributed by NM, 7-Nov-2008.)  (Revised by Mario Carneiro,
