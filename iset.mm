@@ -76449,10 +76449,11 @@ $)
        22-Jul-2014.) $)
     qmulz $p |- ( A e. QQ -> E. x e. NN ( A x. x ) e. ZZ ) $=
       ( vy cq wcel cv cdiv co wceq cn wrex cz elq rexcom wa cc zcn adantr sylbi
-      cmul adantl nncn cc0 nnne0 divcan1d simpr eqeltrd oveq1 eleq1d syl5ibrcom
-      wne rexlimdva reximia ) BDEBCFZAFZGHZIZAJKCLKZBUOTHZLEZAJKZCABMURUQCLKZAJ
-      KVAUQCALJNVBUTAJUOJEZUQUTCLVCUNLEZOZUTUQUPUOTHZLEVEVFUNLVEUNUOVDUNPEVCUNQ
-      UAVCUOPEVDUOUBRVCUOUCUKVDUOUDRUEVCVDUFUGUQUSVFLBUPUOTUHUIUJULUMSS $.
+      cmul adantl nncn cc0 cap nnap0 divcanap1d simpr eqeltrd eleq1d syl5ibrcom
+      wbr oveq1 rexlimdva reximia ) BDEBCFZAFZGHZIZAJKCLKZBUPTHZLEZAJKZCABMUSUR
+      CLKZAJKVBURCALJNVCVAAJUPJEZURVACLVDUOLEZOZVAURUQUPTHZLEVFVGUOLVFUOUPVEUOP
+      EVDUOQUAVDUPPEVEUPUBRVDUPUCUDUKVEUPUERUFVDVEUGUHURUTVGLBUQUPTULUIUJUMUNSS
+      $.
   $}
 
   ${
