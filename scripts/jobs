@@ -1,0 +1,102 @@
+#!/bin/sh
+
+# Run a set of Metamath minimization jobs, maximally parallel,
+# until they are all done.
+# The command line is a space-separated list of entries;
+# each entry is a single number or a range START-END (inclusive).
+# If the START is higher than END, it will go backwards starting from START
+# Sample usage:
+#   scripts/jobs 112 120-130 170-160
+#   scripts/jobs --jobsdir finalcmd --suffix fin 155 153-142
+
+# The number of jobs run in parallel is the environment variable NPROC if
+# it is set, otherwise it is the number of CPUs (found with `nproc`).
+# In most cases the default behavior is best.
+
+# Recommended setup:
+# git clone https://github.com/metamath/set.mm.git
+# cd set.mm
+# scripts/download-metamath
+# scripts/build-metamath
+# # check out the version we want to analyze
+# git checkout 87bc05d4155014c9bc7b8f4f05435347b628b7f0 # or whatever
+# git checkout -b jobs # or whatever branch name you want to use
+#
+# scripts/jobs JOB_NUMBERS
+
+set -e -u
+
+die () {
+printf '%s\n' "$1" >&2
+exit 1
+}
+
+# Expand $@ to individual job numbers
+# We do this ahead-of-time, it's a pain to do this within make.
+find_work_list () {
+  for entry
+  do
+    case "$entry" in
+      *-*)
+        first="${entry%-*}"
+        last="${entry#*-}"
+        if [ "$first" -lt "$last" ] ; then
+          seq "$first" "$last"
+        else
+          seq "$first" -1 "$last"
+        fi ;;
+      *) printf '%s\n' "$entry" ;;
+    esac
+  done
+}
+
+while [ "$#" -gt 0 ] ; do
+  case "$1" in
+    --suffix) job_suffix="$2" ; shift ; shift ;;
+    --jobsdir) jobsdir="$2" ; shift ; shift ;;
+    -*) die "Unknown option $1" ;;
+    *) break ;;
+  esac
+done
+
+# If metamath is *already* on the PATH, that one will be used.
+# If not, increase the likelihood of finding a working "metamath" command
+PATH="$PATH:${PWD}/metamath:${HOME}/bin"
+
+command -v metamath > /dev/null || die 'Metamath program not on path'
+[ "$#" -gt 0 ] || die 'Requires parameters, e.g., 112 118-140'
+
+# Set defaults if not already set.
+: "${jobsdir:="metamathjobs"}"
+: "${job_suffix:=''}"
+
+# We once downloaded jobs if not already downloaded.  However, jobs change.
+# test -f min2020-jobs.zip || \
+# wget http://us2.metamath.org/downloads/min2020-jobs.zip
+
+test -d "$jobsdir" || die "Missing required directory: ${jobsdir}"
+
+# Generate expanded list of space-separated job numbers
+work="$(find_work_list "$@" | sed -e "s/\$/${job_suffix}/" | tr '\r\n' ' ')"
+
+master_log="${jobsdir}/master$(date +'%Y-%m-%dT%H:%M:%S').log"
+
+echo "Starting jobs at $(date)"
+echo "View overall (master) state log with: tail -c +0 -f ${master_log}"
+echo "View job NUM log with: tail -c +0 -f ${jobsdir}/jobNUM.log"
+echo "Print number of completed jobs with: ls ${jobsdir}/*.done | wc -l"
+echo
+
+# Use GNU make to run jobs in parallel. We use GNU make, not GNU parallel,
+# to simplify skipping jobs we've already completed (which have .done files).
+# Another option is SLURM (Ubuntu package slurm-llnl).
+# SLURM is a batch system / workload management system; it is far more
+# capable, but it takes more time to set up.
+# We use "nproc" to find the number of CPUs if NPROC is not set.
+
+nohup nice make --jobs "${NPROC:-"$(nproc)"}" -r -f scripts/jobs.makefile \
+           work="$work" JOBSDIR="$jobsdir" > "$master_log" 2>&1 &
+
+echo
+echo 'Run "killall make metamath" to kill all processes.'
+echo
