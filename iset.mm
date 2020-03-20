@@ -76508,8 +76508,8 @@ $)
   qsscn $p |- QQ C_ CC $=
     ( cq cr cc qssre ax-resscn sstri ) ABCDEF $.
 
-  $( The set of rational numbers exists.  See also ~ qexALT .  (Contributed by
-     NM, 30-Jul-2004.)  (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  $( The set of rational numbers exists.  (Contributed by NM, 30-Jul-2004.)
+     (Revised by Mario Carneiro, 17-Nov-2014.) $)
   qex $p |- QQ e. _V $=
     ( cq cc cnex qsscn ssexi ) ABCDE $.
 
@@ -76521,18 +76521,6 @@ $)
      2-Aug-2004.) $)
   qcn $p |- ( A e. QQ -> A e. CC ) $=
     ( cq cc qsscn sseli ) BCADE $.
-
-  ${
-    $d w x y z $.
-    $( Alternate proof of ~ qex .  (Contributed by NM, 30-Jul-2004.)  (Revised
-       by Mario Carneiro, 16-Jun-2013.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    qexALT $p |- QQ e. _V $=
-      ( vy vz vx cq cz cn cv cdiv co cmpt2 crn cvv wcel wceq wrex elq eqid ovex
-      elrnmpt2 bitr4i eqriv zexALT nnexALT mpt2ex rnex eqeltri ) DABEFAGZBGZHIZ
-      JZKZLCDUKCGZDMULUINBFOAEOULUKMABULPABEFUIULUJUJQUGUHHRSTUAUJABEFUIUBUCUDU
-      EUF $.
-  $}
 
   ${
     $d x y z w v u A $.  $d x y z w v u B $.
