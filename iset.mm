@@ -71302,6 +71302,72 @@ $)
       divcanap4d $p |- ( ph -> ( ( A x. B ) / B ) = A ) $=
         ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap4 syl3anc ) ABGHCGHCIJK
         BCLMCNMBODEFBCPQ $.
+
+      ${
+        diveqap0d.4 $e |- ( ph -> ( A / B ) = 0 ) $.
+        $( If a ratio is zero, the numerator is zero.  (Contributed by Jim
+           Kingdon, 19-Mar-2020.) $)
+        diveqap0d $p |- ( ph -> A = 0 ) $=
+          ( cdiv co cc0 wceq cc wcel cap wbr wb diveqap0 syl3anc mpbid ) ABCHIJ
+          KZBJKZGABLMCLMCJNOTUAPDEFBCQRS $.
+      $}
+
+      ${
+        diveqap1d.4 $e |- ( ph -> ( A / B ) = 1 ) $.
+        $( Equality in terms of unit ratio.  (Contributed by Jim Kingdon,
+           19-Mar-2020.) $)
+        diveqap1d $p |- ( ph -> A = B ) $=
+          ( cdiv co c1 wceq cc wcel cc0 cap wbr wb diveqap1 syl3anc mpbid ) ABC
+          HIJKZBCKZGABLMCLMCNOPUAUBQDEFBCRST $.
+      $}
+
+      $( The quotient of two complex numbers is one iff they are equal.
+         Deduction form of ~ diveqap1 .  Generalization of ~ diveqap1d .
+         (Contributed by Jim Kingdon, 19-Mar-2020.) $)
+      diveqap1ad $p |- ( ph -> ( ( A / B ) = 1 <-> A = B ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co c1 wceq wb diveqap1 syl3anc ) ABGHCGHCIJK
+        BCLMNOBCOPDEFBCQR $.
+
+      $( A fraction of complex numbers is zero iff its numerator is.  Deduction
+         form of ~ diveqap0 .  (Contributed by Jim Kingdon, 19-Mar-2020.) $)
+      diveqap0ad $p |- ( ph -> ( ( A / B ) = 0 <-> A = 0 ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq wb diveqap0 syl3anc ) ABGHCGHCIJKBCL
+        MINBINODEFBCPQ $.
+
+      ${
+        divap1d.4 $e |- ( ph -> A # B ) $.
+        $( If two complex numbers are apart, their quotient is apart from one.
+           (Contributed by Jim Kingdon, 20-Mar-2020.) $)
+        divap1d $p |- ( ph -> ( A / B ) # 1 ) $=
+          ( c1 cdiv co cmul cap wbr cc wcel cc0 wb recclapd recap0d apmul1
+          syl112anc mpbid divrecapd eqcomd recidapd 3brtr3d ) ABHCIJZKJZCUGKJZB
+          CIJZHLABCLMZUHUILMZGABNOCNOUGNOUGPLMUKULQDEACEFRACEFSBCUGTUAUBAUJUHAB
+          CDEFUCUDACEFUEUF $.
+      $}
+
+      $( A ratio is zero iff the numerator is zero.  (Contributed by Jim
+         Kingdon, 19-Mar-2020.) $)
+      divap0bd $p |- ( ph -> ( A # 0 <-> ( A / B ) # 0 ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co wb divap0b syl3anc ) ABGHCGHCIJKBIJKBCLMI
+        JKNDEFBCOP $.
+
+      $( Move negative sign inside of a division.  (Contributed by Jim Kingdon,
+         19-Mar-2020.) $)
+      divnegapd $p |- ( ph -> -u ( A / B ) = ( -u A / B ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cneg wceq divnegap syl3anc ) ABGHCGHCIJKB
+        CLMNBNCLMODEFBCPQ $.
+
+      $( Move negative sign inside of a division.  (Contributed by Jim Kingdon,
+         19-Mar-2020.) $)
+      divneg2apd $p |- ( ph -> -u ( A / B ) = ( A / -u B ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cneg wceq divneg2ap syl3anc ) ABGHCGHCIJK
+        BCLMNBCNLMODEFBCPQ $.
+
+      $( Quotient of two negatives.  (Contributed by Jim Kingdon,
+         19-Mar-2020.) $)
+      div2negapd $p |- ( ph -> ( -u A / -u B ) = ( A / B ) ) $=
+        ( cc wcel cc0 cap wbr cneg cdiv co wceq div2negap syl3anc ) ABGHCGHCIJK
+        BLCLMNBCMNODEFBCPQ $.
     $}
 
     ${
