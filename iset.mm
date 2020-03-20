@@ -76470,10 +76470,10 @@ $)
     $( A rational number is a real number.  (Contributed by NM,
        14-Nov-2002.) $)
     qre $p |- ( A e. QQ -> A e. RR ) $=
-      ( vx vy cq wcel cv cdiv co wceq cn wrex cz cr elq cc0 wne zre nnre nnne0
-      wa jca redivcl 3expb syl2an eleq1 syl5ibrcom rexlimivv sylbi ) ADEABFZCFZ
-      GHZIZCJKBLKAMEZBCANULUMBCLJUILEZUJJEZTUMULUKMEZUNUIMEZUJMEZUJOPZTUPUOUIQU
-      OURUSUJRUJSUAUQURUSUPUIUJUBUCUDAUKMUEUFUGUH $.
+      ( vx vy cq wcel cv cdiv co wceq cn wrex cz cr elq wa cc0 cap wbr zre nnre
+      nnap0 jca redivclap 3expb syl2an eleq1 syl5ibrcom rexlimivv sylbi ) ADEAB
+      FZCFZGHZIZCJKBLKAMEZBCANUMUNBCLJUJLEZUKJEZOUNUMULMEZUOUJMEZUKMEZUKPQRZOUQ
+      UPUJSUPUSUTUKTUKUAUBURUSUTUQUJUKUCUDUEAULMUFUGUHUI $.
 
     $( An integer is a rational number.  (Contributed by NM, 9-Jan-2002.) $)
     zq $p |- ( A e. ZZ -> A e. QQ ) $=
