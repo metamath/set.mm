@@ -959,6 +959,12 @@ iset.mm's ~ ltbtwnnqq , in which ` E. x ` is changed to ` E. x e. Q. ` ).
 </LI>
 
 <LI>
+With excluded middle not equal (` =/= `) and apart (` # `) are equivalent.
+When working with real and complex numbers, apartness is almost always what
+you want. See ~ df-ap for more on apartness.
+</LI>
+
+<LI>
 If you get stuck, ask! (for example in a GitHub issue or on the mailing list).
 We have a number of contributors who have experience in constructive
 mathematics in general, or iset.mm in particular, and one of the best things
@@ -1140,18 +1146,42 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TR>
 
 <TR>
+<TD>nne</TD>
+<TD><I>none</I></TD>
+<TD>The reverse direction could be proved; the forward direction
+is double negation elimination.</TD>
+</TR>
+
+<TR>
+<TD>exmidne</TD>
+<TD>~ dcne </TD>
+</TR>
+
+<TR>
+<TD>neor</TD>
+<TD>~ pm2.53 , ~ ori , ~ ord </TD>
+</TR>
+
+<TR>
+<TD>neorian</TD>
+<TD>~ pm3.14 </TD>
+</TR>
+
+<TR>
+<TD>nnel</TD>
+<TD><I>none</I></TD>
+<TD>The reverse direction could be proved; the forward direction
+is double negation elimination.</TD>
+</TR>
+
+<TR>
+<TD>nfrald</TD>
+<TD>~ nfraldxy , ~ nfraldya </TD>
+</TR>
+
+<TR>
 <TD>rexnal</TD>
 <TD>~ rexnalim </TD>
-</TR>
-
-<TR>
-<TD>dfral2</TD>
-<TD>~ ralexim </TD>
-</TR>
-
-<TR>
-<TD>dfrex2</TD>
-<TD>~ rexalim </TD>
 </TR>
 
 <TR>
@@ -1165,8 +1195,13 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TR>
 
 <TR>
-<TD>nfrald</TD>
-<TD>~ nfraldxy , ~ nfraldya </TD>
+<TD>dfral2</TD>
+<TD>~ ralexim </TD>
+</TR>
+
+<TR>
+<TD>dfrex2</TD>
+<TD>~ rexalim </TD>
 </TR>
 
 <TR>
@@ -1312,6 +1347,12 @@ favor of theorems in deduction form.</TD>
 <TD>csbexg , csbex</TD>
 <TD>~ csbexga , ~ csbexa </TD>
 <TD>set.mm uses case elimination to remove the ` A e. _V ` condition.</TD>
+</TR>
+
+<TR>
+<TD>intabs</TD>
+<TD><I>none</I></TD>
+<TD>Lightly used in set.mm, and the set.mm proof is not intuitionistic</TD>
 </TR>
 
 <TR>
@@ -1673,6 +1714,19 @@ found in ~ ovi3 .</TD>
 <TR>
 <TD>caovmo</TD>
 <TD>~ caovimo </TD>
+</TR>
+
+<TR>
+<TD>ofval</TD>
+<TD>~ fnofval </TD>
+</TR>
+
+<TR>
+<TD>offn , offveq , caofid0l , caofid0r , caofid1 , caofid2</TD>
+<TD><I>none</I></TD>
+<TD>Assuming we really need to add conditions that the operations
+are functions being evaluated within their domains, there would be a
+fair bit of intuitionizing.</TD>
 </TR>
 
 <TR>
@@ -2611,7 +2665,7 @@ figured out what would be involved in proving them for iset.mm.</TD>
 
 <TR>
 <TD>ax1ne0 , ax-1ne0</TD>
-<TD>~ ax0lt1 , ~ ax-0lt1 , ~ 1ap0 </TD>
+<TD>~ ax0lt1 , ~ ax-0lt1 , ~ 1ap0 , ~ 1ne0 </TD>
 </TR>
 
 <TR>
@@ -2654,12 +2708,12 @@ favor of theorems in deduction form.</TD>
 
 <TR>
 <TD>ltnle , ltnlei , ltnled</TD>
-<TD>~ lenlt </TD>
+<TD>~ lenlt , ~ zltnle </TD>
 </TR>
 
 <TR>
 <TD>lttri2 , lttri4</TD>
-<TD><I>none</I></TD>
+<TD>~ ztri3or </TD>
 <TD>Real number trichotomy is not provable.</TD>
 </TR>
 
@@ -2686,7 +2740,7 @@ favor of theorems in deduction form.</TD>
 
 <TR>
 <TD>ltlen , ltleni , ltlend</TD>
-<TD><I>none</I></TD>
+<TD>~ ltleap , ~ zltlen </TD>
 </TR>
 
 <TR>
@@ -2935,18 +2989,240 @@ zero changes to apart from zero.</TD>
 </TR>
 
 <TR>
-<TD>recdiv, divcan6, divdiv32, divcan7</TD>
+<TD>recdiv , divcan6 , divdiv32 , divcan7</TD>
 <TD>~ recdivap , ~ divcanap6 , ~ divdiv32ap , ~ divcanap7 </TD>
 </TR>
 
 <TR>
-<TD>dmdcan, divdiv1, divdiv2, recdiv2</TD>
+<TD>dmdcan , divdiv1 , divdiv2 , recdiv2</TD>
 <TD>~ dmdcanap , ~ divdivap1 , ~ divdivap2 , ~ recdivap2 </TD>
 </TR>
 
 <TR>
-<TD>ddcan, divadddiv, divsubdiv</TD>
+<TD>ddcan , divadddiv , divsubdiv</TD>
 <TD>~ ddcanap , ~ divadddivap , ~ divsubdivap </TD>
+</TR>
+
+<TR>
+<TD>ddcan , divadddiv , divsubdiv</TD>
+<TD>~ ddcanap , ~ divadddivap , ~ divsubdivap </TD>
+</TR>
+
+<TR>
+<TD>conjmul , rereccl, redivcl</TD>
+<TD>~ conjmulap , ~ rerecclap , ~ redivclap </TD>
+</TR>
+
+<TR>
+<TD>div2neg , divneg2</TD>
+<TD>~ div2negap , ~ divneg2ap </TD>
+</TR>
+
+<TR>
+<TD>recclzi , recne0zi , recidzi</TD>
+<TD>~ recclapzi , ~ recap0apzi , ~ recidapzi </TD>
+</TR>
+
+<TR>
+<TD>reccli , recidi , recreci</TD>
+<TD>~ recclapi , ~ recidapi , ~ recrecapi </TD>
+</TR>
+
+<TR>
+<TD>dividi , div0i</TD>
+<TD>~ dividapi , ~ div0api </TD>
+</TR>
+
+<TR>
+<TD>divclzi , divcan1zi , divcan2zi</TD>
+<TD>~ divclapzi , ~ divcanap1zi , ~ divcanap2zi </TD>
+</TR>
+
+<TR>
+<TD>divreczi , divcan3zi , divcan4zi</TD>
+<TD>~ divrecapzi , ~ divcanap3zi , ~ divcanap4zi </TD>
+</TR>
+
+<TR>
+<TD>rec11i , rec11ii</TD>
+<TD>~ rec11api , ~ rec11apii </TD>
+</TR>
+
+<TR>
+<TD>divcli , divcan2i , divcan1i , divreci ,
+divcan3i , divcan4i </TD>
+<TD>~ divclapi , ~ divcanap2i , ~ divcanap1i , ~ divrecapi ,
+~ divcanap3i , ~ divcanap4i </TD>
+</TR>
+
+<TR>
+<TD>div0i</TD>
+<TD>~ divap0i </TD>
+</TR>
+
+<TR>
+<TD>divasszi , divmulzi , divdirzi , divdiv23zi</TD>
+<TD>~ divassapzi , ~ divmulapzi , ~ divdirapzi , ~ divdiv23apzi </TD>
+</TR>
+
+<TR>
+<TD>divmuli , divdiv32i</TD>
+<TD>~ divmulapi , ~ divdiv32api </TD>
+</TR>
+
+<TR>
+<TD>divassi , divdiri , div23i , div11i </TD>
+<TD>~ divassapi , ~ divdirapi , ~ div23api , ~ div11api </TD>
+</TR>
+
+<TR>
+<TD>divmuldivi, divmul13i, divadddivi, divdivdivi</TD>
+<TD>~ divmuldivapi , ~ divmul13api , ~ divadddivapi , ~ divdivdivapi </TD>
+</TR>
+
+<TR>
+<TD>rerecclzi , rereccli , redivclzi , redivcli</TD>
+<TD>~ rerecclapzi , ~ rerecclapi , ~ redivclapzi , ~ redivclapi </TD>
+</TR>
+
+<TR>
+<TD>reccld , rec0d , recidd , recid2d , recrecd ,
+dividd , div0d</TD>
+<TD>~ recclapd , ~ recap0d , ~ recidapd , ~ recidap2d , ~ recrecapd ,
+~ dividapd , ~ div0apd </TD>
+</TR>
+
+<TR>
+<TD>divcld , divcan1d , divcan2d , divrecd , divrec2d ,
+divcan3d , divcan4d</TD>
+<TD>~ divclapd , ~ divcanap1d , ~ divcanap2d , ~ divrecapd , ~ divrecap2d ,
+~ divcanap3d , ~ divcanap4d </TD>
+</TR>
+
+<TR>
+<TD>divne0d , recdivd , recdiv2d , divcan6d , ddcand , rec11d</TD>
+<TD>~ divap0d , ~ recdivapd , ~ recdivap2d , ~ divcanap6d , ~ ddcanapd ,
+~ rec11apd </TD>
+</TR>
+
+<TR>
+<TD>divmuld , div32d , div13d , divdiv32d , divcan5d , divcan5rd ,
+divcan7d , dmdcand , dmdcan2d , divdiv1d , divdiv2d</TD>
+<TD>~ divmulapd , ~ div32apd , ~ div13apd , ~ divdiv32apd , ~ divcanap5d ,
+~ divcanap5rd , ~ divcanap7d , ~ dmdcanapd , ~ dmdcanap2d , ~ divdivap1d ,
+~ divdivap2d </TD>
+</TR>
+
+<TR>
+<TD>divmul2d, divmul3d, divassd, div12d, div23d,
+divdird, divsubdird, div11d</TD>
+<TD>~ divmulap2d , ~ divmulap3d , ~ divassapd , ~ div12apd , ~ div23apd ,
+~ divdirapd , ~ divsubdirapd , ~ div11apd </TD>
+</TR>
+
+<TR>
+<TD>rereccld , redivcld</TD>
+<TD>~ rerecclapd , ~ redivclapd </TD>
+</TR>
+
+<TR>
+<TD>elimgt0 , elimge0</TD>
+<TD><I>none</I></TD>
+<TD>Even in set.mm, the weak deduction theorem is discouraged in
+favor of theorems in deduction form.</TD>
+</TR>
+
+<TR>
+<TD>mulge0b , mulle0b , mulsuble0b</TD>
+<TD><I>none</I></TD>
+<TD>Presumably unprovable for reasons analogous to mul0or.</TD>
+</TR>
+
+<TR>
+<TD>ledivp1i , ltdivp1i</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could be proved, but unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>crne0</TD>
+<TD>~ crap0 </TD>
+</TR>
+
+<TR>
+<TD>ofsubeq0 , ofnegsub , ofsubge0</TD>
+<TD><I>none</I></TD>
+<TD>Depend on ofval and/or offn .</TD>
+</TR>
+
+<TR>
+<TD>df-nn</TD>
+<TD>~ dfnn2 </TD>
+</TR>
+
+<TR>
+<TD>dfnn3</TD>
+<TD>~ dfnn2 </TD>
+<TD>Presumably could be proved, as it is a slight variation of dfnn2</TD>
+</TR>
+
+<TR>
+<TD>avgle</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>nnunb , arch , nnrecl , bndndx</TD>
+<TD><I>none</I></TD>
+<TD>Dealing with the Archimedean property will need to await adding
+some form of supremum (or other property of sets of reals). Our
+other real number axioms are first-order, and therefore are
+not sufficient to rule out non-Archimedean fields such as
+the hyperreal numbers.</TD>
+</TR>
+
+<TR>
+<TD>nn0n0n1ge2 , nn0n0n1ge2b</TD>
+<TD><I>none yet</I></TD>
+<TD>These should be provable, and might be easy now that we have
+~ztri3or .</TD>
+</TR>
+
+<TR>
+<TD>frnnn0supp , frnnn0fsupp</TD>
+<TD>~ nn0supp </TD>
+<TD>iset.mm does not yet have either the notation, or in some
+cases the theorems, related to the support of a function or
+a fintely supported function.</TD>
+</TR>
+
+<TR>
+<TD>elz2 , dfz2</TD>
+<TD><I>none yet</I></TD>
+<TD>Should be provable, but might need to wait until we have
+proved trichotomy of integers.</TD>
+</TR>
+
+<TR>
+<TD>suprzcl</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>btwnz</TD>
+<TD><I>none</I></TD>
+<TD>Depends on arch</TD>
+</TR>
+
+<TR>
+<TD>zriotaneg</TD>
+<TD><I>none</I></TD>
+<TD>Lightly used in set.mm</TD>
+</TR>
+
+<TR>
+<TD>suprfinzcl</TD>
+<TD><I>none</I></TD>
 </TR>
 
 </TABLE>

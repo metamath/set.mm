@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Feb-2020
+$( iset.mm - Version of 15-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -1319,12 +1319,16 @@ $)
   $( Extend our wff definition to include the biconditional connective. $)
   wb $a wff ( ph <-> ps ) $.
 
-  $( Left 'and' elimination.  Axiom 1 of 10 for intuitionistic logic.
-     (Contributed by Mario Carneiro, 31-Jan-2015.) $)
+  $( Left 'and' elimination.  Axiom 1 of 10 for intuitionistic logic.  Use its
+     alias ~ simpl instead for naming consistency with set.mm.
+     (New usage is discouraged.)  (Contributed by Mario Carneiro,
+     31-Jan-2015.) $)
   ax-ia1 $a |- ( ( ph /\ ps ) -> ph ) $.
 
   $( Right 'and' elimination.  Axiom 2 of 10 for intuitionistic logic.
-     (Contributed by Mario Carneiro, 31-Jan-2015.) $)
+     (Contributed by Mario Carneiro, 31-Jan-2015.)  Use its alias ~ simpr
+     instead for naming consistency with set.mm.
+     (New usage is discouraged.) $)
   ax-ia2 $a |- ( ( ph /\ ps ) -> ps ) $.
 
   $( 'And' introduction.  Axiom 3 of 10 for intuitionistic logic.  (Contributed
@@ -4194,6 +4198,14 @@ $)
       ( exp31 com13 imp31 ) CBADABCDABCDEFGH $.
   $}
 
+  ${
+    anass1rs.1 $e |- ( ( ph /\ ( ps /\ ch ) ) -> th ) $.
+    $( Commutative-associative law for conjunction in an antecedent.
+       (Contributed by Jeff Madsen, 19-Jun-2011.) $)
+    anass1rs $p |- ( ( ( ph /\ ch ) /\ ps ) -> th ) $=
+      ( anassrs an32s ) ABCDABCDEFG $.
+  $}
+
   $( Absorption into embedded conjunct.  (Contributed by NM, 4-Sep-1995.)
      (Proof shortened by Wolf Lammen, 16-Nov-2013.) $)
   anabs1 $p |- ( ( ( ph /\ ps ) /\ ph ) <-> ( ph /\ ps ) ) $=
@@ -6523,8 +6535,8 @@ $)
      (Contributed by Jim Kingdon, 30-Mar-2018.) $)
   pm5.54dc $p |- ( DECID ph ->
                    ( ( ( ph /\ ps ) <-> ph ) \/ ( ( ph /\ ps ) <-> ps ) ) ) $=
-    ( wdc wa wb wn wo df-dc ax-ia2 ax-ia3 impbid2 ax-ia1 ax-in2 orim12i orcomd
-    sylbi ) ACZABDZBEZRAEZQAAFZGSTGAHASUATARBABIABJKUARAABLARMKNPO $.
+    ( wdc wa wb wn df-dc simpr ax-ia3 impbid2 simpl ax-in2 orim12i sylbi orcomd
+    wo ) ACZABDZBEZRAEZQAAFZPSTPAGASUATARBABHABIJUARAABKARLJMNO $.
 
   ${
     baib.1 $e |- ( ph <-> ( ps /\ ch ) ) $.
@@ -6610,10 +6622,10 @@ $)
   $( A conjunction of two decidable propositions is decidable.  (Contributed by
      Jim Kingdon, 12-Apr-2018.) $)
   dcan $p |- ( DECID ph -> ( DECID ps -> DECID ( ph /\ ps ) ) ) $=
-    ( wdc wa wn wo ax-ia1 intnanrd orim2i ax-ia2 intnand olcd jaoi anbi12i andi
-    df-dc andir orbi1i 3bitri 3imtr4i ex ) ACZBCZABDZCZUDAEZBDZFZAUFFZBEZDZFZUD
-    UDEZFZUBUCDZUEUHUNUKUGUMUDUGABUFBGHIUKUMUDUKBAUIUJJKLMUOUIBUJFZDUIBDZUKFULU
-    BUIUCUPAPBPNUIBUJOUQUHUKAUFBQRSUDPTUA $.
+    ( wa wn wo simpl intnanrd orim2i simpr intnand olcd jaoi df-dc anbi12i andi
+    wdc andir orbi1i 3bitri 3imtr4i ex ) APZBPZABCZPZUDADZBCZEZAUFEZBDZCZEZUDUD
+    DZEZUBUCCZUEUHUNUKUGUMUDUGABUFBFGHUKUMUDUKBAUIUJIJKLUOUIBUJEZCUIBCZUKEULUBU
+    IUCUPAMBMNUIBUJOUQUHUKAUFBQRSUDMTUA $.
 
   $( A disjunction of two decidable propositions is decidable.  (Contributed by
      Jim Kingdon, 21-Apr-2018.) $)
@@ -6909,7 +6921,7 @@ $)
   $( One direction of Theorem *4.42 of [WhiteheadRussell] p. 119.  (Contributed
      by Jim Kingdon, 4-Aug-2018.) $)
   pm4.42r $p |- ( ( ( ph /\ ps ) \/ ( ph /\ -. ps ) ) -> ph ) $=
-    ( wa wn ax-ia1 jaoi ) ABCAABDZCABEAGEF $.
+    ( wa wn simpl jaoi ) ABCAABDZCABEAGEF $.
 
   ${
     ninba.1 $e |- ph $.
@@ -7839,6 +7851,24 @@ $)
        6-Oct-2014.) $)
     3mix3i $p |- ( ps \/ ch \/ ph ) $=
       ( w3o 3mix3 ax-mp ) ABCAEDABCFG $.
+  $}
+
+  ${
+    3mixd.1 $e |- ( ph -> ps ) $.
+    $( Deduction introducing triple disjunction.  (Contributed by Scott Fenton,
+       8-Jun-2011.) $)
+    3mix1d $p |- ( ph -> ( ps \/ ch \/ th ) ) $=
+      ( w3o 3mix1 syl ) ABBCDFEBCDGH $.
+
+    $( Deduction introducing triple disjunction.  (Contributed by Scott Fenton,
+       8-Jun-2011.) $)
+    3mix2d $p |- ( ph -> ( ch \/ ps \/ th ) ) $=
+      ( w3o 3mix2 syl ) ABCBDFEBCDGH $.
+
+    $( Deduction introducing triple disjunction.  (Contributed by Scott Fenton,
+       8-Jun-2011.) $)
+    3mix3d $p |- ( ph -> ( ch \/ th \/ ps ) ) $=
+      ( w3o 3mix3 syl ) ABCDBFEBCDGH $.
   $}
 
   ${
@@ -9502,9 +9532,9 @@ $)
   $( Exclusive or implies the left proposition is decidable.  (Contributed by
      Jim Kingdon, 12-Mar-2018.) $)
   xordc1 $p |- ( ( ph \/_ ps ) -> DECID ph ) $=
-    ( wo wa wn wxo andir ax-ia1 wi imnan ancom xchbinxr pm3.35 sylan2br orim12i
-    wdc sylbi df-xor df-dc 3imtr4i ) ABCABDZEZDZAAEZCZABFAPUCAUBDZBUBDZCUEABUBG
-    UFAUGUDAUBHUBBBUDIZUDUHBADUABAJABKLBUDMNOQABRAST $.
+    ( wo wa wn wxo wdc andir simpl imnan ancom xchbinxr pm3.35 sylan2br orim12i
+    wi sylbi df-xor df-dc 3imtr4i ) ABCABDZEZDZAAEZCZABFAGUCAUBDZBUBDZCUEABUBHU
+    FAUGUDAUBIUBBBUDPZUDUHBADUABAJABKLBUDMNOQABRAST $.
 
   $( Move negation outside of biconditional, for decidable propositions.
      Compare Theorem *5.18 of [WhiteheadRussell] p. 124.  (Contributed by Jim
@@ -9536,11 +9566,11 @@ $)
      5-May-2018.) $)
   bilukdc $p |- ( ( ( DECID ph /\ DECID ps ) /\ DECID ch ) ->
       ( ( ph <-> ps ) <-> ( ( ch <-> ps ) <-> ( ph <-> ch ) ) ) ) $=
-    ( wdc wa wb bicom bibi1i biassdc syl5bb ancom1s dcbi imp adantr ax-ia2 syl9
-    imp31 syl3c mpbid simplr adantlr bitr4d ) ADZBDZEZCDZEZABFZCBACFZFZFZCBFUIF
-    ZUGUHCFZUJFZUHUKFZUDUCUFUNUMBAFZCFZUDUCEUFEUJUHUPCABGHUDUCUFUQUJFBACIQJKUGU
-    HDZUFUJDZUNUOFUEURUFUCUDURABLMNUEUFOZUCUDUFUSUCUFUIDZUDUSACLZBUILPQUHCUJIRS
-    UGUFUDVAULUKFUTUCUDUFTUCUFVAUDUCUFVAVBMUACBUIIRUB $.
+    ( wdc wa wb bicom bibi1i biassdc imp31 syl5bb ancom1s dcbi imp adantr simpr
+    syl9 syl3c mpbid simplr adantlr bitr4d ) ADZBDZEZCDZEZABFZCBACFZFZFZCBFUIFZ
+    UGUHCFZUJFZUHUKFZUDUCUFUNUMBAFZCFZUDUCEUFEUJUHUPCABGHUDUCUFUQUJFBACIJKLUGUH
+    DZUFUJDZUNUOFUEURUFUCUDURABMNOUEUFPZUCUDUFUSUCUFUIDZUDUSACMZBUIMQJUHCUJIRSU
+    GUFUDVAULUKFUTUCUDUFTUCUFVAUDUCUFVAVBNUACBUIIRUB $.
 
   $( An alternate definition of the biconditional for decidable propositions.
      Theorem *5.23 of [WhiteheadRussell] p. 124, but with decidability
@@ -9577,9 +9607,9 @@ $)
      and Jim Kingdon, 7-Oct-2018.) $)
   anxordi $p |- ( ( ph /\ ( ps \/_ ch ) ) <->
       ( ( ph /\ ps ) \/_ ( ph /\ ch ) ) ) $=
-    ( wxo wa ax-ia1 wo wn df-xor simplbi simpl jaoi syl ibar xorbi12d pm5.21nii
-    bitr3d ) ABCDZEZAABEZACEZDZARFUBTUAGZAUBUCTUAEHTUAIJTAUAABKACKLMARSUBARNABT
-    CUAABNACNOQP $.
+    ( wxo wa simpl wo wn df-xor simplbi jaoi syl ibar xorbi12d bitr3d pm5.21nii
+    ) ABCDZEZAABEZACEZDZAQFUASTGZAUAUBSTEHSTIJSATABFACFKLAQRUAAQMABSCTABMACMNOP
+    $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -9614,7 +9644,7 @@ $)
 
   $( A ` /\ ` identity.  (Contributed by David A. Wheeler, 23-Feb-2018.) $)
   falantru $p |- ( ( F. /\ T. ) <-> F. ) $=
-    ( wfal wtru wa ax-ia1 falim impbii ) ABCZAABDGEF $.
+    ( wfal wtru wa simpl falim impbii ) ABCZAABDGEF $.
 
   $( A ` /\ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
   falanfal $p |- ( ( F. /\ F. ) <-> F. ) $=
@@ -13018,13 +13048,13 @@ $)
     sbcof2 $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
       ( wsb weq wi wal hbsb3 sb6f imbi2i albii bitri alimi wex 3syl wa jca sb5f
       eximi ax-11 equcomi imim1i imim2i pm2.43d syl6 a2i sylbi ax-i9 mpi ax-ial
-      exim 19.9h sylib sb2 sb1 ax-ia1 19.8a anim1i ax11e imdistani anbi2i exbii
-      syl5 sylibr impbii ) ACBEZBCEZABCEZVHBCFZVJAGZBHZGZBHZVLVIVHVJCBFZAGZCHZG
-      ZBHZVNVHVJVGGZBHVSVGBCACBDIZJVTVRBVGVQVJACBDJKLMVRVMBVJVQVLVJVQVJVPGZBHVL
-      VPBCUAWBVKBWBVJAVPVKVJVJVOABCUBZUCUDUENUFUGNUHVNVLBOZVLVNVJBOWDBCUIVJVLBU
-      LUJVLBVKBUKUMUNABCUOPVIVJVOAQZCOZQZBOZVHVIVJAQZBOZVJWJQZBOWHABCUPWIWKBWIV
-      JWJVJAUQZWIBURRTWKWGBVJWJWFWJVJWEQZBOVJWFWIWMBWIVJWEWLVJVOAWCUSRTWEBCUTVD
-      VATPVHVJVGQZBOWHVGBCWASWNWGBVGWFVJACBDSVBVCMVEVF $.
+      exim 19.9h sylib sb2 simpl 19.8a anim1i ax11e syl5 imdistani anbi2i exbii
+      sb1 sylibr impbii ) ACBEZBCEZABCEZVHBCFZVJAGZBHZGZBHZVLVIVHVJCBFZAGZCHZGZ
+      BHZVNVHVJVGGZBHVSVGBCACBDIZJVTVRBVGVQVJACBDJKLMVRVMBVJVQVLVJVQVJVPGZBHVLV
+      PBCUAWBVKBWBVJAVPVKVJVJVOABCUBZUCUDUENUFUGNUHVNVLBOZVLVNVJBOWDBCUIVJVLBUL
+      UJVLBVKBUKUMUNABCUOPVIVJVOAQZCOZQZBOZVHVIVJAQZBOZVJWJQZBOWHABCVDWIWKBWIVJ
+      WJVJAUPZWIBUQRTWKWGBVJWJWFWJVJWEQZBOVJWFWIWMBWIVJWEWLVJVOAWCURRTWEBCUSUTV
+      ATPVHVJVGQZBOWHVGBCWASWNWGBVGWFVJACBDSVBVCMVEVF $.
   $}
 
 $(
@@ -13356,12 +13386,12 @@ $)
     $( Propositional logic lemma used in the ~ sbequi proof.  (Contributed by
        Jim Kingdon, 1-Feb-2018.) $)
     sbequilem $p |- ( ph \/ ( ta \/ ( ps -> ( ch -> et ) ) ) ) $=
-      ( wo wi wa pm3.2i andi mpbi andir orbi12i orim2i ax-mp orim1i orass mpbir
-      pm3.43 pm3.33 syl6 ax-ia2 sylbir ax-ia1 orcom orbi1i ) AEIZBCFJZJZIZAEULI
-      IEAIZULIZUMUOEAULIZIZEABDFJZJZKZULIZIZUQAEKBCDJZJZEKIZVAIZVBVEUTVDUSKZIZI
-      ZVFAVDIZEKZVJUSKZIZVIVJEUSIZKVMVJVNGHLVJEUSMNVKVEVLVHAVDEOZAVDUSOPNVHVAVE
-      VGULUTVGBVCURKUKBVCURUBCDFUCUDQQRVEEVAVEVKEVOVJEUEUFSRVAUPEUTAULAUSUGSQRE
-      AULTUAUNUJULEAUHUINAEULTN $.
+      ( wo wi wa pm3.2i andi mpbi andir orbi12i orim2i ax-mp orim1i orass simpr
+      pm3.43 pm3.33 syl6 sylbir simpl mpbir orcom orbi1i ) AEIZBCFJZJZIZAEULIIE
+      AIZULIZUMUOEAULIZIZEABDFJZJZKZULIZIZUQAEKBCDJZJZEKIZVAIZVBVEUTVDUSKZIZIZV
+      FAVDIZEKZVJUSKZIZVIVJEUSIZKVMVJVNGHLVJEUSMNVKVEVLVHAVDEOZAVDUSOPNVHVAVEVG
+      ULUTVGBVCURKUKBVCURUBCDFUCUDQQRVEEVAVEVKEVOVJEUAUESRVAUPEUTAULAUSUFSQREAU
+      LTUGUNUJULEAUHUINAEULTN $.
   $}
 
   $( An equality theorem for substitution.  (Contributed by NM, 5-Aug-1993.)
@@ -13393,7 +13423,7 @@ $)
      p. 89.  (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
      29-Dec-2017.) $)
   spsbe $p |- ( [ y / x ] ph -> E. x ph ) $=
-    ( wsb weq wa wex sb1 ax-ia2 eximi syl ) ABCDBCEZAFZBGABGABCHMABLAIJK $.
+    ( wsb weq wa wex sb1 simpr eximi syl ) ABCDBCEZAFZBGABGABCHMABLAIJK $.
 
   $( Specialization of implication.  (Contributed by NM, 5-Aug-1993.)  (Proof
      rewritten by Jim Kingdon, 21-Jan-2018.) $)
@@ -13420,9 +13450,9 @@ $)
   $( Elimination of equality from antecedent after substitution.  (Contributed
      by NM, 5-Aug-1993.)  (Proof revised by Jim Kingdon, 20-Jan-2018.) $)
   sbequ8 $p |- ( [ y / x ] ph <-> [ y / x ] ( x = y -> ph ) ) $=
-    ( weq wi wa wex wsb pm5.4 ax-ia1 pm3.35 pm3.4 impbii exbii anbi12i 3bitr4ri
-    jca df-sb ) BCDZSAEZEZSTFZBGZFTSAFZBGZFTBCHABCHUATUCUESAIUBUDBUBUDUBSASTJSA
-    KQUDSTSAJSALQMNOTBCRABCRP $.
+    ( weq wi wa wex wsb pm5.4 simpl pm3.35 jca pm3.4 impbii exbii anbi12i df-sb
+    3bitr4ri ) BCDZSAEZEZSTFZBGZFTSAFZBGZFTBCHABCHUATUCUESAIUBUDBUBUDUBSASTJSAK
+    LUDSTSAJSAMLNOPTBCQABCQR $.
 
   $( Substitution has no effect on a non-free variable.  (Contributed by NM,
      30-May-2009.)  (Revised by Mario Carneiro, 12-Oct-2016.)  (Proof shortened
@@ -18679,11 +18709,11 @@ $)
   neirr $p |- -. A =/= A $=
     ( wne wn wceq eqid notnoti df-ne notbii mpbir ) AABZCAADZCZCKAEFJLAAGHI $.
 
-  $( Excluded middle with equality and inequality where equality is decidable.
-     (Contributed by Jim Kingdon, 15-May-2018.) $)
-  exmidnedc $p |- ( DECID A = B -> ( A = B \/ A =/= B ) ) $=
-    ( wceq wdc wn wo wne exmiddc df-ne orbi2i sylibr ) ABCZDLLEZFLABGZFLHNMLABI
-    JK $.
+  $( Decidable equality expressed in terms of ` =/= ` .  Basically the same as
+     ~ df-dc .  (Contributed by Jim Kingdon, 14-Mar-2020.) $)
+  dcne $p |- ( DECID A = B <-> ( A = B \/ A =/= B ) ) $=
+    ( wceq wdc wn wo wne df-dc df-ne orbi2i bitr4i ) ABCZDLLEZFLABGZFLHNMLABIJK
+    $.
 
   $( Law of noncontradiction with equality and inequality.  (Contributed by NM,
      3-Feb-2012.) $)
@@ -20247,9 +20277,9 @@ $)
      30-May-2011.) $)
   rexim $p |- ( A. x e. A ( ph -> ps ) ->
                ( E. x e. A ph -> E. x e. A ps ) ) $=
-    ( wi wral cv wcel wa wex wrex wal df-ral ax-ia1 a1i pm3.31 jcad alimi sylbi
-    df-rex exim syl 3imtr4g ) ABEZCDFZCGDHZAIZCJZUFBIZCJZACDKBCDKUEUGUIEZCLZUHU
-    JEUEUFUDEZCLULUDCDMUMUKCUMUGUFBUGUFEUMUFANOUFABPQRSUGUICUAUBACDTBCDTUC $.
+    ( wi wral cv wcel wa wex wrex wal df-ral simpl a1i pm3.31 jcad alimi df-rex
+    sylbi exim syl 3imtr4g ) ABEZCDFZCGDHZAIZCJZUFBIZCJZACDKBCDKUEUGUIEZCLZUHUJ
+    EUEUFUDEZCLULUDCDMUMUKCUMUGUFBUGUFEUMUFANOUFABPQRTUGUICUAUBACDSBCDSUC $.
 
   ${
     reximia.1 $e |- ( x e. A -> ( ph -> ps ) ) $.
@@ -23310,9 +23340,9 @@ $)
        Kingdon, 18-Jan-2019.) $)
     mosubt $p |- ( A. y E* x ph -> E* x E. y ( y = A /\ ph ) ) $=
       ( wmo wal cv wceq wex wa wi weu cvv wcel eueq isset bitr3i euexex sylanbr
-      nfv expcom moanimv sylibr ax-ia1 eximi ancri moimi syl ) ABECFZCGDHZCIZUJ
-      AJZCIZJZBEZUMBEZUIUKUPKUOUKUIUPUKUJCLZUIUPUQDMNUKCDOCDPQUJACBUJBTRSUAUKUM
-      BUBUCUMUNBUMUKULUJCUJAUDUEUFUGUH $.
+      nfv expcom moanimv sylibr simpl eximi ancri moimi syl ) ABECFZCGDHZCIZUJA
+      JZCIZJZBEZUMBEZUIUKUPKUOUKUIUPUKUJCLZUIUPUQDMNUKCDOCDPQUJACBUJBTRSUAUKUMB
+      UBUCUMUNBUMUKULUJCUJAUDUEUFUGUH $.
   $}
 
   ${
@@ -26662,9 +26692,9 @@ $)
     $( Double class difference.  Exercise 11 of [TakeutiZaring] p. 22.
        (Contributed by NM, 17-May-1998.) $)
     difdif $p |- ( A \ ( B \ A ) ) = A $=
-      ( vx cdif cv wcel wn wa ax-ia1 pm4.45im imanim eldif sylnibr anim2i sylbi
-      wi impbii difeqri ) CABADZACEZAFZTSFZGZHZUAUAUCIUAUATBFZUAPZHUDUAUEJUFUCU
-      AUFUEUAGHUBUEUAKTBALMNOQR $.
+      ( vx cdif cv wcel wn wa simpl pm4.45im imanim eldif sylnibr anim2i impbii
+      wi sylbi difeqri ) CABADZACEZAFZTSFZGZHZUAUAUCIUAUATBFZUAPZHUDUAUEJUFUCUA
+      UFUEUAGHUBUEUAKTBALMNQOR $.
 
     $( Subclass relationship for class difference.  Exercise 14 of
        [TakeutiZaring] p. 22.  (Contributed by NM, 29-Apr-1994.) $)
@@ -27400,11 +27430,11 @@ $)
        ` A C_ B <-> ( B \ ( B \ A ) ) = A ` ).  (Contributed by Jim Kingdon,
        24-Jul-2018.) $)
     ssddif $p |- ( A C_ B <-> A C_ ( B \ ( B \ A ) ) ) $=
-      ( vx cv wcel wi wal cdif wss wa ancr wn ax-ia2 con2i anim2i notbii anbi2i
-      eldif bitri dfss2 sylibr syl6 eldifi imim2i impbii albii 3bitr4i ) CDZAEZ
-      UHBEZFZCGUIUHBBAHZHZEZFZCGABIAUMIUKUOCUKUOUKUIUJUIJZUNUIUJKUPUJUJUILZJZLZ
-      JZUNUIUSUJURUIUJUQMNOUNUJUHULEZLZJUTUHBULRVBUSUJVAURUHBARPQSUAUBUNUJUIUHB
-      ULUCUDUEUFCABTCAUMTUG $.
+      ( vx cv wcel wi wal cdif wss wa wn simpr con2i anim2i eldif notbii anbi2i
+      ancr bitri dfss2 sylibr syl6 eldifi imim2i impbii albii 3bitr4i ) CDZAEZU
+      HBEZFZCGUIUHBBAHZHZEZFZCGABIAUMIUKUOCUKUOUKUIUJUIJZUNUIUJRUPUJUJUIKZJZKZJ
+      ZUNUIUSUJURUIUJUQLMNUNUJUHULEZKZJUTUHBULOVBUSUJVAURUHBAOPQSUAUBUNUJUIUHBU
+      LUCUDUEUFCABTCAUMTUG $.
 
     $( Union of two classes and class difference.  In classical logic this
        would be an equality.  (Contributed by Jim Kingdon, 24-Jul-2018.) $)
@@ -27426,7 +27456,7 @@ $)
        26-Jun-2011.) $)
     difin $p |- ( A \ ( A i^i B ) ) = ( A \ B ) $=
       ( vx cdif cv wcel wa wn wfal wi ax-in2 expd dfnot syl6ibr com12 imdistani
-      cin ax-ia2 con3i eldif anim2i impbii notbii anbi2i bitri 3bitr4i eqriv
+      cin simpr con3i eldif anim2i impbii notbii anbi2i bitri 3bitr4i eqriv
       elin ) CAABQZDZABDZCEZAFZUMULBFZGZHZGZUMUNHZGZULUJFZULUKFUQUSUMUPURUPUMUR
       UPUMUNIJURUPUMUNIUOIKLUNMNOPURUPUMUOUNUMUNRSUAUBUTUMULUIFZHZGUQULAUITVBUP
       UMVAUOULABUHUCUDUEULABTUFUG $.
@@ -27584,12 +27614,12 @@ $)
     $( Distribute intersection over difference.  (Contributed by Scott Fenton,
        14-Apr-2011.) $)
     indifdir $p |- ( ( A \ B ) i^i C ) = ( ( A i^i C ) \ ( B i^i C ) ) $=
-      ( vx cdif cin cv wcel wn wa elin notbii anbi12i eldif anbi1i bitri ax-ia1
-      an32 con3i wfal anim2i wi ax-in2 expcomd impcom sylibr adantll jca impbii
-      dfnot 3bitr4ri eqriv ) DABEZCFZACFZBCFZEZDGZUOHZURUPHZIZJURAHZURCHZJZURBH
-      ZVCJZIZJZURUQHURUNHZUSVDVAVGURACKUTVFURBCKLMURUOUPNVIVBVEIZJZVCJZVHVIURUM
-      HZVCJVLURUMCKVMVKVCURABNOPVLVDVJJZVHVBVJVCRVNVHVJVGVDVFVEVEVCQSUAVHVDVJVD
-      VGQVCVGVJVBVCVGJVETUBZVJVGVCVOVGVEVCTVFTUCUDUEVEUJUFUGUHUIPPUKUL $.
+      ( vx cdif cv wcel wn wa elin notbii anbi12i eldif anbi1i bitri an32 simpl
+      cin con3i wfal anim2i ax-in2 expcomd impcom dfnot sylibr adantll 3bitr4ri
+      wi jca impbii eqriv ) DABEZCRZACRZBCRZEZDFZUOGZURUPGZHZIURAGZURCGZIZURBGZ
+      VCIZHZIZURUQGURUNGZUSVDVAVGURACJUTVFURBCJKLURUOUPMVIVBVEHZIZVCIZVHVIURUMG
+      ZVCIVLURUMCJVMVKVCURABMNOVLVDVJIZVHVBVJVCPVNVHVJVGVDVFVEVEVCQSUAVHVDVJVDV
+      GQVCVGVJVBVCVGIVETUIZVJVGVCVOVGVEVCTVFTUBUCUDVEUEUFUGUJUKOOUHUL $.
   $}
 
   $( Set difference with a set difference.  In classical logic this would be
@@ -28593,8 +28623,8 @@ $)
     $( Restricted existential quantification implies its restriction is
        inhabited.  (Contributed by Jim Kingdon, 16-Oct-2018.) $)
     rexm $p |- ( E. x e. A ph -> E. x x e. A ) $=
-      ( wrex cv wcel wa wex df-rex ax-ia1 eximi sylbi ) ABCDBECFZAGZBHMBHABCINM
-      BMAJKL $.
+      ( wrex cv wcel wa wex df-rex simpl eximi sylbi ) ABCDBECFZAGZBHMBHABCINMB
+      MAJKL $.
 
     $( Idempotent law for restricted quantifier.  (Contributed by NM,
        28-Mar-1997.) $)
@@ -34761,18 +34791,18 @@ $)
     opelopabsb $p |- ( <. A , B >. e. { <. x , y >. | ph }
                  <-> [. A / x ]. [. B / y ]. ph ) $=
       ( vv vu vz vw cop wcel cvv wa wsb cv wceq wex nfs1v weq wb copab wsbc vex
-      elopab ax-ia1 eqcomd sylib 2eximi eeanv isset anbi12i bitr4i sylbi nfsbxy
-      opth nfv sbequ12 sylan9bbr cbvopab eleq2s sbcex spesbc exlimiv syl eleq1d
-      jca opeq1 dfsbcq2 bibi12d opeq2 sbcbidv nfopab1 nfel2 nfbi nfopab2 opabid
-      chvar vtocl2g pm5.21nii ) DEJZABCUAZKZDLKZELKZMZACEUBZBDUBZWEVTACFNZBGNZG
-      FUAZWAVTWJKVTGOZFOZJZPZWIMZFQGQZWEWIGFVTUDWPWKDPZWLEPZMZFQGQZWEWOWSGFWOWM
-      VTPWSWOVTWMWNWIUEUFWKWLDEGUCFUCUOUGUHWTWQGQZWRFQZMWEWQWRGFUIWCXAWDXBGDUJF
-      EUJUKULUGUMAWIBCGFAGUPAFUPWHBGRWHBGCACFRUNCFSAWHBGSWIACFUQWHBGUQURUSUTWGW
-      CWDWFBDVAWGWFBQWDWFBDVBWFWDBACEVAVCVDVFHOZIOZJZWAKZACINZBHNZTZDXDJZWAKZXG
-      BDUBZTWBWGTHIDELLXCDPZXFXKXHXLXMXEXJWAXCDXDVGVEXGBHDVHVIXDEPZXKWBXLWGXNXJ
-      VTWAXDEDVJVEXNXGWFBDACIEVHVKVIBOZXDJZWAKZXGTZXIBHXFXHBBXEWAABCVLVMXGBHRVN
-      BHSZXQXFXGXHXSXPXEWAXOXCXDVGVEXGBHUQVIXOCOZJZWAKZATXRCIXQXGCCXPWAABCVOVMA
-      CIRVNCISZYBXQAXGYCYAXPWAXTXDXOVJVEACIUQVIABCVPVQVQVRVS $.
+      elopab simpl eqcomd opth sylib 2eximi eeanv isset bitr4i sylbi nfv nfsbxy
+      anbi12i sbequ12 sylan9bbr cbvopab eleq2s sbcex spesbc exlimiv syl dfsbcq2
+      jca opeq1 eleq1d bibi12d opeq2 sbcbidv nfopab1 nfel2 nfopab2 opabid chvar
+      nfbi vtocl2g pm5.21nii ) DEJZABCUAZKZDLKZELKZMZACEUBZBDUBZWEVTACFNZBGNZGF
+      UAZWAVTWJKVTGOZFOZJZPZWIMZFQGQZWEWIGFVTUDWPWKDPZWLEPZMZFQGQZWEWOWSGFWOWMV
+      TPWSWOVTWMWNWIUEUFWKWLDEGUCFUCUGUHUIWTWQGQZWRFQZMWEWQWRGFUJWCXAWDXBGDUKFE
+      UKUPULUHUMAWIBCGFAGUNAFUNWHBGRWHBGCACFRUOCFSAWHBGSWIACFUQWHBGUQURUSUTWGWC
+      WDWFBDVAWGWFBQWDWFBDVBWFWDBACEVAVCVDVFHOZIOZJZWAKZACINZBHNZTZDXDJZWAKZXGB
+      DUBZTWBWGTHIDELLXCDPZXFXKXHXLXMXEXJWAXCDXDVGVHXGBHDVEVIXDEPZXKWBXLWGXNXJV
+      TWAXDEDVJVHXNXGWFBDACIEVEVKVIBOZXDJZWAKZXGTZXIBHXFXHBBXEWAABCVLVMXGBHRVQB
+      HSZXQXFXGXHXSXPXEWAXOXCXDVGVHXGBHUQVIXOCOZJZWAKZATXRCIXQXGCCXPWAABCVNVMAC
+      IRVQCISZYBXQAXGYCYAXPWAXTXDXOVJVHACIUQVIABCVOVPVPVRVS $.
 
     brabsb.1 $e |- R = { <. x , y >. | ph } $.
     $( The law of concretion in terms of substitutions.  (Contributed by NM,
@@ -35719,9 +35749,9 @@ $)
        [TakeutiZaring] p. 36.  (Contributed by NM, 23-Apr-1994.) $)
     ordelord $p |- ( ( Ord A /\ B e. A ) -> Ord B ) $=
       ( vx word wcel cv wa wceq eleq1 anbi2d ordeq imbi12d wtr wss wral simprbi
-      wi dford3 r19.21bi ordelss ax-ia1 trssord syl3anc vtoclg anabsi7 ) ADZBAE
-      ZBDZUFCFZAEZGZUIDZQUFUGGZUHQCBAUIBHZUKUMULUHUNUJUGUFUIBAIJUIBKLUKUIMZUIAN
-      UFULUFUOCAUFAMUOCAOCARPSAUITUFUJUAUIAUBUCUDUE $.
+      wi dford3 r19.21bi ordelss simpl trssord syl3anc vtoclg anabsi7 ) ADZBAEZ
+      BDZUFCFZAEZGZUIDZQUFUGGZUHQCBAUIBHZUKUMULUHUNUJUGUFUIBAIJUIBKLUKUIMZUIANU
+      FULUFUOCAUFAMUOCAOCARPSAUITUFUJUAUIAUBUCUDUE $.
   $}
 
   ${
@@ -36803,13 +36833,13 @@ $)
        ` ph ` .  Our lemma states that it is an ordinal number.  (Contributed
        by Jim Kingdon, 28-Jan-2019.) $)
     ordtriexmidlem $p |- { x e. { (/) } | ph } e. On $=
-      ( vy vz c0 csn crab con0 wcel word wtr wss cv wa wi wal ax-ia1 wceq mpbir
-      ax-mp elrabi elsn sylib noel eleq2 mtbiri syl adantl pm2.21dd gen2 ssrab2
-      wn dftr2 csuc ord0 ordsucim suc0 ordeq mpbi trssord mp3an p0ex rabex elon
+      ( vy vz c0 csn crab con0 wcel word wtr wss cv wa wi wal simpl mpbir ax-mp
+      wceq elrabi elsn sylib noel eleq2 mtbiri syl adantl pm2.21dd dftr2 ssrab2
+      wn gen2 csuc ord0 ordsucim suc0 ordeq mpbi trssord mp3an p0ex rabex elon
       wb ) ABEFZGZHIVGJZVGKZVGVFLVFJZVHVICMZDMZIZVLVGIZNZVKVGIZOZDPCPVQCDVOVMVP
-      VMVNQVNVMULZVMVNVLERZVRVNVLVFIVSABVLVFUADEUBUCVSVMVKEIVKUDVLEVKUEUFUGUHUI
-      UJCDVGUMSABVFUKEUNZJZVJEJWAUOEUPTVTVFRWAVJVEUQVTVFURTUSVGVFUTVAVGABVFVBVC
-      VDS $.
+      VMVNQVNVMULZVMVNVLETZVRVNVLVFIVSABVLVFUADEUBUCVSVMVKEIVKUDVLEVKUEUFUGUHUI
+      UMCDVGUJRABVFUKEUNZJZVJEJWAUOEUPSVTVFTWAVJVEUQVTVFURSUSVGVFUTVAVGABVFVBVC
+      VDR $.
   $}
 
   ${
@@ -37361,16 +37391,16 @@ $)
        (Contributed by NM, 18-Feb-2004.) $)
     tfi $p |- ( ( A C_ On /\ A. x e. On ( x C_ A -> x e. A ) ) -> A = On ) $=
       ( vy con0 wss cv wcel wi wral wa wal df-ral albii bitri imbi1i spi imim1i
-      dfss2 impexp wsb wceq imdi imbi2i 19.21v bitr4i ax-ia1 wtr tron dftr2 jca
-      mpbi bi2.04 3imtr3i alimi sylbi adantl sbim clelsb3 imbi12i ralbii sylbir
-      ax-setind sylibr syl eqss biimpri syldan ) BDEZAFZBEZVIBGZHZADIZDBEZBDUAZ
-      VHVMJCFZVIGZVPDGZVPBGZHZHZCKZVIDGZVKHZHZAKZVNVMWFVHVMWCVQVSHZHZCKZWDHZAKZ
-      WFVMWCVJHZWDHZAKZWKVMWCVLHZAKWNVLADLWOWMAWCVJVKUBMNWMWJAWLWIWDWLWCWGCKZHW
-      IVJWPWCCVIBRUCWCWGCUDUEOMNWJWEAWBWIWDWAWHCVQVRJZVSHVQWCJZVSHZWAWHWRWQVSWR
-      VQVRVQWCUFWRVRHZAWTAKZCDUGXACKUHCADUIUKPPUJQVQVRVSSWSVQWCVSHHWHVQWCVSSVQW
-      CVSULNUMUNQUNUOUPWFWDAKZVNWFWDACTZCVIIZWDHZAKXBXEWEAXDWBWDXDVTCVIIWBXCVTC
-      VIXCWCACTZVKACTZHVTWCVKACUQXFVRXGVSCADURCABURUSNUTVTCVILNOMWDCAVBVAADBRVC
-      VDVOVHVNJBDVEVFVG $.
+      dfss2 impexp wsb wceq imdi imbi2i 19.21v bitr4i simpl wtr tron dftr2 mpbi
+      bi2.04 3imtr3i alimi sylbi adantl clelsb3 imbi12i ralbii ax-setind sylbir
+      jca sbim sylibr syl eqss biimpri syldan ) BDEZAFZBEZVIBGZHZADIZDBEZBDUAZV
+      HVMJCFZVIGZVPDGZVPBGZHZHZCKZVIDGZVKHZHZAKZVNVMWFVHVMWCVQVSHZHZCKZWDHZAKZW
+      FVMWCVJHZWDHZAKZWKVMWCVLHZAKWNVLADLWOWMAWCVJVKUBMNWMWJAWLWIWDWLWCWGCKZHWI
+      VJWPWCCVIBRUCWCWGCUDUEOMNWJWEAWBWIWDWAWHCVQVRJZVSHVQWCJZVSHZWAWHWRWQVSWRV
+      QVRVQWCUFWRVRHZAWTAKZCDUGXACKUHCADUIUJPPVAQVQVRVSSWSVQWCVSHHWHVQWCVSSVQWC
+      VSUKNULUMQUMUNUOWFWDAKZVNWFWDACTZCVIIZWDHZAKXBXEWEAXDWBWDXDVTCVIIWBXCVTCV
+      IXCWCACTZVKACTZHVTWCVKACVBXFVRXGVSCADUPCABUPUQNURVTCVILNOMWDCAUSUTADBRVCV
+      DVOVHVNJBDVEVFVG $.
   $}
 
   ${
@@ -37548,10 +37578,10 @@ $)
        arithmetic.  Proposition 7.30(1) of [TakeutiZaring] p. 42.  (Contributed
        by NM, 15-May-1994.) $)
     peano1 $p |- (/) e. _om $=
-      ( vy vx vz c0 cv wcel csuc wral wa cab cint com wi 0ex wsb df-clab ax-ia1
-      elint sbimi clelsb4 sylib sylbi mpgbir dfom3 eleqtrri ) DDAEZFZBEGUFFBUFH
-      ZIZAJZKZLDUKFCEZUJFZDULFZMCCDUJNRUMUIACOZUNUICAPUOUGACOUNUIUGACUGUHQSCADT
-      UAUBUCABUDUE $.
+      ( vy vx vz c0 cv wcel csuc wral wa cab com wi 0ex elint wsb df-clab simpl
+      cint sbimi clelsb4 sylib sylbi mpgbir dfom3 eleqtrri ) DDAEZFZBEGUFFBUFHZ
+      IZAJZRZKDUKFCEZUJFZDULFZLCCDUJMNUMUIACOZUNUICAPUOUGACOUNUIUGACUGUHQSCADTU
+      AUBUCABUDUE $.
   $}
 
   ${
@@ -37561,16 +37591,16 @@ $)
        p. 42.  (Contributed by NM, 3-Sep-2003.) $)
     peano2 $p |- ( A e. _om -> suc A e. _om ) $=
       ( vy vx vz cvv wcel com csuc cv wa wi wb imbi12d adantl wsb wal sylib nfv
-      wral nfan elex c0 cab cint ax-ia1 wceq eleq1 eleq1d df-clab ax-ia2 df-ral
-      suceq sbimi sbim elsb4 clelsb4 imbi12i bitri sbalv sylbi nfra1 nfsab nfvd
-      19.21bi nfcvd vtocldf ralrimiva ralim elintg sucexg syl syl5ibr mpd dfom3
-      eleq2i 3imtr4g mpcom ) AEFZAGFZAHZGFZAGUAVRAUBBIZFZCIZHZWBFZCWBSZJZBUCZUD
-      ZFZVTWJFZVSWAVRADIZFZVTWMFZKZDWISZWKWLKZVRWPDWIVRWMWIFZJZWDWMFZWEWMFZKZWP
-      CAEVRWSUEWDAUFZXCWPLWTXDXAWNXBWOWDAWMUGXDWEVTWMWDAULUHMNWSXCVRWSXCCWSWHBD
-      OZXCCPZWHDBUIXEWDWBFZWFKZCPZBDOXFWHXIBDWHWGXIWCWGUJWFCWBUKQUMXHXCBDCXHBDO
-      XGBDOZWFBDOZKXCXGWFBDUNXJXAXKXBDBCUODBWEUPUQURUSQUTVDNVRWSCVRCRWHCBDWCWGC
-      WCCRWFCWBVATVBTWTCAVEWTWPCVCVFVGWQWRVRWNDWISZWODWISZKWNWODWIVHVRWKXLWLXMD
-      AWIEVIVRVTEFWLXMLAEVJDVTWIEVIVKMVLVMGWJABCVNZVOGWJVTXNVOVPVQ $.
+      wral nfan elex c0 cint simpl wceq eleq1 suceq eleq1d df-clab simpr df-ral
+      cab sbimi sbim elsb4 clelsb4 imbi12i bitri sbalv sylbi 19.21bi nfra1 nfvd
+      nfsab nfcvd vtocldf ralrimiva ralim elintg sucexg syl syl5ibr mpd 3imtr4g
+      dfom3 eleq2i mpcom ) AEFZAGFZAHZGFZAGUAVRAUBBIZFZCIZHZWBFZCWBSZJZBULZUCZF
+      ZVTWJFZVSWAVRADIZFZVTWMFZKZDWISZWKWLKZVRWPDWIVRWMWIFZJZWDWMFZWEWMFZKZWPCA
+      EVRWSUDWDAUEZXCWPLWTXDXAWNXBWOWDAWMUFXDWEVTWMWDAUGUHMNWSXCVRWSXCCWSWHBDOZ
+      XCCPZWHDBUIXEWDWBFZWFKZCPZBDOXFWHXIBDWHWGXIWCWGUJWFCWBUKQUMXHXCBDCXHBDOXG
+      BDOZWFBDOZKXCXGWFBDUNXJXAXKXBDBCUODBWEUPUQURUSQUTVANVRWSCVRCRWHCBDWCWGCWC
+      CRWFCWBVBTVDTWTCAVEWTWPCVCVFVGWQWRVRWNDWISZWODWISZKWNWODWIVHVRWKXLWLXMDAW
+      IEVIVRVTEFWLXMLAEVJDVTWIEVIVKMVLVMGWJABCVOZVPGWJVTXNVPVNVQ $.
   $}
 
   $( The successor of any natural number is not zero.  One of Peano's five
@@ -38402,10 +38432,10 @@ $)
     mosubopt $p |- ( A. y A. z E* x ph ->
                  E* x E. y E. z ( A = <. y , z >. /\ ph ) ) $=
       ( wmo wal cv cop wceq wex wa wi nfa1 nfe1 nfmo nfex copsexg sps exlimd
-      mobidv biimpcd moanimv ax-ia1 2eximi ancri moimi sylbir syl ) ABFZDGZCGZE
-      CHDHIJZDKZCKZUMALZDKZCKZBFZMZUSULUNUSCUKCNURCBUQCOPUKUNUSMCUKUMUSDUJDNURD
-      BUQDCUPDOQPUJUMUSMDUMUJUSUMAURBACDERUAUBSTSTUTUOURLZBFUSUOURBUCURVABURUOU
-      PUMCDUMAUDUEUFUGUHUI $.
+      mobidv biimpcd moanimv simpl 2eximi ancri moimi sylbir syl ) ABFZDGZCGZEC
+      HDHIJZDKZCKZUMALZDKZCKZBFZMZUSULUNUSCUKCNURCBUQCOPUKUNUSMCUKUMUSDUJDNURDB
+      UQDCUPDOQPUJUMUSMDUMUJUSUMAURBACDERUAUBSTSTUTUOURLZBFUSUOURBUCURVABURUOUP
+      UMCDUMAUDUEUFUGUHUI $.
   $}
 
   ${
@@ -41378,10 +41408,10 @@ $)
        Jim Kingdon, 11-Dec-2018.) $)
     xpmlem $p |- ( ( E. x x e. A /\ E. y y e. B ) <-> E. z z e. ( A X. B ) ) $=
       ( cv wcel wex wa cxp eeanv cop vex opex wceq eleq1 opelxp syl6bb exlimivv
-      spcev sylbir elxp ax-ia2 2eximi sylbi exlimiv sylib impbii ) AFZDGZAHBFZE
-      GZBHIZCFZDEJZGZCHZUMUJULIZBHAHZUQUJULABKZURUQABUPURCUIUKLZUIUKAMBMNUNVAOZ
-      UPVAUOGURUNVAUOPUIUKDEQRTSUAUQUSUMUPUSCUPVBURIZBHAHUSABUNDEUBVCURABVBURUC
-      UDUEUFUTUGUH $.
+      spcev sylbir elxp simpr 2eximi sylbi exlimiv sylib impbii ) AFZDGZAHBFZEG
+      ZBHIZCFZDEJZGZCHZUMUJULIZBHAHZUQUJULABKZURUQABUPURCUIUKLZUIUKAMBMNUNVAOZU
+      PVAUOGURUNVAUOPUIUKDEQRTSUAUQUSUMUPUSCUPVBURIZBHAHUSABUNDEUBVCURABVBURUCU
+      DUEUFUTUGUH $.
   $}
 
   ${
@@ -43610,14 +43640,14 @@ $)
        ` Fun ``' F ` .  (Contributed by Jim Kingdon, 25-Dec-2018.) $)
     imadiflem $p |- ( ( F " A ) \ ( F " B ) ) C_ ( F " ( A \ B ) ) $=
       ( vx vy cv wbr wrex wn wa cab cdif cima wcel wex df-rex notbii wal sylibr
-      dfima2 alnex 19.29r sylan2br ax-ia1 simplr ax-ia2 ancom imnan sylib jca32
-      wi bitr4i mpd eldif anbi1i anandir bitri eximi syl syl2anb difeq12i difab
-      ss2abi eqtri 3sstr4i ) DFZEFCGZDAHZVGDBHZIZJZEKZVGDABLZHZEKCAMZCBMZLZCVMM
-      VKVNEVHVFANZVGJZDOZVFBNZVGJZDOZIZVNVJVGDAPVIWCVGDBPQVTWDJZVFVMNZVGJZDOZVN
-      WEVSWBIZJZDOZWHWDVTWIDRWKWBDUAVSWIDUBUCWJWGDWJVSWAIZVGJJZWGWJVSWLVGVSWIUD
-      WJVGWLVRVGWIUEZWJWIVGWLUKZVSWIUFWIVGWAJZIWOWBWPWAVGUGQVGWAUHULUIUMWNUJWGV
-      RWLJZVGJWMWFWQVGVFABUNUOVRWLVGUPUQSURUSVGDVMPSUTVCVQVHEKZVIEKZLVLVOWRVPWS
-      DECATDECBTVAVHVIEVBVDDECVMTVE $.
+      dfima2 alnex 19.29r sylan2br simpl simplr wi simpr ancom imnan bitr4i mpd
+      sylib jca32 eldif anbi1i anandir bitri eximi syl2anb difeq12i difab eqtri
+      syl ss2abi 3sstr4i ) DFZEFCGZDAHZVGDBHZIZJZEKZVGDABLZHZEKCAMZCBMZLZCVMMVK
+      VNEVHVFANZVGJZDOZVFBNZVGJZDOZIZVNVJVGDAPVIWCVGDBPQVTWDJZVFVMNZVGJZDOZVNWE
+      VSWBIZJZDOZWHWDVTWIDRWKWBDUAVSWIDUBUCWJWGDWJVSWAIZVGJJZWGWJVSWLVGVSWIUDWJ
+      VGWLVRVGWIUEZWJWIVGWLUFZVSWIUGWIVGWAJZIWOWBWPWAVGUHQVGWAUIUJULUKWNUMWGVRW
+      LJZVGJWMWFWQVGVFABUNUOVRWLVGUPUQSURVCVGDVMPSUSVDVQVHEKZVIEKZLVLVOWRVPWSDE
+      CATDECBTUTVHVIEVAVBDECVMTVE $.
   $}
 
   ${
@@ -43659,16 +43689,16 @@ $)
        (Contributed by Paul Chapman, 11-Apr-2009.) $)
     imain $p |- ( Fun `' F ->
                   ( F " ( A i^i B ) ) = ( ( F " A ) i^i ( F " B ) ) ) $=
-      ( vx vy vz ccnv cin cima cv wbr wrex wa cab wcel wex ax-ia2 df-rex dfima2
-      wal wss imainlem a1i eeanv simprll weq anim12i wi funcnveq biimpi 19.21bi
-      wfun 19.21bbi imp sylan2 simprrl eqeltrd elin sylanbrc simprlr ex exlimdv
+      ( vx vy vz ccnv cin cima cv wbr wrex cab wcel wex simpr wal df-rex dfima2
+      wa wfun wss imainlem a1i eeanv simprll anim12i wi funcnveq biimpi 19.21bi
+      weq 19.21bbi imp sylan2 simprrl eqeltrd elin sylanbrc simprlr jca exlimdv
       eximdv syl5bir anbi12i 3imtr4g ss2abdv ineq12i inab eqtri 3sstr4g eqssd
-      jca ) CGULZCABHZIZCAIZCBIZHZVPVSUAVNABCUBUCVNDJZEJZCKZDALZFJZWACKZFBLZMZE
-      NZWBDVOLZENVSVPVNWGWIEVNVTAOZWBMZDPZWDBOZWEMZFPZMZVTVOOZWBMZDPZWGWIWPWKWN
-      MZFPZDPVNWSWKWNDFUDVNXAWRDVNWTWRFVNWTWRVNWTMZWQWBXBWJVTBOWQVNWJWBWNUEXBVT
-      WDBWTVNWBWEMZDFUFZWKWBWNWEWJWBQWMWEQUGVNXCXDVNXCXDUHZEFVNXEFTETZDVNXFDTDE
-      FCUIUJUKUMUNUOVNWKWMWEUPUQVTABURUSVNWJWBWNUTVMVAVBVCVDWCWLWFWOWBDARWEFBRV
-      EWBDVORVFVGVSWCENZWFENZHWHVQXGVRXHDECASFECBSVHWCWFEVIVJDECVOSVKVL $.
+      ex ) CGUAZCABHZIZCAIZCBIZHZVPVSUBVNABCUCUDVNDJZEJZCKZDALZFJZWACKZFBLZTZEM
+      ZWBDVOLZEMVSVPVNWGWIEVNVTANZWBTZDOZWDBNZWETZFOZTZVTVONZWBTZDOZWGWIWPWKWNT
+      ZFOZDOVNWSWKWNDFUEVNXAWRDVNWTWRFVNWTWRVNWTTZWQWBXBWJVTBNWQVNWJWBWNUFXBVTW
+      DBWTVNWBWETZDFULZWKWBWNWEWJWBPWMWEPUGVNXCXDVNXCXDUHZEFVNXEFQEQZDVNXFDQDEF
+      CUIUJUKUMUNUOVNWKWMWEUPUQVTABURUSVNWJWBWNUTVAVMVBVCVDWCWLWFWOWBDARWEFBRVE
+      WBDVORVFVGVSWCEMZWFEMZHWHVQXGVRXHDECASFECBSVHWCWFEVIVJDECVOSVKVL $.
   $}
 
   ${
@@ -43702,12 +43732,12 @@ $)
      p. 284.  Compare Exercise 9 of [TakeutiZaring] p. 29.  (Contributed by NM,
      10-Sep-2006.) $)
   funimaexg $p |- ( ( Fun A /\ B e. C ) -> ( A " B ) e. _V ) $=
-    ( wfun wcel wa cdm cin cima cvv wrel wceq ax-ia1 funrel cres resres reseq2i
-    crn incom df-ima eqtr4i resdm reseq1d syl5eqr rneqd 3eqtr4g 3syl inex1g wss
-    inss2 funimaexglem mp3an3 sylan2 eqeltrrd ) ADZBCEZFZABAGZHZIZABIZJUQUOAKZU
-    TVALUOUPMANVBAUSOZRABOZRUTVAVBVCVDVBVCAUROZBOZVDVFAURBHZOVCAURBPUSVGABURSQU
-    AVBVEABAUBUCUDUEAUSTABTUFUGUPUOUSJEZUTJEZBURCUHUOVHUSURUIVIBURUJAUSJUKULUMU
-    N $.
+    ( wfun wcel cdm cin cima cvv wrel wceq simpl funrel cres crn resres reseq2i
+    wa incom df-ima eqtr4i resdm reseq1d syl5eqr rneqd 3eqtr4g inex1g wss inss2
+    3syl funimaexglem mp3an3 sylan2 eqeltrrd ) ADZBCEZRZABAFZGZHZABHZIUQUOAJZUT
+    VAKUOUPLAMVBAUSNZOABNZOUTVAVBVCVDVBVCAURNZBNZVDVFAURBGZNVCAURBPUSVGABURSQUA
+    VBVEABAUBUCUDUEAUSTABTUFUJUPUOUSIEZUTIEZBURCUGUOVHUSURUHVIBURUIAUSIUKULUMUN
+    $.
 
   ${
     zfrep5.1 $e |- B e. _V $.
@@ -45668,13 +45698,13 @@ $)
     $( A member of a function's range is a value of the function.  (Contributed
        by NM, 31-Oct-1995.) $)
     fvelrnb $p |- ( F Fn A -> ( B e. ran F <-> E. x e. A ( F ` x ) = B ) ) $=
-      ( vy cv cfv wceq wrex cvv wcel wi wfn crn wb wa wex df-rex 19.41v ax-ia1
-      anim1i ancomd funfvex funfni syl ax-ia2 eleq1d adantr mpbid sylbir sylanb
-      exlimiv expcom fnrnfv eleq2d eqeq1 eqcom syl6bb rexbidv sylan9bbr mpancom
-      cab elab3g ) AFZDGZCHZABIZCJKZLZDBMZCDNZKZVGOVGVJVHVGVDBKZVFPZAQZVJVHVFAB
-      RVOVJPVNVJPZAQVHVNVJASVPVHAVPVEJKZVHVPVJVMPVQVPVMVJVNVMVJVMVFTUAUBVQBVDDV
-      DDUCUDUEVNVQVHOVJVNVECJVMVFUFUGUHUIULUJUKUMVJVLCEFZVEHZABIZEVBZKVIVGVJVKW
-      ACAEBDUNUOVTVGECJVRCHZVSVFABWBVSCVEHVFVRCVEUPCVEUQURUSVCUTVA $.
+      ( vy cv cfv wceq wrex cvv wcel wi wfn crn wb wa wex df-rex 19.41v simpl
+      anim1i ancomd funfvex funfni syl simpr eleq1d adantr mpbid exlimiv sylbir
+      sylanb expcom cab fnrnfv eleq2d eqeq1 eqcom syl6bb rexbidv elab3g mpancom
+      sylan9bbr ) AFZDGZCHZABIZCJKZLZDBMZCDNZKZVGOVGVJVHVGVDBKZVFPZAQZVJVHVFABR
+      VOVJPVNVJPZAQVHVNVJASVPVHAVPVEJKZVHVPVJVMPVQVPVMVJVNVMVJVMVFTUAUBVQBVDDVD
+      DUCUDUEVNVQVHOVJVNVECJVMVFUFUGUHUIUJUKULUMVJVLCEFZVEHZABIZEUNZKVIVGVJVKWA
+      CAEBDUOUPVTVGECJVRCHZVSVFABWBVSCVEHVFVRCVEUQCVEURUSUTVAVCVB $.
 
     $( Alternate definition of the image of a function.  (Contributed by Raph
        Levien, 20-Nov-2006.) $)
@@ -47646,11 +47676,11 @@ $)
     funfvima3 $p |- ( ( Fun F /\ F C_ G ) -> ( A e. dom F ->
                     ( F ` A ) e. ( G " { A } ) ) ) $=
       ( vx wss wfun cdm wcel cfv csn cima wi wa cop funfvop ssel syl5 wb adantl
-      cvv imp ax-ia2 wceq sneq imaeq2d eleq2d opeq1 eleq1d bibi12d vex elimasng
-      cv funfvex sylancr vtocld mpbird exp32 impcom ) BCEZBFZABGZHZABIZCAJZKZHZ
-      LUSUTVBVFUSUTVBMZMVFAVCNZCHZUSVGVIVGVHBHUSVIABOBCVHPQUAVGVFVIRZUSVGVCCDUL
-      ZJZKZHZVKVCNZCHZRZVJDAVAUTVBUBVKAUCZVQVJRVGVRVNVFVPVIVRVMVEVCVRVLVDCVKAUD
-      UEUFVRVOVHCVKAVCUGUHUISVGVKTHVCTHVQDUJABUMCVKVCTTUKUNUOSUPUQUR $.
+      cvv imp cv simpr wceq sneq imaeq2d eleq2d eleq1d bibi12d funfvex elimasng
+      opeq1 vex sylancr vtocld mpbird exp32 impcom ) BCEZBFZABGZHZABIZCAJZKZHZL
+      USUTVBVFUSUTVBMZMVFAVCNZCHZUSVGVIVGVHBHUSVIABOBCVHPQUAVGVFVIRZUSVGVCCDUBZ
+      JZKZHZVKVCNZCHZRZVJDAVAUTVBUCVKAUDZVQVJRVGVRVNVFVPVIVRVMVEVCVRVLVDCVKAUEU
+      FUGVRVOVHCVKAVCULUHUISVGVKTHVCTHVQDUMABUJCVKVCTTUKUNUOSUPUQUR $.
   $}
 
   $( The function value of an operand in a set is contained in the image of
@@ -49094,17 +49124,17 @@ $)
       ( cv wcel wa c0 wceq wo eleq1 syl wrex wreu wral csn crio w3o cpr wi con0
       crab onsucelsucexmidlem eqeltri prid1g ax-mp eleqtrri anbi1d reueqd rspcv
       rexbidv riotacl elrabi eleq2s elpri 3syl syl5ibcom orim2d mpd pp0ex rabex
-      cvv prid2 orim1d jca anddi ax-ia1 jaoi orim2i orcomd ax-ia2 orim1i 3orass
-      sylib sylibr ) DMZFMZNZEMWENZOZFCMZUAZEWDUBZDIUCZPUDZGNZPHNZGWENZWGOZFWIU
-      AZEGUEZPQZHWENZWGOZFWIUAZEHUEZWMQZOZRZRZWNWOXFUFWLWNWTWOOZXFRZRXHWLXJWNWL
-      XJWNWOOZWNXEOZRZRZXJWNRWLWTWNRZWOXERZOXNWLXOXPWLWTWSWMQZRZXOWLWSGNZWSPWMU
-      GZNZXRWLWREGUBZXSGINWLYBUHGGHUGZIGUINGYCNGBMZPQARZBXTUJZUIJABUKULGHUIUMUN
-      LUOWKYBDGIWJWREWDGWDGQZWHWQFWIYGWFWPWGWDGWESUPUSUQURUNWREGUTTZYAWSYFGYEBW
-      SXTVAJVBWSPWMVCVDWLXQWNWTWLXSXQWNYHWSWMGSVEVFVGWLXDPQZXERZXPWLXDHNZXDXTNZ
-      YJWLXCEHUBZYKHINWLYMUHHYCIGHHYDWMQARZBXTUJZVJKYNBXTVHVIULVKLUOWKYMDHIWJXC
-      EWDHWDHQZWHXBFWIYPWFXAWGWDHWESUPUSUQURUNXCEHUTTZYLXDYOHYNBXDXTVAKVBXDPWMV
-      CVDWLYIWOXEWLYKYIWOYQXDPHSVEVLVGVMWTWNWOXEVNWBXMWNXJXKWNXLWNWOVOWNXEVOVPV
-      QTVRXJXGWNXIWOXFWTWOVSVTVQTWNWOXFWAWC $.
+      cvv prid2 orim1d anddi sylib simpl jaoi orim2i orcomd simpr orim1i 3orass
+      jca sylibr ) DMZFMZNZEMWENZOZFCMZUAZEWDUBZDIUCZPUDZGNZPHNZGWENZWGOZFWIUAZ
+      EGUEZPQZHWENZWGOZFWIUAZEHUEZWMQZOZRZRZWNWOXFUFWLWNWTWOOZXFRZRXHWLXJWNWLXJ
+      WNWOOZWNXEOZRZRZXJWNRWLWTWNRZWOXERZOXNWLXOXPWLWTWSWMQZRZXOWLWSGNZWSPWMUGZ
+      NZXRWLWREGUBZXSGINWLYBUHGGHUGZIGUINGYCNGBMZPQARZBXTUJZUIJABUKULGHUIUMUNLU
+      OWKYBDGIWJWREWDGWDGQZWHWQFWIYGWFWPWGWDGWESUPUSUQURUNWREGUTTZYAWSYFGYEBWSX
+      TVAJVBWSPWMVCVDWLXQWNWTWLXSXQWNYHWSWMGSVEVFVGWLXDPQZXERZXPWLXDHNZXDXTNZYJ
+      WLXCEHUBZYKHINWLYMUHHYCIGHHYDWMQARZBXTUJZVJKYNBXTVHVIULVKLUOWKYMDHIWJXCEW
+      DHWDHQZWHXBFWIYPWFXAWGWDHWESUPUSUQURUNXCEHUTTZYLXDYOHYNBXDXTVAKVBXDPWMVCV
+      DWLYIWOXEWLYKYIWOYQXDPHSVEVLVGWBWTWNWOXEVMVNXMWNXJXKWNXLWNWOVOWNXEVOVPVQT
+      VRXJXGWNXIWOXFWTWOVSVTVQTWNWOXFWAWC $.
 
     $( Lemma for ~ acexmid .  List the cases identified in ~ acexmidlemcase and
        hook them up to the lemmas which handle each case.  (Contributed by Jim
@@ -51704,15 +51734,15 @@ $)
       $( Evaluate a function operation at a point.  (Contributed by Mario
          Carneiro, 20-Jul-2014.) $)
       fnofval $p |- ( ( ph /\ X e. S ) -> ( ( F oF R G ) ` X ) = ( C R D ) ) $=
-        ( vx wcel wa cof co cfv cmpt wceq eqidd offval fveq1d adantr cvv ax-ia2
-        cv cxp wfn cin inss1 eqsstr3i sseli sylan2 eleq1d mpbird fnovex syl3anc
-        inss2 fveq2 oveq12d eqid fvmptg syl2anc 3eqtrd ) AMGUEZUFZMIJFUGUHZUIZM
-        UDGUDURZIUIZWAJUIZFUHZUJZUIZMIUIZMJUIZFUHZDEFUHAVTWFUKVQAMVSWEAUDBCWBWC
-        FGIJKLNOPQRAWABUEUFWBULAWACUEUFWCULUMUNUOVRVQWIUPUEZWFWIUKAVQUQVRFHKUSU
-        TZWGHUEZWHKUEZWJAWKVQUAUOVRWLDHUEZAWNVQUBUOVRWGDHVQAMBUEWGDUKGBMGBCVAZB
-        RBCVBVCVDSVEZVFVGVRWMEKUEZAWQVQUCUOVRWHEKVQAMCUEWHEUKGCMGWOCRBCVJVCVDTV
-        EZVFVGWGWHHKFVHVIUDMWDWIGUPWEWAMUKWBWGWCWHFWAMIVKWAMJVKVLWEVMVNVOVRWGDW
-        HEFWPWRVLVP $.
+        ( vx wcel wa cof co cfv cv cmpt wceq eqidd offval fveq1d adantr cvv cxp
+        simpr wfn inss1 eqsstr3i sseli sylan2 eleq1d mpbird inss2 syl3anc fveq2
+        cin fnovex oveq12d eqid fvmptg syl2anc 3eqtrd ) AMGUEZUFZMIJFUGUHZUIZMU
+        DGUDUJZIUIZWAJUIZFUHZUKZUIZMIUIZMJUIZFUHZDEFUHAVTWFULVQAMVSWEAUDBCWBWCF
+        GIJKLNOPQRAWABUEUFWBUMAWACUEUFWCUMUNUOUPVRVQWIUQUEZWFWIULAVQUSVRFHKURUT
+        ZWGHUEZWHKUEZWJAWKVQUAUPVRWLDHUEZAWNVQUBUPVRWGDHVQAMBUEWGDULGBMGBCVJZBR
+        BCVAVBVCSVDZVEVFVRWMEKUEZAWQVQUCUPVRWHEKVQAMCUEWHEULGCMGWOCRBCVGVBVCTVD
+        ZVEVFWGWHHKFVKVHUDMWDWIGUQWEWAMULWBWGWCWHFWAMIVIWAMJVIVLWEVMVNVOVRWGDWH
+        EFWPWRVLVP $.
     $}
 
     ${
@@ -51926,16 +51956,16 @@ $)
         caofinvl $p |- ( ph -> ( G oF R F ) = ( A X. { B } ) ) $=
           ( vw cfv cof co cmpt csn cv wf wcel wa adantr ffvelrnda ffvelrnd eqid
           cxp fmptd feq1d mpbird wfn wceq wral ralrimiva fneq1d dffn5im feqmptd
-          fnmpt syl offval2 fveq1d ax-ia2 fveq2 fveq2d fvmptg syl2anc oveq1d id
-          eqtrd oveq12d eqeq1d rspcva mpteq2dva fconstmpt syl6eqr ) AIHFUAUBZSD
-          EUCZDEUDUMAWBSDSUEZITZWDHTZFUBZUCWCASDWEWFFIHKGGMADGWDIADGIUFDGCDCUEZ
-          HTZJTZUCZUFACDWJGWKAWHDUGZUHGGWIJAGGJUFZWLPUIADGWHHNUJUKZWKULZUNADGIW
-          KQUOUPUJADGWDHNUJZAIDUQZISDWEUCURAWQWKDUQZAWJGUGZCDUSWRAWSCDWNUTCDWJW
-          KGWOVDVEADIWKQVAUPSDIVBVEASDGHNVCVFASDWGEAWDDUGZUHZWGWFJTZWFFUBZEXAWE
-          XBWFFXAWEWDWKTZXBAWEXDURWTAWDIWKQVGUIXAWTXBGUGXDXBURAWTVHXAGGWFJAWMWT
-          PUIWPUKCWDWJXBDGWKWHWDURWIWFJWHWDHVIVJWOVKVLVOVMXAWFGUGBUEZJTZXEFUBZE
-          URZBGUSZXCEURZWPAXIWTAXHBGRUTUIXHXJBWFGXEWFURZXGXCEXKXFXBXEWFFXEWFJVI
-          XKVNVPVQVRVLVOVSVOSDEVTWA $.
+          fnmpt offval2 fveq1d simpr fveq2 fveq2d fvmptg syl2anc oveq1d oveq12d
+          syl eqtrd id eqeq1d rspcva mpteq2dva fconstmpt syl6eqr ) AIHFUAUBZSDE
+          UCZDEUDUMAWBSDSUEZITZWDHTZFUBZUCWCASDWEWFFIHKGGMADGWDIADGIUFDGCDCUEZH
+          TZJTZUCZUFACDWJGWKAWHDUGZUHGGWIJAGGJUFZWLPUIADGWHHNUJUKZWKULZUNADGIWK
+          QUOUPUJADGWDHNUJZAIDUQZISDWEUCURAWQWKDUQZAWJGUGZCDUSWRAWSCDWNUTCDWJWK
+          GWOVDVNADIWKQVAUPSDIVBVNASDGHNVCVEASDWGEAWDDUGZUHZWGWFJTZWFFUBZEXAWEX
+          BWFFXAWEWDWKTZXBAWEXDURWTAWDIWKQVFUIXAWTXBGUGXDXBURAWTVGXAGGWFJAWMWTP
+          UIWPUKCWDWJXBDGWKWHWDURWIWFJWHWDHVHVIWOVJVKVOVLXAWFGUGBUEZJTZXEFUBZEU
+          RZBGUSZXCEURZWPAXIWTAXHBGRUTUIXHXJBWFGXEWFURZXGXCEXKXFXBXEWFFXEWFJVHX
+          KVPVMVQVRVKVOVSVOSDEVTWA $.
       $}
     $}
 
@@ -53560,16 +53590,16 @@ $)
       ctpos reltpos brrelexi a1i elex adantr cv cmpt df-tpos breqi brcog syl5bb
       ccom cfv wfun funmpt funbrfv2b ax-mp snexg cnvex uniex eqid dmmpti eleq2i
       vex eqcom anbi12i cnvexg uniexg cnveqd unieqd fvmptg mpdan eqeq2d pm5.32i
-      sneq ancom anbi1i anass exbii exsimpr exsimpl 19.9v sylib ax-ia1 ceqsexgv
-      breq1 anbi2d pm5.21nii syl6bb expcom pm5.21ndd ) BDGZAHGZABCUCZIZACJKUALU
-      BZGZALZKZMZBCIZNZWRWPOWOABWQCUDUEUFXEWPOWOWTWPXDAWSUGUHUFWPWOWRXEPWPWONZW
-      RAEUIZFWSFUIZLZKZMZUJZIZXGBCIZNZEQZXEWRABCXLUOZIXFXPABWQXQFCUKULEABCXLHDU
-      MUNXPXGXCRZWTXNNZNZEQZXEXOXTEXOXRWTNZXNNXTXMYBXNXMWTXRNZYBXMAXLJZGZAXLUPZ
-      XGRZNZYCXLUQXMYHPFWSXKURAXGXLUSUTYHWTXGYFRZNYCYEWTYGYIYDWSAFWSXKXLXJXIXHH
-      GXIHGFVGXHHVAUTVBVCXLVDZVEVFYFXGVHVIWTYIXRWTYFXCXGWTXCHGZYFXCRWTXBHGZYKWT
-      XAHGYLAWSVAXAHVJSXBHVKSZFAXKXCWSHXLXHARZXJXBYNXIXAXHAVRVLVMYJVNVOVPVQTTWT
-      XRVSTVTXRWTXNWATWBYAWTXEYAXSEQZWTXRXSEWCYOWTEQWTWTXNEWDWTEWEWFSWTXDWGWTYK
-      YAXEPYMXSXEEXCHXRXNXDWTXGXCBCWIWJWHSWKTWLWMWN $.
+      ancom anbi1i anass exbii exsimpr exsimpl 19.9v sylib simpl breq1 ceqsexgv
+      sneq anbi2d pm5.21nii syl6bb expcom pm5.21ndd ) BDGZAHGZABCUCZIZACJKUALUB
+      ZGZALZKZMZBCIZNZWRWPOWOABWQCUDUEUFXEWPOWOWTWPXDAWSUGUHUFWPWOWRXEPWPWONZWR
+      AEUIZFWSFUIZLZKZMZUJZIZXGBCIZNZEQZXEWRABCXLUOZIXFXPABWQXQFCUKULEABCXLHDUM
+      UNXPXGXCRZWTXNNZNZEQZXEXOXTEXOXRWTNZXNNXTXMYBXNXMWTXRNZYBXMAXLJZGZAXLUPZX
+      GRZNZYCXLUQXMYHPFWSXKURAXGXLUSUTYHWTXGYFRZNYCYEWTYGYIYDWSAFWSXKXLXJXIXHHG
+      XIHGFVGXHHVAUTVBVCXLVDZVEVFYFXGVHVIWTYIXRWTYFXCXGWTXCHGZYFXCRWTXBHGZYKWTX
+      AHGYLAWSVAXAHVJSXBHVKSZFAXKXCWSHXLXHARZXJXBYNXIXAXHAWIVLVMYJVNVOVPVQTTWTX
+      RVRTVSXRWTXNVTTWAYAWTXEYAXSEQZWTXRXSEWBYOWTEQWTWTXNEWCWTEWDWESWTXDWFWTYKY
+      AXEPYMXSXEEXCHXRXNXDWTXGXCBCWGWJWHSWKTWLWMWN $.
 
     $( The behavior of ` tpos ` when the left argument is the empty set (which
        is not an ordered pair but is the "default" value of an ordered pair
@@ -54945,16 +54975,16 @@ $)
       ( vg vy cvv wfn wcel con0 cfv cv cdm ciun cun wceq wa wfun wss w3a tfri2d
       crdg cres cmpt df-irdg rdgruledefgg alrimiv 3impa eqidd 3ad2ant3 rdgifnon
       dmeq onss fndm syl 3adant3 sseqtr4d ssdmres sylib sylan9eqr fveq2d adantl
-      fveq1 iuneq12d uneq2d rdgfun resfunexg mpan wral ax-ia2 vex fvexg sylancl
-      ralrimivw wi funfvex funfni ex ralimdv adantr mpd iunexg syl2anc 3ad2ant2
-      3adant2 unexg fvmptd eqtrd ) DHIZBEJZCKJZUAZCDBUCZLZWNCUDZFHBAFMZNZAMZWQL
-      ZDLZOZPZUEZLZBACWSWPLZDLZOZPZWJWKWLWOXEQWJWKRZGCWNXDAFDBUFXJXDSGMXDLHJRGA
-      BGFDEUGUHUBUIWMFWPXCXIHXDHWMXDUJWMWQWPQZRZXBXHBXLAWRCXAXGXKWMWRWPNZCWQWPU
-      MWMCWNNZTXMCQWMCKXNWLWJCKTWKCUNUKWJWKXNKQZWLXJWNKIXOBDEULKWNUOUPUQURCWNUS
-      UTVAXKXAXGQWMXKWTXFDWSWQWPVDVBVCVEVFWLWJWPHJZWKWNSWLXPBDVGWNCKVHVIZUKWMXH
-      HJZXIHJZWJWLXRWKWJWLRZWLXGHJZACVJZXRWJWLVKXTXFHJZACVJZYBWLYDWJWLYCACWLXPW
-      SHJYCXQAVLWSWPHHVMVNVOVCWJYDYBVPWLWJYCYAACWJYCYAYAHXFDXFDVQVRVSVTWAWBACXG
-      KHWCWDWFWKWJXRXSVPWLWKXRXSBXHEHWGVSWEWBWHWI $.
+      fveq1 iuneq12d uneq2d rdgfun resfunexg mpan simpr fvexg sylancl ralrimivw
+      wral vex wi funfvex funfni ex ralimdv adantr iunexg syl2anc 3adant2 unexg
+      mpd 3ad2ant2 fvmptd eqtrd ) DHIZBEJZCKJZUAZCDBUCZLZWNCUDZFHBAFMZNZAMZWQLZ
+      DLZOZPZUEZLZBACWSWPLZDLZOZPZWJWKWLWOXEQWJWKRZGCWNXDAFDBUFXJXDSGMXDLHJRGAB
+      GFDEUGUHUBUIWMFWPXCXIHXDHWMXDUJWMWQWPQZRZXBXHBXLAWRCXAXGXKWMWRWPNZCWQWPUM
+      WMCWNNZTXMCQWMCKXNWLWJCKTWKCUNUKWJWKXNKQZWLXJWNKIXOBDEULKWNUOUPUQURCWNUSU
+      TVAXKXAXGQWMXKWTXFDWSWQWPVDVBVCVEVFWLWJWPHJZWKWNSWLXPBDVGWNCKVHVIZUKWMXHH
+      JZXIHJZWJWLXRWKWJWLRZWLXGHJZACVNZXRWJWLVJXTXFHJZACVNZYBWLYDWJWLYCACWLXPWS
+      HJYCXQAVOWSWPHHVKVLVMVCWJYDYBVPWLWJYCYAACWJYCYAYAHXFDXFDVQVRVSVTWAWFACXGK
+      HWBWCWDWKWJXRXSVPWLWKXRXSBXHEHWEVSWGWFWHWI $.
 
     $( Value of the recursive definition generator.  (Contributed by Jim
        Kingdon, 26-Jul-2019.) $)
@@ -55141,13 +55171,13 @@ $)
     frecabex $p |- ( ph -> { x |
         ( E. m e. _om ( dom S = suc m /\ x e. ( F ` ( S ` m ) ) ) \/
         ( dom S = (/) /\ x e. A ) ) } e. _V ) $=
-      ( cv wceq cfv wcel wa com cab cvv sylancr cdm csuc wrex c0 wo wral ax-ia2
-      omex wss abssi wfn vex sylancl funfvex funfni syl2anc ralrimivw abrexex2g
-      fvexg ssexg jca cun unexb unab eleq1i bitri sylib ) ADUAZELZUBMZBLZVIDNZF
-      NZOZPZEQUCZBRZSOZVHUDMZVKCOZPZBRZSOZPZVPWAUEBRZSOZAVRWCAQSOVOBRZSOZEQUFVR
-      UHAWHEQAWGVMUIVMSOZWHVOBVMVJVNUGUJAFSUKVLSOZWIJADGOVISOWJIEULVIDGSUSUMWIS
-      VLFVLFUNUOUPWGVMSUTTUQVOEBQSSURTAWBCUICHOWCWABCVSVTUGUJKWBCHUTTVAWDVQWBVB
-      ZSOWFVQWBVCWKWESVPWABVDVEVFVG $.
+      ( cv wceq cfv wcel wa com cab cvv sylancr csuc wrex c0 wo wral omex simpr
+      cdm wss abssi wfn fvexg sylancl funfvex syl2anc ssexg ralrimivw abrexex2g
+      vex funfni jca cun unexb unab eleq1i bitri sylib ) ADUHZELZUAMZBLZVIDNZFN
+      ZOZPZEQUBZBRZSOZVHUCMZVKCOZPZBRZSOZPZVPWAUDBRZSOZAVRWCAQSOVOBRZSOZEQUEVRU
+      FAWHEQAWGVMUIVMSOZWHVOBVMVJVNUGUJAFSUKVLSOZWIJADGOVISOWJIEUSVIDGSULUMWISV
+      LFVLFUNUTUOWGVMSUPTUQVOEBQSSURTAWBCUICHOWCWABCVSVTUGUJKWBCHUPTVAWDVQWBVBZ
+      SOWFVQWBVCWKWESVPWABVDVEVFVG $.
   $}
 
   ${
@@ -55162,11 +55192,11 @@ $)
        (Contributed by Jim Kingdon, 15-Aug-2019.) $)
     frectfr $p |- ( ( F Fn _V /\ A e. V ) ->
         A. y ( Fun G /\ ( G ` y ) e. _V ) ) $=
-      ( cvv wfn wcel wa wfun cv cfv cdm csuc wceq vex com wrex c0 wo cab ax-ia1
-      wral a1i ax-ia2 frecabex ralrimivw fnmpt syl funfvex funfni sylancl jctil
-      funmpt2 alrimiv ) FJKZCHLZMZGNZBOZGPJLZMBVBVEVCVBGJKZVDJLVEVBDOZQZEOZRSAO
-      ZVIVGPFPLMEUAUBVHUCSVJCLMUDAUEZJLZDJUGVFVBVLDJVBACVGEFJHVGJLVBDTUHUTVAUFU
-      TVAUIUJUKDJVKGJIULUMBTVEJVDGVDGUNUOUPDJVKGIURUQUS $.
+      ( cvv wfn wcel wa wfun cv cfv cdm csuc wceq vex com wrex c0 wo wral simpl
+      cab a1i simpr frecabex ralrimivw fnmpt syl funfvex funfni sylancl funmpt2
+      jctil alrimiv ) FJKZCHLZMZGNZBOZGPJLZMBVBVEVCVBGJKZVDJLVEVBDOZQZEOZRSAOZV
+      IVGPFPLMEUAUBVHUCSVJCLMUDAUGZJLZDJUEVFVBVLDJVBACVGEFJHVGJLVBDTUHUTVAUFUTV
+      AUIUJUKDJVKGJIULUMBTVEJVDGVDGUNUOUPDJVKGIUQURUS $.
   $}
 
   ${
@@ -55292,17 +55322,17 @@ $)
     frecrdg $p |- ( ph -> frec ( F , A ) = ( rec ( F , A ) |` _om ) ) $=
       ( com wfn wcel syl2anc con0 cfv wceq c0 fveq2 eqeq12d fvres adantr vy cvv
       cfrec crdg cres frecfnom rdgifnon omsson fnssres sylancl cv frec0g peano1
-      wss ax-mp rdgi0g syl5eq eqtr4d wi wa ax-ia2 ad2antlr eqtrd fveq2d frecsuc
-      csuc jca 3expa sylan nnon syl wal rdgisucinc 3eqtr4d peano2 expcom finds2
-      ex impcom eqfnfvd ) ABIDCUCZDCUDZIUEZADUBJZCEKZWAIJFGCDEUFLAWBMJZIMUNWCIJ
-      AWDWEWFFGCDEUGLUHMIWBUIUJBUKZIKAWGWANZWGWCNZOZWJPWANZPWCNZOUAUKZWANZWMWCN
-      ZOZWMVFZWANZWQWCNZOZABUAWGPOWHWKWIWLWGPWAQWGPWCQRWGWMOWHWNWIWOWGWMWAQWGWM
-      WCQRWGWQOWHWRWIWSWGWQWAQWGWQWCQRAWKCWLAWDWEWKCOFGCDEULLAWLPWBNZCPIKWLXAOU
-      MPIWBSUOAWDWEXACOFGCDEUPLUQURAWMIKZWPWTUSAXBUTZWPWTXCWPUTZWRWQWBNZWSXDWND
-      NZWMWBNZDNZWRXEXDWNXGDXDWNWOXGXCWPVAXBWOXGOAWPWMIWBSVBVCVDXCWRXFOZWPAWDWE
-      UTXBXIAWDWEFGVGWDWEXBXICWMDEVEVHVITXCXEXHOWPXCBCWMDEAWDXBFTAWEXBGTXCXBWMM
-      KAXBVAWMVJVKAWGWGDNUNBVLXBHTVMTVNXBWSXEOZAWPXBWQIKXJWMVOWQIWBSVKVBURVRVPV
-      QVSVT $.
+      wss csuc ax-mp rdgi0g syl5eq eqtr4d wi wa simpr ad2antlr eqtrd fveq2d jca
+      frecsuc 3expa nnon syl wal rdgisucinc 3eqtr4d peano2 expcom finds2 impcom
+      sylan ex eqfnfvd ) ABIDCUCZDCUDZIUEZADUBJZCEKZWAIJFGCDEUFLAWBMJZIMUNWCIJA
+      WDWEWFFGCDEUGLUHMIWBUIUJBUKZIKAWGWANZWGWCNZOZWJPWANZPWCNZOUAUKZWANZWMWCNZ
+      OZWMUOZWANZWQWCNZOZABUAWGPOWHWKWIWLWGPWAQWGPWCQRWGWMOWHWNWIWOWGWMWAQWGWMW
+      CQRWGWQOWHWRWIWSWGWQWAQWGWQWCQRAWKCWLAWDWEWKCOFGCDEULLAWLPWBNZCPIKWLXAOUM
+      PIWBSUPAWDWEXACOFGCDEUQLURUSAWMIKZWPWTUTAXBVAZWPWTXCWPVAZWRWQWBNZWSXDWNDN
+      ZWMWBNZDNZWRXEXDWNXGDXDWNWOXGXCWPVBXBWOXGOAWPWMIWBSVCVDVEXCWRXFOZWPAWDWEV
+      AXBXIAWDWEFGVFWDWEXBXICWMDEVGVHVRTXCXEXHOWPXCBCWMDEAWDXBFTAWEXBGTXCXBWMMK
+      AXBVBWMVIVJAWGWGDNUNBVKXBHTVLTVMXBWSXEOZAWPXBWQIKXJWMVNWQIWBSVJVCUSVSVOVP
+      VQVT $.
   $}
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -55680,13 +55710,13 @@ $)
     omv2 $p |- ( ( A e. On /\ B e. On ) ->
         ( A .o B ) = U_ x e. B ( ( A .o x ) +o A ) ) $=
       ( vy con0 wcel wa comu co c0 coa ciun cun cvv cmpt cfv wceq omv syl2anc
-      cv crdg wfn omfnex 0elon mp3an2 sylan onelon omexg omcl ax-ia1 oacl oveq1
-      rdgival fvmptg fveq2d eqtr3d sylan2 anassrs iuneq2dv uneq2d 3eqtr4d uncom
-      eqid un0 eqtri syl6eq ) BEFZCEFZGZBCHIZJACBATZHIZBKIZLZMZVNVICDNDTZBKIZOZ
-      JUAZPZJACVKVSPZVRPZLZMZVJVOVGVRNUBZVHVTWDQZDBEUCWEJEFVHWFUDAJCVREUMUEUFDB
-      CRVIVNWCJVIACVMWBVGVHVKCFZVMWBQZVHWGGVGVKEFZWHCVKUGVGWIGZVLVRPZVMWBWJVLNF
-      VMEFZWKVMQBVKEEUHWJVLEFVGWLBVKUIVGWIUJVLBUKSDVLVQVMNEVRVPVLBKULVRVCUNSWJV
-      LWAVRDBVKRUOUPUQURUSUTVAVOVNJMVNJVNVBVNVDVEVF $.
+      cv crdg wfn omfnex 0elon rdgival mp3an2 sylan omexg omcl simpl oacl oveq1
+      onelon eqid fvmptg fveq2d eqtr3d sylan2 anassrs iuneq2dv uneq2d uncom un0
+      3eqtr4d eqtri syl6eq ) BEFZCEFZGZBCHIZJACBATZHIZBKIZLZMZVNVICDNDTZBKIZOZJ
+      UAZPZJACVKVSPZVRPZLZMZVJVOVGVRNUBZVHVTWDQZDBEUCWEJEFVHWFUDAJCVREUEUFUGDBC
+      RVIVNWCJVIACVMWBVGVHVKCFZVMWBQZVHWGGVGVKEFZWHCVKUMVGWIGZVLVRPZVMWBWJVLNFV
+      MEFZWKVMQBVKEEUHWJVLEFVGWLBVKUIVGWIUJVLBUKSDVLVQVMNEVRVPVLBKULVRUNUOSWJVL
+      WAVRDBVKRUPUQURUSUTVAVDVOVNJMVNJVNVBVNVCVEVF $.
   $}
 
   $( Addition with successor.  Theorem 4I(A2) of [Enderton] p. 79.
@@ -55716,10 +55746,10 @@ $)
     oawordi $p |- ( ( A e. On /\ B e. On /\ C e. On ) ->
                  ( A C_ B -> ( C +o A ) C_ ( C +o B ) ) ) $=
       ( vx con0 wcel w3a wss coa co wa cvv cv csuc cmpt cfv wceq jca oav syl ex
-      crdg wfn oafnex a1i simpl3 simpl1 simpl2 ax-ia2 rdgss 3sstr4d ) AEFZBEFZC
-      EFZGZABHZCAIJZCBIJZHUOUPKZADLDMNOZCUBZPZBVAPZUQURUSABUTCEUTLUCUSDUDUEULUM
-      UNUPUFZULUMUNUPUGZULUMUNUPUHZUOUPUIUJUSUNULKUQVBQUSUNULVDVERDCASTUSUNUMKU
-      RVCQUSUNUMVDVFRDCBSTUKUA $.
+      crdg wfn oafnex a1i simpl3 simpl1 simpl2 simpr rdgss 3sstr4d ) AEFZBEFZCE
+      FZGZABHZCAIJZCBIJZHUOUPKZADLDMNOZCUBZPZBVAPZUQURUSABUTCEUTLUCUSDUDUEULUMU
+      NUPUFZULUMUNUPUGZULUMUNUPUHZUOUPUIUJUSUNULKUQVBQUSUNULVDVERDCASTUSUNUMKUR
+      VCQUSUNUMVDVFRDCBSTUKUA $.
   $}
 
   $( An ordinal is less than or equal to its sum with another.  Part of
@@ -55738,11 +55768,11 @@ $)
                 ( A .o suc B ) = ( ( A .o B ) +o A ) ) $=
       ( vx con0 wcel wa csuc comu co coa cun ciun wceq csn df-suc iuneq1 iunxun
       cv ax-mp omv2 oveq1d iunxsng uneq2d syl5eq adantl suceloni sylan2 3eqtr4d
-      eqtri oveq2 uneq1d omcl ax-ia1 wss oaword1 ssequn1 sylib syl2anc eqtrd )
-      ADEZBDEZFZABGZHIZABHIZVEAJIZKZVFVBCVCACRZHIZAJIZLZCBVJLZVFKZVDVGVAVKVMMUT
-      VAVKVLCBNZVJLZKZVMVKCBVNKZVJLZVPVCVQMVKVRMBOCVCVQVJPSCBVNVJQUIVAVOVFVLCBV
-      JVFDVHBMVIVEAJVHBAHUJUAUBUCUDUEVAUTVCDEVDVKMBUFCAVCTUGVBVEVLVFCABTUKUHVBV
-      EDEZUTVGVFMZABULUTVAUMVSUTFVEVFUNVTVEAUOVEVFUPUQURUS $.
+      eqtri oveq2 uneq1d omcl simpl wss oaword1 ssequn1 sylib syl2anc eqtrd ) A
+      DEZBDEZFZABGZHIZABHIZVEAJIZKZVFVBCVCACRZHIZAJIZLZCBVJLZVFKZVDVGVAVKVMMUTV
+      AVKVLCBNZVJLZKZVMVKCBVNKZVJLZVPVCVQMVKVRMBOCVCVQVJPSCBVNVJQUIVAVOVFVLCBVJ
+      VFDVHBMVIVEAJVHBAHUJUAUBUCUDUEVAUTVCDEVDVKMBUFCAVCTUGVBVEVLVFCABTUKUHVBVE
+      DEZUTVGVFMZABULUTVAUMVSUTFVEVFUNVTVEAUOVEVFUPUQURUS $.
   $}
 
   $( Multiplication with successor.  Theorem 4J(A2) of [Enderton] p. 80.
@@ -55973,13 +56003,13 @@ $)
        (Contributed by Jim Kingdon, 25-Aug-2019.) $)
     nnsucelsuc $p |- ( B e. _om -> ( A e. B <-> suc A e. suc B ) ) $=
       ( vx vy com wcel csuc cv wi c0 wceq eleq2 suceq eleq2d imbi12d pm2.21i wa
-      noel wo a1i elsuci adantl ax-ia1 orim12d mpd sucex elsuc2 sylibr ex finds
-      vex con0 nnon onsucelsucr syl impbid ) BEFZABFZAGZBGZFZACHZFZUSVBGZFZIAJF
-      ZUSJGZFZIADHZFZUSVIGZFZIZAVKFZUSVKGZFZIZURVAICDBVBJKZVCVFVEVHVBJALVRVDVGU
-      SVBJMNOVBVIKZVCVJVEVLVBVIALVSVDVKUSVBVIMNOVBVKKZVCVNVEVPVBVKALVTVDVOUSVBV
-      KMNOVBBKZVCURVEVAVBBALWAVDUTUSVBBMNOVFVHARPVMVQIVIEFVMVNVPVMVNQZVLUSVKKZS
-      ZVPWBVJAVIKZSZWDVNWFVMAVIUAUBWBVJVLWEWCVMVNUCWEWCIWBAVIMTUDUEVKUSVIDUKUFU
-      GUHUITUJUQBULFVAURIBUMABUNUOUP $.
+      noel wo a1i elsuci adantl simpl orim12d mpd vex sucex elsuc2 sylibr finds
+      ex con0 nnon onsucelsucr syl impbid ) BEFZABFZAGZBGZFZACHZFZUSVBGZFZIAJFZ
+      USJGZFZIADHZFZUSVIGZFZIZAVKFZUSVKGZFZIZURVAICDBVBJKZVCVFVEVHVBJALVRVDVGUS
+      VBJMNOVBVIKZVCVJVEVLVBVIALVSVDVKUSVBVIMNOVBVKKZVCVNVEVPVBVKALVTVDVOUSVBVK
+      MNOVBBKZVCURVEVAVBBALWAVDUTUSVBBMNOVFVHARPVMVQIVIEFVMVNVPVMVNQZVLUSVKKZSZ
+      VPWBVJAVIKZSZWDVNWFVMAVIUAUBWBVJVLWEWCVMVNUCWEWCIWBAVIMTUDUEVKUSVIDUFUGUH
+      UIUKTUJUQBULFVAURIBUMABUNUOUP $.
 
     $( Membership is inherited by successors.  The reverse direction holds for
        all ordinals, as seen at ~ onsucsssucr , but the forward direction, for
@@ -56059,17 +56089,17 @@ $)
     nnaordi $p |- ( ( B e. _om /\ C e. _om ) ->
                  ( A e. B -> ( C +o A ) e. ( C +o B ) ) ) $=
       ( vx vy com wcel coa co wa wi wceq oveq2 eleq12d c0 csuc syl syl2anc con0
-      nnon cv imbi2d ax-ia2 elnn ancoms nna0 adantr 3eltr4d simprl ax-ia1 nnacl
-      nnsucelsuc adantl oasuc ad2antrl bitr4d biimpd finds2 vtoclga imp adantrr
-      wb ex nnacom 3eltr3d 3impb 3com12 3expia ) BFGZCFGZABGZCAHIZCBHIZGZVJVIVK
-      VNVJVIVKVNVJVIVKJZJZACHIZBCHIZVLVMVJVOVQVRGZVOADUAZHIZBVTHIZGZKVOVSKDCFVT
-      CLZWCVSVOWDWAVQWBVRVTCAHMVTCBHMNUBWCAOHIZBOHIZGAEUAZHIZBWGHIZGZAWGPZHIZBW
-      KHIZGZVODEVTOLWAWEWBWFVTOAHMVTOBHMNVTWGLWAWHWBWIVTWGAHMVTWGBHMNVTWKLWAWLW
-      BWMVTWKAHMVTWKBHMNVOABWEWFVIVKUCVOAFGZWEALVKVIWOABUDUEZAUFQVIWFBLVKBUFUGU
-      HWGFGZVOWJWNKWQVOJZWJWNWRWJWHPZWIPZGZWNWRWIFGZWJXAVBWRVIWQXBWQVIVKUIWQVOU
-      JBWGUKRWHWIULQWRWLWSWMWTWRASGZWGSGZWLWSLWRWOXCVOWOWQWPUMATQWQXDVOWGTUGZAW
-      GUNRWRBSGZXDWMWTLVIXFWQVKBTUOXEBWGUNRNUPUQVCURUSUTVPWOVJVQVLLVOWOVJWPUMVJ
-      VOUJACVDRVJVIVRVMLZVKVIVJXGBCVDUEVAVEVFVGVH $.
+      nnon cv imbi2d simpr elnn ancoms nna0 adantr 3eltr4d wb simprl nnsucelsuc
+      simpl nnacl adantl oasuc ad2antrl bitr4d biimpd finds2 vtoclga imp nnacom
+      ex adantrr 3eltr3d 3impb 3com12 3expia ) BFGZCFGZABGZCAHIZCBHIZGZVJVIVKVN
+      VJVIVKVNVJVIVKJZJZACHIZBCHIZVLVMVJVOVQVRGZVOADUAZHIZBVTHIZGZKVOVSKDCFVTCL
+      ZWCVSVOWDWAVQWBVRVTCAHMVTCBHMNUBWCAOHIZBOHIZGAEUAZHIZBWGHIZGZAWGPZHIZBWKH
+      IZGZVODEVTOLWAWEWBWFVTOAHMVTOBHMNVTWGLWAWHWBWIVTWGAHMVTWGBHMNVTWKLWAWLWBW
+      MVTWKAHMVTWKBHMNVOABWEWFVIVKUCVOAFGZWEALVKVIWOABUDUEZAUFQVIWFBLVKBUFUGUHW
+      GFGZVOWJWNKWQVOJZWJWNWRWJWHPZWIPZGZWNWRWIFGZWJXAUIWRVIWQXBWQVIVKUJWQVOULB
+      WGUMRWHWIUKQWRWLWSWMWTWRASGZWGSGZWLWSLWRWOXCVOWOWQWPUNATQWQXDVOWGTUGZAWGU
+      ORWRBSGZXDWMWTLVIXFWQVKBTUPXEBWGUORNUQURVCUSUTVAVPWOVJVQVLLVOWOVJWPUNVJVO
+      ULACVBRVJVIVRVMLZVKVIVJXGBCVBUEVDVEVFVGVH $.
   $}
 
   $( Ordering property of addition.  Proposition 8.4 of [TakeutiZaring] p. 58,
@@ -56252,26 +56282,26 @@ $)
     nnaordex $p |- ( ( A e. _om /\ B e. _om ) -> ( A e. B <->
                   E. x e. _om ( (/) e. x /\ ( A +o x ) = B ) ) ) $=
       ( vz com wcel wa c0 cv co wceq wrex wi eleq2 eqeq2 anbi2d rexbidv imbi12d
-      coa c1o vb vy imbi2d csuc noel pm2.21i a1i elsuci ax-ia2 ad2antlr elelsuc
-      wo peano2 nnasuc suceq sylan9eq anim12d imp eqeq1d anbi12d rspcev syl2anc
-      oveq2 rexlimdva cbvrexv syl6ib syld 0lt1o con0 nnon oa1suc 1onn mpan jaod
-      ex syl5 exp31 finds2 vtoclga impcom wb peano1 nnaord mp3an1 ancoms adantr
-      syl nna0 eleq1d bitrd anbi1d biimpac syl6bi impbid ) BEFZCEFZGBCFZHAIZFZB
-      WRSJZCKZGZAELZWPWOWQXCMZWOBUAIZFZWSWTXEKZGZAELZMZMWOXDMUACEXECKZXJXDWOXKX
-      FWQXIXCXECBNXKXHXBAEXKXGXAWSXECWTOPQRUCXJBHFZWSWTHKZGZAELZMZBUBIZFZWSWTXQ
-      KZGZAELZMZBXQUDZFZWSWTYCKZGZAELZMZWOUAUBXEHKZXFXLXIXOXEHBNYIXHXNAEYIXGXMW
-      SXEHWTOPQRXEXQKZXFXRXIYAXEXQBNYJXHXTAEYJXGXSWSXEXQWTOPQRXEYCKZXFYDXIYGXEY
-      CBNYKXHYFAEYKXGYEWSXEYCWTOPQRXPWOXLXOBUEUFUGXQEFZWOYBYHYDXRBXQKZULYLWOGZY
-      BGZYGBXQUHYOXRYGYMYOXRYAYGYNYBUIWOYAYGMYLYBWOYAHDIZFZBYPSJZYCKZGZDELZYGWO
-      XTUUAAEWOWREFZGZXTUUAUUCXTGWRUDZEFZHUUDFZBUUDSJZYCKZGZUUAUUBUUEWOXTWRUMUJ
-      UUCXTUUIUUCWSUUFXSUUHWSUUFMUUCHWRUKUGUUCXSUUHUUCXSUUGWTUDYCBWRUNWTXQUOUPV
-      OUQURYTUUIDUUDEYPUUDKZYQUUFYSUUHYPUUDHNUUJYRUUGYCYPUUDBSVCUSUTVAVBVOVDYTY
-      FDAEYPWRKZYQWSYSYEYPWRHNUUKYRWTYCYPWRBSVCUSUTVEVFUJVGWOYMYGMYLYBWOYMYGWOY
-      MGZHTFZBTSJZYCKZYGUUMUULVHUGWOYMUUNBUDZYCWOBVIFUUNUUPKBVJBVKWGBXQUOUPTEFU
-      UMUUOGZYGVLYFUUQATEWRTKZWSUUMYEUUOWRTHNUURWTUUNYCWRTBSVCUSUTVAVMVBVOUJVNV
-      PVQVRVSVTWOXCWQMWPWOXBWQAEUUCXBBWTFZXAGWQUUCWSUUSXAUUCWSBHSJZWTFZUUSUUBWO
-      WSUVAWAZHEFUUBWOUVBWBHWRBWCWDWEUUCUUTBWTWOUUTBKUUBBWHWFWIWJWKXAUUSWQWTCBN
-      WLWMVDWFWN $.
+      coa c1o vb vy imbi2d csuc noel pm2.21i a1i wo elsuci simpr peano2 elelsuc
+      ad2antlr nnasuc suceq sylan9eq ex anim12d imp oveq2 eqeq1d anbi12d rspcev
+      syl2anc rexlimdva cbvrexv syl6ib syld con0 nnon oa1suc syl 1onn mpan jaod
+      0lt1o syl5 exp31 finds2 vtoclga impcom peano1 nnaord mp3an1 ancoms adantr
+      wb nna0 eleq1d bitrd anbi1d biimpac syl6bi impbid ) BEFZCEFZGBCFZHAIZFZBW
+      RSJZCKZGZAELZWPWOWQXCMZWOBUAIZFZWSWTXEKZGZAELZMZMWOXDMUACEXECKZXJXDWOXKXF
+      WQXIXCXECBNXKXHXBAEXKXGXAWSXECWTOPQRUCXJBHFZWSWTHKZGZAELZMZBUBIZFZWSWTXQK
+      ZGZAELZMZBXQUDZFZWSWTYCKZGZAELZMZWOUAUBXEHKZXFXLXIXOXEHBNYIXHXNAEYIXGXMWS
+      XEHWTOPQRXEXQKZXFXRXIYAXEXQBNYJXHXTAEYJXGXSWSXEXQWTOPQRXEYCKZXFYDXIYGXEYC
+      BNYKXHYFAEYKXGYEWSXEYCWTOPQRXPWOXLXOBUEUFUGXQEFZWOYBYHYDXRBXQKZUHYLWOGZYB
+      GZYGBXQUIYOXRYGYMYOXRYAYGYNYBUJWOYAYGMYLYBWOYAHDIZFZBYPSJZYCKZGZDELZYGWOX
+      TUUAAEWOWREFZGZXTUUAUUCXTGWRUDZEFZHUUDFZBUUDSJZYCKZGZUUAUUBUUEWOXTWRUKUMU
+      UCXTUUIUUCWSUUFXSUUHWSUUFMUUCHWRULUGUUCXSUUHUUCXSUUGWTUDYCBWRUNWTXQUOUPUQ
+      URUSYTUUIDUUDEYPUUDKZYQUUFYSUUHYPUUDHNUUJYRUUGYCYPUUDBSUTVAVBVCVDUQVEYTYF
+      DAEYPWRKZYQWSYSYEYPWRHNUUKYRWTYCYPWRBSUTVAVBVFVGUMVHWOYMYGMYLYBWOYMYGWOYM
+      GZHTFZBTSJZYCKZYGUUMUULVPUGWOYMUUNBUDZYCWOBVIFUUNUUPKBVJBVKVLBXQUOUPTEFUU
+      MUUOGZYGVMYFUUQATEWRTKZWSUUMYEUUOWRTHNUURWTUUNYCWRTBSUTVAVBVCVNVDUQUMVOVQ
+      VRVSVTWAWOXCWQMWPWOXBWQAEUUCXBBWTFZXAGWQUUCWSUUSXAUUCWSBHSJZWTFZUUSUUBWOW
+      SUVAWGZHEFUUBWOUVBWBHWRBWCWDWEUUCUUTBWTWOUUTBKUUBBWHWFWIWJWKXAUUSWQWTCBNW
+      LWMVEWFWN $.
   $}
 
   ${
@@ -56281,28 +56311,28 @@ $)
     nnawordex $p |- ( ( A e. _om /\ B e. _om ) -> ( A C_ B <->
                   E. x e. _om ( A +o x ) = B ) ) $=
       ( com wcel wa wss cv coa co wceq wrex w3a nntri3or 3adant3 wi c0 nnaordex
-      w3o syl5ibcom ax-ia2 reximi syl6bi nna0 3ad2ant1 eqeq2 peano1 eqeq1d mpan
-      oveq2 rspcev syl6 wn nntri1 biimp3a pm2.21d mpd 3expia nnaword1 rexlimdva
-      3jaod sseq2 adantr impbid ) BDEZCDEZFZBCGZBAHZIJZCKZADLZVEVFVHVLVEVFVHMZB
-      CEZBCKZCBEZSZVLVEVFVQVHBCNOVMVNVLVOVPVEVFVNVLPVHVGVNQVIEZVKFZADLVLABCRVSV
-      KADVRVKUAUBUCOVMVOBQIJZCKZVLVMVTBKZVOWAVEVFWBVHBUDUEBCVTUFTQDEWAVLUGVKWAA
-      QDVIQKVJVTCVIQBIUJUHUKUIULVMVPVLVEVFVHVPUMBCUNUOUPVAUQURVEVLVHPVFVEVKVHAD
-      VEVIDEFBVJGVKVHBVIUSVJCBVBTUTVCVD $.
+      w3o syl5ibcom simpr reximi syl6bi nna0 3ad2ant1 eqeq2 peano1 oveq2 eqeq1d
+      rspcev mpan wn nntri1 biimp3a pm2.21d 3jaod mpd 3expia nnaword1 rexlimdva
+      syl6 sseq2 adantr impbid ) BDEZCDEZFZBCGZBAHZIJZCKZADLZVEVFVHVLVEVFVHMZBC
+      EZBCKZCBEZSZVLVEVFVQVHBCNOVMVNVLVOVPVEVFVNVLPVHVGVNQVIEZVKFZADLVLABCRVSVK
+      ADVRVKUAUBUCOVMVOBQIJZCKZVLVMVTBKZVOWAVEVFWBVHBUDUEBCVTUFTQDEWAVLUGVKWAAQ
+      DVIQKVJVTCVIQBIUHUIUJUKVAVMVPVLVEVFVHVPULBCUMUNUOUPUQURVEVLVHPVFVEVKVHADV
+      EVIDEFBVJGVKVHBVIUSVJCBVBTUTVCVD $.
   $}
 
   $( The product of two natural numbers is zero iff at least one of them is
      zero.  (Contributed by Jim Kingdon, 11-Nov-2004.) $)
   nnm00 $p |- ( ( A e. _om /\ B e. _om ) -> ( ( A .o B ) = (/) <->
               ( A = (/) \/ B = (/) ) ) ) $=
-    ( com wcel wa comu co c0 wceq wo ax-ia1 jaoi orcd a1i adantr jaod sylan9eqr
-    wi ex 0elnn ax-ia2 olcd simplr wn nnmordi expimpd ancoms nnm0 eleq1d sylibd
-    imp n0i pm2.21dd anim12i anddi sylib mpjaod oveq1 nnm0r adantl oveq2 impbid
+    ( com wcel wa comu co c0 wceq wo wi simpl jaoi orcd a1i adantr ex sylan9eqr
+    jaod 0elnn olcd simplr wn nnmordi expimpd ancoms nnm0 eleq1d sylibd imp n0i
+    simpr pm2.21dd anim12i anddi sylib mpjaod oveq1 nnm0r adantl oveq2 impbid
     syl ) ACDZBCDZEZABFGZHIZAHIZBHIZJZVFVHVKVFVHEZVIVJEZVIHBDZEZJZVKHADZVJEZVQV
-    NEZJZVPVKRVLVPVIVJVMVIVOVIVJKVIVNKLMNVLVRVKVSVRVKRVLVRVJVIVQVJUAUBNVLVSVKVL
-    VSEZVHVKVFVHVSUCWAHVGDZVHUDVLVSWBVFVSWBRVHVFVSAHFGZVGDZWBVEVDVSWDRVEVDEVQVN
-    WDHBAUEUFUGVFWCHVGVDWCHIVEAUHZOUIUJOUKVGHULVCUMSPVFVPVTJZVHVFVIVQJZVJVNJZEW
-    FVDWGVEWHATBTUNVIVQVJVNUOUPOUQSVFVIVHVJVEVIVHRVDVEVIVHVIVEVGHBFGHAHBFURBUSQ
-    SUTVDVJVHRVEVDVJVHVJVDVGWCHBHAFVAWEQSOPVB $.
+    NEZJZVPVKKVLVPVIVJVMVIVOVIVJLVIVNLMNOVLVRVKVSVRVKKVLVRVJVIVQVJULUAOVLVSVKVL
+    VSEZVHVKVFVHVSUBWAHVGDZVHUCVLVSWBVFVSWBKVHVFVSAHFGZVGDZWBVEVDVSWDKVEVDEVQVN
+    WDHBAUDUEUFVFWCHVGVDWCHIVEAUGZPUHUIPUJVGHUKVCUMQSVFVPVTJZVHVFVIVQJZVJVNJZEW
+    FVDWGVEWHATBTUNVIVQVJVNUOUPPUQQVFVIVHVJVEVIVHKVDVEVIVHVIVEVGHBFGHAHBFURBUSR
+    QUTVDVJVHKVEVDVJVHVJVDVGWCHBHAFVAWERQPSVB $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -56380,9 +56410,9 @@ $)
        (Contributed by Mario Carneiro, 9-Jul-2014.) $)
     ecexr $p |- ( A e. [ B ] R -> B e. _V ) $=
       ( vx cec wcel cv wceq wex cvv wbr csn wrex elimag ibi df-ec eleq2s df-rex
-      cima wa ax-ia1 elsn sylib eximi sylbi syl isset sylibr ) ABCEZFZDGZBHZDIZ
-      BJFUJUKACKZDBLZMZUMUPACUOSZUIAUQFUPDACUOUQNOBCPQUPUKUOFZUNTZDIUMUNDUORUSU
-      LDUSURULURUNUADBUBUCUDUEUFDBUGUH $.
+      cima wa simpl elsn sylib eximi sylbi syl isset sylibr ) ABCEZFZDGZBHZDIZB
+      JFUJUKACKZDBLZMZUMUPACUOSZUIAUQFUPDACUOUQNOBCPQUPUKUOFZUNTZDIUMUNDUORUSUL
+      DUSURULURUNUADBUBUCUDUEUFDBUGUH $.
   $}
 
   ${
@@ -58889,11 +58919,11 @@ $)
        Lemma for ~ dmaddpq .  (Contributed by Jim Kingdon, 15-Sep-2019.) $)
     dmaddpqlem $p |- ( x e. Q. -> E. w E. v x = [ <. w , v >. ] ~Q ) $=
       ( va cv cop ceq cec wceq wex cnpi cxp cqs cnq wcel wrex elqsi 2eximi syl
-      wa elxpi ax-ia1 anim1i 19.41vv sylibr ax-ia2 eceq1 adantr eqtrd rexlimiva
-      df-nqqs eleq2s ) AEZBEZCEZFZGHZIZCJBJZUMKKLZGMZNUMVAOUMDEZGHZIZDUTPUSDUTU
-      MGQVDUSDUTVBUTOZVDTZVBUPIZVDTZCJBJZUSVFVGCJBJZVDTVIVEVJVDVEVGUNKOUOKOTZTZ
-      CJBJVJBCVBKKUAVLVGBCVGVKUBRSUCVGVDBCUDUEVHURBCVHUMVCUQVGVDUFVGVCUQIVDVBUP
-      GUGUHUIRSUJSUKUL $.
+      wa elxpi simpl anim1i 19.41vv sylibr simpr eceq1 adantr rexlimiva df-nqqs
+      eqtrd eleq2s ) AEZBEZCEZFZGHZIZCJBJZUMKKLZGMZNUMVAOUMDEZGHZIZDUTPUSDUTUMG
+      QVDUSDUTVBUTOZVDTZVBUPIZVDTZCJBJZUSVFVGCJBJZVDTVIVEVJVDVEVGUNKOUOKOTZTZCJ
+      BJVJBCVBKKUAVLVGBCVGVKUBRSUCVGVDBCUDUEVHURBCVHUMVCUQVGVDUFVGVCUQIVDVBUPGU
+      GUHUKRSUISUJUL $.
 
     $( Decomposition of a positive fraction into numerator and denominator.
        Similar to ~ dmaddpqlem but also shows that the numerator and
@@ -58902,11 +58932,11 @@ $)
     nqpi $p |- ( A e. Q. ->
         E. w E. v ( ( w e. N. /\ v e. N. ) /\ A = [ <. w , v >. ] ~Q ) ) $=
       ( va cv cnpi wcel cop ceq cec wceq wex cxp cqs cnq wrex elqsi elxpi syl
-      wa anim1i 19.41vv sylibr simplr ax-ia2 eceq1 ad2antrr eqtrd jca rexlimiva
-      2eximi df-nqqs eleq2s ) AEZFGBEZFGTZCUNUOHZIJZKZTZBLALZCFFMZINZOCVCGCDEZI
-      JZKZDVBPVADVBCIQVFVADVBVDVBGZVFTZVDUQKZUPTZVFTZBLALZVAVHVJBLALZVFTVLVGVMV
-      FABVDFFRUAVJVFABUBUCVKUTABVKUPUSVIUPVFUDVKCVEURVJVFUEVIVEURKUPVFVDUQIUFUG
-      UHUIUKSUJSULUM $.
+      wa anim1i 19.41vv sylibr simplr simpr eceq1 ad2antrr jca 2eximi rexlimiva
+      eqtrd df-nqqs eleq2s ) AEZFGBEZFGTZCUNUOHZIJZKZTZBLALZCFFMZINZOCVCGCDEZIJ
+      ZKZDVBPVADVBCIQVFVADVBVDVBGZVFTZVDUQKZUPTZVFTZBLALZVAVHVJBLALZVFTVLVGVMVF
+      ABVDFFRUAVJVFABUBUCVKUTABVKUPUSVIUPVFUDVKCVEURVJVFUEVIVEURKUPVFVDUQIUFUGU
+      KUHUISUJSULUM $.
   $}
 
   ${
@@ -59330,14 +59360,14 @@ $)
        NM, 14-Mar-1996.)  (Revised by Mario Carneiro, 10-May-2013.) $)
     ltaddnq $p |- ( ( A e. Q. /\ B e. Q. ) -> A <Q ( A +Q B ) ) $=
       ( vr vs vt cnq wcel wa cplq co cltq wbr c1q cmq wb addclnq wceq adantl cv
-      1nq 1lt2nq ltmnqg mp3an12 mulidnq distrnqg mp3an23 oveq12d 3brtr3d ax-ia2
-      mp2an mpbii eqtrd anidms ax-ia1 syl3anc mpbid addcomnqg addassnqg caov12d
-      ltanqg w3a mpbird ) AFGZBFGZHZAABIJZKLZBAIJZBVFIJZKLZVEVFABBIJZIJZVHVIKVE
-      BVKKLZVFVLKLZVDVMVCVDBMNJZBMMIJZNJZBVKKVDMVPKLZVOVQKLZUAMFGZVPFGZVDVRVSOT
-      VTVTWATTMMPUJMVPBUBUCUKBUDZVDVQVOVOIJZVKVDVTVTVQWCQTTBMMUEUFVDVOBVOBIWBWB
-      UGULUHRVEVDVKFGZVCVMVNOVCVDUIZVDWDVCVDWDBBPUMRVCVDUNZBVKAUTUOUPABUQVECDEA
-      BBFIWFWEWECSZFGZDSZFGZHWGWIIJZWIWGIJQVEWGWIUQRWHWJESZFGVAWKWLIJWGWIWLIJIJ
-      QVEWGWIWLURRUSUHVEVCVFFGVDVGVJOWFABPWEAVFBUTUOVB $.
+      1nq 1lt2nq mp2an ltmnqg mp3an12 mpbii mulidnq mp3an23 oveq12d eqtrd simpr
+      3brtr3d anidms simpl ltanqg syl3anc mpbid addcomnqg w3a addassnqg caov12d
+      distrnqg mpbird ) AFGZBFGZHZAABIJZKLZBAIJZBVFIJZKLZVEVFABBIJZIJZVHVIKVEBV
+      KKLZVFVLKLZVDVMVCVDBMNJZBMMIJZNJZBVKKVDMVPKLZVOVQKLZUAMFGZVPFGZVDVRVSOTVT
+      VTWATTMMPUBMVPBUCUDUEBUFZVDVQVOVOIJZVKVDVTVTVQWCQTTBMMVAUGVDVOBVOBIWBWBUH
+      UIUKRVEVDVKFGZVCVMVNOVCVDUJZVDWDVCVDWDBBPULRVCVDUMZBVKAUNUOUPABUQVECDEABB
+      FIWFWEWECSZFGZDSZFGZHWGWIIJZWIWGIJQVEWGWIUQRWHWJESZFGURWKWLIJWGWIWLIJIJQV
+      EWGWIWLUSRUTUKVEVCVFFGVDVGVJOWFABPWEAVFBUNUOVB $.
   $}
 
   ${
@@ -59445,16 +59475,16 @@ $)
        24-Sep-2019.) $)
     ltbtwnnqq $p |- ( A <Q B <-> E. x e. Q. ( A <Q x /\ x <Q B ) ) $=
       ( vy vz cltq wbr cv wa cnq wrex wcel cplq wceq ltrelnq brel simpld adantr
-      co wb ltexnqq syl ibi wex ltaddnq sylan2 ancoms ax-ia1 ltanqg 3expa sylan
-      nsmallnq mpbid breq2 adantl addclnq anbi12d rspcedv mp2and 3expia exlimdv
-      breq1 3impa 3coml syl5 impancom rexlimdva ltsonq sotri rexlimivw impbii
+      co wb ltexnqq syl ibi wex nsmallnq sylan2 ancoms simpl ltanqg 3expa sylan
+      ltaddnq mpbid breq2 adantl addclnq breq1 anbi12d rspcedv 3impa 3coml syl5
+      mp2and 3expia exlimdv impancom rexlimdva ltsonq sotri rexlimivw impbii
       sylc ) BCFGZBAHZFGZVNCFGZIZAJKZVMBJLZBDHZMSZCNZDJKZVRVMVSCJLZBCJJFOPZQVMW
-      CVMVSWDIVMWCTWEDBCUAUBUCVSWBVRDJVSWBVTJLZVRWFEHZVTFGZEUDVSWBIZVREVTULWIWH
+      CVMVSWDIVMWCTWEDBCUAUBUCVSWBVRDJVSWBVTJLZVRWFEHZVTFGZEUDVSWBIZVREVTUEWIWH
       VREVSWBWHVRWHVSWBVRWHVSWBVRWHVSIZWBIZBBWGMSZFGZWLCFGZVRWJWMWBVSWHWMWHVSWG
-      JLZWMWHWOWFWGVTJJFOPZQZBWGUEUFUGRWKWLWAFGZWNWJWRWBWJWHWRWHVSUHWHWOWFIVSWH
+      JLZWMWHWOWFWGVTJJFOPZQZBWGULUFUGRWKWLWAFGZWNWJWRWBWJWHWRWHVSUHWHWOWFIVSWH
       WRTZWPWOWFVSWSWGVTBUIUJUKUMRWBWRWNTWJWACWLFUNUOUMWKVQWMWNIZAWLJWJWLJLZWBV
-      SWHXAWHVSWOXAWQBWGUPUFUGRVNWLNZVQWTTWKXBVOWMVPWNVNWLBFUNVNWLCFVBUQUOURUSV
-      CVDUTVAVEVFVGVLVQVMAJBVNCFJVHOVIVJVK $.
+      SWHXAWHVSWOXAWQBWGUPUFUGRVNWLNZVQWTTWKXBVOWMVPWNVNWLBFUNVNWLCFUQURUOUSVCU
+      TVAVDVEVBVFVGVLVQVMAJBVNCFJVHOVIVJVK $.
 
     $( There exists a number between any two positive fractions.  Proposition
        9-2.6(i) of [Gleason] p. 120.  (Contributed by NM, 17-Mar-1996.)
@@ -59530,30 +59560,30 @@ $)
       mpdan eqtr3d 3brtr4d ordpipqqs mpanl2 mpanr2 cxp cqs opelxpi ecelqsi 3syl
       df-nqqs syl6eleqr ltmnqg syl3an1 syl3an2 3anidm12 ancoms mulcomnqg sylan2
       enqex mpbid 3brtr3d 3ad2antl3 ltsonq ltrelnq sotri ex mpd mulclnq ltaddnq
-      sylan simpl2 syl2anc addcomnqg breq2d ax-ia2 eceq1d oveq1d oveq2d anbi12d
-      breq2 opeq1 rspcev mp2and rexlimddv ) BEFZCEFZDEFZUCZBUAUBZGUDZHUEZDIJZKL
-      ZGAUBZMLZBCUUEGUDZHUEZDIJZUFJZKLZNZAOUGZUAOYPYRUUDUAOUGYQUABDUHUIYSYTOFZU
-      UDNZNZGYTPUJJZMLZBCUUQGUDZHUEZDIJZUFJZKLZUUMYSUUNUURUUDUUNUURYSUUNUURGUUQ
-      FZUUNGYTPUKJZUUQUUNYTULFZGUVEFZYTUMZUVFGPFUVGGGUNZPGGOQUOUPZUQURUVFPUVEGP
-      ULFZUVFPUVEUSUTPYTVAVBVCVGRUUNPOFZUUQUVESGGUKJZPOVDGGUJJZUVMOGOFZUVOUVNUV
-      MSQQGGVEVHUVOUVOUVNOFQQGGVFVHVIVIZYTPVEVJZVKUUNUUQOFZUURUVDVRZUUNUVLUVRUV
-      PYTPVFVJZUVOUVRUVSQGUUQVLVBRVMVNVOUUPBUVACUFJZKLZUVCUUPBUVAKLZUVAUWAKLZUW
-      BUUPUUCUVAKLZUWCYSUUNUWEUUDYRYPUUNUWEYQYRUUNNZDUUBIJZDUUTIJZUUCUVAKUWFUUB
-      UUTKLZUWGUWHKLZUUNUWIYRUUNUWIYTGVPJZGUUQVPJZMLZUUNYTUUQUWKUWLMUUNYTUUQMLZ
-      YTUUQFZUUNYTUVEUUQUUNUVFYTUVEFUVHUVFYTTUKJZYTUVEYTVSUVFTPFZUWPUVEFZTUVIPT
-      GFZGUVIFZTUVIFZVQUVJUVIVTFUWSUWTNUXAWAGWBWCTGUVIWDWEVHUQURUVKUVFUWQUWRWAU
-      TTPYTWFVBVGWGRUVQVKUUNUVRUWNUWOVRUVTYTUUQVLWJVMYTWHUUNUUQGVPJZUWLUUQUUNUV
-      RUXBUWLSZUVTUVRUVOUXCQUUQGWIVJRUUNUVRUXBUUQSUVTUUQWHRWKWLUUNUVRUWIUWMVRZU
-      VTUUNUVRUVOUXDQUUNUVOUVRUVONUXDQYTGUUQGWMWNWOWJVMVNUUNYRUWIUWJVRZUUNYRUXE
-      UUNUUNUUTEFZYRUXEUUNUUTOOWPZHWQZEUUNUVRUUSUXGFZUUTUXHFUVTUVRUVOUXIQUUQGOO
-      WRVJUXGUUSHXJWSWTXAXBZUUNUUBEFZUXFYRUXEUUNUUBUXHEUUNUUAUXGFZUUBUXHFUUNUVO
-      UXLQYTGOOWRVJUXGUUAHXJWSRXAXBZUUBUUTDXCXDXEXFXGXKUUNYRUXKUWGUUCSUXMDUUBXH
-      XIUUNYRUXFUWHUVASUXJDUUTXHXIXLXMVOUUOUWEUWCWAZYSUUDUXNUUNUUDUWEUWCBUUCUVA
-      KEXNXOXPXQVNVNXRYSUUNUWDUUDYSUUNNZUVAEFZYQUWDYRYPUUNUXPYQUUNYRUXPUUNUXFYR
-      UXPUXJUUTDXSYAXGXMZYPYQYRUUNYBZUVACXTYCVOBUVAUWAKEXNXOXPYCYSUUNUWBUVCVRUU
-      DUXOUWAUVBBKUXOUXPYQUWAUVBSUXQUXRUVACYDYCYEVOXKYSUUNUURUVCNZUUMWAZUUDUXOU
-      UNUVRUXTYSUUNYFUVTUVRUXSUUMUULUXSAUUQOUUEUUQSZUUFUURUUKUVCUUEUUQGMYKUYAUU
-      JUVBBKUYAUUIUVACUFUYAUUHUUTDIUYAUUGUUSHUUEUUQGYLYGYHYIYEYJYMXQWTVOYNYO $.
+      sylan simpl2 syl2anc breq2d simpr breq2 opeq1 eceq1d oveq1d oveq2d rspcev
+      addcomnqg anbi12d mp2and rexlimddv ) BEFZCEFZDEFZUCZBUAUBZGUDZHUEZDIJZKLZ
+      GAUBZMLZBCUUEGUDZHUEZDIJZUFJZKLZNZAOUGZUAOYPYRUUDUAOUGYQUABDUHUIYSYTOFZUU
+      DNZNZGYTPUJJZMLZBCUUQGUDZHUEZDIJZUFJZKLZUUMYSUUNUURUUDUUNUURYSUUNUURGUUQF
+      ZUUNGYTPUKJZUUQUUNYTULFZGUVEFZYTUMZUVFGPFUVGGGUNZPGGOQUOUPZUQURUVFPUVEGPU
+      LFZUVFPUVEUSUTPYTVAVBVCVGRUUNPOFZUUQUVESGGUKJZPOVDGGUJJZUVMOGOFZUVOUVNUVM
+      SQQGGVEVHUVOUVOUVNOFQQGGVFVHVIVIZYTPVEVJZVKUUNUUQOFZUURUVDVRZUUNUVLUVRUVP
+      YTPVFVJZUVOUVRUVSQGUUQVLVBRVMVNVOUUPBUVACUFJZKLZUVCUUPBUVAKLZUVAUWAKLZUWB
+      UUPUUCUVAKLZUWCYSUUNUWEUUDYRYPUUNUWEYQYRUUNNZDUUBIJZDUUTIJZUUCUVAKUWFUUBU
+      UTKLZUWGUWHKLZUUNUWIYRUUNUWIYTGVPJZGUUQVPJZMLZUUNYTUUQUWKUWLMUUNYTUUQMLZY
+      TUUQFZUUNYTUVEUUQUUNUVFYTUVEFUVHUVFYTTUKJZYTUVEYTVSUVFTPFZUWPUVEFZTUVIPTG
+      FZGUVIFZTUVIFZVQUVJUVIVTFUWSUWTNUXAWAGWBWCTGUVIWDWEVHUQURUVKUVFUWQUWRWAUT
+      TPYTWFVBVGWGRUVQVKUUNUVRUWNUWOVRUVTYTUUQVLWJVMYTWHUUNUUQGVPJZUWLUUQUUNUVR
+      UXBUWLSZUVTUVRUVOUXCQUUQGWIVJRUUNUVRUXBUUQSUVTUUQWHRWKWLUUNUVRUWIUWMVRZUV
+      TUUNUVRUVOUXDQUUNUVOUVRUVONUXDQYTGUUQGWMWNWOWJVMVNUUNYRUWIUWJVRZUUNYRUXEU
+      UNUUNUUTEFZYRUXEUUNUUTOOWPZHWQZEUUNUVRUUSUXGFZUUTUXHFUVTUVRUVOUXIQUUQGOOW
+      RVJUXGUUSHXJWSWTXAXBZUUNUUBEFZUXFYRUXEUUNUUBUXHEUUNUUAUXGFZUUBUXHFUUNUVOU
+      XLQYTGOOWRVJUXGUUAHXJWSRXAXBZUUBUUTDXCXDXEXFXGXKUUNYRUXKUWGUUCSUXMDUUBXHX
+      IUUNYRUXFUWHUVASUXJDUUTXHXIXLXMVOUUOUWEUWCWAZYSUUDUXNUUNUUDUWEUWCBUUCUVAK
+      EXNXOXPXQVNVNXRYSUUNUWDUUDYSUUNNZUVAEFZYQUWDYRYPUUNUXPYQUUNYRUXPUUNUXFYRU
+      XPUXJUUTDXSYAXGXMZYPYQYRUUNYBZUVACXTYCVOBUVAUWAKEXNXOXPYCYSUUNUWBUVCVRUUD
+      UXOUWAUVBBKUXOUXPYQUWAUVBSUXQUXRUVACYLYCYDVOXKYSUUNUURUVCNZUUMWAZUUDUXOUU
+      NUVRUXTYSUUNYEUVTUVRUXSUUMUULUXSAUUQOUUEUUQSZUUFUURUUKUVCUUEUUQGMYFUYAUUJ
+      UVBBKUYAUUIUVACUFUYAUUHUUTDIUYAUUGUUSHUUEUUQGYGYHYIYJYDYMYKXQWTVOYNYO $.
   $}
 
   ${
@@ -59564,15 +59594,15 @@ $)
     ltrnqg $p |- ( ( A e. Q. /\ B e. Q. ) ->
         ( A <Q B <-> ( *Q ` B ) <Q ( *Q ` A ) ) ) $=
       ( cnq wcel cltq wbr crq cfv cmq co recclnq mulclnq wceq mulcomnqg syl2anc
-      mulassnqg syl3anc c1q recidnq oveq2d syl2an ltmnqg mpd3an3 ax-ia1 3eqtr2d
-      wa adantr adantl mulidnq syl sylan9eq eqtrd ax-ia2 sylan9eqr 3eqtrd bitrd
-      wb breq12d ) ACDZBCDZUFZABEFZAGHZBGHZIJZAIJZVEBIJZEFZVDVCEFUSUTVECDZVBVHU
-      QUSVCCDZVDCDZVIUTAKZBKZVCVDLUAZABVEUBUCVAVFVDVGVCEVAVFVDAVCIJZIJZVDVAVFAV
-      EIJZVOVDIJZVPVAVIUSVFVQMVNUSUTUDZVEANOVAUSVJVKVRVQMVSUSVJUTVLUGZUTVKUSVMU
-      HZAVCVDPQVAVOCDZVKVRVPMVAUSVJWBVSVTAVCLOWAVOVDNOUEUSUTVPVDRIJZVDUSVORVDIA
-      STUTVKWCVDMVMVDUIUJUKULVAVGVCVDBIJZIJZVCBVDIJZIJZVCVAVJVKUTVGWEMVTWAUSUTU
-      MZVCVDBPQVAWDWFVCIVAVKUTWDWFMWAWHVDBNOTUTUSWGVCRIJZVCUTWFRVCIBSTUSVJWIVCM
-      VLVCUIUJUNUOURUP $.
+      mulassnqg syl3anc c1q recidnq oveq2d wa syl2an ltmnqg simpl adantr adantl
+      mpd3an3 3eqtr2d mulidnq syl sylan9eq eqtrd simpr sylan9eqr 3eqtrd breq12d
+      wb bitrd ) ACDZBCDZUAZABEFZAGHZBGHZIJZAIJZVEBIJZEFZVDVCEFUSUTVECDZVBVHUQU
+      SVCCDZVDCDZVIUTAKZBKZVCVDLUBZABVEUCUGVAVFVDVGVCEVAVFVDAVCIJZIJZVDVAVFAVEI
+      JZVOVDIJZVPVAVIUSVFVQMVNUSUTUDZVEANOVAUSVJVKVRVQMVSUSVJUTVLUEZUTVKUSVMUFZ
+      AVCVDPQVAVOCDZVKVRVPMVAUSVJWBVSVTAVCLOWAVOVDNOUHUSUTVPVDRIJZVDUSVORVDIAST
+      UTVKWCVDMVMVDUIUJUKULVAVGVCVDBIJZIJZVCBVDIJZIJZVCVAVJVKUTVGWEMVTWAUSUTUMZ
+      VCVDBPQVAWDWFVCIVAVKUTWDWFMWAWHVDBNOTUTUSWGVCRIJZVCUTWFRVCIBSTUSVJWIVCMVL
+      VCUIUJUNUOUPUR $.
 
     $( Ordering property of reciprocal for positive fractions.  For the
        converse, see ~ ltrnqg .  (Contributed by Jim Kingdon, 24-Sep-2019.) $)
@@ -59682,35 +59712,35 @@ $)
     enq0sym $p |- ( f ~Q0 g -> g ~Q0 f ) $=
       ( vc vd va vb vz vw vv vu cv com wcel wa wceq comu co wex anbi1d anbi12d
       vx vy ceq0 wbr cnpi cxp cop vex eleq1 eqeq1 4exbidv anbi2d df-enq0 biimpi
-      brab opeq12 eqeq2d ax-ia1 oveq1d ax-ia2 oveq2d anbi2i sylib sylibr 2exbii
-      eqeq12d cbvex4v 19.42vv pm3.22 adantr ad2antrl simprr wb biimpcd im2anan9
-      opelxp syl6bb imp adantrr pinn nnmcom sylan2 sylan eqeqan12d an42s eqcomd
-      syl mpbid jca32 2eximi exrot4 biimpri sylan2br sylbi ) AKZBKZUCUDZWPLUEUF
-      ZMZWOWRMZNZWPCKZDKZUGZOZWOEKZFKZUGZOZNZXBXGPQZXCXFPQZOZNZNZDRCRZFRERZWPWO
-      UCUDZWQWTWSNZXIXENZXFXCPQZXGXBPQZOZNZNZDRCRZFRERZXQWQXSYDDRCRZNZFRERZYGWQ
-      XSYHFRERZNZYJWQXSWOGKZHKZUGZOZWPIKZJKZUGZOZNZYMYRPQZYNYQPQZOZNZJRIRHRGRZN
-      ZYLWQUUGUAKZWRMZUBKZWRMZNZUUHYOOZUUJYSOZNZUUDNZJRIRHRGRZNZWTUUKNZYPUUNNZU
-      UDNZJRIRHRGRZNUUGUAUBWOWPUCAUHZBUHZUUHWOOZUULUUSUUQUVBUVEUUIWTUUKUUHWOWRU
-      ISUVEUUPUVAGHIJUVEUUOUUTUUDUVEUUMYPUUNUUHWOYOUJSSUKTUUJWPOZUUSXSUVBUUFUVF
-      UUKWSWTUUJWPWRUIULUVFUVAUUEGHIJUVFUUTUUAUUDUVFUUNYTYPUUJWPYSUJULSUKTUAUBG
-      HIJUMZUOUNUUFYKXSUUEXIYTNZXFYRPQZXGYQPQZOZNYDGHIJEFCDYMXFOZYNXGOZNZUUAUVH
-      UUDUVKUVNYPXIYTUVNYOXHWOYMYNXFXGUPUQSUVNUUBUVIUUCUVJUVNYMXFYRPUVLUVMURUSU
-      VNYNXGYQPUVLUVMUTUSVFTYQXBOZYRXCOZNZUVHXTUVKYCUVQYTXEXIUVQYSXDWPYQYRXBXCU
-      PUQULUVQUVIYAUVJYBUVQYRXCXFPUVOUVPUTVAUVQYQXBXGPUVOUVPURVAVFTVGVBVCXSYHEF
-      VHVDYFYIEFXSYDCDVHVEVDYFXPEFYEXOCDYEXAXJXMXSXAYDWTWSVIVJXTXJXSYCXIXEVIVKY
-      EXLXKYEYCXLXKOZXSXTYCVLYEXFLMZXGUEMZNZXBLMZXCUEMZNZNZYCUVRVMZXSXTUWEYCXSX
-      TUWEWTXIUWAWSXEUWDXIWTUWAXIWTXHWRMUWAWOXHWRUIXFXGLUEVPVQVNXEWSUWDXEWSXDWR
-      MUWDWPXDWRUIXBXCLUEVPVQVNVOVRVSUVSUWCUVTUWBUWFUVSUWCNUVTUWBNYAXLYBXKUWCUV
-      SXCLMYAXLOXCVTXFXCWAWBUVTXGLMUWBYBXKOXGVTXGXBWAWCWDWEWGWHWFWIWJWJWGXQXOFR
-      ERZDRCRZXRXOEFCDWKUWHXAXNFRERZNZDRCRZXRUWGUWJCDXAXNEFVHVEUWKXAUWIDRCRZNXR
-      XAUWICDVHUWLXAWPYOOZWOYSOZNZUUDNZJRIRHRGRZXRUWPXEUWNNZXBYRPQZXCYQPQZOZNXN
-      GHIJCDEFYMXBOZYNXCOZNZUWOUWRUUDUXAUXDUWMXEUWNUXDYOXDWPYMYNXBXCUPUQSUXDUUB
-      UWSUUCUWTUXDYMXBYRPUXBUXCURUSUXDYNXCYQPUXBUXCUTUSVFTYQXFOZYRXGOZNZUWRXJUX
-      AXMUXGUWNXIXEUXGYSXHWOYQYRXFXGUPUQULUXGUWSXKUWTXLUXGYRXGXBPUXEUXFUTVAUXGY
-      QXFXCPUXEUXFURVAVFTVGXRXAUWQNZUURWSUUKNZUWMUUNNZUUDNZJRIRHRGRZNUXHUAUBWPW
-      OUCUVDUVCUUHWPOZUULUXIUUQUXLUXMUUIWSUUKUUHWPWRUISUXMUUPUXKGHIJUXMUUOUXJUU
-      DUXMUUMUWMUUNUUHWPYOUJSSUKTUUJWOOZUXIXAUXLUWQUXNUUKWTWSUUJWOWRUIULUXNUXKU
-      WPGHIJUXNUXJUWOUUDUXNUUNUWNUWMUUJWOYSUJULSUKTUVGUOWLWMWNWNWNWG $.
+      brab opeq12 eqeq2d simpl oveq1d simpr eqeq12d oveq2d cbvex4v anbi2i sylib
+      19.42vv sylibr 2exbii pm3.22 adantr ad2antrl simprr opelxp syl6bb biimpcd
+      wb im2anan9 adantrr pinn nnmcom sylan2 sylan eqeqan12d an42s mpbid eqcomd
+      imp syl jca32 2eximi exrot4 biimpri sylan2br sylbi ) AKZBKZUCUDZWPLUEUFZM
+      ZWOWRMZNZWPCKZDKZUGZOZWOEKZFKZUGZOZNZXBXGPQZXCXFPQZOZNZNZDRCRZFRERZWPWOUC
+      UDZWQWTWSNZXIXENZXFXCPQZXGXBPQZOZNZNZDRCRZFRERZXQWQXSYDDRCRZNZFRERZYGWQXS
+      YHFRERZNZYJWQXSWOGKZHKZUGZOZWPIKZJKZUGZOZNZYMYRPQZYNYQPQZOZNZJRIRHRGRZNZY
+      LWQUUGUAKZWRMZUBKZWRMZNZUUHYOOZUUJYSOZNZUUDNZJRIRHRGRZNZWTUUKNZYPUUNNZUUD
+      NZJRIRHRGRZNUUGUAUBWOWPUCAUHZBUHZUUHWOOZUULUUSUUQUVBUVEUUIWTUUKUUHWOWRUIS
+      UVEUUPUVAGHIJUVEUUOUUTUUDUVEUUMYPUUNUUHWOYOUJSSUKTUUJWPOZUUSXSUVBUUFUVFUU
+      KWSWTUUJWPWRUIULUVFUVAUUEGHIJUVFUUTUUAUUDUVFUUNYTYPUUJWPYSUJULSUKTUAUBGHI
+      JUMZUOUNUUFYKXSUUEXIYTNZXFYRPQZXGYQPQZOZNYDGHIJEFCDYMXFOZYNXGOZNZUUAUVHUU
+      DUVKUVNYPXIYTUVNYOXHWOYMYNXFXGUPUQSUVNUUBUVIUUCUVJUVNYMXFYRPUVLUVMURUSUVN
+      YNXGYQPUVLUVMUTUSVATYQXBOZYRXCOZNZUVHXTUVKYCUVQYTXEXIUVQYSXDWPYQYRXBXCUPU
+      QULUVQUVIYAUVJYBUVQYRXCXFPUVOUVPUTVBUVQYQXBXGPUVOUVPURVBVATVCVDVEXSYHEFVF
+      VGYFYIEFXSYDCDVFVHVGYFXPEFYEXOCDYEXAXJXMXSXAYDWTWSVIVJXTXJXSYCXIXEVIVKYEX
+      LXKYEYCXLXKOZXSXTYCVLYEXFLMZXGUEMZNZXBLMZXCUEMZNZNZYCUVRVPZXSXTUWEYCXSXTU
+      WEWTXIUWAWSXEUWDXIWTUWAXIWTXHWRMUWAWOXHWRUIXFXGLUEVMVNVOXEWSUWDXEWSXDWRMU
+      WDWPXDWRUIXBXCLUEVMVNVOVQWGVRUVSUWCUVTUWBUWFUVSUWCNUVTUWBNYAXLYBXKUWCUVSX
+      CLMYAXLOXCVSXFXCVTWAUVTXGLMUWBYBXKOXGVSXGXBVTWBWCWDWHWEWFWIWJWJWHXQXOFRER
+      ZDRCRZXRXOEFCDWKUWHXAXNFRERZNZDRCRZXRUWGUWJCDXAXNEFVFVHUWKXAUWIDRCRZNXRXA
+      UWICDVFUWLXAWPYOOZWOYSOZNZUUDNZJRIRHRGRZXRUWPXEUWNNZXBYRPQZXCYQPQZOZNXNGH
+      IJCDEFYMXBOZYNXCOZNZUWOUWRUUDUXAUXDUWMXEUWNUXDYOXDWPYMYNXBXCUPUQSUXDUUBUW
+      SUUCUWTUXDYMXBYRPUXBUXCURUSUXDYNXCYQPUXBUXCUTUSVATYQXFOZYRXGOZNZUWRXJUXAX
+      MUXGUWNXIXEUXGYSXHWOYQYRXFXGUPUQULUXGUWSXKUWTXLUXGYRXGXBPUXEUXFUTVBUXGYQX
+      FXCPUXEUXFURVBVATVCXRXAUWQNZUURWSUUKNZUWMUUNNZUUDNZJRIRHRGRZNUXHUAUBWPWOU
+      CUVDUVCUUHWPOZUULUXIUUQUXLUXMUUIWSUUKUUHWPWRUISUXMUUPUXKGHIJUXMUUOUXJUUDU
+      XMUUMUWMUUNUUHWPYOUJSSUKTUUJWOOZUXIXAUXLUWQUXNUUKWTWSUUJWOWRUIULUXNUXKUWP
+      GHIJUXNUXJUWOUUDUXNUUNUWNUWMUUJWOYSUJULSUKTUVGUOWLWMWNWNWNWH $.
   $}
 
   ${
@@ -59854,27 +59884,27 @@ $)
         [ <. A , B >. ] ~Q0 = [ <. A , B >. ] ~Q ) $=
       ( vy vx vz vw vu vv cnpi wcel wa cop ceq0 wceq cv wex com wb c0 wn opelxp
       cec cxp cin ceq cima wss wbr vex elima2 elxp anbi1i 19.41vv bitr4i simplr
-      breq1 adantr biimpa id wer enq0er a1i ax-ia2 ercl2 sylib 19.42vv sylanbrc
-      syl2anc wne simprrl comu elni simprbi neneqd ad2antrr ad2antll jca pm4.56
-      wo co pinn nnm00 ad2ant2rl breq2 biimpac ad2ant2lr enq0breq sylanl1 mpbid
-      mtbird eqeq1d mtbid sylan sylibr neneqad simprrr eleq1 ad2antrl mpbir2and
-      simprd syl6bb exlimivv syl sylbi exlimiv ssriv ecinxp mpan sylbir enq0enq
-      eceq2 ax-mp syl6eqr ) AIJBIJKZABLZMUBZXOMIIUCZXQUCUDZUBZXOUEUBZXNXOXQJZXP
-      XSNZABIIUAMXQUFZXQUGYAYBCYCXQCOZYCJDOZXQJZYEYDMUHZKZDPYDXQJZDYDMXQCUIUJYH
-      YIDYHYEEOZFOZLZNZYJIJZYKIJZKZKZYGKZFPEPZYIYHYQFPEPZYGKYSYFYTYGEFYEIIUKULY
-      QYGEFUMUNYRYIEFYRYPYLYDMUHZKZYDGOZHOZLZNZUUCQJZUUDIJZKZKZKZHPGPZYIYRYPUUA
-      UULYMYPYGUOYQYGUUAYMYGUUARYPYEYLYDMUPUQURUUBUUBUUJHPGPZUULUUBUSUUBYDQIUCZ
-      JUUMUUBYLYDMUUNUUNMUTUUBVAVBYPUUAVCVDGHYDQIUKVEUUBUUJGHVFVGVHUUKYIGHUUKYI
-      UUCIJZUUHUUKUUGUUCSVIUUOUUBUUFUUGUUHVJUUKUUCSUUKYKSNZTZUUCSNZTZUUKUUPUURV
-      SZTUUQUUSKUUKYKUUCVKVTZSNZUUTUUKYJUUDVKVTZSNZUVBYPUUIUVDTUUAUUFYPUUIKZUVD
-      YJSNZUUDSNZVSZUVEUVFTZUVGTZKUVHTUVEUVIUVJYNUVIYOUUIYNYJSYNYJQJZYJSVIYJVLV
-      MVNVOUUHUVJYPUUGUUHUUDSUUHUUDQJZUUDSVIUUDVLVMVNVPVQUVFUVGVRVEUVEUVKUVLUVD
-      UVHRYNUVKYOUUIYJWAZVOUUHUVLYPUUGUUDWAVPYJUUDWBVHWJWCUUKUVCUVASUUKYLUUEMUH
-      ZUVCUVANZUUAUUFUVNYPUUIUUFUUAUVNYDUUEYLMWDWEWFYPUUIUVNUVORZUUAUUFYNUVKYOU
-      UIUVPUVMYJYKUUCUUDWGWHWCWIWKWLYPUUIUVBUUTRZUUAUUFYOUUGUVQYNUUHYOYKQJUUGUV
-      QYKWAYKUUCWBWMWFWCWLUUPUURVRWNWTWOUUCVLVGUUBUUFUUGUUHWPUUFYIUUOUUHKZRUUBU
-      UIUUFYIUUEXQJUVRYDUUEXQWQUUCUUDIIUAXAWRWSXBXCXBXDXEXDXFXQXOMXGXHXIUEXRNXT
-      XSNXJUEXRXOXKXLXM $.
+      breq1 adantr biimpa wer enq0er simpr ercl2 sylib 19.42vv sylanbrc syl2anc
+      id a1i wne simprrl wo comu co simprbi neneqd ad2antrr ad2antll jca pm4.56
+      elni pinn nnm00 mtbird ad2ant2rl breq2 biimpac ad2ant2lr enq0breq sylanl1
+      mpbid eqeq1d mtbid sylan sylibr simprd neneqad simprrr ad2antrl mpbir2and
+      eleq1 syl6bb exlimivv syl sylbi exlimiv ssriv ecinxp sylbir enq0enq eceq2
+      mpan ax-mp syl6eqr ) AIJBIJKZABLZMUBZXOMIIUCZXQUCUDZUBZXOUEUBZXNXOXQJZXPX
+      SNZABIIUAMXQUFZXQUGYAYBCYCXQCOZYCJDOZXQJZYEYDMUHZKZDPYDXQJZDYDMXQCUIUJYHY
+      IDYHYEEOZFOZLZNZYJIJZYKIJZKZKZYGKZFPEPZYIYHYQFPEPZYGKYSYFYTYGEFYEIIUKULYQ
+      YGEFUMUNYRYIEFYRYPYLYDMUHZKZYDGOZHOZLZNZUUCQJZUUDIJZKZKZKZHPGPZYIYRYPUUAU
+      ULYMYPYGUOYQYGUUAYMYGUUARYPYEYLYDMUPUQURUUBUUBUUJHPGPZUULUUBVGUUBYDQIUCZJ
+      UUMUUBYLYDMUUNUUNMUSUUBUTVHYPUUAVAVBGHYDQIUKVCUUBUUJGHVDVEVFUUKYIGHUUKYIU
+      UCIJZUUHUUKUUGUUCSVIUUOUUBUUFUUGUUHVJUUKUUCSUUKYKSNZTZUUCSNZTZUUKUUPUURVK
+      ZTUUQUUSKUUKYKUUCVLVMZSNZUUTUUKYJUUDVLVMZSNZUVBYPUUIUVDTUUAUUFYPUUIKZUVDY
+      JSNZUUDSNZVKZUVEUVFTZUVGTZKUVHTUVEUVIUVJYNUVIYOUUIYNYJSYNYJQJZYJSVIYJVTVN
+      VOVPUUHUVJYPUUGUUHUUDSUUHUUDQJZUUDSVIUUDVTVNVOVQVRUVFUVGVSVCUVEUVKUVLUVDU
+      VHRYNUVKYOUUIYJWAZVPUUHUVLYPUUGUUDWAVQYJUUDWBVFWCWDUUKUVCUVASUUKYLUUEMUHZ
+      UVCUVANZUUAUUFUVNYPUUIUUFUUAUVNYDUUEYLMWEWFWGYPUUIUVNUVORZUUAUUFYNUVKYOUU
+      IUVPUVMYJYKUUCUUDWHWIWDWJWKWLYPUUIUVBUUTRZUUAUUFYOUUGUVQYNUUHYOYKQJUUGUVQ
+      YKWAYKUUCWBWMWGWDWLUUPUURVSWNWOWPUUCVTVEUUBUUFUUGUUHWQUUFYIUUOUUHKZRUUBUU
+      IUUFYIUUEXQJUVRYDUUEXQWTUUCUUDIIUAXAWRWSXBXCXBXDXEXDXFXQXOMXGXKXHUEXRNXTX
+      SNXIUEXRXOXJXLXM $.
   $}
 
   ${
@@ -59917,11 +59947,11 @@ $)
     nq0nn $p |- ( A e. Q0. ->
         E. w E. v ( ( w e. _om /\ v e. N. ) /\ A = [ <. w , v >. ] ~Q0 ) ) $=
       ( va cv com wcel cnpi cop ceq0 cec wceq wex cxp cqs cnq0 wrex elqsi syl
-      wa elxpi anim1i 19.41vv sylibr simplr ax-ia2 eceq1 ad2antrr jca rexlimiva
-      eqtrd 2eximi df-nq0 eleq2s ) AEZFGBEZHGTZCUOUPIZJKZLZTZBMAMZCFHNZJOZPCVDG
-      CDEZJKZLZDVCQVBDVCCJRVGVBDVCVEVCGZVGTZVEURLZUQTZVGTZBMAMZVBVIVKBMAMZVGTVM
-      VHVNVGABVEFHUAUBVKVGABUCUDVLVAABVLUQUTVJUQVGUEVLCVFUSVKVGUFVJVFUSLUQVGVEU
-      RJUGUHUKUIULSUJSUMUN $.
+      wa elxpi anim1i sylibr simplr simpr eceq1 ad2antrr eqtrd 2eximi rexlimiva
+      19.41vv jca df-nq0 eleq2s ) AEZFGBEZHGTZCUOUPIZJKZLZTZBMAMZCFHNZJOZPCVDGC
+      DEZJKZLZDVCQVBDVCCJRVGVBDVCVEVCGZVGTZVEURLZUQTZVGTZBMAMZVBVIVKBMAMZVGTVMV
+      HVNVGABVEFHUAUBVKVGABUKUCVLVAABVLUQUTVJUQVGUDVLCVFUSVKVGUEVJVFUSLUQVGVEUR
+      JUFUGUHULUISUJSUMUN $.
   $}
 
   ${
@@ -60034,23 +60064,23 @@ $)
         /\ z = [ <. ( ( w .o t ) +o ( v .o u ) ) , ( v .o t ) >. ] ~Q0 ) ) $=
       ( vq vs vf ceq0 wcel wa cv cop cec wceq comu co wex vg vh com cxp cqs coa
       wi wal wmo wer enq0er a1i wbr nnnq0lem1 addcmpblnq0 imp syl erthi simprlr
-      cnpi simprrr 3eqtr4d exlimdvv alrimivv opeq12 eceq1d eqeq2d anbi1d ax-ia1
-      expr ex oveq1d ax-ia2 oveq12d opeq12d anbi12d anbi2d oveq2d anbi2i imbi1i
-      impd cbvex4v 2albii sylibr eqeq1 4exbidv mo4 ) FUCUTUDZKUEZLGWILMZFBNZCNZ
-      OZKPZQZGDNZENZOZKPZQZMZANZWKWQRSZWLWPRSZUFSZWLWQRSZOZKPZQZMZETDTZCTBTZXAH
-      NZXHQZMZETDTCTBTZMZXBXMQZUGZHUHAUHZXLAUIWJXLFINZJNZOZKPZQZGUANZUBNZOZKPZQ
-      ZMZXMYAYGRSZYBYFRSZUFSZYBYGRSZOZKPZQZMZUBTUATZJTITZMZXRUGZHUHAUHXTWJUUCAH
-      WJXLUUAXRWJXKUUAXRUGZBCWJXJUUDDEWJXJUUDWJXJMZYTXRIJUUEYSXRUAUBWJXJYSXRWJX
-      JYSMMZXHYQXBXMUUFXGYPKWHWHKUJUUFUKULUUFWKUCLWLUTLMYAUCLYBUTLMMWPUCLWQUTLM
-      YFUCLYGUTLMMMZWKYBRSWLYARSQWPYGRSWQYFRSQMZMXGYPKUMZABCDEFGXGYPJUAUBIHUNUU
-      GUUHUUIWKWLYAYBYFYGWPWQUOUPUQURWJXAXIYSUSWJXJYKYRVAVBVJVCVCVKVCVCWAVDXSUU
-      CAHXQUUBXRXPUUAXLXOYEWTMZXMYAWQRSZYBWPRSZUFSZYBWQRSZOZKPZQZMYSBCDEIJUAUBW
-      KYAQZWLYBQZMZXAUUJXNUUQUUTWOYEWTUUTWNYDFUUTWMYCKWKWLYAYBVEVFVGVHUUTXHUUPX
-      MUUTXGUUOKUUTXEUUMXFUUNUUTXCUUKXDUULUFUUTWKYAWQRUURUUSVIVLUUTWLYBWPRUURUU
-      SVMZVLVNUUTWLYBWQRUVAVLVOVFVGVPWPYFQZWQYGQZMZUUJYKUUQYRUVDWTYJYEUVDWSYIGU
-      VDWRYHKWPWQYFYGVEVFVGVQUVDUUPYQXMUVDUUOYPKUVDUUMYNUUNYOUVDUUKYLUULYMUFUVD
-      WQYGYARUVBUVCVMZVRUVDWPYFYBRUVBUVCVIVRVNUVDWQYGYBRUVEVRVOVFVGVPWBVSVTWCWD
-      XLXPAHXRXJXOBCDEXRXIXNXAXBXMXHWEVQWFWGWD $.
+      cnpi simprrr 3eqtr4d expr exlimdvv ex alrimivv opeq12 eceq1d eqeq2d simpl
+      anbi1d oveq1d oveq12d opeq12d anbi12d anbi2d oveq2d cbvex4v anbi2i imbi1i
+      impd simpr 2albii sylibr eqeq1 4exbidv mo4 ) FUCUTUDZKUEZLGWILMZFBNZCNZOZ
+      KPZQZGDNZENZOZKPZQZMZANZWKWQRSZWLWPRSZUFSZWLWQRSZOZKPZQZMZETDTZCTBTZXAHNZ
+      XHQZMZETDTCTBTZMZXBXMQZUGZHUHAUHZXLAUIWJXLFINZJNZOZKPZQZGUANZUBNZOZKPZQZM
+      ZXMYAYGRSZYBYFRSZUFSZYBYGRSZOZKPZQZMZUBTUATZJTITZMZXRUGZHUHAUHXTWJUUCAHWJ
+      XLUUAXRWJXKUUAXRUGZBCWJXJUUDDEWJXJUUDWJXJMZYTXRIJUUEYSXRUAUBWJXJYSXRWJXJY
+      SMMZXHYQXBXMUUFXGYPKWHWHKUJUUFUKULUUFWKUCLWLUTLMYAUCLYBUTLMMWPUCLWQUTLMYF
+      UCLYGUTLMMMZWKYBRSWLYARSQWPYGRSWQYFRSQMZMXGYPKUMZABCDEFGXGYPJUAUBIHUNUUGU
+      UHUUIWKWLYAYBYFYGWPWQUOUPUQURWJXAXIYSUSWJXJYKYRVAVBVCVDVDVEVDVDWAVFXSUUCA
+      HXQUUBXRXPUUAXLXOYEWTMZXMYAWQRSZYBWPRSZUFSZYBWQRSZOZKPZQZMYSBCDEIJUAUBWKY
+      AQZWLYBQZMZXAUUJXNUUQUUTWOYEWTUUTWNYDFUUTWMYCKWKWLYAYBVGVHVIVKUUTXHUUPXMU
+      UTXGUUOKUUTXEUUMXFUUNUUTXCUUKXDUULUFUUTWKYAWQRUURUUSVJVLUUTWLYBWPRUURUUSW
+      BZVLVMUUTWLYBWQRUVAVLVNVHVIVOWPYFQZWQYGQZMZUUJYKUUQYRUVDWTYJYEUVDWSYIGUVD
+      WRYHKWPWQYFYGVGVHVIVPUVDUUPYQXMUVDUUOYPKUVDUUMYNUUNYOUVDUUKYLUULYMUFUVDWQ
+      YGYARUVBUVCWBZVQUVDWPYFYBRUVBUVCVJVQVMUVDWQYGYBRUVEVQVNVHVIVOVRVSVTWCWDXL
+      XPAHXRXJXOBCDEXRXIXNXAXBXMXHWEVPWFWGWD $.
 
     $( There is at most one result from multiplying non-negative fractions.
        (Contributed by Jim Kingdon, 20-Nov-2019.) $)
@@ -60060,21 +60090,21 @@ $)
         /\ z = [ <. ( w .o u ) , ( v .o t ) >. ] ~Q0 ) ) $=
       ( vq vs vf ceq0 wcel wa cv cop cec wceq comu co wex vg vh com cnpi cxp wi
       cqs wal wmo wer a1i wbr nnnq0lem1 mulcmpblnq0 imp simprlr simprrr 3eqtr4d
-      enq0er syl erthi expr exlimdvv ex impd opeq12 eceq1d eqeq2d anbi1d ax-ia1
-      alrimivv oveq1d ax-ia2 opeq12d anbi12d anbi2d oveq2d anbi2i imbi1i 2albii
-      cbvex4v sylibr eqeq1 4exbidv mo4 ) FUCUDUEZKUGZLGWGLMZFBNZCNZOZKPZQZGDNZE
-      NZOZKPZQZMZANZWIWNRSZWJWORSZOZKPZQZMZETDTZCTBTZWSHNZXDQZMZETDTCTBTZMZWTXI
-      QZUFZHUHAUHZXHAUIWHXHFINZJNZOZKPZQZGUANZUBNZOZKPZQZMZXIXQYBRSZXRYCRSZOZKP
-      ZQZMZUBTUATZJTITZMZXNUFZHUHAUHXPWHYQAHWHXHYOXNWHXGYOXNUFZBCWHXFYRDEWHXFYR
-      WHXFMZYNXNIJYSYMXNUAUBWHXFYMXNWHXFYMMMZXDYKWTXIYTXCYJKWFWFKUJYTUSUKYTWIUC
-      LWJUDLMXQUCLXRUDLMMWNUCLWOUDLMYBUCLYCUDLMMMZWIXRRSWJXQRSQWNYCRSWOYBRSQMZM
-      XCYJKULZABCDEFGXCYJJUAUBIHUMUUAUUBUUCWIWJXQXRYBYCWNWOUNUOUTVAWHWSXEYMUPWH
-      XFYGYLUQURVBVCVCVDVCVCVEVKXOYQAHXMYPXNXLYOXHXKYAWRMZXIXQWNRSZXRWORSZOZKPZ
-      QZMYMBCDEIJUAUBWIXQQZWJXRQZMZWSUUDXJUUIUULWMYAWRUULWLXTFUULWKXSKWIWJXQXRV
-      FVGVHVIUULXDUUHXIUULXCUUGKUULXAUUEXBUUFUULWIXQWNRUUJUUKVJVLUULWJXRWORUUJU
-      UKVMVLVNVGVHVOWNYBQZWOYCQZMZUUDYGUUIYLUUOWRYFYAUUOWQYEGUUOWPYDKWNWOYBYCVF
-      VGVHVPUUOUUHYKXIUUOUUGYJKUUOUUEYHUUFYIUUOWNYBXQRUUMUUNVJVQUUOWOYCXRRUUMUU
-      NVMVQVNVGVHVOWAVRVSVTWBXHXLAHXNXFXKBCDEXNXEXJWSWTXIXDWCVPWDWEWB $.
+      enq0er syl erthi expr exlimdvv alrimivv opeq12 eceq1d eqeq2d anbi1d simpl
+      ex impd oveq1d opeq12d anbi12d anbi2d oveq2d cbvex4v anbi2i imbi1i 2albii
+      simpr sylibr eqeq1 4exbidv mo4 ) FUCUDUEZKUGZLGWGLMZFBNZCNZOZKPZQZGDNZENZ
+      OZKPZQZMZANZWIWNRSZWJWORSZOZKPZQZMZETDTZCTBTZWSHNZXDQZMZETDTCTBTZMZWTXIQZ
+      UFZHUHAUHZXHAUIWHXHFINZJNZOZKPZQZGUANZUBNZOZKPZQZMZXIXQYBRSZXRYCRSZOZKPZQ
+      ZMZUBTUATZJTITZMZXNUFZHUHAUHXPWHYQAHWHXHYOXNWHXGYOXNUFZBCWHXFYRDEWHXFYRWH
+      XFMZYNXNIJYSYMXNUAUBWHXFYMXNWHXFYMMMZXDYKWTXIYTXCYJKWFWFKUJYTUSUKYTWIUCLW
+      JUDLMXQUCLXRUDLMMWNUCLWOUDLMYBUCLYCUDLMMMZWIXRRSWJXQRSQWNYCRSWOYBRSQMZMXC
+      YJKULZABCDEFGXCYJJUAUBIHUMUUAUUBUUCWIWJXQXRYBYCWNWOUNUOUTVAWHWSXEYMUPWHXF
+      YGYLUQURVBVCVCVJVCVCVKVDXOYQAHXMYPXNXLYOXHXKYAWRMZXIXQWNRSZXRWORSZOZKPZQZ
+      MYMBCDEIJUAUBWIXQQZWJXRQZMZWSUUDXJUUIUULWMYAWRUULWLXTFUULWKXSKWIWJXQXRVEV
+      FVGVHUULXDUUHXIUULXCUUGKUULXAUUEXBUUFUULWIXQWNRUUJUUKVIVLUULWJXRWORUUJUUK
+      WAVLVMVFVGVNWNYBQZWOYCQZMZUUDYGUUIYLUUOWRYFYAUUOWQYEGUUOWPYDKWNWOYBYCVEVF
+      VGVOUUOUUHYKXIUUOUUGYJKUUOUUEYHUUFYIUUOWNYBXQRUUMUUNVIVPUUOWOYCXRRUUMUUNW
+      AVPVMVFVGVNVQVRVSVTWBXHXLAHXNXFXKBCDEXNXEXJWSWTXIXDWCVOWDWEWB $.
   $}
 
   ${
@@ -60092,22 +60122,22 @@ $)
                               ( B .o D ) >. ] ~Q0 ) $=
       ( vw vv vu vt com wcel cnpi wa cop ceq0 cec cv wceq comu co wex vx vy cxp
       vz cqs coa cplq0 opelxpi enq0ex ecelqsi anim12i eqid pm3.2i opeq12 eceq1d
-      eqeq2d anbi1d ax-ia1 oveq1d ax-ia2 oveq12d opeq12d anbi12d spc2egv anbi2d
-      syl oveq2d 2eximdv sylan9 mp2ani cvv wi ecexg ax-mp w3a simp1 simp2 simp3
-      eqeq1d 4exbidv addnq0mo dfplq0qs ovig mp3an3 sylc ) AIJBKJLZCIJDKJLZLZABM
-      ZNOZIKUCZNUEZJZCDMZNOZWLJZLWJEPZFPZMZNOZQZWOGPZHPZMZNOZQZLZADRSZBCRSZUFSZ
-      BDRSZMZNOZWQXCRSZWRXBRSZUFSZWRXCRSZMZNOZQZLZHTGTZFTETZWJWOUGSXMQZWFWMWGWP
-      WFWIWKJWMABIKUHWKWINUIUJVFWGWNWKJWPCDIKUHWKWNNUIUJVFUKWHWJWJQZWOWOQZLZXMX
-      MQZYCYEYFWJULWOULUMXMULWFYGYHLZXAYFLZXMWQDRSZWRCRSZUFSZWRDRSZMZNOZQZLZFTE
-      TWGYCYRYIEFABIKWQAQZWRBQZLZYJYGYQYHUUAXAYEYFUUAWTWJWJUUAWSWINWQWRABUNUOUP
-      UQUUAYPXMXMUUAYOXLNUUAYMXJYNXKUUAYKXHYLXIUFUUAWQADRYSYTURUSUUAWRBCRYSYTUT
-      ZUSVAUUAWRBDRUUBUSVBUOUPVCVDWGYRYBEFYAYRGHCDIKXBCQZXCDQZLZXGYJXTYQUUEXFYF
-      XAUUEXEWOWOUUEXDWNNXBXCCDUNUOUPVEUUEXSYPXMUUEXRYONUUEXPYMXQYNUUEXNYKXOYLU
-      FUUEXCDWQRUUCUUDUTZVGUUEXBCWRRUUCUUDURVGVAUUEXCDWRRUUFVGVBUOUPVCVDVHVIVJW
-      MWPXMVKJZYCYDVLNVKJUUGUIXLVKNVMVNUAPZWTQZUBPZXEQZLZUDPZXSQZLZHTGTFTETYCUA
-      UBUDWJWOXMVKWLWLUGUUHWJQZUUJWOQZUUMXMQZVOZUUOYAEFGHUUSUULXGUUNXTUUSUUIXAU
-      UKXFUUSUUHWJWTUUPUUQUURVPVSUUSUUJWOXEUUPUUQUURVQVSVCUUSUUMXMXSUUPUUQUURVR
-      VSVCVTUDEFGHUUHUUJWAUAUBUDEFGHWBWCWDWE $.
+      eqeq2d anbi1d simpl oveq1d oveq12d opeq12d anbi12d spc2egv anbi2d 2eximdv
+      syl simpr oveq2d sylan9 mp2ani cvv wi ecexg ax-mp w3a simp1 simp2 4exbidv
+      eqeq1d simp3 addnq0mo dfplq0qs ovig mp3an3 sylc ) AIJBKJLZCIJDKJLZLZABMZN
+      OZIKUCZNUEZJZCDMZNOZWLJZLWJEPZFPZMZNOZQZWOGPZHPZMZNOZQZLZADRSZBCRSZUFSZBD
+      RSZMZNOZWQXCRSZWRXBRSZUFSZWRXCRSZMZNOZQZLZHTGTZFTETZWJWOUGSXMQZWFWMWGWPWF
+      WIWKJWMABIKUHWKWINUIUJVFWGWNWKJWPCDIKUHWKWNNUIUJVFUKWHWJWJQZWOWOQZLZXMXMQ
+      ZYCYEYFWJULWOULUMXMULWFYGYHLZXAYFLZXMWQDRSZWRCRSZUFSZWRDRSZMZNOZQZLZFTETW
+      GYCYRYIEFABIKWQAQZWRBQZLZYJYGYQYHUUAXAYEYFUUAWTWJWJUUAWSWINWQWRABUNUOUPUQ
+      UUAYPXMXMUUAYOXLNUUAYMXJYNXKUUAYKXHYLXIUFUUAWQADRYSYTURUSUUAWRBCRYSYTVGZU
+      SUTUUAWRBDRUUBUSVAUOUPVBVCWGYRYBEFYAYRGHCDIKXBCQZXCDQZLZXGYJXTYQUUEXFYFXA
+      UUEXEWOWOUUEXDWNNXBXCCDUNUOUPVDUUEXSYPXMUUEXRYONUUEXPYMXQYNUUEXNYKXOYLUFU
+      UEXCDWQRUUCUUDVGZVHUUEXBCWRRUUCUUDURVHUTUUEXCDWRRUUFVHVAUOUPVBVCVEVIVJWMW
+      PXMVKJZYCYDVLNVKJUUGUIXLVKNVMVNUAPZWTQZUBPZXEQZLZUDPZXSQZLZHTGTFTETYCUAUB
+      UDWJWOXMVKWLWLUGUUHWJQZUUJWOQZUUMXMQZVOZUUOYAEFGHUUSUULXGUUNXTUUSUUIXAUUK
+      XFUUSUUHWJWTUUPUUQUURVPVSUUSUUJWOXEUUPUUQUURVQVSVBUUSUUMXMXSUUPUUQUURVTVS
+      VBVRUDEFGHUUHUUJWAUAUBUDEFGHWBWCWDWE $.
 
     $( Multiplication of non-negative fractions in terms of natural numbers.
        (Contributed by Jim Kingdon, 19-Nov-2019.) $)
@@ -60757,15 +60787,15 @@ $)
     $( A Dedekind cut is located.  (Contributed by Jim Kingdon,
        23-Oct-2019.) $)
     prloc $p |- ( ( <. L , U >. e. P. /\ A <Q B ) -> ( A e. L \/ B e. U ) ) $=
-      ( vq vr wcel cltq wbr wa cv wo wi cnq wral wss wrex wb ax-ia2 adantl brel
-      cop cnp w3a elinp simpr3 sylbi adantr ltrelnq simpld breq1d eleq1d orbi1d
-      wn wceq imbi12d ralbidv rspcdv simprd breq2d orbi2d syld mp2d ) DCUBUCGZA
-      BHIZJZEKZFKZHIZVGDGZVHCGZLZMZFNOZENOZVEADGZBCGZLZVDVOVEVDDNPCNPJVJENQVKFN
-      QJJZVJVIVHDGJFNQRENOVKVIVGCGZJENQRFNOJZVJVTJUNENOZVOUDJVOCDFEUEVSWAWBVOUF
-      UGUHVDVESVFVOAVHHIZVPVKLZMZFNOZVEVRMZVFVNWFEANVEANGZVDVEWHBNGZABNNHUIUAZU
-      JTVFVGAUOZJZVMWEFNWLVIWCVLWDWLVGAVHHVFWKSZUKWLVJVPVKWLVGADWMULUMUPUQURVFW
-      EWGFBNVEWIVDVEWHWIWJUSTVFVHBUOZJZWCVEWDVRWOVHBAHVFWNSZUTWOVKVQVPWOVHBCWPU
-      LVAUPURVBVC $.
+      ( vq vr wcel cltq wbr wa cv wo wi cnq wral wss wrex wb simpr adantl elinp
+      cop cnp wn w3a simpr3 sylbi adantr ltrelnq brel simpld wceq breq1d eleq1d
+      orbi1d imbi12d ralbidv rspcdv simprd breq2d orbi2d syld mp2d ) DCUBUCGZAB
+      HIZJZEKZFKZHIZVGDGZVHCGZLZMZFNOZENOZVEADGZBCGZLZVDVOVEVDDNPCNPJVJENQVKFNQ
+      JJZVJVIVHDGJFNQRENOVKVIVGCGZJENQRFNOJZVJVTJUDENOZVOUEJVOCDFEUAVSWAWBVOUFU
+      GUHVDVESVFVOAVHHIZVPVKLZMZFNOZVEVRMZVFVNWFEANVEANGZVDVEWHBNGZABNNHUIUJZUK
+      TVFVGAULZJZVMWEFNWLVIWCVLWDWLVGAVHHVFWKSZUMWLVJVPVKWLVGADWMUNUOUPUQURVFWE
+      WGFBNVEWIVDVEWHWIWJUSTVFVHBULZJZWCVEWDVRWOVHBAHVFWNSZUTWOVKVQVPWOVHBCWPUN
+      VAUPURVBVC $.
   $}
 
   ${
@@ -60795,24 +60825,24 @@ $)
       w3a cec cmq cltq cplq cmi clti 2onn nnacl mpan2 nnaword1 sylan csuc elexi
       wss 1onn sucid df-2o eleqtrri wi nnaordi mpan mpi adantr sseldd ancoms wb
       nnppipi adantl o1p1e2 eqeltrri pinn nnacom sylan2 eqeltrrd ltpiord mpbird
-      mp2an syl mulidpi mulcompig sylancl eqtr3d ax-ia2 ordpipqqs mpanl2 mpanr2
-      breq12d adantlr cxp cqs opelxpi ecelqsi df-nqqs syl6eleqr simplr3 syl3anc
-      enqex ltmnqg mpbid mulcomnqg mulclnq simplr1 simplr2 elprnql ltanqg ) FGH
-      ZEDUAUBHZBEHZCIHZUDZJAUCZGHZJZXOKLMZKUAZNUEZCUFMZXOOLMZFLMZKUAZNUEZCUFMZU
-      GPZBYAUHMBYFUHMUGPZXQCXTUFMZCYEUFMZUGPZYGXQXTYEUGPZYKXJXPYLXNXJXPJZYLXRKU
-      IMZKYCUIMZUJPZYMYPXRYCUJPZYMYQXRYCHZXPXJYRXPXJJYBYCXRXPYBGHZXJYBYCURXPOGH
-      ZYSUKXOOULUMYBFUNUOXPXRYBHZXJXPKOHZUUAKKUPOKKGUSUQUTVAVBYTXPUUBUUAVCUKKOX
-      OVDVEVFVGVHVIYMXRQHZYCQHZYQYRVJXPUUCXJXPKQHZUUCRXOKVKUMZVLZYMFYBLMZYCQXPX
-      JYSUUHYCSXPYBQHZYSXPOQHUUIKKLMZOQVMKGHUUEUUJQHUSRKKVKWAVNXOOVKUMZYBVOWBFY
-      BVPVQXPXJUUIUUHQHUUKFYBVKVQVRZXRYCVSTVTYMYNXRYOYCUJYMUUCYNXRSUUGXRWCWBYMY
-      CKUIMZYOYCYMUUDUUEUUMYOSUULRYCKWDWEYMUUDUUMYCSUULYCWCWBWFWKVTYMXPUUDYLYPV
-      JZXJXPWGUULXPUUCUUDUUNUUFUUCUUDUUEUUNRUUCUUEUUDUUEJUUNRXRKYCKWHWIWJUOTVTW
-      LXQXTIHZYEIHZXMYLYKVJXJXPUUOXNYMXTQQWMZNWNZIYMXSUUQHZXTUURHYMUUCUUEUUSUUG
-      RXRKQQWOWEUUQXSNXAWPWBWQWRWLZXJXPUUPXNYMYEUURIYMYDUUQHZYEUURHYMUUDUUEUVAU
-      ULRYCKQQWOWEUUQYDNXAWPWBWQWRWLZXKXLXMXJXPWSZXTYECXBWTXCXQYIYAYJYFUGXQXMUU
-      OYIYASUVCUUTCXTXDTXQXMUUPYJYFSUVCUVBCYEXDTWKXCXQYAIHZYFIHZBIHZYGYHVJXQUUO
-      XMUVDUUTUVCXTCXETXQUUPXMUVEUVBUVCYECXETXQXKXLUVFXKXLXMXJXPXFXKXLXMXJXPXGB
-      DEXHTYAYFBXIWTXC $.
+      mp2an syl mulidpi mulcompig sylancl eqtr3d breq12d simpr ordpipqqs mpanl2
+      mpanr2 adantlr cxp opelxpi enqex ecelqsi df-nqqs syl6eleqr simplr3 ltmnqg
+      cqs syl3anc mpbid mulcomnqg mulclnq simplr1 simplr2 elprnql ltanqg ) FGHZ
+      EDUAUBHZBEHZCIHZUDZJAUCZGHZJZXOKLMZKUAZNUEZCUFMZXOOLMZFLMZKUAZNUEZCUFMZUG
+      PZBYAUHMBYFUHMUGPZXQCXTUFMZCYEUFMZUGPZYGXQXTYEUGPZYKXJXPYLXNXJXPJZYLXRKUI
+      MZKYCUIMZUJPZYMYPXRYCUJPZYMYQXRYCHZXPXJYRXPXJJYBYCXRXPYBGHZXJYBYCURXPOGHZ
+      YSUKXOOULUMYBFUNUOXPXRYBHZXJXPKOHZUUAKKUPOKKGUSUQUTVAVBYTXPUUBUUAVCUKKOXO
+      VDVEVFVGVHVIYMXRQHZYCQHZYQYRVJXPUUCXJXPKQHZUUCRXOKVKUMZVLZYMFYBLMZYCQXPXJ
+      YSUUHYCSXPYBQHZYSXPOQHUUIKKLMZOQVMKGHUUEUUJQHUSRKKVKWAVNXOOVKUMZYBVOWBFYB
+      VPVQXPXJUUIUUHQHUUKFYBVKVQVRZXRYCVSTVTYMYNXRYOYCUJYMUUCYNXRSUUGXRWCWBYMYC
+      KUIMZYOYCYMUUDUUEUUMYOSUULRYCKWDWEYMUUDUUMYCSUULYCWCWBWFWGVTYMXPUUDYLYPVJ
+      ZXJXPWHUULXPUUCUUDUUNUUFUUCUUDUUEUUNRUUCUUEUUDUUEJUUNRXRKYCKWIWJWKUOTVTWL
+      XQXTIHZYEIHZXMYLYKVJXJXPUUOXNYMXTQQWMZNXAZIYMXSUUQHZXTUURHYMUUCUUEUUSUUGR
+      XRKQQWNWEUUQXSNWOWPWBWQWRWLZXJXPUUPXNYMYEUURIYMYDUUQHZYEUURHYMUUDUUEUVAUU
+      LRYCKQQWNWEUUQYDNWOWPWBWQWRWLZXKXLXMXJXPWSZXTYECWTXBXCXQYIYAYJYFUGXQXMUUO
+      YIYASUVCUUTCXTXDTXQXMUUPYJYFSUVCUVBCYEXDTWGXCXQYAIHZYFIHZBIHZYGYHVJXQUUOX
+      MUVDUUTUVCXTCXETXQUUPXMUVEUVBUVCYECXETXQXKXLUVFXKXLXMXJXPXFXKXLXMXJXPXGBD
+      EXHTYAYFBXIXBXC $.
   $}
 
   ${
@@ -60832,32 +60862,32 @@ $)
         /\ ( A +Q
           ( [ <. ( ( y +o 2o ) +o X ) , 1o >. ] ~Q .Q P ) ) e. U ) ) ) ) $=
       ( com wcel cop wa c1o coa co ceq cec cmq cplq c2o wceq oveq1d vf vg vh vz
-      cnp cnq cv ceq0 cmq0 cplq0 csuc wrex wi nnaass adantl ax-ia2 1onn sylancl
-      w3a 2onn a1i simpll caovassd nnacom caov4d caovcomd con0 nnon oa1suc 3syl
-      nnacl oveq2d 3eqtr2rd opeq1d eceq1d eleq1d biimpd simplr1 simplr2 elprnql
-      eqtrd syl2anc cxp 1pi nnppipi opelxpi mpan2 cqs ecelqsi df-nqqs syl6eleqr
-      cnpi enqex simplr3 mulclnq nqnq0a nqnq0m eqtr4d anbi1d opeq1 oveq1 rspcev
-      nqnq0pi anbi12d ex syl sylbid cbvrexv syl6ib sylan2d expdimp adantld ) FG
-      HZEDIUEHZBEHZCUFHZUSZJZAUGZGHZJZBXSKLMZKIZNOZCPMZQMZEHZBXSKIZUHOZCUIMZUJM
-      ZEHZBXSRLMZFUKZLMZKIZNOZCPMZQMZDHZJYLBYMFLMZKIZNOZCPMZQMZDHZJZAGULZUMYAYG
-      JYTUUHYLYAYGYTUUHYAYTBYBRLMZFLMZKIZNOZCPMZQMZDHZYGUUHYAYTUUOYAYSUUNDYAYRU
-      UMBQYAYQUULCPYAYPUUKNYAYOUUJKYAUUJYBRFLMLMYMKFLMZLMYOYAUAUBUCYBRFGLUAUGZG
-      HZUBUGZGHZUCUGZGHUSUUQUUSLMZUVALMUUQUUSUVALMLMSYAUUQUUSUVAUNUOZYAXTKGHZYB
-      GHZXRXTUPZUQXSKVKURZRGHYAUTVAZXMXQXTVBZVCYAUAUBUCXSRKFGLUVFUVHUVDYAUQVAZU
-      URUUTJZUVBUUSUUQLMSYAUUQUUSVDUOZUVCUVIUVKUVBGHYAUUQUUSVKUOVEYAUUPYNYMLYAU
-      UPFKLMZYNYAUAUBKFGLUVLUVJUVIVFYAXMFVGHUVMYNSUVIFVHFVIVJWAVLVMVNVOTVLVPVQY
-      AYGUUOJZBUDUGZKIZUHOZCUIMZUJMZEHZBUVORLMZFLMZKIZNOZCPMZQMZDHZJZUDGULZUUHY
-      AUVNBYCUHOZCUIMZUJMZEHZUUOJZUWIYAYGUWMUUOYAYFUWLEYAYFBYEUJMZUWLYABUFHZYEU
-      FHZYFUWOSYAXNXOUWPXNXOXPXMXTVRXNXOXPXMXTVSBDEVTWBYAYDUFHZXPUWQYAYBWLHZYCW
-      LWLWCZHZUWRYAXTKWLHZUWSUVFWDXSKWEURZUWSUXBUXAWDYBKWLWLWFWGUXAYDUWTNWHUFUW
-      TYCNWMWIWJWKVJZXNXOXPXMXTWNZYDCWOWBBYEWPWBYAYEUWKBUJYAYEYDCUIMZUWKYAUWRXP
-      YEUXFSUXDUXEYDCWQWBYAUWJYDCUIYAUWSUXBUWJYDSUXCWDYBKXCURTWRVLWAVPWSYAUVEUW
-      NUWIUMUVGUVEUWNUWIUWHUWNUDYBGUVOYBSZUVTUWMUWGUUOUXGUVSUWLEUXGUVRUWKBUJUXG
-      UVQUWJCUIUXGUVPYCUHUVOYBKWTVOTVLVPUXGUWFUUNDUXGUWEUUMBQUXGUWDUULCPUXGUWCU
-      UKNUXGUWBUUJKUXGUWAUUIFLUVOYBRLXATVNVOTVLVPXDXBXEXFXGUWHUUGUDAGUVOXSSZUVT
-      YLUWGUUFUXHUVSYKEUXHUVRYJBUJUXHUVQYICUIUXHUVPYHUHUVOXSKWTVOTVLVPUXHUWFUUE
-      DUXHUWEUUDBQUXHUWDUUCCPUXHUWCUUBNUXHUWBUUAKUXHUWAYMFLUVOXSRLXATVNVOTVLVPX
-      DXHXIXJXKXLXE $.
+      cnp cnq w3a cv ceq0 cmq0 cplq0 csuc wrex nnaass adantl simpr 1onn sylancl
+      wi nnacl 2onn a1i simpll caovassd nnacom caov4d caovcomd con0 nnon oa1suc
+      eqtrd oveq2d 3eqtr2rd opeq1d eceq1d eleq1d biimpd simplr1 simplr2 elprnql
+      3syl syl2anc cnpi cxp 1pi nnppipi opelxpi mpan2 cqs enqex ecelqsi df-nqqs
+      syl6eleqr simplr3 mulclnq nqnq0a nqnq0m nqnq0pi eqtr4d anbi1d opeq1 oveq1
+      anbi12d rspcev ex syl sylbid cbvrexv syl6ib sylan2d expdimp adantld ) FGH
+      ZEDIUEHZBEHZCUFHZUGZJZAUHZGHZJZBXSKLMZKIZNOZCPMZQMZEHZBXSKIZUIOZCUJMZUKMZ
+      EHZBXSRLMZFULZLMZKIZNOZCPMZQMZDHZJYLBYMFLMZKIZNOZCPMZQMZDHZJZAGUMZUSYAYGJ
+      YTUUHYLYAYGYTUUHYAYTBYBRLMZFLMZKIZNOZCPMZQMZDHZYGUUHYAYTUUOYAYSUUNDYAYRUU
+      MBQYAYQUULCPYAYPUUKNYAYOUUJKYAUUJYBRFLMLMYMKFLMZLMYOYAUAUBUCYBRFGLUAUHZGH
+      ZUBUHZGHZUCUHZGHUGUUQUUSLMZUVALMUUQUUSUVALMLMSYAUUQUUSUVAUNUOZYAXTKGHZYBG
+      HZXRXTUPZUQXSKUTURZRGHYAVAVBZXMXQXTVCZVDYAUAUBUCXSRKFGLUVFUVHUVDYAUQVBZUU
+      RUUTJZUVBUUSUUQLMSYAUUQUUSVEUOZUVCUVIUVKUVBGHYAUUQUUSUTUOVFYAUUPYNYMLYAUU
+      PFKLMZYNYAUAUBKFGLUVLUVJUVIVGYAXMFVHHUVMYNSUVIFVIFVJWAVKVLVMVNVOTVLVPVQYA
+      YGUUOJZBUDUHZKIZUIOZCUJMZUKMZEHZBUVORLMZFLMZKIZNOZCPMZQMZDHZJZUDGUMZUUHYA
+      UVNBYCUIOZCUJMZUKMZEHZUUOJZUWIYAYGUWMUUOYAYFUWLEYAYFBYEUKMZUWLYABUFHZYEUF
+      HZYFUWOSYAXNXOUWPXNXOXPXMXTVRXNXOXPXMXTVSBDEVTWBYAYDUFHZXPUWQYAYBWCHZYCWC
+      WCWDZHZUWRYAXTKWCHZUWSUVFWEXSKWFURZUWSUXBUXAWEYBKWCWCWGWHUXAYDUWTNWIUFUWT
+      YCNWJWKWLWMWAZXNXOXPXMXTWNZYDCWOWBBYEWPWBYAYEUWKBUKYAYEYDCUJMZUWKYAUWRXPY
+      EUXFSUXDUXEYDCWQWBYAUWJYDCUJYAUWSUXBUWJYDSUXCWEYBKWRURTWSVLVKVPWTYAUVEUWN
+      UWIUSUVGUVEUWNUWIUWHUWNUDYBGUVOYBSZUVTUWMUWGUUOUXGUVSUWLEUXGUVRUWKBUKUXGU
+      VQUWJCUJUXGUVPYCUIUVOYBKXAVOTVLVPUXGUWFUUNDUXGUWEUUMBQUXGUWDUULCPUXGUWCUU
+      KNUXGUWBUUJKUXGUWAUUIFLUVOYBRLXBTVNVOTVLVPXCXDXEXFXGUWHUUGUDAGUVOXSSZUVTY
+      LUWGUUFUXHUVSYKEUXHUVRYJBUKUXHUVQYICUJUXHUVPYHUIUVOXSKXAVOTVLVPUXHUWFUUED
+      UXHUWEUUDBQUXHUWDUUCCPUXHUWCUUBNUXHUWBUUAKUXHUWAYMFLUVOXSRLXBTVNVOTVLVPXC
+      XHXIXJXKXLXE $.
   $}
 
   ${
@@ -60961,10 +60991,10 @@ $)
     prarloclemn $p |- ( ( N e. N. /\ 1o <N N ) ->
       E. x e. _om ( 2o +o x ) = N ) $=
       ( cnpi wcel c1o clti wbr wa csuc wss c2o cv coa co wceq com wrex mpan syl
-      wb ax-ia1 1pi ltpiord biimpa word wi piord ordsucss sylc sseq1i pinn 2onn
-      df-2o nnawordex adantr syl5bbr mpbid ) BCDZEBFGZHZEIZBJZKALMNBOAPQZUTUREB
-      DZVBURUSUAURUSVDECDURUSVDTUBEBUCRUDURBUEVDVBUFBUGEBUHSUIVBKBJZUTVCKVABUMU
-      JURVEVCTZUSURBPDZVFBUKKPDVGVFULAKBUNRSUOUPUQ $.
+      wb simpl 1pi ltpiord biimpa word wi piord ordsucss sylc df-2o sseq1i pinn
+      2onn nnawordex adantr syl5bbr mpbid ) BCDZEBFGZHZEIZBJZKALMNBOAPQZUTUREBD
+      ZVBURUSUAURUSVDECDURUSVDTUBEBUCRUDURBUEVDVBUFBUGEBUHSUIVBKBJZUTVCKVABUJUK
+      URVEVCTZUSURBPDZVFBULKPDVGVFUMAKBUNRSUOUPUQ $.
   $}
 
   ${
@@ -61068,29 +61098,29 @@ $)
       simp3rl simp3rr simp3ll simpl1r simprl simprrl simprrr wi simpl2r prcunqu
       3jca syl2anc mpd prarloclem syl231anc wceq eleq1 anbi1d ceqsexgv biimprcd
       exbidv sylc exbii simprl2 simprl3 simprl1 prarloclemcalc syl12anc ancom1s
-      jca ax-ia1 anasss syl exlimiv exlimivv 3syl excom anbi2i bitr4i ) CBUCUDK
-      ZALKZMZDNZCKZENZBKZYBXTAUAOUBUEZMZMZEPZDPZYDEBQZDCQZXSYFDPEPZYHXSFNZLKZYL
-      CKZMZGNZLKZYPBKZMZXSHNZLKZYTYTUAOAUBUEZMZMZUFZHPGPZFPZUUEINZUGKZUHUUHUIUE
-      ZYPYLUUHUHUCUJUKYTUQOUAOZUBUEZMZMZMZIPZHPZGPZFPYKXSYOFPZYSGPZUUDHPZUUGXQU
-      USXRXQYNFLQUUSFBCULYNFLRSUMXQUUTXRXQYRGLQUUTGBCURYRGLRSUMXSXSUUCHPZMUVAXS
-      UVBXSUUBHLQZUVBXRUVCXQHAUNUOUUBHLRSUPXSUUCHUSUTYOYSUUDFGHVAVBUUFUURFUUEUU
-      PGHUUEUUEUUNIPZMUUPUUEUVDYOYSUUCUVDXSYOYSUUAUVDUUBYOYQUUAUVDYRYMYQUUAUVDY
-      NYQYMUUAUVDYQYMUUAUFUUMIUGQUVDIYPYLYTVCUUMIUGRSVFVDVEVGVHUPUUEUUNIUSUTVIV
-      JUUQYKFGUUOYKHIUUOYMUUAUUBUFZJNZVKKZYLUVFUHUCVLUKYTVMOVNOZCKZYLUVFVOVPOUH
-      UCUJUKYTUQOUAOZBKZMZMZMZJPZYKUUOUVEUVMJPZMUVOUUOUVEUVPUUOYMUUAUUBYMYNYSUU
-      DUUNVQUUEUUAUUNUUAUUBXSYOYSVRUMZUUEUUBUUNUUAUUBXSYOYSVSUMWHUUOUVLJVKQZUVP
-      UUOXQYNUUIUUAUUJUUKBKZUVRUUEXQUUNXQXRUUCYOYSVTUMZYMYNYSUUDUUNWAUUEUUIUUMW
-      BUVQUUEUUIUUJUULWCUUOUULUVSUUEUUIUUJUULWDUUOXQYRUULUVSWEUVTYQYRYOUUDUUNWF
-      UUKYPBCWGWIWJYLYTBJCUUHWKWLUVLJVKRSXGUVEUVMJUSUTUVNYKJUVNYBUVJWMZXTUVHWMZ
-      UVEUVGYAYCMZMZMZMZMZDPZEPZYKUVNUWAUWFDPZMZEPZUWIUVNUWBUVEUVGYAUVKMZMZMZMZ
-      DPZUVKUWLUVNUVIUWQUVEUVGUVIUVKWCUVIUWQUVNUWOUVNDUVHCUWBUWNUVMUVEUWBUWMUVL
-      UVGUWBYAUVIUVKXTUVHCWNWOTTWPWQWJUVEUVGUVIUVKWDUVKUWLUWQUWJUWQEUVJBUWAUWFU
-      WPDUWAUWEUWOUWBUWAUWDUWNUVEUWAUWCUWMUVGUWAYCUVKYAYBUVJBWNTTTTWRWPWQWSUWHU
-      WKEUWAUWFDUSWTUTUWGYFEDUWAUWBUWEYFUWBUWAUWEYFUWBUWAMZUWEMZYAYEUWEYAUWRUVE
-      UVGYAYCWCUOUWSYCYDUWEYCUWRUVEUVGYAYCWDUOUWSUWRUUCYMUVGMYDUWRUWEXHUWSUUAUU
-      BYMUUAUUBUWDUWRXAYMUUAUUBUWDUWRXBXGUWSYMUVGYMUUAUUBUWDUWRXCUWRUVEUVGUWCWC
-      XGXTYBAYTUVFYLXDXEXGXGXFXIVIXJXKXJXLXLXMYFEDXNSYHYAYIMZDPYJYGUWTDYGYAYEEP
-      ZMUWTYAYEEUSYIUXAYAYDEBRXOXPWTYIDCRXPS $.
+      jca simpl anasss syl exlimiv exlimivv 3syl excom anbi2i bitr4i ) CBUCUDKZ
+      ALKZMZDNZCKZENZBKZYBXTAUAOUBUEZMZMZEPZDPZYDEBQZDCQZXSYFDPEPZYHXSFNZLKZYLC
+      KZMZGNZLKZYPBKZMZXSHNZLKZYTYTUAOAUBUEZMZMZUFZHPGPZFPZUUEINZUGKZUHUUHUIUEZ
+      YPYLUUHUHUCUJUKYTUQOUAOZUBUEZMZMZMZIPZHPZGPZFPYKXSYOFPZYSGPZUUDHPZUUGXQUU
+      SXRXQYNFLQUUSFBCULYNFLRSUMXQUUTXRXQYRGLQUUTGBCURYRGLRSUMXSXSUUCHPZMUVAXSU
+      VBXSUUBHLQZUVBXRUVCXQHAUNUOUUBHLRSUPXSUUCHUSUTYOYSUUDFGHVAVBUUFUURFUUEUUP
+      GHUUEUUEUUNIPZMUUPUUEUVDYOYSUUCUVDXSYOYSUUAUVDUUBYOYQUUAUVDYRYMYQUUAUVDYN
+      YQYMUUAUVDYQYMUUAUFUUMIUGQUVDIYPYLYTVCUUMIUGRSVFVDVEVGVHUPUUEUUNIUSUTVIVJ
+      UUQYKFGUUOYKHIUUOYMUUAUUBUFZJNZVKKZYLUVFUHUCVLUKYTVMOVNOZCKZYLUVFVOVPOUHU
+      CUJUKYTUQOUAOZBKZMZMZMZJPZYKUUOUVEUVMJPZMUVOUUOUVEUVPUUOYMUUAUUBYMYNYSUUD
+      UUNVQUUEUUAUUNUUAUUBXSYOYSVRUMZUUEUUBUUNUUAUUBXSYOYSVSUMWHUUOUVLJVKQZUVPU
+      UOXQYNUUIUUAUUJUUKBKZUVRUUEXQUUNXQXRUUCYOYSVTUMZYMYNYSUUDUUNWAUUEUUIUUMWB
+      UVQUUEUUIUUJUULWCUUOUULUVSUUEUUIUUJUULWDUUOXQYRUULUVSWEUVTYQYRYOUUDUUNWFU
+      UKYPBCWGWIWJYLYTBJCUUHWKWLUVLJVKRSXGUVEUVMJUSUTUVNYKJUVNYBUVJWMZXTUVHWMZU
+      VEUVGYAYCMZMZMZMZMZDPZEPZYKUVNUWAUWFDPZMZEPZUWIUVNUWBUVEUVGYAUVKMZMZMZMZD
+      PZUVKUWLUVNUVIUWQUVEUVGUVIUVKWCUVIUWQUVNUWOUVNDUVHCUWBUWNUVMUVEUWBUWMUVLU
+      VGUWBYAUVIUVKXTUVHCWNWOTTWPWQWJUVEUVGUVIUVKWDUVKUWLUWQUWJUWQEUVJBUWAUWFUW
+      PDUWAUWEUWOUWBUWAUWDUWNUVEUWAUWCUWMUVGUWAYCUVKYAYBUVJBWNTTTTWRWPWQWSUWHUW
+      KEUWAUWFDUSWTUTUWGYFEDUWAUWBUWEYFUWBUWAUWEYFUWBUWAMZUWEMZYAYEUWEYAUWRUVEU
+      VGYAYCWCUOUWSYCYDUWEYCUWRUVEUVGYAYCWDUOUWSUWRUUCYMUVGMYDUWRUWEXHUWSUUAUUB
+      YMUUAUUBUWDUWRXAYMUUAUUBUWDUWRXBXGUWSYMUVGYMUUAUUBUWDUWRXCUWRUVEUVGUWCWCX
+      GXTYBAYTUVFYLXDXEXGXGXFXIVIXJXKXJXLXLXMYFEDXNSYHYAYIMZDPYJYGUWTDYGYAYEEPZ
+      MUWTYAYEEUSYIUXAYAYDEBRXOXPWTYIDCRXPS $.
   $}
 
   ${
@@ -61123,7 +61153,7 @@ $)
     ltdfpr $p |- ( ( A e. P. /\ B e. P. ) -> ( A <P B <->
         E. q e. Q. ( q e. ( 2nd ` A ) /\ q e. ( 1st ` B ) ) ) ) $=
       ( vx vy cltp wbr cop cv cnp wcel wa c2nd cfv c1st wrex wceq fveq2d eleq2d
-      cnq copab df-br df-iltp eleq2i bitri ax-ia1 ax-ia2 anbi12d rexbidv syl5bb
+      cnq copab df-br df-iltp eleq2i bitri simpl simpr anbi12d rexbidv syl5bb
       opelopab2a ) ABFGZABHZDIZJKEIZJKLCIZUNMNZKZUPUOONZKZLZCTPZLDEUAZKZAJKBJKL
       UPAMNZKZUPBONZKZLZCTPZULUMFKVDABFUBFVCUMDECUCUDUEVBVJDEABJJUNAQZUOBQZLZVA
       VICTVMURVFUTVHVMUQVEUPVMUNAMVKVLUFRSVMUSVGUPVMUOBOVKVLUGRSUHUIUKUJ $.
@@ -61219,13 +61249,13 @@ $)
     $( Operating on both sides of two inequalities, when the operation is
        consistent with ` <Q ` .  (Contributed by Jim Kingdon, 6-Oct-2019.) $)
     genplt2i $p |- ( ( A <Q B /\ C <Q D ) -> ( A G C ) <Q ( B G D ) ) $=
-      ( cltq wbr wa co cnq cv wcel adantl ltrelnq syl2an ax-ia1 w3a brel simpll
-      wb simplr simprl wceq caovord2d mpbid ax-ia2 simprr caovordd ltsonq sotri
-      syl2anc ) DEKLZFGKLZMZDFHNZEFHNZKLZVAEGHNZKLZUTVCKLUSUQVBUQURUAUSABCDEFKO
-      HAPZOQZBPZOQZCPZOQUBVEVGKLVIVEHNVIVGHNKLUEUSIRZUQDOQZEOQZMZFOQZGOQZMZVKUR
-      DEOOKSUCZFGOOKSUCZVKVLVPUDTUQVMVPVLURVQVRVKVLVPUFTZUQVMVPVNURVQVRVMVNVOUG
-      TZVFVHMVEVGHNVGVEHNUHUSJRUIUJUSURVDUQURUKUSABCFGEKOHVJVTUQVMVPVOURVQVRVMV
-      NVOULTVSUMUJUTVAVCKOUNSUOUP $.
+      ( cltq wbr wa co cnq cv wcel adantl ltrelnq syl2an simpl wb simpll simplr
+      w3a brel simprl wceq caovord2d mpbid simpr simprr caovordd ltsonq syl2anc
+      sotri ) DEKLZFGKLZMZDFHNZEFHNZKLZVAEGHNZKLZUTVCKLUSUQVBUQURUAUSABCDEFKOHA
+      PZOQZBPZOQZCPZOQUEVEVGKLVIVEHNVIVGHNKLUBUSIRZUQDOQZEOQZMZFOQZGOQZMZVKURDE
+      OOKSUFZFGOOKSUFZVKVLVPUCTUQVMVPVLURVQVRVKVLVPUDTZUQVMVPVNURVQVRVMVNVOUGTZ
+      VFVHMVEVGHNVGVEHNUHUSJRUIUJUSURVDUQURUKUSABCFGEKOHVJVTUQVMVPVOURVQVRVMVNV
+      OULTVSUMUJUTVAVCKOUNSUPUO $.
   $}
 
   ${
@@ -61330,12 +61360,12 @@ $)
         E. q e. Q. q e. ( 1st ` ( A F B ) ) ) $=
       ( vf vg cnp wcel wa cv cfv cnq c1st co wrex wex c2nd prop prml rexex 3syl
       cop adantr ad2antlr genpprecll imp elprnql sylan anim12i an4s caovcl wceq
-      syl ax-ia2 eleq1d rspcedv mpd anassrs exlimddv ) FOPZGOPZQZMRZFUASZPZJRZF
-      GHUBUASZPZJTUCZMVHVMMUDZVIVHVLFUESZUJOPZVMMTUCVRFUFZMVSVLUGVMMTUHUIUKVJVM
-      QNRZGUASZPZVQNVIWDNUDZVHVMVIWCGUESZUJOPZWDNTUCWEGUFZNWFWCUGWDNTUHUIULVJVM
-      WDVQVJVMWDQZQZVKWBIUBZVOPZVQVJWIWLABCDEFGVKWBHIKLUMUNWJVPWLJWKTWJVKTPZWBT
-      PZQZWKTPVHVMVIWDWOVHVMQWMVIWDQWNVHVTVMWMWAVKVSVLUOUPVIWGWDWNWHWBWFWCUOUPU
-      QURBCVKWBTILUSVAWJVNWKUTZQVNWKVOWJWPVBVCVDVEVFVGVG $.
+      syl simpr eleq1d rspcedv mpd anassrs exlimddv ) FOPZGOPZQZMRZFUASZPZJRZFG
+      HUBUASZPZJTUCZMVHVMMUDZVIVHVLFUESZUJOPZVMMTUCVRFUFZMVSVLUGVMMTUHUIUKVJVMQ
+      NRZGUASZPZVQNVIWDNUDZVHVMVIWCGUESZUJOPZWDNTUCWEGUFZNWFWCUGWDNTUHUIULVJVMW
+      DVQVJVMWDQZQZVKWBIUBZVOPZVQVJWIWLABCDEFGVKWBHIKLUMUNWJVPWLJWKTWJVKTPZWBTP
+      ZQZWKTPVHVMVIWDWOVHVMQWMVIWDQWNVHVTVMWMWAVKVSVLUOUPVIWGWDWNWHWBWFWCUOUPUQ
+      URBCVKWBTILUSVAWJVNWKUTZQVNWKVOWJWPVBVCVDVEVFVGVG $.
 
     $( The upper cut produced by addition or multiplication on positive reals
        is inhabited.  (Contributed by Jim Kingdon, 5-Dec-2019.) $)
@@ -62982,8 +63012,7 @@ $)
       VGVBVEVKMVHVIVJCAUSUIUEVAVKUPMURVBUTBCIUFUGUHUJUKUL $.
 
     $( Ordering property of addition.  Proposition 9-3.5(v) of [Gleason]
-       p. 123.  Part of Definition 11.2.7(vi) of [HoTT], p.  (varies).
-       (Contributed by Jim Kingdon, 26-Dec-2019.) $)
+       p. 123.  (Contributed by Jim Kingdon, 26-Dec-2019.) $)
     ltaprg $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) ->
         ( A <P B <-> ( C +P. A ) <P ( C +P. B ) ) ) $=
       ( vx cnp wcel w3a cltp wbr cpp co wi ltaprlem 3ad2ant3 wa cv wceq ltexpri
@@ -63346,25 +63375,25 @@ $)
       ( vs vt vu cnp wcel wbr cfv cv cltq wrex sylan cplq cnq syl2anc ad3antrrr
       wa co adantr vx vf vg vh cltp wn w3a c2nd c1st cop prop prnminu 3ad2antl2
       wceq simprr ltrelnq brel biimpd mpcom syl simpl1 ad2antrr simprl prarloc2
-      ltexnqq simpl2 ax-ia2 elprnqu elprnql addclnq nqtri3or wi simplrr biimprd
-      w3o imp wb ltanqg adantl addcomnqg caovord2d mpbird prcdnql rspe syl12anc
-      breq1 ltdfpr simpll3 pm2.21dd ex eleq1 syl5ibrcom prcunqu 3jaod rexlimddv
-      mpd ssrdv ) AFGZBFGZBAUEHZUFZUGZUABUHIZAUHIZXBUAJZXCGZXEXDGZXBXFRZCJZXEKH
-      ZXGCXCWSWRXFXJCXCLZXAWSBUIIZXCUJFGZXFXKBUKZCXEXCXLULMUMXHXIXCGZXJRZRZXIDJ
-      ZNSZXEUNZXGDOXQXJXTDOLZXHXOXJUOXIOGZXEOGZRZXJYAXIXEOOKUPUQYDXJYADXIXEVEUR
-      USUTXQXROGZXTRZRZEJZXRNSZXDGZXGEAUIIZYGWRYEYJEYKLZXHWRXPYFWRWSXAXFVAZVBXQ
-      YEXTVCZWRYKXDUJFGZYEYLAUKZXRXDYKEVDMPYGYHYKGZYJRZRZXEYIKHZXEYIUNZYIXEKHZV
-      OZXGYSYCYIOGZUUCYSWSXFYCXHWSXPYFYRWRWSXAXFVFZQZXHXFXPYFYRXBXFVGQWSXMXFYCX
-      NXEXCXLVHMPYSYHOGZYEUUDYSWRYQUUGXHWRXPYFYRYMQZYGYQYJVCZWRYOYQUUGYPYHXDYKV
-      IMPZYGYEYRYNTZYHXRVJPXEYIVKPYSYTXGUUAUUBYSYTXGYSYTRZWTXGUULWTXOXIYKGZRZCO
-      LZUULYBXOUUMUUOXQYBYFYRYTXQWSXOYBXHWSXPUUETXHXOXJVCZWSXMXOYBXNXIXCXLVHMPQ
-      ZXQXOYFYRYTUUPQUULXIYHKHZUUMUULUURXSYIKHZYSYTUUSYSXTYTUUSVLXQYEXTYRVMXTUU
-      SYTXSXEYIKWFVNUTVPUULUBUCUDXIYHXRKONUBJZOGZUCJZOGZUDJZOGUGUUTUVBKHUVDUUTN
-      SUVDUVBNSKHVQUULUUTUVBUVDVRVSUUQYSUUGYTUUJTYSYEYTUUKTUVAUVCRUUTUVBNSUVBUU
-      TNSUNUULUUTUVBVTVSWAWBUULWRYQUURUUMVLZYSWRYTUUHTZYSYQYTUUITWRYOYQUVEYPYHX
-      IXDYKWCMPWPUUNCOWDWEUULWSWRWTUUOVQYSWSYTUUFTUVFBACWGPWBXQXAYFYRYTWRWSXAXF
-      XPWHQWIWJYSXGUUAYJYGYQYJUOZXEYIXDWKWLYSWRYJUUBXGVLZUUHUVGWRYOYJUVHYPXEYIX
-      DYKWMMPWNWPWOWOWOWJWQ $.
+      ltexnqq w3o simpl2 simpr elprnqu elprnql addclnq nqtri3or simplrr biimprd
+      wi breq1 imp wb ltanqg adantl addcomnqg caovord2d mpbird prcdnql mpd rspe
+      syl12anc ltdfpr simpll3 pm2.21dd eleq1 syl5ibrcom prcunqu 3jaod rexlimddv
+      ex ssrdv ) AFGZBFGZBAUEHZUFZUGZUABUHIZAUHIZXBUAJZXCGZXEXDGZXBXFRZCJZXEKHZ
+      XGCXCWSWRXFXJCXCLZXAWSBUIIZXCUJFGZXFXKBUKZCXEXCXLULMUMXHXIXCGZXJRZRZXIDJZ
+      NSZXEUNZXGDOXQXJXTDOLZXHXOXJUOXIOGZXEOGZRZXJYAXIXEOOKUPUQYDXJYADXIXEVEURU
+      SUTXQXROGZXTRZRZEJZXRNSZXDGZXGEAUIIZYGWRYEYJEYKLZXHWRXPYFWRWSXAXFVAZVBXQY
+      EXTVCZWRYKXDUJFGZYEYLAUKZXRXDYKEVDMPYGYHYKGZYJRZRZXEYIKHZXEYIUNZYIXEKHZVF
+      ZXGYSYCYIOGZUUCYSWSXFYCXHWSXPYFYRWRWSXAXFVGZQZXHXFXPYFYRXBXFVHQWSXMXFYCXN
+      XEXCXLVIMPYSYHOGZYEUUDYSWRYQUUGXHWRXPYFYRYMQZYGYQYJVCZWRYOYQUUGYPYHXDYKVJ
+      MPZYGYEYRYNTZYHXRVKPXEYIVLPYSYTXGUUAUUBYSYTXGYSYTRZWTXGUULWTXOXIYKGZRZCOL
+      ZUULYBXOUUMUUOXQYBYFYRYTXQWSXOYBXHWSXPUUETXHXOXJVCZWSXMXOYBXNXIXCXLVIMPQZ
+      XQXOYFYRYTUUPQUULXIYHKHZUUMUULUURXSYIKHZYSYTUUSYSXTYTUUSVOXQYEXTYRVMXTUUS
+      YTXSXEYIKVPVNUTVQUULUBUCUDXIYHXRKONUBJZOGZUCJZOGZUDJZOGUGUUTUVBKHUVDUUTNS
+      UVDUVBNSKHVRUULUUTUVBUVDVSVTUUQYSUUGYTUUJTYSYEYTUUKTUVAUVCRUUTUVBNSUVBUUT
+      NSUNUULUUTUVBWAVTWBWCUULWRYQUURUUMVOZYSWRYTUUHTZYSYQYTUUITWRYOYQUVEYPYHXI
+      XDYKWDMPWEUUNCOWFWGUULWSWRWTUUOVRYSWSYTUUFTUVFBACWHPWCXQXAYFYRYTWRWSXAXFX
+      PWIQWJWPYSXGUUAYJYGYQYJUOZXEYIXDWKWLYSWRYJUUBXGVOZUUHUVGWRYOYJUVHYPXEYIXD
+      YKWMMPWNWEWOWOWOWPWQ $.
 
     $( Apartness of positive reals is tight.  (Contributed by Jim Kingdon,
        28-Jan-2020.) $)
@@ -64199,8 +64228,8 @@ $)
     $( The reciprocal of a positive signed real exists.  Part of Proposition
        9-4.3 of [Gleason] p. 126.  (Contributed by NM, 15-May-1996.) $)
     recexsrlem $p |- ( 0R <R A -> E. x e. R. ( A .R x ) = 1R ) $=
-      ( c0r cltr wbr cv cmr co c1r wceq cnr wrex recexgt0sr ax-ia2 reximi syl
-      wa ) CBDECAFZDEZBRGHIJZQZAKLTAKLABMUATAKSTNOP $.
+      ( c0r cltr wbr cv cmr co c1r wceq wa cnr wrex recexgt0sr simpr reximi syl
+      ) CBDECAFZDEZBRGHIJZKZALMTALMABNUATALSTOPQ $.
   $}
 
   $( The sum of two positive signed reals is positive.  (Contributed by NM,
@@ -69361,7 +69390,11 @@ $)
   ${
     $d x y $.
     $( Define real apartness.  Definition in Section 11.2.1 of [HoTT], p.
-       (varies).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
+       (varies).  Although ` #RR ` is an apartness relation on the reals (see
+       ~ df-ap for more discussion of apartness relations), for our purposes it
+       is just a stepping stone to defining ` # ` which is an apartness
+       relation on complex numbers.  On the reals, ` #RR ` and ` # ` agree
+       ( ~ apreap ).  (Contributed by Jim Kingdon, 26-Jan-2020.) $)
     df-reap $a |- #RR = { <. x , y >. | ( ( x e. RR /\ y e. RR ) /\
       ( x < y \/ y < x ) ) } $.
   $}
@@ -69374,9 +69407,9 @@ $)
        29-Jan-2020.) $)
     reapval $p |- ( ( A e. RR /\ B e. RR ) ->
         ( A #RR B <-> ( A < B \/ B < A ) ) ) $=
-      ( vx vy creap wbr cr wcel wa clt wo cv wceq breq12 ax-ia2 breq12d orbi12d
-      ax-ia1 df-reap brab2ga baib ) ABEFAGHBGHIABJFZBAJFZKZCLZDLZJFZUFUEJFZKUDC
-      DABGGEUEAMZUFBMZIZUGUBUHUCUEAUFBJNUKUFBUEAJUIUJOUIUJRPQCDSTUA $.
+      ( vx vy creap wbr cr wcel wa clt wo cv breq12 simpr simpl breq12d orbi12d
+      wceq df-reap brab2ga baib ) ABEFAGHBGHIABJFZBAJFZKZCLZDLZJFZUFUEJFZKUDCDA
+      BGGEUEARZUFBRZIZUGUBUHUCUEAUFBJMUKUFBUEAJUIUJNUIUJOPQCDSTUA $.
   $}
 
   $( Real apartness is irreflexive.  Part of Definition 11.2.7(v) of [HoTT],
@@ -69440,6 +69473,20 @@ $)
   ${
     $d r s t u x y $.
     $( Define complex apartness.  Definition 6.1 of [Geuvers], p. 17.
+
+       Two numbers are considered apart if it is possible to separate them.
+       One common usage is that we can divide by a number if it is apart from
+       zero (see for example ~ recclap which says that a number apart from zero
+       has a reciprocal).
+
+       The defining characteristics of an apartness are irreflexivity
+       ( ~ apirr ), symmetry ( ~ apsym ), and cotransitivity ( ~ apcotr ).
+       Apartness implies negated equality, as seen at ~ apne , and the converse
+       would also follow if we assumed excluded middle.
+
+       In addition, apartness of complex numbers is tight, which means that two
+       numbers which are not apart are equal ( ~ apti ).
+
        (Contributed by Jim Kingdon, 26-Jan-2020.) $)
     df-ap $a |- # = { <. x , y >. | E. r e. RR E. s e. RR E. t e. RR E. u e. RR
       ( ( x = ( r + ( _i x. s ) ) /\ y = ( t + ( _i x. u ) ) ) /\
@@ -69500,30 +69547,30 @@ $)
       wn adantr simprll rereim syl22anc simprd simpllr simprlr eqtr4d wb reapti
       syl2anc mpbid simprr ecased simpld ex rexlimdvva sylbid w3a ax-icn mul01i
       3brtr3d oveq2i simp1 recnd addid1d syl5req simp2 olc 3ad2ant3 orcomd 0red
-      jca31 ax-ia2 oveq2d eqeq2d breq2d orbi2d anbi12d oveq1d orbi1d syld 3syld
-      rspcedv rexbidv breq1d 3adant3 sylibrd mpd 3expia impbid ) AGHZBGHZIZABUC
-      JZABKJZXGXHACLZMDLZUDNZONZPZBELZMFLZUDNZONZPZIZXJXOKJZXKXPKJZTZIZFGQZEGQZ
-      DGQZCGQZXIUALZXMPZUBLZXRPZIZYCIZFGQEGQZDGQCGQXNYLIZYCIZFGQEGQZDGQCGQYHUAU
-      BABGGUCYIAPZYOYRCDGGYSYNYQEFGGYSYMYPYCYSYJXNYLYIAXMUEUFUFRRYKBPZYRYFCDGGY
-      TYQYDEFGGYTYPXTYCYTYLXSXNYKBXRUEUGUFRRUAUBFEDCUHUIZXGYFXICDGGXGXJGHZXKGHZ
-      IZIZYDXIEFGGUUEXOGHZXPGHZIZIZYDXIUUIYDIZXJXOABKUUJYAYBUUJXKXPPZYBUMZUUJXK
-      SXPUUJXJAPZXKSPZUUJXEUUBUUCXNUUMUUNIUUIXEYDXEXFUUDUUHUJUNUUIUUBYDXGUUBUUC
-      UUHUKUNUUIUUCYDXGUUBUUCUUHULUNZUUIXNXSYCUOAXJXKUPUQZURUUJXOBPZXPSPZUUJXFU
-      UFUUGXSUUQUURIUUIXFYDXEXFUUDUUHUSUNUUEUUFUUGYDUKUUEUUFUUGYDULZUUIXNXSYCUT
-      BXOXPUPUQZURVAUUJUUCUUGUUKUULVBUUOUUSXKXPVCVDVEUUIXTYCVFVGUUJUUMUUNUUPVHU
-      UJUUQUURUUTVHVOVIVJVJVKXEXFXIXHXEXFXIVLZAAMSUDNZONZPZBBUVBONZPZIZXISSKJZT
-      ZIZXHUVAUVDUVFUVIUVAUVCASONAUVBSAOMVMVNZVPUVAAUVAAXEXFXIVQZVRVSVTUVAUVEBS
-      ONBUVBSBOUVKVPUVABUVABXEXFXIWAZVRVSVTUVAUVHXIXIXEUVHXITXFXIUVHWBWCWDWFUVA
-      UVJYHXHUVAUVJUVDXSIZAXOKJZSXPKJZTZIZFGQZEGQZAAXLONZPZXSIZUVOYBTZIZFGQZEGQ
-      ZDGQZYHUVAUVJUVDBBXQONZPZIZXIUVPTZIZFGQZUVTUVAUWMUVJFSGUVAWEZUVAUURIZUWKU
-      VGUWLUVIUWPUWJUVFUVDUWPUWIUVEBUWPXQUVBBOUWPXPSMUDUVAUURWGZWHWHWIUGUWPUVPU
-      VHXIUWPXPSSKUWQWJWKWLWQUVAUVSUWNEBGUVMUVAUUQIZUVRUWMFGUWRUVNUWKUVQUWLUWRX
-      SUWJUVDUWRXRUWIBUWRXOBXQOUVAUUQWGZWMWIUGUWRUVOXIUVPUWRXOBAKUWSWJWNWLWRWQW
-      OUVAUWGUVTDSGUWOUVAUUNIZUWEUVREFGGUWTUWCUVNUWDUVQUWTUWBUVDXSUWTUWAUVCAUWT
-      XLUVBAOUWTXKSMUDUVAUUNWGZWHWHWIUFUWTYBUVPUVOUWTXKSXPKUXAWSWKWLRWQUVAYGUWH
-      CAGUVLUVAUUMIZYEUWFDEGGUXBYDUWEFGUXBXTUWCYCUWDUXBXNUWBXSUXBXMUWAAUXBXJAXL
-      OUVAUUMWGZWMWIUFUXBYAUVOYBUXBXJAXOKUXCWSWNWLWRRWQWPXEXFXHYHVBXIUUAWTXAXBX
-      CXD $.
+      jca31 simpr oveq2d eqeq2d breq2d orbi2d anbi12d oveq1d orbi1d syld breq1d
+      rspcedv rexbidv 3syld 3adant3 sylibrd mpd 3expia impbid ) AGHZBGHZIZABUCJ
+      ZABKJZXGXHACLZMDLZUDNZONZPZBELZMFLZUDNZONZPZIZXJXOKJZXKXPKJZTZIZFGQZEGQZD
+      GQZCGQZXIUALZXMPZUBLZXRPZIZYCIZFGQEGQZDGQCGQXNYLIZYCIZFGQEGQZDGQCGQYHUAUB
+      ABGGUCYIAPZYOYRCDGGYSYNYQEFGGYSYMYPYCYSYJXNYLYIAXMUEUFUFRRYKBPZYRYFCDGGYT
+      YQYDEFGGYTYPXTYCYTYLXSXNYKBXRUEUGUFRRUAUBFEDCUHUIZXGYFXICDGGXGXJGHZXKGHZI
+      ZIZYDXIEFGGUUEXOGHZXPGHZIZIZYDXIUUIYDIZXJXOABKUUJYAYBUUJXKXPPZYBUMZUUJXKS
+      XPUUJXJAPZXKSPZUUJXEUUBUUCXNUUMUUNIUUIXEYDXEXFUUDUUHUJUNUUIUUBYDXGUUBUUCU
+      UHUKUNUUIUUCYDXGUUBUUCUUHULUNZUUIXNXSYCUOAXJXKUPUQZURUUJXOBPZXPSPZUUJXFUU
+      FUUGXSUUQUURIUUIXFYDXEXFUUDUUHUSUNUUEUUFUUGYDUKUUEUUFUUGYDULZUUIXNXSYCUTB
+      XOXPUPUQZURVAUUJUUCUUGUUKUULVBUUOUUSXKXPVCVDVEUUIXTYCVFVGUUJUUMUUNUUPVHUU
+      JUUQUURUUTVHVOVIVJVJVKXEXFXIXHXEXFXIVLZAAMSUDNZONZPZBBUVBONZPZIZXISSKJZTZ
+      IZXHUVAUVDUVFUVIUVAUVCASONAUVBSAOMVMVNZVPUVAAUVAAXEXFXIVQZVRVSVTUVAUVEBSO
+      NBUVBSBOUVKVPUVABUVABXEXFXIWAZVRVSVTUVAUVHXIXIXEUVHXITXFXIUVHWBWCWDWFUVAU
+      VJYHXHUVAUVJUVDXSIZAXOKJZSXPKJZTZIZFGQZEGQZAAXLONZPZXSIZUVOYBTZIZFGQZEGQZ
+      DGQZYHUVAUVJUVDBBXQONZPZIZXIUVPTZIZFGQZUVTUVAUWMUVJFSGUVAWEZUVAUURIZUWKUV
+      GUWLUVIUWPUWJUVFUVDUWPUWIUVEBUWPXQUVBBOUWPXPSMUDUVAUURWGZWHWHWIUGUWPUVPUV
+      HXIUWPXPSSKUWQWJWKWLWQUVAUVSUWNEBGUVMUVAUUQIZUVRUWMFGUWRUVNUWKUVQUWLUWRXS
+      UWJUVDUWRXRUWIBUWRXOBXQOUVAUUQWGZWMWIUGUWRUVOXIUVPUWRXOBAKUWSWJWNWLWRWQWO
+      UVAUWGUVTDSGUWOUVAUUNIZUWEUVREFGGUWTUWCUVNUWDUVQUWTUWBUVDXSUWTUWAUVCAUWTX
+      LUVBAOUWTXKSMUDUVAUUNWGZWHWHWIUFUWTYBUVPUVOUWTXKSXPKUXAWPWKWLRWQUVAYGUWHC
+      AGUVLUVAUUMIZYEUWFDEGGUXBYDUWEFGUXBXTUWCYCUWDUXBXNUWBXSUXBXMUWAAUXBXJAXLO
+      UVAUUMWGZWMWIUFUXBYAUVOYBUXBXJAXOKUXCWPWNWLWRRWQWSXEXFXHYHVBXIUUAWTXAXBXC
+      XD $.
   $}
 
   $( Real apartness in terms of less than.  Part of Definition 11.2.7(vi) of
@@ -69616,9 +69663,9 @@ $)
      13-Feb-2020.) $)
   reapneg $p |- ( ( A e. RR /\ B e. RR ) -> ( A # B <-> -u A # -u B ) ) $=
     ( cr wcel wa cap wbr cneg clt wo reaplt ltneg wb ancoms orbi12d bitrd orcom
-    syl6bb ax-ia1 renegcld ax-ia2 syl2anc bitr4d ) ACDZBCDZEZABFGZAHZBHZIGZUIUH
-    IGZJZUHUIFGZUFUGUKUJJZULUFUGABIGZBAIGZJUNABKUFUOUKUPUJABLUEUDUPUJMBALNOPUKU
-    JQRUFUHCDUICDUMULMUFAUDUESTUFBUDUEUATUHUIKUBUC $.
+    syl6bb simpl renegcld simpr syl2anc bitr4d ) ACDZBCDZEZABFGZAHZBHZIGZUIUHIG
+    ZJZUHUIFGZUFUGUKUJJZULUFUGABIGZBAIGZJUNABKUFUOUKUPUJABLUEUDUPUJMBALNOPUKUJQ
+    RUFUHCDUICDUMULMUFAUDUESTUFBUDUEUATUHUIKUBUC $.
 
   $( Real apartness is cotransitive.  Part of Definition 11.2.7(v) of [HoTT],
      p.  (varies).  (Contributed by Jim Kingdon, 16-Feb-2020.) $)
@@ -69748,16 +69795,16 @@ $)
     apsym $p |- ( ( A e. CC /\ B e. CC ) -> ( A # B <-> B # A ) ) $=
       ( vz vw vx vy cc wcel wa cv co cr wrex cap wbr wb wo clt reaplt syl2anc
       ci cmul caddc wceq adantl ad3antrrr simplrl ad2antrr orcom syl6bbr bitr4d
-      simplrr orbi12d apreim syl22anc 3bitr4d ax-ia2 simpllr breq12d rexlimdvva
-      cnre ex mpd ) AGHZBGHZIZBCJZUADJZUBKUCKZUDZDLMCLMZABNOZBANOZPZVEVKVDCDBVA
-      UEVFVJVNCDLLVFVGLHZVHLHZIZIZVJVNVRVJIZAEJZUAFJZUBKUCKZUDZFLMELMZVNVDWDVEV
-      QVJEFAVAUFVSWCVNEFLLVSVTLHZWALHZIZIZWCVNWHWCIZWBVINOZVIWBNOZVLVMWIVTVGNOZ
-      WAVHNOZQZVGVTNOZVHWANOZQZWJWKWIWLWOWMWPWIWLVTVGROZVGVTROZQZWOWIWEVOWLWTPV
-      SWEWFWCUGZVSVOWGWCVFVOVPVJUGUHZVTVGSTWIWOWSWRQZWTWIVOWEWOXCPXBXAVGVTSTWRW
-      SUIUJUKWIWMWAVHROZVHWAROZQZWPWIWFVPWMXFPVSWEWFWCULZVSVPWGWCVFVOVPVJULUHZW
-      AVHSTWIWPXEXDQZXFWIVPWFWPXIPXHXGVHWASTXDXEUIUJUKUMWIWEWFVOVPWJWNPXAXGXBXH
-      VTWAVGVHUNUOWIVOVPWEWFWKWQPXBXHXAXGVGVHVTWAUNUOUPWIAWBBVINWHWCUQZVRVJWGWC
-      URZUSWIBVIAWBNXKXJUSUPVBUTVCVBUTVC $.
+      cnre simplrr orbi12d syl22anc 3bitr4d simpr simpllr breq12d ex rexlimdvva
+      apreim mpd ) AGHZBGHZIZBCJZUADJZUBKUCKZUDZDLMCLMZABNOZBANOZPZVEVKVDCDBULU
+      EVFVJVNCDLLVFVGLHZVHLHZIZIZVJVNVRVJIZAEJZUAFJZUBKUCKZUDZFLMELMZVNVDWDVEVQ
+      VJEFAULUFVSWCVNEFLLVSVTLHZWALHZIZIZWCVNWHWCIZWBVINOZVIWBNOZVLVMWIVTVGNOZW
+      AVHNOZQZVGVTNOZVHWANOZQZWJWKWIWLWOWMWPWIWLVTVGROZVGVTROZQZWOWIWEVOWLWTPVS
+      WEWFWCUGZVSVOWGWCVFVOVPVJUGUHZVTVGSTWIWOWSWRQZWTWIVOWEWOXCPXBXAVGVTSTWRWS
+      UIUJUKWIWMWAVHROZVHWAROZQZWPWIWFVPWMXFPVSWEWFWCUMZVSVPWGWCVFVOVPVJUMUHZWA
+      VHSTWIWPXEXDQZXFWIVPWFWPXIPXHXGVHWASTXDXEUIUJUKUNWIWEWFVOVPWJWNPXAXGXBXHV
+      TWAVGVHVBUOWIVOVPWEWFWKWQPXBXHXAXGVGVHVTWAVBUOUPWIAWBBVINWHWCUQZVRVJWGWCU
+      RZUSWIBVIAWBNXKXJUSUPUTVAVCUTVAVC $.
   $}
 
   ${
@@ -69768,20 +69815,20 @@ $)
         ( A # B -> ( A # C \/ B # C ) ) ) $=
       ( vu vv vz vw vx vy cc wcel cv co cr wrex cap wbr wo wa ad3antrrr ci cmul
       w3a caddc wceq wi cnre 3ad2ant3 3ad2ant2 ad2antrr 3ad2ant1 adantr simpllr
-      ax-ia2 breq12d wb simplrl simplrr simprl simprr syl22anc reapcotr syl3anc
-      apreim orim12d sylbid or4 syl6ib simplr orbi12d sylibrd ex rexlimdvva mpd
-      bitrd ) AJKZBJKZCJKZUCZCDLZUAELZUBMUDMZUEZENODNOZABPQZACPQZBCPQZRZUFZVRVP
+      simpr breq12d simplrl simplrr simprl simprr apreim syl22anc bitrd syl3anc
+      reapcotr orim12d sylbid or4 syl6ib simplr orbi12d sylibrd rexlimdvva mpd
+      wb ex ) AJKZBJKZCJKZUCZCDLZUAELZUBMUDMZUEZENODNOZABPQZACPQZBCPQZRZUFZVRVP
       WDVQDECUGUHVSWCWIDENNVSVTNKZWANKZSZSZWCWIWMWCSZBFLZUAGLZUBMUDMZUEZGNOFNOZ
       WIVSWSWLWCVQVPWSVRFGBUGUIUJWNWRWIFGNNWNWONKZWPNKZSZSZWRWIXCWRSZAHLZUAILZU
       BMUDMZUEZINOHNOZWIWMXIWCXBWRVSXIWLVPVQXIVRHIAUGUKULTXDXHWIHINNXDXENKZXFNK
       ZSZSZXHWIXMXHSZWEXEVTPQZXFWAPQZRZWOVTPQZWPWAPQZRZRZWHXNWEXOXRRZXPXSRZRZYA
       XNWEXEWOPQZXFWPPQZRZYDXNWEXGWQPQZYGXNAXGBWQPXMXHUNZXCWRXLXHUMZUOXNXJXKWTX
-      AYHYGUPXDXJXKXHUQZXDXJXKXHURZXCWTWRXLXHWNWTXAUSTZXCXAWRXLXHWNWTXAUTTZXEXF
-      WOWPVDVAVOXNYEYBYFYCXNXJWTWJYEYBUFYKYMXCWJWRXLXHWMWJWCXBVSWJWKUSUJTZXEWOV
-      TVBVCXNXKXAWKYFYCUFYLYNXCWKWRXLXHWMWKWCXBVSWJWKUTUJTZXFWPWAVBVCVEVFXOXRXP
+      AYHYGVNXDXJXKXHUPZXDXJXKXHUQZXCWTWRXLXHWNWTXAURTZXCXAWRXLXHWNWTXAUSTZXEXF
+      WOWPUTVAVBXNYEYBYFYCXNXJWTWJYEYBUFYKYMXCWJWRXLXHWMWJWCXBVSWJWKURUJTZXEWOV
+      TVDVCXNXKXAWKYFYCUFYLYNXCWKWRXLXHWMWKWCXBVSWJWKUSUJTZXFWPWAVDVCVEVFXOXRXP
       XSVGVHXNWFXQWGXTXNWFXGWBPQZXQXNAXGCWBPYIXCWCWRXLXHWMWCXBVITZUOXNXJXKWJWKY
-      QXQUPYKYLYOYPXEXFVTWAVDVAVOXNWGWQWBPQZXTXNBWQCWBPYJYRUOXNWTXAWJWKYSXTUPYM
-      YNYOYPWOWPVTWAVDVAVOVJVKVLVMVNVLVMVNVLVMVN $.
+      QXQVNYKYLYOYPXEXFVTWAUTVAVBXNWGWQWBPQZXTXNBWQCWBPYJYRUOXNWTXAWJWKYSXTVNYM
+      YNYOYPWOWPVTWAUTVAVBVJVKVOVLVMVOVLVMVOVLVM $.
   $}
 
   ${
@@ -69838,18 +69885,18 @@ $)
        14-Feb-2020.) $)
     apneg $p |- ( ( A e. CC /\ B e. CC ) -> ( A # B <-> -u A # -u B ) ) $=
       ( vz vw vx vy wcel wa cv ci cmul co caddc cr wrex cap wbr cneg renegcld
-      wb cc wceq cnre adantl ad3antrrr wo ax-ia2 simpllr breq12d simplrl simprl
-      simplrr simprr apreim syl22anc recnd ax-icn mulcld negdid negeqd mulneg2d
-      a1i oveq2d 3eqtr4d reapneg syl2anc orbi12d 3bitr4rd 3bitrd rexlimdvva mpd
+      wb cc wceq cnre adantl ad3antrrr wo simpr simpllr breq12d simplrl simplrr
+      simprl simprr apreim syl22anc ax-icn mulcld negdid negeqd mulneg2d oveq2d
+      recnd a1i 3eqtr4d reapneg syl2anc orbi12d 3bitr4rd 3bitrd rexlimdvva mpd
       ex ) AUAGZBUAGZHZBCIZJDIZKLZMLZUBZDNOCNOZABPQZARZBRZPQZTZVNWAVMCDBUCUDVOV
       TWFCDNNVOVPNGZVQNGZHZHZVTWFWJVTHZAEIZJFIZKLZMLZUBZFNOENOZWFVMWQVNWIVTEFAU
       CUEWKWPWFEFNNWKWLNGZWMNGZHZHZWPWFXAWPHZWBWOVSPQZWLVPPQZWMVQPQZUFZWEXBAWOB
-      VSPXAWPUGZWJVTWTWPUHZUIXBWRWSWGWHXCXFTWKWRWSWPUJZWKWRWSWPULZWJWGVTWTWPVOW
-      GWHUKUEZWJWHVTWTWPVOWGWHUMUEZWLWMVPVQUNUOXBWLRZJWMRZKLZMLZVPRZJVQRZKLZMLZ
+      VSPXAWPUGZWJVTWTWPUHZUIXBWRWSWGWHXCXFTWKWRWSWPUJZWKWRWSWPUKZWJWGVTWTWPVOW
+      GWHULUEZWJWHVTWTWPVOWGWHUMUEZWLWMVPVQUNUOXBWLRZJWMRZKLZMLZVPRZJVQRZKLZMLZ
       PQZXMXQPQZXNXRPQZUFZWEXFXBXMNGXNNGXQNGXRNGYAYDTXBWLXISXBWMXJSXBVPXKSXBVQX
-      LSXMXNXQXRUNUOXBWCXPWDXTPXBWORXMWNRZMLWCXPXBWLWNXBWLXIUPXBJWMJUAGXBUQVBZX
-      BWMXJUPZURUSXBAWOXGUTXBXOYEXMMXBJWMYFYGVAVCVDXBVSRXQVRRZMLWDXTXBVPVRXBVPX
-      KUPXBJVQYFXBVQXLUPZURUSXBBVSXHUTXBXSYHXQMXBJVQYFYIVAVCVDUIXBXDYBXEYCXBWRW
+      LSXMXNXQXRUNUOXBWCXPWDXTPXBWORXMWNRZMLWCXPXBWLWNXBWLXIVBXBJWMJUAGXBUPVCZX
+      BWMXJVBZUQURXBAWOXGUSXBXOYEXMMXBJWMYFYGUTVAVDXBVSRXQVRRZMLWDXTXBVPVRXBVPX
+      KVBXBJVQYFXBVQXLVBZUQURXBBVSXHUSXBXSYHXQMXBJVQYFYIUTVAVDUIXBXDYBXEYCXBWRW
       GXDYBTXIXKWLVPVEVFXBWSWHXEYCTXJXLWMVQVEVFVGVHVIVLVJVKVLVJVK $.
   $}
 
@@ -69863,30 +69910,30 @@ $)
       mulcld remulcld vu vv vz vw vx vy ci wceq cnre 3ad2ant3 3ad2ant2 ad2antrr
       w3a 3ad2ant1 adantr cneg wo simplrl simprl simprr negcld addext remulext1
       simplrr syl3anc apneg syl2anc sylbird orim12d syld remulext2 orcom syl6ib
-      wb ax-ia2 simplr oveq12d simpllr breq12d mulreim renegcld readdcld apreim
-      jaod 3bitrd 3imtr4d sylibrd ex rexlimdvva mpd ) ADEZBDEZCDEZUMZCUAFZUGUBF
-      ZGHIHZUHZUBJKUAJKZACGHZBCGHZLMZABLMZNZWMWKWSWLUAUBCUIUJWNWRXDUAUBJJWNWOJE
-      ZWPJEZOZOZWRXDXHWROZBUCFZUGUDFZGHIHZUHZUDJKUCJKZXDWNXNXGWRWLWKXNWMUCUDBUI
-      UKULXIXMXDUCUDJJXIXJJEZXKJEZOZOZXMXDXRXMOZAUEFZUGUFFZGHIHZUHZUFJKUEJKZXDX
-      HYDWRXQXMWNYDXGWKWLYDWMUEUFAUIUNUOPXSYCXDUEUFJJXSXTJEZYAJEZOZOZYCXDYHYCOZ
-      XBYBXLLMZXCYIXTWOGHZYAWPGHZUPZIHZXJWOGHZXKWPGHZUPZIHZLMZWOYAGHZWPXTGHZIHZ
-      WOXKGHZWPXJGHZIHZLMZUQZXTXJLMZYAXKLMZUQZXBYJYIYSUUJUUFYIYSYKYOLMZYMYQLMZU
-      QZUUJYIYKDEYMDEYODEYQDEYSUUMNYIXTWOYIXTXSYEYFYCURZQZYIWOXRXEXMYGYCXHXEWRX
-      QWNXEXFUSULPZQZSYIYLYIYAWPYIYAXSYEYFYCVDZQZYIWPXRXFXMYGYCXHXFWRXQWNXEXFUT
-      ULPZQZSZVAYIXJWOYIXJXRXOXMYGYCXIXOXPUSPZQZUUQSYIYPYIXKWPYIXKXRXPXMYGYCXIX
-      OXPUTPZQZUVASZVAYKYMYOYQVBRYIUUKUUHUULUUIYIYEXOXEUUKUUHNUUNUVCUUPXTXJWOVC
-      VEYIUULYLYPLMZUUIYIYLDEYPDEUVHUULVNUVBUVGYLYPVFVGYIYFXPXFUVHUUINUURUVEUUT
-      YAXKWPVCVEVHVIVJYIUUFUUIUUHUQZUUJYIUUFYTUUCLMZUUAUUDLMZUQZUVIYIYTDEUUADEU
-      UCDEUUDDEUUFUVLNYIWOYAUUQUUSSYIWPXTUVAUUOSYIWOXKUUQUVFSYIWPXJUVAUVDSYTUUA
-      UUCUUDVBRYIUVJUUIUVKUUHYIYFXPXEUVJUUINUURUVEUUPYAXKWOVKVEYIYEXOXFUVKUUHNU
-      UNUVCUUTXTXJWPVKVEVIVJUUIUUHVLVMWDYIXBYBWQGHZXLWQGHZLMYNUGUUBGHIHZYRUGUUE
-      GHIHZLMZUUGYIWTUVMXAUVNLYIAYBCWQGYHYCVOZXRWRXMYGYCXHWRXQVPPZVQYIBXLCWQGXR
-      XMYGYCVRZUVSVQVSYIUVMUVOUVNUVPLYIYEYFXEXFUVMUVOUHUUNUURUUPUUTXTYAWOWPVTRY
-      IXOXPXEXFUVNUVPUHUVCUVEUUPUUTXJXKWOWPVTRVSYIYNJEUUBJEYRJEUUEJEUVQUUGVNYIY
-      KYMYIXTWOUUNUUPTYIYLYIYAWPUURUUTTWAWBYIYTUUAYIWOYAUUPUURTYIWPXTUUTUUNTWBY
-      IYOYQYIXJWOUVCUUPTYIYPYIXKWPUVEUUTTWAWBYIUUCUUDYIWOXKUUPUVETYIWPXJUUTUVCT
-      WBYNUUBYRUUEWCRWEYIYEYFXOXPYJUUJVNUUNUURUVCUVEXTYAXJXKWCRWFYIAYBBXLLUVRUV
-      TVSWGWHWIWJWHWIWJWHWIWJ $.
+      jaod simpr simplr oveq12d simpllr breq12d renegcld readdcld apreim 3bitrd
+      wb mulreim 3imtr4d sylibrd ex rexlimdvva mpd ) ADEZBDEZCDEZUMZCUAFZUGUBFZ
+      GHIHZUHZUBJKUAJKZACGHZBCGHZLMZABLMZNZWMWKWSWLUAUBCUIUJWNWRXDUAUBJJWNWOJEZ
+      WPJEZOZOZWRXDXHWROZBUCFZUGUDFZGHIHZUHZUDJKUCJKZXDWNXNXGWRWLWKXNWMUCUDBUIU
+      KULXIXMXDUCUDJJXIXJJEZXKJEZOZOZXMXDXRXMOZAUEFZUGUFFZGHIHZUHZUFJKUEJKZXDXH
+      YDWRXQXMWNYDXGWKWLYDWMUEUFAUIUNUOPXSYCXDUEUFJJXSXTJEZYAJEZOZOZYCXDYHYCOZX
+      BYBXLLMZXCYIXTWOGHZYAWPGHZUPZIHZXJWOGHZXKWPGHZUPZIHZLMZWOYAGHZWPXTGHZIHZW
+      OXKGHZWPXJGHZIHZLMZUQZXTXJLMZYAXKLMZUQZXBYJYIYSUUJUUFYIYSYKYOLMZYMYQLMZUQ
+      ZUUJYIYKDEYMDEYODEYQDEYSUUMNYIXTWOYIXTXSYEYFYCURZQZYIWOXRXEXMYGYCXHXEWRXQ
+      WNXEXFUSULPZQZSYIYLYIYAWPYIYAXSYEYFYCVDZQZYIWPXRXFXMYGYCXHXFWRXQWNXEXFUTU
+      LPZQZSZVAYIXJWOYIXJXRXOXMYGYCXIXOXPUSPZQZUUQSYIYPYIXKWPYIXKXRXPXMYGYCXIXO
+      XPUTPZQZUVASZVAYKYMYOYQVBRYIUUKUUHUULUUIYIYEXOXEUUKUUHNUUNUVCUUPXTXJWOVCV
+      EYIUULYLYPLMZUUIYIYLDEYPDEUVHUULWDUVBUVGYLYPVFVGYIYFXPXFUVHUUINUURUVEUUTY
+      AXKWPVCVEVHVIVJYIUUFUUIUUHUQZUUJYIUUFYTUUCLMZUUAUUDLMZUQZUVIYIYTDEUUADEUU
+      CDEUUDDEUUFUVLNYIWOYAUUQUUSSYIWPXTUVAUUOSYIWOXKUUQUVFSYIWPXJUVAUVDSYTUUAU
+      UCUUDVBRYIUVJUUIUVKUUHYIYFXPXEUVJUUINUURUVEUUPYAXKWOVKVEYIYEXOXFUVKUUHNUU
+      NUVCUUTXTXJWPVKVEVIVJUUIUUHVLVMVNYIXBYBWQGHZXLWQGHZLMYNUGUUBGHIHZYRUGUUEG
+      HIHZLMZUUGYIWTUVMXAUVNLYIAYBCWQGYHYCVOZXRWRXMYGYCXHWRXQVPPZVQYIBXLCWQGXRX
+      MYGYCVRZUVSVQVSYIUVMUVOUVNUVPLYIYEYFXEXFUVMUVOUHUUNUURUUPUUTXTYAWOWPWERYI
+      XOXPXEXFUVNUVPUHUVCUVEUUPUUTXJXKWOWPWERVSYIYNJEUUBJEYRJEUUEJEUVQUUGWDYIYK
+      YMYIXTWOUUNUUPTYIYLYIYAWPUURUUTTVTWAYIYTUUAYIWOYAUUPUURTYIWPXTUUTUUNTWAYI
+      YOYQYIXJWOUVCUUPTYIYPYIXKWPUVEUUTTVTWAYIUUCUUDYIWOXKUUPUVETYIWPXJUUTUVCTW
+      AYNUUBYRUUEWBRWCYIYEYFXOXPYJUUJWDUUNUURUVCUVEXTYAXJXKWBRWFYIAYBBXLLUVRUVT
+      VSWGWHWIWJWHWIWJWHWIWJ $.
   $}
 
   $( Right extensionality for complex multiplication.  (Contributed by Jim
@@ -69992,17 +70039,17 @@ $)
        21-Feb-2020.) $)
     apti $p |- ( ( A e. CC /\ B e. CC ) -> ( A = B <-> -. A # B ) ) $=
       ( vx vy vz vw cc wcel wa cv co wceq cr wrex cap wbr wn wb syl2anc notbid
-      ci cmul caddc cnre adantr adantl ad2antrr ax-ia2 ad3antrrr simplr simpllr
-      cru eqeq12d apreim ioran syl6bb breq12d simpld creap reapti apreap bitr4d
-      wo simprd anbi12d 3bitr4d ex rexlimdvva mpd ) AGHZBGHZIZACJZUADJZUBKUCKZL
-      ZDMNCMNZABLZABOPZQZRZVJVQVKCDAUDUEVLVPWACDMMVLVMMHZVNMHZIZIZVPWAWEVPIZBEJ
-      ZUAFJZUBKUCKZLZFMNEMNZWAVLWKWDVPVKWKVJEFBUDUFUGWFWJWAEFMMWFWGMHZWHMHZIZIZ
-      WJWAWOWJIZVOWILZVMWGLZVNWHLZIZVRVTWPWDWNWQWTRWEWDVPWNWJVLWDUHUIZWFWNWJUJZ
-      VMVNWGWHULSWPAVOBWIWEVPWNWJUKZWOWJUHZUMWPVOWIOPZQZVMWGOPZQZVNWHOPZQZIZVTW
-      TWPWDWNXFXKRXAXBWDWNIZXFXGXIVCZQXKXLXEXMVMVNWGWHUNTXGXIUOUPSWPVSXEWPAVOBW
-      IOXCXDUQTWPWRXHWSXJWPWBWLWRXHRWPWBWCXAURWPWLWMXBURWBWLIZWRVMWGUSPZQXHVMWG
-      UTXNXGXOVMWGVATVBSWPWCWMWSXJRWPWBWCXAVDWPWLWMXBVDWCWMIZWSVNWHUSPZQXJVNWHU
-      TXPXIXQVNWHVATVBSVEVFVFVGVHVIVGVHVI $.
+      cmul caddc cnre adantr adantl ad2antrr simpr ad3antrrr simplr cru simpllr
+      ci eqeq12d apreim ioran syl6bb breq12d simpld reapti apreap bitr4d simprd
+      wo creap anbi12d 3bitr4d ex rexlimdvva mpd ) AGHZBGHZIZACJZULDJZUAKUBKZLZ
+      DMNCMNZABLZABOPZQZRZVJVQVKCDAUCUDVLVPWACDMMVLVMMHZVNMHZIZIZVPWAWEVPIZBEJZ
+      ULFJZUAKUBKZLZFMNEMNZWAVLWKWDVPVKWKVJEFBUCUEUFWFWJWAEFMMWFWGMHZWHMHZIZIZW
+      JWAWOWJIZVOWILZVMWGLZVNWHLZIZVRVTWPWDWNWQWTRWEWDVPWNWJVLWDUGUHZWFWNWJUIZV
+      MVNWGWHUJSWPAVOBWIWEVPWNWJUKZWOWJUGZUMWPVOWIOPZQZVMWGOPZQZVNWHOPZQZIZVTWT
+      WPWDWNXFXKRXAXBWDWNIZXFXGXIVCZQXKXLXEXMVMVNWGWHUNTXGXIUOUPSWPVSXEWPAVOBWI
+      OXCXDUQTWPWRXHWSXJWPWBWLWRXHRWPWBWCXAURWPWLWMXBURWBWLIZWRVMWGVDPZQXHVMWGU
+      SXNXGXOVMWGUTTVASWPWCWMWSXJRWPWBWCXAVBWPWLWMXBVBWCWMIZWSVNWHVDPZQXJVNWHUS
+      XPXIXQVNWHUTTVASVEVFVFVGVHVIVGVHVI $.
   $}
 
   $( Apartness implies negated equality.  We cannot in general prove the
@@ -70012,6 +70059,53 @@ $)
   apne $p |- ( ( A e. CC /\ B e. CC ) -> ( A # B -> A =/= B ) ) $=
     ( cc wcel wa cap wbr wceq wn apti biimpd necon2ad ) ACDBCDEZABFGZABMABHNIAB
     JKL $.
+
+  $( Positive implies apart from zero.  (Contributed by Jim Kingdon,
+     27-Feb-2020.) $)
+  gt0ap0 $p |- ( ( A e. RR /\ 0 < A ) -> A # 0 ) $=
+    ( cr wcel cc0 clt wbr wa cap wo simpr olcd wb 0red reaplt syldan mpbird ) A
+    BCZDAEFZGZADHFZADEFZRIZSRUAQRJKQRDBCTUBLSMADNOP $.
+
+  ${
+    gt0ap0i.1 $e |- A e. RR $.
+    $( Positive means apart from zero (useful for ordering theorems involving
+       division).  (Contributed by Jim Kingdon, 27-Feb-2020.) $)
+    gt0ap0i $p |- ( 0 < A -> A # 0 ) $=
+      ( cr wcel cc0 clt wbr cap gt0ap0 mpan ) ACDEAFGAEHGBAIJ $.
+
+    ${
+      gt0ap0i.2 $e |- 0 < A $.
+      $( Positive implies apart from zero.  (Contributed by Jim Kingdon,
+         27-Feb-2020.) $)
+      gt0ap0ii $p |- A # 0 $=
+        ( cc0 clt wbr cap gt0ap0i ax-mp ) DAEFADGFCABHI $.
+    $}
+  $}
+
+  ${
+    gt0ap0d.1 $e |- ( ph -> A e. RR ) $.
+    gt0ap0d.2 $e |- ( ph -> 0 < A ) $.
+    $( Positive implies apart from zero.  Because of the way we define ` # ` ,
+       ` A ` must be an element of ` RR ` , not just ` RR* ` .  (Contributed by
+       Jim Kingdon, 27-Feb-2020.) $)
+    gt0ap0d $p |- ( ph -> A # 0 ) $=
+      ( cr wcel cc0 clt wbr cap gt0ap0 syl2anc ) ABEFGBHIBGJICDBKL $.
+  $}
+
+  $( A number is apart from zero iff its negative is apart from zero.
+     (Contributed by Jim Kingdon, 27-Feb-2020.) $)
+  negap0 $p |- ( A e. CC -> ( A # 0 <-> -u A # 0 ) ) $=
+    ( cc wcel cc0 cap wbr cneg wb 0cn apneg mpan2 neg0 breq2i syl6bb ) ABCZADEF
+    ZAGZDGZEFZQDEFODBCPSHIADJKRDQELMN $.
+
+  $( Less than in terms of non-strict order and apartness.  (Contributed by Jim
+     Kingdon, 28-Feb-2020.) $)
+  ltleap $p |- ( ( A e. RR /\ B e. RR ) ->
+      ( A < B <-> ( A <_ B /\ A # B ) ) ) $=
+    ( cr wcel wa clt wbr cle cap ltle wo orc reaplt syl5ibr wn simprl wb adantr
+    jcad mpbid lenlt simprr ecased ex impbid ) ACDBCDEZABFGZABHGZABIGZEZUFUGUHU
+    IABJUGUIUFUGBAFGZKZUGUKLABMZNSUFUJUGUFUJEZUGUKUNUHUKOZUFUHUIPUFUHUOQUJABUAR
+    TUNUIULUFUHUIUBUFUIULQUJUMRTUCUDUE $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -70256,9 +70350,9 @@ $)
   ${
     $d x y z $.
     $( Define division.  Theorem ~ divmulap relates it to multiplication, and
-       ~ divclap (and the analogue for real numbers) prove its closure laws.
-       (Contributed by NM, 2-Feb-1995.)  (Revised by Mario Carneiro,
-       1-Apr-2014.)  (New usage is discouraged.) $)
+       ~ divclap and ~ redivclap prove its closure laws.  (Contributed by NM,
+       2-Feb-1995.)  (Revised by Mario Carneiro, 1-Apr-2014.)
+       (New usage is discouraged.) $)
     df-div $a |- / = ( x e. CC , y e. ( CC \ { 0 } ) |->
                    ( iota_ z e. CC ( y x. z ) = x ) ) $.
   $}
@@ -70592,36 +70686,34 @@ $)
   divmul13ap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
                     /\ ( D e. CC /\ D # 0 ) ) )
                 -> ( ( A / C ) x. ( B / D ) ) = ( ( B / C ) x. ( A / D ) ) ) $=
-    ( cc wcel wa cc0 cap wbr cmul cdiv wceq mulcom adantr divmuldivap
-    co oveq1d ancom1s 3eqtr4d ) AEFZBEFZGZCEFCHIJGDEFDHIJGGZGZABKQZCD
-    KQZLQBAKQZUGLQZACLQBDLQKQBCLQADLQKQZUEUFUHUGLUCUFUHMUDABNORABCDPU
-    BUAUDUJUIMBACDPST $.
+    ( cc wcel wa cc0 cap wbr cmul co cdiv wceq mulcom adantr oveq1d divmuldivap
+    ancom1s 3eqtr4d ) AEFZBEFZGZCEFCHIJGDEFDHIJGGZGZABKLZCDKLZMLBAKLZUGMLZACMLB
+    DMLKLBCMLADMLKLZUEUFUHUGMUCUFUHNUDABOPQABCDRUBUAUDUJUINBACDRST $.
 
   $( Swap the numerators in the product of two ratios.  (Contributed by Jim
      Kingdon, 26-Feb-2020.) $)
   divmul24ap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 )
                     /\ ( D e. CC /\ D # 0 ) ) )
                 -> ( ( A / C ) x. ( B / D ) ) = ( ( A / D ) x. ( B / C ) ) ) $=
-    ( cc wcel wa cc0 cap wbr cmul co cdiv wceq mulcom ad2ant2r adantl
-    oveq2d divmuldivap ancom2s 3eqtr4d ) AEFBEFGZCEFZCHIJZGZDEFZDHIJZ
-    GZGZGZABKLZCDKLZMLUKDCKLZMLZACMLBDMLKLADMLBCMLKLZUJULUMUKMUIULUMN
-    ZUBUCUFUPUDUGCDOPQRABCDSUBUHUEUOUNNABDCSTUA $.
+    ( cc wcel wa cc0 cap wbr cmul co cdiv wceq mulcom adantl oveq2d divmuldivap
+    ad2ant2r ancom2s 3eqtr4d ) AEFBEFGZCEFZCHIJZGZDEFZDHIJZGZGZGZABKLZCDKLZMLUK
+    DCKLZMLZACMLBDMLKLADMLBCMLKLZUJULUMUKMUIULUMNZUBUCUFUPUDUGCDOSPQABCDRUBUHUE
+    UOUNNABDCRTUA $.
 
   $( Cross-multiply in an equality of ratios.  (Contributed by Jim Kingdon,
      26-Feb-2020.) $)
   divmuleqap $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( ( C e. CC /\ C # 0 ) /\
                      ( D e. CC /\ D # 0 ) ) ) ->
                    ( ( A / C ) = ( B / D ) <-> ( A x. D ) = ( B x. C ) ) ) $=
-    ( cc wcel wa cc0 cap wbr cdiv co cmul wceq divclap 3expb ad2ant2r
-    ad2ant2l mulassd divcanap1 wb mulap0 jca adantl mulcanap2 syl3anc
-    mulcl simprll simprrl oveq1d eqtr3d mulcomd oveq2d 3eqtr2d bitr3d
-    eqeq12d ) AEFZBEFZGZCEFZCHIJZGZDEFZDHIJZGZGZGZACKLZCDMLZMLZBDKLZV
-    IMLZNZVHVKNZADMLZBCMLZNVGVHEFZVKEFZVIEFZVIHIJZGZVMVNUAUQVBVQURVEU
-    QUTVAVQACOPQZURVEVRUQVBURVCVDVRBDOPRZVFWAUSVFVSVTUTVCVSVAVDCDUGQC
-    DUBUCUDVHVKVIUEUFVGVJVOVLVPVGVHCMLZDMLVJVOVGVHCDWBUSUTVAVEUHZUSVB
-    VCVDUIZSVGWDADMUQVBWDANZURVEUQUTVAWGACTPQUJUKVGVLVKDCMLZMLVKDMLZC
-    MLVPVGVIWHVKMVGCDWEWFULUMVGVKDCWCWFWESVGWIBCMURVEWIBNZUQVBURVCVDW
-    JBDTPRUJUNUPUO $.
+    ( cc wcel wa cc0 cap cdiv cmul wceq divclap 3expb ad2ant2r ad2ant2l mulassd
+    wbr co divcanap1 mulap0 jca adantl mulcanap2 syl3anc simprll simprrl oveq1d
+    wb mulcl eqtr3d mulcomd oveq2d 3eqtr2d eqeq12d bitr3d ) AEFZBEFZGZCEFZCHIRZ
+    GZDEFZDHIRZGZGZGZACJSZCDKSZKSZBDJSZVIKSZLZVHVKLZADKSZBCKSZLVGVHEFZVKEFZVIEF
+    ZVIHIRZGZVMVNUIUQVBVQURVEUQUTVAVQACMNOZURVEVRUQVBURVCVDVRBDMNPZVFWAUSVFVSVT
+    UTVCVSVAVDCDUJOCDUAUBUCVHVKVIUDUEVGVJVOVLVPVGVHCKSZDKSVJVOVGVHCDWBUSUTVAVEU
+    FZUSVBVCVDUGZQVGWDADKUQVBWDALZURVEUQUTVAWGACTNOUHUKVGVLVKDCKSZKSVKDKSZCKSVP
+    VGVIWHVKKVGCDWEWFULUMVGVKDCWCWFWEQVGWIBCKURVEWIBLZUQVBURVCVDWJBDTNPUHUNUOUP
+    $.
 
   $( The reciprocal of a ratio.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
   recdivap $p |- ( ( ( A e. CC /\ A # 0 ) /\ ( B e. CC /\ B # 0 ) ) ->
@@ -70728,6 +70820,4744 @@ $)
     URVFUBZUSVBVCVDUCZUSVBVCVDUDZBDUEQRVGVNVOVGUQUTVAVNEFUQURVFUFZUSUTVAVEUGZUS
     UTVAVEUHACUIQVGURVCVDVOEFWBWCWDBDUIQULSSVGVKVRVLOVGVKVHVQMZNLVRVGVJWGVHNVGB
     CWBWFUMRVGVHVQVGADWEWCUNVGBCWBWFUNULUOUPS $.
+
+  $( Two numbers whose reciprocals sum to 1 are called "conjugates" and satisfy
+     this relationship.  (Contributed by Jim Kingdon, 26-Feb-2020.) $)
+  conjmulap $p |- ( ( ( P e. CC /\ P # 0 ) /\ ( Q e. CC /\ Q # 0 ) ) ->
+      ( ( ( 1 / P ) + ( 1 / Q ) ) = 1 <-> ( ( P - 1 ) x. ( Q - 1 ) ) = 1 ) ) $=
+    ( cc wcel cc0 cap wa cmul co c1 cdiv caddc wceq cmin recclap adantr recidap
+    wbr 3eqtrd ad2ant2r simpll simprl mul32d oveq1d mulid2 adantl oveq2d mulid1
+    ad2antrl mulassd ad2antrr oveq12d mulcl adddid addcom 3eqtr4d mulid1d addcl
+    eqeq12d syl2an mulap0 ax-1cn mulcanap mp3an2 syl12anc eqcom muleqadd syl5bb
+    wb 3bitr3d ) ACDZAEFRZGZBCDZBEFRZGZGZABHIZJAKIZJBKIZLIZHIZVRJHIZMZABLIZVRMZ
+    WAJMZAJNIBJNIHIJMZVQWBWEWCVRVQVRVSHIZVRVTHIZLIBALIZWBWEVQWIBWJALVQWIAVSHIZB
+    HIZJBHIZBVQABVSVKVLVPUAZVMVNVOUBZVMVSCDZVPAOZPZUCVMWMWNMVPVMWLJBHAQUDPVNWNB
+    MVMVOBUEUISVQWJABVTHIZHIZAJHIZAVQABVTWOWPVPVTCDZVMBOZUFZUJVPXAXBMVMVPWTJAHB
+    QUGUFVKXBAMVLVPAUHUKSULVQVRVSVTVKVNVRCDZVLVOABUMZTZWSXEUNVKVNWEWKMVLVOABUOT
+    UPVKVNWCVRMVLVOVKVNGZVRXGUQTUSVQWACDZXFVREFRZWDWGVIZVMWQXCXJVPWRXDVSVTURUTX
+    HABVAXJJCDXFXKGXLVBWAJVRVCVDVEVKVNWFWHVIVLVOWFVRWEMXIWHWEVRVFABVGVHTVJ $.
+
+  ${
+    $d x A $.
+    $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+       26-Feb-2020.) $)
+    rerecclap $p |- ( ( A e. RR /\ A # 0 ) -> ( 1 / A ) e. RR ) $=
+      ( vx cr wcel cc0 cap wbr wa cv c1 cdiv co wceq wrex creap wb 0re cc recnd
+      cmul apreap mpan2 pm5.32i recexre sylbi eqcom 1cnd simpll simplr divmulap
+      simpr syl112anc syl5bb rexbidva mpbird risset sylibr ) ACDZAEFGZHZBIZJAKL
+      ZMZBCNZVBCDUTVDAVATLJMZBCNZUTURAEOGZHVFURUSVGURECDUSVGPQAEUAUBUCBAUDUEUTV
+      CVEBCVCVBVAMZUTVACDZHZVEVAVBUFVJJRDVARDARDUSVHVEPVJUGVJVAUTVIUKSVJAURUSVI
+      UHSURUSVIUIJVAAUJULUMUNUOBVBCUPUQ $.
+  $}
+
+  $( Closure law for division of reals.  (Contributed by Jim Kingdon,
+     26-Feb-2020.) $)
+  redivclap $p |- ( ( A e. RR /\ B e. RR /\ B # 0 ) -> ( A / B ) e. RR ) $=
+    ( cr wcel cc0 cap wbr cdiv co c1 cmul wceq simp1 recnd simp2 simp3 divrecap
+    w3a cc syl3anc rerecclap 3adant1 remulcld eqeltrd ) ACDZBCDZBEFGZRZABHIZAJB
+    HIZKIZCUHASDBSDUGUIUKLUHAUEUFUGMZNUHBUEUFUGONUEUFUGPABQTUHAUJULUFUGUJCDUEBU
+    AUBUCUD $.
+
+  $( A number equal to its negative is zero.  (Contributed by NM,
+     12-Jul-2005.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  eqneg $p |- ( A e. CC -> ( A = -u A <-> A = 0 ) ) $=
+    ( cc wcel c1 caddc cmul cc0 wceq cneg 1p1times negid ax-1cn addcli syl6reqr
+    co mul01i eqeq12d a1i 1re 0lt1 id 0cnd readdcli addgt0ii gt0ap0ii mulcanapd
+    cap wbr negcl addcand 3bitr3rd ) ABCZDDEOZAFOZUMGFOZHAAEOZAAIZEOZHAGHAUQHUL
+    UNUPUOURAJULURGUOAKUMDDLLMZPNQULAGUMULUAZULUBUMBCULUSRUMGUGUHULUMDDSSUCDDSS
+    TTUDUERUFULAAUQUTUTAUIUJUK $.
+
+  ${
+    eqnegd.1 $e |- ( ph -> A e. CC ) $.
+    $( A complex number equals its negative iff it is zero.  Deduction form of
+       ~ eqneg .  (Contributed by David Moews, 28-Feb-2017.) $)
+    eqnegd $p |- ( ph -> ( A = -u A <-> A = 0 ) ) $=
+      ( cc wcel cneg wceq cc0 wb eqneg syl ) ABDEBBFGBHGICBJK $.
+  $}
+
+  ${
+    eqnegad.1 $e |- ( ph -> A e. CC ) $.
+    eqnegad.2 $e |- ( ph -> A = -u A ) $.
+    $( If a complex number equals its own negative, it is zero.  One-way
+       deduction form of ~ eqneg .  (Contributed by David Moews,
+       28-Feb-2017.) $)
+    eqnegad $p |- ( ph -> A = 0 ) $=
+      ( cneg wceq cc0 eqnegd mpbid ) ABBEFBGFDABCHI $.
+  $}
+
+  $( Quotient of two negatives.  (Contributed by Jim Kingdon, 27-Feb-2020.) $)
+  div2negap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+                  ( -u A / -u B ) = ( A / B ) ) $=
+    ( cc wcel cc0 cap wbr w3a cneg cdiv co wceq cmul 3ad2ant2 syl112anc 3adant1
+    negcl c1 eqtrd 3ad2ant1 simp1 simp2 simp3 div12ap divnegap syld3an1 dividap
+    negeqd eqtr3d oveq2d ax-1cn negcli mulcom mpan2 mulm1 divclap negap0 biimpa
+    wb divmulap mpbird ) ACDZBCDZBEFGZHZAIZBIZJKABJKZLZVGVHMKZVFLZVEVJAVGBJKZMK
+    ZVFVEVGCDZVBVCVDVJVMLVCVBVNVDBQNZVBVCVDUAVBVCVDUBZVBVCVDUCVGABUDOVEVMARIZMK
+    ZVFVEVLVQAMVEBBJKZIZVLVQVCVCVBVDVTVLLVPBBUEUFVEVSRVCVDVSRLVBBUGPUHUIUJVBVCV
+    RVFLVDVBVRVQAMKZVFVBVQCDVRWALRUKULAVQUMUNAUOSTSSVEVFCDZVHCDVNVGEFGZVIVKUSVB
+    VCWBVDAQTABUPVOVCVDWCVBVCVDWCBUQURPVFVHVGUTOVA $.
+
+  $( Move negative sign inside of a division.  (Contributed by Jim Kingdon,
+     27-Feb-2020.) $)
+  divneg2ap $p |- ( ( A e. CC /\ B e. CC /\ B # 0 ) ->
+                   -u ( A / B ) = ( A / -u B ) ) $=
+    ( cc wcel cc0 cap wbr w3a cdiv co cneg divnegap wceq negcl div2negap negneg
+    syl3an1 3ad2ant1 oveq1d 3eqtr2d ) ACDZBCDZBEFGZHZABIJKAKZBIJZUEKZBKZIJZAUHI
+    JABLUAUECDUBUCUIUFMANUEBOQUDUGAUHIUAUBUGAMUCAPRST $.
+
+  ${
+    divclz.1 $e |- A e. CC $.
+    $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+       27-Feb-2020.) $)
+    recclapzi $p |- ( A # 0 -> ( 1 / A ) e. CC ) $=
+      ( cc wcel cc0 cap wbr c1 cdiv co recclap mpan ) ACDAEFGHAIJCDBAKL $.
+
+    $( The reciprocal of a number apart from zero is apart from zero.
+       (Contributed by Jim Kingdon, 27-Feb-2020.) $)
+    recap0apzi $p |- ( A # 0 -> ( 1 / A ) # 0 ) $=
+      ( cc wcel cc0 cap wbr c1 cdiv co recap0 mpan ) ACDAEFGHAIJEFGBAKL $.
+
+    $( Multiplication of a number and its reciprocal.  (Contributed by Jim
+       Kingdon, 27-Feb-2020.) $)
+    recidapzi $p |- ( A # 0 -> ( A x. ( 1 / A ) ) = 1 ) $=
+      ( cc wcel cc0 cap wbr c1 cdiv co cmul wceq recidap mpan ) ACDAEFGAHAIJKJH
+      LBAMN $.
+
+    $( A number divided by 1 is itself.  (Contributed by NM, 9-Jan-2002.) $)
+    div1i $p |- ( A / 1 ) = A $=
+      ( cc wcel c1 cdiv co wceq div1 ax-mp ) ACDAEFGAHBAIJ $.
+
+    $( A number equal to its negative is zero.  (Contributed by NM,
+       29-May-1999.) $)
+    eqnegi $p |- ( A = -u A <-> A = 0 ) $=
+      ( cc wcel cneg wceq cc0 wb eqneg ax-mp ) ACDAAEFAGFHBAIJ $.
+
+    ${
+      recclap.2 $e |- A # 0 $.
+      $( Closure law for reciprocal.  (Contributed by NM, 30-Apr-2005.) $)
+      recclapi $p |- ( 1 / A ) e. CC $=
+        ( cc0 cap wbr c1 cdiv co cc wcel recclapzi ax-mp ) ADEFGAHIJKCABLM $.
+
+      $( Multiplication of a number and its reciprocal.  (Contributed by NM,
+         9-Feb-1995.) $)
+      recidapi $p |- ( A x. ( 1 / A ) ) = 1 $=
+        ( cc0 cap wbr c1 cdiv co cmul wceq recidapzi ax-mp ) ADEFAGAHIJIGKCABLM
+        $.
+
+      $( A number is equal to the reciprocal of its reciprocal.  Theorem I.10
+         of [Apostol] p. 18.  (Contributed by NM, 9-Feb-1995.) $)
+      recrecapi $p |- ( 1 / ( 1 / A ) ) = A $=
+        ( cc wcel cc0 cap wbr c1 cdiv co wceq recrecap mp2an ) ADEAFGHIIAJKJKAL
+        BCAMN $.
+
+      $( A number divided by itself is one.  (Contributed by NM,
+         9-Feb-1995.) $)
+      dividapi $p |- ( A / A ) = 1 $=
+        ( cc wcel cc0 cap wbr cdiv co c1 wceq dividap mp2an ) ADEAFGHAAIJKLBCAM
+        N $.
+
+      $( Division into zero is zero.  (Contributed by NM, 12-Aug-1999.) $)
+      div0api $p |- ( 0 / A ) = 0 $=
+        ( cc wcel cc0 cap wbr cdiv co wceq div0ap mp2an ) ADEAFGHFAIJFKBCALM $.
+    $}
+
+    divclz.2 $e |- B e. CC $.
+    $( Closure law for division.  (Contributed by Jim Kingdon, 27-Feb-2020.) $)
+    divclapzi $p |- ( B # 0 -> ( A / B ) e. CC ) $=
+      ( cc wcel cc0 cap wbr cdiv co divclap mp3an12 ) AEFBEFBGHIABJKEFCDABLM $.
+
+    $( A cancellation law for division.  (Contributed by Jim Kingdon,
+       27-Feb-2020.) $)
+    divcanap1zi $p |- ( B # 0 -> ( ( A / B ) x. B ) = A ) $=
+      ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap1 mp3an12 ) AEFBEFBGHIABJ
+      KBLKAMCDABNO $.
+
+    $( A cancellation law for division.  (Contributed by Jim Kingdon,
+       27-Feb-2020.) $)
+    divcanap2zi $p |- ( B # 0 -> ( B x. ( A / B ) ) = A ) $=
+      ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap2 mp3an12 ) AEFBEFBGHIBAB
+      JKLKAMCDABNO $.
+
+    $( Relationship between division and reciprocal.  (Contributed by Jim
+       Kingdon, 27-Feb-2020.) $)
+    divrecapzi $p |- ( B # 0 -> ( A / B ) = ( A x. ( 1 / B ) ) ) $=
+      ( cc wcel cc0 cap wbr cdiv co c1 cmul wceq divrecap mp3an12 ) AEFBEFBGHIA
+      BJKALBJKMKNCDABOP $.
+
+    $( A cancellation law for division.  (Contributed by Jim Kingdon,
+       27-Feb-2020.) $)
+    divcanap3zi $p |- ( B # 0 -> ( ( B x. A ) / B ) = A ) $=
+      ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap3 mp3an12 ) AEFBEFBGHIBAJ
+      KBLKAMCDABNO $.
+
+    $( A cancellation law for division.  (Contributed by Jim Kingdon,
+       27-Feb-2020.) $)
+    divcanap4zi $p |- ( B # 0 -> ( ( A x. B ) / B ) = A ) $=
+      ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap4 mp3an12 ) AEFBEFBGHIABJ
+      KBLKAMCDABNO $.
+
+    $( Reciprocal is one-to-one.  (Contributed by Jim Kingdon, 28-Feb-2020.) $)
+    rec11api $p |- ( ( A # 0 /\ B # 0 ) ->
+               ( ( 1 / A ) = ( 1 / B ) <-> A = B ) ) $=
+      ( cc0 cap wbr cc wcel c1 cdiv co wceq wb wa rec11ap mpanl1 mpanr1 ) AEFGZ
+      BHIZBEFGZJAKLJBKLMABMNZDAHISTUAOUBCABPQR $.
+
+    ${
+      divclap.3 $e |- B # 0 $.
+      $( Closure law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divclapi $p |- ( A / B ) e. CC $=
+        ( cc wcel cc0 cap wbr cdiv co divclap mp3an ) AFGBFGBHIJABKLFGCDEABMN
+        $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divcanap2i $p |- ( B x. ( A / B ) ) = A $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap2 mp3an ) AFGBFGBHIJBAB
+        KLMLANCDEABOP $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divcanap1i $p |- ( ( A / B ) x. B ) = A $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap1 mp3an ) AFGBFGBHIJABK
+        LBMLANCDEABOP $.
+
+      $( Relationship between division and reciprocal.  (Contributed by Jim
+         Kingdon, 28-Feb-2020.) $)
+      divrecapi $p |- ( A / B ) = ( A x. ( 1 / B ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co c1 cmul wceq divrecap mp3an ) AFGBFGBHIJA
+        BKLAMBKLNLOCDEABPQ $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divcanap3i $p |- ( ( B x. A ) / B ) = A $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap3 mp3an ) AFGBFGBHIJBAK
+        LBMLANCDEABOP $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      divcanap4i $p |- ( ( A x. B ) / B ) = A $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap4 mp3an ) AFGBFGBHIJABK
+        LBMLANCDEABOP $.
+    $}
+
+    ${
+      divap0i.3 $e |- A # 0 $.
+      divap0.i4 $e |- B # 0 $.
+      $( The ratio of numbers apart from zero is apart from zero.  (Contributed
+         by Jim Kingdon, 28-Feb-2020.) $)
+      divap0i $p |- ( A / B ) # 0 $=
+        ( cc wcel cc0 cap wbr cdiv co divap0 mp4an ) AGHAIJKBGHBIJKABLMIJKCEDFA
+        BNO $.
+
+      $( Reciprocal is one-to-one.  (Contributed by Jim Kingdon,
+         28-Feb-2020.) $)
+      rec11apii $p |- ( ( 1 / A ) = ( 1 / B ) <-> A = B ) $=
+        ( cc0 cap wbr c1 cdiv co wceq wb rec11api mp2an ) AGHIBGHIJAKLJBKLMABMN
+        EFABCDOP $.
+    $}
+
+    divmulz.3 $e |- C e. CC $.
+    $( An associative law for division.  (Contributed by Jim Kingdon,
+       28-Feb-2020.) $)
+    divassapzi $p |- ( C # 0 -> ( ( A x. B ) / C ) = ( A x. ( B / C ) ) ) $=
+      ( cc wcel cc0 cap wbr cmul co cdiv wceq wa divassap mp3an12 mpan ) CGHZCI
+      JKZABLMCNMABCNMLMOZFAGHBGHTUAPUBDEABCQRS $.
+
+    $( Relationship between division and multiplication.  (Contributed by Jim
+       Kingdon, 28-Feb-2020.) $)
+    divmulapzi $p |- ( B # 0 -> ( ( A / B ) = C <-> ( B x. C ) = A ) ) $=
+      ( cc wcel cc0 cap wbr cdiv co wceq cmul wb wa divmulap mp3an12 mpan ) BGH
+      ZBIJKZABLMCNBCOMANPZEAGHCGHUAUBQUCDFACBRST $.
+
+    $( Distribution of division over addition.  (Contributed by Jim Kingdon,
+       28-Feb-2020.) $)
+    divdirapzi $p |- ( C # 0 ->
+                    ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) ) $=
+      ( cc wcel cc0 cap wbr caddc co cdiv wceq wa divdirap mp3an12 mpan ) CGHZC
+      IJKZABLMCNMACNMBCNMLMOZFAGHBGHTUAPUBDEABCQRS $.
+
+    $( Swap denominators in a division.  (Contributed by Jim Kingdon,
+       28-Feb-2020.) $)
+    divdiv23apzi $p |- ( ( B # 0 /\ C # 0 ) ->
+                ( ( A / B ) / C ) = ( ( A / C ) / B ) ) $=
+      ( cc0 cap wbr cc wcel cdiv co wceq wa divdiv32ap mp3an1 mpanl1 mpanr1 ) B
+      GHIZCJKZCGHIZABLMCLMACLMBLMNZFBJKZTUAUBOZUCEAJKUDTOUEUCDABCPQRS $.
+
+    ${
+      divmulapi.4 $e |- B # 0 $.
+      $( Relationship between division and multiplication.  (Contributed by Jim
+         Kingdon, 29-Feb-2020.) $)
+      divmulapi $p |- ( ( A / B ) = C <-> ( B x. C ) = A ) $=
+        ( cc0 cap wbr cdiv co wceq cmul wb divmulapzi ax-mp ) BHIJABKLCMBCNLAMO
+        GABCDEFPQ $.
+
+      divdiv32api.5 $e |- C # 0 $.
+      $( Swap denominators in a division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divdiv32api $p |- ( ( A / B ) / C ) = ( ( A / C ) / B ) $=
+        ( cc0 cap wbr cdiv co wceq divdiv23apzi mp2an ) BIJKCIJKABLMCLMACLMBLMN
+        GHABCDEFOP $.
+    $}
+
+    ${
+      divassap.4 $e |- C # 0 $.
+      $( An associative law for division.  (Contributed by Jim Kingdon,
+         9-Mar-2020.) $)
+      divassapi $p |- ( ( A x. B ) / C ) = ( A x. ( B / C ) ) $=
+        ( cc wcel cc0 cap wbr wa cmul co cdiv wceq pm3.2i divassap mp3an ) AHIB
+        HICHIZCJKLZMABNOCPOABCPONOQDEUAUBFGRABCST $.
+
+      $( Distribution of division over addition.  (Contributed by Jim Kingdon,
+         9-Mar-2020.) $)
+      divdirapi $p |- ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) $=
+        ( cc wcel cc0 cap wbr wa caddc co cdiv wceq pm3.2i divdirap mp3an ) AHI
+        BHICHIZCJKLZMABNOCPOACPOBCPONOQDEUAUBFGRABCST $.
+
+      $( A commutative/associative law for division.  (Contributed by Jim
+         Kingdon, 9-Mar-2020.) $)
+      div23api $p |- ( ( A x. B ) / C ) = ( ( A / C ) x. B ) $=
+        ( cc wcel cc0 cap wbr wa cmul co cdiv wceq pm3.2i div23ap mp3an ) AHIBH
+        ICHIZCJKLZMABNOCPOACPOBNOQDEUAUBFGRABCST $.
+
+      $( One-to-one relationship for division.  (Contributed by Jim Kingdon,
+         9-Mar-2020.) $)
+      div11api $p |- ( ( A / C ) = ( B / C ) <-> A = B ) $=
+        ( cc wcel cc0 cap wbr wa cdiv co wceq wb pm3.2i div11ap mp3an ) AHIBHIC
+        HIZCJKLZMACNOBCNOPABPQDEUAUBFGRABCST $.
+    $}
+
+    divmuldivap.4 $e |- D e. CC $.
+    divmuldivap.5 $e |- B # 0 $.
+    divmuldivap.6 $e |- D # 0 $.
+    $( Multiplication of two ratios.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    divmuldivapi $p |- ( ( A / B ) x. ( C / D ) ) =
+                      ( ( A x. C ) / ( B x. D ) ) $=
+      ( cc wcel cc0 cap wbr wa cdiv co cmul pm3.2i wceq divmuldivap mp4an ) AKL
+      CKLBKLZBMNOZPDKLZDMNOZPABQRCDQRSRACSRBDSRQRUAEGUDUEFITUFUGHJTACBDUBUC $.
+
+    $( Swap denominators of two ratios.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    divmul13api $p |- ( ( A / B ) x. ( C / D ) ) =
+                   ( ( C / B ) x. ( A / D ) ) $=
+      ( cc wcel cc0 cap wbr wa cdiv co cmul pm3.2i wceq divmul13ap mp4an ) AKLC
+      KLBKLZBMNOZPDKLZDMNOZPABQRCDQRSRCBQRADQRSRUAEGUDUEFITUFUGHJTACBDUBUC $.
+
+    $( Addition of two ratios.  (Contributed by Jim Kingdon, 9-Mar-2020.) $)
+    divadddivapi $p |- ( ( A / B ) + ( C / D ) ) =
+                      ( ( ( A x. D ) + ( C x. B ) ) / ( B x. D ) ) $=
+      ( cc wcel cc0 cap wbr wa cdiv co caddc cmul wceq pm3.2i divadddivap mp4an
+      ) AKLCKLBKLZBMNOZPDKLZDMNOZPABQRCDQRSRADTRCBTRSRBDTRQRUAEGUEUFFIUBUGUHHJU
+      BACBDUCUD $.
+
+    divdivdivap.7 $e |- C # 0 $.
+    $( Division of two ratios.  (Contributed by Jim Kingdon, 9-Mar-2020.) $)
+    divdivdivapi $p |- ( ( A / B ) / ( C / D ) )
+                        = ( ( A x. D ) / ( B x. C ) ) $=
+      ( cc wcel cc0 cap wbr wa cdiv co pm3.2i cmul wceq divdivdivap mp4an ) ALM
+      BLMZBNOPZQCLMZCNOPZQDLMZDNOPZQABRSCDRSRSADUASBCUASRSUBEUEUFFITUGUHGKTUIUJ
+      HJTABCDUCUD $.
+  $}
+
+  ${
+    $d x y B $.
+    redivclap.1 $e |- A e. RR $.
+    $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    rerecclapzi $p |- ( A # 0 -> ( 1 / A ) e. RR ) $=
+      ( cr wcel cc0 cap wbr c1 cdiv co rerecclap mpan ) ACDAEFGHAIJCDBAKL $.
+
+    ${
+      rerecclap.2 $e |- A # 0 $.
+      $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+         9-Mar-2020.) $)
+      rerecclapi $p |- ( 1 / A ) e. RR $=
+        ( cc0 cap wbr c1 cdiv co cr wcel rerecclapzi ax-mp ) ADEFGAHIJKCABLM $.
+    $}
+
+    redivclap.2 $e |- B e. RR $.
+    $( Closure law for division of reals.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    redivclapzi $p |- ( B # 0 -> ( A / B ) e. RR ) $=
+      ( cr wcel cc0 cap wbr cdiv co redivclap mp3an12 ) AEFBEFBGHIABJKEFCDABLM
+      $.
+
+    redivclap.3 $e |- B # 0 $.
+    $( Closure law for division of reals.  (Contributed by Jim Kingdon,
+       9-Mar-2020.) $)
+    redivclapi $p |- ( A / B ) e. RR $=
+      ( cc0 cap wbr cdiv co cr wcel redivclapzi ax-mp ) BFGHABIJKLEABCDMN $.
+  $}
+
+  ${
+    div1d.1 $e |- ( ph -> A e. CC ) $.
+    $( A number divided by 1 is itself.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    div1d $p |- ( ph -> ( A / 1 ) = A ) $=
+      ( cc wcel c1 cdiv co wceq div1 syl ) ABDEBFGHBICBJK $.
+
+    ${
+      reccld.2 $e |- ( ph -> A # 0 ) $.
+      $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      recclapd $p |- ( ph -> ( 1 / A ) e. CC ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co recclap syl2anc ) ABEFBGHIJBKLEFCDBMN
+        $.
+
+      $( The reciprocal of a number apart from zero is apart from zero.
+         (Contributed by Jim Kingdon, 3-Mar-2020.) $)
+      recap0d $p |- ( ph -> ( 1 / A ) # 0 ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co recap0 syl2anc ) ABEFBGHIJBKLGHICDBMN
+        $.
+
+      $( Multiplication of a number and its reciprocal.  (Contributed by Jim
+         Kingdon, 3-Mar-2020.) $)
+      recidapd $p |- ( ph -> ( A x. ( 1 / A ) ) = 1 ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co cmul wceq recidap syl2anc ) ABEFBGHIBJ
+        BKLMLJNCDBOP $.
+
+      $( Multiplication of a number and its reciprocal.  (Contributed by Jim
+         Kingdon, 3-Mar-2020.) $)
+      recidap2d $p |- ( ph -> ( ( 1 / A ) x. A ) = 1 ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co cmul wceq recidap2 syl2anc ) ABEFBGHIJ
+        BKLBMLJNCDBOP $.
+
+      $( A number is equal to the reciprocal of its reciprocal.  (Contributed
+         by Jim Kingdon, 3-Mar-2020.) $)
+      recrecapd $p |- ( ph -> ( 1 / ( 1 / A ) ) = A ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co wceq recrecap syl2anc ) ABEFBGHIJJBKLK
+        LBMCDBNO $.
+
+      $( A number divided by itself is one.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      dividapd $p |- ( ph -> ( A / A ) = 1 ) $=
+        ( cc wcel cc0 cap wbr cdiv co c1 wceq dividap syl2anc ) ABEFBGHIBBJKLMC
+        DBNO $.
+
+      $( Division into zero is zero.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      div0apd $p |- ( ph -> ( 0 / A ) = 0 ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq div0ap syl2anc ) ABEFBGHIGBJKGLCDBMN
+        $.
+    $}
+
+    divcld.2 $e |- ( ph -> B e. CC ) $.
+    ${
+      divclapd.3 $e |- ( ph -> B # 0 ) $.
+      $( Closure law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divclapd $p |- ( ph -> ( A / B ) e. CC ) $=
+        ( cc wcel cc0 cap wbr cdiv co divclap syl3anc ) ABGHCGHCIJKBCLMGHDEFBCN
+        O $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divcanap1d $p |- ( ph -> ( ( A / B ) x. B ) = A ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap1 syl3anc ) ABGHCGHCIJK
+        BCLMCNMBODEFBCPQ $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divcanap2d $p |- ( ph -> ( B x. ( A / B ) ) = A ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divcanap2 syl3anc ) ABGHCGHCIJK
+        CBCLMNMBODEFBCPQ $.
+
+      $( Relationship between division and reciprocal.  Theorem I.9 of
+         [Apostol] p. 18.  (Contributed by Jim Kingdon, 29-Feb-2020.) $)
+      divrecapd $p |- ( ph -> ( A / B ) = ( A x. ( 1 / B ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co c1 cmul wceq divrecap syl3anc ) ABGHCGHCI
+        JKBCLMBNCLMOMPDEFBCQR $.
+
+      $( Relationship between division and reciprocal.  (Contributed by Jim
+         Kingdon, 29-Feb-2020.) $)
+      divrecap2d $p |- ( ph -> ( A / B ) = ( ( 1 / B ) x. A ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co c1 cmul wceq divrecap2 syl3anc ) ABGHCGHC
+        IJKBCLMNCLMBOMPDEFBCQR $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divcanap3d $p |- ( ph -> ( ( B x. A ) / B ) = A ) $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap3 syl3anc ) ABGHCGHCIJK
+        CBLMCNMBODEFBCPQ $.
+
+      $( A cancellation law for division.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      divcanap4d $p |- ( ph -> ( ( A x. B ) / B ) = A ) $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap4 syl3anc ) ABGHCGHCIJK
+        BCLMCNMBODEFBCPQ $.
+    $}
+
+    ${
+      divap0d.3 $e |- ( ph -> A # 0 ) $.
+      divap0d.4 $e |- ( ph -> B # 0 ) $.
+      $( The ratio of numbers apart from zero is apart from zero.  (Contributed
+         by Jim Kingdon, 3-Mar-2020.) $)
+      divap0d $p |- ( ph -> ( A / B ) # 0 ) $=
+        ( cc wcel cc0 cap wbr cdiv co divap0 syl22anc ) ABHIBJKLCHICJKLBCMNJKLD
+        FEGBCOP $.
+
+      $( The reciprocal of a ratio.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      recdivapd $p |- ( ph -> ( 1 / ( A / B ) ) = ( B / A ) ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co wceq recdivap syl22anc ) ABHIBJKLCHICJ
+        KLMBCNONOCBNOPDFEGBCQR $.
+
+      $( Division into a reciprocal.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      recdivap2d $p |- ( ph -> ( ( 1 / A ) / B ) = ( 1 / ( A x. B ) ) ) $=
+        ( cc wcel cc0 cap wbr c1 cdiv co cmul wceq recdivap2 syl22anc ) ABHIBJK
+        LCHICJKLMBNOCNOMBCPONOQDFEGBCRS $.
+
+      $( Cancellation of inverted fractions.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      divcanap6d $p |- ( ph -> ( ( A / B ) x. ( B / A ) ) = 1 ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul c1 wceq divcanap6 syl22anc ) ABHIBJK
+        LCHICJKLBCMNCBMNONPQDFEGBCRS $.
+
+      $( Cancellation in a double division.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      ddcanapd $p |- ( ph -> ( A / ( A / B ) ) = B ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq ddcanap syl22anc ) ABHIBJKLCHICJKLBB
+        CMNMNCODFEGBCPQ $.
+
+      rec11d.5 $e |- ( ph -> ( 1 / A ) = ( 1 / B ) ) $.
+      $( Reciprocal is one-to-one.  (Contributed by Jim Kingdon,
+         3-Mar-2020.) $)
+      rec11apd $p |- ( ph -> A = B ) $=
+        ( c1 cdiv co wceq cc wcel cc0 cap wbr wb rec11ap syl22anc mpbid ) AIBJK
+        ICJKLZBCLZHABMNBOPQCMNCOPQUBUCRDFEGBCSTUA $.
+    $}
+
+    divmuld.3 $e |- ( ph -> C e. CC ) $.
+    ${
+      divmulapd.4 $e |- ( ph -> B # 0 ) $.
+      $( Relationship between division and multiplication.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      divmulapd $p |- ( ph -> ( ( A / B ) = C <-> ( B x. C ) = A ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq cmul wb divmulap syl112anc ) ABIJDIJ
+        CIJCKLMBCNODPCDQOBPREGFHBDCST $.
+
+      $( A commutative/associative law for division.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      div32apd $p |- ( ph -> ( ( A / B ) x. C ) = ( A x. ( C / B ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq div32ap syl121anc ) ABIJCIJCKLM
+        DIJBCNODPOBDCNOPOQEFHGBCDRS $.
+
+      $( A commutative/associative law for division.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      div13apd $p |- ( ph -> ( ( A / B ) x. C ) = ( ( C / B ) x. A ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq div13ap syl121anc ) ABIJCIJCKLM
+        DIJBCNODPODCNOBPOQEFHGBCDRS $.
+
+      divdiv23apd.5 $e |- ( ph -> C # 0 ) $.
+      $( Swap denominators in a division.  (Contributed by Jim Kingdon,
+         8-Mar-2020.) $)
+      divdiv32apd $p |- ( ph -> ( ( A / B ) / C ) = ( ( A / C ) / B ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq divdiv32ap syl122anc ) ABJKCJKCLMNDJ
+        KDLMNBCOPDOPBDOPCOPQEFHGIBCDRS $.
+
+      $( Cancellation of common factor in a ratio.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      divcanap5d $p |- ( ph -> ( ( C x. A ) / ( C x. B ) ) = ( A / B ) ) $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divcanap5 syl122anc ) ABJKCJKCL
+        MNDJKDLMNDBOPDCOPQPBCQPREFHGIBCDST $.
+
+      $( Cancellation of common factor in a ratio.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      divcanap5rd $p |- ( ph -> ( ( A x. C ) / ( B x. C ) ) = ( A / B ) ) $=
+        ( cmul co cdiv mulcomd oveq12d divcanap5d eqtrd ) ABDJKZCDJKZLKDBJKZDCJ
+        KZLKBCLKAQSRTLABDEGMACDFGMNABCDEFGHIOP $.
+
+      $( Cancel equal divisors in a division.  (Contributed by Jim Kingdon,
+         8-Mar-2020.) $)
+      divcanap7d $p |- ( ph -> ( ( A / C ) / ( B / C ) ) = ( A / B ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq divcanap7 syl122anc ) ABJKCJKCLMNDJK
+        DLMNBDOPCDOPOPBCOPQEFHGIBCDRS $.
+
+      $( Cancellation law for division and multiplication.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      dmdcanapd $p |- ( ph -> ( ( B / C ) x. ( A / B ) ) = ( A / C ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq dmdcanap syl221anc ) ACJKCLMNDJ
+        KDLMNBJKCDOPBCOPQPBDOPRFHGIECDBST $.
+
+      $( Cancellation law for division and multiplication.  (Contributed by Jim
+         Kingdon, 8-Mar-2020.) $)
+      dmdcanap2d $p |- ( ph -> ( ( A / B ) x. ( B / C ) ) = ( A / C ) ) $=
+        ( cdiv co cmul divclapd mulcomd dmdcanapd eqtrd ) ABCJKZCDJKZLKRQLKBDJK
+        AQRABCEFHMACDFGIMNABCDEFGHIOP $.
+
+      $( Division into a fraction.  (Contributed by Jim Kingdon,
+         8-Mar-2020.) $)
+      divdivap1d $p |- ( ph -> ( ( A / B ) / C ) = ( A / ( B x. C ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divdivap1 syl122anc ) ABJKCJKCL
+        MNDJKDLMNBCOPDOPBCDQPOPREFHGIBCDST $.
+
+      $( Division by a fraction.  (Contributed by Jim Kingdon, 8-Mar-2020.) $)
+      divdivap2d $p |- ( ph -> ( A / ( B / C ) ) = ( ( A x. C ) / B ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq divdivap2 syl122anc ) ABJKCJKCL
+        MNDJKDLMNBCDOPOPBDQPCOPREFHGIBCDST $.
+    $}
+
+    ${
+      divassapd.4 $e |- ( ph -> C # 0 ) $.
+      $( Relationship between division and multiplication.  (Contributed by Jim
+         Kingdon, 2-Mar-2020.) $)
+      divmulap2d $p |- ( ph -> ( ( A / C ) = B <-> A = ( C x. B ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq cmul wb divmulap2 syl112anc ) ABIJCI
+        JDIJDKLMBDNOCPBDCQOPREFGHBCDST $.
+
+      $( Relationship between division and multiplication.  (Contributed by Jim
+         Kingdon, 2-Mar-2020.) $)
+      divmulap3d $p |- ( ph -> ( ( A / C ) = B <-> A = ( B x. C ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co wceq cmul wb divmulap3 syl112anc ) ABIJCI
+        JDIJDKLMBDNOCPBCDQOPREFGHBCDST $.
+
+      $( An associative law for division.  (Contributed by Jim Kingdon,
+         2-Mar-2020.) $)
+      divassapd $p |- ( ph -> ( ( A x. B ) / C ) = ( A x. ( B / C ) ) ) $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq divassap syl112anc ) ABIJCIJDIJ
+        DKLMBCNODPOBCDPONOQEFGHBCDRS $.
+
+      $( A commutative/associative law for division.  (Contributed by Jim
+         Kingdon, 2-Mar-2020.) $)
+      div12apd $p |- ( ph -> ( A x. ( B / C ) ) = ( B x. ( A / C ) ) ) $=
+        ( cc wcel cc0 cap wbr cdiv co cmul wceq div12ap syl112anc ) ABIJCIJDIJD
+        KLMBCDNOPOCBDNOPOQEFGHBCDRS $.
+
+      $( A commutative/associative law for division.  (Contributed by Jim
+         Kingdon, 2-Mar-2020.) $)
+      div23apd $p |- ( ph -> ( ( A x. B ) / C ) = ( ( A / C ) x. B ) ) $=
+        ( cc wcel cc0 cap wbr cmul co cdiv wceq div23ap syl112anc ) ABIJCIJDIJD
+        KLMBCNODPOBDPOCNOQEFGHBCDRS $.
+
+      $( Distribution of division over addition.  (Contributed by Jim Kingdon,
+         2-Mar-2020.) $)
+      divdirapd $p |- ( ph ->
+          ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) ) $=
+        ( cc wcel cc0 cap wbr caddc co cdiv wceq divdirap syl112anc ) ABIJCIJDI
+        JDKLMBCNODPOBDPOCDPONOQEFGHBCDRS $.
+
+      $( Distribution of division over subtraction.  (Contributed by Jim
+         Kingdon, 2-Mar-2020.) $)
+      divsubdirapd $p |- ( ph ->
+          ( ( A - B ) / C ) = ( ( A / C ) - ( B / C ) ) ) $=
+        ( cc wcel cc0 cap wbr cmin co cdiv wceq divsubdirap syl112anc ) ABIJCIJ
+        DIJDKLMBCNODPOBDPOCDPONOQEFGHBCDRS $.
+
+      div11apd.5 $e |- ( ph -> ( A / C ) = ( B / C ) ) $.
+      $( One-to-one relationship for division.  (Contributed by Jim Kingdon,
+         2-Mar-2020.) $)
+      div11apd $p |- ( ph -> A = B ) $=
+        ( cdiv co wceq cc wcel cc0 cap wbr wb div11ap syl112anc mpbid ) ABDJKCD
+        JKLZBCLZIABMNCMNDMNDOPQUBUCREFGHBCDSTUA $.
+    $}
+  $}
+
+  ${
+    $d x y B $.
+    redivclapd.1 $e |- ( ph -> A e. RR ) $.
+    ${
+      rerecclapd.2 $e |- ( ph -> A # 0 ) $.
+      $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
+         29-Feb-2020.) $)
+      rerecclapd $p |- ( ph -> ( 1 / A ) e. RR ) $=
+        ( cr wcel cc0 cap wbr c1 cdiv co rerecclap syl2anc ) ABEFBGHIJBKLEFCDBM
+        N $.
+    $}
+
+    redivclapd.2 $e |- ( ph -> B e. RR ) $.
+    redivclapd.3 $e |- ( ph -> B # 0 ) $.
+    $( Closure law for division of reals.  (Contributed by Jim Kingdon,
+       29-Feb-2020.) $)
+    redivclapd $p |- ( ph -> ( A / B ) e. RR ) $=
+      ( cr wcel cc0 cap wbr cdiv co redivclap syl3anc ) ABGHCGHCIJKBCLMGHDEFBCN
+      O $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordering on reals (cont.)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( A number is less than itself plus 1.  (Contributed by NM, 20-Aug-2001.) $)
+  ltp1 $p |- ( A e. RR -> A < ( A + 1 ) ) $=
+    ( c1 cr wcel caddc co clt wbr 1re wa cc0 0lt1 ltaddpos mpbii mpan ) BCDZACD
+    ZAABEFGHZIPQJKBGHRLBAMNO $.
+
+  $( A number is less than or equal to itself plus 1.  (Contributed by NM,
+     5-Jan-2006.) $)
+  lep1 $p |- ( A e. RR -> A <_ ( A + 1 ) ) $=
+    ( cr wcel c1 caddc co clt wbr cle ltp1 wi peano2re ltle mpdan mpd ) ABCZAAD
+    EFZGHZAQIHZAJPQBCRSKALAQMNO $.
+
+  $( A number minus 1 is less than itself.  (Contributed by NM, 9-Apr-2006.) $)
+  ltm1 $p |- ( A e. RR -> ( A - 1 ) < A ) $=
+    ( cr wcel c1 cmin co cc0 clt wbr 0lt1 wb 0re 1re mp3an12 mpbii recn subid1d
+    ltsub2 breqtrd ) ABCZADEFZAGEFZAHTGDHIZUAUBHIZJGBCDBCTUCUDKLMGDARNOTAAPQS
+    $.
+
+  $( A number minus 1 is less than or equal to itself.  (Contributed by Mario
+     Carneiro, 2-Oct-2015.) $)
+  lem1 $p |- ( A e. RR -> ( A - 1 ) <_ A ) $=
+    ( cr wcel c1 cmin co clt wbr cle ltm1 wi peano2rem ltle mpancom mpd ) ABCZA
+    DEFZAGHZQAIHZAJQBCPRSKALQAMNO $.
+
+  $( A transitive property of 'less than or equal' and plus 1.  (Contributed by
+     NM, 5-Aug-2005.) $)
+  letrp1 $p |- ( ( A e. RR /\ B e. RR /\ A <_ B ) -> A <_ ( B + 1 ) ) $=
+    ( cr wcel cle wbr w3a c1 caddc co clt wa adantl peano2re ancli lelttr 3expb
+    ltp1 wi sylan2 mpan2d 3impia ltle 3adant3 mpd ) ACDZBCDZABEFZGABHIJZKFZAUIE
+    FZUFUGUHUJUFUGLUHBUIKFZUJUGULUFBRMUGUFUGUICDZLUHULLUJSZUGUMBNZOUFUGUMUNABUI
+    PQTUAUBUFUGUJUKSZUHUGUFUMUPUOAUIUCTUDUE $.
+
+  $( A transitive property of plus 1 and 'less than or equal'.  (Contributed by
+     NM, 16-Aug-2005.) $)
+  p1le $p |- ( ( A e. RR /\ B e. RR /\ ( A + 1 ) <_ B ) -> A <_ B ) $=
+    ( cr wcel c1 caddc co cle wa lep1 adantr wi peano2re ancli letr 3expa sylan
+    wbr mpand 3impia ) ACDZBCDZAEFGZBHRZABHRZUAUBIAUCHRZUDUEUAUFUBAJKUAUAUCCDZI
+    UBUFUDIUELZUAUGAMNUAUGUBUHAUCBOPQST $.
+
+  $( The reciprocal of a positive number is positive.  Exercise 4 of [Apostol]
+     p. 21.  (Contributed by NM, 25-Aug-1999.)  (Revised by Mario Carneiro,
+     27-May-2016.) $)
+  recgt0 $p |- ( ( A e. RR /\ 0 < A ) -> 0 < ( 1 / A ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 co cap 0re cneg cmul adantr rerecclapd lt0neg1d
+    wn cc syl2anc wb cdiv cle 0lt1 1re ax-mp simpll gt0ap0 renegcld simpr simpl
+    ltnsymi mpbid simplr mulgt0d recnd recclap mulneg1d recidap2 negeqd breqtrd
+    wceq eqtrd 1red mpbird ex mtoi lenlt sylancr recap0 apsym sylancl mpbir2and
+    0cn ltleap ) ABCZDAEFZGZDHAUAIZEFZDVRUBFZDVRJFZVQVTVRDEFZQZVQWBHDEFZDHEFWDQ
+    UCDHKUDUKUEVQWBWDVQWBGZWDDHLZEFWEDVRLZAMIZWFEWEWGAWEVRWEAVOVPWBUFZVQADJFZWB
+    AUGZNZOUHWIWEWBDWGEFVQWBUIWEVRVQVRBCZWBVQAVOVPUJZWKOZNPULVOVPWBUMUNWEWHVRAM
+    IZLWFWEVRAWEARCZWJVRRCZVQWQWBVQAWNUOZNZWLAUPZSWTUQWEWPHWEWQWJWPHVAWTWLAURSU
+    SVBUTWEHWEVCPVDVEVFVQDBCZWMVTWCTKWODVRVGVHVDVQVRDJFZWAVQWQWJXCWSWKAVISVQWRD
+    RCXCWATVQWQWJWRWSWKXASVMVRDVJVKULVQXBWMVSVTWAGTKWODVRVNVHVL $.
+
+  $( Infer that a multiplicand is positive from a positive multiplier and
+     positive product.  See ~ prodgt0 for the same theorem with ` 0 < A `
+     replaced by the weaker condition ` 0 <_ A ` .  (Contributed by Jim
+     Kingdon, 29-Feb-2020.) $)
+  prodgt0gt0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 < A /\ 0 < ( A x. B ) ) )
+                 -> 0 < B ) $=
+    ( cr wcel wa cc0 clt wbr cmul co cdiv simpll simplr remulcld simprl gt0ap0d
+    c1 rerecclapd simprr recnd recgt0 mulgt0d divrecapd simpr adantr divcanap3d
+    ad2ant2r cc eqtr3d breqtrd ) ACDZBCDZEZFAGHZFABIJZGHZEZEZFUOQAKJZIJZBGURUOU
+    SURABUKULUQLZUKULUQMNZURAVAURAVAUMUNUPOPZRUMUNUPSUKUNFUSGHULUPAUAUGUBURUOAK
+    JUTBURUOAURUOVBTURAVATZVCUCURBAUMBUHDUQUMBUKULUDTUEVDVCUFUIUJ $.
+
+  $( Infer that a multiplicand is positive from a nonnegative multiplier and
+     positive product.  (Contributed by NM, 24-Apr-2005.)  (Revised by Mario
+     Carneiro, 27-May-2016.) $)
+  prodgt0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ 0 < ( A x. B ) ) )
+                 -> 0 < B ) $=
+    ( cr wcel wa cc0 cle wbr cmul co clt wn cneg renegcld lt0neg1d recnd negcld
+    cap mpbird 0red simpllr simplll simplr biimpa simprr simpll mulcomd breqtrd
+    mul2negd breqtrrd adantr prodgt0gt0 syl22anc lenltd mpbid pm2.65da remulcld
+    simplrl gt0ap0d mulap0bbd cc wb 0cnd apsym syl2anc ltleap mpbir2and ) ACDZB
+    CDZEZFAGHZFABIJZKHZEZEZFBKHZFBGHZFBRHZVOVQBFKHZLVOVSAFKHZVOVSEZVTFAMZKHZWAB
+    MZCDWBCDFWDKHZFWDWBIJZKHZWCWABVHVIVNVSUANWAAVHVIVNVSUBZNVOVSWEVOBVHVIVNUCZO
+    UDVOWGVSVOFWBWDIJZWFKVOFVLWJKVJVKVMUEZVOABVOAVHVIVNUFZPZVOBWIPZUIUJVOWBWDVO
+    AWMQVOBWNQUGUHUKWDWBULUMWAAWHOSWAVKVTLVJVKVMVSURWAFAWATWHUNUOUPVOFBVOTZWIUN
+    SVOBFRHZVRVOABWMWNVOVLVOABWLWIUQWKUSUTVOBVADFVADWPVRVBWNVOVCBFVDVEUOVOFCDVI
+    VPVQVREVBWOWIFBVFVEVG $.
+
+  $( Infer that a multiplier is positive from a nonnegative multiplicand and
+     positive product.  (Contributed by NM, 24-Apr-2005.) $)
+  prodgt02 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ B /\ 0 < ( A x. B ) ) )
+                 -> 0 < A ) $=
+    ( cr wcel wa cc0 cle wbr cmul co clt cc wceq mulcom syl2an breq2d biimpd wi
+    recn prodgt0 ex ancoms sylan2d imp ) ACDZBCDZEZFBGHZFABIJZKHZEFAKHZUGUJFBAI
+    JZKHZUHUKUGUJUMUGUIULFKUEALDBLDUIULMUFASBSABNOPQUFUEUHUMEZUKRUFUEEUNUKBATUA
+    UBUCUD $.
+
+  $( Infer that a multiplicand is nonnegative from a positive multiplier and
+     nonnegative product.  (Contributed by NM, 2-Jul-2005.)  (Revised by Mario
+     Carneiro, 27-May-2016.) $)
+  prodge0 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 < A /\ 0 <_ ( A x. B ) ) )
+                 -> 0 <_ B ) $=
+    ( cr wcel wa cc0 clt wbr cmul co cle wn cneg simpll renegcld recnd lt0neg1d
+    simplr 3imtr4d lenltd simprl simprr mulgt0d mulneg2d breqtrd remulcld con3d
+    expr 0red impr ) ACDZBCDZEZFAGHZFABIJZKHZFBKHZUMUNEZUOFGHZLBFGHZLUPUQURUTUS
+    URFBMZGHZFUOMZGHZUTUSUMUNVBVDUMUNVBEZEZFAVAIJVCGVFAVAUKULVENZVFBUKULVERZOUM
+    UNVBUAUMUNVBUBUCVFABVFAVGPVFBVHPUDUEUHURBUKULUNRZQURUOURABUKULUNNVIUFZQSUGU
+    RFUOURUIZVJTURFBVKVITSUJ $.
+
+  $( Infer that a multiplier is nonnegative from a positive multiplicand and
+     nonnegative product.  (Contributed by NM, 2-Jul-2005.) $)
+  prodge02 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 < B /\ 0 <_ ( A x. B ) ) )
+                 -> 0 <_ A ) $=
+    ( cr wcel wa cc0 clt wbr cmul co cle cc wceq mulcom syl2an breq2d biimpd wi
+    recn prodge0 ex ancoms sylan2d imp ) ACDZBCDZEZFBGHZFABIJZKHZEFAKHZUGUJFBAI
+    JZKHZUHUKUGUJUMUGUIULFKUEALDBLDUIULMUFASBSABNOPQUFUEUHUMEZUKRUFUEEUNUKBATUA
+    UBUCUD $.
+
+  $( Multiplication of both sides of 'less than' by a positive number.  Theorem
+     I.19 of [Apostol] p. 20.  (Contributed by NM, 13-Feb-2005.) $)
+  ltmul2 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+                -> ( A < B <-> ( C x. A ) < ( C x. B ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cmul co ltmul1 wb cc recn mulcom sylan 3adant2
+    wceq 3adant1 breq12d syl3an3 3adant3r bitrd ) ADEZBDEZCDEZFCGHZIJABGHACKLZB
+    CKLZGHZCAKLZCBKLZGHZABCMUFUGUHULUONZUIUHUFUGCOEZUPCPUFUGUQJUJUMUKUNGUFUQUJU
+    MTZUGUFAOEUQURAPACQRSUGUQUKUNTZUFUGBOEUQUSBPBCQRUAUBUCUDUE $.
+
+  $( Multiplication of both sides of 'less than or equal to' by a positive
+     number.  (Contributed by NM, 16-Mar-2005.) $)
+  lemul2 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+               -> ( A <_ B <-> ( C x. A ) <_ ( C x. B ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cle cmul co lemul1 wb wceq recn mulcom syl2an
+    cc 3adant2 3adant1 breq12d 3adant3r bitrd ) ADEZBDEZCDEZFCGHZIJABKHACLMZBCL
+    MZKHZCALMZCBLMZKHZABCNUFUGUHULUOOUIUFUGUHJUJUMUKUNKUFUHUJUMPZUGUFATECTEZUPU
+    HAQCQZACRSUAUGUHUKUNPZUFUGBTEUQUSUHBQURBCRSUBUCUDUE $.
+
+  $( Multiplication of both sides of 'less than or equal to' by a nonnegative
+     number.  Part of Definition 11.2.7(vi) of [HoTT], p.  (varies).
+     (Contributed by NM, 21-Feb-2005.) $)
+  lemul1a $p |- ( ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 <_ C ) ) /\
+                 A <_ B ) -> ( A x. C ) <_ ( B x. C ) ) $=
+    ( cr wcel cc0 cle wbr wa w3a cmul co simpl2 simpl1 resubcld simpl3l subge0d
+    cmin recnd remulcld simpr mpbird simpl3r mulge0d subdird breqtrd mpbid ) AD
+    EZBDEZCDEZFCGHZIZJZABGHZIZFBCKLZACKLZRLZGHUQUPGHUOFBARLZCKLURGUOUSCUOBAUHUI
+    ULUNMZUHUIULUNNZOUJUKUHUIUNPZUOFUSGHUNUMUNUAUOBAUTVAQUBUJUKUHUIUNUCUDUOBACU
+    OBUTSUOAVASUOCVBSUEUFUOUPUQUOBCUTVBTUOACVAVBTQUG $.
+
+  $( Multiplication of both sides of 'less than or equal to' by a nonnegative
+     number.  (Contributed by Paul Chapman, 7-Sep-2007.) $)
+  lemul2a $p |- ( ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 <_ C ) ) /\
+                      A <_ B ) -> ( C x. A ) <_ ( C x. B ) ) $=
+    ( cr wcel cc0 cle wbr wa cmul co lemul1a wceq cc recn mulcom syl2an adantrr
+    w3a adantr 3adant2 3adant1 3brtr3d ) ADEZBDEZCDEZFCGHZIZSZABGHZIACJKZBCJKZC
+    AJKZCBJKZGABCLUIUKUMMZUJUDUHUOUEUDUFUOUGUDANECNEZUOUFAOCOZACPQRUATUIULUNMZU
+    JUEUHURUDUEUFURUGUEBNEUPURUFBOUQBCPQRUBTUC $.
+
+  $( Comparison of product of two positive numbers.  (Contributed by NM,
+     30-Dec-2005.) $)
+  ltmul12a $p |- ( ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ A < B ) ) /\
+               ( ( C e. RR /\ D e. RR ) /\ ( 0 <_ C /\ C < D ) ) ) ->
+                 ( A x. C ) < ( B x. D ) ) $=
+    ( cr wcel cc0 cle wbr clt cmul simpllr ad2ant2l imp ad2ant2r lelttr remulcl
+    wa co wi simplll simpll simprl jca ltle adantrl lemul1a syl31anc wb simplrl
+    simplrr 0re mp3an1 adantlr ltmul2 syl112anc biimpa anasss ad2ant2lr syl3anc
+    adantrrl adantr mp2and an4s ) AEFZBEFZRZCEFZDEFZRZGAHIZABJIZRZGCHIZCDJIZRZA
+    CKSZBDKSZJIZVGVJRZVMVPRZRZVQBCKSZHIZWCVRJIZVSWBVEVFVHVNRZABHIZWDVEVFVJWAUAV
+    EVFVJWALVJVPWFVGVMVJVPRVHVNVHVIVPUBVJVNVOUCUDMVGVMWGVJVPVGVLWGVKVGVLWGABUEN
+    UFOABCUGUHVTVMVOWEVNVTVMVOWEVTVMRZVOWEWHVHVIVFGBJIZVOWEUIVGVHVIVMUJVGVHVIVM
+    UKVEVFVJVMLVGVMWIVJVGVMWIGEFVEVFVMWITULGABPUMNUNCDBUOUPUQURVAVTWDWERVSTZWAV
+    TVQEFZWCEFZVREFZWJVEVHWKVFVIACQOVFVHWLVEVIBCQUSVFVIWMVEVHBDQMVQWCVRPUTVBVCV
+    D $.
+
+  $( Comparison of product of two nonnegative numbers.  (Contributed by NM,
+     22-Feb-2008.) $)
+  lemul12b $p |- ( ( ( ( A e. RR /\ 0 <_ A ) /\ B e. RR ) /\
+       ( C e. RR /\ ( D e. RR /\ 0 <_ D ) ) ) -> ( ( A <_ B /\ C <_ D ) ->
+                 ( A x. C ) <_ ( B x. D ) ) ) $=
+    ( cr wcel cc0 cle wbr wa cmul co wi w3a lemul2a ex adantlr remulcl ad2ant2r
+    3comr 3expb adantrrr lemul1a 3expa adantllr adantrl anim12d ancomsd adantrr
+    ad2ant2rl ad2ant2l letr syl3anc syld ) AEFZGAHIZJZBEFZJZCEFZDEFZGDHIZJZJZJZ
+    ABHIZCDHIZJACKLZADKLZHIZVIBDKLZHIZJZVHVKHIZVEVGVFVMVEVGVJVFVLUQVDVGVJMZURUQ
+    UTVAVOVBUQUTVAVOUTVAUQVOUTVAUQNVGVJCDAOPTUAUBQUSVCVFVLMZUTUOURVCVPUPUOURVCV
+    PUOURVCNVFVLABDUCPUDUEUFUGUHVEVHEFZVIEFZVKEFZVMVNMUQUTVQURVCUOUTVQUPACRQSUQ
+    VCVRURUTUOVAVRUPVBADRSUJURVCVSUQUTURVAVSVBBDRUIUKVHVIVKULUMUN $.
+
+  $( Comparison of product of two nonnegative numbers.  (Contributed by NM,
+     22-Feb-2008.) $)
+  lemul12a $p |- ( ( ( ( A e. RR /\ 0 <_ A ) /\ B e. RR ) /\
+       ( ( C e. RR /\ 0 <_ C ) /\ D e. RR ) ) -> ( ( A <_ B /\ C <_ D ) ->
+                 ( A x. C ) <_ ( B x. D ) ) ) $=
+    ( cr wcel cc0 cle wbr wa cmul co simpll ad2antlr simplrr wi 0re letr mp3an1
+    exp4b com23 imp41 ad2ant2l jca jca32 simpr lemul12b sylc ex ) AEFGAHIJBEFJZ
+    CEFZGCHIZJZDEFZJZJZABHIZCDHIZJZACKLBDKLHIZUPUSJZUJUKUNGDHIZJZJJUSUTVAUJUKVC
+    UJUOUSMUOUKUJUSUKULUNMNVAUNVBUJUMUNUSOUOURVBUJUQUKULUNURVBUKUNULURVBPUKUNUL
+    URVBGEFUKUNULURJVBPQGCDRSTUAUBUCUDUEUPUSUFABCDUGUHUI $.
+
+  $( The product of two numbers greater than 1 is greater than 1.  (Contributed
+     by NM, 13-Feb-2005.) $)
+  mulgt1 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 1 < A /\ 1 < B ) ) ->
+                1 < ( A x. B ) ) $=
+    ( cr wcel wa c1 clt wbr cmul co wi a1i cc0 0lt1 1re lttr adantr mp3an1 syld
+    simpl 0re mp3an12 mpani ltmul2 biimpd exp32 impcom impd wceq ax-1rid breq1d
+    w3a sylibd jcad remulcl syldan imp ) ACDZBCDZEZFAGHZFBGHZEZFABIJZGHZUTVCVAA
+    VDGHZEZVEUTVCVAVFVCVAKUTVAVBTLUTVCAFIJZVDGHZVFUTVAVBVIUTVAMAGHZVBVIKZURVAVJ
+    KUSURMFGHZVAVJNMCDFCDZURVLVAEVJKUAOMFAPUBUCQUSURVJVKKUSURVJVKVMUSURVJEZVKOV
+    MUSVNULVBVIFBAUDUERUFUGSUHUTVHAVDGURVHAUIUSAUJQUKUMUNURUSVDCDZVGVEKZABUOVMU
+    RVOVPOFAVDPRUPSUQ $.
+
+  $( Multiplication by a number greater than 1.  (Contributed by NM,
+     24-Dec-2005.) $)
+  ltmulgt11 $p |- ( ( A e. RR /\ B e. RR /\ 0 < A ) ->
+                ( 1 < B <-> A < ( A x. B ) ) ) $=
+    ( cr wcel cc0 clt wbr w3a c1 cmul co wb 1re ltmul2 mp3an1 3impb 3com12 wceq
+    wa ax-1rid 3ad2ant1 breq1d bitrd ) ACDZBCDZEAFGZHZIBFGZAIJKZABJKZFGZAUJFGUE
+    UDUFUHUKLZUEUDUFULICDUEUDUFSULMIBANOPQUGUIAUJFUDUEUIARUFATUAUBUC $.
+
+  $( Multiplication by a number greater than 1.  (Contributed by NM,
+     24-Dec-2005.) $)
+  ltmulgt12 $p |- ( ( A e. RR /\ B e. RR /\ 0 < A ) ->
+                ( 1 < B <-> A < ( B x. A ) ) ) $=
+    ( cr wcel cc0 clt wbr w3a c1 cmul ltmulgt11 wceq recn mulcom syl2an 3adant3
+    co cc breq2d bitrd ) ACDZBCDZEAFGZHZIBFGAABJQZFGABAJQZFGABKUDUEUFAFUAUBUEUF
+    LZUCUAARDBRDUGUBAMBMABNOPST $.
+
+  $( Multiplication by a number greater than or equal to 1.  (Contributed by
+     NM, 17-Dec-2005.) $)
+  lemulge11 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ 1 <_ B ) ) ->
+                A <_ ( A x. B ) ) $=
+    ( cr wcel wa cc0 cle wbr c1 cmul co wceq ax-1rid ad2antrr simpll simprl jca
+    simplr 1re 0le1 pm3.2i jctil jca31 leid simprr lemul12a sylc eqbrtrrd ) ACD
+    ZBCDZEZFAGHZIBGHZEZEZAIJKZAABJKZGUIUPALUJUNAMNUOUIULEZUIEICDZFIGHZEZUJEZEAA
+    GHZUMEUPUQGHUOURUIVBUOUIULUIUJUNOZUKULUMPQVDUOUJVAUIUJUNRUSUTSTUAUBUCUOVCUM
+    UIVCUJUNAUDNUKULUMUEQAAIBUFUGUH $.
+
+  $( Multiplication by a number greater than or equal to 1.  (Contributed by
+     Paul Chapman, 21-Mar-2011.) $)
+  lemulge12 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ 1 <_ B ) ) ->
+                    A <_ ( B x. A ) ) $=
+    ( cr wcel wa cc0 cle wbr c1 cmul co lemulge11 wb cc wceq recn mulcom syl2an
+    breq2d adantr mpbid ) ACDZBCDZEZFAGHIBGHEZEAABJKZGHZABAJKZGHZABLUDUGUIMUEUD
+    UFUHAGUBANDBNDUFUHOUCAPBPABQRSTUA $.
+
+  $( Division of both sides of 'less than' by a positive number.  (Contributed
+     by NM, 10-Oct-2004.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  ltdiv1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) ->
+               ( A < B <-> ( A / C ) < ( B / C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a c1 cdiv co cmul wb simp1 simp2 recnd divrecapd
+    simp3l simp3r gt0ap0d rerecclapd recgt0 3ad2ant3 ltmul1 syl112anc breq12d
+    bitr4d ) ADEZBDEZCDEZFCGHZIZJZABGHZAKCLMZNMZBUQNMZGHZACLMZBCLMZGHUOUJUKUQDE
+    FUQGHZUPUTOUJUKUNPZUJUKUNQZUOCUJUKULUMTZUOCVFUJUKULUMUAUBZUCUNUJVCUKCUDUEAB
+    UQUFUGUOVAURVBUSGUOACUOAVDRUOCVFRZVGSUOBCUOBVERVHVGSUHUI $.
+
+  $( Division of both sides of a less than or equal to relation by a positive
+     number.  (Contributed by NM, 18-Nov-2004.) $)
+  lediv1 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) ->
+               ( A <_ B <-> ( A / C ) <_ ( B / C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a wn co cle wb ltdiv1 3adant1 redivclap syld3an3
+    cdiv 3expb 3com12 notbid lenlt 3adant3 cap gt0ap0 3adant2 lenltd 3bitr4d )
+    ADEZBDEZCDEZFCGHZIZJZBAGHZKZBCSLZACSLZGHZKABMHZUSURMHUOUPUTUKUJUNUPUTNBACOU
+    AUBUJUKVAUQNUNABUCUDUOUSURUJUNUSDEZUKUJULUMVBUJULUMCFUEHZVBULUMVCUJCUFZPACQ
+    RTUGUKUNURDEZUJUKULUMVEUKULUMVCVEULUMVCUKVDPBCQRTPUHUI $.
+
+  $( Division of a positive number by a positive number.  (Contributed by NM,
+     28-Sep-2005.) $)
+  gt0div $p |- ( ( A e. RR /\ B e. RR /\ 0 < B ) ->
+               ( 0 < A <-> 0 < ( A / B ) ) ) $=
+    ( cr wcel cc0 clt wbr w3a cdiv co wb wa 0re ltdiv1 mp3an1 3impb wceq gt0ap0
+    cap cc recn div0ap sylan syldan breq1d 3adant1 bitrd ) ACDZBCDZEBFGZHEAFGZE
+    BIJZABIJZFGZEUMFGZUHUIUJUKUNKZECDUHUIUJLZUPMEABNOPUIUJUNUOKUHUQULEUMFUIUJBE
+    SGZULEQZBRUIBTDURUSBUABUBUCUDUEUFUG $.
+
+  $( Division of a nonnegative number by a positive number.  (Contributed by
+     NM, 28-Sep-2005.) $)
+  ge0div $p |- ( ( A e. RR /\ B e. RR /\ 0 < B ) ->
+               ( 0 <_ A <-> 0 <_ ( A / B ) ) ) $=
+    ( cr wcel cc0 clt wbr w3a cle cdiv co wb 0re lediv1 mp3an1 3impb cap gt0ap0
+    wa wceq cc recn div0ap sylan syldan breq1d 3adant1 bitrd ) ACDZBCDZEBFGZHEA
+    IGZEBJKZABJKZIGZEUNIGZUIUJUKULUOLZECDUIUJUKSZUQMEABNOPUJUKUOUPLUIURUMEUNIUJ
+    UKBEQGZUMETZBRUJBUADUSUTBUBBUCUDUEUFUGUH $.
+
+  $( The ratio of two positive numbers is positive.  (Contributed by NM,
+     12-Oct-1999.) $)
+  divgt0 $p |- ( ( ( A e. RR /\ 0 < A ) /\
+             ( B e. RR /\ 0 < B ) ) -> 0 < ( A / B ) ) $=
+    ( cr wcel cc0 clt wbr cdiv co wi w3a gt0div biimpd 3exp com34 com23 imp43 )
+    ACDZEAFGZBCDZEBFGZEABHIFGZRTSUAUBJRTUASUBRTUASUBJRTUAKSUBABLMNOPQ $.
+
+  $( The ratio of nonnegative and positive numbers is nonnegative.
+     (Contributed by NM, 27-Sep-1999.) $)
+  divge0 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\
+             ( B e. RR /\ 0 < B ) ) -> 0 <_ ( A / B ) ) $=
+    ( cr wcel cc0 cle wbr clt cdiv co w3a ge0div biimpd 3exp com34 com23 imp43
+    wi ) ACDZEAFGZBCDZEBHGZEABIJFGZSUATUBUCRSUAUBTUCSUAUBTUCRSUAUBKTUCABLMNOPQ
+    $.
+
+  $( 'Less than' relationship between division and multiplication.
+     (Contributed by NM, 12-Oct-1999.)  (Proof shortened by Mario Carneiro,
+     27-May-2016.) $)
+  ltmuldiv $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+                -> ( ( A x. C ) < B <-> A < ( B / C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cmul co cdiv wb simp1 simp3l remulcld syld3an1
+    ltdiv1 recnd simp3r gt0ap0d divcanap4d breq1d bitrd ) ADEZBDEZCDEZFCGHZIZJZ
+    ACKLZBGHZULCMLZBCMLZGHZAUOGHULDEUGUFUJUMUPNUKACUFUGUJOZUFUGUHUIPZQULBCSRUKU
+    NAUOGUKACUKAUQTUKCURTUKCURUFUGUHUIUAUBUCUDUE $.
+
+  $( 'Less than' relationship between division and multiplication.
+     (Contributed by NM, 18-Nov-2004.) $)
+  ltmuldiv2 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+                   -> ( ( C x. A ) < B <-> A < ( B / C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa cmul co cdiv wceq cc mulcom syl2an adantrr 3adant2
+    w3a recn breq1d ltmuldiv bitr3d ) ADEZBDEZCDEZFCGHZIZSZACJKZBGHCAJKZBGHABCL
+    KGHUIUJUKBGUDUHUJUKMZUEUDUFULUGUDANECNEULUFATCTACOPQRUAABCUBUC $.
+
+  $( 'Less than' relationship between division and multiplication.
+     (Contributed by NM, 18-Nov-2004.) $)
+  ltdivmul $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+              -> ( ( A / C ) < B <-> A < ( C x. B ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cmul co cdiv wb remulcl ancoms adantrr 3adant1
+    cc recn ltdiv1 syld3an2 adantr ad2antrl cap gt0ap0 adantl divcanap3d breq2d
+    wceq bitr2d ) ADEZBDEZCDEZFCGHZIZJZACBKLZGHZACMLZURCMLZGHZUTBGHULURDEZUMUPU
+    SVBNUMUPVCULUMUNVCUOUNUMVCCBOPQRAURCUAUBUQVABUTGUMUPVABUJULUMUPIBCUMBSEUPBT
+    UCUNCSEUMUOCTUDUPCFUEHUMCUFUGUHRUIUK $.
+
+  $( 'Less than or equal to' relationship between division and multiplication.
+     (Contributed by NM, 9-Dec-2005.) $)
+  ledivmul $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) ->
+                  ( ( A / C ) <_ B <-> A <_ ( C x. B ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cmul co cle simp3l simp2 remulcld lediv1 recnd
+    cdiv wb syld3an2 simp3r gt0ap0d divcanap3d breq2d bitr2d ) ADEZBDEZCDEZFCGH
+    ZIZJZACBKLZMHZACSLZUMCSLZMHZUOBMHUGUMDEUHUKUNUQTULCBUGUHUIUJNZUGUHUKOZPAUMC
+    QUAULUPBUOMULBCULBUSRULCURRULCURUGUHUIUJUBUCUDUEUF $.
+
+  $( 'Less than' relationship between division and multiplication.
+     (Contributed by NM, 24-Feb-2005.) $)
+  ltdivmul2 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) )
+                 -> ( ( A / C ) < B <-> A < ( B x. C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cdiv co cmul ltdivmul wceq recn mulcom adantrr
+    cc syl2an 3adant1 breq2d bitr4d ) ADEZBDEZCDEZFCGHZIZJZACKLBGHACBMLZGHABCML
+    ZGHABCNUIUKUJAGUEUHUKUJOZUDUEUFULUGUEBSECSEULUFBPCPBCQTRUAUBUC $.
+
+  $( 'Less than' relationship between division and multiplication.
+     (Contributed by NM, 8-Jan-2006.) $)
+  lt2mul2div $p |- ( ( ( A e. RR /\ ( B e. RR /\ 0 < B ) )
+                   /\ ( C e. RR /\ ( D e. RR /\ 0 < D ) ) ) ->
+                    ( ( A x. B ) < ( C x. D ) <-> ( A / D ) < ( C / B ) ) ) $=
+    ( cr wcel cc0 clt wbr wa cmul co cdiv simprl simprrl mulcomd oveq1d syl3anc
+    recnd wb simplrl simplrr gt0ap0d divassapd eqtrd breq2d remulcld redivclapd
+    simpll simplr ltmuldiv simprr ltdivmul 3bitr4d ) AEFZBEFZGBHIZJZJZCEFZDEFZG
+    DHIZJZJZJZACDKLZBMLZHIZADCBMLZKLZHIZABKLVFHIZADMLVIHIZVEVGVJAHVEVGDCKLZBMLV
+    JVEVFVNBMVECDVECUSUTVCNZSZVEDUSUTVAVBOZSZPQVEDCBVRVPVEBUOUPUQVDUAZSVEBVSUOU
+    PUQVDUBUCZUDUEUFVEUOVFEFURVLVHTUOURVDUIZVECDVOVQUGUOURVDUJAVFBUKRVEUOVIEFVC
+    VMVKTWAVECBVOVSVTUHUSUTVCULAVIDUMRUN $.
+
+  $( 'Less than or equal to' relationship between division and multiplication.
+     (Contributed by NM, 9-Dec-2005.) $)
+  ledivmul2 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) ->
+                  ( ( A / C ) <_ B <-> A <_ ( B x. C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cdiv cle cmul ledivmul wceq recn mulcom syl2an
+    co cc adantrr 3adant1 breq2d bitr4d ) ADEZBDEZCDEZFCGHZIZJZACKSBLHACBMSZLHA
+    BCMSZLHABCNUJULUKALUFUIULUKOZUEUFUGUMUHUFBTECTEUMUGBPCPBCQRUAUBUCUD $.
+
+  $( 'Less than or equal' relationship between division and multiplication.
+     (Contributed by NM, 10-Mar-2006.) $)
+  lemuldiv $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) ->
+                  ( ( A x. C ) <_ B <-> A <_ ( B / C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cdiv co wn cmul cle wb ltdivmul2 3com12 notbid
+    lenltd simp1 simp2 simp3l simp3r gt0ap0d redivclapd remulcld 3bitr4rd ) ADE
+    ZBDEZCDEZFCGHZIZJZBCKLZAGHZMBACNLZGHZMAUOOHUQBOHUNUPURUJUIUMUPURPBACQRSUNAU
+    OUIUJUMUAZUNBCUIUJUMUBZUIUJUKULUCZUNCVAUIUJUKULUDUEUFTUNUQBUNACUSVAUGUTTUH
+    $.
+
+  $( 'Less than or equal' relationship between division and multiplication.
+     (Contributed by NM, 10-Mar-2006.) $)
+  lemuldiv2 $p |- ( ( A e. RR /\ B e. RR /\ ( C e. RR /\ 0 < C ) ) ->
+                      ( ( C x. A ) <_ B <-> A <_ ( B / C ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cmul co cle cdiv wceq cc mulcom syl2an adantrr
+    recn 3adant2 breq1d lemuldiv bitr3d ) ADEZBDEZCDEZFCGHZIZJZACKLZBMHCAKLZBMH
+    ABCNLMHUJUKULBMUEUIUKULOZUFUEUGUMUHUEAPECPEUMUGATCTACQRSUAUBABCUCUD $.
+
+  $( The reciprocal of both sides of 'less than'.  (Contributed by NM,
+     26-Sep-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  ltrec $p |- ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) ) ->
+              ( A < B <-> ( 1 / B ) < ( 1 / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co cmul 1red simprl simpll simplr ltmuldiv
+    wb syl112anc recnd mulid2d breq1d gt0ap0d divrecapd breq2d 3bitr3d ltdivmul
+    rerecclapd simprr bitr4d ) ACDZEAFGZHZBCDZEBFGZHZHZABFGZIBIAJKZLKZFGZIBJKUS
+    FGZUQIALKZBFGZIBAJKZFGZURVAUQICDZUNUKULVDVFRUQMZUMUNUONZUKULUPOZUKULUPPZIBA
+    QSUQVCABFUQAUQAVJTZUAUBUQVEUTIFUQBAUQBVITVLUQAVJVKUCZUDUEUFUQVGUSCDUNUOVBVA
+    RVHUQAVJVMUHVIUMUNUOUIIUSBUGSUJ $.
+
+  $( The reciprocal of both sides of 'less than or equal to'.  (Contributed by
+     NM, 3-Oct-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  lerec $p |- ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) ) ->
+              ( A <_ B <-> ( 1 / B ) <_ ( 1 / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa wn c1 co cle wb ltrec ancoms notbid lenltd gt0ap0d
+    cdiv rerecclapd simpll simprl simprr simplr 3bitr4d ) ACDZEAFGZHZBCDZEBFGZH
+    ZHZBAFGZIJASKZJBSKZFGZIABLGUOUNLGULUMUPUKUHUMUPMBANOPULABUFUGUKUAZUHUIUJUBZ
+    QULUOUNULBURULBURUHUIUJUCRTULAUQULAUQUFUGUKUDRTQUE $.
+
+  $( Lemma for ~ lt2msq .  (Contributed by Mario Carneiro, 27-May-2016.) $)
+  lt2msq1 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ B e. RR /\ A < B ) ->
+                  ( A x. A ) < ( B x. B ) ) $=
+    ( cr wcel cc0 cle wbr wa clt w3a co simp1l remulcld simp2 simp1 simp3 ltled
+    cmul lemul1a lelttrd syl31anc wb 0red simp1r ltmul2 syl112anc mpbid ) ACDZE
+    AFGZHZBCDZABIGZJZAARKZBARKZBBRKZUMAAUHUIUKULLZUQMUMBAUJUKULNZUQMUMBBURURMUM
+    UHUKUJABFGUNUOFGUQURUJUKULOUMABUQURUJUKULPZQABASUAUMULUOUPIGZUSUMUHUKUKEBIG
+    ULUTUBUQURURUMEABUMUCUQURUHUIUKULUDUSTABBUEUFUGT $.
+
+  $( Two nonnegative numbers compare the same as their squares.  (Contributed
+     by Roy F. Longton, 8-Aug-2005.)  (Revised by Mario Carneiro,
+     27-May-2016.) $)
+  lt2msq $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) ) ->
+                  ( A < B <-> ( A x. A ) < ( B x. B ) ) ) $=
+    ( cr wcel cc0 cle wbr wa clt cmul co wi lt2msq1 3expia cap syl2anc remulcld
+    wn lenltd 3imtr4d adantrr simpr simpll con3d simprl wo recnd syl22anc oridm
+    cc mulext syl6ib anim12d wb ltleap impbid ) ACDZEAFGZHZBCDZEBFGZHZHZABIGZAA
+    JKZBBJKZIGZUSUTVDVGLVAUSUTVDVGABMNUAVCVEVFFGZVEVFOGZHZABFGZABOGZHZVGVDVCVHV
+    KVIVLVCVFVEIGZRBAIGZRVHVKVCVOVNVCVBUQVOVNLUSVBUBUQURVBUCZVBUQVOVNBAMNPUDVCV
+    EVFVCAAVPVPQZVCBBUSUTVAUEZVRQZSVCABVPVRSTVCVIVLVLUFZVLVCAUJDZWABUJDZWBVIVTL
+    VCAVPUGZWCVCBVRUGZWDAABBUKUHVLUIULUMVCVECDVFCDVGVJUNVQVSVEVFUOPVCUQUTVDVMUN
+    VPVRABUOPTUP $.
+
+  $( Division of a positive number by both sides of 'less than'.  (Contributed
+     by NM, 27-Apr-2005.) $)
+  ltdiv2 $p |- ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) /\
+      ( C e. RR /\ 0 < C ) ) -> ( A < B <-> ( C / B ) < ( C / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co cmul wb gt0ap0 3ad2ant1 recnd divrecapd
+    w3a cap simp2l 3ad2ant2 rerecclap syldan simp3 ltmul2 syl3anc ltrec 3adant3
+    rerecclapd simp3l simp1l breq12d 3bitr4d ) ADEZFAGHZIZBDEZFBGHZIZCDEZFCGHZI
+    ZSZJBKLZJAKLZGHZCVEMLZCVFMLZGHZABGHZCBKLZCAKLZGHVDVEDEVFDEZVCVGVJNVDBUQURUS
+    VCUAZUTUQBFTHVCBOUBZUJUQUTVNVCUOUPAFTHZVNAOZAUCUDPUQUTVCUEVEVFCUFUGUQUTVKVG
+    NVCABUHUIVDVLVHVMVIGVDCBVDCUQUTVAVBUKQZVDBVOQVPRVDCAVSVDAUOUPUTVCULQUQUTVQV
+    CVRPRUMUN $.
+
+  $( Reciprocal swap in a 'less than' relation.  (Contributed by NM,
+     24-Feb-2005.) $)
+  ltrec1 $p |- ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) ) ->
+              ( ( 1 / A ) < B <-> ( 1 / B ) < A ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co simpll simplr gt0ap0d rerecclapd recgt0
+    wb adantr simpr ltrec syl21anc recnd recrecapd breq2d bitrd ) ACDZEAFGZHZBC
+    DEBFGHZHZIAJKZBFGZIBJKZIUKJKZFGZUMAFGUJUKCDEUKFGZUIULUOQUJAUFUGUILZUJAUQUFU
+    GUIMNZOUHUPUIAPRUHUISUKBTUAUJUNAUMFUJAUJAUQUBURUCUDUE $.
+
+  $( Reciprocal swap in a 'less than or equal to' relation.  (Contributed by
+     NM, 24-Feb-2005.) $)
+  lerec2 $p |- ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) ) ->
+              ( A <_ ( 1 / B ) <-> B <_ ( 1 / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co cle wb simprl simprr gt0ap0d rerecclapd
+    simpl recgt0 adantl lerec syl12anc recnd recrecapd breq1d bitrd ) ACDEAFGHZ
+    BCDZEBFGZHZHZAIBJKZLGZIULJKZIAJKZLGZBUOLGUKUGULCDEULFGZUMUPMUGUJRUKBUGUHUIN
+    ZUKBURUGUHUIOPZQUJUQUGBSTAULUAUBUKUNBUOLUKBUKBURUCUSUDUEUF $.
+
+  $( Invert ratios of positive numbers and swap their ordering.  (Contributed
+     by NM, 9-Jan-2006.) $)
+  ledivdiv $p |- ( ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) ) /\
+                      ( ( C e. RR /\ 0 < C ) /\ ( D e. RR /\ 0 < D ) ) ) ->
+                  ( ( A / B ) <_ ( C / D ) <-> ( D / C ) <_ ( B / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa cdiv co cle c1 gt0ap0d redivclapd divgt0 recdivapd
+    wb recnd simplll simplrl simplrr adantr simprll simprrl simprrr lerec bitrd
+    adantl syl22anc simprlr simpllr breq12d ) AEFZGAHIZJZBEFZGBHIZJZJZCEFZGCHIZ
+    JZDEFZGDHIZJZJZJZABKLZCDKLZMIZNVKKLZNVJKLZMIZDCKLZBAKLZMIVIVJEFGVJHIZVKEFGV
+    KHIZVLVOSVIABUOUPUTVHUAZUQURUSVHUBZVIBWAUQURUSVHUCOZPVAVRVHABQUDVICDVAVBVCV
+    GUEZVAVDVEVFUFZVIDWDVAVDVEVFUGOZPVHVSVACDQUJVJVKUHUKVIVMVPVNVQMVICDVICWCTVI
+    DWDTVICWCVAVBVCVGULOWERVIABVIAVTTVIBWATVIAVTUOUPUTVHUMOWBRUNUI $.
+
+  $( Division of a positive number by both sides of 'less than or equal to'.
+     (Contributed by NM, 10-Jan-2006.) $)
+  lediv2 $p |- ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) /\
+       ( C e. RR /\ 0 < C ) ) -> ( A <_ B <-> ( C / B ) <_ ( C / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a c1 cdiv co cle wb gt0ap0d rerecclapd divrecapd
+    cmul recnd simp2l simp2r simp1l simp1r simp3l simp3r lemul2 syl112anc lerec
+    3adant3 breq12d 3bitr4d ) ADEZFAGHZIZBDEZFBGHZIZCDEZFCGHZIZJZKBLMZKALMZNHZC
+    VCSMZCVDSMZNHZABNHZCBLMZCALMZNHVBVCDEVDDEUSUTVEVHOVBBUOUPUQVAUAZVBBVLUOUPUQ
+    VAUBPZQVBAUMUNURVAUCZVBAVNUMUNURVAUDPZQUOURUSUTUEZUOURUSUTUFVCVDCUGUHUOURVI
+    VEOVAABUIUJVBVJVFVKVGNVBCBVBCVPTZVBBVLTVMRVBCAVQVBAVNTVORUKUL $.
+
+  $( Swap denominator with other side of 'less than'.  (Contributed by NM,
+     3-Oct-1999.) $)
+  ltdiv23 $p |- ( ( A e. RR /\ ( B e. RR /\ 0 < B ) /\ ( C e. RR /\ 0 < C ) )
+              -> ( ( A / B ) < C <-> ( A / C ) < B ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cdiv co cmul wb simp1 simp2l simp2r redivclapd
+    gt0ap0d recnd simp3l simp2 ltmul1 syl3anc divcanap1d breq1d remulcld ltdiv1
+    syld3an2 simp3r divcanap3d breq2d bitrd 3bitrd ) ADEZBDEZFBGHZIZCDEZFCGHZIZ
+    JZABKLZCGHZVCBMLZCBMLZGHZAVFGHZACKLZBGHZVBVCDEUSURVDVGNVBABUOURVAOZUOUPUQVA
+    PZVBBVLUOUPUQVAQSZRUOURUSUTUAZUOURVAUBVCCBUCUDVBVEAVFGVBABVBAVKTVBBVLTZVMUE
+    UFVBVHVIVFCKLZGHZVJUOVFDEURVAVHVQNVBCBVNVLUGAVFCUHUIVBVPBVIGVBBCVOVBCVNTVBC
+    VNUOURUSUTUJSUKULUMUN $.
+
+  $( Swap denominator with other side of 'less than or equal to'.  (Contributed
+     by NM, 30-May-2005.) $)
+  lediv23 $p |- ( ( A e. RR /\ ( B e. RR /\ 0 < B ) /\ ( C e. RR /\ 0 < C ) )
+              -> ( ( A / B ) <_ C <-> ( A / C ) <_ B ) ) $=
+    ( cr wcel cc0 clt wbr wa w3a cdiv co cle cmul wb simp1 simp2l gt0ap0d recnd
+    simp2r redivclapd simp3l lemul1 syl112anc divcanap1d breq1d remulcld lediv1
+    syld3an2 simp3r divcanap3d breq2d bitrd 3bitrd ) ADEZBDEZFBGHZIZCDEZFCGHZIZ
+    JZABKLZCMHZVCBNLZCBNLZMHZAVFMHZACKLZBMHZVBVCDEUSUPUQVDVGOVBABUOURVAPZUOUPUQ
+    VAQZVBBVLUOUPUQVATZRZUAUOURUSUTUBZVLVMVCCBUCUDVBVEAVFMVBABVBAVKSVBBVLSZVNUE
+    UFVBVHVIVFCKLZMHZVJUOVFDEURVAVHVROVBCBVOVLUGAVFCUHUIVBVQBVIMVBBCVPVBCVOSVBC
+    VOUOURUSUTUJRUKULUMUN $.
+
+  $( Comparison of ratio of two nonnegative numbers.  (Contributed by NM,
+     31-Dec-2005.) $)
+  lediv12a $p |- ( ( ( ( A e. RR /\ B e. RR ) /\ ( 0 <_ A /\ A <_ B ) ) /\
+               ( ( C e. RR /\ D e. RR ) /\ ( 0 < C /\ C <_ D ) ) ) ->
+                 ( A / D ) <_ ( B / C ) ) $=
+    ( cr wcel wa cc0 cle wbr clt c1 cdiv cmul syl22anc gt0ap0d rerecclapd recnd
+    co jca simplrr simprrr simprll simprrl simprlr 0red ltletrd simplll simplrl
+    wb lerec mpbid wi simpllr recgt0 syl2anc lemul12a mp2and divrecapd 3brtr4d
+    ltled ) AEFZBEFZGZHAIJZABIJZGZGZCEFZDEFZGZHCKJZCDIJZGZGZGZALDMSZNSZBLCMSZNS
+    ZADMSBCMSIVPVFVQVSIJZVRVTIJZVDVEVFVOUAVPVMWAVHVKVLVMUBZVPVIVLVJHDKJZVMWAUJV
+    HVIVJVNUCZVHVKVLVMUDZVHVIVJVNUEZVPHCDVPUFZWEWGWFWCUGZCDUKOULVPVBVEGVCVQEFZH
+    VQIJZGVSEFVFWAGWBUMVPVBVEVBVCVGVOUHZVDVEVFVOUITVBVCVGVOUNZVPWJWKVPDWGVPDWGW
+    IPZQZVPHVQWHWOVPVJWDHVQKJWGWIDUOUPVATVPCWEVPCWEWFPZQABVQVSUQOURVPADVPAWLRVP
+    DWGRWNUSVPBCVPBWMRVPCWERWPUSUT $.
+
+  $( Division of both sides of 'less than or equal to' into a nonnegative
+     number.  (Contributed by Paul Chapman, 7-Sep-2007.) $)
+  lediv2a $p |- ( ( ( ( A e. RR /\ 0 < A ) /\ ( B e. RR /\ 0 < B ) /\
+                     ( C e. RR /\ 0 <_ C ) ) /\
+                   A <_ B ) -> ( C / B ) <_ ( C / A ) ) $=
+    ( cr wcel cc0 clt wbr wa cle w3a cdiv co pm3.2 pm2.43i adantr anim2i ancoms
+    leid jca ad2antlr 3adantl2 ad2ant2r simplr anim1i 3adantl3 lediv12a syl2anc
+    id ) ADEZFAGHZIZBDEZFBGHZIZCDEZFCJHZIZKABJHZIUPUPIZUQCCJHZIZIZUJUMIZUKUSIZI
+    ZCBLMCALMJHULURUSVCUOURVCULUSURUTVBUPUTUQUPUTUPUPNOPUQUPVBUPVAUQCSQRTUAUBUL
+    UOUSVFURULUOIZUSIVDVEVGVDUSUJUMVDUKUNVDUIUCPVGUKUSUJUKUOUDUETUFCCABUGUH $.
+
+  $( The reciprocal of a positive number less than 1 is greater than 1.
+     (Contributed by NM, 23-Feb-2005.) $)
+  reclt1 $p |- ( ( A e. RR /\ 0 < A ) -> ( A < 1 <-> 1 < ( 1 / A ) ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co wb 1re 0lt1 ltrec mpanr12 breq1i syl6bb
+    1div1e1 ) ABCDAEFGZAHEFZHHIJZHAIJZEFZHUBEFSHBCDHEFTUCKLMAHNOUAHUBERPQ $.
+
+  $( The reciprocal of a positive number greater than 1 is less than 1.
+     (Contributed by NM, 28-Dec-2005.) $)
+  recgt1 $p |- ( ( A e. RR /\ 0 < A ) -> ( 1 < A <-> ( 1 / A ) < 1 ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co wb 1re 0lt1 ltrec mpanl12 breq2i syl6bb
+    1div1e1 ) ABCDAEFGZHAEFZHAIJZHHIJZEFZUAHEFHBCDHEFSTUCKLMHANOUBHUAERPQ $.
+
+  $( The reciprocal of a number greater than 1 is positive and less than 1.
+     (Contributed by NM, 23-Feb-2005.) $)
+  recgt1i $p |- ( ( A e. RR /\ 1 < A ) ->
+               ( 0 < ( 1 / A ) /\ ( 1 / A ) < 1 ) ) $=
+    ( cr wcel c1 clt wbr wa cc0 cdiv co 0lt1 wi 0re 1re mp3an12 mpani imdistani
+    lttr recgt0 syl recgt1 biimpa sylancom jca ) ABCZDAEFZGZHDAIJZEFZUHDEFZUGUE
+    HAEFZGZUIUEUFUKUEHDEFZUFUKKHBCDBCUEUMUFGUKLMNHDAROPQZASTUEUFULUJUNULUFUJAUA
+    UBUCUD $.
+
+  $( Construct a number less than 1 from any nonnegative number.  (Contributed
+     by NM, 30-Dec-2005.) $)
+  recp1lt1 $p |- ( ( A e. RR /\ 0 <_ A ) -> ( A / ( 1 + A ) ) < 1 ) $=
+    ( cr wcel cc0 cle wbr wa c1 caddc co cdiv clt cmul simpl ltp1 recnd addcomd
+    syl 1cnd breqtrd addcld 1red readdcld 1re addgtge0 mpanr1 mpanl1 divcanap1d
+    0lt1 gt0ap0d mulid2d 3brtr4d wb redivclapd ltmul1 syl112anc mpbird ) ABCZDA
+    EFZGZAHAIJZKJZHLFZVBVAMJZHVAMJZLFZUTAVAVDVELUTAAHIJZVALUTURAVGLFURUSNZAORUT
+    AHUTAVHPZUTSZQTUTAVAVIUTHAVJVIUAZUTVAUTHAUTUBZVHUCZHBCZURUSDVALFZUDVNURGDHL
+    FUSVOUIHAUEUFUGZUJZUHUTVAVKUKULUTVBBCVNVABCVOVCVFUMUTAVAVHVMVQUNVLVMVPVBHVA
+    UOUPUQ $.
+
+  $( Given a positive number ` A ` , construct a new positive number less than
+     both ` A ` and 1.  (Contributed by NM, 28-Dec-2005.) $)
+  recreclt $p |- ( ( A e. RR /\ 0 < A ) ->
+        ( ( 1 / ( 1 + ( 1 / A ) ) ) < 1 /\ ( 1 / ( 1 + ( 1 / A ) ) ) < A ) ) $=
+    ( cr wcel cc0 clt wbr wa c1 cdiv co caddc recgt0 1re ltaddpos sylancl mpbid
+    wb sylancr 0lt1 cc simpl gt0ap0 rerecclapd readdcl wi 0re mp3an12 syl mpani
+    lttr mpd recgt1 syl2anc mpbii wceq recnd ax-1cn addcom breqtrd simpr ltrec1
+    syl22anc jca ) ABCZDAEFZGZHHHAIJZKJZIJZHEFZVIAEFZVFHVHEFZVJVFDVGEFZVLALVFVG
+    BCZHBCZVMVLQVFAVDVEUAZAUBUCZMVGHNOPZVFVHBCZDVHEFZVLVJQVFVOVNVSMVQHVGUDRZVFV
+    LVTVRVFDHEFZVLVTSVFVSWBVLGVTUEZWADBCVOVSWCUFMDHVHUJUGUHUIUKZVHULUMPVFVGVHEF
+    ZVKVFVGVGHKJZVHEVFWBVGWFEFZSVFVOVNWBWGQMVQHVGNRUNVFVGTCHTCWFVHUOVFVGVQUPUQV
+    GHUROUSVFVDVEVSVTWEVKQVPVDVEUTWAWDAVHVAVBPVC $.
+
+  $( The square function on nonnegative reals is monotonic.  (Contributed by
+     NM, 3-Aug-1999.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  le2msq $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) ) ->
+              ( A <_ B <-> ( A x. A ) <_ ( B x. B ) ) ) $=
+    ( cr wcel cc0 cle wbr wa clt cmul lt2msq ancoms notbid simpll simprl lenltd
+    wn co wb remulcld 3bitr4d ) ACDZEAFGZHZBCDZEBFGZHZHZBAIGZQBBJRZAAJRZIGZQABF
+    GUKUJFGUHUIULUGUDUIULSBAKLMUHABUBUCUGNZUDUEUFOZPUHUKUJUHAAUMUMTUHBBUNUNTPUA
+    $.
+
+  $( The square of a nonnegative number is a one-to-one function.  (Contributed
+     by NM, 29-Jul-1999.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  msq11 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) ) ->
+              ( ( A x. A ) = ( B x. B ) <-> A = B ) ) $=
+    ( cr wcel cc0 cle wbr cmul wceq le2msq ancoms anbi12d simpll simprl letri3d
+    wa co wb remulcld 3bitr4rd ) ACDZEAFGZPZBCDZEBFGZPZPZABFGZBAFGZPAAHQZBBHQZF
+    GZUKUJFGZPABIUJUKIUGUHULUIUMABJUFUCUIUMRBAJKLUGABUAUBUFMZUCUDUENZOUGUJUKUGA
+    AUNUNSUGBBUOUOSOT $.
+
+  $( Less-than-or-equal-to and division relation.  (Lemma for computing upper
+     bounds of products.  The "+ 1" prevents division by zero.)  (Contributed
+     by NM, 28-Sep-2005.) $)
+  ledivp1 $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B ) ) ->
+                  ( ( A / ( B + 1 ) ) x. B ) <_ A ) $=
+    ( cr wcel cc0 cle wbr wa c1 caddc cdiv cmul simprl peano2re syl simpll 0red
+    co clt recnd simprr ltp1 lelttrd redivclapd simpl divge0 syl12anc jca ltled
+    gt0ap0d lemul2a syl31anc divcanap1d breqtrd ) ACDZEAFGZHZBCDZEBFGZHZHZABIJR
+    ZKRZBLRZVCVBLRZAFVAURVBCDZVCCDZEVCFGZHBVBFGVDVEFGUQURUSMZVAURVFVIBNOZVAVGVH
+    VAAVBUOUPUTPZVJVAVBVJVAEBVBVAQVIVJUQURUSUAVAURBVBSGVIBUBOZUCZUJZUDVAUQVFEVB
+    SGVHUQUTUEVJVMAVBUFUGUHVABVBVIVJVLUIBVBVCUKULVAAVBVAAVKTVAVBVJTVNUMUN $.
+
+  ${
+    $d x A $.
+    $( If a nonnegative number is less than any positive number, it is zero.
+       (Contributed by NM, 11-Feb-2006.) $)
+    squeeze0 $p |- ( ( A e. RR /\ 0 <_ A /\ A. x e. RR ( 0 < x -> A < x ) ) ->
+                   A = 0 ) $=
+      ( cr wcel cc0 cle wbr cv clt wi wral w3a wceq ltnr 3ad2ant1 breq2 imbi12d
+      wn rspcva 3adant2 mtod simp1 0red lenltd mpbird simp2 letri3d mpbir2and )
+      BCDZEBFGZEAHZIGZBUKIGZJZACKZLZBEMBEFGZUJUPUQEBIGZRUPURBBIGZUIUJUSRUOBNOUI
+      UOURUSJZUJUNUTABCUKBMULURUMUSUKBEIPUKBBIPQSTUAUPBEUIUJUOUBZUPUCZUDUEUIUJU
+      OUFUPBEVAVBUGUH $.
+  $}
+
+  ${
+    ltplus1.1 $e |- A e. RR $.
+    $( A number is less than itself plus 1.  (Contributed by NM,
+       20-Aug-2001.) $)
+    ltp1i $p |- A < ( A + 1 ) $=
+      ( cr wcel c1 caddc co clt wbr ltp1 ax-mp ) ACDAAEFGHIBAJK $.
+
+    $( The reciprocal of a positive number is positive.  Exercise 4 of
+       [Apostol] p. 21.  (Contributed by NM, 15-May-1999.) $)
+    recgt0i $p |- ( 0 < A -> 0 < ( 1 / A ) ) $=
+      ( cr wcel cc0 clt wbr c1 cdiv co recgt0 mpan ) ACDEAFGEHAIJFGBAKL $.
+
+    ${
+      recgt0i.2 $e |- 0 < A $.
+      $( The reciprocal of a positive number is positive.  Exercise 4 of
+         [Apostol] p. 21.  (Contributed by NM, 15-May-1999.) $)
+      recgt0ii $p |- 0 < ( 1 / A ) $=
+        ( cr wcel cc0 clt wbr c1 cdiv co recgt0 mp2an ) ADEFAGHFIAJKGHBCALM $.
+    $}
+
+    prodgt0.2 $e |- B e. RR $.
+    $( Infer that a multiplicand is positive from a nonnegative multiplier and
+       positive product.  (Contributed by NM, 15-May-1999.) $)
+    prodgt0i $p |- ( ( 0 <_ A /\ 0 < ( A x. B ) ) -> 0 < B ) $=
+      ( cr wcel cc0 cle wbr cmul co clt wa prodgt0 mpanl12 ) AEFBEFGAHIGABJKLIM
+      GBLICDABNO $.
+
+    $( Infer that a multiplicand is nonnegative from a positive multiplier and
+       nonnegative product.  (Contributed by NM, 2-Jul-2005.) $)
+    prodge0i $p |- ( ( 0 < A /\ 0 <_ ( A x. B ) ) -> 0 <_ B ) $=
+      ( cr wcel cc0 clt wbr cmul co cle wa prodge0 mpanl12 ) AEFBEFGAHIGABJKLIM
+      GBLICDABNO $.
+
+    $( The ratio of two positive numbers is positive.  (Contributed by NM,
+       16-May-1999.) $)
+    divgt0i $p |- ( ( 0 < A /\ 0 < B ) -> 0 < ( A / B ) ) $=
+      ( cr wcel cc0 clt wbr cdiv co wa divgt0 mpanr1 mpanl1 ) AEFZGAHIZGBHIZGAB
+      JKHIZCPQLBEFRSDABMNO $.
+
+    $( The ratio of nonnegative and positive numbers is nonnegative.
+       (Contributed by NM, 12-Aug-1999.) $)
+    divge0i $p |- ( ( 0 <_ A /\ 0 < B ) -> 0 <_ ( A / B ) ) $=
+      ( cr wcel cc0 cle wbr clt cdiv co wa divge0 mpanr1 mpanl1 ) AEFZGAHIZGBJI
+      ZGABKLHIZCQRMBEFSTDABNOP $.
+
+    $( The reciprocal of both sides of 'less than'.  (Contributed by NM,
+       15-Sep-1999.) $)
+    ltreci $p |- ( ( 0 < A /\ 0 < B ) ->
+                ( A < B <-> ( 1 / B ) < ( 1 / A ) ) ) $=
+      ( cr wcel cc0 clt wbr c1 cdiv co wb wa ltrec mpanr1 mpanl1 ) AEFZGAHIZGBH
+      IZABHIJBKLJAKLHIMZCRSNBEFTUADABOPQ $.
+
+    $( The reciprocal of both sides of 'less than or equal to'.  (Contributed
+       by NM, 16-Sep-1999.) $)
+    lereci $p |- ( ( 0 < A /\ 0 < B ) ->
+                ( A <_ B <-> ( 1 / B ) <_ ( 1 / A ) ) ) $=
+      ( cr wcel cc0 clt wbr cle c1 cdiv co wb wa lerec mpanr1 mpanl1 ) AEFZGAHI
+      ZGBHIZABJIKBLMKALMJINZCSTOBEFUAUBDABPQR $.
+
+    $( The square function on nonnegative reals is strictly monotonic.
+       (Contributed by NM, 3-Aug-1999.) $)
+    lt2msqi $p |- ( ( 0 <_ A /\ 0 <_ B ) ->
+                ( A < B <-> ( A x. A ) < ( B x. B ) ) ) $=
+      ( cr wcel cc0 cle wbr clt cmul co wb wa lt2msq mpanr1 mpanl1 ) AEFZGAHIZG
+      BHIZABJIAAKLBBKLJIMZCRSNBEFTUADABOPQ $.
+
+    $( The square function on nonnegative reals is monotonic.  (Contributed by
+       NM, 2-Aug-1999.) $)
+    le2msqi $p |- ( ( 0 <_ A /\ 0 <_ B ) ->
+                ( A <_ B <-> ( A x. A ) <_ ( B x. B ) ) ) $=
+      ( cr wcel cc0 cle wbr cmul co wb wa le2msq mpanr1 mpanl1 ) AEFZGAHIZGBHIZ
+      ABHIAAJKBBJKHILZCQRMBEFSTDABNOP $.
+
+    $( The square of a nonnegative number is a one-to-one function.
+       (Contributed by NM, 29-Jul-1999.) $)
+    msq11i $p |- ( ( 0 <_ A /\ 0 <_ B ) ->
+                ( ( A x. A ) = ( B x. B ) <-> A = B ) ) $=
+      ( cr wcel cc0 cle wbr cmul co wceq wb wa msq11 mpanr1 mpanl1 ) AEFZGAHIZG
+      BHIZAAJKBBJKLABLMZCRSNBEFTUADABOPQ $.
+
+    ${
+      divgt0i2.3 $e |- 0 < B $.
+      $( The ratio of two positive numbers is positive.  (Contributed by NM,
+         16-May-1999.) $)
+      divgt0i2i $p |- ( 0 < A -> 0 < ( A / B ) ) $=
+        ( cc0 clt wbr cdiv co divgt0i mpan2 ) FAGHFBGHFABIJGHEABCDKL $.
+    $}
+
+    ${
+      ltreci.3 $e |- 0 < A $.
+      ltreci.4 $e |- 0 < B $.
+      $( The reciprocal of both sides of 'less than'.  (Contributed by NM,
+         15-Sep-1999.) $)
+      ltrecii $p |- ( A < B <-> ( 1 / B ) < ( 1 / A ) ) $=
+        ( cc0 clt wbr c1 cdiv co wb ltreci mp2an ) GAHIGBHIABHIJBKLJAKLHIMEFABC
+        DNO $.
+
+      $( The ratio of two positive numbers is positive.  (Contributed by NM,
+         18-May-1999.) $)
+      divgt0ii $p |- 0 < ( A / B ) $=
+        ( cc0 clt wbr cdiv co divgt0i2i ax-mp ) GAHIGABJKHIEABCDFLM $.
+    $}
+
+    ltmul1.3 $e |- C e. RR $.
+    $( Multiplication of both sides of 'less than' by a positive number.
+       Theorem I.19 of [Apostol] p. 20.  (Contributed by NM, 16-May-1999.) $)
+    ltmul1i $p |- ( 0 < C -> ( A < B <-> ( A x. C ) < ( B x. C ) ) ) $=
+      ( cr wcel cc0 clt wbr cmul co wb wa ltmul1 mp3an12 mpan ) CGHZICJKZABJKAC
+      LMBCLMJKNZFAGHBGHSTOUADEABCPQR $.
+
+    $( Division of both sides of 'less than' by a positive number.
+       (Contributed by NM, 16-May-1999.) $)
+    ltdiv1i $p |- ( 0 < C -> ( A < B <-> ( A / C ) < ( B / C ) ) ) $=
+      ( cr wcel cc0 clt wbr cdiv co wb wa ltdiv1 mp3an12 mpan ) CGHZICJKZABJKAC
+      LMBCLMJKNZFAGHBGHSTOUADEABCPQR $.
+
+    $( 'Less than' relationship between division and multiplication.
+       (Contributed by NM, 12-Oct-1999.) $)
+    ltmuldivi $p |- ( 0 < C -> ( ( A x. C ) < B <-> A < ( B / C ) ) ) $=
+      ( cr wcel cc0 clt wbr cmul co cdiv wb wa ltmuldiv mp3an12 mpan ) CGHZICJK
+      ZACLMBJKABCNMJKOZFAGHBGHTUAPUBDEABCQRS $.
+
+    $( Multiplication of both sides of 'less than' by a positive number.
+       Theorem I.19 of [Apostol] p. 20.  (Contributed by NM, 16-May-1999.) $)
+    ltmul2i $p |- ( 0 < C -> ( A < B <-> ( C x. A ) < ( C x. B ) ) ) $=
+      ( cr wcel cc0 clt wbr cmul co wb wa ltmul2 mp3an12 mpan ) CGHZICJKZABJKCA
+      LMCBLMJKNZFAGHBGHSTOUADEABCPQR $.
+
+    $( Multiplication of both sides of 'less than or equal to' by a positive
+       number.  (Contributed by NM, 2-Aug-1999.) $)
+    lemul1i $p |- ( 0 < C -> ( A <_ B <-> ( A x. C ) <_ ( B x. C ) ) ) $=
+      ( cr wcel cc0 clt wbr cle cmul co wb wa lemul1 mp3an12 mpan ) CGHZICJKZAB
+      LKACMNBCMNLKOZFAGHBGHTUAPUBDEABCQRS $.
+
+    $( Multiplication of both sides of 'less than or equal to' by a positive
+       number.  (Contributed by NM, 1-Aug-1999.) $)
+    lemul2i $p |- ( 0 < C -> ( A <_ B <-> ( C x. A ) <_ ( C x. B ) ) ) $=
+      ( cr wcel cc0 clt wbr cle cmul co wb wa lemul2 mp3an12 mpan ) CGHZICJKZAB
+      LKCAMNCBMNLKOZFAGHBGHTUAPUBDEABCQRS $.
+
+    $( Swap denominator with other side of 'less than'.  (Contributed by NM,
+       26-Sep-1999.) $)
+    ltdiv23i $p |- ( ( 0 < B /\ 0 < C ) ->
+                ( ( A / B ) < C <-> ( A / C ) < B ) ) $=
+      ( cc0 clt wbr cr wcel cdiv co wb wa ltdiv23 mp3an1 mpanl1 mpanr1 ) GBHIZC
+      JKZGCHIZABLMCHIACLMBHINZFBJKZTUAUBOZUCEAJKUDTOUEUCDABCPQRS $.
+
+    ${
+      ltdiv23i.4 $e |- 0 < B $.
+      ltdiv23i.5 $e |- 0 < C $.
+      $( Swap denominator with other side of 'less than'.  (Contributed by NM,
+         26-Sep-1999.) $)
+      ltdiv23ii $p |- ( ( A / B ) < C <-> ( A / C ) < B ) $=
+        ( cc0 clt wbr cdiv co wb ltdiv23i mp2an ) IBJKICJKABLMCJKACLMBJKNGHABCD
+        EFOP $.
+    $}
+
+    ${
+      ltmul1i.4 $e |- 0 < C $.
+      $( Multiplication of both sides of 'less than' by a positive number.
+         Theorem I.19 of [Apostol] p. 20.  (Contributed by NM, 16-May-1999.)
+         (Proof shortened by Paul Chapman, 25-Jan-2008.) $)
+      ltmul1ii $p |- ( A < B <-> ( A x. C ) < ( B x. C ) ) $=
+        ( cc0 clt wbr cmul co wb ltmul1i ax-mp ) HCIJABIJACKLBCKLIJMGABCDEFNO
+        $.
+
+      $( Division of both sides of 'less than' by a positive number.
+         (Contributed by NM, 16-May-1999.) $)
+      ltdiv1ii $p |- ( A < B <-> ( A / C ) < ( B / C ) ) $=
+        ( cc0 clt wbr cdiv co wb ltdiv1i ax-mp ) HCIJABIJACKLBCKLIJMGABCDEFNO
+        $.
+    $}
+  $}
+
+  ${
+    ltp1d.1 $e |- ( ph -> A e. RR ) $.
+    $( A number is less than itself plus 1.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    ltp1d $p |- ( ph -> A < ( A + 1 ) ) $=
+      ( cr wcel c1 caddc co clt wbr ltp1 syl ) ABDEBBFGHIJCBKL $.
+
+    $( A number is less than or equal to itself plus 1.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    lep1d $p |- ( ph -> A <_ ( A + 1 ) ) $=
+      ( cr wcel c1 caddc co cle wbr lep1 syl ) ABDEBBFGHIJCBKL $.
+
+    $( A number minus 1 is less than itself.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    ltm1d $p |- ( ph -> ( A - 1 ) < A ) $=
+      ( cr wcel c1 cmin co clt wbr ltm1 syl ) ABDEBFGHBIJCBKL $.
+
+    $( A number minus 1 is less than or equal to itself.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    lem1d $p |- ( ph -> ( A - 1 ) <_ A ) $=
+      ( cr wcel c1 cmin co cle wbr lem1 syl ) ABDEBFGHBIJCBKL $.
+
+    ${
+      recgt0d.2 $e |- ( ph -> 0 < A ) $.
+      $( The reciprocal of a positive number is positive.  Exercise 4 of
+         [Apostol] p. 21.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+      recgt0d $p |- ( ph -> 0 < ( 1 / A ) ) $=
+        ( cr wcel cc0 clt wbr c1 cdiv co recgt0 syl2anc ) ABEFGBHIGJBKLHICDBMN
+        $.
+    $}
+
+    divgt0d.2 $e |- ( ph -> B e. RR ) $.
+    ${
+      divgt0d.3 $e |- ( ph -> 0 < A ) $.
+      divgt0d.4 $e |- ( ph -> 0 < B ) $.
+      $( The ratio of two positive numbers is positive.  (Contributed by Mario
+         Carneiro, 28-May-2016.) $)
+      divgt0d $p |- ( ph -> 0 < ( A / B ) ) $=
+        ( cr wcel cc0 clt wbr cdiv co divgt0 syl22anc ) ABHIJBKLCHIJCKLJBCMNKLD
+        FEGBCOP $.
+    $}
+
+    ${
+      mulgt1d.3 $e |- ( ph -> 1 < A ) $.
+      mulgt1d.4 $e |- ( ph -> 1 < B ) $.
+      $( The product of two numbers greater than 1 is greater than 1.
+         (Contributed by Mario Carneiro, 28-May-2016.) $)
+      mulgt1d $p |- ( ph -> 1 < ( A x. B ) ) $=
+        ( cr wcel c1 clt wbr cmul co mulgt1 syl22anc ) ABHICHIJBKLJCKLJBCMNKLDE
+        FGBCOP $.
+    $}
+
+    ${
+      lemulge11d.3 $e |- ( ph -> 0 <_ A ) $.
+      lemulge11d.4 $e |- ( ph -> 1 <_ B ) $.
+      $( Multiplication by a number greater than or equal to 1.  (Contributed
+         by Mario Carneiro, 28-May-2016.) $)
+      lemulge11d $p |- ( ph -> A <_ ( A x. B ) ) $=
+        ( cr wcel cc0 cle wbr c1 cmul co lemulge11 syl22anc ) ABHICHIJBKLMCKLBB
+        CNOKLDEFGBCPQ $.
+
+      $( Multiplication by a number greater than or equal to 1.  (Contributed
+         by Mario Carneiro, 28-May-2016.) $)
+      lemulge12d $p |- ( ph -> A <_ ( B x. A ) ) $=
+        ( cr wcel cc0 cle wbr c1 cmul co lemulge12 syl22anc ) ABHICHIJBKLMCKLBC
+        BNOKLDEFGBCPQ $.
+    $}
+
+    lemul1ad.3 $e |- ( ph -> C e. RR ) $.
+    ${
+      lemul1ad.4 $e |- ( ph -> 0 <_ C ) $.
+      lemul1ad.5 $e |- ( ph -> A <_ B ) $.
+      $( Multiplication of both sides of 'less than or equal to' by a
+         nonnegative number.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+      lemul1ad $p |- ( ph -> ( A x. C ) <_ ( B x. C ) ) $=
+        ( cr wcel cc0 cle wbr wa cmul co jca lemul1a syl31anc ) ABJKCJKDJKZLDMN
+        ZOBCMNBDPQCDPQMNEFAUAUBGHRIBCDST $.
+
+      $( Multiplication of both sides of 'less than or equal to' by a
+         nonnegative number.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+      lemul2ad $p |- ( ph -> ( C x. A ) <_ ( C x. B ) ) $=
+        ( cr wcel cc0 cle wbr wa cmul co jca lemul2a syl31anc ) ABJKCJKDJKZLDMN
+        ZOBCMNDBPQDCPQMNEFAUAUBGHRIBCDST $.
+    $}
+
+    ltmul12ad.3 $e |- ( ph -> D e. RR ) $.
+    ${
+      ltmul12ad.4 $e |- ( ph -> 0 <_ A ) $.
+      ltmul12ad.5 $e |- ( ph -> A < B ) $.
+      ltmul12ad.6 $e |- ( ph -> 0 <_ C ) $.
+      ltmul12ad.7 $e |- ( ph -> C < D ) $.
+      $( Comparison of product of two positive numbers.  (Contributed by Mario
+         Carneiro, 28-May-2016.) $)
+      ltmul12ad $p |- ( ph -> ( A x. C ) < ( B x. D ) ) $=
+        ( cr wcel wa cc0 wbr clt jca cle cmul co ltmul12a syl22anc ) ABNOZCNOZP
+        QBUARZBCSRZPDNOZENOZPQDUARZDESRZPBDUBUCCEUBUCSRAUFUGFGTAUHUIJKTAUJUKHIT
+        AULUMLMTBCDEUDUE $.
+    $}
+
+    ${
+      lemul12ad.4 $e |- ( ph -> 0 <_ A ) $.
+      lemul12ad.5 $e |- ( ph -> 0 <_ C ) $.
+      lemul12ad.6 $e |- ( ph -> A <_ B ) $.
+      lemul12ad.7 $e |- ( ph -> C <_ D ) $.
+      $( Comparison of product of two nonnegative numbers.  (Contributed by
+         Mario Carneiro, 28-May-2016.) $)
+      lemul12ad $p |- ( ph -> ( A x. C ) <_ ( B x. D ) ) $=
+        ( cle wbr cmul co cr wcel wa cc0 wi jca lemul12a syl22anc mp2and ) ABCN
+        OZDENOZBDPQCEPQNOZLMABRSZUABNOZTCRSDRSZUADNOZTERSUGUHTUIUBAUJUKFJUCGAUL
+        UMHKUCIBCDEUDUEUF $.
+    $}
+
+    ${
+      lemul12bd.4 $e |- ( ph -> 0 <_ A ) $.
+      lemul12bd.5 $e |- ( ph -> 0 <_ D ) $.
+      lemul12bd.6 $e |- ( ph -> A <_ B ) $.
+      lemul12bd.7 $e |- ( ph -> C <_ D ) $.
+      $( Comparison of product of two nonnegative numbers.  (Contributed by
+         Mario Carneiro, 28-May-2016.) $)
+      lemul12bd $p |- ( ph -> ( A x. C ) <_ ( B x. D ) ) $=
+        ( cle wbr cmul co cr wcel wa cc0 wi jca lemul12b syl22anc mp2and ) ABCN
+        OZDENOZBDPQCEPQNOZLMABRSZUABNOZTCRSDRSERSZUAENOZTUGUHTUIUBAUJUKFJUCGHAU
+        LUMIKUCBCDEUDUEUF $.
+    $}
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Imaginary and complex number properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The real representation of complex numbers is apart from zero iff one of
+     its terms is apart from zero.  (Contributed by Jim Kingdon,
+     5-Mar-2020.) $)
+  crap0 $p |- ( ( A e. RR /\ B e. RR ) ->
+      ( ( A # 0 \/ B # 0 ) <-> ( A + ( _i x. B ) ) # 0 ) ) $=
+    ( ci cmul co caddc cc0 cap wbr cr wcel wa ax-icn mul01i oveq2i eqtri breq2i
+    wo 00id 0re wb apreim mpanr12 syl5rbbr ) ACBDEFEZGHIUEGCGDEZFEZHIZAJKBJKLZA
+    GHIBGHIRZUGGUEHUGGGFEGUFGGFCMNOSPQUIGJKZUKUHUJUATTABGGUBUCUD $.
+
+  ${
+    $d x y z w A $.
+    $( The real part of a complex number is unique.  Proposition 10-1.3 of
+       [Gleason] p. 130.  (Contributed by NM, 9-May-1999.)  (Proof shortened by
+       Mario Carneiro, 27-May-2016.) $)
+    creur $p |- ( A e. CC -> E! x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $=
+      ( vz vw cc wcel cv ci cmul co caddc wceq cr wrex wreu cnre wa wb wral cru
+      ancoms eqcom ancom 3bitr4g anassrs rexbidva biidd ceqsrexv ad2antlr bitrd
+      ralrimiva reu6i syldan eqeq1 rexbidv reubidv syl5ibrcom rexlimivv syl ) C
+      FGCDHZIEHZJKLKZMZENODNOCAHZIBHZJKLKZMZBNOZANPZDECQVDVJDENNVANGZVBNGZRZVJV
+      DVCVGMZBNOZANPZVKVLVOVEVAMZSZANTVPVMVRANVMVENGZRZVOVFVBMZVQRZBNOZVQVTVNWB
+      BNVMVSVFNGZVNWBSVMVSWDRZRVGVCMZVQWARZVNWBWEVMWFWGSVEVFVAVBUAUBVCVGUCWAVQU
+      DUEUFUGVLWCVQSVKVSVQVQBVBNWAVQUHUIUJUKULVOANVAUMUNVDVIVOANVDVHVNBNCVCVGUO
+      UPUQURUSUT $.
+
+    $( The imaginary part of a complex number is unique.  Proposition 10-1.3 of
+       [Gleason] p. 130.  (Contributed by NM, 9-May-1999.)  (Proof shortened by
+       Mario Carneiro, 27-May-2016.) $)
+    creui $p |- ( A e. CC -> E! y e. RR E. x e. RR A = ( x + ( _i x. y ) ) ) $=
+      ( vz vw cc wcel cv ci cmul co caddc wceq cr wrex wreu cnre wa wb wral cru
+      simpr eqcom ancoms syl5bb anass1rs rexbidva biidd ceqsrexv ad2antrr bitrd
+      ralrimiva reu6i syl2anc eqeq1 rexbidv reubidv syl5ibrcom rexlimivv syl )
+      CFGCDHZIEHZJKLKZMZENODNOCAHZIBHZJKLKZMZANOZBNPZDECQVDVJDENNVANGZVBNGZRZVJ
+      VDVCVGMZANOZBNPZVMVLVOVFVBMZSZBNTVPVKVLUBVMVRBNVMVFNGZRZVOVEVAMZVQRZANOZV
+      QVTVNWBANVMVENGZVSVNWBSVNVGVCMZVMWDVSRZRWBVCVGUCWFVMWEWBSVEVFVAVBUAUDUEUF
+      UGVKWCVQSVLVSVQVQAVANWAVQUHUIUJUKULVOBNVBUMUNVDVIVOBNVDVHVNANCVCVGUOUPUQU
+      RUSUT $.
+  $}
+
+  ${
+    $d x y z A $.
+    $( The complex conjugate of a complex number is unique.  (Contributed by
+       Mario Carneiro, 6-Nov-2013.) $)
+    cju $p |- ( A e. CC -> E! x e. CC
+               ( ( A + x ) e. RR /\ ( _i x. ( A - x ) ) e. RR ) ) $=
+      ( vy vz cc wcel cv caddc co cr ci cmin cmul wrex wceq ax-icn oveq2d oveq2
+      wa eleq1d wi wral wreu cnre recn mulcl sylancr subcl syl2an adantr adantl
+      ppncand readdcl anidms eqeltrd pnncand a1i adddid eqtr4d addcld mulass c1
+      mp3an12 syl cneg ixi 1re renegcli eqeltri readdcld remulcl anbi12d rspcev
+      simpr syl12anc rexbidv syl5ibrcom rexlimivv an4 cc0 resubcl pnpcan syl5ib
+      ancoms adantrl adantrr subdid nnncan1 3com23 eqtr3d anim12d subeq0 biimpd
+      oveq1 3expb rimul 3syld syl5bi ralrimivva reu4 sylanbrc ) BEFZBAGZHIZJFZK
+      BXCLIZMIZJFZSZAENZXIBCGZHIZJFZKBXKLIZMIZJFZSZSZXCXKOZUAZCEUBAEUBXIAEUCXBB
+      XKKDGZMIZHIZOZDJNCJNXJCDBUDYDXJCDJJXKJFZYAJFZSZXJYDYCXCHIZJFZKYCXCLIZMIZJ
+      FZSZAENZYGXKYBLIZEFZYCYOHIZJFZKYCYOLIZMIZJFZYNYEXKEFZYBEFZYPYFXKUEZYFKEFZ
+      YAEFZUUCPYAUEZKYAUFUGZXKYBUHUIYGYQXKXKHIZJYGXKYBXKYEUUBYFUUDUJZYFUUCYEUUH
+      UKZUUJULYEUUIJFZYFYEUULXKXKUMUNUJUOYGYTKKMIZYAYAHIZMIZJYGYTKKUUNMIZMIZUUO
+      YGYSUUPKMYGYSYBYBHIUUPYGXKYBYBUUJUUKUUKUPYGKYAYAUUEYGPUQYFUUFYEUUGUKZUURU
+      RUSQYGUUNEFZUUOUUQOZYGYAYAUURUURUTUUEUUEUUSUUTPPKKUUNVAVCVDUSYGUUMJFUUNJF
+      UUOJFUUMVBVEJVFVBVGVHVIYGYAYAYEYFVNZUVAVJUUMUUNVKUGUOYMYRUUASAYOEXCYOOZYI
+      YRYLUUAUVBYHYQJXCYOYCHRTUVBYKYTJUVBYJYSKMXCYOYCLRQTVLVMVOYDXIYMAEYDXEYIXH
+      YLYDXDYHJBYCXCHWNTYDXGYKJYDXFYJKMBYCXCLWNQTVLVPVQVRVDXBXTACEEXRXEXMSZXHXP
+      SZSZXBXCEFZUUBSZSZXSXEXHXMXPVSUVHUVEXCXKLIZJFZKUVIMIZJFZSZUVIVTOZXSUVHUVC
+      UVJUVDUVLUVCXDXLLIZJFUVHUVJXDXLWAUVHUVOUVIJXBUVFUUBUVOUVIOBXCXKWBWOTWCUVD
+      XOXGLIZJFZUVHUVLXPXHUVQXOXGWAWDUVHUVPUVKJUVHKXNXFLIZMIUVPUVKUVHKXNXFUUEUV
+      HPUQXBUUBXNEFUVFBXKUHWEXBUVFXFEFUUBBXCUHWFWGUVHUVRUVIKMXBUVFUUBUVRUVIOZXB
+      UUBUVFUVSBXKXCWHWIWOQWJTWCWKUVMUVNUAUVHUVIWPUQUVGUVNXSUAXBUVGUVNXSXCXKWLW
+      MUKWQWRWSXIXQACEXSXEXMXHXPXSXDXLJXCXKBHRTXSXGXOJXSXFXNKMXCXKBLRQTVLWTXA
+      $.
+  $}
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+        Integer sets
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Positive integers (as a subset of complex numbers)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c NN $. $( The set of positive integers (blackboard bold N). $)
+
+  $( Extend class notation to include the class of positive integers. $)
+  cn $a class NN $.
+
+  ${
+    $d x y z A $.
+    $( Definition of the set of positive integers.  For naming consistency with
+       the Metamath Proof Explorer usages should refer to ~ dfnn2 instead.
+       (Contributed by Jeff Hankins, 12-Sep-2013.)  (Revised by Mario Carneiro,
+       3-May-2014.)  (New usage is discouraged.) $)
+    df-inn $a |- NN = |^| { x | ( 1 e. x /\ A. y e. x ( y + 1 ) e. x ) } $.
+
+    $( Definition of the set of positive integers.  Another name for
+       ~ df-inn .  (Contributed by Jeff Hankins, 12-Sep-2013.)  (Revised by
+       Mario Carneiro, 3-May-2014.) $)
+    dfnn2 $p |- NN = |^| { x | ( 1 e. x /\ A. y e. x ( y + 1 ) e. x ) } $=
+      ( df-inn ) ABC $.
+  $}
+
+  ${
+    $d n x y z A $.
+    $( Peano's inductive postulate.  Theorem I.36 (principle of mathematical
+       induction) of [Apostol] p. 34.  (Contributed by NM, 10-Jan-1997.)
+       (Revised by Mario Carneiro, 17-Nov-2014.) $)
+    peano5nni $p |- ( ( 1 e. A /\ A. x e. A ( x + 1 ) e. A ) -> NN C_ A ) $=
+      ( vy c1 wcel cv caddc co wral wa cn cr cin wss elin ax-mp syl cvv eleq2
+      wi 1re biimpri mpan2 inss1 ssralv inss2 1red readdcld simplbi2com ralimia
+      sseli reex inex2 wceq raleqbi1dv anbi12d elabg cint dfnn2 intss1 syl5eqss
+      cab syl6bir syl2an syl6ss ) DBEZAFZDGHZBEZABIZJKBLMZBVFDVKEZVHVKEZAVKIZKV
+      KNZVJVFDLEZVLUAVLVFVPJDBLOUBUCVJVIAVKIZVNVKBNVJVQTBLUDZVIAVKBUEPVIVMAVKVG
+      VKEZVHLEZVIVMTVSVGDVKLVGBLUFUKVSUGUHVMVIVTVHBLOUIQUJQVKREZVLVNJZVOTLBULUM
+      WAWBVKDCFZEZVHWCEZAWCIZJZCVBZEZVOWGWBCVKRWCVKUNWDVLWFVNWCVKDSWEVMAWCVKWCV
+      KVHSUOUPUQWIKWHURVKCAUSVKWHUTVAVCPVDVRVE $.
+  $}
+
+  $( The positive integers are a subset of the reals.  (Contributed by NM,
+     10-Jan-1997.)  (Revised by Mario Carneiro, 16-Jun-2013.) $)
+  nnssre $p |- NN C_ RR $=
+    ( vx c1 cr wcel cv caddc co wral cn wss 1re peano2re rgen peano5nni mp2an )
+    BCDAEZBFGCDZACHICJKQACPLMACNO $.
+
+  $( The positive integers are a subset of the complex numbers.  (Contributed
+     by NM, 2-Aug-2004.) $)
+  nnsscn $p |- NN C_ CC $=
+    ( cn cr cc nnssre ax-resscn sstri ) ABCDEF $.
+
+  $( The set of positive integers exists.  (Contributed by NM, 3-Oct-1999.)
+     (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  nnex $p |- NN e. _V $=
+    ( cn cc cnex nnsscn ssexi ) ABCDE $.
+
+  $( A positive integer is a real number.  (Contributed by NM, 18-Aug-1999.) $)
+  nnre $p |- ( A e. NN -> A e. RR ) $=
+    ( cn cr nnssre sseli ) BCADE $.
+
+  $( A positive integer is a complex number.  (Contributed by NM,
+     18-Aug-1999.) $)
+  nncn $p |- ( A e. NN -> A e. CC ) $=
+    ( cn cc nnsscn sseli ) BCADE $.
+
+  ${
+    nnre.1 $e |- A e. NN $.
+    $( A positive integer is a real number.  (Contributed by NM,
+       18-Aug-1999.) $)
+    nnrei $p |- A e. RR $=
+      ( cn wcel cr nnre ax-mp ) ACDAEDBAFG $.
+
+    $( A positive integer is a complex number.  (Contributed by NM,
+       18-Aug-1999.) $)
+    nncni $p |- A e. CC $=
+      ( nnrei recni ) AABCD $.
+  $}
+
+  ${
+    $d x y z A $.
+    $( Peano postulate: 1 is a positive integer.  (Contributed by NM,
+       11-Jan-1997.) $)
+    1nn $p |- 1 e. NN $=
+      ( vz vx vy c1 cn wcel cv caddc co wral wa cab cint dfnn2 eleq2i cr wb 1re
+      elintg eleq2 ax-mp bitri vex weq raleqbi1dv anbi12d elab simplbi mprgbir
+      ) DEFZDAGZFZADBGZFZCGDHIZUMFZCUMJZKZBLZUJDUSMZFZULAUSJZEUTDBCNODPFVAVBQRA
+      DUSPSUAUBUKUSFULUOUKFZCUKJZURULVDKBUKAUCBAUDUNULUQVDUMUKDTUPVCCUMUKUMUKUO
+      TUEUFUGUHUI $.
+
+    $( Peano postulate: a successor of a positive integer is a positive
+       integer.  (Contributed by NM, 11-Jan-1997.)  (Revised by Mario Carneiro,
+       17-Nov-2014.) $)
+    peano2nn $p |- ( A e. NN -> ( A + 1 ) e. NN ) $=
+      ( vz vx vy cn wcel c1 caddc co cv wral wa eleq2i elintg syl5bb wceq eleq2
+      cab syl cr cint dfnn2 ibi vex raleqbi1dv anbi12d elab oveq1 eleq1d rspcva
+      simprbi sylan2 expcom ralimia wb nnre 1red readdcld mpbird ) AEFZAGHIZEFZ
+      VABJZFZBGCJZFZDJZGHIZVEFZDVEKZLZCRZKZUTAVCFZBVLKZVMUTVOUTAVLUAZFUTVOEVPAC
+      DUBZMBAVLENOUCVNVDBVLVNVCVLFZVDVRVNVHVCFZDVCKZVDVRGVCFZVTVKWAVTLCVCBUDVEV
+      CPVFWAVJVTVEVCGQVIVSDVEVCVEVCVHQUEUFUGUKVSVDDAVCVGAPVHVAVCVGAGHUHUIUJULUM
+      UNSUTVATFZVBVMUOUTAGAUPUTUQURVBVAVPFWBVMEVPVAVQMBVAVLTNOSUS $.
+  $}
+
+  ${
+    nnred.1 $e |- ( ph -> A e. NN ) $.
+    $( A positive integer is a real number.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nnred $p |- ( ph -> A e. RR ) $=
+      ( cn cr nnssre sseldi ) ADEBFCG $.
+
+    $( A positive integer is a complex number.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nncnd $p |- ( ph -> A e. CC ) $=
+      ( cn cc nnsscn sseldi ) ADEBFCG $.
+
+    $( Peano postulate: a successor of a positive integer is a positive
+       integer.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    peano2nnd $p |- ( ph -> ( A + 1 ) e. NN ) $=
+      ( cn wcel c1 caddc co peano2nn syl ) ABDEBFGHDECBIJ $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Principle of mathematical induction
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y $.  $d x A $.  $d x ps $.  $d x ch $.  $d x th $.  $d x ta $.
+    $d y ph $.
+    $( Substitutions. $)
+    nnind.1 $e |- ( x = 1 -> ( ph <-> ps ) ) $.
+    nnind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    nnind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    nnind.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    nnind.5 $e |- ps $.
+    $( Induction step. $)
+    nnind.6 $e |- ( y e. NN -> ( ch -> th ) ) $.
+    $( Principle of Mathematical Induction (inference schema).  The first four
+       hypotheses give us the substitution instances we need; the last two are
+       the basis and the induction step.  See ~ nnaddcl for an example of its
+       use.  This is an alternative for Metamath 100 proof #74.  (Contributed
+       by NM, 10-Jan-1997.)  (Revised by Mario Carneiro, 16-Jun-2013.) $)
+    nnind $p |- ( A e. NN -> ta ) $=
+      ( cn wcel crab wa c1 elrab cv caddc wral wss 1nn mpbir2an elrabi peano2nn
+      co a1d anim12d 3imtr4g mpcom rgen peano5nni mp2an sseli sylib simprd ) HO
+      PZUTEUTHAFOQZPUTEROVAHSVAPZGUAZSUBUIZVAPZGVAUCOVAUDVBSOPBUEMABFSOITUFVEGV
+      AVCOPZVCVAPZVEAFVCOUGVFVFCRVDOPZDRVGVEVFVFVHCDVFVHVFVCUHUJNUKACFVCOJTADFV
+      DOKTULUMUNGVAUOUPUQAEFHOLTURUS $.
+  $}
+
+  ${
+    $d x y $.  $d x A $.  $d x ps $.  $d x ch $.  $d x th $.  $d x ta $.
+    $d y ph $.
+    $( Induction step. $)
+    nnindALT.6 $e |- ( y e. NN -> ( ch -> th ) ) $.
+    $( Basis. $)
+    nnindALT.5 $e |- ps $.
+    $( Substitutions. $)
+    nnindALT.1 $e |- ( x = 1 -> ( ph <-> ps ) ) $.
+    nnindALT.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    nnindALT.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    nnindALT.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    $( Principle of Mathematical Induction (inference schema).  The last four
+       hypotheses give us the substitution instances we need; the first two are
+       the induction step and the basis.
+
+       This ALT version of ~ nnind has a different hypothesis order.  It may be
+       easier to use with the metamath program's Proof Assistant, because
+       "MM-PA> assign last" will be applied to the substitution instances
+       first.  We may eventually use this one as the official version.  You may
+       use either version.  After the proof is complete, the ALT version can be
+       changed to the non-ALT version with "MM-PA> minimize nnind /allow".
+       (Contributed by NM, 7-Dec-2005.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    nnindALT $p |- ( A e. NN -> ta ) $=
+      ( nnind ) ABCDEFGHKLMNJIO $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Every positive integer is one or a successor.  (Contributed by Mario
+       Carneiro, 16-May-2014.) $)
+    nn1m1nn $p |- ( A e. NN -> ( A = 1 \/ ( A - 1 ) e. NN ) ) $=
+      ( vx vy cv c1 wceq cmin co cn wcel wo caddc orc 1cnd eqeq1 eleq1d orbi12d
+      cc oveq1 ax-1cn 2thd nncn pncan sylancl id eqeltrd olcd a1d nnind ) BDZEF
+      ZUJEGHZIJZKZERJZCDZEFZUPEGHZIJZKZUPELHZEFZVAEGHZIJZKZAEFZAEGHZIJZKBCAUKUN
+      UOUKUMMUKNUAUJUPFZUKUQUMUSUJUPEOVIULURIUJUPEGSPQUJVAFZUKVBUMVDUJVAEOVJULV
+      CIUJVAEGSPQUJAFZUKVFUMVHUJAEOVKULVGIUJAEGSPQTUPIJZVEUTVLVDVBVLVCUPIVLUPRJ
+      UOVCUPFUPUBTUPEUCUDVLUEUFUGUHUI $.
+  $}
+
+  ${
+    $d x y z $.  $d x y z A $.  $d x ps $.  $d x ch $.  $d x z th $.
+    $d y z ph $.
+    $( Substitutions. $)
+    nn1suc.1 $e |- ( x = 1 -> ( ph <-> ps ) ) $.
+    nn1suc.3 $e |- ( x = ( y + 1 ) -> ( ph <-> ch ) ) $.
+    nn1suc.4 $e |- ( x = A -> ( ph <-> th ) ) $.
+    $( Hypothesis showing it holds for 1. $)
+    nn1suc.5 $e |- ps $.
+    $( Hypothesis showing it holds for a successor. $)
+    nn1suc.6 $e |- ( y e. NN -> ch ) $.
+    $( If a statement holds for 1 and also holds for a successor, it holds for
+       all positive integers.  The first three hypotheses give us the
+       substitution instances we need; the last two show that it holds for 1
+       and for a successor.  (Contributed by NM, 11-Oct-2004.)  (Revised by
+       Mario Carneiro, 16-May-2014.) $)
+    nn1suc $p |- ( A e. NN -> th ) $=
+      ( cn wcel c1 wceq co wsbc wb caddc cmin 1ex sbcie mpbir 1nn mpbiri sbcieg
+      wi eleq1 syl dfsbcq bitr3d cv elisset wa pm5.32ri adantr cr nnre peano2re
+      a1i 3syl oveq1 sbceq1d adantl mpbid sylbir exlimddv cc nncn npcan sylancl
+      ax-1cn bitrd syl5ib nn1m1nn mpjaod ) GMNZGOPZDGOUAQZMNZVSDUHVRVSDAEORZWBB
+      KABEOUBHUCUDVSAEGRZDWBVSVRWCDSVSVROMNUEGOMUIUFADEGMJUGZUJAEGOUKULUFVAWAAE
+      VTOTQZRZVRDWAFUMZVTPZWFFFVTMUNWAWHUOWGMNZWHUOZWFWHWIWAWGVTMUIUPWJCWFWICWH
+      LUQWJAEWGOTQZRZCWFWIWLCSZWHWIWGURNWKURNWMWGUSWGUTACEWKURIUGVBUQWHWLWFSWIW
+      HAEWKWEWGVTOTVCVDVEULVFVGVHVRWFWCDVRAEWEGVRGVINOVINWEGPGVJVMGOVKVLVDWDVNV
+      OGVPVQ $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Closure of addition of positive integers, proved by induction on the
+       second addend.  (Contributed by NM, 12-Jan-1997.) $)
+    nnaddcl $p |- ( ( A e. NN /\ B e. NN ) -> ( A + B ) e. NN ) $=
+      ( vx vy cn wcel caddc co cv wi c1 wceq oveq2 eleq1d imbi2d peano2nn wa cc
+      nncn ax-1cn addass mp3an3 syl2an syl5ib expcom a2d nnind impcom ) BEFAEFZ
+      ABGHZEFZUIACIZGHZEFZJUIAKGHZEFZJUIADIZGHZEFZJUIAUQKGHZGHZEFZJUIUKJCDBULKL
+      ZUNUPUIVCUMUOEULKAGMNOULUQLZUNUSUIVDUMUREULUQAGMNOULUTLZUNVBUIVEUMVAEULUT
+      AGMNOULBLZUNUKUIVFUMUJEULBAGMNOAPUQEFZUIUSVBUIVGUSVBJUSURKGHZEFUIVGQZVBUR
+      PVIVHVAEUIARFZUQRFZVHVALZVGASUQSVJVKKRFVLTAUQKUAUBUCNUDUEUFUGUH $.
+
+    $( Closure of multiplication of positive integers.  (Contributed by NM,
+       12-Jan-1997.) $)
+    nnmulcl $p |- ( ( A e. NN /\ B e. NN ) -> ( A x. B ) e. NN ) $=
+      ( vx vy cn wcel cmul co cv wi c1 caddc wceq oveq2 eleq1d imbi2d cc mulid1
+      nncn wa biimprd nnaddcl ancoms ax-1cn mp3an3 oveq2d adantr syl2an syl5ibr
+      mpcom adddi eqtrd exp4b pm2.43b a2d nnind impcom ) BEFAEFZABGHZEFZURACIZG
+      HZEFZJURAKGHZEFZJURADIZGHZEFZJURAVFKLHZGHZEFZJURUTJCDBVAKMZVCVEURVLVBVDEV
+      AKAGNOPVAVFMZVCVHURVMVBVGEVAVFAGNOPVAVIMZVCVKURVNVBVJEVAVIAGNOPVABMZVCUTU
+      RVOVBUSEVABAGNOPAQFZURVEASZVPVEURVPVDAEARZOUAUJVFEFZURVHVKVSURVHVKJURVSUR
+      VHVKURVHTVKURVSTZVGALHZEFZVHURWBVGAUBUCVTVJWAEURVPVFQFZVJWAMVSVQVFSVPWCTV
+      JVGVDLHZWAVPWCKQFVJWDMUDAVFKUKUEVPWDWAMWCVPVDAVGLVRUFUGULUHOUIUMUNUOUPUQ
+      $.
+  $}
+
+  ${
+    nnmulcli.1 $e |- A e. NN $.
+    nnmulcli.2 $e |- B e. NN $.
+    $( Closure of multiplication of positive integers.  (Contributed by Mario
+       Carneiro, 18-Feb-2014.) $)
+    nnmulcli $p |- ( A x. B ) e. NN $=
+      ( cn wcel cmul co nnmulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
+  ${
+    $d x y A $.
+    $( A positive integer is one or greater.  (Contributed by NM,
+       25-Aug-1999.) $)
+    nnge1 $p |- ( A e. NN -> 1 <_ A ) $=
+      ( vx vy c1 cv cle wbr caddc co breq2 wcel cr wi cc0 clt wn 0re 1re lenlt
+      wb 1le1 cn nnre recn addid1d breq2d 0lt1 axltadd mp3an12 wa readdcl mpan2
+      mpi peano2re mp3an3 syl2anc mpand con3d sylancr 3imtr4d sylbird syl nnind
+      lttr ) DBEZFGDDFGDCEZFGZDVFDHIZFGZDAFGBCAVEDDFJVEVFDFJVEVHDFJVEADFJUAVFUB
+      KVFLKZVGVIMVFUCVJVGDVFNHIZFGZVIVJVKVFDFVJVFVFUDUEUFVJVKDOGZPZVHDOGZPZVLVI
+      VJVOVMVJVKVHOGZVOVMVJNDOGZVQUGNLKZDLKZVJVRVQMQRNDVFUHUIUMVJVKLKZVHLKZVQVO
+      UJVMMZVJVSWAQVFNUKULZVFUNZWAWBVTWCRVKVHDVDUOUPUQURVJVTWAVLVNTRWDDVKSUSVJV
+      TWBVIVPTRWEDVHSUSUTVAVBVC $.
+  $}
+
+  $( A positive integer is less than or equal to one iff it is equal to one.
+     (Contributed by NM, 3-Apr-2005.) $)
+  nnle1eq1 $p |- ( A e. NN -> ( A <_ 1 <-> A = 1 ) ) $=
+    ( cn wcel c1 cle wbr wa wceq nnge1 biantrud cr wb 1re letri3 sylancl bitr4d
+    nnre ) ABCZADEFZSDAEFZGZADHZRTSAIJRAKCDKCUBUALAQMADNOP $.
+
+  $( A positive integer is positive.  (Contributed by NM, 26-Sep-1999.) $)
+  nngt0 $p |- ( A e. NN -> 0 < A ) $=
+    ( cn wcel cr c1 cle wbr cc0 clt nnre nnge1 0lt1 wa wi 0re 1re mp3an12 mpani
+    ltletr sylc ) ABCADCZEAFGZHAIGZAJAKUAHEIGZUBUCLHDCEDCUAUDUBMUCNOPHEASQRT $.
+
+  $( A positive integer is not less than one.  (Contributed by NM,
+     18-Jan-2004.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  nnnlt1 $p |- ( A e. NN -> -. A < 1 ) $=
+    ( cn wcel c1 cle wbr clt wn nnge1 cr wb 1re nnre lenlt sylancr mpbid ) ABCZ
+    DAEFZADGFHZAIQDJCAJCRSKLAMDANOP $.
+
+  $( Zero is not a positive integer.  (Contributed by NM, 25-Aug-1999.) $)
+  0nnn $p |- -. 0 e. NN $=
+    ( cc0 cn wcel c1 clt wbr 0lt1 nnnlt1 mt2 ) ABCADEFGAHI $.
+
+  $( A positive integer is nonzero.  (Contributed by NM, 27-Sep-1999.) $)
+  nnne0 $p |- ( A e. NN -> A =/= 0 ) $=
+    ( cn wcel cc0 wceq 0nnn eleq1 mtbiri necon2ai ) ABCZADADEJDBCFADBGHI $.
+
+  $( A positive integer is apart from zero.  (Contributed by Jim Kingdon,
+     8-Mar-2020.) $)
+  nnap0 $p |- ( A e. NN -> A # 0 ) $=
+    ( cn wcel nnre nngt0 gt0ap0d ) ABCAADAEF $.
+
+  ${
+    nngt0.1 $e |- A e. NN $.
+    $( A positive integer is positive (inference version).  (Contributed by NM,
+       17-Sep-1999.) $)
+    nngt0i $p |- 0 < A $=
+      ( cn wcel cc0 clt wbr nngt0 ax-mp ) ACDEAFGBAHI $.
+
+    $( A positive integer is nonzero (inference version).  (Contributed by NM,
+       25-Aug-1999.) $)
+    nnne0i $p |- A =/= 0 $=
+      ( nnrei nngt0i gt0ne0ii ) AABCABDE $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( There exists a positive integer greater than or equal to any two
+       others.  (Contributed by NM, 18-Aug-1999.) $)
+    nn2ge $p |- ( ( A e. NN /\ B e. NN ) ->
+                E. x e. NN ( A <_ x /\ B <_ x ) ) $=
+      ( cn wcel wa caddc co cle wbr cc0 cr nnre adantl nngt0 ltled adantr mpbid
+      clt breq2 cv wrex nnaddcl 0red addge01d addge02d anbi12d rspcev syl12anc
+      wceq ) BDEZCDEZFZBCGHZDEBUNIJZCUNIJZBAUAZIJZCUQIJZFZADUBBCUCUMKCIJUOUMKCU
+      MUDZULCLEUKCMNZULKCSJUKCONPUMBCUKBLEULBMQZVBUERUMKBIJUPUMKBVAVCUKKBSJULBO
+      QPUMCBVBVCUFRUTUOUPFAUNDUQUNUJURUOUSUPUQUNBITUQUNCITUGUHUI $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( A positive integer is either one or greater than one.  This is for
+       ` NN ` ; ~ 0elnn is a similar theorem for ` _om ` (the natural numbers
+       as ordinals).  (Contributed by Jim Kingdon, 7-Mar-2020.) $)
+    nn1gt1 $p |- ( A e. NN -> ( A = 1 \/ 1 < A ) ) $=
+      ( vx vy cv c1 wceq clt wbr wo caddc co eqeq1 breq2 orbi12d eqid orci wcel
+      cn cc0 cr nngt0 wb nnre 1re ltaddpos2 sylancl mpbid olcd a1d nnind ) BDZE
+      FZEUKGHZIEEFZEEGHZICDZEFZEUPGHZIZUPEJKZEFZEUTGHZIZAEFZEAGHZIBCAULULUNUMUO
+      UKEELUKEEGMNUKUPFULUQUMURUKUPELUKUPEGMNUKUTFULVAUMVBUKUTELUKUTEGMNUKAFULV
+      DUMVEUKAELUKAEGMNUNUOEOPUPRQZVCUSVFVBVAVFSUPGHZVBUPUAVFUPTQETQVGVBUBUPUCU
+      DUPEUEUFUGUHUIUJ $.
+
+  $}
+
+  $( A positive integer is greater than one iff it is not equal to one.
+     (Contributed by NM, 7-Oct-2004.) $)
+  nngt1ne1 $p |- ( A e. NN -> ( 1 < A <-> A =/= 1 ) ) $=
+    ( cn wcel c1 clt wbr wne cr 1re ltne mpan wceq wn nn1gt1 ord syl5bi impbid2
+    df-ne ) ABCZDAEFZADGZDHCTUAIDAJKUAADLZMSTADRSUBTANOPQ $.
+
+  $( The quotient of a real and a positive integer is real.  (Contributed by
+     NM, 28-Nov-2008.) $)
+  nndivre $p |- ( ( A e. RR /\ N e. NN ) -> ( A / N ) e. RR ) $=
+    ( cn wcel cr cc0 cap wbr wa cdiv co nnre nnap0 jca redivclap 3expb sylan2 )
+    BCDZAEDZBEDZBFGHZIABJKEDZRTUABLBMNSTUAUBABOPQ $.
+
+  $( The reciprocal of a positive integer is real.  (Contributed by NM,
+     8-Feb-2008.) $)
+  nnrecre $p |- ( N e. NN -> ( 1 / N ) e. RR ) $=
+    ( c1 cr wcel cn cdiv co 1re nndivre mpan ) BCDAEDBAFGCDHBAIJ $.
+
+  $( The reciprocal of a positive integer is positive.  (Contributed by NM,
+     25-Aug-1999.) $)
+  nnrecgt0 $p |- ( A e. NN -> 0 < ( 1 / A ) ) $=
+    ( cn wcel c1 cle wbr cc0 cdiv co clt nnge1 0lt1 cr wa wi 0re ltletr mp3an12
+    nnre 1re recgt0 ex syld syl mpani mpd ) ABCZDAEFZGDAHIJFZAKUGGDJFZUHUILUGAM
+    CZUJUHNZUIOASUKULGAJFZUIGMCDMCUKULUMOPTGDAQRUKUMUIAUAUBUCUDUEUF $.
+
+  ${
+    $d z A $.  $d x y z B $.
+    $( Subtraction of positive integers.  (Contributed by NM, 20-Aug-2001.)
+       (Revised by Mario Carneiro, 16-May-2014.) $)
+    nnsub $p |- ( ( A e. NN /\ B e. NN ) -> ( A < B <-> ( B - A ) e. NN ) ) $=
+      ( vz vx cn wcel clt wbr cmin co wi wral wceq breq2 eleq1d imbi12d ralbidv
+      c1 oveq1 cr vy wa cv caddc nnnlt1 pm2.21d rgen breq1 oveq2 cbvralv adantr
+      cc nncn ax-1cn pncan sylancl simpl eqeltrd syl5ibrcom a1dd rspcv nnre 1re
+      ltsubadd mp3an2 syl2anr subsub3 mp3an3 syl2an biimpd syl9r nn1m1nn adantl
+      wb wo mpjaod ralrimdva syl5bi nnind rspcva sylan2 cc0 nngt0 posdif impbid
+      syl5ibr ) AEFZBEFZUBZABGHZBAIJZEFZWHWGCUCZBGHZBWMIJZEFZKZCELZWJWLKZWMDUCZ
+      GHZWTWMIJZEFZKZCELWMRGHZRWMIJZEFZKZCELWMUAUCZGHZXIWMIJZEFZKZCELZWMXIRUDJZ
+      GHZXOWMIJZEFZKZCELZWRDUABWTRMZXDXHCEYAXAXEXCXGWTRWMGNYAXBXFEWTRWMISOPQWTX
+      IMZXDXMCEYBXAXJXCXLWTXIWMGNYBXBXKEWTXIWMISOPQWTXOMZXDXSCEYCXAXPXCXRWTXOWM
+      GNYCXBXQEWTXOWMISOPQWTBMZXDWQCEYDXAWNXCWPWTBWMGNYDXBWOEWTBWMISOPQXHCEWMEF
+      ZXEXGWMUEUFUGXNWTXIGHZXIWTIJZEFZKZDELZXIEFZXTXMYICDEWMWTMZXJYFXLYHWMWTXIG
+      UHYLXKYGEWMWTXIIUIOPUJYKYJXSCEYKYEUBZWMRMZYJXSKWMRIJZEFZYMYNXSYJYMYNXRXPY
+      MXRYNXORIJZEFYMYQXIEYMXIULFZRULFZYQXIMYKYRYEXIUMZUKUNXIRUOUPYKYEUQURYNXQY
+      QEWMRXOIUIOUSUTUTYPYJYOXIGHZXIYOIJZEFZKZYMXSYIUUDDYOEWTYOMZYFUUAYHUUCWTYO
+      XIGUHUUEYGUUBEWTYOXIIUIOPVAYMUUDXSYMUUAXPUUCXRYEWMTFZXITFZUUAXPVNZYKWMVBX
+      IVBUUFRTFUUGUUHVCWMRXIVDVEVFYMUUBXQEYKYRWMULFZUUBXQMZYEYTWMUMYRUUIYSUUJUN
+      XIWMRVGVHVIOPVJVKYEYNYPVOYKWMVLVMVPVQVRVSWQWSCAEWMAMZWNWJWPWLWMABGUHUUKWO
+      WKEWMABIUIOPVTWAWLWJWIWBWKGHZWKWCWGATFBTFWJUULVNWHAVBBVBABWDVIWFWE $.
+
+    nnsub.1 $e |- A e. NN $.
+    nnsub.2 $e |- B e. NN $.
+    $( Subtraction of positive integers.  (Contributed by NM, 19-Aug-2001.) $)
+    nnsubi $p |- ( A < B <-> ( B - A ) e. NN ) $=
+      ( cn wcel clt wbr cmin co wb nnsub mp2an ) AEFBEFABGHBAIJEFKCDABLM $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Two ways to express " ` A ` divides ` B ` " for positive integers.
+       (Contributed by NM, 3-Feb-2004.)  (Proof shortened by Mario Carneiro,
+       16-May-2014.) $)
+    nndiv $p |- ( ( A e. NN /\ B e. NN ) ->
+                ( E. x e. NN ( A x. x ) = B <-> ( B / A ) e. NN ) ) $=
+      ( cdiv co cn wcel cv wceq wrex cmul risset eqcom ad2antlr ad2antrr adantl
+      wa cc nncn cc0 cap wbr nnap0 divmulapd syl5bb rexbidva syl5rbb ) CBDEZFGA
+      HZUHIZAFJBFGZCFGZQZBUIKECIZAFJAUHFLUMUJUNAFUJUHUIIUMUIFGZQZUNUIUHMUPCBUIU
+      LCRGUKUOCSNUKBRGULUOBSOUOUIRGUMUISPUKBTUAUBULUOBUCOUDUEUFUG $.
+  $}
+
+  $( Transitive property of divisibility: if ` A ` divides ` B ` and ` B `
+     divides ` C ` , then ` A ` divides ` C ` .  Typically, ` C ` would be an
+     integer, although the theorem holds for complex ` C ` .  (Contributed by
+     NM, 3-May-2005.) $)
+  nndivtr $p |- ( ( ( A e. NN /\ B e. NN /\ C e. CC ) /\
+               ( ( B / A ) e. NN /\ ( C / B ) e. NN ) ) -> ( C / A ) e. NN ) $=
+    ( cn wcel cc w3a cdiv co wa cmul cc0 cap wbr wceq nncn 3ad2ant2 nnap0 jca
+    c1 nnmulcl simp3 3ad2ant1 divmul24ap syl22anc dividapd oveq1d divclap 3expb
+    sylan2 ancoms mulid2d 3adant2 3eqtrd eleq1d syl5ib imp ) ADEZBDEZCFEZGZBAHI
+    ZDECBHIZDEJZCAHIZDEZVDVBVCKIZDEVAVFVBVCUAVAVGVEDVAVGBBHIZVEKIZTVEKIZVEVABFE
+    ZUTAFEZALMNZJZVKBLMNZJZVGVIOUSURVKUTBPZQURUSUTUBURUSVNUTURVLVMAPARSZUCUSURV
+    PUTUSVKVOVQBRZSQBCABUDUEUSURVIVJOUTUSVHTVEKUSBVQVSUFUGQURUTVJVEOUSURUTJVEUT
+    URVEFEZURUTVNVTVRUTVLVMVTCAUHUIUJUKULUMUNUOUPUQ $.
+
+  ${
+    nnge1d.1 $e |- ( ph -> A e. NN ) $.
+    $( A positive integer is one or greater.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nnge1d $p |- ( ph -> 1 <_ A ) $=
+      ( cn wcel c1 cle wbr nnge1 syl ) ABDEFBGHCBIJ $.
+
+    $( A positive integer is positive.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nngt0d $p |- ( ph -> 0 < A ) $=
+      ( cn wcel cc0 clt wbr nngt0 syl ) ABDEFBGHCBIJ $.
+
+    $( A positive integer is nonzero.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nnne0d $p |- ( ph -> A =/= 0 ) $=
+      ( cn wcel cc0 wne nnne0 syl ) ABDEBFGCBHI $.
+
+    $( The reciprocal of a positive integer is real.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    nnrecred $p |- ( ph -> ( 1 / A ) e. RR ) $=
+      ( cn wcel c1 cdiv co cr nnrecre syl ) ABDEFBGHIECBJK $.
+
+    nnmulcld.2 $e |- ( ph -> B e. NN ) $.
+    $( Closure of addition of positive integers.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    nnaddcld $p |- ( ph -> ( A + B ) e. NN ) $=
+      ( cn wcel caddc co nnaddcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure of multiplication of positive integers.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    nnmulcld $p |- ( ph -> ( A x. B ) e. NN ) $=
+      ( cn wcel cmul co nnmulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
+  ${
+    nndivred.1 $e |- ( ph -> A e. RR ) $.
+    nndivred.2 $e |- ( ph -> B e. NN ) $.
+    $( A positive integer is one or greater.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nndivred $p |- ( ph -> ( A / B ) e. RR ) $=
+      ( cr wcel cn cdiv co nndivre syl2anc ) ABFGCHGBCIJFGDEBCKL $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Decimal representation of numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  Note that the numbers 0 and 1 are constants defined as primitives of the
+  complex number axiom system (see ~ df-0 and ~ df-1 ).
+
+  Only the digits 0 through 9 ( ~ df-0 through ~ df-9 ) and the
+  number 10 ( ~ df-10 ) are explicitly defined.
+
+  Most abstract math rarely requires numbers larger than 4.  Even in Wiles'
+  proof of Fermat's Last Theorem, the largest number used appears to be 12.
+
+$)
+
+  $c 2 $. $( The decimal number 2 $)
+  $c 3 $. $( The decimal number 3 $)
+  $c 4 $. $( The decimal number 4 $)
+  $c 5 $. $( The decimal number 5 $)
+  $c 6 $. $( The decimal number 6 $)
+  $c 7 $. $( The decimal number 7 $)
+  $c 8 $. $( The decimal number 8 $)
+  $c 9 $. $( The decimal number 9 $)
+  $c 10 $. $( The decimal number 10 $)
+
+  $( Extend class notation to include the number 2. $)
+  c2 $a class 2 $.
+  $( Extend class notation to include the number 3. $)
+  c3 $a class 3 $.
+  $( Extend class notation to include the number 4. $)
+  c4 $a class 4 $.
+  $( Extend class notation to include the number 5. $)
+  c5 $a class 5 $.
+  $( Extend class notation to include the number 6. $)
+  c6 $a class 6 $.
+  $( Extend class notation to include the number 7. $)
+  c7 $a class 7 $.
+  $( Extend class notation to include the number 8. $)
+  c8 $a class 8 $.
+  $( Extend class notation to include the number 9. $)
+  c9 $a class 9 $.
+  $( Extend class notation to include the number 10. $)
+  c10 $a class 10 $.
+
+  $( Define the number 2.  (Contributed by NM, 27-May-1999.) $)
+  df-2 $a |- 2 = ( 1 + 1 ) $.
+
+  $( Define the number 3.  (Contributed by NM, 27-May-1999.) $)
+  df-3 $a |- 3 = ( 2 + 1 ) $.
+  $( Define the number 4.  (Contributed by NM, 27-May-1999.) $)
+  df-4 $a |- 4 = ( 3 + 1 ) $.
+  $( Define the number 5.  (Contributed by NM, 27-May-1999.) $)
+  df-5 $a |- 5 = ( 4 + 1 ) $.
+  $( Define the number 6.  (Contributed by NM, 27-May-1999.) $)
+  df-6 $a |- 6 = ( 5 + 1 ) $.
+  $( Define the number 7.  (Contributed by NM, 27-May-1999.) $)
+  df-7 $a |- 7 = ( 6 + 1 ) $.
+  $( Define the number 8.  (Contributed by NM, 27-May-1999.) $)
+  df-8 $a |- 8 = ( 7 + 1 ) $.
+  $( Define the number 9.  (Contributed by NM, 27-May-1999.) $)
+  df-9 $a |- 9 = ( 8 + 1 ) $.
+  $( Define the number 10.  See remarks under ~ df-2 .  (Contributed by NM,
+     5-Feb-2007.) $)
+  df-10 $a |- 10 = ( 9 + 1 ) $.
+
+  $( ` 0 =/= 1 ` (common case).  See aso ~ 1ap0 .  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  0ne1 $p |- 0 =/= 1 $=
+    ( cc0 c1 0re 0lt1 ltneii ) ABCDE $.
+
+  $( ` 1 =/= 0 ` .  See aso ~ 1ap0 .  (Contributed by Jim Kingdon,
+     9-Mar-2020.) $)
+  1ne0 $p |- 1 =/= 0 $=
+    ( cc0 c1 0ne1 necomi ) ABCD $.
+
+  $( ` ( 1 - 1 ) = 0 ` (common case).  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  1m1e0 $p |- ( 1 - 1 ) = 0 $=
+    ( c1 ax-1cn subidi ) ABC $.
+
+  $( The number 2 is real.  (Contributed by NM, 27-May-1999.) $)
+  2re $p |- 2 e. RR $=
+    ( c2 c1 caddc co cr df-2 1re readdcli eqeltri ) ABBCDEFBBGGHI $.
+
+  $( The number 2 is a complex number.  (Contributed by NM, 30-Jul-2004.) $)
+  2cn $p |- 2 e. CC $=
+    ( c2 2re recni ) ABC $.
+
+  $( 2 is a set (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  2ex $p |- 2 e. _V $=
+    ( c2 cc 2cn elexi ) ABCD $.
+
+  $( 2 is a complex number, deductive form (common case).  (Contributed by
+     David A. Wheeler, 8-Dec-2018.) $)
+  2cnd $p |- ( ph -> 2 e. CC ) $=
+    ( c2 cc wcel 2cn a1i ) BCDAEF $.
+
+  $( The number 3 is real.  (Contributed by NM, 27-May-1999.) $)
+  3re $p |- 3 e. RR $=
+    ( c3 c2 c1 caddc co cr df-3 2re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 3 is a complex number.  (Contributed by FL, 17-Oct-2010.) $)
+  3cn $p |- 3 e. CC $=
+    ( c3 3re recni ) ABC $.
+
+  $( 3 is a set (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  3ex $p |- 3 e. _V $=
+    ( c3 cc 3cn elexi ) ABCD $.
+
+  $( The number 4 is real.  (Contributed by NM, 27-May-1999.) $)
+  4re $p |- 4 e. RR $=
+    ( c4 c3 c1 caddc co cr df-4 3re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 4 is a complex number.  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  4cn $p |- 4 e. CC $=
+    ( c4 4re recni ) ABC $.
+
+  $( The number 5 is real.  (Contributed by NM, 27-May-1999.) $)
+  5re $p |- 5 e. RR $=
+    ( c5 c4 c1 caddc co cr df-5 4re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 5 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  5cn $p |- 5 e. CC $=
+    ( c5 5re recni ) ABC $.
+
+  $( The number 6 is real.  (Contributed by NM, 27-May-1999.) $)
+  6re $p |- 6 e. RR $=
+    ( c6 c5 c1 caddc co cr df-6 5re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 6 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  6cn $p |- 6 e. CC $=
+    ( c6 6re recni ) ABC $.
+
+  $( The number 7 is real.  (Contributed by NM, 27-May-1999.) $)
+  7re $p |- 7 e. RR $=
+    ( c7 c6 c1 caddc co cr df-7 6re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 7 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  7cn $p |- 7 e. CC $=
+    ( c7 7re recni ) ABC $.
+
+  $( The number 8 is real.  (Contributed by NM, 27-May-1999.) $)
+  8re $p |- 8 e. RR $=
+    ( c8 c7 c1 caddc co cr df-8 7re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 8 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  8cn $p |- 8 e. CC $=
+    ( c8 8re recni ) ABC $.
+
+  $( The number 9 is real.  (Contributed by NM, 27-May-1999.) $)
+  9re $p |- 9 e. RR $=
+    ( c9 c8 c1 caddc co cr df-9 8re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( The number 9 is complex.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  9cn $p |- 9 e. CC $=
+    ( c9 9re recni ) ABC $.
+
+  $( The number 10 is real.  (Contributed by NM, 5-Feb-2007.) $)
+  10re $p |- 10 e. RR $=
+    ( c10 c9 c1 caddc co cr df-10 9re 1re readdcli eqeltri ) ABCDEFGBCHIJK $.
+
+  $( Zero is nonnegative.  (Contributed by David A. Wheeler, 7-Jul-2016.) $)
+  0le0 $p |- 0 <_ 0 $=
+    ( cc0 0re leidi ) ABC $.
+
+  $( 0 is less than or equal to 2.  (Contributed by David A. Wheeler,
+     7-Dec-2018.) $)
+  0le2 $p |- 0 <_ 2 $=
+    ( cc0 c1 caddc co c2 cle wbr 0le1 1re addge0i mp2an df-2 breqtrri ) ABBCDZE
+    FABFGZOANFGHHBBIIJKLM $.
+
+  $( The number 2 is positive.  (Contributed by NM, 27-May-1999.) $)
+  2pos $p |- 0 < 2 $=
+    ( cc0 c1 caddc co c2 clt 1re 0lt1 addgt0ii df-2 breqtrri ) ABBCDEFBBGGHHIJK
+    $.
+
+  $( The number 2 is nonzero.  (Contributed by NM, 9-Nov-2007.) $)
+  2ne0 $p |- 2 =/= 0 $=
+    ( c2 2re 2pos gt0ne0ii ) ABCD $.
+
+  $( The number 2 is apart from zero.  (Contributed by Jim Kingdon,
+     9-Mar-2020.) $)
+  2ap0 $p |- 2 # 0 $=
+    ( c2 2re 2pos gt0ap0ii ) ABCD $.
+
+  $( The number 3 is positive.  (Contributed by NM, 27-May-1999.) $)
+  3pos $p |- 0 < 3 $=
+    ( cc0 c2 c1 caddc co c3 clt 2re 1re 2pos 0lt1 addgt0ii df-3 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 3 is nonzero.  (Contributed by FL, 17-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 7-May-2011.) $)
+  3ne0 $p |- 3 =/= 0 $=
+    ( c3 3re 3pos gt0ne0ii ) ABCD $.
+
+  $( The number 4 is positive.  (Contributed by NM, 27-May-1999.) $)
+  4pos $p |- 0 < 4 $=
+    ( cc0 c3 c1 caddc co c4 clt 3re 1re 3pos 0lt1 addgt0ii df-4 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 4 is nonzero.  (Contributed by David A. Wheeler,
+     5-Dec-2018.) $)
+  4ne0 $p |- 4 =/= 0 $=
+    ( c4 4re 4pos gt0ne0ii ) ABCD $.
+
+  $( The number 5 is positive.  (Contributed by NM, 27-May-1999.) $)
+  5pos $p |- 0 < 5 $=
+    ( cc0 c4 c1 caddc co c5 clt 4re 1re 4pos 0lt1 addgt0ii df-5 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 6 is positive.  (Contributed by NM, 27-May-1999.) $)
+  6pos $p |- 0 < 6 $=
+    ( cc0 c5 c1 caddc co c6 clt 5re 1re 5pos 0lt1 addgt0ii df-6 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 7 is positive.  (Contributed by NM, 27-May-1999.) $)
+  7pos $p |- 0 < 7 $=
+    ( cc0 c6 c1 caddc co c7 clt 6re 1re 6pos 0lt1 addgt0ii df-7 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 8 is positive.  (Contributed by NM, 27-May-1999.) $)
+  8pos $p |- 0 < 8 $=
+    ( cc0 c7 c1 caddc co c8 clt 7re 1re 7pos 0lt1 addgt0ii df-8 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 9 is positive.  (Contributed by NM, 27-May-1999.) $)
+  9pos $p |- 0 < 9 $=
+    ( cc0 c8 c1 caddc co c9 clt 8re 1re 8pos 0lt1 addgt0ii df-9 breqtrri ) ABCD
+    EFGBCHIJKLMN $.
+
+  $( The number 10 is positive.  (Contributed by NM, 5-Feb-2007.) $)
+  10pos $p |- 0 < 10 $=
+    ( cc0 c9 c1 caddc co c10 clt 9re 1re 9pos 0lt1 addgt0ii df-10 breqtrri ) AB
+    CDEFGBCHIJKLMN $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Some properties of specific numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  This includes adding two pairs of values 1..10
+  (where the right is less than the left)
+  and where the left is less than the right for the values 1..10.
+
+$)
+
+  $( -1 is a complex number (common case).  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  neg1cn $p |- -u 1 e. CC $=
+    ( c1 ax-1cn negcli ) ABC $.
+
+  $( -1 is a real number (common case).  (Contributed by David A. Wheeler,
+     5-Dec-2018.) $)
+  neg1rr $p |- -u 1 e. RR $=
+    ( c1 1re renegcli ) ABC $.
+
+  $( -1 is nonzero (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  neg1ne0 $p |- -u 1 =/= 0 $=
+    ( c1 ax-1cn 1ne0 negne0i ) ABCD $.
+
+  $( -1 is less than 0 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  neg1lt0 $p |- -u 1 < 0 $=
+    ( c1 cneg cc0 clt wbr neg0 0lt1 eqbrtri 1re 0re ltnegcon1i mpbir ) ABCDECBZ
+    ADEMCADFGHACIJKL $.
+
+  $( ` -u -u 1 ` is 1 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  negneg1e1 $p |- -u -u 1 = 1 $=
+    ( c1 ax-1cn negnegi ) ABC $.
+
+  $( ` 1 + -u 1 ` is 0 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  1pneg1e0 $p |- ( 1 + -u 1 ) = 0 $=
+    ( c1 ax-1cn negidi ) ABC $.
+
+  $( 0 minus 0 equals 0 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  0m0e0 $p |- ( 0 - 0 ) = 0 $=
+    ( cc0 0cn subidi ) ABC $.
+
+  $( 1 - 0 = 1 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  1m0e1 $p |- ( 1 - 0 ) = 1 $=
+    ( c1 ax-1cn subid1i ) ABC $.
+
+  $( 0 + 1 = 1.  (Contributed by David A. Wheeler, 7-Jul-2016.) $)
+  0p1e1 $p |- ( 0 + 1 ) = 1 $=
+    ( c1 ax-1cn addid2i ) ABC $.
+
+  $( 1 + 0 = 1.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  1p0e1 $p |- ( 1 + 0 ) = 1 $=
+    ( c1 ax-1cn addid1i ) ABC $.
+
+  $( 1 + 1 = 2.  (Contributed by NM, 1-Apr-2008.) $)
+  1p1e2 $p |- ( 1 + 1 ) = 2 $=
+    ( c2 c1 caddc co df-2 eqcomi ) ABBCDEF $.
+
+  $( 2 - 1 = 1.  The result is on the right-hand-side to be consistent with
+     similar proofs like ~ 4p4e8 .  (Contributed by David A. Wheeler,
+     4-Jan-2017.) $)
+  2m1e1 $p |- ( 2 - 1 ) = 1 $=
+    ( c2 c1 2cn ax-1cn 1p1e2 subaddrii ) ABBCDDEF $.
+
+  $( 1 = 2 - 1 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  1e2m1 $p |- 1 = ( 2 - 1 ) $=
+    ( c2 c1 cmin co 2m1e1 eqcomi ) ABCDBEF $.
+
+  $( 3 - 1 = 2.  (Contributed by FL, 17-Oct-2010.)  (Revised by NM,
+     10-Dec-2017.) $)
+  3m1e2 $p |- ( 3 - 1 ) = 2 $=
+    ( c3 c1 c2 3cn ax-1cn 2cn caddc co addcomi df-3 eqtr4i subaddrii ) ABCDEFBC
+    GHCBGHABCEFIJKL $.
+
+  $( Two plus two equals four.  For more information, see "2+2=4 Trivia" on the
+     Metamath Proof Explorer Home Page:
+     ~ http://us.metamath.org/mpeuni/mmset.html#trivia .  (Contributed by NM,
+     27-May-1999.) $)
+  2p2e4 $p |- ( 2 + 2 ) = 4 $=
+    ( c2 caddc co c1 c4 df-2 oveq2i c3 df-4 oveq1i ax-1cn addassi 3eqtri eqtr4i
+    df-3 2cn ) AABCADDBCZBCZEAQABFGEHDBCADBCZDBCRIHSDBOJADDPKKLMN $.
+
+  $( Two times a number.  (Contributed by NM, 10-Oct-2004.)  (Revised by Mario
+     Carneiro, 27-May-2016.)  (Proof shortened by AV, 26-Feb-2020.) $)
+  2times $p |- ( A e. CC -> ( 2 x. A ) = ( A + A ) ) $=
+    ( cc wcel c2 cmul co c1 caddc df-2 oveq1i 1p1times syl5eq ) ABCDAEFGGHFZAEF
+    AAHFDMAEIJAKL $.
+
+  $( A number times 2.  (Contributed by NM, 16-Oct-2007.) $)
+  times2 $p |- ( A e. CC -> ( A x. 2 ) = ( A + A ) ) $=
+    ( cc wcel c2 cmul co caddc wceq 2cn mulcom mpan2 2times eqtrd ) ABCZADEFZDA
+    EFZAAGFNDBCOPHIADJKALM $.
+
+  ${
+    2times.1 $e |- A e. CC $.
+    $( Two times a number.  (Contributed by NM, 1-Aug-1999.) $)
+    2timesi $p |- ( 2 x. A ) = ( A + A ) $=
+      ( cc wcel c2 cmul co caddc wceq 2times ax-mp ) ACDEAFGAAHGIBAJK $.
+
+    $( A number times 2.  (Contributed by NM, 11-May-2004.) $)
+    times2i $p |- ( A x. 2 ) = ( A + A ) $=
+      ( cc wcel c2 cmul co caddc wceq times2 ax-mp ) ACDAEFGAAHGIBAJK $.
+  $}
+
+  $( 2 divided by 2 is 1 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  2div2e1 $p |- ( 2 / 2 ) = 1 $=
+    ( c2 2cn 2ap0 dividapi ) ABCD $.
+
+  $( 2 + 1 = 3.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  2p1e3 $p |- ( 2 + 1 ) = 3 $=
+    ( c3 c2 c1 caddc co df-3 eqcomi ) ABCDEFG $.
+
+  $( 1 + 2 = 3 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  1p2e3 $p |- ( 1 + 2 ) = 3 $=
+    ( c2 c1 c3 2cn ax-1cn 2p1e3 addcomli ) ABCDEFG $.
+
+  $( 3 + 1 = 4.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  3p1e4 $p |- ( 3 + 1 ) = 4 $=
+    ( c4 c3 c1 caddc co df-4 eqcomi ) ABCDEFG $.
+
+  $( 4 + 1 = 5.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  4p1e5 $p |- ( 4 + 1 ) = 5 $=
+    ( c5 c4 c1 caddc co df-5 eqcomi ) ABCDEFG $.
+
+  $( 5 + 1 = 6.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  5p1e6 $p |- ( 5 + 1 ) = 6 $=
+    ( c6 c5 c1 caddc co df-6 eqcomi ) ABCDEFG $.
+
+  $( 6 + 1 = 7.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  6p1e7 $p |- ( 6 + 1 ) = 7 $=
+    ( c7 c6 c1 caddc co df-7 eqcomi ) ABCDEFG $.
+
+  $( 7 + 1 = 8.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  7p1e8 $p |- ( 7 + 1 ) = 8 $=
+    ( c8 c7 c1 caddc co df-8 eqcomi ) ABCDEFG $.
+
+  $( 8 + 1 = 9.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  8p1e9 $p |- ( 8 + 1 ) = 9 $=
+    ( c9 c8 c1 caddc co df-9 eqcomi ) ABCDEFG $.
+
+  $( 9 + 1 = 10.  (Contributed by Mario Carneiro, 18-Apr-2015.) $)
+  9p1e10 $p |- ( 9 + 1 ) = 10 $=
+    ( c10 c9 c1 caddc co df-10 eqcomi ) ABCDEFG $.
+
+  $( 3 + 2 = 5.  (Contributed by NM, 11-May-2004.) $)
+  3p2e5 $p |- ( 3 + 2 ) = 5 $=
+    ( c3 c2 caddc co c4 c1 c5 df-2 oveq2i 3cn ax-1cn addassi eqtr4i df-4 oveq1i
+    df-5 ) ABCDZEFCDZGQAFCDZFCDZRQAFFCDZCDTBUAACHIAFFJKKLMESFCNOMPM $.
+
+  $( 3 + 3 = 6.  (Contributed by NM, 11-May-2004.) $)
+  3p3e6 $p |- ( 3 + 3 ) = 6 $=
+    ( c3 caddc co c2 c1 c6 df-3 oveq2i 3cn 2cn ax-1cn addassi eqtr4i df-6 3p2e5
+    c5 oveq1i ) AABCZADBCZEBCZFRADEBCZBCTAUAABGHADEIJKLMFPEBCTNSPEBOQMM $.
+
+  $( 4 + 2 = 6.  (Contributed by NM, 11-May-2004.) $)
+  4p2e6 $p |- ( 4 + 2 ) = 6 $=
+    ( c4 c2 caddc co c5 c1 c6 df-2 oveq2i 4cn ax-1cn addassi eqtr4i df-5 oveq1i
+    df-6 ) ABCDZEFCDZGQAFCDZFCDZRQAFFCDZCDTBUAACHIAFFJKKLMESFCNOMPM $.
+
+  $( 4 + 3 = 7.  (Contributed by NM, 11-May-2004.) $)
+  4p3e7 $p |- ( 4 + 3 ) = 7 $=
+    ( c4 c3 caddc co c2 c1 c7 df-3 oveq2i 4cn 2cn ax-1cn addassi eqtr4i c6 df-7
+    4p2e6 oveq1i ) ABCDZAECDZFCDZGSAEFCDZCDUABUBACHIAEFJKLMNGOFCDUAPTOFCQRNN $.
+
+  $( 4 + 4 = 8.  (Contributed by NM, 11-May-2004.) $)
+  4p4e8 $p |- ( 4 + 4 ) = 8 $=
+    ( c4 caddc co c3 c1 c8 df-4 oveq2i 4cn 3cn ax-1cn addassi eqtr4i df-8 4p3e7
+    c7 oveq1i ) AABCZADBCZEBCZFRADEBCZBCTAUAABGHADEIJKLMFPEBCTNSPEBOQMM $.
+
+  $( 5 + 2 = 7.  (Contributed by NM, 11-May-2004.) $)
+  5p2e7 $p |- ( 5 + 2 ) = 7 $=
+    ( c5 c2 caddc co c6 c1 c7 df-2 oveq2i 5cn ax-1cn addassi eqtr4i df-6 oveq1i
+    df-7 ) ABCDZEFCDZGQAFCDZFCDZRQAFFCDZCDTBUAACHIAFFJKKLMESFCNOMPM $.
+
+  $( 5 + 3 = 8.  (Contributed by NM, 11-May-2004.) $)
+  5p3e8 $p |- ( 5 + 3 ) = 8 $=
+    ( c5 c3 caddc co c2 c1 c8 df-3 oveq2i 5cn 2cn ax-1cn addassi eqtr4i c7 df-8
+    5p2e7 oveq1i ) ABCDZAECDZFCDZGSAEFCDZCDUABUBACHIAEFJKLMNGOFCDUAPTOFCQRNN $.
+
+  $( 5 + 4 = 9.  (Contributed by NM, 11-May-2004.) $)
+  5p4e9 $p |- ( 5 + 4 ) = 9 $=
+    ( c5 c4 caddc co c3 c1 c9 df-4 oveq2i 5cn 3cn ax-1cn addassi eqtr4i c8 df-9
+    5p3e8 oveq1i ) ABCDZAECDZFCDZGSAEFCDZCDUABUBACHIAEFJKLMNGOFCDUAPTOFCQRNN $.
+
+  $( 5 + 5 = 10.  (Contributed by NM, 5-Feb-2007.) $)
+  5p5e10 $p |- ( 5 + 5 ) = 10 $=
+    ( c5 caddc co c4 c1 c10 oveq2i 5cn 4cn ax-1cn addassi eqtr4i c9 df-10 5p4e9
+    df-5 oveq1i ) AABCZADBCZEBCZFRADEBCZBCTAUAABPGADEHIJKLFMEBCTNSMEBOQLL $.
+
+  $( 6 + 2 = 8.  (Contributed by NM, 11-May-2004.) $)
+  6p2e8 $p |- ( 6 + 2 ) = 8 $=
+    ( c6 c2 caddc co c7 c1 c8 df-2 oveq2i 6cn ax-1cn addassi eqtr4i df-7 oveq1i
+    df-8 ) ABCDZEFCDZGQAFCDZFCDZRQAFFCDZCDTBUAACHIAFFJKKLMESFCNOMPM $.
+
+  $( 6 + 3 = 9.  (Contributed by NM, 11-May-2004.) $)
+  6p3e9 $p |- ( 6 + 3 ) = 9 $=
+    ( c6 c3 caddc co c2 c1 c9 df-3 oveq2i 6cn 2cn ax-1cn addassi eqtr4i c8 df-9
+    6p2e8 oveq1i ) ABCDZAECDZFCDZGSAEFCDZCDUABUBACHIAEFJKLMNGOFCDUAPTOFCQRNN $.
+
+  $( 6 + 4 = 10.  (Contributed by NM, 5-Feb-2007.) $)
+  6p4e10 $p |- ( 6 + 4 ) = 10 $=
+    ( c6 c4 caddc co c3 c1 c10 oveq2i 6cn 3cn ax-1cn addassi eqtr4i df-10 6p3e9
+    df-4 c9 oveq1i ) ABCDZAECDZFCDZGSAEFCDZCDUABUBACPHAEFIJKLMGQFCDUANTQFCORMM
+    $.
+
+  $( 7 + 2 = 9.  (Contributed by NM, 11-May-2004.) $)
+  7p2e9 $p |- ( 7 + 2 ) = 9 $=
+    ( c7 c2 caddc co c8 c1 c9 df-2 oveq2i 7cn ax-1cn addassi eqtr4i df-8 oveq1i
+    df-9 ) ABCDZEFCDZGQAFCDZFCDZRQAFFCDZCDTBUAACHIAFFJKKLMESFCNOMPM $.
+
+  $( 7 + 3 = 10.  (Contributed by NM, 5-Feb-2007.) $)
+  7p3e10 $p |- ( 7 + 3 ) = 10 $=
+    ( c7 c3 caddc co c2 c1 c10 oveq2i 7cn 2cn ax-1cn addassi eqtr4i df-10 7p2e9
+    df-3 c9 oveq1i ) ABCDZAECDZFCDZGSAEFCDZCDUABUBACPHAEFIJKLMGQFCDUANTQFCORMM
+    $.
+
+  $( 8 + 2 = 10.  (Contributed by NM, 5-Feb-2007.) $)
+  8p2e10 $p |- ( 8 + 2 ) = 10 $=
+    ( c8 c2 caddc co c9 c1 c10 df-2 oveq2i 8cn ax-1cn addassi eqtr4i df-9 df-10
+    oveq1i ) ABCDZEFCDZGQAFCDZFCDZRQAFFCDZCDTBUAACHIAFFJKKLMESFCNPMOM $.
+
+  $( 1 times 1 equals 1.  (Contributed by David A. Wheeler, 7-Jul-2016.) $)
+  1t1e1 $p |- ( 1 x. 1 ) = 1 $=
+    ( c1 ax-1cn mulid1i ) ABC $.
+
+  $( 2 times 1 equals 2.  (Contributed by David A. Wheeler, 6-Dec-2018.) $)
+  2t1e2 $p |- ( 2 x. 1 ) = 2 $=
+    ( c2 2cn mulid1i ) ABC $.
+
+  $( 2 times 2 equals 4.  (Contributed by NM, 1-Aug-1999.) $)
+  2t2e4 $p |- ( 2 x. 2 ) = 4 $=
+    ( c2 cmul co caddc c4 2cn 2timesi 2p2e4 eqtri ) AABCAADCEAFGHI $.
+
+  $( 3 times 1 equals 3.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  3t1e3 $p |- ( 3 x. 1 ) = 3 $=
+    ( c3 3cn mulid1i ) ABC $.
+
+  $( 3 times 2 equals 6.  (Contributed by NM, 2-Aug-2004.) $)
+  3t2e6 $p |- ( 3 x. 2 ) = 6 $=
+    ( c3 c2 cmul co caddc c6 3cn times2i 3p3e6 eqtri ) ABCDAAEDFAGHIJ $.
+
+  $( 3 times 3 equals 9.  (Contributed by NM, 11-May-2004.) $)
+  3t3e9 $p |- ( 3 x. 3 ) = 9 $=
+    ( c3 cmul co c2 c1 caddc c9 df-3 oveq2i 3cn 2cn ax-1cn adddii 3t2e6 oveq12i
+    c6 3t1e3 eqtri 6p3e9 ) AABCADEFCZBCZGATABHIUAPAFCZGUAADBCZAEBCZFCUBADEJKLMU
+    CPUDAFNQORSRR $.
+
+  $( 4 times 2 equals 8.  (Contributed by NM, 2-Aug-2004.) $)
+  4t2e8 $p |- ( 4 x. 2 ) = 8 $=
+    ( c4 c2 cmul co caddc c8 4cn times2i 4p4e8 eqtri ) ABCDAAEDFAGHIJ $.
+
+  $( 5 times 2 equals 10.  (Contributed by NM, 5-Feb-2007.) $)
+  5t2e10 $p |- ( 5 x. 2 ) = 10 $=
+    ( c5 c2 cmul co caddc c10 5cn times2i 5p5e10 eqtri ) ABCDAAEDFAGHIJ $.
+
+  $( 2 times 0 equals 0.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  2t0e0 $p |- ( 2 x. 0 ) = 0 $=
+    ( c2 2cn mul01i ) ABC $.
+
+  $( One half of four is two.  (Contributed by NM, 3-Sep-1999.) $)
+  4d2e2 $p |- ( 4 / 2 ) = 2 $=
+    ( c4 c2 cdiv co wceq cmul 2t2e4 4cn 2cn 2ap0 divmulapi mpbir ) ABCDBEBBFDAE
+    GABBHIIJKL $.
+
+  $( 2 is a positive integer.  (Contributed by NM, 20-Aug-2001.) $)
+  2nn $p |- 2 e. NN $=
+    ( c2 c1 caddc co cn df-2 wcel 1nn peano2nn ax-mp eqeltri ) ABBCDZEFBEGLEGHB
+    IJK $.
+
+  $( 3 is a positive integer.  (Contributed by NM, 8-Jan-2006.) $)
+  3nn $p |- 3 e. NN $=
+    ( c3 c2 c1 caddc co cn df-3 wcel 2nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 4 is a positive integer.  (Contributed by NM, 8-Jan-2006.) $)
+  4nn $p |- 4 e. NN $=
+    ( c4 c3 c1 caddc co cn df-4 wcel 3nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 5 is a positive integer.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  5nn $p |- 5 e. NN $=
+    ( c5 c4 c1 caddc co cn df-5 wcel 4nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 6 is a positive integer.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  6nn $p |- 6 e. NN $=
+    ( c6 c5 c1 caddc co cn df-6 wcel 5nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 7 is a positive integer.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  7nn $p |- 7 e. NN $=
+    ( c7 c6 c1 caddc co cn df-7 wcel 6nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 8 is a positive integer.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  8nn $p |- 8 e. NN $=
+    ( c8 c7 c1 caddc co cn df-8 wcel 7nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 9 is a positive integer.  (Contributed by NM, 21-Oct-2012.) $)
+  9nn $p |- 9 e. NN $=
+    ( c9 c8 c1 caddc co cn df-9 wcel 8nn peano2nn ax-mp eqeltri ) ABCDEZFGBFHMF
+    HIBJKL $.
+
+  $( 10 is a positive integer.  (Contributed by NM, 8-Nov-2012.) $)
+  10nn $p |- 10 e. NN $=
+    ( c10 c9 c1 caddc co cn df-10 wcel 9nn peano2nn ax-mp eqeltri ) ABCDEZFGBFH
+    MFHIBJKL $.
+
+  $( 1 is less than 2.  (Contributed by NM, 24-Feb-2005.) $)
+  1lt2 $p |- 1 < 2 $=
+    ( c1 caddc co c2 clt 1re ltp1i df-2 breqtrri ) AAABCDEAFGHI $.
+
+  $( 2 is less than 3.  (Contributed by NM, 26-Sep-2010.) $)
+  2lt3 $p |- 2 < 3 $=
+    ( c2 c1 caddc co c3 clt 2re ltp1i df-3 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 1 is less than 3.  (Contributed by NM, 26-Sep-2010.) $)
+  1lt3 $p |- 1 < 3 $=
+    ( c1 c2 clt wbr c3 1lt2 2lt3 1re 2re 3re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 3 is less than 4.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  3lt4 $p |- 3 < 4 $=
+    ( c3 c1 caddc co c4 clt 3re ltp1i df-4 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 2 is less than 4.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  2lt4 $p |- 2 < 4 $=
+    ( c2 c3 clt wbr c4 2lt3 3lt4 2re 3re 4re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 1 is less than 4.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  1lt4 $p |- 1 < 4 $=
+    ( c1 c2 clt wbr c4 1lt2 2lt4 1re 2re 4re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 4 is less than 5.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  4lt5 $p |- 4 < 5 $=
+    ( c4 c1 caddc co c5 clt 4re ltp1i df-5 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 3 is less than 5.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  3lt5 $p |- 3 < 5 $=
+    ( c3 c4 clt wbr c5 3lt4 4lt5 3re 4re 5re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 2 is less than 5.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  2lt5 $p |- 2 < 5 $=
+    ( c2 c4 clt wbr c5 2lt4 4lt5 2re 4re 5re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 1 is less than 5.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  1lt5 $p |- 1 < 5 $=
+    ( c1 c4 clt wbr c5 1lt4 4lt5 1re 4re 5re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 5 is less than 6.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  5lt6 $p |- 5 < 6 $=
+    ( c5 c1 caddc co c6 clt 5re ltp1i df-6 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 4 is less than 6.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  4lt6 $p |- 4 < 6 $=
+    ( c4 c5 clt wbr c6 4lt5 5lt6 4re 5re 6re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 3 is less than 6.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  3lt6 $p |- 3 < 6 $=
+    ( c3 c4 clt wbr c6 3lt4 4lt6 3re 4re 6re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 2 is less than 6.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  2lt6 $p |- 2 < 6 $=
+    ( c2 c3 clt wbr c6 2lt3 3lt6 2re 3re 6re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 1 is less than 6.  (Contributed by NM, 19-Oct-2012.) $)
+  1lt6 $p |- 1 < 6 $=
+    ( c1 c2 clt wbr c6 1lt2 2lt6 1re 2re 6re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 6 is less than 7.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  6lt7 $p |- 6 < 7 $=
+    ( c6 c1 caddc co c7 clt 6re ltp1i df-7 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 5 is less than 7.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  5lt7 $p |- 5 < 7 $=
+    ( c5 c6 clt wbr c7 5lt6 6lt7 5re 6re 7re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 4 is less than 7.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  4lt7 $p |- 4 < 7 $=
+    ( c4 c5 clt wbr c7 4lt5 5lt7 4re 5re 7re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 3 is less than 7.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  3lt7 $p |- 3 < 7 $=
+    ( c3 c4 clt wbr c7 3lt4 4lt7 3re 4re 7re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 2 is less than 7.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  2lt7 $p |- 2 < 7 $=
+    ( c2 c3 clt wbr c7 2lt3 3lt7 2re 3re 7re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 1 is less than 7.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  1lt7 $p |- 1 < 7 $=
+    ( c1 c2 clt wbr c7 1lt2 2lt7 1re 2re 7re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 7 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  7lt8 $p |- 7 < 8 $=
+    ( c7 c1 caddc co c8 clt 7re ltp1i df-8 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 6 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  6lt8 $p |- 6 < 8 $=
+    ( c6 c7 clt wbr c8 6lt7 7lt8 6re 7re 8re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 5 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  5lt8 $p |- 5 < 8 $=
+    ( c5 c6 clt wbr c8 5lt6 6lt8 5re 6re 8re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 4 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  4lt8 $p |- 4 < 8 $=
+    ( c4 c5 clt wbr c8 4lt5 5lt8 4re 5re 8re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 3 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  3lt8 $p |- 3 < 8 $=
+    ( c3 c4 clt wbr c8 3lt4 4lt8 3re 4re 8re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 2 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  2lt8 $p |- 2 < 8 $=
+    ( c2 c3 clt wbr c8 2lt3 3lt8 2re 3re 8re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 1 is less than 8.  (Contributed by Mario Carneiro, 15-Sep-2013.) $)
+  1lt8 $p |- 1 < 8 $=
+    ( c1 c2 clt wbr c8 1lt2 2lt8 1re 2re 8re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 8 is less than 9.  (Contributed by Mario Carneiro, 19-Feb-2014.) $)
+  8lt9 $p |- 8 < 9 $=
+    ( c8 c1 caddc co c9 clt 8re ltp1i df-9 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 7 is less than 9.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+  7lt9 $p |- 7 < 9 $=
+    ( c7 c8 clt wbr c9 7lt8 8lt9 7re 8re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 6 is less than 9.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+  6lt9 $p |- 6 < 9 $=
+    ( c6 c7 clt wbr c9 6lt7 7lt9 6re 7re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 5 is less than 9.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+  5lt9 $p |- 5 < 9 $=
+    ( c5 c6 clt wbr c9 5lt6 6lt9 5re 6re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 4 is less than 9.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+  4lt9 $p |- 4 < 9 $=
+    ( c4 c5 clt wbr c9 4lt5 5lt9 4re 5re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 3 is less than 9.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+  3lt9 $p |- 3 < 9 $=
+    ( c3 c4 clt wbr c9 3lt4 4lt9 3re 4re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 2 is less than 9.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+  2lt9 $p |- 2 < 9 $=
+    ( c2 c3 clt wbr c9 2lt3 3lt9 2re 3re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 1 is less than 9.  (Contributed by NM, 19-Oct-2012.)  (Revised by Mario
+     Carneiro, 9-Mar-2015.) $)
+  1lt9 $p |- 1 < 9 $=
+    ( c1 c2 clt wbr c9 1lt2 2lt9 1re 2re 9re lttri mp2an ) ABCDBECDAECDFGABEHIJ
+    KL $.
+
+  $( 9 is less than 10.  (Contributed by Mario Carneiro, 8-Feb-2015.) $)
+  9lt10 $p |- 9 < 10 $=
+    ( c9 c1 caddc co c10 clt 9re ltp1i df-10 breqtrri ) AABCDEFAGHIJ $.
+
+  $( 8 is less than 10.  (Contributed by Mario Carneiro, 8-Feb-2015.) $)
+  8lt10 $p |- 8 < 10 $=
+    ( c8 c9 clt wbr c10 8lt9 9lt10 8re 9re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 7 is less than 10.  (Contributed by Mario Carneiro, 10-Mar-2015.) $)
+  7lt10 $p |- 7 < 10 $=
+    ( c7 c8 clt wbr c10 7lt8 8lt10 7re 8re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 6 is less than 10.  (Contributed by Mario Carneiro, 10-Mar-2015.) $)
+  6lt10 $p |- 6 < 10 $=
+    ( c6 c7 clt wbr c10 6lt7 7lt10 6re 7re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 5 is less than 10.  (Contributed by Mario Carneiro, 10-Mar-2015.) $)
+  5lt10 $p |- 5 < 10 $=
+    ( c5 c6 clt wbr c10 5lt6 6lt10 5re 6re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 4 is less than 10.  (Contributed by Mario Carneiro, 10-Mar-2015.) $)
+  4lt10 $p |- 4 < 10 $=
+    ( c4 c5 clt wbr c10 4lt5 5lt10 4re 5re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 3 is less than 10.  (Contributed by Mario Carneiro, 10-Mar-2015.) $)
+  3lt10 $p |- 3 < 10 $=
+    ( c3 c4 clt wbr c10 3lt4 4lt10 3re 4re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 2 is less than 10.  (Contributed by Mario Carneiro, 10-Mar-2015.) $)
+  2lt10 $p |- 2 < 10 $=
+    ( c2 c3 clt wbr c10 2lt3 3lt10 2re 3re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 1 is less than 10.  (Contributed by NM, 7-Nov-2012.)  (Revised by Mario
+     Carneiro, 9-Mar-2015.) $)
+  1lt10 $p |- 1 < 10 $=
+    ( c1 c2 clt wbr c10 1lt2 2lt10 1re 2re 10re lttri mp2an ) ABCDBECDAECDFGABE
+    HIJKL $.
+
+  $( 0 is not equal to 2.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  0ne2 $p |- 0 =/= 2 $=
+    ( c2 cc0 2ne0 necomi ) ABCD $.
+
+  $( 1 is not equal to 2.  (Contributed by NM, 19-Oct-2012.) $)
+  1ne2 $p |- 1 =/= 2 $=
+    ( c1 c2 1re 1lt2 ltneii ) ABCDE $.
+
+  $( 1 is less than or equal to 2 (common case).  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  1le2 $p |- 1 <_ 2 $=
+    ( c1 c2 1re 2re 1lt2 ltleii ) ABCDEF $.
+
+  $( 2 is a nonzero complex number (common case).  (Contributed by David A.
+     Wheeler, 7-Dec-2018.) $)
+  2cnne0 $p |- ( 2 e. CC /\ 2 =/= 0 ) $=
+    ( c2 cc wcel cc0 wne 2cn 2ne0 pm3.2i ) ABCADEFGH $.
+
+  $( 2 is a nonzero real number (common case).  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  2rene0 $p |- ( 2 e. RR /\ 2 =/= 0 ) $=
+    ( c2 cr wcel cc0 wne 2re 2ne0 pm3.2i ) ABCADEFGH $.
+
+  $( 1 is less than or equal to 3.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  1le3 $p |- 1 <_ 3 $=
+    ( c1 c3 1re 3re 1lt3 ltleii ) ABCDEF $.
+
+  $( ` -u 1 x. -u 1 ` is 1 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  neg1mulneg1e1 $p |- ( -u 1 x. -u 1 ) = 1 $=
+    ( c1 cneg cmul co ax-1cn mul2negi 1t1e1 eqtri ) ABZICDAACDAAAEEFGH $.
+
+  $( One-half is real.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  halfre $p |- ( 1 / 2 ) e. RR $=
+    ( c2 2re 2ap0 rerecclapi ) ABCD $.
+
+  $( One-half is complex.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  halfcn $p |- ( 1 / 2 ) e. CC $=
+    ( c1 c2 cdiv co halfre recni ) ABCDEF $.
+
+  $( One-half is greater than zero.  (Contributed by NM, 24-Feb-2005.) $)
+  halfgt0 $p |- 0 < ( 1 / 2 ) $=
+    ( c2 2re 2pos recgt0ii ) ABCD $.
+
+  $( One-half is less than one.  (Contributed by NM, 24-Feb-2005.) $)
+  halflt1 $p |- ( 1 / 2 ) < 1 $=
+    ( c1 cdiv co clt wbr 1div1e1 1lt2 eqbrtri 1re 2re 0lt1 2pos ltdiv23ii mpbi
+    c2 ) AABCZODEAOBCADEPAODFGHAAOIIJKLMN $.
+
+  $( Prove that 1 - 1/2 = 1/2.  (Contributed by David A. Wheeler,
+     4-Jan-2017.) $)
+  1mhlfehlf $p |- ( 1 - ( 1 / 2 ) ) = ( 1 / 2 ) $=
+    ( c2 c1 cmin co cdiv cc wcel cc0 cap wbr wceq 2cn ax-1cn pm3.2i divsubdirap
+    wa 2ap0 mp3an 2m1e1 oveq1i 2div2e1 3eqtr3ri ) ABCDZAEDZAAEDZBAEDZCDZUFBUFCD
+    AFGZBFGUHAHIJZPUDUGKLMUHUILQNABAORUCBAESTUEBUFCUATUB $.
+
+  $( An eighth of four thirds is a sixth.  (Contributed by Paul Chapman,
+     24-Nov-2007.) $)
+  8th4div3 $p |- ( ( 1 / 8 ) x. ( 4 / 3 ) ) = ( 1 / 6 ) $=
+    ( c1 c8 cdiv co c4 c3 cmul c6 ax-1cn 8re recni 4cn gt0ap0ii c2 eqtr3i eqtri
+    3cn 2cn cc wcel 8pos divmuldivapi mulcomi mul32i 4t2e8 oveq1i mulassi 3t2e6
+    3re 3pos oveq2i oveq12i cc0 cap wbr wceq 6re 6pos 4re 4pos divcanap5 mp3an1
+    wa mp4an ) ABCDEFCDGDZEAGDZEHGDZCDZAHCDZVEAEGDZBFGDZCDVHABEFIBJKLQBJUAMFUIU
+    JMUBVJVFVKVGCAEILUCVKEFNGDZGDZVGEFGDNGDZVKVMENGDZFGDVNVKENFLRQUDVOBFGUEUFOE
+    FNLQRUGOVLHEGUHUKPULPHSTZHUMUNUOZESTZEUMUNUOZVHVIUPZHUQKHUQURMLEUSUTMASTVPV
+    QVCVRVSVCVTIAHEVAVBVDP $.
+
+  $( One half plus or minus one sixth.  (Contributed by Paul Chapman,
+     17-Jan-2008.) $)
+  halfpm6th $p |- ( ( ( 1 / 2 ) - ( 1 / 6 ) ) = ( 1 / 3 ) /\
+                       ( ( 1 / 2 ) + ( 1 / 6 ) ) = ( 2 / 3 ) ) $=
+    ( c1 c2 cdiv co c6 cmin c3 wceq caddc cmul 3cn ax-1cn 2cn 2ap0 divmuldivapi
+    oveq1i mulid1i 3t2e6 oveq12i 3eqtr3i 3re 3pos gt0ap0ii halfcn mulid2i eqtri
+    dividapi cc wcel cc0 cap wbr wa 6cn 6re 6pos pm3.2i divsubdirap mp3an 3m1e2
+    oveq2i recclapi 3eqtr2i c4 divdirapi df-4 3eqtr4ri 2t2e4 divclapi ) ABCDZAE
+    CDZFDZAGCDZHVJVKIDZBGCDZHVLGECDZVKFDZGAFDZECDZVMVJVPVKFGGCDZVJJDZGAJDZGBJDZ
+    CDVJVPGGABKKLMGUAUBUCZNOWAAVJJDVJVTAVJJGKWDUGPVJUDUEUFWBGWCECGKQRSTZPGUHUIA
+    UHUIEUHUIZEUJUKULZUMVSVQHKLWFWGUNEUOUPUCZUQGAEURUSVSBECDABJDZWCCDZVMVRBECUT
+    PWIBWCECBMUERSVMBBCDZJDVMAJDWJVMWKAVMJBMNUGZVAAGBBLKMMWDNOVMGKWDVBQTVCVCVNV
+    DECDZBBJDZWCCDZVOGAIDZECDVPVKIDWMVNGAEKLUNWHVEVDWPECVFPVJVPVKIWEPVGWNVDWCEC
+    VHRSVOWKJDVOAJDWOVOWKAVOJWLVABGBBMKMMWDNOVOBGMKWDVIQTVCUQ $.
+
+  $( i times 0 equals 0 (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  it0e0 $p |- ( _i x. 0 ) = 0 $=
+    ( ci ax-icn mul01i ) ABC $.
+
+  $( ` ( 2 x. _i ) e. CC ` (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  2mulicn $p |- ( 2 x. _i ) e. CC $=
+    ( c2 ci 2cn ax-icn mulcli ) ABCDE $.
+
+  $( The imaginary unit ` _i ` is apart from zero.  (Contributed by Jim
+     Kingdon, 9-Mar-2020.) $)
+  iap0 $p |- _i # 0 $=
+    ( cc0 ci c1 cmul co caddc cap wbr wo 1ap0 olci cr wcel wb 0re apreim ax-icn
+    1re oveq2i eqtri mp4an mpbir mulid1i addid2i it0e0 00id 3brtr3i ) ABCDEZFEZ
+    ABADEZFEZBAGUIUKGHZAAGHZCAGHZIZUNUMJKALMZCLMUPUPULUONOROOACAAPUAUBUIABFEBUH
+    BAFBQUCSBQUDTUKAAFEAUJAAFUESUFTUG $.
+
+  $( ` 2 x. _i ` is apart from zero.  (Contributed by Jim Kingdon,
+     9-Mar-2020.) $)
+  2muliap0 $p |- ( 2 x. _i ) # 0 $=
+    ( c2 ci 2cn ax-icn 2ap0 iap0 mulap0i ) ABCDEFG $.
+
+  $( ` ( 2 x. _i ) =/= 0 ` .  See also ~ 2muliap0 .  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  2muline0 $p |- ( 2 x. _i ) =/= 0 $=
+    ( c2 ci cmul co cc0 cap wbr wne 2muliap0 cc wcel wi 2mulicn 0cn mp2an ax-mp
+    apne ) ABCDZEFGZREHZIRJKEJKSTLMNREQOP $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Simple number properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Closure of half of a number (common case).  (Contributed by NM,
+     1-Jan-2006.) $)
+  halfcl $p |- ( A e. CC -> ( A / 2 ) e. CC ) $=
+    ( cc wcel c2 cc0 cap wbr cdiv co 2cn 2ap0 divclap mp3an23 ) ABCDBCDEFGADHIB
+    CJKADLM $.
+
+  $( Real closure of half.  (Contributed by NM, 1-Jan-2006.) $)
+  rehalfcl $p |- ( A e. RR -> ( A / 2 ) e. RR ) $=
+    ( cr wcel c2 cc0 cap wbr cdiv co 2re 2ap0 redivclap mp3an23 ) ABCDBCDEFGADH
+    IBCJKADLM $.
+
+  $( Half of a number is zero iff the number is zero.  (Contributed by NM,
+     20-Apr-2006.) $)
+  half0 $p |- ( A e. CC -> ( ( A / 2 ) = 0 <-> A = 0 ) ) $=
+    ( cc wcel c2 cc0 cap wbr cdiv co wceq wb 2cn 2ap0 diveqap0 mp3an23 ) ABCDBC
+    DEFGADHIEJAEJKLMADNO $.
+
+  $( Two halves make a whole.  (Contributed by NM, 11-Apr-2005.) $)
+  2halves $p |- ( A e. CC -> ( ( A / 2 ) + ( A / 2 ) ) = A ) $=
+    ( cc wcel c2 cmul co cdiv 2times oveq1d cc0 cap wbr wceq 2cn 2ap0 divcanap3
+    caddc mp3an23 wa pm3.2i divdirap mp3an3 anidms 3eqtr3rd ) ABCZDAEFZDGFZAAQF
+    ZDGFZAADGFZUJQFZUEUFUHDGAHIUEDBCZDJKLZUGAMNOADPRUEUIUKMZUEUEULUMSUNULUMNOTA
+    ADUAUBUCUD $.
+
+  $( A number is positive iff its half is positive.  (Contributed by NM,
+     10-Apr-2005.) $)
+  halfpos2 $p |- ( A e. RR -> ( 0 < A <-> 0 < ( A / 2 ) ) ) $=
+    ( cr wcel c2 cc0 clt wbr cdiv co wb 2re 2pos gt0div mp3an23 ) ABCDBCEDFGEAF
+    GEADHIFGJKLADMN $.
+
+  $( A positive number is greater than its half.  (Contributed by NM,
+     28-Oct-2004.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  halfpos $p |- ( A e. RR -> ( 0 < A <-> ( A / 2 ) < A ) ) $=
+    ( cr wcel cc0 clt c2 cdiv co caddc halfpos2 rehalfcl ltaddposd cc wceq recn
+    wbr 2halves syl breq2d 3bitrd ) ABCZDAEPDAFGHZEPUBUBUBIHZEPUBAEPAJUAUBUBAKZ
+    UDLUAUCAUBEUAAMCUCANAOAQRST $.
+
+  $( A number is nonnegative iff its half is nonnegative.  (Contributed by NM,
+     9-Dec-2005.) $)
+  halfnneg2 $p |- ( A e. RR -> ( 0 <_ A <-> 0 <_ ( A / 2 ) ) ) $=
+    ( cr wcel c2 cc0 clt wbr cle cdiv co wb 2re 2pos ge0div mp3an23 ) ABCDBCEDF
+    GEAHGEADIJHGKLMADNO $.
+
+  $( Closure of half-sum and half-difference.  (Contributed by Paul Chapman,
+     12-Oct-2007.) $)
+  halfaddsubcl $p |- ( ( A e. CC /\ B e. CC ) -> ( ( ( A + B ) / 2 ) e. CC /\
+                         ( ( A - B ) / 2 ) e. CC ) ) $=
+    ( cc wcel wa caddc co c2 cdiv cmin addcl halfcl syl subcl jca ) ACDBCDEZABF
+    GZHIGCDZABJGZHIGCDZPQCDRABKQLMPSCDTABNSLMO $.
+
+  $( Sum and difference of half-sum and half-difference.  (Contributed by Paul
+     Chapman, 12-Oct-2007.) $)
+  halfaddsub $p |- ( ( A e. CC /\ B e. CC ) ->
+                      ( ( ( ( A + B ) / 2 ) + ( ( A - B ) / 2 ) ) = A /\
+                        ( ( ( A + B ) / 2 ) - ( ( A - B ) / 2 ) ) = B ) ) $=
+    ( cc wcel wa caddc cdiv cmin wceq cmul 2times adantr eqtr4d oveq1d 2cn 2ap0
+    co c2 mp3an3 syl2anc ppncan 3anidm13 addcl subcl cc0 cap divdirap divcanap3
+    wbr pm3.2i mp3an23 3eqtr3d pnncan 3anidm23 adantl divsubdirap jca ) ACDZBCD
+    ZEZABFQZRGQZABHQZRGQZFQZAIVBVDHQZBIUTVAVCFQZRGQZRAJQZRGQZVEAUTVGVIRGUTVGAAF
+    QZVIURUSVGVKIABAUAUBURVIVKIUSAKLMNUTVACDZVCCDZVHVEIZABUCZABUDZVLVMRCDZRUEUF
+    UIZEZVNVQVROPUJZVAVCRUGSTURVJAIZUSURVQVRWAOPARUHUKLULUTVAVCHQZRGQZRBJQZRGQZ
+    VFBUTWBWDRGUTWBBBFQZWDURUSWBWFIABBUMUNUSWDWFIURBKUOMNUTVLVMWCVFIZVOVPVLVMVS
+    WGVTVAVCRUPSTUSWEBIZURUSVQVRWHOPBRUHUKUOULUQ $.
+
+  $( TODO - use this to reduce:
+  Statement "lt2add" is directly referenced in the proofs of 9 statements:
+    2climnn 2climnn0 climaddlem3 climmullem5 climcaui ser1f0i
+  MM> sh us 2halves
+  Statement "2halves" is directly referenced in the proofs of 10 statements:
+    2climnn 2climnn0 climmullem5 climcaui caucvgi ser1f0i
+  MM>
+  $)
+  $( A sum is less than the whole if each term is less than half.  (Contributed
+     by NM, 13-Dec-2006.) $)
+  lt2halves $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( ( A < ( C / 2 ) /\ B < ( C / 2 ) ) -> ( A + B ) < C ) ) $=
+    ( cr wcel w3a c2 co clt wbr wa caddc wi 3simpa rehalfcl jca 3ad2ant3 lt2add
+    cdiv syl2anc wb cc wceq recn 2halves syl breq2d sylibd ) ADEZBDEZCDEZFZACGS
+    HZIJBUMIJKZABLHZUMUMLHZIJZUOCIJZULUIUJKUMDEZUSKZUNUQMUIUJUKNUKUIUTUJUKUSUSC
+    OZVAPQABUMUMRTUKUIUQURUAUJUKUPCUOIUKCUBEUPCUCCUDCUEUFUGQUH $.
+
+  $( Sum is less than product for numbers greater than 2.  (Contributed by
+     Stefan Allan, 24-Sep-2010.) $)
+  addltmul $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( 2 < A /\ 2 < B ) )
+              -> ( A + B ) < ( A x. B ) ) $=
+    ( cr wcel wa c2 clt wbr caddc co cmul c1 cmin 2re 1re ltsub1 syl2an remulcl
+    wb cc mp3an13 2m1e1 breq1i syl6bb bi2anan9 wi peano2rem mulgt1 ex wceq recn
+    sylbid ax-1cn mulsub mpanl2 mpanr2 breq2d 1t1e1 oveq2i breq2i mpan2 readdcl
+    remulcli sylancl ltaddsub2 mp3an2 syl2anc syl5rbbr ltadd1 ax-1rid oveqan12d
+    mp3an3 breq1d bitr3d 3bitrd sylibd imp ) ACDZBCDZEZFAGHZFBGHZEZABIJZABKJZGH
+    ZVTWCLALMJZBLMJZKJZGHZWFVTWCLWGGHZLWHGHZEZWJVRWAWKVSWBWLVRWAFLMJZWGGHZWKFCD
+    ZVRLCDZWAWOSNOFALPUAWNLWGGUBUCUDVSWBWNWHGHZWLWPVSWQWBWRSNOFBLPUAWNLWHGUBUCU
+    DUEVRWGCDZWHCDZWMWJUFVSAUGBUGWSWTEWMWJWGWHUHUIQULVTWJLWELLKJZIJZALKJZBLKJZI
+    JZMJZGHZXELIJZWELIJZGHZWFVTWIXFLGVRATDZBTDZWIXFUJZVSAUKBUKXKXLLTDZXMUMXKXNX
+    LXNEXMUMALBLUNUOUPQUQXJXHXBGHZVTXGXBXIXHGXALWEIURUSUTVTXECDZXBCDZXOXGSZVRXC
+    CDZXDCDZXPVSVRWQXSOALRVAVSWQXTOBLRVAXCXDVBQZVTWECDZXACDXQABRZLLOOVCWEXAVBVD
+    XPWQXQXROXELXBVEVFVGVHVTXEWEGHZXJWFVTXPYBYDXJSZYAYCXPYBWQYEOXEWELVIVLVGVTXE
+    WDWEGVRVSXCAXDBIAVJBVJVKVMVNVOVPVQ $.
+
+  ${
+    $d x y $.
+    $( There is no smallest positive real number.  (Contributed by NM,
+       28-Oct-2004.) $)
+    nominpos $p |- -. E. x e. RR ( 0 < x /\
+                   -. E. y e. RR ( 0 < y /\ y < x ) ) $=
+      ( cc0 cv clt wbr wa cr wrex wn wcel wi c2 cdiv co rehalfcl divgt0 mpanr12
+      2re 2pos ex halfpos biimpd jcad wceq breq2 breq1 rspcev syl6an imanim syl
+      anbi12d nrex ) CADZEFZCBDZEFZUPUNEFZGZBHIZJGZAHUNHKZUOUTLVAJVBUNMNOZHKUOC
+      VCEFZVCUNEFZGZUTUNPVBUOVDVEVBUOVDVBUOGMHKCMEFVDSTUNMQRUAVBUOVEUNUBUCUDUSV
+      FBVCHUPVCUEUQVDURVEUPVCCEUFUPVCUNEUGULUHUIUOUTUJUKUM $.
+  $}
+
+  $( Ordering property for average.  (Contributed by Mario Carneiro,
+     28-May-2014.) $)
+  avglt1 $p |- ( ( A e. RR /\ B e. RR ) ->
+                 ( A < B <-> A < ( ( A + B ) / 2 ) ) ) $=
+    ( cr wcel wa clt wbr caddc co c2 cmul cdiv wb ltadd2 3anidm13 cc wceq simpl
+    recnd times2 syl breq1d cc0 readdcl 2re pm3.2i a1i ltmuldiv syl3anc 3bitr2d
+    2pos ) ACDZBCDZEZABFGZAAHIZABHIZFGZAJKIZUQFGZAUQJLIFGZULUMUOURMABANOUNUSUPU
+    QFUNAPDUSUPQUNAULUMRZSATUAUBUNULUQCDJCDZUCJFGZEZUTVAMVBABUDVEUNVCVDUEUKUFUG
+    AUQJUHUIUJ $.
+
+  $( Ordering property for average.  (Contributed by Mario Carneiro,
+     28-May-2014.) $)
+  avglt2 $p |- ( ( A e. RR /\ B e. RR ) ->
+                 ( A < B <-> ( ( A + B ) / 2 ) < B ) ) $=
+    ( cr wcel wa caddc co c2 cmul clt wbr cdiv cc simpr recnd 2times syl breq2d
+    wceq wb cc0 readdcl 2re 2pos pm3.2i a1i ltdivmul syl3anc 3anidm23 3bitr4rd
+    ltadd1 ) ACDZBCDZEZABFGZHBIGZJKZUOBBFGZJKZUOHLGBJKZABJKZUNUPURUOJUNBMDUPURS
+    UNBULUMNZOBPQRUNUOCDUMHCDZUAHJKZEZUTUQTABUBVBVEUNVCVDUCUDUEUFUOBHUGUHULUMVA
+    USTABBUKUIUJ $.
+
+  $( Ordering property for average.  (Contributed by Mario Carneiro,
+     28-May-2014.) $)
+  avgle1 $p |- ( ( A e. RR /\ B e. RR ) ->
+                 ( A <_ B <-> A <_ ( ( A + B ) / 2 ) ) ) $=
+    ( cr wcel wa clt wbr wn caddc co c2 cdiv cle wb avglt2 ancoms cc wceq lenlt
+    recn addcom syl2an oveq1d breq1d bitr4d notbid readdcl rehalfcl syl 3bitr4d
+    syldan ) ACDZBCDZEZBAFGZHABIJZKLJZAFGZHZABMGAUQMGZUNUOURUNUOBAIJZKLJZAFGZUR
+    UMULUOVCNBAOPUNUQVBAFUNUPVAKLULAQDBQDUPVARUMATBTABUAUBUCUDUEUFABSULUMUQCDZU
+    TUSNUNUPCDVDABUGUPUHUIAUQSUKUJ $.
+
+  $( Ordering property for average.  (Contributed by Jeff Hankins,
+     15-Sep-2013.)  (Revised by Mario Carneiro, 28-May-2014.) $)
+  avgle2 $p |- ( ( A e. RR /\ B e. RR ) ->
+                 ( A <_ B <-> ( ( A + B ) / 2 ) <_ B ) ) $=
+    ( cr wcel wa clt wbr wn caddc co c2 cdiv cle wb avglt1 ancoms cc wceq lenlt
+    recn addcom syl2an oveq1d breq2d bitr4d notbid readdcl rehalfcl syl 3bitr4d
+    sylancom ) ACDZBCDZEZBAFGZHBABIJZKLJZFGZHZABMGUQBMGZUNUOURUNUOBBAIJZKLJZFGZ
+    URUMULUOVCNBAOPUNUQVBBFUNUPVAKLULAQDBQDUPVARUMATBTABUAUBUCUDUEUFABSULUMUQCD
+    ZUTUSNUNUPCDVDABUGUPUHUIUQBSUKUJ $.
+
+  ${
+    2timesd.1 $e |- ( ph -> A e. CC ) $.
+    $( Two times a number.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    2timesd $p |- ( ph -> ( 2 x. A ) = ( A + A ) ) $=
+      ( cc wcel c2 cmul co caddc wceq 2times syl ) ABDEFBGHBBIHJCBKL $.
+
+    $( A number times 2.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    times2d $p |- ( ph -> ( A x. 2 ) = ( A + A ) ) $=
+      ( cc wcel c2 cmul co caddc wceq times2 syl ) ABDEBFGHBBIHJCBKL $.
+
+    $( Closure of half of a number (frequently used special case).
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    halfcld $p |- ( ph -> ( A / 2 ) e. CC ) $=
+      ( cc wcel c2 cdiv co halfcl syl ) ABDEBFGHDECBIJ $.
+
+    $( Two halves make a whole.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    2halvesd $p |- ( ph -> ( ( A / 2 ) + ( A / 2 ) ) = A ) $=
+      ( cc wcel c2 cdiv co caddc wceq 2halves syl ) ABDEBFGHZMIHBJCBKL $.
+  $}
+
+  ${
+    rehalfcld.1 $e |- ( ph -> A e. RR ) $.
+    $( Real closure of half.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    rehalfcld $p |- ( ph -> ( A / 2 ) e. RR ) $=
+      ( cr wcel c2 cdiv co rehalfcl syl ) ABDEBFGHDECBIJ $.
+
+    lt2halvesd.2 $e |- ( ph -> B e. RR ) $.
+    lt2halvesd.3 $e |- ( ph -> C e. RR ) $.
+    lt2halvesd.4 $e |- ( ph -> A < ( C / 2 ) ) $.
+    lt2halvesd.5 $e |- ( ph -> B < ( C / 2 ) ) $.
+    $( A sum is less than the whole if each term is less than half.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    lt2halvesd $p |- ( ph -> ( A + B ) < C ) $=
+      ( c2 cdiv co clt wbr caddc cr wcel wa wi lt2halves syl3anc mp2and ) ABDJK
+      LZMNZCUCMNZBCOLDMNZHIABPQCPQDPQUDUERUFSEFGBCDTUAUB $.
+  $}
+
+  ${
+    rehalfcli.1 $e |- A e. RR $.
+    $( Half a real number is real.  Inference form.  (Contributed by David
+       Moews, 28-Feb-2017.) $)
+    rehalfcli $p |- ( A / 2 ) e. RR $=
+      ( cr wcel c2 cdiv co rehalfcl ax-mp ) ACDAEFGCDBAHI $.
+  $}
+
+  $( Adding two times 1 to a number.  (Contributed by AV, 22-Sep-2018.) $)
+  add1p1 $p |- ( N e. CC -> ( ( N + 1 ) + 1 ) = ( N + 2 ) ) $=
+    ( cc wcel c1 caddc co c2 id 1cnd addassd wceq 1p1e2 a1i oveq2d eqtrd ) ABCZ
+    ADEFDEFADDEFZEFAGEFPADDPHPIZRJPQGAEQGKPLMNO $.
+
+  $( Subtracting two times 1 from a number.  (Contributed by AV,
+     23-Oct-2018.) $)
+  sub1m1 $p |- ( N e. CC -> ( ( N - 1 ) - 1 ) = ( N - 2 ) ) $=
+    ( cc wcel c1 cmin co caddc c2 id 1cnd subsub4d wceq 1p1e2 a1i oveq2d eqtrd
+    ) ABCZADEFDEFADDGFZEFAHEFQADDQIQJZSKQRHAERHLQMNOP $.
+
+  $( Subtracting 2 and afterwards 1 from a number results in the difference
+     between the number and 3.  (Contributed by Alexander van der Vekens,
+     16-Sep-2018.) $)
+  cnm2m1cnm3 $p |- ( A e. CC -> ( ( A - 2 ) - 1 ) = ( A - 3 ) ) $=
+    ( cc wcel c2 cmin co c1 caddc c3 id 2cnd 1cnd subsub4d wceq 2p1e3 a1i eqtrd
+    oveq2d ) ABCZADEFGEFADGHFZEFAIEFSADGSJSKSLMSTIAETINSOPRQ $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Nonnegative integers (as a subset of complex numbers)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c NN0 $. $( The set of nonnegative integers (blackboard bold N_0). $)
+
+  $( Extend class notation to include the class of nonnegative integers. $)
+  cn0 $a class NN0 $.
+
+  $( Define the set of nonnegative integers.  (Contributed by Raph Levien,
+     10-Dec-2002.) $)
+  df-n0 $a |- NN0 = ( NN u. { 0 } ) $.
+
+  $( Nonnegative integers expressed in terms of naturals and zero.
+     (Contributed by Raph Levien, 10-Dec-2002.) $)
+  elnn0 $p |- ( A e. NN0 <-> ( A e. NN \/ A = 0 ) ) $=
+    ( cn0 wcel cn cc0 csn cun wceq df-n0 eleq2i elun c0ex elsnc2 orbi2i 3bitri
+    wo ) ABCADEFZGZCADCZAQCZPSAEHZPBRAIJADQKTUASAELMNO $.
+
+  $( Positive naturals are a subset of nonnegative integers.  (Contributed by
+     Raph Levien, 10-Dec-2002.) $)
+  nnssnn0 $p |- NN C_ NN0 $=
+    ( cn cc0 csn cun cn0 ssun1 df-n0 sseqtr4i ) AABCZDEAIFGH $.
+
+  $( Nonnegative integers are a subset of the reals.  (Contributed by Raph
+     Levien, 10-Dec-2002.) $)
+  nn0ssre $p |- NN0 C_ RR $=
+    ( cn0 cn cc0 csn cun cr df-n0 nnssre wcel wss 0re snssi ax-mp unssi eqsstri
+    ) ABCDZEFGBPFHCFIPFJKCFLMNO $.
+
+  $( Nonnegative integers are a subset of the complex numbers.)  (Contributed
+     by NM, 9-May-2004.) $)
+  nn0sscn $p |- NN0 C_ CC $=
+    ( cn0 cr cc nn0ssre ax-resscn sstri ) ABCDEF $.
+
+  $( The set of nonnegative integers exists.  (Contributed by NM,
+     18-Jul-2004.) $)
+  nn0ex $p |- NN0 e. _V $=
+    ( cn0 cn cc0 csn cun cvv df-n0 nnex c0ex snex unex eqeltri ) ABCDZEFGBMHCIJ
+    KL $.
+
+  $( A positive integer is a nonnegative integer.  (Contributed by NM,
+     9-May-2004.) $)
+  nnnn0 $p |- ( A e. NN -> A e. NN0 ) $=
+    ( cn cn0 nnssnn0 sseli ) BCADE $.
+
+  ${
+    nnnn0.1 $e |- N e. NN $.
+    $( A positive integer is a nonnegative integer.  (Contributed by NM,
+       20-Jun-2005.) $)
+    nnnn0i $p |- N e. NN0 $=
+      ( cn wcel cn0 nnnn0 ax-mp ) ACDAEDBAFG $.
+  $}
+
+  $( A nonnegative integer is a real number.  (Contributed by NM,
+     9-May-2004.) $)
+  nn0re $p |- ( A e. NN0 -> A e. RR ) $=
+    ( cn0 cr nn0ssre sseli ) BCADE $.
+
+  $( A nonnegative integer is a complex number.  (Contributed by NM,
+     9-May-2004.) $)
+  nn0cn $p |- ( A e. NN0 -> A e. CC ) $=
+    ( cn0 cc nn0sscn sseli ) BCADE $.
+
+  ${
+    nn0re.1 $e |- A e. NN0 $.
+    $( A nonnegative integer is a real number.  (Contributed by NM,
+       14-May-2003.) $)
+    nn0rei $p |- A e. RR $=
+      ( cn0 cr nn0ssre sselii ) CDAEBF $.
+
+    $( A nonnegative integer is a complex number.  (Contributed by NM,
+       14-May-2003.) $)
+    nn0cni $p |- A e. CC $=
+      ( nn0rei recni ) AABCD $.
+  $}
+
+  $( The set of positive integers defined in terms of nonnegative integers.
+     (Contributed by NM, 23-Sep-2007.)  (Proof shortened by Mario Carneiro,
+     13-Feb-2013.) $)
+  dfn2 $p |- NN = ( NN0 \ { 0 } ) $=
+    ( cn0 cc0 csn cdif cn cun df-n0 difeq1i difun2 wcel wceq 0nnn difsn 3eqtrri
+    wn ax-mp ) ABCZDEQFZQDEQDZEARQGHEQIBEJOSEKLBEMPN $.
+
+  $( The positive integer property expressed in terms of difference from zero.
+     (Contributed by Stefan O'Rear, 12-Sep-2015.) $)
+  elnnne0 $p |- ( N e. NN <-> ( N e. NN0 /\ N =/= 0 ) ) $=
+    ( cn wcel cn0 cc0 csn cdif wne wa dfn2 eleq2i eldifsn bitri ) ABCADEFGZCADC
+    AEHIBNAJKADELM $.
+
+  $( 0 is a nonnegative integer.  (Contributed by Raph Levien, 10-Dec-2002.) $)
+  0nn0 $p |- 0 e. NN0 $=
+    ( cc0 wceq cn0 wcel eqid cn wo elnn0 biimpri olcs ax-mp ) AABZACDZAEAFDZLMM
+    NLGAHIJK $.
+
+  $( 1 is a nonnegative integer.  (Contributed by Raph Levien, 10-Dec-2002.) $)
+  1nn0 $p |- 1 e. NN0 $=
+    ( c1 1nn nnnn0i ) ABC $.
+
+  $( 2 is a nonnegative integer.  (Contributed by Raph Levien, 10-Dec-2002.) $)
+  2nn0 $p |- 2 e. NN0 $=
+    ( c2 2nn nnnn0i ) ABC $.
+
+  $( 3 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     18-Feb-2014.) $)
+  3nn0 $p |- 3 e. NN0 $=
+    ( c3 3nn nnnn0i ) ABC $.
+
+  $( 4 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     18-Feb-2014.) $)
+  4nn0 $p |- 4 e. NN0 $=
+    ( c4 4nn nnnn0i ) ABC $.
+
+  $( 5 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     19-Apr-2015.) $)
+  5nn0 $p |- 5 e. NN0 $=
+    ( c5 5nn nnnn0i ) ABC $.
+
+  $( 6 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     19-Apr-2015.) $)
+  6nn0 $p |- 6 e. NN0 $=
+    ( c6 6nn nnnn0i ) ABC $.
+
+  $( 7 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     19-Apr-2015.) $)
+  7nn0 $p |- 7 e. NN0 $=
+    ( c7 7nn nnnn0i ) ABC $.
+
+  $( 8 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     19-Apr-2015.) $)
+  8nn0 $p |- 8 e. NN0 $=
+    ( c8 8nn nnnn0i ) ABC $.
+
+  $( 9 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     19-Apr-2015.) $)
+  9nn0 $p |- 9 e. NN0 $=
+    ( c9 9nn nnnn0i ) ABC $.
+
+  $( 10 is a nonnegative integer.  (Contributed by Mario Carneiro,
+     19-Apr-2015.) $)
+  10nn0 $p |- 10 e. NN0 $=
+    ( c10 10nn nnnn0i ) ABC $.
+
+  $( A nonnegative integer is greater than or equal to zero.  (Contributed by
+     NM, 9-May-2004.)  (Revised by Mario Carneiro, 16-May-2014.) $)
+  nn0ge0 $p |- ( N e. NN0 -> 0 <_ N ) $=
+    ( cn0 wcel cn cc0 wceq wo cle wbr elnn0 cr clt nnre nngt0 wi ltle mpan sylc
+    0re 0le0 breq2 mpbiri jaoi sylbi ) ABCADCZAEFZGEAHIZAJUEUGUFUEAKCZEALIZUGAM
+    ANEKCUHUIUGOSEAPQRUFUGEEHITAEEHUAUBUCUD $.
+
+  $( A nonnegative integer is not less than zero.  (Contributed by NM,
+     9-May-2004.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  nn0nlt0 $p |- ( A e. NN0 -> -. A < 0 ) $=
+    ( cn0 wcel cc0 cle wbr clt wn nn0ge0 cr wb 0re nn0re lenlt sylancr mpbid )
+    ABCZDAEFZADGFHZAIQDJCAJCRSKLAMDANOP $.
+
+  ${
+    nn0ge0.1 $e |- N e. NN0 $.
+    $( Nonnegative integers are nonnegative.  (Contributed by Raph Levien,
+       10-Dec-2002.) $)
+    nn0ge0i $p |- 0 <_ N $=
+      ( cn0 wcel cc0 cle wbr nn0ge0 ax-mp ) ACDEAFGBAHI $.
+  $}
+
+  $( A nonnegative integer is less than or equal to zero iff it is equal to
+     zero.  (Contributed by NM, 9-Dec-2005.) $)
+  nn0le0eq0 $p |- ( N e. NN0 -> ( N <_ 0 <-> N = 0 ) ) $=
+    ( cn0 wcel cc0 cle wbr wa nn0ge0 biantrud cr wb nn0re letri3 sylancl bitr4d
+    wceq 0re ) ABCZADEFZSDAEFZGZADPZRTSAHIRAJCDJCUBUAKALQADMNO $.
+
+  $( A nonnegative integer increased by 1 is greater than 0.  (Contributed by
+     Alexander van der Vekens, 3-Oct-2018.) $)
+  nn0p1gt0 $p |- ( N e. NN0 -> 0 < ( N + 1 ) ) $=
+    ( cn0 wcel c1 nn0re 1red nn0ge0 cc0 clt wbr 0lt1 a1i addgegt0d ) ABCZADAENF
+    AGHDIJNKLM $.
+
+  $( A positive integer plus a nonnegative integer is a positive integer.
+     (Contributed by NM, 20-Apr-2005.)  (Proof shortened by Mario Carneiro,
+     16-May-2014.) $)
+  nnnn0addcl $p |- ( ( M e. NN /\ N e. NN0 ) -> ( M + N ) e. NN ) $=
+    ( cn0 wcel cn cc0 wceq wo caddc co elnn0 nnaddcl wa oveq2 addid1d sylan9eqr
+    nncn simpl eqeltrd jaodan sylan2b ) BCDAEDZBEDZBFGZHABIJZEDZBKUBUCUFUDABLUB
+    UDMUEAEUDUBUEAFIJABFAINUBAAQOPUBUDRSTUA $.
+
+  $( A nonnegative integer plus a positive integer is a positive integer.
+     (Contributed by NM, 22-Dec-2005.) $)
+  nn0nnaddcl $p |- ( ( M e. NN0 /\ N e. NN ) -> ( M + N ) e. NN ) $=
+    ( cn wcel cn0 caddc co wa wceq nncn nn0cn addcom syl2an nnnn0addcl eqeltrrd
+    cc ancoms ) BCDZAEDZABFGZCDRSHBAFGZTCRBPDAPDUATISBJAKBALMBANOQ $.
+
+  $( The result of subtracting a positive integer from 0 is not a nonnegative
+     integer.  (Contributed by Alexander van der Vekens, 19-Mar-2018.) $)
+  0mnnnnn0 $p |- ( N e. NN -> ( 0 - N ) e/ NN0 ) $=
+    ( cn wcel cc0 cmin co cn0 wnel 0re cneg df-neg eqcomi eleq1i cle wbr nn0ge0
+    wn cr nnre le0neg1d clt nngt0 0red lenltd pm2.21 syl6bi mpid sylbird syl5bi
+    wi syl5 mt2i df-nel sylibr ) ABCZDAEFZGCZQUPGHUOUQDRCZIUQAJZGCZUOURQZUPUSGU
+    SUPAKLMUTDUSNOZUOVAUSPUOVBADNOZVAUOAASZTUOVCDAUAOZVAAUBUOVCVEQVEVAUJUOADVDU
+    OUCUDVEVAUEUFUGUHUKUIULUPGUMUN $.
+
+  ${
+    un0addcl.1 $e |- ( ph -> S C_ CC ) $.
+    un0addcl.2 $e |- T = ( S u. { 0 } ) $.
+    ${
+      un0addcl.3 $e |- ( ( ph /\ ( M e. S /\ N e. S ) ) -> ( M + N ) e. S ) $.
+      $( If ` S ` is closed under addition, then so is ` S u. { 0 } ` .
+         (Contributed by Mario Carneiro, 17-Jul-2014.) $)
+      un0addcl $p |- ( ( ph /\ ( M e. T /\ N e. T ) ) -> ( M + N ) e. T ) $=
+        ( wcel caddc co cc0 wo wa eleq2i elun bitri cc sselda eqeltrd csn ssun1
+        cun sseqtr4i sseldi expr addid2d wss a1i elsni oveq1d eleq1d syl5ibrcom
+        wi impancom jaodan sylan2b 0cnd snssd unssd syl5eqss addid1d simpr jaod
+        oveq2d syl5bi impr ) ADCIZECIZDEJKZCIZVIEBIZELUAZIZMZAVHNZVKVIEBVMUCZIV
+        OCVQEGOEBVMPQVPVLVKVNVHADBIZDVMIZMZVLVKUNZVHDVQIVTCVQDGODBVMPQAVRWAVSAV
+        RVLVKAVRVLNNBCVJBVQCBVMUBGUDZHUEUFAVLVSVKAVLNZVKVSLEJKZCIWCWDECWCEABREF
+        SUGABCEBCUHAWBUISTVSVJWDCVSDLEJDLUJUKULUMUOUPUQVPVKVNDLJKZCIVPWEDCVPDAC
+        RDACVQRGABVMRFALRAURUSUTVASVBAVHVCTVNVJWECVNELDJELUJVEULUMVDVFVG $.
+    $}
+
+    un0mulcl.3 $e |- ( ( ph /\ ( M e. S /\ N e. S ) ) -> ( M x. N ) e. S ) $.
+    $( If ` S ` is closed under multiplication, then so is ` S u. { 0 } ` .
+       (Contributed by Mario Carneiro, 17-Jul-2014.) $)
+    un0mulcl $p |- ( ( ph /\ ( M e. T /\ N e. T ) ) -> ( M x. N ) e. T ) $=
+      ( wcel cmul co cc0 wo wa eleq2i elun bitri sseqtr4i cc sselda csn wi expr
+      cun ssun1 sseldi mul02d wss ssun2 c0ex mpbir syl6eqel elsni oveq1d eleq1d
+      snss syl5ibrcom impancom jaodan sylan2b 0cnd snssd syl5eqss mul01d oveq2d
+      unssd jaod syl5bi impr ) ADCIZECIZDEJKZCIZVKEBIZELUAZIZMZAVJNZVMVKEBVOUDZ
+      IVQCVSEGOEBVOPQVRVNVMVPVJADBIZDVOIZMZVNVMUBZVJDVSIWBCVSDGODBVOPQAVTWCWAAV
+      TVNVMAVTVNNNBCVLBVSCBVOUEGRHUFUCAVNWAVMAVNNZVMWALEJKZCIWDWELCWDEABSEFTUGL
+      CIVOCUHVOVSCVOBUIGRLCUJUPUKZULWAVLWECWADLEJDLUMUNUOUQURUSUTVRVMVPDLJKZCIV
+      RWGLCVRDACSDACVSSGABVOSFALSAVAVBVFVCTVDWFULVPVLWGCVPELDJELUMVEUOUQVGVHVI
+      $.
+  $}
+
+  $( Closure of addition of nonnegative integers.  (Contributed by Raph Levien,
+     10-Dec-2002.)  (Proof shortened by Mario Carneiro, 17-Jul-2014.) $)
+  nn0addcl $p |- ( ( M e. NN0 /\ N e. NN0 ) -> ( M + N ) e. NN0 ) $=
+    ( cn cc wss cn0 wcel wa caddc co nnsscn df-n0 nnaddcl adantl un0addcl mpan
+    id ) CDEZAFGBFGHABIJZFGKRCFABRQLACGBCGHSCGRABMNOP $.
+
+  $( Closure of multiplication of nonnegative integers.  (Contributed by NM,
+     22-Jul-2004.)  (Proof shortened by Mario Carneiro, 17-Jul-2014.) $)
+  nn0mulcl $p |- ( ( M e. NN0 /\ N e. NN0 ) -> ( M x. N ) e. NN0 ) $=
+    ( cn cc wss cn0 wcel wa cmul co nnsscn df-n0 nnmulcl adantl un0mulcl mpan
+    id ) CDEZAFGBFGHABIJZFGKRCFABRQLACGBCGHSCGRABMNOP $.
+
+  ${
+    nn0addcl.1 $e |- M e. NN0 $.
+    nn0addcl.2 $e |- N e. NN0 $.
+    $( Closure of addition of nonnegative integers, inference form.
+       (Contributed by Raph Levien, 10-Dec-2002.) $)
+    nn0addcli $p |- ( M + N ) e. NN0 $=
+      ( cn0 wcel caddc co nn0addcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Closure of multiplication of nonnegative integers, inference form.
+       (Contributed by Raph Levien, 10-Dec-2002.) $)
+    nn0mulcli $p |- ( M x. N ) e. NN0 $=
+      ( cn0 wcel cmul co nn0mulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
+  $( A nonnegative integer plus 1 is a positive integer.  (Contributed by Raph
+     Levien, 30-Jun-2006.)  (Revised by Mario Carneiro, 16-May-2014.) $)
+  nn0p1nn $p |- ( N e. NN0 -> ( N + 1 ) e. NN ) $=
+    ( cn0 wcel c1 cn caddc co 1nn nn0nnaddcl mpan2 ) ABCDECADFGECHADIJ $.
+
+  $( Second Peano postulate for nonnegative integers.  (Contributed by NM,
+     9-May-2004.) $)
+  peano2nn0 $p |- ( N e. NN0 -> ( N + 1 ) e. NN0 ) $=
+    ( cn0 wcel c1 caddc co 1nn0 nn0addcl mpan2 ) ABCDBCADEFBCGADHI $.
+
+  $( A positive integer minus 1 is a nonnegative integer.  (Contributed by
+     Jason Orendorff, 24-Jan-2007.)  (Revised by Mario Carneiro,
+     16-May-2014.) $)
+  nnm1nn0 $p |- ( N e. NN -> ( N - 1 ) e. NN0 ) $=
+    ( cn wcel c1 cmin co cc0 wceq wo cn0 nn1m1nn oveq1 syl6eq orim1i syl orcomd
+    1m1e0 elnn0 sylibr ) ABCZADEFZBCZUAGHZIUAJCTUCUBTADHZUBIUCUBIAKUDUCUBUDUADD
+    EFGADDELQMNOPUARS $.
+
+  $( The nonnegative integer property expressed in terms of positive integers.
+     (Contributed by NM, 10-May-2004.)  (Proof shortened by Mario Carneiro,
+     16-May-2014.) $)
+  elnn0nn $p |- ( N e. NN0 <-> ( N e. CC /\ ( N + 1 ) e. NN ) ) $=
+    ( cn0 wcel cc c1 caddc co cn nn0cn nn0p1nn jca cmin wceq simpl ax-1cn pncan
+    wa sylancl nnm1nn0 adantl eqeltrrd impbii ) ABCZADCZAEFGZHCZQZUCUDUFAIAJKUG
+    UEELGZABUGUDEDCUHAMUDUFNOAEPRUFUHBCUDUESTUAUB $.
+
+  $( The positive integer property expressed in terms of nonnegative integers.
+     (Contributed by NM, 10-May-2004.) $)
+  elnnnn0 $p |- ( N e. NN <-> ( N e. CC /\ ( N - 1 ) e. NN0 ) ) $=
+    ( cn wcel cc c1 cmin co cn0 nncn caddc wa npcan1 eleq1d peano2cnm biantrurd
+    bitr3d elnn0nn syl6bbr biadan2 ) ABCZADCZAEFGZHCZAIUATUBDCZUBEJGZBCZKZUCUAU
+    FTUGUAUEABALMUAUDUFANOPUBQRS $.
+
+  $( The positive integer property expressed in terms of nonnegative integers.
+     (Contributed by NM, 1-Sep-2005.) $)
+  elnnnn0b $p |- ( N e. NN <-> ( N e. NN0 /\ 0 < N ) ) $=
+    ( cn wcel cn0 cc0 clt wbr wa nnnn0 nngt0 jca wceq wo elnn0 ax-1 breq2 ltnri
+    wi 0re pm2.21i syl6bi jaoi sylbi imp impbii ) ABCZADCZEAFGZHUFUGUHAIAJKUGUH
+    UFUGUFAELZMUHUFRZANUFUJUIUFUHOUIUHEEFGZUFAEEFPUKUFESQTUAUBUCUDUE $.
+
+  $( The positive integer property expressed in terms of nonnegative integers.
+     (Contributed by NM, 10-Jan-2006.) $)
+  elnnnn0c $p |- ( N e. NN <-> ( N e. NN0 /\ 1 <_ N ) ) $=
+    ( cn wcel cn0 c1 cle wbr wa nnnn0 nnge1 jca cc0 clt 0lt1 cr wi nn0re ltletr
+    0re 1re mp3an12 syl mpani imdistani elnnnn0b sylibr impbii ) ABCZADCZEAFGZH
+    ZUHUIUJAIAJKUKUILAMGZHUHUIUJULUILEMGZUJULNUIAOCZUMUJHULPZAQLOCEOCUNUOSTLEAR
+    UAUBUCUDAUEUFUG $.
+
+  $( A number is less than or equal to itself plus a nonnegative integer.
+     (Contributed by NM, 10-Mar-2005.) $)
+  nn0addge1 $p |- ( ( A e. RR /\ N e. NN0 ) -> A <_ ( A + N ) ) $=
+    ( cn0 wcel cr cc0 cle wbr wa caddc co nn0re nn0ge0 jca addge01 3expb sylan2
+    biimp3a ) BCDZAEDZBEDZFBGHZIAABJKGHZSUAUBBLBMNTUAUBUCTUAUBUCABORPQ $.
+
+  $( A number is less than or equal to itself plus a nonnegative integer.
+     (Contributed by NM, 10-Mar-2005.) $)
+  nn0addge2 $p |- ( ( A e. RR /\ N e. NN0 ) -> A <_ ( N + A ) ) $=
+    ( cn0 wcel cr cc0 cle wbr wa caddc co nn0re nn0ge0 jca addge02 3expb sylan2
+    biimp3a ) BCDZAEDZBEDZFBGHZIABAJKGHZSUAUBBLBMNTUAUBUCTUAUBUCABORPQ $.
+
+  ${
+    nn0addge1.1 $e |- A e. RR $.
+    nn0addge1.2 $e |- N e. NN0 $.
+    $( A number is less than or equal to itself plus a nonnegative integer.
+       (Contributed by NM, 10-Mar-2005.) $)
+    nn0addge1i $p |- A <_ ( A + N ) $=
+      ( cr wcel cn0 caddc co cle wbr nn0addge1 mp2an ) AEFBGFAABHIJKCDABLM $.
+
+    $( A number is less than or equal to itself plus a nonnegative integer.
+       (Contributed by NM, 10-Mar-2005.) $)
+    nn0addge2i $p |- A <_ ( N + A ) $=
+      ( cr wcel cn0 caddc co cle wbr nn0addge2 mp2an ) AEFBGFABAHIJKCDABLM $.
+  $}
+
+  ${
+    nn0le2x.1 $e |- N e. NN0 $.
+    $( A nonnegative integer is less than or equal to twice itself.
+       (Contributed by Raph Levien, 10-Dec-2002.) $)
+    nn0le2xi $p |- N <_ ( 2 x. N ) $=
+      ( caddc co c2 cmul cle nn0rei nn0addge1i nn0cni 2timesi breqtrri ) AAACDE
+      AFDGAAABHBIAABJKL $.
+  $}
+
+  ${
+    nn0lele2x.1 $e |- M e. NN0 $.
+    nn0lele2x.2 $e |- N e. NN0 $.
+    $( 'Less than or equal to' implies 'less than or equal to twice' for
+       nonnegative integers.  (Contributed by Raph Levien, 10-Dec-2002.) $)
+    nn0lele2xi $p |- ( N <_ M -> N <_ ( 2 x. M ) ) $=
+      ( cle wbr c2 cmul co nn0le2xi nn0rei 2re remulcli letri mpan2 ) BAEFAGAHI
+      ZEFBPEFACJBAPBDKACKZGALQMNO $.
+  $}
+
+  $( Two ways to write the support of a function on ` NN0 ` .  (Contributed by
+     Mario Carneiro, 29-Dec-2014.) $)
+  nn0supp $p |- ( F : I --> NN0 ->
+    ( `' F " ( _V \ { 0 } ) ) = ( `' F " NN ) ) $=
+    ( cn0 wf ccnv cn cima cvv cc0 csn cdif dfn2 invdif eqtr4i imaeq2i wfun wceq
+    cin ffun inpreima syl wss cdm cnvimass fimacnv syl5sseq sseqin2 sylib eqtrd
+    fdm eqtr4d syl5req ) BCADZAEZFGUNCHIJZKZRZGZUNUPGZFUQUNFCUOKUQLCUOMNOUMURUN
+    CGZUSRZUSUMAPURVAQBCASCUPATUAUMUSUTUBVAUSQUMAUCZUSUTAUPUDUMVBBUTBCAUJBCAUEU
+    KUFUSUTUGUHUIUL $.
+
+  ${
+    nnnn0d.1 $e |- ( ph -> A e. NN ) $.
+    $( A positive integer is a nonnegative integer.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    nnnn0d $p |- ( ph -> A e. NN0 ) $=
+      ( cn cn0 nnssnn0 sseldi ) ADEBFCG $.
+  $}
+
+  ${
+    nn0red.1 $e |- ( ph -> A e. NN0 ) $.
+    $( A nonnegative integer is a real number.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nn0red $p |- ( ph -> A e. RR ) $=
+      ( cn0 cr nn0ssre sseldi ) ADEBFCG $.
+
+    $( A nonnegative integer is a complex number.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    nn0cnd $p |- ( ph -> A e. CC ) $=
+      ( nn0red recnd ) ABABCDE $.
+
+    $( A nonnegative integer is greater than or equal to zero.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    nn0ge0d $p |- ( ph -> 0 <_ A ) $=
+      ( cn0 wcel cc0 cle wbr nn0ge0 syl ) ABDEFBGHCBIJ $.
+
+    nn0addcld.2 $e |- ( ph -> B e. NN0 ) $.
+    $( Closure of addition of nonnegative integers, inference form.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    nn0addcld $p |- ( ph -> ( A + B ) e. NN0 ) $=
+      ( cn0 wcel caddc co nn0addcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure of multiplication of nonnegative integers, inference form.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    nn0mulcld $p |- ( ph -> ( A x. B ) e. NN0 ) $=
+      ( cn0 wcel cmul co nn0mulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
+  $( Closure law for addition of reals, restricted to nonnegative integers.
+     (Contributed by Alexander van der Vekens, 6-Apr-2018.) $)
+  nn0readdcl $p |- ( ( A e. NN0 /\ B e. NN0 ) -> ( A + B ) e. RR ) $=
+    ( cn0 wcel wa caddc co nn0addcl nn0red ) ACDBCDEABFGABHI $.
+
+  $( If a nonnegative integer is greater than or equal to two, the integer
+     decreased by 1 is a positive integer.  (Contributed by Alexander van der
+     Vekens, 1-Aug-2018.)  (Revised by AV, 4-Jan-2020.) $)
+  nn0ge2m1nn $p |- ( ( N e. NN0 /\ 2 <_ N ) -> ( N - 1 ) e. NN ) $=
+    ( cn0 wcel c2 cle wbr wa c1 cmin co cn wo wceq simpl w3a clt 1red 2re 1lt2
+    cr a1i nn0re 3jca adantr simpr jctil ltleletr elnnnn0c sylanbrc nn1m1nn syl
+    sylc wi wn 1re lenlti biimpi breq2 mtbiri pm2.21d com12 adantl orim1d oridm
+    mt2 mpd sylib ) ABCZDAEFZGZAHIJKCZVKLZVKVJAHMZVKLZVLVJAKCZVNVJVHHAEFZVOVHVI
+    NVJHTCZDTCZATCZOZHDPFZVIGVPVHVTVIVHVQVRVSVHQVRVHRUAAUBUCUDVJVIWAVHVIUESUFHD
+    AUGULAUHUIAUJUKVJVMVKVKVIVMVKUMVHVMVIVKVMVIVKVMVIDHEFZWBWASWBWAUNDHRUOUPUQV
+    EAHDEURUSUTVAVBVCVFVKVDVG $.
+
+  $( If a nonnegative integer is greater than or equal to two, the integer
+     decreased by 1 is also a nonnegative integer.  (Contributed by Alexander
+     van der Vekens, 1-Aug-2018.) $)
+  nn0ge2m1nn0 $p |- ( ( N e. NN0 /\ 2 <_ N ) -> ( N - 1 ) e. NN0 ) $=
+    ( cn0 wcel c2 cle wbr wa c1 cmin co nn0ge2m1nn nnnn0d ) ABCDAEFGAHIJAKL $.
+
+  $( Closure law for dividing of a nonnegative integer by a positive integer.
+     (Contributed by Alexander van der Vekens, 14-Apr-2018.) $)
+  nn0nndivcl $p |- ( ( K e. NN0 /\ L e. NN ) -> ( K / L ) e. RR ) $=
+    ( cn0 wcel cn wa cr nn0re adantr simpr nndivred ) ACDZBEDZFABLAGDMAHILMJK
+    $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Integers (as a subset of complex numbers)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c ZZ $. $( The set of integers (blackboard bold Z). $)
+
+  $( Extend class notation to include the class of integers. $)
+  cz $a class ZZ $.
+
+  $( Define the set of integers, which are the positive and negative integers
+     together with zero.  Definition of integers in [Apostol] p. 22.  The
+     letter Z abbreviates the German word Zahlen meaning "numbers."
+     (Contributed by NM, 8-Jan-2002.) $)
+  df-z $a |- ZZ = { n e. RR | ( n = 0 \/ n e. NN \/ -u n e. NN ) } $.
+
+  ${
+    $d x N $.
+    $( Membership in the set of integers.  (Contributed by NM, 8-Jan-2002.) $)
+    elz $p |- ( N e. ZZ <->
+              ( N e. RR /\ ( N = 0 \/ N e. NN \/ -u N e. NN ) ) ) $=
+      ( vx cv cc0 wceq cn wcel cneg w3o cr cz eqeq1 eleq1 eleq1d 3orbi123d df-z
+      negeq elrab2 ) BCZDEZSFGZSHZFGZIADEZAFGZAHZFGZIBAJKSAEZTUDUAUEUCUGSADLSAF
+      MUHUBUFFSAQNOBPR $.
+  $}
+
+  $( The negative of a positive integer is an integer.  (Contributed by NM,
+     12-Jan-2002.) $)
+  nnnegz $p |- ( N e. NN -> -u N e. ZZ ) $=
+    ( cn wcel cneg cr cc0 wceq w3o cz nnre renegcld cc nncn negneg eleq1d mpcom
+    biimprd 3mix3d elz sylanbrc ) ABCZADZECUBFGZUBBCZUBDZBCZHUBICUAAAJKUAUFUCUD
+    ALCZUAUFAMUGUFUAUGUEABANOQPRUBST $.
+
+  $( An integer is a real.  (Contributed by NM, 8-Jan-2002.) $)
+  zre $p |- ( N e. ZZ -> N e. RR ) $=
+    ( cz wcel cr cc0 wceq cn cneg w3o elz simplbi ) ABCADCAEFAGCAHGCIAJK $.
+
+  $( An integer is a complex number.  (Contributed by NM, 9-May-2004.) $)
+  zcn $p |- ( N e. ZZ -> N e. CC ) $=
+    ( cz wcel zre recnd ) ABCAADE $.
+
+  ${
+    zre.1 $e |- A e. ZZ $.
+    $( An integer is a real number.  (Contributed by NM, 14-Jul-2005.) $)
+    zrei $p |- A e. RR $=
+      ( cz wcel cr zre ax-mp ) ACDAEDBAFG $.
+  $}
+
+  $( The integers are a subset of the reals.  (Contributed by NM,
+     2-Aug-2004.) $)
+  zssre $p |- ZZ C_ RR $=
+    ( vx cz cr cv zre ssriv ) ABCADEF $.
+
+  $( The integers are a subset of the complex numbers.  (Contributed by NM,
+     2-Aug-2004.) $)
+  zsscn $p |- ZZ C_ CC $=
+    ( vx cz cc cv zcn ssriv ) ABCADEF $.
+
+  $( The set of integers exists.  (Contributed by NM, 30-Jul-2004.)  (Revised
+     by Mario Carneiro, 17-Nov-2014.) $)
+  zex $p |- ZZ e. _V $=
+    ( cz cc cnex zsscn ssexi ) ABCDE $.
+
+  $( Positive integer property expressed in terms of integers.  (Contributed by
+     NM, 8-Jan-2002.) $)
+  elnnz $p |- ( N e. NN <-> ( N e. ZZ /\ 0 < N ) ) $=
+    ( cn wcel cr cneg cc0 wceq wo wa clt wbr cz orc nngt0 jca31 wi wn w3o bitri
+    nnre idd lt0neg2 renegcl 0re ltnsym sylancl sylbid nsyl gt0ne0 neneqd ioran
+    imp sylanbrc pm2.21d jaod ex com23 imp31 impbii 3orrot 3orass anbi2i anbi1i
+    elz bitr4i ) ABCZADCZVFAEZBCZAFGZHZHZIZFAJKZIZALCZVNIVFVOVFVGVLVNATVFVKMANO
+    VGVLVNVFVGVNVLVFVGVNVLVFPVGVNIZVFVFVKVQVFUAVQVKVFVQVIQVJQVKQVQFVHJKZVIVGVNV
+    RQZVGVNVHFJKZVSAUBVGVHDCFDCVTVSPAUCUDVHFUEUFUGULVHNUHVQAFAUIUJVIVJUKUMUNUOU
+    PUQURUSVPVMVNVPVGVJVFVIRZIVMAVDWAVLVGWAVFVIVJRVLVJVFVIUTVFVIVJVASVBSVCVE $.
+
+  $( Zero is an integer.  (Contributed by NM, 12-Jan-2002.) $)
+  0z $p |- 0 e. ZZ $=
+    ( cc0 cz wcel cr wceq cn cneg w3o 0re eqid 3mix1i elz mpbir2an ) ABCADCAAEZ
+    AFCZAGFCZHINOPAJKALM $.
+
+  $( Zero is an integer, deductive form (common case).  (Contributed by David
+     A. Wheeler, 8-Dec-2018.) $)
+  0zd $p |- ( ph -> 0 e. ZZ ) $=
+    ( cc0 cz wcel 0z a1i ) BCDAEF $.
+
+  $( Nonnegative integer property expressed in terms of integers.  (Contributed
+     by NM, 9-May-2004.) $)
+  elnn0z $p |- ( N e. NN0 <-> ( N e. ZZ /\ 0 <_ N ) ) $=
+    ( cn0 wcel cz cc0 cle wbr wa cr wceq cn cneg w3o nn0re elnn0 adantr a1i clt
+    wo wi biimpi orcomd 3mix1 3mix2 jaoi syl elz sylanbrc nn0ge0 jca 0nn0 eleq1
+    simprbi mpbiri nnnn0 wn simpr 0red lenltd mpbid nngt0 lt0neg1d syl5ibr mtod
+    zre pm2.21d 3jaod mpd impbii ) ABCZADCZEAFGZHZVJVKVLVJAICZAEJZAKCZALZKCZMZV
+    KANVJVOVPSVSVJVPVOVJVPVOSAOUAUBVOVSVPVOVPVRUCVPVOVRUDUEUFAUGZUHAUIUJVMVSVJV
+    KVSVLVKVNVSVTUMPVMVOVJVPVRVOVJTVMVOVJEBCUKAEBULUNQVPVJTVMAUOQVMVRVJVMVRAERG
+    ZVMVLWAUPVKVLUQVMEAVMURVKVNVLAVEPZUSUTVRWAVMEVQRGVQVAVMAWBVBVCVDVFVGVHVI $.
+
+  $( Integer property expressed in terms nonnegative integers and positive
+     integers.  (Contributed by NM, 10-May-2004.) $)
+  elznn0nn $p |- ( N e. ZZ <-> ( N e. NN0 \/ ( N e. RR /\ -u N e. NN ) ) ) $=
+    ( cz wcel cr cc0 wceq cn cneg w3o wa cn0 wo elz andi df-3or anbi2i pm4.71ri
+    nn0re elnn0 bitri orcom orbi1i 3bitr4i ) ABCADCZAEFZAGCZAHGCZIZJZAKCZUDUGJZ
+    LZAMUDUEUFLZUGLZJUDUMJZUKLUIULUDUMUGNUHUNUDUEUFUGOPUJUOUKUJUDUJJUOUJUDARQUJ
+    UMUDUJUFUELUMASUFUEUATPTUBUCT $.
+
+  $( Integer property expressed in terms of nonnegative integers.  (Contributed
+     by NM, 9-May-2004.) $)
+  elznn0 $p |- ( N e. ZZ <-> ( N e. RR /\ ( N e. NN0 \/ -u N e. NN0 ) ) ) $=
+    ( cz wcel cr cc0 wceq cn cneg w3o wa cn0 wo elz wb elnn0 a1i recn 0cn bitri
+    cc negcon1 sylancl eqeq1i eqcom syl6bb orbi2d syl5bb orbi12d 3orass orordir
+    neg0 orcom 3bitrri syl6rbb pm5.32i ) ABCADCZAEFZAGCZAHZGCZIZJUPAKCZUSKCZLZJ
+    AMUPVAVDUPVDURUQLZUTUQLZLZVAUPVBVEVCVFVBVENUPAOPVCUTUSEFZLUPVFUSOUPVHUQUTUP
+    VHEHZAFZUQUPATCETCVHVJNAQRAEUAUBVJEAFUQVIEAUKUCEAUDSUEUFUGUHVAUQURUTLZLVKUQ
+    LVGUQURUTUIUQVKULURUTUQUJUMUNUOS $.
+
+  $( Integer property expressed in terms of positive integers and nonnegative
+     integers.  (Contributed by NM, 12-Jul-2005.) $)
+  elznn $p |- ( N e. ZZ <-> ( N e. RR /\ ( N e. NN \/ -u N e. NN0 ) ) ) $=
+    ( cz wcel cr cc0 wceq cn cneg w3o wa cn0 wo elz recn negeq0d elnn0 syl6rbbr
+    orbi2d 3orrot bitri 3orass pm5.32i ) ABCADCZAEFZAGCZAHZGCZIZJUCUEUFKCZLZJAM
+    UCUHUJUCUJUEUGUDLZLZUHUCUIUKUEUCUKUGUFEFZLUIUCUDUMUGUCAANORUFPQRUHUEUGUDIUL
+    UDUEUGSUEUGUDUATQUBT $.
+
+  $( Positive integers are a subset of integers.  (Contributed by NM,
+     9-Jan-2002.) $)
+  nnssz $p |- NN C_ ZZ $=
+    ( vx cn cz cv wcel cc0 clt wbr elnnz simplbi ssriv ) ABCADZBELCEFLGHLIJK $.
+
+  $( Nonnegative integers are a subset of the integers.  (Contributed by NM,
+     9-May-2004.) $)
+  nn0ssz $p |- NN0 C_ ZZ $=
+    ( cn0 cn cc0 csn cun cz df-n0 nnssz wcel wss c0ex snss mpbi unssi eqsstri
+    0z ) ABCDZEFGBQFHCFIQFJPCFKLMNO $.
+
+  $( A positive integer is an integer.  (Contributed by NM, 9-May-2004.) $)
+  nnz $p |- ( N e. NN -> N e. ZZ ) $=
+    ( cn cz nnssz sseli ) BCADE $.
+
+  $( A nonnegative integer is an integer.  (Contributed by NM, 9-May-2004.) $)
+  nn0z $p |- ( N e. NN0 -> N e. ZZ ) $=
+    ( cn0 cz nn0ssz sseli ) BCADE $.
+
+  ${
+    nnzi.1 $e |- N e. NN $.
+    $( A positive integer is an integer.  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    nnzi $p |- N e. ZZ $=
+      ( cn cz nnssz sselii ) CDAEBF $.
+  $}
+
+  ${
+    nn0zi.1 $e |- N e. NN0 $.
+    $( A nonnegative integer is an integer.  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    nn0zi $p |- N e. ZZ $=
+      ( cn0 cz nn0ssz sselii ) CDAEBF $.
+  $}
+
+  $( Positive integer property expressed in terms of integers.  (Contributed by
+     NM, 10-May-2004.)  (Proof shortened by Mario Carneiro, 16-May-2014.) $)
+  elnnz1 $p |- ( N e. NN <-> ( N e. ZZ /\ 1 <_ N ) ) $=
+    ( cn wcel cz c1 cle wbr wa nnz nnge1 jca cc0 clt 0lt1 cr zre 0re 1re ltletr
+    wi mp3an12 syl mpani imdistani elnnz sylibr impbii ) ABCZADCZEAFGZHZUHUIUJA
+    IAJKUKUILAMGZHUHUIUJULUILEMGZUJULNUIAOCZUMUJHULTZAPLOCEOCUNUOQRLEASUAUBUCUD
+    AUEUFUG $.
+
+  $( Positive integers expressed as a subset of integers.  (Contributed by NM,
+     3-Oct-2004.) $)
+  nnzrab $p |- NN = { x e. ZZ | 1 <_ x } $=
+    ( cn cv cz wcel c1 cle wbr wa cab crab elnnz1 abbi2i df-rab eqtr4i ) BACZDE
+    FPGHZIZAJQADKRABPLMQADNO $.
+
+  $( Nonnegative integers expressed as a subset of integers.  (Contributed by
+     NM, 3-Oct-2004.) $)
+  nn0zrab $p |- NN0 = { x e. ZZ | 0 <_ x } $=
+    ( cn0 cv cz wcel cc0 cle wbr wa cab crab elnn0z abbi2i df-rab eqtr4i ) BACZ
+    DEFPGHZIZAJQADKRABPLMQADNO $.
+
+  $( One is an integer.  (Contributed by NM, 10-May-2004.) $)
+  1z $p |- 1 e. ZZ $=
+    ( c1 1nn nnzi ) ABC $.
+
+  $( 1 is an integer, deductive form (common case).  (Contributed by David A.
+     Wheeler, 6-Dec-2018.) $)
+  1zzd $p |- ( ph -> 1 e. ZZ ) $=
+    ( c1 cz wcel 1z a1i ) BCDAEF $.
+
+  $( Two is an integer.  (Contributed by NM, 10-May-2004.) $)
+  2z $p |- 2 e. ZZ $=
+    ( c2 2nn nnzi ) ABC $.
+
+  $( 3 is an integer.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  3z $p |- 3 e. ZZ $=
+    ( c3 3nn nnzi ) ABC $.
+
+  $( Closure law for negative integers.  (Contributed by NM, 9-May-2004.) $)
+  znegcl $p |- ( N e. ZZ -> -u N e. ZZ ) $=
+    ( cz wcel cr cc0 wceq cn cneg w3o elz negeq neg0 syl6eq syl6eqel nnnegz nnz
+    wa 0z 3jaoi adantl sylbi ) ABCADCZAEFZAGCZAHZGCZIZQUEBCZAJUGUHUBUCUHUDUFUCU
+    EEBUCUEEHEAEKLMRNAOUEPSTUA $.
+
+  $( -1 is an integer (common case).  (Contributed by David A. Wheeler,
+     5-Dec-2018.) $)
+  neg1z $p |- -u 1 e. ZZ $=
+    ( c1 cn wcel cneg cz 1nn nnnegz ax-mp ) ABCADECFAGH $.
+
+  $( A number is an integer iff its negative is.  (Contributed by Stefan
+     O'Rear, 13-Sep-2014.) $)
+  znegclb $p |- ( A e. CC -> ( A e. ZZ <-> -u A e. ZZ ) ) $=
+    ( cc wcel cz cneg znegcl negneg eleq1d syl5ib impbid2 ) ABCZADCZAEZDCZAFNME
+    ZDCKLMFKOADAGHIJ $.
+
+  $( The negative of a nonnegative integer is an integer.  (Contributed by NM,
+     9-May-2004.) $)
+  nn0negz $p |- ( N e. NN0 -> -u N e. ZZ ) $=
+    ( cn0 wcel cz cneg nn0z znegcl syl ) ABCADCAEDCAFAGH $.
+
+  ${
+    nn0negzi.1 $e |- N e. NN0 $.
+    $( The negative of a nonnegative integer is an integer.  (Contributed by
+       Mario Carneiro, 18-Feb-2014.) $)
+    nn0negzi $p |- -u N e. ZZ $=
+      ( cn0 wcel cneg cz nn0negz ax-mp ) ACDAEFDBAGH $.
+  $}
+
+  $( Second Peano postulate generalized to integers.  (Contributed by NM,
+     13-Feb-2005.) $)
+  peano2z $p |- ( N e. ZZ -> ( N + 1 ) e. ZZ ) $=
+    ( cz wcel c1 caddc co cr cn0 cneg wo readdcld cn wa a1i cc recnd cc0 neg1cn
+    1red eqtrd elznn0nn biimpi biantrurd orbi2d mpbird wi peano2nn0 adantr 1cnd
+    renegcld negdid oveq1d negcld addassd ax-1cn 1pneg1e0 oveq2i syl6eq addid1d
+    zre addcomli simpr eqeltrd elnn0nn sylanbrc ex orim12d mpd elznn0 ) ABCZADE
+    FZGCVKHCZVKIZHCZJZVKBCVJADAUTZVJSKVJAHCZAIZLCZJZVOVJVTVQAGCZVSMZJZVJWCAUAUB
+    VJVSWBVQVJWAVSVPUCUDUEVJVQVLVSVNVQVLUFVJAUGNVJVSVNVJVSMZVMOCVMDEFZLCVNWDVMW
+    DVKWDADVJWAVSVPUHZWDSKUJPWDWEVRLWDWEVRQEFZVRWDWEVRDIZDEFZEFZWGWDWEVRWHEFZDE
+    FWJWDVMWKDEWDADWDAWFPZWDUIZUKULWDVRWHDWDAWLUMZWHOCWDRNWMUNTWIQVREDWHQUORUPV
+    AUQURWDVRWNUSTVJVSVBVCVMVDVEVFVGVHVKVIVE $.
+
+  ${
+    $d M x y $.  $d N x $.
+    $( Lemma for ~ zaddcl .  Special case in which ` N ` is a positive
+       integer.  (Contributed by Jim Kingdon, 14-Mar-2020.) $)
+    zaddcllempos $p |- ( ( M e. ZZ /\ N e. NN ) -> ( M + N ) e. ZZ ) $=
+      ( vx vy cn wcel cz caddc co cv wi c1 wceq oveq2 eleq1d imbi2d peano2z zcn
+      wa cc adantl nncn adantr 1cnd addassd syl5ib ex a2d nnind impcom ) BEFAGF
+      ZABHIZGFZUKACJZHIZGFZKUKALHIZGFZKUKADJZHIZGFZKUKAUSLHIZHIZGFZKUKUMKCDBUNL
+      MZUPURUKVEUOUQGUNLAHNOPUNUSMZUPVAUKVFUOUTGUNUSAHNOPUNVBMZUPVDUKVGUOVCGUNV
+      BAHNOPUNBMZUPUMUKVHUOULGUNBAHNOPAQUSEFZUKVAVDVIUKVAVDKVAUTLHIZGFVIUKSZVDU
+      TQVKVJVCGVKAUSLUKATFVIARUAVIUSTFUKUSUBUCVKUDUEOUFUGUHUIUJ $.
+  $}
+
+  $( "Reverse" second Peano postulate for integers.  (Contributed by NM,
+     12-Sep-2005.) $)
+  peano2zm $p |- ( N e. ZZ -> ( N - 1 ) e. ZZ ) $=
+    ( cz wcel c1 cmin co cneg caddc zcn negsubdid znegcl peano2z syl eqeltrd cc
+    1cnd wb subcld znegclb mpbird ) ABCZADEFZBCZUBGZBCZUAUDAGZDHFZBUAADAIZUAPZJ
+    UAUFBCUGBCAKUFLMNUAUBOCUCUEQUAADUHUIRUBSMT $.
+
+  ${
+    $d M x y $.  $d N x y $.
+    $( Lemma for ~ zaddcl .  Special case in which ` -u N ` is a positive
+       integer.  (Contributed by Jim Kingdon, 14-Mar-2020.) $)
+    zaddcllemneg $p |- ( ( M e. ZZ /\ N e. RR /\ -u N e. NN ) ->
+        ( M + N ) e. ZZ ) $=
+      ( vx vy cz wcel cneg cn caddc co oveq2d wa cv wi wceq negeq eleq1d imbi2d
+      c1 cmin cr w3a simp2 recnd negnegd cc zcn adantr negsubd peano2zm eqeltrd
+      1cnd nncn ad2antrr negdi2d ad2antlr negcld addsubassd adantl eqeltrrd a2d
+      exp31 nnind impcom 3impa ) AEFZBUAFZBGZHFZUBZAVHGZIJZABIJEVJVKBAIVJBVJBVF
+      VGVIUCUDUEKVFVGVIVLEFZVIVFVGLZVMVNACMZGZIJZEFZNVNASGZIJZEFZNVNADMZGZIJZEF
+      ZNVNAWBSIJZGZIJZEFZNVNVMNCDVHVOSOZVRWAVNWJVQVTEWJVPVSAIVOSPKQRVOWBOZVRWEV
+      NWKVQWDEWKVPWCAIVOWBPKQRVOWFOZVRWIVNWLVQWHEWLVPWGAIVOWFPKQRVOVHOZVRVMVNWM
+      VQVLEWMVPVKAIVOVHPKQRVNVTASTJZEVNASVFAUFFZVGAUGUHZVNULUIVFWNEFVGAUJUHUKWB
+      HFZVNWEWIWQVNWEWIWQVNLZWELZWHAWCSTJZIJZEWSWGWTAIWSWBSWQWBUFFVNWEWBUMUNZWS
+      ULZUOKWSWDSTJZXAEWSAWCSVNWOWQWEWPUPWSWBXBUQXCURWEXDEFWRWDUJUSUTUKVBVAVCVD
+      VEUT $.
+  $}
+
+  $( Closure of addition of integers.  (Contributed by NM, 9-May-2004.)  (Proof
+     shortened by Mario Carneiro, 16-May-2014.) $)
+  zaddcl $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M + N ) e. ZZ ) $=
+    ( cz wcel wa cc0 wceq cn cneg w3o caddc co cr elz simprbi adantl zcn adantr
+    cc wi addid1d simpl eqeltrd eleq1d syl5ibrcom zaddcllempos zre zaddcllemneg
+    oveq2 ex 3expia sylan2 3jaod mpd ) ACDZBCDZEZBFGZBHDZBIHDZJZABKLZCDZUPVAUOU
+    PBMDZVABNOPUQURVCUSUTUQVCURAFKLZCDUQVEACUQAUOASDUPAQRUAUOUPUBUCURVBVECBFAKU
+    IUDUEUOUSVCTUPUOUSVCABUFUJRUPUOVDUTVCTBUGUOVDUTVCABUHUKULUMUN $.
+
+  $( Closure of subtraction of integers.  (Contributed by NM, 11-May-2004.) $)
+  zsubcl $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M - N ) e. ZZ ) $=
+    ( cz wcel wa cneg caddc co cmin wceq zcn negsub syl2an znegcl zaddcl sylan2
+    cc eqeltrrd ) ACDZBCDZEABFZGHZABIHZCSAQDBQDUBUCJTAKBKABLMTSUACDUBCDBNAUAOPR
+    $.
+
+  $( Integer trichotomy (with zero).  (Contributed by Jim Kingdon,
+     14-Mar-2020.) $)
+  ztri3or0 $p |- ( N e. ZZ -> ( N < 0 \/ N = 0 \/ 0 < N ) ) $=
+    ( cz wcel cc0 wceq clt wbr w3o cn cneg cr elz simprbi idd wi nngt0 lt0neg1d
+    a1i zre syl5ibr 3orim123d mpd 3orrot sylibr ) ABCZADEZDAFGZADFGZHZUHUFUGHUE
+    UFAICZAJZICZHZUIUEAKCUMALMUEUFUFUJUGULUHUEUFNUJUGOUEAPRULUHUEDUKFGUKPUEAASQ
+    TUAUBUHUFUGUCUD $.
+
+  $( Integer trichotomy.  (Contributed by Jim Kingdon, 14-Mar-2020.) $)
+  ztri3or $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M < N \/ M = N \/ N < M ) ) $=
+    ( cz wcel wa clt wbr wceq w3o cmin cc0 zsubcl ztri3or0 syl cneg zre posdifd
+    co cr recnd adantr adantl resubcld lt0neg2d negsubdi2d breq1d 3bitrd bicomd
+    subeq0ad 3orbi123d mpbird ) ACDZBCDZEZABFGZABHZBAFGZIABJRZKFGZURKHZKURFGZIZ
+    UNURCDVBABLURMNUNUOUSUPUTUQVAUNUOKBAJRZFGVCOZKFGUSUNABULASDUMAPUAZUMBSDULBP
+    UBZQUNVCUNBAVFVEUCUDUNVDURKFUNBAUNBVFTZUNAVETZUEUFUGUNUTUPUNABVHVGUIUHUNBAV
+    FVEQUJUK $.
+
+  $( 'Less than' expressed in terms of 'less than or equal to'.  (Contributed
+     by Jim Kingdon, 14-Mar-2020.) $)
+  zltnle $p |- ( ( A e. ZZ /\ B e. ZZ ) -> ( A < B <-> -. B <_ A ) ) $=
+    ( cz wcel wa clt wbr cle wn cr zre lenlt syl2anr biimpd con2d wceq w3o syl6
+    wb wi ztri3or ax-1 a1i eqcom eqle sylan2b ex adantl sylan2 pm2.24 3jaod mpd
+    ltle impbid ) ACDZBCDZEZABFGZBAHGZIZUQUSURUQUSURIZUPBJDZAJDZUSVASUOBKZAKZBA
+    LMNOUQURABPZBAFGZQUTURTZABUAUQURVHVFVGURVHTUQURUTUBUCUQVFUSVHUPUOVBVFUSTZVD
+    VBVIUOVBVFUSVFVBBAPUSABUDBAUEUFUGUHUIUSURUJZRUQVGUSVHUPVBVCVGUSTUOVDVEBAUMM
+    VJRUKULUN $.
+
+  $( An integer is not a positive integer iff it is less than one.
+     (Contributed by NM, 13-Jul-2005.) $)
+  znnnlt1 $p |- ( N e. ZZ -> ( -. N e. NN <-> N < 1 ) ) $=
+    ( cz wcel cn wn c1 cle wbr clt elnnz1 baib notbid wb 1z zltnle mpan2 bitr4d
+    ) ABCZADCZEFAGHZEZAFIHZRSTSRTAJKLRFBCUBUAMNAFOPQ $.
+
+  $( Transitive law of ordering for integers.  (Contributed by Alexander van
+     der Vekens, 3-Apr-2018.) $)
+  zletr $p |- ( ( J e. ZZ /\ K e. ZZ /\ L e. ZZ )
+                -> ( ( J <_ K /\ K <_ L ) -> J <_ L ) ) $=
+    ( cz wcel cr cle wbr wa wi zre letr syl3an ) ADEAFEBDEBFECDECFEABGHBCGHIACG
+    HJAKBKCKABCLM $.
+
+  $( Reverse closure law for addition of integers.  (Contributed by NM,
+     11-May-2004.) $)
+  zrevaddcl $p |- ( N e. ZZ ->
+                   ( ( M e. CC /\ ( M + N ) e. ZZ ) <-> M e. ZZ ) ) $=
+    ( cz wcel cc caddc co wa cmin zcn pncan sylan2 ancoms adantr zsubcl adantlr
+    wceq eqeltrrd ex wi zaddcl expcom impbid pm5.32da pm4.71ri syl6bbr ) BCDZAE
+    DZABFGZCDZHUHACDZHUKUGUHUJUKUGUHHZUJUKULUJUKULUJHUIBIGZACULUMAQZUJUHUGUNUGU
+    HBEDUNBJABKLMNUGUJUMCDZUHUJUGUOUIBOMPRSUGUKUJTUHUKUGUJABUAUBNUCUDUKUHAJUEUF
+    $.
+
+  $( The positive difference of unequal integers is a positive integer.
+     (Generalization of ~ nnsub .)  (Contributed by NM, 11-May-2004.) $)
+  znnsub $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M < N <-> ( N - M ) e. NN ) ) $=
+    ( cz wcel wa clt wbr cmin co cn cr wb posdif syl2an zsubcl ancoms biantrurd
+    cc0 zre bitrd elnnz syl6bbr ) ACDZBCDZEZABFGZBAHIZCDZRUGFGZEZUGJDUEUFUIUJUC
+    AKDBKDUFUILUDASBSABMNUEUHUIUDUCUHBAOPQTUGUAUB $.
+
+  $( Closure of multiplication of integers.  (Contributed by NM,
+     30-Jul-2004.) $)
+  zmulcl $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M x. N ) e. ZZ ) $=
+    ( cz wcel cr cn0 cneg wo wa cmul co elznn0 nn0mulcl jctild cc syl2an eleq1d
+    wceq syl5ib syl6 wi orcd a1i remulcl mulneg1 olc mulneg2 mul2neg orc ccased
+    recn syl6ibr imp an4s syl2anb ) ACDAEDZAFDZAGZFDZHZIBEDZBFDZBGZFDZHZIABJKZC
+    DZBCDALBLUPVAUTVEVGUPVAIZUTVEIZVGVHVIVFEDZVFFDZVFGZFDZHZIZVGVHUQVBUSVDVOVHU
+    QVBIZVNVJVPVNUAVHVPVKVMABMUBUCABUDZNVHUSVBIZVNVJVHVRVMVNVRURBJKZFDVHVMURBMV
+    HVSVLFUPAODZBODZVSVLRVAAUKZBUKZABUEPQSVMVKUFZTVQNVHUQVDIZVNVJVHWEVMVNWEAVCJ
+    KZFDVHVMAVCMVHWFVLFUPVTWAWFVLRVAWBWCABUGPQSWDTVQNVHUSVDIZVNVJVHWGVKVNWGURVC
+    JKZFDVHVKURVCMVHWHVFFUPVTWAWHVFRVAWBWCABUHPQSVKVMUITVQNUJVFLULUMUNUO $.
+
+  $( Integer ordering relation.  (Contributed by NM, 10-May-2004.)  (Proof
+     shortened by Mario Carneiro, 16-May-2014.) $)
+  zltp1le $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M < N <-> ( M + 1 ) <_ N ) ) $=
+    ( cz wcel wa clt wbr c1 caddc co cle cmin cn wi nnge1 a1i znnsub cr wb zre
+    1re leaddsub2 mp3an2 syl2an 3imtr4d adantr ltp1d peano2re syl adantl ltletr
+    syl3anc mpand impbid ) ACDZBCDZEZABFGZAHIJZBKGZUQBALJZMDZHVAKGZURUTVBVCNUQV
+    AOPABQUOARDZBRDZUTVCSZUPATZBTZVDHRDVEVFUAAHBUBUCUDUEUQAUSFGZUTURUQAUOVDUPVG
+    UFZUGUQVDUSRDZVEVIUTEURNVJUQVDVKVJAUHUIUPVEUOVHUJAUSBUKULUMUN $.
+
+  $( Integer ordering relation.  (Contributed by NM, 10-May-2004.) $)
+  zleltp1 $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M <_ N <-> M < ( N + 1 ) ) ) $=
+    ( cz wcel wa cle wbr c1 caddc co clt cr wb zre leadd1 mp3an3 syl2an peano2z
+    1re zltp1le sylan2 bitr4d ) ACDZBCDZEABFGZAHIJBHIJZFGZAUFKGZUCALDZBLDZUEUGM
+    ZUDANBNUIUJHLDUKSABHOPQUDUCUFCDUHUGMBRAUFTUAUB $.
+
+  $( Integer ordering relation.  (Contributed by NM, 13-Nov-2004.) $)
+  zlem1lt $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M <_ N <-> ( M - 1 ) < N ) ) $=
+    ( cz wcel wa c1 cmin co clt wbr caddc cle wb peano2zm zltp1le sylan wceq cc
+    zcn ax-1cn npcan sylancl adantr breq1d bitr2d ) ACDZBCDZEZAFGHZBIJZUIFKHZBL
+    JZABLJUFUICDUGUJULMANUIBOPUHUKABLUFUKAQZUGUFARDFRDUMASTAFUAUBUCUDUE $.
+
+  $( Integer ordering relation.  (Contributed by NM, 13-Nov-2004.) $)
+  zltlem1 $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M < N <-> M <_ ( N - 1 ) ) ) $=
+    ( cz wcel wa c1 cmin co cle wbr caddc clt wb peano2zm zleltp1 sylan2 cc zcn
+    wceq ax-1cn npcan sylancl adantl breq2d bitr2d ) ACDZBCDZEZABFGHZIJZAUIFKHZ
+    LJZABLJUGUFUICDUJULMBNAUIOPUHUKBALUGUKBSZUFUGBQDFQDUMBRTBFUAUBUCUDUE $.
+
+  $( An integer greater than ` 0 ` is greater than or equal to ` 1 ` .
+     (Contributed by AV, 14-Oct-2018.) $)
+  zgt0ge1 $p |- ( Z e. ZZ -> ( 0 < Z <-> 1 <_ Z ) ) $=
+    ( cz wcel cc0 clt wbr c1 caddc co cle wb zltp1le mpan wceq 0p1e1 a1i breq1d
+    0z bitrd ) ABCZDAEFZDGHIZAJFZGAJFDBCTUAUCKRDALMTUBGAJUBGNTOPQS $.
+
+$( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
+   about positive or nonnegative integers which are defined earlier.  But the
+   proofs of these theorems are based on theorems for ` ZZ `.  It should be
+   clarified if these theorems could be proven without theorems for ` ZZ ` and
+   then could be moved up into the corresponding subsections.  Alternatively,
+   these theorems could be moved into a new seperate subsection "Positive and
+   nonnegative integers (cont.)". $)
+
+  $( Positive integer ordering relation.  (Contributed by NM, 13-Aug-2001.)
+     (Proof shortened by Mario Carneiro, 16-May-2014.) $)
+  nnleltp1 $p |- ( ( A e. NN /\ B e. NN ) ->
+                ( A <_ B <-> A < ( B + 1 ) ) ) $=
+    ( cn wcel cz cle wbr c1 caddc co clt wb nnz zleltp1 syl2an ) ACDAEDBEDABFGA
+    BHIJKGLBCDAMBMABNO $.
+
+  $( Positive integer ordering relation.  (Contributed by NM, 19-Aug-2001.) $)
+  nnltp1le $p |- ( ( A e. NN /\ B e. NN ) ->
+                ( A < B <-> ( A + 1 ) <_ B ) ) $=
+    ( cn wcel cz clt wbr c1 caddc co cle wb nnz zltp1le syl2an ) ACDAEDBEDABFGA
+    HIJBKGLBCDAMBMABNO $.
+
+  $( Closure of addition of positive integers minus one.  (Contributed by NM,
+     6-Aug-2003.)  (Proof shortened by Mario Carneiro, 16-May-2014.) $)
+  nnaddm1cl $p |- ( ( A e. NN /\ B e. NN ) -> ( ( A + B ) - 1 ) e. NN ) $=
+    ( cn wcel wa caddc co c1 cmin wceq nncn ax-1cn addsub mp3an3 syl2an nnm1nn0
+    cc cn0 nn0nnaddcl sylan eqeltrd ) ACDZBCDZEABFGHIGZAHIGZBFGZCUBAQDZBQDZUDUF
+    JZUCAKBKUGUHHQDUILABHMNOUBUERDUCUFCDAPUEBSTUA $.
+
+  $( Nonnegative integer ordering relation.  (Contributed by Raph Levien,
+     10-Dec-2002.)  (Proof shortened by Mario Carneiro, 16-May-2014.) $)
+  nn0ltp1le $p |- ( ( M e. NN0 /\ N e. NN0 ) ->
+                ( M < N <-> ( M + 1 ) <_ N ) ) $=
+    ( cn0 wcel cz clt wbr c1 caddc co cle wb nn0z zltp1le syl2an ) ACDAEDBEDABF
+    GAHIJBKGLBCDAMBMABNO $.
+
+  $( Nonnegative integer ordering relation.  (Contributed by Raph Levien,
+     10-Apr-2004.) $)
+  nn0leltp1 $p |- ( ( M e. NN0 /\ N e. NN0 ) ->
+                ( M <_ N <-> M < ( N + 1 ) ) ) $=
+    ( cn0 wcel cz cle wbr c1 caddc co clt wb nn0z zleltp1 syl2an ) ACDAEDBEDABF
+    GABHIJKGLBCDAMBMABNO $.
+
+  $( Nonnegative integer ordering relation.  (Contributed by NM, 10-May-2004.)
+     (Proof shortened by Mario Carneiro, 16-May-2014.) $)
+  nn0ltlem1 $p |- ( ( M e. NN0 /\ N e. NN0 ) ->
+                ( M < N <-> M <_ ( N - 1 ) ) ) $=
+    ( cn0 wcel cz clt wbr c1 cmin co cle wb nn0z zltlem1 syl2an ) ACDAEDBEDABFG
+    ABHIJKGLBCDAMBMABNO $.
+
+  $( The nonnegative difference of integers is a nonnegative integer.
+     (Generalization of ~ nn0sub .)  (Contributed by NM, 14-Jul-2005.) $)
+  znn0sub $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
+                ( M <_ N <-> ( N - M ) e. NN0 ) ) $=
+    ( cz wcel wa cle wbr co cc0 cn0 wb cr subge0 syl2an zsubcl biantrurd bitr3d
+    cmin zre ancoms elnn0z syl6bbr ) ACDZBCDZEABFGZBARHZCDZIUFFGZEZUFJDUDUCUEUI
+    KUDUCEZUHUEUIUDBLDALDUHUEKUCBSASBAMNUJUGUHBAOPQTUFUAUB $.
+
+  $( Subtraction of nonnegative integers.  (Contributed by NM, 9-May-2004.) $)
+  nn0sub $p |- ( ( M e. NN0 /\ N e. NN0 ) ->
+                ( M <_ N <-> ( N - M ) e. NN0 ) ) $=
+    ( cn0 wcel cz cle wbr cmin co wb nn0z znn0sub syl2an ) ACDAEDBEDABFGBAHICDJ
+    BCDAKBKABLM $.
+
+  $( Subtraction of nonnegative integers.  (Contributed by NM, 4-Sep-2005.) $)
+  nn0sub2 $p |- ( ( M e. NN0 /\ N e. NN0 /\ M <_ N ) -> ( N - M ) e. NN0 ) $=
+    ( cn0 wcel cle wbr cmin co nn0sub biimp3a ) ACDBCDABEFBAGHCDABIJ $.
+
+  $( Apartness is equivalent to not equal for integers.  (Contributed by Jim
+     Kingdon, 14-Mar-2020.) $)
+  zapne $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M # N <-> M =/= N ) ) $=
+    ( cz wcel wa cap wbr wne cc wi zcn apne syl2an wceq wn clt wo w3o cr zre wb
+    df-ne ztri3or 3orrot 3orass bitri sylib reaplt syl6bb sylibrd syl5bi impbid
+    ord orcom ) ACDZBCDZEZABFGZABHZUOAIDBIDURUSJUPAKBKABLMUSABNZOZUQURABUBUQVAB
+    APGZABPGZQZURUQUTVDUQVCUTVBRZUTVDQZABUCVEUTVBVCRVFVCUTVBUDUTVBVCUEUFUGUMUOA
+    SDZBSDZURVDUAUPATBTVGVHEURVCVBQVDABUHVCVBUNUIMUJUKUL $.
+
+  $( Equality of integers is decidable.  (Contributed by Jim Kingdon,
+     14-Mar-2020.) $)
+  zdceq $p |- ( ( A e. ZZ /\ B e. ZZ ) -> DECID A = B ) $=
+    ( cz wcel wa clt wbr wceq w3o wdc ztri3or cr zre wne ltne necomd sylibr syl
+    wi ex wo olc dcne adantr sylan orc a1i adantl 3jaod mpd ) ACDZBCDZEZABFGZAB
+    HZBAFGZIUOJZABKUMUNUQUOUPUKALDZULUNUQSZAMURUSULURUNUQURUNEZABNZUQUTBAABOPVA
+    UOVAUAZUQVAUOUBABUCZQZRTUDUEUOUQSUMUOVBUQUOVAUFVCQUGULUPUQSZUKULBLDZVEBMVFU
+    PUQVFUPEVAUQBAOVDRTRUHUIUJ $.
+
+  $( Integer 'Less than' expressed in terms of 'less than or equal to'.  Also
+     see ~ ltleap which is a similar result for complex numbers.  (Contributed
+     by Jim Kingdon, 14-Mar-2020.) $)
+  zltlen $p |- ( ( A e. ZZ /\ B e. ZZ ) ->
+               ( A < B <-> ( A <_ B /\ B =/= A ) ) ) $=
+    ( cz wcel wa clt wbr cle wne cap cr wb zre ltleap syl2an zapne anbi2d bitrd
+    necom anbi2i syl6bb ) ACDZBCDZEZABFGZABHGZABIZEZUFBAIZEUDUEUFABJGZEZUHUBAKD
+    BKDUEUKLUCAMBMABNOUDUJUGUFABPQRUGUIUFABSTUA $.
+
+  $( A nonnegative integer less than ` 1 ` is ` 0 ` .  (Contributed by Paul
+     Chapman, 22-Jun-2011.) $)
+  nn0lt10b $p |- ( N e. NN0 -> ( N < 1 <-> N = 0 ) ) $=
+    ( cn0 wcel cc0 wceq cle wbr wa c1 clt cr wb nn0re 0re letri3 mpan2 biantrud
+    syl nn0ge0 cz nn0z caddc co 0z zleltp1 0p1e1 breq2i syl6bb 3bitr2rd ) ABCZA
+    DEZADFGZDAFGZHZULAIJGZUJAKCZUKUNLZAMUPDKCUQNADOPRUJUMULASQUJATCZULUOLAUAURU
+    LADIUBUCZJGZUOURDTCULUTLUDADUEPUSIAJUFUGUHRUI $.
+
+  $( A nonnegative integer less than 2 must be 0 or 1.  (Contributed by
+     Alexander van der Vekens, 16-Sep-2018.) $)
+  nn0lt2 $p |- ( ( N e. NN0 /\ N < 2 ) -> ( N = 0 \/ N = 1 ) ) $=
+    ( cn0 wcel c2 clt wbr wa c1 wceq cc0 wo wne wi olc a1i cle cz wb sylancl 1z
+    cmin co nn0z 2z zltlem1 2m1e1 breq2i syl6bb necom zltlen nn0lt10b biimpa ex
+    orcd sylbird expd syl7bi sylbid imp wdc zdceq adantr dcne sylib mpjaod ) AB
+    CZADEFZGZAHIZAJIZVIKZAHLZVIVKMVHVIVJNOVFVGVLVKMZVFVGAHPFZVMVFVGADHUAUBZPFZV
+    NVFAQCZDQCVGVPRAUCZUDADUESVOHAPUFUGUHVLHALZVFVNVKAHUIVFVNVSVKVFVNVSGZAHEFZV
+    KVFVQHQCZWAVTRVRTAHUJSVFWAVKVFWAGVJVIVFWAVJAUKULUNUMUOUPUQURUSVHVIUTZVIVLKV
+    FWCVGVFVQWBWCVRTAHVASVBAHVCVDVE $.
+
+  $( Nonnegative integer ordering relation.  (Contributed by NM,
+     21-Jun-2005.) $)
+  nn0lem1lt $p |- ( ( M e. NN0 /\ N e. NN0 ) ->
+                   ( M <_ N <-> ( M - 1 ) < N ) ) $=
+    ( cn0 wcel cz cle wbr c1 cmin co clt wb nn0z zlem1lt syl2an ) ACDAEDBEDABFG
+    AHIJBKGLBCDAMBMABNO $.
+
+  $( Positive integer ordering relation.  (Contributed by NM, 21-Jun-2005.) $)
+  nnlem1lt $p |- ( ( M e. NN /\ N e. NN ) -> ( M <_ N <-> ( M - 1 ) < N ) ) $=
+    ( cn wcel cz cle wbr c1 cmin co clt wb nnz zlem1lt syl2an ) ACDAEDBEDABFGAH
+    IJBKGLBCDAMBMABNO $.
+
+  $( Positive integer ordering relation.  (Contributed by NM, 21-Jun-2005.) $)
+  nnltlem1 $p |- ( ( M e. NN /\ N e. NN ) -> ( M < N <-> M <_ ( N - 1 ) ) ) $=
+    ( cn wcel cz clt wbr c1 cmin co cle wb nnz zltlem1 syl2an ) ACDAEDBEDABFGAB
+    HIJKGLBCDAMBMABNO $.
+
+  $( A positive integer decreased by 1 is greater than or equal to 0.
+     (Contributed by AV, 30-Oct-2018.) $)
+  nnm1ge0 $p |- ( N e. NN -> 0 <_ ( N - 1 ) ) $=
+    ( cn wcel cc0 clt wbr c1 cmin co cle nngt0 cz wb nnz zltlem1 sylancr mpbid
+    0z ) ABCZDAEFZDAGHIJFZAKSDLCALCTUAMRANDAOPQ $.
+
+  $( Division of a nonnegative integer by a positive number is not negative.
+     (Contributed by Alexander van der Vekens, 14-Apr-2018.) $)
+  nn0ge0div $p |- ( ( K e. NN0 /\ L e. NN ) -> 0 <_ ( K / L ) ) $=
+    ( cn0 wcel cn wa cc0 cle wbr cdiv co nn0ge0 adantr cr clt wb cz elnnz nn0re
+    w3a zre ad2antrl simprr 3jca sylan2b ge0div syl mpbid ) ACDZBEDZFZGAHIZGABJ
+    KHIZUIULUJALMUKANDZBNDZGBOIZTZULUMPUJUIBQDZUPFZUQBRUIUSFUNUOUPUIUNUSASMURUO
+    UIUPBUAUBUIURUPUCUDUEABUFUGUH $.
+
+  ${
+    $d k M $.  $d k N $.
+    $( Two ways to express " ` M ` divides ` N ` .  (Contributed by NM,
+       3-Oct-2008.) $)
+    zdiv $p |- ( ( M e. NN /\ N e. ZZ )
+                -> ( E. k e. ZZ ( M x. k ) = N <-> ( N / M ) e. ZZ ) ) $=
+      ( cn wcel cz wa cc0 cap wbr cv cmul co wceq wrex cdiv wb cc wi zcn adantr
+      nnap0 nncn divcanap3 3coml 3expa sylan2 3adantl2 oveq1 sylan9req eqeltrrd
+      w3a simplr exp31 rexlimdv divcanap2 3com12 oveq2 eqeq1d rspcev expcom syl
+      impbid 3expia syl2an mpd ) BDEZCFEZGBHIJZBAKZLMZCNZAFOZCBPMZFEZQZVGVIVHBU
+      BUAVGBREZCREZVIVPSVHBUCCTVQVRVIVPVQVRVIULZVMVOVSVLVOAFVSVJFEZVLVOVSVTGZVL
+      GVJVNFWAVLVJVKBPMZVNVQVIVTWBVJNZVRVTVQVIGVJREZWCVJTVQVIWDWCWDVQVIWCVJBUDU
+      EUFUGUHVKCBPUIUJVSVTVLUMUKUNUOVSBVNLMZCNZVOVMSVRVQVIWFCBUPUQVOWFVMVLWFAVN
+      FVJVNNVKWECVJVNBLURUSUTVAVBVCVDVEVF $.
+  $}
+
+  $( Property of divisibility: if ` D ` divides ` A ` and ` B ` then it divides
+     ` A + B ` .  (Contributed by NM, 3-Oct-2008.) $)
+  zdivadd $p |- ( ( ( D e. NN /\ A e. ZZ /\ B e. ZZ ) /\
+       ( ( A / D ) e. ZZ /\ ( B / D ) e. ZZ ) ) -> ( ( A + B ) / D ) e. ZZ ) $=
+    ( cn wcel cz w3a cdiv co wa caddc wceq cc cc0 cap wbr zcn nncn nnap0 jca
+    divdirap syl3an 3comr adantr zaddcl adantl eqeltrd ) CDEZAFEZBFEZGZACHIZFEB
+    CHIZFEJZJABKICHIZULUMKIZFUKUOUPLZUNUIUJUHUQUIAMEUJBMEUHCMEZCNOPZJUQAQBQUHUR
+    USCRCSTABCUAUBUCUDUNUPFEUKULUMUEUFUG $.
+
+  $( Property of divisibility: if ` D ` divides ` A ` then it divides
+     ` B x. A ` .  (Contributed by NM, 3-Oct-2008.) $)
+  zdivmul $p |- ( ( ( D e. NN /\ A e. ZZ /\ B e. ZZ ) /\
+       ( A / D ) e. ZZ ) -> ( ( B x. A ) / D ) e. ZZ ) $=
+    ( cn wcel cz w3a cdiv co wa cmul wceq cc cc0 cap wbr 3ad2ant2 3ad2ant1 nncn
+    zcn nnap0 3ad2ant3 divassap syl3anc 3comr adantr zmulcl 3ad2antl3 eqeltrd
+    jca ) CDEZAFEZBFEZGZACHIZFEZJBAKICHIZBUOKIZFUNUQURLZUPULUMUKUSULUMUKGBMEZAM
+    EZCMEZCNOPZJZUSUMULUTUKBTQULUMVAUKATRUKULVDUMUKVBVCCSCUAUJUBBACUCUDUEUFUMUK
+    UPURFEULBUOUGUHUI $.
+
+  ${
+    $d k M $.  $d k N $.
+    $( An extensionality-like property for integer ordering.  (Contributed by
+       NM, 29-Oct-2005.) $)
+    zextle $p |- ( ( M e. ZZ /\ N e. ZZ /\ A. k e. ZZ ( k <_ M <-> k <_ N ) )
+                  -> M = N ) $=
+      ( cz wcel cv cle wbr wb wral wceq wa zre leidd adantr breq1 bibi12d mpbid
+      rspcva cr adantlr mpbird adantll jca ex letri3 syl2an sylibrd 3impia ) BD
+      EZCDEZAFZBGHZULCGHZIZADJZBCKZUJUKLZUPBCGHZCBGHZLZUQURUPVAURUPLUSUTUJUPUSU
+      KUJUPLBBGHZUSUJVBUPUJBBMZNOUOVBUSIABDULBKUMVBUNUSULBBGPULBCGPQSRUAUKUPUTU
+      JUKUPLUTCCGHZUKVDUPUKCCMZNOUOUTVDIACDULCKUMUTUNVDULCBGPULCCGPQSUBUCUDUEUJ
+      BTECTEUQVAIUKVCVEBCUFUGUHUI $.
+
+    $( An extensionality-like property for integer ordering.  (Contributed by
+       NM, 29-Oct-2005.) $)
+    zextlt $p |- ( ( M e. ZZ /\ N e. ZZ /\ A. k e. ZZ ( k < M <-> k < N ) )
+                  -> M = N ) $=
+      ( cz wcel clt wbr wb wral wceq wa c1 cmin cle zltlem1 peano2zm syl2an zcn
+      co cc cv adantrr adantrl bibi12d ancoms ralbidva wi zextle 3expia subcan2
+      ax-1cn mp3an3 sylibd sylbid 3impia ) BDEZCDEZAUAZBFGZURCFGZHZADIZBCJZUPUQ
+      KZVBURBLMSZNGZURCLMSZNGZHZADIZVCVDVAVIADURDEZVDVAVIHVKVDKUSVFUTVHVKUPUSVF
+      HUQURBOUBVKUQUTVHHUPURCOUCUDUEUFVDVJVEVGJZVCUPVEDEZVGDEZVJVLUGUQBPCPVMVNV
+      JVLAVEVGUHUIQUPBTEZCTEZVLVCHZUQBRCRVOVPLTEVQUKBCLUJULQUMUNUO $.
+  $}
+
+  $( The reciprocal of a number greater than 1 is not an integer.  (Contributed
+     by NM, 3-May-2005.) $)
+  recnz $p |- ( ( A e. RR /\ 1 < A ) -> -. ( 1 / A ) e. ZZ ) $=
+    ( cr wcel c1 clt wbr wa cdiv co cz cc0 recgt1i simprd cle wn simpld zgt0ge1
+    syl5ibcom wb 1re cap 0lt1 0re lttr mp3an12 mpani imdistani gt0ap0 rerecclap
+    wi syl syldan lenlt sylancr sylibd mt2d ) ABCZDAEFZGZDAHIZJCZUTDEFZUSKUTEFZ
+    VBALZMUSVADUTNFZVBOZUSVCVAVEUSVCVBVDPUTQRUSDBCZUTBCZVEVFSTUQURAKUAFZVHUSUQK
+    AEFZGVIUQURVJUQKDEFZURVJUBKBCVGUQVKURGVJUJUCTKDAUDUEUFUGAUHUKAUIULDUTUMUNUO
+    UP $.
+
+  $( A number between an integer and its successor is not an integer.
+     (Contributed by NM, 3-May-2005.) $)
+  btwnnz $p |- ( ( A e. ZZ /\ A < B /\ B < ( A + 1 ) ) -> -. B e. ZZ ) $=
+    ( cz wcel clt wbr c1 caddc co wn wa cle zltp1le cr wb peano2z zre syl lenlt
+    syl2an bitrd biimpd impancom con2d 3impia ) ACDZABEFZBAGHIZEFZBCDZJUFUGKUJU
+    IUFUJUGUIJZUFUJKZUGUKULUGUHBLFZUKABMUFUHNDZBNDUMUKOUJUFUHCDUNAPUHQRBQUHBSTU
+    AUBUCUDUE $.
+
+  $( A larger number does not divide a smaller positive integer.  (Contributed
+     by NM, 3-May-2005.) $)
+  gtndiv $p |- ( ( A e. RR /\ B e. NN /\ B < A ) -> -. ( B / A ) e. ZZ ) $=
+    ( cr wcel cn clt wbr w3a cc0 cdiv co c1 caddc cz wn nnre 3ad2ant2 wa mp3an1
+    wb simp1 nngt0 adantl 0re lttr sylan ancoms mpand 3impia divgt0d simp3 cmul
+    wi 1re ltdivmul2 mp3an2 syl12anc mulid2d breq2d 3ad2ant1 bitrd mpbird 0p1e1
+    recn syl6breqr 0z btwnnz syl2anc ) ACDZBEDZBAFGZHZIBAJKZFGZVMILMKZFGZVMNDOZ
+    VLBAVJVIBCDZVKBPZQZVIVJVKUAZVJVIIBFGZVKBUBZQVIVJVKIAFGZVIVJRWBVKWDVJWBVIWCU
+    CVJVIWBVKRWDUMZVJVRVIWEVSICDVRVIWEUDIBAUESUFUGUHUIZUJVLVMLVOFVLVMLFGZVKVIVJ
+    VKUKVLWGBLAULKZFGZVKVLVRVIWDWGWITZVTWAWFVRLCDVIWDRWJUNBLAUOUPUQVIVJWIVKTVKV
+    IWHABFVIAAVDURUSUTVAVBVCVEINDVNVPVQVFIVMVGSVH $.
+
+  $( One-half is not an integer.  (Contributed by NM, 31-Jul-2004.) $)
+  halfnz $p |- -. ( 1 / 2 ) e. ZZ $=
+    ( c2 cr wcel c1 clt wbr cdiv co cz wn 2re 1lt2 recnz mp2an ) ABCDAEFDAGHICJ
+    KLAMN $.
+
+  ${
+    $d x A $.
+    $( Two ways to express " ` A ` is a prime number (or 1)."  (Contributed by
+       NM, 4-May-2005.) $)
+    prime $p |- ( A e. NN -> (
+                 A. x e. NN ( ( A / x ) e. NN -> ( x = 1 \/ x = A ) ) <->
+          A. x e. NN ( ( 1 < x /\ x <_ A /\ ( A / x ) e. NN ) -> x = A ) ) ) $=
+      ( cn wcel cv cdiv c1 wceq wi clt wbr wa wb cz nnz wn syl6bbr adantl nnre
+      cr co wo cle w3a wne wdc 1z zdceq mpan2 dfordc df-ne imbi1i imbi2d impexp
+      3syl bi2.04 bitri nngt1ne1 anbi1d gtndiv 3expia sylan con2d lenlt sylibrd
+      syl2an ancoms syl5 pm4.71rd anbi2d 3anass bitr3d imbi1d bitrd ralbidva )
+      BCDZBAEZFUAZCDZVQGHZVQBHZUBZIZGVQJKZVQBUCKZVSUDZWAIZACVPVQCDZLZWCVQGUEZVS
+      LZWAIZWGWHWCWLMVPWHWCVSWJWAIZIZWLWHWBWMVSWHVQNDZVTUFZWBWMMVQOWOGNDWPUGVQG
+      UHUIWPWBVTPZWAIWMVTWAUJWJWQWAVQGUKULQUOUMWLWJVSWAIIWNWJVSWAUNWJVSWAUPUQQR
+      WIWKWFWAWIWDVSLZWKWFWIWDWJVSWHWDWJMVPVQURRUSWIWRWDWEVSLZLWFWIVSWSWDWIVSWE
+      VSVRNDZWIWEVROWHVPWTWEIWHVPLZWTBVQJKZPZWEXAXBWTWHVQTDZVPXBWTPZIVQSZXDVPXB
+      XEVQBUTVAVBVCWHXDBTDWEXCMVPXFBSVQBVDVFVEVGVHVIVJWDWEVSVKQVLVMVNVO $.
+  $}
+
+  $( The square of a nonzero integer is a positive integer.  (Contributed by
+     NM, 2-Aug-2004.) $)
+  msqznn $p |- ( ( A e. ZZ /\ A =/= 0 ) -> ( A x. A ) e. NN ) $=
+    ( cz wcel cc0 wne wa cmul co clt wbr cn zmulcl anidms adantr wb zapne mpan2
+    cap 0z pm5.32i cr zre apsqgt0 sylan sylbir elnnz sylanbrc ) ABCZADEZFZAAGHZ
+    BCZDUKIJZUKKCUHULUIUHULAALMNUJUHADRJZFUMUHUNUIUHDBCUNUIOSADPQTUHAUACUNUMAUB
+    AUCUDUEUKUFUG $.
+
+  $( No even integer equals an odd integer (i.e. no integer can be both even
+     and odd).  Exercise 10(a) of [Apostol] p. 28.  (Contributed by NM,
+     31-Jul-2004.)  (Proof shortened by Mario Carneiro, 18-May-2014.) $)
+  zneo $p |- ( ( A e. ZZ /\ B e. ZZ ) ->
+             ( 2 x. A ) =/= ( ( 2 x. B ) + 1 ) ) $=
+    ( cz wcel wa c2 cmul co c1 caddc cdiv wn wceq cmin cc 2cn zcn mulcl sylancr
+    a1i wne halfnz adantr adantl 1cnd subaddd subdid oveq1d zsubcl syl cc0 2ap0
+    cap wbr divcanap3d eqtr3d eqeltrd oveq1 eleq1d syl5ibcom sylbird mpi necomd
+    necon3bd ) ACDZBCDZEZFBGHZIJHZFAGHZVGIFKHZCDZLVIVJUAUBVGVLVIVJVGVIVJMVJVHNH
+    ZIMZVLVGVJVHIVGFODZAODZVJODPVEVPVFAQUCZFARSVGVOBODZVHODPVFVRVEBQUDZFBRSVGUE
+    UFVGVMFKHZCDVNVLVGVTABNHZCVGFWAGHZFKHVTWAVGWBVMFKVGFABVOVGPTZVQVSUGUHVGWAFV
+    GWACDWAODABUIZWAQUJWCFUKUMUNVGULTUOUPWDUQVNVTVKCVMIFKURUSUTVAVDVBVC $.
+
+  ${
+    $d j k N $.
+    $( A positive integer is even or odd.  (Contributed by Jim Kingdon,
+       15-Mar-2020.) $)
+    nneoor $p |- ( N e. NN ->
+                ( ( N / 2 ) e. NN \/ ( ( N + 1 ) / 2 ) e. NN ) ) $=
+      ( vj vk cn wcel c1 caddc co c2 cdiv cv wceq oveq1d eleq1d orbi12d 2div2e1
+      wo oveq1 cc 2cn df-2 oveq1i eqtr3i 1nn eqeltri orci peano2nn nncn cc0 cap
+      add1p1 wbr wa 2ap0 pm3.2i divdirap mp3an23 oveq2i syl6eq eqtrd syl orim2d
+      syl5ibr orcom syl6ib nnind orcomd ) ADEAFGHZIJHZDEZAIJHZDEZBKZFGHZIJHZDEZ
+      VMIJHZDEZQFFGHZIJHZDEZFIJHZDEZQCKZFGHZIJHZDEZWDIJHZDEZQZWEFGHZIJHZDEZWGQZ
+      VJVLQBCAVMFLZVPWAVRWCWOVOVTDWOVNVSIJVMFFGRMNWOVQWBDVMFIJRNOVMWDLZVPWGVRWI
+      WPVOWFDWPVNWEIJVMWDFGRMNWPVQWHDVMWDIJRNOVMWELZVPWMVRWGWQVOWLDWQVNWKIJVMWE
+      FGRMNWQVQWFDVMWEIJRNOVMALZVPVJVRVLWRVOVIDWRVNVHIJVMAFGRMNWRVQVKDVMAIJRNOW
+      AWCVTFDIIJHZVTFIVSIJUAUBPUCUDUEUFWDDEZWJWGWMQWNWTWIWMWGWIWMWTWHFGHZDEWHUG
+      WTWLXADWTWDSEZWLXALWDUHXBWLWDIGHZIJHZXAXBWKXCIJWDUKMXBXDWHWSGHZXAXBISEZXF
+      IUIUJULZUMXDXELTXFXGTUNUOWDIIUPUQWSFWHGPURUSUTVANVCVBWGWMVDVEVFVG $.
+
+    $( A positive integer is even or odd but not both.  (Contributed by NM,
+       1-Jan-2006.)  (Proof shortened by Mario Carneiro, 18-May-2014.) $)
+    nneo $p |- ( N e. NN ->
+                ( ( N / 2 ) e. NN <-> -. ( ( N + 1 ) / 2 ) e. NN ) ) $=
+      ( cn wcel c2 cdiv co c1 caddc cmul wceq nncn peano2cn syl 2cnd divcanap2d
+      wn cc cc0 cz nnz cap wbr 2ap0 a1i oveq1d eqtr4d wne syl2an expcom syl5com
+      zneo necon2bd nneoor orcomd ord impbid ) ABCZADEFZBCZAGHFZDEFZBCZPZUQDVAI
+      FZDURIFZGHFZJUSVCUQVDUTVFUQUTDUQAQCUTQCAKZALMUQNZDRUAUBUQUCUDZOUQVEAGHUQA
+      DVGVHVIOUEUFUSVBVDVFVBUSVDVFUGZVBVASCURSCVJUSVATURTVAURUKUHUIULUJUQVBUSUQ
+      USVBAUMUNUOUP $.
+
+    nneo.1 $e |- N e. NN $.
+    $( A positive integer is even or odd but not both.  (Contributed by NM,
+       20-Aug-2001.) $)
+    nneoi $p |- ( ( N / 2 ) e. NN <-> -. ( ( N + 1 ) / 2 ) e. NN ) $=
+      ( cn wcel c2 cdiv co c1 caddc wn wb nneo ax-mp ) ACDAEFGCDAHIGEFGCDJKBALM
+      $.
+  $}
+
+  $( An integer is even or odd.  (Contributed by NM, 1-Jan-2006.) $)
+  zeo $p |- ( N e. ZZ -> ( ( N / 2 ) e. ZZ \/ ( ( N + 1 ) / 2 ) e. ZZ ) ) $=
+    ( cz wcel cc0 wceq cn cneg c2 cdiv co c1 caddc 2cn 2ap0 syl cc mp3an23 cmin
+    eleq1d ax-1cn cr w3o wa wo elz oveq1 div0api eqeltri syl6eqel adantl nneoor
+    0z orcd nnz orim12i wi recn cap wbr divnegap nnnegz syl6bir halfcld negnegd
+    sylibd peano2zm negsubdi2i 2m1e1 eqtr2i negcon2i mpbi negcl addsubass negdi
+    subcli oveq2i mpan2 3eqtr4a oveq1d peano2cn pm3.2i 2div2e1 syl6reqr 3eqtr4d
+    divsubdirap eqcomi syl5ib znegcl syl6 peano2re recnd orim12d adantr 3jaodan
+    syl5 mpd sylbi ) ABCAUACZADEZAFCZAGZFCZUBUCAHIJZBCZAKLJZHIJZBCZUDZAUEWRWSXH
+    WTXBWSXHWRWSXDXGWSXCDHIJZBADHIUFXIDBHMNUGULUHUIUMUJWTXHWRWTXCFCZXFFCZUDXHAU
+    KXJXDXKXGXCUNXFUNUOOUJWRXBUCXAHIJZFCZXAKLJZHIJZFCZUDZXHXBXQWRXAUKUJWRXQXHUP
+    XBWRXMXDXPXGWRXMXCGZGZBCZXDWRXMXRFCXTWRXRXLFWRAPCZXRXLEZAUQZYAHPCZHDURUSZYB
+    MNAHUTQOSXRVAVBWRXSXCBWRXCWRAYCVCVDSVEXPXOBCZWRXGXOUNWRYFXFGZGZBCZXGWRYFYGB
+    CZYIYFXOKRJZBCWRYJXOVFWRYKYGBWRYAYKYGEYCYAXNHRJZHIJZXEGZHIJZYKYGYAYLYNHIYAX
+    AKHRJZLJZXAKGZLJZYLYNYPYRXALKYPGZEYPYREYTHKRJKKHTMVGVHVIKYPTKHTMVOVJVKVPYAX
+    APCZYLYQEZAVLZUUAKPCZYDUUBTMXAKHVMQOYAUUDYNYSETAKVNVQVRVSYAYMXOHHIJZRJZYKYA
+    XNPCZYMUUFEZYAUUAUUGUUCXAVTOUUGYDYDYEUCUUHMYDYEMNWAXNHHWEQOKUUEXORUUEKWBWFV
+    PWCYAXEPCZYGYOEZAVTUUIYDYEUUJMNXEHUTQOWDOSWGYGWHWIWRYHXFBWRXFWRXEWRXEAWJWKV
+    CVDSVEWOWLWMWPWNWQ $.
+
+  $( An integer is even or odd but not both.  (Contributed by Mario Carneiro,
+     12-Sep-2015.) $)
+  zeo2 $p |- ( N e. ZZ ->
+              ( ( N / 2 ) e. ZZ <-> -. ( ( N + 1 ) / 2 ) e. ZZ ) ) $=
+    ( cz wcel c2 cdiv co c1 caddc wn cmul wceq cc zcn peano2cn syl 2cnd cc0 cap
+    wbr divcanap2d a1i oveq1d eqtr4d wne expcom necon2bd syl5com zeo orcomd ord
+    2ap0 zneo impbid ) ABCZADEFZBCZAGHFZDEFZBCZIZUNDURJFZDUOJFZGHFZKUPUTUNVAUQV
+    CUNUQDUNALCUQLCAMZANOUNPZDQRSUNUKUAZTUNVBAGHUNADVDVEVFTUBUCUPUSVAVCUSUPVAVC
+    UDURUOULUEUFUGUNUSUPUNUPUSAUHUIUJUM $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Second Peano postulate for upper integers.  (Contributed by NM,
+       3-Oct-2004.) $)
+    peano2uz2 $p |- ( ( A e. ZZ /\ B e. { x e. ZZ | A <_ x } ) ->
+                             ( B + 1 ) e. { x e. ZZ | A <_ x } ) $=
+      ( cz wcel cle wbr wa c1 caddc co cv crab peano2z ad2antrl cr wi zre breq2
+      elrab lep1 adantl peano2re ancli letr 3expb sylan2 mpan2d syl2an impr jca
+      anbi2i 3imtr4i ) BDEZCDEZBCFGZHZHZCIJKZDEZBUSFGZHUNCBALZFGZADMZEZHUSVDEUR
+      UTVAUOUTUNUPCNOUNUOUPVAUNBPEZCPEZUPVAQUOBRCRVFVGHUPCUSFGZVAVGVHVFCUAUBVGV
+      FVGUSPEZHUPVHHVAQZVGVICUCUDVFVGVIVJBCUSUEUFUGUHUIUJUKVEUQUNVCUPACDVBCBFST
+      ULVCVAAUSDVBUSBFSTUM $.
+  $}
+
+  ${
+    $d k n x A $.  $d k n x N $.
+    $( Peano's inductive postulate for upper integers.  (Contributed by NM,
+       6-Jul-2005.)  (Revised by Mario Carneiro, 25-Jul-2013.) $)
+    peano5uzti $p |- ( N e. ZZ -> ( ( N e. A /\ A. x e. A ( x + 1 ) e. A )
+                          -> { k e. ZZ | N <_ k } C_ A ) ) $=
+      ( vn cz wcel cv c1 caddc co wa cc wceq cn wi oveq1 eleq1d imbi2d ex breq2
+      wral cle wbr crab wss elrab anbi2i cmin ad2antrl 1cnd subcld npcan syl2an
+      zcn ax-1cn subsub mp3an3 cn0 znn0sub biimpa anasss ancoms adantll nn0p1nn
+      eqeltrd simpr simpll adantr pncan3d simprl rspccv ad2antll nncnd ad2antlr
+      syl add32d sylibd a2d nnind syl3c eqeltrrd sylanb expcom expdimp ssrdv )
+      DFGZDBGZAHZIJKZBGZABUBZLZDCHZUCUDZCFUEZBUFWGWMLZEWPBWGWMEHZWPGZWRBGZWMWSL
+      ZWGWTXAWMWRFGZDWRUCUDZLZLZWGWTWSXDWMWOXCCWRFWNWRDUCUAUGUHXEWGLZWRDIUIKZUI
+      KZXGJKZWRBXEWRMGZXGMGZXIWRNWGXBXJWMXCWRUOUJZWGDIDUOZWGUKULZWRXGUMUNXFXHOG
+      WGWMXIBGZXFXHWRDUIKZIJKZOXEXJDMGZXHXQNZWGXLXMXJXRIMGXSUPWRDIUQURUNXFXPUSG
+      ZXQOGXDWGXTWMWGXDXTWGXBXCXTWGXBLXCXTDWRUTVAVBVCVDXPVEVPVFXEWGVGWMXDWGVHWG
+      WMWNXGJKZBGZPZPWGWMIXGJKZBGZPZPWGWMWRXGJKZBGZPZPWGWMWRIJKZXGJKZBGZPZPWGWM
+      XOPZPCEXHWNINZYCYFWGYOYBYEWMYOYAYDBWNIXGJQRSSWNWRNZYCYIWGYPYBYHWMYPYAYGBW
+      NWRXGJQRSSWNYJNZYCYMWGYQYBYLWMYQYAYKBWNYJXGJQRSSWNXHNZYCYNWGYRYBXOWMYRYAX
+      IBWNXHXGJQRSSWGWMYEWQYDDBWQIDWQUKWGXRWMXMVIVJWGWHWLVKVFTWROGZWGYIYMYSWGYI
+      YMPYSWGLZWMYHYLYTWMYHYLPYTWMLZYHYGIJKZBGZYLWLYHUUCPYTWHWKUUCAYGBWIYGNWJUU
+      BBWIYGIJQRVLVMUUAUUBYKBUUAWRXGIUUAWRYSWGWMVHVNWGXKYSWMXNVOUUAUKVQRVRTVSTV
+      SVTWAWBWCWDWEWFT $.
+
+    ${
+      peano5uz.1 $e |- N e. ZZ $.
+      $( Peano's inductive postulate for upper integers.  (Contributed by NM,
+         6-Jul-2005.)  (Revised by Mario Carneiro, 3-May-2014.) $)
+      peano5uzi $p |- ( ( N e. A /\ A. x e. A ( x + 1 ) e. A ) ->
+                    { k e. ZZ | N <_ k } C_ A ) $=
+        ( cz wcel cv c1 caddc co wral wa cle wbr crab wss wi peano5uzti ax-mp )
+        DFGDBGAHIJKBGABLMDCHNOCFPBQREABCDST $.
+    $}
+  $}
+
+  ${
+    $d x y z w v u m N $.
+    dfuz.1 $e |- N e. ZZ $.
+    $( An expression for the upper integers that start at ` N ` that is
+       analogous to ~ dfnn2 for positive integers.  (Contributed by NM,
+       6-Jul-2005.)  (Proof shortened by Mario Carneiro, 3-May-2014.) $)
+    dfuzi $p |- { z e. ZZ | N <_ z } =
+               |^| { x | ( N e. x /\ A. y e. x ( y + 1 ) e. x ) } $=
+      ( cv cle wbr cz crab wcel c1 caddc co wral wa cab wss mpbir2an eleq2 cint
+      ssintab peano5uzi mpgbir zrei leidi breq2 elrab peano2uz2 mpan rgen rabex
+      wi zex wceq raleqbi1dv anbi12d elab intss1 ax-mp eqssi ) DCFZGHZCIJZDAFZK
+      ZBFZLMNZVEKZBVEOZPZAQZUAZVDVMRVKVDVERUMAVKAVDUBBVECDEUCUDVDVLKZVMVDRVNDVD
+      KZVHVDKZBVDOZVODIKZDDGHZEDDEUEUFVCVSCDIVBDDGUGUHSVPBVDVRVGVDKVPECDVGUIUJU
+      KVKVOVQPAVDVCCIUNULVEVDUOVFVOVJVQVEVDDTVIVPBVEVDVEVDVHTUPUQURSVDVLUSUTVA
+      $.
+  $}
+
+  ${
+    $d j z w N $.  $d j z ps $.  $d j z ch $.  $d j z th $.  $d j z ta $.
+    $d k w ph $.  $d j k z w M $.
+    $( Substitutions. $)
+    uzind.1 $e |- ( j = M -> ( ph <-> ps ) ) $.
+    uzind.2 $e |- ( j = k -> ( ph <-> ch ) ) $.
+    uzind.3 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.
+    uzind.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind.6 $e |- ( ( M e. ZZ /\ k e. ZZ /\ M <_ k ) -> ( ch -> th ) ) $.
+    $( Induction on the upper integers that start at ` M ` .  The first four
+       hypotheses give us the substitution instances we need; the last two are
+       the basis and the induction step.  (Contributed by NM, 5-Jul-2005.) $)
+    uzind $p |- ( ( M e. ZZ /\ N e. ZZ /\ M <_ N ) -> ta ) $=
+      ( cz wcel cle wbr wa vw w3a cv crab c1 caddc wral wss zre leidd jca ancli
+      co wceq breq2 anbi12d elrab sylibr wi peano2z a1i adantrd clt ltp1 adantl
+      cr peano2re lelttr 3expb sylan2 mpan2d ltle syld syl2an expimpd 3exp jcad
+      imp4d 3imtr4g ralrimiv peano5uzti mp2and sseld 3imtr3g 3impib simprd ) HP
+      QZIPQZHIRSZUBZWIEWJWHWIETZWGWHWIWHWKTZWGIHUAUCZRSZUAPUDZQIHFUCZRSZATZFPUD
+      ZQWHWITWLWGWOWSIWGHWSQZGUCZUEUFUMZWSQZGWSUGWOWSUHWGWGHHRSZBTZTWTWGXEWGXDB
+      WGHHUIZUJNUKULWRXEFHPWPHUNWQXDABWPHHRUOJUPUQURWGXCGWSWGXAPQZHXARSZCTZTZXB
+      PQZHXBRSZDTZTXAWSQXCWGXJXKXMWGXGXKXIXGXKUSWGXAUTVAVBWGXJXLDWGXGXIXLWGXGTX
+      HXLCWGHVFQZXAVFQZXHXLUSXGXFXAUIXNXOTZXHHXBVCSZXLXPXHXAXBVCSZXQXOXRXNXAVDV
+      EXOXNXOXBVFQZTXHXRTXQUSZXOXSXAVGZULXNXOXSXTHXAXBVHVIVJVKXOXNXSXQXLUSYAHXB
+      VLVJVMVNVBVOWGXGXHCDWGXGXHCDUSOVPVRVQVQWRXIFXAPWPXAUNWQXHACWPXAHRUOKUPUQW
+      RXMFXBPWPXBUNWQXLADWPXBHRUOLUPUQVSVTGWSUAHWAWBWCWNWIUAIPWMIHRUOUQWRWKFIPW
+      PIUNWQWIAEWPIHRUOMUPUQWDWEWFWF $.
+  $}
+
+  ${
+    $d j z w N $.  $d j z ps $.  $d j z ch $.  $d j z th $.  $d j z ta $.
+    $d k w ph $.  $d j k z w M $.
+    $( Substitutions. $)
+    uzind2.1 $e |- ( j = ( M + 1 ) -> ( ph <-> ps ) ) $.
+    uzind2.2 $e |- ( j = k -> ( ph <-> ch ) ) $.
+    uzind2.3 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.
+    uzind2.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind2.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind2.6 $e |- ( ( M e. ZZ /\ k e. ZZ /\ M < k ) -> ( ch -> th ) ) $.
+    $( Induction on the upper integers that start _after_ an integer ` M ` .
+       The first four hypotheses give us the substitution instances we need;
+       the last two are the basis and the induction step.  (Contributed by NM,
+       25-Jul-2005.) $)
+    uzind2 $p |- ( ( M e. ZZ /\ N e. ZZ /\ M < N ) -> ta ) $=
+      ( cz wcel wbr wi wceq clt wa c1 caddc co zltp1le peano2z cv imbi2d 3expia
+      cle a1i w3a sylbird ex com3l imp 3adant1 a2d uzind 3exp syl com34 pm2.43a
+      sylbid 3impia ) HPQZIPQZHIUARZEVGVHUBVIHUCUDUEZIUKRZEHIUFVGVHVKESZVHVGVLV
+      GVHVKVGEVGVJPQZVHVKVGESZSSHUGVMVHVKVNVGASVGBSZVGCSVGDSVNFGVJIFUHZVJTABVGJ
+      UIVPGUHZTACVGKUIVPVQUCUDUETADVGLUIVPITAEVGMUIVOVMNULVMVQPQZVJVQUKRZUMVGCD
+      VRVSVGCDSZSZVMVRVSWAVGVRVSVTVGVRVSVTSVGVRUBVSHVQUARZVTHVQUFVGVRWBVTOUJUNU
+      OUPUQURUSUTVAVBVCVDUQVEVF $.
+  $}
+
+  ${
+    $d j k N $.  $d j ps $.  $d j ch $.  $d j th $.  $d j ta $.  $d m ph $.
+    $d j m k M $.
+    $( Substitutions. $)
+    uzind3.1 $e |- ( j = M -> ( ph <-> ps ) ) $.
+    uzind3.2 $e |- ( j = m -> ( ph <-> ch ) ) $.
+    uzind3.3 $e |- ( j = ( m + 1 ) -> ( ph <-> th ) ) $.
+    uzind3.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind3.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind3.6 $e |- ( ( M e. ZZ /\ m e. { k e. ZZ | M <_ k } ) ->
+                   ( ch -> th ) ) $.
+    $( Induction on the upper integers that start at an integer ` M ` .  The
+       first four hypotheses give us the substitution instances we need, and
+       the last two are the basis and the induction step.  (Contributed by NM,
+       26-Jul-2005.) $)
+    uzind3 $p |- ( ( M e. ZZ /\ N e. { k e. ZZ | M <_ k } ) -> ta ) $=
+      ( cle wbr cz wcel cv wa breq2 elrab wi sylan2br 3impb uzind 3expb sylan2b
+      crab ) JIGUAZQRZGSUKZTISTZJSTZIJQRZUBEUMUQGJSULJIQUCUDUOUPUQEABCDEFHIJKLM
+      NOUOHUAZSTZIURQRZCDUEZUSUTUBUOURUNTVAUMUTGURSULURIQUCUDPUFUGUHUIUJ $.
+  $}
+
+  ${
+    $d x y $.  $d A x $.  $d ps x $.  $d ch x $.  $d th x $.  $d ta x $.
+    $d ph y $.
+    nn0ind.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.
+    nn0ind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    nn0ind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    nn0ind.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    nn0ind.5 $e |- ps $.
+    nn0ind.6 $e |- ( y e. NN0 -> ( ch -> th ) ) $.
+    $( Principle of Mathematical Induction (inference schema) on nonnegative
+       integers.  The first four hypotheses give us the substitution instances
+       we need; the last two are the basis and the induction step.
+       (Contributed by NM, 13-May-2004.) $)
+    nn0ind $p |- ( A e. NN0 -> ta ) $=
+      ( cn0 wcel cz cc0 cle wbr wa elnn0z 0z a1i cv sylbir 3adant1 uzind mp3an1
+      wi sylbi ) HOPHQPZRHSTZUAEHUBRQPZULUMEUCABCDEFGRHIJKLBUNMUDGUEZQPZRUOSTZC
+      DUJZUNUPUQUAUOOPURUOUBNUFUGUHUIUK $.
+  $}
+
+  ${
+    $d K x $.  $d M x y $.  $d N x y $.  $d ch x $.  $d ph y $.  $d ps x $.
+    $d ta x $.  $d th x $.
+    fzind.1 $e |- ( x = M -> ( ph <-> ps ) ) $.
+    fzind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    fzind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    fzind.4 $e |- ( x = K -> ( ph <-> ta ) ) $.
+    fzind.5 $e |- ( ( M e. ZZ /\ N e. ZZ /\ M <_ N ) -> ps ) $.
+    fzind.6 $e |- ( ( ( M e. ZZ /\ N e. ZZ ) /\
+                      ( y e. ZZ /\ M <_ y /\ y < N ) ) -> ( ch -> th ) ) $.
+    $( Induction on the integers from ` M ` to ` N ` inclusive .  The first
+       four hypotheses give us the substitution instances we need; the last two
+       are the basis and the induction step.  (Contributed by Paul Chapman,
+       31-Mar-2011.) $)
+    fzind $p |- ( ( ( M e. ZZ /\ N e. ZZ ) /\
+                    ( K e. ZZ /\ M <_ K /\ K <_ N ) ) -> ta ) $=
+      ( cle wbr wa wi cz wcel w3a cv c1 caddc co breq1 anbi2d imbi12d 3expib cr
+      wceq zre p1le 3expia syl2an imdistanda imim1d 3ad2ant2 wb zltp1le adantlr
+      clt expcom pm5.32d adantl 3expa com12 sylbird com23 expd 3impib impd syld
+      ex a2d uzind expcomd 3expb 3impia impcom ) HUAUBZIHQRZHJQRZUCZIUAUBZJUAUB
+      ZSZEWFWGWHEWCWDWEWGWHETZTWCWDSZWGWEWJWGWKWEWJTZWGWCWDWLWGWCWDUCWHWEEWHFUD
+      ZJQRZSZATWHIJQRZSZBTWHGUDZJQRZSZCTZWHWRUEUFUGZJQRZSZDTZWHWESZETFGIHWMIUMZ
+      WOWQABXGWNWPWHWMIJQUHUIKUJWMWRUMZWOWTACXHWNWSWHWMWRJQUHUILUJWMXBUMZWOXDAD
+      XIWNXCWHWMXBJQUHUIMUJWMHUMZWOXFAEXJWNWEWHWMHJQUHUINUJWGWHWPBOUKWGWRUAUBZI
+      WRQRZUCZXAXDCTZXEXKWGXAXNTXLXKXDWTCXKWHXCWSXKWRULUBZJULUBZXCWSTWHWRUNJUNX
+      OXPXCWSWRJUOUPUQURUSUTXMXDCDXMWHXCCDTZXMXCWHXQWGXKXLXCWHXQTZTWGXKXLSZXCXR
+      WGWHXSXCSZXQWGWHXTXQTWIXTXSWRJVDRZSZXQWHYBXTVAWGWHXSYAXCXSWHYAXCVAZXKWHYC
+      XLWRJVBVCVEVFVGYBWIXQXKXLYAWIXQTWIXKXLYAUCXQPVEVHVIVJVPVKVLVMVKVNVQVOVRVS
+      VTVEVKWAVNWB $.
+  $}
+
+  ${
+    $d K x $.  $d M x y $.  $d N x y $.  $d ch x $.  $d ph y $.  $d ps x $.
+    $d ta x $.  $d th x $.
+    fnn0ind.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.
+    fnn0ind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    fnn0ind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    fnn0ind.4 $e |- ( x = K -> ( ph <-> ta ) ) $.
+    fnn0ind.5 $e |- ( N e. NN0 -> ps ) $.
+    fnn0ind.6 $e |- ( ( N e. NN0 /\ y e. NN0 /\ y < N ) -> ( ch -> th ) ) $.
+    $( Induction on the integers from ` 0 ` to ` N ` inclusive .  The first
+       four hypotheses give us the substitution instances we need; the last two
+       are the basis and the induction step.  (Contributed by Paul Chapman,
+       31-Mar-2011.) $)
+    fnn0ind $p |- ( ( N e. NN0 /\ K e. NN0 /\ K <_ N ) -> ta ) $=
+      ( wcel wbr wa cc0 wi cn0 cle cz elnn0z w3a nn0z 0z sylbir 3adant1 clt zre
+      cv cr 0re lelttr ltle 3adant2 mp3an1 syl2an ex com23 3impib impcom anbi1i
+      syld 3expb syl2anbr expcom 3impa expd mpd adantll fzind mpanl1 syl5 3expa
+      sylanb 3impb ) IUAPZHUAPZHIUBQZEVTWARVSEVTHUCPZSHUBQZRWAVSETZHUDWBWCWAWDV
+      SIUCPZWBWCWAUEZEIUFWEWFESUCPZWEWFEUGABCDEFGHSIJKLMWESIUBQZBWGWEWHRZVSBIUD
+      ZNUHUIWEGULZUCPZSWKUBQZWKIUJQZUEZCDTZWGWEWORWHWPWOWEWHWLWMWNWEWHTWLWEWMWN
+      RZWHWLWEWQWHTZWLWKUMPZIUMPZWRWEWKUKIUKSUMPZWSWTWRUNXAWSWTUEWQSIUJQZWHSWKI
+      UOXAWTXBWHTWSSIUPUQVEURUSUTVAVBVCWOWEWHWPTWOWEWHWPWLWMWNWIWPTWIWLWMRZWNRZ
+      WPWIVSWKUAPZWNRWPXDWJXEXCWNWKUDVDVSXEWNWPOVFVGVHVIVJVCVKVLVMVNVHVOVPVQVCV
+      R $.
+  $}
+
+  ${
+    $d x y z $.  $d A x z $.  $d ps x z $.  $d ch x z $.  $d th x z $.
+    $d ta x z $.  $d ph y z $.
+    nn0ind-raph.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.
+    nn0ind-raph.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    nn0ind-raph.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.
+    nn0ind-raph.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    nn0ind-raph.5 $e |- ps $.
+    nn0ind-raph.6 $e |- ( y e. NN0 -> ( ch -> th ) ) $.
+    $( Principle of Mathematical Induction (inference schema) on nonnegative
+       integers.  The first four hypotheses give us the substitution instances
+       we need; the last two are the basis and the induction step.  Raph Levien
+       remarks:  "This seems a bit painful.  I wonder if an explicit
+       substitution version would be easier."  (Contributed by Raph Levien,
+       10-Apr-2004.) $)
+    nn0ind-raph $p |- ( A e. NN0 -> ta ) $=
+      ( vz wcel cc0 wceq c1 wi cn0 cn wo elnn0 wsb wsbc dfsbcq2 cv sbhypf caddc
+      nfv co nfsbc1v 1ex c0ex wa 0nn0 eleq1a ax-mp mpbiri eqeq2 syl6bir pm5.74d
+      wb mpbii com12 vtocle sylc adantr oveq1 0p1e1 syl6eq eqeq2d imp mpbird ex
+      sbceq1a mpbid vtoclef nnnn0 syl nnind bicomd sylan9bb sylbird eqcoms jaoi
+      eqeq1 sylbi ) HUAPHUBPZHQRZUCEHUDWJEWKAFOUEAFSUFZCDEOGHAFOSUGACFOGUHZCFUK
+      JUIADFOWMSUJULZDFUKKUIAEFOHEFUKLUIWLFSAFSUMUNFUHZSRZAWLWPATGQUOWMQRZWPAWQ
+      WPUPADWQDWPWQWMUAPZCDQUAPWQWRTUQQUAWMURUSWQCTFQUOWQWOQRZCWQWSATWSCTWSABMI
+      UTWQWSACWQWSWOWMRACVDWMQWOVAJVBVCVEVFVGNVHVIWQWPADVDZWQWPWOWNRWTWQWNSWOWQ
+      WNQSUJULSWMQSUJVJVKVLVMKVBVNVOVPVGAFSVQVRVSWMUBPWRCDTWMVTNWAWBEQHQHRZETZF
+      QXBFUKUOWSXAWOHRZEWOQHWHWSXCEWSXCUPBEMWSBAXCEWSABIWCLWDVEVPWEVSWFWGWI $.
+  $}
+
+  ${
+    $d A x $.  $d ch x $.  $d et x $.  $d ph y $.  $d ps x $.  $d ta x $.
+    $d th x $.  $d x y ze $.
+    zindd.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.
+    zindd.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    zindd.3 $e |- ( x = ( y + 1 ) -> ( ph <-> ta ) ) $.
+    zindd.4 $e |- ( x = -u y -> ( ph <-> th ) ) $.
+    zindd.5 $e |- ( x = A -> ( ph <-> et ) ) $.
+    zindd.6 $e |- ( ze -> ps ) $.
+    zindd.7 $e |- ( ze -> ( y e. NN0 -> ( ch -> ta ) ) ) $.
+    zindd.8 $e |- ( ze -> ( y e. NN -> ( ch -> th ) ) ) $.
+    $( Principle of Mathematical Induction on all integers, deduction version.
+       The first five hypotheses give the substitutions; the last three are the
+       basis, the induction, and the extension to negative numbers.
+       (Contributed by Paul Chapman, 17-Apr-2009.)  (Proof shortened by Mario
+       Carneiro, 4-Jan-2017.) $)
+    zindd $p |- ( ze -> ( A e. ZZ -> et ) ) $=
+      ( cz wcel wral wi cv cneg cn0 cn wo cr znegcl elznn0nn sylib simpr orim2i
+      wa syl zcn negnegd eleq1d orbi2d mpbid cc0 wceq imbi2d c1 caddc com12 a2d
+      co nn0ind nnnn0 mpdd jaod syl5 ralrimiv wb sylan9eqr eqcomd bicomd rspcdv
+      negeq rspccv 3syl ) GDISUAZAHSUAJSTFUBGDISIUCZSTZWDUDZUETZWDUFTZUGZGDWEWG
+      WFUDZUFTZUGZWIWEWGWFUHTZWKUNZUGZWLWEWFSTWOWDUIWFUJUKWNWKWGWMWKULUMUOWEWKW
+      HWGWEWJWDUFWEWDWDUPUQURUSUTGWGDWHWGGDGAUBZGBUBZGCUBZGEUBZGDUBHIWFHUCZVAVB
+      ABGKVCZWTWDVBACGLVCZWTWDVDVEVHVBAEGMVCZWTWFVBZADGNVCPWDUETZGCEGXECEUBQVFV
+      GZVIVFGWHCDWHGCWHXEWRWDVJWPWQWRWSWRHIWDXAXBXCXBPXFVIUOVFRVKVLVMVNWCAHSWTS
+      TZWCAXGDAIWTUDZSWTUIXGWDXHVBZUNZADXJXDADVOXJWFWTXIXGWFXHUDWTWDXHVTXGWTWTU
+      PUQVPVQNUOVRVSVFVNAFHJSOWAWB $.
+  $}
+
+  ${
+    nn0zd.1 $e |- ( ph -> A e. NN0 ) $.
+    $( A positive integer is an integer.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    nn0zd $p |- ( ph -> A e. ZZ ) $=
+      ( cn0 cz nn0ssz sseldi ) ADEBFCG $.
+  $}
+
+  ${
+    nnzd.1 $e |- ( ph -> A e. NN ) $.
+    $( A nonnegative integer is an integer.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    nnzd $p |- ( ph -> A e. ZZ ) $=
+      ( nnnn0d nn0zd ) ABABCDE $.
+  $}
+
+  ${
+    zred.1 $e |- ( ph -> A e. ZZ ) $.
+    $( An integer is a real number.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zred $p |- ( ph -> A e. RR ) $=
+      ( cz cr zssre sseldi ) ADEBFCG $.
+
+    $( An integer is a complex number.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zcnd $p |- ( ph -> A e. CC ) $=
+      ( zred recnd ) ABABCDE $.
+
+    $( Closure law for negative integers.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    znegcld $p |- ( ph -> -u A e. ZZ ) $=
+      ( cz wcel cneg znegcl syl ) ABDEBFDECBGH $.
+
+    $( Deduction from second Peano postulate generalized to integers.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    peano2zd $p |- ( ph -> ( A + 1 ) e. ZZ ) $=
+      ( cz wcel c1 caddc co peano2z syl ) ABDEBFGHDECBIJ $.
+
+    zaddcld.1 $e |- ( ph -> B e. ZZ ) $.
+    $( Closure of addition of integers.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zaddcld $p |- ( ph -> ( A + B ) e. ZZ ) $=
+      ( cz wcel caddc co zaddcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure of subtraction of integers.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zsubcld $p |- ( ph -> ( A - B ) e. ZZ ) $=
+      ( cz wcel cmin co zsubcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure of multiplication of integers.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    zmulcld $p |- ( ph -> ( A x. B ) e. ZZ ) $=
+      ( cz wcel cmul co zmulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
+  $( Increasing an integer by 2 results in an integer.  (Contributed by
+     Alexander van der Vekens, 16-Sep-2018.) $)
+  zadd2cl $p |- ( N e. ZZ -> ( N + 2 ) e. ZZ ) $=
+    ( cz wcel c2 id 2z a1i zaddcld ) ABCZADIEDBCIFGH $.
 
 $(
 ###############################################################################
@@ -71930,6 +76760,46 @@ htmldef "#" as ' # ';
 htmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   althtmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   latexdef "#RR" as "\apart_\mathbb{R}";
+htmldef "NN" as "<IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT=' NN' TITLE='NN'>";
+  althtmldef "NN" as '&#8469;'; /* &Nopf; */
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "NN" as "\mathbb{N}";
+htmldef "NN0" as
+    "<IMG SRC='_bbn0.gif' WIDTH=19 HEIGHT=19 ALT=' NN0' TITLE='NN0'>";
+  althtmldef "NN0" as '&#8469;<SUB>0</SUB>';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "NN0" as "\mathbb{N}_0";
+htmldef "ZZ" as "<IMG SRC='bbz.gif' WIDTH=11 HEIGHT=19 ALT=' ZZ' TITLE='ZZ'>";
+  althtmldef "ZZ" as '&#8484;';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "ZZ" as "\mathbb{Z}";
+htmldef "2" as "<IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT=' 2' TITLE='2'>";
+  althtmldef "2" as '2';
+  latexdef "2" as "2";
+htmldef "3" as "<IMG SRC='3.gif' WIDTH=8 HEIGHT=19 ALT=' 3' TITLE='3'>";
+  althtmldef "3" as '3';
+  latexdef "3" as "3";
+htmldef "4" as "<IMG SRC='4.gif' WIDTH=9 HEIGHT=19 ALT=' 4' TITLE='4'>";
+  althtmldef "4" as '4';
+  latexdef "4" as "4";
+htmldef "5" as "<IMG SRC='5.gif' WIDTH=8 HEIGHT=19 ALT=' 5' TITLE='5'>";
+  althtmldef "5" as '5';
+  latexdef "5" as "5";
+htmldef "6" as "<IMG SRC='6.gif' WIDTH=8 HEIGHT=19 ALT=' 6' TITLE='6'>";
+  althtmldef "6" as '6';
+  latexdef "6" as "6";
+htmldef "7" as "<IMG SRC='7.gif' WIDTH=9 HEIGHT=19 ALT=' 7' TITLE='7'>";
+  althtmldef "7" as '7';
+  latexdef "7" as "7";
+htmldef "8" as "<IMG SRC='8.gif' WIDTH=8 HEIGHT=19 ALT=' 8' TITLE='8'>";
+  althtmldef "8" as '8';
+  latexdef "8" as "8";
+htmldef "9" as "<IMG SRC='9.gif' WIDTH=8 HEIGHT=19 ALT=' 9' TITLE='9'>";
+  althtmldef "9" as '9';
+  latexdef "9" as "9";
+htmldef "10" as "<IMG SRC='_10.gif' WIDTH=14 HEIGHT=19 ALT=' 10' TITLE='10'>";
+  althtmldef "10" as '10';
+  latexdef "10" as "10";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
@@ -73986,12 +78856,12 @@ $)
     bj-omtrans $p |- ( A e. _om -> A C_ _om ) $=
       ( vy va vx cv com wss csuc wi wcel wral bj-omex wceq sseq2 imbi12d c0 nfv
       sseq1 biimprd biimpd ralbidv imbi2d 0ss bdcv bdss nfcv bj-bdfindisg vtocl
-      mpan wa csn cun df-suc ax-ia2 ax-ia1 snssd unssd syl5eqss ex mprg ) BEZFG
-      ZVAHZFGZIZAFJZAFGZIZBFVACEZGZVCVIGZIZBFKZVFAVIGZIZIVEBFKZVHICFLVIFMZVMVPV
-      OVHVQVLVEBFVQVJVBVKVDVIFVANVIFVCNOUAVQVNVGVFVIFANUBOPVIGZVMVOVIUCDEZVIGZV
-      RVJVKVNDBADVICUDUEVRDQVJDQVKDQVSPMVTVRVSPVIRSVSVAMVTVJVSVAVIRTVSVCMVTVKVS
-      VCVIRSDAUFVNDQVSAMVTVNVSAVIRTUGUIUHVAFJZVBVDWAVBUJZVCVAVAUKZULFVAUMWBVAWC
-      FWAVBUNWBVAFWAVBUOUPUQURUSUT $.
+      mpan wa csn cun df-suc simpr simpl snssd unssd syl5eqss ex mprg ) BEZFGZV
+      AHZFGZIZAFJZAFGZIZBFVACEZGZVCVIGZIZBFKZVFAVIGZIZIVEBFKZVHICFLVIFMZVMVPVOV
+      HVQVLVEBFVQVJVBVKVDVIFVANVIFVCNOUAVQVNVGVFVIFANUBOPVIGZVMVOVIUCDEZVIGZVRV
+      JVKVNDBADVICUDUEVRDQVJDQVKDQVSPMVTVRVSPVIRSVSVAMVTVJVSVAVIRTVSVCMVTVKVSVC
+      VIRSDAUFVNDQVSAMVTVNVSAVIRTUGUIUHVAFJZVBVDWAVBUJZVCVAVAUKZULFVAUMWBVAWCFW
+      AVBUNWBVAFWAVBUOUPUQURUSUT $.
   $}
 
   ${
@@ -74122,14 +78992,14 @@ $)
     bj-inf2vnlem1 $p |-
          ( A. x ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> Ind A ) $=
       ( vz cv wcel c0 wceq csuc wrex wo wb wal wral wi wex eleq1 3syl alimi syl
-      wind wa bi2 ax-io biimpi ax-ia1 mpbidi exim 0ex isseti pm2.27 ax-mp bj-ex
-      simprd eqid suceq eqeq2d rspcev mpan2 bj-sucex eqeq1 rexbidv imbi12d spcv
-      vex syl2im ralrimiv df-bj-ind sylanbrc ) AEZCFZVJGHZVJBEZIZHZBCJZKZLZAMZG
-      CFZDEZIZCFZDCNCUAVSVLVTOZAMVLAPZVTAPZOZVTVRWDAVRVQVKOZVLVKOZVPVKOZUBZWDVK
-      VQUCZWHWKVLVKVPUDUEZVLVKVTWKWIWJUFVJGCQUGRSVLVTAUHWGWFVTWEWGWFOAGUIUJWEWF
-      UKULVTAUMTRVSWCDCVSWJAMWACFZWBVNHZBCJZWCVRWJAVRWHWJWLWHWIWJWMUNTSWNWBWBHZ
-      WPWBUOWOWQBWACVMWAHVNWBWBVMWAUPUQURUSWJWPWCOAWBWADVEUTVJWBHZVPWPVKWCWRVOW
-      OBCVJWBVNVAVBVJWBCQVCVDVFVGDCVHVI $.
+      wind wa bi2 ax-io biimpi simpl mpbidi exim 0ex isseti pm2.27 ax-mp simprd
+      bj-ex suceq eqeq2d rspcev mpan2 vex bj-sucex eqeq1 rexbidv imbi12d syl2im
+      eqid spcv ralrimiv df-bj-ind sylanbrc ) AEZCFZVJGHZVJBEZIZHZBCJZKZLZAMZGC
+      FZDEZIZCFZDCNCUAVSVLVTOZAMVLAPZVTAPZOZVTVRWDAVRVQVKOZVLVKOZVPVKOZUBZWDVKV
+      QUCZWHWKVLVKVPUDUEZVLVKVTWKWIWJUFVJGCQUGRSVLVTAUHWGWFVTWEWGWFOAGUIUJWEWFU
+      KULVTAUNTRVSWCDCVSWJAMWACFZWBVNHZBCJZWCVRWJAVRWHWJWLWHWIWJWMUMTSWNWBWBHZW
+      PWBVEWOWQBWACVMWAHVNWBWBVMWAUOUPUQURWJWPWCOAWBWADUSUTVJWBHZVPWPVKWCWRVOWO
+      BCVJWBVNVAVBVJWBCQVCVFVDVGDCVHVI $.
   $}
 
   ${
