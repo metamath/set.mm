@@ -459,7 +459,7 @@
 "ablocom" is used by "ablo32".
 "ablocom" is used by "ablodiv32".
 "ablocom" is used by "ablomuldiv".
-"ablocom" is used by "ghablo".
+"ablocom" is used by "ghabloOLD".
 "ablocom" is used by "gxdi".
 "ablocom" is used by "iscringd".
 "ablocom" is used by "nvcom".
@@ -487,7 +487,7 @@
 "ablogrpo" is used by "cnnvba".
 "ablogrpo" is used by "cnrngo".
 "ablogrpo" is used by "efghgrpOLD".
-"ablogrpo" is used by "ghablo".
+"ablogrpo" is used by "ghabloOLD".
 "ablogrpo" is used by "gxdi".
 "ablogrpo" is used by "hhba".
 "ablogrpo" is used by "hhnv".
@@ -4573,11 +4573,11 @@
 "df-gcdOLD" is used by "ee7.2aOLD".
 "df-gdiv" is used by "grpodivfval".
 "df-gdiv" is used by "vsfval".
-"df-ghom" is used by "elghomlem1".
+"df-ghomOLD" is used by "elghomlem1OLD".
 "df-gid" is used by "fngid".
 "df-gid" is used by "gidval".
 "df-ginv" is used by "grpoinvfval".
-"df-giso" is used by "elgiso".
+"df-gisoOLD" is used by "elgiso".
 "df-grpo" is used by "isgrpo".
 "df-gt" is used by "gt-lt".
 "df-gt" is used by "gt-lth".
@@ -5780,18 +5780,18 @@
 "eleigveccl" is used by "eighmorth".
 "eleigveccl" is used by "eighmre".
 "eleigveccl" is used by "eigvalcl".
-"elghom" is used by "ghomco".
-"elghom" is used by "ghomf".
-"elghom" is used by "ghomfo".
-"elghom" is used by "ghomgrpilem1".
-"elghom" is used by "ghomgrpilem2".
-"elghom" is used by "ghomgsg".
-"elghom" is used by "ghomid".
-"elghom" is used by "ghomlin".
-"elghom" is used by "ghomsn".
-"elghom" is used by "rngogrphom".
-"elghomlem1" is used by "elghomlem2".
-"elghomlem2" is used by "elghom".
+"elghomOLD" is used by "ghomco".
+"elghomOLD" is used by "ghomf".
+"elghomOLD" is used by "ghomfo".
+"elghomOLD" is used by "ghomgrpilem1".
+"elghomOLD" is used by "ghomgrpilem2".
+"elghomOLD" is used by "ghomgsg".
+"elghomOLD" is used by "ghomidOLD".
+"elghomOLD" is used by "ghomlinOLD".
+"elghomOLD" is used by "ghomsn".
+"elghomOLD" is used by "rngogrphom".
+"elghomlem1OLD" is used by "elghomlem2OLD".
+"elghomlem2OLD" is used by "elghomOLD".
 "elhmop" is used by "0hmop".
 "elhmop" is used by "hmop".
 "elhmop" is used by "hmopadj2".
@@ -6151,22 +6151,22 @@
 "genpv" is used by "plpv".
 "ggen31" is used by "gen31".
 "ggen31" is used by "onfrALTlem2".
-"ghablo" is used by "ghsubgolem".
-"ghgrp" is used by "ghablo".
-"ghgrp" is used by "ghsubgolem".
-"ghgrplem1" is used by "ghablo".
-"ghgrplem1" is used by "ghgrp".
-"ghgrplem2" is used by "ghablo".
-"ghgrplem2" is used by "ghgrp".
-"ghomid" is used by "ghomf1olem".
-"ghomid" is used by "grpokerinj".
-"ghomid" is used by "rngohom0".
-"ghomlin" is used by "ghomdiv".
-"ghomlin" is used by "ghomf1olem".
-"ghomlin" is used by "ghomid".
+"ghabloOLD" is used by "ghsubgolemOLD".
+"ghgrpOLD" is used by "ghabloOLD".
+"ghgrpOLD" is used by "ghsubgolemOLD".
+"ghgrplem1OLD" is used by "ghabloOLD".
+"ghgrplem1OLD" is used by "ghgrpOLD".
+"ghgrplem2OLD" is used by "ghabloOLD".
+"ghgrplem2OLD" is used by "ghgrpOLD".
+"ghomidOLD" is used by "ghomf1olem".
+"ghomidOLD" is used by "grpokerinj".
+"ghomidOLD" is used by "rngohom0".
+"ghomlinOLD" is used by "ghomdiv".
+"ghomlinOLD" is used by "ghomf1olem".
+"ghomlinOLD" is used by "ghomidOLD".
 "ghsubabloOLD" is used by "efghgrpOLD".
-"ghsubgolem" is used by "ghsubabloOLD".
-"ghsubgolem" is used by "ghsubgo".
+"ghsubgolemOLD" is used by "ghsubabloOLD".
+"ghsubgolemOLD" is used by "ghsubgoOLD".
 "gidsn" is used by "zrdivrng".
 "gidval" is used by "exidresid".
 "gidval" is used by "grpoidval".
@@ -6194,7 +6194,7 @@
 "grpo2inv" is used by "nvnegneg".
 "grpoass" is used by "ablo32".
 "grpoass" is used by "ablo4".
-"grpoass" is used by "ghgrp".
+"grpoass" is used by "ghgrpOLD".
 "grpoass" is used by "grpo2grp".
 "grpoass" is used by "grpoasscan1".
 "grpoass" is used by "grpoasscan2".
@@ -6216,7 +6216,7 @@
 "grpoass" is used by "rngoaass".
 "grpoass" is used by "vcaass".
 "grpoass" is used by "vcm".
-"grpoasscan1" is used by "ghgrp".
+"grpoasscan1" is used by "ghgrpOLD".
 "grpoasscan1" is used by "gxcom".
 "grpoasscan1" is used by "gxsuc".
 "grpoasscan2" is used by "gxadd".
@@ -6224,12 +6224,12 @@
 "grpocl" is used by "ablo4".
 "grpocl" is used by "ablo4pnp".
 "grpocl" is used by "divrngcl".
-"grpocl" is used by "ghgrp".
+"grpocl" is used by "ghgrpOLD".
 "grpocl" is used by "ghomco".
 "grpocl" is used by "ghomf1olem".
 "grpocl" is used by "ghomgrpilem2".
 "grpocl" is used by "ghomsn".
-"grpocl" is used by "ghsubgolem".
+"grpocl" is used by "ghsubgolemOLD".
 "grpocl" is used by "grpo2grp".
 "grpocl" is used by "grpodivf".
 "grpocl" is used by "grpoidinvlem2".
@@ -6250,7 +6250,7 @@
 "grpodivcl" is used by "ablonnncan".
 "grpodivcl" is used by "ablonnncan1".
 "grpodivcl" is used by "dmncan1".
-"grpodivcl" is used by "ghgrp".
+"grpodivcl" is used by "ghgrpOLD".
 "grpodivcl" is used by "ghomdiv".
 "grpodivcl" is used by "grpodivdiv".
 "grpodivcl" is used by "grpodiveq".
@@ -6289,13 +6289,13 @@
 "grpofo" is used by "subgores".
 "grpofo" is used by "vcoprnelem".
 "grpoid" is used by "ghomgrpilem2".
-"grpoid" is used by "ghomid".
+"grpoid" is used by "ghomidOLD".
 "grpoid" is used by "hhssnv".
 "grpoid" is used by "subgoid".
-"grpoidcl" is used by "ghgrp".
+"grpoidcl" is used by "ghgrpOLD".
 "grpoidcl" is used by "ghomf1olem".
 "grpoidcl" is used by "ghomgrpilem2".
-"grpoidcl" is used by "ghomid".
+"grpoidcl" is used by "ghomidOLD".
 "grpoidcl" is used by "gidsn".
 "grpoidcl" is used by "grpo2grp".
 "grpoidcl" is used by "grpoid".
@@ -6339,7 +6339,7 @@
 "grpoinv" is used by "grpolinv".
 "grpoinv" is used by "grporinv".
 "grpoinvcl" is used by "ablodivdiv4".
-"grpoinvcl" is used by "ghgrp".
+"grpoinvcl" is used by "ghgrpOLD".
 "grpoinvcl" is used by "ghomf1olem".
 "grpoinvcl" is used by "ghomgrpilem2".
 "grpoinvcl" is used by "grpo2grp".
@@ -6400,7 +6400,7 @@
 "grpolcan" is used by "vclcan".
 "grpolid" is used by "ablonncan".
 "grpolid" is used by "ghomgrpilem2".
-"grpolid" is used by "ghomid".
+"grpolid" is used by "ghomidOLD".
 "grpolid" is used by "grpo2grp".
 "grpolid" is used by "grpoasscan1".
 "grpolid" is used by "grpoeqdivid".
@@ -6449,7 +6449,7 @@
 "grpon0" is used by "vcoprnelem".
 "grponnncan2" is used by "nvnnncan2".
 "grponpcan" is used by "ablonnncan".
-"grponpcan" is used by "ghgrp".
+"grponpcan" is used by "ghgrpOLD".
 "grponpcan" is used by "ghomdiv".
 "grponpcan" is used by "grpodiveq".
 "grponpcan" is used by "grpoeqdivid".
@@ -8784,7 +8784,7 @@
 "ipz" is used by "ip2eqi".
 "isablo" is used by "ablocom".
 "isablo" is used by "ablogrpo".
-"isablo" is used by "ghablo".
+"isablo" is used by "ghabloOLD".
 "isablo" is used by "isabloda".
 "isablo" is used by "isabloi".
 "isablo" is used by "subgoablo".
@@ -8831,7 +8831,7 @@
 "isexid" is used by "opidonOLD".
 "isexid2" is used by "exidu1".
 "isfusgraclALT" is used by "fusgraimpclALT".
-"isgrp2d" is used by "ghgrp".
+"isgrp2d" is used by "ghgrpOLD".
 "isgrp2d" is used by "isgrp2i".
 "isgrpda" is used by "isabloda".
 "isgrpda" is used by "isdrngo2".
@@ -8943,7 +8943,7 @@
 "isst" is used by "strlem3a".
 "issubgo" is used by "ghomfo".
 "issubgo" is used by "ghomgsg".
-"issubgo" is used by "ghsubgolem".
+"issubgo" is used by "ghsubgolemOLD".
 "issubgo" is used by "hhssabloi".
 "issubgo" is used by "issubgoi".
 "issubgo" is used by "subgoablo".
@@ -12133,11 +12133,11 @@
 "relrngo" is used by "rngoi".
 "relrngo" is used by "rngosn3".
 "resgrprn" is used by "efghgrpOLD".
-"resgrprn" is used by "ghablo".
+"resgrprn" is used by "ghabloOLD".
 "retbwax2" is used by "merco1lem2".
 "retbwax2" is used by "merco1lem3".
 "retbwax2" is used by "retbwax3".
-"rexsnsOLD" is used by "r19.12sn".
+"rexsnsOLD" is used by "r19.12snOLD".
 "riesz1" is used by "rnbra".
 "riesz3i" is used by "riesz1".
 "riesz3i" is used by "riesz4i".
@@ -13044,13 +13044,13 @@
 "subgoablo" is used by "efghgrpOLD".
 "subgoid" is used by "subgoinv".
 "subgoov" is used by "ghomgsg".
-"subgoov" is used by "ghsubgolem".
+"subgoov" is used by "ghsubgolemOLD".
 "subgoov" is used by "subgoablo".
 "subgoov" is used by "subgoid".
 "subgoov" is used by "subgoinv".
 "subgores" is used by "subgoov".
 "subgores" is used by "subgornss".
-"subgornss" is used by "ghsubgolem".
+"subgornss" is used by "ghsubgolemOLD".
 "subgornss" is used by "subgoablo".
 "subgornss" is used by "subgoid".
 "subgornss" is used by "subgoinv".
@@ -15169,10 +15169,10 @@ New usage of "df-exid" is discouraged (1 uses).
 New usage of "df-fld" is discouraged (3 uses).
 New usage of "df-gcdOLD" is discouraged (1 uses).
 New usage of "df-gdiv" is discouraged (2 uses).
-New usage of "df-ghom" is discouraged (1 uses).
+New usage of "df-ghomOLD" is discouraged (1 uses).
 New usage of "df-gid" is discouraged (2 uses).
 New usage of "df-ginv" is discouraged (1 uses).
-New usage of "df-giso" is discouraged (1 uses).
+New usage of "df-gisoOLD" is discouraged (1 uses).
 New usage of "df-grpo" is discouraged (1 uses).
 New usage of "df-gt" is discouraged (2 uses).
 New usage of "df-gte" is discouraged (2 uses).
@@ -15689,9 +15689,9 @@ New usage of "eleq2dALT" is discouraged (0 uses).
 New usage of "eleq2dOLD" is discouraged (0 uses).
 New usage of "elex22VD" is discouraged (0 uses).
 New usage of "elex2VD" is discouraged (0 uses).
-New usage of "elghom" is discouraged (10 uses).
-New usage of "elghomlem1" is discouraged (1 uses).
-New usage of "elghomlem2" is discouraged (1 uses).
+New usage of "elghomOLD" is discouraged (10 uses).
+New usage of "elghomlem1OLD" is discouraged (1 uses).
+New usage of "elghomlem2OLD" is discouraged (1 uses).
 New usage of "elhmop" is discouraged (10 uses).
 New usage of "eliminable1" is discouraged (0 uses).
 New usage of "eliminable2a" is discouraged (0 uses).
@@ -15881,15 +15881,15 @@ New usage of "genpss" is discouraged (1 uses).
 New usage of "genpv" is discouraged (3 uses).
 New usage of "ggen22" is discouraged (0 uses).
 New usage of "ggen31" is discouraged (2 uses).
-New usage of "ghablo" is discouraged (1 uses).
-New usage of "ghgrp" is discouraged (2 uses).
-New usage of "ghgrplem1" is discouraged (2 uses).
-New usage of "ghgrplem2" is discouraged (2 uses).
-New usage of "ghomid" is discouraged (3 uses).
-New usage of "ghomlin" is discouraged (3 uses).
+New usage of "ghabloOLD" is discouraged (1 uses).
+New usage of "ghgrpOLD" is discouraged (2 uses).
+New usage of "ghgrplem1OLD" is discouraged (2 uses).
+New usage of "ghgrplem2OLD" is discouraged (2 uses).
+New usage of "ghomidOLD" is discouraged (3 uses).
+New usage of "ghomlinOLD" is discouraged (3 uses).
 New usage of "ghsubabloOLD" is discouraged (1 uses).
-New usage of "ghsubgo" is discouraged (0 uses).
-New usage of "ghsubgolem" is discouraged (2 uses).
+New usage of "ghsubgoOLD" is discouraged (0 uses).
+New usage of "ghsubgolemOLD" is discouraged (2 uses).
 New usage of "gidsn" is discouraged (1 uses).
 New usage of "gidval" is discouraged (3 uses).
 New usage of "ginvsn" is discouraged (0 uses).
@@ -17791,6 +17791,7 @@ New usage of "qlaxr3i" is discouraged (0 uses).
 New usage of "qlaxr4i" is discouraged (0 uses).
 New usage of "qlaxr5i" is discouraged (0 uses).
 New usage of "quoremnn0ALT" is discouraged (0 uses).
+New usage of "r19.12snOLD" is discouraged (0 uses).
 New usage of "r19.21biOLD" is discouraged (0 uses).
 New usage of "r19.21tOLD" is discouraged (0 uses).
 New usage of "r19.21vOLD" is discouraged (0 uses).
@@ -18692,7 +18693,6 @@ Proof modification of "bj-abtru" is discouraged (29 steps).
 Proof modification of "bj-aecomsv" is discouraged (16 steps).
 Proof modification of "bj-aev" is discouraged (39 steps).
 Proof modification of "bj-aevlem1v" is discouraged (42 steps).
-Proof modification of "bj-ala1" is discouraged (9 steps).
 Proof modification of "bj-ax12v" is discouraged (35 steps).
 Proof modification of "bj-ax16gb" is discouraged (18 steps).
 Proof modification of "bj-ax16nf" is discouraged (31 steps).
