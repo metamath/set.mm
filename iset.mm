@@ -76625,10 +76625,10 @@ $)
        2-Aug-2004.)  (Revised by Mario Carneiro, 15-Sep-2014.) $)
     qnegcl $p |- ( A e. QQ -> -u A e. QQ ) $=
       ( vx vy cq wcel cv cdiv co wceq cn wrex cz cneg elq wa cc zcn adantr nncn
-      adantl cc0 wne nnne0 divnegd znegcl sylan eqeltrd negeq eleq1d syl5ibrcom
-      znq rexlimivv sylbi ) ADEABFZCFZGHZIZCJKBLKAMZDEZBCANUQUSBCLJUNLEZUOJEZOZ
-      USUQUPMZDEVBVCUNMZUOGHZDVBUNUOUTUNPEVAUNQRVAUOPEUTUOSTVAUOUAUBUTUOUCTUDUT
-      VDLEVAVEDEUNUEVDUOUKUFUGUQURVCDAUPUHUIUJULUM $.
+      adantl cc0 cap wbr nnap0 divnegapd znegcl sylan eqeltrd eleq1d syl5ibrcom
+      znq negeq rexlimivv sylbi ) ADEABFZCFZGHZIZCJKBLKAMZDEZBCANURUTBCLJUOLEZU
+      PJEZOZUTURUQMZDEVCVDUOMZUPGHZDVCUOUPVAUOPEVBUOQRVBUPPEVAUPSTVBUPUAUBUCVAU
+      PUDTUEVAVELEVBVFDEUOUFVEUPUKUGUHURUSVDDAUQULUIUJUMUN $.
 
     $( Closure of multiplication of rationals.  (Contributed by NM,
        1-Aug-2004.) $)
