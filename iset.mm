@@ -76710,9 +76710,11 @@ $)
     $d x y z w A $.
     $( Closure of division of rationals.  (Contributed by NM, 3-Aug-2004.) $)
     qdivcl $p |- ( ( A e. QQ /\ B e. QQ /\ B =/= 0 ) -> ( A / B ) e. QQ ) $=
-      ( cq wcel cc0 wne w3a cdiv co c1 cmul cc wceq qcn id divrec syl3an qreccl
-      wa qmulcl sylan2 3impb eqeltrd ) ACDZBCDZBEFZGABHIZAJBHIZKIZCUDALDUEBLDUF
-      UFUGUIMANBNUFOABPQUDUEUFUICDZUEUFSUDUHCDUJBRAUHTUAUBUC $.
+      ( cq wcel cc0 wne w3a cdiv co c1 cmul qcn 3ad2ant1 3ad2ant2 cap wbr simp3
+      cc wb cz 0z zq ax-mp qapne mpan2 mpbird divrecapd wa qreccl qmulcl sylan2
+      3impb eqeltrd ) ACDZBCDZBEFZGZABHIAJBHIZKIZCUQABUNUOARDUPALMUOUNBRDUPBLNU
+      QBEOPZUPUNUOUPQUOUNUTUPSZUPUOECDZVAETDVBUAEUBUCBEUDUENUFUGUNUOUPUSCDZUOUP
+      UHUNURCDVCBUIAURUJUKULUM $.
   $}
 
   $( Reverse closure law for addition of rationals.  (Contributed by NM,
