@@ -76743,17 +76743,22 @@ $)
     VEVHVAUSBRIZDFZVEURVAVJPVDVAURVJUSBQSUAVHVIADVDATFBTFVIAUBURAUKBUCABUDUEUFU
     GUHULUIUJUMUNUSCDKUO $.
 
-  $( The product of an irrational with a nonzero rational is irrational.
-     (Contributed by NM, 7-Nov-2008.) $)
+  $( The product of a real which is not rational with a nonzero rational is not
+     rational.  Note that by "not rational" we mean the negation of "is
+     rational" (whereas "irrational" is often defined to mean apart from any
+     rational number - given excluded middle these two definitions would be
+     equivalent).  (Contributed by NM, 7-Nov-2008.) $)
   irrmul $p |- ( ( A e. ( RR \ QQ ) /\ B e. QQ /\ B =/= 0 )
                 -> ( A x. B ) e. ( RR \ QQ ) ) $=
-    ( cr cq cdif wcel cc0 wne w3a co wn wa eldif qre remulcl sylan2 wi 3expb cc
-    cmul ad2ant2r cdiv qdivcl expcom adantl wceq divcan4 syl3an1 syl3an2 eleq1d
-    qcn recn sylibd con3d ex com23 imp31 jca 3impb syl3an1b sylibr ) ACDEZFZBDF
-    ZBGHZIABTJZCFZVFDFZKZLZVFVBFVCACFZADFZKZLZVDVEVJACDMVNVDVEVJVNVDVELZLVGVIVK
-    VDVGVMVEVDVKBCFVGBNABOPUAVKVMVOVIVKVOVMVIVKVOVMVIQVKVOLZVHVLVPVHVFBUBJZDFZV
-    LVOVHVRQVKVHVOVRVHVDVEVRVFBUCRUDUEVPVQADVKVDVEVQAUFZVDVKBSFZVEVSBUKVKASFVTV
-    EVSAULABUGUHUIRUJUMUNUOUPUQURUSUTVFCDMVA $.
+    ( cr cq cdif wcel cc0 wne w3a cmul co wn wa eldif remulcl wi 3expb 3ad2ant2
+    qre cc sylan2 ad2ant2r cdiv qdivcl expcom adantl wceq recn 3ad2ant1 qcn cap
+    simp3 wb cz 0z zq ax-mp qapne mpan2 mpbird divcanap4d eleq1d con3d ex com23
+    wbr sylibd imp31 jca 3impb syl3an1b sylibr ) ACDEZFZBDFZBGHZIABJKZCFZVQDFZL
+    ZMZVQVMFVNACFZADFZLZMZVOVPWAACDNWEVOVPWAWEVOVPMZMVRVTWBVOVRWDVPVOWBBCFVRBSA
+    BOUAUBWBWDWFVTWBWFWDVTWBWFWDVTPWBWFMZVSWCWGVSVQBUCKZDFZWCWFVSWIPWBVSWFWIVSV
+    OVPWIVQBUDQUEUFWGWHADWBVOVPWHAUGWBVOVPIZABWBVOATFVPAUHUIVOWBBTFVPBUJRWJBGUK
+    VFZVPWBVOVPULVOWBWKVPUMZVPVOGDFZWLGUNFWMUOGUPUQBGURUSRUTVAQVBVGVCVDVEVHVIVJ
+    VKVQCDNVL $.
 
 $(
 ###############################################################################
