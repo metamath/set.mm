@@ -67,6 +67,7 @@
 "axltirr" is used by "ltnr".
 "axlttrn" is used by "lttr".
 "axresscn" is used by "ax1cn".
+"df-div" is used by "divfnzn".
 "df-div" is used by "divvalap".
 "df-ilim" is used by "dflim2".
 "df-inn" is used by "dfnn2".
@@ -243,7 +244,7 @@ New usage of "bdsepnfALT" is discouraged (0 uses).
 New usage of "bj-nn0sucALT" is discouraged (0 uses).
 New usage of "bj-omex2" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
-New usage of "df-div" is discouraged (1 uses).
+New usage of "df-div" is discouraged (2 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
