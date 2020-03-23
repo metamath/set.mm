@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Mar-2020
+$( iset.mm - Version of 23-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -69579,6 +69579,13 @@ $)
       ( A # B <-> ( A < B \/ B < A ) ) ) $=
     ( cr wcel wa cap wbr creap clt wo apreap reapval bitrd ) ACDBCDEABFGABHGABI
     GBAIGJABKABLM $.
+
+  $( Real apartness in terms of less than (exclusive-or version).  (Contributed
+     by Jim Kingdon, 23-Mar-2020.) $)
+  reapltxor $p |- ( ( A e. RR /\ B e. RR ) ->
+      ( A # B <-> ( A < B \/_ B < A ) ) ) $=
+    ( cr wcel wa cap wbr clt wo reaplt wn ltnsym2 biantrud df-xor syl6bbr bitrd
+    wxo ) ACDBCDEZABFGABHGZBAHGZIZSTQZABJRUAUASTEKZEUBRUCUAABLMSTNOP $.
 
   $( One is apart from zero.  (Contributed by Jim Kingdon, 24-Feb-2020.) $)
   1ap0 $p |- 1 # 0 $=
