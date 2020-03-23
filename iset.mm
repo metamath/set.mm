@@ -76940,8 +76940,8 @@ $)
   $( Closure law for division of a real by a positive real.  (Contributed by
      NM, 10-Nov-2008.) $)
   rerpdivcl $p |- ( ( A e. RR /\ B e. RR+ ) -> ( A / B ) e. RR ) $=
-    ( crp wcel cr cc0 wne wa cdiv co rprene0 redivcl 3expb sylan2 ) BCDAEDZBEDZ
-    BFGZHABIJEDZBKOPQRABLMN $.
+    ( crp wcel cr cc0 cap wbr wa cdiv co rpreap0 redivclap 3expb sylan2 ) BCDAE
+    DZBEDZBFGHZIABJKEDZBLPQRSABMNO $.
 
   $( A nonnegative number plus one is a positive number.  (Contributed by Mario
      Carneiro, 5-Oct-2015.) $)
