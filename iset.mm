@@ -76761,6 +76761,634 @@ $)
     VKVQCDNVL $.
 
 $(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+           Order sets
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Positive reals (as a subset of complex numbers)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c RR+ $. $( The set of positive reals (blackboard bold R^+). $)
+
+  $( Extend class notation to include the class of positive reals. $)
+  crp $a class RR+ $.
+
+  $( Define the set of positive reals.  Definition of positive numbers in
+     [Apostol] p. 20.  (Contributed by NM, 27-Oct-2007.) $)
+  df-rp $a |- RR+ = { x e. RR | 0 < x } $.
+
+  ${
+    $d x A $.
+    $( Membership in the set of positive reals.  (Contributed by NM,
+       27-Oct-2007.) $)
+    elrp $p |- ( A e. RR+ <-> ( A e. RR /\ 0 < A ) ) $=
+      ( vx cc0 cv clt wbr cr crp breq2 df-rp elrab2 ) CBDZEFCAEFBAGHLACEIBJK $.
+  $}
+
+  ${
+    elrpi.1 $e |- A e. RR $.
+    elrpi.2 $e |- 0 < A $.
+    $( Membership in the set of positive reals.  (Contributed by NM,
+       23-Feb-2008.) $)
+    elrpii $p |- A e. RR+ $=
+      ( crp wcel cr cc0 clt wbr elrp mpbir2an ) ADEAFEGAHIBCAJK $.
+  $}
+
+  $( 1 is a positive real.  (Contributed by Jeff Hankins, 23-Nov-2008.) $)
+  1rp $p |- 1 e. RR+ $=
+    ( c1 1re 0lt1 elrpii ) ABCD $.
+
+  $( 2 is a positive real.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+  2rp $p |- 2 e. RR+ $=
+    ( c2 2re 2pos elrpii ) ABCD $.
+
+  $( A positive real is a real.  (Contributed by NM, 27-Oct-2007.) $)
+  rpre $p |- ( A e. RR+ -> A e. RR ) $=
+    ( vx crp cr cc0 cv clt wbr crab df-rp ssrab2 eqsstri sseli ) CDACEBFGHZBDID
+    BJNBDKLM $.
+
+  $( A positive real is an extended real.  (Contributed by Mario Carneiro,
+     21-Aug-2015.) $)
+  rpxr $p |- ( A e. RR+ -> A e. RR* ) $=
+    ( crp wcel rpre rexrd ) ABCAADE $.
+
+  $( A positive real is a complex number.  (Contributed by NM, 11-Nov-2008.) $)
+  rpcn $p |- ( A e. RR+ -> A e. CC ) $=
+    ( crp wcel rpre recnd ) ABCAADE $.
+
+  $( A positive integer is a positive real.  (Contributed by NM,
+     28-Nov-2008.) $)
+  nnrp $p |- ( A e. NN -> A e. RR+ ) $=
+    ( cn wcel cr cc0 clt wbr crp nnre nngt0 elrp sylanbrc ) ABCADCEAFGAHCAIAJAK
+    L $.
+
+  $( The positive reals are a subset of the reals.  (Contributed by NM,
+     24-Feb-2008.) $)
+  rpssre $p |- RR+ C_ RR $=
+    ( vx crp cr cv rpre ssriv ) ABCADEF $.
+
+  $( A positive real is greater than zero.  (Contributed by FL,
+     27-Dec-2007.) $)
+  rpgt0 $p |- ( A e. RR+ -> 0 < A ) $=
+    ( crp wcel cr cc0 clt wbr elrp simprbi ) ABCADCEAFGAHI $.
+
+  $( A positive real is greater than or equal to zero.  (Contributed by NM,
+     22-Feb-2008.) $)
+  rpge0 $p |- ( A e. RR+ -> 0 <_ A ) $=
+    ( crp wcel cr cc0 clt wbr cle rpre rpgt0 wi 0re ltle mpan sylc ) ABCADCZEAF
+    GZEAHGZAIAJEDCPQRKLEAMNO $.
+
+  $( A positive real is a positive real number.  (Contributed by NM,
+     11-Nov-2008.)  (Revised by Mario Carneiro, 31-Jan-2014.) $)
+  rpregt0 $p |- ( A e. RR+ -> ( A e. RR /\ 0 < A ) ) $=
+    ( crp wcel cr cc0 clt wbr wa elrp biimpi ) ABCADCEAFGHAIJ $.
+
+  $( A positive real is a nonnegative real number.  (Contributed by Mario
+     Carneiro, 31-Jan-2014.) $)
+  rprege0 $p |- ( A e. RR+ -> ( A e. RR /\ 0 <_ A ) ) $=
+    ( crp wcel cr cc0 cle wbr rpre rpge0 jca ) ABCADCEAFGAHAIJ $.
+
+  $( A positive real is nonzero.  (Contributed by NM, 18-Jul-2008.) $)
+  rpne0 $p |- ( A e. RR+ -> A =/= 0 ) $=
+    ( crp wcel cr cc0 clt wbr wa wne rpregt0 gt0ne0 syl ) ABCADCEAFGHAEIAJAKL
+    $.
+
+  $( A positive real is a nonzero real number.  (Contributed by NM,
+     11-Nov-2008.) $)
+  rprene0 $p |- ( A e. RR+ -> ( A e. RR /\ A =/= 0 ) ) $=
+    ( crp wcel cr cc0 wne rpre rpne0 jca ) ABCADCAEFAGAHI $.
+
+  $( A positive real is a nonzero complex number.  (Contributed by NM,
+     11-Nov-2008.) $)
+  rpcnne0 $p |- ( A e. RR+ -> ( A e. CC /\ A =/= 0 ) ) $=
+    ( crp wcel cc cc0 wne rpcn rpne0 jca ) ABCADCAEFAGAHI $.
+
+  $( Quantification over positive reals.  (Contributed by NM, 12-Feb-2008.) $)
+  ralrp $p |- ( A. x e. RR+ ph <-> A. x e. RR ( 0 < x -> ph ) ) $=
+    ( cc0 cv clt wbr wi crp cr wcel wa elrp imbi1i impexp bitri ralbii2 ) ACBDZ
+    EFZAGZBHIQHJZAGQIJZRKZAGUASGTUBAQLMUARANOP $.
+
+  $( Quantification over positive reals.  (Contributed by Mario Carneiro,
+     21-May-2014.) $)
+  rexrp $p |- ( E. x e. RR+ ph <-> E. x e. RR ( 0 < x /\ ph ) ) $=
+    ( cc0 cv clt wbr wa crp cr wcel elrp anbi1i anass bitri rexbii2 ) ACBDZEFZA
+    GZBHIPHJZAGPIJZQGZAGTRGSUAAPKLTQAMNO $.
+
+  $( Closure law for addition of positive reals.  Part of Axiom 7 of [Apostol]
+     p. 20.  (Contributed by NM, 27-Oct-2007.) $)
+  rpaddcl $p |- ( ( A e. RR+ /\ B e. RR+ ) -> ( A + B ) e. RR+ ) $=
+    ( crp wcel wa caddc co cr cc0 clt wbr rpre readdcl syl2an elrp an4s syl2anb
+    addgt0 sylanbrc ) ACDZBCDZEABFGZHDZIUBJKZUBCDTAHDZBHDZUCUAALBLABMNTUEIAJKZE
+    UFIBJKZEUDUAAOBOUEUFUGUHUDABRPQUBOS $.
+
+  $( Closure law for multiplication of positive reals.  Part of Axiom 7 of
+     [Apostol] p. 20.  (Contributed by NM, 27-Oct-2007.) $)
+  rpmulcl $p |- ( ( A e. RR+ /\ B e. RR+ ) -> ( A x. B ) e. RR+ ) $=
+    ( crp wcel wa cmul co cc0 clt wbr rpre remulcl syl2an elrp syl2anb sylanbrc
+    cr mulgt0 ) ACDZBCDZEABFGZQDZHUAIJZUACDSAQDZBQDZUBTAKBKABLMSUDHAIJEUEHBIJEU
+    CTANBNABROUANP $.
+
+  $( Closure law for division of positive reals.  (Contributed by FL,
+     27-Dec-2007.) $)
+  rpdivcl $p |- ( ( A e. RR+ /\ B e. RR+ ) -> ( A / B ) e. RR+ ) $=
+    ( crp wcel wa cdiv co cr cc0 clt wbr rpre rprene0 redivcl 3expb syl2an elrp
+    wne divgt0 syl2anb sylanbrc ) ACDZBCDZEABFGZHDZIUDJKZUDCDUBAHDZBHDZBIRZEUEU
+    CALBMUGUHUIUEABNOPUBUGIAJKEUHIBJKEUFUCAQBQABSTUDQUA $.
+
+  $( Closure law for reciprocation of positive reals.  (Contributed by Jeff
+     Hankins, 23-Nov-2008.) $)
+  rpreccl $p |- ( A e. RR+ -> ( 1 / A ) e. RR+ ) $=
+    ( c1 crp wcel cdiv co 1rp rpdivcl mpan ) BCDACDBAEFCDGBAHI $.
+
+  $( Closure law for half of a positive real.  (Contributed by Mario Carneiro,
+     31-Jan-2014.) $)
+  rphalfcl $p |- ( A e. RR+ -> ( A / 2 ) e. RR+ ) $=
+    ( crp wcel c2 cdiv co 2rp rpdivcl mpan2 ) ABCDBCADEFBCGADHI $.
+
+  $( A number greater or equal to a positive real is positive real.
+     (Contributed by Mario Carneiro, 28-May-2016.) $)
+  rpgecl $p |- ( ( A e. RR+ /\ B e. RR /\ A <_ B ) -> B e. RR+ ) $=
+    ( crp wcel cle wbr w3a cc0 clt simp2 0red rpre 3ad2ant1 rpgt0 simp3 ltletrd
+    cr elrp sylanbrc ) ACDZBQDZABEFZGZUAHBIFBCDTUAUBJZUCHABUCKTUAAQDUBALMUDTUAH
+    AIFUBANMTUAUBOPBRS $.
+
+  $( Half of a positive real is less than the original number.  (Contributed by
+     Mario Carneiro, 21-May-2014.) $)
+  rphalflt $p |- ( A e. RR+ -> ( A / 2 ) < A ) $=
+    ( crp wcel cr cc0 clt wbr wa c2 cdiv co elrp halfpos biimpa sylbi ) ABCADCZ
+    EAFGZHAIJKAFGZALPQRAMNO $.
+
+  $( Closure law for division of a real by a positive real.  (Contributed by
+     NM, 10-Nov-2008.) $)
+  rerpdivcl $p |- ( ( A e. RR /\ B e. RR+ ) -> ( A / B ) e. RR ) $=
+    ( crp wcel cr cc0 wne wa cdiv co rprene0 redivcl 3expb sylan2 ) BCDAEDZBEDZ
+    BFGZHABIJEDZBKOPQRABLMN $.
+
+  $( A nonnegative number plus one is a positive number.  (Contributed by Mario
+     Carneiro, 5-Oct-2015.) $)
+  ge0p1rp $p |- ( ( A e. RR /\ 0 <_ A ) -> ( A + 1 ) e. RR+ ) $=
+    ( cr wcel cc0 cle wbr wa c1 caddc co clt crp peano2re 0red simpl simpr ltp1
+    adantr lelttrd elrp sylanbrc ) ABCZDAEFZGZAHIJZBCZDUEKFUELCUBUFUCAMRZUDDAUE
+    UDNUBUCOUGUBUCPUBAUEKFUCAQRSUETUA $.
+
+  $( Either a nonzero real or its negation is a positive real, but not both.
+     Axiom 8 of [Apostol] p. 20.  (Contributed by NM, 7-Nov-2008.) $)
+  rpneg $p |- ( ( A e. RR /\ A =/= 0 ) -> ( A e. RR+ <-> -. -u A e. RR+ ) ) $=
+    ( cr wcel cc0 wne wa clt wbr cneg wn crp wo wi 0re mpan imp adantr wb bitrd
+    elrp cle ltle olcd renegcl pm2.24d ltlen biimprd expcomd jaod simpl impbid2
+    jctild lenlt lt0neg1 notbid orbi2d ianor syl6bbr notbii 3bitr4g ) ABCZADEZF
+    ZVADAGHZFZAIZBCZDVFGHZFZJZAKCVFKCZJVCVEVGJZVHJZLZVJVCVEVLDAUAHZLZVNVCVEVPVE
+    VOVLVAVDVODBCZVAVDVOMNDAUBOPUCVCVPVDVAVCVLVDVOVAVLVDMVBVAVGVDAUDUEQVAVBVOVD
+    MVAVOVBVDVAVDVOVBFZVQVAVDVRRNDAUFOUGUHPUIVAVBUJULUKVCVOVMVLVAVOVMRVBVAVOADG
+    HZJZVMVQVAVOVTRNDAUMOVAVSVHAUNUOSQUPSVGVHUQURATVKVIVFTUSUT $.
+
+  $( Zero is not a positive real.  Axiom 9 of [Apostol] p. 20.  (Contributed by
+     NM, 27-Oct-2007.) $)
+  0nrp $p |- -. 0 e. RR+ $=
+    ( cc0 crp wcel clt wbr 0re ltnri rpgt0 mto ) ABCAADEAFGAHI $.
+
+  $( Subtracting a positive real from another number decreases it.
+     (Contributed by FL, 27-Dec-2007.) $)
+  ltsubrp $p |- ( ( A e. RR /\ B e. RR+ ) -> ( A - B ) < A ) $=
+    ( crp wcel cr cc0 clt wbr wa cmin co elrp wi ltsubpos biimpd expcom sylan2b
+    imp32 ) BCDAEDZBEDZFBGHZIABJKAGHZBLSTUAUBTSUAUBMTSIUAUBBANOPRQ $.
+
+  $( Adding a positive number to another number increases it.  (Contributed by
+     FL, 27-Dec-2007.) $)
+  ltaddrp $p |- ( ( A e. RR /\ B e. RR+ ) -> A < ( A + B ) ) $=
+    ( crp wcel cr cc0 clt wbr wa caddc co elrp wi ltaddpos biimpd imp32 sylan2b
+    expcom ) BCDAEDZBEDZFBGHZIAABJKGHZBLSTUAUBTSUAUBMTSIUAUBBANORPQ $.
+
+  $( Two ways to say one number is less than another.  (Contributed by Mario
+     Carneiro, 21-May-2014.) $)
+  difrp $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( A < B <-> ( B - A ) e. RR+ ) ) $=
+    ( cr wcel wa clt wbr cc0 cmin co crp posdif wb resubcl ancoms elrp baib syl
+    bitr4d ) ACDZBCDZEZABFGHBAIJZFGZUCKDZABLUBUCCDZUEUDMUATUFBANOUEUFUDUCPQRS
+    $.
+
+  ${
+    elrpd.1 $e |- ( ph -> A e. RR ) $.
+    elrpd.2 $e |- ( ph -> 0 < A ) $.
+    $( Membership in the set of positive reals.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    elrpd $p |- ( ph -> A e. RR+ ) $=
+      ( cr wcel cc0 clt wbr crp elrp sylanbrc ) ABEFGBHIBJFCDBKL $.
+  $}
+
+  ${
+    nnrpd.1 $e |- ( ph -> A e. NN ) $.
+    $( A positive integer is a positive real.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    nnrpd $p |- ( ph -> A e. RR+ ) $=
+      ( cn wcel crp nnrp syl ) ABDEBFECBGH $.
+  $}
+
+  ${
+    rpred.1 $e |- ( ph -> A e. RR+ ) $.
+    $( A positive real is a real.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    rpred $p |- ( ph -> A e. RR ) $=
+      ( crp cr rpssre sseldi ) ADEBFCG $.
+
+    $( A positive real is an extended real.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    rpxrd $p |- ( ph -> A e. RR* ) $=
+      ( rpred rexrd ) ABABCDE $.
+
+    $( A positive real is a complex number.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    rpcnd $p |- ( ph -> A e. CC ) $=
+      ( rpred recnd ) ABABCDE $.
+
+    $( A positive real is greater than zero.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    rpgt0d $p |- ( ph -> 0 < A ) $=
+      ( crp wcel cc0 clt wbr rpgt0 syl ) ABDEFBGHCBIJ $.
+
+    $( A positive real is greater than or equal to zero.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    rpge0d $p |- ( ph -> 0 <_ A ) $=
+      ( crp wcel cc0 cle wbr rpge0 syl ) ABDEFBGHCBIJ $.
+
+    $( A positive real is nonzero.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    rpne0d $p |- ( ph -> A =/= 0 ) $=
+      ( crp wcel cc0 wne rpne0 syl ) ABDEBFGCBHI $.
+
+    $( A positive real is real and greater than zero.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    rpregt0d $p |- ( ph -> ( A e. RR /\ 0 < A ) ) $=
+      ( cr wcel cc0 clt wbr rpred rpgt0d jca ) ABDEFBGHABCIABCJK $.
+
+    $( A positive real is real and greater or equal to zero.  (Contributed by
+       Mario Carneiro, 28-May-2016.) $)
+    rprege0d $p |- ( ph -> ( A e. RR /\ 0 <_ A ) ) $=
+      ( cr wcel cc0 cle wbr rpred rpge0d jca ) ABDEFBGHABCIABCJK $.
+
+    $( A positive real is a nonzero real number.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    rprene0d $p |- ( ph -> ( A e. RR /\ A =/= 0 ) ) $=
+      ( cr wcel cc0 wne rpred rpne0d jca ) ABDEBFGABCHABCIJ $.
+
+    $( A positive real is a nonzero complex number.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    rpcnne0d $p |- ( ph -> ( A e. CC /\ A =/= 0 ) ) $=
+      ( cc wcel cc0 wne rpcnd rpne0d jca ) ABDEBFGABCHABCIJ $.
+
+    $( Closure law for reciprocation of positive reals.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    rpreccld $p |- ( ph -> ( 1 / A ) e. RR+ ) $=
+      ( crp wcel c1 cdiv co rpreccl syl ) ABDEFBGHDECBIJ $.
+
+    $( Closure law for reciprocation of positive reals.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    rprecred $p |- ( ph -> ( 1 / A ) e. RR ) $=
+      ( c1 cdiv co rpreccld rpred ) ADBEFABCGH $.
+
+    $( Closure law for half of a positive real.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    rphalfcld $p |- ( ph -> ( A / 2 ) e. RR+ ) $=
+      ( crp wcel c2 cdiv co rphalfcl syl ) ABDEBFGHDECBIJ $.
+
+    $( The reciprocal of a positive number less than 1 is greater than 1.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    reclt1d $p |- ( ph -> ( A < 1 <-> 1 < ( 1 / A ) ) ) $=
+      ( cr wcel cc0 clt wbr wa c1 cdiv co wb rpregt0d reclt1 syl ) ABDEFBGHIBJG
+      HJJBKLGHMABCNBOP $.
+
+    $( The reciprocal of a positive number greater than 1 is less than 1.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    recgt1d $p |- ( ph -> ( 1 < A <-> ( 1 / A ) < 1 ) ) $=
+      ( cr wcel cc0 clt wbr wa c1 cdiv co wb rpregt0d recgt1 syl ) ABDEFBGHIJBG
+      HJBKLJGHMABCNBOP $.
+
+    rpaddcld.1 $e |- ( ph -> B e. RR+ ) $.
+    $( Closure law for addition of positive reals.  Part of Axiom 7 of
+       [Apostol] p. 20.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+    rpaddcld $p |- ( ph -> ( A + B ) e. RR+ ) $=
+      ( crp wcel caddc co rpaddcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure law for multiplication of positive reals.  Part of Axiom 7 of
+       [Apostol] p. 20.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+    rpmulcld $p |- ( ph -> ( A x. B ) e. RR+ ) $=
+      ( crp wcel cmul co rpmulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure law for division of positive reals.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    rpdivcld $p |- ( ph -> ( A / B ) e. RR+ ) $=
+      ( crp wcel cdiv co rpdivcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( The reciprocal of both sides of 'less than'.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    ltrecd $p |- ( ph -> ( A < B <-> ( 1 / B ) < ( 1 / A ) ) ) $=
+      ( cr wcel cc0 clt wbr wa c1 cdiv co wb rpregt0d ltrec syl2anc ) ABFGHBIJK
+      CFGHCIJKBCIJLCMNLBMNIJOABDPACEPBCQR $.
+
+    $( The reciprocal of both sides of 'less than or equal to'.  (Contributed
+       by Mario Carneiro, 28-May-2016.) $)
+    lerecd $p |- ( ph -> ( A <_ B <-> ( 1 / B ) <_ ( 1 / A ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cle c1 cdiv co wb rpregt0d lerec syl2anc ) ABFGH
+      BIJKCFGHCIJKBCLJMCNOMBNOLJPABDQACEQBCRS $.
+
+    ${
+      ltrec1d.2 $e |- ( ph -> ( 1 / A ) < B ) $.
+      $( Reciprocal swap in a 'less than' relation.  (Contributed by Mario
+         Carneiro, 28-May-2016.) $)
+      ltrec1d $p |- ( ph -> ( 1 / B ) < A ) $=
+        ( c1 cdiv co clt wbr cr wcel cc0 wa wb rpregt0d ltrec1 syl2anc mpbid )
+        AGBHICJKZGCHIBJKZFABLMNBJKOCLMNCJKOUAUBPABDQACEQBCRST $.
+    $}
+
+    ${
+      lerec2d.2 $e |- ( ph -> A <_ ( 1 / B ) ) $.
+      $( Reciprocal swap in a 'less than or equal to' relation.  (Contributed
+         by Mario Carneiro, 28-May-2016.) $)
+      lerec2d $p |- ( ph -> B <_ ( 1 / A ) ) $=
+        ( c1 cdiv co cle wbr cr wcel cc0 clt wa wb rpregt0d lerec2 syl2anc
+        mpbid ) ABGCHIJKZCGBHIJKZFABLMNBOKPCLMNCOKPUBUCQABDRACERBCSTUA $.
+    $}
+
+    ${
+      lediv2ad.3 $e |- ( ph -> C e. RR ) $.
+      lediv2ad.4 $e |- ( ph -> 0 <_ C ) $.
+      lediv2ad.5 $e |- ( ph -> A <_ B ) $.
+      $( Division of both sides of 'less than or equal to' into a nonnegative
+         number.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+      lediv2ad $p |- ( ph -> ( C / B ) <_ ( C / A ) ) $=
+        ( cr wcel cc0 clt wbr wa cle cdiv co rpregt0d jca lediv2a syl31anc ) AB
+        JKLBMNOCJKLCMNODJKZLDPNZOBCPNDCQRDBQRPNABESACFSAUCUDGHTIBCDUAUB $.
+    $}
+
+    ltdiv2d.3 $e |- ( ph -> C e. RR+ ) $.
+    $( Division of a positive number by both sides of 'less than'.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    ltdiv2d $p |- ( ph -> ( A < B <-> ( C / B ) < ( C / A ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cdiv co wb rpregt0d ltdiv2 syl3anc ) ABHIJBKLMCH
+      IJCKLMDHIJDKLMBCKLDCNODBNOKLPABEQACFQADGQBCDRS $.
+
+    $( Division of a positive number by both sides of 'less than or equal to'.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    lediv2d $p |- ( ph -> ( A <_ B <-> ( C / B ) <_ ( C / A ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cle cdiv co wb rpregt0d lediv2 syl3anc ) ABHIJBK
+      LMCHIJCKLMDHIJDKLMBCNLDCOPDBOPNLQABERACFRADGRBCDST $.
+
+    ledivdivd.4 $e |- ( ph -> D e. RR+ ) $.
+    ${
+      ledivdivd.5 $e |- ( ph -> ( A / B ) <_ ( C / D ) ) $.
+      $( Invert ratios of positive numbers and swap their ordering.
+         (Contributed by Mario Carneiro, 28-May-2016.) $)
+      ledivdivd $p |- ( ph -> ( D / C ) <_ ( B / A ) ) $=
+        ( cdiv co cle wbr cr wcel cc0 clt wa rpregt0d ledivdiv syl22anc mpbid
+        wb ) ABCKLDEKLMNZEDKLCBKLMNZJABOPQBRNSCOPQCRNSDOPQDRNSEOPQERNSUEUFUDABF
+        TACGTADHTAEITBCDEUAUBUC $.
+    $}
+  $}
+
+  ${
+    rpgecld.1 $e |- ( ph -> A e. RR ) $.
+    ${
+      ge0p1rp.2 $e |- ( ph -> 0 <_ A ) $.
+      $( A nonnegative number plus one is a positive number.  (Contributed by
+         Mario Carneiro, 28-May-2016.) $)
+      ge0p1rpd $p |- ( ph -> ( A + 1 ) e. RR+ ) $=
+        ( cr wcel cc0 cle wbr c1 caddc co crp ge0p1rp syl2anc ) ABEFGBHIBJKLMFC
+        DBNO $.
+    $}
+
+    rpgecld.2 $e |- ( ph -> B e. RR+ ) $.
+    $( Closure law for division of a real by a positive real.  (Contributed by
+       Mario Carneiro, 28-May-2016.) $)
+    rerpdivcld $p |- ( ph -> ( A / B ) e. RR ) $=
+      ( cr wcel crp cdiv co rerpdivcl syl2anc ) ABFGCHGBCIJFGDEBCKL $.
+
+    $( Subtracting a positive real from another number decreases it.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    ltsubrpd $p |- ( ph -> ( A - B ) < A ) $=
+      ( cr wcel crp cmin co clt wbr ltsubrp syl2anc ) ABFGCHGBCIJBKLDEBCMN $.
+
+    $( Adding a positive number to another number increases it.  (Contributed
+       by Mario Carneiro, 28-May-2016.) $)
+    ltaddrpd $p |- ( ph -> A < ( A + B ) ) $=
+      ( cr wcel crp caddc co clt wbr ltaddrp syl2anc ) ABFGCHGBBCIJKLDEBCMN $.
+
+    $( Adding a positive number to another number increases it.  (Contributed
+       by Mario Carneiro, 28-May-2016.) $)
+    ltaddrp2d $p |- ( ph -> A < ( B + A ) ) $=
+      ( caddc co clt ltaddrpd recnd rpcnd addcomd breqtrd ) ABBCFGCBFGHABCDEIAB
+      CABDJACEKLM $.
+
+    $( Multiplication by a number greater than 1.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    ltmulgt11d $p |- ( ph -> ( 1 < A <-> B < ( B x. A ) ) ) $=
+      ( cr wcel cc0 clt wbr c1 cmul co wb rpred rpgt0d ltmulgt11 syl3anc ) ACFG
+      BFGHCIJKBIJCCBLMIJNACEODACEPCBQR $.
+
+    $( Multiplication by a number greater than 1.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    ltmulgt12d $p |- ( ph -> ( 1 < A <-> B < ( A x. B ) ) ) $=
+      ( cr wcel cc0 clt wbr c1 cmul co wb rpred rpgt0d ltmulgt12 syl3anc ) ACFG
+      BFGHCIJKBIJCBCLMIJNACEODACEPCBQR $.
+
+    $( Division of a positive number by a positive number.  (Contributed by
+       Mario Carneiro, 28-May-2016.) $)
+    gt0divd $p |- ( ph -> ( 0 < A <-> 0 < ( A / B ) ) ) $=
+      ( cr wcel cc0 clt wbr cdiv co wb rpred rpgt0d gt0div syl3anc ) ABFGCFGHCI
+      JHBIJHBCKLIJMDACENACEOBCPQ $.
+
+    $( Division of a nonnegative number by a positive number.  (Contributed by
+       Mario Carneiro, 28-May-2016.) $)
+    ge0divd $p |- ( ph -> ( 0 <_ A <-> 0 <_ ( A / B ) ) ) $=
+      ( cr wcel cc0 clt wbr cle cdiv co wb rpred rpgt0d ge0div syl3anc ) ABFGCF
+      GHCIJHBKJHBCLMKJNDACEOACEPBCQR $.
+
+    ${
+      rpgecld.3 $e |- ( ph -> B <_ A ) $.
+      $( A number greater or equal to a positive real is positive real.
+         (Contributed by Mario Carneiro, 28-May-2016.) $)
+      rpgecld $p |- ( ph -> A e. RR+ ) $=
+        ( crp wcel cr cle wbr rpgecl syl3anc ) ACGHBIHCBJKBGHEDFCBLM $.
+    $}
+
+    divge0d.3 $e |- ( ph -> 0 <_ A ) $.
+    $( The ratio of nonnegative and positive numbers is nonnegative.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    divge0d $p |- ( ph -> 0 <_ ( A / B ) ) $=
+      ( cr wcel cc0 cle wbr clt wa cdiv co rpregt0d divge0 syl21anc ) ABGHIBJKC
+      GHICLKMIBCNOJKDFACEPBCQR $.
+  $}
+
+  ${
+    ltmul1d.1 $e |- ( ph -> A e. RR ) $.
+    ltmul1d.2 $e |- ( ph -> B e. RR ) $.
+    ltmul1d.3 $e |- ( ph -> C e. RR+ ) $.
+    $( The ratio of nonnegative and positive numbers is nonnegative.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    ltmul1d $p |- ( ph -> ( A < B <-> ( A x. C ) < ( B x. C ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cmul co wb rpregt0d ltmul1 syl3anc ) ABHICHIDHIJ
+      DKLMBCKLBDNOCDNOKLPEFADGQBCDRS $.
+
+    $( Multiplication of both sides of 'less than' by a positive number.
+       Theorem I.19 of [Apostol] p. 20.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    ltmul2d $p |- ( ph -> ( A < B <-> ( C x. A ) < ( C x. B ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cmul co wb rpregt0d ltmul2 syl3anc ) ABHICHIDHIJ
+      DKLMBCKLDBNODCNOKLPEFADGQBCDRS $.
+
+    $( Multiplication of both sides of 'less than or equal to' by a positive
+       number.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+    lemul1d $p |- ( ph -> ( A <_ B <-> ( A x. C ) <_ ( B x. C ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cle cmul co wb rpregt0d lemul1 syl3anc ) ABHICHI
+      DHIJDKLMBCNLBDOPCDOPNLQEFADGRBCDST $.
+
+    $( Multiplication of both sides of 'less than or equal to' by a positive
+       number.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+    lemul2d $p |- ( ph -> ( A <_ B <-> ( C x. A ) <_ ( C x. B ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cle cmul co wb rpregt0d lemul2 syl3anc ) ABHICHI
+      DHIJDKLMBCNLDBOPDCOPNLQEFADGRBCDST $.
+
+    $( Division of both sides of 'less than' by a positive number.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    ltdiv1d $p |- ( ph -> ( A < B <-> ( A / C ) < ( B / C ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cdiv co wb rpregt0d ltdiv1 syl3anc ) ABHICHIDHIJ
+      DKLMBCKLBDNOCDNOKLPEFADGQBCDRS $.
+
+    $( Division of both sides of a less than or equal to relation by a positive
+       number.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+    lediv1d $p |- ( ph -> ( A <_ B <-> ( A / C ) <_ ( B / C ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cle cdiv co wb rpregt0d lediv1 syl3anc ) ABHICHI
+      DHIJDKLMBCNLBDOPCDOPNLQEFADGRBCDST $.
+
+    $( 'Less than' relationship between division and multiplication.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    ltmuldivd $p |- ( ph -> ( ( A x. C ) < B <-> A < ( B / C ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cmul co cdiv wb rpregt0d ltmuldiv syl3anc ) ABHI
+      CHIDHIJDKLMBDNOCKLBCDPOKLQEFADGRBCDST $.
+
+    $( 'Less than' relationship between division and multiplication.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    ltmuldiv2d $p |- ( ph -> ( ( C x. A ) < B <-> A < ( B / C ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cmul co cdiv wb rpregt0d ltmuldiv2 syl3anc ) ABH
+      ICHIDHIJDKLMDBNOCKLBCDPOKLQEFADGRBCDST $.
+
+    $( 'Less than or equal to' relationship between division and
+       multiplication.  (Contributed by Mario Carneiro, 30-May-2016.) $)
+    lemuldivd $p |- ( ph -> ( ( A x. C ) <_ B <-> A <_ ( B / C ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cmul co cle cdiv wb rpregt0d lemuldiv syl3anc )
+      ABHICHIDHIJDKLMBDNOCPLBCDQOPLREFADGSBCDTUA $.
+
+    $( 'Less than or equal to' relationship between division and
+       multiplication.  (Contributed by Mario Carneiro, 30-May-2016.) $)
+    lemuldiv2d $p |- ( ph -> ( ( C x. A ) <_ B <-> A <_ ( B / C ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cmul co cle cdiv wb rpregt0d lemuldiv2 syl3anc )
+      ABHICHIDHIJDKLMDBNOCPLBCDQOPLREFADGSBCDTUA $.
+
+    $( 'Less than' relationship between division and multiplication.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    ltdivmuld $p |- ( ph -> ( ( A / C ) < B <-> A < ( C x. B ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cdiv co cmul wb rpregt0d ltdivmul syl3anc ) ABHI
+      CHIDHIJDKLMBDNOCKLBDCPOKLQEFADGRBCDST $.
+
+    $( 'Less than' relationship between division and multiplication.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    ltdivmul2d $p |- ( ph -> ( ( A / C ) < B <-> A < ( B x. C ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cdiv co cmul wb rpregt0d ltdivmul2 syl3anc ) ABH
+      ICHIDHIJDKLMBDNOCKLBCDPOKLQEFADGRBCDST $.
+
+    $( 'Less than or equal to' relationship between division and
+       multiplication.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+    ledivmuld $p |- ( ph -> ( ( A / C ) <_ B <-> A <_ ( C x. B ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cdiv co cle cmul wb rpregt0d ledivmul syl3anc )
+      ABHICHIDHIJDKLMBDNOCPLBDCQOPLREFADGSBCDTUA $.
+
+    $( 'Less than or equal to' relationship between division and
+       multiplication.  (Contributed by Mario Carneiro, 28-May-2016.) $)
+    ledivmul2d $p |- ( ph -> ( ( A / C ) <_ B <-> A <_ ( B x. C ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cdiv co cle cmul wb rpregt0d ledivmul2 syl3anc )
+      ABHICHIDHIJDKLMBDNOCPLBCDQOPLREFADGSBCDTUA $.
+
+    ${
+      ltdiv1dd.4 $e |- ( ph -> A < B ) $.
+      $( The ratio of nonnegative and positive numbers is nonnegative.
+         (Contributed by Mario Carneiro, 30-May-2016.) $)
+      ltmul1dd $p |- ( ph -> ( A x. C ) < ( B x. C ) ) $=
+        ( clt wbr cmul co ltmul1d mpbid ) ABCIJBDKLCDKLIJHABCDEFGMN $.
+
+      $( Multiplication of both sides of 'less than' by a positive number.
+         Theorem I.19 of [Apostol] p. 20.  (Contributed by Mario Carneiro,
+         30-May-2016.) $)
+      ltmul2dd $p |- ( ph -> ( C x. A ) < ( C x. B ) ) $=
+        ( clt wbr cmul co ltmul2d mpbid ) ABCIJDBKLDCKLIJHABCDEFGMN $.
+
+      $( Division of both sides of 'less than' by a positive number.
+         (Contributed by Mario Carneiro, 30-May-2016.) $)
+      ltdiv1dd $p |- ( ph -> ( A / C ) < ( B / C ) ) $=
+        ( clt wbr cdiv co ltdiv1d mpbid ) ABCIJBDKLCDKLIJHABCDEFGMN $.
+    $}
+
+    ${
+      lediv1dd.4 $e |- ( ph -> A <_ B ) $.
+      $( Division of both sides of a less than or equal to relation by a
+         positive number.  (Contributed by Mario Carneiro, 30-May-2016.) $)
+      lediv1dd $p |- ( ph -> ( A / C ) <_ ( B / C ) ) $=
+        ( cle wbr cdiv co lediv1d mpbid ) ABCIJBDKLCDKLIJHABCDEFGMN $.
+    $}
+
+    ${
+      lediv12ad.4 $e |- ( ph -> D e. RR ) $.
+      lediv12ad.5 $e |- ( ph -> 0 <_ A ) $.
+      lediv12ad.6 $e |- ( ph -> A <_ B ) $.
+      lediv12ad.7 $e |- ( ph -> C <_ D ) $.
+      $( Comparison of ratio of two nonnegative numbers.  (Contributed by Mario
+         Carneiro, 28-May-2016.) $)
+      lediv12ad $p |- ( ph -> ( A / D ) <_ ( B / C ) ) $=
+        ( cr wcel wa cc0 cle wbr cdiv jca clt co rpred rpgt0d lediv12a syl22anc
+        ) ABMNZCMNZOPBQRZBCQRZODMNZEMNZOPDUARZDEQRZOBESUBCDSUBQRAUGUHFGTAUIUJJK
+        TAUKULADHUCITAUMUNADHUDLTBCDEUEUF $.
+    $}
+  $}
+
+  ${
+    ltdiv23d.1 $e |- ( ph -> A e. RR ) $.
+    ltdiv23d.2 $e |- ( ph -> B e. RR+ ) $.
+    ltdiv23d.3 $e |- ( ph -> C e. RR+ ) $.
+    ${
+      ltdiv23d.4 $e |- ( ph -> ( A / B ) < C ) $.
+      $( Swap denominator with other side of 'less than'.  (Contributed by
+         Mario Carneiro, 28-May-2016.) $)
+      ltdiv23d $p |- ( ph -> ( A / C ) < B ) $=
+        ( cdiv co clt wbr cr wcel cc0 wa wb rpregt0d ltdiv23 syl3anc mpbid ) AB
+        CIJDKLZBDIJCKLZHABMNCMNOCKLPDMNODKLPUBUCQEACFRADGRBCDSTUA $.
+    $}
+
+    ${
+      lediv23d.4 $e |- ( ph -> ( A / B ) <_ C ) $.
+      $( Swap denominator with other side of 'less than or equal to'.
+         (Contributed by Mario Carneiro, 28-May-2016.) $)
+      lediv23d $p |- ( ph -> ( A / C ) <_ B ) $=
+        ( cdiv co cle wbr cr wcel cc0 clt wa wb rpregt0d lediv23 syl3anc mpbid
+        ) ABCIJDKLZBDIJCKLZHABMNCMNOCPLQDMNODPLQUCUDREACFSADGSBCDTUAUB $.
+    $}
+  $}
+
+  ${
+    lt2mul2divd.1 $e |- ( ph -> A e. RR ) $.
+    lt2mul2divd.2 $e |- ( ph -> B e. RR+ ) $.
+    lt2mul2divd.3 $e |- ( ph -> C e. RR ) $.
+    lt2mul2divd.4 $e |- ( ph -> D e. RR+ ) $.
+    $( The ratio of nonnegative and positive numbers is nonnegative.
+       (Contributed by Mario Carneiro, 28-May-2016.) $)
+    lt2mul2divd $p |- ( ph ->
+      ( ( A x. B ) < ( C x. D ) <-> ( A / D ) < ( C / B ) ) ) $=
+      ( cr wcel cc0 clt wbr wa cmul co cdiv wb rpregt0d lt2mul2div syl22anc ) A
+      BJKCJKLCMNODJKEJKLEMNOBCPQDEPQMNBERQDCRQMNSFACGTHAEITBCDEUAUB $.
+  $}
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
@@ -77978,6 +78606,11 @@ htmldef "QQ" as "<IMG SRC='bbq.gif' WIDTH=13 HEIGHT=19 ALT=' QQ' TITLE='QQ'>";
   althtmldef "QQ" as '&#8474;';
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "QQ" as "\mathbb{Q}";
+htmldef "RR+" as "<IMG SRC='_bbrplus.gif' WIDTH=20 HEIGHT=19 ALT=' RR+' " +
+    "TITLE='RR+'>";
+  althtmldef "RR+" as '&#8477;<SUP>+</SUP>';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "RR+" as "\mathbb{R}^+";
 htmldef "2" as "<IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT=' 2' TITLE='2'>";
   althtmldef "2" as '2';
   latexdef "2" as "2";
