@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Mar-2020
+$( iset.mm - Version of 22-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -76857,15 +76857,30 @@ $)
     ( crp wcel cr cc0 clt wbr wa wne rpregt0 gt0ne0 syl ) ABCADCEAFGHAEIAJAKL
     $.
 
+  $( A positive real is apart from zero.  (Contributed by Jim Kingdon,
+     22-Mar-2020.) $)
+  rpap0 $p |- ( A e. RR+ -> A # 0 ) $=
+    ( crp wcel rpre rpgt0 gt0ap0d ) ABCAADAEF $.
+
   $( A positive real is a nonzero real number.  (Contributed by NM,
      11-Nov-2008.) $)
   rprene0 $p |- ( A e. RR+ -> ( A e. RR /\ A =/= 0 ) ) $=
     ( crp wcel cr cc0 wne rpre rpne0 jca ) ABCADCAEFAGAHI $.
 
+  $( A positive real is a real number apart from zero.  (Contributed by Jim
+     Kingdon, 22-Mar-2020.) $)
+  rpreap0 $p |- ( A e. RR+ -> ( A e. RR /\ A # 0 ) ) $=
+    ( crp wcel cr cc0 cap wbr rpre rpap0 jca ) ABCADCAEFGAHAIJ $.
+
   $( A positive real is a nonzero complex number.  (Contributed by NM,
      11-Nov-2008.) $)
   rpcnne0 $p |- ( A e. RR+ -> ( A e. CC /\ A =/= 0 ) ) $=
     ( crp wcel cc cc0 wne rpcn rpne0 jca ) ABCADCAEFAGAHI $.
+
+  $( A positive real is a complex number apart from zero.  (Contributed by Jim
+     Kingdon, 22-Mar-2020.) $)
+  rpcnap0 $p |- ( A e. RR+ -> ( A e. CC /\ A # 0 ) ) $=
+    ( crp wcel cc cc0 cap wbr rpcn rpap0 jca ) ABCADCAEFGAHAIJ $.
 
   $( Quantification over positive reals.  (Contributed by NM, 12-Feb-2008.) $)
   ralrp $p |- ( A. x e. RR+ ph <-> A. x e. RR ( 0 < x -> ph ) ) $=
