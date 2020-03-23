@@ -76910,9 +76910,9 @@ $)
   $( Closure law for division of positive reals.  (Contributed by FL,
      27-Dec-2007.) $)
   rpdivcl $p |- ( ( A e. RR+ /\ B e. RR+ ) -> ( A / B ) e. RR+ ) $=
-    ( crp wcel wa cdiv co cr cc0 clt wbr rpre rprene0 redivcl 3expb syl2an elrp
-    wne divgt0 syl2anb sylanbrc ) ACDZBCDZEABFGZHDZIUDJKZUDCDUBAHDZBHDZBIRZEUEU
-    CALBMUGUHUIUEABNOPUBUGIAJKEUHIBJKEUFUCAQBQABSTUDQUA $.
+    ( crp wcel wa cdiv co cr cc0 clt wbr cap rpre rpreap0 redivclap syl2an elrp
+    3expb divgt0 syl2anb sylanbrc ) ACDZBCDZEABFGZHDZIUDJKZUDCDUBAHDZBHDZBILKZE
+    UEUCAMBNUGUHUIUEABORPUBUGIAJKEUHIBJKEUFUCAQBQABSTUDQUA $.
 
   $( Closure law for reciprocation of positive reals.  (Contributed by Jeff
      Hankins, 23-Nov-2008.) $)
