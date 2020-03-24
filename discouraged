@@ -4288,6 +4288,7 @@
 "con5" is used by "con5i".
 "con5i" is used by "vk15.4j".
 "con5i" is used by "vk15.4jVD".
+"crhmsubcOLD" is used by "cringcatOLD".
 "csbabgOLD" is used by "csbfv12gALTOLD".
 "csbabgOLD" is used by "csbfv12gALTVD".
 "csbabgOLD" is used by "csbingVD".
@@ -4788,6 +4789,8 @@
 "df-recs" is used by "recseq".
 "df-recs" is used by "recsfval".
 "df-recs" is used by "tfrlem9".
+"df-ringcOLD" is used by "ringcvalOLD".
+"df-rngcOLD" is used by "rngcvalOLD".
 "df-rngo" is used by "isrngo".
 "df-rngo" is used by "relrngo".
 "df-rq" is used by "dmrecnq".
@@ -5275,6 +5278,7 @@
 "dral2-o" is used by "ax12eq".
 "dral2-o" is used by "ax12inda2ALT".
 "dral2-o" is used by "ax12indalem".
+"drhmsubcOLD" is used by "fldhmsubcOLD".
 "drngoi" is used by "dvrunz".
 "drngoi" is used by "fldcrng".
 "dvadiaN" is used by "diarnN".
@@ -5926,6 +5930,8 @@
 "elreal2" is used by "axpre-sup".
 "elreal2" is used by "axrnegex".
 "elreal2" is used by "ltresr2".
+"elringchomOLD" is used by "ringccatidOLD".
+"elrngchomOLD" is used by "rngccatidOLD".
 "elspancl" is used by "elspansncl".
 "elspani" is used by "spansni".
 "elspani" is used by "spanuni".
@@ -6057,6 +6063,7 @@
 "fh2i" is used by "fh4i".
 "fh3i" is used by "mayetes3i".
 "fiusgedgfiALT" is used by "usgfisALTlem2".
+"fldcatOLD" is used by "fldcOLD".
 "flddivrng" is used by "isfld2".
 "flddivrng" is used by "isfldidl".
 "fnniniseg2OLD" is used by "fnsuppresOLD".
@@ -6077,6 +6084,22 @@
 "funadj" is used by "adjeq".
 "funadj" is used by "funcnvadj".
 "funcnvadj" is used by "adj1o".
+"funcringcsetclem1OLD" is used by "funcringcsetclem2OLD".
+"funcringcsetclem1OLD" is used by "funcringcsetclem7OLD".
+"funcringcsetclem1OLD" is used by "funcringcsetclem8OLD".
+"funcringcsetclem1OLD" is used by "funcringcsetclem9OLD".
+"funcringcsetclem2OLD" is used by "funcringcsetclem8OLD".
+"funcringcsetclem2OLD" is used by "funcringcsetclem9OLD".
+"funcringcsetclem3OLD" is used by "funcringcsetcOLD".
+"funcringcsetclem4OLD" is used by "funcringcsetcOLD".
+"funcringcsetclem5OLD" is used by "funcringcsetclem6OLD".
+"funcringcsetclem5OLD" is used by "funcringcsetclem7OLD".
+"funcringcsetclem5OLD" is used by "funcringcsetclem8OLD".
+"funcringcsetclem5OLD" is used by "funcringcsetclem9OLD".
+"funcringcsetclem6OLD" is used by "funcringcsetclem9OLD".
+"funcringcsetclem7OLD" is used by "funcringcsetcOLD".
+"funcringcsetclem8OLD" is used by "funcringcsetcOLD".
+"funcringcsetclem9OLD" is used by "funcringcsetcOLD".
 "fusgraimpclALT" is used by "fiusgedgfiALT".
 "fusgraimpclALT" is used by "fusgusg".
 "gen11" is used by "ax6e2eqVD".
@@ -12138,6 +12161,12 @@
 "retbwax2" is used by "merco1lem3".
 "retbwax2" is used by "retbwax3".
 "rexsnsOLD" is used by "r19.12snOLD".
+"rhmsubcOLD" is used by "rhmsubcOLDcat".
+"rhmsubcOLDlem1" is used by "rhmsubcOLD".
+"rhmsubcOLDlem2" is used by "rhmsubcOLDlem3".
+"rhmsubcOLDlem2" is used by "rhmsubcOLDlem4".
+"rhmsubcOLDlem3" is used by "rhmsubcOLD".
+"rhmsubcOLDlem4" is used by "rhmsubcOLD".
 "riesz1" is used by "rnbra".
 "riesz3i" is used by "riesz1".
 "riesz3i" is used by "riesz4i".
@@ -12146,10 +12175,79 @@
 "riesz4" is used by "cnvbraval".
 "riesz4" is used by "riesz2".
 "riesz4i" is used by "riesz4".
+"ringcbasOLD" is used by "funcringcsetclem7OLD".
+"ringcbasOLD" is used by "ringcbasbasOLD".
+"ringcbasOLD" is used by "ringccatidOLD".
+"ringcbasOLD" is used by "ringccofvalOLD".
+"ringcbasOLD" is used by "ringchomfvalOLD".
+"ringcbasOLD" is used by "srhmsubcOLD".
+"ringcbasOLD" is used by "srhmsubcOLDlem2".
+"ringcbasbasOLD" is used by "funcringcsetclem2OLD".
+"ringcbasbasOLD" is used by "funcringcsetclem3OLD".
+"ringcbasbasOLD" is used by "funcringcsetclem7OLD".
+"ringccatOLD" is used by "funcringcsetcOLD".
+"ringccatOLD" is used by "ringcinvOLD".
+"ringccatOLD" is used by "ringcisoOLD".
+"ringccatOLD" is used by "ringcsectOLD".
+"ringccatOLD" is used by "srhmsubcOLD".
+"ringccatidOLD" is used by "ringccatOLD".
+"ringccatidOLD" is used by "ringcidOLD".
+"ringccoOLD" is used by "funcringcsetclem9OLD".
+"ringccoOLD" is used by "ringccatidOLD".
+"ringccoOLD" is used by "ringcsectOLD".
+"ringccofvalOLD" is used by "ringccoOLD".
+"ringchomOLD" is used by "elringchomOLD".
+"ringchomOLD" is used by "funcringcsetclem8OLD".
+"ringchomOLD" is used by "funcringcsetclem9OLD".
+"ringchomOLD" is used by "ringccatidOLD".
+"ringchomOLD" is used by "ringcsectOLD".
+"ringchomOLD" is used by "srhmsubcOLD".
+"ringchomOLD" is used by "srhmsubcOLDlem3".
+"ringchomfvalOLD" is used by "ringccofvalOLD".
+"ringchomfvalOLD" is used by "ringchomOLD".
+"ringcidOLD" is used by "funcringcsetclem7OLD".
+"ringcidOLD" is used by "ringcsectOLD".
+"ringcidOLD" is used by "srhmsubcOLD".
+"ringcinvOLD" is used by "ringcisoOLD".
+"ringcsectOLD" is used by "ringcinvOLD".
+"ringcvalOLD" is used by "ringcbasOLD".
+"ringcvalOLD" is used by "ringccofvalOLD".
+"ringcvalOLD" is used by "ringchomfvalOLD".
 "riotaocN" is used by "glbconN".
 "rnbra" is used by "bra11".
 "rnbra" is used by "cnvbraval".
 "rnelshi" is used by "hmopidmchi".
+"rngcbasOLD" is used by "rhmsubcOLDlem3".
+"rngcbasOLD" is used by "rhmsubcOLDlem4".
+"rngcbasOLD" is used by "rngccatidOLD".
+"rngcbasOLD" is used by "rngccofvalOLD".
+"rngcbasOLD" is used by "rngchomfvalOLD".
+"rngcbasOLD" is used by "rngchomrnghmresOLD".
+"rngccatOLD" is used by "rhmsubcOLD".
+"rngccatOLD" is used by "rngcinvOLD".
+"rngccatOLD" is used by "rngcisoOLD".
+"rngccatOLD" is used by "rngcsectOLD".
+"rngccatidOLD" is used by "rhmsubcOLDlem3".
+"rngccatidOLD" is used by "rngccatOLD".
+"rngccatidOLD" is used by "rngcidOLD".
+"rngccoOLD" is used by "rhmsubcOLDlem4".
+"rngccoOLD" is used by "rngccatidOLD".
+"rngccoOLD" is used by "rngcsectOLD".
+"rngccofvalOLD" is used by "rngccoOLD".
+"rngchomOLD" is used by "elrngchomOLD".
+"rngchomOLD" is used by "rngccatidOLD".
+"rngchomOLD" is used by "rngcsectOLD".
+"rngchomffvalOLD" is used by "rngchomrnghmresOLD".
+"rngchomfvalOLD" is used by "rngccofvalOLD".
+"rngchomfvalOLD" is used by "rngchomOLD".
+"rngchomfvalOLD" is used by "rngchomffvalOLD".
+"rngchomrnghmresOLD" is used by "rhmsubcOLD".
+"rngcidOLD" is used by "rngcsectOLD".
+"rngcinvOLD" is used by "rngcisoOLD".
+"rngcsectOLD" is used by "rngcinvOLD".
+"rngcvalOLD" is used by "rngcbasOLD".
+"rngcvalOLD" is used by "rngccofvalOLD".
+"rngcvalOLD" is used by "rngchomfvalOLD".
 "rngmgmbs4" is used by "rngorn1eq".
 "rngo0cl" is used by "0idl".
 "rngo0cl" is used by "isdmn3".
@@ -12892,6 +12990,16 @@
 "sps-o" is used by "axc11n-16".
 "sps-o" is used by "axc5c711toc7".
 "sqgt0sr" is used by "recexsr".
+"srhmsubcOLD" is used by "crhmsubcOLD".
+"srhmsubcOLD" is used by "drhmsubcOLD".
+"srhmsubcOLD" is used by "fldhmsubcOLD".
+"srhmsubcOLD" is used by "sringcatOLD".
+"srhmsubcOLDlem1" is used by "srhmsubcOLDlem2".
+"srhmsubcOLDlem2" is used by "srhmsubcOLD".
+"srhmsubcOLDlem2" is used by "srhmsubcOLDlem3".
+"srhmsubcOLDlem3" is used by "srhmsubcOLD".
+"sringcatOLD" is used by "drngcatOLD".
+"sringcatOLD" is used by "fldcatOLD".
 "ssdmd1" is used by "atdmd".
 "sshjcl" is used by "shjcl".
 "sshjcl" is used by "sshhococi".
@@ -15048,6 +15156,8 @@ New usage of "con5i" is discouraged (2 uses).
 New usage of "conventions" is discouraged (0 uses).
 New usage of "copsexgOLD" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
+New usage of "crhmsubcOLD" is discouraged (1 uses).
+New usage of "cringcatOLD" is discouraged (0 uses).
 New usage of "csbabgOLD" is discouraged (10 uses).
 New usage of "csbcnvgALT" is discouraged (0 uses).
 New usage of "csbcomgOLD" is discouraged (0 uses).
@@ -15242,6 +15352,8 @@ New usage of "df-plr" is discouraged (2 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-r" is discouraged (6 uses).
 New usage of "df-recs" is discouraged (5 uses).
+New usage of "df-ringcOLD" is discouraged (1 uses).
+New usage of "df-rngcOLD" is discouraged (1 uses).
 New usage of "df-rngo" is discouraged (2 uses).
 New usage of "df-rq" is discouraged (2 uses).
 New usage of "df-scon" is discouraged (1 uses).
@@ -15472,6 +15584,8 @@ New usage of "dprdwdOLD" is discouraged (5 uses).
 New usage of "dral1-o" is discouraged (4 uses).
 New usage of "dral1ALT" is discouraged (0 uses).
 New usage of "dral2-o" is discouraged (4 uses).
+New usage of "drhmsubcOLD" is discouraged (1 uses).
+New usage of "drngcatOLD" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
 New usage of "dtruALT" is discouraged (0 uses).
 New usage of "dtruALT2" is discouraged (0 uses).
@@ -15726,6 +15840,8 @@ New usage of "elpwgded" is discouraged (2 uses).
 New usage of "elpwgdedVD" is discouraged (1 uses).
 New usage of "elreal" is discouraged (7 uses).
 New usage of "elreal2" is discouraged (3 uses).
+New usage of "elringchomOLD" is discouraged (1 uses).
+New usage of "elrngchomOLD" is discouraged (1 uses).
 New usage of "elspancl" is discouraged (1 uses).
 New usage of "elspani" is discouraged (2 uses).
 New usage of "elspansn" is discouraged (6 uses).
@@ -15838,7 +15954,10 @@ New usage of "fh3i" is discouraged (1 uses).
 New usage of "fh4i" is discouraged (0 uses).
 New usage of "fisucdomOLD" is discouraged (0 uses).
 New usage of "fiusgedgfiALT" is discouraged (1 uses).
+New usage of "fldcOLD" is discouraged (0 uses).
+New usage of "fldcatOLD" is discouraged (1 uses).
 New usage of "flddivrng" is discouraged (2 uses).
+New usage of "fldhmsubcOLD" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fngid" is discouraged (0 uses).
 New usage of "fnniniseg2OLD" is discouraged (3 uses).
@@ -15858,6 +15977,16 @@ New usage of "fsuppeq" is discouraged (1 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
 New usage of "funcnvmptOLD" is discouraged (0 uses).
+New usage of "funcringcsetcOLD" is discouraged (0 uses).
+New usage of "funcringcsetclem1OLD" is discouraged (4 uses).
+New usage of "funcringcsetclem2OLD" is discouraged (2 uses).
+New usage of "funcringcsetclem3OLD" is discouraged (1 uses).
+New usage of "funcringcsetclem4OLD" is discouraged (1 uses).
+New usage of "funcringcsetclem5OLD" is discouraged (4 uses).
+New usage of "funcringcsetclem6OLD" is discouraged (1 uses).
+New usage of "funcringcsetclem7OLD" is discouraged (1 uses).
+New usage of "funcringcsetclem8OLD" is discouraged (1 uses).
+New usage of "funcringcsetclem9OLD" is discouraged (1 uses).
 New usage of "funsnfsupOLD" is discouraged (0 uses).
 New usage of "fusgraimpclALT" is discouraged (2 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
@@ -17882,17 +18011,51 @@ New usage of "rexnalOLD" is discouraged (0 uses).
 New usage of "rexsnsOLD" is discouraged (1 uses).
 New usage of "rexsuppOLD" is discouraged (0 uses).
 New usage of "rgen2aOLD" is discouraged (0 uses).
+New usage of "rhmsubcOLD" is discouraged (1 uses).
+New usage of "rhmsubcOLDcat" is discouraged (0 uses).
+New usage of "rhmsubcOLDlem1" is discouraged (1 uses).
+New usage of "rhmsubcOLDlem2" is discouraged (2 uses).
+New usage of "rhmsubcOLDlem3" is discouraged (1 uses).
+New usage of "rhmsubcOLDlem4" is discouraged (1 uses).
 New usage of "riesz1" is discouraged (1 uses).
 New usage of "riesz2" is discouraged (0 uses).
 New usage of "riesz3i" is discouraged (2 uses).
 New usage of "riesz4" is discouraged (4 uses).
 New usage of "riesz4i" is discouraged (1 uses).
+New usage of "ringcbasOLD" is discouraged (7 uses).
+New usage of "ringcbasbasOLD" is discouraged (3 uses).
+New usage of "ringccatOLD" is discouraged (5 uses).
+New usage of "ringccatidOLD" is discouraged (2 uses).
+New usage of "ringccoOLD" is discouraged (3 uses).
+New usage of "ringccofvalOLD" is discouraged (1 uses).
+New usage of "ringchomOLD" is discouraged (7 uses).
+New usage of "ringchomfvalOLD" is discouraged (2 uses).
+New usage of "ringcidOLD" is discouraged (3 uses).
+New usage of "ringcinvOLD" is discouraged (1 uses).
+New usage of "ringcisoOLD" is discouraged (0 uses).
+New usage of "ringcsectOLD" is discouraged (1 uses).
+New usage of "ringcvalOLD" is discouraged (3 uses).
 New usage of "riotaocN" is discouraged (1 uses).
 New usage of "riotassuniOLD" is discouraged (0 uses).
 New usage of "rmo4fOLD" is discouraged (0 uses).
 New usage of "rmoxfrdOLD" is discouraged (0 uses).
 New usage of "rnbra" is discouraged (2 uses).
 New usage of "rnelshi" is discouraged (1 uses).
+New usage of "rngcbasOLD" is discouraged (6 uses).
+New usage of "rngccatOLD" is discouraged (4 uses).
+New usage of "rngccatidOLD" is discouraged (3 uses).
+New usage of "rngccoOLD" is discouraged (3 uses).
+New usage of "rngccofvalOLD" is discouraged (1 uses).
+New usage of "rngchomOLD" is discouraged (3 uses).
+New usage of "rngchomffvalOLD" is discouraged (1 uses).
+New usage of "rngchomfvalOLD" is discouraged (3 uses).
+New usage of "rngchomrnghmresOLD" is discouraged (1 uses).
+New usage of "rngcidOLD" is discouraged (1 uses).
+New usage of "rngcinvOLD" is discouraged (1 uses).
+New usage of "rngcisoOLD" is discouraged (0 uses).
+New usage of "rngcrescrhmOLD" is discouraged (0 uses).
+New usage of "rngcsectOLD" is discouraged (1 uses).
+New usage of "rngcvalOLD" is discouraged (3 uses).
 New usage of "rngmgmbs4" is discouraged (1 uses).
 New usage of "rngo0cl" is discouraged (9 uses).
 New usage of "rngo0lid" is discouraged (0 uses).
@@ -18131,6 +18294,11 @@ New usage of "specval" is discouraged (1 uses).
 New usage of "speimfwOLD" is discouraged (0 uses).
 New usage of "sps-o" is discouraged (7 uses).
 New usage of "sqgt0sr" is discouraged (1 uses).
+New usage of "srhmsubcOLD" is discouraged (4 uses).
+New usage of "srhmsubcOLDlem1" is discouraged (1 uses).
+New usage of "srhmsubcOLDlem2" is discouraged (2 uses).
+New usage of "srhmsubcOLDlem3" is discouraged (1 uses).
+New usage of "sringcatOLD" is discouraged (2 uses).
 New usage of "ssdmd1" is discouraged (1 uses).
 New usage of "ssdmd2" is discouraged (0 uses).
 New usage of "sseliALT" is discouraged (0 uses).
