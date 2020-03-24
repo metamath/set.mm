@@ -76957,16 +76957,15 @@ $)
     adantr lelttrd elrp sylanbrc ) ABCZDAEFZGZAHIJZBCZDUEKFUELCUBUFUCAMRZUDDAUE
     UDNUBUCOUGUBUCPUBAUEKFUCAQRSUETUA $.
 
-  $( Either a nonzero real or its negation is a positive real, but not both.
-     Axiom 8 of [Apostol] p. 20.  (Contributed by NM, 7-Nov-2008.) $)
-  rpneg $p |- ( ( A e. RR /\ A =/= 0 ) -> ( A e. RR+ <-> -. -u A e. RR+ ) ) $=
-    ( cr wcel cc0 wne wa clt wbr cneg wn crp wo wi 0re mpan imp adantr wb bitrd
-    elrp cle ltle olcd renegcl pm2.24d ltlen biimprd expcomd jaod simpl impbid2
-    jctild lenlt lt0neg1 notbid orbi2d ianor syl6bbr notbii 3bitr4g ) ABCZADEZF
-    ZVADAGHZFZAIZBCZDVFGHZFZJZAKCVFKCZJVCVEVGJZVHJZLZVJVCVEVLDAUAHZLZVNVCVEVPVE
-    VOVLVAVDVODBCZVAVDVOMNDAUBOPUCVCVPVDVAVCVLVDVOVAVLVDMVBVAVGVDAUDUEQVAVBVOVD
-    MVAVOVBVDVAVDVOVBFZVQVAVDVRRNDAUFOUGUHPUIVAVBUJULUKVCVOVMVLVAVOVMRVBVAVOADG
-    HZJZVMVQVAVOVTRNDAUMOVAVSVHAUNUOSQUPSVGVHUQURATVKVIVFTUSUT $.
+  $( Either a real apart from zero or its negation is a positive real, but not
+     both.  (Contributed by Jim Kingdon, 23-Mar-2020.) $)
+  rpnegap $p |- ( ( A e. RR /\ A # 0 ) -> ( A e. RR+ \/_ -u A e. RR+ ) ) $=
+    ( cr wcel cc0 cap wbr wa crp cneg wxo clt 0re reapltxor mpan2 xorcom syl6bb
+    wb pm5.32i anxordi elrp bitri biimpi a1i renegcl biantrurd syl6rbbr lt0neg1
+    ibar 3bitr2d adantr xorbi12d mpbird ) ABCZADEFZGZAHCZAIZHCZJUMDAKFZGZUMADKF
+    ZGZJZUOVCUOUMUSVAJZGVCUMUNVDUMUNVAUSJZVDUMDBCUNVEQLADMNVAUSOPRUMUSVASUAUBUO
+    UPUTURVBUPUTQUOATUCUMURVBQUNUMURDUQKFZVAVBUMVFUQBCZVFGURUMVGVFAUDUEUQTUFAUG
+    UMVAUHUIUJUKUL $.
 
   $( Zero is not a positive real.  Axiom 9 of [Apostol] p. 20.  (Contributed by
      NM, 27-Oct-2007.) $)
