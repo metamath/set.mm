@@ -77632,23 +77632,6 @@ $)
     ( cxr wcel wa clt wbr wn wi xrltnsym imnan sylib ) ACDBCDEABFGZBAFGZHIMNEHA
     BJMNKL $.
 
-  $( Ordering on the extended reals satisfies strict trichotomy.  New proofs
-     should generally use this instead of ~ ax-pre-lttri or ~ axlttri .
-     (Contributed by NM, 14-Oct-2005.) $)
-  xrlttri $p |- ( ( A e. RR* /\ B e. RR* ) ->
-                ( A < B <-> -. ( A = B \/ B < A ) ) ) $=
-    ( wcel wa wceq clt wbr wn wi adantr wb adantl cpnf cmnf mpbird pm2.24d olcd
-    breq2 a1d 3jaodan cxr wo xrltnr mtbid xrltnsym ancoms jaod w3o elxr axlttri
-    ex cr biimprd con1d ltpnf mnflt breq1 eqtr3 mnfltpnf breq12 3jaoian syl2anb
-    orcd mpbiri impbid con2bid ) AUACZBUACZDZABEZBAFGZUBZABFGZVIVLVMHZVIVJVNVKV
-    GVJVNIVHVGVJVNVGVJDAAFGZVMVGVOHVJAUCJVJVOVMKVGABAFRLUDUKJVHVGVKVNIBAUEUFUGV
-    GAULCZAMEZANEZUHBULCZBMEZBNEZUHZVNVLIZVHAUIBUIVPWBWCVQVRVPVSWCVTWAVPVSDZVLV
-    MWDVMVLHABUJUMUNVPVTDZVMVLWEVMAMFGZVPWFVTAUOJVTVMWFKVPBMAFRLOPVPWADZVLVNWGV
-    KVJWGVKNAFGZVPWHWAAUPJWAVKWHKVPBNAFUQLOQSTVQVSWCVTWAVQVSDZVLVNWIVKVJWIVKBMF
-    GZVSWJVQBUOLVQVKWJKVSAMBFRJOQSVQVTDZVLVNWKVJVKABMURVCSVQWADZVLVNWLVKVJWAVQV
-    KWAVQDVKNMFGZUSBNAMFUTVDUFQSTVRVSWCVTWAVRVSDZVMVLWNVMNBFGZVSWOVRBUPLVRVMWOK
-    VSANBFUQJOPVRVTDZVMVLWPVMWMUSANBMFUTVDPVRWADZVLVNWQVJVKABNURVCSTVAVBVEVF $.
-
   $( Ordering on the extended reals is transitive.  (Contributed by NM,
      15-Oct-2005.) $)
   xrlttr $p |- ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) ->
