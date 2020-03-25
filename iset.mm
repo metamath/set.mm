@@ -77679,13 +77679,6 @@ $)
   $}
 
   $( Trichotomy law for 'less than' for extended reals.  (Contributed by NM,
-     10-Dec-2007.) $)
-  xrlttri2 $p |- ( ( A e. RR* /\ B e. RR* ) ->
-                ( A =/= B <-> ( A < B \/ B < A ) ) ) $=
-    ( cxr wcel wa clt wbr wo wceq wn wor xrltso sotrieq mpan bicomd necon1abid
-    wb ) ACDBCDEZABFGBAFGHZABRABIZSJZCFKRTUAQLCABFMNOP $.
-
-  $( Trichotomy law for 'less than' for extended reals.  (Contributed by NM,
      9-Feb-2006.) $)
   xrlttri3 $p |- ( ( A e. RR* /\ B e. RR* ) ->
                 ( A = B <-> ( -. A < B /\ -. B < A ) ) ) $=
