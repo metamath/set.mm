@@ -77700,23 +77700,6 @@ $)
     WBWFWGABFVDKYAWIWKYAWHFFGHZFUACYBIVRFVGVHZWBWFWHYBQAFBFGSKTYAWJYBYCBFAFGSTV
     IVNVBKVBVS $.
 
-  $( 'Less than or equal' expressed in terms of 'less than' or 'equals', for
-     extended reals.  (Contributed by NM, 19-Jan-2006.) $)
-  xrleloe $p |- ( ( A e. RR* /\ B e. RR* ) ->
-               ( A <_ B <-> ( A < B \/ A = B ) ) ) $=
-    ( cxr wcel wa cle wbr clt wn wo xrlenlt eqcom orbi1i orcom bitri wb xrlttri
-    wceq ancoms con2bid syl5rbbr bitrd ) ACDZBCDZEZABFGBAHGZIZABHGZABRZJZABKUJB
-    ARZUHJZUEUGULUIUHJUJUKUIUHBALMUIUHNOUEUFULUDUCUFULIPBAQSTUAUB $.
-
-  $( 'Less than or equal to' implies 'less than' is not 'equals', for extended
-     reals.  (Contributed by NM, 9-Feb-2006.) $)
-  xrleltne $p |- ( ( A e. RR* /\ B e. RR* /\ A <_ B ) ->
-                ( A < B <-> B =/= A ) ) $=
-    ( cxr wcel cle wbr clt wne wb wa wceq wn wi xrlttri3 simpl syl6bi adantr wo
-    xrleloe biimpa ord impbid necon2abid necom syl6bbr 3impa ) ACDZBCDZABEFZABG
-    FZBAHZIUGUHJZUIJZUJABHUKUMUJABUMABKZUJLZULUNUOMUIULUNUOBAGFLZJUOABNUOUPOPQU
-    MUJUNULUIUJUNRABSTUAUBUCBAUDUEUF $.
-
   $( 'Less than' expressed in terms of 'less than or equal to'.  (Contributed
      by Mario Carneiro, 6-Nov-2015.) $)
   xrltlen $p |- ( ( A e. RR* /\ B e. RR* ) ->
@@ -77727,16 +77710,6 @@ $)
 
   ${
     $d x y $.
-    $( Alternative definition of 'less than or equal to' in terms of 'less
-       than'.  (Contributed by Mario Carneiro, 6-Nov-2015.) $)
-    dfle2 $p |- <_ = ( < u. ( _I |` RR* ) ) $=
-      ( vx vy cle clt cid cxr cres cun lerel cxp wss wrel ltrelxr wf1o wbr wcel
-      wf cv brel wo f1oi f1of fssxp mp2b unssi relxp mp2 wa lerelxr weq xrleloe
-      relss resieq orbi2d bitr4d brun syl6bbr pm5.21nii eqbrriv ) ABCDEFGZHZIVA
-      FFJZKVBLVALDUTVBMFFUTNFFUTQUTVBKFUAFFUTUBFFUTUCUDUEZFFUFVAVBULUGARZBRZCOZ
-      VDFPVEFPUHZVDVEVAOZVDVEFFCUISVDVEFFVAVCSVGVFVDVEDOZVDVEUTOZTZVHVGVFVIABUJ
-      ZTVKVDVEUKVGVJVLVIFVDVEUMUNUOVDVEDUTUPUQURUS $.
-
     $( Alternative definition of 'less than' in terms of 'less than or equal
        to'.  (Contributed by Mario Carneiro, 6-Nov-2015.) $)
     dflt2 $p |- < = ( <_ \ _I ) $=
