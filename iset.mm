@@ -77700,14 +77700,6 @@ $)
     WBWFWGABFVDKYAWIWKYAWHFFGHZFUACYBIVRFVGVHZWBWFWHYBQAFBFGSKTYAWJYBYCBFAFGSTV
     IVNVBKVBVS $.
 
-  $( 'Less than' expressed in terms of 'less than or equal to'.  (Contributed
-     by Mario Carneiro, 6-Nov-2015.) $)
-  xrltlen $p |- ( ( A e. RR* /\ B e. RR* ) ->
-               ( A < B <-> ( A <_ B /\ B =/= A ) ) ) $=
-    ( cxr wcel wa clt wbr wn wceq cle wne wo xrlttri ioran ancom syl6bb xrlenlt
-    bitri wb nesym a1i anbi12d bitr4d ) ACDBCDEZABFGZBAFGZHZABIZHZEZABJGZBAKZEU
-    DUEUHUFLHZUJABMUMUIUGEUJUHUFNUIUGORPUDUKUGULUIABQULUISUDBATUAUBUC $.
-
   ${
     $d x y $.
     $( Alternative definition of 'less than' in terms of 'less than or equal
