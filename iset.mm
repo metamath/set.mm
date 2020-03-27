@@ -77796,9 +77796,8 @@ $)
   $( 'Less than' implies not equal for extended reals.  (Contributed by NM,
      20-Jan-2006.) $)
   xrltne $p |- ( ( A e. RR* /\ B e. RR* /\ A < B ) -> B =/= A ) $=
-    ( cxr wcel clt wbr w3a wne wo wa orc wor wceq wn wb sotrieq mpan necon2abid
-    xrltso syl5ib 3impia necomd ) ACDZBCDZABEFZGABUCUDUEABHZUEUEBAEFZIZUCUDJZUF
-    UEUGKUIUHABCELUIABMUHNOSCABEPQRTUAUB $.
+    ( cxr wcel clt wbr wne wceq xrltnr breq2 notbid syl5ibrcom necon2ad 3adant2
+    wn imp ) ACDZABEFZBAGZBCDQRSQRBAQROBAHZAAEFZOAITRUABAAEJKLMPN $.
 
   $( An extended real is not less than plus infinity iff they are equal.
      (Contributed by NM, 30-Jan-2006.) $)
