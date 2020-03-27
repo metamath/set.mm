@@ -77820,11 +77820,11 @@ $)
   $( An extended real is real iff it is strictly bounded by infinities.
      (Contributed by NM, 2-Feb-2006.) $)
   xrrebnd $p |- ( A e. RR* -> ( A e. RR <-> ( -oo < A /\ A < +oo ) ) ) $=
-    ( cxr wcel cr cmnf clt wbr cpnf wa mnflt ltpnf wceq nltpnft ngtmnft orbi12d
-    jca wo wn ianor orcom bitr2i syl6bb con2bid w3o elxr 3orass bitri sylbb ord
-    sylbid impbid2 ) ABCZADCZEAFGZAHFGZIZUMUNUOAJAKPULUPAHLZAELZQZRUMULUSUPULUS
-    UORZUNRZQZUPRZULUQUTURVAAMANOVCVAUTQVBUNUOSVAUTTUAUBUCULUSUMULUMUQURUDZUSUM
-    QZAUEVDUMUSQVEUMUQURUFUMUSTUGUHUIUJUK $.
+    ( cxr wcel cr cpnf wceq cmnf w3o clt wa wb elxr id necon2bi wn xrltnr ax-mp
+    wbr mtbiri 2falsed mnflt ltpnf jca 2thd renepnf pnfxr breq1 intnand renemnf
+    mnfxr breq2 intnanrd 3jaoi sylbi ) ABCADCZAEFZAGFZHUOGAIRZAEIRZJZKZALUOVAUP
+    UQUOUOUTUOMUOURUSAUAAUBUCUDUPUOUTUOAEAUENUPUSURUPUSEEIRZEBCVBOUFEPQAEEIUGSU
+    HTUQUOUTUOAGAUINUQURUSUQURGGIRZGBCVCOUJGPQAGGIUKSULTUMUN $.
 
   $( A way of proving that an extended real is real.  (Contributed by NM,
      9-Mar-2006.) $)
