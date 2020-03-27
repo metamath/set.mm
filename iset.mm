@@ -77865,8 +77865,8 @@ $)
   $( A nonnegative extended real is greater than negative infinity.
      (Contributed by Mario Carneiro, 20-Aug-2015.) $)
   ge0nemnf $p |- ( ( A e. RR* /\ 0 <_ A ) -> A =/= -oo ) $=
-    ( cxr wcel cc0 cle wbr cmnf clt wne ge0gtmnf wceq ngtmnft adantr necon2abid
-    wa wn wb mpbid ) ABCZDAEFZOZGAHFZAGIAJUAUBAGSAGKUBPQTALMNR $.
+    ( cxr wcel cc0 cle wbr wa cmnf clt wne ge0gtmnf wn wb ngtmnft adantr biimpd
+    wceq necon2ad mpd ) ABCZDAEFZGZHAIFZAHJAKUBUCAHUBAHQZUCLZTUDUEMUAANOPRS $.
 
   $( A nonnegative extended real that is less than a real bound is real.
      (Contributed by Mario Carneiro, 20-Aug-2015.) $)
