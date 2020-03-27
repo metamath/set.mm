@@ -77811,9 +77811,11 @@ $)
   $( An extended real is not greater than minus infinity iff they are equal.
      (Contributed by NM, 2-Feb-2006.) $)
   ngtmnft $p |- ( A e. RR* -> ( A = -oo <-> -. -oo < A ) ) $=
-    ( cxr wcel cmnf wceq clt wbr wn mnfxr xrltnr ax-mp breq2 mtbiri wo mnfle wb
-    cle xrleloe mpan mpbid ord eqcom syl6ib impbid2 ) ABCZADEZDAFGZHZUFUGDDFGZD
-    BCZUIHIDJKADDFLMUEUHDAEZUFUEUGUKUEDAQGZUGUKNZAOUJUEULUMPIDARSTUADAUBUCUD $.
+    ( cxr wcel cr cpnf wceq cmnf w3o clt wbr wn wb renemnf neneqd mnflt 2falsed
+    elxr wne mpbiri breq2 notnot1 syl pnfnemnf neeq1 mnfltpnf necon3bi necon2bi
+    id mnfxr xrltnr ax-mp mtbiri 2thd 3jaoi sylbi ) ABCADCZAEFZAGFZHURGAIJZKZLZ
+    AQUPVAUQURUPURUTUPAGAMNUPUSUTKAOUSUAUBPUQURUTUQAGUQAGREGRUCAEGUDSNUTAEUSAEU
+    QUSGEIJUEAEGITSUFUGPURURUTURUHURUSGGIJZGBCVBKUIGUJUKAGGITULUMUNUO $.
 
   $( An extended real is real iff it is strictly bounded by infinities.
      (Contributed by NM, 2-Feb-2006.) $)
