@@ -77742,11 +77742,11 @@ $)
      9-Feb-2006.) $)
   xrletr $p |- ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) ->
              ( ( A <_ B /\ B <_ C ) -> A <_ C ) ) $=
-    ( cxr wcel w3a cle wbr wa clt wceq wo wb xrleloe 3adant1 adantr xrlelttr wi
-    xrltle 3adant2 syld expdimp breq2 biimpcd adantl jaod sylbid expimpd ) ADEZ
-    BDEZCDEZFZABGHZBCGHZACGHZULUMIZUNBCJHZBCKZLZUOULUNUSMZUMUJUKUTUIBCNOPUPUQUO
-    URULUMUQUOULUMUQIACJHZUOABCQUIUKVAUORUJACSTUAUBUMURUORULURUMUOBCAGUCUDUEUFU
-    GUH $.
+    ( cxr wcel w3a clt wbr wo wn cle wa wi wor xrltso sowlin mpan 3coml xrlenlt
+    wb orcom syl6ib con3d 3adant3 3adant1 anbi12d ioran syl6bbr 3adant2 3imtr4d
+    ) ADEZBDEZCDEZFZBAGHZCBGHZIZJZCAGHZJZABKHZBCKHZLZACKHZUNUSUQUNUSUPUOIZUQUMU
+    KULUSVEMZDGNUMUKULFVFODCABGPQRUPUOUAUBUCUNVCUOJZUPJZLURUNVAVGVBVHUKULVAVGTU
+    MABSUDULUMVBVHTUKBCSUEUFUOUPUGUHUKUMVDUTTULACSUIUJ $.
 
   ${
     xrlttrd.1 $e |- ( ph -> A e. RR* ) $.
