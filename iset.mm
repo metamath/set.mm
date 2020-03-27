@@ -77712,11 +77712,6 @@ $)
     ( cxr wcel cle wbr clt wn xrltnr wb xrlenlt anidms mpbird ) ABCZAADEZAAFEGZ
     AHMNOIAAJKL $.
 
-  $( Trichotomy law for extended reals.  (Contributed by NM, 7-Feb-2007.) $)
-  xrletri $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A <_ B \/ B <_ A ) ) $=
-    ( cxr wcel wa cle wbr wn clt wb xrltnle ancoms wi xrltle sylbird orrd ) ACD
-    ZBCDZEZABFGZBAFGZSTHZBAIGZUARQUCUBJBAKLRQUCUAMBANLOP $.
-
   $( Trichotomy law for extended reals.  (Contributed by FL, 2-Aug-2009.) $)
   xrletri3 $p |- ( ( A e. RR* /\ B e. RR* ) ->
                    ( A = B <-> ( A <_ B /\ B <_ A ) ) ) $=
