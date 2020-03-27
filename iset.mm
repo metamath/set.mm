@@ -77700,19 +77700,6 @@ $)
     WBWFWGABFVDKYAWIWKYAWHFFGHZFUACYBIVRFVGVHZWBWFWHYBQAFBFGSKTYAWJYBYCBFAFGSTV
     IVNVBKVBVS $.
 
-  ${
-    $d x y $.
-    $( Alternative definition of 'less than' in terms of 'less than or equal
-       to'.  (Contributed by Mario Carneiro, 6-Nov-2015.) $)
-    dflt2 $p |- < = ( <_ \ _I ) $=
-      ( vx vy clt cle cid cdif ltrel wss wrel difss lerel relss mp2 cv wbr wcel
-      cxr wa brel weq ltrelxr cxp lerelxr wn wne xrltlen equcom vex ideq bitr4i
-      sstri necon3abii anbi2i syl6bb brdif syl6bbr pm5.21nii eqbrriv ) ABCDEFZG
-      USDHDIUSIDEJZKUSDLMANZBNZCOZVAQPVBQPRZVAVBUSOZVAVBQQCUASVAVBQQUSUSDQQUBUT
-      UCUKSVDVCVAVBDOZVAVBEOZUDZRZVEVDVCVFVBVAUEZRVIVAVBUFVJVHVFVGVBVABATABTVGB
-      AUGVAVBBUHUIUJULUMUNVAVBDEUOUPUQUR $.
-  $}
-
   $( 'Less than' implies 'less than or equal' for extended reals.  (Contributed
      by NM, 19-Jan-2006.) $)
   xrltle $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A < B -> A <_ B ) ) $=
