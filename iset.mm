@@ -77703,8 +77703,8 @@ $)
   $( 'Less than' implies 'less than or equal' for extended reals.  (Contributed
      by NM, 19-Jan-2006.) $)
   xrltle $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A < B -> A <_ B ) ) $=
-    ( clt wbr cle cxr wcel wa wceq wo orc xrleloe syl5ibr ) ABCDZABEDAFGBFGHNAB
-    IZJNOKABLM $.
+    ( cxr wcel wa clt wbr wn cle xrltnsym xrlenlt sylibrd ) ACDBCDEABFGBAFGHABI
+    GABJABKL $.
 
   $( 'Less than or equal to' is reflexive for extended reals.  (Contributed by
      NM, 7-Feb-2007.) $)
