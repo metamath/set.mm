@@ -77723,9 +77723,11 @@ $)
      19-Jan-2006.) $)
   xrlelttr $p |- ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) ->
              ( ( A <_ B /\ B < C ) -> A < C ) ) $=
-    ( cxr wcel w3a cle wbr clt wceq wo wi wb xrleloe 3adant3 expd breq1 biimprd
-    xrlttr a1i jaod sylbid impd ) ADEZBDEZCDEZFZABGHZBCIHZACIHZUGUHABIHZABJZKZU
-    IUJLZUDUEUHUMMUFABNOUGUKUNULUGUKUIUJABCSPULUNLUGULUJUIABCIQRTUAUBUC $.
+    ( cxr wcel w3a cle wbr clt wa wn simprl simpl1 simpl2 xrlenlt syl2anc mpbid
+    wb pm2.21d idd wo simprr wi simpl3 wor xrltso sowlin mpan syl3anc mpjaod ex
+    mpd ) ADEZBDEZCDEZFZABGHZBCIHZJZACIHZUPUSJZBAIHZUTUTVAVBUTVAUQVBKZUPUQURLVA
+    UMUNUQVCRUMUNUOUSMZUMUNUOUSNZABOPQSVAUTTVAURVBUTUAZUPUQURUBVAUNUOUMURVFUCZV
+    EUMUNUOUSUDVDDIUEUNUOUMFVGUFDBCAIUGUHUIULUJUK $.
 
   $( Transitive law for ordering on extended reals.  (Contributed by NM,
      19-Jan-2006.) $)
