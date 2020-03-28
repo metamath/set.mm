@@ -8810,6 +8810,17 @@ $)
   $}
 
   ${
+    mpjao3dan.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    mpjao3dan.2 $e |- ( ( ph /\ th ) -> ch ) $.
+    mpjao3dan.3 $e |- ( ( ph /\ ta ) -> ch ) $.
+    mpjao3dan.4 $e |- ( ph -> ( ps \/ th \/ ta ) ) $.
+    $( Eliminate a 3-way disjunction in a deduction.  (Contributed by Thierry
+       Arnoux, 13-Apr-2018.) $)
+    mpjao3dan $p |- ( ph -> ch ) $=
+      ( wo jaodan w3o df-3or sylib mpjaodan ) ABDJZCEABCDFGKHABDELPEJIBDEMNO $.
+  $}
+
+  ${
     3jaao.1 $e |- ( ph -> ( ps -> ch ) ) $.
     3jaao.2 $e |- ( th -> ( ta -> ch ) ) $.
     3jaao.3 $e |- ( et -> ( ze -> ch ) ) $.
