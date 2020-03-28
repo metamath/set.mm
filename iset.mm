@@ -77896,59 +77896,6 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d x y z B $.
-    $( The rational numbers are dense in ` RR ` : any two real numbers have a
-       rational between them.  Exercise 6 of [Apostol] p. 28.  (Contributed by
-       NM, 18-Nov-2004.)  (Proof shortened by Mario Carneiro, 13-Jun-2014.) $)
-    qbtwnre $p |- ( ( A e. RR /\ B e. RR /\ A < B ) ->
-                  E. x e. QQ ( A < x /\ x < B ) ) $=
-      ( vy vz cr wcel clt wbr cv wa cq wrex c1 co cmin wi cz recnd wb cn posdif
-      cdiv cc0 resubcl nnrecl sylan ex ancoms sylbid cmul cle caddc wreu adantl
-      nnre simplr remulcld peano2rem syl zbtwnre 3syl znq an32 ad2antrl adantrr
-      reurex simpll zre ad2antll ltletr syl3anc subdid breq2d resubcld ltdivmul
-      nngt0 syl112anc ltsub13 3bitr4rd anbi1d ancom syl6bb ltmuldiv2 3imtr3d cc
-      1red wceq ax-1cn npcan sylancl bitr4d biimpd anim12d syl5bi breq2 anbi12d
-      breq1 rspcev syl6an expd expr rexlimdv mpd rexlimdva syld 3impia ) BFGZCF
-      GZBCHIZBAJZHIZXKCHIZKZALMZXHXIKZXJNDJZUCOCBPOZHIZDUAMZXOXPXJUDXRHIZXTBCUB
-      XIXHYAXTQXIXHKZYAXTYBXRFGZYAXTCBUEXRDUFUGUHUIUJXPXSXODUAXPXQUAGZKZXQCUKOZ
-      NPOZEJZULIZYHYGNUMOZHIZKZERMZXSXOQZYEYGFGZYLERUNYMYEYFFGZYOYEXQCYDXQFGZXP
-      XQUPZUOXHXIYDUQURZYFUSUTZEYGVAYLERVGVBYEYLYNERXPYDYHRGZYLYNQXPYDUUAKZKZYL
-      XSXOUUCYHXQUCOZLGZYLXSKZBUUDHIZUUDCHIZKZXOUUBUUEXPUUAYDUUEYHXQVCUIUOUUFYI
-      XSKZYKKUUCUUIYIYKXSVDUUCUUJUUGYKUUHUUCXQBUKOZYGHIZYIKZUUKYHHIZUUJUUGUUCUU
-      KFGZYOYHFGZUUMUUNQUUCXQBYDYQXPUUAYRVEZXHXIUUBVHZURZXPYDYOUUAYTVFUUAUUPXPY
-      DYHVIVJZUUKYGYHVKVLUUCUUMXSYIKUUJUUCUULXSYIUUCNXQXRUKOZHIZNYFUUKPOZHIZXSU
-      ULUUCUVAUVCNHUUCXQCBUUCXQUUQSUUCCXHXIUUBUQZSUUCBUURSVMVNUUCNFGZYCYQUDXQHI
-      ZXSUVBTUUCWGZUUCCBUVEUURVOUUQYDUVGXPUUAXQVQVEZNXRXQVPVRUUCUUOYPUVFUULUVDT
-      UUSXPYDYPUUAYSVFZUVHUUKYFNVSVLVTWAXSYIWBWCUUCXHUUPYQUVGUUNUUGTUURUUTUUQUV
-      IBYHXQWDVRWEUUCYKUUHUUCYKYHYFHIZUUHUUCYJYFYHHUUCYFWFGNWFGYJYFWHUUCYFUVJSW
-      IYFNWJWKVNUUCUUPXIYQUVGUUHUVKTUUTUVEUUQUVIYHCXQVPVRWLWMWNWOXNUUIAUUDLXKUU
-      DWHXLUUGXMUUHXKUUDBHWPXKUUDCHWRWQWSWTXAXBXCXDXEXFXG $.
-
-    $( The rational numbers are dense in ` RR* ` : any two extended real
-       numbers have a rational between them.  (Contributed by NM, 6-Feb-2007.)
-       (Proof shortened by Mario Carneiro, 23-Aug-2015.) $)
-    qbtwnxr $p |- ( ( A e. RR* /\ B e. RR* /\ A < B )
-                   -> E. x e. QQ ( A < x /\ x < B ) ) $=
-      ( wcel clt wbr wa cq wrex cr cpnf wceq qbtwnre c1 adantr adantl a1d breq2
-      cmnf breq1 cxr cv w3o wi elxr 3expia caddc co simpl peano2re ltp1 syl3anc
-      qre syl simplr breqtrrd anim2d reximdva mpd rexr wb nltmnf pm2.21d sylbid
-      ltpnf sylan 3jaodan sylan2b pnfnlt cmin peano2rem simpr ltm1 simpll mnflt
-      wn eqbrtrd anim1d 1re ax-mp mpbiri cz 1z anbi12d rspcev mpan syl2an 3mix3
-      zq sylibr 3jaoian sylanb 3impia ) BUADZCUADZBCEFZBAUBZEFZWQCEFZGZAHIZWNBJ
-      DZBKLZBSLZUCZWOWPXAUDZBUEZXBWOXFXCXDWOXBCJDZCKLZCSLZUCZXFCUEZXBXHXFXIXJXB
-      XHWPXAABCMUFXBXIGZXAWPXMWRWQBNUGUHZEFZGZAHIZXAXMXBXNJDZBXNEFZXQXBXIUIXBXR
-      XIBUJOXBXSXIBUKOABXNMULXMXPWTAHXMWQHDZGZXOWSWRYAWSXOYAWQKCEXTWQKEFZXMXTWQ
-      JDZYBWQUMZWQVEUNPXBXIXTUOUPQUQURUSQXBWNXJXFBUTWNXJGZWPBSEFZXAXJWPYFVAWNCS
-      BERPYEYFXAWNYFVPXJBVBOVCVDZVFVGVHXCWOGZWPKCEFZXAXCWPYIVAWOBKCETOYHYIXAWOY
-      IVPXCCVIPVCVDWOXDXKXFXLXDXHXFXIXJXDXHGZXAWPYJCNVJUHZWQEFZWSGZAHIZXAYJYKJD
-      ZXHYKCEFZYNXHYOXDCVKPXDXHVLXHYPXDCVMPAYKCMULYJYMWTAHYJXTGZYLWRWSYQWRYLYQB
-      SWQEXDXHXTVNYQYCSWQEFXTYCYJYDPWQVOUNVQQVRURUSQXDXIGXAWPXDBNEFZNCEFZXAXIXD
-      YRSNEFZNJDZYTVSNVOVTBSNETWAXIYSNKEFZUUAUUBVSNVEVTCKNERWANHDZYRYSGZXANWBDU
-      UCWCNWIVTWTUUDANHWQNLWRYRWSYSWQNBERWQNCETWDWEWFWGQXDWNXJXFXDXEWNXDXBXCWHX
-      GWJYGVFVGVHWKWLWM $.
-  $}
-
-  ${
     $d x A $.
     $( If a nonnegative real is less than any positive rational, it is zero.
        (Contributed by NM, 6-Feb-2007.) $)
