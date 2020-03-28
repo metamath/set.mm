@@ -77896,21 +77896,6 @@ $)
   $}
 
   ${
-    $d x A $.
-    $( If a nonnegative real is less than any positive rational, it is zero.
-       (Contributed by NM, 6-Feb-2007.) $)
-    qsqueeze $p |- ( ( A e. RR /\ 0 <_ A /\ A. x e. QQ ( 0 < x -> A < x ) ) ->
-                   A = 0 ) $=
-      ( cr wcel cc0 cle wbr cv clt wi cq wral w3a wceq wn wa wrex wb 0re ltnle
-      mpan qbtwnre mp3an1 qre ltnsym con2d sylan2 anim2d reximdva syld rexanali
-      ex sylbird syl6ib con4d imp 3adant2 letri3 mpan2 rbaibd 3adant3 mpbird )
-      BCDZEBFGZEAHZIGZBVEIGZJAKLZMBENZBEFGZVCVHVJVDVCVHVJVCVJVHVCVJOZVFVGOZPZAK
-      QZVHOVCVKEBIGZVNECDZVCVOVKRSEBTUAVCVOVFVEBIGZPZAKQZVNVCVOVSVPVCVOVSSAEBUB
-      UCULVCVRVMAKVCVEKDZPVQVLVFVTVCVECDZVQVLJVEUDVCWAPVGVQBVEUEUFUGUHUIUJUMVFV
-      GAKUKUNUOUPUQVCVDVIVJRVHVCVIVJVDVCVPVIVJVDPRSBEURUSUTVAVB $.
-  $}
-
-  ${
     $d x A $.  $d x B $.
     $( Lemma for ~ qextlt and qextle .  (Contributed by Mario Carneiro,
        3-Oct-2014.) $)
