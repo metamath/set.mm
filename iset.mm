@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-Mar-2020
+$( iset.mm - Version of 27-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -74878,6 +74878,13 @@ $)
     UBZQUNVCUNBAVFVEUCUDUNVDURKFUNBAUNBVFTZUNAVETZUEUFUGUNUTUPUNABVHVGUIUHUNBAV
     FVEQUJUK $.
 
+  $( Trichotomy law.  (Contributed by Jim Kingdon, 27-Mar-2020.) $)
+  zletric $p |- ( ( A e. ZZ /\ B e. ZZ ) -> ( A <_ B \/ B <_ A ) ) $=
+    ( cz wcel wa cr clt wbr wceq w3o cle zre anim12i ztri3or ltle orc syl6 eqle
+    wo wi ex adantr ancoms olc 3jaod sylc ) ACDZBCDZEAFDZBFDZEZABGHZABIZBAGHZJA
+    BKHZBAKHZSZUGUIUHUJALBLMABNUKULUQUMUNUKULUOUQABOUOUPPZQUKUMUOUQUIUMUOTUJUIU
+    MUOABRUAUBURQUKUNUPUQUJUIUNUPTBAOUCUPUOUDQUEUF $.
+
   $( 'Less than' expressed in terms of 'less than or equal to'.  (Contributed
      by Jim Kingdon, 14-Mar-2020.) $)
   zltnle $p |- ( ( A e. ZZ /\ B e. ZZ ) -> ( A < B <-> -. B <_ A ) ) $=
@@ -77881,10 +77888,11 @@ $)
        (Contributed by NM, 28-Aug-2005.) $)
     z2ge $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
                 E. k e. ZZ ( M <_ k /\ N <_ k ) ) $=
-      ( cz wcel wa cle wbr cif cv wrex ifcl ancoms cr zre max1 jca syl2an breq2
-      max2 wceq anbi12d rspcev syl2anc ) BDEZCDEZFBCGHZCBIZDEZBUHGHZCUHGHZFZBAJ
-      ZGHZCUMGHZFZADKUFUEUIUGCBDLMUEBNEZCNEZULUFBOCOUQURFUJUKBCPBCTQRUPULAUHDUM
-      UHUAUNUJUOUKUMUHBGSUMUHCGSUBUCUD $.
+      ( cz wcel wa cle wbr cv wrex simplr simpr zred leidd breq2 anbi12d rspcev
+      wceq syl12anc simpll zletric mpjaodan ) BDEZCDEZFZBCGHZBAIZGHZCUGGHZFZADJ
+      ZCBGHZUEUFFZUDUFCCGHZUKUCUDUFKZUEUFLUMCUMCUOMNUJUFUNFACDUGCRUHUFUIUNUGCBG
+      OUGCCGOPQSUEULFZUCBBGHZULUKUCUDULTZUPBUPBURMNUEULLUJUQULFABDUGBRUHUQUIULU
+      GBBGOUGBCGOPQSBCUAUB $.
   $}
 
   ${
