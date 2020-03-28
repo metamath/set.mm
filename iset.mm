@@ -77896,43 +77896,6 @@ $)
   $}
 
   ${
-    $d x A $.  $d x B $.
-    $( Lemma for ~ qextlt and qextle .  (Contributed by Mario Carneiro,
-       3-Oct-2014.) $)
-    qextltlem $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A < B ->
-      E. x e. QQ ( -. ( x < A <-> x < B ) /\ -. ( x <_ A <-> x <_ B ) ) ) ) $=
-      ( cxr wcel wa clt wbr cv cq wrex wb wn cle syl2anc xrltle 2thd nbbn sylib
-      wi qbtwnxr 3expia simprl simplll rexrd ad2antlr xrltnle mpbid mtod simprr
-      qre simpllr mpd jca ex reximdva syld ) BDEZCDEZFZBCGHZBAIZGHZVBCGHZFZAJKZ
-      VBBGHZVDLMZVBBNHZVBCNHZLMZFZAJKURUSVAVFABCUAUBUTVEVLAJUTVBJEZFZVEVLVNVEFZ
-      VHVKVOVGMZVDLVHVOVPVDVOVGVIVOVCVIMZVNVCVDUCVOURVBDEZVCVQLURUSVMVEUDZVMVRU
-      TVEVMVBVBUKUEUFZBVBUGOUHZVOVRURVGVITVTVSVBBPOUIVNVCVDUJZQVGVDRSVOVQVJLVKV
-      OVQVJWAVOVDVJWBVOVRUSVDVJTVTURUSVMVEULVBCPOUMQVIVJRSUNUOUPUQ $.
-
-    $( An extensionality-like property for extended real ordering.
-       (Contributed by Mario Carneiro, 3-Oct-2014.) $)
-    qextlt $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A = B <->
-      A. x e. QQ ( x < A <-> x < B ) ) ) $=
-      ( cxr wcel wa wceq cv clt wbr wb cq wral wn wrex cle qextltlem simpl syl6
-      reximi breq2 ralrimivw wne wo xrlttri2 wi bicom sylnib ancoms jaod sylbid
-      rexnal syl6ib necon4ad impbid2 ) BDEZCDEZFZBCGZAHZBIJZUTCIJZKZALMZUSVCALB
-      CUTIUAUBURVDBCURBCUCZVCNZALOZVDNURVEBCIJZCBIJZUDVGBCUEURVHVGVIURVHVFUTBPJ
-      ZUTCPJZKNZFZALOVGABCQVMVFALVFVLRTSUQUPVIVGUFUQUPFVIVBVAKZNZVKVJKNZFZALOVG
-      ACBQVQVFALVQVNVCVOVPRVBVAUGUHTSUIUJUKVCALULUMUNUO $.
-
-    $( An extensionality-like property for extended real ordering.
-       (Contributed by Mario Carneiro, 3-Oct-2014.) $)
-    qextle $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A = B <->
-      A. x e. QQ ( x <_ A <-> x <_ B ) ) ) $=
-      ( cxr wcel wa wceq cv cle wbr wb cq wral wn wrex clt qextltlem simpr syl6
-      reximi breq2 ralrimivw wne wo xrlttri2 wi bicom sylnib ancoms jaod sylbid
-      rexnal syl6ib necon4ad impbid2 ) BDEZCDEZFZBCGZAHZBIJZUTCIJZKZALMZUSVCALB
-      CUTIUAUBURVDBCURBCUCZVCNZALOZVDNURVEBCPJZCBPJZUDVGBCUEURVHVGVIURVHUTBPJZU
-      TCPJZKNZVFFZALOVGABCQVMVFALVLVFRTSUQUPVIVGUFUQUPFVIVKVJKNZVBVAKZNZFZALOVG
-      ACBQVQVFALVQVOVCVNVPRVBVAUGUHTSUIUJUKVCALULUMUNUO $.
-  $}
-
-  ${
     $d x y A $.  $d x y B $.
     $( Show that ` A ` is less than ` B ` by showing that there is no positive
        bound on the difference.  (Contributed by Mario Carneiro,
