@@ -77895,36 +77895,6 @@ $)
       GBBGOUGBCGOPQSBCUAUB $.
   $}
 
-  ${
-    $d x y A $.  $d x y B $.
-    $( Show that ` A ` is less than ` B ` by showing that there is no positive
-       bound on the difference.  (Contributed by Mario Carneiro,
-       12-Jun-2014.) $)
-    xralrple $p |- ( ( A e. RR* /\ B e. RR ) ->
-                   ( A <_ B <-> A. x e. RR+ A <_ ( B + x ) ) ) $=
-      ( vy cxr wcel cr wa cle wbr caddc co crp adantl mpbid rexrd wn cq syl2anc
-      clt cv wral cc0 rpge0 simplr rpre addge01d simpll readdcld xrletr syl3anc
-      mpan2d ralrimdva wrex rexr simpl qbtwnxr 3expia cmin simprrl qre ad2antrl
-      wi wb difrp simprrr xrltnle recnd pncan3d breq2d mtbird wceq oveq2 notbid
-      rspcev rexnal sylib rexlimdvaa syld con2d xrlenlt sylan2 sylibrd impbid )
-      BEFZCGFZHZBCIJZBCAUAZKLZIJZAMUBZWGWHWKAMWGWIMFZHZWHCWJIJZWKWNUCWIIJZWOWMW
-      PWGWIUDNWNCWIWEWFWMUEZWMWIGFWGWIUFNZUGOWNWECEFZWJEFWHWOHWKVCWEWFWMUHWNCWQ
-      PWNWJWNCWIWQWRUIPBCWJUJUKULUMWGWLCBTJZQZWHWGWTWLWGWTCDUAZTJZXBBTJZHZDRUNZ
-      WLQZWGWSWEWTXFVCWFWSWECUOZNWEWFUPWSWEWTXFDCBUQURSWGXEXGDRWGXBRFZXEHZHZWKQ
-      ZAMUNZXGXKXBCUSLZMFZBCXNKLZIJZQZXMXKXCXOWGXIXCXDUTXKWFXBGFZXCXOVDWEWFXJUE
-      ZXIXSWGXEXBVAVBZCXBVESOXKXQBXBIJZXKXDYBQZWGXIXCXDVFXKXBEFWEXDYCVDXKXBYAPW
-      EWFXJUHXBBVGSOXKXPXBBIXKCXBXKCXTVHXKXBYAVHVIVJVKXLXRAXNMWIXNVLZWKXQYDWJXP
-      BIWIXNCKVMVJVNVOSWKAMVPVQVRVSVTWFWEWSWHXAVDXHBCWAWBWCWD $.
-
-    $( Show that ` A ` is less than ` B ` by showing that there is no positive
-       bound on the difference.  (Contributed by Mario Carneiro,
-       12-Jun-2014.) $)
-    alrple $p |- ( ( A e. RR /\ B e. RR ) ->
-                   ( A <_ B <-> A. x e. RR+ A <_ ( B + x ) ) ) $=
-      ( cr wcel cxr cle wbr cv caddc co crp wral wb rexr xralrple sylan ) BDEBF
-      ECDEBCGHBCAIJKGHALMNBOABCPQ $.
-  $}
-
   $( Equality of two extended numbers with ` -e ` in front of them.
      (Contributed by FL, 26-Dec-2011.)  (Proof shortened by Mario Carneiro,
      20-Aug-2015.) $)
