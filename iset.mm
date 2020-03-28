@@ -77902,12 +77902,6 @@ $)
     ( wceq cpnf cmnf cneg cif cxne eqeq1 negeq ifbieq2d df-xneg 3eqtr4g ) ABCZA
     DCZEAECZDAFZGZGBDCZEBECZDBFZGZGAHBHNOSRUBEABDINPTQUADABEIABJKKALBLM $.
 
-  $( A negative extended real exists as a set.  (Contributed by Mario Carneiro,
-     20-Aug-2015.) $)
-  xnegex $p |- -e A e. _V $=
-    ( cxne cpnf wceq cmnf cneg cif cvv df-xneg cxr mnfxr elexi pnfex negex ifex
-    eqeltri ) ABACDZEAEDZCAFZGZGHAIQETEJKLRCSMANOOP $.
-
   $( Minus ` +oo ` .  Remark of [BourbakiTop1] p.  IV.15.  (Contributed by FL,
      26-Dec-2011.) $)
   xnegpnf $p |- -e +oo = -oo $=
