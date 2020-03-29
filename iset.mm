@@ -78023,6 +78023,11 @@ $)
       ( cxr wcel cxne xnegcl syl ) ABDEBFDECBGH $.
   $}
 
+  $( The set of extended reals exists.  (Contributed by NM, 24-Dec-2006.) $)
+  xrex $p |- RR* e. _V $=
+    ( cxr cr cpnf cmnf cpr cun cvv df-xr reex wcel pnfxr mnfxr prexg mp2an unex
+    eqeltri ) ABCDEZFGHBQICAJDAJQGJKLCDAAMNOP $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Real number intervals
