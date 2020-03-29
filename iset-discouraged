@@ -74,8 +74,11 @@
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
 "df-mnf" is used by "mnfnre".
+"df-mnf" is used by "mnfxr".
+"df-mnf" is used by "pnfnemnf".
 "df-pnf" is used by "mnfnre".
 "df-pnf" is used by "pnfnre".
+"df-pnf" is used by "pnfxr".
 "df-tru" is used by "tru".
 "dvelimALT" is used by "hbsb4".
 "equsalh" is used by "dvelimALT".
@@ -249,8 +252,8 @@ New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
 New usage of "df-iord" is discouraged (1 uses).
-New usage of "df-mnf" is discouraged (1 uses).
-New usage of "df-pnf" is discouraged (2 uses).
+New usage of "df-mnf" is discouraged (3 uses).
+New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-tru" is discouraged (1 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
