@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Mar-2020
+$( iset.mm - Version of 29-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -78158,17 +78158,16 @@ $)
       ixxss1.3 $e |- ( ( A e. RR* /\ B e. RR* /\ w e. RR* ) ->
                        ( ( A W B /\ B T w ) -> A R w ) ) $.
       $( Subset relationship for intervals of extended reals.  (Contributed by
-         Mario Carneiro, 3-Nov-2013.)  (Revised by Mario Carneiro,
-         28-Apr-2015.) $)
-      ixxss1 $p |- ( ( A e. RR* /\ A W B ) ->
+         Jim Kingdon, 29-Mar-2020.) $)
+      ixxss1g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ A W B ) ) ->
                    ( B P C ) C_ ( A O C ) ) $=
-        ( cxr wcel wbr wa co cv w3a elixx3g simplbi adantl simp3d simplr simpld
-        simprbi wi simpll simp1d syl3anc mp2and simprd wb simp2d elixx1 syl2anc
-        mpbir3and ex ssrdv ) EQRZEFMSZTZDFGHUAZEGLUAZVFDUBZVGRZVIVHRZVFVJTZVKVI
-        QRZEVIISZVIGJSZVLFQRZGQRZVMVJVPVQVMUCZVFVJVRFVIKSZVOTZABCFGVIKJHOUDZUEU
-        FZUGZVLVEVSVNVDVEVJUHVLVSVOVJVTVFVJVRVTWAUJUFZUIVLVDVPVMVEVSTVNUKVDVEVJ
-        ULZVLVPVQVMWBUMWCPUNUOVLVSVOWDUPVLVDVQVKVMVNVOUCUQWEVLVPVQVMWBURABCEGVI
-        IJLNUSUTVAVBVC $.
+        ( cxr wcel wa wbr co cv w3a simpr simpllr simplrl elixx1 syl2anc simp1d
+        wb mpbid simplrr simp2d wi simplll syl3anc mp2and simp3d mpbir3and ex
+        ssrdv ) EQRZFQRZSZGQRZEFMTZSZSZDFGHUAZEGLUAZVHDUBZVIRZVKVJRZVHVLSZVMVKQ
+        RZEVKITZVKGJTZVNVOFVKKTZVQVNVLVOVRVQUCZVHVLUDVNVCVEVLVSUJVBVCVGVLUEZVDV
+        EVFVLUFZABCFGVKKJHOUGUHUKZUIZVNVFVRVPVDVEVFVLULVNVOVRVQWBUMVNVBVCVOVFVR
+        SVPUNVBVCVGVLUOZVTWCPUPUQVNVOVRVQWBURVNVBVEVMVOVPVQUCUJWDWAABCEGVKIJLNU
+        GUHUSUTVA $.
     $}
 
     ${
