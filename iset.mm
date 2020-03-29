@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Mar-2020
+$( iset.mm - Version of 28-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -78115,10 +78115,9 @@ $)
       AHHKKLHKMLTUAFNFUBOABCDEFGPTUAFQRS $.
 
     $( The set of intervals of extended reals maps to subsets of extended
-       reals.  (Contributed by Mario Carneiro, 4-Jul-2014.) $)
-    ixxssxr $p |- ( A O B ) C_ RR* $=
-      ( co cxr cpw wcel wss cop cfv df-ov cxp ixxf 0elpw eqeltri ovex elpw mpbi
-      f0cli ) DEHJZKLZMUFKNUFDEOZHPUGDEHQKKRUGUHHABCFGHISKTUEUAUFKDEHUBUCUD $.
+       reals.  (Contributed by Jim Kingdon, 28-Mar-2020.) $)
+    ixxssxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A O B ) C_ RR* ) $=
+      ( cxr wcel wa co cpw ixxf fovcl elpwid ) DJKEJKLDEHMJDEJNJJHABCFGHIOPQ $.
 
     $( Membership in a set of open intervals of extended reals.  We use the
        fact that an operation's value is empty outside of its domain to show
