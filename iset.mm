@@ -78196,18 +78196,18 @@ $)
       ixxss12.4 $e |- ( ( w e. RR* /\ D e. RR* /\ B e. RR* ) ->
                         ( ( w U D /\ D X B ) -> w S B ) ) $.
       $( Subset relationship for intervals of extended reals.  (Contributed by
-         Mario Carneiro, 20-Feb-2015.)  (Revised by Mario Carneiro,
-         28-Apr-2015.) $)
-      ixxss12 $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( A W C /\ D X B ) ) ->
-        ( C P D ) C_ ( A O B ) ) $=
-        ( cxr wa wbr co cv elixx3g simplbi adantl simp3d simplrl simprbi simpld
-        wcel w3a wi simplll simp1d syl3anc mp2and simprd simplrr simp2d simpllr
-        wb elixx1 ad2antrr mpbir3and ex ssrdv ) EUAUMZFUAUMZUBZEGOUCZHFPUCZUBZU
-        BZDGHIUDZEFNUDZVPDUEZVQUMZVSVRUMZVPVTUBZWAVSUAUMZEVSJUCZVSFKUCZWBGUAUMZ
-        HUAUMZWCVTWFWGWCUNZVPVTWHGVSLUCZVSHMUCZUBZABCGHVSLMIRUFZUGUHZUIZWBVMWIW
-        DVLVMVNVTUJWBWIWJVTWKVPVTWHWKWLUKUHZULWBVJWFWCVMWIUBWDUOVJVKVOVTUPWBWFW
-        GWCWMUQWNSURUSWBWJVNWEWBWIWJWOUTVLVMVNVTVAWBWCWGVKWJVNUBWEUOWNWBWFWGWCW
-        MVBVJVKVOVTVCTURUSVLWAWCWDWEUNVDVOVTABCEFVSJKNQVEVFVGVHVI $.
+         Jim Kingdon, 29-Mar-2020.) $)
+      ixxss12g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
+          ( C e. RR* /\ D e. RR* ) /\ ( A W C /\ D X B ) ) ->
+          ( C P D ) C_ ( A O B ) ) $=
+        ( cxr wcel wa wbr w3a co cv simpr simpl2l simpl2r elixx1 syl2anc simp1d
+        wb mpbid simpl3l simp2d simpl1l syl3anc mp2and simp3d simpl3r mpbir3and
+        wi simpl1r ex ssrdv ) EUAUBZFUAUBZUCZGUAUBZHUAUBZUCZEGOUDZHFPUDZUCZUEZD
+        GHIUFZEFNUFZVQDUGZVRUBZVTVSUBZVQWAUCZWBVTUAUBZEVTJUDZVTFKUDZWCWDGVTLUDZ
+        VTHMUDZWCWAWDWGWHUEZVQWAUHWCVKVLWAWIUNVKVLVJVPWAUIZVKVLVJVPWAUJZABCGHVT
+        LMIRUKULUOZUMZWCVNWGWEVNVOVJVMWAUPWCWDWGWHWLUQWCVHVKWDVNWGUCWEVDVHVIVMV
+        PWAURZWJWMSUSUTWCWHVOWFWCWDWGWHWLVAVNVOVJVMWAVBWCWDVLVIWHVOUCWFVDWMWKVH
+        VIVMVPWAVEZTUSUTWCVHVIWBWDWEWFUEUNWNWOABCEFVTJKNQUKULVCVFVG $.
     $}
   $}
 
