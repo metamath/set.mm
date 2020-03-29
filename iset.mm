@@ -78024,6 +78024,1516 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Real number intervals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c (,) $.
+  $c (,] $.
+  $c [,) $.
+  $c [,] $.
+
+  $( Extend class notation with the set of open intervals of extended reals. $)
+  cioo $a class (,) $.
+
+  $( Extend class notation with the set of open-below, closed-above intervals
+     of extended reals. $)
+  cioc $a class (,] $.
+
+  $( Extend class notation with the set of closed-below, open-above intervals
+     of extended reals. $)
+  cico $a class [,) $.
+
+  $( Extend class notation with the set of closed intervals of extended
+     reals. $)
+  cicc $a class [,] $.
+
+  ${
+    $d x y z $.
+    $( Define the set of open intervals of extended reals.  (Contributed by NM,
+       24-Dec-2006.) $)
+    df-ioo $a |- (,) = ( x e. RR* , y e. RR* |->
+                   { z e. RR* | ( x < z /\ z < y ) } ) $.
+
+    $( Define the set of open-below, closed-above intervals of extended reals.
+       (Contributed by NM, 24-Dec-2006.) $)
+    df-ioc $a |- (,] = ( x e. RR* , y e. RR* |->
+                   { z e. RR* | ( x < z /\ z <_ y ) } ) $.
+
+    $( Define the set of closed-below, open-above intervals of extended reals.
+       (Contributed by NM, 24-Dec-2006.) $)
+    df-ico $a |- [,) = ( x e. RR* , y e. RR* |->
+                   { z e. RR* | ( x <_ z /\ z < y ) } ) $.
+
+    $( Define the set of closed intervals of extended reals.  (Contributed by
+       NM, 24-Dec-2006.) $)
+    df-icc $a |- [,] = ( x e. RR* , y e. RR* |->
+                   { z e. RR* | ( x <_ z /\ z <_ y ) } ) $.
+  $}
+
+  ${
+    $d b w x y z A $.  $d w x y z C $.  $d w x y z D $.  $d b w O $.  $d w Q $.
+    $d b w x y z B $.  $d b w P $.  $d x y z R $.  $d x y z S $.  $d x y z T $.
+    $d x y z U $.  $d w V $.  $d w W $.  $d w X $.
+    ixx.1 $e |- O = ( x e. RR* , y e. RR* |->
+                   { z e. RR* | ( x R z /\ z S y ) } ) $.
+    $( Value of the interval function.  (Contributed by Mario Carneiro,
+       3-Nov-2013.) $)
+    ixxval $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A O B ) =
+                 { z e. RR* | ( A R z /\ z S B ) } ) $=
+      ( cxr cv wbr wa crab wceq breq1 anbi1d rabbidv breq2 anbi2d rabex ovmpt2
+      xrex ) ABDEJJAKZCKZFLZUEBKZGLZMZCJNDUEFLZUEEGLZMZCJNHUJUHMZCJNUDDOZUIUMCJ
+      UNUFUJUHUDDUEFPQRUGEOZUMULCJUOUHUKUJUGEUEGSTRIULCJUCUAUB $.
+
+    $( Membership in an interval of extended reals.  (Contributed by Mario
+       Carneiro, 3-Nov-2013.) $)
+    elixx1 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( C e. ( A O B ) <->
+                 ( C e. RR* /\ A R C /\ C S B ) ) ) $=
+      ( cxr wcel wa co cv wbr crab w3a ixxval eleq2d breq2 breq1 anbi12d 3anass
+      wceq elrab bitr4i syl6bb ) DKLEKLMZFDEINZLFDCOZGPZUKEHPZMZCKQZLZFKLZDFGPZ
+      FEHPZRZUIUJUOFABCDEGHIJSTUPUQURUSMZMUTUNVACFKUKFUEULURUMUSUKFDGUAUKFEHUBU
+      CUFUQURUSUDUGUH $.
+
+    $( The set of intervals of extended reals maps to subsets of extended
+       reals.  (Contributed by FL, 14-Jun-2007.)  (Revised by Mario Carneiro,
+       16-Nov-2013.) $)
+    ixxf $p |- O : ( RR* X. RR* ) --> ~P RR* $=
+      ( cv wbr wa cxr crab cpw wcel wral cxp wf wss ssrab2 xrex elpw2 rgen2w
+      mpbir fmpt2 mpbi ) AHCHZDIUFBHEIJZCKLZKMZNZBKOAKOKKPUIFQUJABKKUJUHKRUGCKS
+      UHKTUAUCUBABKKUHUIFGUDUE $.
+
+    $( The set of intervals of extended reals exists.  (Contributed by Mario
+       Carneiro, 3-Nov-2013.)  (Revised by Mario Carneiro, 17-Nov-2014.) $)
+    ixxex $p |- O e. _V $=
+      ( cxr cxp cpw xrex xpex pwex wf wss ixxf fssxp ax-mp ssexi ) FHHIZHJZIZTU
+      AHHKKLHKMLTUAFNFUBOABCDEFGPTUAFQRS $.
+
+    $( The set of intervals of extended reals maps to subsets of extended
+       reals.  (Contributed by Mario Carneiro, 4-Jul-2014.) $)
+    ixxssxr $p |- ( A O B ) C_ RR* $=
+      ( co cxr cpw wcel wss cop cfv df-ov cxp ixxf 0elpw eqeltri ovex elpw mpbi
+      f0cli ) DEHJZKLZMUFKNUFDEOZHPUGDEHQKKRUGUHHABCFGHISKTUEUAUFKDEHUBUCUD $.
+
+    $( Membership in a set of open intervals of extended reals.  We use the
+       fact that an operation's value is empty outside of its domain to show
+       ` A e. RR* ` and ` B e. RR* ` .  (Contributed by Mario Carneiro,
+       3-Nov-2013.) $)
+    elixx3g $p |- ( C e. ( A O B ) <->
+          ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\ ( A R C /\ C S B ) ) ) $=
+      ( cxr wcel wa wbr w3a co anass df-3an bitrd c0 anbi1i wb elixx1 3anass wn
+      ibar syl5bb cxp cpw ixxf fdmi ndmov eleq2d pm2.21i simpl pm5.21ni pm2.61i
+      noel 3bitr4ri ) DKLZEKLZMZFKLZMZDFGNZFEHNZMZMVBVCVGMZMZUTVAVCOZVGMFDEIPZL
+      ZVBVCVGQVJVDVGUTVAVCRUAVBVLVIUBVBVLVCVEVFOZVIABCDEFGHIJUCVMVHVBVIVCVEVFUD
+      VBVHUFUGSVBUEZVLFTLZVIVNVKTFDEKIKKUHKUIIABCGHIJUJUKULUMVOVBVIVOVBFURUNVBV
+      HUOUPSUQUS $.
+
+    ${
+      ixx.2 $e |- P = ( x e. RR* , y e. RR* |->
+                       { z e. RR* | ( x T z /\ z U y ) } ) $.
+      ixx.3 $e |- ( ( A e. RR* /\ w e. RR* ) -> ( A R w -> A T w ) ) $.
+      ixx.4 $e |- ( ( w e. RR* /\ B e. RR* ) -> ( w S B -> w U B ) ) $.
+      $( An interval is a subset of its closure.  (Contributed by Paul Chapman,
+         18-Oct-2007.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+      ixxssixx $p |- ( A O B ) C_ ( A P B ) $=
+        ( cxr wcel wa wbr co cv crab elmpt2cl w3a wi simp1 simpl 3simpa expimpd
+        a1i syl2im simpr 3simpb ancoms 3jcad elixx1 3imtr4d mpcom ssriv ) DEFLU
+        AZEFGUAZEQRZFQRZSZDUBZVARZVFVBRZABQQAUBCUBZHTVIBUBITSCQUCEFLVFMUDVEVFQR
+        ZEVFHTZVFFITZUEZVJEVFJTZVFFKTZUEVGVHVEVMVJVNVOVMVJUFVEVJVKVLUGUKVEVCVMV
+        JVKSVNVCVDUHVJVKVLUIVCVJVKVNOUJULVEVDVMVJVLSVOVCVDUMVJVKVLUNVDVJVLVOVJV
+        DVLVOUFPUOUJULUPABCEFVFHILMUQABCEFVFJKGNUQURUSUT $.
+    $}
+
+    ${
+      ixxun.2 $e |- P = ( x e. RR* , y e. RR* |->
+                         { z e. RR* | ( x T z /\ z U y ) } ) $.
+      ixxun.3 $e |- ( ( B e. RR* /\ w e. RR* ) -> ( B T w <-> -. w S B ) ) $.
+      $( Split an interval into disjoint pieces.  (Contributed by Mario
+         Carneiro, 16-Jun-2014.) $)
+      ixxdisj $p |- ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) ->
+                      ( ( A O B ) i^i ( B P C ) ) = (/) ) $=
+        ( cxr wcel c0 wbr w3a co cin wss wceq elin elixx1 3adant3 biimpa simp3d
+        cv wa wb adantrr wn 3adant1 simp2d simpl2 simp1d syl2anc mpbid pm2.65da
+        adantrl pm2.21d syl5bi ssrdv ss0 syl ) EQRZFQRZGQRZUAZEFMUBZFGHUBZUCZSU
+        DVOSUEVLDVOSDUKZVORVPVMRZVPVNRZULZVLVPSRZVPVMVNUFVLVSVTVLVSVPFJTZVLVQWA
+        VRVLVQULVPQRZEVPITZWAVLVQWBWCWAUAZVIVJVQWDUMVKABCEFVPIJMNUGUHUIUJUNVLVR
+        WAUOZVQVLVRULZFVPKTZWEWFWBWGVPGLTZVLVRWBWGWHUAZVJVKVRWIUMVIABCFGVPKLHOU
+        GUPUIZUQWFVJWBWGWEUMVIVJVKVRURWFWBWGWHWJUSPUTVAVCVBVDVEVFVOVGVH $.
+
+      ixxun.4 $e |- Q = ( x e. RR* , y e. RR* |->
+                         { z e. RR* | ( x R z /\ z U y ) } ) $.
+      ixxun.5 $e |- ( ( w e. RR* /\ B e. RR* /\ C e. RR* ) ->
+                      ( ( w S B /\ B X C ) -> w U C ) ) $.
+      ixxun.6 $e |- ( ( A e. RR* /\ B e. RR* /\ w e. RR* ) ->
+                      ( ( A W B /\ B T w ) -> A R w ) ) $.
+      $( Split an interval into two parts.  (Contributed by Mario Carneiro,
+         16-Jun-2014.) $)
+      ixxun $p |- ( ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\
+                      ( A W B /\ B X C ) ) ->
+                    ( ( A O B ) u. ( B P C ) ) = ( A Q C ) ) $=
+        ( cxr wcel w3a wbr wa co cun cv wo elun wb simpl1 simpl2 elixx1 syl2anc
+        biimpa simp1d simp2d simp3d simplrr adantr simpl3 syl3anc mp2and jaodan
+        wi 3jca simplrl biimpar syldan exmid df-3an syl6bb jca biantrurd bitr4d
+        wn 3anan12 biantrud 3bitr2d orbi12d mpbiri impbida syl5bb eqrdv ) EUCUD
+        ZFUCUDZGUCUDZUEZEFOUFZFGPUFZUGZUGZDEFNUHZFGHUHZUIZEGIUHZDUJZWRUDWTWPUDZ
+        WTWQUDZUKZWOWTWSUDZWTWPWQULWOXCXDWOXCWTUCUDZEWTJUFZWTGMUFZUEZXDWOXAXHXB
+        WOXAUGZXEXFXGXIXEXFWTFKUFZWOXAXEXFXJUEZWOWHWIXAXKUMWHWIWJWNUNZWHWIWJWNU
+        OZABCEFWTJKNQUPUQZURZUSZXIXEXFXJXOUTXIXJWMXGXIXEXFXJXOVAWKWLWMXAVBXIXEW
+        IWJXJWMUGXGVHXPWOWIXAXMVCWOWJXAWHWIWJWNVDZVCUAVEVFVIWOXBUGZXEXFXGXRXEFW
+        TLUFZXGWOXBXEXSXGUEZWOWIWJXBXTUMXMXQABCFGWTLMHRUPUQZURZUSZXRWLXSXFWKWLW
+        MXBVJXRXEXSXGYBUTXRWHWIXEWLXSUGXFVHWOWHXBXLVCWOWIXBXMVCYCUBVEVFXRXEXSXG
+        YBVAVIVGWOXDXHWOWHWJXDXHUMXLXQABCEGWTJMITUPUQZVKVLWOXDUGZXCXJXJVSZUKXJV
+        MYEXAXJXBYFYEXAXEXFUGZXJUGZXJWOXAYHUMXDWOXAXKYHXNXEXFXJVNVOVCYEYGXJYEXE
+        XFYEXEXFXGWOXDXHYDURZUSZYEXEXFXGYIUTVPVQVRYEXBXSXEXGUGZUGZXSYFWOXBYLUMX
+        DWOXBXTYLYAXEXSXGVTVOVCYEYKXSYEXEXGYJYEXEXFXGYIVAVPWAYEWIXEXSYFUMWOWIXD
+        XMVCYJSUQWBWCWDWEWFWG $.
+    $}
+
+    ${
+      ixxin.2 $e |- ( ( A e. RR* /\ C e. RR* /\ z e. RR* ) ->
+        ( if ( A <_ C , C , A ) R z <-> ( A R z /\ C R z ) ) ) $.
+      ixxin.3 $e |- ( ( z e. RR* /\ B e. RR* /\ D e. RR* ) ->
+        ( z S if ( B <_ D , B , D ) <-> ( z S B /\ z S D ) ) ) $.
+      $( Intersection of two intervals of extended reals.  (Contributed by
+         Mario Carneiro, 3-Nov-2013.) $)
+      ixxin $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ D e. RR* ) ) ->
+          ( ( A O B ) i^i ( C O D ) ) =
+            ( if ( A <_ C , C , A ) O if ( B <_ D , B , D ) ) ) $=
+        ( cxr wcel wa co wbr crab ixxval cin cle cif cv inrab ineqan12d wceq wb
+        3expa adantlr 3expb ancoms adantll anbi12d an4 syl6bbr rabbidva 3eqtr4a
+        an4s ifcl syl2an eqtr4d ) DNOZENOZPZFNOZGNOZPZPZDEJQZFGJQZUAZDFUBRZFDUC
+        ZCUDZHRZVOEGUBRZEGUCZIRZPZCNSZVNVRJQZVIDVOHRZVOEIRZPZCNSZFVOHRZVOGIRZPZ
+        CNSZUAWEWIPZCNSZVLWAWEWICNUEVEVHVJWFVKWJABCDEHIJKTABCFGHIJKTUFVCVFVDVGW
+        AWLUGVCVFPZVDVGPZPZVTWKCNWOVONOZPZVTWCWGPZWDWHPZPWKWQVPWRVSWSWMWPVPWRUH
+        ZWNVCVFWPWTLUIUJWNWPVSWSUHZWMWPWNXAWPVDVGXAMUKULUMUNWCWDWGWHUOUPUQUSURV
+        CVFVDVGWBWAUGZWMVNNOZVRNOXBWNVFVCXCVMFDNUTULVQEGNUTABCVNVRHIJKTVAUSVB
+        $.
+    $}
+
+    ${
+      ixxss1.2 $e |- P = ( x e. RR* , y e. RR* |->
+                         { z e. RR* | ( x T z /\ z S y ) } ) $.
+      ixxss1.3 $e |- ( ( A e. RR* /\ B e. RR* /\ w e. RR* ) ->
+                       ( ( A W B /\ B T w ) -> A R w ) ) $.
+      $( Subset relationship for intervals of extended reals.  (Contributed by
+         Mario Carneiro, 3-Nov-2013.)  (Revised by Mario Carneiro,
+         28-Apr-2015.) $)
+      ixxss1 $p |- ( ( A e. RR* /\ A W B ) ->
+                   ( B P C ) C_ ( A O C ) ) $=
+        ( cxr wcel wbr wa co cv w3a elixx3g simplbi adantl simp3d simplr simpld
+        simprbi wi simpll simp1d syl3anc mp2and simprd wb simp2d elixx1 syl2anc
+        mpbir3and ex ssrdv ) EQRZEFMSZTZDFGHUAZEGLUAZVFDUBZVGRZVIVHRZVFVJTZVKVI
+        QRZEVIISZVIGJSZVLFQRZGQRZVMVJVPVQVMUCZVFVJVRFVIKSZVOTZABCFGVIKJHOUDZUEU
+        FZUGZVLVEVSVNVDVEVJUHVLVSVOVJVTVFVJVRVTWAUJUFZUIVLVDVPVMVEVSTVNUKVDVEVJ
+        ULZVLVPVQVMWBUMWCPUNUOVLVSVOWDUPVLVDVQVKVMVNVOUCUQWEVLVPVQVMWBURABCEGVI
+        IJLNUSUTVAVBVC $.
+    $}
+
+    ${
+      ixxss2.2 $e |- P = ( x e. RR* , y e. RR* |->
+                         { z e. RR* | ( x R z /\ z T y ) } ) $.
+      ixxss2.3 $e |- ( ( w e. RR* /\ B e. RR* /\ C e. RR* ) ->
+                       ( ( w T B /\ B W C ) -> w S C ) ) $.
+      $( Subset relationship for intervals of extended reals.  (Contributed by
+         Mario Carneiro, 3-Nov-2013.)  (Revised by Mario Carneiro,
+         28-Apr-2015.) $)
+      ixxss2 $p |- ( ( C e. RR* /\ B W C ) ->
+                   ( A P B ) C_ ( A O C ) ) $=
+        ( cxr wcel wbr wa co cv w3a elixx3g simplbi adantl simp3d simpld simprd
+        simprbi simplr wi simp2d simpll syl3anc mp2and wb simp1d elixx1 syl2anc
+        mpbir3and ex ssrdv ) GQRZFGMSZTZDEFHUAZEGLUAZVFDUBZVGRZVIVHRZVFVJTZVKVI
+        QRZEVIISZVIGJSZVLEQRZFQRZVMVJVPVQVMUCZVFVJVRVNVIFKSZTZABCEFVIIKHOUDZUEU
+        FZUGZVLVNVSVJVTVFVJVRVTWAUJUFZUHVLVSVEVOVLVNVSWDUIVDVEVJUKVLVMVQVDVSVET
+        VOULWCVLVPVQVMWBUMVDVEVJUNZPUOUPVLVPVDVKVMVNVOUCUQVLVPVQVMWBURWEABCEGVI
+        IJLNUSUTVAVBVC $.
+    $}
+
+    ${
+      ixxss12.2 $e |- P = ( x e. RR* , y e. RR* |->
+                         { z e. RR* | ( x T z /\ z U y ) } ) $.
+      ixxss12.3 $e |- ( ( A e. RR* /\ C e. RR* /\ w e. RR* ) ->
+                        ( ( A W C /\ C T w ) -> A R w ) ) $.
+      ixxss12.4 $e |- ( ( w e. RR* /\ D e. RR* /\ B e. RR* ) ->
+                        ( ( w U D /\ D X B ) -> w S B ) ) $.
+      $( Subset relationship for intervals of extended reals.  (Contributed by
+         Mario Carneiro, 20-Feb-2015.)  (Revised by Mario Carneiro,
+         28-Apr-2015.) $)
+      ixxss12 $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( A W C /\ D X B ) ) ->
+        ( C P D ) C_ ( A O B ) ) $=
+        ( cxr wa wbr co cv elixx3g simplbi adantl simp3d simplrl simprbi simpld
+        wcel w3a wi simplll simp1d syl3anc mp2and simprd simplrr simp2d simpllr
+        wb elixx1 ad2antrr mpbir3and ex ssrdv ) EUAUMZFUAUMZUBZEGOUCZHFPUCZUBZU
+        BZDGHIUDZEFNUDZVPDUEZVQUMZVSVRUMZVPVTUBZWAVSUAUMZEVSJUCZVSFKUCZWBGUAUMZ
+        HUAUMZWCVTWFWGWCUNZVPVTWHGVSLUCZVSHMUCZUBZABCGHVSLMIRUFZUGUHZUIZWBVMWIW
+        DVLVMVNVTUJWBWIWJVTWKVPVTWHWKWLUKUHZULWBVJWFWCVMWIUBWDUOVJVKVOVTUPWBWFW
+        GWCWMUQWNSURUSWBWJVNWEWBWIWJWOUTVLVMVNVTVAWBWCWGVKWJVNUBWEUOWNWBWFWGWCW
+        MVBVJVKVOVTVCTURUSVLWAWCWDWEUNVDVOVTABCEFVSJKNQVEVFVGVHVI $.
+    $}
+
+    ${
+      ixxub.2 $e |- ( ( w e. RR* /\ B e. RR* ) -> ( w < B -> w S B ) ) $.
+      ixxub.3 $e |- ( ( w e. RR* /\ B e. RR* ) -> ( w S B -> w <_ B ) ) $.
+      ixxub.4 $e |- ( ( A e. RR* /\ w e. RR* ) -> ( A < w -> A R w ) ) $.
+      ixxub.5 $e |- ( ( A e. RR* /\ w e. RR* ) -> ( A R w -> A <_ w ) ) $.
+      $( Extract the upper bound of an interval.  (Contributed by Mario
+         Carneiro, 17-Jun-2014.) $)
+      ixxub $p |- ( ( A e. RR* /\ B e. RR* /\ ( A O B ) =/= (/) ) ->
+                   sup ( ( A O B ) , RR* , < ) = B ) $=
+        ( cxr wcel cle wbr syl2anc ad2antrr co c0 wne w3a clt csup wceq cv wral
+        wa wb elixx1 3adant3 biimpa simp3d wi simp1d simp2 adantr mpd ralrimiva
+        wss ex ssrdv supxrleub mpbird wn wrex simprl qre rexrd ad2antlr supxrcl
+        cq simp1 syl wex simp3 n0 sylib simp2d supxrub sylan exlimddv xrlelttrd
+        xrletrd simprr mpbir3and xrlenlt mpbid pm2.65da nrexdv qbtwnxr xrletri3
+        3expia mtod mpbir2and ) EOPZFOPZEFIUAZUBUCZUDZWTOUEUFZFUGZXCFQRZFXCQRZX
+        BXEDUHZFQRZDWTUIZXBXHDWTXBXGWTPZUJZXGFHRZXHXKXGOPZEXGGRZXLXBXJXMXNXLUDZ
+        WRWSXJXOUKZXAABCEFXGGHIJULUMZUNZUOXKXMWSXLXHUPXKXMXNXLXRUQZXBWSXJWRWSXA
+        URZUSLSUTVAXBWTOVBZWSXEXIUKXBDWTOXBXJXMXSVCVDZXTDWTFVESVFXBXFXCFUERZVGZ
+        XBYCXCXGUERZXGFUERZUJZDVNVHZXBYGDVNXBXGVNPZUJZYGYEYJYEYFVIZYJYGUJZXGXCQ
+        RZYEVGZYLYAXJYMXBYAYIYGYBTYLXJXMXNXLYIXMXBYGYIXGXGVJVKVLZYLEXGUERZXNYLE
+        XCXGXBWRYIYGWRWSXAVOZTZXBXCOPZYIYGXBYAYSYBWTVMVPZTZYOXBEXCQRZYIYGXBXJUU
+        BDXBXAXJDVQWRWSXAVRDWTVSVTXKEXGXCXBWRXJYQUSZXSXBYSXJYTUSXKXNEXGQRZXKXMX
+        NXLXRWAXKWRXMXNUUDUPUUCXSNSUTXBYAXJYMYBWTXGWBZWCWFWDTYKWEYLWRXMYPXNUPYR
+        YOMSUTYLYFXLYJYEYFWGYLXMWSYFXLUPYOXBWSYIYGXTTKSUTXBXPYIYGXQTWHUUESYLXMY
+        SYMYNUKYOUUAXGXCWISWJWKWLXBYSWSYCYHUPYTXTYSWSYCYHDXCFWMWOSWPXBWSYSXFYDU
+        KXTYTFXCWISVFXBYSWSXDXEXFUJUKYTXTXCFWNSWQ $.
+
+      $( Extract the lower bound of an interval.  (Contributed by Mario
+         Carneiro, 17-Jun-2014.) $)
+      ixxlb $p |- ( ( A e. RR* /\ B e. RR* /\ ( A O B ) =/= (/) ) ->
+                   sup ( ( A O B ) , RR* , `' < ) = A ) $=
+        ( cxr wcel clt cle wbr syl2anc co c0 wne w3a ccnv csup wceq wn cv wa cq
+        wrex simprr wss wb elixx1 3adant3 biimpa simp1d ex ssrdv ad2antrr rexrd
+        qre ad2antlr simprl wi simp1 mpd infmxrcl simpll2 simp3 n0 sylib adantr
+        syl wex simpl2 infmxrlb sylan simp3d xrletrd exlimddv xrltletrd xrlenlt
+        mpbir3and mpbid nrexdv qbtwnxr 3expia mtod mpbird wral simp2d ralrimiva
+        pm2.65da infmxrgelb xrletri3 mpbir2and ) EOPZFOPZEFIUAZUBUCZUDZXBOQUEUF
+        ZEUGZXEERSZEXERSZXDXGEXEQSZUHZXDXIEDUIZQSZXKXEQSZUJZDUKULZXDXNDUKXDXKUK
+        PZUJZXNXMXQXLXMUMZXQXNUJZXEXKRSZXMUHZXSXBOUNZXKXBPZXTXDYBXPXNXDDXBOXDYC
+        XKOPZXDYCUJZYDEXKGSZXKFHSZXDYCYDYFYGUDZWTXAYCYHUOZXCABCEFXKGHIJUPUQZURZ
+        USZUTVAZVBXSYCYDYFYGXPYDXDXNXPXKXKVDVCVEZXSXLYFXQXLXMVFXSWTYDXLYFVGXDWT
+        XPXNWTXAXCVHZVBYNMTVIXSXKFQSZYGXSXKXEFYNXDXEOPZXPXNXDYBYQYMXBVJVPZVBZWT
+        XAXCXPXNVKZXRXDXEFRSZXPXNXDYCUUADXDXCYCDVQWTXAXCVLDXBVMVNYEXEXKFXDYQYCY
+        RVOYLWTXAXCYCVRZXDYBYCXTYMXBXKVSZVTYEYGXKFRSZYEYDYFYGYKWAYEYDXAYGUUDVGY
+        LUUBLTVIWBWCVBWDXSYDXAYPYGVGYNYTKTVIXDYIXPXNYJVBWFUUCTXSYQYDXTYAUOYSYNX
+        EXKWETWGWPWHXDWTYQXIXOVGYOYRWTYQXIXODEXEWIWJTWKXDYQWTXGXJUOYRYOXEEWETWL
+        XDXHEXKRSZDXBWMZXDUUEDXBYEYFUUEYEYDYFYGYKWNYEWTYDYFUUEVGXDWTYCYOVOYLNTV
+        IWOXDYBWTXHUUFUOYMYODXBEWQTWLXDYQWTXFXGXHUJUOYRYOXEEWRTWS $.
+    $}
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z B $.  $d w x y z C $.  $d x y z D $.
+    $( The set of open intervals of extended reals exists.  (Contributed by NM,
+       6-Feb-2007.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    iooex $p |- (,) e. _V $=
+      ( vx vy vz clt cioo df-ioo ixxex ) ABCDDEABCFG $.
+
+    $( Value of the open interval function.  (Contributed by NM, 24-Dec-2006.)
+       (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    iooval $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,) B ) =
+                 { x e. RR* | ( A < x /\ x < B ) } ) $=
+      ( vy vz clt cioo df-ioo ixxval ) DEABCFFGDEAHI $.
+
+    $( An empty open interval of extended reals.  (Contributed by NM,
+       6-Feb-2007.) $)
+    ioo0 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( ( A (,) B ) = (/) <->
+                 B <_ A ) ) $=
+      ( vx cxr wcel wa cioo co c0 wceq cv clt wbr crab cle iooval wn wrex bitrd
+      cq eqeq1d wne df-ne rabn0 bitr3i wi xrlttr 3com23 3expa rexlimdva qbtwnxr
+      w3a qre rexrd anim1i reximi2 syl 3expia impbid syl5bb xrltnle con4bid ) A
+      DEZBDEZFZABGHZIJACKZLMVGBLMFZCDNZIJZBAOMZVEVFVIICABPUAVEVJVKVEVJQZABLMZVK
+      QVLVHCDRZVEVMVLVIIUBVNVIIUCVHCDUDUEVEVNVMVEVHVMCDVCVDVGDEZVHVMUFZVCVOVDVP
+      AVGBUGUHUIUJVCVDVMVNVCVDVMULVHCTRVNCABUKVHVHCTDVGTEZVOVHVQVGVGUMUNUOUPUQU
+      RUSUTABVASVBS $.
+
+    $( An open interval of extended reals is nonempty iff the lower argument is
+       less than the upper argument.  (Contributed by NM, 2-Mar-2007.) $)
+    ioon0 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( ( A (,) B ) =/= (/) <->
+                 A < B ) ) $=
+      ( cxr wcel wa clt wbr cioo co c0 wceq cle wn wb xrlenlt ancoms necon1abid
+      ioo0 bitr2d ) ACDZBCDZEZABFGZABHIZJUBUDJKBALGZUCMZABRUATUEUFNBAOPSQ $.
+
+    $( The open interval function's value is empty outside of its domain.
+       (Contributed by NM, 21-Jun-2007.)  (Revised by Mario Carneiro,
+       28-Apr-2015.) $)
+    ndmioo $p |- ( -. ( A e. RR* /\ B e. RR* ) -> ( A (,) B ) = (/) ) $=
+      ( vx vy vz cxr cioo cxp cpw clt df-ioo ixxf fdmi ndmov ) ABFGFFHFIGCDEJJG
+      CDEKLMN $.
+
+    $( An open interval with identical lower and upper bounds is empty.
+       (Contributed by NM, 21-Jun-2007.)  (Revised by Mario Carneiro,
+       3-Nov-2013.) $)
+    iooid $p |- ( A (,) A ) = (/) $=
+      ( cxr wcel wa cioo co c0 wceq cle wbr xrleid adantr mpbird ndmioo pm2.61i
+      ioo0 ) ABCZQDZAAEFGHZRSAAIJZQTQAKLAAPMAANO $.
+
+    $( Membership in a set of open intervals of extended reals.  We use the
+       fact that an operation's value is empty outside of its domain to show
+       ` A e. RR* ` and ` B e. RR* ` .  (Contributed by NM, 24-Dec-2006.)
+       (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    elioo3g $p |- ( C e. ( A (,) B ) <->
+          ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\ ( A < C /\ C < B ) ) ) $=
+      ( vx vy vz clt cioo df-ioo elixx3g ) DEFABCGGHDEFIJ $.
+
+    $( A member of an open interval of reals is a real.  (Contributed by NM,
+       17-Aug-2008.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    elioore $p |- ( A e. ( B (,) C ) -> A e. RR ) $=
+      ( cioo co wcel cxr w3a clt wbr wa cr elioo3g 3ancomb xrre2 sylanb sylbi )
+      ABCDEFBGFZCGFZAGFZHZBAIJACIJKZKALFZBCAMUARTSHUBUCRSTNBACOPQ $.
+
+    $( An open interval does not contain its left endpoint.  (Contributed by
+       Mario Carneiro, 29-Dec-2016.) $)
+    lbioo $p |- -. A e. ( A (,) B ) $=
+      ( cioo co wcel clt wbr cxr w3a wa elioo3g simprbi simpld wn simp3d xrltnr
+      simplbi syl pm2.65i ) AABCDEZAAFGZTUAABFGZTAHEZBHEZUCIZUAUBJZABAKZLMTUCUA
+      NTUCUDUCTUEUFUGQOAPRS $.
+
+    $( An open interval does not contain its right endpoint.  (Contributed by
+       Mario Carneiro, 29-Dec-2016.) $)
+    ubioo $p |- -. B e. ( A (,) B ) $=
+      ( cioo co wcel clt wbr cxr w3a wa elioo3g simprbi simprd wn simp2d xrltnr
+      simplbi syl pm2.65i ) BABCDEZBBFGZTABFGZUATAHEZBHEZUDIZUBUAJZABBKZLMTUDUA
+      NTUCUDUDTUEUFUGQOBPRS $.
+
+    $( Value of the open interval function.  (Contributed by NM, 6-Feb-2007.)
+       (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    iooval2 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,) B ) =
+                 { x e. RR | ( A < x /\ x < B ) } ) $=
+      ( cxr wcel wa cioo co cv clt wbr crab cr iooval cin inrab2 ressxr sseqin2
+      wceq wss mpbi rabeq ax-mp eqtri elioore ssriv syl6eqssr df-ss sylib eqtrd
+      syl5reqr ) BDECDEFZBCGHZBAIZJKUNCJKFZADLZUOAMLZABCNZULUQUPMOZUPUSUOADMOZL
+      ZUQUOADMPUTMSZVAUQSMDTVBQMDRUAUOAUTMUBUCUDULUPMTUSUPSULUPUMMURAUMMUNBCUEU
+      FUGUPMUHUIUKUJ $.
+
+    $( Intersection of two open intervals of extended reals.  (Contributed by
+       NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    iooin $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ D e. RR* ) ) ->
+         ( ( A (,) B ) i^i ( C (,) D ) ) =
+         ( if ( A <_ C , C , A ) (,) if ( B <_ D , B , D ) ) ) $=
+      ( vx vy vz clt cioo df-ioo cv xrmaxlt xrltmin ixxin ) EFGABCDHHIEFGJACGKZ
+      LOBDMN $.
+
+    $( Subset relationship for open intervals of extended reals.  (Contributed
+       by NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 20-Feb-2015.) $)
+    iooss1 $p |- ( ( A e. RR* /\ A <_ B ) ->
+                 ( B (,) C ) C_ ( A (,) C ) ) $=
+      ( vx vy vz vw cioo clt cle df-ioo cv xrlelttr ixxss1 ) DEFGABCHIIIHJDEFKZ
+      OABGLMN $.
+
+    $( Subset relationship for open intervals of extended reals.  (Contributed
+       by NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    iooss2 $p |- ( ( C e. RR* /\ B <_ C ) ->
+                 ( A (,) B ) C_ ( A (,) C ) ) $=
+      ( vx vy vz vw cioo clt cle df-ioo cv xrltletr ixxss2 ) DEFGABCHIIIHJDEFKZ
+      OGLBCMN $.
+
+    $( Value of the open-below, closed-above interval function.  (Contributed
+       by NM, 24-Dec-2006.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    iocval $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,] B ) =
+                 { x e. RR* | ( A < x /\ x <_ B ) } ) $=
+      ( vy vz clt cle cioc df-ioc ixxval ) DEABCFGHDEAIJ $.
+
+    $( Value of the closed-below, open-above interval function.  (Contributed
+       by NM, 24-Dec-2006.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    icoval $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A [,) B ) =
+                 { x e. RR* | ( A <_ x /\ x < B ) } ) $=
+      ( vy vz cle clt cico df-ico ixxval ) DEABCFGHDEAIJ $.
+
+    $( Value of the closed interval function.  (Contributed by NM,
+       24-Dec-2006.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    iccval $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A [,] B ) =
+                 { x e. RR* | ( A <_ x /\ x <_ B ) } ) $=
+      ( vy vz cle cicc df-icc ixxval ) DEABCFFGDEAHI $.
+
+    $( Membership in an open interval of extended reals.  (Contributed by NM,
+       24-Dec-2006.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    elioo1 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( C e. ( A (,) B ) <->
+                 ( C e. RR* /\ A < C /\ C < B ) ) ) $=
+      ( vx vy vz clt cioo df-ioo elixx1 ) DEFABCGGHDEFIJ $.
+
+    $( Membership in an open interval of extended reals.  (Contributed by NM,
+       6-Feb-2007.) $)
+    elioo2 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( C e. ( A (,) B ) <->
+                 ( C e. RR /\ A < C /\ C < B ) ) ) $=
+      ( vx cxr wcel wa cioo co cv clt wbr cr crab w3a iooval2 eleq2d wceq breq2
+      breq1 anbi12d elrab 3anass bitr4i syl6bb ) AEFBEFGZCABHIZFCADJZKLZUHBKLZG
+      ZDMNZFZCMFZACKLZCBKLZOZUFUGULCDABPQUMUNUOUPGZGUQUKURDCMUHCRUIUOUJUPUHCAKS
+      UHCBKTUAUBUNUOUPUCUDUE $.
+
+    $( Membership in an open-below, closed-above interval of extended reals.
+       (Contributed by NM, 24-Dec-2006.)  (Revised by Mario Carneiro,
+       3-Nov-2013.) $)
+    elioc1 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( C e. ( A (,] B ) <->
+                 ( C e. RR* /\ A < C /\ C <_ B ) ) ) $=
+      ( vx vy vz clt cle cioc df-ioc elixx1 ) DEFABCGHIDEFJK $.
+
+    $( Membership in a closed-below, open-above interval of extended reals.
+       (Contributed by NM, 24-Dec-2006.)  (Revised by Mario Carneiro,
+       3-Nov-2013.) $)
+    elico1 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( C e. ( A [,) B ) <->
+                 ( C e. RR* /\ A <_ C /\ C < B ) ) ) $=
+      ( vx vy vz cle clt cico df-ico elixx1 ) DEFABCGHIDEFJK $.
+
+    $( Membership in a closed interval of extended reals.  (Contributed by NM,
+       24-Dec-2006.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    elicc1 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( C e. ( A [,] B ) <->
+                 ( C e. RR* /\ A <_ C /\ C <_ B ) ) ) $=
+      ( vx vy vz cle cicc df-icc elixx1 ) DEFABCGGHDEFIJ $.
+
+    $( A closed interval with identical lower and upper bounds is a singleton.
+       (Contributed by Jeff Hankins, 13-Jul-2009.) $)
+    iccid $p |- ( A e. RR* -> ( A [,] A ) = { A } ) $=
+      ( vx cxr wcel co csn cv cle wbr w3a wb wi wa clt wn xrlenlt ancoms sylbid
+      cicc syl5ibrcom elicc1 anidms xrlttri3 biimprd expcomd com23 3impd eleq1a
+      wceq ex xrleid breq2 breq1 3jcad impbid elsn syl6bbr bitrd eqrdv ) ACDZBA
+      ASEZAFZUTBGZVADZVCCDZAVCHIZVCAHIZJZVCVBDZUTVDVHKAAVCUAUBUTVHVCAUIZVIUTVHV
+      JUTVEVFVGVJUTVEVFVGVJLZLUTVEMZVFVCANIOZVKAVCPVLVGVMVJVLVGAVCNIOZVMVJLVEUT
+      VGVNKVCAPQVLVMVNVJVEUTVMVNMZVJLVEUTMVJVOVCAUCUDQUERUFRUJUGUTVJVEVFVGACVCU
+      HUTVFVJAAHIZAUKZVCAAHULTUTVGVJVPVQVCAAHUMTUNUOBAUPUQURUS $.
+
+    $( An empty open interval of extended reals.  (Contributed by FL,
+       30-May-2014.) $)
+    ico0 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( ( A [,) B ) = (/) <->
+                 B <_ A ) ) $=
+      ( vx cxr wcel wa cico co c0 wceq cv cle wbr clt crab wn wrex wi cq bitrd
+      icoval eqeq1d wne df-ne rabn0 bitr3i xrlelttr 3expa rexlimdva w3a qbtwnxr
+      3com23 qre rexrd a1i simpr1 simpl xrltle syl2anc anim1d anim12d ex adantr
+      syl pm2.43b reximdv2 mpd 3expia impbid syl5bb xrltnle con4bid ) ADEZBDEZF
+      ZABGHZIJACKZLMZVQBNMZFZCDOZIJZBALMZVOVPWAICABUAUBVOWBWCVOWBPZABNMZWCPWDVT
+      CDQZVOWEWDWAIUCWFWAIUDVTCDUEUFVOWFWEVOVTWECDVMVNVQDEZVTWERZVMWGVNWHAVQBUG
+      ULUHUIVMVNWEWFVMVNWEUJZAVQNMZVSFZCSQWFCABUKWIWKVTCSDWIVQSEZWKFZWGVTFZWLWI
+      WMWNRZRZWKWLWGWPWLVQVQUMUNZWGWIWOWGWIFZWLWGWKVTWLWGRWRWQUOWRWJVRVSWRVMWGW
+      JVRRWGVMVNWEUPWGWIUQAVQURUSUTVAVBVDVCVEVFVGVHVIVJABVKTVLT $.
+
+    $( An empty open interval of extended reals.  (Contributed by FL,
+       30-May-2014.) $)
+    ioc0 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( ( A (,] B ) = (/) <->
+                 B <_ A ) ) $=
+      ( vx cxr wcel wa cioc co c0 wceq cv clt wbr cle crab wn wrex wi cq bitrd
+      iocval eqeq1d wne df-ne rabn0 bitr3i xrltletr 3expa rexlimdva w3a qbtwnxr
+      3com23 qre rexrd a1i xrltle 3ad2antr2 anim2d anim12d syl pm2.43b reximdv2
+      ex adantr mpd 3expia impbid syl5bb xrltnle con4bid ) ADEZBDEZFZABGHZIJACK
+      ZLMZVOBNMZFZCDOZIJZBANMZVMVNVSICABUAUBVMVTWAVMVTPZABLMZWAPWBVRCDQZVMWCWBV
+      SIUCWDVSIUDVRCDUEUFVMWDWCVMVRWCCDVKVLVODEZVRWCRZVKWEVLWFAVOBUGULUHUIVKVLW
+      CWDVKVLWCUJZVPVOBLMZFZCSQWDCABUKWGWIVRCSDWGVOSEZWIFZWEVRFZWJWGWKWLRZRZWIW
+      JWEWNWJVOVOUMUNZWEWGWMWEWGFZWJWEWIVRWJWERWPWOUOWPWHVQVPWEVKVLWHVQRWCVOBUP
+      UQURUSVCUTVDVAVBVEVFVGVHABVITVJT $.
+
+    $( An empty open interval of extended reals.  (Contributed by FL,
+       30-May-2014.) $)
+    icc0 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( ( A [,] B ) = (/) <->
+                 B < A ) ) $=
+      ( vx cxr wcel wa cicc co c0 wceq cv cle wbr crab iccval eqeq1d wrex bitrd
+      clt wn wne df-ne rabn0 bitr3i wi xrletr 3com23 3expa rexlimdva w3a xrleid
+      simp2 simp3 3ad2ant2 anbi12d rspcev syl12anc 3expia impbid syl5bb xrlenlt
+      breq2 breq1 con4bid ) ADEZBDEZFZABGHZIJACKZLMZVIBLMZFZCDNZIJZBASMZVGVHVMI
+      CABOPVGVNVOVGVNTZABLMZVOTVPVLCDQZVGVQVPVMIUAVRVMIUBVLCDUCUDVGVRVQVGVLVQCD
+      VEVFVIDEZVLVQUEZVEVSVFVTAVIBUFUGUHUIVEVFVQVRVEVFVQUJVFVQBBLMZVRVEVFVQULVE
+      VFVQUMVFVEWAVQBUKUNVLVQWAFCBDVIBJVJVQVKWAVIBALVBVIBBLVCUOUPUQURUSUTABVARV
+      DR $.
+  $}
+
+  $( The upper bound belongs to an open-below, closed-above interval.  See
+     ~ ubicc2 .  (Contributed by FL, 29-May-2014.) $)
+  ubioc1 $p |- ( ( A e. RR* /\ B e. RR* /\ A < B ) -> B e. ( A (,] B ) ) $=
+    ( cxr wcel clt wbr w3a co cle simp2 simp3 xrleid 3ad2ant2 wb elioc1 3adant3
+    cioc mpbir3and ) ACDZBCDZABEFZGBABQHDZTUABBIFZSTUAJSTUAKTSUCUABLMSTUBTUAUCG
+    NUAABBOPR $.
+
+  $( The lower bound belongs to a closed-below, open-above interval.  See
+     ~ lbicc2 .  (Contributed by FL, 29-May-2014.) $)
+  lbico1 $p |- ( ( A e. RR* /\ B e. RR* /\ A < B ) -> A e. ( A [,) B ) ) $=
+    ( cxr wcel clt wbr w3a co cle simp1 xrleid 3ad2ant1 simp3 wb elico1 3adant3
+    cico mpbir3and ) ACDZBCDZABEFZGAABQHDZSAAIFZUASTUAJSTUCUAAKLSTUAMSTUBSUCUAG
+    NUAABAOPR $.
+
+  $( An element of a closed interval is less than or equal to its upper bound.
+     (Contributed by Jeff Hankins, 14-Jul-2009.) $)
+  iccleub $p |- ( ( A e. RR* /\ B e. RR* /\ C e. ( A [,] B ) ) -> C <_ B ) $=
+    ( cxr wcel cicc co cle wbr wa w3a elicc1 simp3 syl6bi 3impia ) ADEZBDEZCABF
+    GEZCBHIZPQJRCDEZACHIZSKSABCLTUASMNO $.
+
+  $( An element of a closed interval is more than or equal to its lower bound
+     (Contributed by Thierry Arnoux, 23-Dec-2016.) $)
+  iccgelb $p |- ( ( A e. RR* /\ B e. RR* /\ C e. ( A [,] B ) ) -> A <_ C ) $=
+    ( cxr wcel cicc co cle wbr wa w3a elicc1 biimpa simp2d 3impa ) ADEZBDEZCABF
+    GEZACHIZPQJZRJCDEZSCBHIZTRUASUBKABCLMNO $.
+
+  $( TODO - see if this shortens the uses of any other
+     elioo*'s $)
+  $( Membership in an open interval of extended reals.  (Contributed by NM,
+     17-Aug-2008.) $)
+  elioo5 $p |- ( ( A e. RR* /\ B e. RR* /\ C e. RR* )
+           -> ( C e. ( A (,) B ) <-> ( A < C /\ C < B ) ) ) $=
+    ( cxr wcel w3a co clt wbr wa wb elioo1 3adant3 3anass baibr 3ad2ant3 bitr4d
+    cioo ) ADEZBDEZCDEZFCABRGEZUAACHIZCBHIZFZUCUDJZSTUBUEKUAABCLMUASUFUEKTUEUAU
+    FUAUCUDNOPQ $.
+
+  $( A nonempty open interval spans an interval of extended reals.
+     (Contributed by NM, 17-Aug-2008.) $)
+  eliooxr $p |- ( A e. ( B (,) C ) -> ( B e. RR* /\ C e. RR* ) ) $=
+    ( cioo co wcel c0 wne cxr wa ne0i ndmioo necon1ai syl ) ABCDEZFOGHBIFCIFJZO
+    AKPOGBCLMN $.
+
+  $( Ordering implied by a member of an open interval of reals.  (Contributed
+     by NM, 17-Aug-2008.)  (Revised by Mario Carneiro, 9-May-2014.) $)
+  eliooord $p |- ( A e. ( B (,) C ) -> ( B < A /\ A < C ) ) $=
+    ( cioo co wcel cr clt wbr w3a wa cxr wb eliooxr elioo2 syl ibi 3simpc ) ABC
+    DEFZAGFZBAHIZACHIZJZUAUBKSUCSBLFCLFKSUCMABCNBCAOPQTUAUBRP $.
+
+  $( Membership in an open interval of extended reals.  (Contributed by NM,
+     8-Jun-2007.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
+  elioo4g $p |- ( C e. ( A (,) B ) <->
+        ( ( A e. RR* /\ B e. RR* /\ C e. RR ) /\ ( A < C /\ C < B ) ) ) $=
+    ( cioo co wcel cxr cr w3a clt wbr wa eliooxr elioore df-3an sylibr eliooord
+    jca rexr 3anim3i anim1i elioo3g impbii ) CABDEFZAGFZBGFZCHFZIZACJKCBJKLZLZU
+    DUHUIUDUEUFLZUGLUHUDUKUGCABMCABNRUEUFUGOPCABQRUJUEUFCGFZIZUILUDUHUMUIUGULUE
+    UFCSTUAABCUBPUC $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( An open interval is a set of reals.  (Contributed by NM,
+       31-May-2007.) $)
+    ioossre $p |- ( A (,) B ) C_ RR $=
+      ( vx cioo co cr cv elioore ssriv ) CABDEFCGABHI $.
+  $}
+
+  ${
+    $d v w x y z A $.  $d v x y z B $.  $d x y z C $.
+    $( Membership in an open-below, closed-above real interval.  (Contributed
+       by Paul Chapman, 30-Dec-2007.)  (Revised by Mario Carneiro,
+       14-Jun-2014.) $)
+    elioc2 $p |- ( ( A e. RR* /\ B e. RR ) ->
+        ( C e. ( A (,] B ) <-> ( C e. RR /\ A < C /\ C <_ B ) ) ) $=
+      ( cxr wcel cr wa cioc co clt wbr cle wb rexr cmnf cpnf xrlelttrd ad2antlr
+      w3a a1i elioc1 sylan2 mnfxr simpll simpr1 mnfle simpr2 pnfxr simpr3 ltpnf
+      ad2antrr xrrebnd syl mpbir2and 3jca ex 3anim1i impbid1 bitrd ) ADEZBFEZGZ
+      CABHIEZCDEZACJKZCBLKZSZCFEZVEVFSZVAUTBDEZVCVGMBNZABCUAUBVBVGVIVBVGVIVBVGG
+      ZVHVEVFVLVHOCJKZCPJKZVLOACODEVLUCTUTVAVGUDVBVDVEVFUEZUTOALKVAVGAUFUKVBVDV
+      EVFUGZQVLCBPVOVAVJUTVGVKRPDEVLUHTVBVDVEVFUIZVABPJKUTVGBUJRQVLVDVHVMVNGMVO
+      CULUMUNVPVQUOUPVHVDVEVFCNUQURUS $.
+
+    $( Membership in a closed-below, open-above real interval.  (Contributed by
+       Paul Chapman, 21-Jan-2008.)  (Revised by Mario Carneiro,
+       14-Jun-2014.) $)
+    elico2 $p |- ( ( A e. RR /\ B e. RR* ) ->
+        ( C e. ( A [,) B ) <-> ( C e. RR /\ A <_ C /\ C < B ) ) ) $=
+      ( cr wcel cxr wa cico co cle wbr clt wb rexr cmnf cpnf ad2antrr xrltletrd
+      w3a a1i elico1 sylan mnfxr simpr1 mnflt simpr2 simplr pnfxr pnfge xrrebnd
+      simpr3 ad2antlr syl mpbir2and 3jca ex 3anim1i impbid1 bitrd ) ADEZBFEZGZC
+      ABHIEZCFEZACJKZCBLKZSZCDEZVEVFSZUTAFEZVAVCVGMANZABCUAUBVBVGVIVBVGVIVBVGGZ
+      VHVEVFVLVHOCLKZCPLKZVLOACOFEVLUCTUTVJVAVGVKQVBVDVEVFUDZUTOALKVAVGAUEQVBVD
+      VEVFUFZRVLCBPVOUTVAVGUGPFEVLUHTVBVDVEVFUKZVABPJKUTVGBUIULRVLVDVHVMVNGMVOC
+      UJUMUNVPVQUOUPVHVDVEVFCNUQURUS $.
+
+    $( Membership in a closed real interval.  (Contributed by Paul Chapman,
+       21-Sep-2007.)  (Revised by Mario Carneiro, 14-Jun-2014.) $)
+    elicc2 $p |- ( ( A e. RR /\ B e. RR ) -> ( C e. ( A [,] B ) <->
+                      ( C e. RR /\ A <_ C /\ C <_ B ) ) ) $=
+      ( cr wcel wa cicc co cxr cle wbr w3a rexr cmnf clt cpnf ad2antrr ad2antlr
+      wb a1i elicc1 syl2an mnfxr simpr1 mnflt simpr2 xrltletrd simpr3 xrlelttrd
+      pnfxr ltpnf xrrebnd syl mpbir2and 3jca ex 3anim1i impbid1 bitrd ) ADEZBDE
+      ZFZCABGHEZCIEZACJKZCBJKZLZCDEZVEVFLZUTAIEZBIEZVCVGSVAAMZBMZABCUAUBVBVGVIV
+      BVGVIVBVGFZVHVEVFVNVHNCOKZCPOKZVNNACNIEVNUCTUTVJVAVGVLQVBVDVEVFUDZUTNAOKV
+      AVGAUEQVBVDVEVFUFZUGVNCBPVQVAVKUTVGVMRPIEVNUJTVBVDVEVFUHZVABPOKUTVGBUKRUI
+      VNVDVHVOVPFSVQCULUMUNVRVSUOUPVHVDVEVFCMUQURUS $.
+  $}
+
+  ${
+    elicc2i.1 $e |- A e. RR $.
+    elicc2i.2 $e |- B e. RR $.
+    $( Inference for membership in a closed interval.  (Contributed by Scott
+       Fenton, 3-Jun-2013.) $)
+    elicc2i $p |- ( C e. ( A [,] B ) <-> ( C e. RR /\ A <_ C /\ C <_ B ) ) $=
+      ( cr wcel cicc co cle wbr w3a wb elicc2 mp2an ) AFGBFGCABHIGCFGACJKCBJKLM
+      DEABCNO $.
+  $}
+
+  $( Membership in a closed real interval.  (Contributed by Stefan O'Rear,
+     16-Nov-2014.)  (Proof shortened by Mario Carneiro, 1-Jan-2017.) $)
+  elicc4 $p |- ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) ->
+      ( C e. ( A [,] B ) <-> ( A <_ C /\ C <_ B ) ) ) $=
+    ( cxr wcel cicc co cle wbr wa wb w3a elicc1 3anass syl6bb baibd 3impa ) ADE
+    ZBDEZCDEZCABFGEZACHIZCBHIZJZKRSJZUATUDUEUATUBUCLTUDJABCMTUBUCNOPQ $.
+
+  ${
+    $d w x y z A $.  $d w x y z B $.  $d w x y z C $.  $d w x y z D $.
+    $( Condition for a closed interval to be a subset of another closed
+       interval.  (Contributed by Jeff Madsen, 2-Sep-2009.)  (Revised by Mario
+       Carneiro, 20-Feb-2015.) $)
+    iccss $p |- ( ( ( A e. RR /\ B e. RR ) /\
+                    ( A <_ C /\ D <_ B ) ) -> ( C [,] D ) C_ ( A [,] B ) ) $=
+      ( vx vy vz vw cr wcel wa cxr cle wbr cicc co wss rexr anim12i xrletr cv
+      df-icc ixxss12 sylan ) AIJZBIJZKALJZBLJZKACMNDBMNKCDOPABOPQUEUGUFUHARBRSE
+      FGHABCDOMMMMOMMEFGUBZUIACHUAZTUJDBTUCUD $.
+
+    $( Condition for a closed interval to be a subset of an open interval.
+       (Contributed by Mario Carneiro, 20-Feb-2015.) $)
+    iccssioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
+      ( A < C /\ D < B ) ) -> ( C [,] D ) C_ ( A (,) B ) ) $=
+      ( vx vy vz vw cicc clt cle cioo df-ioo df-icc xrltletr xrlelttr ixxss12
+      cv ) EFGHABCDIJJKKLJJEFGMEFGNACHRZOSDBPQ $.
+
+    $( Condition for a closed interval to be a subset of an open interval.
+       (Contributed by Thierry Arnoux, 21-Sep-2017.) $)
+    icossico $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
+      ( A <_ C /\ D <_ B ) ) -> ( C [,) D ) C_ ( A [,) B ) ) $=
+      ( vx vy vz vw cico cle clt df-ico cv xrletr xrltletr ixxss12 ) EFGHABCDIJ
+      KJKIJJEFGLZQACHMZNRDBOP $.
+
+    $( Condition for a closed interval to be a subset of another closed
+       interval.  (Contributed by Jeff Madsen, 2-Sep-2009.)  (Revised by Mario
+       Carneiro, 28-Apr-2015.) $)
+    iccss2 $p |- ( ( C e. ( A [,] B ) /\ D e. ( A [,] B ) ) ->
+      ( C [,] D ) C_ ( A [,] B ) ) $=
+      ( vx vy vz vw cicc co wcel cxr cle wbr w3a elixx3g adantr simprbi xrletr
+      wa wss df-icc simplbi simp1d simp2d simpld simprd adantl ixxss12 syl22anc
+      cv ) CABIJZKZDULKZTZALKZBLKZACMNZDBMNZCDIJULUAUOUPUQCLKZUMUPUQUTOZUNUMVAU
+      RCBMNZTZEFGABCMMIEFGUBZPZUCQZUDUOUPUQUTVFUEUOURVBUMVCUNUMVAVCVERQUFUNUSUM
+      UNADMNZUSUNUPUQDLKOVGUSTEFGABDMMIVDPRUGUHEFGHABCDIMMMMIMMVDVDACHUKZSVHDBS
+      UIUJ $.
+
+    $( Condition for a closed interval to be a subset of a half-open interval.
+       (Contributed by Mario Carneiro, 9-Sep-2015.) $)
+    iccssico $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
+      ( A <_ C /\ D < B ) ) -> ( C [,] D ) C_ ( A [,) B ) ) $=
+      ( vx vy vz vw cicc cle clt cico df-ico df-icc cv xrletr xrlelttr ixxss12
+      ) EFGHABCDIJKJJLJKEFGMEFGNACHOZPSDBQR $.
+
+    $( Condition for a closed interval to be a subset of an open interval.
+       (Contributed by Mario Carneiro, 20-Feb-2015.) $)
+    iccssioo2 $p |- ( ( C e. ( A (,) B ) /\ D e. ( A (,) B ) ) ->
+      ( C [,] D ) C_ ( A (,) B ) ) $=
+      ( cioo co wcel wa cxr clt wbr cicc wss c0 wne ne0i adantr ndmioo necon1ai
+      eliooord syl simpld adantl simprd iccssioo syl12anc ) CABEFZGZDUGGZHZAIGB
+      IGHZACJKZDBJKZCDLFUGMUJUGNOZUKUHUNUIUGCPQUKUGNABRSUAUJULCBJKZUHULUOHUICAB
+      TQUBUJADJKZUMUIUPUMHUHDABTUCUDABCDUEUF $.
+
+    $( Condition for a closed interval to be a subset of an open interval.
+       (Contributed by Mario Carneiro, 20-Feb-2015.) $)
+    iccssico2 $p |- ( ( C e. ( A [,) B ) /\ D e. ( A [,) B ) ) ->
+      ( C [,] D ) C_ ( A [,) B ) ) $=
+      ( vx vy vz cico co wcel wa cxr cle wbr clt cv adantr w3a elixx3g simprbi
+      cicc wss crab df-ico elmpt2cl1 elmpt2cl2 simpld simprd iccssico syl22anc
+      adantl ) CABHIZJZDULJZKALJZBLJZACMNZDBONZCDUAIULUBUMUOUNEFLLEPGPZMNUSFPON
+      KGLUCZABHCEFGUDZUEQUMUPUNEFLLUTABHCVAUFQUMUQUNUMUQCBONZUMUOUPCLJRUQVBKEFG
+      ABCMOHVASTUGQUNURUMUNADMNZURUNUOUPDLJRVCURKEFGABDMOHVASTUHUKABCDUIUJ $.
+  $}
+
+  $( The open interval from minus to plus infinity.  (Contributed by NM,
+     6-Feb-2007.) $)
+  ioomax $p |- ( -oo (,) +oo ) = RR $=
+    ( vx cmnf cpnf cioo co cv clt wbr wa crab cxr wcel wceq mnfxr pnfxr iooval2
+    cr mp2an rabid2 mnflt ltpnf jca mprgbir eqtr4i ) BCDEZBAFZGHZUFCGHZIZAQJZQB
+    KLCKLUEUJMNOABCPRQUJMUIAQUIAQSUFQLUGUHUFTUFUAUBUCUD $.
+
+  $( The closed interval from minus to plus infinity.  (Contributed by Mario
+     Carneiro, 4-Jul-2014.) $)
+  iccmax $p |- ( -oo [,] +oo ) = RR* $=
+    ( vx cmnf cpnf cicc co cv cle wbr wa cxr crab wcel mnfxr pnfxr iccval mp2an
+    wceq rabid2 mnfle pnfge jca mprgbir eqtr4i ) BCDEZBAFZGHZUECGHZIZAJKZJBJLCJ
+    LUDUIQMNABCOPJUIQUHAJUHAJRUEJLUFUGUESUETUAUBUC $.
+
+  $( The set of positive reals expressed as an open interval.  (Contributed by
+     NM, 7-May-2007.) $)
+  ioopos $p |- ( 0 (,) +oo ) = { x e. RR | 0 < x } $=
+    ( cc0 cpnf cioo co cv clt wbr wa crab cxr wcel wceq 0xr pnfxr iooval2 mp2an
+    cr ltpnf biantrud rabbiia eqtr4i ) BCDEZBAFZGHZUDCGHZIZARJZUEARJBKLCKLUCUHM
+    NOABCPQUEUGARUDRLUFUEUDSTUAUB $.
+
+  $( The set of positive reals expressed as an open interval.  (Contributed by
+     Steve Rodriguez, 25-Nov-2007.) $)
+  ioorp $p |- ( 0 (,) +oo ) = RR+ $=
+    ( vx cc0 cpnf cioo co cv clt wbr cr crab crp ioopos df-rp eqtr4i ) BCDEBAFG
+    HAIJKALAMN $.
+
+  $( Shift the arguments of the open interval function.  (Contributed by NM,
+     17-Aug-2008.) $)
+  iooshf $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) )
+     -> ( ( A - B ) e. ( C (,) D ) <-> A e. ( ( C + B ) (,) ( D + B ) ) ) ) $=
+    ( cr wcel wa caddc co clt wbr cioo wb 3expa cxr readdcl rexrd rexr ad2antrl
+    elioo5 ltaddsub 3com13 adantrr w3a ltsubadd bicomd adantrl anbi12d ad2ant2l
+    cmin ad2ant2rl syl3anc ancoms ad2antll resubcl adantr 3bitr4rd ) AEFZBEFZGZ
+    CEFZDEFZGZGZCBHIZAJKZADBHIZJKZGZCABUJIZJKZVJDJKZGZAVEVGLIFZVJCDLIFZVDVFVKVH
+    VLUTVAVFVKMZVBURUSVAVPVAUSURVPCBAUAUBNUCUTVBVHVLMZVAURUSVBVQURUSVBUDVLVHABD
+    UEUFNUGUHVCUTVNVIMZVCUTGVEOFZVGOFZAOFZVRVAUSVSVBURVAUSGVECBPQUKVBUSVTVAURVB
+    USGVGDBPQUIURWAVCUSARSVEVGATULUMVDCOFZDOFZVJOFZVOVMMVAWBUTVBCRSVBWCUTVADRUN
+    UTWDVCUTVJABUOQUPCDVJTULUQ $.
+
+  ${
+    $d v w x y z A $.  $d v w x y z B $.
+    $( A closed-above interval with real upper bound is a set of reals.
+       (Contributed by FL, 29-May-2014.) $)
+    iocssre $p |- ( ( A e. RR* /\ B e. RR ) -> ( A (,] B ) C_ RR ) $=
+      ( vx cxr wcel cr wa cioc co cv w3a clt wbr cle elioc2 simp1d 3expia ssrdv
+      biimp3a ) ADEZBFEZGCABHIZFTUACJZUBEZUCFEZTUAUDKUEAUCLMZUCBNMZTUAUDUEUFUGK
+      ABUCOSPQR $.
+
+    $( A closed-below interval with real lower bound is a set of reals.
+       (Contributed by Mario Carneiro, 14-Jun-2014.) $)
+    icossre $p |- ( ( A e. RR /\ B e. RR* ) -> ( A [,) B ) C_ RR ) $=
+      ( vx cr wcel cxr wa cico co cv w3a cle wbr clt elico2 simp1d 3expia ssrdv
+      biimp3a ) ADEZBFEZGCABHIZDTUACJZUBEZUCDEZTUAUDKUEAUCLMZUCBNMZTUAUDUEUFUGK
+      ABUCOSPQR $.
+
+    $( A closed real interval is a set of reals.  (Contributed by FL,
+       6-Jun-2007.)  (Proof shortened by Paul Chapman, 21-Jan-2008.) $)
+    iccssre $p |- ( ( A e. RR /\ B e. RR ) -> ( A [,] B ) C_ RR ) $=
+      ( vx cr wcel wa cicc co cv w3a cle wbr elicc2 biimp3a simp1d 3expia ssrdv
+      ) ADEZBDEZFCABGHZDRSCIZTEZUADEZRSUBJUCAUAKLZUABKLZRSUBUCUDUEJABUAMNOPQ $.
+
+    $( A closed interval is a set of extended reals.  (Contributed by FL,
+       28-Jul-2008.)  (Revised by Mario Carneiro, 4-Jul-2014.) $)
+    iccssxr $p |- ( A [,] B ) C_ RR* $=
+      ( vx vy vz cle cicc df-icc ixxssxr ) CDEABFFGCDEHI $.
+
+    $( An open-below, closed-above interval is a subset of the extended reals.
+       (Contributed by FL, 29-May-2014.)  (Revised by Mario Carneiro,
+       4-Jul-2014.) $)
+    iocssxr $p |- ( A (,] B ) C_ RR* $=
+      ( vx vy vz clt cle cioc df-ioc ixxssxr ) CDEABFGHCDEIJ $.
+
+    $( A closed-below, open-above interval is a subset of the extended reals.
+       (Contributed by FL, 29-May-2014.)  (Revised by Mario Carneiro,
+       4-Jul-2014.) $)
+    icossxr $p |- ( A [,) B ) C_ RR* $=
+      ( vx vy vz cle clt cico df-ico ixxssxr ) CDEABFGHCDEIJ $.
+
+    $( An open interval is a subset of its closure.  (Contributed by Paul
+       Chapman, 18-Oct-2007.) $)
+    ioossicc $p |- ( A (,) B ) C_ ( A [,] B ) $=
+      ( vx vy vz vw cicc clt cle cioo df-ioo df-icc cv xrltle ixxssixx ) CDEFAB
+      GHHIIJCDEKCDELAFMZNPBNO $.
+  $}
+
+  ${
+    $d a b w x A $.  $d a b w x B $.  $d a b w x C $.  $d a b w x D $.
+    $( A closed-below, open-above interval is a subset of its closure.
+       (Contributed by Thierry Arnoux, 25-Oct-2016.) $)
+    icossicc $p |- ( A [,) B ) C_ ( A [,] B ) $=
+      ( va vb vx vw cicc cle clt cico df-ico df-icc cxr wcel cv wa wbr ixxssixx
+      idd xrltle ) CDEFABGHIHHJCDEKCDELAMNFOZMNPAUAHQSUABTR $.
+
+    $( A closed-above, open-below interval is a subset of its closure.
+       (Contributed by Thierry Arnoux, 1-Apr-2017.) $)
+    iocssicc $p |- ( A (,] B ) C_ ( A [,] B ) $=
+      ( va vb vx vw cicc clt cle cioc df-ioc df-icc cv xrltle cxr wcel ixxssixx
+      wa wbr idd ) CDEFABGHIIIJCDEKCDELAFMZNUAOPBOPRUABISTQ $.
+
+    $( An open interval is a subset of its closure-below.  (Contributed by
+       Thierry Arnoux, 3-Mar-2017.) $)
+    ioossico $p |- ( A (,) B ) C_ ( A [,) B ) $=
+      ( va vb vx vw cico clt cle cioo df-ioo df-ico cv xrltle cxr wcel ixxssixx
+      wa wbr idd ) CDEFABGHHIHJCDEKCDELAFMZNUAOPBOPRUABHSTQ $.
+
+    $( Condition for a closed interval to be a subset of an open interval.
+       (Contributed by Thierry Arnoux, 29-Mar-2017.) $)
+    iocssioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
+      ( A <_ C /\ D < B ) ) -> ( C (,] D ) C_ ( A (,) B ) ) $=
+      ( va vb vx vw cioc clt cle cioo df-ioo df-ioc cv xrlelttr ixxss12 ) EFGHA
+      BCDIJJJKLKJEFGMEFGNACHOZPRDBPQ $.
+
+    $( Condition for a closed interval to be a subset of an open interval.
+       (Contributed by Thierry Arnoux, 29-Mar-2017.) $)
+    icossioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
+      ( A < C /\ D <_ B ) ) -> ( C [,) D ) C_ ( A (,) B ) ) $=
+      ( va vb vx vw cico clt cle cioo df-ioo df-ico cv xrltletr ixxss12 ) EFGHA
+      BCDIJJKJLJKEFGMEFGNACHOZPRDBPQ $.
+
+    $( Condition for an open interval to be a subset of an open interval.
+       (Contributed by Thierry Arnoux, 26-Sep-2017.) $)
+    ioossioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
+      ( A <_ C /\ D <_ B ) ) -> ( C (,) D ) C_ ( A (,) B ) ) $=
+      ( va vb vx vw cioo clt cle df-ioo cv xrlelttr xrltletr ixxss12 ) EFGHABCD
+      IJJJJIKKEFGLZQACHMZNRDBOP $.
+  $}
+
+  ${
+    $d A y $.  $d B x y $.  $d S x y $.
+    $( A nonempty subset of a closed real interval satisfies the conditions for
+       the existence of its supremum (see ~ suprcl ).  (Contributed by Paul
+       Chapman, 21-Jan-2008.) $)
+    iccsupr $p |- ( ( ( A e. RR /\ B e. RR ) /\ S C_ ( A [,] B ) /\ C e. S ) ->
+                   ( S C_ RR /\ S =/= (/) /\ E. x e. RR A. y e. S y <_ x ) ) $=
+      ( cr wcel wa cicc co wss w3a c0 wne cv cle wbr wral 3adant3 iccssre sylan
+      wrex sstr ancoms ne0i 3ad2ant3 simplr elicc2 biimpd sylan9r imp ralrimiva
+      ssel simp3d wceq breq2 ralbidv rspcev syl2anc 3jca ) CGHZDGHZIZFCDJKZLZEF
+      HZMFGLZFNOZBPZAPZQRZBFSZAGUCZVDVFVHVGVDVEGLZVFVHCDUAVFVOVHFVEGUDUEUBTVGVD
+      VIVFFEUFUGVDVFVNVGVDVFIZVCVJDQRZBFSZVNVBVCVFUHVPVQBFVPVJFHZIVJGHZCVJQRZVQ
+      VPVSVTWAVQMZVFVSVJVEHZVDWBFVEVJUNVDWCWBCDVJUIUJUKULUOUMVMVRADGVKDUPVLVQBF
+      VKDVJQUQURUSUTTVA $.
+  $}
+
+  ${
+    $d w x y z A $.  $d x B $.
+    $( Membership in an unbounded interval of extended reals.  (Contributed by
+       Mario Carneiro, 18-Jun-2014.) $)
+    elioopnf $p |- ( A e. RR* ->
+                     ( B e. ( A (,) +oo ) <-> ( B e. RR /\ A < B ) ) ) $=
+      ( cxr wcel cpnf cioo co cr clt wbr w3a wa pnfxr elioo2 mpan2 df-3an ltpnf
+      wb adantr pm4.71i bitr4i syl6bb ) ACDZBAEFGDZBHDZABIJZBEIJZKZUEUFLZUCECDU
+      DUHRMAEBNOUHUIUGLUIUEUFUGPUIUGUEUGUFBQSTUAUB $.
+
+    $( Membership in an unbounded interval of extended reals.  (Contributed by
+       Mario Carneiro, 18-Jun-2014.) $)
+    elioomnf $p |- ( A e. RR* ->
+                     ( B e. ( -oo (,) A ) <-> ( B e. RR /\ B < A ) ) ) $=
+      ( cxr wcel cmnf cioo co cr clt wbr w3a wa wb mnfxr elioo2 mpan an32 mnflt
+      df-3an adantr pm4.71i 3bitr4i syl6bb ) ACDZBEAFGDZBHDZEBIJZBAIJZKZUFUHLZE
+      CDUDUEUIMNEABOPUFUGLUHLUJUGLUIUJUFUGUHQUFUGUHSUJUGUFUGUHBRTUAUBUC $.
+
+    $( Membership in a closed unbounded interval of reals.  (Contributed by
+       Mario Carneiro, 16-Sep-2014.) $)
+    elicopnf $p |- ( A e. RR ->
+                     ( B e. ( A [,) +oo ) <-> ( B e. RR /\ A <_ B ) ) ) $=
+      ( cr wcel cpnf cico co cle wbr clt w3a wa cxr wb pnfxr elico2 mpan2 ltpnf
+      adantr pm4.71i df-3an bitr4i syl6bbr ) ACDZBAEFGDZBCDZABHIZBEJIZKZUFUGLZU
+      DEMDUEUINOAEBPQUJUJUHLUIUJUHUFUHUGBRSTUFUGUHUAUBUC $.
+
+    $( Two ways of saying that a real number is positive.  (Contributed by NM,
+       7-May-2007.) $)
+    repos $p |- ( A e. ( 0 (,) +oo ) <-> ( A e. RR /\ 0 < A ) ) $=
+      ( vx cc0 cv clt wbr cr cpnf cioo co breq2 ioopos elrab2 ) CBDZEFCAEFBAGCH
+      IJNACEKBLM $.
+
+    $( The set of open intervals of extended reals maps to subsets of reals.
+       (Contributed by NM, 7-Feb-2007.)  (Revised by Mario Carneiro,
+       16-Nov-2013.) $)
+    ioof $p |- (,) : ( RR* X. RR* ) --> ~P RR $=
+      ( vx vz vy cv clt wbr wa cxr crab cr cpw wcel wral cxp cioo wf iooval wss
+      co ioossre ovex elpw mpbir syl6eqelr rgen2a df-ioo fmpt2 mpbi ) ADZBDZEFU
+      JCDZEFGBHIZJKZLZCHMAHMHHNUMOPUNACHUIHLUKHLGULUIUKOSZUMBUIUKQUOUMLUOJRUIUK
+      TUOJUIUKOUAUBUCUDUEACHHULUMOACBUFUGUH $.
+
+    $( The set of closed intervals of extended reals maps to subsets of
+       extended reals.  (Contributed by FL, 14-Jun-2007.)  (Revised by Mario
+       Carneiro, 3-Nov-2013.) $)
+    iccf $p |- [,] : ( RR* X. RR* ) --> ~P RR* $=
+      ( vx vy vz cle cicc df-icc ixxf ) ABCDDEABCFG $.
+
+    $( The union of the range of the open interval function.  (Contributed by
+       NM, 7-May-2007.)  (Revised by Mario Carneiro, 30-Jan-2014.) $)
+    unirnioo $p |- RR = U. ran (,) $=
+      ( cr cioo crn cuni wcel wss cmnf cpnf co ioomax cxr cxp wfn wf ioof ax-mp
+      cpw ffn mnfxr pnfxr fnovrn mp3an eqeltrri elssuni frn sspwuni mpbi eqssi
+      ) ABCZDZAUIEAUJFGHBIZAUIJBKKLZMZGKEHKEUKUIEULAQZBNZUMOULUNBRPSTKKGHBUAUBU
+      CAUIUDPUIUNFZUJAFUOUPOULUNBUEPUIAUFUGUH $.
+
+    $( Alternate definition of the set of open intervals of extended reals.
+       (Contributed by NM, 1-Mar-2007.)  (Revised by Mario Carneiro,
+       1-Sep-2015.) $)
+    dfioo2 $p |- (,) = ( x e. RR* , y e. RR* |->
+                         { w e. RR | ( x < w /\ w < y ) } ) $=
+      ( cioo cxr cv co cmpt2 clt wbr wa cr crab cxp wfn wceq cpw wf ioof ffn
+      ax-mp fnov mpbi iooval2 mpt2eq3ia eqtri ) DABEEAFZBFZDGZHZABEEUGCFZIJUKUH
+      IJKCLMZHDEENZOZDUJPUMLQZDRUNSUMUODTUAABEEDUBUCABEEUIULCUGUHUDUEUF $.
+
+    $( Open intervals are elements of the set of all open intervals.
+       (Contributed by Mario Carneiro, 26-Mar-2015.) $)
+    ioorebas $p |- ( A (,) B ) e. ran (,) $=
+      ( vx cioo co crn wcel c0 wceq id cc0 iooid cxr cxp wfn cr cpw 0xr fnovrn
+      wf ioof ffn ax-mp mp3an eqeltrri syl6eqel wne cv wex n0 wa eliooxr mp3an1
+      syl exlimiv sylbi pm2.61ine ) ABDEZDFZGZURHURHIZURHUSVAJKKDEZHUSKLDMMNZOZ
+      KMGZVEVBUSGVCPQZDTVDUAVCVFDUBUCZRRMMKKDSUDUEUFURHUGCUHZURGZCUIUTCURUJVIUT
+      CVIAMGZBMGZUKUTVHABULVDVJVKUTVGMMABDSUMUNUOUPUQ $.
+  $}
+
+  $( The predicate "is a nonnegative real".  (Contributed by Jeff Madsen,
+     2-Sep-2009.)  (Proof shortened by Mario Carneiro, 18-Jun-2014.) $)
+  elrege0 $p |- ( A e. ( 0 [,) +oo ) <-> ( A e. RR /\ 0 <_ A ) ) $=
+    ( cc0 cr wcel cpnf cico co cle wbr wa wb 0re elicopnf ax-mp ) BCDABEFGDACDB
+    AHIJKLBAMN $.
+
+  $( Nonnegative real numbers are real numbers.  (Contributed by Thierry
+     Arnoux, 9-Sep-2018.)  (Proof shortened by AV, 8-Sep-2019.) $)
+  rge0ssre $p |- ( 0 [,) +oo ) C_ RR $=
+    ( vx cc0 cpnf cico co cr cv wcel cle wbr elrege0 simplbi ssriv ) ABCDEZFAGZ
+    NHOFHBOIJOKLM $.
+
+  $( Elementhood in the set of nonnegative extended reals.  (Contributed by
+     Mario Carneiro, 28-Jun-2014.) $)
+  elxrge0 $p |- ( A e. ( 0 [,] +oo ) <-> ( A e. RR* /\ 0 <_ A ) ) $=
+    ( cxr wcel cc0 cle wbr cpnf w3a wa cicc co df-3an wb 0xr pnfxr elicc1 mp2an
+    pnfge adantr pm4.71i 3bitr4i ) ABCZDAEFZAGEFZHZUBUCIZUDIADGJKCZUFUBUCUDLDBC
+    GBCUGUEMNODGAPQUFUDUBUDUCARSTUA $.
+
+  $( 0 is a member of ` ( 0 [,) +oo ) ` (common case).  (Contributed by David
+     A. Wheeler, 8-Dec-2018.) $)
+  0e0icopnf $p |- 0 e. ( 0 [,) +oo ) $=
+    ( cc0 cpnf cico co wcel cr cle wbr 0re 0le0 elrege0 mpbir2an ) AABCDEAFEAAG
+    HIJAKL $.
+
+  $( 0 is a member of ` ( 0 [,] +oo ) ` (common case).  (Contributed by David
+     A. Wheeler, 8-Dec-2018.) $)
+  0e0iccpnf $p |- 0 e. ( 0 [,] +oo ) $=
+    ( cc0 cpnf cicc co wcel cxr cle wbr 0xr 0le0 elxrge0 mpbir2an ) AABCDEAFEAA
+    GHIJAKL $.
+
+  $( The nonnegative reals are closed under addition.  (Contributed by Mario
+     Carneiro, 19-Jun-2014.) $)
+  ge0addcl $p |- ( ( A e. ( 0 [,) +oo ) /\ B e. ( 0 [,) +oo ) ) ->
+                   ( A + B ) e. ( 0 [,) +oo ) ) $=
+    ( cc0 cpnf cico co wcel cr cle wbr wa caddc elrege0 readdcl ad2ant2r addge0
+    an4s sylanbrc syl2anb ) ACDEFZGAHGZCAIJZKZBHGZCBIJZKZABLFZTGZBTGAMBMUCUFKUG
+    HGZCUGIJZUHUAUDUIUBUEABNOUAUDUBUEUJABPQUGMRS $.
+
+  $( The nonnegative reals are closed under multiplication.  (Contributed by
+     Mario Carneiro, 19-Jun-2014.) $)
+  ge0mulcl $p |- ( ( A e. ( 0 [,) +oo ) /\ B e. ( 0 [,) +oo ) ) ->
+                   ( A x. B ) e. ( 0 [,) +oo ) ) $=
+    ( cc0 cpnf cico co wcel cr cle wbr wa cmul elrege0 ad2ant2r mulge0 sylanbrc
+    remulcl syl2anb ) ACDEFZGAHGZCAIJZKZBHGZCBIJZKZABLFZSGZBSGAMBMUBUEKUFHGZCUF
+    IJUGTUCUHUAUDABQNABOUFMPR $.
+
+  $( The nonnegative reals are closed under addition.  (Contributed by Mario
+     Carneiro, 26-Aug-2015.) $)
+  ge0xaddcl $p |- ( ( A e. ( 0 [,] +oo ) /\ B e. ( 0 [,] +oo ) ) ->
+                   ( A +e B ) e. ( 0 [,] +oo ) ) $=
+    ( cc0 cpnf cicc co wcel cxr cle wbr wa cxad elxrge0 xaddcl ad2ant2r xaddge0
+    an4s sylanbrc syl2anb ) ACDEFZGAHGZCAIJZKZBHGZCBIJZKZABLFZTGZBTGAMBMUCUFKUG
+    HGZCUGIJZUHUAUDUIUBUEABNOUAUDUBUEUJABPQUGMRS $.
+
+  $( The nonnegative extended reals are closed under multiplication.
+     (Contributed by Mario Carneiro, 26-Aug-2015.) $)
+  ge0xmulcl $p |- ( ( A e. ( 0 [,] +oo ) /\ B e. ( 0 [,] +oo ) ) ->
+                   ( A *e B ) e. ( 0 [,] +oo ) ) $=
+    ( cc0 cpnf cicc co wcel cxr cle wbr wa cxmu elxrge0 xmulcl ad2ant2r xmulge0
+    sylanbrc syl2anb ) ACDEFZGAHGZCAIJZKZBHGZCBIJZKZABLFZSGZBSGAMBMUBUEKUFHGZCU
+    FIJUGTUCUHUAUDABNOABPUFMQR $.
+
+  $( The lower bound of a closed interval is a member of it.  (Contributed by
+     Paul Chapman, 26-Nov-2007.)  (Revised by FL, 29-May-2014.)  (Revised by
+     Mario Carneiro, 9-Sep-2015.) $)
+  lbicc2 $p |- ( ( A e. RR* /\ B e. RR* /\ A <_ B ) -> A e. ( A [,] B ) ) $=
+    ( cxr wcel cle wbr w3a cicc co simp1 xrleid 3ad2ant1 simp3 elicc1 mpbir3and
+    wb 3adant3 ) ACDZBCDZABEFZGAABHIDZRAAEFZTRSTJRSUBTAKLRSTMRSUARUBTGPTABANQO
+    $.
+
+  $( The upper bound of a closed interval is a member of it.  (Contributed by
+     Paul Chapman, 26-Nov-2007.)  (Revised by FL, 29-May-2014.) $)
+  ubicc2 $p |- ( ( A e. RR* /\ B e. RR* /\ A <_ B ) -> B e. ( A [,] B ) ) $=
+    ( cxr wcel cle wbr w3a cicc co simp2 simp3 xrleid 3ad2ant2 elicc1 mpbir3and
+    wb 3adant3 ) ACDZBCDZABEFZGBABHIDZSTBBEFZRSTJRSTKSRUBTBLMRSUASTUBGPTABBNQO
+    $.
+
+  $( Zero is an element of the closed unit.  (Contributed by Scott Fenton,
+     11-Jun-2013.) $)
+  0elunit $p |- 0 e. ( 0 [,] 1 ) $=
+    ( cc0 c1 cicc co wcel cr cle wbr 0re 0le0 0le1 1re elicc2i mpbir3an ) AABCD
+    EAFEAAGHABGHIJKABAILMN $.
+
+  $( One is an element of the closed unit.  (Contributed by Scott Fenton,
+     11-Jun-2013.) $)
+  1elunit $p |- 1 e. ( 0 [,] 1 ) $=
+    ( c1 cc0 cicc co wcel cr cle wbr 1re 0le1 1le1 0re elicc2i mpbir3an ) ABACD
+    EAFEBAGHAAGHIJKBAALIMN $.
+
+  $( Membership in a negated open real interval.  (Contributed by Paul Chapman,
+     26-Nov-2007.) $)
+  iooneg $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                  ( C e. ( A (,) B ) <-> -u C e. ( -u B (,) -u A ) ) ) $=
+    ( cr wcel w3a clt wbr wa cneg cioo co ltneg 3adant2 cxr rexr elioo5 renegcl
+    wb syl3an ancoms 3adant1 anbi12d ancom syl6bb 3com12 3bitr4d ) ADEZBDEZCDEZ
+    FZACGHZCBGHZIZBJZCJZGHZUPAJZGHZIZCABKLEZUPUOURKLEZUKUNUSUQIUTUKULUSUMUQUHUJ
+    ULUSSUIACMNUIUJUMUQSZUHUJUIVCCBMUAUBUCUSUQUDUEUHAOEUIBOEUJCOEVAUNSAPBPCPABC
+    QTUIUHUJVBUTSZUIUODEZUHURDEZUJUPDEZVDBRARCRVEUOOEVFUROEVGUPOEVDUOPURPUPPUOU
+    RUPQTTUFUG $.
+
+  $( Membership in a negated closed real interval.  (Contributed by Paul
+     Chapman, 26-Nov-2007.) $)
+  iccneg $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                  ( C e. ( A [,] B ) <-> -u C e. ( -u B [,] -u A ) ) ) $=
+    ( cr wcel w3a cle wbr wa cneg cicc co renegcl anbi12d elicc2 3adant3 3anass
+    wb leneg syl6bb ax-1 impbid2 3ad2ant3 ancom 3adant1 3adant2 syl5bbr syl2anr
+    ancoms 3bitr4d ) ADEZBDEZCDEZFZUMACGHZCBGHZIZIZCJZDEZBJZUSGHZUSAJZGHZIZIZCA
+    BKLEZUSVAVCKLEZUNUMUTUQVEUMUKUMUTRULUMUMUTCMUMUTUAUBUCUQUPUOIUNVEUPUOUDUNUP
+    VBUOVDULUMUPVBRZUKUMULVICBSUIUEUKUMUOVDRULACSUFNUGNUNVGUMUOUPFZURUKULVGVJRU
+    MABCOPUMUOUPQTUNVHUTVBVDFZVFUKULVHVKRZUMULVADEVCDEVLUKBMAMVAVCUSOUHPUTVBVDQ
+    TUJ $.
+
+  $( A shifted real is a member of a shifted, closed-below, open-above real
+     interval.  (Contributed by Paul Chapman, 25-Mar-2008.) $)
+  icoshft $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) -> ( X e. ( A [,) B ) ->
+                  ( X + C ) e. ( ( A + C ) [,) ( B + C ) ) ) ) $=
+    ( cr wcel w3a cico co cle wbr clt wa caddc wi cxr wb rexr elico2 readdcl
+    sylan2 biimpd 3adant3 3anass syl6ib leadd1 3com12 3expib 3adant2 imp ltadd1
+    com12 3adant1 anbi12d pm5.32da expcom syl6ibr 3ad2ant3 biimprd syl2anc syld
+    anim1d sylbid ) AEFZBEFZCEFZGZDABHIFZDEFZADJKZDBLKZMZMZDCNIZACNIZBCNIZHIFZV
+    GVHVIVJVKGZVMVDVEVHVROVFVDVEMVHVRVEVDBPFVHVRQBRABDSUAUBUCVIVJVKUDUEVGVMVIVO
+    VNJKZVNVPLKZMZMZVQVGVIVLWAVGVIMVJVSVKVTVGVIVJVSQZVDVFVIWCOVEVIVDVFMWCVIVDVF
+    WCVDVIVFWCADCUFUGUHULUIUJVGVIVKVTQZVEVFVIWDOVDVIVEVFMWDVIVEVFWDDBCUKUHULUMU
+    JUNUOVGWBVNEFZVSVTGZVQVFVDWBWFOVEVFWBWEWAMWFVFVIWEWAVIVFWEDCTUPVBWEVSVTUDUQ
+    URVGVOEFZVPEFZWFVQOVDVFWGVEACTUIVEVFWHVDBCTUMWGWHMVQWFWHWGVPPFVQWFQVPRVOVPV
+    NSUAUSUTVAVCVA $.
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d y F $.
+    icoshftf1o.1 $e |- F = ( x e. ( A [,) B ) |-> ( x + C ) ) $.
+    $( Shifting a closed-below, open-above interval is one-to-one onto.
+       (Contributed by Paul Chapman, 25-Mar-2008.)  (Proof shortened by Mario
+       Carneiro, 1-Sep-2015.) $)
+    icoshftf1o $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+        F : ( A [,) B ) -1-1-onto-> ( ( A + C ) [,) ( B + C ) ) ) $=
+      ( vy cr wcel cv caddc co cico wral wceq wreu icoshft cmin recnd negsubd
+      wf1o ralrimiv wa cneg wi readdcl 3adant2 3adant1 renegcl 3ad2ant3 syl3anc
+      w3a imp cxr rexrd icossre syl2anc sselda simpl3 simp3 simp1 eqtrd oveq12d
+      wss pncand simp2 adantr 3eltr3d reueq sylib simpll3 simpl1 subadd2d eqcom
+      simpl2 3bitr4g reubidva mpbid ralrimiva f1ompt sylanbrc ) BHIZCHIZDHIZULZ
+      AJZDKLZBDKLZCDKLZMLZIZABCMLZNGJZWGOZAWLPZGWJNWLWJEUAWEWKAWLBCDWFQUBWEWOGW
+      JWEWMWJIZUCZWFWMDRLZOZAWLPZWOWQWRWLIWTWQWMDUDZKLZWHXAKLZWIXAKLZMLZWRWLWEW
+      PXBXEIZWEWHHIZWIHIZXAHIZWPXFUEWBWDXGWCBDUFUGZWCWDXHWBCDUFUHZWDWBXIWCDUIUJ
+      WHWIXAWMQUKUMWQWMDWQWMWEWJHWMWEXGWIUNIWJHVDXJWEWIXKUOWHWIUPUQURZSWQDWBWCW
+      DWPUSSTWEXEWLOWPWEXCBXDCMWEXCWHDRLBWEWHDWEWHXJSWEDWBWCWDUTSZTWEBDWEBWBWCW
+      DVASXMVEVBWEXDWIDRLCWEWIDWEWIXKSXMTWECDWECWBWCWDVFSXMVEVBVCVGVHAWLWRVIVJW
+      QWSWNAWLWQWFWLIZUCZWRWFOWGWMOWSWNXOWMDWFXOWMWQWMHIXNXLVGSXODWBWCWDWPXNVKS
+      XOWFWQWLHWFWQWBCUNIWLHVDWBWCWDWPVLWQCWBWCWDWPVOUOBCUPUQURSVMWFWRVNWMWGVNV
+      PVQVRVSAGWLWJWGEFVTWA $.
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z B $.  $d w x y z C $.  $d w x y z D $.
+    $( The union of end-to-end closed-below, open-above real intervals.
+       (Contributed by Paul Chapman, 15-Mar-2008.)  (Proof shortened by Mario
+       Carneiro, 16-Jun-2014.) $)
+    icoun $p |- ( ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\
+                    ( A <_ B /\ B <_ C ) ) ->
+                  ( ( A [,) B ) u. ( B [,) C ) ) = ( A [,) C ) ) $=
+      ( vx vy vz vw cico cle clt df-ico cv xrlenlt xrltletr xrletr ixxun ) DEFG
+      ABCHHIJIJHIIDEFKZQBGLZMQRBCNABROP $.
+
+    $( End-to-end closed-below, open-above real intervals are disjoint.
+       (Contributed by Mario Carneiro, 16-Jun-2014.) $)
+    icodisj $p |- ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) ->
+                    ( ( A [,) B ) i^i ( B [,) C ) ) = (/) ) $=
+      ( vx cxr wcel w3a cico co cin c0 wss wceq wa clt wbr cle wb elico1 biimpa
+      cv 3adant3 simp3d adantrr wn 3adant1 simp2d simpl2 simp1d xrlenlt syl2anc
+      elin mpbid adantrl pm2.65da pm2.21d syl5bi ssrdv ss0 syl ) AEFZBEFZCEFZGZ
+      ABHIZBCHIZJZKLVGKMVDDVGKDUAZVGFVHVEFZVHVFFZNZVDVHKFZVHVEVFULVDVKVLVDVKVHB
+      OPZVDVIVMVJVDVINVHEFZAVHQPZVMVDVIVNVOVMGZVAVBVIVPRVCABVHSUBTUCUDVDVJVMUEZ
+      VIVDVJNZBVHQPZVQVRVNVSVHCOPZVDVJVNVSVTGZVBVCVJWARVABCVHSUFTZUGVRVBVNVSVQR
+      VAVBVCVJUHVRVNVSVTWBUIBVHUJUKUMUNUOUPUQURVGUSUT $.
+
+    $( The closure of one end of an open real interval.  (Contributed by Paul
+       Chapman, 15-Mar-2008.)  (Proof shortened by Mario Carneiro,
+       16-Jun-2014.) $)
+    snunioo $p |- ( ( A e. RR* /\ B e. RR* /\ A < B ) ->
+                    ( { A } u. ( A (,) B ) ) = ( A [,) B ) ) $=
+      ( vx vy vz vw cxr wcel clt wbr w3a cicc co cioo cun csn cico wceq syl cle
+      simp1 iccid uneq1d simp2 xrleid simp3 df-icc df-ioo cv df-ico xrlelttr wi
+      xrltnle xrltle 3adant1 adantld ixxun syl32anc eqtr3d ) AGHZBGHZABIJZKZAAL
+      MZABNMZOZAPZVEOABQMZVCVDVGVEVCUTVDVGRUTVAVBUAZAUBSUCVCUTUTVAAATJZVBVFVHRV
+      IVIUTVAVBUDVCUTVJVIAUESUTVAVBUFCDEFAABNQTTIILTICDEUGCDEUHAFUIZUMCDEUJVKAB
+      UKUTUTVKGHZKAVKIJZAVKTJZVJUTVLVMVNULUTAVKUNUOUPUQURUS $.
+
+    $( The closure of the open end of a right-open real interval.  (Contributed
+       by Mario Carneiro, 16-Jun-2014.) $)
+    snunico $p |- ( ( A e. RR* /\ B e. RR* /\ A <_ B ) ->
+                    ( ( A [,) B ) u. { B } ) = ( A [,] B ) ) $=
+      ( vx vy vz vw cxr wcel cle wbr w3a cico cicc cun csn wceq simp2 syl clt
+      co iccid uneq2d simp1 xrleid df-ico df-icc xrlenlt xrltle 3adant3 adantrd
+      simp3 cv wi xrletr ixxun syl32anc eqtr3d ) AGHZBGHZABIJZKZABLTZBBMTZNZVBB
+      OZNABMTZVAVCVEVBVAUSVCVEPURUSUTQZBUARUBVAURUSUSUTBBIJZVDVFPURUSUTUCVGVGUR
+      USUTUKVAUSVHVGBUDRCDEFABBMMISIILIICDEUECDEUFZBFULZUGVIVJGHZUSUSKVJBSJZVJB
+      IJZVHVKUSVLVMUMUSVJBUHUIUJABVJUNUOUPUQ $.
+
+    $( The closure of the open end of a left-open real interval.  (Contributed
+       by Thierry Arnoux, 28-Mar-2017.) $)
+    snunioc $p |- ( ( A e. RR* /\ B e. RR* /\ A <_ B ) ->
+                    ( { A } u. ( A (,] B ) ) = ( A [,] B ) ) $=
+      ( vx vy vz vw cxr wcel cle wbr w3a cicc co cioc cun csn wceq 3ad2ant1 clt
+      wa iccid uneq1d simp1 simp2 xrleid df-icc df-ioc cv xrltnle xrletr simprr
+      simp3 wi simpl1 simpl3 xrltle syl2anc mpd ex ixxun syl32anc eqtr3d ) AGHZ
+      BGHZABIJZKZAALMZABNMZOZAPZVHOABLMZVFVGVJVHVCVDVGVJQVEAUARUBVFVCVCVDAAIJZV
+      EVIVKQVCVDVEUCZVMVCVDVEUDVCVDVLVEAUERVCVDVEULCDEFAABNLIISILIICDEUFZCDEUGA
+      FUHZUIVNVOABUJVCVCVOGHZKZVLAVOSJZTZAVOIJZVQVSTZVRVTVQVLVRUKWAVCVPVRVTUMVC
+      VCVPVSUNVCVCVPVSUOAVOUPUQURUSUTVAVB $.
+
+    $( The closure of an open real interval.  (Contributed by Paul Chapman,
+       15-Mar-2008.)  (Proof shortened by Mario Carneiro, 16-Jun-2014.) $)
+    prunioo $p |- ( ( A e. RR* /\ B e. RR* /\ A <_ B ) ->
+                    ( ( A (,) B ) u. { A , B } ) = ( A [,] B ) ) $=
+      ( cxr wcel cle wbr w3a cioo co cpr cun cicc wceq simp3 uncom syl5eq oveq2
+      csn c0 syl5eqr clt wo wb xrleloe 3adant3 cico df-pr uneq2i eqtr4i snunioo
+      wa unass uneq1d 3expa 3adantl3 snunico adantr eqtrd iccid 3ad2ant1 eqcomd
+      ex un0 eqtri iooid dfsn2 preq2 uneq12d eqeq12d syl5ibcom jaod sylbid mpd
+      ) ACDZBCDZABEFZGZVPABHIZABJZKZABLIZMZVNVOVPNVQVPABUAFZABMZUBZWBVNVOVPWEUC
+      VPABUDUEVQWCWBWDVQWCWBVQWCUKVTABUFIZBRZKZWAVNVOWCVTWHMZVPVNVOWCWIVNVOWCGZ
+      VTVRARZKZWGKZWHVTVRWKWGKZKWMVSWNVRABUGUHVRWKWGULUIWJWLWFWGWJWLWKVRKWFVRWK
+      OABUJPUMPUNUOVQWHWAMWCABUPUQURVBVQWKAALIZMWDWBVQWOWKVNVOWOWKMVPAUSUTVAWDW
+      KVTWOWAWDWKSWKKZVTWPWKSKWKSWKOWKVCVDWDSVRWKVSWDSAAHIVRAVEABAHQTWDWKAAJVSA
+      VFABAVGPVHTABALQVIVJVKVLVM $.
+
+    $( If the upper bound of one open interval is less than or equal to the
+       lower bound of the other, the intervals are disjoint.  (Contributed by
+       Jeff Hankins, 13-Jul-2009.) $)
+    ioodisj $p |- ( ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ D e. RR* ) )
+     /\ B <_ C ) -> ( ( A (,) B ) i^i ( C (,) D ) ) = (/) ) $=
+      ( vx vy vz vw cxr wcel wa cle cioo co cin c0 wss wceq cicc syl wbr iooss1
+      simpllr sylancom ioossicc syl6ss sslin simplll simplrr clt df-ioo xrlenlt
+      df-icc cv ixxdisj syl3anc sseqtrd ss0 ) AIJZBIJZKZCIJZDIJZKZKZBCLUAZKZABM
+      NZCDMNZOZPQVJPRVGVJVHBDSNZOZPVGVIVKQVJVLQVGVIBDMNZVKVEVFUTVIVMQUSUTVDVFUC
+      ZBCDUBUDBDUEUFVIVKVHUGTVGUSUTVCVLPRUSUTVDVFUHVNVAVBVCVFUIEFGHABDSUJUJLLME
+      FGUKEFGUMBHUNULUOUPUQVJURT $.
+
+    $( Join two open intervals to create a third.  (Contributed by NM,
+       11-Aug-2008.)  (Proof shortened by Mario Carneiro, 16-Jun-2014.) $)
+    ioojoin $p |- ( ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\
+                    ( A < B /\ B < C ) ) ->
+                 ( ( ( A (,) B ) u. { B } ) u. ( B (,) C ) ) = ( A (,) C ) ) $=
+      ( vx vy vz vw cxr wcel w3a clt wbr wa cioo co csn cun unass cico wceq cle
+      snunioo 3expa 3adantl1 adantrl uneq2d df-ioo df-ico xrlttr xrltletr ixxun
+      cv xrlenlt eqtrd syl5eq ) AHIZBHIZCHIZJZABKLZBCKLZMMZABNOZBPZQBCNOZQVCVDV
+      EQZQZACNOZVCVDVERVBVGVCBCSOZQVHVBVFVIVCUSVAVFVITZUTUQURVAVJUPUQURVAVJBCUB
+      UCUDUEUFDEFGABCSNKKUAKNKKDEFUGZDEFUHBGULZUMVKVLBCUIABVLUJUKUNUO $.
+
+    $( The class difference of ` RR ` and a closed interval.  (Contributed by
+       FL, 18-Jun-2007.) $)
+    difreicc $p |- ( ( A e. RR /\ B e. RR ) -> ( RR \ ( A [,] B ) ) =
+      ( ( -oo (,) A ) u. ( B (,) +oo ) ) ) $=
+      ( cr wcel wa co cmnf cpnf wn cxr wbr w3a wb adantr wi adantl clt ad2antlr
+      ex syl5bi vx cicc cdif cioo cun cv eldif wo cle rexr elicc1 syl2an notbid
+      3anass notbii ianor pm2.24d mnflt simpr simpll ltnle bicomd syl2anc mnfxr
+      biimpa ad3antrrr sylancr mpbir3and adantll ltpnf ad3antlr sylancl sylbird
+      elioo1 pnfxr orim12d jaod sylbid expimpd elun syl6ibr ioossre unssi sseli
+      elioo2 biimpd a1i com13 3impd xrltnle com3l com14 syl imp intnand sylnibr
+      sylibr anim12i mpbird jca impbid syl5bb eqrdv ) ACDZBCDZEZUACABUBFZUCZGAU
+      DFZBHUDFZUEZUAUFZXHDXLCDZXLXGDZIZEZXFXLXKDZXLCXGUGXFXPXQXFXPXLXIDZXLXJDZU
+      HZXQXFXMXOXTXFXMEZXOXLJDZAXLUIKZXLBUIKZLZIZXTYAXNYEXFXNYEMZXMXDAJDZBJDZYG
+      XEAUJZBUJZABXLUKZULNUMYFYBYCYDEZEZIZYAXTYEYNYBYCYDUNZUOYOYBIZYMIZUHYAXTYB
+      YMUPYAYQXTYRXMYQXTOXFXMYBXTXLUJZUQPYRYCIZYDIZUHZYAXTYCYDUPZYAYTXRUUAXSYAY
+      TXRYAYTEZXRYBGXLQKZXLAQKZXMYBXFYTYSRXMUUEXFYTXLURRYAYTUUFYAXMXDYTUUFMXFXM
+      USXDXEXMUTXMXDEZUUFYTXLAVAZVBVCVEUUDGJDZYHXRYBUUEUUFLMVDXDYHXEXMYTYJVFGAX
+      LVNVGVHSYAUUABXLQKZXSXEXMUUJUUAMXDBXLVAVIYAUUJXSYAUUJEZXSYBUUJXLHQKZXMYBX
+      FUUJYSRYAUUJUSXMUULXFUUJXLVJRUUKYIHJDZXSYBUUJUULLZMZXEYIXDXMUUJYKVKVOBHXL
+      VNZVLVHSVMVPTVQTTVRVSXLXIXJVTZWAXFXQXPXFXQEZXMXOXQXMXFXKCXLXIXJCGAWBBHWBW
+      CWDPUURXOYFUURYNYEUURYMYBUURUUBYRXFXQUUBXQXTXFUUBUUQXFXRYTXSUUAXFXRXMUUEU
+      UFLZYTXDXRUUSMZXEXDUUIYHUUTVDYJGAXLWEVGNXFXMUUEUUFYTXDXMUUEUUFYTOZOOXEUUE
+      XMXDUVAXMXDUVAOOUUEXMXDUVAUUGUUFYTUUHWFSWGWHNWIVRXFXSUUNUUAXFYIUUMUUOXEYI
+      XDYKPVOUUPVLXFYBUUJUULUUAXEYBUUJUULUUAOOOZXDXEYIUVBYKUULYBUUJYIUUAYBUUJYI
+      UUAOOOUULYIYBUUJUUAYIYBUUJUUAOYIYBEUUJUUABXLWJWFSWKWGWLWMPWIVRVPTWNUUCWQW
+      OYPWPUURYHYIEZXOYFMXFUVCXQXDYHXEYIYJYKWRNUVCXNYEYLUMWMWSWTSXAXBXC $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Split a closed interval into the union of two closed intervals.
+       (Contributed by Jeff Madsen, 2-Sep-2009.) $)
+    iccsplit $p |- ( ( A e. RR /\ B e. RR /\ C e. ( A [,] B ) ) ->
+                        ( A [,] B ) = ( ( A [,] C ) u. ( C [,] B ) ) ) $=
+      ( cr wcel cicc co w3a cle wbr wa 3impia simp1 a1i simp2 3ad2ant3 3ad2ant2
+      wi elicc2 wb vx cun cv wo clt simplr1 simplr2 simpr1 iccssre sseld adantr
+      ltle syl2anc 3jca orcd simpr simplr3 olcd ltlecasei ex simp1r simp3 letrd
+      imp 3exp sylbid 3jcad simp1l jaod impbid 3adant3 imdistani adantlr ancoms
+      3impa adantll orbi12d syl 3bitr4d elun syl6bbr eqrdv ) ADEZBDEZCABFGZEZHZ
+      UAWEACFGZCBFGZUBZWGUAUCZWEEZWKWHEZWKWIEZUDZWKWJEWGWKDEZAWKIJZWKBIJZHZWPWQ
+      WKCIJZHZWPCWKIJZWRHZUDZWLWOWGWSXDWGWSXDWGWSKZXDWKCXEWKCUEJZKZXAXCXGWPWQWT
+      WPWQWRWGXFUFWPWQWRWGXFUGXEXFWTXEWPCDEZXFWTRWGWPWQWRUHZWGXHWSWCWDWFXHWCWDK
+      ZWEDCABUIUJZLUKZWKCULUMVDUNUOXEXBKZXCXAXMWPXBWRWPWQWRWGXBUFXEXBUPWPWQWRWG
+      XBUQUNURXIXLUSUTWGXAWSXCWGXAWPWQWRXAWPRWGWPWQWTMZNXAWQRWGWPWQWTONWCWDWFXA
+      WRRZXJWFXHACIJZCBIJZHZXOABCSZXJXRXAWRXJXRXAHWKCBXAXJWPXRXNPXRXJXHXAXHXPXQ
+      MZQWCWDXRXAVAXAXJWTXRWPWQWTVBPXRXJXQXAXHXPXQVBQVCVEVFLVGWGXCWPWQWRXCWPRWG
+      WPXBWRMZNWCWDWFXCWQRZXJWFXRYBXSXJXRXCWQXJXRXCHACWKWCWDXRXCVHXRXJXHXCXTQXC
+      XJWPXRYAPXRXJXPXCXHXPXQOQXCXJXBXRWPXBWROPVCVEVFLXCWRRWGWPXBWRVBNVGVIVJWCW
+      DWLWSTWFABWKSVKWGXJXHKZWOXDTWCWDWFYCXJWFXHXKVLVOYCWMXAWNXCWCXHWMXATWDACWK
+      SVMWDXHWNXCTZWCXHWDYDCBWKSVNVPVQVRVSWKWHWIVTWAWB $.
+  $}
+
+  ${
+    iccshftr.1 $e |- ( A + R ) = C $.
+    iccshftr.2 $e |- ( B + R ) = D $.
+    $( Membership in a shifted interval.  (Contributed by Jeff Madsen,
+       2-Sep-2009.) $)
+    iccshftr $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( X e. RR /\ R e. RR ) )
+                  -> ( X e. ( A [,] B ) <-> ( X + R ) e. ( C [,] D ) ) ) $=
+      ( cr wcel wa cle wbr w3a caddc co cicc wb readdcl leadd1 simpl 2thd 3expb
+      adantl adantlr breq1i syl6bb an12s adantll breq2i 3anbi123d elicc2 adantr
+      syl5eqelr syl2an anandirs adantrl 3bitr4d ) AIJZBIJZKZFIJZEIJZKZKZVBAFLMZ
+      FBLMZNZFEOPZIJZCVILMZVIDLMZNZFABQPJZVICDQPJZVEVBVJVFVKVGVLVDVBVJRVAVDVBVJ
+      VBVCUAFESUBUDVEVFAEOPZVILMZVKUSVDVFVQRZUTUSVBVCVRAFETUCUEVPCVILGUFUGVEVGV
+      IBEOPZLMZVLUTVDVGVTRZUSVBUTVCWAVBUTVCWAFBETUCUHUIVSDVILHUJUGUKVAVNVHRVDAB
+      FULUMVAVCVOVMRZVBUSUTVCWBUSVCKZCIJDIJWBUTVCKZWCCVPIGAESUNWDDVSIHBESUNCDVI
+      ULUOUPUQUR $.
+  $}
+
+  ${
+    iccshftri.1 $e |- A e. RR $.
+    iccshftri.2 $e |- B e. RR $.
+    iccshftri.3 $e |- R e. RR $.
+    iccshftri.4 $e |- ( A + R ) = C $.
+    iccshftri.5 $e |- ( B + R ) = D $.
+    $( Membership in a shifted interval.  (Contributed by Jeff Madsen,
+       2-Sep-2009.) $)
+    iccshftri $p |- ( X e. ( A [,] B ) -> ( X + R ) e. ( C [,] D ) ) $=
+      ( cr wcel cicc co caddc wss iccssre mp2an sseli wb iccshftr mpanl12 mpan2
+      wa biimpd mpcom ) FLMZFABNOZMZFEPOCDNOMZUILFALMZBLMZUILQGHABRSTUHUJUKUHEL
+      MZUJUKUAZIULUMUHUNUEUOGHABCDEFJKUBUCUDUFUG $.
+  $}
+
+  ${
+    iccshftl.1 $e |- ( A - R ) = C $.
+    iccshftl.2 $e |- ( B - R ) = D $.
+    $( Membership in a shifted interval.  (Contributed by Jeff Madsen,
+       2-Sep-2009.) $)
+    iccshftl $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( X e. RR /\ R e. RR ) )
+                  -> ( X e. ( A [,] B ) <-> ( X - R ) e. ( C [,] D ) ) ) $=
+      ( cr wcel wa cle wbr w3a cmin co cicc wb resubcl lesub1 simpl 2thd adantl
+      3expb adantlr breq1i syl6bb adantll breq2i 3anbi123d elicc2 adantr syl2an
+      an12s syl5eqelr anandirs adantrl 3bitr4d ) AIJZBIJZKZFIJZEIJZKZKZVBAFLMZF
+      BLMZNZFEOPZIJZCVILMZVIDLMZNZFABQPJZVICDQPJZVEVBVJVFVKVGVLVDVBVJRVAVDVBVJV
+      BVCUAFESUBUCVEVFAEOPZVILMZVKUSVDVFVQRZUTUSVBVCVRAFETUDUEVPCVILGUFUGVEVGVI
+      BEOPZLMZVLUTVDVGVTRZUSVBUTVCWAVBUTVCWAFBETUDUNUHVSDVILHUIUGUJVAVNVHRVDABF
+      UKULVAVCVOVMRZVBUSUTVCWBUSVCKZCIJDIJWBUTVCKZWCCVPIGAESUOWDDVSIHBESUOCDVIU
+      KUMUPUQUR $.
+  $}
+
+  ${
+    iccshftli.1 $e |- A e. RR $.
+    iccshftli.2 $e |- B e. RR $.
+    iccshftli.3 $e |- R e. RR $.
+    iccshftli.4 $e |- ( A - R ) = C $.
+    iccshftli.5 $e |- ( B - R ) = D $.
+    $( Membership in a shifted interval.  (Contributed by Jeff Madsen,
+       2-Sep-2009.) $)
+    iccshftli $p |- ( X e. ( A [,] B ) -> ( X - R ) e. ( C [,] D ) ) $=
+      ( cr wcel cicc co cmin wss iccssre mp2an sseli wb iccshftl mpanl12 biimpd
+      wa mpan2 mpcom ) FLMZFABNOZMZFEPOCDNOMZUILFALMZBLMZUILQGHABRSTUHUJUKUHELM
+      ZUJUKUAZIULUMUHUNUEUOGHABCDEFJKUBUCUFUDUG $.
+  $}
+
+  ${
+    iccdil.1 $e |- ( A x. R ) = C $.
+    iccdil.2 $e |- ( B x. R ) = D $.
+    $( Membership in a dilated interval.  (Contributed by Jeff Madsen,
+       2-Sep-2009.) $)
+    iccdil $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( X e. RR /\ R e. RR+ ) )
+                  -> ( X e. ( A [,] B ) <-> ( X x. R ) e. ( C [,] D ) ) ) $=
+      ( cr wcel wa cle wbr w3a cmul co cicc wb remulcl sylan2 simpl rpre adantl
+      crp 2thd cc0 clt elrp lemul1 syl3an3b 3expb adantlr breq1i syl6bb adantll
+      breq2i 3anbi123d elicc2 adantr syl5eqelr syl2an anandirs adantrl 3bitr4d
+      an12s ) AIJZBIJZKZFIJZEUDJZKZKZVIAFLMZFBLMZNZFEOPZIJZCVPLMZVPDLMZNZFABQPJ
+      ZVPCDQPJZVLVIVQVMVRVNVSVKVIVQRVHVKVIVQVIVJUAVJVIEIJZVQEUBZFESTUEUCVLVMAEO
+      PZVPLMZVRVFVKVMWFRZVGVFVIVJWGVJVFVIWCUFEUGMKZWGEUHZAFEUIUJUKULWECVPLGUMUN
+      VLVNVPBEOPZLMZVSVGVKVNWKRZVFVIVGVJWLVIVGVJWLVJVIVGWHWLWIFBEUIUJUKVEUOWJDV
+      PLHUPUNUQVHWAVORVKABFURUSVHVJWBVTRZVIVJVHWCWMWDVFVGWCWMVFWCKZCIJDIJWMVGWC
+      KZWNCWEIGAESUTWODWJIHBESUTCDVPURVAVBTVCVD $.
+  $}
+
+  ${
+    iccdili.1 $e |- A e. RR $.
+    iccdili.2 $e |- B e. RR $.
+    iccdili.3 $e |- R e. RR+ $.
+    iccdili.4 $e |- ( A x. R ) = C $.
+    iccdili.5 $e |- ( B x. R ) = D $.
+    $( Membership in a dilated interval.  (Contributed by Jeff Madsen,
+       2-Sep-2009.) $)
+    iccdili $p |- ( X e. ( A [,] B ) -> ( X x. R ) e. ( C [,] D ) ) $=
+      ( cr wcel cicc co cmul wss iccssre mp2an sseli wb wa iccdil mpanl12 mpan2
+      crp biimpd mpcom ) FLMZFABNOZMZFEPOCDNOMZUJLFALMZBLMZUJLQGHABRSTUIUKULUIE
+      UFMZUKULUAZIUMUNUIUOUBUPGHABCDEFJKUCUDUEUGUH $.
+  $}
+
+  ${
+    icccntr.1 $e |- ( A / R ) = C $.
+    icccntr.2 $e |- ( B / R ) = D $.
+    $( Membership in a contracted interval.  (Contributed by Jeff Madsen,
+       2-Sep-2009.) $)
+    icccntr $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( X e. RR /\ R e. RR+ ) )
+                  -> ( X e. ( A [,] B ) <-> ( X / R ) e. ( C [,] D ) ) ) $=
+      ( cr wcel wa cle wbr w3a cdiv co cicc wb rerpdivcl lediv1 crp 2thd adantl
+      simpl cc0 clt elrp syl3an3b 3expb adantlr breq1i syl6bb adantll 3anbi123d
+      an12s breq2i elicc2 adantr syl5eqelr syl2an anandirs adantrl 3bitr4d ) AI
+      JZBIJZKZFIJZEUAJZKZKZVGAFLMZFBLMZNZFEOPZIJZCVNLMZVNDLMZNZFABQPJZVNCDQPJZV
+      JVGVOVKVPVLVQVIVGVORVFVIVGVOVGVHUDFESUBUCVJVKAEOPZVNLMZVPVDVIVKWBRZVEVDVG
+      VHWCVHVDVGEIJUEEUFMKZWCEUGZAFETUHUIUJWACVNLGUKULVJVLVNBEOPZLMZVQVEVIVLWGR
+      ZVDVGVEVHWHVGVEVHWHVHVGVEWDWHWEFBETUHUIUOUMWFDVNLHUPULUNVFVSVMRVIABFUQURV
+      FVHVTVRRZVGVDVEVHWIVDVHKZCIJDIJWIVEVHKZWJCWAIGAESUSWKDWFIHBESUSCDVNUQUTVA
+      VBVC $.
+  $}
+
+  ${
+    icccntri.1 $e |- A e. RR $.
+    icccntri.2 $e |- B e. RR $.
+    icccntri.3 $e |- R e. RR+ $.
+    icccntri.4 $e |- ( A / R ) = C $.
+    icccntri.5 $e |- ( B / R ) = D $.
+    $( Membership in a contracted interval.  (Contributed by Jeff Madsen,
+       2-Sep-2009.) $)
+    icccntri $p |- ( X e. ( A [,] B ) -> ( X / R ) e. ( C [,] D ) ) $=
+      ( cr wcel cicc co cdiv wss iccssre mp2an sseli crp icccntr mpanl12 biimpd
+      wb wa mpan2 mpcom ) FLMZFABNOZMZFEPOCDNOMZUJLFALMZBLMZUJLQGHABRSTUIUKULUI
+      EUAMZUKULUEZIUMUNUIUOUFUPGHABCDEFJKUBUCUGUDUH $.
+  $}
+
+  $( A condition for a ratio to be a member of the closed unit.  (Contributed
+     by Scott Fenton, 11-Jun-2013.) $)
+  divelunit $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 < B ) ) ->
+      ( ( A / B ) e. ( 0 [,] 1 ) <-> A <_ B ) ) $=
+    ( cdiv co cc0 c1 cicc wcel cr cle wbr wa clt w3a 0re 1re elicc2i bitri cmul
+    df-3an ledivmul mp3an2 adantlr simpll simprl wne gt0ne0 adantl redivcld jca
+    wb divge0 biantrurd cc recn ad2antrl mulid1d breq2d 3bitr3d syl5bb ) ABCDZE
+    FGDHZVAIHZEVAJKZLZVAFJKZLZAIHZEAJKZLZBIHZEBMKZLZLZABJKZVBVCVDVFNVGEFVAOPQVC
+    VDVFTRVNVFABFSDZJKZVGVOVHVMVFVQUKZVIVHFIHVMVRPAFBUAUBUCVNVEVFVNVCVDVNABVHVI
+    VMUDVJVKVLUEVMBEUFVJBUGUHUIABULUJUMVNVPBAJVNBVKBUNHVJVLBUOUPUQURUSUT $.
+
+  ${
+    $( A linear combination of two reals which lies in the interval between
+       them.  (Contributed by Jeff Madsen, 2-Sep-2009.)  (Proof shortened by
+       Mario Carneiro, 8-Sep-2015.) $)
+    lincmb01cmp $p |- ( ( ( A e. RR /\ B e. RR /\ A < B ) /\ T e. ( 0 [,] 1 ) )
+                    -> ( ( ( 1 - T ) x. A ) + ( T x. B ) ) e. ( A [,] B ) ) $=
+      ( cr wcel wbr cc0 c1 cicc co cmin cmul caddc 0re a1i 1re cle eqid recnd
+      wb clt w3a simpr crp elicc2i simp1bi adantl difrp biimp3a adantr syl22anc
+      wa iccdil simpl2 simpl1 resubcld mul02d mulid2d oveq12d remulcld iccshftr
+      mpbid eleqtrd mulcld subadd23d subdid oveq1d resubcl sylancr addcomd 1cnd
+      subdird eqtrd oveq2d 3eqtr4d addid2d npcand 3eltr3d ) ADEZBDEZABUAFZUBZCG
+      HIJEZULZCBAKJZLJZAMJZGAMJZWEAMJZIJZHCKJZALJZCBLJZMJZABIJWDWFGWEIJZEZWGWJE
+      ZWDWFGWELJZHWELJZIJZWOWDWCWFWTEZWBWCUCWDGDEZHDEZCDEZWEUDEZWCXATXBWDNOZXCW
+      DPOWCXDWBWCXDGCQFCHQFGHCNPUEUFUGZWBXEWCVSVTWAXEABUHUIUJGHWRWSWECWRRWSRUMU
+      KVBWDWRGWSWEIWDWEWDWEWDBAVSVTWAWCUNZVSVTWAWCUOZUPZSZUQWDWEXKURUSVCWDXBWED
+      EWFDEVSWPWQTXFXJWDCWEXGXJUTXIGWEWHWIAWFWHRWIRVAUKVBWDWMCALJZKJZAMJWMAXLKJ
+      ZMJZWGWNWDWMXLAWDCBWDCXGSZWDBXHSZVDZWDCAXPWDAXISZVDXSVEWDWFXMAMWDCBAXPXQX
+      SVFVGWDWNWMWLMJXOWDWLWMWDWLWDWKAWDXCXDWKDEPXGHCVHVIXIUTSXRVJWDWLXNWMMWDWL
+      HALJZXLKJXNWDHCAWDVKXPXSVLWDXTAXLKWDAXSURVGVMVNVMVOWDWHAWIBIWDAXSVPWDBAXQ
+      XSVQUSVR $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    iccf1o.1 $e |- F = ( x e. ( 0 [,] 1 ) |->
+      ( ( x x. B ) + ( ( 1 - x ) x. A ) ) ) $.
+    $( Describe a bijection from ` [ 0 , 1 ] ` to an arbitrary nontrivial
+       closed interval ` [ A , B ] ` .  (Contributed by Mario Carneiro,
+       8-Sep-2015.) $)
+    iccf1o $p |- ( ( A e. RR /\ B e. RR /\ A < B ) ->
+      ( F : ( 0 [,] 1 ) -1-1-onto-> ( A [,] B ) /\ `' F =
+        ( y e. ( A [,] B ) |-> ( ( y - A ) / ( B - A ) ) ) ) ) $=
+      ( cr wcel wbr cc0 c1 cicc co cmul cmin caddc recnd cc wceq adantrl clt cv
+      w3a cdiv wa cle 0re 1re elicc2i simp1bi adantl simpl2 mulcld ax-1cn subcl
+      sylancr simpl1 addcomd lincmb01cmp eqeltrd simpr wb elicc2 3adant3 biimpa
+      simp1d iccshftl syl22anc mpbid resubcld difrp biimp3a adantr rpcnd rpne0d
+      eqid crp divcan1d mul02d subidd eqtr4d mulid2d oveq12d 3eltr4d rerpdivcld
+      0red 1red iccdil mpbird eqcom adantrr wne divmul3d syl5bb remulcld syl6bb
+      subadd2d subadd23d subdid oveq1d 1cnd subdird eqtrd oveq2d 3eqtr4d eqeq2d
+      3bitrd f1ocnv2d ) CGHZDGHZCDUAIZUCZABJKLMZCDLMZAUBZDNMZKXOOMZCNMZPMZBUBZC
+      OMZDCOMZUDMZEFXLXOXMHZUEZXSXRXPPMXNYEXPXRYEXODYEXOYDXOGHZXLYDYFJXOUFIXOKU
+      FIJKXOUGUHUIUJUKZQZYEDXIXJXKYDULZQZUMZYEXQCYEKRHXORHZXQRHUNYHKXOUOUPYECXI
+      XJXKYDUQZQZUMURCDXOUSUTXLXTXNHZUEZYCXMHZYCYBNMZJYBNMZKYBNMZLMZHZYPYACCOMZ
+      YBLMZYRUUAYPYOYAUUDHZXLYOVAYPXIXJXTGHZXIYOUUEVBXIXJXKYOUQZXIXJXKYOULYPUUF
+      CXTUFIZXTDUFIZXLYOUUFUUHUUIUCZXIXJYOUUJVBXKCDXTVCVDVEVFZUUGCDUUCYBCXTUUCV
+      PYBVPVGVHVIYPYAYBYPYAYPXTCUUKUUGVJZQZYPYBXLYBVQHZYOXIXJXKUUNCDVKVLVMZVNZY
+      PYBUUOVOZVRYPYSUUCYTYBLYPYSJUUCYPYBUUPVSYPCYPCUUGQZVTWAYPYBUUPWBWCWDYPJGH
+      KGHYCGHUUNYQUUBVBYPWFYPWGYPYAYBUULUUOWEUUOJKYSYTYBYCYSVPYTVPWHVHWIXLYDYOU
+      EUEZXOYCSZYAXOYBNMZSZXTUVACPMZSZXTXSSUUTYCXOSUUSUVBXOYCWJUUSYAXOYBXLYOYAR
+      HYDUUMTXLYDYLYOYHWKXLYOYBRHYDUUPTXLYOYBJWLYDUUQTWMWNUUSUVBUVCXTSUVDUUSXTC
+      UVAUUSXTXLYOUUFYDUUKTQXLYOCRHYDUURTUUSUVAXLYDUVAGHYOYEXOYBYGYEDCYIYMVJWOW
+      KQWQUVCXTWJWPUUSUVCXSXTXLYDUVCXSSYOYEXPXOCNMZOMZCPMXPCUVEOMZPMUVCXSYEXPUV
+      ECYKYEXOCYHYNUMYNWRYEUVAUVFCPYEXODCYHYJYNWSWTYEXRUVGXPPYEXRKCNMZUVEOMUVGY
+      EKXOCYEXAYHYNXBYEUVHCUVEOYECYNWBWTXCXDXEWKXFXGXH $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Any nontrivial closed interval is equinumerous to the unit interval.
+       (Contributed by Mario Carneiro, 26-Jul-2014.)  (Revised by Mario
+       Carneiro, 8-Sep-2015.) $)
+    iccen $p |- ( ( A e. RR /\ B e. RR /\ A < B ) ->
+      ( 0 [,] 1 ) ~~ ( A [,] B ) ) $=
+      ( vx vy cr wcel clt wbr w3a cc0 c1 cicc co cmul cmin caddc cmpt cvv ovex
+      cv wf1o cen ccnv cdiv wceq eqid iccf1o simpld f1oen2g mp3an12 syl ) AEFBE
+      FABGHIZJKLMZABLMZCUMCTZBNMKUOOMANMPMQZUAZUMUNUBHZULUQUPUCDUNDTAOMBAOMUDMQ
+      UECDABUPUPUFUGUHUMRFUNRFUQURJKLSABLSUMUNUPRRUIUJUK $.
+  $}
+
+  ${
+    xov1plusxeqvd.1 $e |- ( ph -> X e. CC ) $.
+    xov1plusxeqvd.2 $e |- ( ph -> X =/= -u 1 ) $.
+    $( A complex number ` X ` is positive real iff ` X / ( 1 + X ) ` is in
+       ` ( 0 (,) 1 ) ` .  Deduction form.  (Contributed by David Moews,
+       28-Feb-2017.) $)
+    xov1plusxeqvd $p |- ( ph -> ( X e. RR+ <->
+                              ( X / ( 1 + X ) ) e. ( 0 (,) 1 ) ) ) $=
+      ( crp wcel c1 caddc co cdiv cc0 wa cr clt wbr cmin oveq1d adantr syl5eqbr
+      wceq cioo simpr rpred 1rp rpaddcld rerpdivcld rprecred 1red 0red readdcld
+      ltaddrpd recgt1i syl2anc simprd 1m0e1 syl6breqr ltsub13d 1cnd addcld cneg
+      a1i negcld addneintrd 1pneg1e0 neeqtrd divsubdird pncan2d dividd breqtrrd
+      3eqtr3d 1m1e0 simpld ltsub23d eqbrtrd cxr w3a wb 0xr 1re elioo2 syl3anbrc
+      rexri mp2an wne recrecd pncand sylib simp1d resubcld eqeltrd simp3d elrpd
+      cc eqeltrrd 1p0e1 simp2d reclt1d mpbid breqtrd ltadd2d mpbird impbida ) A
+      BEFZBGBHIZJIZKGUAIFZAXCLZXEMFZKXENOZXEGNOZXFXGBXDXGBAXCUBZUCZXGGBGEFXGUDV
+      AXKUEZUFXGKGGXDJIZPIZXENXGXNGKXGXDXMUGZXGUHZXGUIXGXNGGKPIZNXGKXNNOZXNGNOZ
+      XGXDMFGXDNOXSXTLXGGBXQXLUJXGGBXQXKUKXDULUMZUNUOUPUQAXEXOTXCAXDGPIZXDJIXDX
+      DJIZXNPIXEXOAXDGXDAGBAURZCUSZYDYEAXDGGUTZHIZKAGBYFYDCAGYDVBDVCYGKTAVDVAVE
+      ZVFAYBBXDJAGBYDCVGZQAYCGXNPAXDYEYHVHZQVJRZVIXGXEXOGNYKXGGGXNXQXQXPXGGGPIZ
+      KXNNVKXGXSXTYAVLSVMVNKVOFGVOFXFXHXIXJVPZVQVRGVSWBKGXEVTWCZWAAXFLZBYOYBBMA
+      YBBTXFYIRYOXDGYOGXNJIZXDMYOXDAXDWMFXFYERAXDKWDXFYHRWEZYOXNYOXNYOXNGXEPIZM
+      AXNYRTXFAXDBPIZXDJIYCXEPIXNYRAXDBXDYECYEYHVFAYSGXDJAGBYDCWFQAYCGXEPYJQVJR
+      ZYOGXEYOUHZYOXHXIXJYOXFYMAXFUBYNWGZWHZWIWJYOKYRXNNYOXEGKUUCUUAYOUIZYOXEGX
+      RNYOXHXIXJUUBWKUOUPUQYTVIWLZUGWNUUAWIWNZYOKBNOGKHIZXDNOYOUUGGXDNWOYOGYPXD
+      NYOXTGYPNOYOXNYRGNYTYOGGXEUUAUUAUUCYOYLKXENVKYOXHXIXJUUBWPSVMVNYOXNUUEWQW
+      RYQWSSYOKBGUUDUUFUUAWTXAWLXB $.
+  $}
+
+  $( ` ( 0 [,] 1 ) ` is a subset of the reals.  (Contributed by David Moews,
+     28-Feb-2017.) $)
+  unitssre $p |- ( 0 [,] 1 ) C_ RR $=
+    ( cc0 cr wcel c1 cicc co wss 0re 1re iccssre mp2an ) ABCDBCADEFBGHIADJK $.
+
+  ${
+    $d A x y $.  $d B x $.  $d C x y $.  $d ph x $.
+    supicc.1 $e |- ( ph -> B e. RR ) $.
+    supicc.2 $e |- ( ph -> C e. RR ) $.
+    supicc.3 $e |- ( ph -> A C_ ( B [,] C ) ) $.
+    supicc.4 $e |- ( ph -> A =/= (/) ) $.
+    $( Supremum of a bounded set of real numbers.  (Contributed by Thierry
+       Arnoux, 17-May-2019.) $)
+    supicc $p |- ( ph -> sup ( A , RR , < ) e. ( B [,] C ) ) $=
+      ( vx vy cr wcel cle wbr wss wral syl2anc adantr syl3anc wb clt csup co c0
+      cicc wne cv wrex iccssre sstrd wa cxr rexrd sselda iccleub ralrimiva wceq
+      breq2 ralbidv rspcev suprcl w3a simpr iccsupr syl211anc syl iccgelb letrd
+      suprub r19.3rzv mpbird suprleub syl31anc elicc2 mpbir3and ) ABKUAUBZCDUEU
+      CZLZVPKLZCVPMNZVPDMNZABKOZBUDUFZIUGZJUGZMNZIBPZJKUHZVSABVQKGACKLZDKLZVQKO
+      EFCDUIQUJZHAWJWDDMNZIBPZWHFAWLIBAWDBLZUKZCULLZDULLZWDVQLZWLWOCAWIWNERZUMZ
+      WODAWJWNFRZUMZABVQWDGUNZCDWDUOSUPZWGWMJDKWEDUQWFWLIBWEDWDMURUSUTQZJIBVAZS
+      AVTVTIBPZAVTIBWOCWDVPWSABKWDWKUNWOWBWCWHVBZVSWOWIWJBVQOZWNXHWSXAAXIWNGRAW
+      NVCZJICDWDBVDVEZXFVFWOWPWQWRCWDMNWTXBXCCDWDVGSWOXHWNWDVPMNXKXJJIBWDVIQVHU
+      PAWCVTXGTHVTIBVJVFVKAWAWMXDAWBWCWHWJWAWMTWKHXEFJIIBDVLVMVKAWIWJVRVSVTWAVB
+      TEFCDVPVNQVO $.
+
+    supiccub.1 $e |- ( ph -> D e. A ) $.
+    $( The supremum of a bounded set of real numbers is an upper bound.
+       (Contributed by Thierry Arnoux, 20-May-2019.) $)
+    supiccub $p |- ( ph -> D <_ sup ( A , RR , < ) ) $=
+      ( vx vy cr wss cv cle wbr wral wcel syl2anc c0 wne wrex csup cicc iccssre
+      clt co sstrd cxr adantr rexrd sselda iccleub syl3anc ralrimiva wceq breq2
+      wa ralbidv rspcev suprub syl31anc ) ABMNBUAUBKOZLOZPQZKBRZLMUCZEBSEBMUGUD
+      PQABCDUEUHZMHACMSZDMSZVIMNFGCDUFTUIIAVKVDDPQZKBRZVHGAVLKBAVDBSZUSZCUJSDUJ
+      SVDVISVLVOCAVJVNFUKULVODAVKVNGUKULABVIVDHUMCDVDUNUOUPVGVMLDMVEDUQVFVLKBVE
+      DVDPURUTVATJLKBEVBVC $.
+
+    $d A z $.  $d D z $.
+    $( The supremum of a bounded set of real numbers is the least upper bound.
+       (Contributed by Thierry Arnoux, 23-May-2019.) $)
+    supicclub $p |- ( ph -> ( D < sup ( A , RR , < ) <-> E. z e. A D < z ) ) $=
+      ( vx vy cr wss cv cle wbr wcel clt c0 wral wrex csup cicc iccssre syl2anc
+      wne wb co sstrd wa cxr adantr rexrd sselda iccleub syl3anc ralrimiva wceq
+      breq2 ralbidv rspcev sseldd suprlub syl31anc ) ACNOCUAUHLPZMPZQRZLCUBZMNU
+      CZFNSFCNTUDTRFBPTRBCUCUIACDEUEUJZNIADNSZENSZVLNOGHDEUFUGUKZJAVNVGEQRZLCUB
+      ZVKHAVPLCAVGCSZULZDUMSEUMSVGVLSVPVSDAVMVRGUNUOVSEAVNVRHUNUOACVLVGIUPDEVGU
+      QURUSVJVQMENVHEUTVIVPLCVHEVGQVAVBVCUGACNFVOKVDMLBCFVEVF $.
+
+    $d ph z $.
+    supicclub2.1 $e |- ( ( ph /\ z e. A ) -> z <_ D ) $.
+    $( The supremum of a bounded set of real numbers is the least upper bound.
+       (Contributed by Thierry Arnoux, 23-May-2019.) $)
+    supicclub2 $p |- ( ph -> sup ( A , RR , < ) <_ D ) $=
+      ( clt cle wbr wn wcel cxr wb xrlenlt cr csup cv wrex wa co iccssxr syl6ss
+      sselda sseldd adantr syl2anc nrexdv supicclub mtbird supicc sseldi mpbird
+      cicc mpbid ) ACUAMUBZFNOZFVAMOZPZAVCFBUCZMOZBCUDAVFBCAVECQZUEZVEFNOZVFPZL
+      VHVERQFRQZVIVJSACRVEACDEUSUFZRIDEUGZUHZUIAVKVGACRFVNKUJZUKVEFTULUTUMABCDE
+      FGHIJKUNUOAVARQVKVBVDSAVLRVAVMACDEGHIJUPUQVOVAFTULUR $.
+  $}
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
@@ -79288,6 +80798,22 @@ htmldef "*e" as "<IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT=' x' TITLE='x'>" +
     "<IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
   althtmldef "*e" as  " &middot;<SUB>e</SUB> ";
   latexdef "*e" as "\cdot_e";
+htmldef "(,)" as
+    "<IMG SRC='_ioo.gif' WIDTH=13 HEIGHT=19 ALT=' (,)' TITLE='(,)'>";
+  althtmldef "(,)" as "(,)";
+  latexdef "(,)" as "(,)";
+htmldef "(,]" as
+    "<IMG SRC='_ioc.gif' WIDTH=12 HEIGHT=19 ALT=' (,]' TITLE='(,]'>";
+  althtmldef "(,]" as "(,]";
+  latexdef "(,]" as "(,]";
+htmldef "[,)" as
+    "<IMG SRC='_ico.gif' WIDTH=13 HEIGHT=19 ALT=' [,)' TITLE='[,)'>";
+  althtmldef "[,)" as "[,)";
+  latexdef "[,)" as "[,)";
+htmldef "[,]" as
+    "<IMG SRC='_icc.gif' WIDTH=12 HEIGHT=19 ALT=' [,]' TITLE='[,]'>";
+  althtmldef "[,]" as "[,]";
+  latexdef "[,]" as "[,]";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
