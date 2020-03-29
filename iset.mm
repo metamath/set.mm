@@ -78153,27 +78153,6 @@ $)
     $}
 
     ${
-      ixxin.2 $e |- ( ( A e. RR* /\ C e. RR* /\ z e. RR* ) ->
-        ( if ( A <_ C , C , A ) R z <-> ( A R z /\ C R z ) ) ) $.
-      ixxin.3 $e |- ( ( z e. RR* /\ B e. RR* /\ D e. RR* ) ->
-        ( z S if ( B <_ D , B , D ) <-> ( z S B /\ z S D ) ) ) $.
-      $( Intersection of two intervals of extended reals.  (Contributed by
-         Mario Carneiro, 3-Nov-2013.) $)
-      ixxin $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ D e. RR* ) ) ->
-          ( ( A O B ) i^i ( C O D ) ) =
-            ( if ( A <_ C , C , A ) O if ( B <_ D , B , D ) ) ) $=
-        ( cxr wcel wa co wbr crab ixxval cin cle cif cv inrab ineqan12d wceq wb
-        3expa adantlr 3expb ancoms adantll anbi12d an4 syl6bbr rabbidva 3eqtr4a
-        an4s ifcl syl2an eqtr4d ) DNOZENOZPZFNOZGNOZPZPZDEJQZFGJQZUAZDFUBRZFDUC
-        ZCUDZHRZVOEGUBRZEGUCZIRZPZCNSZVNVRJQZVIDVOHRZVOEIRZPZCNSZFVOHRZVOGIRZPZ
-        CNSZUAWEWIPZCNSZVLWAWEWICNUEVEVHVJWFVKWJABCDEHIJKTABCFGHIJKTUFVCVFVDVGW
-        AWLUGVCVFPZVDVGPZPZVTWKCNWOVONOZPZVTWCWGPZWDWHPZPWKWQVPWRVSWSWMWPVPWRUH
-        ZWNVCVFWPWTLUIUJWNWPVSWSUHZWMWPWNXAWPVDVGXAMUKULUMUNWCWDWGWHUOUPUQUSURV
-        CVFVDVGWBWAUGZWMVNNOZVRNOXBWNVFVCXCVMFDNUTULVQEGNUTABCVNVRHIJKTVAUSVB
-        $.
-    $}
-
-    ${
       ixxss1.2 $e |- P = ( x e. RR* , y e. RR* |->
                          { z e. RR* | ( x T z /\ z S y ) } ) $.
       ixxss1.3 $e |- ( ( A e. RR* /\ B e. RR* /\ w e. RR* ) ->
