@@ -78119,19 +78119,6 @@ $)
     ixxssxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A O B ) C_ RR* ) $=
       ( cxr wcel wa co cpw ixxf fovcl elpwid ) DJKEJKLDEHMJDEJNJJHABCFGHIOPQ $.
 
-    $( Membership in a set of open intervals of extended reals.  We use the
-       fact that an operation's value is empty outside of its domain to show
-       ` A e. RR* ` and ` B e. RR* ` .  (Contributed by Mario Carneiro,
-       3-Nov-2013.) $)
-    elixx3g $p |- ( C e. ( A O B ) <->
-          ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\ ( A R C /\ C S B ) ) ) $=
-      ( cxr wcel wa wbr w3a co anass df-3an bitrd c0 anbi1i wb elixx1 3anass wn
-      ibar syl5bb cxp cpw ixxf fdmi ndmov eleq2d pm2.21i simpl pm5.21ni pm2.61i
-      noel 3bitr4ri ) DKLZEKLZMZFKLZMZDFGNZFEHNZMZMVBVCVGMZMZUTVAVCOZVGMFDEIPZL
-      ZVBVCVGQVJVDVGUTVAVCRUAVBVLVIUBVBVLVCVEVFOZVIABCDEFGHIJUCVMVHVBVIVCVEVFUD
-      VBVHUFUGSVBUEZVLFTLZVIVNVKTFDEKIKKUHKUIIABCGHIJUJUKULUMVOVBVIVOVBFURUNVBV
-      HUOUPSUQUS $.
-
     ${
       ixx.2 $e |- P = ( x e. RR* , y e. RR* |->
                        { z e. RR* | ( x T z /\ z U y ) } ) $.
