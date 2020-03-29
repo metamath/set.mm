@@ -79382,19 +79382,6 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x y B $.
-    $( Any nontrivial closed interval is equinumerous to the unit interval.
-       (Contributed by Mario Carneiro, 26-Jul-2014.)  (Revised by Mario
-       Carneiro, 8-Sep-2015.) $)
-    iccen $p |- ( ( A e. RR /\ B e. RR /\ A < B ) ->
-      ( 0 [,] 1 ) ~~ ( A [,] B ) ) $=
-      ( vx vy cr wcel clt wbr w3a cc0 c1 cicc co cmul cmin caddc cmpt cvv ovex
-      cv wf1o cen ccnv cdiv wceq eqid iccf1o simpld f1oen2g mp3an12 syl ) AEFBE
-      FABGHIZJKLMZABLMZCUMCTZBNMKUOOMANMPMQZUAZUMUNUBHZULUQUPUCDUNDTAOMBAOMUDMQ
-      UECDABUPUPUFUGUHUMRFUNRFUQURJKLSABLSUMUNUPRRUIUJUK $.
-  $}
-
-  ${
     xov1plusxeqvd.1 $e |- ( ph -> X e. CC ) $.
     xov1plusxeqvd.2 $e |- ( ph -> X =/= -u 1 ) $.
     $( A complex number ` X ` is positive real iff ` X / ( 1 + X ) ` is in
@@ -79427,61 +79414,6 @@ $)
      28-Feb-2017.) $)
   unitssre $p |- ( 0 [,] 1 ) C_ RR $=
     ( cc0 cr wcel c1 cicc co wss 0re 1re iccssre mp2an ) ABCDBCADEFBGHIADJK $.
-
-  ${
-    $d A x y $.  $d B x $.  $d C x y $.  $d ph x $.
-    supicc.1 $e |- ( ph -> B e. RR ) $.
-    supicc.2 $e |- ( ph -> C e. RR ) $.
-    supicc.3 $e |- ( ph -> A C_ ( B [,] C ) ) $.
-    supicc.4 $e |- ( ph -> A =/= (/) ) $.
-    $( Supremum of a bounded set of real numbers.  (Contributed by Thierry
-       Arnoux, 17-May-2019.) $)
-    supicc $p |- ( ph -> sup ( A , RR , < ) e. ( B [,] C ) ) $=
-      ( vx vy cr wcel cle wbr wss wral syl2anc adantr syl3anc wb clt csup co c0
-      cicc wne cv wrex iccssre sstrd wa cxr rexrd sselda iccleub ralrimiva wceq
-      breq2 ralbidv rspcev suprcl w3a simpr iccsupr syl211anc syl iccgelb letrd
-      suprub r19.3rzv mpbird suprleub syl31anc elicc2 mpbir3and ) ABKUAUBZCDUEU
-      CZLZVPKLZCVPMNZVPDMNZABKOZBUDUFZIUGZJUGZMNZIBPZJKUHZVSABVQKGACKLZDKLZVQKO
-      EFCDUIQUJZHAWJWDDMNZIBPZWHFAWLIBAWDBLZUKZCULLZDULLZWDVQLZWLWOCAWIWNERZUMZ
-      WODAWJWNFRZUMZABVQWDGUNZCDWDUOSUPZWGWMJDKWEDUQWFWLIBWEDWDMURUSUTQZJIBVAZS
-      AVTVTIBPZAVTIBWOCWDVPWSABKWDWKUNWOWBWCWHVBZVSWOWIWJBVQOZWNXHWSXAAXIWNGRAW
-      NVCZJICDWDBVDVEZXFVFWOWPWQWRCWDMNWTXBXCCDWDVGSWOXHWNWDVPMNXKXJJIBWDVIQVHU
-      PAWCVTXGTHVTIBVJVFVKAWAWMXDAWBWCWHWJWAWMTWKHXEFJIIBDVLVMVKAWIWJVRVSVTWAVB
-      TEFCDVPVNQVO $.
-
-    supiccub.1 $e |- ( ph -> D e. A ) $.
-    $( The supremum of a bounded set of real numbers is an upper bound.
-       (Contributed by Thierry Arnoux, 20-May-2019.) $)
-    supiccub $p |- ( ph -> D <_ sup ( A , RR , < ) ) $=
-      ( vx vy cr wss cv cle wbr wral wcel syl2anc c0 wne wrex csup cicc iccssre
-      clt co sstrd cxr adantr rexrd sselda iccleub syl3anc ralrimiva wceq breq2
-      wa ralbidv rspcev suprub syl31anc ) ABMNBUAUBKOZLOZPQZKBRZLMUCZEBSEBMUGUD
-      PQABCDUEUHZMHACMSZDMSZVIMNFGCDUFTUIIAVKVDDPQZKBRZVHGAVLKBAVDBSZUSZCUJSDUJ
-      SVDVISVLVOCAVJVNFUKULVODAVKVNGUKULABVIVDHUMCDVDUNUOUPVGVMLDMVEDUQVFVLKBVE
-      DVDPURUTVATJLKBEVBVC $.
-
-    $d A z $.  $d D z $.
-    $( The supremum of a bounded set of real numbers is the least upper bound.
-       (Contributed by Thierry Arnoux, 23-May-2019.) $)
-    supicclub $p |- ( ph -> ( D < sup ( A , RR , < ) <-> E. z e. A D < z ) ) $=
-      ( vx vy cr wss cv cle wbr wcel clt c0 wral wrex csup cicc iccssre syl2anc
-      wne wb co sstrd wa cxr adantr rexrd sselda iccleub syl3anc ralrimiva wceq
-      breq2 ralbidv rspcev sseldd suprlub syl31anc ) ACNOCUAUHLPZMPZQRZLCUBZMNU
-      CZFNSFCNTUDTRFBPTRBCUCUIACDEUEUJZNIADNSZENSZVLNOGHDEUFUGUKZJAVNVGEQRZLCUB
-      ZVKHAVPLCAVGCSZULZDUMSEUMSVGVLSVPVSDAVMVRGUNUOVSEAVNVRHUNUOACVLVGIUPDEVGU
-      QURUSVJVQMENVHEUTVIVPLCVHEVGQVAVBVCUGACNFVOKVDMLBCFVEVF $.
-
-    $d ph z $.
-    supicclub2.1 $e |- ( ( ph /\ z e. A ) -> z <_ D ) $.
-    $( The supremum of a bounded set of real numbers is the least upper bound.
-       (Contributed by Thierry Arnoux, 23-May-2019.) $)
-    supicclub2 $p |- ( ph -> sup ( A , RR , < ) <_ D ) $=
-      ( clt cle wbr wn wcel cxr wb xrlenlt cr csup cv wrex wa co iccssxr syl6ss
-      sselda sseldd adantr syl2anc nrexdv supicclub mtbird supicc sseldi mpbird
-      cicc mpbid ) ACUAMUBZFNOZFVAMOZPZAVCFBUCZMOZBCUDAVFBCAVECQZUEZVEFNOZVFPZL
-      VHVERQFRQZVIVJSACRVEACDEUSUFZRIDEUGZUHZUIAVKVGACRFVNKUJZUKVEFTULUTUMABCDE
-      FGHIJKUNUOAVARQVKVBVDSAVLRVAVMACDEGHIJUPUQVOVAFTULUR $.
-  $}
 
 $(
 ###############################################################################
