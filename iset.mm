@@ -78246,18 +78246,16 @@ $)
       EUFUGUAUBUCUEUFUGHBCAMRZNUAUBUCOUDUEUFUGUHPUDUEUFUGUHQBACST $.
 
     $( An open interval does not contain its left endpoint.  (Contributed by
-       Mario Carneiro, 29-Dec-2016.) $)
-    lbioo $p |- -. A e. ( A (,) B ) $=
-      ( cioo co wcel clt wbr cxr w3a wa elioo3g simprbi simpld wn simp3d xrltnr
-      simplbi syl pm2.65i ) AABCDEZAAFGZTUAABFGZTAHEZBHEZUCIZUAUBJZABAKZLMTUCUA
-      NTUCUDUCTUEUFUGQOAPRS $.
+       Jim Kingdon, 30-Mar-2020.) $)
+    lbioog $p |- ( ( A e. RR* /\ B e. RR* ) -> -. A e. ( A (,) B ) ) $=
+      ( cxr wcel wa cioo co clt wbr w3a xrltnr simp2 nsyl adantr elioo1 mtbird
+      wn ) ACDZBCDZEAABFGDRAAHIZABHIZJZRUBQSRTUBAKRTUALMNABAOP $.
 
     $( An open interval does not contain its right endpoint.  (Contributed by
-       Mario Carneiro, 29-Dec-2016.) $)
-    ubioo $p |- -. B e. ( A (,) B ) $=
-      ( cioo co wcel clt wbr cxr w3a wa elioo3g simprbi simprd wn simp2d xrltnr
-      simplbi syl pm2.65i ) BABCDEZBBFGZTABFGZUATAHEZBHEZUDIZUBUAJZABBKZLMTUDUA
-      NTUCUDUDTUEUFUGQOBPRS $.
+       Jim Kingdon, 30-Mar-2020.) $)
+    ubioog $p |- ( ( A e. RR* /\ B e. RR* ) -> -. B e. ( A (,) B ) ) $=
+      ( cxr wcel wa cioo co clt wbr w3a xrltnr simp3 nsyl adantl elioo1 mtbird
+      wn ) ACDZBCDZEBABFGDSABHIZBBHIZJZSUBQRSUAUBBKSTUALMNABBOP $.
 
     $( Value of the open interval function.  (Contributed by NM, 6-Feb-2007.)
        (Revised by Mario Carneiro, 3-Nov-2013.) $)
