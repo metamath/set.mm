@@ -78224,13 +78224,6 @@ $)
                  { x e. RR* | ( A < x /\ x < B ) } ) $=
       ( vy vz clt cioo df-ioo ixxval ) DEABCFFGDEAHI $.
 
-    $( The open interval function's value is empty outside of its domain.
-       (Contributed by NM, 21-Jun-2007.)  (Revised by Mario Carneiro,
-       28-Apr-2015.) $)
-    ndmioo $p |- ( -. ( A e. RR* /\ B e. RR* ) -> ( A (,) B ) = (/) ) $=
-      ( vx vy vz cxr cioo cxp cpw clt df-ioo ixxf fdmi ndmov ) ABFGFFHFIGCDEJJG
-      CDEKLMN $.
-
     $( An open interval with identical lower and upper bounds is empty.
        (Contributed by Jim Kingdon, 29-Mar-2020.) $)
     iooidg $p |- ( A e. RR* -> ( A (,) A ) = (/) ) $=
