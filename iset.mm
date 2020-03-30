@@ -78224,25 +78224,6 @@ $)
                  { x e. RR* | ( A < x /\ x < B ) } ) $=
       ( vy vz clt cioo df-ioo ixxval ) DEABCFFGDEAHI $.
 
-    $( An empty open interval of extended reals.  (Contributed by NM,
-       6-Feb-2007.) $)
-    ioo0 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( ( A (,) B ) = (/) <->
-                 B <_ A ) ) $=
-      ( vx cxr wcel wa cioo co c0 wceq cv clt wbr crab cle iooval wn wrex bitrd
-      cq eqeq1d wne df-ne rabn0 bitr3i wi xrlttr 3com23 3expa rexlimdva qbtwnxr
-      w3a qre rexrd anim1i reximi2 syl 3expia impbid syl5bb xrltnle con4bid ) A
-      DEZBDEZFZABGHZIJACKZLMVGBLMFZCDNZIJZBAOMZVEVFVIICABPUAVEVJVKVEVJQZABLMZVK
-      QVLVHCDRZVEVMVLVIIUBVNVIIUCVHCDUDUEVEVNVMVEVHVMCDVCVDVGDEZVHVMUFZVCVOVDVP
-      AVGBUGUHUIUJVCVDVMVNVCVDVMULVHCTRVNCABUKVHVHCTDVGTEZVOVHVQVGVGUMUNUOUPUQU
-      RUSUTABVASVBS $.
-
-    $( An open interval of extended reals is nonempty iff the lower argument is
-       less than the upper argument.  (Contributed by NM, 2-Mar-2007.) $)
-    ioon0 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( ( A (,) B ) =/= (/) <->
-                 A < B ) ) $=
-      ( cxr wcel wa clt wbr cioo co c0 wceq cle wn wb xrlenlt ancoms necon1abid
-      ioo0 bitr2d ) ACDZBCDZEZABFGZABHIZJUBUDJKBALGZUCMZABRUATUEUFNBAOPSQ $.
-
     $( The open interval function's value is empty outside of its domain.
        (Contributed by NM, 21-Jun-2007.)  (Revised by Mario Carneiro,
        28-Apr-2015.) $)
