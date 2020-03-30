@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Mar-2020
+$( iset.mm - Version of 30-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -78231,11 +78231,19 @@ $)
       wbr wn ralrimiva rabeq0 sylibr eqtrd ) ACDZAAEFZABGZHQUEAHQIZBCJZKUCUDUGL
       BAAMNUCUFRZBCOUGKLUCUHBCAUEPSUFBCTUAUB $.
 
-    $( A member of an open interval of reals is a real.  (Contributed by NM,
-       17-Aug-2008.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
-    elioore $p |- ( A e. ( B (,) C ) -> A e. RR ) $=
-      ( cioo co wcel cxr w3a clt wbr wa cr elioo3g 3ancomb xrre2 sylanb sylbi )
-      ABCDEFBGFZCGFZAGFZHZBAIJACIJKZKALFZBCAMUARTSHUBUCRSTNBACOPQ $.
+    $( Membership in an open interval of extended reals.  (Contributed by NM,
+       24-Dec-2006.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    elioo1 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( C e. ( A (,) B ) <->
+                 ( C e. RR* /\ A < C /\ C < B ) ) ) $=
+      ( vx vy vz clt cioo df-ioo elixx1 ) DEFABCGGHDEFIJ $.
+
+    $( A member of an open interval of reals is a real.  (Contributed by Jim
+       Kingdon, 30-Mar-2020.) $)
+    eliooreg $p |- ( ( B e. RR* /\ C e. RR* /\ A e. ( B (,) C ) ) ->
+        A e. RR ) $=
+      ( cxr wcel cioo co w3a clt wbr cr simp1 elioo1 simp1d simp2 simp2d simp3d
+      biimp3a xrre2 syl32anc ) BDEZCDEZABCFGEZHZUAADEZUBBAIJZACIJZAKEUAUBUCLUDU
+      EUFUGUAUBUCUEUFUGHBCAMRZNUAUBUCOUDUEUFUGUHPUDUEUFUGUHQBACST $.
 
     $( An open interval does not contain its left endpoint.  (Contributed by
        Mario Carneiro, 29-Dec-2016.) $)
@@ -78300,12 +78308,6 @@ $)
     iccval $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A [,] B ) =
                  { x e. RR* | ( A <_ x /\ x <_ B ) } ) $=
       ( vy vz cle cicc df-icc ixxval ) DEABCFFGDEAHI $.
-
-    $( Membership in an open interval of extended reals.  (Contributed by NM,
-       24-Dec-2006.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
-    elioo1 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( C e. ( A (,) B ) <->
-                 ( C e. RR* /\ A < C /\ C < B ) ) ) $=
-      ( vx vy vz clt cioo df-ioo elixx1 ) DEFABCGGHDEFIJ $.
 
     $( Membership in an open interval of extended reals.  (Contributed by NM,
        6-Feb-2007.) $)
