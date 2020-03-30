@@ -2271,7 +2271,7 @@
 "bnj523" is used by "bnj934".
 "bnj525" is used by "bnj1040".
 "bnj525" is used by "bnj523".
-"bnj525" is used by "bnj538".
+"bnj525" is used by "bnj538OLD".
 "bnj525" is used by "bnj539".
 "bnj525" is used by "bnj540".
 "bnj525" is used by "bnj91".
@@ -13179,6 +13179,7 @@
 "supexpr" is used by "supsrlem".
 "suplem1pr" is used by "supexpr".
 "suplem2pr" is used by "supexpr".
+"supmaxlemOLD" is used by "supmaxOLD".
 "suppss2OLD" is used by "cantnflem1OLD".
 "suppss2OLD" is used by "cantnflem1dOLD".
 "suppss2OLD" is used by "dmdprdsplitlemOLD".
@@ -14605,6 +14606,7 @@ New usage of "bnj529" is discouraged (3 uses).
 New usage of "bnj534" is discouraged (2 uses).
 New usage of "bnj535" is discouraged (1 uses).
 New usage of "bnj538" is discouraged (3 uses).
+New usage of "bnj538OLD" is discouraged (0 uses).
 New usage of "bnj539" is discouraged (4 uses).
 New usage of "bnj540" is discouraged (2 uses).
 New usage of "bnj543" is discouraged (1 uses).
@@ -15589,6 +15591,7 @@ New usage of "dprdfsubOLD" is discouraged (2 uses).
 New usage of "dprdvalOLD" is discouraged (1 uses).
 New usage of "dprdwOLD" is discouraged (4 uses).
 New usage of "dprdwdOLD" is discouraged (5 uses).
+New usage of "dprdwdOLD2" is discouraged (0 uses).
 New usage of "dral1-o" is discouraged (4 uses).
 New usage of "dral1ALT" is discouraged (0 uses).
 New usage of "dral2-o" is discouraged (4 uses).
@@ -18430,6 +18433,8 @@ New usage of "superpos" is discouraged (1 uses).
 New usage of "supexpr" is discouraged (1 uses).
 New usage of "suplem1pr" is discouraged (1 uses).
 New usage of "suplem2pr" is discouraged (1 uses).
+New usage of "supmaxOLD" is discouraged (0 uses).
+New usage of "supmaxlemOLD" is discouraged (1 uses).
 New usage of "suppss2OLD" is discouraged (18 uses).
 New usage of "suppssOLD" is discouraged (15 uses).
 New usage of "suppssfvOLD" is discouraged (1 uses).
@@ -18495,6 +18500,7 @@ New usage of "unierri" is discouraged (0 uses).
 New usage of "unipwr" is discouraged (0 uses).
 New usage of "unipwrVD" is discouraged (0 uses).
 New usage of "unisnALT" is discouraged (0 uses).
+New usage of "unitgOLD" is discouraged (0 uses).
 New usage of "unop" is discouraged (5 uses).
 New usage of "unopadj" is discouraged (2 uses).
 New usage of "unopadj2" is discouraged (0 uses).
@@ -19099,6 +19105,7 @@ Proof modification of "bj-zfpow" is discouraged (71 steps).
 Proof modification of "bm1.1OLD" is discouraged (119 steps).
 Proof modification of "bnj142OLD" is discouraged (51 steps).
 Proof modification of "bnj145OLD" is discouraged (112 steps).
+Proof modification of "bnj538OLD" is discouraged (94 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "bwthOLD" is discouraged (1082 steps).
 Proof modification of "cantnfOLD" is discouraged (1131 steps).
@@ -19249,6 +19256,7 @@ Proof modification of "dprdfsubOLD" is discouraged (454 steps).
 Proof modification of "dprdvalOLD" is discouraged (636 steps).
 Proof modification of "dprdwOLD" is discouraged (197 steps).
 Proof modification of "dprdwdOLD" is discouraged (150 steps).
+Proof modification of "dprdwdOLD2" is discouraged (145 steps).
 Proof modification of "dral1ALT" is discouraged (34 steps).
 Proof modification of "dral2-o" is discouraged (14 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
@@ -20196,6 +20204,8 @@ Proof modification of "suctrALT2VD" is discouraged (173 steps).
 Proof modification of "suctrALT3" is discouraged (137 steps).
 Proof modification of "suctrALTcf" is discouraged (164 steps).
 Proof modification of "suctrALTcfVD" is discouraged (164 steps).
+Proof modification of "supmaxOLD" is discouraged (144 steps).
+Proof modification of "supmaxlemOLD" is discouraged (159 steps).
 Proof modification of "suppss2OLD" is discouraged (85 steps).
 Proof modification of "suppssOLD" is discouraged (107 steps).
 Proof modification of "suppssfvOLD" is discouraged (152 steps).
@@ -20249,6 +20259,7 @@ Proof modification of "undif3VD" is discouraged (295 steps).
 Proof modification of "unipwr" is discouraged (32 steps).
 Proof modification of "unipwrVD" is discouraged (41 steps).
 Proof modification of "unisnALT" is discouraged (146 steps).
+Proof modification of "unitgOLD" is discouraged (95 steps).
 Proof modification of "usgedgimpALT" is discouraged (142 steps).
 Proof modification of "usgedgleordALT" is discouraged (127 steps).
 Proof modification of "usgedgvadf1ALT" is discouraged (476 steps).
