@@ -78232,11 +78232,11 @@ $)
       CDEKLMN $.
 
     $( An open interval with identical lower and upper bounds is empty.
-       (Contributed by NM, 21-Jun-2007.)  (Revised by Mario Carneiro,
-       3-Nov-2013.) $)
-    iooid $p |- ( A (,) A ) = (/) $=
-      ( cxr wcel wa cioo co c0 wceq cle wbr xrleid adantr mpbird ndmioo pm2.61i
-      ioo0 ) ABCZQDZAAEFGHZRSAAIJZQTQAKLAAPMAANO $.
+       (Contributed by Jim Kingdon, 29-Mar-2020.) $)
+    iooidg $p |- ( A e. RR* -> ( A (,) A ) = (/) ) $=
+      ( vx cxr wcel cioo co cv clt wa crab c0 wceq iooval anidms wral xrltnsym2
+      wbr wn ralrimiva rabeq0 sylibr eqtrd ) ACDZAAEFZABGZHQUEAHQIZBCJZKUCUDUGL
+      BAAMNUCUFRZBCOUGKLUCUHBCAUEPSUFBCTUAUB $.
 
     $( Membership in a set of open intervals of extended reals.  We use the
        fact that an operation's value is empty outside of its domain to show
