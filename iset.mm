@@ -78339,18 +78339,15 @@ $)
       VGVNKVCAPQVLVMVNVJVEUTVMVNMZVJLVEUTMVJVOVCAUCUDQUERUFRUJUGUTVJVEVFVGACVCU
       HUTVFVJAAHIZAUKZVCAAHULTUTVGVJVPVQVCAAHUMTUNUOBAUPUQURUS $.
 
-    $( An empty open interval of extended reals.  (Contributed by FL,
-       30-May-2014.) $)
-    icc0 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( ( A [,] B ) = (/) <->
-                 B < A ) ) $=
-      ( vx cxr wcel wa cicc co c0 wceq cv cle wbr crab iccval eqeq1d wrex bitrd
-      clt wn wne df-ne rabn0 bitr3i wi xrletr 3com23 3expa rexlimdva w3a xrleid
-      simp2 simp3 3ad2ant2 anbi12d rspcev syl12anc 3expia impbid syl5bb xrlenlt
-      breq2 breq1 con4bid ) ADEZBDEZFZABGHZIJACKZLMZVIBLMZFZCDNZIJZBASMZVGVHVMI
-      CABOPVGVNVOVGVNTZABLMZVOTVPVLCDQZVGVQVPVMIUAVRVMIUBVLCDUCUDVGVRVQVGVLVQCD
-      VEVFVIDEZVLVQUEZVEVSVFVTAVIBUFUGUHUIVEVFVQVRVEVFVQUJVFVQBBLMZVRVEVFVQULVE
-      VFVQUMVFVEWAVQBUKUNVLVQWAFCBDVIBJVJVQVKWAVIBALVBVIBBLVCUOUPUQURUSUTABVARV
-      DR $.
+    $( An empty closed interval of extended reals.  (Contributed by Jim
+       Kingdon, 30-Mar-2020.) $)
+    icc0r $p |- ( ( A e. RR* /\ B e. RR* ) ->
+        ( B < A -> ( A [,] B ) = (/) ) ) $=
+      ( vx cxr wcel wa clt wbr cv cle wrex wn cicc co c0 wi xrletr 3com23 3expa
+      wceq rexlimdva xrlenlt sylibd con2d crab iccval eqeq1d wral rabeq0 ralnex
+      bitri syl6bb sylibrd ) ADEZBDEZFZBAGHZACIZJHURBJHFZCDKZLZABMNZOTZUPUTUQUP
+      UTABJHZUQLUPUSVDCDUNUOURDEZUSVDPZUNVEUOVFAURBQRSUAABUBUCUDUPVCUSCDUEZOTZV
+      AUPVBVGOCABUFUGVHUSLCDUHVAUSCDUIUSCDUJUKULUM $.
   $}
 
   $( The upper bound belongs to an open-below, closed-above interval.  See
