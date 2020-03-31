@@ -78267,14 +78267,6 @@ $)
       BURADMOZLZUTURADMPVCMSZVDUTSMDTVEQMDRUAURAVCMUBUCUDUOUSMTVBUSSUOUSUPMVAUO
       AUPMUMUNUQUPEUQMEUQBCUEUKUFUGUSMUHUIULUJ $.
 
-    $( Intersection of two open intervals of extended reals.  (Contributed by
-       NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
-    iooin $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ D e. RR* ) ) ->
-         ( ( A (,) B ) i^i ( C (,) D ) ) =
-         ( if ( A <_ C , C , A ) (,) if ( B <_ D , B , D ) ) ) $=
-      ( vx vy vz clt cioo df-ioo cv xrmaxlt xrltmin ixxin ) EFGABCDHHIEFGJACGKZ
-      LOBDMN $.
-
     $( Subset relationship for open intervals of extended reals.  (Contributed
        by NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 20-Feb-2015.) $)
     iooss1 $p |- ( ( A e. RR* /\ A <_ B ) ->
