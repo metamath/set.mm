@@ -78386,15 +78386,6 @@ $)
     cioo ) ADEZBDEZCDEZFCABRGEZUAACHIZCBHIZFZUCUDJZSTUBUEKUAABCLMUASUFUEKTUEUAU
     FUAUCUDNOPQ $.
 
-  $( Membership in an open interval of extended reals.  (Contributed by NM,
-     8-Jun-2007.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
-  elioo4g $p |- ( C e. ( A (,) B ) <->
-        ( ( A e. RR* /\ B e. RR* /\ C e. RR ) /\ ( A < C /\ C < B ) ) ) $=
-    ( cioo co wcel cxr cr w3a clt wbr wa eliooxr elioore df-3an sylibr eliooord
-    jca rexr 3anim3i anim1i elioo3g impbii ) CABDEFZAGFZBGFZCHFZIZACJKCBJKLZLZU
-    DUHUIUDUEUFLZUGLUHUDUKUGCABMCABNRUEUFUGOPCABQRUJUEUFCGFZIZUILUDUHUMUIUGULUE
-    UFCSTUAABCUBPUC $.
-
   ${
     $d x A $.  $d x B $.
     $( An open interval is a set of reals.  (Contributed by NM,
