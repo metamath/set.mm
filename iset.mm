@@ -78386,12 +78386,6 @@ $)
     cioo ) ADEZBDEZCDEZFCABRGEZUAACHIZCBHIZFZUCUDJZSTUBUEKUAABCLMUASUFUEKTUEUAU
     FUAUCUDNOPQ $.
 
-  $( A nonempty open interval spans an interval of extended reals.
-     (Contributed by NM, 17-Aug-2008.) $)
-  eliooxr $p |- ( A e. ( B (,) C ) -> ( B e. RR* /\ C e. RR* ) ) $=
-    ( cioo co wcel c0 wne cxr wa ne0i ndmioo necon1ai syl ) ABCDEZFOGHBIFCIFJZO
-    AKPOGBCLMN $.
-
   $( Ordering implied by a member of an open interval of reals.  (Contributed
      by NM, 17-Aug-2008.)  (Revised by Mario Carneiro, 9-May-2014.) $)
   eliooord $p |- ( A e. ( B (,) C ) -> ( B < A /\ A < C ) ) $=
