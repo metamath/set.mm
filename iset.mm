@@ -1,4 +1,4 @@
-$( iset.mm - Version of 30-Mar-2020
+$( iset.mm - Version of 31-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -78388,10 +78388,11 @@ $)
 
   ${
     $d x A $.  $d x B $.
-    $( An open interval is a set of reals.  (Contributed by NM,
-       31-May-2007.) $)
-    ioossre $p |- ( A (,) B ) C_ RR $=
-      ( vx cioo co cr cv elioore ssriv ) CABDEFCGABHI $.
+    $( An open interval is a set of reals.  (Contributed by Jim Kingdon,
+       31-Mar-2020.) $)
+    ioossreg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,) B ) C_ RR ) $=
+      ( vx cxr wcel wa cioo co cr cv eliooreg 3expia ssrdv ) ADEZBDEZFCABGHZINO
+      CJZPEQIEQABKLM $.
   $}
 
   ${
