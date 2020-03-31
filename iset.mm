@@ -78276,10 +78276,10 @@ $)
 
     $( Subset relationship for open intervals of extended reals.  (Contributed
        by NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
-    iooss2 $p |- ( ( C e. RR* /\ B <_ C ) ->
+    iooss2g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ B <_ C ) ) ->
                  ( A (,) B ) C_ ( A (,) C ) ) $=
-      ( vx vy vz vw cioo clt cle df-ioo cv xrltletr ixxss2 ) DEFGABCHIIIHJDEFKZ
-      OGLBCMN $.
+      ( vx vy vz vw cioo clt cle df-ioo cv xrltletr ixxss2g ) DEFGABCHIIIHJDEFK
+      ZOGLBCMN $.
 
     $( Value of the open-below, closed-above interval function.  (Contributed
        by NM, 24-Dec-2006.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
