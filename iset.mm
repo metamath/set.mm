@@ -78341,34 +78341,6 @@ $)
 
     $( An empty open interval of extended reals.  (Contributed by FL,
        30-May-2014.) $)
-    ico0 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( ( A [,) B ) = (/) <->
-                 B <_ A ) ) $=
-      ( vx cxr wcel wa cico co c0 wceq cv cle wbr clt crab wn wrex wi cq bitrd
-      icoval eqeq1d wne df-ne rabn0 bitr3i xrlelttr 3expa rexlimdva w3a qbtwnxr
-      3com23 qre rexrd a1i simpr1 simpl xrltle syl2anc anim1d anim12d ex adantr
-      syl pm2.43b reximdv2 mpd 3expia impbid syl5bb xrltnle con4bid ) ADEZBDEZF
-      ZABGHZIJACKZLMZVQBNMZFZCDOZIJZBALMZVOVPWAICABUAUBVOWBWCVOWBPZABNMZWCPWDVT
-      CDQZVOWEWDWAIUCWFWAIUDVTCDUEUFVOWFWEVOVTWECDVMVNVQDEZVTWERZVMWGVNWHAVQBUG
-      ULUHUIVMVNWEWFVMVNWEUJZAVQNMZVSFZCSQWFCABUKWIWKVTCSDWIVQSEZWKFZWGVTFZWLWI
-      WMWNRZRZWKWLWGWPWLVQVQUMUNZWGWIWOWGWIFZWLWGWKVTWLWGRWRWQUOWRWJVRVSWRVMWGW
-      JVRRWGVMVNWEUPWGWIUQAVQURUSUTVAVBVDVCVEVFVGVHVIVJABVKTVLT $.
-
-    $( An empty open interval of extended reals.  (Contributed by FL,
-       30-May-2014.) $)
-    ioc0 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( ( A (,] B ) = (/) <->
-                 B <_ A ) ) $=
-      ( vx cxr wcel wa cioc co c0 wceq cv clt wbr cle crab wn wrex wi cq bitrd
-      iocval eqeq1d wne df-ne rabn0 bitr3i xrltletr 3expa rexlimdva w3a qbtwnxr
-      3com23 qre rexrd a1i xrltle 3ad2antr2 anim2d anim12d syl pm2.43b reximdv2
-      ex adantr mpd 3expia impbid syl5bb xrltnle con4bid ) ADEZBDEZFZABGHZIJACK
-      ZLMZVOBNMZFZCDOZIJZBANMZVMVNVSICABUAUBVMVTWAVMVTPZABLMZWAPWBVRCDQZVMWCWBV
-      SIUCWDVSIUDVRCDUEUFVMWDWCVMVRWCCDVKVLVODEZVRWCRZVKWEVLWFAVOBUGULUHUIVKVLW
-      CWDVKVLWCUJZVPVOBLMZFZCSQWDCABUKWGWIVRCSDWGVOSEZWIFZWEVRFZWJWGWKWLRZRZWIW
-      JWEWNWJVOVOUMUNZWEWGWMWEWGFZWJWEWIVRWJWERWPWOUOWPWHVQVPWEVKVLWHVQRWCVOBUP
-      UQURUSVCUTVDVAVBVEVFVGVHABVITVJT $.
-
-    $( An empty open interval of extended reals.  (Contributed by FL,
-       30-May-2014.) $)
     icc0 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( ( A [,] B ) = (/) <->
                  B < A ) ) $=
       ( vx cxr wcel wa cicc co c0 wceq cv cle wbr crab iccval eqeq1d wrex bitrd
