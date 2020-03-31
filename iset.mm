@@ -78268,11 +78268,11 @@ $)
       AUPMUMUNUQUPEUQMEUQBCUEUKUFUGUSMUHUIULUJ $.
 
     $( Subset relationship for open intervals of extended reals.  (Contributed
-       by NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 20-Feb-2015.) $)
-    iooss1 $p |- ( ( A e. RR* /\ A <_ B ) ->
-                 ( B (,) C ) C_ ( A (,) C ) ) $=
-      ( vx vy vz vw cioo clt cle df-ioo cv xrlelttr ixxss1 ) DEFGABCHIIIHJDEFKZ
-      OABGLMN $.
+       by Jim Kingdon, 30-Mar-2020.) $)
+    iooss1g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ A <_ B ) ) ->
+        ( B (,) C ) C_ ( A (,) C ) ) $=
+      ( vx vy vz vw cioo clt cle df-ioo cv xrlelttr ixxss1g ) DEFGABCHIIIHJDEFK
+      ZOABGLMN $.
 
     $( Subset relationship for open intervals of extended reals.  (Contributed
        by NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
