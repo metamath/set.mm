@@ -78262,10 +78262,10 @@ $)
     iooval2 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,) B ) =
                  { x e. RR | ( A < x /\ x < B ) } ) $=
       ( cxr wcel wa cioo co cv clt wbr crab cr iooval cin inrab2 ressxr sseqin2
-      wceq wss mpbi rabeq ax-mp eqtri elioore ssriv syl6eqssr df-ss sylib eqtrd
-      syl5reqr ) BDECDEFZBCGHZBAIZJKUNCJKFZADLZUOAMLZABCNZULUQUPMOZUPUSUOADMOZL
-      ZUQUOADMPUTMSZVAUQSMDTVBQMDRUAUOAUTMUBUCUDULUPMTUSUPSULUPUMMURAUMMUNBCUEU
-      FUGUPMUHUIUKUJ $.
+      wceq wss mpbi rabeq ax-mp eqtri eliooreg ssrdv eqsstr3d df-ss sylib eqtrd
+      3expia syl5reqr ) BDEZCDEZFZBCGHZBAIZJKUQCJKFZADLZURAMLZABCNZUOUTUSMOZUSV
+      BURADMOZLZUTURADMPVCMSZVDUTSMDTVEQMDRUAURAVCMUBUCUDUOUSMTVBUSSUOUSUPMVAUO
+      AUPMUMUNUQUPEUQMEUQBCUEUKUFUGUSMUHUIULUJ $.
 
     $( Intersection of two open intervals of extended reals.  (Contributed by
        NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
