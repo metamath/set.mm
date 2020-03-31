@@ -78386,12 +78386,6 @@ $)
     cioo ) ADEZBDEZCDEZFCABRGEZUAACHIZCBHIZFZUCUDJZSTUBUEKUAABCLMUASUFUEKTUEUAU
     FUAUCUDNOPQ $.
 
-  $( Ordering implied by a member of an open interval of reals.  (Contributed
-     by NM, 17-Aug-2008.)  (Revised by Mario Carneiro, 9-May-2014.) $)
-  eliooord $p |- ( A e. ( B (,) C ) -> ( B < A /\ A < C ) ) $=
-    ( cioo co wcel cr clt wbr w3a wa cxr wb eliooxr elioo2 syl ibi 3simpc ) ABC
-    DEFZAGFZBAHIZACHIZJZUAUBKSUCSBLFCLFKSUCMABCNBCAOPQTUAUBRP $.
-
   $( Membership in an open interval of extended reals.  (Contributed by NM,
      8-Jun-2007.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
   elioo4g $p |- ( C e. ( A (,) B ) <->
