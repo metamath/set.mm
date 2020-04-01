@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-Mar-2020
+$( iset.mm - Version of 27-Mar-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -8807,6 +8807,17 @@ $)
        14-Oct-2005.) $)
     3jaodan $p |- ( ( ph /\ ( ps \/ th \/ ta ) ) -> ch ) $=
       ( w3o ex 3jaod imp ) ABDEICABCDEABCFJADCGJAECHJKL $.
+  $}
+
+  ${
+    mpjao3dan.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    mpjao3dan.2 $e |- ( ( ph /\ th ) -> ch ) $.
+    mpjao3dan.3 $e |- ( ( ph /\ ta ) -> ch ) $.
+    mpjao3dan.4 $e |- ( ph -> ( ps \/ th \/ ta ) ) $.
+    $( Eliminate a 3-way disjunction in a deduction.  (Contributed by Thierry
+       Arnoux, 13-Apr-2018.) $)
+    mpjao3dan $p |- ( ph -> ch ) $=
+      ( wo jaodan w3o df-3or sylib mpjaodan ) ABDJZCEABCDFGKHABDELPEJIBDEMNO $.
   $}
 
   ${
@@ -74878,6 +74889,13 @@ $)
     UBZQUNVCUNBAVFVEUCUDUNVDURKFUNBAUNBVFTZUNAVETZUEUFUGUNUTUPUNABVHVGUIUHUNBAV
     FVEQUJUK $.
 
+  $( Trichotomy law.  (Contributed by Jim Kingdon, 27-Mar-2020.) $)
+  zletric $p |- ( ( A e. ZZ /\ B e. ZZ ) -> ( A <_ B \/ B <_ A ) ) $=
+    ( cz wcel wa cr clt wbr wceq w3o cle zre anim12i ztri3or ltle orc syl6 eqle
+    wo wi ex adantr ancoms olc 3jaod sylc ) ACDZBCDZEAFDZBFDZEZABGHZABIZBAGHZJA
+    BKHZBAKHZSZUGUIUHUJALBLMABNUKULUQUMUNUKULUOUQABOUOUPPZQUKUMUOUQUIUMUOTUJUIU
+    MUOABRUAUBURQUKUNUPUQUJUIUNUPTBAOUCUPUOUDQUEUF $.
+
   $( 'Less than' expressed in terms of 'less than or equal to'.  (Contributed
      by Jim Kingdon, 14-Mar-2020.) $)
   zltnle $p |- ( ( A e. ZZ /\ B e. ZZ ) -> ( A < B <-> -. B <_ A ) ) $=
@@ -77410,6 +77428,602 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Infinity and the extended real number system (cont.)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+  $c -e $. $( the negative of an extended real number. $)
+  $c +e $. $( Addition of extended real numbers. $)
+  $c *e $. $( Multiplication of extended real numbers. $)
+
+  $( Extend class notation to include the negative of an extended real. $)
+  cxne $a class -e A $.
+
+  $( Extend class notation to include addition of extended reals. $)
+  cxad $a class +e $.
+
+  $( Extend class notation to include multiplication of extended reals. $)
+  cxmu $a class *e $.
+
+  $( Define the negative of an extended real number.  (Contributed by FL,
+     26-Dec-2011.) $)
+  df-xneg $a |- -e A = if ( A = +oo , -oo , if ( A = -oo , +oo , -u A ) ) $.
+
+  ${
+    $d x y $.
+    $( Define addition over extended real numbers.  (Contributed by Mario
+       Carneiro, 20-Aug-2015.) $)
+    df-xadd $a |- +e = ( x e. RR* , y e. RR* |-> if ( x = +oo ,
+            if ( y = -oo , 0 , +oo ) , if ( x = -oo ,
+            if ( y = +oo , 0 , -oo ) , if ( y = +oo , +oo ,
+                 if ( y = -oo , -oo , ( x + y ) ) ) ) ) ) $.
+
+    $( Define multiplication over extended real numbers.  (Contributed by Mario
+       Carneiro, 20-Aug-2015.) $)
+    df-xmul $a |- *e = ( x e. RR* , y e. RR* |-> if ( ( x = 0 \/ y = 0 ) , 0 ,
+            if ( ( ( ( 0 < y /\ x = +oo ) \/ ( y < 0 /\ x = -oo ) ) \/
+                   ( ( 0 < x /\ y = +oo ) \/ ( x < 0 /\ y = -oo ) ) ) , +oo ,
+            if ( ( ( ( 0 < y /\ x = -oo ) \/ ( y < 0 /\ x = +oo ) ) \/
+                   ( ( 0 < x /\ y = -oo ) \/ ( x < 0 /\ y = +oo ) ) ) , -oo ,
+                 ( x x. y ) ) ) ) ) $.
+  $}
+
+  $( Plus infinity belongs to the set of extended reals.  (Contributed by NM,
+     13-Oct-2005.)  (Proof shortened by Anthony Hart, 29-Aug-2011.) $)
+  pnfxr $p |- +oo e. RR* $=
+    ( cpnf cr cmnf cpr cun cxr ssun2 cc cuni cpw df-pnf cnex uniex pwex eqeltri
+    cvv prid1 sselii df-xr eleqtrri ) ABACDZEZFUAUBAUABGACAHIZJPKUCHLMNOQRST $.
+
+  $( Plus infinity exists (common case).  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  pnfex $p |- +oo e. _V $=
+    ( cpnf cxr pnfxr elexi ) ABCD $.
+
+  $( Minus infinity belongs to the set of extended reals.  (Contributed by NM,
+     13-Oct-2005.)  (Proof shortened by Anthony Hart, 29-Aug-2011.)  (Proof
+     shortened by Andrew Salmon, 19-Nov-2011.) $)
+  mnfxr $p |- -oo e. RR* $=
+    ( cmnf cr cpnf cpr cun cxr wcel cpw cvv df-mnf pnfex pwex prid2 elun2 ax-mp
+    eqeltri df-xr eleqtrri ) ABCADZEZFASGATGCAACHIJCKLPMASBNOQR $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The 'less than' binary relation on the set of extended reals.
+       Definition 12-3.1 of [Gleason] p. 173.  (Contributed by NM,
+       14-Oct-2005.) $)
+    ltxr $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A < B <->
+              ( ( ( ( A e. RR /\ B e. RR ) /\ A <RR B ) \/
+                   ( A = -oo /\ B = +oo ) ) \/ ( ( A e. RR /\ B = +oo )
+                  \/ ( A = -oo /\ B e. RR ) ) ) ) ) $=
+      ( vx vy cxr wcel wa cv cr cltrr wbr cmnf csn cun cpnf cxp wceq clt syl5bb
+      wo w3a copab breq12 df-3an opabbii brab2ga a1i brun brxp elun orcom bitri
+      wb elsncg orbi1d bi2anan9 andir syl6bb anbi1d orbi12d orass df-ltxr breqi
+      adantr 3bitr4g ) AEFZBEFZGZABCHZIFZDHZIFZVIVKJKZUAZCDUBZKZABILMZNZOMZPZVQ
+      IPZNZKZTZAIFZBIFZGABJKZGZALQZBOQZGZWEWJGZWIWFGZTZTZTABRKZWHWKTWNTVHVPWHWC
+      WOVPWHUMVHVMWGCDABIIVOVIAVKBJUCVNVJVLGVMGCDVJVLVMUDUEUFUGWCABVTKZABWAKZTZ
+      VHWOABVTWAUHVHWSWKWLTZWMTWOVHWQWTWRWMWQAVRFZBVSFZGZVHWTABVRVSUIVHXCWIWETZ
+      WJGWTVFXAXDVGXBWJXAAVQFZWETZVFXDXAWEXETXFAIVQUJWEXEUKULVFXEWIWEALEUNZUOSB
+      OEUNUPWIWEWJUQURSWRXEWFGZVHWMABVQIUIVFXHWMUMVGVFXEWIWFXGUSVDSUTWKWLWMVAUR
+      SUTWPABVOWBNZKWDABRXICDVBVCABVOWBUHULWHWKWNVAVE $.
+  $}
+
+  $( Membership in the set of extended reals.  (Contributed by NM,
+     14-Oct-2005.) $)
+  elxr $p |- ( A e. RR* <-> ( A e. RR \/ A = +oo \/ A = -oo ) ) $=
+    ( cxr wcel cr cpnf cmnf cpr cun wo wceq df-xr eleq2i elun pnfex mnfxr elexi
+    w3o elpr2 orbi2i 3orass bitr4i 3bitri ) ABCADEFGZHZCADCZAUCCZIZUEAEJZAFJZQZ
+    BUDAKLADUCMUGUEUHUIIZIUJUFUKUEAEFNFBOPRSUEUHUITUAUB $.
+
+  $( Plus and minus infinity are different elements of ` RR* ` .  (Contributed
+     by NM, 14-Oct-2005.) $)
+  pnfnemnf $p |- +oo =/= -oo $=
+    ( cpnf cpw cmnf cxr wcel wne pnfxr pwne ax-mp necomi df-mnf neeqtrri ) AABZ
+    CMAADEMAFGADHIJKL $.
+
+  $( Minus and plus infinity are different (common case).  (Contributed by
+     David A. Wheeler, 8-Dec-2018.) $)
+  mnfnepnf $p |- -oo =/= +oo $=
+    ( cpnf cmnf pnfnemnf necomi ) ABCD $.
+
+  $( An extended real other than minus infinity is real or positive infinite.
+     (Contributed by Mario Carneiro, 20-Aug-2015.) $)
+  xrnemnf $p |- ( ( A e. RR* /\ A =/= -oo ) <-> ( A e. RR \/ A = +oo ) ) $=
+    ( cr wcel cpnf wceq wo cmnf wn cxr wne pm5.61 w3o elxr df-3or bitri anbi12i
+    wa df-ne renemnf pnfnemnf neeq1 mpbiri jaoi neneqd pm4.71i 3bitr4i ) ABCZAD
+    EZFZAGEZFZUJHZQUIULQAICZAGJZQUIUIUJKUMUKUNULUMUGUHUJLUKAMUGUHUJNOAGRPUIULUI
+    AGUGUNUHASUHUNDGJTADGUAUBUCUDUEUF $.
+
+  $( An extended real other than plus infinity is real or negative infinite.
+     (Contributed by Mario Carneiro, 20-Aug-2015.) $)
+  xrnepnf $p |- ( ( A e. RR* /\ A =/= +oo ) <-> ( A e. RR \/ A = -oo ) ) $=
+    ( cr wcel cmnf wceq wo cpnf wn wa cxr wne pm5.61 w3o elxr df-3or or32 df-ne
+    3bitri anbi12i renepnf mnfnepnf neeq1 mpbiri jaoi neneqd pm4.71i 3bitr4i )
+    ABCZADEZFZAGEZFZUKHZIUJUMIAJCZAGKZIUJUJUKLUNULUOUMUNUHUKUIMUHUKFUIFULANUHUK
+    UIOUHUKUIPRAGQSUJUMUJAGUHUOUIATUIUODGKUAADGUBUCUDUEUFUG $.
+
+  $( The extended real 'less than' is irreflexive.  (Contributed by NM,
+     14-Oct-2005.) $)
+  xrltnr $p |- ( A e. RR* -> -. A < A ) $=
+    ( cxr wcel cr cpnf wceq cmnf clt wbr wa cltrr neli intnanr pnfnemnf pm3.2ni
+    wo intnan wb pnfxr ltxr w3o elxr ltnr pnfnre neii mp2an mtbir breq12 anidms
+    wn mtbiri mnfnre nesymi mnfxr 3jaoi sylbi ) ABCADCZAEFZAGFZUAAAHIZUJZAUBUQV
+    AURUSAUCURUTEEHIZVBEDCZVCJZEEKIZJZEGFZEEFZJZPZVCVHJZVGVCJZPZPZVJVMVFVIVDVEV
+    CVCEDUDLZQMVGVHEGNUEMOVKVLVCVHVOMVCVGVOQOOEBCZVPVBVNRSSEETUFUGURUTVBRAEAEHU
+    HUIUKUSUTGGHIZVQGDCZVRJZGGKIZJZGGFZGEFZJZPZVRWCJZWBVRJZPZPZWEWHWAWDVSVTVRVR
+    GDULLZQMWCWBEGNUMQOWFWGVRWCWJMVRWBWJQOOGBCZWKVQWIRUNUNGGTUFUGUSUTVQRAGAGHUH
+    UIUKUOUP $.
+
+  $( Any (finite) real is less than plus infinity.  (Contributed by NM,
+     14-Oct-2005.) $)
+  ltpnf $p |- ( A e. RR -> A < +oo ) $=
+    ( cr wcel cpnf clt wbr wa cltrr cmnf wceq wo eqid orc mpan2 olcd rexr pnfxr
+    cxr wb ltxr sylancl mpbird ) ABCZADEFZUCDBCZGADHFGAIJZDDJZGKZUCUGGZUFUEGZKZ
+    KZUCUKUHUCUGUKDLUIUJMNOUCARCDRCUDULSAPQADTUAUB $.
+
+  $( Zero is less than plus infinity (common case).  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  0ltpnf $p |- 0 < +oo $=
+    ( cc0 cr wcel cpnf clt wbr 0re ltpnf ax-mp ) ABCADEFGAHI $.
+
+  $( Minus infinity is less than any (finite) real.  (Contributed by NM,
+     14-Oct-2005.) $)
+  mnflt $p |- ( A e. RR -> -oo < A ) $=
+    ( cr wcel cmnf clt wbr wa cltrr wceq cpnf wo eqid olc mpan olcd cxr wb rexr
+    mnfxr ltxr sylancr mpbird ) ABCZDAEFZDBCZUCGDAHFGDDIZAJIZGKZUEUGGZUFUCGZKZK
+    ZUCUKUHUFUCUKDLUJUIMNOUCDPCAPCUDULQSARDATUAUB $.
+
+  $( Minus infinity is less than 0 (common case).  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  mnflt0 $p |- -oo < 0 $=
+    ( cc0 cr wcel cmnf clt wbr 0re mnflt ax-mp ) ABCDAEFGAHI $.
+
+  $( Minus infinity is less than plus infinity.  (Contributed by NM,
+     14-Oct-2005.) $)
+  mnfltpnf $p |- -oo < +oo $=
+    ( cmnf cpnf clt wbr cr wcel wa cltrr wceq wo eqid olc mp2an cxr mnfxr pnfxr
+    orci wb ltxr mpbir ) ABCDZAEFZBEFZGABHDGZAAIZBBIZGZJZUBUFGUEUCGJZJZUHUIUEUF
+    UHAKBKUGUDLMQANFBNFUAUJROPABSMT $.
+
+  $( Minus infinity is less than an extended real that is either real or plus
+     infinity.  (Contributed by NM, 2-Feb-2006.) $)
+  mnfltxr $p |- ( ( A e. RR \/ A = +oo ) -> -oo < A ) $=
+    ( cr wcel cmnf clt wbr cpnf wceq mnflt mnfltpnf breq2 mpbiri jaoi ) ABCDAEF
+    ZAGHZAIONDGEFJAGDEKLM $.
+
+  $( No extended real is greater than plus infinity.  (Contributed by NM,
+     15-Oct-2005.) $)
+  pnfnlt $p |- ( A e. RR* -> -. +oo < A ) $=
+    ( cxr wcel cpnf clt wbr cr wa cltrr cmnf wceq wo neli intnanr pnfnemnf neii
+    pnfnre pm3.2ni wb pnfxr ltxr mpan mtbiri ) ABCZDAEFZDGCZAGCZHZDAIFZHZDJKZAD
+    KZHZLZUFULHZUKUGHZLZLZUNUQUJUMUHUIUFUGDGQMZNNUKULDJOPZNRUOUPUFULUSNUKUGUTNR
+    RDBCUDUEURSTDAUAUBUC $.
+
+  $( No extended real is less than minus infinity.  (Contributed by NM,
+     15-Oct-2005.) $)
+  nltmnf $p |- ( A e. RR* -> -. A < -oo ) $=
+    ( cxr wcel cmnf clt wbr cr wa cltrr wceq cpnf wo mnfnre neli intnan intnanr
+    pnfnemnf nesymi pm3.2ni wb mnfxr ltxr mpan2 mtbiri ) ABCZADEFZAGCZDGCZHZADI
+    FZHZADJZDKJZHZLZUGUMHZULUHHZLZLZUOURUKUNUIUJUHUGDGMNZOPUMULKDQRZOSUPUQUMUGV
+    AOUHULUTOSSUEDBCUFUSTUAADUBUCUD $.
+
+  $( Plus infinity is an upper bound for extended reals.  (Contributed by NM,
+     30-Jan-2006.) $)
+  pnfge $p |- ( A e. RR* -> A <_ +oo ) $=
+    ( cxr wcel cpnf cle wbr clt wn pnfnlt wb pnfxr xrlenlt mpan2 mpbird ) ABCZA
+    DEFZDAGFHZAIODBCPQJKADLMN $.
+
+  $( 0 less than or equal to positive infinity.  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  0lepnf $p |- 0 <_ +oo $=
+    ( cc0 cxr wcel cpnf cle wbr 0xr pnfge ax-mp ) ABCADEFGAHI $.
+
+  $( If a number is a nonnegative integer or positive infinity, it is greater
+     than or equal to 0.  (Contributed by Alexander van der Vekens,
+     6-Jan-2018.) $)
+  nn0pnfge0 $p |- ( ( N e. NN0 \/ N = +oo ) -> 0 <_ N ) $=
+    ( cn0 wcel cc0 cle wbr cpnf wceq nn0ge0 0lepnf breq2 mpbiri jaoi ) ABCDAEFZ
+    AGHZAIONDGEFJAGDEKLM $.
+
+  $( Minus infinity is less than or equal to any extended real.  (Contributed
+     by NM, 19-Jan-2006.) $)
+  mnfle $p |- ( A e. RR* -> -oo <_ A ) $=
+    ( cxr wcel cmnf cle wbr clt wn nltmnf wb mnfxr xrlenlt mpan mpbird ) ABCZDA
+    EFZADGFHZAIDBCOPQJKDALMN $.
+
+  $( Ordering on the extended reals is not symmetric.  (Contributed by NM,
+     15-Oct-2005.) $)
+  xrltnsym $p |- ( ( A e. RR* /\ B e. RR* ) ->
+                ( A < B -> -. B < A ) ) $=
+    ( cxr wcel cr cpnf wceq cmnf clt wbr wn pnfnlt syl adantr adantl mtbird a1d
+    wa wb pm2.21d wi elxr ltnsym rexr breq1 nltmnf breq2 3jaodan sylan2br mnfxr
+    w3o ax-mp breq12 mtbiri ancoms xrltnr 3jaoian syl2anb ) ACDZAEDZAFGZAHGZUKB
+    EDZBFGZBHGZUKZABIJZBAIJZKZUAZBCDZAUBBUBZUTVFVJVAVBUTVCVJVDVEABUCUTVDRZVIVGV
+    MVHFAIJZUTVNKZVDUTUSVOAUDZALMNVDVHVNSUTBFAIUEOPQUTVERZVGVIVQVGAHIJZUTVRKZVE
+    UTUSVSVPAUFMNVEVGVRSUTBHAIUGOPTUHVFVAVKVJVLVAVKRZVGVIVTVGFBIJZVKWAKVABLOVAV
+    GWASVKAFBIUENPTUIVBVCVJVDVEVBVCRZVIVGWBVHBHIJZVCWCKZVBVCVKWDBUDBUFMOVBVHWCS
+    VCAHBIUGNPQVBVDRVIVGVDVBVIVDVBRVHFHIJZHCDZWEKUJHLULBFAHIUMUNUOQVBVERZVGVIWG
+    VGHHIJZWFWHKUJHUPULAHBHIUMUNTUHUQUR $.
+
+  $( 'Less than' is antisymmetric and irreflexive for extended reals.
+     (Contributed by NM, 6-Feb-2007.) $)
+  xrltnsym2 $p |- ( ( A e. RR* /\ B e. RR* ) -> -. ( A < B /\ B < A ) ) $=
+    ( cxr wcel wa clt wbr wn wi xrltnsym imnan sylib ) ACDBCDEABFGZBAFGZHIMNEHA
+    BJMNKL $.
+
+  $( Ordering on the extended reals is transitive.  (Contributed by NM,
+     15-Oct-2005.) $)
+  xrlttr $p |- ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) ->
+             ( ( A < B /\ B < C ) -> A < C ) ) $=
+    ( cxr wcel cr cpnf wceq cmnf w3o clt wbr wa wn adantr adantl mtbird pm2.21d
+    wb adantlr wi elxr lttr 3expa an32s pnfnlt syl breq1 adantll adantld nltmnf
+    rexr breq2 adantrd 3jaodan sylan2b ltpnf mpbird a1d anasss adantrr mnfltpnf
+    mnflt breq12 mpbiri 3jaoian 3impb syl3an3b syl3an1b ) ADEZAFEZAGHZAIHZJZBDE
+    ZCDEZABKLZBCKLZMZACKLZUAZAUBVPVNVOCFEZCGHZCIHZJZWACUBVNVOWEWAVKVOWEMWAVLVMV
+    KVOWEWAVKVOMZWBWAWCWDVKWBVOWAVOVKWBMZBFEZBGHZBIHZJWABUBWGWHWAWIWJVKWHWBWAVK
+    WHWBWAABCUCUDUEWGWIMVRVTVQWBWIVRVTUAVKWBWIMZVRVTWKVRGCKLZWBWLNZWIWBVPWMCULC
+    UFUGOWIVRWLSWBBGCKUHPQRUIUJWGWJMVQVTVRVKWJVQVTUAWBVKWJMZVQVTWNVQAIKLZVKWONZ
+    WJVKVJWPAULAUKUGOWJVQWOSVKBIAKUMPQRTUNUOUPUEWFWCMVTVSVKWCVTVOVKWCMVTAGKLZVK
+    WQWCAUQOWCVTWQSVKCGAKUMPURTUSVOWDWAVKVOWDMZVRVTVQWRVRVTWRVRBIKLZVOWSNWDBUKO
+    WDVRWSSVOCIBKUMPQRUJZUIUOUTVLVOWAWEVLVOMZVQVTVRXAVQVTXAVQGBKLZVOXBNVLBUFPVL
+    VQXBSVOAGBKUHOQRUNVAVMVOWEWAVMVOMWBWAWCWDVMWBWAVOVMWBMZVTVSXCVTICKLZWBXDVMC
+    VCPVMVTXDSWBAICKUHOURUSTVMWCWAVOVMWCMZVTVSXEVTIGKLVBAICGKVDVEUSTVOWDWAVMWTU
+    IUOUTVFVGVHVI $.
+
+  ${
+    $d x y z A $.
+    $( 'Less than' is a weakly linear ordering on the extended reals.
+       (Contributed by NM, 15-Oct-2005.) $)
+    xrltso $p |- < Or RR* $=
+      ( vx vy vz cxr clt cv wbr wo wcel adantl wa cpnf wceq cmnf mpbird 3jaodan
+      wb a1d sylan2b ancoms wor wpo wi wral wtru wn xrltnr xrlttr ispod trud cr
+      w3a w3o elxr simplr simpll simpr axltwlin ltpnf ad2antlr breq2 orcd mnflt
+      syl3anc ad2antrr breq1 olcd anasss mnfltpnf breq12 mpbiri rexr nltmnf syl
+      adantlr mtbird pm2.21d pnfnlt df-3or bitri adantr eqtr3 breq1d olc syl6bi
+      mnfltxr jaodan 3impa syl3an3b 3com13 rgen3 df-iso mpbir2an ) DEUADEUBZAFZ
+      BFZEGZWOCFZEGZWRWPEGZHZUCZCDUDBDUDADUDWNUEABCDEWODIZWOWOEGUFUEWOUGJXCWPDI
+      ZWRDIZULWQWPWREGKWSUCUEWOWPWRUHJUIUJXBABCDDDXEXDXCXBXCXEXDWOUKIZWOLMZWONM
+      ZUMZXBWOUNXEXDXIXBXEXDKZXFXBXGXHXFXJXBXFXEXDXBXDXFXEKZWPUKIZWPLMZWPNMZUMX
+      BWPUNXKXLXBXMXNXLXKXBXLXFXEXBXEXLXFKZWRUKIZWRLMZWRNMZUMZXBWRUNZXOXPXBXQXR
+      XOXPKXFXLXPXBXLXFXPUOXLXFXPUPXOXPUQWOWPWRURVDXOXQKZXAWQYAWSWTYAWSWOLEGZXF
+      YBXLXQWOUSZUTXQWSYBQZXOWRLWOEVAZJOVBRXOXRKZXAWQYFWTWSYFWTNWPEGZXLYGXFXRWP
+      VCVEXRWTYGQXOWRNWPEVFJOVGRPSVHTXMXKXBXMXFXEXBXEXMXFKZXSXBXTYHXPXBXQXRYHXP
+      KZXAWQYIWTWSYIWTWRLEGZXPYJYHWRUSJXMWTYJQXFXPWPLWREVAVEOVGRYHXQKZXAWQYKWSW
+      TYKWSYBXFYBXMXQYCUTXQYDYHYEJOVBRYHXRKZXAWQYLWTWSXMXRWTXFXMXRKWTNLEGZVIXRX
+      MWTYMQWRNWPLEVJTVKVOVGRPSVHTXKXNKZWQXAYNWQWONEGZXFYOUFZXEXNXFXCYPWOVLWOVM
+      VNVEXNWQYOQXKWPNWOEVAJVPVQPSVHTXJXGKZWQXAYQWQLWPEGZXDYRUFXEXGWPVRUTXGWQYR
+      QXJWOLWPEVFJVPVQXEXHXBXDXHXEXBXEXHXPXQHZXRHZXBXEXSYTXTXPXQXRVSVTXHYSXBXRX
+      HYSKZXAWQUUAWSWTUUAWSNWREGZYSUUBXHWRWFJXHWSUUBQYSWONWREVFWAOVBRXHXRKZWQWT
+      XAUUCWOWRWPEWOWRNWBWCWTWSWDWEWGSTVOPWHWIWJWKABCDEWLWM $.
+  $}
+
+  $( Extended real version of ~ lttri3 .  (Contributed by NM, 9-Feb-2006.) $)
+  xrlttri3 $p |- ( ( A e. RR* /\ B e. RR* ) ->
+                ( A = B <-> ( -. A < B /\ -. B < A ) ) ) $=
+    ( wcel cpnf wceq cmnf clt wbr wn wa ancoms wne adantr adantl mpbird 2falsed
+    wb neneqd breq12 mtbiri cxr cr elxr lttri3 renepnf neeq2 necomd ltpnf breq2
+    w3o wo notnot1 olcs ioran sylnib syl renemnf mnflt breq1 orc oranim 3jaodan
+    3syl eqtr3 eqcomd pnfxr xrltnr ax-mp jca mnfnepnf eqeq12 necon3bid mnfltpnf
+    2thd mpbiri neii neneqad mnfxr syl2anb ) AUACAUBCZADEZAFEZUJZBUBCZBDEZBFEZU
+    JABEZABGHZIZBAGHZIZJZQZBUACAUCBUCWCWDWMWEWFWDWCWMWDVTWMWAWBVTWDWMABUDKWDWAJ
+    ZWGWLWNABWNBAWNBALZBDLZWDWPWABUEMWAWOWPQWDADBUFNOUGRWNWJWLIZWNWJBDGHZWDWRWA
+    BUHMWAWJWRQWDADBGUINOWJWHWJUKZIZWLWHWJWTIWSULUMWHWJUNUOZUPPWDWBJZWGWLXBABXB
+    BAXBWOBFLZWDXCWBBUQMWBWOXCQWDAFBUFNOUGRXBWHWSWQXBWHFBGHZWDXDWBBURMWBWHXDQWD
+    AFBGUSNOWHWJUTZWHWJVAZVCPVBKWEWCWMWEVTWMWAWBWEVTJZWGWLXGABXGABLZADLZVTXIWEA
+    UENWEXHXIQVTBDAUFMORXGWHWSWQXGWHADGHZVTXJWEAUHNWEWHXJQVTBDAGUIMOXEXFVCPWEWA
+    JZWGWLXKBABADVDVEXKWIWKXKWHDDGHZDUACXLIVFDVGVHZWAWEWHXLQADBDGSKTXKWJXLXMBDA
+    DGSTVIVNWEWBJZWGWLXNABWBWEXHWBWEJZXHFDLVJXOABFDAFBDVKVLVOKRXNWHWSWQWBWEWHXO
+    WHFDGHZVMAFBDGSVOKXEXFVCPVBKWFWCWMWFVTWMWAWBWFVTJZWGWLXQABXQXHAFLZVTXRWFAUQ
+    NWFXHXRQVTBFAUFMORXQWJWQXQWJFAGHZVTXSWFAURNWFWJXSQVTBFAGUSMOXAUPPWFWAJZWGWL
+    XTABXTBAXTBAXTBAEFDEFDVJVPBFADVKTVQUGRXTWJWQXTWJXPVMBFADGSVOXAUPPWFWBJZWGWL
+    WBWFWGABFVDKYAWIWKYAWHFFGHZFUACYBIVRFVGVHZWBWFWHYBQAFBFGSKTYAWJYBYCBFAFGSTV
+    IVNVBKVBVS $.
+
+  $( 'Less than' implies 'less than or equal' for extended reals.  (Contributed
+     by NM, 19-Jan-2006.) $)
+  xrltle $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A < B -> A <_ B ) ) $=
+    ( cxr wcel wa clt wbr wn cle xrltnsym xrlenlt sylibrd ) ACDBCDEABFGBAFGHABI
+    GABJABKL $.
+
+  $( 'Less than or equal to' is reflexive for extended reals.  (Contributed by
+     NM, 7-Feb-2007.) $)
+  xrleid $p |- ( A e. RR* -> A <_ A ) $=
+    ( cxr wcel cle wbr clt wn xrltnr wb xrlenlt anidms mpbird ) ABCZAADEZAAFEGZ
+    AHMNOIAAJKL $.
+
+  $( Trichotomy law for extended reals.  (Contributed by FL, 2-Aug-2009.) $)
+  xrletri3 $p |- ( ( A e. RR* /\ B e. RR* ) ->
+                   ( A = B <-> ( A <_ B /\ B <_ A ) ) ) $=
+    ( cxr wcel wa wceq clt wbr wn cle xrlttri3 ancom syl6bbr xrlenlt wb anbi12d
+    ancoms bitr4d ) ACDZBCDZEZABFZBAGHIZABGHIZEZABJHZBAJHZEUAUBUDUCEUEABKUCUDLM
+    UAUFUCUGUDABNTSUGUDOBANQPR $.
+
+  $( Transitive law for ordering on extended reals.  (Contributed by NM,
+     19-Jan-2006.) $)
+  xrlelttr $p |- ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) ->
+             ( ( A <_ B /\ B < C ) -> A < C ) ) $=
+    ( cxr wcel w3a cle wbr clt wa wn simprl simpl1 simpl2 xrlenlt syl2anc mpbid
+    wb pm2.21d idd wo simprr wi simpl3 wor xrltso sowlin mpan syl3anc mpjaod ex
+    mpd ) ADEZBDEZCDEZFZABGHZBCIHZJZACIHZUPUSJZBAIHZUTUTVAVBUTVAUQVBKZUPUQURLVA
+    UMUNUQVCRUMUNUOUSMZUMUNUOUSNZABOPQSVAUTTVAURVBUTUAZUPUQURUBVAUNUOUMURVFUCZV
+    EUMUNUOUSUDVDDIUEUNUOUMFVGUFDBCAIUGUHUIULUJUK $.
+
+  $( Transitive law for ordering on extended reals.  (Contributed by NM,
+     19-Jan-2006.) $)
+  xrltletr $p |- ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) ->
+             ( ( A < B /\ B <_ C ) -> A < C ) ) $=
+    ( cxr wcel w3a clt wbr cle wa wn simprr simpl2 simpl3 xrlenlt syl2anc mpbid
+    wb wo simprl wi wor xrltso sowlin mpan adantr mpd ecased ex ) ADEZBDEZCDEZF
+    ZABGHZBCIHZJZACGHZUMUPJZUQCBGHZURUOUSKZUMUNUOLURUKULUOUTRUJUKULUPMUJUKULUPN
+    BCOPQURUNUQUSSZUMUNUOTUMUNVAUAZUPDGUBUMVBUCDABCGUDUEUFUGUHUI $.
+
+  $( Transitive law for ordering on extended reals.  (Contributed by NM,
+     9-Feb-2006.) $)
+  xrletr $p |- ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) ->
+             ( ( A <_ B /\ B <_ C ) -> A <_ C ) ) $=
+    ( cxr wcel w3a clt wbr wo wn cle wa wi wor xrltso sowlin mpan 3coml xrlenlt
+    wb orcom syl6ib con3d 3adant3 3adant1 anbi12d ioran syl6bbr 3adant2 3imtr4d
+    ) ADEZBDEZCDEZFZBAGHZCBGHZIZJZCAGHZJZABKHZBCKHZLZACKHZUNUSUQUNUSUPUOIZUQUMU
+    KULUSVEMZDGNUMUKULFVFODCABGPQRUPUOUAUBUCUNVCUOJZUPJZLURUNVAVGVBVHUKULVAVGTU
+    MABSUDULUMVBVHTUKBCSUEUFUOUPUGUHUKUMVDUTTULACSUIUJ $.
+
+  ${
+    xrlttrd.1 $e |- ( ph -> A e. RR* ) $.
+    xrlttrd.2 $e |- ( ph -> B e. RR* ) $.
+    xrlttrd.3 $e |- ( ph -> C e. RR* ) $.
+    ${
+      xrlttrd.4 $e |- ( ph -> A < B ) $.
+      xrlttrd.5 $e |- ( ph -> B < C ) $.
+      $( Transitive law for ordering on extended reals.  (Contributed by Mario
+         Carneiro, 23-Aug-2015.) $)
+      xrlttrd $p |- ( ph -> A < C ) $=
+        ( clt wbr cxr wcel wa wi xrlttr syl3anc mp2and ) ABCJKZCDJKZBDJKZHIABLM
+        CLMDLMSTNUAOEFGBCDPQR $.
+    $}
+
+    ${
+      xrlelttrd.4 $e |- ( ph -> A <_ B ) $.
+      xrlelttrd.5 $e |- ( ph -> B < C ) $.
+      $( Transitive law for ordering on extended reals.  (Contributed by Mario
+         Carneiro, 23-Aug-2015.) $)
+      xrlelttrd $p |- ( ph -> A < C ) $=
+        ( cle wbr clt cxr wcel wa wi xrlelttr syl3anc mp2and ) ABCJKZCDLKZBDLKZ
+        HIABMNCMNDMNTUAOUBPEFGBCDQRS $.
+    $}
+
+    ${
+      xrltletrd.4 $e |- ( ph -> A < B ) $.
+      xrltletrd.5 $e |- ( ph -> B <_ C ) $.
+      $( Transitive law for ordering on extended reals.  (Contributed by Mario
+         Carneiro, 23-Aug-2015.) $)
+      xrltletrd $p |- ( ph -> A < C ) $=
+        ( clt wbr cle cxr wcel wa wi xrltletr syl3anc mp2and ) ABCJKZCDLKZBDJKZ
+        HIABMNCMNDMNTUAOUBPEFGBCDQRS $.
+    $}
+
+    ${
+      xrletrd.4 $e |- ( ph -> A <_ B ) $.
+      xrletrd.5 $e |- ( ph -> B <_ C ) $.
+      $( Transitive law for ordering on extended reals.  (Contributed by Mario
+         Carneiro, 23-Aug-2015.) $)
+      xrletrd $p |- ( ph -> A <_ C ) $=
+        ( cle wbr cxr wcel wa wi xrletr syl3anc mp2and ) ABCJKZCDJKZBDJKZHIABLM
+        CLMDLMSTNUAOEFGBCDPQR $.
+    $}
+  $}
+
+  $( 'Less than' implies not equal for extended reals.  (Contributed by NM,
+     20-Jan-2006.) $)
+  xrltne $p |- ( ( A e. RR* /\ B e. RR* /\ A < B ) -> B =/= A ) $=
+    ( cxr wcel clt wbr wne wceq xrltnr breq2 notbid syl5ibrcom necon2ad 3adant2
+    wn imp ) ACDZABEFZBAGZBCDQRSQRBAQROBAHZAAEFZOAITRUABAAEJKLMPN $.
+
+  $( An extended real is not less than plus infinity iff they are equal.
+     (Contributed by NM, 30-Jan-2006.) $)
+  nltpnft $p |- ( A e. RR* -> ( A = +oo <-> -. A < +oo ) ) $=
+    ( cxr wcel cr cpnf wceq cmnf w3o clt wbr wn wb renepnf neneqd ltpnf notnot1
+    elxr 2falsed breq1 mtbiri id pnfxr xrltnr ax-mp 2thd mnfnepnf neii mnfltpnf
+    syl eqeq1 mpbiri necon3bi necon2bi 3jaoi sylbi ) ABCADCZAEFZAGFZHUQAEIJZKZL
+    ZAQUPVAUQURUPUQUTUPAEAMNUPUSUTKAOUSPUIRUQUQUTUQUAUQUSEEIJZEBCVBKUBEUCUDAEEI
+    STUEURUQUTURUQGEFGEUFUGAGEUJTUTAGUSAGURUSGEIJUHAGEISUKULUMRUNUO $.
+
+  $( An extended real is not greater than minus infinity iff they are equal.
+     (Contributed by NM, 2-Feb-2006.) $)
+  ngtmnft $p |- ( A e. RR* -> ( A = -oo <-> -. -oo < A ) ) $=
+    ( cxr wcel cr cpnf wceq cmnf w3o clt wbr wn wb renemnf neneqd mnflt 2falsed
+    elxr wne mpbiri breq2 notnot1 syl pnfnemnf neeq1 mnfltpnf necon3bi necon2bi
+    id mnfxr xrltnr ax-mp mtbiri 2thd 3jaoi sylbi ) ABCADCZAEFZAGFZHURGAIJZKZLZ
+    AQUPVAUQURUPURUTUPAGAMNUPUSUTKAOUSUAUBPUQURUTUQAGUQAGREGRUCAEGUDSNUTAEUSAEU
+    QUSGEIJUEAEGITSUFUGPURURUTURUHURUSGGIJZGBCVBKUIGUJUKAGGITULUMUNUO $.
+
+  $( An extended real is real iff it is strictly bounded by infinities.
+     (Contributed by NM, 2-Feb-2006.) $)
+  xrrebnd $p |- ( A e. RR* -> ( A e. RR <-> ( -oo < A /\ A < +oo ) ) ) $=
+    ( cxr wcel cr cpnf wceq cmnf w3o clt wa wb elxr id necon2bi wn xrltnr ax-mp
+    wbr mtbiri 2falsed mnflt ltpnf jca 2thd renepnf pnfxr breq1 intnand renemnf
+    mnfxr breq2 intnanrd 3jaoi sylbi ) ABCADCZAEFZAGFZHUOGAIRZAEIRZJZKZALUOVAUP
+    UQUOUOUTUOMUOURUSAUAAUBUCUDUPUOUTUOAEAUENUPUSURUPUSEEIRZEBCVBOUFEPQAEEIUGSU
+    HTUQUOUTUOAGAUINUQURUSUQURGGIRZGBCVCOUJGPQAGGIUKSULTUMUN $.
+
+  $( A way of proving that an extended real is real.  (Contributed by NM,
+     9-Mar-2006.) $)
+  xrre $p |- ( ( ( A e. RR* /\ B e. RR ) /\ ( -oo < A /\ A <_ B ) ) ->
+              A e. RR ) $=
+    ( cxr wcel cr wa cmnf clt wbr cle cpnf simprl ltpnf adantl wi rexr xrlelttr
+    pnfxr mp3an3 sylan2 mpan2d imp adantrl wb xrrebnd ad2antrr mpbir2and ) ACDZ
+    BEDZFZGAHIZABJIZFZFAEDZUKAKHIZUJUKULLUJULUOUKUJULUOUJULBKHIZUOUIUPUHBMNUIUH
+    BCDZULUPFUOOZBPUHUQKCDURRABKQSTUAUBUCUHUNUKUOFUDUIUMAUEUFUG $.
+
+  $( An extended real between two others is real.  (Contributed by NM,
+     6-Feb-2007.) $)
+  xrre2 $p |- ( ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\
+              ( A < B /\ B < C ) ) -> B e. RR ) $=
+    ( cxr wcel w3a clt wbr wa cr cmnf wi cle mnfle adantr mnfxr xrlelttr mp3an1
+    cpnf mpand 3adant3 pnfge adantl pnfxr mp3an3 mpan2d 3adant1 anim12d xrrebnd
+    xrltletr wb 3ad2ant2 sylibrd imp ) ADEZBDEZCDEZFZABGHZBCGHZIZBJEZURVAKBGHZB
+    SGHZIZVBURUSVCUTVDUOUPUSVCLUQUOUPIKAMHZUSVCUOVFUPANOKDEUOUPVFUSIVCLPKABQRTU
+    AUPUQUTVDLUOUPUQIUTCSMHZVDUQVGUPCUBUCUPUQSDEUTVGIVDLUDBCSUJUEUFUGUHUPUOVBVE
+    UKUQBUIULUMUN $.
+
+  $( A way of proving that an extended real is real.  (Contributed by FL,
+     29-May-2014.) $)
+  xrre3 $p |- ( ( ( A e. RR* /\ B e. RR ) /\ ( B <_ A /\ A < +oo ) )
+      -> A e. RR ) $=
+    ( cxr wcel cr wa cle wbr cpnf clt cmnf mnflt adantl wi mnfxr a1i rexr simpl
+    xrltletr syl3anc mpand imp adantrr simprr wb xrrebnd ad2antrr mpbir2and ) A
+    CDZBEDZFZBAGHZAIJHZFZFAEDZKAJHZUMUKULUPUMUKULUPUKKBJHZULUPUJUQUIBLMUKKCDZBC
+    DZUIUQULFUPNURUKOPUJUSUIBQMUIUJRKBASTUAUBUCUKULUMUDUIUOUPUMFUEUJUNAUFUGUH
+    $.
+
+  $( A nonnegative extended real is greater than negative infinity.
+     (Contributed by Mario Carneiro, 20-Aug-2015.) $)
+  ge0gtmnf $p |- ( ( A e. RR* /\ 0 <_ A ) -> -oo < A ) $=
+    ( cxr wcel cmnf cc0 clt wbr cle mnflt0 wa wi mnfxr 0xr xrltletr mp3an12 imp
+    mpanr1 ) ABCZDEFGZEAHGZDAFGZIRSTJZUADBCEBCRUBUAKLMDEANOPQ $.
+
+  $( A nonnegative extended real is greater than negative infinity.
+     (Contributed by Mario Carneiro, 20-Aug-2015.) $)
+  ge0nemnf $p |- ( ( A e. RR* /\ 0 <_ A ) -> A =/= -oo ) $=
+    ( cxr wcel cc0 cle wbr wa cmnf clt wne ge0gtmnf wn wb ngtmnft adantr biimpd
+    wceq necon2ad mpd ) ABCZDAEFZGZHAIFZAHJAKUBUCAHUBAHQZUCLZTUDUEMUAANOPRS $.
+
+  $( A nonnegative extended real that is less than a real bound is real.
+     (Contributed by Mario Carneiro, 20-Aug-2015.) $)
+  xrrege0 $p |- ( ( ( A e. RR* /\ B e. RR ) /\ ( 0 <_ A /\ A <_ B ) ) ->
+              A e. RR ) $=
+    ( cxr wcel cr cc0 cle wbr cmnf clt ge0gtmnf ad2ant2r simprr jca xrre syldan
+    wa ) ACDZBEDZQZFAGHZABGHZQZIAJHZUBQAEDTUCQUDUBRUAUDSUBAKLTUAUBMNABOP $.
+
+  ${
+    $d k M $.  $d k N $.
+    $( There exists an integer greater than or equal to any two others.
+       (Contributed by NM, 28-Aug-2005.) $)
+    z2ge $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
+                E. k e. ZZ ( M <_ k /\ N <_ k ) ) $=
+      ( cz wcel wa cle wbr cv wrex simplr simpr zred leidd breq2 anbi12d rspcev
+      wceq syl12anc simpll zletric mpjaodan ) BDEZCDEZFZBCGHZBAIZGHZCUGGHZFZADJ
+      ZCBGHZUEUFFZUDUFCCGHZUKUCUDUFKZUEUFLUMCUMCUOMNUJUFUNFACDUGCRUHUFUIUNUGCBG
+      OUGCCGOPQSUEULFZUCBBGHZULUKUCUDULTZUPBUPBURMNUEULLUJUQULFABDUGBRUHUQUIULU
+      GBBGOUGBCGOPQSBCUAUB $.
+  $}
+
+  $( Equality of two extended numbers with ` -e ` in front of them.
+     (Contributed by FL, 26-Dec-2011.)  (Proof shortened by Mario Carneiro,
+     20-Aug-2015.) $)
+  xnegeq $p |- ( A = B -> -e A = -e B ) $=
+    ( wceq cpnf cmnf cneg cif cxne eqeq1 negeq ifbieq2d df-xneg 3eqtr4g ) ABCZA
+    DCZEAECZDAFZGZGBDCZEBECZDBFZGZGAHBHNOSRUBEABDINPTQUADABEIABJKKALBLM $.
+
+  $( Minus ` +oo ` .  Remark of [BourbakiTop1] p.  IV.15.  (Contributed by FL,
+     26-Dec-2011.) $)
+  xnegpnf $p |- -e +oo = -oo $=
+    ( cpnf cxne wceq cmnf cneg cif df-xneg eqid iftruei eqtri ) ABAACZDADCAAEFZ
+    FDAGKDLAHIJ $.
+
+  $( Minus ` -oo ` .  Remark of [BourbakiTop1] p.  IV.15.  (Contributed by FL,
+     26-Dec-2011.)  (Revised by Mario Carneiro, 20-Aug-2015.) $)
+  xnegmnf $p |- -e -oo = +oo $=
+    ( cmnf cxne cpnf wceq cneg cif df-xneg wne mnfnepnf ifnefalse ax-mp iftruei
+    eqid 3eqtri ) ABACDAAADZCAEZFZFZQCAGACHRQDIACAQJKOCPAMLN $.
+
+  $( Minus a real number.  Remark [BourbakiTop1] p.  IV.15.  (Contributed by
+     FL, 26-Dec-2011.)  (Proof shortened by Mario Carneiro, 20-Aug-2015.) $)
+  rexneg $p |- ( A e. RR -> -e A = -u A ) $=
+    ( cr wcel cxne cpnf wceq cmnf cif df-xneg wne renepnf ifnefalse syl renemnf
+    cneg eqtrd syl5eq ) ABCZADAEFGAGFEAOZHZHZSAIRUATSRAEJUATFAKAEGTLMRAGJTSFANA
+    GESLMPQ $.
+
+  $( The negative of zero.  (Contributed by Mario Carneiro, 20-Aug-2015.) $)
+  xneg0 $p |- -e 0 = 0 $=
+    ( cc0 cxne cneg cr wcel wceq 0re rexneg ax-mp neg0 eqtri ) ABZACZAADELMFGAH
+    IJK $.
+
+  $( Closure of extended real negative.  (Contributed by Mario Carneiro,
+     20-Aug-2015.) $)
+  xnegcl $p |- ( A e. RR* -> -e A e. RR* ) $=
+    ( cxr wcel cr cpnf wceq cmnf w3o cxne elxr cneg rexneg renegcl rexrd xnegeq
+    eqeltrd xnegpnf mnfxr eqeltri syl6eqel xnegmnf pnfxr 3jaoi sylbi ) ABCADCZA
+    EFZAGFZHAIZBCZAJUEUIUFUGUEUHUEUHAKDALAMPNUFUHEIZBAEOUJGBQRSTUGUHGIZBAGOUKEB
+    UAUBSTUCUD $.
+
+  $( Extended real version of ~ negneg .  (Contributed by Mario Carneiro,
+     20-Aug-2015.) $)
+  xnegneg $p |- ( A e. RR* -> -e -e A = A ) $=
+    ( cxr wcel cpnf wceq cmnf w3o cxne elxr cneg rexneg renegcl xnegmnf xnegpnf
+    cr xnegeq syl syl6eq id 3eqtr4a recn negnegd 3eqtrd 3jaoi sylbi ) ABCAOCZAD
+    EZAFEZGAHZHZAEZAIUFUKUGUHUFUJAJZHZULJZAUFUIULEUJUMEAKUIULPQUFULOCUMUNEALULK
+    QUFAAUAUBUCUGFHZDUJAMUGUIFEUJUOEUGUIDHZFADPNRUIFPQUGSTUHUPFUJANUHUIDEUJUPEU
+    HUIUODAFPMRUIDPQUHSTUDUE $.
+
+  $( Extended real version of ~ neg11 .  (Contributed by Mario Carneiro,
+     20-Aug-2015.) $)
+  xneg11 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( -e A = -e B <-> A = B ) ) $=
+    ( cxr wcel wa cxne wceq xnegeq xnegneg eqeqan12d syl5ib impbid1 ) ACDZBCDZE
+    ZAFZBFZGZABGZRPFZQFZGOSPQHMNTAUABAIBIJKABHL $.
+
+  $( Forward direction of ~ xltneg .  (Contributed by Mario Carneiro,
+     20-Aug-2015.) $)
+  xltnegi $p |- ( ( A e. RR* /\ B e. RR* /\ A < B ) -> -e B < -e A ) $=
+    ( cxr wcel clt wbr cxne cr cpnf wceq cmnf w3o wa wi elxr cneg syl adantr wn
+    sylbid rexneg breqan12rd bitr4d biimpd xnegeq xnegpnf syl6eq adantl renegcl
+    ltneg eqeltrd mnflt eqbrtrd a1d simpr breq2d nltmnf pm2.21d 3jaodan sylan2b
+    rexr expimpd simpl breq1d pnfnlt breq1 anbi2d ltpnf mnfltpnf syl6eqbr breq2
+    mnfxr ax-mp pm2.21i syl6bi imp 3jaoian sylanb xnegmnf syl5ibr 3jaoi 3impib
+    sylbi ) ACDZBCDZABEFZBGZAGZEFZWDAHDZAIJZAKJZLWEWFMZWINZAOWJWNWKWLWJWEWFWIWE
+    WJBHDZBIJZBKJZLZWFWINZBOZWJWOWSWPWQWJWOMZWFWIXAWFBPZAPZEFWIABUJWOWJWGXBWHXC
+    EBUAZAUAZUBUCUDWJWPMZWIWFXFWGKWHEWPWGKJZWJWPWGIGKBIUEUFUGZUHWJKWHEFZWPWJWHH
+    DXIWJWHXCHXEAUIUKWHULQRUMUNWJWQMZWFAKEFZWIXJBKAEWJWQUOUPXJXKWIWJXKSZWQWJWDX
+    LAVAAUQQRURTUSUTVBWKWEWFWIWKWEMZWFIBEFZWIXMAIBEWKWEVCVDXMXNWIWEXNSWKBVEUHUR
+    TVBWLWMWEKBEFZMZWIWLWFXOWEAKBEVFVGXPWIWLWGIEFZWEWRXOXQWTWOXOXQWPWQWOXOMWGHD
+    ZXQWOXRXOWOWGXBHXDBUIUKRWGVHQWPXOMWGKIEWPXGXOXHRVIVJWQXOXQWQXOKKEFZXQBKKEVK
+    XSXQKCDXSSVLKUQVMVNVOVPVQVRWLWHIWGEWLWHKGIAKUEVSUGUPVTTWAWCWB $.
+
+  $( Extended real version of ~ ltneg .  (Contributed by Mario Carneiro,
+     20-Aug-2015.) $)
+  xltneg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A < B <-> -e B < -e A ) ) $=
+    ( cxr wcel wa clt xltnegi 3expia wi xnegcl syl2anr xnegneg breqan12d sylibd
+    wbr cxne impbid ) ACDZBCDZEZABFOZBPZAPZFOZRSUAUDABGHTUDUCPZUBPZFOZUASUBCDZU
+    CCDZUDUGIRBJAJUHUIUDUGUBUCGHKRSUEAUFBFALBLMNQ $.
+
+  $( Extended real version of ~ leneg .  (Contributed by Mario Carneiro,
+     20-Aug-2015.) $)
+  xleneg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A <_ B <-> -e B <_ -e A ) ) $=
+    ( cxr wcel wa clt wbr wn cle wb xltneg ancoms notbid xrlenlt xnegcl syl2anr
+    cxne 3bitr4d ) ACDZBCDZEZBAFGZHAQZBQZFGZHZABIGUDUCIGZUAUBUETSUBUEJBAKLMABNT
+    UDCDUCCDUGUFJSBOAOUDUCNPR $.
+
+  $( Extended real version of ~ lt0neg1 .  (Contributed by Mario Carneiro,
+     20-Aug-2015.) $)
+  xlt0neg1 $p |- ( A e. RR* -> ( A < 0 <-> 0 < -e A ) ) $=
+    ( cxr wcel cc0 clt wbr cxne wb 0xr xltneg mpan2 xneg0 breq1i syl6bb ) ABCZA
+    DEFZDGZAGZEFZDREFODBCPSHIADJKQDRELMN $.
+
+  $( Extended real version of ~ lt0neg2 .  (Contributed by Mario Carneiro,
+     20-Aug-2015.) $)
+  xlt0neg2 $p |- ( A e. RR* -> ( 0 < A <-> -e A < 0 ) ) $=
+    ( cxr wcel cc0 clt wbr cxne wb 0xr xltneg mpan xneg0 breq2i syl6bb ) ABCZDA
+    EFZAGZDGZEFZQDEFDBCOPSHIDAJKRDQELMN $.
+
+  $( Extended real version of ~ le0neg1 .  (Contributed by Mario Carneiro,
+     9-Sep-2015.) $)
+  xle0neg1 $p |- ( A e. RR* -> ( A <_ 0 <-> 0 <_ -e A ) ) $=
+    ( cxr wcel cc0 cle wbr cxne wb 0xr xleneg mpan2 xneg0 breq1i syl6bb ) ABCZA
+    DEFZDGZAGZEFZDREFODBCPSHIADJKQDRELMN $.
+
+  $( Extended real version of ~ le0neg2 .  (Contributed by Mario Carneiro,
+     9-Sep-2015.) $)
+  xle0neg2 $p |- ( A e. RR* -> ( 0 <_ A <-> -e A <_ 0 ) ) $=
+    ( cxr wcel cc0 cle wbr cxne wb 0xr xleneg mpan xneg0 breq2i syl6bb ) ABCZDA
+    EFZAGZDGZEFZQDEFDBCOPSHIDAJKRDQELMN $.
+
+  ${
+    xnegcld.1 $e |- ( ph -> A e. RR* ) $.
+    $( Closure of extended real negative.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    xnegcld $p |- ( ph -> -e A e. RR* ) $=
+      ( cxr wcel cxne xnegcl syl ) ABDEBFDECBGH $.
+  $}
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
@@ -78662,6 +79276,18 @@ htmldef "10" as "<IMG SRC='_10.gif' WIDTH=14 HEIGHT=19 ALT=' 10' TITLE='10'>";
 htmldef ";" as '<FONT COLOR="#808080">;</FONT>';
   althtmldef ";" as '<SPAN CLASS=hidden STYLE="color:gray">;</SPAN>';
   latexdef ";" as "{\rm;}";
+htmldef "-e" as " <IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -' " +
+    "TITLE='-'><IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
+  althtmldef "-e" as "-<SUB>&#x1D452;</SUB>";
+  latexdef "-e" as "\textrm{-}_e";
+htmldef "+e" as "<IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'>" +
+    "<IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
+  althtmldef "+e" as " +<SUB>&#x1D452;</SUB> ";
+  latexdef "+e" as "+_e";
+htmldef "*e" as "<IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT=' x' TITLE='x'>" +
+    "<IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
+  althtmldef "*e" as  " &middot;<SUB>e</SUB> ";
+  latexdef "*e" as "\cdot_e";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
