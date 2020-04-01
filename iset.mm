@@ -78469,13 +78469,13 @@ $)
   ${
     $d w x y z A $.  $d w x y z B $.  $d w x y z C $.  $d w x y z D $.
     $( Condition for a closed interval to be a subset of another closed
-       interval.  (Contributed by Jeff Madsen, 2-Sep-2009.)  (Revised by Mario
-       Carneiro, 20-Feb-2015.) $)
-    iccss $p |- ( ( ( A e. RR /\ B e. RR ) /\
+       interval.  (Contributed by Jim Kingdon, 31-Mar-2020.) $)
+    iccssg $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) /\
                     ( A <_ C /\ D <_ B ) ) -> ( C [,] D ) C_ ( A [,] B ) ) $=
-      ( vx vy vz vw cr wcel wa cxr cle wbr cicc co wss rexr anim12i xrletr cv
-      df-icc ixxss12 sylan ) AIJZBIJZKALJZBLJZKACMNDBMNKCDOPABOPQUEUGUFUHARBRSE
-      FGHABCDOMMMMOMMEFGUBZUIACHUAZTUJDBTUCUD $.
+      ( vx vy vz vw cr wcel wa cxr cle wbr cicc co wss rexr anim12i xrletr id
+      df-icc cv ixxss12g syl3an ) AIJZBIJZKALJZBLJZKCIJZDIJZKCLJZDLJZKACMNDBMNK
+      ZUNCDOPABOPQUFUHUGUIARBRSUJULUKUMCRDRSUNUAEFGHABCDOMMMMOMMEFGUBZUOACHUCZT
+      UPDBTUDUE $.
 
     $( Condition for a closed interval to be a subset of an open interval.
        (Contributed by Mario Carneiro, 20-Feb-2015.) $)
