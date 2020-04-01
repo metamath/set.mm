@@ -6561,6 +6561,19 @@ $)
       ( wa ancom bitri baibr ) ACBABCECBEDBCFGH $.
   $}
 
+  ${
+    baibd.1 $e |- ( ph -> ( ps <-> ( ch /\ th ) ) ) $.
+    $( Move conjunction outside of biconditional.  (Contributed by Mario
+       Carneiro, 11-Sep-2015.) $)
+    baibd $p |- ( ( ph /\ ch ) -> ( ps <-> th ) ) $=
+      ( wa ibar bicomd sylan9bb ) ABCDFZCDECDJCDGHI $.
+
+    $( Move conjunction outside of biconditional.  (Contributed by Mario
+       Carneiro, 11-Sep-2015.) $)
+    rbaibd $p |- ( ( ph /\ th ) -> ( ps <-> ch ) ) $=
+      ( wa iba bicomd sylan9bb ) ABCDFZDCEDCJDCGHI $.
+  $}
+
   $( Theorem *5.44 of [WhiteheadRussell] p. 125.  (Contributed by NM,
      3-Jan-2005.) $)
   pm5.44 $p |- ( ( ph -> ps ) -> ( ( ph -> ch ) <->
