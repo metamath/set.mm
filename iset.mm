@@ -78484,12 +78484,13 @@ $)
       ( vx vy vz vw cicc clt cle cioo df-ioo df-icc xrltletr xrlelttr ixxss12g
       cv ) EFGHABCDIJJKKLJJEFGMEFGNACHRZOSDBPQ $.
 
-    $( Condition for a closed interval to be a subset of an open interval.
-       (Contributed by Thierry Arnoux, 21-Sep-2017.) $)
-    icossico $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
-      ( A <_ C /\ D <_ B ) ) -> ( C [,) D ) C_ ( A [,) B ) ) $=
-      ( vx vy vz vw cico cle clt df-ico cv xrletr xrltletr ixxss12 ) EFGHABCDIJ
-      KJKIJJEFGLZQACHMZNRDBOP $.
+    $( Condition for a closed-below, open-above interval to be a subset of a
+       closed-below, open-above interval.  (Contributed by Jim Kingdon,
+       1-Apr-2020.) $)
+    icossicog $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ D e. RR* ) /\
+        ( A <_ C /\ D <_ B ) ) -> ( C [,) D ) C_ ( A [,) B ) ) $=
+      ( vx vy vz vw cico cle clt df-ico cv xrletr xrltletr ixxss12g ) EFGHABCDI
+      JKJKIJJEFGLZQACHMZNRDBOP $.
 
     $( Condition for a closed interval to be a subset of another closed
        interval.  (Contributed by Jeff Madsen, 2-Sep-2009.)  (Revised by Mario
