@@ -1,4 +1,4 @@
-$( iset.mm - Version of 31-Mar-2020
+$( iset.mm - Version of 1-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -78478,10 +78478,10 @@ $)
       UPDBTUDUE $.
 
     $( Condition for a closed interval to be a subset of an open interval.
-       (Contributed by Mario Carneiro, 20-Feb-2015.) $)
-    iccssioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
-      ( A < C /\ D < B ) ) -> ( C [,] D ) C_ ( A (,) B ) ) $=
-      ( vx vy vz vw cicc clt cle cioo df-ioo df-icc xrltletr xrlelttr ixxss12
+       (Contributed by Jim Kingdon, 1-Apr-2020.) $)
+    iccssioog $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ D e. RR* ) /\
+        ( A < C /\ D < B ) ) -> ( C [,] D ) C_ ( A (,) B ) ) $=
+      ( vx vy vz vw cicc clt cle cioo df-ioo df-icc xrltletr xrlelttr ixxss12g
       cv ) EFGHABCDIJJKKLJJEFGMEFGNACHRZOSDBPQ $.
 
     $( Condition for a closed interval to be a subset of an open interval.
