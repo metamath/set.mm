@@ -78526,15 +78526,15 @@ $)
       syl6bi ex syl2and ) AEFBEFGZCABHIZFZACJKZDUDFZDBJKZCDLIUDMZUCUECNFZUFCBJK
       ZOUFABCPUJUFUKQTUCUGDNFZADJKZUHOUHABDPULUMUHRTUCUFUHGUIABCDSUAUB $.
 
-    $( Condition for a closed interval to be a subset of an open interval.
-       (Contributed by Mario Carneiro, 20-Feb-2015.) $)
-    iccssico2 $p |- ( ( C e. ( A [,) B ) /\ D e. ( A [,) B ) ) ->
-      ( C [,] D ) C_ ( A [,) B ) ) $=
-      ( vx vy vz cico co wcel wa cxr cle wbr clt cv adantr w3a elixx3g simprbi
-      cicc wss crab df-ico elmpt2cl1 elmpt2cl2 simpld simprd iccssico syl22anc
-      adantl ) CABHIZJZDULJZKALJZBLJZACMNZDBONZCDUAIULUBUMUOUNEFLLEPGPZMNUSFPON
-      KGLUCZABHCEFGUDZUEQUMUPUNEFLLUTABHCVAUFQUMUQUNUMUQCBONZUMUOUPCLJRUQVBKEFG
-      ABCMOHVASTUGQUNURUMUNADMNZURUNUOUPDLJRVCURKEFGABDMOHVASTUHUKABCDUIUJ $.
+    $( Condition for a closed interval to be a subset of a closed-below,
+       open-above interval.  (Contributed by Jim Kingdon, 2-Apr-2020.) $)
+    iccssico2g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
+        ( C e. ( A [,) B ) /\ D e. ( A [,) B ) ) ) ->
+        ( C [,] D ) C_ ( A [,) B ) ) $=
+      ( cxr wcel wa cico co cle wbr clt cicc wss simpl w3a elico1 adantr mpbid
+      wb simprl simp2d simprr simp3d iccssico syl12anc ) AEFBEFGZCABHIZFZDUHFZG
+      ZGZUGACJKZDBLKZCDMIUHNUGUKOULCEFZUMCBLKZULUIUOUMUPPZUGUIUJUAUGUIUQTUKABCQ
+      RSUBULDEFZADJKZUNULUJURUSUNPZUGUIUJUCUGUJUTTUKABDQRSUDABCDUEUF $.
   $}
 
   $( The open interval from minus to plus infinity.  (Contributed by NM,
