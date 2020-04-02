@@ -78493,16 +78493,16 @@ $)
       JKJKIJJEFGLZQACHMZNRDBOP $.
 
     $( Condition for a closed interval to be a subset of another closed
-       interval.  (Contributed by Jeff Madsen, 2-Sep-2009.)  (Revised by Mario
-       Carneiro, 28-Apr-2015.) $)
-    iccss2 $p |- ( ( C e. ( A [,] B ) /\ D e. ( A [,] B ) ) ->
-      ( C [,] D ) C_ ( A [,] B ) ) $=
-      ( vx vy vz vw cicc co wcel cxr cle wbr w3a elixx3g adantr simprbi xrletr
-      wa wss df-icc simplbi simp1d simp2d simpld simprd adantl ixxss12 syl22anc
-      cv ) CABIJZKZDULKZTZALKZBLKZACMNZDBMNZCDIJULUAUOUPUQCLKZUMUPUQUTOZUNUMVAU
-      RCBMNZTZEFGABCMMIEFGUBZPZUCQZUDUOUPUQUTVFUEUOURVBUMVCUNUMVAVCVERQUFUNUSUM
-      UNADMNZUSUNUPUQDLKOVGUSTEFGABDMMIVDPRUGUHEFGHABCDIMMMMIMMVDVDACHUKZSVHDBS
-      UIUJ $.
+       interval.  (Contributed by Jim Kingdon, 1-Apr-2020.) $)
+    iccss2g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
+        ( C e. ( A [,] B ) /\ D e. ( A [,] B ) ) ) ->
+        ( C [,] D ) C_ ( A [,] B ) ) $=
+      ( vx vy vz vw cxr wcel wa cicc co cle wbr w3a wb elicc1 adantr mpbid wss
+      simpl simprl simp1d simprr simp2d simp3d df-icc xrletr ixxss12g syl122anc
+      cv ) AIJBIJKZCABLMZJZDUNJZKZKZUMCIJZDIJZACNOZDBNOZCDLMUNUAUMUQUBURUSVACBN
+      OZURUOUSVAVCPZUMUOUPUCUMUOVDQUQABCRSTZUDURUTADNOZVBURUPUTVFVBPZUMUOUPUEUM
+      UPVGQUQABDRSTZUDURUSVAVCVEUFURUTVFVBVHUGEFGHABCDLNNNNLNNEFGUHZVIACHULZUIV
+      JDBUIUJUK $.
 
     $( Condition for a closed interval to be a subset of a half-open interval.
        (Contributed by Mario Carneiro, 9-Sep-2015.) $)
