@@ -78518,13 +78518,13 @@ $)
       BCDOLNLLQLNEFGUHEFGUIACHUBZUJVFDBUKULUN $.
 
     $( Condition for a closed interval to be a subset of an open interval.
-       (Contributed by Mario Carneiro, 20-Feb-2015.) $)
-    iccssioo2 $p |- ( ( C e. ( A (,) B ) /\ D e. ( A (,) B ) ) ->
-      ( C [,] D ) C_ ( A (,) B ) ) $=
-      ( cioo co wcel wa cxr clt wbr cicc wss c0 wne ne0i adantr ndmioo necon1ai
-      eliooord syl simpld adantl simprd iccssioo syl12anc ) CABEFZGZDUGGZHZAIGB
-      IGHZACJKZDBJKZCDLFUGMUJUGNOZUKUHUNUIUGCPQUKUGNABRSUAUJULCBJKZUHULUOHUICAB
-      TQUBUJADJKZUMUIUPUMHUHDABTUCUDABCDUEUF $.
+       (Contributed by Jim Kingdon, 2-Apr-2020.) $)
+    iccssioo2g $p |- ( ( A e. RR* /\ B e. RR* ) ->
+        ( ( C e. ( A (,) B ) /\ D e. ( A (,) B ) ) ->
+        ( C [,] D ) C_ ( A (,) B ) ) ) $=
+      ( cxr wcel wa cioo co clt wbr cicc wss cr w3a elioo2 simp2 simp3 iccssioo
+      syl6bi ex syl2and ) AEFBEFGZCABHIZFZACJKZDUDFZDBJKZCDLIUDMZUCUECNFZUFCBJK
+      ZOUFABCPUJUFUKQTUCUGDNFZADJKZUHOUHABDPULUMUHRTUCUFUHGUIABCDSUAUB $.
 
     $( Condition for a closed interval to be a subset of an open interval.
        (Contributed by Mario Carneiro, 20-Feb-2015.) $)
