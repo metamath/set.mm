@@ -78508,8 +78508,11 @@ $)
        (Contributed by Mario Carneiro, 9-Sep-2015.) $)
     iccssico $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A <_ C /\ D < B ) ) -> ( C [,] D ) C_ ( A [,) B ) ) $=
-      ( vx vy vz vw cicc cle clt cico df-ico df-icc cv xrletr xrlelttr ixxss12
-      ) EFGHABCDIJKJJLJKEFGMEFGNACHOZPSDBQR $.
+      ( vx vy vz vw cxr wcel wa cle wbr clt cicc co cico wss brel syl simprl cv
+      simpl lerelxr simprd simprr simpld df-ico df-icc xrletr xrlelttr ixxss12g
+      ltrelxr syl122anc ) AIJZBIJZKZACLMZDBNMZKZKZUQCIJZDIJZURUSCDOPABQPRUQUTUC
+      VAURVBUQURUSUAZURUOVBACIILUDSUETVAUSVCUQURUSUFZUSVCUPDBIINUMSUGTVDVEEFGHA
+      BCDOLNLLQLNEFGUHEFGUIACHUBZUJVFDBUKULUN $.
 
     $( Condition for a closed interval to be a subset of an open interval.
        (Contributed by Mario Carneiro, 20-Feb-2015.) $)
