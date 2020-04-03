@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Apr-2020
+$( iset.mm - Version of 3-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -78605,10 +78605,9 @@ $)
       ( vx vy vz cle cicc df-icc ixxssxrg ) CDEABFFGCDEHI $.
 
     $( An open-below, closed-above interval is a subset of the extended reals.
-       (Contributed by FL, 29-May-2014.)  (Revised by Mario Carneiro,
-       4-Jul-2014.) $)
-    iocssxr $p |- ( A (,] B ) C_ RR* $=
-      ( vx vy vz clt cle cioc df-ioc ixxssxr ) CDEABFGHCDEIJ $.
+       (Contributed by Jim Kingdon, 3-Apr-2020.) $)
+    iocssxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,] B ) C_ RR* ) $=
+      ( vx vy vz clt cle cioc df-ioc ixxssxrg ) CDEABFGHCDEIJ $.
 
     $( A closed-below, open-above interval is a subset of the extended reals.
        (Contributed by FL, 29-May-2014.)  (Revised by Mario Carneiro,
