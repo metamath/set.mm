@@ -78599,10 +78599,10 @@ $)
       ( vx cr wcel wa cicc co cv w3a cle wbr elicc2 biimp3a simp1d 3expia ssrdv
       ) ADEZBDEZFCABGHZDRSCIZTEZUADEZRSUBJUCAUAKLZUABKLZRSUBUCUDUEJABUAMNOPQ $.
 
-    $( A closed interval is a set of extended reals.  (Contributed by FL,
-       28-Jul-2008.)  (Revised by Mario Carneiro, 4-Jul-2014.) $)
-    iccssxr $p |- ( A [,] B ) C_ RR* $=
-      ( vx vy vz cle cicc df-icc ixxssxr ) CDEABFFGCDEHI $.
+    $( A closed interval is a set of extended reals.  (Contributed by Jim
+       Kingdon, 2-Apr-2020.) $)
+    iccssxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A [,] B ) C_ RR* ) $=
+      ( vx vy vz cle cicc df-icc ixxssxrg ) CDEABFFGCDEHI $.
 
     $( An open-below, closed-above interval is a subset of the extended reals.
        (Contributed by FL, 29-May-2014.)  (Revised by Mario Carneiro,
