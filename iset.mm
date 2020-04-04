@@ -78898,15 +78898,6 @@ $)
 
   ${
     $d w x y z A $.  $d w x y z B $.  $d w x y z C $.  $d w x y z D $.
-    $( The union of end-to-end closed-below, open-above real intervals.
-       (Contributed by Paul Chapman, 15-Mar-2008.)  (Proof shortened by Mario
-       Carneiro, 16-Jun-2014.) $)
-    icoun $p |- ( ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\
-                    ( A <_ B /\ B <_ C ) ) ->
-                  ( ( A [,) B ) u. ( B [,) C ) ) = ( A [,) C ) ) $=
-      ( vx vy vz vw cico cle clt df-ico cv xrlenlt xrltletr xrletr ixxun ) DEFG
-      ABCHHIJIJHIIDEFKZQBGLZMQRBCNABROP $.
-
     $( End-to-end closed-below, open-above real intervals are disjoint.
        (Contributed by Mario Carneiro, 16-Jun-2014.) $)
     icodisj $p |- ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) ->
