@@ -78915,12 +78915,12 @@ $)
        Jeff Hankins, 13-Jul-2009.) $)
     ioodisj $p |- ( ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ D e. RR* ) )
      /\ B <_ C ) -> ( ( A (,) B ) i^i ( C (,) D ) ) = (/) ) $=
-      ( vx vy vz vw cxr wcel wa cle cioo co cin c0 wss wceq cicc syl wbr iooss1
-      simpllr sylancom ioossicc syl6ss sslin simplll simplrr clt df-ioo xrlenlt
-      df-icc cv ixxdisj syl3anc sseqtrd ss0 ) AIJZBIJZKZCIJZDIJZKZKZBCLUAZKZABM
-      NZCDMNZOZPQVJPRVGVJVHBDSNZOZPVGVIVKQVJVLQVGVIBDMNZVKVEVFUTVIVMQUSUTVDVFUC
-      ZBCDUBUDBDUEUFVIVKVHUGTVGUSUTVCVLPRUSUTVDVFUHVNVAVBVCVFUIEFGHABDSUJUJLLME
-      FGUKEFGUMBHUNULUOUPUQVJURT $.
+      ( vx vy vz vw cxr wcel wa cle cioo co cin c0 wss wceq cicc syl wbr syl6ss
+      simpllr simplrl simplrr simpr iooss1g syl22anc ioossicc sslin simplll clt
+      df-ioo df-icc cv xrlenlt ixxdisj syl3anc sseqtrd ss0 ) AIJZBIJZKZCIJZDIJZ
+      KZKZBCLUAZKZABMNZCDMNZOZPQVLPRVIVLVJBDSNZOZPVIVKVMQVLVNQVIVKBDMNZVMVIVBVD
+      VEVHVKVOQVAVBVFVHUCZVCVDVEVHUDVCVDVEVHUEZVGVHUFBCDUGUHBDUIUBVKVMVJUJTVIVA
+      VBVEVNPRVAVBVFVHUKVPVQEFGHABDSULULLLMEFGUMEFGUNBHUOUPUQURUSVLUTT $.
 
     $( Join two open intervals to create a third.  (Contributed by NM,
        11-Aug-2008.)  (Proof shortened by Mario Carneiro, 16-Jun-2014.) $)
