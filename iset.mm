@@ -78910,18 +78910,6 @@ $)
       VIVDVJNZBVHQPZVQVRVNVSVHCOPZVDVJVNVSVTGZVBVCVJWARVABCVHSUFTZUGVRVBVNVSVQR
       VAVBVCVJUHVRVNVSVTWBUIBVHUJUKUMUNUOUPUQURVGUSUT $.
 
-    $( The closure of one end of an open real interval.  (Contributed by Paul
-       Chapman, 15-Mar-2008.)  (Proof shortened by Mario Carneiro,
-       16-Jun-2014.) $)
-    snunioo $p |- ( ( A e. RR* /\ B e. RR* /\ A < B ) ->
-                    ( { A } u. ( A (,) B ) ) = ( A [,) B ) ) $=
-      ( vx vy vz vw cxr wcel clt wbr w3a cicc co cioo cun csn cico wceq syl cle
-      simp1 iccid uneq1d simp2 xrleid simp3 df-icc df-ioo cv df-ico xrlelttr wi
-      xrltnle xrltle 3adant1 adantld ixxun syl32anc eqtr3d ) AGHZBGHZABIJZKZAAL
-      MZABNMZOZAPZVEOABQMZVCVDVGVEVCUTVDVGRUTVAVBUAZAUBSUCVCUTUTVAAATJZVBVFVHRV
-      IVIUTVAVBUDVCUTVJVIAUESUTVAVBUFCDEFAABNQTTIILTICDEUGCDEUHAFUIZUMCDEUJVKAB
-      UKUTUTVKGHZKAVKIJZAVKTJZVJUTVLVMVNULUTAVKUNUOUPUQURUS $.
-
     $( The closure of the open end of a right-open real interval.  (Contributed
        by Mario Carneiro, 16-Jun-2014.) $)
     snunico $p |- ( ( A e. RR* /\ B e. RR* /\ A <_ B ) ->
