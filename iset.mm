@@ -78364,6 +78364,15 @@ $)
       AUPVBVGOCABUFUGVHUSLCDUHVAUSCDUIUSCDUJUKULUM $.
   $}
 
+  ${
+    $d x y z $.
+    $( A nonempty open interval spans an interval of extended reals.
+       (Contributed by NM, 17-Aug-2008.) $)
+    eliooxr $p |- ( A e. ( B (,) C ) -> ( B e. RR* /\ C e. RR* ) ) $=
+      ( vx vy vz cxr cv clt wbr wa crab cioo df-ioo elmpt2cl ) DEGGDHFHZIJPEHIJ
+      KFGLBCMADEFNO $.
+  $}
+
   $( The upper bound belongs to an open-below, closed-above interval.  See
      ~ ubicc2 .  (Contributed by FL, 29-May-2014.) $)
   ubioc1 $p |- ( ( A e. RR* /\ B e. RR* /\ A < B ) -> B e. ( A (,] B ) ) $=
