@@ -78807,14 +78807,6 @@ $)
     remulcl syl2anb ) ACDEFZGAHGZCAIJZKZBHGZCBIJZKZABLFZSGZBSGAMBMUBUEKUFHGZCUF
     IJUGTUCUHUAUDABQNABOUFMPR $.
 
-  $( The nonnegative reals are closed under addition.  (Contributed by Mario
-     Carneiro, 26-Aug-2015.) $)
-  ge0xaddcl $p |- ( ( A e. ( 0 [,] +oo ) /\ B e. ( 0 [,] +oo ) ) ->
-                   ( A +e B ) e. ( 0 [,] +oo ) ) $=
-    ( cc0 cpnf cicc co wcel cxr cle wbr wa cxad elxrge0 xaddcl ad2ant2r xaddge0
-    an4s sylanbrc syl2anb ) ACDEFZGAHGZCAIJZKZBHGZCBIJZKZABLFZTGZBTGAMBMUCUFKUG
-    HGZCUGIJZUHUAUDUIUBUEABNOUAUDUBUEUJABPQUGMRS $.
-
   $( The nonnegative extended reals are closed under multiplication.
      (Contributed by Mario Carneiro, 26-Aug-2015.) $)
   ge0xmulcl $p |- ( ( A e. ( 0 [,] +oo ) /\ B e. ( 0 [,] +oo ) ) ->
