@@ -78749,9 +78749,9 @@ $)
        1-Sep-2015.) $)
     dfioo2 $p |- (,) = ( x e. RR* , y e. RR* |->
                          { w e. RR | ( x < w /\ w < y ) } ) $=
-      ( cioo cxr cv co cmpt2 clt wbr wa cr crab cxp wfn wceq cpw wf ioof ffn
-      ax-mp fnov mpbi iooval2 mpt2eq3ia eqtri ) DABEEAFZBFZDGZHZABEEUGCFZIJUKUH
-      IJKCLMZHDEENZOZDUJPUMLQZDRUNSUMUODTUAABEEDUBUCABEEUIULCUGUHUDUEUF $.
+      ( cioo cxr cv co cmpt2 clt wbr wa cr crab cxp cpw wf wfn wceq ioof ffn
+      fnovim mp2b iooval2 mpt2eq3ia eqtri ) DABEEAFZBFZDGZHZABEEUFCFZIJUJUGIJKC
+      LMZHEENZLOZDPDULQDUIRSULUMDTABEEDUAUBABEEUHUKCUFUGUCUDUE $.
 
     $( Open intervals are elements of the set of all open intervals.
        (Contributed by Mario Carneiro, 26-Mar-2015.) $)
