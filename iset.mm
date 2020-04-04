@@ -79054,11 +79054,11 @@ $)
   divelunit $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 < B ) ) ->
       ( ( A / B ) e. ( 0 [,] 1 ) <-> A <_ B ) ) $=
     ( cdiv co cc0 c1 cicc wcel cr cle wbr wa clt w3a 0re 1re elicc2i bitri cmul
-    df-3an ledivmul mp3an2 adantlr simpll simprl wne gt0ne0 adantl redivcld jca
-    wb divge0 biantrurd cc recn ad2antrl mulid1d breq2d 3bitr3d syl5bb ) ABCDZE
-    FGDHZVAIHZEVAJKZLZVAFJKZLZAIHZEAJKZLZBIHZEBMKZLZLZABJKZVBVCVDVFNVGEFVAOPQVC
-    VDVFTRVNVFABFSDZJKZVGVOVHVMVFVQUKZVIVHFIHVMVRPAFBUAUBUCVNVEVFVNVCVDVNABVHVI
-    VMUDVJVKVLUEVMBEUFVJBUGUHUIABULUJUMVNVPBAJVNBVKBUNHVJVLBUOUPUQURUSUT $.
+    df-3an wb ledivmul mp3an2 simpll simprl cap gt0ap0 adantl redivclapd divge0
+    adantlr jca biantrurd cc recn ad2antrl mulid1d breq2d 3bitr3d syl5bb ) ABCD
+    ZEFGDHZVAIHZEVAJKZLZVAFJKZLZAIHZEAJKZLZBIHZEBMKZLZLZABJKZVBVCVDVFNVGEFVAOPQ
+    VCVDVFTRVNVFABFSDZJKZVGVOVHVMVFVQUAZVIVHFIHVMVRPAFBUBUCUKVNVEVFVNVCVDVNABVH
+    VIVMUDVJVKVLUEVMBEUFKVJBUGUHUIABUJULUMVNVPBAJVNBVKBUNHVJVLBUOUPUQURUSUT $.
 
   ${
     $( A linear combination of two reals which lies in the interval between
