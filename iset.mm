@@ -78922,17 +78922,6 @@ $)
       VEVHVKVOQVAVBVFVHUCZVCVDVEVHUDVCVDVEVHUEZVGVHUFBCDUGUHBDUIUBVKVMVJUJTVIVA
       VBVEVNPRVAVBVFVHUKVPVQEFGHABDSULULLLMEFGUMEFGUNBHUOUPUQURUSVLUTT $.
 
-    $( Join two open intervals to create a third.  (Contributed by NM,
-       11-Aug-2008.)  (Proof shortened by Mario Carneiro, 16-Jun-2014.) $)
-    ioojoin $p |- ( ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\
-                    ( A < B /\ B < C ) ) ->
-                 ( ( ( A (,) B ) u. { B } ) u. ( B (,) C ) ) = ( A (,) C ) ) $=
-      ( vx vy vz vw cxr wcel w3a clt wbr wa cioo co csn cun unass cico wceq cle
-      snunioo 3expa 3adantl1 adantrl uneq2d df-ioo df-ico xrlttr xrltletr ixxun
-      cv xrlenlt eqtrd syl5eq ) AHIZBHIZCHIZJZABKLZBCKLZMMZABNOZBPZQBCNOZQVCVDV
-      EQZQZACNOZVCVDVERVBVGVCBCSOZQVHVBVFVIVCUSVAVFVITZUTUQURVAVJUPUQURVAVJBCUB
-      UCUDUEUFDEFGABCSNKKUAKNKKDEFUGZDEFUHBGULZUMVKVLBCUIABVLUJUKUNUO $.
-
     $( The class difference of ` RR ` and a closed interval.  (Contributed by
        FL, 18-Jun-2007.) $)
     difreicc $p |- ( ( A e. RR /\ B e. RR ) -> ( RR \ ( A [,] B ) ) =
