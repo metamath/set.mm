@@ -78910,44 +78910,6 @@ $)
       VIVDVJNZBVHQPZVQVRVNVSVHCOPZVDVJVNVSVTGZVBVCVJWARVABCVHSUFTZUGVRVBVNVSVQR
       VAVBVCVJUHVRVNVSVTWBUIBVHUJUKUMUNUOUPUQURVGUSUT $.
 
-    $( The closure of the open end of a right-open real interval.  (Contributed
-       by Mario Carneiro, 16-Jun-2014.) $)
-    snunico $p |- ( ( A e. RR* /\ B e. RR* /\ A <_ B ) ->
-                    ( ( A [,) B ) u. { B } ) = ( A [,] B ) ) $=
-      ( vx vy vz vw cxr wcel cle wbr w3a cico cicc cun csn wceq simp2 syl clt
-      co iccid uneq2d simp1 xrleid df-ico df-icc xrlenlt xrltle 3adant3 adantrd
-      simp3 cv wi xrletr ixxun syl32anc eqtr3d ) AGHZBGHZABIJZKZABLTZBBMTZNZVBB
-      OZNABMTZVAVCVEVBVAUSVCVEPURUSUTQZBUARUBVAURUSUSUTBBIJZVDVFPURUSUTUCVGVGUR
-      USUTUKVAUSVHVGBUDRCDEFABBMMISIILIICDEUECDEUFZBFULZUGVIVJGHZUSUSKVJBSJZVJB
-      IJZVHVKUSVLVMUMUSVJBUHUIUJABVJUNUOUPUQ $.
-
-    $( The closure of the open end of a left-open real interval.  (Contributed
-       by Thierry Arnoux, 28-Mar-2017.) $)
-    snunioc $p |- ( ( A e. RR* /\ B e. RR* /\ A <_ B ) ->
-                    ( { A } u. ( A (,] B ) ) = ( A [,] B ) ) $=
-      ( vx vy vz vw cxr wcel cle wbr w3a cicc co cioc cun csn wceq 3ad2ant1 clt
-      wa iccid uneq1d simp1 simp2 xrleid df-icc df-ioc cv xrltnle xrletr simprr
-      simp3 wi simpl1 simpl3 xrltle syl2anc mpd ex ixxun syl32anc eqtr3d ) AGHZ
-      BGHZABIJZKZAALMZABNMZOZAPZVHOABLMZVFVGVJVHVCVDVGVJQVEAUARUBVFVCVCVDAAIJZV
-      EVIVKQVCVDVEUCZVMVCVDVEUDVCVDVLVEAUERVCVDVEULCDEFAABNLIISILIICDEUFZCDEUGA
-      FUHZUIVNVOABUJVCVCVOGHZKZVLAVOSJZTZAVOIJZVQVSTZVRVTVQVLVRUKWAVCVPVRVTUMVC
-      VCVPVSUNVCVCVPVSUOAVOUPUQURUSUTVAVB $.
-
-    $( The closure of an open real interval.  (Contributed by Paul Chapman,
-       15-Mar-2008.)  (Proof shortened by Mario Carneiro, 16-Jun-2014.) $)
-    prunioo $p |- ( ( A e. RR* /\ B e. RR* /\ A <_ B ) ->
-                    ( ( A (,) B ) u. { A , B } ) = ( A [,] B ) ) $=
-      ( cxr wcel cle wbr w3a cioo co cpr cun cicc wceq simp3 uncom syl5eq oveq2
-      csn c0 syl5eqr clt wo wb xrleloe 3adant3 cico df-pr uneq2i eqtr4i snunioo
-      wa unass uneq1d 3expa 3adantl3 snunico adantr eqtrd iccid 3ad2ant1 eqcomd
-      ex un0 eqtri iooid dfsn2 preq2 uneq12d eqeq12d syl5ibcom jaod sylbid mpd
-      ) ACDZBCDZABEFZGZVPABHIZABJZKZABLIZMZVNVOVPNVQVPABUAFZABMZUBZWBVNVOVPWEUC
-      VPABUDUEVQWCWBWDVQWCWBVQWCUKVTABUFIZBRZKZWAVNVOWCVTWHMZVPVNVOWCWIVNVOWCGZ
-      VTVRARZKZWGKZWHVTVRWKWGKZKWMVSWNVRABUGUHVRWKWGULUIWJWLWFWGWJWLWKVRKWFVRWK
-      OABUJPUMPUNUOVQWHWAMWCABUPUQURVBVQWKAALIZMWDWBVQWOWKVNVOWOWKMVPAUSUTVAWDW
-      KVTWOWAWDWKSWKKZVTWPWKSKWKSWKOWKVCVDWDSVRWKVSWDSAAHIVRAVEABAHQTWDWKAAJVSA
-      VFABAVGPVHTABALQVIVJVKVLVM $.
-
     $( If the upper bound of one open interval is less than or equal to the
        lower bound of the other, the intervals are disjoint.  (Contributed by
        Jeff Hankins, 13-Jul-2009.) $)
