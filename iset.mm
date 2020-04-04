@@ -78807,14 +78807,6 @@ $)
     remulcl syl2anb ) ACDEFZGAHGZCAIJZKZBHGZCBIJZKZABLFZSGZBSGAMBMUBUEKUFHGZCUF
     IJUGTUCUHUAUDABQNABOUFMPR $.
 
-  $( The nonnegative extended reals are closed under multiplication.
-     (Contributed by Mario Carneiro, 26-Aug-2015.) $)
-  ge0xmulcl $p |- ( ( A e. ( 0 [,] +oo ) /\ B e. ( 0 [,] +oo ) ) ->
-                   ( A *e B ) e. ( 0 [,] +oo ) ) $=
-    ( cc0 cpnf cicc co wcel cxr cle wbr wa cxmu elxrge0 xmulcl ad2ant2r xmulge0
-    sylanbrc syl2anb ) ACDEFZGAHGZCAIJZKZBHGZCBIJZKZABLFZSGZBSGAMBMUBUEKUFHGZCU
-    FIJUGTUCUHUAUDABNOABPUFMQR $.
-
   $( The lower bound of a closed interval is a member of it.  (Contributed by
      Paul Chapman, 26-Nov-2007.)  (Revised by FL, 29-May-2014.)  (Revised by
      Mario Carneiro, 9-Sep-2015.) $)
