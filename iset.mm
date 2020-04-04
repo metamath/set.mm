@@ -78724,10 +78724,11 @@ $)
        (Contributed by NM, 7-Feb-2007.)  (Revised by Mario Carneiro,
        16-Nov-2013.) $)
     ioof $p |- (,) : ( RR* X. RR* ) --> ~P RR $=
-      ( vx vz vy cv clt wbr wa cxr crab cr cpw wcel wral cxp cioo wf iooval wss
-      co ioossre ovex elpw mpbir syl6eqelr rgen2a df-ioo fmpt2 mpbi ) ADZBDZEFU
-      JCDZEFGBHIZJKZLZCHMAHMHHNUMOPUNACHUIHLUKHLGULUIUKOSZUMBUIUKQUOUMLUOJRUIUK
-      TUOJUIUKOUAUBUCUDUEACHHULUMOACBUFUGUH $.
+      ( vx vz vy cv clt wbr wa cxr crab cr cpw wcel wral cxp cioo wf iooval cvv
+      co vex wss ioossreg cop cfv df-ov iooex opex fvex eqeltri sylibr eqeltrrd
+      elpw rgen2a df-ioo fmpt2 mpbi ) ADZBDZEFURCDZEFGBHIZJKZLZCHMAHMHHNVAOPVBA
+      CHUQHLUSHLGZUQUSOSZUTVABUQUSQVCVDJUAVDVALUQUSUBVDJVDUQUSUCZOUDRUQUSOUEVEO
+      RRUFUQUSATCTUGUHUIULUJUKUMACHHUTVAOACBUNUOUP $.
 
     $( The set of closed intervals of extended reals maps to subsets of
        extended reals.  (Contributed by FL, 14-Jun-2007.)  (Revised by Mario
