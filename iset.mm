@@ -78665,8 +78665,11 @@ $)
        (Contributed by Thierry Arnoux, 26-Sep-2017.) $)
     ioossioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A <_ C /\ D <_ B ) ) -> ( C (,) D ) C_ ( A (,) B ) ) $=
-      ( va vb vx vw cioo clt cle df-ioo cv xrlelttr xrltletr ixxss12 ) EFGHABCD
-      IJJJJIKKEFGLZQACHMZNRDBOP $.
+      ( va vb vx vw cxr wcel wa cle wbr cioo co wss simpl lerelxr brel clt cv
+      simprd ad2antrl simpld ad2antll simpr df-ioo xrlelttr xrltletr syl121anc
+      ixxss12g ) AIJZBIJZKZACLMZDBLMZKZKUNCIJZDIJZUQCDNOABNOPUNUQQUOURUNUPUOULU
+      RACIILRSUBUCUPUSUNUOUPUSUMDBIILRSUDUEUNUQUFEFGHABCDNTTTTNLLEFGUGZUTACHUAZ
+      UHVADBUIUKUJ $.
   $}
 
   ${
