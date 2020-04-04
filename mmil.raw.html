@@ -1275,6 +1275,11 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+<TD>rabn0</TD>
+<TD>~ rabn0m , ~ rabn0r </TD>
+</TR>
+
+<TR>
 <TD>r19.45zv</TD>
 <TD>~ r19.45mv </TD>
 </TR>
@@ -1625,6 +1630,11 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
+<TD>f0cli</TD>
+<TD>~ ffvelrn </TD>
+</TR>
+
+<TR>
 <TD>funiunfv</TD>
 <TD>~ fniunfv , ~ funiunfvdm </TD>
 </TR>
@@ -1664,6 +1674,11 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 <TD>ovex</TD>
 <TD>~ fnovex </TD>
 <TD>Sometimes or ~ fvexg or ~ relrnfvex may work.</TD>
+</TR>
+
+<TR>
+<TD>fnov</TD>
+<TD>~ fnovim </TD>
 </TR>
 
 <TR>
@@ -3344,6 +3359,224 @@ xmulcld , xadd4d</TD>
 because disjunctions can arise from ~ elxr rather than excluded
 middle. However, ` -e ` , ` +e ` , and ` *e ` are lightly used in
 set.mm, and the set.mm proofs would require significant changes.</TD>
+</TR>
+
+<TR>
+<TD>ixxub , ixxlb</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>iccen</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>supicc , supiccub , supicclub , supicclub2</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ixxssxr</TD>
+<TD>~ ixxssxrg </TD>
+</TR>
+
+<TR>
+<TD>elixx3g</TD>
+<TD>~ elixx1 </TD>
+</TR>
+
+<TR>
+<TD>ixxun , ixxin</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ixxss1</TD>
+<TD>~ ixxss1g </TD>
+</TR>
+
+<TR>
+<TD>ixxss2</TD>
+<TD>~ ixxss2g </TD>
+</TR>
+
+<TR>
+<TD>ixxss12</TD>
+<TD>~ ixxss12g </TD>
+</TR>
+
+<TR>
+<TD>ioo0</TD>
+<TD><I>none</I></TD>
+<TD>Once we have qbtwnxr , it may be possible to rearrange
+the logic from set.mm so that this proof works (via ~ rabeq0 ,
+~ ralnex , and ~ xrlenlt perhaps).</TD>
+</TR>
+
+<TR>
+<TD>ioon0</TD>
+<TD><I>none</I></TD>
+<TD>Presumably non-empty would need to be changed to inhabited,
+see also discussion at ioo0</TD>
+</TR>
+
+<TR>
+<TD>iooid</TD>
+<TD>~ iooidg </TD>
+</TR>
+
+<TR>
+<TD>ndmioo</TD>
+<TD><I>none</I></TD>
+<TD>See discussion at ndmov but set.mm uses excluded middle,
+both in proving this and in using it.</TD>
+</TR>
+
+<TR>
+<TD>elioo3g</TD>
+<TD>~ elioo1 </TD>
+</TR>
+
+<TR>
+<TD>elioore</TD>
+<TD>~ eliooreg </TD>
+</TR>
+
+<TR>
+<TD>lbioo , ubioo</TD>
+<TD>~ lbioog , ~ ubioog </TD>
+</TR>
+
+<TR>
+<TD>iooin</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>iooss1</TD>
+<TD>~ iooss1g</TD>
+</TR>
+
+<TR>
+<TD>iooss2</TD>
+<TD>~ iooss2g</TD>
+</TR>
+
+<TR>
+<TD>ico0 , ioc0</TD>
+<TD><I>none</I></TD>
+<TD>Possibly similar to ioo0 ; see discussion there.</TD>
+</TR>
+
+<TR>
+<TD>icc0</TD>
+<TD>~ icc0r </TD>
+</TR>
+
+<TR>
+<TD>eliooxr</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>eliooord</TD>
+<TD>~ elioo2 </TD>
+</TR>
+
+<TR>
+<TD>elioo4g</TD>
+<TD>~ elioo2 </TD>
+</TR>
+
+<TR>
+<TD>ioossre</TD>
+<TD>~ ioossreg </TD>
+</TR>
+
+<TR>
+<TD>iccss</TD>
+<TD>~ iccssg </TD>
+<TD>iccss should be provable using ~ lerelxr and
+~ brel </TD>
+</TR>
+
+<TR>
+<TD>icossico</TD>
+<TD>~ icossicog </TD>
+<TD>icossico should be provable using ~ ltrelxr , ~ lerelxr , and
+~ brel </TD>
+</TR>
+
+<TR>
+<TD>iccss2</TD>
+<TD>~ iccss2g </TD>
+</TR>
+
+<TR>
+<TD>iccssioo2</TD>
+<TD>~ iccssioo2g </TD>
+</TR>
+
+<TR>
+<TD>iccssico2</TD>
+<TD>~ iccssico2g </TD>
+</TR>
+
+<TR>
+<TD>iccssxr</TD>
+<TD>~ iccssxrg </TD>
+</TR>
+
+<TR>
+<TD>iocssxr</TD>
+<TD>~ iocssxrg </TD>
+</TR>
+
+<TR>
+<TD>icossxr</TD>
+<TD>~ icossxrg </TD>
+</TR>
+
+<TR>
+<TD>ioorebas</TD>
+<TD>~ ioorebasg </TD>
+</TR>
+
+<TR>
+<TD>ge0xaddcl , ge0xmulcl</TD>
+<TD><I>none</I></TD>
+<TD>Rely on xaddcl and xmulcl ; see discussion in this list
+for those theorems.</TD>
+</TR>
+
+<TR>
+<TD>icoun , snunioo , snunico , snunioc , prunioo</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ioojoin</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>difreicc</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>iccsplit</TD>
+<TD><I>none</I></TD>
+<TD>This depends, apparently in an essential way, on real number
+trichotomy.</TD>
+</TR>
+
+<TR>
+<TD>xov1plusxeqvd</TD>
+<TD><I>none</I></TD>
+<TD>This presumably could be proved if not equal is changed
+to apart, but is lightly used in set.mm.</TD>
 </TR>
 
 </TABLE>
