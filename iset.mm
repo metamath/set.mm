@@ -78655,8 +78655,11 @@ $)
        (Contributed by Thierry Arnoux, 29-Mar-2017.) $)
     icossioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A < C /\ D <_ B ) ) -> ( C [,) D ) C_ ( A (,) B ) ) $=
-      ( va vb vx vw cico clt cle cioo df-ioo df-ico cv xrltletr ixxss12 ) EFGHA
-      BCDIJJKJLJKEFGMEFGNACHOZPRDBPQ $.
+      ( va vb vx vw cxr wcel wa clt wbr cle cico co cioo wss brel xrltletr cv
+      simpl ltrelxr simprd ad2antrl lerelxr simpld ad2antll simpr df-ioo df-ico
+      ixxss12g syl121anc ) AIJZBIJZKZACLMZDBNMZKZKUPCIJZDIJZUSCDOPABQPRUPUSUBUQ
+      UTUPURUQUNUTACIILUCSUDUEURVAUPUQURVAUODBIINUFSUGUHUPUSUIEFGHABCDOLLNLQLNE
+      FGUJEFGUKACHUAZTVBDBTULUM $.
 
     $( Condition for an open interval to be a subset of an open interval.
        (Contributed by Thierry Arnoux, 26-Sep-2017.) $)
