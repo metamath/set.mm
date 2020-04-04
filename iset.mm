@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Apr-2020
+$( iset.mm - Version of 4-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -78754,13 +78754,10 @@ $)
       LMZHEENZLOZDPDULQDUIRSULUMDTABEEDUAUBABEEUHUKCUFUGUCUDUE $.
 
     $( Open intervals are elements of the set of all open intervals.
-       (Contributed by Mario Carneiro, 26-Mar-2015.) $)
-    ioorebas $p |- ( A (,) B ) e. ran (,) $=
-      ( vx cioo co crn wcel c0 wceq id cc0 iooid cxr cxp wfn cr cpw 0xr fnovrn
-      wf ioof ffn ax-mp mp3an eqeltrri syl6eqel wne cv wex n0 wa eliooxr mp3an1
-      syl exlimiv sylbi pm2.61ine ) ABDEZDFZGZURHURHIZURHUSVAJKKDEZHUSKLDMMNZOZ
-      KMGZVEVBUSGVCPQZDTVDUAVCVFDUBUCZRRMMKKDSUDUEUFURHUGCUHZURGZCUIUTCURUJVIUT
-      CVIAMGZBMGZUKUTVHABULVDVJVKUTVGMMABDSUMUNUOUPUQ $.
+       (Contributed by Jim Kingdon, 4-Apr-2020.) $)
+    ioorebasg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,) B ) e. ran (,) ) $=
+      ( cioo cxr cxp wfn wcel co crn cr cpw wf ioof ffn ax-mp fnovrn mp3an1 ) C
+      DDEZFZADGBDGABCHCIGRJKZCLSMRTCNODDABCPQ $.
   $}
 
   $( The predicate "is a nonnegative real".  (Contributed by Jeff Madsen,
