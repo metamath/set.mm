@@ -54217,11 +54217,12 @@ $)
     $d F f x y $.
     $( Define a function ` recs ( F ) ` on ` On ` , the class of ordinal
        numbers, by transfinite recursion given a rule ` F ` which sets the next
-       value given all values so far.  If we were assuming the law of the
-       excluded middle, we would then build on top of that a form of recursion
-       which has separate cases for the empty set, successor ordinals, and
-       limit ordinals.  This version allows the update rule to use _all_
-       previous values, which is why it is described as "strong".
+       value given all values so far.  See ~ df-irdg for more details on why
+       this definition is desirable.  Unlike ~ df-irdg which restricts the
+       update rule to use only the previous value, this version allows the
+       update rule to use _all_ previous values, which is why it is described
+       as "strong", although it is actually more primitive.  See ~ tfri1d and
+       ~ tfri2d for the primary contract of this definition.
 
        (Contributed by Stefan O'Rear, 18-Jan-2015.) $)
     df-recs $a |- recs ( F ) = U. { f | E. x e. On ( f Fn x /\
