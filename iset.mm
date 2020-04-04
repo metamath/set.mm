@@ -78924,30 +78924,6 @@ $)
   $}
 
   ${
-    $d A x $.  $d B x $.  $d C x $.
-    $( Split a closed interval into the union of two closed intervals.
-       (Contributed by Jeff Madsen, 2-Sep-2009.) $)
-    iccsplit $p |- ( ( A e. RR /\ B e. RR /\ C e. ( A [,] B ) ) ->
-                        ( A [,] B ) = ( ( A [,] C ) u. ( C [,] B ) ) ) $=
-      ( cr wcel cicc co w3a cle wbr wa 3impia simp1 a1i simp2 3ad2ant3 3ad2ant2
-      wi elicc2 wb vx cun cv wo clt simplr1 simplr2 simpr1 iccssre sseld adantr
-      ltle syl2anc 3jca orcd simpr simplr3 olcd ltlecasei ex simp1r simp3 letrd
-      imp 3exp sylbid 3jcad simp1l jaod impbid 3adant3 imdistani adantlr ancoms
-      3impa adantll orbi12d syl 3bitr4d elun syl6bbr eqrdv ) ADEZBDEZCABFGZEZHZ
-      UAWEACFGZCBFGZUBZWGUAUCZWEEZWKWHEZWKWIEZUDZWKWJEWGWKDEZAWKIJZWKBIJZHZWPWQ
-      WKCIJZHZWPCWKIJZWRHZUDZWLWOWGWSXDWGWSXDWGWSKZXDWKCXEWKCUEJZKZXAXCXGWPWQWT
-      WPWQWRWGXFUFWPWQWRWGXFUGXEXFWTXEWPCDEZXFWTRWGWPWQWRUHZWGXHWSWCWDWFXHWCWDK
-      ZWEDCABUIUJZLUKZWKCULUMVDUNUOXEXBKZXCXAXMWPXBWRWPWQWRWGXBUFXEXBUPWPWQWRWG
-      XBUQUNURXIXLUSUTWGXAWSXCWGXAWPWQWRXAWPRWGWPWQWTMZNXAWQRWGWPWQWTONWCWDWFXA
-      WRRZXJWFXHACIJZCBIJZHZXOABCSZXJXRXAWRXJXRXAHWKCBXAXJWPXRXNPXRXJXHXAXHXPXQ
-      MZQWCWDXRXAVAXAXJWTXRWPWQWTVBPXRXJXQXAXHXPXQVBQVCVEVFLVGWGXCWPWQWRXCWPRWG
-      WPXBWRMZNWCWDWFXCWQRZXJWFXRYBXSXJXRXCWQXJXRXCHACWKWCWDXRXCVHXRXJXHXCXTQXC
-      XJWPXRYAPXRXJXPXCXHXPXQOQXCXJXBXRWPXBWROPVCVEVFLXCWRRWGWPXBWRVBNVGVIVJWCW
-      DWLWSTWFABWKSVKWGXJXHKZWOXDTWCWDWFYCXJWFXHXKVLVOYCWMXAWNXCWCXHWMXATWDACWK
-      SVMWDXHWNXCTZWCXHWDYDCBWKSVNVPVQVRVSWKWHWIVTWAWB $.
-  $}
-
-  ${
     iccshftr.1 $e |- ( A + R ) = C $.
     iccshftr.2 $e |- ( B + R ) = D $.
     $( Membership in a shifted interval.  (Contributed by Jeff Madsen,
