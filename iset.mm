@@ -78610,10 +78610,9 @@ $)
       ( vx vy vz clt cle cioc df-ioc ixxssxrg ) CDEABFGHCDEIJ $.
 
     $( A closed-below, open-above interval is a subset of the extended reals.
-       (Contributed by FL, 29-May-2014.)  (Revised by Mario Carneiro,
-       4-Jul-2014.) $)
-    icossxr $p |- ( A [,) B ) C_ RR* $=
-      ( vx vy vz cle clt cico df-ico ixxssxr ) CDEABFGHCDEIJ $.
+       (Contributed by Jim Kingdon, 3-Apr-2020.) $)
+    icossxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A [,) B ) C_ RR* ) $=
+      ( vx vy vz cle clt cico df-ico ixxssxrg ) CDEABFGHCDEIJ $.
 
     $( An open interval is a subset of its closure.  (Contributed by Paul
        Chapman, 18-Oct-2007.) $)
