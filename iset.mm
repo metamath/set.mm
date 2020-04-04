@@ -78675,7 +78675,9 @@ $)
   ${
     $d A y $.  $d B x y $.  $d S x y $.
     $( A nonempty subset of a closed real interval satisfies the conditions for
-       the existence of its supremum (see ~ suprcl ).  (Contributed by Paul
+       the existence of its supremum.  To be useful without excluded middle,
+       we'll probably need to change not equal to apart, and perhaps make other
+       changes, but the theorem does hold as stated here.  (Contributed by Paul
        Chapman, 21-Jan-2008.) $)
     iccsupr $p |- ( ( ( A e. RR /\ B e. RR ) /\ S C_ ( A [,] B ) /\ C e. S ) ->
                    ( S C_ RR /\ S =/= (/) /\ E. x e. RR A. y e. S y <_ x ) ) $=
