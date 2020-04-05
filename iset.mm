@@ -78127,12 +78127,26 @@ $)
     ixxex $p |- O e. _V $=
       ( cxr cxp cpw xrex xpex pwex wf wss ixxf fssxp ax-mp ssexi ) FHHIZHJZIZTU
       AHHKKLHKMLTUAFNFUBOABCDEFGPTUAFQRS $.
+  $}
 
+  ${
+    $d x y z R $.  $d x y z S $.  $d x y z O $.  $d x y z A $.  $d x y z B $.
+    ixxssxr.1 $e |- O = ( x e. RR* , y e. RR* |->
+                   { z e. RR* | ( x R z /\ z S y ) } ) $.
     $( The set of intervals of extended reals maps to subsets of extended
-       reals.  (Contributed by Jim Kingdon, 28-Mar-2020.) $)
-    ixxssxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A O B ) C_ RR* ) $=
-      ( cxr wcel wa co cpw ixxf fovcl elpwid ) DJKEJKLDEHMJDEJNJJHABCFGHIOPQ $.
+       reals.  (Contributed by Mario Carneiro, 4-Jul-2014.) $)
+    ixxssxr $p |- ( A O B ) C_ RR* $=
+      ( co cxr wcel wa cv wbr crab elmpt2cl cpw ixxf fovcl elpwid sseld mpcom
+      ssriv ) ADEHJZKDKLEKLMZANZUELUGKLABKKUGCNZFOUHBNGOMCKPDEHUGIQUFUEKUGUFUEK
+      DEKRKKHABCFGHISTUAUBUCUD $.
+  $}
 
+  ${
+    $d b w x y z A $.  $d w x y z C $.  $d w x y z D $.  $d b w x O $.
+    $d w Q $.  $d b w x y z B $.  $d b w P $.  $d x y z R $.  $d x y z S $.
+    $d x y z T $.  $d x y z U $.  $d w V $.  $d w W $.  $d w X $.
+    ixxssixx.1 $e |- O = ( x e. RR* , y e. RR* |->
+                   { z e. RR* | ( x R z /\ z S y ) } ) $.
     ${
       ixx.2 $e |- P = ( x e. RR* , y e. RR* |->
                        { z e. RR* | ( x T z /\ z U y ) } ) $.
@@ -78609,20 +78623,22 @@ $)
       ( vx cr wcel wa cicc co cv w3a cle wbr elicc2 biimp3a simp1d 3expia ssrdv
       ) ADEZBDEZFCABGHZDRSCIZTEZUADEZRSUBJUCAUAKLZUABKLZRSUBUCUDUEJABUAMNOPQ $.
 
-    $( A closed interval is a set of extended reals.  (Contributed by Jim
-       Kingdon, 2-Apr-2020.) $)
-    iccssxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A [,] B ) C_ RR* ) $=
-      ( vx vy vz cle cicc df-icc ixxssxrg ) CDEABFFGCDEHI $.
+    $( A closed interval is a set of extended reals.  (Contributed by FL,
+       28-Jul-2008.)  (Revised by Mario Carneiro, 4-Jul-2014.) $)
+    iccssxr $p |- ( A [,] B ) C_ RR* $=
+      ( vx vy vz cle cicc df-icc ixxssxr ) CDEABFFGCDEHI $.
 
     $( An open-below, closed-above interval is a subset of the extended reals.
-       (Contributed by Jim Kingdon, 3-Apr-2020.) $)
-    iocssxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,] B ) C_ RR* ) $=
-      ( vx vy vz clt cle cioc df-ioc ixxssxrg ) CDEABFGHCDEIJ $.
+       (Contributed by FL, 29-May-2014.)  (Revised by Mario Carneiro,
+       4-Jul-2014.) $)
+    iocssxr $p |- ( A (,] B ) C_ RR* $=
+      ( vx vy vz clt cle cioc df-ioc ixxssxr ) CDEABFGHCDEIJ $.
 
     $( A closed-below, open-above interval is a subset of the extended reals.
-       (Contributed by Jim Kingdon, 3-Apr-2020.) $)
-    icossxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A [,) B ) C_ RR* ) $=
-      ( vx vy vz cle clt cico df-ico ixxssxrg ) CDEABFGHCDEIJ $.
+       (Contributed by FL, 29-May-2014.)  (Revised by Mario Carneiro,
+       4-Jul-2014.) $)
+    icossxr $p |- ( A [,) B ) C_ RR* $=
+      ( vx vy vz cle clt cico df-ico ixxssxr ) CDEABFGHCDEIJ $.
 
     $( An open interval is a subset of its closure.  (Contributed by Paul
        Chapman, 18-Oct-2007.) $)
