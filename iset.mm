@@ -78130,16 +78130,18 @@ $)
   $}
 
   ${
-    $d x y z R $.  $d x y z S $.  $d x y z O $.  $d x y z A $.  $d x y z B $.
-    $d x y z C $.
+    $d x y z R $.  $d x y z S $.  $d x y z A $.  $d x y z B $.  $d x y z C $.
     ixxssxr.1 $e |- O = ( x e. RR* , y e. RR* |->
                    { z e. RR* | ( x R z /\ z S y ) } ) $.
-    $( The set of intervals of extended reals maps to subsets of extended
-       reals.  (Contributed by Mario Carneiro, 4-Jul-2014.) $)
-    ixxssxr $p |- ( A O B ) C_ RR* $=
-      ( co cxr wcel wa cv wbr crab elmpt2cl cpw ixxf fovcl elpwid sseld mpcom
-      ssriv ) ADEHJZKDKLEKLMZANZUELUGKLABKKUGCNZFOUHBNGOMCKPDEHUGIQUFUEKUGUFUEK
-      DEKRKKHABCFGHISTUAUBUCUD $.
+    ${
+      $d x y z O $.
+      $( The set of intervals of extended reals maps to subsets of extended
+         reals.  (Contributed by Mario Carneiro, 4-Jul-2014.) $)
+      ixxssxr $p |- ( A O B ) C_ RR* $=
+        ( co cxr wcel wa cv wbr crab elmpt2cl cpw ixxf fovcl elpwid sseld mpcom
+        ssriv ) ADEHJZKDKLEKLMZANZUELUGKLABKKUGCNZFOUHBNGOMCKPDEHUGIQUFUEKUGUFU
+        EKDEKRKKHABCFGHISTUAUBUCUD $.
+    $}
 
     $( Membership in a set of open intervals of extended reals.  We use the
        fact that an operation's value is empty outside of its domain to show
@@ -78198,16 +78200,17 @@ $)
       ixxss1.3 $e |- ( ( A e. RR* /\ B e. RR* /\ w e. RR* ) ->
                        ( ( A W B /\ B T w ) -> A R w ) ) $.
       $( Subset relationship for intervals of extended reals.  (Contributed by
-         Jim Kingdon, 29-Mar-2020.) $)
-      ixxss1g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ A W B ) ) ->
+         Mario Carneiro, 3-Nov-2013.)  (Revised by Mario Carneiro,
+         28-Apr-2015.) $)
+      ixxss1 $p |- ( ( A e. RR* /\ A W B ) ->
                    ( B P C ) C_ ( A O C ) ) $=
-        ( cxr wcel wa wbr co cv w3a simpr simpllr simplrl elixx1 syl2anc simp1d
-        wb mpbid simplrr simp2d wi simplll syl3anc mp2and simp3d mpbir3and ex
-        ssrdv ) EQRZFQRZSZGQRZEFMTZSZSZDFGHUAZEGLUAZVHDUBZVIRZVKVJRZVHVLSZVMVKQ
-        RZEVKITZVKGJTZVNVOFVKKTZVQVNVLVOVRVQUCZVHVLUDVNVCVEVLVSUJVBVCVGVLUEZVDV
-        EVFVLUFZABCFGVKKJHOUGUHUKZUIZVNVFVRVPVDVEVFVLULVNVOVRVQWBUMVNVBVCVOVFVR
-        SVPUNVBVCVGVLUOZVTWCPUPUQVNVOVRVQWBURVNVBVEVMVOVPVQUCUJWDWAABCEGVKIJLNU
-        GUHUSUTVA $.
+        ( cxr wcel wbr wa co cv w3a elixx3g simplbi adantl simp3d simplr simpld
+        simprbi wi simpll simp1d syl3anc mp2and simprd wb simp2d elixx1 syl2anc
+        mpbir3and ex ssrdv ) EQRZEFMSZTZDFGHUAZEGLUAZVFDUBZVGRZVIVHRZVFVJTZVKVI
+        QRZEVIISZVIGJSZVLFQRZGQRZVMVJVPVQVMUCZVFVJVRFVIKSZVOTZABCFGVIKJHOUDZUEU
+        FZUGZVLVEVSVNVDVEVJUHVLVSVOVJVTVFVJVRVTWAUJUFZUIVLVDVPVMVEVSTVNUKVDVEVJ
+        ULZVLVPVQVMWBUMWCPUNUOVLVSVOWDUPVLVDVQVKVMVNVOUCUQWEVLVPVQVMWBURABCEGVI
+        IJLNUSUTVAVBVC $.
     $}
 
     ${
@@ -78308,11 +78311,11 @@ $)
       AUPMUMUNUQUPEUQMEUQBCUEUKUFUGUSMUHUIULUJ $.
 
     $( Subset relationship for open intervals of extended reals.  (Contributed
-       by Jim Kingdon, 30-Mar-2020.) $)
-    iooss1g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ A <_ B ) ) ->
-        ( B (,) C ) C_ ( A (,) C ) ) $=
-      ( vx vy vz vw cioo clt cle df-ioo cv xrlelttr ixxss1g ) DEFGABCHIIIHJDEFK
-      ZOABGLMN $.
+       by NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 20-Feb-2015.) $)
+    iooss1 $p |- ( ( A e. RR* /\ A <_ B ) ->
+                 ( B (,) C ) C_ ( A (,) C ) ) $=
+      ( vx vy vz vw cioo clt cle df-ioo cv xrlelttr ixxss1 ) DEFGABCHIIIHJDEFKZ
+      OABGLMN $.
 
     $( Subset relationship for open intervals of extended reals.  (Contributed
        by NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
@@ -78955,12 +78958,13 @@ $)
        Jeff Hankins, 13-Jul-2009.) $)
     ioodisj $p |- ( ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ D e. RR* ) )
      /\ B <_ C ) -> ( ( A (,) B ) i^i ( C (,) D ) ) = (/) ) $=
-      ( vx vy vz vw cxr wcel wa cle cioo co cin c0 wss wceq cicc syl wbr syl6ss
-      simpllr simplrl simplrr simpr iooss1g syl22anc ioossicc sslin simplll clt
-      df-ioo df-icc cv xrlenlt ixxdisj syl3anc sseqtrd ss0 ) AIJZBIJZKZCIJZDIJZ
-      KZKZBCLUAZKZABMNZCDMNZOZPQVLPRVIVLVJBDSNZOZPVIVKVMQVLVNQVIVKBDMNZVMVIVBVD
-      VEVHVKVOQVAVBVFVHUCZVCVDVEVHUDVCVDVEVHUEZVGVHUFBCDUGUHBDUIUBVKVMVJUJTVIVA
-      VBVEVNPRVAVBVFVHUKVPVQEFGHABDSULULLLMEFGUMEFGUNBHUOUPUQURUSVLUTT $.
+      ( vx vy vz vw cxr wcel wa cle cioo co cin c0 wss wceq cicc syl wbr iooss1
+      simpllr sylancom ioossicc syl6ss sslin simplll simplrr clt df-ioo xrlenlt
+      df-icc cv ixxdisj syl3anc sseqtrd ss0 ) AIJZBIJZKZCIJZDIJZKZKZBCLUAZKZABM
+      NZCDMNZOZPQVJPRVGVJVHBDSNZOZPVGVIVKQVJVLQVGVIBDMNZVKVEVFUTVIVMQUSUTVDVFUC
+      ZBCDUBUDBDUEUFVIVKVHUGTVGUSUTVCVLPRUSUTVDVFUHVNVAVBVCVFUIEFGHABDSUJUJLLME
+      FGUKEFGUMBHUNULUOUPUQVJURT $.
+
   $}
 
   ${
