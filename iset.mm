@@ -78219,16 +78219,17 @@ $)
       ixxss2.3 $e |- ( ( w e. RR* /\ B e. RR* /\ C e. RR* ) ->
                        ( ( w T B /\ B W C ) -> w S C ) ) $.
       $( Subset relationship for intervals of extended reals.  (Contributed by
-         Jim Kingdon, 29-Mar-2020.) $)
-      ixxss2g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ B W C ) ) ->
+         Mario Carneiro, 3-Nov-2013.)  (Revised by Mario Carneiro,
+         28-Apr-2015.) $)
+      ixxss2 $p |- ( ( C e. RR* /\ B W C ) ->
                    ( A P B ) C_ ( A O C ) ) $=
-        ( cxr wcel wa wbr co cv w3a simpr simplll simpllr elixx1 syl2anc simp1d
-        wb mpbid simp2d simp3d simplrr wi simplrl syl3anc mp2and mpbir3and ex
-        ssrdv ) EQRZFQRZSZGQRZFGMTZSZSZDEFHUAZEGLUAZVHDUBZVIRZVKVJRZVHVLSZVMVKQ
-        RZEVKITZVKGJTZVNVOVPVKFKTZVNVLVOVPVRUCZVHVLUDVNVBVCVLVSUJVBVCVGVLUEZVBV
-        CVGVLUFZABCEFVKIKHOUGUHUKZUIZVNVOVPVRWBULVNVRVFVQVNVOVPVRWBUMVDVEVFVLUN
-        VNVOVCVEVRVFSVQUOWCWAVDVEVFVLUPZPUQURVNVBVEVMVOVPVQUCUJVTWDABCEGVKIJLNU
-        GUHUSUTVA $.
+        ( cxr wcel wbr wa co cv w3a elixx3g simplbi adantl simp3d simpld simprd
+        simprbi simplr wi simp2d simpll syl3anc mp2and wb simp1d elixx1 syl2anc
+        mpbir3and ex ssrdv ) GQRZFGMSZTZDEFHUAZEGLUAZVFDUBZVGRZVIVHRZVFVJTZVKVI
+        QRZEVIISZVIGJSZVLEQRZFQRZVMVJVPVQVMUCZVFVJVRVNVIFKSZTZABCEFVIIKHOUDZUEU
+        FZUGZVLVNVSVJVTVFVJVRVTWAUJUFZUHVLVSVEVOVLVNVSWDUIVDVEVJUKVLVMVQVDVSVET
+        VOULWCVLVPVQVMWBUMVDVEVJUNZPUOUPVLVPVDVKVMVNVOUCUQVLVPVQVMWBURWEABCEGVI
+        IJLNUSUTVAVBVC $.
     $}
 
     ${
@@ -78319,10 +78320,10 @@ $)
 
     $( Subset relationship for open intervals of extended reals.  (Contributed
        by NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
-    iooss2g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ B <_ C ) ) ->
+    iooss2 $p |- ( ( C e. RR* /\ B <_ C ) ->
                  ( A (,) B ) C_ ( A (,) C ) ) $=
-      ( vx vy vz vw cioo clt cle df-ioo cv xrltletr ixxss2g ) DEFGABCHIIIHJDEFK
-      ZOGLBCMN $.
+      ( vx vy vz vw cioo clt cle df-ioo cv xrltletr ixxss2 ) DEFGABCHIIIHJDEFKZ
+      OGLBCMN $.
 
     $( Value of the open-below, closed-above interval function.  (Contributed
        by NM, 24-Dec-2006.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
