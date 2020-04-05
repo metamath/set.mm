@@ -78240,18 +78240,18 @@ $)
       ixxss12.4 $e |- ( ( w e. RR* /\ D e. RR* /\ B e. RR* ) ->
                         ( ( w U D /\ D X B ) -> w S B ) ) $.
       $( Subset relationship for intervals of extended reals.  (Contributed by
-         Jim Kingdon, 29-Mar-2020.) $)
-      ixxss12g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
-          ( C e. RR* /\ D e. RR* ) /\ ( A W C /\ D X B ) ) ->
-          ( C P D ) C_ ( A O B ) ) $=
-        ( cxr wcel wa wbr w3a co cv simpr simpl2l simpl2r elixx1 syl2anc simp1d
-        wb mpbid simpl3l simp2d simpl1l syl3anc mp2and simp3d simpl3r mpbir3and
-        wi simpl1r ex ssrdv ) EUAUBZFUAUBZUCZGUAUBZHUAUBZUCZEGOUDZHFPUDZUCZUEZD
-        GHIUFZEFNUFZVQDUGZVRUBZVTVSUBZVQWAUCZWBVTUAUBZEVTJUDZVTFKUDZWCWDGVTLUDZ
-        VTHMUDZWCWAWDWGWHUEZVQWAUHWCVKVLWAWIUNVKVLVJVPWAUIZVKVLVJVPWAUJZABCGHVT
-        LMIRUKULUOZUMZWCVNWGWEVNVOVJVMWAUPWCWDWGWHWLUQWCVHVKWDVNWGUCWEVDVHVIVMV
-        PWAURZWJWMSUSUTWCWHVOWFWCWDWGWHWLVAVNVOVJVMWAVBWCWDVLVIWHVOUCWFVDWMWKVH
-        VIVMVPWAVEZTUSUTWCVHVIWBWDWEWFUEUNWNWOABCEFVTJKNQUKULVCVFVG $.
+         Mario Carneiro, 20-Feb-2015.)  (Revised by Mario Carneiro,
+         28-Apr-2015.) $)
+      ixxss12 $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( A W C /\ D X B ) ) ->
+        ( C P D ) C_ ( A O B ) ) $=
+        ( cxr wa wbr co cv elixx3g simplbi adantl simp3d simplrl simprbi simpld
+        wcel w3a wi simplll simp1d syl3anc mp2and simprd simplrr simp2d simpllr
+        wb elixx1 ad2antrr mpbir3and ex ssrdv ) EUAUMZFUAUMZUBZEGOUCZHFPUCZUBZU
+        BZDGHIUDZEFNUDZVPDUEZVQUMZVSVRUMZVPVTUBZWAVSUAUMZEVSJUCZVSFKUCZWBGUAUMZ
+        HUAUMZWCVTWFWGWCUNZVPVTWHGVSLUCZVSHMUCZUBZABCGHVSLMIRUFZUGUHZUIZWBVMWIW
+        DVLVMVNVTUJWBWIWJVTWKVPVTWHWKWLUKUHZULWBVJWFWCVMWIUBWDUOVJVKVOVTUPWBWFW
+        GWCWMUQWNSURUSWBWJVNWEWBWIWJWOUTVLVMVNVTVAWBWCWGVKWJVNUBWEUOWNWBWFWGWCW
+        MVBVJVKVOVTVCTURUSVLWAWCWDWEUNVDVOVTABCEFVSJKNQVEVFVGVHVI $.
     $}
   $}
 
@@ -78529,62 +78529,55 @@ $)
   ${
     $d w x y z A $.  $d w x y z B $.  $d w x y z C $.  $d w x y z D $.
     $( Condition for a closed interval to be a subset of another closed
-       interval.  (Contributed by Jim Kingdon, 31-Mar-2020.) $)
-    iccssg $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) /\
+       interval.  (Contributed by Jeff Madsen, 2-Sep-2009.)  (Revised by Mario
+       Carneiro, 20-Feb-2015.) $)
+    iccss $p |- ( ( ( A e. RR /\ B e. RR ) /\
                     ( A <_ C /\ D <_ B ) ) -> ( C [,] D ) C_ ( A [,] B ) ) $=
-      ( vx vy vz vw cr wcel wa cxr cle wbr cicc co wss rexr anim12i xrletr id
-      df-icc cv ixxss12g syl3an ) AIJZBIJZKALJZBLJZKCIJZDIJZKCLJZDLJZKACMNDBMNK
-      ZUNCDOPABOPQUFUHUGUIARBRSUJULUKUMCRDRSUNUAEFGHABCDOMMMMOMMEFGUBZUOACHUCZT
-      UPDBTUDUE $.
+      ( vx vy vz vw cr wcel wa cxr cle wbr cicc co wss rexr anim12i xrletr cv
+      df-icc ixxss12 sylan ) AIJZBIJZKALJZBLJZKACMNDBMNKCDOPABOPQUEUGUFUHARBRSE
+      FGHABCDOMMMMOMMEFGUBZUIACHUAZTUJDBTUCUD $.
 
     $( Condition for a closed interval to be a subset of an open interval.
        (Contributed by Mario Carneiro, 20-Feb-2015.) $)
     iccssioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A < C /\ D < B ) ) -> ( C [,] D ) C_ ( A (,) B ) ) $=
-      ( vx vy vz vw cxr wcel wa clt wbr cicc co cioo wss ltrelxr brel cle simpl
-      simprd simpld anim12i adantl df-ioo cv xrltletr xrlelttr ixxss12g syl3anc
-      simpr df-icc ) AIJZBIJZKZACLMZDBLMZKZKUPCIJZDIJZKZUSCDNOABPOQUPUSUAUSVBUP
-      UQUTURVAUQUNUTACIILRSUBURVAUODBIILRSUCUDUEUPUSULEFGHABCDNLLTTPLLEFGUFEFGU
-      MACHUGZUHVCDBUIUJUK $.
+      ( vx vy vz vw cicc clt cle cioo df-ioo df-icc xrltletr xrlelttr ixxss12
+      cv ) EFGHABCDIJJKKLJJEFGMEFGNACHRZOSDBPQ $.
 
     $( Condition for a closed-below, open-above interval to be a subset of a
-       closed-below, open-above interval.  (Contributed by Jim Kingdon,
-       1-Apr-2020.) $)
-    icossicog $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ D e. RR* ) /\
-        ( A <_ C /\ D <_ B ) ) -> ( C [,) D ) C_ ( A [,) B ) ) $=
-      ( vx vy vz vw cico cle clt df-ico cv xrletr xrltletr ixxss12g ) EFGHABCDI
-      JKJKIJJEFGLZQACHMZNRDBOP $.
+       closed-below, open-above interval.  (Contributed by Thierry Arnoux,
+       21-Sep-2017.) $)
+    icossico $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
+      ( A <_ C /\ D <_ B ) ) -> ( C [,) D ) C_ ( A [,) B ) ) $=
+      ( vx vy vz vw cico cle clt df-ico cv xrletr xrltletr ixxss12 ) EFGHABCDIJ
+      KJKIJJEFGLZQACHMZNRDBOP $.
 
     $( Condition for a closed interval to be a subset of another closed
-       interval.  (Contributed by Jim Kingdon, 1-Apr-2020.) $)
-    iccss2g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
-        ( C e. ( A [,] B ) /\ D e. ( A [,] B ) ) ) ->
-        ( C [,] D ) C_ ( A [,] B ) ) $=
-      ( vx vy vz vw cxr wcel wa cicc co cle wbr w3a wb elicc1 adantr mpbid wss
-      simpl simprl simp1d simprr simp2d simp3d df-icc xrletr ixxss12g syl122anc
-      cv ) AIJBIJKZCABLMZJZDUNJZKZKZUMCIJZDIJZACNOZDBNOZCDLMUNUAUMUQUBURUSVACBN
-      OZURUOUSVAVCPZUMUOUPUCUMUOVDQUQABCRSTZUDURUTADNOZVBURUPUTVFVBPZUMUOUPUEUM
-      UPVGQUQABDRSTZUDURUSVAVCVEUFURUTVFVBVHUGEFGHABCDLNNNNLNNEFGUHZVIACHULZUIV
-      JDBUIUJUK $.
+       interval.  (Contributed by Jeff Madsen, 2-Sep-2009.)  (Revised by Mario
+       Carneiro, 28-Apr-2015.) $)
+    iccss2 $p |- ( ( C e. ( A [,] B ) /\ D e. ( A [,] B ) ) ->
+      ( C [,] D ) C_ ( A [,] B ) ) $=
+      ( vx vy vz vw cicc co wcel cxr cle wbr w3a elixx3g adantr simprbi xrletr
+      wa wss df-icc simplbi simp1d simp2d simpld simprd adantl ixxss12 syl22anc
+      cv ) CABIJZKZDULKZTZALKZBLKZACMNZDBMNZCDIJULUAUOUPUQCLKZUMUPUQUTOZUNUMVAU
+      RCBMNZTZEFGABCMMIEFGUBZPZUCQZUDUOUPUQUTVFUEUOURVBUMVCUNUMVAVCVERQUFUNUSUM
+      UNADMNZUSUNUPUQDLKOVGUSTEFGABDMMIVDPRUGUHEFGHABCDIMMMMIMMVDVDACHUKZSVHDBS
+      UIUJ $.
 
     $( Condition for a closed interval to be a subset of a half-open interval.
        (Contributed by Mario Carneiro, 9-Sep-2015.) $)
     iccssico $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A <_ C /\ D < B ) ) -> ( C [,] D ) C_ ( A [,) B ) ) $=
-      ( vx vy vz vw cxr wcel wa cle wbr clt cicc co cico wss brel syl simprl cv
-      simpl lerelxr simprd simprr simpld df-ico df-icc xrletr xrlelttr ixxss12g
-      ltrelxr syl122anc ) AIJZBIJZKZACLMZDBNMZKZKZUQCIJZDIJZURUSCDOPABQPRUQUTUC
-      VAURVBUQURUSUAZURUOVBACIILUDSUETVAUSVCUQURUSUFZUSVCUPDBIINUMSUGTVDVEEFGHA
-      BCDOLNLLQLNEFGUHEFGUIACHUBZUJVFDBUKULUN $.
+      ( vx vy vz vw cicc cle clt cico df-ico df-icc cv xrletr xrlelttr ixxss12
+      ) EFGHABCDIJKJJLJKEFGMEFGNACHOZPSDBQR $.
 
     $( Condition for a closed interval to be a subset of an open interval.
-       (Contributed by Jim Kingdon, 2-Apr-2020.) $)
-    iccssioo2g $p |- ( ( A e. RR* /\ B e. RR* ) ->
-        ( ( C e. ( A (,) B ) /\ D e. ( A (,) B ) ) ->
-        ( C [,] D ) C_ ( A (,) B ) ) ) $=
-      ( cxr wcel wa cioo co clt wbr cicc wss cr w3a elioo2 simp2 simp3 iccssioo
-      syl6bi ex syl2and ) AEFBEFGZCABHIZFZACJKZDUDFZDBJKZCDLIUDMZUCUECNFZUFCBJK
-      ZOUFABCPUJUFUKQTUCUGDNFZADJKZUHOUHABDPULUMUHRTUCUFUHGUIABCDSUAUB $.
+       (Contributed by Mario Carneiro, 20-Feb-2015.) $)
+    iccssioo2 $p |- ( ( C e. ( A (,) B ) /\ D e. ( A (,) B ) ) ->
+      ( C [,] D ) C_ ( A (,) B ) ) $=
+      ( cioo co wcel cxr clt wbr cicc wss eliooxr adantr eliooord simpld adantl
+      wa simprd iccssioo syl12anc ) CABEFZGZDUBGZRZAHGBHGRZACIJZDBIJZCDKFUBLUCU
+      FUDCABMNUEUGCBIJZUCUGUIRUDCABONPUEADIJZUHUDUJUHRUCDABOQSABCDTUA $.
 
     $( Condition for a closed interval to be a subset of a closed-below,
        open-above interval.  (Contributed by Jim Kingdon, 2-Apr-2020.) $)
@@ -78707,31 +78700,22 @@ $)
        (Contributed by Thierry Arnoux, 29-Mar-2017.) $)
     iocssioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A <_ C /\ D < B ) ) -> ( C (,] D ) C_ ( A (,) B ) ) $=
-      ( va vb vx vw cxr wcel wa cle wbr clt cioc co cioo wss brel xrlelttr cv
-      simpl lerelxr simprd ad2antrl ltrelxr simpld ad2antll simpr df-ioo df-ioc
-      ixxss12g syl121anc ) AIJZBIJZKZACLMZDBNMZKZKUPCIJZDIJZUSCDOPABQPRUPUSUBUQ
-      UTUPURUQUNUTACIILUCSUDUEURVAUPUQURVAUODBIINUFSUGUHUPUSUIEFGHABCDONNNLQLNE
-      FGUJEFGUKACHUAZTVBDBTULUM $.
+      ( va vb vx vw cioc clt cle cioo df-ioo df-ioc cv xrlelttr ixxss12 ) EFGHA
+      BCDIJJJKLKJEFGMEFGNACHOZPRDBPQ $.
 
     $( Condition for a closed interval to be a subset of an open interval.
        (Contributed by Thierry Arnoux, 29-Mar-2017.) $)
     icossioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A < C /\ D <_ B ) ) -> ( C [,) D ) C_ ( A (,) B ) ) $=
-      ( va vb vx vw cxr wcel wa clt wbr cle cico co cioo wss brel xrltletr cv
-      simpl ltrelxr simprd ad2antrl lerelxr simpld ad2antll simpr df-ioo df-ico
-      ixxss12g syl121anc ) AIJZBIJZKZACLMZDBNMZKZKUPCIJZDIJZUSCDOPABQPRUPUSUBUQ
-      UTUPURUQUNUTACIILUCSUDUEURVAUPUQURVAUODBIINUFSUGUHUPUSUIEFGHABCDOLLNLQLNE
-      FGUJEFGUKACHUAZTVBDBTULUM $.
+      ( va vb vx vw cico clt cle cioo df-ioo df-ico cv xrltletr ixxss12 ) EFGHA
+      BCDIJJKJLJKEFGMEFGNACHOZPRDBPQ $.
 
     $( Condition for an open interval to be a subset of an open interval.
        (Contributed by Thierry Arnoux, 26-Sep-2017.) $)
     ioossioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A <_ C /\ D <_ B ) ) -> ( C (,) D ) C_ ( A (,) B ) ) $=
-      ( va vb vx vw cxr wcel wa cle wbr cioo co wss simpl lerelxr brel clt cv
-      simprd ad2antrl simpld ad2antll simpr df-ioo xrlelttr xrltletr syl121anc
-      ixxss12g ) AIJZBIJZKZACLMZDBLMZKZKUNCIJZDIJZUQCDNOABNOPUNUQQUOURUNUPUOULU
-      RACIILRSUBUCUPUSUNUOUPUSUMDBIILRSUDUEUNUQUFEFGHABCDNTTTTNLLEFGUGZUTACHUAZ
-      UHVADBUIUKUJ $.
+      ( va vb vx vw cioo clt cle df-ioo cv xrlelttr xrltletr ixxss12 ) EFGHABCD
+      IJJJJIKKEFGLZQACHMZNRDBOP $.
   $}
 
   ${
