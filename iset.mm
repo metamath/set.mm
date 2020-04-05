@@ -78289,13 +78289,11 @@ $)
                  ( C e. RR* /\ A < C /\ C < B ) ) ) $=
       ( vx vy vz clt cioo df-ioo elixx1 ) DEFABCGGHDEFIJ $.
 
-    $( A member of an open interval of reals is a real.  (Contributed by Jim
-       Kingdon, 30-Mar-2020.) $)
-    eliooreg $p |- ( ( B e. RR* /\ C e. RR* /\ A e. ( B (,) C ) ) ->
-        A e. RR ) $=
-      ( cxr wcel cioo co w3a clt wbr cr simp1 elioo1 simp1d simp2 simp2d simp3d
-      biimp3a xrre2 syl32anc ) BDEZCDEZABCFGEZHZUAADEZUBBAIJZACIJZAKEUAUBUCLUDU
-      EUFUGUAUBUCUEUFUGHBCAMRZNUAUBUCOUDUEUFUGUHPUDUEUFUGUHQBACST $.
+    $( A member of an open interval of reals is a real.  (Contributed by NM,
+       17-Aug-2008.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    elioore $p |- ( A e. ( B (,) C ) -> A e. RR ) $=
+      ( cioo co wcel cxr w3a clt wbr wa cr elioo3g 3ancomb xrre2 sylanb sylbi )
+      ABCDEFBGFZCGFZAGFZHZBAIJACIJKZKALFZBCAMUARTSHUBUCRSTNBACOPQ $.
 
     $( An open interval does not contain its left endpoint.  (Contributed by
        Jim Kingdon, 30-Mar-2020.) $)
@@ -78314,10 +78312,10 @@ $)
     iooval2 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,) B ) =
                  { x e. RR | ( A < x /\ x < B ) } ) $=
       ( cxr wcel wa cioo co cv clt wbr crab cr iooval cin inrab2 ressxr sseqin2
-      wceq wss mpbi rabeq ax-mp eqtri eliooreg ssrdv eqsstr3d df-ss sylib eqtrd
-      3expia syl5reqr ) BDEZCDEZFZBCGHZBAIZJKUQCJKFZADLZURAMLZABCNZUOUTUSMOZUSV
-      BURADMOZLZUTURADMPVCMSZVDUTSMDTVEQMDRUAURAVCMUBUCUDUOUSMTVBUSSUOUSUPMVAUO
-      AUPMUMUNUQUPEUQMEUQBCUEUKUFUGUSMUHUIULUJ $.
+      wceq wss mpbi rabeq ax-mp eqtri elioore ssriv syl6eqssr df-ss sylib eqtrd
+      syl5reqr ) BDECDEFZBCGHZBAIZJKUNCJKFZADLZUOAMLZABCNZULUQUPMOZUPUSUOADMOZL
+      ZUQUOADMPUTMSZVAUQSMDTVBQMDRUAUOAUTMUBUCUDULUPMTUSUPSULUPUMMURAUMMUNBCUEU
+      FUGUPMUHUIUKUJ $.
 
     $( Subset relationship for open intervals of extended reals.  (Contributed
        by NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 20-Feb-2015.) $)
@@ -78455,11 +78453,10 @@ $)
 
   ${
     $d x A $.  $d x B $.
-    $( An open interval is a set of reals.  (Contributed by Jim Kingdon,
-       31-Mar-2020.) $)
-    ioossreg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,) B ) C_ RR ) $=
-      ( vx cxr wcel wa cioo co cr cv eliooreg 3expia ssrdv ) ADEZBDEZFCABGHZINO
-      CJZPEQIEQABKLM $.
+    $( An open interval is a set of reals.  (Contributed by NM,
+       31-May-2007.) $)
+    ioossre $p |- ( A (,) B ) C_ RR $=
+      ( vx cioo co cr cv elioore ssriv ) CABDEFCGABHI $.
   $}
 
   ${
@@ -78783,10 +78780,10 @@ $)
        16-Nov-2013.) $)
     ioof $p |- (,) : ( RR* X. RR* ) --> ~P RR $=
       ( vx vz vy cv clt wbr wa cxr crab cr cpw wcel wral cxp cioo wf iooval cvv
-      co vex wss ioossreg cop cfv df-ov iooex opex fvex eqeltri sylibr eqeltrrd
-      elpw rgen2a df-ioo fmpt2 mpbi ) ADZBDZEFURCDZEFGBHIZJKZLZCHMAHMHHNVAOPVBA
-      CHUQHLUSHLGZUQUSOSZUTVABUQUSQVCVDJUAVDVALUQUSUBVDJVDUQUSUCZOUDRUQUSOUEVEO
-      RRUFUQUSATCTUGUHUIULUJUKUMACHHUTVAOACBUNUOUP $.
+      co vex wss ioossre cop df-ov iooex opex fvex eqeltri elpw mpbir syl6eqelr
+      cfv rgen2a df-ioo fmpt2 mpbi ) ADZBDZEFURCDZEFGBHIZJKZLZCHMAHMHHNVAOPVBAC
+      HUQHLUSHLGUTUQUSOSZVABUQUSQVCVALVCJUAUQUSUBVCJVCUQUSUCZOULRUQUSOUDVDORRUE
+      UQUSATCTUFUGUHUIUJUKUMACHHUTVAOACBUNUOUP $.
 
     $( The set of closed intervals of extended reals maps to subsets of
        extended reals.  (Contributed by FL, 14-Jun-2007.)  (Revised by Mario
