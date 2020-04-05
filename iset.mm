@@ -78403,6 +78403,12 @@ $)
       KFGLBCMADEFNO $.
   $}
 
+  $( Ordering implied by a member of an open interval of reals.  (Contributed
+     by NM, 17-Aug-2008.)  (Revised by Mario Carneiro, 9-May-2014.) $)
+  eliooord $p |- ( A e. ( B (,) C ) -> ( B < A /\ A < C ) ) $=
+    ( cioo co wcel cr clt wbr w3a wa cxr wb eliooxr elioo2 syl ibi 3simpc ) ABC
+    DEFZAGFZBAHIZACHIZJZUAUBKSUCSBLFCLFKSUCMABCNBCAOPQTUAUBRP $.
+
   $( The upper bound belongs to an open-below, closed-above interval.  See
      ~ ubicc2 .  (Contributed by FL, 29-May-2014.) $)
   ubioc1 $p |- ( ( A e. RR* /\ B e. RR* /\ A < B ) -> B e. ( A (,] B ) ) $=
