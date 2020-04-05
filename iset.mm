@@ -78275,6 +78275,14 @@ $)
       wbr wn ralrimiva rabeq0 sylibr eqtrd ) ACDZAAEFZABGZHQUEAHQIZBCJZKUCUDUGL
       BAAMNUCUFRZBCOUGKLUCUHBCAUEPSUFBCTUAUB $.
 
+    $( Membership in a set of open intervals of extended reals.  We use the
+       fact that an operation's value is empty outside of its domain to show
+       ` A e. RR* ` and ` B e. RR* ` .  (Contributed by NM, 24-Dec-2006.)
+       (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    elioo3g $p |- ( C e. ( A (,) B ) <->
+          ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\ ( A < C /\ C < B ) ) ) $=
+      ( vx vy vz clt cioo df-ioo elixx3g ) DEFABCGGHDEFIJ $.
+
     $( Membership in an open interval of extended reals.  (Contributed by NM,
        24-Dec-2006.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
     elioo1 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( C e. ( A (,) B ) <->
