@@ -78131,6 +78131,7 @@ $)
 
   ${
     $d x y z R $.  $d x y z S $.  $d x y z O $.  $d x y z A $.  $d x y z B $.
+    $d x y z C $.
     ixxssxr.1 $e |- O = ( x e. RR* , y e. RR* |->
                    { z e. RR* | ( x R z /\ z S y ) } ) $.
     $( The set of intervals of extended reals maps to subsets of extended
@@ -78139,6 +78140,17 @@ $)
       ( co cxr wcel wa cv wbr crab elmpt2cl cpw ixxf fovcl elpwid sseld mpcom
       ssriv ) ADEHJZKDKLEKLMZANZUELUGKLABKKUGCNZFOUHBNGOMCKPDEHUGIQUFUEKUGUFUEK
       DEKRKKHABCFGHISTUAUBUCUD $.
+
+    $( Membership in a set of open intervals of extended reals.  We use the
+       fact that an operation's value is empty outside of its domain to show
+       ` A e. RR* ` and ` B e. RR* ` .  (Contributed by Mario Carneiro,
+       3-Nov-2013.) $)
+    elixx3g $p |- ( C e. ( A O B ) <->
+          ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\ ( A R C /\ C S B ) ) ) $=
+      ( cxr wcel wa wbr w3a co anass df-3an anbi1i cv crab elixx1 3anass syl6bb
+      elmpt2cl biadan2 3bitr4ri ) DKLZEKLZMZFKLZMZDFGNZFEHNZMZMUJUKUOMZMUHUIUKO
+      ZUOMFDEIPLZUJUKUOQUQULUOUHUIUKRSURUJUPABKKATCTZGNUSBTHNMCKUADEIFJUEUJURUK
+      UMUNOUPABCDEFGHIJUBUKUMUNUCUDUFUG $.
   $}
 
   ${
