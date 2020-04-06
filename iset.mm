@@ -76518,6 +76518,584 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Upper sets of integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c ZZ>= $. $( ` ZZ ` with greater-than-or-equal-to subscript. $)
+
+  $( Extend class notation with the upper integer function.
+     Read " ` ZZ>= `` M ` " as "the set of integers greater than or equal to
+     ` M ` ." $)
+  cuz $a class ZZ>= $.
+
+  ${
+    $d j k y N $.  $d k M $.
+    $( Define a function whose value at ` j ` is the semi-infinite set of
+       contiguous integers starting at ` j ` , which we will also call the
+       upper integers starting at ` j ` .  Read " ` ZZ>= `` M ` " as "the set
+       of integers greater than or equal to ` M ` ."  See ~ uzval for its
+       value, ~ uzssz for its relationship to ` ZZ ` , ~ nnuz and ~ nn0uz for
+       its relationships to ` NN ` and ` NN0 ` , and ~ eluz1 and ~ eluz2 for
+       its membership relations.  (Contributed by NM, 5-Sep-2005.) $)
+    df-uz $a |- ZZ>= = ( j e. ZZ |-> { k e. ZZ | j <_ k } ) $.
+
+    $( The value of the upper integers function.  (Contributed by NM,
+       5-Sep-2005.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    uzval $p |- ( N e. ZZ -> ( ZZ>= ` N ) = { k e. ZZ | N <_ k } ) $=
+      ( vj cv cle wbr cz crab cuz wceq breq1 rabbidv df-uz zex rabex fvmpt ) CB
+      CDZADZEFZAGHBREFZAGHGIQBJSTAGQBREKLCAMTAGNOP $.
+
+    $( The domain and range of the upper integers function.  (Contributed by
+       Scott Fenton, 8-Aug-2013.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    uzf $p |- ZZ>= : ZZ --> ~P ZZ $=
+      ( vj vk cv cle wbr cz crab cpw wcel wral cuz wss ssrab2 elpw2 mpbir rgenw
+      wf zex df-uz fmpt mpbi ) ACBCDEZBFGZFHZIZAFJFUDKQUEAFUEUCFLUBBFMUCFRNOPAF
+      UDUCKABSTUA $.
+
+    $( Membership in the upper set of integers starting at ` M ` .
+       (Contributed by NM, 5-Sep-2005.) $)
+    eluz1 $p |- ( M e. ZZ ->
+           ( N e. ( ZZ>= ` M ) <-> ( N e. ZZ /\ M <_ N ) ) ) $=
+      ( vk cz wcel cuz cfv cv cle wbr crab wa uzval eleq2d breq2 elrab syl6bb )
+      ADEZBAFGZEBACHZIJZCDKZEBDEABIJZLRSUBBCAMNUAUCCBDTBAIOPQ $.
+
+    $( Implication of membership in an upper set of integers.  (Contributed by
+       NM, 6-Sep-2005.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    eluzel2 $p |- ( N e. ( ZZ>= ` M ) -> M e. ZZ ) $=
+      ( cuz cfv wcel cdm cz elfvdm cpw uzf fdmi syl6eleq ) BACDEACFGBACHGGICJKL
+      $.
+
+    $( Membership in an upper set of integers.  We use the fact that a
+       function's value (under our function value definition) is empty outside
+       of its domain to show ` M e. ZZ ` .  (Contributed by NM, 5-Sep-2005.)
+       (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    eluz2 $p |- ( N e. ( ZZ>= ` M ) <-> ( M e. ZZ /\ N e. ZZ /\ M <_ N ) ) $=
+      ( cuz cfv wcel cz cle wbr w3a eluzel2 simp1 wa eluz1 bitrd 3anass syl6bbr
+      ibar pm5.21nii ) BACDEZAFEZTBFEZABGHZIZABJTUAUBKTSTUAUBLZLZUCTSUDUEABMTUD
+      QNTUAUBOPR $.
+  $}
+
+  ${
+    eluz.1 $e |- M e. ZZ $.
+    $( Membership in an upper set of integers.  (Contributed by NM,
+       5-Sep-2005.) $)
+    eluz1i $p |- ( N e. ( ZZ>= ` M ) <-> ( N e. ZZ /\ M <_ N ) ) $=
+      ( cz wcel cuz cfv cle wbr wa wb eluz1 ax-mp ) ADEBAFGEBDEABHIJKCABLM $.
+  $}
+
+  $( An integer in an upper set of integers is an element of an upper set of
+     integers with a smaller bound.  (Contributed by Alexander van der Vekens,
+     17-Jun-2018.) $)
+  eluzuzle $p |- ( ( B e. ZZ /\ B <_ A )
+                   -> ( C e. ( ZZ>= ` A ) -> C e. ( ZZ>= ` B ) ) ) $=
+    ( cuz cfv wcel cz cle wbr w3a wa eluz2 simpll simpr2 cr zre ad2antrr adantl
+    3ad2ant1 3ad2ant2 simplr simpr3 letrd syl3anbrc ex syl5bi ) CADEFAGFZCGFZAC
+    HIZJZBGFZBAHIZKZCBDEFZACLUMUJUNUMUJKZUKUHBCHIUNUKULUJMUMUGUHUINUOBACUKBOFUL
+    UJBPQUJAOFZUMUGUHUPUIAPSRUJCOFZUMUHUGUQUICPTRUKULUJUAUMUGUHUIUBUCBCLUDUEUF
+    $.
+
+  $( A member of an upper set of integers is an integer.  (Contributed by NM,
+     6-Sep-2005.) $)
+  eluzelz $p |- ( N e. ( ZZ>= ` M ) -> N e. ZZ ) $=
+    ( cuz cfv wcel cz cle wbr eluz2 simp2bi ) BACDEAFEBFEABGHABIJ $.
+
+  $( A member of an upper set of integers is a real.  (Contributed by Mario
+     Carneiro, 31-Aug-2013.) $)
+  eluzelre $p |- ( N e. ( ZZ>= ` M ) -> N e. RR ) $=
+    ( cuz cfv wcel eluzelz zred ) BACDEBABFG $.
+
+  $( A member of an upper set of integers is a complex number.  (Contributed by
+     Glauco Siliprandi, 29-Jun-2017.) $)
+  eluzelcn $p |- ( N e. ( ZZ>= ` M ) -> N e. CC ) $=
+    ( cuz cfv wcel eluzelre recnd ) BACDEBABFG $.
+
+  $( Implication of membership in an upper set of integers.  (Contributed by
+     NM, 6-Sep-2005.) $)
+  eluzle $p |- ( N e. ( ZZ>= ` M ) -> M <_ N ) $=
+    ( cuz cfv wcel cz cle wbr eluz2 simp3bi ) BACDEAFEBFEABGHABIJ $.
+
+  $( Membership in an upper set of integers.  (Contributed by NM,
+     2-Oct-2005.) $)
+  eluz $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
+         ( N e. ( ZZ>= ` M ) <-> M <_ N ) ) $=
+    ( cz wcel cuz cfv cle wbr eluz1 baibd ) ACDBAEFDBCDABGHABIJ $.
+
+  $( Membership of the least member in an upper set of integers.  (Contributed
+     by NM, 2-Sep-2005.) $)
+  uzid $p |- ( M e. ZZ -> M e. ( ZZ>= ` M ) ) $=
+    ( cz wcel cuz cfv cle wbr wa zre leidd ancli eluz1 mpbird ) ABCZAADECNAAFGZ
+    HNONAAIJKAALM $.
+
+  ${
+    $d k M $.
+    $( The upper integers are all nonempty.  (Contributed by Mario Carneiro,
+       16-Jan-2014.) $)
+    uzn0 $p |- ( M e. ran ZZ>= -> M =/= (/) ) $=
+      ( vk cuz crn wcel cv cfv wceq cz wrex c0 wne cpw wfn uzf ffn fvelrnb mp2b
+      wf wb uzid ne0i syl neeq1 syl5ibcom rexlimiv sylbi ) ACDEZBFZCGZAHZBIJZAK
+      LZIIMZCSCINUHULTOIUNCPBIACQRUKUMBIUIIEZUJKLZUKUMUOUIUJEUPUIUAUJUIUBUCUJAK
+      UDUEUFUG $.
+  $}
+
+  $( Transitive law for sets of upper integers.  (Contributed by NM,
+     20-Sep-2005.) $)
+  uztrn $p |- ( ( M e. ( ZZ>= ` K ) /\ K e. ( ZZ>= ` N ) ) ->
+              M e. ( ZZ>= ` N ) ) $=
+    ( cuz cfv wcel wa cz cle eluzel2 adantl eluzelz adantr eluzle zletr syl3anc
+    wbr wi mp2and eluz2 syl3anbrc ) BADEFZACDEZFZGZCHFZBHFZCBIQZBUCFUDUFUBCAJKZ
+    UBUGUDABLMZUECAIQZABIQZUHUDUKUBCANKUBULUDABNMUEUFAHFZUGUKULGUHRUIUDUMUBCALK
+    UJCABOPSCBTUA $.
+
+  ${
+    uztrn2.1 $e |- Z = ( ZZ>= ` K ) $.
+    $( Transitive law for sets of upper integers.  (Contributed by Mario
+       Carneiro, 26-Dec-2013.) $)
+    uztrn2 $p |- ( ( N e. Z /\ M e. ( ZZ>= ` N ) ) -> M e. Z ) $=
+      ( wcel cuz cfv wa eleq2i uztrn ancoms sylanb syl6eleqr ) CDFZBCGHFZIBAGHZ
+      DOCQFZPBQFZDQCEJPRSCBAKLMEN $.
+  $}
+
+  $( Contraposition law for upper integers.  (Contributed by NM,
+     28-Nov-2005.) $)
+  uzneg $p |- ( N e. ( ZZ>= ` M ) -> -u M e. ( ZZ>= ` -u N ) ) $=
+    ( cuz cfv wcel cneg cle wbr eluzle cz wb eluzel2 eluzelz zre syl2an syl2anc
+    cr leneg mpbid znegcl eluz mpbird ) BACDEZAFZBFZCDEZUEUDGHZUCABGHZUGABIUCAJ
+    EZBJEZUHUGKZABLZABMZUIAQEBQEUKUJANBNABROPSUCUJUIUFUGKZUMULUJUEJEUDJEUNUIBTA
+    TUEUDUAOPUB $.
+
+  ${
+    $d j k y M $.  $d k N $.
+    $( An upper set of integers is a subset of all integers.  (Contributed by
+       NM, 2-Sep-2005.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    uzssz $p |- ( ZZ>= ` M ) C_ ZZ $=
+      ( cuz cdm wcel cfv cz wss cpw uzf ffvelrni elpwid fdmi eleq2s wn c0 ndmfv
+      0ss syl6eqss pm2.61i ) ABCZDZABEZFGZUCAFTAFDUBFFFHZABIJKFUDBILMUANUBOFABP
+      FQRS $.
+
+    $( Subset relationship for two sets of upper integers.  (Contributed by NM,
+       5-Sep-2005.) $)
+    uzss $p |- ( N e. ( ZZ>= ` M ) ->
+               ( ZZ>= ` N ) C_ ( ZZ>= ` M ) ) $=
+      ( vk cuz cfv wcel cv cz cle wbr wa eluzle adantr wi eluzel2 eluzelz eluz1
+      jca wb syl zletr 3expa sylan mpand imdistanda 3imtr4d ssrdv ) BADEZFZCBDE
+      ZUHUICGZHFZBUKIJZKZULAUKIJZKZUKUJFZUKUHFZUIULUMUOUIULKABIJZUMUOUIUSULABLM
+      UIAHFZBHFZKULUSUMKUONZUIUTVAABOZABPZRUTVAULVBABUKUAUBUCUDUEUIVAUQUNSVDBUK
+      QTUIUTURUPSVCAUKQTUFUG $.
+  $}
+
+  $( Totality of the ordering relation on integers, stated in terms of upper
+     integers.  (Contributed by NM, 6-Jul-2005.)  (Revised by Mario Carneiro,
+     25-Jun-2013.) $)
+  uztric $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
+      ( N e. ( ZZ>= ` M ) \/ M e. ( ZZ>= ` N ) ) ) $=
+    ( cz wcel wa cuz cfv wo cle wbr cr zre letric syl2an eluz wb ancoms orbi12d
+    mpbird ) ACDZBCDZEZBAFGDZABFGDZHABIJZBAIJZHZTAKDBKDUGUAALBLABMNUBUCUEUDUFAB
+    OUATUDUFPBAOQRS $.
+
+  $( The upper integers function is one-to-one.  (Contributed by NM,
+     12-Dec-2005.) $)
+  uz11 $p |- ( M e. ZZ ->
+                ( ( ZZ>= ` M ) = ( ZZ>= ` N ) <-> M = N ) ) $=
+    ( cz wcel cuz cfv wceq wa eleq2 eluzel2 syl6bi mpan9 cle wbr syl5ibr eluzle
+    uzid syl6 cr zre syl5ib anim12d impl ancoms anassrs wb letri3 syl2an mpbird
+    adantlr mpdan ex fveq2 impbid1 ) ACDZAEFZBEFZGZABGZUOURUSUOURHZBCDZUSUOAUPD
+    ZURVAAQZURVBAUQDZVAUPUQAIZBAJKLUTVAHUSABMNZBAMNZHZUOURVAVHURVAHUOVHURVAUOVH
+    URVAVFUOVGURVABUPDZVFVAVIURBUQDBQUPUQBIOABPRURUOVDVGUOVBURVDVCVEUABAPRUBUCU
+    DUEUOVAUSVHUFZURUOASDBSDVJVAATBTABUGUHUJUIUKULABEUMUN $.
+
+  $( Membership in the next upper set of integers.  (Contributed by NM,
+     12-Sep-2005.) $)
+  eluzp1m1 $p |- ( ( M e. ZZ /\
+             N e. ( ZZ>= ` ( M + 1 ) ) ) -> ( N - 1 ) e. ( ZZ>= ` M ) ) $=
+    ( cz wcel c1 caddc co cuz cfv cmin cle wbr wa peano2zm ad2antrl cr wb eluz1
+    zre 1re leaddsub mp3an2 syl2an biimpa anasss jca ex peano2z syl 3imtr4d imp
+    ) ACDZBAEFGZHIDZBEJGZAHIDZULBCDZUMBKLZMZUOCDZAUOKLZMZUNUPULUSVBULUSMUTVAUQU
+    TULURBNOULUQURVAULUQMURVAULAPDZBPDZURVAQZUQASBSVCEPDVDVETAEBUAUBUCUDUEUFUGU
+    LUMCDUNUSQAUHUMBRUIAUORUJUK $.
+
+  $( Strict ordering implied by membership in the next upper set of integers.
+     (Contributed by NM, 12-Sep-2005.) $)
+  eluzp1l $p |- ( ( M e. ZZ /\
+             N e. ( ZZ>= ` ( M + 1 ) ) ) -> M < N ) $=
+    ( cz wcel c1 caddc cuz cfv clt wbr cle eluzle adantl eluzelz zltp1le sylan2
+    co wa wb mpbird ) ACDZBAEFQZGHDZRABIJZUBBKJZUCUEUAUBBLMUCUABCDUDUESUBBNABOP
+    T $.
+
+  $( Membership in the next upper set of integers.  (Contributed by NM,
+     5-Oct-2005.) $)
+  eluzp1p1 $p |- ( N e. ( ZZ>= ` M ) ->
+                       ( N + 1 ) e. ( ZZ>= ` ( M + 1 ) ) ) $=
+    ( cz wcel cle wbr w3a c1 caddc co cuz cfv peano2z 3ad2ant1 3ad2ant2 zre 1re
+    cr wb eluz2 leadd1 mp3an3 syl2an biimp3a 3jca 3imtr4i ) ACDZBCDZABEFZGZAHIJ
+    ZCDZBHIJZCDZUKUMEFZGBAKLDUMUKKLDUJULUNUOUGUHULUIAMNUHUGUNUIBMOUGUHUIUOUGARD
+    ZBRDZUIUOSZUHAPBPUPUQHRDURQABHUAUBUCUDUEABTUKUMTUF $.
+
+  ${
+    eluzaddi.1 $e |- M e. ZZ $.
+    eluzaddi.2 $e |- K e. ZZ $.
+    $( Membership in a later upper set of integers.  (Contributed by Paul
+       Chapman, 22-Nov-2007.) $)
+    eluzaddi $p |- ( N e. ( ZZ>= ` M )
+          -> ( N + K ) e. ( ZZ>= ` ( M + K ) ) ) $=
+      ( cuz cfv wcel caddc co cz cle wbr eluzelz zaddcl sylancl wa eluz1i zrei
+      cr wb zre leadd1 mp3an13 syl biimpa sylbi mp2an sylanbrc ) CBFGHZCAIJZKHZ
+      BAIJZUKLMZUKUMFGHUJCKHZAKHZULBCNECAOPUJUOBCLMZQUNBCDRUOUQUNUOCTHZUQUNUAZC
+      UBBTHURATHUSBDSAESBCAUCUDUEUFUGUMUKBKHUPUMKHDEBAOUHRUI $.
+
+    $( Membership in an earlier upper set of integers.  (Contributed by Paul
+       Chapman, 22-Nov-2007.) $)
+    eluzsubi $p |- ( N e. ( ZZ>= ` ( M + K ) )
+         -> ( N - K ) e. ( ZZ>= ` M ) ) $=
+      ( caddc co cuz cfv wcel cmin cz cle eluzelz zsubcl sylancl eluz1i cr zrei
+      wbr wa zaddcl mp2an wb zre leaddsub mp3an12 syl biimpa sylbi sylanbrc ) C
+      BAFGZHIJZCAKGZLJZBUNMTZUNBHIJUMCLJZALJZUOULCNECAOPUMUQULCMTZUAUPULCBLJURU
+      LLJDEBAUBUCQUQUSUPUQCRJZUSUPUDZCUEBRJARJUTVABDSAESBACUFUGUHUIUJBUNDQUK $.
+  $}
+
+  $( Membership in a later upper set of integers.  (Contributed by Jeff Madsen,
+     2-Sep-2009.) $)
+  eluzadd $p |- ( ( N e. ( ZZ>= ` M ) /\ K e. ZZ ) ->
+                                      ( N + K ) e. ( ZZ>= ` ( M + K ) ) ) $=
+    ( cuz cfv wcel cz caddc co eluzel2 wa wi cc0 cif eleq2d fveq2d oveq2 elimel
+    wceq 0z fveq2 oveq1 imbi12d eleq12d imbi2d eluzaddi dedth2h com12 mpand imp
+    ) CBDEZFZAGFZCAHIZBAHIZDEZFZULBGFZUMUQBCJURUMKULUQURUMULUQLCURBMNZDEZFZUNUS
+    AHIZDEZFZLVACUMAMNZHIZUSVEHIZDEZFZLBAMMBUSSZULVAUQVDVJUKUTCBUSDUAOVJUPVCUNV
+    JUOVBDBUSAHUBPOUCAVESZVDVIVAVKUNVFVCVHAVECHQVKVBVGDAVEUSHQPUDUEVEUSCBMGTRAM
+    GTRUFUGUHUIUJ $.
+
+  $( Membership in an earlier upper set of integers.  (Contributed by Jeff
+     Madsen, 2-Sep-2009.) $)
+  eluzsub $p |- ( ( M e. ZZ /\ K e. ZZ /\ N e. ( ZZ>= ` ( M + K ) ) )
+                                          -> ( N - K ) e. ( ZZ>= ` M ) ) $=
+    ( cz wcel caddc co cuz cfv cmin wi cc0 cif wceq fveq2d eleq2d imbi12d oveq2
+    0z elimel oveq1 fveq2 eleq1d eluzsubi dedth2h 3impia ) BDEZADEZCBAFGZHIZEZC
+    AJGZBHIZEZUGUHUKUNKCUGBLMZAFGZHIZEZULUOHIZEZKCUOUHALMZFGZHIZEZCVAJGZUSEZKBA
+    LLBUONZUKURUNUTVGUJUQCVGUIUPHBUOAFUAOPVGUMUSULBUOHUBPQAVANZURVDUTVFVHUQVCCV
+    HUPVBHAVAUOFROPVHULVEUSAVACJRUCQVAUOCBLDSTALDSTUDUEUF $.
+
+  $( Choices for an element of an upper interval of integers.  (Contributed by
+     Jeff Madsen, 2-Sep-2009.) $)
+  uzm1 $p |- ( N e. ( ZZ>= ` M ) -> ( N = M \/ ( N - 1 ) e. ( ZZ>= ` M ) ) ) $=
+    ( cuz cfv wcel wceq c1 cmin co cle wbr w3a eluzel2 a1d eluzelz peano2zm syl
+    wn cz clt wne df-ne eluzle wa zred eluzelre ltlend biimprd mpand syl5bir wb
+    zltlem1 syl2anc sylibd 3jcad eluz2 syl6ibr orrd ) BACDZEZBAFZBGHIZUSEZUTVAR
+    ZASEZVBSEZAVBJKZLVCUTVDVEVFVGUTVEVDABMZNUTVFVDUTBSEZVFABOZBPQNUTVDABTKZVGVD
+    BAUAZUTVKBAUBUTABJKZVLVKABUCUTVKVMVLUDUTABUTAVHUEABUFUGUHUIUJUTVEVIVKVGUKVH
+    VJABULUMUNUOAVBUPUQUR $.
+
+  $( The nonnegative difference of integers is a nonnegative integer.
+     (Contributed by NM, 4-Sep-2005.) $)
+  uznn0sub $p |- ( N e. ( ZZ>= ` M ) -> ( N - M ) e. NN0 ) $=
+    ( cuz cfv wcel cz cle wbr w3a cmin co cn0 eluz2 znn0sub biimp3a sylbi ) BAC
+    DEAFEZBFEZABGHZIBAJKLEZABMQRSTABNOP $.
+
+  $( Intersection of two upper intervals of integers.  (Contributed by Mario
+     Carneiro, 24-Dec-2013.) $)
+  uzin $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
+    ( ( ZZ>= ` M ) i^i ( ZZ>= ` N ) ) = ( ZZ>= ` if ( M <_ N , N , M ) ) ) $=
+    ( cz wcel wa cuz cfv wo cle wbr wceq wss uzss sylib eluzle fveq2d eqtr4d cr
+    syl zre cin cif uztric sseqin2 iftrue eluzel2 eluzelz letri3 syl2an syl2anc
+    df-ss biantrurd bitr4d biimprcd eqeq1d sylibrd com12 iffalse pm2.61d1 jaoi
+    wb ) ACDZBCDZEBAFGZDZABFGZDZHVDVFUAZABIJZBAUBZFGZKZABUCVEVLVGVEVHVFVKVEVFVD
+    LVHVFKABMVFVDUDNVEVJBFVEVIVJBKABOVIBAUEZSPQVGVHVDVKVGVDVFLVHVDKBAMVDVFUKNVG
+    VJAFVGVIVJAKZVIVGVNVIVGBAKZVNVGVOVIVGVOBAIJZVIEZVIVGVCVBVOVQVAZBAUFBAUGVCBR
+    DARDVRVBBTATBAUHUIUJVGVPVIBAOULUMUNVIVJBAVMUOUPUQVIBAURUSPQUTS $.
+
+  $( Choices for an element of an upper interval of integers.  (Contributed by
+     Jeff Madsen, 2-Sep-2009.) $)
+  uzp1 $p |- ( N e. ( ZZ>= ` M ) -> ( N = M \/ N e. ( ZZ>= ` ( M + 1 ) ) ) ) $=
+    ( cuz cfv wcel wceq c1 cmin co wo caddc uzm1 eluzp1p1 eluzelcn ax-1cn npcan
+    cc sylancl eleq1d syl5ib orim2d mpd ) BACDZEZBAFZBGHIZUCEZJUEBAGKICDZEZJABL
+    UDUGUIUEUGUFGKIZUHEUDUIAUFMUDUJBUHUDBQEGQEUJBFABNOBGPRSTUAUB $.
+
+  $( Nonnegative integers expressed as an upper set of integers.  (Contributed
+     by NM, 2-Sep-2005.) $)
+  nn0uz $p |- NN0 = ( ZZ>= ` 0 ) $=
+    ( vk cn0 cc0 cv cle wbr cz crab cuz nn0zrab wcel wceq 0z uzval ax-mp eqtr4i
+    cfv ) BCADEFAGHZCIQZAJCGKSRLMACNOP $.
+
+  $( Positive integers expressed as an upper set of integers.  (Contributed by
+     NM, 2-Sep-2005.) $)
+  nnuz $p |- NN = ( ZZ>= ` 1 ) $=
+    ( vk cn c1 cv cle wbr cz crab cuz cfv nnzrab wcel wceq uzval ax-mp eqtr4i
+    1z ) BCADEFAGHZCIJZAKCGLSRMQACNOP $.
+
+  $( A positive integer expressed as a member of an upper set of integers.
+     (Contributed by NM, 6-Jun-2006.) $)
+  elnnuz $p |- ( N e. NN <-> N e. ( ZZ>= ` 1 ) ) $=
+    ( cn c1 cuz cfv nnuz eleq2i ) BCDEAFG $.
+
+  $( A nonnegative integer expressed as a member an upper set of integers.
+     (Contributed by NM, 6-Jun-2006.) $)
+  elnn0uz $p |- ( N e. NN0 <-> N e. ( ZZ>= ` 0 ) ) $=
+    ( cn0 cc0 cuz cfv nn0uz eleq2i ) BCDEAFG $.
+
+  $( An integer is greater than or equal to 2 is a positive integer.
+     (Contributed by AV, 3-Nov-2018.) $)
+  eluz2nn $p |- ( A e. ( ZZ>= ` 2 ) -> A e. NN ) $=
+    ( c2 cuz cfv wcel c1 cn cz cle wbr wi 1z 1le2 eluzuzle mp2an nnuz syl6eleqr
+    ) ABCDEZAFCDZGFHEFBIJRASEKLMBFANOPQ $.
+
+  $( If an integer is greater than or equal to 2, then it is a nonnegative
+     integer.  (Contributed by AV, 27-Aug-2018.)  (Proof shortened by AV,
+     3-Nov-2018.) $)
+  eluzge2nn0 $p |- ( N e. ( ZZ>= ` 2 ) -> N e. NN0 ) $=
+    ( c2 cuz cfv wcel eluz2nn nnnn0d ) ABCDEAAFG $.
+
+  $( An integer in the upper set of integers starting at 3 is element of the
+     upper set of integers starting at 2.  (Contributed by Alexander van der
+     Vekens, 17-Sep-2018.) $)
+  uzuzle23 $p |- ( A e. ( ZZ>= ` 3 ) -> A e. ( ZZ>= ` 2 ) ) $=
+    ( c2 cz wcel c3 cle wbr cuz cfv wi 2z 2re 3re 2lt3 ltleii eluzuzle mp2an )
+    BCDBEFGAEHIDABHIDJKBELMNOEBAPQ $.
+
+  $( If an integer is greater than 3, then it is a positive integer.
+     (Contributed by Alexander van der Vekens, 17-Sep-2018.) $)
+  eluzge3nn $p |- ( N e. ( ZZ>= ` 3 ) -> N e. NN ) $=
+    ( c3 cuz cfv wcel c1 cn cz cle wbr wi 1z 1le3 eluzuzle mp2an elnnuz sylibr
+    ) ABCDEZAFCDEZAGEFHEFBIJRSKLMBFANOAPQ $.
+
+  $( An integer greater than or equal to 3 decreased by 2 is a positive
+     integer, analogous to ~ uz2m1nn .  (Contributed by Alexander van der
+     Vekens, 17-Sep-2018.) $)
+  uz3m2nn $p |- ( N e. ( ZZ>= ` 3 ) -> ( N - 2 ) e. NN ) $=
+    ( c3 cuz cfv wcel c2 clt wbr cmin co cn cz cle w3a eluz2 2lt3 cr wa wi a1i
+    2re 3re zre ltletr syl3anc mpani imp 3adant1 sylbi wb 2nn eluzge3nn sylancr
+    nnsub mpbid ) ABCDEZFAGHZAFIJKEZUPBLEZALEZBAMHZNUQBAOUTVAUQUSUTVAUQUTFBGHZV
+    AUQPUTFQEZBQEZAQEVBVARUQSVCUTUATVDUTUBTAUCFBAUDUEUFUGUHUIUPFKEAKEUQURUJUKAU
+    LFAUNUMUO $.
+
+  $( 1 is an integer greater than or equal to 0.  (Contributed by Alexander van
+     der Vekens, 8-Jun-2018.) $)
+  1eluzge0 $p |- 1 e. ( ZZ>= ` 0 ) $=
+    ( c1 cc0 cuz cfv wcel cz cle wbr 0z 1z 0le1 eluz2 mpbir3an ) ABCDEBFEAFEBAG
+    HIJKBALM $.
+
+  $( 2 is an integer greater than or equal to 0.  (Contributed by Alexander van
+     der Vekens, 8-Jun-2018.)  (Proof shortened by OpenAI, 25-Mar-2020.) $)
+  2eluzge0 $p |- 2 e. ( ZZ>= ` 0 ) $=
+    ( c2 cn0 cc0 cuz cfv 2nn0 nn0uz eleqtri ) ABCDEFGH $.
+
+  $( 2 is an integer greater than or equal to 0.  (Contributed by Alexander van
+     der Vekens, 8-Jun-2018.)  Obsolete version of ~ 2eluzge0 as of
+     25-Mar-2020.  (New usage is discouraged.)
+     (Proof modification is discouraged.) $)
+  2eluzge0OLD $p |- 2 e. ( ZZ>= ` 0 ) $=
+    ( c2 cc0 cuz cfv wcel cz cle wbr 0z 2z 0le2 eluz2 mpbir3an ) ABCDEBFEAFEBAG
+    HIJKBALM $.
+
+  $( 2 is an integer greater than or equal to 1.  (Contributed by Alexander van
+     der Vekens, 8-Jun-2018.) $)
+  2eluzge1 $p |- 2 e. ( ZZ>= ` 1 ) $=
+    ( c2 c1 cuz cfv wcel cz cle wbr 1z 2z 1le2 eluz2 mpbir3an ) ABCDEBFEAFEBAGH
+    IJKBALM $.
+
+  $( The upper integers starting from a natural are a subset of the naturals.
+     (Contributed by Scott Fenton, 29-Jun-2013.) $)
+  uznnssnn $p |- ( N e. NN -> ( ZZ>= ` N ) C_ NN ) $=
+    ( cn wcel cuz cfv c1 wss elnnuz uzss sylbi nnuz syl6sseqr ) ABCZADEZFDEZBMA
+    OCNOGAHFAIJKL $.
+
+  ${
+    $d m n M $.
+    $( Restricted universal quantification in an upper set of integers.
+       (Contributed by NM, 9-Sep-2005.) $)
+    raluz $p |- ( M e. ZZ -> ( A. n e. ( ZZ>= ` M ) ph <->
+               A. n e. ZZ ( M <_ n -> ph ) ) ) $=
+      ( cz wcel cv cle wbr wi cuz cfv wa eluz1 imbi1d impexp syl6bb ralbidv2 )
+      CDEZACBFZGHZAIZBCJKZDRSUBEZAISDEZTLZAIUDUAIRUCUEACSMNUDTAOPQ $.
+
+    $( Restricted universal quantification in an upper set of integers.
+       (Contributed by NM, 9-Sep-2005.) $)
+    raluz2 $p |- ( A. n e. ( ZZ>= ` M ) ph <->
+               ( M e. ZZ -> A. n e. ZZ ( M <_ n -> ph ) ) ) $=
+      ( cuz cfv wral cz wcel cv cle wbr wi w3a eluz2 3anass bitri imbi1i impexp
+      wa imbi2i bi2.04 ralbii2 r19.21v ) ABCDEZFCGHZCBIZJKZALZLZBGFUEUHBGFLAUIB
+      UDGUFUDHZALUEUFGHZUGSZSZALZUKUILZUJUMAUJUEUKUGMUMCUFNUEUKUGOPQUNUEUKUHLZL
+      ZUOUNUEULALZLUQUEULARURUPUEUKUGARTPUEUKUHUAPPUBUEUHBGUCP $.
+
+    $( Restricted existential quantification in an upper set of integers.
+       (Contributed by NM, 9-Sep-2005.) $)
+    rexuz $p |- ( M e. ZZ -> ( E. n e. ( ZZ>= ` M ) ph <->
+               E. n e. ZZ ( M <_ n /\ ph ) ) ) $=
+      ( cz wcel cv cle wbr wa cuz cfv eluz1 anbi1d anass syl6bb rexbidv2 ) CDEZ
+      ACBFZGHZAIZBCJKZDQRUAEZAIRDEZSIZAIUCTIQUBUDACRLMUCSANOP $.
+
+    $( Restricted existential quantification in an upper set of integers.
+       (Contributed by NM, 9-Sep-2005.) $)
+    rexuz2 $p |- ( E. n e. ( ZZ>= ` M ) ph <->
+               ( M e. ZZ /\ E. n e. ZZ ( M <_ n /\ ph ) ) ) $=
+      ( cuz cfv wrex cz wcel cv cle wbr wa eluz2 df-3an bitri anbi1i anass an12
+      w3a rexbii2 r19.42v ) ABCDEZFCGHZCBIZJKZALZLZBGFUCUFBGFLAUGBUBGUDUBHZALUC
+      UDGHZLZUELZALZUIUGLZUHUKAUHUCUIUESUKCUDMUCUIUENOPULUJUFLZUMUJUEAQUNUCUIUF
+      LLUMUCUIUFQUCUIUFROOOTUCUFBGUAO $.
+
+    $( Double existential quantification in an upper set of integers.
+       (Contributed by NM, 3-Nov-2005.) $)
+    2rexuz $p |- ( E. m E. n e. ( ZZ>= ` m ) ph <->
+                  E. m e. ZZ E. n e. ZZ ( m <_ n /\ ph ) ) $=
+      ( cv cuz cfv wrex wex cz wcel cle wbr wa rexuz2 exbii df-rex bitr4i ) ACB
+      DZEFGZBHRIJRCDKLAMCIGZMZBHTBIGSUABACRNOTBIPQ $.
+  $}
+
+  $( Second Peano postulate for an upper set of integers.  (Contributed by NM,
+     7-Sep-2005.) $)
+  peano2uz $p |- ( N e. ( ZZ>= ` M ) ->
+                 ( N + 1 ) e. ( ZZ>= ` M ) ) $=
+    ( cz wcel cle wbr w3a c1 caddc co cuz cfv simp1 peano2z 3ad2ant2 zre letrp1
+    cr syl3an2 eluz2 syl3an1 3jca 3imtr4i ) ACDZBCDZABEFZGZUDBHIJZCDZAUHEFZGBAK
+    LZDUHUKDUGUDUIUJUDUEUFMUEUDUIUFBNOUDARDZUEUFUJAPUEULBRDUFUJBPABQSUAUBABTAUH
+    TUC $.
+
+  ${
+    peano2uzs.1 $e |- Z = ( ZZ>= ` M ) $.
+    $( Second Peano postulate for an upper set of integers.  (Contributed by
+       Mario Carneiro, 26-Dec-2013.) $)
+    peano2uzs $p |- ( N e. Z -> ( N + 1 ) e. Z ) $=
+      ( c1 caddc co wcel cuz cfv peano2uz syl6eleqr eleq2s ) BEFGZCHBAIJZCBOHNO
+      CABKDLDM $.
+  $}
+
+  $( Reversed second Peano axiom for upper integers.  (Contributed by NM,
+     2-Jan-2006.) $)
+  peano2uzr $p |- ( ( M e. ZZ /\
+             N e. ( ZZ>= ` ( M + 1 ) ) ) -> N e. ( ZZ>= ` M ) ) $=
+    ( cz wcel c1 caddc co cuz cfv wa cmin wceq cc eluzelcn ax-1cn npcan sylancl
+    adantl eluzp1m1 peano2uz syl eqeltrrd ) ACDZBAEFGZHIDZJZBEKGZEFGZBAHIZUEUHB
+    LZUCUEBMDEMDUJUDBNOBEPQRUFUGUIDUHUIDABSAUGTUAUB $.
+
+  ${
+    $d j K $.  $d j k M $.  $d j k N $.
+    $( Addition closure law for an upper set of integers.  (Contributed by NM,
+       4-Jun-2006.) $)
+    uzaddcl $p |- ( ( N e. ( ZZ>= ` M ) /\ K e. NN0 ) ->
+                   ( N + K ) e. ( ZZ>= ` M ) ) $=
+      ( vj vk cn0 wcel cuz caddc co cv wi cc0 c1 wa wceq cc eleq1d oveq2 imbi2d
+      cfv eluzelcn ax-1cn addass mp3an3 syl2anr adantr peano2uz adantl eqeltrrd
+      nn0cn exp31 a2d addid1d ibir nn0indALT impcom ) AFGCBHUAZGZCAIJZURGZUSCDK
+      ZIJZURGZLUSCMIJZURGZLUSCEKZIJZURGZLUSCVGNIJZIJZURGZLUSVALDEAVGFGZUSVIVLVM
+      USVIVLVMUSOZVIOVHNIJZVKURVNVOVKPZVIUSCQGZVGQGZVPVMBCUBZVGUKVQVRNQGVPUCCVG
+      NUDUEUFUGVIVOURGVNBVHUHUIUJULUMUSVFUSVECURUSCVSUNRUOVBMPZVDVFUSVTVCVEURVB
+      MCISRTVBVGPZVDVIUSWAVCVHURVBVGCISRTVBVJPZVDVLUSWBVCVKURVBVJCISRTVBAPZVDVA
+      USWCVCUTURVBACISRTUPUQ $.
+  $}
+
+  $( The sum of a nonnegative integer and an integer is an integer greater than
+     or equal to that integer.  (Contributed by Alexander van der Vekens,
+     3-Oct-2018.) $)
+  nn0pzuz $p |- ( ( N e. NN0 /\ Z e. ZZ ) -> ( N + Z ) e. ( ZZ>= ` Z ) ) $=
+    ( cn0 wcel cz wa caddc co cle wbr cuz cfv simpr nn0z zaddcl sylan nn0addge2
+    cr zre ancoms eluz2 syl3anbrc ) ACDZBEDZFUDABGHZEDZBUEIJZUEBKLDUCUDMUCAEDUD
+    UFANABOPUDUCUGUDBRDUCUGBSBAQPTBUEUAUB $.
+
+  ${
+    $d j m N $.  $d j ps $.  $d j ch $.  $d j th $.  $d j ta $.  $d k ph $.
+    $d j k m M $.
+    $( Substitutions. $)
+    uzind4.1 $e |- ( j = M -> ( ph <-> ps ) ) $.
+    uzind4.2 $e |- ( j = k -> ( ph <-> ch ) ) $.
+    uzind4.3 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.
+    uzind4.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind4.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind4.6 $e |- ( k e. ( ZZ>= ` M ) -> ( ch -> th ) ) $.
+    $( Induction on the upper set of integers that starts at an integer
+       ` M ` .  The first four hypotheses give us the substitution instances we
+       need, and the last two are the basis and the induction step.
+       (Contributed by NM, 7-Sep-2005.) $)
+    uzind4 $p |- ( N e. ( ZZ>= ` M ) -> ta ) $=
+      ( vm wcel cz cle wbr cuz cfv cv crab eluzel2 eluzelz breq2 elrab sylanbrc
+      eluzle wa wi w3a eluz2 biimpri 3expb sylan2b syl uzind3 syl2anc ) IHUAUBZ
+      QZHRQZIHPUCZSTZPRUDZQZEHIUEVBIRQHISTZVGHIUFHIUJVEVHPIRVDIHSUGUHUIABCDEFPG
+      HIJKLMNVCGUCZVFQZUKVIVAQZCDULVJVCVIRQZHVISTZUKVKVEVMPVIRVDVIHSUGUHVCVLVMV
+      KVKVCVLVMUMHVIUNUOUPUQOURUSUT $.
+  $}
+
+  ${
+    $d j N $.  $d j ps $.  $d j ch $.  $d j th $.  $d j ta $.  $d k ph $.
+    $d j k M $.
+    $( Basis. $)
+    uzind4ALT.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind4ALT.6 $e |- ( k e. ( ZZ>= ` M ) -> ( ch -> th ) ) $.
+    $( Substitutions. $)
+    uzind4ALT.1 $e |- ( j = M -> ( ph <-> ps ) ) $.
+    uzind4ALT.2 $e |- ( j = k -> ( ph <-> ch ) ) $.
+    uzind4ALT.3 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.
+    uzind4ALT.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Induction on the upper set of integers that starts at an integer
+       ` M ` .  The last four hypotheses give us the substitution instances we
+       need; the first two are the basis and the induction step.  Either
+       ~ uzind4 or ~ uzind4ALT may be used; see comment for ~ nnind .
+       (Contributed by NM, 7-Sep-2005.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    uzind4ALT $p |- ( N e. ( ZZ>= ` M ) -> ta ) $=
+      ( uzind4 ) ABCDEFGHILMNOJKP $.
+  $}
+
+  ${
+    $d m k j M $.  $d j N $.  $d j m ph $.
+    $( Basis. $)
+    uzind4s.1 $e |- ( M e. ZZ -> [. M / k ]. ph ) $.
+    $( Induction step. $)
+    uzind4s.2 $e |- ( k e. ( ZZ>= ` M )
+         -> ( ph -> [. ( k + 1 ) / k ]. ph ) ) $.
+    $( Induction on the upper set of integers that starts at an integer ` M ` ,
+       using explicit substitution.  The hypotheses are the basis and the
+       induction step.  (Contributed by NM, 4-Nov-2005.) $)
+    uzind4s $p |- ( N e. ( ZZ>= ` M ) -> [. N / k ]. ph ) $=
+      ( vj vm wsb wsbc cv c1 caddc co dfsbcq2 sbequ wcel wi nfim imbi12d uzind4
+      cuz cfv nfv nfs1v nfsbc1v weq eleq1 sbequ12 oveq1 sbceq1d chvar ) ABGIABC
+      JABHIZABHKZLMNZJZABDJGHCDABGCOAGHBPABGUOOABGDOEBKZCUBUCZQZAABUQLMNZJZRZRU
+      NURQZUMUPRZRBHVCVDBVCBUDUMUPBABHUEABUOUFSSBHUGZUSVCVBVDUQUNURUHVEAUMVAUPA
+      BHUIVEABUTUOUQUNLMUJUKTTFULUA $.
+  $}
+
+  ${
+    $d k m n M $.  $d m N $.  $d k m n ph $.  $d j k m n $.
+    $( Basis. $)
+    uzind4s2.1 $e |- ( M e. ZZ -> [. M / j ]. ph ) $.
+    $( Induction step. $)
+    uzind4s2.2 $e |- ( k e. ( ZZ>= ` M ) ->
+                     ( [. k / j ]. ph -> [. ( k + 1 ) / j ]. ph ) ) $.
+    $( Induction on the upper set of integers that starts at an integer ` M ` ,
+       using explicit substitution.  The hypotheses are the basis and the
+       induction step.  Use this instead of ~ uzind4s when ` j ` and ` k ` must
+       be distinct in ` [. ( k + 1 ) / j ]. ph ` .  (Contributed by NM,
+       16-Nov-2005.) $)
+    uzind4s2 $p |- ( N e. ( ZZ>= ` M ) -> [. N / j ]. ph ) $=
+      ( vm vn cv wsbc c1 caddc co dfsbcq wi cuz cfv weq oveq1 sbceq1d imbi12d
+      vtoclga uzind4 ) ABHJZKABDKABIJZKZABUFLMNZKZABEKHIDEABUEDOABUEUFOABUEUHOA
+      BUEEOFABCJZKZABUJLMNZKZPUGUIPCUFDQRCISZUKUGUMUIABUJUFOUNABULUHUJUFLMTUAUB
+      GUCUD $.
+  $}
+
+  ${
+    $d j m N $.  $d j ps $.  $d j ch $.  $d j th $.  $d j ta $.  $d k ph $.
+    $d j k m M $.
+    $( Lower bound. $)
+    uzind4i.1 $e |- M e. ZZ $.
+    $( Substitutions. $)
+    uzind4i.2 $e |- ( j = M -> ( ph <-> ps ) ) $.
+    uzind4i.3 $e |- ( j = k -> ( ph <-> ch ) ) $.
+    uzind4i.4 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.
+    uzind4i.5 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind4i.6 $e |- ps $.
+    $( Induction step. $)
+    uzind4i.7 $e |- ( k e. ( ZZ>= ` M ) -> ( ch -> th ) ) $.
+    $( Induction on the upper integers that start at ` M ` .  The first
+       hypothesis specifies the lower bound, the next four give us the
+       substitution instances we need, and the last two are the basis and the
+       induction step.  (Contributed by NM, 4-Sep-2005.) $)
+    uzind4i $p |- ( N e. ( ZZ>= ` M ) -> ta ) $=
+      ( cz wcel a1i uzind4 ) ABCDEFGHIKLMNBHQROSPT $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Rational numbers (as a subset of complex numbers)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -80423,6 +81001,11 @@ htmldef "10" as "<IMG SRC='_10.gif' WIDTH=14 HEIGHT=19 ALT=' 10' TITLE='10'>";
 htmldef ";" as '<FONT COLOR="#808080">;</FONT>';
   althtmldef ";" as '<SPAN CLASS=hidden STYLE="color:gray">;</SPAN>';
   latexdef ";" as "{\rm;}";
+htmldef "ZZ>=" as "<IMG SRC='_bbzge.gif' WIDTH=20 HEIGHT=19 " +
+    "ALT=' ZZ&gt;=' TITLE='ZZ&gt;='>";
+  althtmldef "ZZ>=" as "&#8484;<SUB>&ge;</SUB>";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "ZZ>=" as "\mathbb{Z}_\ge";
 htmldef "-e" as " <IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -' " +
     "TITLE='-'><IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
   althtmldef "-e" as "-<SUB>&#x1D452;</SUB>";
