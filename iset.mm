@@ -78980,7 +78980,7 @@ $)
 
   ${
     $d x y z $.
-    $( A nonempty open interval spans an interval of extended reals.
+    $( An inhabited open interval spans an interval of extended reals.
        (Contributed by NM, 17-Aug-2008.) $)
     eliooxr $p |- ( A e. ( B (,) C ) -> ( B e. RR* /\ C e. RR* ) ) $=
       ( vx vy vz cxr cv clt wbr wa crab cioo df-ioo elmpt2cl ) DEGGDHFHZIJPEHIJ
