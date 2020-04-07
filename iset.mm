@@ -76863,8 +76863,7 @@ $)
     ) ABCDEZAFCDEZAGEFHEFBIJRSKLMBFANOAPQ $.
 
   $( An integer greater than or equal to 3 decreased by 2 is a positive
-     integer, analogous to ~ uz2m1nn .  (Contributed by Alexander van der
-     Vekens, 17-Sep-2018.) $)
+     integer.  (Contributed by Alexander van der Vekens, 17-Sep-2018.) $)
   uz3m2nn $p |- ( N e. ( ZZ>= ` 3 ) -> ( N - 2 ) e. NN ) $=
     ( c3 cuz cfv wcel c2 clt wbr cmin co cn cz cle w3a eluz2 2lt3 cr wa wi a1i
     2re 3re zre ltletr syl3anc mpani imp 3adant1 sylbi wb 2nn eluzge3nn sylancr
