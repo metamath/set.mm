@@ -76764,11 +76764,11 @@ $)
      Madsen, 2-Sep-2009.) $)
   eluzsub $p |- ( ( M e. ZZ /\ K e. ZZ /\ N e. ( ZZ>= ` ( M + K ) ) )
                                           -> ( N - K ) e. ( ZZ>= ` M ) ) $=
-    ( cz wcel caddc co cuz cfv cmin wi cc0 cif wceq fveq2d eleq2d imbi12d oveq2
-    0z elimel oveq1 fveq2 eleq1d eluzsubi dedth2h 3impia ) BDEZADEZCBAFGZHIZEZC
-    AJGZBHIZEZUGUHUKUNKCUGBLMZAFGZHIZEZULUOHIZEZKCUOUHALMZFGZHIZEZCVAJGZUSEZKBA
-    LLBUONZUKURUNUTVGUJUQCVGUIUPHBUOAFUAOPVGUMUSULBUOHUBPQAVANZURVDUTVFVHUQVCCV
-    HUPVBHAVAUOFROPVHULVEUSAVACJRUCQVAUOCBLDSTALDSTUDUEUF $.
+    ( cz wcel caddc co cuz cfv w3a cmin cle wbr wa wb eluz1 syl mpbid cr zred
+    eluzelz 3ad2ant3 simp2 zsubcld simp3 simp1 zaddcld simprd syl3anc mpbir2and
+    leaddsub ) BDEZADEZCBAFGZHIEZJZCAKGZBHIEZUQDEZBUQLMZUPCAUOULCDEZUMUNCUAUBZU
+    LUMUOUCZUDUPUNCLMZUTUPVAVDUPUOVAVDNZULUMUOUEUPUNDEUOVEOUPBAULUMUOUFZVCUGUNC
+    PQRUHUPBSEASECSEVDUTOUPBVFTUPAVCTUPCVBTBACUKUIRUPULURUSUTNOVFBUQPQUJ $.
 
   $( Choices for an element of an upper interval of integers.  (Contributed by
      Jeff Madsen, 2-Sep-2009.) $)
