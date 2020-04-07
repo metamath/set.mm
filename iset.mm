@@ -76563,8 +76563,8 @@ $)
     $( Implication of membership in an upper set of integers.  (Contributed by
        NM, 6-Sep-2005.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
     eluzel2 $p |- ( N e. ( ZZ>= ` M ) -> M e. ZZ ) $=
-      ( cuz cfv wcel cdm cz elfvdm cpw uzf fdmi syl6eleq ) BACDEACFGBACHGGICJKL
-      $.
+      ( cuz cfv wcel cdm cz wrel cpw wf frel ax-mp relelfvdm mpan fdmi syl6eleq
+      uzf ) BACDEZACFZGCHZRASEGGIZCJTQGUACKLBACMNGUACQOP $.
 
     $( Membership in an upper set of integers.  We use the fact that a
        function's value (under our function value definition) is empty outside
