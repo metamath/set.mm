@@ -76682,14 +76682,13 @@ $)
       QTUIUTURUPSVCAUKQTUFUG $.
   $}
 
-  $( Totality of the ordering relation on integers, stated in terms of upper
+  $( Trichotomy of the ordering relation on integers, stated in terms of upper
      integers.  (Contributed by NM, 6-Jul-2005.)  (Revised by Mario Carneiro,
      25-Jun-2013.) $)
   uztric $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
       ( N e. ( ZZ>= ` M ) \/ M e. ( ZZ>= ` N ) ) ) $=
-    ( cz wcel wa cuz cfv wo cle wbr cr zre letric syl2an eluz wb ancoms orbi12d
-    mpbird ) ACDZBCDZEZBAFGDZABFGDZHABIJZBAIJZHZTAKDBKDUGUAALBLABMNUBUCUEUDUFAB
-    OUATUDUFPBAOQRS $.
+    ( cz wcel wa cuz cfv wo cle wbr zletric eluz wb ancoms orbi12d mpbird ) ACD
+    ZBCDZEZBAFGDZABFGDZHABIJZBAIJZHABKSTUBUAUCABLRQUAUCMBALNOP $.
 
   $( The upper integers function is one-to-one.  (Contributed by NM,
      12-Dec-2005.) $)
