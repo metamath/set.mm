@@ -76754,12 +76754,11 @@ $)
      2-Sep-2009.) $)
   eluzadd $p |- ( ( N e. ( ZZ>= ` M ) /\ K e. ZZ ) ->
                                       ( N + K ) e. ( ZZ>= ` ( M + K ) ) ) $=
-    ( cuz cfv wcel cz caddc co eluzel2 wa wi cc0 cif eleq2d fveq2d oveq2 elimel
-    wceq 0z fveq2 oveq1 imbi12d eleq12d imbi2d eluzaddi dedth2h com12 mpand imp
-    ) CBDEZFZAGFZCAHIZBAHIZDEZFZULBGFZUMUQBCJURUMKULUQURUMULUQLCURBMNZDEZFZUNUS
-    AHIZDEZFZLVACUMAMNZHIZUSVEHIZDEZFZLBAMMBUSSZULVAUQVDVJUKUTCBUSDUAOVJUPVCUNV
-    JUOVBDBUSAHUBPOUCAVESZVDVIVAVKUNVFVCVHAVECHQVKVBVGDAVEUSHQPUDUEVEUSCBMGTRAM
-    GTRUFUGUHUIUJ $.
+    ( cuz cfv wcel cz wa caddc co cle eluzelz zaddcl sylan adantr zred wb eluz1
+    wbr syl eluzel2 simpr simpl mpbid simprd leadd1dd zaddcld mpbir2and ) CBDEF
+    ZAGFZHZCAIJZBAIJZDEFZULGFZUMULKSZUICGFZUJUOBCLZCAMNUKBCAUKBUIBGFZUJBCUAOZPU
+    KCUIUQUJUROPUKAUIUJUBZPUKUQBCKSZUKUIUQVBHZUIUJUCUKUSUIVCQUTBCRTUDUEUFUKUMGF
+    UNUOUPHQUKBAUTVAUGUMULRTUH $.
 
   $( Membership in an earlier upper set of integers.  (Contributed by Jeff
      Madsen, 2-Sep-2009.) $)
