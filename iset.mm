@@ -76800,12 +76800,13 @@ $)
   uzin $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
     ( ( ZZ>= ` M ) i^i ( ZZ>= ` N ) ) = ( ZZ>= ` if ( M <_ N , N , M ) ) ) $=
     ( cz wcel wa cuz cfv wo cle wbr wceq wss uzss sylib eluzle fveq2d eqtr4d cr
-    syl zre cin cif uztric sseqin2 iftrue eluzel2 eluzelz letri3 syl2an syl2anc
-    df-ss biantrurd bitr4d biimprcd eqeq1d sylibrd com12 iffalse pm2.61d1 jaoi
-    wb ) ACDZBCDZEBAFGZDZABFGZDZHVDVFUAZABIJZBAUBZFGZKZABUCVEVLVGVEVHVFVKVEVFVD
-    LVHVFKABMVFVDUDNVEVJBFVEVIVJBKABOVIBAUEZSPQVGVHVDVKVGVDVFLVHVDKBAMVDVFUKNVG
-    VJAFVGVIVJAKZVIVGVNVIVGBAKZVNVGVOVIVGVOBAIJZVIEZVIVGVCVBVOVQVAZBAUFBAUGVCBR
-    DARDVRVBBTATBAUHUIUJVGVPVIBAOULUMUNVIVJBAVMUOUPUQVIBAURUSPQUTS $.
+    syl zre cin uztric sseqin2 iftrue df-ss wn wb eluzel2 eluzelz letri3 syl2an
+    cif syl2anc biantrurd bitr4d biimprcd eqeq1d sylibrd com12 wi iffalse zdcle
+    a1i wdc df-dc mpjaod jaoi ) ACDZBCDZEBAFGZDZABFGZDZHVJVLUAZABIJZBAULZFGZKZA
+    BUBVKVRVMVKVNVLVQVKVLVJLVNVLKABMVLVJUCNVKVPBFVKVOVPBKABOVOBAUDZSPQVMVNVJVQV
+    MVJVLLVNVJKBAMVJVLUENVMVPAFVMVOVPAKZVOUFZVOVMVTVOVMBAKZVTVMWBVOVMWBBAIJZVOE
+    ZVOVMVIVHWBWDUGZBAUHZBAUIZVIBRDARDWEVHBTATBAUJUKUMVMWCVOBAOUNUOUPVOVPBAVSUQ
+    URUSWAVTUTVMVOBAVAVCVMVOVDZVOWAHVMVHVIWHWGWFABVBUMVOVENVFPQVGS $.
 
   $( Choices for an element of an upper interval of integers.  (Contributed by
      Jeff Madsen, 2-Sep-2009.) $)
