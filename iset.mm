@@ -76669,9 +76669,7 @@ $)
     $( An upper set of integers is a subset of all integers.  (Contributed by
        NM, 2-Sep-2005.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
     uzssz $p |- ( ZZ>= ` M ) C_ ZZ $=
-      ( cuz cdm wcel cfv cz wss cpw uzf ffvelrni elpwid fdmi eleq2s wn c0 ndmfv
-      0ss syl6eqss pm2.61i ) ABCZDZABEZFGZUCAFTAFDUBFFFHZABIJKFUDBILMUANUBOFABP
-      FQRS $.
+      ( vy cuz cfv cz cv eluzelz ssriv ) BACDEABFGH $.
 
     $( Subset relationship for two sets of upper integers.  (Contributed by NM,
        5-Sep-2005.) $)
