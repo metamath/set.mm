@@ -1,4 +1,4 @@
-$( iset.mm - Version of 4-Apr-2020
+$( iset.mm - Version of 7-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -75079,6 +75079,14 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     HZBAFGZIUOJZABKUMUNUQUOUPUKALDZULUNUQSZAMURUSULURUNUQURUNEZABNZUQUTBAABOPVA
     UOVAUAZUQVAUOUBABUCZQZRTUDUEUOUQSUMUOVBUQUOVAUFVCQUGULUPUQSZUKULBLDZVEBMVFU
     PUQVFUPEVAUQBAOVDRTRUHUIUJ $.
+
+  $( Integer ` <_ ` is decidable.  (Contributed by Jim Kingdon, 7-Apr-2020.) $)
+  zdcle $p |- ( ( A e. ZZ /\ B e. ZZ ) -> DECID A <_ B ) $=
+    ( cz wcel wa clt wbr wceq w3o cle wdc ztri3or cr wi zre ltle wn sylibr syl6
+    wo orc df-dc eqle syl ex adantr lenlt biimpd con2d olc 3jaod syl2an mpd ) A
+    CDZBCDZEABFGZABHZBAFGZIZABJGZKZABLUNAMDZBMDZUSVANUOAOBOVBVCEZUPVAUQURVDUPUT
+    VAABPUTUTUTQZTZVAUTVEUAUTUBZRZSVBUQVANVCVBUQVAVBUQEUTVAABUCVHUDUEUFVDURVEVA
+    VDUTURVDUTURQABUGUHUIVEVFVAVEUTUJVGRSUKULUM $.
 
   $( Integer 'Less than' expressed in terms of 'less than or equal to'.  Also
      see ~ ltleap which is a similar result for complex numbers.  (Contributed
