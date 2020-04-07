@@ -76773,12 +76773,13 @@ $)
   $( Choices for an element of an upper interval of integers.  (Contributed by
      Jeff Madsen, 2-Sep-2009.) $)
   uzm1 $p |- ( N e. ( ZZ>= ` M ) -> ( N = M \/ ( N - 1 ) e. ( ZZ>= ` M ) ) ) $=
-    ( cuz cfv wcel wceq c1 cmin co cle wbr w3a eluzel2 a1d eluzelz peano2zm syl
-    wn cz clt wne df-ne eluzle wa zred eluzelre ltlend biimprd mpand syl5bir wb
-    zltlem1 syl2anc sylibd 3jcad eluz2 syl6ibr orrd ) BACDZEZBAFZBGHIZUSEZUTVAR
-    ZASEZVBSEZAVBJKZLVCUTVDVEVFVGUTVEVDABMZNUTVFVDUTBSEZVFABOZBPQNUTVDABTKZVGVD
-    BAUAZUTVKBAUBUTABJKZVLVKABUCUTVKVMVLUDUTABUTAVHUEABUFUGUHUIUJUTVEVIVKVGUKVH
-    VJABULUMUNUOAVBUPUQUR $.
+    ( cuz cfv wcel wceq clt wbr wo c1 cmin co wn eluzle eluzel2 zred cz syl2anc
+    cle wb eluzelz lenltd mpbid w3o ztri3or df-3or sylib ecased orcomd wi eqcom
+    biimpi a1i zltlem1 1zzd zsubcld eluz bitr4d biimpd orim12d mpd ) BACDZEZABF
+    ZABGHZIBAFZBJKLZVBEZIVCVEVDVCVEVDIZBAGHZVCABSHVJMABNVCABVCAABOZPVCBABUAZPUB
+    UCVCVEVDVJUDZVIVJIVCAQEZBQEZVMVKVLABUERVEVDVJUFUGUHUIVCVDVFVEVHVDVFUJVCVDVF
+    ABUKULUMVCVEVHVCVEAVGSHZVHVCVNVOVEVPTVKVLABUNRVCVNVGQEVHVPTVKVCBJVLVCUOUPAV
+    GUQRURUSUTVA $.
 
   $( The nonnegative difference of integers is a nonnegative integer.
      (Contributed by NM, 4-Sep-2005.) $)
