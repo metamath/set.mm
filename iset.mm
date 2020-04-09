@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Apr-2020
+$( iset.mm - Version of 8-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -74920,6 +74920,16 @@ $)
     VBVIUOVBVFUSVFVBBAPUSABUDBAUEUFUGUHUIUSURUJZRUQVGUSVHUPVBVCVGUSTUOVDVEBAUMM
     VJRUKULUN $.
 
+  $( Integer 'Less than or equal to' expressed in terms of 'less than' or
+     'equals'.  (Contributed by Jim Kingdon, 8-Apr-2020.) $)
+  zleloe $p |- ( ( A e. ZZ /\ B e. ZZ ) ->
+      ( A <_ B <-> ( A < B \/ A = B ) ) ) $=
+    ( cz wcel wa cle wbr clt wo wn cr wb zre lenlt syl2an w3o ztri3or df-3or wi
+    wceq sylib orcomd ord sylbid ltle eqle ex adantr jaod impbid ) ACDZBCDZEZAB
+    FGZABHGZABTZIZUMUNBAHGZJZUQUKAKDZBKDZUNUSLULAMZBMZABNOUMURUQUMUQURUMUOUPURP
+    UQURIABQUOUPURRUAUBUCUDUKUTVAUQUNSULVBVCUTVAEUOUNUPABUEUTUPUNSVAUTUPUNABUFU
+    GUHUIOUJ $.
+
   $( An integer is not a positive integer iff it is less than one.
      (Contributed by NM, 13-Jul-2005.) $)
   znnnlt1 $p |- ( N e. ZZ -> ( -. N e. NN <-> N < 1 ) ) $=
@@ -77097,6 +77107,31 @@ $)
        induction step.  (Contributed by NM, 4-Sep-2005.) $)
     uzind4i $p |- ( N e. ( ZZ>= ` M ) -> ta ) $=
       ( cz wcel a1i uzind4 ) ABCDEFGHIKLMNBHQROSPT $.
+  $}
+
+  ${
+    $d x y z $.  $d y w ph $.  $d x w z ps $.
+    $( Substitutions. $)
+    indstr.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Induction step. $)
+    indstr.2 $e |- ( x e. NN -> ( A. y e. NN ( y < x -> ps ) -> ph ) ) $.
+    $( Strong Mathematical Induction for positive integers (inference schema).
+       (Contributed by NM, 17-Aug-2001.) $)
+    indstr $p |- ( x e. NN -> ph ) $=
+      ( vz vw vu cv cn wcel clt wbr wi wral c1 breq2 imbi1d ralbidv co wceq weq
+      caddc nnnlt1 pm2.21d rgen wex wb 1nn elex2 nfra1 r19.3rm mp2b wa wo com12
+      rsp adantl wsbc nfv nfsbc1v nfim sbceq1a imbi12d cbvral mpbi rspec dfsbcq
+      vex sbcie syl5bbr biimprcd syl6 adantr jcad jaob syl6ibr cle nnleltp1 nnz
+      cz zleloe syl2an bitr3d ancoms sylibrd ralimdva syl5bi nnind mpd ) CJZKLD
+      JZWLMNZBOZDKPZAWMGJZMNZBOZDKPWMQMNZBOZDKPWMHJZMNZBOZDKPZWMXBQUDUAZMNZBOZD
+      KPZWPGHWLWQQUBZWSXADKXJWRWTBWQQWMMRSTGHUCZWSXDDKXKWRXCBWQXBWMMRSTWQXFUBZW
+      SXHDKXLWRXGBWQXFWMMRSTGCUCZWSWODKXMWRWNBWQWLWMMRSTXADKWMKLZWTBWMUEUFUGXEX
+      EDKPZXBKLZXIQKLIJKLIUHXEXOUIUJIQKUKXEDIKXDDKULUMUNXPXEXHDKXPXNUOZXEXCDHUC
+      ZUPZBOZXHXQXEXDXRBOZUOXTXQXEXDYAXNXEXDOXPXEXNXDXDDKURUQUSXPXEYAOXNXPXEACX
+      BUTZYAXEYBOZHKWPAOZCKPYCHKPYDCKFUGYDYCCHKYDHVAXEYBCXECVAACXBVBVCCHUCZWPXE
+      AYBYEWOXDDKYEWNXCBWLXBWMMRSTACXBVDVEVFVGVHXRBYBBACWMUTXRYBABCWMDVJEVKACWM
+      XBVIVLVMVNVOVPXCBXRVQVRXQXGXSBXNXPXGXSUIXNXPUOWMXBVSNZXGXSWMXBVTXNWMWBLXB
+      WBLYFXSUIXPWMWAXBWAWMXBWCWDWEWFSWGWHWIWJFWK $.
   $}
 
 $(
