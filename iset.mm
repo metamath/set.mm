@@ -79834,10 +79834,11 @@ $)
   $( A positive integer is either 1 or greater than or equal to 2.
      (Contributed by Paul Chapman, 17-Nov-2012.) $)
   elnn1uz2 $p |- ( N e. NN <-> ( N = 1 \/ N e. ( ZZ>= ` 2 ) ) ) $=
-    ( c1 wceq c2 cuz cfv wcel wo cn wne wa eluz2b3 orbi2i exmidne ordi mpbiran2
-    wi 1nn eleq1 mpbiri pm2.621 ax-mp olc impbii 3bitrri ) ABCZADEFGZHUFAIGZABJ
-    ZKZHZUFUHHZUHUGUJUFALMUKULUFUIHABNUFUHUIOPULUHUFUHQULUHQUFUHBIGRABISTUFUHUA
-    UBUHUFUCUDUE $.
+    ( cn wcel c1 wceq c2 cuz cfv wo wne wa olc cz nnz wn 1z zdceq orbi2i sylibr
+    wdc mpan2 df-dc sylib df-ne syl ordi sylanbrc eluz2b3 1nn eleq1 mpbiri jaoi
+    eluz2nn impbii ) ABCZADEZAFGHCZIZUOUPUOADJZKZIZURUOUPUOIUPUSIZVAUOUPLUOAMCZ
+    VBANVCUPUPOZIZVBVCUPTZVEVCDMCVFPADQUAUPUBUCUSVDUPADUDRSUEUPUOUSUFUGUQUTUPAU
+    HRSUPUOUQUPUODBCUIADBUJUKAUMULUN $.
 
   $( Closure of multiplication of integers greater than or equal to 2.
      (Contributed by Paul Chapman, 26-Oct-2012.) $)
