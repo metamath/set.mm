@@ -79788,6 +79788,85 @@ $)
   unitssre $p |- ( 0 [,] 1 ) C_ RR $=
     ( cc0 cr wcel c1 cicc co wss 0re 1re iccssre mp2an ) ABCDBCADEFBGHIADJK $.
 
+  $( Membership in a nonnegative upper set of integers implies membership in
+     ` NN0 ` .  (Contributed by Paul Chapman, 22-Jun-2011.) $)
+  eluznn0 $p |- ( ( N e. NN0 /\ M e. ( ZZ>= ` N ) ) -> M e. NN0 ) $=
+    ( cc0 cn0 nn0uz uztrn2 ) CABDEF $.
+
+  $( Membership in a positive upper set of integers implies membership in
+     ` NN ` .  (Contributed by JJ, 1-Oct-2018.) $)
+  eluznn $p |- ( ( N e. NN /\ M e. ( ZZ>= ` N ) ) -> M e. NN ) $=
+    ( c1 cn nnuz uztrn2 ) CABDEF $.
+
+  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
+     Paul Chapman, 23-Nov-2012.) $)
+  eluz2b1 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. ZZ /\ 1 < N ) ) $=
+    ( c2 cuz cfv wcel cz cle wbr wa c1 clt 2z eluz1i caddc co zltp1le mpan df-2
+    wb 1z breq1i syl6bbr pm5.32i bitr4i ) ABCDEAFEZBAGHZIUEJAKHZIBALMUEUGUFUEUG
+    JJNOZAGHZUFJFEUEUGUISTJAPQBUHAGRUAUBUCUD $.
+
+  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
+     Paul Chapman, 23-Nov-2012.) $)
+  eluz2b2 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. NN /\ 1 < N ) ) $=
+    ( c2 cuz cfv wcel cz c1 clt wbr wa cn eluz2b1 cle cr 1re zre ltle imdistani
+    wi sylancr elnnz1 sylibr simpr jca nnz anim1i impbii bitri ) ABCDEAFEZGAHIZ
+    JZAKEZUJJZALUKUMUKULUJUKUIGAMIZJULUIUJUNUIGNEANEUJUNSOAPGAQTRAUAUBUIUJUCUDU
+    LUIUJAUEUFUGUH $.
+
+  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
+     Paul Chapman, 23-Nov-2012.) $)
+  eluz2b3 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. NN /\ N =/= 1 ) ) $=
+    ( c2 cuz cfv wcel cn c1 clt wbr wa wne eluz2b2 nngt1ne1 pm5.32i bitri ) ABC
+    DEAFEZGAHIZJPAGKZJALPQRAMNO $.
+
+  $( One less than an integer greater than or equal to 2 is a positive
+     integer.  (Contributed by Paul Chapman, 17-Nov-2012.) $)
+  uz2m1nn $p |- ( N e. ( ZZ>= ` 2 ) -> ( N - 1 ) e. NN ) $=
+    ( c2 cuz cfv wcel cz c1 clt wbr wa cmin co cn eluz2b1 wb znnsub mpan biimpa
+    1z sylbi ) ABCDEAFEZGAHIZJAGKLMEZANUAUBUCGFEUAUBUCOSGAPQRT $.
+
+  $( 1 is not in ` ( ZZ>= `` 2 ) ` .  (Contributed by Paul Chapman,
+     21-Nov-2012.) $)
+  1nuz2 $p |- -. 1 e. ( ZZ>= ` 2 ) $=
+    ( c1 c2 cuz cfv wcel wne neirr cn eluz2b3 simprbi mto ) ABCDEZAAFZAGLAHEMAI
+    JK $.
+
+  $( A positive integer is either 1 or greater than or equal to 2.
+     (Contributed by Paul Chapman, 17-Nov-2012.) $)
+  elnn1uz2 $p |- ( N e. NN <-> ( N = 1 \/ N e. ( ZZ>= ` 2 ) ) ) $=
+    ( c1 wceq c2 cuz cfv wcel wo cn wne wa eluz2b3 orbi2i exmidne ordi mpbiran2
+    wi 1nn eleq1 mpbiri pm2.621 ax-mp olc impbii 3bitrri ) ABCZADEFGZHUFAIGZABJ
+    ZKZHZUFUHHZUHUGUJUFALMUKULUFUIHABNUFUHUIOPULUHUFUHQULUHQUFUHBIGRABISTUFUHUA
+    UBUHUFUCUDUE $.
+
+  $( Closure of multiplication of integers greater than or equal to 2.
+     (Contributed by Paul Chapman, 26-Oct-2012.) $)
+  uz2mulcl $p |- ( ( M e. ( ZZ>= ` 2 ) /\ N e. ( ZZ>= ` 2 ) ) ->
+                   ( M x. N ) e. ( ZZ>= ` 2 ) ) $=
+    ( c2 cuz cfv wcel wa cmul co cz c1 clt wbr eluzelz syl2an cr eluz2b1 anim1i
+    zre sylbi zmulcl mulgt1 an4s sylanbrc ) ACDEZFZBUEFZGABHIZJFZKUHLMZUHUEFUFA
+    JFZBJFZUIUGCANCBNABUAOUFAPFZKALMZGZBPFZKBLMZGZUJUGUFUKUNGUOAQUKUMUNASRTUGUL
+    UQGURBQULUPUQBSRTUMUPUNUQUJABUBUCOUHQUD $.
+
+  ${
+    $d ph y $.  $d ps x $.  $d x y $.
+    indstr2.1 $e |- ( x = 1 -> ( ph <-> ch ) ) $.
+    indstr2.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    indstr2.3 $e |- ch $.
+    indstr2.4 $e |- ( x e. ( ZZ>= ` 2 ) ->
+                      ( A. y e. NN ( y < x -> ps ) -> ph ) ) $.
+    $( Strong Mathematical Induction for positive integers (inference schema).
+       The first two hypotheses give us the substitution instances we need; the
+       last two are the basis and the induction step.  (Contributed by Paul
+       Chapman, 21-Nov-2012.) $)
+    indstr2 $p |- ( x e. NN -> ph ) $=
+      ( cv cn wcel c1 wceq c2 cuz clt wbr wi wb cfv wral elnn1uz2 nnnlt1 adantl
+      wo wa wn breq2 adantr mtbird pm2.21d ralrimiva pm5.5 syl bitrd jaoi sylbi
+      mpbiri indstr ) ABDEGDJZKLVAMNZVAOPUALZUFEJZVAQRZBSZEKUBZASZVAUCVBVHVCVBV
+      HCHVBVHACVBVGVHATVBVFEKVBVDKLZUGZVEBVJVEVDMQRZVIVKUHVBVDUDUEVBVEVKTVIVAMV
+      DQUIUJUKULUMVGAUNUOFUPUSIUQURUT $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
