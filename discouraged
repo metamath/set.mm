@@ -15992,6 +15992,7 @@ New usage of "funcrngcsetcALT" is discouraged (0 uses).
 New usage of "funsnfsupOLD" is discouraged (0 uses).
 New usage of "fusgraimpclALT" is discouraged (2 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
+New usage of "fvn0elsuppOLD" is discouraged (0 uses).
 New usage of "gen11" is discouraged (19 uses).
 New usage of "gen11nv" is discouraged (5 uses).
 New usage of "gen12" is discouraged (7 uses).
@@ -19575,6 +19576,7 @@ Proof modification of "funsnfsupOLD" is discouraged (107 steps).
 Proof modification of "fusgraimpclALT" is discouraged (68 steps).
 Proof modification of "fusgraimpclALT2" is discouraged (106 steps).
 Proof modification of "fvimacnvALT" is discouraged (102 steps).
+Proof modification of "fvn0elsuppOLD" is discouraged (75 steps).
 Proof modification of "gen11" is discouraged (27 steps).
 Proof modification of "gen11nv" is discouraged (14 steps).
 Proof modification of "gen12" is discouraged (16 steps).
