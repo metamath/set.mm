@@ -79885,6 +79885,21 @@ $)
       SVFWEVEHPSUTVCVAVD $.
   $}
 
+  ${
+    $d A w z $.
+    $( Two ways to express the image under negation of a set of integers.
+       (Contributed by Paul Chapman, 21-Mar-2011.) $)
+    eqreznegel $p |- ( A C_ ZZ ->
+                       { z e. RR | -u z e. A } = { z e. ZZ | -u z e. A } ) $=
+      ( vw cz wss cv cneg wcel cr crab wa wi ssel cc recn caddc cc0 negid elrab
+      co 0z syl6eqel pm4.71i zrevaddcl syl5bb syl5ib syl6 com23 impd simpr jcad
+      a1i zre anim1i impbid1 weq negeq eleq1d 3bitr4g eqrdv ) BDEZCAFZGZBHZAIJZ
+      VDADJZVACFZIHZVGGZBHZKZVGDHZVJKZVGVEHVGVFHVAVKVMVAVKVLVJVAVHVJVLVAVJVHVLV
+      AVJVIDHZVHVLLBDVIMVHVGNHZVNVLVGOVOVOVGVIPTZDHZKVNVLVOVQVOVPQDVGRUAUBUCVGV
+      IUDUEUFUGUHUIVKVJLVAVHVJUJULUKVLVHVJVGUMUNUOVDVJAVGIACUPVCVIBVBVGUQURZSVD
+      VJAVGDVRSUSUT $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
