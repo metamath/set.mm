@@ -8,7 +8,7 @@
 936489600|First external contributor (David Harvey)
 938822400|Proved abstrii - The Triangle Inequality (Norman Megill), Metamath 100 #91
 978048000|Second external contributor (Josh Purinton)
-1010448000|Proved sqr2irr - The Irrationality of the Square Root of 2 (Norman Megill), Metamath 100 #1
+1010448000|Proved sqrt2irr - The Irrationality of the Square Root of 2 (Norman Megill), Metamath 100 #1
 1091232000|Proved qnnen - The Denumerability of the Rational Numbers (Norman Megill, later revised by Mario Carneiro), Metamath 100 #3
 1097625600|Proved ruc - The Non-Denumerability of the Continuum (Norman Megill), Metamath 100 #22
 1110758400|Definition of the cosine function, df-cos
