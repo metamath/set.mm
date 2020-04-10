@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-Apr-2020
+$( iset.mm - Version of 10-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -79898,6 +79898,19 @@ $)
       AVJVIDHZVHVLLBDVIMVHVGNHZVNVLVGOVOVOVGVIPTZDHZKVNVLVOVQVOVPQDVGRUAUBUCVGV
       IUDUEUFUGUHUIVKVJLVAVHVJUJULUKVLVHVJVGUMUNUOVDVJAVGIACUPVCVIBVBVGUQURZSVD
       VJAVGDVRSUSUT $.
+  $}
+
+  ${
+    $d A w x y z $.
+    $( The image under negation of an inhabited set of reals is inhabited.
+       (Contributed by Jim Kingdon, 10-Apr-2020.) $)
+    negm $p |- ( ( A C_ RR /\ E. x x e. A ) ->
+        E. y y e. { z e. RR | -u z e. A } ) $=
+      ( cr wss cv wcel wex cneg crab ssel renegcl wceq negeq eleq1d elrab3 recn
+      wb syl negnegd bitrd biimprd syli elex2 syl6 exlimdv imp ) DEFZAGZDHZAIBG
+      CGZJZDHZCEKZHBIZUIUKUPAUIUKUJJZUOHZUPUKUIUJEHZURDEUJLUSURUKUSURUQJZDHZUKU
+      SUQEHURVASUJMUNVACUQEULUQNUMUTDULUQOPQTUSUTUJDUSUJUJRUAPUBUCUDBUQUOUEUFUG
+      UH $.
   $}
 
 $(
