@@ -79868,6 +79868,23 @@ $)
       DQUIUJUKULUMVGAUNUOFUPUSIUQURUT $.
   $}
 
+  ${
+    $d A a b x y z $.
+    $( The image under negation of a bounded-above set of reals is bounded
+       below.  (Contributed by Paul Chapman, 21-Mar-2011.) $)
+    ublbneg $p |- ( E. x e. RR A. y e. A y <_ x ->
+                    E. x e. RR A. y e. { z e. RR | -u z e. A } x <_ y ) $=
+      ( vb va cv cle wbr wral cr wrex cneg wcel crab breq1 cbvralv wceq ralbidv
+      rexbii breq2 cbvrexv bitri renegcl wa wi elrabi negeq eleq1d elrab3 mpcom
+      biimpd rspcv adantl wb lenegcon1 sylan2 sylibrd ralrimdva rspcev rexlimiv
+      syl syl6an sylbir ) BGZAGZHIZBDJZAKLZEGZFGZHIZEDJZFKLZVFVEHIZBCGZMZDNZCKO
+      ZJZAKLZVNVEVKHIZBDJZFKLVIVMWCFKVLWBEBDVJVEVKHPQTWCVHFAKVKVFRWBVGBDVKVFVEH
+      UASUBUCVMWAFKVKKNZVKMZKNVMWEVEHIZBVSJZWAVKUDWDVMWFBVSWDVEVSNZUEVMVEMZVKHI
+      ZWFWHVMWJUFZWDWHWIDNZWKVEKNZWHWLVRCVEKUGZWMWHWLVRWLCVEKVPVERVQWIDVPVEUHUI
+      UJULUKVLWJEWIDVJWIVKHPUMVBUNWHWDWMWFWJUOWNVKVEUPUQURUSVTWGAWEKVFWERVOWFBV
+      SVFWEVEHPSUTVCVAVD $.
+  $}
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
