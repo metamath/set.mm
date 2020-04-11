@@ -79929,6 +79929,18 @@ $)
     EZWGWKWDWCXFWAWBWCVGVHWDWAWGXFLWTWAWGHDRTZAEFZXFHBCWAWGXILVIHAUGUHGXHAEVRUI
     UJPWDAVJCGVJCWKXGLWDAWTVKVLAGVMVNVOWKWIWJVPVQVSVT $.
 
+  $( Alternate proof of ~ nn0ge2m1nn :  If a nonnegative integer is greater
+     than or equal to two, the integer decreased by 1 is a positive integer.
+     This version is proved using ~ eluz2 , a theorem for upper sets of
+     integers, which are defined later than the positive and nonnegative
+     integers.  This proof is, however, much shorter than the proof of
+     ~ nn0ge2m1nn .  (Contributed by Alexander van der Vekens, 1-Aug-2018.)
+     (New usage is discouraged.)  (Proof modification is discouraged.) $)
+  nn0ge2m1nnALT $p |- ( ( N e. NN0 /\ 2 <_ N ) -> ( N - 1 ) e. NN ) $=
+    ( cn0 wcel c2 cle wbr wa cuz cfv c1 cmin co cn cz 2z a1i adantr simpr eluz2
+    nn0z syl3anbrc uz2m1nn syl ) ABCZDAEFZGZADHICZAJKLMCUFDNCZANCZUEUGUHUFOPUDU
+    IUEATQUDUERDASUAAUBUC $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
