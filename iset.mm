@@ -77134,6 +77134,159 @@ $)
       WBLYFXSUIXPWMWAXBWAWMXBWCWDWEWFSWGWHWIWJFWK $.
   $}
 
+  $( Membership in a nonnegative upper set of integers implies membership in
+     ` NN0 ` .  (Contributed by Paul Chapman, 22-Jun-2011.) $)
+  eluznn0 $p |- ( ( N e. NN0 /\ M e. ( ZZ>= ` N ) ) -> M e. NN0 ) $=
+    ( cc0 cn0 nn0uz uztrn2 ) CABDEF $.
+
+  $( Membership in a positive upper set of integers implies membership in
+     ` NN ` .  (Contributed by JJ, 1-Oct-2018.) $)
+  eluznn $p |- ( ( N e. NN /\ M e. ( ZZ>= ` N ) ) -> M e. NN ) $=
+    ( c1 cn nnuz uztrn2 ) CABDEF $.
+
+  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
+     Paul Chapman, 23-Nov-2012.) $)
+  eluz2b1 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. ZZ /\ 1 < N ) ) $=
+    ( c2 cuz cfv wcel cz cle wbr wa c1 clt 2z eluz1i caddc co zltp1le mpan df-2
+    wb 1z breq1i syl6bbr pm5.32i bitr4i ) ABCDEAFEZBAGHZIUEJAKHZIBALMUEUGUFUEUG
+    JJNOZAGHZUFJFEUEUGUISTJAPQBUHAGRUAUBUCUD $.
+
+  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
+     Paul Chapman, 23-Nov-2012.) $)
+  eluz2b2 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. NN /\ 1 < N ) ) $=
+    ( c2 cuz cfv wcel cz c1 clt wbr wa cn eluz2b1 cle cr 1re zre ltle imdistani
+    wi sylancr elnnz1 sylibr simpr jca nnz anim1i impbii bitri ) ABCDEAFEZGAHIZ
+    JZAKEZUJJZALUKUMUKULUJUKUIGAMIZJULUIUJUNUIGNEANEUJUNSOAPGAQTRAUAUBUIUJUCUDU
+    LUIUJAUEUFUGUH $.
+
+  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
+     Paul Chapman, 23-Nov-2012.) $)
+  eluz2b3 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. NN /\ N =/= 1 ) ) $=
+    ( c2 cuz cfv wcel cn c1 clt wbr wa wne eluz2b2 nngt1ne1 pm5.32i bitri ) ABC
+    DEAFEZGAHIZJPAGKZJALPQRAMNO $.
+
+  $( One less than an integer greater than or equal to 2 is a positive
+     integer.  (Contributed by Paul Chapman, 17-Nov-2012.) $)
+  uz2m1nn $p |- ( N e. ( ZZ>= ` 2 ) -> ( N - 1 ) e. NN ) $=
+    ( c2 cuz cfv wcel cz c1 clt wbr wa cmin co cn eluz2b1 wb znnsub mpan biimpa
+    1z sylbi ) ABCDEAFEZGAHIZJAGKLMEZANUAUBUCGFEUAUBUCOSGAPQRT $.
+
+  $( 1 is not in ` ( ZZ>= `` 2 ) ` .  (Contributed by Paul Chapman,
+     21-Nov-2012.) $)
+  1nuz2 $p |- -. 1 e. ( ZZ>= ` 2 ) $=
+    ( c1 c2 cuz cfv wcel wne neirr cn eluz2b3 simprbi mto ) ABCDEZAAFZAGLAHEMAI
+    JK $.
+
+  $( A positive integer is either 1 or greater than or equal to 2.
+     (Contributed by Paul Chapman, 17-Nov-2012.) $)
+  elnn1uz2 $p |- ( N e. NN <-> ( N = 1 \/ N e. ( ZZ>= ` 2 ) ) ) $=
+    ( cn wcel c1 wceq c2 cuz cfv wo wne wa olc cz nnz wn 1z zdceq orbi2i sylibr
+    wdc mpan2 df-dc sylib df-ne syl ordi sylanbrc eluz2b3 1nn eleq1 mpbiri jaoi
+    eluz2nn impbii ) ABCZADEZAFGHCZIZUOUPUOADJZKZIZURUOUPUOIUPUSIZVAUOUPLUOAMCZ
+    VBANVCUPUPOZIZVBVCUPTZVEVCDMCVFPADQUAUPUBUCUSVDUPADUDRSUEUPUOUSUFUGUQUTUPAU
+    HRSUPUOUQUPUODBCUIADBUJUKAUMULUN $.
+
+  $( Closure of multiplication of integers greater than or equal to 2.
+     (Contributed by Paul Chapman, 26-Oct-2012.) $)
+  uz2mulcl $p |- ( ( M e. ( ZZ>= ` 2 ) /\ N e. ( ZZ>= ` 2 ) ) ->
+                   ( M x. N ) e. ( ZZ>= ` 2 ) ) $=
+    ( c2 cuz cfv wcel wa cmul co cz c1 clt wbr eluzelz syl2an cr eluz2b1 anim1i
+    zre sylbi zmulcl mulgt1 an4s sylanbrc ) ACDEZFZBUEFZGABHIZJFZKUHLMZUHUEFUFA
+    JFZBJFZUIUGCANCBNABUAOUFAPFZKALMZGZBPFZKBLMZGZUJUGUFUKUNGUOAQUKUMUNASRTUGUL
+    UQGURBQULUPUQBSRTUMUPUNUQUJABUBUCOUHQUD $.
+
+  ${
+    $d ph y $.  $d ps x $.  $d x y $.
+    indstr2.1 $e |- ( x = 1 -> ( ph <-> ch ) ) $.
+    indstr2.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    indstr2.3 $e |- ch $.
+    indstr2.4 $e |- ( x e. ( ZZ>= ` 2 ) ->
+                      ( A. y e. NN ( y < x -> ps ) -> ph ) ) $.
+    $( Strong Mathematical Induction for positive integers (inference schema).
+       The first two hypotheses give us the substitution instances we need; the
+       last two are the basis and the induction step.  (Contributed by Paul
+       Chapman, 21-Nov-2012.) $)
+    indstr2 $p |- ( x e. NN -> ph ) $=
+      ( cv cn wcel c1 wceq c2 cuz clt wbr wi wb cfv wral elnn1uz2 nnnlt1 adantl
+      wo wa wn breq2 adantr mtbird pm2.21d ralrimiva pm5.5 syl bitrd jaoi sylbi
+      mpbiri indstr ) ABDEGDJZKLVAMNZVAOPUALZUFEJZVAQRZBSZEKUBZASZVAUCVBVHVCVBV
+      HCHVBVHACVBVGVHATVBVFEKVBVDKLZUGZVEBVJVEVDMQRZVIVKUHVBVDUDUEVBVEVKTVIVAMV
+      DQUIUJUKULUMVGAUNUOFUPUSIUQURUT $.
+  $}
+
+  ${
+    $d A a b x y z $.
+    $( The image under negation of a bounded-above set of reals is bounded
+       below.  (Contributed by Paul Chapman, 21-Mar-2011.) $)
+    ublbneg $p |- ( E. x e. RR A. y e. A y <_ x ->
+                    E. x e. RR A. y e. { z e. RR | -u z e. A } x <_ y ) $=
+      ( vb va cv cle wbr wral cr wrex cneg wcel crab breq1 cbvralv wceq ralbidv
+      rexbii breq2 cbvrexv bitri renegcl wa wi elrabi negeq eleq1d elrab3 mpcom
+      biimpd rspcv adantl wb lenegcon1 sylan2 sylibrd ralrimdva rspcev rexlimiv
+      syl syl6an sylbir ) BGZAGZHIZBDJZAKLZEGZFGZHIZEDJZFKLZVFVEHIZBCGZMZDNZCKO
+      ZJZAKLZVNVEVKHIZBDJZFKLVIVMWCFKVLWBEBDVJVEVKHPQTWCVHFAKVKVFRWBVGBDVKVFVEH
+      UASUBUCVMWAFKVKKNZVKMZKNVMWEVEHIZBVSJZWAVKUDWDVMWFBVSWDVEVSNZUEVMVEMZVKHI
+      ZWFWHVMWJUFZWDWHWIDNZWKVEKNZWHWLVRCVEKUGZWMWHWLVRWLCVEKVPVERVQWIDVPVEUHUI
+      UJULUKVLWJEWIDVJWIVKHPUMVBUNWHWDWMWFWJUOWNVKVEUPUQURUSVTWGAWEKVFWERVOWFBV
+      SVFWEVEHPSUTVCVAVD $.
+  $}
+
+  ${
+    $d A w z $.
+    $( Two ways to express the image under negation of a set of integers.
+       (Contributed by Paul Chapman, 21-Mar-2011.) $)
+    eqreznegel $p |- ( A C_ ZZ ->
+                       { z e. RR | -u z e. A } = { z e. ZZ | -u z e. A } ) $=
+      ( vw cz wss cv cneg wcel cr crab wa wi ssel cc recn caddc cc0 negid elrab
+      co 0z syl6eqel pm4.71i zrevaddcl syl5bb syl5ib syl6 com23 impd simpr jcad
+      a1i zre anim1i impbid1 weq negeq eleq1d 3bitr4g eqrdv ) BDEZCAFZGZBHZAIJZ
+      VDADJZVACFZIHZVGGZBHZKZVGDHZVJKZVGVEHVGVFHVAVKVMVAVKVLVJVAVHVJVLVAVJVHVLV
+      AVJVIDHZVHVLLBDVIMVHVGNHZVNVLVGOVOVOVGVIPTZDHZKVNVLVOVQVOVPQDVGRUAUBUCVGV
+      IUDUEUFUGUHUIVKVJLVAVHVJUJULUKVLVHVJVGUMUNUOVDVJAVGIACUPVCVIBVBVGUQURZSVD
+      VJAVGDVRSUSUT $.
+  $}
+
+  ${
+    $d A w x y z $.
+    $( The image under negation of an inhabited set of reals is inhabited.
+       (Contributed by Jim Kingdon, 10-Apr-2020.) $)
+    negm $p |- ( ( A C_ RR /\ E. x x e. A ) ->
+        E. y y e. { z e. RR | -u z e. A } ) $=
+      ( cr wss cv wcel wex cneg crab ssel renegcl wceq negeq eleq1d elrab3 recn
+      wb syl negnegd bitrd biimprd syli elex2 syl6 exlimdv imp ) DEFZAGZDHZAIBG
+      CGZJZDHZCEKZHBIZUIUKUPAUIUKUJJZUOHZUPUKUIUJEHZURDEUJLUSURUKUSURUQJZDHZUKU
+      SUQEHURVASUJMUNVACUQEULUQNUMUTDULUQOPQTUSUTUJDUSUJUJRUAPUBUCUDBUQUOUEUFUG
+      UH $.
+  $}
+
+  $( A (nonnegative) integer between 1 and 3 must be 1, 2 or 3.  (Contributed
+     by Alexander van der Vekens, 13-Sep-2018.) $)
+  nn01to3 $p |- ( ( N e. NN0 /\ 1 <_ N /\ N <_ 3 )
+      -> ( N = 1 \/ N = 2 \/ N = 3 ) ) $=
+    ( cn0 wcel c1 cle wbr c3 c2 clt w3o wo wb cz zleloe sylancr syl mpbid caddc
+    wceq co w3a simp2 simp1 1z nn0z 1nn0 nn0ltp1le mpan breq1i syl6bbr 2z bitrd
+    orbi1d orcomd orcom orbi2i sylib 3orass sylibr wi 3mix1 eqcoms a1i 3mix2 wa
+    df-2 simp3 biantrurd 2nn0 cr nn0red 3re letri3 sylancl 3bitr4d 3mix3 syl6bi
+    df-3 3jaod mpd ) ABCZDAEFZAGEFZUAZDASZHASZHAIFZJZADSZAHSZAGSZJZWDWEWFWGKZKZ
+    WHWDWEWGWFKZKWNWDWOWEWDDAIFZWEKZWOWEKZWDWBWQWAWBWCUBWDWAWBWQLZWAWBWCUCZWADM
+    CAMCZWSUDAUEZDANOPQWDWAWQWRLWTWAWPWOWEWAWPHAEFZWOWAWPDDRTZAEFZXCDBCWAWPXELU
+    FDAUGUHHXDAEVFUIUJWAHMCXAXCWOLUKXBHANOULUMPQUNWOWMWEWGWFUOUPUQWEWFWGURUSWDW
+    EWLWFWGWEWLUTWDWLADWIWJWKVAVBVCWFWLUTWDWLAHWJWIWKVDVBVCWDWGWKWLWDGAEFZWCXFV
+    EZWGWKWDWCXFWAWBWCVGVHWDWAWGXFLWTWAWGHDRTZAEFZXFHBCWAWGXILVIHAUGUHGXHAEVRUI
+    UJPWDAVJCGVJCWKXGLWDAWTVKVLAGVMVNVOWKWIWJVPVQVSVT $.
+
+  $( Alternate proof of ~ nn0ge2m1nn :  If a nonnegative integer is greater
+     than or equal to two, the integer decreased by 1 is a positive integer.
+     This version is proved using ~ eluz2 , a theorem for upper sets of
+     integers, which are defined later than the positive and nonnegative
+     integers.  This proof is, however, much shorter than the proof of
+     ~ nn0ge2m1nn .  (Contributed by Alexander van der Vekens, 1-Aug-2018.)
+     (New usage is discouraged.)  (Proof modification is discouraged.) $)
+  nn0ge2m1nnALT $p |- ( ( N e. NN0 /\ 2 <_ N ) -> ( N - 1 ) e. NN ) $=
+    ( cn0 wcel c2 cle wbr wa cuz cfv c1 cmin co cn cz 2z a1i adantr simpr eluz2
+    nn0z syl3anbrc uz2m1nn syl ) ABCZDAEFZGZADHICZAJKLMCUFDNCZANCZUEUGUHUFOPUDU
+    IUEATQUDUERDASUAAUBUC $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Rational numbers (as a subset of complex numbers)
@@ -79787,159 +79940,6 @@ $)
      28-Feb-2017.) $)
   unitssre $p |- ( 0 [,] 1 ) C_ RR $=
     ( cc0 cr wcel c1 cicc co wss 0re 1re iccssre mp2an ) ABCDBCADEFBGHIADJK $.
-
-  $( Membership in a nonnegative upper set of integers implies membership in
-     ` NN0 ` .  (Contributed by Paul Chapman, 22-Jun-2011.) $)
-  eluznn0 $p |- ( ( N e. NN0 /\ M e. ( ZZ>= ` N ) ) -> M e. NN0 ) $=
-    ( cc0 cn0 nn0uz uztrn2 ) CABDEF $.
-
-  $( Membership in a positive upper set of integers implies membership in
-     ` NN ` .  (Contributed by JJ, 1-Oct-2018.) $)
-  eluznn $p |- ( ( N e. NN /\ M e. ( ZZ>= ` N ) ) -> M e. NN ) $=
-    ( c1 cn nnuz uztrn2 ) CABDEF $.
-
-  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
-     Paul Chapman, 23-Nov-2012.) $)
-  eluz2b1 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. ZZ /\ 1 < N ) ) $=
-    ( c2 cuz cfv wcel cz cle wbr wa c1 clt 2z eluz1i caddc co zltp1le mpan df-2
-    wb 1z breq1i syl6bbr pm5.32i bitr4i ) ABCDEAFEZBAGHZIUEJAKHZIBALMUEUGUFUEUG
-    JJNOZAGHZUFJFEUEUGUISTJAPQBUHAGRUAUBUCUD $.
-
-  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
-     Paul Chapman, 23-Nov-2012.) $)
-  eluz2b2 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. NN /\ 1 < N ) ) $=
-    ( c2 cuz cfv wcel cz c1 clt wbr wa cn eluz2b1 cle cr 1re zre ltle imdistani
-    wi sylancr elnnz1 sylibr simpr jca nnz anim1i impbii bitri ) ABCDEAFEZGAHIZ
-    JZAKEZUJJZALUKUMUKULUJUKUIGAMIZJULUIUJUNUIGNEANEUJUNSOAPGAQTRAUAUBUIUJUCUDU
-    LUIUJAUEUFUGUH $.
-
-  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
-     Paul Chapman, 23-Nov-2012.) $)
-  eluz2b3 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. NN /\ N =/= 1 ) ) $=
-    ( c2 cuz cfv wcel cn c1 clt wbr wa wne eluz2b2 nngt1ne1 pm5.32i bitri ) ABC
-    DEAFEZGAHIZJPAGKZJALPQRAMNO $.
-
-  $( One less than an integer greater than or equal to 2 is a positive
-     integer.  (Contributed by Paul Chapman, 17-Nov-2012.) $)
-  uz2m1nn $p |- ( N e. ( ZZ>= ` 2 ) -> ( N - 1 ) e. NN ) $=
-    ( c2 cuz cfv wcel cz c1 clt wbr wa cmin co cn eluz2b1 wb znnsub mpan biimpa
-    1z sylbi ) ABCDEAFEZGAHIZJAGKLMEZANUAUBUCGFEUAUBUCOSGAPQRT $.
-
-  $( 1 is not in ` ( ZZ>= `` 2 ) ` .  (Contributed by Paul Chapman,
-     21-Nov-2012.) $)
-  1nuz2 $p |- -. 1 e. ( ZZ>= ` 2 ) $=
-    ( c1 c2 cuz cfv wcel wne neirr cn eluz2b3 simprbi mto ) ABCDEZAAFZAGLAHEMAI
-    JK $.
-
-  $( A positive integer is either 1 or greater than or equal to 2.
-     (Contributed by Paul Chapman, 17-Nov-2012.) $)
-  elnn1uz2 $p |- ( N e. NN <-> ( N = 1 \/ N e. ( ZZ>= ` 2 ) ) ) $=
-    ( cn wcel c1 wceq c2 cuz cfv wo wne wa olc cz nnz wn 1z zdceq orbi2i sylibr
-    wdc mpan2 df-dc sylib df-ne syl ordi sylanbrc eluz2b3 1nn eleq1 mpbiri jaoi
-    eluz2nn impbii ) ABCZADEZAFGHCZIZUOUPUOADJZKZIZURUOUPUOIUPUSIZVAUOUPLUOAMCZ
-    VBANVCUPUPOZIZVBVCUPTZVEVCDMCVFPADQUAUPUBUCUSVDUPADUDRSUEUPUOUSUFUGUQUTUPAU
-    HRSUPUOUQUPUODBCUIADBUJUKAUMULUN $.
-
-  $( Closure of multiplication of integers greater than or equal to 2.
-     (Contributed by Paul Chapman, 26-Oct-2012.) $)
-  uz2mulcl $p |- ( ( M e. ( ZZ>= ` 2 ) /\ N e. ( ZZ>= ` 2 ) ) ->
-                   ( M x. N ) e. ( ZZ>= ` 2 ) ) $=
-    ( c2 cuz cfv wcel wa cmul co cz c1 clt wbr eluzelz syl2an cr eluz2b1 anim1i
-    zre sylbi zmulcl mulgt1 an4s sylanbrc ) ACDEZFZBUEFZGABHIZJFZKUHLMZUHUEFUFA
-    JFZBJFZUIUGCANCBNABUAOUFAPFZKALMZGZBPFZKBLMZGZUJUGUFUKUNGUOAQUKUMUNASRTUGUL
-    UQGURBQULUPUQBSRTUMUPUNUQUJABUBUCOUHQUD $.
-
-  ${
-    $d ph y $.  $d ps x $.  $d x y $.
-    indstr2.1 $e |- ( x = 1 -> ( ph <-> ch ) ) $.
-    indstr2.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    indstr2.3 $e |- ch $.
-    indstr2.4 $e |- ( x e. ( ZZ>= ` 2 ) ->
-                      ( A. y e. NN ( y < x -> ps ) -> ph ) ) $.
-    $( Strong Mathematical Induction for positive integers (inference schema).
-       The first two hypotheses give us the substitution instances we need; the
-       last two are the basis and the induction step.  (Contributed by Paul
-       Chapman, 21-Nov-2012.) $)
-    indstr2 $p |- ( x e. NN -> ph ) $=
-      ( cv cn wcel c1 wceq c2 cuz clt wbr wi wb cfv wral elnn1uz2 nnnlt1 adantl
-      wo wa wn breq2 adantr mtbird pm2.21d ralrimiva pm5.5 syl bitrd jaoi sylbi
-      mpbiri indstr ) ABDEGDJZKLVAMNZVAOPUALZUFEJZVAQRZBSZEKUBZASZVAUCVBVHVCVBV
-      HCHVBVHACVBVGVHATVBVFEKVBVDKLZUGZVEBVJVEVDMQRZVIVKUHVBVDUDUEVBVEVKTVIVAMV
-      DQUIUJUKULUMVGAUNUOFUPUSIUQURUT $.
-  $}
-
-  ${
-    $d A a b x y z $.
-    $( The image under negation of a bounded-above set of reals is bounded
-       below.  (Contributed by Paul Chapman, 21-Mar-2011.) $)
-    ublbneg $p |- ( E. x e. RR A. y e. A y <_ x ->
-                    E. x e. RR A. y e. { z e. RR | -u z e. A } x <_ y ) $=
-      ( vb va cv cle wbr wral cr wrex cneg wcel crab breq1 cbvralv wceq ralbidv
-      rexbii breq2 cbvrexv bitri renegcl wa wi elrabi negeq eleq1d elrab3 mpcom
-      biimpd rspcv adantl wb lenegcon1 sylan2 sylibrd ralrimdva rspcev rexlimiv
-      syl syl6an sylbir ) BGZAGZHIZBDJZAKLZEGZFGZHIZEDJZFKLZVFVEHIZBCGZMZDNZCKO
-      ZJZAKLZVNVEVKHIZBDJZFKLVIVMWCFKVLWBEBDVJVEVKHPQTWCVHFAKVKVFRWBVGBDVKVFVEH
-      UASUBUCVMWAFKVKKNZVKMZKNVMWEVEHIZBVSJZWAVKUDWDVMWFBVSWDVEVSNZUEVMVEMZVKHI
-      ZWFWHVMWJUFZWDWHWIDNZWKVEKNZWHWLVRCVEKUGZWMWHWLVRWLCVEKVPVERVQWIDVPVEUHUI
-      UJULUKVLWJEWIDVJWIVKHPUMVBUNWHWDWMWFWJUOWNVKVEUPUQURUSVTWGAWEKVFWERVOWFBV
-      SVFWEVEHPSUTVCVAVD $.
-  $}
-
-  ${
-    $d A w z $.
-    $( Two ways to express the image under negation of a set of integers.
-       (Contributed by Paul Chapman, 21-Mar-2011.) $)
-    eqreznegel $p |- ( A C_ ZZ ->
-                       { z e. RR | -u z e. A } = { z e. ZZ | -u z e. A } ) $=
-      ( vw cz wss cv cneg wcel cr crab wa wi ssel cc recn caddc cc0 negid elrab
-      co 0z syl6eqel pm4.71i zrevaddcl syl5bb syl5ib syl6 com23 impd simpr jcad
-      a1i zre anim1i impbid1 weq negeq eleq1d 3bitr4g eqrdv ) BDEZCAFZGZBHZAIJZ
-      VDADJZVACFZIHZVGGZBHZKZVGDHZVJKZVGVEHVGVFHVAVKVMVAVKVLVJVAVHVJVLVAVJVHVLV
-      AVJVIDHZVHVLLBDVIMVHVGNHZVNVLVGOVOVOVGVIPTZDHZKVNVLVOVQVOVPQDVGRUAUBUCVGV
-      IUDUEUFUGUHUIVKVJLVAVHVJUJULUKVLVHVJVGUMUNUOVDVJAVGIACUPVCVIBVBVGUQURZSVD
-      VJAVGDVRSUSUT $.
-  $}
-
-  ${
-    $d A w x y z $.
-    $( The image under negation of an inhabited set of reals is inhabited.
-       (Contributed by Jim Kingdon, 10-Apr-2020.) $)
-    negm $p |- ( ( A C_ RR /\ E. x x e. A ) ->
-        E. y y e. { z e. RR | -u z e. A } ) $=
-      ( cr wss cv wcel wex cneg crab ssel renegcl wceq negeq eleq1d elrab3 recn
-      wb syl negnegd bitrd biimprd syli elex2 syl6 exlimdv imp ) DEFZAGZDHZAIBG
-      CGZJZDHZCEKZHBIZUIUKUPAUIUKUJJZUOHZUPUKUIUJEHZURDEUJLUSURUKUSURUQJZDHZUKU
-      SUQEHURVASUJMUNVACUQEULUQNUMUTDULUQOPQTUSUTUJDUSUJUJRUAPUBUCUDBUQUOUEUFUG
-      UH $.
-  $}
-
-  $( A (nonnegative) integer between 1 and 3 must be 1, 2 or 3.  (Contributed
-     by Alexander van der Vekens, 13-Sep-2018.) $)
-  nn01to3 $p |- ( ( N e. NN0 /\ 1 <_ N /\ N <_ 3 )
-      -> ( N = 1 \/ N = 2 \/ N = 3 ) ) $=
-    ( cn0 wcel c1 cle wbr c3 c2 clt w3o wo wb cz zleloe sylancr syl mpbid caddc
-    wceq co w3a simp2 simp1 1z nn0z 1nn0 nn0ltp1le mpan breq1i syl6bbr 2z bitrd
-    orbi1d orcomd orcom orbi2i sylib 3orass sylibr wi 3mix1 eqcoms a1i 3mix2 wa
-    df-2 simp3 biantrurd 2nn0 cr nn0red 3re letri3 sylancl 3bitr4d 3mix3 syl6bi
-    df-3 3jaod mpd ) ABCZDAEFZAGEFZUAZDASZHASZHAIFZJZADSZAHSZAGSZJZWDWEWFWGKZKZ
-    WHWDWEWGWFKZKWNWDWOWEWDDAIFZWEKZWOWEKZWDWBWQWAWBWCUBWDWAWBWQLZWAWBWCUCZWADM
-    CAMCZWSUDAUEZDANOPQWDWAWQWRLWTWAWPWOWEWAWPHAEFZWOWAWPDDRTZAEFZXCDBCWAWPXELU
-    FDAUGUHHXDAEVFUIUJWAHMCXAXCWOLUKXBHANOULUMPQUNWOWMWEWGWFUOUPUQWEWFWGURUSWDW
-    EWLWFWGWEWLUTWDWLADWIWJWKVAVBVCWFWLUTWDWLAHWJWIWKVDVBVCWDWGWKWLWDGAEFZWCXFV
-    EZWGWKWDWCXFWAWBWCVGVHWDWAWGXFLWTWAWGHDRTZAEFZXFHBCWAWGXILVIHAUGUHGXHAEVRUI
-    UJPWDAVJCGVJCWKXGLWDAWTVKVLAGVMVNVOWKWIWJVPVQVSVT $.
-
-  $( Alternate proof of ~ nn0ge2m1nn :  If a nonnegative integer is greater
-     than or equal to two, the integer decreased by 1 is a positive integer.
-     This version is proved using ~ eluz2 , a theorem for upper sets of
-     integers, which are defined later than the positive and nonnegative
-     integers.  This proof is, however, much shorter than the proof of
-     ~ nn0ge2m1nn .  (Contributed by Alexander van der Vekens, 1-Aug-2018.)
-     (New usage is discouraged.)  (Proof modification is discouraged.) $)
-  nn0ge2m1nnALT $p |- ( ( N e. NN0 /\ 2 <_ N ) -> ( N - 1 ) e. NN ) $=
-    ( cn0 wcel c2 cle wbr wa cuz cfv c1 cmin co cn cz 2z a1i adantr simpr eluz2
-    nn0z syl3anbrc uz2m1nn syl ) ABCZDAEFZGZADHICZAJKLMCUFDNCZANCZUEUGUHUFOPUDU
-    IUEATQUDUERDASUAAUBUC $.
 
 $(
 ###############################################################################
