@@ -79913,6 +79913,22 @@ $)
       UH $.
   $}
 
+  $( A (nonnegative) integer between 1 and 3 must be 1, 2 or 3.  (Contributed
+     by Alexander van der Vekens, 13-Sep-2018.) $)
+  nn01to3 $p |- ( ( N e. NN0 /\ 1 <_ N /\ N <_ 3 )
+      -> ( N = 1 \/ N = 2 \/ N = 3 ) ) $=
+    ( cn0 wcel c1 cle wbr c3 c2 clt w3o wo wb cz zleloe sylancr syl mpbid caddc
+    wceq co w3a simp2 simp1 1z nn0z 1nn0 nn0ltp1le mpan breq1i syl6bbr 2z bitrd
+    orbi1d orcomd orcom orbi2i sylib 3orass sylibr wi 3mix1 eqcoms a1i 3mix2 wa
+    df-2 simp3 biantrurd 2nn0 cr nn0red 3re letri3 sylancl 3bitr4d 3mix3 syl6bi
+    df-3 3jaod mpd ) ABCZDAEFZAGEFZUAZDASZHASZHAIFZJZADSZAHSZAGSZJZWDWEWFWGKZKZ
+    WHWDWEWGWFKZKWNWDWOWEWDDAIFZWEKZWOWEKZWDWBWQWAWBWCUBWDWAWBWQLZWAWBWCUCZWADM
+    CAMCZWSUDAUEZDANOPQWDWAWQWRLWTWAWPWOWEWAWPHAEFZWOWAWPDDRTZAEFZXCDBCWAWPXELU
+    FDAUGUHHXDAEVFUIUJWAHMCXAXCWOLUKXBHANOULUMPQUNWOWMWEWGWFUOUPUQWEWFWGURUSWDW
+    EWLWFWGWEWLUTWDWLADWIWJWKVAVBVCWFWLUTWDWLAHWJWIWKVDVBVCWDWGWKWLWDGAEFZWCXFV
+    EZWGWKWDWCXFWAWBWCVGVHWDWAWGXFLWTWAWGHDRTZAEFZXFHBCWAWGXILVIHAUGUHGXHAEVRUI
+    UJPWDAVJCGVJCWKXGLWDAWTVKVLAGVMVNVOWKWIWJVPVQVSVT $.
+
 $(
 ###############################################################################
                GUIDES AND MISCELLANEA
