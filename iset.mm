@@ -58031,7 +58031,6 @@ $)
   $( Introduce new constant symbols. $)
   $c ~~ $.  $( Equinumerosity relation ("approximately equals" symbol) $)
   $c ~<_ $.  $( Dominance relation (curly less-than-or-equal) $)
-  $c ~< $.  $( Strict dominance relation (curly less-than) $)
   $c Fin $.  $( Class of all finite sets. $)
 
   $( Extend class definition to include the equinumerosity relation
@@ -58041,10 +58040,6 @@ $)
   $( Extend class definition to include the dominance relation (curly
      less-than-or-equal) $)
   cdom $a class ~<_ $.
-
-  $( Extend class definition to include the strict dominance relation (curly
-     less-than) $)
-  csdm $a class ~< $.
 
   $( Extend class definition to include the class of all finite sets. $)
   cfn $a class Fin $.
@@ -58058,23 +58053,16 @@ $)
        usual definition as ~ bren .  (Contributed by NM, 28-Mar-1998.) $)
     df-en $a |- ~~ = { <. x , y >. | E. f f : x -1-1-onto-> y } $.
 
-    $( Define the dominance relation.  For an alternate definition see
-       ~ dfdom2 .  Compare Definition of [Enderton] p. 145.  Typical textbook
-       definitions are derived as ~ brdom and ~ domen .  (Contributed by NM,
-       28-Mar-1998.) $)
+    $( Define the dominance relation.  Compare Definition of [Enderton]
+       p. 145.  Typical textbook definitions are derived as ~ brdom and
+       ~ domen .  (Contributed by NM, 28-Mar-1998.) $)
     df-dom $a |- ~<_ = { <. x , y >. | E. f f : x -1-1-> y } $.
-
-    $( Define the strict dominance relation.  Alternate possible definitions
-       are derived as ~ brsdom and ~ brsdom2 .  Definition 3 of [Suppes]
-       p. 97.  (Contributed by NM, 31-Mar-1998.) $)
-    df-sdom $a |- ~< = ( ~<_ \ ~~ ) $.
 
     $( Define the (proper) class of all finite sets.  Similar to Definition
        10.29 of [TakeutiZaring] p. 91, whose "Fin(a)" corresponds to
        our " ` a e. Fin ` ".  This definition is meaningful whether or not we
-       accept the Axiom of Infinity ~ ax-inf2 .  If we accept Infinity, we can
-       also express ` A e. Fin ` by ` A ~< _om ` (theorem ~ isfinite .)
-       (Contributed by NM, 22-Aug-2008.) $)
+       accept the Axiom of Infinity ~ ax-inf2 .  (Contributed by NM,
+       22-Aug-2008.) $)
     df-fin $a |- Fin = { x | E. y e. _om x ~~ y } $.
   $}
 
@@ -58088,11 +58076,6 @@ $)
     reldom $p |- Rel ~<_ $=
       ( vx vy vf cv wf1 wex cdom df-dom relopabi ) ADBDCDECFABGABCHI $.
   $}
-
-  $( Strict dominance is a relation.  (Contributed by NM, 31-Mar-1998.) $)
-  relsdom $p |- Rel ~< $=
-    ( cdom wrel csdm reldom cen cdif reldif df-sdom releqi sylibr ax-mp ) ABZCB
-    ZDLAEFZBMAEGCNHIJK $.
 
   $( If two classes are equinumerous, both classes are sets.  (Contributed by
      AV, 21-Mar-2019.) $)
@@ -58209,14 +58192,6 @@ $)
       ( cvv wcel wf1 cdom wbr wi f1domg ax-mp ) BEFABCGABHIJDABECKL $.
   $}
 
-  $( Strict dominance relation, meaning " ` B ` is strictly greater in size
-     than ` A ` ."  Definition of [Mendelson] p. 255.  (Contributed by NM,
-     25-Jun-1998.) $)
-  brsdom $p |- ( A ~< B <-> ( A ~<_ B /\ -. A ~~ B ) ) $=
-    ( cop csdm wcel cdom cen cdif wbr wn wa df-sdom eleq2i df-br notbii anbi12i
-    eldif bitr4i 3bitr4i ) ABCZDETFGHZEZABDIABFIZABGIZJZKZDUATLMABDNUFTFEZTGEZJ
-    ZKUBUCUGUEUIABFNUDUHABGNOPTFGQRS $.
-
   ${
     $d x y f A $.
     $( Express " ` A ` is finite."  Definition 10.29 of [TakeutiZaring] p. 91
@@ -58235,37 +58210,10 @@ $)
       CTSOUA $.
   $}
 
-  $( Alternate definition of dominance.  (Contributed by NM, 17-Jun-1998.) $)
-  dfdom2 $p |- ~<_ = ( ~< u. ~~ ) $=
-    ( cen csdm cun cdom cdif df-sdom uncom wss wceq enssdom undif mpbi 3eqtr3ri
-    uneq2i ) ABCADAEZCZBACDBOAFNABGADHPDIJADKLM $.
-
   $( Equinumerosity implies dominance.  Theorem 15 of [Suppes] p. 94.
      (Contributed by NM, 28-May-1998.) $)
   endom $p |- ( A ~~ B -> A ~<_ B ) $=
     ( cen cdom enssdom ssbri ) CDABEF $.
-
-  $( Strict dominance implies dominance.  (Contributed by NM, 10-Jun-1998.) $)
-  sdomdom $p |- ( A ~< B -> A ~<_ B ) $=
-    ( csdm wbr cdom cen wn brsdom simplbi ) ABCDABEDABFDGABHI $.
-
-  $( Strict dominance implies non-equinumerosity.  (Contributed by NM,
-     10-Jun-1998.) $)
-  sdomnen $p |- ( A ~< B -> -. A ~~ B ) $=
-    ( csdm wbr cdom cen wn brsdom simprbi ) ABCDABEDABFDGABHI $.
-
-  $( Dominance in terms of strict dominance and equinumerosity.  Theorem 22(iv)
-     of [Suppes] p. 97.  (Contributed by NM, 17-Jun-1998.) $)
-  brdom2 $p |- ( A ~<_ B <-> ( A ~< B \/ A ~~ B ) ) $=
-    ( cop cdom wcel csdm cen cun wbr wo dfdom2 eleq2i df-br orbi12i elun bitr4i
-    3bitr4i ) ABCZDERFGHZEZABDIABFIZABGIZJZDSRKLABDMUCRFEZRGEZJTUAUDUBUEABFMABG
-    MNRFGOPQ $.
-
-  $( Equinumerosity expressed in terms of dominance and strict dominance.
-     (Contributed by NM, 23-Oct-2004.) $)
-  bren2 $p |- ( A ~~ B <-> ( A ~<_ B /\ -. A ~< B ) ) $=
-    ( cen wbr cdom csdm wn endom sdomnen con2i jca brdom2 biimpi orcanai impbii
-    wa wo ) ABCDZABEDZABFDZGZPRSUAABHTRABIJKSTRSTRQABLMNO $.
 
   $( Equinumerosity is reflexive.  Theorem 1 of [Suppes] p. 92.  (Contributed
      by NM, 18-Jun-1998.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
@@ -58754,28 +58702,6 @@ $)
     ZVHVIVJWAUNZBADDUOUPWIWBWHVNWCTQWCVNRVNVMSUQVCWKWBWJVLWETQWEVLRVLVOSUQVCWCW
     EVNVLURUSWBBVMEZWDVMJWBVJBAOWNWLWBABVKWAUTZVDBDAVAVBVMBVENWBAVOEZWFVOJWBVIW
     AWPWMWOADBVAVBVOAVENVFVG $.
-
-  ${
-    $d A f x $.  $d B f x $.  $d C f x $.
-    $( Dominance over a set with one element removed.  (Contributed by Stefan
-       O'Rear, 19-Feb-2015.)  (Revised by Mario Carneiro, 24-Jun-2015.) $)
-    domdifsn $p |- ( A ~< B -> A ~<_ ( B \ { C } ) ) $=
-      ( vf vx csdm wbr wcel csn cdif wa cv cvv wb syl adantr adantl wn ad2antrr
-      cdom wf1 wex sdomdom relsdom brrelex2i brdomg mpbid crn c0 wne wss wf f1f
-      frn cen sdomnen wceq wf1o vex dff1o5 biimpri f1oen3g sylancr necon3bd mpd
-      wi ex pssdifn0 syl2anc n0 sylib brrelexi difexg cin eldifn disjsn reldisj
-      sylibr syldan f1dom2g syl3anc eldifi ad2antll simplr difsnen domentr expr
-      f1ssr exlimdv exlimddv difsn breq2d mpbird pm2.61dan ) ABFGZCBHZABCIJZTGZ
-      WOWPKZABDLZUAZWRDWOXADUBZWPWOABTGZXBABUCZWOBMHZXCXBNABFUDUEZABMDUFOUGPWSX
-      AKZELZBWTUHZJZHZEUBZWRXGXJUIUJZXLXGXIBUKZXIBUJZXMXAXNWSXAABWTULXNABWTUMAB
-      WTUNOZQXGABUOGZRZXOWOXRWPXAABUPSXAXRXOVFWSXAXQXIBXAXIBUQZXQXAXSKZWTMHABWT
-      URZXQDUSYAXTABWTUTVAABWTMVBVCVGVDQVEXIBVHVIEXJVJVKXGXKWREWSXAXKWRWSXAXKKZ
-      KZABXHIZJZTGZYEWQUOGZWRYCAMHZYEMHZAYEWTUAZYFWOYHWPYBABFUDVLSYCXEYIWOXEWPY
-      BXFSZBYDMVMOYBYJWSXAXKXIYEUKZYJYBXIYDVNUIUQZYLXKYMXAXKXHXIHRYMXHBXIVOXIXH
-      VPVRQYBXNYMYLNXAXNXKXPPXIYDBVQOUGABYEWTWHVSQAYEWTMMVTWAYCXEXHBHZWPYGYKXKY
-      NWSXAXHBXIWBWCWOWPYBWDXHCMBWEWAAYEWQWFVIWGWIVEWJWOWPRZKWRXCWOXCYOXDPYOWRX
-      CNWOYOWQBATCBWKWLQWMWN $.
-  $}
 
   ${
     $d x y z w A $.  $d x y z w B $.
@@ -81962,11 +81888,6 @@ htmldef "~<_" as
   althtmldef "~<_" as ' &#8828; '; /* &prcue; */
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "~<_" as "\preccurlyeq";
-htmldef "~<" as
-    " <IMG SRC='prec.gif' WIDTH=11 HEIGHT=19 ALT=' ~&lt;' TITLE='~&lt;'> ";
-  althtmldef "~<" as ' &#8826; '; /* &pr; */
-    /* 2-Jan-2016 reverted sans-serif */
-  latexdef "~<" as "\prec";
 htmldef "Fin" as
     "<IMG SRC='_fin.gif' WIDTH=21 HEIGHT=19 ALT=' Fin' TITLE='Fin'>";
   althtmldef "Fin" as 'Fin';
