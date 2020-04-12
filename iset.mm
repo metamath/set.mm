@@ -58023,6 +58023,1264 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Equinumerosity
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c ~~ $.  $( Equinumerosity relation ("approximately equals" symbol) $)
+  $c ~<_ $.  $( Dominance relation (curly less-than-or-equal) $)
+  $c ~< $.  $( Strict dominance relation (curly less-than) $)
+  $c Fin $.  $( Class of all finite sets. $)
+
+  $( Extend class definition to include the equinumerosity relation
+     ("approximately equals" symbol) $)
+  cen $a class ~~ $.
+
+  $( Extend class definition to include the dominance relation (curly
+     less-than-or-equal) $)
+  cdom $a class ~<_ $.
+
+  $( Extend class definition to include the strict dominance relation (curly
+     less-than) $)
+  csdm $a class ~< $.
+
+  $( Extend class definition to include the class of all finite sets. $)
+  cfn $a class Fin $.
+
+  ${
+    $d x y f $.
+    $( Define the equinumerosity relation.  Definition of [Enderton] p. 129.
+       We define ` ~~ ` to be a binary relation rather than a connective, so
+       its arguments must be sets to be meaningful.  This is acceptable because
+       we do not consider equinumerosity for proper classes.  We derive the
+       usual definition as ~ bren .  (Contributed by NM, 28-Mar-1998.) $)
+    df-en $a |- ~~ = { <. x , y >. | E. f f : x -1-1-onto-> y } $.
+
+    $( Define the dominance relation.  For an alternate definition see
+       ~ dfdom2 .  Compare Definition of [Enderton] p. 145.  Typical textbook
+       definitions are derived as ~ brdom and ~ domen .  (Contributed by NM,
+       28-Mar-1998.) $)
+    df-dom $a |- ~<_ = { <. x , y >. | E. f f : x -1-1-> y } $.
+
+    $( Define the strict dominance relation.  Alternate possible definitions
+       are derived as ~ brsdom and ~ brsdom2 .  Definition 3 of [Suppes]
+       p. 97.  (Contributed by NM, 31-Mar-1998.) $)
+    df-sdom $a |- ~< = ( ~<_ \ ~~ ) $.
+
+    $( Define the (proper) class of all finite sets.  Similar to Definition
+       10.29 of [TakeutiZaring] p. 91, whose "Fin(a)" corresponds to
+       our " ` a e. Fin ` ".  This definition is meaningful whether or not we
+       accept the Axiom of Infinity ~ ax-inf2 .  If we accept Infinity, we can
+       also express ` A e. Fin ` by ` A ~< _om ` (theorem ~ isfinite .)
+       (Contributed by NM, 22-Aug-2008.) $)
+    df-fin $a |- Fin = { x | E. y e. _om x ~~ y } $.
+  $}
+
+  ${
+    $d x y f $.  $d x y f $.
+    $( Equinumerosity is a relation.  (Contributed by NM, 28-Mar-1998.) $)
+    relen $p |- Rel ~~ $=
+      ( vx vy vf cv wf1o wex cen df-en relopabi ) ADBDCDECFABGABCHI $.
+
+    $( Dominance is a relation.  (Contributed by NM, 28-Mar-1998.) $)
+    reldom $p |- Rel ~<_ $=
+      ( vx vy vf cv wf1 wex cdom df-dom relopabi ) ADBDCDECFABGABCHI $.
+  $}
+
+  $( Strict dominance is a relation.  (Contributed by NM, 31-Mar-1998.) $)
+  relsdom $p |- Rel ~< $=
+    ( cdom wrel csdm reldom cen cdif reldif df-sdom releqi sylibr ax-mp ) ABZCB
+    ZDLAEFZBMAEGCNHIJK $.
+
+  $( If two classes are equinumerous, both classes are sets.  (Contributed by
+     AV, 21-Mar-2019.) $)
+  encv $p |- ( A ~~ B -> ( A e. _V /\ B e. _V ) ) $=
+    ( cen wrel wbr cvv wcel wa relen brrelex12 mpan ) CDABCEAFGBFGHIABCJK $.
+
+  ${
+    $d f x y A $.  $d f x y B $.  $d y C $.
+    $( Equinumerosity relation.  (Contributed by NM, 15-Jun-1998.) $)
+    bren $p |- ( A ~~ B <-> E. f f : A -1-1-onto-> B ) $=
+      ( vx vy cen wbr cvv wcel wa cv wf1o wex encv wfn f1ofn syl6eqelr syl wceq
+      exbidv cdm fndm vex dmex crn wfo f1ofo forn rnex jca exlimiv f1oeq2 df-en
+      f1oeq3 brabg pm5.21nii ) ABFGAHIZBHIZJZABCKZLZCMZABNVAUSCVAUQURVAUTAOZUQA
+      BUTPVCAUTUAHAUTUBUTCUCZUDQRVABUTUEZHVAABUTUFVEBSABUTUGABUTUHRUTVDUIQUJUKD
+      KZEKZUTLZCMAVGUTLZCMVBDEABHHFVFASVHVICVFAVGUTULTVGBSVIVACVGBAUTUNTDECUMUO
+      UP $.
+
+    $( Dominance relation.  (Contributed by NM, 15-Jun-1998.) $)
+    brdomg $p |- ( B e. C -> ( A ~<_ B <-> E. f f : A -1-1-> B ) ) $=
+      ( vx vy cvv wcel cdom wbr cv wf1 wex wb wi wceq f1eq2 exbidv f1eq3 df-dom
+      brabg ex wn reldom brrelexi wf f1f cdm fdm vex dmex syl6eqelr syl exlimiv
+      pm5.21ni a1d pm2.61i ) AGHZBCHZABIJZABDKZLZDMZNZOURUSVDEKZFKZVALZDMAVFVAL
+      ZDMVCEFABGCIVEAPVGVHDVEAVFVAQRVFBPVHVBDVFBAVASREFDTUAUBURUCVDUSUTURVCABIU
+      DUEVBURDVBABVAUFZURABVAUGVIAVAUHGABVAUIVADUJUKULUMUNUOUPUQ $.
+
+    $( Dominance relation.  (Contributed by Mario Carneiro, 26-Apr-2015.) $)
+    brdomi $p |- ( A ~<_ B -> E. f f : A -1-1-> B ) $=
+      ( cdom wbr cv wf1 wex cvv wcel wb reldom brrelex2i brdomg syl ibi ) ABDEZ
+      ABCFGCHZQBIJQRKABDLMABICNOP $.
+  $}
+
+  ${
+    $d f x y A $.  $d f x y B $.  $d f w x y z $.
+    bren.1 $e |- B e. _V $.
+    $( Dominance relation.  (Contributed by NM, 15-Jun-1998.) $)
+    brdom $p |- ( A ~<_ B <-> E. f f : A -1-1-> B ) $=
+      ( cvv wcel cdom wbr cv wf1 wex wb brdomg ax-mp ) BEFABGHABCIJCKLDABECMN
+      $.
+
+    $( Dominance in terms of equinumerosity.  Example 1 of [Enderton] p. 146.
+       (Contributed by NM, 15-Jun-1998.) $)
+    domen $p |- ( A ~<_ B <-> E. x ( A ~~ x /\ x C_ B ) ) $=
+      ( vf cdom wbr cv wf1 wex cen wss brdom wf1o vex f11o exbii bitri bitr4i
+      wa excom bren anbi1i 19.41v ) BCFGBCEHZIZEJZBAHZKGZUHCLZTZAJZBCEDMUGBUHUE
+      NZUJTZEJZAJZULUGUNAJZEJUPUFUQEABCUEEOPQUNEAUARUKUOAUKUMEJZUJTUOUIURUJBUHE
+      UBUCUMUJEUDSQSR $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Dominance in terms of equinumerosity, with the sethood requirement
+       expressed as an antecedent.  Example 1 of [Enderton] p. 146.
+       (Contributed by NM, 24-Apr-2004.) $)
+    domeng $p |- ( B e. C -> ( A ~<_ B <-> E. x ( A ~~ x /\ x C_ B ) ) ) $=
+      ( vy cv cdom wbr cen wss wex breq2 wceq sseq2 anbi2d exbidv domen vtoclbg
+      wa vex ) BEFZGHBAFZIHZUBUAJZSZAKBCGHUCUBCJZSZAKECDUACBGLUACMZUEUGAUHUDUFU
+      CUACUBNOPABUAETQR $.
+  $}
+
+  ${
+    $d f A $.  $d f B $.  $d f F $.
+    $( The domain and range of a one-to-one, onto function are equinumerous.
+       This variation of ~ f1oeng does not require the Axiom of Replacement.
+       (Contributed by NM, 13-Jan-2007.)  (Revised by Mario Carneiro,
+       10-Sep-2015.) $)
+    f1oen3g $p |- ( ( F e. V /\ F : A -1-1-onto-> B ) -> A ~~ B ) $=
+      ( vf wcel wf1o wa cv wex cen wbr f1oeq1 spcegv imp bren sylibr ) CDFZABCG
+      ZHABEIZGZEJZABKLRSUBUASECDABTCMNOABEPQ $.
+
+    $( The domain and range of a one-to-one, onto function are equinumerous.
+       This variation of ~ f1oeng does not require the Axiom of Replacement.
+       (Contributed by Mario Carneiro, 10-Sep-2015.) $)
+    f1oen2g $p |- ( ( A e. V /\ B e. W /\ F : A -1-1-onto-> B ) -> A ~~ B ) $=
+      ( wcel wf1o w3a cvv cen wbr f1of fex2 syl3an1 3coml simp3 f1oen3g syl2anc
+      wf ) ADFZBEFZABCGZHCIFZUBABJKUBTUAUCUBABCSTUAUCABCLABCDEMNOTUAUBPABCIQR
+      $.
+
+    $( The domain of a one-to-one function is dominated by its codomain.  This
+       variation of ~ f1domg does not require the Axiom of Replacement.
+       (Contributed by Mario Carneiro, 24-Jun-2015.) $)
+    f1dom2g $p |- ( ( A e. V /\ B e. W /\ F : A -1-1-> B ) -> A ~<_ B ) $=
+      ( vf wcel wf1 w3a cdom wbr cv wex cvv wf f1f fex2 syl3an1 3coml simp3 wb
+      f1eq1 spcegv sylc brdomg 3ad2ant2 mpbird ) ADGZBEGZABCHZIZABJKZABFLZHZFMZ
+      UKCNGZUJUOUJUHUIUPUJABCOUHUIUPABCPABCDEQRSUHUIUJTUNUJFCNABUMCUBUCUDUIUHUL
+      UOUAUJABEFUEUFUG $.
+
+    $( The domain and range of a one-to-one, onto function are equinumerous.
+       (Contributed by NM, 19-Jun-1998.) $)
+    f1oeng $p |- ( ( A e. C /\ F : A -1-1-onto-> B ) -> A ~~ B ) $=
+      ( wcel wf1o cvv cen wbr wfo f1ofo fornex syl5 imp f1oen2g 3com23 mpd3an3
+      ) ACEZABDFZBGEZABHIZRSTSABDJRTABDKABCDLMNRTSUAABDCGOPQ $.
+
+    $( The domain of a one-to-one function is dominated by its codomain.
+       (Contributed by NM, 4-Sep-2004.) $)
+    f1domg $p |- ( B e. C -> ( F : A -1-1-> B -> A ~<_ B ) ) $=
+      ( vf wcel wf1 cv wex cdom wbr cvv f1dmex wf f1f sylan syldan expcom f1eq1
+      fex spcegv syli brdomg sylibrd ) BCFZABDGZABEHZGZEIZABJKUFUEDLFZUIUFUEUJU
+      FUEALFZUJABCDMUFABDNUKUJABDOABLDTPQRUHUFEDLABUGDSUAUBABCEUCUD $.
+  $}
+
+  ${
+    f1oen.1 $e |- A e. _V $.
+    $( The domain and range of a one-to-one, onto function are equinumerous.
+       (Contributed by NM, 19-Jun-1998.) $)
+    f1oen $p |- ( F : A -1-1-onto-> B -> A ~~ B ) $=
+      ( cvv wcel wf1o cen wbr f1oeng mpan ) AEFABCGABHIDABECJK $.
+  $}
+
+  ${
+    f1dom.1 $e |- B e. _V $.
+    $( The domain of a one-to-one function is dominated by its codomain.
+       (Contributed by NM, 19-Jun-1998.) $)
+    f1dom $p |- ( F : A -1-1-> B -> A ~<_ B ) $=
+      ( cvv wcel wf1 cdom wbr wi f1domg ax-mp ) BEFABCGABHIJDABECKL $.
+  $}
+
+  $( Strict dominance relation, meaning " ` B ` is strictly greater in size
+     than ` A ` ."  Definition of [Mendelson] p. 255.  (Contributed by NM,
+     25-Jun-1998.) $)
+  brsdom $p |- ( A ~< B <-> ( A ~<_ B /\ -. A ~~ B ) ) $=
+    ( cop csdm wcel cdom cen cdif wbr wn wa df-sdom eleq2i df-br notbii anbi12i
+    eldif bitr4i 3bitr4i ) ABCZDETFGHZEZABDIABFIZABGIZJZKZDUATLMABDNUFTFEZTGEZJ
+    ZKUBUCUGUEUIABFNUDUHABGNOPTFGQRS $.
+
+  ${
+    $d x y f A $.
+    $( Express " ` A ` is finite."  Definition 10.29 of [TakeutiZaring] p. 91
+       (whose " ` Fin ` " is a predicate instead of a class).  (Contributed by
+       NM, 22-Aug-2008.) $)
+    isfi $p |- ( A e. Fin <-> E. x e. _om A ~~ x ) $=
+      ( vy cfn wcel cen wbr com wrex cab df-fin eleq2i relen brrelexi rexlimivw
+      cv cvv wceq breq1 rexbidv elab3 bitri ) BDEBCPZAPZFGZAHIZCJZEBUDFGZAHIZDU
+      GBCAKLUFUICBUHBQEAHBUDFMNOUCBRUEUHAHUCBUDFSTUAUB $.
+
+    $( Equinumerosity implies dominance.  (Contributed by NM, 31-Mar-1998.) $)
+    enssdom $p |- ~~ C_ ~<_ $=
+      ( vx vy vf cen cdom relen cop wf1o wex copab wcel wf1 f1of1 eximi 3imtr4i
+      cv opabid df-en eleq2i df-dom relssi ) ABDEFAPZBPZGZUBUCCPZHZCIZABJZKZUDU
+      BUCUELZCIZABJZKZUDDKUDEKUGUKUIUMUFUJCUBUCUEMNUGABQUKABQODUHUDABCRSEULUDAB
+      CTSOUA $.
+  $}
+
+  $( Alternate definition of dominance.  (Contributed by NM, 17-Jun-1998.) $)
+  dfdom2 $p |- ~<_ = ( ~< u. ~~ ) $=
+    ( cen csdm cun cdom cdif df-sdom uncom wss wceq enssdom undif mpbi 3eqtr3ri
+    uneq2i ) ABCADAEZCZBACDBOAFNABGADHPDIJADKLM $.
+
+  $( Equinumerosity implies dominance.  Theorem 15 of [Suppes] p. 94.
+     (Contributed by NM, 28-May-1998.) $)
+  endom $p |- ( A ~~ B -> A ~<_ B ) $=
+    ( cen cdom enssdom ssbri ) CDABEF $.
+
+  $( Strict dominance implies dominance.  (Contributed by NM, 10-Jun-1998.) $)
+  sdomdom $p |- ( A ~< B -> A ~<_ B ) $=
+    ( csdm wbr cdom cen wn brsdom simplbi ) ABCDABEDABFDGABHI $.
+
+  $( Strict dominance implies non-equinumerosity.  (Contributed by NM,
+     10-Jun-1998.) $)
+  sdomnen $p |- ( A ~< B -> -. A ~~ B ) $=
+    ( csdm wbr cdom cen wn brsdom simprbi ) ABCDABEDABFDGABHI $.
+
+  $( Dominance in terms of strict dominance and equinumerosity.  Theorem 22(iv)
+     of [Suppes] p. 97.  (Contributed by NM, 17-Jun-1998.) $)
+  brdom2 $p |- ( A ~<_ B <-> ( A ~< B \/ A ~~ B ) ) $=
+    ( cop cdom wcel csdm cen cun wbr wo dfdom2 eleq2i df-br orbi12i elun bitr4i
+    3bitr4i ) ABCZDERFGHZEZABDIABFIZABGIZJZDSRKLABDMUCRFEZRGEZJTUAUDUBUEABFMABG
+    MNRFGOPQ $.
+
+  $( Equinumerosity expressed in terms of dominance and strict dominance.
+     (Contributed by NM, 23-Oct-2004.) $)
+  bren2 $p |- ( A ~~ B <-> ( A ~<_ B /\ -. A ~< B ) ) $=
+    ( cen wbr cdom csdm wn endom sdomnen con2i jca brdom2 biimpi orcanai impbii
+    wa wo ) ABCDZABEDZABFDZGZPRSUAABHTRABIJKSTRSTRQABLMNO $.
+
+  $( Equinumerosity is reflexive.  Theorem 1 of [Suppes] p. 92.  (Contributed
+     by NM, 18-Jun-1998.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+  enrefg $p |- ( A e. V -> A ~~ A ) $=
+    ( wcel cen wbr cid cres wf1o f1oi f1oen2g mp3an3 anidms ) ABCZAADEZMMAAFAGZ
+    HNAIAAOBBJKL $.
+
+  ${
+    enref.1 $e |- A e. _V $.
+    $( Equinumerosity is reflexive.  Theorem 1 of [Suppes] p. 92.  (Contributed
+       by NM, 25-Sep-2004.) $)
+    enref $p |- A ~~ A $=
+      ( cvv wcel cen wbr enrefg ax-mp ) ACDAAEFBACGH $.
+  $}
+
+  $( Equality implies equinumerosity.  (Contributed by NM, 26-Oct-2003.) $)
+  eqeng $p |- ( A e. V -> ( A = B -> A ~~ B ) ) $=
+    ( wcel cen wbr wceq enrefg breq2 syl5ibcom ) ACDAAEFABGABEFACHABAEIJ $.
+
+  $( Dominance is reflexive.  (Contributed by NM, 18-Jun-1998.) $)
+  domrefg $p |- ( A e. V -> A ~<_ A ) $=
+    ( wcel cen wbr cdom enrefg endom syl ) ABCAADEAAFEABGAAHI $.
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.  $d x D $.  $d x y ph $.
+    en2d.1 $e |- ( ph -> A e. _V ) $.
+    en2d.2 $e |- ( ph -> B e. _V ) $.
+    en2d.3 $e |- ( ph -> ( x e. A -> C e. _V ) ) $.
+    en2d.4 $e |- ( ph -> ( y e. B -> D e. _V ) ) $.
+    en2d.5 $e |- ( ph -> ( ( x e. A /\ y = C ) <-> ( y e. B /\ x = D ) ) ) $.
+    $( Equinumerosity inference from an implicit one-to-one onto function.
+       (Contributed by NM, 27-Jul-2004.)  (Revised by Mario Carneiro,
+       12-May-2014.) $)
+    en2d $p |- ( ph -> A ~~ B ) $=
+      ( cvv wcel cmpt wf1o cen wbr cv imp eqid f1od f1oen2g syl3anc ) ADMNEMNDE
+      BDFOZPDEQRHIABCDEFGUEMMUEUAABSDNFMNJTACSENGMNKTLUBDEUEMMUCUD $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.  $d x D $.  $d x y ph $.
+    en3d.1 $e |- ( ph -> A e. _V ) $.
+    en3d.2 $e |- ( ph -> B e. _V ) $.
+    en3d.3 $e |- ( ph -> ( x e. A -> C e. B ) ) $.
+    en3d.4 $e |- ( ph -> ( y e. B -> D e. A ) ) $.
+    en3d.5 $e |- ( ph -> ( ( x e. A /\ y e. B ) -> ( x = D <-> y = C ) ) ) $.
+    $( Equinumerosity inference from an implicit one-to-one onto function.
+       (Contributed by NM, 27-Jul-2004.)  (Revised by Mario Carneiro,
+       12-May-2014.) $)
+    en3d $p |- ( ph -> A ~~ B ) $=
+      ( cvv wcel cmpt wf1o cen cv imp wceq wbr eqid wa wb f1o2d f1oen2g syl3anc
+      ) ADMNEMNDEBDFOZPDEQUAHIABCDEFGUHUHUBABRZDNZFENJSACRZENZGDNKSAUJULUCUIGTU
+      KFTUDLSUEDEUHMMUFUG $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.  $d x D $.
+    en2i.1 $e |- A e. _V $.
+    en2i.2 $e |- B e. _V $.
+    en2i.3 $e |- ( x e. A -> C e. _V ) $.
+    en2i.4 $e |- ( y e. B -> D e. _V ) $.
+    en2i.5 $e |- ( ( x e. A /\ y = C ) <-> ( y e. B /\ x = D ) ) $.
+    $( Equinumerosity inference from an implicit one-to-one onto function.
+       (Contributed by NM, 4-Jan-2004.) $)
+    en2i $p |- A ~~ B $=
+      ( cen wtru cvv wcel a1i cv wi wceq wa wbr wb en2d trud ) CDLUAMABCDEFCNOM
+      GPDNOMHPAQZCOZENORMIPBQZDOZFNORMJPUFUGESTUHUEFSTUBMKPUCUD $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.  $d x D $.
+    en3i.1 $e |- A e. _V $.
+    en3i.2 $e |- B e. _V $.
+    en3i.3 $e |- ( x e. A -> C e. B ) $.
+    en3i.4 $e |- ( y e. B -> D e. A ) $.
+    en3i.5 $e |- ( ( x e. A /\ y e. B ) -> ( x = D <-> y = C ) ) $.
+    $( Equinumerosity inference from an implicit one-to-one onto function.
+       (Contributed by NM, 19-Jul-2004.) $)
+    en3i $p |- A ~~ B $=
+      ( cen wbr wtru cvv wcel a1i cv wi wceq wa wb en3d trud ) CDLMNABCDEFCOPNG
+      QDOPNHQARZCPZEDPSNIQBRZDPZFCPSNJQUFUHUAUEFTUGETUBSNKQUCUD $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d y z C $.  $d x z D $.  $d x y ph $.
+    dom2d.1 $e |- ( ph -> ( x e. A -> C e. B ) ) $.
+    dom2d.2 $e |- ( ph -> ( ( x e. A /\ y e. A ) -> ( C = D <-> x = y ) ) ) $.
+    $( A mapping (first hypothesis) that is one-to-one (second hypothesis)
+       implies its domain is dominated by its codomain.  (Contributed by NM,
+       24-Jul-2004.) $)
+    dom2lem $p |- ( ph -> ( x e. A |-> C ) : A -1-1-> B ) $=
+      ( cv cfv wceq wi wral wcel wa imp anbi2d wb eqeq12d cmpt wf ralrimiv eqid
+      wf1 fmpt sylib fvmpt2 adantll mpdan adantrr nfv nffvmpt1 nfeq1 nfim eleq1
+      imbi1d anbi1d anidm syl6bb fveq2 adantr biimparc ex sylbird pm5.74d bitrd
+      chvar adantrl biimpd sylbid ralrimivva nfmpt1 nfcv dff13f sylanbrc ) ADEB
+      DFUAZUBZBJZVQKZCJZVQKZLZVSWALZMZCDNBDNDEVQUEAFEOZBDNVRAWFBDHUCBDEFVQVQUDZ
+      UFUGAWEBCDDAVSDOZWADOZPZPZWCFGLZWDWKVTFWBGAWHVTFLZWIAWHPZWFWMAWHWFHQWHWFW
+      MABDFEVQWGUHUIUJZUKAWIWBGLZWHWNWMMZAWIPZWPMZBCWRWPBWRBULBWBGBDFWAUMUNUOWD
+      WQWRWMMWSWDWNWRWMWDWHWIAVSWADUPZRUQWDWRWMWPWDWRWKWMWPSZWDWJWIAWDWJWIWIPWI
+      WDWHWIWIWTURWIUSUTRWDWKXAWDWKPVTWBFGWDWCWKVSWAVQVAVBWKWLWDAWJWLWDSIQZVCTV
+      DVEVFVGWOVHVITWKWLWDXBVJVKVLBCDEVQBDFVMCVQVNVOVP $.
+
+    $( A mapping (first hypothesis) that is one-to-one (second hypothesis)
+       implies its domain is dominated by its codomain.  (Contributed by NM,
+       24-Jul-2004.)  (Revised by Mario Carneiro, 20-May-2013.) $)
+    dom2d $p |- ( ph -> ( B e. R -> A ~<_ B ) ) $=
+      ( cmpt wf1 wcel cdom wbr dom2lem f1domg syl5com ) ADEBDFKZLEHMDENOABCDEFG
+      IJPDEHSQR $.
+
+    dom3d.3 $e |- ( ph -> A e. V ) $.
+    dom3d.4 $e |- ( ph -> B e. W ) $.
+    $( A mapping (first hypothesis) that is one-to-one (second hypothesis)
+       implies its domain is dominated by its codomain.  (Contributed by Mario
+       Carneiro, 20-May-2013.) $)
+    dom3d $p |- ( ph -> A ~<_ B ) $=
+      ( vz cdom wbr wf1 cvv wcel syl cv wex cmpt dom2lem f1f fex2 syl3anc f1eq1
+      wf spcegv sylc wb brdomg mpbird ) ADEOPZDENUAZQZNUBZABDFUCZRSZDEUSQZURADE
+      USUIZDHSEISZUTAVAVBABCDEFGJKUDZDEUSUETLMDEUSHIUFUGVDUQVANUSRDEUPUSUHUJUKA
+      VCUOURULMDEINUMTUN $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.  $d x D $.
+    dom2.1 $e |- ( x e. A -> C e. B ) $.
+    dom2.2 $e |- ( ( x e. A /\ y e. A ) -> ( C = D <-> x = y ) ) $.
+    $( A mapping (first hypothesis) that is one-to-one (second hypothesis)
+       implies its domain is dominated by its codomain. ` C ` and ` D ` can be
+       read ` C ( x ) ` and ` D ( y ) ` , as can be inferred from their
+       distinct variable conditions.  (Contributed by NM, 26-Oct-2003.) $)
+    dom2 $p |- ( B e. V -> A ~<_ B ) $=
+      ( wceq wcel cdom wbr wi eqid cv a1i wa wb dom2d ax-mp ) CCJZDGKCDLMNCOUBA
+      BCDEFGAPZCKZEDKNUBHQUDBPZCKREFJUCUEJSNUBIQTUA $.
+
+    $d x y V $.  $d x y W $.
+    $( A mapping (first hypothesis) that is one-to-one (second hypothesis)
+       implies its domain is dominated by its codomain. ` C ` and ` D ` can be
+       read ` C ( x ) ` and ` D ( y ) ` , as can be inferred from their
+       distinct variable conditions.  (Contributed by Mario Carneiro,
+       20-May-2013.) $)
+    dom3 $p |- ( ( A e. V /\ B e. W ) -> A ~<_ B ) $=
+      ( wcel wa cv wi a1i wceq wb simpl simpr dom3d ) CGKZDHKZLZABCDEFGHAMZCKZE
+      DKNUCIOUEBMZCKLEFPUDUFPQNUCJOUAUBRUAUBST $.
+  $}
+
+  ${
+    $d x y $.
+    $( Equality implies equinumerosity.  (Contributed by NM, 30-Apr-1998.)
+       (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    idssen $p |- _I C_ ~~ $=
+      ( vx vy cid cen reli cv wbr cop wcel weq vex ideq eqeng ax-mp sylbi df-br
+      cvv wi 3imtr3i relssi ) ABCDEAFZBFZCGZUAUBDGZUAUBHZCIUEDIUCABJZUDUAUBBKLU
+      AQIUFUDRAKUAUBQMNOUAUBCPUAUBDPST $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( A set dominates its subsets.  Theorem 16 of [Suppes] p. 94.
+       (Contributed by NM, 19-Jun-1998.)  (Revised by Mario Carneiro,
+       24-Jun-2015.) $)
+    ssdomg $p |- ( B e. V -> ( A C_ B -> A ~<_ B ) ) $=
+      ( wss wcel cdom wbr wa cvv cid cres wf1 ssexg simpr wf ccnv wfun wfo wf1o
+      ax-mp f1oi dff1o3 mpbi simpli fof fss mpan funi cnvi mpbir funres11 jctir
+      funeqi df-f1 sylibr adantr f1dom2g syl3anc expcom ) ABDZBCEZABFGZUTVAHAIE
+      VAABJAKZLZVBABCMUTVANUTVDVAUTABVCOZVCPQZHVDUTVEVFAAVCOZUTVEAAVCRZVGVHVFAA
+      VCSVHVFHAUAAAVCUBUCUDAAVCUETAABVCUFUGJPZQZVFVJJQUHVIJUIUMUJAJUKTULABVCUNU
+      OUPABVCICUQURUS $.
+  $}
+
+  ${
+    $d f g x y z $.
+    $( Equinumerosity is an equivalence relation.  (Contributed by NM,
+       19-Mar-1998.)  (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    ener $p |- ~~ Er _V $=
+      ( vx vy vz vf cvv cen wtru a1i wbr wf1o wex bren wcel vex f1oen2g mp3an12
+      vg cv syl wa wrel relen ccnv f1ocnv exlimiv sylbi adantl eeanv ccom f1oco
+      wer ancoms exlimivv sylbir syl2anb wb enref 2th iserd trud ) EFUKGABCEFFU
+      AGUBHARZBRZFIZVBVAFIZGVCVAVBDRZJZDKVDVAVBDLVFVDDVFVBVAVEUCZJZVDVAVBVEUDVB
+      EMVAEMZVHVDBNANZVBVAVGEEOPSUEUFUGVCVBCRZFIZTVAVKFIZGVCVAVBQRZJZQKZVBVKVEJ
+      ZDKZVMVLVAVBQLVBVKDLVPVRTVOVQTZDKQKVMVOVQQDUHVSVMQDVSVAVKVEVNUIZJZVMVQVOW
+      AVAVBVKVEVNUJULVIVKEMWAVMVJCNVAVKVTEEOPSUMUNUOUGVIVAVAFIZUPGVIWBVJVAVJUQU
+      RHUSUT $.
+  $}
+
+  $( Symmetry of equinumerosity.  Theorem 2 of [Suppes] p. 92.  (Contributed by
+     Mario Carneiro, 26-Apr-2015.) $)
+  ensymb $p |- ( A ~~ B <-> B ~~ A ) $=
+    ( cen wbr wb wtru cvv wer ener a1i ersymb trud ) ABCDBACDEFABCGGCHFIJKL $.
+
+  $( Symmetry of equinumerosity.  Theorem 2 of [Suppes] p. 92.  (Contributed by
+     NM, 26-Oct-2003.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+  ensym $p |- ( A ~~ B -> B ~~ A ) $=
+    ( cen wbr ensymb biimpi ) ABCDBACDABEF $.
+
+  ${
+    ensymi.2 $e |- A ~~ B $.
+    $( Symmetry of equinumerosity.  Theorem 2 of [Suppes] p. 92.  (Contributed
+       by NM, 25-Sep-2004.) $)
+    ensymi $p |- B ~~ A $=
+      ( cen wbr ensym ax-mp ) ABDEBADECABFG $.
+  $}
+
+  ${
+    ensymd.1 $e |- ( ph -> A ~~ B ) $.
+    $( Symmetry of equinumerosity.  Deduction form of ~ ensym .  (Contributed
+       by David Moews, 1-May-2017.) $)
+    ensymd $p |- ( ph -> B ~~ A ) $=
+      ( cen wbr ensym syl ) ABCEFCBEFDBCGH $.
+  $}
+
+  ${
+    $d x y z f g h A $.  $d x y z f g B $.  $d x y z f g h C $.
+    $( Transitivity of equinumerosity.  Theorem 3 of [Suppes] p. 92.
+       (Contributed by NM, 9-Jun-1998.) $)
+    entr $p |- ( ( A ~~ B /\ B ~~ C ) -> A ~~ C ) $=
+      ( cen wbr wa wi wtru cvv wer ener a1i ertr trud ) ABDEBCDEFACDEGHABCDIIDJ
+      HKLMN $.
+
+    $( Transitivity of dominance relation.  Theorem 17 of [Suppes] p. 94.
+       (Contributed by NM, 4-Jun-1998.)  (Revised by Mario Carneiro,
+       15-Nov-2014.) $)
+    domtr $p |- ( ( A ~<_ B /\ B ~<_ C ) -> A ~<_ C ) $=
+      ( vx vy vz vg vf vh cdom reldom cv wbr wf1 wex vex brdom wa eeanv ccom
+      f1co ancoms coex f1eq1 spcev syl sylibr exlimivv sylbir syl2anb vtoclr )
+      DEFABCJKDLZELZJMULUMGLZNZGOZUMFLZHLZNZHOZULUQJMZUMUQJMULUMGEPQUMUQHFPZQUP
+      UTRUOUSRZHOGOVAUOUSGHSVCVAGHVCULUQILZNZIOZVAVCULUQURUNTZNZVFUSUOVHULUMUQU
+      RUNUAUBVEVHIVGURUNHPGPUCULUQVDVGUDUEUFULUQIVBQUGUHUIUJUK $.
+  $}
+
+  ${
+    entri.1 $e |- A ~~ B $.
+    entri.2 $e |- B ~~ C $.
+    $( A chained equinumerosity inference.  (Contributed by NM,
+       25-Sep-2004.) $)
+    entri $p |- A ~~ C $=
+      ( cen wbr entr mp2an ) ABFGBCFGACFGDEABCHI $.
+  $}
+
+  ${
+    entr2i.1 $e |- A ~~ B $.
+    entr2i.2 $e |- B ~~ C $.
+    $( A chained equinumerosity inference.  (Contributed by NM,
+       25-Sep-2004.) $)
+    entr2i $p |- C ~~ A $=
+      ( entri ensymi ) ACABCDEFG $.
+  $}
+
+  ${
+    entr3i.1 $e |- A ~~ B $.
+    entr3i.2 $e |- A ~~ C $.
+    $( A chained equinumerosity inference.  (Contributed by NM,
+       25-Sep-2004.) $)
+    entr3i $p |- B ~~ C $=
+      ( ensymi entri ) BACABDFEG $.
+  $}
+
+  ${
+    entr4i.1 $e |- A ~~ B $.
+    entr4i.2 $e |- C ~~ B $.
+    $( A chained equinumerosity inference.  (Contributed by NM,
+       25-Sep-2004.) $)
+    entr4i $p |- A ~~ C $=
+      ( ensymi entri ) ABCDCBEFG $.
+  $}
+
+  $( Transitivity of equinumerosity and dominance.  (Contributed by NM,
+     7-Jun-1998.) $)
+  endomtr $p |- ( ( A ~~ B /\ B ~<_ C ) -> A ~<_ C ) $=
+    ( cen wbr cdom endom domtr sylan ) ABDEABFEBCFEACFEABGABCHI $.
+
+  $( Transitivity of dominance and equinumerosity.  (Contributed by NM,
+     7-Jun-1998.) $)
+  domentr $p |- ( ( A ~<_ B /\ B ~~ C ) -> A ~<_ C ) $=
+    ( cen wbr cdom endom domtr sylan2 ) BCDEABFEBCFEACFEBCGABCHI $.
+
+  $( A one-to-one function's image under a subset of its domain is equinumerous
+     to the subset.  (Contributed by Mario Carneiro, 15-May-2015.) $)
+  f1imaeng $p |- ( ( F : A -1-1-> B /\ C C_ A /\ C e. V ) ->
+    ( F " C ) ~~ C ) $=
+    ( wf1 wss wcel w3a cima cres wf1o cen f1ores f1oeng ancoms stoic3 ensymd
+    wbr ) ABDFZCAGZCEHZICDCJZTUACUCDCKZLZUBCUCMSZABCDNUBUEUFCUCEUDOPQR $.
+
+  $( A one-to-one function's image under a subset of its domain is equinumerous
+     to the subset.  (This version of ~ f1imaen does not need ~ ax-reg .)
+     (Contributed by Mario Carneiro, 16-Nov-2014.)  (Revised by Mario Carneiro,
+     25-Jun-2015.) $)
+  f1imaen2g $p |- ( ( ( F : A -1-1-> B /\ B e. V ) /\ ( C C_ A /\ C e. V ) ) ->
+    ( F " C ) ~~ C ) $=
+    ( wf1 wcel wa wss cima cvv cres wf1o cen wbr simprr simplr wf f1f crn ssexd
+    imassrn frn syl5ss syl ad2antrr f1ores ad2ant2r f1oen2g syl3anc ensymd ) AB
+    DFZBEGZHZCAIZCEGZHZHZCDCJZURUPUSKGCUSDCLZMZCUSNOUNUOUPPURUSBEULUMUQQULUSBIZ
+    UMUQULABDRZVBABDSVCUSDTBDCUBABDUCUDUEUFUAULUOVAUMUPABCDUGUHCUSUTEKUIUJUK $.
+
+  ${
+    f1imaen.1 $e |- C e. _V $.
+    $( A one-to-one function's image under a subset of its domain is
+       equinumerous to the subset.  (Contributed by NM, 30-Sep-2004.) $)
+    f1imaen $p |- ( ( F : A -1-1-> B /\ C C_ A ) -> ( F " C ) ~~ C ) $=
+      ( wf1 wss cvv wcel cima cen wbr f1imaeng mp3an3 ) ABDFCAGCHIDCJCKLEABCDHM
+      N $.
+  $}
+
+  ${
+    $d f A $.
+    $( The empty set is equinumerous only to itself.  Exercise 1 of
+       [TakeutiZaring] p. 88.  (Contributed by NM, 27-May-1998.) $)
+    en0 $p |- ( A ~~ (/) <-> A = (/) ) $=
+      ( vf c0 cen wbr wceq cv wf1o wex bren ccnv f1ocnv f1o00 simprbi syl sylbi
+      exlimiv 0ex enref breq1 mpbiri impbii ) ACDEZACFZUCACBGZHZBIUDACBJUFUDBUF
+      CAUEKZHZUDACUELUHUGCFUDAUGMNOQPUDUCCCDECRSACCDTUAUB $.
+  $}
+
+  ${
+    $d f A $.
+    ensn1.1 $e |- A e. _V $.
+    $( A singleton is equinumerous to ordinal one.  (Contributed by NM,
+       4-Nov-2002.) $)
+    ensn1 $p |- { A } ~~ 1o $=
+      ( vf csn c0 c1o cen wbr cv wf1o wex cop 0ex f1osn snex f1oeq1 spcev ax-mp
+      bren mpbir df1o2 breqtrri ) ADZEDZFGUCUDGHUCUDCIZJZCKZUCUDAELZDZJZUGAEBMN
+      UFUJCUIUHOUCUDUEUIPQRUCUDCSTUAUB $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( A singleton is equinumerous to ordinal one.  (Contributed by NM,
+       23-Apr-2004.) $)
+    ensn1g $p |- ( A e. V -> { A } ~~ 1o ) $=
+      ( vx cv csn c1o cen wbr wceq sneq breq1d vex ensn1 vtoclg ) CDZEZFGHAEZFG
+      HCABOAIPQFGOAJKOCLMN $.
+  $}
+
+  $( ` { A , A } ` has only one element.  (Contributed by FL, 15-Feb-2010.) $)
+  enpr1g $p |- ( A e. V -> { A , A } ~~ 1o ) $=
+    ( wcel cpr csn c1o cen dfsn2 ensn1g syl5eqbrr ) ABCAADAEFGAHABIJ $.
+
+  ${
+    $d x f y A $.  $d y ph $.
+    $( A set is equinumerous to ordinal one iff it is a singleton.
+       (Contributed by NM, 25-Jul-2004.) $)
+    en1 $p |- ( A ~~ 1o <-> E. x A = { x } ) $=
+      ( vf c1o cen wbr cv csn wceq wex wf1o df1o2 breq2i bren bitri crn syl 0ex
+      c0 exlimiv ccnv cfv f1ocnv wfo f1ofo forn wf f1of wcel fsn2 simprbi rneqd
+      rnsnop syl6eq eqtr3d fvex sneq eqeq2d spcev 3syl sylbi ensn1 breq1 mpbiri
+      cop vex impbii ) BDEFZBAGZHZIZAJZVHBSHZCGZKZCJZVLVHBVMEFVPDVMBELMBVMCNOVO
+      VLCVOVMBVNUAZKZBSVQUBZHZIZVLBVMVNUCVRVQPZBVTVRVMBVQUDWBBIVMBVQUEVMBVQUFQV
+      RWBSVSVEHZPVTVRVQWCVRVMBVQUGZVQWCIZVMBVQUHWDVSBUIWESBVQRUJUKQULSVSRUMUNUO
+      VKWAAVSSVQUPVIVSIVJVTBVIVSUQURUSUTTVAVKVHAVKVHVJDEFVIAVFVBBVJDEVCVDTVG $.
+
+    $( A set is equinumerous to ordinal one iff it is a singleton.
+       (Contributed by Mario Carneiro, 17-Jan-2015.) $)
+    en1b $p |- ( A ~~ 1o <-> A = { U. A } ) $=
+      ( vx c1o cen wbr cuni csn wceq cv wex en1 id unieq vex unisn syl6eq sneqd
+      cvv wcel syl eqtr4d exlimiv sylbi syl6eqel uniexg ensn1g eqbrtrd impbii
+      snex ) ACDEZAAFZGZHZUJABIZGZHZBJUMBAKUPUMBUPAUOULUPLUPUKUNUPUKUOFUNAUOMUN
+      BNOPQUAUBUCUMAULCDUMLZUMUKRSZULCDEUMARSURUMAULRUQUKUIUDARUETUKRUFTUGUH $.
+
+    $( Two ways to express "exactly one".  (Contributed by Stefan O'Rear,
+       28-Oct-2014.) $)
+    reuen1 $p |- ( E! x e. A ph <-> { x e. A | ph } ~~ 1o ) $=
+      ( vy wreu crab cv csn wceq wex c1o cen wbr reusn en1 bitr4i ) ABCEABCFZDG
+      HIDJQKLMABDCNDQOP $.
+
+    $( Two ways to express "exactly one".  (Contributed by Stefan O'Rear,
+       28-Oct-2014.) $)
+    euen1 $p |- ( E! x ph <-> { x | ph } ~~ 1o ) $=
+      ( cvv wreu crab c1o cen wbr weu cab reuen1 reuv rabab breq1i 3bitr3i ) AB
+      CDABCEZFGHABIABJZFGHABCKABLPQFGABMNO $.
+
+    $( Two ways to express " ` A ` has a unique element".  (Contributed by
+       Mario Carneiro, 9-Apr-2015.) $)
+    euen1b $p |- ( A ~~ 1o <-> E! x x e. A ) $=
+      ( cv wcel weu cab c1o cen wbr euen1 abid2 breq1i bitr2i ) ACBDZAENAFZGHIB
+      GHINAJOBGHABKLM $.
+  $}
+
+  $( A singleton contains its sole element.  (Contributed by Stefan O'Rear,
+     16-Aug-2015.) $)
+  en1uniel $p |- ( S ~~ 1o -> U. S e. S ) $=
+    ( c1o cen wbr cuni csn cvv wcel relen brrelexi uniexg 3syl wceq en1b biimpi
+    snidg eleqtrrd ) ABCDZAEZSFZARAGHSGHSTHABCIJAGKSGPLRATMANOQ $.
+
+  ${
+    $d x y f A $.
+    $( A set that dominates ordinal 2 has at least 2 different members.
+       (Contributed by NM, 25-Jul-2004.) $)
+    2dom $p |- ( 2o ~<_ A -> E. x e. A E. y e. A -. x = y ) $=
+      ( vf c2o cdom wbr c0 csn cpr cv wf1 wceq wn wrex cfv wcel ffvelrn sylancl
+      notbid wex df2o2 breq1i brdomi sylbi wf f1f 0ex prid1 p0ex prid2 0nep0 wb
+      neii f1fveq mpanr12 mtbiri eqeq1 eqeq2 rspc2ev syl3anc exlimiv syl ) ECFG
+      ZHHIZJZCDKZLZDUAZAKZBKZMZNZBCOACOZVDVFCFGVIEVFCFUBUCVFCDUDUEVHVNDVHHVGPZC
+      QZVEVGPZCQZVOVQMZNZVNVHVFCVGUFZHVFQZVPVFCVGUGZHVEUHUIZVFCHVGRSVHWAVEVFQZV
+      RWCHVEUJUKZVFCVEVGRSVHVSHVEMZHVEULUNVHWBWEVSWGUMWDWFVFCHVEVGUOUPUQVMVTVOV
+      KMZNABVOVQCCVJVOMVLWHVJVOVKURTVKVQMWHVSVKVQVOUSTUTVAVBVC $.
+  $}
+
+  ${
+    $d x y z w F $.
+    fundmen.1 $e |- F e. _V $.
+    $( A function is equinumerous to its domain.  Exercise 4 of [Suppes]
+       p. 98.  (Contributed by NM, 28-Jul-2004.)  (Revised by Mario Carneiro,
+       15-Nov-2014.) $)
+    fundmen $p |- ( Fun F -> dom F ~~ F ) $=
+      ( vx vy vz vw cv cop cint cvv wcel a1i ex wi wa wceq wb wex vex adantl
+      wfun cdm cfv dmex funfvop wrel funrel elreldm syl cxp df-rel sylib sselda
+      wss elvv inteq inteqd op1stb syl6eq eqeq1 syl5ibr opeq1 syl6 imp biimprcd
+      eqeq2 ancoms eleq1d funopfv adantr sylbid exp32 com24 imp43 opeq2d eqtr4d
+      mpd exlimdvv adantrl fvex syl6req impbid1 en3d ) AUAZCDAUBZACGZWFAUCZHZDG
+      ZIZIZWEJKWDABUDLAJKWDBLWDWFWEKZWHAKWFAUEMWDAUFZWIAKZWKWEKZNAUGZWMWNWOAWIU
+      HMUIWDWLWNOZWFWKPZWIWHPZQWDWQOWRWSWDWNWRWSNZWLWDWNOZWIEGZFGZHZPZFRERZWTXA
+      WIJJUJZKXFWDAXGWIWDWMAXGUNWPAUKULUMEFWIUOULXAXEWTEFXAXEWRWSXAXEWROZOZWIWF
+      XCHZWHXHWIXJPZXAWRXEXKWRXEOZXJXDPZXKWRXEXMWRXEWFXBPZXMXEXNWRWKXBPXEWKXDIZ
+      IXBXEWJXOWIXDUPUQXBXCESFSURUSWFWKXBUTVAWFXBXCVBVCVDXEXMXKNWRXMXKXEXJXDWIV
+      FVETVQZVGTXIWGXCWFWDWNXEWRWGXCPZWDWRXEWNXQWDWRXEWNXQNWDXLOWNXJAKZXQXLWNXR
+      QWDXLWIXJAXPVHTWDXRXQNXLWFXCAVIVJVKVLVMVNVOVPVLVRVQVSWSWKWHIZIWFWSWJXSWIW
+      HUPUQWFWGCSWFAVTURWAWBMWC $.
+  $}
+
+  ${
+    $d x A $.  $d x F $.
+    $( A function is equinumerous to its domain.  Exercise 4 of [Suppes]
+       p. 98.  (Contributed by NM, 17-Sep-2013.) $)
+    fundmeng $p |- ( ( F e. V /\ Fun F ) -> dom F ~~ F ) $=
+      ( vx wcel wfun cdm cen wbr cv wceq funeq dmeq breq12d imbi12d vex fundmen
+      wi id vtoclg imp ) ABDAEZAFZAGHZCIZEZUDFZUDGHZQUAUCQCABUDAJZUEUAUGUCUDAKU
+      HUFUBUDAGUDALUHRMNUDCOPST $.
+
+    $( A relational set is equinumerous to its converse.  (Contributed by Mario
+       Carneiro, 28-Dec-2014.) $)
+    cnven $p |- ( ( Rel A /\ A e. V ) -> A ~~ `' A ) $=
+      ( vx wrel wcel wa ccnv cvv csn cuni cmpt wf1o cen wbr simpr cnvexg adantl
+      cv cnvf1o adantr f1oen2g syl3anc ) ADZABEZFUDAGZHEZAUECACRIGJKZLZAUEMNUCU
+      DOUDUFUCABPQUCUHUDCASTAUEUGBHUAUB $.
+  $}
+
+  $( A function is equinumerate to its domain.  (Contributed by Paul Chapman,
+     22-Jun-2011.) $)
+  fndmeng $p |- ( ( F Fn A /\ A e. C ) -> A ~~ F ) $=
+    ( wfn wcel wa cdm cen wbr wfun fnex fnfun adantr fundmeng syl2anc wb breq1d
+    cvv fndm mpbid ) CADZABEZFZCGZCHIZACHIZUCCRECJZUEABCKUAUGUBACLMCRNOUAUEUFPU
+    BUAUDACHACSQMT $.
+
+  ${
+    $d w y z A $.  $d w y z B $.
+    mapsnen.1 $e |- A e. _V $.
+    mapsnen.2 $e |- B e. _V $.
+    $( Set exponentiation to a singleton exponent is equinumerous to its base.
+       Exercise 4.43 of [Mendelson] p. 255.  (Contributed by NM, 17-Dec-2003.)
+       (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    mapsnen $p |- ( A ^m { B } ) ~~ A $=
+      ( vz vw vy csn cmap cv cfv cop cvv wcel a1i wceq wa wex wrex 3bitr2i ovex
+      fvex snex mapsn abeq2i anbi1i r19.41v df-rex fveq1 vex fvsn syl6eq eqeq2d
+      equcom syl6bb pm5.32i anass ancom exbii eleq1 opeq2 sneqd anbi12d ceqsexv
+      co anbi2i 3bitri en2i ) EFABHZIVEZABEJZKZBFJZLZHZAVIIUACVLMNVKVJNZBVKUBOV
+      OMNVMANZVNUCOVPVMVLPZQZGJZANZVKBVTLZHZPZVRQZQZGRZVTVMPZWAWDQZQZGRVQVKVOPZ
+      QZVSWDGASZVRQWEGASWGVPWMVRWMEVJGABECDUDUEUFWDVRGAUGWEGAUHTWFWJGWFWAWDWHQZ
+      QWIWHQWJWEWNWAWDVRWHWDVRVMVTPWHWDVLVTVMWDVLBWCKVTBVKWCUIBVTDGUJUKULUMFGUN
+      UOUPVFWAWDWHUQWIWHURTUSWIWLGVMFUJWHWAVQWDWKVTVMAUTWHWCVOVKWHWBVNVTVMBVAVB
+      UMVCVDVGVH $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.  $d x y V $.
+    $( Set exponentiation: ordinal 1 to any set is equinumerous to ordinal 1.
+       Exercise 4.42(b) of [Mendelson] p. 255.  (Contributed by NM,
+       17-Dec-2003.) $)
+    map1 $p |- ( A e. V -> ( 1o ^m A ) ~~ 1o ) $=
+      ( vx vy wcel c1o cmap co c0 csn cvv a1i df1o2 p0ex cv 0ex wceq wa syl6rbb
+      wb cxp ovex eqeltri a1ii xpexg mpan2 a1d el1o oveq1i eleq2i elmapg syl5bb
+      wf mpan fconst2 anbi12d ancom en2d ) ABEZCDFAGHZFIAIJZUAZUTKEUSFAGUBLFKEU
+      SFVAKMNUCLUSCOZUTEZIKEPUDUSVBKEZDOZFEZUSVAKEZVENAVABKUEUFUGUSVGVCVBQZRVFI
+      QZVDRVDVJRUSVGVJVIVDVGVJTUSVFUHLUSVDAVAVCUMZVIVDVCVAAGHZEZUSVKUTVLVCFVAAG
+      MUIUJVHUSVMVKTNVAAVCKBUKUNULAIVCPUOSUPVJVDUQSUR $.
+
+    $( Two singletons are equinumerous.  (Contributed by NM, 9-Nov-2003.) $)
+    en2sn $p |- ( ( A e. C /\ B e. D ) -> { A } ~~ { B } ) $=
+      ( wcel csn c1o cen wbr ensn1g ensymd entr syl2an ) ACEAFZGHIGBFZHINOHIBDE
+      ZACJPOGBDJKNGOLM $.
+
+    $( A singleton is finite.  (Contributed by NM, 4-Nov-2002.) $)
+    snfi $p |- { A } e. Fin $=
+      ( vx csn cfn wcel cv cen wbr com wrex cvv c1o ensn1g breq2 rspcev sylancr
+      1onn wn c0 wceq snprc en0 peano1 mpan sylbir sylbi pm2.61i isfi mpbir ) A
+      CZDEUJBFZGHZBIJZAKEZUMUNLIEUJLGHZUMQAKMULUOBLIUKLUJGNOPUNRUJSTZUMAUAUPUJS
+      GHZUMUJUBSIEUQUMUCULUQBSIUKSUJGNOUDUEUFUGBUJUHUI $.
+
+    $( The class of finite sets is a proper class.  (Contributed by Jeff
+       Hankins, 3-Oct-2008.) $)
+    fiprc $p |- Fin e/ _V $=
+      ( vx vy cv csn wceq wex cab cvv wnel cfn snnex wcel wss snfi eleq1 mpbiri
+      wn exlimiv abssi df-nel ssexg mpan con3i 3imtr4i ax-mp ) ACZBCZDZEZBFZAGZ
+      HIZJHIZABKUKHLZQJHLZQULUMUOUNUKJMUOUNUJAJUIUFJLZBUIUPUHJLUGNUFUHJOPRSUKJH
+      UAUBUCUKHTJHTUDUE $.
+
+    $( Equinumerosity of union of disjoint sets.  Theorem 4 of [Suppes] p. 92.
+       (Contributed by NM, 11-Jun-1998.)  (Revised by Mario Carneiro,
+       26-Apr-2015.) $)
+    unen $p |- ( ( ( A ~~ B /\ C ~~ D ) /\
+  ( ( A i^i C ) = (/) /\ ( B i^i D ) = (/) ) ) -> ( A u. C ) ~~ ( B u. D ) ) $=
+      ( vx vy cen wbr wa cin c0 wceq cun cv wf1o wex wi bren cvv vex eeanv wcel
+      unex f1oun f1oen3g sylancr ex exlimivv sylbir syl2anb imp ) ABGHZCDGHZIAC
+      JKLBDJKLIZACMZBDMZGHZULABENZOZEPZCDFNZOZFPZUNUQQZUMABERCDFRUTVCIUSVBIZFPE
+      PVDUSVBEFUAVEVDEFVEUNUQVEUNIURVAMZSUBUOUPVFOUQURVAETFTUCABCDURVAUDUOUPVFS
+      UEUFUGUHUIUJUK $.
+  $}
+
+  $( All decrements of a set are equinumerous.  (Contributed by Stefan O'Rear,
+     19-Feb-2015.) $)
+  difsnen $p |- ( ( X e. V /\ A e. X /\ B e. X ) ->
+      ( X \ { A } ) ~~ ( X \ { B } ) ) $=
+    ( wcel csn cdif cen wbr wceq cvv difexg enrefg syl wne cun c0 incom disjdif
+    cin w3a 3ad2ant1 sneq difeq2d breq2d syl5ibcom imp wa simpl1 dif32 syl6breq
+    4syl simpl3 simpl2 en2sn syl2anc eqtri unen syl22anc simpr eldifsn sylanbrc
+    a1i necomd difsnid 3brtr3d pm2.61dane ) DCEZADEZBDEZUAZDAFZGZDBFZGZHIZABVKA
+    BJZVPVKVMVMHIZVQVPVHVIVRVJVHVMKEZVRDVLCLZVMKMNUBVQVMVOVMHVQVLVNDABUCUDUEUFU
+    GVKABOZUHZVMVNGZVNPZVOVLGZVLPZVMVOHWBWCWEHIVNVLHIZWCVNTZQJZWEVLTZQJZWDWFHIW
+    BWCWCWEHWBVHVSWCKEWCWCHIVHVIVJWAUIVTVMVNKLWCKMULDVLVNUJUKWBVJVIWGVHVIVJWAUM
+    ZVHVIVJWAUNZBADDUOUPWIWBWHVNWCTQWCVNRVNVMSUQVCWKWBWJVLWETQWEVLRVLVOSUQVCWCW
+    EVNVLURUSWBBVMEZWDVMJWBVJBAOWNWLWBABVKWAUTZVDBDAVAVBVMBVENWBAVOEZWFVOJWBVIW
+    AWPWMWOADBVAVBVOAVENVFVG $.
+
+  ${
+    $d A f x $.  $d B f x $.  $d C f x $.
+    $( Dominance over a set with one element removed.  (Contributed by Stefan
+       O'Rear, 19-Feb-2015.)  (Revised by Mario Carneiro, 24-Jun-2015.) $)
+    domdifsn $p |- ( A ~< B -> A ~<_ ( B \ { C } ) ) $=
+      ( vf vx csdm wbr wcel csn cdif wa cv cvv wb syl adantr adantl wn ad2antrr
+      cdom wf1 wex sdomdom relsdom brrelex2i brdomg mpbid crn c0 wne wss wf f1f
+      frn cen sdomnen wceq wf1o vex dff1o5 biimpri f1oen3g sylancr necon3bd mpd
+      wi ex pssdifn0 syl2anc n0 sylib brrelexi difexg cin eldifn disjsn reldisj
+      sylibr syldan f1dom2g syl3anc eldifi ad2antll simplr difsnen domentr expr
+      f1ssr exlimdv exlimddv difsn breq2d mpbird pm2.61dan ) ABFGZCBHZABCIJZTGZ
+      WOWPKZABDLZUAZWRDWOXADUBZWPWOABTGZXBABUCZWOBMHZXCXBNABFUDUEZABMDUFOUGPWSX
+      AKZELZBWTUHZJZHZEUBZWRXGXJUIUJZXLXGXIBUKZXIBUJZXMXAXNWSXAABWTULXNABWTUMAB
+      WTUNOZQXGABUOGZRZXOWOXRWPXAABUPSXAXRXOVFWSXAXQXIBXAXIBUQZXQXAXSKZWTMHABWT
+      URZXQDUSYAXTABWTUTVAABWTMVBVCVGVDQVEXIBVHVIEXJVJVKXGXKWREWSXAXKWRWSXAXKKZ
+      KZABXHIZJZTGZYEWQUOGZWRYCAMHZYEMHZAYEWTUAZYFWOYHWPYBABFUDVLSYCXEYIWOXEWPY
+      BXFSZBYDMVMOYBYJWSXAXKXIYEUKZYJYBXIYDVNUIUQZYLXKYMXAXKXHXIHRYMXHBXIVOXIXH
+      VPVRQYBXNYMYLNXAXNXKXPPXIYDBVQOUGABYEWTWHVSQAYEWTMMVTWAYCXEXHBHZWPYGYKXKY
+      NWSXAXHBXIWBWCWOWPYBWDXHCMBWEWAAYEWQWFVIWGWIVEWJWOWPRZKWRXCWOXCYOXDPYOWRX
+      CNWOYOWQBATCBWKWLQWMWN $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    xpsnen.1 $e |- A e. _V $.
+    xpsnen.2 $e |- B e. _V $.
+    $( A set is equinumerous to its Cartesian product with a singleton.
+       Proposition 4.22(c) of [Mendelson] p. 254.  (Contributed by NM,
+       4-Jan-2004.)  (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    xpsnen $p |- ( A X. { B } ) ~~ A $=
+      ( vy vx vz cv cint cop wcel wceq wex cvv inteq inteqd vex op1stb adantr
+      wa csn cxp snex xpex elxp syl6eq syl6eqel exlimivv sylbi opex wb eqvisset
+      ancom anass elsn anbi1i 3bitr3i exbii opeq2 eqeq2d anbi1d ceqsexv syl6req
+      a1i pm4.71ri bitri 3bitri opeq1 eleq1 anbi12d ceqsexgv syl5bb syl pm4.71i
+      pm5.32ri bitr2i en2i ) EFABUAZUBZAEHZIZIZFHZBJZAVRCBUCUDCVTVSKZVTWCGHZJZL
+      ZWCAKZWFVRKZTZTZGMZFMZWBNKZFGVTAVRUEZWLWOFGWHWOWKWHWBWCNWHWBWGIZIWCWHWAWQ
+      VTWGOPWCWFFQZGQRUFWRUGSUHUIWDNKWIWCBUJVDWEWCWBLZTVTWBBJZLZWBAKZTZWSTZVTWD
+      LZWITZWIXETWSWEXCWSWOWEXCUKFWBULWEWSXFTZFMZWOXCWEWNXHWPWMXGFWMWFBLZWHWITZ
+      TZGMXFXGWLXKGXJWJTWJXJTWLXKXJWJUMWHWIWJUNWJXIXJGBUOUPUQURXJXFGBDXIWHXEWIX
+      IWGWDVTWFBWCUSUTVAVBXFWSXETZWITXGXEXLWIXEWSXEWBWDIZIWCXEWAXMVTWDOPWCBWRDR
+      VCZVEUPWSXEWIUNVFVGURVFXFXCFWBNWSXEXAWIXBWSWDWTVTWCWBBVHUTWCWBAVIVJZVKVLV
+      MVOXFXFWSTXDXFWSXEWSWIXNSVNWSXFXCXOVOVPXEWIUMVGVQ $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( A set is equinumerous to its Cartesian product with a singleton.
+       Proposition 4.22(c) of [Mendelson] p. 254.  (Contributed by NM,
+       22-Oct-2004.) $)
+    xpsneng $p |- ( ( A e. V /\ B e. W ) -> ( A X. { B } ) ~~ A ) $=
+      ( vx vy cv csn cxp cen wbr wceq xpeq1 id breq12d xpeq2d breq1d vex xpsnen
+      sneq vtocl2g ) EGZFGZHZIZUBJKAUDIZAJKABHZIZAJKEFABCDUBALZUEUFUBAJUBAUDMUI
+      NOUCBLZUFUHAJUJUDUGAUCBTPQUBUCERFRSUA $.
+  $}
+
+  $( One times a cardinal number.  (Contributed by NM, 27-Sep-2004.)  (Revised
+     by Mario Carneiro, 29-Apr-2015.) $)
+  xp1en $p |- ( A e. V -> ( A X. 1o ) ~~ A ) $=
+    ( wcel c1o cxp c0 csn cen df1o2 xpeq2i cvv wbr 0ex xpsneng mpan2 syl5eqbr )
+    ABCZADEAFGZEZAHDRAIJQFKCSAHLMAFBKNOP $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    endisj.1 $e |- A e. _V $.
+    endisj.2 $e |- B e. _V $.
+    $( Any two sets are equinumerous to disjoint sets.  Exercise 4.39 of
+       [Mendelson] p. 255.  (Contributed by NM, 16-Apr-2004.) $)
+    endisj $p |- E. x E. y ( ( x ~~ A /\ y ~~ B ) /\ ( x i^i y ) = (/) ) $=
+      ( c0 csn cxp cen wbr c1o wa cin wceq cv wex xpsnen xpex breq1 con0 pm3.2i
+      0ex elexi xp01disj p0ex snex bi2anan9 ineq12 eqeq1d anbi12d spc2ev mp2an
+      1on ) CGHZIZCJKZDLHZIZDJKZMZUPUSNZGOZAPZCJKZBPZDJKZMZVDVFNZGOZMZBQAQUQUTC
+      GEUCRDLFLUAUNUDRUBCDUEVKVAVCMABUPUSCUOEUFSDURFLUGSVDUPOZVFUSOZMZVHVAVJVCV
+      LVEUQVMVGUTVDUPCJTVFUSDJTUHVNVIVBGVDUPVFUSUIUJUKULUM $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.
+    $( Dominance law for union.  Proposition 4.24(a) of [Mendelson] p. 257.
+       (Contributed by NM, 3-Sep-2004.)  (Revised by Mario Carneiro,
+       26-Apr-2015.) $)
+    undom $p |- ( ( ( A ~<_ B /\ C ~<_ D ) /\ ( B i^i D ) = (/) ) ->
+                ( A u. C ) ~<_ ( B u. D ) ) $=
+      ( vx vy cdom wbr wa cin c0 wceq cen wss wex cun cvv wcel reldom brrelex2i
+      cv cdif domeng syl ibi brrelexi difss ssdomg mpisyl domtr mpancom anim12i
+      wb adantr eeanv simprll simprrl disjdif a1i ss2in ad2ant2l adantl syl2anc
+      simplr sseq0 undif2 unen syl5eqbrr syl22anc ad3antrrr ad3antlr unexg sylc
+      unss12 endomtr ex exlimdvv syl5bir mpd ) ABGHZCDGHZIZBDJZKLZIZAEUAZMHZWFB
+      NZIZEOZCAUBZFUAZMHZWLDNZIZFOZIZACPZBDPZGHZWBWQWDVTWJWAWPVTWJVTBQRZVTWJUMA
+      BGSTZEABQUCUDUEWAWKDGHZWPWKCGHZWAXCWACQRWKCNXDCDGSUFCAUGWKCQUHUIWKCDUJUKX
+      CWPXCDQRZXCWPUMWKDGSTFWKDQUCUDUEUDULUNWQWIWOIZFOEOWEWTWIWOEFUOWEXFWTEFWEX
+      FWTWEXFIZWRWFWLPZMHZXHWSGHZWTXGWGWMAWKJKLZWFWLJZKLZXIWEWGWHWOUPWEWIWMWNUQ
+      XKXGACURUSXGXLWCNZWDXMXFXNWEWHWNXNWGWMWFBWLDUTVAVBWBWDXFVDXLWCVEVCWGWMIXK
+      XMIIWRAWKPXHMACVFAWFWKWLVGVHVIXGWSQRZXHWSNZXJXGXAXEXOVTXAWAWDXFXBVJWAXEVT
+      WDXFCDGSTVKBDQQVLVCXFXPWEWHWNXPWGWMWFBWLDVNVAVBXHWSQUHVMWRXHWSVOVCVPVQVRV
+      S $.
+  $}
+
+  ${
+    $d u v w x y z A $.  $d u v w x y z B $.  $d u v C $.  $d u v w y z F $.
+    $d u v w G $.
+    xpcomf1o.1 $e |- F = ( x e. ( A X. B ) |-> U. `' { x } ) $.
+    $( The canonical bijection from ` ( A X. B ) ` to ` ( B X. A ) ` .
+       (Contributed by Mario Carneiro, 23-Apr-2014.) $)
+    xpcomf1o $p |- F : ( A X. B ) -1-1-onto-> ( B X. A ) $=
+      ( cxp ccnv wf1o cv cuni cmpt wrel relxp cnvf1o ax-mp wceq wb f1oeq1 mpbir
+      csn cnvxp f1oeq3 mpbi ) BCFZUDGZDHZUDCBFZDHZUFUDUEAUDAITGJKZHZUDLUJBCMAUD
+      NODUIPUFUJQEUDUEDUIROSUEUGPUFUHQBCUAUEUGUDDUBOUC $.
+
+    xpcomco.1 $e |- G = ( y e. B , z e. A |-> C ) $.
+    $( Composition with the bijection of ~ xpcomf1o swaps the arguments to a
+       mapping.  (Contributed by Mario Carneiro, 30-May-2015.) $)
+    xpcomco $p |- ( G o. F ) = ( z e. A , y e. B |-> C ) $=
+      ( vu vw vv cv wbr wa wex wceq wcel nfcv copab cop ccom cmpt2 cfv cxp wf1o
+      cdm wfun wb xpcomf1o f1ofun funbrfv2b mp2b ancom eqcom f1odm ax-mp eleq2i
+      anbi12i 3bitri anbi1i anass bitri exbii fvex breq1 anbi2d ceqsexv nfmpt22
+      elxp nfcxfr nfbr 19.41 nfmpt21 fveq2 opelxpi ccnv cuni sneq cnveqd unieqd
+      csn opswap syl6eq opex fvmpt sylan9eq breq1d coprab df-br df-mpt2 oprabid
+      syl eqtri baib ancoms adantl bitrd pm5.32da pm5.32i 3bitr2i opabbii df-co
+      bitr3i dfoprab2 3eqtr4i ) KNZLNZGOZXIMNZHOZPZLQZKMUAXHCNZBNZUBZRZXODSZXPE
+      SZPZXKFRZPZPZBQZCQZKMUAZHGUCCBDEFUDZXNYFKMXNXIXHGUEZRZXHDEUFZSZXLPZPZLQYL
+      YIXKHOZPZYFXMYNLXMYJYLPZXLPYNXJYQXLXJXHGUHZSZYIXIRZPZYTYSPYQYKEDUFZGUGZGU
+      IXJUUAUJADEGIUKZYKUUBGULXHXIGUMUNYSYTUOYTYJYSYLYIXIUPYRYKXHUUCYRYKRUUDYKU
+      UBGUQURUSUTVAVBYJYLXLVCVDVEYMYPLYIXHGVFYJXLYOYLXIYIXKHVGVHVIYPXRYAPZBQZCQ
+      ZYOPUUFYOPZCQYFYLUUGYOCBXHDEVKVBUUFYOCCYIXKHCYITCHBCEDFUDZJBCEDFVJVLCXKTV
+      MVNUUHYECUUHUUEYOPZBQYEUUEYOBBYIXKHBYITBHUUIJBCEDFVOVLBXKTVMVNUUJYDBUUJXR
+      YAYOPZPYDXRYAYOVCXRUUKYCXRYAYOYBUUEYOXPXOUBZXKHOZYBUUEYIUULXKHXRYAYIXQGUE
+      ZUULXHXQGVPYAXQYKSUUNUULRXOXPDEVQAXQANZWCZVRZVSZUULYKGUUOXQRZUURXQWCZVRZV
+      SUULUUSUUQUVAUUSUUPUUTUUOXQVTWAWBXOXPWDWEIXPXOWFWGWNWHWIYAUUMYBUJZXRXTXSU
+      VBUUMXTXSPZYBUUMUULXKUBZHSUVDUVCYBPZBCMWJZSUVEUULXKHWKHUVFUVDHUUIUVFJBCME
+      DFWLWOUSUVEBCMWMVAWPWQWRWSWTXAVDVEXEVEXBVAXCKMLHGXDYHYCCBMWJYGCBMDEFWLYCC
+      BMKXFWOXG $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    xpcomen.1 $e |- A e. _V $.
+    xpcomen.2 $e |- B e. _V $.
+    $( Commutative law for equinumerosity of Cartesian product.  Proposition
+       4.22(d) of [Mendelson] p. 254.  (Contributed by NM, 5-Jan-2004.)
+       (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    xpcomen $p |- ( A X. B ) ~~ ( B X. A ) $=
+      ( cxp cvv wcel csn ccnv cuni cmpt wf1o cen wbr xpex eqid xpcomf1o f1oen2g
+      vx cv mp3an ) ABEZFGBAEZFGUBUCSUBSTHIJKZLUBUCMNABCDOBADCOSABUDUDPQUBUCUDF
+      FRUA $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.
+    $( Commutative law for equinumerosity of Cartesian product.  Proposition
+       4.22(d) of [Mendelson] p. 254.  (Contributed by NM, 27-Mar-2006.) $)
+    xpcomeng $p |- ( ( A e. V /\ B e. W ) -> ( A X. B ) ~~ ( B X. A ) ) $=
+      ( vx vy cv cxp cen wbr wceq xpeq1 xpeq2 breq12d vex xpcomen vtocl2g ) EGZ
+      FGZHZSRHZIJASHZSAHZIJABHZBAHZIJEFABCDRAKTUBUAUCIRASLRASMNSBKUBUDUCUEISBAM
+      SBALNRSEOFOPQ $.
+  $}
+
+  $( A set is equinumerous to its Cartesian product with a singleton on the
+     left.  (Contributed by Stefan O'Rear, 21-Nov-2014.) $)
+  xpsnen2g $p |- ( ( A e. V /\ B e. W ) -> ( { A } X. B ) ~~ B ) $=
+    ( wcel wa csn cxp cen wbr cvv snex xpcomeng mpan adantl xpsneng ancoms entr
+    syl2anc ) ACEZBDEZFAGZBHZBUBHZIJZUDBIJZUCBIJUAUETUBKEUAUEALUBBKDMNOUATUFBAD
+    CPQUCUDBRS $.
+
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    xpassen.1 $e |- A e. _V $.
+    xpassen.2 $e |- B e. _V $.
+    xpassen.3 $e |- C e. _V $.
+    $( Associative law for equinumerosity of Cartesian product.  Proposition
+       4.22(e) of [Mendelson] p. 254.  (Contributed by NM, 22-Jan-2004.)
+       (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    xpassen $p |- ( ( A X. B ) X. C ) ~~ ( A X. ( B X. C ) ) $=
+      ( vz vw vv vu csn cdm cuni crn cop wcel wceq wa wex unieqd vx vy cxp xpex
+      cvv opex a1i sneq dmeqd sneqd vex op1sta sneqi dmeqi unieqi eqtri syl6req
+      rneqd rneqi op2nda opeq12d eq2tri anass anbi12i an32 3bitr4i exbii 19.41v
+      3bitr3i 2exbii 19.41vv elxp excom anbi1i an12 exrot4 eqeq2d anbi1d anbi2d
+      opeq1 ceqsexv 3bitri 3exbii anbi2i 19.42vv bitri bitr3i exrot3 opeq2 en2i
+      cv ) UAUBABUCZCUCZABCUCZUCZUAWKZKZLZMZKZLZMZWTNZMZWQNZMZOZOZUBWKZKZLZMZXJ
+      NZMZKZLZMZOZXONZMZOZWLCABDEUDFUDAWNDBCEFUDUDXHUEPWPWMPZXBXGUFUGYAUEPXIWOP
+      ZXRXTUFUGWPGWKZHWKZOZIWKZOZQZYDAPZYEBPZRZYGCPZRZRZISZHSGSZXIXHQZRZXIYDYEY
+      GOZOZQZYJYKYMRZRZRZISZHSZGSZWPYAQZRZYBYRRYCUUIRYPYRRZHSGSUUFUUIRZHSGSYSUU
+      JUUKUULGHYOYRRZISUUEUUIRZISUUKUULUUMUUNIYIYRRZYNRUUBUUIRZUUDRUUMUUNUUOUUP
+      YNUUDWPXIYHUUAXHYAYIYDXBYTXGYIXBYHKZLZMZKZLZMZYDYIXAUVAYIWTUUTYIWSUUSYIWR
+      UURYIWQUUQWPYHUHZUITUJZUITUVBYFKZLZMYDUVAUVFUUTUVEUUSYFYFYGYDYEUFZIUKZULU
+      MZUNUOYDYEGUKZHUKZULUPUQYIYEXDYGXFYIXDUUTNZMZYEYIXCUVLYIWTUUTUVDURTUVMUVE
+      NZMYEUVLUVNUUTUVEUVIUSUOYDYEUVJUVKUTUPUQYIXFUUQNZMYGYIXEUVOYIWQUUQUVCURTY
+      FYGUVGUVHUTUQVAVAUUBYFXRYGXTUUBYDXLYEXQUUBXLUUAKZLZMYDUUBXKUVQUUBXJUVPXIU
+      UAUHZUITYDYTUVJYEYGUFZULUQUUBXQUVPNZMZKZLZMZYEUUBXPUWCUUBXOUWBUUBXNUWAUUB
+      XMUVTUUBXJUVPUVRURTUJZUITUWDYTKZLZMYEUWCUWGUWBUWFUWAYTYDYTUVJUVSUTUMZUNUO
+      YEYGUVKUVHULUPUQVAUUBXTUWBNZMZYGUUBXSUWIUUBXOUWBUWEURTUWJUWFNZMYGUWIUWKUW
+      BUWFUWHUSUOYEYGUVKUVHUTUPUQVAVBYJYKYMVCVDYIYNYRVEUUBUUDUUIVEVFVGYOYRIVHUU
+      EUUIIVHVIVJYPYRGHVKUUFUUIGHVKVIYBYQYRYBWPJWKZYGOZQZUWLWLPZYMRRZISJSUWPJSI
+      SZYQJIWPWLCVLUWPJIVMUWQUWLYFQZYLRZUWNYMRZRZHSGSZJSISUXAJSZISHSGSYQUWPUXBI
+      JUWOUWTRUWSHSGSZUWTRUWPUXBUWOUXDUWTGHUWLABVLVNUWNUWOYMVOUWSUWTGHVKVFVJUXA
+      IJGHVPUXCYOGHIUXCUWRYLUWTRZRZJSYLYIYMRZRZYOUXAUXFJUWRYLUWTVCVGUXEUXHJYFUV
+      GUWRUWTUXGYLUWRUWNYIYMUWRUWMYHWPUWLYFYGVTVQVRVSWAYLYIYMVOWBWCWBWBVNYCUUHU
+      UIYCXIYDUWLOZQZYJUWLWNPZRRZJSZGSUUHGJXIAWNVLUXMUUGGUXMUWLYTQZUXJUUDRZRZIS
+      HSZJSUXPJSZISHSUUGUXLUXQJUXJYJRZUXKRUXSUXNUUCRZISHSZRZUXLUXQUXKUYAUXSHIUW
+      LBCVLWDUXJYJUXKVCUYBUXSUXTRZISHSUXQUXSUXTHIWEUYCUXPHIUYCUXNUXSUUCRZRUXPUX
+      SUXNUUCVOUYDUXOUXNUXJYJUUCVCWDWFVJWGVIVGUXPJHIWHUXRUUEHIUXOUUEJYTUVSUXNUX
+      JUUBUUDUXNUXIUUAXIUWLYTYDWIVQVRWAVJWBVGWFVNVFWJ $.
+  $}
+
+  ${
+    $d f u v w x y z A $.  $d f u v w x y z B $.  $d f u v w x y z C $.
+    xpdom.2 $e |- C e. _V $.
+    $( Dominance law for Cartesian product.  Proposition 10.33(2) of
+       [TakeutiZaring] p. 92.  (Contributed by NM, 24-Jul-2004.)  (Revised by
+       Mario Carneiro, 15-Nov-2014.) $)
+    xpdom2 $p |- ( A ~<_ B -> ( C X. A ) ~<_ ( C X. B ) ) $=
+      ( vz vw vv vu cdom cv wa csn cdm cuni cop cvv wcel wi wceq wb wbr wf1 cxp
+      vf vx vy brdomi crn cfv wf f1f ffvelrn ex syl anim2d adantld elxp4 opelxp
+      3imtr4g adantl wrex elxp2 vex fvex opth f1fveq ancoms anbi2d ad2ant2l imp
+      syl5bb adantlr dmeqd unieqd op1sta syl6eq op2nda fveq2d opeq12d eqeqan12d
+      sneq rneqd ad2antlr eqeq12 syl6bb 3bitr4d exp53 com23 rexlimivv rexlimdvv
+      syl2anb com12 reldom brrelexi xpexg sylancr adantr brrelex2i exlimddv
+      dom3d ) ABIUAZABUDJZUBZCAUCZCBUCZIUAUDABUDUGXAXCKUEUFXDXEUEJZLZMZNZXGUHZN
+      ZXBUIZOZUFJZLZMZNZXOUHZNZXBUIZOZPPXCXFXDQZXMXEQZRXAXCXFXIXKOSZXICQZXKAQZK
+      ZKYEXLBQZKZYBYCXCYGYIYDXCYFYHYEXCABXBUJZYFYHRABXBUKYJYFYHABXKXBULUMUNUOUP
+      XFCAUQXIXLCBURUSUTXCYBXNXDQZKZXMYASZXFXNSZTZRXAYLXCYOYBXFEJZFJZOZSZFAVAEC
+      VAZXNGJZHJZOZSZHAVAGCVAZXCYORZYKEFXFCAVBGHXNCAVBYTUUEUUFYTUUDUUFGHCAYSUUA
+      CQZUUBAQZKZUUDUUFRZREFCAYPCQZYQAQZKZUUIYSUUJUUMUUIYSUUDXCYOUUMUUIKZYSUUDK
+      ZKXCKYPYQXBUIZOZUUAUUBXBUIZOZSZYPUUASZYQUUBSZKZYMYNUUNXCUUTUVCTZUUOUUNXCU
+      VDUULUUHXCUVDRUUKUUGUULUUHKZXCUVDUUTUVAUUPUURSZKUVEXCKZUVCYPUUPUUAUUREVCZ
+      YQXBVDVEUVGUVFUVBUVAXCUVEUVFUVBTABYQUUBXBVFVGVHVKUMVIVJVLUUOYMUUTTUUNXCYS
+      UUDXMUUQYAUUSYSXIYPXLUUPYSXIYRLZMZNYPYSXHUVJYSXGUVIXFYRWAZVMVNYPYQUVHFVCZ
+      VOVPYSXKYQXBYSXKUVIUHZNYQYSXJUVMYSXGUVIUVKWBVNYPYQUVHUVLVQVPVRVSUUDXQUUAX
+      TUURUUDXQUUCLZMZNUUAUUDXPUVOUUDXOUVNXNUUCWAZVMVNUUAUUBGVCZHVCZVOVPUUDXSUU
+      BXBUUDXSUVNUHZNUUBUUDXRUVSUUDXOUVNUVPWBVNUUAUUBUVQUVRVQVPVRVSVTWCUUOYNUVC
+      TUUNXCUUOYNYRUUCSUVCXFYRXNUUCWDYPYQUUAUUBUVHUVLVEWEWCWFWGWHWIWJVJWKWLUTXA
+      XDPQZXCXACPQZAPQUVTDABIWMWNCAPPWOWPWQXAXEPQZXCXAUWABPQUWBDABIWMWRCBPPWOWP
+      WQWTWS $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.  $d x V $.  $d x W $.
+    $( Dominance law for Cartesian product.  Theorem 6L(c) of [Enderton]
+       p. 149.  (Contributed by Mario Carneiro, 26-Apr-2015.) $)
+    xpdom2g $p |- ( ( C e. V /\ A ~<_ B ) ->
+                  ( C X. A ) ~<_ ( C X. B ) ) $=
+      ( vx wcel cdom wbr cxp cv wceq xpeq1 breq12d imbi2d vex xpdom2 vtoclg imp
+      wi ) CDFABGHZCAIZCBIZGHZTEJZAIZUDBIZGHZSTUCSECDUDCKZUGUCTUHUEUAUFUBGUDCAL
+      UDCBLMNABUDEOPQR $.
+
+    $( Dominance law for Cartesian product.  Theorem 6L(c) of [Enderton]
+       p. 149.  (Contributed by NM, 25-Mar-2006.)  (Revised by Mario Carneiro,
+       26-Apr-2015.) $)
+    xpdom1g $p |- ( ( C e. V /\ A ~<_ B ) ->
+                  ( A X. C ) ~<_ ( B X. C ) ) $=
+      ( wcel cdom wbr wa cxp cen reldom brrelexi xpcomeng ancoms sylan2 xpdom2g
+      cvv brrelex2i domentr syl2anc endomtr ) CDEZABFGZHZACIZCAIZJGZUFBCIZFGZUE
+      UHFGUCUBAQEZUGABFKLUJUBUGACQDMNOUDUFCBIZFGUKUHJGZUIABCDPUCUBBQEULABFKRCBD
+      QMOUFUKUHSTUEUFUHUAT $.
+
+    $( A set is dominated by its Cartesian product with a nonempty set.
+       Exercise 6 of [Suppes] p. 98.  (Contributed by NM, 27-Jul-2004.)
+       (Revised by Mario Carneiro, 29-Apr-2015.) $)
+    xpdom3 $p |- ( ( A e. V /\ B e. W /\ B =/= (/) ) -> A ~<_ ( A X. B ) ) $=
+      ( vx wcel c0 wne cxp cdom wbr cv wex wa n0 w3a csn cen cvv wss ensymd syl
+      xpsneng 3adant2 xpexg 3adant3 simp3 ssdomg endomtr syl2anc 3expia exlimdv
+      snssd xpss2 sylc syl5bi 3impia ) ACFZBDFZBGHZAABIZJKZUTELZBFZEMURUSNZVBEB
+      OVEVDVBEURUSVDVBURUSVDPZAAVCQZIZRKVHVAJKZVBVFVHAURVDVHARKUSAVCCBUCUDUAVFV
+      ASFZVHVATZVIURUSVJVDABCDUEUFVFVGBTVKVFVCBURUSVDUGUMVGBAUNUBVHVASUHUOAVHVA
+      UIUJUKULUPUQ $.
+  $}
+
+  ${
+    xpdom1.2 $e |- C e. _V $.
+    $( Dominance law for Cartesian product.  Theorem 6L(c) of [Enderton]
+       p. 149.  (Contributed by NM, 28-Sep-2004.)  (Revised by NM,
+       29-Mar-2006.)  (Revised by Mario Carneiro, 7-May-2015.) $)
+    xpdom1 $p |- ( A ~<_ B -> ( A X. C ) ~<_ ( B X. C ) ) $=
+      ( cvv wcel cdom wbr cxp xpdom1g mpan ) CEFABGHACIBCIGHDABCEJK $.
+  $}
+
+  ${
+    $d f A $.  $d f B $.  $d f X $.  $d f Y $.
+    domunsncan.a $e |- A e. _V $.
+    domunsncan.b $e |- B e. _V $.
+    $( A singleton cancellation law for dominance.  (Contributed by Stefan
+       O'Rear, 19-Feb-2015.)  (Revised by Stefan O'Rear, 5-May-2015.) $)
+    domunsncan $p |- ( ( -. A e. X /\ -. B e. Y ) ->
+        ( ( { A } u. X ) ~<_ ( { B } u. Y ) <-> X ~<_ Y ) ) $=
+      ( vf wcel wa csn cun cdom wbr cvv wss sylancr cdif cima wceq ad2antll wf1
+      wn ssun2 reldom brrelex2i adantl ssexg wex brdomi cen cres wf1o vex resex
+      cv simprr difss f1ores sylancl f1oen3g ccnv wfun df-f1 simprbi imadif syl
+      wf cfv snex simprl difexg f1f crn imassrn frn syl5ss ssdifd wfn f1fn snid
+      unexg elun1 ax-mp fnsnfv difeq2d ssdomg sylc ffvelrn mp1i difsnen syl3anc
+      sseqtr4d domentr syl2anc eqbrtrd endomtr uncom difeq1i difun2 eqtri difsn
+      syl5eq ad2antrr ad2antlr 3brtr3d expr exlimdv syl5 impancom mpd cin en2sn
+      c0 mp2an endom simpr incom disjsn biimpri undom syl21anc impbida ) ACHUBZ
+      BDHUBZIZAJZCKZBJZDKZLMZCDLMZYEYJIZDNHZYKYLDYIOYINHZYMDYHUCYJYNYEYGYILUDUE
+      UFDYINUGPYEYMYJYKYJYGYIGUOZUAZGUHYEYMIZYKYGYIGUIYQYPYKGYEYMYPYKYEYMYPIZIZ
+      YGYFQZYIYHQZCDLYSYTYOYTRZUJMZUUBUUALMYTUUALMYSYOYTUKZNHYTUUBUUDULZUUCYOYT
+      GUMUNYSYPYTYGOUUEYEYMYPUPYGYFUQYGYIYTYOURUSYTUUBUUDNUTPYSUUBYOYGRZYOYFRZQ
+      ZUUALYPUUBUUHSZYEYMYPYOVAVBZUUIYPYGYIYOVGZUUJYGYIYOVCVDYGYFYOVEVFTYSUUHYI
+      AYOVHZJZQZLMZUUNUUAUJMZUUHUUALMYSUUNNHZUUHUUNOUUOYSYNUUQYSYHNHYMYNBVIYEYM
+      YPVJYHDNNWAPZYIUUMNVKVFYSUUHYIUUGQUUNYSUUFYIUUGYPUUFYIOZYEYMYPUUKUUSYGYIY
+      OVLZUUKUUFYOVMYIYOYGVNYGYIYOVOVPVFTVQYSUUMUUGYIYSYOYGVRZAYGHZUUMUUGSYPUVA
+      YEYMYGYIYOVSTAYFHUVBAEVTAYFCWBWCZYGAYOWDUSWEWLUUHUUNNWFWGYSYNUULYIHZBYIHZ
+      UUPUURYPUVDYEYMYPUUKUVBUVDUUTUVCYGYIAYOWHUSTBYHHUVEYSBFVTBYHDWBWIUULBNYIW
+      JWKUUHUUNUUAWMWNWOYTUUBUUAWPWNYCYTCSYDYRYCYTCYFQZCYTCYFKZYFQUVFYGUVGYFYFC
+      WQWRCYFWSWTACXAXBXCYDUUADSYCYRYDUUADYHQZDUUADYHKZYHQUVHYIUVIYHYHDWQWRDYHW
+      SWTBDXAXBXDXEXFXGXHXIXJYEYKIZYFYHLMZYKYHDXKZXMSZYJYFYHUJMZUVKUVJANHBNHUVN
+      EFABNNXLXNYFYHXOWIYEYKXPYDUVMYCYKYDUVLDYHXKZXMYHDXQUVOXMSYDDBXRXSXBXDYFYH
+      CDXTYAYB $.
+  $}
+
+  ${
+    $d A f $.  $d A m n r s x y $.  $d B f $.  $d B m n r s x y $.  $d F f $.
+    $d F m n r s $.
+    omxpenlem.1 $e |- F = ( x e. B , y e. A |-> ( ( A .o x ) +o y ) ) $.
+    $( Lemma for ~ omxpen .  (Contributed by Mario Carneiro, 3-Mar-2013.)
+       (Revised by Mario Carneiro, 25-May-2015.) $)
+    omxpenlem $p |- ( ( A e. On /\ B e. On ) ->
+        F : ( B X. A ) -1-1-onto-> ( A .o B ) ) $=
+      ( vm vn con0 wcel wa comu co cv wss syl wb syl2anc wceq c0 cxp wfn wf coa
+      ccnv wf1o wral csuc word eloni ad2antlr simprl ordsucss sylc wi ad2ant2lr
+      onelon suceloni simplr simpll omwordi syl3anc simprr ad2ant2rl omcl oaord
+      mpd mpbid omsuc eleqtrrd ralrimivva fmpt2 sylib ffn cres wbr weu cop wrex
+      sseldd wne sylan wn noel oveq1 sylan9eqr eleq2d mtbiri ex necon2ad adantl
+      om0r imp omeu vex brcnv wex eleq1 biimpac simplll simplrr oaword1 simplrl
+      simpr ad2antrr ontr2 mp2and simpllr on0eln0 mpbird om00el simpld syl31anc
+      ne0i omord2 impbid expr pm5.32rd sylan2 anbi2i syl6bb anbi2d an12 2exbidv
+      eqcom copab cmpt2 coprab df-mpt2 dfoprab2 3eqtri breqi opabid 3bitri r2ex
+      df-br 3bitr4g syl5bb eubidv ralrimiva fnres sylibr wrel cdm crn df-rn frn
+      relcnv syl5eqssr relssres sylancr fneq1d dff1o4 sylanbrc ) CIJZDIJZKZEDCU
+      AZUBZEUEZCDLMZUBZUURUVAEUFUUQUURUVAEUCZUUSUUQCANZLMZBNZUDMZUVAJZBCUGADUGU
+      VCUUQUVHABDCUUQUVDDJZUVFCJZKZKZCUVDUHZLMZUVAUVGUVLUVMDOZUVNUVAOZUVLDUIZUV
+      IUVOUUPUVQUUOUVKDUJUKUUQUVIUVJULUVDDUMUNUVLUVMIJZUUPUUOUVOUVPUOUVLUVDIJZU
+      VRUUPUVIUVSUUOUVJDUVDUQZUPZUVDURPUUOUUPUVKUSUUOUUPUVKUTZUVMDCVAVBVGUVLUVG
+      UVECUDMZUVNUVLUVJUVGUWCJZUUQUVIUVJVCUVLUVFIJZUUOUVEIJZUVJUWDQUUOUVJUWEUUP
+      UVICUVFUQZVDUWBUVLUUOUVSUWFUWBUWACUVDVEZRUVFCUVEVFVBVHUVLUUOUVSUVNUWCSUWB
+      UWACUVDVIRVJVTVKABDCUVGUVAEFVLVMZUURUVAEVNPUUQUUTUVAVOZUVAUBZUVBUUQGNZHNZ
+      UUTVPZHVQZGUVAUGUWKUUQUWOGUVAUUQUWLUVAJZKZUWOUWMUVDUVFVRSZUVGUWLSZKZBCVSA
+      IVSZHVQZUWQUUOUWLIJZCTWAZUXBUUOUUPUWPUTUUQUVAIJZUWPUXCCDVEZUVAUWLUQWBUUQU
+      WPUXDUUPUWPUXDUOUUOUUPUWPCTUUPCTSZUWPWCUUPUXGKZUWPUWLTJUWLWDUXHUVATUWLUXG
+      UUPUVATDLMTCTDLWEDWLWFWGWHWIWJWKWMABHCUWLWNVBUWQUWNUXAHUWNUWMUWLEVPZUWQUX
+      AUWLUWMEGWOHWOWPUWQUWRUVKUWLUVGSZKZKZBWQAWQZUVSUVJKZUWTKZBWQAWQUXIUXAUWQU
+      XLUXOABUWQUXLUWRUXNUWSKZKUXOUWQUXKUXPUWRUWQUXKUXNUXJKUXPUWQUXJUVKUXNUUQUW
+      PUXJUVKUXNQZUWPUXJKUUQUVHUXQUXJUWPUVHUWLUVGUVAWRWSUUQUVHKUVJUVIUVSUUQUVHU
+      VJUVIUVSQUUQUVHUVJKZKZUVIUVSUUPUVIUVSUOUUOUXRUUPUVIUVSUVTWIUKUXSUVSUVIUXS
+      UVSKZUVIUVEUVAJZUXTUVEUVGOZUVHUYAUXTUWFUWEUYBUXTUUOUVSUWFUUOUUPUXRUVSWTZU
+      XSUVSXDZUWHRZUXTUUOUVJUWEUYCUUQUVHUVJUVSXAUWGRUVEUVFXBRUUQUVHUVJUVSXCZUXT
+      UWFUXEUYBUVHKUYAUOUYEUUQUXEUXRUVSUXFXEZUVEUVGUVAXFRXGUXTUVSUUPUUOTCJZUVIU
+      YAQUYDUUOUUPUXRUVSXHUYCUXTUYHTDJZUXTTUVAJZUYHUYIKZUXTUYJUVATWAZUXTUVHUYLU
+      YFUVAUVGXNPUXTUXEUYJUYLQUYGUVAXIPXJUUQUYJUYKQUXRUVSCDXKXEVHXLUVDDCXOXMXJW
+      IXPXQXRXSXQXRUXJUWSUXNUWLUVGYEXTYAYBUWRUXNUWSYCYAYDUXIUWMUWLUXMHGYFZVPUWM
+      UWLVRUYMJUXMUWMUWLEUYMEABDCUVGYGUXKABGYHUYMFABGDCUVGYIUXKABGHYJYKYLUWMUWL
+      UYMYPUXMHGYMYNUWTABICYOYQYRYSXJYTGHUVAUUTUUAUUBUUQUVAUWJUUTUUQUUTUUCUUTUU
+      DZUVAOUWJUUTSEUUHUUQUYNEUUEZUVAEUUFUUQUVCUYOUVAOUWIUURUVAEUUGPUUIUUTUVAUU
+      JUUKUULVHUURUVAEUUMUUN $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( The cardinal and ordinal products are always equinumerous.  Exercise 10
+       of [TakeutiZaring] p. 89.  (Contributed by Mario Carneiro,
+       3-Mar-2013.) $)
+    omxpen $p |- ( ( A e. On /\ B e. On ) -> ( A .o B ) ~~ ( A X. B ) ) $=
+      ( vx vy con0 wcel wa cxp comu co cen wbr xpcomeng cvv cv cmpt2 wf1o xpexg
+      coa ancoms omcl eqid omxpenlem f1oen2g syl3anc entr syl2anc ensymd ) AEFZ
+      BEFZGZABHZABIJZUKULBAHZKLUNUMKLZULUMKLABEEMUKUNNFZUMEFUNUMCDBAACOIJDOSJPZ
+      QUOUJUIUPBAEERTABUACDABUQUQUBUCUNUMUQNEUDUEULUNUMUFUGUH $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.
+    omf1o.1 $e |- F = ( x e. B , y e. A |-> ( ( A .o x ) +o y ) ) $.
+    omf1o.2 $e |- G = ( x e. B , y e. A |-> ( ( B .o y ) +o x ) ) $.
+    $( Construct an explicit bijection from ` A .o B ` to ` B .o A ` .
+       (Contributed by Mario Carneiro, 30-May-2015.) $)
+    omf1o $p |- ( ( A e. On /\ B e. On ) ->
+        ( G o. `' F ) : ( A .o B ) -1-1-onto-> ( B .o A ) ) $=
+      ( vz con0 wcel cxp comu co wf1o ccnv ccom cv cmpt2 eqid coa csn cuni cmpt
+      wa omxpenlem ancoms xpcomf1o f1oco sylancl wb xpcomco eqtr4i f1oeq1 ax-mp
+      wceq sylibr f1ocnv syl syl2anc ) CJKZDJKZUEZDCLZDCMNZFOZCDMNZVDEPZOZVGVEF
+      VHQOVCVDVEBACDDBRMNARUANZSZIVDIRUBPUCUDZQZOZVFVCCDLZVEVKOZVDVOVLOVNVBVAVP
+      BADCVKVKTZUFUGIDCVLVLTZUHVDVOVEVKVLUIUJFVMUPVFVNUKFABDCVJSVMHIBADCVJVLVKV
+      RVQULUMVDVEFVMUNUOUQVCVDVGEOVIABCDEGUFVDVGEURUSVGVDVEFVHUIUT $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y ph $.  $d x y z S $.
+    $d x y G $.
+    pw2f1o.1 $e |- ( ph -> A e. V ) $.
+    pw2f1o.2 $e |- ( ph -> B e. W ) $.
+    pw2f1o.3 $e |- ( ph -> C e. W ) $.
+    pw2f1o.4 $e |- ( ph -> B =/= C ) $.
+    $( Lemma for ~ pw2f1o .  (Contributed by Mario Carneiro, 6-Oct-2014.) $)
+    pw2f1olem $p |- ( ph ->
+      ( ( S e. ~P A /\ G = ( z e. A |-> if ( z e. S , C , B ) ) ) <->
+        ( G e. ( { B , C } ^m A ) /\ S = ( `' G " { C } ) ) ) ) $=
+      ( vy cv wcel wceq wa syl wb vx wss cif cmpt cpr wf ccnv csn cima cpw cmap
+      co prid2g prid1g ifcld adantr fmptd simprr feq1d mpbird cfv iftrue wne wn
+      eqid ad2antrr iffalse neeq1d syl5ibrcom necon4bd impbid2 simplrr id eleq1
+      fveq1d ifbid fvmptg syl2anr eqtrd eqeq1d bitr4d pm5.32da simprl sseld wfn
+      pm4.71rd ffn fniniseg 3bitr4d eqrdv jca cdm cnvimass fdm ad2antrl eqsstrd
+      syl5sseq dffn5 sylib eleq2d baibd bitrd biimpa adantl eqtr4d wo ffvelrnda
+      fvex ord sylibrd con1d imp pm2.61dan mpteq2dva impbida elpw2g cbvmptv a1i
+      elpr eqeq2d anbi12d cvv prex elmapg sylancr anbi1d ) AFCUBZGNCNOZFPZEDUCZ
+      UDZQZRZCDEUEZGUFZFGUGEUHZUIZQZRZFCUJPZGBCBOZFPZEDUCZUDZQZRGYNCUKULPZYRRAY
+      MYSAYMRZYOYRUUGYOCYNYKUFZAUUHYMANCYJYNYKAYJYNPYHCPZAYIEDYNAEIPEYNPLDEIUMS
+      ZADIPDYNPKDEIUNSZUOUPYKVEZUQUPUUGCYNGYKAYGYLURUSUTZUUGUAFYQUUGUAOZCPZUUNF
+      PZRUUOUUNGVAZEQZRZUUPUUNYQPZUUGUUOUUPUURUUGUUORZUUPUUPEDUCZEQZUURUVAUUPUV
+      CUUPEDVBUVAUUPUVBEUVAUVBEVCUUPVDZDEVCZAUVEYMUUOMVFUVDUVBDEUUPEDVGVHVIVJVK
+      UVAUUQUVBEUVAUUQUUNYKVAZUVBUVAUUNGYKAYGYLUUOVLVOUUOUUOUVBYNPZUVFUVBQUUGUU
+      OVMAUVGYMAUUPEDYNUUJUUKUOUPNUUNYJUVBCYNYKYHUUNQYIUUPEDYHUUNFVNVPUULVQVRVS
+      VTWAWBUUGUUPUUOUUGFCUUNAYGYLWCWDWFUUGGCWEZUUTUUSTUUGYOUVHUUMCYNGWGZSCEUUN
+      GWHSWIWJWKAYSRZYGYLUVJFYQCAYOYRURUVJGWLZYQCGYPWMYOUVKCQAYRCYNGWNWOWQWPUVJ
+      GNCYHGVAZUDZYKUVJUVHGUVMQYOUVHAYRUVIWOZNCGWRWSUVJNCUVLYJUVJUUIRZYIUVLYJQU
+      VOYIRUVLEYJUVOYIUVLEQZUVOYIYHYQPZUVPUVOFYQYHAYOYRUUIVLWTUVJUVQUUIUVPUVJUV
+      HUVQUUIUVPRTUVNCEYHGWHSXAXBZXCYIYJEQUVOYIEDVBXDXEUVOYIVDZRUVLDYJUVOUVSUVL
+      DQZUVOUVTYIUVOUVTVDUVPYIUVOUVTUVPUVOUVLYNPUVTUVPXFUVJCYNYHGAYOYRWCXGUVLDE
+      YHGXHXSWSXIUVRXJXKXLUVSYJDQUVOYIEDVGXDXEXMXNVSWKXOAYTYGUUEYLACHPZYTYGTJFC
+      HXPSAUUDYKGUUDYKQABNCUUCYJUUAYHQUUBYIEDUUAYHFVNVPXQXRXTYAAUUFYOYRAYNYBPUW
+      AUUFYOTDEYCJYNCGYBHYDYEYFWI $.
+
+    pw2f1o.5 $e |- F = ( x e. ~P A |->
+      ( z e. A |-> if ( z e. x , C , B ) ) ) $.
+    $( The power set of a set is equinumerous to set exponentiation with an
+       unordered pair base of ordinal 2.  Generalized from Proposition 10.44 of
+       [TakeutiZaring] p. 96.  (Contributed by Mario Carneiro, 6-Oct-2014.) $)
+    pw2f1o $p |- ( ph -> F : ~P A -1-1-onto-> ( { B , C } ^m A ) ) $=
+      ( vy cv wcel ccnv cvv wa cpw cpr cmap co cif cmpt csn cima wceq pw2f1olem
+      eqid biimpa mpanr2 simpld vex cnvex imaexg mp1i f1od ) ABODUAZEFUBDUCUDZC
+      DCPBPZQFEUEUFZOPZRZFUGZUHZGVASNAVBUTQZTVCVAQZVBVCRVFUHUIZAVHVCVCUIZVIVJTZ
+      VCUKAVHVKTVLACDEFVBVCHIJKLMUJULUMUNVESQVGSQAVDVAQTVDOUOUPVEVFSUQURACDEFVB
+      VDHIJKLMUJUS $.
+  $}
+
+  ${
+    $d x z A $.  $d x V $.
+    $( The power set of a set is equinumerous to set exponentiation with a base
+       of ordinal ` 2o ` .  (Contributed by FL, 22-Feb-2011.)  (Revised by
+       Mario Carneiro, 1-Jul-2015.) $)
+    pw2eng $p |- ( A e. V -> ~P A ~~ ( 2o ^m A ) ) $=
+      ( vx vz wcel cpw c0 csn cpr cmap co c2o cen cvv wel cif cmpt wf1o wbr a1i
+      pwexg ovex id 0ex p0ex wne 0nep0 eqid pw2f1o f1oen2g syl3anc df2o2 oveq1i
+      syl6breqr ) ABEZAFZGGHZIZAJKZLAJKMUOUPNEUSNEZUPUSCUPDADCOUQGPQQZRUPUSMSAB
+      UAUTUOURAJUBTUOCDAGUQVABNUOUCGNEUOUDTUQNEUOUETGUQUFUOUGTVAUHUIUPUSVANNUJU
+      KLURAJULUMUN $.
+
+    pw2en.1 $e |- A e. _V $.
+    $( The power set of a set is equinumerous to set exponentiation with a base
+       of ordinal 2.  Proposition 10.44 of [TakeutiZaring] p. 96.  This is
+       Metamath 100 proof #52.  (Contributed by NM, 29-Jan-2004.)  (Proof
+       shortened by Mario Carneiro, 1-Jul-2015.) $)
+    pw2en $p |- ~P A ~~ ( 2o ^m A ) $=
+      ( cvv wcel cpw c2o cmap co cen wbr pw2eng ax-mp ) ACDAEFAGHIJBACKL $.
+  $}
+
+  ${
+    $d A a b c $.  $d B a b c $.  $d F a b c $.
+    $( Covering implies injection on power sets.  (Contributed by Stefan
+       O'Rear, 6-Nov-2014.)  (Revised by Mario Carneiro, 24-Jun-2015.) $)
+    fopwdom $p |- ( ( F e. _V /\ F : A -onto-> B ) -> ~P B ~<_ ~P A ) $=
+      ( va vb cvv wcel wa cpw cv cima wss crn syl adantl imaeq2 elpwid foimacnv
+      wceq wb wfo ccnv imassrn cdm dfdm4 fof fdm syl5eqr syl5sseq cnvexg adantr
+      wf imaexg 3syl mpbird a1d simpllr simplrl syl2anc simplrr 3eqtr3d impbid1
+      elpwg ex rnexg forn eleq1d syl5ibcom imp pwexg dmfex sylan2 dom3d ) CFGZA
+      BCUAZHZDEBIZAIZCUBZDJZKZVSEJZKZFFVPWAVRGZVTVQGZVPWDWAALZVOWFVNVOVSMZWAAVS
+      VTUCVOWGCUDZACUEVOABCULZWHASABCUFZABCUGNUHUIOVPVSFGZWAFGWDWFTVNWKVOCFUJUK
+      VSVTFUMWAAFVCUNUOUPVPWEWBVQGZHZWAWCSZVTWBSZTVPWMHZWNWOWPWNWOWPWNHZCWAKZCW
+      CKZVTWBWNWRWSSWPWAWCCPOWQVOVTBLWRVTSVNVOWMWNUQZWQVTBVPWEWLWNURQABVTCRUSWQ
+      VOWBBLWSWBSWTWQWBBVPWEWLWNUTQABWBCRUSVAVDVTWBVSPVBVDVPBFGZVQFGVNVOXAVNCMZ
+      FGVOXACFVEVOXBBFABCVFVGVHVIBFVJNVPAFGZVRFGVOVNWIXCWJABFCVKVLAFVJNVM $.
+  $}
+
+  ${
+    $d f g h A $.  $d f g h B $.  $d f g h X $.  $d f g h Y $.
+    $( Given two equipollent sets, a bijection can always be chosen which fixes
+       a single point.  (Contributed by Stefan O'Rear, 9-Jul-2015.) $)
+    enfixsn $p |- ( ( A e. X /\ B e. Y /\ X ~~ Y ) ->
+        E. f ( f : X -1-1-onto-> Y /\ ( f ` A ) = B ) ) $=
+      ( vg vh wcel cen cv wf1o cfv wceq wa wex csn cvv cun a1i syl2anc wbr bren
+      w3a simp3 sylib cdif relen brrelex2i 3ad2ant3 adantr f1of adantl ffvelrnd
+      wf simpl1 simpl2 difsnen syl3anc cop ccom cin c0 fvex f1osng simprr f1oun
+      disjdif syl22anc wb ad2antrl uncom difsnid syl5eq syl f1oeq23 mpbid f1oco
+      simprl wfn f1ofn fvco2 ad2antll snid fvun1 syl112anc 3eqtrd snex vex unex
+      fvsng coex f1oeq1 fveq1 eqeq1d anbi12d spcev expr exlimdv mpd exlimddv )
+      ADHZBEHZDEIUAZUCZDEFJZKZDECJZKZAXGLZBMZNZCOZFXDXCXFFOXAXBXCUDDEFUBUEXDXFN
+      ZEAXELZPZUFZEBPZUFZGJZKZGOZXLXMXPXRIUAZYAXMEQHZXNEHZXBYBXDYCXFXCXAYCXBDEI
+      UGUHUIUJXMDEAXEXFDEXEUNZXDDEXEUKZULXAXBXCXFUOUMXAXBXCXFUPXNBQEUQURXPXRGUB
+      UEXMXTXLGXDXFXTXLXDXFXTNZNZDEXNBUSZPZXSRZXEUTZKZAYLLZBMZXLYHEEYKKZXFYMYHX
+      OXPRZXQXRRZYKKZYPYHXOXQYJKZXTXOXPVAVBMZXQXRVAVBMZYSYHXNQHZXBYTUUCYHAXEVCZ
+      SZXAXBXCYGUPZXNBQEVDTZXDXFXTVEUUAYHXOEVGSZUUBYHXQEVGSXOXQXPXRYJXSVFVHYHYQ
+      EMZYREMZYSYPVIYHYDUUIYHDEAXEXFYEXDXTYFVJXAXBXCYGUOZUMYDYQXPXOREXOXPVKEXNV
+      LVMVNYHXBUUJUUFXBYRXRXQREXQXRVKEBVLVMVNYQEYREYKVOTVPXDXFXTVRDEEYKXEVQTYHY
+      NXNYKLZXNYJLZBYHXEDVSZXAYNUULMXFUUNXDXTDEXEVTVJUUKDYKXEAWATYHYJXOVSZXSXPV
+      SZUUAXNXOHZUULUUMMYHYTUUOUUGXOXQYJVTVNXTUUPXDXFXPXRXSVTWBUUHUUQYHXNUUDWCS
+      XOXPYJXSXNWDWEYHUUCXBUUMBMUUEUUFXNBQEWJTWFXKYMYONCYLYKXEYJXSYIWGGWHWIFWHW
+      KXGYLMZXHYMXJYODEXGYLWLUURXIYNBAXGYLWMWNWOWPTWQWRWSWT $.
+  $}
+
+$(
 ###############################################################################
                      REAL AND COMPLEX NUMBERS
 ###############################################################################
@@ -80794,6 +82052,25 @@ htmldef "X." as
     " <IMG SRC='times.gif' WIDTH=9 HEIGHT=19 ALT=' X.' TITLE='X.'> ";
   althtmldef "X." as ' &times; ';
   latexdef "X." as "\times";
+htmldef "~~" as
+    " <IMG SRC='approx.gif' WIDTH=13 HEIGHT=19 ALT=' ~~' TITLE='~~'> ";
+  althtmldef "~~" as ' &#8776; '; /* &ap; */
+  latexdef "~~" as "\approx";
+htmldef "~<_" as
+   " <IMG SRC='preccurlyeq.gif' WIDTH=11 HEIGHT=19 " +
+    "ALT=' ~&lt;_' TITLE='~&lt;_'> ";
+  althtmldef "~<_" as ' &#8828; '; /* &prcue; */
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "~<_" as "\preccurlyeq";
+htmldef "~<" as
+    " <IMG SRC='prec.gif' WIDTH=11 HEIGHT=19 ALT=' ~&lt;' TITLE='~&lt;'> ";
+  althtmldef "~<" as ' &#8826; '; /* &pr; */
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "~<" as "\prec";
+htmldef "Fin" as
+    "<IMG SRC='_fin.gif' WIDTH=21 HEIGHT=19 ALT=' Fin' TITLE='Fin'>";
+  althtmldef "Fin" as 'Fin';
+  latexdef "Fin" as "{\rm Fin}";
 htmldef "`'" as "<IMG SRC='_cnv.gif' WIDTH=10 HEIGHT=19 ALT=" + '"' + " `'" +
     '"' + "TITLE=" + '"' + "`'" + '"' + ">";
   althtmldef "`'" as '<FONT SIZE="-1"><SUP>&#9697;</SUP></FONT>'; /* or 8995 */
