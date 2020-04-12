@@ -58707,37 +58707,7 @@ $)
     BUAUDACHACSQMT $.
 
   ${
-    $d w y z A $.  $d w y z B $.
-    mapsnen.1 $e |- A e. _V $.
-    mapsnen.2 $e |- B e. _V $.
-    $( Set exponentiation to a singleton exponent is equinumerous to its base.
-       Exercise 4.43 of [Mendelson] p. 255.  (Contributed by NM, 17-Dec-2003.)
-       (Revised by Mario Carneiro, 15-Nov-2014.) $)
-    mapsnen $p |- ( A ^m { B } ) ~~ A $=
-      ( vz vw vy csn cmap cv cfv cop cvv wcel a1i wceq wa wex wrex 3bitr2i ovex
-      fvex snex mapsn abeq2i anbi1i r19.41v df-rex fveq1 vex fvsn syl6eq eqeq2d
-      equcom syl6bb pm5.32i anass ancom exbii eleq1 opeq2 sneqd anbi12d ceqsexv
-      co anbi2i 3bitri en2i ) EFABHZIVEZABEJZKZBFJZLZHZAVIIUACVLMNVKVJNZBVKUBOV
-      OMNVMANZVNUCOVPVMVLPZQZGJZANZVKBVTLZHZPZVRQZQZGRZVTVMPZWAWDQZQZGRVQVKVOPZ
-      QZVSWDGASZVRQWEGASWGVPWMVRWMEVJGABECDUDUEUFWDVRGAUGWEGAUHTWFWJGWFWAWDWHQZ
-      QWIWHQWJWEWNWAWDVRWHWDVRVMVTPWHWDVLVTVMWDVLBWCKVTBVKWCUIBVTDGUJUKULUMFGUN
-      UOUPVFWAWDWHUQWIWHURTUSWIWLGVMFUJWHWAVQWDWKVTVMAUTWHWCVOVKWHWBVNVTVMBVAVB
-      UMVCVDVGVH $.
-  $}
-
-  ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.  $d x y V $.
-    $( Set exponentiation: ordinal 1 to any set is equinumerous to ordinal 1.
-       Exercise 4.42(b) of [Mendelson] p. 255.  (Contributed by NM,
-       17-Dec-2003.) $)
-    map1 $p |- ( A e. V -> ( 1o ^m A ) ~~ 1o ) $=
-      ( vx vy wcel c1o cmap co c0 csn cvv a1i df1o2 p0ex cv 0ex wceq wa syl6rbb
-      wb cxp ovex eqeltri a1ii xpexg mpan2 a1d el1o oveq1i eleq2i elmapg syl5bb
-      wf mpan fconst2 anbi12d ancom en2d ) ABEZCDFAGHZFIAIJZUAZUTKEUSFAGUBLFKEU
-      SFVAKMNUCLUSCOZUTEZIKEPUDUSVBKEZDOZFEZUSVAKEZVENAVABKUEUFUGUSVGVCVBQZRVFI
-      QZVDRVDVJRUSVGVJVIVDVGVJTUSVFUHLUSVDAVAVCUMZVIVDVCVAAGHZEZUSVKUTVLVCFVAAG
-      MUIUJVHUSVMVKTNVAAVCKBUKUNULAIVCPUOSUPVJVDUQSUR $.
-
     $( Two singletons are equinumerous.  (Contributed by NM, 9-Nov-2003.) $)
     en2sn $p |- ( ( A e. C /\ B e. D ) -> { A } ~~ { B } ) $=
       ( wcel csn c1o cen wbr ensn1g ensymd entr syl2an ) ACEAFZGHIGBFZHINOHIBDE
@@ -59165,76 +59135,6 @@ $)
       VHQOVCVDVEBACDDBRMNARUANZSZIVDIRUBPUCUDZQZOZVFVCCDLZVEVKOZVDVOVLOVNVBVAVP
       BADCVKVKTZUFUGIDCVLVLTZUHVDVOVEVKVLUIUJFVMUPVFVNUKFABDCVJSVMHIBADCVJVLVKV
       RVQULUMVDVEFVMUNUOUQVCVDVGEOVIABCDEGUFVDVGEURUSVGVDVEFVHUIUT $.
-  $}
-
-  ${
-    $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y ph $.  $d x y z S $.
-    $d x y G $.
-    pw2f1o.1 $e |- ( ph -> A e. V ) $.
-    pw2f1o.2 $e |- ( ph -> B e. W ) $.
-    pw2f1o.3 $e |- ( ph -> C e. W ) $.
-    pw2f1o.4 $e |- ( ph -> B =/= C ) $.
-    $( Lemma for ~ pw2f1o .  (Contributed by Mario Carneiro, 6-Oct-2014.) $)
-    pw2f1olem $p |- ( ph ->
-      ( ( S e. ~P A /\ G = ( z e. A |-> if ( z e. S , C , B ) ) ) <->
-        ( G e. ( { B , C } ^m A ) /\ S = ( `' G " { C } ) ) ) ) $=
-      ( vy cv wcel wceq wa syl wb vx wss cif cmpt cpr wf ccnv csn cima cpw cmap
-      co prid2g prid1g ifcld adantr fmptd simprr feq1d mpbird cfv iftrue wne wn
-      eqid ad2antrr iffalse neeq1d syl5ibrcom necon4bd impbid2 simplrr id eleq1
-      fveq1d ifbid fvmptg syl2anr eqtrd eqeq1d bitr4d pm5.32da simprl sseld wfn
-      pm4.71rd ffn fniniseg 3bitr4d eqrdv jca cdm cnvimass fdm ad2antrl eqsstrd
-      syl5sseq dffn5 sylib eleq2d baibd bitrd biimpa adantl eqtr4d wo ffvelrnda
-      fvex ord sylibrd con1d imp pm2.61dan mpteq2dva impbida elpw2g cbvmptv a1i
-      elpr eqeq2d anbi12d cvv prex elmapg sylancr anbi1d ) AFCUBZGNCNOZFPZEDUCZ
-      UDZQZRZCDEUEZGUFZFGUGEUHZUIZQZRZFCUJPZGBCBOZFPZEDUCZUDZQZRGYNCUKULPZYRRAY
-      MYSAYMRZYOYRUUGYOCYNYKUFZAUUHYMANCYJYNYKAYJYNPYHCPZAYIEDYNAEIPEYNPLDEIUMS
-      ZADIPDYNPKDEIUNSZUOUPYKVEZUQUPUUGCYNGYKAYGYLURUSUTZUUGUAFYQUUGUAOZCPZUUNF
-      PZRUUOUUNGVAZEQZRZUUPUUNYQPZUUGUUOUUPUURUUGUUORZUUPUUPEDUCZEQZUURUVAUUPUV
-      CUUPEDVBUVAUUPUVBEUVAUVBEVCUUPVDZDEVCZAUVEYMUUOMVFUVDUVBDEUUPEDVGVHVIVJVK
-      UVAUUQUVBEUVAUUQUUNYKVAZUVBUVAUUNGYKAYGYLUUOVLVOUUOUUOUVBYNPZUVFUVBQUUGUU
-      OVMAUVGYMAUUPEDYNUUJUUKUOUPNUUNYJUVBCYNYKYHUUNQYIUUPEDYHUUNFVNVPUULVQVRVS
-      VTWAWBUUGUUPUUOUUGFCUUNAYGYLWCWDWFUUGGCWEZUUTUUSTUUGYOUVHUUMCYNGWGZSCEUUN
-      GWHSWIWJWKAYSRZYGYLUVJFYQCAYOYRURUVJGWLZYQCGYPWMYOUVKCQAYRCYNGWNWOWQWPUVJ
-      GNCYHGVAZUDZYKUVJUVHGUVMQYOUVHAYRUVIWOZNCGWRWSUVJNCUVLYJUVJUUIRZYIUVLYJQU
-      VOYIRUVLEYJUVOYIUVLEQZUVOYIYHYQPZUVPUVOFYQYHAYOYRUUIVLWTUVJUVQUUIUVPUVJUV
-      HUVQUUIUVPRTUVNCEYHGWHSXAXBZXCYIYJEQUVOYIEDVBXDXEUVOYIVDZRUVLDYJUVOUVSUVL
-      DQZUVOUVTYIUVOUVTVDUVPYIUVOUVTUVPUVOUVLYNPUVTUVPXFUVJCYNYHGAYOYRWCXGUVLDE
-      YHGXHXSWSXIUVRXJXKXLUVSYJDQUVOYIEDVGXDXEXMXNVSWKXOAYTYGUUEYLACHPZYTYGTJFC
-      HXPSAUUDYKGUUDYKQABNCUUCYJUUAYHQUUBYIEDUUAYHFVNVPXQXRXTYAAUUFYOYRAYNYBPUW
-      AUUFYOTDEYCJYNCGYBHYDYEYFWI $.
-
-    pw2f1o.5 $e |- F = ( x e. ~P A |->
-      ( z e. A |-> if ( z e. x , C , B ) ) ) $.
-    $( The power set of a set is equinumerous to set exponentiation with an
-       unordered pair base of ordinal 2.  Generalized from Proposition 10.44 of
-       [TakeutiZaring] p. 96.  (Contributed by Mario Carneiro, 6-Oct-2014.) $)
-    pw2f1o $p |- ( ph -> F : ~P A -1-1-onto-> ( { B , C } ^m A ) ) $=
-      ( vy cv wcel ccnv cvv wa cpw cpr cmap co cif cmpt csn cima wceq pw2f1olem
-      eqid biimpa mpanr2 simpld vex cnvex imaexg mp1i f1od ) ABODUAZEFUBDUCUDZC
-      DCPBPZQFEUEUFZOPZRZFUGZUHZGVASNAVBUTQZTVCVAQZVBVCRVFUHUIZAVHVCVCUIZVIVJTZ
-      VCUKAVHVKTVLACDEFVBVCHIJKLMUJULUMUNVESQVGSQAVDVAQTVDOUOUPVEVFSUQURACDEFVB
-      VDHIJKLMUJUS $.
-  $}
-
-  ${
-    $d x z A $.  $d x V $.
-    $( The power set of a set is equinumerous to set exponentiation with a base
-       of ordinal ` 2o ` .  (Contributed by FL, 22-Feb-2011.)  (Revised by
-       Mario Carneiro, 1-Jul-2015.) $)
-    pw2eng $p |- ( A e. V -> ~P A ~~ ( 2o ^m A ) ) $=
-      ( vx vz wcel cpw c0 csn cpr cmap co c2o cen cvv wel cif cmpt wf1o wbr a1i
-      pwexg ovex id 0ex p0ex wne 0nep0 eqid pw2f1o f1oen2g syl3anc df2o2 oveq1i
-      syl6breqr ) ABEZAFZGGHZIZAJKZLAJKMUOUPNEUSNEZUPUSCUPDADCOUQGPQQZRUPUSMSAB
-      UAUTUOURAJUBTUOCDAGUQVABNUOUCGNEUOUDTUQNEUOUETGUQUFUOUGTVAUHUIUPUSVANNUJU
-      KLURAJULUMUN $.
-
-    pw2en.1 $e |- A e. _V $.
-    $( The power set of a set is equinumerous to set exponentiation with a base
-       of ordinal 2.  Proposition 10.44 of [TakeutiZaring] p. 96.  This is
-       Metamath 100 proof #52.  (Contributed by NM, 29-Jan-2004.)  (Proof
-       shortened by Mario Carneiro, 1-Jul-2015.) $)
-    pw2en $p |- ~P A ~~ ( 2o ^m A ) $=
-      ( cvv wcel cpw c2o cmap co cen wbr pw2eng ax-mp ) ACDAEFAGHIJBACKL $.
   $}
 
   ${
