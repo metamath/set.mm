@@ -16,4 +16,4 @@ metamath "read \"${mmfile}\"" \
          quit > /dev/null
 
 grep -E ' \$p' < 0.tmp | \
-  sed -E -e 's/ \$p//' -e 's/^[0-9]+ /  /' > output
+  sed -E -e 's/ \$p//' -e 's/^[0-9]+ /  /' > "${output}"

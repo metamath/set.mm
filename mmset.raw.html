@@ -2136,7 +2136,7 @@ proof</A> </LI>
 <LI> <A HREF="nn0opthi.html">Ordered pair theorem for non-negative
 integers</A></LI>
 
-<LI> <A HREF="sqr2irr.html">The square root of 2 is irrational</A></LI>
+<LI> <A HREF="sqrt2irr.html">The square root of 2 is irrational</A></LI>
 
 <LI> <A HREF="nthruc.html">The nesting of natural numbers, integers,
 rationals, reals, and complex numbers</A></LI>
@@ -2961,7 +2961,9 @@ allowed to use different instances of intermediate theorem schemes but
 had to show a direct object-language proof, where each step is an actual
 axiom or a rule applied to previous steps, the complete formal proof
 would have 73,983,127,856,077,147,925,897,127,298 (about 7.4 x 10^28)
-proof steps.  See also the remarks for theorem ~ 1kp2ke3k .]</FONT><P>
+proof steps.  See also the remarks for theorem ~ 1kp2ke3k .  Note:
+this calculation ignores the expansion of statements that use class
+notation, which would require extra steps.]</FONT><P>
 
 
 <P><A NAME="axiomnotedv"></A><B><FONT COLOR="#006633">Distinct
@@ -4227,9 +4229,9 @@ context.  Our versions may seem unfamiliar because we are constrained to
 a linear language and we need context-independent, unambiguous notation.
 We also prefer a single notation for function value to be able to reuse
 our rich collection of theorems about function values.  For example, in
-the square root theorem ~ sqrthi , the square root symbol &quot;` sqr `&quot;
-is a function i.e. a class ( ~ csqr ), and we display the square root of 2 as
-"` ( sqr `` 2 ) `&quot;.  Two other examples are the real part of a
+the square root theorem ~ sqrtthi , the square root symbol &quot;` sqrt `&quot;
+is a function i.e. a class ( ~ csqrt ), and we display the square root of 2 as
+"` ( sqrt `` 2 ) `&quot;.  Two other examples are the real part of a
 complex number
 <I><FONT
 COLOR="#CC33CC">A</FONT></I >,
@@ -4262,7 +4264,7 @@ more familiar &quot;` -u A `&quot; rather than the more tedious
 separately certain theorems such as the equality theorem ~ negeq instead
 of being able to reuse the general-purpose ~ fveq2 . Moreover, the bare
 symbol &quot;` -u `&quot; has no meaning in isolation, in contrast to
-say the bare symbol &quot;` sqr `&quot;, which is itself a set and
+say the bare symbol &quot;` sqrt `&quot;, which is itself a set and
 can be manipulated as a stand-alone function for various purposes.
 
 <P>Another very important exception is the notation for an <B>operation
@@ -4751,8 +4753,8 @@ libary itself, and the ones we show are used by the MIT libraries.
 <OL>
 
 
-<LI><A NAME="Adamek"></A> [Adamek] Jiri Ad&eacute;mek, Horst Herrlich,
-and George E Strecker, <I>Abstract and Concrete Categories:  The Joy of
+<LI><A NAME="Adamek"></A> [Adamek] Ji&#345;&iacute; Ad&aacute;mek, Horst
+Herrlich, George E. Strecker, <I>Abstract and Concrete Categories:  The Joy of
 Cats</I>, Dover Publications, Mineola, New York (2004); available at <A
 HREF="http://katmat.math.uni-bremen.de/acc">
 http://katmat.math.uni-bremen.de/acc</A> (retrieved 2-Jan-2017).  </LI>
@@ -4848,6 +4850,9 @@ Mathematics of Physics), Addison-Wesley, Reading, Massachusetts (1981)
 Lattices; Algebraic Approach</I>, D. Reidel, Dordrecht (1985)
 [QA171.5.B4].  </LI>
 
+<LI><A NAME="Berge"></A> [Berge] Berge, Claude <I>Hypergraphs</I>,
+Elsevier Science B.V., Amsterdam (1989) [QA166.23.B4813 1989]</LI>
+
 <LI><A NAME="Bobzien"></A> [Bobzien] Bobzien, Susanne,
 "Stoic Logic",
 <I>The Cambridge Companion to Stoic Philosophy</I>,
@@ -4906,6 +4911,9 @@ HREF="http://www.ams.org/journals/proc/1981-081-01/S0002-9939-1981-0589143-8/">
 http://www.ams.org/journals/proc/1981-081-01/S0002-9939-1981-0589143-8/</A>
 (retrieved 24-Apr-2017).  </LI>
 
+<LI><A NAME="Bruck"></A> [Bruck] Bruck, Richard Hubert <I>A survey of binary
+systems</I>, 3rd ed., Springer-Verlag Berlin Heidelberg New York (1971)</LI>
+
 <LI><A NAME="ChoquetDD"></A> [ChoquetDD] Choquet-Bruhat, Yvonne and Cecile
 DeWitt-Morette, with Margaret Dillard-Bleick, <I>Analysis, Manifolds and
 Physics,</I> Elsevier Science B.V., Amsterdam (1982) [QC20.7.A5C48
@@ -4929,6 +4937,11 @@ D. Reidel, Dordrecht (1981) [QA251.C55].</LI>
 <LI><A NAME="CohnMT"></A> [CohnMT] Cohn, Donald L., <I>Measure Theory,</I>
  Birkh&auml;user, New York (2013).</LI>
 
+<LI><A NAME="Connell"></A> [Connell] Edwin H. Connell, <I>Elements of Abstract
+and Linear Algebra,</I> Orange Grove Texts Plus (October 21, 2009); ISBN
+978-1616100032; available at <A HREF="http://www.math.miami.edu/~~ec/book">
+http://www.math.miami.edu/~~ec/book</A> (retrieved 10 Dec 2019).</LI>
+
 <LI><A NAME="CormenLeisersonRivest"></A> [CormenLeisersonRivest] Cormen,
 Thomas, Charles E. Leiserson, and Ronald L. Rivest, <I>Introduction to
 Algorithms,</I> The MIT Press, Cambridge, Massachusetts (1989)
@@ -4939,7 +4952,7 @@ Dilworth, <I>Algebraic Theory of Lattices,</I> Prentice-Hall, Englewood
 Cliffs, New Jersey (1973) [QA171.5.C7].</LI>
 
 <LI><A NAME="Diestel"></A> [Diestel] Diestel, Reinhard, <I>Graph Theory,
-Electronic Edition,</I> Springer-Verlag, Heidelberg (2005)
+5th Electronic Edition,</I> Springer-Verlag, Heidelberg (2016)
 [QA166.D51413].
 <!-- old url
 URL: <A HREF="http://www.math.uni-hamburg.de/home/diestel/books/graph.theory/">
@@ -5022,6 +5035,9 @@ Applications,</I> Kluwer Academic Publishers, Dordrecht (1999)
 Algebra,</I> 2nd ed. with updates, Springer, New York (2008)
 [QA251.G68 2008].</LI>
 
+<LI><A NAME="Hall"></A> [Hall] Hall, Marshall Jr., <I>The Theory of Groups,</I>
+The Macmillan Company, New York (1959) [QA171.H27 2018].</LI>
+
 <LI><A NAME="Hamilton"></A> [Hamilton] Hamilton, A. G., <I>Logic for
 Mathematicians,</I> Cambridge University Press, Cambridge, revised
 edition (1988) [QA9.H298 1988].</LI>
@@ -5056,7 +5072,6 @@ Sol&egrave;r,&quot; <I>Bull.  Am.  Math.  Soc.</I> 32:205-234 (1995)
 [QA.A513]; available at <A HREF="http://arxiv.org/abs/math/9504224v1">
 http://arxiv.org/abs/math/9504224v1</A> (retrieved 11 Nov 2014).</LI>
 
-
 <LI><A NAME="Huneke"></A> [Huneke] Huneke, Craig L.,
 &quot;The Friendship Theorem&quot; <I>American Mathematical Monthly</I>
 109:192-194 (2002); available at <A
@@ -5078,6 +5093,12 @@ Mathematical Monthly,</I> 98:689-709 (1991) [QA.A5125]; available at <A
 HREF="http://www.williamstein.org/edu/Spring2003/21n/papers/hilbert10.pdf"
 >http://www.williamstein.org/edu/Spring2003/21n/papers/hilbert10.pdf</A>
 (retrieved 11 Nov 2014).</LI>
+
+<LI><A NAME="Juillerat"></A> [Juillerat] Jacob Juillerat, "Transcendental Numbers ",
+Lake Forest College, Senior Thesis, April 25, 2016 ; available at <A
+HREF="https://publications.lakeforest.edu/seniortheses/62/">
+https://publications.lakeforest.edu/seniortheses/62/</A>
+(retrieved 5-Apr-2020).  </LI>  
 
 <LI><A NAME="JustWeese"></A> [JustWeese] Just, Winfried, and Martin Weese,
 <I>Discovering Modern Set Theory I:  The Basics,</I> The American
@@ -5456,7 +5477,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 14-Oct-2019.</FONT></I><BR><FONT
+ page was last updated on 24-Feb-2020.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0

@@ -14,7 +14,7 @@ fi
 
 mmfile="${1:-set.mm}"
 
-scripts/list-theorems "$mmfile"
+scripts/list-theorems "$mmfile" 1.tmp
 
 # To debug:
 # echo syl > 1.tmp
