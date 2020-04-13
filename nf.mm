@@ -64415,4 +64415,13 @@ htmldef "TcFn" as "TcFn";
 htmldef "FRec" as " <FONT FACE=sans-serif>FRec</FONT> ";
   althtmldef "FRec" as " <FONT FACE=sans-serif>FRec</FONT> ";
   latexdef "FRec" as "{\rm FRec}";
+
+htmldef "Dom" as " <FONT FACE=sans-serif>Dom</FONT> ";
+  althtmldef "Dom" as " <FONT FACE=sans-serif>Dom</FONT> ";
+  latexdef "Dom" as "{\rm Dom}";
+
+htmldef "Ran" as " <FONT FACE=sans-serif>Ran</FONT> ";
+  althtmldef "Ran" as " <FONT FACE=sans-serif>Ran</FONT> ";
+  latexdef "Ran" as "{\rm Ran}";
+
 $)
