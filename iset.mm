@@ -58646,13 +58646,15 @@ $)
     $( A set is equinumerous to ordinal one iff it is a singleton.
        (Contributed by NM, 25-Jul-2004.) $)
     en1 $p |- ( A ~~ 1o <-> E. x A = { x } ) $=
-      ( vf c1o cen wbr cv csn wceq wex wf1o df1o2 breq2i bren bitri crn syl 0ex
-      c0 exlimiv ccnv cfv f1ocnv wfo f1ofo forn wf f1of wcel fsn2 simprbi rneqd
-      rnsnop syl6eq eqtr3d fvex sneq eqeq2d spcev 3syl sylbi ensn1 breq1 mpbiri
-      cop vex impbii ) BDEFZBAGZHZIZAJZVHBSHZCGZKZCJZVLVHBVMEFVPDVMBELMBVMCNOVO
-      VLCVOVMBVNUAZKZBSVQUBZHZIZVLBVMVNUCVRVQPZBVTVRVMBVQUDWBBIVMBVQUEVMBVQUFQV
-      RWBSVSVEHZPVTVRVQWCVRVMBVQUGZVQWCIZVMBVQUHWDVSBUIWESBVQRUJUKQULSVSRUMUNUO
-      VKWAAVSSVQUPVIVSIVJVTBVIVSUQURUSUTTVAVKVHAVKVHVJDEFVIAVFVBBVJDEVCVDTVG $.
+      ( vf c1o cen wbr cv csn wceq wex c0 wf1o df1o2 breq2i crn syl 0ex exlimiv
+      wcel cvv bren bitri ccnv cfv f1ocnv wfo f1ofo forn cop wf f1of fsn2 rneqd
+      simprbi rnsnop syl6eq eqtr3d wfn f1ofn snid funfvex funfni sylancl eqeq2d
+      wi sneq spcegv sylc sylbi vex ensn1 breq1 mpbiri impbii ) BDEFZBAGZHZIZAJ
+      ZVOBKHZCGZLZCJZVSVOBVTEFWCDVTBEMNBVTCUAUBWBVSCWBVTBWAUCZLZBKWDUDZHZIZVSBV
+      TWAUEZWBWEWHWIWEWDOZBWGWEVTBWDUFWJBIVTBWDUGVTBWDUHPWEWJKWFUIHZOWGWEWDWKWE
+      VTBWDUJZWDWKIZVTBWDUKWLWFBSWMKBWDQULUNPUMKWFQUOUPUQPWEWFTSZWHVSVEWEWDVTUR
+      KVTSWNVTBWDUSKQUTWNVTKWDKWDVAVBVCVRWHAWFTVPWFIVQWGBVPWFVFVDVGPVHRVIVRVOAV
+      RVOVQDEFVPAVJVKBVQDEVLVMRVN $.
 
     $( A set is equinumerous to ordinal one iff it is a singleton.
        (Contributed by Mario Carneiro, 17-Jan-2015.) $)
