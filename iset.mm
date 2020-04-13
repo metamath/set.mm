@@ -9873,6 +9873,99 @@ $)
       ( wn ori ax-mp ) AEBCABDFG $.
   $}
 
+  ${
+    $( Premise 1 for Stoic logic thema 2 version a. $)
+    stoic2a.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    $( Premise 2 for Stoic logic thema 2 version a. $)
+    stoic2a.2 $e |- ( ( ph /\ ch ) -> th ) $.
+    $( Stoic logic Thema 2 version a.
+
+       Statement T2 of [Bobzien] p. 117 shows a reconstructed version of Stoic
+       logic thema 2 as follows:  "When from two assertibles a third follows,
+       and from the third and one (or both) of the two another follows, then
+       this other follows from the first two."
+
+       Bobzien uses constructs such as ` ph ` , ` ps |- ch ` ; in Metamath we
+       will represent that construct as ` ph /\ ps -> ch ` .
+
+       This version a is without the phrase "or both"; see ~ stoic2b for the
+       version with the phrase "or both".  We already have this rule as
+       ~ syldan , so here we show the equivalence and discourage its use.
+       (New usage is discouraged.)  (Contributed by David A. Wheeler,
+       17-Feb-2019.) $)
+    stoic2a $p |- ( ( ph /\ ps ) -> th ) $=
+      ( syldan ) ABCDEFG $.
+  $}
+
+  ${
+    $( Premise 1 for Stoic logic thema 2 version b. $)
+    stoic2b.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    $( Premise 2 for Stoic logic thema 2 version b. $)
+    stoic2b.2 $e |- ( ( ph /\ ps /\ ch ) -> th ) $.
+    $( Stoic logic Thema 2 version b.  See ~ stoic2a .
+
+       Version b is with the phrase "or both".  We already have this rule as
+       ~ mpd3an3 , so here we prove the equivalence and discourage its use.
+       (New usage is discouraged.)  (Contributed by David A. Wheeler,
+       17-Feb-2019.) $)
+    stoic2b $p |- ( ( ph /\ ps ) -> th ) $=
+      ( mpd3an3 ) ABCDEFG $.
+  $}
+
+  ${
+    $( Premise 1 for Stoic logic thema 3. $)
+    stoic3.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    $( Premise 2 for Stoic logic thema 3. $)
+    stoic3.2 $e |- ( ( ch /\ th ) -> ta ) $.
+    $( Stoic logic Thema 3.
+
+       Statement T3 of [Bobzien] p. 116-117 discusses Stoic logic thema 3.
+
+       "When from two (assemblies) a third follows, and from the one that
+       follows (i.e., the third) together with another, external external
+       assumption, another follows, then other follows from the first two and
+       the externally co-assumed one.  (Simp.  Cael. 237.2-4)" (Contributed by
+       David A. Wheeler, 17-Feb-2019.) $)
+    stoic3 $p |- ( ( ph /\ ps /\ th ) -> ta ) $=
+      ( wa sylan 3impa ) ABDEABHCDEFGIJ $.
+  $}
+
+  ${
+    $( Premise 1 for Stoic logic thema 4a. $)
+    stoic4a.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    $( Premise 2 for Stoic logic thema 4a. $)
+    stoic4a.2 $e |- ( ( ch /\ ph /\ th ) -> ta ) $.
+    $( Stoic logic Thema 4 version a.
+
+       Statement T4 of [Bobzien] p. 117 shows a reconstructed version of Stoic
+       logic thema 4:  "When from two assertibles a third follows, and from the
+       third and one (or both) of the two and one (or more) external
+       assertible(s) another follows, then this other follows from the first
+       two and the external(s)."
+
+       We use ` th ` to represent the "external" assertibles.  This is version
+       a, which is without the phrase "or both"; see ~ stoic4b for the version
+       with the phrase "or both".  (Contributed by David A. Wheeler,
+       17-Feb-2019.) $)
+    stoic4a $p |- ( ( ph /\ ps /\ th ) -> ta ) $=
+      ( w3a 3adant3 simp1 simp3 syl3anc ) ABDHCADEABCDFIABDJABDKGL $.
+  $}
+
+  ${
+    $( Premise 1 for Stoic logic thema 4b. $)
+    stoic4b.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    $( Premise 2 for Stoic logic thema 4b. $)
+    stoic4b.2 $e |- ( ( ( ch /\ ph /\ ps ) /\ th ) -> ta ) $.
+    $( Stoic logic Thema 4 version b.
+
+       This is version b, which is with the phrase "or both".  See ~ stoic4a
+       for more information.  (Contributed by David A. Wheeler,
+       17-Feb-2019.) $)
+    stoic4b $p |- ( ( ph /\ ps /\ th ) -> ta ) $=
+      ( w3a 3adant3 simp1 simp2 simp3 syl31anc ) ABDHCABDEABCDFIABDJABDKABDLGM
+      $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
