@@ -2832,7 +2832,7 @@ editor:
 
 <P><CENTER><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=5 BGCOLOR="#F0F0F0"><TR><TD
   NOWRAP ALIGN=LEFT>
-   <TT>The square root of 2 is irrational: ` sqr 2 e/ QQ ` ,<BR>
+   <TT>The square root of 2 is irrational: ` sqrt 2 e/ QQ ` ,<BR>
    where ` QQ ` is the set of rational numbers.
 </TT></TD></TR></TABLE></CENTER><P>
 
@@ -2842,7 +2842,7 @@ this:
 <P><CENTER><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=5 BGCOLOR="#F0F0F0"><TR><TD
 ALIGN=LEFT>
 The square root of 2 is irrational: <IMG SRC='surd.gif' WIDTH=14 HEIGHT=19
-ALT='sqr'><IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT='2'> <IMG
+ALT='sqrt'><IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT='2'> <IMG
 SRC='notin.gif' WIDTH=10 HEIGHT=19 ALT='e/'> <IMG SRC='bbq.gif'
 WIDTH=13 HEIGHT=19 ALT='QQ'>,
 where <IMG SRC='bbq.gif' WIDTH=13 HEIGHT=19 ALT='QQ'> is the set of
@@ -2850,7 +2850,7 @@ rational numbers.
 </TD></TR></TABLE></CENTER><P>
 
 <P>The overall idea is very simple.  You define mnemonics for your
-math symbols, such as <TT>sqr</TT> for the square root surd.
+math symbols, such as <TT>sqrt</TT> for the square root surd.
 When the program encounters these mnemonics enclosed in backticks (`),
 it replaces the mnemonics with the HTML code you specified for them.
 
@@ -2889,14 +2889,14 @@ shown in black should not be modified!
 BGCOLOR="#F0F0F0"><TR><TD NOWRAP ALIGN=LEFT><TT>
 $( DO NOT EDIT ANY LINE WITH A "$" ON IT! $)<BR>
 $c dummy $. $( LIST YOUR MNEMONICS BELOW. $) $c <BR>
-<FONT COLOR="red">QQ 2 e/ sqr</FONT><BR>
+<FONT COLOR="red">QQ 2 e/ sqrt</FONT><BR>
 $. $( DEFINE YOUR MNEMONICS BELOW. $) $( $t<BR><FONT COLOR="red">
 htmldef "QQ" as "&lt;IMG SRC='bbq.gif' ALT='QQ' /&gt;";<BR>
 htmldef "2" as "&lt;IMG SRC='2.gif' ALT='2' /&gt;";<BR>
 htmldef "e/" as " &lt;IMG SRC='notin.gif' ALT='e/' /&gt; ";<BR>
-htmldef "sqr" as "&lt;IMG SRC='surd.gif' ALT='sqr' /&gt;";<BR>
+htmldef "sqrt" as "&lt;IMG SRC='surd.gif' ALT='sqrt' /&gt;";<BR>
 </FONT>htmldef "dummy" as ""; $) $( TYPE YOUR TEXT TO BE TRANSLATED BELOW. $) $(<BR>
-<FONT COLOR="red">The square root of 2 is irrational: ` sqr 2 e/ QQ ` ,<BR>
+<FONT COLOR="red">The square root of 2 is irrational: ` sqrt 2 e/ QQ ` ,<BR>
 where ` QQ ` is the set of rational numbers.</FONT><BR>
 $) dummy $a dummy $.
 </TT></TD></TR></TABLE></CENTER><P>
@@ -2982,7 +2982,7 @@ section you will copy looks like this:
 <P><CENTER><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=5
 BGCOLOR="#F0F0F0"><TR><TD NOWRAP ALIGN=LEFT><TT>
 The square root of 2 is irrational: &lt;IMG SRC='surd.gif' WIDTH=14 HEIGHT=19<BR>
-ALT='sqr' /&gt;&lt;IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT='2' /&gt; &lt;IMG<BR>
+ALT='sqrt' /&gt;&lt;IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT='2' /&gt; &lt;IMG<BR>
 SRC='notin.gif' WIDTH=10 HEIGHT=19 ALT='e/' /&gt; &lt;IMG SRC='bbq.gif'<BR>
 WIDTH=13 HEIGHT=19 ALT='QQ' /&gt;,<BR>
 where &lt;IMG SRC='bbq.gif' WIDTH=13 HEIGHT=19 ALT='QQ' /&gt; is the set of<BR>
@@ -2993,7 +2993,7 @@ When pasted into your HTML file, it will display like this:
 <P><CENTER><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=5 BGCOLOR="#F0F0F0"><TR><TD
   ALIGN=LEFT>
 The square root of 2 is irrational: <IMG SRC='surd.gif' WIDTH=14 HEIGHT=19
-ALT='sqr'><IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT='2'> <IMG
+ALT='sqrt'><IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT='2'> <IMG
 SRC='notin.gif' WIDTH=10 HEIGHT=19 ALT='e/'> <IMG SRC='bbq.gif'
 WIDTH=13 HEIGHT=19 ALT='QQ'>,
 where <IMG SRC='bbq.gif' WIDTH=13 HEIGHT=19 ALT='QQ'> is the set of

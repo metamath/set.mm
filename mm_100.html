@@ -109,12 +109,12 @@ headway various proof systems have made in mathematics, Coq and Mizar
 are two of the most successful systems in use today (Wiedijk,
 2007)".</p>
 
-<p>Currently there are <b>73</b> proofs proven by Metamath from this list of
-100.  As of 2019-12-14 this number of proofs is more than
-Coq (69), Mizar (69),
+<p>Currently there are <b>74</b> proofs proven by Metamath from this list of
+100.  As of 2020-04-05 this number of proofs is more than
+Coq (70), Mizar (69),
 ProofPower (43), Lean (29),
 PVS (22), nqthm/ACL2 (18), and NuPRL/MetaPRL (8);
-it is short of only Isabelle (82) and HOL Light (86).
+it is short of only Isabelle (83) and HOL Light (86).
 This is very good, especially considering that there had been no significant
 effort until 2014 to prove theorems from this list of 100 using Metamath.
 In this page, you can see the
@@ -132,16 +132,22 @@ Therefore, the Metamath Proof Explorer (MPE aka set.mm) database
 is the <i>largest</i> database of formally-verified mathematics
 that records every step of a proof by directly
 referring to only an axiom or previous proof
-(many competing databases listed above
-only record tactics that record how to
-rediscover the proof, instead of recording
+(many competing databases only record tactics that are
+intended to rediscover the proof, instead of recording
 the specific proven steps actually used in the proof).
 </p>
 
 <p>
 The theorems in MPE are routinely verified by 5 different programs
 written in 5 different programming languages by more than 5 different people.
-This provides very strong justification in believing
+These are the
+original metamath (a C verifier by Norm Megill),
+mmj2 (a Java verifier by Mel O'Cat and Mario Carneiro),
+smetamath-rs (a high-speed Rust verifier by Stefan O'Rear),
+checkmm (a C++ verifier by Eric Schmidt), and
+mmverify (a Python verifier by Raph Levien).
+This checking by multiple independent verifiers in different languages
+provides very strong justification for believing
 that the proofs are correct.
 </p>
 
@@ -232,7 +238,7 @@ announcements.</font></p>
 
 <!-- 5th added to list -->
 <li><a name="1">1</a>.  The Irrationality of the Square Root of 2 (<a
-href="mpeuni/sqr2irr.html">sqr2irr</a>, by Norman Megill, 2001-08-20)</li>
+href="mpeuni/sqrt2irr.html">sqrt2irr</a>, by Norman Megill, 2001-08-20)</li>
 
 <!-- 37th added to list -->
 <li><a name="2">2</a>. The Fundamental Theorem of Algebra (<a
@@ -445,6 +451,10 @@ by Saveliy Skresanov, 2017-01-01)</li>
 <li><a name="66">66</a>.  Sum of a Geometric Series (<a
 href="mpeuni/geoser.html">geoser</a>, by Norman Megill, 2006-05-09)</li>
 
+<!-- 74th added to list -->
+<li><a name="67">67</a>.  <i>e</i> is Transcendental (<a
+href="mpeuni/etransc.html">etransc</a>, by Glauco Siliprandi, 2020-04-05)</li>
+
 <!-- 12th added to list -->
 <!-- Note: arisum was originally named fnsmnt -->
 <li><a name="68">68</a>.  Sum of an arithmetic series (<a
@@ -642,7 +652,6 @@ href="mpeuni/stowei.html">stowei</a>, by Glauco Siliprandi,
 <li><a name="56">56</a>.  The Hermite-Lindemann Transcendence Theorem</li>
 <li><a name="59">59</a>.  The Laws of Large Numbers</li>
 <li><a name="62">62</a>.  Fair Games Theorem</li>
-<li><a name="67">67</a>.  <i>e</i> is Transcendental</li>
 <li><a name="82">82</a>.  Dissection of Cubes (J.E. Littlewood's "elegant" proof)</li>
 <li><a name="84">84</a>.  Morley's Theorem</li>
 <li><a name="92">92</a>.  Pick's Theorem</li>

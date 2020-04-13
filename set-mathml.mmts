@@ -413,7 +413,7 @@ $s class reverse $: <mi href="df-reverse.html">reverse</mi> $.
 $s class shift $: <mi href="df-shft.html">shift</mi> $.
 $s class Re $: <mi href="df-re.html">&real;</mi> $.
 $s class Im $: <mi href="df-im.html">&image;</mi> $.
-$s class sqr $: <mi href="df-sqr.html">&radic;</mi> $.
+$s class sqrt $: <mi href="df-sqrt.html">&radic;</mi> $.
 $s class abs $: <mi href="df-abs.html">abs</mi> $.
 $s class limsup $: <mi href="df-limsup.html">lim sup</mi> $.
 $s class exp $: <mi href="df-ef.html">exp</mi> $.
@@ -1566,7 +1566,7 @@ $s class -u A $: <mfenced><mrow><mo form="prefix" href="df-neg.html">&minus;</mo
 $s class-o -u A $: <mrow><mo form="prefix" href="df-neg.html">&minus;</mo> #A# </mrow> $.
 $s class -e A $: <mfenced><mrow><mo form="prefix" href="df-xneg.html">&minus;</mo> #A# </mrow></mfenced> $.
 $s class-o -e A $: <mrow><mo form="prefix" href="df-xneg.html">&minus;</mo> #A# </mrow> $.
-$s class ( sqr ` O ) $: <msqrt> #O# </msqrt> $.
+$s class ( sqrt ` O ) $: <msqrt> #O# </msqrt> $.
 $s class ( * ` O ) $: <mover> #O# <mo>&oline;</mo></mover> $.
 $s class ( sin ` A ) $: <mrow> <mi href="df-sin.html">sin</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
 $s class ( cos ` A ) $: <mrow> <mi href="df-cos.html">cos</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
@@ -1810,7 +1810,7 @@ $s class (,] $: <mfenced open='(' close=']' href="df-ioc.html"><mi>.</mi></mfenc
 $s class (,) $: <mfenced open='(' close=')' href="df-ioo.html"><mi>.</mi></mfenced> $.
 $s class _C $: <mrow href="df-bc.html"> <mo>(</mo> <mfrac linethickness="0"><mi>.</mi> <mi>.</mi></mfrac><mo>)</mo> </mrow> $.
 $s class _D $: <mi href="df-dv.html" mathvariant="normal">D</mi> $.
-$s class sqr $: <msqrt href="df-sqr.html"><mi>.</mi></msqrt> $.
+$s class sqrt $: <msqrt href="df-sqrt.html"><mi>.</mi></msqrt> $.
 $s class ... $: <mo href="df-fz.html">&hellip;</mo> $.
 $s class ..^ $: <mo href="df-fzo.html">..^</mo> $.
 $s class -cn-> $: <munder accentunder href="df-cncf.html"><mo>&xrarr;</mo><mo>cn</mo></munder> $.

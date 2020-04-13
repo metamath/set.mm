@@ -939,10 +939,12 @@ have been a fairly arbitrary choice).
 <LI>
 A number of theorems related to functions (especially ovex and fvex ) in
 set.mm perform case elimination based on whether we are evaluating the function
-within its domain or outside it. The iset.mm replacements ( ~ fnovex and
-~ funfvex ) only work within the domain. This is rarely a problem but often
-means that logic must be rearranged, for example by changing ~ rexlimivw to
+within its domain or outside it. The most straightforward solution is to
+use ~ fnovex or ~ funfvex which only work within the domain. Using these
+may involve rearranging logic, for example by changing ~ rexlimivw to
 ~ rexlimdva (example: ~ ovelrn or indeed most uses of ~ fnovex and ~ funfvex ).
+If a function value is inhabited, we know we are evaluating it within
+its domain by ~ relelfvdm .
 </LI>
 
 <LI>
@@ -952,10 +954,13 @@ interesting condition constructively.</LI>
 
 <LI>
 Reverse closure in set.mm uses excluded middle (for example ovrcl or ndmfvrcl
-). In iset.mm we add more conditions that we are evaluating operations within
+). The most general way to handle this is to add more conditions that we are
+evaluating operations within
 their domains (for example set.mm's addasspi versus iset.mm's ~ addasspig in
 which conditions such as ` A e. N. ` are added, or set.mm's ltbtwnnq versus
 iset.mm's ~ ltbtwnnqq , in which ` E. x ` is changed to ` E. x e. Q. ` ).
+If the result of applying a function is inhabited, then we know we applied
+it within its domain - that is ~ relelfvdm or ~ elmpt2cl may be useful.
 </LI>
 
 <LI>
@@ -3267,6 +3272,45 @@ proved trichotomy of integers.</TD>
 </TR>
 
 <TR>
+<TD>uzwo , uzwo2 , nnwo , nnwof , nnwos</TD>
+<TD><I>none</I></TD>
+<TD>Presumably would imply excluded middle, unless there is something
+which makes this different from ~ nnregexmid .</TD>
+</TR>
+
+<TR>
+<TD>uzinfmi , nninfm , nn0infm , infmssuzle , infmssuzcl</TD>
+<TD><I>none</I></TD>
+<TD>We do not yet have a supremum notation, or most supremum theorems,
+in iset.mm</TD>
+</TR>
+
+<TR>
+<TD>negn0</TD>
+<TD>~ negm </TD>
+</TR>
+
+<TR>
+<TD>supminf</TD>
+<TD><I>none</I></TD>
+<TD>We do not yet have a supremum notation, or most supremum theorems,
+in iset.mm</TD>
+</TR>
+
+<TR>
+<TD>lbzbi</TD>
+<TD><I>none</I></TD>
+<TD>Once we have btwnz in iset.mm, the set.mm proof should work.</TD>
+</TR>
+
+<TR>
+<TD>zsupss , suprzcl2 , suprzub , uzsupss</TD>
+<TD><I>none</I></TD>
+<TD>We do not yet have a supremum notation, or most supremum theorems,
+in iset.mm</TD>
+</TR>
+
+<TR>
 <TD>rpneg</TD>
 <TD>~ rpnegap </TD>
 </TR>
@@ -3377,33 +3421,8 @@ set.mm, and the set.mm proofs would require significant changes.</TD>
 </TR>
 
 <TR>
-<TD>ixxssxr</TD>
-<TD>~ ixxssxrg </TD>
-</TR>
-
-<TR>
-<TD>elixx3g</TD>
-<TD>~ elixx1 </TD>
-</TR>
-
-<TR>
 <TD>ixxun , ixxin</TD>
 <TD><I>none</I></TD>
-</TR>
-
-<TR>
-<TD>ixxss1</TD>
-<TD>~ ixxss1g </TD>
-</TR>
-
-<TR>
-<TD>ixxss2</TD>
-<TD>~ ixxss2g </TD>
-</TR>
-
-<TR>
-<TD>ixxss12</TD>
-<TD>~ ixxss12g </TD>
 </TR>
 
 <TR>
@@ -3434,16 +3453,6 @@ both in proving this and in using it.</TD>
 </TR>
 
 <TR>
-<TD>elioo3g</TD>
-<TD>~ elioo1 </TD>
-</TR>
-
-<TR>
-<TD>elioore</TD>
-<TD>~ eliooreg </TD>
-</TR>
-
-<TR>
 <TD>lbioo , ubioo</TD>
 <TD>~ lbioog , ~ ubioog </TD>
 </TR>
@@ -3451,16 +3460,6 @@ both in proving this and in using it.</TD>
 <TR>
 <TD>iooin</TD>
 <TD><I>none</I></TD>
-</TR>
-
-<TR>
-<TD>iooss1</TD>
-<TD>~ iooss1g</TD>
-</TR>
-
-<TR>
-<TD>iooss2</TD>
-<TD>~ iooss2g</TD>
 </TR>
 
 <TR>
@@ -3472,70 +3471,6 @@ both in proving this and in using it.</TD>
 <TR>
 <TD>icc0</TD>
 <TD>~ icc0r </TD>
-</TR>
-
-<TR>
-<TD>eliooxr</TD>
-<TD><I>none</I></TD>
-</TR>
-
-<TR>
-<TD>eliooord</TD>
-<TD>~ elioo2 </TD>
-</TR>
-
-<TR>
-<TD>elioo4g</TD>
-<TD>~ elioo2 </TD>
-</TR>
-
-<TR>
-<TD>ioossre</TD>
-<TD>~ ioossreg </TD>
-</TR>
-
-<TR>
-<TD>iccss</TD>
-<TD>~ iccssg </TD>
-<TD>iccss should be provable using ~ lerelxr and
-~ brel </TD>
-</TR>
-
-<TR>
-<TD>icossico</TD>
-<TD>~ icossicog </TD>
-<TD>icossico should be provable using ~ ltrelxr , ~ lerelxr , and
-~ brel </TD>
-</TR>
-
-<TR>
-<TD>iccss2</TD>
-<TD>~ iccss2g </TD>
-</TR>
-
-<TR>
-<TD>iccssioo2</TD>
-<TD>~ iccssioo2g </TD>
-</TR>
-
-<TR>
-<TD>iccssico2</TD>
-<TD>~ iccssico2g </TD>
-</TR>
-
-<TR>
-<TD>iccssxr</TD>
-<TD>~ iccssxrg </TD>
-</TR>
-
-<TR>
-<TD>iocssxr</TD>
-<TD>~ iocssxrg </TD>
-</TR>
-
-<TR>
-<TD>icossxr</TD>
-<TD>~ icossxrg </TD>
 </TR>
 
 <TR>

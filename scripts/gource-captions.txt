@@ -4,11 +4,12 @@
 767577600|Set difference and set intersection defined (df-dif, df-in)
 797817600|Proved finds - The Principle of Mathematical Induction (Norman Megill), Metamath 100 #74
 824947200|Definition of the set of complex numbers, df-c
+853804800|Proved arch - the Archimedian Property for Reals (Norman Megill)
 897264000|Proved sbth - Schroeder-Bernstein Theorem (Norman Megill), Metamath 100 #25
 936489600|First external contributor (David Harvey)
 938822400|Proved abstrii - The Triangle Inequality (Norman Megill), Metamath 100 #91
 978048000|Second external contributor (Josh Purinton)
-1010448000|Proved sqr2irr - The Irrationality of the Square Root of 2 (Norman Megill), Metamath 100 #1
+1010448000|Proved sqrt2irr - The Irrationality of the Square Root of 2 (Norman Megill), Metamath 100 #1
 1091232000|Proved qnnen - The Denumerability of the Rational Numbers (Norman Megill, later revised by Mario Carneiro), Metamath 100 #3
 1097625600|Proved ruc - The Non-Denumerability of the Continuum (Norman Megill), Metamath 100 #22
 1110758400|Definition of the cosine function, df-cos
@@ -28,6 +29,7 @@
 1394755200|Proved bpos - Bertrand's Postulate (Mario Carneiro), Metamath 100 #98
 1397865600|Large number of Metamath 100 proofs begin being completed
 1429228800|Decimal constructor df-dec added
+1470614400|Daniel Whalen releases paper on creating Metamath proofs via machine learning ("Holophrasm")
 1494115200|Proved ballotth - The Ballot Problem (Thierry Arnoux), Metamath 100 #30 / Tied with Coq
 1503532800|Definition of Tarskian geometry using extensible structures, df-trkg
 1504137600|Proved areacirc - Area of a Circle (Brendan Leahy), Metamath 100 #9 / Tied with Mizar
@@ -39,3 +41,5 @@
 1559448000|Publication of "Metamath: A Computer Language for Mathematical Proofs" book
 1552176000|Proved cayley - Cayley-Hamilton Theorem (Alexander van der Vekens), Metamath 100 #49
 1576022400|Proved fourier - Fourier convergence (Glauco Siliprandi), Metamath 100 #76 with 400 proven theorems
+1585094400|OpenAI provides first contribution of a Metamath proof created/minimized via machine learning
+1586044800|Proved etransc - e is Transcendental (Glauco Siliprandi), Metamath 100 #67

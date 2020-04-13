@@ -1,4 +1,4 @@
-$( iset.mm - Version of 4-Apr-2020
+$( iset.mm - Version of 10-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54217,11 +54217,12 @@ $)
     $d F f x y $.
     $( Define a function ` recs ( F ) ` on ` On ` , the class of ordinal
        numbers, by transfinite recursion given a rule ` F ` which sets the next
-       value given all values so far.  If we were assuming the law of the
-       excluded middle, we would then build on top of that a form of recursion
-       which has separate cases for the empty set, successor ordinals, and
-       limit ordinals.  This version allows the update rule to use _all_
-       previous values, which is why it is described as "strong".
+       value given all values so far.  See ~ df-irdg for more details on why
+       this definition is desirable.  Unlike ~ df-irdg which restricts the
+       update rule to use only the previous value, this version allows the
+       update rule to use _all_ previous values, which is why it is described
+       as "strong", although it is actually more primitive.  See ~ tfri1d and
+       ~ tfri2d for the primary contract of this definition.
 
        (Contributed by Stefan O'Rear, 18-Jan-2015.) $)
     df-recs $a |- recs ( F ) = U. { f | E. x e. On ( f Fn x /\
@@ -74919,6 +74920,16 @@ $)
     VBVIUOVBVFUSVFVBBAPUSABUDBAUEUFUGUHUIUSURUJZRUQVGUSVHUPVBVCVGUSTUOVDVEBAUMM
     VJRUKULUN $.
 
+  $( Integer 'Less than or equal to' expressed in terms of 'less than' or
+     'equals'.  (Contributed by Jim Kingdon, 8-Apr-2020.) $)
+  zleloe $p |- ( ( A e. ZZ /\ B e. ZZ ) ->
+      ( A <_ B <-> ( A < B \/ A = B ) ) ) $=
+    ( cz wcel wa cle wbr clt wo wn cr wb zre lenlt syl2an w3o ztri3or df-3or wi
+    wceq sylib orcomd ord sylbid ltle eqle ex adantr jaod impbid ) ACDZBCDZEZAB
+    FGZABHGZABTZIZUMUNBAHGZJZUQUKAKDZBKDZUNUSLULAMZBMZABNOUMURUQUMUQURUMUOUPURP
+    UQURIABQUOUPURRUAUBUCUDUKUTVAUQUNSULVBVCUTVAEUOUNUPABUEUTUPUNSVAUTUPUNABUFU
+    GUHUIOUJ $.
+
   $( An integer is not a positive integer iff it is less than one.
      (Contributed by NM, 13-Jul-2005.) $)
   znnnlt1 $p |- ( N e. ZZ -> ( -. N e. NN <-> N < 1 ) ) $=
@@ -75078,6 +75089,14 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     HZBAFGZIUOJZABKUMUNUQUOUPUKALDZULUNUQSZAMURUSULURUNUQURUNEZABNZUQUTBAABOPVA
     UOVAUAZUQVAUOUBABUCZQZRTUDUEUOUQSUMUOVBUQUOVAUFVCQUGULUPUQSZUKULBLDZVEBMVFU
     PUQVFUPEVAUQBAOVDRTRUHUIUJ $.
+
+  $( Integer ` <_ ` is decidable.  (Contributed by Jim Kingdon, 7-Apr-2020.) $)
+  zdcle $p |- ( ( A e. ZZ /\ B e. ZZ ) -> DECID A <_ B ) $=
+    ( cz wcel wa clt wbr wceq w3o cle wdc ztri3or cr wi zre ltle wn sylibr syl6
+    wo orc df-dc eqle syl ex adantr lenlt biimpd con2d olc 3jaod syl2an mpd ) A
+    CDZBCDZEABFGZABHZBAFGZIZABJGZKZABLUNAMDZBMDZUSVANUOAOBOVBVCEZUPVAUQURVDUPUT
+    VAABPUTUTUTQZTZVAUTVEUAUTUBZRZSVBUQVANVCVBUQVAVBUQEUTVAABUCVHUDUEUFVDURVEVA
+    VDUTURVDUTURQABUGUHUIVEVFVAVEUTUJVGRSUKULUM $.
 
   $( Integer 'Less than' expressed in terms of 'less than or equal to'.  Also
      see ~ ltleap which is a similar result for complex numbers.  (Contributed
@@ -76514,6 +76533,759 @@ $)
       ( c2 cmul co c1 caddc c4 c3 4nn0 2nn0 2p1e3 decbin2 eqcomi numsuc ) CCADE
       FGEDEZFGEHADEZIGEACIHPJBKLQCGEPABMNON $.
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Upper sets of integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c ZZ>= $. $( ` ZZ ` with greater-than-or-equal-to subscript. $)
+
+  $( Extend class notation with the upper integer function.
+     Read " ` ZZ>= `` M ` " as "the set of integers greater than or equal to
+     ` M ` ." $)
+  cuz $a class ZZ>= $.
+
+  ${
+    $d j k y N $.  $d k M $.
+    $( Define a function whose value at ` j ` is the semi-infinite set of
+       contiguous integers starting at ` j ` , which we will also call the
+       upper integers starting at ` j ` .  Read " ` ZZ>= `` M ` " as "the set
+       of integers greater than or equal to ` M ` ."  See ~ uzval for its
+       value, ~ uzssz for its relationship to ` ZZ ` , ~ nnuz and ~ nn0uz for
+       its relationships to ` NN ` and ` NN0 ` , and ~ eluz1 and ~ eluz2 for
+       its membership relations.  (Contributed by NM, 5-Sep-2005.) $)
+    df-uz $a |- ZZ>= = ( j e. ZZ |-> { k e. ZZ | j <_ k } ) $.
+
+    $( The value of the upper integers function.  (Contributed by NM,
+       5-Sep-2005.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    uzval $p |- ( N e. ZZ -> ( ZZ>= ` N ) = { k e. ZZ | N <_ k } ) $=
+      ( vj cv cle wbr cz crab cuz wceq breq1 rabbidv df-uz zex rabex fvmpt ) CB
+      CDZADZEFZAGHBREFZAGHGIQBJSTAGQBREKLCAMTAGNOP $.
+
+    $( The domain and range of the upper integers function.  (Contributed by
+       Scott Fenton, 8-Aug-2013.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    uzf $p |- ZZ>= : ZZ --> ~P ZZ $=
+      ( vj vk cv cle wbr cz crab cpw wcel wral cuz wss ssrab2 elpw2 mpbir rgenw
+      wf zex df-uz fmpt mpbi ) ACBCDEZBFGZFHZIZAFJFUDKQUEAFUEUCFLUBBFMUCFRNOPAF
+      UDUCKABSTUA $.
+
+    $( Membership in the upper set of integers starting at ` M ` .
+       (Contributed by NM, 5-Sep-2005.) $)
+    eluz1 $p |- ( M e. ZZ ->
+           ( N e. ( ZZ>= ` M ) <-> ( N e. ZZ /\ M <_ N ) ) ) $=
+      ( vk cz wcel cuz cfv cv cle wbr crab wa uzval eleq2d breq2 elrab syl6bb )
+      ADEZBAFGZEBACHZIJZCDKZEBDEABIJZLRSUBBCAMNUAUCCBDTBAIOPQ $.
+
+    $( Implication of membership in an upper set of integers.  (Contributed by
+       NM, 6-Sep-2005.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    eluzel2 $p |- ( N e. ( ZZ>= ` M ) -> M e. ZZ ) $=
+      ( cuz cfv wcel cdm cz wrel cpw wf frel ax-mp relelfvdm mpan fdmi syl6eleq
+      uzf ) BACDEZACFZGCHZRASEGGIZCJTQGUACKLBACMNGUACQOP $.
+
+    $( Membership in an upper set of integers.  We use the fact that a
+       function's value (under our function value definition) is empty outside
+       of its domain to show ` M e. ZZ ` .  (Contributed by NM, 5-Sep-2005.)
+       (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    eluz2 $p |- ( N e. ( ZZ>= ` M ) <-> ( M e. ZZ /\ N e. ZZ /\ M <_ N ) ) $=
+      ( cuz cfv wcel cz cle wbr w3a eluzel2 simp1 wa eluz1 bitrd 3anass syl6bbr
+      ibar pm5.21nii ) BACDEZAFEZTBFEZABGHZIZABJTUAUBKTSTUAUBLZLZUCTSUDUEABMTUD
+      QNTUAUBOPR $.
+  $}
+
+  ${
+    eluz.1 $e |- M e. ZZ $.
+    $( Membership in an upper set of integers.  (Contributed by NM,
+       5-Sep-2005.) $)
+    eluz1i $p |- ( N e. ( ZZ>= ` M ) <-> ( N e. ZZ /\ M <_ N ) ) $=
+      ( cz wcel cuz cfv cle wbr wa wb eluz1 ax-mp ) ADEBAFGEBDEABHIJKCABLM $.
+  $}
+
+  $( An integer in an upper set of integers is an element of an upper set of
+     integers with a smaller bound.  (Contributed by Alexander van der Vekens,
+     17-Jun-2018.) $)
+  eluzuzle $p |- ( ( B e. ZZ /\ B <_ A )
+                   -> ( C e. ( ZZ>= ` A ) -> C e. ( ZZ>= ` B ) ) ) $=
+    ( cuz cfv wcel cz cle wbr w3a wa eluz2 simpll simpr2 cr zre ad2antrr adantl
+    3ad2ant1 3ad2ant2 simplr simpr3 letrd syl3anbrc ex syl5bi ) CADEFAGFZCGFZAC
+    HIZJZBGFZBAHIZKZCBDEFZACLUMUJUNUMUJKZUKUHBCHIUNUKULUJMUMUGUHUINUOBACUKBOFUL
+    UJBPQUJAOFZUMUGUHUPUIAPSRUJCOFZUMUHUGUQUICPTRUKULUJUAUMUGUHUIUBUCBCLUDUEUF
+    $.
+
+  $( A member of an upper set of integers is an integer.  (Contributed by NM,
+     6-Sep-2005.) $)
+  eluzelz $p |- ( N e. ( ZZ>= ` M ) -> N e. ZZ ) $=
+    ( cuz cfv wcel cz cle wbr eluz2 simp2bi ) BACDEAFEBFEABGHABIJ $.
+
+  $( A member of an upper set of integers is a real.  (Contributed by Mario
+     Carneiro, 31-Aug-2013.) $)
+  eluzelre $p |- ( N e. ( ZZ>= ` M ) -> N e. RR ) $=
+    ( cuz cfv wcel eluzelz zred ) BACDEBABFG $.
+
+  $( A member of an upper set of integers is a complex number.  (Contributed by
+     Glauco Siliprandi, 29-Jun-2017.) $)
+  eluzelcn $p |- ( N e. ( ZZ>= ` M ) -> N e. CC ) $=
+    ( cuz cfv wcel eluzelre recnd ) BACDEBABFG $.
+
+  $( Implication of membership in an upper set of integers.  (Contributed by
+     NM, 6-Sep-2005.) $)
+  eluzle $p |- ( N e. ( ZZ>= ` M ) -> M <_ N ) $=
+    ( cuz cfv wcel cz cle wbr eluz2 simp3bi ) BACDEAFEBFEABGHABIJ $.
+
+  $( Membership in an upper set of integers.  (Contributed by NM,
+     2-Oct-2005.) $)
+  eluz $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
+         ( N e. ( ZZ>= ` M ) <-> M <_ N ) ) $=
+    ( cz wcel cuz cfv cle wbr eluz1 baibd ) ACDBAEFDBCDABGHABIJ $.
+
+  $( Membership of the least member in an upper set of integers.  (Contributed
+     by NM, 2-Sep-2005.) $)
+  uzid $p |- ( M e. ZZ -> M e. ( ZZ>= ` M ) ) $=
+    ( cz wcel cuz cfv cle wbr wa zre leidd ancli eluz1 mpbird ) ABCZAADECNAAFGZ
+    HNONAAIJKAALM $.
+
+  ${
+    $d k M $.
+    $( The upper integers are all nonempty.  (Contributed by Mario Carneiro,
+       16-Jan-2014.) $)
+    uzn0 $p |- ( M e. ran ZZ>= -> M =/= (/) ) $=
+      ( vk cuz crn wcel cv cfv wceq cz wrex c0 wne cpw wfn uzf ffn fvelrnb mp2b
+      wf wb uzid ne0i syl neeq1 syl5ibcom rexlimiv sylbi ) ACDEZBFZCGZAHZBIJZAK
+      LZIIMZCSCINUHULTOIUNCPBIACQRUKUMBIUIIEZUJKLZUKUMUOUIUJEUPUIUAUJUIUBUCUJAK
+      UDUEUFUG $.
+  $}
+
+  $( Transitive law for sets of upper integers.  (Contributed by NM,
+     20-Sep-2005.) $)
+  uztrn $p |- ( ( M e. ( ZZ>= ` K ) /\ K e. ( ZZ>= ` N ) ) ->
+              M e. ( ZZ>= ` N ) ) $=
+    ( cuz cfv wcel wa cz cle eluzel2 adantl eluzelz adantr eluzle zletr syl3anc
+    wbr wi mp2and eluz2 syl3anbrc ) BADEFZACDEZFZGZCHFZBHFZCBIQZBUCFUDUFUBCAJKZ
+    UBUGUDABLMZUECAIQZABIQZUHUDUKUBCANKUBULUDABNMUEUFAHFZUGUKULGUHRUIUDUMUBCALK
+    UJCABOPSCBTUA $.
+
+  ${
+    uztrn2.1 $e |- Z = ( ZZ>= ` K ) $.
+    $( Transitive law for sets of upper integers.  (Contributed by Mario
+       Carneiro, 26-Dec-2013.) $)
+    uztrn2 $p |- ( ( N e. Z /\ M e. ( ZZ>= ` N ) ) -> M e. Z ) $=
+      ( wcel cuz cfv wa eleq2i uztrn ancoms sylanb syl6eleqr ) CDFZBCGHFZIBAGHZ
+      DOCQFZPBQFZDQCEJPRSCBAKLMEN $.
+  $}
+
+  $( Contraposition law for upper integers.  (Contributed by NM,
+     28-Nov-2005.) $)
+  uzneg $p |- ( N e. ( ZZ>= ` M ) -> -u M e. ( ZZ>= ` -u N ) ) $=
+    ( cuz cfv wcel cneg cle wbr eluzle cz wb eluzel2 eluzelz zre syl2an syl2anc
+    cr leneg mpbid znegcl eluz mpbird ) BACDEZAFZBFZCDEZUEUDGHZUCABGHZUGABIUCAJ
+    EZBJEZUHUGKZABLZABMZUIAQEBQEUKUJANBNABROPSUCUJUIUFUGKZUMULUJUEJEUDJEUNUIBTA
+    TUEUDUAOPUB $.
+
+  ${
+    $d j k y M $.  $d k N $.
+    $( An upper set of integers is a subset of all integers.  (Contributed by
+       NM, 2-Sep-2005.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    uzssz $p |- ( ZZ>= ` M ) C_ ZZ $=
+      ( vy cuz cfv cz cv eluzelz ssriv ) BACDEABFGH $.
+
+    $( Subset relationship for two sets of upper integers.  (Contributed by NM,
+       5-Sep-2005.) $)
+    uzss $p |- ( N e. ( ZZ>= ` M ) ->
+               ( ZZ>= ` N ) C_ ( ZZ>= ` M ) ) $=
+      ( vk cuz cfv wcel cv cz cle wbr wa eluzle adantr wi eluzel2 eluzelz eluz1
+      jca wb syl zletr 3expa sylan mpand imdistanda 3imtr4d ssrdv ) BADEZFZCBDE
+      ZUHUICGZHFZBUKIJZKZULAUKIJZKZUKUJFZUKUHFZUIULUMUOUIULKABIJZUMUOUIUSULABLM
+      UIAHFZBHFZKULUSUMKUONZUIUTVAABOZABPZRUTVAULVBABUKUAUBUCUDUEUIVAUQUNSVDBUK
+      QTUIUTURUPSVCAUKQTUFUG $.
+  $}
+
+  $( Trichotomy of the ordering relation on integers, stated in terms of upper
+     integers.  (Contributed by NM, 6-Jul-2005.)  (Revised by Mario Carneiro,
+     25-Jun-2013.) $)
+  uztric $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
+      ( N e. ( ZZ>= ` M ) \/ M e. ( ZZ>= ` N ) ) ) $=
+    ( cz wcel wa cuz cfv wo cle wbr zletric eluz wb ancoms orbi12d mpbird ) ACD
+    ZBCDZEZBAFGDZABFGDZHABIJZBAIJZHABKSTUBUAUCABLRQUAUCMBALNOP $.
+
+  $( The upper integers function is one-to-one.  (Contributed by NM,
+     12-Dec-2005.) $)
+  uz11 $p |- ( M e. ZZ ->
+                ( ( ZZ>= ` M ) = ( ZZ>= ` N ) <-> M = N ) ) $=
+    ( cz wcel cuz cfv wceq wa eleq2 eluzel2 syl6bi mpan9 cle wbr syl5ibr eluzle
+    uzid syl6 cr zre syl5ib anim12d impl ancoms anassrs wb letri3 syl2an mpbird
+    adantlr mpdan ex fveq2 impbid1 ) ACDZAEFZBEFZGZABGZUOURUSUOURHZBCDZUSUOAUPD
+    ZURVAAQZURVBAUQDZVAUPUQAIZBAJKLUTVAHUSABMNZBAMNZHZUOURVAVHURVAHUOVHURVAUOVH
+    URVAVFUOVGURVABUPDZVFVAVIURBUQDBQUPUQBIOABPRURUOVDVGUOVBURVDVCVEUABAPRUBUCU
+    DUEUOVAUSVHUFZURUOASDBSDVJVAATBTABUGUHUJUIUKULABEUMUN $.
+
+  $( Membership in the next upper set of integers.  (Contributed by NM,
+     12-Sep-2005.) $)
+  eluzp1m1 $p |- ( ( M e. ZZ /\
+             N e. ( ZZ>= ` ( M + 1 ) ) ) -> ( N - 1 ) e. ( ZZ>= ` M ) ) $=
+    ( cz wcel c1 caddc co cuz cfv cmin cle wbr wa peano2zm ad2antrl cr wb eluz1
+    zre 1re leaddsub mp3an2 syl2an biimpa anasss jca ex peano2z syl 3imtr4d imp
+    ) ACDZBAEFGZHIDZBEJGZAHIDZULBCDZUMBKLZMZUOCDZAUOKLZMZUNUPULUSVBULUSMUTVAUQU
+    TULURBNOULUQURVAULUQMURVAULAPDZBPDZURVAQZUQASBSVCEPDVDVETAEBUAUBUCUDUEUFUGU
+    LUMCDUNUSQAUHUMBRUIAUORUJUK $.
+
+  $( Strict ordering implied by membership in the next upper set of integers.
+     (Contributed by NM, 12-Sep-2005.) $)
+  eluzp1l $p |- ( ( M e. ZZ /\
+             N e. ( ZZ>= ` ( M + 1 ) ) ) -> M < N ) $=
+    ( cz wcel c1 caddc cuz cfv clt wbr cle eluzle adantl eluzelz zltp1le sylan2
+    co wa wb mpbird ) ACDZBAEFQZGHDZRABIJZUBBKJZUCUEUAUBBLMUCUABCDUDUESUBBNABOP
+    T $.
+
+  $( Membership in the next upper set of integers.  (Contributed by NM,
+     5-Oct-2005.) $)
+  eluzp1p1 $p |- ( N e. ( ZZ>= ` M ) ->
+                       ( N + 1 ) e. ( ZZ>= ` ( M + 1 ) ) ) $=
+    ( cz wcel cle wbr w3a c1 caddc co cuz cfv peano2z 3ad2ant1 3ad2ant2 zre 1re
+    cr wb eluz2 leadd1 mp3an3 syl2an biimp3a 3jca 3imtr4i ) ACDZBCDZABEFZGZAHIJ
+    ZCDZBHIJZCDZUKUMEFZGBAKLDUMUKKLDUJULUNUOUGUHULUIAMNUHUGUNUIBMOUGUHUIUOUGARD
+    ZBRDZUIUOSZUHAPBPUPUQHRDURQABHUAUBUCUDUEABTUKUMTUF $.
+
+  ${
+    eluzaddi.1 $e |- M e. ZZ $.
+    eluzaddi.2 $e |- K e. ZZ $.
+    $( Membership in a later upper set of integers.  (Contributed by Paul
+       Chapman, 22-Nov-2007.) $)
+    eluzaddi $p |- ( N e. ( ZZ>= ` M )
+          -> ( N + K ) e. ( ZZ>= ` ( M + K ) ) ) $=
+      ( cuz cfv wcel caddc co cz cle wbr eluzelz zaddcl sylancl wa eluz1i zrei
+      cr wb zre leadd1 mp3an13 syl biimpa sylbi mp2an sylanbrc ) CBFGHZCAIJZKHZ
+      BAIJZUKLMZUKUMFGHUJCKHZAKHZULBCNECAOPUJUOBCLMZQUNBCDRUOUQUNUOCTHZUQUNUAZC
+      UBBTHURATHUSBDSAESBCAUCUDUEUFUGUMUKBKHUPUMKHDEBAOUHRUI $.
+
+    $( Membership in an earlier upper set of integers.  (Contributed by Paul
+       Chapman, 22-Nov-2007.) $)
+    eluzsubi $p |- ( N e. ( ZZ>= ` ( M + K ) )
+         -> ( N - K ) e. ( ZZ>= ` M ) ) $=
+      ( caddc co cuz cfv wcel cmin cz cle eluzelz zsubcl sylancl eluz1i cr zrei
+      wbr wa zaddcl mp2an wb zre leaddsub mp3an12 syl biimpa sylbi sylanbrc ) C
+      BAFGZHIJZCAKGZLJZBUNMTZUNBHIJUMCLJZALJZUOULCNECAOPUMUQULCMTZUAUPULCBLJURU
+      LLJDEBAUBUCQUQUSUPUQCRJZUSUPUDZCUEBRJARJUTVABDSAESBACUFUGUHUIUJBUNDQUK $.
+  $}
+
+  $( Membership in a later upper set of integers.  (Contributed by Jeff Madsen,
+     2-Sep-2009.) $)
+  eluzadd $p |- ( ( N e. ( ZZ>= ` M ) /\ K e. ZZ ) ->
+                                      ( N + K ) e. ( ZZ>= ` ( M + K ) ) ) $=
+    ( cuz cfv wcel cz wa caddc co cle eluzelz zaddcl sylan adantr zred wb eluz1
+    wbr syl eluzel2 simpr simpl mpbid simprd leadd1dd zaddcld mpbir2and ) CBDEF
+    ZAGFZHZCAIJZBAIJZDEFZULGFZUMULKSZUICGFZUJUOBCLZCAMNUKBCAUKBUIBGFZUJBCUAOZPU
+    KCUIUQUJUROPUKAUIUJUBZPUKUQBCKSZUKUIUQVBHZUIUJUCUKUSUIVCQUTBCRTUDUEUFUKUMGF
+    UNUOUPHQUKBAUTVAUGUMULRTUH $.
+
+  $( Membership in an earlier upper set of integers.  (Contributed by Jeff
+     Madsen, 2-Sep-2009.) $)
+  eluzsub $p |- ( ( M e. ZZ /\ K e. ZZ /\ N e. ( ZZ>= ` ( M + K ) ) )
+                                          -> ( N - K ) e. ( ZZ>= ` M ) ) $=
+    ( cz wcel caddc co cuz cfv w3a cmin cle wbr wa wb eluz1 syl mpbid cr zred
+    eluzelz 3ad2ant3 simp2 zsubcld simp3 simp1 zaddcld simprd syl3anc mpbir2and
+    leaddsub ) BDEZADEZCBAFGZHIEZJZCAKGZBHIEZUQDEZBUQLMZUPCAUOULCDEZUMUNCUAUBZU
+    LUMUOUCZUDUPUNCLMZUTUPVAVDUPUOVAVDNZULUMUOUEUPUNDEUOVEOUPBAULUMUOUFZVCUGUNC
+    PQRUHUPBSEASECSEVDUTOUPBVFTUPAVCTUPCVBTBACUKUIRUPULURUSUTNOVFBUQPQUJ $.
+
+  $( Choices for an element of an upper interval of integers.  (Contributed by
+     Jeff Madsen, 2-Sep-2009.) $)
+  uzm1 $p |- ( N e. ( ZZ>= ` M ) -> ( N = M \/ ( N - 1 ) e. ( ZZ>= ` M ) ) ) $=
+    ( cuz cfv wcel wceq clt wbr wo c1 cmin co wn eluzle eluzel2 zred cz syl2anc
+    cle wb eluzelz lenltd mpbid w3o ztri3or df-3or sylib ecased orcomd wi eqcom
+    biimpi a1i zltlem1 1zzd zsubcld eluz bitr4d biimpd orim12d mpd ) BACDZEZABF
+    ZABGHZIBAFZBJKLZVBEZIVCVEVDVCVEVDIZBAGHZVCABSHVJMABNVCABVCAABOZPVCBABUAZPUB
+    UCVCVEVDVJUDZVIVJIVCAQEZBQEZVMVKVLABUERVEVDVJUFUGUHUIVCVDVFVEVHVDVFUJVCVDVF
+    ABUKULUMVCVEVHVCVEAVGSHZVHVCVNVOVEVPTVKVLABUNRVCVNVGQEVHVPTVKVCBJVLVCUOUPAV
+    GUQRURUSUTVA $.
+
+  $( The nonnegative difference of integers is a nonnegative integer.
+     (Contributed by NM, 4-Sep-2005.) $)
+  uznn0sub $p |- ( N e. ( ZZ>= ` M ) -> ( N - M ) e. NN0 ) $=
+    ( cuz cfv wcel cz cle wbr w3a cmin co cn0 eluz2 znn0sub biimp3a sylbi ) BAC
+    DEAFEZBFEZABGHZIBAJKLEZABMQRSTABNOP $.
+
+  $( Intersection of two upper intervals of integers.  (Contributed by Mario
+     Carneiro, 24-Dec-2013.) $)
+  uzin $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
+    ( ( ZZ>= ` M ) i^i ( ZZ>= ` N ) ) = ( ZZ>= ` if ( M <_ N , N , M ) ) ) $=
+    ( cz wcel wa cuz cfv wo cle wbr wceq wss uzss sylib eluzle fveq2d eqtr4d cr
+    syl zre cin uztric sseqin2 iftrue df-ss wn wb eluzel2 eluzelz letri3 syl2an
+    cif syl2anc biantrurd bitr4d biimprcd eqeq1d sylibrd com12 wi iffalse zdcle
+    a1i wdc df-dc mpjaod jaoi ) ACDZBCDZEBAFGZDZABFGZDZHVJVLUAZABIJZBAULZFGZKZA
+    BUBVKVRVMVKVNVLVQVKVLVJLVNVLKABMVLVJUCNVKVPBFVKVOVPBKABOVOBAUDZSPQVMVNVJVQV
+    MVJVLLVNVJKBAMVJVLUENVMVPAFVMVOVPAKZVOUFZVOVMVTVOVMBAKZVTVMWBVOVMWBBAIJZVOE
+    ZVOVMVIVHWBWDUGZBAUHZBAUIZVIBRDARDWEVHBTATBAUJUKUMVMWCVOBAOUNUOUPVOVPBAVSUQ
+    URUSWAVTUTVMVOBAVAVCVMVOVDZVOWAHVMVHVIWHWGWFABVBUMVOVENVFPQVGS $.
+
+  $( Choices for an element of an upper interval of integers.  (Contributed by
+     Jeff Madsen, 2-Sep-2009.) $)
+  uzp1 $p |- ( N e. ( ZZ>= ` M ) -> ( N = M \/ N e. ( ZZ>= ` ( M + 1 ) ) ) ) $=
+    ( cuz cfv wcel wceq c1 cmin co wo caddc uzm1 eluzp1p1 eluzelcn ax-1cn npcan
+    cc sylancl eleq1d syl5ib orim2d mpd ) BACDZEZBAFZBGHIZUCEZJUEBAGKICDZEZJABL
+    UDUGUIUEUGUFGKIZUHEUDUIAUFMUDUJBUHUDBQEGQEUJBFABNOBGPRSTUAUB $.
+
+  $( Nonnegative integers expressed as an upper set of integers.  (Contributed
+     by NM, 2-Sep-2005.) $)
+  nn0uz $p |- NN0 = ( ZZ>= ` 0 ) $=
+    ( vk cn0 cc0 cv cle wbr cz crab cuz nn0zrab wcel wceq 0z uzval ax-mp eqtr4i
+    cfv ) BCADEFAGHZCIQZAJCGKSRLMACNOP $.
+
+  $( Positive integers expressed as an upper set of integers.  (Contributed by
+     NM, 2-Sep-2005.) $)
+  nnuz $p |- NN = ( ZZ>= ` 1 ) $=
+    ( vk cn c1 cv cle wbr cz crab cuz cfv nnzrab wcel wceq uzval ax-mp eqtr4i
+    1z ) BCADEFAGHZCIJZAKCGLSRMQACNOP $.
+
+  $( A positive integer expressed as a member of an upper set of integers.
+     (Contributed by NM, 6-Jun-2006.) $)
+  elnnuz $p |- ( N e. NN <-> N e. ( ZZ>= ` 1 ) ) $=
+    ( cn c1 cuz cfv nnuz eleq2i ) BCDEAFG $.
+
+  $( A nonnegative integer expressed as a member an upper set of integers.
+     (Contributed by NM, 6-Jun-2006.) $)
+  elnn0uz $p |- ( N e. NN0 <-> N e. ( ZZ>= ` 0 ) ) $=
+    ( cn0 cc0 cuz cfv nn0uz eleq2i ) BCDEAFG $.
+
+  $( An integer is greater than or equal to 2 is a positive integer.
+     (Contributed by AV, 3-Nov-2018.) $)
+  eluz2nn $p |- ( A e. ( ZZ>= ` 2 ) -> A e. NN ) $=
+    ( c2 cuz cfv wcel c1 cn cz cle wbr wi 1z 1le2 eluzuzle mp2an nnuz syl6eleqr
+    ) ABCDEZAFCDZGFHEFBIJRASEKLMBFANOPQ $.
+
+  $( If an integer is greater than or equal to 2, then it is a nonnegative
+     integer.  (Contributed by AV, 27-Aug-2018.)  (Proof shortened by AV,
+     3-Nov-2018.) $)
+  eluzge2nn0 $p |- ( N e. ( ZZ>= ` 2 ) -> N e. NN0 ) $=
+    ( c2 cuz cfv wcel eluz2nn nnnn0d ) ABCDEAAFG $.
+
+  $( An integer in the upper set of integers starting at 3 is element of the
+     upper set of integers starting at 2.  (Contributed by Alexander van der
+     Vekens, 17-Sep-2018.) $)
+  uzuzle23 $p |- ( A e. ( ZZ>= ` 3 ) -> A e. ( ZZ>= ` 2 ) ) $=
+    ( c2 cz wcel c3 cle wbr cuz cfv wi 2z 2re 3re 2lt3 ltleii eluzuzle mp2an )
+    BCDBEFGAEHIDABHIDJKBELMNOEBAPQ $.
+
+  $( If an integer is greater than 3, then it is a positive integer.
+     (Contributed by Alexander van der Vekens, 17-Sep-2018.) $)
+  eluzge3nn $p |- ( N e. ( ZZ>= ` 3 ) -> N e. NN ) $=
+    ( c3 cuz cfv wcel c1 cn cz cle wbr wi 1z 1le3 eluzuzle mp2an elnnuz sylibr
+    ) ABCDEZAFCDEZAGEFHEFBIJRSKLMBFANOAPQ $.
+
+  $( An integer greater than or equal to 3 decreased by 2 is a positive
+     integer.  (Contributed by Alexander van der Vekens, 17-Sep-2018.) $)
+  uz3m2nn $p |- ( N e. ( ZZ>= ` 3 ) -> ( N - 2 ) e. NN ) $=
+    ( c3 cuz cfv wcel c2 clt wbr cmin co cn cz cle w3a eluz2 2lt3 cr wa wi a1i
+    2re 3re zre ltletr syl3anc mpani imp 3adant1 sylbi wb 2nn eluzge3nn sylancr
+    nnsub mpbid ) ABCDEZFAGHZAFIJKEZUPBLEZALEZBAMHZNUQBAOUTVAUQUSUTVAUQUTFBGHZV
+    AUQPUTFQEZBQEZAQEVBVARUQSVCUTUATVDUTUBTAUCFBAUDUEUFUGUHUIUPFKEAKEUQURUJUKAU
+    LFAUNUMUO $.
+
+  $( 1 is an integer greater than or equal to 0.  (Contributed by Alexander van
+     der Vekens, 8-Jun-2018.) $)
+  1eluzge0 $p |- 1 e. ( ZZ>= ` 0 ) $=
+    ( c1 cc0 cuz cfv wcel cz cle wbr 0z 1z 0le1 eluz2 mpbir3an ) ABCDEBFEAFEBAG
+    HIJKBALM $.
+
+  $( 2 is an integer greater than or equal to 0.  (Contributed by Alexander van
+     der Vekens, 8-Jun-2018.)  (Proof shortened by OpenAI, 25-Mar-2020.) $)
+  2eluzge0 $p |- 2 e. ( ZZ>= ` 0 ) $=
+    ( c2 cn0 cc0 cuz cfv 2nn0 nn0uz eleqtri ) ABCDEFGH $.
+
+  $( 2 is an integer greater than or equal to 0.  (Contributed by Alexander van
+     der Vekens, 8-Jun-2018.)  Obsolete version of ~ 2eluzge0 as of
+     25-Mar-2020.  (New usage is discouraged.)
+     (Proof modification is discouraged.) $)
+  2eluzge0OLD $p |- 2 e. ( ZZ>= ` 0 ) $=
+    ( c2 cc0 cuz cfv wcel cz cle wbr 0z 2z 0le2 eluz2 mpbir3an ) ABCDEBFEAFEBAG
+    HIJKBALM $.
+
+  $( 2 is an integer greater than or equal to 1.  (Contributed by Alexander van
+     der Vekens, 8-Jun-2018.) $)
+  2eluzge1 $p |- 2 e. ( ZZ>= ` 1 ) $=
+    ( c2 c1 cuz cfv wcel cz cle wbr 1z 2z 1le2 eluz2 mpbir3an ) ABCDEBFEAFEBAGH
+    IJKBALM $.
+
+  $( The upper integers starting from a natural are a subset of the naturals.
+     (Contributed by Scott Fenton, 29-Jun-2013.) $)
+  uznnssnn $p |- ( N e. NN -> ( ZZ>= ` N ) C_ NN ) $=
+    ( cn wcel cuz cfv c1 wss elnnuz uzss sylbi nnuz syl6sseqr ) ABCZADEZFDEZBMA
+    OCNOGAHFAIJKL $.
+
+  ${
+    $d m n M $.
+    $( Restricted universal quantification in an upper set of integers.
+       (Contributed by NM, 9-Sep-2005.) $)
+    raluz $p |- ( M e. ZZ -> ( A. n e. ( ZZ>= ` M ) ph <->
+               A. n e. ZZ ( M <_ n -> ph ) ) ) $=
+      ( cz wcel cv cle wbr wi cuz cfv wa eluz1 imbi1d impexp syl6bb ralbidv2 )
+      CDEZACBFZGHZAIZBCJKZDRSUBEZAISDEZTLZAIUDUAIRUCUEACSMNUDTAOPQ $.
+
+    $( Restricted universal quantification in an upper set of integers.
+       (Contributed by NM, 9-Sep-2005.) $)
+    raluz2 $p |- ( A. n e. ( ZZ>= ` M ) ph <->
+               ( M e. ZZ -> A. n e. ZZ ( M <_ n -> ph ) ) ) $=
+      ( cuz cfv wral cz wcel cv cle wbr wi w3a eluz2 3anass bitri imbi1i impexp
+      wa imbi2i bi2.04 ralbii2 r19.21v ) ABCDEZFCGHZCBIZJKZALZLZBGFUEUHBGFLAUIB
+      UDGUFUDHZALUEUFGHZUGSZSZALZUKUILZUJUMAUJUEUKUGMUMCUFNUEUKUGOPQUNUEUKUHLZL
+      ZUOUNUEULALZLUQUEULARURUPUEUKUGARTPUEUKUHUAPPUBUEUHBGUCP $.
+
+    $( Restricted existential quantification in an upper set of integers.
+       (Contributed by NM, 9-Sep-2005.) $)
+    rexuz $p |- ( M e. ZZ -> ( E. n e. ( ZZ>= ` M ) ph <->
+               E. n e. ZZ ( M <_ n /\ ph ) ) ) $=
+      ( cz wcel cv cle wbr wa cuz cfv eluz1 anbi1d anass syl6bb rexbidv2 ) CDEZ
+      ACBFZGHZAIZBCJKZDQRUAEZAIRDEZSIZAIUCTIQUBUDACRLMUCSANOP $.
+
+    $( Restricted existential quantification in an upper set of integers.
+       (Contributed by NM, 9-Sep-2005.) $)
+    rexuz2 $p |- ( E. n e. ( ZZ>= ` M ) ph <->
+               ( M e. ZZ /\ E. n e. ZZ ( M <_ n /\ ph ) ) ) $=
+      ( cuz cfv wrex cz wcel cv cle wbr wa eluz2 df-3an bitri anbi1i anass an12
+      w3a rexbii2 r19.42v ) ABCDEZFCGHZCBIZJKZALZLZBGFUCUFBGFLAUGBUBGUDUBHZALUC
+      UDGHZLZUELZALZUIUGLZUHUKAUHUCUIUESUKCUDMUCUIUENOPULUJUFLZUMUJUEAQUNUCUIUF
+      LLUMUCUIUFQUCUIUFROOOTUCUFBGUAO $.
+
+    $( Double existential quantification in an upper set of integers.
+       (Contributed by NM, 3-Nov-2005.) $)
+    2rexuz $p |- ( E. m E. n e. ( ZZ>= ` m ) ph <->
+                  E. m e. ZZ E. n e. ZZ ( m <_ n /\ ph ) ) $=
+      ( cv cuz cfv wrex wex cz wcel cle wbr wa rexuz2 exbii df-rex bitr4i ) ACB
+      DZEFGZBHRIJRCDKLAMCIGZMZBHTBIGSUABACRNOTBIPQ $.
+  $}
+
+  $( Second Peano postulate for an upper set of integers.  (Contributed by NM,
+     7-Sep-2005.) $)
+  peano2uz $p |- ( N e. ( ZZ>= ` M ) ->
+                 ( N + 1 ) e. ( ZZ>= ` M ) ) $=
+    ( cz wcel cle wbr w3a c1 caddc co cuz cfv simp1 peano2z 3ad2ant2 zre letrp1
+    cr syl3an2 eluz2 syl3an1 3jca 3imtr4i ) ACDZBCDZABEFZGZUDBHIJZCDZAUHEFZGBAK
+    LZDUHUKDUGUDUIUJUDUEUFMUEUDUIUFBNOUDARDZUEUFUJAPUEULBRDUFUJBPABQSUAUBABTAUH
+    TUC $.
+
+  ${
+    peano2uzs.1 $e |- Z = ( ZZ>= ` M ) $.
+    $( Second Peano postulate for an upper set of integers.  (Contributed by
+       Mario Carneiro, 26-Dec-2013.) $)
+    peano2uzs $p |- ( N e. Z -> ( N + 1 ) e. Z ) $=
+      ( c1 caddc co wcel cuz cfv peano2uz syl6eleqr eleq2s ) BEFGZCHBAIJZCBOHNO
+      CABKDLDM $.
+  $}
+
+  $( Reversed second Peano axiom for upper integers.  (Contributed by NM,
+     2-Jan-2006.) $)
+  peano2uzr $p |- ( ( M e. ZZ /\
+             N e. ( ZZ>= ` ( M + 1 ) ) ) -> N e. ( ZZ>= ` M ) ) $=
+    ( cz wcel c1 caddc co cuz cfv wa cmin wceq cc eluzelcn ax-1cn npcan sylancl
+    adantl eluzp1m1 peano2uz syl eqeltrrd ) ACDZBAEFGZHIDZJZBEKGZEFGZBAHIZUEUHB
+    LZUCUEBMDEMDUJUDBNOBEPQRUFUGUIDUHUIDABSAUGTUAUB $.
+
+  ${
+    $d j K $.  $d j k M $.  $d j k N $.
+    $( Addition closure law for an upper set of integers.  (Contributed by NM,
+       4-Jun-2006.) $)
+    uzaddcl $p |- ( ( N e. ( ZZ>= ` M ) /\ K e. NN0 ) ->
+                   ( N + K ) e. ( ZZ>= ` M ) ) $=
+      ( vj vk cn0 wcel cuz caddc co cv wi cc0 c1 wceq oveq2 eleq1d imbi2d wa cc
+      eluzelcn addid1d ibir ax-1cn addass mp3an3 syl2anr adantr peano2uz adantl
+      cfv nn0cn eqeltrrd exp31 a2d nn0ind impcom ) AFGCBHUKZGZCAIJZURGZUSCDKZIJ
+      ZURGZLUSCMIJZURGZLUSCEKZIJZURGZLUSCVGNIJZIJZURGZLUSVALDEAVBMOZVDVFUSVMVCV
+      EURVBMCIPQRVBVGOZVDVIUSVNVCVHURVBVGCIPQRVBVJOZVDVLUSVOVCVKURVBVJCIPQRVBAO
+      ZVDVAUSVPVCUTURVBACIPQRUSVFUSVECURUSCBCUAZUBQUCVGFGZUSVIVLVRUSVIVLVRUSSZV
+      ISVHNIJZVKURVSVTVKOZVIUSCTGZVGTGZWAVRVQVGULWBWCNTGWAUDCVGNUEUFUGUHVIVTURG
+      VSBVHUIUJUMUNUOUPUQ $.
+  $}
+
+  $( The sum of a nonnegative integer and an integer is an integer greater than
+     or equal to that integer.  (Contributed by Alexander van der Vekens,
+     3-Oct-2018.) $)
+  nn0pzuz $p |- ( ( N e. NN0 /\ Z e. ZZ ) -> ( N + Z ) e. ( ZZ>= ` Z ) ) $=
+    ( cn0 wcel cz wa caddc co cle wbr cuz cfv simpr nn0z zaddcl sylan nn0addge2
+    cr zre ancoms eluz2 syl3anbrc ) ACDZBEDZFUDABGHZEDZBUEIJZUEBKLDUCUDMUCAEDUD
+    UFANABOPUDUCUGUDBRDUCUGBSBAQPTBUEUAUB $.
+
+  ${
+    $d j m N $.  $d j ps $.  $d j ch $.  $d j th $.  $d j ta $.  $d k ph $.
+    $d j k m M $.
+    $( Substitutions. $)
+    uzind4.1 $e |- ( j = M -> ( ph <-> ps ) ) $.
+    uzind4.2 $e |- ( j = k -> ( ph <-> ch ) ) $.
+    uzind4.3 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.
+    uzind4.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind4.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind4.6 $e |- ( k e. ( ZZ>= ` M ) -> ( ch -> th ) ) $.
+    $( Induction on the upper set of integers that starts at an integer
+       ` M ` .  The first four hypotheses give us the substitution instances we
+       need, and the last two are the basis and the induction step.
+       (Contributed by NM, 7-Sep-2005.) $)
+    uzind4 $p |- ( N e. ( ZZ>= ` M ) -> ta ) $=
+      ( vm wcel cz cle wbr cuz cfv cv crab eluzel2 eluzelz breq2 elrab sylanbrc
+      eluzle wa wi w3a eluz2 biimpri 3expb sylan2b syl uzind3 syl2anc ) IHUAUBZ
+      QZHRQZIHPUCZSTZPRUDZQZEHIUEVBIRQHISTZVGHIUFHIUJVEVHPIRVDIHSUGUHUIABCDEFPG
+      HIJKLMNVCGUCZVFQZUKVIVAQZCDULVJVCVIRQZHVISTZUKVKVEVMPVIRVDVIHSUGUHVCVLVMV
+      KVKVCVLVMUMHVIUNUOUPUQOURUSUT $.
+  $}
+
+  ${
+    $d j N $.  $d j ps $.  $d j ch $.  $d j th $.  $d j ta $.  $d k ph $.
+    $d j k M $.
+    $( Basis. $)
+    uzind4ALT.5 $e |- ( M e. ZZ -> ps ) $.
+    $( Induction step. $)
+    uzind4ALT.6 $e |- ( k e. ( ZZ>= ` M ) -> ( ch -> th ) ) $.
+    $( Substitutions. $)
+    uzind4ALT.1 $e |- ( j = M -> ( ph <-> ps ) ) $.
+    uzind4ALT.2 $e |- ( j = k -> ( ph <-> ch ) ) $.
+    uzind4ALT.3 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.
+    uzind4ALT.4 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Induction on the upper set of integers that starts at an integer
+       ` M ` .  The last four hypotheses give us the substitution instances we
+       need; the first two are the basis and the induction step.  Either
+       ~ uzind4 or ~ uzind4ALT may be used; see comment for ~ nnind .
+       (Contributed by NM, 7-Sep-2005.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    uzind4ALT $p |- ( N e. ( ZZ>= ` M ) -> ta ) $=
+      ( uzind4 ) ABCDEFGHILMNOJKP $.
+  $}
+
+  ${
+    $d m k j M $.  $d j N $.  $d j m ph $.
+    $( Basis. $)
+    uzind4s.1 $e |- ( M e. ZZ -> [. M / k ]. ph ) $.
+    $( Induction step. $)
+    uzind4s.2 $e |- ( k e. ( ZZ>= ` M )
+         -> ( ph -> [. ( k + 1 ) / k ]. ph ) ) $.
+    $( Induction on the upper set of integers that starts at an integer ` M ` ,
+       using explicit substitution.  The hypotheses are the basis and the
+       induction step.  (Contributed by NM, 4-Nov-2005.) $)
+    uzind4s $p |- ( N e. ( ZZ>= ` M ) -> [. N / k ]. ph ) $=
+      ( vj vm wsb wsbc cv c1 caddc co dfsbcq2 sbequ wcel wi nfim imbi12d uzind4
+      cuz cfv nfv nfs1v nfsbc1v weq eleq1 sbequ12 oveq1 sbceq1d chvar ) ABGIABC
+      JABHIZABHKZLMNZJZABDJGHCDABGCOAGHBPABGUOOABGDOEBKZCUBUCZQZAABUQLMNZJZRZRU
+      NURQZUMUPRZRBHVCVDBVCBUDUMUPBABHUEABUOUFSSBHUGZUSVCVBVDUQUNURUHVEAUMVAUPA
+      BHUIVEABUTUOUQUNLMUJUKTTFULUA $.
+  $}
+
+  ${
+    $d k m n M $.  $d m N $.  $d k m n ph $.  $d j k m n $.
+    $( Basis. $)
+    uzind4s2.1 $e |- ( M e. ZZ -> [. M / j ]. ph ) $.
+    $( Induction step. $)
+    uzind4s2.2 $e |- ( k e. ( ZZ>= ` M ) ->
+                     ( [. k / j ]. ph -> [. ( k + 1 ) / j ]. ph ) ) $.
+    $( Induction on the upper set of integers that starts at an integer ` M ` ,
+       using explicit substitution.  The hypotheses are the basis and the
+       induction step.  Use this instead of ~ uzind4s when ` j ` and ` k ` must
+       be distinct in ` [. ( k + 1 ) / j ]. ph ` .  (Contributed by NM,
+       16-Nov-2005.) $)
+    uzind4s2 $p |- ( N e. ( ZZ>= ` M ) -> [. N / j ]. ph ) $=
+      ( vm vn cv wsbc c1 caddc co dfsbcq wi cuz cfv weq oveq1 sbceq1d imbi12d
+      vtoclga uzind4 ) ABHJZKABDKABIJZKZABUFLMNZKZABEKHIDEABUEDOABUEUFOABUEUHOA
+      BUEEOFABCJZKZABUJLMNZKZPUGUIPCUFDQRCISZUKUGUMUIABUJUFOUNABULUHUJUFLMTUAUB
+      GUCUD $.
+  $}
+
+  ${
+    $d j m N $.  $d j ps $.  $d j ch $.  $d j th $.  $d j ta $.  $d k ph $.
+    $d j k m M $.
+    $( Lower bound. $)
+    uzind4i.1 $e |- M e. ZZ $.
+    $( Substitutions. $)
+    uzind4i.2 $e |- ( j = M -> ( ph <-> ps ) ) $.
+    uzind4i.3 $e |- ( j = k -> ( ph <-> ch ) ) $.
+    uzind4i.4 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.
+    uzind4i.5 $e |- ( j = N -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    uzind4i.6 $e |- ps $.
+    $( Induction step. $)
+    uzind4i.7 $e |- ( k e. ( ZZ>= ` M ) -> ( ch -> th ) ) $.
+    $( Induction on the upper integers that start at ` M ` .  The first
+       hypothesis specifies the lower bound, the next four give us the
+       substitution instances we need, and the last two are the basis and the
+       induction step.  (Contributed by NM, 4-Sep-2005.) $)
+    uzind4i $p |- ( N e. ( ZZ>= ` M ) -> ta ) $=
+      ( cz wcel a1i uzind4 ) ABCDEFGHIKLMNBHQROSPT $.
+  $}
+
+  ${
+    $d x y z $.  $d y w ph $.  $d x w z ps $.
+    $( Substitutions. $)
+    indstr.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Induction step. $)
+    indstr.2 $e |- ( x e. NN -> ( A. y e. NN ( y < x -> ps ) -> ph ) ) $.
+    $( Strong Mathematical Induction for positive integers (inference schema).
+       (Contributed by NM, 17-Aug-2001.) $)
+    indstr $p |- ( x e. NN -> ph ) $=
+      ( vz vw vu cv cn wcel clt wbr wi wral c1 breq2 imbi1d ralbidv co wceq weq
+      caddc nnnlt1 pm2.21d rgen wex wb 1nn elex2 nfra1 r19.3rm mp2b wa wo com12
+      rsp adantl wsbc nfv nfsbc1v nfim sbceq1a imbi12d cbvral mpbi rspec dfsbcq
+      vex sbcie syl5bbr biimprcd syl6 adantr jcad jaob syl6ibr cle nnleltp1 nnz
+      cz zleloe syl2an bitr3d ancoms sylibrd ralimdva syl5bi nnind mpd ) CJZKLD
+      JZWLMNZBOZDKPZAWMGJZMNZBOZDKPWMQMNZBOZDKPWMHJZMNZBOZDKPZWMXBQUDUAZMNZBOZD
+      KPZWPGHWLWQQUBZWSXADKXJWRWTBWQQWMMRSTGHUCZWSXDDKXKWRXCBWQXBWMMRSTWQXFUBZW
+      SXHDKXLWRXGBWQXFWMMRSTGCUCZWSWODKXMWRWNBWQWLWMMRSTXADKWMKLZWTBWMUEUFUGXEX
+      EDKPZXBKLZXIQKLIJKLIUHXEXOUIUJIQKUKXEDIKXDDKULUMUNXPXEXHDKXPXNUOZXEXCDHUC
+      ZUPZBOZXHXQXEXDXRBOZUOXTXQXEXDYAXNXEXDOXPXEXNXDXDDKURUQUSXPXEYAOXNXPXEACX
+      BUTZYAXEYBOZHKWPAOZCKPYCHKPYDCKFUGYDYCCHKYDHVAXEYBCXECVAACXBVBVCCHUCZWPXE
+      AYBYEWOXDDKYEWNXCBWLXBWMMRSTACXBVDVEVFVGVHXRBYBBACWMUTXRYBABCWMDVJEVKACWM
+      XBVIVLVMVNVOVPXCBXRVQVRXQXGXSBXNXPXGXSUIXNXPUOWMXBVSNZXGXSWMXBVTXNWMWBLXB
+      WBLYFXSUIXPWMWAXBWAWMXBWCWDWEWFSWGWHWIWJFWK $.
+  $}
+
+  $( Membership in a nonnegative upper set of integers implies membership in
+     ` NN0 ` .  (Contributed by Paul Chapman, 22-Jun-2011.) $)
+  eluznn0 $p |- ( ( N e. NN0 /\ M e. ( ZZ>= ` N ) ) -> M e. NN0 ) $=
+    ( cc0 cn0 nn0uz uztrn2 ) CABDEF $.
+
+  $( Membership in a positive upper set of integers implies membership in
+     ` NN ` .  (Contributed by JJ, 1-Oct-2018.) $)
+  eluznn $p |- ( ( N e. NN /\ M e. ( ZZ>= ` N ) ) -> M e. NN ) $=
+    ( c1 cn nnuz uztrn2 ) CABDEF $.
+
+  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
+     Paul Chapman, 23-Nov-2012.) $)
+  eluz2b1 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. ZZ /\ 1 < N ) ) $=
+    ( c2 cuz cfv wcel cz cle wbr wa c1 clt 2z eluz1i caddc co zltp1le mpan df-2
+    wb 1z breq1i syl6bbr pm5.32i bitr4i ) ABCDEAFEZBAGHZIUEJAKHZIBALMUEUGUFUEUG
+    JJNOZAGHZUFJFEUEUGUISTJAPQBUHAGRUAUBUCUD $.
+
+  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
+     Paul Chapman, 23-Nov-2012.) $)
+  eluz2b2 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. NN /\ 1 < N ) ) $=
+    ( c2 cuz cfv wcel cz c1 clt wbr wa cn eluz2b1 cle cr 1re zre ltle imdistani
+    wi sylancr elnnz1 sylibr simpr jca nnz anim1i impbii bitri ) ABCDEAFEZGAHIZ
+    JZAKEZUJJZALUKUMUKULUJUKUIGAMIZJULUIUJUNUIGNEANEUJUNSOAPGAQTRAUAUBUIUJUCUDU
+    LUIUJAUEUFUGUH $.
+
+  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
+     Paul Chapman, 23-Nov-2012.) $)
+  eluz2b3 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. NN /\ N =/= 1 ) ) $=
+    ( c2 cuz cfv wcel cn c1 clt wbr wa wne eluz2b2 nngt1ne1 pm5.32i bitri ) ABC
+    DEAFEZGAHIZJPAGKZJALPQRAMNO $.
+
+  $( One less than an integer greater than or equal to 2 is a positive
+     integer.  (Contributed by Paul Chapman, 17-Nov-2012.) $)
+  uz2m1nn $p |- ( N e. ( ZZ>= ` 2 ) -> ( N - 1 ) e. NN ) $=
+    ( c2 cuz cfv wcel cz c1 clt wbr wa cmin co cn eluz2b1 wb znnsub mpan biimpa
+    1z sylbi ) ABCDEAFEZGAHIZJAGKLMEZANUAUBUCGFEUAUBUCOSGAPQRT $.
+
+  $( 1 is not in ` ( ZZ>= `` 2 ) ` .  (Contributed by Paul Chapman,
+     21-Nov-2012.) $)
+  1nuz2 $p |- -. 1 e. ( ZZ>= ` 2 ) $=
+    ( c1 c2 cuz cfv wcel wne neirr cn eluz2b3 simprbi mto ) ABCDEZAAFZAGLAHEMAI
+    JK $.
+
+  $( A positive integer is either 1 or greater than or equal to 2.
+     (Contributed by Paul Chapman, 17-Nov-2012.) $)
+  elnn1uz2 $p |- ( N e. NN <-> ( N = 1 \/ N e. ( ZZ>= ` 2 ) ) ) $=
+    ( cn wcel c1 wceq c2 cuz cfv wo wne wa olc cz nnz wn 1z zdceq orbi2i sylibr
+    wdc mpan2 df-dc sylib df-ne syl ordi sylanbrc eluz2b3 1nn eleq1 mpbiri jaoi
+    eluz2nn impbii ) ABCZADEZAFGHCZIZUOUPUOADJZKZIZURUOUPUOIUPUSIZVAUOUPLUOAMCZ
+    VBANVCUPUPOZIZVBVCUPTZVEVCDMCVFPADQUAUPUBUCUSVDUPADUDRSUEUPUOUSUFUGUQUTUPAU
+    HRSUPUOUQUPUODBCUIADBUJUKAUMULUN $.
+
+  $( Closure of multiplication of integers greater than or equal to 2.
+     (Contributed by Paul Chapman, 26-Oct-2012.) $)
+  uz2mulcl $p |- ( ( M e. ( ZZ>= ` 2 ) /\ N e. ( ZZ>= ` 2 ) ) ->
+                   ( M x. N ) e. ( ZZ>= ` 2 ) ) $=
+    ( c2 cuz cfv wcel wa cmul co cz c1 clt wbr eluzelz syl2an cr eluz2b1 anim1i
+    zre sylbi zmulcl mulgt1 an4s sylanbrc ) ACDEZFZBUEFZGABHIZJFZKUHLMZUHUEFUFA
+    JFZBJFZUIUGCANCBNABUAOUFAPFZKALMZGZBPFZKBLMZGZUJUGUFUKUNGUOAQUKUMUNASRTUGUL
+    UQGURBQULUPUQBSRTUMUPUNUQUJABUBUCOUHQUD $.
+
+  ${
+    $d ph y $.  $d ps x $.  $d x y $.
+    indstr2.1 $e |- ( x = 1 -> ( ph <-> ch ) ) $.
+    indstr2.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    indstr2.3 $e |- ch $.
+    indstr2.4 $e |- ( x e. ( ZZ>= ` 2 ) ->
+                      ( A. y e. NN ( y < x -> ps ) -> ph ) ) $.
+    $( Strong Mathematical Induction for positive integers (inference schema).
+       The first two hypotheses give us the substitution instances we need; the
+       last two are the basis and the induction step.  (Contributed by Paul
+       Chapman, 21-Nov-2012.) $)
+    indstr2 $p |- ( x e. NN -> ph ) $=
+      ( cv cn wcel c1 wceq c2 cuz clt wbr wi wb cfv wral elnn1uz2 nnnlt1 adantl
+      wo wa wn breq2 adantr mtbird pm2.21d ralrimiva pm5.5 syl bitrd jaoi sylbi
+      mpbiri indstr ) ABDEGDJZKLVAMNZVAOPUALZUFEJZVAQRZBSZEKUBZASZVAUCVBVHVCVBV
+      HCHVBVHACVBVGVHATVBVFEKVBVDKLZUGZVEBVJVEVDMQRZVIVKUHVBVDUDUEVBVEVKTVIVAMV
+      DQUIUJUKULUMVGAUNUOFUPUSIUQURUT $.
+  $}
+
+  ${
+    $d A a b x y z $.
+    $( The image under negation of a bounded-above set of reals is bounded
+       below.  (Contributed by Paul Chapman, 21-Mar-2011.) $)
+    ublbneg $p |- ( E. x e. RR A. y e. A y <_ x ->
+                    E. x e. RR A. y e. { z e. RR | -u z e. A } x <_ y ) $=
+      ( vb va cv cle wbr wral cr wrex cneg wcel crab breq1 cbvralv wceq ralbidv
+      rexbii breq2 cbvrexv bitri renegcl wa wi elrabi negeq eleq1d elrab3 mpcom
+      biimpd rspcv adantl wb lenegcon1 sylan2 sylibrd ralrimdva rspcev rexlimiv
+      syl syl6an sylbir ) BGZAGZHIZBDJZAKLZEGZFGZHIZEDJZFKLZVFVEHIZBCGZMZDNZCKO
+      ZJZAKLZVNVEVKHIZBDJZFKLVIVMWCFKVLWBEBDVJVEVKHPQTWCVHFAKVKVFRWBVGBDVKVFVEH
+      UASUBUCVMWAFKVKKNZVKMZKNVMWEVEHIZBVSJZWAVKUDWDVMWFBVSWDVEVSNZUEVMVEMZVKHI
+      ZWFWHVMWJUFZWDWHWIDNZWKVEKNZWHWLVRCVEKUGZWMWHWLVRWLCVEKVPVERVQWIDVPVEUHUI
+      UJULUKVLWJEWIDVJWIVKHPUMVBUNWHWDWMWFWJUOWNVKVEUPUQURUSVTWGAWEKVFWERVOWFBV
+      SVFWEVEHPSUTVCVAVD $.
+  $}
+
+  ${
+    $d A w z $.
+    $( Two ways to express the image under negation of a set of integers.
+       (Contributed by Paul Chapman, 21-Mar-2011.) $)
+    eqreznegel $p |- ( A C_ ZZ ->
+                       { z e. RR | -u z e. A } = { z e. ZZ | -u z e. A } ) $=
+      ( vw cz wss cv cneg wcel cr crab wa wi ssel cc recn caddc cc0 negid elrab
+      co 0z syl6eqel pm4.71i zrevaddcl syl5bb syl5ib syl6 com23 impd simpr jcad
+      a1i zre anim1i impbid1 weq negeq eleq1d 3bitr4g eqrdv ) BDEZCAFZGZBHZAIJZ
+      VDADJZVACFZIHZVGGZBHZKZVGDHZVJKZVGVEHVGVFHVAVKVMVAVKVLVJVAVHVJVLVAVJVHVLV
+      AVJVIDHZVHVLLBDVIMVHVGNHZVNVLVGOVOVOVGVIPTZDHZKVNVLVOVQVOVPQDVGRUAUBUCVGV
+      IUDUEUFUGUHUIVKVJLVAVHVJUJULUKVLVHVJVGUMUNUOVDVJAVGIACUPVCVIBVBVGUQURZSVD
+      VJAVGDVRSUSUT $.
+  $}
+
+  ${
+    $d A w x y z $.
+    $( The image under negation of an inhabited set of reals is inhabited.
+       (Contributed by Jim Kingdon, 10-Apr-2020.) $)
+    negm $p |- ( ( A C_ RR /\ E. x x e. A ) ->
+        E. y y e. { z e. RR | -u z e. A } ) $=
+      ( cr wss cv wcel wex cneg crab ssel renegcl wceq negeq eleq1d elrab3 recn
+      wb syl negnegd bitrd biimprd syli elex2 syl6 exlimdv imp ) DEFZAGZDHZAIBG
+      CGZJZDHZCEKZHBIZUIUKUPAUIUKUJJZUOHZUPUKUIUJEHZURDEUJLUSURUKUSURUQJZDHZUKU
+      SUQEHURVASUJMUNVACUQEULUQNUMUTDULUQOPQTUSUTUJDUSUJUJRUAPUBUCUDBUQUOUEUFUG
+      UH $.
+  $}
+
+  $( A (nonnegative) integer between 1 and 3 must be 1, 2 or 3.  (Contributed
+     by Alexander van der Vekens, 13-Sep-2018.) $)
+  nn01to3 $p |- ( ( N e. NN0 /\ 1 <_ N /\ N <_ 3 )
+      -> ( N = 1 \/ N = 2 \/ N = 3 ) ) $=
+    ( cn0 wcel c1 cle wbr c3 c2 clt w3o wo wb cz zleloe sylancr syl mpbid caddc
+    wceq co w3a simp2 simp1 1z nn0z 1nn0 nn0ltp1le mpan breq1i syl6bbr 2z bitrd
+    orbi1d orcomd orcom orbi2i sylib 3orass sylibr wi 3mix1 eqcoms a1i 3mix2 wa
+    df-2 simp3 biantrurd 2nn0 cr nn0red 3re letri3 sylancl 3bitr4d 3mix3 syl6bi
+    df-3 3jaod mpd ) ABCZDAEFZAGEFZUAZDASZHASZHAIFZJZADSZAHSZAGSZJZWDWEWFWGKZKZ
+    WHWDWEWGWFKZKWNWDWOWEWDDAIFZWEKZWOWEKZWDWBWQWAWBWCUBWDWAWBWQLZWAWBWCUCZWADM
+    CAMCZWSUDAUEZDANOPQWDWAWQWRLWTWAWPWOWEWAWPHAEFZWOWAWPDDRTZAEFZXCDBCWAWPXELU
+    FDAUGUHHXDAEVFUIUJWAHMCXAXCWOLUKXBHANOULUMPQUNWOWMWEWGWFUOUPUQWEWFWGURUSWDW
+    EWLWFWGWEWLUTWDWLADWIWJWKVAVBVCWFWLUTWDWLAHWJWIWKVDVBVCWDWGWKWLWDGAEFZWCXFV
+    EZWGWKWDWCXFWAWBWCVGVHWDWAWGXFLWTWAWGHDRTZAEFZXFHBCWAWGXILVIHAUGUHGXHAEVRUI
+    UJPWDAVJCGVJCWKXGLWDAWTVKVLAGVMVNVOWKWIWJVPVQVSVT $.
+
+  $( Alternate proof of ~ nn0ge2m1nn :  If a nonnegative integer is greater
+     than or equal to two, the integer decreased by 1 is a positive integer.
+     This version is proved using ~ eluz2 , a theorem for upper sets of
+     integers, which are defined later than the positive and nonnegative
+     integers.  This proof is, however, much shorter than the proof of
+     ~ nn0ge2m1nn .  (Contributed by Alexander van der Vekens, 1-Aug-2018.)
+     (New usage is discouraged.)  (Proof modification is discouraged.) $)
+  nn0ge2m1nnALT $p |- ( ( N e. NN0 /\ 2 <_ N ) -> ( N - 1 ) e. NN ) $=
+    ( cn0 wcel c2 cle wbr wa cuz cfv c1 cmin co cn cz 2z a1i adantr simpr eluz2
+    nn0z syl3anbrc uz2m1nn syl ) ABCZDAEFZGZADHICZAJKLMCUFDNCZANCZUEUGUHUFOPUDU
+    IUEATQUDUERDASUAAUBUC $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -78126,12 +78898,40 @@ $)
     ixxex $p |- O e. _V $=
       ( cxr cxp cpw xrex xpex pwex wf wss ixxf fssxp ax-mp ssexi ) FHHIZHJZIZTU
       AHHKKLHKMLTUAFNFUBOABCDEFGPTUAFQRS $.
+  $}
 
-    $( The set of intervals of extended reals maps to subsets of extended
-       reals.  (Contributed by Jim Kingdon, 28-Mar-2020.) $)
-    ixxssxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A O B ) C_ RR* ) $=
-      ( cxr wcel wa co cpw ixxf fovcl elpwid ) DJKEJKLDEHMJDEJNJJHABCFGHIOPQ $.
+  ${
+    $d x y z R $.  $d x y z S $.  $d x y z A $.  $d x y z B $.  $d x y z C $.
+    ixxssxr.1 $e |- O = ( x e. RR* , y e. RR* |->
+                   { z e. RR* | ( x R z /\ z S y ) } ) $.
+    ${
+      $d x y z O $.
+      $( The set of intervals of extended reals maps to subsets of extended
+         reals.  (Contributed by Mario Carneiro, 4-Jul-2014.) $)
+      ixxssxr $p |- ( A O B ) C_ RR* $=
+        ( co cxr wcel wa cv wbr crab elmpt2cl cpw ixxf fovcl elpwid sseld mpcom
+        ssriv ) ADEHJZKDKLEKLMZANZUELUGKLABKKUGCNZFOUHBNGOMCKPDEHUGIQUFUEKUGUFU
+        EKDEKRKKHABCFGHISTUAUBUCUD $.
+    $}
 
+    $( Membership in a set of open intervals of extended reals.  We use the
+       fact that an operation's value is empty outside of its domain to show
+       ` A e. RR* ` and ` B e. RR* ` .  (Contributed by Mario Carneiro,
+       3-Nov-2013.) $)
+    elixx3g $p |- ( C e. ( A O B ) <->
+          ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\ ( A R C /\ C S B ) ) ) $=
+      ( cxr wcel wa wbr w3a co anass df-3an anbi1i cv crab elixx1 3anass syl6bb
+      elmpt2cl biadan2 3bitr4ri ) DKLZEKLZMZFKLZMZDFGNZFEHNZMZMUJUKUOMZMUHUIUKO
+      ZUOMFDEIPLZUJUKUOQUQULUOUHUIUKRSURUJUPABKKATCTZGNUSBTHNMCKUADEIFJUEUJURUK
+      UMUNOUPABCDEFGHIJUBUKUMUNUCUDUFUG $.
+  $}
+
+  ${
+    $d b w x y z A $.  $d w x y z C $.  $d w x y z D $.  $d b w x O $.
+    $d w Q $.  $d b w x y z B $.  $d b w P $.  $d x y z R $.  $d x y z S $.
+    $d x y z T $.  $d x y z U $.  $d w V $.  $d w W $.  $d w X $.
+    ixxssixx.1 $e |- O = ( x e. RR* , y e. RR* |->
+                   { z e. RR* | ( x R z /\ z S y ) } ) $.
     ${
       ixx.2 $e |- P = ( x e. RR* , y e. RR* |->
                        { z e. RR* | ( x T z /\ z U y ) } ) $.
@@ -78171,16 +78971,17 @@ $)
       ixxss1.3 $e |- ( ( A e. RR* /\ B e. RR* /\ w e. RR* ) ->
                        ( ( A W B /\ B T w ) -> A R w ) ) $.
       $( Subset relationship for intervals of extended reals.  (Contributed by
-         Jim Kingdon, 29-Mar-2020.) $)
-      ixxss1g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ A W B ) ) ->
+         Mario Carneiro, 3-Nov-2013.)  (Revised by Mario Carneiro,
+         28-Apr-2015.) $)
+      ixxss1 $p |- ( ( A e. RR* /\ A W B ) ->
                    ( B P C ) C_ ( A O C ) ) $=
-        ( cxr wcel wa wbr co cv w3a simpr simpllr simplrl elixx1 syl2anc simp1d
-        wb mpbid simplrr simp2d wi simplll syl3anc mp2and simp3d mpbir3and ex
-        ssrdv ) EQRZFQRZSZGQRZEFMTZSZSZDFGHUAZEGLUAZVHDUBZVIRZVKVJRZVHVLSZVMVKQ
-        RZEVKITZVKGJTZVNVOFVKKTZVQVNVLVOVRVQUCZVHVLUDVNVCVEVLVSUJVBVCVGVLUEZVDV
-        EVFVLUFZABCFGVKKJHOUGUHUKZUIZVNVFVRVPVDVEVFVLULVNVOVRVQWBUMVNVBVCVOVFVR
-        SVPUNVBVCVGVLUOZVTWCPUPUQVNVOVRVQWBURVNVBVEVMVOVPVQUCUJWDWAABCEGVKIJLNU
-        GUHUSUTVA $.
+        ( cxr wcel wbr wa co cv w3a elixx3g simplbi adantl simp3d simplr simpld
+        simprbi wi simpll simp1d syl3anc mp2and simprd wb simp2d elixx1 syl2anc
+        mpbir3and ex ssrdv ) EQRZEFMSZTZDFGHUAZEGLUAZVFDUBZVGRZVIVHRZVFVJTZVKVI
+        QRZEVIISZVIGJSZVLFQRZGQRZVMVJVPVQVMUCZVFVJVRFVIKSZVOTZABCFGVIKJHOUDZUEU
+        FZUGZVLVEVSVNVDVEVJUHVLVSVOVJVTVFVJVRVTWAUJUFZUIVLVDVPVMVEVSTVNUKVDVEVJ
+        ULZVLVPVQVMWBUMWCPUNUOVLVSVOWDUPVLVDVQVKVMVNVOUCUQWEVLVPVQVMWBURABCEGVI
+        IJLNUSUTVAVBVC $.
     $}
 
     ${
@@ -78189,16 +78990,17 @@ $)
       ixxss2.3 $e |- ( ( w e. RR* /\ B e. RR* /\ C e. RR* ) ->
                        ( ( w T B /\ B W C ) -> w S C ) ) $.
       $( Subset relationship for intervals of extended reals.  (Contributed by
-         Jim Kingdon, 29-Mar-2020.) $)
-      ixxss2g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ B W C ) ) ->
+         Mario Carneiro, 3-Nov-2013.)  (Revised by Mario Carneiro,
+         28-Apr-2015.) $)
+      ixxss2 $p |- ( ( C e. RR* /\ B W C ) ->
                    ( A P B ) C_ ( A O C ) ) $=
-        ( cxr wcel wa wbr co cv w3a simpr simplll simpllr elixx1 syl2anc simp1d
-        wb mpbid simp2d simp3d simplrr wi simplrl syl3anc mp2and mpbir3and ex
-        ssrdv ) EQRZFQRZSZGQRZFGMTZSZSZDEFHUAZEGLUAZVHDUBZVIRZVKVJRZVHVLSZVMVKQ
-        RZEVKITZVKGJTZVNVOVPVKFKTZVNVLVOVPVRUCZVHVLUDVNVBVCVLVSUJVBVCVGVLUEZVBV
-        CVGVLUFZABCEFVKIKHOUGUHUKZUIZVNVOVPVRWBULVNVRVFVQVNVOVPVRWBUMVDVEVFVLUN
-        VNVOVCVEVRVFSVQUOWCWAVDVEVFVLUPZPUQURVNVBVEVMVOVPVQUCUJVTWDABCEGVKIJLNU
-        GUHUSUTVA $.
+        ( cxr wcel wbr wa co cv w3a elixx3g simplbi adantl simp3d simpld simprd
+        simprbi simplr wi simp2d simpll syl3anc mp2and wb simp1d elixx1 syl2anc
+        mpbir3and ex ssrdv ) GQRZFGMSZTZDEFHUAZEGLUAZVFDUBZVGRZVIVHRZVFVJTZVKVI
+        QRZEVIISZVIGJSZVLEQRZFQRZVMVJVPVQVMUCZVFVJVRVNVIFKSZTZABCEFVIIKHOUDZUEU
+        FZUGZVLVNVSVJVTVFVJVRVTWAUJUFZUHVLVSVEVOVLVNVSWDUIVDVEVJUKVLVMVQVDVSVET
+        VOULWCVLVPVQVMWBUMVDVEVJUNZPUOUPVLVPVDVKVMVNVOUCUQVLVPVQVMWBURWEABCEGVI
+        IJLNUSUTVAVBVC $.
     $}
 
     ${
@@ -78209,18 +79011,18 @@ $)
       ixxss12.4 $e |- ( ( w e. RR* /\ D e. RR* /\ B e. RR* ) ->
                         ( ( w U D /\ D X B ) -> w S B ) ) $.
       $( Subset relationship for intervals of extended reals.  (Contributed by
-         Jim Kingdon, 29-Mar-2020.) $)
-      ixxss12g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
-          ( C e. RR* /\ D e. RR* ) /\ ( A W C /\ D X B ) ) ->
-          ( C P D ) C_ ( A O B ) ) $=
-        ( cxr wcel wa wbr w3a co cv simpr simpl2l simpl2r elixx1 syl2anc simp1d
-        wb mpbid simpl3l simp2d simpl1l syl3anc mp2and simp3d simpl3r mpbir3and
-        wi simpl1r ex ssrdv ) EUAUBZFUAUBZUCZGUAUBZHUAUBZUCZEGOUDZHFPUDZUCZUEZD
-        GHIUFZEFNUFZVQDUGZVRUBZVTVSUBZVQWAUCZWBVTUAUBZEVTJUDZVTFKUDZWCWDGVTLUDZ
-        VTHMUDZWCWAWDWGWHUEZVQWAUHWCVKVLWAWIUNVKVLVJVPWAUIZVKVLVJVPWAUJZABCGHVT
-        LMIRUKULUOZUMZWCVNWGWEVNVOVJVMWAUPWCWDWGWHWLUQWCVHVKWDVNWGUCWEVDVHVIVMV
-        PWAURZWJWMSUSUTWCWHVOWFWCWDWGWHWLVAVNVOVJVMWAVBWCWDVLVIWHVOUCWFVDWMWKVH
-        VIVMVPWAVEZTUSUTWCVHVIWBWDWEWFUEUNWNWOABCEFVTJKNQUKULVCVFVG $.
+         Mario Carneiro, 20-Feb-2015.)  (Revised by Mario Carneiro,
+         28-Apr-2015.) $)
+      ixxss12 $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( A W C /\ D X B ) ) ->
+        ( C P D ) C_ ( A O B ) ) $=
+        ( cxr wa wbr co cv elixx3g simplbi adantl simp3d simplrl simprbi simpld
+        wcel w3a wi simplll simp1d syl3anc mp2and simprd simplrr simp2d simpllr
+        wb elixx1 ad2antrr mpbir3and ex ssrdv ) EUAUMZFUAUMZUBZEGOUCZHFPUCZUBZU
+        BZDGHIUDZEFNUDZVPDUEZVQUMZVSVRUMZVPVTUBZWAVSUAUMZEVSJUCZVSFKUCZWBGUAUMZ
+        HUAUMZWCVTWFWGWCUNZVPVTWHGVSLUCZVSHMUCZUBZABCGHVSLMIRUFZUGUHZUIZWBVMWIW
+        DVLVMVNVTUJWBWIWJVTWKVPVTWHWKWLUKUHZULWBVJWFWCVMWIUBWDUOVJVKVOVTUPWBWFW
+        GWCWMUQWNSURUSWBWJVNWEWBWIWJWOUTVLVMVNVTVAWBWCWGVKWJVNUBWEUOWNWBWFWGWCW
+        MVBVJVKVOVTVCTURUSVLWAWCWDWEUNVDVOVTABCEFVSJKNQVEVFVGVHVI $.
     $}
   $}
 
@@ -78244,19 +79046,25 @@ $)
       wbr wn ralrimiva rabeq0 sylibr eqtrd ) ACDZAAEFZABGZHQUEAHQIZBCJZKUCUDUGL
       BAAMNUCUFRZBCOUGKLUCUHBCAUEPSUFBCTUAUB $.
 
+    $( Membership in a set of open intervals of extended reals.  We use the
+       fact that an operation's value is empty outside of its domain to show
+       ` A e. RR* ` and ` B e. RR* ` .  (Contributed by NM, 24-Dec-2006.)
+       (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    elioo3g $p |- ( C e. ( A (,) B ) <->
+          ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\ ( A < C /\ C < B ) ) ) $=
+      ( vx vy vz clt cioo df-ioo elixx3g ) DEFABCGGHDEFIJ $.
+
     $( Membership in an open interval of extended reals.  (Contributed by NM,
        24-Dec-2006.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
     elioo1 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( C e. ( A (,) B ) <->
                  ( C e. RR* /\ A < C /\ C < B ) ) ) $=
       ( vx vy vz clt cioo df-ioo elixx1 ) DEFABCGGHDEFIJ $.
 
-    $( A member of an open interval of reals is a real.  (Contributed by Jim
-       Kingdon, 30-Mar-2020.) $)
-    eliooreg $p |- ( ( B e. RR* /\ C e. RR* /\ A e. ( B (,) C ) ) ->
-        A e. RR ) $=
-      ( cxr wcel cioo co w3a clt wbr cr simp1 elioo1 simp1d simp2 simp2d simp3d
-      biimp3a xrre2 syl32anc ) BDEZCDEZABCFGEZHZUAADEZUBBAIJZACIJZAKEUAUBUCLUDU
-      EUFUGUAUBUCUEUFUGHBCAMRZNUAUBUCOUDUEUFUGUHPUDUEUFUGUHQBACST $.
+    $( A member of an open interval of reals is a real.  (Contributed by NM,
+       17-Aug-2008.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
+    elioore $p |- ( A e. ( B (,) C ) -> A e. RR ) $=
+      ( cioo co wcel cxr w3a clt wbr wa cr elioo3g 3ancomb xrre2 sylanb sylbi )
+      ABCDEFBGFZCGFZAGFZHZBAIJACIJKZKALFZBCAMUARTSHUBUCRSTNBACOPQ $.
 
     $( An open interval does not contain its left endpoint.  (Contributed by
        Jim Kingdon, 30-Mar-2020.) $)
@@ -78275,24 +79083,24 @@ $)
     iooval2 $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,) B ) =
                  { x e. RR | ( A < x /\ x < B ) } ) $=
       ( cxr wcel wa cioo co cv clt wbr crab cr iooval cin inrab2 ressxr sseqin2
-      wceq wss mpbi rabeq ax-mp eqtri eliooreg ssrdv eqsstr3d df-ss sylib eqtrd
-      3expia syl5reqr ) BDEZCDEZFZBCGHZBAIZJKUQCJKFZADLZURAMLZABCNZUOUTUSMOZUSV
-      BURADMOZLZUTURADMPVCMSZVDUTSMDTVEQMDRUAURAVCMUBUCUDUOUSMTVBUSSUOUSUPMVAUO
-      AUPMUMUNUQUPEUQMEUQBCUEUKUFUGUSMUHUIULUJ $.
+      wceq wss mpbi rabeq ax-mp eqtri elioore ssriv syl6eqssr df-ss sylib eqtrd
+      syl5reqr ) BDECDEFZBCGHZBAIZJKUNCJKFZADLZUOAMLZABCNZULUQUPMOZUPUSUOADMOZL
+      ZUQUOADMPUTMSZVAUQSMDTVBQMDRUAUOAUTMUBUCUDULUPMTUSUPSULUPUMMURAUMMUNBCUEU
+      FUGUPMUHUIUKUJ $.
 
     $( Subset relationship for open intervals of extended reals.  (Contributed
-       by Jim Kingdon, 30-Mar-2020.) $)
-    iooss1g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ A <_ B ) ) ->
-        ( B (,) C ) C_ ( A (,) C ) ) $=
-      ( vx vy vz vw cioo clt cle df-ioo cv xrlelttr ixxss1g ) DEFGABCHIIIHJDEFK
-      ZOABGLMN $.
+       by NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 20-Feb-2015.) $)
+    iooss1 $p |- ( ( A e. RR* /\ A <_ B ) ->
+                 ( B (,) C ) C_ ( A (,) C ) ) $=
+      ( vx vy vz vw cioo clt cle df-ioo cv xrlelttr ixxss1 ) DEFGABCHIIIHJDEFKZ
+      OABGLMN $.
 
     $( Subset relationship for open intervals of extended reals.  (Contributed
        by NM, 7-Feb-2007.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
-    iooss2g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ B <_ C ) ) ->
+    iooss2 $p |- ( ( C e. RR* /\ B <_ C ) ->
                  ( A (,) B ) C_ ( A (,) C ) ) $=
-      ( vx vy vz vw cioo clt cle df-ioo cv xrltletr ixxss2g ) DEFGABCHIIIHJDEFK
-      ZOGLBCMN $.
+      ( vx vy vz vw cioo clt cle df-ioo cv xrltletr ixxss2 ) DEFGABCHIIIHJDEFKZ
+      OGLBCMN $.
 
     $( Value of the open-below, closed-above interval function.  (Contributed
        by NM, 24-Dec-2006.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
@@ -78363,6 +79171,21 @@ $)
       AUPVBVGOCABUFUGVHUSLCDUHVAUSCDUIUSCDUJUKULUM $.
   $}
 
+  ${
+    $d x y z $.
+    $( An inhabited open interval spans an interval of extended reals.
+       (Contributed by NM, 17-Aug-2008.) $)
+    eliooxr $p |- ( A e. ( B (,) C ) -> ( B e. RR* /\ C e. RR* ) ) $=
+      ( vx vy vz cxr cv clt wbr wa crab cioo df-ioo elmpt2cl ) DEGGDHFHZIJPEHIJ
+      KFGLBCMADEFNO $.
+  $}
+
+  $( Ordering implied by a member of an open interval of reals.  (Contributed
+     by NM, 17-Aug-2008.)  (Revised by Mario Carneiro, 9-May-2014.) $)
+  eliooord $p |- ( A e. ( B (,) C ) -> ( B < A /\ A < C ) ) $=
+    ( cioo co wcel cr clt wbr w3a wa cxr wb eliooxr elioo2 syl ibi 3simpc ) ABC
+    DEFZAGFZBAHIZACHIZJZUAUBKSUCSBLFCLFKSUCMABCNBCAOPQTUAUBRP $.
+
   $( The upper bound belongs to an open-below, closed-above interval.  See
      ~ ubicc2 .  (Contributed by FL, 29-May-2014.) $)
   ubioc1 $p |- ( ( A e. RR* /\ B e. RR* /\ A < B ) -> B e. ( A (,] B ) ) $=
@@ -78399,13 +79222,21 @@ $)
     cioo ) ADEZBDEZCDEZFCABRGEZUAACHIZCBHIZFZUCUDJZSTUBUEKUAABCLMUASUFUEKTUEUAU
     FUAUCUDNOPQ $.
 
+  $( Membership in an open interval of extended reals.  (Contributed by NM,
+     8-Jun-2007.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
+  elioo4g $p |- ( C e. ( A (,) B ) <->
+        ( ( A e. RR* /\ B e. RR* /\ C e. RR ) /\ ( A < C /\ C < B ) ) ) $=
+    ( cioo co wcel cxr cr w3a clt wbr wa eliooxr elioore df-3an sylibr eliooord
+    jca rexr 3anim3i anim1i elioo3g impbii ) CABDEFZAGFZBGFZCHFZIZACJKCBJKLZLZU
+    DUHUIUDUEUFLZUGLUHUDUKUGCABMCABNRUEUFUGOPCABQRUJUEUFCGFZIZUILUDUHUMUIUGULUE
+    UFCSTUAABCUBPUC $.
+
   ${
     $d x A $.  $d x B $.
-    $( An open interval is a set of reals.  (Contributed by Jim Kingdon,
-       31-Mar-2020.) $)
-    ioossreg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,) B ) C_ RR ) $=
-      ( vx cxr wcel wa cioo co cr cv eliooreg 3expia ssrdv ) ADEZBDEZFCABGHZINO
-      CJZPEQIEQABKLM $.
+    $( An open interval is a set of reals.  (Contributed by NM,
+       31-May-2007.) $)
+    ioossre $p |- ( A (,) B ) C_ RR $=
+      ( vx cioo co cr cv elioore ssriv ) CABDEFCGABHI $.
   $}
 
   ${
@@ -78469,72 +79300,65 @@ $)
   ${
     $d w x y z A $.  $d w x y z B $.  $d w x y z C $.  $d w x y z D $.
     $( Condition for a closed interval to be a subset of another closed
-       interval.  (Contributed by Jim Kingdon, 31-Mar-2020.) $)
-    iccssg $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. RR /\ D e. RR ) /\
+       interval.  (Contributed by Jeff Madsen, 2-Sep-2009.)  (Revised by Mario
+       Carneiro, 20-Feb-2015.) $)
+    iccss $p |- ( ( ( A e. RR /\ B e. RR ) /\
                     ( A <_ C /\ D <_ B ) ) -> ( C [,] D ) C_ ( A [,] B ) ) $=
-      ( vx vy vz vw cr wcel wa cxr cle wbr cicc co wss rexr anim12i xrletr id
-      df-icc cv ixxss12g syl3an ) AIJZBIJZKALJZBLJZKCIJZDIJZKCLJZDLJZKACMNDBMNK
-      ZUNCDOPABOPQUFUHUGUIARBRSUJULUKUMCRDRSUNUAEFGHABCDOMMMMOMMEFGUBZUOACHUCZT
-      UPDBTUDUE $.
+      ( vx vy vz vw cr wcel wa cxr cle wbr cicc co wss rexr anim12i xrletr cv
+      df-icc ixxss12 sylan ) AIJZBIJZKALJZBLJZKACMNDBMNKCDOPABOPQUEUGUFUHARBRSE
+      FGHABCDOMMMMOMMEFGUBZUIACHUAZTUJDBTUCUD $.
 
     $( Condition for a closed interval to be a subset of an open interval.
        (Contributed by Mario Carneiro, 20-Feb-2015.) $)
     iccssioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A < C /\ D < B ) ) -> ( C [,] D ) C_ ( A (,) B ) ) $=
-      ( vx vy vz vw cxr wcel wa clt wbr cicc co cioo wss ltrelxr brel cle simpl
-      simprd simpld anim12i adantl df-ioo cv xrltletr xrlelttr ixxss12g syl3anc
-      simpr df-icc ) AIJZBIJZKZACLMZDBLMZKZKUPCIJZDIJZKZUSCDNOABPOQUPUSUAUSVBUP
-      UQUTURVAUQUNUTACIILRSUBURVAUODBIILRSUCUDUEUPUSULEFGHABCDNLLTTPLLEFGUFEFGU
-      MACHUGZUHVCDBUIUJUK $.
+      ( vx vy vz vw cicc clt cle cioo df-ioo df-icc xrltletr xrlelttr ixxss12
+      cv ) EFGHABCDIJJKKLJJEFGMEFGNACHRZOSDBPQ $.
 
     $( Condition for a closed-below, open-above interval to be a subset of a
-       closed-below, open-above interval.  (Contributed by Jim Kingdon,
-       1-Apr-2020.) $)
-    icossicog $p |- ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ D e. RR* ) /\
-        ( A <_ C /\ D <_ B ) ) -> ( C [,) D ) C_ ( A [,) B ) ) $=
-      ( vx vy vz vw cico cle clt df-ico cv xrletr xrltletr ixxss12g ) EFGHABCDI
-      JKJKIJJEFGLZQACHMZNRDBOP $.
+       closed-below, open-above interval.  (Contributed by Thierry Arnoux,
+       21-Sep-2017.) $)
+    icossico $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
+      ( A <_ C /\ D <_ B ) ) -> ( C [,) D ) C_ ( A [,) B ) ) $=
+      ( vx vy vz vw cico cle clt df-ico cv xrletr xrltletr ixxss12 ) EFGHABCDIJ
+      KJKIJJEFGLZQACHMZNRDBOP $.
 
     $( Condition for a closed interval to be a subset of another closed
-       interval.  (Contributed by Jim Kingdon, 1-Apr-2020.) $)
-    iccss2g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
-        ( C e. ( A [,] B ) /\ D e. ( A [,] B ) ) ) ->
-        ( C [,] D ) C_ ( A [,] B ) ) $=
-      ( vx vy vz vw cxr wcel wa cicc co cle wbr w3a wb elicc1 adantr mpbid wss
-      simpl simprl simp1d simprr simp2d simp3d df-icc xrletr ixxss12g syl122anc
-      cv ) AIJBIJKZCABLMZJZDUNJZKZKZUMCIJZDIJZACNOZDBNOZCDLMUNUAUMUQUBURUSVACBN
-      OZURUOUSVAVCPZUMUOUPUCUMUOVDQUQABCRSTZUDURUTADNOZVBURUPUTVFVBPZUMUOUPUEUM
-      UPVGQUQABDRSTZUDURUSVAVCVEUFURUTVFVBVHUGEFGHABCDLNNNNLNNEFGUHZVIACHULZUIV
-      JDBUIUJUK $.
+       interval.  (Contributed by Jeff Madsen, 2-Sep-2009.)  (Revised by Mario
+       Carneiro, 28-Apr-2015.) $)
+    iccss2 $p |- ( ( C e. ( A [,] B ) /\ D e. ( A [,] B ) ) ->
+      ( C [,] D ) C_ ( A [,] B ) ) $=
+      ( vx vy vz vw cicc co wcel cxr cle wbr w3a elixx3g adantr simprbi xrletr
+      wa wss df-icc simplbi simp1d simp2d simpld simprd adantl ixxss12 syl22anc
+      cv ) CABIJZKZDULKZTZALKZBLKZACMNZDBMNZCDIJULUAUOUPUQCLKZUMUPUQUTOZUNUMVAU
+      RCBMNZTZEFGABCMMIEFGUBZPZUCQZUDUOUPUQUTVFUEUOURVBUMVCUNUMVAVCVERQUFUNUSUM
+      UNADMNZUSUNUPUQDLKOVGUSTEFGABDMMIVDPRUGUHEFGHABCDIMMMMIMMVDVDACHUKZSVHDBS
+      UIUJ $.
 
     $( Condition for a closed interval to be a subset of a half-open interval.
        (Contributed by Mario Carneiro, 9-Sep-2015.) $)
     iccssico $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A <_ C /\ D < B ) ) -> ( C [,] D ) C_ ( A [,) B ) ) $=
-      ( vx vy vz vw cxr wcel wa cle wbr clt cicc co cico wss brel syl simprl cv
-      simpl lerelxr simprd simprr simpld df-ico df-icc xrletr xrlelttr ixxss12g
-      ltrelxr syl122anc ) AIJZBIJZKZACLMZDBNMZKZKZUQCIJZDIJZURUSCDOPABQPRUQUTUC
-      VAURVBUQURUSUAZURUOVBACIILUDSUETVAUSVCUQURUSUFZUSVCUPDBIINUMSUGTVDVEEFGHA
-      BCDOLNLLQLNEFGUHEFGUIACHUBZUJVFDBUKULUN $.
+      ( vx vy vz vw cicc cle clt cico df-ico df-icc cv xrletr xrlelttr ixxss12
+      ) EFGHABCDIJKJJLJKEFGMEFGNACHOZPSDBQR $.
 
     $( Condition for a closed interval to be a subset of an open interval.
-       (Contributed by Jim Kingdon, 2-Apr-2020.) $)
-    iccssioo2g $p |- ( ( A e. RR* /\ B e. RR* ) ->
-        ( ( C e. ( A (,) B ) /\ D e. ( A (,) B ) ) ->
-        ( C [,] D ) C_ ( A (,) B ) ) ) $=
-      ( cxr wcel wa cioo co clt wbr cicc wss cr w3a elioo2 simp2 simp3 iccssioo
-      syl6bi ex syl2and ) AEFBEFGZCABHIZFZACJKZDUDFZDBJKZCDLIUDMZUCUECNFZUFCBJK
-      ZOUFABCPUJUFUKQTUCUGDNFZADJKZUHOUHABDPULUMUHRTUCUFUHGUIABCDSUAUB $.
+       (Contributed by Mario Carneiro, 20-Feb-2015.) $)
+    iccssioo2 $p |- ( ( C e. ( A (,) B ) /\ D e. ( A (,) B ) ) ->
+      ( C [,] D ) C_ ( A (,) B ) ) $=
+      ( cioo co wcel cxr clt wbr cicc wss eliooxr adantr eliooord simpld adantl
+      wa simprd iccssioo syl12anc ) CABEFZGZDUBGZRZAHGBHGRZACIJZDBIJZCDKFUBLUCU
+      FUDCABMNUEUGCBIJZUCUGUIRUDCABONPUEADIJZUHUDUJUHRUCDABOQSABCDTUA $.
 
     $( Condition for a closed interval to be a subset of a closed-below,
-       open-above interval.  (Contributed by Jim Kingdon, 2-Apr-2020.) $)
-    iccssico2g $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
-        ( C e. ( A [,) B ) /\ D e. ( A [,) B ) ) ) ->
-        ( C [,] D ) C_ ( A [,) B ) ) $=
-      ( cxr wcel wa cico co cle wbr clt cicc wss simpl w3a elico1 adantr mpbid
-      wb simprl simp2d simprr simp3d iccssico syl12anc ) AEFBEFGZCABHIZFZDUHFZG
-      ZGZUGACJKZDBLKZCDMIUHNUGUKOULCEFZUMCBLKZULUIUOUMUPPZUGUIUJUAUGUIUQTUKABCQ
-      RSUBULDEFZADJKZUNULUJURUSUNPZUGUIUJUCUGUJUTTUKABDQRSUDABCDUEUF $.
+       open-above interval.  (Contributed by Mario Carneiro, 20-Feb-2015.) $)
+    iccssico2 $p |- ( ( C e. ( A [,) B ) /\ D e. ( A [,) B ) ) ->
+      ( C [,] D ) C_ ( A [,) B ) ) $=
+      ( vx vy vz cico co wcel wa cxr cle wbr clt cv adantr w3a elixx3g simprbi
+      cicc wss crab df-ico elmpt2cl1 elmpt2cl2 simpld simprd iccssico syl22anc
+      adantl ) CABHIZJZDULJZKALJZBLJZACMNZDBONZCDUAIULUBUMUOUNEFLLEPGPZMNUSFPON
+      KGLUCZABHCEFGUDZUEQUMUPUNEFLLUTABHCVAUFQUMUQUNUMUQCBONZUMUOUPCLJRUQVBKEFG
+      ABCMOHVASTUGQUNURUMUNADMNZURUNUOUPDLJRVCURKEFGABDMOHVASTUHUKABCDUIUJ $.
   $}
 
   $( The open interval from minus to plus infinity.  (Contributed by NM,
@@ -78599,20 +79423,22 @@ $)
       ( vx cr wcel wa cicc co cv w3a cle wbr elicc2 biimp3a simp1d 3expia ssrdv
       ) ADEZBDEZFCABGHZDRSCIZTEZUADEZRSUBJUCAUAKLZUABKLZRSUBUCUDUEJABUAMNOPQ $.
 
-    $( A closed interval is a set of extended reals.  (Contributed by Jim
-       Kingdon, 2-Apr-2020.) $)
-    iccssxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A [,] B ) C_ RR* ) $=
-      ( vx vy vz cle cicc df-icc ixxssxrg ) CDEABFFGCDEHI $.
+    $( A closed interval is a set of extended reals.  (Contributed by FL,
+       28-Jul-2008.)  (Revised by Mario Carneiro, 4-Jul-2014.) $)
+    iccssxr $p |- ( A [,] B ) C_ RR* $=
+      ( vx vy vz cle cicc df-icc ixxssxr ) CDEABFFGCDEHI $.
 
     $( An open-below, closed-above interval is a subset of the extended reals.
-       (Contributed by Jim Kingdon, 3-Apr-2020.) $)
-    iocssxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A (,] B ) C_ RR* ) $=
-      ( vx vy vz clt cle cioc df-ioc ixxssxrg ) CDEABFGHCDEIJ $.
+       (Contributed by FL, 29-May-2014.)  (Revised by Mario Carneiro,
+       4-Jul-2014.) $)
+    iocssxr $p |- ( A (,] B ) C_ RR* $=
+      ( vx vy vz clt cle cioc df-ioc ixxssxr ) CDEABFGHCDEIJ $.
 
     $( A closed-below, open-above interval is a subset of the extended reals.
-       (Contributed by Jim Kingdon, 3-Apr-2020.) $)
-    icossxrg $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A [,) B ) C_ RR* ) $=
-      ( vx vy vz cle clt cico df-ico ixxssxrg ) CDEABFGHCDEIJ $.
+       (Contributed by FL, 29-May-2014.)  (Revised by Mario Carneiro,
+       4-Jul-2014.) $)
+    icossxr $p |- ( A [,) B ) C_ RR* $=
+      ( vx vy vz cle clt cico df-ico ixxssxr ) CDEABFGHCDEIJ $.
 
     $( An open interval is a subset of its closure.  (Contributed by Paul
        Chapman, 18-Oct-2007.) $)
@@ -78645,31 +79471,22 @@ $)
        (Contributed by Thierry Arnoux, 29-Mar-2017.) $)
     iocssioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A <_ C /\ D < B ) ) -> ( C (,] D ) C_ ( A (,) B ) ) $=
-      ( va vb vx vw cxr wcel wa cle wbr clt cioc co cioo wss brel xrlelttr cv
-      simpl lerelxr simprd ad2antrl ltrelxr simpld ad2antll simpr df-ioo df-ioc
-      ixxss12g syl121anc ) AIJZBIJZKZACLMZDBNMZKZKUPCIJZDIJZUSCDOPABQPRUPUSUBUQ
-      UTUPURUQUNUTACIILUCSUDUEURVAUPUQURVAUODBIINUFSUGUHUPUSUIEFGHABCDONNNLQLNE
-      FGUJEFGUKACHUAZTVBDBTULUM $.
+      ( va vb vx vw cioc clt cle cioo df-ioo df-ioc cv xrlelttr ixxss12 ) EFGHA
+      BCDIJJJKLKJEFGMEFGNACHOZPRDBPQ $.
 
     $( Condition for a closed interval to be a subset of an open interval.
        (Contributed by Thierry Arnoux, 29-Mar-2017.) $)
     icossioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A < C /\ D <_ B ) ) -> ( C [,) D ) C_ ( A (,) B ) ) $=
-      ( va vb vx vw cxr wcel wa clt wbr cle cico co cioo wss brel xrltletr cv
-      simpl ltrelxr simprd ad2antrl lerelxr simpld ad2antll simpr df-ioo df-ico
-      ixxss12g syl121anc ) AIJZBIJZKZACLMZDBNMZKZKUPCIJZDIJZUSCDOPABQPRUPUSUBUQ
-      UTUPURUQUNUTACIILUCSUDUEURVAUPUQURVAUODBIINUFSUGUHUPUSUIEFGHABCDOLLNLQLNE
-      FGUJEFGUKACHUAZTVBDBTULUM $.
+      ( va vb vx vw cico clt cle cioo df-ioo df-ico cv xrltletr ixxss12 ) EFGHA
+      BCDIJJKJLJKEFGMEFGNACHOZPRDBPQ $.
 
     $( Condition for an open interval to be a subset of an open interval.
        (Contributed by Thierry Arnoux, 26-Sep-2017.) $)
     ioossioo $p |- ( ( ( A e. RR* /\ B e. RR* ) /\
       ( A <_ C /\ D <_ B ) ) -> ( C (,) D ) C_ ( A (,) B ) ) $=
-      ( va vb vx vw cxr wcel wa cle wbr cioo co wss simpl lerelxr brel clt cv
-      simprd ad2antrl simpld ad2antll simpr df-ioo xrlelttr xrltletr syl121anc
-      ixxss12g ) AIJZBIJZKZACLMZDBLMZKZKUNCIJZDIJZUQCDNOABNOPUNUQQUOURUNUPUOULU
-      RACIILRSUBUCUPUSUNUOUPUSUMDBIILRSUDUEUNUQUFEFGHABCDNTTTTNLLEFGUGZUTACHUAZ
-      UHVADBUIUKUJ $.
+      ( va vb vx vw cioo clt cle df-ioo cv xrlelttr xrltletr ixxss12 ) EFGHABCD
+      IJJJJIKKEFGLZQACHMZNRDBOP $.
   $}
 
   ${
@@ -78727,10 +79544,10 @@ $)
        16-Nov-2013.) $)
     ioof $p |- (,) : ( RR* X. RR* ) --> ~P RR $=
       ( vx vz vy cv clt wbr wa cxr crab cr cpw wcel wral cxp cioo wf iooval cvv
-      co vex wss ioossreg cop cfv df-ov iooex opex fvex eqeltri sylibr eqeltrrd
-      elpw rgen2a df-ioo fmpt2 mpbi ) ADZBDZEFURCDZEFGBHIZJKZLZCHMAHMHHNVAOPVBA
-      CHUQHLUSHLGZUQUSOSZUTVABUQUSQVCVDJUAVDVALUQUSUBVDJVDUQUSUCZOUDRUQUSOUEVEO
-      RRUFUQUSATCTUGUHUIULUJUKUMACHHUTVAOACBUNUOUP $.
+      co vex wss ioossre cop df-ov iooex opex fvex eqeltri elpw mpbir syl6eqelr
+      cfv rgen2a df-ioo fmpt2 mpbi ) ADZBDZEFURCDZEFGBHIZJKZLZCHMAHMHHNVAOPVBAC
+      HUQHLUSHLGUTUQUSOSZVABUQUSQVCVALVCJUAUQUSUBVCJVCUQUSUCZOULRUQUSOUDVDORRUE
+      UQUSATCTUFUGUHUIUJUKUMACHHUTVAOACBUNUOUP $.
 
     $( The set of closed intervals of extended reals maps to subsets of
        extended reals.  (Contributed by FL, 14-Jun-2007.)  (Revised by Mario
@@ -78917,12 +79734,13 @@ $)
        Jeff Hankins, 13-Jul-2009.) $)
     ioodisj $p |- ( ( ( ( A e. RR* /\ B e. RR* ) /\ ( C e. RR* /\ D e. RR* ) )
      /\ B <_ C ) -> ( ( A (,) B ) i^i ( C (,) D ) ) = (/) ) $=
-      ( vx vy vz vw cxr wcel wa cle cioo co cin c0 wss wceq cicc syl wbr syl6ss
-      simpllr simplrl simplrr simpr iooss1g syl22anc ioossicc sslin simplll clt
-      df-ioo df-icc cv xrlenlt ixxdisj syl3anc sseqtrd ss0 ) AIJZBIJZKZCIJZDIJZ
-      KZKZBCLUAZKZABMNZCDMNZOZPQVLPRVIVLVJBDSNZOZPVIVKVMQVLVNQVIVKBDMNZVMVIVBVD
-      VEVHVKVOQVAVBVFVHUCZVCVDVEVHUDVCVDVEVHUEZVGVHUFBCDUGUHBDUIUBVKVMVJUJTVIVA
-      VBVEVNPRVAVBVFVHUKVPVQEFGHABDSULULLLMEFGUMEFGUNBHUOUPUQURUSVLUTT $.
+      ( vx vy vz vw cxr wcel wa cle cioo co cin c0 wss wceq cicc syl wbr iooss1
+      simpllr sylancom ioossicc syl6ss sslin simplll simplrr clt df-ioo xrlenlt
+      df-icc cv ixxdisj syl3anc sseqtrd ss0 ) AIJZBIJZKZCIJZDIJZKZKZBCLUAZKZABM
+      NZCDMNZOZPQVJPRVGVJVHBDSNZOZPVGVIVKQVJVLQVGVIBDMNZVKVEVFUTVIVMQUSUTVDVFUC
+      ZBCDUBUDBDUEUFVIVKVHUGTVGUSUTVCVLPRUSUTVDVFUHVNVAVBVCVFUIEFGHABDSUJUJLLME
+      FGUKEFGUMBHUNULUOUPUQVJURT $.
+
   $}
 
   ${
@@ -80376,6 +81194,11 @@ htmldef "10" as "<IMG SRC='_10.gif' WIDTH=14 HEIGHT=19 ALT=' 10' TITLE='10'>";
 htmldef ";" as '<FONT COLOR="#808080">;</FONT>';
   althtmldef ";" as '<SPAN CLASS=hidden STYLE="color:gray">;</SPAN>';
   latexdef ";" as "{\rm;}";
+htmldef "ZZ>=" as "<IMG SRC='_bbzge.gif' WIDTH=20 HEIGHT=19 " +
+    "ALT=' ZZ&gt;=' TITLE='ZZ&gt;='>";
+  althtmldef "ZZ>=" as "&#8484;<SUB>&ge;</SUB>";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "ZZ>=" as "\mathbb{Z}_\ge";
 htmldef "-e" as " <IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -' " +
     "TITLE='-'><IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
   althtmldef "-e" as "-<SUB>&#x1D452;</SUB>";
