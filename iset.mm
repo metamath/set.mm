@@ -58623,9 +58623,9 @@ $)
     $( A singleton is equinumerous to ordinal one.  (Contributed by NM,
        4-Nov-2002.) $)
     ensn1 $p |- { A } ~~ 1o $=
-      ( vf csn c0 c1o cen wbr cv wf1o wex cop 0ex f1osn snex f1oeq1 spcev ax-mp
-      bren mpbir df1o2 breqtrri ) ADZEDZFGUCUDGHUCUDCIZJZCKZUCUDAELZDZJZUGAEBMN
-      UFUJCUIUHOUCUDUEUIPQRUCUDCSTUAUB $.
+      ( vf csn c0 c1o cen wbr cv wf1o wex cop 0ex f1osn opex f1oeq1 spcev ax-mp
+      snex bren mpbir df1o2 breqtrri ) ADZEDZFGUDUEGHUDUECIZJZCKZUDUEAELZDZJZUH
+      AEBMNUGUKCUJUIAEBMOSUDUEUFUJPQRUDUECTUAUBUC $.
   $}
 
   ${
