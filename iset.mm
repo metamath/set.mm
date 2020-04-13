@@ -58686,8 +58686,9 @@ $)
   $( A singleton contains its sole element.  (Contributed by Stefan O'Rear,
      16-Aug-2015.) $)
   en1uniel $p |- ( S ~~ 1o -> U. S e. S ) $=
-    ( c1o cen wbr cuni csn cvv wcel relen brrelexi uniexg 3syl wceq en1b biimpi
-    snidg eleqtrrd ) ABCDZAEZSFZARAGHSGHSTHABCIJAGKSGPLRATMANOQ $.
+    ( c1o cen wbr cuni csn wcel relen brrelexi uniexg snidg 3syl wceq wb simpld
+    cvv encv en1bg syl ibi eleqtrrd ) ABCDZAEZUCFZAUBAPGZUCPGUCUDGABCHIAPJUCPKL
+    UBAUDMZUBUEUBUFNUBUEBPGABQOAPRSTUA $.
 
   ${
     $d x y f A $.
