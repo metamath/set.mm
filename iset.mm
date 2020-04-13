@@ -58095,11 +58095,11 @@ $)
 
     $( Dominance relation.  (Contributed by NM, 15-Jun-1998.) $)
     brdomg $p |- ( B e. C -> ( A ~<_ B <-> E. f f : A -1-1-> B ) ) $=
-      ( vx vy cvv wcel cdom wbr cv wf1 wex wb wi wceq f1eq2 exbidv f1eq3 df-dom
-      brabg ex wn reldom brrelexi wf f1f cdm fdm vex dmex syl6eqelr syl exlimiv
-      pm5.21ni a1d pm2.61i ) AGHZBCHZABIJZABDKZLZDMZNZOURUSVDEKZFKZVALZDMAVFVAL
-      ZDMVCEFABGCIVEAPVGVHDVEAVFVAQRVFBPVHVBDVFBAVASREFDTUAUBURUCVDUSUTURVCABIU
-      DUEVBURDVBABVAUFZURABVAUGVIAVAUHGABVAUIVADUJUKULUMUNUOUPUQ $.
+      ( vx vy wcel cvv cdom wbr cv wf1 wex wi reldom brrelexi a1i wceq exbidv
+      wf f1f cdm fdm vex dmex syl6eqelr syl exlimiv wb f1eq2 f1eq3 df-dom brabg
+      expcom pm5.21ndd ) BCGZAHGZABIJZABDKZLZDMZURUQNUPABIOPQVAUQNUPUTUQDUTABUS
+      TZUQABUSUAVBAUSUBHABUSUCUSDUDUEUFUGUHQUQUPURVAUIEKZFKZUSLZDMAVDUSLZDMVAEF
+      ABHCIVCARVEVFDVCAVDUSUJSVDBRVFUTDVDBAUSUKSEFDULUMUNUO $.
 
     $( Dominance relation.  (Contributed by Mario Carneiro, 26-Apr-2015.) $)
     brdomi $p |- ( A ~<_ B -> E. f f : A -1-1-> B ) $=
