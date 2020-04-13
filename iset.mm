@@ -1,4 +1,4 @@
-$( iset.mm - Version of 10-Apr-2020
+$( iset.mm - Version of 13-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -58657,12 +58657,12 @@ $)
       RVOVQDEFVPAVJVKBVQDEVLVMRVN $.
 
     $( A set is equinumerous to ordinal one iff it is a singleton.
-       (Contributed by Mario Carneiro, 17-Jan-2015.) $)
-    en1b $p |- ( A ~~ 1o <-> A = { U. A } ) $=
-      ( vx c1o cen wbr cuni csn wceq cv wex en1 id unieq vex unisn syl6eq sneqd
-      cvv wcel syl eqtr4d exlimiv sylbi syl6eqel uniexg ensn1g eqbrtrd impbii
-      snex ) ACDEZAAFZGZHZUJABIZGZHZBJUMBAKUPUMBUPAUOULUPLUPUKUNUPUKUOFUNAUOMUN
-      BNOPQUAUBUCUMAULCDUMLZUMUKRSZULCDEUMARSURUMAULRUQUKUIUDARUETUKRUFTUGUH $.
+       (Contributed by Jim Kingdon, 13-Apr-2020.) $)
+    en1bg $p |- ( A e. V -> ( A ~~ 1o <-> A = { U. A } ) ) $=
+      ( vx wcel c1o cen wbr cuni csn cv wex en1 id unieq vex unisn syl6eq sneqd
+      wceq cvv eqtr4d exlimiv sylbi uniexg ensn1g syl breq1 syl5ibrcom impbid2
+      ) ABDZAEFGZAAHZIZSZUKACJZIZSZCKUNCALUQUNCUQAUPUMUQMUQULUOUQULUPHUOAUPNUOC
+      OPQRUAUBUCUJUKUNUMEFGZUJULTDURABUDULTUEUFAUMEFUGUHUI $.
 
     $( Two ways to express "exactly one".  (Contributed by Stefan O'Rear,
        28-Oct-2014.) $)
