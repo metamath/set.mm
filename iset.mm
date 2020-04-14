@@ -58767,10 +58767,10 @@ $)
     $( The class of finite sets is a proper class.  (Contributed by Jeff
        Hankins, 3-Oct-2008.) $)
     fiprc $p |- Fin e/ _V $=
-      ( vx vy cv csn wceq wex cab cvv wnel cfn snnex wcel wss snfi eleq1 mpbiri
-      wn exlimiv abssi df-nel ssexg mpan con3i 3imtr4i ax-mp ) ACZBCZDZEZBFZAGZ
-      HIZJHIZABKUKHLZQJHLZQULUMUOUNUKJMUOUNUJAJUIUFJLZBUIUPUHJLUGNUFUHJOPRSUKJH
-      UAUBUCUKHTJHTUDUE $.
+      ( vx vy cv csn wceq wex cab cvv wnel cfn snnex wcel wss snfig ax-mp eleq1
+      wn vex mpbiri df-nel exlimiv abssi ssexg mpan con3i 3imtr4i ) ACZBCZDZEZB
+      FZAGZHIZJHIZABKULHLZQJHLZQUMUNUPUOULJMUPUOUKAJUJUGJLZBUJUQUIJLZUHHLURBRUH
+      HNOUGUIJPSUAUBULJHUCUDUEULHTJHTUFO $.
 
     $( Equinumerosity of union of disjoint sets.  Theorem 4 of [Suppes] p. 92.
        (Contributed by NM, 11-Jun-1998.)  (Revised by Mario Carneiro,
