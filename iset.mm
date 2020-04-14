@@ -58843,28 +58843,6 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.
-    $( Dominance law for union.  Proposition 4.24(a) of [Mendelson] p. 257.
-       (Contributed by NM, 3-Sep-2004.)  (Revised by Mario Carneiro,
-       26-Apr-2015.) $)
-    undom $p |- ( ( ( A ~<_ B /\ C ~<_ D ) /\ ( B i^i D ) = (/) ) ->
-                ( A u. C ) ~<_ ( B u. D ) ) $=
-      ( vx vy cdom wbr wa cin c0 wceq cen wss wex cun cvv wcel reldom brrelex2i
-      cv cdif domeng syl ibi brrelexi difss ssdomg mpisyl domtr mpancom anim12i
-      wb adantr eeanv simprll simprrl disjdif a1i ss2in ad2ant2l adantl syl2anc
-      simplr sseq0 undif2 unen syl5eqbrr syl22anc ad3antrrr ad3antlr unexg sylc
-      unss12 endomtr ex exlimdvv syl5bir mpd ) ABGHZCDGHZIZBDJZKLZIZAEUAZMHZWFB
-      NZIZEOZCAUBZFUAZMHZWLDNZIZFOZIZACPZBDPZGHZWBWQWDVTWJWAWPVTWJVTBQRZVTWJUMA
-      BGSTZEABQUCUDUEWAWKDGHZWPWKCGHZWAXCWACQRWKCNXDCDGSUFCAUGWKCQUHUIWKCDUJUKX
-      CWPXCDQRZXCWPUMWKDGSTFWKDQUCUDUEUDULUNWQWIWOIZFOEOWEWTWIWOEFUOWEXFWTEFWEX
-      FWTWEXFIZWRWFWLPZMHZXHWSGHZWTXGWGWMAWKJKLZWFWLJZKLZXIWEWGWHWOUPWEWIWMWNUQ
-      XKXGACURUSXGXLWCNZWDXMXFXNWEWHWNXNWGWMWFBWLDUTVAVBWBWDXFVDXLWCVEVCWGWMIXK
-      XMIIWRAWKPXHMACVFAWFWKWLVGVHVIXGWSQRZXHWSNZXJXGXAXEXOVTXAWAWDXFXBVJWAXEVT
-      WDXFCDGSTVKBDQQVLVCXFXPWEWHWNXPWGWMWFBWLDVNVAVBXHWSQUHVMWRXHWSVOVCVPVQVRV
-      S $.
-  $}
-
-  ${
     $d u v w x y z A $.  $d u v w x y z B $.  $d u v C $.  $d u v w y z F $.
     $d u v w G $.
     xpcomf1o.1 $e |- F = ( x e. ( A X. B ) |-> U. `' { x } ) $.
