@@ -58784,21 +58784,6 @@ $)
       UEUFUGUHUIUJUK $.
   $}
 
-  $( All decrements of a set are equinumerous.  (Contributed by Stefan O'Rear,
-     19-Feb-2015.) $)
-  difsnen $p |- ( ( X e. V /\ A e. X /\ B e. X ) ->
-      ( X \ { A } ) ~~ ( X \ { B } ) ) $=
-    ( wcel csn cdif cen wbr wceq cvv difexg enrefg syl wne cun c0 incom disjdif
-    cin w3a 3ad2ant1 sneq difeq2d breq2d syl5ibcom imp wa simpl1 dif32 syl6breq
-    4syl simpl3 simpl2 en2sn syl2anc eqtri unen syl22anc simpr eldifsn sylanbrc
-    a1i necomd difsnid 3brtr3d pm2.61dane ) DCEZADEZBDEZUAZDAFZGZDBFZGZHIZABVKA
-    BJZVPVKVMVMHIZVQVPVHVIVRVJVHVMKEZVRDVLCLZVMKMNUBVQVMVOVMHVQVLVNDABUCUDUEUFU
-    GVKABOZUHZVMVNGZVNPZVOVLGZVLPZVMVOHWBWCWEHIVNVLHIZWCVNTZQJZWEVLTZQJZWDWFHIW
-    BWCWCWEHWBVHVSWCKEWCWCHIVHVIVJWAUIVTVMVNKLWCKMULDVLVNUJUKWBVJVIWGVHVIVJWAUM
-    ZVHVIVJWAUNZBADDUOUPWIWBWHVNWCTQWCVNRVNVMSUQVCWKWBWJVLWETQWEVLRVLVOSUQVCWCW
-    EVNVLURUSWBBVMEZWDVMJWBVJBAOWNWLWBABVKWAUTZVDBDAVAVBVMBVENWBAVOEZWFVOJWBVIW
-    AWPWMWOADBVAVBVOAVENVFVG $.
-
   ${
     $d x y z w A $.  $d x y z w B $.
     xpsnen.1 $e |- A e. _V $.
