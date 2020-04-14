@@ -14164,6 +14164,7 @@ New usage of "ax1ne0" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax2" is discouraged (0 uses).
 New usage of "ax3" is discouraged (0 uses).
+New usage of "ax3h" is discouraged (0 uses).
 New usage of "ax4" is discouraged (0 uses).
 New usage of "ax5ALT" is discouraged (0 uses).
 New usage of "ax5el" is discouraged (1 uses).
@@ -14315,11 +14316,10 @@ New usage of "bj-axdd2" is discouraged (0 uses).
 New usage of "bj-axtd" is discouraged (0 uses).
 New usage of "bj-ceqsalgALT" is discouraged (0 uses).
 New usage of "bj-ceqsalgvALT" is discouraged (0 uses).
-New usage of "bj-con3ALT" is discouraged (0 uses).
+New usage of "bj-con3thALT" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
 New usage of "bj-df-clel" is discouraged (1 uses).
 New usage of "bj-df-cleq" is discouraged (1 uses).
-New usage of "bj-dfif5ALT" is discouraged (0 uses).
 New usage of "bj-gl4" is discouraged (0 uses).
 New usage of "bj-gl4lem" is discouraged (1 uses).
 New usage of "bj-godellob" is discouraged (0 uses).
@@ -18962,7 +18962,7 @@ Proof modification of "bj-clelsb3" is discouraged (63 steps).
 Proof modification of "bj-cleqh" is discouraged (108 steps).
 Proof modification of "bj-cmnssmnd" is discouraged (36 steps).
 Proof modification of "bj-cmnssmndel" is discouraged (5 steps).
-Proof modification of "bj-con3ALT" is discouraged (63 steps).
+Proof modification of "bj-con3thALT" is discouraged (63 steps).
 Proof modification of "bj-csbprc" is discouraged (47 steps).
 Proof modification of "bj-denotes" is discouraged (76 steps).
 Proof modification of "bj-df-clel" is discouraged (4 steps).
@@ -18971,7 +18971,6 @@ Proof modification of "bj-df-nul" is discouraged (11 steps).
 Proof modification of "bj-df-v" is discouraged (29 steps).
 Proof modification of "bj-dfclel" is discouraged (10 steps).
 Proof modification of "bj-dfcleq" is discouraged (27 steps).
-Proof modification of "bj-dfif5ALT" is discouraged (148 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
 Proof modification of "bj-dral1v" is discouraged (36 steps).
 Proof modification of "bj-drex1v" is discouraged (42 steps).
