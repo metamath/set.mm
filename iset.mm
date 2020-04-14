@@ -21742,6 +21742,11 @@ $)
       ( cvv wcel cv wceq wex isset mpbir ) BDEAFBGAHCABIJ $.
   $}
 
+  $( A class equal to a variable is a set.  Note the absence of dv condition,
+     contrary to ~ isset and ~ issetri .  (Contributed by BJ, 27-Apr-2019.) $)
+  eqvisset $p |- ( x = A -> A e. _V ) $=
+    ( cv wceq cvv wcel vex eleq1 mpbii ) ACZBDJEFBEFAGJBEHI $.
+
   ${
     $d x A $.  $d x B $.
     $( If a class is a member of another class, it is a set.  Theorem 6.12 of
