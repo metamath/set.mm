@@ -58758,12 +58758,11 @@ $)
       ( wcel csn c1o cen wbr ensn1g ensymd entr syl2an ) ACEAFZGHIGBFZHINOHIBDE
       ZACJPOGBDJKNGOLM $.
 
-    $( A singleton is finite.  (Contributed by NM, 4-Nov-2002.) $)
-    snfi $p |- { A } e. Fin $=
-      ( vx csn cfn wcel cv cen wbr com wrex cvv c1o ensn1g breq2 rspcev sylancr
-      1onn wn c0 wceq snprc en0 peano1 mpan sylbir sylbi pm2.61i isfi mpbir ) A
-      CZDEUJBFZGHZBIJZAKEZUMUNLIEUJLGHZUMQAKMULUOBLIUKLUJGNOPUNRUJSTZUMAUAUPUJS
-      GHZUMUJUBSIEUQUMUCULUQBSIUKSUJGNOUDUEUFUGBUJUHUI $.
+    $( A singleton is finite.  (Contributed by Jim Kingdon, 13-Apr-2020.) $)
+    snfig $p |- ( A e. V -> { A } e. Fin ) $=
+      ( vx wcel csn cv cen wbr com wrex cfn c1o 1onn ensn1g rspcev sylancr isfi
+      breq2 sylibr ) ABDZAEZCFZGHZCIJZUAKDTLIDUALGHZUDMABNUCUECLIUBLUAGROPCUAQS
+      $.
 
     $( The class of finite sets is a proper class.  (Contributed by Jeff
        Hankins, 3-Oct-2008.) $)
