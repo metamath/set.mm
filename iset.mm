@@ -58906,9 +58906,9 @@ $)
   $( A set is equinumerous to its Cartesian product with a singleton on the
      left.  (Contributed by Stefan O'Rear, 21-Nov-2014.) $)
   xpsnen2g $p |- ( ( A e. V /\ B e. W ) -> ( { A } X. B ) ~~ B ) $=
-    ( wcel wa csn cxp cen wbr cvv snex xpcomeng mpan adantl xpsneng ancoms entr
-    syl2anc ) ACEZBDEZFAGZBHZBUBHZIJZUDBIJZUCBIJUAUETUBKEUAUEALUBBKDMNOUATUFBAD
-    CPQUCUDBRS $.
+    ( wcel csn cxp cen wbr cvv snexg xpcomeng sylan xpsneng ancoms entr syl2anc
+    wa ) ACEZBDEZRAFZBGZBUAGZHIZUCBHIZUBBHISUAJETUDACKUABJDLMTSUEBADCNOUBUCBPQ
+    $.
 
   ${
     $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
