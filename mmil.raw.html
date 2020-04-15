@@ -1613,7 +1613,7 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
-<TD ROWSPAN="4">fvex</TD>
+<TD ROWSPAN="5">fvex</TD>
 <TD>~ funfvex </TD>
 <TD>when evaluating a function within its domain</TD>
 </TR>
@@ -1626,6 +1626,12 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 <TR>
 <TD>~ relrnfvex </TD>
 <TD>when evaluating a relation whose range is a set</TD>
+</TR>
+
+<TR>
+<TD>~ mptfvex </TD>
+<TD>when the function is defined via maps-to, yields a set for all inputs,
+and is evaluated at a set</TD>
 </TR>
 
 <TR>
@@ -1686,9 +1692,25 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
-<TD>ovex</TD>
+<TD ROWSPAN="4">ovex</TD>
 <TD>~ fnovex </TD>
-<TD>Sometimes or ~ fvexg or ~ relrnfvex may work.</TD>
+<TD>when the operation is a function evaluated within its domain.</TD>
+</TR>
+
+<TR>
+<TD>~ fvexg , ~ fvex</TD>
+<TD>when the operation is a set and is evaluated at a set</TD>
+</TR>
+
+<TR>
+<TD>~ relrnfvex</TD>
+<TD>when the operation is a relation whose range is a set</TD>
+</TR>
+
+<TR>
+<TD>~ mpt2fvex </TD>
+<TD>When the operation is defined via maps-to, yields a set on
+any inputs, and is being evaluated at two sets.</TD>
 </TR>
 
 <TR>
