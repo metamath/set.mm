@@ -1,4 +1,4 @@
-$( iset.mm - Version of 13-Apr-2020
+$( iset.mm - Version of 15-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59004,16 +59004,16 @@ $)
       UHFGUCUBAQEZUGABFKLUJUBUGACQDMNOUDUFCBIZFGUKUHJGZUIABCDPUCUBBQEULABFKRCBD
       QMOUFUKUHSTUEUFUHUAT $.
 
-    $( A set is dominated by its Cartesian product with a nonempty set.
-       Exercise 6 of [Suppes] p. 98.  (Contributed by NM, 27-Jul-2004.)
-       (Revised by Mario Carneiro, 29-Apr-2015.) $)
-    xpdom3 $p |- ( ( A e. V /\ B e. W /\ B =/= (/) ) -> A ~<_ ( A X. B ) ) $=
-      ( vx wcel c0 wne cxp cdom wbr cv wex wa n0 w3a csn cen cvv wss ensymd syl
-      xpsneng 3adant2 xpexg 3adant3 simp3 ssdomg endomtr syl2anc 3expia exlimdv
-      snssd xpss2 sylc syl5bi 3impia ) ACFZBDFZBGHZAABIZJKZUTELZBFZEMURUSNZVBEB
-      OVEVDVBEURUSVDVBURUSVDPZAAVCQZIZRKVHVAJKZVBVFVHAURVDVHARKUSAVCCBUCUDUAVFV
-      ASFZVHVATZVIURUSVJVDABCDUEUFVFVGBTVKVFVCBURUSVDUGUMVGBAUNUBVHVASUHUOAVHVA
-      UIUJUKULUPUQ $.
+    $( A set is dominated by its Cartesian product with an inhabited set.
+       Exercise 6 of [Suppes] p. 98.  (Contributed by Jim Kingdon,
+       15-Apr-2020.) $)
+    xpdom3m $p |- ( ( A e. V /\ B e. W /\ E. x x e. B ) ->
+        A ~<_ ( A X. B ) ) $=
+      ( wcel cv wex cxp cdom wbr wa w3a csn cen xpsneng 3adant2 ensymd cvv wss
+      xpexg 3adant3 simp3 snssd xpss2 syl ssdomg endomtr syl2anc 3expia exlimdv
+      sylc 3impia ) BDFZCEFZAGZCFZAHBBCIZJKZUNUOLUQUSAUNUOUQUSUNUOUQMZBBUPNZIZO
+      KVBURJKZUSUTVBBUNUQVBBOKUOBUPDCPQRUTURSFZVBURTZVCUNUOVDUQBCDEUAUBUTVACTVE
+      UTUPCUNUOUQUCUDVACBUEUFVBURSUGULBVBURUHUIUJUKUM $.
   $}
 
   ${
