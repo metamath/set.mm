@@ -59026,22 +59026,6 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d x y z B $.
-    omf1o.1 $e |- F = ( x e. B , y e. A |-> ( ( A .o x ) +o y ) ) $.
-    omf1o.2 $e |- G = ( x e. B , y e. A |-> ( ( B .o y ) +o x ) ) $.
-    $( Construct an explicit bijection from ` A .o B ` to ` B .o A ` .
-       (Contributed by Mario Carneiro, 30-May-2015.) $)
-    omf1o $p |- ( ( A e. On /\ B e. On ) ->
-        ( G o. `' F ) : ( A .o B ) -1-1-onto-> ( B .o A ) ) $=
-      ( vz con0 wcel cxp comu co wf1o ccnv ccom cv cmpt2 eqid coa csn cuni cmpt
-      wa omxpenlem ancoms xpcomf1o f1oco sylancl wb xpcomco eqtr4i f1oeq1 ax-mp
-      wceq sylibr f1ocnv syl syl2anc ) CJKZDJKZUEZDCLZDCMNZFOZCDMNZVDEPZOZVGVEF
-      VHQOVCVDVEBACDDBRMNARUANZSZIVDIRUBPUCUDZQZOZVFVCCDLZVEVKOZVDVOVLOVNVBVAVP
-      BADCVKVKTZUFUGIDCVLVLTZUHVDVOVEVKVLUIUJFVMUPVFVNUKFABDCVJSVMHIBADCVJVLVKV
-      RVQULUMVDVEFVMUNUOUQVCVDVGEOVIABCDEGUFVDVGEURUSVGVDVEFVHUIUT $.
-  $}
-
-  ${
     $d A a b c $.  $d B a b c $.  $d F a b c $.
     $( Covering implies injection on power sets.  (Contributed by Stefan
        O'Rear, 6-Nov-2014.)  (Revised by Mario Carneiro, 24-Jun-2015.) $)
