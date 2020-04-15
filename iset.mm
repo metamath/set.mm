@@ -58593,7 +58593,7 @@ $)
     wbr ) ABDFZCAGZCEHZICDCJZTUACUCDCKZLZUBCUCMSZABCDNUBUEUFCUCEUDOPQR $.
 
   $( A one-to-one function's image under a subset of its domain is equinumerous
-     to the subset.  (This version of ~ f1imaen does not need ~ ax-reg .)
+     to the subset.  (This version of ~ f1imaen does not need ~ ax-setind .)
      (Contributed by Mario Carneiro, 16-Nov-2014.)  (Revised by Mario Carneiro,
      25-Jun-2015.) $)
   f1imaen2g $p |- ( ( ( F : A -1-1-> B /\ B e. V ) /\ ( C C_ A /\ C e. V ) ) ->
