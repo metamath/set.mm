@@ -59026,39 +59026,6 @@ $)
   $}
 
   ${
-    $d f A $.  $d f B $.  $d f X $.  $d f Y $.
-    domunsncan.a $e |- A e. _V $.
-    domunsncan.b $e |- B e. _V $.
-    $( A singleton cancellation law for dominance.  (Contributed by Stefan
-       O'Rear, 19-Feb-2015.)  (Revised by Stefan O'Rear, 5-May-2015.) $)
-    domunsncan $p |- ( ( -. A e. X /\ -. B e. Y ) ->
-        ( ( { A } u. X ) ~<_ ( { B } u. Y ) <-> X ~<_ Y ) ) $=
-      ( vf wcel wa csn cun cdom wbr cvv wss sylancr cdif cima wceq ad2antll wf1
-      wn ssun2 reldom brrelex2i adantl ssexg wex brdomi cen cres wf1o vex resex
-      cv simprr difss f1ores sylancl f1oen3g ccnv wfun df-f1 simprbi imadif syl
-      wf cfv snex simprl difexg f1f crn imassrn frn syl5ss ssdifd wfn f1fn snid
-      unexg elun1 ax-mp fnsnfv difeq2d ssdomg sylc ffvelrn mp1i difsnen syl3anc
-      sseqtr4d domentr syl2anc eqbrtrd endomtr uncom difeq1i difun2 eqtri difsn
-      syl5eq ad2antrr ad2antlr 3brtr3d expr exlimdv syl5 impancom mpd cin en2sn
-      c0 mp2an endom simpr incom disjsn biimpri undom syl21anc impbida ) ACHUBZ
-      BDHUBZIZAJZCKZBJZDKZLMZCDLMZYEYJIZDNHZYKYLDYIOYINHZYMDYHUCYJYNYEYGYILUDUE
-      UFDYINUGPYEYMYJYKYJYGYIGUOZUAZGUHYEYMIZYKYGYIGUIYQYPYKGYEYMYPYKYEYMYPIZIZ
-      YGYFQZYIYHQZCDLYSYTYOYTRZUJMZUUBUUALMYTUUALMYSYOYTUKZNHYTUUBUUDULZUUCYOYT
-      GUMUNYSYPYTYGOUUEYEYMYPUPYGYFUQYGYIYTYOURUSYTUUBUUDNUTPYSUUBYOYGRZYOYFRZQ
-      ZUUALYPUUBUUHSZYEYMYPYOVAVBZUUIYPYGYIYOVGZUUJYGYIYOVCVDYGYFYOVEVFTYSUUHYI
-      AYOVHZJZQZLMZUUNUUAUJMZUUHUUALMYSUUNNHZUUHUUNOUUOYSYNUUQYSYHNHYMYNBVIYEYM
-      YPVJYHDNNWAPZYIUUMNVKVFYSUUHYIUUGQUUNYSUUFYIUUGYPUUFYIOZYEYMYPUUKUUSYGYIY
-      OVLZUUKUUFYOVMYIYOYGVNYGYIYOVOVPVFTVQYSUUMUUGYIYSYOYGVRZAYGHZUUMUUGSYPUVA
-      YEYMYGYIYOVSTAYFHUVBAEVTAYFCWBWCZYGAYOWDUSWEWLUUHUUNNWFWGYSYNUULYIHZBYIHZ
-      UUPUURYPUVDYEYMYPUUKUVBUVDUUTUVCYGYIAYOWHUSTBYHHUVEYSBFVTBYHDWBWIUULBNYIW
-      JWKUUHUUNUUAWMWNWOYTUUBUUAWPWNYCYTCSYDYRYCYTCYFQZCYTCYFKZYFQUVFYGUVGYFYFC
-      WQWRCYFWSWTACXAXBXCYDUUADSYCYRYDUUADYHQZDUUADYHKZYHQUVHYIUVIYHYHDWQWRDYHW
-      SWTBDXAXBXDXEXFXGXHXIXJYEYKIZYFYHLMZYKYHDXKZXMSZYJYFYHUJMZUVKUVJANHBNHUVN
-      EFABNNXLXNYFYHXOWIYEYKXPYDUVMYCYKYDUVLDYHXKZXMYHDXQUVOXMSYDDBXRXSXBXDYFYH
-      CDXTYAYB $.
-  $}
-
-  ${
     $d A f $.  $d A m n r s x y $.  $d B f $.  $d B m n r s x y $.  $d F f $.
     $d F m n r s $.
     omxpenlem.1 $e |- F = ( x e. B , y e. A |-> ( ( A .o x ) +o y ) ) $.
