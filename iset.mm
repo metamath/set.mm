@@ -81190,13 +81190,11 @@ $)
 
   ${
     $d M x $.  $d N x $.  $d A x $.
-    $( Properties of a finite interval of integers which is nonempty.
-       (Contributed by Jeff Madsen, 17-Jun-2010.)  (Revised by Mario Carneiro,
-       28-Apr-2015.) $)
-    fzn0 $p |- ( ( M ... N ) =/= (/) <-> N e. ( ZZ>= ` M ) ) $=
-      ( vx cfz co c0 wne cuz cfv wcel cv wex elfzuz2 exlimiv sylbi eluzfz1 ne0i
-      n0 syl impbii ) ABDEZFGZBAHIJZUBCKZUAJZCLUCCUARUEUCCUDABMNOUCAUAJUBABPUAA
-      QST $.
+    $( Properties of a finite interval of integers which is inhabited.
+       (Contributed by Jim Kingdon, 15-Apr-2020.) $)
+    fzm $p |- ( E. x x e. ( M ... N ) <-> N e. ( ZZ>= ` M ) ) $=
+      ( cv cfz co wcel wex cuz cfv elfzuz2 exlimiv eluzfz1 elex2 syl impbii ) A
+      DZBCEFZGZAHZCBIJGZSUAAQBCKLUABRGTBCMABRNOP $.
   $}
 
   $( A finite set of sequential integers is empty if its bounds are not
