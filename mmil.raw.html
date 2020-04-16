@@ -1732,16 +1732,25 @@ found in ~ ovi3 .</TD>
 </TR>
 
 <TR>
-<TD>ndmovg , ndmov , ndmovcl ,
-    ndmovrcl , ndmovcom , ndmovass , ndmovdistr , ndmovord ,
+<TD>ndmovg , ndmov</TD>
+<TD>~ ndmfvg </TD>
+<TD>These theorems are generally used in set.mm for case elimination
+which is why we just have the general ~ ndmfvg rather than an
+operation-specific version.
+</TR>
+
+<TR>
+<TD>ndmovcl , ndmovcom , ndmovass , ndmovdistr , ndmovord ,
     and ndmovordi</TD>
 <TD><I>none</I></TD>
-<TD>Although these theorems are moderately widely used in set.mm,
-    in many cases they are being used for case elimination and
-    the set.mm proofs are not intuitionistic. We might bring
-    back some of them later (which may have conditions that the
-    sets exist, but aren't in the domain), but maybe we'll find
-    a way to avoid them.
+<TD>These theorems are generally used in set.mm for case elimination
+and the most straightforward way to avoid them is to add conditions
+that we are evaluating functions within their domains.
+</TR>
+
+<TR>
+<TD>ndmovrcl</TD>
+<TD>~ elmpt2cl , ~ relelfvdm</TD>
 </TR>
 
 <TR>
