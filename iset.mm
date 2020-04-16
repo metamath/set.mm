@@ -80962,6 +80962,1019 @@ $)
     ( cc0 cr wcel c1 cicc co wss 0re 1re iccssre mp2an ) ABCDBCADEFBGHIADJK $.
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Finite intervals of integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c ... $. $( Dots. $)
+
+  $( Extend class notation to include the notation for a contiguous finite set
+     of integers.  Read " ` M ... N ` " as "the set of integers from ` M ` to
+     ` N ` inclusive." $)
+  cfz $a class ... $.
+
+  ${
+    $d m n k z $.
+    $( Define an operation that produces a finite set of sequential integers.
+       Read " ` M ... N ` " as "the set of integers from ` M ` to ` N `
+       inclusive."  See ~ fzval for its value and additional comments.
+       (Contributed by NM, 6-Sep-2005.) $)
+    df-fz $a |- ... = ( m e. ZZ , n e. ZZ |->
+                  { k e. ZZ | ( m <_ k /\ k <_ n ) } ) $.
+  $}
+
+  ${
+    $d k m n z M $.  $d k m n z N $.
+    $( The value of a finite set of sequential integers.  E.g., ` 2 ... 5 `
+       means the set ` { 2 , 3 , 4 , 5 } ` .  A special case of this definition
+       (starting at 1) appears as Definition 11-2.1 of [Gleason] p. 141, where
+       ` NN ` _k means our ` 1 ... k ` ; he calls these sets _segments_ of the
+       integers.  (Contributed by NM, 6-Sep-2005.)  (Revised by Mario Carneiro,
+       3-Nov-2013.) $)
+    fzval $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M ... N ) =
+                 { k e. ZZ | ( M <_ k /\ k <_ N ) } ) $=
+      ( vm vn cz cv cle wbr wa crab cfz breq1 anbi1d rabbidv breq2 anbi2d df-fz
+      wceq zex rabex ovmpt2 ) DEBCFFDGZAGZHIZUDEGZHIZJZAFKBUDHIZUDCHIZJZAFKLUIU
+      GJZAFKUCBSZUHULAFUMUEUIUGUCBUDHMNOUFCSZULUKAFUNUGUJUIUFCUDHPQOADERUKAFTUA
+      UB $.
+
+    $( An alternative way of expressing a finite set of sequential integers.
+       (Contributed by Mario Carneiro, 3-Nov-2013.) $)
+    fzval2 $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
+        ( M ... N ) = ( ( M [,] N ) i^i ZZ ) ) $=
+      ( vk cz wcel wa cfz co cv cle wbr crab cicc cin fzval wceq cr zssre sseli
+      cxr ressxr sstri iccval syl2an ineq1d inrab2 wss sseqin2 mpbi rabeq ax-mp
+      eqtri syl6req eqtrd ) ADEZBDEZFZABGHACIZJKURBJKFZCDLZABMHZDNZCABOUQVBUSCT
+      LZDNZUTUQVAVCDUOATEBTEVAVCPUPDTADQTRUAUBZSDTBVESCABUCUDUEVDUSCTDNZLZUTUSC
+      TDUFVFDPZVGUTPDTUGVHVEDTUHUIUSCVFDUJUKULUMUN $.
+
+    $( Establish the domain and codomain of the finite integer sequence
+       function.  (Contributed by Scott Fenton, 8-Aug-2013.)  (Revised by Mario
+       Carneiro, 16-Nov-2013.) $)
+    fzf $p |- ... : ( ZZ X. ZZ ) --> ~P ZZ $=
+      ( vm vk vn cv cle wbr wa cz crab cpw wcel cxp cfz wf wss ssrab2 zex elpw2
+      wral mpbir rgen2w df-fz fmpt2 mpbi ) ADBDZEFUECDEFGZBHIZHJZKZCHSAHSHHLUHM
+      NUIACHHUIUGHOUFBHPUGHQRTUAACHHUGUHMBACUBUCUD $.
+  $}
+
+  ${
+    $d j K $.  $d j M $.  $d j N $.
+    $( Membership in a finite set of sequential integers.  (Contributed by NM,
+       21-Jul-2005.) $)
+    elfz1 $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( K e. ( M ... N ) <->
+                 ( K e. ZZ /\ M <_ K /\ K <_ N ) ) ) $=
+      ( vj cz wcel wa cfz co cv cle wbr crab w3a fzval wceq breq2 breq1 anbi12d
+      eleq2d elrab 3anass bitr4i syl6bb ) BEFCEFGZABCHIZFABDJZKLZUGCKLZGZDEMZFZ
+      AEFZBAKLZACKLZNZUEUFUKADBCOTULUMUNUOGZGUPUJUQDAEUGAPUHUNUIUOUGABKQUGACKRS
+      UAUMUNUOUBUCUD $.
+  $}
+
+  $( Membership in a finite set of sequential integers.  (Contributed by NM,
+     29-Sep-2005.) $)
+  elfz $p |- ( ( K e. ZZ /\ M e. ZZ /\ N e. ZZ ) -> ( K e. ( M ... N ) <->
+                 ( M <_ K /\ K <_ N ) ) ) $=
+    ( cz wcel cfz co cle wbr wa wb w3a elfz1 3anass baib sylan9bb 3impa 3comr )
+    BDEZCDEZADEZABCFGEZBAHIZACHIZJZKZSTUAUFSTJUBUAUCUDLZUAUEABCMUGUAUEUAUCUDNOP
+    QR $.
+
+  ${
+    $d k n m z M $.  $d k n m z N $.
+    $( Membership in a finite set of sequential integers.  We use the fact that
+       an operation's value is empty outside of its domain to show ` M e. ZZ `
+       and ` N e. ZZ ` .  (Contributed by NM, 6-Sep-2005.)  (Revised by Mario
+       Carneiro, 28-Apr-2015.) $)
+    elfz2 $p |- ( K e. ( M ... N ) <->
+           ( ( M e. ZZ /\ N e. ZZ /\ K e. ZZ ) /\ ( M <_ K /\ K <_ N ) ) ) $=
+      ( cz wcel wa cle wbr w3a cfz co anass df-3an anbi1i wb elfz1 3anass bitrd
+      ibar c0 syl5bb wn cxp cpw fdmi ndmov eleq2d noel pm2.21i pm5.21ni pm2.61i
+      fzf simpl 3bitr4ri ) BDEZCDEZFZADEZFZBAGHZACGHZFZFUQURVBFZFZUOUPURIZVBFAB
+      CJKZEZUQURVBLVEUSVBUOUPURMNUQVGVDOUQVGURUTVAIZVDABCPVHVCUQVDURUTVAQUQVCSU
+      ARUQUBZVGATEZVDVIVFTABCDJDDUCDUDJULUEUFUGVJUQVDVJUQAUHUIUQVCUMUJRUKUN $.
+  $}
+
+  $( Membership in a finite set of sequential integers.  (Contributed by NM,
+     26-Dec-2005.) $)
+  elfz5 $p |- ( ( K e. ( ZZ>= ` M ) /\ N e. ZZ ) ->
+                 ( K e. ( M ... N ) <-> K <_ N ) ) $=
+    ( cuz cfv wcel cz wa cfz co cle wbr wb eluzelz eluzel2 jca elfz 3expa sylan
+    eluzle biantrurd adantr bitr4d ) ABDEFZCGFZHABCIJFZBAKLZACKLZHZUHUDAGFZBGFZ
+    HUEUFUIMZUDUJUKBANBAOPUJUKUEULABCQRSUDUHUIMUEUDUGUHBATUAUBUC $.
+
+  $( Membership in a finite set of sequential integers.  (Contributed by NM,
+     21-Jul-2005.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
+  elfz4 $p |- ( ( ( M e. ZZ /\ N e. ZZ /\ K e. ZZ ) /\ ( M <_ K /\ K <_ N ) )
+               -> K e. ( M ... N ) ) $=
+    ( cfz co wcel cz w3a cle wbr wa elfz2 biimpri ) ABCDEFBGFCGFAGFHBAIJACIJKKA
+    BCLM $.
+
+  $( Membership in a finite set of sequential integers in terms of sets of
+     upper integers.  (Contributed by NM, 18-Sep-2005.)  (Revised by Mario
+     Carneiro, 28-Apr-2015.) $)
+  elfzuzb $p |- ( K e. ( M ... N ) <->
+         ( K e. ( ZZ>= ` M ) /\ N e. ( ZZ>= ` K ) ) ) $=
+    ( cz wcel w3a cle wbr wa cfz cuz cfv df-3an an6 anandir ancom anbi2i 3bitri
+    co eluz2 anbi1i 3bitr4ri elfz2 anbi12i 3bitr4i ) BDEZCDEZADEZFZBAGHZACGHZIZ
+    IZUFUHUJFZUHUGUKFZIZABCJSEABKLEZCAKLEZIUFUHIZUHUGIZULFUSUTIZULIUPUMUSUTULMU
+    FUHUJUHUGUKNUIVAULUIUFUGIUHIUSUGUHIZIVAUFUGUHMUFUGUHOVBUTUSUGUHPQRUAUBABCUC
+    UQUNURUOBATACTUDUE $.
+
+  $( Membership in a finite set of sequential integers.  (Contributed by NM,
+     4-Oct-2005.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
+  eluzfz $p |- ( ( K e. ( ZZ>= ` M ) /\ N e. ( ZZ>= ` K ) )
+               -> K e. ( M ... N ) ) $=
+    ( cfz co wcel cuz cfv wa elfzuzb biimpri ) ABCDEFABGHFCAGHFIABCJK $.
+
+  $( A member of a finite set of sequential integers belongs to an upper set of
+     integers.  (Contributed by NM, 17-Sep-2005.)  (Revised by Mario Carneiro,
+     28-Apr-2015.) $)
+  elfzuz $p |- ( K e. ( M ... N ) -> K e. ( ZZ>= ` M ) ) $=
+    ( cfz co wcel cuz cfv elfzuzb simplbi ) ABCDEFABGHFCAGHFABCIJ $.
+
+  $( Membership in a finite set of sequential integers implies membership in an
+     upper set of integers.  (Contributed by NM, 28-Sep-2005.)  (Revised by
+     Mario Carneiro, 28-Apr-2015.) $)
+  elfzuz3 $p |- ( K e. ( M ... N ) -> N e. ( ZZ>= ` K ) ) $=
+    ( cfz co wcel cuz cfv elfzuzb simprbi ) ABCDEFABGHFCAGHFABCIJ $.
+
+  $( Membership in a finite set of sequential integer implies the upper bound
+     is an integer.  (Contributed by NM, 6-Sep-2005.)  (Revised by Mario
+     Carneiro, 28-Apr-2015.) $)
+  elfzel2 $p |- ( K e. ( M ... N ) -> N e. ZZ ) $=
+    ( cfz co wcel cuz cfv cz elfzuz3 eluzelz syl ) ABCDEFCAGHFCIFABCJACKL $.
+
+  $( Membership in a finite set of sequential integer implies the lower bound
+     is an integer.  (Contributed by NM, 6-Sep-2005.)  (Revised by Mario
+     Carneiro, 28-Apr-2015.) $)
+  elfzel1 $p |- ( K e. ( M ... N ) -> M e. ZZ ) $=
+    ( cfz co wcel cuz cfv cz elfzuz eluzel2 syl ) ABCDEFABGHFBIFABCJBAKL $.
+
+  $( A member of a finite set of sequential integer is an integer.
+     (Contributed by NM, 6-Sep-2005.)  (Revised by Mario Carneiro,
+     28-Apr-2015.) $)
+  elfzelz $p |- ( K e. ( M ... N ) -> K e. ZZ ) $=
+    ( cfz co wcel cuz cfv cz elfzuz eluzelz syl ) ABCDEFABGHFAIFABCJBAKL $.
+
+  $( A member of a finite set of sequential integer is greater than or equal to
+     the lower bound.  (Contributed by NM, 6-Sep-2005.)  (Revised by Mario
+     Carneiro, 28-Apr-2015.) $)
+  elfzle1 $p |- ( K e. ( M ... N ) -> M <_ K ) $=
+    ( cfz co wcel cuz cfv cle wbr elfzuz eluzle syl ) ABCDEFABGHFBAIJABCKBALM
+    $.
+
+  $( A member of a finite set of sequential integer is less than or equal to
+     the upper bound.  (Contributed by NM, 6-Sep-2005.)  (Revised by Mario
+     Carneiro, 28-Apr-2015.) $)
+  elfzle2 $p |- ( K e. ( M ... N ) -> K <_ N ) $=
+    ( cfz co wcel cuz cfv cle wbr elfzuz3 eluzle syl ) ABCDEFCAGHFACIJABCKACLM
+    $.
+
+  $( Implication of membership in a finite set of sequential integers.
+     (Contributed by NM, 20-Sep-2005.)  (Revised by Mario Carneiro,
+     28-Apr-2015.) $)
+  elfzuz2 $p |- ( K e. ( M ... N ) -> N e. ( ZZ>= ` M ) ) $=
+    ( cfz co wcel cuz cfv wa elfzuzb eqid uztrn2 sylbi ) ABCDEFABGHZFCAGHFICNFA
+    BCJBCANNKLM $.
+
+  $( Membership in a finite set of sequential integer implies the bounds are
+     comparable.  (Contributed by NM, 18-Sep-2005.)  (Revised by Mario
+     Carneiro, 28-Apr-2015.) $)
+  elfzle3 $p |- ( K e. ( M ... N ) -> M <_ N ) $=
+    ( cfz co wcel cuz cfv cle wbr elfzuz2 eluzle syl ) ABCDEFCBGHFBCIJABCKBCLM
+    $.
+
+  $( Membership in a finite set of sequential integers - special case.
+     (Contributed by NM, 21-Jul-2005.)  (Revised by Mario Carneiro,
+     28-Apr-2015.) $)
+  eluzfz1 $p |- ( N e. ( ZZ>= ` M ) -> M e. ( M ... N ) ) $=
+    ( cuz cfv wcel cfz co cz eluzel2 uzid syl eluzfz mpancom ) AACDZEZBNEZAABFG
+    EPAHEOABIAJKAABLM $.
+
+  $( Membership in a finite set of sequential integers - special case.
+     (Contributed by NM, 13-Sep-2005.)  (Revised by Mario Carneiro,
+     28-Apr-2015.) $)
+  eluzfz2 $p |- ( N e. ( ZZ>= ` M ) -> N e. ( M ... N ) ) $=
+    ( cuz cfv wcel cfz co cz eluzelz uzid syl eluzfz mpdan ) BACDEZBBCDEZBABFGE
+    NBHEOABIBJKBABLM $.
+
+  $( Membership in a finite set of sequential integers - special case.
+     (Contributed by NM, 14-Sep-2005.) $)
+  eluzfz2b $p |- ( N e. ( ZZ>= ` M ) <-> N e. ( M ... N ) ) $=
+    ( cuz cfv wcel cfz co eluzfz2 elfzuz impbii ) BACDEBABFGEABHBABIJ $.
+
+  $( Membership in a finite set of sequential integers containing one integer.
+     (Contributed by NM, 21-Jul-2005.) $)
+  elfz3 $p |- ( N e. ZZ -> N e. ( N ... N ) ) $=
+    ( cz wcel cuz cfv cfz co uzid eluzfz1 syl ) ABCAADECAAAFGCAHAAIJ $.
+
+  $( Membership in a finite set of sequential integers containing one integer.
+     (Contributed by NM, 19-Sep-2005.) $)
+  elfz1eq $p |- ( K e. ( N ... N ) -> K = N ) $=
+    ( cfz co wcel wceq cle wbr elfzle2 elfzle1 cz wa elfzelz elfzel2 zre letri3
+    wb cr syl2an syl2anc mpbir2and ) ABBCDEZABFZABGHZBAGHZABBIABBJUBAKEZBKEZUCU
+    DUELQZABBMABBNUFAREBREUHUGAOBOABPSTUA $.
+
+  $( If there is a member in a finite set of sequential integers, the upper
+     bound is also a member of this finite set of sequential integers.
+     (Contributed by Alexander van der Vekens, 31-May-2018.) $)
+  elfzubelfz $p |- ( K e. ( M ... N ) -> N e. ( M ... N ) ) $=
+    ( cfz co wcel cuz cfv elfzuz2 eluzfz2 syl ) ABCDEZFCBGHFCLFABCIBCJK $.
+
+  $( A Peano-postulate-like theorem for downward closure of a finite set of
+     sequential integers.  (Contributed by Mario Carneiro, 27-May-2014.) $)
+  peano2fzr $p |- ( ( K e. ( ZZ>= ` M ) /\ ( K + 1 ) e. ( M ... N ) )
+                    -> K e. ( M ... N ) ) $=
+    ( cuz cfv wcel c1 caddc co cfz wa simpl cz eluzelz elfzuz3 peano2uzr syl2an
+    elfzuzb sylanbrc ) ABDEFZAGHIZBCJIZFZKTCADEFZAUBFTUCLTAMFCUADEFUDUCBANUABCO
+    ACPQABCRS $.
+
+  ${
+    $d M x $.  $d N x $.  $d A x $.
+    $( Properties of a finite interval of integers which is nonempty.
+       (Contributed by Jeff Madsen, 17-Jun-2010.)  (Revised by Mario Carneiro,
+       28-Apr-2015.) $)
+    fzn0 $p |- ( ( M ... N ) =/= (/) <-> N e. ( ZZ>= ` M ) ) $=
+      ( vx cfz co c0 wne cuz cfv wcel cv wex elfzuz2 exlimiv sylbi eluzfz1 ne0i
+      n0 syl impbii ) ABDEZFGZBAHIJZUBCKZUAJZCLUCCUARUEUCCUDABMNOUCAUAJUBABPUAA
+      QST $.
+  $}
+
+  $( A finite set of sequential integers is empty if its bounds are not
+     integers.  (Contributed by AV, 13-Oct-2018.) $)
+  fz0 $p |- ( ( M e/ ZZ \/ N e/ ZZ ) -> ( M ... N ) = (/) ) $=
+    ( cz wnel wo wcel wn cfz co c0 wceq df-nel orbi12i ianor cxp cpw fdmi ndmov
+    wa fzf sylbir sylbi ) ACDZBCDZEACFZGZBCFZGZEZABHIJKZUCUFUDUHACLBCLMUIUEUGSG
+    UJUEUGNABCHCCOCPHTQRUAUB $.
+
+  ${
+    $d K k m $.  $d M k m $.  $d N k m $.
+    $( A finite set of sequential integers is empty if the bounds are
+       reversed.  (Contributed by NM, 22-Aug-2005.) $)
+    fzn $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( N < M <-> ( M ... N ) = (/) ) ) $=
+      ( cz wcel wa clt wbr cfz co c0 wne cle wn cuz cfv fzn0 eluz syl5bb cr zre
+      wb lenlt syl2an bitr2d necon4bbid ) ACDZBCDZEZBAFGZABHIZJUHUJJKZABLGZUIMZ
+      UKBANODUHULABPABQRUFASDBSDULUMUAUGATBTABUBUCUDUE $.
+
+    $( A shifted finite set of sequential integers is equinumerous to the
+       original set.  (Contributed by Paul Chapman, 11-Apr-2009.) $)
+    fzen $p |- ( ( M e. ZZ /\ N e. ZZ /\ K e. ZZ ) ->
+                 ( M ... N ) ~~ ( ( M + K ) ... ( N + K ) ) ) $=
+      ( cz wcel w3a cfz co caddc cle wbr wi wa elfz1 biimpd cr zre syl3an wceq
+      wb vk vm cv cmin cvv ovex a1i 3adant3 zaddcl expcom adantrd leadd1 3com23
+      3ad2ant3 3expia 3adant2 adantld 3coml 3adant1 3jcad syl2anc biimprd com12
+      impd syld 3impb zsubcl leaddsub lesubadd ancoms simp1d ex cc subadd eqcom
+      imp zcn 3bitr3g addcom eqeq2d bitrd 3expib syl2and en3d ) BDEZCDEZADEZFZU
+      AUBBCGHZBAIHZCAIHZGHZUAUCZAIHZUBUCZAUDHZWIUEEWHBCGUFUGWLUEEWHWJWKGUFUGWHW
+      MWIEZWMDEZBWMJKZWMCJKZFZWNWLEZWEWFWQXALWGWEWFMZWQXAWMBCNOUHZXAWHXBWRWSWTW
+      HXBLWHWRWSWTMZMZXBWHXFWNDEZWJWNJKZWNWKJKZFZXBWHXFXGXHXIWHWRXGXEWGWEWRXGLW
+      FWRWGXGWMAUIUJUNUKWEWGXFXHLWFWEWGMZWRXEXHWEWGWRXEXHLZWEWRWGXLWEWRWGFZWSXH
+      WTXMWSXHWEBPEZWRWMPEZWGAPEZWSXHTBQZWMQZAQZBWMAULROUKUMUOVDUPWFWGXFXILWEWF
+      WGMWRXEXIWFWGWRXEXILZWRWFWGXTWRWFWGFZWTXIWSYAWTXIWRXOWFCPEZWGXPWTXITXRCQZ
+      XSWMCAULROUQURUOVDUSUTWHXBXJWHWJDEZWKDEZXBXJTWEWGYDWFBAUIUPZWFWGYEWECAUIU
+      SZWNWJWKNVAVBVEVCVFVCVEWHWOWLEZWODEZWJWOJKZWOWKJKZFZWPWIEZWHYHYLWHYDYEYHY
+      LTYFYGWOWJWKNVAOZYLWHYMYIYJYKWHYMLWHYIYJYKMZMZYMWHYPWPDEZBWPJKZWPCJKZFZYM
+      WHYPYQYRYSWHYIYQYOWGWEYIYQLWFYIWGYQWOAVGUJUNUKWEWGYPYRLWFXKYIYOYRWEWGYIYO
+      YRLWEWGYIFZYJYRYKUUAYJYRWEXNWGXPYIWOPEZYJYRTXQXSWOQZBAWOVHROUKUOVDUPWFWGY
+      PYSLZWEWGWFUUDWGWFMYIYOYSWGWFYIYOYSLZYIWGWFUUEYIWGWFFZYKYSYJUUFYSYKYIUUBW
+      GXPWFYBYSYKTUUCXSYCWOACVIRVBUQURUOVDVJUSUTWEWFYTYMLWGXCYMYTWPBCNVBUHVEVCV
+      FVCVEWHWQWRYHYIWMWPSZWOWNSZTZWHWQWRWHWQMWRWSWTWHWQXAXDVPVKVLWHYHYIWHYHMYI
+      YJYKWHYHYLYNVPVKVLWGWEWRYIMUUILWFWGWRYIUUIYIWGWRUUIYIWOVMEZWGAVMEZWRWMVME
+      ZUUIWOVQAVQWMVQUUJUUKUULFZUUGWOAWMIHZSZUUHUUMWPWMSUUNWOSUUGUUOWOAWMVNWPWM
+      VOUUNWOVOVRUUMUUNWNWOUUKUULUUNWNSUUJAWMVSUSVTWARURWBUNWCWD $.
+  $}
+
+  $( A 1-based finite set of sequential integers is empty iff it ends at index
+     ` 0 ` .  (Contributed by Paul Chapman, 22-Jun-2011.) $)
+  fz1n $p |- ( N e. NN0 -> ( ( 1 ... N ) = (/) <-> N = 0 ) ) $=
+    ( cn0 wcel c1 clt wbr cfz co c0 wceq cc0 cz wb 1z nn0z fzn sylancr nn0lt10b
+    bitr3d ) ABCZADEFZDAGHIJZAKJTDLCALCUAUBMNAODAPQARS $.
+
+  $( Two ways to say a finite 1-based sequence is empty.  (Contributed by Paul
+     Chapman, 26-Oct-2012.) $)
+  0fz1 $p |- ( ( N e. NN0 /\ F Fn ( 1 ... N ) ) -> ( F = (/) <-> N = 0 ) ) $=
+    ( c1 cfz co wfn c0 wceq cn0 wcel cc0 fndmu sylan2br ex fneq2 syl6bb biimpcd
+    fn0 impbid fz1n sylan9bbr ) ACBDEZFZAGHZUBGHZBIJBKHUCUDUEUCUDUEUDUCAGFZUEAR
+    ZUBGALMNUEUCUDUEUCUFUDUBGAOUGPQSBTUA $.
+
+  $( There are no integers between 1 and 0.  (Contributed by Jeff Madsen,
+     16-Jun-2010.)  (Proof shortened by Mario Carneiro, 28-Apr-2015.) $)
+  fz10 $p |- ( 1 ... 0 ) = (/) $=
+    ( cc0 c1 clt wbr cfz co c0 wceq 0lt1 cz wcel wb 1z 0z fzn mp2an mpbi ) ABCD
+    ZBAEFGHZIBJKAJKRSLMNBAOPQ $.
+
+  $( Membership of an integer greater than L decreased by ( L - M ) in an M
+     based finite set of sequential integers.  (Contributed by Alexander van
+     der Vekens, 14-Sep-2018.) $)
+  uzsubsubfz $p |- ( ( L e. ( ZZ>= ` M ) /\ N e. ( ZZ>= ` L ) )
+                     -> ( N - ( L - M ) ) e. ( M ... N ) ) $=
+    ( cuz wcel cmin co cz cle wbr w3a wi wa adantr cr zre adantl syl2anr cc zcn
+    cfv cfz eluz2 simpr zsubcl adantlr zsubcld 3jca 3adant3 com12 imp caddc cc0
+    subge0d exbiri com23 3impia impcom resubcl addge02d mpbid 3ad2ant2 3ad2ant1
+    ex subsubd breqtrrd subge0 imp31 subge02d jca elfz2 sylanbrc 3adant2 syl5bi
+    wb sylbi ) ABDUAEZCADUAEZCABFGZFGZBCUBGEZVQBHEZAHEZBAIJZKZVRWALBAUCVRWCCHEZ
+    ACIJZKZWEWAACUCWBWDWHWALWCWBWDMZWHWAWIWHMZWBWFVTHEZKZBVTIJZVTCIJZMWAWIWHWLW
+    BWHWLLWDWHWBWLWCWFWBWLLWGWCWFMZWBWLWOWBMZWBWFWKWOWBUDWOWFWBWCWFUDNZWPCVSWQW
+    CWBVSHEWFABUEUFUGUHVDUIUJNUKWJWMWNWJBCAFGZBULGZVTIWJUMWRIJZBWSIJWHWIWTWCWFW
+    GWIWTLWOWIWGWTWOWIWTWGWOWIMCAWOCOEZWIWFXAWCCPZQNWOAOEZWIWCXCWFAPZNNUNUOUPUQ
+    URWJBWRWIBOEZWHWBXEWDBPZNZNWHWROEZWIWCWFXHWGWFXAXCXHWCXBXDCAUSRUIQUTVAWJCAB
+    WHCSEZWIWFWCXIWGCTVBQWHASEZWIWCWFXJWGATVCQWIBSEZWHWBXKWDBTNNVEVFWJUMVSIJZWN
+    WBWDWHXLWBWHWDXLWBWHXLWDWHXCXEXLWDVOWBWCWFXCWGXDVCZXFABVGRUOUPVHWJCVSWHXAWI
+    WFWCXAWGXBVBQWHXCXEVSOEWIXMXGABUSRVIVAVJVTBCVKVLVDVMVNVPUK $.
+
+  $( Membership of an integer greater than L decreased by ( L - 1 ) in a 1
+     based finite set of sequential integers.  (Contributed by Alexander van
+     der Vekens, 14-Sep-2018.) $)
+  uzsubsubfz1 $p |- ( ( L e. NN /\ N e. ( ZZ>= ` L ) )
+                      -> ( N - ( L - 1 ) ) e. ( 1 ... N ) ) $=
+    ( cn wcel c1 cuz cfv cmin co cfz elnnuz uzsubsubfz sylanb ) ACDAEFGDBAFGDBA
+    EHIHIEBJIDAKAEBLM $.
+
+  $( Membership of an integer greater than 2 decreased by 2 in a 1 based finite
+     set of sequential integers.  (Contributed by Alexander van der Vekens,
+     14-Sep-2018.) $)
+  ige3m2fz $p |- ( N e. ( ZZ>= ` 3 ) -> ( N - 2 ) e. ( 1 ... N ) ) $=
+    ( c3 cuz cfv wcel c2 cmin co c1 cfz wceq 3m1e2 eqcomi oveq2d cn uzsubsubfz1
+    a1i 3nn mpan eqeltrd ) ABCDEZAFGHABIGHZGHZIAJHZUAFUBAGFUBKUAUBFLMQNBOEUAUCU
+    DERBAPST $.
+
+  ${
+    $d M x $.  $d N x $.  $d K x $.
+    $( Split a finite interval of integers into two parts.  (Contributed by
+       Mario Carneiro, 13-Apr-2016.) $)
+    fzsplit2 $p |- ( ( ( K + 1 ) e. ( ZZ>= ` M ) /\ N e. ( ZZ>= ` K ) ) ->
+      ( M ... N ) = ( ( M ... K ) u. ( ( K + 1 ) ... N ) ) ) $=
+      ( vx co cuz cfv wcel wa cfz wo cle wbr cz adantl syl2anr wb elfzuz syl2an
+      elfzuz3 c1 caddc cun cv elfzelz zred eluzel2 lelttric elfz5 simpl eluzelz
+      clt cr syl eluz elfzuzb rbaib zltp1le 3bitr4d mpbird simpr uztrn sylanbrc
+      orbi12d jaodan impbida elun syl6bbr eqrdv ) AUAUBEZBFGZHZCAFGHZIZDBCJEZBA
+      JEZVJCJEZUCZVNDUDZVOHZVSVPHZVSVQHZKZVSVRHVNVTWCVNVTIZWCVSALMZAVSULMZKZVTV
+      SUMHAUMHWGVNVTVSVSBCUEZUFVNAVMANHZVLACUGOZUFVSAUHPWDWAWEWBWFVTVSVKHZWIWAW
+      EQVNVSBCRWJVSBAUIPWDVSVJFGHZVJVSLMZWBWFVNVJNHZVSNHZWLWMQVTVNVLWNVLVMUJZBV
+      JUKUNWHVJVSUOSWDCVSFGZHZWBWLQVTWRVNVSBCTOWBWLWRVSVJCUPUQUNVNWIWOWFWMQVTWJ
+      WHAVSURSUSVDUTVNWAVTWBVNWAIWKWRVTWAWKVNVSBAROVNVMAWQHWRWAVLVMVAVSBATACVSV
+      BSVSBCUPZVCVNWBIWKWRVTWBWLVLWKVNVSVJCRWPVJVSBVBPWBWRVNVSVJCTOWSVCVEVFVSVP
+      VQVGVHVI $.
+
+    $( Split a finite interval of integers into two parts.  (Contributed by
+       Jeff Madsen, 17-Jun-2010.)  (Revised by Mario Carneiro, 13-Apr-2016.) $)
+    fzsplit $p |- ( K e. ( M ... N ) ->
+      ( M ... N ) = ( ( M ... K ) u. ( ( K + 1 ) ... N ) ) ) $=
+      ( cfz co wcel caddc cuz cfv cun wceq elfzuz peano2uz syl elfzuz3 fzsplit2
+      c1 syl2anc ) ABCDEZFZAQGEZBHIZFZCAHIFSBADEUACDEJKTAUBFUCABCLBAMNABCOABCPR
+      $.
+
+    $d J x $.  $d A x $.
+    $( Condition for two finite intervals of integers to be disjoint.
+       (Contributed by Jeff Madsen, 17-Jun-2010.) $)
+    fzdisj $p |- ( K < M -> ( ( J ... K ) i^i ( M ... N ) ) = (/) ) $=
+      ( vx clt wbr cfz co cin cv wcel wa wn elin cle cz adantl zred adantr cr
+      elfzel1 elfzelz elfzel2 elfzle1 elfzle2 letrd lenltd mpbid sylbi eq0rdv
+      con2i ) BCFGZEABHIZCDHIZJZEKZUPLZUMURUQUNLZUQUOLZMZUMNZUQUNUOOVACBPGVBVAC
+      UQBVACUTCQLUSUQCDUBRSZUTUQUALUSUTUQUQCDUCSRVABUSBQLUTUQABUDTSZUTCUQPGUSUQ
+      CDUERUSUQBPGUTUQABUFTUGVACBVCVDUHUIUJULUK $.
+  $}
+
+  $( 0-based and 1-based finite sets of sequential integers are equinumerous.
+     (Contributed by Paul Chapman, 11-Apr-2009.) $)
+  fz01en $p |- ( N e. ZZ -> ( 0 ... ( N - 1 ) ) ~~ ( 1 ... N ) ) $=
+    ( cz wcel cc0 c1 cmin co cfz caddc cen wbr peano2zm 0z 1z fzen mp3an13 wceq
+    syl 0p1e1 cc a1i zcn ax-1cn npcan sylancl oveq12d breqtrd ) ABCZDAEFGZHGZDE
+    IGZUIEIGZHGZEAHGJUHUIBCZUJUMJKZALDBCUNEBCUOMNEDUIOPRUHUKEULAHUKEQUHSUAUHATC
+    ETCULAQAUBUCAEUDUEUFUG $.
+
+  $( A member of a finite set of sequential integers starting at 1 is a
+     positive integer.  (Contributed by NM, 24-Aug-2005.) $)
+  elfznn $p |- ( K e. ( 1 ... N ) -> K e. NN ) $=
+    ( c1 cfz co wcel cz cle wbr cn elfzelz elfzle1 elnnz1 sylanbrc ) ACBDEFAGFC
+    AHIAJFACBKACBLAMN $.
+
+  $( A nonempty finite range of integers contains its end point.  (Contributed
+     by Stefan O'Rear, 10-Oct-2014.) $)
+  elfz1end $p |- ( A e. NN <-> A e. ( 1 ... A ) ) $=
+    ( cn wcel c1 cfz co cuz cfv elnnuz biimpi cz nnz uzid eluzfz syl2anc elfznn
+    syl impbii ) ABCZADAEFCZSADGHCZAAGHCZTSUAAIJSAKCUBALAMQADANOAAPR $.
+
+  $( Subtraction closure for a member of a finite set of sequential integers.
+     (Contributed by NM, 16-Sep-2005.)  (Revised by Mario Carneiro,
+     28-Apr-2015.) $)
+  fznn0sub $p |- ( K e. ( M ... N ) -> ( N - K ) e. NN0 ) $=
+    ( cfz co wcel cuz cfv cmin cn0 elfzuz3 uznn0sub syl ) ABCDEFCAGHFCAIEJFABCK
+    ACLM $.
+
+  $( Subtracting the difference of a member of a finite range of integers and
+     the lower bound of the range from the difference of the upper bound and
+     the lower bound of the range results in the difference of the upper bound
+     of the range and the member.  (Contributed by Alexander van der Vekens,
+     27-May-2018.) $)
+  fzmmmeqm $p |- ( M e. ( L ... N )
+                   -> ( ( N - L ) - ( M - L ) ) = ( N - M ) ) $=
+    ( cfz co wcel cc w3a cmin wceq cz cle wa elfz2 3anim123i 3comr adantr sylbi
+    wbr zcn nnncan2 syl ) BACDEFZCGFZBGFZAGFZHZCAIEBAIEIECBIEJUCAKFZCKFZBKFZHZA
+    BLSBCLSMZMUGBACNUKUGULUIUJUHUGUIUDUJUEUHUFCTBTATOPQRCBAUAUB $.
+
+  $( Membership of a sum in a finite set of sequential integers.  (Contributed
+     by NM, 30-Jul-2005.) $)
+  fzaddel $p |- ( ( ( M e. ZZ /\ N e. ZZ ) /\ ( J e. ZZ /\ K e. ZZ ) ) ->
+         ( J e. ( M ... N ) <-> ( J + K ) e. ( ( M + K ) ... ( N + K ) ) ) ) $=
+    ( cz wcel wa cle wbr w3a caddc co cfz wb zaddcl cr zre leadd1 syl3an 3expb
+    simpl adantl adantlr 3com12 adantll 3anbi123d elfz1 adantr anandirs adantrl
+    2thd syl2an 3bitr4d ) CEFZDEFZGZAEFZBEFZGZGZUQCAHIZADHIZJZABKLZEFZCBKLZVDHI
+    ZVDDBKLZHIZJZACDMLFZVDVFVHMLFZUTUQVEVAVGVBVIUSUQVENUPUSUQVEUQURUAABOUKUBUNU
+    SVAVGNZUOUNUQURVMUNCPFUQAPFZURBPFZVMCQAQZBQZCABRSTUCUOUSVBVINZUNUOUQURVRUQU
+    OURVRUQVNUODPFURVOVRVPDQVQADBRSUDTUEUFUPVKVCNUSACDUGUHUPURVLVJNZUQUNUOURVSU
+    NURGVFEFVHEFVSUOURGCBODBOVDVFVHUGULUIUJUM $.
+
+  $( Membership of a difference in a finite set of sequential integers.
+     (Contributed by NM, 30-Jul-2005.) $)
+  fzsubel $p |- ( ( ( M e. ZZ /\ N e. ZZ ) /\ ( J e. ZZ /\ K e. ZZ ) ) ->
+         ( J e. ( M ... N ) <-> ( J - K ) e. ( ( M - K ) ... ( N - K ) ) ) ) $=
+    ( cz wcel wa cfz co cneg caddc cmin wb znegcl fzaddel cc zcn anim12i negsub
+    wceq sylanr2 adantl oveqan12d anandirs adantrl eleq12d syl2an bitrd ) CEFZD
+    EFZGZAEFZBEFZGZGACDHIFZABJZKIZCUPKIZDUPKIZHIZFZABLIZCBLIZDBLIZHIZFZUMUKULUP
+    EFUOVAMBNAUPCDOUAUKCPFZDPFZGZAPFZBPFZGZVAVFMUNUIVGUJVHCQDQRULVJUMVKAQBQRVIV
+    LGUQVBUTVEVLUQVBTVIABSUBVIVKUTVETZVJVGVHVKVMVGVKGVHVKGURVCUSVDHCBSDBSUCUDUE
+    UFUGUH $.
+
+  $( A finite set of sequential integers can represent an ordered pair.
+     (Contributed by NM, 31-Oct-2005.)  (Revised by Mario Carneiro,
+     28-Apr-2015.) $)
+  fzopth $p |- ( N e. ( ZZ>= ` M ) ->
+                ( ( M ... N ) = ( J ... K ) <-> ( M = J /\ N = K ) ) ) $=
+    ( cuz cfv wcel cfz co wceq wa wss eluzfz1 adantr eleqtrd uzss 3syl eleqtrrd
+    elfzuz eqssd simpr elfzuz2 cz wb eluzel2 uz11 mpbid eluzfz2 elfzuz3 eluzelz
+    syl jca ex oveq12 impbid1 ) DCEFZGZCDHIZABHIZJZCAJZDBJZKZUQUTVCUQUTKZVAVBVD
+    UPAEFZJZVAVDUPVEVDCUSGZCVEGUPVELVDCURUSUQCURGUTCDMNUQUTUAZOZCABSACPQVDAURGA
+    UPGVEUPLVDAUSURVDVGBVEGZAUSGVICABUBZABMQVHRACDSCAPQTVDCUCGZVFVAUDUQVLUTCDUE
+    NCAUFUKUGVDDEFZBEFZJZVBVDVMVNVDBURGDVNGVMVNLVDBUSURVDVGVJBUSGVIVKABUHQVHRBC
+    DUIBDPQVDDUSGBVMGVNVMLVDDURUSUQDURGUTCDUHNVHODABUIDBPQTVDDUCGZVOVBUDUQVPUTC
+    DUJNDBUFUKUGULUMCADBHUNUO $.
+
+  $( Two ways to express a nondecreasing sequence of four integers.
+     (Contributed by Stefan O'Rear, 15-Aug-2015.) $)
+  fzass4 $p |- ( ( B e. ( A ... D ) /\ C e. ( B ... D ) ) <->
+      ( B e. ( A ... C ) /\ C e. ( A ... D ) ) ) $=
+    ( cuz cfv wcel wa cfz co simpll simprl uztrn ancoms ad2ant2r simprr elfzuzb
+    jca jca32 anbi12i ad2ant2l simplr impbii 3bitr4i ) BAEFZGZDBEFZGZHZCUGGZDCE
+    FGZHZHZUFUJHZCUEGZUKHZHZBADIJZGZCBDIJGZHBACIJGZCURGZHUMUQUMUNUOUKUMUFUJUFUH
+    ULKUIUJUKLRUFUJUOUHUKUJUFUOBCAMNOUIUJUKPSUQUIUJUKUQUFUHUFUJUPKUJUKUHUFUOUKU
+    JUHCDBMNUARUFUJUPUBUNUOUKPSUCUSUIUTULBADQCBDQTVAUNVBUPBACQCADQTUD $.
+
+$(
+  @{
+    @d j K @.  @d j M @.  @d j N @.
+    @( Union of two adjacent finite sets of sequential integers. @)
+    fzunt @p |- ( ( ( K e. ZZ /\ M e. ZZ /\ N e. ZZ ) /\ ( K <_ M /\ M <_ N ) )
+                 -> ( ( K ... M ) u. ( M ... N ) ) = ( K ... N ) ) @=
+      ( vj cz wcel w3a cle wbr wa cfz co cun cv wo cr wb wi letr expd com23
+      3exp com3l imp42 adantlll adantrl anim2d 3expa imp adantlrl adantrr
+      anim1d jaod impbid exp42 com34 ex 3imp zre syl3anOLD syl5OLD pm5.32d andi
+      bicomi syl5bbOLD elfz1 3anass syl6bb 3adant3 adantr 3adant1 orbi12d
+      3adant2 3bitr4d elun eqrdv ) AEFZBEFZCEFZGZABHIZBCHIZJZJZDABKLZBCKLZMZACK
+      LZWDDNZWEFZWIWFFZOZWIWHFZWIWGFWDWIEFZAWIHIZWIBHIZJZJZWNBWIHIZWICHIZJZJZOZ
+      WNWOWTJZJZWLWMWDWNWQXAOZJZXEXCWDWNXFXDWDWIPFZXFXDQZWNVTWCXHXIRZAPFZBPFZCP
+      FZWCXJRZVQVRVSXKXLXMXNXKXLXMXNRXKXLJZXMXHWCXIXOXMXHWCXIXOXMXHJZJZWCJZXFXD
+      XRWQXDXAXRWPWTWOXQWBWPWTRZWAXLXPWBXSXKXLXMXHWBXSXHXLXMWBXSRZXHXLXMXTXHXLX
+      MGZWPWBWTYAWPWBWTWIBCSTUAUBUCUDUEUFUGXRWSWOWTXQWAWSWORZWBXOXHWAYBXMXOXHJZ
+      WAYBYCWAWSWOXKXLXHWAWSJWORABWISUHTUIUJUKULUM?UNUOUPUQURAUSBUSCUSUTUIWIUSV
+      AVBXGXCWNWQXAVCVDVEWDWJWRWKXBVTWJWRQZWCVQVRYDVSVQVRJWJWNWOWPGWRWIABVFWNWO
+      WPVGVHVIVJVTWKXBQZWCVRVSYEVQVRVSJWKWNWSWTGXBWIBCVFWNWSWTVGVHVKVJVLVTWMXEQ
+      ZWCVQVSYFVRVQVSJWMWNWOWTGXEWIACVFWNWOWTVGVHVMVJVNWIWEWFVOVEVP @.
+      @( [ ?] @) @( [21-Jul-2005] @)
+  @}
+$)
+
+  ${
+    $d k M $.  $d k N $.  $d k K $.  $d k V $.
+    $( Subset relationship for finite sets of sequential integers.
+       (Contributed by NM, 28-Sep-2005.)  (Proof shortened by Mario Carneiro,
+       28-Apr-2015.) $)
+    fzss1 $p |- ( K e. ( ZZ>= ` M ) -> ( K ... N ) C_ ( M ... N ) ) $=
+      ( vk cuz cfv wcel co cv wa elfzuz id uztrn syl2anr elfzuz3 adantl elfzuzb
+      cfz sylanbrc ex ssrdv ) ABEFZGZDACRHZBCRHZUCDIZUDGZUFUEGZUCUGJUFUBGZCUFEF
+      GZUHUGUFAEFGUCUIUCUFACKUCLAUFBMNUGUJUCUFACOPUFBCQSTUA $.
+
+    $( Subset relationship for finite sets of sequential integers.
+       (Contributed by NM, 4-Oct-2005.)  (Revised by Mario Carneiro,
+       30-Apr-2015.) $)
+    fzss2 $p |- ( N e. ( ZZ>= ` K ) -> ( M ... K ) C_ ( M ... N ) ) $=
+      ( vk cuz cfv wcel cfz co cv wa elfzuz adantl elfzuz3 uztrn sylan2 elfzuzb
+      sylanbrc ex ssrdv ) CAEFGZDBAHIZBCHIZUADJZUBGZUDUCGZUAUEKUDBEFGZCUDEFZGZU
+      FUEUGUAUDBALMUEUAAUHGUIUDBANACUDOPUDBCQRST $.
+
+    $( A finite set of sequential integers is a subset of an upper set of
+       integers.  (Contributed by NM, 28-Oct-2005.) $)
+    fzssuz $p |- ( M ... N ) C_ ( ZZ>= ` M ) $=
+      ( vk cfz co cuz cfv cv elfzuz ssriv ) CABDEAFGCHABIJ $.
+
+    $( A finite interval of integers with one element.  (Contributed by Jeff
+       Madsen, 2-Sep-2009.) $)
+    fzsn $p |- ( M e. ZZ -> ( M ... M ) = { M } ) $=
+      ( vk cz wcel cfz co csn cv elfz1eq elfz3 eleq1 syl5ibrcom impbid2 syl6bbr
+      wceq elsn eqrdv ) ACDZBAAEFZAGZRBHZSDZUAAOZUATDRUBUCUAAIRUBUCASDAJUAASKLM
+      BAPNQ $.
+
+    $( Subset relationship for finite sets of sequential integers.
+       (Contributed by NM, 21-Jul-2005.)  (Revised by Mario Carneiro,
+       28-Apr-2015.) $)
+    fzssp1 $p |- ( M ... N ) C_ ( M ... ( N + 1 ) ) $=
+      ( vk cfz co c1 caddc cv wcel cuz cfv wss elfzel2 uzid peano2uz fzss2 4syl
+      cz id sseldd ssriv ) CABDEZABFGEZDEZCHZUBIZUBUDUEUFBRIBBJKZIUCUGIUBUDLUEA
+      BMBNBBOBAUCPQUFSTUA $.
+  $}
+
+  $( Join a successor to the end of a finite set of sequential integers.
+     (Contributed by NM, 19-Jul-2008.)  (Revised by Mario Carneiro,
+     28-Apr-2015.) $)
+  fzsuc $p |- ( N e. ( ZZ>= ` M ) ->
+                ( M ... ( N + 1 ) ) = ( ( M ... N ) u. { ( N + 1 ) } ) ) $=
+    ( cuz cfv wcel c1 caddc co cfz cun csn peano2uz eluzfz2 syl peano2fzr mpdan
+    wceq fzsplit cz eluzelz fzsn 3syl uneq2d eqtrd ) BACDZEZABFGHZIHZABIHZUGUGI
+    HZJZUIUGKZJUFBUHEZUHUKQUFUGUHEZUMUFUGUEEZUNABLZAUGMNBAUGOPBAUGRNUFUJULUIUFU
+    OUGSEUJULQUPAUGTUGUAUBUCUD $.
+
+  $( Join a predecessor to the beginning of a finite set of sequential
+     integers.  (Contributed by AV, 24-Aug-2019.) $)
+  fzpred $p |- ( N e. ( ZZ>= ` M )
+                 -> ( M ... N ) = ( { M } u. ( ( M + 1 ) ... N ) ) ) $=
+    ( cuz cfv wcel cfz co c1 caddc cun wceq eluzel2 uzid peano2uz 3syl fzsplit2
+    csn cz mpancom fzsn syl uneq1d eqtrd ) BACDZEZABFGZAAFGZAHIGZBFGZJZAQZUIJUH
+    UDEZUEUFUJKUEAREZAUDEULABLZAMAANOAABPSUEUGUKUIUEUMUGUKKUNATUAUBUC $.
+
+  $( A finite set of sequential integers is disjoint with its predecessor.
+     (Contributed by AV, 24-Aug-2019.) $)
+  fzpreddisj $p |- ( N e. ( ZZ>= ` M )
+                 -> ( { M } i^i ( ( M + 1 ) ... N ) ) = (/) ) $=
+    ( cuz cfv wcel csn c1 caddc co cfz cin c0 wn cz cle wbr wa cc0 1re cr incom
+    wceq w3a clt 0lt1 0re ltnlei mpbi wb eluzel2 zred leaddle0 sylancl intnanrd
+    mtbiri intnand elfz2 sylnibr disjsn sylibr syl5eq ) BACDEZAFZAGHIZBJIZKVEVC
+    KZLVCVEUAVBAVEEZMVFLUBVBVDNEBNEANEUCZVDAOPZABOPZQZQVGVBVKVHVBVIVJVBVIGROPZR
+    GUDPVLMUERGUFSUGUHVBATEGTEVIVLUIVBAABUJUKSAGULUMUOUNUPAVDBUQURVEAUSUTVA $.
+
+  $( Append an element to a finite set of sequential integers.  (Contributed by
+     NM, 19-Sep-2005.)  (Proof shortened by Mario Carneiro, 28-Apr-2015.) $)
+  elfzp1 $p |- ( N e. ( ZZ>= ` M ) ->
+    ( K e. ( M ... ( N + 1 ) ) <-> ( K e. ( M ... N ) \/ K = ( N + 1 ) ) ) ) $=
+    ( cuz cfv wcel c1 caddc co cfz csn cun wceq fzsuc eleq2d elun elsnc2 orbi2i
+    wo ovex bitri syl6bb ) CBDEFZABCGHIZJIZFABCJIZUDKZLZFZAUFFZAUDMZSZUCUEUHABC
+    NOUIUJAUGFZSULAUFUGPUMUKUJAUDCGHTQRUAUB $.
+
+  $( Subset relationship for finite sets of sequential integers.  (Contributed
+     by NM, 26-Jul-2005.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
+  fzp1ss $p |- ( M e. ZZ -> ( ( M + 1 ) ... N ) C_ ( M ... N ) ) $=
+    ( cz wcel cuz cfv c1 caddc co cfz wss uzid peano2uz fzss1 3syl ) ACDAAEFZDA
+    GHIZPDQBJIABJIKALAAMQABNO $.
+
+  $( Membership in a set of sequential integers with an appended element.
+     (Contributed by NM, 7-Dec-2005.)  (Revised by Mario Carneiro,
+     28-Apr-2015.) $)
+  fzelp1 $p |- ( K e. ( M ... N ) -> K e. ( M ... ( N + 1 ) ) ) $=
+    ( cfz co c1 caddc fzssp1 sseli ) BCDEBCFGEDEABCHI $.
+
+  $( Add one to an element of a finite set of integers.  (Contributed by Jeff
+     Madsen, 6-Jun-2010.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
+  fzp1elp1 $p |- ( K e. ( M ... N ) -> ( K + 1 ) e. ( M ... ( N + 1 ) ) ) $=
+    ( cfz co wcel c1 caddc cuz cfv elfzuz peano2uz syl elfzuz3 eluzp1p1 elfzuzb
+    sylanbrc ) ABCDEFZAGHEZBIJZFZCGHEZSIJFZSBUBDEFRATFUAABCKBALMRCAIJFUCABCNACO
+    MSBUBPQ $.
+
+  $( Shift membership in a finite sequence of naturals.  (Contributed by Scott
+     Fenton, 17-Jul-2013.) $)
+  fznatpl1 $p |- ( ( N e. NN /\ I e. ( 1 ... ( N - 1 ) ) ) ->
+           ( I + 1 ) e. ( 1 ... N ) ) $=
+    ( wcel c1 co cfz wa caddc cle wbr cr zred adantl peano2re syl wb 1re mp3an2
+    cz syl2anc cn cmin elfzelz ltp1d elfzle1 leadd1 mp3an13 mpbid ltletrd ltled
+    1red elfzle2 nnz adantr leaddsub mpbird peano2zd 1z elfz mpbir2and ) BUACZA
+    DBDUBEZFECZGZADHEZDBFECZDVEIJZVEBIJZVDDVEVDUKZVDAKCZVEKCVCVJVAVCAADVBUCZLMZ
+    ANOZVDDDDHEZVEVIVDDKCZVNKCVIDNOVMVDDVIUDVDDAIJZVNVEIJZVCVPVAADVBUEMVDVJVPVQ
+    PZVLVOVJVOVRQQDADUFUGOUHUIUJVDVHAVBIJZVCVSVAADVBULMVDVJBKCZVHVSPZVLVDBVABSC
+    ZVCBUMUNZLVJVOVTWAQADBUORTUPVDVESCZWBVFVGVHGPZVCWDVAVCAVKUQMWCWDDSCWBWEURVE
+    DBUSRTUT $.
+
+  ${
+    $d M m $.
+
+    $( A finite interval of integers with two elements.  (Contributed by Jeff
+       Madsen, 2-Sep-2009.) $)
+    fzpr $p |- ( M e. ZZ -> ( M ... ( M + 1 ) ) = { M , ( M + 1 ) } ) $=
+      ( vm cz wcel c1 caddc co cfz cpr cv wceq cuz cfv uzid elfzp1 syl csn fzsn
+      wo wb eleq2d elsn syl6bb orbi1d bitrd vex elpr syl6bbr eqrdv ) ACDZBAAEFG
+      ZHGZAUKIZUJBJZULDZUNAKZUNUKKZSZUNUMDUJUOUNAAHGZDZUQSZURUJAALMDUOVATANUNAA
+      OPUJUTUPUQUJUTUNAQZDUPUJUSVBUNARUABAUBUCUDUEUNAUKBUFUGUHUI $.
+
+    $( A finite interval of integers with three elements.  (Contributed by NM,
+       13-Sep-2011.)  (Revised by Mario Carneiro, 7-Mar-2014.) $)
+    fztp $p |- ( M e. ZZ -> ( M ... ( M + 2 ) )
+                 = { M , ( M + 1 ) , ( M + 2 ) } ) $=
+      ( cz wcel c1 caddc co cfz csn cun c2 ctp cuz cfv wceq uzid peano2uz fzsuc
+      cc ax-1cn syl6eqr 3syl zcn addass mp3an23 syl df-2 oveq2i oveq2d cpr fzpr
+      sneqd uneq12d df-tp 3eqtr3d ) ABCZAADEFZDEFZGFZAUPGFZUQHZIZAAJEFZGFAUPVBK
+      ZUOAALMZCUPVDCURVANAOAAPAUPQUAUOUQVBAGUOUQADDEFZEFZVBUOARCZUQVFNZAUBVGDRC
+      ZVIVHSSADDUCUDUEJVEAEUFUGTZUHUOVAAUPUIZVBHZIVCUOUSVKUTVLAUJUOUQVBVJUKULAU
+      PVBUMTUN $.
+  $}
+
+  ${
+    $d M k $.  $d N k $.
+    $( Join a successor to the end of a finite set of sequential integers.
+       (Contributed by Mario Carneiro, 7-Mar-2014.) $)
+    fzsuc2 $p |- ( ( M e. ZZ /\ N e. ( ZZ>= ` ( M - 1 ) ) ) ->
+                   ( M ... ( N + 1 ) ) = ( ( M ... N ) u. { ( N + 1 ) } ) ) $=
+      ( c1 cmin co cuz cfv wcel cz wceq caddc wo cfz csn cun cc oveq2d c0 sneqd
+      uneq12d uzp1 zcn npcan sylancl uncom un0 eqtri clt wbr zre ltm1d peano2zm
+      ax-1cn fzn mpdan mpbid fzsn 3eqtr4a eqtr4d oveq1 oveq2 eqeq12d syl5ibrcom
+      wb imp wa fveq2d eleq2d biimpa fzsuc syl jaodan sylan2 ) BACDEZFGHAIHZBVN
+      JZBVNCKEZFGZHZLABCKEZMEZABMEZVTNZOZJZVNBUAVOVPWEVSVOVPWEVOWEVPAVQMEZAVNME
+      ZVQNZOZJVOWFAAMEZWIVOVQAAMVOAPHCPHVQAJAUBUMACUCUDZQVORANZOZWLWIWJWMWLROWL
+      RWLUEWLUFUGVOWGRWHWLVOVNAUHUIZWGRJZVOAAUJUKVOVNIHWNWOVDAULAVNUNUOUPVOVQAW
+      KSTAUQURUSVPWAWFWDWIVPVTVQAMBVNCKUTZQVPWBWGWCWHBVNAMVAVPVTVQWPSTVBVCVEVOV
+      SVFBAFGZHZWEVOVSWRVOVRWQBVOVQAFWKVGVHVIABVJVKVLVM $.
+  $}
+
+  $( ` ( M ... ( N + 1 ) ) ` is the disjoint union of ` ( M ... N ) ` with
+     ` { ( N + 1 ) } ` .  (Contributed by Mario Carneiro, 7-Mar-2014.) $)
+  fzp1disj $p |- ( ( M ... N ) i^i { ( N + 1 ) } ) = (/) $=
+    ( cfz co c1 caddc csn cin c0 wceq wcel wn cle wbr elfzle2 elfzel2 zred ltp1
+    cr clt wb peano2re ltnle mpdan mpbid syl pm2.65i disjsn mpbir ) ABCDZBEFDZG
+    HIJUKUJKZLULUKBMNZUKABOULBSKZUMLZULBUKABPQUNBUKTNZUOBRUNUKSKUPUOUABUBBUKUCU
+    DUEUFUGUJUKUHUI $.
+
+  $( Remove a successor from the end of a finite set of sequential integers.
+     (Contributed by AV, 4-Sep-2019.) $)
+  fzdifsuc $p |- ( N e. ( ZZ>= ` M )
+                  -> ( M ... N ) = ( ( M ... ( N + 1 ) ) \ { ( N + 1 ) } ) ) $=
+    ( cuz cfv wcel c1 caddc co cfz csn cdif cun fzsuc difeq1d wceq uncom wss c0
+    cin wb ssun2 incom fzp1disj eqtri a1i uneqdifeq sylancr mpbii eqtr2d ) BACD
+    EZABFGHZIHZUKJZKABIHZUMLZUMKZUNUJULUOUMABMNUJUMUNLUOOZUPUNOZUMUNPUJUMUOQUMU
+    NSZROZUQURTUMUNUAUTUJUSUNUMSRUMUNUBABUCUDUEUMUNUOUFUGUHUI $.
+
+  ${
+    $d x A $.  $d x B $.  $d x F $.
+    $( Two ways of defining the first two values of a sequence on ` NN ` .
+       (Contributed by NM, 5-Sep-2011.) $)
+    fzprval $p |- ( A. x e. ( 1 ... 2 ) ( F ` x ) = if ( x = 1 , A , B )
+                  <-> ( ( F ` 1 ) = A /\ ( F ` 2 ) = B ) ) $=
+      ( cv cfv c1 wceq cif c2 cfz co wral cpr wa caddc df-2 fveq2 eqeq12d wne
+      cz wcel 1z fzpr ax-mp oveq2i preq2i 3eqtr4i raleqi 1ex iftrue 1ne2 necomi
+      2ex pm13.181 mpan2 neneqd iffalsed ralpr bitri ) AEZDFZVAGHZBCIZHZAGJKLZM
+      VEAGJNZMGDFZBHZJDFZCHZOVEAVFVGGGGPLZKLZGVLNZVFVGGUAUBVMVNHUCGUDUEJVLGKQUF
+      JVLGQUGUHUIVEVIVKAGJUJUNVCVBVHVDBVAGDRVCBCUKSVAJHZVBVJVDCVAJDRVOVCBCVOVAG
+      VOJGTVAGTGJULUMVAJGUOUPUQURSUSUT $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.  $d x F $.
+    $( Two ways of defining the first three values of a sequence on ` NN ` .
+       (Contributed by NM, 13-Sep-2011.) $)
+    fztpval $p |- ( A. x e. ( 1 ... 3 ) ( F ` x )
+                      = if ( x = 1 , A , if ( x = 2 , B , C ) )
+                  <-> ( ( F ` 1 ) = A /\ ( F ` 2 ) = B /\ ( F ` 3 ) = C ) ) $=
+      ( cfv c1 wceq c2 c3 cfz co ctp caddc ax-mp fveq2 eqeq12d wne gtneii neeq1
+      cv cif wral w3a cz wcel 1z fztp df-3 2cn ax-1cn addcomi eqtri oveq2i df-2
+      tpeq3 tpeq2 3eqtr4i raleqi 1ex 2ex 3ex iftrue 1lt2 mpbiri ifnefalse eqtrd
+      1re syl 1lt3 2re 2lt3 raltp bitri ) AUAZEFZVOGHZBVOIHZCDUBZUBZHZAGJKLZUCW
+      AAGIJMZUCGEFZBHZIEFZCHZJEFZDHZUDWAAWBWCGGINLZKLZGGGNLZWJMZWBWCGUEUFWKWMHU
+      GGUHOJWJGKJIGNLWJUIIGUJUKULUMZUNWCGIWJMZWMJWJHWCWOHWNJWJGIUPOIWLHWOWMHUOI
+      WLGWJUQOUMURUSWAWEWGWIAGIJUTVAVBVQVPWDVTBVOGEPVQBVSVCQVRVPWFVTCVOIEPVRVTV
+      SCVRVOGRZVTVSHZVRWPIGRGIVHVDSVOIGTVEVOGBVSVFZVIVRCDVCVGQVOJHZVPWHVTDVOJEP
+      WSVTVSDWSWPWQWSWPJGRGJVHVJSVOJGTVEWRVIWSVOIRZVSDHWSWTJIRIJVKVLSVOJITVEVOI
+      CDVFVIVGQVMVN $.
+  $}
+
+  $( Reversal of start and end of a finite set of sequential integers.
+     (Contributed by NM, 25-Nov-2005.) $)
+  fzrev $p |- ( ( ( M e. ZZ /\ N e. ZZ ) /\ ( J e. ZZ /\ K e. ZZ ) ) ->
+         ( K e. ( ( J - N ) ... ( J - M ) ) <-> ( J - K ) e. ( M ... N ) ) ) $=
+    ( cz wcel wa cmin co cle wbr cfz wb cr zre syl3an 3expb zsubcl ancoms elfz
+    ancom suble 3comr adantll lesub adantlr anbi12d syl5rbbr ad2ant2lr ad2ant2r
+    simprr syl3anc adantl simpll simplr 3bitr4d ) CEFZDEFZGZAEFZBEFZGZGZADHIZBJ
+    KZBACHIZJKZGZCABHIZJKZVIDJKZGZBVDVFLIFZVICDLIFZVLVKVJGVCVHVKVJUAVCVKVEVJVGU
+    RVBVKVEMZUQURUTVAVOUTVAURVOUTANFZVABNFZURDNFVOAOZBOZDOABDUBPUCQUDUQVBVJVGMZ
+    URUQUTVAVTUQCNFUTVPVAVQVTCOVRVSCABUEPQUFUGUHVCVAVDEFZVFEFZVMVHMUSUTVAUKURUT
+    WAUQVAUTURWAADRSUIUQUTWBURVAUTUQWBACRSUJBVDVFTULVCVIEFZUQURVNVLMVBWCUSABRUM
+    UQURVBUNUQURVBUOVICDTULUP $.
+
+  $( Reversal of start and end of a finite set of sequential integers.
+     (Contributed by NM, 25-Nov-2005.) $)
+  fzrev2 $p |- ( ( ( M e. ZZ /\ N e. ZZ ) /\ ( J e. ZZ /\ K e. ZZ ) ) ->
+         ( K e. ( M ... N ) <-> ( J - K ) e. ( ( J - N ) ... ( J - M ) ) ) ) $=
+    ( cz wcel wa cmin co cfz wb simpl zsubcl jca fzrev sylan2 wceq cc zcn nncan
+    syl2an adantl eleq1d bitr2d ) CEFDEFGZAEFZBEFZGZGZABHIZADHIACHIJIFZAUJHIZCD
+    JIZFZBUMFUHUEUFUJEFZGUKUNKUHUFUOUFUGLABMNAUJCDOPUIULBUMUHULBQZUEUFARFBRFUPU
+    GASBSABTUAUBUCUD $.
+
+  $( Reversal of start and end of a finite set of sequential integers.
+     (Contributed by NM, 25-Nov-2005.) $)
+  fzrev2i $p |- ( ( J e. ZZ /\ K e. ( M ... N ) )
+                 -> ( J - K ) e. ( ( J - N ) ... ( J - M ) ) ) $=
+    ( cz wcel co wa cmin simpr wb elfzel1 adantl elfzel2 simpl elfzelz syl22anc
+    cfz fzrev2 mpbid ) AEFZBCDRGFZHZUBABIGADIGACIGRGFZUAUBJUCCEFZDEFZUABEFZUBUD
+    KUBUEUABCDLMUBUFUABCDNMUAUBOUBUGUABCDPMABCDSQT $.
+
+  $( The "complement" of a member of a finite set of sequential integers.
+     (Contributed by NM, 20-Nov-2005.) $)
+  fzrev3 $p |- ( K e. ZZ -> ( K e. ( M ... N )
+                <-> ( ( M + N ) - K ) e. ( M ... N ) ) ) $=
+    ( cz wcel cfz co caddc cmin w3a wa simpl elfzel1 adantl elfzel2 3jca wb zcn
+    cc 3adant1 wceq pncan pncan2 syl2an eleq2d 3simpc zaddcl simp1 fzrev bitr3d
+    oveq12d syl12anc pm5.21nd ) ADEZABCFGZEZBCHGZAIGZUOEZUNBDEZCDEZJZUNUPKUNUTV
+    AUNUPLUPUTUNABCMNUPVAUNABCONPUNUSKUNUTVAUNUSLUSUTUNURBCMNUSVAUNURBCONPVBAUQ
+    CIGZUQBIGZFGZEZUPUSUTVAVFUPQUNUTVAKZVEUOAUTBSEZCSEZVEUOUAVABRCRVHVIKVCBVDCF
+    BCUBBCUCUKUDUETVBVGUQDEZUNVFUSQUNUTVAUFUTVAVJUNBCUGTUNUTVAUHUQABCUIULUJUM
+    $.
+
+  $( The "complement" of a member of a finite set of sequential integers.
+     (Contributed by NM, 20-Nov-2005.) $)
+  fzrev3i $p |- ( K e. ( M ... N ) -> ( ( M + N ) - K ) e. ( M ... N ) ) $=
+    ( cfz co wcel caddc cmin cz wb elfzelz fzrev3 syl ibi ) ABCDEZFZBCGEAHEOFZP
+    AIFPQJABCKABCLMN $.
+
+  $( Finite set of sequential integers starting at 1.  (Contributed by NM,
+     31-Aug-2011.)  (Revised by Mario Carneiro, 18-Jun-2015.) $)
+  fznn $p |- ( N e. ZZ
+              -> ( K e. ( 1 ... N ) <-> ( K e. NN /\ K <_ N ) ) ) $=
+    ( c1 cfz co wcel cn cuz cfv wa cz cle wbr elfzuzb elnnuz anbi1i bitr4i eluz
+    wb nnz sylan ancoms pm5.32da syl5bb ) ACBDEFZAGFZBAHIFZJZBKFZUFABLMZJUEACHI
+    FZUGJUHACBNUFUKUGAOPQUIUFUGUJUFUIUGUJSZUFAKFUIULATABRUAUBUCUD $.
+
+  $( Membership in a 1 based finite set of sequential integers.  (Contributed
+     by AV, 30-Oct-2018.) $)
+  elfz1b $p |- ( N e. ( 1 ... M ) <-> ( N e. NN /\ M e. NN /\ N <_ M ) ) $=
+    ( c1 wcel cz w3a cle wbr wa cn wi cc0 clt simpl 0red 1red zre 3jca adantr
+    cr cfz co elfz2 a1i simpr ltletr imp syl12anc elnnz sylanbrc 3ad2ant3 com12
+    0lt1 impcom 3anim123i 3com23 letr syl ltletrd 3ad2ant2 syld simprr 1zzd nnz
+    ex 3ad2ant1 nnge1 simp3 jca32 impbii bitri ) BCAUAUBDCEDZAEDZBEDZFZCBGHZBAG
+    HZIZIZBJDZAJDZVQFZBCAUCVSWBVSVTWAVQVRVOVTVPVOVTKVQVOVPVTVNVLVPVTKVMVNVPVTVN
+    VPIZVNLBMHZVTVNVPNWCLTDZCTDZBTDZFZLCMHZVPWDVNWHVPVNWEWFWGVNOVNPBQZRSWIWCUMU
+    DVNVPUEWHWIVPIWDLCBUFUGUHBUIUJVEUKULSUNVOVRWAVOVRCAGHZWAVOWFWGATDZFZVRWKKVL
+    VNVMWMVLWFVNWGVMWLCQWJAQZUOUPCBAUQURVMVLWKWAKVNVMWKWAVMWKIZVMLAMHWAVMWKNWOL
+    CAWOOWOPVMWLWKWNSWIWOUMUDVMWKUEUSAUIUJVEUTVAUGVOVPVQVBRWBVOVPVQWBVLVMVNWBVC
+    WAVTVMVQAVDUTVTWAVNVQBVDVFRVTWAVPVQBVGVFVTWAVQVHVIVJVK $.
+
+  $( Membership in a finite set of sequential integers.  (Contributed by Paul
+     Chapman, 21-Mar-2011.) $)
+  elfzm11 $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( K e. ( M ... ( N - 1 ) ) <->
+                                         ( K e. ZZ /\ M <_ K /\ K < N ) ) ) $=
+    ( cz wcel wa c1 cmin co cfz cle wbr w3a clt wb peano2zm elfz1 sylan2 3anass
+    zltlem1 anbi2d expcom pm5.32d 3bitr4g adantl bitr4d ) BDEZCDEZFABCGHIZJIEZA
+    DEZBAKLZAUIKLZMZUKULACNLZMZUHUGUIDEUJUNOCPABUIQRUHUPUNOUGUHUKULUOFZFUKULUMF
+    ZFUPUNUHUKUQURUKUHUQUROUKUHFUOUMULACTUAUBUCUKULUOSUKULUMSUDUEUF $.
+
+  ${
+    $d k M $.  $d k N $.
+    $( Express an upper integer set as the disjoint (see ~ uzdisj ) union of
+       the first ` N ` values and the rest.  (Contributed by Mario Carneiro,
+       24-Apr-2014.) $)
+    uzsplit $p |- ( N e. ( ZZ>= ` M ) -> ( ZZ>= ` M ) =
+                  ( ( M ... ( N - 1 ) ) u. ( ZZ>= ` N ) ) ) $=
+      ( vk cuz cfv wcel c1 cmin co cfz wo wa cle wbr cr eluzelre syl2an eluzelz
+      cz wb cun clt lelttric eluz eluzel2 w3a elfzm11 df-3an syl6bb syl2anr jca
+      cv eluzle adantl biantrurd bitr4d orbi12d mpbird orcomd elfzuz a1i expcom
+      ex wi uztrn jaod impbid elun syl6bbr eqrdv ) BADEZFZCVKABGHIZJIZBDEZUAZVL
+      CULZVKFZVQVNFZVQVOFZKZVQVPFVLVRWAVLVRWAVLVRLZVTVSWBVTVSKBVQMNZVQBUBNZKZVL
+      BOFVQOFWEVRABPAVQPBVQUCQWBVTWCVSWDVLBSFZVQSFZVTWCTVRABRZAVQRZBVQUDQWBVSWG
+      AVQMNZLZWDLZWDVRASFZWFVSWLTVLAVQUEWHWMWFLVSWGWJWDUFWLVQABUGWGWJWDUHUIUJWB
+      WKWDVRWKVLVRWGWJWIAVQUMUKUNUOUPUQURUSVCVLVSVRVTVSVRVDVLVQAVMUTVAVTVLVRBVQ
+      AVEVBVFVGVQVNVOVHVIVJ $.
+
+    $( The first ` N ` elements of an upper integer set are distinct from any
+       later members.  (Contributed by Mario Carneiro, 24-Apr-2014.) $)
+    uzdisj $p |- ( ( M ... ( N - 1 ) ) i^i ( ZZ>= ` N ) ) = (/) $=
+      ( vk c1 cmin co cfz cuz cfv cin c0 wss wceq wcel wbr cle syl mpbid zred
+      cz cv elin simprbi eluzle eluzel2 eluzelz zlem1lt syl2anc simplbi elfzle2
+      clt wb wn peano2zm lenltd pm2.21dd ssriv ss0 ax-mp ) ABDEFZGFZBHIZJZKLVCK
+      MCVCKCUAZVCNZUTVDUKOZVDKNVEBVDPOZVFVEVDVBNZVGVEVDVANZVHVDVAVBUBZUCZBVDUDQ
+      VEBTNZVDTNZVGVFULVEVHVLVKBVDUEQZVEVHVMVKBVDUFQZBVDUGUHRVEVDUTPOZVFUMVEVIV
+      PVEVIVHVJUIVDAUTUJQVEVDUTVEVDVOSVEUTVEVLUTTNVNBUNQSUORUPUQVCURUS $.
+  $}
+
+  ${
+    fseq1p1m1.1 $e |- H = { <. ( N + 1 ) , B >. } $.
+    $( Add/remove an item to/from the end of a finite sequence.  (Contributed
+       by Paul Chapman, 17-Nov-2012.)  (Revised by Mario Carneiro,
+       7-Mar-2014.) $)
+    fseq1p1m1 $p |- ( N e. NN0 ->
+        ( ( F : ( 1 ... N ) --> A /\ B e. A /\ G = ( F u. H ) ) <->
+          ( G : ( 1 ... ( N + 1 ) ) --> A /\ ( G ` ( N + 1 ) ) = B /\
+            F = ( G |` ( 1 ... N ) ) ) ) ) $=
+      ( cn0 wcel c1 co wf cun wceq cfv cres csn c0 cn 3syl cfz w3a caddc wa cin
+      simpr1 nn0p1nn adantr simpr2 fsng mpbiri syl2anc snssd fssd fzp1disj fun2
+      cop a1i syl21anc cz cmin cuz simpl cc0 nn0uz 1m1e0 fveq2i eqtr4i syl6eleq
+      1z fzsuc2 sylancr eqcomd feq2d mpbid simpr3 feq1d mpbird ovex fvres ax-mp
+      reseq1d wfn wb ffn fnresdisj uneq1d resundir uncom eqtr2i 3eqtr4g fnresdm
+      snid 3eqtrd fveq1d fveq1i fvsng syl5eq eqtrd syl5eqr incom uneq2d 3eqtrrd
+      un0 eqcomi 3jca wss fzssp1 sylancl nnuz eluzfz2 ffvelrnd eqeltrrd fnressn
+      fssres syl opeq2 sneqd syl6reqr uneq12d reseq2d resundi syl6req impbida )
+      FHIZJFUAKZACLZBAIZDCEMZNZUBZJFJUCKZUAKZADLZYLDOZBNZCDYFPZNZUBZYEYKUDZYNYP
+      YRYTYNYMAYILZYTYFYLQZMZAYILZUUAYTYGUUBAELZYFUUBUEZRNZUUDYEYGYHYJUFZYTUUBB
+      QZAEYTYLSIZYHUUBUUIELZYEUUJYKFUGZUHZYEYGYHYJUIZUUJYHUDZUUKEYLBUQZQZNGYLBS
+      AEUJUKULZYTBAUUNUMUNZUUGYTJFUOURZYFUUBACEUPUSYTUUCYMAYIYTYMUUCYTJUTIZFJJV
+      AKZVBOZIZYMUUCNZVJYTFHUVCYEYKVCHVDVBOUVCVEUVBVDVBVFVGVHZVIJFVKZVLVMVNVOYT
+      YMADYIYEYGYHYJVPZVQVRYTYOYLDUUBPZOZBYLUUBIUVJYONYLFJUCVSWMYLUUBDVTWAYTUVJ
+      YLEOZBYTYLUVIEYTUVIYIUUBPZEUUBPZEYTDYIUUBUVHWBYTCUUBPZUVMMRUVMMZUVLUVMYTU
+      VNRUVMYTUUGUVNRNZUUTYTYGCYFWCZUUGUVPWDUUHYFACWEZYFUUBCWFTVOWGCEUUBWHUVOUV
+      MRMUVMRUVMWIUVMXDWJWKYTUUEEUUBWCZUVMENUUSUUBAEWEUUBEWLTWNWOYTUUJYHUVKBNUU
+      MUUNUUOUVKYLUUQOBYLEUUQGWPYLBSAWQWRULWSWTYTYQYIYFPZCYFPZCYTDYIYFUVHWBYTUW
+      AEYFPZMUWARMZUVTUWAYTUWBRUWAYTUUBYFUEZRNZUWBRNZYTUWDUUFRUUBYFXAUUTWRYTUUK
+      UVSUWEUWFWDUURUUBUUIEWEUUBYFEWFTVOXBCEYFWHUWCUWAUWAXDXEWKYTYGUVQUWACNUUHU
+      VRYFCWLTXCXFYEYSUDZYGYHYJUWGYGYFAYQLZUWGYNYFYMXGUWHYEYNYPYRUFZJFXHYMAYFDX
+      OXIUWGYFACYQYEYNYPYRVPZVQVRUWGYOBAYEYNYPYRUIZUWGYMAYLDUWIUWGYLJVBOZIYLYMI
+      ZUWGYLSUWLYEUUJYSUULUHXJVIJYLXKXPZXLXMUWGYIYQUVIMZDYMPZDUWGCYQEUVIUWJUWGU
+      VIUUQEUWGUVIYLYOUQZQZUUQUWGDYMWCZUWMUVIUWRNUWGYNUWSUWIYMADWEZXPUWNYMYLDXN
+      ULUWGYPUWRUUQNUWKYPUWQUUPYOBYLXQXRXPWSGXSXTUWGUWPDUUCPUWOUWGYMUUCDUWGUVAU
+      VDUVEVJUWGFHUVCYEYSVCUVFVIUVGVLYADYFUUBYBYCUWGYNUWSUWPDNUWIUWTYMDWLTXCXFY
+      D $.
+  $}
+
+  ${
+    fseq1m1p1.1 $e |- H = { <. N , B >. } $.
+    $( Add/remove an item to/from the end of a finite sequence.  (Contributed
+       by Paul Chapman, 17-Nov-2012.) $)
+    fseq1m1p1 $p |- ( N e. NN ->
+        ( ( F : ( 1 ... ( N - 1 ) ) --> A /\ B e. A /\ G = ( F u. H ) ) <->
+          ( G : ( 1 ... N ) --> A /\ ( G ` N ) = B /\
+            F = ( G |` ( 1 ... ( N - 1 ) ) ) ) ) ) $=
+      ( cn wcel c1 co cfz wf cop csn cun wceq w3a cfv cc cmin caddc cres cn0 wb
+      nnm1nn0 eqid fseq1p1m1 syl nncn ax-1cn npcan sylancl opeq1d sneqd syl6eqr
+      uneq2d eqeq2d 3anbi3d oveq2d feq2d fveq2d eqeq1d 3anbi12d 3bitr3d ) FHIZJ
+      FJUAKZLKZACMZBAIZDCVGJUBKZBNZOZPZQZRZJVKLKZADMZVKDSZBQZCDVHUCQZRZVIVJDCEP
+      ZQZRJFLKZADMZFDSZBQZWARVFVGUDIVPWBUEFUFABCDVMVGVMUGUHUIVFVOWDVIVJVFVNWCDV
+      FVMECVFVMFBNZOEVFVLWIVFVKFBVFFTIJTIVKFQFUJUKFJULUMZUNUOGUPUQURUSVFVRWFVTW
+      HWAVFVQWEADVFVKFJLWJUTVAVFVSWGBVFVKFDWJVBVCVDVE $.
+  $}
+
+  ${
+    $d k N $.
+    $( Quantification over a one-member finite set of sequential integers in
+       terms of substitution.  (Contributed by NM, 28-Nov-2005.) $)
+    fz1sbc $p |- ( N e. ZZ
+        -> ( A. k e. ( N ... N ) ph <-> [. N / k ]. ph ) ) $=
+      ( cz wcel wsbc cv wceq wi wal cfz co wral sbc6g df-ral elfz1eq syl5ibrcom
+      elfz3 eleq1 impbid2 imbi1d albidv syl5rbb bitr2d ) CDEZABCFBGZCHZAIZBJZAB
+      CCKLZMZABCDNUKUFUJEZAIZBJUEUIABUJOUEUMUHBUEULUGAUEULUGUFCPUEULUGCUJECRUFC
+      UJSQTUAUBUCUD $.
+  $}
+
+  $( An integer is a member of a 0-based finite set of sequential integers iff
+     its successor is a member of the corresponding 1-based set.  (Contributed
+     by Paul Chapman, 22-Jun-2011.) $)
+  elfzp1b $p |- ( ( K e. ZZ /\ N e. ZZ ) ->
+                ( K e. ( 0 ... ( N - 1 ) ) <-> ( K + 1 ) e. ( 1 ... N ) ) ) $=
+    ( cz wcel wa c1 caddc co cfz cc0 wb peano2z 1z fzsubel mpanl1 mpanr2 sylan2
+    cmin cc wceq ancoms zcn ax-1cn pncan sylancl 1m1e0 oveq1i a1i adantr bitr2d
+    eleq12d ) ACDZBCDZEAFGHZFBIHDZUNFRHZFFRHZBFRHZIHZDZAJURIHZDZUMULUOUTKZULUMU
+    NCDZVCALUMVDFCDZVCMVEUMVDVEEVCMUNFFBNOPQUAULUTVBKUMULUPAUSVAULASDFSDUPATAUB
+    UCAFUDUEUSVATULUQJURIUFUGUHUKUIUJ $.
+
+  $( An integer is a member of a 1-based finite set of sequential integers iff
+     its predecessor is a member of the corresponding 0-based set.
+     (Contributed by Paul Chapman, 22-Jun-2011.) $)
+  elfzm1b $p |- ( ( K e. ZZ /\ N e. ZZ ) ->
+                ( K e. ( 1 ... N ) <-> ( K - 1 ) e. ( 0 ... ( N - 1 ) ) ) ) $=
+    ( cz wcel c1 cfz co cmin wb wa 1z fzsubel mpanl1 mpanr2 1m1e0 oveq1i eleq2i
+    cc0 syl6bb ancoms ) BCDZACDZAEBFGDZAEHGZRBEHGZFGZDZIUAUBJUCUDEEHGZUEFGZDZUG
+    UAUBECDZUCUJIZKUKUAUBUKJULKAEEBLMNUIUFUDUHRUEFOPQST $.
+
+  $( Options for membership in a finite interval of integers.  (Contributed by
+     Jeff Madsen, 18-Jun-2010.) $)
+  elfzp12 $p |- ( N e. ( ZZ>= ` M ) -> ( K e. ( M ... N ) <->
+                                ( K = M \/ K e. ( ( M + 1 ) ... N ) ) ) ) $=
+    ( cuz cfv wcel cfz co wceq c1 caddc wo cvv wa elex anim2i elfvex syl5ibrcom
+    eleq1 imdistani jaodan csn fzpred eleq2d elun syl6bb elsncg orbi1d sylan9bb
+    cun pm5.21nd ) CBDEFZABCGHZFZABIZABJKHCGHZFZLZULAMFZNZUNUSULAUMOPULUOUTUQUL
+    UOUSULUSUOBMFCBDQABMSRTUQUSULAUPOPUAULUNABUBZFZUQLZUSURULUNAVAUPUJZFVCULUMV
+    DABCUCUDAVAUPUEUFUSVBUOUQABMUGUHUIUK $.
+
+  $( Choices for an element of a finite interval of integers.  (Contributed by
+     Jeff Madsen, 2-Sep-2009.) $)
+  fzm1 $p |- ( N e. ( ZZ>= ` M ) -> ( K e. ( M ... N ) <->
+                              ( K e. ( M ... ( N - 1 ) ) \/ K = N ) ) ) $=
+    ( wcel cfz co c1 wceq wa wi cz cle wbr w3a wb elfz1 syl2anc a1i cr ex wo wn
+    cuz cfv cmin eluzel2 eluzelz simp1 simp2 clt wne zre eluzelre ltlen syl2anr
+    nesym anbi2i ancom bitri syl6bb biimpar an4s zltlem1 sylan2 biimpd ad2ant2r
+    ancoms mpd 3adantr2 3jcad 1z zsubcl sylancl biimprd syl6d com23 sylbid orrd
+    imp orcomd caddc fzssp1 cc ax-1cn npcan oveq2d syl5sseq sseld eluzfz2 eleq1
+    zcnd syl5ibrcom jaod impbid ) CBUCUDDZABCEFZDZABCGUEFZEFZDZACHZUAZWOWQXBWOW
+    QIZXAWTXCXAWTWOWQXAUBZWTJZWOWQAKDZBALMZACLMZNZXEWOBKDZCKDZWQXIOBCUFZBCUGZAB
+    CPQWOXDXIWTWOXDXIXFXGAWRLMZNZWTWOXDXIXOJWOXDIZXIXFXGXNXIXFJXPXFXGXHUHRXIXGJ
+    XPXFXGXHUIRXPXIXNXPXFXHXNXGXPXFXHIIACUJMZXNWOXFXDXHXQWOXFIZXQXDXHIZXRXQXHCA
+    UKZIZXSXFASDCSDXQYAOWOAULBCUMACUNUOYAXHXDIXSXTXDXHCAUPUQXHXDURUSUTVAVBWOXFX
+    QXNJZXDXHXFWOYBXFWOIXQXNWOXFXKXQXNOXMACVCVDVEVGVFVHVITVJTWOWTXOWOXJWRKDZWTX
+    OOXLWOXKGKDYCXMVKCGVLVMABWRPQVNVOVPVQVSVRVTTWOWTWQXAWOWSWPAWOBWRGWAFZEFWSWP
+    BWRWBWOYDCBEWOCWCDGWCDYDCHWOCXMWKWDCGWEVMWFWGWHWOWQXACWPDBCWIACWPWJWLWMWN
+    $.
+
+  $( No finite set of sequential integers equals an upper set of integers.
+     (Contributed by NM, 11-Dec-2005.) $)
+  fzneuz $p |- ( ( N e. ( ZZ>= ` M ) /\ K e. ZZ )
+               -> -. ( M ... N ) = ( ZZ>= ` K ) ) $=
+    ( cuz cfv wcel cz wa cfz co wceq wn c1 caddc peano2uz adantl wbr cr nelneq2
+    ad2antrr cle eluzelre clt wb peano2re ltnle mpdan mpbid syl elfzle2 syl2anc
+    ltp1 nsyl eqcom sylnib eluzfz2 sylancom pm2.61dan ) CBDEFZAGFZHZCADEZFZBCIJ
+    ZVBKZLZVAVCHZVBVDKZVEVGCMNJZVBFZVIVDFZLZVHLVCVJVAACOPUSVLUTVCUSVICUAQZVKUSC
+    RFZVMLZBCUBVNCVIUCQZVOCULVNVIRFVPVOUDCUECVIUFUGUHUIVIBCUJUMTVIVBVDSUKVBVDUN
+    UOVAVCLZCVDFZVFUSVRUTVQBCUPTCVDVBSUQUR $.
+
+  $( Disjointness of the upper integers and a finite sequence.  (Contributed by
+     Mario Carneiro, 30-Jun-2013.)  (Revised by Mario Carneiro,
+     24-Aug-2013.) $)
+  fznuz $p |- ( K e. ( M ... N ) -> -. K e. ( ZZ>= ` ( N + 1 ) ) ) $=
+    ( cfz co wcel c1 caddc cuz cfv cle wbr elfzle2 clt wn cz wi elfzel2 cr zre
+    eluzp1l ex syl wb elfzelz ltnle syl2an syl2anc sylibd mt2d ) ABCDEFZACGHEIJ
+    FZACKLZABCMUKULCANLZUMOZUKCPFZULUNQABCRZUPULUNCAUAUBUCUKUPAPFZUNUOUDZUQABCU
+    EUPCSFASFUSURCTATCAUFUGUHUIUJ $.
+
+  $( Disjointness of the upper integers and a finite sequence.  (Contributed by
+     Mario Carneiro, 24-Aug-2013.) $)
+  uznfz $p |- ( K e. ( ZZ>= ` N ) -> -. K e. ( M ... ( N - 1 ) ) ) $=
+    ( cuz cfv wcel c1 cmin co cfz cle wbr eluzle clt wn cz eluzel2 wi cr zre wa
+    elfzel1 w3a elfzm11 simp3 syl6bi impancom mpancom syl5com wb eluzelz syl2an
+    ltnle syl2anc sylibd mt2d ) ACDEFZABCGHIZJIFZCAKLZCAMUQUSACNLZUTOZUQCPFZUSV
+    ACAQZBPFZUSVCVARABURUBVEVCUSVAVEVCUAUSAPFZBAKLZVAUCVAABCUDVFVGVAUEUFUGUHUIU
+    QVFVCVAVBUJZCAUKVDVFASFCSFVHVCATCTACUMULUNUOUP $.
+
+  $( One plus the upper bound of a finite set of integers is not a member of
+     that set.  (Contributed by Scott Fenton, 16-Dec-2017.) $)
+  fzp1nel $p |- -. ( N + 1 ) e. ( M ... N ) $=
+    ( c1 caddc co cfz wcel wn cz w3a cle wbr wa wi cr zre clt ltp1 id peano2re
+    ltnled mpbid syl intnand 3ad2ant2 elfz2 notbii imnan bitr4i mpbir ) BCDEZAB
+    FEGZHZAIGZBIGZUKIGZJZAUKKLZUKBKLZMZHZNZUOUNVAUPUOUSURUOBOGZUSHZBPVCBUKQLVDB
+    RVCBUKVCSBTUAUBUCUDUEUMUQUTMZHVBULVEUKABUFUGUQUTUHUIUJ $.
+
+  ${
+    $d j k x K $.  $d j k x M $.  $d j k x N $.  $d k x ph $.
+    $( Reversal of scanning order inside of a quantification over a finite set
+       of sequential integers.  (Contributed by NM, 25-Nov-2005.) $)
+    fzrevral $p |- ( ( M e. ZZ /\ N e. ZZ /\ K e. ZZ )
+     -> ( A. j e. ( M ... N ) ph
+         <-> A. k e. ( ( K - N ) ... ( K - M ) ) [. ( K - k ) / j ]. ph ) ) $=
+      ( cz wcel cfz co wral cv cmin wsbc wi wa wb elfzelz syl wceq simpr sylan2
+      w3a fzrev anassrs mpbid rspsbc ex 3impa com23 ralrimdv nfcv nfsbc1v nfral
+      nfv fzrev2i oveq2 sbceq1d rspcv cc zcn zcnd syl2an eqcomd sbceq1a sylibrd
+      nncan ralrimd 3ad2ant3 impbid ) EGHZFGHZDGHZUCZABEFIJZKZABDCLZMJZNZCDFMJZ
+      DEMJZIJZKZVNVPVSCWBVNVQWBHZVPVSVKVLVMWDVPVSOZOVKVLPZVMPZWDWEWGWDPZVRVOHZW
+      EWHWDWIWGWDUAWDWGVQGHZWDWIQZVQVTWARWFVMWJWKDVQEFUDUEUBUFABVRVOUGSUHUIUJUK
+      VMVKWCVPOVLVMWCABVOVMBUOVSBCWBBWBULABVRUMUNVMBLZVOHZWCAVMWMWCAOVMWMPZWCAB
+      DDWLMJZMJZNZAWNWOWBHWCWQODWLEFUPVSWQCWOWBVQWOTABVRWPVQWODMUQURUSSWNWLWPTA
+      WQQWNWPWLVMDUTHWLUTHWPWLTWMDVAWMWLWLEFRVBDWLVGVCVDABWPVESVFUHUJVHVIVJ $.
+
+    $( Reversal of scanning order inside of a quantification over a finite set
+       of sequential integers.  (Contributed by NM, 25-Nov-2005.) $)
+    fzrevral2 $p |- ( ( M e. ZZ /\ N e. ZZ /\ K e. ZZ )
+        -> ( A. j e. ( ( K - N ) ... ( K - M ) ) ph
+             <-> A. k e. ( M ... N ) [. ( K - k ) / j ]. ph ) ) $=
+      ( cz wcel cmin co cfz wral wb w3a zsubcl 3adant2 3adant3 cc wceq zcn wsbc
+      cv simp1 fzrevral syl3anc nncan oveq12d syl3an raleqdv bitrd 3coml ) DGHZ
+      EGHZFGHZABDFIJZDEIJZKJLZABDCUBIJUAZCEFKJZLZMULUMUNNZUQURCDUPIJZDUOIJZKJZL
+      ZUTVAUOGHZUPGHZULUQVEMULUNVFUMDFOPULUMVGUNDEOQULUMUNUCABCDUOUPUDUEVAURCVD
+      USULDRHZUMERHZUNFRHZVDUSSDTETFTVHVIVJNVBEVCFKVHVIVBESVJDEUFQVHVJVCFSVIDFU
+      FPUGUHUIUJUK $.
+
+    $( Reversal of scanning order inside of a quantification over a finite set
+       of sequential integers.  (Contributed by NM, 20-Nov-2005.) $)
+    fzrevral3 $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( A. j e. ( M ... N ) ph
+              <-> A. k e. ( M ... N ) [. ( ( M + N ) - k ) / j ]. ph ) ) $=
+      ( cz wcel wa cfz co wral caddc cv cmin wsbc wb zaddcl fzrevral cc zcn
+      mpd3an3 wceq pncan pncan2 oveq12d syl2an raleqdv bitrd ) DFGZEFGZHZABDEIJ
+      ZKZABDELJZCMNJOZCUNENJZUNDNJZIJZKZUOCULKUIUJUNFGUMUSPDEQABCUNDERUAUKUOCUR
+      ULUIDSGZESGZURULUBUJDTETUTVAHUPDUQEIDEUCDEUDUEUFUGUH $.
+
+    $( Shift the scanning order inside of a quantification over a finite set of
+       sequential integers.  (Contributed by NM, 27-Nov-2005.) $)
+    fzshftral $p |- ( ( M e. ZZ /\ N e. ZZ /\ K e. ZZ )
+        -> ( A. j e. ( M ... N ) ph
+          <-> A. k e. ( ( M + K ) ... ( N + K ) ) [. ( k - K ) / j ]. ph ) ) $=
+      ( vx cz wcel cfz co wral cc0 cmin wsbc caddc wb cc wceq wa cv 0z fzrevral
+      w3a mp3an3 3adant3 zsubcl mpan syl3an 3com12 cvv ovex oveq2 sbcco3g ax-mp
+      ralbii zcn cneg df-neg oveq2i subneg addcom eqtrd syl5eqr 3adant2 oveq12d
+      id 3coml raleqdv elfzelz negsubdi2 syl2an sbceq1d ralbidva 3ad2ant3 bitrd
+      zcnd syl5bb 3bitrd ) EHIZFHIZDHIZUDZABEFJKLZABMGUAZNKZOZGMFNKZMENKZJKLZWG
+      GDCUAZNKZOZCDWINKZDWHNKZJKZLZABWKDNKZOZCEDPKZFDPKZJKZLZVTWAWDWJQZWBVTWAMH
+      IZXDUBABGMEFUCUEUFWAVTWBWJWQQZWAWHHIZVTWIHIZWBWBXFXEWAXGUBMFUGUHXEVTXHUBM
+      EUGUHWBVGWGGCDWHWIUCUIUJWQABMWLNKZOZCWPLZWCXCWMXJCWPWLUKIWMXJQDWKNULAGBWL
+      WFXIUKWEWLMNUMUNUOUPWCXKXJCXBLZXCWCXJCWPXBVTERIZWAFRIZWBDRIZWPXBSZEUQFUQD
+      UQZXOXMXNXPXOXMXNUDWNWTWOXAJXOXMWNWTSXNXOXMTZWNDEURZNKZWTXSWIDNEUSUTXRXTD
+      EPKWTDEVADEVBVCVDUFXOXNWOXASXMXOXNTZWODFURZNKZXAYBWHDNFUSUTYAYCDFPKXADFVA
+      DFVBVCVDVEVFVHUIVIWBVTXLXCQWAWBXJWSCXBWBWKXBIZTABXIWRWBXOWKRIZXIWRSYDXQYD
+      WKWKWTXAVJVQXOYETXIWLURWRWLUSDWKVKVDVLVMVNVOVPVRVS $.
+  $}
+
+  $( Membership of an integer greater than 1 decreased by 1 in a 1 based finite
+     set of sequential integers (Contributed by Alexander van der Vekens,
+     14-Sep-2018.) $)
+  ige2m1fz1 $p |- ( N e. ( ZZ>= ` 2 ) -> ( N - 1 ) e. ( 1 ... N ) ) $=
+    ( c2 cuz cfv wcel c1 cmin co cfz wceq 1e2m1 a1i oveq2d 2nn uzsubsubfz1 mpan
+    cn eqeltrd ) ABCDEZAFGHABFGHZGHZFAIHZSFTAGFTJSKLMBQESUAUBENBAOPR $.
+
+  $( Membership in a 0 based finite set of sequential integers.  (Contributed
+     by Alexander van der Vekens, 18-Jun-2018.)  (Proof shortened by Alexander
+     van der Vekens, 15-Sep-2018.) $)
+  ige2m1fz $p |- ( ( N e. NN0 /\ 2 <_ N ) -> ( N - 1 ) e. ( 0 ... N ) ) $=
+    ( cn0 wcel c2 cle wbr wa c1 cfz co cc0 cmin cuz cfv 1eluzge0 fzss1 ax-mp cz
+    wss 2z a1i nn0z adantr simpr eluz2 syl3anbrc ige2m1fz1 syl sseldi ) ABCZDAE
+    FZGZHAIJZKAIJZAHLJZHKMNCUMUNSOHKAPQULADMNCZUOUMCULDRCZARCZUKUPUQULTUAUJURUK
+    AUBUCUJUKUDDAUEUFAUGUHUI $.
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
@@ -82261,6 +83274,10 @@ htmldef "[,]" as
     "<IMG SRC='_icc.gif' WIDTH=12 HEIGHT=19 ALT=' [,]' TITLE='[,]'>";
   althtmldef "[,]" as "[,]";
   latexdef "[,]" as "[,]";
+htmldef "..." as "<IMG SRC='ldots.gif' WIDTH=18 HEIGHT=19 " +
+    "ALT=' ...' TITLE='...'>";
+  althtmldef "..." as "...";
+  latexdef "..." as "\ldots";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
