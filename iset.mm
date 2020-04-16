@@ -81039,18 +81039,18 @@ $)
     QR $.
 
   ${
-    $d k n m z M $.  $d k n m z N $.
+    $d x y z M $.  $d z N $.
     $( Membership in a finite set of sequential integers.  We use the fact that
        an operation's value is empty outside of its domain to show ` M e. ZZ `
        and ` N e. ZZ ` .  (Contributed by NM, 6-Sep-2005.)  (Revised by Mario
        Carneiro, 28-Apr-2015.) $)
     elfz2 $p |- ( K e. ( M ... N ) <->
            ( ( M e. ZZ /\ N e. ZZ /\ K e. ZZ ) /\ ( M <_ K /\ K <_ N ) ) ) $=
-      ( cz wcel wa cle wbr w3a cfz co anass df-3an anbi1i wb elfz1 3anass bitrd
-      ibar c0 syl5bb wn cxp cpw fdmi ndmov eleq2d noel pm2.21i pm5.21ni pm2.61i
-      fzf simpl 3bitr4ri ) BDEZCDEZFZADEZFZBAGHZACGHZFZFUQURVBFZFZUOUPURIZVBFAB
-      CJKZEZUQURVBLVEUSVBUOUPURMNUQVGVDOUQVGURUTVAIZVDABCPVHVCUQVDURUTVAQUQVCSU
-      ARUQUBZVGATEZVDVIVFTABCDJDDUCDUDJULUEUFUGVJUQVDVJUQAUHUIUQVCUMUJRUKUN $.
+      ( vx vy vz cz wcel wa cle wbr w3a cfz co anass df-3an anbi1i crab df-fz
+      cv elmpt2cl simpl elfz1 3anass ibar syl5bb bitrd pm5.21nii 3bitr4ri ) BGH
+      ZCGHZIZAGHZIZBAJKZACJKZIZIULUMUQIZIZUJUKUMLZUQIABCMNHZULUMUQOUTUNUQUJUKUM
+      PQVAULUSDEGGDTFTZJKVBETJKIFGRBCMAFDESUAULURUBULVAUMUOUPLZUSABCUCVCURULUSU
+      MUOUPUDULURUEUFUGUHUI $.
   $}
 
   $( Membership in a finite set of sequential integers.  (Contributed by NM,
