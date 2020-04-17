@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Apr-2020
+$( iset.mm - Version of 16-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -81198,13 +81198,27 @@ $)
   $}
 
   ${
-    $d K k m $.  $d M k m $.  $d N k m $.
+    $d K x k m $.  $d M x k m $.  $d N x k m $.
+    $( A finite set of sequential integers is empty if the bounds are
+       reversed.  (Contributed by Jim Kingdon, 16-Apr-2020.) $)
+    fznlem $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
+        ( N < M -> ( M ... N ) = (/) ) ) $=
+      ( vk cz wcel wa clt wbr cfz co c0 wceq cv cle wn cr wb zre adantr zred wi
+      crab wral lenlt syl2an biimpd con2d imp simplll simpllr letr syl3anc mtod
+      simpr ralrimiva rabeq0 sylibr fzval eqeq1d mpbird ex ) ADEZBDEZFZBAGHZABI
+      JZKLZVDVEFZVGACMZNHVIBNHFZCDUBZKLZVHVJOZCDUCVLVHVMCDVHVIDEZFZVJABNHZVHVPO
+      ZVNVDVEVQVDVPVEVDVPVEOZVBAPEZBPEZVPVRQVCARBRABUDUEUFUGUHSVOVSVIPEVTVJVPUA
+      VOAVBVCVEVNUITVOVIVHVNUNTVOBVBVCVEVNUJTAVIBUKULUMUOVJCDUPUQVDVGVLQVEVDVFV
+      KKCABURUSSUTVA $.
+
     $( A finite set of sequential integers is empty if the bounds are
        reversed.  (Contributed by NM, 22-Aug-2005.) $)
     fzn $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( N < M <-> ( M ... N ) = (/) ) ) $=
-      ( cz wcel wa clt wbr cfz co c0 wne cle wn cuz cfv fzn0 eluz syl5bb cr zre
-      wb lenlt syl2an bitr2d necon4bbid ) ACDZBCDZEZBAFGZABHIZJUHUJJKZABLGZUIMZ
-      UKBANODUHULABPABQRUFASDBSDULUMUAUGATBTABUBUCUDUE $.
+      ( vx cz wcel wa clt wbr cfz co c0 wceq fznlem cle wn cv wex neq0r adantr
+      wb simpr nsyl3 cuz cfv eluz syl5rbb mtbird zltnle ancoms mpbird ex impbid
+      fzm ) ADEZBDEZFZBAGHZABIJZKLZABMUPUSUQUPUSFZUQABNHZOZUTVACPURECQZVCUSUTCU
+      RRUPUSUAUBUPVAVCTUSVCBAUCUDEUPVACABUMABUEUFSUGUPUQVBTZUSUOUNVDBAUHUISUJUK
+      UL $.
 
     $( A shifted finite set of sequential integers is equinumerous to the
        original set.  (Contributed by Paul Chapman, 11-Apr-2009.) $)
