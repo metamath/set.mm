@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Apr-2020
+$( iset.mm - Version of 17-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -75929,6 +75929,13 @@ $)
     wo wi ex adantr ancoms olc 3jaod sylc ) ACDZBCDZEAFDZBFDZEZABGHZABIZBAGHZJA
     BKHZBAKHZSZUGUIUHUJALBLMABNUKULUQUMUNUKULUOUQABOUOUPPZQUKUMUOUQUIUMUOTUJUIU
     MUOABRUAUBURQUKUNUPUQUJUIUNUPTBAOUCUPUOUDQUEUF $.
+
+  $( Trichotomy law.  (Contributed by Jim Kingdon, 17-Apr-2020.) $)
+  zlelttric $p |- ( ( A e. ZZ /\ B e. ZZ ) -> ( A <_ B \/ B < A ) ) $=
+    ( cz wcel wa cr clt wbr wceq w3o cle zre anim12i ztri3or ltle orc syl6 eqle
+    wo wi ex adantr olc a1i 3jaod sylc ) ACDZBCDZEAFDZBFDZEZABGHZABIZBAGHZJABKH
+    ZUNSZUGUIUHUJALBLMABNUKULUPUMUNUKULUOUPABOUOUNPZQUKUMUOUPUIUMUOTUJUIUMUOABR
+    UAUBUQQUNUPTUKUNUOUCUDUEUF $.
 
   $( 'Less than' expressed in terms of 'less than or equal to'.  (Contributed
      by Jim Kingdon, 14-Mar-2020.) $)
