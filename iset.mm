@@ -81197,13 +81197,6 @@ $)
       DZBCEFZGZAHZCBIJGZSUAAQBCKLUABRGTBCMABRNOP $.
   $}
 
-  $( A finite set of sequential integers is empty if its bounds are not
-     integers.  (Contributed by AV, 13-Oct-2018.) $)
-  fz0 $p |- ( ( M e/ ZZ \/ N e/ ZZ ) -> ( M ... N ) = (/) ) $=
-    ( cz wnel wo wcel wn cfz co c0 wceq df-nel orbi12i ianor cxp cpw fdmi ndmov
-    wa fzf sylbir sylbi ) ACDZBCDZEACFZGZBCFZGZEZABHIJKZUCUFUDUHACLBCLMUIUEUGSG
-    UJUEUGNABCHCCOCPHTQRUAUB $.
-
   ${
     $d K k m $.  $d M k m $.  $d N k m $.
     $( A finite set of sequential integers is empty if the bounds are
