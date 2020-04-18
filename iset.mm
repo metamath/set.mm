@@ -44421,6 +44421,15 @@ $)
     ( wss wf wfn crn wa sstr2 com12 anim2d df-f 3imtr4g impcom ) BCEZABDFZACDFZ
     PDAGZDHZBEZISTCEZIQRPUAUBSUAPUBTBCJKLABDMACDMNO $.
 
+  ${
+    fssd.f $e |- ( ph -> F : A --> B ) $.
+    fssd.b $e |- ( ph -> B C_ C ) $.
+    $( Expanding the codomain of a mapping, deduction form.  (Contributed by
+       Glauco Siliprandi, 11-Dec-2019.) $)
+    fssd $p |- ( ph -> F : A --> C ) $=
+      ( wf wss fss syl2anc ) ABCEHCDIBDEHFGBCDEJK $.
+  $}
+
   $( Composition of two mappings.  (Contributed by NM, 29-Aug-1999.)  (Proof
      shortened by Andrew Salmon, 17-Sep-2011.) $)
   fco $p |- ( ( F : B --> C /\ G : A --> B ) -> ( F o. G ) : A --> C ) $=
