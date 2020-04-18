@@ -28926,6 +28926,14 @@ $)
       ( wn cif wceq iffalse ax-mp ) AEABCFCGDABCHI $.
   $}
 
+  ${
+    iffalsed.1 $e |- ( ph -> -. ch ) $.
+    $( Value of the conditional operator when its first argument is false.
+       (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+    iffalsed $p |- ( ph -> if ( ch , A , B ) = B ) $=
+      ( wn cif wceq iffalse syl ) ABFBCDGDHEBCDIJ $.
+  $}
+
   $( When values are unequal, but an "if" condition checks if they are equal,
      then the "false" branch results.  This is a simple utility to provide a
      slight shortening and simplification of proofs vs. applying ~ iffalse
