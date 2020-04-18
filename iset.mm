@@ -81519,11 +81519,12 @@ $)
      (Contributed by AV, 24-Aug-2019.) $)
   fzpreddisj $p |- ( N e. ( ZZ>= ` M )
                  -> ( { M } i^i ( ( M + 1 ) ... N ) ) = (/) ) $=
-    ( cuz cfv wcel csn c1 caddc co cfz cin c0 wn cz cle wbr wa cc0 1re cr incom
-    wceq w3a clt 0lt1 0re ltnlei mpbi wb eluzel2 zred leaddle0 sylancl intnanrd
-    mtbiri intnand elfz2 sylnibr disjsn sylibr syl5eq ) BACDEZAFZAGHIZBJIZKVEVC
-    KZLVCVEUAVBAVEEZMVFLUBVBVDNEBNEANEUCZVDAOPZABOPZQZQVGVBVKVHVBVIVJVBVIGROPZR
-    GUDPVLMUERGUFSUGUHVBATEGTEVIVLUIVBAABUJUKSAGULUMUOUNUPAVDBUQURVEAUSUTVA $.
+    ( cuz cfv wcel csn c1 caddc co cfz cin c0 wn cz cle wbr wa cc0 wb cr w3a 0z
+    incom wceq clt 0lt1 1z zltnle mpbi eluzel2 zred 1re leaddle0 sylancl mtbiri
+    mp2an intnanrd intnand elfz2 sylnibr disjsn sylibr syl5eqr ) BACDEZAFZAGHIZ
+    BJIZKVGVEKZLVGVEUCVDAVGEZMVHLUDVDVFNEBNEANEUAZVFAOPZABOPZQZQVIVDVMVJVDVKVLV
+    DVKGROPZRGUEPZVNMZUFRNEGNEVOVPSUBUGRGUHUPUIVDATEGTEVKVNSVDAABUJUKULAGUMUNUO
+    UQURAVFBUSUTVGAVAVBVC $.
 
   $( Append an element to a finite set of sequential integers.  (Contributed by
      NM, 19-Sep-2005.)  (Proof shortened by Mario Carneiro, 28-Apr-2015.) $)
