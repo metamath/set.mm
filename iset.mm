@@ -81881,11 +81881,11 @@ $)
      Jeff Madsen, 18-Jun-2010.) $)
   elfzp12 $p |- ( N e. ( ZZ>= ` M ) -> ( K e. ( M ... N ) <->
                                 ( K = M \/ K e. ( ( M + 1 ) ... N ) ) ) ) $=
-    ( cuz cfv wcel cfz co wceq c1 caddc wo cvv wa elex anim2i elfvex syl5ibrcom
-    eleq1 imdistani jaodan csn fzpred eleq2d elun syl6bb elsncg orbi1d sylan9bb
-    cun pm5.21nd ) CBDEFZABCGHZFZABIZABJKHCGHZFZLZULAMFZNZUNUSULAUMOPULUOUTUQUL
-    UOUSULUSUOBMFCBDQABMSRTUQUSULAUPOPUAULUNABUBZFZUQLZUSURULUNAVAUPUJZFVCULUMV
-    DABCUCUDAVAUPUEUFUSVBUOUQABMUGUHUIUK $.
+    ( cuz cfv wcel cfz co wceq c1 caddc wo cz elfzelz anim2i eluzel2 syl5ibrcom
+    wa eleq1 imdistani jaodan csn cun fzpred eleq2d elun syl6bb elsncg sylan9bb
+    orbi1d pm5.21nd ) CBDEFZABCGHZFZABIZABJKHZCGHZFZLZULAMFZRZUNUTULABCNOULUOVA
+    URULUOUTULUTUOBMFBCPABMSQTURUTULAUPCNOUAULUNABUBZFZURLZUTUSULUNAVBUQUCZFVDU
+    LUMVEABCUDUEAVBUQUFUGUTVCUOURABMUHUJUIUK $.
 
   $( Choices for an element of a finite interval of integers.  (Contributed by
      Jeff Madsen, 2-Sep-2009.) $)
