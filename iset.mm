@@ -81610,9 +81610,9 @@ $)
   $( ` ( M ... ( N + 1 ) ) ` is the disjoint union of ` ( M ... N ) ` with
      ` { ( N + 1 ) } ` .  (Contributed by Mario Carneiro, 7-Mar-2014.) $)
   fzp1disj $p |- ( ( M ... N ) i^i { ( N + 1 ) } ) = (/) $=
-    ( cfz co c1 caddc csn cin c0 wceq wcel wn cle wbr elfzle2 elfzel2 zred ltp1
-    cr clt wb peano2re ltnle mpdan mpbid syl pm2.65i disjsn mpbir ) ABCDZBEFDZG
-    HIJUKUJKZLULUKBMNZUKABOULBSKZUMLZULBUKABPQUNBUKTNZUOBRUNUKSKUPUOUABUBBUKUCU
+    ( cfz co c1 caddc csn cin c0 wceq wcel wn cle wbr elfzle2 elfzel2 clt ltp1d
+    cz zre wb peano2z zltnle mpdan mpbid syl pm2.65i disjsn mpbir ) ABCDZBEFDZG
+    HIJUKUJKZLULUKBMNZUKABOULBSKZUMLZUKABPUNBUKQNZUOUNBBTRUNUKSKUPUOUABUBBUKUCU
     DUEUFUGUJUKUHUI $.
 
   $( Remove a successor from the end of a finite set of sequential integers.
