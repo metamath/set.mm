@@ -81615,14 +81615,23 @@ $)
     HIJUKUJKZLULUKBMNZUKABOULBSKZUMLZUKABPUNBUKQNZUOUNBBTRUNUKSKUPUOUABUBBUKUCU
     DUEUFUGUJUKUHUI $.
 
-  $( Remove a successor from the end of a finite set of sequential integers.
-     (Contributed by AV, 4-Sep-2019.) $)
-  fzdifsuc $p |- ( N e. ( ZZ>= ` M )
-                  -> ( M ... N ) = ( ( M ... ( N + 1 ) ) \ { ( N + 1 ) } ) ) $=
-    ( cuz cfv wcel c1 caddc co cfz csn cdif cun fzsuc difeq1d wceq uncom wss c0
-    cin wb ssun2 incom fzp1disj eqtri a1i uneqdifeq sylancr mpbii eqtr2d ) BACD
-    EZABFGHZIHZUKJZKABIHZUMLZUMKZUNUJULUOUMABMNUJUMUNLUOOZUPUNOZUMUNPUJUMUOQUMU
-    NSZROZUQURTUMUNUAUTUJUSUNUMSRUMUNUBABUCUDUEUMUNUOUFUGUHUI $.
+  ${
+    $d M k $.  $d N k $.
+    $( Remove a successor from the end of a finite set of sequential integers.
+       (Contributed by AV, 4-Sep-2019.) $)
+    fzdifsuc $p |- ( N e. ( ZZ>= ` M )
+        -> ( M ... N ) = ( ( M ... ( N + 1 ) ) \ { ( N + 1 ) } ) ) $=
+      ( vk wcel cfz co cz elfzelz adantl wa cle wbr adantr elfz syl3anc syl2anc
+      wb wn anbi2d bitr4d cuz cfv c1 caddc csn cdif cv eldifi syl simpr eluzel2
+      eluzelz clt wne eldif peano2zd wceq elsn notbii bitr4i a1i anbi12d syl5bb
+      nesym anass syl6bb zltlen zleltp1 eqrdav ) BAUAUBDZCABEFZABUCUDFZEFZVLUEZ
+      UFZGCUGZVKDZVPGDZVJVPABHIVPVODZVRVJVSVPVMDZVRVPVMVNUHVPAVLHUIIVJVRJZVQAVP
+      KLZVPBKLZJZVSWAVRAGDZBGDZVQWDQVJVRUJZVJWEVRABUKMZVJWFVRABULMZVPABNOWAVSWB
+      VPVLUMLZJZWDWAVSWBVPVLKLZVLVPUNZJZJZWKWAVSWBWLJZWMJZWOVSVTVPVNDZRZJWAWQVP
+      VMVNUOWAVTWPWSWMWAVRWEVLGDZVTWPQWGWHWABWIUPZVPAVLNOWSWMQWAWSVPVLUQZRWMWRX
+      BCVLURUSVLVPVDUTVAVBVCWBWLWMVEVFWAWJWNWBWAVRWTWJWNQWGXAVPVLVGPSTWAWCWJWBW
+      AVRWFWCWJQWGWIVPBVHPSTTVI $.
+  $}
 
   ${
     $d x A $.  $d x B $.  $d x F $.
