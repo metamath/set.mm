@@ -81530,9 +81530,10 @@ $)
      NM, 19-Sep-2005.)  (Proof shortened by Mario Carneiro, 28-Apr-2015.) $)
   elfzp1 $p |- ( N e. ( ZZ>= ` M ) ->
     ( K e. ( M ... ( N + 1 ) ) <-> ( K e. ( M ... N ) \/ K = ( N + 1 ) ) ) ) $=
-    ( cuz cfv wcel c1 caddc co cfz csn cun wceq fzsuc eleq2d elun elsnc2 orbi2i
-    wo ovex bitri syl6bb ) CBDEFZABCGHIZJIZFABCJIZUDKZLZFZAUFFZAUDMZSZUCUEUHABC
-    NOUIUJAUGFZSULAUFUGPUMUKUJAUDCGHTQRUAUB $.
+    ( cuz cfv wcel c1 caddc co cfz csn cun wceq wo fzsuc eleq2d elun cz eluzelz
+    wb peano2zd elsnc2g syl orbi2d syl5bb bitrd ) CBDEFZABCGHIZJIZFABCJIZUHKZLZ
+    FZAUJFZAUHMZNZUGUIULABCOPUMUNAUKFZNUGUPAUJUKQUGUQUOUNUGUHRFUQUOTUGCBCSUAAUH
+    RUBUCUDUEUF $.
 
   $( Subset relationship for finite sets of sequential integers.  (Contributed
      by NM, 26-Jul-2005.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
