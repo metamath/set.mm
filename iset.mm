@@ -81760,15 +81760,15 @@ $)
        24-Apr-2014.) $)
     uzsplit $p |- ( N e. ( ZZ>= ` M ) -> ( ZZ>= ` M ) =
                   ( ( M ... ( N - 1 ) ) u. ( ZZ>= ` N ) ) ) $=
-      ( vk cuz cfv wcel c1 cmin co cfz wo wa cle wbr cr eluzelre syl2an eluzelz
-      cz wb cun clt lelttric eluz eluzel2 w3a elfzm11 df-3an syl6bb syl2anr jca
-      cv eluzle adantl biantrurd bitr4d orbi12d mpbird orcomd elfzuz a1i expcom
-      ex wi uztrn jaod impbid elun syl6bbr eqrdv ) BADEZFZCVKABGHIZJIZBDEZUAZVL
-      CULZVKFZVQVNFZVQVOFZKZVQVPFVLVRWAVLVRWAVLVRLZVTVSWBVTVSKBVQMNZVQBUBNZKZVL
-      BOFVQOFWEVRABPAVQPBVQUCQWBVTWCVSWDVLBSFZVQSFZVTWCTVRABRZAVQRZBVQUDQWBVSWG
-      AVQMNZLZWDLZWDVRASFZWFVSWLTVLAVQUEWHWMWFLVSWGWJWDUFWLVQABUGWGWJWDUHUIUJWB
-      WKWDVRWKVLVRWGWJWIAVQUMUKUNUOUPUQURUSVCVLVSVRVTVSVRVDVLVQAVMUTVAVTVLVRBVQ
-      AVEVBVFVGVQVNVOVHVIVJ $.
+      ( vk cuz cfv wcel c1 cmin co cfz cun cv wo wa cle wbr cz eluzelz syl2an
+      wb clt zlelttric eluz eluzel2 elfzm11 df-3an syl6bb syl2anr eluzle adantl
+      w3a jca biantrurd bitr4d orbi12d mpbird orcomd ex elfzuz a1i uztrn expcom
+      wi jaod impbid elun syl6bbr eqrdv ) BADEZFZCVIABGHIZJIZBDEZKZVJCLZVIFZVOV
+      LFZVOVMFZMZVOVNFVJVPVSVJVPVSVJVPNZVRVQVTVRVQMBVOOPZVOBUAPZMZVJBQFZVOQFZWC
+      VPABRZAVORZBVOUBSVTVRWAVQWBVJWDWEVRWATVPWFWGBVOUCSVTVQWEAVOOPZNZWBNZWBVPA
+      QFZWDVQWJTVJAVOUDWFWKWDNVQWEWHWBUKWJVOABUEWEWHWBUFUGUHVTWIWBVPWIVJVPWEWHW
+      GAVOUIULUJUMUNUOUPUQURVJVQVPVRVQVPVCVJVOAVKUSUTVRVJVPBVOAVAVBVDVEVOVLVMVF
+      VGVH $.
 
     $( The first ` N ` elements of an upper integer set are distinct from any
        later members.  (Contributed by Mario Carneiro, 24-Apr-2014.) $)
