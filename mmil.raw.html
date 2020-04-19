@@ -816,7 +816,26 @@ variables</A></LI>
 <LI>
 <A HREF="acexmid.html">The axiom of choice implies excluded middle</A></LI>
 
-<LI>...<I>watch this space as we build out more of set theory</I></LI>
+<LI>
+<A HREF="onprc.html">Burali-Forti paradox</A></LI>
+
+<LI>
+<A HREF="tfis3.html">Transfinite induction</A></LI>
+
+<LI>
+<A HREF="oacl.html">Closure law for ordinal addition</A></LI>
+
+</MENU>
+<B>Real and complex numbers</B>
+
+<MENU>
+<LI>Properties of apartness:
+<A HREF="apirr.html">1</A>
+<A HREF="apsym.html">2</A>
+<A HREF="apcotr.html">3</A>
+<A HREF="apti.html">4</A></LI>
+
+<MENU>
 
 </MENU>
 </TD></TR></TABLE>
@@ -1290,6 +1309,11 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+<TD>uneqdifeq</TD>
+<TD>~ uneqdifeqim </TD>
+</TR>
+
+<TR>
 <TD>r19.45zv</TD>
 <TD>~ r19.45mv </TD>
 </TR>
@@ -1651,6 +1675,11 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
+<TD>elfvex</TD>
+<TD>~ relelfvdm </TD>
+</TR>
+
+<TR>
 <TD>f0cli</TD>
 <TD>~ ffvelrn </TD>
 </TR>
@@ -1732,16 +1761,25 @@ found in ~ ovi3 .</TD>
 </TR>
 
 <TR>
-<TD>ndmovg , ndmov , ndmovcl ,
-    ndmovrcl , ndmovcom , ndmovass , ndmovdistr , ndmovord ,
+<TD>ndmovg , ndmov</TD>
+<TD>~ ndmfvg </TD>
+<TD>These theorems are generally used in set.mm for case elimination
+which is why we just have the general ~ ndmfvg rather than an
+operation-specific version.
+</TR>
+
+<TR>
+<TD>ndmovcl , ndmovcom , ndmovass , ndmovdistr , ndmovord ,
     and ndmovordi</TD>
 <TD><I>none</I></TD>
-<TD>Although these theorems are moderately widely used in set.mm,
-    in many cases they are being used for case elimination and
-    the set.mm proofs are not intuitionistic. We might bring
-    back some of them later (which may have conditions that the
-    sets exist, but aren't in the domain), but maybe we'll find
-    a way to avoid them.
+<TD>These theorems are generally used in set.mm for case elimination
+and the most straightforward way to avoid them is to add conditions
+that we are evaluating functions within their domains.
+</TR>
+
+<TR>
+<TD>ndmovrcl</TD>
+<TD>~ elmpt2cl , ~ relelfvdm</TD>
 </TR>
 
 <TR>
@@ -2296,6 +2334,12 @@ we wanted strict dominance to have the expected properties.</TD>
 <TD>enfixsn</TD>
 <TD><I>none</I></TD>
 <TD>The set.mm proof relies on difsnen</TD>
+</TR>
+
+<TR>
+<TD>sbth and its lemmas, sbthb , sbthcl</TD>
+<TD><I>none</I></TD>
+<TD>The Schroeder-Bernstein Theorem implies excluded middle</TD>
 </TR>
 
 <TR>
@@ -2877,9 +2921,14 @@ to "apart from zero".</TD>
 </TR>
 
 <TR>
-<TD>lecasei , lelttric , ltlecasei</TD>
+<TD>lecasei , ltlecasei</TD>
 <TD><I>none</I></TD>
 <TD>These are real number trichotomy</TD>
+</TR>
+
+<TR>
+<TD>lelttric</TD>
+<TD>~ zlelttric </TD>
 </TR>
 
 <TR>
@@ -3604,6 +3653,19 @@ trichotomy.</TD>
 <TD><I>none</I></TD>
 <TD>This presumably could be proved if not equal is changed
 to apart, but is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>fzn0</TD>
+<TD>~ fzm </TD>
+</TR>
+
+<TR>
+<TD>fz0</TD>
+<TD><I>none</I></TD>
+<TD>Although it would be possible to prove a version of this
+with the additional conditions that ` M e. _V ` and ` N e. _V ` ,
+the theorem is lightly used in set.mm.</TD>
 </TR>
 
 </TABLE>
