@@ -1,4 +1,4 @@
-$( iset.mm - Version of 17-Apr-2020
+$( iset.mm - Version of 18-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -78258,6 +78258,14 @@ $)
       DQUIUJUKULUMVGAUNUOFUPUSIUQURUT $.
   $}
 
+  $( Membership of an integer in an upper set of integers is decidable.
+     (Contributed by Jim Kingdon, 18-Apr-2020.) $)
+  eluzdc $p |- ( ( M e. ZZ /\ N e. ZZ ) -> DECID N e. ( ZZ>= ` M ) ) $=
+    ( cz wcel wa cle wbr clt wo cuz cfv wdc zlelttric wn eluz biimprd wb zltnle
+    ancoms notbid sylbid orim12d df-dc syl6ibr mpd ) ACDZBCDZEZABFGZBAHGZIZBAJK
+    DZLZABMUHUKULULNZIUMUHUIULUJUNUHULUIABOZPUHUJUINZUNUGUFUJUPQBARSUHUNUPUHULU
+    IUOTPUAUBULUCUDUE $.
+
   ${
     $d A a b x y z $.
     $( The image under negation of a bounded-above set of reals is bounded
@@ -81907,12 +81915,13 @@ $)
      (Contributed by NM, 11-Dec-2005.) $)
   fzneuz $p |- ( ( N e. ( ZZ>= ` M ) /\ K e. ZZ )
                -> -. ( M ... N ) = ( ZZ>= ` K ) ) $=
-    ( cuz cfv wcel cz wa cfz co wceq wn c1 caddc peano2uz adantl wbr cr nelneq2
-    ad2antrr cle eluzelre clt wb peano2re ltnle mpdan mpbid syl elfzle2 syl2anc
-    ltp1 nsyl eqcom sylnib eluzfz2 sylancom pm2.61dan ) CBDEFZAGFZHZCADEZFZBCIJ
-    ZVBKZLZVAVCHZVBVDKZVEVGCMNJZVBFZVIVDFZLZVHLVCVJVAACOPUSVLUTVCUSVICUAQZVKUSC
-    RFZVMLZBCUBVNCVIUCQZVOCULVNVIRFVPVOUDCUECVIUFUGUHUIVIBCUJUMTVIVBVDSUKVBVDUN
-    UOVAVCLZCVDFZVFUSVRUTVQBCUPTCVDVBSUQUR $.
+    ( cuz cfv wcel cz wa cfz co wceq wn c1 peano2uz adantl wbr ad2antrr nelneq2
+    caddc syl2anc cle eluzelz clt zre ltp1d wb peano2z zltnle mpdan syl elfzle2
+    mpbid nsyl eqcom sylnib eluzfz2 sylancom wo simpr adantr eluzdc df-dc sylib
+    wdc mpjaodan ) CBDEFZAGFZHZCADEZFZBCIJZVIKZLZVJLZVHVJHZVIVKKZVLVOCMSJZVIFZV
+    QVKFZLZVPLVJVRVHACNOVFVTVGVJVFVQCUAPZVSVFCGFZWALZBCUBZWBCVQUCPZWCWBCCUDUEWB
+    VQGFWEWCUFCUGCVQUHUIULUJVQBCUKUMQVQVIVKRTVIVKUNUOVHVNCVKFZVMVFWFVGVNBCUPQCV
+    KVIRUQVHVJVDZVJVNURVHVGWBWGVFVGUSVFWBVGWDUTACVATVJVBVCVE $.
 
   $( Disjointness of the upper integers and a finite sequence.  (Contributed by
      Mario Carneiro, 30-Jun-2013.)  (Revised by Mario Carneiro,
