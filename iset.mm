@@ -82024,6 +82024,344 @@ $)
     AUBUCUJUKUDDAUEUFAUGUHUI $.
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Finite intervals of nonnegative integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Finite intervals of nonnegative integers (or "finite sets of sequential
+nonnegative integers") are finite intervals of integers with 0 as lower bound:
+` ( 0 ... N ) `, usually abbreviated by "fz0".
+$)
+
+  $( Membership in a finite set of sequential nonnegative integers.
+     (Contributed by NM, 16-Sep-2005.)  (Revised by Mario Carneiro,
+     28-Apr-2015.) $)
+  elfz2nn0 $p |- ( K e. ( 0 ... N ) <-> ( K e. NN0 /\ N e. NN0 /\ K <_ N ) ) $=
+    ( cc0 cuz cfv wcel cn0 cle wbr cfz w3a elnn0uz anbi1i eluznn0 eluzle adantl
+    wa co cz nn0z jca wb eluz syl2an biimprd impr impbida pm5.32i bitr3i 3anass
+    elfzuzb 3bitr4i ) ACDEFZBADEFZQZAGFZBGFZABHIZQZQZACBJRFUPUQURKUOUPUNQZUTUPU
+    MUNALMUPUNUSUPUNUSVAUQURBANUNURUPABOPUAUPUQURUNUPUQQUNURUPASFBSFUNURUBUQATB
+    TABUCUDUEUFUGUHUIACBUKUPUQURUJUL $.
+
+  $( Characterization of a finite set of sequential nonnegative integers.
+     (Contributed by NM, 1-Aug-2005.) $)
+  fznn0 $p |- ( N e. NN0
+                -> ( K e. ( 0 ... N ) <-> ( K e. NN0 /\ K <_ N ) ) ) $=
+    ( cn0 wcel cc0 cfz co cz cle wbr w3a wa wb nn0z elfz1 sylancr df-3an elnn0z
+    0z anbi1i bitr4i syl6bb ) BCDZAEBFGDZAHDZEAIJZABIJZKZACDZUGLZUCEHDBHDUDUHMS
+    BNAEBOPUHUEUFLZUGLUJUEUFUGQUIUKUGARTUAUB $.
+
+  $( A member of a finite set of sequential nonnegative integers is a
+     nonnegative integer.  (Contributed by NM, 5-Aug-2005.)  (Revised by Mario
+     Carneiro, 28-Apr-2015.) $)
+  elfznn0 $p |- ( K e. ( 0 ... N ) -> K e. NN0 ) $=
+    ( cc0 cfz co wcel cn0 cle wbr elfz2nn0 simp1bi ) ACBDEFAGFBGFABHIABJK $.
+
+  $( The upper bound of a nonempty finite set of sequential nonnegative
+     integers is a nonnegative integer.  (Contributed by NM, 16-Sep-2005.)
+     (Revised by Mario Carneiro, 28-Apr-2015.) $)
+  elfz3nn0 $p |- ( K e. ( 0 ... N ) -> N e. NN0 ) $=
+    ( cc0 cfz co wcel cn0 cle wbr elfz2nn0 simp2bi ) ACBDEFAGFBGFABHIABJK $.
+
+  $( 0 is an element of a finite set of sequential nonnegative integers with a
+     nonnegative integer as upper bound.  (Contributed by AV, 6-Apr-2018.) $)
+  0elfz $p |- ( N e. NN0 -> 0 e. ( 0 ... N ) ) $=
+    ( cn0 wcel cc0 cle wbr cfz co 0nn0 a1i id nn0ge0 elfz2nn0 syl3anbrc ) ABCZD
+    BCZODAEFDDAGHCPOIJOKALDAMN $.
+
+  $( A nonnegative integer is always part of the finite set of sequential
+     nonnegative integers with this integer as upper bound.  (Contributed by
+     Scott Fenton, 21-Mar-2018.) $)
+  nn0fz0 $p |- ( N e. NN0 <-> N e. ( 0 ... N ) ) $=
+    ( cn0 wcel cc0 cfz co cle wbr nn0re leidd fznn0 mpbir2and elfz3nn0 impbii
+    id ) ABCZADAEFCZPQPAAGHPOPAAIJAAKLAAMN $.
+
+  $( An element of a finite set of sequential nonnegative integers is an
+     element of an extended finite set of sequential nonnegative integers.
+     (Contributed by Alexander van der Vekens, 28-Mar-2018.)  (Proof shortened
+     by OpenAI, 25-Mar-2020.) $)
+  elfz0add $p |- ( ( A e. NN0 /\ B e. NN0 )
+                   -> ( N e. ( 0 ... A ) -> N e. ( 0 ... ( A + B ) ) ) ) $=
+    ( cn0 wcel wa cc0 cfz co caddc cuz cfv wss cz nn0z uzid syl anim12i uzaddcl
+    id fzss2 sseld ) ADEZBDEZFZGAHIZGABJIZHIZCUEUGAKLZEZUFUHMUEAUIEZUDFUJUCUKUD
+    UDUCANEUKAOAPQUDTRBAASQAGUGUAQUB $.
+
+  $( An element of a finite set of sequential nonnegative integers is an
+     element of an extended finite set of sequential nonnegative integers.
+     (Contributed by Alexander van der Vekens, 28-Mar-2018.)  Obsolete version
+     of ~ elfz0add as of 25-Mar-2020.  (New usage is discouraged.)
+     (Proof modification is discouraged.) $)
+  elfz0addOLD $p |- ( ( A e. NN0 /\ B e. NN0 )
+                   -> ( N e. ( 0 ... A ) -> N e. ( 0 ... ( A + B ) ) ) ) $=
+    ( cn0 wcel wa cc0 cfz co caddc cuz cfv wss cz cle wbr nn0z adantr cr nn0re
+    nn0addcl nn0zd nn0ge0 adantl addge01 syl2an mpbid eluz2 syl3anbrc fzss2 syl
+    wb sseld ) ADEZBDEZFZGAHIZGABJIZHIZCUPURAKLEZUQUSMUPANEZURNEAUROPZUTUNVAUOA
+    QRUPURABUAUBUPGBOPZVBUOVCUNBUCUDUNASEBSEVCVBULUOATBTABUEUFUGAURUHUIAGURUJUK
+    UM $.
+
+  $( An integer range from 0 to 2 is an unordered triple.  (Contributed by
+     Alexander van der Vekens, 1-Feb-2018.) $)
+  fz0tp $p |- ( 0 ... 2 ) = { 0 , 1 , 2 } $=
+    ( cc0 c2 cfz co caddc c1 ctp 2cn addid2i eqcomi oveq2i cz wcel wceq 0z fztp
+    ax-mp eqid id a1i 0p1e1 tpeq123d 3eqtri ) ABCDAABEDZCDZAAFEDZUDGZAFBGZBUDAC
+    UDBBHIZJKALMUEUGNOAPQAANZUGUHNARUJAAUFFUDBUJSUFFNUJUATUDBNUJUITUBQUC $.
+
+  $( An element of a finite set of sequential nonnegative integers is an
+     element of a finite set of sequential nonnegative integers with the upper
+     bound being an element of the finite set of sequential nonnegative
+     integers with the same lower bound as for the first interval and the
+     element under consideration as upper bound.  (Contributed by Alexander van
+     der Vekens, 3-Apr-2018.) $)
+  elfz0ubfz0 $p |- ( ( K e. ( 0 ... N ) /\ L e. ( K ... N ) )
+                     -> K e. ( 0 ... L ) ) $=
+    ( cc0 cfz co wa cn0 cle wbr w3a wi elfz2nn0 cz elfz2 elnn0z sylbi com12 imp
+    wcel simpr1 simpr 0z zletr mp3an1 simplbi2 sylsyld impancom adantr 3ad2ant3
+    expd com13 3ad2ant1 impcom simplrl 3jca ex sylibr ) ADCEFTZBACEFTZGAHTZBHTZ
+    ABIJZKZADBEFTUSUTVDUSVACHTZACIJZKZUTVDLACMUTVGVDUTANTZCNTZBNTZKZVCBCIJZGZGZ
+    VGVDLBACOVNVGVDVNVGGVAVBVCVNVAVEVFUAVGVNVBVAVEVNVBLVFVNVAVBVKVMVAVBLZVJVHVM
+    VOLVIVMVJVOVCVJVOLVLVAVJVCVBVAVHDAIJZGVJVCVBLZLAPVHVJVPVQVHVJGZVPVCVBVRVJVP
+    VCGZDBIJZVBVHVJUBDNTVHVJVSVTLUCDABUDUEVBVJVTBPUFUGUKUHQULUIRUJSRUMUNVKVCVLV
+    GUOUPUQQRQSABMUR $.
+
+  $( A member of a finite set of sequential nonnegative integers is a member of
+     a finite set of sequential nonnegative integers with a member of a finite
+     set of sequential nonnegative integers starting at the upper bound of the
+     first interval.  (Contributed by Alexander van der Vekens,
+     27-May-2018.) $)
+  elfz0fzfz0 $p |- ( ( M e. ( 0 ... L ) /\ N e. ( L ... X ) )
+                     -> M e. ( 0 ... N ) ) $=
+    ( cc0 cfz co wcel wa cn0 cle wbr w3a wi elfz2nn0 cz cr adantr imp sylbi zre
+    elfz2 nn0re 3anim123i 3expa letr syl simplll simpr elnn0z 0red adantl exp4b
+    syl3anc com23 sylanbrc 3jca ex syld 3impia com13 com12 3ad2ant3 sylibr ) BE
+    AFGHZCADFGHZIBJHZCJHZBCKLZMZBECFGHVEVFVJVEVGAJHZBAKLZMZVFVJNBAOVFVMVJVFAPHZ
+    DPHZCPHZMZACKLZCDKLZIZIVMVJNZCADUBVQVTWAVPVNVTWANVOVTVPWAVRVPWANVSVMVPVRVJV
+    GVKVLVPVRVJNZNVGVKIZVPVLWBWCVPVLVRVJWCVPIZVLVRIZVIVJWDBQHZAQHZCQHZMZWEVINVG
+    VKVPWIVGWFVKWGVPWHBUCAUCCUAZUDUEBACUFUGWDVIVJWDVIIZVGVHVIVGVKVPVIUHWKVPECKL
+    ZVHWDVPVIWCVPUIRWDVIWLWCVPVIWLNZVGVPWMNZVKVGBPHZEBKLZIWNBUJWOWPWNWOVPWPWMWO
+    VPWPVIWLWOVPIZEQHWFWHWPVIIWLNWQUKWOWFVPBUARVPWHWOWJULEBCUFUNUMUOSTRSSCUJUPW
+    DVIUIUQURUSUMUOUTVARVBVCSTVBTSBCOVD $.
+
+  $( If a member of a finite set of sequential integers with a lower bound
+     being a member of a finite set of sequential nonnegative integers with the
+     same upper bound, this member is also a member of the finite set of
+     sequential nonnegative integers.  (Contributed by Alexander van der
+     Vekens, 21-Apr-2018.) $)
+  fz0fzelfz0 $p |- ( ( N e. ( 0 ... R ) /\ M e. ( N ... R ) )
+                     -> M e. ( 0 ... R ) ) $=
+    ( cc0 cfz co wcel wa cn0 cle wbr w3a wi elfz2nn0 cz adantr 3jca imp sylbi
+    cr elfz2 simplr 0red nn0re zre adantl nn0ge0 anim1i letr elnn0z exp31 com23
+    sylc sylanbrc 3ad2ant1 com13 adantrd 3ad2ant3 simpr2 simplrr com12 sylibr
+    ex ) CDAEFZGZBCAEFGZHBIGZAIGZBAJKZLZBVDGVEVFVJVECIGZVHCAJKZLZVFVJMCANVFVMVJ
+    VFCOGZAOGZBOGZLZCBJKZVIHZHZVMVJMBCAUAVTVMVJVTVMHVGVHVIVTVMVGVQVSVMVGMZVPVNV
+    SWAMVOVPVRWAVIVMVRVPVGVKVHVRVPVGMMVLVKVPVRVGVKVPVRVGVKVPHZVRHZVPDBJKZVGVKVP
+    VRUBWCDTGZCTGZBTGZLZDCJKZVRHWDWBWHVRWBWEWFWGWBUCVKWFVPCUDPVPWGVKBUEUFQPWBWI
+    VRVKWIVPCUGPUHDCBUIUMBUJUNUKULUOUPUQURRRVTVKVHVLUSVQVRVIVMUTQVCSVASRBANVB
+    $.
+
+  $( Subtraction closure for a member of a finite set of sequential nonnegative
+     integers.  (Contributed by NM, 26-Sep-2005.)  (Revised by Mario Carneiro,
+     28-Apr-2015.) $)
+  fznn0sub2 $p |- ( K e. ( 0 ... N ) -> ( N - K ) e. ( 0 ... N ) ) $=
+    ( cc0 cfz co wcel cmin cle wbr elfzle1 cz wb elfzel2 elfzelz cr zre subge02
+    syl2an syl2anc mpbid cuz cfv cn0 fznn0sub nn0uz syl6eleq elfz5 mpbird ) ACB
+    DEZFZBAGEZUIFZUKBHIZUJCAHIZUMACBJUJBKFZAKFZUNUMLZACBMZACBNUOBOFAOFUQUPBPAPB
+    AQRSTUJUKCUAUBZFUOULUMLUJUKUCUSACBUDUEUFURUKCBUGSUH $.
+
+  $( Membership of an integer greater than L decreased by L in a finite set of
+     sequential nonnegative integers.  (Contributed by Alexander van der
+     Vekens, 16-Sep-2018.) $)
+  uzsubfz0 $p |- ( ( L e. NN0 /\ N e. ( ZZ>= ` L ) )
+                   -> ( N - L ) e. ( 0 ... N ) ) $=
+    ( cn0 wcel cuz cfv wa cc0 cfz co cmin cle wbr simpl eluznn0 eluzle elfz2nn0
+    adantl syl3anbrc fznn0sub2 syl ) ACDZBAEFDZGZAHBIJZDZBAKJUEDUDUBBCDABLMZUFU
+    BUCNBAOUCUGUBABPRABQSABTUA $.
+
+  $( The difference of an integer in a finite set of sequential nonnegative
+     integers and and an integer of a finite set of sequential integers with
+     the same upper bound and the nonnegative integer as lower bound is a
+     member of the finite set of sequential nonnegative integers.  (Contributed
+     by Alexander van der Vekens, 6-Jun-2018.) $)
+  fz0fzdiffz0 $p |- ( ( M e. ( 0 ... N ) /\ K e. ( M ... N ) )
+                      -> ( K - M ) e. ( 0 ... N ) ) $=
+    ( cc0 cfz co wcel wa cn0 cle wbr w3a adantl wb elfznn0 adantr mpbid wi cz
+    cr cmin fz0fzelfz0 elfzle1 nn0sub syl2anr elfz3nn0 elfz2 zsubcl zred ancoms
+    elfz2nn0 3adant2 zre 3ad2ant3 3ad2ant2 3jca nn0ge0 nn0re syl2an anim1i letr
+    subge02 sylc exp31 a1i com14 impcom sylbi com13 3adant3 imp mpancom sylibr
+    ) BDCEFZGZABCEFGZHZABUAFZIGZCIGZVRCJKZLZVRVNGAVNGZVQWBCABUBWCVQHZVSVTWAWDBA
+    JKZVSVQWEWCVPWEVOABCUCMMVQBIGZAIGWEVSNWCVOWFVPBCOPACOBAUDUEQWCVTVQACUFPVQWA
+    WCVOVPWAVOWFVTBCJKZLVPWARZBCUKWFVTWHWGVTWFWHVPWFVTWAVPBSGZCSGZASGZLZWEACJKZ
+    HZHWFVTWARRZABCUGWNWLWOWMWLWORWEVTWLWFWMWAWLWFWMWARRRVTWLWFWMWAWLWFHZWMHVRT
+    GZATGZCTGZLZVRAJKZWMHWAWPWTWMWLWTWFWLWQWRWSWIWKWQWJWKWIWQWKWIHVRABUHUIUJULW
+    KWIWRWJAUMUNZWJWIWSWKCUMUOUPPPWPXAWMWPDBJKZXAWFXCWLBUQMWLWRBTGXCXANWFXBBURA
+    BVBUSQUTVRACVAVCVDVEVFMVGVHVIVGVJVHVKMUPVLVRCUKVM $.
+
+  $( Subtracting the lower bound of a finite set of sequential integers from an
+     element of this set.  (Contributed by Alexander van der Vekens,
+     29-Mar-2018.)  (Proof shortened by OpenAI, 25-Mar-2020.) $)
+  elfzmlbm $p |- ( K e. ( M ... N ) -> ( K - M ) e. ( 0 ... ( N - M ) ) ) $=
+    ( cfz wcel cmin cn0 cle wbr cc0 cuz cfv elfzuz uznn0sub syl elfzuz2 elfzelz
+    co zred elfzel2 elfzel1 elfzle2 lesub1dd elfz2nn0 syl3anbrc ) ABCDREZABFRZG
+    EZCBFRZGEZUGUIHIUGJUIDREUFABKLZEUHABCMBANOUFCUKEUJABCPBCNOUFACBUFAABCQSUFCA
+    BCTSUFBABCUASABCUBUCUGUIUDUE $.
+
+  $( Subtracting the lower bound of a finite set of sequential integers from an
+     element of this set.  (Contributed by Alexander van der Vekens,
+     29-Mar-2018.)  Obsolete version of ~ elfzmlbm as of 25-Mar-2020.
+     (New usage is discouraged.)  (Proof modification is discouraged.) $)
+  elfzmlbmOLD $p |- ( K e. ( M ... N ) -> ( K - M ) e. ( 0 ... ( N - M ) ) ) $=
+    ( cz wcel w3a cle wbr wa cmin co cn0 cfz wi znn0sub biimpd com12 impcom zre
+    cr cc0 3adant2 adantr 3anim123i 3com23 syl 3adant3 imp 3com13 lesub1 adantl
+    letr syld wb 3jca elfz2 elfz2nn0 3imtr4i ) BDEZCDEZADEZFZBAGHZACGHZIZIZABJK
+    ZLEZCBJKZLEZVGVIGHZFABCMKEVGUAVIMKEVFVHVJVKVEVBVHVCVBVHNVDVBVCVHUSVAVCVHNUT
+    USVAIVCVHBAOPUBQUCRVBVEVJVBVEBCGHZVJVBBTEZATEZCTEZFZVEVLNUSVAUTVPUSVMVAVNUT
+    VOBSZASZCSZUDUEBACULUFUSUTVLVJNVAUSUTIVLVJBCOPUGUMUHVEVBVKVDVBVKNVCVBVDVKVB
+    VDVKVBVNVOVMFZVDVKUNVAUTUSVTVAVNUTVOUSVMVRVSVQUDUIACBUJUFPQUKRUOABCUPVGVIUQ
+    UR $.
+
+  $( Subtracting the lower bound of a finite set of sequential integers from an
+     element of this set.  (Contributed by Alexander van der Vekens,
+     29-Mar-2018.) $)
+  elfzmlbp $p |- ( ( N e. ZZ /\ K e. ( M ... ( M + N ) ) )
+                   -> ( K - M ) e. ( 0 ... N ) ) $=
+    ( cz wcel co cfz wa cn0 cle wbr w3a cc0 wi wb adantr cr zre adantl imp cmin
+    caddc elfz2 znn0sub biimpcd impcom zaddcl adantlr zred letr syl3anc addge01
+    syl2an elnn0z simplbi2 sylbird syld df-3an bitr3i 3anim123i sylbi lesubadd2
+    3ancoma syl biimprcd 3jca exp31 com23 3adant2 com12 syl5bi elfz2nn0 sylibr
+    ) CDEZABBCUBFZGFEZHABUAFZIEZCIEZVQCJKZLZVQMCGFEVNVPWAVPBDEZVODEZADEZLZBAJKZ
+    AVOJKZHZHZVNWAABVOUCWIVNWAWEWHVNWANZWBWDWHWJNWCWBWDHZVNWHWAWKVNWHWAWKVNHZWH
+    HVRVSVTWHWLVRWFWLVRNWGWLWFVRWKWFVROVNBAUDPUEPUFWLWHVSWLWHBVOJKZVSWLBQEZAQEZ
+    VOQEWHWMNWKWNVNWBWNWDBRZPZPWKWOVNWDWOWBARZSPWLVOWBVNWCWDBCUGUHUIBAVOUJUKWLW
+    MMCJKZVSWKWNCQEZWSWMOVNWQCRZBCULUMVNWSVSNWKVSVNWSCUNUOSUPUQTWHWLVTWGWLVTNWF
+    WLVTWGWLWOWNWTLZVTWGOWLWDWBVNLZXBWLWBWDVNLXCWBWDVNURWBWDVNVCUSWDWOWBWNVNWTW
+    RWPXAUTVAABCVBVDVESUFVFVGVHVITVJVKTVQCVLVM $.
+
+  $( Lemma for theorems about the central binomial coefficient.  (Contributed
+     by Mario Carneiro, 8-Mar-2014.)  (Revised by Mario Carneiro,
+     2-Aug-2014.) $)
+  fzctr $p |- ( N e. NN0 -> N e. ( 0 ... ( 2 x. N ) ) ) $=
+    ( cn0 wcel cc0 c2 cmul co cfz cle wbr nn0ge0 caddc cr nn0re nn0addge1 nn0cn
+    mpancom 2timesd breqtrrd cz wa wb nn0z 0zd 2z zmulcl sylancr elfz mpbir2and
+    syl3anc ) ABCZADEAFGZHGCZDAIJZAULIJZAKUKAAALGZULIAMCUKAUPIJANAAOQUKAAPRSUKA
+    TCZDTCULTCZUMUNUOUAUBAUCZUKUDUKETCUQURUEUSEAUFUGADULUHUJUI $.
+
+  $( The difference of two integers from a finite set of sequential nonnegative
+     integers is also element of this finite set of sequential integers.
+     (Contributed by Alexander van der Vekens, 12-Jun-2018.) $)
+  difelfzle $p |- ( ( K e. ( 0 ... N ) /\ M e. ( 0 ... N ) /\ K <_ M )
+                   -> ( M - K ) e. ( 0 ... N ) ) $=
+    ( cc0 co wcel cle wbr w3a cn0 cz wa wi elfznn0 nn0z syl2anr adantr cr nn0re
+    wb cfz cmin zsubcl subge0 biimpar jca exp31 syl2im elnn0z elfz3nn0 3ad2ant1
+    3imp sylibr elfz2nn0 resubcl syl2an 3ad2ant2 nn0ge0 adantl subge02 mpbid ex
+    simpl3 letrd sylbi syl5com a1dd syl3anbrc ) ADCUAEZFZBVIFZABGHZIZBAUBEZJFZC
+    JFZVNCGHZVNVIFVMVNKFZDVNGHZLZVOVJVKVLVTVJAJFZVKBJFZVLVTMACNZBCNWAWBVLVTWAWB
+    LZVLLVRVSWDVRVLWBBKFAKFVRWABOAOBAUCPQWDVSVLWBBRFZARFZVSVLTWABSZASZBAUDPUEUF
+    UGUHULVNUIUMVJVKVPVLACUJUKVJVKVLVQVJVKVQVLVJWAVKVQWCVKWBVPBCGHZIZWAVQMBCUNW
+    JWAVQWJWALZVNBCWJWEWFVNRFWAWBVPWEWIWGUKZWHBAUOUPWJWEWAWLQWJCRFZWAVPWBWMWICS
+    UQQWKDAGHZVNBGHZWAWNWJAURUSWJWEWFWNWOTWAWLWHBAUTUPVAWBVPWIWAVCVDVBVEVFVGULV
+    NCUNVH $.
+
+  $( The difference of two integers from a finite set of sequential nonnegative
+     integers increased by the upper bound is also element of this finite set
+     of sequential integers.  (Contributed by Alexander van der Vekens,
+     12-Jun-2018.) $)
+  difelfznle $p |- ( ( K e. ( 0 ... N ) /\ M e. ( 0 ... N ) /\ -. K <_ M )
+                   -> ( ( M + N ) - K ) e. ( 0 ... N ) ) $=
+    ( cc0 co wcel cle wbr w3a caddc cn0 cz elfz2nn0 wa 3adant3 sylbi cr zred wb
+    syl wn cmin nn0addcl nn0zd elfzelz zsubcl syl2anr adantr elfzel2 nn0readdcl
+    cfz adantl elfzle2 elfzle1 nn0re anim12ci addge02 anim12i letr imp syl31anc
+    mpbid zre readdcl sylan subge0 mpbird elnn0z sylanbrc elfz3nn0 3ad2ant1 clt
+    wi ltnle ancoms ltle sylbird syl2an 3impia leadd1d lesubadd2d syl3anbrc ) A
+    DCUKEZFZBWCFZABGHUAZIZBCJEZAUBEZKFZCKFZWICGHZWIWCFWGWILFZDWIGHZWJWDWEWMWFWE
+    WHLFZALFZWMWDWEBKFZWKBCGHZIZWOBCMZWQWKWOWRWQWKNWHBCUCUDOPADCUEZWHAUFUGOWGWN
+    AWHGHZWDWEXBWFWDWENZAQFZCQFZWHQFZACGHZCWHGHZNZXBWDXDWEWDAXARUHZWDXEWEWDCADC
+    UIRUHZWEXFWDWEWSXFWTWQWKXFWRBCUJOPULZWDXGWEXHADCUMWEDBGHZXHBDCUNWEXEBQFZNZX
+    MXHSWEWSXOWTWQWKXOWRWQXNWKXEBUOZCUOZUPOPCBUQTVBURXDXEXFIXIXBACWHUSUTVAOWGXF
+    XDNZWNXBSWDWEXRWFWDWPWEXRXAWPXDWEXFAVCZWEXNXENZXFWEWSXTWTWQWKXTWRWQXNWKXEXP
+    XQUROPBCVDTUPVEOWHAVFTVGWIVHVIWDWEWKWFACVJVKWGWLWHACJEGHZWGBAGHZYAWDWEWFYBW
+    DWPBLFZWFYBVMZWEXABDCUEZWPXDXNYDYCXSBVCXDXNNWFBAVLHZYBXNXDYFWFSBAVNVOXNXDYF
+    YBVMBAVPVOVQVRVRVSWDWEYBYASWFXCBACWEXNWDWEBYERULXJXKVTOVBWDWEWLYASWFXCWHACX
+    LXJXKWAOVGWICMWB $.
+
+  ${
+    $( Express the set of nonnegative integers as the disjoint (see ~ nn0disj )
+       union of the first ` N + 1 ` values and the rest.  (Contributed by AV,
+       8-Nov-2019.) $)
+    nn0split $p |- ( N e. NN0
+                     -> NN0 = ( ( 0 ... N ) u. ( ZZ>= ` ( N + 1 ) ) ) ) $=
+      ( cn0 wcel cc0 cuz cfv c1 caddc co cmin cfz wceq nn0uz peano2nn0 syl6eleq
+      cun a1i uzsplit syl cc nn0cn pncan1 oveq2d uneq1d 3eqtrd ) ABCZBDEFZDAGHI
+      ZGJIZKIZUHEFZPZDAKIZUKPBUGLUFMQUFUHUGCUGULLUFUHBUGANMODUHRSUFUJUMUKUFUIAD
+      KUFATCUIALAUAAUBSUCUDUE $.
+
+    $d N k $.
+    $( The first ` N + 1 ` elements of the set of nonnegative integers are
+       distinct from any later members.  (Contributed by AV, 8-Nov-2019.) $)
+    nn0disj $p |- ( ( 0 ... N ) i^i ( ZZ>= ` ( N + 1 ) ) ) = (/) $=
+      ( vk cc0 cfz co c1 caddc cuz cfv c0 wceq wcel clt wbr cle syl cz mpbid wn
+      zred cin wss cv cmin elin simprbi eluzel2 eluzelz zlem1lt syl2anc simplbi
+      eluzle wb elfzle2 elfzel2 adantr sylbi lenltd pncan1 eqcomd breq1d notbid
+      wa cc zcnd bitrd pm2.21dd ssriv ss0 ax-mp ) CADEZAFGEZHIZUAZJUBVNJKBVNJBU
+      CZVNLZVLFUDEZVOMNZVOJLVPVLVOONZVRVPVOVMLZVSVPVOVKLZVTVOVKVMUEZUFZVLVOULPV
+      PVLQLZVOQLZVSVRUMVPVTWDWCVLVOUGPVPVTWEWCVLVOUHPZVLVOUIUJRVPVOAONZVRSZVPWA
+      WGVPWAVTWBUKVOCAUNPVPWGAVOMNZSWHVPVOAVPVOWFTVPAVPWAVTVCAQLZWBWAWJVTVOCAUO
+      UPUQZTURVPWIVRVPAVQVOMVPVQAVPAVDLVQAKVPAWKVEAUSPUTVAVBVFRVGVHVNVIVJ $.
+  $}
+
+  $( A one value function.  (Contributed by Alexander van der Vekens,
+     3-Dec-2017.) $)
+  1fv $p |- ( ( N e. V /\ P = { <. 0 , N >. } )
+                 -> ( P : ( 0 ... 0 ) --> V /\ ( P ` 0 ) = N ) ) $=
+    ( wcel cc0 cop csn wceq wa cfz co wf cfv wf1o cz f1osng mpan biimpi adantr
+    0z wfo crn wi f1ofo dffo2 wss fzsn ax-mp eqcomi feq2i snssi fss syl2an 3syl
+    ex mpcom fvsng jca wb feq1 fveq1 eqeq1d anbi12d adantl mpbird ) BCDZAEBFGZH
+    ZIEEJKZCALZEAMZBHZIZVICVGLZEVGMZBHZIZVFVQVHVFVNVPEGZBGZVGNZVFVNEODZVFVTTEBO
+    CPQVTVRVSVGUAZVRVSVGLZVGUBVSHZIZVFVNUCZVRVSVGUDWBWEVRVSVGUERWCWFWDWCVFVNWCV
+    IVSVGLZVSCUFVNVFWCWGVRVIVSVGVIVRWAVIVRHTEUGUHUIUJRBCUKVIVSCVGULUMUOSUNUPWAV
+    FVPTEBOCUQQURSVHVMVQUSVFVHVJVNVLVPVICAVGUTVHVKVOBEAVGVAVBVCVDVE $.
+
+  ${
+    $d P a b c d $.  $d V a b c d $.
+    $( The first four function values of a word of length at least 4.
+       (Contributed by Alexander van der Vekens, 18-Nov-2017.) $)
+    4fvwrd4 $p |- ( ( L e. ( ZZ>= ` 3 ) /\ P : ( 0 ... L ) --> V )
+                    -> E. a e. V E. b e. V E. c e. V E. d e. V
+                       ( ( ( P ` 0 ) = a /\ ( P ` 1 ) = b )
+                      /\ ( ( P ` 2 ) = c /\ ( P ` 3 ) = d ) ) ) $=
+      ( c3 cuz cfv wcel cc0 wa cv wceq wrex c1 c2 rexbii bitri cfz co simpr cn0
+      wf 0nn0 elnn0uz mpbi 3nn0 uzss ax-mp sseli eluzfz sylancr adantr ffvelrnd
+      wss risset eqcom sylib 1eluzge0 cz cle 1z 3z 1le3 eluz2 mpbir3an 2eluzge0
+      wbr jca uzuzle23 mpan r19.42v anbi2i 2rexbii r19.41v anbi1i 3bitri sylibr
+      jca32 ) BHIJZKZLBUAUBZCAUEZMZLAJZDNZOZDCPZQAJZENZOZECPZMZRAJZFNZOZFCPZHAJ
+      ZGNZOZGCPZMZMZWIWMMZWRXBMZMGCPZFCPZECPDCPZWFWOWSXCWFWJWNWFWGCKZWJWFWDCLAW
+      CWEUCZWCLWDKZWEWCLLIJZKZBXNKXMLUDKXOUFLUGUHWBXNBHXNKZWBXNUQHUDKXPUIHUGUHZ
+      LHUJUKULLLBUMUNUOUPXKWHWGOZDCPWJDWGCURXRWIDCWHWGUSSTUTWFWKCKZWNWFWDCQAXLW
+      CQWDKZWEWCQXNKBQIJZKXTVAWBYABHYAKZWBYAUQYBQVBKHVBKQHVCVJVDVEVFQHVGVHQHUJU
+      KULQLBUMUNUOUPXSWLWKOZECPWNEWKCURYCWMECWLWKUSSTUTVKWFWPCKZWSWFWDCRAXLWCRW
+      DKZWEWCRXNKBRIJKYEVIBVLRLBUMUNUOUPYDWQWPOZFCPWSFWPCURYFWRFCWQWPUSSTUTWFWT
+      CKZXCWFWDCHAXLWCHWDKZWEXPWCYHXQHLBUMVMUOUPYGXAWTOZGCPXCGWTCURYIXBGCXAWTUS
+      STUTWAXJXFWRXCMZMZFCPZECPDCPXFXDMZECPZDCPZXEXIYLDECCXHYKFCXHXFXGGCPZMYKXF
+      XGGCVNYPYJXFWRXBGCVNVOTSVPYLYMDECCYLXFYJFCPZMYMXFYJFCVNYQXDXFWRXCFCVQVOTV
+      PYOWIWNMZXDMZDCPYRDCPZXDMXEYNYSDCYNXFECPZXDMYSXFXDECVQUUAYRXDWIWMECVNVRTS
+      YRXDDCVQYTWOXDWIWNDCVQVRVSVSVT $.
+  $}
+
+  ${
+    $d F i $.  $d M i $.  $d P i $.
+    $( Two functions over 0 based finite set of sequential integers are equal
+       if and only if their domains have the same length and the function
+       values are the same at each position.  (Contributed by Alexander van der
+       Vekens, 30-Jun-2018.) $)
+    2ffzeq $p |- ( ( M e. NN0 /\ F : ( 0 ... M ) --> X
+                              /\ P : ( 0 ... N ) --> Y ) -> ( F = P
+              <-> ( M = N /\ A. i e. ( 0 ... M ) ( F ` i ) = ( P ` i ) ) ) ) $=
+      ( cn0 wcel cc0 cfz co wf w3a wceq cfv wa wfn wb ffn cv anim12i syl fzopth
+      wral 3adant1 eqfnfv2 cuz elnn0uz sylbi simpr syl6bi anim1d anim1i impbid1
+      oveq2 3ad2ant1 bitrd ) DHIZJDKLZFCMZJEKLZGAMZNZCAOZUTVBOZBUAZCPVGAPOBUTUE
+      ZQZDEOZVHQZVDCUTRZAVBRZQZVEVISVAVCVNUSVAVLVCVMUTFCTVBGATUBUFBUTVBCAUGUCUS
+      VAVIVKSVCUSVIVKUSVFVJVHUSVFJJOZVJQZVJUSDJUHPIVFVPSDUIJEJDUDUJVOVJUKULUMVJ
+      VFVHDEJKUPUNUOUQUR $.
+  $}
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
