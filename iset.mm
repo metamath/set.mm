@@ -81934,11 +81934,11 @@ $)
   $( Disjointness of the upper integers and a finite sequence.  (Contributed by
      Mario Carneiro, 24-Aug-2013.) $)
   uznfz $p |- ( K e. ( ZZ>= ` N ) -> -. K e. ( M ... ( N - 1 ) ) ) $=
-    ( cuz cfv wcel c1 cmin co cfz cle wbr eluzle clt wn cz eluzel2 wi cr zre wa
-    elfzel1 w3a elfzm11 simp3 syl6bi impancom mpancom syl5com wb eluzelz syl2an
-    ltnle syl2anc sylibd mt2d ) ACDEFZABCGHIZJIFZCAKLZCAMUQUSACNLZUTOZUQCPFZUSV
-    ACAQZBPFZUSVCVARABURUBVEVCUSVAVEVCUAUSAPFZBAKLZVAUCVAABCUDVFVGVAUEUFUGUHUIU
-    QVFVCVAVBUJZCAUKVDVFASFCSFVHVCATCTACUMULUNUOUP $.
+    ( cuz cfv wcel c1 cmin co cfz cle wbr eluzle clt wn cz eluzel2 wi elfzel1
+    wa w3a elfzm11 simp3 syl6bi impancom mpancom syl5com eluzelz zltnle syl2anc
+    wb sylibd mt2d ) ACDEFZABCGHIZJIFZCAKLZCAMUNUPACNLZUQOZUNCPFZUPURCAQZBPFZUP
+    UTURRABUOSVBUTUPURVBUTTUPAPFZBAKLZURUAURABCUBVCVDURUCUDUEUFUGUNVCUTURUSUKCA
+    UHVAACUIUJULUM $.
 
   $( One plus the upper bound of a finite set of integers is not a member of
      that set.  (Contributed by Scott Fenton, 16-Dec-2017.) $)
