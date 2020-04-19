@@ -81927,10 +81927,9 @@ $)
      Mario Carneiro, 30-Jun-2013.)  (Revised by Mario Carneiro,
      24-Aug-2013.) $)
   fznuz $p |- ( K e. ( M ... N ) -> -. K e. ( ZZ>= ` ( N + 1 ) ) ) $=
-    ( cfz co wcel c1 caddc cuz cfv cle wbr elfzle2 clt wn cz wi elfzel2 cr zre
-    eluzp1l ex syl wb elfzelz ltnle syl2an syl2anc sylibd mt2d ) ABCDEFZACGHEIJ
-    FZACKLZABCMUKULCANLZUMOZUKCPFZULUNQABCRZUPULUNCAUAUBUCUKUPAPFZUNUOUDZUQABCU
-    EUPCSFASFUSURCTATCAUFUGUHUIUJ $.
+    ( cfz co wcel c1 caddc cuz cfv cle wbr elfzle2 clt wn cz wi elfzel2 eluzp1l
+    ex syl wb elfzelz zltnle syl2anc sylibd mt2d ) ABCDEFZACGHEIJFZACKLZABCMUHU
+    ICANLZUJOZUHCPFZUIUKQABCRZUMUIUKCASTUAUHUMAPFUKULUBUNABCUCCAUDUEUFUG $.
 
   $( Disjointness of the upper integers and a finite sequence.  (Contributed by
      Mario Carneiro, 24-Aug-2013.) $)
