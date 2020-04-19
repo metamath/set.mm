@@ -81943,10 +81943,10 @@ $)
   $( One plus the upper bound of a finite set of integers is not a member of
      that set.  (Contributed by Scott Fenton, 16-Dec-2017.) $)
   fzp1nel $p |- -. ( N + 1 ) e. ( M ... N ) $=
-    ( c1 caddc co cfz wcel wn cz w3a cle wbr wa wi cr zre clt ltp1 id peano2re
-    ltnled mpbid syl intnand 3ad2ant2 elfz2 notbii imnan bitr4i mpbir ) BCDEZAB
-    FEGZHZAIGZBIGZUKIGZJZAUKKLZUKBKLZMZHZNZUOUNVAUPUOUSURUOBOGZUSHZBPVCBUKQLVDB
-    RVCBUKVCSBTUAUBUCUDUEUMUQUTMZHVBULVEUKABUFUGUQUTUHUIUJ $.
+    ( c1 caddc co cfz wcel wn cz w3a cle wbr wa wi clt zre ltp1d peano2z zltnle
+    wb mpdan mpbid intnand 3ad2ant2 elfz2 notbii imnan bitr4i mpbir ) BCDEZABFE
+    GZHZAIGZBIGZUJIGZJZAUJKLZUJBKLZMZHZNZUNUMUTUOUNURUQUNBUJOLZURHZUNBBPQUNUOVB
+    VCTBRBUJSUAUBUCUDULUPUSMZHVAUKVDUJABUEUFUPUSUGUHUI $.
 
   ${
     $d j k x K $.  $d j k x M $.  $d j k x N $.  $d k x ph $.
