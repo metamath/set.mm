@@ -1,4 +1,4 @@
-$( iset.mm - Version of 18-Apr-2020
+$( iset.mm - Version of 20-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -82526,11 +82526,11 @@ $)
 
   ${
     $d x A $.  $d x B $.  $d x M $.  $d x N $.
-    $( A half-open integer interval is nonempty iff it contains its left
-       endpoint.  (Contributed by Mario Carneiro, 29-Sep-2015.) $)
-    fzon0 $p |- ( ( M ..^ N ) =/= (/) <-> M e. ( M ..^ N ) ) $=
-      ( vx cfzo co c0 wne wcel cv wex n0 elfzolt3b exlimiv sylbi ne0i impbii )
-      ABDEZFGZAQHZRCIZQHZCJSCQKUASCTABLMNQAOP $.
+    $( A half-open integer interval is inhabited iff it contains its left
+       endpoint.  (Contributed by Jim Kingdon, 20-Apr-2020.) $)
+    fzom $p |- ( E. x x e. ( M ..^ N ) <-> M e. ( M ..^ N ) ) $=
+      ( cv cfzo co wcel wex elfzolt3b exlimiv elex2 impbii ) ADZBCEFZGZAHBNGZOP
+      AMBCIJABNKL $.
 
     $( A half-open range is contained in the corresponding closed range.
        (Contributed by Stefan O'Rear, 23-Aug-2015.)  (Revised by Mario
