@@ -82553,11 +82553,14 @@ $)
     ( cz wcel wa cle wbr clt wn cfzo co c0 wceq cr wb lenlt syl2anr fzon bitr3d
     zre ) ACDZBCDZEBAFGZABHGIZABJKLMUBBNDANDUCUDOUABTATBAPQABRS $.
 
-  $( Half-open sets with equal endpoints are empty.  (Contributed by Stefan
-     O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro, 29-Sep-2015.) $)
-  fzo0 $p |- ( A ..^ A ) = (/) $=
-    ( cfzo co wcel wn c0 wceq fzonel fzon0 necon1bbii mpbi ) AAABCZDZELFGAAHMLF
-    AAIJK $.
+  ${
+    $d A x $.
+    $( Half-open sets with equal endpoints are empty.  (Contributed by Stefan
+       O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro, 29-Sep-2015.) $)
+    fzo0 $p |- ( A ..^ A ) = (/) $=
+      ( vx cfzo co c0 wceq cv wcel wn wal wex fzonel fzom mtbir alnex mpbir eq0
+      ) AACDZEFBGRHZIBJZTSBKZIUAARHAALBAAMNSBOPBRQP $.
+  $}
 
   $( If ` K < N ` then ` N - K ` is a positive integer.  (Contributed by Mario
      Carneiro, 29-Sep-2015.)  (Revised by Mario Carneiro, 1-Jan-2017.) $)
