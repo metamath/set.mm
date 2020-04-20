@@ -82386,10 +82386,9 @@ $)
     $( Functionality of the half-open integer set function.  (Contributed by
        Stefan O'Rear, 14-Aug-2015.) $)
     fzof $p |- ..^ : ( ZZ X. ZZ ) --> ~P ZZ $=
-      ( vm vn cv c1 cmin co cfz cz cpw wcel wral cxp cfzo wf wss cuz cfv fzssuz
-      uzssz sstri ovex elpw mpbir rgen2w df-fzo fmpt2 mpbi ) ACZBCDEFZGFZHIZJZB
-      HKAHKHHLUKMNULABHHULUJHOUJUHPQHUHUIRUHSTUJHUHUIGUAUBUCUDABHHUJUKMABUEUFUG
-      $.
+      ( vm vn cv c1 cmin co cfz cz cpw wcel wral cxp cfzo wf peano2zm fzf fovcl
+      sylan2 rgen2a df-fzo fmpt2 mpbi ) ACZBCZDEFZGFZHIZJZBHKAHKHHLUGMNUHABHUDH
+      JUCHJUEHJUHUDOUCUEUGHHGPQRSABHHUFUGMABTUAUB $.
 
     $( Reverse closure for half-open integer sets.  (Contributed by Stefan
        O'Rear, 14-Aug-2015.) $)
