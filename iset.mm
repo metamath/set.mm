@@ -82399,8 +82399,8 @@ $)
     $( Reverse closure for half-open integer sets.  (Contributed by Stefan
        O'Rear, 14-Aug-2015.) $)
     elfzoel2 $p |- ( A e. ( B ..^ C ) -> C e. ZZ ) $=
-      ( cfzo co wcel cz c0 wne ne0i cxp cpw fzof fdmi ndmov necon1ai syl simprd
-      wa ) ABCDEZFZBGFZCGFZUATHIUBUCSZTAJUDTHBCGDGGKGLDMNOPQR $.
+      ( vm vn cz cv c1 cmin co cfz cfzo df-fzo elmpt2cl2 ) DEFFDGEGHIJKJBCLADEM
+      N $.
 
     $( Reverse closure for half-open integer sets.  (Contributed by Stefan
        O'Rear, 14-Aug-2015.) $)
