@@ -82574,13 +82574,17 @@ $)
     ( cfzo co wcel cmin cn elfzolt3b fzonnsub syl ) ABCDEZFBLFCBGEHFABCIBBCJK
     $.
 
-  $( Subset relationship for half-open sequences of integers.  (Contributed by
-     Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro, 29-Sep-2015.) $)
-  fzoss1 $p |- ( K e. ( ZZ>= ` M ) -> ( K ..^ N ) C_ ( M ..^ N ) ) $=
-    ( cuz cfv wcel cfzo co wss c0 sseq1 wne cz fzon0 elfzoel2 sylbi wceq fzoval
-    cfz adantl wa c1 cmin fzss1 adantr 3sstr4d sylan2 0ss a1i pm2.61ne ) ABDEFZ
-    ACGHZBCGHZIZJUMIZULJULJUMKULJLZUKCMFZUNUPAULFUQACNAACOPUKUQUAACUBUCHZSHZBUR
-    SHZULUMUKUSUTIUQABURUDUEUQULUSQUKACRTUQUMUTQUKBCRTUFUGUOUKUMUHUIUJ $.
+  ${
+    $d K x $.  $d M x $.  $d N x $.
+    $( Subset relationship for half-open sequences of integers.  (Contributed
+       by Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro,
+       29-Sep-2015.) $)
+    fzoss1 $p |- ( K e. ( ZZ>= ` M ) -> ( K ..^ N ) C_ ( M ..^ N ) ) $=
+      ( vx cuz cfv wcel cfzo co cv wa cz elfzoel2 adantl c1 cmin cfz wss fzoval
+      wceq fzss1 adantr 3sstr4d sseld impancom mpd ex ssrdv ) ABEFGZDACHIZBCHIZ
+      UIDJZUJGZULUKGZUIUMKCLGZUNUMUOUIULACMNUIUOUMUNUIUOKZUJUKULUPACOPIZQIZBUQQ
+      IZUJUKUIURUSRUOABUQUAUBUOUJURTUIACSNUOUKUSTUIBCSNUCUDUEUFUGUH $.
+  $}
 
   $( Subset relationship for half-open sequences of integers.  (Contributed by
      Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro, 29-Sep-2015.) $)
