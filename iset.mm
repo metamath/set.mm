@@ -82407,15 +82407,19 @@ $)
     elfzoelz $p |- ( A e. ( B ..^ C ) -> A e. ZZ ) $=
       ( cfzo co wcel cz cpw elfzoel1 elfzoel2 fzof fovcl syl2anc elpwid sseldd
       id ) ABCDEZFZQGARQGRBGFCGFQGHZFABCIABCJBCSGGDKLMNRPO $.
+  $}
 
+  ${
+    $d x y z N $.  $d x y z M $.
     $( Value of the half-open integer set in terms of the closed integer set.
        (Contributed by Stefan O'Rear, 14-Aug-2015.) $)
     fzoval $p |- ( N e. ZZ -> ( M ..^ N ) = ( M ... ( N - 1 ) ) ) $=
-      ( vm vn cz wcel cfzo co c1 cmin cfz wceq cv wn c0 simpl con3i fdmi ndmov
-      wa oveq1 oveqan12d df-fzo ovex ovmpt2a cxp cpw fzof syl fzf eqtr4d adantr
-      id pm2.61ian ) AEFZBEFZABGHZABIJHZKHZLZCDABEECMZDMZIJHZKHUSGVAALZVBBLVAAV
-      CURKVDUMVBBIJUAUBCDUCAURKUDUEUONZUTUPVEUQOUSVEUOUPTZNUQOLVFUOUOUPPQABEGEE
-      UFZEUGZGUHRSUIVEUOUREFZTZNUSOLVJUOUOVIPQAUREKVGVHKUJRSUIUKULUN $.
+      ( vx vy vz cz wcel cfzo co c1 cmin cfz cv wi elfzoel1 a1i elfzel1 wb wceq
+      wa cpw peano2zm fzf fovcl sylan2 id oveq1 oveqan12d df-fzo mpd3an3 eleq2d
+      ovmpt2ga expcom pm5.21ndd eqrdv ) BFGZCABHIZABJKIZLIZUPAFGZCMZUQGZVAUSGZV
+      BUTNUPVAABOPVCUTNUPVAAURQPUTUPVBVCRUTUPTUQUSVAUTUPUSFUAZGZUQUSSUPUTURFGVE
+      BUBAURVDFFLUCUDUEDEABFFDMZEMZJKIZLIUSHVDVFASZVGBSVFAVHURLVIUFVGBJKUGUHDEU
+      IULUJUKUMUNUO $.
   $}
 
   $( Membership in a half-open finite set of integers.  (Contributed by Stefan
