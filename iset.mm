@@ -82776,11 +82776,15 @@ $)
     ADEZFZBQFZAQFZBAGHZIZUJUKULUMUIQBAJKZUJUKABLMFULUOBCANABOPBCARSUNBCLMZFZATF
     ZUMIUJUKUQULURUMUMQUPBQUPUAUBKAUCUMUDUEBCAUFUGUH $.
 
-  $( A half-open integer range based at 0 is nonempty precisely if the upper
-     bound is a positive integer.  (Contributed by Stefan O'Rear,
-     15-Aug-2015.)  (Revised by Mario Carneiro, 29-Sep-2015.) $)
-  fzo0n0 $p |- ( ( 0 ..^ A ) =/= (/) <-> A e. NN ) $=
-    ( cc0 cfzo co c0 wne wcel cn fzon0 lbfzo0 bitri ) BACDZEFBLGAHGBAIAJK $.
+  ${
+    $d A x $.
+    $( A half-open integer range based at 0 is inhabited precisely if the upper
+       bound is a positive integer.  (Contributed by Jim Kingdon,
+       20-Apr-2020.) $)
+    fzo0m $p |- ( E. x x e. ( 0 ..^ A ) <-> A e. NN ) $=
+      ( cv cc0 cfzo co wcel wex cn fzom lbfzo0 bitri ) ACDBEFZGAHDMGBIGADBJBKL
+      $.
+  $}
 
   $( Translate membership in a half-open integer range.  (Contributed by Stefan
      O'Rear, 15-Aug-2015.) $)
