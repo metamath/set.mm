@@ -4024,22 +4024,17 @@ $)
 
   ${
     ad2ant.1 $e |- ( ph -> ps ) $.
-    $( Deduction adding conjuncts to antecedent.  (Contributed by NM,
+    $( Deduction adding two conjuncts to antecedent.  (Contributed by NM,
        19-Oct-1999.)  (Proof shortened by Wolf Lammen, 20-Nov-2012.) $)
     ad2antrr $p |- ( ( ( ph /\ ch ) /\ th ) -> ps ) $=
       ( adantr adantlr ) ADBCABDEFG $.
 
-    $( Deduction adding 3 conjuncts to antecedent.  (Contributed by NM,
-       28-Jul-2012.) $)
-    ad3antrrr $p |- ( ( ( ( ph /\ ch ) /\ th ) /\ ta ) -> ps ) $=
-      ( wa adantr ad2antrr ) ACGBDEABCFHI $.
-
-    $( Deduction adding conjuncts to antecedent.  (Contributed by NM,
+    $( Deduction adding two conjuncts to antecedent.  (Contributed by NM,
        19-Oct-1999.)  (Proof shortened by Wolf Lammen, 20-Nov-2012.) $)
     ad2antlr $p |- ( ( ( ch /\ ph ) /\ th ) -> ps ) $=
       ( adantr adantll ) ADBCABDEFG $.
 
-    $( Deduction adding conjuncts to antecedent.  (Contributed by NM,
+    $( Deduction adding two conjuncts to antecedent.  (Contributed by NM,
        19-Oct-1999.) $)
     ad2antrl $p |- ( ( ch /\ ( ph /\ th ) ) -> ps ) $=
       ( wa adantr adantl ) ADFBCABDEGH $.
@@ -4048,6 +4043,98 @@ $)
        19-Oct-1999.) $)
     ad2antll $p |- ( ( ch /\ ( th /\ ph ) ) -> ps ) $=
       ( wa adantl ) DAFBCABDEGG $.
+
+    $( Deduction adding three conjuncts to antecedent.  (Contributed by NM,
+       28-Jul-2012.) $)
+    ad3antrrr $p |- ( ( ( ( ph /\ ch ) /\ th ) /\ ta ) -> ps ) $=
+      ( wa adantr ad2antrr ) ACGBDEABCFHI $.
+
+    $( Deduction adding three conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 5-Jan-2017.) $)
+    ad3antlr $p |- ( ( ( ( ch /\ ph ) /\ th ) /\ ta ) -> ps ) $=
+      ( wa ad2antlr adantr ) CAGDGBEABCDFHI $.
+
+    $( Deduction adding 4 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 4-Jan-2017.) $)
+    ad4antr $p |- ( ( ( ( ( ph /\ ch ) /\ th ) /\ ta ) /\ et ) -> ps ) $=
+      ( wa ad3antrrr adantr ) ACHDHEHBFABCDEGIJ $.
+
+    $( Deduction adding 4 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 5-Jan-2017.) $)
+    ad4antlr $p |- ( ( ( ( ( ch /\ ph ) /\ th ) /\ ta ) /\ et ) -> ps ) $=
+      ( wa ad3antlr adantr ) CAHDHEHBFABCDEGIJ $.
+
+    $( Deduction adding 5 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 4-Jan-2017.) $)
+    ad5antr $p |- ( ( ( ( ( ( ph /\ ch ) /\ th ) /\ ta ) /\ et )
+      /\ ze ) -> ps ) $=
+      ( wa ad4antr adantr ) ACIDIEIFIBGABCDEFHJK $.
+
+    $( Deduction adding 5 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 5-Jan-2017.) $)
+    ad5antlr $p |- ( ( ( ( ( ( ch /\ ph ) /\ th ) /\ ta ) /\ et )
+      /\ ze ) -> ps ) $=
+      ( wa ad4antlr adantr ) CAIDIEIFIBGABCDEFHJK $.
+
+    $( Deduction adding 6 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 4-Jan-2017.) $)
+    ad6antr $p |- ( ( ( ( ( ( ( ph /\ ch ) /\ th ) /\ ta ) /\ et )
+      /\ ze ) /\ si ) -> ps ) $=
+      ( wa ad5antr adantr ) ACJDJEJFJGJBHABCDEFGIKL $.
+
+    $( Deduction adding 6 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 5-Jan-2017.) $)
+    ad6antlr $p |- ( ( ( ( ( ( ( ch /\ ph ) /\ th ) /\ ta ) /\ et )
+      /\ ze ) /\ si ) -> ps ) $=
+      ( wa ad5antlr adantr ) CAJDJEJFJGJBHABCDEFGIKL $.
+
+    $( Deduction adding 7 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 4-Jan-2017.) $)
+    ad7antr $p |- ( ( ( ( ( ( ( ( ph /\ ch ) /\ th ) /\ ta ) /\ et )
+      /\ ze ) /\ si ) /\ rh ) -> ps ) $=
+      ( wa ad6antr adantr ) ACKDKEKFKGKHKBIABCDEFGHJLM $.
+
+    $( Deduction adding 7 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 5-Jan-2017.) $)
+    ad7antlr $p |- ( ( ( ( ( ( ( ( ch /\ ph ) /\ th ) /\ ta ) /\ et )
+      /\ ze ) /\ si ) /\ rh ) -> ps ) $=
+      ( wa ad6antlr adantr ) CAKDKEKFKGKHKBIABCDEFGHJLM $.
+
+    $( Deduction adding 8 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 4-Jan-2017.) $)
+    ad8antr $p |- ( ( ( ( ( ( ( ( ( ph /\ ch ) /\ th ) /\ ta ) /\ et )
+      /\ ze ) /\ si ) /\ rh ) /\ mu ) -> ps ) $=
+      ( wa ad7antr adantr ) ACLDLELFLGLHLILBJABCDEFGHIKMN $.
+
+    $( Deduction adding 8 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 5-Jan-2017.) $)
+    ad8antlr $p |- ( ( ( ( ( ( ( ( ( ch /\ ph ) /\ th ) /\ ta ) /\ et )
+      /\ ze ) /\ si ) /\ rh ) /\ mu ) -> ps ) $=
+      ( wa ad7antlr adantr ) CALDLELFLGLHLILBJABCDEFGHIKMN $.
+
+    $( Deduction adding 9 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 4-Jan-2017.) $)
+    ad9antr $p |- ( ( ( ( ( ( ( ( ( ( ph /\ ch ) /\ th ) /\ ta ) /\ et )
+      /\ ze ) /\ si ) /\ rh ) /\ mu ) /\ la ) -> ps ) $=
+      ( wa ad8antr adantr ) ACMDMEMFMGMHMIMJMBKABCDEFGHIJLNO $.
+
+    $( Deduction adding 9 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 5-Jan-2017.) $)
+    ad9antlr $p |- ( ( ( ( ( ( ( ( ( ( ch /\ ph ) /\ th ) /\ ta ) /\ et )
+      /\ ze ) /\ si ) /\ rh ) /\ mu ) /\ la ) -> ps ) $=
+      ( wa ad8antlr adantr ) CAMDMEMFMGMHMIMJMBKABCDEFGHIJLNO $.
+
+    $( Deduction adding 10 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 4-Jan-2017.) $)
+    ad10antr $p |- ( ( ( ( ( ( ( ( ( ( ( ph /\ ch ) /\ th ) /\ ta ) /\ et )
+      /\ ze ) /\ si ) /\ rh ) /\ mu ) /\ la ) /\ ka ) -> ps ) $=
+      ( wa ad9antr adantr ) ACNDNENFNGNHNINJNKNBLABCDEFGHIJKMOP $.
+
+    $( Deduction adding 10 conjuncts to antecedent.  (Contributed by Mario
+       Carneiro, 5-Jan-2017.) $)
+    ad10antlr $p |- ( ( ( ( ( ( ( ( ( ( ( ch /\ ph ) /\ th ) /\ ta ) /\ et )
+      /\ ze ) /\ si ) /\ rh ) /\ mu ) /\ la ) /\ ka ) -> ps ) $=
+      ( wa ad9antlr adantr ) CANDNENFNGNHNINJNKNBLABCDEFGHIJKMOP $.
   $}
 
   ${
