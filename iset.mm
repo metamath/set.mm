@@ -82620,13 +82620,12 @@ $)
      (Contributed by Stefan O'Rear, 14-Aug-2015.) $)
   fzospliti $p |- ( ( A e. ( B ..^ C ) /\ D e. ZZ ) ->
       ( A e. ( B ..^ D ) \/ A e. ( D ..^ C ) ) ) $=
-    ( cfzo co wcel cz wa wo cle wbr clt cr zre adantr a1d wb elfzo syl3anc zred
-    adantl elfzoelz lelttric syl2anc orcomd elfzole1 ancrd elfzolt2 orim12d mpd
-    ancld elfzoel1 simpr elfzoel2 orbi12d mpbird ) ABCEFGZDHGZIZABDEFGZADCEFGZJ
-    BAKLZADMLZIZDAKLZACMLZIZJZUTVDVFJVIUTVFVDUTDNGZANGVFVDJUSVJURDOUBUTAURAHGZU
-    SABCUCPZUADAUDUEUFUTVDVEVFVHUTVDVCUTVCVDURVCUSABCUGPQUHUTVFVGUTVGVFURVGUSAB
-    CUIPQULUJUKUTVAVEVBVHUTVKBHGZUSVAVERVLURVMUSABCUMPURUSUNZABDSTUTVKUSCHGZVBV
-    HRVLVNURVOUSABCUOPADCSTUPUQ $.
+    ( cfzo co wcel cz wa wo cle wbr clt simpr elfzoelz adantr a1d elfzo syl3anc
+    wb zlelttric syl2anc orcomd elfzole1 ancrd elfzolt2 ancld elfzoel1 elfzoel2
+    orim12d mpd orbi12d mpbird ) ABCEFGZDHGZIZABDEFGZADCEFGZJBAKLZADMLZIZDAKLZA
+    CMLZIZJZUPUTVBJVEUPVBUTUPUOAHGZVBUTJUNUONZUNVFUOABCOPZDAUAUBUCUPUTVAVBVDUPU
+    TUSUPUSUTUNUSUOABCUDPQUEUPVBVCUPVCVBUNVCUOABCUFPQUGUJUKUPUQVAURVDUPVFBHGZUO
+    UQVATVHUNVIUOABCUHPVGABDRSUPVFUOCHGZURVDTVHVGUNVJUOABCUIPADCRSULUM $.
 
   ${
     $d x A $.  $d x B $.  $d x C $.  $d x D $.
