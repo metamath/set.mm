@@ -82748,16 +82748,16 @@ $)
      bound of the interval, it is contained in the corresponding half-open
      integer range.  (Contributed by Alexander van der Vekens, 15-Jun-2018.) $)
   fzofzim $p |- ( ( K =/= M /\ K e. ( 0 ... M ) ) -> K e. ( 0 ..^ M ) ) $=
-    ( wne cc0 co wcel wa cn0 clt wbr w3a cle wi cr nn0re adantl expd sylbi imp
-    cz cfz cn cfzo elfz2nn0 simpl1 necom wb ltlen syl2an bicomd elnn0z 0red zre
-    adantr lelttr syl3anc nn0z elnnz simplbi2 syl impancom sylbid syl7bi 3impia
-    syld biimpd exp4b 3imp syl5bi 3jca ex impcom elfzo0 sylibr ) ABCZADBUAEFZGA
-    HFZBUBFZABIJZKZADBUCEFVPVOVTVPVQBHFZABLJZKZVOVTMABUDWCVOVTWCVOGVQVRVSVQWAWB
-    VOUEWCVOVRVQWAWBVOVRMVOBACZVQWAGZWBVRABUFZWEWBWDVRWEWBWDGZVSVRWEVSWGVQANFZB
-    NFZVSWGUGWAAOBOZABUHUIUJZVQWAVSVRMZVQATFZDALJZGWAWLMAUKWMWAWNWLWMWAGZWNVSVR
-    WOWNVSGZDBIJZVRWODNFWHWIWPWQMWOULWMWHWAAUMUNWAWIWMWJPDABUOUPWAWQVRMZWMWABTF
-    ZWRBUQVRWSWQBURUSUTPVEQVARSVBQVCVDSWCVOVSVOWDWCVSWFVQWAWBWDVSMVQWAWBWDVSWEW
-    GVSWKVFVGVHVISVJVKRVLABVMVN $.
+    ( wne cc0 co wcel wa cn0 clt wbr w3a cle wi cz nn0z adantl expd sylbi imp
+    cr cn cfzo elfz2nn0 simpl1 necom wb zltlen syl2an bicomd elnn0z 0red adantr
+    cfz zre nn0re lelttr syl3anc elnnz simplbi2 syl syld impancom sylbid syl7bi
+    3impia biimpd exp4b 3imp syl5bi 3jca ex impcom elfzo0 sylibr ) ABCZADBUMEFZ
+    GAHFZBUAFZABIJZKZADBUBEFVPVOVTVPVQBHFZABLJZKZVOVTMABUCWCVOVTWCVOGVQVRVSVQWA
+    WBVOUDWCVOVRVQWAWBVOVRMVOBACZVQWAGZWBVRABUEZWEWBWDVRWEWBWDGZVSVRWEVSWGVQANF
+    ZBNFZVSWGUFWAAOBOZABUGUHUIZVQWAVSVRMZVQWHDALJZGWAWLMAUJWHWAWMWLWHWAGZWMVSVR
+    WNWMVSGZDBIJZVRWNDTFATFZBTFZWOWPMWNUKWHWQWAAUNULWAWRWHBUOPDABUPUQWAWPVRMZWH
+    WAWIWSWJVRWIWPBURUSUTPVAQVBRSVCQVDVESWCVOVSVOWDWCVSWFVQWAWBWDVSMVQWAWBWDVSW
+    EWGVSWKVFVGVHVISVJVKRVLABVMVN $.
 
   ${
     $d k N $.
