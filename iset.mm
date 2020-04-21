@@ -83283,17 +83283,6 @@ $)
     CJGZVGVEWBUDVIVPVGVRTZVIWCVGCBUETVIVGRZBCDULUFVSWAVTVIWAVGCBUGTUHUIUJVSDBVS
     DWEUKVSBWDUKUMUIUNUOUPSUQDBURUSVIVJVKVFVGUTVIVJVKVFVGVABDAPUSUOVBVC $.
 
-  $( If an element of a half-open integer range is not in the upper part of the
-     range, it is in the lower part of the range.  (Contributed by Alexander
-     van der Vekens, 29-Oct-2018.) $)
-  fzonfzoufzol $p |- ( ( M e. ZZ /\ M < N /\ I e. ( 0 ..^ N ) )
-                       -> ( -. I e. ( ( N - M ) ..^ N )
-                            -> I e. ( 0 ..^ ( N - M ) ) ) ) $=
-    ( cz wcel clt wbr cc0 cfzo co w3a cmin wn wa wi elfzoel2 zsubcl syl impcom
-    ex 3adant2 adantr simp3 anim1i elfzonelfzo sylc con1d ) BDEZBCFGZAHCIJEZKZA
-    HCBLJZIJEZAULCIJEZUKUMMZUNUKUONULDEZUJUONUNUKUPUOUHUJUPUIUJUHUPUJCDEZUHUPOA
-    HCPUQUHUPCBQTRSUAUBUKUJUOUHUIUJUCUDCAHULUEUFTUG $.
-
   $( An integer increased by another integer is an element of a half-open
      integer range if and only if the integer is contained in the half-open
      integer range with bounds decreased by the other integer.  (Contributed by
