@@ -83274,14 +83274,14 @@ $)
      der Vekens, 30-Mar-2018.) $)
   elfzonelfzo $p |- ( N e. ZZ -> ( ( K e. ( M ..^ R ) /\ -. K e. ( M ..^ N ) )
                                    -> K e. ( N ..^ R ) ) ) $=
-    ( cfzo co wcel wn wa cz cuz cfv clt wbr w3a wi elfzo2 3ad2ant1 cr ex cle wb
-    simpr eluzelz ad2antrr eluzelre zre ltnle syl2an 3expa sylibr sylbird con1d
-    id com23 imp31 eluz2 syl3anbrc simpll2 simpll3 sylanb com12 ) BCAEFGZBCDEFG
-    ZHZIDJGZBDAEFGZVCBCKLGZAJGZBAMNZOZVEVFVGPBCAQVKVEIZVFVGVLVFIZBDKLGZVIVJVGVM
-    VFBJGZDBUANZVNVLVFUCVKVOVEVFVHVIVOVJCBUDRUEVKVEVFVPVHVIVEVFVPPPVJVHVFVEVPVH
-    VFVEVPPVHVFIZVPVDVQVPHZBDMNZVDVHBSGDSGVSVRUBVFCBUFDUGBDUHUIVQVSVDVQVSIVHVFV
-    SOZVDVHVFVSVTVTUNUJBCDQUKTULUMTUORUPDBUQURVHVIVJVEVFUSVHVIVJVEVFUTBDAQURTVA
-    VB $.
+    ( cfzo co wcel wn wa cz cuz cfv clt wbr wi elfzo2 cle simpr 3ad2ant1 adantr
+    w3a eluzelz ad2antrr wb eluzel2 syl3anc eluzle biantrurd bitr4d notbid zred
+    elfzo lenltd biimpd ex com23 imp31 eluz2 syl3anbrc simpll2 simpll3 sylanb
+    com12 ) BCAEFGZBCDEFGZHZIDJGZBDAEFGZVDBCKLGZAJGZBAMNZUAZVFVGVHOBCAPVLVFIZVG
+    VHVMVGIZBDKLGZVJVKVHVNVGBJGZDBQNZVOVMVGRVLVPVFVGVIVJVPVKCBUBZSUCVLVFVGVQVIV
+    JVFVGVQOOVKVIVGVFVQVIVGVFVQOVIVGIZVFVQVSVFBDMNZHVQVSVEVTVSVECBQNZVTIZVTVSVP
+    CJGZVGVEWBUDVIVPVGVRTZVIWCVGCBUETVIVGRZBCDULUFVSWAVTVIWAVGCBUGTUHUIUJVSDBVS
+    DWEUKVSBWDUKUMUIUNUOUPSUQDBURUSVIVJVKVFVGUTVIVJVKVFVGVABDAPUSUOVBVC $.
 
   $( If an element of a half-open integer range is not in the upper part of the
      range, it is in the lower part of the range.  (Contributed by Alexander
