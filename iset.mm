@@ -7969,6 +7969,11 @@ $)
     3anim1i $p |- ( ( ph /\ ch /\ th ) -> ( ps /\ ch /\ th ) ) $=
       ( id 3anim123i ) ABCCDDECFDFG $.
 
+    $( Add two conjuncts to antecedent and consequent.  (Contributed by AV,
+       21-Nov-2019.) $)
+    3anim2i $p |- ( ( ch /\ ph /\ th ) -> ( ch /\ ps /\ th ) ) $=
+      ( id 3anim123i ) CCABDDCFEDFG $.
+
     $( Add two conjuncts to antecedent and consequent.  (Contributed by Jeff
        Hankins, 19-Aug-2009.) $)
     3anim3i $p |- ( ( ch /\ th /\ ph ) -> ( ch /\ th /\ ps ) ) $=
