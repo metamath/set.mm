@@ -82642,10 +82642,10 @@ $)
     $( Abutting half-open integer ranges are disjoint.  (Contributed by Stefan
        O'Rear, 14-Aug-2015.) $)
     fzodisj $p |- ( ( A ..^ B ) i^i ( B ..^ C ) ) = (/) $=
-      ( vx cfzo co cin c0 wceq cv wcel wn wi cle wbr clt elfzolt2 elfzoelz zred
-      disj1 elfzoel2 ltnled mpbid elfzole1 nsyl mpgbir ) ABEFZBCEFZGHIDJZUGKZUI
-      UHKZLMDDUGUHTUJBUINOZUKUJUIBPOULLUIABQUJUIBUJUIUIABRSUJBUIABUASUBUCUIBCUD
-      UEUF $.
+      ( vx cfzo co cin c0 wceq cv wcel wn wi disj1 cle wbr clt elfzolt2 cz wb
+      elfzoelz elfzoel2 zltnle syl2anc mpbid elfzole1 nsyl mpgbir ) ABEFZBCEFZG
+      HIDJZUIKZUKUJKZLMDDUIUJNULBUKOPZUMULUKBQPZUNLZUKABRULUKSKBSKUOUPTUKABUAUK
+      ABUBUKBUCUDUEUKBCUFUGUH $.
 
     $( Split an upper integer set into a half-open integer range and another
        upper integer set.  (Contributed by Mario Carneiro, 21-Sep-2016.) $)
