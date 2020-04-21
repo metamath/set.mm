@@ -82651,13 +82651,13 @@ $)
        upper integer set.  (Contributed by Mario Carneiro, 21-Sep-2016.) $)
     fzouzsplit $p |- ( B e. ( ZZ>= ` A ) ->
       ( ZZ>= ` A ) = ( ( A ..^ B ) u. ( ZZ>= ` B ) ) ) $=
-      ( vx cuz cfv wcel cfzo co cun cv wo wa clt wbr cr eluzelre syl2an eluzelz
-      cz wb cle lelttric orcomd id w3a elfzo2 df-3an bitri baib syl2anr orbi12d
-      eluz mpbird ex elun syl6ibr ssrdv wss elfzouz ssriv a1i uzss unssd eqssd
-      ) BADEZFZVEABGHZBDEZIZVFCVEVIVFCJZVEFZVJVGFZVJVHFZKZVJVIFVFVKVNVFVKLZVNVJ
-      BMNZBVJUANZKVOVQVPVFBOFVJOFVQVPKVKABPAVJPBVJUBQUCVOVLVPVMVQVKVKBSFZVLVPTV
-      FVKUDABRZVLVKVRLZVPVLVKVRVPUEVTVPLVJABUFVKVRVPUGUHUIUJVFVRVJSFVMVQTVKVSAV
-      JRBVJULQUKUMUNVJVGVHUOUPUQVFVGVHVEVGVEURVFCVGVEVJABUSUTVAABVBVCVD $.
+      ( vx cuz cfv wcel co cun cv wo wa clt wbr cle cz eluzelz zlelttric syl2an
+      cfzo wb orcomd id elfzo2 df-3an bitri baib syl2anr eluz orbi12d mpbird ex
+      w3a elun syl6ibr ssrdv wss elfzouz ssriv a1i uzss unssd eqssd ) BADEZFZVC
+      ABSGZBDEZHZVDCVCVGVDCIZVCFZVHVEFZVHVFFZJZVHVGFVDVIVLVDVIKZVLVHBLMZBVHNMZJ
+      VMVOVNVDBOFZVHOFZVOVNJVIABPZAVHPZBVHQRUAVMVJVNVKVOVIVIVPVJVNTVDVIUBVRVJVI
+      VPKZVNVJVIVPVNULVTVNKVHABUCVIVPVNUDUEUFUGVDVPVQVKVOTVIVRVSBVHUHRUIUJUKVHV
+      EVFUMUNUOVDVEVFVCVEVCUPVDCVEVCVHABUQURUSABUTVAVB $.
 
     $( A half-open integer range does not overlap the upper integer range
        starting at the endpoint of the first range.  (Contributed by Mario
