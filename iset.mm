@@ -83115,26 +83115,6 @@ $)
     IJZVQVAVGVMRVMCDUDVPVFVRVKVPVFVRVKOVPVFNVRVJVKVFVDDHGVJVRUEVPVCVDVEUFACDUGB
     DUHUMVPVJVKOZVFVPVIVSACDUIVIVJUJUKULUNSUOUPSUQURSUSUTTT $.
 
-  $( If a half-open integer range is a subset of a half-open range of
-     nonnegative integers, but its lower bound is greater than or equal to the
-     upper bound of the containing range, or its upper bound is less than or
-     equal to 0, then its upper bound is less than or equal to its lower bound
-     (and therefore it is actually empty).  (Contributed by Alexander van der
-     Vekens, 24-May-2018.) $)
-  ssfzoulel $p |- ( ( N e. NN0 /\ A e. ZZ /\ B e. ZZ )
-                         -> ( ( N <_ A \/ B <_ 0 )
-                            -> ( ( A ..^ B ) C_ ( 0 ..^ N ) -> B <_ A ) ) ) $=
-    ( wcel cz w3a cle wbr cc0 cfzo co wi wa wn cr zre 3adant1 syl3anc letr imp
-    cn0 wo wss simpl2 simpl3 wb ltnle syl2an biimpar ssfzo12 adantl 0red adantr
-    clt expcomd con3d ex com23 nn0re 3anim123i 3coml syl expdimp impancom ioran
-    anim12d ancom bitri syl6ibr syld con2d con4d ) CUADZAEDZBEDZFZCAGHZBIGHZUBZ
-    ABJKICJKUCZBAGHZLVPVSMWAVTVPWANZVSVTNVPWBMZVTVSWCVTIAGHZBCGHZMZVSNZWCVNVOAB
-    UNHZVTWFLVMVNVOWBUDVMVNVOWBUEVPWHWBVNVOWHWBUFZVMVNAODZBODZWIVOAPZBPZABUGUHQ
-    UIABICUJRWCWFVRNZVQNZMZWGWCWDWNWEWOVPWBWDWNLVPWDWBWNVNVOWDWBWNLZLVMVNVOMZWD
-    WQWRWDMVRWAWRWDVRWALWRVRWDWAWRWKIODWJVRWDMWALVOWKVNWMUKWRULVNWJVOWLUMBIASRU
-    OTUPUQQURTVPWEWBWOVPWEMVQWAVPWEVQWAVPWKCODZWJFZWEVQMWALVOVMVNWTVOWKVMWSVNWJ
-    WMCUSWLUTVABCASVBVCUPVDVFWGWOWNMWPVQVRVEWOWNVGVHVIVJVKVDVLUQ $.
-
   ${
     $d K x $.  $d L x $.  $d M x $.  $d N x $.
     $( Subset relationship for half-open integer ranges.  (Contributed by
