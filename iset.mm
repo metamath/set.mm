@@ -75831,6 +75831,10 @@ $)
   3z $p |- 3 e. ZZ $=
     ( c3 3nn nnzi ) ABC $.
 
+  $( 4 is an integer.  (Contributed by BJ, 26-Mar-2020.) $)
+  4z $p |- 4 e. ZZ $=
+    ( c4 4nn nnzi ) ABC $.
+
   $( Closure law for negative integers.  (Contributed by NM, 9-May-2004.) $)
   znegcl $p |- ( N e. ZZ -> -u N e. ZZ ) $=
     ( cz wcel cr cc0 wceq cn cneg w3o elz negeq neg0 syl6eq syl6eqel nnnegz nnz
