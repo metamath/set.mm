@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Apr-2020
+$( iset.mm - Version of 22-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -64580,6 +64580,32 @@ $)
       WBNWMWEVNXEWBOWSXHWACRPVTWEWCWLURUTZTWMVLXIAOWRVLANHIZXIAVLNFGZXKXIOVAANR
       VBAVCVDVEUTTVFWMXEBHIZNBHIZXBBWMXENBHXJTWMWEVNVMXMXBOWSXHWMVLVMVNWQVJZWAC
       BUQQWMVMXNBOXOVMBNHIZXNBVMXLXPXNOVABNRVBBVCVDVEVGVGVHVIVIVK $.
+  $}
+
+  ${
+    $d A l u w x z $.
+    $( For any positive real, there is an integer that is greater than it.
+       This is also known as the "archimedean property".  The expression
+       ` <. { l | l <Q [ <. x , 1o >. ] ~Q } ` ,
+       ` { u | [ <. x , 1o >. ] ~Q <Q u } >. ` is the embedding of the positive
+       integer ` x ` into the positive reals.  (Contributed by Jim Kingdon,
+       22-Apr-2020.) $)
+    archpr $p |- ( A e. P. -> E. x e. N. A <P
+        <. { l | l <Q [ <. x , 1o >. ] ~Q } ,
+          { u | [ <. x , 1o >. ] ~Q <Q u } >. ) $=
+      ( vz vw cnp wcel cv cfv c1o cop ceq cltq wbr cab cnpi wrex cnq wa cec syl
+      c2nd cltp c1st prop prmu archnqq ad2antrl simprl ad2antrr simpr vex breq1
+      simprr ltnqex gtnqex op1st elab2 sylibr weq eleq1 anbi12d rspcev syl12anc
+      wb simplll cxp cqs 1pi opelxpi mpan2 enqex ecelqsi syl6eleqr breq2 cbvabv
+      df-nqqs opeq2i nqprlu syl5eqelr ad2antlr ltdfpr mpbird reximdva rexlimddv
+      syl2anc ex mpd ) CGHZEIZCUCJZHZCDIZAIZKLZMUAZNOZDPZWQBIZNOZBPZLZUDOZAQRZE
+      SWJCUEJZWLLGHWMESRCUFEWLXFUGUBWJWKSHZWMTZTZWKWQNOZAQRZXEXGXKWJWMAWKUHUIXI
+      XJXDAQXIWOQHZTZXJXDXMXJTZXDFIZWLHZXOXCUEJZHZTZFSRZXNXGWMWKXQHZXTXIXGXLXJW
+      JXGWMUJUKXIWMXLXJWJXGWMUOUKXNXJYAXMXJULWRXJDWKXQEUMWNWKWQNUNWSXBDWQUPBWQU
+      QURUSUTXSWMYATFWKSFEVAXPWMXRYAXOWKWLVBXOWKXQVBVCVDVEXNWJXCGHZXDXTVFWJXHXL
+      XJVGXLYBXIXJXLWQSHZYBXLWQQQVHZMVIZSXLWPYDHZWQYEHXLKQHYFVJWOKQQVKVLYDWPMVM
+      VNUBVRVOYCXCWSWQWNNOZDPZLGYHXBWSYGXADBWNWTWQNVPVQVSDWQVTWAUBWBCXCFWCWGWDW
+      HWEWIWF $.
   $}
 
   ${
