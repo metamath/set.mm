@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Apr-2020
+$( iset.mm - Version of 23-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -63082,6 +63082,19 @@ $)
   $}
 
   ${
+    $d A l u $.
+    $( The canonical embedding of positive integers into the positive reals.
+       (Contributed by Jim Kingdon, 23-Apr-2020.) $)
+    nnprlu $p |- ( A e. N. -> <. { l | l <Q [ <. A , 1o >. ] ~Q } ,
+        { u | [ <. A , 1o >. ] ~Q <Q u } >. e. P. ) $=
+      ( cnpi wcel c1o cop ceq cec cnq cltq wbr cab cnp cxp cqs 1pi opelxpi syl
+      cv mpan2 enqex ecelqsi df-nqqs syl6eleqr cbvabv opeq2i nqprlu syl5eqelr
+      breq2 ) BDEZBFGZHIZJEZCTZUMKLCMZUMATZKLZAMZGZNEUKUMDDOZHPZJUKULVAEZUMVBEU
+      KFDEVCQBFDDRUAVAULHUBUCSUDUEUNUTUPUMUOKLZCMZGNVEUSUPVDURCAUOUQUMKUJUFUGCU
+      MUHUIS $.
+  $}
+
+  ${
     $d x y $.
     $( The positive real number 'one'.  (Contributed by NM, 13-Mar-1996.)
        (Revised by Mario Carneiro, 12-Jun-2013.) $)
@@ -64585,27 +64598,22 @@ $)
   ${
     $d A l u w x z $.
     $( For any positive real, there is an integer that is greater than it.
-       This is also known as the "archimedean property".  The expression
-       ` <. { l | l <Q [ <. x , 1o >. ] ~Q } ` ,
-       ` { u | [ <. x , 1o >. ] ~Q <Q u } >. ` is the embedding of the positive
-       integer ` x ` into the positive reals.  (Contributed by Jim Kingdon,
-       22-Apr-2020.) $)
+       This is also known as the "archimedean property".  The integer ` x ` is
+       embedded into the reals as described at ~ nnprlu .  (Contributed by Jim
+       Kingdon, 22-Apr-2020.) $)
     archpr $p |- ( A e. P. -> E. x e. N. A <P
         <. { l | l <Q [ <. x , 1o >. ] ~Q } ,
           { u | [ <. x , 1o >. ] ~Q <Q u } >. ) $=
-      ( vz vw cnp wcel cv cfv c1o cop ceq cltq wbr cab cnpi wrex cnq wa cec syl
-      c2nd cltp c1st prop prmu archnqq ad2antrl simprl ad2antrr simpr vex breq1
-      simprr ltnqex gtnqex op1st elab2 sylibr weq eleq1 anbi12d rspcev syl12anc
-      wb simplll cxp cqs 1pi opelxpi mpan2 enqex ecelqsi syl6eleqr breq2 cbvabv
-      df-nqqs opeq2i nqprlu syl5eqelr ad2antlr ltdfpr mpbird reximdva rexlimddv
-      syl2anc ex mpd ) CGHZEIZCUCJZHZCDIZAIZKLZMUAZNOZDPZWQBIZNOZBPZLZUDOZAQRZE
-      SWJCUEJZWLLGHWMESRCUFEWLXFUGUBWJWKSHZWMTZTZWKWQNOZAQRZXEXGXKWJWMAWKUHUIXI
-      XJXDAQXIWOQHZTZXJXDXMXJTZXDFIZWLHZXOXCUEJZHZTZFSRZXNXGWMWKXQHZXTXIXGXLXJW
-      JXGWMUJUKXIWMXLXJWJXGWMUOUKXNXJYAXMXJULWRXJDWKXQEUMWNWKWQNUNWSXBDWQUPBWQU
-      QURUSUTXSWMYATFWKSFEVAXPWMXRYAXOWKWLVBXOWKXQVBVCVDVEXNWJXCGHZXDXTVFWJXHXL
-      XJVGXLYBXIXJXLWQSHZYBXLWQQQVHZMVIZSXLWPYDHZWQYEHXLKQHYFVJWOKQQVKVLYDWPMVM
-      VNUBVRVOYCXCWSWQWNNOZDPZLGYHXBWSYGXADBWNWTWQNVPVQVSDWQVTWAUBWBCXCFWCWGWDW
-      HWEWIWF $.
+      ( vz vw cnp wcel cv cfv cop cltq wbr cab cnpi wrex cnq c1st wa ad2antrr
+      c2nd c1o ceq cec cltp prop syl archnqq ad2antrl simprl simprr simpr breq1
+      vex ltnqex gtnqex op1st elab2 sylibr weq eleq1 anbi12d rspcev syl12anc wb
+      prmu simplll nnprlu ad2antlr ltdfpr syl2anc mpbird reximdva mpd rexlimddv
+      ex ) CGHZEIZCUAJZHZCDIZAIZUBKUCUDZLMZDNZWCBILMBNZKZUEMZAOPZEQVQCRJZVSKGHV
+      TEQPCUFEVSWJVFUGVQVRQHZVTSZSZVRWCLMZAOPZWIWKWOVQVTAVRUHUIWMWNWHAOWMWBOHZS
+      ZWNWHWQWNSZWHFIZVSHZWSWGRJZHZSZFQPZWRWKVTVRXAHZXDWMWKWPWNVQWKVTUJTWMVTWPW
+      NVQWKVTUKTWRWNXEWQWNULWDWNDVRXAEUNWAVRWCLUMWEWFDWCUOBWCUPUQURUSXCVTXESFVR
+      QFEUTWTVTXBXEWSVRVSVAWSVRXAVAVBVCVDWRVQWGGHZWHXDVEVQWLWPWNVGWPXFWMWNBWBDV
+      HVICWGFVJVKVLVPVMVNVO $.
   $}
 
   ${
