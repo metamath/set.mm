@@ -65556,6 +65556,30 @@ $)
       T $.
   $}
 
+  ${
+    $d A l u w x z $.
+    $( For any signed real, there is an integer that is greater than it.  This
+       is also known as the "archimedean property".  The expression
+       ` [ <. ( <. { l | l <Q [ <. x , 1o >. ] ~Q } ` ,
+       ` { u | [ <. x , 1o >. ] ~Q <Q u } >. +P. 1P ) , 1P >. ] ~R ` is the
+       embedding of the positive integer ` x ` into the signed reals.
+       (Contributed by Jim Kingdon, 23-Apr-2020.) $)
+    archsr $p |- ( A e. R. -> E. x e. N. A <R
+        [ <. ( <. { l | l <Q [ <. x , 1o >. ] ~Q } ,
+          { u | [ <. x , 1o >. ] ~Q <Q u } >. +P. 1P ) , 1P >. ] ~R ) $=
+      ( vz cv cop cer cec wbr c1p cpp co cltr cnpi wrex cnp wcel cltp 1pr df-nr
+      vw c1o ceq cltq cab cnr wceq breq1 rexbidv wa addclpr mpan2 archpr adantr
+      nnprlu adantl sylancl simplr ltaddpr syl2anc addcomprg breqtrrd wi ltsopr
+      syl ltrelpr sotri expcom sylsyld reximdva mpd simpl a1i syl12anc rexbidva
+      wb ltsrprg mpbird ecoptocl ) EFZUBFZGHIZDFAFZUCGUDIZUEJDUFWEBFUEJBUFGZKLM
+      ZKGHIZNJZAOPZCWHNJZAOPEUBCQQHUGUAWCCUHWIWKAOWCCWHNUIUJWAQRZWBQRZUKZWJWAKL
+      MZWBWGLMZSJZAOPZWNWOWFSJZAOPZWRWLWTWMWLWOQRZWTWLKQRZXATWAKULUMABWODUNVFUO
+      WNWSWQAOWNWDORZUKZWGWPSJZWSWOWGSJZWQXDWGWGWBLMZWPSXDWGQRZWMWGXGSJXDWFQRZX
+      BXHXCXIWNBWDDUPUQZTWFKULURZWLWMXCUSZWGWBUTVAXDWMXHWPXGUHXLXKWBWGVBVAVCXDW
+      FWGSJZWSXFVDXDXIXBXMXJTWFKUTURWSXMXFWOWFWGSQVEVGVHVIVFXFXEWQWOWGWPSQVEVGV
+      HVIVJVKVLWNWIWQAOXDWNXHXBWIWQVQWNXCVMXKXBXDTVNWAWBWGKVRVOVPVSVT $.
+  $}
+
   $( Class of complex numbers. $)
   cc $a class CC $.
   $( Class of real numbers. $)
