@@ -24,6 +24,15 @@
 # "bionic" is Ubuntu 18.04 LTS, "xenial" is Ubuntu 16, "trusty" is Ubuntu 14.
 dist: bionic
 
+# Avoid checking twice the pull requests to "develop" or "master".
+# This runs a check only if it is a direct change to develop,
+# a direct change to master, or a non-push (e.g., a pull request).
+# See:
+# https://github.com/travis-ci/travis-ci/issues/1147
+# https://github.com/jonhoo/rust-imap/blob/30079d8b9bc22fe64d893849262908101381e002/.travis.yml
+# https://docs.travis-ci.com/user/conditions-v1
+if: branch = develop OR branch = master OR type != push
+
 # TODO: We aren't caching many old results; add caches
 # (e.g., of unchanged compiled programs) to speed things further.
 
