@@ -61639,6 +61639,19 @@ $)
     ABMQUAUCUHUKKUBACMRST $.
 
   ${
+    $( Addition of one to the numerator of a fraction whose denominator is
+       one.  (Contributed by Jim Kingdon, 26-Apr-2020.) $)
+    addpinq1 $p |- ( A e. N. ->
+        [ <. ( A +N 1o ) , 1o >. ] ~Q = ( [ <. A , 1o >. ] ~Q +Q 1Q ) ) $=
+      ( cnpi wcel c1o cop ceq cec c1q cplq co cmi cpli df-1nqqs oveq2i wceq 1pi
+      wa addpipqqs mulidpi ax-mp mpan2 syl5eq eceq1 syl6eq oveq1d opeq1d eceq1d
+      mpanr12 opeq12i eqtr2d ) ABCZADEFGZHIJZADKJZDLJZDEZFGZADLJZDEZFGUKUMUNDDK
+      JZLJZUTEZFGZUQUKUMULDDEFGZIJZVCHVDULIMNUKDBCZVEVCOZPUKVFQVFVFVGPPADDDRUHU
+      AUBVBUPOVCUQOVAUOUTDUTDUNLVFUTDOPDSTZNVHUIVBUPFUCTUDUKUPUSFUKUOURDUKUNADL
+      ASUEUFUGUJ $.
+  $}
+
+  ${
     $d A w z $.
     $( Multiply a non-negative fraction by two.  (Contributed by Jim Kingdon,
        29-Nov-2019.) $)
@@ -63164,6 +63177,100 @@ $)
     1pru $p |- ( 2nd ` 1P ) = { x | 1Q <Q x } $=
       ( vy c1p c2nd cfv cv c1q cltq wbr df-i1p fveq2i ltnqex gtnqex op2nd eqtri
       cab cop ) CDEBFGHIBPZGAFHIAPZQZDESCTDABJKRSBGLAGMNO $.
+  $}
+
+  ${
+    $d A f g h l r s t u x y $.
+    $( Lemma for ~ addnqpr1 .  The reverse subset relationship for the lower
+       cut.  (Contributed by Jim Kingdon, 28-Apr-2020.) $)
+    addnqpr1lemrl $p |- ( A e. Q. ->
+        ( 1st ` ( <. { l | l <Q A } , { u | A <Q u } >. +P. 1P ) ) C_
+        ( 1st ` <. { l | l <Q ( A +Q 1Q ) } , { u | ( A +Q 1Q ) <Q u } >. )
+        ) $=
+      ( vr vs vt vg vh cnq wcel cv cltq wbr cab c1p c1st cfv c1q wa breq1 vf vx
+      vy cop cpp co cplq wceq wrex cnp breq2 cbvabv opeq2i nqprlu syl5eqelr 1pr
+      wb df-iplp addclnq genpelvl sylancl biimpa vex ltnqex gtnqex op1st biimpi
+      ad2antrl adantr 1prl ad2antll wi ltrelnq brel syl lt2addnq syl2anc mp2and
+      elab2 adantl mpbird sylibr ex rexlimdvva mpd ssrdv ) BIJZDCKZBLMZCNZBAKZL
+      MZANZUDZOUEUFPQZWHBRUGUFZLMZCNZWPWKLMANZUDPQZWGDKZWOJZXAWTJZWGXBSZXAEKZFK
+      ZUGUFZUHZFOPQZUIEWNPQZUIZXCWGXBXKWGWNUJJOUJJXBXKUQWGWNWJBWHLMZCNZUDUJXMWM
+      WJXLWLCAWHWKBLUKULUMCBUNUOUPUAGHUBUCWNOXAEFUEUGUBUCHGUAURGKHKUSUTVAVBXDXH
+      XCEFXJXIXDXEXJJZXFXIJZSSZXHXCXPXHSZXAWPLMZXCXQXRXGWPLMZXQXEBLMZXFRLMZXSXP
+      XTXHXNXTXDXOXNXTWIXTCXEXJEVCWHXEBLTWJWMCBVDABVEVFVSVGVHVIZXPYAXHXOYAXDXNX
+      OYAWHRLMYACXFXIFVCWHXFRLTCVJVSVGVKVIZXQXEIJWGSZXFIJRIJSZXTYASXSVLXQXTYDYB
+      XEBIILVMVNVOXQYAYEYCXFRIILVMVNVOXEBXFRVPVQVRXHXRXSUQXPXAXGWPLTVTWAWQXRCXA
+      WTDVCWHXAWPLTWRWSCWPVDAWPVEVFVSWBWCWDWEWCWF $.
+
+    $( Lemma for ~ addnqpr1 .  The reverse subset relationship for the upper
+       cut.  (Contributed by Jim Kingdon, 28-Apr-2020.) $)
+    addnqpr1lemru $p |- ( A e. Q. ->
+        ( 2nd ` ( <. { l | l <Q A } , { u | A <Q u } >. +P. 1P ) ) C_
+        ( 2nd ` <. { l | l <Q ( A +Q 1Q ) } , { u | ( A +Q 1Q ) <Q u } >. )
+        ) $=
+      ( vr vs vt vg vh cnq wcel cv cltq wbr cab c1p c2nd cfv c1q wa breq2 vf vx
+      vy cop cpp co cplq wceq cnp wb cbvabv opeq2i nqprlu syl5eqelr 1pr df-iplp
+      wrex addclnq genpelvu sylancl biimpa vex ltnqex gtnqex op2nd elab2 biimpi
+      ad2antrl adantr 1pru ad2antll wi ltrelnq brel syl lt2addnq syl2anc mp2and
+      adantl mpbird sylibr ex rexlimdvva mpd ssrdv ) BIJZDCKZBLMCNZBAKZLMZANZUD
+      ZOUEUFPQZWGBRUGUFZLMCNZWNWILMZANZUDPQZWFDKZWMJZWSWRJZWFWTSZWSEKZFKZUGUFZU
+      HZFOPQZUQEWLPQZUQZXAWFWTXIWFWLUIJOUIJWTXIUJWFWLWHBWGLMZCNZUDUIXKWKWHXJWJC
+      AWGWIBLTUKULCBUMUNUOUAGHUBUCWLOWSEFUEUGUBUCHGUAUPGKHKURUSUTVAXBXFXAEFXHXG
+      XBXCXHJZXDXGJZSSZXFXAXNXFSZWNWSLMZXAXOXPWNXELMZXOBXCLMZRXDLMZXQXNXRXFXLXR
+      XBXMXLXRWJXRAXCXHEVBWIXCBLTWHWKCBVCABVDVEVFVGVHVIZXNXSXFXMXSXBXLXMXSRWILM
+      XSAXDXGFVBWIXDRLTAVJVFVGVKVIZXOWFXCIJSZRIJXDIJSZXRXSSXQVLXOXRYBXTBXCIILVM
+      VNVOXOXSYCYARXDIILVMVNVOBXCRXDVPVQVRXFXPXQUJXNWSXEWNLTVSVTWPXPAWSWRDVBWIW
+      SWNLTWOWQCWNVCAWNVDVEVFWAWBWCWDWBWE $.
+
+    $( Lemma for ~ addnqpr1 .  The forward subset relationship for the lower
+       cut.  (Contributed by Jim Kingdon, 28-Apr-2020.) $)
+    addnqpr1lemil $p |- ( A e. Q. ->
+        ( 1st ` <. { l | l <Q ( A +Q 1Q ) } , { u | ( A +Q 1Q ) <Q u } >. )
+        C_ ( 1st ` ( <. { l | l <Q A } , { u | A <Q u } >. +P. 1P ) ) ) $=
+      ( vr cnq wcel cv c1q co cltq wbr cab cop c1st cfv c1p c2nd wn syl cnp cpp
+      cplq addnqpr1lemru wor ltsonq 1nq addclnq mpan2 sonr sylancr ltrelnq brel
+      wa cvv simpld elex breq2 elab3 sylnibr ltnqex gtnqex op2nd eleq2i ssneldd
+      adantr wo cbvabv opeq2i nqprlu syl5eqelr addclpr sylancl prop breq1 op1st
+      1pr vex elab2 biimpi adantl prloc syl2anc ecased ex ssrdv ) BEFZDCGZBHUBI
+      ZJKZCLZWHAGZJKZALZMZNOZWGBJKCLZBWKJKZALZMZPUAIZNOZWFDGZWOFZXBXAFZWFXCUMZX
+      DWHWTQOZFZWFXGRXCWFXFWNQOZWHABCUCWFWHWMFZWHXHFWFWHWHJKZXIWFEJUDWHEFZXJRUE
+      WFHEFXKUFBHUGUHEWHJUIUJWLXJAWHXJXKWHUNFXJXKXKWHWHEEJUKULUOWHEUPSWKWHWHJUQ
+      URUSXHWMWHWJWMCWHUTZAWHVAZVBVCUSVDVEXEXAXFMTFZXBWHJKZXDXGVFXEWTTFZXNXEWST
+      FZPTFXPWFXQXCWFWSWPBWGJKZCLZMTXSWRWPXRWQCAWGWKBJUQVGVHCBVIVJVEVPWSPVKVLWT
+      VMSXCXOWFXCXOWIXOCXBWODVQWGXBWHJVNWJWMXLXMVOVRVSVTXBWHXFXAWAWBWCWDWE $.
+
+    $( Lemma for ~ addnqpr1 .  The forward subset relationship for the upper
+       cut.  (Contributed by Jim Kingdon, 28-Apr-2020.) $)
+    addnqpr1lemiu $p |- ( A e. Q. ->
+        ( 2nd ` <. { l | l <Q ( A +Q 1Q ) } , { u | ( A +Q 1Q ) <Q u } >. )
+        C_ ( 2nd ` ( <. { l | l <Q A } , { u | A <Q u } >. +P. 1P ) ) ) $=
+      ( vr cnq wcel cv c1q co cltq wbr cab cop c2nd cfv c1p c1st wn syl cnp cpp
+      cplq addnqpr1lemrl wor ltsonq 1nq addclnq mpan2 sonr sylancr ltrelnq brel
+      wa cvv simpld elex breq1 elab3 sylnibr ltnqex gtnqex op1st eleq2i ssneldd
+      adantr wo breq2 cbvabv opeq2i nqprlu syl5eqelr addclpr sylancl prop op2nd
+      1pr vex elab2 biimpi adantl prloc syl2anc orcomd ecased ex ssrdv ) BEFZDC
+      GZBHUBIZJKZCLZWIAGZJKZALZMZNOZWHBJKCLZBWLJKZALZMZPUAIZNOZWGDGZWPFZXCXBFZW
+      GXDUMZXEWIXAQOZFZWGXHRXDWGXGWOQOZWIABCUCWGWIWKFZWIXIFWGWIWIJKZXJWGEJUDWIE
+      FZXKRUEWGHEFXLUFBHUGUHEWIJUIUJWJXKCWIXKXLWIUNFXKXLXLWIWIEEJUKULUOWIEUPSWH
+      WIWIJUQURUSXIWKWIWKWNCWIUTZAWIVAZVBVCUSVDVEXFXHXEXFXGXBMTFZWIXCJKZXHXEVFX
+      FXATFZXOXFWTTFZPTFXQWGXRXDWGWTWQBWHJKZCLZMTXTWSWQXSWRCAWHWLBJVGVHVICBVJVK
+      VEVPWTPVLVMXAVNSXDXPWGXDXPWMXPAXCWPDVQWLXCWIJVGWKWNXMXNVOVRVSVTWIXCXBXGWA
+      WBWCWDWEWF $.
+
+    $( Addition of one to a fraction embedded into a positive real.  One can
+       either add the fraction one to the fraction, or the positive real one to
+       the positive real, and get the same result.  (Contributed by Jim
+       Kingdon, 26-Apr-2020.) $)
+    addnqpr1 $p |- ( A e. Q. ->
+        <. { l | l <Q ( A +Q 1Q ) } , { u | ( A +Q 1Q ) <Q u } >. =
+        ( <. { l | l <Q A } , { u | A <Q u } >. +P. 1P ) ) $=
+      ( cnq wcel cv c1q cltq wbr cab cop c1p wceq c1st cfv c2nd eqssd cnp breq2
+      co cplq cpp addnqpr1lemil addnqpr1lemrl addnqpr1lemiu addnqpr1lemru wa wb
+      cbvabv opeq2i 1nq addclnq nqprlu syl syl5eqelr 1pr addclpr sylancl preqlu
+      mpan2 syl2anc mpbir2and ) BDEZCFZBGUATZHICJZVEAFZHIZAJZKZVDBHICJZBVGHIZAJ
+      ZKZLUBTZMZVJNOZVONOZMZVJPOZVOPOZMZVCVQVRABCUCABCUDQVCVTWAABCUEABCUFQVCVJR
+      EVOREZVPVSWBUGUHVCVJVFVEVDHIZCJZKZRWEVIVFWDVHCAVDVGVEHSUIUJVCVEDEZWFREVCG
+      DEWGUKBGULUTCVEUMUNUOVCVNRELREWCVCVNVKBVDHIZCJZKRWIVMVKWHVLCAVDVGBHSUIUJC
+      BUMUOUPVNLUQURVJVOUSVAVB $.
   $}
 
   ${
@@ -65868,6 +65975,89 @@ $)
     SUNUOUSUEZUPUQURUFZACQRUTKEFVDEFZVTUGUTUOURWCUNUOUSUHZUPUQURUIZBDQRKVDQUJVC
     VEUKRUTVGEFZVHEFZVRUTUOUQWFWDWBBCQRUTUNURWGWAWEADQRVGVHUKRVFVIEEORVJVOPTUM
     $.
+
+  ${
+    $d K k n l u w x y z $.
+    $( Lemma for ~ pitonn .  Two ways to write the number one.  (Contributed by
+       Jim Kingdon, 24-Apr-2020.) $)
+    pitonnlem1 $p |- <. [ <. ( <. { l | l <Q [ <. 1o , 1o >. ] ~Q } ,
+          { u | [ <. 1o , 1o >. ] ~Q <Q u } >.
+          +P. 1P ) , 1P >. ] ~R
+          , 0R >. = 1 $=
+      ( c1r c0r cop cv c1o cec cltq wbr cab c1p cpp cer wceq c1q df-1nqqs abbii
+      co eqtri c1 ceq df-1 df-1r df-i1p breq2i breq1i oveq1i opeq1i eceq1 ax-mp
+      opeq12i eqtr2i ) UACDEBFZGGEUBHZIJZBKZUOAFZIJZAKZEZLMSZLEZNHZDEUCCVDDCLLM
+      SZLEZNHZVDUDVFVCOVGVDOVEVBLLVALMLUNPIJZBKZPURIJZAKZEVAABUEVIUQVKUTVHUPBPU
+      OUNIQUFRVJUSAPUOURIQUGRULTUHUIVFVCNUJUKTUIUM $.
+
+    $( Lemma for ~ pitonn .  Simplifying an expression involving signed reals.
+       (Contributed by Jim Kingdon, 26-Apr-2020.) $)
+    pitonnlem1p1 $p |- ( A e. P. ->
+        [ <. ( A +P. ( 1P +P. 1P ) ) , ( 1P +P. 1P ) >. ] ~R =
+        [ <. ( A +P. 1P ) , 1P >. ] ~R ) $=
+      ( cnp wcel c1p cpp co cop cer cec wceq 1pr addclpr mp2an addcomprg oveq1d
+      mpan2 addassprg mp3an13 eqtrd a1i wb enreceq syl22anc mpbird ) ABCZADDEFZ
+      EFZUFGHIADEFZDGHIJZUGDEFZUFUHEFZJZUEUJUFAEFZDEFZUKUEUGUMDEUEUFBCZUGUMJDBC
+      ZUPUOKKDDLMZAUFNPOUOUEUPUNUKJUQKUFADQRSUEUGBCZUOUHBCZUPUIULUAUEUOURUQAUFL
+      PUOUEUQTUEUPUSKADLPUPUEKTUGUFUHDUBUCUD $.
+
+    $( Lemma for ~ pitonn .  Two ways to add one to a number.  (Contributed by
+       Jim Kingdon, 24-Apr-2020.) $)
+    pitonnlem2 $p |- ( K e. N. ->
+        ( <. [ <. ( <. { l | l <Q [ <. K , 1o >. ] ~Q } ,
+          { u | [ <. K , 1o >. ] ~Q <Q u } >.
+          +P. 1P ) , 1P >. ] ~R
+          , 0R >. + 1 ) =
+        <. [ <. ( <. { l | l <Q [ <. ( K +N 1o ) , 1o >. ] ~Q } ,
+          { u | [ <. ( K +N 1o ) , 1o >. ] ~Q <Q u } >.
+          +P. 1P ) , 1P >. ] ~R
+          , 0R >. ) $=
+      ( wcel c1o cop cec cltq wbr cab c1p cpp co cer c0r c1r wceq cnp 1pr syl
+      cnpi cv ceq c1 caddc cplr cpli df-1 oveq2i cnr cxp nnprlu addclpr sylancl
+      cqs opelxpi enrex ecelqsi df-nr syl6eleqr 1sr addresr syl5eq pitonnlem1p1
+      df-1r mp2an addsrpr mpanl2 mpanr12 c1q cplq addpinq1 breq2d abbidv breq1d
+      wa opeq12d cnq nnnq addnqpr1 eqtrd oveq1d opeq1d eceq1d 3eqtr4d ) BUADZCU
+      BZBEFUCGZHICJWHAUBZHIAJFZKLMZKFZNGZOFZUDUEMZWMPUFMZOFZWGBEUGMEFUCGZHIZCJZ
+      WRWIHIZAJZFZKLMZKFZNGZOFWFWOWNPOFZUEMZWQUDXGWNUEUHUIWFWMUJDPUJDXHWQQWFWMR
+      RUKZNUOZUJWFWLXIDZWMXJDWFWKRDZKRDZXKWFWJRDXMXLABCULSWJKUMUNZSWKKRRUPUNXIW
+      LNUQURTUSUTVAWMPVBUNVCWFWPXFOWFWKKKLMZLMXOFNGZWKKLMZKFZNGZWPXFWFXLXPXSQXN
+      WKVDTWFWPWMXOKFNGZUFMZXPPXTWMUFVEUIWFXLYAXPQZXNXLXORDZXMYBXMXMYCSSKKUMVFS
+      XLXMYCXMVPYBSWKKXOKVGVHVITVCWFXEXRNWFXDXQKWFXCWKKLWFXCWGWHVJVKMZHIZCJZYDW
+      IHIZAJZFZWKWFWTYFXBYHWFWSYECWFWRYDWGHBVLZVMVNWFXAYGAWFWRYDWIHYJVOVNVQWFWH
+      VRDYIWKQBVSAWHCVTTWAWBWCWDWEWCWA $.
+
+    $( Mapping from ` N. ` to ` NN ` .  (Contributed by Jim Kingdon,
+       22-Apr-2020.) $)
+    pitonn $p |- ( n e. N. ->
+        <. [ <. ( <. { l | l <Q [ <. n , 1o >. ] ~Q } ,
+          { u | [ <. n , 1o >. ] ~Q <Q u } >. +P. 1P ) , 1P >. ] ~R , 0R >. e.
+        |^| { x | ( 1 e. x /\ A. y e. x ( y + 1 ) e. x ) } ) $=
+      ( cv wcel c1o cop ceq cec cltq wbr cab c1p cpp co cer c0r eceq1d vz vw vk
+      cnpi c1 caddc wral wa cint wi wal cpli opeq1 breq2d abbidv breq1d opeq12d
+      oveq1d opeq1d eleq1d imbi2d pitonnlem1 eleq1i biimpri adantr oveq1 rspccv
+      wceq ad2antll wb pitonnlem2 sylibd indpi alrimiv eleq2 raleqbi1dv anbi12d
+      a2d ralab sylibr cnp cxp cqs cnr nnprlu 1pr addclpr sylancl opelxpi enrex
+      ex ecelqsi syl 0r elintg mpbird ) DFZUDGZEFZWQHIZJKZLMZENZXACFZLMZCNZIZOP
+      QZOIZRKZSIZUEAFZGZBFZUEUFQZXLGZBXLUGZUHZANZUIGZXKUAFZGZUAXSUGZWRUEYAGZXOY
+      AGZBYAUGZUHZYBUJZUAUKYCWRYHUAYGWSUBFZHIZJKZLMZENZYKXDLMZCNZIZOPQZOIZRKZSI
+      ZYAGZUJYGWSHHIZJKZLMZENZUUCXDLMZCNZIZOPQZOIZRKZSIZYAGZUJYGWSUCFZHIZJKZLMZ
+      ENZUUPXDLMZCNZIZOPQZOIZRKZSIZYAGZUJYGWSUUNHULQZHIZJKZLMZENZUVIXDLMZCNZIZO
+      PQZOIZRKZSIZYAGZUJYHUBUCWQYIHVHZUUAUUMYGUVTYTUULYAUVTYSUUKSUVTYRUUJRUVTYQ
+      UUIOUVTYPUUHOPUVTYMUUEYOUUGUVTYLUUDEUVTYKUUCWSLUVTYJUUBJYIHHUMTZUNUOUVTYN
+      UUFCUVTYKUUCXDLUWAUPUOUQURUSTUSUTVAYIUUNVHZUUAUVFYGUWBYTUVEYAUWBYSUVDSUWB
+      YRUVCRUWBYQUVBOUWBYPUVAOPUWBYMUURYOUUTUWBYLUUQEUWBYKUUPWSLUWBYJUUOJYIUUNH
+      UMTZUNUOUWBYNUUSCUWBYKUUPXDLUWCUPUOUQURUSTUSUTVAYIUVGVHZUUAUVSYGUWDYTUVRY
+      AUWDYSUVQSUWDYRUVPRUWDYQUVOOUWDYPUVNOPUWDYMUVKYOUVMUWDYLUVJEUWDYKUVIWSLUW
+      DYJUVHJYIUVGHUMTZUNUOUWDYNUVLCUWDYKUVIXDLUWEUPUOUQURUSTUSUTVAYIWQVHZUUAYB
+      YGUWFYTXKYAUWFYSXJSUWFYRXIRUWFYQXHOUWFYPXGOPUWFYMXCYOXFUWFYLXBEUWFYKXAWSL
+      UWFYJWTJYIWQHUMTZUNUOUWFYNXECUWFYKXAXDLUWGUPUOUQURUSTUSUTVAYDUUMYFUUMYDUU
+      LUEYACEVBVCVDVEUUNUDGZYGUVFUVSUWHYGUVFUVSUJUWHYGUHUVFUVEUEUFQZYAGZUVSYFUV
+      FUWJUJUWHYDYEUWJBUVEYAXNUVEVHXOUWIYAXNUVEUEUFVFUTVGVIUWHUWJUVSVJYGUWHUWIU
+      VRYACUUNEVKUTVEVLWKVRVMVNXRYGYBUAAXLYAVHXMYDXQYFXLYAUEVOXPYEBXLYAXLYAXOVO
+      VPVQVSVTWRXKWAWAWBZRWCZWDWBZGZXTYCVJWRXJUWLGZSWDGUWNWRXIUWKGZUWOWRXHWAGZO
+      WAGZUWPWRXGWAGUWRUWQCWQEWEWFXGOWGWHWFXHOWAWAWIWHUWKXIRWJWLWMWNXJSUWLWDWIW
+      HUAXKXSUWMWOWMWP $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
