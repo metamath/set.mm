@@ -59625,6 +59625,41 @@ $)
     bitrd ) ABCZADEZAFGHZIUMAJCUNAKLUMUOADUMUOADMZUMUONZADCZIUPAOUQURUPUMUOURUP
     PZUMUOAFCZUSUMFBCUOUTRSAFQTUTADUAZCUMUSFVAAUBUCADBUDUEULUFUGUHUIUJUK $.
 
+  ${
+    $d x y $.  $d x A $.  $d x ps $.  $d x ch $.  $d x th $.  $d x ta $.
+    $d y ph $.
+    $( Substitutions. $)
+    indpi.1 $e |- ( x = 1o -> ( ph <-> ps ) ) $.
+    indpi.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    indpi.3 $e |- ( x = ( y +N 1o ) -> ( ph <-> th ) ) $.
+    indpi.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    indpi.5 $e |- ps $.
+    $( Induction step. $)
+    indpi.6 $e |- ( y e. N. -> ( ch -> th ) ) $.
+    $( Principle of Finite Induction on positive integers.  (Contributed by NM,
+       23-Mar-1996.) $)
+    indpi $p |- ( A e. N. -> ta ) $=
+      ( wcel com c0 wceq wo c1o cnpi cv wne wa elni cab csuc wral wss wsbc eqid
+      orci nfv nfsbc1v nfor 0ex eqeq1 sbceq1a orbi12d elabf mpbir suceq syl6eqr
+      wi df-1o olci 1onn elexi elab syl6eqel a1d a1i wn wb simprbi neneqd biorf
+      syl vex syl6bbr cpli co 1pi addclpi mpan2 sylib simprd elabg coa addpiord
+      con0 pion oa1suc eqtrd eleq1d 3bitr2d 3imtr3d wdc nndceq0 necon3bd anc2li
+      df-dc idd syl6ibr orim2d mpjaod rgen peano5 mp2an sseli abid adantr df-ne
+      mpd sylbi adantl mpbird vtoclga ) AEFHUALFUBZUAOXSPOZXSQUCZUDZAXSUEYBAXSQ
+      RZASZXTYDYAXTXSYDFUFZOYDPYEXSQYEOZGUBZYEOZYGUGZYEOZVDZGPUHPYEUIYFQQRZAFQU
+      JZSZYLYMQUKULYDYNFQYLYMFYLFUMAFQUNUOUPYCYCYLAYMXSQQUQAFQURUSUTVAYKGPYGPOZ
+      YGQRZYKYGUAOZYPYKVDYOYPYJYHYPYITYEYPYIQUGTYGQVBVEVCTYEOTQRZBSZBYRMVFYDYSF
+      TTPVGVHXSTRYCYRABXSTQUQIUSVIVAVJVKVLYQYKVDYOYQCDYHYJNYQCYPCSZYHYQYPVMZCYT
+      VNYQYGQYQYOYGQUCZYGUEZVOVPYPCVQVRYDYTFYGGVSXSYGRYCYPACXSYGQUQJUSVIVTYQDYG
+      TWAWBZQRZDSZUUDYEOZYJYQUUEVMDUUFVNYQUUDQYQUUDPOZUUDQUCZYQUUDUAOZUUHUUIUDY
+      QTUAOZUUJWCYGTWDWEZUUDUEWFWGVPUUEDVQVRYQUUJUUGUUFVNUULYDUUFFUUDUAXSUUDRYC
+      UUEADXSUUDQUQKUSWHVRYQUUDYIYEYQUUDYGTWIWBZYIYQUUKUUDUUMRWCYGTWJWEYQYGWKOU
+      UMYIRYGWLYGWMVRWNWOWPWQVLYOYPUUASZYPYQSYOYPWRUUNYGWSYPXBWFYOUUAYQYPYOUUAY
+      OUUBUDYQYOUUAUUBYOYPYGQYOYPXCWTXAUUCXDXEXNXFXGGYEXHXIXJYDFXKWFXLYAAYDVNZX
+      TYAYCVMUUOXSQXMYCAVQXOXPXQXOXR $.
+  $}
+
   $( A natural number plus a positive integer is a positive integer.
      (Contributed by Jim Kingdon, 10-Nov-2019.) $)
   nnppipi $p |- ( ( A e. _om /\ B e. N. ) -> ( A +o B ) e. N. ) $=
