@@ -53,8 +53,8 @@
 2017-08-24|Definition of Tarskian geometry using extensible structures, df-trkg
 2017-08-31|Proved areacirc - Area of a Circle (Brendan Leahy), Metamath 100 #9 / Tied with Mizar
 2017-09-24|Proved cevath - Theorem of Ceva (Saveliy Skresanov), Metamath 100 #61
-2018-08-14|Proved eulerpart - Partition Theorem (by Euler) (Thierry Arnoux), metamath 100 #45
-2018-10-09|Proved friendship - Friendship Theorem (Alexander van der Vekens), metamath 100 #83
+2018-08-14|Proved eulerpart - Partition Theorem (by Euler) (Thierry Arnoux), Metamath 100 #45
+2018-10-09|Proved friendship - Friendship Theorem (Alexander van der Vekens), Metamath 100 #83
 2019-02-21|Proved cramer - Cramer's Rule (Alexander van der Vekens), Metamath 100 #97
 2019-03-10|Proved cayley - Cayley-Hamilton Theorem (Alexander van der Vekens), Metamath 100 #49
 2019-03-10|Proved heron - Heron's Formula (Mario Carneiro), Metamath 100 #57
