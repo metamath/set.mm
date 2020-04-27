@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-Apr-2020
+$( iset.mm - Version of 26-Apr-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -60801,6 +60801,16 @@ $)
   $}
 
   ${
+    $d A l u $.
+    $( The canonical embedding of positive integers into positive fractions.
+       (Contributed by Jim Kingdon, 26-Apr-2020.) $)
+    nnnq $p |- ( A e. N. -> [ <. A , 1o >. ] ~Q e. Q. ) $=
+      ( cnpi wcel c1o cop ceq cec cxp cqs cnq 1pi opelxpi mpan2 ecelqsi df-nqqs
+      enqex syl syl6eleqr ) ABCZADEZFGZBBHZFIZJSTUBCZUAUCCSDBCUDKADBBLMUBTFPNQO
+      R $.
+  $}
+
+  ${
     $d x y z w v u f $.
     $( Define equivalence relation for non-negative fractions.  This is a
        "temporary" set used in the construction of complex numbers, and is
@@ -63122,11 +63132,9 @@ $)
        (Contributed by Jim Kingdon, 23-Apr-2020.) $)
     nnprlu $p |- ( A e. N. -> <. { l | l <Q [ <. A , 1o >. ] ~Q } ,
         { u | [ <. A , 1o >. ] ~Q <Q u } >. e. P. ) $=
-      ( cnpi wcel c1o cop ceq cec cnq cltq wbr cab cnp cxp cqs 1pi opelxpi syl
-      cv mpan2 enqex ecelqsi df-nqqs syl6eleqr cbvabv opeq2i nqprlu syl5eqelr
-      breq2 ) BDEZBFGZHIZJEZCTZUMKLCMZUMATZKLZAMZGZNEUKUMDDOZHPZJUKULVAEZUMVBEU
-      KFDEVCQBFDDRUAVAULHUBUCSUDUEUNUTUPUMUOKLZCMZGNVEUSUPVDURCAUOUQUMKUJUFUGCU
-      MUHUIS $.
+      ( cnpi wcel c1o cop ceq cec cnq cltq wbr cab cnp nnnq breq2 cbvabv opeq2i
+      cv nqprlu syl5eqelr syl ) BDEBFGHIZJEZCSZUCKLCMZUCASZKLZAMZGZNEBOUDUJUFUC
+      UEKLZCMZGNULUIUFUKUHCAUEUGUCKPQRCUCTUAUB $.
   $}
 
   ${
