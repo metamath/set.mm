@@ -539,6 +539,7 @@ $s class RngHomo $: <mi href="df-rnghomo.html"> RngHomo </mi> $.
 $s class RngIsom $: <mi href="df-rngisom.html"> RngIsom </mi> $.
 $s class RingHom $: <mi href="df-rnghom.html"> RingHom </mi> $.
 $s class RingIso $: <mi href="df-rngiso.html"> RingIso </mi> $.
+$s class ~=r $: <msub href="df-ric.html"> <mo>&#x2243;</mo> <mi>&#x1D45F;</mi> </msub> $.
 $s class DivRing $: <mi href="df-drng.html">DivRing</mi> $.
 $s class Field $: <mi href="df-field.html">Field</mi> $.
 $s class SubRing $: <mi href="df-subrg.html">SubRing</mi> $.
@@ -920,6 +921,7 @@ $s class USGrph $: <mi href="df-usgra.html">USGrph</mi> $.
 $s class Neighbors $: <mi href="df-nbgra.html">Neighbors</mi> $.
 $s class ComplUSGrph $: <mi href="df-cusgra.html">ComplUSGrph</mi> $.
 $s class UnivVertex $: <mi href="df-uvtx.html">UnivVertex</mi> $.
+$s class .ef $: <mi href="df-edgf.html"> ef </mi> $.
 $s class Vtx $: <mi href="df-vtx.html"> Vtx </mi> $.
 $s class Edges $: <mi href="df-edg.html"> Edges </mi> $.
 $s class GrOrder $: <mi href="df-gord.html">GrOrder</mi> $.
@@ -1227,7 +1229,7 @@ $s class Ismty $: <mi href="df-ismty.html"> Ismty </mi> $.
 $s class Rn $: <msup href="df-rrn.html"><mi>&Ropf;</mi> <mi>n</mi></msup> $.
 $s class RngHom $: <mi href="df-rngohom.html"> RngHom </mi> $.
 $s class RngIso $: <mi href="df-rngoiso.html"> RngIso </mi> $.
-$s class ~=r $: <msub href="df-risc.html"><mo>&#8771;</mo> <mi>&#x1D45F;</mi></msub> $.
+$s class ~=R $: <msub href="df-risc.html"><mo>&#8771;</mo> <mi>&#x1D45F;</mi></msub> $.
 $s class CRingOps $: <mi href="df-crngo.html">CRingOps</mi> $.
 $s class Idl $: <mi href="df-idl.html">Idl</mi> $.
 $s class PrIdl $: <mi href="df-pridl.html">PrIdl</mi> $.
@@ -1301,6 +1303,11 @@ $s class CytP $: <mi href="df-cytp.html">CytP</mi> $.
 $s class TopSep $: <mi href="df-topsep.html">TopSep</mi> $.
 $s class TopLnd $: <mi href="df-toplnd.html">TopLnd</mi> $.
 
+$( Steve Rodriguez $)
+$s class lcm $: <msub href="df-lcm.html"><mo>+</mo> <mi>lcm</mi></msub> $. 
+$s class _Cc $: <msub href="df-bcc.html"><mo>C</mo> <mi>&#x1D450;</mi></msub> $. 
+
+
 $( Andrew Salmon $)
 $s class +r $: <msub href="df-addr.html"><mo>+</mo> <mi>r</mi></msub> $. 
 $s class -r $: <msub href="df-subr.html"><mo>-</mo> <mi>r</mi></msub> $. 
@@ -1309,6 +1316,7 @@ $s class RR3 $: <mi href="df-rr3.html">RR3</mi> $.
 $s class line3 $: <mi href="df-line3.html">line3</mi> $.
 
 $( Alexander van der Vekens $)
+$s class ~=c $: <msub href="df-cic.html"><mo>&#8771;</mo> <mi>&#x1D450;</mi></msub> $. 
 $s class defAt $: <mi> defAt </mi> $.
 $s class ''' $: <mi>&#39&#39&#39</mi> $.
 $s class (( A F B )) $: <mfenced open="((" close="))"><mrow>#A# #F# #B#</mrow></mfenced> $.
@@ -1408,6 +1416,11 @@ $s class -cc $: <msub href="df-bj-oppc.html"><mo>-</mo> <mover><mi>&Copf;</mi> <
 $s class .cc $: <msub href="df-bj-mulc.html"><mo>&sdot;</mo> <mover><mi>&Copf;</mi> <mo>&oline;</mo></mover></msub> $.
 $s class invc $: <msup href="df-bj-invc.html"><mo>&sdot;</mo> <mn>-1</mn></msup> $.
 $s class RRVec $: <mi href="df-bj-rrvec.html">&Ropf;Vec</mi> $.
+
+$s class -Set-> $: <munder accentunder href="df-bj-fset.html"><mo>&xrarr;</mo><mo>Set</mo></munder> $.
+$s wff F e. ( A -Set-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-fset.html"><mo>&xrarr;</mo><mo>Set</mo></munder> #B# </mrow> $.
+$s class curry_ $: <mi href="df-bj-cur">curry_</mi> $.
+$s class uncurry_ $: <mi href="df-bj-unc">uncurry_</mi> $.
 
 
 $s wff Prv ph $: <mrow><mo href="ax-prv1.html">Prv</mo> #ph#</mrow> $.
