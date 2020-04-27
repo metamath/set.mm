@@ -66584,6 +66584,27 @@ $)
       UOUQUIWQWRURUSVPXBVCWPVNWTVOXAVEVJURVJVEURUTVAVBVD $.
   $}
 
+  ${
+    $d A l n u w x y z $.
+
+    $( Archimedean axiom.  Definition 3.1(2) of [Geuvers], p. 9.  The
+       Archimedean property is more naturally stated once we have defined
+       ` NN ` .  Unless we find another way to state it, we'll just use the
+       right hand side of ~ dfnn2 in stating what we mean by "natural number"
+       in the context of this axiom.  (Contributed by Jim Kingdon,
+       22-Apr-2020.) $)
+    axarch $p |- ( A e. RR -> E. n e.
+        |^| { x | ( 1 e. x /\ A. y e. x ( y + 1 ) e. x ) } A <RR n ) $=
+      ( vz vl vw vu wcel cv c0r cop wceq cltrr wbr wa cab wrex cnr cnpi cr wral
+      c1 caddc co cint elreal biimpi c1o ceq cec cltq c1p cpp cer cltr ad2antrl
+      archsr simplrr simprr ltresr sylibr pitonn simpr breq2d rspcedv rexlimddv
+      eqbrtrrd mpd ) CUAIZEJZKLZCMZCDJZNOZDUCAJZIBJUCUDUEVPIBVPUBPAQUFZRZESVJVM
+      ESRECUGUHVJVKSIZVMPPZVKFJGJZUILUJUKZULOFQWBHJULOHQLUMUNUEUMLUOUKZUPOZVRGT
+      VSWDGTRVJVMGHVKFURUQVTWATIZWDPZPZCWCKLZNOZVRWGVLCWHNVJVSVMWFUSWGWDVLWHNOV
+      TWEWDUTVKWCVAVBVHWGVOWIDWHVQWEWHVQIVTWDABHGFVCUQWGVNWHMZPVNWHCNWGWJVDVEVF
+      VIVGVG $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
