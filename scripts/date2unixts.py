@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Convert every line's text before "|" from ISO date to Unix timestamp.
 
 # We naively assume all dates are in UTC, which isn't quite right, but we
