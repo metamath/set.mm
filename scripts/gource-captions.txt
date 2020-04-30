@@ -12,6 +12,7 @@
 1994-08-02|Image (df-ima) and restriction (df-res) of a class defined
 1994-08-07|Proved canth2 - Cantor's Theorem (Norman Megill), Metamath 100 #63
 1995-04-14|Proved finds - Principle of Mathematical Induction (Norman Megill), Metamath 100 #74
+1995-07-14|Article: Norman Megill, "A Finitely Axiomatized Formalization of Predicate Calculus with Equality"
 1996-02-22|Definition of the set of complex numbers, df-c
 1996-07-18|ZFC Axiom of Choice (ax-ac) added
 1997-01-21|Proved arch - the Archimedian Property for Reals (Norman Megill)
@@ -37,7 +38,7 @@
 2008-01-12|Proved sii - Cauchy-Schwarz Inequality (Norman Megill), Metamath 100 #78
 2008-01-22|Proved ivth - Intermediate Value Theorem (Paul Chapman), Metamath 100 #79
 2008-04-17|Proved pythi - Pythagorean Theorem (Norman Megill), Metamath 100 #4
-2008-07-25|Publication of paperback "Metamath" (Norman Megill)
+2008-07-25|Book: Norman Megill, "Metamath: A Computer Language for Pure Mathematics"
 2009-11-02|Magma defined (df-mgm) (Frédéric Liné)
 2010-10-22|True and False constants defined (df-tru, df-fal) (Anthony Hart)
 2011-03-31|Proved eucalgval - Greatest Common Divisor Algorithm (Paul Chapman), Metamath 100 #69 (tied PVS)
@@ -55,7 +56,8 @@
 2015-01-21|Intuitive logic database iset.mm created from set.mm by Mario Carneiro, extended by Jim Kingdon
 2015-01-28|Proved wilth - Wilson's Theorem (Mario Carneiro), Metamath 100 #51 (tied ProofPower)
 2015-04-17|Decimal constructor df-dec added
-2016-08-08|Daniel Whalen releases paper on creating Metamath proofs via machine learning ("Holophrasm")
+2016-01-28|Article: Mario Carneiro, "Models for Metamath"
+2016-08-08|Article: Daniel Whalen, "Holophrasm: a Neural Automated Theorem Prover for Higher-Order Logic"
 2016-08-11|"Not free" predicate defined (df-nf, df-nfc) (Mario Carneiro)
 2016-11-25|Proved all assertic syllogisms in Aristotelian logic (David A. Wheeler)
 2017-05-07|Proved ballotth - Ballot Problem (Thierry Arnoux), Metamath 100 #30 (tied Coq)
@@ -67,8 +69,8 @@
 2019-02-21|Proved cramer - Cramer's Rule (Alexander van der Vekens), Metamath 100 #97
 2019-03-10|Proved cayley - Cayley-Hamilton Theorem (Alexander van der Vekens), Metamath 100 #49
 2019-03-10|Proved heron - Heron's Formula (Mario Carneiro), Metamath 100 #57
-2019-06-02|Publication of "Metamath: A Computer Language for Mathematical Proofs" book (Norman Megill & David A. Wheeler)
-2019-10-22|Mario Carneiro's paper on MM0 ("Metamath Zero: The Cartesian Theorem Prover")
+2019-06-02|Book: Norman Megill and David A. Wheeler, "Metamath: A Computer Language for Mathematical Proofs"
+2019-10-22|Article: Mario Carneiro, "Metamath Zero: The Cartesian Theorem Prover"
 2019-12-11|Proved fourier - Fourier convergence (Glauco Siliprandi), Metamath 100 #76 with 400 proven theorems
 2020-03-25|OpenAI provides first contribution of a Metamath proof created/minimized via machine learning
 2020-04-05|Proved etransc - e is Transcendental (Glauco Siliprandi), Metamath 100 #67
