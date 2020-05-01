@@ -61,6 +61,7 @@
 2016-08-08|2016-08-08 Article: Daniel Whalen, "Holophrasm: a Neural Automated Theorem Prover for Higher-Order Logic"
 2016-08-11|2016-08-11 Definitions: "Not free" predicate (df-nf, df-nfc) (Mario Carneiro)
 2016-11-25|2016-11-25 Proof: All assertic syllogisms in Aristotelian logic (David A. Wheeler)
+2017-02-28|2017-02-28 Proof: Intersecting chords theorem (chordthm, David Moews)
 2017-05-07|2017-05-07 Proof: Ballot Problem (ballotth, Thierry Arnoux), Metamath 100 #30 (tied Coq)
 2017-08-24|2017-08-24 Definition: Tarskian geometry using extensible structures, df-trkg
 2017-08-31|2017-08-31 Proof: Area of a Circle (areacirc, Brendan Leahy), Metamath 100 #9 (tied Mizar)
