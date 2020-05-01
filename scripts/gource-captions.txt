@@ -43,6 +43,7 @@
 2010-10-22|True and False constants defined (df-tru, df-fal) (Anthony Hart)
 2011-03-31|Proved eucalgval - Greatest Common Divisor Algorithm (Paul Chapman), Metamath 100 #69 (tied PVS)
 2012-05-12|Mario Carneiro begins contributing
+2012-06-14|Article: Eric Schmidt, "Reductions in Norman Megill’s axiom system for complex numbers"
 2012-11-17|Proved 1arith2 - Fundamental Theorem of Arithmetic (Paul Chapman), Metamath 100 #80 (tied ACL2)
 2013-03-03|Proved qnnen - Denumerability of Rational Numbers (Mario Carneiro), Metamath 100 #3
 2014-02-22|Proved bezout - Bezout's Theorem (Mario Carneiro), Metamath 100 #60
