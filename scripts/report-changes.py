@@ -157,7 +157,7 @@ def timestamp_of(date):
     dt = datetime.datetime(int(year), int(month), int(day))
     return int((dt - POSIX_EPOCH) / datetime.timedelta(seconds=1))
 
-# For now, hand-jam name abbreviations
+# For now, hand-jam name abbreviations and any repairs
 
 NAME_ABBREVIATIONS = {
     'AV': 'Alexander van der Vekens',
@@ -170,8 +170,10 @@ NAME_ABBREVIATIONS = {
     'Gerard Lang': 'Gérard Lang',
     'JJ': 'Jerry James',
     'NM': 'Norman Megill',
+    'RP': 'Richard Penner',
     'SF': 'Scott Fenton',
     'SO': 'Stefan O\'Rear',
+    'rpenner': 'Richard Penner',
 }
 
 REMOVE_DEPENDENCY = re.compile('to remove dependency on .*')
