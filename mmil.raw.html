@@ -816,7 +816,26 @@ variables</A></LI>
 <LI>
 <A HREF="acexmid.html">The axiom of choice implies excluded middle</A></LI>
 
-<LI>...<I>watch this space as we build out more of set theory</I></LI>
+<LI>
+<A HREF="onprc.html">Burali-Forti paradox</A></LI>
+
+<LI>
+<A HREF="tfis3.html">Transfinite induction</A></LI>
+
+<LI>
+<A HREF="oacl.html">Closure law for ordinal addition</A></LI>
+
+</MENU>
+<B>Real and complex numbers</B>
+
+<MENU>
+<LI>Properties of apartness:
+<A HREF="apirr.html">1</A>
+<A HREF="apsym.html">2</A>
+<A HREF="apcotr.html">3</A>
+<A HREF="apti.html">4</A></LI>
+
+<MENU>
 
 </MENU>
 </TD></TR></TABLE>
@@ -1285,6 +1304,16 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+<TD>undif2</TD>
+<TD>~ undif2ss </TD>
+</TR>
+
+<TR>
+<TD>uneqdifeq</TD>
+<TD>~ uneqdifeqim </TD>
+</TR>
+
+<TR>
 <TD>r19.45zv</TD>
 <TD>~ r19.45mv </TD>
 </TR>
@@ -1356,6 +1385,11 @@ ifex , ifexg</TD>
 <TD><I>none</I></TD>
 <TD>Even in set.mm, the weak deduction theorem is discouraged in
 favor of theorems in deduction form.</TD>
+</TR>
+
+<TR>
+<TD>iundif2</TD>
+<TD>~ iundif2ss </TD>
 </TR>
 
 <TR>
@@ -1603,7 +1637,7 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
-<TD ROWSPAN="4">fvex</TD>
+<TD ROWSPAN="5">fvex</TD>
 <TD>~ funfvex </TD>
 <TD>when evaluating a function within its domain</TD>
 </TR>
@@ -1619,6 +1653,12 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
+<TD>~ mptfvex </TD>
+<TD>when the function is defined via maps-to, yields a set for all inputs,
+and is evaluated at a set</TD>
+</TR>
+
+<TR>
 <TD>~ 1stexg , ~ 2ndexg </TD>
 <TD>for the functions ` 1st ` and ` 2nd `</TD>
 </TR>
@@ -1631,6 +1671,11 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 
 <TR>
 <TD>elfvdm</TD>
+<TD>~ relelfvdm </TD>
+</TR>
+
+<TR>
+<TD>elfvex</TD>
 <TD>~ relelfvdm </TD>
 </TR>
 
@@ -1676,9 +1721,25 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
-<TD>ovex</TD>
+<TD ROWSPAN="4">ovex</TD>
 <TD>~ fnovex </TD>
-<TD>Sometimes or ~ fvexg or ~ relrnfvex may work.</TD>
+<TD>when the operation is a function evaluated within its domain.</TD>
+</TR>
+
+<TR>
+<TD>~ fvexg , ~ fvex</TD>
+<TD>when the operation is a set and is evaluated at a set</TD>
+</TR>
+
+<TR>
+<TD>~ relrnfvex</TD>
+<TD>when the operation is a relation whose range is a set</TD>
+</TR>
+
+<TR>
+<TD>~ mpt2fvex </TD>
+<TD>When the operation is defined via maps-to, yields a set on
+any inputs, and is being evaluated at two sets.</TD>
 </TR>
 
 <TR>
@@ -1700,16 +1761,25 @@ found in ~ ovi3 .</TD>
 </TR>
 
 <TR>
-<TD>ndmovg , ndmov , ndmovcl ,
-    ndmovrcl , ndmovcom , ndmovass , ndmovdistr , ndmovord ,
+<TD>ndmovg , ndmov</TD>
+<TD>~ ndmfvg </TD>
+<TD>These theorems are generally used in set.mm for case elimination
+which is why we just have the general ~ ndmfvg rather than an
+operation-specific version.
+</TR>
+
+<TR>
+<TD>ndmovcl , ndmovcom , ndmovass , ndmovdistr , ndmovord ,
     and ndmovordi</TD>
 <TD><I>none</I></TD>
-<TD>Although these theorems are moderately widely used in set.mm,
-    in many cases they are being used for case elimination and
-    the set.mm proofs are not intuitionistic. We might bring
-    back some of them later (which may have conditions that the
-    sets exist, but aren't in the domain), but maybe we'll find
-    a way to avoid them.
+<TD>These theorems are generally used in set.mm for case elimination
+and the most straightforward way to avoid them is to add conditions
+that we are evaluating functions within their domains.
+</TR>
+
+<TR>
+<TD>ndmovrcl</TD>
+<TD>~ elmpt2cl , ~ relelfvdm</TD>
 </TR>
 
 <TR>
@@ -2204,6 +2274,72 @@ middle in its proof.</TD>
 <TD>eceqoveq</TD>
 <TD><I>none</I></TD>
 <TD>Unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>df-sdom , relsdom , brsdom , dfdom2 , sdomdom , sdomnen ,
+brdom2 , bren2 , domdifsn</TD>
+<TD><I>none</I></TD>
+<TD>Many aspects of strict dominance as developed in set.mm rely
+on excluded middle and a different definition would be needed if
+we wanted strict dominance to have the expected properties.</TD>
+</TR>
+
+<TR>
+<TD>en1b</TD>
+<TD>~ en1bg </TD>
+</TR>
+
+<TR>
+<TD>mapsnen , map1 , pw2f1olem , pw2f1o , pw2eng , pw2en</TD>
+<TD><I>none</I></TD>
+<TD>We have not added set exponentiation to iset.mm yet.</TD>
+</TR>
+
+<TR>
+<TD>snfi</TD>
+<TD>snfig</TD>
+</TR>
+
+<TR>
+<TD>difsnen</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof uses excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>undom</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof uses undif2 and we just have ~ undif2ss </TD>
+</TR>
+
+<TR>
+<TD>xpdom3</TD>
+<TD>~ xpdom3m </TD>
+</TR>
+
+<TR>
+<TD>domunsncan</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on difsnen</TD>
+</TR>
+
+<TR>
+<TD>omxpenlem , omxpen , omf1o</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on omwordi</TD>
+</TR>
+
+<TR>
+<TD>enfixsn</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on difsnen</TD>
+</TR>
+
+<TR>
+<TD>sbth and its lemmas, sbthb , sbthcl</TD>
+<TD><I>none</I></TD>
+<TD>The Schroeder-Bernstein Theorem implies excluded middle</TD>
 </TR>
 
 <TR>
@@ -2785,9 +2921,14 @@ to "apart from zero".</TD>
 </TR>
 
 <TR>
-<TD>lecasei , lelttric , ltlecasei</TD>
+<TD>lecasei , ltlecasei</TD>
 <TD><I>none</I></TD>
 <TD>These are real number trichotomy</TD>
+</TR>
+
+<TR>
+<TD>lelttric</TD>
+<TD>~ zlelttric </TD>
 </TR>
 
 <TR>
@@ -3514,6 +3655,50 @@ trichotomy.</TD>
 to apart, but is lightly used in set.mm.</TD>
 </TR>
 
+<TR>
+<TD>fzn0</TD>
+<TD>~ fzm </TD>
+</TR>
+
+<TR>
+<TD>fz0</TD>
+<TD><I>none</I></TD>
+<TD>Although it would be possible to prove a version of this
+with the additional conditions that ` M e. _V ` and ` N e. _V ` ,
+the theorem is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>fzon0</TD>
+<TD>~ fzom </TD>
+</TR>
+
+<TR>
+<TD>fzo0n0</TD>
+<TD>~ fzo0m </TD>
+</TR>
+
+<TR>
+<TD>ssfzoulel</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could be proven, but the set.mm proof is not
+intuitionistic and it is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>fzonfzoufzol</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could be proven, but the set.mm proof is not
+intuitionistic and it is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>elfznelfzo , elfznelfzob , injresinjlem , injresinj</TD>
+<TD><I>none</I></TD>
+<TD>Some or all of this presumably could be proven, but the set.mm
+proof is not intuitionistic and it is lightly used in set.mm.</TD>
+</TR>
+
 </TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
@@ -3540,6 +3725,13 @@ http://www.paultaylor.eu/ASD/dedras.pdf</A>
 <LI><A NAME="BellMachover"></A> [BellMachover] Bell, J. L., and M.
 Machover, <I>A Course in Mathematical Logic,</I> North-Holland,
 Amsterdam (1977) [QA9.B3953].</LI>
+
+<LI><A NAME="Bobzien"></A> [Bobzien] Bobzien, Susanne,
+"Stoic Logic",
+<I>The Cambridge Companion to Stoic Philosophy</I>,
+Brad Inwood (ed.), Cambridge University Press (2003-2006),
+<A HREF="https://philpapers.org/rec/BOBSL">
+https://philpapers.org/rec/BOBSL</A>.
 
 <LI><A NAME="BourbakiEns"></A> [BourbakiEns] Bourbaki, Nicolas,
 <I>Th&eacute;orie des ensembles,</I> Springer-Verlag,

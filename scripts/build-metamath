@@ -6,9 +6,18 @@
 
 set -e -v
 
-# Unzip the .zip file; we presume it unpacks into ONLY "./metamath/"
-# To use .bz2 big file, use: tar -jxf ./metamath.tar.bz2
-unzip -o metamath-program.zip
+fail () {
+  printf '%s\n' "$1"
+  exit 1
+}
+
+test -f metamath-program.zip || fail 'Cannot find metamath-program.zip'
+
+# Unzip the .zip file; put all its contents into directory "./metamath"
+# ignoring any of its structure (-j) so that the version number provided
+# by GitHub is quietly removed.
+mkdir -p metamath/
+unzip -o -j -d metamath/ metamath-program.zip
 
 cd metamath/
 

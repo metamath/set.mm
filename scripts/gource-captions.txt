@@ -1,45 +1,76 @@
-717811200|Norman Megill hand develops first set.mm entries (ax-1, ax-2, ax-3, ax-mp, id1, syl)
-725414400|Norman Megill adds entries using early metamath.exe (com23, con1d, df-bi, df-or, pm2.04, syl5)
-757296000|Norman Megill adds df-br (define a general binary relationship)
-767577600|Set difference and set intersection defined (df-dif, df-in)
-797817600|Proved finds - The Principle of Mathematical Induction (Norman Megill), Metamath 100 #74
-824947200|Definition of the set of complex numbers, df-c
-853804800|Proved arch - the Archimedian Property for Reals (Norman Megill)
-897264000|Proved sbth - Schroeder-Bernstein Theorem (Norman Megill), Metamath 100 #25
-936489600|First external contributor (David Harvey)
-938822400|Proved abstrii - The Triangle Inequality (Norman Megill), Metamath 100 #91
-978048000|Second external contributor (Josh Purinton)
-1010448000|Proved sqrt2irr - The Irrationality of the Square Root of 2 (Norman Megill), Metamath 100 #1
-1091232000|Proved qnnen - The Denumerability of the Rational Numbers (Norman Megill, later revised by Mario Carneiro), Metamath 100 #3
-1097625600|Proved ruc - The Non-Denumerability of the Continuum (Norman Megill), Metamath 100 #22
-1110758400|Definition of the cosine function, df-cos
-1115251200|Proved infpn2 - The Infinitude of Primes (Norman Megill), Metamath 100 #11
-1141171200|Publication of "The Seventeen Provers of the World" (including Metamath), ISBN 9783540307044
-1163116800|Proved demoivreALT - De Moivre's Theorem (Steve Rodriguez), Metamath 100 #17
-1163635200|Proved arisum - Sum of an arithmetic series (Frédéric Liné), Metamath 100 #68
-1200096000|Proved sii - The Cauchy-Schwarz Inequality (Norman Megill), Metamath 100 #78
-1200960000|Proved ivth - The Intermediate Value Theorem (Paul Chapman), Metamath 100 #79
-1208390400|Proved pythi - Pythagorean Theorem (Norman Megill), Metamath 100 #4
-1301529600|Proved eucalgval - Greatest Common Divisor Algorithm (Paul Chapman), Metamath 100 #69
-1336780800|Mario Carneiro begins contributing
-1353110400|Proved 1arith2 - Fundamental Theorem of Arithmetic (Paul Chapman), Metamath 100 #80
-1393027200|Proved bezout - Bezout's Theorem (Mario Carneiro), Metamath 100 #60
-1393545600|Proved eulerth - Euler's Generalization of Fermat's Little Theorem (Mario Carneiro), Metamath 100 #10
-1394755200|David A. Wheeler begins contributing
-1394755200|Proved bpos - Bertrand's Postulate (Mario Carneiro), Metamath 100 #98
-1397865600|Large number of Metamath 100 proofs begin being completed
-1429228800|Decimal constructor df-dec added
-1470614400|Daniel Whalen releases paper on creating Metamath proofs via machine learning ("Holophrasm")
-1494115200|Proved ballotth - The Ballot Problem (Thierry Arnoux), Metamath 100 #30 / Tied with Coq
-1503532800|Definition of Tarskian geometry using extensible structures, df-trkg
-1504137600|Proved areacirc - Area of a Circle (Brendan Leahy), Metamath 100 #9 / Tied with Mizar
-1506211200|Proved cevath - Theorem of Ceva (Saveliy Skresanov), Metamath 100 #61
-1534204800|Proved eulerpart - The Partition Theorem (by Euler) (Thierry Arnoux), metamath 100 #45
-1539043200|Proved friendship - The Friendship Theorem (Alexander van der Vekens), metamath 100 #83
-1550707200|Proved cramer - Cramer's Rule (Alexander van der Vekens), Metamath 100 #97
-1552176000|Proved heron - Heron's Formula (Mario Carneiro), Metamath 100 #57
-1559448000|Publication of "Metamath: A Computer Language for Mathematical Proofs" book
-1552176000|Proved cayley - Cayley-Hamilton Theorem (Alexander van der Vekens), Metamath 100 #49
-1576022400|Proved fourier - Fourier convergence (Glauco Siliprandi), Metamath 100 #76 with 400 proven theorems
-1585094400|OpenAI provides first contribution of a Metamath proof created/minimized via machine learning
-1586044800|Proved etransc - e is Transcendental (Glauco Siliprandi), Metamath 100 #67
+1992-09-30|Norman Megill hand develops first set.mm entries (ax-1, ax-2, ax-3, ax-mp, id1, syl)
+1992-12-27|Norman Megill adds entries using early metamath.exe (com23, con1d, df-bi, df-or, pm2.04, syl5)
+1993-05-21|ZFC Axiom of Extensionality (ax-ext) added
+1993-05-26|Class (set) builder abstraction (df-clab) added
+1993-06-17|Null set defined (df-nul)
+1993-06-21|ZFC Axiom of Power Sets (ax-pow) added and pair (df-pr) defined
+1993-08-14|ZFC Axiom of Regularity (ax-reg) added
+1993-08-16|ZFC Axiom of Infinity (ax-inf) added
+1993-12-23|ZFC Axioms of Replacement (ax-rep) and Union (ax-un) added
+1993-12-31|Norman Megill adds df-br (define a general binary relationship)
+1994-04-29|Set difference and set intersection defined (df-dif, df-in)
+1994-08-02|Image (df-ima) and restriction (df-res) of a class defined
+1994-08-07|Proved canth2 - Cantor's Theorem (Norman Megill), Metamath 100 #63
+1995-04-14|Proved finds - Principle of Mathematical Induction (Norman Megill), Metamath 100 #74
+1995-07-14|Article: Norman Megill, "A Finitely Axiomatized Formalization of Predicate Calculus with Equality"
+1996-02-22|Definition of the set of complex numbers, df-c
+1996-07-18|ZFC Axiom of Choice (ax-ac) added
+1997-01-21|Proved arch - the Archimedian Property for Reals (Norman Megill)
+1997-04-06|Proved zorn2 - Zorn's Lemma (Norman Megill)
+1998-03-28|Equinumerosity (df-en) and dominance (df-dom) relations defined
+1998-06-08|Proved sbth - Schroeder-Bernstein Theorem (Norman Megill), Metamath 100 #25
+1999-05-15|Proved dedth - Weak Deduction Theorem (Norman Megill)
+1999-05-27|Proved 2p2e4 - 2+2=4 (Norman Megill)
+1999-09-05|First external contributor (David Harvey)
+1999-10-02|Proved abstrii - Triangle Inequality (Norman Megill), Metamath 100 #91
+2000-12-29|Second external contributor (Josh Purinton)
+2001-08-19|Proved addsub - law of addition and subtraction (Norman Megill)
+2002-01-08|Proved sqrt2irr - Irrationality of the Square Root of 2 (Norman Megill), Metamath 100 #1
+2003-07-09|Proved findes - finite induction w/explicit subst. (Raph Levien)
+2004-07-31|Proved qnnen - Denumerability of the Rational Numbers (Norman Megill, later revised), Metamath 100 #3
+2004-10-13|Proved ruc - Non-Denumerability of the Continuum (Norman Megill), Metamath 100 #22
+2005-03-14|Definition of the cosine function, df-cos
+2005-05-05|Proved infpn2 - Infinitude of Primes (Norman Megill), Metamath 100 #11
+2006-03-01|Publication of "The Seventeen Provers of the World" (including Metamath), ISBN 9783540307044
+2006-11-10|Proved demoivreALT - De Moivre's Theorem (Steve Rodriguez), Metamath 100 #17
+2006-11-16|Proved arisum - Sum of an arithmetic series (Frédéric Liné), Metamath 100 #68
+2007-03-18|Tarski-Grothendieck Axiom (ax-groth) added
+2008-01-12|Proved sii - Cauchy-Schwarz Inequality (Norman Megill), Metamath 100 #78
+2008-01-22|Proved ivth - Intermediate Value Theorem (Paul Chapman), Metamath 100 #79
+2008-04-17|Proved pythi - Pythagorean Theorem (Norman Megill), Metamath 100 #4
+2008-07-25|Book: Norman Megill, "Metamath: A Computer Language for Pure Mathematics"
+2009-11-02|Magma defined (df-mgm) (Frédéric Liné)
+2010-10-22|True and False constants defined (df-tru, df-fal) (Anthony Hart)
+2011-03-31|Proved eucalgval - Greatest Common Divisor Algorithm (Paul Chapman), Metamath 100 #69 (tied PVS)
+2012-05-12|Mario Carneiro begins contributing
+2012-11-17|Proved 1arith2 - Fundamental Theorem of Arithmetic (Paul Chapman), Metamath 100 #80 (tied ACL2)
+2013-03-03|Proved qnnen - Denumerability of Rational Numbers (Mario Carneiro), Metamath 100 #3
+2014-02-22|Proved bezout - Bezout's Theorem (Mario Carneiro), Metamath 100 #60
+2014-02-28|Proved eulerth - Euler's Generalization of Fermat's Little Theorem (Mario Carneiro), Metamath 100 #10
+2014-03-14|David A. Wheeler begins contributing
+2014-03-14|Proved bpos - Bertrand's Postulate (Mario Carneiro), Metamath 100 #98
+2014-04-19|Large number of Metamath 100 proofs begin being completed
+2014-05-16|Proved fsumkthpow - Sum of kth powers (Scott Fenton), Metamath 100 #77
+2014-07-01|Mario Carneiro presents "Natural Deductions in the Metamath Proof Language"
+2014-11-22|Proved rmxycomplete - Solutions to Pell's Equation (Stefan O'Rear), Metamath 100 #39
+2015-01-21|Intuitive logic database iset.mm created from set.mm by Mario Carneiro, extended by Jim Kingdon
+2015-01-28|Proved wilth - Wilson's Theorem (Mario Carneiro), Metamath 100 #51 (tied ProofPower)
+2015-04-17|Decimal constructor df-dec added
+2016-01-28|Article: Mario Carneiro, "Models for Metamath"
+2016-08-08|Article: Daniel Whalen, "Holophrasm: a Neural Automated Theorem Prover for Higher-Order Logic"
+2016-08-11|"Not free" predicate defined (df-nf, df-nfc) (Mario Carneiro)
+2016-11-25|Proved all assertic syllogisms in Aristotelian logic (David A. Wheeler)
+2017-05-07|Proved ballotth - Ballot Problem (Thierry Arnoux), Metamath 100 #30 (tied Coq)
+2017-08-24|Definition of Tarskian geometry using extensible structures, df-trkg
+2017-08-31|Proved areacirc - Area of a Circle (Brendan Leahy), Metamath 100 #9 (tied Mizar)
+2017-09-24|Proved cevath - Theorem of Ceva (Saveliy Skresanov), Metamath 100 #61
+2018-08-14|Proved eulerpart - Partition Theorem (by Euler) (Thierry Arnoux), Metamath 100 #45
+2018-10-09|Proved friendship - Friendship Theorem (Alexander van der Vekens), Metamath 100 #83
+2019-02-21|Proved cramer - Cramer's Rule (Alexander van der Vekens), Metamath 100 #97
+2019-03-10|Proved cayley - Cayley-Hamilton Theorem (Alexander van der Vekens), Metamath 100 #49
+2019-03-10|Proved heron - Heron's Formula (Mario Carneiro), Metamath 100 #57
+2019-06-02|Book: Norman Megill and David A. Wheeler, "Metamath: A Computer Language for Mathematical Proofs"
+2019-10-22|Article: Mario Carneiro, "Metamath Zero: The Cartesian Theorem Prover"
+2019-12-11|Proved fourier - Fourier convergence (Glauco Siliprandi), Metamath 100 #76 with 400 proven theorems
+2020-03-25|OpenAI provides first contribution of a Metamath proof created/minimized via machine learning
+2020-04-05|Proved etransc - e is Transcendental (Glauco Siliprandi), Metamath 100 #67

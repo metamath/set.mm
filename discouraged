@@ -1006,22 +1006,41 @@
 "ax-frege2" is used by "rp-frege3g".
 "ax-frege2" is used by "rp-frege4g".
 "ax-frege2" is used by "rp-misc1-frege".
-"ax-frege28" is used by "bj-frege54cor0a".
 "ax-frege28" is used by "frege29".
 "ax-frege28" is used by "frege33".
+"ax-frege28" is used by "frege54cor0a".
 "ax-frege31" is used by "frege32".
 "ax-frege41" is used by "frege42".
-"ax-frege8" is used by "bj-frege53a".
+"ax-frege52a" is used by "frege52aid".
+"ax-frege52a" is used by "frege53a".
+"ax-frege52a" is used by "frege57a".
+"ax-frege52c" is used by "frege52b".
+"ax-frege52c" is used by "frege53c".
+"ax-frege52c" is used by "frege57c".
+"ax-frege54a" is used by "frege54cor1a".
+"ax-frege54c" is used by "frege54b".
+"ax-frege58a" is used by "frege58acor".
+"ax-frege58a" is used by "frege61a".
+"ax-frege58a" is used by "frege67a".
+"ax-frege58b" is used by "frege58bcor".
+"ax-frege58b" is used by "frege58bid".
+"ax-frege58b" is used by "frege58c".
+"ax-frege58b" is used by "frege60b".
+"ax-frege58b" is used by "frege61b".
+"ax-frege58b" is used by "frege67b".
 "ax-frege8" is used by "frege10".
 "ax-frege8" is used by "frege12".
 "ax-frege8" is used by "frege17".
 "ax-frege8" is used by "frege26".
 "ax-frege8" is used by "frege38".
+"ax-frege8" is used by "frege53a".
 "ax-frege8" is used by "frege53aid".
 "ax-frege8" is used by "frege53b".
 "ax-frege8" is used by "frege53c".
+"ax-frege8" is used by "frege62a".
 "ax-frege8" is used by "frege62b".
 "ax-frege8" is used by "frege62c".
+"ax-frege8" is used by "frege66a".
 "ax-frege8" is used by "frege66b".
 "ax-frege8" is used by "frege66c".
 "ax-frege8" is used by "frege74".
@@ -14098,7 +14117,13 @@ New usage of "ax-frege2" is discouraged (13 uses).
 New usage of "ax-frege28" is discouraged (3 uses).
 New usage of "ax-frege31" is discouraged (1 uses).
 New usage of "ax-frege41" is discouraged (1 uses).
-New usage of "ax-frege8" is discouraged (15 uses).
+New usage of "ax-frege52a" is discouraged (3 uses).
+New usage of "ax-frege52c" is discouraged (3 uses).
+New usage of "ax-frege54a" is discouraged (1 uses).
+New usage of "ax-frege54c" is discouraged (1 uses).
+New usage of "ax-frege58a" is discouraged (3 uses).
+New usage of "ax-frege58b" is discouraged (6 uses).
+New usage of "ax-frege8" is discouraged (17 uses).
 New usage of "ax-hcompl" is discouraged (6 uses).
 New usage of "ax-hfi" is discouraged (3 uses).
 New usage of "ax-hfvadd" is discouraged (14 uses).
@@ -14156,6 +14181,7 @@ New usage of "ax1ne0" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax2" is discouraged (0 uses).
 New usage of "ax3" is discouraged (0 uses).
+New usage of "ax3h" is discouraged (0 uses).
 New usage of "ax4" is discouraged (0 uses).
 New usage of "ax5ALT" is discouraged (0 uses).
 New usage of "ax5el" is discouraged (1 uses).
@@ -14307,11 +14333,10 @@ New usage of "bj-axdd2" is discouraged (0 uses).
 New usage of "bj-axtd" is discouraged (0 uses).
 New usage of "bj-ceqsalgALT" is discouraged (0 uses).
 New usage of "bj-ceqsalgvALT" is discouraged (0 uses).
-New usage of "bj-con3ALT" is discouraged (0 uses).
+New usage of "bj-con3thALT" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
 New usage of "bj-df-clel" is discouraged (1 uses).
 New usage of "bj-df-cleq" is discouraged (1 uses).
-New usage of "bj-dfif5ALT" is discouraged (0 uses).
 New usage of "bj-gl4" is discouraged (0 uses).
 New usage of "bj-gl4lem" is discouraged (1 uses).
 New usage of "bj-godellob" is discouraged (0 uses).
@@ -14761,7 +14786,6 @@ New usage of "cantnfsOLD" is discouraged (19 uses).
 New usage of "cantnfsucOLD" is discouraged (6 uses).
 New usage of "cantnfval2OLD" is discouraged (0 uses).
 New usage of "cantnfvalOLD" is discouraged (7 uses).
-New usage of "cases2OLD" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
 New usage of "cba" is discouraged (88 uses).
 New usage of "cbncms" is discouraged (5 uses).
@@ -18415,6 +18439,7 @@ New usage of "supsrlem" is discouraged (1 uses).
 New usage of "syl5eqnerOLD" is discouraged (0 uses).
 New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
+New usage of "symdif1OLD" is discouraged (0 uses).
 New usage of "tb-ax1" is discouraged (3 uses).
 New usage of "tb-ax2" is discouraged (1 uses).
 New usage of "tb-ax3" is discouraged (2 uses).
@@ -18927,7 +18952,7 @@ Proof modification of "bj-clelsb3" is discouraged (63 steps).
 Proof modification of "bj-cleqh" is discouraged (108 steps).
 Proof modification of "bj-cmnssmnd" is discouraged (36 steps).
 Proof modification of "bj-cmnssmndel" is discouraged (5 steps).
-Proof modification of "bj-con3ALT" is discouraged (63 steps).
+Proof modification of "bj-con3thALT" is discouraged (63 steps).
 Proof modification of "bj-csbprc" is discouraged (47 steps).
 Proof modification of "bj-denotes" is discouraged (76 steps).
 Proof modification of "bj-df-clel" is discouraged (4 steps).
@@ -18936,7 +18961,6 @@ Proof modification of "bj-df-nul" is discouraged (11 steps).
 Proof modification of "bj-df-v" is discouraged (29 steps).
 Proof modification of "bj-dfclel" is discouraged (10 steps).
 Proof modification of "bj-dfcleq" is discouraged (27 steps).
-Proof modification of "bj-dfif5ALT" is discouraged (148 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
 Proof modification of "bj-dral1v" is discouraged (36 steps).
 Proof modification of "bj-drex1v" is discouraged (42 steps).
@@ -18969,15 +18993,6 @@ Proof modification of "bj-exlimmpbir" is discouraged (11 steps).
 Proof modification of "bj-exlimmpi" is discouraged (11 steps).
 Proof modification of "bj-falor" is discouraged (4 steps).
 Proof modification of "bj-falor2" is discouraged (13 steps).
-Proof modification of "bj-frege53a" is discouraged (28 steps).
-Proof modification of "bj-frege54cor0a" is discouraged (46 steps).
-Proof modification of "bj-frege54cor1a" is discouraged (14 steps).
-Proof modification of "bj-frege55a" is discouraged (21 steps).
-Proof modification of "bj-frege55cor1a" is discouraged (22 steps).
-Proof modification of "bj-frege55lem1a" is discouraged (16 steps).
-Proof modification of "bj-frege55lem2a" is discouraged (22 steps).
-Proof modification of "bj-frege56a" is discouraged (30 steps).
-Proof modification of "bj-frege57a" is discouraged (29 steps).
 Proof modification of "bj-gl4" is discouraged (39 steps).
 Proof modification of "bj-gl4lem" is discouraged (37 steps).
 Proof modification of "bj-godellob" is discouraged (19 steps).
@@ -19098,7 +19113,6 @@ Proof modification of "cantnfsOLD" is discouraged (112 steps).
 Proof modification of "cantnfsucOLD" is discouraged (204 steps).
 Proof modification of "cantnfval2OLD" is discouraged (531 steps).
 Proof modification of "cantnfvalOLD" is discouraged (318 steps).
-Proof modification of "cases2OLD" is discouraged (103 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbvabOLD" is discouraged (77 steps).
 Proof modification of "cbvex2OLD" is discouraged (94 steps).
@@ -19518,40 +19532,64 @@ Proof modification of "frege49" is discouraged (31 steps).
 Proof modification of "frege5" is discouraged (24 steps).
 Proof modification of "frege50" is discouraged (31 steps).
 Proof modification of "frege51" is discouraged (33 steps).
+Proof modification of "frege52aid" is discouraged (23 steps).
+Proof modification of "frege52b" is discouraged (35 steps).
+Proof modification of "frege53a" is discouraged (28 steps).
 Proof modification of "frege53aid" is discouraged (20 steps).
 Proof modification of "frege53b" is discouraged (28 steps).
 Proof modification of "frege53c" is discouraged (28 steps).
+Proof modification of "frege54b" is discouraged (3 steps).
+Proof modification of "frege54cor0a" is discouraged (46 steps).
+Proof modification of "frege54cor1a" is discouraged (14 steps).
+Proof modification of "frege55a" is discouraged (21 steps).
 Proof modification of "frege55b" is discouraged (50 steps).
 Proof modification of "frege55c" is discouraged (67 steps).
+Proof modification of "frege55cor1a" is discouraged (22 steps).
+Proof modification of "frege55lem1a" is discouraged (16 steps).
+Proof modification of "frege55lem2a" is discouraged (22 steps).
 Proof modification of "frege55lem2b" is discouraged (23 steps).
 Proof modification of "frege55lem2c" is discouraged (26 steps).
+Proof modification of "frege56a" is discouraged (30 steps).
 Proof modification of "frege56aid" is discouraged (24 steps).
 Proof modification of "frege56b" is discouraged (30 steps).
 Proof modification of "frege56c" is discouraged (61 steps).
+Proof modification of "frege57a" is discouraged (29 steps).
 Proof modification of "frege57aid" is discouraged (19 steps).
 Proof modification of "frege57b" is discouraged (29 steps).
 Proof modification of "frege57c" is discouraged (31 steps).
+Proof modification of "frege58acor" is discouraged (31 steps).
 Proof modification of "frege58bcor" is discouraged (28 steps).
 Proof modification of "frege58bid" is discouraged (19 steps).
+Proof modification of "frege58c" is discouraged (49 steps).
+Proof modification of "frege59a" is discouraged (35 steps).
 Proof modification of "frege59b" is discouraged (32 steps).
 Proof modification of "frege59c" is discouraged (45 steps).
 Proof modification of "frege6" is discouraged (27 steps).
+Proof modification of "frege60a" is discouraged (59 steps).
 Proof modification of "frege60b" is discouraged (69 steps).
 Proof modification of "frege60c" is discouraged (66 steps).
+Proof modification of "frege61a" is discouraged (24 steps).
 Proof modification of "frege61b" is discouraged (24 steps).
 Proof modification of "frege61c" is discouraged (26 steps).
+Proof modification of "frege62a" is discouraged (33 steps).
 Proof modification of "frege62b" is discouraged (30 steps).
 Proof modification of "frege62c" is discouraged (43 steps).
+Proof modification of "frege63a" is discouraged (33 steps).
 Proof modification of "frege63b" is discouraged (30 steps).
 Proof modification of "frege63c" is discouraged (32 steps).
+Proof modification of "frege64a" is discouraged (41 steps).
 Proof modification of "frege64b" is discouraged (38 steps).
 Proof modification of "frege64c" is discouraged (40 steps).
+Proof modification of "frege65a" is discouraged (61 steps).
 Proof modification of "frege65b" is discouraged (54 steps).
 Proof modification of "frege65c" is discouraged (58 steps).
+Proof modification of "frege66a" is discouraged (43 steps).
 Proof modification of "frege66b" is discouraged (37 steps).
 Proof modification of "frege66c" is discouraged (39 steps).
+Proof modification of "frege67a" is discouraged (31 steps).
 Proof modification of "frege67b" is discouraged (31 steps).
 Proof modification of "frege67c" is discouraged (33 steps).
+Proof modification of "frege68a" is discouraged (26 steps).
 Proof modification of "frege68b" is discouraged (26 steps).
 Proof modification of "frege68c" is discouraged (28 steps).
 Proof modification of "frege7" is discouraged (30 steps).
