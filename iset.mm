@@ -75643,6 +75643,34 @@ $)
       KJFUJUKEFULUMUDUKUEAUKUFUGUHUI $.
   $}
 
+  ${
+    $d n A $.
+    $( There exists a positive integer whose reciprocal is less than a given
+       positive real.  Exercise 3 of [Apostol] p. 28.  (Contributed by NM,
+       8-Nov-2004.) $)
+    nnrecl $p |- ( ( A e. RR /\ 0 < A ) -> E. n e. NN ( 1 / n ) < A ) $=
+      ( cr wcel cc0 clt wbr wa c1 cdiv co cv cn wrex simpl gt0ap0 rerecclapd wb
+      jca adantr arch syl recgt0 nnre nngt0 ltrec syl2an recrecapd breq2d bitrd
+      cc recn rexbidva mpbid ) ACDZEAFGZHZIAJKZBLZFGZBMNZIUSJKZAFGZBMNUQURCDZVA
+      UQAUOUPOAPZQZURBUAUBUQUTVCBMUQUSMDZHUTVBIURJKZFGZVCUQVDEURFGZHUSCDZEUSFGZ
+      HUTVIRVGUQVDVJVFAUCSVGVKVLUSUDUSUESURUSUFUGUQVIVCRVGUQVHAVBFUQAUOAUKDUPAU
+      LTVEUHUITUJUMUN $.
+  $}
+
+  ${
+    $d x A $.  $d x k $.
+    $( A bounded real sequence ` A ( k ) ` is less than or equal to at least
+       one of its indices.  (Contributed by NM, 18-Jan-2008.) $)
+    bndndx $p |- ( E. x e. RR A. k e. NN ( A e. RR /\ A <_ x ) ->
+                  E. k e. NN A <_ k ) $=
+      ( cr wcel cv cle wbr wa cn wral wrex wi clt arch nnre lelttr ltle 3adant2
+      w3a syld exp5o com3l imp4b com23 sylan2 reximdva mpd r19.35-1 rexlimiv
+      syl ) BDEZBAFZGHZIZCJKZBCFZGHZCJLZADUMDEZUOURMZCJLZUPUSMUTUMUQNHZCJLVBUMC
+      OUTVCVACJUQJEUTUQDEZVCVAMUQPUTVDIUOVCURUTVDULUNVCURMZULUTVDUNVEMULUTVDUNV
+      CURULUTVDTUNVCIBUQNHZURBUMUQQULVDVFURMUTBUQRSUAUBUCUDUEUFUGUHUOURCJUIUKUJ
+      $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Nonnegative integers (as a subset of complex numbers)
