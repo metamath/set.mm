@@ -1,4 +1,4 @@
-$( iset.mm - Version of 30-Apr-2020
+$( iset.mm - Version of 2-May-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -66587,12 +66587,13 @@ $)
   ${
     $d A l n u w x y z $.
 
-    $( Archimedean axiom.  Definition 3.1(2) of [Geuvers], p. 9.  The
-       Archimedean property is more naturally stated once we have defined
-       ` NN ` .  Unless we find another way to state it, we'll just use the
-       right hand side of ~ dfnn2 in stating what we mean by "natural number"
-       in the context of this axiom.  (Contributed by Jim Kingdon,
-       22-Apr-2020.) $)
+    $( Archimedean axiom.  The Archimedean property is more naturally stated
+       once we have defined ` NN ` .  Unless we find another way to state it,
+       we'll just use the right hand side of ~ dfnn2 in stating what we mean by
+       "natural number" in the context of this axiom.
+
+       This construction-dependent theorem should not be referenced directly;
+       instead, use ~ ax-arch .  (Contributed by Jim Kingdon, 22-Apr-2020.) $)
     axarch $p |- ( A e. RR -> E. n e.
         |^| { x | ( 1 e. x /\ A. y e. x ( y + 1 ) e. x ) } A <RR n ) $=
       ( vz vl vw vu wcel cv c0r cop wceq cltrr wbr wa cab wrex cnr cnpi cr wral
@@ -66810,6 +66811,17 @@ $)
   ax-pre-mulext $a |- ( ( A e. RR /\ B e. RR /\ C e. RR )
       -> ( ( A x. C ) <RR ( B x. C ) -> ( A <RR B \/ B <RR A ) ) ) $.
   $( $j restatement 'ax-pre-mulext' of 'axpre-mulext'; $)
+
+  ${
+    $d A n x y $.
+
+    $( Archimedean axiom.  Definition 3.1(2) of [Geuvers], p. 9.  Axiom for
+       real and complex numbers, justified by theorem ~ axarch .  (Contributed
+       by Jim Kingdon, 2-May-2020.) $)
+    ax-arch $a |- ( A e. RR -> E. n e.
+        |^| { x | ( 1 e. x /\ A. y e. x ( y + 1 ) e. x ) } A <RR n ) $.
+    $( $j restatement 'ax-arch' of 'axarch'; $)
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
