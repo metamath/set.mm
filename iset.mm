@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-May-2020
+$( iset.mm - Version of 3-May-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -18912,6 +18912,15 @@ $)
   nnedc $p |- ( DECID A = B -> ( -. A =/= B <-> A = B ) ) $=
     ( wceq wdc wne wn wb df-ne a1i con2biidc bicomd ) ABCZDZLABEZFNLNLFGMABHIJK
     $.
+
+  ${
+    dcned.eq $e |- ( ph -> DECID A = B ) $.
+    $( Decidable equality implies decidable negated equality.  (Contributed by
+       Jim Kingdon, 3-May-2020.) $)
+    dcned $p |- ( ph -> DECID A =/= B ) $=
+      ( wceq wn wdc wne dcn syl df-ne dcbii sylibr ) ABCEZFZGZBCHZGANGPDNIJQOBC
+      KLM $.
+  $}
 
   $( No class is unequal to itself.  (Contributed by Stefan O'Rear,
      1-Jan-2015.)  (Proof rewritten by Jim Kingdon, 15-May-2018.) $)
