@@ -76643,6 +76643,19 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     necom anbi2i syl6bb ) ACDZBCDZEZABFGZABHGZABIZEZUFBAIZEUDUEUFABJGZEZUHUBAKD
     BKDUEUKLUCAMBMABNOUDUJUGUFABPQRUGUIUFABSTUA $.
 
+  $( A nonnegative integer is neither 0 nor 1 if and only if it is greater than
+     or equal to 2.  (Contributed by Alexander van der Vekens, 17-Jan-2018.) $)
+  nn0n0n1ge2b $p |- ( N e. NN0 -> ( ( N =/= 0 /\ N =/= 1 ) <-> 2 <_ N ) ) $=
+    ( wcel cc0 wne c1 wa c2 wbr wdc wn wi wceq zdceq sylancl dcned sylc syl clt
+    cz wb cn0 cle nn0n0n1ge2 3expib nn0z 0z 1z dcan ianordc nnedc orbi12d bitrd
+    wo 2pos breq1 mpbiri a1d 1lt2 impcom 2z zltnle adantr mpbid ex sylbid condc
+    jaoi impbid ) AUABZACDZAEDZFZGAUBHZVIVJVKVMAUCUDVIVLIZVLJZVMJZKVMVLKVIVJIZV
+    KIVNVIACVIASBZCSBACLZIZAUEZUFACMNZOZVIAEVIVRESBAELZIZWAUGAEMNZOVJVKUHPVIVOV
+    SWDUMZVPVIVOVJJZVKJZUMZWGVIVQVOWJTWCVJVKUIQVIWHVSWIWDVIVTWHVSTWBACUJQVIWEWI
+    WDTWFAEUJQUKULVIWGVPVIWGFAGRHZVPWGVIWKVSVIWKKWDVSWKVIVSWKCGRHUNACGRUOUPUQWD
+    WKVIWDWKEGRHURAEGRUOUPUQVGUSVIWKVPTZWGVIVRGSBWLWAUTAGVANVBVCVDVEVLVMVFPVH
+    $.
+
   $( A nonnegative integer less than ` 1 ` is ` 0 ` .  (Contributed by Paul
      Chapman, 22-Jun-2011.) $)
   nn0lt10b $p |- ( N e. NN0 -> ( N < 1 <-> N = 0 ) ) $=
