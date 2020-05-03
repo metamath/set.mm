@@ -66593,7 +66593,8 @@ $)
        "natural number" in the context of this axiom.
 
        This construction-dependent theorem should not be referenced directly;
-       instead, use ~ ax-arch .  (Contributed by Jim Kingdon, 22-Apr-2020.) $)
+       instead, use ~ ax-arch .  (Contributed by Jim Kingdon, 22-Apr-2020.)
+       (New usage is discouraged.) $)
     axarch $p |- ( A e. RR -> E. n e.
         |^| { x | ( 1 e. x /\ A. y e. x ( y + 1 ) e. x ) } A <RR n ) $=
       ( vz vl vw vu wcel cv c0r cop wceq cltrr wbr wa cab wrex cnr cnpi cr wral
@@ -66816,8 +66817,11 @@ $)
     $d A n x y $.
 
     $( Archimedean axiom.  Definition 3.1(2) of [Geuvers], p. 9.  Axiom for
-       real and complex numbers, justified by theorem ~ axarch .  (Contributed
-       by Jim Kingdon, 2-May-2020.) $)
+       real and complex numbers, justified by theorem ~ axarch .
+
+       This axiom should not be used directly; instead use ~ arch (which is the
+       same, but stated in terms of ` NN ` and ` < ` ).  (Contributed by Jim
+       Kingdon, 2-May-2020.)  (New usage is discouraged.) $)
     ax-arch $a |- ( A e. RR -> E. n e.
         |^| { x | ( 1 e. x /\ A. y e. x ( y + 1 ) e. x ) } A <RR n ) $.
     $( $j restatement 'ax-arch' of 'axarch'; $)
