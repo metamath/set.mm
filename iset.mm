@@ -75623,6 +75623,24 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        The Archimedean property
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d n x y A $.
+    $( Archimedean property of real numbers.  For any real number, there is an
+       integer greater than it.  Theorem I.29 of [Apostol] p. 26.  (Contributed
+       by NM, 21-Jan-1997.) $)
+    arch $p |- ( A e. RR -> E. n e. NN A < n ) $=
+      ( vx vy cr wcel cv clt wbr cn wrex cltrr c1 caddc co wral wa cint ax-arch
+      cab dfnn2 rexeqi sylibr wb nnre ltxrlt sylan2 rexbidva mpbird ) AEFZABGZH
+      IZBJKAUKLIZBJKZUJUMBMCGZFDGMNOUOFDUOPQCTRZKUNCDABSUMBJUPCDUAUBUCUJULUMBJU
+      KJFUJUKEFULUMUDUKUEAUKUFUGUHUI $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Nonnegative integers (as a subset of complex numbers)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
