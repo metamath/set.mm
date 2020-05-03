@@ -76584,6 +76584,17 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     ( cn0 wcel cz cle wbr cmin co wb nn0z znn0sub syl2an ) ACDAEDBEDABFGBAHICDJ
     BCDAKBKABLM $.
 
+  $( A nonnegative integer which is neither 0 nor 1 is greater than or equal to
+     2.  (Contributed by Alexander van der Vekens, 6-Dec-2017.) $)
+  nn0n0n1ge2 $p |- ( ( N e. NN0 /\ N =/= 0 /\ N =/= 1 ) -> 2 <_ N ) $=
+    ( cn0 wcel cc0 wne c1 w3a c2 cle wbr cmin co wceq caddc 3ad2ant1 cn elnnne0
+    wa nnm1nn0 syl nn0cn subsub4d oveq2i syl6req 3simpa sylibr subeq0ad necon3d
+    1cnd 1p1e2 biimpd imp 3adant2 sylanbrc eqeltrd wb 2nn0 jctl nn0sub mpbird )
+    ABCZADEZAFEZGZHAIJZAHKLZBCZVDVFAFKLZFKLZBVAVBVFVIMVCVAVIAFFNLZKLVFVAAFFAUAZ
+    VAUIZVLUBVJHAKUJUCUDOVDVHPCZVIBCVDVHBCZVHDEZVMVDAPCZVNVDVAVBRVPVAVBVCUEAQUF
+    ASTVAVCVOVBVAVCVOVAVHDAFVAVHDMAFMVAAFVKVLUGUKUHULUMVHQUNVHSTUOVDHBCZVARZVEV
+    GUPVAVBVRVCVAVQUQUROHAUSTUT $.
+
   $( Subtraction of nonnegative integers.  (Contributed by NM, 4-Sep-2005.) $)
   nn0sub2 $p |- ( ( M e. NN0 /\ N e. NN0 /\ M <_ N ) -> ( N - M ) e. NN0 ) $=
     ( cn0 wcel cle wbr cmin co nn0sub biimp3a ) ACDBCDABEFBAGHCDABIJ $.
