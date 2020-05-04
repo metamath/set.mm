@@ -76604,6 +76604,36 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     ASTVAVCVOVBVAVCVOVAVHDAFVAVHDMAFMVAAFVKVLUGUKUHULUMVHQUNVHSTUOVDHBCZVARZVEV
     GUPVAVBVRVCVAVQUQUROHAUSTUT $.
 
+  ${
+    $d x y z N $.
+    $( Membership in the set of integers.  Commonly used in constructions of
+       the integers as equivalence classes under subtraction of the positive
+       integers.  (Contributed by Mario Carneiro, 16-May-2014.) $)
+    elz2 $p |- ( N e. ZZ <-> E. x e. NN E. y e. NN N = ( x - y ) ) $=
+      ( cz wcel cr cn0 cneg wo wa cmin co wceq cn c1 1nn ax-1cn sylancr syl2an
+      cc wrex elznn0 caddc nn0p1nn adantl a1i recn adantr pncan sylancl rspceov
+      eqcomd syl3anc negsub simpr nnnn0addcl eqeltrrd nncan jaodan nnre resubcl
+      cv cle wbr nnz zletric syl2anr nnnn0 nn0sub nncn negsubdi2 eleq1d orbi12d
+      wb bitr4d mpbid jca eleq1 negeq anbi12d syl5ibrcom rexlimivv impbii bitri
+      ) CDECFEZCGEZCHZGEZIZJZCAVBZBVBZKLZMZBNUAANUAZCUBWJWOWEWFWOWHWEWFJZCOUCLZ
+      NEZONEZCWQOKLZMWOWFWRWECUDUEWSWPPUFWPWTCWPCTEZOTEZWTCMWEXAWFCUGZUHQCOUIUJ
+      ULABNNWQOCKUKUMWEWHJZWSOCKLZNECOXEKLZMWOWSXDPUFXDOWGUCLZXENXDXBXAXGXEMQWE
+      XAWHXCUHZOCUNRXDWSWHXGNEPWEWHUOOWGUPRUQXDXFCXDXBXAXFCMQXHOCURRULABNNOXECK
+      UKUMUSWNWJABNNWKNEZWLNEZJZWJWNWMFEZWMGEZWMHZGEZIZJXKXLXPXIWKFEWLFEXLXJWKU
+      TWLUTWKWLVASXKWLWKVCVDZWKWLVCVDZIZXPXJWLDEWKDEXSXIWLVEWKVEWLWKVFVGXKXQXMX
+      RXOXJWLGEZWKGEZXQXMVNXIWLVHZWKVHZWLWKVIVGXKXRWLWKKLZGEZXOXIYAXTXRYEVNXJYC
+      YBWKWLVISXKXNYDGXIWKTEWLTEXNYDMXJWKVJWLVJWKWLVKSVLVOVMVPVQWNWEXLWIXPCWMFV
+      RWNWFXMWHXOCWMGVRWNWGXNGCWMVSVLVMVTWAWBWCWD $.
+
+    $( Alternative definition of the integers, based on ~ elz2 .  (Contributed
+       by Mario Carneiro, 16-May-2014.) $)
+    dfz2 $p |- ZZ = ( - " ( NN X. NN ) ) $=
+      ( vx vy vz cz cmin cn cxp cima cv wcel co wceq wrex elz2 cc wfn wb nnsscn
+      wss mp2an wf subf ffn ax-mp xpss12 ovelimab bitr4i eqriv ) ADEFFGZHZAIZDJ
+      UKBICIEKLCFMBFMZUKUJJZBCUKNEOOGZPZUIUNSZUMULQUNOEUAUOUBUNOEUCUDFOSZUQUPRR
+      FOFOUETBCUNFFUKEUFTUGUH $.
+  $}
+
   $( Subtraction of nonnegative integers.  (Contributed by NM, 4-Sep-2005.) $)
   nn0sub2 $p |- ( ( M e. NN0 /\ N e. NN0 /\ M <_ N ) -> ( N - M ) e. NN0 ) $=
     ( cn0 wcel cle wbr cmin co nn0sub biimp3a ) ACDBCDABEFBAGHCDABIJ $.
