@@ -77218,6 +77218,19 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
   $}
 
   ${
+    $d x z A $.  $d y A $.
+    $( Any real number can be sandwiched between two integers.  Exercise 2 of
+       [Apostol] p. 28.  (Contributed by NM, 10-Nov-2004.) $)
+    btwnz $p |- ( A e. RR -> ( E. x e. ZZ x < A /\ E. y e. ZZ A < y ) ) $=
+      ( vz cr wcel cv clt wbr cz wrex cneg cn renegcl arch wa wb nnre ltnegcon1
+      syl ex syl5 pm5.32d nnnegz breq1 rspcev sylan syl6bi expd rexlimdv anim1i
+      mpd nnz reximi2 jca ) CEFZAGZCHIZAJKZCBGZHIZBJKZUPCLZDGZHIZDMKZUSUPVCEFVF
+      CNVCDOTUPVEUSDMUPVDMFZVEUSUPVGVEPVGVDLZCHIZPUSUPVGVEVIVGVDEFZUPVEVIQZVDRU
+      PVJVKCVDSUAUBUCVGVHJFVIUSVDUDURVIAVHJUQVHCHUEUFUGUHUIUJULUPVABMKVBCBOVAVA
+      BMJUTMFUTJFVAUTUMUKUNTUO $.
+  $}
+
+  ${
     nn0zd.1 $e |- ( ph -> A e. NN0 ) $.
     $( A positive integer is an integer.  (Contributed by Mario Carneiro,
        28-May-2016.) $)
