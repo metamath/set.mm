@@ -78857,6 +78857,22 @@ $)
       CGZJZDHZCEKZHBIZUIUKUPAUIUKUJJZUOHZUPUKUIUJEHZURDEUJLUSURUKUSURUQJZDHZUKU
       SUQEHURVASUJMUNVACUQEULUQNUMUTDULUQOPQTUSUTUJDUSUJUJRUAPUBUCUDBUQUOUEUFUG
       UH $.
+
+    $( If a set of reals is bounded below, it is bounded below by an integer.
+       (Contributed by Paul Chapman, 21-Mar-2011.) $)
+    lbzbi $p |- ( A C_ RR -> ( E. x e. RR A. y e. A x <_ y <->
+                               E. x e. ZZ A. y e. A x <_ y ) ) $=
+      ( vz cr wss cv cle wbr wral wrex cz wcel wi wa clt expdimp com23 imp ex
+      nfv nfre1 btwnz simpld w3a zre ltleletr syl3an1 expd 3expia syl5 ralrimiv
+      ssel2 ralim syl anasss expcom imdistand breq1 ralbidv rspcev syl6 ancomsd
+      weq rexlimdv mpdi rexlimd zssre ssrexv ax-mp impbid1 ) CEFZAGZBGZHIZBCJZA
+      EKZVPALKZVLVPVRAEVLAUAVPALUBVLVPVMEMZVRVLVPVSVRNVLVPOZVSDGZVMPIZDLKZVRVSW
+      CVMWAPIDLKDDVMUCUDVSVTWCVRNZVSVLVPWDVSVLOZVPOWBVRDLWEVPWALMZWBVRNZWEWFVPW
+      GWEWBWFVPOZVRWEWBWHVRNWEWBOZWHWFWAVNHIZBCJZOVRWIWFVPWKWEWBWFVPWKNZNWEWFWB
+      WLWFWEWBWLNZWFVSVLWMWFVSOZVLOZWBWLWOWBOZVOWJNZBCJWLWPWQBCWOWBVNCMZWQNWOWR
+      WBWQWNVLWRWBWQNZVLWROVNEMZWNWSCEVNUMWFVSWTWSWFVSWTUEWBVOWJWFWAEMVSWTWBVOO
+      WJNWAUFWAVMVNUGUHUIUJUKQRSULVOWJBCUNUOTUPUQRSURVPWKAWALADVDVOWJBCVMWAVNHU
+      SUTVAVBTRVCQVEUPUQVFTRVGLEFVRVQNVHVPALEVIVJVK $.
   $}
 
   $( A (nonnegative) integer between 1 and 3 must be 1, 2 or 3.  (Contributed
