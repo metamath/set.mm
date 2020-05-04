@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-May-2020
+$( iset.mm - Version of 3-May-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -18912,6 +18912,15 @@ $)
   nnedc $p |- ( DECID A = B -> ( -. A =/= B <-> A = B ) ) $=
     ( wceq wdc wne wn wb df-ne a1i con2biidc bicomd ) ABCZDZLABEZFNLNLFGMABHIJK
     $.
+
+  ${
+    dcned.eq $e |- ( ph -> DECID A = B ) $.
+    $( Decidable equality implies decidable negated equality.  (Contributed by
+       Jim Kingdon, 3-May-2020.) $)
+    dcned $p |- ( ph -> DECID A =/= B ) $=
+      ( wceq wn wdc wne dcn syl df-ne dcbii sylibr ) ABCEZFZGZBCHZGANGPDNIJQOBC
+      KLM $.
+  $}
 
   $( No class is unequal to itself.  (Contributed by Stefan O'Rear,
      1-Jan-2015.)  (Proof rewritten by Jim Kingdon, 15-May-2018.) $)
@@ -75643,6 +75652,34 @@ $)
       KJFUJUKEFULUMUDUKUEAUKUFUGUHUI $.
   $}
 
+  ${
+    $d n A $.
+    $( There exists a positive integer whose reciprocal is less than a given
+       positive real.  Exercise 3 of [Apostol] p. 28.  (Contributed by NM,
+       8-Nov-2004.) $)
+    nnrecl $p |- ( ( A e. RR /\ 0 < A ) -> E. n e. NN ( 1 / n ) < A ) $=
+      ( cr wcel cc0 clt wbr wa c1 cdiv co cv cn wrex simpl gt0ap0 rerecclapd wb
+      jca adantr arch syl recgt0 nnre nngt0 ltrec syl2an recrecapd breq2d bitrd
+      cc recn rexbidva mpbid ) ACDZEAFGZHZIAJKZBLZFGZBMNZIUSJKZAFGZBMNUQURCDZVA
+      UQAUOUPOAPZQZURBUAUBUQUTVCBMUQUSMDZHUTVBIURJKZFGZVCUQVDEURFGZHUSCDZEUSFGZ
+      HUTVIRVGUQVDVJVFAUCSVGVKVLUSUDUSUESURUSUFUGUQVIVCRVGUQVHAVBFUQAUOAUKDUPAU
+      LTVEUHUITUJUMUN $.
+  $}
+
+  ${
+    $d x A $.  $d x k $.
+    $( A bounded real sequence ` A ( k ) ` is less than or equal to at least
+       one of its indices.  (Contributed by NM, 18-Jan-2008.) $)
+    bndndx $p |- ( E. x e. RR A. k e. NN ( A e. RR /\ A <_ x ) ->
+                  E. k e. NN A <_ k ) $=
+      ( cr wcel cv cle wbr wa cn wral wrex wi clt arch nnre lelttr ltle 3adant2
+      w3a syld exp5o com3l imp4b com23 sylan2 reximdva mpd r19.35-1 rexlimiv
+      syl ) BDEZBAFZGHZIZCJKZBCFZGHZCJLZADUMDEZUOURMZCJLZUPUSMUTUMUQNHZCJLVBUMC
+      OUTVCVACJUQJEUTUQDEZVCVAMUQPUTVDIUOVCURUTVDULUNVCURMZULUTVDUNVEMULUTVDUNV
+      CURULUTVDTUNVCIBUQNHZURBUMUQQULVDVFURMUTBUQRSUAUBUCUDUEUFUGUHUOURCJUIUKUJ
+      $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Nonnegative integers (as a subset of complex numbers)
@@ -76556,6 +76593,47 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     ( cn0 wcel cz cle wbr cmin co wb nn0z znn0sub syl2an ) ACDAEDBEDABFGBAHICDJ
     BCDAKBKABLM $.
 
+  $( A nonnegative integer which is neither 0 nor 1 is greater than or equal to
+     2.  (Contributed by Alexander van der Vekens, 6-Dec-2017.) $)
+  nn0n0n1ge2 $p |- ( ( N e. NN0 /\ N =/= 0 /\ N =/= 1 ) -> 2 <_ N ) $=
+    ( cn0 wcel cc0 wne c1 w3a c2 cle wbr cmin co wceq caddc 3ad2ant1 cn elnnne0
+    wa nnm1nn0 syl nn0cn subsub4d oveq2i syl6req 3simpa sylibr subeq0ad necon3d
+    1cnd 1p1e2 biimpd imp 3adant2 sylanbrc eqeltrd wb 2nn0 jctl nn0sub mpbird )
+    ABCZADEZAFEZGZHAIJZAHKLZBCZVDVFAFKLZFKLZBVAVBVFVIMVCVAVIAFFNLZKLVFVAAFFAUAZ
+    VAUIZVLUBVJHAKUJUCUDOVDVHPCZVIBCVDVHBCZVHDEZVMVDAPCZVNVDVAVBRVPVAVBVCUEAQUF
+    ASTVAVCVOVBVAVCVOVAVHDAFVAVHDMAFMVAAFVKVLUGUKUHULUMVHQUNVHSTUOVDHBCZVARZVEV
+    GUPVAVBVRVCVAVQUQUROHAUSTUT $.
+
+  ${
+    $d x y z N $.
+    $( Membership in the set of integers.  Commonly used in constructions of
+       the integers as equivalence classes under subtraction of the positive
+       integers.  (Contributed by Mario Carneiro, 16-May-2014.) $)
+    elz2 $p |- ( N e. ZZ <-> E. x e. NN E. y e. NN N = ( x - y ) ) $=
+      ( cz wcel cr cn0 cneg wo wa cmin co wceq cn c1 1nn ax-1cn sylancr syl2an
+      cc wrex elznn0 caddc nn0p1nn adantl a1i recn adantr pncan sylancl rspceov
+      eqcomd syl3anc negsub simpr nnnn0addcl eqeltrrd nncan jaodan nnre resubcl
+      cv cle wbr nnz zletric syl2anr nnnn0 nn0sub nncn negsubdi2 eleq1d orbi12d
+      wb bitr4d mpbid jca eleq1 negeq anbi12d syl5ibrcom rexlimivv impbii bitri
+      ) CDECFEZCGEZCHZGEZIZJZCAVBZBVBZKLZMZBNUAANUAZCUBWJWOWEWFWOWHWEWFJZCOUCLZ
+      NEZONEZCWQOKLZMWOWFWRWECUDUEWSWPPUFWPWTCWPCTEZOTEZWTCMWEXAWFCUGZUHQCOUIUJ
+      ULABNNWQOCKUKUMWEWHJZWSOCKLZNECOXEKLZMWOWSXDPUFXDOWGUCLZXENXDXBXAXGXEMQWE
+      XAWHXCUHZOCUNRXDWSWHXGNEPWEWHUOOWGUPRUQXDXFCXDXBXAXFCMQXHOCURRULABNNOXECK
+      UKUMUSWNWJABNNWKNEZWLNEZJZWJWNWMFEZWMGEZWMHZGEZIZJXKXLXPXIWKFEWLFEXLXJWKU
+      TWLUTWKWLVASXKWLWKVCVDZWKWLVCVDZIZXPXJWLDEWKDEXSXIWLVEWKVEWLWKVFVGXKXQXMX
+      RXOXJWLGEZWKGEZXQXMVNXIWLVHZWKVHZWLWKVIVGXKXRWLWKKLZGEZXOXIYAXTXRYEVNXJYC
+      YBWKWLVISXKXNYDGXIWKTEWLTEXNYDMXJWKVJWLVJWKWLVKSVLVOVMVPVQWNWEXLWIXPCWMFV
+      RWNWFXMWHXOCWMGVRWNWGXNGCWMVSVLVMVTWAWBWCWD $.
+
+    $( Alternative definition of the integers, based on ~ elz2 .  (Contributed
+       by Mario Carneiro, 16-May-2014.) $)
+    dfz2 $p |- ZZ = ( - " ( NN X. NN ) ) $=
+      ( vx vy vz cz cmin cn cxp cima cv wcel co wceq wrex elz2 cc wfn wb nnsscn
+      wss mp2an wf subf ffn ax-mp xpss12 ovelimab bitr4i eqriv ) ADEFFGZHZAIZDJ
+      UKBICIEKLCFMBFMZUKUJJZBCUKNEOOGZPZUIUNSZUMULQUNOEUAUOUBUNOEUCUDFOSZUQUPRR
+      FOFOUETBCUNFFUKEUFTUGUH $.
+  $}
+
   $( Subtraction of nonnegative integers.  (Contributed by NM, 4-Sep-2005.) $)
   nn0sub2 $p |- ( ( M e. NN0 /\ N e. NN0 /\ M <_ N ) -> ( N - M ) e. NN0 ) $=
     ( cn0 wcel cle wbr cmin co nn0sub biimp3a ) ACDBCDABEFBAGHCDABIJ $.
@@ -76594,6 +76672,19 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     ( cz wcel wa clt wbr cle wne cap cr wb zre ltleap syl2an zapne anbi2d bitrd
     necom anbi2i syl6bb ) ACDZBCDZEZABFGZABHGZABIZEZUFBAIZEUDUEUFABJGZEZUHUBAKD
     BKDUEUKLUCAMBMABNOUDUJUGUFABPQRUGUIUFABSTUA $.
+
+  $( A nonnegative integer is neither 0 nor 1 if and only if it is greater than
+     or equal to 2.  (Contributed by Alexander van der Vekens, 17-Jan-2018.) $)
+  nn0n0n1ge2b $p |- ( N e. NN0 -> ( ( N =/= 0 /\ N =/= 1 ) <-> 2 <_ N ) ) $=
+    ( wcel cc0 wne c1 wa c2 wbr wdc wn wi wceq zdceq sylancl dcned sylc syl clt
+    cz wb cn0 cle nn0n0n1ge2 3expib nn0z 0z 1z dcan ianordc nnedc orbi12d bitrd
+    wo 2pos breq1 mpbiri a1d 1lt2 impcom 2z zltnle adantr mpbid ex sylbid condc
+    jaoi impbid ) AUABZACDZAEDZFZGAUBHZVIVJVKVMAUCUDVIVLIZVLJZVMJZKVMVLKVIVJIZV
+    KIVNVIACVIASBZCSBACLZIZAUEZUFACMNZOZVIAEVIVRESBAELZIZWAUGAEMNZOVJVKUHPVIVOV
+    SWDUMZVPVIVOVJJZVKJZUMZWGVIVQVOWJTWCVJVKUIQVIWHVSWIWDVIVTWHVSTWBACUJQVIWEWI
+    WDTWFAEUJQUKULVIWGVPVIWGFAGRHZVPWGVIWKVSVIWKKWDVSWKVIVSWKCGRHUNACGRUOUPUQWD
+    WKVIWDWKEGRHURAEGRUOUPUQVGUSVIWKVPTZWGVIVRGSBWLWAUTAGVANVBVCVDVEVLVMVFPVH
+    $.
 
   $( A nonnegative integer less than ` 1 ` is ` 0 ` .  (Contributed by Paul
      Chapman, 22-Jun-2011.) $)
@@ -77124,6 +77215,19 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
       GZVIVFGWHCDWHGCWHXEWRWDVJWPWQWRWSWRHIWDXAXBXCXBPXFVIUOVFRVKVLVMVNWCAHSWTS
       TZWCAXGDAIWTUDZSWTUIXGWDXHVBZUNZADXJXDADVOXJWFWTXIXGWFXHUDWTWDXHVTXGWTWTU
       PUQVPVQNUOVRVSVFVNAFHJSOWAWB $.
+  $}
+
+  ${
+    $d x z A $.  $d y A $.
+    $( Any real number can be sandwiched between two integers.  Exercise 2 of
+       [Apostol] p. 28.  (Contributed by NM, 10-Nov-2004.) $)
+    btwnz $p |- ( A e. RR -> ( E. x e. ZZ x < A /\ E. y e. ZZ A < y ) ) $=
+      ( vz cr wcel cv clt wbr cz wrex cneg cn renegcl arch wa wb nnre ltnegcon1
+      syl ex syl5 pm5.32d nnnegz breq1 rspcev sylan syl6bi expd rexlimdv anim1i
+      mpd nnz reximi2 jca ) CEFZAGZCHIZAJKZCBGZHIZBJKZUPCLZDGZHIZDMKZUSUPVCEFVF
+      CNVCDOTUPVEUSDMUPVDMFZVEUSUPVGVEPVGVDLZCHIZPUSUPVGVEVIVGVDEFZUPVEVIQZVDRU
+      PVJVKCVDSUAUBUCVGVHJFVIUSVDUDURVIAVHJUQVHCHUEUFUGUHUIUJULUPVABMKVBCBOVAVA
+      BMJUTMFUTJFVAUTUMUKUNTUO $.
   $}
 
   ${
@@ -78753,6 +78857,22 @@ $)
       CGZJZDHZCEKZHBIZUIUKUPAUIUKUJJZUOHZUPUKUIUJEHZURDEUJLUSURUKUSURUQJZDHZUKU
       SUQEHURVASUJMUNVACUQEULUQNUMUTDULUQOPQTUSUTUJDUSUJUJRUAPUBUCUDBUQUOUEUFUG
       UH $.
+
+    $( If a set of reals is bounded below, it is bounded below by an integer.
+       (Contributed by Paul Chapman, 21-Mar-2011.) $)
+    lbzbi $p |- ( A C_ RR -> ( E. x e. RR A. y e. A x <_ y <->
+                               E. x e. ZZ A. y e. A x <_ y ) ) $=
+      ( vz cr wss cv cle wbr wral wrex cz wcel wi wa clt expdimp com23 imp ex
+      nfv nfre1 btwnz simpld w3a zre ltleletr syl3an1 expd 3expia syl5 ralrimiv
+      ssel2 ralim syl anasss expcom imdistand breq1 ralbidv rspcev syl6 ancomsd
+      weq rexlimdv mpdi rexlimd zssre ssrexv ax-mp impbid1 ) CEFZAGZBGZHIZBCJZA
+      EKZVPALKZVLVPVRAEVLAUAVPALUBVLVPVMEMZVRVLVPVSVRNVLVPOZVSDGZVMPIZDLKZVRVSW
+      CVMWAPIDLKDDVMUCUDVSVTWCVRNZVSVLVPWDVSVLOZVPOWBVRDLWEVPWALMZWBVRNZWEWFVPW
+      GWEWBWFVPOZVRWEWBWHVRNWEWBOZWHWFWAVNHIZBCJZOVRWIWFVPWKWEWBWFVPWKNZNWEWFWB
+      WLWFWEWBWLNZWFVSVLWMWFVSOZVLOZWBWLWOWBOZVOWJNZBCJWLWPWQBCWOWBVNCMZWQNWOWR
+      WBWQWNVLWRWBWQNZVLWROVNEMZWNWSCEVNUMWFVSWTWSWFVSWTUEWBVOWJWFWAEMVSWTWBVOO
+      WJNWAUFWAVMVNUGUHUIUJUKQRSULVOWJBCUNUOTUPUQRSURVPWKAWALADVDVOWJBCVMWAVNHU
+      SUTVAVBTRVCQVEUPUQVFTRVGLEFVRVQNVHVPALEVIVJVK $.
   $}
 
   $( A (nonnegative) integer between 1 and 3 must be 1, 2 or 3.  (Contributed

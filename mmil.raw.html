@@ -930,7 +930,7 @@ Consider the possibility of giving up. Some things just won't have
 intuitionistic proofs. The more it looks like excluded middle or other
 non-intuitionistic statements, the more likely you are dealing with one of
 these. But it can be hard to have good intuition about this. In some cases it
-may be possible to ask "can I use this statement to prove 'ph or not ph' for an
+may be possible to ask "can I use this statement to prove ` ph \/ -. ph ` for an
 arbitrary proposition" (see ~ ordtriexmid for example ), but this is not always
 an easy technique to apply.
 </LI>
@@ -1056,6 +1056,11 @@ pm2.61iii , pm2.61ian , pm2.61dan , pm2.61ddan , pm2.61dda , pm2.61ine , pm2.61n
 pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TD>
 <TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>impcon4bid, con4bid, notbi, con1bii, con4bii, con2bii</TD>
+<TD>~ con3 , ~ condc</TD>
 </TR>
 
 <TR>
@@ -1191,9 +1196,7 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 
 <TR>
 <TD>nne</TD>
-<TD><I>none</I></TD>
-<TD>The reverse direction could be proved; the forward direction
-is double negation elimination.</TD>
+<TD>~ nner , ~ nnedc</TD>
 </TR>
 
 <TR>
@@ -1271,6 +1274,11 @@ is double negation elimination.</TD>
 <TR>
 <TD>r19.30</TD>
 <TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>r19.35</TD>
+<TD>~ r19.35-1</TD>
 </TR>
 
 <TR>
@@ -3359,17 +3367,9 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-<TD>nnunb , nnrecl , bndndx</TD>
+<TD>nnunb</TD>
 <TD><I>none</I></TD>
-<TD>Now that we have ~ arch , these are mostly likely
-provable.</TD>
-</TR>
-
-<TR>
-<TD>nn0n0n1ge2 , nn0n0n1ge2b</TD>
-<TD><I>none yet</I></TD>
-<TD>These should be provable, and might be easy now that we have
-~ztri3or .</TD>
+<TD>Presumably provable from ~ arch but unused in set.mm.</TD>
 </TR>
 
 <TR>
@@ -3381,22 +3381,8 @@ a fintely supported function.</TD>
 </TR>
 
 <TR>
-<TD>elz2 , dfz2</TD>
-<TD><I>none yet</I></TD>
-<TD>Should be provable, but might need to wait until we have
-proved trichotomy of integers.</TD>
-</TR>
-
-<TR>
 <TD>suprzcl</TD>
 <TD><I>none</I></TD>
-</TR>
-
-<TR>
-<TD>btwnz</TD>
-<TD><I>none</I></TD>
-<TD>Now that we have ~ arch , this is mostly likely
-provable.</TD>
 </TR>
 
 <TR>
@@ -3439,12 +3425,6 @@ in iset.mm</TD>
 <TD><I>none</I></TD>
 <TD>We do not yet have a supremum notation, or most supremum theorems,
 in iset.mm</TD>
-</TR>
-
-<TR>
-<TD>lbzbi</TD>
-<TD><I>none</I></TD>
-<TD>Once we have btwnz in iset.mm, the set.mm proof should work.</TD>
 </TR>
 
 <TR>
@@ -3499,8 +3479,9 @@ maxle , lemin , maxlt , ltmin , max0sub , ifle</TD>
 <TR>
 <TD>qbtwnre , qbtwnxr</TD>
 <TD><I>none yet</I></TD>
-<TD>Now that we have ~ arch , these are mostly likely
-provable.</TD>
+<TD>These should be provable, but the set.mm proof relies on zbtwnre .
+Perhaps something like "there is an integer between ` A - 1 ` and
+` A + 1 ` (where ` A ` is real)" would be provable and helpful.</TD>
 </TR>
 
 <TR>
