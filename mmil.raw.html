@@ -3479,9 +3479,12 @@ maxle , lemin , maxlt , ltmin , max0sub , ifle</TD>
 <TR>
 <TD>qbtwnre , qbtwnxr</TD>
 <TD><I>none yet</I></TD>
-<TD>These should be provable, but the set.mm proof relies on zbtwnre .
-Perhaps something like "there is an integer between ` A - 1 ` and
-` A + 1 ` (where ` A ` is real)" would be provable and helpful.</TD>
+<TD>These should be provable, but the set.mm proof relies on zbtwnre
+(which in turn is proved using the least upper bound property).
+The most straightforward solution is to use a construction-dependent
+proof in terms of ~ df-iltp (the only complicated part of which is
+connecting ` Q. ` and ` QQ ` ). This is the solution adopted by
+Theorem 11.2.6 of [HoTT].</TD>
 </TR>
 
 <TR>
