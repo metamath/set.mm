@@ -83839,6 +83839,28 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Miscellaneous theorems about integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d y z A $.  $d w z B $.  $d v w x y z C $.  $d v w y z G $.
+    frec2uz.1 $e |- C e. ZZ $.
+    frec2uz.2 $e |- G = frec ( ( x e. ZZ |-> ( x + 1 ) ) , C ) $.
+    $( The mapping ` G ` is a one-to-one mapping from ` _om ` onto upper
+       integers that will be used to construct a recursive definition
+       generator.  Ordinal natural number 0 maps to complex number ` C `
+       (normally 0 for the upper integers ` NN0 ` or 1 for the upper integers
+       ` NN ` ), 1 maps to ` C ` + 1, etc.  This theorem shows the value of
+       ` G ` at ordinal natural number zero.  (Contributed by Jim Kingdon,
+       6-May-2020.) $)
+    frec2uz0i $p |- ( G ` (/) ) = C $=
+      ( c0 cfv cz cv c1 caddc co cmpt cfrec fveq1i wcel wceq frec0g ax-mp eqtri
+      ) FCGFAHAIJKLMZBNZGZBFCUBEOBHPUCBQDBUAHRST $.
+  $}
+
+$(
 ###############################################################################
                GUIDES AND MISCELLANEA
 ###############################################################################
