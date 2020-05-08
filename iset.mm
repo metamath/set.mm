@@ -55381,6 +55381,25 @@ $)
   $}
 
   ${
+    $d A g m x $.  $d F g m x $.
+    $( The initial value resulting from finite recursive definition
+       generation.  (Contributed by Jim Kingdon, 7-May-2020.) $)
+    frec0g $p |- ( A e. V -> ( frec ( F , A ) ` (/) ) = A ) $=
+      ( vg vm vx wcel c0 cfv cvv cv cdm wceq wa com wrex wo cab dm0 ax-mp cfrec
+      csuc cmpt biantrur wn wne vex nsuceq0g nesymi eqeq1i mtbir intnanr biorfi
+      a1i nrex orcom 3bitri abbii abid2 eqtr3i elex syl5eqel dmeq eqeq1d fveq2d
+      0ex fveq1 eleq2d anbi12d rexbidv anbi1d orbi12d abbidv eqid fvmptg syl6eq
+      mpan syl eqeltrd crecs cres df-frec fveq1i peano1 fvres eqtri tfr0 syl5eq
+      eqtrd ) ACGZHBAUAZIZHDJDKZLZEKZUBZMZFKZWOWMIZBIZGZNZEOPZWNHMZWRAGZNZQZFRZ
+      UCZIZAWJXJJGZWLXJMWJXJAJWJHLZWPMZWRWOHIZBIZGZNZEOPZXLHMZXENZQZFRZJGZXJAMW
+      JYBAJXEFRYBAXEYAFXEXTXTXRQYAXSXESUDXRXTXQEOXQUEWOOGXMXPXMHWPMWPHWOJGWPHUF
+      EUGWOJUHTUIXLHWPSUJUKULUNUOUMXTXRUPUQURFAUSUTZACVAZVBYCXJYBAHJGYCXJYBMVFD
+      HXHYBJJXIWMHMZXGYAFYFXCXRXFXTYFXBXQEOYFWQXMXAXPYFWNXLWPWMHVCZVDYFWTXOWRYF
+      WSXNBWOWMHVGVEVHVIVJYFXDXSXEYFWNXLHYGVDVKVLVMXIVNVOVQYDVPVRZYEVSXKWLHXIVT
+      ZIZXJWLHYIOWAZIZYJHWKYKFDEBAWBWCHOGYLYJMWDHOYIWETWFYIXIJYIVNWGWHVRYHWI $.
+  $}
+
+  ${
     $d A x $.  $d F x $.  $d S x $.  $d m ph $.  $d m x $.
     frecabex.1 $e |- ( ph -> S e. V ) $.
     frecabex.2 $e |- ( ph -> F Fn _V ) $.
@@ -55432,25 +55451,6 @@ $)
       LZNOFLZVGVEPBPJKEQUBVFUCOVHAJKUDFUAUEZUFZRQUGZSZVKIZBAUHZQIZVDVJRIVMVDGVJ
       VIVJTFGADEBVICVITUIUJRQVJUKULVLVNOVKQOZVMVOUMVLVJQSVNVKQVJQRUNVPUOQRUPUQZ
       URFDEBAUSUTVQVKQVLVNVAVBVC $.
-
-    $( The initial value resulting from finite recursive definition
-       generation.  (Contributed by Jim Kingdon, 11-Aug-2019.) $)
-    frec0g $p |- ( ( F Fn _V /\ A e. V ) -> ( frec ( F , A ) ` (/) ) = A ) $=
-      ( vm vx vg vy cvv wcel wa c0 cdm cv wceq cfv com wrex wo cab eqeq1d cfrec
-      wfn csuc dm0 biantrur wne vex nsuceq0g ax-mp eqcom eqeq2i nemtbir intnanr
-      wn bitr3i a1i nrex biorfi orcom 3bitri abbii eqtr3i eleq1i biimpri adantl
-      abid2 cmpt dmeq fveq1 fveq2d eleq2d anbi12d rexbidv anbi1d orbi12d abbidv
-      0ex eqid fvmptg mpan crecs cres df-frec fveq1i peano1 fvres eqtri frectfr
-      con0 0elon tfri2d mpan2 syl5eq res0 fveq2i syl6eq syl5ibr syl6ib mpd ) BH
-      UBZACIZJZKLZDMZUCZNZEMZXDKOZBOZIZJZDPQZXCKNZXGAIZJZRZESZCIZKBAUAZOZANZXAX
-      RWTXRXAXQACXNESXQAXNXPEXNXOXOXLRXPXMXNUDUEXLXOXKDPXKUNXDPIXFXJXFXEKXDHIXE
-      KUFDUGXDHUHUIXFXEXCNXEKNXEXCUJXCKXEUDUKUOULUMUPUQURXOXLUSUTVAEAVFVBZVCVDV
-      EXBXRXTXQNZYAXRYCXBKFHFMZLZXENZXGXDYDOZBOZIZJZDPQZYEKNZXNJZRZESZVGZOZXQNZ
-      KHIXRYRVQFKYOXQHCYPYDKNZYNXPEYSYKXLYMXOYSYJXKDPYSYFXFYIXJYSYEXCXEYDKVHZTY
-      SYHXIXGYSYGXHBXDYDKVIVJVKVLVMYSYLXMXNYSYEXCKYTTVNVOVPYPVRZVSVTXBXTYQXQXBX
-      TYPWAZKWBZYPOZYQXBXTKUUBOZUUDXTKUUBPWBZOZUUEKXSUUFEFDBAWCWDKPIUUGUUENWEKP
-      UUBWFUIWGXBKWIIUUEUUDNWJXBGKUUBYPUUBVREGAFDBYPCUUAWHWKWLWMUUCKYPUUBWNWOWP
-      TWQXQAXTYBUKWRWS $.
 
     ${
       $d A f g m u v x y z $.  $d B g m u x $.  $d F f g m u v x y z $.
@@ -55540,19 +55540,18 @@ $)
        results as ~ df-irdg restricted to ` _om ` .  (Contributed by Jim
        Kingdon, 29-Aug-2019.) $)
     frecrdg $p |- ( ph -> frec ( F , A ) = ( rec ( F , A ) |` _om ) ) $=
-      ( com wfn wcel syl2anc con0 cfv wceq c0 fveq2 eqeq12d fvres adantr vy cvv
-      cfrec crdg cres frecfnom rdgifnon omsson fnssres sylancl cv frec0g peano1
-      wss csuc ax-mp rdg0g syl syl5eq eqtr4d wi simpr ad2antlr eqtrd fveq2d jca
+      ( com wfn wcel con0 cfv wceq c0 fveq2 eqeq12d syl fvres adantr cfrec crdg
+      cres cvv frecfnom syl2anc wss rdgifnon omsson fnssres sylancl csuc frec0g
+      vy cv peano1 ax-mp rdg0g syl5eq eqtr4d wi simpr ad2antlr eqtrd fveq2d jca
       wa frecsuc 3expa sylan wal rdgisucinc 3eqtr4d peano2 expcom finds2 impcom
-      nnon ex eqfnfvd ) ABIDCUCZDCUDZIUEZADUBJZCEKZWAIJFGCDEUFLAWBMJZIMUNWCIJAW
-      DWEWFFGCDEUGLUHMIWBUIUJBUKZIKAWGWANZWGWCNZOZWJPWANZPWCNZOUAUKZWANZWMWCNZO
-      ZWMUOZWANZWQWCNZOZABUAWGPOWHWKWIWLWGPWAQWGPWCQRWGWMOWHWNWIWOWGWMWAQWGWMWC
-      QRWGWQOWHWRWIWSWGWQWAQWGWQWCQRAWKCWLAWDWEWKCOFGCDEULLAWLPWBNZCPIKWLXAOUMP
-      IWBSUPAWEXACOGCEDUQURUSUTAWMIKZWPWTVAAXBVGZWPWTXCWPVGZWRWQWBNZWSXDWNDNZWM
-      WBNZDNZWRXEXDWNXGDXDWNWOXGXCWPVBXBWOXGOAWPWMIWBSVCVDVEXCWRXFOZWPAWDWEVGXB
-      XIAWDWEFGVFWDWEXBXICWMDEVHVIVJTXCXEXHOWPXCBCWMDEAWDXBFTAWEXBGTXCXBWMMKAXB
-      VBWMVRURAWGWGDNUNBVKXBHTVLTVMXBWSXEOZAWPXBWQIKXJWMVNWQIWBSURVCUTVSVOVPVQV
-      T $.
+      nnon ex eqfnfvd ) ABIDCUAZDCUBZIUCZADUDJZCEKZWAIJFGCDEUEUFAWBLJZILUGWCIJA
+      WDWEWFFGCDEUHUFUILIWBUJUKBUOZIKAWGWAMZWGWCMZNZWJOWAMZOWCMZNUNUOZWAMZWMWCM
+      ZNZWMULZWAMZWQWCMZNZABUNWGONWHWKWIWLWGOWAPWGOWCPQWGWMNWHWNWIWOWGWMWAPWGWM
+      WCPQWGWQNWHWRWIWSWGWQWAPWGWQWCPQAWKCWLAWEWKCNGCDEUMRAWLOWBMZCOIKWLXANUPOI
+      WBSUQAWEXACNGCEDURRUSUTAWMIKZWPWTVAAXBVGZWPWTXCWPVGZWRWQWBMZWSXDWNDMZWMWB
+      MZDMZWRXEXDWNXGDXDWNWOXGXCWPVBXBWOXGNAWPWMIWBSVCVDVEXCWRXFNZWPAWDWEVGXBXI
+      AWDWEFGVFWDWEXBXICWMDEVHVIVJTXCXEXHNWPXCBCWMDEAWDXBFTAWEXBGTXCXBWMLKAXBVB
+      WMVRRAWGWGDMUGBVKXBHTVLTVMXBWSXENZAWPXBWQIKXJWMVNWQIWBSRVCUTVSVOVPVQVT $.
   $}
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
