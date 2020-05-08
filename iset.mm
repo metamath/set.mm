@@ -54990,10 +54990,8 @@ $)
        numbers.  (Contributed by Jim Kingdon, 4-May-2019.)  (Revised by Mario
        Carneiro, 24-May-2019.) $)
     tfri1 $p |- F Fn On $=
-      ( vy vz vw vg vu vf con0 wfn wceq cv cfv cres wral wa wrex crecs wfun cdm
-      cab eqid tfrlem7 tfrlem3 tfrlemi14 df-fn mpbir2an fneq1i mpbir ) BLMCUAZL
-      MZUNUMUBUMUCLNFGHOZFOZMGOZUOPUOUQQCPNGUPRSFLTHUDZHCURUEUFAFIOZUQMJOZUSPUS
-      UTQCPNJUQRSGLTIUDZKCGJAFVAIKCVAUEUGEUHUMLUIUJLBUMDUKUL $.
+      ( con0 wfn wtru wfun cv cfv cvv wcel wa wal ax-gen a1i tfri1d trud ) BFGH
+      ABCDCIAJCKLMNZAOHTAEPQRS $.
 
     $( Principle of Transfinite Recursion, part 2 of 3.  Theorem 7.41(2) of
        [TakeutiZaring] p. 47, with an additional condition on the recursion
