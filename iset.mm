@@ -54870,30 +54870,6 @@ $)
   $}
 
   ${
-    $d f g h u v w x y z A $.  $d f g h u v w x y z F $.  $d z C $.
-    tfrlemi14.1 $e |- A = { f | E. x e. On ( f Fn x /\
-                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
-    tfrlemi14.2 $e |- ( Fun F /\ ( F ` x ) e. _V ) $.
-    $( The domain of ` recs ` is all ordinals (lemma for transfinite
-       recursion).  (Contributed by Jim Kingdon, 4-May-2019.)  (Proof shortened
-       by Mario Carneiro, 24-May-2019.) $)
-    tfrlemi14 $p |- dom recs ( F ) = On $=
-      ( vh vz vg vu vw cdm con0 cv wcel cfv wceq wa wtru crecs word wss tfrlem8
-      ordsson ax-mp ciun wrex wfn cres wral wex fneq2 raleq anbi12d exbidv wfun
-      tru cvv wal ax-gen a1i tfrlemi1 mpan vtoclga cop csn cun simpl simprl vex
-      rspcev sylibr tfrlemisucaccv tfrlem3-2 simpri opex snid elun2 mp1i opeldm
-      tfrlem3a syl dmeq eleq2d syl2anc exlimddv eliun ssriv cuni recsfval dmeqi
-      dmuni eqtri sseqtr4i eqssi ) EUAZMZNWRUBWRNUCABCDEFUDWRUEUFNHCHOZMZUGZWRI
-      NXAIOZNPZXBWTPZHCUHZXBXAPXCJOZXBUIZKOZXFQXFXHUJEQRZKXBUKZSZXEJXFLOZUIZXIK
-      XLUKZSZJULZXKJULLXBNXLXBRZXOXKJXQXMXGXNXJXLXBXFUMXIKXLXBUNUOZUPTXLNPXPURT
-      ABKCXLDJEFEUQZAOEQUSPSZAUTZTXTAGVAZVBVCVDVEXCXKSZXFXBXFEQZVFZVGZVHZCPXBYG
-      MZPZXEYCABICDJEFYAYCYBVBXCXKVIXCXGXJVJYCXOLNUHXFCPXOXKLXBNXRVLABLKCDEXFFJ
-      VKWBVMVNYCYEYGPZYIYEYFPYJYCYEXBYDIVKZXSYDUSPAJEGVOVPZVQVRYEYFXFVSVTXBYDYG
-      YKYLWAWCXDYIHYGCWSYGRWTYHXBWSYGWDWEVLWFWGHXBCWTWHVMWIWRCWJZMXAWQYMABCDEFW
-      KWLHCWMWNWOWP $.
-  $}
-
-  ${
     $d e f g h u v t w x y z A $.  $d e f g h u v t w x y z F $.  $d z C $.
     $d u v z ph $.
     tfrexlem.1 $e |- A = { f | E. x e. On ( f Fn x /\
