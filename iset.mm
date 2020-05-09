@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-May-2020
+$( iset.mm - Version of 8-May-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54668,6 +54668,25 @@ $)
       tfrlem9 dmeqi eleq2s fveq1i reseq1i fveq2i 3eqtr4g ) ABHZIACJZKZUJALZCKZA
       BKBALZCKUKUMMAUJHUIEFGNZENZOFNZUOKUOUQLCKMFUPPQERSGTZAGCURUAUBBUJDUCUDABU
       JDUEUNULCBUJADUFUGUH $.
+
+    $( Transfinite recursion at the empty set.  (Contributed by Jim Kingdon,
+       8-May-2020.) $)
+    tfr0 $p |- ( ( G ` (/) ) e. V -> ( F ` (/) ) = ( G ` (/) ) ) $=
+      ( vx vy vf c0 cfv wcel wceq cv wfn cres wral wa con0 cvv 0ex mpan cop csn
+      wrex opexg snidg syl fnsng fvsng res0 fveq2i syl6eqr fveq2 reseq2 eqeq12d
+      fveq2d ralsn sylibr csuc 0elon onsuci eqeltrri fneq2 raleq anbi12d rspcev
+      suc0 syl2anc wex wi snexg eleq2 fneq1 fveq1 reseq1 ralbidv rexbidv spcegv
+      3syl crecs cab eleq2i df-recs eluniab 3bitri syl6ibr mp2and opeldmg tfr2a
+      cuni cdm syl6 eqeq2i syl6ib mpd ) HBIZCJZHWOUAZAJZHAIZWOKZWPWQWQUBZJZXAEL
+      ZMZFLZXAIZXAXENZBIZKZFXCOZPZEQUCZWRWPWQRJZXBHRJZWPXMSHWORCUDTZWQRUEUFWPXA
+      HUBZMZXIFXPOZXLXNWPXQSHWORCUGTWPHXAIZXAHNZBIZKZXRWPXSWOYAXNWPXSWOKSHWORCU
+      HTXTHBXAUIUJUKXIYBFHSXEHKZXFXSXHYAXEHXAULYCXGXTBXEHXAUMUOUNUPUQXPQJXQXRPZ
+      XLHURXPQVFHUSUTVAXKYDEXPQXCXPKXDXQXJXRXCXPXAVBXIFXCXPVCVDVETVGWPXBXLPZWQG
+      LZJZYFXCMZXEYFIZYFXENZBIZKZFXCOZPZEQUCZPZGVHZWRWPXMXARJYEYQVIXOWQRVJYPYEG
+      XARYFXAKZYGXBYOXLYFXAWQVKYRYNXKEQYRYHXDYMXJXCYFXAVLYRYLXIFXCYRYIXFYKXHXEY
+      FXAVMYRYJXGBYFXAXEVNUOUNVOVDVPVDVQVRWRWQBVSZJWQYOGVTWIZJYQAYSWQDWAYSYTWQE
+      FGBWBWAYOGWQWCWDWEWFWPWRWSAHNZBIZKZWTWPWRHAWJJZUUCXNWPWRUUDVISHWOARCWGTHA
+      BDWHWKUUBWOWSUUAHBAUIUJWLWMWN $.
   $}
 
   ${
