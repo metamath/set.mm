@@ -55314,31 +55314,34 @@ $)
   $}
 
   ${
+    $d x y f g v w F $.  $d x y f g v w A $.  $d f x y B $.
+    ${
+      rdg.1 $e |- A e. _V $.
+      $( The initial value of the recursive definition generator.  (Contributed
+         by NM, 23-Apr-1995.)  (Revised by Mario Carneiro, 14-Nov-2014.) $)
+      rdg0 $p |- ( rec ( F , A ) ` (/) ) = A $=
+        ( vg vx c0 crdg cfv cvv cdm ciun cun cmpt wcel wceq ax-mp eqtri eqeltri
+        cv 0ex dmeq fveq1 fveq2d iuneq12d uneq2d eqid iuneq1 0iun fvmpt df-irdg
+        dm0 unex tfr0 uneq2i un0 ) FBAGZHZFDIAEDSZJZESZURHZBHZKZLZMZHZAVFINUQVF
+        OVFAEFJZUTFHZBHZKZLZIFINVFVKOTDFVDVKIVEURFOZVCVJAVLEUSVGVBVIURFUAVLVAVH
+        BUTURFUBUCUDUEVEUFAVJCVJFIVJEFVIKZFVGFOVJVMOUKEVGFVIUGPEVIUHQZTRULZUIPZ
+        VORUPVEIEDBAUJUMPVFAFLZAVFVKVQVPVJFAVNUNQAUOQQ $.
+    $}
+  $}
+
+  ${
+    $d x A $.  $d x F $.
+    $( The initial value of the recursive definition generator.  (Contributed
+       by NM, 25-Apr-1995.) $)
+    rdg0g $p |- ( A e. C -> ( rec ( F , A ) ` (/) ) = A ) $=
+      ( vx c0 cv crdg cfv wceq rdgeq2 fveq1d id eqeq12d vex rdg0 vtoclg ) ECDFZ
+      GZHZQIECAGZHZAIDABQAIZSUAQAUBERTQACJKUBLMQCDNOP $.
+  $}
+
+  ${
     $d x y z f g u v w F $.  $d x y z f g u v w A $.  $d B g x $.
     rdg0.1 $e |- A e. _V $.
     rdg0.2 $e |- F Fn _V $.
-    $( The recursion rule for the recursive definition generator is defined
-       everywhere.  Lemma for ~ rdg0 .  (Contributed by Jim Kingdon,
-       29-May-2019.) $)
-    rdgruledef $p |- (
-        Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
-        /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
-          e. _V ) $=
-      ( cvv wfn wcel cv cdm cfv ciun cun cmpt wfun wa rdgruledefgg mp2an ) EHIB
-      HJDHBADKZLAKUAMEMNOPZQCKUBMHJRGFABCDEHST $.
-
-    $( The initial value of the recursive definition generator.  (Contributed
-       by NM, 23-Apr-1995.)  (Revised by Mario Carneiro, 14-Nov-2014.) $)
-    rdg0 $p |- ( rec ( F , A ) ` (/) ) = A $=
-      ( vx vg vy c0 cfv cdm cv ciun cun cvv wcel wceq ax-mp fveq2i eqtri 0ex
-      crdg cmpt cres con0 0elon df-irdg rdgruledef tfri2 res0 dmeq fveq1 fveq2d
-      iuneq12d uneq2d eqid dmex 0fv wfn funfvex funfni mp2an eqeltri iunex unex
-      fvmpt dm0 iuneq1 0iun uneq2i un0 ) HBAUAZIZAEHJZEKZHIZBIZLZMZAVLHFNAEFKZJ
-      ZVNVSIZBIZLZMZUBZIZVRVLVKHUCZWEIZWFHUDOVLWHPUEGHVKWEEFBAUFEAGFBCDUGUHQWGH
-      WEVKUIRSHNOZWFVRPTFHWDVRNWEVSHPZWCVQAWJEVTVMWBVPVSHUJWJWAVOBVNVSHUKULUMUN
-      WEUOAVQCEVMVPHTUPVPHBIZNVOHBVNUQRBNURWIWKNOZDTWLNHBHBUSUTVAVBVCVDVEQSVRAH
-      MAVQHAVQEHVPLZHVMHPVQWMPVFEVMHVPVGQEVPVHSVIAVJSS $.
-
     $( The recursive definition generator produces a set on a set input.
        (Contributed by Mario Carneiro, 3-Jul-2019.) $)
     rdgexg $p |- ( B e. V -> ( rec ( F , A ) ` B ) e. _V ) $=
