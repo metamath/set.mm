@@ -55167,23 +55167,6 @@ $)
   $}
 
   ${
-    $d A g x y $.  $d F g x y $.  $d V y $.
-    $( The initial value of the recursive definition generator.  (Contributed
-       by Jim Kingdon, 10-Jul-2019.) $)
-    rdgi0g $p |- ( ( F Fn _V /\ A e. V ) -> ( rec ( F , A ) ` (/) ) = A ) $=
-      ( vx vg vy cvv wcel wa c0 cfv cdm ciun cun wceq mpan2 fveq2i syl6eq 0ex
-      cv wfn crdg cmpt cres con0 0elon df-irdg wfun rdgruledefgg alrimiv tfri2d
-      res0 wral dmex 0fv funfvex funfni syl5eqel ralrimivw iunexg sylancr unexg
-      ex mpan9 dmeq fveq1 fveq2d iuneq12d uneq2d eqid fvmptg eqtrd iuneq1 ax-mp
-      dm0 0iun eqtri uneq2i un0 ) BGUAZACHZIZJBAUBZKZADJLZDTZJKZBKZMZNZAWBWDJEG
-      ADETZLZWFWKKZBKZMZNZUCZKZWJWBWDWCJUDZWQKZWRWBJUEHWDWTOUFWBFJWCWQDEBAUGWBW
-      QUHFTWQKGHIFDAFEBCUIUJUKPWSJWQWCULQRWBJGHZWJGHZWRWJOSVTWIGHZWAXBVTWEGHWHG
-      HZDWEUMXCJSUNVTXDDWEVTWHJBKZGWGJBWFUOQVTXAXEGHZSXFGJBJBUPUQPURUSDWEWHGGUT
-      VAWAXCXBAWICGVBVCVDEJWPWJGGWQWKJOZWOWIAXGDWLWEWNWHWKJVEXGWMWGBWFWKJVFVGVH
-      VIWQVJVKVAVLWJAJNAWIJAWIDJWHMZJWEJOWIXHOVODWEJWHVMVNDWHVPVQVRAVSVQR $.
-  $}
-
-  ${
     $d A f g x $.  $d F f g x $.  $d V f $.
     $( The recursive definition generator is a function on ordinal numbers.
        The ` F Fn _V ` condition states that the characteristic function is
@@ -55559,17 +55542,17 @@ $)
     frecrdg $p |- ( ph -> frec ( F , A ) = ( rec ( F , A ) |` _om ) ) $=
       ( com wfn wcel syl2anc con0 cfv wceq c0 fveq2 eqeq12d fvres adantr vy cvv
       cfrec crdg cres frecfnom rdgifnon omsson fnssres sylancl cv frec0g peano1
-      wss csuc ax-mp rdgi0g syl5eq eqtr4d wi wa simpr ad2antlr eqtrd fveq2d jca
-      frecsuc 3expa nnon syl wal rdgisucinc 3eqtr4d peano2 expcom finds2 impcom
-      sylan ex eqfnfvd ) ABIDCUCZDCUDZIUEZADUBJZCEKZWAIJFGCDEUFLAWBMJZIMUNWCIJA
-      WDWEWFFGCDEUGLUHMIWBUIUJBUKZIKAWGWANZWGWCNZOZWJPWANZPWCNZOUAUKZWANZWMWCNZ
-      OZWMUOZWANZWQWCNZOZABUAWGPOWHWKWIWLWGPWAQWGPWCQRWGWMOWHWNWIWOWGWMWAQWGWMW
-      CQRWGWQOWHWRWIWSWGWQWAQWGWQWCQRAWKCWLAWDWEWKCOFGCDEULLAWLPWBNZCPIKWLXAOUM
-      PIWBSUPAWDWEXACOFGCDEUQLURUSAWMIKZWPWTUTAXBVAZWPWTXCWPVAZWRWQWBNZWSXDWNDN
-      ZWMWBNZDNZWRXEXDWNXGDXDWNWOXGXCWPVBXBWOXGOAWPWMIWBSVCVDVEXCWRXFOZWPAWDWEV
-      AXBXIAWDWEFGVFWDWEXBXICWMDEVGVHVRTXCXEXHOWPXCBCWMDEAWDXBFTAWEXBGTXCXBWMMK
-      AXBVBWMVIVJAWGWGDNUNBVKXBHTVLTVMXBWSXEOZAWPXBWQIKXJWMVNWQIWBSVJVCUSVSVOVP
-      VQVT $.
+      wss csuc ax-mp rdg0g syl syl5eq eqtr4d wi simpr ad2antlr eqtrd fveq2d jca
+      wa frecsuc 3expa sylan wal rdgisucinc 3eqtr4d peano2 expcom finds2 impcom
+      nnon ex eqfnfvd ) ABIDCUCZDCUDZIUEZADUBJZCEKZWAIJFGCDEUFLAWBMJZIMUNWCIJAW
+      DWEWFFGCDEUGLUHMIWBUIUJBUKZIKAWGWANZWGWCNZOZWJPWANZPWCNZOUAUKZWANZWMWCNZO
+      ZWMUOZWANZWQWCNZOZABUAWGPOWHWKWIWLWGPWAQWGPWCQRWGWMOWHWNWIWOWGWMWAQWGWMWC
+      QRWGWQOWHWRWIWSWGWQWAQWGWQWCQRAWKCWLAWDWEWKCOFGCDEULLAWLPWBNZCPIKWLXAOUMP
+      IWBSUPAWEXACOGCEDUQURUSUTAWMIKZWPWTVAAXBVGZWPWTXCWPVGZWRWQWBNZWSXDWNDNZWM
+      WBNZDNZWRXEXDWNXGDXDWNWOXGXCWPVBXBWOXGOAWPWMIWBSVCVDVEXCWRXFOZWPAWDWEVGXB
+      XIAWDWEFGVFWDWEXBXICWMDEVHVIVJTXCXEXHOWPXCBCWMDEAWDXBFTAWEXBGTXCXBWMMKAXB
+      VBWMVRURAWGWGDNUNBVKXBHTVLTVMXBWSXEOZAWPXBWQIKXJWMVNWQIWBSURVCUTVSVOVPVQV
+      T $.
   $}
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -55857,26 +55840,23 @@ $)
        (Contributed by NM, 3-May-1995.)  (Revised by Mario Carneiro,
        8-Sep-2013.) $)
     oa0 $p |- ( A e. On -> ( A +o (/) ) = A ) $=
-      ( vx con0 wcel c0 coa co cvv cv csuc cmpt crdg cfv wceq 0elon oav wfn vex
-      mpan2 sucex eqid fnmpti rdgi0g mpan eqtrd ) ACDZAEFGZEBHBIZJZKZALMZAUFECD
-      UGUKNOBAEPSUJHQUFUKANBHUIUJUHBRTUJUAUBAUJCUCUDUE $.
+      ( vx con0 wcel c0 coa co cvv cv csuc cmpt crdg cfv wceq 0elon mpan2 rdg0g
+      oav eqtrd ) ACDZAEFGZEBHBIJKZALMZATECDUAUCNOBAERPACUBQS $.
 
     $( Ordinal multiplication with zero.  Definition 8.15 of [TakeutiZaring]
        p. 62.  (Contributed by NM, 17-Sep-1995.)  (Revised by Mario Carneiro,
        8-Sep-2013.) $)
     om0 $p |- ( A e. On -> ( A .o (/) ) = (/) ) $=
-      ( vx con0 wcel c0 comu co cvv cv coa cmpt crdg cfv 0elon omv mpan2 omfnex
-      wceq wfn 0ex rdgi0g sylancl eqtrd ) ACDZAEFGZEBHBIAJGKZELMZEUDECDUEUGRNBA
-      EOPUDUFHSEHDUGERBACQTEUFHUAUBUC $.
+      ( vx con0 wcel c0 comu co cvv coa cmpt crdg cfv wceq 0elon omv mpan2 rdg0
+      cv 0ex syl6eq ) ACDZAEFGZEBHBRAIGJZEKLZEUAECDUBUDMNBAEOPEUCSQT $.
 
     $( Ordinal exponentiation with zero exponent.  Definition 8.30 of
        [TakeutiZaring] p. 67.  (Contributed by NM, 31-Dec-2004.)  (Revised by
        Mario Carneiro, 8-Sep-2013.) $)
     oei0 $p |- ( A e. On -> ( A ^oi (/) ) = 1o ) $=
       ( vx con0 wcel c0 coei co cvv cv comu cmpt c1o crdg wceq 0elon oeiv mpan2
-      cfv wral wfn vex omexg mpan ralrimivw eqid fnmpt 1on rdgi0g 3syl eqtrd )
-      ACDZAEFGZEBHBIZAJGZKZLMRZLUKECDULUPNOBAEPQUKUNHDZBHSUOHTZUPLNZUKUQBHUMHDU
-      KUQBUAUMAHCUBUCUDBHUNUOHUOUEUFURLCDUSUGLUOCUHQUIUJ $.
+      cfv 1on rdg0g ax-mp syl6eq ) ACDZAEFGZEBHBIAJGKZLMRZLUCECDUDUFNOBAEPQLCDU
+      FLNSLCUETUAUB $.
   $}
 
   ${
