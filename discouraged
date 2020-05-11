@@ -13786,6 +13786,11 @@
 "wl-syl5" is used by "wl-pm2.04".
 "wl-syl6" is used by "wl-ax3".
 "wl-syl6" is used by "wl-pm2.27".
+"wrdeqcats1OLD" is used by "psgnunilem5".
+"wrdeqcats1OLD" is used by "signstfveq0".
+"wrdeqcats1OLD" is used by "signsvtn0".
+"wrdeqcats1OLD" is used by "wrd2ind".
+"wrdeqcats1OLD" is used by "wrdind".
 "wvd2" is used by "dfvd2".
 "wvd2" is used by "dfvd2i".
 "wvd2" is used by "dfvd2imp".
@@ -18654,6 +18659,7 @@ New usage of "wl-syl5" is discouraged (7 uses).
 New usage of "wl-syl6" is discouraged (2 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
+New usage of "wrdeqcats1OLD" is discouraged (5 uses).
 New usage of "wvd2" is discouraged (5 uses).
 New usage of "wvd3" is discouraged (3 uses).
 New usage of "wvhc10" is discouraged (0 uses).
@@ -20353,6 +20359,7 @@ Proof modification of "wl-syl5" is discouraged (14 steps).
 Proof modification of "wl-syl6" is discouraged (14 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
+Proof modification of "wrdeqcats1OLD" is discouraged (215 steps).
 Proof modification of "xmsuspOLD" is discouraged (118 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
 Proof modification of "xpnnenOLD" is discouraged (531 steps).
