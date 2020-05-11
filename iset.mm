@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-May-2020
+$( iset.mm - Version of 8-May-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54668,6 +54668,25 @@ $)
       tfrlem9 dmeqi eleq2s fveq1i reseq1i fveq2i 3eqtr4g ) ABHZIACJZKZUJALZCKZA
       BKBALZCKUKUMMAUJHUIEFGNZENZOFNZUOKUOUQLCKMFUPPQERSGTZAGCURUAUBBUJDUCUDABU
       JDUEUNULCBUJADUFUGUH $.
+
+    $( Transfinite recursion at the empty set.  (Contributed by Jim Kingdon,
+       8-May-2020.) $)
+    tfr0 $p |- ( ( G ` (/) ) e. V -> ( F ` (/) ) = ( G ` (/) ) ) $=
+      ( vx vy vf c0 cfv wcel wceq cv wfn cres wral wa con0 cvv 0ex mpan cop csn
+      wrex opexg snidg syl fnsng fvsng res0 fveq2i syl6eqr fveq2 reseq2 eqeq12d
+      fveq2d ralsn sylibr csuc 0elon onsuci eqeltrri fneq2 raleq anbi12d rspcev
+      suc0 syl2anc wex wi snexg eleq2 fneq1 fveq1 reseq1 ralbidv rexbidv spcegv
+      3syl crecs cab eleq2i df-recs eluniab 3bitri syl6ibr mp2and opeldmg tfr2a
+      cuni cdm syl6 eqeq2i syl6ib mpd ) HBIZCJZHWOUAZAJZHAIZWOKZWPWQWQUBZJZXAEL
+      ZMZFLZXAIZXAXENZBIZKZFXCOZPZEQUCZWRWPWQRJZXBHRJZWPXMSHWORCUDTZWQRUEUFWPXA
+      HUBZMZXIFXPOZXLXNWPXQSHWORCUGTWPHXAIZXAHNZBIZKZXRWPXSWOYAXNWPXSWOKSHWORCU
+      HTXTHBXAUIUJUKXIYBFHSXEHKZXFXSXHYAXEHXAULYCXGXTBXEHXAUMUOUNUPUQXPQJXQXRPZ
+      XLHURXPQVFHUSUTVAXKYDEXPQXCXPKXDXQXJXRXCXPXAVBXIFXCXPVCVDVETVGWPXBXLPZWQG
+      LZJZYFXCMZXEYFIZYFXENZBIZKZFXCOZPZEQUCZPZGVHZWRWPXMXARJYEYQVIXOWQRVJYPYEG
+      XARYFXAKZYGXBYOXLYFXAWQVKYRYNXKEQYRYHXDYMXJXCYFXAVLYRYLXIFXCYRYIXFYKXHXEY
+      FXAVMYRYJXGBYFXAXEVNUOUNVOVDVPVDVQVRWRWQBVSZJWQYOGVTWIZJYQAYSWQDWAYSYTWQE
+      FGBWBWAYOGWQWCWDWEWFWPWRWSAHNZBIZKZWTWPWRHAWJJZUUCXNWPWRUUDVISHWOARCWGTHA
+      BDWHWKUUBWOWSUUAHBAUIUJWLWMWN $.
   $}
 
   ${
@@ -54870,30 +54889,6 @@ $)
   $}
 
   ${
-    $d f g h u v w x y z A $.  $d f g h u v w x y z F $.  $d z C $.
-    tfrlemi14.1 $e |- A = { f | E. x e. On ( f Fn x /\
-                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
-    tfrlemi14.2 $e |- ( Fun F /\ ( F ` x ) e. _V ) $.
-    $( The domain of ` recs ` is all ordinals (lemma for transfinite
-       recursion).  (Contributed by Jim Kingdon, 4-May-2019.)  (Proof shortened
-       by Mario Carneiro, 24-May-2019.) $)
-    tfrlemi14 $p |- dom recs ( F ) = On $=
-      ( vh vz vg vu vw cdm con0 cv wcel cfv wceq wa wtru crecs word wss tfrlem8
-      ordsson ax-mp ciun wrex wfn cres wral wex fneq2 raleq anbi12d exbidv wfun
-      tru cvv wal ax-gen a1i tfrlemi1 mpan vtoclga cop csn cun simpl simprl vex
-      rspcev sylibr tfrlemisucaccv tfrlem3-2 simpri opex snid elun2 mp1i opeldm
-      tfrlem3a syl dmeq eleq2d syl2anc exlimddv eliun ssriv cuni recsfval dmeqi
-      dmuni eqtri sseqtr4i eqssi ) EUAZMZNWRUBWRNUCABCDEFUDWRUEUFNHCHOZMZUGZWRI
-      NXAIOZNPZXBWTPZHCUHZXBXAPXCJOZXBUIZKOZXFQXFXHUJEQRZKXBUKZSZXEJXFLOZUIZXIK
-      XLUKZSZJULZXKJULLXBNXLXBRZXOXKJXQXMXGXNXJXLXBXFUMXIKXLXBUNUOZUPTXLNPXPURT
-      ABKCXLDJEFEUQZAOEQUSPSZAUTZTXTAGVAZVBVCVDVEXCXKSZXFXBXFEQZVFZVGZVHZCPXBYG
-      MZPZXEYCABICDJEFYAYCYBVBXCXKVIXCXGXJVJYCXOLNUHXFCPXOXKLXBNXRVLABLKCDEXFFJ
-      VKWBVMVNYCYEYGPZYIYEYFPYJYCYEXBYDIVKZXSYDUSPAJEGVOVPZVQVRYEYFXFVSVTXBYDYG
-      YKYLWAWCXDYIHYGCWSYGRWTYHXBWSYGWDWEVLWFWGHXBCWTWHVMWIWRCWJZMXAWQYMABCDEFW
-      KWLHCWMWNWOWP $.
-  $}
-
-  ${
     $d e f g h u v t w x y z A $.  $d e f g h u v t w x y z F $.  $d z C $.
     $d u v z ph $.
     tfrexlem.1 $e |- A = { f | E. x e. On ( f Fn x /\
@@ -54990,10 +54985,8 @@ $)
        numbers.  (Contributed by Jim Kingdon, 4-May-2019.)  (Revised by Mario
        Carneiro, 24-May-2019.) $)
     tfri1 $p |- F Fn On $=
-      ( vy vz vw vg vu vf con0 wfn wceq cv cfv cres wral wa wrex crecs wfun cdm
-      cab eqid tfrlem7 tfrlem3 tfrlemi14 df-fn mpbir2an fneq1i mpbir ) BLMCUAZL
-      MZUNUMUBUMUCLNFGHOZFOZMGOZUOPUOUQQCPNGUPRSFLTHUDZHCURUEUFAFIOZUQMJOZUSPUS
-      UTQCPNJUQRSGLTIUDZKCGJAFVAIKCVAUEUGEUHUMLUIUJLBUMDUKUL $.
+      ( con0 wfn wtru wfun cv cfv cvv wcel wa wal ax-gen a1i tfri1d trud ) BFGH
+      ABCDCIAJCKLMNZAOHTAEPQRS $.
 
     $( Principle of Transfinite Recursion, part 2 of 3.  Theorem 7.41(2) of
        [TakeutiZaring] p. 47, with an additional condition on the recursion
@@ -55174,23 +55167,6 @@ $)
   $}
 
   ${
-    $d A g x y $.  $d F g x y $.  $d V y $.
-    $( The initial value of the recursive definition generator.  (Contributed
-       by Jim Kingdon, 10-Jul-2019.) $)
-    rdgi0g $p |- ( ( F Fn _V /\ A e. V ) -> ( rec ( F , A ) ` (/) ) = A ) $=
-      ( vx vg vy cvv wcel wa c0 cfv cdm ciun cun wceq mpan2 fveq2i syl6eq 0ex
-      cv wfn crdg cmpt cres con0 0elon df-irdg wfun rdgruledefgg alrimiv tfri2d
-      res0 wral dmex 0fv funfvex funfni syl5eqel ralrimivw iunexg sylancr unexg
-      ex mpan9 dmeq fveq1 fveq2d iuneq12d uneq2d eqid fvmptg eqtrd iuneq1 ax-mp
-      dm0 0iun eqtri uneq2i un0 ) BGUAZACHZIZJBAUBZKZADJLZDTZJKZBKZMZNZAWBWDJEG
-      ADETZLZWFWKKZBKZMZNZUCZKZWJWBWDWCJUDZWQKZWRWBJUEHWDWTOUFWBFJWCWQDEBAUGWBW
-      QUHFTWQKGHIFDAFEBCUIUJUKPWSJWQWCULQRWBJGHZWJGHZWRWJOSVTWIGHZWAXBVTWEGHWHG
-      HZDWEUMXCJSUNVTXDDWEVTWHJBKZGWGJBWFUOQVTXAXEGHZSXFGJBJBUPUQPURUSDWEWHGGUT
-      VAWAXCXBAWICGVBVCVDEJWPWJGGWQWKJOZWOWIAXGDWLWEWNWHWKJVEXGWMWGBWFWKJVFVGVH
-      VIWQVJVKVAVLWJAJNAWIJAWIDJWHMZJWEJOWIXHOVODWEJWHVMVNDWHVPVQVRAVSVQR $.
-  $}
-
-  ${
     $d A f g x $.  $d F f g x $.  $d V f $.
     $( The recursive definition generator is a function on ordinal numbers.
        The ` F Fn _V ` condition states that the characteristic function is
@@ -55321,31 +55297,34 @@ $)
   $}
 
   ${
+    $d x y f g v w F $.  $d x y f g v w A $.  $d f x y B $.
+    ${
+      rdg.1 $e |- A e. _V $.
+      $( The initial value of the recursive definition generator.  (Contributed
+         by NM, 23-Apr-1995.)  (Revised by Mario Carneiro, 14-Nov-2014.) $)
+      rdg0 $p |- ( rec ( F , A ) ` (/) ) = A $=
+        ( vg vx c0 crdg cfv cvv cdm ciun cun cmpt wcel wceq ax-mp eqtri eqeltri
+        cv 0ex dmeq fveq1 fveq2d iuneq12d uneq2d eqid iuneq1 0iun fvmpt df-irdg
+        dm0 unex tfr0 uneq2i un0 ) FBAGZHZFDIAEDSZJZESZURHZBHZKZLZMZHZAVFINUQVF
+        OVFAEFJZUTFHZBHZKZLZIFINVFVKOTDFVDVKIVEURFOZVCVJAVLEUSVGVBVIURFUAVLVAVH
+        BUTURFUBUCUDUEVEUFAVJCVJFIVJEFVIKZFVGFOVJVMOUKEVGFVIUGPEVIUHQZTRULZUIPZ
+        VORUPVEIEDBAUJUMPVFAFLZAVFVKVQVPVJFAVNUNQAUOQQ $.
+    $}
+  $}
+
+  ${
+    $d x A $.  $d x F $.
+    $( The initial value of the recursive definition generator.  (Contributed
+       by NM, 25-Apr-1995.) $)
+    rdg0g $p |- ( A e. C -> ( rec ( F , A ) ` (/) ) = A ) $=
+      ( vx c0 cv crdg cfv wceq rdgeq2 fveq1d id eqeq12d vex rdg0 vtoclg ) ECDFZ
+      GZHZQIECAGZHZAIDABQAIZSUAQAUBERTQACJKUBLMQCDNOP $.
+  $}
+
+  ${
     $d x y z f g u v w F $.  $d x y z f g u v w A $.  $d B g x $.
     rdg0.1 $e |- A e. _V $.
     rdg0.2 $e |- F Fn _V $.
-    $( The recursion rule for the recursive definition generator is defined
-       everywhere.  Lemma for ~ rdg0 .  (Contributed by Jim Kingdon,
-       29-May-2019.) $)
-    rdgruledef $p |- (
-        Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
-        /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
-          e. _V ) $=
-      ( cvv wfn wcel cv cdm cfv ciun cun cmpt wfun wa rdgruledefgg mp2an ) EHIB
-      HJDHBADKZLAKUAMEMNOPZQCKUBMHJRGFABCDEHST $.
-
-    $( The initial value of the recursive definition generator.  (Contributed
-       by NM, 23-Apr-1995.)  (Revised by Mario Carneiro, 14-Nov-2014.) $)
-    rdg0 $p |- ( rec ( F , A ) ` (/) ) = A $=
-      ( vx vg vy c0 cfv cdm cv ciun cun cvv wcel wceq ax-mp fveq2i eqtri 0ex
-      crdg cmpt cres con0 0elon df-irdg rdgruledef tfri2 res0 dmeq fveq1 fveq2d
-      iuneq12d uneq2d eqid dmex 0fv wfn funfvex funfni mp2an eqeltri iunex unex
-      fvmpt dm0 iuneq1 0iun uneq2i un0 ) HBAUAZIZAEHJZEKZHIZBIZLZMZAVLHFNAEFKZJ
-      ZVNVSIZBIZLZMZUBZIZVRVLVKHUCZWEIZWFHUDOVLWHPUEGHVKWEEFBAUFEAGFBCDUGUHQWGH
-      WEVKUIRSHNOZWFVRPTFHWDVRNWEVSHPZWCVQAWJEVTVMWBVPVSHUJWJWAVOBVNVSHUKULUMUN
-      WEUOAVQCEVMVPHTUPVPHBIZNVOHBVNUQRBNURWIWKNOZDTWLNHBHBUSUTVAVBVCVDVEQSVRAH
-      MAVQHAVQEHVPLZHVMHPVQWMPVFEVMHVPVGQEVPVHSVIAVJSS $.
-
     $( The recursive definition generator produces a set on a set input.
        (Contributed by Mario Carneiro, 3-Jul-2019.) $)
     rdgexg $p |- ( B e. V -> ( rec ( F , A ) ` B ) e. _V ) $=
@@ -55402,6 +55381,25 @@ $)
   $}
 
   ${
+    $d A g m x $.  $d F g m x $.
+    $( The initial value resulting from finite recursive definition
+       generation.  (Contributed by Jim Kingdon, 7-May-2020.) $)
+    frec0g $p |- ( A e. V -> ( frec ( F , A ) ` (/) ) = A ) $=
+      ( vg vm vx wcel c0 cfv cvv cv cdm wceq wa com wrex wo cab dm0 ax-mp cfrec
+      csuc cmpt biantrur wn wne vex nsuceq0g nesymi eqeq1i mtbir intnanr biorfi
+      a1i nrex orcom 3bitri abbii abid2 eqtr3i elex syl5eqel dmeq eqeq1d fveq2d
+      0ex fveq1 eleq2d anbi12d rexbidv anbi1d orbi12d abbidv eqid fvmptg syl6eq
+      mpan syl eqeltrd crecs cres df-frec fveq1i peano1 fvres eqtri tfr0 syl5eq
+      eqtrd ) ACGZHBAUAZIZHDJDKZLZEKZUBZMZFKZWOWMIZBIZGZNZEOPZWNHMZWRAGZNZQZFRZ
+      UCZIZAWJXJJGZWLXJMWJXJAJWJHLZWPMZWRWOHIZBIZGZNZEOPZXLHMZXENZQZFRZJGZXJAMW
+      JYBAJXEFRYBAXEYAFXEXTXTXRQYAXSXESUDXRXTXQEOXQUEWOOGXMXPXMHWPMWPHWOJGWPHUF
+      EUGWOJUHTUIXLHWPSUJUKULUNUOUMXTXRUPUQURFAUSUTZACVAZVBYCXJYBAHJGYCXJYBMVFD
+      HXHYBJJXIWMHMZXGYAFYFXCXRXFXTYFXBXQEOYFWQXMXAXPYFWNXLWPWMHVCZVDYFWTXOWRYF
+      WSXNBWOWMHVGVEVHVIVJYFXDXSXEYFWNXLHYGVDVKVLVMXIVNVOVQYDVPVRZYEVSXKWLHXIVT
+      ZIZXJWLHYIOWAZIZYJHWKYKFDEBAWBWCHOGYLYJMWDHOYIWETWFYIXIJYIVNWGWHVRYHWI $.
+  $}
+
+  ${
     $d A x $.  $d F x $.  $d S x $.  $d m ph $.  $d m x $.
     frecabex.1 $e |- ( ph -> S e. V ) $.
     frecabex.2 $e |- ( ph -> F Fn _V ) $.
@@ -55453,25 +55451,6 @@ $)
       LZNOFLZVGVEPBPJKEQUBVFUCOVHAJKUDFUAUEZUFZRQUGZSZVKIZBAUHZQIZVDVJRIVMVDGVJ
       VIVJTFGADEBVICVITUIUJRQVJUKULVLVNOVKQOZVMVOUMVLVJQSVNVKQVJQRUNVPUOQRUPUQZ
       URFDEBAUSUTVQVKQVLVNVAVBVC $.
-
-    $( The initial value resulting from finite recursive definition
-       generation.  (Contributed by Jim Kingdon, 11-Aug-2019.) $)
-    frec0g $p |- ( ( F Fn _V /\ A e. V ) -> ( frec ( F , A ) ` (/) ) = A ) $=
-      ( vm vx vg vy cvv wcel wa c0 cdm cv wceq cfv com wrex wo cab eqeq1d cfrec
-      wfn csuc dm0 biantrur wne vex nsuceq0g ax-mp eqcom eqeq2i nemtbir intnanr
-      wn bitr3i a1i nrex biorfi orcom 3bitri abbii eqtr3i eleq1i biimpri adantl
-      abid2 cmpt dmeq fveq1 fveq2d eleq2d anbi12d rexbidv anbi1d orbi12d abbidv
-      0ex eqid fvmptg mpan crecs cres df-frec fveq1i peano1 fvres eqtri frectfr
-      con0 0elon tfri2d mpan2 syl5eq res0 fveq2i syl6eq syl5ibr syl6ib mpd ) BH
-      UBZACIZJZKLZDMZUCZNZEMZXDKOZBOZIZJZDPQZXCKNZXGAIZJZRZESZCIZKBAUAZOZANZXAX
-      RWTXRXAXQACXNESXQAXNXPEXNXOXOXLRXPXMXNUDUEXLXOXKDPXKUNXDPIXFXJXFXEKXDHIXE
-      KUFDUGXDHUHUIXFXEXCNXEKNXEXCUJXCKXEUDUKUOULUMUPUQURXOXLUSUTVAEAVFVBZVCVDV
-      EXBXRXTXQNZYAXRYCXBKFHFMZLZXENZXGXDYDOZBOZIZJZDPQZYEKNZXNJZRZESZVGZOZXQNZ
-      KHIXRYRVQFKYOXQHCYPYDKNZYNXPEYSYKXLYMXOYSYJXKDPYSYFXFYIXJYSYEXCXEYDKVHZTY
-      SYHXIXGYSYGXHBXDYDKVIVJVKVLVMYSYLXMXNYSYEXCKYTTVNVOVPYPVRZVSVTXBXTYQXQXBX
-      TYPWAZKWBZYPOZYQXBXTKUUBOZUUDXTKUUBPWBZOZUUEKXSUUFEFDBAWCWDKPIUUGUUENWEKP
-      UUBWFUIWGXBKWIIUUEUUDNWJXBGKUUBYPUUBVREGAFDBYPCUUAWHWKWLWMUUCKYPUUBWNWOWP
-      TWQXQAXTYBUKWRWS $.
 
     ${
       $d A f g m u v x y z $.  $d B g m u x $.  $d F f g m u v x y z $.
@@ -55561,19 +55540,18 @@ $)
        results as ~ df-irdg restricted to ` _om ` .  (Contributed by Jim
        Kingdon, 29-Aug-2019.) $)
     frecrdg $p |- ( ph -> frec ( F , A ) = ( rec ( F , A ) |` _om ) ) $=
-      ( com wfn wcel syl2anc con0 cfv wceq c0 fveq2 eqeq12d fvres adantr vy cvv
-      cfrec crdg cres frecfnom rdgifnon omsson fnssres sylancl cv frec0g peano1
-      wss csuc ax-mp rdgi0g syl5eq eqtr4d wi wa simpr ad2antlr eqtrd fveq2d jca
-      frecsuc 3expa nnon syl wal rdgisucinc 3eqtr4d peano2 expcom finds2 impcom
-      sylan ex eqfnfvd ) ABIDCUCZDCUDZIUEZADUBJZCEKZWAIJFGCDEUFLAWBMJZIMUNWCIJA
-      WDWEWFFGCDEUGLUHMIWBUIUJBUKZIKAWGWANZWGWCNZOZWJPWANZPWCNZOUAUKZWANZWMWCNZ
-      OZWMUOZWANZWQWCNZOZABUAWGPOWHWKWIWLWGPWAQWGPWCQRWGWMOWHWNWIWOWGWMWAQWGWMW
-      CQRWGWQOWHWRWIWSWGWQWAQWGWQWCQRAWKCWLAWDWEWKCOFGCDEULLAWLPWBNZCPIKWLXAOUM
-      PIWBSUPAWDWEXACOFGCDEUQLURUSAWMIKZWPWTUTAXBVAZWPWTXCWPVAZWRWQWBNZWSXDWNDN
-      ZWMWBNZDNZWRXEXDWNXGDXDWNWOXGXCWPVBXBWOXGOAWPWMIWBSVCVDVEXCWRXFOZWPAWDWEV
-      AXBXIAWDWEFGVFWDWEXBXICWMDEVGVHVRTXCXEXHOWPXCBCWMDEAWDXBFTAWEXBGTXCXBWMMK
-      AXBVBWMVIVJAWGWGDNUNBVKXBHTVLTVMXBWSXEOZAWPXBWQIKXJWMVNWQIWBSVJVCUSVSVOVP
-      VQVT $.
+      ( com wfn wcel con0 cfv wceq c0 fveq2 eqeq12d syl fvres adantr cfrec crdg
+      cres cvv frecfnom syl2anc wss rdgifnon omsson fnssres sylancl csuc frec0g
+      vy cv peano1 ax-mp rdg0g syl5eq eqtr4d wi simpr ad2antlr eqtrd fveq2d jca
+      wa frecsuc 3expa sylan wal rdgisucinc 3eqtr4d peano2 expcom finds2 impcom
+      nnon ex eqfnfvd ) ABIDCUAZDCUBZIUCZADUDJZCEKZWAIJFGCDEUEUFAWBLJZILUGWCIJA
+      WDWEWFFGCDEUHUFUILIWBUJUKBUOZIKAWGWAMZWGWCMZNZWJOWAMZOWCMZNUNUOZWAMZWMWCM
+      ZNZWMULZWAMZWQWCMZNZABUNWGONWHWKWIWLWGOWAPWGOWCPQWGWMNWHWNWIWOWGWMWAPWGWM
+      WCPQWGWQNWHWRWIWSWGWQWAPWGWQWCPQAWKCWLAWEWKCNGCDEUMRAWLOWBMZCOIKWLXANUPOI
+      WBSUQAWEXACNGCEDURRUSUTAWMIKZWPWTVAAXBVGZWPWTXCWPVGZWRWQWBMZWSXDWNDMZWMWB
+      MZDMZWRXEXDWNXGDXDWNWOXGXCWPVBXBWOXGNAWPWMIWBSVCVDVEXCWRXFNZWPAWDWEVGXBXI
+      AWDWEFGVFWDWEXBXICWMDEVHVIVJTXCXEXHNWPXCBCWMDEAWDXBFTAWEXBGTXCXBWMLKAXBVB
+      WMVRRAWGWGDMUGBVKXBHTVLTVMXBWSXENZAWPXBWQIKXJWMVNWQIWBSRVCUTVSVOVPVQVT $.
   $}
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -55861,26 +55839,23 @@ $)
        (Contributed by NM, 3-May-1995.)  (Revised by Mario Carneiro,
        8-Sep-2013.) $)
     oa0 $p |- ( A e. On -> ( A +o (/) ) = A ) $=
-      ( vx con0 wcel c0 coa co cvv cv csuc cmpt crdg cfv wceq 0elon oav wfn vex
-      mpan2 sucex eqid fnmpti rdgi0g mpan eqtrd ) ACDZAEFGZEBHBIZJZKZALMZAUFECD
-      UGUKNOBAEPSUJHQUFUKANBHUIUJUHBRTUJUAUBAUJCUCUDUE $.
+      ( vx con0 wcel c0 coa co cvv cv csuc cmpt crdg cfv wceq 0elon mpan2 rdg0g
+      oav eqtrd ) ACDZAEFGZEBHBIJKZALMZATECDUAUCNOBAERPACUBQS $.
 
     $( Ordinal multiplication with zero.  Definition 8.15 of [TakeutiZaring]
        p. 62.  (Contributed by NM, 17-Sep-1995.)  (Revised by Mario Carneiro,
        8-Sep-2013.) $)
     om0 $p |- ( A e. On -> ( A .o (/) ) = (/) ) $=
-      ( vx con0 wcel c0 comu co cvv cv coa cmpt crdg cfv 0elon omv mpan2 omfnex
-      wceq wfn 0ex rdgi0g sylancl eqtrd ) ACDZAEFGZEBHBIAJGKZELMZEUDECDUEUGRNBA
-      EOPUDUFHSEHDUGERBACQTEUFHUAUBUC $.
+      ( vx con0 wcel c0 comu co cvv coa cmpt crdg cfv wceq 0elon omv mpan2 rdg0
+      cv 0ex syl6eq ) ACDZAEFGZEBHBRAIGJZEKLZEUAECDUBUDMNBAEOPEUCSQT $.
 
     $( Ordinal exponentiation with zero exponent.  Definition 8.30 of
        [TakeutiZaring] p. 67.  (Contributed by NM, 31-Dec-2004.)  (Revised by
        Mario Carneiro, 8-Sep-2013.) $)
     oei0 $p |- ( A e. On -> ( A ^oi (/) ) = 1o ) $=
       ( vx con0 wcel c0 coei co cvv cv comu cmpt c1o crdg wceq 0elon oeiv mpan2
-      cfv wral wfn vex omexg mpan ralrimivw eqid fnmpt 1on rdgi0g 3syl eqtrd )
-      ACDZAEFGZEBHBIZAJGZKZLMRZLUKECDULUPNOBAEPQUKUNHDZBHSUOHTZUPLNZUKUQBHUMHDU
-      KUQBUAUMAHCUBUCUDBHUNUOHUOUEUFURLCDUSUGLUOCUHQUIUJ $.
+      cfv 1on rdg0g ax-mp syl6eq ) ACDZAEFGZEBHBIAJGKZLMRZLUCECDUDUFNOBAEPQLCDU
+      FLNSLCUETUAUB $.
   $}
 
   ${
@@ -83861,6 +83836,28 @@ $)
       LVMVNVOUHUIUJULABCDEFGHIJKLMNVJVKIJUDSTJIUMUNQBIJUOOUPGUQZUCQZIWCUDSZWCJU
       RSZTVLWDWEWFRZRCDUSZWDWEWFUHVLWDWGWHVJVKWDWGWHUSZWDVJVKWIWDVJVKTWGWCIJUTU
       BQWHWCIJVAPVBVCVDVEVFVGVH $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Miscellaneous theorems about integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d y z A $.  $d w z B $.  $d v w x y z C $.  $d v w y z G $.
+    frec2uz.1 $e |- C e. ZZ $.
+    frec2uz.2 $e |- G = frec ( ( x e. ZZ |-> ( x + 1 ) ) , C ) $.
+    $( The mapping ` G ` is a one-to-one mapping from ` _om ` onto upper
+       integers that will be used to construct a recursive definition
+       generator.  Ordinal natural number 0 maps to complex number ` C `
+       (normally 0 for the upper integers ` NN0 ` or 1 for the upper integers
+       ` NN ` ), 1 maps to ` C ` + 1, etc.  This theorem shows the value of
+       ` G ` at ordinal natural number zero.  (Contributed by Jim Kingdon,
+       6-May-2020.) $)
+    frec2uz0i $p |- ( G ` (/) ) = C $=
+      ( c0 cfv cz cv c1 caddc co cmpt cfrec fveq1i wcel wceq frec0g ax-mp eqtri
+      ) FCGFAHAIJKLMZBNZGZBFCUBEOBHPUCBQDBUAHRST $.
   $}
 
 $(
