@@ -83881,7 +83881,7 @@ $(
 $)
 
   ${
-    $d y z A $.  $d w z B $.  $d v w x y z C $.  $d v w y z G $.
+    $d A x y z $.  $d B w z $.  $d C v w x y z $.  $d G v w x y z $.
     frec2uz.1 $e |- C e. ZZ $.
     frec2uz.2 $e |- G = frec ( ( x e. ZZ |-> ( x + 1 ) ) , C ) $.
     $( The mapping ` G ` is a one-to-one mapping from ` _om ` onto upper
@@ -83894,6 +83894,37 @@ $)
     frec2uz0i $p |- ( G ` (/) ) = C $=
       ( c0 cfv cz cv c1 caddc co cmpt cfrec fveq1i wcel wceq frec0g ax-mp eqtri
       ) FCGFAHAIJKLMZBNZGZBFCUBEOBHPUCBQDBUAHRST $.
+
+    $( The value of ` G ` (see ~ frec2uz0i ) is an integer.  (Contributed by
+       Jim Kingdon, 14-May-2020.) $)
+    frec2uzzi $p |- ( A e. _om -> ( G ` A ) e. ZZ ) $=
+      ( vy vz cv cfv cz wcel c0 wceq fveq2 eleq1d c1 caddc co cvv eqeltri com
+      csuc frec2uz0i cmpt cfrec wal zex mptex vex fvex ax-gen frecsuc mp3an12
+      fveq1i fveq2i 3eqtr4g oveq1 eqid peano2z fvmpt3 sylan9eq adantl eqeltrd
+      wa ex finds ) AIZDJZKLMDJZKLGIZDJZKLZVKUCZDJZKLZBDJZKLAGBVHMNVIVJKVHMDO
+      PVHVKNVIVLKVHVKDOPVHVNNVIVOKVHVNDOPVHBNVIVQKVHBDOPVJCKACDEFUDEUAVKUBLZV
+      MVPVRVMVEVOVLQRSZKVRVMVOVLAKVHQRSZUEZJZVSVRVNWACUFZJZVKWCJZWAJZVOWBHIZW
+      AJTLZHUGCKLVRWDWFNWHHWGWATTAKVTUHUIHUJUKULEHCVKWAKUMUNVNDWCFUOVLWEWAVKD
+      WCFUOUPUQAVLVTVSKWAKVHVLQRURWAUSVHUTVAVBVMVSKLVRVLUTVCVDVFVG $.
+
+    $( The value of ` G ` (see ~ frec2uz0i ) at a successor.  (Contributed by
+       Jim Kingdon, 14-May-2020.) $)
+    frec2uzsuci $p |- ( A e. _om -> ( G ` suc A ) = ( ( G ` A ) + 1 ) ) $=
+      ( vy com wcel csuc cfv cz cv c1 caddc co cmpt cvv wceq fveq1i cfrec wal
+      zex mptex vex fvex ax-gen frecsuc mp3an12 fveq2i 3eqtr4g frec2uzzi eqid
+      oveq1 peano2z fvmpt3 syl eqtrd ) BHIZBJZDKZBDKZALAMZNOPZQZKZVBNOPZUSUTV
+      ECUAZKZBVHKZVEKZVAVFGMZVEKRIZGUBCLIUSVIVKSVMGVLVERRALVDUCUDGUEUFUGEGCBV
+      ELUHUIUTDVHFTVBVJVEBDVHFTUJUKUSVBLIVFVGSABCDEFULAVBVDVGLVELVCVBNOUNVEUM
+      VCUOUPUQUR $.
+
+    $( The value ` G ` (see ~ frec2uz0i ) at an ordinal natural number is in
+       the upper integers.  (Contributed by Jim Kingdon, 14-May-2020.) $)
+    frec2uzuzi $p |- ( A e. _om -> ( G ` A ) e. ( ZZ>= ` C ) ) $=
+      ( vy vz cv cfv cuz wcel c0 csuc wceq fveq2 eleq1d frec2uz0i cz uzid ax-mp
+      eqeltri com c1 caddc co peano2uz frec2uzsuci syl5ibr finds ) GIZDJZCKJZLM
+      DJZUMLHIZDJZUMLZUONZDJZUMLZBDJZUMLGHBUKMOULUNUMUKMDPQUKUOOULUPUMUKUODPQUK
+      UROULUSUMUKURDPQUKBOULVAUMUKBDPQUNCUMACDEFRCSLCUMLECTUAUBUQUTUOUCLZUPUDUE
+      UFZUMLCUPUGVBUSVCUMAUOCDEFUHQUIUJ $.
   $}
 
 $(
