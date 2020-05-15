@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-May-2020
+$( iset.mm - Version of 14-May-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -55118,6 +55118,23 @@ $)
   $}
 
   ${
+    $d A g $.  $d g x z F $.
+    $( The recursion rule for the recursive definition generator is defined
+       everywhere.  (Contributed by Jim Kingdon, 14-May-2020.) $)
+    rdgtfr $p |- ( ( A. z ( F ` z ) e. _V /\ A e. V ) -> (
+        Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
+        /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
+          e. _V ) ) $=
+      ( wcel cv cfv cvv wal cdm wa vex wral wceq ralrimivw sylancr sylan2 fveq2
+      ciun cun cmpt wfun elex funmpt dmex fvex eleq1d spcv iunexg ancoms dmmptg
+      unexg syl syl5eleqr funfvex jctil ) CGHBIZFJZKHZBLZCKHZEKCAEIZMZAIZVEJZFJ
+      ZUBZUCZUDZUEZDIZVLJKHZNCGUFVCVDNZVOVMVPVMVNVLMZHVOEKVKUGZVPVNKVQDOVPVKKHZ
+      EKPVQKQVPVSEKVDVCVSVCVDVJKHZVSVCVFKHVIKHZAVFPVTVEEOZUHVCWAAVFVBWABVHVGVEK
+      KWBAOUIUTVHQVAVIKUTVHFUAUJUKRAVFVIKKULSCVJKKUOTUMREKVKKUNUPUQVNVLURSVRUST
+      $.
+  $}
+
+  ${
     $d A g $.  $d g x F $.
     $( The recursion rule for the recursive definition generator is defined
        everywhere.  (Contributed by Jim Kingdon, 4-Jul-2019.) $)
@@ -55170,15 +55187,26 @@ $)
     $d A f g x $.  $d F f g x $.  $d V f $.
     $( The recursive definition generator is a function on ordinal numbers.
        The ` F Fn _V ` condition states that the characteristic function is
-       defined for all sets (being defined for all ordinals might be enough,
-       but being defined for all sets will generally hold for the
-       characteristic functions we need to use this with).  (Contributed by Jim
-       Kingdon, 13-Jul-2019.) $)
+       defined for all sets (being defined for all ordinals might be enough if
+       being used in a manner similar to ~ rdgon ; in cases like ~ df-oadd
+       either presumably could work).  (Contributed by Jim Kingdon,
+       13-Jul-2019.) $)
     rdgifnon $p |- ( ( F Fn _V /\ A e. V ) ->
       rec ( F , A ) Fn On ) $=
       ( vf vg vx cvv wfn wcel wa crdg cv cdm cfv ciun cmpt df-irdg rdgruledefgg
       cun wfun alrimiv tfri1d ) BGHACIJZDBAKEGAFELZMFLUDNBNOSPZFEBAQUCUETDLUENG
       IJDFADEBCRUAUB $.
+  $}
+
+  ${
+    $d A f g x $.  $d F f g x z $.  $d V f $.
+    $( The recursive definition generator is a function on ordinal numbers.
+       (Contributed by Jim Kingdon, 14-May-2020.) $)
+    rdgifnon2 $p |- ( ( A. z ( F ` z ) e. _V /\ A e. V ) ->
+        rec ( F , A ) Fn On ) $=
+      ( vf vg vx cv cfv cvv wcel wal wa crdg cdm ciun cun cmpt df-irdg wfun
+      rdgtfr alrimiv tfri1d ) AHCIJKALBDKMZECBNFJBGFHZOGHUEICIPQRZGFCBSUDUFTEHU
+      FIJKMEGABEFCDUAUBUC $.
   $}
 
   ${
@@ -55400,27 +55428,26 @@ $)
   $}
 
   ${
-    $d A x $.  $d F x $.  $d S x $.  $d m ph $.  $d m x $.
-    frecabex.1 $e |- ( ph -> S e. V ) $.
-    frecabex.2 $e |- ( ph -> F Fn _V ) $.
-    frecabex.3 $e |- ( ph -> A e. W ) $.
-    $( The class abstraction from ~ df-frec exists.  This is a lemma for
-       several other finite recursion proofs.  (Contributed by Jim Kingdon,
-       16-Aug-2019.) $)
+    $d A x $.  $d F x $.  $d S x y $.  $d m ph $.  $d m x y $.  $d F y $.
+    frecabex.sex $e |- ( ph -> S e. V ) $.
+    frecabex.fvex $e |- ( ph -> A. y ( F ` y ) e. _V ) $.
+    frecabex.aex $e |- ( ph -> A e. W ) $.
+    $( The class abstraction from ~ df-frec exists.  This is a lemma for other
+       finite recursion proofs.  (Contributed by Jim Kingdon, 13-May-2020.) $)
     frecabex $p |- ( ph -> { x |
         ( E. m e. _om ( dom S = suc m /\ x e. ( F ` ( S ` m ) ) ) \/
         ( dom S = (/) /\ x e. A ) ) } e. _V ) $=
-      ( cv wceq cfv wcel wa com cab cvv sylancr csuc wrex c0 wo wral omex simpr
-      cdm wss abssi wfn fvexg sylancl funfvex syl2anc ssexg ralrimivw abrexex2g
-      vex funfni jca cun unexb unab eleq1i bitri sylib ) ADUHZELZUAMZBLZVIDNZFN
-      ZOZPZEQUBZBRZSOZVHUCMZVKCOZPZBRZSOZPZVPWAUDBRZSOZAVRWCAQSOVOBRZSOZEQUEVRU
-      FAWHEQAWGVMUIVMSOZWHVOBVMVJVNUGUJAFSUKVLSOZWIJADGOVISOWJIEUSVIDGSULUMWISV
-      LFVLFUNUTUOWGVMSUPTUQVOEBQSSURTAWBCUICHOWCWABCVSVTUGUJKWBCHUPTVAWDVQWBVBZ
-      SOWFVQWBVCWKWESVPWABVDVEVFVG $.
+      ( cv wceq cfv wcel wa com cab cvv cdm csuc wrex c0 wo wral omex wss simpr
+      abssi wal fvexg sylancl fveq2 eleq1d spcgv sylc ssexg ralrimivw abrexex2g
+      vex sylancr jca cun unexb unab eleq1i bitri sylib ) AEUAZFMZUBNZBMZVKEOZG
+      OZPZQZFRUCZBSZTPZVJUDNZVMDPZQZBSZTPZQZVRWCUEBSZTPZAVTWEARTPVQBSZTPZFRUFVT
+      UGAWJFRAWIVOUHVOTPZWJVQBVOVLVPUIUJAVNTPZCMZGOZTPZCUKWKAEHPVKTPWLJFVAVKEHT
+      ULUMKWOWKCVNTWMVNNWNVOTWMVNGUNUOUPUQWIVOTURVBUSVQFBRTTUTVBAWDDUHDIPWEWCBD
+      WAWBUIUJLWDDIURVBVCWFVSWDVDZTPWHVSWDVEWPWGTVRWCBVFVGVHVI $.
   $}
 
   ${
-    $d g m x y A $.  $d g m x y F $.  $d x B $.  $d g m y V $.
+    $d g m x y A $.  $d g m x y z F $.  $d x B $.  $d g m y V $.
     frectfr.1 $e |- G = ( g e. _V |-> { x | ( E. m e. _om ( dom g = suc m /\
           x e. ( F ` ( g ` m ) ) ) \/ ( dom g = (/) /\ x e. A ) ) } ) $.
     $( Lemma to connect transfinite recursion theorems with finite recursion.
@@ -55429,28 +55456,29 @@ $)
        and this lemma lets us satisfy hypotheses of those theorems.
 
        (Contributed by Jim Kingdon, 15-Aug-2019.) $)
-    frectfr $p |- ( ( F Fn _V /\ A e. V ) ->
+    frectfr $p |- ( ( A. z ( F ` z ) e. _V /\ A e. V ) ->
         A. y ( Fun G /\ ( G ` y ) e. _V ) ) $=
-      ( cvv wfn wcel wa wfun cv cfv cdm csuc wceq vex com wrex c0 wo wral simpl
-      cab a1i simpr frecabex ralrimivw fnmpt syl funfvex funfni sylancl funmpt2
-      jctil alrimiv ) FJKZCHLZMZGNZBOZGPJLZMBVBVEVCVBGJKZVDJLVEVBDOZQZEOZRSAOZV
-      IVGPFPLMEUAUBVHUCSVJCLMUDAUGZJLZDJUEVFVBVLDJVBACVGEFJHVGJLVBDTUHUTVAUFUTV
-      AUIUJUKDJVKGJIULUMBTVEJVDGVDGUNUOUPDJVKGIUQURUS $.
+      ( cv cfv cvv wcel wal wa wfun wfn wceq vex cdm csuc com wrex cab wral a1i
+      c0 wo simpl simpr frecabex ralrimivw fnmpt funfvex funfni sylancl funmpt2
+      syl jctil alrimiv ) CKGLMNCOZDINZPZHQZBKZHLMNZPBVDVGVEVDHMRZVFMNVGVDEKZUA
+      ZFKZUBSAKZVKVILGLNPFUCUDVJUHSVLDNPUIAUEZMNZEMUFVHVDVNEMVDACDVIFGMIVIMNVDE
+      TUGVBVCUJVBVCUKULUMEMVMHMJUNUSBTVGMVFHVFHUOUPUQEMVMHJURUTVA $.
   $}
 
   ${
-    $d f g m u v x y z A $.  $d f g u v x y z m F $.  $d u x B $.
-    $d g m y V $.
+    $d A f g m u v x y z $.  $d B g m u x z $.  $d F f g m u v x y z $.
+    $d G g m x y z $.  $d V g m x y $.
 
     $( The function generated by finite recursive definition generation is a
-       function on omega.  (Contributed by Jim Kingdon, 11-Aug-2019.) $)
-    frecfnom $p |- ( ( F Fn _V /\ A e. V ) -> frec ( F , A ) Fn _om ) $=
-      ( vg vm vx vy cvv wfn wcel wa cv cdm csuc wceq cfv com con0 cres eqid cab
-      wrex c0 wo cmpt crecs cin cfrec frectfr tfri1d fnresin1 syl wb wss omsson
-      sseqin2 mpbi reseq2i df-frec eqtr4i fneq12 mp2an sylib ) BHIACJKZDHDLZMZE
-      LZNOFLZVGVEPBPJKEQUBVFUCOVHAJKUDFUAUEZUFZRQUGZSZVKIZBAUHZQIZVDVJRIVMVDGVJ
-      VIVJTFGADEBVICVITUIUJRQVJUKULVLVNOVKQOZVMVOUMVLVJQSVNVKQVJQRUNVPUOQRUPUQZ
-      URFDEBAUSUTVQVKQVLVNVAVBVC $.
+       function on omega.  (Contributed by Jim Kingdon, 13-May-2020.) $)
+    frecfnom $p |- ( ( A. z ( F ` z ) e. _V /\ A e. V ) ->
+        frec ( F , A ) Fn _om ) $=
+      ( vg vm vx vy cv cfv cvv wcel wal wa wceq com con0 cres wfn eqid cdm csuc
+      wrex c0 wo cab cmpt crecs cin cfrec frectfr tfri1d fnresin1 syl wb omsson
+      wss sseqin2 mpbi reseq2i df-frec eqtr4i fneq12 mp2an sylib ) AICJKLAMBDLN
+      ZEKEIZUAZFIZUBOGIZVIVGJCJLNFPUCVHUDOVJBLNUEGUFUGZUHZQPUIZRZVMSZCBUJZPSZVF
+      VLQSVOVFHVLVKVLTGHABEFCVKDVKTUKULQPVLUMUNVNVPOVMPOZVOVQUOVNVLPRVPVMPVLPQU
+      QVRUPPQURUSZUTGEFCBVAVBVSVMPVNVPVCVDVE $.
 
     ${
       $d A f g m u v x y z $.  $d B g m u x $.  $d F f g m u v x y z $.
@@ -55459,99 +55487,107 @@ $)
         E. m e. _om ( dom g = suc m /\ x e. ( F ` ( g ` m ) ) )
         \/ ( dom g = (/) /\ x e. A ) ) } ) $.
       $( Lemma for ~ frecsuc .  (Contributed by Jim Kingdon, 13-Aug-2019.) $)
-      frecsuclem1 $p |- ( ( F Fn _V /\ A e. V /\ B e. _om ) ->
+      frecsuclem1 $p |- ( ( A. z ( F ` z ) e. _V /\ A e. V /\ B e. _om ) ->
           ( frec ( F , A ) ` suc B ) = ( G ` ( recs ( G ) |` suc B ) ) ) $=
-        ( vy cvv wcel com csuc cfv crecs cres wceq cv wa wfn w3a cfrec cdm wrex
+        ( vy cv cfv cvv wcel com csuc cres wceq wa wal w3a cfrec crecs cdm wrex
         c0 cab cmpt df-frec recseq ax-mp reseq1i eqtr4i fveq1i peano2 fvres syl
-        wo syl5eq 3ad2ant3 con0 nnon eqid frectfr tfri2d sylan2 3impa eqtrd ) F
-        KUAZBHLZCMLZUBCNZFBUCZOZVLGPZOZVOVLQGOZVKVIVNVPRVJVKVNVLVOMQZOZVPVLVMVR
-        VMDKDSZUDZESZNRASZWBVTOFOLTEMUEWAUFRWCBLTURAUGUHZPZMQVRADEFBUIVOWEMGWDR
-        VOWERIGWDUJUKULUMUNVKVLMLZVSVPRCUOZVLMVOUPUQUSUTVIVJVKVPVQRZVKVIVJTZVLV
-        ALZWHVKWFWJWGVLVBUQWIJVLVOGVOVCAJBDEFGHIVDVEVFVGVH $.
+        wo syl5eq 3ad2ant3 con0 nnon eqid frectfr tfri2d sylan2 3impa eqtrd ) B
+        LGMNOBUAZCIOZDPOZUBDQZGCUCZMZVMHUDZMZVPVMRHMZVLVJVOVQSVKVLVOVMVPPRZMZVQ
+        VMVNVSVNENELZUEZFLZQSALZWCWAMGMOTFPUFWBUGSWDCOTUSAUHUIZUDZPRVSAEFGCUJVP
+        WFPHWESVPWFSJHWEUKULUMUNUOVLVMPOZVTVQSDUPZVMPVPUQURUTVAVJVKVLVQVRSZVLVJ
+        VKTZVMVBOZWIVLWGWKWHVMVCURWJKVMVPHVPVDAKBCEFGHIJVEVFVGVHVI $.
 
       $( Lemma for ~ frecsuc .  (Contributed by Jim Kingdon, 15-Aug-2019.) $)
-      frecsuclemdm $p |- ( ( F Fn _V /\ A e. V /\ B e. _om ) ->
+      frecsuclemdm $p |- ( ( A. z ( F ` z ) e. _V /\ A e. V /\ B e. _om ) ->
           dom ( recs ( G ) |` suc B ) = suc B ) $=
-        ( vy cvv wfn wcel com w3a csuc cdm wss wceq con0 cres suceloni 3ad2ant3
-        crecs nnon onss 3syl eqid frectfr tfri1d fndm syl sseq2d 3adant3 mpbird
-        wb wa ssdmres sylib ) FKLZBHMZCNMZOZCPZGUDZQZRZVEVDUAQVDSVCVGVDTRZVBUTV
-        HVAVBCTMVDTMVHCUECUBVDUFUGUCUTVAVGVHUPVBUTVAUQZVFTVDVIVETLVFTSVIJVEGVEU
-        HAJBDEFGHIUIUJTVEUKULUMUNUOVDVEURUS $.
+        ( vy cv cfv cvv wcel wal cdm wss wceq con0 com w3a csuc crecs cres nnon
+        suceloni onss 3syl 3ad2ant3 wb wfn eqid frectfr tfri1d fndm syl 3adant3
+        wa sseq2d mpbird ssdmres sylib ) BLGMNOBPZCIOZDUAOZUBZDUCZHUDZQZRZVIVHU
+        EQVHSVGVKVHTRZVFVDVLVEVFDTOVHTOVLDUFDUGVHUHUIUJVDVEVKVLUKVFVDVEUSZVJTVH
+        VMVITULVJTSVMKVIHVIUMAKBCEFGHIJUNUOTVIUPUQUTURVAVHVIVBVC $.
 
       $( Lemma for ~ frecsuc .  (Contributed by Jim Kingdon, 15-Aug-2019.) $)
-      frecsuclem2 $p |- ( ( F Fn _V /\ A e. V /\ B e. _om ) ->
+      frecsuclem2 $p |- ( ( A. z ( F ` z ) e. _V /\ A e. V /\ B e. _om ) ->
           ( ( recs ( G ) |` suc B ) ` B ) = ( frec ( F , A ) ` B ) ) $=
-        ( com wcel cvv crecs csuc cres cfv wceq fvres cv wa wfn sucidg syl wrex
-        cfrec cdm c0 cab cmpt df-frec recseq ax-mp reseq1i eqtr4i fveq1i syl5eq
-        wo eqtr4d 3ad2ant3 ) CJKZFLUACGMZCNZOPZCFBUEZPZQBHKUTVCCVAPZVEUTCVBKVCV
-        FQCJUBCVBVARUCUTVECVAJOZPVFCVDVGVDDLDSZUFZESZNQASZVJVHPFPKTEJUDVIUGQVKB
-        KTUQAUHUIZMZJOVGADEFBUJVAVMJGVLQVAVMQIGVLUKULUMUNUOCJVARUPURUS $.
+        ( com wcel cv cfv cvv crecs csuc cres wceq fvres wal cfrec syl cdm wrex
+        sucidg wa c0 cab cmpt df-frec recseq ax-mp reseq1i eqtr4i fveq1i syl5eq
+        wo eqtr4d 3ad2ant3 ) DKLZBMGNOLBUADHPZDQZRNZDGCUBZNZSCILVAVDDVBNZVFVADV
+        CLVDVGSDKUFDVCVBTUCVAVFDVBKRZNVGDVEVHVEEOEMZUDZFMZQSAMZVKVINGNLUGFKUEVJ
+        UHSVLCLUGURAUIUJZPZKRVHAEFGCUKVBVNKHVMSVBVNSJHVMULUMUNUOUPDKVBTUQUSUT
+        $.
 
       $( Lemma for ~ frecsuc .  (Contributed by Jim Kingdon, 15-Aug-2019.) $)
-      frecsuclem3 $p |- ( ( F Fn _V /\ A e. V /\ B e. _om ) ->
+      frecsuclem3 $p |- ( ( A. z ( F ` z ) e. _V /\ A e. V /\ B e. _om ) ->
           ( frec ( F , A ) ` suc B ) = ( F ` ( frec ( F , A ) ` B ) ) ) $=
-        ( cvv wcel com cfv cv wceq wa wrex c0 wo eqeq1d vy wfn csuc cfrec crecs
-        w3a cres cdm cab wfun con0 eqid frectfr tfri1d fnfun syl 3adant3 peano2
-        3ad2ant3 resfunexg syl2anc simp1 simp2 frecabex wi fveq1 fveq2d anbi12d
-        dmeq eleq2d rexbidv anbi1d orbi12d abbidv fvmptg ex frecsuclem1 sylibrd
-        mpd abeq2d wn wb frecsuclemdm wne peano3 eqnetrd neneqd intnanrd syl6bb
-        biorf orcom vex mpan2 bitrd eqcom 3bitr2d fveq2 ceqsrexbv 3anibar eqrdv
-        suc11g frecsuclem2 eqtrd ) FJUBZBHKZCLKZUFZCUCZFBUDZMZCGUEZXHUGZMZFMZCX
-        IMZFMXGAXJXNXDXEXFANZXJKZXPXNKZXGXQENZCOZXPXSXLMZFMZKZPZELQZXFXRPXGXQXL
-        UHZXSUCZOZYCPZELQZYFROZXPBKZPZSZYJYEXGYNAXJXGYNAUIZJKZXJYOOZXGABXLEFJHX
-        GXKUJZXHLKZXLJKZXDXEYRXFXDXEPZXKUKUBYRUUAUAXKGXKULAUABDEFGHIUMUNUKXKUOU
-        PUQXFXDYSXECURUSXKXHLUTVAZXDXEXFVBXDXEXFVCVDXGYPXLGMZYOOZYQXGYTYPUUDVEU
-        UBYTYPUUDDXLDNZUHZYGOZXPXSUUEMZFMZKZPZELQZUUFROZYLPZSZAUIYOJJGUUEXLOZUU
-        OYNAUUPUULYJUUNYMUUPUUKYIELUUPUUGYHUUJYCUUPUUFYFYGUUEXLVIZTUUPUUIYBXPUU
-        PUUHYAFXSUUEXLVFVGVJVHVKUUPUUMYKYLUUPUUFYFRUUQTVLVMVNIVOVPUPXGXJUUCYOAB
-        CDEFGHIVQTVRVSVTXGYJYMYJSZYNXGYMWAYJUURWBXGYKYLXGYFRXGYFXHRABCDEFGHIWCZ
-        XFXDXHRWDXECWEUSWFWGWHYMYJWJUPYMYJWKWIXGYIYDELXGYHXTYCXGYHCXSOZXTXGYHXH
-        YGOZUUTXGYFXHYGUUSTXFXDUVAUUTWBZXEXFXSJKUVBEWLCXSLJXAWMUSWNCXSWOWIVLVKW
-        PYCXRECLXTYBXNXPXTYAXMFXSCXLWQVGVJWRWIWSWTXGXMXOFABCDEFGHIXBVGXC $.
+        ( cv cfv cvv wcel com wceq wa wrex c0 eqeq1d vy wal w3a csuc cfrec cres
+        crecs cdm wo cab wfun con0 wfn eqid frectfr tfri1d fnfun 3adant3 peano2
+        syl 3ad2ant3 resfunexg syl2anc simp1 simp2 frecabex fveq1 fveq2d eleq2d
+        wi dmeq anbi12d rexbidv anbi1d orbi12d abbidv fvmptg ex frecsuclem1 mpd
+        sylibrd abeq2d wn frecsuclemdm wne peano3 eqnetrd neneqd intnanrd biorf
+        orcom syl6bb vex suc11g mpan2 bitrd eqcom 3bitr2d fveq2 ceqsrexbv eqrdv
+        wb 3anibar frecsuclem2 eqtrd ) BKGLMNBUBZCINZDONZUCZDUDZGCUEZLZDHUGZXJU
+        FZLZGLZDXKLZGLXIAXLXPXFXGXHAKZXLNZXRXPNZXIXSFKZDPZXRYAXNLZGLZNZQZFORZXH
+        XTQXIXSXNUHZYAUDZPZYEQZFORZYHSPZXRCNZQZUIZYLYGXIYPAXLXIYPAUJZMNZXLYQPZX
+        IABCXNFGMIXIXMUKZXJONZXNMNZXFXGYTXHXFXGQZXMULUMYTUUCUAXMHXMUNAUABCEFGHI
+        JUOUPULXMUQUTURXHXFUUAXGDUSVAXMXJOVBVCZXFXGXHVDXFXGXHVEVFXIYRXNHLZYQPZY
+        SXIUUBYRUUFVJUUDUUBYRUUFEXNEKZUHZYIPZXRYAUUGLZGLZNZQZFORZUUHSPZYNQZUIZA
+        UJYQMMHUUGXNPZUUQYPAUURUUNYLUUPYOUURUUMYKFOUURUUIYJUULYEUURUUHYHYIUUGXN
+        VKZTUURUUKYDXRUURUUJYCGYAUUGXNVGVHVIVLVMUURUUOYMYNUURUUHYHSUUSTVNVOVPJV
+        QVRUTXIXLUUEYQABCDEFGHIJVSTWAVTWBXIYLYOYLUIZYPXIYOWCYLUUTXBXIYMYNXIYHSX
+        IYHXJSABCDEFGHIJWDZXHXFXJSWEXGDWFVAWGWHWIYOYLWJUTYOYLWKWLXIYKYFFOXIYJYB
+        YEXIYJDYAPZYBXIYJXJYIPZUVBXIYHXJYIUVATXHXFUVCUVBXBZXGXHYAMNUVDFWMDYAOMW
+        NWOVAWPDYAWQWLVNVMWRYEXTFDOYBYDXPXRYBYCXOGYADXNWSVHVIWTWLXCXAXIXOXQGABC
+        DEFGHIJXDVHXE $.
     $}
   $}
 
   ${
-    $d A f g m x y $.  $d B g m y $.  $d F f g m n x y $.  $d V g m y $.
+    $d A f g m x y $.  $d A g m y z $.  $d B g m y z $.  $d F f g m n x y $.
+    $d F g m y z $.  $d V g m y $.  $d f x n z $.
     $( The successor value resulting from finite recursive definition
        generation.  (Contributed by Jim Kingdon, 15-Aug-2019.) $)
-    frecsuc $p |- ( ( F Fn _V /\ A e. V /\ B e. _om ) ->
+    frecsuc $p |- ( ( A. z ( F ` z ) e. _V /\ A e. V /\ B e. _om ) ->
         ( frec ( F , A ) ` suc B ) = ( F ` ( frec ( F , A ) ` B ) ) ) $=
-      ( vy vg vm vf vn vx cvv cv wceq cfv wcel wa com wrex wo cab cdm csuc cmpt
+      ( vy vg vm vf vx cvv cv wceq cfv wcel wa com wrex wo cab vn cdm csuc cmpt
       c0 suceq eqeq2d fveq2 fveq2d eleq2d anbi12d cbvrexv orbi1i anbi2d rexbidv
       abbii eleq1 orbi12d cbvabv eqtri mpteq2i dmeq eqeq1d fveq1 anbi1d cbvmptv
-      abbidv frecsuclem3 ) EABFGCHKHLZUAZILZUBZMZJLZVJVHNZCNZOZPZIQRZVIUDMZVMAO
-      ZPZSZJTZUCZDWDHKVIGLZUBZMZELZWEVHNZCNZOZPZGQRZVSWHAOZPZSZETZUCFKFLZUAZWFM
-      ZWHWEWRNZCNZOZPZGQRZWSUDMZWNPZSZETZUCHKWCWQWCWGVMWJOZPZGQRZWASZJTWQWBXMJV
-      RXLWAVQXKIGQVJWEMZVLWGVPXJXNVKWFVIVJWEUEUFXNVOWJVMXNVNWICVJWEVHUGUHUIUJUK
-      ULUOXMWPJEVMWHMZXLWMWAWOXOXKWLGQXOXJWKWGVMWHWJUPUMUNXOVTWNVSVMWHAUPUMUQUR
-      USUTHFKWQXIVHWRMZWPXHEXPWMXEWOXGXPWLXDGQXPWGWTWKXCXPVIWSWFVHWRVAZVBXPWJXB
-      WHXPWIXACWEVHWRVCUHUIUJUNXPVSXFWNXPVIWSUDXQVBVDUQVFVEUSVG $.
+      abbidv frecsuclem3 ) FABCGHDIKILZUBZUALZUCZMZJLZVKVINZDNZOZPZUAQRZVJUEMZV
+      NBOZPZSZJTZUDZEWEIKVJHLZUCZMZFLZWFVINZDNZOZPZHQRZVTWIBOZPZSZFTZUDGKGLZUBZ
+      WGMZWIWFWSNZDNZOZPZHQRZWTUEMZWOPZSZFTZUDIKWDWRWDWHVNWKOZPZHQRZWBSZJTWRWCX
+      NJVSXMWBVRXLUAHQVKWFMZVMWHVQXKXOVLWGVJVKWFUFUGXOVPWKVNXOVOWJDVKWFVIUHUIUJ
+      UKULUMUPXNWQJFVNWIMZXMWNWBWPXPXLWMHQXPXKWLWHVNWIWKUQUNUOXPWAWOVTVNWIBUQUN
+      URUSUTVAIGKWRXJVIWSMZWQXIFXQWNXFWPXHXQWMXEHQXQWHXAWLXDXQVJWTWGVIWSVBZVCXQ
+      WKXCWIXQWJXBDWFVIWSVDUIUJUKUOXQVTXGWOXQVJWTUEXRVCVEURVGVFUTVH $.
   $}
 
   ${
     frecrdg.1 $e |- ( ph -> F Fn _V ) $.
     frecrdg.2 $e |- ( ph -> A e. V ) $.
     frecrdg.inc $e |- ( ph -> A. x x C_ ( F ` x ) ) $.
-    $d A x y $.  $d F x y $.  $d V x $.  $d ph x y $.
+    $d A x y z $.  $d F x y z $.  $d V x $.  $d ph x y $.
     $( Transfinite recursion restricted to omega.
 
        Given a suitable characteristic function, ~ df-frec produces the same
-       results as ~ df-irdg restricted to ` _om ` .  (Contributed by Jim
-       Kingdon, 29-Aug-2019.) $)
+       results as ~ df-irdg restricted to ` _om ` .
+
+       Presumably the theorem would also hold if ` F Fn _V ` were changed to
+       ` A. z ( F `` z ) e. _V ` .  (Contributed by Jim Kingdon,
+       29-Aug-2019.) $)
     frecrdg $p |- ( ph -> frec ( F , A ) = ( rec ( F , A ) |` _om ) ) $=
-      ( com wfn wcel con0 cfv wceq c0 fveq2 eqeq12d syl fvres adantr cfrec crdg
-      cres cvv frecfnom syl2anc wss rdgifnon omsson fnssres sylancl csuc frec0g
-      vy cv peano1 ax-mp rdg0g syl5eq eqtr4d wi simpr ad2antlr eqtrd fveq2d jca
-      wa frecsuc 3expa sylan wal rdgisucinc 3eqtr4d peano2 expcom finds2 impcom
-      nnon ex eqfnfvd ) ABIDCUAZDCUBZIUCZADUDJZCEKZWAIJFGCDEUEUFAWBLJZILUGWCIJA
-      WDWEWFFGCDEUHUFUILIWBUJUKBUOZIKAWGWAMZWGWCMZNZWJOWAMZOWCMZNUNUOZWAMZWMWCM
-      ZNZWMULZWAMZWQWCMZNZABUNWGONWHWKWIWLWGOWAPWGOWCPQWGWMNWHWNWIWOWGWMWAPWGWM
-      WCPQWGWQNWHWRWIWSWGWQWAPWGWQWCPQAWKCWLAWEWKCNGCDEUMRAWLOWBMZCOIKWLXANUPOI
-      WBSUQAWEXACNGCEDURRUSUTAWMIKZWPWTVAAXBVGZWPWTXCWPVGZWRWQWBMZWSXDWNDMZWMWB
-      MZDMZWRXEXDWNXGDXDWNWOXGXCWPVBXBWOXGNAWPWMIWBSVCVDVEXCWRXFNZWPAWDWEVGXBXI
-      AWDWEFGVFWDWEXBXICWMDEVHVIVJTXCXEXHNWPXCBCWMDEAWDXBFTAWEXBGTXCXBWMLKAXBVB
-      WMVRRAWGWGDMUGBVKXBHTVLTVMXBWSXENZAWPXBWQIKXJWMVNWQIWBSRVCUTVSVOVPVQVT $.
+      ( vz com cfv cvv wcel wfn syl con0 wceq c0 fveq2 adantr vy cfrec crdg wal
+      cv vex funfvex funfni mpan2 alrimiv frecfnom syl2anc wss rdgifnon2 omsson
+      cres fnssres sylancl csuc eqeq12d frec0g peano1 fvres ax-mp syl5eq eqtr4d
+      rdg0g wi wa simpr ad2antlr eqtrd fveq2d jca frecsuc 3expa nnon rdgisucinc
+      sylan 3eqtr4d peano2 ex expcom finds2 impcom eqfnfvd ) ABJDCUBZDCUCZJUPZA
+      IUEZDKLMZIUDZCEMZWGJNADLNZWLFWNWKIWNWJLMWKIUFWKLWJDWJDUGUHUIUJOZGICDEUKUL
+      AWHPNZJPUMWIJNAWLWMWPWOGICDEUNULUOPJWHUQURBUEZJMAWQWGKZWQWIKZQZWTRWGKZRWI
+      KZQUAUEZWGKZXCWIKZQZXCUSZWGKZXGWIKZQZABUAWQRQWRXAWSXBWQRWGSWQRWISUTWQXCQW
+      RXDWSXEWQXCWGSWQXCWISUTWQXGQWRXHWSXIWQXGWGSWQXGWISUTAXACXBAWMXACQGCDEVAOA
+      XBRWHKZCRJMXBXKQVBRJWHVCVDAWMXKCQGCEDVGOVEVFAXCJMZXFXJVHAXLVIZXFXJXMXFVIZ
+      XHXGWHKZXIXNXDDKZXCWHKZDKZXHXOXNXDXQDXNXDXEXQXMXFVJXLXEXQQAXFXCJWHVCVKVLV
+      MXMXHXPQZXFAWLWMVIXLXSAWLWMWOGVNWLWMXLXSICXCDEVOVPVSTXMXOXRQXFXMBCXCDEAWN
+      XLFTAWMXLGTXMXLXCPMAXLVJXCVQOAWQWQDKUMBUDXLHTVRTVTXLXIXOQZAXFXLXGJMXTXCWA
+      XGJWHVCOVKVFWBWCWDWEWF $.
   $}
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -83845,7 +83881,7 @@ $(
 $)
 
   ${
-    $d y z A $.  $d w z B $.  $d v w x y z C $.  $d v w y z G $.
+    $d A x y z $.  $d B w z $.  $d C v w x y z $.  $d G v w x y z $.
     frec2uz.1 $e |- C e. ZZ $.
     frec2uz.2 $e |- G = frec ( ( x e. ZZ |-> ( x + 1 ) ) , C ) $.
     $( The mapping ` G ` is a one-to-one mapping from ` _om ` onto upper
@@ -83858,6 +83894,37 @@ $)
     frec2uz0i $p |- ( G ` (/) ) = C $=
       ( c0 cfv cz cv c1 caddc co cmpt cfrec fveq1i wcel wceq frec0g ax-mp eqtri
       ) FCGFAHAIJKLMZBNZGZBFCUBEOBHPUCBQDBUAHRST $.
+
+    $( The value of ` G ` (see ~ frec2uz0i ) is an integer.  (Contributed by
+       Jim Kingdon, 14-May-2020.) $)
+    frec2uzzi $p |- ( A e. _om -> ( G ` A ) e. ZZ ) $=
+      ( vy vz cv cfv cz wcel c0 wceq fveq2 eleq1d c1 caddc co cvv eqeltri com
+      csuc frec2uz0i cmpt cfrec wal zex mptex vex fvex ax-gen frecsuc mp3an12
+      fveq1i fveq2i 3eqtr4g oveq1 eqid peano2z fvmpt3 sylan9eq adantl eqeltrd
+      wa ex finds ) AIZDJZKLMDJZKLGIZDJZKLZVKUCZDJZKLZBDJZKLAGBVHMNVIVJKVHMDO
+      PVHVKNVIVLKVHVKDOPVHVNNVIVOKVHVNDOPVHBNVIVQKVHBDOPVJCKACDEFUDEUAVKUBLZV
+      MVPVRVMVEVOVLQRSZKVRVMVOVLAKVHQRSZUEZJZVSVRVNWACUFZJZVKWCJZWAJZVOWBHIZW
+      AJTLZHUGCKLVRWDWFNWHHWGWATTAKVTUHUIHUJUKULEHCVKWAKUMUNVNDWCFUOVLWEWAVKD
+      WCFUOUPUQAVLVTVSKWAKVHVLQRURWAUSVHUTVAVBVMVSKLVRVLUTVCVDVFVG $.
+
+    $( The value of ` G ` (see ~ frec2uz0i ) at a successor.  (Contributed by
+       Jim Kingdon, 14-May-2020.) $)
+    frec2uzsuci $p |- ( A e. _om -> ( G ` suc A ) = ( ( G ` A ) + 1 ) ) $=
+      ( vy com wcel csuc cfv cz cv c1 caddc co cmpt cvv wceq fveq1i cfrec wal
+      zex mptex vex fvex ax-gen frecsuc mp3an12 fveq2i 3eqtr4g frec2uzzi eqid
+      oveq1 peano2z fvmpt3 syl eqtrd ) BHIZBJZDKZBDKZALAMZNOPZQZKZVBNOPZUSUTV
+      ECUAZKZBVHKZVEKZVAVFGMZVEKRIZGUBCLIUSVIVKSVMGVLVERRALVDUCUDGUEUFUGEGCBV
+      ELUHUIUTDVHFTVBVJVEBDVHFTUJUKUSVBLIVFVGSABCDEFULAVBVDVGLVELVCVBNOUNVEUM
+      VCUOUPUQUR $.
+
+    $( The value ` G ` (see ~ frec2uz0i ) at an ordinal natural number is in
+       the upper integers.  (Contributed by Jim Kingdon, 14-May-2020.) $)
+    frec2uzuzi $p |- ( A e. _om -> ( G ` A ) e. ( ZZ>= ` C ) ) $=
+      ( vy vz cv cfv cuz wcel c0 csuc wceq fveq2 eleq1d frec2uz0i cz uzid ax-mp
+      eqeltri com c1 caddc co peano2uz frec2uzsuci syl5ibr finds ) GIZDJZCKJZLM
+      DJZUMLHIZDJZUMLZUONZDJZUMLZBDJZUMLGHBUKMOULUNUMUKMDPQUKUOOULUPUMUKUODPQUK
+      UROULUSUMUKURDPQUKBOULVAUMUKBDPQUNCUMACDEFRCSLCUMLECTUAUBUQUTUOUCLZUPUDUE
+      UFZUMLCUPUGVBUSVCUMAUOCDEFUHQUIUJ $.
   $}
 
 $(
