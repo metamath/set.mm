@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-May-2020
+$( iset.mm - Version of 15-May-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -83979,6 +83979,21 @@ $)
       DEVCWLTLKXEWCKWRVDLTCVEUNVGWFXCVHWGWFWKXCWSWJXCGLWTWJVIWHVJZCIZXBWCWTWJXG
       WIOPQXBAWHBCDEVKWIWEOPVLVMWTXGWCKZWJWTWLXFLKXHWRWHVNLXFCVEVOVQVPVRVBVSVTW
       AWB $.
+
+    $( ` G ` (see ~ frec2uz0i ) is a one-to-one onto mapping.  (Contributed by
+       Jim Kingdon, 15-May-2020.) $)
+    frec2uzf1oi $p |- G : _om -1-1-onto-> ( ZZ>= ` C ) $=
+      ( vy vz com cfv wceq cv wi cz cvv wcel mpbir2an wa wn clt adantr cuz wf1o
+      wf1 crn wf wral wfn wss c1 caddc cmpt cfrec wal zex mptex vex fvex ax-gen
+      frecfnom mp2an fneq1i mpbir frec2uzrani eqimssi df-f frec2uzzi zred ltnrd
+      co wbr simpr breq2d mtbid frec2uzlti con3d mpd breq1d ancoms wb mpbir2and
+      mtod nntri3 ex rgen2a dff13 dff1o5 ) HBUAIZCUBHWGCUCZCUDZWGJWHHWGCUEZFKZC
+      IZGKZCIZJZWKWMJZLZGHUFFHUFWJCHUGZWIWGUHWRAMAKUIUJVIZUKZBULZHUGZWMWTINOZGU
+      MBMOXBXCGWMWTNNAMWSUNUOGUPUQURDGBWTMUSUTHCXAEVAVBWIWGABCDEVCZVDHWGCVEPWQF
+      GHWKHOZWMHOZQZWOWPXGWOQZWPWKWMOZRZWMWKOZRZXHWLWNSVJZRZXJXHWLWLSVJZXMXGXOR
+      WOXGWLXGWLXEWLMOXFAWKBCDEVFTVGVHTZXHWLWNWLSXGWOVKZVLVMXGXNXJLWOXGXIXMAWKW
+      MBCDEVNVOTVPXHXKWNWLSVJZXHXOXRXPXHWLWNWLSXQVQVMXGXKXRLZWOXFXEXSAWMWKBCDEV
+      NVRTWAXGWPXJXLQVSWOWKWMWBTVTWCWDFGHWGCWEPXDHWGCWFP $.
   $}
 
 $(
