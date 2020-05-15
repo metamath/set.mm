@@ -83898,24 +83898,24 @@ $)
     $( The value of ` G ` (see ~ frec2uz0i ) is an integer.  (Contributed by
        Jim Kingdon, 14-May-2020.) $)
     frec2uzzi $p |- ( A e. _om -> ( G ` A ) e. ZZ ) $=
-      ( vy vz cv cfv cz wcel c0 wceq fveq2 eleq1d c1 caddc co cvv eqeltri com
-      csuc frec2uz0i cmpt cfrec wal zex mptex vex fvex ax-gen frecsuc mp3an12
-      fveq1i fveq2i 3eqtr4g oveq1 eqid peano2z fvmpt3 sylan9eq adantl eqeltrd
-      wa ex finds ) AIZDJZKLMDJZKLGIZDJZKLZVKUCZDJZKLZBDJZKLAGBVHMNVIVJKVHMDO
-      PVHVKNVIVLKVHVKDOPVHVNNVIVOKVHVNDOPVHBNVIVQKVHBDOPVJCKACDEFUDEUAVKUBLZV
-      MVPVRVMVEVOVLQRSZKVRVMVOVLAKVHQRSZUEZJZVSVRVNWACUFZJZVKWCJZWAJZVOWBHIZW
-      AJTLZHUGCKLVRWDWFNWHHWGWATTAKVTUHUIHUJUKULEHCVKWAKUMUNVNDWCFUOVLWEWAVKD
-      WCFUOUPUQAVLVTVSKWAKVHVLQRURWAUSVHUTVAVBVMVSKLVRVLUTVCVDVFVG $.
+      ( vy vz cv cfv cz wcel c0 wceq fveq2 eleq1d c1 caddc co cvv frec2uz0i com
+      csuc eqeltri wa cmpt cfrec wal zex vex fvex ax-gen frecsuc mp3an12 fveq1i
+      mptex fveq2i 3eqtr4g oveq1 eqid peano2z fvmpt3 sylan9eq adantl eqeltrd ex
+      finds ) AIZDJZKLMDJZKLGIZDJZKLZVKUCZDJZKLZBDJZKLAGBVHMNVIVJKVHMDOPVHVKNVI
+      VLKVHVKDOPVHVNNVIVOKVHVNDOPVHBNVIVQKVHBDOPVJCKACDEFUAEUDVKUBLZVMVPVRVMUEV
+      OVLQRSZKVRVMVOVLAKVHQRSZUFZJZVSVRVNWACUGZJZVKWCJZWAJZVOWBHIZWAJTLZHUHCKLV
+      RWDWFNWHHWGWATTAKVTUIUPHUJUKULEHCVKWAKUMUNVNDWCFUOVLWEWAVKDWCFUOUQURAVLVT
+      VSKWAKVHVLQRUSWAUTVHVAVBVCVMVSKLVRVLVAVDVEVFVG $.
 
     $( The value of ` G ` (see ~ frec2uz0i ) at a successor.  (Contributed by
        Jim Kingdon, 14-May-2020.) $)
     frec2uzsuci $p |- ( A e. _om -> ( G ` suc A ) = ( ( G ` A ) + 1 ) ) $=
-      ( vy com wcel csuc cfv cz cv c1 caddc co cmpt cvv wceq fveq1i cfrec wal
-      zex mptex vex fvex ax-gen frecsuc mp3an12 fveq2i 3eqtr4g frec2uzzi eqid
-      oveq1 peano2z fvmpt3 syl eqtrd ) BHIZBJZDKZBDKZALAMZNOPZQZKZVBNOPZUSUTV
-      ECUAZKZBVHKZVEKZVAVFGMZVEKRIZGUBCLIUSVIVKSVMGVLVERRALVDUCUDGUEUFUGEGCBV
-      ELUHUIUTDVHFTVBVJVEBDVHFTUJUKUSVBLIVFVGSABCDEFULAVBVDVGLVELVCVBNOUNVEUM
-      VCUOUPUQUR $.
+      ( vy com wcel csuc cfv cz cv c1 caddc co cmpt cvv wceq fveq1i cfrec mptex
+      wal zex vex ax-gen frecsuc mp3an12 fveq2i 3eqtr4g frec2uzzi oveq1 peano2z
+      fvex eqid fvmpt3 syl eqtrd ) BHIZBJZDKZBDKZALAMZNOPZQZKZVBNOPZUSUTVECUAZK
+      ZBVHKZVEKZVAVFGMZVEKRIZGUCCLIUSVIVKSVMGVLVERRALVDUDUBGUEUNUFEGCBVELUGUHUT
+      DVHFTVBVJVEBDVHFTUIUJUSVBLIVFVGSABCDEFUKAVBVDVGLVELVCVBNOULVEUOVCUMUPUQUR
+      $.
 
     $( The value ` G ` (see ~ frec2uz0i ) at an ordinal natural number is in
        the upper integers.  (Contributed by Jim Kingdon, 14-May-2020.) $)
