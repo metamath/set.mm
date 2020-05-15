@@ -83881,7 +83881,7 @@ $(
 $)
 
   ${
-    $d A x y z $.  $d B w z $.  $d C v w x y z $.  $d G v w x y z $.
+    $d A x y z $.  $d B w x z $.  $d C v w x y z $.  $d G v w x y z $.
     frec2uz.1 $e |- C e. ZZ $.
     frec2uz.2 $e |- G = frec ( ( x e. ZZ |-> ( x + 1 ) ) , C ) $.
     $( The mapping ` G ` is a one-to-one mapping from ` _om ` onto upper
@@ -83943,6 +83943,18 @@ $)
       RXKUKVOXDWQXJVQKAWJDEFGUSRUNVOVQDUTJZIZWLXMIZXLXKUKZXDABDEFGVAAWJDEFGVAXN
       VQVBIZWLVBIZXPXODVQVCDWLVCVQWLVDVEVEVOXQXRXLXHUKXDABDEFGVFAWJDEFGVFVQWLVG
       VEVISVJVKVLVMVN $.
+
+    $( The mapping ` G ` (see ~ frec2uz0i ) preserves order.  (Contributed by
+       Jim Kingdon, 14-May-2020.) $)
+    frec2uzlt2i $p |- ( ( A e. _om /\ B e. _om ) ->
+        ( A e. B <-> ( G ` A ) < ( G ` B ) ) ) $=
+      ( com wcel wa cfv clt wbr frec2uzlti wceq wi cz adantr zred ex ax-1 fveq2
+      w3o nntri3or a1i adantl breq2d biimpar frec2uzzi pm2.21dd ad2antlr ancoms
+      ltnrd imp ltnsymd pm2.21d 3jaod mpd impbid ) BHIZCHIZJZBCIZBEKZCEKZLMZABC
+      DEFGNVBVCBCOZCBIZUCVFVCPZBCUDVBVCVIVGVHVCVIPVBVCVFUAUEVBVGVIVBVGJZVFVCVJV
+      FJZVDVDLMZVCVJVLVFVJVDVEVDLVGVDVEOVBBCEUBUFUGUHVKVDVKVDVJVDQIZVFVBVMVGUTV
+      MVAABDEFGUIRZRRSUMUJTTVBVHVIVBVHJZVFVCVOVEVDVOVEVAVEQIUTVHACDEFGUIUKSVOVD
+      VBVMVHVNRSVBVHVEVDLMZVAUTVHVPPACBDEFGNULUNUOUPTUQURUS $.
   $}
 
 $(
