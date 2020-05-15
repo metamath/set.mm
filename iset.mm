@@ -56317,6 +56317,15 @@ $)
     CDZEZABFZBADZGZABHULUOABDZABIZJZUMULUPUQUNKZUOURLABMUSUNURUSURUNUSURUNJUPUQ
     UNNOPQRULUPUMUQUKUPUMLUJUKUPUMUKBSUPUMBTBAUAUBUCUDUQUMLULABUEUFUGUHUI $.
 
+  $( A trichotomy law for natural numbers.  (Contributed by Jim Kingdon,
+     15-May-2020.) $)
+  nntri3 $p |- ( ( A e. _om /\ B e. _om ) ->
+      ( A = B <-> ( -. A e. B /\ -. B e. A ) ) ) $=
+    ( com wcel wa wceq wn wb elirr eleq2 mtbii con2i adantl simpl 2falsed simpr
+    eleq1 jca 2thd nntri3or mpjao3dan ) ACDBCDEZABDZABFZUCGZBADZGZEZHUDUFUBUCEU
+    DUHUCUDGZUBUDUCUDAADZUCAIZABAJKZLMUCUHGZUBUHUCUEUGNLMOUBUDEUDUHUBUDPUDUHUBU
+    DUEUGULUDUJUFUKABAQKZRMSUBUFEUDUHUFUIUBUDUFUNLMUFUMUBUHUFUEUGPLMOABTUA $.
+
   $( Equality of natural numbers is decidable.  Theorem 7.2.6 of [HoTT], p.
      (varies).  For the specific case where ` B ` is zero, see ~ nndceq0 .
      (Contributed by Jim Kingdon, 31-Aug-2019.) $)
