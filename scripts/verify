@@ -33,7 +33,7 @@ COMMANDS
 run_verify | tee mm$$.log
 
 # Get status, which is false (nonzero) if an error or warning was found.
-! egrep -q '?Error|?Warning' < mm$$.log > /dev/null
+! egrep -q '[?]Error|[?]Warning' < mm$$.log > /dev/null
 result=$?
 
 # Remove the log, or we'll have lots of useless logs

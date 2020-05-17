@@ -1,7 +1,5 @@
 # This file lists the avatars (download images) for people, in the form
 # URL space person-name.file-type
-# We *only* use images that are already
-# publicly-available and associated with that person.
 # Most of these avatars are GitHub avatars, as those are already public;
 # please record the original account URL in a comment so people don't
 # have to work out the username mapping.
@@ -40,7 +38,7 @@ https://cache.legacy.net/legacy/images/cobrands/TheTimes-Tribune/photos/8128942_
 https://avatars0.githubusercontent.com/u/609223?s=460&v=4 Drahflow.png
 
 # https://github.com/jkingdon
-https://avatars3.githubusercontent.com/u/16878?s=460&v=4 Jim Kingdon.jpg
+https://avatars3.githubusercontent.com/u/16878?s=460&u=fbb94f22f3655a6907eb6d8565df2851248d22f3&v=4 Jim Kingdon.png
 
 # Paul Chapman's avatar is derived from https://twitter.com/igblan per email
 # from Paul Chapman dated Tue, 1 Oct 2019 18:01:34 +0100
@@ -49,6 +47,10 @@ https://avatars3.githubusercontent.com/u/16878?s=460&v=4 Jim Kingdon.jpg
 # David A. Wheeler extracted the image and put it on his website
 # so it could extracted here.
 https://dwheeler.com/images/Paul%20Chapman.png Paul Chapman.png
+
+# Jon Pennant (JPP) asked on 2020-04-11 that I use the image in
+# https://imgur.com/QeCKSj4
+https://i.imgur.com/QeCKSj4.jpg Jon Pennant.jpg
 
 # Wolf Lammen posted the following to the Metamath mailing list of
 # Tue, 1 Oct 2019 23:04:56 -0700 (PDT)
@@ -67,6 +69,13 @@ https://dwheeler.com/images/Paul%20Chapman.png Paul Chapman.png
 # but out of an abundance of caution I will instead recreate a simple
 # image with the word (it's easy to do).
 
+# On 2020-04-30 David Harvey agreed to let his image from this page:
+# https://web.maths.unsw.edu.au/~davidharvey/
+# be used to represent his contributions to Metamath.
+# David Harvey was the first external contributor to the
+# Metamath Proof Explorer (it was a simplification of notnot2 on 1999-09-05):
+https://web.maths.unsw.edu.au/~davidharvey/david-harvey.jpg David Harvey.jpg
+
 # On Tue, 1 Oct 2019 20:21:20 +0200
 # Alexander van der Vekens sent an email to David A. Wheeler saying,
 # "here is a picture of me (from my linkedin profile) you can use for the
@@ -75,3 +84,20 @@ https://dwheeler.com/images/Paul%20Chapman.png Paul Chapman.png
 # On Wed, 1 Apr 2020 14:10:07 -0700 (PDT)
 # The Dr. Loof Lipra requested that his avatar should be taken from this link:  
 https://i1.wp.com/freevintageimages.co.uk/wp-content/uploads/2018/04/Black-Finned-Sparus.jpg?fit=2000%2C1330&ssl=1 Fool Lipra.png
+
+#
+# Gérard Lang graciously emailed to David A. Wheeler
+# on 2020-04-11 a .psd file of his face.
+# Unfortunately Gource can't handle .psd files, so David hand-converted it.
+#
+# Thierry Arnoux (Tirix) emailed to David A. Wheeler on 2020-04-11
+# his GitHub avatar.
+https://avatars1.githubusercontent.com/u/5831830?s=460&u=f6f5b09d5cf50718cbae7b63656e5eb0baa6c923&v=4 Thierry Arnoux.png
+
+# On 2020-04-12 Stanislas Polu emailed avatars for himself and OpenAI
+# to David A. Wheeler. For OpenAI he sent a .tif file, but many tools
+# can't handle that format, so "convert" was used to create a .png file.
+
+# Giovanni Mascellani
+# On 2020-04-30 Giovanni Mascellani pointed out his Gravatar:
+https://www.gravatar.com/avatar/decd3ea69d3387db2ffb5394ab7abebd?size=256 Giovanni Mascellani.jpg
