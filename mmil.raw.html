@@ -930,7 +930,7 @@ Consider the possibility of giving up. Some things just won't have
 intuitionistic proofs. The more it looks like excluded middle or other
 non-intuitionistic statements, the more likely you are dealing with one of
 these. But it can be hard to have good intuition about this. In some cases it
-may be possible to ask "can I use this statement to prove 'ph or not ph' for an
+may be possible to ask "can I use this statement to prove ` ph \/ -. ph ` for an
 arbitrary proposition" (see ~ ordtriexmid for example ), but this is not always
 an easy technique to apply.
 </LI>
@@ -987,6 +987,11 @@ With excluded middle not equal (` =/= `) and apart (` # `) are equivalent.
 When working with real and complex numbers, apartness is almost always what
 you want. See ~ df-ap for more on apartness.
 </LI>
+
+<LI>Exclusive or ( ` ph \/_ ps ` ) is equivalent to ` ph <-> -. ps `
+given excluded middle but we just have one direction ( ~ xorbin ).
+Consider intuitionizing ` ph <-> -. ps ` as ` ph \/_ ps `
+(example: ~ rpnegap ).</LI>
 
 <LI>
 If you get stuck, ask! (for example in a GitHub issue or on the mailing list).
@@ -1051,6 +1056,11 @@ pm2.61iii , pm2.61ian , pm2.61dan , pm2.61ddan , pm2.61dda , pm2.61ine , pm2.61n
 pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TD>
 <TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>impcon4bid, con4bid, notbi, con1bii, con4bii, con2bii</TD>
+<TD>~ con3 , ~ condc</TD>
 </TR>
 
 <TR>
@@ -1186,9 +1196,7 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 
 <TR>
 <TD>nne</TD>
-<TD><I>none</I></TD>
-<TD>The reverse direction could be proved; the forward direction
-is double negation elimination.</TD>
+<TD>~ nner , ~ nnedc</TD>
 </TR>
 
 <TR>
@@ -1266,6 +1274,11 @@ is double negation elimination.</TD>
 <TR>
 <TD>r19.30</TD>
 <TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>r19.35</TD>
+<TD>~ r19.35-1</TD>
 </TR>
 
 <TR>
@@ -2043,6 +2056,13 @@ middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
+<TD>findsg</TD>
+<TD>~ uzind4 </TD>
+<TD>findsg presumably could be proved, but there
+hasn't been a need for it.</TD>
+</TR>
+
+<TR>
 <TD>1stval</TD>
 <TD>~ 1stvalg </TD>
 </TR>
@@ -2344,7 +2364,7 @@ we wanted strict dominance to have the expected properties.</TD>
 
 <TR>
 <TD>2pwuninel</TD>
-<TD>2pwuninelg</TD>
+<TD>~ 2pwuninelg</TD>
 </TR>
 
 <TR>
@@ -2406,13 +2426,6 @@ we wanted strict dominance to have the expected properties.</TD>
 <TR>
 <TD>nlt1pi</TD>
 <TD>~ nlt1pig </TD>
-</TR>
-
-<TR>
-<TD>indpi</TD>
-<TD>~ finds </TD>
-<TD>Although indpi presumably could be proved, it is lightly used
-in set.mm</TD>
 </TR>
 
 <TR>
@@ -3354,20 +3367,9 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-<TD>nnunb , arch , nnrecl , bndndx</TD>
+<TD>nnunb</TD>
 <TD><I>none</I></TD>
-<TD>Dealing with the Archimedean property will need to await adding
-some form of supremum (or other property of sets of reals). Our
-other real number axioms are first-order, and therefore are
-not sufficient to rule out non-Archimedean fields such as
-the hyperreal numbers.</TD>
-</TR>
-
-<TR>
-<TD>nn0n0n1ge2 , nn0n0n1ge2b</TD>
-<TD><I>none yet</I></TD>
-<TD>These should be provable, and might be easy now that we have
-~ztri3or .</TD>
+<TD>Presumably provable from ~ arch but unused in set.mm.</TD>
 </TR>
 
 <TR>
@@ -3379,21 +3381,8 @@ a fintely supported function.</TD>
 </TR>
 
 <TR>
-<TD>elz2 , dfz2</TD>
-<TD><I>none yet</I></TD>
-<TD>Should be provable, but might need to wait until we have
-proved trichotomy of integers.</TD>
-</TR>
-
-<TR>
 <TD>suprzcl</TD>
 <TD><I>none</I></TD>
-</TR>
-
-<TR>
-<TD>btwnz</TD>
-<TD><I>none</I></TD>
-<TD>Depends on arch</TD>
 </TR>
 
 <TR>
@@ -3436,12 +3425,6 @@ in iset.mm</TD>
 <TD><I>none</I></TD>
 <TD>We do not yet have a supremum notation, or most supremum theorems,
 in iset.mm</TD>
-</TR>
-
-<TR>
-<TD>lbzbi</TD>
-<TD><I>none</I></TD>
-<TD>Once we have btwnz in iset.mm, the set.mm proof should work.</TD>
 </TR>
 
 <TR>
@@ -3496,8 +3479,12 @@ maxle , lemin , maxlt , ltmin , max0sub , ifle</TD>
 <TR>
 <TD>qbtwnre , qbtwnxr</TD>
 <TD><I>none yet</I></TD>
-<TD>Once we tackle the Archimedean principle, we should be able
-to prove these.</TD>
+<TD>These should be provable, but the set.mm proof relies on zbtwnre
+(which in turn is proved using the least upper bound property).
+The most straightforward solution is to use a construction-dependent
+proof in terms of ~ df-iltp (the only complicated part of which is
+connecting ` Q. ` and ` QQ ` ). This is the solution adopted by
+Theorem 11.2.6 of [HoTT].</TD>
 </TR>
 
 <TR>
@@ -3697,6 +3684,40 @@ intuitionistic and it is lightly used in set.mm.</TD>
 <TD><I>none</I></TD>
 <TD>Some or all of this presumably could be proven, but the set.mm
 proof is not intuitionistic and it is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>df-fl , df-ceil , and other floor and ceiling theoerms.</TD>
+<TD><I>none</I></TD>
+<TD>Most of the theorems in this section are conjectured to imply
+excluded middle. Imagine a real number which is around 2.99995 or
+3.00001 . In order to determine whether its floor is 2 or 3, it
+would be necessary to compute the number to arbitrary precision.
+For similarity to the Metamath Proof Explorer, it may be desirable
+to define floor and ceiling, but only provide most of the theorems
+where the argument is a rational number.</TD>
+</TR>
+
+<TR>
+<TD>df-mod and other modulus theoerms.</TD>
+<TD><I>none</I></TD>
+<TD>As with df-fl it may be feasible to define this for rational
+numbers rather than reals.</TD>
+</TR>
+
+<TR>
+<TD>om2uz0i</TD>
+<TD>~ frec2uz0i</TD>
+</TR>
+
+<TR>
+<TD>om2uzsuci</TD>
+<TD>~ frec2uzsuci</TD>
+</TR>
+
+<TR>
+<TD>om2uzuzi</TD>
+<TD>~ frec2uzuzi</TD>
 </TR>
 
 </TABLE>
