@@ -18393,6 +18393,7 @@ New usage of "stm1i" is discouraged (3 uses).
 New usage of "stm1ri" is discouraged (2 uses).
 New usage of "sto1i" is discouraged (3 uses).
 New usage of "sto2i" is discouraged (1 uses).
+New usage of "stoic1aOLD" is discouraged (0 uses).
 New usage of "stoic2a" is discouraged (0 uses).
 New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strb" is discouraged (1 uses).
@@ -20185,6 +20186,7 @@ Proof modification of "sstrALT2" is discouraged (81 steps).
 Proof modification of "sstrALT2VD" is discouraged (84 steps).
 Proof modification of "sswrdOLD" is discouraged (59 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
+Proof modification of "stoic1aOLD" is discouraged (60 steps).
 Proof modification of "sucdomiOLD" is discouraged (34 steps).
 Proof modification of "sucidALT" is discouraged (28 steps).
 Proof modification of "sucidALTVD" is discouraged (28 steps).
