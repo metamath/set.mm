@@ -1317,6 +1317,16 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+<TD>ssdif0</TD>
+<TD>~ ssdif0im </TD>
+</TR>
+
+<TR>
+<TD>inssdif0</TD>
+<TD>~ inssdif0im </TD>
+</TR>
+
+<TR>
 <TD>undif2</TD>
 <TD>~ undif2ss </TD>
 </TR>
@@ -2063,6 +2073,11 @@ hasn't been a need for it.</TD>
 </TR>
 
 <TR>
+<TD>xpexr2</TD>
+<TD>~ xpexr2m </TD>
+</TR>
+
+<TR>
 <TD>1stval</TD>
 <TD>~ 1stvalg </TD>
 </TR>
@@ -2318,7 +2333,7 @@ we wanted strict dominance to have the expected properties.</TD>
 
 <TR>
 <TD>snfi</TD>
-<TD>snfig</TD>
+<TD>~ snfig</TD>
 </TR>
 
 <TR>
@@ -2366,6 +2381,151 @@ we wanted strict dominance to have the expected properties.</TD>
 <TD>2pwuninel</TD>
 <TD>~ 2pwuninelg</TD>
 </TR>
+
+<TR>
+<TD>onomeneq , onfin , onfin2</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proofs rely on excluded middle</TD>
+</TR>
+
+<TR>
+<TD>nndomo</TD>
+<TD><I>none</I></TD>
+<TD>Should be provable but the set.mm proof wouldn't work</TD>
+</TR>
+
+<TR>
+<TD>nnsdomo , sucdom2 , sucdom , 0sdom1dom , 1sdom2 , sdom1</TD>
+<TD><I>none</I></TD>
+<TD>iset.mm doesn't yet have strict dominance</TD>
+</TR>
+
+<TR>
+<TD>modom , modom2</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proofs rely on excluded middle</TD>
+</TR>
+
+<TR>
+<TD>1sdom , unxpdom , unxpdom2 , sucxpdom</TD>
+<TD><I>none</I></TD>
+<TD>iset.mm doesn't yet have strict dominance</TD>
+</TR>
+
+<TR>
+<TD>pssinf</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on sdomnen</TD>
+</TR>
+
+<TR>
+<TD>fisseneq</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on excluded middle</TD>
+</TR>
+
+<TR>
+<TD>ominf</TD>
+<TD><I>none</I></TD>
+<TD>Although this theorem presumably could be proved, it would
+probably need a very different proof than the set.mm one</TD>
+</TR>
+
+<TR>
+<TD>isinf</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof uses the converse of ~ ssdif0im</TD>
+</TR>
+
+<TR>
+<TD>fineqv</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on theorems we don't have, and even
+for the theorems we do have, we'd need to carefully look at
+what axioms they rely on.</TD>
+</TR>
+
+<TR>
+<TD>pssnn</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof uses excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>ssnnfi</TD>
+<TD><I>none</I></TD>
+<TD>The proof in ~ ssfiexmid would apply to this as well as to
+ssfi , since ` { (/) } e. _om `</TD>
+</TR>
+
+<TR>
+<TD>ssfi</TD>
+<TD>~ ssfiexmid</TD>
+</TR>
+
+<TR>
+<TD>domfi</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is in terms of ssfi</TD>
+</TR>
+
+<TR>
+<TD>xpfir</TD>
+<TD><I>none</I></TD>
+<TD>Nonempty would need to be changed to inhabited, but the
+set.mm proof also uses domfi</TD>
+</TR>
+
+<TR>
+<TD>infi</TD>
+<TD><I>none</I></TD>
+<TD>Presumably the proof of ~ ssfiexmid could be adapted to show
+this implies excluded middle</TD>
+</TR>
+
+<TR>
+<TD>rabfi</TD>
+<TD><I>none</I></TD>
+<TD>Presumably the proof of ~ ssfiexmid could be adapted to show
+this implies excluded middle</TD>
+</TR>
+
+<TR>
+<TD>finresfin</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is in terms of ssfi</TD>
+</TR>
+
+<TR>
+<TD>f1finf1o</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is not intuitionistic</TD>
+</TR>
+
+<TR>
+<TD>nfielex</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on neq0</TD>
+</TR>
+
+<TR>
+<TD>en1eqsn , en1eqsnbi</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on fisseneq</TD>
+</TR>
+
+<TR>
+<TD>diffi</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is in terms of ssfi</TD>
+</TR>
+
+<TR>
+<TD>dif1en</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on diffi</TD>
+</TR>
+
 
 <TR>
 <TD>ax-reg , axreg2 , zfregcl</TD>
@@ -3764,6 +3924,29 @@ other kind of additional condition.</TD>
 </TR>
 
 <TR>
+<TD>uzinf</TD>
+<TD><I>none</I></TD>
+<TD>See ominf</TD>
+</TR>
+
+<TR>
+<TD>uzrdgxfr</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could be proved if restated in terms of ` frec `
+(a la ~ frec2uz0d ). However, it is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>fzennn</TD>
+<TD>~ frecfzennn</TD>
+</TR>
+
+<TR>
+<TD>fzen2</TD>
+<TD>~ frecfzen2</TD>
+</TR>
+
+<TR>
 <TD>cardfz</TD>
 <TD><I>none</I></TD>
 <TD>Cardinality does not work the same way without excluded
@@ -3771,10 +3954,63 @@ middle and iset.mm has few cardinality related theorems.</TD>
 </TR>
 
 <TR>
+<TD>hashgf1o</TD>
+<TD>~ frechashgf1o</TD>
+</TR>
+
+<TR>
+<TD>fzfi</TD>
+<TD>~ fzfig</TD>
+</TR>
+
+<TR>
+<TD>fzfid</TD>
+<TD>~ fzfigd</TD>
+</TR>
+
+<TR>
+<TD>fzofi</TD>
+<TD>~ fzofig</TD>
+</TR>
+
+<TR>
+<TD>fsequb</TD>
+<TD><I>none</I></TD>
+<TD>Seems like it might be provable, but unused in set.mm</TD>
+</TR>
+
+<TR>
+<TD>fsequb2</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof does not work as-is</TD>
+</TR>
+
+<TR>
 <TD>fseqsupcl , fseqsupubi</TD>
 <TD><I>none</I></TD>
 <TD>iset.mm does not have the "sup" syntax and lacks most
 supremum theorems from set.mm.</TD>
+</TR>
+
+<TR>
+<TD>uzindi</TD>
+<TD><I>none</I></TD>
+<TD>This could presumably be proved, perhaps from ~ uzind4 ,
+but it lightly used in set.mm</TD>
+</TR>
+
+<TR>
+<TD>axdc4uz</TD>
+<TD><I>none</I></TD>
+<TD>Although some versions of constructive mathematics accept dependent
+choice, we have not yet developed it in iset.mm</TD>
+</TR>
+
+<TR>
+<TD>ssnn0fi , rabssnn0fi</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to imply excluded middle along the lines of ~ nnregexmid
+or ~ ssfiexmid </TD>
 </TR>
 
 </TABLE>
