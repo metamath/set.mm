@@ -296,22 +296,14 @@ COLOR="#0000FF"><I>&chi;</I></FONT>)))</TD>
 <TR ALIGN=LEFT><TD><A
 HREF="ax-mp.html">Rule of Modus Ponens</A></TD> <TD NOWRAP><FONT
 COLOR="#006633"><B>ax-mp</B></FONT></TD>
-<TD><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
-COLOR="#0000FF"><I>&phi;</I></FONT> &nbsp;&nbsp;&amp; &nbsp;&nbsp;<FONT
-COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
-COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
-COLOR="#0000FF"><I>&psi;</I></FONT> &nbsp;&nbsp;=&gt; &nbsp;&nbsp;<FONT
-COLOR="#808080" FACE=sans-serif>&#8866;<FONT
-COLOR="#0000FF"><I>&psi;</I></FONT>
-</TD>
+<TD>` |- ph `  &nbsp;&nbsp;&amp; &nbsp;
+` |- ph -> ps `  &nbsp; &#x21D2; &nbsp; ` |- ps `</TD>
 </TR>
 
 <TR ALIGN=LEFT><TD><A
 HREF="ax-ia1.html">Left 'and' elimination</A></TD><TD><FONT
 COLOR="#006633"><B>ax-ia1</B></FONT></TD><TD>
-<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>((<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
-<FONT FACE="sans-serif">&and;</FONT> <FONT COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr;
-<FONT COLOR="#0000FF"><I>&phi;</I></FONT>)</TD></TR>
+` |- ( ( ph /\ ps ) -> ph ) `</TD></TR>
 
 <TR ALIGN=LEFT><TD><A
 HREF="ax-ia2.html">Right 'and' elimination</A></TD><TD><FONT
@@ -689,6 +681,7 @@ COLOR="#0000FF"><I>&phi;</I></FONT>) &rarr; <FONT
 FACE=sans-serif>&forall;</FONT><SPAN CLASS=set
 STYLE="color:red">&#x1D44E;</SPAN><FONT
 COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD>
+</TR>
 
 <TR ALIGN=LEFT>
 <TD><A HREF="ax-iinf.html">Axiom of Infinity</A></TD>
@@ -702,7 +695,6 @@ FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">x</FONT></I> &rarr; suc
 <I><FONT COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif>&isin;</FONT>
 <I><FONT COLOR="#FF0000">x</FONT></I>))</SPAN>
 </TD></TR>
-</TR>
 
 </TABLE></CENTER>
 
@@ -714,14 +706,14 @@ would require us to develop the ability to classify formulas as bounded
 formulas, similar to the machinery we have built up for asserting on
 whether variables are free in formulas.</P>
 
-<P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
+<P></P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
 Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
 
-<P><CENTER><FONT COLOR="#006633"><I>From a psychological point of view,
+<P></P><CENTER><FONT COLOR="#006633"><I>From a psychological point of view,
 learning constructive mathematics is agonizing, for it requires one to
 first unlearn certain deeply ingrained intuitions and
 habits acquired during classical mathematical training.</I>
-<BR /> &mdash;Andrej Bauer</FONT></CENTER>
+<BR> &mdash;Andrej Bauer</FONT></CENTER>
 
 <P>Listed here are some examples of starting points for your journey
 through the maze.  Some are stated just as they would be in a
@@ -729,14 +721,14 @@ non-constructive context; others are here to highlight areas which
 look different constructively.
 You should study some simple proofs from
 propositional calculus until you get the hang of it.  Then try some
-predicate calculus and finally set theory.
+predicate calculus and finally set theory.</P>
 
-The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
+<P>The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
 theorems in the database.  You may also find the <A
-HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.
+HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.</P>
 
 
-<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%">
+<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%"><TR><TD VALIGN=TOP WIDTH="50%">
 <B>Propositional calculus</B>
 <MENU>
 <LI>
@@ -834,8 +826,6 @@ variables</A></LI>
 <A HREF="apsym.html">2</A>
 <A HREF="apcotr.html">3</A>
 <A HREF="apti.html">4</A></LI>
-
-<MENU>
 
 </MENU>
 </TD></TR></TABLE>
@@ -1031,14 +1021,14 @@ in intutionistic logic.</TD>
 <TD>~ pm2.01 </TD>
 <TD>See for example [Bauer] who uses the terminology "proof of negation"
 versus "proof by contradiction" to distinguish these.</TD>
-<TR>
+</TR>
 
 <TR>
 <TD>notnotrd , notnotri , notnot2 , notnot</TD>
 <TD>~ notnot1 </TD>
 <TD>Double negation introduction holds but not double negation
 elimination.</TD>
-<TR>
+</TR>
 
 <TR>
 <TD>mt3d</TD>
