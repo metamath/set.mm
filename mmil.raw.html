@@ -296,22 +296,14 @@ COLOR="#0000FF"><I>&chi;</I></FONT>)))</TD>
 <TR ALIGN=LEFT><TD><A
 HREF="ax-mp.html">Rule of Modus Ponens</A></TD> <TD NOWRAP><FONT
 COLOR="#006633"><B>ax-mp</B></FONT></TD>
-<TD><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
-COLOR="#0000FF"><I>&phi;</I></FONT> &nbsp;&nbsp;&amp; &nbsp;&nbsp;<FONT
-COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
-COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
-COLOR="#0000FF"><I>&psi;</I></FONT> &nbsp;&nbsp;=&gt; &nbsp;&nbsp;<FONT
-COLOR="#808080" FACE=sans-serif>&#8866;<FONT
-COLOR="#0000FF"><I>&psi;</I></FONT>
-</TD>
+<TD>` |- ph `  &nbsp;&nbsp;&amp; &nbsp;
+` |- ph -> ps `  &nbsp; &#x21D2; &nbsp; ` |- ps `</TD>
 </TR>
 
 <TR ALIGN=LEFT><TD><A
 HREF="ax-ia1.html">Left 'and' elimination</A></TD><TD><FONT
 COLOR="#006633"><B>ax-ia1</B></FONT></TD><TD>
-<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>((<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
-<FONT FACE="sans-serif">&and;</FONT> <FONT COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr;
-<FONT COLOR="#0000FF"><I>&phi;</I></FONT>)</TD></TR>
+` |- ( ( ph /\ ps ) -> ph ) `</TD></TR>
 
 <TR ALIGN=LEFT><TD><A
 HREF="ax-ia2.html">Right 'and' elimination</A></TD><TD><FONT
@@ -689,6 +681,7 @@ COLOR="#0000FF"><I>&phi;</I></FONT>) &rarr; <FONT
 FACE=sans-serif>&forall;</FONT><SPAN CLASS=set
 STYLE="color:red">&#x1D44E;</SPAN><FONT
 COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD>
+</TR>
 
 <TR ALIGN=LEFT>
 <TD><A HREF="ax-iinf.html">Axiom of Infinity</A></TD>
@@ -702,7 +695,6 @@ FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">x</FONT></I> &rarr; suc
 <I><FONT COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif>&isin;</FONT>
 <I><FONT COLOR="#FF0000">x</FONT></I>))</SPAN>
 </TD></TR>
-</TR>
 
 </TABLE></CENTER>
 
@@ -714,14 +706,14 @@ would require us to develop the ability to classify formulas as bounded
 formulas, similar to the machinery we have built up for asserting on
 whether variables are free in formulas.</P>
 
-<P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
+<P></P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
 Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
 
-<P><CENTER><FONT COLOR="#006633"><I>From a psychological point of view,
+<P></P><CENTER><FONT COLOR="#006633"><I>From a psychological point of view,
 learning constructive mathematics is agonizing, for it requires one to
 first unlearn certain deeply ingrained intuitions and
 habits acquired during classical mathematical training.</I>
-<BR /> &mdash;Andrej Bauer</FONT></CENTER>
+<BR> &mdash;Andrej Bauer</FONT></CENTER>
 
 <P>Listed here are some examples of starting points for your journey
 through the maze.  Some are stated just as they would be in a
@@ -729,14 +721,14 @@ non-constructive context; others are here to highlight areas which
 look different constructively.
 You should study some simple proofs from
 propositional calculus until you get the hang of it.  Then try some
-predicate calculus and finally set theory.
+predicate calculus and finally set theory.</P>
 
-The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
+<P>The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
 theorems in the database.  You may also find the <A
-HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.
+HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.</P>
 
 
-<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%">
+<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%"><TR><TD VALIGN=TOP WIDTH="50%">
 <B>Propositional calculus</B>
 <MENU>
 <LI>
@@ -834,8 +826,6 @@ variables</A></LI>
 <A HREF="apsym.html">2</A>
 <A HREF="apcotr.html">3</A>
 <A HREF="apti.html">4</A></LI>
-
-<MENU>
 
 </MENU>
 </TD></TR></TABLE>
@@ -1031,14 +1021,14 @@ in intutionistic logic.</TD>
 <TD>~ pm2.01 </TD>
 <TD>See for example [Bauer] who uses the terminology "proof of negation"
 versus "proof by contradiction" to distinguish these.</TD>
-<TR>
+</TR>
 
 <TR>
 <TD>notnotrd , notnotri , notnot2 , notnot</TD>
 <TD>~ notnot1 </TD>
 <TD>Double negation introduction holds but not double negation
 elimination.</TD>
-<TR>
+</TR>
 
 <TR>
 <TD>mt3d</TD>
@@ -1314,6 +1304,16 @@ is double negation elimination.</TD>
 <TR>
 <TD>rabn0</TD>
 <TD>~ rabn0m , ~ rabn0r </TD>
+</TR>
+
+<TR>
+<TD>ssdif0</TD>
+<TD>~ ssdif0im </TD>
+</TR>
+
+<TR>
+<TD>inssdif0</TD>
+<TD>~ inssdif0im </TD>
 </TR>
 
 <TR>
@@ -2063,6 +2063,11 @@ hasn't been a need for it.</TD>
 </TR>
 
 <TR>
+<TD>xpexr2</TD>
+<TD>~ xpexr2m </TD>
+</TR>
+
+<TR>
 <TD>1stval</TD>
 <TD>~ 1stvalg </TD>
 </TR>
@@ -2318,7 +2323,7 @@ we wanted strict dominance to have the expected properties.</TD>
 
 <TR>
 <TD>snfi</TD>
-<TD>snfig</TD>
+<TD>~ snfig</TD>
 </TR>
 
 <TR>
@@ -2366,6 +2371,151 @@ we wanted strict dominance to have the expected properties.</TD>
 <TD>2pwuninel</TD>
 <TD>~ 2pwuninelg</TD>
 </TR>
+
+<TR>
+<TD>onomeneq , onfin , onfin2</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proofs rely on excluded middle</TD>
+</TR>
+
+<TR>
+<TD>nndomo</TD>
+<TD><I>none</I></TD>
+<TD>Should be provable but the set.mm proof wouldn't work</TD>
+</TR>
+
+<TR>
+<TD>nnsdomo , sucdom2 , sucdom , 0sdom1dom , 1sdom2 , sdom1</TD>
+<TD><I>none</I></TD>
+<TD>iset.mm doesn't yet have strict dominance</TD>
+</TR>
+
+<TR>
+<TD>modom , modom2</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proofs rely on excluded middle</TD>
+</TR>
+
+<TR>
+<TD>1sdom , unxpdom , unxpdom2 , sucxpdom</TD>
+<TD><I>none</I></TD>
+<TD>iset.mm doesn't yet have strict dominance</TD>
+</TR>
+
+<TR>
+<TD>pssinf</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on sdomnen</TD>
+</TR>
+
+<TR>
+<TD>fisseneq</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on excluded middle</TD>
+</TR>
+
+<TR>
+<TD>ominf</TD>
+<TD><I>none</I></TD>
+<TD>Although this theorem presumably could be proved, it would
+probably need a very different proof than the set.mm one</TD>
+</TR>
+
+<TR>
+<TD>isinf</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof uses the converse of ~ ssdif0im</TD>
+</TR>
+
+<TR>
+<TD>fineqv</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on theorems we don't have, and even
+for the theorems we do have, we'd need to carefully look at
+what axioms they rely on.</TD>
+</TR>
+
+<TR>
+<TD>pssnn</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof uses excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>ssnnfi</TD>
+<TD><I>none</I></TD>
+<TD>The proof in ~ ssfiexmid would apply to this as well as to
+ssfi , since ` { (/) } e. _om `</TD>
+</TR>
+
+<TR>
+<TD>ssfi</TD>
+<TD>~ ssfiexmid</TD>
+</TR>
+
+<TR>
+<TD>domfi</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is in terms of ssfi</TD>
+</TR>
+
+<TR>
+<TD>xpfir</TD>
+<TD><I>none</I></TD>
+<TD>Nonempty would need to be changed to inhabited, but the
+set.mm proof also uses domfi</TD>
+</TR>
+
+<TR>
+<TD>infi</TD>
+<TD><I>none</I></TD>
+<TD>Presumably the proof of ~ ssfiexmid could be adapted to show
+this implies excluded middle</TD>
+</TR>
+
+<TR>
+<TD>rabfi</TD>
+<TD><I>none</I></TD>
+<TD>Presumably the proof of ~ ssfiexmid could be adapted to show
+this implies excluded middle</TD>
+</TR>
+
+<TR>
+<TD>finresfin</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is in terms of ssfi</TD>
+</TR>
+
+<TR>
+<TD>f1finf1o</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is not intuitionistic</TD>
+</TR>
+
+<TR>
+<TD>nfielex</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on neq0</TD>
+</TR>
+
+<TR>
+<TD>en1eqsn , en1eqsnbi</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on fisseneq</TD>
+</TR>
+
+<TR>
+<TD>diffi</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is in terms of ssfi</TD>
+</TR>
+
+<TR>
+<TD>dif1en</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on diffi</TD>
+</TR>
+
 
 <TR>
 <TD>ax-reg , axreg2 , zfregcl</TD>
@@ -3707,17 +3857,150 @@ numbers rather than reals.</TD>
 
 <TR>
 <TD>om2uz0i</TD>
-<TD>~ frec2uz0i</TD>
+<TD>~ frec2uz0d</TD>
 </TR>
 
 <TR>
 <TD>om2uzsuci</TD>
-<TD>~ frec2uzsuci</TD>
+<TD>~ frec2uzsucd</TD>
 </TR>
 
 <TR>
 <TD>om2uzuzi</TD>
-<TD>~ frec2uzuzi</TD>
+<TD>~ frec2uzuzd</TD>
+</TR>
+
+<TR>
+<TD>om2uzlti</TD>
+<TD>~ frec2uzltd</TD>
+</TR>
+
+<TR>
+<TD>om2uzlt2i</TD>
+<TD>~ frec2uzlt2d</TD>
+</TR>
+
+<TR>
+<TD>om2uzrani</TD>
+<TD>~ frec2uzrand</TD>
+</TR>
+
+<TR>
+<TD>om2uzf1oi</TD>
+<TD>~ frec2uzf1od</TD>
+</TR>
+
+<TR>
+<TD>om2uzisoi</TD>
+<TD>~ frec2uzisod</TD>
+</TR>
+
+<TR>
+<TD>om2uzoi , ltweuz , ltwenn , ltwefz</TD>
+<TD><I>none</I></TD>
+<TD>We do not have a syntax for well ordering and based on
+theorems like ~ nnregexmid , there is probably little room
+for this concept.</TD>
+</TR>
+
+<TR>
+<TD>om2uzrdg , uzrdglem , uzrdgfni , uzrdg0i , uzrdgsuci</TD>
+<TD><I>none</I></TD>
+<TD>In set.mm this is used for theorems related to df-seq
+so we probably will need some version of it. But the set.mm
+proofs of om2uzrdg and friends will not carry over without
+a closure hypothesis on the characteristic function or some
+other kind of additional condition.</TD>
+</TR>
+
+<TR>
+<TD>uzinf</TD>
+<TD><I>none</I></TD>
+<TD>See ominf</TD>
+</TR>
+
+<TR>
+<TD>uzrdgxfr</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could be proved if restated in terms of ` frec `
+(a la ~ frec2uz0d ). However, it is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>fzennn</TD>
+<TD>~ frecfzennn</TD>
+</TR>
+
+<TR>
+<TD>fzen2</TD>
+<TD>~ frecfzen2</TD>
+</TR>
+
+<TR>
+<TD>cardfz</TD>
+<TD><I>none</I></TD>
+<TD>Cardinality does not work the same way without excluded
+middle and iset.mm has few cardinality related theorems.</TD>
+</TR>
+
+<TR>
+<TD>hashgf1o</TD>
+<TD>~ frechashgf1o</TD>
+</TR>
+
+<TR>
+<TD>fzfi</TD>
+<TD>~ fzfig</TD>
+</TR>
+
+<TR>
+<TD>fzfid</TD>
+<TD>~ fzfigd</TD>
+</TR>
+
+<TR>
+<TD>fzofi</TD>
+<TD>~ fzofig</TD>
+</TR>
+
+<TR>
+<TD>fsequb</TD>
+<TD><I>none</I></TD>
+<TD>Seems like it might be provable, but unused in set.mm</TD>
+</TR>
+
+<TR>
+<TD>fsequb2</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof does not work as-is</TD>
+</TR>
+
+<TR>
+<TD>fseqsupcl , fseqsupubi</TD>
+<TD><I>none</I></TD>
+<TD>iset.mm does not have the "sup" syntax and lacks most
+supremum theorems from set.mm.</TD>
+</TR>
+
+<TR>
+<TD>uzindi</TD>
+<TD><I>none</I></TD>
+<TD>This could presumably be proved, perhaps from ~ uzind4 ,
+but it lightly used in set.mm</TD>
+</TR>
+
+<TR>
+<TD>axdc4uz</TD>
+<TD><I>none</I></TD>
+<TD>Although some versions of constructive mathematics accept dependent
+choice, we have not yet developed it in iset.mm</TD>
+</TR>
+
+<TR>
+<TD>ssnn0fi , rabssnn0fi</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to imply excluded middle along the lines of ~ nnregexmid
+or ~ ssfiexmid </TD>
 </TR>
 
 </TABLE>
