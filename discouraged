@@ -255,6 +255,8 @@
 "4syl" is used by "ackbij2lem2".
 "4syl" is used by "ackbij2lem3".
 "4syl" is used by "acndom".
+"4syl" is used by "acunirnmpt2".
+"4syl" is used by "acunirnmpt2f".
 "4syl" is used by "aevlem1".
 "4syl" is used by "aevlem1OLD".
 "4syl" is used by "afv0nbfvbi".
@@ -399,7 +401,6 @@
 "4syl" is used by "qqhucn".
 "4syl" is used by "qtopcmap".
 "4syl" is used by "qtopf1".
-"4syl" is used by "relexpsucr".
 "4syl" is used by "restmetu".
 "4syl" is used by "revccat".
 "4syl" is used by "revrev".
@@ -13936,7 +13937,7 @@ New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
 New usage of "4ipval3" is discouraged (0 uses).
-New usage of "4syl" is discouraged (196 uses).
+New usage of "4syl" is discouraged (197 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
@@ -18391,6 +18392,7 @@ New usage of "stm1i" is discouraged (3 uses).
 New usage of "stm1ri" is discouraged (2 uses).
 New usage of "sto1i" is discouraged (3 uses).
 New usage of "sto2i" is discouraged (1 uses).
+New usage of "stoic1aOLD" is discouraged (0 uses).
 New usage of "stoic2a" is discouraged (0 uses).
 New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strb" is discouraged (1 uses).
@@ -19547,16 +19549,16 @@ Proof modification of "frege54cor0a" is discouraged (46 steps).
 Proof modification of "frege54cor1a" is discouraged (14 steps).
 Proof modification of "frege55a" is discouraged (21 steps).
 Proof modification of "frege55b" is discouraged (50 steps).
-Proof modification of "frege55c" is discouraged (67 steps).
+Proof modification of "frege55c" is discouraged (68 steps).
 Proof modification of "frege55cor1a" is discouraged (22 steps).
 Proof modification of "frege55lem1a" is discouraged (16 steps).
 Proof modification of "frege55lem2a" is discouraged (22 steps).
 Proof modification of "frege55lem2b" is discouraged (23 steps).
-Proof modification of "frege55lem2c" is discouraged (26 steps).
+Proof modification of "frege55lem2c" is discouraged (27 steps).
 Proof modification of "frege56a" is discouraged (30 steps).
 Proof modification of "frege56aid" is discouraged (24 steps).
 Proof modification of "frege56b" is discouraged (30 steps).
-Proof modification of "frege56c" is discouraged (61 steps).
+Proof modification of "frege56c" is discouraged (59 steps).
 Proof modification of "frege57a" is discouraged (29 steps).
 Proof modification of "frege57aid" is discouraged (19 steps).
 Proof modification of "frege57b" is discouraged (29 steps).
@@ -20183,6 +20185,7 @@ Proof modification of "sstrALT2" is discouraged (81 steps).
 Proof modification of "sstrALT2VD" is discouraged (84 steps).
 Proof modification of "sswrdOLD" is discouraged (59 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
+Proof modification of "stoic1aOLD" is discouraged (60 steps).
 Proof modification of "sucdomiOLD" is discouraged (34 steps).
 Proof modification of "sucidALT" is discouraged (28 steps).
 Proof modification of "sucidALTVD" is discouraged (28 steps).

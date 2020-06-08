@@ -35,6 +35,9 @@
 # make && make install
 # https://stackoverflow.com/questions/45181102/ffmpeg-on-cygwin-failed-to-compile-libx264-error-unknown-type-name-hmodule
 
+echo 'WARNING: If this is a VM, make sure you have a completely full screen!'
+echo
+
 set -e -x
 
 # To include music we must download some. Here's what I used:

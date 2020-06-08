@@ -69,10 +69,22 @@ https://i.imgur.com/QeCKSj4.jpg Jon Pennant.jpg
 # but out of an abundance of caution I will instead recreate a simple
 # image with the word (it's easy to do).
 
+# On 2020-04-30 David Harvey agreed to let his image from this page:
+# https://web.maths.unsw.edu.au/~davidharvey/
+# be used to represent his contributions to Metamath.
+# David Harvey was the first external contributor to the
+# Metamath Proof Explorer (it was a simplification of notnot2 on 1999-09-05):
+https://web.maths.unsw.edu.au/~davidharvey/david-harvey.jpg David Harvey.jpg
+
 # On Tue, 1 Oct 2019 20:21:20 +0200
 # Alexander van der Vekens sent an email to David A. Wheeler saying,
 # "here is a picture of me (from my linkedin profile) you can use for the
 # Gource visualization."
+
+# On Wed, 1 Apr 2020 14:10:07 -0700 (PDT)
+# The Dr. Loof Lipra requested that his avatar should be taken from this link:  
+https://i1.wp.com/freevintageimages.co.uk/wp-content/uploads/2018/04/Black-Finned-Sparus.jpg?fit=2000%2C1330&ssl=1 Fool Lipra.png
+
 #
 # Gérard Lang graciously emailed to David A. Wheeler
 # on 2020-04-11 a .psd file of his face.
@@ -85,3 +97,7 @@ https://avatars1.githubusercontent.com/u/5831830?s=460&u=f6f5b09d5cf50718cbae7b6
 # On 2020-04-12 Stanislas Polu emailed avatars for himself and OpenAI
 # to David A. Wheeler. For OpenAI he sent a .tif file, but many tools
 # can't handle that format, so "convert" was used to create a .png file.
+
+# Giovanni Mascellani
+# On 2020-04-30 Giovanni Mascellani pointed out his Gravatar:
+https://www.gravatar.com/avatar/decd3ea69d3387db2ffb5394ab7abebd?size=256 Giovanni Mascellani.jpg
