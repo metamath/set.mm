@@ -12169,6 +12169,15 @@
 "recmulnq" is used by "recrecnq".
 "recrecnq" is used by "reclem2pr".
 "reexALT" is used by "cnexALT".
+"reglog1" is used by "pellfund14".
+"reglogbas" is used by "pellfund14".
+"reglogbas" is used by "reglogexpbas".
+"reglogcl" is used by "pellfund14".
+"reglogexp" is used by "reglogexpbas".
+"reglogexpbas" is used by "pellfund14".
+"reglogleb" is used by "pellfund14".
+"reglogltb" is used by "pellfund14".
+"reglogmul" is used by "pellfund14".
 "relrngo" is used by "iscrngo2".
 "relrngo" is used by "isdrngo1".
 "relrngo" is used by "isrngo".
@@ -18018,6 +18027,14 @@ New usage of "reclem4pr" is discouraged (1 uses).
 New usage of "recmulnq" is discouraged (3 uses).
 New usage of "recrecnq" is discouraged (1 uses).
 New usage of "reexALT" is discouraged (1 uses).
+New usage of "reglog1" is discouraged (1 uses).
+New usage of "reglogbas" is discouraged (2 uses).
+New usage of "reglogcl" is discouraged (1 uses).
+New usage of "reglogexp" is discouraged (1 uses).
+New usage of "reglogexpbas" is discouraged (1 uses).
+New usage of "reglogleb" is discouraged (1 uses).
+New usage of "reglogltb" is discouraged (1 uses).
+New usage of "reglogmul" is discouraged (1 uses).
 New usage of "relopabVD" is discouraged (0 uses).
 New usage of "relrngo" is discouraged (6 uses).
 New usage of "renegclALT" is discouraged (0 uses).
