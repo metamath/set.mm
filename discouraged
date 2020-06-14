@@ -1589,7 +1589,6 @@
 "bdopssadj" is used by "adjeq0".
 "bdopssadj" is used by "bdopadj".
 "bdopssadj" is used by "nmopadjlei".
-"bi3antOLD" is used by "bisymOLD".
 "bitr3" is used by "3orbi123VD".
 "bitr3" is used by "csbrngVD".
 "bitr3" is used by "e2ebindALT".
@@ -14284,9 +14283,7 @@ New usage of "bdophmi" is discouraged (2 uses).
 New usage of "bdophsi" is discouraged (3 uses).
 New usage of "bdopln" is discouraged (9 uses).
 New usage of "bdopssadj" is discouraged (4 uses).
-New usage of "bi3antOLD" is discouraged (1 uses).
 New usage of "binom2aiOLD" is discouraged (0 uses).
-New usage of "bisymOLD" is discouraged (0 uses).
 New usage of "bitr3" is discouraged (6 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
@@ -15149,7 +15146,6 @@ New usage of "csbabgOLD" is discouraged (10 uses).
 New usage of "csbcnvgALT" is discouraged (0 uses).
 New usage of "csbeq2gOLD" is discouraged (6 uses).
 New usage of "csbeq2gVD" is discouraged (0 uses).
-New usage of "csbexgOLD" is discouraged (0 uses).
 New usage of "csbfv12gALTOLD" is discouraged (0 uses).
 New usage of "csbfv12gALTVD" is discouraged (0 uses).
 New usage of "csbima12gALTOLD" is discouraged (0 uses).
@@ -18784,9 +18780,7 @@ Proof modification of "axnulALT" is discouraged (95 steps).
 Proof modification of "axregndOLD" is discouraged (224 steps).
 Proof modification of "axtglowdim2OLD" is discouraged (115 steps).
 Proof modification of "bcsiALT" is discouraged (444 steps).
-Proof modification of "bi3antOLD" is discouraged (42 steps).
 Proof modification of "binom2aiOLD" is discouraged (171 steps).
-Proof modification of "bisymOLD" is discouraged (15 steps).
 Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bj-19.21t" is discouraged (39 steps).
@@ -19087,7 +19081,6 @@ Proof modification of "csbabgOLD" is discouraged (93 steps).
 Proof modification of "csbcnvgALT" is discouraged (112 steps).
 Proof modification of "csbeq2gOLD" is discouraged (33 steps).
 Proof modification of "csbeq2gVD" is discouraged (61 steps).
-Proof modification of "csbexgOLD" is discouraged (89 steps).
 Proof modification of "csbfv12gALTOLD" is discouraged (150 steps).
 Proof modification of "csbfv12gALTVD" is discouraged (312 steps).
 Proof modification of "csbima12gALTOLD" is discouraged (65 steps).
