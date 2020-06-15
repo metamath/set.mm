@@ -16845,7 +16845,6 @@ New usage of "lnopunilem1" is discouraged (1 uses).
 New usage of "lnopunilem2" is discouraged (1 uses).
 New usage of "lnosub" is discouraged (3 uses).
 New usage of "lnoval" is discouraged (2 uses).
-New usage of "logccne0OLD" is discouraged (0 uses).
 New usage of "lplnexatN" is discouraged (0 uses).
 New usage of "lplnexllnN" is discouraged (0 uses).
 New usage of "lplnllnneN" is discouraged (1 uses).
@@ -19633,7 +19632,6 @@ Proof modification of "lediv2aALT" is discouraged (264 steps).
 Proof modification of "ledivmul2OLD" is discouraged (106 steps).
 Proof modification of "lidlssOLD" is discouraged (17 steps).
 Proof modification of "lidlsubclOLD" is discouraged (141 steps).
-Proof modification of "logccne0OLD" is discouraged (62 steps).
 Proof modification of "loolin" is discouraged (14 steps).
 Proof modification of "ltadd2iOLD" is discouraged (122 steps).
 Proof modification of "ltdiv2OLD" is discouraged (61 steps).
