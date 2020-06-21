@@ -13694,6 +13694,7 @@
 "watfvalN" is used by "watvalN".
 "watvalN" is used by "iswatN".
 "wl-a1d" is used by "wl-ax2".
+"wl-a1i" is used by "wl-impchain-a1-1".
 "wl-a1i" is used by "wl-mpi".
 "wl-ax1" is used by "wl-a1d".
 "wl-ax1" is used by "wl-pm2.04".
@@ -13711,7 +13712,10 @@
 "wl-imim2i" is used by "wl-impchain-mp-2".
 "wl-imim2i" is used by "wl-ja".
 "wl-imim2i" is used by "wl-syl6".
+"wl-impchain-a1-1" is used by "wl-impchain-a1-2".
+"wl-impchain-a1-2" is used by "wl-impchain-a1-3".
 "wl-impchain-com-1.1" is used by "wl-impchain-com-1.2".
+"wl-impchain-com-1.2" is used by "wl-impchain-a1-2".
 "wl-impchain-com-1.2" is used by "wl-impchain-com-1.3".
 "wl-impchain-com-1.2" is used by "wl-impchain-com-2.3".
 "wl-impchain-com-1.2" is used by "wl-impchain-com-2.4".
@@ -13719,6 +13723,7 @@
 "wl-impchain-com-1.3" is used by "wl-impchain-com-1.4".
 "wl-impchain-com-1.3" is used by "wl-impchain-com-2.3".
 "wl-impchain-com-1.4" is used by "wl-impchain-com-2.4".
+"wl-impchain-com-2.3" is used by "wl-impchain-a1-3".
 "wl-impchain-com-2.3" is used by "wl-impchain-com-3.2.1".
 "wl-impchain-mp-0" is used by "wl-impchain-com-1.2".
 "wl-impchain-mp-0" is used by "wl-impchain-mp-1".
@@ -18545,7 +18550,7 @@ New usage of "watvalN" is discouraged (1 uses).
 New usage of "wemapso2OLD" is discouraged (0 uses).
 New usage of "wemapweOLD" is discouraged (0 uses).
 New usage of "wl-a1d" is discouraged (1 uses).
-New usage of "wl-a1i" is discouraged (1 uses).
+New usage of "wl-a1i" is discouraged (2 uses).
 New usage of "wl-ax1" is discouraged (3 uses).
 New usage of "wl-ax2" is discouraged (1 uses).
 New usage of "wl-ax3" is discouraged (1 uses).
@@ -18558,11 +18563,14 @@ New usage of "wl-embantd" is discouraged (0 uses).
 New usage of "wl-id" is discouraged (1 uses).
 New usage of "wl-imim2" is discouraged (1 uses).
 New usage of "wl-imim2i" is discouraged (4 uses).
+New usage of "wl-impchain-a1-1" is discouraged (1 uses).
+New usage of "wl-impchain-a1-2" is discouraged (1 uses).
+New usage of "wl-impchain-a1-3" is discouraged (0 uses).
 New usage of "wl-impchain-com-1.1" is discouraged (1 uses).
-New usage of "wl-impchain-com-1.2" is discouraged (4 uses).
+New usage of "wl-impchain-com-1.2" is discouraged (5 uses).
 New usage of "wl-impchain-com-1.3" is discouraged (2 uses).
 New usage of "wl-impchain-com-1.4" is discouraged (1 uses).
-New usage of "wl-impchain-com-2.3" is discouraged (1 uses).
+New usage of "wl-impchain-com-2.3" is discouraged (2 uses).
 New usage of "wl-impchain-com-2.4" is discouraged (0 uses).
 New usage of "wl-impchain-com-3.2.1" is discouraged (0 uses).
 New usage of "wl-impchain-mp-0" is discouraged (2 uses).
@@ -20212,6 +20220,9 @@ Proof modification of "wl-equsal" is discouraged (32 steps).
 Proof modification of "wl-id" is discouraged (12 steps).
 Proof modification of "wl-imim2" is discouraged (14 steps).
 Proof modification of "wl-imim2i" is discouraged (15 steps).
+Proof modification of "wl-impchain-a1-1" is discouraged (4 steps).
+Proof modification of "wl-impchain-a1-2" is discouraged (10 steps).
+Proof modification of "wl-impchain-a1-3" is discouraged (12 steps).
 Proof modification of "wl-impchain-com-1.1" is discouraged (1 steps).
 Proof modification of "wl-impchain-com-1.2" is discouraged (22 steps).
 Proof modification of "wl-impchain-com-1.3" is discouraged (25 steps).
