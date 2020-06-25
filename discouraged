@@ -13694,6 +13694,7 @@
 "watfvalN" is used by "watvalN".
 "watvalN" is used by "iswatN".
 "wl-a1d" is used by "wl-ax2".
+"wl-a1i" is used by "wl-impchain-a1-1".
 "wl-a1i" is used by "wl-mpi".
 "wl-ax1" is used by "wl-a1d".
 "wl-ax1" is used by "wl-pm2.04".
@@ -13711,7 +13712,10 @@
 "wl-imim2i" is used by "wl-impchain-mp-2".
 "wl-imim2i" is used by "wl-ja".
 "wl-imim2i" is used by "wl-syl6".
+"wl-impchain-a1-1" is used by "wl-impchain-a1-2".
+"wl-impchain-a1-2" is used by "wl-impchain-a1-3".
 "wl-impchain-com-1.1" is used by "wl-impchain-com-1.2".
+"wl-impchain-com-1.2" is used by "wl-impchain-a1-2".
 "wl-impchain-com-1.2" is used by "wl-impchain-com-1.3".
 "wl-impchain-com-1.2" is used by "wl-impchain-com-2.3".
 "wl-impchain-com-1.2" is used by "wl-impchain-com-2.4".
@@ -13719,6 +13723,7 @@
 "wl-impchain-com-1.3" is used by "wl-impchain-com-1.4".
 "wl-impchain-com-1.3" is used by "wl-impchain-com-2.3".
 "wl-impchain-com-1.4" is used by "wl-impchain-com-2.4".
+"wl-impchain-com-2.3" is used by "wl-impchain-a1-3".
 "wl-impchain-com-2.3" is used by "wl-impchain-com-3.2.1".
 "wl-impchain-mp-0" is used by "wl-impchain-com-1.2".
 "wl-impchain-mp-0" is used by "wl-impchain-mp-1".
@@ -14723,6 +14728,7 @@ New usage of "branmfn" is discouraged (1 uses).
 New usage of "braval" is discouraged (10 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
+New usage of "cad1OLD" is discouraged (0 uses).
 New usage of "cantnfOLD" is discouraged (2 uses).
 New usage of "cantnfclOLD" is discouraged (13 uses).
 New usage of "cantnfdmOLD" is discouraged (4 uses).
@@ -16845,7 +16851,6 @@ New usage of "lnopunilem1" is discouraged (1 uses).
 New usage of "lnopunilem2" is discouraged (1 uses).
 New usage of "lnosub" is discouraged (3 uses).
 New usage of "lnoval" is discouraged (2 uses).
-New usage of "logccne0OLD" is discouraged (0 uses).
 New usage of "lplnexatN" is discouraged (0 uses).
 New usage of "lplnexllnN" is discouraged (0 uses).
 New usage of "lplnllnneN" is discouraged (1 uses).
@@ -18545,7 +18550,7 @@ New usage of "watvalN" is discouraged (1 uses).
 New usage of "wemapso2OLD" is discouraged (0 uses).
 New usage of "wemapweOLD" is discouraged (0 uses).
 New usage of "wl-a1d" is discouraged (1 uses).
-New usage of "wl-a1i" is discouraged (1 uses).
+New usage of "wl-a1i" is discouraged (2 uses).
 New usage of "wl-ax1" is discouraged (3 uses).
 New usage of "wl-ax2" is discouraged (1 uses).
 New usage of "wl-ax3" is discouraged (1 uses).
@@ -18558,11 +18563,14 @@ New usage of "wl-embantd" is discouraged (0 uses).
 New usage of "wl-id" is discouraged (1 uses).
 New usage of "wl-imim2" is discouraged (1 uses).
 New usage of "wl-imim2i" is discouraged (4 uses).
+New usage of "wl-impchain-a1-1" is discouraged (1 uses).
+New usage of "wl-impchain-a1-2" is discouraged (1 uses).
+New usage of "wl-impchain-a1-3" is discouraged (0 uses).
 New usage of "wl-impchain-com-1.1" is discouraged (1 uses).
-New usage of "wl-impchain-com-1.2" is discouraged (4 uses).
+New usage of "wl-impchain-com-1.2" is discouraged (5 uses).
 New usage of "wl-impchain-com-1.3" is discouraged (2 uses).
 New usage of "wl-impchain-com-1.4" is discouraged (1 uses).
-New usage of "wl-impchain-com-2.3" is discouraged (1 uses).
+New usage of "wl-impchain-com-2.3" is discouraged (2 uses).
 New usage of "wl-impchain-com-2.4" is discouraged (0 uses).
 New usage of "wl-impchain-com-3.2.1" is discouraged (0 uses).
 New usage of "wl-impchain-mp-0" is discouraged (2 uses).
@@ -18609,6 +18617,7 @@ New usage of "wvhc8" is discouraged (0 uses).
 New usage of "wvhc9" is discouraged (0 uses).
 New usage of "xihopellsmN" is discouraged (0 uses).
 New usage of "xmsuspOLD" is discouraged (1 uses).
+New usage of "xorassOLD" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 New usage of "xpnnenOLD" is discouraged (0 uses).
 New usage of "xpomenOLD" is discouraged (0 uses).
@@ -19011,6 +19020,7 @@ Proof modification of "bnj142OLD" is discouraged (51 steps).
 Proof modification of "bnj145OLD" is discouraged (112 steps).
 Proof modification of "bnj538OLD" is discouraged (94 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
+Proof modification of "cad1OLD" is discouraged (87 steps).
 Proof modification of "cantnfOLD" is discouraged (1131 steps).
 Proof modification of "cantnfclOLD" is discouraged (160 steps).
 Proof modification of "cantnfdmOLD" is discouraged (93 steps).
@@ -19633,7 +19643,6 @@ Proof modification of "lediv2aALT" is discouraged (264 steps).
 Proof modification of "ledivmul2OLD" is discouraged (106 steps).
 Proof modification of "lidlssOLD" is discouraged (17 steps).
 Proof modification of "lidlsubclOLD" is discouraged (141 steps).
-Proof modification of "logccne0OLD" is discouraged (62 steps).
 Proof modification of "loolin" is discouraged (14 steps).
 Proof modification of "ltadd2iOLD" is discouraged (122 steps).
 Proof modification of "ltdiv2OLD" is discouraged (61 steps).
@@ -20211,6 +20220,9 @@ Proof modification of "wl-equsal" is discouraged (32 steps).
 Proof modification of "wl-id" is discouraged (12 steps).
 Proof modification of "wl-imim2" is discouraged (14 steps).
 Proof modification of "wl-imim2i" is discouraged (15 steps).
+Proof modification of "wl-impchain-a1-1" is discouraged (4 steps).
+Proof modification of "wl-impchain-a1-2" is discouraged (10 steps).
+Proof modification of "wl-impchain-a1-3" is discouraged (12 steps).
 Proof modification of "wl-impchain-com-1.1" is discouraged (1 steps).
 Proof modification of "wl-impchain-com-1.2" is discouraged (22 steps).
 Proof modification of "wl-impchain-com-1.3" is discouraged (25 steps).
@@ -20246,6 +20258,7 @@ Proof modification of "wl-syls2" is discouraged (14 steps).
 Proof modification of "wrd0OLD" is discouraged (31 steps).
 Proof modification of "wrdeqcats1OLD" is discouraged (215 steps).
 Proof modification of "xmsuspOLD" is discouraged (118 steps).
+Proof modification of "xorassOLD" is discouraged (84 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
 Proof modification of "xpnnenOLD" is discouraged (531 steps).
 Proof modification of "xpomenOLD" is discouraged (31 steps).
