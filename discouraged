@@ -17246,7 +17246,7 @@ New usage of "mulsrpr" is discouraged (9 uses).
 New usage of "mvridlemOLD" is discouraged (1 uses).
 New usage of "nabbiOLD" is discouraged (0 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
-New usage of "nanbiOLD" is discouraged (0 uses).
+New usage of "nanbiOLDOLD" is discouraged (0 uses).
 New usage of "nancomOLD" is discouraged (0 uses).
 New usage of "nannanOLD" is discouraged (0 uses).
 New usage of "natded" is discouraged (0 uses).
@@ -18718,6 +18718,8 @@ New usage of "wvhc9" is discouraged (0 uses).
 New usage of "xihopellsmN" is discouraged (0 uses).
 New usage of "xmsuspOLD" is discouraged (1 uses).
 New usage of "xorassOLD" is discouraged (0 uses).
+New usage of "xorneg1OLD" is discouraged (0 uses).
+New usage of "xorneg2OLD" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 New usage of "xpnnenOLD" is discouraged (0 uses).
 New usage of "xpomenOLD" is discouraged (0 uses).
@@ -19905,7 +19907,7 @@ Proof modification of "mulge0OLD" is discouraged (25 steps).
 Proof modification of "mvridlemOLD" is discouraged (129 steps).
 Proof modification of "nabbiOLD" is discouraged (63 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
-Proof modification of "nanbiOLD" is discouraged (71 steps).
+Proof modification of "nanbiOLDOLD" is discouraged (71 steps).
 Proof modification of "nancomOLD" is discouraged (27 steps).
 Proof modification of "nannanOLD" is discouraged (35 steps).
 Proof modification of "nbgraopALT" is discouraged (271 steps).
@@ -20468,6 +20470,8 @@ Proof modification of "wrd0OLD" is discouraged (31 steps).
 Proof modification of "wrdeqcats1OLD" is discouraged (215 steps).
 Proof modification of "xmsuspOLD" is discouraged (118 steps).
 Proof modification of "xorassOLD" is discouraged (84 steps).
+Proof modification of "xorneg1OLD" is discouraged (28 steps).
+Proof modification of "xorneg2OLD" is discouraged (28 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
 Proof modification of "xpnnenOLD" is discouraged (531 steps).
 Proof modification of "xpomenOLD" is discouraged (31 steps).
