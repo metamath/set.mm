@@ -310,6 +310,32 @@ some arbitrary assertion T in inference form into a related assertion
 Td in deduction form.
 
 <P>
+An assertion in deduction form that has a hypothesis
+can be easily converted so that the hypothesis becomes an implication.
+More formally, given an assertion THM in deduction form with
+hypothesis $e ` ( ph -> ps ) ` and a conclusion ` ( ph -> ch ) `
+we can easily turn THM into the assertion ` ( ph -> ( ps -> ch ) ) ` .
+Another way to say this is that we can easily convert the THM
+` ( ph -> ps ) |- ( ph -> ch ) ` into
+` ( ph -> ( ps -> ch ) ) ` , where ` ps ` and ` ch ` are any proposition.
+Here the process to do that:
+
+<OL>
+<LI>Use ~ simpr to trivially prove that ` |- ( ( ph /\ ps ) -> ps ) ` .
+<LI>Use THM and the previous step to prove ` |- ( ( ph /\ ps ) -> ch ) ` .
+Note that in this use, ` ( ph /\ ps ) ` is substituting for ` ph ` of
+the THM's hypothesis, enabling us to deduce this result from the first step.
+<LI>Use ~ ex and the previous step to prove ` ( ph -> ( ps -> ch ) ) ` .
+</OL>
+
+<P>
+Note that converting an assertion in deduction form into an implication
+in deduction form is <I>different</I> from the general case of
+converting an inference form into an implication.
+In the general case that would require the deduction theorem or some variant
+like the weak deduction theorem.
+
+<P>
 The deduction form antecedent can also be used to represent
 the context necessary to support
 <A HREF="#natural-deduction-metamath">natural deduction systems</A>.
