@@ -17190,6 +17190,7 @@ New usage of "mndomgmid" is discouraged (3 uses).
 New usage of "mo2vOLD" is discouraged (0 uses).
 New usage of "mo2vOLDOLD" is discouraged (0 uses).
 New usage of "mo3OLD" is discouraged (0 uses).
+New usage of "modidmul0OLD" is discouraged (0 uses).
 New usage of "mopickOLD" is discouraged (0 uses).
 New usage of "morimOLD" is discouraged (0 uses).
 New usage of "mp2OLD" is discouraged (0 uses).
@@ -19831,6 +19832,7 @@ Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
 Proof modification of "mo2vOLD" is discouraged (147 steps).
 Proof modification of "mo2vOLDOLD" is discouraged (147 steps).
 Proof modification of "mo3OLD" is discouraged (206 steps).
+Proof modification of "modidmul0OLD" is discouraged (107 steps).
 Proof modification of "mopickOLD" is discouraged (103 steps).
 Proof modification of "morimOLD" is discouraged (17 steps).
 Proof modification of "mp2" is discouraged (11 steps).
