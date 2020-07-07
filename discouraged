@@ -1048,7 +1048,6 @@
 "ax-frege8" is used by "frege74".
 "ax-frege8" is used by "frege84".
 "ax-frege8" is used by "frege9".
-"ax-frege8" is used by "frege93".
 "ax-frege8" is used by "frege96".
 "ax-hcompl" is used by "chscllem2".
 "ax-hcompl" is used by "hhcms".
@@ -14154,7 +14153,7 @@ New usage of "ax-frege54a" is discouraged (1 uses).
 New usage of "ax-frege54c" is discouraged (1 uses).
 New usage of "ax-frege58a" is discouraged (3 uses).
 New usage of "ax-frege58b" is discouraged (6 uses).
-New usage of "ax-frege8" is discouraged (20 uses).
+New usage of "ax-frege8" is discouraged (19 uses).
 New usage of "ax-hcompl" is discouraged (6 uses).
 New usage of "ax-hfi" is discouraged (3 uses).
 New usage of "ax-hfvadd" is discouraged (14 uses).
@@ -17194,6 +17193,7 @@ New usage of "mndomgmid" is discouraged (3 uses).
 New usage of "mo2vOLD" is discouraged (0 uses).
 New usage of "mo2vOLDOLD" is discouraged (0 uses).
 New usage of "mo3OLD" is discouraged (0 uses).
+New usage of "modidmul0OLD" is discouraged (0 uses).
 New usage of "mopickOLD" is discouraged (0 uses).
 New usage of "morimOLD" is discouraged (0 uses).
 New usage of "mp2OLD" is discouraged (0 uses).
@@ -19498,6 +19498,9 @@ Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnniniseg2OLD" is discouraged (56 steps).
 Proof modification of "fnsuppresOLD" is discouraged (260 steps).
 Proof modification of "frege10" is discouraged (27 steps).
+Proof modification of "frege100" is discouraged (31 steps).
+Proof modification of "frege101" is discouraged (49 steps).
+Proof modification of "frege102" is discouraged (61 steps).
 Proof modification of "frege11" is discouraged (20 steps).
 Proof modification of "frege12" is discouraged (27 steps).
 Proof modification of "frege13" is discouraged (33 steps).
@@ -19600,36 +19603,35 @@ Proof modification of "frege68a" is discouraged (26 steps).
 Proof modification of "frege68b" is discouraged (26 steps).
 Proof modification of "frege68c" is discouraged (28 steps).
 Proof modification of "frege7" is discouraged (30 steps).
-Proof modification of "frege70" is discouraged (155 steps).
-Proof modification of "frege70b" is discouraged (39 steps).
+Proof modification of "frege70" is discouraged (167 steps).
 Proof modification of "frege71" is discouraged (48 steps).
-Proof modification of "frege72" is discouraged (158 steps).
-Proof modification of "frege73" is discouraged (35 steps).
-Proof modification of "frege74" is discouraged (33 steps).
+Proof modification of "frege72" is discouraged (108 steps).
+Proof modification of "frege73" is discouraged (37 steps).
+Proof modification of "frege74" is discouraged (35 steps).
 Proof modification of "frege75" is discouraged (34 steps).
-Proof modification of "frege77" is discouraged (268 steps).
-Proof modification of "frege78" is discouraged (51 steps).
-Proof modification of "frege79" is discouraged (50 steps).
-Proof modification of "frege80" is discouraged (54 steps).
-Proof modification of "frege81" is discouraged (65 steps).
-Proof modification of "frege82" is discouraged (44 steps).
-Proof modification of "frege83" is discouraged (73 steps).
-Proof modification of "frege84" is discouraged (39 steps).
-Proof modification of "frege85" is discouraged (51 steps).
-Proof modification of "frege86" is discouraged (63 steps).
-Proof modification of "frege87" is discouraged (58 steps).
-Proof modification of "frege88" is discouraged (61 steps).
-Proof modification of "frege89" is discouraged (46 steps).
+Proof modification of "frege77" is discouraged (270 steps).
+Proof modification of "frege78" is discouraged (53 steps).
+Proof modification of "frege79" is discouraged (52 steps).
+Proof modification of "frege80" is discouraged (56 steps).
+Proof modification of "frege81" is discouraged (72 steps).
+Proof modification of "frege82" is discouraged (46 steps).
+Proof modification of "frege83" is discouraged (75 steps).
+Proof modification of "frege84" is discouraged (41 steps).
+Proof modification of "frege85" is discouraged (53 steps).
+Proof modification of "frege86" is discouraged (64 steps).
+Proof modification of "frege87" is discouraged (63 steps).
+Proof modification of "frege88" is discouraged (64 steps).
+Proof modification of "frege89" is discouraged (48 steps).
 Proof modification of "frege9" is discouraged (25 steps).
-Proof modification of "frege90" is discouraged (51 steps).
-Proof modification of "frege91" is discouraged (133 steps).
-Proof modification of "frege92" is discouraged (145 steps).
-Proof modification of "frege93" is discouraged (58 steps).
-Proof modification of "frege94" is discouraged (63 steps).
-Proof modification of "frege95" is discouraged (81 steps).
-Proof modification of "frege96" is discouraged (36 steps).
-Proof modification of "frege97" is discouraged (99 steps).
-Proof modification of "frege98" is discouraged (107 steps).
+Proof modification of "frege90" is discouraged (53 steps).
+Proof modification of "frege91" is discouraged (124 steps).
+Proof modification of "frege92" is discouraged (188 steps).
+Proof modification of "frege93" is discouraged (96 steps).
+Proof modification of "frege94" is discouraged (64 steps).
+Proof modification of "frege95" is discouraged (88 steps).
+Proof modification of "frege96" is discouraged (39 steps).
+Proof modification of "frege97" is discouraged (106 steps).
+Proof modification of "frege98" is discouraged (116 steps).
 Proof modification of "frlmbasOLD" is discouraged (417 steps).
 Proof modification of "frlmgsumOLD" is discouraged (483 steps).
 Proof modification of "frlmsslss2OLD" is discouraged (183 steps).
@@ -19860,6 +19862,7 @@ Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
 Proof modification of "mo2vOLD" is discouraged (147 steps).
 Proof modification of "mo2vOLDOLD" is discouraged (147 steps).
 Proof modification of "mo3OLD" is discouraged (206 steps).
+Proof modification of "modidmul0OLD" is discouraged (107 steps).
 Proof modification of "mopickOLD" is discouraged (103 steps).
 Proof modification of "morimOLD" is discouraged (17 steps).
 Proof modification of "mp2" is discouraged (11 steps).
