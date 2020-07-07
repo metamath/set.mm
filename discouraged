@@ -19497,6 +19497,9 @@ Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnniniseg2OLD" is discouraged (56 steps).
 Proof modification of "fnsuppresOLD" is discouraged (260 steps).
 Proof modification of "frege10" is discouraged (27 steps).
+Proof modification of "frege100" is discouraged (31 steps).
+Proof modification of "frege101" is discouraged (49 steps).
+Proof modification of "frege102" is discouraged (61 steps).
 Proof modification of "frege11" is discouraged (20 steps).
 Proof modification of "frege12" is discouraged (27 steps).
 Proof modification of "frege13" is discouraged (33 steps).
@@ -19614,9 +19617,9 @@ Proof modification of "frege82" is discouraged (46 steps).
 Proof modification of "frege83" is discouraged (75 steps).
 Proof modification of "frege84" is discouraged (41 steps).
 Proof modification of "frege85" is discouraged (53 steps).
-Proof modification of "frege86" is discouraged (65 steps).
-Proof modification of "frege87" is discouraged (65 steps).
-Proof modification of "frege88" is discouraged (63 steps).
+Proof modification of "frege86" is discouraged (64 steps).
+Proof modification of "frege87" is discouraged (63 steps).
+Proof modification of "frege88" is discouraged (64 steps).
 Proof modification of "frege89" is discouraged (48 steps).
 Proof modification of "frege9" is discouraged (25 steps).
 Proof modification of "frege90" is discouraged (53 steps).
@@ -19625,8 +19628,8 @@ Proof modification of "frege92" is discouraged (188 steps).
 Proof modification of "frege93" is discouraged (96 steps).
 Proof modification of "frege94" is discouraged (64 steps).
 Proof modification of "frege95" is discouraged (88 steps).
-Proof modification of "frege96" is discouraged (38 steps).
-Proof modification of "frege97" is discouraged (104 steps).
+Proof modification of "frege96" is discouraged (39 steps).
+Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
 Proof modification of "frlmbasOLD" is discouraged (417 steps).
 Proof modification of "frlmgsumOLD" is discouraged (483 steps).
