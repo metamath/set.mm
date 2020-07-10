@@ -15983,6 +15983,7 @@ New usage of "exmidneOLD" is discouraged (0 uses).
 New usage of "expcomdg" is discouraged (0 uses).
 New usage of "f1oweALT" is discouraged (0 uses).
 New usage of "f1rhm0to0ALT" is discouraged (0 uses).
+New usage of "falbitruOLD" is discouraged (0 uses).
 New usage of "fconstfvOLD" is discouraged (0 uses).
 New usage of "fh1" is discouraged (3 uses).
 New usage of "fh1i" is discouraged (2 uses).
@@ -18503,6 +18504,7 @@ New usage of "trsspwALT" is discouraged (0 uses).
 New usage of "trsspwALT2" is discouraged (0 uses).
 New usage of "trsspwALT3" is discouraged (0 uses).
 New usage of "truanOLD" is discouraged (0 uses).
+New usage of "trubifalOLD" is discouraged (0 uses).
 New usage of "truniALT" is discouraged (0 uses).
 New usage of "truniALTVD" is discouraged (0 uses).
 New usage of "tsmsgsumOLD" is discouraged (1 uses).
@@ -19492,6 +19494,7 @@ Proof modification of "exlimexi" is discouraged (15 steps).
 Proof modification of "exmidneOLD" is discouraged (21 steps).
 Proof modification of "f1oweALT" is discouraged (805 steps).
 Proof modification of "f1rhm0to0ALT" is discouraged (161 steps).
+Proof modification of "falbitruOLD" is discouraged (12 steps).
 Proof modification of "fconstfvOLD" is discouraged (242 steps).
 Proof modification of "fisucdomOLD" is discouraged (90 steps).
 Proof modification of "fiusgedgfiALT" is discouraged (94 steps).
@@ -20297,6 +20300,7 @@ Proof modification of "trsspwALT" is discouraged (64 steps).
 Proof modification of "trsspwALT2" is discouraged (65 steps).
 Proof modification of "trsspwALT3" is discouraged (27 steps).
 Proof modification of "truanOLD" is discouraged (13 steps).
+Proof modification of "trubifalOLD" is discouraged (15 steps).
 Proof modification of "truniALT" is discouraged (183 steps).
 Proof modification of "truniALTVD" is discouraged (220 steps).
 Proof modification of "tsmsgsumOLD" is discouraged (561 steps).
