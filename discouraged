@@ -18504,6 +18504,7 @@ New usage of "trsspwALT2" is discouraged (0 uses).
 New usage of "trsspwALT3" is discouraged (0 uses).
 New usage of "truanOLD" is discouraged (0 uses).
 New usage of "trubifalOLD" is discouraged (0 uses).
+New usage of "trunanfalOLD" is discouraged (0 uses).
 New usage of "truniALT" is discouraged (0 uses).
 New usage of "truniALTVD" is discouraged (0 uses).
 New usage of "tsmsgsumOLD" is discouraged (1 uses).
@@ -20299,6 +20300,7 @@ Proof modification of "trsspwALT2" is discouraged (65 steps).
 Proof modification of "trsspwALT3" is discouraged (27 steps).
 Proof modification of "truanOLD" is discouraged (13 steps).
 Proof modification of "trubifalOLD" is discouraged (15 steps).
+Proof modification of "trunanfalOLD" is discouraged (19 steps).
 Proof modification of "truniALT" is discouraged (183 steps).
 Proof modification of "truniALTVD" is discouraged (220 steps).
 Proof modification of "tsmsgsumOLD" is discouraged (561 steps).
