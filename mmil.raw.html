@@ -1024,6 +1024,13 @@ versus "proof by contradiction" to distinguish these.</TD>
 </TR>
 
 <TR>
+<TD>pm2.18d</TD>
+<TD>~ pm2.01d</TD>
+<TD>See for example [Bauer] who uses the terminology "proof of negation"
+versus "proof by contradiction" to distinguish these.</TD>
+</TR>
+
+<TR>
 <TD>notnotrd , notnotri , notnot2 , notnot</TD>
 <TD>~ notnot1 </TD>
 <TD>Double negation introduction holds but not double negation
@@ -1646,7 +1653,7 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 
 <TR>
 <TD>iotaex</TD>
-<TD>~ euiotaex </TD>
+<TD>~iotacl , ~ euiotaex </TD>
 </TR>
 
 <TR>
@@ -1724,7 +1731,7 @@ and is evaluated at a set</TD>
 
 <TR>
 <TD>riotaex</TD>
-<TD>~ riotacl </TD>
+<TD>~ riotacl , ~ riotaexg</TD>
 </TR>
 
 <TR>
@@ -3481,6 +3488,11 @@ divdird, divsubdird, div11d</TD>
 </TR>
 
 <TR>
+<TD>mvllmuld</TD>
+<TD>~ mvllmulapd</TD>
+</TR>
+
+<TR>
 <TD>elimgt0 , elimge0</TD>
 <TD><I>none</I></TD>
 <TD>Even in set.mm, the weak deduction theorem is discouraged in
@@ -4101,6 +4113,318 @@ or ~ ssfiexmid </TD>
 <TR>
 <TD>expnnval</TD>
 <TD>~ expinnval</TD>
+</TR>
+
+<TR>
+<TD>expneg</TD>
+<TD>~ expnegap0</TD>
+<TD>The set.mm theorem does not exclude the case of
+dividing by zero.</TD>
+</TR>
+
+<TR>
+<TD>expneg2</TD>
+<TD>~ expineg2</TD>
+</TR>
+
+<TR>
+<TD>expn1</TD>
+<TD>~ expn1ap0</TD>
+</TR>
+
+<TR>
+<TD>expcl2lem</TD>
+<TD>~ expcl2lemap</TD>
+</TR>
+
+<TR>
+<TD>reexpclz</TD>
+<TD>~ reexpclzap</TD>
+</TR>
+
+<TR>
+<TD>expclzlem</TD>
+<TD>~ expclzaplem</TD>
+</TR>
+
+<TR>
+<TD>expclz</TD>
+<TD>~ expclzap</TD>
+</TR>
+
+<TR>
+<TD>expne0</TD>
+<TD>~ expap0</TD>
+</TR>
+
+<TR>
+<TD>expne0i</TD>
+<TD>~ expap0i</TD>
+</TR>
+
+<TR>
+<TD>expnegz</TD>
+<TD>~ expnegzap</TD>
+</TR>
+
+<TR>
+<TD>mulexpz</TD>
+<TD>~ mulexpzap</TD>
+</TR>
+
+<TR>
+<TD>exprec</TD>
+<TD>~ exprecap</TD>
+</TR>
+
+<TR>
+<TD>expaddzlem , expaddz</TD>
+<TD>~ expaddzaplem , ~ expaddzap</TD>
+</TR>
+
+<TR>
+<TD>expmulz</TD>
+<TD>~ expmulzap</TD>
+</TR>
+
+<TR>
+<TD>expsub</TD>
+<TD>~ expsubap</TD>
+</TR>
+
+<TR>
+<TD>expp1z</TD>
+<TD>~ expp1zap</TD>
+</TR>
+
+<TR>
+<TD>expm1</TD>
+<TD>~ expm1ap</TD>
+</TR>
+
+<TR>
+<TD>expdiv</TD>
+<TD>~ expdivap</TD>
+</TR>
+
+<TR>
+<TD>expcan , expcand</TD>
+<TD><I>none</I></TD>
+<TD>Presumably provable, but the set.mm proof uses eqord1
+and the theorem is lightly used in set.mm</TD>
+</TR>
+
+<TR>
+<TD>ltexp2 , leexp2 , leexp2 , ltexp2d , leexp2d</TD>
+<TD><I>none</I></TD>
+<TD>Presumably provable, but the set.mm proof uses ltord1</TD>
+</TR>
+
+<TR>
+<TD>ltexp2r , ltexp2rd</TD>
+<TD><I>none</I></TD>
+<TD>Presumably provable, but the set.mm proof uses ltexp2</TD>
+</TR>
+
+<TR>
+<TD>sqdiv</TD>
+<TD>~ sqdivap</TD>
+</TR>
+
+<TR>
+<TD>sqgt0</TD>
+<TD>~ sqgt0ap</TD>
+</TR>
+
+<TR>
+<TD>iexpcyc</TD>
+<TD><I>none yet</I></TD>
+<TD>See discussion under df-mod ; modulus for integers would suffice
+so issues with modulus for reals would not be an impediment.</TD>
+</TR>
+
+<TR>
+<TD>sqrecii , sqrecd</TD>
+<TD>~ exprecap</TD>
+</TR>
+
+<TR>
+<TD>sqdivi</TD>
+<TD>~ sqdivapi</TD>
+</TR>
+
+<TR>
+<TD>sqgt0i</TD>
+<TD>~ sqgt0api</TD>
+</TR>
+
+<TR>
+<TD>sqlecan</TD>
+<TD>~ lemul1</TD>
+<TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+<TD>sqeqori</TD>
+<TD><I>none</I></TD>
+<TD>The reverse direction is ~ oveq1 together with ~ sqneg .
+The forward direction is presumably not provable, see mul0or for
+more discussion.</TD>
+</TR>
+
+<TR>
+<TD>subsq0i , sqeqor</TD>
+<TD><I>none</I></TD>
+<TD>Variations of sqeqori .</TD>
+</TR>
+
+<TR>
+<TD>sq01</TD>
+<TD><I>none</I></TD>
+<TD>Lightly used in set.mm. Presumably not provable as stated,
+for reasons analogous to mul0or .</TD>
+</TR>
+
+<TR>
+<TD>crreczi</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could be proved if not-equal is changed to apart,
+but unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>expmulnbnd</TD>
+<TD><I>none</I></TD>
+<TD>Should be possible to prove this or something similar, but the
+set.mm proof relies on case elimination based on whether ` 0 <_ A `
+or not.</TD>
+</TR>
+
+<TR>
+<TD>digit2 , digit1</TD>
+<TD><I>none</I></TD>
+<TD>Depends on modulus and floor, and unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>modexp</TD>
+<TD><I>none</I></TD>
+<TD>Depends on modulus. Presumably it, or something similar,
+can be made to work as it is mostly about integers rather
+than reals.</TD>
+</TR>
+
+<TR>
+<TD>discr1 , discr</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof uses real number trichotomy.</TD>
+</TR>
+
+<TR>
+<TD>sqrecd</TD>
+<TD>~ sqrecapd</TD>
+</TR>
+
+<TR>
+<TD>expclzd</TD>
+<TD>~ expclzapd</TD>
+</TR>
+
+<TR>
+<TD>exp0d</TD>
+<TD>~ expap0d</TD>
+</TR>
+
+<TR>
+<TD>expnegd</TD>
+<TD>~ expnegapd</TD>
+</TR>
+
+<TR>
+<TD>exprecd</TD>
+<TD>~ exprecapd</TD>
+</TR>
+
+<TR>
+<TD>expp1zd</TD>
+<TD>~ expp1zapd</TD>
+</TR>
+
+<TR>
+<TD>expm1d</TD>
+<TD>~ expm1apd</TD>
+</TR>
+
+<TR>
+<TD>expsubd</TD>
+<TD>~ expsubapd</TD>
+</TR>
+
+<TR>
+<TD>sqdivd</TD>
+<TD>~ sqdivapd</TD>
+</TR>
+
+<TR>
+<TD>expdivd</TD>
+<TD>~ expdivapd</TD>
+</TR>
+
+<TR>
+<TD>reexpclzd</TD>
+<TD>~ reexpclzapd</TD>
+</TR>
+
+<TR>
+<TD>sqgt0d</TD>
+<TD>~ sqgt0apd</TD>
+</TR>
+
+<TR>
+<TD>mulre</TD>
+<TD>~ mulreap</TD>
+</TR>
+
+<TR>
+<TD>rediv</TD>
+<TD>~ redivap</TD>
+</TR>
+
+<TR>
+<TD>imdiv</TD>
+<TD>~ imdivap</TD>
+</TR>
+
+<TR>
+<TD>cjdiv</TD>
+<TD>~ cjdivap</TD>
+</TR>
+
+<TR>
+<TD>sqeqd</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is not intuitionistic, and this
+theorem is unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>cjdivi</TD>
+<TD>~ cjdivapi</TD>
+</TR>
+
+<TR>
+<TD>cjdivd</TD>
+<TD>~ cjdivapd</TD>
+</TR>
+
+<TR>
+<TD>redivd</TD>
+<TD>~ redivapd</TD>
+</TR>
+
+<TR>
+<TD>imdivd</TD>
+<TD>~ imdivapd</TD>
 </TR>
 
 </TABLE>
