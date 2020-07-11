@@ -1366,19 +1366,6 @@
 "ax-luk3" is used by "wl-id".
 "ax-luk3" is used by "wl-pm2.21".
 "ax-luk3" is used by "wl-pm2.24i".
-"ax-meredith" is used by "luk-1".
-"ax-meredith" is used by "luk-2".
-"ax-meredith" is used by "merlem1".
-"ax-meredith" is used by "merlem10".
-"ax-meredith" is used by "merlem11".
-"ax-meredith" is used by "merlem13".
-"ax-meredith" is used by "merlem2".
-"ax-meredith" is used by "merlem3".
-"ax-meredith" is used by "merlem4".
-"ax-meredith" is used by "merlem5".
-"ax-meredith" is used by "merlem7".
-"ax-meredith" is used by "merlem8".
-"ax-meredith" is used by "merlem9".
 "ax-mulass" is used by "mulass".
 "ax-mulcl" is used by "mulcl".
 "ax-mulcom" is used by "mulcom".
@@ -1455,6 +1442,19 @@
 "axinfnd" is used by "zfcndinf".
 "axinfndlem1" is used by "axinfnd".
 "axlttrn" is used by "lttr".
+"axmeredith" is used by "luk-1".
+"axmeredith" is used by "luk-2".
+"axmeredith" is used by "merlem1".
+"axmeredith" is used by "merlem10".
+"axmeredith" is used by "merlem11".
+"axmeredith" is used by "merlem13".
+"axmeredith" is used by "merlem2".
+"axmeredith" is used by "merlem3".
+"axmeredith" is used by "merlem4".
+"axmeredith" is used by "merlem5".
+"axmeredith" is used by "merlem7".
+"axmeredith" is used by "merlem8".
+"axmeredith" is used by "merlem9".
 "axmulf" is used by "axmulcl".
 "axpjcl" is used by "pjcli".
 "axpjcl" is used by "pjcompi".
@@ -14154,7 +14154,7 @@ New usage of "ax-inf" is discouraged (1 uses).
 New usage of "ax-luk1" is discouraged (5 uses).
 New usage of "ax-luk2" is discouraged (4 uses).
 New usage of "ax-luk3" is discouraged (6 uses).
-New usage of "ax-meredith" is discouraged (13 uses).
+New usage of "ax-meredith" is discouraged (0 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
@@ -14285,7 +14285,7 @@ New usage of "axinfndlem1" is discouraged (1 uses).
 New usage of "axinfprim" is discouraged (0 uses).
 New usage of "axio" is discouraged (0 uses).
 New usage of "axlttrn" is discouraged (1 uses).
-New usage of "axmeredith" is discouraged (0 uses).
+New usage of "axmeredith" is discouraged (13 uses).
 New usage of "axmulass" is discouraged (0 uses).
 New usage of "axmulcl" is discouraged (0 uses).
 New usage of "axmulcom" is discouraged (0 uses).
