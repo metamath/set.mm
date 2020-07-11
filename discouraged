@@ -14769,6 +14769,9 @@ New usage of "braval" is discouraged (10 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
 New usage of "cad1OLD" is discouraged (0 uses).
+New usage of "cadcombOLD" is discouraged (0 uses).
+New usage of "cadnotOLD" is discouraged (0 uses).
+New usage of "cadorOLD" is discouraged (0 uses).
 New usage of "cantnfOLD" is discouraged (2 uses).
 New usage of "cantnfclOLD" is discouraged (13 uses).
 New usage of "cantnfdmOLD" is discouraged (4 uses).
@@ -15965,6 +15968,7 @@ New usage of "expcomdg" is discouraged (0 uses).
 New usage of "f1oweALT" is discouraged (0 uses).
 New usage of "f1rhm0to0ALT" is discouraged (0 uses).
 New usage of "falbitruOLD" is discouraged (0 uses).
+New usage of "falxortruOLD" is discouraged (0 uses).
 New usage of "fconstfvOLD" is discouraged (0 uses).
 New usage of "fh1" is discouraged (3 uses).
 New usage of "fh1i" is discouraged (2 uses).
@@ -16190,6 +16194,7 @@ New usage of "h2hnm" is discouraged (2 uses).
 New usage of "h2hsm" is discouraged (9 uses).
 New usage of "h2hva" is discouraged (9 uses).
 New usage of "h2hvs" is discouraged (2 uses).
+New usage of "hadnotOLD" is discouraged (0 uses).
 New usage of "halfnq" is discouraged (1 uses).
 New usage of "hatomic" is discouraged (1 uses).
 New usage of "hatomici" is discouraged (6 uses).
@@ -19079,6 +19084,9 @@ Proof modification of "bnj145OLD" is discouraged (112 steps).
 Proof modification of "bnj538OLD" is discouraged (94 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "cad1OLD" is discouraged (87 steps).
+Proof modification of "cadcombOLD" is discouraged (58 steps).
+Proof modification of "cadnotOLD" is discouraged (75 steps).
+Proof modification of "cadorOLD" is discouraged (89 steps).
 Proof modification of "cantnfOLD" is discouraged (1131 steps).
 Proof modification of "cantnfclOLD" is discouraged (160 steps).
 Proof modification of "cantnfdmOLD" is discouraged (93 steps).
@@ -19466,6 +19474,7 @@ Proof modification of "exmidneOLD" is discouraged (21 steps).
 Proof modification of "f1oweALT" is discouraged (805 steps).
 Proof modification of "f1rhm0to0ALT" is discouraged (161 steps).
 Proof modification of "falbitruOLD" is discouraged (12 steps).
+Proof modification of "falxortruOLD" is discouraged (19 steps).
 Proof modification of "fconstfvOLD" is discouraged (242 steps).
 Proof modification of "fiusgedgfiALT" is discouraged (94 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
@@ -19694,6 +19703,7 @@ Proof modification of "gsumzoppgOLD" is discouraged (684 steps).
 Proof modification of "gsumzresOLD" is discouraged (600 steps).
 Proof modification of "gsumzsplitOLD" is discouraged (1051 steps).
 Proof modification of "gsumzsubmclOLD" is discouraged (195 steps).
+Proof modification of "hadnotOLD" is discouraged (54 steps).
 Proof modification of "hashge3el3dif" is discouraged (226 steps).
 Proof modification of "haustsmsidOLD" is discouraged (46 steps).
 Proof modification of "hbae-o" is discouraged (85 steps).
