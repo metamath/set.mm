@@ -13855,6 +13855,7 @@ New usage of "0reALT" is discouraged (1 uses).
 New usage of "0vfval" is discouraged (9 uses).
 New usage of "19.21a3con13vVD" is discouraged (0 uses).
 New usage of "19.21vOLD" is discouraged (0 uses).
+New usage of "19.21vOLDOLD" is discouraged (0 uses).
 New usage of "19.23vOLD" is discouraged (0 uses).
 New usage of "19.35OLD" is discouraged (0 uses).
 New usage of "19.36aivOLD" is discouraged (0 uses).
@@ -16196,6 +16197,8 @@ New usage of "h2hnm" is discouraged (2 uses).
 New usage of "h2hsm" is discouraged (9 uses).
 New usage of "h2hva" is discouraged (9 uses).
 New usage of "h2hvs" is discouraged (2 uses).
+New usage of "had0OLD" is discouraged (0 uses).
+New usage of "had1OLD" is discouraged (0 uses).
 New usage of "hadnotOLD" is discouraged (0 uses).
 New usage of "halfnq" is discouraged (1 uses).
 New usage of "hatomic" is discouraged (1 uses).
@@ -18380,6 +18383,7 @@ New usage of "stcltr2i" is discouraged (1 uses).
 New usage of "stcltrlem1" is discouraged (1 uses).
 New usage of "stcltrlem2" is discouraged (1 uses).
 New usage of "stcltrthi" is discouraged (0 uses).
+New usage of "stdpc5vOLD" is discouraged (0 uses).
 New usage of "stge0" is discouraged (1 uses).
 New usage of "stge1i" is discouraged (1 uses).
 New usage of "sthil" is discouraged (2 uses).
@@ -18701,6 +18705,7 @@ Proof modification of "0heALT" is discouraged (25 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
 Proof modification of "19.21vOLD" is discouraged (7 steps).
+Proof modification of "19.21vOLDOLD" is discouraged (44 steps).
 Proof modification of "19.23vOLD" is discouraged (7 steps).
 Proof modification of "19.35OLD" is discouraged (64 steps).
 Proof modification of "19.36aivOLD" is discouraged (8 steps).
@@ -19706,6 +19711,8 @@ Proof modification of "gsumzoppgOLD" is discouraged (684 steps).
 Proof modification of "gsumzresOLD" is discouraged (600 steps).
 Proof modification of "gsumzsplitOLD" is discouraged (1051 steps).
 Proof modification of "gsumzsubmclOLD" is discouraged (195 steps).
+Proof modification of "had0OLD" is discouraged (49 steps).
+Proof modification of "had1OLD" is discouraged (51 steps).
 Proof modification of "hadnotOLD" is discouraged (54 steps).
 Proof modification of "hashge3el3dif" is discouraged (226 steps).
 Proof modification of "haustsmsidOLD" is discouraged (46 steps).
@@ -20220,6 +20227,7 @@ Proof modification of "sstrALT2" is discouraged (81 steps).
 Proof modification of "sstrALT2VD" is discouraged (84 steps).
 Proof modification of "sswrdOLD" is discouraged (59 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
+Proof modification of "stdpc5vOLD" is discouraged (15 steps).
 Proof modification of "stoic1aOLD" is discouraged (60 steps).
 Proof modification of "sucidALT" is discouraged (28 steps).
 Proof modification of "sucidALTVD" is discouraged (28 steps).
