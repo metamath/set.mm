@@ -13864,6 +13864,10 @@ New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
 New usage of "19.43OLD" is discouraged (0 uses).
 New usage of "19.8aOLD" is discouraged (0 uses).
+New usage of "19.9OLD" is discouraged (0 uses).
+New usage of "19.9dOLD" is discouraged (0 uses).
+New usage of "19.9hOLD" is discouraged (0 uses).
+New usage of "19.9tOLD" is discouraged (0 uses).
 New usage of "1dimN" is discouraged (0 uses).
 New usage of "1div0" is discouraged (0 uses).
 New usage of "1div0apr" is discouraged (0 uses).
@@ -18715,6 +18719,10 @@ Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
 Proof modification of "19.43OLD" is discouraged (72 steps).
 Proof modification of "19.8aOLD" is discouraged (56 steps).
+Proof modification of "19.9OLD" is discouraged (7 steps).
+Proof modification of "19.9dOLD" is discouraged (18 steps).
+Proof modification of "19.9hOLD" is discouraged (16 steps).
+Proof modification of "19.9tOLD" is discouraged (29 steps).
 Proof modification of "1div0apr" is discouraged (77 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "2bornot2b" is discouraged (26 steps).
