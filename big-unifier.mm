@@ -1,14 +1,8 @@
 $( big-unifier.mm - Version of 30-Aug-2008
 
-                             PUBLIC DOMAIN
-
-This file (specifically, the version of this file with the above date)
-has been placed in the Public Domain per the Creative Commons Public
-Domain Dedication.  http://creativecommons.org/licenses/publicdomain/
-
-The public domain release applies worldwide.  In case this is not
-legally possible, the right is granted to use the work for any purpose,
-without any conditions, unless such conditions are required by law.
+                           ~~ PUBLIC DOMAIN ~~
+This work is waived of all rights, including copyright, according to the CC0
+Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
 
 Norman Megill - http://metamath.org $)
 
