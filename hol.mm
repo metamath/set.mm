@@ -1,10 +1,9 @@
 $( hol.mm  7-Oct-2014 $)
 
 $(
-                      PUBLIC DOMAIN DEDICATION
-
-This file is placed in the public domain per the Creative Commons Public
-Domain Dedication. http://creativecommons.org/licenses/publicdomain/
+                           ~~ PUBLIC DOMAIN ~~
+This work is waived of all rights, including copyright, according to the CC0
+Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
 
 Mario Carneiro - email: di.gama at gmail.com
 
