@@ -19218,6 +19218,7 @@ Proof modification of "dfvd3ir" is discouraged (19 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
 Proof modification of "dmdprdsplitlemOLD" is discouraged (748 steps).
+Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "dpjeqOLD" is discouraged (110 steps).
 Proof modification of "dpjidclOLD" is discouraged (1115 steps).
 Proof modification of "dprddisj2OLD" is discouraged (546 steps).
@@ -19522,7 +19523,7 @@ Proof modification of "frege12" is discouraged (27 steps).
 Proof modification of "frege120" is discouraged (135 steps).
 Proof modification of "frege121" is discouraged (54 steps).
 Proof modification of "frege122" is discouraged (46 steps).
-Proof modification of "frege123" is discouraged (75 steps).
+Proof modification of "frege123" is discouraged (66 steps).
 Proof modification of "frege124" is discouraged (62 steps).
 Proof modification of "frege125" is discouraged (63 steps).
 Proof modification of "frege126" is discouraged (57 steps).
@@ -19530,7 +19531,7 @@ Proof modification of "frege127" is discouraged (55 steps).
 Proof modification of "frege128" is discouraged (63 steps).
 Proof modification of "frege129" is discouraged (65 steps).
 Proof modification of "frege13" is discouraged (33 steps).
-Proof modification of "frege130" is discouraged (96 steps).
+Proof modification of "frege130" is discouraged (87 steps).
 Proof modification of "frege131" is discouraged (259 steps).
 Proof modification of "frege132" is discouraged (58 steps).
 Proof modification of "frege133" is discouraged (256 steps).
@@ -19643,7 +19644,7 @@ Proof modification of "frege77" is discouraged (270 steps).
 Proof modification of "frege78" is discouraged (53 steps).
 Proof modification of "frege79" is discouraged (52 steps).
 Proof modification of "frege80" is discouraged (56 steps).
-Proof modification of "frege81" is discouraged (72 steps).
+Proof modification of "frege81" is discouraged (63 steps).
 Proof modification of "frege82" is discouraged (46 steps).
 Proof modification of "frege83" is discouraged (75 steps).
 Proof modification of "frege84" is discouraged (41 steps).
@@ -19658,7 +19659,7 @@ Proof modification of "frege91" is discouraged (124 steps).
 Proof modification of "frege92" is discouraged (188 steps).
 Proof modification of "frege93" is discouraged (96 steps).
 Proof modification of "frege94" is discouraged (64 steps).
-Proof modification of "frege95" is discouraged (88 steps).
+Proof modification of "frege95" is discouraged (79 steps).
 Proof modification of "frege96" is discouraged (39 steps).
 Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
@@ -20157,6 +20158,7 @@ Proof modification of "rmo4fOLD" is discouraged (198 steps).
 Proof modification of "rmoxfrdOLD" is discouraged (126 steps).
 Proof modification of "rngopidOLD" is discouraged (27 steps).
 Proof modification of "rnlemOLD" is discouraged (51 steps).
+Proof modification of "rntrclfv" is discouraged (46 steps).
 Proof modification of "rp-frege2i" is discouraged (18 steps).
 Proof modification of "rp-frege2ii" is discouraged (22 steps).
 Proof modification of "rp-frege2iii" is discouraged (26 steps).
