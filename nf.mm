@@ -1,5 +1,16 @@
 $( nf.mm - Version of 03-Aug-2019. $)
 
+$(
+                           ~~ PUBLIC DOMAIN ~~
+This work is waived of all rights, including copyright, according to the CC0
+Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
+
+Principal curator:  Scott Fenton
+
+Partly based on the set.mm database, itself dedicated to public domain
+by mean of the CC0 Public Domain Dedication.
+$)
+
 $( Begin $[ set-pred.mm $] $)
 
 $(
