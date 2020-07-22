@@ -352,7 +352,7 @@
 "4syl" is used by "isumsup2".
 "4syl" is used by "kelac1".
 "4syl" is used by "kelac2".
-"4syl" is used by "ldgenpisyslem".
+"4syl" is used by "ldgenpisyslem1".
 "4syl" is used by "locfinref".
 "4syl" is used by "lpssat".
 "4syl" is used by "lsmmod".
@@ -9579,7 +9579,6 @@
 "lukshefth1" is used by "lukshefth2".
 "lukshefth1" is used by "renicax".
 "lukshefth2" is used by "renicax".
-"m1expevenALT" is used by "fallrisefac".
 "m1m1sr" is used by "sqgt0sr".
 "m1p1sr" is used by "axi2m1".
 "m1p1sr" is used by "pn0sr".
@@ -16825,6 +16824,7 @@ New usage of "ledii" is discouraged (2 uses).
 New usage of "lediri" is discouraged (1 uses).
 New usage of "lediv2aALT" is discouraged (0 uses).
 New usage of "ledivmul2OLD" is discouraged (1 uses).
+New usage of "leimnltdOLD" is discouraged (0 uses).
 New usage of "lejdii" is discouraged (1 uses).
 New usage of "lejdiri" is discouraged (1 uses).
 New usage of "leop" is discouraged (4 uses).
@@ -17014,7 +17014,7 @@ New usage of "lvolex3N" is discouraged (0 uses).
 New usage of "lvoln0N" is discouraged (0 uses).
 New usage of "lvolneatN" is discouraged (0 uses).
 New usage of "lvolnltN" is discouraged (0 uses).
-New usage of "m1expevenALT" is discouraged (1 uses).
+New usage of "m1expevenOLD" is discouraged (0 uses).
 New usage of "m1m1sr" is discouraged (1 uses).
 New usage of "m1p1sr" is discouraged (3 uses).
 New usage of "m1r" is discouraged (11 uses).
@@ -17978,6 +17978,7 @@ New usage of "ral2imiOLD" is discouraged (0 uses).
 New usage of "ralbidvOLD" is discouraged (0 uses).
 New usage of "ralbidvaOLD" is discouraged (0 uses).
 New usage of "ralbiiOLD" is discouraged (0 uses).
+New usage of "raleqdOLD" is discouraged (0 uses).
 New usage of "ralimOLD" is discouraged (1 uses).
 New usage of "ralimdaaOLD" is discouraged (0 uses).
 New usage of "ralimdvaOLD" is discouraged (0 uses).
@@ -18873,7 +18874,7 @@ Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bj-19.21t" is discouraged (39 steps).
 Proof modification of "bj-2stdpc4v" is discouraged (28 steps).
 Proof modification of "bj-abbi" is discouraged (87 steps).
-Proof modification of "bj-abbi1dv" is discouraged (24 steps).
+Proof modification of "bj-abbi1dv" is discouraged (19 steps).
 Proof modification of "bj-abbi2dv" is discouraged (24 steps).
 Proof modification of "bj-abbi2i" is discouraged (18 steps).
 Proof modification of "bj-abbid" is discouraged (24 steps).
@@ -19218,6 +19219,7 @@ Proof modification of "dfvd3ir" is discouraged (19 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
 Proof modification of "dmdprdsplitlemOLD" is discouraged (748 steps).
+Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "dpjeqOLD" is discouraged (110 steps).
 Proof modification of "dpjidclOLD" is discouraged (1115 steps).
 Proof modification of "dprddisj2OLD" is discouraged (546 steps).
@@ -19522,7 +19524,7 @@ Proof modification of "frege12" is discouraged (27 steps).
 Proof modification of "frege120" is discouraged (135 steps).
 Proof modification of "frege121" is discouraged (54 steps).
 Proof modification of "frege122" is discouraged (46 steps).
-Proof modification of "frege123" is discouraged (75 steps).
+Proof modification of "frege123" is discouraged (66 steps).
 Proof modification of "frege124" is discouraged (62 steps).
 Proof modification of "frege125" is discouraged (63 steps).
 Proof modification of "frege126" is discouraged (57 steps).
@@ -19530,7 +19532,7 @@ Proof modification of "frege127" is discouraged (55 steps).
 Proof modification of "frege128" is discouraged (63 steps).
 Proof modification of "frege129" is discouraged (65 steps).
 Proof modification of "frege13" is discouraged (33 steps).
-Proof modification of "frege130" is discouraged (96 steps).
+Proof modification of "frege130" is discouraged (87 steps).
 Proof modification of "frege131" is discouraged (259 steps).
 Proof modification of "frege132" is discouraged (58 steps).
 Proof modification of "frege133" is discouraged (256 steps).
@@ -19643,7 +19645,7 @@ Proof modification of "frege77" is discouraged (270 steps).
 Proof modification of "frege78" is discouraged (53 steps).
 Proof modification of "frege79" is discouraged (52 steps).
 Proof modification of "frege80" is discouraged (56 steps).
-Proof modification of "frege81" is discouraged (72 steps).
+Proof modification of "frege81" is discouraged (63 steps).
 Proof modification of "frege82" is discouraged (46 steps).
 Proof modification of "frege83" is discouraged (75 steps).
 Proof modification of "frege84" is discouraged (41 steps).
@@ -19658,7 +19660,7 @@ Proof modification of "frege91" is discouraged (124 steps).
 Proof modification of "frege92" is discouraged (188 steps).
 Proof modification of "frege93" is discouraged (96 steps).
 Proof modification of "frege94" is discouraged (64 steps).
-Proof modification of "frege95" is discouraged (88 steps).
+Proof modification of "frege95" is discouraged (79 steps).
 Proof modification of "frege96" is discouraged (39 steps).
 Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
@@ -19801,6 +19803,7 @@ Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lcomfsupOLD" is discouraged (222 steps).
 Proof modification of "lediv2aALT" is discouraged (264 steps).
 Proof modification of "ledivmul2OLD" is discouraged (106 steps).
+Proof modification of "leimnltdOLD" is discouraged (7 steps).
 Proof modification of "lidlssOLD" is discouraged (17 steps).
 Proof modification of "lidlsubclOLD" is discouraged (141 steps).
 Proof modification of "loolin" is discouraged (14 steps).
@@ -19822,7 +19825,7 @@ Proof modification of "luklem8" is discouraged (25 steps).
 Proof modification of "lukshef-ax1" is discouraged (6 steps).
 Proof modification of "lukshefth1" is discouraged (88 steps).
 Proof modification of "lukshefth2" is discouraged (129 steps).
-Proof modification of "m1expevenALT" is discouraged (134 steps).
+Proof modification of "m1expevenOLD" is discouraged (285 steps).
 Proof modification of "mapfien2OLD" is discouraged (312 steps).
 Proof modification of "mapfienOLD" is discouraged (1184 steps).
 Proof modification of "max1ALT" is discouraged (48 steps).
@@ -20091,6 +20094,7 @@ Proof modification of "ral2imiOLD" is discouraged (31 steps).
 Proof modification of "ralbidvOLD" is discouraged (10 steps).
 Proof modification of "ralbidvaOLD" is discouraged (10 steps).
 Proof modification of "ralbiiOLD" is discouraged (22 steps).
+Proof modification of "raleqdOLD" is discouraged (7 steps).
 Proof modification of "ralimOLD" is discouraged (59 steps).
 Proof modification of "ralimdaaOLD" is discouraged (49 steps).
 Proof modification of "ralimdvaOLD" is discouraged (10 steps).
@@ -20157,6 +20161,8 @@ Proof modification of "rmo4fOLD" is discouraged (198 steps).
 Proof modification of "rmoxfrdOLD" is discouraged (126 steps).
 Proof modification of "rngopidOLD" is discouraged (27 steps).
 Proof modification of "rnlemOLD" is discouraged (51 steps).
+Proof modification of "rntrclfv" is discouraged (46 steps).
+Proof modification of "rntrclfvRP" is discouraged (53 steps).
 Proof modification of "rp-frege2i" is discouraged (18 steps).
 Proof modification of "rp-frege2ii" is discouraged (22 steps).
 Proof modification of "rp-frege2iii" is discouraged (26 steps).
