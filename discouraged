@@ -4838,6 +4838,7 @@
 "df-r" is used by "elreal2".
 "df-r" is used by "opelreal".
 "df-recs" is used by "dfrdg2".
+"df-recs" is used by "dfrecs2".
 "df-recs" is used by "nfrecs".
 "df-recs" is used by "recseq".
 "df-recs" is used by "recsfval".
