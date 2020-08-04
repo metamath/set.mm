@@ -4837,12 +4837,6 @@
 "df-r" is used by "elreal".
 "df-r" is used by "elreal2".
 "df-r" is used by "opelreal".
-"df-recs" is used by "dfrdg2".
-"df-recs" is used by "dfrecs2".
-"df-recs" is used by "nfrecs".
-"df-recs" is used by "recseq".
-"df-recs" is used by "recsfval".
-"df-recs" is used by "tfrlem9".
 "df-ringcALTV" is used by "ringcvalALTV".
 "df-rngcALTV" is used by "rngcvalALTV".
 "df-rngo" is used by "isrngo".
@@ -4884,13 +4878,15 @@
 "df-vhc2" is used by "dfvd2an".
 "df-vhc3" is used by "dfvd3an".
 "df-vs" is used by "vsfval".
+"df-wrecs" is used by "dfrecs3".
 "df-wrecs" is used by "nfwrecs".
-"df-wrecs" is used by "wfrlem11".
+"df-wrecs" is used by "wfrdmcl".
+"df-wrecs" is used by "wfrdmss".
+"df-wrecs" is used by "wfrfun".
 "df-wrecs" is used by "wfrlem12".
 "df-wrecs" is used by "wfrlem16".
-"df-wrecs" is used by "wfrlem6".
-"df-wrecs" is used by "wfrlem7".
-"df-wrecs" is used by "wfrlem9".
+"df-wrecs" is used by "wfrlem17".
+"df-wrecs" is used by "wfrrel".
 "df-wrecs" is used by "wrecseq123".
 "df0op2" is used by "hh0oi".
 "df0op2" is used by "ho01i".
@@ -15375,7 +15371,6 @@ New usage of "df-plq" is discouraged (2 uses).
 New usage of "df-plr" is discouraged (2 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-r" is discouraged (6 uses).
-New usage of "df-recs" is discouraged (6 uses).
 New usage of "df-ringcALTV" is discouraged (1 uses).
 New usage of "df-rngcALTV" is discouraged (1 uses).
 New usage of "df-rngo" is discouraged (2 uses).
@@ -15403,7 +15398,7 @@ New usage of "df-vd3" is discouraged (1 uses).
 New usage of "df-vhc2" is discouraged (1 uses).
 New usage of "df-vhc3" is discouraged (1 uses).
 New usage of "df-vs" is discouraged (1 uses).
-New usage of "df-wrecs" is discouraged (8 uses).
+New usage of "df-wrecs" is discouraged (10 uses).
 New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfadj2" is discouraged (7 uses).
 New usage of "dfbi1ALT" is discouraged (0 uses).
@@ -20270,7 +20265,7 @@ Proof modification of "tbwlem4" is discouraged (91 steps).
 Proof modification of "tbwlem5" is discouraged (42 steps).
 Proof modification of "tbwsyl" is discouraged (20 steps).
 Proof modification of "tfr1ALT" is discouraged (19 steps).
-Proof modification of "tfr2ALT" is discouraged (53 steps).
+Proof modification of "tfr2ALT" is discouraged (52 steps).
 Proof modification of "tfr3ALT" is discouraged (84 steps).
 Proof modification of "topnfbey" is discouraged (75 steps).
 Proof modification of "toycom" is discouraged (142 steps).
