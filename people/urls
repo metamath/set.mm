@@ -1,0 +1,103 @@
+# This file lists the avatars (download images) for people, in the form
+# URL space person-name.file-type
+# Most of these avatars are GitHub avatars, as those are already public;
+# please record the original account URL in a comment so people don't
+# have to work out the username mapping.
+# If the avatar is not available for download, but has otherwise been approved,
+# please document that in this file as a comment.
+
+# For Norman Megill we use the image used on the 2019 Metamath book cover.
+https://raw.githubusercontent.com/metamath/metamath-book/master/cover/norm2011-408b.png Norman Megill.png
+
+# David A. Wheeler: Use his personal website image.
+# This was also used for the 2019 Metamath book cover.
+https://dwheeler.com/dwheeler2003.jpg David A. Wheeler.png
+
+# Mario Carneiro
+# https://github.com/digama0
+https://avatars2.githubusercontent.com/u/868588?s=460&v=4 Mario Carneiro.png
+
+# Benoit Jubin
+# https://github.com/benjub
+https://avatars3.githubusercontent.com/u/41090811?s=460&v=4 Benoit Jubin.png
+
+# https://github.com/raphlinus
+https://avatars1.githubusercontent.com/u/242367?s=460&v=4 Raph Levien.png
+
+# https://github.com/sorear
+https://avatars2.githubusercontent.com/u/92735?s=460&v=4 Stefan O'Rear.png
+
+# https://github.com/sctfn
+https://avatars3.githubusercontent.com/u/996440?s=460&v=4 Scott Fenton.png
+
+# Alan Sare, from public obituary
+# https://www.legacy.com/obituaries/name/alan-sare-obituary?pid=191902853
+https://cache.legacy.net/legacy/images/cobrands/TheTimes-Tribune/photos/8128942_20190325.jpg Alan Sare.jpg
+
+# https://github.com/Drahflow
+https://avatars0.githubusercontent.com/u/609223?s=460&v=4 Drahflow.png
+
+# https://github.com/jkingdon
+https://avatars3.githubusercontent.com/u/16878?s=460&u=fbb94f22f3655a6907eb6d8565df2851248d22f3&v=4 Jim Kingdon.png
+
+# Paul Chapman's avatar is derived from https://twitter.com/igblan per email
+# from Paul Chapman dated Tue, 1 Oct 2019 18:01:34 +0100
+# subject Re: [Metamath] Looking for publicly-acknowledged avatars for Gource
+# on Metamath mailing list
+# David A. Wheeler extracted the image and put it on his website
+# so it could extracted here.
+https://dwheeler.com/images/Paul%20Chapman.png Paul Chapman.png
+
+# Jon Pennant (JPP) asked on 2020-04-11 that I use the image in
+# https://imgur.com/QeCKSj4
+https://i.imgur.com/QeCKSj4.jpg Jon Pennant.jpg
+
+# Wolf Lammen posted the following to the Metamath mailing list of
+# Tue, 1 Oct 2019 23:04:56 -0700 (PDT)
+# From: "'ookami' via Metamath"
+# "You may use the Chinese/Japanese character displayed here
+# https://www.japanesewordswriting.com/image-of-japanese-kanji-for-wolf-and-related-words-700/
+# I don't know whether taking a screenshot creates copyright issues. As an
+# alternative, take the character from one of various Unicode fonts. Here is
+# its representation in text: 狼
+# For those curious: My first name matches that of the animal wolve in
+# German, and the character is its representation in Japanese kanji (and
+# Chinese as well, I believe).."
+#
+# David A. Wheeler: I'm not a lawyer. It may be true that we could use
+# http://www.japanesewordswriting.com/images/ookami.png
+# but out of an abundance of caution I will instead recreate a simple
+# image with the word (it's easy to do).
+
+# On 2020-04-30 David Harvey agreed to let his image from this page:
+# https://web.maths.unsw.edu.au/~davidharvey/
+# be used to represent his contributions to Metamath.
+# David Harvey was the first external contributor to the
+# Metamath Proof Explorer (it was a simplification of notnot2 on 1999-09-05):
+https://web.maths.unsw.edu.au/~davidharvey/david-harvey.jpg David Harvey.jpg
+
+# On Tue, 1 Oct 2019 20:21:20 +0200
+# Alexander van der Vekens sent an email to David A. Wheeler saying,
+# "here is a picture of me (from my linkedin profile) you can use for the
+# Gource visualization."
+
+# On Wed, 1 Apr 2020 14:10:07 -0700 (PDT)
+# The Dr. Loof Lipra requested that his avatar should be taken from this link:  
+https://i1.wp.com/freevintageimages.co.uk/wp-content/uploads/2018/04/Black-Finned-Sparus.jpg?fit=2000%2C1330&ssl=1 Fool Lipra.png
+
+#
+# Gérard Lang graciously emailed to David A. Wheeler
+# on 2020-04-11 a .psd file of his face.
+# Unfortunately Gource can't handle .psd files, so David hand-converted it.
+#
+# Thierry Arnoux (Tirix) emailed to David A. Wheeler on 2020-04-11
+# his GitHub avatar.
+https://avatars1.githubusercontent.com/u/5831830?s=460&u=f6f5b09d5cf50718cbae7b63656e5eb0baa6c923&v=4 Thierry Arnoux.png
+
+# On 2020-04-12 Stanislas Polu emailed avatars for himself and OpenAI
+# to David A. Wheeler. For OpenAI he sent a .tif file, but many tools
+# can't handle that format, so "convert" was used to create a .png file.
+
+# Giovanni Mascellani
+# On 2020-04-30 Giovanni Mascellani pointed out his Gravatar:
+https://www.gravatar.com/avatar/decd3ea69d3387db2ffb5394ab7abebd?size=256 Giovanni Mascellani.jpg

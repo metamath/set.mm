@@ -70,7 +70,7 @@ Variable Conditions</B></FONT></CENTER>
 axioms</FONT></B>&nbsp;&nbsp;&nbsp;Each of our <A
 HREF="mmset.html#zfcaxioms">standard ZFC (Zermelo-Fraenkel
 with Choice) set theory axioms</A> is accompanied by
-the proviso that all of its set variables be <A
+the proviso that all of its setvar variables be <A
 HREF="mmset.html#distinct">distinct</A> from each other.  This is
 indicated by the "Distinct variable group" on its web page
 (for example <A HREF="ax-ext.html">ax-ext</A>) and
@@ -81,12 +81,11 @@ HREF="../index.html#mmprog">set.mm</A>.
 axiom in the language of first-order logic but is a <A
 HREF="mmset.html#schemes"><I>scheme</I></A> or template that represents
 an infinite number of actual axioms.  From the point of view of
-first-order logic, the <FONT COLOR=red>set</FONT> and <FONT
+first-order logic, the <FONT COLOR=red>setvar</FONT> and <FONT
 COLOR=blue>wff</FONT> "variables" are metavariables that range over the
 individual variables and wffs of the language of the actual logic.  This
-is the way Metamath&mdash;"metavariable math"&mdash;works; it doesn't have a way
-of directly representing an individual variable or a single actual
-axiom.
+is the way Metamath&mdash;"metavariable math"&mdash;works; it doesn't have a
+way of directly representing an individual variable or a single actual axiom.
 
 <P>Most textbooks, on the other hand, state the ZFC axioms (except
 Replacement, which necessarily has a wff metavariable) as specific
@@ -95,11 +94,11 @@ they will state the Axiom of Extensionality as a single actual axiom
 with fixed individual variables, not a scheme ranging over an infinite
 number of actual axioms.  To recover the textbook version from
 Metamath's version, we simply make a fixed assignment of individual
-variables to our set metavariables, outside of Metamath; in other
+variables to our setvar metavariables, outside of Metamath; in other
 words, we pick any instance of the scheme that our Axiom of Extensionality
 statement represents.  The math works
 out exactly the same, because we have attached provisos to our standard
-version of the ZFC axioms stating that their set metavariables must be
+version of the ZFC axioms stating that their setvar metavariables must be
 distinct from each other, and a metatheorem of predicate calculus states
 that the truth of an axiom is not affected by renaming its variables
 as long as the variable names remain distinct.
@@ -205,10 +204,10 @@ scope vanishes&mdash;all variables become "global" throughout the
 expression.  Think about what that means&mdash;it is a rather startling and
 even counterintuitive property if you are used to working with
 first-order logic.  For example, in our condition-free Axiom of Union, we
-can blindly change all of its free and bound set variables to ` x ` , and the
-strange-looking result,
-` |- E. x A. x ( E. x ( x e. x /\ x e. x ) -> x e. x ) ` , is still a sound (although probably not very useful)
-theorem scheme of set theory!
+can blindly change all of its free and bound setvar variables to ` x ` ,
+and the strange-looking result,
+` |- E. x A. x ( E. x ( x e. x /\ x e. x ) -> x e. x ) ` , is still a sound
+(although probably not very useful) theorem scheme of set theory!
 Among other things, such axiom schemes are trivial to manipulate
 with a computer program, since the "for all" and "there exists"
 quantifiers effectively become simple binary operations.
@@ -239,9 +238,9 @@ at least two things exist.
 When added to
 the axioms of our <A HREF="mmset.html#dvfreesystem">predicate calculus
 system with no distinct variables</A>, the Axiom of Twoness implies <A
-HREF="ax-16.html">ax-16</A> (as shown by theorem <A
-HREF="ax16b.html">ax16b</A>) and therefore all instances of <A
-HREF="ax-17.html">ax-17</A>, making those two axioms of predicate
+HREF="ax-c16.html">ax-c16</A> (as shown by theorem <A
+HREF="axc16b.html">axc16b</A>) and therefore all instances of <A
+HREF="ax-5.html">ax-5</A>, making those two axioms of predicate
 calculus unnecessary for logical completeness.  This means that the need
 for distinct variables in mathematics completely captured by the Axiom
 of Twoness, a fact that I think is somewhat remarkable.
@@ -256,7 +255,7 @@ complex versions of predicate calculus called "free logics" that allow
 the domain of discourse to be empty.)
 
 <P>My conjecture is that the Axiom of Twoness, and not just the weaker
-Axiom of Distinct Variables <A HREF="ax-16.html">ax-16</A>, is necessary
+Axiom of Distinct Variables <A HREF="ax-c16.html">ax-c16</A>, is necessary
 for completeness.  Specifically, I haven't been able to <A
 HREF="zfcndpow.html">rederive</A> the standard Axiom of Power Sets (nor
 the standard Axiom of Infinity, which uses it for its rederivation) from
@@ -278,7 +277,8 @@ live with theorems prefixed with antecedents of the form
 
 "` -. A. x x = y `",
 
-which I call "distinctors," in place of explicitly requiring ` x ` and ` y ` to be distinct variables.  But the
+which I call "distinctors," in place of explicitly requiring ` x ` and ` y `
+to be distinct variables.  But the
 list of distinctors needed for a theorem can grow quite long, as it will
 accumulate all the "dummy" variables used in the theorem's proof, even if
 those variables do not appear in the main part of the theorem.  It is
@@ -331,7 +331,7 @@ standard ones.
 <TD ALIGN=left VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
 &nbsp;</FONT></TD>
 
-<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 18-May-2018.</I>
+<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 20-Jul-2019.</I>
 <BR><FONT SIZE=-2 FACE=ARIAL>
 Copyright terms:
 <A HREF="../copyright.html#pd">Public domain</A>
@@ -356,4 +356,3 @@ urchinTracker();
 -->
 
 </BODY></HTML>
-

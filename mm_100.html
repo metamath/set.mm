@@ -109,34 +109,56 @@ headway various proof systems have made in mathematics, Coq and Mizar
 are two of the most successful systems in use today (Wiedijk,
 2007)".</p>
 
-<p>Currently there are <b>69</b> proofs proven by Metamath from this list of
-100.  As of 2018-10-11 this number of proofs is more than
-ProofPower (43), nqthm/ACL2 (18), PVS (16), and NuPRL/MetaPRL (8);
-it is also a tie with Mizar (69) and Coq (69).
-It is short of only Isabelle (80) and HOL Light (86).
-This is very good considering that there had been no significant
-effort until 2014 to prove theorems from this list of 100.
+<p>Currently there are <b>74</b> proofs proven by Metamath from this list of
+100.  As of 2020-04-05 this number of proofs is more than
+Coq (70), Mizar (69),
+ProofPower (43), Lean (29),
+PVS (22), nqthm/ACL2 (18), and NuPRL/MetaPRL (8);
+it is short of only Isabelle (83) and HOL Light (86).
+This is very good, especially considering that there had been no significant
+effort until 2014 to prove theorems from this list of 100 using Metamath.
 In this page, you can see the
 <a href="#done">completed Metamath proofs</a> and the
 <a href="#todo">Metamath proofs to be done</a> from this list of
 metamath proofs.
-
-<a
-href="https://docs.google.com/spreadsheets/d/1jcLOp_jF4sPrVPdPedL_ZWebXp8oYEQOSmbWb168YHE"
->Some graphs showing Metamath 100 progress are available</a> (click the
-Authors tab for a pie chart).
-
 </p>
 
-<p> Like all Metamath proofs, all reasoning is done directly in the
+<p>Like all Metamath proofs, all reasoning is done directly in the
 proof itself rather than by algorithms embedded in the verification
 program.  As a result, the proofs are completely transparent with
 nothing hidden from the user, and every step can be followed through a
-hyperlink to its corresponding proof or definition.  What's more, all of
+hyperlink to its corresponding proof or definition.
+Therefore, the Metamath Proof Explorer (MPE aka set.mm) database
+is the <i>largest</i> database of formally-verified mathematics
+that records every step of a proof by directly
+referring to only an axiom or previous proof
+(many competing databases only record tactics that are
+intended to rediscover the proof, instead of recording
+the specific proven steps actually used in the proof).
+</p>
+
+<p>
+The theorems in MPE are routinely verified by 5 different programs
+written in 5 different programming languages by more than 5 different people.
+These are the
+original metamath (a C verifier by Norm Megill),
+mmj2 (a Java verifier by Mel O'Cat and Mario Carneiro),
+smetamath-rs (a high-speed Rust verifier by Stefan O'Rear),
+checkmm (a C++ verifier by Eric Schmidt), and
+mmverify (a Python verifier by Raph Levien).
+This checking by multiple independent verifiers in different languages
+provides very strong justification for believing
+that the proofs are correct.
+</p>
+
+<p>
+What's more, all of
 the proofs listed here are current and verified with the current
-versions of Metamath tools.  This is not the case with some
+versions of Metamath tools.
+This is not the case with some
 other systems, where older proofs have not always been kept synchronized
 with the current system and thus have become essentially lost.
+</p>
 
 <!--
 This is different from some other systems.
@@ -146,14 +168,14 @@ formal proofs), so its proof is uncheckable with current tools and
 essentially lost.
 -->
 
+<p>
 Since the kernel of Metamath is extremely small and rarely changes, the
-underlying Metamath language (as implemented by a dozen
-independently-written verifiers) is very stable over time.
-</p>
-
-<p>The entire
+underlying Metamath language (as implemented by over a dozen
+independently-written verifiers) is very stable over time
+and can be verified very rapidly.
+The entire
 content of  <A HREF="index.html#mmprog">set.mm</A>
- set theory database can be verified in less than 5 sec
+set theory database can be verified in less than 5 sec
 with the <A HREF="index.html#mmprog">metamath program</A> and in 0.7 sec
 with a recent version of Stefan O'Rear's <A
 HREF="other.html#smm">smm3</A> verifier that utilizes multiple CPU
@@ -167,11 +189,32 @@ example, many of the theorems on this list
 depend on the complex number construction, which itself
 involves 3014 theorems to derive starting from the ZFC axioms.)</p>
 
+<p>
+<a
+href="https://docs.google.com/spreadsheets/d/1jcLOp_jF4sPrVPdPedL_ZWebXp8oYEQOSmbWb168YHE"
+>Some graphs showing Metamath 100 progress are available on another page</a>
+(click the Authors tab for a pie chart).
+You can also see a
+<a href="https://www.youtube.com/watch?v=LVGSeDjWzUo">Gource Visualization of
+the growth of the Metamath Proof Explorer (MPE / set.mm) database of proofs</a>.
+</p>
+
 <p id="done">Here is the list of the <a
 href="http://www.metamath.org/">Metamath</a> proofs that are available
 from this list of 100, along with credit to the individual(s) who
-created the Metamath formalization.  Please email missing entries to <a
+created the Metamath formalization.
+Almost all of these proofs are from the <a
+href="http://us.metamath.org/mpeuni/mmset.html">Metamath Proof Explorer</a>,
+aka database set.mm, which is based on classical logic.
+However, there are some proofs available in the <a
+href="http://us.metamath.org/ileuni/mmil.html">Intuitionistic Logic Explorer</a>,
+aka database iset.mm, which uses intuitionistic logic instead.
+Please email missing entries to <a
 href="email.html">Norm Megill</a>!
+
+The intuitionistic logic explorer (iset.mm) database also includes <a
+href="http://us.metamath.org/ileuni/finds.html">finds</a> and <a
+href="http://us.metamath.org/ileuni/findes.html">findes</a>.
 
 <p><a name="developers"></a><font size=-1>Note for potential
 contributors:  The development tools most people use, in addition to a
@@ -195,7 +238,7 @@ announcements.</font></p>
 
 <!-- 5th added to list -->
 <li><a name="1">1</a>.  The Irrationality of the Square Root of 2 (<a
-href="mpeuni/sqr2irr.html">sqr2irr</a>, by Norman Megill, 2001-08-20)</li>
+href="mpeuni/sqrt2irr.html">sqrt2irr</a>, by Norman Megill, 2001-08-20)</li>
 
 <!-- 37th added to list -->
 <li><a name="2">2</a>. The Fundamental Theorem of Algebra (<a
@@ -248,7 +291,10 @@ by Mario Carneiro, 2014-09-03)</li>
 
 <!-- 11th added to list -->
 <li><a name="17">17</a>.  De Moivre's Theorem (<a
-href="mpeuni/demoivre.html">demoivre</a>, by Steve Rodriguez, 2006-11-1)</li>
+href="mpeuni/demoivreALT.html">demoivreALT</a>, by Steve Rodriguez, 2006-11-10).
+See also the later proof <a
+href="mpeuni/demoivre.html">demoivre</a> (by Norman Megill, 2007-07-24),
+which is shorter and more general but uses the exponential function.</li>
 
 <!-- 40th added to list -->
 <li><a name="18">18</a>. Liouville's Theorem and the Construction
@@ -345,6 +391,11 @@ by Mario Carneiro, 2015-05-06)</li>
 href="mpeuni/dirith.html">dirith</a>,
 by Mario Carneiro, 2016-05-12)</li>
 
+<!-- 72nd added to list -->
+<li><a name="49">49</a>.  The Cayley-Hamilton Theorem (<a
+href="mpeuni/cayleyhamilton.html">cayleyhamilton</a>,
+by Alexander van der Vekens, 2019-11-25)</li>
+
 <!-- 42th added to list -->
 <li><a name="51">51</a>.  Wilson's Theorem (<a
 href="mpeuni/wilth.html">wilth</a>,
@@ -363,6 +414,12 @@ by Mario Carneiro, 2015-04-16)</li>
 <li><a name="55">55</a>.  Product of Segments of Chords (<a
 href="mpeuni/chordthm.html">chordthm</a>
 by David Moews, 2017-02-28)</li>
+
+<!-- 71st added to list -->
+<li><a name="57">57</a>.  Heron's Formula (<a
+href="mpeuni/heron.html">heron</a>
+by Mario Carneiro based on work by Jon Pennant and Thierry Arnoux,
+2019-03-10)</li>
 
 <!-- 29th added to list -->
 <li><a name="58">58</a>.  Formula for the Number of Combinations (<a
@@ -394,9 +451,14 @@ by Saveliy Skresanov, 2017-01-01)</li>
 <li><a name="66">66</a>.  Sum of a Geometric Series (<a
 href="mpeuni/geoser.html">geoser</a>, by Norman Megill, 2006-05-09)</li>
 
+<!-- 74th added to list -->
+<li><a name="67">67</a>.  <i>e</i> is Transcendental (<a
+href="mpeuni/etransc.html">etransc</a>, by Glauco Siliprandi, 2020-04-05)</li>
+
 <!-- 12th added to list -->
+<!-- Note: arisum was originally named fnsmnt -->
 <li><a name="68">68</a>.  Sum of an arithmetic series (<a
-href="mpeuni/arisum.html">arisum</a>, by Norman Megill, 2006-11-16) - arisum
+href="mpeuni/arisum.html">arisum</a>, by Frédéric Liné, 2006-11-16) - arisum
 is not fully general, but it would be straightforward to enhance.</li>
 
 <!-- 16th added to list -->
@@ -428,15 +490,28 @@ by Mario Carneiro, 2015-01-28)</li>
 
 <!-- 2nd added to list -->
 <li><a name="74">74</a>.  The Principle of Mathematical Induction (<a
-href="mpeuni/findes.html">findes</a>, by Raph Levien, 2003-07-09) - there
-are many versions of Mathematical Induction in set.mm; another version
-is <a href="mpeuni/nnind.html">nnind</a> (by Norman
-Megill, 1997-01-10).</li>
+href="mpeuni/finds.html">finds</a>, by Norman Megill, 1995-04-14).
+There are many versions of Mathematical Induction in set.mm. Theorem <a
+href="mpeuni/findes.html">findes</a> (by Raph Levien, 9-Jul-2003)
+is a compact and more traditional-looking version with explicit substitution.
+Another alternative is <a
+href="mpeuni/nnind.html">nnind</a> (by Norman Megill, 10-Jan-1997),
+which uses natural numbers instead of ordinal numbers and might be
+less obscure for non-mathematicians.
+The intuitionistic logic explorer (iset.mm) database also includes <a
+href="http://us.metamath.org/ileuni/finds.html">finds</a> and <a
+href="http://us.metamath.org/ileuni/findes.html">findes</a>.
+</li>
 
 <!-- 36th added to list -->
 <li><a name="75">75</a>. The Mean Value Theorem (<a
 href="mpeuni/mvth.html">mvth</a>,
 by Mario Carneiro, 2014-09-14)</li>
+
+<!-- 73rd added to list -->
+<li><a name="76">76</a>. Fourier Series (<a
+href="mpeuni/fourier.html">fourier</a>,
+by Glauco Siliprandi, 2019-12-11)</li>
 
 <!-- 25th added to list -->
 <li><a name="77">77</a>.  Sum of kth powers (<a
@@ -516,6 +591,12 @@ href="mpeuni/ptolemy.html">ptolemy</a>, by David A. Wheeler, 2015-05-31)</li>
 <li><a name="96">96</a>.  Principle of Inclusion/Exclusion (<a
 href="mpeuni/incexc.html">incexc</a>, by Mario Carneiro, 2017-08-07)</li>
 
+<!-- 70th added to list -->
+<li><a name="97">97</a>.  Cramer's Rule (<a
+href="mpeuni/cramer.html">cramer</a>,
+by Alexander van der Vekens, 2019-02-21,
+which built on the key work on determinants by Stefan O'Rear)</li>
+
 <!-- 22nd added to list -->
 <li><a name="98">98</a>.  Bertrand's Postulate (<a
 href="mpeuni/bpos.html">bpos</a>, by Mario Carneiro, 2014-03-15)</li>
@@ -566,19 +647,14 @@ href="mpeuni/stowei.html">stowei</a>, by Glauco Siliprandi,
 <li><a name="41">41</a>.  Puiseux's Theorem</li>
 <li><a name="43">43</a>.  The Isoperimetric Theorem</li>
 <li><a name="47">47</a>.  The Central Limit Theorem</li>
-<li><a name="49">49</a>.  The Cayley-Hamilton Theorem</li>
 <li><a name="50">50</a>.  The Number of Platonic Solids</li>
 <li><a name="53">53</a>.  <i>&pi;</i> is Transcendental</li>
 <li><a name="56">56</a>.  The Hermite-Lindemann Transcendence Theorem</li>
-<li><a name="57">57</a>.  Heron's Formula</li>
 <li><a name="59">59</a>.  The Laws of Large Numbers</li>
 <li><a name="62">62</a>.  Fair Games Theorem</li>
-<li><a name="67">67</a>.  <i>e</i> is Transcendental</li>
-<li><a name="76">76</a>.  Fourier Series</li>
 <li><a name="82">82</a>.  Dissection of Cubes (J.E. Littlewood's "elegant" proof)</li>
 <li><a name="84">84</a>.  Morley's Theorem</li>
 <li><a name="92">92</a>.  Pick's Theorem</li>
-<li><a name="97">97</a>.  Cramer's Rule</li>
 <li><a name="99">99</a>.  Buffon Needle Problem</li>
 <li><a name="100">100</a>.  Descartes Rule of Signs</li>
 </ul>

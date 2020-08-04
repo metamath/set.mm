@@ -9,9 +9,21 @@
 
 set -v -e
 
-# Download the main metamath.exe program.
-rm -f metamath-program.zip
-wget -N -q http://us.metamath.org/downloads/metamath-program.zip
+# Return URL for latest zipball of GitHub repo named "$1"
+# We determine the "latest" version from the number itself, not the date,
+# since a older commit might be tagged later on
+latest_zipball () {
+  curl --silent "https://api.github.com/repos/$1/tags" | \
+    grep zipball_url | grep -o 'https:[^"]*' | sort -n | tail -n 1
+}
+
+# Download the main metamath.exe program latest version.
+# GitHub doesn't provide a "latest" for tags, only for releases,
+# so we will do it ourselves.
+# rm -f metamath-program.zip
+# wget -N -q http://us.metamath.org/downloads/metamath-program.zip
+set -x
+curl --silent -L -o metamath-program.zip "$(latest_zipball metamath/metamath-exe)"
 
 # Extract into a different directory to prevent overwriting .mm's
 # This will be updated, but we need a starting point:

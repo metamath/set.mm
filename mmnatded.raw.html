@@ -64,6 +64,8 @@ img { margin-bottom: -4px }
 <MENU>
 <LI> <A HREF="#introduction">Introduction to deduction</A></LI>
 <LI> <A HREF="#current">Current approach to deductions</A></LI>
+<LI> <A HREF="#conversion">Conversion</A></LI>
+<LI> <A HREF="#special-cases">Special cases</A></LI>
 <LI> <A HREF="#introduction-natural-deduction">Introduction to natural deduction</A></LI>
 <LI> <A HREF="#natural-deduction-metamath">Natural deduction in the Metamath Proof Explorer (MPE)</A></LI>
 <LI> <A HREF="#other-natural-deduction">Other Approaches to Natural Deduction in Metamath</A></LI>
@@ -167,7 +169,7 @@ We have found that in many cases only a weakened form
 of the deduction theorem is necessary,
 called the <B>weak deduction theorem</B>
 (<A HREF="dedth.html">dedth</A> and its variants).
-The weak deduction theorem is often easier to use, when it is necessary
+The weak deduction theorem is often easier to use when it is necessary
 to use some version of the deduction theorem in the
 Metamath Proof Explorer (MPE).
 Earlier versions of MPE applied the deduction theorem, or a weakened
@@ -191,6 +193,8 @@ In general there is a preference today for
 writing assertions in "deduction form"
 instead of writing a proof that would require use of the deduction theorem.
 Applying this approach is called "deduction style".
+The power of deduction form in Metamath
+was originally identified by Mario Carneiro.
 
 <P>
 An assertion is in deduction form if the conclusion is an implication with
@@ -234,25 +238,31 @@ In deduction form the antecedent
 mimics the context handled in the deduction theorem.
 
 <P>
-Sometimes we have assertions in multiple forms, and we have
-<A HREF="conventions.html">conventions for their labels (names)</a>.
-As just noted, an assertion is in "deduction form" whenever the
+Sometimes we have assertions in multiple forms; here are the forms and the
+<A HREF="conventions.html">conventions for their labels (names)</a> when
+multiple forms are present:
+
+<UL>
+<LI>Deduction form: As already noted,
+an assertion is in "deduction form" whenever the
 conclusion and all hypotheses are each prefixed with an implication using
-the same antecedent
-(` ph `).
-Theorems in deduction form have a label suffix of "d" if there
+the same antecedent (` ph `).
+An assertion in deduction form has a label suffix "d" if there
 are other forms of the same assertion.
-We call the simpler version with hypotheses but no common
-antecedent an "inference form" and suffix its label with "i".
-Finally, an assertion in "closed form" has no hypotheses; all of
-its preconditions (if any) are part of its implication's antecedent,
+<LI>Inference form: An assertion with hypotheses but no common
+antecedent is an "inference form"; it has a label suffix "i".
+<LI>Closed form: An assertion is in "closed form" has no hypotheses at all;
+all of its preconditions (if any) are part of its implication's antecedent,
 and the assertion label (name) has no suffix.
-You can see this by comparing
+</UL>
+
+<P>
+You can compare these forms by comparing
 <A HREF="pm2.43.html">pm2.43</A> (closed form),
 <A HREF="pm2.43i.html">pm2.43i</A> (inference form), and
 <A HREF="pm2.43d.html">pm2.43d</A> (deduction form).
 
-<P id="conversion">
+<P><HR NOSHADE SIZE=1><A NAME="conversion"></A><B><FONT COLOR="#006633">Conversion</FONT></B> &nbsp;&nbsp;&nbsp;
 Once you have an assertion in deduction form, you can easily convert it
 to inference form or closed form:
 <UL>
@@ -308,14 +318,128 @@ some arbitrary assertion T in inference form into a related assertion
 Td in deduction form.
 
 <P>
+An assertion in deduction form that has a hypothesis
+can be easily converted so that the hypothesis becomes an implication.
+More formally, given an assertion THM in deduction form with
+hypothesis $e ` ( ph -> ps ) ` and a conclusion ` ( ph -> ch ) `
+we can easily turn THM into the assertion ` ( ph -> ( ps -> ch ) ) ` .
+Another way to say this is that we can easily convert the THM
+` |- ( ph -> ps ) => |- ( ph -> ch ) ` into
+` |- ( ph -> ( ps -> ch ) ) ` , where ` ps ` and ` ch ` are any proposition.
+Here the process to do that:
+
+<OL>
+<LI>Use ~ simpr to trivially prove that ` |- ( ( ph /\ ps ) -> ps ) ` .
+<LI>Use THM and the previous step to prove ` |- ( ( ph /\ ps ) -> ch ) ` .
+Note that in this use, ` ( ph /\ ps ) ` is substituting for ` ph ` of
+the THM's hypothesis, enabling us to deduce this result from the first step.
+<LI>Use ~ ex and the previous step to prove ` ( ph -> ( ps -> ch ) ) ` .
+</OL>
+
+<P>
+Note that converting an assertion in deduction form into an implication
+in deduction form is <I>different</I> from the general case of
+converting an inference form into an implication.
+In the general case that would require the deduction theorem or some variant
+like the weak deduction theorem.
+
+<P>
 The deduction form antecedent can also be used to represent
 the context necessary to support
 <A HREF="#natural-deduction-metamath">natural deduction systems</A>.
 For example, if the antecedent is a conjunction, the other terms can
 represent the temporary assumptions that are sometimes used in
 natural deduction.
-Before we discuss how to do natural deduction in MPE, we will first
-explain what natural deduction is.
+Below we provide an
+<A HREF="#introduction-natural-deduction">introduction to
+natural deduction</A>, and then discussion how
+<A HREF="#natural-deduction-metamath">natural deduction is implemented
+in Metamath set.mm (and iset.mm)</A>.
+
+<P><HR NOSHADE SIZE=1><A NAME="special-cases"></A><B><FONT COLOR="#006633">Special cases</FONT></B> &nbsp;&nbsp;&nbsp;
+There are some types of hypotheses where we usually do not use
+a ` ph -> ` antecedent in a theorem's deduction form.
+Although this may weaken the theorem slightly, omitting this
+antecedent where it is not normally needed can make proofs using the theorem
+slightly shorter by not having to apply ~ a1i in order to match its
+hypotheses.
+Here they are, along with a discussion of possible methods to strengthen the
+deduction form with ` ph -> ` on one of these hypotheses if needed.
+
+<OL>
+<LI>Existence (sethood) hypothesis, e.g., a $e of the form ` |- A e. _V ` .
+To add ` ph -> ` if desired,
+first turn the ` A e. _V ` into an antecedent using ~ vtoclg
+and friends as in e.g. ~ unisng , then convert from this (semi-)closed form
+back to deduction form.
+
+<LI>Not-free-in hypothesis, e.g., a $e of the form
+` |- F/ x ps ` or ` |- F/_ x A ` .
+It is very rare that you really need something of the form
+` ph -> F/ x ps ` instead in set.mm, because of the
+` A e. V ` , ` B e. V `
+assumptions that are needed in order to substitute a variable for a class.
+(You can substitute a wff for a variable, if the universe has at least two
+elements; for example you can use ` (/) e. x ` as a substitute for
+variable ` ph ` ,
+where we take ` x ` to be the set ` { y e. 1o | ph } ` .)
+The special case where ` ps ` is ` ph ` is given by ~ nfdi .
+<BR>
+It is possible to prove the not-free theorem for a term constructor given
+the equality theorem, provided you can substitute the terms for variables.
+Mario demonstrates this in
+<A HREF="https://github.com/digama0/mm0/blob/master/examples/peano.mm1#L1019-L1024"
+>nfnlem of peano.mm1</A>, as follows.
+Suppose we have a constructor "foo ` ( A , B )`" and we want to prove
+` ( A e. V /\ B e. V /\ F/_ x A /\ F/_ x B ) -> F/_ x ` foo ` ( A , B ) ` .
+We can let ` y = A ` and ` z = B ` be new dummies, then
+` F/_ x ` foo ` ( A , B ) <-> F/_ x ` foo ` ( y , z ) ` , but
+the latter is true by ~ nfv .
+The ` F/_ x A ` and ` F/_ B ` theorems come up when we want to prove
+` ( y = A /\ z = B ) -> ( F/_ x ` foo ` ( y , z ) <-> F/_ x ` foo ` ( A , B ) ) ` ;
+the nf equality step here requires that the context be free from
+` x ` , so you need a special version of the theorem so that this can be given
+as a hypothesis.
+In the worst case, the
+theorem may have to be reproved back through a number of previous
+theorems. We do have many "nf*d" theorems that will assist this.
+In practice this is practically never needed.
+
+<LI>Definitional hypothesis, e.g., a $e of the form
+` |- ( ps <-> ( ch /\ th ) ) ` or ` |- A = ( B + C ) ` .
+To prepend ` ph -> ` , eliminate the original hypothesis with ~ biid or ~ eqid ,
+then rewrite the proof where the steps are simplified with the new ` ph -> `
+prefix form of the definitional hypotheses. See
+<A HREF="https://groups.google.com/d/msg/metamath/V6QPBWzqvu4/jmY9kwLWCgAJ"
+>Mario's discussion about this</A>.
+
+<LI>Implicit substitution hypothesis, e.g., a $e of the form
+` |- ( x = y -> ( ph <-> ps ) ) ` or ` |- ( x = y -> A = B ) ` .
+To prepend ` ph -> ` ,
+convert the theorem to explicit substitution form, then convert
+back to implicit substitution form.
+This can be somewhat tedious, but at
+least it can be done in principle. See ~ fsumshftd for an example,
+<A HREF="https://groups.google.com/d/msg/metamath/vt6SqLrxEfo/tmogkcRPEgAJ"
+>as discussed in the mailing list</A>.
+<BR>
+This conversion is considerably less tedious if ` A ` and ` B `
+are closed terms already, i.e., you are applying the theorem in some context
+rather than just trying to prove ~ fsumshftd itself
+(which doesn't know what ` A ` and ` B ` are).
+For instance, if you want to prove
+` |- sum_ x e. ( 1 ... 3 ) ( ( x + 1 ) ^ 2 ) = sum_ y e. ( 2 ... 4 ) ( y ^ 2 ) `
+by shifting the left sum to the right, you first apply ~ fsumshft without any
+funny business in the substitution to prove
+` |- sum_ x e. ( 1 ... 3 ) ( ( x + 1 ) ^ 2 ) = sum_ y e. ( 2 ... 4 ) ( ( ( y - 1 ) + 1 ) ^ 2 ) ` ,
+then use ~ sumeq2dv and equality theorems to prove
+` ( ( ( y - 1 ) + 1 ) ^ 2 ) = ( y ^ 2 ) ` in the current context.
+</OL>
+
+<P>
+As mentioned earlier, the ` ph -> ` prefix can be used to support
+natural deduction.
+To understand that, let's first briefly examine natural deduction.
 
 <P><HR NOSHADE SIZE=1><A NAME="introduction-natural-deduction"></A><B><FONT COLOR="#006633">Introduction to Natural Deduction</FONT></B> &nbsp;&nbsp;&nbsp;
 Natural deduction is a widely-taught approach to logic.
@@ -474,13 +598,12 @@ approach to creating a proof depends on what is to be proved.
 
 <P><HR NOSHADE SIZE=1><A NAME="other-natural-deduction"></A><B><FONT
 COLOR="#006633">Other Approaches to Natural Deduction in
-Metamath</FONT></B> &nbsp;&nbsp;&nbsp; <!-- TODO:  Reformat more of the
-mathematical statements --> The text above describes the most common
+Metamath</FONT></B> &nbsp;&nbsp;&nbsp; The text above describes the most common
 ways to implement natural deducation approaches in metamath and MPE.
 However, there are alternative approaches for using natural deduction in
 metamath.
 
-<P> Alan Sare has worked on an alternative within MPE, called virtual
+<P> Alan Sare worked on an alternative within MPE, called virtual
 deduction.  Much more information is available at <A
 HREF="wvd1.html">wvd1</A>, and an example is at
 <A
@@ -489,7 +612,8 @@ HREF="http://www.virtualdeduction.com/iunconlem2vd.html">iunconlem2vd</A>
  used to generate <A
 HREF="iunconlem2.html">iunconlem2</A>.
   This approach essentially replaces
-the outermost implication arrow ` -> ` with a different symbol ` ->. ` .  Alan Sare believes this change makes it easier to
+the outermost implication arrow ` -> ` with a different symbol ` ->. ` .
+Alan Sare believed this change made it easier to
 visualize proofs, while others disagree.  The <A
 HREF="http://us.metamath.org/other.html#completeusersproof">completeusersproof
 tool</A> is available which supports this alternative approach.
@@ -503,7 +627,7 @@ HREF="https://web.archive.org/web/20120402081711/http://wiki.planetmath.org/cgi-
 deduction</A> [retrieved 24-Aug-2018].
 
 He reports that his system was inspired by a slide show,
-<A HREF="http://web.archive.org/web/20070206192038/http://www.ags.uni-sb.de/~chris/papers/2002-pisa.pdf">"From Natural Deduction to Sequent Calculus (and back)"</A>.
+<A HREF="http://web.archive.org/web/20070206192038/http://www.ags.uni-sb.de/%7Echris/papers/2002-pisa.pdf">"From Natural Deduction to Sequent Calculus (and back)"</A>.
 Practically this system is equivalent to Mario Carneiro's work.
 
 <P><HR NOSHADE SIZE=1><A NAME="when-use-deduction-theorem-instead"></A><B><FONT COLOR="#006633">When to use deduction form instead</FONT></B> &nbsp;&nbsp;&nbsp;
@@ -517,15 +641,15 @@ weak deduction theorem in particular, might provide an advantage.
 
 <P>
 As a hypothetical example, suppose we have developed a theory such as
-complex numbers where all variable-type assumptions (A e. CC, etc.) are
+complex numbers where all variable-type assumptions
+such as ` A e. CC ` are
 stated as $e hypotheses like this:
 
-<PRE>
-$e |- A e. CC
-$e |- B e. CC
-----------------
-$p |- ( A + B ) = ( B + A )
-</PRE>
+<P>
+$e ` |- A e. CC ` <BR>
+$e ` |- B e. CC ` <BR>
+---------------- <BR>
+$p ` |- ( A + B ) = ( B + A ) `
 
 <P>
 The proofs of such pure inferences are usually shorter than those of other
@@ -537,13 +661,14 @@ small overhead to each step.
 Suppose that after a chain of 100 such inferences, we discover that we need
 a closed form, where the hypotheses become antecedents, for the last
 theorem in the chain. One reason for needing a closed form is to be able
-to use e.g. rexlimiv to add an existential quantifier such as "E. x e. CC
-ph -&gt; ....", which can be done only if x e. CC is an antecedent.
+to use e.g. rexlimiv to add an existential quantifier such as
+` E. x e. CC ph -> ` ..., which can be done only if ` x e. CC `
+is an antecedent.
 
 <P>
 Our choices are (1) restate and reprove all 100 previous inferences as
 closed theorems, (2) restate and reprove all 100 theorems in natural
-deduction form (with "ph -&gt;" prefixed to hypotheses and conclusion), or (3)
+deduction form (with ` ph -> ` prefixed to hypotheses and conclusion), or (3)
 use the weak deduction theorem to convert the last theorem in the chain to
 closed form. In this case, the weak deduction theorem will result in a
 smaller overall file size than the other methods, and it will also be far
@@ -631,9 +756,10 @@ not always true in this situation, we can't prove it without the hypothesis
 theorem that has the hypothesis ` |- X = U. J ` (to prove some statement
 ` |- ` P(X)), is use
 <A HREF="eqid.html">eqid</A> anyway, producing a proof of P(U. J), then use
-( ph -&gt; X = U. J ) and equality theorems to get
-( ph -&gt; ( P(X) &lt;-&gt; P(U. J) ) ), then
-use the proof of |- P(U. J) to yield |- ( ph -&gt; P(X) ). An example of this
+( ` ph -> X = U. ` J ) and equality theorems to get
+( ` ph -> ` ( P(X) ` <-> ` P(U. J) ) ), then
+use the proof of |- P(U. J) to yield ` |- ( ph -> ` P(X) ` ) ` .
+An example of this
 procedure is the derivation of
 <A HREF="ishaus2.html">ishaus2</A> (which has X = U. J given the
 context) from
@@ -646,49 +772,44 @@ where we specifically intend to discharge the assumption with something
 other than eqid, we sometimes add ph -&gt; to the equalities as well. A common
 example of this is in structure builder theorems, where we want to use a
 self-referential expression for the left hand side. For example, we might
-define a group by
-<PRE>
-$e |- ( ph -&gt; B = my-base-set )
-$e |- ( ph -&gt; .+ = my-group-op(B) )
-mygroupval $p |- ( ph -&gt; MyGroup = { &lt;. ( Base &#96; ndx ) ,
-                   B &gt;. , &lt;. ( +g &#96; ndx ) , .+ &gt;. } )
-</PRE>
+define a group by:
+<BR><BR>
+
+$e ` |- ( ph -> B = ` my-base-set ` ) ` <BR>
+$e ` |- ( ph -> .+ = ` my-group-op(B) ` ) `<BR>
+mygroupval $p ` |- ( ph -> ` MyGroup ` = { <. ( Base `` ndx ) , B >. , <. ( +g `` ndx ) , .+ >. } ) ` <BR>
 
 <P>
 Suppose that my-base-set is a complicated expression, and my-group-op(B)
 has a lot of references to B, so the fully expanded
 my-group-op(my-base-set) is really big, and we don't want to use it too
 many times. In the same context, we then prove:
+<BR><BR>
 
-<PRE>
-$e |- ( ph -&gt; B = my-base-set )
-$e |- ( ph -&gt; .+ = my-group-op(B) )
-mygroupbaslem $p |- ( ph -&gt; ( Base &#96; MyGroup ) = my-base-set )
-mygroupaddlem $p |- ( ph -&gt; ( +g &#96; MyGroup ) = my-group-op(B) )
-</PRE>
+$e ` |- ( ph -> B = ` my-base-set ` ) ` <BR>
+$e ` |- ( ph -> .+ = ` my-group-op(B) ` ) ` <BR>
+mygroupbaslem $p ` |- ( ph -> ( Base `` ` MyGroup ` ) = ` my-base-set ` ) ` <BR>
+mygroupaddlem $p ` |- ( ph -> ( +g `` ` MyGroup ` ) = ` my-group-op(B) ` ) ` <BR>
 
 <P>
 and now we can bootstrap the whole thing:
+<BR><BR>
 
-<PRE>
-mygroupbas $p |- ( ph -&gt; ( Base &#96; MyGroup ) = my-base-set ) $=
-1::eqid |- ( ph -&gt; my-base-set = my-base-set )
-2::eqid |- ( ph -&gt; my-group-op = my-group-op(my-base-set) )
-qed:1,2:mygroupbaslem |- ( ph -&gt; ( Base &#96; MyGroup ) = my-base-set )
-
-mygroupadd $p |- ( ph -&gt; ( +g &#96; MyGroup ) = my-base-set ) $=
-1::mygroupbas |- ( ph -&gt; ( Base &#96; MyGroup ) = my-base-set )
-2::eqid |- ( ph -&gt; my-group-op( ( Base &#96; MyGroup ) ) = my-group-op( ( Base
-           &#96; MyGroup ) ) )
-qed:1,2:mygroupbaslem |- ( ph -&gt; ( +g &#96; MyGroup ) = my-group-op( ( Base &#96;
-           MyGroup ) ) )
-</PRE>
+mygroupbas $p ` |- ( ph -> ( Base `` ` MyGroup ` ) = ` my-base-set ` ) ` $= <BR>
+1::eqid ` |- ( ph -> ` my-base-set ` = ` my-base-set ` ) ` <BR>
+2::eqid ` |- ( ph -> ` my-group-op ` = ` my-group-op(my-base-set) ` ) ` <BR>
+qed:1,2:mygroupbaslem ` |- ( ph -> ( Base `` ` MyGroup ` ) = ` my-base-set ` ) ` <BR>
+<BR>
+mygroupadd $p ` |- ( ph -> ( +g `` ` MyGroup ` ) = ` my-base-set ` ) ` $= <BR>
+1::mygroupbas ` |- ( ph -> ( Base `` ` MyGroup ` ) = ` my-base-set ` ) ` <BR>
+2::eqid ` |- ( ph -> ` my-group-op( ` ( Base `` ` MyGroup ` ) ) = ` my-group-op( ` ( Base `` ` MyGroup ` ) ) ) ` <BR>
+qed:1,2:mygroupbaslem ` |- ( ph -> ( +g `` ` MyGroup ` ) = ` my-group-op( ` ( Base `` ` MyGroup ` ) ) ) ` <BR>
 
 <P>
 Note that the contained references of my-group-op are now referencing
 ( Base &#96; MyGroup ), which makes this "definition" of a component of MyGroup
-self-referential. But that was the goal, and we have mygroupbas to expand
-it as necessary. A more elaborate version of this idea is done in
+self-referential. But that was the goal, and we have mygroupbas so we
+can expand it as necessary. A more elaborate version of this idea is done in
 <A HREF="prdsval.html">prdsval</A>,
 with prdsbas, prdsplusg, prdsmulr, etc pulling off components and
 bootstrapping using the previous theorems.
@@ -699,11 +820,9 @@ definitions are
 used by convention, specifically grppropd and other *propd theorems, and
 isgrpd and other is*d theorems for structures.
 
-
 <P>
 As a rule of thumb: Use X = ... abbreviations unless you need to use a
 non-identity abbreviation for X later.
-
 
 
 <P><HR NOSHADE SIZE=1><A NAME="natural-deduction-rules"></A><B><FONT COLOR="#006633">Natural Deduction Rules</FONT></B> &nbsp;&nbsp;&nbsp;
@@ -719,7 +838,7 @@ deduction rules and their metamath equivalents</A>.
 <TD ALIGN=left VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
 &nbsp;</FONT></TD>
 
-<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 24-Aug-2018.</I>
+<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 4-Jul-2020.</I>
 <BR><FONT SIZE=-2 FACE=ARIAL>
 Copyright terms:
 <A HREF="../copyright.html#pd">Public domain</A>
@@ -744,4 +863,3 @@ urchinTracker();
 -->
 
 </BODY></HTML>
-

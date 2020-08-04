@@ -1,0 +1,115 @@
+#!/bin/sh
+# gourcify - Generate video of set.mm history using Gource.
+# (C) 2019 David A. Wheeler
+# This script is released as open source software under the MIT license.
+# SPDX-License-Identifier: MIT
+
+# Need to install gource, ffmpeg, python3, Imagemagick.
+# Ensure pip3 is installed by running "python3 -m ensurepip",
+# then install "ply" library by running "pip3 install ply".
+
+# E.g., on Ubuntu:
+# sudo apt-get install python3 ffmpeg python3-pip
+# pip3 install ply
+# # Setup to compile Gource:
+# sudo apt-get install build-essential # includes g++
+# sudo apt-get install libsdl2-dev libsdl2-image-dev libpcre3-dev \
+#   libfreetype6-dev libglew-dev libglm-dev ibboost-filesystem-dev libpng-dev
+# cd; git clone --depth 1 https://github.com/acaudwell/Gource.git
+# cd Gource
+# ./autogen.sh
+# ./configure && make
+# sudo make install
+# sudo apt-get install ffmpeg x264
+
+# If you recompile ffmpeg yourself, you'll need to install libx264 first.
+# Install nasm, then:
+# wget http://download.videolan.org/pub/x264/snapshots/last_x264.tar.bz2
+# tar xjvf last_x264.tar.bz2
+# cd x264-snapshot*
+# ./configure --prefix=/usr --enable-static --disable-opencl --disable-avs
+# make && make install
+# Then compile ffmpeg:
+# cd ~/ffmpeg
+# ./configure --enable-shared --disable-static --enable-gpl --enable-libx264
+# make && make install
+# https://stackoverflow.com/questions/45181102/ffmpeg-on-cygwin-failed-to-compile-libx264-error-unknown-type-name-hmodule
+
+echo 'WARNING: If this is a VM, make sure you have a completely full screen!'
+echo
+
+set -e -x
+
+# To include music we must download some. Here's what I used:
+# Music by audionautix.com - "Threshold" by Jason Shaw, CC-BY-3.0 Unported.
+
+MUSIC_URL='https://audionautix.com/Music/Threshold.mp3'
+MUSIC='Threshold.mp3'
+
+if which cygstart > /dev/null ; then
+    RUN_COMMAND='cmd /C'
+else
+    RUN_COMMAND=''
+fi
+
+# Sanity check: We need set.mm
+test -f set.mm
+# Sanity check: We need a scripts directory
+test -d scripts
+
+# Download music file if we don't have it.
+if ! [ -f "$MUSIC" ] ; then
+    wget "$MUSIC_URL" || exit 1
+fi
+
+if ! [ -f 'mmlogo-small.png' ] ; then
+    wget http://us.metamath.org/mmlogo.svg
+    convert -transparent white -scale 25%x25% mmlogo.svg mmlog-small.png
+fi
+
+# Make sure we have people avatars, else provide a useful error message.
+if ! [ -d 'people' ] ; then
+    echo "Must create 'people' directory. Recommended approach:" >&2
+    echo "  mkdir -p people" >&2
+    echo "  scripts/download-avatars people" >&2
+    exit 1
+fi
+
+# Get changes in set.mm and record them in Gource log format
+# We are generating data for Gource so we'll use timestamps;
+# omit "--gource" for a more-readable format.
+scripts/report-changes.py --gource > changes.log
+
+# Sort by datetime
+sort -n changes.log > changes-sorted.log
+
+# Convert captions into Unix timestamps (what Gource wants)
+# It should be sorted anyway, but we will sort it anyway just
+# to make sure.
+scripts/date2unixts.py < scripts/gource-captions.txt | \
+  sort -n > gource-captions-timestamps.txt
+
+# Use Gource to generate image sequence (.ppm format)
+# The default "output-framerate" is 60 fps, but we will later encode
+# as 30 fps. That way, we can review and regenerate at a higher speed
+# (shorter time when debugging) yet have a reasonable final length.
+rm -f gource.ppm
+$RUN_COMMAND gource --load-config scripts/gource.config \
+    -o gource.ppm changes-sorted.log
+
+# Convert .ppm image sequence into video
+rm -f gource.mp4
+# ffmpeg -y -r 30 -f image2pipe -vcodec ppm -i gource.ppm \
+#       -pix_fmt yuv420p -threads 0 -bf 0 gource.mp4
+ffmpeg -y -r 30 -f image2pipe -vcodec ppm -i gource.ppm \
+      -pix_fmt yuv420p -threads 0 -bf 0 \
+      -c:v libx264 -crf 18 -movflags +faststart \
+      gource.mp4
+
+# Add audio track
+rm -f gource-muxed.mp4
+ffmpeg -i gource.mp4 -i "$MUSIC" -c:v copy -c:a aac \
+       -strict experimental -filter:a "volume=0.6" gource-muxed.mp4
+
+# Success!
+echo 'Result is in gource-muxed.mp4'
