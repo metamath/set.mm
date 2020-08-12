@@ -14328,6 +14328,7 @@ New usage of "bj-axdd2" is discouraged (0 uses).
 New usage of "bj-axtd" is discouraged (0 uses).
 New usage of "bj-ceqsalgALT" is discouraged (0 uses).
 New usage of "bj-ceqsalgvALT" is discouraged (0 uses).
+New usage of "bj-cleljustOLD" is discouraged (0 uses).
 New usage of "bj-con3thALT" is discouraged (0 uses).
 New usage of "bj-con4iALT" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
@@ -18941,7 +18942,8 @@ Proof modification of "bj-ceqsalv" is discouraged (10 steps).
 Proof modification of "bj-chvarv" is discouraged (18 steps).
 Proof modification of "bj-chvarvv" is discouraged (10 steps).
 Proof modification of "bj-clabel" is discouraged (43 steps).
-Proof modification of "bj-cleljust" is discouraged (25 steps).
+Proof modification of "bj-cleljust" is discouraged (51 steps).
+Proof modification of "bj-cleljustOLD" is discouraged (25 steps).
 Proof modification of "bj-clelsb3" is discouraged (63 steps).
 Proof modification of "bj-cleqh" is discouraged (108 steps).
 Proof modification of "bj-cleqhyp" is discouraged (21 steps).
