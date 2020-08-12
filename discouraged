@@ -18944,6 +18944,7 @@ Proof modification of "bj-clabel" is discouraged (43 steps).
 Proof modification of "bj-cleljust" is discouraged (25 steps).
 Proof modification of "bj-clelsb3" is discouraged (63 steps).
 Proof modification of "bj-cleqh" is discouraged (108 steps).
+Proof modification of "bj-cleqhyp" is discouraged (21 steps).
 Proof modification of "bj-cmnssmnd" is discouraged (36 steps).
 Proof modification of "bj-cmnssmndel" is discouraged (5 steps).
 Proof modification of "bj-con3thALT" is discouraged (63 steps).
@@ -18954,8 +18955,8 @@ Proof modification of "bj-df-clel" is discouraged (4 steps).
 Proof modification of "bj-df-cleq" is discouraged (4 steps).
 Proof modification of "bj-df-nul" is discouraged (11 steps).
 Proof modification of "bj-df-v" is discouraged (29 steps).
-Proof modification of "bj-dfclel" is discouraged (10 steps).
-Proof modification of "bj-dfcleq" is discouraged (27 steps).
+Proof modification of "bj-dfclel" is discouraged (11 steps).
+Proof modification of "bj-dfcleq" is discouraged (11 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
 Proof modification of "bj-dral1v" is discouraged (36 steps).
 Proof modification of "bj-drex1v" is discouraged (42 steps).
