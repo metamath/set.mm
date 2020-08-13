@@ -13842,6 +13842,7 @@ New usage of "0vfval" is discouraged (9 uses).
 New usage of "19.21a3con13vVD" is discouraged (0 uses).
 New usage of "19.21vOLD" is discouraged (0 uses).
 New usage of "19.21vOLDOLD" is discouraged (0 uses).
+New usage of "19.23tOLD" is discouraged (0 uses).
 New usage of "19.23vOLD" is discouraged (0 uses).
 New usage of "19.35OLD" is discouraged (0 uses).
 New usage of "19.36aivOLD" is discouraged (0 uses).
@@ -18701,6 +18702,7 @@ Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
 Proof modification of "19.21vOLD" is discouraged (7 steps).
 Proof modification of "19.21vOLDOLD" is discouraged (44 steps).
+Proof modification of "19.23tOLD" is discouraged (54 steps).
 Proof modification of "19.23vOLD" is discouraged (7 steps).
 Proof modification of "19.35OLD" is discouraged (64 steps).
 Proof modification of "19.36aivOLD" is discouraged (8 steps).
