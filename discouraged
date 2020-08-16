@@ -17912,6 +17912,8 @@ New usage of "prcdnq" is discouraged (14 uses).
 New usage of "prdsgsumOLD" is discouraged (1 uses).
 New usage of "prlem934" is discouraged (3 uses).
 New usage of "prlem936" is discouraged (1 uses).
+New usage of "prmgaplcm" is discouraged (0 uses).
+New usage of "prmgapprmor" is discouraged (0 uses).
 New usage of "prn0" is discouraged (8 uses).
 New usage of "prnmadd" is discouraged (2 uses).
 New usage of "prnmax" is discouraged (7 uses).
@@ -20050,6 +20052,8 @@ Proof modification of "pm2.86iALT" is discouraged (18 steps).
 Proof modification of "pm4.81ALT" is discouraged (11 steps).
 Proof modification of "posrefOLD" is discouraged (51 steps).
 Proof modification of "prdsgsumOLD" is discouraged (415 steps).
+Proof modification of "prmgaplcm" is discouraged (135 steps).
+Proof modification of "prmgapprmor" is discouraged (115 steps).
 Proof modification of "probfinmeasbOLD" is discouraged (225 steps).
 Proof modification of "problem1" is discouraged (20 steps).
 Proof modification of "problem2" is discouraged (102 steps).
