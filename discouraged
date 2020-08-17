@@ -14320,6 +14320,7 @@ New usage of "bdophmi" is discouraged (2 uses).
 New usage of "bdophsi" is discouraged (3 uses).
 New usage of "bdopln" is discouraged (9 uses).
 New usage of "bdopssadj" is discouraged (4 uses).
+New usage of "bianirOLD" is discouraged (0 uses).
 New usage of "bitr3" is discouraged (6 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
@@ -18858,6 +18859,7 @@ Proof modification of "axregndOLD" is discouraged (224 steps).
 Proof modification of "axtglowdim2OLD" is discouraged (115 steps).
 Proof modification of "axtgupdim2OLD" is discouraged (679 steps).
 Proof modification of "bcsiALT" is discouraged (444 steps).
+Proof modification of "bianirOLD" is discouraged (19 steps).
 Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bj-19.21t" is discouraged (39 steps).
