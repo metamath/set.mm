@@ -1962,8 +1962,8 @@ Metamath formalizations of the "top 100" theorems as tracked by Freek
 Wiedijk.
 
 Many people have contributed; you can even see a
-<A HREF="https://www.youtube.com/watch?v=XC1g8FmFcUU">Youtube video
-visualization of Metamath set.mm contributions over time</A>
+<A HREF="https://www.youtube.com/watch?v=LVGSeDjWzUo">Youtube video showing a
+Gource visualization of Metamath set.mm contributions over time</A>
 (and we hope that you'll become another contributor!).
 
 <P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%">
@@ -2136,7 +2136,7 @@ proof</A> </LI>
 <LI> <A HREF="nn0opthi.html">Ordered pair theorem for non-negative
 integers</A></LI>
 
-<LI> <A HREF="sqr2irr.html">The square root of 2 is irrational</A></LI>
+<LI> <A HREF="sqrt2irr.html">The square root of 2 is irrational</A></LI>
 
 <LI> <A HREF="nthruc.html">The nesting of natural numbers, integers,
 rationals, reals, and complex numbers</A></LI>
@@ -2793,16 +2793,18 @@ example of how we can eliminate the hypotheses of ~ ax12w .  Finally, we
 combine all such instances (outside of Metamath) to result in the metatheorem
 represented by our extensions.
 
-<P>Except for ~ ax-6 , our system includes all
-axiom schemes of Tarski's system.  In the case of ax-6, Tarski's version
-is weaker because it includes a distinct variable proviso.  If we wish,
-we can also weaken our version in this way and still have a
-metalogically complete system.  Theorem ~ ax6 shows
-this by deriving, in the presence of the other axioms, our ax-6 from
-Tarski's weaker version ~ ax6v .  However, we chose
+<P>Except for ~ ax-6 , our system includes all axiom schemes of Tarski's
+system.  In the case of ax-6, Tarski's version is weaker because it
+includes a distinct variable proviso.  If we wish, we can also weaken
+our version in this way and still have a metalogically complete system.
+Theorem ~ ax6 shows this by deriving, in the presence of the other
+axioms, our ax-6 from Tarski's weaker version ~ ax6v . However, we chose
 the stronger version for our system because it is simpler to state and
-easier to use.
-
+easier to use.  (Technically, our ~ ax-7 , ~ ax-8 , and ~ ax-9 are
+sub-schemes of a single higher-order scheme in Tarski's system, but
+these three suffice to make our system complete.  Breaking them out
+makes our metalogic simpler by avoiding the need for a notion of
+substitution into an atomic wff.)
 
 <P><A NAME="schemesubst"></A><B><FONT COLOR="#006633">Substitution
 instances of schemes</FONT></B>&nbsp;&nbsp;&nbsp; In Metamath, by
@@ -4753,11 +4755,15 @@ libary itself, and the ones we show are used by the MIT libraries.
 <OL>
 
 
-<LI><A NAME="Adamek"></A> [Adamek] Jiri Ad&eacute;mek, Horst Herrlich,
-and George E Strecker, <I>Abstract and Concrete Categories:  The Joy of
+<LI><A NAME="Adamek"></A> [Adamek] Ji&#345;&iacute; Ad&aacute;mek, Horst
+Herrlich, George E. Strecker, <I>Abstract and Concrete Categories:  The Joy of
 Cats</I>, Dover Publications, Mineola, New York (2004); available at <A
 HREF="http://katmat.math.uni-bremen.de/acc">
 http://katmat.math.uni-bremen.de/acc</A> (retrieved 2-Jan-2017).  </LI>
+
+<LI><A NAME="AhoHopUll"></A> [AhoHopUll] Alfred V. Aho, John E. Hopcroft and
+Jeffrey D. Ullman, <I>The Design and Analysis of Computer Algorithms</I>,
+Addison-Wesley, Reading, Massachusetts (1974) [QA76.6 .A36]. </LI>
 
 <LI><A NAME="AitkenIBG"></A> [AitkenIBG] Aitken, Wayne, "Incidence Betweenness
 Geometry," Handout (2008); available at <A
@@ -4919,6 +4925,9 @@ DeWitt-Morette, with Margaret Dillard-Bleick, <I>Analysis, Manifolds and
 Physics,</I> Elsevier Science B.V., Amsterdam (1982) [QC20.7.A5C48
 1981].</LI>
 
+<LI><A NAME="Church"></A> [Church] Church, Alonzo, <I>Introduction to
+Mathematical Logic,</I> Princeton University Press, 1956.</LI>
+
 <LI><A NAME="Clemente"></A> [Clemente] Clemente Laboreo, Daniel
 <I>Introduction to natural deduction</I> (2014); available
 at <A HREF="http://www.danielclemente.com/logica/dn.en.pdf">
@@ -4929,6 +4938,10 @@ http://www.danielclemente.com/logica/dn.en.html</A> (HTML)
 
 <LI><A NAME="Cohen"></A> [Cohen] Cohen, David, <I>Precalculus With Unit-Circle
 Trigonometry,</I> Brooks-Cole, Pacific Grove, CA (1988)
+[QA331.3.C64].</LI>
+
+<LI><A NAME="Cohen4"></A> [Cohen4] Cohen, David, <I>Precalculus With Unit-Circle
+Trigonometry</I>, 4th ed., Brooks-Cole, Pacific Grove, CA (2006)
 [QA331.3.C64].</LI>
 
 <LI><A NAME="Cohn"></A> [Cohn] Cohn, Paul Moritz, <I>Universal Algebra,</I>
@@ -5035,6 +5048,10 @@ Applications,</I> Kluwer Academic Publishers, Dordrecht (1999)
 Algebra,</I> 2nd ed. with updates, Springer, New York (2008)
 [QA251.G68 2008].</LI>
 
+<LI><A NAME="GramKnuthPat"></A> [GramKnuthPat] Gram, Ronald L., Knuth, Donald
+E., and Patashnik, Oren, <I>Concrete Mathematics,</I> 2nd Ed., Addison-Wesley
+Publishing Company, Reading, MA (1994) [QA39.2.G733].</LI>
+
 <LI><A NAME="Hall"></A> [Hall] Hall, Marshall Jr., <I>The Theory of Groups,</I>
 The Macmillan Company, New York (1959) [QA171.H27 2018].</LI>
 
@@ -5054,6 +5071,11 @@ http://www.math.cornell.edu/~~hatcher/AT/ATpage.html</A>
 3rd edition, Lightning Source Inc. (2017), ISBN-13: 978-1944325039,
 available at <A HREF="http://joshua.smcvt.edu/linearalgebra">
 http://joshua.smcvt.edu/linearalgebra</A> (retrieved 26 Nov 2019).</LI>
+
+<LI><A NAME="Helfgott"></A> [Helfgott] Helfgott, Harald A.,
+<I>The ternary Goldbach conjecture is true</I> arXiv:1312.7748v2 (17-Jan-2014);
+available at <A HREF="https://arxiv.org/abs/1312.7748">
+https://arxiv.org/abs/1312.7748</A> (retrieved 2 Aug 2020).</LI>
 
 <LI><A NAME="Herstein"></A> [Herstein] Herstein, I. N., <I>Abstract
 Algebra,</I> Macmillan Publishing Company, New York (1986) [QA162.H47
@@ -5093,6 +5115,12 @@ Mathematical Monthly,</I> 98:689-709 (1991) [QA.A5125]; available at <A
 HREF="http://www.williamstein.org/edu/Spring2003/21n/papers/hilbert10.pdf"
 >http://www.williamstein.org/edu/Spring2003/21n/papers/hilbert10.pdf</A>
 (retrieved 11 Nov 2014).</LI>
+
+<LI><A NAME="Juillerat"></A> [Juillerat] Jacob Juillerat, "Transcendental Numbers ",
+Lake Forest College, Senior Thesis, April 25, 2016 ; available at <A
+HREF="https://publications.lakeforest.edu/seniortheses/62/">
+https://publications.lakeforest.edu/seniortheses/62/</A>
+(retrieved 5-Apr-2020).  </LI>
 
 <LI><A NAME="JustWeese"></A> [JustWeese] Just, Winfried, and Martin Weese,
 <I>Discovering Modern Set Theory I:  The Basics,</I> The American
@@ -5237,12 +5265,20 @@ second edition (2006) [QA248.M665 2006].</LI>
 <I>Topology:  a first course,</I> Prentice-Hall, Englewood Cliffs, New
 Jersey (1975) [QA611.M82].</LI>
 
+<LI><A NAME="OeSilva"></A> [OeSilva] Tom&aacute;s Oliveira e Silva, Siegfried
+Herzog, and Silvio Pardi, <I>Empirical verification of the even Goldbach
+conjecture and computation of prime gaps up to 4 x 10^18,</I> Mathematics of
+Computation, vol. 83, no. 288, pp. 2033-2060, July 2014 (published
+electronically on November 18, 2013).
+
 <LI><A NAME="Pfenning"></A> [Pfenning] Pfenning, Frank,
 <I>Automated Theorem Proving,</I> Carnegie-Mellon University (April 13, 2004);
 available at <A
-HREF="http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf">http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf</A>
+HREF="http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf">
+http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf</A>
 and <A
-HREF="http://web.archive.org/web/20160304013704/http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf">http://web.archive.org/web/20160304013704/http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf</A>
+HREF="http://web.archive.org/web/20160304013704/http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf">
+http://web.archive.org/web/20160304013704/http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf</A>
 (retrieved 7 Feb 2017).</LI>
 
 <LI><A NAME="Peano"></A> [Peano]
@@ -5335,6 +5371,11 @@ Mathematische Logik und Grundlagenforschung,</I> 7:61-79 (1965)
 HREF="http://gdz.sub.uni-goettingen.de/dms/load/img/?PID=GDZPPN002043203"
 >http://gdz.sub.uni-goettingen.de/dms/load/img/?PID=GDZPPN002043203</A>
 (retrieved 29-Apr-2017).</LI>
+
+<LI><A NAME="Tarski1999"></A> [Tarski1999] Tarski, Alfred, and Steven Givant,
+&quot;Tarski's System of Geometry&quot;
+<I>The Bulletin of Symbolic Logic</I>, Volume 5, Number 2, June 1999,
+pp. 175-214.
 
 <LI><A NAME="Truss"></A> [Truss] Truss, John Kenneth, <I>Foundations of
 Mathematical Analysis,</I> Oxford University Press, Oxford (1997)
@@ -5471,7 +5512,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 24-Feb-2020.</FONT></I><BR><FONT
+ page was last updated on 15-Jul-2020.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0

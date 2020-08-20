@@ -13,6 +13,10 @@
 "19.9hd" is used by "sbiedh".
 "4syl" is used by "f1ocnvfvrneq".
 "4syl" is used by "fcof1o".
+"4syl" is used by "fzofzp1".
+"4syl" is used by "fzosplitsnm1".
+"4syl" is used by "fzostep1".
+"4syl" is used by "fzssp1".
 "4syl" is used by "isose".
 "4syl" is used by "isoselem".
 "4syl" is used by "smoiso".
@@ -51,6 +55,7 @@
 "ax-addcl" is used by "addcl".
 "ax-addcom" is used by "addcom".
 "ax-addrcl" is used by "readdcl".
+"ax-arch" is used by "arch".
 "ax-cnex" is used by "cnex".
 "ax-cnre" is used by "cnre".
 "ax-distr" is used by "adddi".
@@ -67,14 +72,18 @@
 "axltirr" is used by "ltnr".
 "axlttrn" is used by "lttr".
 "axresscn" is used by "ax1cn".
+"df-div" is used by "divfnzn".
 "df-div" is used by "divvalap".
 "df-ilim" is used by "dflim2".
 "df-inn" is used by "dfnn2".
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
 "df-mnf" is used by "mnfnre".
+"df-mnf" is used by "mnfxr".
+"df-mnf" is used by "pnfnemnf".
 "df-pnf" is used by "mnfnre".
 "df-pnf" is used by "pnfnre".
+"df-pnf" is used by "pnfxr".
 "df-tru" is used by "tru".
 "dvelimALT" is used by "hbsb4".
 "equsalh" is used by "dvelimALT".
@@ -179,7 +188,8 @@ New usage of "19.21ht" is discouraged (2 uses).
 New usage of "19.41h" is discouraged (5 uses).
 New usage of "19.42h" is discouraged (1 uses).
 New usage of "19.9hd" is discouraged (2 uses).
-New usage of "4syl" is discouraged (6 uses).
+New usage of "2eluzge0OLD" is discouraged (0 uses).
+New usage of "4syl" is discouraged (10 uses).
 New usage of "a9evsep" is discouraged (1 uses).
 New usage of "alrimih" is discouraged (25 uses).
 New usage of "ax-0id" is discouraged (1 uses).
@@ -192,6 +202,7 @@ New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
 New usage of "ax-addcom" is discouraged (1 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
+New usage of "ax-arch" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
 New usage of "ax-distr" is discouraged (1 uses).
@@ -214,6 +225,7 @@ New usage of "axaddass" is discouraged (0 uses).
 New usage of "axaddcl" is discouraged (0 uses).
 New usage of "axaddcom" is discouraged (0 uses).
 New usage of "axaddrcl" is discouraged (0 uses).
+New usage of "axarch" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (0 uses).
 New usage of "axcnre" is discouraged (0 uses).
 New usage of "axdistr" is discouraged (0 uses).
@@ -243,17 +255,19 @@ New usage of "bdsepnfALT" is discouraged (0 uses).
 New usage of "bj-nn0sucALT" is discouraged (0 uses).
 New usage of "bj-omex2" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
-New usage of "df-div" is discouraged (1 uses).
+New usage of "df-div" is discouraged (2 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
 New usage of "df-iord" is discouraged (1 uses).
-New usage of "df-mnf" is discouraged (1 uses).
-New usage of "df-pnf" is discouraged (2 uses).
+New usage of "df-mnf" is discouraged (3 uses).
+New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-tru" is discouraged (1 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
+New usage of "elfz0addOLD" is discouraged (0 uses).
+New usage of "elfzmlbmOLD" is discouraged (0 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "fnexALT" is discouraged (0 uses).
@@ -261,6 +275,7 @@ New usage of "hbs1" is discouraged (5 uses).
 New usage of "id1" is discouraged (0 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
+New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "opelopabsbALT" is discouraged (2 uses).
 New usage of "opexgOLD" is discouraged (11 uses).
@@ -278,11 +293,15 @@ New usage of "snexgOLD" is discouraged (27 uses).
 New usage of "spimeh" is discouraged (0 uses).
 New usage of "spimh" is discouraged (1 uses).
 New usage of "spimth" is discouraged (1 uses).
+New usage of "stoic2a" is discouraged (0 uses).
+New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
 New usage of "truanOLD" is discouraged (0 uses).
+New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
+Proof modification of "2eluzge0OLD" is discouraged (22 steps).
 Proof modification of "a9evsep" is discouraged (63 steps).
 Proof modification of "ax16ALT" is discouraged (20 steps).
 Proof modification of "ax9vsep" is discouraged (19 steps).
@@ -366,9 +385,12 @@ Proof modification of "bj-zfpair2" is discouraged (80 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dvelimALT" is discouraged (158 steps).
+Proof modification of "elfz0addOLD" is discouraged (94 steps).
+Proof modification of "elfzmlbmOLD" is discouraged (203 steps).
 Proof modification of "findset" is discouraged (96 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "idref" is discouraged (94 steps).
+Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
 Proof modification of "opexgOLD" is discouraged (51 steps).
@@ -384,4 +406,5 @@ Proof modification of "snexgOLD" is discouraged (27 steps).
 Proof modification of "speano5" is discouraged (50 steps).
 Proof modification of "strcollnfALT" is discouraged (79 steps).
 Proof modification of "truanOLD" is discouraged (13 steps).
+Proof modification of "uzind4ALT" is discouraged (16 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
