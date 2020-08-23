@@ -9887,7 +9887,6 @@
 "mplelbasOLD" is used by "mplelsfiOLD".
 "mplelbasOLD" is used by "mplsubrglemOLD".
 "mplelsfiOLD" is used by "coe1sfiOLD".
-"mplelsfiOLD" is used by "evlslem6OLD".
 "mplsubglemOLD" is used by "mpllsslemOLD".
 "mplvalOLD" is used by "mplbasOLD".
 "mpv" is used by "mulcompr".
@@ -13226,9 +13225,7 @@
 "suppssOLD" is used by "psrbaglesuppOLD".
 "suppssOLD" is used by "psrlidmOLD".
 "suppssOLD" is used by "psrridmOLD".
-"suppssfvOLD" is used by "evlslem6OLD".
 "suppssof1OLD" is used by "psrbagev1OLD".
-"suppssov1OLD" is used by "evlslem6OLD".
 "suppssov1OLD" is used by "suppssof1OLD".
 "suppssrOLD" is used by "cantnflem1OLD".
 "suppssrOLD" is used by "cantnflem1dOLD".
@@ -15929,7 +15926,6 @@ New usage of "euequ1OLD" is discouraged (0 uses).
 New usage of "euexALT" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
 New usage of "evlslem4OLD" is discouraged (0 uses).
-New usage of "evlslem6OLD" is discouraged (0 uses).
 New usage of "ex-gt" is discouraged (0 uses).
 New usage of "ex-gte" is discouraged (0 uses).
 New usage of "ex-natded5.13" is discouraged (0 uses).
@@ -17179,7 +17175,7 @@ New usage of "mplbasOLD" is discouraged (1 uses).
 New usage of "mplcoe2OLD" is discouraged (0 uses).
 New usage of "mplcoe3OLD" is discouraged (0 uses).
 New usage of "mplelbasOLD" is discouraged (3 uses).
-New usage of "mplelsfiOLD" is discouraged (2 uses).
+New usage of "mplelsfiOLD" is discouraged (1 uses).
 New usage of "mpllsslemOLD" is discouraged (0 uses).
 New usage of "mplsubglemOLD" is discouraged (1 uses).
 New usage of "mplsubrglemOLD" is discouraged (0 uses).
@@ -18428,9 +18424,9 @@ New usage of "supmaxOLD" is discouraged (0 uses).
 New usage of "supmaxlemOLD" is discouraged (1 uses).
 New usage of "suppss2OLD" is discouraged (18 uses).
 New usage of "suppssOLD" is discouraged (12 uses).
-New usage of "suppssfvOLD" is discouraged (1 uses).
+New usage of "suppssfvOLD" is discouraged (0 uses).
 New usage of "suppssof1OLD" is discouraged (1 uses).
-New usage of "suppssov1OLD" is discouraged (2 uses).
+New usage of "suppssov1OLD" is discouraged (1 uses).
 New usage of "suppssrOLD" is discouraged (28 uses).
 New usage of "supsr" is discouraged (1 uses).
 New usage of "supsrlem" is discouraged (1 uses).
@@ -19447,7 +19443,6 @@ Proof modification of "euequ1OLD" is discouraged (42 steps).
 Proof modification of "euexALT" is discouraged (32 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
 Proof modification of "evlslem4OLD" is discouraged (560 steps).
-Proof modification of "evlslem6OLD" is discouraged (350 steps).
 Proof modification of "ex-natded5.13" is discouraged (67 steps).
 Proof modification of "ex-natded5.13-2" is discouraged (21 steps).
 Proof modification of "ex-natded5.2" is discouraged (18 steps).
