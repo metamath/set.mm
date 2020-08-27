@@ -3148,7 +3148,6 @@
 "cdleml3N" is used by "cdleml4N".
 "cdleml4N" is used by "cdleml5N".
 "cfilucfil2OLD" is used by "cfilucfil3OLD".
-"cfilucfil3OLD" is used by "cfilucfil4OLD".
 "cfilucfilOLD" is used by "cfilucfil2OLD".
 "cgcdOLD" is used by "ee7.2aOLD".
 "cghomOLD" is used by "elghomOLD".
@@ -4192,7 +4191,6 @@
 "cmdmdi" is used by "dmdoc1i".
 "cmetuOLD" is used by "cfilucfil2OLD".
 "cmetuOLD" is used by "cfilucfil3OLD".
-"cmetuOLD" is used by "cfilucfil4OLD".
 "cmetuOLD" is used by "metucnOLD".
 "cmetuOLD" is used by "metuelOLD".
 "cmetuOLD" is used by "metustblOLD".
@@ -14923,8 +14921,7 @@ New usage of "ceqsalgALT" is discouraged (0 uses).
 New usage of "ceqsex3OLD" is discouraged (0 uses).
 New usage of "ceqsex3vOLD" is discouraged (0 uses).
 New usage of "cfilucfil2OLD" is discouraged (1 uses).
-New usage of "cfilucfil3OLD" is discouraged (1 uses).
-New usage of "cfilucfil4OLD" is discouraged (0 uses).
+New usage of "cfilucfil3OLD" is discouraged (0 uses).
 New usage of "cfilucfilOLD" is discouraged (1 uses).
 New usage of "cgcdOLD" is discouraged (1 uses).
 New usage of "cghomOLD" is discouraged (23 uses).
@@ -15100,7 +15097,7 @@ New usage of "cmcmi" is discouraged (5 uses).
 New usage of "cmcmii" is discouraged (2 uses).
 New usage of "cmcmlem" is discouraged (1 uses).
 New usage of "cmdmdi" is discouraged (1 uses).
-New usage of "cmetuOLD" is discouraged (10 uses).
+New usage of "cmetuOLD" is discouraged (9 uses).
 New usage of "cmidi" is discouraged (3 uses).
 New usage of "cmj1i" is discouraged (1 uses).
 New usage of "cmj2i" is discouraged (1 uses).
@@ -19118,7 +19115,6 @@ Proof modification of "ceqsex3OLD" is discouraged (61 steps).
 Proof modification of "ceqsex3vOLD" is discouraged (7 steps).
 Proof modification of "cfilucfil2OLD" is discouraged (120 steps).
 Proof modification of "cfilucfil3OLD" is discouraged (106 steps).
-Proof modification of "cfilucfil4OLD" is discouraged (72 steps).
 Proof modification of "cfilucfilOLD" is discouraged (805 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
 Proof modification of "circgrpOLD" is discouraged (74 steps).
