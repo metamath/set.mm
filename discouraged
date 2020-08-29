@@ -9824,7 +9824,6 @@
 "metustfbasOLD" is used by "metuelOLD".
 "metustidOLD" is used by "metustfbasOLD".
 "metustssOLD" is used by "metustrelOLD".
-"metustssOLD" is used by "metustsymOLD".
 "metusttoOLD" is used by "metustfbasOLD".
 "metuvalOLD" is used by "metuelOLD".
 "mgmplusgiopALT" is used by "mgm2mgm".
@@ -17117,8 +17116,7 @@ New usage of "metustexhalfOLD" is discouraged (0 uses).
 New usage of "metustfbasOLD" is discouraged (1 uses).
 New usage of "metustidOLD" is discouraged (1 uses).
 New usage of "metustrelOLD" is discouraged (0 uses).
-New usage of "metustssOLD" is discouraged (2 uses).
-New usage of "metustsymOLD" is discouraged (0 uses).
+New usage of "metustssOLD" is discouraged (1 uses).
 New usage of "metusttoOLD" is discouraged (1 uses).
 New usage of "metuvalOLD" is discouraged (1 uses).
 New usage of "mgmplusgiopALT" is discouraged (1 uses).
@@ -19840,7 +19838,6 @@ Proof modification of "metustfbasOLD" is discouraged (501 steps).
 Proof modification of "metustidOLD" is discouraged (328 steps).
 Proof modification of "metustrelOLD" is discouraged (36 steps).
 Proof modification of "metustssOLD" is discouraged (131 steps).
-Proof modification of "metustsymOLD" is discouraged (370 steps).
 Proof modification of "metusttoOLD" is discouraged (341 steps).
 Proof modification of "metuvalOLD" is discouraged (244 steps).
 Proof modification of "mgmplusgiopALT" is discouraged (80 steps).
