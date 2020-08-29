@@ -4378,7 +4378,6 @@
 "ctpsOLD" is used by "istps4OLD".
 "ctpsOLD" is used by "istps5OLD".
 "ctpsOLD" is used by "istpsOLD".
-"ctpsOLD" is used by "retpsOLD".
 "ctpsOLD" is used by "tpsexOLD".
 "cvati" is used by "cvbr4i".
 "cvbr" is used by "cvbr2".
@@ -9018,7 +9017,6 @@
 "istps3OLD" is used by "istps4OLD".
 "istps4OLD" is used by "istps5OLD".
 "istpsOLD" is used by "istps2OLD".
-"istpsOLD" is used by "retpsOLD".
 "istrkg2d" is used by "axtglowdim2OLD".
 "istrkg2d" is used by "axtgupdim2OLD".
 "isvc" is used by "isvci".
@@ -15208,7 +15206,7 @@ New usage of "csbunigVD" is discouraged (0 uses).
 New usage of "csbxpgOLD" is discouraged (2 uses).
 New usage of "csbxpgVD" is discouraged (0 uses).
 New usage of "csmdsymi" is discouraged (0 uses).
-New usage of "ctpsOLD" is discouraged (8 uses).
+New usage of "ctpsOLD" is discouraged (7 uses).
 New usage of "cvati" is discouraged (1 uses).
 New usage of "cvbr" is discouraged (4 uses).
 New usage of "cvbr2" is discouraged (2 uses).
@@ -16751,7 +16749,7 @@ New usage of "istps2OLD" is discouraged (1 uses).
 New usage of "istps3OLD" is discouraged (1 uses).
 New usage of "istps4OLD" is discouraged (1 uses).
 New usage of "istps5OLD" is discouraged (0 uses).
-New usage of "istpsOLD" is discouraged (2 uses).
+New usage of "istpsOLD" is discouraged (1 uses).
 New usage of "istrkg2d" is discouraged (2 uses).
 New usage of "istrnN" is discouraged (0 uses).
 New usage of "isvc" is discouraged (1 uses).
@@ -18035,7 +18033,6 @@ New usage of "retbwax1" is discouraged (0 uses).
 New usage of "retbwax2" is discouraged (3 uses).
 New usage of "retbwax3" is discouraged (0 uses).
 New usage of "retbwax4" is discouraged (0 uses).
-New usage of "retpsOLD" is discouraged (0 uses).
 New usage of "rexanaliOLD" is discouraged (0 uses).
 New usage of "rexbidvALT" is discouraged (0 uses).
 New usage of "rexbidvaALT" is discouraged (0 uses).
@@ -20136,7 +20133,6 @@ Proof modification of "retbwax1" is discouraged (195 steps).
 Proof modification of "retbwax2" is discouraged (127 steps).
 Proof modification of "retbwax3" is discouraged (20 steps).
 Proof modification of "retbwax4" is discouraged (13 steps).
-Proof modification of "retpsOLD" is discouraged (21 steps).
 Proof modification of "rexanaliOLD" is discouraged (32 steps).
 Proof modification of "rexbidvALT" is discouraged (10 steps).
 Proof modification of "rexbidvaALT" is discouraged (10 steps).
