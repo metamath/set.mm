@@ -4189,7 +4189,6 @@
 "cmcmlem" is used by "cmcmi".
 "cmdmdi" is used by "dmdoc1i".
 "cmetuOLD" is used by "metuelOLD".
-"cmetuOLD" is used by "metustblOLD".
 "cmetuOLD" is used by "metuustOLD".
 "cmetuOLD" is used by "metuvalOLD".
 "cmidi" is used by "atordi".
@@ -9819,7 +9818,6 @@
 "merlem7" is used by "merlem8".
 "merlem8" is used by "merlem9".
 "merlem9" is used by "merlem10".
-"metuelOLD" is used by "metustblOLD".
 "metustOLD" is used by "metuustOLD".
 "metustelOLD" is used by "metustexhalfOLD".
 "metustelOLD" is used by "metustfbasOLD".
@@ -15088,7 +15086,7 @@ New usage of "cmcmi" is discouraged (5 uses).
 New usage of "cmcmii" is discouraged (2 uses).
 New usage of "cmcmlem" is discouraged (1 uses).
 New usage of "cmdmdi" is discouraged (1 uses).
-New usage of "cmetuOLD" is discouraged (4 uses).
+New usage of "cmetuOLD" is discouraged (3 uses).
 New usage of "cmidi" is discouraged (3 uses).
 New usage of "cmj1i" is discouraged (1 uses).
 New usage of "cmj2i" is discouraged (1 uses).
@@ -17120,9 +17118,8 @@ New usage of "merlem6" is discouraged (3 uses).
 New usage of "merlem7" is discouraged (1 uses).
 New usage of "merlem8" is discouraged (1 uses).
 New usage of "merlem9" is discouraged (1 uses).
-New usage of "metuelOLD" is discouraged (1 uses).
+New usage of "metuelOLD" is discouraged (0 uses).
 New usage of "metustOLD" is discouraged (1 uses).
-New usage of "metustblOLD" is discouraged (0 uses).
 New usage of "metustelOLD" is discouraged (4 uses).
 New usage of "metustexhalfOLD" is discouraged (1 uses).
 New usage of "metustfbasOLD" is discouraged (2 uses).
@@ -19847,7 +19844,6 @@ Proof modification of "merlem8" is discouraged (46 steps).
 Proof modification of "merlem9" is discouraged (73 steps).
 Proof modification of "metuelOLD" is discouraged (110 steps).
 Proof modification of "metustOLD" is discouraged (512 steps).
-Proof modification of "metustblOLD" is discouraged (268 steps).
 Proof modification of "metustelOLD" is discouraged (93 steps).
 Proof modification of "metustexhalfOLD" is discouraged (1179 steps).
 Proof modification of "metustfbasOLD" is discouraged (501 steps).
