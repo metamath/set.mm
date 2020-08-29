@@ -4188,7 +4188,6 @@
 "cmcmii" is used by "qlaxr3i".
 "cmcmlem" is used by "cmcmi".
 "cmdmdi" is used by "dmdoc1i".
-"cmetuOLD" is used by "metucnOLD".
 "cmetuOLD" is used by "metuelOLD".
 "cmetuOLD" is used by "metustblOLD".
 "cmetuOLD" is used by "metutopOLD".
@@ -9823,16 +9822,13 @@
 "merlem8" is used by "merlem9".
 "merlem9" is used by "merlem10".
 "metuelOLD" is used by "metustblOLD".
-"metustOLD" is used by "metucnOLD".
 "metustOLD" is used by "metuustOLD".
 "metustblOLD" is used by "metutopOLD".
-"metustelOLD" is used by "metucnOLD".
 "metustelOLD" is used by "metustexhalfOLD".
 "metustelOLD" is used by "metustfbasOLD".
 "metustelOLD" is used by "metustidOLD".
 "metustelOLD" is used by "metusttoOLD".
 "metustexhalfOLD" is used by "metustOLD".
-"metustfbasOLD" is used by "metucnOLD".
 "metustfbasOLD" is used by "metuelOLD".
 "metustfbasOLD" is used by "metustOLD".
 "metustfbasOLD" is used by "metutopOLD".
@@ -9845,7 +9841,6 @@
 "metutopOLD" is used by "xmsuspOLD".
 "metuustOLD" is used by "metutopOLD".
 "metuustOLD" is used by "xmsuspOLD".
-"metuvalOLD" is used by "metucnOLD".
 "metuvalOLD" is used by "metuelOLD".
 "metuvalOLD" is used by "metutopOLD".
 "metuvalOLD" is used by "metuustOLD".
@@ -15101,7 +15096,7 @@ New usage of "cmcmi" is discouraged (5 uses).
 New usage of "cmcmii" is discouraged (2 uses).
 New usage of "cmcmlem" is discouraged (1 uses).
 New usage of "cmdmdi" is discouraged (1 uses).
-New usage of "cmetuOLD" is discouraged (7 uses).
+New usage of "cmetuOLD" is discouraged (6 uses).
 New usage of "cmidi" is discouraged (3 uses).
 New usage of "cmj1i" is discouraged (1 uses).
 New usage of "cmj2i" is discouraged (1 uses).
@@ -17133,13 +17128,12 @@ New usage of "merlem6" is discouraged (3 uses).
 New usage of "merlem7" is discouraged (1 uses).
 New usage of "merlem8" is discouraged (1 uses).
 New usage of "merlem9" is discouraged (1 uses).
-New usage of "metucnOLD" is discouraged (0 uses).
 New usage of "metuelOLD" is discouraged (1 uses).
-New usage of "metustOLD" is discouraged (2 uses).
+New usage of "metustOLD" is discouraged (1 uses).
 New usage of "metustblOLD" is discouraged (1 uses).
-New usage of "metustelOLD" is discouraged (5 uses).
+New usage of "metustelOLD" is discouraged (4 uses).
 New usage of "metustexhalfOLD" is discouraged (1 uses).
-New usage of "metustfbasOLD" is discouraged (4 uses).
+New usage of "metustfbasOLD" is discouraged (3 uses).
 New usage of "metustidOLD" is discouraged (2 uses).
 New usage of "metustrelOLD" is discouraged (0 uses).
 New usage of "metustssOLD" is discouraged (2 uses).
@@ -17147,7 +17141,7 @@ New usage of "metustsymOLD" is discouraged (1 uses).
 New usage of "metusttoOLD" is discouraged (1 uses).
 New usage of "metutopOLD" is discouraged (1 uses).
 New usage of "metuustOLD" is discouraged (2 uses).
-New usage of "metuvalOLD" is discouraged (4 uses).
+New usage of "metuvalOLD" is discouraged (3 uses).
 New usage of "mgmplusgiopALT" is discouraged (1 uses).
 New usage of "minveco" is discouraged (1 uses).
 New usage of "minvecolem1" is discouraged (6 uses).
@@ -19861,7 +19855,6 @@ Proof modification of "merlem6" is discouraged (23 steps).
 Proof modification of "merlem7" is discouraged (66 steps).
 Proof modification of "merlem8" is discouraged (46 steps).
 Proof modification of "merlem9" is discouraged (73 steps).
-Proof modification of "metucnOLD" is discouraged (917 steps).
 Proof modification of "metuelOLD" is discouraged (110 steps).
 Proof modification of "metustOLD" is discouraged (512 steps).
 Proof modification of "metustblOLD" is discouraged (268 steps).
