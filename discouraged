@@ -4188,13 +4188,6 @@
 "cmcmii" is used by "qlaxr3i".
 "cmcmlem" is used by "cmcmi".
 "cmdmdi" is used by "dmdoc1i".
-"cmetuOLD" is used by "metucnOLD".
-"cmetuOLD" is used by "metuelOLD".
-"cmetuOLD" is used by "metustblOLD".
-"cmetuOLD" is used by "metutopOLD".
-"cmetuOLD" is used by "metuustOLD".
-"cmetuOLD" is used by "metuvalOLD".
-"cmetuOLD" is used by "xmsuspOLD".
 "cmidi" is used by "atordi".
 "cmidi" is used by "dmdoc1i".
 "cmidi" is used by "mdoc1i".
@@ -4378,7 +4371,6 @@
 "ctpsOLD" is used by "istps4OLD".
 "ctpsOLD" is used by "istps5OLD".
 "ctpsOLD" is used by "istpsOLD".
-"ctpsOLD" is used by "retpsOLD".
 "ctpsOLD" is used by "tpsexOLD".
 "cvati" is used by "cvbr4i".
 "cvbr" is used by "cvbr2".
@@ -4721,7 +4713,6 @@
 "df-m1r" is used by "map2psrpr".
 "df-m1r" is used by "mappsrpr".
 "df-md" is used by "mdbr".
-"df-metuOLD" is used by "metuvalOLD".
 "df-mgmOLD" is used by "ismgmOLD".
 "df-mi" is used by "dmmulpi".
 "df-mi" is used by "mulpiord".
@@ -9018,7 +9009,6 @@
 "istps3OLD" is used by "istps4OLD".
 "istps4OLD" is used by "istps5OLD".
 "istpsOLD" is used by "istps2OLD".
-"istpsOLD" is used by "retpsOLD".
 "istrkg2d" is used by "axtglowdim2OLD".
 "istrkg2d" is used by "axtgupdim2OLD".
 "isvc" is used by "isvci".
@@ -9824,33 +9814,7 @@
 "merlem7" is used by "merlem8".
 "merlem8" is used by "merlem9".
 "merlem9" is used by "merlem10".
-"metuelOLD" is used by "metustblOLD".
-"metustOLD" is used by "metucnOLD".
-"metustOLD" is used by "metuustOLD".
-"metustblOLD" is used by "metutopOLD".
-"metustelOLD" is used by "metucnOLD".
-"metustelOLD" is used by "metustexhalfOLD".
-"metustelOLD" is used by "metustfbasOLD".
-"metustelOLD" is used by "metustidOLD".
-"metustelOLD" is used by "metusttoOLD".
-"metustexhalfOLD" is used by "metustOLD".
-"metustfbasOLD" is used by "metucnOLD".
-"metustfbasOLD" is used by "metuelOLD".
-"metustfbasOLD" is used by "metustOLD".
-"metustfbasOLD" is used by "metutopOLD".
-"metustidOLD" is used by "metustOLD".
-"metustidOLD" is used by "metustfbasOLD".
 "metustssOLD" is used by "metustrelOLD".
-"metustssOLD" is used by "metustsymOLD".
-"metustsymOLD" is used by "metustOLD".
-"metusttoOLD" is used by "metustfbasOLD".
-"metutopOLD" is used by "xmsuspOLD".
-"metuustOLD" is used by "metutopOLD".
-"metuustOLD" is used by "xmsuspOLD".
-"metuvalOLD" is used by "metucnOLD".
-"metuvalOLD" is used by "metuelOLD".
-"metuvalOLD" is used by "metutopOLD".
-"metuvalOLD" is used by "metuustOLD".
 "mgmplusgiopALT" is used by "mgm2mgm".
 "minveco" is used by "pjhthlem2".
 "minvecolem1" is used by "minvecolem2".
@@ -15103,7 +15067,6 @@ New usage of "cmcmi" is discouraged (5 uses).
 New usage of "cmcmii" is discouraged (2 uses).
 New usage of "cmcmlem" is discouraged (1 uses).
 New usage of "cmdmdi" is discouraged (1 uses).
-New usage of "cmetuOLD" is discouraged (7 uses).
 New usage of "cmidi" is discouraged (3 uses).
 New usage of "cmj1i" is discouraged (1 uses).
 New usage of "cmj2i" is discouraged (1 uses).
@@ -15208,7 +15171,7 @@ New usage of "csbunigVD" is discouraged (0 uses).
 New usage of "csbxpgOLD" is discouraged (2 uses).
 New usage of "csbxpgVD" is discouraged (0 uses).
 New usage of "csmdsymi" is discouraged (0 uses).
-New usage of "ctpsOLD" is discouraged (8 uses).
+New usage of "ctpsOLD" is discouraged (7 uses).
 New usage of "cvati" is discouraged (1 uses).
 New usage of "cvbr" is discouraged (4 uses).
 New usage of "cvbr2" is discouraged (2 uses).
@@ -15336,7 +15299,6 @@ New usage of "df-ltpq" is discouraged (2 uses).
 New usage of "df-ltr" is discouraged (2 uses).
 New usage of "df-m1r" is discouraged (5 uses).
 New usage of "df-md" is discouraged (1 uses).
-New usage of "df-metuOLD" is discouraged (1 uses).
 New usage of "df-mgmOLD" is discouraged (1 uses).
 New usage of "df-mi" is discouraged (2 uses).
 New usage of "df-mndOLD" is discouraged (1 uses).
@@ -16751,7 +16713,7 @@ New usage of "istps2OLD" is discouraged (1 uses).
 New usage of "istps3OLD" is discouraged (1 uses).
 New usage of "istps4OLD" is discouraged (1 uses).
 New usage of "istps5OLD" is discouraged (0 uses).
-New usage of "istpsOLD" is discouraged (2 uses).
+New usage of "istpsOLD" is discouraged (1 uses).
 New usage of "istrkg2d" is discouraged (2 uses).
 New usage of "istrnN" is discouraged (0 uses).
 New usage of "isvc" is discouraged (1 uses).
@@ -17135,21 +17097,8 @@ New usage of "merlem6" is discouraged (3 uses).
 New usage of "merlem7" is discouraged (1 uses).
 New usage of "merlem8" is discouraged (1 uses).
 New usage of "merlem9" is discouraged (1 uses).
-New usage of "metucnOLD" is discouraged (0 uses).
-New usage of "metuelOLD" is discouraged (1 uses).
-New usage of "metustOLD" is discouraged (2 uses).
-New usage of "metustblOLD" is discouraged (1 uses).
-New usage of "metustelOLD" is discouraged (5 uses).
-New usage of "metustexhalfOLD" is discouraged (1 uses).
-New usage of "metustfbasOLD" is discouraged (4 uses).
-New usage of "metustidOLD" is discouraged (2 uses).
 New usage of "metustrelOLD" is discouraged (0 uses).
-New usage of "metustssOLD" is discouraged (2 uses).
-New usage of "metustsymOLD" is discouraged (1 uses).
-New usage of "metusttoOLD" is discouraged (1 uses).
-New usage of "metutopOLD" is discouraged (1 uses).
-New usage of "metuustOLD" is discouraged (2 uses).
-New usage of "metuvalOLD" is discouraged (4 uses).
+New usage of "metustssOLD" is discouraged (1 uses).
 New usage of "mgmplusgiopALT" is discouraged (1 uses).
 New usage of "minveco" is discouraged (1 uses).
 New usage of "minvecolem1" is discouraged (6 uses).
@@ -18035,7 +17984,6 @@ New usage of "retbwax1" is discouraged (0 uses).
 New usage of "retbwax2" is discouraged (3 uses).
 New usage of "retbwax3" is discouraged (0 uses).
 New usage of "retbwax4" is discouraged (0 uses).
-New usage of "retpsOLD" is discouraged (0 uses).
 New usage of "rexanaliOLD" is discouraged (0 uses).
 New usage of "rexbidvALT" is discouraged (0 uses).
 New usage of "rexbidvaALT" is discouraged (0 uses).
@@ -18676,7 +18624,6 @@ New usage of "wvhc7" is discouraged (0 uses).
 New usage of "wvhc8" is discouraged (0 uses).
 New usage of "wvhc9" is discouraged (0 uses).
 New usage of "xihopellsmN" is discouraged (0 uses).
-New usage of "xmsuspOLD" is discouraged (0 uses).
 New usage of "xorassOLD" is discouraged (0 uses).
 New usage of "xorneg1OLD" is discouraged (0 uses).
 New usage of "xorneg2OLD" is discouraged (0 uses).
@@ -19864,21 +19811,8 @@ Proof modification of "merlem6" is discouraged (23 steps).
 Proof modification of "merlem7" is discouraged (66 steps).
 Proof modification of "merlem8" is discouraged (46 steps).
 Proof modification of "merlem9" is discouraged (73 steps).
-Proof modification of "metucnOLD" is discouraged (917 steps).
-Proof modification of "metuelOLD" is discouraged (110 steps).
-Proof modification of "metustOLD" is discouraged (512 steps).
-Proof modification of "metustblOLD" is discouraged (268 steps).
-Proof modification of "metustelOLD" is discouraged (93 steps).
-Proof modification of "metustexhalfOLD" is discouraged (1179 steps).
-Proof modification of "metustfbasOLD" is discouraged (501 steps).
-Proof modification of "metustidOLD" is discouraged (328 steps).
 Proof modification of "metustrelOLD" is discouraged (36 steps).
 Proof modification of "metustssOLD" is discouraged (131 steps).
-Proof modification of "metustsymOLD" is discouraged (370 steps).
-Proof modification of "metusttoOLD" is discouraged (341 steps).
-Proof modification of "metutopOLD" is discouraged (627 steps).
-Proof modification of "metuustOLD" is discouraged (78 steps).
-Proof modification of "metuvalOLD" is discouraged (244 steps).
 Proof modification of "mgmplusgiopALT" is discouraged (80 steps).
 Proof modification of "mnd1OLD" is discouraged (473 steps).
 Proof modification of "mndassOLD" is discouraged (302 steps).
@@ -20136,7 +20070,6 @@ Proof modification of "retbwax1" is discouraged (195 steps).
 Proof modification of "retbwax2" is discouraged (127 steps).
 Proof modification of "retbwax3" is discouraged (20 steps).
 Proof modification of "retbwax4" is discouraged (13 steps).
-Proof modification of "retpsOLD" is discouraged (21 steps).
 Proof modification of "rexanaliOLD" is discouraged (32 steps).
 Proof modification of "rexbidvALT" is discouraged (10 steps).
 Proof modification of "rexbidvaALT" is discouraged (10 steps).
@@ -20417,7 +20350,6 @@ Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
 Proof modification of "wrd0OLD" is discouraged (31 steps).
 Proof modification of "wrdeqcats1OLD" is discouraged (215 steps).
-Proof modification of "xmsuspOLD" is discouraged (118 steps).
 Proof modification of "xorassOLD" is discouraged (84 steps).
 Proof modification of "xorneg1OLD" is discouraged (28 steps).
 Proof modification of "xorneg2OLD" is discouraged (28 steps).
