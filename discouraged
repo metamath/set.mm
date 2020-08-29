@@ -4188,7 +4188,6 @@
 "cmcmii" is used by "qlaxr3i".
 "cmcmlem" is used by "cmcmi".
 "cmdmdi" is used by "dmdoc1i".
-"cmetuOLD" is used by "metuvalOLD".
 "cmidi" is used by "atordi".
 "cmidi" is used by "dmdoc1i".
 "cmidi" is used by "mdoc1i".
@@ -4714,7 +4713,6 @@
 "df-m1r" is used by "map2psrpr".
 "df-m1r" is used by "mappsrpr".
 "df-md" is used by "mdbr".
-"df-metuOLD" is used by "metuvalOLD".
 "df-mgmOLD" is used by "ismgmOLD".
 "df-mi" is used by "dmmulpi".
 "df-mi" is used by "mulpiord".
@@ -15075,7 +15073,7 @@ New usage of "cmcmi" is discouraged (5 uses).
 New usage of "cmcmii" is discouraged (2 uses).
 New usage of "cmcmlem" is discouraged (1 uses).
 New usage of "cmdmdi" is discouraged (1 uses).
-New usage of "cmetuOLD" is discouraged (1 uses).
+New usage of "cmetuOLD" is discouraged (0 uses).
 New usage of "cmidi" is discouraged (3 uses).
 New usage of "cmj1i" is discouraged (1 uses).
 New usage of "cmj2i" is discouraged (1 uses).
@@ -15308,7 +15306,7 @@ New usage of "df-ltpq" is discouraged (2 uses).
 New usage of "df-ltr" is discouraged (2 uses).
 New usage of "df-m1r" is discouraged (5 uses).
 New usage of "df-md" is discouraged (1 uses).
-New usage of "df-metuOLD" is discouraged (1 uses).
+New usage of "df-metuOLD" is discouraged (0 uses).
 New usage of "df-mgmOLD" is discouraged (1 uses).
 New usage of "df-mi" is discouraged (2 uses).
 New usage of "df-mndOLD" is discouraged (1 uses).
@@ -17114,7 +17112,6 @@ New usage of "metustidOLD" is discouraged (1 uses).
 New usage of "metustrelOLD" is discouraged (0 uses).
 New usage of "metustssOLD" is discouraged (1 uses).
 New usage of "metusttoOLD" is discouraged (1 uses).
-New usage of "metuvalOLD" is discouraged (0 uses).
 New usage of "mgmplusgiopALT" is discouraged (1 uses).
 New usage of "minveco" is discouraged (1 uses).
 New usage of "minvecolem1" is discouraged (6 uses).
@@ -19834,7 +19831,6 @@ Proof modification of "metustidOLD" is discouraged (328 steps).
 Proof modification of "metustrelOLD" is discouraged (36 steps).
 Proof modification of "metustssOLD" is discouraged (131 steps).
 Proof modification of "metusttoOLD" is discouraged (341 steps).
-Proof modification of "metuvalOLD" is discouraged (244 steps).
 Proof modification of "mgmplusgiopALT" is discouraged (80 steps).
 Proof modification of "mnd1OLD" is discouraged (473 steps).
 Proof modification of "mndassOLD" is discouraged (302 steps).
