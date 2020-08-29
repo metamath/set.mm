@@ -9821,14 +9821,10 @@
 "metustelOLD" is used by "metustfbasOLD".
 "metustelOLD" is used by "metustidOLD".
 "metustelOLD" is used by "metusttoOLD".
-"metustexhalfOLD" is used by "metustOLD".
 "metustfbasOLD" is used by "metuelOLD".
-"metustfbasOLD" is used by "metustOLD".
-"metustidOLD" is used by "metustOLD".
 "metustidOLD" is used by "metustfbasOLD".
 "metustssOLD" is used by "metustrelOLD".
 "metustssOLD" is used by "metustsymOLD".
-"metustsymOLD" is used by "metustOLD".
 "metusttoOLD" is used by "metustfbasOLD".
 "metuvalOLD" is used by "metuelOLD".
 "mgmplusgiopALT" is used by "mgm2mgm".
@@ -17116,14 +17112,13 @@ New usage of "merlem7" is discouraged (1 uses).
 New usage of "merlem8" is discouraged (1 uses).
 New usage of "merlem9" is discouraged (1 uses).
 New usage of "metuelOLD" is discouraged (0 uses).
-New usage of "metustOLD" is discouraged (0 uses).
 New usage of "metustelOLD" is discouraged (4 uses).
-New usage of "metustexhalfOLD" is discouraged (1 uses).
-New usage of "metustfbasOLD" is discouraged (2 uses).
-New usage of "metustidOLD" is discouraged (2 uses).
+New usage of "metustexhalfOLD" is discouraged (0 uses).
+New usage of "metustfbasOLD" is discouraged (1 uses).
+New usage of "metustidOLD" is discouraged (1 uses).
 New usage of "metustrelOLD" is discouraged (0 uses).
 New usage of "metustssOLD" is discouraged (2 uses).
-New usage of "metustsymOLD" is discouraged (1 uses).
+New usage of "metustsymOLD" is discouraged (0 uses).
 New usage of "metusttoOLD" is discouraged (1 uses).
 New usage of "metuvalOLD" is discouraged (1 uses).
 New usage of "mgmplusgiopALT" is discouraged (1 uses).
@@ -19839,7 +19834,6 @@ Proof modification of "merlem7" is discouraged (66 steps).
 Proof modification of "merlem8" is discouraged (46 steps).
 Proof modification of "merlem9" is discouraged (73 steps).
 Proof modification of "metuelOLD" is discouraged (110 steps).
-Proof modification of "metustOLD" is discouraged (512 steps).
 Proof modification of "metustelOLD" is discouraged (93 steps).
 Proof modification of "metustexhalfOLD" is discouraged (1179 steps).
 Proof modification of "metustfbasOLD" is discouraged (501 steps).
