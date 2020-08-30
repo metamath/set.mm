@@ -9814,7 +9814,6 @@
 "merlem7" is used by "merlem8".
 "merlem8" is used by "merlem9".
 "merlem9" is used by "merlem10".
-"metustssOLD" is used by "metustrelOLD".
 "mgmplusgiopALT" is used by "mgm2mgm".
 "minveco" is used by "pjhthlem2".
 "minvecolem1" is used by "minvecolem2".
@@ -17097,8 +17096,6 @@ New usage of "merlem6" is discouraged (3 uses).
 New usage of "merlem7" is discouraged (1 uses).
 New usage of "merlem8" is discouraged (1 uses).
 New usage of "merlem9" is discouraged (1 uses).
-New usage of "metustrelOLD" is discouraged (0 uses).
-New usage of "metustssOLD" is discouraged (1 uses).
 New usage of "mgmplusgiopALT" is discouraged (1 uses).
 New usage of "minveco" is discouraged (1 uses).
 New usage of "minvecolem1" is discouraged (6 uses).
@@ -19811,8 +19808,6 @@ Proof modification of "merlem6" is discouraged (23 steps).
 Proof modification of "merlem7" is discouraged (66 steps).
 Proof modification of "merlem8" is discouraged (46 steps).
 Proof modification of "merlem9" is discouraged (73 steps).
-Proof modification of "metustrelOLD" is discouraged (36 steps).
-Proof modification of "metustssOLD" is discouraged (131 steps).
 Proof modification of "mgmplusgiopALT" is discouraged (80 steps).
 Proof modification of "mnd1OLD" is discouraged (473 steps).
 Proof modification of "mndassOLD" is discouraged (302 steps).
