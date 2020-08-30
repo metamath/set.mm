@@ -9059,17 +9059,17 @@
 "latmassOLD" is used by "omlfh1N".
 "latmmdiN" is used by "omlfh1N".
 "lcmsOLD" is used by "prmgaplcmlem1OLD".
-"lcmsOLD" is used by "prmordvdslcmsOLD".
+"lcmsOLD" is used by "prmordvdslcmsOLDOLD".
 "lcmscllemOLD" is used by "lcmsOLD".
 "lcmscllemOLD" is used by "lcmsnnOLD".
-"lcmscllemOLD" is used by "prmordvdslcmsOLD".
+"lcmscllemOLD" is used by "prmordvdslcmsOLDOLD".
 "lcmsledvdsOLD" is used by "lcmslefacOLD".
 "lcmsmapnnOLD" is used by "prmgaplcmOLD".
 "lcmsmapnnOLD" is used by "prmgaplcmlem1OLD".
 "lcmsmapnnOLD" is used by "prmgaplcmlem2OLD".
 "lcmsnnOLD" is used by "lcmsOLD".
 "lcmsnnOLD" is used by "lcmsmapnnOLD".
-"lcmsnnOLD" is used by "prmorlelcmsOLD".
+"lcmsnnOLD" is used by "prmorlelcmsOLDOLD".
 "lecm" is used by "chirredlem2".
 "lecmi" is used by "lecm".
 "lecmi" is used by "lecmii".
@@ -11965,9 +11965,18 @@
 "prlem934" is used by "ltexprlem7".
 "prlem934" is used by "prlem936".
 "prlem936" is used by "reclem3pr".
+"prmdvdsprmorOLD" is used by "prmdvdsprmorpOLD".
+"prmdvdsprmorpOLD" is used by "prmgapprmorlemOLD".
 "prmgaplcmlem1OLD" is used by "prmgaplcmlem2OLD".
 "prmgaplcmlem2OLD" is used by "prmgaplcmOLD".
-"prmordvdslcmsOLD" is used by "prmorlelcmsOLD".
+"prmgapprmorlemOLD" is used by "prmgapprmorOLD".
+"prmordvdslcmfOLD" is used by "prmorlelcmfOLD".
+"prmordvdslcmsOLDOLD" is used by "prmorlelcmsOLDOLD".
+"prmormapnnOLD" is used by "prmdvdsprmorpOLD".
+"prmormapnnOLD" is used by "prmgapprmorOLD".
+"prmormapnnOLD" is used by "prmgapprmorlemOLD".
+"prmormapnnOLD" is used by "prmorlelcmfOLD".
+"prmormapnnOLD" is used by "prmorlelcmsOLDOLD".
 "prn0" is used by "0npr".
 "prn0" is used by "genpn0".
 "prn0" is used by "ltaddpr".
@@ -17843,13 +17852,21 @@ New usage of "prcdnq" is discouraged (14 uses).
 New usage of "prdsgsumOLD" is discouraged (1 uses).
 New usage of "prlem934" is discouraged (3 uses).
 New usage of "prlem936" is discouraged (1 uses).
+New usage of "prmdvdsprmorOLD" is discouraged (1 uses).
+New usage of "prmdvdsprmorpOLD" is discouraged (1 uses).
 New usage of "prmgaplcm" is discouraged (0 uses).
 New usage of "prmgaplcmOLD" is discouraged (0 uses).
 New usage of "prmgaplcmlem1OLD" is discouraged (1 uses).
 New usage of "prmgaplcmlem2OLD" is discouraged (1 uses).
-New usage of "prmgapprmor" is discouraged (0 uses).
-New usage of "prmordvdslcmsOLD" is discouraged (1 uses).
-New usage of "prmorlelcmsOLD" is discouraged (0 uses).
+New usage of "prmgapprmo" is discouraged (0 uses).
+New usage of "prmgapprmorOLD" is discouraged (0 uses).
+New usage of "prmgapprmorlemOLD" is discouraged (1 uses).
+New usage of "prmordvdslcmfOLD" is discouraged (1 uses).
+New usage of "prmordvdslcmsOLDOLD" is discouraged (1 uses).
+New usage of "prmorlefacOLD" is discouraged (0 uses).
+New usage of "prmorlelcmfOLD" is discouraged (0 uses).
+New usage of "prmorlelcmsOLDOLD" is discouraged (0 uses).
+New usage of "prmormapnnOLD" is discouraged (5 uses).
 New usage of "prn0" is discouraged (8 uses).
 New usage of "prnmadd" is discouraged (2 uses).
 New usage of "prnmax" is discouraged (7 uses).
@@ -19967,13 +19984,21 @@ Proof modification of "pm2.86iALT" is discouraged (18 steps).
 Proof modification of "pm4.81ALT" is discouraged (11 steps).
 Proof modification of "posrefOLD" is discouraged (51 steps).
 Proof modification of "prdsgsumOLD" is discouraged (415 steps).
+Proof modification of "prmdvdsprmorOLD" is discouraged (523 steps).
+Proof modification of "prmdvdsprmorpOLD" is discouraged (239 steps).
 Proof modification of "prmgaplcm" is discouraged (247 steps).
 Proof modification of "prmgaplcmOLD" is discouraged (135 steps).
 Proof modification of "prmgaplcmlem1OLD" is discouraged (350 steps).
 Proof modification of "prmgaplcmlem2OLD" is discouraged (185 steps).
-Proof modification of "prmgapprmor" is discouraged (115 steps).
-Proof modification of "prmordvdslcmsOLD" is discouraged (443 steps).
-Proof modification of "prmorlelcmsOLD" is discouraged (205 steps).
+Proof modification of "prmgapprmo" is discouraged (387 steps).
+Proof modification of "prmgapprmorOLD" is discouraged (115 steps).
+Proof modification of "prmgapprmorlemOLD" is discouraged (217 steps).
+Proof modification of "prmordvdslcmfOLD" is discouraged (317 steps).
+Proof modification of "prmordvdslcmsOLDOLD" is discouraged (443 steps).
+Proof modification of "prmorlefacOLD" is discouraged (331 steps).
+Proof modification of "prmorlelcmfOLD" is discouraged (111 steps).
+Proof modification of "prmorlelcmsOLDOLD" is discouraged (205 steps).
+Proof modification of "prmormapnnOLD" is discouraged (127 steps).
 Proof modification of "probfinmeasbOLD" is discouraged (225 steps).
 Proof modification of "problem1" is discouraged (20 steps).
 Proof modification of "problem2" is discouraged (102 steps).
