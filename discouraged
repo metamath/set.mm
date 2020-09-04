@@ -8758,7 +8758,6 @@
 "issh2" is used by "shaddcl".
 "issh2" is used by "shintcli".
 "issh2" is used by "shmulcl".
-"issh2" is used by "shmulclOLD".
 "issh2" is used by "shscli".
 "issh3" is used by "nlelshi".
 "issmgrpOLD" is used by "ismndo1".
@@ -16313,7 +16312,7 @@ New usage of "isrngod" is discouraged (2 uses).
 New usage of "isrnsigaOLD" is discouraged (0 uses).
 New usage of "issgrpALT" is discouraged (1 uses).
 New usage of "issh" is discouraged (3 uses).
-New usage of "issh2" is discouraged (11 uses).
+New usage of "issh2" is discouraged (10 uses).
 New usage of "issh3" is discouraged (1 uses).
 New usage of "issmgrpOLD" is discouraged (3 uses).
 New usage of "isssp" is discouraged (8 uses).
@@ -17741,7 +17740,6 @@ New usage of "shlubi" is discouraged (1 uses).
 New usage of "shmodi" is discouraged (0 uses).
 New usage of "shmodsi" is discouraged (1 uses).
 New usage of "shmulcl" is discouraged (21 uses).
-New usage of "shmulclOLD" is discouraged (0 uses).
 New usage of "shne0i" is discouraged (2 uses).
 New usage of "shoccl" is discouraged (1 uses).
 New usage of "shocel" is discouraged (6 uses).
@@ -19595,7 +19593,6 @@ Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
-Proof modification of "shmulclOLD" is discouraged (101 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comtVD" is discouraged (42 steps).
 Proof modification of "sineq0ALT" is discouraged (986 steps).
