@@ -4276,8 +4276,6 @@
 "ctpsOLD" is used by "eltopspOLD".
 "ctpsOLD" is used by "istps2OLD".
 "ctpsOLD" is used by "istps3OLD".
-"ctpsOLD" is used by "istps4OLD".
-"ctpsOLD" is used by "istps5OLD".
 "ctpsOLD" is used by "istpsOLD".
 "ctpsOLD" is used by "tpsexOLD".
 "cvati" is used by "cvbr4i".
@@ -8758,7 +8756,6 @@
 "issh2" is used by "shaddcl".
 "issh2" is used by "shintcli".
 "issh2" is used by "shmulcl".
-"issh2" is used by "shmulclOLD".
 "issh2" is used by "shscli".
 "issh3" is used by "nlelshi".
 "issmgrpOLD" is used by "ismndo1".
@@ -8791,8 +8788,6 @@
 "issubgoi" is used by "zaddsubgo".
 "issubgoilem" is used by "issubgoi".
 "istps2OLD" is used by "istps3OLD".
-"istps3OLD" is used by "istps4OLD".
-"istps4OLD" is used by "istps5OLD".
 "istpsOLD" is used by "istps2OLD".
 "istrkg2d" is used by "axtglowdim2OLD".
 "istrkg2d" is used by "axtgupdim2OLD".
@@ -14843,7 +14838,7 @@ New usage of "csbunigVD" is discouraged (0 uses).
 New usage of "csbxpgOLD" is discouraged (2 uses).
 New usage of "csbxpgVD" is discouraged (0 uses).
 New usage of "csmdsymi" is discouraged (0 uses).
-New usage of "ctpsOLD" is discouraged (7 uses).
+New usage of "ctpsOLD" is discouraged (5 uses).
 New usage of "cvati" is discouraged (1 uses).
 New usage of "cvbr" is discouraged (4 uses).
 New usage of "cvbr2" is discouraged (2 uses).
@@ -16313,7 +16308,7 @@ New usage of "isrngod" is discouraged (2 uses).
 New usage of "isrnsigaOLD" is discouraged (0 uses).
 New usage of "issgrpALT" is discouraged (1 uses).
 New usage of "issh" is discouraged (3 uses).
-New usage of "issh2" is discouraged (11 uses).
+New usage of "issh2" is discouraged (10 uses).
 New usage of "issh3" is discouraged (1 uses).
 New usage of "issmgrpOLD" is discouraged (3 uses).
 New usage of "isssp" is discouraged (8 uses).
@@ -16322,9 +16317,7 @@ New usage of "issubgo" is discouraged (9 uses).
 New usage of "issubgoi" is discouraged (4 uses).
 New usage of "issubgoilem" is discouraged (1 uses).
 New usage of "istps2OLD" is discouraged (1 uses).
-New usage of "istps3OLD" is discouraged (1 uses).
-New usage of "istps4OLD" is discouraged (1 uses).
-New usage of "istps5OLD" is discouraged (0 uses).
+New usage of "istps3OLD" is discouraged (0 uses).
 New usage of "istpsOLD" is discouraged (1 uses).
 New usage of "istrkg2d" is discouraged (2 uses).
 New usage of "istrnN" is discouraged (0 uses).
@@ -17741,7 +17734,6 @@ New usage of "shlubi" is discouraged (1 uses).
 New usage of "shmodi" is discouraged (0 uses).
 New usage of "shmodsi" is discouraged (1 uses).
 New usage of "shmulcl" is discouraged (21 uses).
-New usage of "shmulclOLD" is discouraged (0 uses).
 New usage of "shne0i" is discouraged (2 uses).
 New usage of "shoccl" is discouraged (1 uses).
 New usage of "shocel" is discouraged (6 uses).
@@ -19207,8 +19199,6 @@ Proof modification of "issgrpALT" is discouraged (53 steps).
 Proof modification of "issmgrpOLD" is discouraged (85 steps).
 Proof modification of "istps2OLD" is discouraged (121 steps).
 Proof modification of "istps3OLD" is discouraged (119 steps).
-Proof modification of "istps4OLD" is discouraged (78 steps).
-Proof modification of "istps5OLD" is discouraged (73 steps).
 Proof modification of "istpsOLD" is discouraged (123 steps).
 Proof modification of "istrkg2d" is discouraged (439 steps).
 Proof modification of "iswrdOLD" is discouraged (89 steps).
@@ -19595,7 +19585,6 @@ Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
-Proof modification of "shmulclOLD" is discouraged (101 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comtVD" is discouraged (42 steps).
 Proof modification of "sineq0ALT" is discouraged (986 steps).
