@@ -4276,7 +4276,6 @@
 "ctpsOLD" is used by "eltopspOLD".
 "ctpsOLD" is used by "istps2OLD".
 "ctpsOLD" is used by "istps3OLD".
-"ctpsOLD" is used by "istps4OLD".
 "ctpsOLD" is used by "istpsOLD".
 "ctpsOLD" is used by "tpsexOLD".
 "cvati" is used by "cvbr4i".
@@ -8789,7 +8788,6 @@
 "issubgoi" is used by "zaddsubgo".
 "issubgoilem" is used by "issubgoi".
 "istps2OLD" is used by "istps3OLD".
-"istps3OLD" is used by "istps4OLD".
 "istpsOLD" is used by "istps2OLD".
 "istrkg2d" is used by "axtglowdim2OLD".
 "istrkg2d" is used by "axtgupdim2OLD".
@@ -14840,7 +14838,7 @@ New usage of "csbunigVD" is discouraged (0 uses).
 New usage of "csbxpgOLD" is discouraged (2 uses).
 New usage of "csbxpgVD" is discouraged (0 uses).
 New usage of "csmdsymi" is discouraged (0 uses).
-New usage of "ctpsOLD" is discouraged (6 uses).
+New usage of "ctpsOLD" is discouraged (5 uses).
 New usage of "cvati" is discouraged (1 uses).
 New usage of "cvbr" is discouraged (4 uses).
 New usage of "cvbr2" is discouraged (2 uses).
@@ -16319,8 +16317,7 @@ New usage of "issubgo" is discouraged (9 uses).
 New usage of "issubgoi" is discouraged (4 uses).
 New usage of "issubgoilem" is discouraged (1 uses).
 New usage of "istps2OLD" is discouraged (1 uses).
-New usage of "istps3OLD" is discouraged (1 uses).
-New usage of "istps4OLD" is discouraged (0 uses).
+New usage of "istps3OLD" is discouraged (0 uses).
 New usage of "istpsOLD" is discouraged (1 uses).
 New usage of "istrkg2d" is discouraged (2 uses).
 New usage of "istrnN" is discouraged (0 uses).
@@ -19202,7 +19199,6 @@ Proof modification of "issgrpALT" is discouraged (53 steps).
 Proof modification of "issmgrpOLD" is discouraged (85 steps).
 Proof modification of "istps2OLD" is discouraged (121 steps).
 Proof modification of "istps3OLD" is discouraged (119 steps).
-Proof modification of "istps4OLD" is discouraged (78 steps).
 Proof modification of "istpsOLD" is discouraged (123 steps).
 Proof modification of "istrkg2d" is discouraged (439 steps).
 Proof modification of "iswrdOLD" is discouraged (89 steps).
