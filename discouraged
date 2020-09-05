@@ -18729,6 +18729,7 @@ Proof modification of "csbxpgOLD" is discouraged (228 steps).
 Proof modification of "csbxpgVD" is discouraged (520 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
+Proof modification of "dfinfmrALTV" is discouraged (196 steps).
 Proof modification of "dfnotOLD" is discouraged (17 steps).
 Proof modification of "dfral2OLD" is discouraged (14 steps).
 Proof modification of "dfsup2OLD" is discouraged (307 steps).
@@ -19243,6 +19244,10 @@ Proof modification of "in3" is discouraged (12 steps).
 Proof modification of "in3an" is discouraged (21 steps).
 Proof modification of "indistps2ALT" is discouraged (43 steps).
 Proof modification of "indistpsALT" is discouraged (64 steps).
+Proof modification of "infmrclALTV" is discouraged (37 steps).
+Proof modification of "infmrgelbALTV" is discouraged (185 steps).
+Proof modification of "infmrlbALTV" is discouraged (155 steps).
+Proof modification of "infmsupALTV" is discouraged (343 steps).
 Proof modification of "infpssALT" is discouraged (52 steps).
 Proof modification of "int2" is discouraged (14 steps).
 Proof modification of "int3" is discouraged (17 steps).
@@ -19809,6 +19814,7 @@ Proof modification of "uunTT1" is discouraged (26 steps).
 Proof modification of "uunTT1p1" is discouraged (37 steps).
 Proof modification of "uunTT1p2" is discouraged (37 steps).
 Proof modification of "uzind4ALT" is discouraged (16 steps).
+Proof modification of "uzinfmiALTV" is discouraged (88 steps).
 Proof modification of "vd01" is discouraged (7 steps).
 Proof modification of "vd02" is discouraged (13 steps).
 Proof modification of "vd03" is discouraged (19 steps).
