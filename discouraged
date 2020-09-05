@@ -4274,10 +4274,6 @@
 "csbxpgOLD" is used by "csbresgOLD".
 "csbxpgOLD" is used by "csbresgVD".
 "ctpsOLD" is used by "eltopspOLD".
-"ctpsOLD" is used by "istps2OLD".
-"ctpsOLD" is used by "istps3OLD".
-"ctpsOLD" is used by "istpsOLD".
-"ctpsOLD" is used by "tpsexOLD".
 "cvati" is used by "cvbr4i".
 "cvbr" is used by "cvbr2".
 "cvbr" is used by "cvcon3".
@@ -4749,8 +4745,6 @@
 "df-st" is used by "isst".
 "df-subgo" is used by "issubgo".
 "df-topspOLD" is used by "eltopspOLD".
-"df-topspOLD" is used by "istpsOLD".
-"df-topspOLD" is used by "tpsexOLD".
 "df-trkg2d" is used by "istrkg2d".
 "df-tru" is used by "tru".
 "df-unop" is used by "elunop".
@@ -8787,8 +8781,6 @@
 "issubgoi" is used by "readdsubgo".
 "issubgoi" is used by "zaddsubgo".
 "issubgoilem" is used by "issubgoi".
-"istps2OLD" is used by "istps3OLD".
-"istpsOLD" is used by "istps2OLD".
 "istrkg2d" is used by "axtglowdim2OLD".
 "istrkg2d" is used by "axtgupdim2OLD".
 "isvc" is used by "isvci".
@@ -12968,7 +12960,6 @@
 "tbwsyl" is used by "tbwlem4".
 "tbwsyl" is used by "tbwlem5".
 "tendospcanN" is used by "dihmeetlem13N".
-"tpsexOLD" is used by "istpsOLD".
 "tratrb" is used by "ordelordALT".
 "tratrb" is used by "ordelordALTVD".
 "trelded" is used by "suctrALT3".
@@ -14838,7 +14829,7 @@ New usage of "csbunigVD" is discouraged (0 uses).
 New usage of "csbxpgOLD" is discouraged (2 uses).
 New usage of "csbxpgVD" is discouraged (0 uses).
 New usage of "csmdsymi" is discouraged (0 uses).
-New usage of "ctpsOLD" is discouraged (5 uses).
+New usage of "ctpsOLD" is discouraged (1 uses).
 New usage of "cvati" is discouraged (1 uses).
 New usage of "cvbr" is discouraged (4 uses).
 New usage of "cvbr2" is discouraged (2 uses).
@@ -15011,7 +15002,7 @@ New usage of "df-spec" is discouraged (1 uses).
 New usage of "df-ssp" is discouraged (1 uses).
 New usage of "df-st" is discouraged (1 uses).
 New usage of "df-subgo" is discouraged (1 uses).
-New usage of "df-topspOLD" is discouraged (3 uses).
+New usage of "df-topspOLD" is discouraged (1 uses).
 New usage of "df-trkg2d" is discouraged (1 uses).
 New usage of "df-tru" is discouraged (1 uses).
 New usage of "df-unop" is discouraged (1 uses).
@@ -16316,9 +16307,6 @@ New usage of "isst" is discouraged (4 uses).
 New usage of "issubgo" is discouraged (9 uses).
 New usage of "issubgoi" is discouraged (4 uses).
 New usage of "issubgoilem" is discouraged (1 uses).
-New usage of "istps2OLD" is discouraged (1 uses).
-New usage of "istps3OLD" is discouraged (0 uses).
-New usage of "istpsOLD" is discouraged (1 uses).
 New usage of "istrkg2d" is discouraged (2 uses).
 New usage of "istrnN" is discouraged (0 uses).
 New usage of "isvc" is discouraged (1 uses).
@@ -17987,7 +17975,6 @@ New usage of "tfr2ALT" is discouraged (0 uses).
 New usage of "tfr3ALT" is discouraged (0 uses).
 New usage of "topnfbey" is discouraged (0 uses).
 New usage of "tpid3gVD" is discouraged (0 uses).
-New usage of "tpsexOLD" is discouraged (1 uses).
 New usage of "tratrb" is discouraged (2 uses).
 New usage of "tratrbVD" is discouraged (0 uses).
 New usage of "trelded" is discouraged (1 uses).
@@ -19197,9 +19184,6 @@ Proof modification of "isosctrlem1ALT" is discouraged (363 steps).
 Proof modification of "isrnsigaOLD" is discouraged (202 steps).
 Proof modification of "issgrpALT" is discouraged (53 steps).
 Proof modification of "issmgrpOLD" is discouraged (85 steps).
-Proof modification of "istps2OLD" is discouraged (121 steps).
-Proof modification of "istps3OLD" is discouraged (119 steps).
-Proof modification of "istpsOLD" is discouraged (123 steps).
 Proof modification of "istrkg2d" is discouraged (439 steps).
 Proof modification of "iswrdOLD" is discouraged (89 steps).
 Proof modification of "iunconALT" is discouraged (56 steps).
@@ -19655,7 +19639,6 @@ Proof modification of "tfr3ALT" is discouraged (84 steps).
 Proof modification of "topnfbey" is discouraged (75 steps).
 Proof modification of "toycom" is discouraged (142 steps).
 Proof modification of "tpid3gVD" is discouraged (116 steps).
-Proof modification of "tpsexOLD" is discouraged (47 steps).
 Proof modification of "tratrb" is discouraged (318 steps).
 Proof modification of "tratrbVD" is discouraged (395 steps).
 Proof modification of "trelded" is discouraged (27 steps).
