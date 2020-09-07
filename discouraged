@@ -791,7 +791,7 @@
 "aecoms-o" is used by "dral1-o".
 "aecoms-o" is used by "dvelimf-o".
 "aecoms-o" is used by "hbae-o".
-"aev-o" is used by "ax16g-o".
+"aev-o" is used by "axc16g-o".
 "aevlem1OLD" is used by "axc16gOLD".
 "ajfuni" is used by "ajfun".
 "ajfval" is used by "ajfuni".
@@ -946,10 +946,10 @@
 "ax-c14" is used by "ax12el".
 "ax-c14" is used by "ax5el".
 "ax-c15" is used by "ax12".
-"ax-c16" is used by "ax16g-o".
 "ax-c16" is used by "ax5el".
 "ax-c16" is used by "ax5eq".
 "ax-c16" is used by "axc11n-16".
+"ax-c16" is used by "axc16g-o".
 "ax-c4" is used by "ax10".
 "ax-c4" is used by "ax4".
 "ax-c4" is used by "equid1".
@@ -1391,7 +1391,6 @@
 "ax12indalem" is used by "ax12inda2".
 "ax12indn" is used by "ax12indi".
 "ax12v2-o" is used by "ax12a2-o".
-"ax16g-o" is used by "ax12inda2".
 "ax5el" is used by "dveel2ALT".
 "ax5eq" is used by "dveeq1-o16".
 "ax6e2eq" is used by "ax6e2ndeq".
@@ -1414,6 +1413,7 @@
 "axc11nlemOLD" is used by "aevlem1OLD".
 "axc11nlemOLD" is used by "axc11nOLD".
 "axc16ALT" is used by "axc16gALT".
+"axc16g-o" is used by "ax12inda2".
 "axc4i-o" is used by "aev-o".
 "axc4i-o" is used by "ax12inda2ALT".
 "axc4i-o" is used by "ax12indalem".
@@ -5162,7 +5162,7 @@
 "dral1-o" is used by "ax12".
 "dral1-o" is used by "ax12inda2ALT".
 "dral1-o" is used by "ax12indalem".
-"dral1-o" is used by "ax16g-o".
+"dral1-o" is used by "axc16g-o".
 "dral2-o" is used by "ax12el".
 "dral2-o" is used by "ax12eq".
 "dral2-o" is used by "ax12inda2ALT".
@@ -13823,8 +13823,6 @@ New usage of "ax12v2-o" is discouraged (1 uses).
 New usage of "ax12vALT" is discouraged (0 uses).
 New usage of "ax12vOLD" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
-New usage of "ax16g-o" is discouraged (1 uses).
-New usage of "ax16nfALT" is discouraged (0 uses).
 New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
@@ -13862,8 +13860,10 @@ New usage of "axc11nfromc11" is discouraged (0 uses).
 New usage of "axc11nlemOLD" is discouraged (2 uses).
 New usage of "axc16ALT" is discouraged (1 uses).
 New usage of "axc16b" is discouraged (0 uses).
+New usage of "axc16g-o" is discouraged (1 uses).
 New usage of "axc16gALT" is discouraged (0 uses).
 New usage of "axc16gOLD" is discouraged (0 uses).
+New usage of "axc16nfALT" is discouraged (0 uses).
 New usage of "axc4i-o" is discouraged (5 uses).
 New usage of "axc5" is discouraged (0 uses).
 New usage of "axc5c4c711to11" is discouraged (0 uses).
@@ -18292,8 +18292,6 @@ Proof modification of "ax12v2-o" is discouraged (107 steps).
 Proof modification of "ax12vALT" is discouraged (35 steps).
 Proof modification of "ax12vOLD" is discouraged (81 steps).
 Proof modification of "ax13fromc9" is discouraged (72 steps).
-Proof modification of "ax16g-o" is discouraged (40 steps).
-Proof modification of "ax16nfALT" is discouraged (17 steps).
 Proof modification of "ax2" is discouraged (46 steps).
 Proof modification of "ax3" is discouraged (24 steps).
 Proof modification of "ax3h" is discouraged (21 steps).
@@ -18324,9 +18322,11 @@ Proof modification of "axc11nlemOLD" is discouraged (58 steps).
 Proof modification of "axc14" is discouraged (72 steps).
 Proof modification of "axc16ALT" is discouraged (20 steps).
 Proof modification of "axc16b" is discouraged (14 steps).
+Proof modification of "axc16g-o" is discouraged (40 steps).
 Proof modification of "axc16gALT" is discouraged (40 steps).
 Proof modification of "axc16gOLD" is discouraged (30 steps).
 Proof modification of "axc16i" is discouraged (135 steps).
+Proof modification of "axc16nfALT" is discouraged (17 steps).
 Proof modification of "axc4" is discouraged (49 steps).
 Proof modification of "axc5" is discouraged (3 steps).
 Proof modification of "axc5c4c711to11" is discouraged (111 steps).
@@ -18380,8 +18380,6 @@ Proof modification of "bj-aecomsv" is discouraged (16 steps).
 Proof modification of "bj-aev" is discouraged (39 steps).
 Proof modification of "bj-aevlem1v" is discouraged (42 steps).
 Proof modification of "bj-ax12v" is discouraged (35 steps).
-Proof modification of "bj-ax16gb" is discouraged (18 steps).
-Proof modification of "bj-ax16nf" is discouraged (31 steps).
 Proof modification of "bj-ax8" is discouraged (55 steps).
 Proof modification of "bj-ax9" is discouraged (35 steps).
 Proof modification of "bj-axc10v" is discouraged (37 steps).
@@ -18392,6 +18390,8 @@ Proof modification of "bj-axc15v" is discouraged (103 steps).
 Proof modification of "bj-axc16" is discouraged (5 steps).
 Proof modification of "bj-axc16b" is discouraged (14 steps).
 Proof modification of "bj-axc16g" is discouraged (30 steps).
+Proof modification of "bj-axc16gb" is discouraged (18 steps).
+Proof modification of "bj-axc16nf" is discouraged (31 steps).
 Proof modification of "bj-axd2d" is discouraged (16 steps).
 Proof modification of "bj-axdd2" is discouraged (28 steps).
 Proof modification of "bj-axext3" is discouraged (57 steps).
