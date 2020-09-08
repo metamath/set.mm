@@ -1515,10 +1515,46 @@ there is less need for this convenience theorem.</TD>
 <TR>
 <TD>df-fr and all theorems using <TT>Fr</TT></TD>
 <TD><I>none</I></TD>
-<TD>Because iset.mm assumes ~ ax-setind without reluctance, all sets are
-well-founded. We could adopt a treatment more like set.mm if
-people want to investigate set theories which are constructive
-but which do not assume ~ ax-setind .</TD>
+<TD><P>Right now iset.mm does not have a well-founded predicate
+(<code>Fr</code> in set.mm). This means that various theorems (involving
+ordinals, especially) require the
+Axiom of Set Induction ~ ax-setind (the IZF equivalent to the Axiom of
+Foundation/Regularity in ZF), where the set.mm proofs of those theorems
+do not.</P>
+
+<P>Presumably if we were to add <code>Fr</code> we'd define it as being
+inductive, that is, a property that satisfies the epsilon (or R)
+induction principle is always true. For example:
+R Fr A ` <-> A. s ( A. x ( A. y ( y R x -> y e. s ) -> x e. s ) -> A C_ s ) `
+</P>
+
+<P>This definition has some problems when A is a proper class. As such,
+~ ax-setind has to be stated as a schema instead:
+` A. x ( A. y ( y e. x -> y e. S ) -> x e. S ) -> S = _V `
+</P>
+
+<P>There are two ways to say no infinite descending sequence, using
+` E. -. ` or ` -. A. `, which are not intuitionistically equivalent.
+Furthermore there are some trivial commutations that are not
+intuitionistically valid. So I think that makes the following definition
+possibilities:</P>
+
+<P>R Fr A ` <-> A. s ( A. x ( A. y ( y R x -> y e. s ) -> x e. s ) -> A C_ s ) `</P>
+<P>R Fr2 A ` <-> A. s ( s C_ A -> ( A. x e. s E. y e. s y R x -> s = (/) ) ) `</P>
+<P>R Fr3 A ` <-> A. s ( s C_ A -> ( E. x x e. s -> E. x e. s A. y e. s -. y R x ) ) `</P>
+
+<P>The set.mm definition is roughly Fr3 (but it uses nonempty in place of
+inhabited). We can probably just focus on the first definition, but ideally
+we'd prove it in set.mm (to show that given excluded middle it is equivalent
+to the definition of Fr in set.mm).</P>
+
+<P>If we adopted well-foundedness along these lines, we'd be able to add
+well-foundedness to the definition of an ordinal and prove many of the
+ordinal theorems without ~ ax-setind . The proof of ~ ordirr would be
+similar to the current proof of ~ elirr except that ~ ax-setind would
+be replaced by ` _E ` Fr ` A ` and ` _V ` throughout the ~ elirr proof
+would be replaced by ` A ` . Likewise for ~ en2lp . These theorems (for
+ordinals) would then not rely on ~ ax-setind .</P>
 </TD>
 </TR>
 
