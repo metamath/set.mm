@@ -4601,6 +4601,8 @@
 "df-iop" is used by "pjclem3".
 "df-ipo" is used by "ipoval".
 "df-kb" is used by "kbfval".
+"df-lcmOLD" is used by "lcmvalOLD".
+"df-lcmfOLD" is used by "lcmfvalOLD".
 "df-leop" is used by "leopg".
 "df-limsupOLD" is used by "limsupclOLD".
 "df-limsupOLD" is used by "limsupvalOLD".
@@ -8619,9 +8621,7 @@
 "infmssuzclOLD" is used by "ig1pdvds".
 "infmssuzclOLD" is used by "ig1peu".
 "infmssuzclOLD" is used by "ioodvbdlimc1lem1".
-"infmssuzclOLD" is used by "lcmcllem".
-"infmssuzclOLD" is used by "lcmfcllem".
-"infmssuzclOLD" is used by "lcmfval".
+"infmssuzclOLD" is used by "lcmfvalOLD".
 "infmssuzclOLD" is used by "lcmscllemOLD".
 "infmssuzclOLD" is used by "odlem1".
 "infmssuzclOLD" is used by "odlem2".
@@ -8644,8 +8644,6 @@
 "infmssuzleOLD" is used by "gexlem2".
 "infmssuzleOLD" is used by "ig1pdvds".
 "infmssuzleOLD" is used by "ig1peu".
-"infmssuzleOLD" is used by "lcmfledvds".
-"infmssuzleOLD" is used by "lcmledvds".
 "infmssuzleOLD" is used by "lcmsledvdsOLD".
 "infmssuzleOLD" is used by "odlem2".
 "infmssuzleOLD" is used by "odzdvds".
@@ -9007,6 +9005,8 @@
 "lbinfmclOLD" is used by "stoweidlem29OLD".
 "lbinfmleOLD" is used by "infmssuzleOLD".
 "lbinfmleOLD" is used by "stoweidlem29OLD".
+"lcmfn0valOLD" is used by "lcmfnnvalOLD".
+"lcmfvalOLD" is used by "lcmfn0valOLD".
 "lcmsOLD" is used by "prmgaplcmlem1OLD".
 "lcmsOLD" is used by "prmordvdslcmsOLDOLD".
 "lcmscllemOLD" is used by "lcmsOLD".
@@ -9019,6 +9019,7 @@
 "lcmsnnOLD" is used by "lcmsOLD".
 "lcmsnnOLD" is used by "lcmsmapnnOLD".
 "lcmsnnOLD" is used by "prmorlelcmsOLDOLD".
+"lcmvalOLD" is used by "lcmn0valOLD".
 "lecm" is used by "chirredlem2".
 "lecmi" is used by "lecm".
 "lecmi" is used by "lecmii".
@@ -10334,7 +10335,6 @@
 "nn0indALT" is used by "uzaddcl".
 "nnexALT" is used by "qexALT".
 "nnexALT" is used by "zexALT".
-"nninfmOLD" is used by "lcmf0".
 "norm-i" is used by "cdj3lem1".
 "norm-i" is used by "hhnv".
 "norm-i" is used by "hhssnv".
@@ -15158,6 +15158,8 @@ New usage of "df-ims" is discouraged (1 uses).
 New usage of "df-iop" is discouraged (7 uses).
 New usage of "df-ipo" is discouraged (1 uses).
 New usage of "df-kb" is discouraged (1 uses).
+New usage of "df-lcmOLD" is discouraged (1 uses).
+New usage of "df-lcmfOLD" is discouraged (1 uses).
 New usage of "df-leop" is discouraged (1 uses).
 New usage of "df-limsupOLD" is discouraged (2 uses).
 New usage of "df-lnfn" is discouraged (1 uses).
@@ -16414,8 +16416,8 @@ New usage of "indpi" is discouraged (1 uses).
 New usage of "infmrclOLD" is discouraged (20 uses).
 New usage of "infmrgelbOLD" is discouraged (14 uses).
 New usage of "infmrlbOLD" is discouraged (14 uses).
-New usage of "infmssuzclOLD" is discouraged (34 uses).
-New usage of "infmssuzleOLD" is discouraged (21 uses).
+New usage of "infmssuzclOLD" is discouraged (32 uses).
+New usage of "infmssuzleOLD" is discouraged (19 uses).
 New usage of "infmsupOLD" is discouraged (3 uses).
 New usage of "infmxrclOLD" is discouraged (15 uses).
 New usage of "infmxrgelbOLD" is discouraged (14 uses).
@@ -16584,12 +16586,17 @@ New usage of "lcfl7N" is discouraged (0 uses).
 New usage of "lcfls1N" is discouraged (0 uses).
 New usage of "lcfrlem12N" is discouraged (0 uses).
 New usage of "lcfrvalsnN" is discouraged (0 uses).
+New usage of "lcmfn0valOLD" is discouraged (1 uses).
+New usage of "lcmfnnvalOLD" is discouraged (0 uses).
+New usage of "lcmfvalOLD" is discouraged (1 uses).
+New usage of "lcmn0valOLD" is discouraged (0 uses).
 New usage of "lcmsOLD" is discouraged (2 uses).
 New usage of "lcmscllemOLD" is discouraged (3 uses).
 New usage of "lcmsledvdsOLD" is discouraged (1 uses).
 New usage of "lcmslefacOLD" is discouraged (0 uses).
 New usage of "lcmsmapnnOLD" is discouraged (3 uses).
 New usage of "lcmsnnOLD" is discouraged (3 uses).
+New usage of "lcmvalOLD" is discouraged (1 uses).
 New usage of "ldualsaddN" is discouraged (0 uses).
 New usage of "lecm" is discouraged (1 uses).
 New usage of "lecmi" is discouraged (2 uses).
@@ -17172,7 +17179,7 @@ New usage of "nn0lt10bOLD" is discouraged (0 uses).
 New usage of "nnelOLD" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (2 uses).
 New usage of "nnindALT" is discouraged (0 uses).
-New usage of "nninfmOLD" is discouraged (1 uses).
+New usage of "nninfmOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
 New usage of "nonconneOLD" is discouraged (0 uses).
 New usage of "norm-i" is discouraged (13 uses).
@@ -19489,13 +19496,18 @@ Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lbinfmOLD" is discouraged (146 steps).
 Proof modification of "lbinfmclOLD" is discouraged (35 steps).
 Proof modification of "lbinfmleOLD" is discouraged (47 steps).
+Proof modification of "lcmfn0valOLD" is discouraged (66 steps).
+Proof modification of "lcmfnnvalOLD" is discouraged (78 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
+Proof modification of "lcmfvalOLD" is discouraged (198 steps).
+Proof modification of "lcmn0valOLD" is discouraged (49 steps).
 Proof modification of "lcmsOLD" is discouraged (68 steps).
 Proof modification of "lcmscllemOLD" is discouraged (145 steps).
 Proof modification of "lcmsledvdsOLD" is discouraged (103 steps).
 Proof modification of "lcmslefacOLD" is discouraged (203 steps).
 Proof modification of "lcmsmapnnOLD" is discouraged (69 steps).
 Proof modification of "lcmsnnOLD" is discouraged (32 steps).
+Proof modification of "lcmvalOLD" is discouraged (168 steps).
 Proof modification of "lediv2aALT" is discouraged (264 steps).
 Proof modification of "ledivmul2OLD" is discouraged (106 steps).
 Proof modification of "leimnltdOLD" is discouraged (7 steps).
