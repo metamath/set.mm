@@ -9005,6 +9005,8 @@
 "lbinfmclOLD" is used by "stoweidlem29OLD".
 "lbinfmleOLD" is used by "infmssuzleOLD".
 "lbinfmleOLD" is used by "stoweidlem29OLD".
+"lcmfn0valOLD" is used by "lcmfnnvalOLD".
+"lcmfvalOLD" is used by "lcmfn0valOLD".
 "lcmsOLD" is used by "prmgaplcmlem1OLD".
 "lcmsOLD" is used by "prmordvdslcmsOLDOLD".
 "lcmscllemOLD" is used by "lcmsOLD".
@@ -16584,6 +16586,9 @@ New usage of "lcfl7N" is discouraged (0 uses).
 New usage of "lcfls1N" is discouraged (0 uses).
 New usage of "lcfrlem12N" is discouraged (0 uses).
 New usage of "lcfrvalsnN" is discouraged (0 uses).
+New usage of "lcmfn0valOLD" is discouraged (1 uses).
+New usage of "lcmfnnvalOLD" is discouraged (0 uses).
+New usage of "lcmfvalOLD" is discouraged (1 uses).
 New usage of "lcmn0valOLD" is discouraged (0 uses).
 New usage of "lcmsOLD" is discouraged (2 uses).
 New usage of "lcmscllemOLD" is discouraged (3 uses).
@@ -19491,7 +19496,10 @@ Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lbinfmOLD" is discouraged (146 steps).
 Proof modification of "lbinfmclOLD" is discouraged (35 steps).
 Proof modification of "lbinfmleOLD" is discouraged (47 steps).
+Proof modification of "lcmfn0valOLD" is discouraged (66 steps).
+Proof modification of "lcmfnnvalOLD" is discouraged (78 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
+Proof modification of "lcmfvalOLD" is discouraged (198 steps).
 Proof modification of "lcmn0valOLD" is discouraged (49 steps).
 Proof modification of "lcmsOLD" is discouraged (68 steps).
 Proof modification of "lcmscllemOLD" is discouraged (145 steps).
