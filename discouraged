@@ -9345,7 +9345,6 @@
 "ltasr" is used by "supsrlem".
 "ltbtwnnq" is used by "nqpr".
 "ltbtwnnq" is used by "reclem2pr".
-"ltdiv2OLD" is used by "basellem1".
 "ltdiv2OLD" is used by "sin01gt0".
 "ltdiv2OLD" is used by "sincos6thpi".
 "ltdiv2OLD" is used by "tanord1".
@@ -16746,7 +16745,7 @@ New usage of "ltapr" is discouraged (7 uses).
 New usage of "ltaprlem" is discouraged (1 uses).
 New usage of "ltasr" is discouraged (7 uses).
 New usage of "ltbtwnnq" is discouraged (2 uses).
-New usage of "ltdiv2OLD" is discouraged (4 uses).
+New usage of "ltdiv2OLD" is discouraged (3 uses).
 New usage of "lterpq" is discouraged (3 uses).
 New usage of "ltexnq" is discouraged (5 uses).
 New usage of "ltexpi" is discouraged (2 uses).
