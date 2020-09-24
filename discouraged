@@ -1521,6 +1521,7 @@
 "bafval" is used by "sspba".
 "basendx" is used by "1strstr".
 "basendx" is used by "2strstr".
+"basendx" is used by "2strstr1".
 "basendx" is used by "catstr".
 "basendx" is used by "eengstr".
 "basendx" is used by "grpbasex".
@@ -4707,6 +4708,8 @@
 "df-nv" is used by "isnvlem".
 "df-nv" is used by "nvss".
 "df-oc" is used by "ocval".
+"df-ovolOLD" is used by "ovolvalOLD".
+"df-pellfundOLD" is used by "pellfundvalOLD".
 "df-ph" is used by "isphg".
 "df-ph" is used by "phnv".
 "df-piOLD" is used by "pilem2OLD".
@@ -8567,13 +8570,12 @@
 "infmrclOLD" is used by "minvecolem4c".
 "infmrclOLD" is used by "minvecolem5".
 "infmrclOLD" is used by "minvecolem6".
-"infmrclOLD" is used by "pellfundre".
 "infmrclOLD" is used by "pilem2OLD".
 "infmrclOLD" is used by "pilem3OLD".
 "infmrclOLD" is used by "pntlem3".
 "infmrclOLD" is used by "supminfOLD".
 "infmrclOLD" is used by "taupi".
-"infmrgelbOLD" is used by "infmrgelbi".
+"infmrgelbOLD" is used by "infmrgelbiOLD".
 "infmrgelbOLD" is used by "infmxrreOLD".
 "infmrgelbOLD" is used by "minveclem2".
 "infmrgelbOLD" is used by "minveclem3b".
@@ -8595,7 +8597,6 @@
 "infmrlbOLD" is used by "minveclem4".
 "infmrlbOLD" is used by "minvecolem2".
 "infmrlbOLD" is used by "minvecolem4".
-"infmrlbOLD" is used by "pellfundlb".
 "infmrlbOLD" is used by "pilem2OLD".
 "infmrlbOLD" is used by "pilem3OLD".
 "infmrlbOLD" is used by "pntlem3".
@@ -8626,7 +8627,7 @@
 "infmssuzclOLD" is used by "odlem1".
 "infmssuzclOLD" is used by "odlem2".
 "infmssuzclOLD" is used by "odzcllem".
-"infmssuzclOLD" is used by "ovolicc2lem4".
+"infmssuzclOLD" is used by "ovolicc2lem4OLD".
 "infmssuzclOLD" is used by "ramcl2lemOLD".
 "infmssuzclOLD" is used by "ramtclOLD".
 "infmssuzclOLD" is used by "uzwo3".
@@ -8647,7 +8648,7 @@
 "infmssuzleOLD" is used by "lcmsledvdsOLD".
 "infmssuzleOLD" is used by "odlem2".
 "infmssuzleOLD" is used by "odzdvds".
-"infmssuzleOLD" is used by "ovolicc2lem4".
+"infmssuzleOLD" is used by "ovolicc2lem4OLD".
 "infmssuzleOLD" is used by "ramcl2lemOLD".
 "infmssuzleOLD" is used by "ramtubOLD".
 "infmssuzleOLD" is used by "uzwo3".
@@ -8669,29 +8670,21 @@
 "infmxrclOLD" is used by "nmoffn".
 "infmxrclOLD" is used by "nmofval".
 "infmxrclOLD" is used by "nmolb".
-"infmxrclOLD" is used by "ovolcl".
 "infmxrgelbOLD" is used by "imasdsf1olem".
 "infmxrgelbOLD" is used by "infmxrreOLD".
 "infmxrgelbOLD" is used by "infmxrssOLD".
-"infmxrgelbOLD" is used by "ismblfin".
 "infmxrgelbOLD" is used by "ixxlbOLD".
 "infmxrgelbOLD" is used by "limsupleOLD".
 "infmxrgelbOLD" is used by "limsupval2OLD".
 "infmxrgelbOLD" is used by "metdsf".
 "infmxrgelbOLD" is used by "metdsge".
 "infmxrgelbOLD" is used by "nmogelb".
-"infmxrgelbOLD" is used by "ovolge0".
-"infmxrgelbOLD" is used by "ovolgelb".
-"infmxrgelbOLD" is used by "ovolicc2".
-"infmxrgelbOLD" is used by "ovolsslem".
 "infmxrlbOLD" is used by "imasdsf1olem".
 "infmxrlbOLD" is used by "infmxrreOLD".
 "infmxrlbOLD" is used by "infmxrssOLD".
 "infmxrlbOLD" is used by "infxrmnf".
 "infmxrlbOLD" is used by "ixxlbOLD".
 "infmxrlbOLD" is used by "limsupval2OLD".
-"infmxrlbOLD" is used by "ovollb".
-"infmxrlbOLD" is used by "ovolsslem".
 "infmxrreOLD" is used by "mbflimsupOLD".
 "infrglbOLD" is used by "climinfOLD".
 "int2" is used by "sspwimpVD".
@@ -14164,7 +14157,7 @@ New usage of "baerlem5abmN" is discouraged (0 uses).
 New usage of "baerlem5amN" is discouraged (0 uses).
 New usage of "baerlem5bmN" is discouraged (0 uses).
 New usage of "bafval" is discouraged (43 uses).
-New usage of "basendx" is discouraged (23 uses).
+New usage of "basendx" is discouraged (24 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bcs" is discouraged (6 uses).
 New usage of "bcs2" is discouraged (2 uses).
@@ -15191,6 +15184,8 @@ New usage of "df-nq" is discouraged (5 uses).
 New usage of "df-nr" is discouraged (24 uses).
 New usage of "df-nv" is discouraged (2 uses).
 New usage of "df-oc" is discouraged (1 uses).
+New usage of "df-ovolOLD" is discouraged (1 uses).
+New usage of "df-pellfundOLD" is discouraged (1 uses).
 New usage of "df-ph" is discouraged (2 uses).
 New usage of "df-piOLD" is discouraged (2 uses).
 New usage of "df-pjh" is discouraged (2 uses).
@@ -16409,15 +16404,16 @@ New usage of "indistps2ALT" is discouraged (0 uses).
 New usage of "indistpsALT" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
-New usage of "infmrclOLD" is discouraged (20 uses).
+New usage of "infmrclOLD" is discouraged (19 uses).
 New usage of "infmrgelbOLD" is discouraged (14 uses).
-New usage of "infmrlbOLD" is discouraged (14 uses).
+New usage of "infmrgelbiOLD" is discouraged (0 uses).
+New usage of "infmrlbOLD" is discouraged (13 uses).
 New usage of "infmssuzclOLD" is discouraged (32 uses).
 New usage of "infmssuzleOLD" is discouraged (19 uses).
 New usage of "infmsupOLD" is discouraged (3 uses).
-New usage of "infmxrclOLD" is discouraged (15 uses).
-New usage of "infmxrgelbOLD" is discouraged (14 uses).
-New usage of "infmxrlbOLD" is discouraged (8 uses).
+New usage of "infmxrclOLD" is discouraged (14 uses).
+New usage of "infmxrgelbOLD" is discouraged (9 uses).
+New usage of "infmxrlbOLD" is discouraged (6 uses).
 New usage of "infmxrreOLD" is discouraged (1 uses).
 New usage of "infmxrssOLD" is discouraged (0 uses).
 New usage of "infpssALT" is discouraged (0 uses).
@@ -17410,6 +17406,8 @@ New usage of "osumcllem9N" is discouraged (1 uses).
 New usage of "osumcor2i" is discouraged (1 uses).
 New usage of "osumcori" is discouraged (0 uses).
 New usage of "osumi" is discouraged (10 uses).
+New usage of "ovolicc2lem4OLD" is discouraged (0 uses).
+New usage of "ovolvalOLD" is discouraged (0 uses).
 New usage of "p0exALT" is discouraged (0 uses).
 New usage of "padd12N" is discouraged (2 uses).
 New usage of "padd4N" is discouraged (1 uses).
@@ -17434,6 +17432,7 @@ New usage of "pclssidN" is discouraged (3 uses).
 New usage of "pclun2N" is discouraged (0 uses).
 New usage of "pclunN" is discouraged (1 uses).
 New usage of "pclvalN" is discouraged (6 uses).
+New usage of "pellfundvalOLD" is discouraged (0 uses).
 New usage of "perpdragALT" is discouraged (0 uses).
 New usage of "pexmidALTN" is discouraged (0 uses).
 New usage of "pexmidN" is discouraged (0 uses).
@@ -19449,6 +19448,7 @@ Proof modification of "indistps2ALT" is discouraged (43 steps).
 Proof modification of "indistpsALT" is discouraged (64 steps).
 Proof modification of "infmrclOLD" is discouraged (329 steps).
 Proof modification of "infmrgelbOLD" is discouraged (329 steps).
+Proof modification of "infmrgelbiOLD" is discouraged (97 steps).
 Proof modification of "infmrlbOLD" is discouraged (254 steps).
 Proof modification of "infmssuzclOLD" is discouraged (62 steps).
 Proof modification of "infmssuzleOLD" is discouraged (79 steps).
@@ -19714,7 +19714,10 @@ Proof modification of "orbi1rVD" is discouraged (101 steps).
 Proof modification of "ordelordALT" is discouraged (128 steps).
 Proof modification of "ordelordALTVD" is discouraged (202 steps).
 Proof modification of "ornldOLD" is discouraged (25 steps).
+Proof modification of "ovolicc2lem4OLD" is discouraged (2737 steps).
+Proof modification of "ovolvalOLD" is discouraged (132 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
+Proof modification of "pellfundvalOLD" is discouraged (64 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
 Proof modification of "perpdragALT" is discouraged (241 steps).
 Proof modification of "pilem2OLD" is discouraged (769 steps).
