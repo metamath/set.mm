@@ -4592,6 +4592,7 @@
 "df-i" is used by "axcnre".
 "df-i" is used by "axi2m1".
 "df-i" is used by "axicn".
+"df-ig1pOLD" is used by "ig1pvalOLD".
 "df-ims" is used by "imsval".
 "df-iop" is used by "dfiop2".
 "df-iop" is used by "hoid1i".
@@ -4660,6 +4661,7 @@
 "df-mr" is used by "mulsrpr".
 "df-mul" is used by "axmulf".
 "df-mul" is used by "mulcnsr".
+"df-nghmOLD" is used by "nghmfvalOLD".
 "df-ni" is used by "dmaddpi".
 "df-ni" is used by "dmmulpi".
 "df-ni" is used by "elni".
@@ -4670,6 +4672,8 @@
 "df-nlfn" is used by "nlfnval".
 "df-nmcv" is used by "nmcvfval".
 "df-nmfn" is used by "nmfnval".
+"df-nmoOLD" is used by "nmoffnOLD".
+"df-nmoOLD" is used by "nmofvalOLD".
 "df-nmoo" is used by "nmoofval".
 "df-nmop" is used by "hhnmoi".
 "df-nmop" is used by "nmopval".
@@ -8351,6 +8355,15 @@
 "ifhvhv0" is used by "spansn".
 "ifhvhv0" is used by "spansncv".
 "ifhvhv0" is used by "spansnj".
+"ig1pclOLD" is used by "ig1pdvdsOLD".
+"ig1pclOLD" is used by "ig1prspOLD".
+"ig1pdvdsOLD" is used by "ig1prspOLD".
+"ig1peuOLD" is used by "ig1pval3OLD".
+"ig1pval2OLD" is used by "ig1pclOLD".
+"ig1pval3OLD" is used by "ig1pclOLD".
+"ig1pval3OLD" is used by "ig1pdvdsOLD".
+"ig1pvalOLD" is used by "ig1pval2OLD".
+"ig1pvalOLD" is used by "ig1pval3OLD".
 "iidn3" is used by "trintALT".
 "iin1" is used by "sspwimp".
 "iin1" is used by "sspwimpcf".
@@ -8619,8 +8632,8 @@
 "infmssuzclOLD" is used by "ftalem5".
 "infmssuzclOLD" is used by "gexlem1".
 "infmssuzclOLD" is used by "gexlem2".
-"infmssuzclOLD" is used by "ig1pdvds".
-"infmssuzclOLD" is used by "ig1peu".
+"infmssuzclOLD" is used by "ig1pdvdsOLD".
+"infmssuzclOLD" is used by "ig1peuOLD".
 "infmssuzclOLD" is used by "ioodvbdlimc1lem1".
 "infmssuzclOLD" is used by "lcmfvalOLD".
 "infmssuzclOLD" is used by "lcmscllemOLD".
@@ -8643,8 +8656,8 @@
 "infmssuzleOLD" is used by "elaa2lem".
 "infmssuzleOLD" is used by "ftalem5".
 "infmssuzleOLD" is used by "gexlem2".
-"infmssuzleOLD" is used by "ig1pdvds".
-"infmssuzleOLD" is used by "ig1peu".
+"infmssuzleOLD" is used by "ig1pdvdsOLD".
+"infmssuzleOLD" is used by "ig1peuOLD".
 "infmssuzleOLD" is used by "lcmsledvdsOLD".
 "infmssuzleOLD" is used by "odlem2".
 "infmssuzleOLD" is used by "odzdvds".
@@ -8666,10 +8679,10 @@
 "infmxrclOLD" is used by "limsupclOLD".
 "infmxrclOLD" is used by "limsupval2OLD".
 "infmxrclOLD" is used by "metdsf".
-"infmxrclOLD" is used by "nmof".
-"infmxrclOLD" is used by "nmoffn".
-"infmxrclOLD" is used by "nmofval".
-"infmxrclOLD" is used by "nmolb".
+"infmxrclOLD" is used by "nmofOLD".
+"infmxrclOLD" is used by "nmoffnOLD".
+"infmxrclOLD" is used by "nmofvalOLD".
+"infmxrclOLD" is used by "nmolbOLD".
 "infmxrgelbOLD" is used by "imasdsf1olem".
 "infmxrgelbOLD" is used by "infmxrreOLD".
 "infmxrgelbOLD" is used by "infmxrssOLD".
@@ -8678,7 +8691,7 @@
 "infmxrgelbOLD" is used by "limsupval2OLD".
 "infmxrgelbOLD" is used by "metdsf".
 "infmxrgelbOLD" is used by "metdsge".
-"infmxrgelbOLD" is used by "nmogelb".
+"infmxrgelbOLD" is used by "nmogelbOLD".
 "infmxrlbOLD" is used by "imasdsf1olem".
 "infmxrlbOLD" is used by "infmxrreOLD".
 "infmxrlbOLD" is used by "infmxrssOLD".
@@ -10188,6 +10201,8 @@
 "nmobndi" is used by "nmobndseqi".
 "nmobndi" is used by "nmobndseqiALT".
 "nmobndi" is used by "nmounbi".
+"nmoffnOLD" is used by "isnghmOLD".
+"nmoffnOLD" is used by "nghmfvalOLD".
 "nmogtmnf" is used by "nmblore".
 "nmogtmnf" is used by "nmobndi".
 "nmogtmnf" is used by "ubthlem3".
@@ -15147,6 +15162,7 @@ New usage of "df-hosum" is discouraged (1 uses).
 New usage of "df-hst" is discouraged (1 uses).
 New usage of "df-hvsub" is discouraged (3 uses).
 New usage of "df-i" is discouraged (4 uses).
+New usage of "df-ig1pOLD" is discouraged (1 uses).
 New usage of "df-ims" is discouraged (1 uses).
 New usage of "df-iop" is discouraged (7 uses).
 New usage of "df-ipo" is discouraged (1 uses).
@@ -15177,10 +15193,12 @@ New usage of "df-mpq" is discouraged (3 uses).
 New usage of "df-mq" is discouraged (2 uses).
 New usage of "df-mr" is discouraged (2 uses).
 New usage of "df-mul" is discouraged (2 uses).
+New usage of "df-nghmOLD" is discouraged (1 uses).
 New usage of "df-ni" is discouraged (7 uses).
 New usage of "df-nlfn" is discouraged (1 uses).
 New usage of "df-nmcv" is discouraged (1 uses).
 New usage of "df-nmfn" is discouraged (1 uses).
+New usage of "df-nmoOLD" is discouraged (2 uses).
 New usage of "df-nmoo" is discouraged (1 uses).
 New usage of "df-nmop" is discouraged (2 uses).
 New usage of "df-np" is discouraged (3 uses).
@@ -16381,6 +16399,13 @@ New usage of "idunop" is discouraged (1 uses).
 New usage of "ifchhv" is discouraged (22 uses).
 New usage of "ifeq123d" is discouraged (3 uses).
 New usage of "ifhvhv0" is discouraged (48 uses).
+New usage of "ig1pclOLD" is discouraged (2 uses).
+New usage of "ig1pdvdsOLD" is discouraged (1 uses).
+New usage of "ig1peuOLD" is discouraged (1 uses).
+New usage of "ig1prspOLD" is discouraged (0 uses).
+New usage of "ig1pval2OLD" is discouraged (1 uses).
+New usage of "ig1pval3OLD" is discouraged (2 uses).
+New usage of "ig1pvalOLD" is discouraged (2 uses).
 New usage of "iidn3" is discouraged (1 uses).
 New usage of "iin1" is discouraged (3 uses).
 New usage of "iin2" is discouraged (0 uses).
@@ -17121,6 +17146,7 @@ New usage of "nmlnoubi" is discouraged (0 uses).
 New usage of "nmobndi" is discouraged (4 uses).
 New usage of "nmobndseqi" is discouraged (0 uses).
 New usage of "nmobndseqiALT" is discouraged (0 uses).
+New usage of "nmoffnOLD" is discouraged (2 uses).
 New usage of "nmogtmnf" is discouraged (3 uses).
 New usage of "nmoo0" is discouraged (2 uses).
 New usage of "nmoofval" is discouraged (2 uses).
@@ -19432,6 +19458,13 @@ Proof modification of "idn1" is discouraged (5 steps).
 Proof modification of "idn2" is discouraged (7 steps).
 Proof modification of "idn3" is discouraged (15 steps).
 Proof modification of "idref" is discouraged (92 steps).
+Proof modification of "ig1pclOLD" is discouraged (120 steps).
+Proof modification of "ig1pdvdsOLD" is discouraged (752 steps).
+Proof modification of "ig1peuOLD" is discouraged (979 steps).
+Proof modification of "ig1prspOLD" is discouraged (131 steps).
+Proof modification of "ig1pval2OLD" is discouraged (89 steps).
+Proof modification of "ig1pval3OLD" is discouraged (171 steps).
+Proof modification of "ig1pvalOLD" is discouraged (345 steps).
 Proof modification of "iidn3" is discouraged (8 steps).
 Proof modification of "iin1" is discouraged (1 steps).
 Proof modification of "iin2" is discouraged (1 steps).
@@ -19676,6 +19709,7 @@ Proof modification of "nic-stdmp" is discouraged (22 steps).
 Proof modification of "nic-swap" is discouraged (28 steps).
 Proof modification of "nmlnop0iALT" is discouraged (573 steps).
 Proof modification of "nmobndseqiALT" is discouraged (189 steps).
+Proof modification of "nmoffnOLD" is discouraged (111 steps).
 Proof modification of "nmopsetretALT" is discouraged (76 steps).
 Proof modification of "nmopub2tALT" is discouraged (240 steps).
 Proof modification of "nmounbseqiALT" is discouraged (146 steps).
