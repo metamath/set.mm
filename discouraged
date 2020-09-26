@@ -8880,6 +8880,10 @@
 "ismndo1" is used by "ismndo2".
 "ismndo1" is used by "rngomndo".
 "ismndo2" is used by "grpomndo".
+"isnghm2OLD" is used by "isnghm3OLD".
+"isnghm2OLD" is used by "nmoixOLD".
+"isnghmOLD" is used by "isnghm2OLD".
+"isnghmOLD" is used by "nmoiOLD".
 "isnv" is used by "isnvi".
 "isnv" is used by "nvi".
 "isnvi" is used by "cnnv".
@@ -10034,6 +10038,7 @@
 "nfa1-o" is used by "ax12eq".
 "nfa1-o" is used by "ax12v2-o".
 "nfa1-o" is used by "axc11n-16".
+"nghmfvalOLD" is used by "isnghmOLD".
 "nic-ax" is used by "lukshef-ax1".
 "nic-ax" is used by "nic-id".
 "nic-ax" is used by "nic-idlem1".
@@ -10201,11 +10206,29 @@
 "nmobndi" is used by "nmobndseqi".
 "nmobndi" is used by "nmobndseqiALT".
 "nmobndi" is used by "nmounbi".
+"nmoclOLD" is used by "isnghm3OLD".
+"nmoclOLD" is used by "nmoi2OLD".
+"nmoclOLD" is used by "nmoixOLD".
+"nmoclOLD" is used by "nmoleubOLD".
+"nmofOLD" is used by "isnghmOLD".
+"nmofOLD" is used by "nmoclOLD".
 "nmoffnOLD" is used by "isnghmOLD".
 "nmoffnOLD" is used by "nghmfvalOLD".
+"nmofvalOLD" is used by "nmofOLD".
+"nmofvalOLD" is used by "nmovalOLD".
+"nmoge0OLD" is used by "isnghm3OLD".
+"nmoge0OLD" is used by "nmoiOLD".
+"nmoge0OLD" is used by "nmoixOLD".
+"nmogelbOLD" is used by "nmoge0OLD".
+"nmogelbOLD" is used by "nmoiOLD".
+"nmogelbOLD" is used by "nmolbOLD".
 "nmogtmnf" is used by "nmblore".
 "nmogtmnf" is used by "nmobndi".
 "nmogtmnf" is used by "ubthlem3".
+"nmoi2OLD" is used by "nmoleubOLD".
+"nmoiOLD" is used by "nmoixOLD".
+"nmoixOLD" is used by "nmoi2OLD".
+"nmolbOLD" is used by "nmoleubOLD".
 "nmoo0" is used by "0blo".
 "nmoo0" is used by "nmlno0lem".
 "nmoofval" is used by "hhnmoi".
@@ -10331,6 +10354,8 @@
 "nmoubi" is used by "ubthlem2".
 "nmounbi" is used by "nmounbseqi".
 "nmounbi" is used by "nmounbseqiALT".
+"nmovalOLD" is used by "nmogelbOLD".
+"nmovalOLD" is used by "nmolbOLD".
 "nmoxr" is used by "isblo3i".
 "nmoxr" is used by "nmblore".
 "nmoxr" is used by "nmlnogt0".
@@ -16537,6 +16562,9 @@ New usage of "ismndOLD" is discouraged (0 uses).
 New usage of "ismndo" is discouraged (1 uses).
 New usage of "ismndo1" is discouraged (2 uses).
 New usage of "ismndo2" is discouraged (1 uses).
+New usage of "isnghm2OLD" is discouraged (2 uses).
+New usage of "isnghm3OLD" is discouraged (0 uses).
+New usage of "isnghmOLD" is discouraged (2 uses).
 New usage of "isnv" is discouraged (2 uses).
 New usage of "isnvi" is discouraged (3 uses).
 New usage of "isnvlem" is discouraged (1 uses).
@@ -17074,6 +17102,7 @@ New usage of "nfeqOLD" is discouraged (0 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfnfcALT" is discouraged (0 uses).
 New usage of "nfrexOLD" is discouraged (0 uses).
+New usage of "nghmfvalOLD" is discouraged (1 uses).
 New usage of "nic-ax" is discouraged (7 uses).
 New usage of "nic-axALT" is discouraged (0 uses).
 New usage of "nic-bi1" is discouraged (3 uses).
@@ -17146,8 +17175,18 @@ New usage of "nmlnoubi" is discouraged (0 uses).
 New usage of "nmobndi" is discouraged (4 uses).
 New usage of "nmobndseqi" is discouraged (0 uses).
 New usage of "nmobndseqiALT" is discouraged (0 uses).
+New usage of "nmoclOLD" is discouraged (4 uses).
+New usage of "nmofOLD" is discouraged (2 uses).
 New usage of "nmoffnOLD" is discouraged (2 uses).
+New usage of "nmofvalOLD" is discouraged (2 uses).
+New usage of "nmoge0OLD" is discouraged (3 uses).
+New usage of "nmogelbOLD" is discouraged (3 uses).
 New usage of "nmogtmnf" is discouraged (3 uses).
+New usage of "nmoi2OLD" is discouraged (1 uses).
+New usage of "nmoiOLD" is discouraged (1 uses).
+New usage of "nmoixOLD" is discouraged (1 uses).
+New usage of "nmolbOLD" is discouraged (1 uses).
+New usage of "nmoleubOLD" is discouraged (0 uses).
 New usage of "nmoo0" is discouraged (2 uses).
 New usage of "nmoofval" is discouraged (2 uses).
 New usage of "nmooge0" is discouraged (2 uses).
@@ -17193,6 +17232,7 @@ New usage of "nmoubi" is discouraged (3 uses).
 New usage of "nmounbi" is discouraged (2 uses).
 New usage of "nmounbseqi" is discouraged (0 uses).
 New usage of "nmounbseqiALT" is discouraged (0 uses).
+New usage of "nmovalOLD" is discouraged (2 uses).
 New usage of "nmoxr" is discouraged (7 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nn0indALT" is discouraged (3 uses).
@@ -19511,6 +19551,9 @@ Proof modification of "isfusgraclALT" is discouraged (119 steps).
 Proof modification of "ismgmALT" is discouraged (53 steps).
 Proof modification of "ismgmOLD" is discouraged (292 steps).
 Proof modification of "ismndOLD" is discouraged (377 steps).
+Proof modification of "isnghm2OLD" is discouraged (44 steps).
+Proof modification of "isnghm3OLD" is discouraged (77 steps).
+Proof modification of "isnghmOLD" is discouraged (135 steps).
 Proof modification of "isosctrlem1ALT" is discouraged (363 steps).
 Proof modification of "isrnsigaOLD" is discouraged (202 steps).
 Proof modification of "issgrpALT" is discouraged (53 steps).
@@ -19682,6 +19725,7 @@ Proof modification of "nfeqOLD" is discouraged (37 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfnfcALT" is discouraged (30 steps).
 Proof modification of "nfrexOLD" is discouraged (29 steps).
+Proof modification of "nghmfvalOLD" is discouraged (156 steps).
 Proof modification of "nic-ax" is discouraged (142 steps).
 Proof modification of "nic-axALT" is discouraged (245 steps).
 Proof modification of "nic-bi1" is discouraged (22 steps).
@@ -19709,10 +19753,21 @@ Proof modification of "nic-stdmp" is discouraged (22 steps).
 Proof modification of "nic-swap" is discouraged (28 steps).
 Proof modification of "nmlnop0iALT" is discouraged (573 steps).
 Proof modification of "nmobndseqiALT" is discouraged (189 steps).
+Proof modification of "nmoclOLD" is discouraged (31 steps).
+Proof modification of "nmofOLD" is discouraged (113 steps).
 Proof modification of "nmoffnOLD" is discouraged (111 steps).
+Proof modification of "nmofvalOLD" is discouraged (261 steps).
+Proof modification of "nmoge0OLD" is discouraged (107 steps).
+Proof modification of "nmogelbOLD" is discouraged (130 steps).
+Proof modification of "nmoi2OLD" is discouraged (327 steps).
+Proof modification of "nmoiOLD" is discouraged (519 steps).
+Proof modification of "nmoixOLD" is discouraged (465 steps).
+Proof modification of "nmolbOLD" is discouraged (203 steps).
+Proof modification of "nmoleubOLD" is discouraged (585 steps).
 Proof modification of "nmopsetretALT" is discouraged (76 steps).
 Proof modification of "nmopub2tALT" is discouraged (240 steps).
 Proof modification of "nmounbseqiALT" is discouraged (146 steps).
+Proof modification of "nmovalOLD" is discouraged (153 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nn0indALT" is discouraged (15 steps).
 Proof modification of "nn0infmOLD" is discouraged (22 steps).
