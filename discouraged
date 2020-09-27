@@ -4528,6 +4528,7 @@
 "df-gcdOLD" is used by "ee7.2aOLD".
 "df-gdiv" is used by "grpodivfval".
 "df-gdiv" is used by "vsfval".
+"df-gexOLD" is used by "gexvalOLD".
 "df-ghomOLD" is used by "elghomlem1OLD".
 "df-gid" is used by "fngid".
 "df-gid" is used by "gidval".
@@ -4712,6 +4713,7 @@
 "df-nv" is used by "isnvlem".
 "df-nv" is used by "nvss".
 "df-oc" is used by "ocval".
+"df-odzOLD" is used by "odzvalOLD".
 "df-ovolOLD" is used by "ovolvalOLD".
 "df-pellfundOLD" is used by "pellfundvalOLD".
 "df-ph" is used by "isphg".
@@ -6078,6 +6080,8 @@
 "genpv" is used by "genpelv".
 "genpv" is used by "mpv".
 "genpv" is used by "plpv".
+"gexvalOLD" is used by "gexlem1OLD".
+"gexvalOLD" is used by "gexlem2OLD".
 "ggen31" is used by "gen31".
 "ggen31" is used by "onfrALTlem2".
 "ghabloOLD" is used by "ghsubgolemOLD".
@@ -8630,8 +8634,8 @@
 "infmssuzclOLD" is used by "fourierdlem31".
 "infmssuzclOLD" is used by "ftalem4".
 "infmssuzclOLD" is used by "ftalem5".
-"infmssuzclOLD" is used by "gexlem1".
-"infmssuzclOLD" is used by "gexlem2".
+"infmssuzclOLD" is used by "gexlem1OLD".
+"infmssuzclOLD" is used by "gexlem2OLD".
 "infmssuzclOLD" is used by "ig1pdvdsOLD".
 "infmssuzclOLD" is used by "ig1peuOLD".
 "infmssuzclOLD" is used by "ioodvbdlimc1lem1".
@@ -8639,7 +8643,7 @@
 "infmssuzclOLD" is used by "lcmscllemOLD".
 "infmssuzclOLD" is used by "odlem1".
 "infmssuzclOLD" is used by "odlem2".
-"infmssuzclOLD" is used by "odzcllem".
+"infmssuzclOLD" is used by "odzcllemOLD".
 "infmssuzclOLD" is used by "ovolicc2lem4OLD".
 "infmssuzclOLD" is used by "ramcl2lemOLD".
 "infmssuzclOLD" is used by "ramtclOLD".
@@ -8655,12 +8659,12 @@
 "infmssuzleOLD" is used by "divalglem5".
 "infmssuzleOLD" is used by "elaa2lem".
 "infmssuzleOLD" is used by "ftalem5".
-"infmssuzleOLD" is used by "gexlem2".
+"infmssuzleOLD" is used by "gexlem2OLD".
 "infmssuzleOLD" is used by "ig1pdvdsOLD".
 "infmssuzleOLD" is used by "ig1peuOLD".
 "infmssuzleOLD" is used by "lcmsledvdsOLD".
 "infmssuzleOLD" is used by "odlem2".
-"infmssuzleOLD" is used by "odzdvds".
+"infmssuzleOLD" is used by "odzdvdsOLD".
 "infmssuzleOLD" is used by "ovolicc2lem4OLD".
 "infmssuzleOLD" is used by "ramcl2lemOLD".
 "infmssuzleOLD" is used by "ramtubOLD".
@@ -11232,6 +11236,13 @@
 "ocval" is used by "occon".
 "ocval" is used by "ocel".
 "ocval" is used by "ocsh".
+"odzclOLD" is used by "odzdvdsOLD".
+"odzcllemOLD" is used by "odzclOLD".
+"odzcllemOLD" is used by "odzidOLD".
+"odzdvdsOLD" is used by "odzphiOLD".
+"odzidOLD" is used by "odzdvdsOLD".
+"odzvalOLD" is used by "odzcllemOLD".
+"odzvalOLD" is used by "odzdvdsOLD".
 "oldmm3N" is used by "cmtbr3N".
 "oldmm3N" is used by "lhprelat3N".
 "omlfh1N" is used by "omlfh3N".
@@ -15162,6 +15173,7 @@ New usage of "df-exid" is discouraged (1 uses).
 New usage of "df-fld" is discouraged (3 uses).
 New usage of "df-gcdOLD" is discouraged (1 uses).
 New usage of "df-gdiv" is discouraged (2 uses).
+New usage of "df-gexOLD" is discouraged (1 uses).
 New usage of "df-ghomOLD" is discouraged (1 uses).
 New usage of "df-gid" is discouraged (2 uses).
 New usage of "df-ginv" is discouraged (1 uses).
@@ -15231,6 +15243,7 @@ New usage of "df-nq" is discouraged (5 uses).
 New usage of "df-nr" is discouraged (24 uses).
 New usage of "df-nv" is discouraged (2 uses).
 New usage of "df-oc" is discouraged (1 uses).
+New usage of "df-odzOLD" is discouraged (1 uses).
 New usage of "df-ovolOLD" is discouraged (1 uses).
 New usage of "df-pellfundOLD" is discouraged (1 uses).
 New usage of "df-ph" is discouraged (2 uses).
@@ -15874,6 +15887,9 @@ New usage of "genpnnp" is discouraged (1 uses).
 New usage of "genpprecl" is discouraged (8 uses).
 New usage of "genpss" is discouraged (1 uses).
 New usage of "genpv" is discouraged (3 uses).
+New usage of "gexlem1OLD" is discouraged (0 uses).
+New usage of "gexlem2OLD" is discouraged (0 uses).
+New usage of "gexvalOLD" is discouraged (2 uses).
 New usage of "ggen22" is discouraged (0 uses).
 New usage of "ggen31" is discouraged (2 uses).
 New usage of "ghabloOLD" is discouraged (1 uses).
@@ -17412,6 +17428,12 @@ New usage of "ocorth" is discouraged (3 uses).
 New usage of "ocsh" is discouraged (6 uses).
 New usage of "ocss" is discouraged (11 uses).
 New usage of "ocval" is discouraged (4 uses).
+New usage of "odzclOLD" is discouraged (1 uses).
+New usage of "odzcllemOLD" is discouraged (2 uses).
+New usage of "odzdvdsOLD" is discouraged (1 uses).
+New usage of "odzidOLD" is discouraged (1 uses).
+New usage of "odzphiOLD" is discouraged (0 uses).
+New usage of "odzvalOLD" is discouraged (2 uses).
 New usage of "ogrpinvOLD" is discouraged (0 uses).
 New usage of "oldmm3N" is discouraged (2 uses).
 New usage of "olposN" is discouraged (0 uses).
@@ -19463,6 +19485,9 @@ Proof modification of "gen21" is discouraged (16 steps).
 Proof modification of "gen21nv" is discouraged (18 steps).
 Proof modification of "gen22" is discouraged (23 steps).
 Proof modification of "gen31" is discouraged (19 steps).
+Proof modification of "gexlem1OLD" is discouraged (163 steps).
+Proof modification of "gexlem2OLD" is discouraged (206 steps).
+Proof modification of "gexvalOLD" is discouraged (232 steps).
 Proof modification of "ggen22" is discouraged (13 steps).
 Proof modification of "ggen31" is discouraged (22 steps).
 Proof modification of "ghabloOLD" is discouraged (348 steps).
@@ -19781,6 +19806,12 @@ Proof modification of "normlem7tALT" is discouraged (177 steps).
 Proof modification of "notnot2ALT" is discouraged (12 steps).
 Proof modification of "notnot2ALT2" is discouraged (2 steps).
 Proof modification of "notnot2ALTVD" is discouraged (34 steps).
+Proof modification of "odzclOLD" is discouraged (34 steps).
+Proof modification of "odzcllemOLD" is discouraged (230 steps).
+Proof modification of "odzdvdsOLD" is discouraged (781 steps).
+Proof modification of "odzidOLD" is discouraged (34 steps).
+Proof modification of "odzphiOLD" is discouraged (103 steps).
+Proof modification of "odzvalOLD" is discouraged (263 steps).
 Proof modification of "ogrpinvOLD" is discouraged (149 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
 Proof modification of "onfrALT" is discouraged (88 steps).
