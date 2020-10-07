@@ -1523,6 +1523,96 @@
 "bafval" is used by "nvzcl".
 "bafval" is used by "phpar".
 "bafval" is used by "sspba".
+"ballotlem1cOLD" is used by "ballotlem7OLD".
+"ballotlem1riOLD" is used by "ballotlem7OLD".
+"ballotlem7OLD" is used by "ballotlem8OLD".
+"ballotlem8OLD" is used by "ballotthOLD".
+"ballotlemfgOLD" is used by "ballotlemfrceqOLD".
+"ballotlemfgOLD" is used by "ballotlemfrciOLD".
+"ballotlemfrcOLD" is used by "ballotlemfrceqOLD".
+"ballotlemfrcOLD" is used by "ballotlemfrciOLD".
+"ballotlemfrceqOLD" is used by "ballotlemfrcn0OLD".
+"ballotlemfrciOLD" is used by "ballotlemircOLD".
+"ballotlemfrciOLD" is used by "ballotlemrcOLD".
+"ballotlemfrcn0OLD" is used by "ballotlemircOLD".
+"ballotlemgunOLD" is used by "ballotlemfrceqOLD".
+"ballotlemgvalOLD" is used by "ballotlemfgOLD".
+"ballotlemgvalOLD" is used by "ballotlemfrcOLD".
+"ballotlemgvalOLD" is used by "ballotlemgunOLD".
+"ballotlemi1OLD" is used by "ballotlemicOLD".
+"ballotlemiOLD" is used by "ballotlemfrcn0OLD".
+"ballotlemiOLD" is used by "ballotlemiexOLD".
+"ballotlemiOLD" is used by "ballotlemiminOLD".
+"ballotlemiOLD" is used by "ballotlemircOLD".
+"ballotlemicOLD" is used by "ballotlem7OLD".
+"ballotlemieqOLD" is used by "ballotlemrinv0OLD".
+"ballotlemiexOLD" is used by "ballotlem1cOLD".
+"ballotlemiexOLD" is used by "ballotlem1riOLD".
+"ballotlemiexOLD" is used by "ballotlemfrcOLD".
+"ballotlemiexOLD" is used by "ballotlemfrceqOLD".
+"ballotlemiexOLD" is used by "ballotlemfrciOLD".
+"ballotlemiexOLD" is used by "ballotlemfrcn0OLD".
+"ballotlemiexOLD" is used by "ballotlemi1OLD".
+"ballotlemiexOLD" is used by "ballotlemicOLD".
+"ballotlemiexOLD" is used by "ballotlemiiOLD".
+"ballotlemiexOLD" is used by "ballotlemiminOLD".
+"ballotlemiexOLD" is used by "ballotlemircOLD".
+"ballotlemiexOLD" is used by "ballotlemrcOLD".
+"ballotlemiexOLD" is used by "ballotlemrv2OLD".
+"ballotlemiexOLD" is used by "ballotlemsdomOLD".
+"ballotlemiexOLD" is used by "ballotlemsel1iOLD".
+"ballotlemiexOLD" is used by "ballotlemsf1oOLD".
+"ballotlemiexOLD" is used by "ballotlemsgt1OLD".
+"ballotlemiexOLD" is used by "ballotlemsiOLD".
+"ballotlemiexOLD" is used by "ballotlemsimaOLD".
+"ballotlemiiOLD" is used by "ballotlem1cOLD".
+"ballotlemiminOLD" is used by "ballotlem1cOLD".
+"ballotlemiminOLD" is used by "ballotlemicOLD".
+"ballotlemircOLD" is used by "ballotlemrinv0OLD".
+"ballotlemrcOLD" is used by "ballotlem7OLD".
+"ballotlemrcOLD" is used by "ballotlemircOLD".
+"ballotlemrcOLD" is used by "ballotlemrinv0OLD".
+"ballotlemrinv0OLD" is used by "ballotlemrinvOLD".
+"ballotlemrinvOLD" is used by "ballotlem7OLD".
+"ballotlemroOLD" is used by "ballotlemfrcOLD".
+"ballotlemroOLD" is used by "ballotlemfrceqOLD".
+"ballotlemroOLD" is used by "ballotlemfrcn0OLD".
+"ballotlemroOLD" is used by "ballotlemrcOLD".
+"ballotlemrv1OLD" is used by "ballotlem1riOLD".
+"ballotlemrvOLD" is used by "ballotlemrv1OLD".
+"ballotlemrvOLD" is used by "ballotlemrv2OLD".
+"ballotlemrvalOLD" is used by "ballotlemrinv0OLD".
+"ballotlemrvalOLD" is used by "ballotlemroOLD".
+"ballotlemrvalOLD" is used by "ballotlemrvOLD".
+"ballotlemrvalOLD" is used by "ballotlemscrOLD".
+"ballotlemscrOLD" is used by "ballotlemfrcOLD".
+"ballotlemsdomOLD" is used by "ballotlemfrceqOLD".
+"ballotlemsdomOLD" is used by "ballotlemfrcn0OLD".
+"ballotlemsdomOLD" is used by "ballotlemsel1iOLD".
+"ballotlemsdomOLD" is used by "ballotlemsf1oOLD".
+"ballotlemsel1iOLD" is used by "ballotlemfrceqOLD".
+"ballotlemsel1iOLD" is used by "ballotlemfrcn0OLD".
+"ballotlemsf1oOLD" is used by "ballotlemfrcOLD".
+"ballotlemsf1oOLD" is used by "ballotlemrinv0OLD".
+"ballotlemsf1oOLD" is used by "ballotlemroOLD".
+"ballotlemsf1oOLD" is used by "ballotlemrvOLD".
+"ballotlemsf1oOLD" is used by "ballotlemscrOLD".
+"ballotlemsf1oOLD" is used by "ballotlemsimaOLD".
+"ballotlemsgt1OLD" is used by "ballotlemfrcn0OLD".
+"ballotlemsiOLD" is used by "ballotlemfrciOLD".
+"ballotlemsimaOLD" is used by "ballotlemfrcOLD".
+"ballotlemsupOLD" is used by "ballotlemfrcn0OLD".
+"ballotlemsupOLD" is used by "ballotlemiminOLD".
+"ballotlemsvOLD" is used by "ballotlemrvOLD".
+"ballotlemsvOLD" is used by "ballotlemsdomOLD".
+"ballotlemsvOLD" is used by "ballotlemsel1iOLD".
+"ballotlemsvOLD" is used by "ballotlemsf1oOLD".
+"ballotlemsvOLD" is used by "ballotlemsgt1OLD".
+"ballotlemsvOLD" is used by "ballotlemsiOLD".
+"ballotlemsvOLD" is used by "ballotlemsimaOLD".
+"ballotlemsvalOLD" is used by "ballotlemieqOLD".
+"ballotlemsvalOLD" is used by "ballotlemsf1oOLD".
+"ballotlemsvalOLD" is used by "ballotlemsvOLD".
 "basendx" is used by "1strstr".
 "basendx" is used by "2strstr".
 "basendx" is used by "2strstr1".
@@ -14385,6 +14475,44 @@ New usage of "baerlem5abmN" is discouraged (0 uses).
 New usage of "baerlem5amN" is discouraged (0 uses).
 New usage of "baerlem5bmN" is discouraged (0 uses).
 New usage of "bafval" is discouraged (43 uses).
+New usage of "ballotlem1cOLD" is discouraged (1 uses).
+New usage of "ballotlem1riOLD" is discouraged (1 uses).
+New usage of "ballotlem7OLD" is discouraged (1 uses).
+New usage of "ballotlem8OLD" is discouraged (1 uses).
+New usage of "ballotlemfgOLD" is discouraged (2 uses).
+New usage of "ballotlemfrcOLD" is discouraged (2 uses).
+New usage of "ballotlemfrceqOLD" is discouraged (1 uses).
+New usage of "ballotlemfrciOLD" is discouraged (2 uses).
+New usage of "ballotlemfrcn0OLD" is discouraged (1 uses).
+New usage of "ballotlemgunOLD" is discouraged (1 uses).
+New usage of "ballotlemgvalOLD" is discouraged (3 uses).
+New usage of "ballotlemi1OLD" is discouraged (1 uses).
+New usage of "ballotlemiOLD" is discouraged (4 uses).
+New usage of "ballotlemicOLD" is discouraged (1 uses).
+New usage of "ballotlemieqOLD" is discouraged (1 uses).
+New usage of "ballotlemiexOLD" is discouraged (19 uses).
+New usage of "ballotlemiiOLD" is discouraged (1 uses).
+New usage of "ballotlemiminOLD" is discouraged (2 uses).
+New usage of "ballotlemircOLD" is discouraged (1 uses).
+New usage of "ballotlemrcOLD" is discouraged (3 uses).
+New usage of "ballotlemrinv0OLD" is discouraged (1 uses).
+New usage of "ballotlemrinvOLD" is discouraged (1 uses).
+New usage of "ballotlemroOLD" is discouraged (4 uses).
+New usage of "ballotlemrv1OLD" is discouraged (1 uses).
+New usage of "ballotlemrv2OLD" is discouraged (0 uses).
+New usage of "ballotlemrvOLD" is discouraged (2 uses).
+New usage of "ballotlemrvalOLD" is discouraged (4 uses).
+New usage of "ballotlemscrOLD" is discouraged (1 uses).
+New usage of "ballotlemsdomOLD" is discouraged (4 uses).
+New usage of "ballotlemsel1iOLD" is discouraged (2 uses).
+New usage of "ballotlemsf1oOLD" is discouraged (6 uses).
+New usage of "ballotlemsgt1OLD" is discouraged (1 uses).
+New usage of "ballotlemsiOLD" is discouraged (1 uses).
+New usage of "ballotlemsimaOLD" is discouraged (1 uses).
+New usage of "ballotlemsupOLD" is discouraged (2 uses).
+New usage of "ballotlemsvOLD" is discouraged (7 uses).
+New usage of "ballotlemsvalOLD" is discouraged (3 uses).
+New usage of "ballotthOLD" is discouraged (0 uses).
 New usage of "basendx" is discouraged (24 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bcs" is discouraged (6 uses).
@@ -18990,6 +19118,44 @@ Proof modification of "axnul" is discouraged (52 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
 Proof modification of "axtglowdim2OLD" is discouraged (115 steps).
 Proof modification of "axtgupdim2OLD" is discouraged (679 steps).
+Proof modification of "ballotlem1cOLD" is discouraged (521 steps).
+Proof modification of "ballotlem1riOLD" is discouraged (166 steps).
+Proof modification of "ballotlem7OLD" is discouraged (454 steps).
+Proof modification of "ballotlem8OLD" is discouraged (84 steps).
+Proof modification of "ballotlemfgOLD" is discouraged (162 steps).
+Proof modification of "ballotlemfrcOLD" is discouraged (619 steps).
+Proof modification of "ballotlemfrceqOLD" is discouraged (799 steps).
+Proof modification of "ballotlemfrciOLD" is discouraged (233 steps).
+Proof modification of "ballotlemfrcn0OLD" is discouraged (704 steps).
+Proof modification of "ballotlemgunOLD" is discouraged (439 steps).
+Proof modification of "ballotlemgvalOLD" is discouraged (105 steps).
+Proof modification of "ballotlemi1OLD" is discouraged (273 steps).
+Proof modification of "ballotlemiOLD" is discouraged (133 steps).
+Proof modification of "ballotlemicOLD" is discouraged (537 steps).
+Proof modification of "ballotlemieqOLD" is discouraged (168 steps).
+Proof modification of "ballotlemiexOLD" is discouraged (183 steps).
+Proof modification of "ballotlemiiOLD" is discouraged (227 steps).
+Proof modification of "ballotlemiminOLD" is discouraged (404 steps).
+Proof modification of "ballotlemircOLD" is discouraged (364 steps).
+Proof modification of "ballotlemrcOLD" is discouraged (192 steps).
+Proof modification of "ballotlemrinv0OLD" is discouraged (317 steps).
+Proof modification of "ballotlemrinvOLD" is discouraged (138 steps).
+Proof modification of "ballotlemroOLD" is discouraged (217 steps).
+Proof modification of "ballotlemrv1OLD" is discouraged (91 steps).
+Proof modification of "ballotlemrv2OLD" is discouraged (170 steps).
+Proof modification of "ballotlemrvOLD" is discouraged (214 steps).
+Proof modification of "ballotlemrvalOLD" is discouraged (82 steps).
+Proof modification of "ballotlemscrOLD" is discouraged (153 steps).
+Proof modification of "ballotlemsdomOLD" is discouraged (299 steps).
+Proof modification of "ballotlemsel1iOLD" is discouraged (353 steps).
+Proof modification of "ballotlemsf1oOLD" is discouraged (524 steps).
+Proof modification of "ballotlemsgt1OLD" is discouraged (190 steps).
+Proof modification of "ballotlemsiOLD" is discouraged (129 steps).
+Proof modification of "ballotlemsimaOLD" is discouraged (777 steps).
+Proof modification of "ballotlemsupOLD" is discouraged (181 steps).
+Proof modification of "ballotlemsvOLD" is discouraged (194 steps).
+Proof modification of "ballotlemsvalOLD" is discouraged (184 steps).
+Proof modification of "ballotthOLD" is discouraged (901 steps).
 Proof modification of "bcsiALT" is discouraged (444 steps).
 Proof modification of "bezoutlem2OLD" is discouraged (264 steps).
 Proof modification of "bezoutlem3OLD" is discouraged (991 steps).
