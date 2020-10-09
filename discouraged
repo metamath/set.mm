@@ -4877,8 +4877,6 @@
 "df-ssp" is used by "sspval".
 "df-st" is used by "isst".
 "df-subgo" is used by "issubgo".
-"df-tauOLD" is used by "taupiOLD".
-"df-tauOLD" is used by "taupilem2OLD".
 "df-trkg2d" is used by "istrkg2d".
 "df-tru" is used by "tru".
 "df-unop" is used by "elunop".
@@ -8725,7 +8723,6 @@
 "infmrclOLD" is used by "pilem2OLD".
 "infmrclOLD" is used by "pilem3OLD".
 "infmrclOLD" is used by "supminfOLD".
-"infmrclOLD" is used by "taupiOLD".
 "infmrgelbOLD" is used by "infmrgelbiOLD".
 "infmrgelbOLD" is used by "infmxrreOLD".
 "infmrgelbOLD" is used by "minveclem2OLD".
@@ -8738,7 +8735,6 @@
 "infmrgelbOLD" is used by "minvecolem6OLD".
 "infmrgelbOLD" is used by "pilem2OLD".
 "infmrgelbOLD" is used by "pilem3OLD".
-"infmrgelbOLD" is used by "taupiOLD".
 "infmrlbOLD" is used by "climinfOLD".
 "infmrlbOLD" is used by "fourierdlem42OLD".
 "infmrlbOLD" is used by "minveclem2OLD".
@@ -8747,7 +8743,6 @@
 "infmrlbOLD" is used by "minvecolem4OLD".
 "infmrlbOLD" is used by "pilem2OLD".
 "infmrlbOLD" is used by "pilem3OLD".
-"infmrlbOLD" is used by "taupilem2OLD".
 "infmssuzclOLD" is used by "4sqlem13OLD".
 "infmssuzclOLD" is used by "4sqlem14OLD".
 "infmssuzclOLD" is used by "4sqlem17OLD".
@@ -13415,7 +13410,6 @@
 "supmaxlemOLD" is used by "supmaxOLD".
 "supsr" is used by "axpre-sup".
 "supsrlem" is used by "supsr".
-"taupilem2OLD" is used by "taupiOLD".
 "tb-ax1" is used by "re1ax2".
 "tb-ax1" is used by "re1ax2lem".
 "tb-ax1" is used by "tbsyl".
@@ -15582,7 +15576,6 @@ New usage of "df-spec" is discouraged (1 uses).
 New usage of "df-ssp" is discouraged (1 uses).
 New usage of "df-st" is discouraged (1 uses).
 New usage of "df-subgo" is discouraged (1 uses).
-New usage of "df-tauOLD" is discouraged (2 uses).
 New usage of "df-trkg2d" is discouraged (1 uses).
 New usage of "df-tru" is discouraged (1 uses).
 New usage of "df-unop" is discouraged (1 uses).
@@ -16806,10 +16799,10 @@ New usage of "indistps2ALT" is discouraged (0 uses).
 New usage of "indistpsALT" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
-New usage of "infmrclOLD" is discouraged (17 uses).
-New usage of "infmrgelbOLD" is discouraged (13 uses).
+New usage of "infmrclOLD" is discouraged (16 uses).
+New usage of "infmrgelbOLD" is discouraged (12 uses).
 New usage of "infmrgelbiOLD" is discouraged (0 uses).
-New usage of "infmrlbOLD" is discouraged (9 uses).
+New usage of "infmrlbOLD" is discouraged (8 uses).
 New usage of "infmssuzclOLD" is discouraged (30 uses).
 New usage of "infmssuzleOLD" is discouraged (18 uses).
 New usage of "infmsupOLD" is discouraged (3 uses).
@@ -18698,8 +18691,6 @@ New usage of "syl5eqnerOLD" is discouraged (0 uses).
 New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
 New usage of "symdif1OLD" is discouraged (0 uses).
-New usage of "taupiOLD" is discouraged (0 uses).
-New usage of "taupilem2OLD" is discouraged (1 uses).
 New usage of "tb-ax1" is discouraged (3 uses).
 New usage of "tb-ax2" is discouraged (1 uses).
 New usage of "tb-ax3" is discouraged (2 uses).
@@ -20588,8 +20579,6 @@ Proof modification of "syl5eqnerOLD" is discouraged (14 steps).
 Proof modification of "syl5imp" is discouraged (23 steps).
 Proof modification of "syl5impVD" is discouraged (57 steps).
 Proof modification of "symdif1OLD" is discouraged (52 steps).
-Proof modification of "taupiOLD" is discouraged (167 steps).
-Proof modification of "taupilem2OLD" is discouraged (85 steps).
 Proof modification of "tb-ax1" is discouraged (4 steps).
 Proof modification of "tb-ax2" is discouraged (3 steps).
 Proof modification of "tb-ax3" is discouraged (3 steps).
