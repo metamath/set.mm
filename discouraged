@@ -18736,6 +18736,8 @@ New usage of "ubth" is discouraged (1 uses).
 New usage of "ubthlem1" is discouraged (1 uses).
 New usage of "ubthlem2" is discouraged (1 uses).
 New usage of "ubthlem3" is discouraged (1 uses).
+New usage of "umgr0opALT" is discouraged (0 uses).
+New usage of "umgr1opALT" is discouraged (0 uses).
 New usage of "un0.1" is discouraged (1 uses).
 New usage of "un01" is discouraged (0 uses).
 New usage of "un10" is discouraged (0 uses).
@@ -20617,6 +20619,8 @@ Proof modification of "trubifalOLD" is discouraged (15 steps).
 Proof modification of "trunanfalOLD" is discouraged (19 steps).
 Proof modification of "truniALT" is discouraged (183 steps).
 Proof modification of "truniALTVD" is discouraged (220 steps).
+Proof modification of "umgr0opALT" is discouraged (55 steps).
+Proof modification of "umgr1opALT" is discouraged (134 steps).
 Proof modification of "un0.1" is discouraged (21 steps).
 Proof modification of "un01" is discouraged (18 steps).
 Proof modification of "un10" is discouraged (18 steps).
