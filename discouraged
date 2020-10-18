@@ -1442,6 +1442,7 @@
 "axc711toc7" is used by "axc711to11".
 "axc9lem1" is used by "ax6e".
 "axc9lem1" is used by "axc9lem2".
+"axc9lem1" is used by "axc9lem2OLD".
 "axc9lem1" is used by "nfeqf2".
 "axc9lem2" is used by "nfeqf2".
 "axicn" is used by "sineq0ALT".
@@ -14398,8 +14399,9 @@ New usage of "axc5sp1" is discouraged (0 uses).
 New usage of "axc711" is discouraged (2 uses).
 New usage of "axc711to11" is discouraged (0 uses).
 New usage of "axc711toc7" is discouraged (1 uses).
-New usage of "axc9lem1" is discouraged (3 uses).
+New usage of "axc9lem1" is discouraged (4 uses).
 New usage of "axc9lem2" is discouraged (1 uses).
+New usage of "axc9lem2OLD" is discouraged (0 uses).
 New usage of "axcc" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (0 uses).
 New usage of "axcnre" is discouraged (0 uses).
@@ -19105,6 +19107,7 @@ Proof modification of "axc5sp1" is discouraged (11 steps).
 Proof modification of "axc711" is discouraged (37 steps).
 Proof modification of "axc711to11" is discouraged (32 steps).
 Proof modification of "axc711toc7" is discouraged (37 steps).
+Proof modification of "axc9lem2OLD" is discouraged (70 steps).
 Proof modification of "axext3OLD" is discouraged (57 steps).
 Proof modification of "axfrege8" is discouraged (31 steps).
 Proof modification of "axnul" is discouraged (52 steps).
@@ -19282,7 +19285,6 @@ Proof modification of "bj-equs5v" is discouraged (41 steps).
 Proof modification of "bj-equsal" is discouraged (31 steps).
 Proof modification of "bj-equsalhv" is discouraged (10 steps).
 Proof modification of "bj-equsalv" is discouraged (39 steps).
-Proof modification of "bj-equsalvv" is discouraged (38 steps).
 Proof modification of "bj-equsb1v" is discouraged (17 steps).
 Proof modification of "bj-equsexhv" is discouraged (10 steps).
 Proof modification of "bj-equsexv" is discouraged (37 steps).
