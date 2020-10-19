@@ -805,8 +805,8 @@ and "` ( ph -> ph ) `" for ` ps ` .
 
 </MENU>
 
-<P> <B><FONT COLOR="#006633">Legal syntax</FONT></B>&nbsp;&nbsp;&nbsp;
-There is a further requirement for substitutions we have not described
+<P id="legal_syntax"><B><FONT COLOR="#006633">Legal syntax</FONT></B>&nbsp;&nbsp;&nbsp;
+There is a further requirement for Metamath substitutions we have not described
 yet.  You can't substitute just any old string of symbols for a purple
 class variable.  Instead, the symbol string must qualify as a class
 expression.  For example, it would be illegal to substitute the
@@ -848,6 +848,7 @@ only with expressions that qualify as those types.
 <P>In other words, we must "prove" that any expression we want to
 substitute for a variable qualifies as a legal expression for that type
 of variable, before we are allowed to make the substitution.
+This also states precisely what is being substituted, preventing any ambiguity.
 
 <P>The actual proofs stored in the database have additional steps that
 construct, from syntax definitions, the expressions that are
@@ -871,12 +872,59 @@ that "(1 + 1)" is a legal class as we described above.  To see the
 substitutions we talked about for step 2, you can type "show proof 2p2e4
 /detailed_step 21".
 
+<P>
+This is a general property of Metamath, not just of the set.mm database.
+For example, step 32 of proof <tt>th1</tt> in demo database <tt>demo0.mm</tt>
+must match two expressions to use theorem <tt>mp</tt>:
+
+<UL>
+<LI> ` |- ( P -> Q ) `
+<LI> ` |- ( ( t + 0 ) = t -> ( ( t + 0 ) = t -> t = t ) ) `
+</UL>
+
+<P>This could be matched many different expressions, for examle:
+
+<UL>
+<LI> `P` := ` ( t + 0 ) = t `
+<LI> `Q` := ` ( ( t + 0 ) = t -> t = t ) `
+</UL>
+
+or
+
+<UL>
+<LI> ` P ` := ` ( t + 0 ) = t -> ( ( t + 0 ) = t `
+<LI> ` Q ` := ` t = t )`
+</UL>
+
+<P>
+However, theorem <tt>mp</tt> in database <tt>demo0.mm</tt>
+actually has 4 arguments
+(which you can see if you ask metamath.exe to show them).
+The first two are the substitutions, which are usually suppressed.
+That is, you first have to prove ` wff P ` , then ` wff Q ` ,
+then ` |- P ` , then
+` |- ( P -> Q  ) ` , and then theorem mp applies to derive ` |- Q ` .
+If you use metamath.exe, "show proof th1" will list only 5 steps, but with
+suspicious gaps in the numbering; "show proof th1 /full" will show
+all the substitution steps (which in fact make up the majority of
+the actual proof on disk).
+
+<P>A proof of ` wff P ` is equivalent to a proof that
+` P ` is a well formed formula, and it is this that prevents invalid
+substitutions like ` Q ` := ` t = t ) ` ; you will not be able to prove
+` wff t = t ) ` so that proof will not work. But in any case the
+Metamath verifier isn't being asked to come up with the substitution
+(although most metamath proof assistants will, using unification), so no
+matching algorithm is necessary, only a substitution and an equality
+check.
+
 <P>In the case of axioms and definitions, we <I>do</I> show their
 detailed syntax breakdown, because there is free space on those web
 pages not used for anything else.  These can help you become familiar
-with the syntax.  For example, look at the definition of the number 2,
+with the syntax.  For example, look at the <tt>set.mm</tt>
+(Metamath Proof Explorer) definition of the number 2,
 ~ df-2 .  You can see, at step 4, the demonstration
-that "(1 + 1)" is a legal expression that qualifies as a class, i.e.
+that ` ( 1 + 1 ) ` is a legal expression that qualifies as a class, i.e.
 that can be substituted for a purple class variable.
 
 <P> <B><FONT COLOR="#006633">Distinct variable
