@@ -8247,6 +8247,7 @@
 "hvsubvali" is used by "pjcji".
 "hvsubvali" is used by "pjssmii".
 "hvsubvali" is used by "pjsubii".
+"idALT" is used by "id1".
 "idcnop" is used by "nmcopex".
 "idcnop" is used by "nmcoplb".
 "idhmop" is used by "hmopidmch".
@@ -16746,7 +16747,8 @@ New usage of "hvsubsub4i" is discouraged (2 uses).
 New usage of "hvsubval" is discouraged (24 uses).
 New usage of "hvsubvali" is discouraged (13 uses).
 New usage of "icccmpALT" is discouraged (0 uses).
-New usage of "idALT" is discouraged (0 uses).
+New usage of "id1" is discouraged (0 uses).
+New usage of "idALT" is discouraged (1 uses).
 New usage of "idcnop" is discouraged (2 uses).
 New usage of "iden2" is discouraged (0 uses).
 New usage of "idhmop" is discouraged (6 uses).
@@ -19966,6 +19968,7 @@ Proof modification of "hbra2VD" is discouraged (26 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
 Proof modification of "icccmpALT" is discouraged (71 steps).
+Proof modification of "id1" is discouraged (2 steps).
 Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "iden2" is discouraged (18 steps).
 Proof modification of "idiALT" is discouraged (1 steps).
