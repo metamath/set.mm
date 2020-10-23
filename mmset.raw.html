@@ -781,8 +781,8 @@ only, never into the variables of any proof step referenced
 in the Hyp column (of the theorem being proved).  <I>In other words you
 should pretend that all variables in the theorem being proved are
 constants for the purpose of figuring out the substitutions.</I> You can
-see this by looking at examples such as theorem ~ id1 .  To follow the proof
-of ~ id1 , you should treat the symbol ` ph ` as if it were a
+see this by looking at examples such as theorem ~ idALT .  To follow the proof
+of ~ idALT , you should treat the symbol ` ph ` as if it were a
 constant symbol, when you are figuring out the substitutions to make
 into the variables of the referenced theorems (or axioms).</LI>
 
@@ -790,7 +790,7 @@ into the variables of the referenced theorems (or axioms).</LI>
 the same names as those in the theorem being proved, you may want to
 temporarily rename the variables in the referenced theorem (or axiom)
 before substituting expressions for them, to avoid confusion.  For
-example, the proof of ~ id1 will be less confusing
+example, the proof of ~ idALT will be less confusing
 if the occurrences of ` ph `
 in the referenced axioms are renamed to something else.
 
@@ -1139,7 +1139,7 @@ more wffs called <B>hypotheses</B>, together with a wff called the
 are true.  A <B>proof</B> is a sequence of substitution instances of
 axioms and inference rules, where the hypotheses of the inference rules
 match previous steps in the sequence.  The last step in a proof is a
-<B>theorem</B> (example: ~ id1 ).  For brevity, a
+<B>theorem</B> (example: ~ idALT ).  For brevity, a
 proof may also refer to earlier theorems (example: ~ id ), but in principle
 it can be expanded into references to only the initial axioms and rules.
 
