@@ -42,6 +42,12 @@ or in one line, for ease of copypasting:
 ./metamath 'read set.mm' 'write source set.mm /rewrap' erase 'read set.mm' 'save proof */compressed/fast' 'verify markup */file_skip/top_date_skip' 'verify proof *' 'write source set.mm' quit
 </PRE>
 
+and for iset.mm:
+
+<PRE>
+./metamath 'read iset.mm' 'write source iset.mm /rewrap' erase 'read iset.mm' 'save proof */compressed/fast' 'verify markup */file_skip/top_date_skip' 'verify proof *' 'write source iset.mm' quit
+</PRE>
+
 The reason for doing /rewrap first is so that 'save proof' will subsequently
 adjust the proof indentation to match any indentation changes made by /rewrap.
 Then, 'verify markup' will check that no lines became too long due to different
@@ -75,6 +81,12 @@ or in one line, for ease of copypasting:
 
 <PRE>
 ./metamath 'read set.mm' 'set width 9999' 'show discouraged' quit | tr -d '\015' | grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' | LC_ALL=C sort > discouraged
+</PRE>
+
+and for iset.mm:
+
+<PRE>
+./metamath 'read iset.mm' 'set width 9999' 'show discouraged' quit | tr -d '\015' | grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' | LC_ALL=C sort > iset-discouraged
 </PRE>
 
 The "tr -d '\015'" is needed with Cygwin to strip carriage returns and has no
