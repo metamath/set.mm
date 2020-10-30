@@ -771,10 +771,10 @@ so ordinarily you don't have to worry about them.
 
 <LI>Substitutions are simultaneous.  In other words each occurrence of a
 given variable in a referenced theorem must be replaced with the same
-expression.  For example, there are two occurrences of
-` F `
+expression.  For example, there are two occurrences of ` F `
 in the Assertion of oveq2i, and both occurrences must be replaced with
-the same expression, which is "+" in the above example.  </LI>
+the same expression, which is "+" in the above example.
+</LI>
 
 <LI>Substitutions are made into the variables of the referenced theorem
 only, never into the variables of any proof step referenced
@@ -790,17 +790,11 @@ into the variables of the referenced theorems (or axioms).</LI>
 the same names as those in the theorem being proved, you may want to
 temporarily rename the variables in the referenced theorem (or axiom)
 before substituting expressions for them, to avoid confusion.  For
-example, the proof of ~ idALT will be less confusing
-if the occurrences of ` ph `
-in the referenced axioms are renamed to something else.
-
-Specifically, you can rewrite ~ ax-1 as say
-
-` ( ch -> ( ps -> ch ) ) ` .
-
-Then, to obtain step 2 of the proof of id1, substitute "` ph `" for ` ch `
+example, the proof of ~ idALT will be less confusing if the occurrences of
+` ph ` in the referenced axioms are renamed to something else.
+Specifically, you can rewrite ~ ax-1 as, say, ` ( ch -> ( ps -> ch ) ) ` .
+Then, to obtain step 2 of the proof of ~ idALT , substitute "` ph `" for ` ch `
 and "` ( ph -> ph ) `" for ` ps ` .
-
 </LI>
 
 </MENU>
