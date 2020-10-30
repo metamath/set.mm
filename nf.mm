@@ -1,4 +1,4 @@
-$( nf.mm - Version of 03-Aug-2019. $)
+$( nf.mm - Version of 3-Aug-2019. $)
 
 $(
                            ~~ PUBLIC DOMAIN ~~
@@ -10217,8 +10217,7 @@ $)
      that the rederivation of ~ ax1 , ~ ax2 , and ~ ax3 below depend only on
      Meredith's sole axiom and not accidentally on a previous theorem above.
      Outside of this section, we will not make use of this axiom.  (Contributed
-     by NM, 14-Dec-2002.)  (Proof modification is discouraged.)
-     (New usage is discouraged.) $)
+     by NM, 14-Dec-2002.)  (New usage is discouraged.) $)
   ax-meredith $a |- ( ( ( ( ( ph -> ps ) -> ( -. ch -> -. th ) ) -> ch ) ->
        ta ) -> ( ( ta -> ph ) -> ( th -> ph ) ) ) $.
 
@@ -56402,14 +56401,14 @@ $)
     $( Calculate the value of the domain function.  (Contributed by Scott
        Fenton, 9-Aug-2019.) $)
     fvdomfn $p |- ( A e. V -> ( Dom ` A ) = dom A ) $=
-       ( vx wcel cvv cdomfn cfv cdm wceq elex dmexg cv dmeq df-domfn fvmptg syl
-       mpdan ) ABDAEDZAFGAHZIZABJRSEDTAEKCACLZHSEEFUAAMCNOQP $.
+      ( vx wcel cvv cdomfn cfv cdm wceq elex dmexg cv df-domfn fvmptg mpdan syl
+      dmeq ) ABDAEDZAFGAHZIZABJRSEDTAEKCACLZHSEEFUAAQCMNOP $.
 
     $( Calculate the value of the range function.  (Contributed by Scott
        Fenton, 9-Aug-2019.) $)
     fvranfn $p |- ( A e. V -> ( Ran ` A ) = ran A ) $=
-       ( vx wcel cvv cranfn cfv crn wceq elex rnexg cv rneq df-ranfn fvmptg syl
-       mpdan ) ABDAEDZAFGAHZIZABJRSEDTAEKCACLZHSEEFUAAMCNOQP $.
+      ( vx wcel cvv cranfn cfv crn wceq elex rnexg cv df-ranfn fvmptg mpdan syl
+      rneq ) ABDAEDZAFGAHZIZABJRSEDTAEKCACLZHSEEFUAAQCMNOP $.
   $}
 
   ${
@@ -56417,34 +56416,32 @@ $)
     $( The domain function is stratified.  (Contributed by Scott Fenton,
        9-Aug-2019.) $)
     domfnex $p |- Dom e. _V $=
-       ( vx vy vz vw cdomfn cvv csset cswap cins2 cin c1c cima csn cop wcel wex
-       cv wa vex bitri cxp cins3 csi3 cins4 csymdif ccnv cdm cmpt df-domfn wceq
-       ccompl wel elin oqelins4 otsnelsi3 df-br brswap2 3bitr2i snex opelssetsn
-       wbr otelins2 anbi12i exbii elima1c df-clel 3bitr4i eldm2 releqmpt eqtr4i
-       vvex swapex si3ex ins4ex ssetex ins2ex inex 1cex imaex mptexlem eqeltri
-       ) EFFUAGUBHUCZUDZGIZIZJZKLZKLZIUEKLUKUFJZFEAFAQZUGZUHWIAUIABFWHWKCQZMZBQ
-       ZMZWJNZNZWGOZCPWNWLNZWJOZCPWPWHOWNWKOWRWTCDQZMZWQNZWFOZDPXAWSUJZDAULZRZD
-       PWRWTXDXGDXDXCWCOZXCWEOZRXGXCWCWEUMXHXEXIXFXHXBWMWONNWBOZXEXBWMWOWJWBASZ
-       UNXJXAWLWNNZNHOXAXLHVAXEXAWLWNHDSZCSZBSZUOXAXLHUPXAWLWNXNXOUQURTXIXBWPNW
-       DOZXFXBWMWPWDWLUSVBXPXBWJNGOXFXBWOWJGWNUSVBXAWJXMXKUTTTVCTVDDWQWFVEDWSWJ
-       VFVGVDCWPWGVECWNWJVHVGVIVJFWHVKWGKWFKWCWEWBHVLVMVNWDGVOVPVPVQVRVSVRVSVTW
-       A $.
+      ( vx vy vz vw cdomfn cvv csset cswap cins2 cin c1c cima cv csn cop wex wa
+      wcel vex bitri cxp cins3 csi3 cins4 csymdif ccompl ccnv cdm cmpt df-domfn
+      wceq wel oqelins4 wbr otsnelsi3 df-br brswap2 3bitr2i otelins2 opelssetsn
+      elin snex anbi12i exbii elima1c df-clel eldm2 releqmpt eqtr4i vvex swapex
+      3bitr4i si3ex ins4ex ssetex ins2ex inex 1cex imaex mptexlem eqeltri ) EFF
+      UAGUBHUCZUDZGIZIZJZKLZKLZIUEKLUFUGJZFEAFAMZUHZUIWIAUJABFWHWKCMZNZBMZNZWJO
+      ZOZWGRZCPWNWLOZWJRZCPWPWHRWNWKRWRWTCDMZNZWQOZWFRZDPXAWSUKZDAULZQZDPWRWTXD
+      XGDXDXCWCRZXCWERZQXGXCWCWEVAXHXEXIXFXHXBWMWOOOWBRZXEXBWMWOWJWBASZUMXJXAWL
+      WNOZOHRXAXLHUNXEXAWLWNHDSZCSZBSZUOXAXLHUPXAWLWNXNXOUQURTXIXBWPOWDRZXFXBWM
+      WPWDWLVBUSXPXBWJOGRXFXBWOWJGWNVBUSXAWJXMXKUTTTVCTVDDWQWFVEDWSWJVFVLVDCWPW
+      GVECWNWJVGVLVHVIFWHVJWGKWFKWCWEWBHVKVMVNWDGVOVPVPVQVRVSVRVSVTWA $.
 
     $( The range function is stratified.  (Contributed by Scott Fenton,
        9-Aug-2019.) $)
     ranfnex $p |- Ran e. _V $=
-       ( vx vy vz vw cranfn cvv csset cid cins2 cin c1c cima cv csn cop wcel wa
-       wex vex bitri cxp cins3 csi3 cins4 csymdif ccompl ccnv crn cmpt df-ranfn
-       wceq wel elin oqelins4 otsnelsi3 df-br opex ideq 3bitr2i snex opelssetsn
-       wbr otelins2 anbi12i exbii elima1c df-clel 3bitr4i elrn2 releqmpt eqtr4i
-       vvex idex si3ex ins4ex ssetex ins2ex inex 1cex imaex mptexlem eqeltri )
-       EFFUAGUBHUCZUDZGIZIZJZKLZKLZIUEKLUFUGJZFEAFAMZUHZUIWJAUJABFWIWLCMZNZBMZN
-       ZWKOZOZWHPZCRWMWOOZWKPZCRWQWIPWOWLPWSXACDMZNZWROZWGPZDRXBWTUKZDAULZQZDRW
-       SXAXEXHDXEXDWDPZXDWFPZQXHXDWDWFUMXIXFXJXGXIXCWNWPOOWCPZXFXCWNWPWKWCASZUN
-       XKXBWTOHPXBWTHVBXFXBWMWOHDSZCSZBSZUOXBWTHUPXBWTWMWOXNXOUQURUSTXJXCWQOWEP
-       ZXGXCWNWQWEWMUTVCXPXCWKOGPXGXCWPWKGWOUTVCXBWKXMXLVATTVDTVEDWRWGVFDWTWKVG
-       VHVECWQWHVFCWOWKVIVHVJVKFWIVLWHKWGKWDWFWCHVMVNVOWEGVPVQVQVRVSVTVSVTWAWB
-       $.
+      ( vx vy vz vw cranfn cvv csset cid cins2 cin c1c cima cv csn cop wcel wex
+      wa vex bitri cxp cins3 csi3 cins4 csymdif ccnv crn cmpt df-ranfn wceq wel
+      ccompl elin oqelins4 wbr otsnelsi3 df-br opex 3bitr2i otelins2 opelssetsn
+      ideq snex anbi12i exbii elima1c df-clel 3bitr4i releqmpt eqtr4i vvex idex
+      elrn2 si3ex ins4ex ssetex ins2ex inex 1cex imaex mptexlem eqeltri ) EFFUA
+      GUBHUCZUDZGIZIZJZKLZKLZIUEKLULUFJZFEAFAMZUGZUHWJAUIABFWIWLCMZNZBMZNZWKOZO
+      ZWHPZCQWMWOOZWKPZCQWQWIPWOWLPWSXACDMZNZWROZWGPZDQXBWTUJZDAUKZRZDQWSXAXEXH
+      DXEXDWDPZXDWFPZRXHXDWDWFUMXIXFXJXGXIXCWNWPOOWCPZXFXCWNWPWKWCASZUNXKXBWTOH
+      PXBWTHUOXFXBWMWOHDSZCSZBSZUPXBWTHUQXBWTWMWOXNXOURVBUSTXJXCWQOWEPZXGXCWNWQ
+      WEWMVCUTXPXCWKOGPXGXCWPWKGWOVCUTXBWKXMXLVATTVDTVEDWRWGVFDWTWKVGVHVECWQWHV
+      FCWOWKVMVHVIVJFWIVKWHKWGKWDWFWCHVLVNVOWEGVPVQVQVRVSVTVSVTWAWB $.
   $}
 
 $(
@@ -61773,7 +61770,7 @@ $)
 
   ${
     $( Cardinal one is strictly greater than cardinal zero.  (Contributed by
-       Scott Fenton, 01-Aug-2019.) $)
+       Scott Fenton, 1-Aug-2019.) $)
     0lt1c $p |- 0c <c 1c $=
       ( vx c0c cv csn cnc c1c cltc wbr clec wne c0 df0c2 wss 0ss 0ex snex df-ne
       wceq wn wcel nclec ax-mp eqbrtri vex snnz mpbi ncid eleq2 mpbiri el0c mto
@@ -61809,7 +61806,7 @@ $)
     brcsuc.1 $e |- A e. _V $.
     brcsuc.2 $e |- B e. _V $.
     $( Binary relationship form of the successor mapping function.
-       (Contributed by Scott Fenton, 02-Aug-2019.) $)
+       (Contributed by Scott Fenton, 2-Aug-2019.) $)
     brcsuc $p |- ( A ( x e. _V |-> ( x +c 1c ) ) B <-> B = ( A +c 1c ) ) $=
       ( vy cv c1c cplc wceq cvv cmpt addceq1 eqeq2d eqeq1 mptv brab ) FGZAGZHIZ
       JRBHIZJCUAJAFBCAKTLDESBJTUARSBHMNRCUAOAFTPQ $.
@@ -61847,7 +61844,7 @@ $)
   ${
     $d n p q x y z $.
     $( Lemma for ~ addccan2nc .  Stratification helper theorem.  (Contributed
-       by Scott Fenton, 02-Aug-2019.) $)
+       by Scott Fenton, 2-Aug-2019.) $)
     addccan2nclem1 $p |- ( x ( AddC o. `' ( 1st |` ( _V X. { n } ) ) ) y
                     <-> y = ( x +c n ) ) $=
       ( vz vp vq cv caddcfn c1st cvv wbr cop wceq wa opeq2 eqeq2d 3bitri anbi1i
@@ -61870,7 +61867,7 @@ $)
   ${
     $d N n p x y $.  $d P p x y $.
     $( Lemma for ~ addccan2nc .  Establish stratification for induction.
-       (Contributed by Scott Fenton, 02-Aug-2019.) $)
+       (Contributed by Scott Fenton, 2-Aug-2019.) $)
     addccan2nclem2 $p |- ( ( N e. V /\ P e. W ) ->
                 { x | ( ( x +c N ) = ( x +c P ) -> N = P ) } e. _V ) $=
       ( vn vp vy wcel wa cv cplc wceq cab cvv caddcfn c1st ccnv ccom wbr ccompl
@@ -61892,7 +61889,7 @@ $)
     $d M x m $.  $d N x m $.  $d P x m $.
     $( Cancellation law for addition over the cardinal numbers.  Biconditional
        form of theorem XI.3.2 of [Rosser] p. 391.  (Contributed by Scott
-       Fenton, 02-Aug-2019.) $)
+       Fenton, 2-Aug-2019.) $)
     addccan2nc $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
         ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
       ( vx vm cnnc wcel cncs cplc wceq wi cv c0c c1c wa addceq1 eqeq12d addcid2
@@ -61912,7 +61909,7 @@ $)
     $d M q $.  $d N q $.  $d P q $.
     $( Cardinal addition preserves cardinal less than.  Biconditional form of
        corollary 4 of theorem XI.3.2 of [Rosser] p 391.  (Contributed by Scott
-       Fenton, 02-Aug-2019.) $)
+       Fenton, 2-Aug-2019.) $)
     lecadd2 $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
        ( ( M +c N ) <_c ( M +c P ) <-> N <_c P ) ) $=
       ( vq cnnc wcel cncs w3a cplc clec wbr cv wceq wrex wb nnnc ncaddccl sylan
@@ -61929,7 +61926,7 @@ $)
   ${
     $d M p q $.  $d N p q $.
     $( Relationship between successor and cardinal less than or equal.
-       (Contributed by Scott Fenton, 03-Aug-2019.) $)
+       (Contributed by Scott Fenton, 3-Aug-2019.) $)
     ncslesuc $p |- ( ( M e. NC /\ N e. NC ) -> ( M <_c ( N +c 1c ) <->
        ( M <_c N \/ M = ( N +c 1c ) ) ) ) $=
       ( vp vq cncs wcel wa c1c cplc clec wbr wceq wo cv wrex c0c addceq2 adantl
@@ -61989,7 +61986,7 @@ $)
   $}
 
   $( Lemma for ~ nmembers1 .  The set of all elements between one and zero is
-     empty.  (Contributed by Scott Fenton, 01-Aug-2019.) $)
+     empty.  (Contributed by Scott Fenton, 1-Aug-2019.) $)
   nmembers1lem2 $p |- { m e. Nn | ( 1c <_c m /\ m <_c 0c ) } e. 0c $=
     ( c1c cv clec wbr wa cnnc crab wcel wn wral wi cltc 0lt1c cncs wb 0cnc 1cnc
     c0c ltlenlec mp2an mpbi simpri nnnc lectr mp3an13 syl exp3a imp imnan sylib
@@ -62002,8 +61999,8 @@ $)
     $d A m x y $.  $d B m x y $.
     $( Lemma for ~ nmembers1 .  If the interval from one to a natural is in a
        given natural, extending it by one puts it in the next natural.
-       (Contributed by Scott Fenton, 03-Aug-2019.) $)
-    nmembers1lem3 $p |- ( ( A e. Nn /\ B e. Nn ) -> 
+       (Contributed by Scott Fenton, 3-Aug-2019.) $)
+    nmembers1lem3 $p |- ( ( A e. Nn /\ B e. Nn ) ->
      ( { m e. Nn | ( 1c <_c m /\ m <_c A ) } e. B ->
        { m e. Nn | ( 1c <_c m /\ m <_c ( A +c 1c ) ) } e. ( B +c 1c ) ) ) $=
       ( vx vy c1c cv clec wbr wa cnnc wcel cplc cun wceq wn cncs adantr anbi12d
@@ -62038,7 +62035,7 @@ $)
        not stratifiable.  Instead, we arrive at the weaker conclusion below.
        We can arrive at the earlier proposition once we add the Axiom of
        Counting, which we will do later.  (Contributed by Scott Fenton,
-       03-Aug-2019.) $)
+       3-Aug-2019.) $)
     nmembers1 $p |- ( N e. Nn ->
       { m e. Nn | ( 1c <_c m /\ m <_c N ) } e. T_c T_c N ) $=
       ( vn c1c clec wbr wa cnnc crab ctc wcel c0c cplc wceq anbi2d rabbidv tceq
@@ -63053,7 +63050,7 @@ $)
        ` Nn ` that obeys the standard recursion relationship.  Definition
        adapted from theorem XI.3.24 of [Rosser] p. 412.  (Contributed by Scott
        Fenton, 30-Jul-2019.) $)
-    df-frec $a |- FRec ( F , I ) = 
+    df-frec $a |- FRec ( F , I ) =
     Clos1 ( { <. 0c , I >. } , PProd ( ( x e. _V |-> ( x +c 1c ) ) , F ) ) $.
   $}
 
@@ -63183,7 +63180,7 @@ $)
     $d F w y z $.
     $( Lemma for ~ fnfrec .  Establish stratification for induction.
        (Contributed by Scott Fenton, 31-Jul-2019.) $)
-    fnfreclem1 $p |- ( F e. V -> 
+    fnfreclem1 $p |- ( F e. V ->
                 { w | A. y A. z ( ( w F y /\ w F z ) -> y = z ) } e. _V ) $=
       ( wcel cv wbr wa weq wal cvv cid wn vex cop wex df-br bitri exbii wi ccnv
       cab cxp cins2 cin cins3 cdif crn ccompl elcompl elrn2 elin opelcnv opelxp
