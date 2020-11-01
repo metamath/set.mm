@@ -174,36 +174,35 @@ Overview of this work</FONT></B>
 
 <P>(By G&eacute;rard Lang, 7-May-2018)
 
-<P>Mario Carneiro's work (Metamath database)
- "iset.mm" provides in Metamath a development of
-"set.mm" whose eventual
+<P>Mario Carneiro's work (Metamath database) "iset.mm" provides in Metamath a
+development of "set.mm" whose eventual
 aim is to show how many of the theorems of set theory and
 mathematics that can be derived from classical first order logic can
 also be derived from a weaker system called "intuitionistic logic."  To
 achieve this task, iset.mm adds (or substitutes) intuitionistic
 axioms for a number of the classical logical axioms of set.mm.
 
-<P>Among these new axioms, the 6 first
+<P>Among these new axioms, the first six
 ( ~ ax-ia1 ,
 ~ ax-ia2 ,
 ~ ax-ia3 ,
 ~ ax-io ,
-~ ax-in1
+~ ax-in1 ,
 and
 ~ ax-in2 ), when added to
 ~ ax-1 ,
-~ ax-2
+~ ax-2 ,
 and
 ~ ax-mp ,
- allow for the development of intuitionistic
-propositional logic.  We omit the classical axiom
+allow for the development of intuitionistic propositional logic.
+We omit the classical axiom
 <SPAN CLASS=math>((&not;
 <SPAN CLASS=wff STYLE="color:blue">&#x1D711;</SPAN> &rarr; &not; <SPAN
 CLASS=wff STYLE="color:blue">&#x1D713;</SPAN>) &rarr; (<SPAN CLASS=wff
 STYLE="color:blue">&#x1D713;</SPAN> &rarr; <SPAN CLASS=wff
 STYLE="color:blue">&#x1D711;</SPAN>))</SPAN> (which is ax-3 in
 set.mm).  Each of our new axioms is a theorem of classical
-propositional logic, but ax-3 cannot be derived from them.  Similarly,
+propositional logic, but ~ ax-3 cannot be derived from them.  Similarly,
 other basic classical theorems, like the third middle excluded or the
 equivalence of a proposition with its double negation, cannot be derived
 in intuitionistic propositional calculus.  Glivenko showed that a
@@ -215,13 +214,13 @@ if &not;&not;<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
 <P>The next 4 new axioms
 ( ~ ax-ial ,
 ~ ax-i5r ,
-~ ax-ie1
+~ ax-ie1 ,
 and
 ~ ax-ie2 )
 together with the set.mm axioms
 ~ ax-4 ,
 ~ ax-5 ,
-~ ax-7
+~ ax-7 ,
 and
 ~ ax-gen
 do not mention equality or distinct variables.
@@ -232,20 +231,20 @@ The classical axiom ~ ax-12 is strengthened into first ~ ax-i12 and then
 classically but which do not follow from ~ ax-12 , at least not in an obvious
 way, in intuitionistic logic).
 
-The substitution of ~ ax-i9 , ~ ax-i12, and ~ ax-bndl for ~ ax-9 and ~ ax-12
+The substitution of ~ ax-i9 , ~ ax-i12 , and ~ ax-bndl for ~ ax-9 and ~ ax-12
 and the inclusion of
 ~ ax-8 ,
 ~ ax-10 ,
 ~ ax-11 ,
 ~ ax-13 ,
-~ ax-14
+~ ax-14 ,
 and
 ~ ax-17
 allow for the development of the intuitionistic predicate calculus.
 
 <P>Each of the new axioms is a theorem of classical first order
 logic with equality.  But some axioms of classical first order logic
-with equality, like ax-3, cannot be derived in the intuitionistic
+with equality, like ~ ax-3 , cannot be derived in the intuitionistic
 predicate calculus.</P>
 
 <P>One of the major interests of the intuitionistic predicate calculus
