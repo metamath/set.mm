@@ -478,7 +478,7 @@ $)
   $}
 
   $( Principle of identity.  Theorem *2.08 of [WhiteheadRussell] p. 101.  For
-     another version of the proof directly from axioms, see ~ id1 .
+     another version of the proof directly from axioms, see ~ idALT .
      (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Stefan Allan,
      20-Mar-2006.) $)
   id $p |- ( ph -> ph ) $=
@@ -494,8 +494,9 @@ $)
      ~ http://www.mathsci.appstate.edu/~~hirstjl/primer/hirst.pdf .  For a
      shorter version of the proof that takes advantage of previously proved
      theorems, see ~ id .  (Contributed by NM, 5-Aug-1993.)
-     (New usage is discouraged.)  (Proof modification is discouraged.) $)
-  id1 $p |- ( ph -> ph ) $=
+     (Proof modification is discouraged.)  Use ~ id instead.
+     (New usage is discouraged.) $)
+  idALT $p |- ( ph -> ph ) $=
     ( wi ax-1 ax-2 ax-mp ) AAABZBZFAACAFABBGFBAFCAFADEE $.
 
   $( Principle of identity with antecedent.  (Contributed by NM,
