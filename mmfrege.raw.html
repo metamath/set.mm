@@ -91,121 +91,379 @@ SUMMARY="Guide to Frege Notation">
 
 
 <TR><TH WIDTH="10em">Statement
-</TH><TH WIDTH="110px">Frege</TH><TH WIDTH="14em">Metamath</TH><TH WIDTH="15em">Notes</TH></TR>
+</TH><TH WIDTH="110px">Frege
+</TH><TH WIDTH="14em">Metamath</TH><TH WIDTH="15em">Notes</TH></TR>
 
-<TR ALIGN=LEFT><TD>The proposition, an idea which may be judged true or false,  &#120546;.</TD>
-<TD><IMG SRC="_frege_A.svg" WIDTH="80" HEIGHT="32" STYLE="margin-bottom:0px; vertical-align: top" ALT="Alpha"></TD>
+<TR ALIGN=LEFT><TD>The proposition, an idea which may be judged
+true or false,  &#120546;.</TD>
+<TD><IMG SRC="_frege_A.svg" WIDTH="80" HEIGHT="32"
+STYLE="margin-bottom:0px; vertical-align: top" ALT="Alpha"></TD>
 <TD> &nbsp;&nbsp; ` ph ` </TD>
-<TD ROWSPAN=4> &#120546; maps to ` ph ` .</TD></TR> 
+<TD ROWSPAN=4> &#120546; maps to ` ph ` .</TD></TR>
 
 <TR ALIGN=LEFT><TD>Proposition &#120546; holds true.</TD>
-<TD><IMG SRC="_frege_jA.svg" WIDTH="80" HEIGHT="32" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment Alpha"></TD>
+<TD><IMG SRC="_frege_jA.svg" WIDTH="80" HEIGHT="32"
+STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment Alpha"></TD>
 <TD> ` |- ph ` </TD>
-</TR> 
+</TR>
 
 <TR ALIGN=LEFT><TD>The negation of proposition &#120546;.</TD>
-<TD><IMG SRC="_frege_nA.svg" WIDTH="80" HEIGHT="32" STYLE="margin-bottom:0px; vertical-align: top" ALT="negated Alpha"></TD>
-<TD> &nbsp;&nbsp; ` -. ph ` </TD></TR> 
+<TD><IMG SRC="_frege_nA.svg" WIDTH="80" HEIGHT="32"
+STYLE="margin-bottom:0px; vertical-align: top" ALT="negated Alpha"></TD>
+<TD> &nbsp;&nbsp; ` -. ph ` </TD></TR>
 
 <TR ALIGN=LEFT><TD>Proposition &#120546; holds false.</TD>
-<TD><IMG SRC="_frege_jnA.svg" WIDTH="80" HEIGHT="32" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment negated Alpha"></TD>
-<TD> ` |- -. ph ` </TD></TR> 
+<TD><IMG SRC="_frege_jnA.svg" WIDTH="80" HEIGHT="32"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment negated Alpha"></TD>
+<TD> ` |- -. ph ` </TD></TR>
 
 <TR ALIGN=LEFT><TD>The idea that &#120547; implies &#120546;.</TD>
-<TD><IMG SRC="_frege_BimA.svg" WIDTH="80" HEIGHT="52" STYLE="margin-bottom:0px; vertical-align: top" ALT="Beta implies Alpha"></TD>
-<TD>  &nbsp;&nbsp; ` ( ph -> ps ) ` </TD>
-<TD ROWSPAN="10"> &#120547; maps to ` ph ` .  <BR>&#120546; maps to ` ps ` .  <BR> Since Metamath's standard set.mm has more connectives for propositions than just implication and negation, some of these statements have fully equivalent synonyms. </TD></TR> 
+<TD><IMG SRC="_frege_BimA.svg" WIDTH="80" HEIGHT="52"
+STYLE="margin-bottom:0px; vertical-align: top" ALT="Beta implies Alpha"></TD>
+<TD> &nbsp;&nbsp; ` ( ph -> ps ) ` </TD>
+<TD ROWSPAN="10"> &#120547; maps to ` ph ` .
+<BR>&#120546; maps to ` ps ` .
+<BR> Since Metamath's standard set.mm has more connectives for
+propositions than just implication and negation, some of these
+statements have fully equivalent synonyms. </TD></TR>
 
-<TR ALIGN=LEFT><TD>The judgment that the truth of  &#120547; implies the truth of &#120546;.</TD>
-<TD><IMG SRC="_frege_jBimA.svg" WIDTH="80" HEIGHT="52" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment Beta implies Alpha"></TD>
+<TR ALIGN=LEFT><TD>The judgment that the truth of  &#120547; implies
+the truth of &#120546;.</TD>
+<TD><IMG SRC="_frege_jBimA.svg" WIDTH="80" HEIGHT="52"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment Beta implies Alpha"></TD>
 <TD> ` |- ( ph -> ps ) ` </TD>
-</TR> 
+</TR>
 
 
-<TR ALIGN=LEFT><TD>The judgment that not both &#120547; and &#120546; hold true.</TD>
-<TD><IMG SRC="_frege_jBimnA.svg" WIDTH="80" HEIGHT="52" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment Beta implies negated Alpha"></TD>
-<TD> ` |- ( ph -> -. ps ) ` <BR> ` |- ( ph -/\ ps ) ` </TD>
-</TR> 
+<TR ALIGN=LEFT><TD>The judgment that not both &#120547; and &#120546;
+hold true.</TD>
+<TD><IMG SRC="_frege_jBimnA.svg" WIDTH="80" HEIGHT="52"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment Beta implies negated Alpha"></TD>
+<TD> ` |- ( ph -> -. ps ) `
+<BR> ` |- ( ph -/\ ps ) ` </TD>
+</TR>
 
-<TR ALIGN=LEFT><TD>The judgment that &#120547; or &#120546; (or both) holds true.</TD>
-<TD><IMG SRC="_frege_jBorA.svg" WIDTH="80" HEIGHT="52" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment negated Beta implies Alpha"></TD>
-<TD> ` |- ( -. ph -> ps ) ` <BR> ` |- ( ph \/ ps ) ` </TD>
-</TR> 
+<TR ALIGN=LEFT><TD>The judgment that &#120547; or &#120546; (or
+both) holds true.</TD>
+<TD><IMG SRC="_frege_jBorA.svg" WIDTH="80" HEIGHT="52"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment negated Beta implies Alpha"></TD>
+<TD> ` |- ( -. ph -> ps ) `
+<BR> ` |- ( ph \/ ps ) ` </TD>
+</TR>
 
 
-<TR ALIGN=LEFT><TD>The judgment that both &#120547; and &#120546; hold true.</TD>
-<TD><IMG SRC="_frege_jBandA.svg" WIDTH="80" HEIGHT="52" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment negation of Beta implies negated Alpha"></TD>
-<TD> ` |- -. ( ph -> -. ps ) ` <BR> ` |- -. ( ph -/\ ps ) ` <BR> ` |- ( ph /\ ps ) ` </TD>
-</TR> 
+<TR ALIGN=LEFT><TD>The judgment that both &#120547; and &#120546;
+hold true.</TD>
+<TD><IMG SRC="_frege_jBandA.svg" WIDTH="80" HEIGHT="52"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment negation of Beta implies negated Alpha"></TD>
+<TD> ` |- -. ( ph -> -. ps ) `
+<BR> ` |- -. ( ph -/\ ps ) `
+<BR> ` |- ( ph /\ ps ) ` </TD>
+</TR>
 
-<TR ALIGN=LEFT><TD ROWSPAN="2">The judgment that exactly one of &#120547; and &#120546; holds true.</TD>
-<TD><IMG SRC="_frege_jBxor1A.svg" WIDTH="104" HEIGHT="92" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment that both negated Beta implies Alpha and Beta implies negated Alpha"></TD>
+<TR ALIGN=LEFT><TD ROWSPAN="2">The judgment that exactly one of
+&#120547; and &#120546; holds true.</TD>
+<TD><IMG SRC="_frege_jBxor1A.svg" WIDTH="104" HEIGHT="92"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment that both negated Beta implies Alpha and Beta implies
+negated Alpha"></TD>
 <TD> ` |- -. ( ( -. ph -> ps ) -> -. ( ph -> -. ps ) ) `
 <BR> ` |- ( ( -. ph -> ps ) /\ ( ph -> -. ps ) ) `
 <BR> ` |- ( ph  \/_ ps ) ` </TD>
-</TR> 
+</TR>
 
 <TR ALIGN=LEFT>
-<TD><IMG SRC="_frege_jBxor2A.svg" WIDTH="104" HEIGHT="92" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment that both Beta implies negated Alpha and negated Beta implies Alpha"></TD>
+<TD><IMG SRC="_frege_jBxor2A.svg" WIDTH="104" HEIGHT="92"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment that both Beta implies negated Alpha and negated Beta
+implies Alpha"></TD>
 <TD> ` |- -. ( ( ph -> -. ps ) -> -. ( -. ph -> ps ) ) `
 <BR> ` |- ( ( ph -> -. ps ) /\ ( -. ph -> ps ) ) `
 <BR> ` |- ( ph  \/_ ps ) ` </TD>
 </TR>
 
-<TR ALIGN=LEFT><TD ROWSPAN="2">The judgment &#120547; is true while &#120546; is false.</TD>
-<TD><IMG SRC="_frege_njBimA.svg" WIDTH="80" HEIGHT="52" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment negation of Beta implies Alpha"></TD>
-<TD> ` |- -. ( ph -> ps ) ` </TD>
-</TR> 
-
-<TR ALIGN=LEFT>
-<TD><IMG SRC="_frege_njnAimnB.svg" WIDTH="80" HEIGHT="52" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment negation of negated Alpha implies negated Beta"></TD>
-<TD> ` |- -. ( -. ps -> -. ph ) ` <BR> ` |- ( -. ps /\ ph ) ` </TD>
-</TR> 
-
-<TR ALIGN=LEFT><TD>The judgment that neither &#120546; nor &#120547; is true.</TD>
-<TD><IMG SRC="_frege_njnAimB.svg" WIDTH="80" HEIGHT="52" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment negation of negated Alpha implies Beta"></TD>
-<TD> ` |- -. ( -. ps -> ph ) ` <BR> ` |- -. ( ps \/ ph ) ` </TD>
-</TR> 
-
-
-<TR ALIGN=LEFT><TD>The judgment that the truth of both &#120548; and &#120547; implies the truth of &#120546;.</TD>
-<TD><IMG SRC="_frege_jGandBimA.svg" WIDTH="104" HEIGHT="72" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment Gamma and Beta together imply Alpha"></TD>
-<TD> ` |- ( ph -> ( ps -> ch ) ) ` <BR> ` |- ( ( ph /\ ps ) -> ch ) ` </TD>
-<TD ROWSPAN=3> &#120548; maps to ` ph ` .  <BR>&#120547; maps to ` ps ` . <BR>&#120546; maps to ` ch ` .  <BR> Since Metamath's standard set.mm  has more connectives for propositions than just implication and negation, some of these statements have fully equivalent synonyms. </TD></TR> 
-
-
-<TR ALIGN=LEFT><TD>The judgment that &#120548;, &#120547;, or &#120546; (or any combination) holds true.</TD>
-<TD><IMG SRC="_frege_jnGandnBimA.svg" WIDTH="104" HEIGHT="72" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment negated Gamma and negated Beta together imply Alpha"></TD>
-<TD> ` |- ( -. ph -> ( -. ps -> ch ) ) ` <BR> ` |- ( ( -. ph /\ -. ps ) -> ch ) `  <BR> ` |- ( ph \/ ps \/ ch ) ` </TD>
-</TR> 
-
-<TR ALIGN=LEFT><TD>The judgment that &#120548;, &#120547;, and &#120546; all hold true.</TD>
-<TD><IMG SRC="_frege_jGandBandA.svg" WIDTH="104" HEIGHT="72" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment negation of Gamma and Beta togeter imply negated Alpha"></TD>
-<TD> ` |- -. ( ph -> ( ps -> -. ch ) ) ` <BR> ` |- -. ( ( ph /\ ps ) -> -. ch ) `  <BR> ` |- ( ph /\ ps /\ ch ) ` </TD>
-</TR> 
-
-<TR ALIGN=LEFT><TD>The judgment that &#120546; is equivalent to &#120547;.</TD>
-<TD><IMG SRC="_frege_jAeqB.svg" WIDTH="118" HEIGHT="32" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment Alpha is equivalent to Beta"></TD>
-<TD> ` |- ( ps <-> ph ) ` <BR> ` |- { x | ps } = { x | ph } ` <BR> ` |- { <. x , y >. | ps } = { <. x , y >. | ph } ` <BR> ` |- A = B ` </TD>
-<TD> Fundamentally, equality of classes can be distinguished from biimplication, the equality of propositions, since classes are equal iff they contain the same sets, and not every class is a set. So we have ` |- -. ( _om C_ X <-> ( _om C_ X /\ X e. _V ) ) ` but ` |- { x | _om C_ x } = { x | ( _om C_ x /\ x e. _V ) } ` . Thus the assumption of naive set theory is where Frege must break down. Intermediate between the two is when biimplication implies equality of classes or relations.  With some adaptation, much can be salvaged by a forgiving translation.  <BR> &#120546; maps to ` ps ` or ` A ` .  <BR>&#120547; maps to ` ph ` or ` B ` </TD></TR> 
-
-<TR ALIGN=LEFT><TD>The judgment that &#120546; has the property &#120567;. (Which implies &#120546; is a set.)</TD>
-<TD><IMG SRC="_frege_jAinP.svg" WIDTH="118" HEIGHT="32" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment Alpha has property Phi"></TD>
-<TD> ` |- [. A / x ]. ph ` <BR> ` |- A e. P ` <BR> ` |- A e. { x | ph } ` </TD>
-<TD ROWSPAN="4"> &#120546; maps to ` A ` .  <BR>&#120547; maps to ` B ` .  <BR>&#120567; maps to ` ph ` or ` P ` or ` { x | ph } ` .  <BR>&#120569; maps to ` ps ` or ` R ` or ` { <. x , y >. | ps } ` .  <BR>&#120094; maps to ` a ` . <BR> ` x ` and ` y ` are set variables which presumably, but not necessarily appear in what is eventually substituted for ` ph ` or ` ps ` .</TD></TR>
-
-<TR ALIGN=LEFT><TD>The judgment that &#120547; stands in relation &#120569; to  &#120546;. (Which implies that &#120546; and &#120547; are sets.) </TD>
-<TD><IMG SRC="_frege_jABinS.svg" WIDTH="118" HEIGHT="32" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment Psi relates Alpha and Beta"></TD>
-<TD> ` |- [. A / x ]. [. B / y ]. ps ` <BR> ` |- A R B ` <BR>  ` |- A { <. x , y >. | ps }  B ` <BR> ` |- B e. ( R " { A } ) ` <BR> ` |- B e. ( { <. x , y >. | ps }  " { A } ) ` </TD>
+<TR ALIGN=LEFT><TD ROWSPAN="2">The judgment &#120547; is true while
+&#120546; is false.</TD>
+<TD><IMG SRC="_frege_njBimA.svg" WIDTH="80" HEIGHT="52"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment negation of Beta implies Alpha"></TD>
+<TD> ` |- -. ( ph -> ps ) `
+<BR> ` |- ( -. ps /\ ph ) ` </TD>
 </TR>
 
-<TR ALIGN=LEFT><TD>The judgment that all &#120094; have the property &#120567;.</TD>
-<TD><IMG SRC="_frege_jalAinP.svg" WIDTH="118" HEIGHT="32" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment all a have property Phi"></TD>
-<TD> ` |- A. a [ a / x ] ph ` <BR> ` |- A. a a e. P ` <BR> ` |- A. a a e. { x | ph } ` </TD></TR>
+<TR ALIGN=LEFT>
+<TD><IMG SRC="_frege_njnAimnB.svg" WIDTH="80" HEIGHT="52"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment negation of negated Alpha implies negated Beta"></TD>
+<TD> ` |- -. ( -. ps -> -. ph ) `
+<BR> ` |- ( -. ps /\ ph ) ` </TD>
+</TR>
 
-<TR ALIGN=LEFT><TD>The negated judgment that no &#120094; have the property &#120567;.</TD>
-<TD><IMG SRC="_frege_jexAinP.svg" WIDTH="118" HEIGHT="32" STYLE="margin-bottom:0px; vertical-align: top" ALT="Judgment negation of all a do not have property Phi"></TD>
-<TD> ` |- -. A. a -. [ a / x ] ph ` <BR> ` |- E. a [ a / x ] ph ` <BR> ` |- -. A. a -. a e. P ` <BR> ` |- E. a a e. P ` </TD></TR>
+<TR ALIGN=LEFT><TD>The judgment that neither &#120546; nor &#120547;
+is true.</TD>
+<TD><IMG SRC="_frege_njnAimB.svg" WIDTH="80" HEIGHT="52"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment negation of negated Alpha implies Beta"></TD>
+<TD> ` |- -. ( -. ps -> ph ) `
+<BR> ` |- -. ( ps \/ ph ) ` </TD>
+</TR>
+
+
+<TR ALIGN=LEFT><TD>The judgment that the truth of both &#120548;
+and &#120547; implies the truth of &#120546;.</TD>
+<TD><IMG SRC="_frege_jGandBimA.svg" WIDTH="104" HEIGHT="72"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment Gamma and Beta together imply Alpha"></TD>
+<TD> ` |- ( ph -> ( ps -> ch ) ) `
+<BR> ` |- ( ( ph /\ ps ) -> ch ) ` </TD>
+<TD ROWSPAN=3> &#120548; maps to ` ph ` .
+<BR>&#120547; maps to ` ps ` .
+<BR>&#120546; maps to ` ch ` .
+<BR> Since Metamath's standard set.mm  has more connectives for
+propositions than just implication and negation, some of these
+statements have fully equivalent synonyms. </TD></TR>
+
+
+<TR ALIGN=LEFT><TD>The judgment that &#120548;, &#120547;, or
+&#120546; (or any combination) holds true.</TD>
+<TD><IMG SRC="_frege_jnGandnBimA.svg" WIDTH="104" HEIGHT="72"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment negated Gamma and negated Beta together imply Alpha"></TD>
+<TD> ` |- ( -. ph -> ( -. ps -> ch ) ) `
+<BR> ` |- ( ( -. ph /\ -. ps ) -> ch ) `
+<BR> ` |- ( ph \/ ps \/ ch ) ` </TD>
+</TR>
+
+<TR ALIGN=LEFT><TD>The judgment that &#120548;, &#120547;, and
+&#120546; all hold true.</TD>
+<TD><IMG SRC="_frege_jGandBandA.svg" WIDTH="104" HEIGHT="72"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment negation of Gamma and Beta togeter imply negated Alpha"></TD>
+<TD> ` |- -. ( ph -> ( ps -> -. ch ) ) `
+<BR> ` |- -. ( ( ph /\ ps ) -> -. ch ) `
+<BR> ` |- ( ph /\ ps /\ ch ) ` </TD>
+</TR>
+
+<TR ALIGN=LEFT><TD>The judgment that &#120546; is equivalent to &#120547;.</TD>
+<TD><IMG SRC="_frege_jAeqB.svg" WIDTH="118" HEIGHT="32"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment Alpha is equivalent to Beta"></TD>
+<TD> ` |- ( ps <-> ph ) `
+<BR> ` |- { x | ps } = { x | ph } `
+<BR> ` |- { <. x , y >. | ps } = { <. x , y >. | ph } `
+<BR> ` |- A = B ` </TD>
+<TD> Fundamentally, equality of classes can be distinguished from
+biimplication, the equality of propositions, since classes are equal
+iff they contain the same sets, and not every class is a set. So
+we have ` |- -. ( _om C_ X <-> ( _om C_ X /\ X e. _V ) ) ` but
+` |- { x | _om C_ x } = { x | ( _om C_ x /\ x e. _V ) } ` . Thus
+the assumption of naive set theory is where Frege must break down.
+Intermediate between the two is when biimplication implies equality
+of classes or relations.  With some adaptation, much can be salvaged
+by a forgiving translation.
+<BR> &#120546; maps to ` ps ` or ` A ` .
+<BR>&#120547; maps to ` ph ` or ` B ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>The judgment that &#120546; has the property
+&#120567;. (Which implies &#120546; is a set.)</TD>
+<TD><IMG SRC="_frege_jAinP.svg" WIDTH="118" HEIGHT="32"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment Alpha has property Phi"></TD>
+<TD> ` |- [. A / x ]. ph `
+<BR> ` |- A e. P `
+<BR> ` |- A e. { x | ph } ` </TD>
+<TD ROWSPAN="4"> &#120546; maps to ` A ` .
+<BR>&#120547; maps to ` B ` .
+<BR>&#120567; maps to ` ph ` or ` P ` or ` { x | ph } ` .
+<BR>&#120569; maps to ` ps ` or ` R ` or ` { <. x , y >. | ps } ` .
+<BR>&#120094; maps to ` a ` .
+<BR> ` x ` and ` y ` are set variables which presumably, but not
+necessarily appear in what is eventually substituted for ` ph ` or
+` ps ` .</TD></TR>
+
+<TR ALIGN=LEFT><TD>The judgment that &#120547; stands in relation
+&#120569; to  &#120546;. (Which implies that &#120546; and &#120547;
+are sets.) </TD>
+<TD><IMG SRC="_frege_jABinS.svg" WIDTH="118" HEIGHT="32"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment Psi relates Alpha and Beta"></TD>
+<TD> ` |- [. A / x ]. [. B / y ]. ps `
+<BR> ` |- A R B `
+<BR> ` |- A { <. x , y >. | ps }  B `
+<BR> ` |- B e. ( R " { A } ) `
+<BR> ` |- B e. ( { <. x , y >. | ps }  " { A } ) ` </TD>
+</TR>
+
+<TR ALIGN=LEFT><TD>The judgment that all &#120094; have the property
+&#120567;.</TD>
+<TD><IMG SRC="_frege_jalAinP.svg" WIDTH="118" HEIGHT="32"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment all a have property Phi"></TD>
+<TD> ` |- A. a [ a / x ] ph `
+<BR> ` |- A. a a e. P `
+<BR> ` |- A. a a e. { x | ph } ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>The negated judgment that no &#120094; have the
+property &#120567;.</TD>
+<TD><IMG SRC="_frege_jexAinP.svg" WIDTH="118" HEIGHT="32"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Judgment negation of all a do not have property Phi"></TD>
+<TD> ` |- -. A. a -. [ a / x ] ph `
+<BR> ` |- E. a [ a / x ] ph `
+<BR> ` |- -. A. a -. a e. P `
+<BR> ` |- E. a a e. P ` </TD></TR>
+
+</TABLE>
+
+</TD></TR><TR><TD ALIGN=LEFT>
+
+<FONT SIZE=-2 FACE=ARIAL>Colors of variables:
+ <FONT COLOR="#0000FF">wff</FONT> <FONT COLOR="#FF0000">set</FONT> <FONT
+COLOR="#CC33CC">class</FONT></FONT>
+
+</TD></TR></TABLE>
+</CENTER>
+
+
+<P><B><FONT COLOR="#006633">Additional
+Notation</FONT></B>&nbsp;&nbsp;&nbsp; Having laid the foundations
+of notation for propositions and classes that are sometimes required
+to be sets, Frege invents  notation to introduce definitions and
+procedes to define new classes of symbols.
+
+<P><CENTER>
+
+<TABLE BORDER=0 CELLSPACING=0 STYLE="max-width:90%"><TR><TD>
+
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Additional Frege Notation">
+<CAPTION><B>Additional Frege Notation</B></CAPTION>
+
+  <COLGROUP>
+    <COL STYLE="width: 10em; max-width: 25em">
+    <COL STYLE="width: 110px">
+    <COL STYLE="width: 14em">
+    <COL STYLE="width: 15em; max-width: 25em">
+  </COLGROUP>
+
+
+<TR><TH WIDTH="10em">Statement
+</TH><TH WIDTH="110px">Frege
+</TH><TH WIDTH="14em">Metamath</TH><TH WIDTH="15em">Notes</TH></TR>
+
+<TR ALIGN=LEFT><TD>Introducing a propositional definition.</TD>
+<TD><IMG SRC="_frege_dfAeqB.svg" WIDTH="88" HEIGHT="32"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Defintion: Alpha equivalent to Beta"></TD>
+<TD> ` |- ( ph <-> ps ) ` </TD>
+<TD> &#120546; maps to ` ph ` .
+<BR> &#120547; maps to ` ps ` .
+<BR> While newly defined terms are introduced on the right by Frege,
+set.mm follows the convention that newly defined terms appear on
+the left with an expression in known symbols on the right.
+<BR> This judgment is a definition in Metamath only if it is a the
+content of an <TT>$a</TT> statement as Metamath doesn't distinguish
+between definitions and axioms. </TD></TR>
+
+<TR ALIGN=LEFT><TD>The proposition that membership in class &#119865;
+(a proposition schema with one slot) is hereditary in the sequence
+generated by relation &#119891; (which takes two slots where order
+is distinguishable). </TD>
+<TD><IMG SRC="_frege_fheF.svg" WIDTH="86" HEIGHT="72"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="F is hereditary in the f-sequence"></TD>
+<TD> ` R hereditary A `
+<BR> ` ( R " A ) C_ A `
+<BR> ` A. x A. y ( ( x e. A /\ x R y ) -> y e. A ) ` </TD>
+<TD ROWSPAN=2> &#119891; maps to ` R ` .
+<BR> &#119865; maps to ` A ` .
+<BR> &#945; and &#948; are newly-introduced placeholders which do
+not appear in any expression similar the the distinct bound variables
+` x ` and ` y ` , provided that they don't appear in ` A ` or ` R
+` .
+<BR> The ` hereditary ` connective was introduced while translating
+Frege to avoid the need to duplicate arbitrarily long expressions
+for ` A ` .</TD></TR>
+
+<TR ALIGN=LEFT><TD>The proposition that membership in class &#119865;
+(a proposition schema with one slot) is hereditary in the sequence
+generated by converse of the relation &#119891;. </TD>
+<TD><IMG SRC="_frege_cfheF.svg" WIDTH="86" HEIGHT="72"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="F is hereditary in the converse of the f-sequence"></TD>
+<TD> ` ``' R hereditary A `
+<BR> ` ( ``' R " A ) C_ A `
+<BR> ` A. x A. y ( ( x e. A /\ y R x ) -> y e. A ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD> &#119910; follows &#119909; in the &#119891;-sequence </TD>
+<TD><IMG SRC="_frege_yfollowsx.svg" WIDTH="88" HEIGHT="72"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Defintion: y follows x in the f-sequence"></TD>
+<TD> ` Y e. |^| { p | ( R " ( p u. { X } ) ) C_ p } `
+<BR> ` X ( t+ `` ``' ``' R ) Y ` </TD>
+<TD ROWSPAN="4"> &#119909; maps to ` X ` .
+<BR> &#119910; maps to ` Y ` .
+<BR> &#119891; maps to ` R ` .
+<BR> ` p ` is a bound set variable, distinct from ` X ` , ` Y ` and
+` R ` .  Because ` p ` is a set variable, so the image of a set
+under ` R ` (or ` ``' R ` ) must be a set. For the abbreviations,
+we require the stronger condition that the relational content of ` R `
+must be a set.
+<BR> ` t+ ` maps to the transitive closure of a relation, while ` t* `
+maps to the reflexive-transitive closure of a relation.
+<BR> ` _I ` is the identity function.
+<BR> Once again the lowercase Greek letters have no meaning but to
+order the two slots of the relation, but now they are subscripts
+of the concrete variables &#119909; and &#119910; which need not
+be distinct.
+<BR> This statement cannot be true unless both ` X ` and ` Y ` are
+sets. </TD></TR>
+
+<TR ALIGN=LEFT><TD> &#119910; precedes &#119909; in the &#119891;-sequence
+</TD>
+<TD><IMG SRC="_frege_yprecedsx.svg" WIDTH="88" HEIGHT="72"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Defintion: y precedes x in the f-sequence"></TD>
+<TD> ` Y e. |^| { p | ( ``' R " ( p u. { X } ) ) C_ p } `
+<BR> ` X ( t+ `` ``' R ) Y ` </TD></TR>
+
+<TR ALIGN=LEFT><TD> &#119910; belongs to the &#119891;-sequence
+begining with &#119909;</TD>
+<TD><IMG SRC="_frege_yinfbegx.svg" WIDTH="88" HEIGHT="72"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Defintion: y belongs to the f-sequence begining with x"></TD>
+<TD> ` Y e. |^| { p | ( ( R u. _I ) " ( p u. { X } ) ) C_ p } `
+<BR> ` X ( ( t+ `` ``' ``' R ) u. _I ) Y `
+<BR> ` X ( ( t* `` ``' ``' R ) u. _I ) Y ` </TD></TR>
+
+<TR ALIGN=LEFT><TD> &#119910; belongs to the &#119891;-sequence
+ending with &#119909;</TD>
+<TD><IMG SRC="_frege_yinfendx.svg" WIDTH="88" HEIGHT="72"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="Defintion: y belongs to the f-sequence ending with x"></TD>
+<TD> ` Y e. |^| { p | ( ( ``' R u. _I ) " ( p u. { X } ) ) C_ p } `
+<BR> ` X ( ( t+ `` ``' R ) u. _I ) Y `
+<BR> ` X ( ( t* `` ``' R ) u. _I ) Y ` </TD></TR>
+
+<TR ALIGN=LEFT><TD> &#119891; is single-valued in the forward direction</TD>
+<TD><IMG SRC="_frege_funf.svg" WIDTH="88" HEIGHT="72"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="f is a function"></TD>
+<TD> ` A. x A. y A. z ( ( x R y /\ x R z ) -> y = z ) `
+<BR> ` Fun ``' ``' R ` </TD>
+<TD ROWSPAN="2"> &#119891; maps to ` R ` . </TD></TR>
+
+<TR ALIGN=LEFT><TD> &#119891; is single-valued in the reverse direction </TD>
+<TD><IMG SRC="_frege_funcf.svg" WIDTH="88" HEIGHT="72"
+STYLE="margin-bottom:0px; vertical-align: top"
+ALT="The converse of f is a function"></TD>
+<TD> ` A. x A. y A. z ( ( y R x /\ z R x ) -> y = z ) `
+<BR> ` Fun ``' R ` </TD></TR>
 
 </TABLE>
 
