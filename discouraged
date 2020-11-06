@@ -16056,6 +16056,7 @@ New usage of "elspansn4" is discouraged (1 uses).
 New usage of "elspansn5" is discouraged (2 uses).
 New usage of "elspansncl" is discouraged (1 uses).
 New usage of "elspansni" is discouraged (2 uses).
+New usage of "elss2prOLD" is discouraged (0 uses).
 New usage of "elunirnALT" is discouraged (0 uses).
 New usage of "elunop" is discouraged (7 uses).
 New usage of "elunop2" is discouraged (0 uses).
@@ -18220,6 +18221,7 @@ New usage of "ral2imiOLD" is discouraged (0 uses).
 New usage of "ralbidvOLD" is discouraged (0 uses).
 New usage of "ralbidvaOLD" is discouraged (0 uses).
 New usage of "ralbiiOLD" is discouraged (0 uses).
+New usage of "raleleqALT" is discouraged (0 uses).
 New usage of "raleqdOLD" is discouraged (0 uses).
 New usage of "ralimOLD" is discouraged (1 uses).
 New usage of "ralimdaaOLD" is discouraged (0 uses).
@@ -19694,6 +19696,7 @@ Proof modification of "elpwgdedVD" is discouraged (23 steps).
 Proof modification of "elqaalem1OLD" is discouraged (206 steps).
 Proof modification of "elqaalem2OLD" is discouraged (1143 steps).
 Proof modification of "elqaalem3OLD" is discouraged (1072 steps).
+Proof modification of "elss2prOLD" is discouraged (57 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
@@ -20424,6 +20427,7 @@ Proof modification of "ral2imiOLD" is discouraged (31 steps).
 Proof modification of "ralbidvOLD" is discouraged (10 steps).
 Proof modification of "ralbidvaOLD" is discouraged (10 steps).
 Proof modification of "ralbiiOLD" is discouraged (22 steps).
+Proof modification of "raleleqALT" is discouraged (26 steps).
 Proof modification of "raleqdOLD" is discouraged (7 steps).
 Proof modification of "ralimOLD" is discouraged (59 steps).
 Proof modification of "ralimdaaOLD" is discouraged (49 steps).
