@@ -1,18 +1,6 @@
 <?xml version="1.0" standalone="no"?>
-<svg width="80" height="52" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <desc>Beta implies Alpha</desc>
-  <!--
-      size = 16 ;
-      tx = 4 = size / 4 ;
-      ty = 4 = size / 4 ;
-      x1 = 8 = size / 2 ;
-      x2 = 32 = x1 + (3/2) size ;
-      x3 = 56 = x2 + (3/2) size ;
-      width = 80 = x3 + max((3/2) size, size + 2 tx ) ;
-      y1 = 16 = size ;
-      y2 = 36 = y1 + (5/4) size ;
-      height = 52 = y2 + size ;
-  -->
+<svg width="86" height="52" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <desc>y in an f-sequence that ends with x</desc>
   <style>
 	.arc { fill: black; stroke-width: 0.75px; stroke: black; stroke-linecap: round; stroke-linejoin: round; }
 	.bracehoriz { stroke-width: 0.75px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
@@ -27,8 +15,8 @@
 	.sub { vertical-align: sub; baseline-shift: sub; font-size: 70%;}
 	.text { fill: black; font-size: 16px;}
   </style>
-  <line x1="8" x2="56" y1="16" y2="16" class="line"/>
-  <text class="text" x="60" y="20">&#120546;</text>
-  <polyline points="32,16 32,36 56,36" class="line"/>
-  <text class="text" x="60" y="40">&#120547;</text>
+  <text class="text" x="8" y="16">&#946;</text>
+  <text class="text" x="8" y="28.5">&#8771;</text>
+  <text class="text" x="8" y="40">&#947;</text>
+  <text class="text" x="20" y="30">&#119891;&#8202;(&#119909;<tspan class="sub">&#947;</tspan>, &#119910;<tspan class="sub">&#946;</tspan>)</text>
 </svg>
