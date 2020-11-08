@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="86" height="72" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <desc>converse f hereditary in F</desc>
+  <!--
+      size = 16 ;
+      tx = 4 = size / 4 ;
+      ty = 4 = size / 4 ;
+      x1 = 8 = size / 2 ;
+      x2 = 32 = x1 + (3/2) size ;
+      x3 = 56 = x2 + (3/2) size ;
+      x4 = 80 = x2 + (3/2) size ;
+      width = 104 = x4 + max((3/2) size, size + 2 tx ) ;
+      y1 = 16 = size ;
+      y2 = 36 = y1 + (5/4) size ;
+      y3 = 56 = y2 + (5/4) size ;
+      height = 72 = y3 + size ;
+  -->
+  <style>
+	.arc { fill: black; stroke-width: 0.75px; stroke: black; stroke-linecap: round; stroke-linejoin: round; }
+	.bracehoriz { stroke-width: 0.75px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.bracevert { stroke-width: 1.5px; stroke: black; stroke-linecap: butt; stroke-linejoin: round; fill: none;}
+	.definevert { stroke-width: 2.5px; stroke: black; stroke-linecap: butt; }
+	.funhoriz { stroke-width: 0.75; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.funvert { stroke-width: 1.5px; stroke: black; stroke-linecap: butt; stroke-linejoin: round; fill: none;}
+	.judgmentvert { stroke-width: 2.5px; stroke: black; stroke-linecap: butt; }
+	.line { stroke-width: 0.5px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.notstroke { stroke-width: 0.5px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.smalltext { fill: black; font-size: 12px;}
+	.sub { vertical-align: sub; baseline-shift: sub; font-size: 70%;}
+	.text { fill: black; font-size: 16px;}
+  </style>
+  <text class="text" x="8" y="20">&#945;</text>
+  <line x1="12" x2="12" y1="24" y2="46" class="line"/>
+  <text class="text" x="8" y="60">&#948;</text>
+  <text class="text" x="30" y="20">&#119865;&#8202;(&#948;)</text>
+  <path d="M 26 24
+           A 30 25 0 0 0 26 46
+           A 34 25 0 0 1 26 24
+           Z" class="arc"/>
+  <text class="text" x="30" y="60">&#119891;&#8202;(&#948;, &#945;)</text>
+</svg>
