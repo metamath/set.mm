@@ -17,7 +17,7 @@ suffix="${2:-".html"}"
 
 # This is a list of the .raw.html files (omitting their suffix)
 # that use set.mm conventions to generate non-raw versions (most of them)
-setmm_raw='mmcomplex mmnatded mmset mmdeduction mmzfcnd'
+setmm_raw='mmcomplex mmnatded mmset mmdeduction mmzfcnd mmfrege'
 
 # Echo the metamath commands necessary to
 # generate files from .raw files listed in $2 using db conventions of $1

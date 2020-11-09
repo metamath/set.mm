@@ -100,7 +100,7 @@ jobs:
         - metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit
         - scripts/verify --top_date_skip --extra 'write bibliography mmbiblio.html' set.mm
         - scripts/verify --top_date_skip iset.mm
-        - scripts/check-raw-html set.mm mmcomplex.raw.html mmdeduction.raw.html mmnatded.raw.html mmnf.raw.html mmset.raw.html mmzfcnd.raw.html
+        - scripts/check-raw-html set.mm mmcomplex.raw.html mmdeduction.raw.html mmnatded.raw.html mmnf.raw.html mmset.raw.html mmzfcnd.raw.html mmfrege.raw.html
         - scripts/check-raw-html iset.mm mmil.raw.html
         # Generate HTML from raw files into mpegif-html/ and mpeuni-html/
         - scripts/regen-from-raw --force '/HTML' .regened.html
