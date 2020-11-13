@@ -14012,6 +14012,7 @@ New usage of "19.23vOLD" is discouraged (0 uses).
 New usage of "19.29rOLD" is discouraged (0 uses).
 New usage of "19.36aivOLD" is discouraged (0 uses).
 New usage of "19.36vOLD" is discouraged (0 uses).
+New usage of "19.40bOLD" is discouraged (0 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
 New usage of "19.43OLD" is discouraged (0 uses).
@@ -16080,7 +16081,6 @@ New usage of "eqeq2OLD" is discouraged (1 uses).
 New usage of "eqeq2dOLD" is discouraged (0 uses).
 New usage of "eqeqan12dOLD" is discouraged (0 uses).
 New usage of "eqid1" is discouraged (0 uses).
-New usage of "eqneltrrdOLD" is discouraged (0 uses).
 New usage of "eqrdavOLD" is discouraged (0 uses).
 New usage of "eqresr" is discouraged (4 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
@@ -17478,7 +17478,6 @@ New usage of "negexsr" is discouraged (0 uses).
 New usage of "neleq12dOLD" is discouraged (0 uses).
 New usage of "neleq1OLD" is discouraged (0 uses).
 New usage of "neleq2OLD" is discouraged (0 uses).
-New usage of "neleqtrrdOLD" is discouraged (0 uses).
 New usage of "neneqadOLD" is discouraged (0 uses).
 New usage of "nesymiOLD" is discouraged (0 uses).
 New usage of "nesymirOLD" is discouraged (0 uses).
@@ -18963,6 +18962,7 @@ Proof modification of "19.23vOLD" is discouraged (7 steps).
 Proof modification of "19.29rOLD" is discouraged (30 steps).
 Proof modification of "19.36aivOLD" is discouraged (8 steps).
 Proof modification of "19.36vOLD" is discouraged (7 steps).
+Proof modification of "19.40bOLD" is discouraged (56 steps).
 Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
 Proof modification of "19.43OLD" is discouraged (72 steps).
@@ -19705,7 +19705,6 @@ Proof modification of "eqeq2OLD" is discouraged (26 steps).
 Proof modification of "eqeq2dOLD" is discouraged (17 steps).
 Proof modification of "eqeqan12dOLD" is discouraged (23 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
-Proof modification of "eqneltrrdOLD" is discouraged (15 steps).
 Proof modification of "eqrdavOLD" is discouraged (59 steps).
 Proof modification of "eqsbc3rVD" is discouraged (129 steps).
 Proof modification of "equid1" is discouraged (50 steps).
@@ -20239,7 +20238,6 @@ Proof modification of "negdiiOLD" is discouraged (89 steps).
 Proof modification of "neleq12dOLD" is discouraged (37 steps).
 Proof modification of "neleq1OLD" is discouraged (32 steps).
 Proof modification of "neleq2OLD" is discouraged (32 steps).
-Proof modification of "neleqtrrdOLD" is discouraged (15 steps).
 Proof modification of "neneqadOLD" is discouraged (10 steps).
 Proof modification of "nesymiOLD" is discouraged (12 steps).
 Proof modification of "nesymirOLD" is discouraged (12 steps).
