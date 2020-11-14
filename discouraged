@@ -18153,6 +18153,7 @@ New usage of "poml5N" is discouraged (1 uses).
 New usage of "poml6N" is discouraged (1 uses).
 New usage of "posrefOLD" is discouraged (0 uses).
 New usage of "prcdnq" is discouraged (14 uses).
+New usage of "prcnelOLD" is discouraged (0 uses).
 New usage of "prlem934" is discouraged (3 uses).
 New usage of "prlem936" is discouraged (1 uses).
 New usage of "prmdvdsprmorOLD" is discouraged (1 uses).
@@ -20381,6 +20382,7 @@ Proof modification of "pm2.61neOLD" is discouraged (29 steps).
 Proof modification of "pm2.86iALT" is discouraged (18 steps).
 Proof modification of "pm4.81ALT" is discouraged (11 steps).
 Proof modification of "posrefOLD" is discouraged (51 steps).
+Proof modification of "prcnelOLD" is discouraged (19 steps).
 Proof modification of "prmdvdsprmorOLD" is discouraged (523 steps).
 Proof modification of "prmdvdsprmorpOLD" is discouraged (239 steps).
 Proof modification of "prmgaplcm" is discouraged (247 steps).
