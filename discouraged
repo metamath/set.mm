@@ -16000,6 +16000,7 @@ New usage of "eleq1dOLD" is discouraged (0 uses).
 New usage of "eleq2OLD" is discouraged (0 uses).
 New usage of "eleq2dALT" is discouraged (0 uses).
 New usage of "eleq2dOLD" is discouraged (0 uses).
+New usage of "eleq2dOLDOLD" is discouraged (0 uses).
 New usage of "elex22VD" is discouraged (0 uses).
 New usage of "elex2VD" is discouraged (0 uses).
 New usage of "elfz0addOLD" is discouraged (0 uses).
@@ -16131,6 +16132,8 @@ New usage of "ex-natded9.20-2" is discouraged (0 uses).
 New usage of "ex-natded9.26" is discouraged (0 uses).
 New usage of "ex-natded9.26-2" is discouraged (0 uses).
 New usage of "exatleN" is discouraged (1 uses).
+New usage of "exbiOLD" is discouraged (0 uses).
+New usage of "exbidhOLD" is discouraged (0 uses).
 New usage of "exbirVD" is discouraged (0 uses).
 New usage of "exbiriVD" is discouraged (0 uses).
 New usage of "excomOLD" is discouraged (0 uses).
@@ -16138,6 +16141,7 @@ New usage of "exidu1" is discouraged (3 uses).
 New usage of "exinst" is discouraged (1 uses).
 New usage of "exinst01" is discouraged (1 uses).
 New usage of "exinst11" is discouraged (1 uses).
+New usage of "exintrbiOLD" is discouraged (0 uses).
 New usage of "exlimexi" is discouraged (2 uses).
 New usage of "exmidneOLD" is discouraged (0 uses).
 New usage of "expcomdg" is discouraged (0 uses).
@@ -19672,6 +19676,7 @@ Proof modification of "eleq1dOLD" is discouraged (17 steps).
 Proof modification of "eleq2OLD" is discouraged (60 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
 Proof modification of "eleq2dOLD" is discouraged (17 steps).
+Proof modification of "eleq2dOLDOLD" is discouraged (84 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
 Proof modification of "elfz0addOLD" is discouraged (94 steps).
@@ -19737,12 +19742,15 @@ Proof modification of "ex-natded9.20" is discouraged (58 steps).
 Proof modification of "ex-natded9.20-2" is discouraged (44 steps).
 Proof modification of "ex-natded9.26" is discouraged (65 steps).
 Proof modification of "ex-natded9.26-2" is discouraged (22 steps).
+Proof modification of "exbiOLD" is discouraged (28 steps).
+Proof modification of "exbidhOLD" is discouraged (24 steps).
 Proof modification of "exbirVD" is discouraged (65 steps).
 Proof modification of "exbiriVD" is discouraged (70 steps).
 Proof modification of "excomOLD" is discouraged (62 steps).
 Proof modification of "exinst" is discouraged (12 steps).
 Proof modification of "exinst01" is discouraged (16 steps).
 Proof modification of "exinst11" is discouraged (21 steps).
+Proof modification of "exintrbiOLD" is discouraged (31 steps).
 Proof modification of "exlimexi" is discouraged (15 steps).
 Proof modification of "exmidneOLD" is discouraged (21 steps).
 Proof modification of "f1oweALT" is discouraged (805 steps).
