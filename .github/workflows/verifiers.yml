@@ -52,6 +52,7 @@ jobs:
   metamathexe:
     ###########################################################
     name: Verify using metamath.exe (original C verifier by Norman Megill)
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: gcc --version
