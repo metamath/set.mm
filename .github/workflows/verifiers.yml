@@ -96,15 +96,19 @@ jobs:
         with:
           path: ~/.cargo/bin/smetamath
           key: ${{ runner.os }}-build-${{ env.cache-name }}
-      - name: Install smm3
+      - name: Install rust
         if: ${{ !steps.cache-smm3.cache-hit }}
         uses: hecrj/setup-rust-action@v1
         with:
           rust-version: stable
+      - name: Install smm3
+        if: ${{ !steps.cache-smm3.cache-hit }}
         run: cargo install smetamath --vers 3.0.0
-      - run: |
+      - name: Verify set.mm
+        run: |
           ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
-      - run: |
+      - name: Verify iset.mm
+        run: |
           ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
 
   ###########################################################
