@@ -1,0 +1,20 @@
+name: metamath-setmm-verifiers
+on: [push]
+jobs:
+  # checkmm is a C++ verifier by Eric Schmidt
+  # It's the simplest Metamath verifier to set up and use,
+  # so let's start with it.
+  checkmm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo 'Starting'
+      - run: pwd
+      - run: ls -l
+      - run: g++ --version
+      # Get and compile checkmm, a C++ verifier by Eric Schmidt
+      - run: wget -N -q http://us.metamath.org/downloads/checkmm.cpp
+      - run: g++ -O2 -o checkmm checkmm.cpp
+      # Use it to verify set.mm and iset.mm
+      - run: ./checkmm set.mm
+      - run: ./checkmm iset.mm
