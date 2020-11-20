@@ -97,12 +97,12 @@ jobs:
           path: ~/.cargo/bin/smetamath
           key: ${{ runner.os }}-build-${{ env.cache-name }}
       - name: Install rust
-        if: ${{ !steps.cache-smm3.cache-hit }}
+        if: ${{ !steps.cache-smm3.outputs.cache-hit }}
         uses: hecrj/setup-rust-action@v1
         with:
           rust-version: stable
       - name: Install smm3
-        if: ${{ !steps.cache-smm3.cache-hit }}
+        if: ${{ !steps.cache-smm3.outputs.cache-hit }}
         run: cargo install smetamath --vers 3.0.0
       - name: Verify set.mm
         run: |
