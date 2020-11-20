@@ -88,18 +88,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: hecrj/setup-rust-action@v1
-        with:
-          rust-version: stable
       - name: Cache smm3
+        id: cache-smm3
         uses: actions/cache@v2
         env:
           cache-name: cache-smetamath
         with:
           path: ~/.cargo/bin/smetamath
           key: ${{ runner.os }}-build-${{ env.cache-name }}
-      - run: |
-          test -x ~/.cargo/bin/smetamath || cargo install smetamath --vers 3.0.0
+      - name: Install smm3
+        if: ${{ !steps.cache-smm3.cache-hit }}
+        uses: hecrj/setup-rust-action@v1
+        with:
+          rust-version: stable
+        run: cargo install smetamath --vers 3.0.0
       - run: |
           ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
       - run: |
