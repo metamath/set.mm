@@ -110,15 +110,16 @@ jobs:
           java-version: '10' # The JDK version to make available on the path.
           # java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
           # architecture: x64 # (x64 or x86) - defaults to x64
-          - run: wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
-          - run: unzip -q mmj2jar.zip
-          # Do extra checking and generate the '*discouraged.new' file
-          # (the 'printf' lets us insert multiple lines).
-          # We use setparser to check that definitions don't create syntax ambiguities
-          - run: scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,discouraged.new')" set.mm
-          - run: scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,iset-discouraged.new')" iset.mm
-          - run: echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
-          - run: echo 'Checking iset-discouraged file:' && diff -U 0 iset-discouraged iset-discouraged.new
+      - run: wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
+      - run: unzip -q mmj2jar.zip
+      # Do extra checking and generate the '*discouraged.new' file
+      # (the 'printf' lets us insert multiple lines).
+      # We use setparser to check that definitions don't create
+      # syntax ambiguities
+      - run: scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,discouraged.new')" set.mm
+      - run: scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,iset-discouraged.new')" iset.mm
+      - run: echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
+      - run: echo 'Checking iset-discouraged file:' && diff -U 0 iset-discouraged iset-discouraged.new
 
 # TODO: Below is from .travis.yml
 # jobs:
