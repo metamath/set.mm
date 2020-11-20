@@ -56,6 +56,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: gcc --version
+      # Special Github incantation so $HOME/bin will be in PATH:
+      - run: echo "$HOME/bin" >> "$GITHUB_PATH"
+      - run: mkdir -p "$HOME/bin"
       # Get metamath C program and supporting files (to validate against them)
       - run: scripts/download-metamath
       # Build/install metamath, a C verifier (and more) by Norm Megill.
