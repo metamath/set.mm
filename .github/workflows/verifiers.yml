@@ -91,6 +91,13 @@ jobs:
       - uses: hecrj/setup-rust-action@v1
         with:
           rust-version: stable
+      - name: Cache smm3
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-smetamath
+        with:
+          path: ~/.cargo/bin/smetamath
+          key: ${{ runner.os }}-build-${{ env.cache-name }}
       - run: |
           test -x ~/.cargo/bin/smetamath || cargo install smetamath --vers 3.0.0
       - run: |
