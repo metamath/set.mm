@@ -153,7 +153,7 @@ jobs:
 
   ###########################################################
   mmverifypy-isetmm:
-    name: Verify set.mm mathboxes using mmverify.py (Python verifier by Raph Levien)
+    name: Verify iset.mm using mmverify.py (Python verifier by Raph Levien)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
