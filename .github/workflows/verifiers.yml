@@ -121,6 +121,19 @@ jobs:
       - run: echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
       - run: echo 'Checking iset-discouraged file:' && diff -U 0 iset-discouraged iset-discouraged.new
 
+  ###########################################################
+  mmverifypy-setmm:
+    name: Verify set.mm body using mmverify.py (Python verifier by Raph Levien)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
+      # Python3 is very slow.  We can speed it up by deleting all
+      # logging calls, since we don't use the logging anyway.
+      - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
+      - run: chmod a+x mmverify.faster.py
+      - run: ./mmverify.faster.py --stop-label mathbox < set.mm
+
 # TODO: Below is from .travis.yml
 # jobs:
 #     ###########################################################
