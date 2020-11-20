@@ -1,4 +1,4 @@
-name: metamath-setmm-verifiers
+name: verifiers
 on: [push]
 
 # Run many verifiers on metamath files.
@@ -31,6 +31,7 @@ on: [push]
 # PATH (usually it is on any non-Windows system).
 
 jobs:
+  ###########################################################
   checkmm:
     name: Verify using checkmm (a C++ verifier by Eric Schmidt)
     runs-on: ubuntu-latest
@@ -49,8 +50,8 @@ jobs:
       - run: ./checkmm set.mm
       - run: ./checkmm iset.mm
 
+  ###########################################################
   metamathexe:
-    ###########################################################
     name: Verify using metamath.exe (original C verifier by Norman Megill)
     runs-on: ubuntu-latest
     steps:
@@ -81,23 +82,24 @@ jobs:
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
 
+  ###########################################################
+  smetamath-rs:
+    name: Verify using smetamath-rs (smm3) (Rust verifier by Stefan O'Rear)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: hecrj/setup-rust-action@v1
+        with:
+          rust-version: stable
+      - run: |
+          test -x ~/.cargo/bin/smetamath || cargo install smetamath --vers 3.0.0
+      - run: |
+          ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
+      - run: |
+          ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
+
 # TODO: Below is from .travis.yml
 # jobs:
-#   include:
-#     ###########################################################
-#     - # smetamath-rs (smm3), a Rust verifier by Stefan O'Rear.
-#       name: smetamath-rs (Rust, Stefan O'Rear) verification
-#       language: rust
-#       cache:
-#         # Cache Rust source/executables (takes time to get and recompile)
-#         cargo: true
-#         timeout: 3600 # Cache for 1 hour (unit is seconds)
-#       install:
-#         # See https://github.com/sorear/smetamath-rs
-#         - "[ -x  ~/.cargo/bin/smetamath ] || cargo install smetamath --vers 3.0.0"
-#       script:
-#         - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
-#         - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
 #     ###########################################################
 #     - # mmj2, a Java verifier (and more) by Mel L. O'Cat and Mario Carneiro
 #       name: mmj2 (Java, Mel L. O'Cat and Mario Carneiro) verification
@@ -193,4 +195,3 @@ jobs:
 #       script:
 #         - scripts/report-changes.py --gource > /dev/null
 # # End of jobs
-# 
