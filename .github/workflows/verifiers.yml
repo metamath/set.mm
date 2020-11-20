@@ -1,5 +1,5 @@
 name: verifiers
-on: [push, pull_request]
+on: [push]
 
 # Run many verifiers on metamath files.
 # We *primarily* check set.mm and iset.mm, but we also run some checks on
