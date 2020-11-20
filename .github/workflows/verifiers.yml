@@ -98,35 +98,30 @@ jobs:
       - run: |
           ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
 
+  ###########################################################
+  mmj2:
+    name: Verify using mmj2 (Java verifier by Mel L. O'Cat and Mario Carneiro)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # See: https://github.com/actions/setup-java
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '10' # The JDK version to make available on the path.
+          # java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
+          # architecture: x64 # (x64 or x86) - defaults to x64
+          - run: wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
+          - run: unzip -q mmj2jar.zip
+          # Do extra checking and generate the '*discouraged.new' file
+          # (the 'printf' lets us insert multiple lines).
+          # We use setparser to check that definitions don't create syntax ambiguities
+          - run: scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,discouraged.new')" set.mm
+          - run: scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,iset-discouraged.new')" iset.mm
+          - run: echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
+          - run: echo 'Checking iset-discouraged file:' && diff -U 0 iset-discouraged iset-discouraged.new
+
 # TODO: Below is from .travis.yml
 # jobs:
-#     ###########################################################
-#     - # mmj2, a Java verifier (and more) by Mel L. O'Cat and Mario Carneiro
-#       name: mmj2 (Java, Mel L. O'Cat and Mario Carneiro) verification
-#       language: java
-#       jdk:
-#         - openjdk10
-#       cache:
-#         directories:
-#           - $HOME/.m2
-#       before_install:
-#         - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
-#           # Old switching system for Ubuntu 14:
-#           # - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then jdk_switcher use "$CUSTOM_JDK"; fi
-#       install:
-#         # Get mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
-#         - wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
-#         - unzip -q mmj2jar.zip
-#         # Old switching system for Ubuntu 14:
-#         # - jdk_switcher use oraclejdk8
-#       script:
-#         # Do extra checking and generate the '*discouraged.new' file
-#         # (the 'printf' lets us insert multiple lines).
-#         # We use setparser to check that definitions don't create syntax ambiguities
-#         - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,discouraged.new')" set.mm
-#         - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,iset-discouraged.new')" iset.mm
-#         - echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
-#         - echo 'Checking iset-discouraged file:' && diff -U 0 iset-discouraged iset-discouraged.new
 #     ###########################################################
 #     - # mmverify.py, a Python3 verifier by Raph Levien, for set.mm pre-mathbox
 #       # This verifier takes longer than all the other verifiers (2min 14 sec).
