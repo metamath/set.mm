@@ -68,6 +68,7 @@ jobs:
       - name: Record latest version of metamath as env variable
         run: |
           echo "METAMATH_LATEST_VERSION=$(cat metamath/.latest_version)" >> $GITHUB_ENV
+      # Note: cache key includes version of metamath in use
       - name: Cache metamathexe
         id: cache-metamathexe
         uses: actions/cache@v2
