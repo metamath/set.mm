@@ -56,14 +56,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: gcc --version
-      # Special Github incantation so $HOME/bin will be in PATH:
-      - run: echo "$HOME/bin" >> "$GITHUB_PATH"
-      - run: mkdir -p "$HOME/bin"
-      # Get metamath C program and supporting files (to validate against them)
-      - run: scripts/download-metamath
-      # Build/install metamath, a C verifier (and more) by Norm Megill.
-      - run: scripts/build-metamath
+      # Use GITHUB_PATH to set PATH. For details see:
+      # https://docs.github.com/en/free-pro-team@latest/actions/reference/
+      # workflow-commands-for-github-actions#setting-an-environment-variable
+      - name: Ensure ~/bin is in PATH
+        run: |
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          mkdir -p "$HOME/bin"
+      - name: Get metamath C program and supporting files
+        run: scripts/download-metamath
+      - name: Record latest version of metamath as env variable
+        run: |
+          echo "METAMATH_LATEST_VERSION=$(cat metamath/.latest_version)" >> $GITHUB_ENV
+      # Note: cache key includes version of metamath in use
+      - name: Cache metamathexe
+        id: cache-metamathexe
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-metamathexe
+        with:
+          path: ~/bin/metamath
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ env.METAMATH_LATEST_VERSION }}
+      - name: Build/install metamath, a C verifier (and more) by Norm Megill
+        if: ${{ !steps.cache-metamathexe.outputs.cache-hit }}
+        run: |
+          gcc --version
+          scripts/build-metamath
       # Create mmset.html and mmil.html so we can verify against them.
       - run: metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
       - run: metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit

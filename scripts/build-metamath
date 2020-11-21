@@ -27,7 +27,6 @@ cd metamath/
 autoreconf -i
 ./configure
 
-
 # We can't just "build everything", because that would require .mm files
 # not included in this subset distribution.  So ask to build *just*
 # metamath.  We have to extract the extension and use it so the build request
@@ -45,7 +44,3 @@ if ! [ -e ../mmbiblio.html ] ; then
 fi
 
 cd ../
-
-# Untar this in the directory with the .mm files (such as set.mm)
-# so we can test gif symbol usage.
-tar --strip-components=1 -jxf symbols.tar.bz2
