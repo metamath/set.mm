@@ -23,7 +23,8 @@ latest_zipball () {
 # rm -f metamath-program.zip
 # wget -N -q http://us.metamath.org/downloads/metamath-program.zip
 set -x
-curl --silent -L -o metamath-program.zip "$(latest_zipball metamath/metamath-exe)"
+latest_version="$(latest_zipball metamath/metamath-exe)"
+curl --silent -L -o metamath-program.zip "$latest_version"
 
 # Extract into a different directory to prevent overwriting .mm's
 # This will be updated, but we need a starting point:
@@ -31,6 +32,9 @@ mkdir -p metamath/
 cd metamath/
 wget -N -q http://us.metamath.org/mpegif/mmbiblio.html
 cd ..
+
+# Store latest_version value inside metamath/ so we can get it later.
+printf '%s' "$latest_version" > metamath/.latest_version
 
 rm -f symbols.tar.bz2
 wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
