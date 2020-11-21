@@ -2,7 +2,7 @@
 
 # Get metamath C program and supporting files (to validate against them)
 # We create subdirectory "metamath/" and put metamath.tar.bz2 there, and
-# also download symbols.tar.bz2 into the current directory.
+# also download symbols.tar.bz2 into the current directory & untar it.
 
 # 8/29/18 NM Some mirrors don't allow directory listing
 # Note that set.mm includes mmset.html and mmhil.html
@@ -38,3 +38,7 @@ printf '%s' "$latest_version" > metamath/.latest_version
 
 rm -f symbols.tar.bz2
 wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
+
+# Untar the symbols in the current directory so we can use them
+# (e.g., to test if they exist).
+tar --strip-components=1 -jxf symbols.tar.bz2
