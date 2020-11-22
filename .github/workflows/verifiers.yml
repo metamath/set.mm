@@ -1,5 +1,5 @@
 name: verifiers
-on: [push]
+on: [push, pull_request, workflow_dispatch]
 
 # Run many verifiers on metamath files.
 # We *primarily* check set.mm and iset.mm, but we also run some checks on
@@ -32,9 +32,26 @@ on: [push]
 
 jobs:
   ###########################################################
+  skip_dups:
+    name: Check for duplicate jobs to avoid duplication
+    # continue-on-error: true # Uncomment once integration is finished
+    runs-on: ubuntu-latest
+    # Map a step output to a job output
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@master
+        with:
+          github_token: ${{ github.token }}
+          paths_ignore: '["**/README.md", "**/docs/**"]'
+
+  ###########################################################
   checkmm:
     name: Verify using checkmm (a C++ verifier by Eric Schmidt)
     runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       # By default checkout fetches a single commit, which is what we want.
       # See: https://github.com/actions/checkout
@@ -54,6 +71,8 @@ jobs:
   metamathexe:
     name: Verify using metamath.exe (original C verifier by Norman Megill)
     runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v2
       # Use GITHUB_PATH to set PATH. For details see:
@@ -104,6 +123,8 @@ jobs:
   smetamath-rs:
     name: Verify using smetamath-rs (smm3) (Rust verifier by Stefan O'Rear)
     runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v2
       - name: Cache smm3
@@ -133,6 +154,8 @@ jobs:
   mmj2:
     name: Verify using mmj2 (Java verifier by Mel L. O'Cat and Mario Carneiro)
     runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v2
       # See: https://github.com/actions/setup-java
@@ -160,6 +183,8 @@ jobs:
   mmverifypy-setmm:
     name: Verify set.mm body using mmverify.py (Python verifier by Raph Levien)
     runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v2
       - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
@@ -173,6 +198,8 @@ jobs:
   mmverifypy-setmm-mathboxes:
     name: Verify set.mm mathboxes using mmverify.py (Python verifier by Raph Levien)
     runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v2
       - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
@@ -186,6 +213,8 @@ jobs:
   mmverifypy-isetmm:
     name: Verify iset.mm using mmverify.py (Python verifier by Raph Levien)
     runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v2
       - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
@@ -199,6 +228,8 @@ jobs:
   check-dates:
     name: Check dates in set.mm
     runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     # Check for valid dates (detect nonsense like "June 31")
     # We run scripts/report-changes.py to convert dates to Unix timestamps;
     # this will raise an exception if the conversion can't occur,
