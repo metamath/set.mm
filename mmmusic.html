@@ -229,7 +229,7 @@ theorem name to see its proof, and click on the musical note to hear it
 set to music.  The music is faithful to the original proofs.  For
 example, the five sustained (lower) notes you will hear in the Law of
 Identity match, in order, the five steps of its <A
-HREF="id1.html">proof</A>, while the faster notes represent the
+HREF="idALT.html">proof</A>, while the faster notes represent the
 construction of the formulas used in those steps.
 
 <!--
@@ -244,7 +244,7 @@ construction of the formulas used in those steps.
 <P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%">
 <MENU>
 
-<LI> <A HREF="id1.html">Law of identity</A> <A HREF="id1.mid"><IMG
+<LI> <A HREF="idALT.html">Law of identity</A> <A HREF="id1.mid"><IMG
 SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT SIZE=-2>0:05</FONT></A> </LI>
 
 <LI>
@@ -838,8 +838,8 @@ create the MIDI file:
 Algorithm</FONT></B>&nbsp;&nbsp;&nbsp;
 
 
-I'll use as an example the simple theorem <TT>id1</TT> which is the <A
-HREF="id1.html">Law of Identity</A> <A HREF="id1.mid"><IMG
+I'll use as an example the simple theorem <TT>idALT</TT> which is the <A
+HREF="idALT.html">Law of Identity</A> <A HREF="id1.mid"><IMG
 SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
 SIZE=-2>0:05</FONT></A>.  The database file <TT>set.mm</TT> stores the
 proof in a compressed format to save space, so first we must store it
@@ -850,13 +850,13 @@ automatically, but for "<TT>show proof</TT>" to show the format shown
 below, we must perform this step.)  In the Metamath program, we type:
 
 <PRE>
-  MM> save proof id1 / normal
+  MM> save proof idALT / normal
 </PRE>
 
 Then we type
 
 <PRE>
-  MM> show proof id1 / all
+  MM> show proof idALT / all
 </PRE>
 
 This will show the microsteps that construct wffs, as well as regular proof
@@ -899,11 +899,11 @@ successively
 note frequencies, which I defined as 27 &lt; <I>n</I> &lt; 104, where
 <I>n</I> is the midi note number.  We obtain an the largest possible
 integer "scale factor", with a maximum of 4, that allows the music to
-fit in the dynamic range.  For the <TT>id1</TT> proof, the scale factor
+fit in the dynamic range.  For the <TT>idALT</TT> proof, the scale factor
 will be 4.
 
 <P>We also compute a "baseline" note which allows the proof to fit in the
-dynamic range.  For the <TT>id1</TT> proof, the baseline is 61.
+dynamic range.  For the <TT>idALT</TT> proof, the baseline is 61.
 
 <P>We multiply the indentation level by the scale factor 4 and add it
 to the baseline.  In addition, whenever we encounter a "logical" (real)
@@ -927,7 +927,7 @@ above is<BR>
 where the 53 is the first sustained note.
 
 <P>Now, listen carefully to the <A
-HREF="id1.html">Law of Identity</A> <A HREF="id1.mid"><IMG
+HREF="idALT.html">Law of Identity</A> <A HREF="id1.mid"><IMG
 SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
 SIZE=-2>0:05</FONT></A>, and you
 will hear that the first 12 notes and pauses match exactly the above

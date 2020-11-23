@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="86" height="52" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <desc>y in an f-sequence that begins with x</desc>
+  <style>
+	.arc { fill: black; stroke-width: 0.75px; stroke: black; stroke-linecap: round; stroke-linejoin: round; }
+	.bracehoriz { stroke-width: 0.75px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.bracevert { stroke-width: 1.5px; stroke: black; stroke-linecap: butt; stroke-linejoin: round; fill: none;}
+	.definevert { stroke-width: 2.5px; stroke: black; stroke-linecap: butt; }
+	.funhoriz { stroke-width: 0.75; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.funvert { stroke-width: 1.5px; stroke: black; stroke-linecap: butt; stroke-linejoin: round; fill: none;}
+	.judgmentvert { stroke-width: 2.5px; stroke: black; stroke-linecap: butt; }
+	.line { stroke-width: 0.5px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.notstroke { stroke-width: 0.5px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.smalltext { fill: black; font-size: 12px;}
+	.sub { vertical-align: sub; baseline-shift: sub; font-size: 70%;}
+	.text { fill: black; font-size: 16px;}
+  </style>
+  <text class="text" x="8" y="16">&#947;</text>
+  <text class="text" x="8" y="28.5">&#8771;</text>
+  <text class="text" x="8" y="40">&#946;</text>
+  <text class="text" x="20" y="30">&#119891;&#8202;(&#119909;<tspan class="sub">&#947;</tspan>, &#119910;<tspan class="sub">&#946;</tspan>)</text>
+</svg>

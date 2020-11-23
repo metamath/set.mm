@@ -174,29 +174,28 @@ Overview of this work</FONT></B>
 
 <P>(By G&eacute;rard Lang, 7-May-2018)
 
-<P>Mario Carneiro's work (Metamath database)
- "iset.mm" provides in Metamath a development of
-"set.mm" whose eventual
+<P>Mario Carneiro's work (Metamath database) "iset.mm" provides in Metamath a
+development of "set.mm" whose eventual
 aim is to show how many of the theorems of set theory and
 mathematics that can be derived from classical first order logic can
 also be derived from a weaker system called "intuitionistic logic."  To
 achieve this task, iset.mm adds (or substitutes) intuitionistic
 axioms for a number of the classical logical axioms of set.mm.
 
-<P>Among these new axioms, the 6 first
+<P>Among these new axioms, the first six
 ( ~ ax-ia1 ,
 ~ ax-ia2 ,
 ~ ax-ia3 ,
 ~ ax-io ,
-~ ax-in1
+~ ax-in1 ,
 and
 ~ ax-in2 ), when added to
 ~ ax-1 ,
-~ ax-2
+~ ax-2 ,
 and
 ~ ax-mp ,
- allow for the development of intuitionistic
-propositional logic.  We omit the classical axiom
+allow for the development of intuitionistic propositional logic.
+We omit the classical axiom
 <SPAN CLASS=math>((&not;
 <SPAN CLASS=wff STYLE="color:blue">&#x1D711;</SPAN> &rarr; &not; <SPAN
 CLASS=wff STYLE="color:blue">&#x1D713;</SPAN>) &rarr; (<SPAN CLASS=wff
@@ -215,37 +214,33 @@ if &not;&not;<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
 <P>The next 4 new axioms
 ( ~ ax-ial ,
 ~ ax-i5r ,
-~ ax-ie1
+~ ax-ie1 ,
 and
 ~ ax-ie2 )
 together with the set.mm axioms
 ~ ax-4 ,
 ~ ax-5 ,
-~ ax-7
+~ ax-7 ,
 and
 ~ ax-gen
 do not mention equality or distinct variables.
 
-<P>The ~ ax-i9 axiom is
-just a slight variation of the classical ~ ax-9 .
-The classical axiom ~ ax-12 is strengthened
-into first ~ ax-i12 and then
-~ ax-bnd (two results which would be
-fairly readily equivalent to ax-12 classically but which do not
-follow from ax-12, at least not in an obvious way, in intuitionistic
-logic).
+<P>The ~ ax-i9 axiom is just a slight variation of the classical ~ ax-9 .
+The classical axiom ~ ax-12 is strengthened into first ~ ax-i12 and then
+~ ax-bndl (two results which would be fairly readily equivalent to ~ ax-12
+classically but which do not follow from ~ ax-12 , at least not in an obvious
+way, in intuitionistic logic).
 
-The substitution of ax-i9,
-ax-i12, and ax-bnd for ax-9 and ax-12 and the inclusion of
+The substitution of ~ ax-i9 , ~ ax-i12 , and ~ ax-bndl for ~ ax-9 and ~ ax-12
+and the inclusion of
 ~ ax-8 ,
 ~ ax-10 ,
 ~ ax-11 ,
 ~ ax-13 ,
-~ ax-14
+~ ax-14 ,
 and
 ~ ax-17
-allow for the development of the
-intuitionistic predicate calculus.
+allow for the development of the intuitionistic predicate calculus.
 
 <P>Each of the new axioms is a theorem of classical first order
 logic with equality.  But some axioms of classical first order logic
@@ -520,8 +515,8 @@ COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
 COLOR="#FF0000">y</FONT></I>)))</SPAN></TD></TR>
 
 <TR ALIGN=LEFT>
-<TD><A HREF="ax-bnd.html">Axiom of Bundling</A></TD>
-<TD><FONT COLOR="#006633"><B>ax-bnd</B></FONT></TD><TD>
+<TD><A HREF="ax-bndl.html">Axiom of Bundling</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-bndl</B></FONT></TD><TD>
 <SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
 FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I> <I><FONT
 COLOR="#FF0000">z</FONT></I> = <I><FONT COLOR="#FF0000">x</FONT></I> <FONT
@@ -879,7 +874,7 @@ prove the biconditional with that condition as an antecedent, and then use
 
 <LI>
 If your proof relies on dveeq2 try ~ dveeq2or and likewise for the other things
-downstream of ~ ax-i12 or ~ ax-bnd .
+downstream of ~ ax-i12 or ~ ax-bndl .
 </LI>
 
 <LI>
@@ -4139,6 +4134,7 @@ or ~ ssfiexmid </TD>
 <TR>
 <TD>df-exp</TD>
 <TD>~ df-iexp</TD>
+<TD>The difference is that ` seq ` in iset.mm takes three arguments compared with two in set.mm.</TD>
 </TR>
 
 <TR>

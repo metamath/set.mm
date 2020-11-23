@@ -2,7 +2,7 @@
 
 # Get metamath C program and supporting files (to validate against them)
 # We create subdirectory "metamath/" and put metamath.tar.bz2 there, and
-# also download symbols.tar.bz2 into the current directory.
+# also download symbols.tar.bz2 into the current directory & untar it.
 
 # 8/29/18 NM Some mirrors don't allow directory listing
 # Note that set.mm includes mmset.html and mmhil.html
@@ -23,7 +23,8 @@ latest_zipball () {
 # rm -f metamath-program.zip
 # wget -N -q http://us.metamath.org/downloads/metamath-program.zip
 set -x
-curl --silent -L -o metamath-program.zip "$(latest_zipball metamath/metamath-exe)"
+latest_version="$(latest_zipball metamath/metamath-exe)"
+curl --silent -L -o metamath-program.zip "$latest_version"
 
 # Extract into a different directory to prevent overwriting .mm's
 # This will be updated, but we need a starting point:
@@ -32,5 +33,12 @@ cd metamath/
 wget -N -q http://us.metamath.org/mpegif/mmbiblio.html
 cd ..
 
+# Store latest_version value inside metamath/ so we can get it later.
+printf '%s' "$latest_version" > metamath/.latest_version
+
 rm -f symbols.tar.bz2
 wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
+
+# Untar the symbols in the current directory so we can use them
+# (e.g., to test if they exist).
+tar --strip-components=1 -jxf symbols.tar.bz2
