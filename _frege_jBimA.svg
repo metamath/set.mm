@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="80" height="52" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <desc>Judgment: Beta implies Alpha</desc>
+  <!--
+      size = 16 ;
+      tx = 4 = size / 4 ;
+      ty = 4 = size / 4 ;
+      x1 = 8 = size / 2 ;
+      x2 = 32 = x1 + (3/2) size ;
+      x3 = 56 = x2 + (3/2) size ;
+      width = 80 = x3 + max((3/2) size, size + 2 tx ) ;
+      y1 = 16 = size ;
+      y2 = 36 = y1 + (5/4) size ;
+      height = 52 = y2 + size ;
+  -->
+  <style>
+	.arc { fill: black; stroke-width: 0.75px; stroke: black; stroke-linecap: round; stroke-linejoin: round; }
+	.bracehoriz { stroke-width: 0.75px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.bracevert { stroke-width: 1.5px; stroke: black; stroke-linecap: butt; stroke-linejoin: round; fill: none;}
+	.definevert { stroke-width: 2.5px; stroke: black; stroke-linecap: butt; }
+	.funhoriz { stroke-width: 0.75; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.funvert { stroke-width: 1.5px; stroke: black; stroke-linecap: butt; stroke-linejoin: round; fill: none;}
+	.judgmentvert { stroke-width: 2.5px; stroke: black; stroke-linecap: butt; }
+	.line { stroke-width: 0.5px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.notstroke { stroke-width: 0.5px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.smalltext { fill: black; font-size: 12px;}
+	.sub { vertical-align: sub; baseline-shift: sub; font-size: 70%;}
+	.text { fill: black; font-size: 16px;}
+  </style>
+  <line x1="8" x2="8" y1="8" y2="24" class="judgmentvert" />
+  <line x1="8" x2="56" y1="16" y2="16" class="line"/>
+  <text class="text" x="60" y="20">&#120546;</text>
+  <polyline points="32,16 32,36 56,36" class="line"/>
+  <text class="text" x="60" y="40">&#120547;</text>
+</svg>

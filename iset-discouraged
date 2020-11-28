@@ -72,6 +72,8 @@
 "axltirr" is used by "ltnr".
 "axlttrn" is used by "lttr".
 "axresscn" is used by "ax1cn".
+"bj-axemptylem" is used by "bj-axempty".
+"bj-axemptylem" is used by "bj-axempty2".
 "df-div" is used by "divfnzn".
 "df-div" is used by "divvalap".
 "df-ilim" is used by "dflim2".
@@ -252,8 +254,12 @@ New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
 New usage of "bdsbcALT" is discouraged (0 uses).
 New usage of "bdsepnfALT" is discouraged (0 uses).
+New usage of "bj-axempty" is discouraged (0 uses).
+New usage of "bj-axempty2" is discouraged (0 uses).
+New usage of "bj-axemptylem" is discouraged (2 uses).
 New usage of "bj-nn0sucALT" is discouraged (0 uses).
 New usage of "bj-omex2" is discouraged (0 uses).
+New usage of "bj-omssonALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
 New usage of "df-div" is discouraged (2 uses).
 New usage of "df-ilim" is discouraged (1 uses).
@@ -272,13 +278,14 @@ New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
-New usage of "id1" is discouraged (0 uses).
+New usage of "idALT" is discouraged (0 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "opelopabsbALT" is discouraged (2 uses).
 New usage of "opexgOLD" is discouraged (11 uses).
+New usage of "peano5setOLD" is discouraged (0 uses).
 New usage of "prexgOLD" is discouraged (12 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rdgivallem" is discouraged (2 uses).
@@ -325,6 +332,9 @@ Proof modification of "bdssexg" is discouraged (40 steps).
 Proof modification of "bdssexi" is discouraged (13 steps).
 Proof modification of "bdunexb" is discouraged (94 steps).
 Proof modification of "bj-2inf" is discouraged (104 steps).
+Proof modification of "bj-axempty" is discouraged (28 steps).
+Proof modification of "bj-axempty2" is discouraged (29 steps).
+Proof modification of "bj-axemptylem" is discouraged (39 steps).
 Proof modification of "bj-axun2" is discouraged (47 steps).
 Proof modification of "bj-bdfindes" is discouraged (121 steps).
 Proof modification of "bj-bdfindis" is discouraged (84 steps).
@@ -351,7 +361,9 @@ Proof modification of "bj-nn0suc" is discouraged (87 steps).
 Proof modification of "bj-nn0suc0" is discouraged (159 steps).
 Proof modification of "bj-nn0sucALT" is discouraged (240 steps).
 Proof modification of "bj-nnelirr" is discouraged (239 steps).
+Proof modification of "bj-nnelon" is discouraged (14 steps).
 Proof modification of "bj-nnen2lp" is discouraged (52 steps).
+Proof modification of "bj-nnord" is discouraged (53 steps).
 Proof modification of "bj-nntrans" is discouraged (244 steps).
 Proof modification of "bj-nntrans2" is discouraged (24 steps).
 Proof modification of "bj-notbi" is discouraged (22 steps).
@@ -364,6 +376,8 @@ Proof modification of "bj-omex" is discouraged (25 steps).
 Proof modification of "bj-omex2" is discouraged (48 steps).
 Proof modification of "bj-omord" is discouraged (21 steps).
 Proof modification of "bj-omssind" is discouraged (44 steps).
+Proof modification of "bj-omsson" is discouraged (7 steps).
+Proof modification of "bj-omssonALT" is discouraged (10 steps).
 Proof modification of "bj-omtrans" is discouraged (196 steps).
 Proof modification of "bj-omtrans2" is discouraged (14 steps).
 Proof modification of "bj-peano2" is discouraged (15 steps).
@@ -389,12 +403,14 @@ Proof modification of "elfz0addOLD" is discouraged (94 steps).
 Proof modification of "elfzmlbmOLD" is discouraged (203 steps).
 Proof modification of "findset" is discouraged (96 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
+Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "idref" is discouraged (94 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
 Proof modification of "opexgOLD" is discouraged (51 steps).
-Proof modification of "peano5set" is discouraged (212 steps).
+Proof modification of "peano5set" is discouraged (60 steps).
+Proof modification of "peano5setOLD" is discouraged (192 steps).
 Proof modification of "prexgOLD" is discouraged (65 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
