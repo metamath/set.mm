@@ -18710,9 +18710,14 @@ New usage of "usgpredgvALT" is discouraged (1 uses).
 New usage of "usgra2adedgwlkonALT" is discouraged (0 uses).
 New usage of "usgrafiedgALT" is discouraged (0 uses).
 New usage of "usgrafisbaseALT" is discouraged (2 uses).
+New usage of "usgredg2ALT" is discouraged (0 uses).
 New usage of "usgredg2vtxeuALT" is discouraged (0 uses).
 New usage of "usgredgaleordALT" is discouraged (0 uses).
+New usage of "usgredgprvALT" is discouraged (0 uses).
 New usage of "usgresvm1ALT" is discouraged (1 uses).
+New usage of "usgrnloop0ALT" is discouraged (0 uses).
+New usage of "usgrnloopALT" is discouraged (0 uses).
+New usage of "usgrnloopvALT" is discouraged (0 uses).
 New usage of "usgsizedgALT" is discouraged (1 uses).
 New usage of "usgsizedgALT2" is discouraged (0 uses).
 New usage of "usgvincvadALT" is discouraged (1 uses).
@@ -20527,9 +20532,14 @@ Proof modification of "usgra2adedgwlkonALT" is discouraged (389 steps).
 Proof modification of "usgrafiedgALT" is discouraged (68 steps).
 Proof modification of "usgrafisbaseALT" is discouraged (100 steps).
 Proof modification of "usgrafisbaseALT2" is discouraged (100 steps).
+Proof modification of "usgredg2ALT" is discouraged (84 steps).
 Proof modification of "usgredg2vtxeuALT" is discouraged (134 steps).
 Proof modification of "usgredgaleordALT" is discouraged (195 steps).
+Proof modification of "usgredgprvALT" is discouraged (124 steps).
 Proof modification of "usgresvm1ALT" is discouraged (313 steps).
+Proof modification of "usgrnloop0ALT" is discouraged (86 steps).
+Proof modification of "usgrnloopALT" is discouraged (95 steps).
+Proof modification of "usgrnloopvALT" is discouraged (149 steps).
 Proof modification of "usgsizedgALT" is discouraged (98 steps).
 Proof modification of "usgsizedgALT2" is discouraged (124 steps).
 Proof modification of "usgvincvadALT" is discouraged (340 steps).
@@ -20630,6 +20640,7 @@ Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
 Proof modification of "wrd0OLD" is discouraged (31 steps).
 Proof modification of "wrdeqcats1OLD" is discouraged (215 steps).
+Proof modification of "xnn0ge0" is discouraged (39 steps).
 Proof modification of "xorassOLD" is discouraged (84 steps).
 Proof modification of "xorneg1OLD" is discouraged (28 steps).
 Proof modification of "xorneg2OLD" is discouraged (28 steps).
