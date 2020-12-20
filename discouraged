@@ -924,6 +924,7 @@
 "ax-6" is used by "ax6v".
 "ax-7" is used by "ax7v".
 "ax-8" is used by "ax8v".
+"ax-9" is used by "ax9v".
 "ax-ac" is used by "ac2".
 "ax-ac" is used by "zfac".
 "ax-addass" is used by "addass".
@@ -1420,6 +1421,10 @@
 "ax6fromc10" is used by "equidqe".
 "ax7v" is used by "ax7v1".
 "ax7v" is used by "ax7v2".
+"ax8v" is used by "ax8v1".
+"ax8v" is used by "ax8v2".
+"ax9v" is used by "ax9v1".
+"ax9v" is used by "ax9v2".
 "axacnd" is used by "axacprim".
 "axacnd" is used by "zfcndac".
 "axacndlem4" is used by "axacndlem5".
@@ -14255,6 +14260,7 @@ New usage of "ax-4" is discouraged (1 uses).
 New usage of "ax-6" is discouraged (1 uses).
 New usage of "ax-7" is discouraged (1 uses).
 New usage of "ax-8" is discouraged (1 uses).
+New usage of "ax-9" is discouraged (1 uses).
 New usage of "ax-ac" is discouraged (2 uses).
 New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
@@ -14356,6 +14362,8 @@ New usage of "ax6e2ndeqVD" is discouraged (0 uses).
 New usage of "ax6fromc10" is discouraged (1 uses).
 New usage of "ax6vsep" is discouraged (0 uses).
 New usage of "ax7v" is discouraged (2 uses).
+New usage of "ax8v" is discouraged (2 uses).
+New usage of "ax9v" is discouraged (2 uses).
 New usage of "axac2" is discouraged (0 uses).
 New usage of "axacnd" is discouraged (2 uses).
 New usage of "axacndlem4" is discouraged (1 uses).
