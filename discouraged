@@ -1418,6 +1418,8 @@
 "ax6e2ndeq" is used by "2uasbanh".
 "ax6e2ndeq" is used by "2uasbanhVD".
 "ax6fromc10" is used by "equidqe".
+"ax7v" is used by "ax7v1".
+"ax7v" is used by "ax7v2".
 "axacnd" is used by "axacprim".
 "axacnd" is used by "zfcndac".
 "axacndlem4" is used by "axacndlem5".
@@ -14353,6 +14355,7 @@ New usage of "ax6e2ndeqALT" is discouraged (0 uses).
 New usage of "ax6e2ndeqVD" is discouraged (0 uses).
 New usage of "ax6fromc10" is discouraged (1 uses).
 New usage of "ax6vsep" is discouraged (0 uses).
+New usage of "ax7v" is discouraged (2 uses).
 New usage of "axac2" is discouraged (0 uses).
 New usage of "axacnd" is discouraged (2 uses).
 New usage of "axacndlem4" is discouraged (1 uses).
