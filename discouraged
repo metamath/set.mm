@@ -14021,6 +14021,7 @@ New usage of "19.40bOLD" is discouraged (0 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
 New usage of "19.43OLD" is discouraged (0 uses).
+New usage of "19.8aOLD" is discouraged (0 uses).
 New usage of "19.9OLD" is discouraged (0 uses).
 New usage of "19.9dOLD" is discouraged (0 uses).
 New usage of "19.9hOLD" is discouraged (0 uses).
@@ -18920,6 +18921,7 @@ Proof modification of "19.40bOLD" is discouraged (56 steps).
 Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
 Proof modification of "19.43OLD" is discouraged (72 steps).
+Proof modification of "19.8aOLD" is discouraged (47 steps).
 Proof modification of "19.9OLD" is discouraged (7 steps).
 Proof modification of "19.9dOLD" is discouraged (18 steps).
 Proof modification of "19.9hOLD" is discouraged (16 steps).
@@ -19021,7 +19023,7 @@ Proof modification of "axac3" is discouraged (74 steps).
 Proof modification of "axc10" is discouraged (37 steps).
 Proof modification of "axc11-o" is discouraged (47 steps).
 Proof modification of "axc11n-16" is discouraged (154 steps).
-Proof modification of "axc11nALT" is discouraged (67 steps).
+Proof modification of "axc11nALT" is discouraged (62 steps).
 Proof modification of "axc11next" is discouraged (270 steps).
 Proof modification of "axc11nfromc11" is discouraged (28 steps).
 Proof modification of "axc11nlemALT" is discouraged (58 steps).
@@ -19133,7 +19135,7 @@ Proof modification of "bj-ax8" is discouraged (55 steps).
 Proof modification of "bj-ax9" is discouraged (35 steps).
 Proof modification of "bj-axc10v" is discouraged (37 steps).
 Proof modification of "bj-axc11nlemv" is discouraged (58 steps).
-Proof modification of "bj-axc11nv" is discouraged (71 steps).
+Proof modification of "bj-axc11nv" is discouraged (66 steps).
 Proof modification of "bj-axc11v" is discouraged (14 steps).
 Proof modification of "bj-axc15v" is discouraged (103 steps).
 Proof modification of "bj-axc16" is discouraged (5 steps).
