@@ -610,7 +610,7 @@ numbers.  It is not recommended for most users.
 
 The following changes were made:
 
-1. A new qualifer, '/fast', was added to 'save proof' and 'show proof'.
+1. A new qualifier, '/fast', was added to 'save proof' and 'show proof'.
 See the 9-Mar-2016 entry below for an application.
 
 2. Long formulas are no longer wrapped by 'write source.../rewrap' but
@@ -1346,7 +1346,7 @@ are welcome.
 
 I changed the symbol for the definite description binder in df-iota and
 df-riota to an inverted iota, which was used by Russell and seems more
-standard that regular iota.  It is analogous to the inverted A and E for
+standard than regular iota.  It is analogous to the inverted A and E for
 "for all" and "exists".  I left the tokens "iota" and "iota_" alone for
 now, although they should be changed since it's no longer a true iota.
 Ideally it should be changed to "i." in analogy with "A." and "E.", but
@@ -2143,7 +2143,7 @@ From HELP IMPROVE:
             may prefer to use it with specific statements.  For example, if
             step 456 is unknown, you may want to use IMPROVE 456 / 3 rather
             than IMPROVE ALL / 3.  Note that / 3 respects the / DEPTH
-            qualiifer, although the expense of additional run time.
+            qualifier, although at the expense of additional run time.
         / SUBPROOFS - Look at each subproof that isn't completely known, and
             try to see if it can be proved independently.  This qualifier is
             meaningful only for IMPROVE ALL / 2 or IMPROVE ALL / 3.  It may
@@ -3377,7 +3377,7 @@ that algorithm but it would take some work.
 -------------------------------------------------------------------------
 
 
-(22-Jun-2009) Gérard Lang's proof that ax-groth implies ax-pow was
+(22-Jun-2009) Gerard Lang's proof that ax-groth implies ax-pow was
 apparently unrecognized.*  The page
 http://en.wikipedia.org/wiki/Tarski-Grothendieck_set_theory
 (which calls ax-groth "Tarski's axiom") mentions only that
@@ -3386,7 +3386,7 @@ Perhaps someone should update that page. :)
 (In the interest of objectivity I do not personally edit
 Wikipedia references to Metamath.)
 
-* Later (24-Jun-2009):  Gérard pointed out that this was mentioned by
+* Later (24-Jun-2009):  Gerard pointed out that this was mentioned by
 Bob Solovay here:
 
  http://www.cs.nyu.edu/pipermail/fom/2008-March/012783.html
