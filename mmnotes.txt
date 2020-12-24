@@ -7524,7 +7524,1642 @@ http://groups-beta.google.com/group/sci.logic/browse_frm/thread/fac0ce315e8ea855
 However it will be making a number of proofs, such as this one, more
 complex.
 
-(See http://us2.metamath.org:8888/mpegif/mmnotes2004.txt for older notes.)
+(30-Dec-04) I think iunss2 is rather nice (even though its proof is
+very short), and I might be able to use it to shorten oaass.
+
+(25-Dec-04) oaass is a huge proof!  This has been on my to-do list for a
+long time, so getting it done is a relief.  Before we only had nnaass,
+which is limited to natural numbers and which I did a long time ago for
+the real/complex number construction.  To build the oaass proof I
+basically copied nnaass, then added the induction hypothesis for limit
+ordinals (step 164).  But proving this hypothesis is 2/3 of the final
+proof, or steps 44-164!  (And this doesn't count oalimcl, which is
+really a lemma for oaass with no other use I'm aware of.)  For the other
+steps, you may want to compare oaass to nnaass - they are identical
+except for closure laws.  (Eventually I'll use oaass to shorten nnaass.)
+
+By the way to understand why nnaass was needed for our complex number
+construction, you can follow its path as it propagates forward through
+the stages of construction of complex numbers (and the associative law
+for complex number addition in particular), which you can see in the
+"referenced by" lists:
+
+nnaass -> addasspi -> addasspq -> addasspr -> addasssr -> axaddass
+
+BTW Merry Christmas!
+
+(23-Dec-04) sumdmd is Holland's theorem (finally).
+
+(21-Dec-04) sbequ5 is just a cleanup of an earlier version.  By the way
+the theorem eq5 used in its proof was the first "significant" theorem
+(so I felt) that I proved from the unusual predicate calculus subsystem
+ax-4 through ax-15, and it was the initial clue towards eventually
+proving completeness for my "Finitely Axiomatized..." paper.  I remember
+feeling very excited that it held, some dozen years ago.  I still think
+its proof is strange and unintuitive.  Axiom ax-11 is not used for its
+proof and was added later.  An open problem is whether ax-11 is
+redundant; it can be proved as a "metamatheorem" (outside of Metamath)
+from the others but I've never been able to prove it directly from the
+others.
+
+The Hilbert space stuff is more progress towards Holland's theorem.
+
+(20-Dec-04) Q is strictly less equinumerous than R as promised.  (Now,
+that wasn't hard, was it?)
+
+(19-Dec-04) qbtwnre, that Q is dense in R, is an important result about
+real numbers.  This is one of those counterintuitive results about
+infinite sets:  Q is strictly less equinumerous than R (I guess I should
+add a theorem for that - yes, I'll do it for tomorrow), but on the other
+hand, in between any two reals, no matter how close they are, you'll
+find a rational!  How can that be?  Think about it.  This used to bother
+me when I was younger, and I suppose it still gives me an uneasy feeling
+now and then.:)
+
+(17-Dec-04) I finally received from the library Holland's 1969 paper
+(listed in the Hilbert Space Explorer references) which turns out to
+have a marvelous proof of subspace closure of the sums of dual modular
+pairs.  I've been looking for such a proof for a long time.  Maeda's
+version that I tried to use has a gap I haven't been able to figure out,
+but Maeda died a couple of years ago so I can't ask him to clarify it
+(and no one else seems to know).  The Hilbert space results for the last
+couple of days are some basic facts we'll eventually draw on for
+Holland's proof.
+
+(15-Dec-04) Some simple but frequently-used theorems that let me shorten
+a bunch of proofs.
+
+(14-Dec-04) The proof of Prop. 8.8 in Takeuti&Zaring p. 59 has a typo:
+the index on the big union should be "delta < gamma", not "delta <
+beta".  (This brings to total typos I've found in the book to about 30.
+In spite of this, it is by far the best book for the technical details
+of many proofs that other books gloss over.  Too bad it is out of
+print.)
+
+I put a lot of work into oawordeulem because I was afraid it was going
+to be huge.  The end result is that it is actually 1/3 smaller than the
+finite version that it replaces, and I'm kind of proud of it.  (The
+finite version was nnordexlem, which I deleted but you can still find on
+some of the mirrors.)  The intersection of the temporary class S
+corresponds to gamma in the T&K proof.
+
+(13-Dec-04) These variations of modus ponens and syllogism are used to
+shorten a number of proofs and will be handy to have available in the
+future.
+
+(12-Dec-04) In our database, ordinal arithmetic is not well developed.
+The history is that I did just enough to construct real numbers, and
+some operations (e.g. the associative law nnaass) are proved for
+natural numbers only.  Over time I'll be extending these to the
+transfinite.  I'm discovering that some textbook proofs have subtle
+mistakes (or to be generous, they gloss over details) that only become
+apparent when you try to work them out, making for a somewhat
+frustrating task.  Perhaps I'll mention some of them here as they come
+up.
+
+Today's oawordri is the commuted version of oaword of 8-Dec.  Unlike the
+natural number version it must be proved separately since ordinal
+addition ceases to be commutative in the transfinite.  Note that the
+commuted version of oaord of 7-Dec does not hold in the transfinite.
+Also, the converse direction of oawordri does not hold in the
+transfinite.
+
+(11-Dec-04) In ordunidif, note that we're not removing a single element
+but an entire subset of elements up to that element.  (Otherwise it
+would be A\{B}, not A\B.)  For example:  if A is 5={0,1,2,3,4} and B is
+4={0,1,2,3}, then A\B is {4}.  Then the union of A is 4, and the union
+of A\B is also 4.  Notice that for finite (and other successor) ordinals,
+the union operation subtracts 1.
+
+(9-Dec-04) All the previous work leading to rebtwnz, involving heavy use
+of the archimedean principle and well ordering of bounded integer sets,
+finally pays off by letting us show the properties of the floor function
+in flleltt.  It is interesting that so much work is needed for such a
+"trivial" thing as the floor function.
+
+(7-Dec-04) I have been wanting to prove oaordi for some time but the
+limit case of the transfinite induction (steps 32-51) kept proving
+illusive.  Finally I realized ssiun2s was the trick I needed, and we
+don't even need the available "for all y less than x" antecedent (added
+with a1d at step 51, and that proved to be a red herring in earlier
+proof attempts).
+
+(3-Dec-04) Look at how easy the definition of factorial df-fac becomes
+using our new seq operation.  I'm very pleased.  (See
+http://us2.metamath.org:8888/mpegif/mmset.html#function for why the
+notation is (!`n) instead of n!.)
+
+(2-Dec-04) I am torn whether to add a definition for the class of all
+cardinal numbers.  Well, it actually has been added - df-cardn - but I
+consider it provisional and so far I've avoided using it.  With the
+definition, ondomcard could be simplified to {x e. On|...} e. Card.  But
+df-cardn saves only a few symbols, and already we have so many
+definitions that it's hard to remember them all.  I've never seen both
+df-card and df-cardn in the same textbook, although textbooks have the
+advantage of informal English like "is a cardinal number".
+
+shsumval3 is nice, compared to the "official" subspace sum
+value, shsumvalt.  I'm tempted to redefine df-shsum accordingly,
+although the current definition does capture the "intent" of subspace
+sum even though it's more complicated.
+
+(1-Dec-04) zmax shows an application of reuxfr that we proved a
+few days ago.  Note the use of reuhyp to eliminate one of reuxfr's
+hypotheses.
+
+I added a new "feature" for those people who check the most
+recent proofs page every day.  You can go directly to the new theorems
+via http://us2.metamath.org:8888/mpegif/mmrecent.html#table without
+having to scroll down.
+
+(30-Nov-04) It is surprisingly difficult to generalize the integer B in
+uzwo2 with the real B in uzwo3, when on the surface this seems so
+obvious.  Integers and reals don't mix naturally.
+
+(19-Nov-04) euxfr, even though it is simple-looking, is a culmination of
+a lot of results about existential uniqueness.  As you backtrack through
+its proof you will find mopick, moexex, 2moswap, 2euswap, and euxfr2,
+all of which I find interesting as somewhat non-obvious, but none of
+which appear in the literature to my knowledge.  But euxfr is often used
+in informal proofs implicitly; for example:  if we know that there is
+exactly one x such that f(x)=4, then we can conclude there is exactly
+one y such that f(3y+5)=4.  And vice-versa.  The formalization of this
+argument is euxfr.  Who would have guessed that something so "obvious"
+is apparently so hard to prove?  (I don't know how hard it would be to
+prove euxfr directly, though.)
+
+(17-Nov-04) Takeuti/Zaring have a rather long proof of ac6s2 that I
+wasn't looking forward to formalizing.  Then it occurred to me that I
+already have ac6s, which is proved rather simply from the AC variation
+ac6 plus the Boundedness Axiom bnd2.  The final proof of ac6s2 is very
+simple.
+
+(11-Nov-04) uzwo generalizes nnwo, whose proof has been shortened to
+become a special case of uzwo.
+
+Interesting tidbit:  I did a quick count, and there are now 5177
+theorems (including Hilbert space) in set.mm, and 1480 of them reference
+969 bibliographic entries (theorems, exercises, etc.) on the
+mmbiblio.html Bibliographic Cross Reference page.  (This is more
+bibliographic entries than I would have guessed offhand.)
+
+(10-Nov-04) mapunen, with its long, tortuous proof, completes (whew) the
+"basic" equinumerosity theorems needed for the 3 operations (addition,
+multiplication, exponentiation) of cardinal arithmetic.
+
+(5-Nov-04) syli is a little "discovery" that shortens 14 proofs, more
+than paying for itself by reducing the total size of the database.
+
+(4-Nov-04) I think Takeuti/Zaring's definition of omega, dfom2, is
+rather strange and unintuitive.  But this proof confirms it is correct.
+
+(2-Nov-04) For infcntss, Takeuti/Zaring write after their Exercise 8 for
+this:  "Hint:  Use AC".  Our antecedent expresses "is infinite" in a
+different way that allow us to avoid AC.  (We also don't need the Axiom
+of Infinity because the antecedent is false if omega doesn't exist.
+This is a fortuitous quirk of our definition of dominance, and a
+different definition of dominance might require Infinity for this
+theorem.)
+
+(1-Nov-04) qexpclt nicely illustrates the use of our general-purpose
+exponentiation closure lemma expcllem.
+
+(29-Oct-04) nominpos was written specifically to refute an incorrect
+statement on Usenet:
+http://groups.google.com/groups?selm=XY-dnRTa4ISmyhzcRVn-vw%40rcn.net
+
+A somewhat significant change was put into the site today.  The old
+object "ded", used for the weak deduction theorem, has been renamed to
+"if", and it is now called the "conditional operator" instead of the
+"deduction class".  This is more in keeping with its true function,
+especially since it is being used more and more for
+non-deduction-theorem things.  df-ded was renamed to df-if, along with
+some other renaming.  The Deduction Theorem page was revised to reflect
+this change.  You may want to look at the quick example at the beginning
+of the Deduction Theorem page mmdeduction.html to see if it makes more
+sense now.
+
+(25-Oct-04) I forgot to mention that on 19-Oct I added onpwsuc
+specifically to answer this Usenet question:
+http://groups.google.com/groups?threadm=Ts6dnc3uTY-bLejcRVn-qQ%40rcn.net
+
+(23-Oct-04) infdif was quite frustrating, particularly because Enderton
+mentions it in passing almost as an obvious, trivial fact.  His one-line
+proof gives no hint of the difficulties lurking underneath.  I could see
+no shorter way to prove it.
+
+(22-Oct-04) The new, elegant df-exp, that makes use of our new infinite
+sequence builder df-seq, now completely replaces the old awkward one.
+
+Decisions, decisions.  I don't like that the new df-exp requires the
+artificial complex number axiom axmulex.  I might redefine it so that in
+place of "( x. seq ( NN X. { x } ) )" it would use
+"( ( x. |` ( CC X. CC ) ) seq ( NN X. { x } ) )", so that the sethood
+of multiplication "x." becomes irrelevant.  But that complexifies
+df-exp, and I'm also thinking about future applications of df-seq.
+So I'm not sure what I'll do.
+
+(20-Oct-04) By using the Axiom of Choice, qnnen has the shortest proof
+I'm aware of.  The standard proof uses somewhat complex (from Metamath's
+point of view) algebraic manipulations.  Of course most authors want to
+avoid AC when possible, but I thought it interesting to show how it can
+be shortened with AC.
+
+(18-Oct-04) I finally completed what turned out to be a bigger project
+that I expected, which is to prove that the reals are uncountable.
+Today's proof ruc is the culmination of several days' work.  It actually
+involves 39 lemmas, ruclem1 through ruclem39.
+
+(I artificially backdated the lemmas ruclem1 through ruclem39 so they
+won't clutter up the "most recent proofs" page.)
+
+See us2.metamath.org:8888/mpegif/mmcomplex.html#uncountable for a
+detailed description.
+
+(17-Oct-04) I think df-seq is going to be extremely useful in the
+future.  For a long time I've been stuggling with a good way to
+represent finite and infinites sequences, series, products, etc. which
+are universally prevalent in the study of limits, calculus, and pretty
+much all of higher analysis.  Each one seemed to require its own messy
+development - see our ugly df-exp for example, and that's just the tip
+of the iceberg.  Well, df-seq seems to be the answer!  For example,
+df-exp can be alternately defined so its value becomes (in set.mm
+notation):
+
+  ( A ^ B ) = ( ( x. seq ( NN X. { A } ) ) ` B )
+
+where NN X. { A } is the constant function with value A. The seq
+operation produces the sequence A, A x. A, (A x. A) x. A,... that we
+evaluate at B. How much simpler could it get?  Eventually I'll redefine
+df-exp accordingly.  df-seq will even be useful for showing that real
+numbers can be represented by an infinite decimal expansion (a mundane
+thing in everyday mathematics but quite difficult formally).  So expect
+to see a lot more of the seq object!
+
+Fortunately you don't have to be concerned with df-seq itself (with its
+horrendously complex definition) but only with its consequences seq1 and
+seqsuc, which should be enough to handle most work with sequences and
+series.  In fact the only purpose of df-seq is to provide us with an
+object that has those simple properties.
+
+I defined seq to start a 1, not 0, to make it compatible with our
+df-clim.  A long time ago I initially defined df-clim to start at 0
+but ran into messy problems avoiding divide-by-zero when actually
+computing limits, and 1 makes certain things a lot simpler.  This is
+possibly one reason most analysts have the natural numbers start at 1.
+Anyway, if the need for starting at 0 or some other integer arises, I
+can redefine a more general df-seq, but for now I wanted to keep it as
+simple as possible.
+
+Internally, df-seq uses an ordered pair <counter, value> to increment a
+counter that is used to look up the value of the input sequence, so in a
+way it is almost like it has a little "computer program" inside.  Unlike
+a computer program, though, the "counter" counts to infinity!  The
+incredible power of this concept almost boggles the mind.
+
+By the way, with regard to "computer program like" devices, it is
+becoming clear that the df-ded object, now used almost exclusively for
+the weak deduction theorem, is in fact a far more applicable kind of
+general-purpose "if statement".  Raph Levien pointed this out to me, and
+I've already used it as such in unxpdomlem.  ded(phi,A,B) means "if phi
+is true, return A, otherwise return B" and is almost exactly analogous
+to the C-language conditional operator "condition ? A : B".  It can be
+useful for defining functions such as
+
+            /
+           |    1 / x,  if x =/= 0
+  f(x) =  <
+           |    0, otherwise
+            \
+
+and if you look at Takeuti/Zaring's proof of unxpdomlem you'll see that
+this is exactly what I am doing, with nested ded's to represent 3
+possible alternatives.  Maybe I should rename "ded" to be "sel" for
+selector or even "if".  What do you think?
+
+The "seq", "ded", and "rec" objects in set.mm apparently do not appear
+in the literature, so there is no standard notation for them, which I
+think is unfortunate.
+
+(12-Oct-04) Prof. Nambiar communicated his paper to me earlier this
+year.  gch-kn shows that the Generalized Continuum Hypothesis is
+equivalent to a generalized version of his Axiom of Combinatorial Sets,
+from which the result in his paper falls out as the special case of A=0.
+
+(10-Oct-04) ssenen doesn't seem to appear in any book but is apparently
+assumed implicitly in the proof in Lemma 6.2 of Jech's _Set Theory_ p.
+43 (otherwise I can't see how that proof could work).  At first I
+thought the proof of ssenen would be trivial - it seems intuitive enough
+on the surface.  But I soon discovered it's a rather difficult thing to
+prove, and I hope you like the proof I came up with.
+
+(9-Oct-04) The theorem cdaval has a comment explaining how we do
+cardinal arithmetic, which you may find confusing.  The only new
+operation we actually introduce is +c (disjoint union), and we re-use
+existing set operations for the others.  Even +c is not really an
+operation from cardinal numbers to cardinal numbers, but just a general
+set operation.  Here is the mapping:
+
+  +c is used to represent cardinal number addition
+  cross product is used to represent cardinal number multiplication
+  set exponentiation is used to represent cardinal number exponentiation
+  equinumerosity is used to represent cardinal number equality
+
+With this mapping, we can easily obtain the "real" cardinal arithmetic
+operations, in the sense of operations that take actual cardinal numbers
+and produce new actual cardinal numbers.  To get the actual cardinal
+number (which is the smallest ordinal equinumerous to it) corresponding
+to any set, we use the "card" function.  A cardinal number is its own
+cardinal number as shown by cardid and cardcard.
+
+A cardinal number is nothing more than a measure of the "size" of a set.
+For finite sets, it is easy to see how the set operations correspond.
+For example, the cross product of a set with 3 elements and a set with
+5 elements will result in a set with 15 ordered pairs, corresponding to
+3 x 5 = 15.
+
+Our approach is exactly the approach used by Mendelson, and it saves us
+having to have a whole bunch of new operations and theorems on them that
+would essentially just be window dressing disguising what we already
+have.
+
+(5-Oct-04) infxpidm is a deep and important theorem that is typically
+one of the most difficult in elementary set theory textbooks, and some
+books don't even get that far (or omit the proof).  The only other
+formal proof of this I'm aware of is on the Isabelle prover.  About half
+of the paper "Mechanizing set theory:  cardinal arithmetic and the axiom
+of choice" http://www.cl.cam.ac.uk/users/lcp/papers/Sets/AC.pdf is
+devoted to the Isabelle proof of infxpidm.  Of course that was in 1996,
+so Metamath is about 8 years behind the times.:)
+
+(2-Oct-04) Some important milestones today!
+
+In our development there are two completely different sets, omega (a
+subset of ordinal numbers) and N (a subset of complex numbers), that are
+both called "natural numbers," undoubtedly causing a great deal of
+confusion.  The former are the natural numbers of set theorists, the
+latter the natural numbers of analysts, and both sets satisfy Peano's
+axioms.  nnenom relates these two sets, that live in completely different
+worlds, by showing that they are equinumerous.
+
+xpomen is a milestone theorem showing the cross product of omega with
+itself is countable, and will be used as a key stepping stone for the
+multiplication of infinite cardinal numbers.
+
+xpomen is derived directly from xpnnen with nnenom.  xpnnen in turn is
+essentially dependent on Raph Levien's nn0opth.  It is pleasant to see
+everything finally all fits together, with one thing building on
+another.
+
+(1-Oct-04) Right now, the proof of sucdom uses some heavy-duty AC
+(entri2) and Infinity (omex, nnsdom) stuff for such a trivial theorem
+(that is casually used, without mention of how it's proved, in
+textbooks).  I could not for the life of me figure out how to prove it
+without AC and Infinity.  Does anyone know?
+
+(30-Sep-04) As unrelated as they may seem, these are all preliminaries
+towards getting into transfinite cardinal arithmetic.  dedex was a
+surprise:  I expected a somewhat involved proof, and behold! it is just
+a special case of keepel.
+
+(29-Sep-04) An interesting curiosity is that xp2cda is an actual
+equality, not just an equinumerosity relation.
+
+I added a note to yesterday's cdaval, explaining our approach to
+cardinal arithmetic.
+
+(28-Sep-04) Today, with cdacomen, we take the first baby step in what
+promises to be a fascinating journey into the deeply profound world of
+cardinal arithmetic, where we will uncover the mysterious properties the
+objects in "Cantor's paradise" (transfinite cardinal numbers).  The new
+definition added is df-cda.
+
+Some books define cardinal arithmetic operations explicitly, whereas
+other books use cardinality and equinumerosity applied to ordinary set
+operations.  We will use Mendelson's hybrid approach, where cardinal sum
+is defined as a kind of "disjoint union" operation, and where cross
+product and set exponentiation serve the roles of product and powers.
+So, equinumerosity will mean "equals", and dominance will mean "less
+than or equal to".
+
+(27-Sep-04) I changed the turnstile |- color from green to gray.  The
+color had no purpose other than to make it stand out, and with so many
+other colors now (especially with the new rainbow-colored little
+numbers) it seems like a gratuitous and pointless use of color.  In the
+old days I suppose it added a splash of color to an otherwise dreary
+page, but now it just makes the page busy.  In addition, it is
+inconsistent since color otherwise distinguishes variables from
+constants (and |- is a constant).  I hope the gray is a sufficient
+distinction to impress the reader that it is a meta symbol that somehow
+transcends the "normal" math.  The indentation indicator next to it is
+also gray, but I don't think it will cause confusion.
+
+It seems another proof system called "DC Proof" is comparing itself to
+Metamath.  I suppose I should take that as flattery.  :)
+http://groups.google.com/groups?selm=OQh5d.2688%24KF.21330%40tor-nn1.netcom.ca
+
+(24-Sep-04) Our proof of undom is much simpler (when formalized) than
+Mendelson's, who defines a complicated one-to-one function from the
+left-hand to right-hand side of the dominance relation in the
+conclusion.  Basically we exploit unen, domen, and ssdom2g, avoiding any
+use of functions at all.
+
+(17-Sep-04) dmsnsnsn allows us to complete the "theory" of domains of
+iterated singletons of the empty set 0.  Thus:
+
+    dom 0 = 0
+    dom {0} = 0
+    dom {{0}} = 0
+    dom {{{0}}} = {0}
+    dom {{{{0}}}} = {{0}}
+    dom {{{{{0}}}}} = {{{0}}   etc.
+
+The first 3 are dm0, dmsn0, dmsnsn0.  By the way this has absolutely
+no practical value whatsoever. :)
+
+Historical trivia:  The singleton {0} reminded me of the theorem pwpw0,
+which is considered too obvious even to mention as a separate theorem in
+most books.  Suppes leaves its proof as an exercise.  Even when a book
+gives a "proof" it goes something like "{0} has 2 possible subsets, 0
+and {0}, so its power set is {0,{0}}."  In the early days of Metamath I
+was completely baffled how to formalize this and spent several
+frustrating days with this theorem.  I finally stumbled upon exintr,
+which I don't think is in any book, as the key to its proof.  As a kind
+of cynical joke, in its description I said (as many books do) that we
+"compute" its power set, although the proof seems to shed little light
+on what the algorithm might be. :)
+
+(16-Sep-04) The key theorem for qaddclt is divadddivt at step 26, which
+allows us to prove that the sum of two ratios of integers is a ratio of
+integers.  The other stuff is the messy overhead, made more so by having
+to avoid dividing by zero and having to work with N, Z, Q, and C in the
+same proof.
+
+(14-Sep-04) I like abrexex2.  Simple to state yet intrinsically quite
+deep and powerful.  The Axiom of Replacement plays an important role in
+its proof, and this theorem might be equivalent to it (although I'm not
+sure).  Note that it is essentially derived from iunex, which in turn
+derived from abrexex and the Axiom of Union.  On the other hand, abrexex
+can be easily recovered from abrexex2 by replacing phi with y=B, since
+the 2nd hypothesis {y|y=B} always exists (it is either a singleton, or
+the empty set when B is a proper class).  Wow!  I wonder if this has
+ever been published.
+
+(13-Sep-04) I think uni0b would make a nice textbook exercise.  By the
+way sssn can be used to show that A in uni0b is either the empty set or
+the singleton of the empty set.  sssn is another nice little theorem that
+seems obvious but whose proof is not quite as simple as one might think.
+
+(12-Sep-04) zltle1 is one of those unfuriatingly long proofs of
+something seemingly extremely trivial.  This is in spite of the fact we
+already have nnlelt1 (with an insanely long proof that has so far defied
+attempts to shorten it), on which zltle1 is ultimately based.
+
+elab2 and elab2g replace the venerable vtoclab and vtoclabg,
+generalizing them so as not to require that x and B be distinct
+variables.  This is important in cases where B is a class variable in a
+hypothesis, usually as part of an intermediate lemma, that will
+eventually be eliminated with cleqid.  By removing this restriction I
+was able to shorten a couple of additional proofs that previously used
+elab.
+
+(7-Sep-04) Our proof of Abian's "A most fundamental fixed point theorem"
+(abianfp) is, as far as I know, the first credible validation of this
+interesting and not-so-trivial theorem.  In his last years, Abian
+espoused some rather unconventional theories on Usenet, causing him to
+be considered a crank and not taken seriously.  The following Usenet
+post appears to be the original one announcing this theorem:
+http://groups.google.com/groups?selm=68v5ij%24bar%241%40news.iastate.edu&output=gplain
+Abian claimed for this theorem, "The fundamental significance of the
+Theorem lies in the fact that a great many fixed point theorems can be
+reduced to the special cases of the Theorem."  After some effort I
+located a post where Abian seems to have proved Tarski's classical Fixed
+Point Theorem as a corollary to this one:
+http://groups.google.com/groups?selm=6972ve%24t96%241%40news.iastate.edu&output=gplain
+This seems correct (although I need to work out the details to be
+completely convinced).  If so, I think this is significant, but
+apparently no one on Usenet took it seriously nor indicated they
+understood it.
+
+iunconst, fnresdm, and abianfplem are prerequisites for abianfp.
+
+(6-Sep-04) tfinds2 should produce shorter proofs than tfinds for some
+problems (analogous to finds vs. finds2).  I derived it from tfindes to
+show it can be done (i.e. going from explicit back to implicit
+substitution), but it required the new (and somewhat unusual) theorems
+sbralie (what a brain-teaser), sbcco2 (allows us to obtain
+[ suc x / x ] phi where suc x and x share a free variable), and sbcie
+added today.  An interesting exercise, and the technique should be
+useful in the future.
+
+(2-Sep-04) dedlem1 and dedlem2 are not new but revisions of older
+versions.  The "ded" operation can be useful for more than just the weak
+deduction theorem - as these lemmas show, it acts as a "selector" from
+two classes depending on the truth or falsity of a wff.
+
+(31-Aug-04) undm may be the shortest proof in the database.  ("V \ A"
+means the "complement of A", and most authors introduce a symbol
+abbreviating this expression.  We need it so rarely that I decided not
+to define it separately, at least not yet.)
+
+Mr. O'Cat provides us with a shorter proof for ja.
+
+difun was used to shorten the proof of dif23 of Aug 27.
+
+(30-Aug-04) Yesterday's cfub is used to simplify the proof of cf0.
+
+(29-Aug-04) A neat thing about snsspr is that neither A nor B have to be
+sets (which we accomplish with the use of snprc in its proof).  I was
+actually surprised that I didn't have this in the database, and was able
+to shorten a couple of proofs with it (see the "referenced by" list).
+
+cfub is (for me) an important breakthrough that will let us finally get
+some cofinality stuff proved efficiently.  I haven't seen this in a
+textbook.
+
+(28-Aug-04) fconstfv is tricky - the cases of A = empty and A =
+non-empty must be proved separately.  The reason is the non-emptiness
+requirement of r19.9rzv in step 23.  This is one of those little
+surprises you don't think of until you actually try to prove it.  But
+it's neat the theorem still holds when A is empty.  It's also neat the
+theorem still works when B is a proper class, and it is a pleasant
+coincidence that the theorem still works when generalized to these
+cases.
+
+By contrast, fconst2 (without its hypothesis) fails when B is a proper
+class.  Specifically, if F is empty and A is non-empty, the left-hand
+side will be false but the right-hand side will be true.  See snprc for
+what happens to a singleton of a proper class, and see f00 for what
+happens when a mapping has an empty codomain.
+
+(26-Aug-04) In dminss, R"A is the image of R under A - it "maps" a
+subset of the domain to a subset of the range.  Taking the converse
+image of this, we go back and get something at least as big as the
+original subset of the domain.  Example:  consider the constant
+function; the converse image of any (non-empty) subset of the range
+(i.e. the whole of the range, which is a singleton) will be the entire
+domain.  And this of course is at least as big as the original subset of
+the domain.  Suppes calls this "somewhat surprising" but doesn't say
+why.
+
+(21-Aug-04) I saw iuniin for the first time on the web page
+http://en.wikipedia.org/wiki/Union_(set_theory) (go to bottom of the
+page) and thought it was neat, so here is the proof.  Does anyone
+know what book it comes from?
+
+(20-Aug-04) A long time ago when I was first learning logic, I was so
+enamored with dfor2 that I wrote it on an index card for my "curious
+math facts" collection.  I can't remember if I read it somewhere or
+stumbled across it on my own.
+
+At one point I thought looinv was intuitionistic and sent Mr. O'Cat on a
+wild goose chase trying to prove it from ax-1 and ax-2.  It turns out
+it's as nonintuitionistic as it could possibly be, being equivalent in
+fact to Peirce's axiom (theorem peirce).
+
+(17-Aug-04) ac6s had me stumped for a long time.  It seemed reasonable
+to me that there was no reason to require that B be a set in ac6, but
+proving it was a different matter.  It now seems we need the very deep
+and strong Boundedness Axiom (whose proof is the culmination of our
+development of rank and the cumulative hierarchy of sets).  The proof of
+ac6s is a nice example of an application of the Boundedness Axiom.
+
+(16-Aug-04) Using a technique inspired by Mel O'Cat, which is just
+deleting the whole proof then letting the metamath program try to prove
+it using "improve all/depth n" for n=1,2,3,4 in succession, I found
+shorter proofs for the following 43 theorems:
+
+  pm2.21i pm2.21d pm2.18 pm2.65 orc jctil jctir imp42 imp44 imp45 adantl
+  adantr adantld anidm anidms ancom imdistanri abai anabs1 anabs7 anabsi5
+  anabsi8 anabss1 anabss3 anabss4 anabss5 anandis anandirs ibi bilimd iba
+  ibar 3impdi 3impdir pm5.1 baibr biantr niabn ninba ax6 19.33 euorv
+  exmoeu2
+
+I tried this on the first 984 theorems in the database (everything up to
+set theory).  ("improve all" was not designed to find proofs, but just
+to fill out syntax constructions.)  Out of these, "improve all" was able
+to find proofs for 237 of them!  134 of these were identical to the
+existing proofs found by hand, 60 were longer, and the 43 above were
+shorter.
+
+(16-Aug-04) zorn2 is a simpler version of Zorn's Lemma than zorn, so I
+made it the "official" Zorn's lemma on the Theorem Sampler of the
+Metamath Proof Explorer Home Page.
+
+(15-Aug-04) qlax* are the new theorems that directly correspond to the
+Quantum Logic Explorer axioms.
+
+Most of today's non-Hilbert-space theorems are just slight modifications
+to older ones for better overall consistency.  Sometimes the older ones
+are still there if you click the "Next" link, until I slowly weed them
+out of the theorems that use them.
+
+If you have any comments on the new "Theorem list" links let me know.
+For example, is the upper right corner the best place to put it?  Do you
+find it useful?
+
+(14-Aug-04) Mr. O'Cat comes through for us again with loolin.
+
+Well, well, it looks like _both_ directions of reluni hold!  Neat.  Only
+the reverse direction is given in Takeuti/Zaring's exercise (and in
+set.mm since 1994, in the older version of reluni, which was based on
+the excercise).  I wonder if they knew that both directions hold.
+
+(13-Aug-04) fh1 is (one-half of) the very famous Foulis-Holland theorem
+of orthomodular lattices, which was proved and published independently
+by Foulis and Holland at almost exactly the same time.  I'm not sure who
+really came first but both are always credited.  This proof is identical
+in structure to the Quantum Logic Explorer version
+http://us2.metamath.org:8888/qlegif/fh1.html which you may wish to
+compare it to, and in fact I "borrowed" it from there.  You can see why
+the Quantum Logic Explorer is simpler to work with for these kinds of
+things:  we don't need "member of CH" hypotheses, and we don't have to
+keep proving operation closure over and over.  I put fh1 in the Hilbert
+Space Explorer also because we will later need it for deeper Hilbert
+space things that the Quantum Logic Explorer axioms can't do (e.g.
+involving quantification).
+
+A bit of trivia regarding this theorem:  I used this theorem to
+win a $2.00 bet with physicist John Baez, who was unaware of it.  See
+http://groups.google.com/groups?selm=MaVe6.4799%24JG.614310%40news.shore.net
+
+(12-Aug-04) Compare the proofs of un00 and chj00 - they're very similar!
+
+(8-Aug-04) The last half of my talk at the Argonne workshop
+http://www-unix.mcs.anl.gov/~mccune/award-2004/ is related to theorem
+mdsym (of 2-Aug-04).  (As you can see, work on this site continued from
+my hotel room thanks to Linux and ssh...:)
+
+(4-Aug-04) Most of today's theorems prove the "theorem" form of the
+result rather than the "inference" form of the result, and most steps do
+nothing more that manipulate antecedents with propositional calculus.
+Their proof displays give us excellent examples of the usefulness of the
+little colored numbers.
+
+Look, for example, at div23t.  At first it seems to be a formidable,
+hopelessly complicated mess.  But if you ignore the steps with
+red/orange numbers, there are only 5 steps left that have blue numbers.
+Now, if you look at only those steps and ignore the rest, you can pretty
+much see "in your head" how to connect the equalities to obtain an
+informal proof.  Doesn't it make more sense this way?
+
+The other way to prove the "theorem" form is to use the weak deduction
+theorm dedth and its variants.  But as the number of antecedents grows,
+so does the size of the proof using the weak deduction theorem.
+Depending on the proof, sometimes you'll get a shorter proof proving it
+directly, like with today's.  Sometimes I would prove it both ways and
+pick whichever way was shortest (in terms of size of the compressed
+proof in set.mm).
+
+(3-Aug-04) expcllem shortens the proof of reexpclt (closure of natural
+number exponentiation of reals) and will later be reused for integers,
+rationals, etc.
+
+(2-Aug-04) mdsym (M-symmetry in Hilbert space) is the final goal of
+the recent Hilbert space work.  I will be giving a talk on this
+remarkable theorem Aug. 5-7 at the Automated Reasoning workshop
+http://www.mcs.anl.gov/~mccune/award-2004/ and I can now claim that I
+understand its proof in complete detail.
+
+(1-Aug-04) halfnz is a curiously long proof for such a simple fact.
+If anyone sees a way to shorten it let me know.  On the other hand
+it may illustrate the implicit complexity underlying even trivial
+arithmetic facts (even if we start with the axioms for arithmetic).
+
+(31-Jul-04) 2cn is a long-overdue theorem that shortens the proof of the
+venerable 2p2e4 (2+2=4) as well as a couple of dozen other theorems.
+
+(28-Jul-04) oncardid and oncardon are used to reprove cardnn so that it
+doesn't use the Axiom of Choice.  I didn't like that overkill for
+something as basic as cardnn.  I also reproved cardom so it also doesn't
+need the Axiom of Choice.
+
+(26-Jul-04) dom2d will help us prove some equinumerosity dominance
+theorems more easily, i.e. without directly exhibiting the 1-1 function
+required by brdom.
+
+(25-Jul-04) nthruz is the 4000th theorem added to the non-Hilbert-space
+part of set.mm.  (Hilbert space adds another 600 or so.)  I'll have to
+update the summaries that say the Metamath Proof Explorer has "over 3000
+theorems" to say "over 4000 theorems", once the 4001st is added.  The
+date stamp was added to the metamath program on 5-Aug-93, which is the
+earliest date in set.mm, at which point there were 450 theorems covering
+propositional calculus, predicate calculus, and the beginnings of set
+theory (subsets, union, intersection, abstraction classes, unordered and
+ordered pairs).
+
+(24-Jul-04) nn0enom provides an important link between between two very
+different theories - complex numbers (nonnegative integer subset) and
+ordinal numbers (finite subset).  With it, we can exploit our many
+complex number theorems to get some equinumerosity results that will
+ultimately be used for cardinal arithmetic.  I guess it's kind of
+indirect and ugly but it will save a lot of work.  (And formally it's
+absolutely rigorous of course.)  Actually we'll need the reals anyway to
+study the continuum so maybe it's not that ugly.
+
+(23-Jul-04) bnd2, like bnd, is one of those "obvious" things that is
+actually quite deep.  The proof (if you trace it back) ties together
+key results about ranks, the Axiom of Regularity, and the Axiom of
+Infinity.
+
+It was quite a journey to get atom1d - whereas Beltrametti/Cassinelli
+merely say "The one-dimensional subspaces of H are obviously the atoms
+of C(H)."  I guess this is the difference between formal and informal
+math.
+
+(22-Jul-04) ranksn, rankuni, rankuniss are some interesting little facts
+about rank.  Most textbooks seem to have them, so why not.  (But we
+don't have a use for them yet.)
+
+(21-Jul-04) I am torn about the notation "Mod" for modular pair.  Maeda
+uses (A,B)M for our A Mod B, but a plain "M" just seems too unspecific
+in a general set theory environment.  On the other hand "Mod" suggests
+the arithmetic modulo, but I'll use "mod" (lower case) for that when we
+start to need that.  But I still may change A Mod B to something else
+after I think about it - it is nonstandard and I dislike nonstandard
+notation in set.mm unless it is unavoidable.
+
+(18-Jul-04 - 19-Jul-04) isfinite2 does not require the Axiom of Infinity
+for its proof, whereas the stronger isfinite does require it.
+
+(14-Jul-04) unbnn will eventually give us a proof that a set strictly
+dominated by omega is finite, without invoking the axiom of infinity.
+(This is the hard part of the proof.)  See Suppes Th. 42 p. 151 for more
+information.  unbnn is also a useful general result in its own right; for
+example it will become useful for proving certain cofinality results.
+
+(12-Jul-04 - 13-Jul-04) Cardinal exponentiation, when we define it in
+the future, will be the cardinality of set exponentiation. mapen and
+xpmapen provide two fundamental theorems used to establish properties of
+cardinal exponentiation.  (xpmapen was tough to formalize - ugh - I
+wonder if there is an easier way to do it.)
+
+(11-Jul-04) canth3 gives us an unlimited supply of ever-bigger infinite
+cardinal numbers.
+
+(10-Jul-04) cardnn gives us a very convenient property of finite
+cardinal numbers:  the natural numbers and the finite cardinal numbers
+are the same thing!  The alternate definition of cardinals given by
+karden (using the Axiom of Regularity instead of the Axiom of Choice)
+does not have this property, which is one of their disadvantages.  Once
+I worked out the first few finite cardinals from karden (it is an
+exercise in Enderton) and they become very messy and complicated very
+quickly.
+
+(9-Jul-04) sucprcreg is probably not useful for anything, but it was
+fun.  (We already have sucprc that sometimes helps prove more "general"
+theorems where A does not have to be a set.  And I like to avoid
+theorems requiring the Axiom of Regularity whenever possible.)
+
+(8-Jul-04) aleph1 is an important theorem piecing together some recent
+results (alephnbtwn2, canth2, pw2en).  The cardinality of reals is
+2^aleph0 (which hopefully we will prove here someday), and in the
+absence of the Continuum Hypothesis this theorem is the best we can do -
+the reals are at least as numerous as aleph-one, but possibly more so.
+
+(7-Jul-04) I had been wanting to prove spansncv for a long time but was
+unable to (it is an exercise in Kalmbach with no answer given).  Prof.
+Eric Schechter (http://www.math.vanderbilt.edu/~schectex/) finally
+provided me with the missing piece, which is the theorem spansnj.
+
+(6-Jul-04) The proof of pw2en seems much longer than it should be.
+I'll have to revisit it someday.
+
+(1-Jul-04) ssext is interesting because A and B may be proper classes,
+yet we need to compare only their (non-proper-class) subsets to
+determine whether they are equal.
+
+nssinpss is one of those neat little "it ought to be a theorem or
+example or exercise in a book" things, but apparently it isn't.  (Any of
+our theorems that omits a bibliographical reference doesn't appear in
+any book that I'm aware of.  If you find one that does let me know!)
+
+(30-Jun-04) elsuc vs. sucel - We have many theorems expanding membership
+of a class in a defined object, such as elsuc, but hardly any expanding
+membership of a defined object in a class.  I'm not sure why that is,
+but the need just doesn't seem to arise that often.  Today I added two,
+0el and sucel, and used them to shorten a couple of existing proofs.
+These actually seem to be the only such theorems in the database - I
+looked through set.mm for others, but I couldn't find any others of the
+form "(defined object) in (class variable) <-> ..." whose right-hand
+side didn't reference the defined object.  On the other hand there are
+probably over 100 theorems showing membership _in_ defined objects, like
+elsuc.  Strange.  By the way there is no "membership in" version of 0el
+in our database but rather we use the simpler noel.
+
+(29-Jun-04) I used to be in awe of the fact that Cantor's theorem failed
+in NF.  With ncanth it now seems kind of obvious why it would fail,
+because V is a set in NF.  (The actual proof in NF is somewhat different
+since the axioms are different, but the idea is the same.)  Anyway
+ncanth takes away some of the mystery, which is good, but unfortunately
+it also means I'm not as awed as I used to be.  I guess a little mystery
+can sometimes make things more appealing.
+
+(28-Jun-04) xpsnen shows another use of our friend en2 of 25-Jun.  The
+proof makes essential use of the interesting op1st that extracts the
+first member of an order pair.
+
+eqssd was used to shorten 11 proofs that previously used eqss, jca, and
+sylibrd.  The number of bytes trimmed off of their compressed proofs
+exceeded the number of bytes in eqss, its comment, and its proof, so the
+database size SHRUNK when eqssd was ADDED!  I guess that's what you'd
+call a positive ROI.  :)
+
+spanun and spansn are two important theorems of Hilbert space.  spanun
+allows us to work in set theory to take the union of two sets of
+vectors, then take the span to get their subspace sum.  This can be a
+very powerful simplification over working directly with subspace sum.
+spansn equates two very different ways of expressing a one-dimensional
+subspace.  (Familiar example:  if the Hilbert space is the ordinary
+3-dimensional RxRxR of real numbers, a one-dimensional subspace is a
+line that goes through the origin.  Any non-zero vector A on the line
+essentially specifies the line.  To get the line we take the span of the
+singleton of A.  Alternately, we take the orthocomplement of the
+singleton of A, which becomes the plane (through the origin)
+perpendicular to A.  Then the second orthocomplement recovers the line
+from that plane.  By the way there are 4 kinds of objects in the Hilbert
+lattice of R^3:  the point at the origin, lines, planes, and the
+entirety of R^3.  These are such different things, like apples and
+oranges, that it seems counterintuitive that they could all be "like"
+each other in the sense of being the elements of a lattice.  But it is
+often useful to think of the R^3 example when trying to understand
+Hilbert lattice theorems intuitively.)
+
+(27-Jun-04) Normally rank is defined in terms of R1 (the cumulative
+hierarchy of sets) - see df-rank.  Monk takes the opposite approach - he
+defines rank first, then defines R1.  Here we prove, with r1val2, Monk's
+definition as a theorem of our approach.  R1 and rank are in a sense
+equivalent concepts, although very different in their approach and uses,
+analogous to say the time domain vs. frequency domain representations of
+a signal in Fourier analysis:  either representation can be recovered
+from the other.  And each representation can have advantages over the
+other depending on the problem.
+
+dfom2 is a traditional way of defining the set omega of natural numbers
+(as a subset of the ordinal numbers, not the natural number subset of
+the reals) that is used in many textbooks.  However, dfom2 requires the
+Axiom of Infinity in order to be valid, whereas our df-om does not.  (If
+you look under the proof of dfom2, you'll see that ax-inf is used, and
+in fact it is needed to ensure that at least one set x in the class
+abstraction exists.)  This means that in these books, all theorems about
+natural numbers presuppose the the Axiom of Infinity.  The reason they
+do this is that it makes their development easier.  Our philosophy is to
+avoid the Axiom of Infinity when it is not necessary, so our development
+starting with df-om is quite a bit more complex than in these books.
+(Takeuti/Zaring's book takes our approach.  However they take a shortcut
+by using the Axiom of Regularity, which is still undesireable.  By
+carefully reworking their proofs, I was able to avoid both Infinity and
+Regularity in our development of natural numbers.  For example, if you
+look at say nnacom you'll see infinity is not used.  T/Z also give a
+somewhat confusing definition of omega.  Our equivalent but simpler
+definition df-om doesn't seem to occur in the literature, although it is
+related to Bell/Machover's natural number predicate.)
+
+(26-Jun-04) map1 is our first theorem using en2.  See how easy the proof
+is - no messy one-to-one onto function stuff!  (There is a function that
+comes from elmap, but that has to do with the definition of set
+exponentiation, and we quickly get rid of it with fconst2.)
+
+In Hilbert space I'm building up a collection of basic theorems that
+will be needed to develop the theory of atoms.
+
+(25-Jun-04) I think en2 is quite neat - it is not immediately obvious
+(to me at least) that you can conclude equinumerosity from the
+innocent-looking hypotheses.  But look at its simple, beautiful proof:
+the function stuff magically appears then vanishes!  I don't think en2
+is published anywhere.  It should let us arrive at some equinumerosity
+proofs much more quickly.
+
+(24-Jun-04) omsmo is one of those "intuitively obvious" or "trivial"
+facts that textbooks never bother to prove.  Unfortunately for us we
+must actually prove it to use it since Metamath will not let us overlook
+such minor details. :)
+
+(20-Jun-04) I haven't had any luck shortening zind.  I am tired of
+working on it and will put it aside for a while.
+
+Today's theorems finish up the list of single-digit operations, where
+the result is a single digit.  As you probably have noticed we don't yet
+have a standard way of expressing multiple digit numbers like they are
+normally written down.  I used to have a definition for it but it was
+clumsy and I took it out.  The interesting thing is that in abstract
+math there is rarely a need for numbers larger than say 4 (which is the
+largest number I have used so far outside of the list that we completed
+today).  Glancing through the proof of Fermat's Last Theorem - one of
+the most difficult proofs ever - I don't think I saw a number larger
+than 12.  So I'll probably postpone multiple-digit numbers until it is
+really needed.  And even so we can represent them with expressions of
+single-digit numbers; for example 42 can be expressed as 6 times 7.  Now
+that is an interesing problem:  find the shortest representation of all
+numbers from say 1 to 1000 in terms of operations on single digits
+(addition, subtraction, multiplication, division, and exponentiation).
+Any takers?
+
+Raph will have multiple-digit numbers in Ghilbert.
+
+(18-Jun-04) At first zind looked trivial.  After all, we already have
+induction on natural numbers (ind at step 290), and this theorem is just
+"shifting" it to start at a different number.  But as I got deeper into
+it more and more unpleasant surprises kept popping up.  After hours of
+tedious work I ended up with one of the biggest and ugliest proofs in
+set.mm that I see no way to simplify, and there are no "neat" lemmas
+that stand out (if it were broken up it would only be for the purpose of
+breaking it up and would not make the proof more efficient).  It doesn't
+make any sense why it should be so huge and it makes me depressed.  I'll
+have to look at it again after I recover.:)
+
+(17-Jun-04) See isomin for an explanation of Takeuti and Zaring's
+initial segment idiom in isoini.  This theorem, though cryptic, is
+copied symbol for symbol from T&Z.
+
+oprprc1 is philosophically ugly but will allow us to "cheat" and shorten
+a few proofs in the future, by not having to worry so much about whether
+a class is proper or not.
+
+(16-Jun-04) erthi is the "key" theorem involved in the proof of erdisj.
+
+(14-Jun-04) zrevaddclt basically says, if B is an integer and A is a
+complex number and A+B is an integer, then A is an integer.  I think
+reverse closure laws are interesting twists on closure laws.
+
+(13-Jun-04) isotr and isotrALT are two different proofs of the same
+thing, because I wanted to see which approach is shorter.  Well, one is
+shorter in set.mm and the other produces a shorter web page.  So which
+do I pick?
+
+f1owe uses the new isomorphism stuff to dramatically simplify its proof.
+Compare the old version (that will eventually be deleted), f1oweOBS.
+
+(12-Jun-04) The definitions df-un and df-in have been changed to
+be more traditional.  What used to be df-un is now dfun2 and vice
+versa; what used to be df-in is now dfin2 and vice versa.  The price
+we pay is a dummy variable, but I finally decided that dfun2 and dfin2
+are just too unconventional.
+
+The proof of isowe was left as an exercise for the reader in Takeuti and
+Zaring, and thankfully I was able to figure it out!  It will provide a
+great reduction in size of the enormous proof for f1owe - stay tuned...
+
+The new definition df-cv for covering allows us to have a much simpler
+definition for atoms, and df-at is the new version of the defintion.
+Theorems ch0psst, atcv0, and atelt are supporting theorems for the new
+df-at.
+
+(11-Jun-04) bitr2d, psseq2i, psseq2d shorten some existing proofs.
+znegclt, zaddclt, zsubclt will be needed when we get into proofs about
+integers.  cvbr, cvbr2 express the basic property of the new df-cv
+(covers) definition.  There is much literature on the properties related
+to covering in Hilbert space, and these properties are ultimately tied
+to the superposition of states (Schroedinger's cat, etc.)
+
+(10-Jun-04) funimass2 arose in a proof in a to-be-published logic book
+I'm reviewing.  I thought it was very neat that the domain and range of
+F are completely irrevelevant to the result, nor does F have to be
+one-to-one or onto.  funimass1 is similar but depends on the range of F.
+
+(9-Jun-04) elnnz1 could be used as a definition for natural numbers if
+we started with integers. nn0subt is a kind of closure law for
+subtraction of nonnegative integers.  It is kind of surprising that its
+proof is so long, given that we already have the almost-identical
+nnsubt, but I couldn't find a simpler proof.  An example of shintclt is
+that the intersection of two planes (linear subspaces) is a line (a
+linear subspace). spanclt shows that the span function "grows" a
+arbitrary set of vectors into (the smallest) linear space containing
+them.
+
+(8-Jun-04) anadis, anandirs shorten a bunch of proofs previously using
+anandi, anandir plus sylbir.  By the way the "s" suffix on anandis,
+anandirs means "eliminates a syllogism".  ssel2 is a trivial variant of
+ssel but it is needed so often that I decided to put it in - it makes a
+bunch of proofs slightly shorter.  The proof of isofr was left as an
+exercise for the reader in Takeuti and Zaring - I always worry about
+these because figuring out the answers to exercises is often the
+hardest part of doing these proofs, and if I can't do it the whole
+project comes to a standstill because there can't be any missing
+pieces the database.  hvm1negt, hvsubcan1t, hvsubcan2t - some
+more elementary Hilbert space elementary results; by the way the suffix
+"t" means "theorem form" (vs. "inference form" where the membership
+requirements are hypotheses).
+
+(7-Jun-04) If you think isomin is incomprehensibly cryptic, don't blame
+me. :)  It is stated exactly as written in Takeuti and Zaring's book,
+symbol for symbol.  I did add a note explaining the initial segment
+idiom.
+
+I was surprised there's never been a need for something as basic
+as unss12 yet.  funimacnv tells us that if A is a subset of the
+range, the image of the converse image of A is A - neat and in a
+sense intuitive, but its proof took some thought...  elznn0
+and elnn0z express some more number class relationships.
+
+(3-Jun-04) df-span is the same as the span of a vector space you learned
+about in linear algebra.  It does not require any special properties of
+Hilbert space.
+
+(2-Jun-04) onxpdisj may ultimately find use in extending the set of
+complex numbers with +infinity, -infinity (for reals) that is useful in
+analysis.  Basically, in our definition df-c (and most textbook
+definitions) complex numbers are ordered pairs, so per onxpdisj any
+ordinal provides a disjoint set that could extend C with artificial
+things like +infinity.
+
+(1-Jun-04) sqr9 extends the series sqr0, sqr1, sqr4.
+r1pwcl is a new version of the May 30 version that now has Lim B
+as an antecedent (instead of a hypothesis).
+
+(31-May-04) h1dle simplifies the proof of hatomic and should be useful
+for other things too.  Note:  "atom" has nothing to do with physical
+atoms but is just a mathematical term describing a smallest non-zero
+element of a lattice, where there is nothing smaller than it except the
+zero element.  In the lattice of closed subspaces of Hilbert space, all
+atoms are one-dimensional subspaces (I hope to show the proof of this
+soon).  To get a one-dimensional subspace, we start with a singleton
+containing any non-zero vector, then take the double orthogonal
+complement to grow the singleton to a closed subspace (which in this
+case would just be the set of all vectors that differ by a scalar
+factor, i.e. a one-dimensional "line").  I haven't seen the idiom
+_|_ _|_ {B} for a one-dimensional subspace in the literature, but it is
+convenient.  (The antecedent of h1dle doesn't require that B be nonzero,
+but that's because the theorem also works when B is zero - although
+_|_ _|_ {B} is not a 1-dimensional subspace in that case but instead the
+zero subspace.)
+
+(30-May-04) Raph contributed 3 really nice results - rankr1a, r1pw,
+and r1pwcl - on rank and the cumulative hierarchy of sets (R1).  I
+haven't seen any of them in a textbook.
+
+(28-May-04) exp0 and expp1 are the final goals of exponentiation of
+complex numbers to nonnegative integer powers.  These effectively
+provide the recursive definition found in most textbooks (which
+typically do not go through the tedious work of justifying the
+recursion).  We could have started with exp0 and expp1 instead of the
+direct definition df-exp, but then we would have had to introduce expp1
+as an axiom because it is self-referential.  Instead, we want to ensure
+direct traceability back to ZF set theory axioms.  From this point
+forward we will develop all further properties from exp0 and expp1 only,
+never referring back to the development leading up to them (and never
+referring directly to df-exp again).  The work we did to develop
+recursion on nonnegative integers - nn0rzer and nn0rsuc - will be
+reusuable in the future for other recursive definitions.
+
+It turns out that nn0rone and nn0rfnnn0 are not needed.  In particular,
+we can prove closure of exponentiation from exp0 and expp1 using
+induction, eliminating the need for nn0rfnnn0.  However I'll leave them
+in because they may useful in future applications.
+
+(24-May-04) Raph Levien developed the definition of exponentiation of
+complex numbers to nonnegative integer powers in Ghilbert and translated
+it to Metamath.  (He has a Ghilbert to Metamath translator now.)  I am
+adapting it for the official set.mm.  It will replace the current
+"dummy" definition df-expOBS that only works for powers of 2.
+
+(18-May-04) None of these function-related theorems appear in any
+textbook I'm aware of (if there is no bibliographical reference), but
+most will be needed later to prove some theorems (about cardinality
+etc.) that do appear in textbooks.  I guess that once set theory
+advances beyond a certain point, these kinds of theorems are expected to
+be "obvious" to the reader and are not explicitly mentioned.  Some of
+them might make nice homework exercises for a set theory class.  I
+wonder if any teacher has ever borrowed from our collection for that
+purpose.
+
+(15-May-04) I've often thought Takeuti/Zaring's initial segment notation
+in today's eliniseg, iniseg, dffr3 is a rather cryptic and convoluted
+idiom just to avoid the dummy variable in {y|y<x}.  Maybe it's just me,
+but even after seeing this for years I still think "the image of the
+converse of the less-than relation under the singleton of x" is harder
+to grasp intuitively than "the set of all y less than x".  Nonetheless
+they use it frequently in their isomorphism stuff we'll be getting into,
+so I yielded and will adopt their approach.
+
+(13-May-04) In case you are wondering - the cryptic theorem names
+usually aren't random but typically follow some kind of rough
+convention.  For example, today's "cla42gv" has the following breakdown:
+
+  "cl" - uses class variables instead of set variables
+  "a4" - related to axiom ax-4
+  "2" - the theorem is essentially cla4gv applied twice
+  "g" - introduces the hypotheses of the non-"g" version as an antecedent
+        ("g" indicates "a more general version")
+  "v" - uses distinct variables instead of bound-variable hypotheses
+
+The idiom "a4" above appears a lot, and they are all relatives of axiom
+ax-4:
+
+  MM> show labels *a4*
+  The assertions that match are shown with statement number, label, and type.
+  1971 a4i $p        1979 a4s $p        1983 a4sd $p       2402 a4a $p
+  2407 a4c $p        2413 a4c1 $p       2533 sbea4 $p      2534 sbia4 $p
+  2535 sbba4 $p      2643 a4b $p        2648 a4b1 $p       2653 a4w $p
+  2659 a4w1 $p       3905 ra4 $p        3906 ra4e $p       3907 ra42 $p
+  4642 cla4gf $p     4643 cla4egf $p    4649 cla4gv $p     4650 cla4egv $p
+  4657 cla4e2gv $p   4658 cla42gv $p    4665 cla4v $p      4666 cla4ev $p
+  4673 rcla4v $p     4674 rcla4ev $p    4686 rcla42v $p    4687 rcla42ev $p
+  4696 cla4e2v $p    4891 a4sbc $p
+
+A few people have commented that the theorem labels are obscure, and in
+general I'm not thrilled with them either.  Every now and then I revise
+a few for better uniformity.  But no one has been able to suggest a
+better approach that still keeps the names short.  For example, I use
+"sbth" instead of "SchroederBernsteinTheorem" because the latter would
+be annoying to type while entering a proof, and lists like the above
+would not be very compact.  In general, an "English-like"
+descriptive label would be have to be very long to be meaningful - how
+would you label cla42gv?  I wonder if a breakdown for each label like
+the "cla42gv" example above would be useful enough to be worth the
+effort of maintaining it.  Maybe this could be done with an annotated
+label in each description, something like:
+
+  cl+a4+2:4+g+v
+
+where cl, a4, etc. are looked up in a list and 2:4 refers to the
+4th meaning of "2" in that list.
+
+
+(10-May-04 - 12-May-04) Some miscellaneous stuff and simple arithmetic
+facts we'll need later on.  A bold attempt to venture beyond 2+2=4...
+
+Someday of course we'll have to complete the elementary school addition
+and multiplication tables.  (At least Raph Levien will do this for his
+Ghilbert database, and has ideas for decimal numbers - I used to have
+them but took them out because I thought the notation was ugly and I
+wasn't happy with it.)  However it is interesting that "higher math"
+rarely uses numbers beyond 2.  For example scanning the proof of Fermat's
+last theorem http://math.stanford.edu/~lekheng/flt/wiles.pdf the largest
+number I see for most of the proof is 4 (although the last paragraph
+mentions some larger numbers, but this may be material beyond FLT, I'm
+not sure).
+
+(9-May-04) exists2 is another one from the existential uniqueness list I
+made several years ago.  I think it is interesting because it shows a
+way to "talk" about multiple objects without using set theory.
+
+(7-May-04) rdglem1 was a final loose end that was cleaned up. zfreg* are
+cleanups of older versions that didn't use restricted quantification.
+Other stuff you don't see behind the scenes:  over 2 dozen theorems were
+deleted.  These were obsolete versions have been completely eliminated
+from all proofs using them, and there are now no *OBS theorems in
+set.mm.
+
+zfregs (the strong version) is curious because the Axiom of Infinity
+is apparently needed for its proof (at step 5 of tz9.1 used in its
+proof) yet there is no obvious component of Infinity in the result.  No
+one, including some prominent mathematicians, has been able to tell me
+why or even whether Infinity is _required_ for a proof of this theorem.
+All textbook proofs I've seen just implicitly use Infinity (in the form
+of a finite recursion) at this step without further comment.  In other
+proofs I've been able to avoid the Axiom of Infinity (vs. textbook
+proofs) by using transfinite recursion instead - interestingly
+transfinite recursion does not require the Axiom of Infinity, whereas
+finite recursion (the textbook version) does.  This is because the
+latter takes a shortcut by just showing the existence of the necessary
+function over omega, without showing what it looks like, whereas the
+former (with far more difficulty) must state explicitly the required
+function over ordinals because it is proper class and does not exist as
+a set.  In set.mm we don't take these shortcuts, and in most cases we
+use finite recursion (frfnom, frzer, frsuc) without invoking the Axiom
+of Infinity.
+
+(6-May-04) ackm completes the proof of Maes' axiom by establishing
+the final link to our Axiom of Choice ax-ac.
+
+(4-May-04) More work on the new transfinite recursion proof.  Done with
+all the lemmas now.  By the way, when I revise existing proofs, I
+usually suffix the old one with OBS (obsolete), so the old tfrlem1
+becomes tfrlem1OBS.  The OBS version will stay until all references to
+it are removed.  This way I can ensure that, at any point in time, the
+set.mm database as a whole is consistent and complete, even while things
+are being modified.
+
+(3-May-04) More work on the new transfinite recursion proof.
+
+(2-May-04) isoid, cflem, and cfval are simple theorems to try out the
+new df-iso and df-cf definitions.  The proof of transfinite recursion
+(tfrlem*) is being redone in order to be slightly shorter.
+
+(1-May-04) fv2, fv3, tz6.12*, etc. are part of a cleanup of function
+value stuff to use the more compact xFy (df-br) in place of <x,y> e. F.
+
+(30-Apr-04) Finally, aceq5.
+
+(28-Apr-04 - 29-Apr-04) We need aceq3 and aceq4 to get the final piece
+of aceq5, and they will also fill in part of an AC equivalence series I
+have in mind.  (The eventual goal here is to get a link from Mae's AC to
+ours.)
+
+(27-Apr-04) I figured I might as well complete the equality/subclass
+series with eqsstrd, eqsstr3d, etc.  These are named for their
+resemblance to bitr (simple chaining), bitr3 (useful for eliminating
+definitions), and bitr4 (useful for introducing definitions).
+
+limelon is cleaned up from an older version and is needed for some
+future stuff related to df-cf.
+
+(26-Apr-04) I cleaned up some function value stuff to improve the proofs
+leading to the very useful abrexex, which is one of those simple-looking
+theorems that hides a lot of power.
+
+After noticing several times the "need" for syl5ss, syl5ssr, syl6ss,
+syl6ssr, I finally added them in.  (These, like others in the syl5xx,
+syl6xx "family", are named after their resemblance to syl5 and syl6.)  I
+was able to shorten over 2 dozen proofs with them, so I was curious what
+this actually meant in terms of set.mm file size.  It turns out that a
+total of about 300 bytes were trimmed from the (compressed) shortened
+proofs, vs. about 1000 additional bytes for the 4 new theorems.  So they
+haven't quite "payed" for themselves yet.  Perhaps they will when set.mm
+is 3 times as big...
+
+(23-Apr-04 - 24-Apr-04) These are some function and function value
+theorems that we will need later.  And a step closer to aceq5...
+
+(17-Apr-04 - 22-Apr-04) I have a list of uniqueness and "most one"
+theorems I worked out several years ago, and I decided to add some of
+them to the database.  Here is an excerpt from an email I wrote.
+
+  Let us consider ax-1 through ax-16 (plus ax-mp, ax-gen).  We will ignore
+  ax-17 (which, external to set.mm, is a metatheorem derivable from the
+  others).
+
+  I mentioned earlier that ax-1 through ax-15 (the $d-free fragment)
+  cannot prove all $d-free theorems, and indeed by Andreka's theorem a
+  complete $d-free fragment is impossible.  For completeness we need to
+  add ax-16, which states:
+
+      A. x x = y -> ( phi -> A. x phi )  where  $d x y
+
+  This is the axiom that, one way or another, ultimately allows us to
+  eliminate dummy variables from a proof.  But it has a $d condition.
+
+  There is a trivial theorem (exists1 in the current set.mm) that states:
+
+      E! x x = x  <->  A. x x = y    where $d x y
+
+  E! means "there exists exactly one."  With this we can replace the
+  antecedent of ax-16 and restate it so that it does not have a $d
+  condition.  E! effectively "hides" the distinct variable y otherwise
+  needed for ax-16.
+
+  Of course E! is a defined connective, and when we eliminate the
+  definition the distinct variable returns.  I would be surprised if, by
+  treating E! as a primitive connective and adding $d-free axioms for it,
+  we could exploit its "hiding" feature to defeat Andreka's theorem.  But
+  I don't have a proof that we couldn't defeat it.
+
+  In any case I think E! is an interesting connective, and it seems poorly
+  developed in the literature, usually mentioned briefly in passing and
+  sometimes not (formally) at all.  Maybe it's considered too trivial.
+  But its theorems are sometimes not that obvious, and in fact E! x E! y
+  has been mistakenly used to mean "there exists exactly one x and exactly
+  one y."  (Nowhere, to my knowledge, is the correct expression for this
+  found, except in set.mm).
+
+  I have sometimes wondered what a complete axiomatization of E! might
+  look like under (standard, not set.mm's) predicate calculus without
+  equality (that would allow one to prove all theorems mentioning E! but
+  not mentioning =).  In set.mm there are many theorems of this sort such
+  as
+
+      E! x E. y phi  ->  E. y E! x phi
+
+(15-Apr-04) I want to link Maes' AC all the way to our Axiom of Choice
+ax-ac, but I'm missing some standard equivalents needed to do that, and
+I'll be working on those as I can fit them in. aceq5lem1 is a start at
+this.  When it is complete, aceq5 will prove:
+
+    aceq5 $p |- ( A. x E. f ( f (_ x /\ f Fn dom x ) <->
+           A. x ( ( A. z e. x -. z = (/) /\
+           A. z e. x A. w e. x ( -. z = w -> ( z i^i w ) = (/) ) ) ->
+          E. y A. z e. x E! v v e. ( z i^i y ) ) ) $=
+
+(14-Apr-04) Here, finally, we present Maes shorter version of his
+5-quantifier AC.  (The longer one has been deleted from the database,
+since it's no longer "interesting.")  Not only does this version have
+only 5 quantifiers (our ax-ac has 7 or 8 if put in prenex form), but if
+we expand out the biconditional in our ax-ac, Maes' axiom is the same
+length as ours, tying my claim that ax-ac is the shortest possible.
+This result refutes a conjecture of Harvey Friedman that a 5-quantifier
+AC was not possible (and he thanked me for verifying Maes' result).
+
+(7-Apr-04) Maes discovered a SHORTER version of his 5-quantifier Axiom
+of Choice.  That means the old one is obsolete, so we'll
+scrap it and reprove some lemmas to derive the shorter one.
+
+(6-Apr-04) exists1 is an interesting little observation.  If we treat E!
+as a primitive connective, we can use exists1 to replace the antecedent
+of ax-16.  Now, disregarding ax-17 (which is techically redundant), the
+only axiom requiring distinct variables is ax-16, so exists1 makes that
+requirement go away.  Of course we would need to add axioms for E!, and
+I'm not sure what they would be.
+
+(5-Apr-04) eldm2, elrn2 shorten several proofs by eliminating the need
+for df-br.
+
+(3-Apr-04) Some more r19.* stuff, while we're on a roll...
+
+(2-Apr-04) I thought I'd need these for Maes' theorem - I didn't - but
+they still might be handy in the future.
+
+(1-Apr-04) As you can guess, I've been busy formalizing the proof of
+Kurt Maes' theorem.  It's now done!  AC with only 5 quantifiers in
+prenex normal form is a new record and has not been published yet.  The
+Metamath proof now confirms with absolute certainty that there is not a
+mistake in Kurt Maes' proof.
+References:
+http://www.cs.nyu.edu/pipermail/fom/2003-November/007653.html
+http://www.cs.nyu.edu/pipermail/fom/2003-November/007690.html
+
+(25-Mar-04) Miscellaneous stuff.
+
+(25-Mar-04) 19.28v shortens some proofs that used to use 19.28.
+uni0 revises an earlier version.  funfvima3 might be useful in the
+future to help prove Axiom of Choice equivalents.
+
+(24-Mar-04) inf5 - Now, is this neat, or what?
+
+(23-Mar-04) unidif0 and yesterday's disj4 will find use in a neat
+theorem tomorrow - check back!
+
+(22-Mar-04) mprgbir, even though kind of specialized, found use in
+shortening 6 proofs.  I haven't seen disj4 in books, but it is kind of
+interesting - in particular it implies the right-hand side is
+symmetrical when A and B are swapped.
+
+(17-Mar-04 - 21-Mar-04) More odds and ends for future use.
+
+(13-Mar-04 - 16-Mar-04) I thought dmuni is kind of interesting; I'd
+never seen it before I glanced at it in Enderton so I put it in;
+don't know if it has any use yet.  In addition to residm, resabs1,2,
+we also have rescom (commutative) law proved earlier.  elimasn
+is often used implicitly by Takeuti/Zaring to represent minimal
+elements - I don't think it is intuitive but it does save a bound
+variable the way they use it e.g. in their Def. 6.21 p. 30.
+
+(12-Mar-04) hta is a nice theorem - it tells us the closest we can get
+to Hilbert's epsilon in ZFC, and provides a way to eliminate it from
+proofs.  For a discussion see http://ghilbert.org/choice.txt
+
+(11-Mar-04) Theorem schemes can be represented equivalently with class
+variables and wff variables in set theory.  scottexs and scott0s provide
+excellent examples of converting theorems with class variables
+(scottex, scott0) to theorem schemes with wff variables.
+
+(10-Mar-04) A surprising result communicated by Gregory Bush.  If "B"
+represents df-bi, then in D-notation the proof reads:
+DDD3DD2D1D3D1B11B.  George wrote:  'It's strange for two reasons:
+first, it's radically more direct than the listed proof (17 steps
+instead of 859).  Second, it doesn't matter what axiom (or definition)
+goes in the second-to-last place.  When I first found this, it was
+actually coming up with df-or instead of ax-1 in that spot, even though
+"or" never appears in the expression, which led me through hours of
+debugging.'
+
+(9-Mar-04) Strengthen some class substitution theorems.  elabs
+(which used to be called sbc7) now does not have any distinct variable
+restrictions.
+
+(8-Mar-04) These will be needed to work with abstraction classes
+substituted for class variables.
+
+(7-Mar-04) heplem is something I'm working on with Raph Levien and needs
+to be cleaned up at some point.  The second hypothesis is not very
+intuitive.  Basically I took a shortcut and reused zornlem1 to get this
+result fast, in order to prove that it could be done, but the result is
+a very complicated Hilbert epsilon formula (although mathematically it's
+perfectly sound).  Raph indicated he would post some stuff on Hilbert
+epsilons soon at ghilbert.org.
+
+(6-Mar-04) The old transfinite induction theorems were converted so that
+they now use restricted quantification.
+
+(5-Mar-04) find updates an older version of finite induction by using
+restricted quantifiers.  dmeqi, dmeqd, rneqi, and rneqd shorten a bunch
+of proofs by eliminating ax-mp or syl needed for these commonly used
+variants of dmeq and rneq.  Trivial as they are, last night I shortened
+32 proofs with them.
+
+(4-Mar-04) r19.20i2 will help us in some future proofs. zfinf shortens
+an older version by using restricted quantification.  The proof of omex
+was shortened by using r19.20i2, the new version of zfinf, and the new
+version of peano5 (proved a couple of days ago).  ralxp is kind of neat,
+letting us convert from a single quantification over a cross product to
+a double quantification; it should be useful for some future theorems
+involving operation values.
+
+(3-Mar-04) reuuni, reuunis clean up older versions.  dfchj3 is a simpler
+definition of closed subspace join in terms of supremum; I might make
+it the official definition some day.
+
+(2-Mar-04) peano5 has been restated with restricted quantification and
+reproved with a 25% shorter proof (although it is still somewhat long
+and difficult).  Unlike many textbooks, we prove peano5 without invoking
+either the Axiom of Infinity nor the Axiom of Replacement.  This makes
+the proof longer than those textbook proofs.  However, I think it is
+philosophically nicer to be able to work with natural numbers without
+having to assume that an infinite set exists.
+
+(1-Mar-04) tfis, tfis2f, tfis2 update older versions of these theorems
+by using restricted quantifiers.  Their proofs are shorter as a result
+(30% shorter for tfis), and they will also shorten proofs that use them
+as they are phased in.
+
+(29-Feb-04) tfi updates an older version of the same theorem by using a
+restricted quantifier.
+
+(28-Feb-04) r1val1 is one of several alternate definitions of R1 in the
+literature.
+
+(27-Feb-04) cardaleph not only shows us that there exists an aleph for
+every transfinite cardinal, but it gives us an explicit expression for
+that aleph!  The textbook theorems I've seen only show existence, but I
+think it's nicer to have a closed expression for the actual thing.  The
+proof is quite long and brings together a lot of the cardinal/aleph
+results we've proved up to this point.  The idea behind the proof is to
+show it separately for 0, successor, and limit alephs.  Miraculously,
+each of the three cases evaluate to the exact same expression.  Then we
+combine the 3 cases with jaod at the end, then eliminate the triple OR
+with ordzsl.
+
+(26-Feb-04) alephord2i finally completes all the aleph ordering stuff we
+should need.  alephle may seem "obvious" - after all, 0 is certainly less
+than aleph`0 (countable infinity), 1 is less than aleph`1 (first
+uncountable infinity), and so on.  In fact you'd almost think that it
+should be "less than" instead of "less than or equal to".  Well, think
+again - it turns out that A=aleph`A when A is big enough!  I think
+that's amazing, and hopefully we'll prove it eventually.
+
+(25-Feb-04) hbeleq nicely shortens proofs when it can used in place of
+hbeq - I don't know why I didn't think of it before!  I like this little
+theorem.  I shortened 12 proofs with it as you can see in the
+"referenced by" list.  Exercise:  Does hbeleq hold if y and A are not
+distinct?
+
+(24-Feb-04) These are some boring utility theorems that will come in
+handy later and also shorten some existing proofs. fnopab2 has already
+"paid" for itself (meaning it shortens enough proofs so that the net
+effect of adding it to the database is to reduce the database size)
+(look at its "referenced by" list).
+
+(23-Feb-04) elxp2 "modernizes" elxp with restricted quantification.
+I think elxp4 is really cool - no dummy variables - it exploits
+op1sta and op2nda we proved on 17-Feb.
+
+(22-Feb-04) r19.22dv2, r19.26m, and ralcom give us some tools to use
+when two different quantifier bounds are involved.  This will shorten
+some future and existing proofs.  eusn and euuni are revisions of
+earlier versions of these.  Someday I might introduce an iota, but
+so far it wouldn't be used much.  I think Raph uses iota a lot in
+his Ghilbert HOL stuff.  There is a person who _may_ have volunteered
+to write a gh2mm translator; if that happens we'll have a lot of
+new stuff to put here.
+
+(21-Feb-04) onuninsuc, orduninsuc, nnsuc restrict the existential
+quantifier of older versions to strengthen them.
+
+(20-Feb-04) nndiv may become the basis for a new defined relation x|y or
+"x divides y" for number theory.  divcan2t and divcan3t are needed for
+nndiv.  divcan2t and divcan3t actually were already proven as divcan2z
+and divcan3z; we just use the weak deduction theorem to get the "t"
+versions.  It would have been nicer to prove them directly but we would
+need divmult and divasst, and we only have divmulz and divassz.
+Maybe someday I'll prove divmult and divasst, then I can shorten the
+proofs of divcan2t and divcan3t.  The weak deduction theorem produces
+horrible-looking proofs but it is a quick and dirty way to get stronger
+theorems.
+
+(19-Feb-04) Added some elementary theorems for the ordinal number 2.
+
+(18-Feb-04) disj is a version of disj1 with restricted quantification
+that will shorten some proofs. wefrc, tz7.5 are new versions of older
+theorems with restricted quantification and shorter proofs. alephgeom
+shows all alephs are infinite; the converse arises because (with our
+definition) a function's value outside its domain is the empty set per
+ndmfv.
+
+(17-Feb-04) r19.23aivv lets us shorten several proofs.  dffr2, frc,
+dfepfr, and epfrc are new versions of older theorems that have been
+shortened with restricted quantifiers and re-proved with shorter proofs.
+op1sta is from Raph's HOL Ghilbert stuff, where he calls it fst, and
+op2nda is a modified version of his snd.
+
+(16-Feb-04) birex2i, r19.21ad, cleqrabi are simple but we'll use them
+later.  fvres is a revision of an older version.  dmsn0 completes the
+series:  dm0, dmsn0, dmsnsn0.  Curiously dom 0 = dom {0} = dom{{0}} = 0,
+but dom {{{0}}} and beyond are not 0.  For example dom {{{0}}} = {0}.
+
+(15-Feb-04) Enderton p.222 gives an interesting discussion of kard vs.
+card.  One thing I don't like about kard (that Enderton doesn't mention)
+is that kard A is not always equinumerous to A, a property that card has
+by cardid.  For example, kard of 0, 1, and 2 are the singletons {0},
+{1}, and {2}, which are all equinumerous to 1 by ensn1.  (kard 3 is not
+{3} but a messy expression, and they get messier as n grows.)
+
+(14-Feb-04) We prove kardex using Scott's trick.  This is a little
+different than the proof suggested in Enderton.
+
+(13-Feb-04) I've never seen alephsuc2 in a book, but it looks like a
+nice way to define the aleph function, and it may be the shortest
+possible.  It exploits yesterday's cardval2.
+
+(12-Feb-04) alephord3 is yet another ordering theorem.  (In the
+end we will need all of these.)  I think cardval2 is kind of nice; I
+came across it in Suppes only after I started, and maybe one day I'll
+change df-card.  Suppes is the only place I've seen it.  The equivalence
+of cardval and cardval2 is a very long journey and uses the Axiom of
+Choice.
+
+(11-Feb-04) alephord2 finally gives us a real textbook theorem (and its
+converse as well).  alephsucdom is a consequence of the ordering stuff;
+actually one of the earlier lemmas, alephordlem1, is more convenient to
+prove it, and alephnbtwn2 also gets used.
+
+(10-Feb-04) alephord generalizes alephordi to include the converse.  I
+decided not to combine alephord and alephordi because the latter has one
+less antecedent, making it slightly easier to use.  It is also
+referenced twice in the alephord proof, so combining would cause its
+proof to be redundantly expanded twice.
+
+(9-Feb-04) alephordi is a key theorem essential for further aleph
+results.  The proof provides a nice example of applying transfinite
+induction.  This version (using strict dominance) doesn't seem to appear
+in textbooks but later we will derive the textbook version that uses
+cardinal ordering.
+
+(8-Feb-04) alephnbtwn2 is the equinumerosity version of alephnbtwn.
+
+(7-Feb-04) sneqi,sneqd are trivial but convenient and will shorten some
+proofs.  ordsucun will be needed later to compute the rank of an
+unordered pair.
+
+(6-Feb-04) fvreseq shortens an earlier version with wral
+notation.  inv and unv are trivial and probably useless things to
+do when feeling lazy...
+
+(5-Feb-04) sbcel1 and sbcel2 complete class substitution into a
+membership relation; equality is defined in terms of membership so now
+we can do that too in principle.  I can't think of a use for dmco2 yet
+but I thought it was neat and couldn't resist proving it.  It wasn't
+immediately obvious (to me at least) but the proof is relatively simple.
+
+(4-Feb-04) With sbci, sbcn, and sbcal we now have the basic tools to
+move class substitution in and out of any wff, since all other wff
+connectives are defined in terms of implication, negation, and
+universal quantification.
+
+(3-Feb-04) rabid is trivial but it can simplify some proofs
+such as nnwos.  sbcn gets a basic class substitution property out of the
+way for future use.
+
+(2-Feb-04) hbf is needed for fopab2. fvopab2 is a more general form
+of an earlier version that had separate hypotheses. fopab2 is a
+generalization of an earlier version that only proved the forward
+direction of the conclusion; it is expected to be a nice tool for some
+future equinumerosity theorems.
+
+(1-Feb-04) dmopabss is a simple result that previously was proved
+explicitly in a couple of other proofs, and it simplifies those proofs.
+dmopab2 is a powerful equivalence that is expected to be useful in the
+future and has already been used to simplify some proofs; previously
+only the forward direction was proved.
+
+(31-Jan-04) Got a bunch of bound-variable hypothesis builders out of
+the way.  Actually they all chain together to help prove fnopabg, which
+replaces an earlier version with a more powerful bidirectional
+conclusion. dmsn is kind of curious - it holds with <I>all</I>
+of its class existence hypotheses eliminated, although the proof of this
+is somewhat tedious; but it shortens proofs that use it, over an
+earlier version that required that the classes exist.
+
+(30-Jan-04) Eliminated the requirement that C be a set in elmap.
+fnopabfv is now a bidirectional result, making it more powerful. dmsnsn0 is
+a cute technical result that will be used in the future.  Curiously dom
+0 = dom {0} = dom{{0}} = 0, but dom {{{0}}} and beyond are not 0.
+
+(29-Jan-04) sb7 should make some logicians happy who don't like
+the x both free and bound in df-sb.  However I still think df-sb is
+neat because it doesn't have any distinct variable requirements.
+
+(28-Jan-04) Self-explanatory.
+
+(27-Jan-04) I think sbidm is nice but I don't know if it will ever
+be useful.  I simplified Raph's proof of nfunv, but later he wrote about
+my version, "Neat.  I still kinda like my proof, because it's portable
+to second-order arithmetic with Cantor pairing (in which the universe is
+a relation, the complete relation to be specific)."  (His Ghilbert HOL
+database has his version.)
+
+(26-Jan-04) cleq2tr is on the one hand trivial, on the other hand to
+me it seemed non-intuitive at first.  As an exercise, try to convince
+yourself of it informally.
+
+(25-Jan-04) The very basic cleqtr had never been proved in the
+database before, and suprisingly it seems to have little use.  Only one
+proof was shortened by it.  alephnbtwn, on the other hand, is a pretty
+deep and basic "must have" fact about alephs that will be of much use in
+the future.
+
+(24-Jan-04) opnz is an easy theorem I thought should be there although
+I don't know if it will ever be useful.  iunrab gets a basic fact of
+indexed unions out of the way for future use.
 
 
 Copyright terms for this file:  Public domain (see
