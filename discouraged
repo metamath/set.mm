@@ -919,6 +919,8 @@
 "atssma" is used by "atordi".
 "ax-10" is used by "hbn1".
 "ax-13" is used by "ax13v".
+"ax-3" is used by "con4".
+"ax-3" is used by "dfbi1ALT".
 "ax-4" is used by "alim".
 "ax-6" is used by "ax6v".
 "ax-7" is used by "ax7v".
@@ -1458,19 +1460,6 @@
 "axinfnd" is used by "zfcndinf".
 "axinfndlem1" is used by "axinfnd".
 "axlttrn" is used by "lttr".
-"axmeredith" is used by "luk-1".
-"axmeredith" is used by "luk-2".
-"axmeredith" is used by "merlem1".
-"axmeredith" is used by "merlem10".
-"axmeredith" is used by "merlem11".
-"axmeredith" is used by "merlem13".
-"axmeredith" is used by "merlem2".
-"axmeredith" is used by "merlem3".
-"axmeredith" is used by "merlem4".
-"axmeredith" is used by "merlem5".
-"axmeredith" is used by "merlem7".
-"axmeredith" is used by "merlem8".
-"axmeredith" is used by "merlem9".
 "axmulf" is used by "axmulcl".
 "axpjcl" is used by "pjcli".
 "axpjcl" is used by "pjcompi".
@@ -14206,7 +14195,6 @@ New usage of "alephf1ALT" is discouraged (0 uses).
 New usage of "alexsubALT" is discouraged (0 uses).
 New usage of "alrim3con13v" is discouraged (1 uses).
 New usage of "altgsumbcALT" is discouraged (0 uses).
-New usage of "an43OLD" is discouraged (0 uses).
 New usage of "anabss7p1" is discouraged (0 uses).
 New usage of "ancomstVD" is discouraged (0 uses).
 New usage of "anmp" is discouraged (11 uses).
@@ -14254,6 +14242,7 @@ New usage of "atssma" is discouraged (1 uses).
 New usage of "avril1" is discouraged (0 uses).
 New usage of "ax-10" is discouraged (1 uses).
 New usage of "ax-13" is discouraged (1 uses).
+New usage of "ax-3" is discouraged (2 uses).
 New usage of "ax-4" is discouraged (1 uses).
 New usage of "ax-6" is discouraged (1 uses).
 New usage of "ax-7" is discouraged (1 uses).
@@ -14311,7 +14300,6 @@ New usage of "ax-inf" is discouraged (1 uses).
 New usage of "ax-luk1" is discouraged (5 uses).
 New usage of "ax-luk2" is discouraged (4 uses).
 New usage of "ax-luk3" is discouraged (6 uses).
-New usage of "ax-meredith" is discouraged (0 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
@@ -14444,7 +14432,6 @@ New usage of "axinfndlem1" is discouraged (1 uses).
 New usage of "axinfprim" is discouraged (0 uses).
 New usage of "axio" is discouraged (0 uses).
 New usage of "axlttrn" is discouraged (1 uses).
-New usage of "axmeredith" is discouraged (13 uses).
 New usage of "axmulass" is discouraged (0 uses).
 New usage of "axmulcl" is discouraged (0 uses).
 New usage of "axmulcom" is discouraged (0 uses).
@@ -14564,6 +14551,8 @@ New usage of "bj-sbceqgALT" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
 New usage of "bj-sbidmOLD" is discouraged (0 uses).
 New usage of "bj-sbieOLD" is discouraged (0 uses).
+New usage of "bj-ssbid1ALT" is discouraged (0 uses).
+New usage of "bj-ssbid2ALT" is discouraged (0 uses).
 New usage of "bj-vexw" is discouraged (1 uses).
 New usage of "bj-vexwt" is discouraged (1 uses).
 New usage of "bj-vtoclgfALT" is discouraged (0 uses).
@@ -15119,8 +15108,6 @@ New usage of "cdleml4N" is discouraged (1 uses).
 New usage of "cdleml5N" is discouraged (0 uses).
 New usage of "cdlemm10N" is discouraged (0 uses).
 New usage of "ceqsalgALT" is discouraged (0 uses).
-New usage of "ceqsex3OLD" is discouraged (0 uses).
-New usage of "ceqsex3vOLD" is discouraged (0 uses).
 New usage of "cgcdOLD" is discouraged (1 uses).
 New usage of "cghomOLD" is discouraged (23 uses).
 New usage of "cgisoOLD" is discouraged (1 uses).
@@ -18978,7 +18965,6 @@ Proof modification of "alephf1ALT" is discouraged (47 steps).
 Proof modification of "alexsubALT" is discouraged (869 steps).
 Proof modification of "alrim3con13v" is discouraged (74 steps).
 Proof modification of "altgsumbcALT" is discouraged (1038 steps).
-Proof modification of "an43OLD" is discouraged (32 steps).
 Proof modification of "anabss7p1" is discouraged (5 steps).
 Proof modification of "ancomstVD" is discouraged (22 steps).
 Proof modification of "anmp" is discouraged (8 steps).
@@ -19315,6 +19301,8 @@ Proof modification of "bj-spimevv" is discouraged (9 steps).
 Proof modification of "bj-spimtv" is discouraged (52 steps).
 Proof modification of "bj-spimvv" is discouraged (16 steps).
 Proof modification of "bj-spvv" is discouraged (12 steps).
+Proof modification of "bj-ssbid1ALT" is discouraged (42 steps).
+Proof modification of "bj-ssbid2ALT" is discouraged (84 steps).
 Proof modification of "bj-stdpc4v" is discouraged (26 steps).
 Proof modification of "bj-stdpc5" is discouraged (20 steps).
 Proof modification of "bj-termab" is discouraged (9 steps).
@@ -19353,8 +19341,6 @@ Proof modification of "ccat2s1fvwALT" is discouraged (149 steps).
 Proof modification of "ccatfnOLD" is discouraged (134 steps).
 Proof modification of "cdleme20yOLD" is discouraged (314 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
-Proof modification of "ceqsex3OLD" is discouraged (61 steps).
-Proof modification of "ceqsex3vOLD" is discouraged (7 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
 Proof modification of "circgrpOLD" is discouraged (74 steps).
 Proof modification of "cleljust" is discouraged (25 steps).
