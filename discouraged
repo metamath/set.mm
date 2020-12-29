@@ -15256,6 +15256,7 @@ New usage of "chub2i" is discouraged (24 uses).
 New usage of "chunssji" is discouraged (0 uses).
 New usage of "circgrpOLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
+New usage of "cleljustALT2" is discouraged (0 uses).
 New usage of "climinfOLD" is discouraged (1 uses).
 New usage of "climinffOLD" is discouraged (0 uses).
 New usage of "clmgmOLD" is discouraged (1 uses).
@@ -19181,7 +19182,6 @@ Proof modification of "bj-ceqsalv" is discouraged (10 steps).
 Proof modification of "bj-chvarv" is discouraged (18 steps).
 Proof modification of "bj-chvarvv" is discouraged (11 steps).
 Proof modification of "bj-clabel" is discouraged (43 steps).
-Proof modification of "bj-cleljust" is discouraged (22 steps).
 Proof modification of "bj-clelsb3" is discouraged (63 steps).
 Proof modification of "bj-cleqhyp" is discouraged (21 steps).
 Proof modification of "bj-cmnssmnd" is discouraged (36 steps).
@@ -19345,8 +19345,8 @@ Proof modification of "cdleme20yOLD" is discouraged (314 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
 Proof modification of "circgrpOLD" is discouraged (74 steps).
-Proof modification of "cleljust" is discouraged (25 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
+Proof modification of "cleljustALT2" is discouraged (25 steps).
 Proof modification of "climinfOLD" is discouraged (850 steps).
 Proof modification of "climinffOLD" is discouraged (219 steps).
 Proof modification of "clmgmOLD" is discouraged (50 steps).
