@@ -3471,12 +3471,11 @@ means the same thing as
 <P>The basic rule to remember is that
 <B>distinct variable provisos are inherited by substitutions</B>
 (that take place in a proof step).
-For example, look at step 1 of the proof of ~ cleljust , which has a
+For example, look at step 1 of the proof of ~ cleljustALT , which has a
 substitution instance of ~ ax-5 .  As you can see, ~ ax-5 requires the
 distinct variable pair ` x ` ,` ph ` .
 
-Step 1  substitutes ` z `
-for ` x ` and ` x e. y ` for ` ph ` .
+Step 1  substitutes ` z ` for ` x ` and ` x e. y ` for ` ph ` .
 
 This substitution transforms the original distinct variable requirement
 into the two distinct variable pairs ` z ` ,` x ` and ` z ` ,` y ` ,
@@ -3486,7 +3485,7 @@ read in full, "` ( x e. y -> A. z ` ` x e. y ) ` where ` z ` ,` x ` are
 distinct and ` z ` ,` y ` are distinct."  The proof
 verifier will check that this requirement accompanies the final theorem,
 otherwise it will flag the proof step as invalid.  You can see this
-requirement in the "Distinct variable groups" list on the ~ cleljust page.
+requirement in the "Distinct variable groups" list on the ~ cleljustALT page.
 
 
 <P><A NAME="dvexample"></A>This can be confusing if you don't understand
@@ -3526,28 +3525,26 @@ those $d statements needed to satisfy all distinct variable
 requirements implicitly attached the proof steps.
 
 
-<P>To get a concrete feel for distinct
-variable requirements, you can temporarily comment out the
-"$d x z $." condition for
-theorem ~ cleljust
-in the database file set.mm.   When you try to
-verify the proof with
-the <A HREF="../index.html#mmprog">Metamath program</A>,
-the resulting error message will read as follows. (Note that
-step 25 is the same as step 1 on the web page; steps 1-24
-are syntax building steps that can be seen with "show proof
-cleljust /all".)
+<P>To get a concrete feel for distinct variable requirements, you can
+temporarily comment out the "$d x z $." condition for theorem ~ cleljustALT in
+the database file set.mm.   When you try to verify the proof with the
+<A HREF="../index.html#mmprog">Metamath program</A>,
+the resulting error message will read as follows.  (Note that the "normal"
+proof format is used, which you can convert to with "save proof cleljustALT
+/normal", and step 25 here corresponds to step 1 on the web page;
+steps 1&ndash;24 are syntax building steps that can be seen with "show proof
+cleljustALT /all" while step 25 is the first essentiel step.)
 <PRE>
-    MM> verify proof cleljust
-    cleljust
-    ?Error at statement 5305, label "cleljust", type "$p":
-          wel vz ax-5 vz vx vy elequ1 equsex bicomi $.
-                 ^^^^^
-    There is a disjoint variable ($d) violation at proof step 25.  Assertion
-    "ax-5" requires that variables "ph" and "x" be disjoint.  But "ph" was
-    substituted with "x e. y" and "x" was substituted with "z".
-    Variables "x" and "z" do not have a disjoint variable requirement in the
-    assertion being proved, "cleljust".
+MM> verify proof cleljustALT
+cleljustALT
+?Error at statement 5819, label "cleljustALT", type "$p":
+      wel vz ax-5 vz vx vy elequ1 equsexhv bicomi $.
+             ^^^^
+There is a disjoint variable ($d) violation at proof step 25.  Assertion "ax-5"
+requires that variables "ph" and "x" be disjoint.  But "ph" was substituted
+with "x e. y" and "x" was substituted with "z".
+Variables "x" and "z" do not have a disjoint variable requirement in the
+assertion being proved, "cleljustALT".
 </PRE>
 Such error messages can also be used to determine any missing $d
 statements during proof development.  Alternately, the
