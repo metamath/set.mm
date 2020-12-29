@@ -3481,7 +3481,7 @@ This substitution transforms the original distinct variable requirement
 into the two distinct variable pairs ` z ` ,` x ` and ` z ` ,` y ` ,
 which will implicitly accompany step 1 (although not
 shown explicitly in step 1 of the proof listing).  Thus step 1 can be
-read in full, "` ( x e. y -> A. z x e. y ) ` where ` z ` ,` x ` are
+read in full, "` ( x e. y -> A. z ` ` x e. y ) ` where ` z ` ,` x ` are
 distinct and ` z ` ,` y ` are distinct."  The proof
 verifier will check that this requirement accompanies the final theorem,
 otherwise it will flag the proof step as invalid.  You can see this
@@ -3530,7 +3530,8 @@ temporarily comment out the "$d x z $." condition for theorem ~ cleljustALT in
 the database file set.mm.   When you try to verify the proof with the
 <A HREF="../index.html#mmprog">Metamath program</A>,
 the resulting error message will read as follows.  (Note that the "normal"
-proof format is used, and step 25 here corresponds to step 1 on the web page;
+proof format is used, which you can convert to with "save proof cleljustALT
+/normal", and step 25 here corresponds to step 1 on the web page;
 steps 1&ndash;24 are syntax building steps that can be seen with "show proof
 cleljustALT /all" while step 25 is the first essentiel step.)
 <PRE>
