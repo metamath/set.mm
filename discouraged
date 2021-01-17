@@ -18336,6 +18336,8 @@ New usage of "rspsbc2VD" is discouraged (0 uses).
 New usage of "ruALT" is discouraged (0 uses).
 New usage of "rucALT" is discouraged (0 uses).
 New usage of "rusbcALT" is discouraged (0 uses).
+New usage of "s1dmALT" is discouraged (0 uses).
+New usage of "s2dmALT" is discouraged (0 uses).
 New usage of "sb5ALT" is discouraged (0 uses).
 New usage of "sb5ALTVD" is discouraged (0 uses).
 New usage of "sbabelOLD" is discouraged (0 uses).
@@ -20388,6 +20390,8 @@ Proof modification of "rspsbc2VD" is discouraged (90 steps).
 Proof modification of "ruALT" is discouraged (29 steps).
 Proof modification of "rucALT" is discouraged (25 steps).
 Proof modification of "rusbcALT" is discouraged (77 steps).
+Proof modification of "s1dmALT" is discouraged (25 steps).
+Proof modification of "s2dmALT" is discouraged (38 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
 Proof modification of "sbabelOLD" is discouraged (150 steps).
