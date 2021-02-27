@@ -1,4 +1,4 @@
-$( nf.mm - Version of 3-Aug-2019. $)
+$( nf.mm - Version of 22-Feb-2021. $)
 
 $(
                            ~~ PUBLIC DOMAIN ~~
@@ -60781,14 +60781,14 @@ $)
       VQVTZXNWHWHHXRVFWHURLMAWHUOUICVRVSWIWFWHAUCWAWBTRWC $.
   $}
 
-  $( Compute an exponent of the cardinality of one.  Theorem 4.3 of [Specker].
-     (Contributed by SF, 4-Mar-2015.) $)
+  $( Compute an exponent of the cardinality of one.  Theorem 4.3 of [Specker]
+     p. 973.  (Contributed by SF, 4-Mar-2015.) $)
   ce2nc1 $p |- ( 2c ^c Nc 1c ) = Nc _V $=
     ( c2c c1c cnc cce co cvv cpw cpw1 wceq df1c2 nceqi vvex ce2 ax-mp pwv eqtri
     ) ABCZDEZFGZCZFCQFHZCIRTIBUAJKFQLMNSFOKP $.
 
   $( Compute an exponent of the cardinality of the unit power class of one.
-     Theorem 4.4 of [Specker].  (Contributed by SF, 4-Mar-2015.) $)
+     Theorem 4.4 of [Specker] p. 973.  (Contributed by SF, 4-Mar-2015.) $)
   ce2ncpw11c $p |- ( 2c ^c Nc ~P1 1c ) = Nc 1c $=
     ( c2c c1c cpw1 cnc cce co cpw wceq eqid 1cex ce2 ax-mp ncpw1c eqtri ) ABCDZ
     EFZBGDZBDOOHPQHOIBOJKLMN $.
@@ -61281,18 +61281,18 @@ $)
   $}
 
   $( Compute the T-raising of the cardinality of the universe.  Part of Theorem
-     5.2 of [Specker].  (Contributed by SF, 4-Mar-2015.) $)
+     5.2 of [Specker] p. 973.  (Contributed by SF, 4-Mar-2015.) $)
   tcncv $p |- T_c Nc _V = Nc 1c $=
     ( cvv cnc ctc cpw1 c1c vvex tcnc df1c2 nceqi eqtr4i ) ABCADZBEBAFGEKHIJ $.
 
   $( Compute the T-raising of the cardinality of one.  Part of Theorem 5.2 of
-     [Specker].  (Contributed by SF, 4-Mar-2015.) $)
+     [Specker] p. 973.  (Contributed by SF, 4-Mar-2015.) $)
   tcnc1c $p |- T_c Nc 1c = Nc ~P1 1c $=
     ( c1c 1cex tcnc ) ABC $.
 
   ${
     $d M x $.  $d M y $.  $d N x $.  $d N y $.  $d x y $.
-    $( Cardinal T is one-to-one.  Based on theorem 2.4 of [Specker].
+    $( Cardinal T is one-to-one.  Based on theorem 2.4 of [Specker] p. 972.
        (Contributed by SF, 10-Mar-2015.) $)
     tc11 $p |- ( ( M e. NC /\ N e. NC ) -> ( T_c M = T_c N <-> M = N ) ) $=
       ( vx vy cncs wcel wa cv cnc wceq wex ctc elncs cpw1 vex tcnc cen wbr eqnc
@@ -61337,8 +61337,8 @@ $)
 
   ${
     $d M p q $.  $d N p q $.
-    $( T-raising perserves order for cardinals.  Theorem 5.5 of [Specker].
-       (Contributed by SF, 11-Mar-2015.) $)
+    $( T-raising perserves order for cardinals.  Theorem 5.5 of [Specker]
+       p. 973.  (Contributed by SF, 11-Mar-2015.) $)
     tlecg $p |- ( ( M e. NC /\ N e. NC ) -> ( M <_c N <-> T_c M <_c T_c N ) )
         $=
       ( vp vq cncs wcel wa clec wbr ctc cv cplc wceq wrex dflec2 tccl rexlimdva
@@ -61363,7 +61363,7 @@ $)
     $d m x $.  $d m y $.  $d N a $.  $d N b $.  $d N c $.  $d n p $.  $d N q $.
     $d n x $.  $d n y $.  $d p q $.  $d p x $.  $d p y $.  $d x y $.
     $( If a cardinal is less than or equal to a T-raising, then it is also a
-       T-raising.  Theorem 5.6 of [Specker].  (Contributed by SF,
+       T-raising.  Theorem 5.6 of [Specker] p. 973.  (Contributed by SF,
        11-Mar-2015.) $)
     letc $p |- ( ( M e. NC /\ N e. NC /\ M <_c T_c N ) ->
        E. p e. NC M = T_c p ) $=
@@ -61406,7 +61406,7 @@ $)
     $d p s $.  $d p x $.  $d p y $.  $d q r $.  $d q s $.  $d q x $.  $d q y $.
     $d r s $.  $d r x $.  $d r y $.  $d s y $.  $d x y $.
     $( Partial ordering law for base two cardinal exponentiation.  Theorem 4.8
-       of [Specker].  (Contributed by SF, 16-Mar-2015.) $)
+       of [Specker] p. 973.  (Contributed by SF, 16-Mar-2015.) $)
     ce2le $p |- ( ( ( M e. NC /\ N e. NC /\ ( N ^c 0c ) e. NC ) /\ M <_c N ) ->
        ( 2c ^c M ) <_c ( 2c ^c N ) ) $=
       ( vp vq vx vy vr cncs wcel cce co clec wbr wa cv wceq wrex c2c wi cnc c0c
@@ -61449,7 +61449,7 @@ $)
   $}
 
   $( The exponent of two to a T-raising is always a cardinal.  Theorem 5.8 of
-     [Specker].  (Contributed by SF, 13-Mar-2015.) $)
+     [Specker] p. 973.  (Contributed by SF, 13-Mar-2015.) $)
   ce2t $p |- ( M e. NC -> ( 2c ^c T_c M ) e. NC ) $=
     ( cncs wcel c2c ctc cce co tc2c oveq1i 2nc cet mpan syl5eqelr ) ABCZDAEZFGD
     EZOFGZBPDOFHIDBCNQBCJDAKLM $.
@@ -61909,7 +61909,7 @@ $)
   ${
     $d M q $.  $d N q $.  $d P q $.
     $( Cardinal addition preserves cardinal less than.  Biconditional form of
-       corollary 4 of theorem XI.3.2 of [Rosser] p 391.  (Contributed by Scott
+       corollary 4 of theorem XI.3.2 of [Rosser] p. 391.  (Contributed by Scott
        Fenton, 2-Aug-2019.) $)
     lecadd2 $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
        ( ( M +c N ) <_c ( M +c P ) <-> N <_c P ) ) $=
