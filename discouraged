@@ -14318,6 +14318,7 @@ New usage of "ax12indi" is discouraged (0 uses).
 New usage of "ax12indn" is discouraged (1 uses).
 New usage of "ax12v2-o" is discouraged (1 uses).
 New usage of "ax12vALT" is discouraged (0 uses).
+New usage of "ax12vOLD" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
 New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
@@ -18943,6 +18944,7 @@ Proof modification of "ax12indi" is discouraged (83 steps).
 Proof modification of "ax12indn" is discouraged (70 steps).
 Proof modification of "ax12v2-o" is discouraged (107 steps).
 Proof modification of "ax12vALT" is discouraged (35 steps).
+Proof modification of "ax12vOLD" is discouraged (69 steps).
 Proof modification of "ax13fromc9" is discouraged (72 steps).
 Proof modification of "ax2" is discouraged (46 steps).
 Proof modification of "ax3" is discouraged (24 steps).
