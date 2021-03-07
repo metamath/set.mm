@@ -14318,6 +14318,7 @@ New usage of "ax12indi" is discouraged (0 uses).
 New usage of "ax12indn" is discouraged (1 uses).
 New usage of "ax12v2-o" is discouraged (1 uses).
 New usage of "ax12vALT" is discouraged (0 uses).
+New usage of "ax12vOLD" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
 New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
@@ -17413,8 +17414,6 @@ New usage of "mulsrpr" is discouraged (9 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
 New usage of "nanbiOLD" is discouraged (0 uses).
 New usage of "nanbiOLDOLD" is discouraged (0 uses).
-New usage of "nancomOLD" is discouraged (0 uses).
-New usage of "nannanOLD" is discouraged (0 uses).
 New usage of "natded" is discouraged (0 uses).
 New usage of "nbgraopALT" is discouraged (0 uses).
 New usage of "ndmimaOLD" is discouraged (0 uses).
@@ -18945,6 +18944,7 @@ Proof modification of "ax12indi" is discouraged (83 steps).
 Proof modification of "ax12indn" is discouraged (70 steps).
 Proof modification of "ax12v2-o" is discouraged (107 steps).
 Proof modification of "ax12vALT" is discouraged (35 steps).
+Proof modification of "ax12vOLD" is discouraged (69 steps).
 Proof modification of "ax13fromc9" is discouraged (72 steps).
 Proof modification of "ax2" is discouraged (46 steps).
 Proof modification of "ax3" is discouraged (24 steps).
@@ -20082,8 +20082,6 @@ Proof modification of "morimOLD" is discouraged (17 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nanbiOLD" is discouraged (66 steps).
 Proof modification of "nanbiOLDOLD" is discouraged (71 steps).
-Proof modification of "nancomOLD" is discouraged (27 steps).
-Proof modification of "nannanOLD" is discouraged (35 steps).
 Proof modification of "nbgraopALT" is discouraged (271 steps).
 Proof modification of "ndmimaOLD" is discouraged (56 steps).
 Proof modification of "negdiiOLD" is discouraged (89 steps).
