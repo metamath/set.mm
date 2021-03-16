@@ -14524,7 +14524,6 @@ New usage of "bj-axdd2" is discouraged (0 uses).
 New usage of "bj-axtd" is discouraged (0 uses).
 New usage of "bj-ceqsalgALT" is discouraged (0 uses).
 New usage of "bj-ceqsalgvALT" is discouraged (0 uses).
-New usage of "bj-con3thALT" is discouraged (0 uses).
 New usage of "bj-con4iALT" is discouraged (0 uses).
 New usage of "bj-consensusALT" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
@@ -15344,6 +15343,7 @@ New usage of "com3rgbi" is discouraged (1 uses).
 New usage of "con3ALT" is discouraged (0 uses).
 New usage of "con3ALTVD" is discouraged (0 uses).
 New usage of "con3th" is discouraged (0 uses).
+New usage of "con3thALT" is discouraged (0 uses).
 New usage of "con5" is discouraged (1 uses).
 New usage of "con5VD" is discouraged (0 uses).
 New usage of "con5i" is discouraged (2 uses).
@@ -19150,7 +19150,6 @@ Proof modification of "bj-clelsb3" is discouraged (63 steps).
 Proof modification of "bj-cleqhyp" is discouraged (21 steps).
 Proof modification of "bj-cmnssmnd" is discouraged (36 steps).
 Proof modification of "bj-cmnssmndel" is discouraged (5 steps).
-Proof modification of "bj-con3thALT" is discouraged (63 steps).
 Proof modification of "bj-con4iALT" is discouraged (13 steps).
 Proof modification of "bj-consensusALT" is discouraged (30 steps).
 Proof modification of "bj-csbprc" is discouraged (47 steps).
@@ -19325,6 +19324,7 @@ Proof modification of "com3rgbi" is discouraged (35 steps).
 Proof modification of "con3ALT" is discouraged (14 steps).
 Proof modification of "con3ALTVD" is discouraged (51 steps).
 Proof modification of "con3th" is discouraged (65 steps).
+Proof modification of "con3thALT" is discouraged (63 steps).
 Proof modification of "con5" is discouraged (10 steps).
 Proof modification of "con5VD" is discouraged (47 steps).
 Proof modification of "con5i" is discouraged (13 steps).
