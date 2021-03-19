@@ -15349,6 +15349,7 @@ New usage of "con5" is discouraged (1 uses).
 New usage of "con5VD" is discouraged (0 uses).
 New usage of "con5i" is discouraged (2 uses).
 New usage of "conventions" is discouraged (0 uses).
+New usage of "conventions-label" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
 New usage of "crhmsubcALTV" is discouraged (1 uses).
 New usage of "cringcALTV" is discouraged (9 uses).
@@ -19071,12 +19072,15 @@ Proof modification of "bj-abeq1" is discouraged (36 steps).
 Proof modification of "bj-abeq2" is discouraged (47 steps).
 Proof modification of "bj-abf" is discouraged (13 steps).
 Proof modification of "bj-abfal" is discouraged (54 steps).
+Proof modification of "bj-abfalbi" is discouraged (41 steps).
 Proof modification of "bj-abid2" is discouraged (14 steps).
 Proof modification of "bj-ablsscmn" is discouraged (10 steps).
 Proof modification of "bj-ablsscmnel" is discouraged (5 steps).
 Proof modification of "bj-ablssgrp" is discouraged (10 steps).
 Proof modification of "bj-ablssgrpel" is discouraged (5 steps).
 Proof modification of "bj-abtru" is discouraged (29 steps).
+Proof modification of "bj-abtrubi" is discouraged (45 steps).
+Proof modification of "bj-abvor0" is discouraged (66 steps).
 Proof modification of "bj-aecomsv" is discouraged (16 steps).
 Proof modification of "bj-aev" is discouraged (39 steps).
 Proof modification of "bj-aevlem1v" is discouraged (42 steps).
@@ -19150,6 +19154,8 @@ Proof modification of "bj-clelsb3" is discouraged (63 steps).
 Proof modification of "bj-cleqhyp" is discouraged (21 steps).
 Proof modification of "bj-cmnssmnd" is discouraged (36 steps).
 Proof modification of "bj-cmnssmndel" is discouraged (5 steps).
+Proof modification of "bj-compleq" is discouraged (42 steps).
+Proof modification of "bj-complss" is discouraged (33 steps).
 Proof modification of "bj-con4iALT" is discouraged (13 steps).
 Proof modification of "bj-consensusALT" is discouraged (30 steps).
 Proof modification of "bj-csbprc" is discouraged (47 steps).
