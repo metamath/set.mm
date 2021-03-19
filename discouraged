@@ -14179,6 +14179,7 @@ New usage of "aecom-o" is discouraged (4 uses).
 New usage of "aecoms-o" is discouraged (6 uses).
 New usage of "aev-o" is discouraged (1 uses).
 New usage of "aevALT" is discouraged (0 uses).
+New usage of "aevOLD" is discouraged (0 uses).
 New usage of "aevlem1ALT" is discouraged (0 uses).
 New usage of "ajfun" is discouraged (0 uses).
 New usage of "ajfuni" is discouraged (1 uses).
@@ -18922,6 +18923,7 @@ Proof modification of "add42iOLD" is discouraged (47 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
 Proof modification of "aev-o" is discouraged (117 steps).
 Proof modification of "aevALT" is discouraged (36 steps).
+Proof modification of "aevOLD" is discouraged (56 steps).
 Proof modification of "aevlem1ALT" is discouraged (42 steps).
 Proof modification of "al2imVD" is discouraged (48 steps).
 Proof modification of "alephf1ALT" is discouraged (47 steps).
