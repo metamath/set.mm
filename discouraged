@@ -949,7 +949,6 @@
 "ax-addf" is used by "rlimadd".
 "ax-addf" is used by "zaddsubgo".
 "ax-addrcl" is used by "readdcl".
-"ax-bj-00" is used by "bj-ax5".
 "ax-c10" is used by "ax6fromc10".
 "ax-c10" is used by "equid1".
 "ax-c10" is used by "equid1ALT".
@@ -14249,8 +14248,6 @@ New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
 New usage of "ax-addf" is discouraged (18 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
-New usage of "ax-bj-0" is discouraged (0 uses).
-New usage of "ax-bj-00" is discouraged (1 uses).
 New usage of "ax-c10" is discouraged (3 uses).
 New usage of "ax-c11" is discouraged (5 uses).
 New usage of "ax-c11n" is discouraged (1 uses).
@@ -14521,7 +14518,6 @@ New usage of "bitsfzolemOLD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
 New usage of "bj-1" is discouraged (0 uses).
 New usage of "bj-ax12iOLD" is discouraged (0 uses).
-New usage of "bj-ax5" is discouraged (0 uses).
 New usage of "bj-ax6e" is discouraged (0 uses).
 New usage of "bj-axc4" is discouraged (0 uses).
 New usage of "bj-axd2d" is discouraged (0 uses).
@@ -19089,7 +19085,6 @@ Proof modification of "bj-aevlem1v" is discouraged (42 steps).
 Proof modification of "bj-alcomexcom" is discouraged (45 steps).
 Proof modification of "bj-ax12iOLD" is discouraged (20 steps).
 Proof modification of "bj-ax12v" is discouraged (35 steps).
-Proof modification of "bj-ax5" is discouraged (47 steps).
 Proof modification of "bj-ax6e" is discouraged (43 steps).
 Proof modification of "bj-ax6elem1" is discouraged (27 steps).
 Proof modification of "bj-ax6elem2" is discouraged (27 steps).
