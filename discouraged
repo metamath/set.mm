@@ -9113,6 +9113,7 @@
 "kbval" is used by "kbass5".
 "kbval" is used by "kbass6".
 "kbval" is used by "kbpj".
+"konigsbergiedgwOLD" is used by "konigsbergupgrOLD".
 "latmassOLD" is used by "cdleme20d".
 "latmassOLD" is used by "cdleme23b".
 "latmassOLD" is used by "cdlemh2".
@@ -14142,6 +14143,7 @@ New usage of "adderpqlem" is discouraged (1 uses).
 New usage of "addgt0sr" is discouraged (0 uses).
 New usage of "addinv" is discouraged (2 uses).
 New usage of "addltmulALT" is discouraged (0 uses).
+New usage of "addmodlteqALT" is discouraged (0 uses).
 New usage of "addnidpi" is discouraged (0 uses).
 New usage of "addnqf" is discouraged (16 uses).
 New usage of "addpiord" is discouraged (10 uses).
@@ -16945,6 +16947,8 @@ New usage of "kbmul" is discouraged (1 uses).
 New usage of "kbop" is discouraged (3 uses).
 New usage of "kbpj" is discouraged (0 uses).
 New usage of "kbval" is discouraged (5 uses).
+New usage of "konigsbergiedgwOLD" is discouraged (1 uses).
+New usage of "konigsbergupgrOLD" is discouraged (0 uses).
 New usage of "largei" is discouraged (0 uses).
 New usage of "latmassOLD" is discouraged (17 uses).
 New usage of "latmmdiN" is discouraged (1 uses).
@@ -18914,6 +18918,7 @@ Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "add42iOLD" is discouraged (47 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
+Proof modification of "addmodlteqALT" is discouraged (237 steps).
 Proof modification of "aev-o" is discouraged (117 steps).
 Proof modification of "aevALT" is discouraged (36 steps).
 Proof modification of "aevlem1ALT" is discouraged (42 steps).
@@ -19937,6 +19942,8 @@ Proof modification of "ixxlbOLD" is discouraged (418 steps).
 Proof modification of "jaoded" is discouraged (26 steps).
 Proof modification of "jccil" is discouraged (10 steps).
 Proof modification of "joincomALT" is discouraged (83 steps).
+Proof modification of "konigsbergiedgwOLD" is discouraged (208 steps).
+Proof modification of "konigsbergupgrOLD" is discouraged (118 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lbinfmOLD" is discouraged (146 steps).
 Proof modification of "lbinfmclOLD" is discouraged (35 steps).
