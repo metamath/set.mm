@@ -45,6 +45,7 @@ $(
 
 $)
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
                            Pre-logic
@@ -120,15 +121,21 @@ $)
   $( Let variable ` ka ` be a wff. $)
   wka $f wff ka $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                  Inferences for assisting proof development
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  The inference rules in this section will normally never appear in a completed
+  proof.  They can be ignored if you are using this database to assist learning
+  logic - please start with the statement ~ wn instead.
+
 $)
 
   ${
-    dummylink.1 $e |- ph $.
-    dummylink.2 $e |- ps $.
+    a1ii.1 $e |- ph $.
+    a1ii.2 $e |- ps $.
     $( (_Note_:  This inference rule and the next one, ~ idi , will normally
        never appear in a completed proof.  It can be ignored if you are using
        this database to assist learning logic - please start with the statement
@@ -148,20 +155,20 @@ $)
        _Instructions_:  (1) Assign this inference to any unknown step in the
        proof.  Typically, the last unknown step is the most convenient, since
        'assign last' can be used.  This step will be replicated in hypothesis
-       dummylink.1, from where the development of the main proof can continue.
-       (2) Develop the independent subproof backwards from hypothesis
-       dummylink.2.  If desired, use a 'let' command to pre-assign the
-       conclusion of the independent subproof to dummylink.2.  (3) After the
-       independent subproof is complete, use 'improve all' to assign it
-       automatically to an unknown step in the main proof that matches it.  (4)
-       After the entire proof is complete, use 'minimize *' to clean up
-       (discard) all dummylink references automatically.
+       a1ii.1, from where the development of the main proof can continue.  (2)
+       Develop the independent subproof backwards from hypothesis a1ii.2.  If
+       desired, use a 'let' command to pre-assign the conclusion of the
+       independent subproof to a1ii.2.  (3) After the independent subproof is
+       complete, use 'improve all' to assign it automatically to an unknown
+       step in the main proof that matches it.  (4) After the entire proof is
+       complete, use 'minimize *' to clean up (discard) all ~ a1ii references
+       automatically.
 
        This inference was originally designed to assist importing partially
        completed Proof Worksheets from the mmj2 Proof Assistant GUI, but it can
        also be useful on its own.  Interestingly, no axioms are required for
        its proof.  (Contributed by NM, 7-Feb-2006.) $)
-    dummylink $p |- ph $=
+    a1ii $p |- ph $=
       (  ) C $.
   $}
 
@@ -537,10 +544,10 @@ $)
   $}
 
   ${
-    a1ii.1 $e |- ch $.
+    2a1i.1 $e |- ch $.
     $( Add two antecedents to a wff.  (Contributed by Jeff Hankins,
        4-Aug-2009.)  (Proof shortened by Wolf Lammen, 23-Jul-2013.) $)
-    a1ii $p |- ( ph -> ( ps -> ch ) ) $=
+    2a1i $p |- ( ph -> ( ps -> ch ) ) $=
       ( a1i a1d ) ACBCADEF $.
   $}
 
@@ -2167,7 +2174,6 @@ $)
     syl6ibr $p |- ( ph -> ( ps -> th ) ) $=
       ( biimpri syl6 ) ABCDEDCFGH $.
   $}
-
 
   ${
     syl6bi.1 $e |- ( ph -> ( ps <-> ch ) ) $.
@@ -6756,7 +6762,6 @@ $)
     orcanai $p |- ( ( ph /\ -. ps ) -> ch ) $=
       ( wn ord imp ) ABECABCDFG $.
   $}
-
 
   ${
     intnan.1 $e |- -. ph $.
@@ -11431,7 +11436,6 @@ $)
       LK $.
   $}
 
-
   ${
     $( Minor premise for modus tollendo ponens (original exclusive-or version).
     $)
@@ -13508,7 +13512,7 @@ $)
      have a common substitution.  Uses only Tarski's FOL axiom schemes.
      (Contributed by NM, 13-Apr-2017.) $)
   ax12dgen3 $p |- ( -. x = y -> ( y = y -> A. x y = y ) ) $=
-    ( weq wn wal equid ax-gen a1ii ) ABCDBBCZIAEIABFGH $.
+    ( weq wn wal equid ax-gen 2a1i ) ABCDBBCZIAEIABFGH $.
 
   $( Degenerate instance of ~ ax-12 where bundled variables ` x ` , ` y ` , and
      ` z ` have a common substitution.  Uses only Tarski's FOL axiom schemes .
@@ -13699,7 +13703,7 @@ $)
        p. 114.
 
        It appears that this scheme cannot be derived directly from Tarski's
-       axioms without auxilliary axiom scheme ~ ax-11 .  It is thought the best
+       axioms without auxiliary axiom scheme ~ ax-11 .  It is thought the best
        we can do using only Tarski's axioms is ~ spw .  (Contributed by NM,
        21-May-2008.)  (Proof shortened by Scott Fenton, 24-Jan-2011.)  (Proof
        shortened by Wolf Lammen, 23-Dec-2017.) $)
@@ -14287,7 +14291,6 @@ $)
       ( wi wal wex exim 19.9h syl6ib hbe1 hbim 19.8a imim1i alrimih impbii ) AB
       EZCFZACGZBEZRSBCGBABCHBCDIJTQCSBCACKDLASBACMNOP $.
   $}
-
 
   ${
     $d x z $.  $d w ph $.
@@ -15737,7 +15740,7 @@ $)
      (making the proof longer).  (Contributed by NM, 5-Aug-1993.)  (Proof
      shortened by Andrew Salmon, 25-May-2011.) $)
   equvini $p |- ( x = y -> E. z ( x = z /\ z = y ) ) $=
-    ( weq wal wa wex wi equcomi alimi a9e jctir a1d 19.29 syl6 eximi ax-mp a1ii
+    ( weq wal wa wex wi equcomi alimi a9e jctir a1d 19.29 syl6 eximi ax-mp 2a1i
     anc2ri wn 19.29r wo ioran nfeqf ax-8 anc2li equcoms spimed sylbi ecase3 ) C
     ADZCEZCBDZCEZABDZACDZUMFZCGZHZULUOUPCEZUMCGZFZURULVBUOULUTVAUKUPCCAIZJCBKLM
     UPUMCNOUNUOUPCGZUNFURUNUOVDUNUOVDUKCGVDCAKUKUPCVCPQRSUPUMCUAOULUNUBTULTUNTF
@@ -16009,7 +16012,6 @@ $)
     chvarv $p |- ps $=
       ( spv mpg ) ABCABCDEGFH $.
   $}
-
 
   ${
     $d x z $.  $d y z $.
@@ -17442,6 +17444,7 @@ $)
     sylc ex pm2.43d ) ABDZEZBCDZUCAFZUBUCUCUDGZUBUCHZUAAFZEZACDZAFZEUEUBUHUCUGU
     AUAAIJKUFUIUJUBUCUIEUCUIUAUIUAGCBCBALMNOUIAIPBCAQRST $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                Legacy theorems using obsolete axioms
@@ -17453,7 +17456,6 @@ $(
   longer be of interest.
 
 $)
-
 
   ${
     $d x ph $.
@@ -17803,7 +17805,7 @@ $)
        (Proof modification is discouraged.)  (New usage is discouraged.) $)
     ax11f $p |- ( -. A. x x = y ->
                ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $=
-      ( weq wal wn wi ax-1 alrimih a1ii ) BCEZBFGLALAHZBFHAMBDALIJK $.
+      ( weq wal wn wi ax-1 alrimih 2a1i ) BCEZBFGLALAHZBFHAMBDALIJK $.
   $}
 
   ${
@@ -18742,7 +18744,6 @@ $)
     wa ) ABDZCEZACEBEZACDBEZTSCFACFBGZUAUBHSCIACBJUCUAUBTRUBABCKUBTLMNUBTUAABCO
     PQ $.
 
-
   $( Double existential uniqueness.  (Contributed by NM, 3-Dec-2001.) $)
   2eu3 $p |- ( A. x A. y ( E* x ph \/ E* y ph ) ->
  ( ( E! x E! y ph /\ E! y E! x ph ) <-> ( E! x E. y ph /\ E! y E. x ph ) ) ) $=
@@ -19097,7 +19098,6 @@ $)
     darii $p |- E. x ( ch /\ ps ) $=
       ( wa wex wi spi anim2i eximi ax-mp ) CAGZDHCBGZDHFNODABCABIDEJKLM $.
   $}
-
 
   ${
     $( Major premise for the Aristotelian syllogism "Ferio" ("Ferioque"),
@@ -19527,6 +19527,7 @@ $)
 
 $( End $[ set-pred.mm $] $)
 
+
 $(
 ###############################################################################
                 NEW FOUNDATIONS (NF) SET THEORY
@@ -19559,7 +19560,6 @@ $(
         Introduce the Axiom of Extensionality
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
-
 
   ${
     $d x y z $.
@@ -19831,7 +19831,6 @@ $)
   $v c $.
   $v d $.
   $v l $.
-
 
   $( Let ` e ` be an individual variable. $)
   ve $f setvar e $.
@@ -28233,7 +28232,6 @@ $)
   $c i^i $. $( Cap (intersection) $)
   $c (+) $. $( Circled plus (symmetric difference) $)
 
-
   $( Extend class notation to include anti-intersection (read:  "the
      anti-intersection of ` A ` and ` B ` "). $)
   cnin $a class ( A -i^i B ) $.
@@ -28373,7 +28371,6 @@ $)
       ZFNAEZNLBGZHOPNAQHIJK $.
   $}
 
-
   ${
     $d x y $.  $d A y $.  $d B y $.
     nfnin.1 $e |- F/_ x A $.
@@ -28487,7 +28484,6 @@ $)
       ( wceq ccompl compleq syl ) ABCEBFCFEDBCGH $.
   $}
 
-
   $( Equality theorem for class difference.  (Contributed by NM, 10-Feb-1997.)
      (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
   difeq1 $p |- ( A = B -> ( A \ C ) = ( B \ C ) ) $=
@@ -28500,7 +28496,6 @@ $)
     ( wceq ccompl cnin cdif compleq nineq2d compleqd df-dif df-in eqtri 3eqtr4g
     cin ) ABDZCAEZFZEZCBEZFZEZCAGZCBGZPRUAPQTCABHIJUCCQOSCAKCQLMUDCTOUBCBKCTLMN
     $.
-
 
   $( Equality law for intersection.  (Contributed by SF, 11-Jan-2015.) $)
   symdifeq1 $p |- ( A = B -> ( A (+) C ) = ( B (+) C ) ) $=
@@ -28573,7 +28568,6 @@ $)
 
   $( Extend wff notation with proper subclass relation. $)
   wpss $a wff A C. B $.
-
 
   $( Define the subclass relationship.  Exercise 9 of [TakeutiZaring] p. 18.
      For example, ` { ` 1 , 2 ` } C_ { ` 1 , 2 , 3 ` } ` (ex-ss in set.mm).
@@ -29626,7 +29620,6 @@ $)
       ( vx cdif cv eldifi ssriv ) CABDACEABFG $.
   $}
 
-
   $( A difference of two classes is contained in the minuend.  Deduction form
      of ~ difss .  (Contributed by David Moews, 1-May-2017.) $)
   difssd $p |- ( ph -> ( A \ B ) C_ A ) $=
@@ -30139,7 +30132,6 @@ $)
       UGUBUCSABJMSAQJNO $.
   $}
 
-
   $( A rearrangement of intersection.  (Contributed by NM, 21-Apr-2001.) $)
   in12 $p |- ( A i^i ( B i^i C ) ) = ( B i^i ( A i^i C ) ) $=
     ( cin incom ineq1i inass 3eqtr3i ) ABDZCDBADZCDABCDDBACDDIJCABEFABCGBACGH
@@ -30553,8 +30545,6 @@ $)
       ( vy cab ccompl wn wcel wsb df-clab notbii sbn bitr4i vex elcompl 3bitr4i
       cv eqriv ) CABDZEZAFZBDZCPZRGZFZTBCHZUBSGUBUAGUDABCHZFUEUCUFACBIJABCKLUBR
       CMNTCBIOQ $.
-
-
   $}
 
   $( A class builder defined by a negation.  (Contributed by FL,
@@ -30706,7 +30696,6 @@ $)
       LABCDPQRTUAUJUKUFUGUHUKUFEUIUFCDUBUCUDUE $.
   $}
 
-
   $( Symmetric difference commutes.  (Contributed by SF, 11-Jan-2015.) $)
   symdifcom $p |- ( A (+) B ) = ( B (+) A ) $=
     ( cdif cun csymdif uncom df-symdif 3eqtr4i ) ABCZBACZDJIDABEBAEIJFABGBAGH
@@ -30717,7 +30706,6 @@ $)
   compleqb $p |- ( A = B <-> ~ A = ~ B ) $=
     ( wceq ccompl compleq dblcompl 3eqtr3g impbii ) ABCADZBDZCZABEKIDJDABIJEAFB
     FGH $.
-
 
   ${
     $d A x $.
@@ -33535,7 +33523,6 @@ $)
       CZADZBEZAFQAGZQOHQPHQAIBAJRBPBAKLMN $.
   $}
 
-
   ${
     $d x A $.  $d x B $.  $d x C $.
     prsspw.1 $e |- A e. _V $.
@@ -33638,7 +33625,6 @@ $)
       FNGNBAHZIJPKL $.
   $}
 
-
   ${
     unsneqsn.1 $e |- B e. _V $.
     $( If union with a singleton yields a singleton, then the first argument is
@@ -33660,7 +33646,6 @@ $)
       cv bitri ) BCDBCEZCBEZFZGSAQBHZFACIZGBCJUAUCSUCTTUBACKUCFACBLUBACMNOPR $.
   $}
 
-
   ${
     $( Adjoining a new element is one-to-one.  (Contributed by SF,
        29-Jan-2015.) $)
@@ -33670,7 +33655,6 @@ $)
       3eqtr3g impbid1 ) CADEZCBDEZFZACGZHZBUBHZIZABIZUEAUBJZBUBJZIUAUFUEUCUBJUD
       UBJUGUHUCUDUBKAUBLBUBLQSTUGAUHBCAMCBMNOABUBPR $.
   $}
-
 
   ${
     $d A x $.  $d B x $.
@@ -35260,7 +35244,6 @@ $)
      that follow this section.  (Contributed by SF, 12-Jan-2015.) $)
   df-opk $a |- << A , B >> = { { A } , { A , B } } $.
 
-
   $( Equality theorem for ordered pairs.  (Contributed by NM, 25-Jun-1998.) $)
   opkeq1 $p |- ( A = B -> << A , C >> = << B , C >> ) $=
     ( wceq csn cpr copk sneq preq1 preq12d df-opk 3eqtr4g ) ABDZAEZACFZFBEZBCFZ
@@ -35365,7 +35348,6 @@ $)
   $( Union with complement.  (Contributed by SF, 2-Jan-2018.) $)
   uncompl $p |- ( A u. ~ A ) = _V $=
     ( ccompl cun cnin cvv df-un nincompl eqtri ) AABZCIIBDEAIFIGH $.
-
 
   $( The intersection of an intersection and a difference is empty.
      (Contributed by set.mm contributors, 10-Mar-2015.) $)
@@ -35541,7 +35523,6 @@ $)
       UTUMVDVCUIHZVCUJHZMUTVCUIUJFPQVFUNVGUSAFCUEVGUOUPUJNZKZDLUSDVCUJOVIURDVHU
       QUOUPABDPQRSTUFTRSTT $.
   $}
-
 
   ${
     $d a b $.  $d a c $.  $d a t $.  $d a w $.  $d a z $.  $d b w $.  $d c t $.
@@ -35806,7 +35787,6 @@ $)
   opkex $p |- << A , B >> e. _V $=
     ( copk csn cpr cvv df-opk prex eqeltri ) ABCADZABEZEFABGJKHI $.
 
-
   $( A singleton of a set belongs to a power class of a set containing it.
      (Contributed by SF, 1-Feb-2015.) $)
   snelpwg $p |- ( A e. V -> ( { A } e. ~P B <-> A e. B ) ) $=
@@ -35839,7 +35819,6 @@ $)
       UOUFGUIUHBMTUHAUAUHUOUFUBUCUDUE $.
   $}
 
-
   ${
     $d A x $.  $d B x $.
     $( Classes are subclasses if and only if their power classes are
@@ -35851,7 +35830,6 @@ $)
       UEABGHUEACIZJUEBUHJKLUDCABUDUEMZUBFZUIUCFZUEAFZUEBFZUBUCUINUJUIADULUIAUEO
       ZJUEAUHRPUKUIBDUMUIBUNJUEBUHRPSLT $.
   $}
-
 
   ${
     $d A a $.  $d a b $.  $d A b $.  $d A x $.  $d a z $.  $d A z $.  $d b z $.
@@ -35895,7 +35873,6 @@ $)
   snprss2 $p |- { A } C_ { B , A } $=
     ( csn cpr snprss1 prcom sseqtri ) ACABDBADABEABFG $.
 
-
   $( An unordered pair of a proper class.  (Contributed by SF, 12-Jan-2015.) $)
   prprc2 $p |- ( -. A e. _V -> { B , A } = { B } ) $=
     ( cvv wcel wn cpr csn cun df-pr wceq snprc biimpi uneq2d un0 syl6eq syl5eq
@@ -35904,7 +35881,6 @@ $)
   $( An unordered pair of a proper class.  (Contributed by SF, 12-Jan-2015.) $)
   prprc1 $p |- ( -. A e. _V -> { A , B } = { B } ) $=
     ( cvv wcel wn cpr csn prcom prprc2 syl5eq ) ACDEABFBAFBGABHABIJ $.
-
 
   ${
     preqr1.1 $e |- A e. _V $.
@@ -35941,7 +35917,6 @@ $)
       UIUGUJUNUCUHUEUBACMNUBAUDOPUDBJZUIULUJUMUOUEUKUHUDBCMQUDBARPUBUDCFTGTSUA
       $.
   $}
-
 
   ${
     preq12b.1 $e |- A e. _V $.
@@ -36057,13 +36032,11 @@ $)
      by SF, 12-Jan-2015.) $)
   df-pw1 $a |- ~P1 A = ( ~P A i^i 1c ) $.
 
-
   $( Define the unit union of a class.  This operation is used implicitly in
      both Holmes and Hailperin to complete their stratification algorithms,
      although neither provide explicit notation for it.  See ~ eluni1 for
      membership condition.  (Contributed by SF, 12-Jan-2015.) $)
   df-uni1 $a |- U.1 A = U. ( A i^i 1c ) $.
-
 
   ${
     $d A x y $.
@@ -36157,7 +36130,6 @@ $)
       QZUILURUTVBUIAUGNOUPUIAPRSTUSUQCQZAQUOUQCAUAVCUNAUIUNCULUKUBUPUHUMBUGULUC
       UDUESTTT $.
 
-
     $( Membership in ` ~P1 ~P1 ~P1 1c ` (Contributed by SF, 14-Jan-2015.) $)
     elpw131c $p |- ( A e. ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { x } } } } ) $=
@@ -36166,7 +36138,6 @@ $)
       UFQZBAGHHZHZHZIZAJZCBUFKUJUGULIZUILZAJZCJZUOUJUGUFFZUILZCJUSUICUFMVAURCVA
       UPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUHUMBUGU
       LUCUDUESTTT $.
-
 
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
        14-Jan-2015.) $)
@@ -36198,7 +36169,6 @@ $)
       AURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUH
       UMBUGULUCUDUESTTT $.
 
-
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
        15-Jan-2015.) $)
     elpw171c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
@@ -36208,7 +36178,6 @@ $)
       ZIZCUFQZBAGHHHHHHZHZHZIZAJZCBUFKUJUGULIZUILZAJZCJZUOUJUGUFFZUILZCJUSUICUF
       MVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUP
       UHUMBUGULUCUDUESTTT $.
-
 
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
        15-Jan-2015.) $)
@@ -36220,7 +36189,6 @@ $)
       HZIZCUFQZBAGHHHHHHHZHZHZIZAJZCBUFKUJUGULIZUILZAJZCJZUOUJUGUFFZUILZCJUSUIC
       UFMVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUB
       UPUHUMBUGULUCUDUESTTT $.
-
 
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by
        SF, 24-Jan-2015.) $)
@@ -36244,7 +36212,6 @@ $)
       SUICUFMVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCUL
       UKUBUPUHUMBUGULUCUDUESTTT $.
 
-
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c `
        (Contributed by SF, 24-Jan-2015.) $)
     elpw1111c $p |- (
@@ -36256,7 +36223,6 @@ $)
       CJUSUICUFLVAURCVAUPAJZUIQURUTVBUIAUGMNUPUIAORSTUSUQCJZAJUOUQCAUAVCUNAUIUN
       CULUKUBUPUHUMBUGULUCUDUESTTT $.
   $}
-
 
   $( A unit power class is a subset of ` 1c ` .  (Contributed by SF,
      22-Jan-2015.) $)
@@ -36282,7 +36248,6 @@ $)
     ( vx c0 cpw1 cpw c1c cin csn df-pw1 ineq1i wceq cv wcel wn disj 0nel1c elsn
     pw0 wb eleq1 sylbi mtbiri mprgbir 3eqtri ) BCBDZEFBGZEFZBBHUDUEEQIUFBJAKZEL
     ZMAUEAUEENUGUELZUHBELZOUIUGBJUHUJRABPUGBESTUAUBUC $.
-
 
   ${
     $d A x y $.  $d B x y $.
@@ -36550,14 +36515,12 @@ $)
       UIDHUJEHMZMZBNANZCUGTUNUHABULUHUMULUHUKIHUIUJOCUKIPQRSFJZUKLZUMMZBNANUOFC
       UGIUPCLZURUNABUSUQULUMUPCUKUAUBUCFABDEUDUEUF $.
 
-
     $( Membership in a cross product.  (Contributed by SF, 12-Jan-2015.) $)
     elxpk2 $p |- ( A e. ( B X._k C ) <->
            E. x e. B E. y e. C A = << x , y >> ) $=
       ( cv wcel wa copk wceq wex wrex cxpk ancom 2exbii r2ex elxpk 3bitr4ri ) A
       FZDGBFZEGHZCSTIJZHZBKAKUBUAHZBKAKUBBELADLCDEMGUCUDABUAUBNOUBABDEPABCDEQR
       $.
-
 
     $d x y z A $.  $d x y z B $.  $d x y z C $.
     $( Equality theorem for Kuratowski cross product.  (Contributed by SF,
@@ -36720,7 +36683,6 @@ $)
       GUJCTUFUIDETUEUHUCABUDNOPQCDEARCDEBRS $.
   $}
 
-
   ${
     cnvkeqi.1 $e |- A = B $.
     $( Equality inference for Kuratowski converse.  (Contributed by SF,
@@ -36798,7 +36760,6 @@ $)
       ( vy vx wceq cv copk wcel wrex cab cimak rexeq abbidv df-imak 3eqtr4g ) A
       BFZDGEGHCIZDAJZEKRDBJZEKCALCBLQSTERDABMNEDCAOEDCBOP $.
   $}
-
 
   ${
     imakeq1i.1 $e |- A = B $.
@@ -37308,7 +37269,6 @@ $)
       AJKLDEABCFFMN $.
   $}
 
-
   $( The Kuratowski image functor is a relationship.  (Contributed by SF,
      14-Jan-2015.) $)
   imagekrelk $p |- Image_k A C_ ( _V X._k _V ) $=
@@ -37408,7 +37368,6 @@ $)
       LVAECLZFNZUSUOVBECFUMUNABEODOZSPVAEFCQUSUQUKKZURMZFNVDURFUKRVGVCFVGUTECLZ
       URMVCVFVHUREBCUQFOTUAUTURECUBUCUDUEUFEUICUNVETFAUKUNVETUGUH $.
   $}
-
 
   ${
     $d x A $.  $d x B $.  $d x C $.
@@ -37630,7 +37589,6 @@ $)
     imakex $p |- ( A "_k B ) e. _V $=
       ( cvv wcel cimak imakexg mp2an ) AEFBEFABGEFCDABEEHI $.
   $}
-
 
   ${
     $d A x y z w $.
@@ -38004,7 +37962,6 @@ $)
       UHAUCBOUGUIUEBUFPQRSABCTCUEUAUB $.
   $}
 
-
   ${
     $d x y $.  $d ph y $.
     $( If there is a unique object satisfying a property ` ph ` , then the set
@@ -38026,7 +37983,6 @@ $)
       KCBUMLCMNUNBOFZVDUNUMOFVECPBUMORSBQUIUSVBVDIAVABDUAUOVAHZUPVBURVDUOVACTVF
       UQVCBUOVAUBUCUDUEUFUSUNAURUPUNUPUNURUQUMFUOCUJBUQUMTUGUKUHUL $.
   $}
-
 
   ${
     $d A x $.
@@ -38206,7 +38162,6 @@ $)
       sp syl6bb sylbi ) ABDABEZCEZFZGZBHZCIAABJZTFZGZABCKUDUGCUDATUEFZUFUDAUBUH
       UCBQUDUEUATABCLMNTUEORPS $.
 
-
     $( Theorem 8.22 in [Quine] p. 57.  This theorem is the result if there
        isn't exactly one ` x ` that satisfies ` ph ` .  (Contributed by Andrew
        Salmon, 11-Jul-2011.) $)
@@ -38286,7 +38241,6 @@ $)
   iotacl $p |- ( E! x ph -> ( iota x ph ) e. { x | ph } ) $=
     ( weu cio wsbc cab wcel iota4 df-sbc sylib ) ABCABABDZEKABFGABHABKIJ $.
 
-
   $( Membership law for descriptions.  (Contributed by SF, 21-Aug-2011.) $)
   reiotacl2 $p |- ( E! x e. A ph
                   -> ( iota x ( x e. A /\ ph ) ) e. { x e. A | ph } ) $=
@@ -38301,7 +38255,6 @@ $)
       ( wreu crab cv wcel wa cio wss ssrab2 a1i reiotacl2 sseldd ) ABCDZABCEZCB
       FCGAHBIPCJOABCKLABCMN $.
   $}
-
 
   ${
     $d x y $.  $d y B $.  $d y ps $.
@@ -38699,7 +38652,6 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
   peano3 $p |- ( A e. Nn -> ( A +c 1c ) =/= 0c ) $=
     ( c1c cplc c0c wne cnnc wcel 0cnsuc a1i ) ABCDEAFGAHI $.
 
-
   ${
     $d A x y z $.
     $( Cardinal zero is a fixed point for cardinal addition.  Theorem X.1.8 of
@@ -38712,7 +38664,6 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
       CQVJVHVLDGRVBGMZVHVAGLZGMZVLOVLVMVDVOVGVLVMVCVNGVBGVATUAVMVFVKVEVBGVAUBUC
       UDVOVLVAUEUFUGUJVKVAVEVAUKUHBCUIULUMVEAUSCDUNCVEAUOUPUQUR $.
   $}
-
 
   ${
     $d A x y z $.  $d B x y z $.
@@ -38729,7 +38680,6 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
      [Rosser] p. 276.  (Contributed by SF, 16-Jan-2015.) $)
   addcid2 $p |- ( 0c +c A ) = A $=
     ( c0c cplc addccom addcid1 eqtri ) BACABCABADAEF $.
-
 
   ${
     $( Cardinal one is a finite cardinal.  Theorem X.1.12 of [Rosser] p. 277.
@@ -38758,7 +38708,6 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
       LBWKFIDJZEZVRWLEZAWLMZTZDUQZURZVLADUSWKVLWQEZWRVLNVMVOWBWSVMWSVOWBTZWPWTD
       VLHWLVLVDWMVOWOWBWLVLISWNWAAWLVLWLVLVRSUTVAVBVCVEVLWQVFRVGFBVHVIVJ $.
   $}
-
 
   ${
     $d A x $.  $d ch x $.  $d ph y $.  $d ps x $.  $d ta x $.  $d th x $.
@@ -38843,7 +38792,6 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
       ETZVSVHEFSWGVQATZETVSWFWHEWFVPATZVHMWHWEWIVHAVCUQPVPVHAURORVQEAUSQQVMAVNS
       UTVAQ $.
   $}
-
 
   ${
     $d N a x $.  $d A a x $.  $d X a x $.
@@ -38958,7 +38906,6 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
   0fin $p |- (/) e. Fin $=
     ( vn c0 cfin wcel cv cnnc wrex c0c peano1 wceq eqid el0c mpbir eleq2 rspcev
     mp2an elfin ) BCDBAEZDZAFGZHFDBHDZTIUABBJBKBLMSUAAHFRHBNOPABQM $.
-
 
   ${
     $d a e $.  $d a m $.  $d a t $.  $d a w $.  $d a x $.  $d e m $.  $d e t $.
@@ -39324,7 +39271,6 @@ $)
              A. x e. a A. z ( _S[fin] ( z , x ) -> z e. a ) ) } $.
   $}
 
-
   ${
     $d A x y z w $.  $d B x y z w $.
     $( Kuratowski ordered pair membership in finite less than or equal to.
@@ -39473,7 +39419,6 @@ $)
       ACJZKZLZCEMZUEUKUFUEDADKZLZUKULDANOUJUMCDEUHDLUIULDUHDAQPRSTUFUEUGUKUACAD
       BEUBUCUD $.
   $}
-
 
   ${
     $d A x $.
@@ -40024,7 +39969,6 @@ $)
     $d m n $.  $d x y $.  $d c n $.  $d d n $.  $d k x $.  $d k y $.  $d n x $.
     $d n y $.  $d c m $.  $d d m $.  $d m x $.  $d m y $.
 
-
     $( If two sets are in a particular finite cardinal, then their unit power
        sets are in the same natural.  Theorem X.1.25 of [Rosser] p. 527.
        (Contributed by SF, 21-Jan-2015.) $)
@@ -40375,7 +40319,6 @@ $)
       wa eqid eqtri ) CDCCEZCAFZGHBFITHBCJPAKZLZCACBMSUBCECQSCUANOR $.
   $}
 
-
   ${
     $d N a $.
     $( Closure law for finite T operation.  (Contributed by SF, 2-Feb-2015.) $)
@@ -40460,7 +40403,6 @@ $)
       VHVIWIVRWAVJVKVLVMVHVI $.
   $}
 
-
   ${
     $( The finite T operator is fixed at ` 0c ` .  (Contributed by SF,
        29-Jan-2015.) $)
@@ -40523,7 +40465,6 @@ $)
       EXIYJLZXKYMXHUUHXJYLRXIYJXFUHPUKULQWBWCWDWEWFWGUIWHWKCABEEWIXOXNWLZWRXFTF
       XHTFUUIAWJBWJDXFXHTTWIWMWNWO $.
   $}
-
 
   ${
     $d M x y $.  $d N x y $.
@@ -40968,7 +40909,6 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d m n $.  $d m x $.  $d n x $.  $d k n $.  $d k m $.  $d k p $.  $d k q $.
     $d n p $.  $d n q $.  $d p q $.  $d j k $.  $d j m $.  $d j n $.  $d j p $.
     $d k x $.  $d m p $.  $d m q $.
-
 
     $( The even finite cardinals and the odd ones are disjoint.  Theorem X.1.36
        of [Rosser] p. 529.  (Contributed by SF, 22-Jan-2015.) $)
@@ -42217,7 +42157,6 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-
   $( Declare the constant symbols for ordered pairs. $)
   $c <. >. Phi Proj1 Proj2 $.
 
@@ -42310,7 +42249,6 @@ $)
     phiex $p |- Phi A e. _V $=
       ( cvv wcel cphi phiexg ax-mp ) ACDAECDBACFG $.
   $}
-
 
   ${
     $d x y z w t A $.  $d x y z w t B $.
@@ -42440,9 +42378,7 @@ $)
       OVJLLPUFVJPQRSTKUGRMSTKFQUHHUIVEESTFJOVJPMZUHZAPZBAUJVGBVMCDZVDUKVLGZCAUL
       VNVFUTZCAULVDVMGVGVOVPCAVOVDVNUKVKGVPVNVDVKCVABVAZUMBCUNUOUPCVLAVDVQUQCVF
       AURUSVBVC $.
-
   $}
-
 
   $( Equality theorem for ordered pairs.  (Contributed by SF, 2-Jan-2015.) $)
   opeq1 $p |- ( A = B -> <. A , C >. = <. B , C >. ) $=
@@ -42461,7 +42397,6 @@ $)
   $( Equality theorem for ordered pairs.  (Contributed by SF, 2-Jan-2015.) $)
   opeq12 $p |- ( ( A = B /\ C = D ) -> <. A , C >. = <. B , D >. ) $=
     ( wceq cop opeq1 opeq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
-
 
   ${
     opeq1i.1 $e |- A = B $.
@@ -42505,7 +42440,6 @@ $)
         ( cop opeq1d opeq2d eqtrd ) ABDHCDHCEHABCDFIADECGJK $.
     $}
   $}
-
 
   $( An ordered pair of two sets is a set.  (Contributed by SF, 2-Jan-2015.) $)
   opexg $p |- ( ( A e. V /\ B e. W ) -> <. A , B >. e. _V ) $=
@@ -42662,7 +42596,6 @@ $)
       EHWAJXJVTWAHVTVSVDHVEVFVGWAWDHVHVIVJVKVLVMWGWFVNTRVO $.
   $}
 
-
   $( The ordered pair theorem.  Two ordered pairs are equal iff their
      components are equal.  (Contributed by SF, 2-Jan-2015.) $)
   opth $p |- ( <. A , B >. = <. C , D >. <-> ( A = C /\ B = D ) ) $=
@@ -42676,7 +42609,6 @@ $)
     ( cop cvv wcel wa cproj1 proj1op proj1exg syl5eqelr cproj2 proj2op proj2exg
     jca opexg impbii ) ABCZDEZADEZBDEZFRSTRAQGDABHQDIJRBQKDABLQDMJNABDDOP $.
 
-
   ${
     $d y z w A $.  $d y z w B $.  $d x y z w $.
     nfop.1 $e |- F/_ x A $.
@@ -42688,7 +42620,6 @@ $)
       nfun ) ABCHFIZGIJZKZGBLZFMZUCUDNOPKZGCLZFMZPFGBCQAUGUJUFAFUEAGBDUEARSTUIA
       FUHAGCEUHARSTUBUA $.
   $}
-
 
   ${
     $d x z $.  $d A z $.  $d B z $.  $d ph z $.
@@ -42702,7 +42633,6 @@ $)
       DLZMZBUJULUIBGNUKBGNOABCMZBDMZUNUPPEFUQURQZBUMUOUQURBBCRBDRUBUSUJCULDUQUJ
       CSURBGCTUAURULDSUQBGDTUCUDUEUFUG $.
   $}
-
 
   ${
     $d x y A $.  $d x y B $.  $d x y C $.
@@ -42740,7 +42670,6 @@ $)
       EVHVIVJXDXLBVKVLVMXLXEAXECSZXLXEAMCFPZCSYCCFTYDXECCFVHVIVJXEACVKVLVMVNRQV
       OVPWPWIWQWLXCDWOWHVSZWPWKXBAWPWJWTBCWPWIWQAYEVQVRVTWAWBWCWDVOWE $.
   $}
-
 
   ${
     $d x y ps $.  $d x y A $.  $d x y B $.
@@ -42787,7 +42716,6 @@ $)
       GHUAUGURUQUNPVCUNUQTUOUPIJUAUGUBUCUDUDABVDCDEFGHIJKLVDUHMUEUF $.
   $}
 
-
   ${
     $d A z w t u v $.  $d B z w t u v $.  $d C t z $.
     $( Express equality to an ordered pair.  (Contributed by SF,
@@ -42801,7 +42729,6 @@ $)
       BUHVCUIABDEUCUDUIURUTUESUSUNVAUOUNATUOATUASUFUGS $.
   $}
 
-
   ${
     $d x y z A $.
     $( "At most one" remains true inside ordered pair quantification.
@@ -42814,7 +42741,6 @@ $)
       BUSDCURDNQOULUOVAPDUOULVAUOAUTBACDEUAUBUCRSRSUQTUTBKZTVAVBUQUTUQBURUOCDUO
       AUDUEUFUGVBVAUTBUHUIUJUK $.
   $}
-
 
   ${
     $d x y z A $.
@@ -43022,7 +42948,6 @@ $)
       wa abbii 3eqtr4i ) GHZCHZDHZIZJZATZDKZCKZGLUCUDEHZIZJZBTZEKZCKZGLACDMBCEM
       UJUPGUIUOCUHUNDEUEUKJZUGUMABUQUFULUCUEUKUDNOFPQRUAACDGSBCEGSUB $.
   $}
-
 
   ${
     $d w y z A $.  $d w ph $.  $d w x y z $.
@@ -43389,7 +43314,6 @@ $)
       ( eqcomi syl6breq ) ABCDEFDCGHI $.
   $}
 
-
   ${
     ssbrd.1 $e |- ( ph -> A C_ B ) $.
     $( Deduction from a subclass relationship of binary relations.
@@ -43430,7 +43354,6 @@ $)
     nfbr $p |- F/ x A R B $=
       ( wbr wnf wtru wnfc a1i nfbrd trud ) BCDHAIJABCDABKJELADKJFLACKJGLMN $.
   $}
-
 
   ${
     $d x y $.  $d y z A $.  $d y z R $.
@@ -43494,7 +43417,6 @@ $)
      7-Jan-2018.) $)
   brreldmex $p |- ( A R B -> A e. _V ) $=
     ( wbr cvv wcel brex simpld ) ABCDAEFBEFABCGH $.
-
 
   $( Binary relationship implies sethood of range.  (Contributed by SF,
      7-Jan-2018.) $)
@@ -43730,7 +43652,6 @@ $)
       ss2abdv 3sstr4g ) ABFZDGZCGZEHCHDHIJZAKZDLZCLZEMUFBKZDLZCLZEMACDNBCDNUEUI
       ULEUEUHUKCUDCOUDUHUKFCUDUGUJDUCDOUDABUFUCDPQRSRUAACDETBCDETUB $.
   $}
-
 
   ${
     $d ph z $.  $d ps z $.  $d x z $.  $d y z $.
@@ -44056,7 +43977,6 @@ $)
       VCVSTVAXDXJVTTTWATTXMXGWSPXIXFWSYSWBXGWRXFUQWBTXDABXFWCWDWE $.
   $}
 
-
   $( Lemma for set construction theorems.  The big expression in the middle of
      ~ setconslem4 forms a set.  (Contributed by SF, 7-Jan-2015.) $)
   setconslem5 $p |- ~ ( ( Ins3_k SI_k SI_k _S_k (+)
@@ -44196,7 +44116,6 @@ $)
       YJXEMXSJZWTYJXEXFXSUUMUUNUUOVSUVAYIXDMXRJZWTYIXDXRYHTCTWCUVBYHCMXQJWTYHCX
       QUUPFWCHWOCUUQFWDSSSWESWFWJSSVMSXBGWGSWKGHABCWLXGYCYTWMWN $.
   $}
-
 
   ${
     $d x y z w a b c t $.
@@ -44887,7 +44806,6 @@ $)
     df-id $a |- _I = { <. x , y >. | x = y } $.
   $}
 
-
   ${
     $d w z x $.  $d w z y $.
     $( A stronger version of ~ df-id that doesn't require ` x ` and ` y ` to be
@@ -45018,7 +44936,6 @@ $)
        terminology; some authors call it "inverse," especially when the
        argument is a function.  (Contributed by SF, 5-Jan-2015.) $)
     df-cnv $a |- `' A = { <. x , y >. | y A x } $.
-
 
     $( Define the range of a class.  The notation " ` ran ` " is used by
        Enderton; other authors sometimes use script R or script W. (Contributed
@@ -45172,7 +45089,6 @@ $)
       ( wceq cxp xpeq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
   $}
 
-
   ${
     $d y z A $.  $d y z B $.  $d x y z $.
     nfxp.1 $e |- F/_ x A $.
@@ -45218,7 +45134,6 @@ $)
       UCTUDTUDTUEUFABVPVEVPVAGHUGVEGHCDUHVAGHFUIUJUKVQVKGHUGVOGHVGVIUHVKGHFUIUJ
       UN $.
   $}
-
 
   ${
     $d x y z A $.  $d x y z B $.  $d y z ph $.  $d x ps $.
@@ -45386,7 +45301,6 @@ $)
       BCQUCVDUOABUDUEUFUGUOFUIOUQVBABFGUMCDRPSFGUMUIDRAUMBUKQSUH $.
   $}
 
-
   ${
     $d x A $.  $d x B $.
     $( Membership in a union of cross products when the second factor is
@@ -45395,7 +45309,6 @@ $)
       ( cv csn ciun cxp xpiundir iunid xpeq1i eqtr3i ) ABADEZFZCGABLCGFBCGABLCH
       MBCABIJK $.
   $}
-
 
   $( The cross product of two unions.  (Contributed by NM, 12-Aug-2004.) $)
   xpun $p |- ( ( A u. B ) X. ( C u. D ) ) =
@@ -45549,7 +45462,6 @@ $)
     releqd $p |- ( ph -> ( Rel A <-> Rel B ) ) $=
       ( wceq wrel wb releq syl ) ABCEBFCFGDBCHI $.
   $}
-
 
   ${
     $d y A $.  $d x y $.
@@ -46047,7 +45959,6 @@ $)
       ( ccom coeq1d coeq2d eqtrd ) ABDHCDHCEHABCDFIADECGJK $.
   $}
 
-
   ${
     $d w x y z $.  $d y z w A $.  $d y z w B $.
     nfco.1 $e |- F/_ x A $.
@@ -46078,7 +45989,6 @@ $)
       ( cop ccom wcel wbr cv wa wex df-br brco bitr3i ) BCFDEGZHBCPIBAJZEIQCDIK
       ALBCPMABCDENO $.
   $}
-
 
   ${
     $d x y A $.  $d x y B $.
@@ -46127,7 +46037,6 @@ $)
       ( ccnv wcel cv cop wceq wbr wa wex elcnv df-br anbi2i 2exbii bitri ) CDEF
       CAGZBGZHIZSRDJZKZBLALTSRHDFZKZBLALABCDMUBUDABUAUCTSRDNOPQ $.
   $}
-
 
   ${
     $d y z A $.  $d x y z $.
@@ -46180,7 +46089,6 @@ $)
       ZMZABKZESZDSZUQDEUNUINVCVFDEVCUTVDABKZMVFVBVIUTAVABOPUTVDABUAQUBUQVEESZDS
       ZABKVJABKZDSVHUPVKABDEUNUKNUCVJADBTVLVGDVEAEBTUDUEUFAUNBULUGQUH $.
   $}
-
 
   ${
     $d x y A $.  $d x y B $.
@@ -46339,7 +46247,6 @@ $)
       RQURVGUTDUNUKSUATUBTNUCURABUDUEDUNUISAUNBULUFUGUH $.
   $}
 
-
   ${
     $d x y z $.  $d z ph $.
     $( The domain of a class of ordered pairs.  (Contributed by NM,
@@ -46471,7 +46378,6 @@ $)
       MURUPUSBUIAPUJUNUGUOUJUNUILUGBUIQUGUHSTUAUBUCUDUEUF $.
   $}
 
-
   $( Equality theorem for restrictions.  (Contributed by set.mm contributors,
      7-Aug-1994.) $)
   reseq1 $p |- ( A = B -> ( A |` C ) = ( B |` C ) ) $=
@@ -46598,7 +46504,6 @@ $)
       ZVCUPEULOVFUMUSPZUPSZADLZENZVCVEVIEVEVGADLZUPSVIVDVKUPAUMDQRVGUPADUAUBUCV
       JVHENZADLVCVHAEDUDVLVBADUPVBEUSURUJVGUOVACVGUNUTBUMUSUKUEUFUGUHUITTT $.
 
-
     $( Membership in an image under three unit power classes.  (Contributed by
        set.mm contributors, 18-Mar-2015.) $)
     elimapw13 $p |- ( A e. ( B " ~P1 ~P1 ~P1 C ) <->
@@ -46669,7 +46574,6 @@ $)
       UAUBCNOUEADPQRT $.
   $}
 
-
   ${
     $d y z A $.  $d y z B $.  $d x y z w $.
     nfima.1 $e |- F/_ x A $.
@@ -46694,7 +46598,6 @@ $)
       ZMZBCDLZMZBUIUKUHBGNUJBGNOABCMZBDMZUMUOPEFUPUQQBULUNUPUQBBCRBDRSUPUQULCUK
       LUNUPUICUKBGCTUAUQUKDCBGDTUBUCUDUEUF $.
   $}
-
 
   ${
     $d A y z $.  $d B y z $.  $d C y z $.  $d x y z $.  $d F y z $.
@@ -46746,7 +46649,6 @@ $)
   opelrn $p |- ( <. A , B >. e. C -> B e. ran C ) $=
     ( cop wcel wbr crn df-br brelrn sylbir ) ABDCEABCFBCGEABCHABCIJ $.
 
-
   ${
     $d x y w v $.  $d w v A $.
     dfrnf.1 $e |- F/_ x A $.
@@ -46761,7 +46663,6 @@ $)
       TUOGPUGUMUAUKUNAUGUMUJCUBUCUDUE $.
   $}
 
-
   ${
     $d x y z $.  $d y z A $.
     nfrn.1 $e |- F/_ x A $.
@@ -46774,9 +46675,7 @@ $)
        30-Jan-2004.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
     nfdm $p |- F/_ x dom A $=
       ( cdm ccnv crn df-dm nfcnv nfrn nfcxfr ) ABDBEZFBGAKABCHIJ $.
-
   $}
-
 
   ${
     $d A z $.  $d B z $.  $d x z $.
@@ -46785,7 +46684,6 @@ $)
       ( ciin cdm wss nfii1 nfdm ssiinf cv wcel iinss2 dmss syl mprgbir ) ABCDZE
       ZABCEZDFQRFZABABRQAPABCGHIAJBKPCFSABCLPCMNO $.
   $}
-
 
   ${
     $d A w y $.  $d B w y $.  $d V w y $.  $d x w y $.
@@ -46877,7 +46775,6 @@ $)
     eqtri 3imtr4i ) BCZDZACZEZFZRTGZDZTDZFADZBEZFZABGZEZAEZFRTHUHUASFUBUFUAUGSA
     IBJKUASLMUJUDUKUEUJUICZDUDUIJULUCABNOPAJKQ $.
 
-
   $( Distribute proper substitution through the restriction of a class.
      ~ csbresg is derived from the virtual deduction proof csbresgVD in
      set.mm.  (Contributed by Alan Sare, 10-Nov-2012.) $)
@@ -46886,7 +46783,6 @@ $)
     ( wcel cvv cxp cin cres csbing csbxpg csbconstg xpeq2d eqtrd ineq2d csbeq2i
     csb df-res 3eqtr4g ) BEFZABCDGHZIZRZABCRZABDRZGHZIZABCDJZRUEUFJUAUDUEABUBRZ
     IUHABECUBKUAUJUGUEUAUJUFABGRZHUGABDGELUAUKGUFABGEMNOPOABUIUCCDSQUEUFST $.
-
 
   $( A restriction to the empty set is empty.  (Contributed by set.mm
      contributors, 12-Nov-1994.) $)
@@ -47134,7 +47030,6 @@ $)
     ( cres crn cima residm rneqi dfima3 3eqtr4i ) ABCZBCZDJDJBEABEKJABFGJBHABHI
     $.
 
-
   $( Image under a restricted class.  (Contributed by FL, 31-Aug-2009.) $)
   resima2 $p |- ( B C_ C -> ( ( A |` C ) " B ) = ( A " B ) ) $=
     ( wss cin cres crn cima wceq sseqin2 biimpi rneqd dfima3 resres rneqi eqtri
@@ -47338,7 +47233,6 @@ $)
       ULUBABUMFUCUDUTVFABURVDUSVEURUOUPUMMZVDUOUPUMQVGVBUOUPULMZNVDUOUPCULUEVHV
       CVBUOUPCUFUGRSUSUOUPFMVEUOUPFQUOUPBUHUISUJUKR $.
 
-
     $( Two ways of saying a relation is irreflexive.  Definition of
        irreflexivity in [Schechter] p. 51.  (Contributed by NM, 9-Sep-2004.)
        (Revised by Andrew Salmon, 27-Aug-2011.) $)
@@ -47351,7 +47245,6 @@ $)
       VHDOVJVGVHCTZUJVGVHDRUKVQVIBJZPVLVPWEVGVHBRULVIBVGVHATZWDVCUMUNUOUPVSWAAV
       SCANZVQLZCMWAVRWHCVOWGVQACUQURSVQWACVGWFWGVPVTVHVGVGBUSUTVAVDSVB $.
   $}
-
 
   ${
     $d x y z w $.  $d z w ph $.
@@ -47679,7 +47572,6 @@ $)
   cnvcnvss $p |- `' `' A C_ A $=
     ( ccnv cvv cxp cin cnvcnv inss1 eqsstri ) ABBACCDZEAAFAIGH $.
 
-
   ${
     $d x y A $.
     $( The domain of a singleton is nonzero iff the singleton argument is an
@@ -47697,7 +47589,6 @@ $)
   rnsnn0 $p |- ( A e. ( _V X. _V ) <-> ran { A } =/= (/) ) $=
     ( cvv cxp wcel csn cdm c0 wne crn dmsnn0 dm0rn0 necon3bii bitri ) ABBCDAEZF
     ZGHNIZGHAJOGPGNKLM $.
-
 
   ${
     $d x y z A $.  $d x y z B $.  $d x z V $.
@@ -47805,7 +47696,6 @@ $)
       ( cop csn crn cuni rnsnop unieqi unisn eqtri ) ABEFGZHBFZHBMNABCIJBDKL $.
   $}
 
-
   $( Alternate definition of relation.  (Contributed by set.mm contributors,
      14-May-2008.) $)
   dfrel3 $p |- ( Rel R <-> ( R |` _V ) = R ) $=
@@ -47821,7 +47711,6 @@ $)
      contributors, 14-May-2008.) $)
   rnresv $p |- ran ( A |` _V ) = ran A $=
     ( ccnv crn cvv cres cnvcnv2 rneqi rncnvcnv eqtr3i ) ABBZCADEZCACJKAFGAHI $.
-
 
   $( The restriction of the double converse of a class.  (The proof was
      shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
@@ -48042,7 +47931,6 @@ $)
       JUMUHUGACUDUFAUGLUGNAMQRSTUCUJULUAUB $.
   $}
 
-
   ${
     $d A x $.  $d B x $.  $d R x $.
     $( Binary relationship of composition with identity.  (Contributed by
@@ -48163,7 +48051,6 @@ $)
     ( wrel cvv wcel ccnv cnvexg wceq wi dfrel2 eleq1 syl5ib sylbi impbid2 ) ABZ
     ACDZAEZCDZACFNPEZAGZQOHAIQRCDSOPCFRACJKLM $.
 
-
   $( The range of a set is a set.  Corollary 6.8(3) of [TakeutiZaring] p. 26.
      Similar to Lemma 3D of [Enderton] p. 41.  (Contributed by set.mm
      contributors, 8-Jan-2015.) $)
@@ -48191,7 +48078,6 @@ $)
       ( cvv wcel crn rnexg ax-mp ) ACDAECDBACFG $.
   $}
 
-
   ${
     $d x y A $.  $d x y B $.  $d x y C $.
     $( Membership in a cross product.  This version requires no quantifiers or
@@ -48209,7 +48095,6 @@ $)
       VAUHVQWAWGWCWIVQVTWFAVEVPVSVDUJVQVIWHWBVEVPBUKVBUMUNUT $.
   $}
 
-
   $( If a cross product is a set, one of its components must be a set.
      (Contributed by set.mm contributors, 27-Aug-2006.) $)
   xpexr $p |- ( ( A X. B ) e. C -> ( A e. _V \/ B e. _V ) ) $=
@@ -48226,7 +48111,6 @@ $)
     dmexg rnexg anim12dan ancom2s sylan2br ) ABDZEFUDCGZAEFZBEFZHAIGZBIGZHZABJU
     EUGUFUJUEUGUHUFUIUEUGHUDKZAIUGUKALUEABMNUEUKIGUGUDCSOPUEUFHUDQZBIUFULBLUEAB
     RNUEULIGUFUDCTOPUAUBUC $.
-
 
   ${
     $d x y z w $.
@@ -48265,7 +48149,6 @@ $)
       K $.
   $}
 
-
   $( The cross product of two sets is a set.  Proposition 6.2 of
      [TakeutiZaring] p. 23.  (Contributed by set.mm contributors,
      14-Aug-1994.) $)
@@ -48283,7 +48166,6 @@ $)
     xpex $p |- ( A X. B ) e. _V $=
       ( cvv wcel cxp xpexg mp2an ) AEFBEFABGEFCDABEEHI $.
   $}
-
 
   $( The restriction of a set to a set is a set.  (Contributed by set.mm
      contributors, 8-Jan-2015.) $)
@@ -48328,7 +48210,6 @@ $)
       BCULSVJVDAPZCPBPVEVIVMBCVIVBAQZVCOVMVHVNVCVGVBAVFUTVAUSURDUEUFUGUHVBVCAUI
       TUJVDABCUKTSUMS $.
 
-
     $( Alternate definition of function.  (Contributed by NM, 29-Dec-1996.) $)
     dffun3 $p |- ( Fun A <-> ( Rel A /\
                  A. x E. z A. y ( x A y -> y = z ) ) ) $=
@@ -48355,7 +48236,6 @@ $)
       wcel anbi2i bitri ) DEDFZAGZBGZDHZUECGIZJZBKZCLZAKZMUCUDUENDTZUGJZBKZCLZA
       KZMABCDOUKUPUCUJUOAUIUNCUHUMBUFULUGUDUEDPQRSRUAUB $.
   $}
-
 
   ${
     $d x y w v u $.  $d A w v u $.
@@ -48511,7 +48391,6 @@ $)
       VLVMUIWLVLWEWKWFWLVKWDVIVJWCVGDUJULWKVHVJJWLWFVHVJUMVJWCVHUNSUOSUPVSWABVT
       AUQURVBWAVPRZAIWBVTWMAVTVORZBIWMVSWNBVNCTUSVOBTVCUSVPATVCVDUTABCDVAVE $.
   $}
-
 
   ${
     $d x y z $.  $d z ph $.
@@ -48726,7 +48605,6 @@ $)
       ( vx vy wfun wrel cv wbr wmo wal wa ccnv dffun6 fun2cnv anbi2i bitr4i ) A
       DAEZBFCFAGCHBIZJPAKKDZJBCALRQPBCAMNO $.
 
-
     $( Single-rootedness (see ~ funcnv ) of a class cut down by a cross
        product.  (Contributed by NM, 5-Mar-2007.) $)
     fncnv $p |- ( `' ( R i^i ( A X. B ) ) Fn B <->
@@ -48741,7 +48619,6 @@ $)
       SAOZQWNWQWPWSAUOWMWTAWMWCWAWBVLLZJZWTWAWBEVLUPXCWPWRJZWCJZWTXCWCXDJXEXBXD
       WCXBWRWPJXDWAWBCDUQWRWPRSNWCXDRSWPWRWCURSSUSWHXAWPWCACUTVATVBVCVDVFVGWGWH
       BDVHTVOVSRWDWIBDWCACVIVJTVK $.
-
 
     $( Two ways of stating that ` A ` is one-to-one (but not necessarily a
        function).  Each side is equivalent to Definition 6.4(3) of
@@ -48882,7 +48759,6 @@ $)
     imp sylan2 ) ACDBEZFCGZCAEZCSEZFZUABFZASCHTUCUDTUCUABCIZJZFZUDTUBUFUABCKLUG
     UFBFUDBUEMUAUFBNOPQR $.
 
-
   ${
     $d x y A $.  $d x y B $.  $d x y F $.
     $( The image of a difference is the difference of images.  (Contributed by
@@ -48964,7 +48840,6 @@ $)
       ( wceq wfn wb fneq2 ax-mp ) ABECAFCBFGDABCHI $.
   $}
 
-
   ${
     nffn.1 $e |- F/_ x F $.
     nffn.2 $e |- F/_ x A $.
@@ -49015,7 +48890,6 @@ $)
      (Revised by set.mm contributors, 25-Mar-2007.) $)
   fnop $p |- ( ( F Fn A /\ <. B , C >. e. F ) -> B e. A ) $=
     ( cop wcel wfn wbr df-br fnbr sylan2br ) BCEDFDAGBCDHBAFBCDIABCDJK $.
-
 
   ${
     $d x y F $.  $d x y B $.  $d x A $.
@@ -49120,7 +48994,6 @@ $)
   fnresin2 $p |- ( F Fn A -> ( F |` ( B i^i A ) ) Fn ( B i^i A ) ) $=
     ( wfn cin wss cres inss2 fnssres mpan2 ) CADBAEZAFCKGKDBAHAKCIJ $.
 
-
   ${
     $d x y A $.  $d x y F $.
     $( An equivalence for functionality of a restriction.  Compare ~ dffun8 .
@@ -49183,7 +49056,6 @@ $)
       UBVLVKBDEVDVBVJVCVDVAUPUNUTDUOUCUDUEUFVMVFBVDVCVBUGTUHTUIUJAFCUQULVEABFUK
       UM $.
   $}
-
 
   ${
     $d x y z A $.  $d z F $.  $d x y z w $.
@@ -49315,7 +49187,6 @@ $)
     feq23d $p |- ( ph -> ( F : A --> B <-> F : C --> D ) ) $=
       ( wceq wf wb feq23 syl2anc ) ABDICEIBCFJDEFJKGHBCDEFLM $.
   $}
-
 
   ${
     $d y F $.  $d y A $.  $d y B $.  $d x y $.
@@ -49810,7 +49681,6 @@ $)
    ( F : A -1-1-onto-> C <-> F : B -1-1-onto-> D ) ) $=
     ( wceq wf1o f1oeq2 f1oeq3 sylan9bb ) ABFACEGBCEGCDFBDEGABCEHCDBEIJ $.
 
-
   ${
     $d y F $.  $d y A $.  $d y B $.  $d x y $.
     nff1o.1 $e |- F/_ x F $.
@@ -50265,7 +50135,6 @@ $)
       ( cfv fveq1d fveq2d eqtrd ) ABDHBEHCEHABDEFIABCEGJK $.
   $}
 
-
   ${
     $d y z F $.  $d y z A $.  $d x y z $.
     nffv.1 $e |- F/_ x F $.
@@ -50276,7 +50145,6 @@ $)
       ( vy cfv cv wbr cio df-fv nfcv nfbr nfiota nfcxfr ) ABCGBFHZCIZFJFBCKQAFA
       BPCEDAPLMNO $.
   $}
-
 
   ${
     $d y z A $.  $d y z F $.  $d y ph $.  $d x y z $.
@@ -50291,7 +50159,6 @@ $)
       DLZMZBUJULUKBGNUIBGNOABDMZBCMZUNUPPEFUQURQZBUMUOUQURBBDRBCRUBUSUJCULDUQUL
       DSURBGDTUAURUJCSUQBGCTUCUDUEUFUG $.
   $}
-
 
   ${
     $d y z A $.  $d y z B $.  $d y z C $.  $d y z F $.  $d x y z $.
@@ -50369,7 +50236,6 @@ $)
     ( wfun wss cdm wcel cfv wceq wa cres fvres eqcomd funssres fveq1d sylan9eqr
     3impa ) BDZCBEZACFZGZABHZACHZIUARSJZUBABTKZHZUCUAUFUBATBLMUDAUECBCNOPQ $.
 
-
   ${
     $d A x y $.  $d B x $.  $d F x y $.
     $( Function value.  Theorem 6.12(1) of [TakeutiZaring] p. 27.  (Contributed
@@ -50387,7 +50253,6 @@ $)
       ( cop wcel cv weu wa wbr cfv wceq df-br eubii anbi12i tz6.12-1 sylbir ) B
       CEDFZBAGZEDFZAHZIBCDJZBSDJZAHZIBDKCLUBRUDUABCDMUCTABSDMNOABCDPQ $.
   $}
-
 
   ${
     $d x y z A $.  $d x y z F $.
@@ -50455,7 +50320,6 @@ $)
     ndmfv syl ) ABDZEACBFZGZDZEAUBHIJUDUAUDUAACGZDZUDABUEKZDUAUFLUCUGACBMNABUEO
     PQRAUBST $.
 
-
   ${
     $d x y A $.  $d x y F $.
     $( If the restriction of a class to a singleton is not a function, its
@@ -50482,7 +50346,6 @@ $)
     ( wcel cfv wceq cres wi fvres eqeq12d biimprd wn nfvres eqtr4d a1d pm2.61i
     c0 ) ABEZACFZADFZGZACBHFZADBHFZGZISUEUBSUCTUDUAABCJABDJKLSMZUEUBUFUCRUDABCN
     ABDNOPQ $.
-
 
   ${
     $d x y A $.  $d x y F $.  $d x y B $.
@@ -50671,7 +50534,6 @@ $)
     CDKZHZJZDBCRZIZUMUORUGUQULUGUNUIUPUKUDUEUNUISUFABDLMUDUFUPUKSUEACDLNOPUSDUH
     UJJZIULURUTDBCQTDUHUJUAUBUMUOQUC $.
 
-
   $( A simplified expression for the value of a function when we know it's a
      function.  (Contributed by NM, 22-May-1998.) $)
   funfv $p |- ( Fun F -> ( F ` A ) = U. ( F " { A } ) ) $=
@@ -50679,7 +50541,6 @@ $)
     wa eqid unieqd c0 sylanbr syl5eqr ex wn ndmfv ndmima syl6eq eqtr4d pm2.61d1
     uni0 ) BCZABDZEZABFZBAGHZIZJZUKUMUQUKUMQZUNUNGZIUPUNABKLURUSUOUKBULMZUMUSUO
     JUTUKULULJULRBULNOULABPUASUBUCUMUDZUNTUPABUEVAUPTITVAUOTABUFSUJUGUHUI $.
-
 
   ${
     $d y A $.  $d y F $.
@@ -50690,7 +50551,6 @@ $)
       ( wfun cfv csn cima cuni cv wbr cab funfv imasn unieqi syl6eq ) CDBCECBFG
       ZHBAICJAKZHBCLPQABCMNO $.
   $}
-
 
   ${
     $d w z A $.  $d w z F $.  $d w y z $.
@@ -50923,7 +50783,6 @@ $)
       IZBCLZAUABCHMADCNECNSUBOFGBCDEPQR $.
   $}
 
-
   ${
     $d x z A $.  $d y z F $.  $d y z G $.  $d x y $.
     eqfnfv2f.1 $e |- F/_ x F $.
@@ -51039,7 +50898,6 @@ $)
       cv fvex syl6rbb funimass3 bitrd ) DEBDFGHZASZDIZCJZABKZDBLCMZGZBDNUILGUDU
       JUFUIOZABKUHABUIDPUKUGABUFCUEDTQRUABUIDUBUC $.
   $}
-
 
   $( Membership in the preimage of a set under a function.  (Contributed by
      Jeff Madsen, 2-Sep-2009.) $)
@@ -51257,7 +51115,6 @@ $)
       TVNVSUSABVKEUDTUTVNWAUSABVKDEUETVPWAGVRBVDVROVEVTVLVDVRDUFUGUHUIVMVFVPGBV
       CVLVEULUJUKUMUNUOUPUQGFBCDURUA $.
   $}
-
 
   ${
     $d x y A $.  $d x y B $.  $d x y F $.
@@ -51655,7 +51512,6 @@ $)
       AUGBGUHABMBCUGNOCAUDPQST $.
   $}
 
-
   ${
     $d x y F $.
     $( Upper bound for the class of values of a class.  (Contributed by NM,
@@ -51682,7 +51538,6 @@ $)
       BUSRVJVFBVJVDDEMZUOOVFVIVKUOURVKCVCBSUPVCLUQVDDEUPVCFTUAUBUCVDUODEUEUFUDU
       GVEDBEUHVHVADEUOVABFIVDGHUNJUIUJUKULUM $.
   $}
-
 
   ${
     $d x y z A $.  $d y z B $.  $d y z C $.
@@ -51737,7 +51592,6 @@ $)
       BWCWDWEWFTT $.
   $}
 
-
   ${
     $d x z A $.  $d y z F $.  $d x y $.
     funiunfvf.1 $e |- F/_ x F $.
@@ -51788,7 +51642,6 @@ $)
       SVKWFWQBIZAIZFIXRFIZAIWTWEXSFWDWOABWBWHWCEVLVMVNXRFAVOXTWSAWQFBVOVNVPWLAB
       CCVQVRVSVTVJ $.
   $}
-
 
   ${
     $d x y w v A $.  $d w v B $.  $d z w v F $.  $d x y z $.
@@ -51901,7 +51754,6 @@ $)
     ( wf1o ccnv wf wcel cfv f1ocnv f1of syl ffvelrn sylan ) ABDEZBADFZGZCBHCPIA
     HOBAPEQABDJBAPKLBACPMN $.
 
-
   ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y H $.  $d x y G $.
     $d x y R $.  $d x y S $.  $d x y T $.
@@ -51948,7 +51800,6 @@ $)
       ) BCIZABFJZGKZHKZDLUDFMUEFMELNHAOGAOZPACFJZUFPABDEFQACDEFQUBUCUGUFBCAFRSG
       HABDEFTGHACDEFTUA $.
   $}
-
 
   ${
     $d y z w H $.  $d y z w R $.  $d y z w S $.  $d y z w A $.  $d y z w B $.
@@ -52615,7 +52466,6 @@ $)
       $.
   $}
 
-
   ${
     nfovd.2 $e |- ( ph -> F/_ x A ) $.
     nfovd.3 $e |- ( ph -> F/_ x F ) $.
@@ -52637,7 +52487,6 @@ $)
     nfov $p |- F/_ x ( A F B ) $=
       ( co wnfc wtru a1i nfovd trud ) ABCDHIJABCDABIJEKADIJFKACIJGKLM $.
   $}
-
 
   ${
     $d w x $.  $d w y $.  $d w z $.  $d w ph $.
@@ -52704,7 +52553,6 @@ $)
   ovex $p |- ( A F B ) e. _V $=
     ( co cop cfv cvv df-ov fvex eqeltri ) ABCDABEZCFGABCHKCIJ $.
 
-
   ${
     $d y z A $.  $d y z B $.  $d y z C $.  $d y z D $.  $d y z F $.
     $d x y z $.
@@ -52717,7 +52565,6 @@ $)
       KZUCUHUGULAUABUBLUMUDUIUEUJUFUKAUABFLAUABCLAUABDLMNAUAUBUGGSAUDUEUFAUACOA
       UAFOAUADOTAHUAKCUDDUEFUFAUAFPAUACPAUADPMQR $.
   $}
-
 
   ${
     $d y A $.  $d y C $.  $d y D $.  $d x y F $.
@@ -52902,7 +52749,6 @@ $)
       QRAOPEFLMN $.
   $}
 
-
   ${
     $d x y z w v $.  $d v ph $.  $d v ps $.
     cbvoprab1.1 $e |- F/ w ph $.
@@ -52964,7 +52810,6 @@ $)
                     = { <. <. w , v >. , z >. | ps } $=
       ( nfv cbvoprab12 ) ABCDEFGAFIAGIBCIBDIHJ $.
   $}
-
 
   ${
     $d x z w v $.  $d y z w v $.  $d v ph $.  $d v ps $.
@@ -53275,7 +53120,6 @@ $)
       TUA $.
   $}
 
-
   ${
     $d x y z $.
     ovidig.1 $e |- E* z ph $.
@@ -53360,7 +53204,6 @@ $)
       ZRZARZUQBRCDEFGHLJKIURFSZUTGSZETHSZQVBUQABVDVEVBUQUCVFVDUSUNVEVAUOURFJUDU
       TGKUDUEUFMUGVCEUIVBAEUIUJNVBAEUHUKOULUM $.
   $}
-
 
   ${
     $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.  $d z R $.
@@ -53973,14 +53816,12 @@ $)
     $}
   $}
 
-
   $( Eliminate antecedent for operator values: domain and range can be taken to
      be a set.  (Contributed by set.mm contributors, 25-Feb-2015.) $)
   elovex12 $p |- ( A e. ( B F C ) -> ( B e. _V /\ C e. _V ) ) $=
     ( co wcel c0 wne cvv wa ne0i cop wceq opexb cfv df-ov fvprc syl5eq sylnbir
     wn necon1ai syl ) ABCDEZFUCGHBIFCIFJZUCAKUDUCGUDBCLZIFZUCGMBCNUFTUCUEDOGBCD
     PUEDQRSUAUB $.
-
 
   $( Eliminate antecedent for operator values: domain can be taken to be a
      set.  (Contributed by set.mm contributors, 25-Feb-2015.) $)
@@ -54202,7 +54043,6 @@ $)
       KCLBKDLEFIJGMNO $.
   $}
 
-
   ${
     $d z A $.  $d z B $.  $d x y z $.
     nfmpt.1 $e |- F/_ x A $.
@@ -54222,7 +54062,6 @@ $)
       ( vz cmpt cv wcel wceq wa copab df-mpt nfopab1 nfcxfr ) AABCEAFBGDFCHIZAD
       JADBCKNADLM $.
   $}
-
 
   ${
     $d z A $.  $d z B $.  $d z C $.  $d z x $.  $d z y $.
@@ -54566,7 +54405,6 @@ $)
     fvmpt2 $p |- ( ( x e. A /\ B e. C ) -> ( F ` x ) = B ) $=
       ( cv wcel cfv cid fvmpt2i fvi sylan9eq ) AGZBHCDHNEICJICABCEFKCDLM $.
 
-
     $d x y z C $.  $d y D $.  $d y F $.
     $( If all the values of the mapping are subsets of a class ` C ` , then so
        is any evaluation of the mapping, even if ` D ` is not in the base set
@@ -54619,7 +54457,6 @@ $)
       HUCUIUJUKVHABICUNULCIURFUMABIDEGUOUP $.
   $}
 
-
   ${
     $d x y z $.  $d z A $.  $d z B $.  $d z C $.  $d z F $.
     ovmpt4g.3 $e |- F = ( x e. A , y e. B |-> C ) $.
@@ -54632,7 +54469,6 @@ $)
       ZEMZINUKUMOZUPIEGPUSURUPIURUOUQMUPUSURABICDFURIQUSIERSFABCDETUSUROABIUAHA
       BICDEUDUBUCUQEUOUEUFUGUHUI $.
   $}
-
 
   ${
     $d t u v w A $.  $d t u v w B $.  $d t u v w x y z C $.  $d t u v w z R $.
@@ -54764,7 +54600,6 @@ $)
       FCAGHACIJBKACBOLACBMN $.
   $}
 
-
   ${
     $d x z $.  $d x y A $.  $d y z B $.  $d y C $.
     fvmptex.1 $e |- F = ( x e. A |-> B ) $.
@@ -54839,7 +54674,6 @@ $)
       AEBUKAOEPCDMGQABCFHRSUPUMDPUNAECDBMFGHUAUMDUDUBUCULUEZUMTDEFUFTDLUQDUGUHU
       IUJ $.
   $}
-
 
   ${
     $d x w A $.  $d w B $.  $d w F $.
@@ -55139,7 +54973,6 @@ $)
       UECDIPUIUKGUGUJUHUGBUFOUJABUFEFQBUFRSTUAUHULGBFUFBCDUBUCUD $.
   $}
 
-
   $( Equality theorem for tail cross product.  (Contributed by Scott Fenton,
      31-Jul-2019.) $)
   txpeq1 $p |- ( A = B -> ( A (x) C ) = ( B (x) C ) ) $=
@@ -55300,7 +55133,6 @@ $)
       VAUTJDUAZIVEVCUBULVFUTDUCUDUSBCJDUEUFUGUHUI $.
   $}
 
-
   ${
     $d A x $.  $d B x $.  $d C x $.  $d R x $.
     otelins3.1 $e |- C e. _V $.
@@ -55313,7 +55145,6 @@ $)
       TZUJGZULIZUSBGZDIZUMUPFAJUSAOZUTUKULUSAUJPQVDVBUODUSABPQVAVCUSCGJIZUSCFRE
       SVAUTDJUAZIVCVEUBULVFUTDUCUDUSBCDJUEUFUGUHUI $.
   $}
-
 
   ${
     $d A x y s t $.  $d B x y s t $.  $d R x y s t $.
@@ -55403,7 +55234,6 @@ $)
       coex imaex eqeltri ) ACDDEFZSEFZGZGZHZAIJAKUCAUBDUALSTDELMPZSEUDMPNNOBQR
       $.
   $}
-
 
   $( The image function of a set is a set.  (Contributed by SF,
      11-Feb-2015.) $)
@@ -56306,7 +56136,6 @@ $)
     fullfunex $p |- FullFun F e. _V $=
       ( cvv wcel cfullfun fullfunexg ax-mp ) ACDAECDBACFG $.
   $}
-
 
   ${
     $d F x $.  $d F y $.  $d F z $.  $d x y $.  $d x z $.  $d y z $.
@@ -57465,7 +57294,6 @@ $)
       VJVKUSVLTUSAXEVMVNVOWGWHWGIVPVQVRVSVTWAWDWBWCWEWFVT $.
   $}
 
-
   ${
     $d R x y z $.  $d ph x y z $.
     ord0.1 $e |- ( ph -> R e. V ) $.
@@ -57489,7 +57317,6 @@ $)
       ( c0 cpartial wbr cconnex cstrict po0 connex0 sopc sylanbrc ) ABEFGBEHGBE
       IGABCDJABCDKEBLM $.
   $}
-
 
   ${
     $d A a $.  $d a r $.  $d A r $.  $d a x $.  $d A x $.  $d a y $.  $d A y $.
@@ -57592,7 +57419,6 @@ $)
        22-Feb-2015.) $)
     df-qs $a |- ( A /. R ) = { y | E. x e. A y = [ x ] R } $.
   $}
-
 
   ${
     ersym.1 $e |- ( ph -> R Er A ) $.
@@ -57721,7 +57547,6 @@ $)
     ( csn cima wcel cop cec wbr elimasn df-ec eleq2i df-br 3bitr4i ) ACBDEZFBAG
     CFABCHZFBACICBAJPOABCKLBACMN $.
 
-
   ${
     $d x y R $.
     $( The range and domain of an equivalence relation are equal.  (Contributed
@@ -57731,7 +57556,6 @@ $)
       a1i elrn eqrdv ) ADEFZBAGZAHZUABIZCIZAFZCJUEUDAFZCJUDUBKUDUCKUAUFUGCUADAU
       DUEUALUDDKUABMRUEDKUACMRNOCUDAPCUDASQT $.
   $}
-
 
   ${
     $d x y R $.
@@ -58205,7 +58029,6 @@ $)
       AVLVMRSVNWIWMGWHVOWFWGWEHVPVTVQAVRVSWAWKWLWJMWBVTVQBEWCVSWAWD $.
   $}
 
-
   ${
     $d f x A $.  $d f x B $.
     $( When ` A ` is a proper class, the class of all functions mapping ` A `
@@ -58496,7 +58319,6 @@ $)
     df-en $a |- ~~ = { <. x , y >. | E. f f : x -1-1-onto-> y } $.
   $}
 
-
   ${
     $d x y f $.  $d x y f $.
     $( Equinumerosity is a relation.  (Contributed by NM, 28-Mar-1998.) $)
@@ -58542,7 +58364,6 @@ $)
       ZHABEIZGZEJZABKLRSUBUASEDCABTDMNOABEPQ $.
   $}
 
-
   ${
     f1oen.1 $e |- F e. _V $.
     $( The domain and range of a one-to-one, onto function are equinumerous.
@@ -58562,7 +58383,6 @@ $)
     enrflx $p |- A ~~ A $=
       ( cvv wcel cen wbr enrflxg ax-mp ) ACDAAEFBACGH $.
   $}
-
 
   ${
     $d A f g $.  $d B f g $.  $d C f g $.
@@ -58593,7 +58413,6 @@ $)
       wa entr iserd trud ) DEFGHABCEDEEDEIHJKEEIHLKAMZBMZDGZHUBUADGUAEIZUBEIZQU
       AUBNOUCUBCMZDGQHUAUFDGUDUEUFEIPUAUBUFROST $.
   $}
-
 
   ${
     $d x y $.
@@ -58644,7 +58463,6 @@ $)
       OWPXAAXEXGWQWRAXEXGKAWSBWTXBWDAXEXCUL $.
   $}
 
-
   ${
     $d x A $.  $d x F $.
     $( A function is equinumerous to its domain.  Exercise 4 of [Suppes]
@@ -58690,7 +58508,6 @@ $)
       DUEUFUGUHVHUSUTVHUOEKZUQFKZJUSVFVKVGVLABETCDFTUIUOUQEFUJUKULVAVBGTUM $.
   $}
 
-
   ${
     $d x y z w A $.  $d x y z w B $.
     xpsnen.1 $e |- A e. _V $.
@@ -58704,7 +58521,6 @@ $)
       KLUJAMBDNUHBOAUHPQAUHUIRUISUJUIGHABDTAUHUIUAUIAUHCBUBUCUDQUEAUIUFUG $.
   $}
 
-
   ${
     $d x y A $.  $d x y B $.
     $( A set is equinumerous to its cross-product with a singleton.
@@ -58715,7 +58531,6 @@ $)
       sneq vtocl2g ) EGZFGZHZIZUBJKAUDIZAJKABHZIZAJKEFABCDUBALZUEUFUBAJUBAUDMUI
       NOUCBLZUFUHAJUJUDUGAUCBTPQUBUCERFRSUA $.
   $}
-
 
   ${
     $d x y A $.  $d x y B $.
@@ -58731,7 +58546,6 @@ $)
       UPUSCUMEGQUCZRDGFQRUDCDUMGVKGUEUFVJUTVBLABUOURCUNEUMSTDUQFGSTVCUONZVEURNZ
       LZVGUTVIVBVLVDUPVMVFUSVCUOCJUBVEURDJUBUGVNVHVAGVCUOVEURUHUIUJUKUL $.
   $}
-
 
   ${
     xpcomen.1 $e |- A e. _V $.
@@ -58763,7 +58577,6 @@ $)
     syl2anc ) ACEZBDEZFAGZBHZBUBHZIJZUDBIJZUCBIJUAUETUBKEUAUEALUBBKDMNOUATUFBAD
     CPQUCUDBRS $.
 
-
   ${
     $d A f $.  $d A g $.  $d B f $.  $d B g $.  $d C f $.  $d C g $.  $d D f $.
     $d D g $.  $d f g $.
@@ -58776,7 +58589,6 @@ $)
       KZACLZBDLZGHZUHUJEKZULFKZIUNUFURUGUSABEMCDFMNUJULEFOPUMUQEFUMUOUPUIUKQZJU
       QACBDUIUKRUOUPUTUIUKETFTUAUBUCUDUE $.
   $}
-
 
   ${
     $d A a $.  $d a b $.  $d A b $.  $d a c $.  $d A c $.  $d a t $.  $d A t $.
@@ -59999,7 +59811,6 @@ $)
   0cnc $p |- 0c e. NC $=
     ( c0c c0 cnc cncs df0c2 0ex ncelncsi eqeltri ) ABCDEBFGH $.
 
-
   ${
     $d f x $.  $d f y $.  $d f z $.  $d x y $.  $d x z $.  $d y z $.
     $( Cardinal one is a cardinal number.  Corollary 2 to theorem XI.2.8 of
@@ -60017,7 +59828,6 @@ $)
       CWGWRVHWCXCIWMXHWKWCXCVIQSVJVKVLTVMPTVNVSVOVPWEWJAWHWGVQWCWHIWDWIEWCWHVRQ
       SVTAEWAWB $.
   $}
-
 
   ${
     df1c3.1 $e |- A e. _V $.
@@ -60438,7 +60248,6 @@ $)
       VPVJWEVKURVHBTULVHVDDTATUMUNRQRCUTVDJVBUODVIVDUPUQ $.
   $}
 
-
   ${
     $d a b $.  $d a g $.  $d a m $.  $d a n $.  $d a x $.  $d b g $.  $d b m $.
     $d b n $.  $d b x $.  $d g m $.  $d g n $.  $d g x $.  $d m n $.  $d a f $.
@@ -60761,7 +60570,6 @@ $)
       VARVBVOVMBVDVEVLVOVFVGPQTQVH $.
   $}
 
-
   ${
     $d A p $.  $d A x $.  $d A y $.  $d p x $.  $d p y $.  $d x y $.
     ce2.1 $e |- A e. _V $.
@@ -60792,7 +60600,6 @@ $)
   ce2ncpw11c $p |- ( 2c ^c Nc ~P1 1c ) = Nc 1c $=
     ( c2c c1c cpw1 cnc cce co cpw wceq eqid 1cex ce2 ax-mp ncpw1c eqtri ) ABCDZ
     EFZBGDZBDOOHPQHOIBOJKLMN $.
-
 
   ${
     $d A x y $.  $d B x y $.
@@ -61100,7 +60907,6 @@ $)
                ( M +c N ) <_c ( M +c P ) ) $=
     ( cncs wcel w3a clec wbr wa cplc 3anrot leaddc1 sylanb addccom 3brtr4g ) BD
     EZCDEZADEZFZCAGHZICBJZABJZBCJBAJGSQRPFTUAUBGHPQRKBCALMBCNBANO $.
-
 
   ${
     $d a p $.  $d a q $.  $d a x $.  $d N a $.  $d p q $.  $d p x $.  $d q x $.
@@ -61480,7 +61286,6 @@ $)
       VEUTSVGUPUITUJUL $.
   $}
 
-
   ${
     $d M n $.
     $( ` ( M ^c 0c ) ` is a cardinal iff ` M ` is a T-raising of some
@@ -61780,7 +61585,6 @@ $)
       ZVEVDVGUSUTTUSVCUGBUTUSUHUIUSUJULUKBUTQUMBUTUNUOURVFUPUQ $.
   $}
 
-
   ${
     $d x y z w $.
     $( The function mapping ` x ` to its cardinal successor exists.
@@ -61864,7 +61668,6 @@ $)
       QQRUQWOWKDWJWBWDYCXQVOWMWJWCHVRVSQWBWDWCYCXQVTWLWCWAQ $.
   $}
 
-
   ${
     $d N n p x y $.  $d P p x y $.
     $( Lemma for ~ addccan2nc .  Establish stratification for induction.
@@ -61922,7 +61725,6 @@ $)
       VRGFZVTWCOVBVCVDWAUHVBVCVDWAUIVCVBWAWDVDCVJQSVRBAUGUJWBVIWCCVRJKZVCVBWAWE
       VDCVJUKSAVRCJULUMTUNUOTVBVPVCVDVIVHURVQVPVCVDHVIVHABCUPUSUTVA $.
   $}
-
 
   ${
     $d M p q $.  $d N p q $.
@@ -62550,7 +62352,6 @@ $)
     AJZKAEFZGHZLZIZVDIZMNZUTVAVEAOPUTVFMVGNZVHUTVFVBIZVGNZVIUTVBVDRZSTVFVKTUTVL
     VDVBRZSVBVDUAUTAVDCUBVMSTAUCVDAUDUEUFVBVDAUGVCGUHUIUJURVIVKTUSURMVJVGABUKUL
     UMUNMVGUOUPUQ $.
-
 
   ${
     $d M x $.  $d x y $.  $d x z $.  $d y z $.  $d M n $.  $d n x $.  $d p q $.
