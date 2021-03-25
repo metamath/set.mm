@@ -69,7 +69,6 @@ img { margin-bottom: -4px }
   </TR>
 </TABLE>
 
-
 <!--
 <TABLE BORDER=0 WIDTH="100%"><TR>
 <TD NOWRAP ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2 FACE=sans-serif><A
@@ -88,7 +87,6 @@ HREF="grothprim.html">Last &gt;</A></FONT></TD>
 
 </TR></TABLE>
 -->
-
 
 <HR SIZE=1 NOSHADE>
 
@@ -132,11 +130,11 @@ SIZE=-1><I>20-May-2003</I></FONT>
   <FONT SIZE=-1>(<A HREF="#scaxioms">Propositional Calculus</A>,
   <A HREF="#pcaxioms">Predicate Calculus</A>,
   <A HREF="#staxioms">Set Theory</A>,
-  <A HREF="#groth">The Tarski-Grothendieck Axiom</A>)</FONT>
+  <A HREF="#groth">The Tarski&ndash;Grothendieck Axiom</A>)</FONT>
 
 <!--
 <FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Revised </FONT> <FONT
-SIZE=-1><I>22-June-2009 (the Tarski-Grothendieck Axiom)</I></FONT>
+SIZE=-1><I>22-June-2009 (the Tarski&ndash;Grothendieck Axiom)</I></FONT>
 -->
 
 </LI>
@@ -313,9 +311,6 @@ SIZE=-1><I>8-Aug-2003</I></FONT>
 <FONT SIZE=-1><I>7-Nov-2020</I></FONT>
 </LI>
 
-
-
-
 <LI>
 <A HREF="mmzfcnd.html">ZFC Axioms With No Distinct Variables</A>
 <!--
@@ -366,13 +361,15 @@ HREF="../index.html#mmprog">Metamath program</A>, once you get used to
 its <A HREF="mmascii.html">ASCII tokens</A>.  See the wildcard features
 in "help search" and "help show statement".
 
-</FONT></TD>
-
-</TR></TABLE>
+</FONT>
+</TD>
+</TR>
+</TABLE>
 
 <P><HR NOSHADE SIZE=1><A NAME="overview"></A><B><FONT
 COLOR="#006633">Metamath Proof Explorer
 Overview</FONT></B>&nbsp;&nbsp;&nbsp;
+</P>
 
 <!--
 <P><CENTER><FONT COLOR="#006633"><I>My intellect never quite recovered
@@ -381,12 +378,10 @@ Mathematica]<I>.</I><BR> &mdash;Bertrand Russell, <I>The Autobiography of
 Bertrand Russell, the Early Years</I></FONT></CENTER>
 -->
 
-
 <!--
 "I have been ever since definitely less capable of dealing with
 difficult abstractions than I was before"
 -->
-
 
 <!--
 <P><CENTER><FONT COLOR="#006633"><I>...today we know
@@ -395,11 +390,14 @@ almost all of present-day mathematics from a single source, the Theory
 of Sets.</I><BR> &mdash;Nicolas Bourbaki </FONT></CENTER>
 -->
 
-<P><CENTER><FONT COLOR="#006633"><I>From <A HREF="pm54.43.html">this
+<P>
+<CENTER>
+<FONT COLOR="#006633"><I>From <A HREF="pm54.43.html">this
 proposition</A> it will follow, when arithmetical addition has been
 defined, that 1+1=2.</I><BR> &mdash;<I>Principia Mathematica</I>, Volume
-I, page 360.</FONT></CENTER>
-
+I, page 360.</FONT>
+</CENTER>
+</P>
 
 <!--
 <P><CENTER><FONT COLOR="#006633"><I>Mathematics is a game played
@@ -407,146 +405,200 @@ according to certain simple rules with meaningless marks on
 paper.</I><BR> &mdash;David Hilbert</FONT></CENTER>
 -->
 
-<P><CENTER><TABLE WIDTH="90%"><TR><TD ALIGN=CENTER> <TABLE BORDER=0
-CELLSPACING=0 CELLPADDING=5 BGCOLOR="#EEFFFA"><TR><TD ALIGN=CENTER>
-David A. Wheeler has prepared an excellent 14-minute YouTube video, <A
-HREF="https://www.youtube.com/watch?v=8WH4Rd4UKGE">Metamath Proof
-Explorer:  A Modern Principia Mathematica</A>, on the history of
-formalization and the motivation for Metamath,
-the proof of 2+2=4, and more.  </TD></TR></TABLE>
-</TD></TR></TABLE></CENTER>
+<P>
+<CENTER>
+<TABLE WIDTH="90%">
+<TR><TD ALIGN=CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=5 BGCOLOR="#EEFFFA">
+<TR><TD ALIGN=CENTER>
+David A. Wheeler has prepared an excellent 14-minute YouTube video,
+<A HREF="https://www.youtube.com/watch?v=8WH4Rd4UKGE">Metamath Proof Explorer:
+A Modern Principia Mathematica</A>, on the history of formalization and the
+motivation for Metamath, the proof of 2+2=4, and more.</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
 
+<P>
+Inspired by Whitehead and Russell's monumental <I>Principia Mathematica</I>,
+<!--(where 1+1=2 is finally proved on page 86 of Volume II), -->
+the Metamath Proof Explorer has over 23,000 completely worked out proofs,
+starting from the very foundation that mathematics is built on and eventually
+arriving at familiar mathematical facts and beyond.
+<!-- in logic and set theory. -->
+<!-- , interconnected with over a million hyperlinked cross-references. -->
+Each proof is pieced together with razor-sharp precision using a simple
+substitution rule that practically anyone (with lots of patience) can follow,
+not just mathematicians.  Every step can be drilled down deeper and deeper into
+the labyrinth until axioms of logic and set theory&mdash;the starting point for
+all of mathematics&mdash;will ultimately be found at the bottom.  You could
+spend literally days exploring the astonishing tangle of logic leading, say,
+from the seemingly mundane theorem <A HREF="#trivia">2+2=4</A> back to these
+axioms.
+</P>
 
-<P>Inspired by Whitehead and Russell's monumental <I>Principia
-Mathematica</I>, <!--(where 1+1=2 is finally proved on page 86 of Volume
-II), --> the Metamath Proof Explorer has over 23,000 completely worked
-out proofs, starting from the very foundation that mathematics is built
-on and eventually arriving at familiar mathematical facts and beyond.
-<!-- in logic and set theory. -->  <!-- , interconnected with over a million
-hyperlinked cross-references.  --> Each proof is pieced together with
-razor-sharp precision using a simple substitution rule that practically
-anyone (with lots of patience) can follow, not just mathematicians.  Every step
-can be drilled down deeper and deeper into the labyrinth until axioms of
-logic and set theory&mdash;the starting point for all of
-mathematics&mdash;will ultimately be found at the bottom.  You could
-spend literally days exploring the astonishing tangle of logic leading,
-say, from the seemingly mundane theorem <A HREF="#trivia">2+2=4</A> back
-to these axioms.
+<P>
+Essentially everything that is possible to know in mathematics can be derived
+from a handful of axioms known as <I>Zermelo-Fraenkel set theory,</I> which is
+the culmination of many years of effort to isolate the essential nature of
+mathematics and is one of the most profound achievements of mankind.
+</P>
 
-<P>Essentially everything that is possible to know in mathematics can be
-derived from a handful of axioms known as <I>Zermelo-Fraenkel set
-theory,</I> which is the culmination of many years of effort to
-isolate the essential nature of mathematics and is one of the most
-profound achievements of mankind.
+<P>
+The Metamath Proof Explorer starts with these axioms to build up its proofs.
+There may be symbols that are unfamiliar to you, but we show in detail how they
+are manipulated in the proofs, and in principle you don't have to know what
+they mean.  In fact, there is a philosophy called <I>formalism</I> which says
+that mathematics is a game of symbols with no intrinsic meaning.  With that in
+mind, Metamath lets you watch the game being played and the pieces manipulated
+according to simple and precise rules, one step at a time.
+<!-- Amazingly, the rules - with which essentially all of mathematics can be
+derived - are simpler than those involved in a game of chess! -->
+</P>
 
-<P>The Metamath Proof Explorer starts with these axioms to build up its
-proofs.  There may be symbols that are unfamiliar to you, but we show in
-detail how they are manipulated in the proofs, and in principle you
-don't have to know what they mean.  In fact, there is a philosophy
-called <I>formalism</I> which says that mathematics is a game of symbols
-with no intrinsic meaning.  With that in mind, Metamath lets you watch
-the game being played and the pieces manipulated according to simple and
-precise rules, one step at a time.  <!-- Amazingly, the rules - with which
-essentially all of mathematics can be derived - are simpler than those
-involved in a game of chess! -->
-
-<P>As humans, we observe interesting patterns in these "meaningless"
-symbol strings as they evolve from the axioms, and we attach meaning to
-them.  One result is the set of natural numbers, whose properties match
-those we observe when we count everyday objects, and their extensions to
-rational and real numbers.  Of course, numbers were discovered centuries
-before set theory, and historically they were "reversed engineered" back
-to the axioms of set theory.  The proof of <A HREF="#trivia">2 + 2 =
-4</A> shows what was involved in that reverse engineering, representing
-the work of many mathematicians from Dedekind to von Neumann.  At the
-other extreme of abstraction is the theory of infinite sets or
-transfinite cardinal numbers.  Some of the world's most brilliant
-mathematicians have given us deep insight into this mysterious and
-wondrous universe, which is sometimes called "Cantor's paradise."
-
-<!--  At the other extreme of
-abstraction is the theory of infinite sets or transfinite cardinal
-numbers, sometimes called "Cantor's paradise."  Some of the world's most
-brilliant mathematicians have given us deep insight into this
-mysterious and wondrous universe that, so far as we know, exists only in
-the mind.
--->
+<P>
+As humans, we observe interesting patterns in these "meaningless" symbol
+strings as they evolve from the axioms, and we attach meaning to them.  One
+result is the set of natural numbers, whose properties match those we observe
+when we count everyday objects, and their extensions to rational and real
+numbers.  Of course, numbers were discovered centuries before set theory, and
+historically they were "reversed engineered" back to the axioms of set theory.
+The proof of <A HREF="#trivia">2 + 2 = 4</A> shows what was involved in that
+reverse engineering, representing the work of many mathematicians from Dedekind
+to von Neumann.  At the other extreme of abstraction is the theory of infinite
+sets or transfinite cardinal numbers.  Some of the world's most brilliant
+mathematicians have given us deep insight into this mysterious and wondrous
+universe, which is sometimes called "Cantor's paradise."
+</P>
 
 <!--
-paradise."  Some of the world's most brilliant mathematicians have given
-us deep insight into this mysterious and wondrous place that that
-transcends the physical universe, giving us a glimpse into a higher
+At the other extreme of abstraction is the theory of infinite sets or
+transfinite cardinal numbers, sometimes called "Cantor's paradise."  Some of
+the world's most brilliant mathematicians have given us deep insight into this
+mysterious and wondrous universe that, so far as we know, exists only in the
+mind.
+-->
+<!--
+that transcends the physical universe, giving us a glimpse into a higher
 reality, perhaps even the mind of God.
 -->
 
-<P>Metamath's formal proofs are much more detailed than the proofs you
-see in textbooks.  They are broken down into the most explicit detail
-possible so that you can see exactly what is going on.  Each proof step
-represents a microscopic increment towards the final goal.  But each
-step is derived from previous ones with a very simple rule, and you can
-verify for yourself the correctness of any proof with very little skill.
-All you need is patience.  With no prior knowledge of advanced
-mathematics or even any mathematics at all, you can jump into the middle
-of any proof, from the most elementary to the most advanced, and
-understand immediately how the symbols were mechanically manipulated to
-go from one proof step to another, even if you don't know what the symbols
+<P>
+Metamath's formal proofs are much more detailed than the proofs you see in
+textbooks.  They are broken down into the most explicit detail possible so that
+you can see exactly what is going on.  Each proof step represents a microscopic
+increment towards the final goal.  But each step is derived from previous ones
+with a very simple rule, and you can verify for yourself the correctness of any
+proof with very little skill.  All you need is patience.  With no prior
+knowledge of advanced mathematics or even any mathematics at all, you can jump
+into the middle of any proof, from the most elementary to the most advanced,
+and understand immediately how the symbols were mechanically manipulated to go
+from one proof step to another, even if you don't know what the symbols
 themselves mean.  In the next section we show you how.
+</P>
 
-<P><HR NOSHADE SIZE=1><A NAME="proofs"></A><B><FONT COLOR="#006633">How
-Metamath Proofs Work</FONT></B>&nbsp;&nbsp;&nbsp;
+<P>
+<HR NOSHADE SIZE=1><A NAME="proofs"></A>
+<B><FONT COLOR="#006633">How Metamath Proofs Work</FONT></B>
+&nbsp;&nbsp;&nbsp;
+</P>
 
-
-<P> <CENTER><FONT COLOR="#006633"><I>A mathematical theory is not to be
-considered complete until you have made it so clear that you can explain
-it to the first man whom you meet on the street.</I><BR> &mdash;David
-Hilbert</FONT></CENTER> <P>
-
+<P>
+<CENTER>
+<FONT COLOR="#006633">
+<I>A mathematical theory is not to be considered complete until you have made
+it so clear that you can explain it to the first man whom you meet on the
+street.</I>
+<BR>
+&mdash;David Hilbert
+</FONT>
+</CENTER>
+</P>
 
 <!--
-<P> <CENTER><FONT COLOR="#006633"><I>Thus mathematics may be defined as
-the subject in which we never know what we are talking about, nor
-whether what we are saying is true.</I><BR> &mdash;Bertrand
-Russell</FONT></CENTER> <P>
+<P>
+<CENTER>
+<FONT COLOR="#006633">
+<I>Thus mathematics may be defined as the subject in which we never know what
+we are talking about, nor whether what we are saying is true.</I>
+<BR>
+&mdash;Bertrand Russell
+</FONT>
+</CENTER>
+</P>
 
-<P> <CENTER><FONT COLOR="#006633"><I>The lyf so short, the craft so long
-to lerne </I><BR> &mdash;Chaucer</FONT></CENTER> <P>
+<P>
+<CENTER>
+<FONT COLOR="#006633">
+<I>The lyf so short, the craft so long to lerne </I>
+<BR>
+&mdash;Geoffrey Chaucer
+</FONT>
+</CENTER>
+</P>
 
-<P> <CENTER><FONT COLOR="#006633"><I>The ultimate goal of mathematics is
-to eliminate any need for intelligent thought.</I><BR> &mdash;Alfred North
-Whitehead </FONT></CENTER> <P>
+<P>
+<CENTER>
+<FONT COLOR="#006633">
+<I>The ultimate goal of mathematics is to eliminate any need for intelligent
+thought.</I>
+<BR>
+&mdash;Alfred North Whitehead
+</FONT>
+</CENTER>
+</P>
 
-<P> <CENTER><FONT COLOR="#006633"><I>...mathematical proofs, like
-diamonds, are hard as well as clear, and will be touched with nothing
-but strict reasoning.  </I><BR> &mdash;John Locke, <I>Second Reply to the
-Bishop of Worcester</I></FONT></CENTER> <P>
+<P>
+<CENTER>
+<FONT COLOR="#006633">
+<I>...mathematical proofs, like diamonds, are hard as well as clear, and will
+be touched with nothing but strict reasoning.</I>
+<BR>
+&mdash;John Locke, <I>Second Reply to the Bishop of Worcester</I>
+</FONT>
+</CENTER>
+</P>
 
+<P>
 <BLOCKQUOTE>
-<FONT COLOR="#006633" SIZE=-1> He was 40 yeares old before he
-looked on Geometry; which happened accidentally.  Being in a Gentleman's
-Library, Euclid's Elements lay open, and 'twas the 47 <I>El. libri</I>
-I. He read the Proposition.  <I>By G__,</I> sayd he (he would now and
-then sweare an emphaticall Oath by way of emphasis) <I>this is
-impossible!</I> So he reads the Demonstration of it, which referred him
-back to such a Proposition; which Proposition he read.  That referred
-him back to another, which he also read.  <I>Et sic deinceps</I> that at
-the last he was demonstratively convinced of that trueth.  This made him
-in love with Geometry.</FONT>
+<FONT COLOR="#006633" SIZE=-1>
+He was 40 yeares old before he looked on Geometry; which happened accidentally.
+Being in a Gentleman's Library, Euclid's Elements lay open, and 'twas the 47
+<I>El. libri</I> I. He read the Proposition.  <I>By G__,</I> sayd he (he would
+now and then sweare an emphaticall Oath by way of emphasis) <I>this is
+impossible!</I> So he reads the Demonstration of it, which referred him back to
+such a Proposition; which Proposition he read.  That referred him back to
+another, which he also read.  <I>Et sic deinceps</I> that at the last he was
+demonstratively convinced of that trueth.  This made him in love with Geometry.
+</FONT>
 
-<CENTER><FONT COLOR="#006633" SIZE=-1>&mdash;John Aubrey, "A Brief Life of
-Thomas Hobbes, 1588-1679" in
-<I>Brief Lives</I> (c. 1694) </FONT></CENTER>
+<CENTER>
+<FONT COLOR="#006633" SIZE=-1>&mdash;John Aubrey, "A Brief Life of
+Thomas Hobbes, 1588-1679" in <I>Brief Lives</I> (c. 1694)
+</FONT>
+</CENTER>
 </BLOCKQUOTE>
 -->
 
-<P><CENTER><TABLE WIDTH="90%"><TR><TD ALIGN=CENTER> <TABLE BORDER=0
-CELLSPACING=0 CELLPADDING=5 BGCOLOR="#EEFFFA"><TR><TD ALIGN=CENTER><IMG
-SRC="_nmegill.gif" WIDTH=16 HEIGHT=19
+<P>
+<CENTER>
+<TABLE WIDTH="90%">
+<TR><TD ALIGN=CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=5 BGCOLOR="#EEFFFA">
+<TR><TD ALIGN=CENTER><IMG SRC="_nmegill.gif" WIDTH=16 HEIGHT=19
 ALT="The Floating Head of Wisdom says: "
 TITLE="The Floating Head of Wisdom says: ">&nbsp;&nbsp;&nbsp;
-<FONT COLOR="#F7941D"> <B>Read this section
-carefully to learn how to follow a Metamath proof.</B>
-</FONT></TD></TR></TABLE></TD></TR></TABLE></CENTER>
-
+<FONT COLOR="#F7941D">
+<B>Read this section carefully to learn how to follow a Metamath proof.</B>
+</FONT>
+</TD></TR></TABLE>
+</TD></TR></TABLE>
+</CENTER>
+</P>
 
 <!---
 <P><FONT SIZE="-1">[If you are a math novice (or not) and have trouble
@@ -912,57 +964,65 @@ or
 </UL>
 
 <P>
-However, theorem <tt>mp</tt> in database <tt>demo0.mm</tt>
-actually has 4 arguments
-(which you can see if you ask metamath.exe to show them).
-The first two are the substitutions, which are usually suppressed.
-That is, you first have to prove ` wff P ` , then ` wff Q ` ,
-then ` |- P ` , then
-` |- ( P -> Q  ) ` , and then theorem mp applies to derive ` |- Q ` .
-If you use metamath.exe, "show proof th1" will list only 5 steps, but with
-suspicious gaps in the numbering; "show proof th1 /full" will show
-all the substitution steps (which in fact make up the majority of
-the actual proof on disk).
+However, theorem <tt>mp</tt> in database <tt>demo0.mm</tt> actually has four
+arguments (which you can see if you ask metamath.exe to show them).  The first
+two are the substitutions, which are usually suppressed.  That is, you first
+have to prove ` wff P ` , then ` wff Q ` , then ` |- P ` , then
+` |- ( P -> Q  ) ` , and then theorem mp applies to derive ` |- Q ` .  If you
+use metamath.exe, "show proof th1" will list only 5 steps, but with suspicious
+gaps in the numbering; "show proof th1 /full" will show all the substitution
+steps (which in fact make up the majority of the actual proof on disk).
+</P>
 
-<P>A proof of ` wff P ` is equivalent to a proof that
-` P ` is a well formed formula, and it is this that prevents invalid
-substitutions like ` Q ` := ` t = t ) ` ; you will not be able to prove
-` wff t = t ) ` so that proof will not work. But in any case the
-Metamath verifier isn't being asked to come up with the substitution
-(although most metamath proof assistants will, using unification), so no
-matching algorithm is necessary, only a substitution and an equality
-check.
+<P>
+A proof of ` wff P ` is equivalent to a proof that ` P ` is a well-formed
+formula, and it is this that prevents invalid substitutions like
+` Q ` := ` t = t ) ` ; you will not be able to prove ` wff t = t ) ` so that
+proof will not work. But in any case the Metamath verifier isn't being asked to
+come up with the substitution (although most metamath proof assistants will,
+using unification), so no matching algorithm is necessary, only a substitution
+and an equality check.
+</P>
 
-<P>In the case of axioms and definitions, we <I>do</I> show their
-detailed syntax breakdown, because there is free space on those web
-pages not used for anything else.  These can help you become familiar
-with the syntax.  For example, look at the <tt>set.mm</tt>
-(Metamath Proof Explorer) definition of the number 2,
-~ df-2 .  You can see, at step 4, the demonstration
-that ` ( 1 + 1 ) ` is a legal expression that qualifies as a class, i.e.
-that can be substituted for a purple class variable.
+<P>
+In the case of axioms and definitions, we <I>do</I> show their detailed syntax
+breakdown, because there is free space on those web pages not used for anything
+else.  These can help you become familiar with the syntax.  For example, look
+at the <tt>set.mm</tt> (Metamath Proof Explorer) definition of the number 2,
+~ df-2 .  You can see, at Step 4, the demonstration that ` ( 1 + 1 ) ` is a
+legal expression that qualifies as a class, i.e. that can be substituted for a
+purple class variable.
+</P>
 
-<P> <B><FONT COLOR="#006633">Distinct variable
-restrictions</FONT></B>&nbsp;&nbsp;&nbsp; Our final requirement for
-substitutions is described in <A HREF="#distinct">Appendix 3:  Distinct
-Variables</A> below.  These restrictions have no effect on how you
-figure out the the substitutions that were made in a proof step.  All
-they do is prohibit certain substitutions that would otherwise be legal
-based what we have described so far.  Eventually you should learn how
-they work in order to complete your understanding of the mechanics of
-logic, but for now, you can trust that the Metamath proof verifier has
-ensured that they have been met.
+<P>
+<B><FONT COLOR="#006633">Distinct variable restrictions</FONT></B>
+&nbsp;&nbsp;&nbsp;
+Our final requirement for substitutions is described in
+<A HREF="#distinct">Appendix 3:  Distinct Variables</A> below.  These
+restrictions have no effect on how you figure out the the substitutions that
+were made in a proof step.  All they do is prohibit certain substitutions that
+would otherwise be legal based what we have described so far.  Eventually you
+should learn how they work in order to complete your understanding of the
+mechanics of logic, but for now, you can trust that the Metamath proof verifier
+has ensured that they have been met.
+</P>
 
-<P> <B><FONT COLOR="#006633">Class
-variables</FONT></B>&nbsp;&nbsp;&nbsp; Our example of 2+2=4, with its
-purple class variables, depends on a definitional mechanism that
-extends the wff and setvar variables used in the axioms to greatly simplify
-our presentation.  After the axiom section below, we describe the <A
-HREF="#class">theory of classes</A>, which you should read to understand
-how these tie into the primitive concepts used by the axioms.
+<P>
+<B><FONT COLOR="#006633">Class variables</FONT></B>
+&nbsp;&nbsp;&nbsp;
+Our example of 2+2=4, with its purple class variables, depends on a
+definitional mechanism that extends the wff and setvar variables used in the
+axioms to greatly simplify our presentation.  After the axiom section below, we
+describe the <A HREF="#class">theory of classes</A>, which you should read to
+understand how these tie into the primitive concepts used by the axioms.
+</P>
 
-<P> <HR NOSHADE SIZE=1><A NAME="axioms"></A><B><FONT COLOR="#006633">The
-Axioms </FONT></B>&nbsp;&nbsp;&nbsp;
+<P>
+<HR NOSHADE SIZE=1>
+<A NAME="axioms"></A>
+<B><FONT COLOR="#006633">The Axioms</FONT></B>
+&nbsp;&nbsp;&nbsp;
+</P>
 
 <!--
 <P><CENTER><FONT COLOR="#006633"><I>Everything should be made as simple
@@ -970,29 +1030,38 @@ as possible, but not simpler.</I><BR> &mdash;attributed to Albert
 Einstein</FONT></CENTER>
 -->
 
-<P><CENTER><FONT COLOR="#006633"><I>Perfection is when there is no longer
-anything more to take away.</I><BR> &mdash;Antoine de
-     Saint-Exupery</FONT></CENTER>
+<P>
+<CENTER>
+<FONT COLOR="#006633">
+<I>Perfection is when there is no longer anything more to take away.</I>
+<BR>
+&mdash;Antoine de Saint-Exupery
+</FONT>
+</CENTER>
+</P>
 
-<P><FONT SIZE="-1">[The material in this section is intended to be
-self-contained.  However, you may also find it helpful to review <A
-HREF="../index.html#start">these suggestions</A>.
-<!-- and take a quick look
-at this <A HREF="../mmsolitaire/mms.html#q5">summary of symbols</A>. -->
-  A
-more extensive but still informal overview is given in Chapter 3,
-"Abstract Mathematics Revealed," of the <A
-HREF="../downloads/metamath.pdf"><I>Metamath</I> book</A> (1.3 MB PDF
-file; click on the fourth bookmark in your PDF reader).]</FONT><P>
+<P>
+<FONT SIZE="-1">
+[The material in this section is intended to be self-contained.  However, you
+may also find it helpful to review <A HREF="../index.html#start">these
+suggestions</A>.
+<!-- and take a quick look at this
+<A HREF="../mmsolitaire/mms.html#q5">summary of symbols</A>. -->
+A more extensive but still informal overview is given in Chapter 3, "Abstract
+Mathematics Revealed," of the <A HREF="../downloads/metamath.pdf">
+<I>Metamath</I> book</A> (1.3 MB PDF file; click on the fourth bookmark in your
+PDF reader).]
+</FONT>
+</P>
 
-An <B>axiom</B> is a fundamental assumption that provides a starting
-point for reasoning.
-The axioms for (essentially) all of mathematics can be conveniently
+<P>
+An <B>axiom</B> is a fundamental assumption that provides a starting point for
+reasoning.  The axioms for (essentially) all of mathematics can be conveniently
 divided into three groups:  <B>propositional calculus,</B> <B>predicate
-calculus,</B> and <B>set theory</B>.  Each axiom is a string of
-mathematical symbols of two kinds:  <B>constants</B>, also called
-<B>connectives</B>, which we show in black; and <B>variables</B>, which
-we show in color.  The constants that occur in the axioms are
+calculus,</B> and <B>set theory</B>.  Each axiom is a string of mathematical
+symbols of two kinds:  <B>constants</B>, also called <B>connectives</B>, which
+we show in black; and <B>variables</B>, which we show in color.  The constants
+that occur in the axioms are
 
 ` ( ` ,
 ` ) ` ,
@@ -1002,44 +1071,49 @@ we show in color.  The constants that occur in the axioms are
 ` e. ` , and
 ` A. `
 
-(left parenthesis, right parenthesis, implies, not, equals, is contained
-in, for all).
+(left parenthesis, right parenthesis, implies, not, equals, is contained in,
+for all).
+</P>
 
-<P>Variables are placeholders that can be substituted with other
-expressions (strings of symbols).  There are two kinds of variables in
-the axioms, <B>setvar variables</B> (lowercase italic letters in
-<FONT COLOR="#FF0000">red</FONT>) and
-<B>wff ("well-formed formula") variables</B> (lowercase Greek letters
-in <FONT
-COLOR="#0000FF">blue</FONT>). A wff variable can be
-substituted with any expression qualifying as a wff (see below).
-A setvar variable can be substituted only with another setvar variable
-(in other words with an expression of length one, whose only symbol is a
-setvar variable) since there are no rules that let us construct more
-complex expressions for them.  We call these "setvar variables" rather
-than just "set variables" to emphasize this restriction.  The reason for
-this restriction is that they often serve as bound or dummy variables in
-expressions, i.e. the first argument of the ` A. ` quantifier connective
-introduced below.  It is the same reason that you can't substitute say 2
-for x in "the integral of x dx" to result in "the integral of 2 d2",
-which would be nonsense.
+<P>
+Variables are placeholders that can be substituted with other expressions
+(strings of symbols).  There are two kinds of variables in the axioms,
+<B>setvar variables</B> (lowercase italic letters in
+<FONT COLOR="#FF0000">red</FONT>) and <B>wff ("well-formed formula")
+variables</B> (lowercase Greek letters in
+<FONT COLOR="#0000FF">blue</FONT>).  A wff variable can be substituted with any
+expression qualifying as a wff (see below).  A setvar variable can be
+substituted only with another setvar variable (in other words with an
+expression of length one, whose only symbol is a setvar variable) since there
+are no rules that let us construct more complex expressions for them.  We call
+these "setvar variables" rather than just "set variables" to emphasize this
+restriction.  The reason for this restriction is that they often serve as bound
+or dummy variables in expressions, i.e. the first argument of the ` A. `
+quantifier connective introduced below.  It is the same reason that you cannot
+substitute say 2 for x in "the integral of x dx" to result in "the integral of
+2 d2", which would be nonsense.
+</P>
 
+<P>
+<FONT SIZE="-1">
+[In later proofs you will see a third kind of variable, called a <B>class
+variable</B>, which is shown in <FONT COLOR="#CC33CC">purple</FONT> (usually as
+uppercase italic letters) and is a kind of generalization of the setvar
+variable that can be substituted with expressions such as 2 or ` ( _pi + 3 ) `.
+The <A HREF="#class">theory of classes</A> will be discussed in the next
+section.]
+</FONT>
+</P>
 
-<P><FONT SIZE="-1">[In later proofs you will see a third kind of variable,
-called a <B>class variable</B>, which is shown in <FONT
-COLOR="#CC33CC">purple</FONT> (usually as uppercase italic letters) and
-is a kind of generalization of the setvar variable that can be
-substituted with expressions such as 2 or ` ( _pi + 3 ) `. The <A
-HREF="#class">theory of classes</A> will be discussed in the next
-section.]</FONT><P>
+<P>
+Following the tradition in the literature, we use italic Greek letters for wff
+variables and lower-case italic letters for setvar variables.
+</P>
 
-Following the tradition in the literature, we use italic Greek letters for
-wff variables and lower-case italic letters for setvar variables.
-
-<P><FONT SIZE="-1">[If you
-use a monochrome display or printout, or are colorblind, the red variables are
-lowercase italic
-letters, the purple ones uppercase italic, and the blue ones
+<P>
+<FONT SIZE="-1">
+[If you use a monochrome display or printout, or are colorblind, the red
+variables are lowercase italic letters, the purple ones uppercase italic, and the blue ones
 italic Greek.   Sometimes we use mathematical symbols (such as +)
 as class variables, and in that case they are distinguished by both the
 purple color and a dotted underline.  In all cases,
@@ -1116,15 +1190,18 @@ and
 ` A. x ph `
 are also wffs.
 
-<P>Note that a wff variable can be viewed as a wff in its own right as
-well as a placeholder for which other wffs can be substituted.
+<P>
+Note that a wff variable can be viewed as a wff in its own right as well as a
+placeholder for which other wffs can be substituted.
+</P>
 
-<P>The axioms below are examples of wffs.  Each page describing an
-axiom, for example ~ ax-12 , presents the axiom's
-construction in a syntax breakdown chart, showing that it follows these
-rules and is therefore a wff.  You may want to look at a few of these
-to make sure you understand how wffs are constructed and how to
-deconstruct, or parse, them into their components.
+<P>
+The axioms below are examples of wffs.  Each page describing an axiom, for
+example ~ ax-12 , presents the axiom's construction in a syntax breakdown
+chart, showing that it follows these rules and is therefore a wff.  You may
+want to look at a few of these to make sure you understand how wffs are
+constructed and how to deconstruct, or parse, them into their components.
+</P>
 
 <!--
 <P>Wffs constructed this way are, in principle, able to express all of
@@ -1134,67 +1211,52 @@ mathematics from the axioms we often introduce new symbols to abbreviate
 into the form we just described.
 -->
 
+<P>
+<I>Wffs are either true or false,</I> depending on what is assigned to the
+variables they contain.  For example, the wff ` x = y ` is true if ` x ` and
+` y ` stand for the same set and false otherwise&mdash;there is no in-between.
+</P>
 
-<P><I>Wffs are either true or false,</I> depending on what is assigned
-to the variables they contain.
-For example, the wff
-` x = y ` is true if
-` x `
-and
-` y ` stand for
-the same set and false otherwise&mdash;there is no in-between.
-
-<P>An <B>axiom</B> (example: ~ ax-1 ) is a wff
-that we postulate to be true no matter what (within the constraints of
-the syntax rules) we substitute for its variables.  An <B>inference
-rule</B> (example: ~ ax-mp ) consists of one or
+<P>
+An <B>axiom</B> (example: ~ ax-1 ) is a wff that we postulate to be true no
+matter what (within the constraints of the syntax rules) we substitute for its
+variables.  An <B>inference rule</B> (example: ~ ax-mp ) consists of one or
 more wffs called <B>hypotheses</B>, together with a wff called the
 <B>conclusion</B> (which on our web pages with proofs we also call its
-<B>assertion</B>) that we postulate to be true provided the hypotheses
-are true.  A <B>proof</B> is a sequence of substitution instances of
-axioms and inference rules, where the hypotheses of the inference rules
-match previous steps in the sequence.  The last step in a proof is a
-<B>theorem</B> (example: ~ idALT ).  For brevity, a
-proof may also refer to earlier theorems (example: ~ id ), but in principle
-it can be expanded into references to only the initial axioms and rules.
+<B>assertion</B>) that we postulate to be true provided the hypotheses are
+true.  A <B>proof</B> is a sequence of substitution instances of axioms and
+inference rules, where the hypotheses of the inference rules match previous
+steps in the sequence.  The last step in a proof is a <B>theorem</B> (example:
+~ idALT ).  For brevity, a proof may also refer to earlier theorems (example:
+~ id ), but in principle it can be expanded into references to only the initial
+axioms and rules.
+</P>
 
-<P>We also use the word "theorem" informally to denote the result of a
-proof that also allows references to local hypotheses and thus has the
-form of an inference rule (example: ~ a1i );
-however, strictly speaking, such a theorem should be called a <B>derived
-inference rule</B> or <B>deduction</B>.  In a derived inference rule, a
-proof is a sequence steps each of which is a substitution instance of an
-axiom, a hypothesis, or a substitution instance of an inference rule
-applied to previous steps.  (Note that a proof with nothing but
-references to hypotheses still qualifies as a proof, even though neither
-axioms nor inference rules are involved.  For example, the unusual
-derived inference rule ~ dummylink is proved
-before we even introduce the first axiom!)
+<P>
+We also use the word "theorem" informally to denote the result of a proof that
+also allows references to local hypotheses and thus has the form of an
+inference rule (example: ~ a1i ); however, strictly speaking, such a theorem
+should be called a <B>derived inference rule</B> or <B>deduction</B>.  In a
+derived inference rule, a proof is a sequence steps each of which is a
+substitution instance of an axiom, a hypothesis, or a substitution instance of
+an inference rule applied to previous steps.  (Note that a proof with nothing
+but references to hypotheses still qualifies as a proof, even though neither
+axioms nor inference rules are involved.  For example, the unusual derived
+inference rule ~ a1ii is proved before we even introduce the first axiom!)
+</P>
 
-<P><A NAME="scaxioms"></A><B><FONT COLOR="#006633">Propositional
-calculus</FONT></B> deals with general truths about wffs regardless of
-how they are constructed.   The simplest propositional
-truth is
-"` ( ph -> `
-` ph ) `",
-which can be read "if something
-is true, then it is true"&mdash;rather trivial and obvious, but nonetheless
-it must be proved from the axioms (see theorem ~ id ).
-In an application of this truth, we could
-replace
-` ph `
-with a more specific wff to give us, for example,
-"` ( x `
-` = `
-` y `
-` -> `
-` x `
-` = `
-` y ) `".  (You might think that
-~ id
-would be a useless bit of trivia, but in fact it is frequently used.
-For example, look at its use in the proof of the law of assertion
-~ pm2.27 .)
+<P>
+<A NAME="scaxioms"></A><B><FONT COLOR="#006633">Propositional
+calculus</FONT></B> deals with general truths about wffs regardless of how they
+are constructed.  The simplest propositional truth is "` ( ph -> ` ` ph ) `",
+which can be read "if something is true, then it is true"&mdash;rather trivial
+and obvious, but nonetheless it must be proved from the axioms (see theorem
+~ id ).  In an application of this truth, we could replace ` ph ` with a more
+specific wff to give us, for example, "` ( x ` ` = ` ` y ` ` -> ` ` x ` ` = `
+` y ) `".  (You might think that ~ id would be a useless bit of trivia, but in
+fact it is frequently used.  For example, look at its use in the proof of the
+law of assertion ~ pm2.27 .)
+</P>
 
 <!--
 <P>In a formula, all occurrences of a given variable must be
@@ -1207,15 +1269,17 @@ conclude "` ( ph -> x = y ) `" from
 "` ( ph -> ph ) `".
 -->
 
+<P>
+Our system of propositional calculus consists of three axioms and the modus
+ponens inference rule.  It is attributed to Jan &#321;ukasiewicz (pronounced
+<I>woo-kah-SHAY-vitch</I>) and was popularized by Alonzo Church, who called it
+system P<SUB>2</SUB>.  <I>(Thanks to Ted Ulrich for this information.)</I>
+</P>
 
-<P>Our system of propositional calculus consists of three axioms and the
-modus-ponens inference rule.  It is attributed to Jan &#321;ukasiewicz
-(pronounced <I>woo-kah-SHAY-vitch</I>) and was popularized by Alonzo
-Church, who called it system P<SUB>2</SUB>.  <I>(Thanks to Ted Ulrich
-for this information.)</I>
-
-<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
-SUMMARY="Axioms of propositional calculus">
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA" SUMMARY="Axioms of propositional
+calculus">
 <CAPTION><B>Axioms of propositional calculus</B></CAPTION>
 
 <TR ALIGN=LEFT><TD> <A HREF="ax-1.html"> Axiom <I>Simp</I></A></TD> <TD
@@ -1237,53 +1301,53 @@ COLOR="#006633"><B>ax-3</B></FONT></TD>
 <TD>` |- ph `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;` |- ( ph `
 ` -> ps ) `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp; ` |- ps `
 </TD></TR>
+</TABLE>
+</CENTER>
+</P>
 
-</TABLE></CENTER>
-
-<P>The turnstile ` |- `
-is a symbol (introduced by Frege in 1879) used in formal
-logic to indicate that the wff that follows is provable (and is
-traditionally used even for an axiom, which is "provable" in one step,
-itself); it can be ignored for informal reading.  (Technically, the
-Metamath program needs an initial token to disambiguate the kind of
-expression that follows.  I figured, why not make it the turnstile that
-logic books use?  In the Quantum Logic Explorer, on the other hand, I
-mapped it to a blank image because my physics colleague didn't like it.)
-The symbols ` & `
-and ` => ` are
-used informally in the table above to indicate the relationship between
-hypotheses and conclusion; they are not part of the formal language.
+<P>
+The turnstile ` |- ` is a symbol (introduced by Frege in 1879) used in formal
+logic to indicate that the wff that follows is provable (and is traditionally
+used even for an axiom, which is "provable" in one step, itself); it can be
+ignored for informal reading.  (Technically, the Metamath program needs an
+initial token to disambiguate the kind of expression that follows.  I figured,
+why not make it the turnstile that logic books use?  In the Quantum Logic
+Explorer, on the other hand, I mapped it to a blank image because my physics
+colleague didn't like it.)  The symbols ` & ` and ` => ` are used informally in
+the table above to indicate the relationship between hypotheses and conclusion;
+they are not part of the formal language.
+</P>
 
 <P><A NAME="pcaxioms"></A><B><FONT COLOR="#006633">Predicate
-calculus</FONT></B> introduces three new symbols, ` = ` ("equals"), ` e. `
-("is a member of"), and ` A. ` ("for all").  The first two are called
-"predicates."  A predicate specifies a true or false relationship
-between its two arguments.  As an example, ` x = x ` always evaluates to true
-regardless of what ` x ` is, as
-the theorem ~ equid demonstrates.  The "for all"
-symbol, also called the "universal quantifier," ranges over or "scans"
-all possible values of its first (setvar variable) argument, applying them
-to the second (wff expression) argument,
-and returns true if and only if the second
-argument is true for every value of the first.  The wff ` A. x ph ` is
-read "for all x, it is the case that phi is true."  The
-axioms of predicate calculus express the logical properties of these new
-symbols that are universally true, independent from any theory (like set
-theory) making use of them.  (What we call "setvar variables" are more
-generally called "individual variables" in predicate calculus without
+calculus</FONT></B> introduces three new symbols, ` = ` ("equals"), ` e. ` ("is
+a member of"), and ` A. ` ("for all").  The first two are called "predicates."
+A predicate specifies a true or false relationship between its two arguments.
+As an example, ` x = x ` always evaluates to true regardless of what ` x ` is,
+as the theorem ~ equid demonstrates.  The "for all" symbol, also called the
+"universal quantifier," ranges over or "scans" all possible values of its first
+(setvar variable) argument, applying them to the second (wff expression)
+argument, and returns true if and only if the second argument is true for every
+value of the first.  The wff ` A. x ph ` is read "for all x, it is the case
+that phi is true."  The axioms of predicate calculus express the logical
+properties of these new symbols that are universally true, independent from any
+theory (like set theory) making use of them.  (What we call "setvar variables"
+are more generally called "individual variables" in predicate calculus without
 set theory.)
+</P>
 
-<P> Our axiom system is closely related to a system of Tarski (see the <A
-HREF="#axiomnote">note on the axioms</A> below).  Our system is exactly
-equivalent to the <A HREF="#traditional">traditional</A> axiom system in
-most logic textbooks but has the advantage of being easy to manipulate
-with a computer program.  Each of our axioms corresponds to an <A
-HREF="#schemes">axiom scheme</A> of the traditional system.
-
+<P>
+Our axiom system is closely related to a system of Tarski (see the
+<A HREF="#axiomnote">note on the axioms</A> below).  Our system is exactly
+equivalent to the <A HREF="#traditional">traditional</A> axiom system in most
+logic textbooks but has the advantage of being easy to manipulate with a
+computer program.  Each of our axioms corresponds to an
+<A HREF="#schemes">axiom scheme</A> of the traditional system.
+</P>
 
 <CENTER>
-<TABLE><TR><TD>
-
+<TABLE>
+<TR>
+<TD>
 <TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA" WIDTH="100%"
 SUMMARY="Axioms of predicate calculus with equality">
 <CAPTION><B>Axioms of predicate calculus with equality - Tarski's S2</B>
@@ -1328,7 +1392,6 @@ SUMMARY="Axioms of predicate calculus with equality">
 <TD>
 ` |- ( x = y -> ( z e. x -> z e. y ) ) ` </TD></TR>
 
-
 </TABLE>
 
 <P>
@@ -1363,25 +1426,31 @@ SUMMARY="Axioms of predicate calculus with equality">
 </TD></TR>
 
 </TABLE>
-
-</TD></TR></TABLE>
+</TD>
+</TR>
+</TABLE>
 </CENTER>
 
-<P>Axiom ~ ax-5 has a restriction on
-what substitutions we are allowed to make into its variables.  This
-restriction is inherited by theorems that use this axiom,
-according to the substitutions made in their proofs, and you will often
-see <A HREF="#distinct">distinct variable</A> conditions associated with
-such theorems.
+<P>
+Axiom ~ ax-5 has a restriction on what substitutions we are allowed to make
+into its variables.  This restriction is inherited by theorems that use this
+axiom, according to the substitutions made in their proofs, and you will often
+see <A HREF="#distinct">distinct variable</A> conditions associated with such
+theorems.
+</P>
 
-<P>The above table is divided into two groups, those from a system
-devised by logician Alfred Tarski and auxiliary technical axioms needed
-to endow the system with a property called "metalogical completeness."
-This is explained <A HREF="#compare">below</A>.
+<P>
+The above table is divided into two groups, those from a system devised by
+logician Alfred Tarski and auxiliary technical axioms needed to endow the
+system with a property called "metalogical completeness."  This is explained
+<A HREF="#compare">below</A>.
+</P>
 
-<P>In December 2018, the axioms were renumbered and may not correspond
-to the numbers in older papers, slide presentations, and websites.  See
+<P>
+In December 2018, the axioms were renumbered and may not correspond to the
+numbers in older papers, slide presentations, and websites.  See
 <A HREF="#oldaxioms">Appendix 8</A> for details.
+</P>
 
 <!--
 <P>(This ends the section on predicate calculus.)
@@ -1404,7 +1473,6 @@ redundant "<A HREF="mmzfcnd.html#distinctors">distinctors</A>" that will
 accumulate as antecedents of theorems.  Aside from this nuisance, we
 would still have a complete system of logic, although it wouldn't be
 a very practical one since its proofs tend be very long.
-
 -->
 
 <!--
@@ -1434,93 +1502,64 @@ human knowledge, to infinite sets of integers and real numbers up
 through the largest uncountable infinities.  Think about it.
 -->
 
-<P><B><FONT COLOR="#006633">Some definitions</FONT></B> will simplify
-our presentation of the set theory axioms, although in principle they
-could be eliminated.  Specifically,
-
+<P>
+<B><FONT COLOR="#006633">Some definitions</FONT></B> will simplify our
+presentation of the set theory axioms, although in principle they could be
+eliminated.  Specifically,
 <UL>
+<LI>` ( ph /\ ps ) ` is an abbreviation for ` -. ( ph -> -. ps ) `</LI>
 <LI>
-
-` ( ph /\ ps ) `
-
-is an abbreviation for
-
-` -. ( ph -> -. ps ) `
-
+` ( ph <-> ps ) ` is an abbreviation for ` ( ( ph -> ps ) /\ ( ps -> ph ) ) `
 </LI>
-<LI>
-
-` ( ph <-> ps ) `
-
-is an abbreviation for
-
-` ( ( ph -> ps ) /\ ( ps -> ph ) ) `
-
-</LI>
-<LI>
-
-` E. x ph `
-
-is an abbreviation for
-
-` -. A. x ` ` -. ph `
-
-</LI>
+<LI>` E. x ph ` is an abbreviation for ` -. A. x ` ` -. ph `</LI>
 </UL>
-
-
-In our database, these are introduced (in a different order) by the
-statements
-~ df-bi (biconditional),
-~ df-an (logical AND), and
-~ df-ex (existential quantifier).
-To understand how definitions are introduced and
-justified in Metamath, see the <A HREF="#definitions">note on
-definitions</A> below.  But for our purposes, you can just <I>assume
-that</I> df-bi, df-an, <I>and</I> df-ex <I>are additional axioms</I> (which
-they are in some axiomatizations
-of logic) so that you don't have to be concerned with their metalogical
-justification.  Under this assumption, our primitive or basic connectives are
-extended with ` <-> ` , ` /\ ` , and ` E. ` , and our wff construction rules
-are extended with ~ wb , ~ wa , and ~ wex .  Alternately, you can rewrite the
-set theory axioms below with these three definitions eliminated.
-
-
-<P><A NAME="staxioms"></A><B><FONT COLOR="#006633">Set theory</FONT></B>
-uses the formalism of propositional and predicate calculus to assert
-properties of arbitrary mathematical objects called "sets."  A set can
-be an element of another set, and this relationship is indicated by the
-` e. ` symbol.
-Starting with the simplest mathematical object, called the empty set,
-set theory builds up more and more complex structures whose existence
-follows from the axioms, eventually resulting in extremely complicated
-sets that we identify with the real numbers and other familiar
-mathematical objects.  These axioms were developed in response to <A
-HREF="ru.html">Russell's Paradox</A>, a discovery that revolutionized
-the foundations of mathematics and logic.
-
-<P>Except for Extensionality, the axioms basically say,
-"given an arbitrary set ` x `
-(and, in the cases of Replacement and Regularity, provided
-that an antecedent is satisfied), there exists another set ` y ` based on or
-constructed from it, with the stated properties."  (The axiom of
-Extensionality can also be restated this way as shown by ~ axext2 .)
-The individual axiom links provide more
-detailed descriptions.  We derive the redundant ZF axioms of
-<A HREF="axsep.html">Separation</A>,
-<A HREF="axnul.html">Null Set</A>, and
-<A HREF="axpr.html">Pairing</A> from the others as theorems.
-
-<P><A NAME="zfcaxioms"></A> In the ZFC axioms that follow, <I>all setvar
-variables are assumed to be</I> <A HREF="#distinct">distinct</A>.  If
-you click on their links you will see the explicit distinct variable
-conditions.  (There is also an <A HREF="mmzfcnd.html">unusual
-formalization</A> of these axioms that does not require that their
-variables be distinct.)  There are no restrictions on the variables that
-may occur in wff ` ph ` below.
+In our database, these are introduced (in a different order) by the statements
+~ df-bi (biconditional), ~ df-an (logical AND), and ~ df-ex (existential
+quantifier).  To understand how definitions are introduced and justified in
+Metamath, see the <A HREF="#definitions">note on definitions</A> below.  But
+for our purposes, you can just <I>assume that</I> ~ df-bi , ~ df-an ,
+<I>and</I> ~df-ex <I>are additional axioms</I> (which they are in some
+axiomatizations of logic) so that you don't have to be concerned with their
+metalogical justification.  Under this assumption, our primitive or basic
+connectives are extended with ` <-> ` , ` /\ ` , and ` E. ` , and our wff
+construction rules are extended with ~ wb , ~ wa , and ~ wex .  Alternately,
+you can rewrite the set theory axioms below with these three definitions
+eliminated.
+</P>
 
 <P>
+<A NAME="staxioms"></A><B><FONT COLOR="#006633">Set theory</FONT></B> uses the
+formalism of propositional and predicate calculus to assert properties of
+arbitrary mathematical objects called "sets."  A set can be an element of
+another set, and this relationship is indicated by the ` e. ` symbol.  Starting
+with the simplest mathematical object, called the empty set, set theory builds
+up more and more complex structures whose existence follows from the axioms,
+eventually resulting in extremely complicated sets that we identify with the
+real numbers and other familiar mathematical objects.  These axioms were
+developed in response to <A HREF="ru.html">Russell's Paradox</A>, a discovery
+that revolutionized the foundations of mathematics and logic.
+</P>
 
+<P>
+Except for Extensionality, the axioms basically say, "given an arbitrary set
+` x ` (and, in the cases of Replacement and Regularity, provided that an
+antecedent is satisfied), there exists another set ` y ` based on or
+constructed from it, with the stated properties."  (The axiom of Extensionality
+can also be restated this way as shown by ~ axext2 .)  The individual axiom
+links provide more detailed descriptions.  We derive the redundant ZF axioms of
+<A HREF="axsep.html">Separation</A>, <A HREF="axnul.html">Null Set</A>, and
+<A HREF="axpr.html">Pairing</A> from the others as theorems.
+</P>
+
+<P><A NAME="zfcaxioms"></A> In the ZFC axioms that follow, <I>all setvar
+variables are assumed to be</I> <A HREF="#distinct">distinct</A>.  If you click
+on their links you will see the explicit distinct variable conditions.  (There
+is also an <A HREF="mmzfcnd.html">unusual formalization</A> of these axioms
+that does not require that their variables be distinct.)  There are no
+restrictions on the variables that may occur in wff ` ph ` below.
+</P>
+
+<P>
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Zermelo-Fraenkel Set Theory with Choice (ZFC)">
 <CAPTION><B>Zermelo-Fraenkel Set Theory with Choice (ZFC)</B></CAPTION>
@@ -1567,10 +1606,10 @@ SUMMARY="Zermelo-Fraenkel Set Theory with Choice (ZFC)">
 <TD>
 ` |- E. y A. z A. w ( ( z e. w /\ w e. x ) -> E. v A. u ( E. t ( ( u e. w /\ `
 ` w e. t ) /\ ( u e. t /\ t e. y ) ) <-> u = v ) ) `
-</TD></TR>
-
-</TABLE></CENTER>
-
+</TD>
+</TR>
+</TABLE>
+</CENTER>
 
 <!--
 <P>There you have it, the axioms for (essentially) all of mathematics!
@@ -1580,69 +1619,73 @@ and that ever will be proved, from the most mundane to the most
 profound.
 -->
 
-<P>The ZFC axioms have several equivalent formalizations, and we
-generally selected ones that are the shortest to state in terms of set
-theory primitives.  Our ~ ax-inf and ~ ax-ac are slighly unconventional in
-order to make them shorter.  We also provide ~ ax-inf2 and ~ ax-ac2 for
-people who want to work with equivalents to the conventional versions.
-Specifically, ~ ax-reg is needed to derive ~ ax-inf2 from ~ ax-inf
-and ~ ax-ac from ~ ax-ac2 .  The reverse derivations do not need ~ ax-reg .
+<P>
+The ZFC axioms have several equivalent formalizations, and we generally
+selected ones that are the shortest to state in terms of set theory primitives.
+Our ~ ax-inf and ~ ax-ac are slighly unconventional in order to make them
+shorter.  We also provide ~ ax-inf2 and ~ ax-ac2 for people who want to work
+with equivalents to the conventional versions.  Specifically, ~ ax-reg is
+needed to derive ~ ax-inf2 from ~ ax-inf and ~ ax-ac from ~ ax-ac2 .  The
+reverse derivations do not need ~ ax-reg .
+</P>
 
-<P>There you have it, the axioms for (essentially) all of mathematics!
-Marvel at them and stare at them in awe.  If you keep a copy in your
-wallet, you will carry with you the encoding for all theorems ever
-proved and that ever will be proved, from the most mundane to the most
-profound.
+<P>
+There you have it, the axioms for (essentially) all of mathematics!  Marvel at
+them and stare at them in awe.  If you keep a copy in your wallet, you will
+carry with you the encoding for all theorems ever proved and that ever will be
+proved, from the most mundane to the most profound.
+</P>
 
-<P><I>Note.</I> Books sometimes make statements like "(essentially) all
-of mathematics can be derived from the ZFC axioms."  This should not be
-taken literally&mdash;there's not much you can do with these 7 axioms by
-themselves!  The authors are assuming that you will combine the ZFC
-axioms with logic (that is, the axioms and rules of propositional and
-predicate calculus).  Logic and ZFC comprise a total of 20 axioms and 2
-rules in our system.
+<P>
+<I>Note.</I> Books sometimes make statements like "(essentially) all of
+mathematics can be derived from the ZFC axioms."  This should not be taken
+literally&mdash;there's not much you can do with these 7 axioms by themselves!
+The authors are assuming that you will combine the ZFC axioms with logic (that
+is, the axioms and rules of propositional and predicate calculus).  Logic and
+ZFC comprise a total of 20 axioms and 2 rules in our system.
+</P>
 
-
-<P><A NAME="groth"></A><B><FONT COLOR="#006633">The Tarski-Grothendieck
-Axiom </FONT></B> &nbsp;&nbsp;&nbsp; Above we qualified the phrase "all
-of mathematics" with "essentially."  The main important missing piece is
-the ability to do category theory, which requires huge sets
-(inaccessible cardinals) larger than those postulated by the ZFC axioms.
-The Tarski-Grothendieck Axiom postulates the existence of such sets.  We
-have included it in a separate table below for two reasons:  first, it
-is not normally considered to be part of ZFC set theory, and second,
-unlike the ZFC axioms, it is not "elementary," in that the known forms
-of it are very long when expanded to set theory primitives.  Below we show
-it compacted with definitions.  Theorem ~ grothprim shows you what it looks
-like when the definitions are expanded into the primitives used by the other
-axioms.  The Tarski-Grothendieck axiom can be viewed as a very strong
-replacement of the Axiom of Infinity and implies that axiom (theorem
-~ grothomex ) as well as the Axiom of Choice (theorem ~ grothac ) and the
-Axiom of Power Sets (theorem ~ grothpw ).
+<P>
+<A NAME="groth"></A><B><FONT COLOR="#006633">The Tarski&ndash;Grothendieck
+Axiom</FONT></B>
+&nbsp;&nbsp;&nbsp;
+Above we qualified the phrase "all of mathematics" with "essentially."  The
+main important missing piece is the ability to do category theory, which
+requires huge sets (inaccessible cardinals) larger than those postulated by the
+ZFC axioms.  The Tarski&ndash;Grothendieck Axiom postulates the existence of
+such sets.  We have included it in a separate table below for two reasons:
+first, it is not normally considered to be part of ZFC set theory, and second,
+unlike the ZFC axioms, it is not "elementary," in that the known forms of it
+are very long when expanded to set theory primitives.  Below we show it
+compacted with definitions.  Theorem ~ grothprim shows you what it looks like
+when the definitions are expanded into the primitives used by the other axioms.
+The Tarski-Grothendieck axiom can be viewed as a very strong replacement of
+the Axiom of Infinity and implies that axiom (theorem ~ grothomex ) as well as
+the Axiom of Choice (theorem ~ grothac ) and the Axiom of Power Sets (theorem
+~ grothpw ).
+</P>
 
 <!--
- and the Axiom of Choice
-(as show by theorem ~ grothac ;
-see also Tarski, "<A
-HREF="http://matwbn.icm.edu.pl/ksiazki/fm/fm32/fm32115.pdf">On
+and the Axiom of Choice (as show by theorem ~ grothac ; see also Tarski,
+"<A HREF="http://matwbn.icm.edu.pl/ksiazki/fm/fm32/fm32115.pdf">On
 well-ordered subsets of any set</A> [external]", <I>Fundamenta
-Mathematicae</I> 32:176-183 (1939) and Bob Solovay's 29-Mar-2008
-note on <A
-HREF="http://www.cs.nyu.edu/pipermail/fom/2008-March/012783.html">AC and
+Mathematicae</I> 32:176-183 (1939) and Bob Solovay's 29-Mar-2008 note on
+<A HREF="http://www.cs.nyu.edu/pipermail/fom/2008-March/012783.html">AC and
 strongly inaccessible cardinals</A> [external] - he points out that the
 mere existence of strongly inaccessible cardinals doesn't imply AC, but
-rather the particular form of the Tarski-Grothendieck axiom stating their
+rather the particular form of the Tarski&ndash;Grothendieck axiom stating their
 existence).  It also implies the Axiom of Power Sets, as mentioned in
-Solovay's note (see  theorem
-~ grothpw ).
+Solovay's note (see  theorem ~ grothpw ).
 -->
 
-<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
-SUMMARY="The Tarski-Grothendieck axiom">
-<CAPTION><B>The Tarski-Grothendieck axiom</B></CAPTION>
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA" SUMMARY="The
+Tarski&ndash;Grothendieck axiom">
+<CAPTION><B>The Tarski&ndash;Grothendieck axiom</B></CAPTION>
 
 <TR ALIGN=LEFT>
-<TD> <A HREF="ax-groth.html">The Tarski-Grothendieck Axiom</A></TD> <TD
+<TD> <A HREF="ax-groth.html">The Tarski&ndash;Grothendieck Axiom</A></TD> <TD
 NOWRAP><FONT COLOR="#006633"><B>ax-groth</B></FONT></TD>
 <TD>
 ` |- E. y ( x e. y /\ A. z `
@@ -1650,102 +1693,106 @@ NOWRAP><FONT COLOR="#006633"><B>ax-groth</B></FONT></TD>
 ` /\ A. z ( z C_ y -> ( z ~~ y \/ z e. y ) ) ) `
 </TD>
 </TR>
-
-</TABLE></CENTER>
-
-<P>What else is missing from our axioms?  G&ouml;del showed that no
-finite set of axioms or axiom schemes can completely describe any
-consistent theory strong enough to include arithmetic.  But practically
-speaking, the ones above are the accepted foundation that almost all
-mathematicians explicitly or implicitly base their work on.
-
-<P>Set theorists often study the consequences of additional axioms that
-assert, for example, the existence of larger and larger infinities
-beyond those postulated by ZFC or even the Tarski-Grothendieck Axiom, to
-the point of flirting with inconsistency (although G&ouml;del also
-showed that we can never know whether even the ZFC axioms are
-consistent).  While this work is certainly profound and important, these
-axioms are not ordinarily used outside of set theory.  To study such an
-additional axiom with Metamath, we can assert it as a new axiom, or
-alternately we can simply state it as a hypothesis to any theorem making
-use of it.
-
-
-<P><HR NOSHADE SIZE=1><A NAME="class"></A><B><FONT COLOR="#006633">The
-Theory of Classes</FONT></B>&nbsp;&nbsp;&nbsp;
+</TABLE>
+</CENTER>
+</P>
 
 <P>
-In <A HREF="#figure1">Figure 1</A> above that shows part of the proof of
-2+2=4, there are some purple-colored variables such as ` A ` and ` B ` that do
-not appear in any of the axioms of logic and set theory that we just presented.
-Even the number 2 is a symbol (a constant) that we cannot manipulate
-with the axioms, because of the rule that only setvar variables (and not
-constants or other expressions) can be substituted for setvar variables.
-You may at this point feel lost, wondering how our introductory 2+2=4
-example bears any relationship at all to the axioms!  In this section,
-we will discuss how this notation ties into our axioms and how to
-convert it to the primitive or basic language used by the axioms.
+What else is missing from our axioms?  G&ouml;del showed that no finite set of
+axioms or axiom schemes can completely describe any consistent theory strong
+enough to include arithmetic.  But practically speaking, the ones above are the
+accepted foundation that almost all mathematicians explicitly or implicitly
+base their work on.
+</P>
 
-<P>In principle, mathematics can be done using only the setvar and wff
-variables that appear in the axioms.  But the notation can be awkward to
-work with and is not always intuitive for humans.  To make mathematics
-more practical, we extend the set theory language with a definitional
-notation called the <B>theory of classes</B>.  An expression of the form
-` { x | ph } ` , where ` x ` is any setvar variable and ` ph ` is any wff,
-is interchangeably called a
-<B>class builder</B>, <B>class abstract[ion]</B>, <B>class term</B>, or
-<B>class comprehension</B> by different authors.  We call an object that
-can be represented in this form a <B>class</B> and read ` { x | ph } `
-as "the class of all ` x ` such that ` ph ` holds".  Every class is a
-(possibly empty) collection of sets, although not every such collection is
-itself a set (see the discussion for theorem ~ ru ).  For example,
-` { x | ( x e. ZZ /\ 2 < x ) } `
+<P>
+Set theorists often study the consequences of additional axioms that assert,
+for example, the existence of larger and larger infinities beyond those
+postulated by ZFC or even the Tarski&ndash;Grothendieck Axiom, to the point of
+flirting with inconsistency (although G&ouml;del also showed that we can never
+know whether even the ZFC axioms are consistent).  While this work is certainly
+profound and important, these axioms are not ordinarily used outside of set
+theory.  To study such an additional axiom with Metamath, we can assert it as a
+new axiom, or alternately we can simply state it as a hypothesis to any theorem
+making use of it.
+</P>
+
+<P>
+<HR NOSHADE SIZE=1><A NAME="class"></A>
+<B><FONT COLOR="#006633">The Theory of Classes</FONT></B>
+&nbsp;&nbsp;&nbsp;
+In <A HREF="#figure1">Figure 1</A> above that shows part of the proof of 2+2=4,
+there are some purple-colored variables such as ` A ` and ` B ` that do not
+appear in any of the axioms of logic and set theory that we just presented.
+Even the number 2 is a symbol (a constant) that we cannot manipulate with the
+axioms, because of the rule that only setvar variables (and not constants or
+other expressions) can be substituted for setvar variables.  You may at this
+point feel lost, wondering how our introductory 2+2=4 example bears any
+relationship at all to the axioms!  In this section, we will discuss how this
+notation ties into our axioms and how to convert it to the primitive or basic
+language used by the axioms.
+</P>
+
+<P>
+In principle, mathematics can be done using only the setvar and wff variables
+that appear in the axioms.  But the notation can be awkward to work with and is
+not always intuitive for humans.  To make mathematics more practical, we extend
+the set theory language with a definitional notation called the <B>theory of
+classes</B>.  An expression of the form ` { x | ph } ` , where ` x ` is any
+setvar variable and ` ph ` is any wff, is interchangeably called a <B>class
+builder</B>, <B>class abstract[ion]</B>, <B>class term</B>, or <B>class
+comprehension</B> by different authors.  We call an object that can be
+represented in this form a <B>class</B> and read ` { x | ph } ` as "the class
+of all ` x ` such that ` ph ` holds".  Every class is a (possibly empty)
+collection of sets, although not every such collection is itself a set (see the
+discussion for theorem ~ ru ).  For example, ` { x | ( x e. ZZ /\ 2 < x ) } `
 is the class (and also set) of all integers greater than 2.
+</P>
 
-<P>We use upper-case variables ` A ` , ` B ` ,... to range over class builders
-and call them <B>class variables</B>.  More generally, we let them range over
-any object representing a class, such as other class variables.  (A class
-variable ` A `  itself can be represented with the class builder
-` { x | x e. A } ` and thus qualifies as a class; see theorem ~ abid2 .)  Our
-language will now have three kinds of variables:
-` ph ` , ` ps ` ,... ranging over wffs,
-` x ` , ` y ` ,... ranging over setvars, and
-` A ` , ` B ` ,... ranging over classes.
+<P>
+We use upper-case variables ` A ` , ` B ` ,... to range over class builders and
+call them <B>class variables</B>.  More generally, we let them range over any
+object representing a class, such as other class variables.  (A class variable
+` A `  itself can be represented with the class builder ` { x | x e. A } ` and
+thus qualifies as a class; see theorem ~ abid2 .)  Our language will now have
+three kinds of variables: ` ph ` , ` ps ` ,... ranging over wffs, ` x ` ,
+` y ` ,... ranging over setvars, and ` A ` , ` B ` ,... ranging over classes.
+</P>
 
-<P>In the basic language, the ` e. ` and ` = ` connectives must connect two
-setvar variables, so all starting wffs (without wff variables) are of the form
+<P>
+In the basic language, the ` e. ` and ` = ` connectives must connect two setvar
+variables, so all starting wffs (without wff variables) are of the form
 ` x e. y ` and ` x ` ` = y ` .  We extend the language syntax, i.e. the
 definition of a wff, by allowing ` e. ` and ` = ` to connect two expressions
 representing classes, as exemplified in the three definitions below.  Theorems
 involving the extended syntax are derived making use of those three
 definitions.
+</P>
 
-<P>We can construct new classes from existing ones, a property we often exploit
-to define new concepts.  For example, we introduce the symbol ` u. ` and define
-the <B>union</B> of two classes ` A ` and ` B ` in
-
+<P>
+We can construct new classes from existing ones, a property we often exploit to
+define new concepts.  For example, we introduce the symbol ` u. ` and define
+the <B>union</B> of two classes ` A ` and ` B ` in ~ df-un :
+ ` ( A u. ` ` B ) = { x | ( x e. A \/ x e. B ) } ` .
 <!--
-` { y | ph } ` and ` { y | ps } ` as
-` ( { y | ph } u. { y | ps } ) = { x | ( x e. { y | ph } \/ `
-` x e. { y | ps } ) } ` .  This form is
-still rather awkward, and in practice we use class variables to
-represent these two class builders, leading to our
+Without class variables, we should define the union of ` { y | ph } ` and
+` { y | ps } ` as ` ( { y | ph } u. { y | ps } ) = { x | ( x e. { y | ph } \/ `
+` x e. { y | ps } ) } ` .  This form is rather awkward, and in practice
+we use class variables and ~ df-un .
 -->
-
-~ df-un :  ` ( A u. ` ` B ) = { x | ( x e. A \/ x e. B ) } ` .
-Here the defined expression on the left of the "="
-abbreviates the expression on the right.  When eliminating the defined
-expression, we can choose for ` x ` any variable not occurring in ` A ` or
-` B ` (theorem ~ unjust ); it is a bound or dummy variable similar to
-the <I>x</I> in the integral from 0 to 1 of <I>x</I>&nbsp;d<I>x</I>.
-By introducing this definition, we effectively extend the syntax
-with new class expressions of the form ` ( A u. B ) ` that can be
+Here the defined expression on the left of the "=" abbreviates the expression
+on the right.  When eliminating the defined expression, we can choose for ` x `
+any variable not occurring in ` A ` or ` B ` (theorem ~ unjust ); it is a
+bound or dummy variable similar to the <I>x</I> in the integral from 0 to 1 of
+<I>x</I>&nbsp;d<I>x</I>.  By introducing this definition, we effectively extend
+the syntax with new class expressions of the form ` ( A u. B ) ` that can be
 substituted for class variables.
 <!--
 Since such a defined expression can obviously be eliminated (and is verified by
 the mmj2 program to be sure), such an extension does not strengthen the system
 with the definition eliminated.
 -->
+</P>
 
 <P>The number 2 in <A HREF="#figure1">Figure 1</A> is another example of
 a defined class builder, in this case a constant with no arguments.  Our
@@ -1792,79 +1839,78 @@ COLOR="#006633"><B>df-clab</B></FONT></TD>
 </TD>
 </TR>
 
-<TR ALIGN=LEFT><TD>
-<A HREF="df-clel.html">Definition of class membership</A></TD>
+<TR ALIGN=LEFT>
+<TD><A HREF="df-clel.html">Definition of class membership</A></TD>
 <TD NOWRAP><FONT COLOR="#006633"><B>df-clel</B></FONT></TD>
-<TD>
-` |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) `
-</TD>
+<TD>` |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) `</TD>
 </TR>
+</TABLE>
+</CENTER>
 
-</TABLE></CENTER>
+<P>
+Definition ~ df-clab extends the ` e. ` connective, and thus the definition of
+a wff, to allow a class builder on the right-hand side of the ` e. `
+connective, instead of (previously) only setvar variables on each side.  Note
+that the ` ph ` in ~ df-clab is a wff in the extended language and thus may
+itself contain class builders.  The proper substitution denoted by
+` [ x / y ] ph ` has been previously defined by ~ df-sb .
+</P>
 
-<P>Definition ~ df-clab extends the ` e. ` connective, and
-thus the definition of a wff, to allow a class builder on the right-hand
-side of the ` e. ` connective,
-instead of (previously) only setvar variables on each side.  Note that the
-` ph ` in ~ df-clab is a wff in the extended language and
-thus may itself contain class builders.  The proper substitution
-denoted by ` [ x / y ] ph ` has been previously defined by ~ df-sb .
-
-
-<P>Definition ~ df-cleq extends the ` = ` connective to allow classes on both
+<P>
+Definition ~ df-cleq extends the ` = ` connective to allow classes on both
 sides.  The definition itself has a hypothesis, and above we show the derived
-version ~ dfcleq with the hypothesis eliminated for practical use.
-Without its hypothesis, ~ df-cleq would produce the axiom of extensionality
-~ ax-ext as a special case and thus is not sound (is not conservative) in the
-context of predicate calculus without set theory.  If we assume our
-class theory definitionally extends set theory rather than just
-predicate calculus, the hypothesis is unnecessary and merely provides us
-with a somewhat nitpicking isolation from set theory.  Most authors do not
-include this hypothesis.  An advantage of the hypothesis for us is that we must
-explicitly use ~ ax-ext to satisfy it as in theorem ~ dfcleq , meaning we can
-more easily determine exactly where ~ ax-ext was used by a proof.
+version ~ dfcleq with the hypothesis eliminated for practical use.  Without its
+hypothesis, ~ df-cleq would produce the axiom of extensionality ~ ax-ext as a
+special case and thus is not sound (is not conservative) in the context of
+predicate calculus without set theory.  If we assume our class theory
+definitionally extends set theory rather than just predicate calculus, the
+hypothesis is unnecessary and merely provides us with a somewhat nitpicking
+isolation from set theory.  Most authors do not include this hypothesis.  An
+advantage of the hypothesis for us is that we must explicitly use ~ ax-ext to
+satisfy it as in theorem ~ dfcleq , meaning we can more easily determine
+exactly where ~ ax-ext was used by a proof.
+</P>
 
-<P>Definition ~ df-clel similarly extends the ` e. ` connective to allow
-classes on both sides.  We do not need a hypothesis as we did for ~ df-cleq
-because its instances are theorems of predicate calculus (see theorem
-~ cleljust ).
+<P>
+Definition ~ df-clel similarly extends the ` e. ` connective to allow classes
+on both sides.  We do not need a hypothesis as we did for ~ df-cleq because its
+instances are theorems of predicate calculus (see theorem ~ cleljust ).
+</P>
 
+<P>
+As an important special case, a setvar variable ` x ` can be considered a class
+because it equals the class builder ` { y | y e. x } ` (theorem ~ cvjust ).
+This is the justification for syntax builder ~ cv , which for convenience
+allows us to substitute a setvar variable directly for a class variable.  (On
+the other hand, we may not substitute a class variable for a setvar variable
+directly.)
+</P>
 
-<P>As an important special case, a setvar variable ` x ` can be considered a
-class because it equals the class builder ` { y | y e. x } ` (theorem
-~ cvjust ).  This is the justification for syntax builder ~ cv , which for
-convenience allows us to substitute a setvar variable directly for a
-class variable.  (On the other hand, we may not substitute a class
-variable for a setvar variable directly.)
-
-
-<P> <B><FONT COLOR="#006633">An example</FONT></B>&nbsp;&nbsp;&nbsp; To
-see an example of the algorithm, let us eliminate the class builder from
-the (extended) wff ` { x | x = a } = b ` .  For simplicity we
-will assume all setvar variable pairs are <A HREF="#distinct">distinct</A>.
-Treating the setvar variable ` b ` as a class and applying ~ dfcleq , we
-get
+<P>
+<B><FONT COLOR="#006633">An example</FONT></B>
+&nbsp;&nbsp;&nbsp;
+To see an example of the algorithm, let us eliminate the class builder from the
+(extended) wff ` { x | x = a } = b ` .  For simplicity we will assume all
+setvar variable pairs are <A HREF="#distinct">distinct</A>.  Treating the
+setvar variable ` b ` as a class and applying ~ dfcleq , we get
 ` A. y ( y e. { x | x = a } <-> y e. b ) ` .
 Applying ~ df-clab , we get
 ` A. y ( [ y / x ] x = a <-> y e.  b ) ` .
 Applying ~ df-sb , we get
 ` A. y ( ( x = y -> x = a ) /\ E. x ( x = y /\ x = a ) ) <-> y e. b ) ` ,
 which is our final expression in the basic language of predicate calculus
-(implicitly assuming we have expanded the defined connectives ` E. ` ,
-` /\ ` , ` <-> `).  This expression is unique
-provided we have some canonical convention for traversing the
-extended wff syntax tree and for naming any new variables
-introduced at each step.  By the way, this can be simplified with
-additional applications of predicate calculus to become
-` A. y ( y = a <-> y e. b ) ` .
+(implicitly assuming we have expanded the defined connectives ` E. ` , ` /\ ` ,
+` <-> `).  This expression is unique provided we have some canonical convention
+for traversing the extended wff syntax tree and for naming any new variables
+introduced at each step.  By the way, this can be simplified with additional
+applications of predicate calculus to become ` A. y ( y = a <-> y e. b ) ` .
+</P>
 
-<!--
-, which we can also obtain
-immediately from the penultimate step by noticing that the substitution
-` [ y / x ] x = a ` evaluates to ` y = a ` .
--->
+<!-- which we can also obtain immediately from the penultimate step by noticing
+that the substitution ` [ y / x ] x = a ` evaluates to ` y = a ` . -->
 
-<P>Our example showed the elimination of class builders from a wff with
+<P>
+Our example showed the elimination of class builders from a wff with
 no class variables.  If the wff also contains class variables, these can
 be converted to wff variables by substituting ` { x | ph } `
 for ` A ` , ` { y | ps } ` for ` B ` ,
@@ -1875,11 +1921,14 @@ requirements imposed on ` A ` and ` B ` .  We then would
 follow the procedure of the above example.  The description of theorem
 ~ abeq2 goes into more detail and gives some
 actual database examples where this translation takes place.
+</P>
 
-
-<P><B><FONT COLOR="#006633">Justification</FONT></B>&nbsp;&nbsp;&nbsp;
+<P>
+<B><FONT COLOR="#006633">Justification</FONT></B>
+&nbsp;&nbsp;&nbsp;
 The theory of classes can be shown to be an eliminable and conservative
 extension of set theory.
+</P>
 
 <!--
 <B>Eliminable</B> means that each statement of
@@ -1903,63 +1952,63 @@ the same formula in the basic system; so that, concerning theorems on
 sets only, the deductive powers of the extended system and of the basic
 system are identical.
 
-
 Together, these properties mean that the extended language can be treated as a
 definitional extension that is <B>sound</B>.
 
-<P>A rigorous justification, which we will not give here, can be found
-in [<A HREF="#Levy">Levy</A>] pp. 357-366, supplementing
-his informal introduction to class theory on pp. 7-17.
-Two other good treatments of class theory are provided by [<A
-HREF="#Quine">Quine</A>] pp. 15-21 and [<A
-HREF="#TakeutiZaring">TakeutiZaring</A>] pp. 10-14.  Quine's exposition
-is nicely written and very readable.  Our purple class variables
-are Greek letters in [Quine], and he uses an archaic dot notation instead
-of parentheses, but this is a relatively minor hurdle especially
-since you can compare the Metamath versions of many of the theorems.
+<P>
+A rigorous justification, which we will not give here, can be found in
+[<A HREF="#Levy">Levy</A>] pp. 357-366, supplementing his informal introduction
+to class theory on pp. 7-17.  Two other good treatments of class theory are
+provided by [<A HREF="#Quine">Quine</A>] pp. 15-21 and
+[<A HREF="#TakeutiZaring">TakeutiZaring</A>] pp. 10-14.  Quine's exposition is
+nicely written and very readable.  Our purple class variables are Greek letters
+in [Quine], and he uses an archaic dot notation instead of parentheses, but
+this is a relatively minor hurdle especially since you can compare the Metamath
+versions of many of the theorems.
+</P>
 
+<P>
+<B><FONT COLOR="#006633">History</FONT></B>&nbsp;&nbsp;&nbsp;
+According to [<A HREF="#Levy">Levy</A>] (p. 11), the way we introduce classes
+was first explicitly stated by [<A HREF="#Quine">Quine</A>] (1963), who built
+on ideas stemming from Paul Bernays, particularly in Bernays' book <I>Axiomatic
+Set Theory</I> (1958).  Quine uses the term "virtual classes" for the theory of
+classes we use here.  Also according to Levy (pp. 11, 6, and 87), the informal
+idea of using classes that cannot belong to other classes occurred to Cantor in
+1899 after he became aware of the <A HREF="onprc.html">Burali-Forti paradox</A>
+(1897) and the fact that Cantor's theorem <A HREF="ncanth.html">fails</A> for
+the universe V (1899).  (<A HREF="ru.html">Russell's paradox</A> came later, in
+1901.)  There are other (different) axiomatic set theories, including Russell's
+theory of types, New Foundations, Quine's previous "Mathematical Logic" system,
+and von Neumann-Bernays-G&ouml;del (NBG).  A more detailed comparison of ZFC
+using Quine's virtual classes with these other axiomatic set theories can be
+found in [<A HREF="#Quine">Quine</A>] (1963) pp. 15-21 and pp. 241-332.
+</P>
 
-<P> <B><FONT COLOR="#006633">History</FONT></B>&nbsp;&nbsp;&nbsp;
-According to [<A HREF="#Levy">Levy</A>] (p. 11), the way we introduce
-classes was first explicitly stated by [<A HREF="#Quine">Quine</A>]
-(1963), who built on ideas stemming from Paul Bernays, particularly in
-Bernays' book <I>Axiomatic Set Theory</I> (1958).
-Quine uses the term "virtual classes" for the theory of classes we use here.
-Also according to
-Levy (pp. 11, 6, and 87), the informal idea of using classes that
-can't belong to other classes
-occurred to Cantor in 1899 after he became aware of the <A
-HREF="onprc.html">Burali-Forti paradox</A> (1897) and the fact that
-Cantor's theorem <A HREF="ncanth.html">fails</A> for the universe V
-(1899).  (<A HREF="ru.html">Russell's paradox</A> came later, in 1901.)
-There are other (different) axiomatic set theories, including
-Russell's theory of types, New Foundations, Quine's previous "Mathematical
-Logic" system, and von Neumann-Bernays-G&ouml;del (NBG).
-A more detailed comparison of ZFC using Quine's virtual classes with these
-other axiomatic set theories can be found in [<A HREF="#Quine">Quine</A>]
-(1963) pp. 15-21 and pp. 241-332.
+<P>
+<B><FONT COLOR="#006633">Definitions or axioms?</FONT></B>&nbsp;&nbsp;&nbsp;
+Levy presents our three definitions above as axioms rather than definitions.
+There is nothing wrong with this in principle, but because they are
+conservative and eliminable, they do not strengthen the underlying set theory.
+They just specify a mechanical transformation to and from a different but
+equivalent notation.
+</P>
 
-<P> <B><FONT COLOR="#006633">Definitions or
-axioms?</FONT></B>&nbsp;&nbsp;&nbsp; Levy presents our three definitions
-above as axioms rather than definitions.  There is nothing wrong with
-this in principle, but because they are conservative and eliminable, they
-do not strengthen the underlying set theory.  They just specify
-a mechanical transformation to and from a different but equivalent notation.
-
-<P>On the other hand, they have a character that is somewhat different from
-"ordinary" definitions such as ~ df-an that
-simply introduce a new symbol (or unique symbol combination) to abbreviate a
-longer string of symbols.  All such ordinary definitions can be verified
-for soundness with a relatively straightforward algorithm that is
-incorporated into the mmj2 program.  But there is no simple way to
-verify automatically the soundness of our three class definitions.
-Instead, we must trust the relatively involved metamathematics of Levy's
-(or other authors') eliminability and conservation proofs that exist
+<P>
+On the other hand, they have a character that is somewhat different from
+"ordinary" definitions such as ~ df-an that simply introduce a new symbol (or
+unique symbol combination) to abbreviate a longer string of symbols.  All such
+ordinary definitions can be verified for soundness with a relatively
+straightforward algorithm that is incorporated into the mmj2 program.  But
+there is no simple way to verify automatically the soundness of our three class
+definitions.  Instead, we must trust the relatively involved metamathematics of
+Levy's (or other authors') eliminability and conservation proofs that exist
 only on paper, at least until a sufficiently sophisticated definitional
-soundness checker becomes available.  The requirement of such trust
-makes it tempting to call them axioms, since that would relieve us of
-responsibility in the unlikely event that a flaw is uncovered in one of
-the eliminability/conservation proofs.
+soundness checker becomes available.  The requirement of such trust makes it
+tempting to call them axioms, since that would relieve us of responsibility in
+the unlikely event that a flaw is uncovered in one of the
+eliminability/conservation proofs.
+</P>
 
 <P>Personally I feel that despite their formal complexity, the
 eliminability/conservation properties are still in some sense "obvious,"
@@ -1987,15 +2036,17 @@ specify them as exceptions in mmj2's RunParms.txt file:
         SetMMDefinitionsCheckWithExclusions,ax-*,df-bi,df-clab,df-cleq,df-clel
 </PRE>
 
-A skeptic is free to rename these four to be axioms (with prefix
-"ax-"), but currently we consider the compromise acceptable.  Moreover,
-the above mmj2 statement tells us exactly which definitions we are
-trusting without computer verification, so we can easily determine
-exactly what is being assumed.
+<P>
+A skeptic is free to rename these four to be axioms (with prefix "ax-"), but
+currently we consider the compromise acceptable.  Moreover, the above mmj2
+statement tells us exactly which definitions we are trusting without computer
+verification, so we can easily determine exactly what is being assumed.
+</P>
 
-
-<P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
-Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
+<P>
+<HR NOSHADE SIZE=1><A NAME="theorems"></A><B>
+<FONT COLOR="#006633">A Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
+</P>
 
 <!--
 <P><CENTER><FONT COLOR="#006633"><I>No one shall be able to drive us from
@@ -2003,33 +2054,41 @@ the paradise that Cantor has created for us.</I><BR>
  &mdash;David Hilbert</FONT></CENTER>
 -->
 
-<P><CENTER><FONT COLOR="#006633"><I>Set theory can be viewed as a form
-of exact theology.</I><BR> &mdash;Rudy Rucker</FONT></CENTER>
+<P>
+<CENTER>
+<FONT COLOR="#006633">
+<I>Set theory can be viewed as a form of exact theology.</I>
+<BR>
+&mdash;Rudy Rucker
+</FONT>
+</CENTER>
+</P>
 
-<P>Listed here are some examples of starting points for your journey
-through the maze.  You should study some simple proofs from
-propositional calculus until you get the hang of it.  Then try some
-predicate calculus and finally set theory.
+<P>
+Listed here are some examples of starting points for your journey through the
+maze.  You should study some simple proofs from propositional calculus until
+you get the hang of it.  Then try some predicate calculus and finally set
+theory.
+</P>
 
-<!--  Warning:  2 + 2
-= 4 quickly becomes very advanced if you try to dig too deeply (see <A
-HREF="#trivia">trivia</A> below). -->
+<!--  Warning:  2 + 2 = 4 quickly becomes very advanced if you try to dig too
+deeply (see <A HREF="#trivia">trivia</A> below). -->
 
 The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
-theorems in the database.  You may also find the <A
-HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.
+theorems in the database.  You may also find the
+<A HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.
 
-The <a href="../mm_100.html">Metamath 100</a> list
- identifies the progress of
-Metamath formalizations of the "top 100" theorems as tracked by Freek
-Wiedijk.
+The <a href="../mm_100.html">Metamath 100</a> list  identifies the progress of
+Metamath formalizations of the "top 100" theorems as tracked by Freek Wiedijk.
 
 Many people have contributed; you can even see a
 <A HREF="https://www.youtube.com/watch?v=LVGSeDjWzUo">Youtube video showing a
 Gource visualization of Metamath set.mm contributions over time</A>
 (and we hope that you'll become another contributor!).
 
-<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%">
+<P>
+<TABLE BORDER=0>
+<TR><TD VALIGN=TOP WIDTH="50%">
 <B>Propositional calculus</B>
 <MENU>
 <LI>
@@ -2223,36 +2282,54 @@ value</A></LI>
 uncountable</A></LI>
 
 </MENU>
-</TD></TR></TABLE>
+</TD></TR>
+</TABLE>
 
-<HR NOSHADE SIZE=1><A NAME="trivia"></A><B><FONT
-COLOR="#006633">2 + 2 = 4 Trivia</FONT></B>&nbsp;&nbsp;&nbsp;
+<HR NOSHADE SIZE=1>
+<A NAME="trivia"></A>
+<B><FONT COLOR="#006633">2 + 2 = 4 Trivia</FONT></B>
+&nbsp;&nbsp;&nbsp;
 
-
-<P><CENTER><FONT COLOR="#006633"><I>We used to think that if we knew
-one, we knew two, because one and one are two.  We are finding that we
-must learn a great deal more about 'and.'</I><BR>
-&mdash;Sir Arthur Eddington</FONT></CENTER>
+<P>
+<CENTER>
+<FONT COLOR="#006633">
+<I>We used to think that if we knew one, we knew two, because one and one are
+two.  We are finding that we must learn a great deal more about 'and.'</I>
+<BR>
+&mdash;Sir Arthur Eddington
 <!-- in Mackay, The Harvest of a Quiet Eye -->
+</FONT>
+</CENTER>
+</P>
 
-<P><CENTER><FONT COLOR="#006633"><I>First and above all he was a logician.
-At least thirty-five years of the half-century or so of his existence
-had been devoted exclusively to proving that two and two always
-equal four, except in unusual cases, where they equal three or five,
-as the case may be.</I><BR>
-&mdash;Jacques Futrelle, <I>Best &quot;Thinking Machine&quot;
-Detective Stories</I></FONT></CENTER>
-
+<P>
+<CENTER>
+<FONT COLOR="#006633">
+<I>First and above all he was a logician.  At least thirty-five years of the
+half-century or so of his existence had been devoted exclusively to proving
+that two and two always equal four, except in unusual cases, where they equal
+three or five, as the case may be.</I>
+<BR>
+&mdash;Jacques Futrelle,
+<I>Best &quot;Thinking Machine&quot; Detective Stories</I>
+</FONT>
+</CENTER>
+</P>
 
 <!--
 Best &quot;Thinking Machine&quot; Detective Stories,
 Dover Publications, Inc., New York, 1973
 -->
 
-
-<P><CENTER><FONT COLOR="#006633"><I>This is a one line proof...if we
-start sufficiently far to the left.</I><BR> &mdash;Unknown</FONT></CENTER>
-
+<P>
+<CENTER>
+<FONT COLOR="#006633">
+<I>This is a one line proof...if we start sufficiently far to the left.</I>
+<BR>
+&mdash;Unknown
+</FONT>
+</CENTER>
+</P>
 
 <!--
 <P><CENTER><FONT COLOR="#006633"><I>One and one is two, and two and two
@@ -2260,27 +2337,29 @@ is four, and five will get you ten if you know how to work it.  </I><BR>
 &mdash;Mae West</FONT></CENTER>
 -->
 
-<P>The complete proof of a theorem all the way back to axioms can be
-thought of as a tree of subtheorems, with the steps in each proof
-branching back to earlier subtheorems, until axioms are ultimately
-reached at the tips of the branches.  An interesting exercise is,
-starting from a theorem, to try to find the longest path back to an
-axiom.  <B>Trivia Question:</B> What is the longest path for the theorem
-2 + 2 = 4?
+<P>
+The complete proof of a theorem all the way back to axioms can be thought of as
+a tree of subtheorems, with the steps in each proof branching back to earlier
+subtheorems, until axioms are ultimately reached at the tips of the branches.
+An interesting exercise is, starting from a theorem, to try to find the longest
+path back to an axiom.
+<B>Trivia Question:</B> What is the longest path for the theorem 2 + 2 = 4?
+</P>
 
 <IMG SRC="_butterfly.jpg"
 ALT="Orange julia butterfly with 2+2=4 dots. Credit: N. Megill 2004. Public domain."
 TITLE="Orange julia butterfly with 2+2=4 dots. Credit: N. Megill 2004. Public domain."
 WIDTH=102 HEIGHT=65 ALIGN=RIGHT STYLE="margin-bottom:0px">
 
-<P><B>Trivia Answer:</B> A longest path back to an axiom from 2 + 2 = 4
-is <B>184 layers</B> deep!  By following it you will encounter a broad
-range of interesting and important set theory results along the way.
-You can follow them by drilling down this path.  Or you can start at the
-bottom and work your way up, watching mathematics unfold from its
-axioms.  (Hint:  hovering the mouse over the links below will show their
-descriptions.)<P>
-
+<P>
+<B>Trivia Answer:</B>
+A longest path back to an axiom from 2 + 2 = 4 is <B>184 layers</B> deep!  By
+following it you will encounter a broad range of interesting and important set
+theory results along the way.  You can follow them by drilling down this path.
+Or you can start at the bottom and work your way up, watching mathematics
+unfold from its axioms.  (Hint:  hovering the mouse over the links below will
+show their descriptions.)
+</P>
 
 <!-- The list below was made by hand as follows (last updated 22-Dec-2018):
 1. 'show tr 2p2e4/e/ax/m a*' to determine the complex number axioms used;
@@ -2487,14 +2566,16 @@ descriptions.)<P>
 &lt;- <A HREF="ax-2.html" TITLE="Axiom _Frege_.  Axiom A2 of [Margaris] p. 49.  One of the 3 axioms of...">ax-2</A>
 </FONT>
 
-<P>(The list above was produced by typing the commands "read set.mm"
-then "show trace_back 2p2e4 /essential /count_steps" in the <A
-HREF="../index.html#mmprog">Metamath program</A>, after replacing the
-references to the <A HREF="mmcomplex.html#axioms">complex number
-axioms</A> to their corresponding theorems, such as "ax-rnegex" to
-"axrnegex".  The complex numbers are a special case where we restate as
-axioms the theorems that derive their properties, in order to reduce
-clutter in the axiom and definition lists on the web pages.)
+<P>
+(The list above was produced by typing the commands "read set.mm" then "show
+trace_back 2p2e4 /essential /count_steps" in the
+<A HREF="../index.html#mmprog">Metamath program</A>, after replacing the
+references to the <A HREF="mmcomplex.html#axioms">complex number axioms</A> to
+their corresponding theorems, such as "ax-rnegex" to "axrnegex".  The complex
+numbers are a special case where we restate as axioms the theorems that derive
+their properties, in order to reduce clutter in the axiom and definition lists
+on the web pages.)
+</P>
 
 <!--
 axioms the theorems that derive their properties, in order to isolate
@@ -2503,29 +2584,34 @@ theorem was proved from axioms:"  and "This theorem depends on
 definitions:" lists on the web pages.)
 -->
 
-<P> The complete proof of 2 + 2 = 4 involves <B>2,913 subtheorems</B>
-including the 184 above.  (The command "show trace_back 2p2e4
-/essential" will list them.)  These have a total of <B>26,323
-steps</B>&mdash;this is how many steps you would have to examine if you
-wanted to verify the proof by hand in complete detail all the way back
-to the axioms of ZFC set theory.  (<A HREF="#2p2e4length">Later</A> we
-will compare Metamath's proof length to that of formal proofs
-defined in logic textbooks.)
+<P>
+The complete proof of 2 + 2 = 4 involves <B>2,913 subtheorems</B> including the
+184 above.  (The command "show trace_back 2p2e4 /essential" will list them.)
+These have a total of <B>26,323 steps</B>&mdash;this is how many steps you
+would have to examine if you wanted to verify the proof by hand in complete
+detail all the way back to the axioms of ZFC set theory.
+(<A HREF="#2p2e4length">Later</A> we will compare Metamath's proof length to
+that of formal proofs defined in logic textbooks.)
+</P>
 
-<P>One of the reasons that the proof of 2 + 2 = 4 is so long is that 2
-and 4 are complex numbers&mdash;i.e. we are really proving (2+0i) +
-(2+0i) = (4+0i)&mdash;and these have a complicated construction (see the
-<A HREF="mmcomplex.html#axioms">Axioms for Complex Numbers</A>) but
-provide the most flexibility for the arithmetic in our set.mm database.
-In terms of textbook pages, the construction formalizes perhaps 70 pages
-from Takeuti and Zaring's <I>Introduction to Axiomatic Set Theory</I>
-(and its predicate calculus prerequisite) to obtain natural number
-(finite ordinal) arithmetic, followed by essentially all of Landau's
-136-page <I>Foundations of Analysis</I>.
+<P>
+One of the reasons that the proof of 2 + 2 = 4 is so long is that 2 and 4 are
+complex numbers&mdash;i.e. we are really proving (2+0i) + (2+0i) =
+(4+0i)&mdash;and these have a complicated construction (see the
+<A HREF="mmcomplex.html#axioms">Axioms for Complex Numbers</A>) but provide the
+most flexibility for the arithmetic in our set.mm database.  In terms of
+textbook pages, the construction formalizes perhaps 70 pages from Takeuti and
+Zaring's <I>Introduction to Axiomatic Set Theory</I> (and its predicate
+calculus prerequisite) to obtain natural number (finite ordinal) arithmetic,
+followed by essentially all of Landau's 136-page <I>Foundations of
+Analysis</I>.
+</P>
 
-<P>We selected the theorem 2 + 2 = 4 for this example rather than 1 + 1
-= 2 because the latter is essentially the definition we chose for 2 and
-thus has a trivial proof.
+<P>
+We selected the theorem 2 + 2 = 4 for this example rather than 1 + 1 = 2
+because the latter is essentially the definition we chose for 2 and thus has a
+trivial proof.
+</P>
 
 <!--
 , ~ 1p1e2 (shown
@@ -2548,7 +2634,6 @@ theorems ~ pm54.43 and
 ~ pm110.643 for a translation into modern
 notation.
 
-
 <!--
 We can also use the simpler natural numbers of ordinal arithmetic, which
 are limited to the integers 0, 1, 2,...  . Although we haven't defined
@@ -2558,31 +2643,30 @@ This theorem requires only 1,518
 subtheorems with a total of 11,086 steps for its proof.
 -->
 
-<P><HR NOSHADE SIZE=1><A NAME="axiomnote"></A><B><FONT
-COLOR="#006633">Appendix 1:  A Note on the
-Axioms</FONT></B>&nbsp;&nbsp;&nbsp;
+<P>
+<HR NOSHADE SIZE=1><A NAME="axiomnote"></A>
+<B><FONT COLOR="#006633">Appendix 1:  A Note on the Axioms</FONT></B>
+&nbsp;&nbsp;&nbsp;
+The Metamath axiom system defined in set.mm is founded on a simplified
+formalization of predicate calculus with equality published by logician Alfred
+Tarski in 1965 (see [<A HREF="#Tarski">Tarski</A>], system S2 mentioned in the
+last paragraph of p. 77; reproduced as system S3 in Section 6 of
+[<A HREF="#bibmegill">Megill</A>]). Tarski's system is exactly equivalent to
+the <A HREF="#traditional">traditional</A> textbook formalization, but (by
+clever use of equality axioms) it eliminates the latter's primitive notions of
+"proper substitution" and "free variable," replacing them with direct
+substitution and the notion of a variable not occurring in a formula (which we
+express with <A HREF="#distinct">distinct variable</A> constraints).
+</P>
 
-The Metamath axiom system defined
-in set.mm is founded on a simplified formalization of
-predicate calculus with equality published by logician Alfred Tarski in
-1965 (see [<A HREF="#Tarski">Tarski</A>], system S2 mentioned in
- last paragraph
-of p. 77; reproduced
-as system S3 in Section 6 of [<A HREF="#bibmegill">Megill</A>]).
-Tarski's system is exactly equivalent to the <A
-HREF="#traditional">traditional</A> textbook formalization, but
-(by clever use of equality axioms) it
-eliminates the latter's primitive notions of "proper substitution" and
-"free variable," replacing them with direct substitution and the notion
-of a variable not occurring in a formula (which we express with <A
-HREF="#distinct">distinct variable</A> constraints).
-
-<P>In advocating his system, Tarski wrote, "The relatively complicated
-character of [free variables and proper substitution] is a source of
-certain inconveniences of both practical and theoretical nature; this is
-clearly experienced both in teaching an elementary course of
-mathematical logic and in formalizing the syntax of predicate logic for
-some theoretical purposes"  [<A HREF="#Tarski">Tarski</A>, p. 61].
+<P>
+In advocating his system, Tarski wrote, "The relatively complicated character
+of [free variables and proper substitution] is a source of certain
+inconveniences of both practical and theoretical nature; this is clearly
+experienced both in teaching an elementary course of mathematical logic and in
+formalizing the syntax of predicate logic for some theoretical purposes"
+[<A HREF="#Tarski">Tarski</A>, p. 61].
+</P>
 
 <!--
 <P>Tarski's system still requires nontrivial and somewhat ad hoc
@@ -2594,13 +2678,13 @@ needed to derive them in Tarski's system is difficult to automate in a
 proof verifier.
 -->
 
-<P>Tarski's system was designed for proving specific theorems rather
-than more general theorem schemes (which we will define below).
-However, theorem
-schemes are much more efficient than specific theorems for building a
-body of mathematical knowledge, since they can be reused with different
-instances as needed.   While Tarski does derive some theorem schemes from his
-axioms, their proofs require
+<P>
+Tarski's system was designed for proving specific theorems rather than more
+general theorem schemes (which we will define below).  However, theorem schemes
+are much more efficient than specific theorems for building a body of
+mathematical knowledge, since they can be reused with different instances as
+needed.  While Tarski does derive some theorem schemes from his axioms, their
+proofs require
 <!--
 nontrivial and somewhat ad hoc
 -->
@@ -2611,24 +2695,24 @@ verifier.  (Specifically, Tarski treats the formulas of his system as
 set-theoretical objects.  In order to verify the proofs of his theorem
 schemes, a proof verifier would need a significant amount of set theory
 built into it.)
+</P>
 
-<P><A NAME="simplemetalogic"></A>The Metamath axiom system (shown as <A
-HREF="#scaxioms">ax-1 through ax-13</A> above) extends Tarski's system
-to eliminate this difficulty.  The additional axiom schemes (as we will
-call them in this section; see below) endow Tarski's system with a nice
-property we call <B>metalogical completeness</B> (defined in Remark 9.6
-of [<A
-HREF="#bibmegill">Megill</A>]).  As a result, we can prove <I>any</I>
-theorem scheme expressable in the "simple metalogic" of Tarski's system
-by using <I>only</I> Metamath's direct substitution rule applied to the
-axiom system (and no other metalogical or set-theoretical notions
-"outside" of the system).  <B>Simple metalogic</B> consists of schemes
-containing wff metavariables (with no arguments) and/or setvar (also called
-"individual") metavariables, accompanied by optional provisos each
-stating that two specified setvar metavariables must be distinct or that a
-specified setvar metavariable may not occur in a specified wff
-metavariable.  Metamath's logic and set theory axiom and rule schemes
-are all examples of simple metalogic.  The schemes
+<P>
+<A NAME="simplemetalogic"></A>
+The Metamath axiom system (shown as <A HREF="#scaxioms">ax-1 through ax-13</A>
+above) extends Tarski's system to eliminate this difficulty.  The additional
+axiom schemes (as we will call them in this section; see below) endow Tarski's
+system with a nice property we call <B>metalogical completeness</B> (defined in
+Remark 9.6 of [<A HREF="#bibmegill">Megill</A>]).  As a result, we can prove
+<I>any</I> theorem scheme expressable in the "simple metalogic" of Tarski's
+system by using <I>only</I> Metamath's direct substitution rule applied to the
+axiom system (and no other metalogical or set-theoretical notions "outside" of
+the system).  <B>Simple metalogic</B> consists of schemes containing wff
+metavariables (with no arguments) and/or setvar (also called "individual")
+metavariables, accompanied by optional provisos each stating that two specified
+setvar metavariables must be distinct or that a specified setvar metavariable
+may not occur in a specified wff metavariable.  Metamath's logic and set theory
+axiom and rule schemes are all examples of simple metalogic.  The schemes
 
 <!--
 ~ stdpc4 , ~ stdpc5 , and ~ stdpc7
@@ -2638,7 +2722,7 @@ of <A HREF="#traditional">traditional
 predicate calculus with equality</A> are examples which are <I>not</I>
 simple metalogic, because they use wff metavariables with
 arguments and have "free for" and "not free in" side conditions.
-
+</P>
 
 <!--
 <P><FONT SIZE="-1">[See also <A
@@ -2734,7 +2818,6 @@ SIZE=-1><SUB>1</SUB></FONT> ` e. ` <I>v</I><FONT SIZE=-1><SUB>4</SUB></FONT>
 SIZE=-1><SUB>3</SUB></FONT> = <I>v</I><FONT
 SIZE=-1><SUB>5</SUB></FONT>` ) ) `".
 
-
 <P><A NAME="compare"></A><B><FONT COLOR="#006633">Our axiom schemes vs.
 Tarski's original axiom schemes</FONT></B>&nbsp;&nbsp;&nbsp;
 In the figure below we compare Tarski's original axiom schemes
@@ -2755,7 +2838,6 @@ TITLE="Metamath's axiom schemes vs. Tarski's. Credit: N. Megill 2014. Public dom
 ALIGN=RIGHT STYLE="margin-bottom:0px">
 </TD></TR></TABLE>
 -->
-
 
 <CENTER>
 <TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -2961,48 +3043,53 @@ but generate exactly the same actual axioms as traditional predicate calculus.
 In the actual axioms, there are no primitive concepts of "free",
 "bound", "distinct", or even "substitution"&mdash;these are all
 metamathematical notions at the scheme level.
+</P>
 
-
-<P>See also the text in the section header for
+<P>
+See also the text in the section header for
 <A HREF="mmtheorems.html#ax6dgen">"Logical redundancy of ax-10, ax-11, ax-12,
 ax-13"</A> and technical notes 2 and 3 below.
+</P>
 
+<P>
+<A NAME="mmname"></A>
+<B><FONT COLOR="#006633">Metamath is a metalanguage that describes first-order
+logic</FONT></B>
+&nbsp;&nbsp;&nbsp;
+...and is not itself the language of first-order logic.  But the "meta" aspect
+runs deeper than just the fact that its axioms represent schemes.
+</P>
 
-<P><A NAME="mmname"></A><B><FONT COLOR="#006633">Metamath is a
-metalanguage that describes first-order
-logic</FONT></B>&nbsp;&nbsp;&nbsp; ...and is not itself the language of
-first-order logic.  But the "meta" aspect runs deeper than just the fact
-that its axioms represent schemes.
+<P>
+Traditional presentations of first-order logic also use schemes to describe the
+axioms.  However, a substitution instance of one of their axiom schemes is
+intended to be one specific axiom of the actual logic.  Formal proofs are
+defined so that they involve only actual axioms, to result in actual theorems.
+Often textbooks will derive theorem schemes to obtain more generally useful
+results, but such derivations are understood to be outside of the logic itself
+and may use metalogical techniques such as induction on formula length that are
+not part of the axiom system.
+</P>
 
-<P>Traditional presentations of first-order logic also use schemes to
-describe the axioms.  However, a substitution instance of one of their
-axiom schemes is intended to be one specific axiom of the actual logic.
-Formal proofs are defined so that they involve only actual axioms, to
-result in actual theorems.  Often textbooks will derive theorem schemes
-to obtain more generally useful results, but such derivations are
-understood to be outside of the logic itself and may use metalogical
-techniques such as induction on formula length that are not part of the
-axiom system.
-
-<P>Metamath's key and very important difference is that an application
-of its substitution rule <I>always creates a new scheme from an old
-one.</I> Metamath works <I>only</I> with schemes and <I>never</I> with
-actual axioms or theorems.
+<P>
+Metamath's key and very important difference is that an application of its
+substitution rule <I>always creates a new scheme from an old one.</I>  Metamath
+works <I>only</I> with schemes and <I>never</I> with actual axioms or theorems.
 
 For example, the schemes "` ( x = y -> x = y ) `" and
 "` ( ( ps -> ph ) -> ( ps -> ph ) ) `" are two substitution instances that we
-can infer from the scheme "` ( ph -> ph ) ` ."  These
-substitution instances are new schemes in their own right, into which we
-can make further substitutions to specialize them further if we wish.
+can infer from the scheme "` ( ph -> ph ) ` ."  These substitution instances
+are new schemes in their own right, into which we can make further
+substitutions to specialize them further if we wish.
+</P>
 
-
-<P> The setvar and wff variables of the Metamath language are one level up,
-or "meta," from the point of view of the logic that it describes.
-(Hence the name <I>Metamath</I>, meaning "metavariable math.")  Each
-"theorem" on our proof pages is a theorem scheme (metatheorem) that is a
-recipe for generating an infinite number of actual theorems.  <A
-NAME="mentioned"></A> In fact, the Metamath language cannot even express
-specific, actual theorems such as "` ( `
+<P>
+The setvar and wff variables of the Metamath language are one level up, or
+"meta," from the point of view of the logic that it describes.  (Hence the name
+<I>Metamath</I>, meaning "metavariable math.")  Each "theorem" on our proof
+pages is a theorem scheme (metatheorem) that is a recipe for generating an
+infinite number of actual theorems.  <A NAME="mentioned"></A> In fact, the
+Metamath language cannot even express specific, actual theorems such as "` ( `
 <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> ` = `
 <I>v</I><FONT SIZE=-1><SUB>2</SUB></FONT>
 ` -> ` <I>v</I><FONT
@@ -3016,55 +3103,59 @@ directly with schemes and makes the necessary metalogic (its
 substitution rule) part of the axiom system itself, so that no
 techniques outside of the axiom system are needed to derive its theorem
 schemes.
+</P>
 
+<P>
+<A NAME="2p2e4length"></A>
+<FONT SIZE="-1">
+[As an example of the savings we achieve by using only schemes, the ~ 2p2e4
+proof described in <A HREF="#trivia">2 + 2 = 4 Trivia</A> above requires 26,323
+proof steps to be proved from the axioms of logic and set theory.  If we were
+not allowed to use different instances of intermediate theorem schemes but had
+to show a direct object-language proof, where each step is an actual axiom or a
+rule applied to previous steps, the complete formal proof would have
+73,983,127,856,077,147,925,897,127,298 (about 7.4 x 10^28) proof steps.  See
+also the remarks for theorem ~ 1kp2ke3k .  Note: this calculation ignores the
+expansion of statements that use class notation, which would require extra
+steps.]
+</FONT>
+</P>
 
-<P><A NAME="2p2e4length"></A> <FONT SIZE="-1">[As an example of the
-savings we achieve by using only schemes, the ~ 2p2e4 proof described in
-<A HREF="#trivia">2 + 2 = 4 Trivia</A> above requires 26,323 proof steps
-to be proved from the axioms of logic and set theory.  If we were not
-allowed to use different instances of intermediate theorem schemes but
-had to show a direct object-language proof, where each step is an actual
-axiom or a rule applied to previous steps, the complete formal proof
-would have 73,983,127,856,077,147,925,897,127,298 (about 7.4 x 10^28)
-proof steps.  See also the remarks for theorem ~ 1kp2ke3k .  Note:
-this calculation ignores the expansion of statements that use class
-notation, which would require extra steps.]</FONT><P>
+<P>
+<A NAME="axiomnotedv"></A>
+<B><FONT COLOR="#006633">Distinct metavariables</FONT></B>
+&nbsp;&nbsp;&nbsp;
+Sometimes we must place restrictions on the formulas generated by a scheme in
+order to ensure their soundness, and we use <A HREF="#distinct">distinct
+variable</A> restrictions for this purpose.  For example, the theorem scheme
+~ dtru , ` -. A. x ` ` x = y ` , has the restriction that metavariables ` x `
+and ` y ` cannot be substituted with the same actual variable, otherwise we
+could end up with the nonsense substitution instance "` -. A. ` <I>v</I>
+<FONT SIZE=-1><SUB>1</SUB></FONT> <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> =
+<I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT>" which would mean "it is not true
+that every object <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> equals itself."
+The substitution rule of Metamath ensures that distinct variable restrictions
+"propagate" from axiom schemes having such restrictions into theorem schemes
+using those axiom schemes; in other words, distinct variable restrictions in
+axiom schemes are inherited by theorems whose proofs make use of those schemes.
+</P>
 
-
-<P><A NAME="axiomnotedv"></A><B><FONT COLOR="#006633">Distinct
-metavariables</FONT></B>&nbsp;&nbsp;&nbsp; Sometimes we must place
-restrictions on the formulas generated by a scheme in order to ensure
-their soundness, and we use <A HREF="#distinct">distinct variable</A>
-restrictions for this purpose.  For example, the theorem scheme ~ dtru ,
-` -. A. x ` ` x = y ` , has the restriction that
-metavariables ` x ` and ` y ` cannot be substituted with the
-same actual variable, otherwise we could end up with the nonsense
-substitution instance "` -. A. ` <I>v</I><FONT
-SIZE=-1><SUB>1</SUB></FONT> <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> =
-<I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT>" which would mean "it is not
-true that every object <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> equals
-itself."  The substitution rule of Metamath ensures that distinct
-variable restrictions "propagate" from axiom schemes having such
-restrictions into theorem schemes using those axiom schemes; in other
-words, distinct variable restrictions in axiom schemes are inherited
-by theorems whose proofs make use of those schemes.
-
-<P><A NAME="dtru"></A> Note that distinct variable restrictions are
-<I>metalogical</I> conditions imposed on certain axiom and theorem
-<I>schemes.</I> They have no role in the actual logic (object language),
-where two actual variables with different names are distinct by
-definition&mdash;simply because they have different names, which is what
-"distinct" means.  Thus in an actual theorem generated by ~ dtru , such as
-"` -. A. ` <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> <I>v</I><FONT
-SIZE=-1><SUB>1</SUB></FONT> = <I>v</I><FONT
-SIZE=-1><SUB>2</SUB></FONT>," it would be redundant (and meaningless) to
-require that <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> and <I>v</I><FONT
-SIZE=-1><SUB>2</SUB></FONT> be distinct.  There is no danger of
-inferring from this the falsehood "` -. A. `
-<I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> <I>v</I><FONT
-SIZE=-1><SUB>1</SUB></FONT> = <I>v</I><FONT
-SIZE=-1><SUB>1</SUB></FONT>", because there is no substitution rule in
-the actual language that lets us do so.
+<P>
+<A NAME="dtru"></A>
+Note that distinct variable restrictions are <I>metalogical</I> conditions
+imposed on certain axiom and theorem <I>schemes.</I> They have no role in the
+actual logic (object language), where two actual variables with different names
+are distinct by definition&mdash;simply because they have different names,
+which is what "distinct" means.  Thus in an actual theorem generated by
+~ dtru , such as "` -. A. ` <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> <I>v</I>
+<FONT SIZE=-1><SUB>1</SUB></FONT> = <I>v</I><FONT SIZE=-1><SUB>2</SUB></FONT>,"
+it would be redundant (and meaningless) to require that <I>v</I><FONT SIZE=-1>
+<SUB>1</SUB></FONT> and <I>v</I><FONT SIZE=-1><SUB>2</SUB></FONT> be distinct.
+There is no danger of inferring from this the falsehood "` -. A. ` <I>v</I>
+<FONT SIZE=-1><SUB>1</SUB></FONT> <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT>
+= <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT>", because there is no substitution
+rule in the actual language that lets us do so.
+</P>
 
 <P>As we
 <!--
@@ -3079,6 +3170,7 @@ restriction on ~ dtru is enforced at the level of
 theorem schemes.  In this example, we are not allowed to substitute the
 same metavariable, say ` z ` , for
 both ` x ` and ` y ` whenever we reference ~ dtru in a proof step.
+</P>
 
 <!--
 <P><B><FONT COLOR="#006633">Metamath vs. other proof
@@ -3114,7 +3206,7 @@ proof of the metalogical completeness theorem, Theorem 9.7, some details
 that are stated without proof as "provable in S3' with simple
 metalogic," but which are nonetheless are tricky, are proved by theorems
 ~ sbequ , ~ sbcom2 , and ~ sbid2v .
-
+</P>
 
 <P><B>2.</B> Some people find it counter-intuitive that ~ ax-6 combines
 two conceptually different axiom schemes, one where ` x ` and ` y ` are
@@ -3131,7 +3223,7 @@ axiomatization with maximally bundled axiom schemes, making them more
 general, fewer in number, and easier to use.
 See also the text in the section header for <A HREF="mmtheorems.html#ax6dgen">
 "Logical redundancy of ax-10, ax-11, ax-12, ax-13"</A>.
-
+</P>
 
 <!--  It also allows us to allow
 us to postpone the introduction of <A HREF="#distinct">distinct
@@ -3150,7 +3242,6 @@ non-bundled version that requires its variables to be distinct, as theorem
 ~ ax6 shows, but the proof is not trivial and makes use of all of the
 other axioms. -->
 
-
 <P><B>3.</B> Tarski used the bundled axiom scheme "` E. x ` ` x = y `" in one
 of his systems without requiring that ` x ` and ` y ` be distinct variables
 (see [<A HREF="#KalishMontague">KalishMontague</A>], footnote on p. 81).  In
@@ -3163,6 +3254,7 @@ in another way (see the proof of ~ equid1 ).  Tarski considered it better to
 include the distinct variable condition since he wanted to show the weakest
 possible axiom scheme needed for completeness, even though it made the
 statement of the scheme more complex.
+</P>
 
 <P><B>4.</B> An interesting feature of Metamath's axiom system is that
 it is <I>finitely axiomatized</I> in the following strong sense:  at any
@@ -3186,7 +3278,7 @@ a theory with finitely many actual axioms on top of predicate calculus,
 calculus itself.  For example, under that meaning, ZFC set theory is not
 finitely axiomatized because its Axiom of Replacement is a scheme
 describing an infinite number of axioms.)
-
+</P>
 
 <P><B>5.</B> Interestingly, Raph Levien has shown (see Item 16 on the <A
 HREF="../award2003.html#16">Workshop Miscellany</A> page) that in the
@@ -3205,11 +3297,12 @@ but only of the metamathematics that describes them. -->
 representative of ~ ax-6 is not sufficient for the
 logic to be complete; we need the infinite number of axioms
 corresponding to this Metamath scheme. -->
-
+</P>
 
 <P><HR NOSHADE SIZE=1><A NAME="traditional"></A><B><FONT
 COLOR="#006633">Appendix 2:  Traditional Textbook Axioms of Predicate
 Calculus with Equality</FONT></B>&nbsp;&nbsp;&nbsp;
+</P>
 
 <P>If you want to acquire a practical working ability in logic, <!-- (as
 opposed to just being able to follow mindlessly the symbol manipulations
@@ -3223,6 +3316,7 @@ somewhat higher level and are better suited than Metamath's for humans
 to understand intuitively.  In fact, many of the proofs here were
 sketched out informally using traditional methods before being
 formalized with Metamath's axioms.
+</P>
 
 <P>For classical propositional calculus, the traditional axiom and rule
 schemes are exactly the same as Metamath's axioms and rule (interpreted
@@ -3269,11 +3363,13 @@ Section 2.4 (pp. 36-37; add 6 for the PDF page number) defines "free
 variable," and Section 2.11 (pp. 48-51) defines "free for."  See pp. 15,
 51, &amp; 64 for the propositional calculus, predicate calculus, and
 equality axioms respectively.
+</P>
 
-<P>Stefan Bilaniuk's <A
-HREF="http://euclid.trentu.ca/math/sb/pcml/"><I>A Problem Course in
-Mathematical Logic</I></A> [retrieved 21-Dec-2016], another free on-line book,
-provides a more extensive study of logic.
+<P>
+Stefan Bilaniuk's <A HREF="http://euclid.trentu.ca/math/sb/pcml/"><I>A Problem
+Course in Mathematical Logic</I></A> [retrieved 21-Dec-2016], another free
+on-line book, provides a more extensive study of logic.
+</P>
 
 <P>Even though the traditional axiom system looks different from
 Metamath's, the two axiom systems generate exactly the same set of
@@ -3292,6 +3388,7 @@ this bears repeating: &nbsp;
 <B>Our axiom schemes generate precisely the same object-language axioms
 and rules, no more and no fewer, as the traditional
 schemes</B> (Theorem 5 of [<A HREF="#Tarski">Tarski</A>], p. 78).
+</P>
 
 <P>Although in some sense the traditional axiom schemes are more compact
 than Metamath's <A HREF="#pcaxioms">ax-4 through ax-13</A> (4 schemes
@@ -3304,6 +3401,7 @@ of the axiom system.  In Metamath, on the other hand, we deal
 formalization is designed to let us prove directly all possible theorem
 schemes of a certain kind (specifically, all possible schemes
 expressible in <A HREF="#simplemetalogic">simple metalogic</A>).
+</P>
 
 <P>Metamath's system does not have the traditional system's
 (metalogical) notions of "not free in" and "free for" built in, so the
@@ -3313,6 +3411,7 @@ system, actually, since every scheme in Metamath's system <I>is</I> a
 scheme of the traditional system) with conventions that are based on a
 formula's <I>logical</I> properties (rather than its <I>structure,</I>
 as is the case with the traditional axioms).
+</P>
 
 <P>To say that "` x ` is
 effectively not free in ` ph ` ," we can use the hypothesis ` ph -> `
@@ -3332,11 +3431,13 @@ that stands for
 ` A. x ( ph -> A. x ph ) ` .
 
 See definition ~ df-nf .
+</P>
 
 <P>We can emulate "free for" through the use of our definition of proper
 substitution ~ df-sb , as shown for example in
 the approximate equivalent to ~ stdpc4 in the
 table above.
+</P>
 
 <!-- In all, the traditional schemes requiring the notions of "not free
 in" and "free for" can be emulated with Metamath schemes ~ stdpc4 , ~ stdpc5 ,
@@ -3354,6 +3455,7 @@ Natural deduction is straightforward to
 emulate in our Hilbert-style system by exploiting the properties
 of wff metavariables, using the rules described on the
 <A HREF="natded.html">deduction form and natural deduction</A> page.
+</P>
 
 <!--
 <P><A NAME="tradopn"></A><B><FONT COLOR="#006633">An open
@@ -3373,7 +3475,6 @@ HREF="../award2003.html#17">open problem (Item 17)</A> is:  Which of the
 presence of the "logical" axioms stdpc4 through stdpc7?
 -->
 
-
 <P><HR NOSHADE SIZE=1><A NAME="distinct"></A><B><FONT
 COLOR="#006633">Appendix 3:  Distinct
 Variables</FONT></B>&nbsp;&nbsp;&nbsp; In logic and set theory
@@ -3387,19 +3488,18 @@ it is based, Metamath implements three kinds of provisos through the use
 of its "distinct variable" conditions.  These restrict what
 substitutions are allowed, and often you will see a proviso such as the
 following accompanying an axiom or theorem (for example, ~ ax-5 and ~ dtru ):
+</P>
 
-<P><CENTER>Distinct variable groups:
-&nbsp;
-` x ` ,` y `
-&nbsp;
-` x ` ,` ph `
-&nbsp;
-` x ` ,` A `
+<P>
+<CENTER>Distinct variable groups:
+&nbsp; ` x ` ,` y ` &nbsp; ` x ` ,` ph ` &nbsp; ` x ` ,` A `
 </CENTER>
+</P>
 
-<P>These three groups (in this example 3 pairs)
- have the following meanings, respectively, as side conditions of
- the theorem scheme or axiom scheme shown above them:
+<P>
+These three groups (in this example 3 pairs)  have the following meanings,
+respectively, as side conditions of the theorem scheme or axiom scheme shown
+above them:
 <OL><LI>
 where ` x `
 and
@@ -3426,19 +3526,24 @@ does not occur in
 and </LI><LI>where
 ` x `
 does not occur in
-` A ` .</LI></OL>
+` A ` .</LI>
+</OL>
+</P>
 
-<P><FONT SIZE="-1">[Actually, there is only <I>one</I> rule in the
-Metamath language itself:  the two expressions that are substituted for
-the two variables in a distinct variable pair must not have any
-variables in common.  This is why a distinct variable pair is officially
-called a "disjoint variable pair" in the Metamath specification.  We
-present the rule as three separate cases above for clarity.  In the set
-theory database file, set.mm, we adopt the convention that at least one
-setvar variable always appears in a distinct variable pair, so these are
-the only cases you will see.  Under this convention, a distinct variable
-pair such as "` A ` ,` ph `" will never occur, even
-though technically it is not illegal.]</FONT><P>
+<P>
+<FONT SIZE="-1">
+[Actually, there is only <I>one</I> rule in the Metamath language itself: the
+two expressions that are substituted for the two variables in a distinct
+variable pair must not have any variables in common.  This is why a distinct
+variable pair is officially called a "disjoint variable pair" in the Metamath
+specification.  We present the rule as three separate cases above for clarity.
+In the set theory database file, set.mm, we adopt the convention that at least
+one setvar variable always appears in a distinct variable pair, so these are
+the only cases you will see.  Under this convention, a distinct variable pair
+such as "` A ` ,` ph `" will never occur, even though technically it is not
+illegal.]
+</FONT>
+</P>
 
 Note that
 <P><CENTER>Distinct variable group:
@@ -3450,10 +3555,12 @@ means the same thing as
 &nbsp;
 ` x ` ,` ph `
 </CENTER>
+</P>
 
-<P>Finally, if more than two variables appear in a group, this is an
-abbreviated way of saying that the restrictions
-apply to all possible pairs in the group.  So,
+<P>
+Finally, if more than two variables appear in a group, this is an abbreviated
+way of saying that the restrictions apply to all possible pairs in the group.
+So,
 <P><CENTER>Distinct variable group:
 &nbsp;
 ` x ` ,` y ` ,` ph `
@@ -3467,26 +3574,26 @@ means the same thing as
 &nbsp;
 ` y ` ,` ph `
 </CENTER>
+</P>
 
-<P>The basic rule to remember is that
-<B>distinct variable provisos are inherited by substitutions</B>
-(that take place in a proof step).
-For example, look at step 1 of the proof of ~ cleljustALT , which has a
-substitution instance of ~ ax-5 .  As you can see, ~ ax-5 requires the
-distinct variable pair ` x ` ,` ph ` .
+<P>
+The basic rule to remember is that <B>distinct variable provisos are inherited
+by substitutions</B> (that take place in a proof step).  For example, look at
+Step 1 of the proof of ~ cleljustALT , which has a substitution instance of
+~ ax-5 .  As you can see, ~ ax-5 requires the distinct variable pair ` x ` ,
+` ph ` .
 
 Step 1  substitutes ` z ` for ` x ` and ` x e. y ` for ` ph ` .
 
-This substitution transforms the original distinct variable requirement
-into the two distinct variable pairs ` z ` ,` x ` and ` z ` ,` y ` ,
-which will implicitly accompany step 1 (although not
-shown explicitly in step 1 of the proof listing).  Thus step 1 can be
-read in full, "` ( x e. y -> A. z ` ` x e. y ) ` where ` z ` ,` x ` are
-distinct and ` z ` ,` y ` are distinct."  The proof
-verifier will check that this requirement accompanies the final theorem,
-otherwise it will flag the proof step as invalid.  You can see this
+This substitution transforms the original distinct variable requirement into
+the two distinct variable pairs ` z ` ,` x ` and ` z ` ,` y ` , which will
+implicitly accompany step 1 (although not shown explicitly in step 1 of the
+proof listing).  Thus step 1 can be read in full, "` ( x e. y -> A. z `
+` x e. y ) ` where ` z ` ,` x ` are distinct and ` z ` ,` y ` are distinct."
+The proofverifier will check that this requirement accompanies the final
+theorem, otherwise it will flag the proof step as invalid.  You can see this
 requirement in the "Distinct variable groups" list on the ~ cleljustALT page.
-
+</P>
 
 <P><A NAME="dvexample"></A>This can be confusing if you don't understand
 how distinct variables requirements are inherited from referenced axioms
@@ -3516,24 +3623,25 @@ its distinct variable requirements is much weaker than axiom ~ ax-13 .
 (If we omit them, the Metamath proof verifier will give an error message.)
 We say that the distinct variable requirements in ~ ax13w are inherited
 from ~ ax-5 .
-
+</P>
 
 <P>In the Metamath language, distinct variable requirements are
 specified with $d statements, placed before an assertion
 ($a or $p) and  in the same scope.  Each theorem must be accompanied by
 those $d statements needed to satisfy all distinct variable
 requirements implicitly attached the proof steps.
+</P>
 
-
-<P>To get a concrete feel for distinct variable requirements, you can
-temporarily comment out the "$d x z $." condition for theorem ~ cleljustALT in
-the database file set.mm.   When you try to verify the proof with the
-<A HREF="../index.html#mmprog">Metamath program</A>,
-the resulting error message will read as follows.  (Note that the "normal"
-proof format is used, which you can convert to with "save proof cleljustALT
-/normal", and step 25 here corresponds to step 1 on the web page;
-steps 1&ndash;24 are syntax building steps that can be seen with "show proof
-cleljustALT /all" while step 25 is the first essentiel step.)
+<P>
+To get a concrete feel for distinct variable requirements, you can temporarily
+comment out the "$d x z $." condition for theorem ~ cleljustALT in the database
+file set.mm.   When you try to verify the proof with the
+<A HREF="../index.html#mmprog">Metamath program</A>, the resulting error
+message will read as follows.  (Note that the "normal" proof format is used,
+which you can convert to with "save proof cleljustALT /normal", and step 25
+here corresponds to step 1 on the web page; steps 1&ndash;24 are syntax
+building steps that can be seen with "show proof cleljustALT /all" while step
+25 is the first essentiel step.)
 <PRE>
 MM> verify proof cleljustALT
 cleljustALT
@@ -3551,8 +3659,7 @@ statements during proof development.  Alternately, the
 <A HREF="../index.html#mmj2">mmj2</A> program will compute the necessary
 $d's automatically.
 
-<!--
- To get a concrete feel for distinct
+<!-- To get a concrete feel for distinct
 variable restrictions, temporarily comment out a $d statement in a
 theorem in the database file set.mm then type "read set.mm" then "verify
 proof *" in the <A HREF="../index.html#mmprog">Metamath program</A> to
@@ -3561,7 +3668,7 @@ violation.  If you are having trouble understanding the distinct
 variable concept, you should really do this experiment to help you
 understand it better.
 -->
-
+</P>
 
 <P>For a dynamic example of distinct variable inheritance in action,
 enter the <A HREF="../mmsolitaire/mms.html#q7">first proof</A> of
@@ -3574,10 +3681,14 @@ distinct variable requirement that is inherited at the tenth step (ax-16).
 <P>Constants are considered distinct from all variables and never
 appear (nor are allowed to appear) in a distinct variable group.
 See the comment for ~ isset .
+</P>
 
-<P><A NAME="dv-history"></A><CENTER><B><FONT COLOR="#006633">History of
-distinct variables</FONT></B></CENTER>
-
+<P>
+<A NAME="dv-history"></A>
+<CENTER>
+<B><FONT COLOR="#006633">History of distinct variables</FONT></B>
+</CENTER>
+</P>
 
 <P>The idea of using distinct variable conditions in place of the more
 complicated free-variable concept of <A HREF="#traditional">traditional
@@ -3588,6 +3699,7 @@ notion in the axiom system:  "Instead of the general notion of proper
 substitution we use...a much more elementary and special notion:  that
 of replacement, of one variable by another, in an atomic formula."  [<A
 HREF="#Tarski">Tarski</A>, p. 62].
+</P>
 
 <P>Below we show the two axiom schemes of Tarski's system that involve
 distinct variable conditions, in their original form:
@@ -3613,10 +3725,11 @@ which are accompanied by distinct variable conditions that can be read "where
 ` x ` doesn't occur in ` ph `" and "where ` x ` and ` y ` are distinct"
 respectively.  (Our official ~ ax-6 does not have a distinct variable condition
 in order to make it simpler to state and use.)
+</P>
 
 <P><A NAME="dv-notes"></A><CENTER><B><FONT COLOR="#006633">Notes
 on distinct variables</FONT></B></CENTER>
-
+</P>
 
 <P><A NAME="dvnote1"></A><B><FONT COLOR="#006633">Note
 1</FONT></B>&nbsp;&nbsp;&nbsp; Sometimes new or "dummy" variables are
@@ -3624,11 +3737,13 @@ used inside of a proof that do not appear in the theorem being proved.  On
 the web pages we omit them from the "Distinct variable group(s)" list,
 which is intended to show only those distinct variable requirements that
 need to be satisfied by any proof that <I>references</I> the theorem.
+</P>
 
 <P>If a proof uses dummy variables, we list them on a separate line
 beginning "Dummy variables...".  For simplicity, we assume that dummy
 variables are mutually distinct and distinct from all other variables,
 and this assumption is indicated after the list.
+</P>
 
 <P>Sometimes it is not strictly necessary for a dummy variable to be
 distinct from certain other variables, for example when those variables
@@ -3637,6 +3752,7 @@ In that case, it is <I>optional</I> whether or not we include those
 variables paired with the dummy variable in $d statements in the set.mm
 file.  Sometimes you will see such optional $d statements omitted,
 depending on the preferences of the person who created the proof.
+</P>
 
 <P>In principle, we could list on the web page only those pairs with
 dummy variables that are actually specified to be distinct in the set.mm
@@ -3650,6 +3766,7 @@ since you don't have to keep checking a distinct variable list.
 If you want to see which ones were actually specified for
 a particular proof, you can consult the set.mm source file or use the
 metamath program command 'show statement ...  /full'.
+</P>
 
 <P><A NAME="dvnote2"></A><B><FONT COLOR="#006633">Note
 2</FONT></B>&nbsp;&nbsp;&nbsp; An issue that has been
@@ -3669,6 +3786,7 @@ hidden.
 <!-- And importantly, existing databases are
 compatible with either method, whereas if someday we make $d statements
 optional for dummy variables, it would be hard to go back. -->
+</P>
 
 <P>Some people who dislike this requirement
  have made $d statements for dummy variables
@@ -3678,6 +3796,7 @@ is <A HREF="../other.html#hmm">Hmm</A>.
 There is nothing wrong with this in principle, and we could even
 make <I>all</I> $d statements for theorems optional&mdash;see <A
 HREF="#dvnote5">Note 5</A> below.
+</P>
 
 <P><A NAME="dvnote3"></A> <A NAME="allowedsubst"></A><B><FONT
 COLOR="#006633">Note 3</FONT></B>&nbsp;&nbsp;&nbsp; Textbooks often use
@@ -3686,6 +3805,7 @@ substituted for ` ph ` .  The Metamath
 language doesn't have a notation like this, but we can achieve the
 logical equivalent simply by <I>omitting</I> the distinct variable group
 ` x ` ,` ph ` , as the example ~ axsep shows.
+</P>
 
 <!-- Since this isn't obvious from the theorem itself, it is
 important to pay attention to the distinct variable groups to detect
@@ -3697,7 +3817,7 @@ in Metamath, <I>any</I> variable may appear in a substitution instance
 of a wff by default; it is the <I>exceptions</I> that must be made
 explicit with distinct variable requirements.  Keeping this in mind
 may make the comparison to logic textbooks a little easier.
- -->
+</P> -->
 
 <P>We can reconstruct the ` ph `(` x `) notation from
 the distinct variable conditions that are omitted.  On the individual
@@ -3710,19 +3830,22 @@ both) in any expression substituted for wff variable ` ph ` .  Note that
 this is an informal, unofficial notation, not part of the Metamath language.
 <!-- , and shouldn't be confused with the notation ` [ x / y ] ph `
 which means "the proper substitution of ` x ` for ` y `" ( ~ df-sb ).  -->
+</P>
 
-<P>Keep in mind that the "Allowed substitution hints" are <I>not</I>
-necessarily a
-complete list of all possible substitutions but are provided as a
-convenience to help you more easily determine what substitutions are
-allowed, in contrast to the "Distinct variable groups" which tell you
-which ones are forbidden.  There are six things to be aware of.
+<P>
+Keep in mind that the "Allowed substitution hints" are <I>not</I> necessarily a
+complete list of all possible substitutions but are provided as a convenience
+to help you more easily determine what substitutions are allowed, in contrast
+to the "Distinct variable groups" which tell you which ones are forbidden.
+There are six things to be aware of.
+</P>
 
 <P>1. If the theorem has no "Distinct variable groups", such as ~ mpteq2ia ,
 any substitution at all (honoring the
 variable types) is permissable, so an "Allowed substitution hints" list
 would be pointless and is not shown to reduce possibly-confusing
 clutter.
+</P>
 
 <P>2. If the theorem has "Distinct variable groups" and a wff or
 class variable is missing from the "Allowed substitution hints", such as
@@ -3731,6 +3854,7 @@ the setvar variables ` x ` or ` y ` may appear in a class expression
 substituted for ` A ` .  It is
 acceptable to substitute any class expression for ` A ` that <I>doesn't</I>
 contain these two variables but possibly contains others such as ` z ` .
+</P>
 
 <P>3. If the theorem has "Distinct variable groups" but does not
 have an "Allowed substitution hints" list, such as ~ dftr5 , it means that
@@ -3741,6 +3865,7 @@ in an expression substituted for ` A ` .
 Other setvar variables such as ` z ` may appear, though.
 This includes any dummy variables that may be used by the
 proof, since they do not appear in the theorem or its hypotheses.
+</P>
 
 <P>4. The list of variables in parentheses after a wff or class
 variable shows the permissable setvar variables that may appear in a
@@ -3748,6 +3873,7 @@ substitution <I>among those in the theorem</I> (or its hypotheses).
 There is nothing preventing the use of setvar variables that do not appear
 in the theorem.  For example, in ~ axsep , ` x ` and ` w ` may appear in an
 expression substituted for ` ph ` , but not ` y ` or ` z ` .
+</P>
 
 <P>5. The setvar variable list in parentheses says nothing about
 whether those setvar variables need to be mutually distinct.  Only the
@@ -3755,6 +3881,7 @@ whether those setvar variables need to be mutually distinct.  Only the
 ` ph `(` x ` ,` y `) appears in the "Allowed substitution hints" for both
 ~ ralcom and ~ ralcom2 ; ` x ` and ` y ` must be distinct in the former but
 not the latter.
+</P>
 
 <P>6. The hypotheses of a theorem may impose additional
 conditions on how the variables in parentheses may appear in the wff or
@@ -4474,7 +4601,7 @@ Omit all predicate calculus axioms <I>except</I>
 <I>metalogically</I>) complete.  This means that
 any substitution instance of the omitted axioms that contains
 no wff metavariables and whose setvar variables are
-mutually distinct can be derived from from the axioms of this
+mutually distinct can be derived from the axioms of this
 subsystem.  However, many schemes with wff metavariables or
 bundled setvar variables cannot be derived.  In particular,
 ~ ax-10 ,
@@ -4512,7 +4639,7 @@ HREF="../award2003.html#9b">Workshop Miscellany</A> page.</TD></TR>
 
 <TR><TD> ~ ax-12 , ~ ax-c16 , ~ ax-5 </TD><TD>It
 is known that ~ ax-12 can be derived from the
-axioms of this subsystem (see theorem ~ ax12 ).</TD></TR>
+axioms of this subsystem (see theorem ~ ax12o ).</TD></TR>
 
 <TR><TD> ~ ax-c11 and ~ ax-12 </TD><TD>It is conjectured that ~ ax-c11 cannot
 be derived from the axioms of this subsystem.</TD></TR>
@@ -4550,47 +4677,50 @@ HREF="../award2003.html#12">Workshop Miscellany</A> page.
 </TABLE>
 </CENTER>
 
+<P>
+<HR NOSHADE SIZE=1><A NAME="oldaxioms"></A><B>
+<FONT COLOR="#006633">Appendix 8:  Axiom Numbering Before December 2018</FONT>
+</B>
+&nbsp;&nbsp;&nbsp;
+On 20-Dec-2018, the <A HREF="#pcaxioms">predicate calculus</A> axiom schemes
+were renumbered to eliminate gaps caused by obsolete or redundant axiom
+schemes, as well as to order them according to their current organization.
+Older papers, slide presentations, and websites may reference the old
+numbering, and the table below provides a cross reference.
+</P>
 
-<P><HR NOSHADE SIZE=1><A NAME="oldaxioms"></A><B><FONT
-COLOR="#006633">Appendix 8:  Axiom Numbering
-Before December 2018</FONT></B>&nbsp;&nbsp;&nbsp;
-
-On 20-Dec-2018, the <A HREF="#pcaxioms">predicate calculus</A> axiom
-schemes were renumbered to eliminate gaps caused by obsolete or
-redundant axiom schemes, as well as to order them according to their
-current organization.  Older papers, slide presentations, and websites
-may reference the old numbering, and the table below provides a cross
-reference.
-
-<P>For further information about this renumbering, see this <A
+<P>
+For further information about this renumbering, see this <A
 HREF="https://groups.google.com/d/msg/metamath/OS4I_A32RTQ/6J2DmsJWCwAJ">Google
-Group discussion</A> [retrieved 27-Dec-2018] and this <A
-HREF="https://github.com/metamath/set.mm/issues/703">GitHub
-discussion</A> [retrieved 27-Dec-2018].
+Group discussion</A> [retrieved 27-Dec-2018] and this
+<A HREF="https://github.com/metamath/set.mm/issues/703">GitHub discussion</A>
+[retrieved 27-Dec-2018].
+</P>
 
-<P>Axioms with names starting "ax-c" are now obsolete, but they were
-part of system S3' in Remark 9.6 of [<A HREF="#bibmegill">Megill</A>];
-for example, ~ ax-c4 is axiom C4' there.  Axiom ~ ax-c11n was a newer
-alternative to ~ ax-c11 , although eventually we proved it redundant
-(theorem ~ axc11n ). Axiom C5 (not primed) is taken from system S3 but
-is included in S3' as stated in the paper.  The
-obsolete axioms ~ ax-c4 through ~ ax-c16 are kept for historical
-reasons in a deprecated section of set.mm and shouldn't be used outside
-of that section.
+<P>
+Axioms with names starting "ax-c" are now obsolete, but they were part of
+system S3' in Remark 9.6 of [<A HREF="#bibmegill">Megill</A>]; for example,
+~ ax-c4 is axiom C4' there.  Axiom ~ ax-c11n was a newer alternative to
+~ ax-c11 , although eventually we proved it redundant (theorem ~ axc11n ).
+Axiom C5 (not primed) is taken from system S3 but is included in S3' as stated
+in the paper.  The obsolete axioms ~ ax-c4 through ~ ax-c16 are kept for
+historical reasons in a deprecated section of set.mm and shouldn't be used
+outside of that section.
+</P>
 
-<P>In the "Proof" column, the referenced theorem has two meanings.  In
-the rows for new axiom numbers ~ ax-4 through ~ ax-13 , the "Proof"
-column theorem shows a proof of the axiom from the obsolete ones ~ ax-c4
-through ~ ax-c16 . This is useful to see how our current axioms can be
-derived from the original ones in [<A HREF="#bibmegill">Megill</A>].  In the
-rows for ~ ax-c4 through ~ ax-c16 , the "Proof" column theorem shows a
-derivation of the obsolete axiom from our current system ~ ax-4 through
-~ ax-13 .  Together, these proofs show that our current system is
-equivalent to the one in [<A HREF="#bibmegill">Megill</A>].
+<P>
+In the "Proof" column, the referenced theorem has two meanings.  In the rows
+for new axiom numbers ~ ax-4 through ~ ax-13 , the "Proof" column theorem shows
+a proof of the axiom from the obsolete ones ~ ax-c4 through ~ ax-c16 .  This is
+useful to see how our current axioms can be derived from the original ones in
+[<A HREF="#bibmegill">Megill</A>].  In the rows for ~ ax-c4 through ~ ax-c16 ,
+the "Proof" column theorem shows a derivation of the obsolete axiom from our
+current system ~ ax-4 through ~ ax-13 .  Together, these proofs show that our
+current system is equivalent to the one in [<A HREF="#bibmegill">Megill</A>].
+</P>
 
-<!-- Note that &#8203; is a zero-width space that prevents the
-  label from being changed if a global substitution is done. -->
-
+<!-- Note that &#8203; is a zero-width space that prevents the label from being
+changed if a global substitution is done. -->
 
 <CENTER>
 <TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -4604,7 +4734,6 @@ SUMMARY="Cross reference between orginal and new predicate calculus axioms">
 <TD><FONT COLOR="#006633"><B>Content</B></FONT></TD>
 <TD><FONT COLOR="#006633"><B>Description</B></FONT></TD>
 </TR>
-
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-4 </TD><TD> ax-5&#8203; </TD><TD> ~ ax4 </TD><TD> - </TD>
@@ -4647,7 +4776,7 @@ SUMMARY="Cross reference between orginal and new predicate calculus axioms">
 <TD> Quantifier Commutation </TD></TR>
 
 <TR ALIGN=LEFT>
-<TD> ~ ax-12 </TD><TD> ax-11&#8203; </TD><TD> ~ ax12 </TD><TD> - </TD>
+<TD> ~ ax-12 </TD><TD> ax-11&#8203; </TD><TD> ~ ax12o </TD><TD> - </TD>
 <TD> ` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD>
 <TD> Substitution </TD></TR>
 
@@ -4658,7 +4787,6 @@ SUMMARY="Cross reference between orginal and new predicate calculus axioms">
 
 <TR ALIGN=LEFT>
 <TD COLSPAN=6> </TD></TR>
-
 
 <TR ALIGN=CENTER><TD COLSPAN=6><B>Obsolete axioms</B></TD></TR>
 
@@ -4716,62 +4844,63 @@ SUMMARY="Cross reference between orginal and new predicate calculus axioms">
 <TD> ` |- ( A. x ` ` x = y -> ( ph -> A. x ph ) ) ` , where ` x ` and ` y ` are
 distinct </TD>
 <TD> Distinct Variables </TD></TR>
-
-
 </TABLE>
 </CENTER>
 
+<P>
+<HR NOSHADE SIZE=1><A NAME="read"></A>
+<B><FONT COLOR="#006633">Reading Suggestions</FONT></B>&nbsp;&nbsp;&nbsp;
+Logic and set theory provide a foundation for all of mathematics.  One possible
+way to start to learn about them is to use the Metamath Proof Explorer in
+conjunction with one or more textbooks listed in the Bibliography of the next
+section.  The textbooks provide a motivation for what we are doing, whereas the
+Metamath Proof Explorer lets you see in detail all hidden and implicit steps.
+Most standard theorems are accompanied by <A HREF="mmbiblio.html">literature
+cross references</A>, and it will probably be easier to acquire a higher-level
+understanding of them if you consult these.
+</P>
 
-<P><HR NOSHADE SIZE=1><A NAME="read"></A><B><FONT
-COLOR="#006633">Reading Suggestions</FONT></B>&nbsp;&nbsp;&nbsp; Logic
-and set theory provide a foundation for all of mathematics.  One
-possible way to start to learn about them is to use the Metamath Proof
-Explorer in conjunction with one or more textbooks listed in the
-Bibliography of the next section.  The textbooks provide a motivation
-for what we are doing, whereas the Metamath Proof Explorer lets you see
-in detail all hidden and implicit steps.  Most standard theorems are
-accompanied by <A HREF="mmbiblio.html">literature cross references</A>,
-and it will probably be easier to acquire a higher-level understanding
-of them if you consult these.
+<P>
+For propositional and predicate calculus, Margaris is now available in an
+inexpensive Dover edition and is reasonably readable for beginners, once you
+get used to the archaic dot notation used in place of parentheses.  Our 19.x
+series of theorems, such as ~ 19.35 , corresponds to Margaris' handy predicate
+calculus table on pp. 89-90.  Hirst and Hirst's on-line <I>A Primer for Logic
+and Proof</I>, mentioned <A HREF="#traditional">above</A>, uses modern notation
+and is also highly recommended.
+</P>
 
-<P>For propositional and predicate calculus, Margaris is now available
-in an inexpensive Dover edition and is reasonably readable for
-beginners, once you get used to the archaic dot notation used in place
-of parentheses.  Our 19.x series of theorems, such as ~ 19.35 , corresponds
-to Margaris' handy predicate
-calculus table on pp. 89-90.  Hirst and Hirst's on-line <I>A Primer for
-Logic and Proof</I>, mentioned <A HREF="#traditional">above</A>, uses
-modern notation and is also highly recommended.
+<P>
+For set theory, Quine is wonderfully written and a pleasure to read.  The first
+part on virtual classes (pp. 15-21) is a must-read if you want to understand
+our <FONT COLOR="#CC33CC">purple</FONT> class variables (which in Quine are
+Greek letters).  (See also the <A HREF="#class">Theory of Classes</A> above.)
+Quine also uses the archaic dot notation, but this is really a very minor
+hurdle, especially since you can compare the Metamath versions of many of the
+theorems.  Takeuti and Zaring is the set theory reference we follow most
+closely, including most of our notation, and its rigor makes it straightforward
+to formalize proofs; but some people find it a dry and technical read, and it
+is also out of print.  Suppes, which is available in a Dover edition, goes to
+extremes to <I>avoid</I> virtual classes, leading to bizarre theorems like "the
+set of all sets is empty" (Theorem 50, p. 35); nonetheless, it provides a
+gentle introduction that we reference surprisingly frequently.
+</P>
 
-<P>For set theory, Quine is wonderfully written and a pleasure to read.
-The first part on virtual classes (pp. 15-21) is a must-read if you want
-to understand our <FONT COLOR="#CC33CC">purple</FONT> class variables
-(which in Quine are Greek letters).  (See also the
-<A HREF="#class">Theory of Classes</A> above.)
-  Quine also uses the archaic dot
-notation, but this is really a very minor hurdle, especially since you
-can compare the Metamath versions of many of the theorems.  Takeuti and
-Zaring is the set theory reference we follow most closely, including
-most of our notation, and its rigor makes it straightforward to
-formalize proofs; but some people find it a dry and technical read, and
-it is also out of print.  Suppes, which is available in a Dover edition,
-goes to extremes to <I>avoid</I> virtual classes, leading to bizarre
-theorems like "the set of all sets is empty" (Theorem 50, p. 35);
-nonetheless, it provides a gentle introduction that we reference
-surprisingly frequently.
+<P>
+Margaris and Quine give only an informal explanation of their dot notation that
+may not satisfy everyone.  A good explanation can be found in Copi's
+<I>Symbolic Logic</I> (5th edition), Section 9.3, with multiple examples.
+(Thanks to Patrick Clot for this suggestion.)
+</P>
 
-<P>Margaris and Quine give only an informal explanation of their
-dot notation that may not satisfy everyone.  A good
-explanation can be found in Copi's <I>Symbolic Logic</I> (5th edition),
-Section 9.3, with multiple examples. (Thanks to Patrick Clot for
-this suggestion.)
+<P>
+Some closely followed texts in the Metamath Proof Explorer are listed below.  I
+am not specifically endorsing them but just indicating which books and papers I
+consulted frequently while building the database.
+</P>
 
-<P> Some closely followed texts in the Metamath Proof Explorer are
-listed below.  I am not specifically endorsing them but just
-indicating which books and papers I consulted frequently while building
-the database.
-
-<MENU> <LI> Axioms of propositional calculus&mdash;Margaris.</LI>
+<MENU>
+<LI> Axioms of propositional calculus&mdash;Margaris.</LI>
 
 <LI>
 Theorems of propositional calculus&mdash;Whitehead and Russell.</LI>
@@ -4813,7 +4942,6 @@ shelves.  These may differ slightly for resources assigned by the
 libary itself, and the ones we show are used by the MIT libraries.
 
 <OL>
-
 
 <LI><A NAME="Adamek"></A> [Adamek] Ji&#345;&iacute; Ad&aacute;mek, Horst
 Herrlich, George E. Strecker, <I>Abstract and Concrete Categories:  The Joy of
@@ -5275,8 +5403,7 @@ HREF="http://projecteuclid.org/euclid.ndjfl/1040149359"
 preprint</A> has the same content (with corrections) but pages are
 numbered 1-22, and the database references use the numbers printed on the
 page itself, not the PDF page numbers.  See <A HREF="#technote">technical
-note 1</A> above for
-some additional notes on this paper.</LI>
+note 1</A> above for some additional notes on this paper.</LI>
 
 <LI><A NAME="MegPav2000"></A> [MegPav2000] Megill, N. and M.
 Pavi&#269;i&#263;, "Equations, States, and Lattices of
@@ -5479,22 +5606,25 @@ Cambridge University Press, Cambridge, 1962 [QA9.W592 1962]; available
 at <A
 HREF="https://ia600602.us.archive.org/35/items/PrincipiaMathematicaVolumeI/WhiteheadRussell-PrincipiaMathematicaVolumeI_text.pdf"
 >https://ia600602.us.archive.org/35/items/PrincipiaMathematicaVolumeI/WhiteheadRussell-PrincipiaMathematicaVolumeI_text.pdf</A>
-(retrieved 22-Jan-2018). </LI>
-
+(retrieved 22-Jan-2018).</LI>
 </OL>
 
-<P><HR NOSHADE SIZE=1><A NAME="textonly"></A><B><FONT
-COLOR="#006633">Browsers and Fonts</FONT></B>
+<P>
+<HR NOSHADE SIZE=1><A NAME="textonly"></A>
+<B><FONT COLOR="#006633">Browsers and Fonts</FONT></B>
+</P>
 
-
-<P> <A NAME="unicode"></A><B><FONT COLOR="#006633">Browsing with the
-Unicode font </FONT></B>&nbsp;&nbsp;&nbsp; By default, the Metamath
-Proof Explorer uses a Unicode font for math symbols.  Some browsers may
-render Unicode incorrectly, although the problem is becoming less
-frequent.  On each page with a proof, at the top there
-is a link to switch to the GIF version.  You will stay in the
-GIF directory (you will see "mpegif" instead of "mpeuni" in the
-URL) until you switch back to the Unicode font version on a page with a proof.
+<P>
+<A NAME="unicode"></A><B>
+<FONT COLOR="#006633">Browsing with the Unicode font </FONT></B>
+&nbsp;&nbsp;&nbsp;
+By default, the Metamath Proof Explorer uses a Unicode font for math symbols.
+Some browsers may render Unicode incorrectly, although the problem is becoming
+less frequent.  On each page with a proof, at the top there is a link to switch
+to the GIF version.  You will stay in the GIF directory (you will see "mpegif"
+instead of "mpeuni" in the URL) until you switch back to the Unicode font
+version on a page with a proof.
+</P>
 
 <!--
 <P>Unfortunately, Internet Explorer versions 6 and 7 do not implement
@@ -5507,23 +5637,27 @@ Mozilla</A> [retrieved 21-Dec-2016] browsers implement them correctly.
 Safari on MacOS X (10.3.9) has also been reported to work.
 -->
 
-<P>If you know of any browsers that work correctly with Metamath's
-Unicode symbols, let me know so that I can put the information here.  To
-check for correctness, compare the symbols in Unicode and GIF versions
-of the <A HREF="mmascii.html">ASCII token chart</A>.
+<P>
+If you know of any browsers that work correctly with Metamath's Unicode
+symbols, let me know so that I can put the information here.  To check for
+correctness, compare the symbols in Unicode and GIF versions of the
+<A HREF="mmascii.html">ASCII token chart</A>.
+</P>
 
-<P> <A NAME="font"></A><B><FONT COLOR="#006633">Display font
-</FONT></B>&nbsp;&nbsp;&nbsp; Since some people spend a great deal of
-time studying this site, I purposely left the main font unspecified so
-that you can choose the one you find the most comfortable.  In Firefox,
-select Tools -&gt; Options -&gt; Content -&gt; Default font.  In
-Internet Explorer 11, select (gear symbol) -&gt; Internet Options -&gt;
-General -&gt; Fonts.  On Windows, Times New Roman is the standard font.
-If you prefer a sans-serif font, Arial will align correctly with our
+<P>
+<A NAME="font"></A><B><FONT COLOR="#006633">Display font</FONT></B>
+&nbsp;&nbsp;&nbsp;
+Since some people spend a great deal of time studying this site, I purposely
+left the main font unspecified so that you can choose the one you find the most
+comfortable.  In Firefox, select Tools -&gt; Options -&gt; Content -&gt;
+Default font.  In Internet Explorer 11, select (gear symbol) -&gt; Internet
+Options -&gt; General -&gt; Fonts.  On Windows, Times New Roman is the standard
+font.  If you prefer a sans-serif font, Arial will align correctly with our
 math symbol GIF images.  By the way, the minty green background color
-(#EEFFFA=r238,g255,b250) used for the proofs was chosen because it has
-been claimed to be less fatiguing for long periods of work, but most
-browsers will let you override it if you wish.
+(#EEFFFA=r238,g255,b250) used for the proofs was chosen because it has been
+claimed to be less fatiguing for long periods of work, but most browsers will
+let you override it if you wish.
+</P>
 
 <!--
 <P>If you are viewing the GIF version of these pages, the appearance may
@@ -5532,31 +5666,32 @@ viewing the Unicode version, the Unicode symbols may be more legible if
 it is turned on.
 -->
 
-<P> <B><FONT COLOR="#006633">Viewing with a text browser
-</FONT></B>&nbsp;&nbsp;&nbsp;The GIF version of the
- Metamath Proof Explorer can be viewed
-with a text-only browser.  All symbols will be shown as the <A
-HREF="mmascii.html">ASCII tokens</A> shown in the set.mm source file.
-The most common text browser,
-Lynx, does not format tables, making proofs somewhat confusing to read.
-But good results are achieved with the table-formatting text browser <A
-HREF="http://w3m.sourceforge.net/">w3m</A> [retrieved 21-Dec-2016].
+<P>
+<B><FONT COLOR="#006633">Viewing with a text browser</FONT></B>
+&nbsp;&nbsp;&nbsp;
+The GIF version of the Metamath Proof Explorer can be viewed with a text-only
+browser.  All symbols will be shown as the <A HREF="mmascii.html">ASCII
+tokens</A> shown in the set.mm source file.  The most common text browser,
+Lynx, does not format tables, making proofs somewhat confusing to read.  But
+good results are achieved with the table-formatting text browser
+<A HREF="http://w3m.sourceforge.net/">w3m</A> [retrieved 21-Dec-2016].
+</P>
 
-<P>One advantage of a text browser is that you can select and copy the
-formulas in a convenient ASCII form that can be pasted into text
-documents, emails, etc.  (The Mozilla browser will also do this if the
-copy buffer is pasted into a text editor.)  Text browsers are also
-extremely fast if you have a slow connection.  If you are blind, a text
-browser can make this site accessible, although for theorem and proof
-displays, direct use of the Metamath program CLI (command-line
-interface) might be more efficient&mdash;I would be interested in any
-feedback on this.
+<P>
+One advantage of a text browser is that you can select and copy the formulas in
+a convenient ASCII form that can be pasted into text documents, emails, etc.
+(The Mozilla browser will also do this if the copy buffer is pasted into a text
+editor.)  Text browsers are also extremely fast if you have a slow connection.
+If you are blind, a text browser can make this site accessible, although for
+theorem and proof displays, direct use of the Metamath program CLI
+(command-line interface) might be more efficient&mdash;I would be interested in
+any feedback on this.
+</P>
 
 <!--
-<P><HR NOSHADE SIZE=1><A NAME="copyright"></A><B><FONT
-COLOR="#006633">Copyright Terms</FONT></B>&nbsp;&nbsp;&nbsp;
+<P><HR NOSHADE SIZE=1><A NAME="copyright"></A><B>
+<FONT COLOR="#006633">Copyright Terms</FONT></B>&nbsp;&nbsp;&nbsp;
 <P>
-
 All text and images displayed on this web page, other than any short
 attributed quotations from other copyrighted sources, are placed in the
 public domain by the author per the <A
@@ -5571,20 +5706,20 @@ Section 107 of the United States Copyright Act (Title 17 of the
 
 <HR NOSHADE SIZE=1>
 
-<TABLE BORDER=0 WIDTH="100%"><TR>
-
+<TABLE BORDER=0 WIDTH="100%">
+<TR>
 <TD ALIGN=LEFT VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
 &nbsp;</FONT></TD>
 
-<TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 15-Jul-2020.</FONT></I><BR><FONT
-FACE="ARIAL" SIZE=-2>Your
- comments are welcome:
-Norman Megill <A HREF="../email.html"><IMG BORDER=0
-SRC="_nmemail.gif"
+<TD NOWRAP ALIGN=CENTER>
+<I><FONT SIZE=-1>This page was last updated on 24-May-2021.</FONT></I>
+<BR>
+<FONT FACE="ARIAL" SIZE=-2>Your comments are welcome: Norman Megill
+<A HREF="../email.html"><IMG BORDER=0 SRC="_nmemail.gif"
 ALT="nm at alum dot mit dot edu"
 TITLE="nm at alum dot mit dot edu"
- WIDTH=90 HEIGHT=13 STYLE="margin-bottom:-3px"></A><BR>
+WIDTH=90 HEIGHT=13 STYLE="margin-bottom:-3px"></A>
+<BR>
 
 <!--
 <A HREF="../copyright.html">Copyright terms and conditions</A><BR>
@@ -5594,15 +5729,13 @@ Copyright terms:
 
 <TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
 <FONT FACE="ARIAL" SIZE=-2>
-<A
-HREF="http://validator.w3.org/check?uri=referer">W3C validator</A>&nbsp;
-&nbsp;<A
-HREF="https://www.google.com/webmasters/tools/mobile-friendly/">Mobile
-test</A>
+<A HREF="http://validator.w3.org/check?uri=referer">W3C validator</A>&nbsp;
+&nbsp;<A HREF="https://www.google.com/webmasters/tools/mobile-friendly/">
+Mobile test</A>
 </FONT>
 </TD>
-
-</TR></TABLE>
+</TR>
+</TABLE>
 
 <!--
 <SCRIPT SRC="http://www.google-analytics.com/urchin.js" TYPE="text/javascript">
