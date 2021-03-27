@@ -918,6 +918,12 @@
 "atsseq" is used by "atnemeq0".
 "atssma" is used by "atordi".
 "ax-10" is used by "hbn1".
+"ax-12" is used by "ax12v".
+"ax-12" is used by "ax12vOLD".
+"ax-12" is used by "ax12vOLDOLD".
+"ax-12" is used by "axc11r".
+"ax-12" is used by "axc15OLD".
+"ax-12" is used by "bj-axc15v".
 "ax-13" is used by "ax13v".
 "ax-3" is used by "con4".
 "ax-3" is used by "dfbi1ALT".
@@ -14239,6 +14245,7 @@ New usage of "atsseq" is discouraged (1 uses).
 New usage of "atssma" is discouraged (1 uses).
 New usage of "avril1" is discouraged (0 uses).
 New usage of "ax-10" is discouraged (1 uses).
+New usage of "ax-12" is discouraged (6 uses).
 New usage of "ax-13" is discouraged (1 uses).
 New usage of "ax-3" is discouraged (2 uses).
 New usage of "ax-4" is discouraged (1 uses).
