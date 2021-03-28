@@ -2846,6 +2846,7 @@
 "braval" is used by "kbass2".
 "braval" is used by "kbass6".
 "braval" is used by "rnbra".
+"brfi1uzindOLD" is used by "brfi1indOLD".
 "c-bnj14" is used by "bnj1000".
 "c-bnj14" is used by "bnj1006".
 "c-bnj14" is used by "bnj1020".
@@ -6088,6 +6089,8 @@
 "fh2" is used by "fh2i".
 "fh2i" is used by "fh4i".
 "fh3i" is used by "mayetes3i".
+"fi1uzindOLD" is used by "brfi1uzindOLD".
+"fi1uzindOLD" is used by "opfi1uzindOLD".
 "fiusgedgfiALT" is used by "usgfisALTlem2".
 "fldcatALTV" is used by "fldcALTV".
 "flddivrng" is used by "isfld2".
@@ -11519,6 +11522,7 @@
 "opelreal" is used by "axrnegex".
 "opelreal" is used by "axrrecex".
 "opelreal" is used by "ltresr".
+"opfi1uzindOLD" is used by "opfi1indOLD".
 "opidon2OLD" is used by "exidreslem".
 "opidonOLD" is used by "opidon2OLD".
 "opidonOLD" is used by "rngopidOLD".
@@ -14975,6 +14979,9 @@ New usage of "bramul" is discouraged (1 uses).
 New usage of "branmfn" is discouraged (1 uses).
 New usage of "braval" is discouraged (10 uses).
 New usage of "brfi1indALT" is discouraged (0 uses).
+New usage of "brfi1indALTOLD" is discouraged (0 uses).
+New usage of "brfi1indOLD" is discouraged (0 uses).
+New usage of "brfi1uzindOLD" is discouraged (1 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
 New usage of "caucvgrlemOLD" is discouraged (1 uses).
@@ -16144,6 +16151,7 @@ New usage of "fh2" is discouraged (3 uses).
 New usage of "fh2i" is discouraged (1 uses).
 New usage of "fh3i" is discouraged (1 uses).
 New usage of "fh4i" is discouraged (0 uses).
+New usage of "fi1uzindOLD" is discouraged (2 uses).
 New usage of "fiusgedgfiALT" is discouraged (1 uses).
 New usage of "fldcALTV" is discouraged (0 uses).
 New usage of "fldcatALTV" is discouraged (1 uses).
@@ -17800,6 +17808,8 @@ New usage of "opelcn" is discouraged (1 uses).
 New usage of "opelopab4" is discouraged (0 uses).
 New usage of "opelopabsbALT" is discouraged (3 uses).
 New usage of "opelreal" is discouraged (8 uses).
+New usage of "opfi1indOLD" is discouraged (0 uses).
+New usage of "opfi1uzindOLD" is discouraged (1 uses).
 New usage of "opidon2OLD" is discouraged (1 uses).
 New usage of "opidonOLD" is discouraged (2 uses).
 New usage of "opnmblALT" is discouraged (0 uses).
@@ -19310,6 +19320,9 @@ Proof modification of "bnj145OLD" is discouraged (112 steps).
 Proof modification of "bnj538OLD" is discouraged (94 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "brfi1indALT" is discouraged (789 steps).
+Proof modification of "brfi1indALTOLD" is discouraged (789 steps).
+Proof modification of "brfi1indOLD" is discouraged (48 steps).
+Proof modification of "brfi1uzindOLD" is discouraged (244 steps).
 Proof modification of "brfvidRP" is discouraged (92 steps).
 Proof modification of "caucvgrlemOLD" is discouraged (1022 steps).
 Proof modification of "caurcvgOLD" is discouraged (266 steps).
@@ -19649,6 +19662,7 @@ Proof modification of "f1oweALT" is discouraged (805 steps).
 Proof modification of "f1rhm0to0ALT" is discouraged (161 steps).
 Proof modification of "falbitruOLD" is discouraged (12 steps).
 Proof modification of "falxortruOLD" is discouraged (19 steps).
+Proof modification of "fi1uzindOLD" is discouraged (1118 steps).
 Proof modification of "fiusgedgfiALT" is discouraged (94 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fourierdlem31OLD" is discouraged (946 steps).
@@ -20201,6 +20215,8 @@ Proof modification of "onfrALTlem5" is discouraged (320 steps).
 Proof modification of "onfrALTlem5VD" is discouraged (421 steps).
 Proof modification of "opelopab4" is discouraged (69 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
+Proof modification of "opfi1indOLD" is discouraged (50 steps).
+Proof modification of "opfi1uzindOLD" is discouraged (271 steps).
 Proof modification of "opidon2OLD" is discouraged (80 steps).
 Proof modification of "opidonOLD" is discouraged (198 steps).
 Proof modification of "opnmblALT" is discouraged (332 steps).
@@ -20462,8 +20478,8 @@ Proof modification of "upgr1eopALT" is discouraged (126 steps).
 Proof modification of "usgedgimpALT" is discouraged (142 steps).
 Proof modification of "usgedgleordALT" is discouraged (127 steps).
 Proof modification of "usgedgvadf1ALT" is discouraged (476 steps).
-Proof modification of "usgfis" is discouraged (611 steps).
-Proof modification of "usgfisALT" is discouraged (495 steps).
+Proof modification of "usgfis" is discouraged (610 steps).
+Proof modification of "usgfisALT" is discouraged (494 steps).
 Proof modification of "usgo0fisALT" is discouraged (64 steps).
 Proof modification of "usgo0s0ALT" is discouraged (114 steps).
 Proof modification of "usgo1s0ALT" is discouraged (119 steps).
