@@ -267,6 +267,7 @@
 "4syl" is used by "acunirnmpt2f".
 "4syl" is used by "aevlem".
 "4syl" is used by "aevlemALT".
+"4syl" is used by "aevlemOLD".
 "4syl" is used by "afv0nbfvbi".
 "4syl" is used by "aomclem6".
 "4syl" is used by "axdc3lem2".
@@ -1442,6 +1443,8 @@
 "axaddf" is used by "axaddcl".
 "axc11nlemALT" is used by "aevlemALT".
 "axc11nlemALT" is used by "axc11nALT".
+"axc11nlemOLD2" is used by "aevlemOLD".
+"axc11nlemOLD2" is used by "axc11nOLD".
 "axc16ALT" is used by "axc16gALT".
 "axc16g-o" is used by "ax12inda2".
 "axc4i-o" is used by "aev-o".
@@ -14104,7 +14107,7 @@ New usage of "4sqlem15OLD" is discouraged (1 uses).
 New usage of "4sqlem16OLD" is discouraged (1 uses).
 New usage of "4sqlem17OLD" is discouraged (1 uses).
 New usage of "4sqlem18OLD" is discouraged (0 uses).
-New usage of "4syl" is discouraged (201 uses).
+New usage of "4syl" is discouraged (202 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
@@ -14193,6 +14196,7 @@ New usage of "aev-o" is discouraged (1 uses).
 New usage of "aevALT" is discouraged (0 uses).
 New usage of "aevOLD" is discouraged (0 uses).
 New usage of "aevlemALT" is discouraged (0 uses).
+New usage of "aevlemOLD" is discouraged (0 uses).
 New usage of "ajfun" is discouraged (0 uses).
 New usage of "ajfuni" is discouraged (1 uses).
 New usage of "ajfval" is discouraged (2 uses).
@@ -14379,6 +14383,7 @@ New usage of "axc11next" is discouraged (0 uses).
 New usage of "axc11nfromc11" is discouraged (0 uses).
 New usage of "axc11nlemALT" is discouraged (2 uses).
 New usage of "axc11nlemOLD" is discouraged (0 uses).
+New usage of "axc11nlemOLD2" is discouraged (2 uses).
 New usage of "axc15OLD" is discouraged (0 uses).
 New usage of "axc16ALT" is discouraged (1 uses).
 New usage of "axc16b" is discouraged (0 uses).
@@ -18946,6 +18951,7 @@ Proof modification of "aev-o" is discouraged (117 steps).
 Proof modification of "aevALT" is discouraged (36 steps).
 Proof modification of "aevOLD" is discouraged (56 steps).
 Proof modification of "aevlemALT" is discouraged (42 steps).
+Proof modification of "aevlemOLD" is discouraged (52 steps).
 Proof modification of "al2imVD" is discouraged (48 steps).
 Proof modification of "alephf1ALT" is discouraged (47 steps).
 Proof modification of "alexsubALT" is discouraged (869 steps).
@@ -19006,6 +19012,7 @@ Proof modification of "axc11next" is discouraged (270 steps).
 Proof modification of "axc11nfromc11" is discouraged (28 steps).
 Proof modification of "axc11nlemALT" is discouraged (58 steps).
 Proof modification of "axc11nlemOLD" is discouraged (55 steps).
+Proof modification of "axc11nlemOLD2" is discouraged (54 steps).
 Proof modification of "axc14" is discouraged (72 steps).
 Proof modification of "axc15OLD" is discouraged (9 steps).
 Proof modification of "axc16ALT" is discouraged (20 steps).
