@@ -924,6 +924,8 @@
 "ax-12" is used by "axc11r".
 "ax-12" is used by "axc15OLD".
 "ax-12" is used by "bj-axc15v".
+"ax-12" is used by "equs5aALT".
+"ax-12" is used by "equs5eALT".
 "ax-13" is used by "ax13v".
 "ax-3" is used by "con4".
 "ax-3" is used by "dfbi1ALT".
@@ -14247,7 +14249,7 @@ New usage of "atsseq" is discouraged (1 uses).
 New usage of "atssma" is discouraged (1 uses).
 New usage of "avril1" is discouraged (0 uses).
 New usage of "ax-10" is discouraged (1 uses).
-New usage of "ax-12" is discouraged (6 uses).
+New usage of "ax-12" is discouraged (8 uses).
 New usage of "ax-13" is discouraged (1 uses).
 New usage of "ax-3" is discouraged (2 uses).
 New usage of "ax-4" is discouraged (1 uses).
@@ -16088,6 +16090,8 @@ New usage of "equidq" is discouraged (0 uses).
 New usage of "equidqe" is discouraged (2 uses).
 New usage of "equncomVD" is discouraged (0 uses).
 New usage of "equncomiVD" is discouraged (0 uses).
+New usage of "equs5aALT" is discouraged (0 uses).
+New usage of "equs5eALT" is discouraged (0 uses).
 New usage of "equsb3ALT" is discouraged (0 uses).
 New usage of "equsexALT" is discouraged (0 uses).
 New usage of "erngbase-rN" is discouraged (4 uses).
@@ -19625,6 +19629,8 @@ Proof modification of "equidq" is discouraged (27 steps).
 Proof modification of "equidqe" is discouraged (30 steps).
 Proof modification of "equncomVD" is discouraged (53 steps).
 Proof modification of "equncomiVD" is discouraged (19 steps).
+Proof modification of "equs5aALT" is discouraged (25 steps).
+Proof modification of "equs5eALT" is discouraged (39 steps).
 Proof modification of "equsb3ALT" is discouraged (44 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
 Proof modification of "etransclem48OLD" is discouraged (1560 steps).
