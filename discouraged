@@ -13422,7 +13422,6 @@
 "supexpr" is used by "supsrlem".
 "suplem1pr" is used by "supexpr".
 "suplem2pr" is used by "supexpr".
-"supmaxlemOLD" is used by "supmaxOLD".
 "supsr" is used by "axpre-sup".
 "supsrlem" is used by "supsr".
 "tb-ax1" is used by "re1ax2".
@@ -14195,6 +14194,7 @@ New usage of "aecoms-o" is discouraged (6 uses).
 New usage of "aev-o" is discouraged (1 uses).
 New usage of "aevALT" is discouraged (0 uses).
 New usage of "aevOLD" is discouraged (0 uses).
+New usage of "aevlem0OLD" is discouraged (0 uses).
 New usage of "aevlemALT" is discouraged (0 uses).
 New usage of "aevlemOLD" is discouraged (0 uses).
 New usage of "ajfun" is discouraged (0 uses).
@@ -18619,8 +18619,6 @@ New usage of "superpos" is discouraged (1 uses).
 New usage of "supexpr" is discouraged (1 uses).
 New usage of "suplem1pr" is discouraged (1 uses).
 New usage of "suplem2pr" is discouraged (1 uses).
-New usage of "supmaxOLD" is discouraged (0 uses).
-New usage of "supmaxlemOLD" is discouraged (1 uses).
 New usage of "supminfOLD" is discouraged (0 uses).
 New usage of "suppss2fOLD" is discouraged (0 uses).
 New usage of "supsr" is discouraged (1 uses).
@@ -18951,6 +18949,7 @@ Proof modification of "addmodlteqALT" is discouraged (237 steps).
 Proof modification of "aev-o" is discouraged (117 steps).
 Proof modification of "aevALT" is discouraged (36 steps).
 Proof modification of "aevOLD" is discouraged (56 steps).
+Proof modification of "aevlem0OLD" is discouraged (57 steps).
 Proof modification of "aevlemALT" is discouraged (42 steps).
 Proof modification of "aevlemOLD" is discouraged (52 steps).
 Proof modification of "al2imVD" is discouraged (48 steps).
@@ -20432,8 +20431,6 @@ Proof modification of "suctrALT2VD" is discouraged (173 steps).
 Proof modification of "suctrALT3" is discouraged (137 steps).
 Proof modification of "suctrALTcf" is discouraged (164 steps).
 Proof modification of "suctrALTcfVD" is discouraged (164 steps).
-Proof modification of "supmaxOLD" is discouraged (144 steps).
-Proof modification of "supmaxlemOLD" is discouraged (159 steps).
 Proof modification of "supminfOLD" is discouraged (275 steps).
 Proof modification of "suppss2fOLD" is discouraged (254 steps).
 Proof modification of "syl5imp" is discouraged (23 steps).
