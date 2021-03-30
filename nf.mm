@@ -39401,13 +39401,39 @@ $)
       XFYGVFVGUUKYOYQVIUUKYOYQVLYHYJVJVMVNVOVPVQWBVRVSVOVSVTVSVTWCBCAUCWA $.
   $}
 
-  $( Cancellation law for natural addition with a non-null condition.
-     (Contributed by SF, 29-Jan-2015.) $)
-  preaddccan2 $p |- ( ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) /\
-  ( M +c N ) =/= (/) ) -> ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
-    ( cplc wceq cnnc w3a c0 wne wa addccom eqeq12i wb 3anrot neeq1i preaddccan1
-    wcel syl2anb syl5bb ) BCDZBADZECBDZABDZEZBFQZCFQZAFQZGZTHIZJCAEZTUBUAUCBCKZ
-    BAKLUHUFUGUEGUBHIUDUJMUIUEUFUGNTUBHUKOBCAPRS $.
+  ${
+     $d M m n p k $. $d N m n p k $. $d P m n p k $.
+     $( Lemma for ~ preaddccan2 . Establish stratification for the induction
+        step.  (Contributed by SF, 30-Mar-2021.) $)
+     preaddccan2lem1 $p |- ( ph ->
+     { m | ( ( ( m +c n ) =/= (/) /\ ( m +c n ) = ( m +c p ) ) -> n = p ) }
+     e. _V ) $= ? $.
+
+     $( Cancellation law for natural addition with a non-null condition.
+     	(Contributed by SF, 29-Jan-2015.) $)
+     preaddccan2 $p |- ( ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) /\
+     ( M +c N ) =/= (/) ) -> ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
+       ( vp vn vm cnnc wcel cplc c0 wne wa wi cv neeq1d anbi12d c0c c1c addceq1
+       wceq w3a addceq2 eqeq2d anbi2d eqeq2 imbi12d imbi2d weq eqeq1d eqeq1 cvv
+       vk preaddccan2lem1 eqeq12d imbi1d addc32 syl6eq addcid2 eqeq12i addcnnul
+       biimpi adantl a1i simpld simpll simplrl nncaddccl syl2anc simplrr simprr
+       ad2antrl simprl prepeano4 syl22anc ex imim1d findsd expcom vtoclga com3l
+       jca 3imp expdimp impbid1 ) BGHZCGHZAGHZUAZBCIZJKZLWIBAIZTZCATZWHWJWLWMWE
+       WFWGWJWLLZWMMZWGWEWFWOWEWFWJWIBDNZIZTZLZCWPTZMZMZMWEWFWOMZMDAGWPATZXBXCW
+       EXDXAWOWFXDWSWNWTWMXDWRWLWJXDWQWKWIWPABUBUCUDWPACUEUFUGUGWFWPGHZWEXAXEWE
+       BENZIZJKZXGWQTZLZEDUHZMZMZMXEWEXAMZMECGXFCTZXMXNXEXOXLXAWEXOXJWSXKWTXOXH
+       WJXIWRXOXGWIJXFCBUBZOXOXGWIWQXPUIPXFCWPUJUFUGUGXFGHZXEXMWEXQXELZXLFNZXFI
+       ZJKZXTXSWPIZTZLZXKMQXFIZJKZYEQWPIZTZLZXKMZULNZXFIZJKZYLYKWPIZTZLZXKMYLRI
+       ZJKZYQYNRIZTZLZXKMXLXRFULBUKXRFEDUMXSQTZYDYIXKUUBYAYFYCYHUUBXTYEJXSQXFSZ
+       OUUBXTYEYBYGUUCXSQWPSUNPUOFULUHZYDYPXKUUDYAYMYCYOUUDXTYLJXSYKXFSZOUUDXTY
+       LYBYNUUEXSYKWPSUNPUOXSYKRIZTZYDUUAXKUUGYAYRYCYTUUGXTYQJUUGXTUUFXFIYQXSUU
+       FXFSYKRXFUPUQZOUUGXTYQYBYSUUHUUGYBUUFWPIYSXSUUFWPSYKRWPUPUQUNPUOXSBTZYDX
+       JXKUUIYAXHYCXIUUIXTXGJXSBXFSZOUUIXTXGYBWQUUJXSBWPSUNPUOYJXRYHXKYFYHXKYEX
+       FYGWPXFURWPURUSVAVBVCYKGHZXRLZUUAYPXKUULUUAYPUULUUALZYMYOYRYMUULYTYRYMRJ
+       KYLRUTVDVKUUMYLGHZYNGHZYTYRYOUUMUUKXQUUNUUKXRUUAVEZUUKXQXEUUAVFYKXFVGVHU
+       UMUUKXEUUOUUPUUKXQXEUUAVIYKWPVGVHUULYRYTVJUULYRYTVLYLYNVMVNWAVOVPVQVRVOV
+       SVTVSVTWBWCCABUBWD $.
+  $}
 
   ${
     $d A x $.
