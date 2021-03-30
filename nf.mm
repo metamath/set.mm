@@ -42139,9 +42139,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
      3-Feb-2015.) $)
   addccan2 $p |- ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) ->
       ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
-    ( cnnc wcel w3a cplc c0 wne wceq wb wa nncaddccl nulnnn mtbiri necon2ai syl
-    eleq1 3adant3 preaddccan2 mpdan ) BDEZCDEZADEZFBCGZHIZUEBAGJCAJKUBUCUFUDUBU
-    CLUEDEZUFBCMUGUEHUEHJUGHDENUEHDROPQSABCTUA $.
+    ( cplc wceq cnnc wcel w3a addccom eqeq12i wb addccan1 3comr syl5bb ) BCDZBA
+    DZECBDZABDZEZBFGZCFGZAFGZHCAEZOQPRBCIBAIJUAUBTSUCKBCALMN $.
 
 
 $(
