@@ -14191,8 +14191,10 @@ New usage of "adjvalval" is discouraged (1 uses).
 New usage of "aecom-o" is discouraged (4 uses).
 New usage of "aecoms-o" is discouraged (6 uses).
 New usage of "aev-o" is discouraged (1 uses).
+New usage of "aev2ALT" is discouraged (0 uses).
 New usage of "aevALTOLD" is discouraged (0 uses).
 New usage of "aevOLD" is discouraged (0 uses).
+New usage of "aevdemo" is discouraged (0 uses).
 New usage of "aevlemALTOLD" is discouraged (0 uses).
 New usage of "aevlemOLD" is discouraged (0 uses).
 New usage of "ajfun" is discouraged (0 uses).
@@ -14539,8 +14541,6 @@ New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bitsfzolemOLD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
 New usage of "bj-1" is discouraged (0 uses).
-New usage of "bj-aev2ALT" is discouraged (0 uses).
-New usage of "bj-aevdemo" is discouraged (0 uses).
 New usage of "bj-ax12iOLD" is discouraged (0 uses).
 New usage of "bj-ax6e" is discouraged (0 uses).
 New usage of "bj-axc4" is discouraged (0 uses).
@@ -18945,8 +18945,10 @@ Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
 Proof modification of "addmodlteqALT" is discouraged (237 steps).
 Proof modification of "aev-o" is discouraged (117 steps).
+Proof modification of "aev2ALT" is discouraged (34 steps).
 Proof modification of "aevALTOLD" is discouraged (36 steps).
 Proof modification of "aevOLD" is discouraged (56 steps).
+Proof modification of "aevdemo" is discouraged (69 steps).
 Proof modification of "aevlemALTOLD" is discouraged (42 steps).
 Proof modification of "aevlemOLD" is discouraged (52 steps).
 Proof modification of "al2imVD" is discouraged (48 steps).
@@ -19111,8 +19113,6 @@ Proof modification of "bj-ablssgrp" is discouraged (10 steps).
 Proof modification of "bj-ablssgrpel" is discouraged (5 steps).
 Proof modification of "bj-abtru" is discouraged (29 steps).
 Proof modification of "bj-aecomsv" is discouraged (16 steps).
-Proof modification of "bj-aev2ALT" is discouraged (34 steps).
-Proof modification of "bj-aevdemo" is discouraged (69 steps).
 Proof modification of "bj-alcomexcom" is discouraged (45 steps).
 Proof modification of "bj-ax12iOLD" is discouraged (20 steps).
 Proof modification of "bj-ax12v" is discouraged (35 steps).
