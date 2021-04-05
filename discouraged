@@ -1707,6 +1707,7 @@
 "bitr3" is used by "sbc3orgVD".
 "bitr3" is used by "trsbcVD".
 "bj-0" is used by "bj-1".
+"bj-ax2c" is used by "bj-ax2".
 "bj-csbsnlem" is used by "bj-csbsn".
 "bj-df-clel" is used by "bj-dfclel".
 "bj-df-cleq" is used by "bj-dfcleq".
@@ -1716,6 +1717,9 @@
 "bj-inftyexpidisj" is used by "bj-pinftynrr".
 "bj-inftyexpiinv" is used by "bj-inftyexpiinj".
 "bj-nalnaleximiOLD" is used by "bj-nalnalimiOLD".
+"bj-sylsimp" is used by "bj-ax1".
+"bj-sylsimp" is used by "bj-ax2".
+"bj-sylsimp" is used by "bj-ax2c".
 "bj-vexw" is used by "bj-ralvw".
 "bj-vexwt" is used by "bj-vexw".
 "blo3i" is used by "ipblnfi".
@@ -14541,7 +14545,10 @@ New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bitsfzolemOLD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
 New usage of "bj-1" is discouraged (0 uses).
+New usage of "bj-ax1" is discouraged (0 uses).
 New usage of "bj-ax12iOLD" is discouraged (0 uses).
+New usage of "bj-ax2" is discouraged (0 uses).
+New usage of "bj-ax2c" is discouraged (1 uses).
 New usage of "bj-ax6e" is discouraged (0 uses).
 New usage of "bj-axc4" is discouraged (0 uses).
 New usage of "bj-axd2d" is discouraged (0 uses).
@@ -14552,6 +14559,7 @@ New usage of "bj-ceqsalgvALT" is discouraged (0 uses).
 New usage of "bj-con4iALT" is discouraged (0 uses).
 New usage of "bj-consensusALT" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
+New usage of "bj-denot" is discouraged (0 uses).
 New usage of "bj-df-clel" is discouraged (1 uses).
 New usage of "bj-df-cleq" is discouraged (1 uses).
 New usage of "bj-gl4" is discouraged (0 uses).
@@ -14566,6 +14574,7 @@ New usage of "bj-nalnaleximiOLD" is discouraged (1 uses).
 New usage of "bj-nalnalimiOLD" is discouraged (0 uses).
 New usage of "bj-nfdiOLD" is discouraged (0 uses).
 New usage of "bj-nuliotaALT" is discouraged (0 uses).
+New usage of "bj-peirce" is discouraged (0 uses).
 New usage of "bj-rabtrALT" is discouraged (0 uses).
 New usage of "bj-rabtrALTALT" is discouraged (0 uses).
 New usage of "bj-rabtrAUTO" is discouraged (0 uses).
@@ -14575,6 +14584,7 @@ New usage of "bj-sbidmOLD" is discouraged (0 uses).
 New usage of "bj-sbieOLD" is discouraged (0 uses).
 New usage of "bj-ssbid1ALT" is discouraged (0 uses).
 New usage of "bj-ssbid2ALT" is discouraged (0 uses).
+New usage of "bj-sylsimp" is discouraged (3 uses).
 New usage of "bj-vexw" is discouraged (1 uses).
 New usage of "bj-vexwt" is discouraged (1 uses).
 New usage of "bj-vtoclgfALT" is discouraged (0 uses).
@@ -19114,8 +19124,11 @@ Proof modification of "bj-ablssgrpel" is discouraged (5 steps).
 Proof modification of "bj-abtru" is discouraged (29 steps).
 Proof modification of "bj-aecomsv" is discouraged (16 steps).
 Proof modification of "bj-alcomexcom" is discouraged (45 steps).
+Proof modification of "bj-ax1" is discouraged (21 steps).
 Proof modification of "bj-ax12iOLD" is discouraged (20 steps).
 Proof modification of "bj-ax12v" is discouraged (35 steps).
+Proof modification of "bj-ax2" is discouraged (88 steps).
+Proof modification of "bj-ax2c" is discouraged (296 steps).
 Proof modification of "bj-ax6e" is discouraged (43 steps).
 Proof modification of "bj-ax6elem1" is discouraged (27 steps).
 Proof modification of "bj-ax6elem2" is discouraged (27 steps).
@@ -19261,6 +19274,7 @@ Proof modification of "bj-nimn" is discouraged (8 steps).
 Proof modification of "bj-nul" is discouraged (28 steps).
 Proof modification of "bj-nuliota" is discouraged (73 steps).
 Proof modification of "bj-nuliotaALT" is discouraged (60 steps).
+Proof modification of "bj-peirce" is discouraged (25 steps).
 Proof modification of "bj-rababwv" is discouraged (34 steps).
 Proof modification of "bj-rabtrALT" is discouraged (36 steps).
 Proof modification of "bj-rabtrALTALT" is discouraged (33 steps).
@@ -19302,6 +19316,7 @@ Proof modification of "bj-ssbid1ALT" is discouraged (42 steps).
 Proof modification of "bj-ssbid2ALT" is discouraged (84 steps).
 Proof modification of "bj-stdpc4v" is discouraged (26 steps).
 Proof modification of "bj-stdpc5" is discouraged (20 steps).
+Proof modification of "bj-sylsimp" is discouraged (281 steps).
 Proof modification of "bj-termab" is discouraged (9 steps).
 Proof modification of "bj-trut" is discouraged (4 steps).
 Proof modification of "bj-vecssmod" is discouraged (18 steps).
