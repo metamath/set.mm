@@ -1707,7 +1707,6 @@
 "bitr3" is used by "sbc3orgVD".
 "bitr3" is used by "trsbcVD".
 "bj-0" is used by "bj-1".
-"bj-ax2c" is used by "bj-ax2".
 "bj-csbsnlem" is used by "bj-csbsn".
 "bj-df-clel" is used by "bj-dfclel".
 "bj-df-cleq" is used by "bj-dfcleq".
@@ -1717,9 +1716,6 @@
 "bj-inftyexpidisj" is used by "bj-pinftynrr".
 "bj-inftyexpiinv" is used by "bj-inftyexpiinj".
 "bj-nalnaleximiOLD" is used by "bj-nalnalimiOLD".
-"bj-sylsimp" is used by "bj-ax1".
-"bj-sylsimp" is used by "bj-ax2".
-"bj-sylsimp" is used by "bj-ax2c".
 "bj-vexw" is used by "bj-ralvw".
 "bj-vexwt" is used by "bj-vexw".
 "blo3i" is used by "ipblnfi".
@@ -9958,6 +9954,10 @@
 "metnrmlem1aOLD" is used by "metnrmlem3OLD".
 "metnrmlem2OLD" is used by "metnrmlem3OLD".
 "mgmplusgiopALT" is used by "mgm2mgm".
+"minimp-ax2c" is used by "minimp-ax2".
+"minimp-sylsimp" is used by "minimp-ax1".
+"minimp-sylsimp" is used by "minimp-ax2".
+"minimp-sylsimp" is used by "minimp-ax2c".
 "minveclem2OLD" is used by "minveclem3OLD".
 "minveclem2OLD" is used by "minveclem7OLD".
 "minveclem3OLD" is used by "minveclem4aOLD".
@@ -14543,10 +14543,7 @@ New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bitsfzolemOLD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
 New usage of "bj-1" is discouraged (0 uses).
-New usage of "bj-ax1" is discouraged (0 uses).
 New usage of "bj-ax12iOLD" is discouraged (0 uses).
-New usage of "bj-ax2" is discouraged (0 uses).
-New usage of "bj-ax2c" is discouraged (1 uses).
 New usage of "bj-ax6e" is discouraged (0 uses).
 New usage of "bj-axc4" is discouraged (0 uses).
 New usage of "bj-axd2d" is discouraged (0 uses).
@@ -14582,7 +14579,6 @@ New usage of "bj-sbidmOLD" is discouraged (0 uses).
 New usage of "bj-sbieOLD" is discouraged (0 uses).
 New usage of "bj-ssbid1ALT" is discouraged (0 uses).
 New usage of "bj-ssbid2ALT" is discouraged (0 uses).
-New usage of "bj-sylsimp" is discouraged (3 uses).
 New usage of "bj-vexw" is discouraged (1 uses).
 New usage of "bj-vexwt" is discouraged (1 uses).
 New usage of "bj-vtoclgfALT" is discouraged (0 uses).
@@ -17376,6 +17372,10 @@ New usage of "metnrmlem1aOLD" is discouraged (2 uses).
 New usage of "metnrmlem2OLD" is discouraged (1 uses).
 New usage of "metnrmlem3OLD" is discouraged (0 uses).
 New usage of "mgmplusgiopALT" is discouraged (1 uses).
+New usage of "minimp-ax1" is discouraged (0 uses).
+New usage of "minimp-ax2" is discouraged (0 uses).
+New usage of "minimp-ax2c" is discouraged (1 uses).
+New usage of "minimp-sylsimp" is discouraged (3 uses).
 New usage of "minvecOLD" is discouraged (0 uses).
 New usage of "minveclem2OLD" is discouraged (2 uses).
 New usage of "minveclem3OLD" is discouraged (1 uses).
@@ -19124,11 +19124,8 @@ Proof modification of "bj-ablssgrpel" is discouraged (5 steps).
 Proof modification of "bj-abtru" is discouraged (29 steps).
 Proof modification of "bj-aecomsv" is discouraged (16 steps).
 Proof modification of "bj-alcomexcom" is discouraged (45 steps).
-Proof modification of "bj-ax1" is discouraged (21 steps).
 Proof modification of "bj-ax12iOLD" is discouraged (20 steps).
 Proof modification of "bj-ax12v" is discouraged (35 steps).
-Proof modification of "bj-ax2" is discouraged (88 steps).
-Proof modification of "bj-ax2c" is discouraged (296 steps).
 Proof modification of "bj-ax6e" is discouraged (43 steps).
 Proof modification of "bj-ax6elem1" is discouraged (27 steps).
 Proof modification of "bj-ax6elem2" is discouraged (27 steps).
@@ -19316,7 +19313,6 @@ Proof modification of "bj-ssbid1ALT" is discouraged (42 steps).
 Proof modification of "bj-ssbid2ALT" is discouraged (84 steps).
 Proof modification of "bj-stdpc4v" is discouraged (26 steps).
 Proof modification of "bj-stdpc5" is discouraged (20 steps).
-Proof modification of "bj-sylsimp" is discouraged (281 steps).
 Proof modification of "bj-termab" is discouraged (9 steps).
 Proof modification of "bj-trut" is discouraged (4 steps).
 Proof modification of "bj-vecssmod" is discouraged (18 steps).
@@ -20107,6 +20103,10 @@ Proof modification of "metnrmlem1aOLD" is discouraged (385 steps).
 Proof modification of "metnrmlem2OLD" is discouraged (230 steps).
 Proof modification of "metnrmlem3OLD" is discouraged (847 steps).
 Proof modification of "mgmplusgiopALT" is discouraged (80 steps).
+Proof modification of "minimp-ax1" is discouraged (21 steps).
+Proof modification of "minimp-ax2" is discouraged (62 steps).
+Proof modification of "minimp-ax2c" is discouraged (272 steps).
+Proof modification of "minimp-sylsimp" is discouraged (261 steps).
 Proof modification of "minvecOLD" is discouraged (79 steps).
 Proof modification of "minveclem2OLD" is discouraged (1589 steps).
 Proof modification of "minveclem3OLD" is discouraged (719 steps).
