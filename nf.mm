@@ -45001,8 +45001,8 @@ $)
     $( Define a function.  Definition 10.1 of [Quine] p. 65.  For alternate
        definitions, see ~ dffun2 , ~ dffun3 , ~ dffun4 , ~ dffun5 , ~ dffun6 ,
        ~ dffun7 , ~ dffun8 , and ~ dffun9 .  (Contributed by SF,
-       5-Jan-2015.) $)
-    df-fun $a |- ( Fun A <-> ( Rel A /\ ( A o. `' A ) C_ _I ) ) $.
+       5-Jan-2015.) (Revised by Scott Fenton, 14-Apr-2021.) $)
+    df-fun $a |- ( Fun A <-> ( A o. `' A ) C_ _I ) $.
 
     $( Define a function with domain.  Definition 6.15(1) of [TakeutiZaring]
        p. 27.  For alternate definitions, see ~ dffn2 , ~ dffn3 , ~ dffn4 , and
@@ -45501,6 +45501,11 @@ $)
        BUTVGUTDHVHULDUCPUNUTFZUQVBCVIUPVAULUNUTUOUDQUERPUMUQCDSZBDSVJBKUSBCULDD
        UFVJBTVJURBUQCTUHUGUIUJ $.
   $}
+
+  $( Everything is a relationship.  Temporary theorem while we remove the
+     relationship predicate.  (Contributed by Scott Fenton, 14-Apr-2021.) $)
+  relall $p |- Rel A $=
+    ( wrel cvv cxp wss ssv xpvv sseqtr4i df-rel mpbir ) ABACCDZEACKAFGHAIJ $.
 
   $( Equality theorem for the relation predicate.  (Contributed by NM,
      1-Aug-1994.) $)
@@ -48255,6 +48260,12 @@ $)
       BJMWCWGRVQVPWEWDSAWBBVGJUPUQWFVTABVQVPCURUSUTVAVBVC $.
   $}
 
+  $( Old version of ~ df-fun with the relationship predicate.  (Contributed by
+     Scott Fenton, 14-Apr-2021.) $)
+  dffun1 $p |- ( Fun A <-> ( Rel A /\ ( A o. `' A ) C_ _I ) ) $=
+    ( wfun ccnv ccom cid wss wrel wa df-fun relall biantrur bitri ) ABAACDEFZAG
+    ZMHAINMAJKL $.
+
   ${
     $d x y z A $.
     $( Alternate definition of a function.  (Contributed by set.mm
@@ -48263,7 +48274,7 @@ $)
     dffun2 $p |- ( Fun A <-> ( Rel A /\
                  A. x A. y A. z ( ( x A y /\ x A z ) -> y = z ) ) ) $=
       ( wfun wrel ccnv ccom cid wss wa cv wbr weq wi wal wex copab bitri bitr4i
-      df-fun df-co df-id sseq12i brcnv anbi1i exbii imbi1i 19.23v 2albii alrot3
+      dffun1 df-co df-id sseq12i brcnv anbi1i exbii imbi1i 19.23v 2albii alrot3
       ssopab2b anbi2i ) DEDFZDDGZHZIJZKUNALZBLZDMZURCLDMZKZBCNZOZCPBPAPZKDUAUQV
       EUNUQUSURUOMZVAKZAQZVCOZCPBPZVEUQVHBCRZVCBCRZJVJUPVKIVLBCADUOUBBCUCUDVHVC
       BCULSVJVDAPZCPBPVEVIVMBCVIVBAQZVCOVMVHVNVCVGVBAVFUTVAUSURDUEUFUGUHVBVCAUI
@@ -48331,7 +48342,7 @@ $)
   $( A function is a relation.  (Contributed by set.mm contributors,
      1-Aug-1994.) $)
   funrel $p |- ( Fun A -> Rel A ) $=
-    ( wfun wrel ccnv ccom cid wss df-fun simplbi ) ABACAADEFGAHI $.
+    ( wfun wrel ccnv ccom cid wss dffun1 simplbi ) ABACAADEFGAHI $.
 
   ${
     $d x y z A $.  $d x y z B $.
@@ -48340,7 +48351,7 @@ $)
        16-Aug-1994.)  (Revised by set.mm contributors, 24-Jun-2014.) $)
     funss $p |- ( A C_ B -> ( Fun B -> Fun A ) ) $=
       ( wss wrel ccnv ccom cid wa wfun relss wi coss1 cnvss coss2 sstrd anim12d
-      syl sstr2 df-fun 3imtr4g ) ABCZBDZBBEZFZGCZHADZAAEZFZGCZHBIAIUAUBUFUEUIAB
+      syl sstr2 dffun1 3imtr4g ) ABCZBDZBBEZFZGCZHADZAAEZFZGCZHBIAIUAUBUFUEUIAB
       JUAUHUDCUEUIKUAUHBUGFZUDABUGLUAUGUCCUJUDCABMUGUCBNQOUHUDGRQPBSAST $.
   $}
 
@@ -48371,7 +48382,7 @@ $)
     $( Bound-variable hypothesis builder for a function.  (Contributed by NM,
        30-Jan-2004.) $)
     nffun $p |- F/ x Fun F $=
-      ( wfun wrel ccnv ccom cid wa df-fun nfrel nfcnv nfco nfcv nfss nfan nfxfr
+      ( wfun wrel ccnv ccom cid wa dffun1 nfrel nfcnv nfco nfcv nfss nfan nfxfr
       wss ) BDBEZBBFZGZHRZIABJSUBAABCKAUAHABTCABCLMAHNOPQ $.
   $}
 
@@ -48433,7 +48444,7 @@ $)
   $( The identity relation is a function.  Part of Theorem 10.4 of [Quine]
      p. 65.  (Contributed by set.mm contributors, 30-Apr-1998.) $)
   funi $p |- Fun _I $=
-    ( cid wfun wrel ccnv ccom wss reli wceq relcnv coi2 ax-mp cnvi eqtri df-fun
+    ( cid wfun wrel ccnv ccom wss reli wceq relcnv coi2 ax-mp cnvi eqtri dffun1
     eqimssi mpbir2an ) ABACAADZEZAFGRARQAQCRQHAIQJKLMOANP $.
 
   ${
@@ -48612,7 +48623,7 @@ $)
   $( The empty set is a function.  Theorem 10.3 of [Quine] p. 65.  (Contributed
      by set.mm contributors, 7-Apr-1998.) $)
   fun0 $p |- Fun (/) $=
-    ( c0 wfun wrel ccnv ccom cid wss rel0 co01 0ss eqsstri df-fun mpbir2an ) AB
+    ( c0 wfun wrel ccnv ccom cid wss rel0 co01 0ss eqsstri dffun1 mpbir2an ) AB
     ACAADZEZFGHOAFNIFJKALM $.
 
   $( The double converse of a function is a function.  (Contributed by set.mm
@@ -49988,7 +49999,7 @@ $)
      set.mm contributors, 13-Dec-2003.) $)
   f1ococnv2 $p |- ( F : A -1-1-onto-> B -> ( F o. `' F ) = ( _I |` B ) ) $=
     ( wf1o ccnv ccom cid cdm cres wss wceq wf wfun f1of ffun wrel simprbi eqtrd
-    df-fun 3syl iss sylib crn f1odm wfo f1ocnv f1ofo forn eqtr4d dmcoeq syl fdm
+    dffun1 3syl iss sylib crn f1odm wfo f1ocnv f1ofo forn eqtr4d dmcoeq syl fdm
     reseq2d ) ABCDZCCEZFZGUPHZIZGBIUNUPGJZUPURKUNABCLCMZUSABCNABCOUTCPUSCSQTUPU
     AUBUNUQBGUNUQUOHZBUNCHZUOUCZKUQVAKUNVBAVCABCUDUNBAUODZBAUOUEVCAKABCUFZBAUOU
     GBAUOUHTUICUOUJUKUNVDBAUOLVABKVEBAUONBAUOULTRUMR $.
