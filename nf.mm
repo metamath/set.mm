@@ -45489,6 +45489,19 @@ $)
       ICUHDUHUFUCNUEUFUGOPQQUBNRST $.
   $}
 
+  ${
+     $d x y z $.
+     $( The cross product of the universe with itself is the universe.
+        (Contributed by Scott Fenton, 14-Apr-2021.) $)
+     xpvv $p |- ( _V X. _V ) = _V $=
+       ( vx vy vz cvv cxp wceq cv wcel eqv cop wex cproj1 cproj2 opeq vex ax-mp
+       eqeq2d spcev wrex rexv proj2exg opeq2 proj1exg opeq1 exbidv elxp2 3bitri
+       exbii mpbir mpgbir ) DDEZDFAGZUKHZAAUKIUMULBGZCGZJZFZCKZBKZULULLZUOJZFZC
+       KZUSULUTULMZJZFZVCULNVBVFCVDULDHZVDDHAOZULDUAPUOVDFVAVEULUOVDUTUBQRPURVC
+       BUTVGUTDHVHULDUCPUNUTFZUQVBCVIUPVAULUNUTUOUDQUERPUMUQCDSZBDSVJBKUSBCULDD
+       UFVJBTVJURBUQCTUHUGUIUJ $.
+  $}
+
   $( Equality theorem for the relation predicate.  (Contributed by NM,
      1-Aug-1994.) $)
   releq $p |- ( A = B -> ( Rel A <-> Rel B ) ) $=
@@ -48161,8 +48174,8 @@ $)
 
   ${
     $d x y z w $.
-    $( Alternate definition of the ` 2nd ` function.  (Contributed by set.mm
-       contributors, 8-Jan-2015.) $)
+    $( Alternate definition of the ` 2nd ` function.  (Contributed by SF,
+       8-Jan-2015.) $)
     df2nd2 $p |- 2nd = ( 1st o. Swap ) $=
       ( vx vz vy vw cv cop wceq wex copab cswap wbr c1st wa c2nd ccom vex br1st
       anbi1i ancom exbii 19.41v 3bitr4i excom opex breq2 ceqsexv bitri 3bitr2ri
@@ -48172,8 +48185,7 @@ $)
       JUEUFUNUPUOVJVLUIUGTUHUJACBUKACDLJULUM $.
   $}
 
-  $( The ` 2nd ` function is a set.  (Contributed by set.mm contributors,
-     8-Jan-2015.) $)
+  $( The ` 2nd ` function is a set.  (Contributed by SF, 8-Jan-2015.) $)
   2ndex $p |- 2nd e. _V $=
     ( c2nd c1st cswap ccom cvv df2nd2 1stex swapex coex eqeltri ) ABCDEFBCGHIJ
     $.
@@ -48181,7 +48193,7 @@ $)
   ${
     $d A x y z w v $.  $d B x y z w v $.
     $( Define cross product via the set construction functions.  (Contributed
-       by set.mm contributors, 8-Jan-2015.) $)
+       by SF, 8-Jan-2015.) $)
     dfxp2 $p |- ( A X. B ) = ( ( `' 1st " A ) i^i ( `' 2nd " B ) ) $=
       ( vx vy vz vw vv c1st ccnv c2nd cv cop wceq wrex wbr wcel wex weq 3bitr4i
       wa cxp cima cin eeanv vex opeq2 eqeq2d opeq1 bi2anan9 spc2ev anidms simpl
