@@ -42751,47 +42751,55 @@ $)
   $}
 
   ${
-    $d A x y z $.
+    $d A x y z w $.
     phiall.1 $e |- A e. _V $.
 
-    $( Lemma for ~ phiall .  Establish stratification for a particular
-       abstraction.  (Contributed by Scott Fenton, 8-Apr-2021.) $)
-    phialllem1 $p |- { y | ( y e. ( A \ Nn ) \/ E. z e. ( A i^i Nn )
-                             z = ( y +c 1c ) ) } e. _V $= ? $.
+    $( Lemma for ~ phiall .  Any set of numbers without zero is the
+       Phi of a set.  (Contributed by Scott Fenton, 14-Apr-2021.) $)
+    phialllem1 $p |- ( ( A C_ Nn /\ -. 0c e. A ) -> E. x A = Phi x ) $=
+      ( vz vy vw cnnc c0c wcel wa cv c1c wceq wrex cab eqeq2d cssetk cpw1 cimak
+      cins3k wss wn cplc crab cphi wex weq wo eleq1 biimpcd con3d adantll ssel2
+      impcom adantlr nnc0suc sylib orel1 anidm anbi2d syl5bbr rexbidv syl5ibcom
+      sylc eqeq1 eqtr3 rexlimivw impbid1 rexbidva risset rexcom 3bitr4g abbi2dv
+      cif df-phi addceq1 rexrab r19.41v syl6bbr rexbiia bitri abbii syl6eqr cin
+      iftrue eqtri cvv dfrab2 cins2k ccompl csik cun csymdif cdif cimagek ccnvk
+      copk elimak opkelimagek opkelcnvk dfaddc2 eqeq2i 3bitr4i rexbii addcexlem
+      vex abbi2i 1cex pw1ex imakex imagekex cnvkex eqeltrri nncex eqeltri phieq
+      inex spcev syl ) BGUAZHBIZUBZJZBDKZEKZLUCZMZDBNZEGUDZUEZMZBAKZUEZMZAUFYCB
+      YDYLLUCZMZFKZYOMZJZDBNZAGNZFOZYJYCUUAFBYCDFUGZDBNYSAGNZDBNYQBIUUAYCUUCUUD
+      DBYCYDBIZJZUUCUUDUUFYPAGNZUUCUUDUUFYDHMZUBZUUHUUGUHZUUGYBUUEUUIXTUUEYBUUI
+      UUEUUHYAUUHUUEYAYDHBUIUJUKUNULUUFYDGIZUUJXTUUEUUKYBBGYDUMUOAYDUPUQUUHUUGU
+      RVDUUCYPYSAGYPYPYPJUUCYSYPUSUUCYPYRYPYDYQYOVEUTVAVBVCYSUUCAGYDYQYOVFVGVHV
+      IDYQBVJYSADGBVKVLVMYJYQYLGIZYOYLVNZMZAYINZFOUUBAFYIVOUUOUUAFUUOYPDBNZUUNJ
+      ZAGNUUAYHUUPUUNAEGEAUGZYGYPDBUURYFYOYDYEYLLVPPVBVQUUQYTAGUULUUQUUPYRJYTUU
+      LUUNYRUUPUULUUMYOYQUULYOYLWEPUTYPYRDBVRVSVTWAWBWFWCYNYKAYIYIYHEOZGWDWGYHE
+      GWHUUSGQTZQWIZWDLRZRZSWJTUVAWIUUTWIQWKWKTWLWMUVCRRSWNZUVCSZWOZWPZBSZUUSWG
+      YHEUVHYEUVHIYDYEWQUVGIZDBNYHDUVGBYEEXFZWRUVIYGDBYEYDWQUVFIYDUVEYESZMUVIYG
+      YEYDUVEUVJDXFZWSYDYEUVFUVLUVJWTYFUVKYDYELXAXBXCXDWAXGUVGBUVFUVEUVDUVCXEUV
+      BLXHXIXIXJXKXLCXJXMXNXQXOYLYIMYMYJBYLYIXPPXRXS $.
 
 
     $( Lemma for ~ phiall .  Any set without ` 0c ` is equal to the ` Phi `
        of a set.  (Contributed by Scott Fenton, 8-Apr-2021.) $)
     phialllem2 $p |- ( -. 0c e. A -> E. x A = Phi x ) $=
-      ( vy vz vw wcel cv cnnc c1c wceq wrex wo wex bitri weq syl eqeq2d syl6bbr
-      wa c0c wn cdif cplc cin cab cphi cif cun uncom inundif eleq2i bicomi elun
-      eqtri risset wb wi imp3a exlimdv impbid eqeq1 anbi1d exbidv bibi12d com12
-      biimprd rexlimiv rexbidva syl5bb orbi2d andir exbii df-rex eldifn iffalse
-      19.43 equcom syl6bb rexbiia bitr4i rexcom4 r19.41v bitr2i orbi12i addceq1
-      ex eleq1 rexbidv orbi12d rexab df-phi abid eqrdv phialllem1 phieq spcev )
-      UABGUBZBDHZBIUCZGZEHZWSJUDZKZEBIUEZLZMZDUFZUGZKZBAHZUGZKZANWRABXIWRXKBGZX
-      KFHZIGZXOJUDZXOUHZKZFXHLZXKXIGZWRXNXOWTGZXBXQKZEXELZMZXSTZFNZXTWRXNXKWTGZ
-      YCXSTZFNZEXELZMZYGXNYHXKXEGZMZWRYLXNXKWTXEUIZGZYNYPXNYOBXKYOXEWTUIBWTXEUJ
-      BIUKUOULUMXKWTXEUNOWRYMYKYHYMEAPZEXELWRYKEXKXEUPWRYQYJEXEWRXBXEGTXDDILYQY
-      JUQZ?XDYRDIWSIGXCXKKZXCXQKZXSTZFNZUQZXDYRUR????????????????WGUSUTVAXDUUCY
-      RXDYRUUCXDYQYSYJUUBXBXCXKVBXDYIUUAFXDYCYTXSXBXCXQVBVCVDVEVGVFQVHQVIVJVKVJ
-      YGYBXSTZYDXSTZMZFNZYLYFUUFFYBYDXSVLVMUUGUUDFNZUUEFNZMYLUUDUUEFVQUUHYHUUIY
-      KUUHXSFWTLZYHUUJUUHXSFWTVNUMUUJFAPZFWTLYHXSUUKFWTYBXSAFPUUKYBXRXOXKYBXPUB
-      XRXOKXOBIVOXPXQXOVPQRAFVRVSVTFXKWTUPWAOYKYIEXELZFNUUIYIEFXEWBUULUUEFYCXSE
-      XEWCVMWDWEOOSXGYEXSFDDFPZXAYBXFYDWSXOWTWHUUMXDYCEXEUUMXCXQXBWSXOJWFRWIWJW
-      KSYAXKXTAUFZGXTXIUUNXKFAXHWLULXTAWMOSWNXMXJAXHDEBCWOXKXHKXLXIBXKXHWPRWQQ
-      $.
+      ( vy c0c wcel wn cnnc cin cv cphi wceq wex wss inss2 nncex cun eqtri syl
+      c0 inss1 sseli con3i phialllem1 sylancr uncom inundif uneq2 syl5eqr phiun
+      inex cdif incom disjdif phidisjnn ax-mp uneq1i syl6eqr difex phieq eqeq2d
+      vex unex spcev exlimiv ) EBFZGZBHIZDJZKZLZDMZBAJZKZLZAMZVGVHHNEVHFZGVLBHO
+      VQVFVHBEBHUAUBUCDVHBHCPUKUDUEVKVPDVKBBHULZVIQZKZLZVPVKBVRVJQZVTVKBVRVHQZW
+      BWCVHVRQBVRVHUFBHUGRVHVJVRUHUIVTVRKZVJQWBVRVIUJWDVRVJVRHIZTLWDVRLWEHVRITV
+      RHUMHBUNRVRUOUPUQRURVOWAAVSVRVIBHCPUSDVBVCVMVSLVNVTBVMVSUTVAVDSVES $.
 
     $( Any set is equal to either the ` Phi ` of another set or to a ` Phi `
        with ` 0c ` adjoined.  (Contributed by Scott Fenton, 8-Apr-2021.) $)
     phiall $p |- E. x ( A = Phi x \/ A = ( Phi x u. { 0c } ) ) $=
-      ( c0c wcel cv cphi wceq csn cun wo wex wn phialllem2 c0 disjsn mpbir eximi
-      cin syl cdif neldifsn difex ax-mp wa 0cnelphi eqtr4i biantru unineq bitri
-      snex difsnid eqeq1d syl5bbr exbidv mpbii olc orc pm2.61i ) DBEZBAFZGZHZBV
-      BDIZJZHZKZALZUTVFALZVHUTBVDUAZVBHZALZVIDVJEMZVLDBUBZAVJBVDCDUKUCNUDUTVKVF
-      AVKVJVDJZVEHZUTVFVPVPVJVDSZVBVDSZHZUEVKVSVPVQOVRVQOHVMVNVJDPQVROHDVBEMVAU
-      FVBDPQUGUHVJVBVDUIUJUTVOBVEBDULUMUNUOUPVFVGAVFVCUQRTUTMVCALVHABCNVCVGAVCV
-      FURRTUS $.
+      ( c0c wcel cv cphi csn cun wo wex wn phialllem2 cin c0 disjsn mpbir eximi
+      wceq syl cdif neldifsn snex difex ax-mp wa 0cnelphi eqtr4i biantru unineq
+      bitri difsnid eqeq1d syl5bbr exbidv mpbii olc orc pm2.61i ) DBEZBAFZGZSZB
+      VBDHZIZSZJZAKZUTVFAKZVHUTBVDUAZVBSZAKZVIDVJELZVLDBUBZAVJBVDCDUCUDMUEUTVKV
+      FAVKVJVDIZVESZUTVFVPVPVJVDNZVBVDNZSZUFVKVSVPVQOVRVQOSVMVNVJDPQVROSDVBELVA
+      UGVBDPQUHUIVJVBVDUJUKUTVOBVEBDULUMUNUOUPVFVGAVFVCUQRTUTLVCAKVHABCMVCVGAVC
+      VFURRTUS $.
   $}
 
   ${
