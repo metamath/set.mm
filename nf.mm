@@ -48067,14 +48067,14 @@ $)
 
   ${
     $d x y A $.
-    $( A relation is included in the cross product of its domain and range.
+     $( A class is included in the cross product of its domain and range.
        Exercise 4.12(t) of [Mendelson] p. 235.  (Contributed by set.mm
-       contributors, 3-Aug-1994.) $)
-    relssdmrn $p |- ( Rel A -> A C_ ( dom A X. ran A ) ) $=
-      ( vx vy wrel cdm crn cxp wss cv cop wcel wi wal wex 19.8a wa opelxp eldm2
-      elrn2 anbi12i bitri sylanbrc gen2 ssrelOLD mpbiri ) ADAAEZAFZGZHBIZCIZJZAKZU
-      KUHKZLZCMBMUNBCULULCNZULBNZUMULCOULBOUMUIUFKZUJUGKZPUOUPPUIUJUFUGQUQUOURU
-      PCUIARBUJASTUAUBUCBCAUHUDUE $.
+       contributors, 3-Aug-1994.) (Revised by Scott Fenton, 15-Apr-2021.) $)
+    ssdmrn $p |- A C_ ( dom A X. ran A ) $=
+      ( vx vy cdm crn cxp wss cv cop wi wal ssrel opeldm opelrn opelxp sylanbrc
+      wcel ax-gen mpgbir ) AADZAEZFZGBHZCHZIZAQZUEUBQZJZCKBBCAUBLUHCUFUCTQUDUAQ
+      UGUCUDAMUCUDANUCUDTUAOPRS $.
+      
   $}
 
   ${
@@ -49361,9 +49361,8 @@ $)
      Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors, 3-Aug-1994.)
      (Revised by set.mm contributors, 18-Sep-2011.) $)
   fssxp $p |- ( F : A --> B -> F C_ ( A X. B ) ) $=
-    ( wf cdm crn cxp wss wceq fdm eqimss syl xpss12 syl2anc wrel frel relssdmrn
-    frn wi sstr2 3syl mpd ) ABCDZCEZCFZGZABGZHZCUGHZUCUDAHZUEBHUHUCUDAIUJABCJUD
-    AKLABCRUDAUEBMNUCCOCUFHUHUISABCPCQCUFUGTUAUB $.
+    ( wf cdm crn cxp ssdmrn wss wceq fdm eqimss syl frn xpss12 syl2anc syl5ss )
+    ABCDZCCEZCFZGZABGZCHRSAIZTBIUAUBIRSAJUCABCKSALMABCNSATBOPQ $.
 
   $( Two ways of specifying a partial function from ` A ` to ` B ` .
      (Contributed by set.mm contributors, 13-Nov-2007.) $)
@@ -52987,22 +52986,7 @@ $)
       ( cv wcel wa coprab crn wex cab wrex rnoprab r2ex abbii eqtr4i ) BGEHCGFH
       IAIZBCDJKSCLBLZDMACFNBENZDMSBCDOUATDABCEFPQR $.
   $}
-
-  ${
-    $d x y z $.
-    $( The domain of an operation class abstraction is a relation.
-       (Contributed by set.mm contributors, 17-Mar-1995.) $)
-    reldmoprab $p |- Rel dom { <. <. x , y >. , z >. | ph } $=
-      ( wex coprab cdm dmoprab relopabi ) ADEBCABCDFGABCDHI $.
-
-    $( Structure of an operation class abstraction.  (Contributed by set.mm
-       contributors, 28-Nov-2006.) $)
-    oprabss $p |- { <. <. x , y >. , z >. | ph } C_ ( ( _V X. _V ) X. _V ) $=
-      ( coprab cdm crn cxp wrel reloprab relssdmrn ax-mp reldmoprab df-rel mpbi
-      cvv wss ssv xpss12 mp2an sstri ) ABCDEZUBFZUBGZHZPPHZPHZUBIUBUEQABCDJUBKL
-      UCUFQZUDPQUEUGQUCIUHABCDMUCNOUDRUCUFUDPSTUA $.
-  $}
-
+ 
   ${
     $d x y z w A $.  $d x y z w B $.  $d x y z w C $.  $d w ph $.
     $d x y z w ps $.
@@ -54649,12 +54633,6 @@ $)
       rneqi rnoprab abbii 3eqtri ) GIAJDKBJEKLCJFMZLZABCNZIUHBOAOZCPUGBEQADQZCP
       GUIGABDEFRUIHABCDEFSTUCUHABCUDUJUKCUKUJUGABDEUAUBUEUF $.
 
-    $( The domain of an operation defined by maps-to notation is a relation.
-       (Contributed by Stefan O'Rear, 27-Nov-2014.) $)
-    reldmmpt2 $p |- Rel dom F $=
-      ( vz cdm wrel cv wcel wa wceq coprab reldmoprab cmpt2 df-mpt2 eqtri dmeqi
-      releqi mpbir ) FIZJAKCLBKDLMHKENMZABHOZIZJUDABHPUCUFFUEFABCDEQUEGABHCDERS
-      TUAUB $.
   $}
 
   ${
@@ -55376,28 +55354,28 @@ $)
        function.  (Contributed by SF, 18-Feb-2015.) $)
     txpcofun $p |- ( ( R (x) S ) o. F ) = ( ( R o. F ) (x) ( S o. F ) ) $=
       ( vx vy vz vv vu wceq cv wcel wb cvv wss cdm cop wex wbr wa ctxp ccom cxp
-      vt vs wral crn wrel relco relssdmrn ax-mp ssv rncoss txpssvvv rnss rnxpss
-      sstri xpss12 mp2an ssofeq wrex elxp2 rexv opeq2 eqeq2d rexxp exbii 3bitri
-      dmcoss opeldm sseldi df-br dmtxp inss1 eqsstri breldm sylbir trtxp anbi2i
-      cin anass bitr4i wfun wi funbrfv fvex breq1 ceqsexv eqcom funbrfvb syl5bb
-      cfv anbi1d exbidv syl5bbr bibi1d syl5ibcom adantrd pm5.32d opelco anbi12i
-      mpan syl5 oteltxp 19.41v 3bitr4i 3bitr4g pm5.21nii bibi12d mpbiri exlimiv
-      eleq1 exlimivv sylbi mprgbir ) ABUAZCUBZACUBZBCUBZUAZJZUDKZXQLZYBXTLZMZUD
-      NNNUCZUCZXQYGOXTYGOYAYEUDYGUFMXQXQPZXQUGZUCZYGXQUHXQYJOXPCUIXQUJUKYHNOYIY
-      FOYJYGOYHULYIXPUGZYFXPCUMYKYGUGZYFXPYGOYKYLOABUNXPYGUOUKNYFUPUQUQYHNYIYFU
-      RUSUQXRXSUNUDXQXTYGUTUSYBYGLZYBEKZFKZGKZQZQZJZGRZFRZERZYEYMYBYNUEKZQZJZUE
-      YFVAZENVAUUFERUUBEUEYBNYFVBUUFEVCUUFUUAEUUFYSGNVAZFNVAUUGFRUUAUUEYSUEFGNN
-      UUCYQJUUDYRYBUUCYQYNVDVEVFUUGFVCUUGYTFYSGVCVGVHVGVHYTYEEFYSYEGYSYEYRXQLZY
-      RXTLZMUUHYNCPZLZUUIUUHYHUUJYNXPCVIYNYQXQVJVKUUIYNYQXTSZUUKYNYQXTVLUULXTPZ
-      UUJYNUUMXRPZXSPZVTZUUJXRXSVMUUPUUNUUJUUNUUOVNACVIUQVOYNYQXTVPVKVQUUKYNHKZ
-      CSZUUQYQXPSZTZHRUURUUQYOASZTZYNIKZCSZUVCYPBSZTZIRZTZHRZUUHUUIUUKUUTUVHHUU
-      TUVBUUQYPBSZTZUUKUVHUUTUURUVAUVJTZTUVKUUSUVLUURUUQYOYPABVRVSUURUVAUVJWAWB
-      UUKUVBUVJUVGUUKUURUVJUVGMZUVAUURYNCWLZUUQJZUUKUVMCWCZUURUVOWDDYNUUQCWEUKU
-      UKUVNYPBSZUVGMUVOUVMUVQUVCUVNJZUVETZIRUUKUVGUVEUVQIUVNYNCWFUVCUVNYPBWGWHU
-      UKUVSUVFIUUKUVRUVDUVEUVRUVNUVCJZUUKUVDUVCUVNWIUVPUUKUVTUVDMDYNUVCCWJXBWKW
-      MWNWOUVOUVQUVJUVGUVNUUQYPBWGWPWQXCWRWSWKWNHYNYQXPCWTYNYOQXRLZYNYPQXSLZTUV
-      BHRZUVGTUUIUVIUWAUWCUWBUVGHYNYOACWTIYNYPBCWTXAYNYOYPXRXSXDUVBUVGHXEXFXGXH
-      YSYCUUHYDUUIYBYRXQXLYBYRXTXLXIXJXKXMXNXO $.
+      vt vs wral crn ssdmrn ssv rncoss txpssvvv ax-mp rnxpss sstri xpss12 mp2an
+      rnss ssofeq wrex elxp2 rexv opeq2 eqeq2d rexxp exbii 3bitri dmcoss opeldm
+      sseldi df-br cin dmtxp inss1 eqsstri breldm sylbir trtxp anbi2i anass cfv
+      bitr4i wfun wi funbrfv fvex breq1 ceqsexv eqcom mpan syl5bb anbi1d exbidv
+      funbrfvb syl5bbr bibi1d syl5ibcom adantrd pm5.32d anbi12i oteltxp 3bitr4i
+      syl5 opelco 19.41v 3bitr4g pm5.21nii eleq1 bibi12d exlimiv exlimivv sylbi
+      mpbiri mprgbir ) ABUAZCUBZACUBZBCUBZUAZJZUDKZXOLZXTXRLZMZUDNNNUCZUCZXOYEO
+      XRYEOXSYCUDYEUFMXOXOPZXOUGZUCZYEXOUHYFNOYGYDOYHYEOYFUIYGXNUGZYDXNCUJYIYEU
+      GZYDXNYEOYIYJOABUKXNYEUQULNYDUMUNUNYFNYGYDUOUPUNXPXQUKUDXOXRYEURUPXTYELZX
+      TEKZFKZGKZQZQZJZGRZFRZERZYCYKXTYLUEKZQZJZUEYDUSZENUSUUDERYTEUEXTNYDUTUUDE
+      VAUUDYSEUUDYQGNUSZFNUSUUEFRYSUUCYQUEFGNNUUAYOJUUBYPXTUUAYOYLVBVCVDUUEFVAU
+      UEYRFYQGVAVEVFVEVFYRYCEFYQYCGYQYCYPXOLZYPXRLZMUUFYLCPZLZUUGUUFYFUUHYLXNCV
+      GYLYOXOVHVIUUGYLYOXRSZUUIYLYOXRVJUUJXRPZUUHYLUUKXPPZXQPZVKZUUHXPXQVLUUNUU
+      LUUHUULUUMVMACVGUNVNYLYOXRVOVIVPUUIYLHKZCSZUUOYOXNSZTZHRUUPUUOYMASZTZYLIK
+      ZCSZUVAYNBSZTZIRZTZHRZUUFUUGUUIUURUVFHUURUUTUUOYNBSZTZUUIUVFUURUUPUUSUVHT
+      ZTUVIUUQUVJUUPUUOYMYNABVQVRUUPUUSUVHVSWAUUIUUTUVHUVEUUIUUPUVHUVEMZUUSUUPY
+      LCVTZUUOJZUUIUVKCWBZUUPUVMWCDYLUUOCWDULUUIUVLYNBSZUVEMUVMUVKUVOUVAUVLJZUV
+      CTZIRUUIUVEUVCUVOIUVLYLCWEUVAUVLYNBWFWGUUIUVQUVDIUUIUVPUVBUVCUVPUVLUVAJZU
+      UIUVBUVAUVLWHUVNUUIUVRUVBMDYLUVACWMWIWJWKWLWNUVMUVOUVHUVEUVLUUOYNBWFWOWPX
+      BWQWRWJWLHYLYOXNCXCYLYMQXPLZYLYNQXQLZTUUTHRZUVETUUGUVGUVSUWAUVTUVEHYLYMAC
+      XCIYLYNBCXCWSYLYMYNXPXQWTUUTUVEHXDXAXEXFYQYAUUFYBUUGXTYPXOXGXTYPXRXGXHXLX
+      IXJXKXM $.
   $}
 
   ${
@@ -56253,17 +56231,16 @@ $)
        9-Mar-2015.) $)
     fvfullfunlem3 $p |- ( A e. dom ( ( _I o. F ) \ ( ~ _I o. F ) ) ->
        ( ( ( _I o. F ) \ ( ~ _I o. F ) ) ` A ) = ( F ` A ) ) $=
-      ( vx vy vz cid ccom wcel cfv wss wceq wrel cv wbr wal weu brres cvv ax-mp
-      wa ccompl cdif cdm cres wfun weq relres fvfullfunlem1 abeq2i anbi2i bitri
-      tz6.12-1 adantrl adantl eqtr3d adantlr syl2anb ax-gen dffun2 mpbir2an cxp
-      wi gen2 cin fvfullfunlem2 relco reldif relssdmrn xpss2 sstri ssini df-res
-      crn ssv sseqtr4i funssfv mp3an12 fvres ) AFBGZFUABGZUBZUCZHZABWBUDZIZAWAI
-      ZABIWDUEZWAWDJWCWEWFKWGWDLCMZDMZWDNZWHEMZWDNZTDEUFZVBZEOZDOCOBWBUGWOCDWNE
-      WJWHWIBNZWHWKBNZEPZTZWQWPDPZTZWMWLWJWPWHWBHZTWSWHWIBWBQXBWRWPWRCWBCEBUHUI
-      UJUKWLWQXBTXAWHWKBWBQXBWTWQWTCWBCDBUHUIUJUKWPXAWMWRWPXATWHBIZWIWKWPWTXCWI
-      KWQDWHWIBULUMXAXCWKKWPDWHWKBULUNUOUPUQURVCCDEWDUSUTWABWBRVAZVDWDWABXDBVEW
-      AWBWAVMZVAZXDWALZWAXFJVSLXGFBVFVSVTVGSWAVHSXERJXFXDJXEVNXERWBVISVJVKBWBVL
-      VOAWDWAVPVQAWBBVRUO $.
+      ( vx vy vz cid ccom wcel cfv wss wceq cv wbr wal weu fvfullfunlem1 abeq2i
+      wa brres cvv ccompl cdif cdm cres wfun wrel weq wi relres anbi2i tz6.12-1
+      adantrl adantl eqtr3d adantlr syl2anb ax-gen gen2 dffun2 mpbir2an cxp cin
+      bitri fvfullfunlem2 crn ssdmrn ssv xpss2 ax-mp sstri ssini df-res funssfv
+      sseqtr4i mp3an12 fvres ) AFBGFUABGUBZUCZHZABVRUDZIZAVQIZABIVTUEZVQVTJVSWA
+      WBKWCVTUFCLZDLZVTMZWDELZVTMZRDEUGZUHZENZDNCNBVRUIWKCDWJEWFWDWEBMZWDWGBMZE
+      OZRZWMWLDOZRZWIWHWFWLWDVRHZRWOWDWEBVRSWRWNWLWNCVRCEBPQUJVCWHWMWRRWQWDWGBV
+      RSWRWPWMWPCVRCDBPQUJVCWLWQWIWNWLWQRWDBIZWEWGWLWPWSWEKWMDWDWEBUKULWQWSWGKW
+      LDWDWGBUKUMUNUOUPUQURCDEVTUSUTVQBVRTVAZVBVTVQBWTBVDVQVRVQVEZVAZWTVQVFXATJ
+      XBWTJXAVGXATVRVHVIVJVKBVRVLVNAVTVQVMVOAVRBVPUN $.
   $}
 
   ${
