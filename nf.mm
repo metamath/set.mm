@@ -45595,8 +45595,8 @@ $)
     $( Inference from subclass principle for relations.  (Contributed by NM,
        31-Mar-1998.) $)
     relssi $p |- A C_ B $=
-      ( wss cv cop wcel wi wal wrel wb ssrelOLD ax-mp ax-gen mpgbir ) CDGZAHBHIZCJ
-      TDJKZBLZACMSUBALNEABCDOPUABFQR $.
+      ( wss cv cop wcel wi wal ssrel ax-gen mpgbir ) CDGAHBHIZCJPDJKZBLAABCDMQB
+      FNO $.
   $}
 
   ${
@@ -45606,8 +45606,8 @@ $)
     $( Deduction from subclass principle for relations.  (Contributed by set.mm
        contributors, 11-Sep-2004.) $)
     relssdv $p |- ( ph -> A C_ B ) $=
-      ( wss cv cop wcel wi wal alrimivv wrel wb ssrelOLD syl mpbird ) ADEHZBICIJZD
-      KUAEKLZCMBMZAUBBCGNADOTUCPFBCDEQRS $.
+      ( cv cop wcel wi wal wss alrimivv ssrel sylibr ) ABHCHIZDJQEJKZCLBLDEMARB
+      CGNBCDEOP $.
   $}
 
   ${
