@@ -45600,14 +45600,24 @@ $)
       ( cv cop wcel wi wal wss alrimivv ssrel sylibr ) ABGCGHZDIPEIJZCKBKDELAQB
       CFMBCDENO $.
   $}
-  
+
+  ${
+    $d x y A $.  $d x y B $.
+    eqrelriv.1 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
+    $( Inference from extensionality principle for relations.  (Contributed by
+       FL, 15-Oct-2012.) (Revised by Scott Fenton, 16-Apr-2021.) $)
+    eqrelriv $p |- A = B $=
+      ( wceq cv cop wcel wb wal eqrel ax-gen mpgbir ) CDFAGBGHZCIODIJZBKAABCDLP
+      BEMN $.
+  $}
+
   ${
     $d x y A $.  $d x y B $.
     eqrelrivOLD.1 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
 
     $( Inference from extensionality principle for relations.  (Contributed by
        FL, 15-Oct-2012.) $)
-    eqrelrivOLD $p |- ( ( Rel A /\ Rel B ) -> A = B ) $=
+    eqrelrivOLD $p |- ( ( Rel A /\ Rel B ) -> A = B ) $= 
       ( wrel wa wceq cv cop wcel wb wal gen2 eqrelOLD mpbiri ) CFDFGCDHAIBIJZCKQDK
       LZBMAMRABENABCDOP $.
   $}
@@ -45849,11 +45859,10 @@ $)
        NM, 30-Sep-2002.) $)
     inopab $p |- ( { <. x , y >. | ph } i^i { <. x , y >. | ps } ) =
                { <. x , y >. | ( ph /\ ps ) } $=
-      ( vz vw copab cin wa wrel relopab relin1 ax-mp cop wcel wsbc sbcan sbcbii
-      cv opelopabsb anbi12i 3bitr4ri elin 3bitr4i eqrelriivOLD ) EFACDGZBCDGZHZABI
-      ZCDGZUFJUHJACDKUFUGLMUICDKESZFSZNZUFOZUMUGOZIZUIDULPZCUKPZUMUHOUMUJOADULP
-      ZBDULPZIZCUKPUSCUKPZUTCUKPZIURUPUSUTCUKQUQVACUKABDULQRUNVBUOVCACDUKULTBCD
-      UKULTUAUBUMUFUGUCUICDUKULTUDUE $.
+      ( vz vw copab cin wa cv cop wcel sbcan sbcbii opelopabsb anbi12i 3bitr4ri
+      wsbc elin 3bitr4i eqrelriv ) EFACDGZBCDGZHZABIZCDGZEJZFJZKZUBLZUIUCLZIZUE
+      DUHRZCUGRZUIUDLUIUFLADUHRZBDUHRZIZCUGRUOCUGRZUPCUGRZIUNULUOUPCUGMUMUQCUGA
+      BDUHMNUJURUKUSACDUGUHOBCDUGUHOPQUIUBUCSUECDUGUHOTUA $.
 
     $( The intersection of two cross products.  Exercise 9 of [TakeutiZaring]
        p. 25.  (The proof was shortened by Andrew Salmon, 27-Aug-2011.)
@@ -47033,11 +47042,11 @@ $)
     $( Alternate definition of the restriction operation.  (Contributed by
        Mario Carneiro, 5-Nov-2013.) $)
     dfres2 $p |- ( R |` A ) = { <. x , y >. | ( x e. A /\ x R y ) } $=
-      ( vz vw cres cv wcel wbr copab relres relopab cop vex eleq1 breq1 anbi12d
-      wa weq breq2 anbi2d opelopab brres ancom bitri df-br 3bitr2ri eqrelriivOLD )
-      EFDCGZAHZCIZUKBHZDJZSZABKZDCLUOABMEHZFHZNZUPIUQCIZUQURDJZSZUQURUJJZUSUJIU
-      OUTUQUMDJZSVBABUQUREOFOAETULUTUNVDUKUQCPUKUQUMDQRBFTVDVAUTUMURUQDUAUBUCVC
-      VAUTSVBUQURDCUDVAUTUEUFUQURUJUGUHUI $.
+      ( vz vw cres cv wbr wa copab cop vex weq eleq1 breq1 anbi12d breq2 anbi2d
+      wcel opelopab brres ancom bitri df-br 3bitr2ri eqrelriv ) EFDCGZAHZCTZUIB
+      HZDIZJZABKZEHZFHZLZUNTUOCTZUOUPDIZJZUOUPUHIZUQUHTUMURUOUKDIZJUTABUOUPEMFM
+      AENUJURULVBUIUOCOUIUOUKDPQBFNVBUSURUKUPUODRSUAVAUSURJUTUOUPDCUBUSURUCUDUO
+      UPUHUEUFUG $.
   $}
 
   ${
@@ -47287,9 +47296,9 @@ $)
        contributors, 11-Dec-2003.)  (Revised by set.mm contributors,
        27-Aug-2011.) $)
     cnvopab $p |- `' { <. x , y >. | ph } = { <. y , x >. | ph } $=
-      ( vz vw copab ccnv relcnv relopab cop wcel wsbc opelopabsb sbccom opelcnv
-      cv bitri 3bitr4i eqrelriivOLD ) DEABCFZGZACBFZTHACBIEPZDPZJTKZABUCLCUDLZUDUC
-      JZUAKUGUBKUEACUDLBUCLUFABCUCUDMABCUCUDNQUDUCTOACBUDUCMRS $.
+      ( vz vw copab ccnv cop wcel wsbc opelopabsb sbccom bitri opelcnv eqrelriv
+      cv 3bitr4i ) DEABCFZGZACBFZEPZDPZHRIZABUAJCUBJZUBUAHZSIUETIUCACUBJBUAJUDA
+      BCUAUBKABCUAUBLMUBUARNACBUBUAKQO $.
   $}
 
   ${
@@ -47297,8 +47306,8 @@ $)
     $( The converse of the empty set.  (Contributed by set.mm contributors,
        6-Apr-1998.) $)
     cnv0 $p |- `' (/) = (/) $=
-      ( vx vy c0 ccnv relcnv rel0 cop wcel noel opelcnv mtbir 2false eqrelriivOLD
-      cv ) ABCDZCCEFANZBNZGZOHZRCHSQPGZCHTIPQCJKRILM $.
+      ( vx vy c0 ccnv cv cop wcel noel opelcnv mtbir 2false eqrelriv ) ABCDZCAE
+      ZBEZFZMGZPCGQONFZCGRHNOCIJPHKL $.
 
     $( The converse of the identity relation.  Theorem 3.7(ii) of [Monk1]
        p. 36.  (The proof was shortened by Andrew Salmon, 27-Aug-2011.)
@@ -47323,10 +47332,9 @@ $)
     $( Distributive law for converse over set difference.  (Contributed by
        set.mm contributors, 26-Jun-2014.) $)
     cnvdif $p |- `' ( A \ B ) = ( `' A \ `' B ) $=
-      ( vx vy cdif ccnv relcnv wss wrel difss relss mp2 cv cop wcel wn wa eldif
-      opelcnv notbii anbi12i bitr4i 3bitr4i eqrelriivOLD ) CDABEZFZAFZBFZEZUEGUIUG
-      HUGIUIIUGUHJAGUIUGKLDMZCMZNZUEOZUKUJNZUGOZUNUHOZPZQZUNUFOUNUIOUMULAOZULBO
-      ZPZQURULABRUOUSUQVAUKUJASUPUTUKUJBSTUAUBUKUJUESUNUGUHRUCUD $.
+      ( vx vy cdif ccnv cv cop wcel wn wa opelcnv notbii anbi12i bitr4i 3bitr4i
+      eldif eqrelriv ) CDABEZFZAFZBFZEZDGZCGZHZSIZUEUDHZUAIZUHUBIZJZKZUHTIUHUCI
+      UGUFAIZUFBIZJZKULUFABQUIUMUKUOUEUDALUJUNUEUDBLMNOUEUDSLUHUAUBQPR $.
 
     $( Distributive law for converse over intersection.  Theorem 15 of [Suppes]
        p. 62.  (Contributed by set.mm contributors, 25-Mar-1998.)  (Revised by
@@ -47697,10 +47705,10 @@ $)
     $( Converse of a singleton of an ordered pair.  (Contributed by NM,
        11-May-1998.) $)
     cnvsn $p |- `' { <. A , B >. } = { <. B , A >. } $=
-      ( vx vy cop csn ccnv relcnv relsnop wcel wceq vex opex elsnc opth 3bitr4i
-      cv wa ancom bitri opelcnv eqrelriivOLD ) EFABGZHZIZBAGZHZUFJBADCKFSZESZGZUFL
-      ZUKUJGZUHMZUNUGLUNUILUMULUEMZUOULUEUJUKFNZENZOPUJAMZUKBMZTUTUSTUPUOUSUTUA
-      UJUKABQUKUJBAQRUBUKUJUFUCUNUHUKUJURUQOPRUD $.
+      ( vx vy cop csn ccnv cv wcel wceq vex opex elsnc ancom opth 3bitr4i bitri
+      wa opelcnv eqrelriv ) EFABGZHZIZBAGZHZFJZEJZGZUDKZUIUHGZUFLZULUEKULUGKUKU
+      JUCLZUMUJUCUHUIFMZEMZNOUHALZUIBLZTURUQTUNUMUQURPUHUIABQUIUHBAQRSUIUHUDUAU
+      LUFUIUHUPUONORUB $.
 
     $( Swap the members of an ordered pair.  (Contributed by set.mm
        contributors, 14-Dec-2008.) $)
@@ -47805,12 +47813,11 @@ $)
        variable.  (Contributed by set.mm contributors, 19-Dec-2008.) $)
     dfco2 $p |- ( A o. B )
                 = U_ x e. _V ( ( `' B " { x } ) X. ( A " { x } ) ) $=
-      ( vy vz ccom cvv ccnv cv csn cima cxp ciun wrel wcel cop wbr wa wex bitri
-      relco reliun relxp mprgbir opelco wrex eliun rexv opelxp eliniseg elimasn
-      a1i df-br bitr4i anbi12i exbii 3bitrri eqrelriivOLD ) DEBCFZAGCHAIZJZKZBVAKZ
-      LZMZBCUAVENVDNZAGAGVDUBVFUTGOVBVCUCULUDDIZEIZPZUSOVGUTCQZUTVHBQZRZASZVIVE
-      OZAVGVHBCUEVNVIVDOZAGUFVOASVMAVIGVDUGVOAUHVOVLAVOVGVBOZVHVCOZRVLVGVHVBVCU
-      IVPVJVQVKCUTVGUJVQUTVHPBOVKBUTVHUKUTVHBUMUNUOTUPUQTUR $.
+      ( vy vz ccom cvv ccnv cv csn cima cxp ciun cop wcel wbr wex opelco bitri
+      wa wrex eliun opelxp eliniseg elimasn df-br bitr4i anbi12i exbii eqrelriv
+      rexv 3bitrri ) DEBCFZAGCHAIZJZKZBUOKZLZMZDIZEIZNZUMOUTUNCPZUNVABPZTZAQZVB
+      USOZAUTVABCRVGVBUROZAGUAVHAQVFAVBGURUBVHAUKVHVEAVHUTUPOZVAUQOZTVEUTVAUPUQ
+      UCVIVCVJVDCUNUTUDVJUNVANBOVDBUNVAUEUNVABUFUGUHSUIULSUJ $.
 
     $( Generalization of ~ dfco2 , where ` C ` can have any value between
        ` dom A i^i ran B ` and ` _V ` .  (The proof was shortened by Andrew
@@ -47903,12 +47910,12 @@ $)
     $( Composition with an indexed union.  (Contributed by set.mm contributors,
        21-Dec-2008.) $)
     coiun $p |- ( A o. U_ x e. C B ) = U_ x e. C ( A o. B ) $=
-      ( vy vz vw ciun ccom relco wrel cv wcel wbr wa wex wrex cop eliun df-br
-      reliun a1i mprgbir rexbii 3bitr4i anbi1i r19.41v bitr4i rexcom4 eqrelriivOLD
-      exbii opelco bitri ) EFBADCHZIZADBCIZHZBUNJUQKUPKZADADUPUAURALDMBCJUBUCEL
-      ZGLZUNNZUTFLZBNZOZGPZUSUTCNZVCOZGPZADQZUSVBRZUOMVJUQMZVEVGADQZGPVIVDVLGVD
-      VFADQZVCOVLVAVMVCUSUTRZUNMVNCMZADQVAVMAVNDCSUSUTUNTVFVOADUSUTCTUDUEUFVFVC
-      ADUGUHUKVGAGDUIUHGUSVBBUNULVKVJUPMZADQVIAVJDUPSVPVHADGUSVBBCULUDUMUEUJ $.
+      ( vy vz vw ciun ccom cv wbr wex wrex cop wcel eliun df-br rexbii 3bitr4i
+      wa anbi1i r19.41v bitr4i exbii rexcom4 opelco bitri eqrelriv ) EFBADCHZIZ
+      ADBCIZHZEJZGJZUIKZUNFJZBKZTZGLZUMUNCKZUQTZGLZADMZUMUPNZUJOVDULOZUSVAADMZG
+      LVCURVFGURUTADMZUQTVFUOVGUQUMUNNZUIOVHCOZADMUOVGAVHDCPUMUNUIQUTVIADUMUNCQ
+      RSUAUTUQADUBUCUDVAAGDUEUCGUMUPBUIUFVEVDUKOZADMVCAVDDUKPVJVBADGUMUPBCUFRUG
+      SUH $.
   $}
 
   $( A composition is not affected by a double converse of its first argument.
@@ -47936,9 +47943,9 @@ $)
     $( Composition with the empty set.  Theorem 20 of [Suppes] p. 63.
        (Contributed by set.mm contributors, 24-Apr-2004.) $)
     co02 $p |- ( A o. (/) ) = (/) $=
-      ( vx vy vz c0 ccom relco rel0 cv cop wcel wbr wa noel df-br mtbir intnanr
-      wex nex opelco 2false eqrelriivOLD ) BCAEFZEAEGHBIZCIZJZUCKZUFEKUGUDDIZELZUH
-      UEALZMZDRUKDUIUJUIUDUHJZEKULNUDUHEOPQSDUDUEAETPUFNUAUB $.
+      ( vx vy vz c0 ccom cv cop wcel wbr wa wex noel df-br mtbir intnanr opelco
+      nex 2false eqrelriv ) BCAEFZEBGZCGZHZUAIZUDEIUEUBDGZEJZUFUCAJZKZDLUIDUGUH
+      UGUBUFHZEIUJMUBUFENOPRDUBUCAEQOUDMST $.
 
     $( Composition with the empty set.  (Contributed by set.mm contributors,
        24-Apr-2004.) $)
@@ -48056,13 +48063,11 @@ $)
     $( Definition of converse in terms of image and ` Swap ` .  (Contributed by
        set.mm contributors, 8-Jan-2015.) $)
     dfcnv2 $p |- `' A = ( Swap " A ) $=
-      ( vx vy vz ccnv cswap cima relcnv cvv cxp wss crn sstri cv cop wa wex vex
-      wcel bitri wrel imassrn swapssvvvv rnss ax-mp rnxpss df-rel mpbir brswap2
-      wbr wceq anbi1i exbii opex eleq1 ceqsexv bicomi opelcnv wrex elima df-rex
-      exancom 3bitr4i eqrelriivOLD ) BCAEZFAGZAHVFUAVFIIJZKVFFLZVGFAUBVHVGVGJZLZVG
-      FVIKVHVJKUCFVIUDUEVGVGUFMMVFUGUHCNZBNZOZASZDNZVLVKOZFUJZVOASZPZDQZVPVESVP
-      VFSZVTVNVTVOVMUKZVRPZDQVNVSWCDVQWBVRVOVLVKBRZCRZUIULUMVRVNDVMVKVLWEWDUNVO
-      VMAUOUPTUQVLVKAURWAVQDAUSZVTDVPFAUTWFVRVQPDQVTVQDAVAVRVQDVBTTVCVD $.
+      ( vx vy vz ccnv cswap cima cv cop wbr wcel wa wex wceq vex brswap2 anbi1i
+      exbii opex bitri eleq1 ceqsexv wrex elima df-rex exancom opelcnv 3bitr4ri
+      eqrelriv ) BCAEZFAGZDHZBHZCHZIZFJZULAKZLZDMZUNUMIZAKZUOUKKZUOUJKUSULUTNZU
+      QLZDMVAURVDDUPVCUQULUMUNBOZCOZPQRUQVADUTUNUMVFVESULUTAUAUBTVBUPDAUCZUSDUO
+      FAUDVGUQUPLDMUSUPDAUEUQUPDUFTTUMUNAUGUHUI $.
   $}
 
   $( The converse of a set is a set.  Corollary 6.8(1) of [TakeutiZaring]
@@ -61605,19 +61610,18 @@ $)
        (Contributed by Scott Fenton, 30-Jul-2019.) $)
     csucex $p |- ( x e. _V |-> ( x +c 1c ) ) e. _V $=
       ( vy vz vw cvv cv c1c cplc caddcfn c1st wbr wex wceq cop wcel bitri exbii
-      wa vex syl6bb cmpt csn cres ccnv ccom wfun wrel funmpt funrel ax-mp relco
-      brcnv br1st anbi1i 19.41v bitr4i excom opex breq1 braddcfn opelxp mpbiran
-      cxp brres elsn anbi12ci ceqsexv 1cex addceq2 eqeq1d opelco copab mptv weq
-      eleq2i addceq1 eqeq1 eqcom opelopab 3bitr4ri eqrelriivOLD addcfnex vvex snex
-      eqeq2d xpex resex 1stex cnvex coex eqeltri ) AEAFZGHZUAZIEGUBZVCZUCZJUDZU
-      EZEBCWNWSWNUFWNUGAEWMUHWNUIUJWQWRUKBFZDFZWRKZXACFZWQKZRZDLZWTGHZXCMZWTXCN
-      ZWSOXIWNOZXFWLGMZWTWLHZXCMZRZALZXHXFXAWTWLNZMZXDRZALZDLZXOXEXSDXEXQALZXDR
-      XSXBYAXDXBXAWTJKYAWTXAJULAXAWTBSZUMPUNXQXDAUOUPQXTXRDLZALXOXRDAUQYCXNAXDX
-      NDXPWTWLYBASZURXQXDXPXCWQKZXNXAXPXCWQUSYEXPXCIKZXPWPOZRXNXPXCIWPVDYFXMYGX
-      KWTWLXCYBYDUTYGWLWOOZXKYGWTEOYHYBWTWLEWOVAVBAGVEPVFPTVGQPPXMXHAGVHXKXLXGX
-      CWLGWTVIVJVGPDWTXCWQWRVKXJXIXAWMMZADVLZOXHWNYJXIADWMVMVOYIXAXGMZXHADWTXCY
-      BCSABVNWMXGXAWLWTGVPWEDCVNYKXCXGMXHXAXCXGVQXCXGVRTVSPVTWAWQWRIWPWBEWOWCGW
-      DWFWGJWHWIWJWK $.
+      wa vex syl6bb cmpt csn cxp cres ccnv ccom brcnv br1st anbi1i 19.41v excom
+      bitr4i opex breq1 brres braddcfn opelxp mpbiran elsn ceqsexv 1cex addceq2
+      anbi12ci eqeq1d opelco copab mptv eleq2i weq addceq1 eqeq1 eqcom opelopab
+      eqeq2d 3bitr4ri eqrelriv addcfnex vvex snex xpex resex 1stex coex eqeltri
+      cnvex ) AEAFZGHZUAZIEGUBZUCZUDZJUEZUFZEBCWHWMBFZDFZWLKZWOCFZWKKZRZDLZWNGH
+      ZWQMZWNWQNZWMOXCWHOZWTWFGMZWNWFHZWQMZRZALZXBWTWOWNWFNZMZWRRZALZDLZXIWSXMD
+      WSXKALZWRRXMWPXOWRWPWOWNJKXOWNWOJUGAWOWNBSZUHPUIXKWRAUJULQXNXLDLZALXIXLDA
+      UKXQXHAWRXHDXJWNWFXPASZUMXKWRXJWQWKKZXHWOXJWQWKUNXSXJWQIKZXJWJOZRXHXJWQIW
+      JUOXTXGYAXEWNWFWQXPXRUPYAWFWIOZXEYAWNEOYBXPWNWFEWIUQURAGUSPVCPTUTQPPXGXBA
+      GVAXEXFXAWQWFGWNVBVDUTPDWNWQWKWLVEXDXCWOWGMZADVFZOXBWHYDXCADWGVGVHYCWOXAM
+      ZXBADWNWQXPCSABVIWGXAWOWFWNGVJVNDCVIYEWQXAMXBWOWQXAVKWQXAVLTVMPVOVPWKWLIW
+      JVQEWIVRGVSVTWAJWBWEWCWD $.
   $}
 
   ${
