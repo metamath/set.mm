@@ -45637,25 +45637,14 @@ $)
 
   ${
     $d x y A $.  $d x y B $.  $d ph x $.  $d ph y $.
-    eqrelrdv.1 $e |- Rel A $.
-    eqrelrdv.2 $e |- Rel B $.
-    eqrelrdv.3 $e |- ( ph -> ( <. x , y >. e. A <-> <. x , y >. e. B ) ) $.
+    eqrelrdvOLD.1 $e |- Rel A $.
+    eqrelrdvOLD.2 $e |- Rel B $.
+    eqrelrdvOLD.3 $e |- ( ph -> ( <. x , y >. e. A <-> <. x , y >. e. B ) ) $.
     $( Deduce equality of relations from equivalence of membership.
        (Contributed by Rodolfo Medina, 10-Oct-2010.) $)
-    eqrelrdv $p |- ( ph -> A = B ) $=
+    eqrelrdvOLD $p |- ( ph -> A = B ) $=
       ( cv cop wcel wb wal wceq alrimivv wrel eqrelOLD mp2an sylibr ) ABICIJZDKTEK
       LZCMBMZDENZAUABCHODPEPUCUBLFGBCDEQRS $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.  $d ph x $.  $d ph y $.
-    eqrelrdv2.1 $e |- ( ph
-       -> ( <. x , y >. e. A <-> <. x , y >. e. B ) ) $.
-    $( A version of ~ eqrelrdv .  (Contributed by Rodolfo Medina,
-       10-Oct-2010.) $)
-    eqrelrdv2 $p |- ( ( ( Rel A /\ Rel B ) /\ ph ) -> A = B ) $=
-      ( wrel wa wceq cv cop wcel wb wal alrimivv adantl eqrelOLD adantr mpbird ) D
-      GEGHZAHDEIZBJCJKZDLUBELMZCNBNZAUDTAUCBCFOPTUAUDMABCDEQRS $.
   $}
 
   ${
@@ -49455,7 +49444,7 @@ $)
     fcnvres $p |- ( F : A --> B -> `' ( F |` A ) = ( `' F |` B ) ) $=
       ( vy vx wf cres ccnv relcnv relres cv cop wa wbr wb df-br opelcnv opelres
       wcel bitri wfn ffn fnbr sylan crn wss frn brelrn syl2an sylan2br pm5.32da
-      ssel2 2thd anbi1i 3bitr4g eqrelrdv ) ABCFZDECAGZHZCHZBGZURIUTBJUQEKZDKZLZ
+      ssel2 2thd anbi1i 3bitr4g eqrelrdvOLD ) ABCFZDECAGZHZCHZBGZURIUTBJUQEKZDKZLZ
       CSZVBASZMZVEVCBSZMZVCVBLZUSSZVJVASZUQVEVFVHVEUQVBVCCNZVFVHOVBVCCPUQVMMVFV
       HUQCAUAVMVFABCUBAVBVCCUCUDUQCUEZBUFVCVNSVHVMABCUGVBVCCUHVNBVCULUIUMUJUKVK
       VDURSVGVCVBURQVBVCCARTVLVJUTSZVHMVIVCVBUTBRVOVEVHVCVBCQUNTUOUP $.
