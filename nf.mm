@@ -48281,12 +48281,6 @@ $)
       ( wfun cv wbr wa weq wi wal wrel dffun2 relall biantrur bitri ) DEAFZBFDG
       QCFDGHBCIJCKBKAKZDLZRHABCDMSRDNOP $.
 
-    $( Alternate definition of function.  (Contributed by NM, 29-Dec-1996.) $)
-    dffun3OLD $p |- ( Fun A <-> ( Rel A /\
-                 A. x E. z A. y ( x A y -> y = z ) ) ) $=
-      ( wfun cv wbr weq wi wal wex wrel wa dffun3 relall biantrur bitri ) DEAFB
-      FDGBCHIBJCKAJZDLZRMABCDNSRDOPQ $.
-
     $( Alternate definition of a function.  Definition 6.4(4) of
        [TakeutiZaring] p. 24.  (Contributed by set.mm contributors,
        29-Dec-1996.) $)
@@ -48439,15 +48433,14 @@ $)
     $( The universe is not a function.  (Contributed by Raph Levien,
        27-Jan-2004.) $)
     nfunv $p |- -. Fun _V $=
-      ( vx vy vz cvv cv wbr wa wal wex wne cop wcel vex opex df-br mpbir pm3.2i
-      wn syl5bbr exnal wfun wrel weq wi ccompl complex necompl wceq annim breq2
-      necomi df-ne neeq2 anbi12d spcev 19.8a 19.23bi mp2b exbii bitri dffun2OLD
-      anbi2d mpbi intnan mtbir ) DUADUBZAEZBEZDFZVGCEZDFZGZBCUCZUDZCHZBHZAHZGVQ
-      VFVNRZCIZBIZAIZVQRZVIVGVHUEZDFZGZVHWCJZGZVSWAWEWFVIWDVIVGVHKDLVGVHAMZBMZN
-      VGVHDOPWDVGWCKDLVGWCWHVHWIUFZNVGWCDOPQWCVHVHUGUKQVRWGCWCWJVRVLVMRZGVJWCUH
-      ZWGVLVMUIWLVLWEWKWFWLVKWDVIVJWCVGDUJVBWKVHVJJWLWFVHVJULVJWCVHUMSUNSUOVSWA
-      BVTAUPUQURWAVPRZAIWBVTWMAVTVORZBIWMVSWNBVNCTUSVOBTUTUSVPATUTVCVDABCDVAVE
-      $.
+      ( vx vy vz cvv wfun cv cop wcel wa weq wal wex wne vex pm3.2i exbii exnal
+      wn opex bitri ccompl complex necompl necomi wceq opeq2 eleq1d df-ne neeq2
+      anbi2d syl5bbr anbi12d spcev 19.8a 19.23bi mp2b exanali mpbi dffun4 mtbir
+      wi ) DEAFZBFZGDHZVBCFZGZDHZIZBCJZVACKZBKZAKZVHVIRZIZCLZBLZALZVLRZVDVBVCUA
+      ZGZDHZIZVCVSMZIZVOVQWBWCVDWAVBVCANZBNZSVBVSWEVCWFUBZSOVSVCVCUCUDOVNWDCVSW
+      GVEVSUEZVHWBVMWCWHVGWAVDWHVFVTDVEVSVBUFUGUJVMVCVEMWHWCVCVEUHVEVSVCUIUKULU
+      MVOVQBVPAUNUOUPVQVKRZALVRVPWIAVPVJRZBLWIVOWJBVHVICUQPVJBQTPVKAQTURABCDUSU
+      T $.
   $}
 
   ${
