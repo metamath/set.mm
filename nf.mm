@@ -45652,21 +45652,6 @@ $)
   $}
 
   ${
-    relsn.1 $e |- A e. _V $.
-    $( A singleton is a relation iff it is an ordered pair.  (Contributed by
-       NM, 24-Sep-2013.) $)
-    relsn $p |- ( Rel { A } <-> A e. ( _V X. _V ) ) $=
-      ( csn wrel cvv cxp wss wcel df-rel snss bitr4i ) ACZDLEEFZGAMHLIAMBJK $.
-
-    relsnop.2 $e |- B e. _V $.
-    $( A singleton of an ordered pair is a relation.  (Contributed by NM,
-       17-May-1998.) $)
-    relsnop $p |- Rel { <. A , B >. } $=
-      ( cop csn wrel cvv cxp wcel opelxp mpbir2an opex relsn mpbir ) ABEZFGPHHI
-      JZQAHJBHJCDABHHKLPABCDMNO $.
-  $}
-
-  ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.
     $( Subset theorem for cross product.  Generalization of Theorem 101 of
        [Suppes] p. 52.  (The proof was shortened by Andrew Salmon,
@@ -45685,11 +45670,6 @@ $)
     xpss $p |- ( A X. B ) C_ ( _V X. _V ) $=
       ( cvv wss cxp ssv xpss12 mp2an ) ACDBCDABECCEDAFBFACBCGH $.
   $}
-
-  $( A cross product is a relation.  Theorem 3.13(i) of [Monk1] p. 37.
-     (Contributed by NM, 2-Aug-1994.) $)
-  relxp $p |- Rel ( A X. B ) $=
-    ( cxp wrel cvv wss xpss df-rel mpbir ) ABCZDJEECFABGJHI $.
 
   $( Subset relation for cross product.  (Contributed by Jeff Hankins,
      30-Aug-2009.) $)
@@ -46915,8 +46895,7 @@ $)
      set.mm contributors, 2-Aug-1994.)  (Revised by set.mm contributors,
      27-Aug-2011.) $)
   relres $p |- Rel ( A |` B ) $=
-    ( cres cvv cxp wss wrel cin df-res inss2 eqsstri relxp relss mp2 ) ABCZBDEZ
-    FPGOGOAPHPABIAPJKBDLOPMN $.
+    ( cres relall ) ABCD $.
 
   $( Absorption law for restriction.  Exercise 17 of [TakeutiZaring] p. 25.
      (Contributed by set.mm contributors, 9-Aug-1994.) $)
@@ -47572,10 +47551,9 @@ $)
   $( The double converse of a class strips out all elements that are not
      ordered pairs.  (Contributed by set.mm contributors, 8-Dec-2003.) $)
   cnvcnv $p |- `' `' A = ( A i^i ( _V X. _V ) ) $=
-    ( cvv cxp ccnv cnvin cnveqi wrel wceq inss2 df-rel mpbir dfrel2 mpbi relcnv
-    cin wss relxp sseqtr4i dfss eqtr4i 3eqtr3ri ) ABBCZOZDZDZADZUBDZOZDZUCUFDZU
-    DUHAUBEFUCGZUEUCHUKUCUBPAUBIUCJKUCLMUIUJUGDZOZUJUFUGEUJULPUJUMHUJUBULUJGUJU
-    BPUFNUJJMUBGULUBHBBQUBLMRUJULSMTUA $.
+    ( cvv cxp cin ccnv cnvin cnveqi wrel wceq relall dfrel2 wss df-rel sseqtr4i
+    mpbi dfss eqtr4i 3eqtr3ri ) ABBCZDZEZEZAEZSEZDZEZTUCEZUAUEASFGTHUBTITJTKOUF
+    UGUDEZDZUGUCUDFUGUHLUGUIIUGSUHUGHUGSLUGJUGMOSHUHSISJSKONUGUHPOQR $.
 
   $( The double converse of a class equals its restriction to the universe.
      (Contributed by set.mm contributors, 8-Oct-2007.) $)
@@ -51068,18 +51046,18 @@ $)
               ( F C_ ( A X. B ) /\ A. x e. A E! y x F y ) ) $=
       ( wss cv wbr wral wa wcel cdm adantr sylibr syl sylanbrc crn wrel wal wi
       wf cxp weu fssxp wex wmo cfv cop wfun ffun eleq2d biimpar funfvop syl2anc
-      fdm df-br fvex breq2 spcev funmo eu5 ralrimiva jca wfn relxp relss df-ral
-      wceq mpi wn dmss dmxpss syl6ss breldm ssel syl5 exlimdv con3d pm2.21 syl6
-      a1dd pm2.27 eumo pm2.61d2 alimdv syl5bi imp dffun6OLD euex exlimiv ralimi
-      df-mo dfss3 anim12i eqss df-fn rnss rnxpss df-f impbii ) CDEUAZECDUBZFZAG
-      ZBGZEHZBUCZACIZJZXAXCXHCDEUDXAXGACXAXDCKZJZXFBUEZXFBUFZXGXKXDXDEUGZEHZXLX
-      KXDXNUHEKZXOXKEUIZXDELZKZXPXAXQXJCDEUJZMXAXSXJXAXRCXDCDEUOUKULXDEUMUNXDXN
-      EUPNXFXOBXNXDEUQXEXNXDEURUSOXAXMXJXAXQXMXTBXDEUTOMXFBVAPVBVCXIECVDZEQZDFZ
-      XAXIXQXRCVHZYAXIERZXMASZXQXCYEXHXCXBRYECDVEEXBVFVIMXCXHYFXHXJXGTZASXCYFXG
-      ACVGXCYGXMAXCXJYGXMTXCXJVJZXMYGXCYHXLVJZXMXCXLXJXCXRCFZXLXJTXCXRXBLCEXBVK
-      CDVLVMZYJXFXJBXFXSYJXJXDXEEVNZXRCXDVOVPVQOVRYIXLXGTXMXLXGVSXFBWLNVTWAXJYG
-      XGXMXJXGWBXFBWCVTWDWEWFWGABEWHPXIYJCXRFZJYDXCYJXHYMYKXHXSACIYMXGXSACXGXLX
-      SXFBWIXFXSBYLWJOWKACXRWMNWNXRCWONECWPPXCYCXHXCYBXBQDEXBWQCDWRVMMCDEWSPWT
+      fdm df-br fvex breq2 spcev funmo eu5 ralrimiva jca wfn wceq relall df-ral
+      relss mpi wn dmss dmxpss syl6ss breldm ssel syl5 exlimdv con3d df-mo syl6
+      pm2.21 a1dd pm2.27 eumo pm2.61d2 alimdv syl5bi imp dffun6OLD euex exlimiv
+      ralimi dfss3 anim12i eqss df-fn rnss rnxpss df-f impbii ) CDEUAZECDUBZFZA
+      GZBGZEHZBUCZACIZJZXAXCXHCDEUDXAXGACXAXDCKZJZXFBUEZXFBUFZXGXKXDXDEUGZEHZXL
+      XKXDXNUHEKZXOXKEUIZXDELZKZXPXAXQXJCDEUJZMXAXSXJXAXRCXDCDEUOUKULXDEUMUNXDX
+      NEUPNXFXOBXNXDEUQXEXNXDEURUSOXAXMXJXAXQXMXTBXDEUTOMXFBVAPVBVCXIECVDZEQZDF
+      ZXAXIXQXRCVEZYAXIERZXMASZXQXCYEXHXCXBRYEXBVFEXBVHVIMXCXHYFXHXJXGTZASXCYFX
+      GACVGXCYGXMAXCXJYGXMTXCXJVJZXMYGXCYHXLVJZXMXCXLXJXCXRCFZXLXJTXCXRXBLCEXBV
+      KCDVLVMZYJXFXJBXFXSYJXJXDXEEVNZXRCXDVOVPVQOVRYIXLXGTXMXLXGWAXFBVSNVTWBXJY
+      GXGXMXJXGWCXFBWDVTWEWFWGWHABEWIPXIYJCXRFZJYDXCYJXHYMYKXHXSACIYMXGXSACXGXL
+      XSXFBWJXFXSBYLWKOWLACXRWMNWNXRCWONECWPPXCYCXHXCYBXBQDEXBWQCDWRVMMCDEWSPWT
       $.
 
     $( Alternate definition of a mapping.  (Contributed by set.mm contributors,
@@ -58560,9 +58538,9 @@ $)
        4.22(d) of [Mendelson] p. 254.  (Contributed by set.mm contributors,
        5-Jan-2004.)  (Revised by set.mm contributors, 23-Apr-2014.) $)
     xpcomen $p |- ( A X. B ) ~~ ( B X. A ) $=
-      ( cxp cswap cres wf1o cen wbr ccnv wrel relxp swapresrel ax-mp wceq cnvxp
-      wb f1oeq3 mpbi swapex xpex resex f1oen ) ABEZBAEZFUEGZHZUEUFIJUEUEKZUGHZU
-      HUELUJABMUENOUIUFPUJUHRABQUIUFUEUGSOTUEUFUGFUEUAABCDUBUCUDO $.
+      ( cxp cswap cres wf1o cen ccnv wrel relall swapresrel ax-mp wceq wb cnvxp
+      wbr f1oeq3 mpbi swapex xpex resex f1oen ) ABEZBAEZFUEGZHZUEUFIRUEUEJZUGHZ
+      UHUEKUJUELUEMNUIUFOUJUHPABQUIUFUEUGSNTUEUFUGFUEUAABCDUBUCUDN $.
   $}
 
   ${
@@ -62923,8 +62901,7 @@ $)
     $( The finite recursive function generator gives a relationship.
        (Contributed by Scott Fenton, 30-Jul-2019.) $)
     relfrec $p |- Rel F $=
-      ( cnnc crn csn cun cxp wss wrel frecxp relxp relss mp2 ) AFBGCHIZJZKRLALA
-      BCDEMFQNAROP $.
+      ( relall ) AF $.
   $}
 
   ${
