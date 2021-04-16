@@ -45622,37 +45622,24 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.  $d ph x $.  $d ph y $.
+    eqrelrdv.1 $e |- ( ph -> ( <. x , y >. e. A <-> <. x , y >. e. B ) ) $.
+    $( Deduce equality of relations from equivalence of membership.
+       (Contributed by Rodolfo Medina, 10-Oct-2010.) (Revised by Scott Fenton,
+       16-Apr-2021.) $)
+    eqrelrdv $p |- ( ph -> A = B ) $=
+      ( cv cop wcel wb wal wceq alrimivv eqrel sylibr ) ABGCGHZDIPEIJZCKBKDELAQ
+      BCFMBCDENO $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.
     eqrelrivOLD.1 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
 
     $( Inference from extensionality principle for relations.  (Contributed by
        FL, 15-Oct-2012.) $)
-    eqrelrivOLD $p |- ( ( Rel A /\ Rel B ) -> A = B ) $= 
-      ( wrel wa wceq cv cop wcel wb wal gen2 eqrelOLD mpbiri ) CFDFGCDHAIBIJZCKQDK
-      LZBMAMRABENABCDOP $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.
-    eqreliivOLD.1 $e |- Rel A $.
-    eqreliivOLD.2 $e |- Rel B $.
-    eqreliivOLD.3 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
-    $( Inference from extensionality principle for relations.  (Contributed by
-       NM, 17-Mar-1995.) $)
-    eqrelriivOLD $p |- A = B $=
-      ( wrel wceq eqrelrivOLD mp2an ) CHDHCDIEFABCDGJK $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.  $d ph x $.  $d ph y $.
-    eqrelrdvOLD.1 $e |- Rel A $.
-    eqrelrdvOLD.2 $e |- Rel B $.
-    eqrelrdvOLD.3 $e |- ( ph -> ( <. x , y >. e. A <-> <. x , y >. e. B ) ) $.
-    $( Deduce equality of relations from equivalence of membership.
-       (Contributed by Rodolfo Medina, 10-Oct-2010.) $)
-    eqrelrdvOLD $p |- ( ph -> A = B ) $=
-      ( cv cop wcel wb wal wceq alrimivv wrel eqrelOLD mp2an sylibr ) ABICIJZDKTEK
-      LZCMBMZDENZAUABCHODPEPUCUBLFGBCDEQRS $.
+    eqrelrivOLD $p |- ( ( Rel A /\ Rel B ) -> A = B ) $=
+      ( wceq wrel wa eqrelriv a1i ) CDFCGDGHABCDEIJ $.
   $}
 
   ${
@@ -47013,15 +47000,14 @@ $)
        27-Aug-2011.)  (Contributed by set.mm contributors, 13-Dec-2003.)
        (Revised by set.mm contributors, 27-Aug-2011.) $)
     iss $p |- ( A C_ _I <-> A = ( _I |` dom A ) ) $=
-      ( vx vy cid wss cdm cres wceq cv cop wcel wb wal wa ssel wi opeldm syl5bi
-      a1i wrel jcad weq wbr df-br vex ideq bitr3i anbi1i wex eldm2 syl6ib opeq2
-      eleq1d biimprd syli exlimdv biimpd syl9 imp3a impbid opelres syl6bbr reli
-      alrimivv relss mpi relres eqrelOLD sylancl mpbird resss sseq1 mpbiri impbii
-      ) ADEZADAFZGZHZVOVRBIZCIZJZAKZWAVQKZLZCMBMZVOWDBCVOWBWADKZVSVPKZNZWCVOWBW
-      HVOWBWFWGADWAOZWBWGPVOVSVTAQSUAWHBCUBZWGNVOWBWFWJWGWFVSVTDUCWJVSVTDUDVSVT
-      CUEUFUGZUHVOWJWGWBVOWGVSVSJZAKZWJWBWGWBCUIVOWMCVSAUJVOWBWMCWBVOWJWMVOWBWF
-      WJWIWKUKWJWMWBWJWLWAAVSVTVSULUMZUNUOUPRWJWMWBWNUQURUSRUTVSVTDVPVAVBVDVOAT
-      ZVQTVRWELVODTWOVCADVEVFDVPVGBCAVQVHVIVJVRVOVQDEDVPVKAVQDVLVMVN $.
+      ( vx vy cid wss cdm cres wceq cv cop wcel wa ssel opeldm a1i jcad weq wbr
+      wi syl5bi df-br vex ideq bitr3i anbi1i wex eldm2 syl6ib opeq2 eleq1d syli
+      biimprd exlimdv biimpd imp3a impbid opelres syl6bbr eqrelrdv resss mpbiri
+      syl9 sseq1 impbii ) ADEZADAFZGZHZVEBCAVGVEBIZCIZJZAKZVKDKZVIVFKZLZVKVGKVE
+      VLVOVEVLVMVNADVKMZVLVNSVEVIVJANOPVOBCQZVNLVEVLVMVQVNVMVIVJDRVQVIVJDUAVIVJ
+      CUBUCUDZUEVEVQVNVLVEVNVIVIJZAKZVQVLVNVLCUFVEVTCVIAUGVEVLVTCVLVEVQVTVEVLVM
+      VQVPVRUHVQVTVLVQVSVKAVIVJVIUIUJZULUKUMTVQVTVLWAUNVBUOTUPVIVJDVFUQURUSVHVE
+      VGDEDVFUTAVGDVCVAVD $.
   $}
 
   ${
@@ -47956,11 +47942,10 @@ $)
        [Monk1] p. 36.  (Contributed by set.mm contributors, 22-Apr-2004.)
        (Revised by Scott Fenton, 14-Apr-2021.) $)
     coi1 $p |- ( A o. _I ) = A $=
-      ( vx vy vz cid ccom wceq cv cop wcel wb wal eqrel wbr wa wex opelco bitri
-      weq vex ideq equcom anbi1i exbii breq1 ceqsexv df-br ax-gen mpgbir ) AEFZ
-      AGBHZCHZIZUJJZUMAJZKZCLBBCUJAMUPCUNUKDHZENZUQULANZOZDPZUODUKULAEQVAUKULAN
-      ZUOVADBSZUSOZDPVBUTVDDURVCUSURBDSVCUKUQDTUABDUBRUCUDUSVBDUKBTUQUKULAUEUFR
-      UKULAUGRRUHUI $.
+      ( vx vy vz cid ccom cv wbr wa wex weq brco ideq equcom bitri anbi1i exbii
+      vex breq1 ceqsexv 3bitri eqbrriv ) BCAEFZABGZCGZUCHUDDGZEHZUFUEAHZIZDJDBK
+      ZUHIZDJUDUEAHZDUDUEAELUIUKDUGUJUHUGBDKUJUDUFDRMBDNOPQUHULDUDBRUFUDUEASTUA
+      UB $.
 
     $( Composition with the identity relation.  Part of Theorem 3.7(i) of
        [Monk1] p. 36.  (Contributed by set.mm contributors, 22-Apr-2004.) $)
@@ -48314,7 +48299,7 @@ $)
   $( A function is a relation.  (Contributed by set.mm contributors,
      1-Aug-1994.) $)
   funrel $p |- ( Fun A -> Rel A ) $=
-    ( wfun wrel ccnv ccom cid wss dffun1 simplbi ) ABACAADEFGAHI $.
+    ( wrel wfun relall a1i ) ABACADE $.
 
   ${
     $d x y z A $.  $d x y z B $.
@@ -48416,8 +48401,8 @@ $)
   $( The identity relation is a function.  Part of Theorem 10.4 of [Quine]
      p. 65.  (Contributed by set.mm contributors, 30-Apr-1998.) $)
   funi $p |- Fun _I $=
-    ( cid wfun wrel ccnv ccom wss reli wceq relcnv coi2 ax-mp cnvi eqtri dffun1
-    eqimssi mpbir2an ) ABACAADZEZAFGRARQAQCRQHAIQJKLMOANP $.
+    ( cid wfun ccnv ccom wss cnvi coeq2i coi1 eqtri eqimssi df-fun mpbir ) ABAA
+    CZDZAENANAADAMAAFGAHIJAKL $.
 
   ${
     $d x y z $.
@@ -48484,15 +48469,13 @@ $)
     $( The restriction of a function to the domain of a subclass equals the
        subclass.  (Contributed by NM, 15-Aug-1994.) $)
     funssres $p |- ( ( Fun F /\ G C_ F ) -> ( F |` dom G ) = G ) $=
-      ( vx vy wfun wss wa cdm cres wceq cv cop wcel wb wal wi ssel wex imp wrel
-      adantl opeldm a1i jcad weu funeu2 eldm2 ancrd eximdv syl5bi eupick syl2an
-      exp43 com23 com34 pm2.43d imp3a impbid syl6rbbr relres funrel relss mpan9
-      opelres alrimivv eqrelOLD sylancr mpbird ) AEZBAFZGZABHZIZBJZCKZDKZLZVMMZVQB
-      MZNZDOCOZVKVTCDVKVSVQAMZVOVLMZGZVRVKVSWDVKVSWBWCVJVSWBPVIBAVQQZUAVSWCPVKV
-      OVPBUBUCUDVKWBWCVSVKWBWCVSPVKWBWCWBVSVIVJWBWCWBVSPZPZPVIWBVJWGVIWBVJWCWFV
-      IWBGWBDUEWBVSGZDRZWFVJWCGDVOVPAUFVJWCWIWCVSDRVJWIDVOBUGVJVSWHDVJVSWBWEUHU
-      IUJSWBVSDUKULUMUNSUOUPUQURVOVPAVLVDUSVEVKVMTBTZVNWANAVLUTVIATVJWJAVABAVBV
-      CCDVMBVFVGVH $.
+      ( vx vy wfun wss wa cdm cres cop wcel ssel adantl opeldm a1i jcad wex imp
+      cv wi weu funeu2 eldm2 ancrd eximdv syl5bi eupick exp43 com23 com34 imp3a
+      syl2an pm2.43d impbid opelres syl6rbbr eqrelrdv ) AEZBAFZGZCDABHZIZBUTCSZ
+      DSZJZBKZVEAKZVCVAKZGZVEVBKUTVFVIUTVFVGVHUSVFVGTURBAVELZMVFVHTUTVCVDBNOPUT
+      VGVHVFUTVGVHVFTUTVGVHVGVFURUSVGVHVGVFTZTZTURVGUSVLURVGUSVHVKURVGGVGDUAVGV
+      FGZDQZVKUSVHGDVCVDAUBUSVHVNVHVFDQUSVNDVCBUCUSVFVMDUSVFVGVJUDUEUFRVGVFDUGU
+      LUHUIRUJUMUKUNVCVDAVAUOUPUQ $.
   $}
 
   $( Equality of restrictions of a function and a subclass.  (Contributed by
@@ -48531,11 +48514,11 @@ $)
     $( A singleton of an ordered pair is a function.  Theorem 10.5 of [Quine]
        p. 65.  (Contributed by NM, 12-Aug-1994.) $)
     funsn $p |- Fun { <. A , B >. } $=
-      ( vx vy cop csn wfun wrel cv wbr wmo wal relsnop wceq wi moeq vex bitri
+      ( vx vy cop csn wfun wrel cv wbr wmo wal relall wceq wi moeq vex bitri wa
       a1i wcel df-br opex elsnc opth mobii moanimv mpbir ax-gen dffun6 mpbir2an
-      wa ) ABGZHZIUOJEKZFKZUOLZFMZENABCDOUSEUSUPAPZUQBPZFMZQZVBUTFBRUAUSUTVAUMZ
-      FMVCURVDFURUPUQGZUOUBZVDUPUQUOUCVFVEUNPVDVEUNUPUQESFSUDUEUPUQABUFTTUGUTVA
-      FUHTUIUJEFUOUKUL $.
+      ) ABGZHZIUOJEKZFKZUOLZFMZENUOOUSEUSUPAPZUQBPZFMZQZVBUTFBRUBUSUTVAUAZFMVCU
+      RVDFURUPUQGZUOUCZVDUPUQUOUDVFVEUNPVDVEUNUPUQESFSUEUFUPUQABUGTTUHUTVAFUITU
+      JUKEFUOULUM $.
   $}
 
   ${
@@ -48595,8 +48578,8 @@ $)
   $( The empty set is a function.  Theorem 10.3 of [Quine] p. 65.  (Contributed
      by set.mm contributors, 7-Apr-1998.) $)
   fun0 $p |- Fun (/) $=
-    ( c0 wfun wrel ccnv ccom cid wss rel0 co01 0ss eqsstri dffun1 mpbir2an ) AB
-    ACAADZEZFGHOAFNIFJKALM $.
+    ( c0 wfun ccnv ccom cid wss co01 0ss eqsstri df-fun mpbir ) ABAACZDZEFMAELG
+    EHIAJK $.
 
   $( The double converse of a function is a function.  (Contributed by set.mm
      contributors, 21-Sep-2004.) $)
@@ -49414,12 +49397,12 @@ $)
     $( The converse of a restriction of a function.  (Contributed by set.mm
        contributors, 26-Mar-1998.) $)
     fcnvres $p |- ( F : A --> B -> `' ( F |` A ) = ( `' F |` B ) ) $=
-      ( vy vx wf cres ccnv relcnv relres cv cop wa wbr wb df-br opelcnv opelres
-      wcel bitri wfn ffn fnbr sylan crn wss frn brelrn syl2an sylan2br pm5.32da
-      ssel2 2thd anbi1i 3bitr4g eqrelrdvOLD ) ABCFZDECAGZHZCHZBGZURIUTBJUQEKZDKZLZ
-      CSZVBASZMZVEVCBSZMZVCVBLZUSSZVJVASZUQVEVFVHVEUQVBVCCNZVFVHOVBVCCPUQVMMVFV
-      HUQCAUAVMVFABCUBAVBVCCUCUDUQCUEZBUFVCVNSVHVMABCUGVBVCCUHVNBVCULUIUMUJUKVK
-      VDURSVGVCVBURQVBVCCARTVLVJUTSZVHMVIVCVBUTBRVOVEVHVCVBCQUNTUOUP $.
+      ( vy vx wf cres ccnv cv cop wa wbr wb df-br wfn ffn opelcnv opelres bitri
+      wcel fnbr sylan crn wss brelrn ssel2 syl2an 2thd sylan2br pm5.32da anbi1i
+      frn 3bitr4g eqrelrdv ) ABCFZDECAGZHZCHZBGZUOEIZDIZJZCTZUTATZKZVCVABTZKZVA
+      UTJZUQTZVHUSTZUOVCVDVFVCUOUTVACLZVDVFMUTVACNUOVKKVDVFUOCAOVKVDABCPAUTVACU
+      AUBUOCUCZBUDVAVLTVFVKABCULUTVACUEVLBVAUFUGUHUIUJVIVBUPTVEVAUTUPQUTVACARSV
+      JVHURTZVFKVGVAUTURBRVMVCVFVAUTCQUKSUMUN $.
   $}
 
   $( The preimage of a class disjoint with a mapping's codomain is empty.
@@ -49969,11 +49952,10 @@ $)
      identity relation restricted to the function's range.  (Contributed by
      set.mm contributors, 13-Dec-2003.) $)
   f1ococnv2 $p |- ( F : A -1-1-onto-> B -> ( F o. `' F ) = ( _I |` B ) ) $=
-    ( wf1o ccnv ccom cid cdm cres wss wceq wf wfun f1of ffun wrel simprbi eqtrd
-    dffun1 3syl iss sylib crn f1odm wfo f1ocnv f1ofo forn eqtr4d dmcoeq syl fdm
-    reseq2d ) ABCDZCCEZFZGUPHZIZGBIUNUPGJZUPURKUNABCLCMZUSABCNABCOUTCPUSCSQTUPU
-    AUBUNUQBGUNUQUOHZBUNCHZUOUCZKUQVAKUNVBAVCABCUDUNBAUODZBAUOUEVCAKABCUFZBAUOU
-    GBAUOUHTUICUOUJUKUNVDBAUOLVABKVEBAUONBAUOULTRUMR $.
+    ( wf1o ccnv ccom cid cdm cres wfun wceq f1ofun wss df-fun bitri sylib df-dm
+    iss crn dmcoeq ax-mp dfrn4 eqtr4i wfo f1ofo forn syl syl5eq reseq2d eqtrd )
+    ABCDZCCEZFZGUMHZIZGBIUKCJZUMUOKZABCLUPUMGMUQCNUMROPUKUNBGUKUNCSZBUNULHZURCH
+    ULSKUNUSKCQCULTUACUBUCUKABCUDURBKABCUEABCUFUGUHUIUJ $.
 
   $( The composition of a one-to-one onto function's converse and itself equals
      the identity relation restricted to the function's domain.  (Contributed
@@ -50454,14 +50436,13 @@ $)
        set.mm contributors, 29-Jan-2004.) $)
     dffn5 $p |- ( F Fn A <->
                    F = { <. x , y >. | ( x e. A /\ y = ( F ` x ) ) } ) $=
-      ( vz vw wfn cv wcel cfv wceq wa copab cop wb wal fnop vex weq wrel syl5bb
-      ex pm4.71rd eqcom fnopfvb pm5.32da bitr4d eleq1 fveq2 eqeq2d eqeq1 anbi2d
-      anbi12d opelopab syl6bbr alrimivv fnrel relopab eqrelOLD sylancl mpbird fvex
-      eqid fnopab2 fneq1 mpbiri impbii ) DCGZDAHZCIZBHZVIDJZKZLZABMZKZVHVPEHZFH
-      ZNZDIZVSVOIZOZFPEPZVHWBEFVHVTVQCIZVRVQDJZKZLZWAVHVTWDVTLWGVHVTWDVHVTWDCVQ
-      VRDQUBUCVHWDWFVTWFWEVRKVHWDLVTVRWEUDCVQVRDUEUAUFUGVNWDVKWEKZLWGABVQVRERFR
-      AESZVJWDVMWHVIVQCUHWIVLWEVKVIVQDUIUJUMBFSWHWFWDVKVRWEUKULUNUOUPVHDTVOTVPW
-      COCDUQVNABUREFDVOUSUTVAVPVHVOCGABCVLVOVIDVBVOVCVDCDVOVEVFVG $.
+      ( vz vw wfn cv wcel cfv wceq wa copab cop fnop ex pm4.71rd eqcom vex weq
+      fnopfvb syl5bb pm5.32da bitr4d eleq1 fveq2 eqeq2d anbi12d anbi2d opelopab
+      eqeq1 syl6bbr eqrelrdv fvex eqid fnopab2 fneq1 mpbiri impbii ) DCGZDAHZCI
+      ZBHZVADJZKZLZABMZKZUTEFDVGUTEHZFHZNZDIZVICIZVJVIDJZKZLZVKVGIUTVLVMVLLVPUT
+      VLVMUTVLVMCVIVJDOPQUTVMVOVLVOVNVJKUTVMLVLVJVNRCVIVJDUAUBUCUDVFVMVCVNKZLVP
+      ABVIVJESFSAETZVBVMVEVQVAVICUEVRVDVNVCVAVIDUFUGUHBFTVQVOVMVCVJVNUKUIUJULUM
+      VHUTVGCGABCVDVGVADUNVGUOUPCDVGUQURUS $.
 
     $( The range of a function expressed as a collection of the function's
        values.  (Contributed by set.mm contributors, 20-Oct-2005.) $)
@@ -51032,18 +51013,15 @@ $)
        Mario Carneiro, 22-Jun-2013.) $)
     fnasrn $p |- ( F Fn A -> F = ran { <. x , y >. |
         ( x e. A /\ y = <. x , ( F ` x ) >. ) } ) $=
-      ( vz vw cv cfv cop wceq wrex wcel wa wb wal wi eleq1 vex wrel cvv wfn cab
-      copab crn weq cdm fndm opeldm eleq2 syl5ib biimpcd adantrd rexlimiv fveq2
-      syl eqeq1d ceqsrexv adantl fnopfvb bitr2d pm5.21ndd opex eqeq1 eqcom opth
-      a1i ex bitri syl6bb rexbidv elab syl6bbr alrimivv fnrel cxp fvex mpbir2an
-      opelxp mpbiri rexlimivw abssi df-rel mpbir sylancl mpbird rnopab2 syl6eqr
-      wss eqrelOLD ) DCUAZDBGZAGZWLDHZIZJZACKZBUBZWLCLZWOMABUCUDWJDWQJZEGZFGZIZDLZ
-      XBWQLZNZFOEOZWJXEEFWJXCAEUEZWMXAJZMZACKZXDWJWTCLZXCXJWJDUFZCJZXCXKPCDUGXC
-      WTXLLXMXKWTXADUHXLCWTUIUJUOXJXKPWJXIXKACWRXGXKXHXGWRXKWLWTCQUKULUMVFWJXKX
-      CXJNWJXKMXJWTDHZXAJZXCXKXJXONWJXHXOAWTCXGWMXNXAWLWTDUNUPUQURCWTXADUSUTVGV
-      AWPXJBXBWTXAERFRVBWKXBJZWOXIACXPWOXBWNJZXIWKXBWNVCXQWNXBJXIXBWNVDWLWMWTXA
-      VEVHVIVJVKVLVMWJDSWQSZWSXFNCDVNXRWQTTVOZWHWPBXSWOWKXSLZACWOXTWNXSLZYAWLTL
-      WMTLARWLDVPWLWMTTVRVQWKWNXSQVSVTWAWQWBWCEFDWQWIWDWEABCWNWFWG $.
+      ( vz vw wfn cv cfv cop wceq wrex cab wcel wa copab crn wi wb vex weq fndm
+      cdm opeldm eleq2 syl5ib syl eleq1 biimpcd adantrd rexlimiv fveq2 ceqsrexv
+      a1i eqeq1d adantl fnopfvb bitr2d ex pm5.21ndd opex eqeq1 eqcom opth bitri
+      syl6bb rexbidv elab syl6bbr eqrelrdv rnopab2 syl6eqr ) DCGZDBHZAHZVODIZJZ
+      KZACLZBMZVOCNZVROABPQVMEFDVTVMEHZFHZJZDNZAEUAZVPWCKZOZACLZWDVTNVMWBCNZWEW
+      IVMDUCZCKZWEWJRCDUBWEWBWKNWLWJWBWCDUDWKCWBUEUFUGWIWJRVMWHWJACWAWFWJWGWFWA
+      WJVOWBCUHUIUJUKUNVMWJWEWISVMWJOWIWBDIZWCKZWEWJWIWNSVMWGWNAWBCWFVPWMWCVOWB
+      DULUOUMUPCWBWCDUQURUSUTVSWIBWDWBWCETFTVAVNWDKZVRWHACWOVRWDVQKZWHVNWDVQVBW
+      PVQWDKWHWDVQVCVOVPWBWCVDVEVFVGVHVIVJABCVQVKVL $.
   $}
 
   ${
@@ -51224,17 +51202,16 @@ $)
     $( A function maps a singleton to a singleton iff it is the singleton of an
        ordered pair.  (Contributed by NM, 10-Dec-2003.) $)
     fsn $p |- ( F : { A } --> { B } <-> F = { <. A , B >. } ) $=
-      ( vx vy csn cop wceq cv wcel wb wal wa elsn weu eleq1d bitr4i bitr2i wreu
-      wf opelf anbi12i sylib ex snid feu mpan2 anbi1i opeq2 pm5.32i ancom eubii
-      eueq1 biantru euanv df-reu sylibr opeq12 syl5ibrcom impbid vex opex elsnc
-      3bitr4i opth syl6bb alrimivv wrel frel relsnop eqrelOLD sylancl mpbird f1osn
-      wf1o f1oeq1 mpbiri f1of syl impbii ) AHZBHZCUBZCABIZHZJZWEWHFKZGKZIZCLZWK
-      WGLZMZGNFNZWEWNFGWEWLWIAJZWJBJZOZWMWEWLWRWEWLWRWEWLOWIWCLZWJWDLZOWRWCWDWI
-      WJCUCWSWPWTWQFAPGBPZUDUEUFWEWLWRWFCLZWEAWJIZCLZGWDUAZXBWEAWCLXEADUGGWCWDA
-      CUHUIXBWQOZGQZWTXDOZGQXBXEXFXHGXHWQXDOZXFWTWQXDXAUJXIWQXBOXFWQXDXBWQXCWFC
-      WJBAUKRULXBWQUMSTUNXBXBWQGQZOXGXJXBGBEUOUPXBWQGUQSXDGWDURVFUSWRWKWFCWIAWJ
-      BUTRVAVBWMWKWFJWRWKWFWIWJFVCGVCVDVEWIWJABVGTVHVIWECVJWGVJWHWOMWCWDCVKABDE
-      VLFGCWGVMVNVOWHWCWDCVQZWEWHXKWCWDWGVQABDEVPWCWDCWGVRVSWCWDCVTWAWB $.
+      ( vx vy csn cop wceq cv wcel wa elsn weu eleq1d bitr4i bitr2i vex wf1o wf
+      opelf anbi12i sylib ex wreu snid feu mpan2 anbi1i opeq2 ancom eubii eueq1
+      pm5.32i biantru euanv df-reu 3bitr4i sylibr opeq12 syl5ibrcom impbid opex
+      elsnc opth syl6bb eqrelrdv f1osn f1oeq1 mpbiri f1of syl impbii ) AHZBHZCU
+      AZCABIZHZJZVQFGCVSVQFKZGKZIZCLZWAAJZWBBJZMZWCVSLZVQWDWGVQWDWGVQWDMWAVOLZW
+      BVPLZMWGVOVPWAWBCUBWIWEWJWFFANGBNZUCUDUEVQWDWGVRCLZVQAWBIZCLZGVPUFZWLVQAV
+      OLWOADUGGVOVPACUHUIWLWFMZGOZWJWNMZGOWLWOWPWRGWRWFWNMZWPWJWFWNWKUJWSWFWLMW
+      PWFWNWLWFWMVRCWBBAUKPUOWLWFULQRUMWLWLWFGOZMWQWTWLGBEUNUPWLWFGUQQWNGVPURUS
+      UTWGWCVRCWAAWBBVAPVBVCWHWCVRJWGWCVRWAWBFSGSVDVEWAWBABVFRVGVHVTVOVPCTZVQVT
+      XAVOVPVSTABDEVIVOVPCVSVJVKVOVPCVLVMVN $.
   $}
 
   ${
