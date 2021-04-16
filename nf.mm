@@ -48304,10 +48304,9 @@ $)
        24-May-1998.) $)
     funmo $p |- ( Fun F -> E* y A F y ) $=
       ( vx cv wbr cvv wcel wa wi wal wfun wmo brreldmex ancri ax-gen wceq breq1
-      mobidv imbi2d dffun6OLD simprbi 19.21bi vtoclg com12 moanimv sylibr mpsyl
-      wrel moim ) BAEZCFZBGHZULIZJZAKCLZUNAMZULAMZUOAULUMBUKCNOPUPUMURJUQUMUPUR
-      UPDEZUKCFZAMZJUPURJDBGUSBQZVAURUPVBUTULAUSBUKCRSTUPVADUPCUIVADKDACUAUBUCU
-      DUEUMULAUFUGULUNAUJUH $.
+      mobidv spcgv com12 dffun6 moanimv 3imtr4i moim mpsyl ) BAEZCFZBGHZUHIZJZA
+      KCLZUJAMZUHAMZUKAUHUIBUGCNOPDEZUGCFZAMZDKZUIUNJULUMUIURUNUQUNDBGUOBQUPUHA
+      UOBUGCRSTUADACUBUIUHAUCUDUHUJAUEUF $.
   $}
 
   $( A function is a relation.  (Contributed by set.mm contributors,
@@ -48519,18 +48518,16 @@ $)
       EWCSVM $.
   $}
 
-  ${
-    $d A x y $.  $d B x y $.
-    funsn.1 $e |- A e. _V $.
-    funsn.2 $e |- B e. _V $.
+ ${
+    $d A x y z w $.  $d B x y z w $.
     $( A singleton of an ordered pair is a function.  Theorem 10.5 of [Quine]
-       p. 65.  (Contributed by NM, 12-Aug-1994.) $)
+       p. 65.  (Contributed by NM, 12-Aug-1994.) (Revised by Scott Fenton,
+       16-Apr-2021.) $)
     funsn $p |- Fun { <. A , B >. } $=
-      ( vx vy cop csn wfun wrel cv wbr wmo wal relall wceq wi moeq vex bitri wa
-      wcel df-br opex elsnc opth mobii moanimv mpbir ax-gen dffun6OLD mpbir2an
-      a1i ) ABGZHZIUOJEKZFKZUOLZFMZENUOOUSEUSUPAPZUQBPZFMZQZVBUTFBRUMUSUTVAUAZF
-      MVCURVDFURUPUQGZUOUBZVDUPUQUOUCVFVEUNPVDVEUNUPUQESFSUDUEUPUQABUFTTUGUTVAF
-      UHTUIUJEFUOUKUL $.
+      ( vx vy cop csn wfun cv wbr wmo dffun6 wceq wi moeq a1i wa wcel df-br vex
+      bitri opex elsnc opth mobii moanimv mpbir mpgbir ) ABEZFZGCHZDHZUIIZDJZCC
+      DUIKUMUJALZUKBLZDJZMZUPUNDBNOUMUNUOPZDJUQULURDULUJUKEZUIQZURUJUKUIRUTUSUH
+      LURUSUHUJUKCSDSUAUBUJUKABUCTTUDUNUODUETUFUG $.
   $}
 
   ${
@@ -48538,17 +48535,28 @@ $)
     $( A singleton of an ordered pair is a function.  Theorem 10.5 of [Quine]
        p. 65.  (Contributed by set.mm contributors, 28-Jun-2011.)  (Revised by
        set.mm contributors, 1-Oct-2013.) $)
-    funsng $p |- ( ( A e. V /\ B e. W ) -> Fun { <. A , B >. } ) $=
-      ( vx vy cv cop csn wfun wceq opeq1 sneqd funeqd opeq2 vex funsn vtocl2g )
-      EGZFGZHZIZJATHZIZJABHZIZJEFABCDSAKZUBUDUGUAUCSATLMNTBKZUDUFUHUCUETBAOMNST
-      EPFPQR $.
+    funsngOLD $p |- ( ( A e. V /\ B e. W ) -> Fun { <. A , B >. } ) $=
+      ( cop csn wfun wcel wa funsn a1i ) ABEFGACHBDHIABJK $.
   $}
+
+
+  $( A set of two pairs is a function if their first members are different.
+     (Contributed by FL, 26-Jun-2011.) (Revised by Scott Fenton,
+       16-Apr-2021.) $)
+  funprg $p |- ( ( A =/= B /\ C e. V /\ D e. W )
+     -> Fun { <. A , C >. , <. B , D >. } ) $=
+    ( wne wcel w3a cop csn cun wfun cpr cdm cin c0 wceq dmsnopg funsn eqtrd syl
+    3ad2ant2 3ad2ant3 ineq12d disjsn2 3ad2ant1 funun mpanl12 funeqi sylibr
+    df-pr ) ABGZCEHZDFHZIZACJZKZBDJZKZLZMZUQUSNZMUPUROZUTOZPZQRZVBUPVFAKZBKZPZQ
+    UPVDVHVEVIUNUMVDVHRUOACESUCUOUMVEVIRUNBDFSUDUEUMUNVJQRUOABUFUGUAURMUTMVGVBA
+    CTBDTURUTUHUIUBVCVAUQUSULUJUK $.
+
 
   $( A set of two pairs is a function if their first members are different.
      (Contributed by FL, 26-Jun-2011.) $)
-  funprg $p |- ( ( A =/= B /\ ( A e. V /\ B e. W ) /\ ( C e. T /\ D e. U ) )
+  funprgOLD $p |- ( ( A =/= B /\ ( A e. V /\ B e. W ) /\ ( C e. T /\ D e. U ) )
      -> Fun { <. A , C >. , <. B , D >. } ) $=
-    ( wcel wa cop csn wfun cdm cin c0 wceq funsng syl2anc dmsnopg simp2l simp3l
+    ( wcel wa cop csn wfun cdm cin c0 wceq funsngOLD syl2anc dmsnopg simp2l simp3l
     wne w3a cun cpr simp2r simp3r ineq12d disjsn2 3ad2ant1 eqtrd funun syl21anc
     syl df-pr funeqi sylibr ) ABUCZAGIZBHIZJZCEIZDFIZJZUDZACKZLZBDKZLZUEZMZVGVI
     UFZMVFVHMZVJMZVHNZVJNZOZPQVLVFUTVCVNUSUTVAVEUAUSVBVCVDUBZACGERSVFVAVDVOUSUT
@@ -48556,15 +48564,13 @@ $)
     DFTUOUIUSVBWCPQVEABUJUKULVHVJUMUNVMVKVGVIUPUQUR $.
 
   ${
-    funpr.1 $e |- A e. _V $.
-    funpr.2 $e |- B e. _V $.
-    funpr.3 $e |- C e. _V $.
-    funpr.4 $e |- D e. _V $.
+    funpr.1 $e |- C e. _V $.
+    funpr.2 $e |- D e. _V $.
     $( A function with a domain of two elements.  (Contributed by Jeff Madsen,
        20-Jun-2010.) $)
     funpr $p |- ( A =/= B -> Fun { <. A , C >. , <. B , D >. } ) $=
-      ( wne cvv wcel wa cop cpr wfun pm3.2i funprg mp3an23 ) ABIAJKZBJKZLCJKZDJ
-      KZLACMBDMNOSTEFPUAUBGHPABCDJJJJQR $.
+      ( wne cvv wcel cop cpr wfun funprg mp3an23 ) ABGCHIDHIACJBDJKLEFABCDHHMN
+      $.
   $}
 
   ${
@@ -48574,7 +48580,7 @@ $)
        (Contributed by Jonathan Ben-Naim, 3-Jun-2011.) $)
     fnsn $p |- { <. A , B >. } Fn { A } $=
       ( cop csn wfn wfun cdm wceq funsn dmsnop df-fn mpbir2an ) ABEFZAFZGOHOIPJ
-      ABCDKABDLOPMN $.
+      ABKABDLOPMN $.
   $}
 
   ${
@@ -48582,7 +48588,7 @@ $)
        (Contributed by FL, 26-Jun-2011.) $)
     fnprg $p |- ( ( A =/= B /\ ( A e. V /\ B e. W ) /\ ( C e. T /\ D e. U ) )
          -> { <. A , C >. , <. B , D >. } Fn { A , B } ) $=
-      ( wne wcel wa w3a cop cpr wfun cdm wceq wfn funprg dmpropg 3ad2ant3 df-fn
+      ( wne wcel wa w3a cop cpr wfun cdm wceq wfn funprgOLD dmpropg 3ad2ant3 df-fn
       sylanbrc ) ABIZAGJBHJKZCEJDFJKZLACMBDMNZOUGPABNZQZUGUHRABCDEFGHSUFUDUIUEA
       CBDEFTUAUGUHUBUC $.
   $}
@@ -51285,8 +51291,8 @@ $)
       ( wne cop cpr wfn crn wa jctir sylibr csn cun rnsnop df-pr wss wfun funpr
       wf cdm wceq dmprop df-fn uneq12i rneqi rnun eqtri 3eqtr4i eqimssi df-f )
       ABIZACJZBDJZKZABKZLZUSMZCDKZUAZNUTVCUSUDUPVAVDUPUSUBZUSUEUTUFZNVAUPVEVFAB
-      CDEFGHUCACBDGHUGOUSUTUHPVBVCUQQZMZURQZMZRZCQZDQZRVBVCVHVLVJVMACESBDFSUIVB
-      VGVIRZMVKUSVNUQURTUJVGVIUKULCDTUMUNOUTVCUSUOP $.
+      CDGHUCACBDGHUGOUSUTUHPVBVCUQQZMZURQZMZRZCQZDQZRVBVCVHVLVJVMACESBDFSUIVBVG
+      VIRZMVKUSVNUQURTUJVGVIUKULCDTUMUNOUTVCUSUOP $.
   $}
 
   ${
@@ -51374,7 +51380,7 @@ $)
        (Contributed by set.mm contributors, 12-Aug-1994.) $)
     fvsn $p |- ( { <. A , B >. } ` A ) = B $=
       ( cop csn wfun wcel cfv wceq funsn opex snid funopfv mp2 ) ABEZFZGPQHAQIB
-      JABCDKPABCDLMABQNO $.
+      JABKPABCDLMABQNO $.
   $}
 
   ${
