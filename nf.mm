@@ -48224,9 +48224,9 @@ $)
     $( Alternate definition of function.  (Contributed by NM, 29-Dec-1996.)
        (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun3 $p |- ( Fun A <-> A. x E. z A. y ( x A y -> y = z ) ) $=
-      ( wfun wrel cv wbr wa wceq wi wal wex dffun2OLD wmo breq2 mo4 nfv mo2 bitr3i
-      albii anbi2i bitri ) DEDFZAGZBGZDHZUECGZDHZIUFUHJZKCLBLZALZIUDUGUJKBLCMZA
-      LZIABCDNULUNUDUKUMAUKUGBOUMUGUIBCUFUHUEDPQUGBCUGCRSTUAUBUC $.
+      ( wfun cv wbr wa weq wi wal wex dffun2 wmo breq2 mo4 nfv mo2 bitr3i albii
+      bitri ) DEAFZBFZDGZUBCFZDGZHBCIZJCKBKZAKUDUGJBKCLZAKABCDMUHUIAUHUDBNUIUDU
+      FBCUCUEUBDOPUDBCUDCQRSTUA $.
 
     $( Alternate definition of a function.  Definition 6.4(4) of
        [TakeutiZaring] p. 24.  (Contributed by set.mm contributors,
@@ -48234,17 +48234,16 @@ $)
     dffun4 $p |- ( Fun A <-> 
                  A. x A. y A. z ( ( <. x , y >. e. A /\ <. x , z >. e. A )
                  -> y = z ) ) $=
-      ( wfun wrel cv wbr wa wceq wal cop wcel dffun2OLD df-br anbi12i imbi1i albii
-      wi 2albii anbi2i bitri ) DEDFZAGZBGZDHZUDCGZDHZIZUEUGJZSZCKZBKAKZIUCUDUEL
-      DMZUDUGLDMZIZUJSZCKZBKAKZIABCDNUMUSUCULURABUKUQCUIUPUJUFUNUHUOUDUEDOUDUGD
-      OPQRTUAUB $.
+      ( wfun cv wbr wa weq wi wal wcel dffun2 df-br anbi12i imbi1i albii 2albii
+      cop bitri ) DEAFZBFZDGZUACFZDGZHZBCIZJZCKZBKAKUAUBSDLZUAUDSDLZHZUGJZCKZBK
+      AKABCDMUIUNABUHUMCUFULUGUCUJUEUKUAUBDNUAUDDNOPQRT $.
 
     $( Alternate definition of function.  (Contributed by set.mm contributors,
        29-Dec-1996.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun5 $p |- ( Fun A <-> A. x E. z A. y ( <. x , y >. e. A -> y = z ) ) $=
-      ( wfun wrel cv wbr wceq wi wal wex wa cop dffun3OLD df-br imbi1i albii exbii
-      wcel anbi2i bitri ) DEDFZAGZBGZDHZUECGIZJZBKZCLZAKZMUCUDUENDTZUGJZBKZCLZA
-      KZMABCDOUKUPUCUJUOAUIUNCUHUMBUFULUGUDUEDPQRSRUAUB $.
+      ( wfun cv wbr weq wal wex cop wcel dffun3 df-br imbi1i albii exbii bitri
+      wi ) DEAFZBFZDGZBCHZSZBIZCJZAITUAKDLZUCSZBIZCJZAIABCDMUFUJAUEUICUDUHBUBUG
+      UCTUADNOPQPR $.
   $}
 
   ${
