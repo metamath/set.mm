@@ -48293,18 +48293,6 @@ $)
   $}
 
   ${
-    $d x y w v u $.  $d A w v u $.
-    dffun6fOLD.1 $e |- F/_ x A $.
-    dffun6fOLD.2 $e |- F/_ y A $.
-    $( Definition of function, using bound-variable hypotheses instead of
-       distinct variable conditions.  (Contributed by NM, 9-Mar-1995.)
-       (Revised by Mario Carneiro, 15-Oct-2016.) $)
-    dffun6fOLD $p |- ( Fun A <-> ( Rel A /\ A. x E* y x A y ) ) $=
-      ( wfun cv wbr wmo wal wrel wa dffun6f relall biantrur bitri ) CFAGBGCHBIA
-      JZCKZQLABCDEMRQCNOP $.
-  $}
-
-  ${
     $d x y A $.  $d x y z F $.
     $( Alternate definition of a function using "at most one" notation.
        (Contributed by NM, 9-Mar-1995.) $)
@@ -48448,9 +48436,9 @@ $)
     $( A class of ordered pairs is a function when there is at most one second
        member for each pair.  (Contributed by NM, 16-May-1995.) $)
     funopab $p |- ( Fun { <. x , y >. | ph } <-> A. x E* y ph ) $=
-      ( wfun cv wbr wmo wal wrel relopab nfopab1 nfopab2 dffun6fOLD mpbiran cop
-      copab wcel df-br opabid bitri mobii albii ) ABCPZDZBEZCEZUCFZCGZBHZACGZBH
-      UDUCIUIABCJBCUCABCKABCLMNUHUJBUGACUGUEUFOUCQAUEUFUCRABCSTUAUBT $.
+      ( copab wfun cv wbr wmo wal nfopab1 nfopab2 dffun6f cop wcel df-br opabid
+      bitri mobii albii ) ABCDZEBFZCFZTGZCHZBIACHZBIBCTABCJABCKLUDUEBUCACUCUAUB
+      MTNAUAUBTOABCPQRSQ $.
   $}
 
   ${
