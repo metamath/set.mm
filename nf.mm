@@ -45648,37 +45648,6 @@ $)
   $}
 
   ${
-    $d w x y z A $.  $d w x y z B $.
-    $( A subclass relationship determined by ordered triples.  Use ~ relrelss
-       to express the antecedent in terms of the relation predicate.  (The
-       proof was shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by NM,
-       17-Dec-2008.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
-    ssrelrel $p |- ( A C_ ( ( _V X. _V ) X. _V ) -> ( A C_ B <->
-                   A. x A. y A. z ( <. <. x , y >. , z >. e. A
-                       -> <. <. x , y >. , z >. e. B ) ) ) $=
-      ( vw cvv cxp wss cv cop wcel wi wal ssel alrimiv wex eleq1 sylib dfss2
-      alrimivv wceq elvvv imbi12d biimprcd alimi 19.23v 2alimi syl5bi com23 a2d
-      19.23vv alimdv 3imtr4g com12 impbid2 ) DGGHGHZIZDEIZAJBJKCJKZDLZUTELZMZCN
-      ZBNANZUSVDABUSVCCDEUTOPUAVEURUSVEFJZDLZVFUQLZMZFNVGVFELZMZFNURUSVEVIVKFVE
-      VGVHVJVEVHVGVJVHVFUTUBZCQZBQAQZVEVKABCVFUCVEVMVKMZBNANVNVKMVDVOABVDVLVKMZ
-      CNVOVCVPCVLVKVCVLVGVAVJVBVFUTDRVFUTERUDUEUFVLVKCUGSUHVMVKABULSUIUJUKUMFDU
-      QTFDETUNUOUP $.
-
-    $( Extensionality principle for ordered triples (used by 2-place operations
-       ~ df-oprab ), analogous to ~ eqrelOLD .  Use ~ relrelss to express the
-       antecedent in terms of the relation predicate.  (Contributed by NM,
-       17-Dec-2008.) $)
-    eqrelrel $p |- ( ( A u. B ) C_ ( ( _V X. _V ) X. _V ) -> ( A = B <->
-                   A. x A. y A. z ( <. <. x , y >. , z >. e. A
-                       <-> <. <. x , y >. , z >. e. B ) ) ) $=
-      ( cun cvv cxp wss wa wceq cv cop wcel wb wal unss wi ssrelrel bi2anan9
-      eqss 2albiim albii 19.26 bitri 3bitr4g sylbir ) DEFGGHGHZIDUHIZEUHIZJZDEK
-      ZALBLMCLMZDNZUMENZOCPBPZAPZODEUHQUKDEIZEDIZJUNUORCPBPZAPZUOUNRCPBPZAPZJZU
-      LUQUIURVAUJUSVCABCDESABCEDSTDEUAUQUTVBJZAPVDUPVEAUNUOBCUBUCUTVBAUDUEUFUG
-      $.
-  $}
-
-  ${
     $d x y A $.
     $( A member of a relation is an ordered pair.  (Contributed by NM,
        17-Sep-2006.) $)
