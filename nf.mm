@@ -45613,6 +45613,16 @@ $)
 
   ${
     $d x y A $.  $d x y B $.
+    eqbrriv.1 $e |- ( x A y <-> x B y ) $.
+    $( Inference from extensionality principle for relations.  (Contributed by
+       NM, 12-Dec-2006.) (Revised by Scott Fenton, 16-Apr-2021.) $)
+    eqbrriv $p |- A = B $=
+      ( cv wbr cop wcel df-br 3bitr3i eqrelriv ) ABCDAFZBFZCGMNDGMNHZCIODIEMNCJ
+      MNDJKL $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
     eqrelrivOLD.1 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
 
     $( Inference from extensionality principle for relations.  (Contributed by
@@ -45631,18 +45641,6 @@ $)
        NM, 17-Mar-1995.) $)
     eqrelriivOLD $p |- A = B $=
       ( wrel wceq eqrelrivOLD mp2an ) CHDHCDIEFABCDGJK $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.
-    eqbrrivOLD.1 $e |- Rel A $.
-    eqbrrivOLD.2 $e |- Rel B $.
-    eqbrrivOLD.3 $e |- ( x A y <-> x B y ) $.
-    $( Inference from extensionality principle for relations.  (Contributed by
-       NM, 12-Dec-2006.) $)
-    eqbrrivOLD $p |- A = B $=
-      ( cv wbr cop wcel df-br 3bitr3i eqrelriivOLD ) ABCDEFAHZBHZCIOPDIOPJZCKQDKGO
-      PCLOPDLMN $.
   $}
 
   ${
@@ -47869,11 +47867,11 @@ $)
     $( Associative law for the restriction of a composition.  (Contributed by
        set.mm contributors, 12-Dec-2006.) $)
     resco $p |- ( ( A o. B ) |` C ) = ( A o. ( B |` C ) ) $=
-      ( vx vy vz ccom cres relres relco cv wbr wcel wex brco anbi1i 19.41v an32
-      wa brres bitr4i exbii 3bitr2i 3bitr4i eqbrrivOLD ) DEABGZCHZABCHZGZUFCIAUHJD
-      KZEKZUFLZUJCMZSZUJFKZUHLZUOUKALZSZFNZUJUKUGLUJUKUILUNUJUOBLZUQSZFNZUMSVAU
-      MSZFNUSULVBUMFUJUKABOPVAUMFQVCURFVCUTUMSZUQSURUTUQUMRUPVDUQUJUOBCTPUAUBUC
-      UJUKUFCTFUJUKAUHOUDUE $.
+      ( vx vy vz ccom cres cv wbr wcel wex brco anbi1i 19.41v an32 brres bitr4i
+      wa exbii 3bitr2i 3bitr4i eqbrriv ) DEABGZCHZABCHZGZDIZEIZUDJZUHCKZSZUHFIZ
+      UFJZUMUIAJZSZFLZUHUIUEJUHUIUGJULUHUMBJZUOSZFLZUKSUSUKSZFLUQUJUTUKFUHUIABM
+      NUSUKFOVAUPFVAURUKSZUOSUPURUOUKPUNVBUOUHUMBCQNRTUAUHUIUDCQFUHUIAUFMUBUC
+      $.
 
     $( Image of the composition of two classes.  (Contributed by Jason
        Orendorff, 12-Dec-2006.) $)
@@ -48008,12 +48006,12 @@ $)
        any classes whatsoever, not just functions or even relations.
        (Contributed by set.mm contributors, 27-Jan-1997.) $)
     coass $p |- ( ( A o. B ) o. C ) = ( A o. ( B o. C ) ) $=
-      ( vx vy vz vw ccom relco cv wbr wa excom anass 2exbii brco bitr4i 3bitr4i
-      wex exbii bitr2i anbi2i 19.42v anbi1i 19.41v eqbrrivOLD ) DEABHZCHZABCHZHZUG
-      CIAUIIDJZFJZCKZULEJZUGKZLZFSZUKGJZUIKZURUNAKZLZGSZUKUNUHKUKUNUJKUMULURBKZ
-      UTLZLZGSZFSZUMVCLZUTLZFSZGSZUQVBVKVIGSFSVGVIGFMVIVEFGUMVCUTNOUAUPVFFUPUMV
-      DGSZLVFUOVLUMGULUNABPUBUMVDGUCQTVAVJGVAVHFSZUTLVJUSVMUTFUKURBCPUDVHUTFUEQ
-      TRFUKUNUGCPGUKUNAUIPRUF $.
+      ( vx vy vz vw ccom cv wbr wex excom anass 2exbii bitr2i brco bitr4i exbii
+      wa 3bitr4i anbi2i 19.42v anbi1i 19.41v eqbrriv ) DEABHZCHZABCHZHZDIZFIZCJ
+      ZUKEIZUFJZSZFKZUJGIZUHJZUQUMAJZSZGKZUJUMUGJUJUMUIJULUKUQBJZUSSZSZGKZFKZUL
+      VBSZUSSZFKZGKZUPVAVJVHGKFKVFVHGFLVHVDFGULVBUSMNOUOVEFUOULVCGKZSVEUNVKULGU
+      KUMABPUAULVCGUBQRUTVIGUTVGFKZUSSVIURVLUSFUJUQBCPUCVGUSFUDQRTFUJUMUFCPGUJU
+      MAUHPTUE $.
   $}
 
   $( A relation is transitive iff its converse is transitive.  (Contributed by
@@ -52129,11 +52127,10 @@ $)
     $( Alternate definition of the identity relationship.  (Contributed by SF,
        11-Feb-2015.) $)
     dfid4 $p |- _I = ( _S i^i `' _S ) $=
-      ( vx vy cid csset ccnv cin reli wss inss1 relsset relss mp2 weq cv wa wbr
-      wrel vex brsset bitri eqss ideq brin brcnv anbi12i 3bitr4i eqbrrivOLD ) ABCD
-      DEZFZGUIDHDQUIQDUHIJUIDKLABMANZBNZHZUKUJHZOZUJUKCPUJUKUIPZUJUKUAUJUKBRZUB
-      UOUJUKDPZUJUKUHPZOUNUJUKDUHUCUQULURUMUJUKARZUPSURUKUJDPUMUJUKDUDUKUJUPUSS
-      TUETUFUG $.
+      ( vx vy cid csset ccnv cin weq cv wss wbr eqss vex ideq brin brsset brcnv
+      wa bitri anbi12i 3bitr4i eqbrriv ) ABCDDEZFZABGAHZBHZIZUEUDIZQZUDUECJUDUE
+      UCJZUDUEKUDUEBLZMUIUDUEDJZUDUEUBJZQUHUDUEDUBNUKUFULUGUDUEALZUJOULUEUDDJUG
+      UDUEDPUEUDUJUMORSRTUA $.
   $}
 
   $( The identity relationship is a set.  (Contributed by SF, 11-Feb-2015.) $)
@@ -52209,10 +52206,10 @@ $)
     $( The converse of ` Swap ` is ` Swap ` .  (Contributed by SF,
        23-Feb-2015.) $)
     cnvswap $p |- `' Swap = Swap $=
-      ( va vb vy vx cswap ccnv relcnv relswap cv cop wceq wa ancom 2exbii brcnv
-      wex wbr brswap excom 3bitri 3bitr4i eqbrrivOLD ) ABEFZEEGHBIZCIZDIZJKZAIZUFU
-      EJKZLZCPDPZUIUGLZCPDPUHUDUCQZUHUDEQUJULDCUGUIMNUMUDUHEQUJDPCPUKUHUDEOCDUD
-      UHRUJCDSTDCUHUDRUAUB $.
+      ( va vb vy vx cswap ccnv cv cop wceq wa wex wbr ancom 2exbii brcnv brswap
+      excom 3bitri 3bitr4i eqbrriv ) ABEFZEBGZCGZDGZHIZAGZUDUCHIZJZCKDKZUGUEJZC
+      KDKUFUBUALZUFUBELUHUJDCUEUGMNUKUBUFELUHDKCKUIUFUBEOCDUBUFPUHCDQRDCUFUBPST
+      $.
   $}
 
   ${
@@ -52319,11 +52316,10 @@ $)
     $( Calculate the converse of a singleton image.  (Contributed by SF,
        26-Feb-2015.) $)
     cnvsi $p |- `' SI R = SI `' R $=
-      ( vx vy vb va csi ccnv relcnv relsi cv csn wceq wbr w3a wex 3ancoma brcnv
-      3anbi3i bitr4i brsi 2exbii excom 3bitri 3bitr4i eqbrrivOLD ) BCAFZGZAGZFZUFH
-      UHICJZDJZKLZBJZEJZKLZUKUNAMZNZDOEOZUOULUNUKUHMZNZDOEOUMUJUGMZUMUJUIMUQUTE
-      DUQUOULUPNUTULUOUPPUSUPUOULUNUKAQRSUAVAUJUMUFMUQEODOURUMUJUFQDEUJUMATUQDE
-      UBUCEDUMUJUHTUDUE $.
+      ( vx vy vb va csi ccnv csn wceq wbr w3a wex 3ancoma 3anbi3i bitr4i 2exbii
+      cv brcnv brsi excom 3bitri 3bitr4i eqbrriv ) BCAFZGZAGZFZCQZDQZHIZBQZEQZH
+      IZUIULAJZKZDLELZUMUJULUIUFJZKZDLELUKUHUEJZUKUHUGJUOUREDUOUMUJUNKURUJUMUNM
+      UQUNUMUJULUIARNOPUSUHUKUDJUOELDLUPUKUHUDRDEUHUKASUODETUAEDUKUHUFSUBUC $.
 
     $( Calculate the domain of a singleton image.  Theorem X.4.29.I of [Rosser]
        p. 301.  (Contributed by SF, 26-Feb-2015.) $)
@@ -55091,13 +55087,12 @@ $)
        24-Feb-2015.) $)
     restxp $p |- ( ( A (x) B ) |` C ) = ( ( A |` C ) (x) ( B |` C ) ) $=
       ( vx vy va vb ctxp cres cv wbr w3a wex 3anass anbi1i bitri 3bitr4i 2exbii
-      wa brres relres reltxp cop wceq wcel anandir anbi2i anass brtxp 3anbi123i
-      19.41vv biid eqbrrivOLD ) DEABHZCIZACIZBCIZHZUNCUAUPUQUBEJZFJZGJZUCUDZDJZUTA
-      KZVCVABKZLZVCCUEZSZGMFMZVBVDVGSZVEVGSZLZGMFMZVCUSUOKZVCUSURKZVHVLFGVBVDVE
-      SZVGSZSZVBVJVKSZSVHVLVQVSVBVDVEVGUFUGVHVBVPSZVGSVRVFVTVGVBVDVENOVBVPVGUHP
-      VBVJVKNQRVCUSUNKZVGSVFGMFMZVGSVNVIWAWBVGFGVCUSABUIOVCUSUNCTVFVGFGUKQVOVBV
-      CUTUPKZVCVAUQKZLZGMFMVMFGVCUSUPUQUIWEVLFGVBVBWCVJWDVKVBULVCUTACTVCVABCTUJ
-      RPQUM $.
+      wa brres cop wceq wcel anandir anass brtxp 19.41vv biid 3anbi123i eqbrriv
+      anbi2i ) DEABHZCIZACIZBCIZHZEJZFJZGJZUAUBZDJZURAKZVAUSBKZLZVACUCZSZGMFMZU
+      TVBVESZVCVESZLZGMFMZVAUQUMKZVAUQUPKZVFVJFGUTVBVCSZVESZSZUTVHVISZSVFVJVOVQ
+      UTVBVCVEUDUKVFUTVNSZVESVPVDVRVEUTVBVCNOUTVNVEUEPUTVHVINQRVAUQULKZVESVDGMF
+      MZVESVLVGVSVTVEFGVAUQABUFOVAUQULCTVDVEFGUGQVMUTVAURUNKZVAUSUOKZLZGMFMVKFG
+      VAUQUNUOUFWCVJFGUTUTWAVHWBVIUTUHVAURACTVAUSBCTUIRPQUJ $.
   $}
 
   ${
@@ -55874,20 +55869,18 @@ $)
     $d c t $.  $d c u $.  $d d t $.  $d d u $.  $d t u $.  $d t x $.  $d u x $.
     $( The domain of a parallel product.  (Contributed by SF, 24-Feb-2015.) $)
     dmpprod $p |- dom PProd ( A , B ) = ( dom A X. dom B ) $=
-      ( va vb vx vc vd vt vu cdm cxp cvv wss cv cop wbr wa wex vex bitri cpprod
-      wrel pprodss4v dmss ax-mp dmxpss sstri relxp relss mp2 wceq isseti 19.41v
-      opex mpbiran 2exbii wcel df-br eldm w3a brpprod 3anass eqcom opth 19.42vv
-      weq anbi1i df-3an bicomi breq1 anbi1d anbi2d 2exbidv ceqsex2v exrot3 brxp
-      exbii eeanv anbi12i bitr4i 3bitr4i eqbrrivOLD ) CDABUAZJZAJZBJZKZWDLLKZMWHUB
-      WDUBWDWHWHKZJZWHWCWIMWDWJMABUCWCWIUDUEWHWHUFUGLLUHWDWHUIUJWEWFUHENZFNZGNZ
-      OZUKZCNZWLAPZDNZWMBPZQZQZERZGRFRZWTGRFRZWPWRWDPZWPWRWGPZXBWTFGXBWOERWTEWN
-      WLWMFSGSUNULWOWTEUMUOUPXEWPWROZWDUQZXCWPWRWDURXHXGWKWCPZERZXCEXGWCUSXJXAG
-      RFRZERXCXIXKEXIXGHNZINZOZUKZWOXLWLAPZXMWMBPZQZUTZGRFRZIRHRZXKHIFGXGWKABVA
-      YAHCVFZIDVFZWOXRQZGRFRZUTZIRHRXKXTYFHIXTYBYCQZYDQZGRFRZYFXSYHFGXSXOYDQYHX
-      OWOXRVBXOYGYDXOXNXGUKYGXGXNVCXLXMWPWRVDTVGTUPYIYGYEQZYFYGYDFGVEYFYJYBYCYE
-      VHVITTUPYEWOWQXQQZQZGRFRXKHIWPWRCSDSYBYDYLFGYBXRYKWOYBXPWQXQXLWPWLAVJVKVL
-      VMYCYLXAFGYCYKWTWOYCXQWSWQXMWRWMBVJVLVLVMVNTTVQXAEFGVOTTTXFWPWEUQZWRWFUQZ
-      QZXDWPWRWEWFVPXDWQFRZWSGRZQYOWQWSFGVRYMYPYNYQFWPAUSGWRBUSVSVTVTWAWB $.
+      ( va vb vx vc vd vt vu cdm cv cop wceq wbr wa wex vex 2exbii wcel eldm
+      cpprod cxp opex isseti 19.41v mpbiran df-br w3a weq brpprod 19.42vv eqcom
+      3anass opth bitri anbi1i df-3an 3bitr4i breq1 anbi1d anbi2d 2exbidv exbii
+      ceqsex2v 3bitri exrot3 anbi12i brxp eeanv eqbrriv ) CDABUAZJZAJZBJZUBZEKZ
+      FKZGKZLZMZCKZVQANZDKZVRBNZOZOZEPZGPFPZWEGPFPZWAWCVLNZWAWCVONZWGWEFGWGVTEP
+      WEEVSVQVRFQGQUCUDVTWEEUEUFRWJWAWCLZVLSWLVPVKNZEPZWHWAWCVLUGEWLVKTWNWFGPFP
+      ZEPWHWMWOEWMWLHKZIKZLZMZVTWPVQANZWQVRBNZOZUHZGPFPZIPHPHCUIZIDUIZVTXBOZGPF
+      PZUHZIPHPWOHIFGWLVPABUJXDXIHIXEXFOZXGOZGPFPXJXHOXDXIXJXGFGUKXCXKFGXCWSXGO
+      XKWSVTXBUMWSXJXGWSWRWLMXJWLWRULWPWQWAWCUNUOUPUORXEXFXHUQURRXHVTWBXAOZOZGP
+      FPWOHIWAWCCQDQXEXGXMFGXEXBXLVTXEWTWBXAWPWAVQAUSUTVAVBXFXMWFFGXFXLWEVTXFXA
+      WDWBWQWCVRBUSVAVAVBVDVEVCWFEFGVFUOVEWAVMSZWCVNSZOWBFPZWDGPZOWKWIXNXPXOXQF
+      WAATGWCBTVGWAWCVMVNVHWBWDFGVIURURVJ $.
   $}
 
   $( The converse of a parallel product.  (Contributed by SF, 24-Feb-2015.) $)
@@ -59542,20 +59535,20 @@ $)
        24-Feb-2015.) $)
     lecex $p |- <_c e. _V $=
       ( va vb vx vy vt vu clec csset ccom cv wrex wbr wa csn 2exbii bitri exbii
-      wex vex ssetex csi ccnv cvv rellec relco wss wceq wel 19.41vv anass ancom
-      r2ex w3a df-3an bitr4i snex breq1 anbi1d anbi2d ceqsex2v brssetsn anbi12i
-      3bitri anbi1i 3bitr3i brlec brco brsi brsset anbi2i 19.42v 19.42vv bitr2i
-      brcnv 3bitr2i exrot4 3bitr4i eqbrrivOLD siex coex cnvex eqeltri ) GHHUAZIZHU
-      BZIZUCABGWFUDWDWEUECJZDJZUFZDBJZKCAJZKZEJZWKHLZFJZWJHLZMZWMWGNZUGZWOWHNZU
-      GZMZWIMZMZFRERZDRCRZWKWJGLWKWJWFLZWLCAUHZDBUHZMZWIMZDRCRXFWICDWKWJULXEXKC
-      DWQXBMZWIMZFRERXLFRERZWIMXEXKXLWIEFUIXMXDEFWQXBWIUJOXNXJWIXNWSXAWQUMZFRER
-      WRWKHLZWTWJHLZMZXJXLXOEFXLXBWQMXOWQXBUKWSXAWQUNUOOWQXPWPMXREFWRWTWGUPWHUP
-      WSWNXPWPWMWRWKHUQURXAWPXQXPWOWTWJHUQUSUTXPXHXQXIWGWKCSZASZVAWHWJDSZBSZVAV
-      BVCVDVEOUOCDWKWJXTYBVFXGWKWMWELZWMWJWDLZMZERXDDRCRZFRZERXFEWKWJWDWEVGYEYG
-      EYEWNWPXCDRCRZMZFRZMWNYIMZFRYGYCWNYDYJWKWMHVNYDWMWOWCLZWPMZFRYJFWMWJHWCVG
-      YMYIFYMWPYLMYIYLWPUKYLYHWPYLWSXAWGWHHLZUMZDRCRYHCDWMWOHVHYOXCCDYOXBYNMXCW
-      SXAYNUNYNWIXBWGWHXSYAVIVJPOPVJPQPVBWNYIFVKYKYFFYFWQYHMYKWQXCCDVLWNWPYHUJV
-      MQVOQXDEFCDVPVCVQVRWDWEHWCTHTVSVTHTWAVTWB $.
+      wex vex ssetex csi ccnv cvv wss wceq wel r2ex 19.41vv anass df-3an bitr4i
+      w3a ancom snex breq1 anbi1d anbi2d ceqsex2v anbi12i 3bitri anbi1i 3bitr3i
+      brlec brco brcnv brsi brsset anbi2i anbi2ci 19.42v 19.42vv bitr2i 3bitr2i
+      brssetsn exrot4 3bitr4i eqbrriv siex coex cnvex eqeltri ) GHHUAZIZHUBZIZU
+      CABGWECJZDJZUDZDBJZKCAJZKZEJZWJHLZFJZWIHLZMZWLWFNZUEZWNWGNZUEZMZWHMZMZFRE
+      RZDRCRZWJWIGLWJWIWELZWKCAUFZDBUFZMZWHMZDRCRXEWHCDWJWIUGXDXJCDWPXAMZWHMZFR
+      ERXKFRERZWHMXDXJXKWHEFUHXLXCEFWPXAWHUIOXMXIWHXMWRWTWPULZFRERWQWJHLZWSWIHL
+      ZMZXIXKXNEFXKXAWPMXNWPXAUMWRWTWPUJUKOWPXOWOMXQEFWQWSWFUNWGUNWRWMXOWOWLWQW
+      JHUOUPWTWOXPXOWNWSWIHUOUQURXOXGXPXHWFWJCSZASZVNWGWIDSZBSZVNUSUTVAVBOUKCDW
+      JWIXSYAVCXFWJWLWDLZWLWIWCLZMZERXCDRCRZFRZERXEEWJWIWCWDVDYDYFEYDWMWOXBDRCR
+      ZMZFRZMWMYHMZFRYFYBWMYCYIWJWLHVEYCWLWNWBLZWOMZFRYIFWLWIHWBVDYLYHFYKYGWOYK
+      WRWTWFWGHLZULZDRCRYGCDWLWNHVFYNXBCDYNXAYMMXBWRWTYMUJYMWHXAWFWGXRXTVGVHPOP
+      VIQPUSWMYHFVJYJYEFYEWPYGMYJWPXBCDVKWMWOYGUIVLQVMQXCEFCDVOUTVPVQWCWDHWBTHT
+      VRVSHTVTVSWA $.
   $}
 
   $( Cardinal strict less than is a set.  (Contributed by SF, 24-Feb-2015.) $)
