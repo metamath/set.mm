@@ -48255,11 +48255,11 @@ $)
        (Revised by Mario Carneiro, 15-Oct-2016.) (Revised by Scott Fenton,
        16-Apr-2021.) $)
     dffun6f $p |- ( Fun A <-> A. x E* y x A y ) $=
-      ( vw vv vu wfun wrel cv wbr wceq wal wa wmo nfcv nfbr nfv albii wi dffun3OLD
-      wex breq2 cbvmo mo2 nfmo breq1 mobidv cbval 3bitr3ri anbi2i bitr4i ) CICJ
-      ZFKZGKZCLZUPHKMUAGNHUCZFNZOUNAKZBKZCLZBPZANZOFGHCUBVDUSUNUQGPZFNUOVACLZBP
-      ZFNUSVDVEVGFUQVFGBBUOUPCBUOQEBUPQRVFGSUPVAUOCUDUETVEURFUQGHUQHSUFTVGVCFAV
-      FABAUOVACAUOQDAVAQRUGVCFSUOUTMVFVBBUOUTVACUHUIUJUKULUM $.
+      ( vw vv vu wfun cv wbr weq wi wal wex wmo nfcv nfbr nfv albii breq2 cbvmo
+      dffun3 mo2 nfmo breq1 mobidv cbval 3bitr3ri bitr4i ) CIFJZGJZCKZGHLMGNHOZ
+      FNZAJZBJZCKZBPZANZFGHCUCUMGPZFNUKUQCKZBPZFNUOUTVAVCFUMVBGBBUKULCBUKQEBULQ
+      RVBGSULUQUKCUAUBTVAUNFUMGHUMHSUDTVCUSFAVBABAUKUQCAUKQDAUQQRUEUSFSFALVBURB
+      UKUPUQCUFUGUHUIUJ $.
   $}
 
   ${
@@ -48405,10 +48405,9 @@ $)
        which meaning we pick.)  (Contributed by set.mm contributors,
        4-Nov-2002.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun7 $p |- ( Fun A <-> A. x e. dom A E* y x A y ) $=
-      ( wfun wrel cv wbr wmo wal wa cdm wral dffun6OLD wcel wi wex moabs imbi1i
-      eldm bitr4i albii df-ral anbi2i bitri ) CDCEZAFZBFCGZBHZAIZJUEUHACKZLZJAB
-      CMUIUKUEUIUFUJNZUHOZAIUKUHUMAUHUGBPZUHOUMUGBQULUNUHBUFCSRTUAUHAUJUBTUCUD
-      $.
+      ( cv wbr wmo wal cdm wcel wi wfun wral wex moabs eldm imbi1i bitr4i albii
+      dffun6 df-ral 3bitr4i ) ADZBDCEZBFZAGUBCHZIZUDJZAGCKUDAUELUDUGAUDUCBMZUDJ
+      UGUCBNUFUHUDBUBCOPQRABCSUDAUETUA $.
 
     $( Alternate definition of a function.  One possibility for the definition
        of a function in [Enderton] p. 42.  Compare ~ dffun7 .  (The proof was
@@ -48416,17 +48415,16 @@ $)
        contributors, 4-Nov-2002.)  (Revised by set.mm contributors,
        18-Sep-2011.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun8 $p |- ( Fun A <-> A. x e. dom A E! y x A y ) $=
-      ( wfun wrel cv wbr wmo cdm wral wa weu dffun7OLD wi wcel df-mo wb eldm pm5.5
-      wex sylbi syl5bb ralbiia anbi2i bitri ) CDCEZAFZBFCGZBHZACIZJZKUFUHBLZAUJ
-      JZKABCMUKUMUFUIULAUJUIUHBTZULNZUGUJOZULUHBPUPUNUOULQBUGCRUNULSUAUBUCUDUE
+      ( wfun cv wbr wmo cdm wral weu dffun7 wcel wex eldm exmoeu2 sylbi ralbiia
+      wb bitri ) CDAEZBECFZBGZACHZIUABJZAUCIABCKUBUDAUCTUCLUABMUBUDRBTCNUABOPQS
       $.
 
     $( Alternate definition of a function.  (Contributed by set.mm
        contributors, 28-Mar-2007.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun9 $p |- ( Fun A <-> A. x e. dom A E* y ( y e. ran A /\ x A y ) ) $=
-      ( wfun wrel cv wbr wmo cdm wral wa crn wcel dffun7OLD brelrn pm4.71ri ralbii
-      mobii anbi2i bitri ) CDCEZAFZBFZCGZBHZACIZJZKUAUCCLMZUDKZBHZAUFJZKABCNUGU
-      KUAUEUJAUFUDUIBUDUHUBUCCOPRQST $.
+      ( wfun cv wbr wmo cdm wral crn wcel wa dffun7 brelrn pm4.71ri mobii bitri
+      ralbii ) CDAEZBEZCFZBGZACHZITCJKZUALZBGZAUCIABCMUBUFAUCUAUEBUAUDSTCNOPRQ
+      $.
   $}
 
   $( An equivalence for the function predicate.  (Contributed by set.mm
