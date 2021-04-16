@@ -45591,16 +45591,16 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x y B $.  $d x y ph $.
-    relssdvOLD.1 $e |- ( ph -> Rel A ) $.
-    relssdvOLD.2 $e |- ( ph -> ( <. x , y >. e. A -> <. x , y >. e. B ) ) $.
+    $d x y A $. $d x y B $. $d x y ph $.
+    relssdv.1 $e |- ( ph -> ( <. x , y >. e. A -> <. x , y >. e. B ) ) $.
+    
     $( Deduction from subclass principle for relations.  (Contributed by set.mm
-       contributors, 11-Sep-2004.) $)
-    relssdvOLD $p |- ( ph -> A C_ B ) $=
-      ( cv cop wcel wi wal wss alrimivv ssrel sylibr ) ABHCHIZDJQEJKZCLBLDEMARB
-      CGNBCDEOP $.
+       contributors, 11-Sep-2004.) (Revised by Scott Fenton, 16-Apr-2021.) $)
+    relssdv $p |- ( ph -> A C_ B ) $=
+      ( cv cop wcel wi wal wss alrimivv ssrel sylibr ) ABGCGHZDIPEIJZCKBKDELAQB
+      CFMBCDENO $.
   $}
-
+  
   ${
     $d x y A $.  $d x y B $.
     eqrelrivOLD.1 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
@@ -46979,10 +46979,10 @@ $)
        contributors, 16-Aug-1994.)  (Revised by set.mm contributors,
        15-Mar-2004.) $)
     relssres $p |- ( ( Rel A /\ dom A C_ B ) -> ( A |` B ) = A ) $=
-      ( vx vy wrel cdm wss wa cres resss a1i simpl cv cop wcel opeldm ssel syl5
-      wi adantl ancld opelres syl6ibr relssdvOLD eqssd ) AEZAFZBGZHZABIZAUJAGUIABJ
-      KUICDAUJUFUHLUICMZDMZNZAOZUNUKBOZHUMUJOUIUNUOUHUNUOSUFUNUKUGOUHUOUKULAPUG
-      BUKQRTUAUKULABUBUCUDUE $.
+      ( vx vy wrel cdm wss wa cres resss a1i cv wcel wi opeldm ssel syl5 adantl
+      cop ancld opelres syl6ibr relssdv eqssd ) AEZAFZBGZHZABIZAUIAGUHABJKUHCDA
+      UIUHCLZDLZSZAMZUMUJBMZHULUIMUHUMUNUGUMUNNUEUMUJUFMUGUNUJUKAOUFBUJPQRTUJUK
+      ABUAUBUCUD $.
   $}
 
   $( A relation restricted to its domain equals itself.  (Contributed by set.mm
