@@ -45571,15 +45571,6 @@ $)
       CDEZDCEZFAGBGHZCIZUADIZJBKAKZUCUBJBKAKZFCDLUBUCMBKAKSUDTUEABCDNABDCNOCDPU
       BUCABQR $.
 
-    $( A subclass relationship depends only on a relation's ordered pairs.
-       Theorem 3.2(i) of [Monk1] p. 33.  (The proof was shortened by Andrew
-       Salmon, 27-Aug-2011.)  (Contributed by NM, 2-Aug-1994.)  (Revised by
-       set.mm contributors, 27-Aug-2011.) $)
-    ssrelOLD $p |- ( Rel A -> ( A C_ B <->
-                A. x A. y ( <. x , y >. e. A -> <. x , y >. e. B ) ) ) $=
-      ( wss cv cop wcel wi wal wb wrel ssrel a1i ) CDEAFBFGZCHODHIBJAJKCLABCDMN
-      $.
-
     $( Extensionality principle for relations.  Theorem 3.2(ii) of [Monk1]
        p. 33.  (Contributed by NM, 2-Aug-1994.) $)
     eqrelOLD $p |- ( ( Rel A /\ Rel B ) -> ( A = B <->
@@ -45588,59 +45579,59 @@ $)
       CDMN $.
   $}
 
+
   ${
-    $d x y A $.  $d x y B $.
-    relssi.1 $e |- Rel A $.
-    relssi.2 $e |- ( <. x , y >. e. A -> <. x , y >. e. B ) $.
+    $d x y A $. $d x y B $. 
+    relssi.1 $e |- ( <. x , y >. e. A -> <. x , y >. e. B ) $.
     $( Inference from subclass principle for relations.  (Contributed by NM,
-       31-Mar-1998.) $)
+       31-Mar-1998.) (Revised by Scott Fenton, 15-Apr-2021.) $)
     relssi $p |- A C_ B $=
-      ( wss cv cop wcel wi wal ssrel ax-gen mpgbir ) CDGAHBHIZCJPDJKZBLAABCDMQB
-      FNO $.
+      ( wss cv cop wcel wi wal ssrel ax-gen mpgbir ) CDFAGBGHZCIODIJZBKAABCDLPB
+      EMN $.
   $}
 
   ${
     $d x y A $.  $d x y B $.  $d x y ph $.
-    relssdv.1 $e |- ( ph -> Rel A ) $.
-    relssdv.2 $e |- ( ph -> ( <. x , y >. e. A -> <. x , y >. e. B ) ) $.
+    relssdvOLD.1 $e |- ( ph -> Rel A ) $.
+    relssdvOLD.2 $e |- ( ph -> ( <. x , y >. e. A -> <. x , y >. e. B ) ) $.
     $( Deduction from subclass principle for relations.  (Contributed by set.mm
        contributors, 11-Sep-2004.) $)
-    relssdv $p |- ( ph -> A C_ B ) $=
+    relssdvOLD $p |- ( ph -> A C_ B ) $=
       ( cv cop wcel wi wal wss alrimivv ssrel sylibr ) ABHCHIZDJQEJKZCLBLDEMARB
       CGNBCDEOP $.
   $}
 
   ${
     $d x y A $.  $d x y B $.
-    eqrelriv.1 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
+    eqrelrivOLD.1 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
 
     $( Inference from extensionality principle for relations.  (Contributed by
        FL, 15-Oct-2012.) $)
-    eqrelriv $p |- ( ( Rel A /\ Rel B ) -> A = B ) $=
+    eqrelrivOLD $p |- ( ( Rel A /\ Rel B ) -> A = B ) $=
       ( wrel wa wceq cv cop wcel wb wal gen2 eqrelOLD mpbiri ) CFDFGCDHAIBIJZCKQDK
       LZBMAMRABENABCDOP $.
   $}
 
   ${
     $d x y A $.  $d x y B $.
-    eqreliiv.1 $e |- Rel A $.
-    eqreliiv.2 $e |- Rel B $.
-    eqreliiv.3 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
+    eqreliivOLD.1 $e |- Rel A $.
+    eqreliivOLD.2 $e |- Rel B $.
+    eqreliivOLD.3 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
     $( Inference from extensionality principle for relations.  (Contributed by
        NM, 17-Mar-1995.) $)
-    eqrelriiv $p |- A = B $=
-      ( wrel wceq eqrelriv mp2an ) CHDHCDIEFABCDGJK $.
+    eqrelriivOLD $p |- A = B $=
+      ( wrel wceq eqrelrivOLD mp2an ) CHDHCDIEFABCDGJK $.
   $}
 
   ${
     $d x y A $.  $d x y B $.
-    eqbrriv.1 $e |- Rel A $.
-    eqbrriv.2 $e |- Rel B $.
-    eqbrriv.3 $e |- ( x A y <-> x B y ) $.
+    eqbrrivOLD.1 $e |- Rel A $.
+    eqbrrivOLD.2 $e |- Rel B $.
+    eqbrrivOLD.3 $e |- ( x A y <-> x B y ) $.
     $( Inference from extensionality principle for relations.  (Contributed by
        NM, 12-Dec-2006.) $)
-    eqbrriv $p |- A = B $=
-      ( cv wbr cop wcel df-br 3bitr3i eqrelriiv ) ABCDEFAHZBHZCIOPDIOPJZCKQDKGO
+    eqbrrivOLD $p |- A = B $=
+      ( cv wbr cop wcel df-br 3bitr3i eqrelriivOLD ) ABCDEFAHZBHZCIOPDIOPJZCKQDKGO
       PCLOPDLMN $.
   $}
 
@@ -45901,7 +45892,7 @@ $)
     inopab $p |- ( { <. x , y >. | ph } i^i { <. x , y >. | ps } ) =
                { <. x , y >. | ( ph /\ ps ) } $=
       ( vz vw copab cin wa wrel relopab relin1 ax-mp cop wcel wsbc sbcan sbcbii
-      cv opelopabsb anbi12i 3bitr4ri elin 3bitr4i eqrelriiv ) EFACDGZBCDGZHZABI
+      cv opelopabsb anbi12i 3bitr4ri elin 3bitr4i eqrelriivOLD ) EFACDGZBCDGZHZABI
       ZCDGZUFJUHJACDKUFUGLMUICDKESZFSZNZUFOZUMUGOZIZUIDULPZCUKPZUMUHOUMUJOADULP
       ZBDULPZIZCUKPUSCUKPZUTCUKPZIURUPUSUTCUKQUQVACUKABDULQRUNVBUOVCACDUKULTBCD
       UKULTUAUBUMUFUGUCUICDUKULTUDUE $.
@@ -47031,7 +47022,7 @@ $)
        15-Mar-2004.) $)
     relssres $p |- ( ( Rel A /\ dom A C_ B ) -> ( A |` B ) = A ) $=
       ( vx vy wrel cdm wss wa cres resss a1i simpl cv cop wcel opeldm ssel syl5
-      wi adantl ancld opelres syl6ibr relssdv eqssd ) AEZAFZBGZHZABIZAUJAGUIABJ
+      wi adantl ancld opelres syl6ibr relssdvOLD eqssd ) AEZAFZBGZHZABIZAUJAGUIABJ
       KUICDAUJUFUHLUICMZDMZNZAOZUNUKBOZHUMUJOUIUNUOUHUNUOSUFUNUKUGOUHUOUKULAPUG
       BUKQRTUAUKULABUBUCUDUE $.
   $}
@@ -47085,7 +47076,7 @@ $)
        Mario Carneiro, 5-Nov-2013.) $)
     dfres2 $p |- ( R |` A ) = { <. x , y >. | ( x e. A /\ x R y ) } $=
       ( vz vw cres cv wcel wbr copab relres relopab cop vex eleq1 breq1 anbi12d
-      wa weq breq2 anbi2d opelopab brres ancom bitri df-br 3bitr2ri eqrelriiv )
+      wa weq breq2 anbi2d opelopab brres ancom bitri df-br 3bitr2ri eqrelriivOLD )
       EFDCGZAHZCIZUKBHZDJZSZABKZDCLUOABMEHZFHZNZUPIUQCIZUQURDJZSZUQURUJJZUSUJIU
       OUTUQUMDJZSVBABUQUREOFOAETULUTUNVDUKUQCPUKUQUMDQRBFTVDVAUTUMURUQDUAUBUCVC
       VAUTSVBUQURDCUDVAUTUEUFUQURUJUGUHUI $.
@@ -47339,7 +47330,7 @@ $)
        27-Aug-2011.) $)
     cnvopab $p |- `' { <. x , y >. | ph } = { <. y , x >. | ph } $=
       ( vz vw copab ccnv relcnv relopab cop wcel wsbc opelopabsb sbccom opelcnv
-      cv bitri 3bitr4i eqrelriiv ) DEABCFZGZACBFZTHACBIEPZDPZJTKZABUCLCUDLZUDUC
+      cv bitri 3bitr4i eqrelriivOLD ) DEABCFZGZACBFZTHACBIEPZDPZJTKZABUCLCUDLZUDUC
       JZUAKUGUBKUEACUDLBUCLUFABCUCUDMABCUCUDNQUDUCTOACBUDUCMRS $.
   $}
 
@@ -47348,7 +47339,7 @@ $)
     $( The converse of the empty set.  (Contributed by set.mm contributors,
        6-Apr-1998.) $)
     cnv0 $p |- `' (/) = (/) $=
-      ( vx vy c0 ccnv relcnv rel0 cop wcel noel opelcnv mtbir 2false eqrelriiv
+      ( vx vy c0 ccnv relcnv rel0 cop wcel noel opelcnv mtbir 2false eqrelriivOLD
       cv ) ABCDZCCEFANZBNZGZOHZRCHSQPGZCHTIPQCJKRILM $.
 
     $( The converse of the identity relation.  Theorem 3.7(ii) of [Monk1]
@@ -47375,7 +47366,7 @@ $)
        set.mm contributors, 26-Jun-2014.) $)
     cnvdif $p |- `' ( A \ B ) = ( `' A \ `' B ) $=
       ( vx vy cdif ccnv relcnv wss wrel difss relss mp2 cv cop wcel wn wa eldif
-      opelcnv notbii anbi12i bitr4i 3bitr4i eqrelriiv ) CDABEZFZAFZBFZEZUEGUIUG
+      opelcnv notbii anbi12i bitr4i 3bitr4i eqrelriivOLD ) CDABEZFZAFZBFZEZUEGUIUG
       HUGIUIIUGUHJAGUIUGKLDMZCMZNZUEOZUKUJNZUGOZUNUHOZPZQZUNUFOUNUIOUMULAOZULBO
       ZPZQURULABRUOUSUQVAUKUJASUPUTUKUJBSTUAUBUKUJUESUNUGUHRUCUD $.
 
@@ -47627,7 +47618,7 @@ $)
        (Contributed by set.mm contributors, 29-Dec-1996.)  (Revised by set.mm
        contributors, 15-Aug-2004.) $)
     dfrel2 $p |- ( Rel R <-> `' `' R = R ) $=
-      ( vx vy wrel ccnv wceq relcnv cop wcel opelcnv bitri eqrelriv releq mpbii
+      ( vx vy wrel ccnv wceq relcnv cop wcel opelcnv bitri eqrelrivOLD releq mpbii
       cv mpan impbii ) ADZAEZEZAFZTDZRUASGZBCTABOZCOZHZTIUEUDHSIUFAIUDUESJUEUDA
       JKLPUAUBRUCTAMNQ $.
   $}
@@ -47749,7 +47740,7 @@ $)
        11-May-1998.) $)
     cnvsn $p |- `' { <. A , B >. } = { <. B , A >. } $=
       ( vx vy cop csn ccnv relcnv relsnop wcel wceq vex opex elsnc opth 3bitr4i
-      cv wa ancom bitri opelcnv eqrelriiv ) EFABGZHZIZBAGZHZUFJBADCKFSZESZGZUFL
+      cv wa ancom bitri opelcnv eqrelriivOLD ) EFABGZHZIZBAGZHZUFJBADCKFSZESZGZUFL
       ZUKUJGZUHMZUNUGLUNUILUMULUEMZUOULUEUJUKFNZENZOPUJAMZUKBMZTUTUSTUPUOUSUTUA
       UJUKABQUKUJBAQRUBUKUJUFUCUNUHUKUJURUQOPRUD $.
 
@@ -47858,7 +47849,7 @@ $)
                 = U_ x e. _V ( ( `' B " { x } ) X. ( A " { x } ) ) $=
       ( vy vz ccom cvv ccnv cv csn cima cxp ciun wrel wcel cop wbr wa wex bitri
       relco reliun relxp mprgbir opelco wrex eliun rexv opelxp eliniseg elimasn
-      a1i df-br bitr4i anbi12i exbii 3bitrri eqrelriiv ) DEBCFZAGCHAIZJZKZBVAKZ
+      a1i df-br bitr4i anbi12i exbii 3bitrri eqrelriivOLD ) DEBCFZAGCHAIZJZKZBVAKZ
       LZMZBCUAVENVDNZAGAGVDUBVFUTGOVBVCUCULUDDIZEIZPZUSOVGUTCQZUTVHBQZRZASZVIVE
       OZAVGVHBCUEVNVIVDOZAGUFVOASVMAVIGVDUGVOAUHVOVLAVOVGVBOZVHVCOZRVLVGVHVBVCU
       IVPVJVQVKCUTVGUJVQUTVHPBOVKBUTVHUKUTVHBUMUNUOTUPUQTUR $.
@@ -47914,7 +47905,7 @@ $)
        set.mm contributors, 12-Dec-2006.) $)
     resco $p |- ( ( A o. B ) |` C ) = ( A o. ( B |` C ) ) $=
       ( vx vy vz ccom cres relres relco cv wbr wcel wex brco anbi1i 19.41v an32
-      wa brres bitr4i exbii 3bitr2i 3bitr4i eqbrriv ) DEABGZCHZABCHZGZUFCIAUHJD
+      wa brres bitr4i exbii 3bitr2i 3bitr4i eqbrrivOLD ) DEABGZCHZABCHZGZUFCIAUHJD
       KZEKZUFLZUJCMZSZUJFKZUHLZUOUKALZSZFNZUJUKUGLUJUKUILUNUJUOBLZUQSZFNZUMSVAU
       MSZFNUSULVBUMFUJUKABOPVAUMFQVCURFVCUTUMSZUQSURUTUQUMRUPVDUQUJUOBCTPUAUBUC
       UJUKUFCTFUJUKAUHOUDUE $.
@@ -47955,7 +47946,7 @@ $)
        21-Dec-2008.) $)
     coiun $p |- ( A o. U_ x e. C B ) = U_ x e. C ( A o. B ) $=
       ( vy vz vw ciun ccom relco wrel cv wcel wbr wa wex wrex cop eliun df-br
-      reliun a1i mprgbir rexbii 3bitr4i anbi1i r19.41v bitr4i rexcom4 eqrelriiv
+      reliun a1i mprgbir rexbii 3bitr4i anbi1i r19.41v bitr4i rexcom4 eqrelriivOLD
       exbii opelco bitri ) EFBADCHZIZADBCIZHZBUNJUQKUPKZADADUPUAURALDMBCJUBUCEL
       ZGLZUNNZUTFLZBNZOZGPZUSUTCNZVCOZGPZADQZUSVBRZUOMVJUQMZVEVGADQZGPVIVDVLGVD
       VFADQZVCOVLVAVMVCUSUTRZUNMVNCMZADQVAVMAVNDCSUSUTUNTVFVOADUSUTCTUDUEUFVFVC
@@ -47988,7 +47979,7 @@ $)
        (Contributed by set.mm contributors, 24-Apr-2004.) $)
     co02 $p |- ( A o. (/) ) = (/) $=
       ( vx vy vz c0 ccom relco rel0 cv cop wcel wbr wa noel df-br mtbir intnanr
-      wex nex opelco 2false eqrelriiv ) BCAEFZEAEGHBIZCIZJZUCKZUFEKUGUDDIZELZUH
+      wex nex opelco 2false eqrelriivOLD ) BCAEFZEAEGHBIZCIZJZUCKZUFEKUGUDDIZELZUH
       UEALZMZDRUKDUIUJUIUDUHJZEKULNUDUHEOPQSDUDUEAETPUFNUAUB $.
 
     $( Composition with the empty set.  (Contributed by set.mm contributors,
@@ -48001,13 +47992,18 @@ $)
     $( Composition with the identity relation.  Part of Theorem 3.7(i) of
        [Monk1] p. 36.  (Contributed by set.mm contributors, 22-Apr-2004.)
        (Revised by Scott Fenton, 14-Apr-2021.) $)
-    coi1 $p |- ( A o. _I ) = A $= ? $.
+    coi1 $p |- ( A o. _I ) = A $=
+      ( vx vy vz cid ccom wceq cv cop wcel wb wal eqrel wbr wa wex opelco bitri
+      weq vex ideq equcom anbi1i exbii breq1 ceqsexv df-br ax-gen mpgbir ) AEFZ
+      AGBHZCHZIZUJJZUMAJZKZCLBBCUJAMUPCUNUKDHZENZUQULANZOZDPZUODUKULAEQVAUKULAN
+      ZUOVADBSZUSOZDPVBUTVDDURVCUSURBDSVCUKUQDTUABDUBRUCUDUSVBDUKBTUQUKULAUEUFR
+      UKULAUGRRUHUI $.
 
     $( Composition with the identity relation.  Part of Theorem 3.7(i) of
        [Monk1] p. 36.  (Contributed by set.mm contributors, 22-Apr-2004.) $)
     coi1OLD $p |- ( Rel A -> ( A o. _I ) = A ) $=
       ( vx vy vz cid ccom wrel wceq relco cv cop wcel wbr wa wex weq opelco vex
-      ideq bitri equcom anbi1i exbii breq1 ceqsexv 3bitri df-br eqrelriv mpan )
+      ideq bitri equcom anbi1i exbii breq1 ceqsexv 3bitri df-br eqrelrivOLD mpan )
       AEFZGAGUJAHAEIBCUJABJZCJZKZUJLZUKULAMZUMALUNUKDJZEMZUPULAMZNZDODBPZURNZDO
       UODUKULAEQUSVADUQUTURUQBDPUTUKUPDRSBDUATUBUCURUODUKBRUPUKULAUDUEUFUKULAUG
       TUHUI $.
@@ -48048,7 +48044,7 @@ $)
        (Contributed by set.mm contributors, 27-Jan-1997.) $)
     coass $p |- ( ( A o. B ) o. C ) = ( A o. ( B o. C ) ) $=
       ( vx vy vz vw ccom relco cv wbr wa excom anass 2exbii brco bitr4i 3bitr4i
-      wex exbii bitr2i anbi2i 19.42v anbi1i 19.41v eqbrriv ) DEABHZCHZABCHZHZUG
+      wex exbii bitr2i anbi2i 19.42v anbi1i 19.41v eqbrrivOLD ) DEABHZCHZABCHZHZUG
       CIAUIIDJZFJZCKZULEJZUGKZLZFSZUKGJZUIKZURUNAKZLZGSZUKUNUHKUKUNUJKUMULURBKZ
       UTLZLZGSZFSZUMVCLZUTLZFSZGSZUQVBVKVIGSFSVGVIGFMVIVEFGUMVCUTNOUAUPVFFUPUMV
       DGSZLVFUOVLUMGULUNABPUBUMVDGUCQTVAVJGVAVHFSZUTLVJUSVMUTFUKURBCPUDVHUTFUEQ
@@ -48091,10 +48087,10 @@ $)
     $( ` Swap ` subset relationship.  (Contributed by set.mm contributors,
        8-Jan-2015.) $)
     swapssvvvv $p |- Swap C_ ( ( _V X. _V ) X. ( _V X. _V ) ) $=
-      ( vx vy vz vw cswap cvv cxp relswap cop wcel wceq wex elswap vex mpbir2an
-      cv opelxp eleq1 mpbiri exlimivv sylbi relssi ) ABEFFGZUCGZHAPBPIZEJUECPZD
-      PZIZUGUFIZIZKZDLCLUEUDJZCDUEMUKULCDUKULUJUDJZUMUHUCJZUIUCJZUNUFFJZUGFJZCN
-      ZDNZUFUGFFQOUOUQUPUSURUGUFFFQOUHUIUCUCQOUEUJUDRSTUAUB $.
+      ( vx vy vz vw cswap cvv cxp cv cop wcel wceq elswap opelxp mpbir2an eleq1
+      wex vex mpbiri exlimivv sylbi relssi ) ABEFFGZUBGZAHBHIZEJUDCHZDHZIZUFUEI
+      ZIZKZDPCPUDUCJZCDUDLUJUKCDUJUKUIUCJZULUGUBJZUHUBJZUMUEFJZUFFJZCQZDQZUEUFF
+      FMNUNUPUOURUQUFUEFFMNUGUHUBUBMNUDUIUCORSTUA $.
   $}
 
   ${
@@ -48105,7 +48101,7 @@ $)
       ( vx vy vz ccnv cswap cima relcnv cvv cxp wss crn sstri cv cop wa wex vex
       wcel bitri wrel imassrn swapssvvvv rnss ax-mp rnxpss df-rel mpbir brswap2
       wbr wceq anbi1i exbii opex eleq1 ceqsexv bicomi opelcnv wrex elima df-rex
-      exancom 3bitr4i eqrelriiv ) BCAEZFAGZAHVFUAVFIIJZKVFFLZVGFAUBVHVGVGJZLZVG
+      exancom 3bitr4i eqrelriivOLD ) BCAEZFAGZAHVFUAVFIIJZKVFFLZVGFAUBVHVGVGJZLZVG
       FVIKVHVJKUCFVIUDUEVGVGUFMMVFUGUHCNZBNZOZASZDNZVLVKOZFUJZVOASZPZDQZVPVESVP
       VFSZVTVNVTVOVMUKZVRPZDQVNVSWCDVQWBVRVOVLVKBRZCRZUIULUMVRVNDVMVKVLWEWDUNVO
       VMAUOUPTUQVLVKAURWAVQDAUSZVTDVPFAUTWFVRVQPDQVTVQDAVAVRVQDVBTTVCVD $.
@@ -48268,7 +48264,7 @@ $)
     cnviin $p |- ( A =/= (/) -> `' |^|_ x e. A B = |^|_ x e. A `' B ) $=
       ( va vb ciin ccnv wrel relcnv cvv wss cv wcel wex df-rel cop wral wb opex
       vex c0 wne wceq cxp wrex wa mpbi eximi n0 df-rex 3imtr4i iinss syl sylibr
-      jctr eliin ax-mp opelcnv ralbii bitri 3bitr4i eqrelriv sylancr ) BUAUBZAB
+      jctr eliin ax-mp opelcnv ralbii bitri 3bitr4i eqrelrivOLD sylancr ) BUAUBZAB
       CFZGZHABCGZFZHZVFVHUCVEIVDVHJJUDZKZVIVDVGVJKZABUEZVKALBMZANVNVLUFZANVDVMV
       NVOAVNVLVGHVLCIVGOUGUOUHABUIVLABUJUKABVGVJULUMVHOUNDEVFVHELZDLZPZVEMZVRCM
       ZABQZVQVPPZVFMWBVHMZVRJMVSWARVPVQETZDTZSAVRBCJUPUQVQVPVEURWCWBVGMZABQZWAW
@@ -52171,7 +52167,7 @@ $)
        11-Feb-2015.) $)
     dfid4 $p |- _I = ( _S i^i `' _S ) $=
       ( vx vy cid csset ccnv cin reli wss inss1 relsset relss mp2 weq cv wa wbr
-      wrel vex brsset bitri eqss ideq brin brcnv anbi12i 3bitr4i eqbrriv ) ABCD
+      wrel vex brsset bitri eqss ideq brin brcnv anbi12i 3bitr4i eqbrrivOLD ) ABCD
       DEZFZGUIDHDQUIQDUHIJUIDKLABMANZBNZHZUKUJHZOZUJUKCPUJUKUIPZUJUKUAUJUKBRZUB
       UOUJUKDPZUJUKUHPZOUNUJUKDUHUCUQULURUMUJUKARZUPSURUKUJDPUMUJUKDUDUKUJUPUSS
       TUETUFUG $.
@@ -52251,7 +52247,7 @@ $)
        23-Feb-2015.) $)
     cnvswap $p |- `' Swap = Swap $=
       ( va vb vy vx cswap ccnv relcnv relswap cv cop wceq wa ancom 2exbii brcnv
-      wex wbr brswap excom 3bitri 3bitr4i eqbrriv ) ABEFZEEGHBIZCIZDIZJKZAIZUFU
+      wex wbr brswap excom 3bitri 3bitr4i eqbrrivOLD ) ABEFZEEGHBIZCIZDIZJKZAIZUFU
       EJKZLZCPDPZUIUGLZCPDPUHUDUCQZUHUDEQUJULDCUGUIMNUMUDUHEQUJDPCPUKUHUDEOCDUD
       UHRUJCDSTDCUHUDRUAUB $.
   $}
@@ -52361,7 +52357,7 @@ $)
        26-Feb-2015.) $)
     cnvsi $p |- `' SI R = SI `' R $=
       ( vx vy vb va csi ccnv relcnv relsi cv csn wceq wbr w3a wex 3ancoma brcnv
-      3anbi3i bitr4i brsi 2exbii excom 3bitri 3bitr4i eqbrriv ) BCAFZGZAGZFZUFH
+      3anbi3i bitr4i brsi 2exbii excom 3bitri 3bitr4i eqbrrivOLD ) BCAFZGZAGZFZUFH
       UHICJZDJZKLZBJZEJZKLZUKUNAMZNZDOEOZUOULUNUKUHMZNZDOEOUMUJUGMZUMUJUIMUQUTE
       DUQUOULUPNUTULUOUPPUSUPUOULUNUKAQRSUAVAUJUMUFMUQEODOURUMUJUFQDEUJUMATUQDE
       UBUCEDUMUJUHTUDUE $.
@@ -53469,10 +53465,10 @@ $)
     $( Domain of closure of an operation.  (Contributed by set.mm contributors,
        24-Aug-1995.) $)
     oprssdm $p |- ( S X. S ) C_ dom F $=
-      ( cxp cdm relxp cv cop wcel wa opelxp wn cfv c0 wceq ndmfv co df-ov eleq1
-      eqeq1i mtbiri sylbir nsyl syl con4i sylbi relssi ) ABCCGZDHZCCIAJZBJZKZUK
-      LUMCLUNCLMZUOULLZUMUNCCNUQUPUQOUODPZQRZUPOUODSUSUMUNDTZCLZUPUSUTQRZVAOUTU
-      RQUMUNDUAUCVBVAQCLEUTQCUBUDUEFUFUGUHUIUJ $.
+      ( cxp cdm cv cop wcel wa opelxp wn cfv c0 wceq ndmfv co df-ov eqeq1i nsyl
+      eleq1 mtbiri sylbir syl con4i sylbi relssi ) ABCCGZDHZAIZBIZJZUJKULCKUMCK
+      LZUNUKKZULUMCCMUPUOUPNUNDOZPQZUONUNDRURULUMDSZCKZUOURUSPQZUTNUSUQPULUMDTU
+      AVAUTPCKEUSPCUCUDUEFUBUFUGUHUI $.
   $}
 
   $( The value of an operation outside its domain.  (Contributed by set.mm
@@ -55133,7 +55129,7 @@ $)
     restxp $p |- ( ( A (x) B ) |` C ) = ( ( A |` C ) (x) ( B |` C ) ) $=
       ( vx vy va vb ctxp cres cv wbr w3a wex 3anass anbi1i bitri 3bitr4i 2exbii
       wa brres relres reltxp cop wceq wcel anandir anbi2i anass brtxp 3anbi123i
-      19.41vv biid eqbrriv ) DEABHZCIZACIZBCIZHZUNCUAUPUQUBEJZFJZGJZUCUDZDJZUTA
+      19.41vv biid eqbrrivOLD ) DEABHZCIZACIZBCIZHZUNCUAUPUQUBEJZFJZGJZUCUDZDJZUTA
       KZVCVABKZLZVCCUEZSZGMFMZVBVDVGSZVEVGSZLZGMFMZVCUSUOKZVCUSURKZVHVLFGVBVDVE
       SZVGSZSZVBVJVKSZSVHVLVQVSVBVDVEVGUFUGVHVBVPSZVGSVRVFVTVGVBVDVENOVBVPVGUHP
       VBVJVKNQRVCUSUNKZVGSVFGMFMZVGSVNVIWAWBVGFGVCUSABUIOVCUSUNCTVFVGFGUKQVOVBV
@@ -55320,12 +55316,12 @@ $)
     $( Subset law for tail cross product.  (Contributed by SF, 18-Feb-2015.) $)
     txpssvvv $p |- ( R (x) S ) C_ ( _V X. ( _V X. _V ) ) $=
       ( vx vy vz ctxp c1st ccnv ccom c2nd cvv cxp cv wbr wex cop opelxp exlimiv
-      wcel vex cin df-txp inss1 relco wa wceq brcnv br1st bitri mpbir2an mpbiri
-      eleq1 sylbi adantl opelco mpbiran 3imtr4i relssi sstri eqsstri ) ABFGHZAI
-      ZJHBIZUAZKKKLZLZABUBVDVBVFVBVCUCCDVBVFVAAUDCMZEMZANZVHDMZVANZUEZEOVJVESZV
-      GVJPZVBSVNVFSZVLVMEVKVMVIVKVJVHVGPZUFZCOZVMVKVJVHGNVRVHVJGUGCVJVHETZUHUIV
-      QVMCVQVMVPVESZVTVHKSVGKSZVSCTZVHVGKKQUJVJVPVEULUKRUMUNREVGVJVAAUOVOWAVMWB
-      VGVJKVEQUPUQURUSUT $.
+      wcel vex cin df-txp inss1 wa wceq brcnv br1st bitri mpbir2an eleq1 mpbiri
+      sylbi adantl opelco mpbiran 3imtr4i relssi sstri eqsstri ) ABFGHZAIZJHBIZ
+      UAZKKKLZLZABUBVCVAVEVAVBUCCDVAVECMZEMZANZVGDMZUTNZUDZEOVIVDSZVFVIPZVASVMV
+      ESZVKVLEVJVLVHVJVIVGVFPZUEZCOZVLVJVIVGGNVQVGVIGUFCVIVGETZUGUHVPVLCVPVLVOV
+      DSZVSVGKSVFKSZVRCTZVGVFKKQUIVIVOVDUJUKRULUMREVFVIUTAUNVNVTVLWAVFVIKVDQUOU
+      PUQURUS $.
   $}
 
   ${
@@ -55900,11 +55896,11 @@ $)
     $( A subset law for parallel product.  (Contributed by SF, 24-Feb-2015.) $)
     pprodss4v $p |- PProd ( A , B ) C_ ( ( _V X. _V ) X. ( _V X. _V ) ) $=
       ( vx vy va vb vc vd cvv cxp cv cop wcel wceq wbr wex vex opelxp mpbir2an
-      wa cpprod relpprod brpprod bitr3i opeq12 syl6eqel 3adant3 exlimivv sylbir
-      w3a df-br relssi ) CDABUAZIIJZUNJZABUBCKZDKZLZUMMZUPEKZFKZLZNZUQGKZHKZLZN
-      ZUTVDAOVAVEBOTZUJZHPGPZFPEPZURUOMZVKUPUQUMOUSEFGHUPUQABUCUPUQUMUKUDVJVLEF
-      VIVLGHVCVGVLVHVCVGTURVBVFLZUOUPVBUQVFUEVMUOMVBUNMZVFUNMZVNUTIMVAIMEQFQUTV
-      AIIRSVOVDIMVEIMGQHQVDVEIIRSVBVFUNUNRSUFUGUHUHUIUL $.
+      wa cpprod w3a brpprod df-br bitr3i opeq12 syl6eqel exlimivv sylbir relssi
+      3adant3 ) CDABUAZIIJZUMJZCKZDKZLZULMZUOEKZFKZLZNZUPGKZHKZLZNZUSVCAOUTVDBO
+      TZUBZHPGPZFPEPZUQUNMZVJUOUPULOUREFGHUOUPABUCUOUPULUDUEVIVKEFVHVKGHVBVFVKV
+      GVBVFTUQVAVELZUNUOVAUPVEUFVLUNMVAUMMZVEUMMZVMUSIMUTIMEQFQUSUTIIRSVNVCIMVD
+      IMGQHQVCVDIIRSVAVEUMUMRSUGUKUHUHUIUJ $.
   $}
 
   ${
@@ -55919,7 +55915,7 @@ $)
       wrel pprodss4v dmss ax-mp dmxpss sstri relxp relss mp2 wceq isseti 19.41v
       opex mpbiran 2exbii wcel df-br eldm w3a brpprod 3anass eqcom opth 19.42vv
       weq anbi1i df-3an bicomi breq1 anbi1d anbi2d 2exbidv ceqsex2v exrot3 brxp
-      exbii eeanv anbi12i bitr4i 3bitr4i eqbrriv ) CDABUAZJZAJZBJZKZWDLLKZMWHUB
+      exbii eeanv anbi12i bitr4i 3bitr4i eqbrrivOLD ) CDABUAZJZAJZBJZKZWDLLKZMWHUB
       WDUBWDWHWHKZJZWHWCWIMWDWJMABUCWCWIUDUEWHWHUFUGLLUHWDWHUIUJWEWFUHENZFNZGNZ
       OZUKZCNZWLAPZDNZWMBPZQZQZERZGRFRZWTGRFRZWPWRWDPZWPWRWGPZXBWTFGXBWOERWTEWN
       WLWMFSGSUNULWOWTEUMUOUPXEWPWROZWDUQZXCWPWRWDURXHXGWKWCPZERZXCEXGWCUSXJXAG
@@ -58478,9 +58474,9 @@ $)
     $d x y $.
     $( Equality implies equinumerosity.  (Contributed by SF, 30-Apr-1998.) $)
     idssen $p |- _I C_ ~~ $=
-      ( vx vy cid cen reli cv wbr cop wcel weq vex ideq cvv enrflxg ax-mp breq2
-      mpbii sylbi df-br 3imtr3i relssi ) ABCDEAFZBFZCGZUBUCDGZUBUCHZCIUFDIUDABJ
-      ZUEUBUCBKLUGUBUBDGZUEUBMIUHAKUBMNOUBUCUBDPQRUBUCCSUBUCDSTUA $.
+      ( vx vy cid cen cv wbr cop wcel weq ideq enrflx breq2 mpbii sylbi 3imtr3i
+      vex df-br relssi ) ABCDAEZBEZCFZSTDFZSTGZCHUCDHUAABIZUBSTBPJUDSSDFUBSAPKS
+      TSDLMNSTCQSTDQOR $.
   $}
 
   $( The domain of equinumerosity.  (Contributed by SF, 10-May-1998.) $)
@@ -59586,7 +59582,7 @@ $)
       wex vex ssetex csi ccnv cvv rellec relco wss wceq wel 19.41vv anass ancom
       r2ex w3a df-3an bitr4i snex breq1 anbi1d anbi2d ceqsex2v brssetsn anbi12i
       3bitri anbi1i 3bitr3i brlec brco brsi brsset anbi2i 19.42v 19.42vv bitr2i
-      brcnv 3bitr2i exrot4 3bitr4i eqbrriv siex coex cnvex eqeltri ) GHHUAZIZHU
+      brcnv 3bitr2i exrot4 3bitr4i eqbrrivOLD siex coex cnvex eqeltri ) GHHUAZIZHU
       BZIZUCABGWFUDWDWEUECJZDJZUFZDBJZKCAJZKZEJZWKHLZFJZWJHLZMZWMWGNZUGZWOWHNZU
       GZMZWIMZMZFRERZDRCRZWKWJGLWKWJWFLZWLCAUHZDBUHZMZWIMZDRCRXFWICDWKWJULXEXKC
       DWQXBMZWIMZFRERXLFRERZWIMXEXKXLWIEFUIXMXDEFWQXBWIUJOXNXJWIXNWSXAWQUMZFRER
@@ -61654,7 +61650,7 @@ $)
       wa vex syl6bb cmpt csn cres ccnv ccom wfun wrel funmpt funrel ax-mp relco
       brcnv br1st anbi1i 19.41v bitr4i excom opex breq1 braddcfn opelxp mpbiran
       cxp brres elsn anbi12ci ceqsexv 1cex addceq2 eqeq1d opelco copab mptv weq
-      eleq2i addceq1 eqeq1 eqcom opelopab 3bitr4ri eqrelriiv addcfnex vvex snex
+      eleq2i addceq1 eqeq1 eqcom opelopab 3bitr4ri eqrelriivOLD addcfnex vvex snex
       eqeq2d xpex resex 1stex cnvex coex eqeltri ) AEAFZGHZUAZIEGUBZVCZUCZJUDZU
       EZEBCWNWSWNUFWNUGAEWMUHWNUIUJWQWRUKBFZDFZWRKZXACFZWQKZRZDLZWTGHZXCMZWTXCN
       ZWSOXIWNOZXFWLGMZWTWLHZXCMZRZALZXHXFXAWTWLNZMZXDRZALZDLZXOXEXSDXEXQALZXDR
