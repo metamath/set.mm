@@ -45813,17 +45813,6 @@ $)
   ${
     $d w x y z A $.  $d x y B $.  $d x y C $.  $d x y D $.  $d ph z w $.
     $d ps z w $.
-    $( The identity relation is a relation.  Part of Exercise 4.12(p) of
-       [Mendelson] p. 235.  (Contributed by NM, 26-Apr-1998.)  (Revised by
-       set.mm contributors, 21-Dec-2013.) $)
-    reli $p |- Rel _I $=
-      ( vx vy cv wceq cid dfid3 relopabi ) ACBCDABEABFG $.
-
-    $( The membership relation is a relation.  (Contributed by NM,
-       26-Apr-1998.)  (Revised by set.mm contributors, 21-Dec-2013.) $)
-    rele $p |- Rel _E $=
-      ( vx vy cv wcel cep df-eprel relopabi ) ACBCDABEABFG $.
-
     $( A relation expressed as an ordered pair abstraction.  (Contributed by
        set.mm contributors, 11-Dec-2006.) $)
     opabid2 $p |- ( Rel A -> { <. x , y >. | <. x , y >. e. A } = A ) $=
@@ -50015,8 +50004,8 @@ $)
   $( The identity relation is a one-to-one onto function on the universe.
      (Contributed by set.mm contributors, 16-May-2004.) $)
   f1ovi $p |- _I : _V -1-1-onto-> _V $=
-    ( cvv cid cres wf1o f1oi wceq wb wrel reli dfrel3 mpbi f1oeq1 ax-mp ) AABAC
-    ZDZAABDZAENBFZOPGBHQIBJKAANBLMK $.
+    ( cvv cid wf1o wfn ccnv wfun cdm wceq funi df-fn mpbir2an cnvi fneq1i mpbir
+    dmi dff1o4 ) AABCBADZBEZADZQBFBGAHIOBAJKZSQTARBLMNAABPK $.
 
   ${
     f1osn.1 $e |- A e. _V $.
