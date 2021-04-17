@@ -47874,16 +47874,6 @@ $)
     coi2 $p |- ( _I o. A ) = A $=
       ( cid ccom wceq ccnv cnvco cnvi coeq2i coi1 3eqtri cnveqb mpbir ) BACZADM
       EZAEZDNOBEZCOBCOBAFPBOGHOIJMAKL $.
-
-    $( Composition with the identity relation.  Part of Theorem 3.7(i) of
-       [Monk1] p. 36.  (Contributed by set.mm contributors, 22-Apr-2004.) $)
-    coi1OLD $p |- ( Rel A -> ( A o. _I ) = A ) $=
-      ( cid ccom wceq wrel coi1 a1i ) ABCADAEAFG $.
-
-    $( Composition with the identity relation.  Part of Theorem 3.7(i) of
-       [Monk1] p. 36.  (Contributed by set.mm contributors, 22-Apr-2004.) $)
-    coi2OLD $p |- ( Rel A -> ( _I o. A ) = A ) $=
-      ( cid ccom wceq wrel coi2 a1i ) BACADAEAFG $.
   $}
 
   ${
@@ -49249,20 +49239,16 @@ $)
        contributors, 13-Dec-2003.)  (Revised by set.mm contributors,
        18-Sep-2011.) $)
     fcoi1 $p |- ( F : A --> B -> ( F o. ( _I |` A ) ) = F ) $=
-      ( wf wfn cid cres ccom wceq ffn wfun cdm wa df-fn wss eqimss ccnv reseq1i
-      cnvi syl cnveqi eqtr2i coeq2i cores2 syl5eq wrel funrel coi1OLD sylan9eqr
-      cnvresid sylbi ) ABCDCAEZCFAGZHZCIZABCJULCKZCLZAIZMUOCANURUPUNCFHZCURUQAO
-      ZUNUSIUQAPUTUNCFQZAGZQZHUSUMVCCVCUMQUMVBUMVAFASRUAAUJUBUCCFAUDUETUPCUFUSC
-      ICUGCUHTUIUKT $.
+      ( wf cid cres ccom coi1 reseq1i resco eqtr3i wfn wceq ffn fnresdm syl5eqr
+      syl ) ABCDZCEAFGZCAFZCCEGZAFTSUACACHICEAJKRCALTCMABCNACOQP $.
 
     $( Composition of restricted identity and a mapping.  (The proof was
        shortened by Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm
        contributors, 13-Dec-2003.)  (Revised by set.mm contributors,
        18-Sep-2011.) $)
     fcoi2 $p |- ( F : A --> B -> ( ( _I |` B ) o. F ) = F ) $=
-      ( wf wfn crn wss wa cid cres ccom wceq df-f cores wrel coi2OLD syl sylan9eqr
-      fnrel sylbi ) ABCDCAEZCFBGZHIBJCKZCLABCMUBUAUCICKZCICBNUACOUDCLACSCPQRT
-      $.
+      ( wf cid cres ccom crn wss wceq frn cores syl coi2 syl6eq ) ABCDZEBFCGZEC
+      GZCPCHBIQRJABCKECBLMCNO $.
   $}
 
   ${
