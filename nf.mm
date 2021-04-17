@@ -47937,21 +47937,21 @@ $)
       UB $.
 
     $( Composition with the identity relation.  Part of Theorem 3.7(i) of
-       [Monk1] p. 36.  (Contributed by set.mm contributors, 22-Apr-2004.) $)
-    coi1OLD $p |- ( Rel A -> ( A o. _I ) = A ) $=
-      ( vx vy vz cid ccom wrel wceq relco cv cop wcel wbr wa wex weq opelco vex
-      ideq bitri equcom anbi1i exbii breq1 ceqsexv 3bitri df-br eqrelrivOLD
-      mpan ) AEFZGAGUJAHAEIBCUJABJZCJZKZUJLZUKULAMZUMALUNUKDJZEMZUPULAMZNZDODBP
-      ZURNZDOUODUKULAEQUSVADUQUTURUQBDPUTUKUPDRSBDUATUBUCURUODUKBRUPUKULAUDUEUF
-      UKULAUGTUHUI $.
+       [Monk1] p. 36.  (Contributed by set.mm contributors, 22-Apr-2004.)
+       (Revised by Scott Fenton, 17-Apr-2021.) $)
+    coi2 $p |- ( _I o. A ) = A $=
+      ( cid ccom wceq ccnv cnvco cnvi coeq2i coi1 3eqtri cnveqb mpbir ) BACZADM
+      EZAEZDNOBEZCOBCOBAFPBOGHOIJMAKL $.
 
     $( Composition with the identity relation.  Part of Theorem 3.7(i) of
        [Monk1] p. 36.  (Contributed by set.mm contributors, 22-Apr-2004.) $)
-    coi2 $p |- ( Rel A -> ( _I o. A ) = A ) $=
-      ( wrel cid ccom ccnv cnvco wceq relcnv coi1OLD ax-mp cnveqi eqtr3i dfrel2
-      cnvi coeq2 coeq1 sylan9eq mpan2 sylbi syl5reqr biimpi eqtrd ) ABZCADZAEZE
-      ZAUCUFCEZUFDZUDUECDZEUHUFUECFUIUEUEBUIUEGAHUEIJKLUCUFAGZUHUDGZAMZUJUGCGZU
-      KNUJUMUHUGADUDUFAUGOUGCAPQRSTUCUJULUAUB $.
+    coi1OLD $p |- ( Rel A -> ( A o. _I ) = A ) $=
+      ( cid ccom wceq wrel coi1 a1i ) ABCADAEAFG $.
+
+    $( Composition with the identity relation.  Part of Theorem 3.7(i) of
+       [Monk1] p. 36.  (Contributed by set.mm contributors, 22-Apr-2004.) $)
+    coi2OLD $p |- ( Rel A -> ( _I o. A ) = A ) $=
+      ( cid ccom wceq wrel coi2 a1i ) BACADAEAFG $.
   $}
 
   ${
@@ -47967,11 +47967,9 @@ $)
   $}
 
   $( Composition with a restricted identity relation.  (Contributed by FL,
-     19-Jun-2011.) $)
-  coires1 $p |- ( Rel A
-     -> ( A o. ( _I |` B ) ) = ( A |` B ) ) $=
-    ( wrel cid cres ccom resco coi1OLD reseq1d syl5eqr ) ACZADBEFADFZBEABEADBGK
-    LABAHIJ $.
+     19-Jun-2011.) (Revised by Scott Fenton, 17-Apr-2021.) $)
+  coires1 $p |- ( A o. ( _I |` B ) ) = ( A |` B ) $=
+    ( cid ccom cres resco coi1 reseq1i eqtr3i ) ACDZBEACBEDABEACBFJABAGHI $.
 
   ${
     $d x y z w A $.  $d x y z w B $.  $d x y z w C $.
@@ -49350,7 +49348,7 @@ $)
        contributors, 13-Dec-2003.)  (Revised by set.mm contributors,
        18-Sep-2011.) $)
     fcoi2 $p |- ( F : A --> B -> ( ( _I |` B ) o. F ) = F ) $=
-      ( wf wfn crn wss wa cid cres ccom wceq df-f cores wrel coi2 syl sylan9eqr
+      ( wf wfn crn wss wa cid cres ccom wceq df-f cores wrel coi2OLD syl sylan9eqr
       fnrel sylbi ) ABCDCAEZCFBGZHIBJCKZCLABCMUBUAUCICKZCICBNUACOUDCLACSCPQRT
       $.
   $}
