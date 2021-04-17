@@ -47540,6 +47540,12 @@ $)
 
   ${
     $d x y R $.
+    $( The double converse of a class is the original class.  (Contributed by Scott
+       Fenton, 17-Apr-2021.) $)
+    cnvcnv $p |- `' `' R = R $=
+      ( vx vy ccnv cv wbr brcnv bitri eqbrriv ) BCADZDZABEZCEZKFMLJFLMAFLMJGMLA
+      GHI $.
+
     $( Alternate definition of relation.  Exercise 2 of [TakeutiZaring] p. 25.
        (Contributed by set.mm contributors, 29-Dec-1996.)  (Revised by set.mm
        contributors, 15-Aug-2004.) $)
@@ -47549,15 +47555,14 @@ $)
       UDAKLMOUAUBRUCTANPQ $.
   $}
 
-  $( Equality theorem for converse.  (Contributed by FL, 19-Sep-2011.) $)
-  cnveqb $p |- ( ( Rel A /\ Rel B ) -> ( A = B <-> `' A = `' B ) ) $=
-    ( wrel wa wceq ccnv cnveq wi dfrel2 eqeq2 syl5ibr eqcoms sylbi eqeq1 imbi2d
-    imp impbid2 ) ACZBCZDABEZAFZBFZEZABGRSUCTHZRUAFZAESUDHZAIUFAUESUDAUEEZUCUEB
-    EZHZSUBFZBEUIBIUIBUJUCUHBUJEUEUJEUAUBGBUJUEJKLMUGTUHUCAUEBNOKLMPQ $.
-
+  $( Equality theorem for converse.  (Contributed by FL, 19-Sep-2011.)
+     (Revised by Scott Fenton, 17-Apr-2021.) $)
+  cnveqb $p |- ( A = B <-> `' A = `' B ) $=
+    ( wceq ccnv cnveq cnvcnv 3eqtr3g impbii ) ABCADZBDZCZABEKIDJDABIJEAFBFGH $.
+    
   $( The double converse of a class strips out all elements that are not
      ordered pairs.  (Contributed by set.mm contributors, 8-Dec-2003.) $)
-  cnvcnv $p |- `' `' A = ( A i^i ( _V X. _V ) ) $=
+  cnvcnvOLD $p |- `' `' A = ( A i^i ( _V X. _V ) ) $=
     ( cvv cxp cin ccnv cnvin cnveqi wrel wceq relall dfrel2 wss df-rel sseqtr4i
     mpbi dfss eqtr4i 3eqtr3ri ) ABBCZDZEZEZAEZSEZDZEZTUCEZUAUEASFGTHUBTITJTKOUF
     UGUDEZDZUGUCUDFUGUHLUGUIIUGSUHUGHUGSLUGJUGMOSHUHSISJSKONUGUHPOQR $.
@@ -47565,13 +47570,13 @@ $)
   $( The double converse of a class equals its restriction to the universe.
      (Contributed by set.mm contributors, 8-Oct-2007.) $)
   cnvcnv2 $p |- `' `' A = ( A |` _V ) $=
-    ( ccnv cvv cxp cin cres cnvcnv df-res eqtr4i ) ABBACCDEACFAGACHI $.
+    ( ccnv cvv cxp cin cres cnvcnvOLD df-res eqtr4i ) ABBACCDEACFAGACHI $.
 
   $( The double converse of a class is a subclass.  Exercise 2 of
      [TakeutiZaring] p. 25.  (Contributed by set.mm contributors,
      23-Jul-2004.) $)
   cnvcnvss $p |- `' `' A C_ A $=
-    ( ccnv cvv cxp cin cnvcnv inss1 eqsstri ) ABBACCDZEAAFAIGH $.
+    ( ccnv cvv cxp cin cnvcnvOLD inss1 eqsstri ) ABBACCDZEAAFAIGH $.
 
   ${
     $d x y A $.
@@ -48279,12 +48284,6 @@ $)
 
   ${
     $d x y A $.  $d x y z F $.
-    $( Alternate definition of a function using "at most one" notation.
-       (Contributed by NM, 9-Mar-1995.) $)
-    dffun6OLD $p |- ( Fun F <-> ( Rel F /\ A. x E* y x F y ) ) $=
-      ( wfun cv wbr wmo wal wrel wa dffun6 relall biantrur bitri ) CDAEBECFBGAH
-      ZCIZOJABCKPOCLMN $.
-
     $( A function has at most one value for each argument.  (Contributed by NM,
        24-May-1998.) $)
     funmo $p |- ( Fun F -> E* y A F y ) $=
@@ -48594,9 +48593,8 @@ $)
     $( A simpler equivalence for single-rooted (see ~ funcnv ).  (Contributed
        by set.mm contributors, 9-Aug-2004.) $)
     funcnv2 $p |- ( Fun `' A <-> A. y E* x x A y ) $=
-      ( ccnv wfun cv wbr wmo wal wa dffun6OLD relcnv biantrur brcnv mobii albii
-      wrel 3bitr2i ) CDZESQZBFZAFZSGZAHZBIZJUEUBUACGZAHZBIBASKTUECLMUDUGBUCUFAU
-      AUBCNOPR $.
+      ( ccnv wfun cv wbr wmo wal dffun6 brcnv mobii albii bitri ) CDZEBFZAFZOGZ
+      AHZBIQPCGZAHZBIBAOJSUABRTAPQCKLMN $.
 
     $( The converse of a class is a function iff the class is single-rooted,
        which means that for any ` y ` in the range of ` A ` there is at most
@@ -48625,13 +48623,6 @@ $)
     fun2cnv $p |- ( Fun `' `' A <-> A. x E* y x A y ) $=
       ( ccnv wfun cv wbr wmo wal funcnv2 brcnv mobii albii bitri ) CDZDEBFZAFZO
       GZBHZAIQPCGZBHZAIBAOJSUAARTBPQCKLMN $.
-
-    $( A single-valued relation is a function.  (See ~ fun2cnv for
-       "single-valued.") Definition 6.4(4) of [TakeutiZaring] p. 24.
-       (Contributed by set.mm contributors, 17-Jan-2006.) $)
-    svrelfun $p |- ( Fun A <-> ( Rel A /\ Fun `' `' A ) ) $=
-      ( vx vy wfun wrel cv wbr wmo wal wa ccnv dffun6OLD fun2cnv anbi2i bitr4i
-      ) ADAEZBFCFAGCHBIZJPAKKDZJBCALRQPBCAMNO $.
 
     $( Single-rootedness (see ~ funcnv ) of a class cut down by a cross
        product.  (Contributed by NM, 5-Mar-2007.) $)
@@ -49027,15 +49018,14 @@ $)
     $( An equivalence for functionality of a restriction.  Compare ~ dffun8 .
        (Contributed by Mario Carneiro, 20-May-2015.) $)
     fnres $p |- ( ( F |` A ) Fn A <-> A. x e. A E! y x F y ) $=
-      ( cres wfun cdm wceq wa wbr wmo wral ancom wal wcel bitri mpbiran 3bitr4i
-      cv wss wex wfn weu brres mobii moanimv albii wrel relres dffun6OLD df-ral
-      cin dmres inss1 eqsstri eqss dfss3 elin2 baib eldm syl6bb ralbiia anbi12i
-      wi r19.26 df-fn eu5 ralbii ) DCEZFZVIGZCHZIZASZBSZDJZBUAZVPBKZIZACLZVICUB
-      VPBUCZACLVRACLZVQACLZIWCWBIVMVTWBWCMVJWBVLWCVNVOVIJZBKZANZVNCOZVRVDZANVJW
-      BWEWHAWEWGVPIZBKWHWDWIBWDVPWGIWIVNVODCUDVPWGMPUEWGVPBUFPUGVJVIUHWFDCUIABV
-      IUJQVRACUKRVLCVKTZWCVLVKCTWJVKCDGZULCDCUMZCWKUNUOVKCUPQWJVNVKOZACLWCACVKU
-      QWMVQACWGWMVNWKOZVQWMWGWNVNCWKVKWLURUSBVNDUTVAVBPPVCVQVRACVERVICVFWAVSACV
-      PBVGVHR $.
+      ( cres wfun cdm wceq wa wbr wex wmo wral ancom wal wcel bitri 3bitr4i wss
+      cv wfn weu wi brres mobii moanimv albii dffun6 df-ral dmres inss1 eqsstri
+      cin eqss mpbiran dfss3 elin2 baib eldm syl6bb ralbiia 3bitri r19.26 df-fn
+      anbi12i eu5 ralbii ) DCEZFZVHGZCHZIZATZBTZDJZBKZVOBLZIZACMZVHCUAVOBUBZACM
+      VQACMZVPACMZIWBWAIVLVSWAWBNVIWAVKWBVMVNVHJZBLZAOVMCPZVQUCZAOVIWAWDWFAWDWE
+      VOIZBLWFWCWGBWCVOWEIWGVMVNDCUDVOWENQUEWEVOBUFQUGABVHUHVQACUIRVKCVJSZVMVJP
+      ZACMWBVKVJCSWHVJCDGZUMCDCUJZCWJUKULVJCUNUOACVJUPWIVPACWEWIVMWJPZVPWIWEWLV
+      MCWJVJWKUQURBVMDUSUTVAVBVEVPVQACVCRVHCVDVTVRACVOBVFVGR $.
   $}
 
   $( Functionality and domain of restricted identity.  (Contributed by set.mm
@@ -50352,11 +50342,11 @@ $)
        value is the empty set.  (Contributed by NM, 8-Aug-2010.)  (Proof
        shortened by Andrew Salmon, 22-Oct-2011.) $)
     nfunsn $p |- ( -. Fun ( F |` { A } ) -> ( F ` A ) = (/) ) $=
-      ( vx vy cfv c0 wceq csn cres wfun wn wrel cv wbr wmo wal weu eumo sylbi
-      wa wcel brres wb elsn breq1 biimpac moimi syl tz6.12-2 nsyl4 relres jctil
-      alrimiv dffun6OLD sylibr con1i ) ABEFGZBAHZIZJZUQKZUSLZCMZDMZUSNZDOZCPZTU
-      TVAVGVBVAVFCAVDBNZDQZVFUQVIVHDOVFVHDRVEVHDVEVCVDBNZVCURUAZTVHVCVDBURUBVKV
-      JVHVKVCAGVJVHUCCAUDVCAVDBUESUFSUGUHDABUIUJUMBURUKULCDUSUNUOUP $.
+      ( vx vy cfv c0 wceq csn cres wfun wn cv wbr wmo wal weu eumo wcel sylbi
+      wa brres wb elsn breq1 biimpac moimi tz6.12-2 nsyl4 alrimiv dffun6 sylibr
+      syl con1i ) ABEFGZBAHZIZJZUNKZCLZDLZUPMZDNZCOUQURVBCAUTBMZDPZVBUNVDVCDNVB
+      VCDQVAVCDVAUSUTBMZUSUORZTVCUSUTBUOUAVFVEVCVFUSAGVEVCUBCAUCUSAUTBUDSUESUFU
+      LDABUGUHUICDUPUJUKUM $.
   $}
 
   $( Function value of the empty set.  (Contributed by Stefan O'Rear,
@@ -50759,26 +50749,6 @@ $)
 
   ${
     $d x y A $.  $d y B $.  $d x y F $.  $d x y G $.  $d x ph $.
-    $( Equality of functions is determined by their values.  Exercise 4 of
-       [TakeutiZaring] p. 28.  (Contributed by set.mm contributors,
-       3-Aug-1994.)  (Revised by set.mm contributors, 5-Feb-2004.) $)
-    eqfnfv2 $p |- ( ( F Fn A /\ G Fn B ) -> ( F = G <->
-                 ( A = B /\ A. x e. A ( F ` x ) = ( G ` x ) ) ) ) $=
-      ( vy wfn wa wceq cv cfv wral wi wcel wb wal adantl fnopfvb syl5ib wn rgen
-      fndmu eqidd jctir fneq1 anbi1d fveq1 eqeq1d ralbidv anbi2d imbi12d mpbiri
-      com12 fneq2 biimparc cop df-ral pm2.27 eqeq1 adantlr adantll bibi12d syld
-      expcom cdm fndm opeldm eleq2 con3d syl adantr impcom 2falsed a1dd pm2.61i
-      ex alrimdv alimdv syl5bi fnrel eqrelOLD syl2an sylibrd sylan2 exp32 imp4b
-      wrel impbid ) DBGZECGZHZDEIZBCIZAJZDKZWNEKZIZABLZHZWLWKWSWLWKWSMEBGZWJHZW
-      MWPWPIZABLZHZMXAWMXCBCEUBXBABWNBNZWPUCUAUDWLWKXAWSXDWLWIWTWJBDEUEUFWLWRXC
-      WMWLWQXBABWLWOWPWPWNDEUGUHUIUJUKULUMWIWJWMWRWLWIWJWMWRWLMZWJWMHWIWTXFWMWT
-      WJBCEUNUOWIWTHZWRWNFJZUPZDNZXIENZOZFPZAPZWLWRXEWQMZAPXGXNWQABUQXGXOXMAXGX
-      OXLFXEXGXOXLMZMXGXEXPXGXEHZXOWQXLXEXOWQMXGXEWQURQWQWOXHIZWPXHIZOXQXLWOWPX
-      HUSXQXRXJXSXKWIXEXRXJOWTBWNXHDRUTWTXEXSXKOWIBWNXHERVAVBSVCVDXETZXGXLXOXTX
-      GXLXTXGHXJXKXGXTXJTZWIXTYAMZWTWIDVEZBIZYBBDVFYDXJXEXJWNYCNYDXEWNXHDVGYCBW
-      NVHSVIVJVKVLXGXTXKTZWTXTYEMZWIWTEVEZBIZYFBEVFYHXKXEXKWNYGNYHXEWNXHEVGYGBW
-      NVHSVIVJQVLVMVPVNVOVQVRVSWIDWGEWGWLXNOWTBDVTBEVTAFDEWAWBWCWDWEWFWH $.
-
     $( Equality of functions is determined by their values.  Special case of
        Exercise 4 of [TakeutiZaring] p. 28 (with domain equality omitted).
        (The proof was shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed
@@ -50786,8 +50756,25 @@ $)
        22-Oct-2011.) $)
     eqfnfv $p |- ( ( F Fn A /\ G Fn A ) -> ( F = G <->
                  A. x e. A ( F ` x ) = ( G ` x ) ) ) $=
-      ( wfn wa wceq cv cfv wral eqfnfv2 eqid biantrur syl6bbr ) CBEDBEFCDGBBGZA
-      HZCIPDIGABJZFQABBCDKOQBLMN $.
+      ( vy wfn wa wceq cv cfv wcel wi wal wb adantl fnopfvb syl5ib cdm opeldm
+      wn wral fveq1 ralrimivw cop pm2.27 eqeq1 adantlr adantll syld expcom fndm
+      bibi12d eleq2d adantr con3d impcom 2falsed ex a1dd pm2.61i alrimdv alimdv
+      df-ral eqrel 3imtr4g impbid2 ) CBFZDBFZGZCDHZAIZCJZVKDJZHZABUAZVJVNABVKCD
+      UBUCVIVKBKZVNLZAMVKEIZUDZCKZVSDKZNZEMZAMVOVJVIVQWCAVIVQWBEVPVIVQWBLZLVIVP
+      WDVIVPGZVQVNWBVPVQVNLVIVPVNUEOVNVLVRHZVMVRHZNWEWBVLVMVRUFWEWFVTWGWAVGVPWF
+      VTNVHBVKVRCPUGVHVPWGWANVGBVKVRDPUHULQUIUJVPTZVIWBVQWHVIWBWHVIGVTWAVIWHVTT
+      VIVTVPVGVTVPLVHVTVKCRZKVGVPVKVRCSVGWIBVKBCUKUMQUNUOUPVIWHWATVIWAVPVHWAVPL
+      VGWAVKDRZKVHVPVKVRDSVHWJBVKBDUKUMQOUOUPUQURUSUTVAVBVNABVCAECDVDVEVF $.
+
+    $( Equality of functions is determined by their values.  Exercise 4 of
+       [TakeutiZaring] p. 28.  (Contributed by set.mm contributors,
+       3-Aug-1994.)  (Revised by set.mm contributors, 5-Feb-2004.) $)
+    eqfnfv2 $p |- ( ( F Fn A /\ G Fn B ) -> ( F = G <->
+                 ( A = B /\ A. x e. A ( F ` x ) = ( G ` x ) ) ) ) $=
+      ( wfn wa wceq cv cfv wral dmeq fndm eqeqan12d syl5ib pm4.71rd wb biimparc
+      cdm fneq2 eqfnfv sylan2 anassrs pm5.32da bitrd ) DBFZECFZGZDEHZBCHZUIGUJA
+      IZDJUKEJHABKZGUHUIUJUIDSZESZHUHUJDELUFUGUMBUNCBDMCEMNOPUHUJUIULUFUGUJUIUL
+      QZUGUJGUFEBFZUOUJUPUGBCETRABDEUAUBUCUDUE $.
 
     $d x B $.
     $( Derive equality of functions from equality of their values.
@@ -51051,21 +51038,18 @@ $)
        20-Mar-2007.) $)
     dff3 $p |- ( F : A --> B <->
               ( F C_ ( A X. B ) /\ A. x e. A E! y x F y ) ) $=
-      ( wss cv wbr wral wa wcel cdm adantr sylibr syl sylanbrc crn wrel wal wi
-      wf cxp weu fssxp wex wmo cfv cop wfun ffun eleq2d biimpar funfvop syl2anc
-      fdm df-br fvex breq2 spcev funmo eu5 ralrimiva jca wfn wceq relall df-ral
-      relss mpi wn dmss dmxpss syl6ss breldm ssel syl5 exlimdv con3d df-mo syl6
-      pm2.21 a1dd pm2.27 eumo pm2.61d2 alimdv syl5bi imp dffun6OLD euex exlimiv
-      ralimi dfss3 anim12i eqss df-fn rnss rnxpss df-f impbii ) CDEUAZECDUBZFZA
-      GZBGZEHZBUCZACIZJZXAXCXHCDEUDXAXGACXAXDCKZJZXFBUEZXFBUFZXGXKXDXDEUGZEHZXL
-      XKXDXNUHEKZXOXKEUIZXDELZKZXPXAXQXJCDEUJZMXAXSXJXAXRCXDCDEUOUKULXDEUMUNXDX
-      NEUPNXFXOBXNXDEUQXEXNXDEURUSOXAXMXJXAXQXMXTBXDEUTOMXFBVAPVBVCXIECVDZEQZDF
-      ZXAXIXQXRCVEZYAXIERZXMASZXQXCYEXHXCXBRYEXBVFEXBVHVIMXCXHYFXHXJXGTZASXCYFX
-      GACVGXCYGXMAXCXJYGXMTXCXJVJZXMYGXCYHXLVJZXMXCXLXJXCXRCFZXLXJTXCXRXBLCEXBV
-      KCDVLVMZYJXFXJBXFXSYJXJXDXEEVNZXRCXDVOVPVQOVRYIXLXGTXMXLXGWAXFBVSNVTWBXJY
-      GXGXMXJXGWCXFBWDVTWEWFWGWHABEWIPXIYJCXRFZJYDXCYJXHYMYKXHXSACIYMXGXSACXGXL
-      XSXFBWJXFXSBYLWKOWLACXRWMNWNXRCWONECWPPXCYCXHXCYBXBQDEXBWQCDWRVMMCDEWSPWT
-      $.
+      ( wss cv wral wa wcel cdm adantr sylanbrc crn wal wi syl6ss sylibr syl6
+      wn wf cxp wbr weu fssxp wex wmo eleq2d biimpar eldm sylib wfun ffun funmo
+      fdm syl eu5 ralrimiva jca wfn wceq df-ral dmss dmxpss sseld syl5bir con3d
+      pm2.21 df-mo a1dd pm2.27 eumo pm2.61d2 alimdv syl5bi dffun6 ralimi adantl
+      imp euex dfss3 eqssd df-fn rnss rnxpss df-f impbii ) CDEUAZECDUBZFZAGZBGE
+      UCZBUDZACHZIZWHWJWNCDEUEWHWMACWHWKCJZIZWLBUFZWLBUGZWMWQWKEKZJZWRWHXAWPWHW
+      TCWKCDEUOUHUIBWKEUJZUKWQEULZWSWHXCWPCDEUMLBWKEUNUPWLBUQMURUSWOECUTZENZDFZ
+      WHWOXCWTCVAXDWOWSAOZXCWJWNXGWNWPWMPZAOWJXGWMACVBWJXHWSAWJWPXHWSPWJWPTZWSX
+      HWJXIWRTZWSWJWRWPWRXAWJWPXBWJWTCWKWJWTWIKCEWIVCCDVDQZVEVFVGXJWRWMPWSWRWMV
+      HWLBVIRSVJWPXHWMWSWPWMVKWLBVLSVMVNVOVSABEVPRWOWTCWJWTCFWNXKLWNCWTFZWJWNXA
+      ACHXLWMXAACWMWRXAWLBVTXBRVQACWTWARVRWBECWCMWJXFWNWJXEWINDEWIWDCDWEQLCDEWF
+      MWG $.
 
     $( Alternate definition of a mapping.  (Contributed by set.mm contributors,
        20-Mar-2007.) $)
@@ -59501,8 +59485,7 @@ $)
     $( Cardinal less than or equal is a relationship.  (Contributed by SF,
        24-Feb-2015.) $)
     rellec $p |- Rel <_c $=
-      ( vx vy vb va cv wss wrex clec df-lec relopabi ) AEBEFBCEGADEGDCHABDCIJ
-      $.
+      ( clec relall ) AB $.
   $}
 
   ${
