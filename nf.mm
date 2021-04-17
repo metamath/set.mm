@@ -45556,20 +45556,6 @@ $)
   $}
 
   ${
-    $d y A $.  $d x y $.
-    nfrel.1 $e |- F/_ x A $.
-    $( Bound-variable hypothesis builder for a relation.  (Contributed by NM,
-       31-Jan-2004.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
-    nfrel $p |- F/ x Rel A $=
-      ( wrel cvv cxp wss df-rel nfcv nfss nfxfr ) BDBEEFZGABHABLCALIJK $.
-  $}
-
-  $( Subclass theorem for relation predicate.  Theorem 2 of [Suppes] p. 58.
-     (Contributed by NM, 15-Aug-1994.) $)
-  relss $p |- ( A C_ B -> ( Rel B -> Rel A ) ) $=
-    ( wss cvv cxp wrel sstr2 df-rel 3imtr4g ) ABCBDDEZCAJCBFAFABJGBHAHI $.
-
-  ${
     $d x y z A $.  $d x y z B $.
     $( A subclass relationship depends only on a relation's ordered pairs.
        Theorem 3.2(i) of [Monk1] p. 33.  (The proof was shortened by Andrew
@@ -45742,51 +45728,6 @@ $)
     $}
   $}
 
-  $( The union of two relations is a relation.  Compare Exercise 5 of
-     [TakeutiZaring] p. 25.  (Contributed by NM, 12-Aug-1994.) $)
-  relun $p |- ( Rel ( A u. B ) <-> ( Rel A /\ Rel B ) ) $=
-    ( cvv cxp wss wa cun wrel unss df-rel anbi12i 3bitr4ri ) ACCDZEZBMEZFABGZME
-    AHZBHZFPHABMIQNROAJBJKPJL $.
-
-  $( A difference cutting down a relation is a relation.  (Contributed by NM,
-     31-Mar-1998.) $)
-  reldif $p |- ( Rel A -> Rel ( A \ B ) ) $=
-    ( cdif wss wrel wi difss relss ax-mp ) ABCZADAEJEFABGJAHI $.
-
-  ${
-    $d y A $.  $d y B $.  $d x y $.
-    $( An indexed union is a relation iff each member of its indexed family is
-       a relation.  (Contributed by set.mm contributors, 19-Dec-2008.) $)
-    reliun $p |- ( Rel U_ x e. A B <-> A. x e. A Rel B ) $=
-      ( vy ciun wrel cv wcel wrex cab cvv cxp wss wral df-iun releqi df-rel wal
-      wi 3bitri abss dfss2 bitri ralbii ralcom4 r19.23v albii bitr4i ) ABCEZFDG
-      ZCHZABIZDJZFUMKKLZMZCFZABNZUIUMADBCOPUMQUOULUJUNHZSZDRZUQULDUNUAUQUKURSZD
-      RZABNVAABNZDRUTUPVBABUPCUNMVBCQDCUNUBUCUDVAADBUEVCUSDUKURABUFUGTUHT $.
-  $}
-
-  $( An indexed intersection is a relation if if at least one of the member of
-     the indexed family is a relation.  (Contributed by set.mm contributors,
-     8-Mar-2014.) $)
-  reliin $p |- ( E. x e. A Rel B -> Rel |^|_ x e. A B ) $=
-    ( cvv cxp wss wrex ciin wrel iinss df-rel rexbii 3imtr4i ) CDDEZFZABGABCHZN
-    FCIZABGPIABCNJQOABCKLPKM $.
-
-  ${
-    $d x A $.
-    $( The union of a class is a relation iff any member is a relation.
-       Exercise 6 of [TakeutiZaring] p. 25 and its converse.  (Contributed by
-       NM, 13-Aug-2004.) $)
-    reluni $p |- ( Rel U. A <-> A. x e. A Rel x ) $=
-      ( cuni wrel cv ciun wral uniiun releqi reliun bitri ) BCZDABAEZFZDMDABGLN
-      ABHIABMJK $.
-
-    $( The intersection of a class is a relation if at least one member is a
-       relation.  (Contributed by NM, 8-Mar-2014.) $)
-    relint $p |- ( E. x e. A Rel x -> Rel |^| A ) $=
-      ( cv wrel wrex ciin cint reliin intiin releqi sylibr ) ACZDABEABLFZDBGZDA
-      BLHNMABIJK $.
-  $}
-
   $( The empty set is a relation.  (Contributed by NM, 26-Apr-1998.) $)
   rel0 $p |- Rel (/) $=
     ( c0 wrel cvv cxp wss 0ss df-rel mpbir ) ABACCDZEIFAGH $.
@@ -45813,6 +45754,7 @@ $)
   ${
     $d w x y z A $.  $d x y B $.  $d x y C $.  $d x y D $.  $d ph z w $.
     $d ps z w $.
+
     $( A relation expressed as an ordered pair abstraction.  (Contributed by
        set.mm contributors, 11-Dec-2006.) $)
     opabid2 $p |- ( Rel A -> { <. x , y >. | <. x , y >. e. A } = A ) $=
@@ -47912,9 +47854,10 @@ $)
     $( Composition with the empty set.  (Contributed by set.mm contributors,
        24-Apr-2004.) $)
     co01 $p |- ( (/) o. A ) = (/) $=
-      ( ccnv ccom cnv0 coeq2i co02 eqtr2i cnvco 3eqtr4i cnveqi wrel wceq dfrel2
-      c0 rel0 mpbi relco 3eqtr3ri ) NBZBZNACZBZBZNUASUBNABZSCZSUBUEUDNCNSNUDDEU
-      DFGDNAHIJNKTNLONMPUAKUCUALNAQUAMPR $.
+      ( vx vy c0 ccom wceq cv wcel wn eq0 cproj1 wbr cproj2 wex cop df-br mtbir
+      wa noel intnan nex opeq eleq1i opelco bitri mpgbir ) DAEZDFBGZUGHZIBBUGJU
+      IUHKZCGZALZUKUHMZDLZRZCNZUOCUNULUNUKUMOZDHUQSUKUMDPQTUAUIUJUMOZUGHUPUHURU
+      GUHUBUCCUJUMDAUDUEQUF $.
 
     $( Composition with the identity relation.  Part of Theorem 3.7(i) of
        [Monk1] p. 36.  (Contributed by set.mm contributors, 22-Apr-2004.)
@@ -47995,26 +47938,6 @@ $)
       wcel ax-gen mpgbir ) AADZAEZFZGBHZCHZIZAQZUEUBQZJZCKBBCAUBLUHCUFUCTQUDUAQ
       UGUCUDAMUCUDANUCUDTUAOPRS $.
       
-  $}
-
-  ${
-    $d x y z w $.
-    $( ` Swap ` is a relationship.  (Contributed by set.mm contributors,
-       8-Jan-2015.) $)
-    relswap $p |- Rel Swap $=
-      ( vx vz vw vy cv cop wceq wa wex cswap df-swap relopabi ) AEBEZCEZFGDENMF
-      GHCIBIADJADBCKL $.
-  $}
-
-  ${
-    $d x y z w $.
-    $( ` Swap ` subset relationship.  (Contributed by set.mm contributors,
-       8-Jan-2015.) $)
-    swapssvvvv $p |- Swap C_ ( ( _V X. _V ) X. ( _V X. _V ) ) $=
-      ( vx vy vz vw cswap cvv cxp cv cop wcel wceq elswap opelxp mpbir2an eleq1
-      wex vex mpbiri exlimivv sylbi relssi ) ABEFFGZUBGZAHBHIZEJUDCHZDHZIZUFUEI
-      ZIZKZDPCPUDUCJZCDUDLUJUKCDUJUKUIUCJZULUGUBJZUHUBJZUMUEFJZUFFJZCQZDQZUEUFF
-      FMNUNUPUOURUQUFUEFFMNUGUHUBUBMNUDUIUCORSTUA $.
   $}
 
   ${
@@ -55021,12 +54944,6 @@ $)
       ( cvv wcel ctxp txpexg mp2an ) AEFBEFABGEFCDABEEHI $.
   $}
 
-  $( A tail cross product is a relationship.  (Contributed by SF,
-     24-Feb-2015.) $)
-  reltxp $p |- Rel ( A (x) B ) $=
-    ( ctxp wrel c1st ccnv ccom c2nd cin wss inss1 relco relss mp2 df-txp releqi
-    mpbir ) ABCZDEFZAGZHFBGZIZDZUBTJTDUCTUAKSALUBTMNRUBABOPQ $.
-
   ${
     $d A a $.  $d a b $.  $d A b $.  $d a x $.  $d A x $.  $d a y $.  $d A y $.
     $d B a $.  $d B b $.  $d b x $.  $d B x $.  $d b y $.  $d B y $.  $d C a $.
@@ -55758,14 +55675,6 @@ $)
        24-Feb-2015.) $)
     pprodex $p |- PProd ( A , B ) e. _V $=
       ( cvv wcel cpprod pprodexg mp2an ) AEFBEFABGEFCDABEEHI $.
-  $}
-
-  ${
-    $( Parallel product is a relationship.  (Contributed by SF,
-       24-Feb-2015.) $)
-    relpprod $p |- Rel PProd ( A , B ) $=
-      ( cpprod wrel c1st ccom c2nd ctxp reltxp df-pprod releqi mpbir ) ABCZDAEF
-      ZBGFZHZDNOIMPABJKL $.
   $}
 
   ${
@@ -58276,13 +58185,6 @@ $)
   $}
 
   ${
-    $d x y f $.  $d x y f $.
-    $( Equinumerosity is a relation.  (Contributed by NM, 28-Mar-1998.) $)
-    relen $p |- Rel ~~ $=
-      ( vx vy vf cv wf1o wex cen df-en relopabi ) ADBDCDECFABGABCHI $.
-  $}
-
-  ${
     $d A f x y $.  $d B f x y $.
     $( Equinumerosity relationship.  (Contributed by SF, 23-Feb-2015.) $)
     bren $p |- ( A ~~ B <-> E. f f : A -1-1-onto-> B ) $=
@@ -59457,14 +59359,6 @@ $)
     brdif bitri ideqg necon3bbid anbi2d syl5bb pm5.21nii ) ABCDZBEFZABGDZABHZIZ
     UEAEFZUFABCJKUGUFUHUGUJUFABGJKLUEUGABMDZNZIZUFUIUEABGMOZDUMABCUNPQABGMRSUFU
     LUHUGUFUKABABETUAUBUCUD $.
-
-  ${
-    $d a b x y $.
-    $( Cardinal less than or equal is a relationship.  (Contributed by SF,
-       24-Feb-2015.) $)
-    rellec $p |- Rel <_c $=
-      ( clec relall ) AB $.
-  $}
 
   ${
     $d a b $.  $d a t $.  $d a u $.  $d a x $.  $d a y $.  $d b t $.  $d b u $.
