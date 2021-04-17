@@ -47876,18 +47876,6 @@ $)
       EZAEZDNOBEZCOBCOBAFPBOGHOIJMAKL $.
   $}
 
-  ${
-    $d A x $.  $d B x $.  $d R x $.
-    $( Binary relationship of composition with identity.  (Contributed by
-       set.mm contributors, 9-Mar-2015.) $)
-    brcoi1 $p |- ( A ( _I o. R ) B <-> A R B ) $=
-      ( vx cid ccom wbr cvv wcel brex simprd cv wceq wa wex brco ancom wb bitri
-      vex ideqg2 ax-mp anbi1i exbii breq2 ceqsexgv syl5bb pm5.21nii ) ABECFZGZB
-      HIZABCGZUJAHIZUKABUIJKULUMUKABCJKUJDLZBMZAUNCGZNZDOZUKULUJUPUNBEGZNZDOURD
-      ABECPUTUQDUTUSUPNUQUPUSQUSUOUPUNHIUSUORDTUNBHUAUBUCSUDSUPULDBHUNBACUEUFUG
-      UH $.
-  $}
-
   $( Composition with a restricted identity relation.  (Contributed by FL,
      19-Jun-2011.) (Revised by Scott Fenton, 17-Apr-2021.) $)
   coires1 $p |- ( A o. ( _I |` B ) ) = ( A |` B ) $=
@@ -55943,14 +55931,15 @@ $)
     fnfullfunlem1 $p |- ( A ( ( _I o. F ) \ ( ~ _I o. F ) ) B <->
         ( A F B /\ A. x ( A F x -> x = B ) ) ) $=
       ( vy cid ccom wbr cvv wcel cv wceq wi wal wa brex simprd wb breq2 wn cdif
-      ccompl adantr weq eqeq2 imbi2d albidv anbi12d bibi12d brcoi1 wex brco cop
-      brdif df-br opex elcompl ideq bitr3i xchbinx bitri anbi2i exanali 3bitrri
-      vex exbii con1bii anbi12i vtoclg pm5.21nii ) BCFDGZFUBZDGZUAZHZCIJZBCDHZB
-      AKZDHZVRCLZMZANZOZVOBIJZVPBCVNPQVQVPWBVQWDVPBCDPQUCBEKZVNHZBWEDHZVSAEUDZM
-      ZANZOZRVOWCRECIWECLZWFVOWKWCWECBVNSWLWGVQWJWBWECBDSWLWIWAAWLWHVTVSWECVRUE
-      UFUGUHUIWFBWEVKHZBWEVMHZTZOWKBWEVKVMUNWMWGWOWJBWEDUJWJWNWNVSVRWEVLHZOZAUK
-      VSWHTZOZAUKWJTABWEVLDULWQWSAWPWRVSWPVRWEUMZVLJZWRVRWEVLUOXAWTFJZWHWTFVRWE
-      AVEEVEZUPUQXBVRWEFHWHVRWEFUOVRWEXCURUSUTVAVBVFVSWHAVCVDVGVHVAVIVJ $.
+      ccompl adantr weq eqeq2 imbi2d albidv anbi12d bibi12d brdif coi2 wex brco
+      breqi cop df-br vex opex elcompl ideq bitr3i xchbinx bitri anbi2i exanali
+      exbii 3bitrri con1bii anbi12i vtoclg pm5.21nii ) BCFDGZFUBZDGZUAZHZCIJZBC
+      DHZBAKZDHZVSCLZMZANZOZVPBIJZVQBCVOPQVRVQWCVRWEVQBCDPQUCBEKZVOHZBWFDHZVTAE
+      UDZMZANZOZRVPWDRECIWFCLZWGVPWLWDWFCBVOSWMWHVRWKWCWFCBDSWMWJWBAWMWIWAVTWFC
+      VSUEUFUGUHUIWGBWFVLHZBWFVNHZTZOWLBWFVLVNUJWNWHWPWKBWFVLDDUKUNWKWOWOVTVSWF
+      VMHZOZAULVTWITZOZAULWKTABWFVMDUMWRWTAWQWSVTWQVSWFUOZVMJZWSVSWFVMUPXBXAFJZ
+      WIXAFVSWFAUQEUQZURUSXCVSWFFHWIVSWFFUPVSWFXDUTVAVBVCVDVFVTWIAVEVGVHVIVCVJV
+      K $.
   $}
 
   ${
