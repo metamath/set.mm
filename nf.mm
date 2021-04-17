@@ -46385,11 +46385,6 @@ $)
   dmcnvcnv $p |- dom `' `' A = dom A $=
     ( cdm ccnv crn df-dm dfrn4 eqtr2i ) ABACZDHCBAEHFG $.
 
-  $( The range of the double converse of a class.  (Contributed by set.mm
-     contributors, 8-Apr-2007.) $)
-  rncnvcnv $p |- ran `' `' A = ran A $=
-    ( crn ccnv cdm dfrn4 df-dm eqtr2i ) ABACZDHCBAEHFG $.
-
   ${
     $d x y A $.  $d x y B $.
     $( The first member of an ordered pair in a relation belongs to the domain
@@ -47730,7 +47725,7 @@ $)
   $( The range of a universal restriction.  (Contributed by set.mm
      contributors, 14-May-2008.) $)
   rnresv $p |- ran ( A |` _V ) = ran A $=
-    ( ccnv crn cvv cres cnvcnv2 rneqi rncnvcnv eqtr3i ) ABBZCADEZCACJKAFGAHI $.
+    ( crn cvv cima cres df-rn dfima3 eqtr2i ) ABACDACEBAFACGH $.
 
   $( The restriction of the double converse of a class.  (The proof was
      shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
