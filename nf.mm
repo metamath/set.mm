@@ -63301,10 +63301,6 @@ htmldef "o." as
     " <IMG SRC='circ.gif' WIDTH=8 HEIGHT=19 TITLE='o.' ALIGN=TOP> ";
   althtmldef "o." as ' <FONT FACE=sans-serif>&#8728;</FONT> ';
   latexdef "o." as "\circ";
-htmldef "Rel" as
-    "<IMG SRC='_rel.gif' WIDTH=22 HEIGHT=19 TITLE='Rel' ALIGN=TOP> ";
-  althtmldef "Rel" as 'Rel ';
-  latexdef "Rel" as "{\rm Rel}";
 htmldef
     "Fun" as "<IMG SRC='_fun.gif' WIDTH=25 HEIGHT=19 TITLE='Fun' ALIGN=TOP> ";
   althtmldef "Fun" as 'Fun ';
