@@ -55701,11 +55701,11 @@ $)
 
   $( The converse of a parallel product.  (Contributed by SF, 24-Feb-2015.) $)
   cnvpprod $p |- `' PProd ( A , B ) = PProd ( `' A , `' B ) $=
-    ( vx vy cpprod ccnv cv cproj1 cproj2 cop wbr wa brcnv anbi12i qrpprod bitri
-    3bitr4ri opeq breq12i 3bitr4i eqbrriv ) CDABEZFZAFZBFZEZCGZHZUGIZJZDGZHZUKI
-    ZJZUCKZUJUNUFKZUGUKUCKUGUKUFKUHULUDKZUIUMUEKZLULUHAKZUMUIBKZLZUPUOUQUSURUTU
-    HULAMUIUMBMNUHUIULUMUDUEOUOUNUJUBKVAUJUNUBMULUMUHUIABOPQUGUJUKUNUCUGRZUKRZS
-    UGUJUKUNUFVBVCSTUA $.
+    ( c1st ccnv ccom cin cpprod cnvin cnvco cnvcnv coeq12i coass 3eqtri ineq12i
+    c2nd eqtri ctxp df-pprod df-txp cnveqi 3eqtr4i ) CDZACEZEZODZBOEZEZFZDZUBAD
+    ZCEZEZUEBDZOEZEZFZABGZDUJUMGZUIUDDZUGDZFUPUDUGHUSULUTUOUSUCDZUBDZEUBUJEZCEU
+    LUBUCIVAVCVBCACICJKUBUJCLMUTUFDZUEDZEUEUMEZOEUOUEUFIVDVFVEOBOIOJKUEUMOLMNPU
+    QUHUQUCUFQUHABRUCUFSPTURUKUNQUPUJUMRUKUNSPUA $.
 
   $( The range of a parallel product.  (Contributed by SF, 24-Feb-2015.) $)
   rnpprod $p |- ran PProd ( A , B ) = ( ran A X. ran B ) $=
