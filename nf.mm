@@ -49392,11 +49392,6 @@ $)
   f1fun $p |- ( F : A -1-1-> B -> Fun F ) $=
     ( wf1 wfn wfun f1fn fnfun syl ) ABCDCAECFABCGACHI $.
 
-  $( A one-to-one onto mapping is a relation.  (Contributed by set.mm
-     contributors, 8-Mar-2014.) $)
-  f1rel $p |- ( F : A -1-1-> B -> Rel F ) $=
-    ( wf1 wfn wrel f1fn fnrel syl ) ABCDCAECFABCGACHI $.
-
   $( The domain of a one-to-one mapping.  (Contributed by set.mm contributors,
      8-Mar-2014.) $)
   f1dm $p |- ( F : A -1-1-> B -> dom F = A ) $=
@@ -55713,13 +55708,11 @@ $)
 
   $( The converse of a parallel product.  (Contributed by SF, 24-Feb-2015.) $)
   cnvpprod $p |- `' PProd ( A , B ) = PProd ( `' A , `' B ) $=
-    ( c1st ccnv ccom c2nd cin cpprod cnvco wrel wceq cvv wfo wf fof frel dfrel2
-    mp2b mpbi eqtri cnvin cxp 1stfoOLD coeq12i coass 3eqtri 2ndfoOLD ineq12i df-pprod
-    ctxp df-txp cnveqi 3eqtr4i ) CDZACEZEZFDZBFEZEZGZDZUNADZCEZEZUQBDZFEZEZGZAB
-    HZDVBVEHZVAUPDZUSDZGVHUPUSUAVKVDVLVGVKUODZUNDZEUNVBEZCEVDUNUOIVMVOVNCACICJZ
-    VNCKLLUBZLCMVQLCNVPUCVQLCOVQLCPRCQSUDUNVBCUEUFVLURDZUQDZEUQVEEZFEVGUQURIVRV
-    TVSFBFIFJZVSFKVQLFMVQLFNWAUGVQLFOVQLFPRFQSUDUQVEFUEUFUHTVIUTVIUOURUJUTABUIU
-    OURUKTULVJVCVFUJVHVBVEUIVCVFUKTUM $.
+    ( vx vy cpprod ccnv cv cproj1 cproj2 cop wbr wa brcnv anbi12i qrpprod bitri
+    3bitr4ri opeq breq12i 3bitr4i eqbrriv ) CDABEZFZAFZBFZEZCGZHZUGIZJZDGZHZUKI
+    ZJZUCKZUJUNUFKZUGUKUCKUGUKUFKUHULUDKZUIUMUEKZLULUHAKZUMUIBKZLZUPUOUQUSURUTU
+    HULAMUIUMBMNUHUIULUMUDUEOUOUNUJUBKVAUJUNUBMULUMUHUIABOPQUGUJUKUNUCUGRZUKRZS
+    UGUJUKUNUFVBVCSTUA $.
 
   $( The range of a parallel product.  (Contributed by SF, 24-Feb-2015.) $)
   rnpprod $p |- ran PProd ( A , B ) = ( ran A X. ran B ) $=
@@ -62747,12 +62740,6 @@ $)
       ZCHZIUMJZUJLZMZOUHULOFBDUMBPZUNUHUQULURCCPUNUHPCQUMBCCRSURUPUKIURUOUIUJUM
       BTUAUBUCUNUMCUNQFUDUEUFUG $.
 
-    $( The finite recursive function generator gives a relationship.
-       (Contributed by Scott Fenton, 31-Jul-2019.) $)
-    relfrecg $p |- ( G e. V -> Rel F ) $=
-      ( vg wcel cfrec wrel cv wceq eqid freceq12 mpan2 releqd vex vtoclg releqi
-      relfrec sylibr ) BDGBCHZIZAIFJZCHZIUBFBDUCBKZUDUAUECCKUDUAKCLUCBCCMNOUDUC
-      CUDLFPSQAUAERT $.
   $}
 
   ${
