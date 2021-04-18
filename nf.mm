@@ -46269,13 +46269,12 @@ $)
       LZVBVEVGUOCFZRVIVGULBFVJULBMUKBCUCUDUOCMUEVFVABUTULUINSOVHVDCVCUOUJNSOUFU
       LBHPUOCHPQURUMHBCAUGTUSUPHBCAUHTQ $.
 
-    $( A relation is empty iff its domain is empty.  (Contributed by set.mm
-       contributors, 15-Sep-2004.) $)
-    reldm0 $p |- ( Rel A -> ( A = (/) <-> dom A = (/) ) ) $=
-      ( vx vy wrel c0 wceq cv cop wcel wb wal cdm rel0 eqrelOLD mpan2 eq0 eldm2
-      wn wex albii notbii alnex noel nbn 3bitr2i bitr2i syl6bb ) ADZAEFZBGZCGHZ
-      AIZUKEIZJZCKZBKZALZEFZUHEDUIUPJMBCAENOURUJUQIZRZBKUPBUQPUTUOBUTULCSZRULRZ
-      CKUOUSVACUJAQUAULCUBVBUNCUMULUKUCUDTUETUFUG $.
+    $( A class is empty iff its domain is empty.  (Contributed by set.mm
+       contributors, 15-Sep-2004.) (Revised by Scott Fenton, 17-Apr-2021.) $)
+    dmeq0 $p |- ( A = (/) <-> dom A = (/) ) $=
+      ( vx vy cv cdm wcel wn wal cop c0 wb wceq wex eldm2 notbii alnex noel nbn
+      albii 3bitr2i eq0 eqrel 3bitr4ri ) BDZAEZFZGZBHUDCDIZAFZUHJFZKZCHZBHUEJLA
+      JLUGULBUGUICMZGUIGZCHULUFUMCUDANOUICPUNUKCUJUIUHQRSTSBUEUABCAJUBUC $.
   $}
 
   ${
@@ -46670,13 +46669,10 @@ $)
   rn0 $p |- ran (/) = (/) $=
     ( c0 cdm wceq crn dm0 dm0rn0 mpbi ) ABACADACEAFG $.
 
-  ${
-    $d x y A $.
-    $( A relation is empty iff its range is empty.  (Contributed by set.mm
-       contributors, 15-Sep-2004.) $)
-    relrn0 $p |- ( Rel A -> ( A = (/) <-> ran A = (/) ) ) $=
-      ( wrel c0 wceq cdm crn reldm0 dm0rn0 syl6bb ) ABACDAECDAFCDAGAHI $.
-  $}
+  $( A relation is empty iff its range is empty.  (Contributed by set.mm
+     contributors, 15-Sep-2004.) (Revised by Scott Fenton, 17-Apr-2021.) $)
+  rneq0 $p |- ( A = (/) <-> ran A = (/) ) $=
+    ( c0 wceq cdm crn dmeq0 dm0rn0 bitri ) ABCADBCAEBCAFAGH $.
 
   ${
     $d x y z A $.  $d x y z B $.
@@ -48843,9 +48839,9 @@ $)
   $( A function restricted to a class disjoint with its domain is empty.
      (Contributed by set.mm contributors, 23-Sep-2004.) $)
   fnresdisj $p |- ( F Fn A -> ( ( A i^i B ) = (/) <-> ( F |` B ) = (/) ) ) $=
-    ( cres c0 wceq cdm wfn wrel wb relres reldm0 ax-mp dmres incom eqtri ineq1d
-    cin fndm syl5eq eqeq1d syl5rbb ) CBDZEFZUCGZEFZCAHZABRZEFUCIUDUFJCBKUCLMUGU
-    EUHEUGUECGZBRZUHUEBUIRUJCBNBUIOPUGUIABACSQTUAUB $.
+    ( cres c0 wceq cdm wfn dmeq0 dmres incom eqtri ineq1d syl5eq eqeq1d syl5rbb
+    cin fndm ) CBDZEFSGZEFCAHZABQZEFSIUATUBEUATCGZBQZUBTBUCQUDCBJBUCKLUAUCABACR
+    MNOP $.
 
   $( Membership in two functions restricted by each other's domain.
      (Contributed by set.mm contributors, 8-Aug-1994.) $)
@@ -48916,9 +48912,8 @@ $)
        Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors,
        15-Apr-1998.)  (Revised by set.mm contributors, 18-Sep-2011.) $)
     fn0 $p |- ( F Fn (/) <-> F = (/) ) $=
-      ( wfn wceq wrel cdm fnrel fndm reldm0 biimpar syl2anc wfun fun0 dm0 df-fn
-      c0 mpbir2an fneq1 mpbiri impbii ) AOBZAOCZTADZAEOCZUAOAFOAGUBUAUCAHIJUATO
-      OBZUDOKOEOCLMOONPOAOQRS $.
+      ( c0 wfn wceq cdm fndm dmeq0 sylibr wfun fun0 df-fn mpbir2an fneq1 mpbiri
+      dm0 impbii ) ABCZABDZQAEBDRBAFAGHRQBBCZSBIBEBDJOBBKLBABMNP $.
   $}
 
   $( A class that is disjoint with the domain of a function has an empty image
@@ -49529,10 +49524,9 @@ $)
   $( A nonzero constant function is onto.  (Contributed by set.mm contributors,
      12-Jan-2007.) $)
   foconst $p |- ( ( F : A --> { B } /\ F =/= (/) ) -> F : A -onto-> { B } ) $=
-    ( csn wf c0 wne wa crn wceq wfo wn wrel wb frel relrn0 necon3abid syl wss
-    wo frn sssn sylib ord sylbid imdistani dffo2 sylibr ) ABDZCEZCFGZHUJCIZUIJZ
-    HAUICKUJUKUMUJUKULFJZLZUMUJCMZUKUONAUICOUPUNCFCPQRUJUNUMUJULUISUNUMTAUICUAU
-    LBUBUCUDUEUFAUICUGUH $.
+    ( csn wf c0 wne wa crn wceq wfo wn rneq0 necon3abii wss frn sssn sylib ord
+    wo syl5bi imdistani dffo2 sylibr ) ABDZCEZCFGZHUFCIZUEJZHAUECKUFUGUIUGUHFJZ
+    LUFUIUJCFCMNUFUJUIUFUHUEOUJUITAUECPUHBQRSUAUBAUECUCUD $.
 
   $( Equality theorem for one-to-one onto functions.  (Contributed by set.mm
      contributors, 10-Feb-1997.) $)
@@ -51305,14 +51299,13 @@ $)
      contributors, 27-Nov-2007.) $)
   fconst5 $p |- ( ( F Fn A /\ A =/= (/) ) -> ( F = ( A X. { B } ) <->
                  ran F = { B } ) ) $=
-    ( wfn c0 wne wa csn cxp wceq crn wi eqeq2d syl5ib adantl cvv adantrd adantr
-    rneq wb rnxp wcel wf wfo df-fo fof sylbir fconst2g exp3a fnrel snprc relrn0
-    wn wrel biimprd eqeq2 xpeq2 xp0 syl6eq 3imtr4d ex sylbi syl5 pm2.61i impbid
-    ) CADZAEFZGZCABHZIZJZCKZVIJZVGVKVMLVFVKVLVJKZJVGVMCVJSVGVNVIVLAVIUAMNOBPUBZ
-    VHVMVKLZLVOVFVPVGVOVFVMVKVFVMGZAVICUCZVOVKVQAVICUDVRAVICUEAVICUFUGABPCUHNUI
-    QVOUMZVFVPVGVFCUNZVSVPACUJVSVIEJZVTVPLBUKWAVTVPWAVTGVLEJZCEJZVMVKVTWBWCLWAV
-    TWCWBCULUOOWAVMWBTVTVIEVLUPRWAVKWCTVTWAVJECWAVJAEIEVIEAUQAURUSMRUTVAVBVCQVD
-    VE $.
+    ( wfn c0 wne wa csn cxp wceq crn wi rneq rnxp eqeq2d syl5ib adantl cvv wcel
+    wf wfo df-fo fof sylbir fconst2g exp3a adantrd wn wb rneq0 a1i snprc biimpi
+    xpeq2d xp0 syl6eq 3bitr4d biimprd a1d pm2.61i impbid ) CADZAEFZGZCABHZIZJZC
+    KZVEJZVCVGVILVBVGVHVFKZJVCVICVFMVCVJVEVHAVENOPQBRSZVDVIVGLZLVKVBVLVCVKVBVIV
+    GVBVIGZAVECTZVKVGVMAVECUAVNAVECUBAVECUCUDABRCUEPUFUGVKUHZVLVDVOVGVIVOCEJZVH
+    EJZVGVIVPVQUIVOCUJUKVOVFECVOVFAEIEVOVEEAVOVEEJBULUMZUNAUOUPOVOVEEVHVROUQURU
+    SUTVA $.
 
   ${
     $d x y z A $.  $d x y z B $.  $d x y z F $.
