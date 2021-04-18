@@ -45011,7 +45011,7 @@ $)
     df-xp $a |- ( A X. B ) = { <. x , y >. | ( x e. A /\ y e. B ) } $.
 
     $( Define the relation predicate.  Definition 6.4(1) of [TakeutiZaring]
-       p. 23.  For alternate definitions, see ~ dfrel2 .
+       p. 23.
        (Contributed by SF, 5-Jan-2015.) $)
     df-rel $a |- ( Rel A <-> A C_ ( _V X. _V ) ) $.
 
@@ -46311,12 +46311,6 @@ $)
     ( cxp wceq cdm dmeq dmxpid 3eqtr3g xpeq12 anidms impbii ) AACZBBCZDZABDZNLE
     MEABLMFAGBGHONABABIJK $.
 
-  $( The domain of the double converse of a class (which doesn't have to be a
-     relation as in ~ dfrel2 ).  (Contributed by set.mm contributors,
-     5-Feb-2015.) $)
-  dmcnvcnv $p |- dom `' `' A = dom A $=
-    ( cdm ccnv crn df-dm dfrn4 eqtr2i ) ABACZDHCBAEHFG $.
-
   ${
     $d x y A $.  $d x y B $.
     $( The first member of an ordered pair in a relation belongs to the domain
@@ -47476,19 +47470,11 @@ $)
 
   ${
     $d x y R $.
-    $( The double converse of a class is the original class.  (Contributed by Scott
-       Fenton, 17-Apr-2021.) $)
+    $( The double converse of a class is the original class.  (Contributed by
+       Scott Fenton, 17-Apr-2021.) $)
     cnvcnv $p |- `' `' R = R $=
       ( vx vy ccnv cv wbr brcnv bitri eqbrriv ) BCADZDZABEZCEZKFMLJFLMAFLMJGMLA
       GHI $.
-
-    $( Alternate definition of relation.  Exercise 2 of [TakeutiZaring] p. 25.
-       (Contributed by set.mm contributors, 29-Dec-1996.)  (Revised by set.mm
-       contributors, 15-Aug-2004.) $)
-    dfrel2 $p |- ( Rel R <-> `' `' R = R ) $=
-      ( vx vy wrel ccnv wceq relcnv cv cop wcel opelcnv bitri eqrelrivOLD releq
-      mpan mpbii impbii ) ADZAEZEZAFZTDZRUASGZBCTABHZCHZIZTJUEUDISJUFAJUDUESKUE
-      UDAKLMOUAUBRUCTANPQ $.
   $}
 
   $( Equality theorem for converse.  (Contributed by FL, 19-Sep-2011.)
