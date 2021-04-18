@@ -44920,7 +44920,6 @@ $)
   $c dom $. $( Domain $)
   $c ran $. $( Range $)
   $c |` $. $( Right hook (restriction symbol) $)
-  $c Rel $. $( Relation predicate $)
   $c Fun $. $( Function predicate $)
   $c Fn $. $( Function connective $)
   $c : $. $( Colon $)
@@ -44947,10 +44946,6 @@ $)
   $( Extend the definition of a class to include the restriction of a class.
      (Read:  The restriction of ` A ` to ` B ` .) $)
   cres $a class ( A |` B ) $.
-
-  $( Extend the definition of a wff to include the relation predicate.  (Read:
-     ` A ` is a relation.) $)
-  wrel $a wff Rel A $.
 
   $( Extend the definition of a wff to include the function predicate.  (Read:
      ` A ` is a function.) $)
@@ -44996,11 +44991,6 @@ $)
     $( Define the cross product of two classes.  Definition 9.11 of [Quine]
        p. 64.  (Contributed by SF, 5-Jan-2015.) $)
     df-xp $a |- ( A X. B ) = { <. x , y >. | ( x e. A /\ y e. B ) } $.
-
-    $( Define the relation predicate.  Definition 6.4(1) of [TakeutiZaring]
-       p. 23.
-       (Contributed by SF, 5-Jan-2015.) $)
-    df-rel $a |- ( Rel A <-> A C_ ( _V X. _V ) ) $.
 
     $( Define the converse of a class.  Definition 9.12 of [Quine] p. 64.  We
        use Quine's breve accent (smile) notation.  Like Quine, we use it as a
@@ -45522,32 +45512,6 @@ $)
      opeq mpbir2an eqeltri mpgbir ) BBCZBDAEZSFAASGTTHZTIZJZSTOUCSFUABFUBBFTAKZ
      LTUDMUAUBBBNPQR $.
 
-  $( Everything is a relationship.  Temporary theorem while we remove the
-     relationship predicate.  (Contributed by Scott Fenton, 14-Apr-2021.) $)
-  relall $p |- Rel A $=
-    ( wrel cvv cxp wss ssv xpvv sseqtr4i df-rel mpbir ) ABACCDZEACKAFGHAIJ $.
-
-  $( Equality theorem for the relation predicate.  (Contributed by NM,
-     1-Aug-1994.) $)
-  releq $p |- ( A = B -> ( Rel A <-> Rel B ) ) $=
-    ( wceq cvv cxp wss wrel sseq1 df-rel 3bitr4g ) ABCADDEZFBKFAGBGABKHAIBIJ $.
-
-  ${
-    releqi.1 $e |- A = B $.
-    $( Equality inference for the relation predicate.  (Contributed by NM,
-       8-Dec-2006.) $)
-    releqi $p |- ( Rel A <-> Rel B ) $=
-      ( wceq wrel wb releq ax-mp ) ABDAEBEFCABGH $.
-  $}
-
-  ${
-    releqd.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for the relation predicate.  (Contributed by NM,
-       8-Mar-2014.) $)
-    releqd $p |- ( ph -> ( Rel A <-> Rel B ) ) $=
-      ( wceq wrel wb releq syl ) ABCEBFCFGDBCHI $.
-  $}
-
   ${
     $d x y z A $.  $d x y z B $.
     $( A subclass relationship depends only on a relation's ordered pairs.
@@ -45571,13 +45535,6 @@ $)
       ( wss wa cv cop wcel wi wal wceq wb ssrel anbi12i eqss 2albiim 3bitr4i )
       CDEZDCEZFAGBGHZCIZUADIZJBKAKZUCUBJBKAKZFCDLUBUCMBKAKSUDTUEABCDNABDCNOCDPU
       BUCABQR $.
-
-    $( Extensionality principle for relations.  Theorem 3.2(ii) of [Monk1]
-       p. 33.  (Contributed by NM, 2-Aug-1994.) $)
-    eqrelOLD $p |- ( ( Rel A /\ Rel B ) -> ( A = B <->
-                A. x A. y ( <. x , y >. e. A <-> <. x , y >. e. B ) ) ) $=
-      ( wceq cv cop wcel wb wal wrel wa eqrel a1i ) CDEAFBFGZCHODHIBJAJICKDKLAB
-      CDMN $.
   $}
 
 
@@ -45631,25 +45588,6 @@ $)
     eqrelrdv $p |- ( ph -> A = B ) $=
       ( cv cop wcel wb wal wceq alrimivv eqrel sylibr ) ABGCGHZDIPEIJZCKBKDELAQ
       BCFMBCDENO $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.
-    eqrelrivOLD.1 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
-
-    $( Inference from extensionality principle for relations.  (Contributed by
-       FL, 15-Oct-2012.) $)
-    eqrelrivOLD $p |- ( ( Rel A /\ Rel B ) -> A = B ) $=
-      ( wceq wrel wa eqrelriv a1i ) CDFCGDGHABCDEIJ $.
-  $}
-
-  ${
-    $d x y A $.
-    $( A member of a relation is an ordered pair.  (Contributed by NM,
-       17-Sep-2006.) $)
-    elrel $p |- ( ( Rel R /\ A e. R ) -> E. x E. y A = <. x , y >. ) $=
-      ( wrel wcel wa cvv cxp cop wceq wex wss df-rel biimpi sselda elvv sylib
-      cv ) DEZCDFGCHHIZFCASBSJKBLALTDUACTDUAMDNOPABCQR $.
   $}
 
   ${
@@ -45720,25 +45658,6 @@ $)
         HGBCDEWHVQWOAVPBVOUSVEWIWOVKAVOCBUTVEVAURFIGHVBVCVFVG $.
     $}
   $}
-
-  ${
-    $d ph z $.  $d u v x z $.  $d u v y z $.
-    relopabi.1 $e |- A = { <. x , y >. | ph } $.
-    $( A class of ordered pairs is a relation.  (Contributed by Mario Carneiro,
-       21-Dec-2013.) $)
-    relopabi $p |- Rel A $=
-      ( vz wrel cvv cxp wss cv cop wceq wa wex cab copab df-opab wcel vex eqtri
-      opelxp mpbir2an eleq1 mpbiri adantr exlimivv abssi eqsstri df-rel mpbir )
-      DGDHHIZJDFKZBKZCKZLZMZANZCOBOZFPZULDABCQUTEABCFRUAUSFULURUMULSZBCUQVAAUQV
-      AUPULSZVBUNHSUOHSBTCTUNUOHHUBUCUMUPULUDUEUFUGUHUIDUJUK $.
-  $}
-
-  $( A class of ordered pairs is a relation.  (Unnecessary distinct variable
-     restrictions were removed by Alan Sare, 9-Jul-2013.)  (The proof was
-     shortened by Mario Carneiro, 21-Dec-2013.)  (Contributed by NM,
-     8-Mar-1995.)  (Revised by set.mm contributors, 9-Jul-2013.) $)
-  relopab $p |- Rel { <. x , y >. | ph } $=
-    ( copab eqid relopabi ) ABCABCDZGEF $.
 
   ${
     $d w x y z A $.  $d x y B $.  $d x y C $.  $d x y D $.  $d ph z w $.
@@ -46823,13 +46742,6 @@ $)
     ( wss cvv cxp cin cres xpss1 sslin syl df-res 3sstr4g ) ABDZCAEFZGZCBEFZGZC
     AHCBHNOQDPRDABEIOQCJKCALCBLM $.
 
-  $( A restriction is a relation.  Exercise 12 of [TakeutiZaring] p. 25.  (The
-     proof was shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by
-     set.mm contributors, 2-Aug-1994.)  (Revised by set.mm contributors,
-     27-Aug-2011.) $)
-  relres $p |- Rel ( A |` B ) $=
-    ( cres relall ) ABCD $.
-
   $( Absorption law for restriction.  Exercise 17 of [TakeutiZaring] p. 25.
      (Contributed by set.mm contributors, 9-Aug-1994.) $)
   resabs1 $p |- ( B C_ C -> ( ( A |` C ) |` B ) = ( A |` B ) ) $=
@@ -47105,23 +47017,6 @@ $)
     ( cdm wcel wn csn cima cres crn c0 dfima3 wceq cin dmres incom eqtri disjsn
     biimpri syl5eq dm0rn0 sylib ) ABCZDEZBAFZGBUDHZIZJBUDKUCUECZJLUFJLUCUGUBUDM
     ZJUGUDUBMUHBUDNUDUBOPUHJLUCUBAQRSUETUAS $.
-
-  ${
-    $d x y A $.
-    $( A converse is a relation.  Theorem 12 of [Suppes] p. 62.  (Contributed
-       by set.mm contributors, 29-Oct-1996.) $)
-    relcnv $p |- Rel `' A $=
-      ( vy vx cv wbr ccnv df-cnv relopabi ) BDCDAECBAFCBAGH $.
-  $}
-
-  ${
-    $d A x y z $.  $d B x y z $.
-    $( A composition is a relation.  Exercise 24 of [TakeutiZaring] p. 25.
-       (Contributed by set.mm contributors, 26-Jan-1997.) $)
-    relco $p |- Rel ( A o. B ) $=
-      ( vx vz vy cv wbr wa wex ccom df-co relopabi ) CFDFZBGMEFAGHDICEABJCEDABK
-      L $.
-  $}
 
   ${
     $d x y z R $.
@@ -51812,14 +51707,6 @@ $)
 
   ${
     $d x y $.
-    $( The subset relationship is a relationship.  (Contributed by SF,
-       11-Feb-2015.) $)
-    relsset $p |- Rel _S $=
-      ( vx vy cv wss csset df-sset relopabi ) ACBCDABEABFG $.
-  $}
-
-  ${
-    $d x y $.
     $( Alternate definition of the identity relationship.  (Contributed by SF,
        11-Feb-2015.) $)
     dfid4 $p |- _I = ( _S i^i `' _S ) $=
@@ -52018,12 +51905,6 @@ $)
   ${
     $d a b $.  $d a x $.  $d a y $.  $d b x $.  $d b y $.  $d R a $.  $d R b $.
     $d R x $.  $d R y $.  $d x y $.
-    $( A singleton image is a relationship.  (Contributed by SF,
-       26-Feb-2015.) $)
-    relsi $p |- Rel SI R $=
-      ( vx va vy vb cv csn wceq wbr w3a wex csi df-si relopabi ) BFCFZGHDFEFZGH
-      OPAIJEKCKBDALBDCEAMN $.
-
     $( Calculate the converse of a singleton image.  (Contributed by SF,
        26-Feb-2015.) $)
     cnvsi $p |- `' SI R = SI `' R $=
@@ -52378,30 +52259,7 @@ $)
       TZCJBJZTZDJEJZFKABCDLVHEDMVBVJFVEVGTZCJBJZEJDJZVLDJEJVBVJVLDENVMVKEJZDJCJ
       BJVBVKDEBCOVNVABCDVNVFVEATZTZEJVAVKVPEVEVFAPQVOVAEUQUOUPBRCRUAVFVEUTAVFVD
       USUNVCUQURUBUCUDUESUFSVLVIEDVEVGBCUGUKUHUIABCDFUJVHEDFULUM $.
-
-    $( An operation class abstraction is a relation.  (Contributed by set.mm
-       contributors, 16-Jun-2004.) $)
-    reloprab $p |- Rel { <. <. x , y >. , z >. | ph } $=
-      ( vw cv cop wceq wa wex coprab dfoprab2 relopabi ) EFBFCFGHAICJBJEDABCDKA
-      BCDELM $.
   $}
-
-$(
-  @{
-    @d x y z w v @.  @d ph v @.
-    dfoprab2f.1 @e |- ( ph -> A. w ph ) @.
-    @( Class abstraction for operations in terms of class abstraction of
-       ordered pairs.  This is a version of ~ dfoprab2 with bound-variable
-       hypothesis instead of distinct variable requirement. @)
-    dfoprab2f @p |- { <. <. x , y >. , z >. | ph } =
-                   { <. w , z >. | E. x E. y ( w = <. x , y >. /\ ph ) } @=
-      ( vv coprab cv cop wceq wa wex copab dfoprab2 ax-17 hban hbex weq eqeq1
-      anbi1d 2exbidv cbvopab1
-      eqtri ) ABCDHGIZBICIJZKZALZCMZBMZGDNEIZUFKZALZCMBM
-      ZEDNABCDGOUJUNGDEUIEBUHECUGAEUGEPFQRRUNGPGESZUHUMBCUOUGULAUEUKUFTUAUBUCUD
-      @.
-  @}
-$)
 
   ${
     $d x w v $.  $d y v $.  $d z v $.  $d v ph $.
