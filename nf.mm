@@ -48088,15 +48088,13 @@ $)
   ${
     $d A a b x $.  $d B a b $.
     $( The converse of an intersection is the intersection of the converse.
-       (Contributed by FL, 15-Oct-2012.) $)
-    cnviin $p |- ( A =/= (/) -> `' |^|_ x e. A B = |^|_ x e. A `' B ) $=
-      ( va vb ciin ccnv wrel relcnv cvv wss cv wcel wex df-rel cop wral wb opex
-      vex c0 wne wceq cxp wrex wa mpbi eximi n0 df-rex 3imtr4i iinss syl sylibr
-      jctr eliin ax-mp opelcnv ralbii bitri 3bitr4i eqrelrivOLD sylancr ) BUAUB
-      ZABCFZGZHABCGZFZHZVFVHUCVEIVDVHJJUDZKZVIVDVGVJKZABUEZVKALBMZANVNVLUFZANVD
-      VMVNVOAVNVLVGHVLCIVGOUGUOUHABUIVLABUJUKABVGVJULUMVHOUNDEVFVHELZDLZPZVEMZV
-      RCMZABQZVQVPPZVFMWBVHMZVRJMVSWARVPVQETZDTZSAVRBCJUPUQVQVPVEURWCWBVGMZABQZ
-      WAWBJMWCWGRVQVPWEWDSAWBBVGJUPUQWFVTABVQVPCURUSUTVAVBVC $.
+       (Contributed by FL, 15-Oct-2012.) (Revised by Scott Fenton,
+       18-Apr-2021.) $)
+    cnviin $p |- `' |^|_ x e. A B = |^|_ x e. A `' B $=
+      ( va vb ciin ccnv cv cop wcel wral cvv wb opex eliin ax-mp opelcnv ralbii
+      vex bitri 3bitr4i eqrelriv ) DEABCFZGZABCGZFZEHZDHZIZUCJZUICJZABKZUHUGIZU
+      DJUMUFJZUILJUJULMUGUHESZDSZNAUIBCLOPUHUGUCQUNUMUEJZABKZULUMLJUNURMUHUGUPU
+      ONAUMBUELOPUQUKABUHUGCQRTUAUB $.
   $}
 
   ${
