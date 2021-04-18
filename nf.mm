@@ -46890,15 +46890,6 @@ $)
       ( vx vy cdm wss cres resss a1i cv cop wcel opeldm ssel syl5 ancld opelres
       wa syl6ibr relssdv eqssd ) AEZBFZABGZAUDAFUCABHIUCCDAUDUCCJZDJZKZALZUHUEB
       LZRUGUDLUCUHUIUHUEUBLUCUIUEUFAMUBBUENOPUEUFABQSTUA $.
-
-    $( Simplification law for restriction.  (Contributed by set.mm
-       contributors, 16-Aug-1994.)  (Revised by set.mm contributors,
-       15-Mar-2004.) $)
-    relssres $p |- ( ( Rel A /\ dom A C_ B ) -> ( A |` B ) = A ) $=
-      ( vx vy wrel cdm wss wa cres resss a1i cv wcel wi opeldm ssel syl5 adantl
-      cop ancld opelres syl6ibr relssdv eqssd ) AEZAFZBGZHZABIZAUIAGUHABJKUHCDA
-      UIUHCLZDLZSZAMZUMUJBMZHULUIMUHUMUNUGUMUNNUEUMUJUFMUGUNUJUKAOUFBUJPQRTUJUK
-      ABUAUBUCUD $.
   $}
 
   $( A class restricted to its domain equals itself.  (Contributed by set.mm
