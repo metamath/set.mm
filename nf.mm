@@ -48736,11 +48736,6 @@ $)
   fnfun $p |- ( F Fn A -> Fun F ) $=
     ( wfn wfun cdm wceq df-fn simplbi ) BACBDBEAFBAGH $.
 
-  $( A function with domain is a relation.  (Contributed by set.mm
-     contributors, 1-Aug-1994.) $)
-  fnrel $p |- ( F Fn A -> Rel F ) $=
-    ( wfn wfun wrel fnfun funrel syl ) BACBDBEABFBGH $.
-
   $( The domain of a function.  (Contributed by set.mm contributors,
      2-Aug-1994.) $)
   fndm $p |- ( F Fn A -> dom F = A ) $=
