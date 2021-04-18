@@ -51744,11 +51744,10 @@ $)
        either well-order.  (Contributed by Mario Carneiro, 15-Jan-2013.) $)
     isores1 $p |- ( H Isom R , S ( A , B ) <->
                       H Isom ( R i^i ( A X. A ) ) , S ( A , B ) ) $=
-      ( wiso cxp cin ccnv isocnv isores2 sylib wf1o wb isof1o isoeq1 sylbi 3syl
-      syl mpbid wrel f1orel wceq dfrel2 sylibr impbii ) ABCDEFZABCAAGHZDEFZUGAB
-      UHDEIZIZFZUIUGBADUHUJFZULUGBADCUJFZUMABCDEJBADCUJKZLBADUHUJJSUGABEMZEUAZU
-      LUINZABCDEOABEUBZUQUKEUCZUREUDZABUHDEUKPQRTUIABCDUKFZUGUIUNVBUIUMUNABUHDE
-      JUOUEBADCUJJSUIUPUQVBUGNZABUHDEOUSUQUTVCVAABCDEUKPQRTUF $.
+      ( wiso cxp cin ccnv isocnv isores2 sylib syl wceq wb cnvcnv isoeq1 sylibr
+      ax-mp impbii ) ABCDEFZABCAAGHZDEFZUAABUBDEIZIZFZUCUABADUBUDFZUFUABADCUDFZ
+      UGABCDEJBADCUDKZLBADUBUDJMUEENZUFUCOEPZABUBDEUEQSLUCABCDUEFZUAUCUHULUCUGU
+      HABUBDEJUIRBADCUDJMUJULUAOUKABCDEUEQSLT $.
   $}
 
   ${
