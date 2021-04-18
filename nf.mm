@@ -45516,18 +45516,12 @@ $)
       ICUHDUHUFUCNUEUFUGOPQQUBNRST $.
   $}
 
-  ${
-     $d x y z $.
-     $( The cross product of the universe with itself is the universe.
-        (Contributed by Scott Fenton, 14-Apr-2021.) $)
-     xpvv $p |- ( _V X. _V ) = _V $=
-       ( vx vy vz cvv cxp wceq cv wcel eqv cop wex cproj1 cproj2 opeq vex spcev
-       eqeq2d ax-mp wrex rexv proj2ex opeq2 proj1ex opeq1 exbidv 3bitri mpgbir
-       elxp2 exbii mpbir ) DDEZDFAGZUKHZAAUKIUMULBGZCGZJZFZCKZBKZULULLZUOJZFZCK
-       ZUSULUTULMZJZFZVCULNVBVFCVDULAOZUAUOVDFVAVEULUOVDUTUBQPRURVCBUTULVGUCUNU
-       TFZUQVBCVHUPVAULUNUTUOUDQUEPRUMUQCDSZBDSVIBKUSBCULDDUHVIBTVIURBUQCTUIUFU
-       JUG $.
-  $}
+  $( The cross product of the universe with itself is the universe.
+     (Contributed by Scott Fenton, 14-Apr-2021.) $)
+   xpvv $p |- ( _V X. _V ) = _V $=
+     ( vx cvv cxp wceq cv wcel eqv cproj1 cproj2 cop vex proj1ex proj2ex opelxp
+     opeq mpbir2an eqeltri mpgbir ) BBCZBDAEZSFAASGTTHZTIZJZSTOUCSFUABFUBBFTAKZ
+     LTUDMUAUBBBNPQR $.
 
   $( Everything is a relationship.  Temporary theorem while we remove the
      relationship predicate.  (Contributed by Scott Fenton, 14-Apr-2021.) $)
