@@ -49109,11 +49109,6 @@ $)
   ffun $p |- ( F : A --> B -> Fun F ) $=
     ( wf wfn wfun ffn fnfun syl ) ABCDCAECFABCGACHI $.
 
-  $( A mapping is a relation.  (Contributed by set.mm contributors,
-     3-Aug-1994.) $)
-  frel $p |- ( F : A --> B -> Rel F ) $=
-    ( wf wfn wrel ffn fnrel syl ) ABCDCAECFABCGACHI $.
-
   $( The domain of a mapping.  (Contributed by set.mm contributors,
      2-Aug-1994.) $)
   fdm $p |- ( F : A --> B -> dom F = A ) $=
@@ -49650,22 +49645,19 @@ $)
     ( wf1 wfn ccnv wfun crn wf1o f1fn wf df-f1 simprbi f1orn sylanbrc ) ABCDZCA
     ECFGZACHCIABCJPABCKQABCLMACNO $.
 
+  $( A class is a one-to-one onto function iff its converse is a one-to-one
+     onto function with domain and range interchanged.  (Contributed by set.mm
+     contributors, 8-Dec-2003.) (Modified by Scott Fenton, 17-Apr-2021.) $)
+  f1ocnvb $p |- ( F : A -1-1-onto-> B <-> `' F : B -1-1-onto-> A ) $=
+    ( ccnv wfn wa wf1o cnvcnv fneq1i anbi2i ancom bitri dff1o4 3bitr4ri ) CDZBE
+    ZODZAEZFZCAEZPFZBAOGABCGSPTFUARTPAQCCHIJPTKLBAOMABCMN $.
+
   $( The converse of a one-to-one onto function is also one-to-one onto.  (The
      proof was shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by
      set.mm contributors, 11-Feb-1997.)  (Revised by set.mm contributors,
      22-Oct-2011.) $)
   f1ocnv $p |- ( F : A -1-1-onto-> B -> `' F : B -1-1-onto-> A ) $=
-    ( wfn ccnv wa wf1o wrel fnrel wceq dfrel2 fneq1 biimprd sylbi anim2i ancoms
-    wi mpcom dff1o4 3imtr4i ) CADZCEZBDZFUCUBEZADZFZABCGBAUBGUCUAUFUAUEUCCHZUAU
-    EACIUGUDCJZUAUEQCKUHUEUAAUDCLMNROPABCSBAUBST $.
-
-  $( A relation is a one-to-one onto function iff its converse is a one-to-one
-     onto function with domain and range interchanged.  (Contributed by set.mm
-     contributors, 8-Dec-2003.) $)
-  f1ocnvb $p |- ( Rel F ->
-                ( F : A -1-1-onto-> B <-> `' F : B -1-1-onto-> A ) ) $=
-    ( wrel wf1o ccnv f1ocnv wceq wb dfrel2 f1oeq1 sylbi syl5ib impbid2 ) CDZABC
-    EZBACFZEZABCGRABQFZEZOPBAQGOSCHTPICJABSCKLMN $.
+    ( wf1o ccnv f1ocnvb biimpi ) ABCDBACEDABCFG $.
 
   $( The restriction of a one-to-one function maps one-to-one onto the image.
      (Contributed by set.mm contributors, 25-Mar-1998.) $)
