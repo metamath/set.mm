@@ -52084,14 +52084,6 @@ $)
       ( ccnv cswap cres wf1o cima cvv wf1 swapf1o f1of1 ax-mp f1ores mp2an wceq
       wss ssv wb dfcnv2 f1oeq3 mpbir ) AABZCADZEZACAFZUBEZGGCHZAGOUEGGCEUFIGGCJ
       KAPGGACLMUAUDNUCUEQARUAUDAUBSKT $.
-
-
-    $( Bijection law for restrictions of ` Swap ` .  (Contributed by SF,
-       23-Feb-2015.) $)
-    swapresrel $p |- ( Rel A -> ( Swap |` A ) : A -1-1-onto-> `' A ) $=
-      ( cvv cxp wss cswap cima cres wf1o wrel ccnv wf1 swapf1oOLD f1of1 ax-mp mpan
-      f1ores df-rel wceq wb dfcnv2 f1oeq3 3imtr4i ) ABBCZDZAEAFZEAGZHZAIAAJZUFH
-      ZUCUCEKZUDUGUCUCEHUJLUCUCEMNUCUCAEPOAQUHUERUIUGSATUHUEAUFUANUB $.
   $}
 
   ${
@@ -58313,10 +58305,11 @@ $)
       HUFUBUDAGUDALUHRMNUDCOPST $.
 
     $( A relational set is equinumerous to its converse.  (Contributed by
-       set.mm contributors, 28-Dec-2014.) $)
-    cnven $p |- ( ( Rel A /\ A e. V ) -> A ~~ `' A ) $=
-      ( wcel cswap cres cvv ccnv wf1o wrel swapex resexg mpan swapresrel f1oeng
-      cen wbr syl2anr ) ABCZDAEZFCZAAGZSHAUAOPAIDFCRTJDAFBKLAMAUAFSNQ $.
+       set.mm contributors, 28-Dec-2014.) (Modified by Scott Fenton,
+       17-Apr-2021.) $)
+    cnven $p |- ( A e. V -> A ~~ `' A ) $=
+      ( wcel cswap cres cvv ccnv wf1o cen wbr swapex resexg mpan swapres f1oeng
+      sylancl ) ABCZDAEZFCZAAGZRHATIJDFCQSKDAFBLMANATFROP $.
   $}
 
   $( A function is equinumerate to its domain.  (Contributed by Paul Chapman,
@@ -58394,9 +58387,9 @@ $)
        4.22(d) of [Mendelson] p. 254.  (Contributed by set.mm contributors,
        5-Jan-2004.)  (Revised by set.mm contributors, 23-Apr-2014.) $)
     xpcomen $p |- ( A X. B ) ~~ ( B X. A ) $=
-      ( cxp cswap cres wf1o cen ccnv wrel relall swapresrel ax-mp wceq wb cnvxp
-      wbr f1oeq3 mpbi swapex xpex resex f1oen ) ABEZBAEZFUEGZHZUEUFIRUEUEJZUGHZ
-      UHUEKUJUELUEMNUIUFOUJUHPABQUIUFUEUGSNTUEUFUGFUEUAABCDUBUCUDN $.
+      ( cxp cswap cres wf1o cen wbr ccnv swapres wceq cnvxp f1oeq3 ax-mp swapex
+      wb mpbi xpex resex f1oen ) ABEZBAEZFUCGZHZUCUDIJUCUCKZUEHZUFUCLUGUDMUHUFR
+      ABNUGUDUCUEOPSUCUDUEFUCQABCDTUAUBP $.
   $}
 
   ${
