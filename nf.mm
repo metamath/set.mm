@@ -47495,24 +47495,6 @@ $)
      (Revised by Scott Fenton, 17-Apr-2021.) $)
   cnveqb $p |- ( A = B <-> `' A = `' B ) $=
     ( wceq ccnv cnveq cnvcnv 3eqtr3g impbii ) ABCADZBDZCZABEKIDJDABIJEAFBFGH $.
-    
-  $( The double converse of a class strips out all elements that are not
-     ordered pairs.  (Contributed by set.mm contributors, 8-Dec-2003.) $)
-  cnvcnvOLD $p |- `' `' A = ( A i^i ( _V X. _V ) ) $=
-    ( cvv cxp cin ccnv cnvin cnveqi wrel wceq relall dfrel2 wss df-rel sseqtr4i
-    mpbi dfss eqtr4i 3eqtr3ri ) ABBCZDZEZEZAEZSEZDZEZTUCEZUAUEASFGTHUBTITJTKOUF
-    UGUDEZDZUGUCUDFUGUHLUGUIIUGSUHUGHUGSLUGJUGMOSHUHSISJSKONUGUHPOQR $.
-
-  $( The double converse of a class equals its restriction to the universe.
-     (Contributed by set.mm contributors, 8-Oct-2007.) $)
-  cnvcnv2 $p |- `' `' A = ( A |` _V ) $=
-    ( ccnv cvv cxp cin cres cnvcnvOLD df-res eqtr4i ) ABBACCDEACFAGACHI $.
-
-  $( The double converse of a class is a subclass.  Exercise 2 of
-     [TakeutiZaring] p. 25.  (Contributed by set.mm contributors,
-     23-Jul-2004.) $)
-  cnvcnvss $p |- `' `' A C_ A $=
-    ( ccnv cvv cxp cin cnvcnvOLD inss1 eqsstri ) ABBACCDZEAAFAIGH $.
 
   ${
     $d x y A $.
@@ -48394,11 +48376,6 @@ $)
   fun0 $p |- Fun (/) $=
     ( c0 wfun ccnv ccom cid wss co01 0ss eqsstri df-fun mpbir ) ABAACZDZEFMAELG
     EHIAJK $.
-
-  $( The double converse of a function is a function.  (Contributed by set.mm
-     contributors, 21-Sep-2004.) $)
-  funcnvcnv $p |- ( Fun A -> Fun `' `' A ) $=
-    ( ccnv wss wfun wi cnvcnvss funss ax-mp ) ABBZACADIDEAFIAGH $.
 
   ${
     $d f g x y z w v A $.  $d x y B $.  $d x y R $.
@@ -49625,14 +49602,14 @@ $)
      16-Jul-2009.) $)
   foimacnv $p |- ( ( F : A -onto-> B /\ C C_ B )
                  -> ( F " ( `' F " C ) ) = C ) $=
-    ( wfo wss ccnv cima cres resima wfun wceq fofun adantr funcnvres2 crn dfrn4
-    wa cdm syl5eqr imaeq1 3syl wfn resss cnvss ax-mp cnvcnvss sstri funss mpsyl
+    ( wfo wss wa ccnv cima cres resima wfun wceq fofun adantr syl crn cdm dfrn4
+    syl5eqr funcnvres2 imaeq1d wfn resss cnvss ax-mp cnvcnv sseqtri funss mpsyl
     dfima3 eqtr2i jctir df-fn sylibr df-dm forn sseq2d biimpar syl6sseq ssdmres
-    sylib df-fo sylanbrc foima syl eqtr3d ) ABDEZCBFZRZDDGZCHZHDVLIZVLHZCDVLJVJ
-    VKCIZGZVLHZVNCVJDKZVPVMLVQVNLVHVRVIABDMZNCDOVPVMVLUAUBVJVLCVPEZVQCLVJVPVLUC
-    ZVPPZCLVTVJVPKZVPSZVLLZRWAVJWCWEVHWCVIVPDFVHVRWCVPVKGZDVOVKFVPWFFVKCUDVOVKU
-    EUFDUGUHVSVPDUIUJNVLVOPWDVKCUKVOQULUMVPVLUNUOVJWBVOSZCVOUPVJCVKSZFWGCLVJCDP
-    ZWHVHCWIFVIVHWIBCABDUQURUSDQUTCVKVAVBTVLCVPVCVDVLCVPVEVFVGT $.
+    sylib df-fo sylanbrc foima eqtr3d ) ABDEZCBFZGZDDHZCIZIDVKJZVKIZCDVKKVIVJCJ
+    ZHZVKIZVMCVIVOVLVKVIDLZVOVLMVGVQVHABDNZOCDUAPUBVIVKCVOEZVPCMVIVOVKUCZVOQZCM
+    VSVIVOLZVORZVKMZGVTVIWBWDVGWBVHVODFVGVQWBVOVJHZDVNVJFVOWEFVJCUDVNVJUEUFDUGU
+    HVRVODUIUJOVKVNQWCVJCUKVNSULUMVOVKUNUOVIWAVNRZCVNUPVICVJRZFWFCMVICDQZWGVGCW
+    HFVHVGWHBCABDUQURUSDSUTCVJVAVBTVKCVOVCVDVKCVOVEPVFT $.
 
   $( The union of two one-to-one onto functions with disjoint domains and
      ranges.  (Contributed by set.mm contributors, 26-Mar-1998.) $)
