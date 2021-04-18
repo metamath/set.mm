@@ -46873,6 +46873,14 @@ $)
 
     $( Simplification law for restriction.  (Contributed by set.mm
        contributors, 16-Aug-1994.)  (Revised by set.mm contributors,
+       15-Mar-2004.) (Revised by Scott Fenton, 18-Apr-2021.) $)
+    ssreseq $p |- ( dom A C_ B -> ( A |` B ) = A ) $=
+      ( vx vy cdm wss cres resss a1i cv cop wcel opeldm ssel syl5 ancld opelres
+      wa syl6ibr relssdv eqssd ) AEZBFZABGZAUDAFUCABHIUCCDAUDUCCJZDJZKZALZUHUEB
+      LZRUGUDLUCUHUIUHUEUBLUCUIUEUFAMUBBUENOPUEUFABQSTUA $.
+
+    $( Simplification law for restriction.  (Contributed by set.mm
+       contributors, 16-Aug-1994.)  (Revised by set.mm contributors,
        15-Mar-2004.) $)
     relssres $p |- ( ( Rel A /\ dom A C_ B ) -> ( A |` B ) = A ) $=
       ( vx vy wrel cdm wss wa cres resss a1i cv wcel wi opeldm ssel syl5 adantl
@@ -46950,11 +46958,10 @@ $)
     ( cid cdm wss cres wceq cvv ssv dmi sseqtr4i ssdmres mpbi ) ABCZDBAECAFAGMA
     HIJABKL $.
 
-  $( MAY BE REVISED - delete this and replace w/ dfres3 (in FL's mathbox) $)
-  $( Any relation restricted to the universe is itself.  (Contributed by set.mm
-     contributors, 16-Mar-2004.) $)
-  resid $p |- ( Rel A -> ( A |` _V ) = A ) $=
-    ( wrel cdm cvv wss cres wceq ssv relssres mpan2 ) ABACZDEADFAGKHADIJ $.
+  $( Any class restricted to the universe is itself.  (Contributed by set.mm
+     contributors, 16-Mar-2004.) (Revised by Scott Fenton, 18-Apr-2021.) $)
+  resid $p |- ( A |` _V ) = A $=
+    ( cdm cvv wss cres wceq ssv ssreseq ax-mp ) ABZCDACEAFJGACHI $.
 
   $( A restriction to an image.  (Contributed by set.mm contributors,
      29-Sep-2004.) $)
@@ -48823,8 +48830,8 @@ $)
   $( A function does not change when restricted to its domain.  (Contributed by
      set.mm contributors, 5-Sep-2004.) $)
   fnresdm $p |- ( F Fn A -> ( F |` A ) = F ) $=
-    ( wfn wrel cdm wss cres wceq fnrel fndm eqimss syl relssres syl2anc ) BACZB
-    DBEZAFZBAGBHABIOPAHQABJPAKLBAMN $.
+    ( wfn cdm wceq wss cres fndm eqimss ssreseq 3syl ) BACBDZAELAFBAGBEABHLAIBA
+    JK $.
 
   $( A function restricted to a class disjoint with its domain is empty.
      (Contributed by set.mm contributors, 23-Sep-2004.) $)
