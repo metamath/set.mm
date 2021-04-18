@@ -47949,11 +47949,11 @@ $)
       ( cvv wcel ccnv cnvexg ax-mp ) ACDAECDBACFG $.
   $}
 
-  $( A relation is a set iff its converse is a set.  (Contributed by FL,
-     3-Mar-2007.) $)
-  relcnvexb $p |- ( Rel R -> ( R e. _V <-> `' R e. _V ) ) $=
-    ( wrel cvv wcel ccnv cnvexg wceq wi dfrel2 eleq1 syl5ib sylbi impbid2 ) ABZ
-    ACDZAEZCDZACFNPEZAGZQOHAIQRCDSOPCFRACJKLM $.
+  $( A class is a set iff its converse is a set.   (Contributed by FL,
+     3-Mar-2007.) (Revised by Scott Fenton, 18-Apr-2021.) $)
+  cnvexb $p |- ( R e. _V <-> `' R e. _V ) $=
+    ( cvv wcel ccnv cnvexg cnvcnv syl5eqelr impbii ) ABCADZBCZABEJAIDBAFIBEGH
+    $.
 
   $( The range of a set is a set.  Corollary 6.8(3) of [TakeutiZaring] p. 26.
      Similar to Lemma 3D of [Enderton] p. 41.  (Contributed by set.mm
