@@ -48278,15 +48278,6 @@ $)
       UKCSOPQABCUAURUPBUNURUJUQNZULJZATULATUPULAUQUBULVAAULUTUJUKCUCUDUEULAUIUF
       UGUH $.
 
-    $( The double converse of a class is a function iff the class is
-       single-valued.  Each side is equivalent to Definition 6.4(2) of
-       [TakeutiZaring] p. 23, who use the notation "Un(A)" for single-valued.
-       Note that ` A ` is not necessarily a function.  (Contributed by set.mm
-       contributors, 13-Aug-2004.) $)
-    fun2cnv $p |- ( Fun `' `' A <-> A. x E* y x A y ) $=
-      ( ccnv wfun cv wbr wmo wal funcnv2 brcnv mobii albii bitri ) CDZDEBFZAFZO
-      GZBHZAIQPCGZBHZAIBAOJSUAARTBPQCKLMN $.
-
     $( Single-rootedness (see ~ funcnv ) of a class cut down by a cross
        product.  (Contributed by NM, 5-Mar-2007.) $)
     fncnv $p |- ( `' ( R i^i ( A X. B ) ) Fn B <->
@@ -48302,23 +48293,24 @@ $)
       WCXBWRWPJXDWAWBCDUQWRWPRSNWCXDRSWPWRWCURSSUSWHXAWPWCACUTVATVBVCVDVFVGWGWH
       BDVHTVOVSRWDWIBDWCACVIVJTVK $.
 
-    $( Two ways of stating that ` A ` is one-to-one (but not necessarily a
-       function).  Each side is equivalent to Definition 6.4(3) of
-       [TakeutiZaring] p. 24, who use the notation "Un_2 (A)" for one-to-one
-       (but not necessarily a function).  (Contributed by NM, 17-Jan-2006.) $)
-    fun11 $p |- ( ( Fun `' `' A /\ Fun `' A ) <->
+    $( Two ways of stating that ` A ` is one-to-one.
+       Each side is equivalent to Definition 6.4(3) of
+       [TakeutiZaring] p. 24, who use the notation "Un_2 (A)" for one-to-one.
+       (Contributed by NM, 17-Jan-2006.) (Revised by Scott Fenton,
+       18-Apr-2021.) $)
+    fun11 $p |- ( ( Fun A /\ Fun `' A ) <->
          A. x A. y A. z A. w ( ( x A y /\ z A w ) -> ( x = z <-> y = w ) ) ) $=
-      ( cv wbr wa wceq wal ccnv wfun bi2.04 anbi12i 2albii 19.26-2 alcom 3bitri
-      wi albii dfbi2 imbi2i pm4.76 3bitr2i nfv breq1 anbi1d imbi1d equsal bitri
-      wb breq2 bitr2i wmo fun2cnv mo4 funcnv2 alrot4 3bitr4i ) CFZBFZEGZUTDFZEG
-      ZHZVAVCIZSZBJZDJZCJZAFZVCEGZVDHZVKUTIZSZAJZDJCJZHZVKVAEGZVDHZVNVFUKZSZBJA
-      JZDJCJZEKZKLZWELZHWBDJCJBJAJWDVHVPHZDJCJVRWCWHCDWCVNVTVFSZSZVFVTVNSZSZHZB
-      JAJWJBJAJZWLBJZAJZHWHWBWMABWBVTVNVFSZVFVNSZHZSVTWQSZVTWRSZHWMWAWSVTVNVFUA
-      UBVTWQWRUCWTWJXAWLVTVNVFMVTVFVNMNUDOWJWLABPWNVHWPVPWNWJAJZBJVHWJABQXBVGBW
-      IVGACVGAUEVNVTVEVFVNVSVBVDVKUTVAEUFUGUHUITUJWOVOAWKVOBDVOBUEVFVTVMVNVFVSV
-      LVDVAVCVKEULUGUHUITNROVHVPCDPUMWFVJWGVQWFVBBUNZCJVGDJBJZCJVJCBEUOXCXDCVBV
-      DBDVAVCUTEULUPTXDVICVGBDQTRWGVLAUNZDJVOCJAJZDJZVQADEUQXEXFDVLVDACVKUTVCEU
-      FUPTXGVPCJZDJVQXFXHDVOACQTVPDCQUJRNWBABCDURUS $.
+      ( cv wbr wa weq wi wal wfun bi2.04 anbi12i 2albii 19.26-2 alcom nfv albii
+      anbi1d wb ccnv dfbi2 imbi2i pm4.76 breq1 imbi1d equsal bitri breq2 3bitri
+      3bitr2i bitr2i dffun2 brcnv imbi1i alrot3 3bitr4i alrot4 ) CFZBFZEGZUTDFZ
+      EGZHZBDIZJZBKZDKZCKZAFZVCEGZVDHZACIZJZAKZDKCKZHZVKVAEGZVDHZVNVFUAZJZBKAKZ
+      DKCKZELZEUBZLZHWBDKCKBKAKWDVHVPHZDKCKVRWCWHCDWCVNVTVFJZJZVFVTVNJZJZHZBKAK
+      WJBKAKZWLBKZAKZHWHWBWMABWBVTVNVFJZVFVNJZHZJVTWQJZVTWRJZHWMWAWSVTVNVFUCUDV
+      TWQWRUEWTWJXAWLVTVNVFMVTVFVNMNULOWJWLABPWNVHWPVPWNWJAKZBKVHWJABQXBVGBWIVG
+      ACVGARVNVTVEVFVNVSVBVDVKUTVAEUFTUGUHSUIWOVOAWKVOBDVOBRVFVTVMVNVFVSVLVDVAV
+      CVKEUJTUGUHSNUKOVHVPCDPUMWEVJWGVQWEVGDKBKZCKVJCBDEUNXCVICVGBDQSUIVCVKWFGZ
+      VCUTWFGZHZVNJZCKZAKDKVOCKZAKDKWGVQXHXIDAXGVOCXFVMVNXDVLXEVDVCVKEUOVCUTEUO
+      NUPSODACWFUNVOCDAUQURNWBABCDUSUR $.
 
     $( The union of a chain (with respect to inclusion) of functions is a
        function.  (Contributed by set.mm contributors, 10-Aug-2004.) $)
