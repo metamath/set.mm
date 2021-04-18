@@ -47901,15 +47901,11 @@ $)
       MAUHPTUE $.
   $}
 
-  $( A relation is transitive iff its converse is transitive.  (Contributed by
-     FL, 19-Sep-2011.) $)
-  relcnvtr $p |- ( Rel R ->
-     ( ( R o. R ) C_ R <-> ( `' R o. `' R ) C_ `' R ) ) $=
-    ( wrel ccom wss ccnv cnvco cnvss syl5eqssr wceq wi sseq1 dfrel2 coeq1 coeq2
-    eqtrd id sseq12d biimpd sylbi com12 syl6bi mpsyl impbid2 ) ABZAACZADZAEZUGC
-    ZUGDZUFUHUEEUGAAFUEAGHUIUDUFUHEZUGEZUKCZIZUIUJUKDZUDUFJZUGUGFUHUGGUMUNULUKD
-    ZUOUJULUKKUDUPUFUDUKAIZUPUFJALUQUPUFUQULUEUKAUQULAUKCUEUKAUKMUKAANOUQPQRSTU
-    AUBTUC $.
+  $( A class is transitive iff its converse is transitive.  (Contributed by
+     FL, 19-Sep-2011.) (Revised by Scott Fenton, 18-Apr-2021.) $)
+  cnvtr $p |- ( ( R o. R ) C_ R <-> ( `' R o. `' R ) C_ `' R ) $=
+    ( ccom wss ccnv cnvco cnvss syl5eqssr cnveqi cnvcnv eqtr3i 3sstr3g impbii )
+    AABZACZADZOBZOCZNPMDZOAAEZMAFGQPDZODMAPOFRDTMRPSHMIJAIKL $.
 
   ${
     $d x y A $.
