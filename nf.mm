@@ -43048,6 +43048,18 @@ $)
       SUE $.
   $}
 
+  ${
+     $d x y z A $. $d z ph $.
+     opabbi2i.1 $e |- ( <. x , y >. e. A <-> ph ) $.
+     $( Equality of a class variable and an ordered pair abstractions
+     	(inference rule). Compare ~ abbi2i .  (Contributed by Scott Fenton,
+	18-Apr-2021.) $)
+     opabbi2i $p |- A = { <. x , y >. | ph } $=
+       ( vz cv cop wceq wa wex cab copab wcel cvv opeqex ax-mp biantrur 19.41vv
+       vex eleq1 syl6bb pm5.32i 2exbii 3bitr2i abbi2i df-opab eqtr4i ) DFGZBGCG
+       HZIZAJZCKBKZFLABCMUMFDUIDNZUKCKBKZUNJUKUNJZCKBKUMUOUNUIONUOFTBCUIOPQRUKU
+       NBCSUPULBCUKUNAUKUNUJDNAUIUJDUAEUBUCUDUEUFABCFUGUH $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -55360,17 +55372,14 @@ $)
     $( The disjointedness relationship is a set.  (Contributed by SF,
        11-Feb-2015.) $)
     disjex $p |- Disj e. _V $=
-      ( vx vy vz cdisj cvv csset c1c cv wceq cop wa wex wcel wn 3bitr4i wel vex
-      opelssetsn bitri vvex cxp ctxp cima cdif cin c0 copab cab df-opab df-disj
-      elvv anbi1i eldif 19.41vv eleq1 notbid wral disj wrex csn oteltxp anbi12i
-      elima1c df-rex dfrex2 con2bii bitr2i syl6bb pm5.32i 2exbii abbi2i 3eqtr4i
-      exbii xpex ssetex txpex 1cex imaex difex eqeltri ) DEEUAZFFUBZGUCZUDZEAHZ
-      BHZUEUFIZABUGCHZWEWFJZIZWGKZBLALZCUHDWDWGABCUIABUJWLCWDWHWDMZWJWHWCMZNZKZ
-      BLALZWLWHWAMZWOKWJBLALZWOKWMWQWRWSWOABWHUKULWHWAWCUMWJWOABUNOWPWKABWJWOWG
-      WJWOWIWCMZNZWGWJWNWTWHWIWCUOUPWGCBPZNCWEUQZXACWEWFURWTXCWTXBCWEUSZXCNWHUT
-      ZWIJWBMZCLCAPZXBKZCLWTXDXFXHCXFXEWEJFMZXEWFJFMZKXHXEWEWFFFVAXIXGXJXBWHWEC
-      QZAQRWHWFXKBQRVBSVMCWIWBVCXBCWEVDOXBCWEVESVFVGVHVIVJSVKVLWAWCEETTVNWBGFFV
-      OVOVPVQVRVSVT $.
+      ( vx vy vz cdisj csset ctxp c1c cima ccompl cv wel wn cop wcel wex wa vex
+      opelssetsn bitri ssetex cvv cin c0 wceq df-disj wral wrex oteltxp anbi12i
+      copab csn exbii elima1c df-rex 3bitr4i con2bii disj opex elcompl 3bitr4ri
+      dfrex2 opabbi2i eqtr4i txpex 1cex imaex complex eqeltri ) DEEFZGHZIZUADAJ
+      ZBJZUBUCUDZABUJVKABUEVNABVKCBKZLCVLUFZVLVMMZVJNZLVNVQVKNVRVPVRVOCVLUGZVPL
+      CJZUKZVQMVINZCOCAKZVOPZCOVRVSWBWDCWBWAVLMENZWAVMMENZPWDWAVLVMEEUHWEWCWFVO
+      VTVLCQZAQZRVTVMWGBQZRUISULCVQVIUMVOCVLUNUOVOCVLVASUPCVLVMUQVQVJVLVMWHWIUR
+      USUTVBVCVJVIGEETTVDVEVFVGVH $.
   $}
 
   ${
