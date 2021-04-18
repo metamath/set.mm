@@ -43048,19 +43048,6 @@ $)
       SUE $.
   $}
 
-  ${
-     $d x y z A $. $d z ph $.
-     opabbi2i.1 $e |- ( <. x , y >. e. A <-> ph ) $.
-     $( Equality of a class variable and an ordered pair abstractions
-     	(inference rule). Compare ~ abbi2i .  (Contributed by Scott Fenton,
-	18-Apr-2021.) $)
-     opabbi2i $p |- A = { <. x , y >. | ph } $=
-       ( vz cv cop wceq wa wex cab copab wcel cvv opeqex ax-mp biantrur 19.41vv
-       vex eleq1 syl6bb pm5.32i 2exbii 3bitr2i abbi2i df-opab eqtr4i ) DFGZBGCG
-       HZIZAJZCKBKZFLABCMUMFDUIDNZUKCKBKZUNJUKUNJZCKBKUMUOUNUIONUOFTBCUIOPQRUKU
-       NBCSUPULBCUKUNAUKUNUJDNAUIUJDUAEUBUCUDUEUFABCFUGUH $.
-  $}
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                      Binary relations
@@ -45759,11 +45746,10 @@ $)
 
     $( A relation expressed as an ordered pair abstraction.  (Contributed by
        set.mm contributors, 11-Dec-2006.) $)
-    opabid2 $p |- ( Rel A -> { <. x , y >. | <. x , y >. e. A } = A ) $=
-      ( vz vw wrel cv cop wcel copab wceq wb wal vex opeq1 eleq1d opelopab gen2
-      opeq2 relopab eqrelOLD mpan mpbiri ) CFZAGZBGZHZCIZABJZCKZDGZEGZHZUIIUMCI
-      ZLZEMDMZUODEUHUKUFHZCIUNABUKULDNENUEUKKUGUQCUEUKUFOPUFULKUQUMCUFULUKSPQRU
-      IFUDUJUPLUHABTDEUICUAUBUC $.
+    opabid2 $p |- { <. x , y >. | <. x , y >. e. A } = A $=
+      ( vz vw cv cop wcel copab vex weq opeq1 eleq1d opeq2 opelopab eqrelriv )
+      DEAFZBFZGZCHZABICTDFZRGZCHUAEFZGZCHABUAUCDJEJADKSUBCQUARLMBEKUBUDCRUCUANM
+      OP $.
 
     $( Intersection of two ordered pair class abstractions.  (Contributed by
        NM, 30-Sep-2002.) $)
@@ -45796,15 +45782,26 @@ $)
       ( cxp cin inxp inidm xpeq2i eqtr2i ) ACDBCDEABEZCCEZDJCDACBCFKCJCGHI $.
   $}
 
+
+  ${
+     $d x y A $.
+     opabbi2i.1 $e |- ( <. x , y >. e. A <-> ph ) $.
+     $( Equality of a class variable and an ordered pair abstractions
+     	(inference rule). Compare ~ abbi2i .  (Contributed by Scott Fenton,
+	18-Apr-2021.) $)
+     opabbi2i $p |- A = { <. x , y >. | ph } $=
+       ( cv cop wcel copab opabid2 opabbii eqtr3i ) BFCFGDHZBCIDABCIBCDJMABCEKL
+       $.
+  $}
+
   ${
     $d x y A $.  $d x y ph $.
-    opabbi2dv.1 $e |- Rel A $.
-    opabbi2dv.3 $e |- ( ph -> ( <. x , y >. e. A <-> ps ) ) $.
+    opabbi2dv.1 $e |- ( ph -> ( <. x , y >. e. A <-> ps ) ) $.
     $( Deduce equality of a relation and an ordered-pair class builder.
        Compare ~ abbi2dv .  (Contributed by NM, 24-Feb-2014.) $)
     opabbi2dv $p |- ( ph -> A = { <. x , y >. | ps } ) $=
-      ( cv cop wcel copab wrel wceq opabid2 ax-mp opabbidv syl5eqr ) AECHDHIEJZ
-      CDKZBCDKELSEMFCDENOARBCDGPQ $.
+      ( cv cop wcel copab opabid2 opabbidv syl5eqr ) AECGDGHEIZCDJBCDJCDEKANBCD
+      FLM $.
   $}
 
   ${
