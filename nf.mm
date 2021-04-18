@@ -46311,16 +46311,12 @@ $)
     ( cxp wceq cdm dmeq dmxpid 3eqtr3g xpeq12 anidms impbii ) AACZBBCZDZABDZNLE
     MEABLMFAGBGHONABABIJK $.
 
-  ${
-    $d x y A $.  $d x y B $.
-    $( The first member of an ordered pair in a relation belongs to the domain
-       of the relation.  (Contributed by set.mm contributors, 28-Jul-2004.) $)
-    elreldm $p |- ( ( Rel A /\ B e. A ) -> Proj1 B e. dom A ) $=
-      ( vx vy cv cop wceq wex wrel wcel wa cproj1 elrel wi opeldm eleq1 proj1eq
-      cdm proj1op syl6eq eleq1d imbi12d mpbiri exlimivv adantld mpcom ) BCEZDEZ
-      FZGZDHCHZAIZBAJZKBLZARZJZCDBAMUKUMUPULUJUMUPNZCDUJUQUIAJZUGUOJZNUGUHAOUJU
-      MURUPUSBUIAPUJUNUGUOUJUNUILUGBUIQUGUHSTUAUBUCUDUEUF $.
-  $}
+  $( The first member of an ordered pair in a class belongs to the domain
+     of the class.  (Contributed by set.mm contributors, 28-Jul-2004.)
+     (Revised by Scott Fenton, 18-Apr-2021.) $)
+  proj1eldm $p |- ( B e. A -> Proj1 B e. dom A ) $=
+    ( wcel cproj1 cproj2 cop cdm opeq eleq1i opeldm sylbi ) BACBDZBEZFZACLAGC
+    BNABHILMAJK $.
 
   $( Equality theorem for restrictions.  (Contributed by set.mm contributors,
      7-Aug-1994.) $)
