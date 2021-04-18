@@ -47842,10 +47842,10 @@ $)
   $( Absorption of a reverse (preimage) restriction of the second member of a
      class composition.  (Contributed by set.mm contributors, 11-Dec-2006.) $)
   cores2 $p |- ( dom A C_ C -> ( A o. `' ( `' B |` C ) ) = ( A o. B ) ) $=
-    ( cdm wss ccnv cres ccom wceq df-dm sseq1i cores sylbi cnvco cocnvcnv1 wrel
-    crn relco dfrel2 mpbi eqtri 3eqtr4g cnveqd 3eqtr3g ) ADZCEZABFZCGZFZHZFZFZA
-    BHZFZFZUJUMUFUKUNUFUHAFZHZUGUPHZUKUNUFUPQZCEUQURIUEUSCAJKUGUPCLMUKUIFUPHUQA
-    UINUHUPOUAABNUBUCUJPULUJIAUIRUJSTUMPUOUMIABRUMSTUD $.
+    ( cdm wss ccnv cres ccom cnvcnv coeq1i wceq df-dm sseq1i cores sylbi syl5eq
+    crn cnvco 3eqtr4g cnveqd 3eqtr3g ) ADZCEZABFZCGZFZHZFZFABHZFZFUGUIUCUHUJUCU
+    FFZAFZHZUDULHZUHUJUCUMUEULHZUNUKUEULUEIJUCULQZCEUOUNKUBUPCALMUDULCNOPAUFRAB
+    RSTUGIUIIUA $.
 
   ${
     $d x y z A $.
