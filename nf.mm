@@ -48159,11 +48159,6 @@ $)
       UOBUGCRSTUADACUBUIUHAUCUDUHUJAUEUF $.
   $}
 
-  $( A function is a relation.  (Contributed by set.mm contributors,
-     1-Aug-1994.) $)
-  funrel $p |- ( Fun A -> Rel A ) $=
-    ( wrel wfun relall a1i ) ABACADE $.
-
   ${
     $d x y z A $.  $d x y z B $.
     $( Subclass theorem for function predicate.  (The proof was shortened by
@@ -48614,8 +48609,8 @@ $)
      function restricted to the image of its converse.  (Contributed by set.mm
      contributors, 4-May-2005.) $)
   funcnvres2 $p |- ( Fun F -> `' ( `' F |` A ) = ( F |` ( `' F " A ) ) ) $=
-    ( wfun ccnv cres cima wceq funcnvcnv funcnvres syl wrel funrel dfrel2 sylib
-    reseq1d eqtrd ) BCZBDZAEDZRDZRAFZEZBUAEQTCSUBGBHARIJQTBUAQBKTBGBLBMNOP $.
+    ( wfun ccnv cres cima wceq cnvcnv funeqi funcnvres sylbir reseq1i syl6eq )
+    BCZBDZAEDZODZOAFZEZBRENQCPSGQBBHZIAOJKQBRTLM $.
 
   $( The image of the preimage of a function.  (Contributed by set.mm
      contributors, 25-May-2004.) $)
