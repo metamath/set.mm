@@ -45728,10 +45728,6 @@ $)
     $}
   $}
 
-  $( The empty set is a relation.  (Contributed by NM, 26-Apr-1998.) $)
-  rel0 $p |- Rel (/) $=
-    ( c0 wrel cvv cxp wss 0ss df-rel mpbir ) ABACCDZEIFAGH $.
-
   ${
     $d ph z $.  $d u v x z $.  $d u v y z $.
     relopabi.1 $e |- A = { <. x , y >. | ph } $.
