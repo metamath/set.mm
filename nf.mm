@@ -46901,10 +46901,10 @@ $)
       ABUAUBUCUD $.
   $}
 
-  $( A relation restricted to its domain equals itself.  (Contributed by set.mm
-     contributors, 12-Dec-2006.) $)
-  resdm $p |- ( Rel A -> ( A |` dom A ) = A ) $=
-    ( wrel cdm wss cres wceq ssid relssres mpan2 ) ABACZJDAJEAFJGAJHI $.
+  $( A class restricted to its domain equals itself.  (Contributed by set.mm
+     contributors, 12-Dec-2006.) (Revised by Scott Fenton, 18-Apr-2021.) $)
+  resdm $p |- ( A |` dom A ) = A $=
+    ( cdm wss cres wceq ssid ssreseq ax-mp ) ABZICAIDAEIFAIGH $.
 
   ${
     $d x y A $.
@@ -47696,12 +47696,6 @@ $)
       GUH $.
   $}
 
-  $( A class restricted to its domain equals its double converse.  (Contributed
-     by set.mm contributors, 8-Apr-2007.) $)
-  resdm2 $p |- ( A |` dom A ) = `' `' A $=
-    ( ccnv cdm cres rescnvcnv wrel relcnv resdm ax-mp dmcnvcnv reseq2i 3eqtr3ri
-    wceq ) ABZBZOCZDZAPDOAACZDAPEOFQOMNGOHIPRAAJKL $.
-
   $( Restriction to the domain of a restriction.  (Contributed by set.mm
      contributors, 8-Apr-2007.) $)
   resdmres $p |- ( A |` dom ( A |` B ) ) = ( A |` B ) $=
@@ -47826,18 +47820,6 @@ $)
       RSUAUTUQADUBUCUDVAAGDUEUCGUMUPBUIUFVEVDUKOZADMVCAVDDUKPVJVBADGUMUPBCUFRUG
       SUH $.
   $}
-
-  $( A composition is not affected by a double converse of its first argument.
-     (Contributed by set.mm contributors, 8-Oct-2007.) $)
-  cocnvcnv1 $p |- ( `' `' A o. B ) = ( A o. B ) $=
-    ( ccnv ccom cvv cres cnvcnv2 coeq1i crn wss wceq ssv cores ax-mp eqtri ) AC
-    CZBDAEFZBDZABDZPQBAGHBIZEJRSKTLABEMNO $.
-
-  $( A composition is not affected by a double converse of its second
-     argument.  (Contributed by set.mm contributors, 8-Oct-2007.) $)
-  cocnvcnv2 $p |- ( A o. `' `' B ) = ( A o. B ) $=
-    ( ccnv ccom cres cnvcnv2 coeq2i resco wrel wceq relco dfrel3 mpbi 3eqtr2i
-    cvv ) ABCCZDABOEZDABDZOEZRPQABFGABOHRISRJABKRLMN $.
 
   $( Absorption of a reverse (preimage) restriction of the second member of a
      class composition.  (Contributed by set.mm contributors, 11-Dec-2006.) $)
