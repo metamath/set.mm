@@ -49385,17 +49385,15 @@ $)
       BDEZBCFZGACDHZDIJZACDERABDHZSTABDKABCDLMRUASRUBUAABDNOPACDNQ $.
   $}
 
-  $( Two ways to express that a set ` A ` (not necessarily a function) is
-     one-to-one.  Each side is equivalent to Definition 6.4(3) of
-     [TakeutiZaring] p. 24, who use the notation "Un_2 (A)" for one-to-one.  We
-     do not introduce a separate notation since we rarely use it.  (Contributed
-     by set.mm contributors, 13-Aug-2004.) $)
-  f1cnvcnv $p |- ( `' `' A : dom A -1-1-> _V
-             <-> ( Fun `' A /\ Fun `' `' A ) ) $=
-    ( cdm cvv ccnv wf1 wf wfun wa df-f1 wfn dffn2 wceq dmcnvcnv mpbiran2 bitr3i
-    df-fn wrel relcnv dfrel2 mpbi funeqi anbi12i ancom 3bitri ) ABZCADZDZEUECUG
-    FZUGDZGZHUGGZUFGZHULUKHUECUGIUHUKUJULUHUGUEJZUKUEUGKUMUKUGBUELAMUGUEPNOUIUF
-    UFQUIUFLARUFSTUAUBUKULUCUD $.
+  $( Two ways to express that a set ` A ` is one-to-one.  Each side is equivalent
+     to Definition 6.4(3) of [TakeutiZaring] p. 24, who use the notation
+     "Un_2 (A)" for one-to-one.  We do not introduce a separate notation since we
+     rarely use it.  (Contributed by set.mm contributors, 13-Aug-2004.) (Revised
+     by Scott Fenton, 18-Apr-2021.) $)
+  f1funfun $p |- ( A : dom A -1-1-> _V <-> ( Fun `' A /\ Fun A ) ) $=
+    ( cdm cvv wf1 wf ccnv wfun df-f1 ancom wfn crn wss ssv df-f mpbiran2 bitr4i
+    wa funfn anbi2i 3bitri ) ABZCADUACAEZAFGZQUCUBQUCAGZQUACAHUBUCIUBUDUCUBAUAJ
+    ZUDUBUEAKZCLUFMUACANOARPST $.
 
   $( Composition of one-to-one functions.  Exercise 30 of [TakeutiZaring]
      p. 25.  (Contributed by set.mm contributors, 28-May-1998.) $)
@@ -49568,11 +49566,6 @@ $)
      contributors, 12-Dec-2003.) $)
   f1ofun $p |- ( F : A -1-1-onto-> B -> Fun F ) $=
     ( wf1o wfn wfun f1ofn fnfun syl ) ABCDCAECFABCGACHI $.
-
-  $( A one-to-one onto mapping is a relation.  (Contributed by set.mm
-     contributors, 13-Dec-2003.) $)
-  f1orel $p |- ( F : A -1-1-onto-> B -> Rel F ) $=
-    ( wf1o wfun wrel f1ofun funrel syl ) ABCDCECFABCGCHI $.
 
   $( The domain of a one-to-one onto mapping.  (Contributed by set.mm
      contributors, 8-Mar-2014.) $)
@@ -49790,9 +49783,8 @@ $)
      the identity relation restricted to the function's domain.  (Contributed
      by set.mm contributors, 13-Dec-2003.) $)
   f1ococnv1 $p |- ( F : A -1-1-onto-> B -> ( `' F o. F ) = ( _I |` A ) ) $=
-    ( wf1o ccnv ccom cres wrel wceq f1orel dfrel2 sylib coeq2d f1ocnv f1ococnv2
-    cid syl eqtr3d ) ABCDZCEZTEZFZTCFPAGZSUACTSCHUACIABCJCKLMSBATDUBUCIABCNBATO
-    QR $.
+    ( wf1o ccnv ccom cid cres cnvcnv coeq2i wceq f1ocnv f1ococnv2 syl syl5eqr )
+    ABCDZCEZCFQQEZFZGAHZRCQCIJPBAQDSTKABCLBAQMNO $.
 
   $( The converse of an injective function is bijective.  (Contributed by FL,
      11-Nov-2011.) $)
@@ -51556,9 +51548,8 @@ $)
      (Contributed by set.mm contributors, 20-May-2004.) $)
   f1ocnvfv2 $p |- ( ( F : A -1-1-onto-> B /\ C e. B ) ->
                  ( F ` ( `' F ` C ) ) = C ) $=
-    ( wf1o wcel ccnv cfv wceq wrel f1orel dfrel2 fveq1d adantr f1ocnv f1ocnvfv1
-    wa sylib sylan eqtr3d ) ABDEZCBFZQCDGZHZUCGZHZUDDHZCUAUFUGIUBUAUDUEDUADJUED
-    IABDKDLRMNUABAUCEUBUFCIABDOBACUCPST $.
+    ( wf1o wcel wa ccnv cfv cnvcnv fveq1i wceq f1ocnv f1ocnvfv1 sylan syl5eqr )
+    ABDEZCBFZGCDHZIZDITSHZIZCTUADDJKQBASERUBCLABDMBACSNOP $.
 
   $( Relationship between the value of a one-to-one onto function and the value
      of its converse.  (Contributed by Raph Levien, 10-Apr-2004.) $)
