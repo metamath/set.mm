@@ -45011,7 +45011,7 @@ $)
     df-xp $a |- ( A X. B ) = { <. x , y >. | ( x e. A /\ y e. B ) } $.
 
     $( Define the relation predicate.  Definition 6.4(1) of [TakeutiZaring]
-       p. 23.  For alternate definitions, see ~ dfrel2 and ~ dfrel3 .
+       p. 23.  For alternate definitions, see ~ dfrel2 .
        (Contributed by SF, 5-Jan-2015.) $)
     df-rel $a |- ( Rel A <-> A C_ ( _V X. _V ) ) $.
 
@@ -47638,12 +47638,6 @@ $)
       ( cop csn crn cuni rnsnop unieqi unisn eqtri ) ABEFGZHBFZHBMNABCIJBDKL $.
   $}
 
-  $( Alternate definition of relation.  (Contributed by set.mm contributors,
-     14-May-2008.) $)
-  dfrel3 $p |- ( Rel R <-> ( R |` _V ) = R ) $=
-    ( wrel ccnv wceq cvv cres dfrel2 cnvcnv2 eqeq1i bitri ) ABACCZADAEFZADAGKLA
-    AHIJ $.
-
   $( The domain of a universal restriction.  (Contributed by set.mm
      contributors, 14-May-2008.) $)
   dmresv $p |- dom ( A |` _V ) = dom A $=
@@ -47653,26 +47647,6 @@ $)
      contributors, 14-May-2008.) $)
   rnresv $p |- ran ( A |` _V ) = ran A $=
     ( crn cvv cima cres df-rn dfima3 eqtr2i ) ABACDACEBAFACGH $.
-
-  $( The restriction of the double converse of a class.  (The proof was
-     shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
-     contributors, 8-Apr-2007.)  (Revised by set.mm contributors,
-     27-Aug-2011.) $)
-  rescnvcnv $p |- ( `' `' A |` B ) = ( A |` B ) $=
-    ( ccnv cres cvv cin cnvcnv2 reseq1i resres wss wceq ssv sseqin2 mpbi 3eqtri
-    reseq2i ) ACCZBDAEDZBDAEBFZDABDQRBAGHAEBISBABEJSBKBLBEMNPO $.
-
-  $( The double converse of the restriction of a class.  (Contributed by set.mm
-     contributors, 3-Jun-2007.) $)
-  cnvcnvres $p |- `' `' ( A |` B ) = ( `' `' A |` B ) $=
-    ( cres ccnv wrel wceq relres dfrel2 mpbi rescnvcnv eqtr4i ) ABCZDDZLADDBCLE
-    MLFABGLHIABJK $.
-
-  $( The image of the double converse of a class.  (Contributed by set.mm
-     contributors, 8-Apr-2007.) $)
-  imacnvcnv $p |- ( `' `' A " B ) = ( A " B ) $=
-    ( ccnv cres crn cima rescnvcnv rneqi dfima3 3eqtr4i ) ACCZBDZEABDZEKBFABFLM
-    ABGHKBIABIJ $.
 
   ${
     $d s t A $.  $d s t B $.  $d s t F $.
@@ -47690,10 +47664,10 @@ $)
   $( Restriction to the domain of a restriction.  (Contributed by set.mm
      contributors, 8-Apr-2007.) $)
   resdmres $p |- ( A |` dom ( A |` B ) ) = ( A |` B ) $=
-    ( cres cdm ccnv cvv cxp in12 df-res resdm2 eqtr3i ineq2i incom 3eqtri dmres
-    cin xpeq1i xpindir eqtri 3eqtr4i rescnvcnv ) AABCZDZCZAEEZBCZUBABFGZADZFGZP
-    ZPZUEUGPZUDUFUKUGAUIPZPUGUEPULAUGUIHUMUEUGAUHCUMUEAUHIAJKLUGUEMNUDAUCFGZPUK
-    AUCIUNUJAUNBUHPZFGUJUCUOFABOQBUHFRSLSUEBITABUAS $.
+    ( cvv cxp cdm cin cres df-res resdm eqtr3i ineq2i incom 3eqtri dmres xpeq1i
+    in12 xpindir eqtri 3eqtr4i ) ABCDZAEZCDZFZFZATFZAABGZEZGZUFUDTAUBFZFTAFUEAT
+    UBPUIATAUAGUIAAUAHAIJKTALMUHAUGCDZFUDAUGHUJUCAUJBUAFZCDUCUGUKCABNOBUACQRKRA
+    BHS $.
 
   $( The image of the domain of a restriction.  (Contributed by set.mm
      contributors, 8-Apr-2007.) $)
