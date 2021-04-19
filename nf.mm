@@ -55744,32 +55744,28 @@ $)
 
   ${
     $d x y z $.
-    $( The domain of the cross product function.  (Contributed by SF,
-       24-Feb-2015.) $)
-    dmcross $p |- dom Cross = ( _V X. _V ) $=
-      ( vz vx vy cv cxp wceq wex copab cvv wcel wa ccross cdm vex isseti pm3.2i
-      xpex 2th opabbii eqtri coprab cmpt2 df-cross mpt2v dmeqi dmoprab 3eqtr4i
-      df-xp ) ADBDZCDZEZFZAGZBCHZUIIJZUJIJZKZBCHLMZIIEUMUQBCUMUQAUKUIUJBNZCNZQO
-      UOUPUSUTPRSURULBCAUAZMUNLVALBCIIUKUBVABCUCBCAUKUDTUEULBCAUFTBCIIUHUG $.
-
     $( The cross product function is a function over ` ( _V X. _V ) `
        (Contributed by SF, 24-Feb-2015.) $)
-    fncross $p |- Cross Fn ( _V X. _V ) $=
-      ( vz vx vy ccross cvv cxp wfn wfun cdm wceq cv coprab moeq funoprab cmpt2
-      df-cross mpt2v eqtri funeqi mpbir dmcross df-fn mpbir2an ) DEEFZGDHZDIUDJ
-      UEAKBKCKFZJZBCALZHUGBCAAUFMNDUHDBCEEUFOUHBCPBCAUFQRSTUADUDUBUC $.
+    fncross $p |- Cross Fn _V $=
+      ( vx vy ccross cvv cxp wfn cv df-cross vex xpex fnmpt2i xpvv fneq2i mpbi
+      ) CDDEZFCDFABDDAGZBGZECABHPQAIBIJKODCLMN $.
   $}
+
+  $( The domain of the cross product function.  (Contributed by SF,
+     24-Feb-2015.) $)
+  dmcross $p |- dom Cross = _V $=
+    ( ccross cvv wfn cdm wceq fncross fndm ax-mp ) ABCADBEFBAGH $.
+
 
   ${
     $( Binary relationship over the cross product function.  (Contributed by
        SF, 24-Feb-2015.) $)
     brcrossg $p |- ( ( A e. V /\ B e. W ) ->
        ( <. A , B >. Cross C <-> C = ( A X. B ) ) ) $=
-      ( wcel wa ccross wceq cop wbr cxp cfv eqcom df-ov eqeq1i bitri cvv elex
-      co wb opelxp wfn fncross fnbrfvb mpan sylbir syl2an syl5bb ovcross eqeq2d
-      bitr3d ) ADFZBEFZGZCABHTZIZABJZCHKZCABLZIUQURHMZCIZUOUSUQUPCIVBCUPNUPVACA
-      BHOPQUMARFZBRFZVBUSUAZUNADSBESVCVDGURRRLZFZVEABRRUBHVFUCVGVEUDVFURCHUEUFU
-      GUHUIUOUPUTCABDEUJUKUL $.
+      ( wcel wa ccross co wceq cop wbr cxp cfv eqcom df-ov eqeq1i bitri cvv wfn
+      wb fncross opexg fnbrfvb sylancr syl5bb ovcross eqeq2d bitr3d ) ADFBEFGZC
+      ABHIZJZABKZCHLZCABMZJULUMHNZCJZUJUNULUKCJUQCUKOUKUPCABHPQRUJHSTUMSFUQUNUA
+      UBABDEUCSUMCHUDUEUFUJUKUOCABDEUGUHUI $.
   $}
 
   ${
