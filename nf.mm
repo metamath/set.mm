@@ -53455,6 +53455,29 @@ $)
     $}
   $}
 
+  ${
+     $d x y z w t u A $.
+     $( Identity law for operator abstractions.  (Contributed by Scott Fenton,
+        19-Apr-2021.) $)
+     oprabid2 $p |- { <. <. x , y >. , z >. | <. <. x , y >. , z >. e. A }
+     	      	 = A $=
+       ( vw vt vu cv cop wcel coprab cvv wb vex weq opeq1 opeq1d opeq2 eloprabg
+       eleq1d mp3an eqoprriv ) EFGAHZBHZIZCHZIZDJZABCKZDEHZLJFHZLJGHZLJUJUKIZUL
+       IZUIJUNDJZMENFNGNUHUJUDIZUFIZDJUMUFIZDJUOABCUJUKULLLLAEOZUGUQDUSUEUPUFUC
+       UJUDPQTBFOZUQURDUTUPUMUFUDUKUJRQTCGOURUNDUFULUMRTSUAUB $.
+  $}
+
+  ${
+    $d x y z A $.
+    oprabbi2i.1 $e |- ( <. <. x , y >. , z >. e. A <-> ph ) $.
+    $( Biconditional for operators.  (Contributed by Scott Fenton,
+       19-Apr-2021.) $)
+    oprabbi2i $p |- A = { <. <. x , y >. , z >. | ph } $=
+      ( cv cop wcel coprab oprabid2 oprabbii eqtr3i ) BGCGHDGHEIZBCDJEABCDJBCDE
+      KNABCDFLM $.
+  $}
+
+
   $( Eliminate antecedent for operator values: domain and range can be taken to
      be a set.  (Contributed by set.mm contributors, 25-Feb-2015.) $)
   elovex12 $p |- ( A e. ( B F C ) -> ( B e. _V /\ C e. _V ) ) $=
