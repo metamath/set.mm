@@ -54168,19 +54168,28 @@ $)
       ECDGHEAIZCJBIZDJKFITUAELZMKABFNZMEABCDUBOZMABFCDEPUDUCEABFCDUBQRS $.
 
   $}
-
   ${
-    $d w x y z A $.  $d w x y z B $.  $d w x y C $.  $d w z D $.
+    $d w x y z A $.  $d w y z B $.  $d w x y C $.  $d w z D $.
     mpt2mpt.1 $e |- ( z = <. x , y >. -> C = D ) $.
     $( Express a two-argument function as a one-argument function, or
-       vice-versa.  (Contributed by Mario Carneiro, 17-Dec-2013.) $)
+       vice-versa.  In this version ` B ( x ) ` is not assumed to be constant
+       w.r.t ` x ` .  (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+    mpt2mptx $p |- ( z e. U_ x e. A ( { x } X. B ) |-> C ) =
+      ( x e. A , y e. B |-> D ) $=
+      ( vw cv csn cxp ciun cmpt wcel wceq wa copab wex eqtr4i df-mpt coprab cop
+      cmpt2 df-mpt2 eliunxp anbi1i 19.41vv eqeq2d anbi2d pm5.32i 2exbii 3bitr2i
+      anass bitri opabbii dfoprab2 ) CADAJZKELMZFNCJZUSOZIJZFPZQZCIRZABDEGUDZCI
+      USFUAVFURDOBJZEOQZVBGPZQZABIUBZVEABIDEGUEVEUTURVGUCPZVJQZBSASZCIRVKVDVNCI
+      VDVLVHQZBSASZVCQVOVCQZBSASVNVAVPVCABDEUTUFUGVOVCABUHVQVMABVQVLVHVCQZQVMVL
+      VHVCUNVLVRVJVLVCVIVHVLFGVBHUIUJUKUOULUMUPVJABICUQTTT $.
+
+    $d x B $.
+    $( Express a two-argument function as a one-argument function, or
+       vice-versa.  (Contributed by Mario Carneiro, 17-Dec-2013.)  (Revised by
+       Mario Carneiro, 29-Dec-2014.) $)
     mpt2mpt $p |- ( z e. ( A X. B ) |-> C ) = ( x e. A , y e. B |-> D ) $=
-      ( vw cv cxp wcel wceq wa copab coprab cmpt cmpt2 cop wex elxp anass bitri
-      anbi1i 19.41vv eqeq2d anbi2d pm5.32i 2exbii 3bitr2i opabbii eqtr4i df-mpt
-      dfoprab2 df-mpt2 3eqtr4i ) CJZDEKZLZIJZFMZNZCIOZAJZDLBJZELNZUTGMZNZABIPZC
-      URFQABDEGRVCUQVDVESMZVHNZBTATZCIOVIVBVLCIVBVJVFNZBTATZVANVMVANZBTATVLUSVN
-      VAABUQDEUAUDVMVAABUEVOVKABVOVJVFVANZNVKVJVFVAUBVJVPVHVJVAVGVFVJFGUTHUFUGU
-      HUCUIUJUKVHABICUNULCIURFUMABIDEGUOUP $.
+      ( cv csn cxp ciun cmpt cmpt2 wceq iunxpconst mpteq1 ax-mp mpt2mptx eqtr3i
+      ) CADAIJEKLZFMZCDEKZFMZABDEGNUAUCOUBUDOADEPCUAUCFQRABCDEFGHST $.
   $}
 
   ${
@@ -57782,8 +57791,12 @@ $)
     $( Partial function exponentiation has a universal domain.  (Contributed by
        set.mm contributors, 14-Nov-2013.) (Revised by Scott Fenton,
        19-Apr-2019.) $)
-    fnpm $p |- ^pm Fn _V $= ?
-      $.
+    fnpm $p |- ^pm Fn _V $=
+      ( vx vy vf cpm cvv cxp wfn cv wfun cpw crab df-pm cfuns cin wcel cab elin
+      wa vex mpbi abbi2i df-rab wral wceq elfuns rgenw 3eqtr2i xpex pwex funsex
+      wb rabbi inex eqeltrri fnmpt2i xpvv fneq2i ) DEEFZGDEGABEECHZIZCBHZAHZFZJ
+      ZKZDABCLVDMNZVEEVFUSVDOUSMOZRZCPVGCVDKZVEVHCVFUSVDMQUAVGCVDUBVGUTUKZCVDUC
+      VIVEUDVJCVDUSCSUEUFVGUTCVDULTUGVDMVCVAVBBSASUHUIUJUMUNUOUREDUPUQT $.
   $}
 
   ${
