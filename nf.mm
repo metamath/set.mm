@@ -62680,6 +62680,96 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+       Cantorian and Strongly Cantorian Sets
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+  $c Can $. $( Cantorian class $)
+  $c SCan $. $( Strongly Cantorian class $)
+
+  $( Extend the definition of class to include the class of all Cantorian
+     sets. $)
+  ccan $a class Can $.
+
+  $( Define the class of all Cantorian sets.  These are so-called because
+     Cantor's Theorem ` A ~< ~P A ` holds for these sets.  (Contributed by
+     Scott Fenton, 19-Apr-2021.) $)
+  df-can $a |- Can = { x | ~P1 x ~~ x } $.
+
+  $( Extend the definition of class to include the class of all strongly
+     Cantorian sets. $)
+  cscan $a class SCan $.
+  
+  ${
+     $d x y $.
+     $( Define the class of strongly Cantorian sets.  Unline general Cantorian
+        sets, this fixes a specific mapping between ` x ` and ` ~P1 x ` .
+	(Contributed by Scott Fenton, 19-Apr-2021.) $)
+     df-scan $a |- SCan = { x | ( y e. x |-> { y } ) e. _V } $.
+  $}
+
+  ${
+     $d A x y $.
+     $( Membership in the class of Cantorian sets.  (Contributed by Scott
+        Fenton, 19-Apr-2021.) $)
+     elcan $p |- ( A e. Can <-> ~P1 A ~~ A ) $=
+       ( vx ccan wcel cvv cpw1 cen wbr elex brrelrnex wceq pw1eq breq12d df-can
+       cv id elab2g pm5.21nii ) ACDAEDAFZAGHZACISAGJBOZFZUAGHTBACEUAAKZUBSUAAGU
+       AALUCPMBNQR $.
+
+     $( Membership in the class of strongly Cantorian sets.  (Contributed by
+        Scott Fenton, 19-Apr-2021.) $)
+     elscan $p |- ( A e. SCan <-> ( x e. A |-> { x } ) e. _V ) $=
+       ( vy cscan wcel cvv cv csn cmpt elex cdm crab cab df-rab eqid dmmpt snex
+       wa biantru abbi2i 3eqtr4i syl5eqelr wceq mpteq1 eleq1d df-scan pm5.21nii
+       dmexg elab2g ) BDEBFEABAGZHZIZFEZBDJUMBULKZFUKFEZABLUJBEZUORZAMUNBUOABNA
+       BUKULULOPUQABUOUPUJQSTUAULFUHUBACGZUKIZFEUMCBDFURBUCUSULFAURBUKUDUECAUFU
+       IUG $.
+   $}
+
+   ${
+      $d A x y z w $.
+      $( Strongly Cantorian implies Cantorian.  (Contributed by Scott Fenton,
+         19-Apr-2021.) $)
+      scancan $p |- ( A e. SCan -> A e. Can ) $=
+        ( vx vy vz cv csn cmpt cvv wcel cpw1 cen wbr cscan wfn ccnv wceq weu wa
+        weq copab ccan wf1o snex eqid fnmpti wrex elpw1 euequ1 eqeq1 vex equcom
+        sneqb bitri syl6bb eubidv mpbiri rexlimivw sylbi df-mpt cnvopab snelpw1
+        cnveqi eleq1 syl6rbb pm5.32ri opabbii 3eqtri fnopab dff1o4 f1oeng mpan2
+        mpbir2an ensymi syl elscan elcan 3imtr4i ) BABEZFZGZHIZAJZAKLZAMIAUAIWA
+        AWBKLZWCWAAWBVTUBZWDWEVTANVTOZWBNBAVSVTVRUCVTUDUECEZVSPZCBWBWFWGWBIZWGD
+        EZFZPZDAUFWHBQZDWGAUGWLWMDAWLWMBDSZBQBDUHWLWHWNBWLWHWKVSPZWNWGWKVSUIWOD
+        BSWNWJVRDUJULDBUKUMUNUOUPUQURWFVRAIZWHRZBCTZOWQCBTWIWHRZCBTVTWRBCAVSUSV
+        BWQBCUTWQWSCBWHWPWIWHWIVSWBIWPWGVSWBVCVRAVAVDVEVFVGVHAWBVTVIVLAWBHVTVJV
+        KAWBVMVNBAVOAVPVQ $.
+
+   $}
+
+   ${
+      $d A x y $.
+      $( Alternate condition for strong Cantorhood.  This expresses
+         the main reason we are interested in strongly Cantorian sets.
+	 Since ` _E |`` A ` is realized, we can ignore stratification
+	 when quantifying over strongly Cantorian sets.  (Contributed by
+	 Scott Fenton, 19-Apr-2021.) $)
+      elscan2 $p |- ( A e. SCan <-> ( _E |` A ) e. _V ) $=
+        ( vx vy vz vw wcel cv csn cvv cep csset wceq wbr wa wex snex vex syl6bb
+        anbi1i bitri cscan cmpt cres elscan ccom wel breq1 brssetsn anbi1d epel
+        ceqsexv bitr4i brco cdm cfv wfun funmpt funbrfv2b ax-mp ancom crab eqid
+        dmmpt cab biantru abbi2i df-rab eqtr4i eleq2i anbi2i fvmpt eqeq1d eqcom
+        wb sneq pm5.32ri an12 exbii brres 3bitr4i eqbrriv ssetex mpan syl5eqelr
+        coexg impbii ) AUAFBABGZHZUBZIFZJAUCZIFZBAUDWJWLWJWKKWIUEZICDWMWKEGZCGZ
+        HZLZWNDGZKMZWOAFZNZNZEOZWOWRJMZWTNZWOWRWMMZWOWRWKMXCCDUFZWTNZXEXAXHEWPW
+        OPZWQWSXGWTWQWSWPWRKMXGWNWPWRKUGWOWRCQDQUHRUIUKXDXGWTCDUJSULXFWOWNWIMZW
+        SNZEOXCEWOWRKWIUMXKXBEXKWQWTNZWSNZXBXJXLWSXJWOWIUNZFZWOWIUOZWNLZNZXLWIU
+        PXJXRVNBAWHUQWOWNWIURUSXRXQXONZXLXOXQUTXSXQWTNXLXOWTXQXNAWOXNWHIFZBAVAZ
+        ABAWHWIWIVBZVCAWGAFZXTNZBVDYAYDBAXTYCWGPVEVFXTBAVGVHVHVIVJWTXQWQWTXQWPW
+        NLWQWTXPWPWNBWOWHWPAWIWGWOVOYBXIVKVLWPWNVMRVPTTTSXMWSXLNXBXLWSUTWSWQWTV
+        QTTVRTWOWRJAVSVTWAKIFWJWMIFWBKWIIIWEWCWD?WFT $.
+    $}
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
