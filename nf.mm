@@ -42841,10 +42841,11 @@ $)
     $( Any set is equal to some ordered pair.  (Contributed by Scott Fenton,
        16-Apr-2021.) $)
     opeqex $p |- ( A e. V -> E. x E. y A = <. x , y >. ) $=
-      ( wcel cproj1 cvv cop wceq wex proj1exg cproj2 proj2exg opeq opeq2 eqeq2d
-      cv spcegv ee10 opeq1 exbidv sylc ) CDEZCFZGECUDBQZHZIZBJZCAQZUEHZIZBJZAJC
-      DKUCCLZGECUDUMHZIZUHCDMCNUGUOBUMGUEUMIUFUNCUEUMUDOPRSULUHAUDGUIUDIZUKUGBU
-      PUJUFCUIUDUETPUARUB $.
+      ( wcel cproj1 cvv cproj2 cv cop wceq wex proj1exg proj2exg wa opeq eqeq1i
+      eeanv eqcom isset opth 3bitri 2exbii anbi12i 3bitr4i sylanbrc ) CDECFZGEZ
+      CHZGEZCAIZBIZJZKZBLALZCDMCDNUKUGKZULUIKZOZBLALUPALZUQBLZOUOUHUJOUPUQABRUN
+      URABUNUGUIJZUMKUMVAKURCVAUMCPQVAUMSUKULUGUIUAUBUCUHUSUJUTAUGTBUITUDUEUF
+      $.
 
     $( A class is a set iff it is equal to an ordered pair.  (Contributed by
        Scott Fenton, 19-Apr-2021.) $)
