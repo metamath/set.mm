@@ -57779,14 +57779,10 @@ $)
     $d f x y z $.
     $( Set exponentiation has a universal domain.  (Contributed by set.mm
        contributors, 8-Dec-2003.)  (Revised by set.mm contributors,
-       8-Sep-2013.) $)
-    fnmap $p |- ^m Fn ( _V X. _V ) $=
-      ( vz vy vx vf cmap cvv cxp wfn cv cab wceq coprab wfun cdm funoprab copab
-      wf moeq wcel vex wex mapexi isseti pm3.2i 2th opabbii dmoprab df-xp df-fn
-      wa 3eqtr4i mpbir2an cmpt2 df-map mpt2v eqtri fneq1i mpbir ) EFFGZHAIBIZCI
-      ZDIQDJZKZCBALZUSHZVEVDMVDNZUSKVCCBAAVBROVCAUAZCBPVAFSZUTFSZUJZCBPVFUSVGVJ
-      CBVGVJAVBUTVADBTZCTZUBUCVHVIVLVKUDUEUFVCCBAUGCBFFUHUKVDUSUIULUSEVDECBFFVB
-      UMVDCBDUNCBAVBUOUPUQUR $.
+       8-Sep-2013.) (Revised by Scott Fenton, 19-Apr-2019.) $)
+    fnmap $p |- ^m Fn _V $=
+      ( vx vy vf cmap cvv cxp wfn cv wf cab df-map vex mapexi fnmpt2i xpvv mpbi
+      fneq2i ) DEEFZGDEGABEEBHZAHZCHICJDABCKSTCBLALMNREDOQP $.
 
     $( Partial function exponentiation has a universal domain.  (Contributed by
        set.mm contributors, 14-Nov-2013.) (Revised by Scott Fenton,
