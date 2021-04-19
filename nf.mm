@@ -45636,14 +45636,6 @@ $)
       CMNOEFACPEFBDPQ $.
   $}
 
-  ${
-    $d x y z A $.  $d x y z B $.
-    $( A cross product is included in the ordered pair universe.  Exercise 3 of
-       [TakeutiZaring] p. 25.  (Contributed by NM, 2-Aug-1994.) $)
-    xpss $p |- ( A X. B ) C_ ( _V X. _V ) $=
-      ( cvv wss cxp ssv xpss12 mp2an ) ACDBCDABECCEDAFBFACBCGH $.
-  $}
-
   $( Subset relation for cross product.  (Contributed by Jeff Hankins,
      30-Aug-2009.) $)
   xpss1 $p |- ( A C_ B -> ( A X. C ) C_ ( B X. C ) ) $=
