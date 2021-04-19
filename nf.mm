@@ -55234,26 +55234,22 @@ $)
 
   ${
     $d x y z $.
-    $( The cup function is a function over the cross product of the universe.
-       (Contributed by SF, 11-Feb-2015.) $)
-    fncup $p |- Cup Fn ( _V X. _V ) $=
-      ( vx vy vz ccup cvv cxp wfn cv wcel cun wceq coprab copab weu wex wmo vex
-      wa unex isset mpbi eu5 mpbir2an a1i fnoprab wb cmpt2 df-cup df-mpt2 eqtri
-      moeq df-xp fneq1 fneq2 sylan9bb mp2an mpbir ) DEEFZGZAHZEIBHZEIRZCHUTVAJZ
-      KZRABCLZVBABMZGZVBVDABCVDCNZVBVHVDCOZVDCPVCEIVIUTVAAQBQSCVCTUACVCUKVDCUBU
-      CUDUEDVEKZURVFKZUSVGUFDABEEVCUGVEABUHABCEEVCUIUJABEEULVJUSVEURGVKVGURDVEU
-      MURVFVEUNUOUPUQ $.
+    $( The cup function is a function over the universe.
+       (Contributed by SF, 11-Feb-2015.) (Revised by Scott Fenton,
+       19-Apr-2021.) $)
+    fncup $p |- Cup Fn _V $=
+      ( vx vy ccup cvv cxp wfn cv cun df-cup vex unex fnmpt2i xpvv fneq2i mpbi
+      ) CDDEZFCDFABDDAGZBGZHCABIQRAJBJKLPDCMNO $.
   $}
 
   $( Binary relationship form of the cup function.  (Contributed by SF,
      11-Feb-2015.) $)
   brcupg $p |- ( ( A e. V /\ B e. W ) -> ( <. A , B >. Cup C <-> C = ( A u. B
       ) ) ) $=
-    ( wcel cvv cop ccup wbr cun wceq wb elex wa cfv cxp opelxp wfn fncup sylbir
-    fnbrfvb mpan co df-ov cupvalg syl5eqr eqeq1d eqcom syl6bb bitr3d syl2an ) A
-    DFAGFZBGFZABHZCIJZCABKZLZMBEFADNBENUMUNOZUOIPZCLZUPURUSUOGGQZFZVAUPMZABGGRI
-    VBSVCVDTVBUOCIUBUCUAUSVAUQCLURUSUTUQCUSUTABIUDUQABIUEABGGUFUGUHUQCUIUJUKUL
-    $.
+    ( wcel wa cop ccup cfv wceq wbr cun cvv wfn wb fncup opexg fnbrfvb sylancr
+    co cupvalg eqeq1d df-ov eqeq1i eqcom 3bitr3g bitr3d ) ADFBEFGZABHZIJZCKZUJC
+    ILZCABMZKZUIINOUJNFULUMPQABDERNUJCISTUIABIUAZCKUNCKULUOUIUPUNCABDEUBUCUPUKC
+    ABIUDUEUNCUFUGUH $.
 
   ${
     brcup.1 $e |- A e. _V $.
@@ -55429,15 +55425,11 @@ $)
 
   ${
     $d x y z $.
-    $( ` AddC ` is a function over all ordered pairs.  (Contributed by SF,
-       2-Mar-2015.) $)
-    addcfn $p |- AddC Fn ( _V X. _V ) $=
-      ( vz vx vy caddcfn cvv cxp wfn wfun cdm wceq cv cplc coprab moeq funoprab
-      cmpt2 eqtri copab wcel vex df-addcfn mpt2v funeqi mpbir wex addcex isseti
-      wa pm3.2i 2th opabbii dmeqi dmoprab df-xp 3eqtr4i df-fn mpbir2an ) DEEFZG
-      DHZDIZURJUSAKBKZCKZLZJZBCAMZHVDBCAAVCNODVEDBCEEVCPVEBCUABCAVCUBQZUCUDVDAU
-      EZBCRZVAESZVBESZUHZBCRUTURVGVKBCVGVKAVCVAVBBTZCTZUFUGVIVJVLVMUIUJUKUTVEIV
-      HDVEVFULVDBCAUMQBCEEUNUODURUPUQ $.
+    $( ` AddC ` is a function over the universe.  (Contributed by SF,
+       2-Mar-2015.) (Revised by Scott Fenton, 19-Apr-2021.) $)
+    addcfn $p |- AddC Fn _V $=
+      ( vx vy caddcfn cvv cxp wfn cplc df-addcfn vex addcex fnmpt2i xpvv fneq2i
+      cv mpbi ) CDDEZFCDFABDDANZBNZGCABHQRAIBIJKPDCLMO $.
   $}
 
   ${
@@ -55447,11 +55439,10 @@ $)
     $( Binary relationship form of the ` AddC ` function.  (Contributed by SF,
        2-Mar-2015.) $)
     braddcfn $p |- ( <. A , B >. AddC C <-> ( A +c B ) = C ) $=
-      ( vx vy cop caddcfn wbr cfv wceq cplc cvv cxp wfn wcel wb mp2an cv addcfn
-      opelxp mpbir2an fnbrfvb co addceq1 addceq2 df-addcfn addcex ovmpt2 eqtr3i
-      df-ov eqeq1i bitr3i ) ABHZCIJZUOIKZCLZABMZCLINNOZPUOUTQZURUPRUAVAANQZBNQZ
-      DEABNNUBUCUTUOCIUDSUQUSCABIUEZUQUSABIULVBVCVDUSLDEFGABNNFTZGTZMUSIAVFMVEA
-      VFUFVFBAUGFGUHABDEUIUJSUKUMUN $.
+      ( vx vy cop caddcfn wbr cfv wceq cplc cvv wfn wcel wb addcfn mp2an cv co
+      opex fnbrfvb addceq1 addceq2 df-addcfn addcex ovmpt2 eqtr3i eqeq1i bitr3i
+      df-ov ) ABHZCIJZUMIKZCLZABMZCLINOUMNPUPUNQRABDEUBNUMCIUCSUOUQCABIUAZUOUQA
+      BIULANPBNPURUQLDEFGABNNFTZGTZMUQIAUTMUSAUTUDUTBAUEFGUFABDEUGUHSUIUJUK $.
   $}
 
   ${
