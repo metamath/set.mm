@@ -51969,6 +51969,29 @@ $)
     ( csi ccnv cdm cpw1 cnvsi dmeqi dmsi eqtri dfrn4 wceq pw1eq ax-mp 3eqtr4i
     crn ) ABZCZDZACZDZEZPOAOZEZRSBZDUAQUDAFGSHIPJUBTKUCUAKAJUBTLMN $.
 
+  ${
+    op1st.1 $e |- A e. _V $.
+    op1st.2 $e |- B e. _V $.
+    $( Extract the first member of an ordered pair.  (Contributed by NM,
+       5-Oct-2004.) $)
+    op1st $p |- ( 1st ` <. A , B >. ) = A $=
+      ( cop c1st cfv csn cdm cuni 1stval op1sta eqtri ) ABEZFGNHIJANKABCDLM $.
+
+    $( Extract the second member of an ordered pair.  (Contributed by NM,
+       5-Oct-2004.) $)
+    op2nd $p |- ( 2nd ` <. A , B >. ) = B $=
+      ( cop c2nd cfv csn crn cuni 2ndval op2nda eqtri ) ABEZFGNHIJBNKABCDLM $.
+
+    $( Extract the first member of an ordered pair.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.) $)
+    op1std $p |- ( C = <. A , B >. -> ( 1st ` C ) = A ) $=
+      ( cop wceq c1st cfv fveq2 op1st syl6eq ) CABFZGCHIMHIACMHJABDEKL $.
+
+    $( Extract the second member of an ordered pair.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.) $)
+    op2ndd $p |- ( C = <. A , B >. -> ( 2nd ` C ) = B ) $=
+      ( cop wceq c2nd cfv fveq2 op2nd syl6eq ) CABFZGCHIMHIBCMHJABDEKL $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -52645,6 +52668,7 @@ $)
       VECDEUEUFVDVHVEESZCDMVIVECDEUGVDVLACDVCCUHVBDCUIVCVLAUAZCVBVMDVBVLAVEAEAB
       UJUKVBAABESZIVLVBAVNVAVNABEUMRULABEUNUOUPTTUQURVFVIUSUT $.
   $}
+
 
   ${
     $d x y z $.  $d z ph $.
@@ -54349,7 +54373,62 @@ $)
       ABCHABIINJABCKABCNLM $.
   $}
 
+  ${
+    $d t u v w x y z A $.  $d t u v w y z B $.  $d t u v w z C $.
+    $d v w x y z D $.
+    fmpt2x.1 $e |- F = ( x e. A , y e. B |-> C ) $.
 
+    $( Functionality, domain and codomain of a class given by the "maps to"
+       notation, where ` B ( x ) ` is not constant but depends on ` x ` .
+       (Contributed by NM, 29-Dec-2014.) $)
+    fmpt2x $p |- ( A. x e. A A. y e. B C e. D <->
+      F : U_ x e. A ( { x } X. B ) --> D ) $=
+      ( vz vw vv cv csb wcel wral wceq eleq1d wa nfv nfcsb1v csn ciun c1st c2nd
+      cxp wf cfv cop op1std csbeq1d op2ndd csbeq2dv eqtrd raliunxp cmpt2 coprab
+      cmpt nfcri nfan nfeq2 nfcv nfcsb wb eleq1 adantr csbeq1a eleq2d sylan9bbr
+      anbi12d sylan9eqr eqeq2d cbvoprab12 df-mpt2 3eqtr4i mpt2mptx bitr3i nfel1
+      fmpt nfral cbvral raleqbidv syl5bb nfxp sneq xpeq12d cbviun feq2i 3bitr4i
+      vex ) AILZBJLZEMZMZFNZJAWJDMZOZICOZICWJUAZWOUEZUBZFGUFZEFNZBDOZACOACALZUA
+      ZDUEZUBZFGUFWQAKLZUCUGZBXHUDUGZEMZMZFNZKWTOXAXMWNKIJCWOXHWJWKUHPZXLWMFXNX
+      LAWJXKMWMXNAXIWJXKWJWKXHIWIZJWIZUIUJXNAWJXKWLXNBXJWKEWJWKXHXOXPUKUJULUMZQ
+      UNKWTFXLGABCDEUOZIJCWOWMUOZGKWTXLUQXDCNZBLZDNZRZXHEPZRZABKUPWJCNZWKWONZRZ
+      XHWMPZRZIJKUPXRXSYEYJABKIJYEISYEJSYHYIAYFYGAYFASAJWOAWJDTZURUSAXHWMAWJWLT
+      ZUTUSYHYIBYHBSBXHWMBAWJWLBWJVABWKETZVBUTUSXDWJPZYAWKPZRZYCYHYDYIYPXTYFYBY
+      GYNXTYFVCYOXDWJCVDVEYOYBWKDNYNYGYAWKDVDYNDWOWKAWJDVFZVGVHVIYPEWMXHYOYNEWL
+      WMBWKEVFZAWJWLVFZVJVKVIVLABKCDEVMIJKCWOWMVMVNHIJKCWOXLWMXQVOVNVRVPXCWPAIC
+      XCISWNAJWOYKAWMFYLVQVSXCWLFNZJDOYNWPXBYTBJDXBJSBWLFYMVQYOEWLFYRQVTYNYTWNJ
+      DWOYQYNWLWMFYSQWAWBVTXGWTFGAICXFWSIXFVAAWRWOAWRVAYKWCYNXEWRDWOXDWJWDYQWEW
+      FWGWH $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d C z $.  $d D x y z $.
+    fmpt2.1 $e |- F = ( x e. A , y e. B |-> C ) $.
+    $( Functionality, domain and range of a class given by the "maps to"
+       notation.  (Contributed by FL, 17-May-2010.) $)
+    fmpt2 $p |- ( A. x e. A A. y e. B C e. D <-> F : ( A X. B ) --> D ) $=
+      ( wcel wral cv csn cxp ciun wf fmpt2x iunxpconst feq2i bitri ) EFIBDJACJA
+      CAKLDMNZFGOCDMZFGOABCDEFGHPTUAFGACDQRS $.
+
+    $( Functionality and domain of a class given by the "maps to" notation.
+       (Contributed by FL, 17-May-2010.) $)
+    fnmpt2 $p |- ( A. x e. A A. y e. B C e. V -> F Fn ( A X. B ) ) $=
+      ( wcel wral cvv cxp wfn elex ralimi wf fmpt2 dffn2 bitr4i sylib ) EGIZBDJ
+      ZACJEKIZBDJZACJZFCDLZMZUBUDACUAUCBDEGNOOUEUFKFPUGABCDEKFHQUFFRST $.
+
+    fnmpt2i.2 $e |- C e. _V $.
+    $( Functionality and domain of a class given by the "maps to" notation.
+       (Contributed by FL, 17-May-2010.) $)
+    fnmpt2i $p |- F Fn ( A X. B ) $=
+      ( cvv wcel wral cxp wfn rgen2w fnmpt2 ax-mp ) EIJZBDKACKFCDLMQABCDHNABCDE
+      FIGOP $.
+
+    $( Domain of a class given by the "maps to" notation.  (Contributed by FL,
+       17-May-2010.) $)
+    dmmpt2 $p |- dom F = ( A X. B ) $=
+      ( cxp wfn cdm wceq fnmpt2i fndm ax-mp ) FCDIZJFKPLABCDEFGHMPFNO $.
+  $}
+  
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Set construction lemmas
@@ -57633,15 +57712,9 @@ $)
       UMVDCBDUNCBAVBUOUPUQUR $.
 
     $( Partial function exponentiation has a universal domain.  (Contributed by
-       set.mm contributors, 14-Nov-2013.) $)
-    fnpm $p |- ^pm Fn ( _V X. _V ) $=
-      ( vz vf vy vx cpm cvv cxp wfn cv wfun cpw crab wceq coprab cdm copab wcel
-      cfuns cin vex moeq funoprab wex wa dfrab2 df-funs ineq1i eqtr4i xpex pwex
-      cab funsex inex eqeltri isseti pm3.2i opabbii dmoprab df-xp 3eqtr4i df-fn
-      2th mpbir2an cmpt2 df-pm mpt2v eqtri fneq1i mpbir ) EFFGZHAIBIJZBCIZDIZGZ
-      KZLZMZDCANZVJHZVSVRJVROZVJMVQDCAAVPUAUBVQAUCZDCPVMFQZVLFQZUDZDCPVTVJWAWDD
-      CWAWDAVPVPRVOSZFVPVKBUKZVOSWEVKBVOUERWFVOBUFUGUHRVOULVNVLVMCTZDTZUIUJUMUN
-      UOWBWCWHWGUPVBUQVQDCAURDCFFUSUTVRVJVAVCVJEVREDCFFVPVDVRDCBVEDCAVPVFVGVHVI
+       set.mm contributors, 14-Nov-2013.) (Revised by Scott Fenton,
+       19-Apr-2019.) $)
+    fnpm $p |- ^pm Fn _V $= ?
       $.
   $}
 
