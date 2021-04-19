@@ -45242,29 +45242,126 @@ $)
       NVECFIVKFPZVMVCVNVDVOVLVBVAVKFUTGTUGVKFUSGTRHUHUIUJUB $.
   $}
 
+
+  ${
+    $d w y z A $.  $d w y z B $.  $d w x y z C $.
+    $( Distributive law for cross product over indexed union.  (Contributed by
+       set.mm contributors, 26-Apr-2014.)  (Revised by Mario Carneiro,
+       27-Apr-2014.) $)
+    xpiundi $p |- ( C X. U_ x e. A B ) = U_ x e. A ( C X. B ) $=
+      ( vz vw vy ciun cxp cv wrex wcel wa wex eliun exbii df-rex rexbii 3bitr4i
+      elxp2 cop wceq rexcom anbi1i rexcom4 r19.41v 3bitri eqriv ) EDABCHZIZABDC
+      IZHZEJZFJGJZUAUBZGUIKZFDKZUMUKLZABKZUMUJLUMULLUOGCKZABKZFDKUTFDKZABKUQUSU
+      TFADBUCUPVAFDUNUILZUOMZGNUNCLZABKZUOMZGNZUPVAVDVGGVCVFUOAUNBCOUDPUOGUIQVA
+      VEUOMZGNZABKVIABKZGNVHUTVJABUOGCQRVIAGBUEVKVGGVEUOABUFPUGSRURVBABFGUMDCTR
+      SFGUMDUITAUMBUKOSUH $.
+
+    $( Distributive law for cross product over indexed union.  (Contributed by
+       set.mm contributors, 26-Apr-2014.)  (Revised by Mario Carneiro,
+       27-Apr-2014.) $)
+    xpiundir $p |- ( U_ x e. A B X. C ) = U_ x e. A ( B X. C ) $=
+      ( vz vy vw ciun cxp cv cop wrex wcel wa df-rex rexbii eliun elxp2 3bitr4i
+      wex wceq rexcom4 anbi1i r19.41v bitr4i exbii 3bitr4ri eqriv ) EABCHZDIZAB
+      CDIZHZEJZFJZGJKUAGDLZFUILZUMUKMZABLZUMUJMUMULMUNUIMZUONZFTZUOFCLZABLZUPUR
+      UNCMZUONZFTZABLVEABLZFTVCVAVEAFBUBVBVFABUOFCOPUTVGFUTVDABLZUONVGUSVHUOAUN
+      BCQUCVDUOABUDUEUFUGUOFUIOUQVBABFGUMCDRPSFGUMUIDRAUMBUKQSUH $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Membership in a union of cross products when the second factor is
+       constant.  (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+    iunxpconst $p |- U_ x e. A ( { x } X. B ) = ( A X. B ) $=
+      ( cv csn ciun cxp xpiundir iunid xpeq1i eqtr3i ) ABADEZFZCGABLCGFBCGABLCH
+      MBCABIJK $.
+  $}
+
+  ${
+    $d y z A $.  $d y z B $.  $d y z C $.  $d x y z $.
+    $( Membership in a union of Cartesian products.  (Contributed by Mario
+       Carneiro, 29-Dec-2014.)  (Revised by Mario Carneiro, 1-Jan-2017.) $)
+    opeliunxp $p |- ( <. x , C >. e. U_ x e. A ( { x } X. B ) <->
+                     ( x e. A /\ C e. B ) ) $=
+      ( vz vy cv csn cxp wcel cvv wa elex syl wex wceq weq eleq2d anbi12d bitri
+      cop ciun opexb simprbi adantl wsb csb wb vex opexg mpan wrex df-rex nfs1v
+      nfv nfcv nfcsb1v nfxp nfcri nfan sbequ12 sneq csbeq1a xpeq12d cbvex eleq1
+      anbi2d exbidv syl5bb df-iun elab2g opelxp anbi2i an12 equcom anbi1i exbii
+      elsn 3bitri sbequ12r equcoms eqcomd ceqsexv syl6bb pm5.21nii ) AGZDUAZABW
+      FHZCIZUBZJZDKJZWFBJZDCJZLZWKWGKJZWLWGWJMWPWFKJZWLWFDUCUDNWNWLWMDCMUEWLWKW
+      MAEUFZWGEGZHZAWSCUGZIZJZLZEOZWOWLWPWKXEUHWQWLWPAUIZWFDKKUJUKFGZWIJZABULZX
+      EFWGWJKXIWRXGXBJZLZEOZXGWGPZXEXIWMXHLZAOXLXHABUMXNXKAEXNEUOWRXJAWMAEUNAFX
+      BAWTXAAWTUPAWSCUQURUSUTAEQZWMWRXHXJWMAEVAXOWIXBXGXOWHWTCXAWFWSVBAWSCVCZVD
+      RSVETXMXKXDEXMXJXCWRXGWGXBVFVGVHVIAFBWIVJVKNXEEAQZWRDXAJZLZLZEOWOXDXTEXDW
+      RWFWTJZXRLZLYAXSLXTXCYBWRWFDWTXAVLVMWRYAXRVNYAXQXSYAXOXQAWSVRAEVOTVPVSVQX
+      SWOEWFXFXQWRWMXRWNWMEAVTXQXACDXQCXACXAPAEXPWAWBRSWCTWDWE $.
+  $}
+  ${
+    $d y A $.  $d y B $.  $d x y C $.  $d x y D $.  $d x E $.  $d x V $.
+    $( Membership in a union of Cartesian products.  Analogue of ~ elxp for
+       nonconstant ` B ( x ) ` .  (Contributed by Mario Carneiro,
+       29-Dec-2014.) $)
+    eliunxp $p |- ( C e. U_ x e. A ( { x } X. B ) <->
+      E. x E. y ( C = <. x , y >. /\ ( x e. A /\ y e. B ) ) ) $=
+      ( cv csn cxp ciun wcel cop wceq wex wa elex pm4.71ri opeqexb anbi1i exbii
+      cvv bitri nfiu1 nfel2 19.41 19.41v eleq1 opeliunxp syl6bb pm5.32i 3bitr2i
+      bitr3i ) EACAFZGDHZIZJZEULBFZKZLZBMZAMZUONZUSUONZAMURULCJUPDJNZNZBMZAMUOE
+      TJZUONVAUOVFEUNOPVFUTUOABEQRUAUSUOAAEUNACUMUBUCUDVBVEAVBURUONZBMVEURUOBUE
+      VGVDBURUOVCURUOUQUNJVCEUQUNUFACDUPUGUHUISUKSUJ $.
+
+    $d x A $.
+    opeliunxp2.1 $e |- ( x = C -> B = E ) $.
+    $( Membership in a union of Cartesian products.  (Contributed by Mario
+       Carneiro, 14-Feb-2015.) $)
+    opeliunxp2 $p |- ( <. C , D >. e. U_ x e. A ( { x } X. B ) <->
+      ( C e. A /\ D e. E ) ) $=
+      ( cop cv csn cxp ciun wcel cvv wa elex opexb sylib simpld wb adantr nfiu1
+      nfcv nfel2 nfbi wceq opeq1 eleq1d eleq1 anbi12d bibi12d opeliunxp vtoclgf
+      nfv eleq2d pm5.21nii ) DEHZABAIZJCKZLZMZDNMZDBMZEFMZOZVAVBENMZVAUQNMVBVFO
+      UQUTPDEQRSVCVBVDDBPUAUREHZUTMZURBMZECMZOZTVAVETADNADUCVAVEAAUQUTABUSUBUDV
+      EAUNUEURDUFZVHVAVKVEVLVGUQUTURDEUGUHVLVIVCVJVDURDBUIVLCFEGUOUJUKABCEULUMU
+      P $.
+  $}
+
+
   ${
     $d x y z A $.  $d x z B $.  $d y z ph $.  $d x ps $.
-    ralxp.1 $e |- ( x = <. y , z >. -> ( ph <-> ps ) ) $.
+    raliunxp.1 $e |- ( x = <. y , z >. -> ( ph <-> ps ) ) $.
+    $( Write a double restricted quantification as one universal quantifier.
+       In this version of ~ ralxp , ` B ( y ) ` is not assumed to be constant.
+       (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+    raliunxp $p |- ( A. x e. U_ y e. A ( { y } X. B ) ph <->
+      A. y e. A A. z e. B ps ) $=
+      ( cv csn cxp wcel wi wal wa wral wex albii vex bitri ciun cop wceq imbi1i
+      eliunxp 19.23vv bitr4i alrot3 impexp imbi2d ceqsalv 2albii df-ral 3bitr4i
+      opex r2al ) CIZDFDIZJGKUAZLZAMZCNZURFLEIZGLOZBMZENDNZACUSPBEGPDFPVBUQURVC
+      UBZUCZVDOZAMZENDNZCNZVFVAVKCVAVIEQDQZAMVKUTVMADEFGUQUEUDVIADEUFUGRVLVJCNZ
+      ENDNVFVJCDEUHVNVEDEVNVHVDAMZMZCNVEVJVPCVHVDAUIRVOVECVGURVCDSESUOVHABVDHUJ
+      UKTULTTACUSUMBDEFGUPUN $.
+
+    $( Write a double restricted quantification as one universal quantifier.
+       In this version of ~ rexxp , ` B ( y ) ` is not assumed to be constant.
+       (Contributed by Mario Carneiro, 14-Feb-2015.) $)
+    rexiunxp $p |- ( E. x e. U_ y e. A ( { y } X. B ) ph <->
+      E. y e. A E. z e. B ps ) $=
+      ( wn cv csn cxp ciun wral wrex cop wceq notbid raliunxp dfrex2 3bitr4i
+      ralnex ralbii bitri notbii ) AIZCDFDJZKGLMZNZIBEGOZIZDFNZIACUHOUJDFOUIULU
+      IBIZEGNZDFNULUFUMCDEFGCJUGEJPQABHRSUNUKDFBEGUBUCUDUEACUHTUJDFTUA $.
+
     $d y B $.
-    $( Universal quantification restricted to a cross product is equivalent to
-       a double restricted quantification.  The hypothesis specifies an
+    $( Universal quantification restricted to a Cartesian product is equivalent
+       to a double restricted quantification.  The hypothesis specifies an
        implicit substitution.  (Contributed by NM, 7-Feb-2004.)  (Revised by
        Mario Carneiro, 29-Dec-2014.) $)
     ralxp $p |- ( A. x e. ( A X. B ) ph <-> A. y e. A A. z e. B ps ) $=
-      ( cxp wral cv wcel wa cop opelxp wex wi nfv nfim exlimi syl5bir ralrimivv
-      rspccv wceq elxp nfra1 nfra2 rsp2 impcom syl5ibr exp3a a1dd sylbi pm2.43b
-      imp ralrimiv impbii ) ACFGIZJZBEGJZDFJZUSBDEFGDKZFLEKZGLMZVBVCNZURLUSBVBV
-      CFGOABCVEURHUCUAUBVAACURVACKZURLZAVGVFVEUDZVDMZEPZDPVAVGAQZQZDEVFFGUEVJVL
-      DVAVKDUTDFUFVKDRSVIVLEVAVKEBDEFGUGVKERSVIVAAVGVHVDVAAQVHVDVAAVDVAMAVHBVAV
-      DBBDEFGUHUIHUJUKUOULTTUMUNUPUQ $.
+      ( cxp wral cv csn ciun iunxpconst raleqi raliunxp bitr3i ) ACFGIZJACDFDKL
+      GIMZJBEGJDFJACSRDFGNOABCDEFGHPQ $.
 
-    $( Existential quantification restricted to a cross product is equivalent
-       to a double restricted quantification.  (Contributed by NM,
+    $( Existential quantification restricted to a Cartesian product is
+       equivalent to a double restricted quantification.  (Contributed by NM,
        11-Nov-1995.)  (Revised by Mario Carneiro, 14-Feb-2015.) $)
     rexxp $p |- ( E. x e. ( A X. B ) ph <-> E. y e. A E. z e. B ps ) $=
-      ( wn cxp wral wrex cv cop wceq notbid ralxp notbii dfrex2 rexbii 3bitr4i
-      rexnal bitri ) AIZCFGJZKZIBIZEGKZDFKZIZACUELBEGLZDFLZUFUIUDUGCDEFGCMDMEMN
-      OABHPQRACUESULUHIZDFLUJUKUMDFBEGSTUHDFUBUCUA $.
+      ( cxp wrex cv csn ciun iunxpconst rexeqi rexiunxp bitr3i ) ACFGIZJACDFDKL
+      GIMZJBEGJDFJACSRDFGNOABCDEFGHPQ $.
   $}
 
   ${
@@ -45345,39 +45442,6 @@ $)
       opabbii df-xp uneq12i 3eqtr4i ) DFZABGZHZEFCHZIZDEJZUCAHZUFIZDEJZUCBHZUFI
       ZDEJZGZUDCKACKZBCKZGUHUJUMLZDEJUOUGURDEUGUIULLZUFIURUEUSUFUCABMNUIULUFOPS
       UJUMDEQRDEUDCTUPUKUQUNDEACTDEBCTUAUB $.
-  $}
-
-  ${
-    $d w y z A $.  $d w y z B $.  $d w x y z C $.
-    $( Distributive law for cross product over indexed union.  (Contributed by
-       set.mm contributors, 26-Apr-2014.)  (Revised by Mario Carneiro,
-       27-Apr-2014.) $)
-    xpiundi $p |- ( C X. U_ x e. A B ) = U_ x e. A ( C X. B ) $=
-      ( vz vw vy ciun cxp cv wrex wcel wa wex eliun exbii df-rex rexbii 3bitr4i
-      elxp2 cop wceq rexcom anbi1i rexcom4 r19.41v 3bitri eqriv ) EDABCHZIZABDC
-      IZHZEJZFJGJZUAUBZGUIKZFDKZUMUKLZABKZUMUJLUMULLUOGCKZABKZFDKUTFDKZABKUQUSU
-      TFADBUCUPVAFDUNUILZUOMZGNUNCLZABKZUOMZGNZUPVAVDVGGVCVFUOAUNBCOUDPUOGUIQVA
-      VEUOMZGNZABKVIABKZGNVHUTVJABUOGCQRVIAGBUEVKVGGVEUOABUFPUGSRURVBABFGUMDCTR
-      SFGUMDUITAUMBUKOSUH $.
-
-    $( Distributive law for cross product over indexed union.  (Contributed by
-       set.mm contributors, 26-Apr-2014.)  (Revised by Mario Carneiro,
-       27-Apr-2014.) $)
-    xpiundir $p |- ( U_ x e. A B X. C ) = U_ x e. A ( B X. C ) $=
-      ( vz vy vw ciun cxp cv cop wrex wcel wa df-rex rexbii eliun elxp2 3bitr4i
-      wex wceq rexcom4 anbi1i r19.41v bitr4i exbii 3bitr4ri eqriv ) EABCHZDIZAB
-      CDIZHZEJZFJZGJKUAGDLZFUILZUMUKMZABLZUMUJMUMULMUNUIMZUONZFTZUOFCLZABLZUPUR
-      UNCMZUONZFTZABLVEABLZFTVCVAVEAFBUBVBVFABUOFCOPUTVGFUTVDABLZUONVGUSVHUOAUN
-      BCQUCVDUOABUDUEUFUGUOFUIOUQVBABFGUMCDRPSFGUMUIDRAUMBUKQSUH $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Membership in a union of cross products when the second factor is
-       constant.  (Contributed by Mario Carneiro, 29-Dec-2014.) $)
-    iunxpconst $p |- U_ x e. A ( { x } X. B ) = ( A X. B ) $=
-      ( cv csn ciun cxp xpiundir iunid xpeq1i eqtr3i ) ABADEZFZCGABLCGFBCGABLCH
-      MBCABIJK $.
   $}
 
   $( The cross product of two unions.  (Contributed by NM, 12-Aug-2004.) $)
