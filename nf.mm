@@ -42845,6 +42845,12 @@ $)
       cv spcegv ee10 opeq1 exbidv sylc ) CDEZCFZGECUDBQZHZIZBJZCAQZUEHZIZBJZAJC
       DKUCCLZGECUDUMHZIZUHCDMCNUGUOBUMGUEUMIUFUNCUEUMUDOPRSULUHAUDGUIUDIZUKUGBU
       PUJUFCUIUDUETPUARUB $.
+
+    $( A class is a set iff it is equal to an ordered pair.  (Contributed by
+       Scott Fenton, 19-Apr-2021.) $)
+    opeqexb $p |- ( A e. _V <-> E. x E. y A = <. x , y >. ) $=
+      ( cvv wcel cv cop wceq wex opeqex vex opex eleq1 mpbiri exlimivv impbii )
+      CDEZCAFZBFZGZHZBIAIABCDJUAQABUAQTDERSAKBKLCTDMNOP $.
   $}
 
 
@@ -47372,21 +47378,21 @@ $)
 
   ${
     $d x y A $.
-    $( The domain of a singleton is nonzero iff the singleton argument is an
-       ordered pair.  (Contributed by NM, 14-Dec-2008.)  (Proof shortened by
-       Andrew Salmon, 27-Aug-2011.) $)
-    dmsnn0 $p |- ( A e. ( _V X. _V ) <-> dom { A } =/= (/) ) $=
-      ( vx vy cv cop wceq wex csn cdm wcel cvv cxp c0 wne eldm2 vex elsnc bitri
-      opex exbii eqcom bicomi elvv n0 3bitr4i ) ABDZCDZEZFZCGZBGZUFAHZIZJZBGZAK
-      KLJUMMNUOUKUNUJBUNUHULJZCGUJCUFULOUPUICUPUHAFUIUHAUFUGBPCPSQUHAUARTRTUBBC
-      AUCBUMUDUE $.
+    $( The domain of a singleton is nonzero iff the singleton argument is a
+       set.  (Contributed by NM, 14-Dec-2008.)  (Proof shortened by
+       Andrew Salmon, 27-Aug-2011.)  (Revised by Scott Fenton, 19-Apr-2021.) $)
+    dmsnn0 $p |- ( A e. _V <-> dom { A } =/= (/) ) $=
+      ( vx vy cv csn cdm wcel wex cop wceq wne cvv eldm2 opex elsnc eqcom bitri
+      c0 vex exbii n0 opeqexb 3bitr4ri ) BDZAEZFZGZBHAUDCDZIZJZCHZBHUFRKALGUGUK
+      BUGUIUEGZCHUKCUDUEMULUJCULUIAJUJUIAUDUHBSCSNOUIAPQTQTBUFUABCAUBUC $.
   $}
 
-  $( The range of a singleton is nonzero iff the singleton argument is an
-     ordered pair.  (Contributed by set.mm contributors, 14-Dec-2008.) $)
-  rnsnn0 $p |- ( A e. ( _V X. _V ) <-> ran { A } =/= (/) ) $=
-    ( cvv cxp wcel csn cdm c0 wne crn dmsnn0 dm0rn0 necon3bii bitri ) ABBCDAEZF
-    ZGHNIZGHAJOGPGNKLM $.
+  $( The range of a singleton is nonzero iff the singleton argument is a
+     set.  (Contributed by set.mm contributors, 14-Dec-2008.)
+     (Revised by Scott Fenton, 19-Apr-2021.) $)
+  rnsnn0 $p |- ( A e. _V <-> ran { A } =/= (/) ) $=
+    ( cvv wcel csn cdm c0 wne crn dmsnn0 dm0rn0 necon3bii bitri ) ABCADZEZFGMHZ
+    FGAINFOFMJKL $.
 
   ${
     $d x y z A $.  $d x y z B $.  $d x z V $.
