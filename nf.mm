@@ -45386,26 +45386,6 @@ $)
     ( cun cxp xpundi xpundir uneq12i un4 3eqtri ) ABEZCDEFLCFZLDFZEACFZBCFZEZAD
     FZBDFZEZEOREPSEELCDGMQNTABCHABDHIOPRSJK $.
 
-  ${
-    $d w x y z A $.
-    $( Membership in universal class of ordered pairs.  (Contributed by NM,
-       4-Jul-1994.) $)
-    elvv $p |- ( A e. ( _V X. _V ) <-> E. x E. y A = <. x , y >. ) $=
-      ( cvv cxp wcel cv cop wceq wa wex elxp vex pm3.2i biantru 2exbii bitr4i )
-      CDDEFCAGZBGZHIZRDFZSDFZJZJZBKAKTBKAKABCDDLTUDABUCTUAUBAMBMNOPQ $.
-
-    $( Membership in universal class of ordered triples.  (Contributed by NM,
-       17-Dec-2008.) $)
-    elvvv $p |- ( A e. ( ( _V X. _V ) X. _V )
-                 <-> E. x E. y E. z A = <. <. x , y >. , z >. ) $=
-      ( vw cvv cxp wcel cv cop wceq wa wex vex bitr3i 3bitri exbii exrot3 bitri
-      elxp excom 19.41vv elvv biantru anbi1i ancom opeq1 eqeq2d ceqsexv 2exbii
-      opex ) DFFGZFGHDEIZCIZJZKZUMULHZUNFHZLZLZCMEMUTEMZCMZDAIZBIZJZUNJZKZCMBMA
-      MZECDULFTUTECUAVBVGBMAMZCMVHVAVICVAUMVEKZUPLZBMAMZEMZVIVLUTEVLVJBMAMZUPLU
-      SUPLUTVJUPABUBVNUSUPVNUQUSABUMUCURUQCNUDOUEUSUPUFPQVMVKEMZBMAMVIVKEABRVOV
-      GABUPVGEVEVCVDANBNUKVJUOVFDUMVEUNUGUHUIUJSOQVGCABRSP $.
-  $}
-
   $( Intersection of binary relation with cross product.  (Contributed by NM,
      3-Mar-2007.) $)
   brinxp2 $p |- ( A ( R i^i ( C X. D ) ) B <->
