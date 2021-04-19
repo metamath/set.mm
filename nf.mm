@@ -45520,7 +45520,7 @@ $)
      LTUDMUAUBBBNPQR $.
 
   ${
-    $d x y z A $.  $d x y z B $.
+    $d x y z w A $.  $d x y z w B $.
     $( A subclass relationship depends only on a relation's ordered pairs.
        Theorem 3.2(i) of [Monk1] p. 33.  (The proof was shortened by Andrew
        Salmon, 27-Aug-2011.)  (Contributed by NM, 2-Aug-1994.)  (Revised by
@@ -45542,6 +45542,28 @@ $)
       ( wss wa cv cop wcel wi wal wceq wb ssrel anbi12i eqss 2albiim 3bitr4i )
       CDEZDCEZFAGBGHZCIZUADIZJBKAKZUCUBJBKAKZFCDLUBUCMBKAKSUDTUEABCDNABDCNOCDPU
       BUCABQR $.
+
+    $( Subclass principle for operators.  (Contributed by Scott Fenton,
+       19-Apr-2021.) $)
+    ssopr $p |- ( A C_ B <->
+                A. x A. y A. z ( <. <. x , y >. , z >. e. A ->
+		<. <. x , y >. , z >. e. B ) ) $=
+      ( vw wss cv cop wcel wi wal ssrel wex cvv vex albii alrot3 eleq1d 3bitri
+      alcom bitri wceq opeqex ax-mp 19.23vv bitr4i opeq1 imbi12d ceqsalv 2albii
+      a1bi opex ) DEGZFHZCHZIZDJZUQEJZKZFLZCLZAHZBHZIZUPIZDJZVFEJZKZBLALZCLVICL
+      BLALUNUTCLFLVBFCDEMUTFCUAUBVAVJCVAUOVEUCZUTKZBLALZFLVLFLZBLALVJUTVMFUTVKB
+      NANZUTKVMVOUTUOOJVOFPABUOOUDUEULVKUTABUFUGQVLFABRVNVIABUTVIFVEVCVDAPBPUMV
+      KURVGUSVHVKUQVFDUOVEUPUHZSVKUQVFEVPSUIUJUKTQVICABRT $.
+
+    $( Extensionality principle for operators.  (Contributed by Scott Fenton,
+       19-Apr-2021.) $)
+    eqopr $p |- ( A = B <->
+                A. x A. y A. z ( <. <. x , y >. , z >. e. A <->
+		<. <. x , y >. , z >. e. B ) ) $=
+      ( wss wa cv cop wcel wi wal wceq ssopr anbi12i eqss 2albiim albii 19.26
+      wb bitri 3bitr4i ) DEFZEDFZGAHBHICHIZDJZUEEJZKCLBLZALZUGUFKCLBLZALZGZDEMU
+      FUGTCLBLZALZUCUIUDUKABCDENABCEDNODEPUNUHUJGZALULUMUOAUFUGBCQRUHUJASUAUB
+      $.
   $}
 
 
@@ -45595,6 +45617,31 @@ $)
     eqrelrdv $p |- ( ph -> A = B ) $=
       ( cv cop wcel wb wal wceq alrimivv eqrel sylibr ) ABGCGHZDIPEIJZCKBKDELAQ
       BCFMBCDENO $.
+  $}
+
+  ${
+    $d x y z A $. $d x y z B $.
+    eqoprriv.1 $e |- ( <. <. x , y >. , z >. e. A <->
+    <. <. x , y >. , z >. e. B ) $.
+
+    $( Equality inference for operators.  (Contributed by Scott Fenton,
+       19-Apr-2021.) $)
+    opreqriv $p |- A = B $=
+      ( wceq cv cop wcel wb wal eqopr gen2 mpgbir ) DEGAHBHICHIZDJPEJKZCLBLAABC
+      DEMQBCFNO $.
+  $}
+
+
+  ${
+    $d x y z A $. $d x y z B $. $d x y z ph $.
+    eqoprrdv.1 $e |- ( ph -> ( <. <. x , y >. , z >. e. A <->
+    <. <. x , y >. , z >. e. B ) ) $.
+
+    $( Equality deduction for operators.  (Contributed by Scott Fenton,
+       19-Apr-2021.) $)
+    opreqrdv $p |- ( ph -> A = B ) $=
+      ( cv cop wcel wb wal wceq alrimiv alrimivv eqopr sylibr ) ABHCHIDHIZEJRFJ
+      KZDLZCLBLEFMATBCASDGNOBCDEFPQ $.
   $}
 
   ${
@@ -56175,10 +56222,7 @@ $)
   $}
 
   ${
-    $d a p $.  $d a r $.  $d a x $.  $d a y $.  $d a z $.  $d p q $.  $d p r $.
-    $d p x $.  $d p y $.  $d p z $.  $d q x $.  $d q y $.  $d q z $.  $d r x $.
-    $d r y $.  $d r z $.  $d x y $.  $d x z $.  $d y z $.  $d s x $.  $d p s $.
-    $d r s $.  $d r t $.  $d t y $.  $d t z $.  $d p t $.  $d t x $.  $d a t $.
+    $d a p q r t x y z $.
 
     $( The class of all transitive relationships is a set.  (Contributed by SF,
        19-Feb-2015.) $)
