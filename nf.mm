@@ -54580,9 +54580,10 @@ $)
   $( Extend the definition of a class to include the image function. $)
   cimage $a class Image A $.
 
-  $( Define the image function of a class.  (Contributed by SF, 9-Feb-2015.) $)
+  $( Define the image function of a class.  (Contributed by SF, 9-Feb-2015.)
+     (Revised by Scott Fenton, 19-Apr-2021.) $)
   df-image $a |- Image A =
-     ( ( _V X. _V ) \ ( ( Ins2 _S (+) Ins3 ( _S o. `' SI A ) ) " 1c ) ) $.
+     ~ ( ( Ins2 _S (+) Ins3 ( _S o. `' SI A ) ) " 1c ) $.
 
   $( Extend the definition of a class to include the fourth insertion
      operation. $)
@@ -54897,20 +54898,19 @@ $)
     $( Binary relationship over the image function.  (Contributed by SF,
        11-Feb-2015.) $)
     brimage $p |- ( A Image R B <-> B = ( R " A ) ) $=
-      ( vx vt vy cop csset wcel wn cv wbr wex bitri wa exbii 3bitri cvv csymdif
-      cins2 csi ccnv ccom c1c cima wb wal cimage wceq elima1c elsymdif otelins2
-      cins3 csn vex opelssetsn otelins3 brcnv brsnsi2 anbi1i 19.41v excom anass
-      bitr4i breq1 anbi2d ceqsexv brssetsn anbi2i opelco elima2 3bitr4i bibi12i
-      snex ancom xchbinx exnal 3bitrri con1bii cxp df-br df-image eleq2i opelxp
-      cdif mpbir2an eldif mpbiran dfcleq ) ABIZJUBZJCUCZUDZUEZUOZUAZUFUGZKZLZFM
-      ZBKZXBCAUGZKZUHZFUIZABCUJZNZBXDUKXGWTWTXBUPZWLIZWRKZFOXFLZFOXGLFWLWRULXLX
-      MFXLXKWMKZXKWQKZUHXFXKWMWQUMXNXCXOXEXNXJBIJKXCXJABJDUNXBBFUQZEURPXOXJAIWP
-      KZXEXJABWPEUSXJGMZWONZXRAJNZQZGOZHMZAKZYCXBCNZQZHOZXQXEYBXRYCUPZUKZYEQZXT
-      QZHOZGOYKGOZHOYGYAYLGYAYJHOZXTQYLXSYNXTXSXRXJWNNYNXJXRWNUTHXBXRCXPVAPVBYJ
-      XTHVCVFRYKGHVDYMYFHYMYIYEXTQZQZGOYEYHAJNZQZYFYKYPGYIYEXTVERYOYRGYHYCVPYIX
-      TYQYEXRYHAJVGVHVIYRYEYDQYFYQYDYEYCAHUQDVJVKYEYDVQPSRSGXJAJWOVLHXBCAVMVNPV
-      OVRRXFFVSVTWAXIWLXHKWLTTWBZWSWGZKZXAABXHWCXHYTWLCWDWEUUAWLYSKZXAUUBATKBTK
-      DEABTTWFWHWLYSWSWIWJSFBXDWKVN $.
+      ( vx vt vy cv wcel cima cop csset wn wbr wex bitri wa exbii 3bitri wb wal
+      cins2 csi ccnv ccom csymdif c1c wceq cimage csn elima1c elsymdif otelins2
+      cins3 vex opelssetsn otelins3 brcnv anbi1i 19.41v bitr4i excom anass snex
+      brsnsi2 breq1 anbi2d ancom brssetsn syl6bb ceqsexv opelco 3bitr4i bibi12i
+      elima2 xchbinx exnal con2bii dfcleq df-image breqi df-br elcompl 3bitr4ri
+      ccompl opex ) FIZBJZWHCAKZJZUAZFUBZABLZMUCZMCUDZUEZUFZUOZUGZUHKZJZNZBWJUI
+      ABCUJZOZXBWMXBWHUKZWNLZWTJZFPWLNZFPWMNFWNWTULXHXIFXHXGWOJZXGWSJZUAWLXGWOW
+      SUMXJWIXKWKXJXFBLMJWIXFABMDUNWHBFUPZEUQQXKXFALWRJZWKXFABWREURXFGIZWQOZXNA
+      MOZRZGPZHIZAJZXSWHCOZRZHPZXMWKXRXNXSUKZUIZYARZXPRZHPZGPYGGPZHPYCXQYHGXQYF
+      HPZXPRYHXOYJXPXOXNXFWPOYJXFXNWPUSHWHXNCXLVFQUTYFXPHVAVBSYGGHVCYIYBHYIYEYA
+      XPRZRZGPYBYGYLGYEYAXPVDSYKYBGYDXSVEYEYKYAYDAMOZRZYBYEXPYMYAXNYDAMVGVHYNYM
+      YARYBYAYMVIYMXTYAXSAHUPDVJUTQVKVLQSTGXFAMWQVMHWHCAVPVNQVOVQSWLFVRTVSFBWJV
+      TXEABXAWFZOWNYOJXCABXDYOCWAWBABYOWCWNXAABDEWGWDTWE $.
   $}
 
   ${
@@ -54982,11 +54982,11 @@ $)
   $( The image function of a set is a set.  (Contributed by SF,
      11-Feb-2015.) $)
   imageexg $p |- ( A e. V -> Image A e. _V ) $=
-    ( wcel cimage cvv cxp csset cins2 csi ccnv ccom cins3 csymdif c1c cima cdif
-    vvex ssetex sylancr syl df-image siexg xpex ins2ex cnvexg ins3exg symdifexg
-    coexg 1cex imaexg sylancl difexg syl5eqel ) ABCZADEEFZGHZGAIZJZKZLZMZNOZPZE
-    AUAUNUQECZVCECZABUBVDUOECVBECZVEEEQQUCVDVAECZNECVFVDUPECUTECZVGGRUDVDUSECZV
-    HVDGECURECVIRUQEUEGUREEUHSUSEUFTUPUTEEUGSUIVANEEUJUKUOVBEEULSTUM $.
+    ( wcel cimage csset cins2 csi ccnv ccom cins3 csymdif c1c cima cvv df-image
+    ccompl siexg ssetex mpan 3syl cnvexg coexg ins3exg ins2ex 1cex imaexg mpan2
+    symdifexg complexg syl5eqel ) ABCZADEFZEAGZHZIZJZKZLMZPZNAOUKUQNCZURNCZUSNC
+    UKUONCZUPNCZUTUKUMNCUNNCZVBABQUMNUAENCVDVBREUNNNUBSTUONUCULNCVCUTERUDULUPNN
+    UHSTUTLNCVAUEUQLNNUFUGURNUITUJ $.
 
   ${
     imageex.1 $e |- A e. _V $.
