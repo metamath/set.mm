@@ -45626,7 +45626,7 @@ $)
 
     $( Equality inference for operators.  (Contributed by Scott Fenton,
        19-Apr-2021.) $)
-    opreqriv $p |- A = B $=
+    eqoprriv $p |- A = B $=
       ( wceq cv cop wcel wb wal eqopr gen2 mpgbir ) DEGAHBHICHIZDJPEJKZCLBLAABC
       DEMQBCFNO $.
   $}
@@ -45639,7 +45639,7 @@ $)
 
     $( Equality deduction for operators.  (Contributed by Scott Fenton,
        19-Apr-2021.) $)
-    opreqrdv $p |- ( ph -> A = B ) $=
+    eqoprrdv $p |- ( ph -> A = B ) $=
       ( cv cop wcel wb wal wceq alrimiv alrimivv eqopr sylibr ) ABHCHIDHIZEJRFJ
       KZDLZCLBLEFMATBCASDGNOBCDEFPQ $.
   $}
