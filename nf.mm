@@ -55039,21 +55039,6 @@ $)
   $}
 
   ${
-    $d A w $.  $d A x $.  $d A y $.  $d A z $.  $d ph w $.  $d w x $.
-    $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
-    releqoprab.1 $e |- ( <. <. x , y >. , z >. e. A <-> ph ) $.
-    $( Equality condition for an operator abstraction.  (Contributed by SF,
-       13-Feb-2015.) $)
-    releqoprab $p |- ( ( ( _V X. _V ) X. _V ) i^i A ) =
-                { <. <. x , y >. , z >. | ph } $=
-      ( vw cvv cxp cin cv cop wceq wa wex cab coprab wcel elvvv anbi1i 19.41vvv
-      elin 3bitr4i eleq1 syl6bb pm5.32i 3exbii bitri abbi2i df-oprab eqtr4i ) H
-      HIHIZEJZGKZBKCKLDKLZMZANZDOCOBOZGPABCDQURGUMUNUMRZUPUNERZNZDOCOBOZURUNULR
-      ZUTNUPDOCOBOZUTNUSVBVCVDUTBCDUNSTUNULEUBUPUTBCDUAUCVAUQBCDUPUTAUPUTUOERAU
-      NUOEUDFUEUFUGUHUIABCDGUJUK $.
-  $}
-
-  ${
     $d A w $.  $d A x $.  $d A y $.  $d B w $.  $d B x $.  $d B y $.  $d R w $.
     $d R x $.  $d R y $.  $d R z $.  $d V w $.  $d V z $.  $d w x $.  $d w y $.
     $d w z $.  $d x y $.  $d x z $.  $d y z $.
@@ -55062,18 +55047,15 @@ $)
        13-Feb-2015.) $)
     releqmpt2 $p |- ( ( ( A X. B ) X. _V ) \
      ( ( Ins2 _S (+) Ins3 R ) " 1c ) ) = ( x e. A , y e. B |-> V ) $=
-      ( vw cxp cvv csset cin cv wcel wa cop vex bitri wn cins2 csymdif c1c cima
-      cins3 ccompl wceq coprab cdif cmpt2 inass xpss xpss1 ax-mp sseqin2 ineq1i
-      wss mpbi elin opelxp mpbiran2 wel wal csn wex elima1c elsymdif opelssetsn
-      opex otelins2 otelins3 bibi12i xchbinx exbii exnal 3bitri con2bii elcompl
-      wb dfcleq 3bitr4ri anbi12i releqoprab 3eqtr3i df-dif df-mpt2 3eqtr4i ) DE
-      JZKJZLUAZFUEZUBZUCUDZUFZMZANZDOBNZEOPZINZGUGZPZABIUHZWIWMUIABDEGUJKKJZKJZ
-      WIMZWNMXDWOMWOXBXDWIWNUKXEWIWNWIXDUQZXEWIUGWHXCUQXFDEULWHXCKUMUNWIXDUOURU
-      PXAABIWOWPWQQZWSQZWOOXHWIOZXHWNOZPXAXHWIWNUSXIWRXJWTXIXGWHOZWRXIXKWSKOIRZ
-      XGWSWHKUTVAWPWQDEUTSCIVBZCNZGOZVSZCVCZXHWMOZTWTXJXRXQXRXNVDZXHQZWLOZCVEXP
-      TZCVEXQTCXHWLVFYAYBCYAXTWJOZXTWKOZVSXPXTWJWKVGYCXMYDXOYCXSWSQLOXMXSXGWSLW
-      PWQARBRVIZVJXNWSCRXLVHSYDXSXGQFOXOXSXGWSFXLVKHSVLVMVNXPCVOVPVQCWSGVTXHWMX
-      GWSYEXLVIVRWAWBSWCWDWIWMWEABIDEGWFWG $.
+      ( vw cxp cvv csset cv wcel wa cop wn vex opelxp bitri cins2 cins3 csymdif
+      c1c cima cdif wceq coprab cmpt2 eldif mpbiran2 wel wal dfcleq csn elima1c
+      wb elsymdif opex otelins2 opelssetsn otelins3 bibi12i xchbinx exbii exnal
+      wex 3bitri con2bii bitr2i anbi12i oprabbi2i df-mpt2 eqtr4i ) DEJZKJZLUAZF
+      UBZUCZUDUEZUFZAMZDNBMZENOZIMZGUGZOZABIUHABDEGUIWGABIWAWBWCPZWEPZWANWIVPNZ
+      WIVTNZQZOWGWIVPVTUJWJWDWLWFWJWHVONZWDWJWMWEKNIRZWHWEVOKSUKWBWCDESTWFCIULZ
+      CMZGNZUQZCUMZWLCWEGUNWKWSWKWPUOZWIPZVSNZCVGWRQZCVGWSQCWIVSUPXBXCCXBXAVQNZ
+      XAVRNZUQWRXAVQVRURXDWOXEWQXDWTWEPLNWOWTWHWELWBWCARBRUSUTWPWECRWNVATXEWTWH
+      PFNWQWTWHWEFWNVBHTVCVDVEWRCVFVHVIVJVKTVLABIDEGVMVN $.
   $}
 
   ${
