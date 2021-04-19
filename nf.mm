@@ -51834,17 +51834,6 @@ $)
       RGFVIVJVPVTVOSZAAVOTVTVTNZVTGJZXDXFAALAVKVTVTVTXCXCVCVEXEVTGVLVGRFFGVMVJ
       $.
 
-    $( ` 1st ` is a mapping from ` ( _V X. _V ) ` onto the universe.
-       (Contributed by SF, 12-Feb-2015.) $)
-    1stfoOLD $p |- 1st : ( _V X. _V ) -onto-> _V $=
-      ( cvv cxp c1st wfo 1stfo wceq wb xpvv foeq2 ax-mp mpbir ) AABZACDZAACDZEL
-      AFMNGHLAACIJK $.
-
-    $( ` 2nd ` is a mapping from ` ( _V X. _V ) ` onto the universe.
-       (Contributed by SF, 12-Feb-2015.) $)
-    2ndfoOLD $p |- 2nd : ( _V X. _V ) -onto-> _V $=
-      ( cvv cxp c2nd wfo 2ndfo wceq wb xpvv foeq2 ax-mp mpbir ) AABZACDZAACDZEL
-      AFMNGHLAACIJK $.
   $}
 
   ${
@@ -51905,11 +51894,6 @@ $)
       NURAAVNUSVPVPMZVPLZNZVNVPQXCXBXANZEIZXCVNURXEXCXCGXCVBXCXBXAVPAOZRVPXFPSU
       TXCXDEVAVCVDUQEDVEVFZVLVJXGDVKEVGVHUTDDEVIVF $.
 
-    $( ` Swap ` is a bijection over all ordered pairs.  (Contributed by SF,
-       23-Feb-2015.) $)
-    swapf1oOLD $p |- Swap : ( _V X. _V ) -1-1-onto-> ( _V X. _V ) $=
-      ( cvv cxp cswap wf1o swapf1o wceq wb xpvv f1oeq2 ax-mp f1oeq3 bitri mpbir
-      ) AABZNCDZAACDZEOANCDZPNAFZOQGHNANCIJRQPGHNAACKJLM $.
   $}
 
   ${
@@ -51943,18 +51927,16 @@ $)
     $( The value of the ` 1st ` function on an ordered pair.  (Contributed by
        SF, 23-Feb-2015.) $)
     opfv1st $p |- ( 1st ` <. A , B >. ) = A $=
-      ( cop c1st cfv wceq wbr eqid opbr1st mpbir wfun cdm wcel wb cvv cxp 1stfoOLD
-      mp2b wfo wf fof ffun opelxp mpbir2an fdm eleqtrri funbrfvb mp2an ) ABEZFG
-      AHZUKAFIZUMAAHAJABACDKLFMZUKFNZOULUMPQQRZQFUAZUPQFUBZUNSUPQFUCZUPQFUDTUKU
-      PUOUKUPOAQOBQOCDABQQUEUFUQURUOUPHSUSUPQFUGTUHUKAFUIUJL $.
+      ( cop c1st cfv wceq wbr eqid opbr1st mpbir cvv wfn wcel wb wfo 1stfo fofn
+      ax-mp opex fnbrfvb mp2an ) ABEZFGAHZUDAFIZUFAAHAJABACDKLFMNZUDMOUEUFPMMFQ
+      UGRMMFSTABCDUAMUDAFUBUCL $.
 
     $( The value of the ` 2nd ` function on an ordered pair.  (Contributed by
        SF, 23-Feb-2015.) $)
     opfv2nd $p |- ( 2nd ` <. A , B >. ) = B $=
-      ( cop c2nd cfv wceq wbr eqid opbr2nd mpbir wfun cdm wcel wb cvv cxp 2ndfoOLD
-      wfo wf fof ffun mp2b opelxp mpbir2an ax-mp fdmi eleqtrri funbrfvb mp2an )
-      ABEZFGBHZULBFIZUNBBHBJABBCDKLFMZULFNZOUMUNPQQRZQFTZUQQFUAZUOSUQQFUBZUQQFU
-      CUDULUQUPULUQOAQOBQOCDABQQUEUFUQQFURUSSUTUGUHUIULBFUJUKL $.
+      ( cop c2nd cfv wceq wbr eqid opbr2nd mpbir cvv wfn wcel wb wfo 2ndfo fofn
+      ax-mp opex fnbrfvb mp2an ) ABEZFGBHZUDBFIZUFBBHBJABBCDKLFMNZUDMOUEUFPMMFQ
+      UGRMMFSTABCDUAMUDBFUBUCL $.
   $}
 
   ${
@@ -52036,29 +52018,15 @@ $)
   ${
     op1st.1 $e |- A e. _V $.
     op1st.2 $e |- B e. _V $.
-    $( Extract the first member of an ordered pair.  (Contributed by NM,
-       5-Oct-2004.) $)
-    op1st $p |- ( 1st ` <. A , B >. ) = A $=
-      ( cop c1st cfv wceq wbr eqid opbr1st mpbir cvv wfn wcel wb wfo 1stfo fofn
-      ax-mp opex fnbrfvb mp2an ) ABEZFGAHZUDAFIZUFAAHAJABACDKLFMNZUDMOUEUFPMMFQ
-      UGRMMFSTABCDUAMUDAFUBUCL $.
-
-    $( Extract the second member of an ordered pair.  (Contributed by NM,
-       5-Oct-2004.) $)
-    op2nd $p |- ( 2nd ` <. A , B >. ) = B $=
-      ( cop c2nd cfv wceq wbr eqid opbr2nd mpbir cvv wfn wcel wb wfo 2ndfo fofn
-      ax-mp opex fnbrfvb mp2an ) ABEZFGBHZUDBFIZUFBBHBJABBCDKLFMNZUDMOUEUFPMMFQ
-      UGRMMFSTABCDUAMUDBFUBUCL $.
-
     $( Extract the first member of an ordered pair.  (Contributed by Mario
        Carneiro, 31-Aug-2015.) $)
     op1std $p |- ( C = <. A , B >. -> ( 1st ` C ) = A ) $=
-      ( cop wceq c1st cfv fveq2 op1st syl6eq ) CABFZGCHIMHIACMHJABDEKL $.
+      ( cop wceq c1st cfv fveq2 opfv1st syl6eq ) CABFZGCHIMHIACMHJABDEKL $.
 
     $( Extract the second member of an ordered pair.  (Contributed by Mario
        Carneiro, 31-Aug-2015.) $)
     op2ndd $p |- ( C = <. A , B >. -> ( 2nd ` C ) = B ) $=
-      ( cop wceq c2nd cfv fveq2 op2nd syl6eq ) CABFZGCHIMHIBCMHJABDEKL $.
+      ( cop wceq c2nd cfv fveq2 opfv2nd syl6eq ) CABFZGCHIMHIBCMHJABDEKL $.
   $}
 
 $(
@@ -55124,18 +55092,19 @@ $)
        SF, 12-Feb-2015.) $)
     otsnelsi3 $p |- ( <. { A } , <. { B } , { C } >. >. e. SI_3 R <->
       <. A , <. B , C >. >. e. R ) $=
-      ( vp vx csn cop c1st csi c2nd ccom ctxp wcel wa wbr cvv cv wrex wceq csi3
-      oteltxp df-br vex brsnsi bitr3i cxp wfo 2ndfoOLD fofun ax-mp txpcofun eleq2i
-      wfun opsnelsi anbi12i 3bitr4ri opelco exancom trtxp op1st2nd bitri anbi1i
-      wex exbii opex breq2 ceqsexv 3bitri rexbii df-si3 elimapw1 risset 3bitr4i
-      cpw1 cima ) HUAZJZAJZBJZCJZKZKZKLMZLNOZMZNNOZMZPZPZQZHDUBZVTABCKZKZUCZHDU
-      BWFDUDZQZWQDQWNWRHDWNWAWBKWGQZWAWEKWLQZRVTALSZVTWPNSZRWRWAWBWEWGWLUEXAXCX
-      BXDXAWAWBWGSXCWAWBWGUFVTALHUGZEUHUIXBWAWCKWIQZWAWDKWKQZRZVTWPKZLNPZNOZQZX
-      DWAWCWDWIWKUEXIWHWJPZQVTBKWHQZVTCKWJQZRXLXHVTBCWHWJUEXKXMXILNNTTUJZTNUKNU
-      QULXPTNUMUNUOUPXFXNXGXOVTBWHXEFURVTCWJXEGURUSUTXLVTIUAZNSZXQWPXJSZRIVGXSX
-      RRZIVGZXDIVTWPXJNVAXRXSIVBYAXQWPUCZXRRZIVGXDXTYCIXSYBXRXSXQBLSXQCNSRYBXQB
-      CLNVCBCXQFGVDVEVFVHXRXDIWPBCFGVIZXQWPVTNVJVKVEVLVLUSAWPVTEYDVDVLVMWTWFWMD
-      VRVSZQWOWSYEWFDVNUPHWFWMDVOVEHWQDVPVQ $.
+      ( vp vx csn cop wcel c1st csi c2nd wceq wa wbr wex 3bitri df-si3 elimapw1
+      csi3 ccom ctxp cpw1 cima cv wrex eleq2i oteltxp vex opsnelsi df-br bitr4i
+      cproj2 opelco cproj1 opeq breq1i proj1ex proj2ex eqcom anbi1i exbii breq1
+      opbr2nd ceqsexv bitri anbi12i op1st2nd 3bitr4ri opex rexbii risset ) AJZB
+      JZCJZKZKZDUCZLVTMNZMOUDZNZOOUDZNZUEZUEZDUFUGZLHUHZJZVTKWHLZHDUIZABCKZKZDL
+      ZWAWIVTDUAUJHVTWHDUBWMWJWOPZHDUIWPWLWQHDWLWKVPKWBLZWKVSKWGLZQWJAMRZWJWNOR
+      ZQWQWKVPVSWBWGUKWRWTWSXAWRWJAKMLWTWJAMHULZEUMWJAMUNUOWSWKVQKWDLZWKVRKWFLZ
+      QWJUPZBMRZXECORZQZXAWKVQVRWDWFUKXCXFXDXGXCWJBKWCLWJIUHZORZXIBMRZQZISZXFWJ
+      BWCXBFUMIWJBMOUQXMXIXEPZXKQZISXFXLXOIXJXNXKXJWJURZXEKZXIORXEXIPXNWJXQXIOW
+      JUSZUTXPXEXIWJXBVAZWJXBVBZVGXEXIVCTZVDVEXKXFIXEXTXIXEBMVFVHVITXDWJCKWELXJ
+      XICORZQZISZXGWJCWEXBGUMIWJCOOUQYDXNYBQZISXGYCYEIXJXNYBYAVDVEYBXGIXEXTXIXE
+      COVFVHVITVJXQWNORXEWNPXAXHXPXEWNXSXTVGWJXQWNOXRUTBCXEFGVKVLTVJAWNWJEBCFGV
+      MVKTVNHWODVOUOT $.
   $}
 
   ${
@@ -61491,33 +61460,36 @@ $)
 
   ${
     $d b m $.  $d b s $.  $d m n $.  $d m s $.  $d m t $.  $d n s $.  $d n t $.
-    $d s t $.
+    $d s t $.  $d b t $.
     $( Lemma for ~ nncdiv3 .  Set up a helper for stratification.  (Contributed
        by SF, 3-Mar-2015.) $)
     nncdiv3lem1 $p |- ( <. n , b >. e. ran ( Ins3 `' ( ( ran ( `' 1st (x) ( 1st
         i^i 2nd ) ) (x) 2nd ) " AddC ) i^i ( ( ( 1st o. 1st ) (x) ( ( 2nd o.
         1st ) (x) 2nd ) ) " AddC ) ) <-> b = ( ( n +c n ) +c n ) ) $=
-      ( vm vs vt cv cop c1st c2nd ctxp caddcfn wcel wex wceq wa wbr trtxp bitri
-      wrex 3bitri ccnv cin crn cima cins3 ccom cplc elrn2 elin otelins3 opelcnv
-      vex risset df-br elima elrn brcnv brin op1st2nd anbi12i ancom exbii breq2
-      opex ceqsexv anbi1i rexbii 3bitr4ri braddcfn eqcom anass cvv cxp wfo wfun
-      anbi2i 1stfoOLD fofun ax-mp txpcofun 3bitr3ri 3bitr2i addcex addceq1 eqeq2d
-      breqi brco ) AFZBFZGZHUAZHIUBZJZUCZIJZKUDZUAZUEZHHUFZIHUFZIJZJZKUDZUBZUCL
-      CFZWJGZXDLZCMXEWHWHUGZNZWIXEWHUGZNZOZCMWIXHWHUGZNZCWJXDUHXGXLCXGXFWRLZXFX
-      CLZOXLXFWRXCUIXOXIXPXKXOXEWHGZWQLWHXEGZWPLZXIXEWHWIWQBULZUJXEWHWPUKXSWHWH
-      GZXEKPZXHXENXIYAXEGZKLDFZYCNZDKSZYBXSDYCKUMYAXEKUNXSYDXRWOPZDKSYFDXRWOKUO
-      YGYEDKYGYDWHWNPZYDXEIPZOYDYAHPZYIOYEYDWHXEWNIQYHYJYIYHYDWHGZWNLZEFZYANZYD
-      YMHPZOZEMZYJYDWHWNUNYLYMYKWMPZEMYQEYKWMUPYRYPEYRYMYDWKPZYMWHWLPZOYOYNOYPY
-      MYDWHWKWLQYSYOYTYNYMYDHUQYTYMWHHPYMWHIPZOYNYMWHHIURWHWHYMAULZUUBUSRUTYOYN
-      VATVBRYOYJEYAWHWHUUBUUBVDZYMYAYDHVCVETVFYAXEYDUUCCULZUSTVGRVHWHWHXEUUBUUB
-      VIXHXEVJTTXPXQWIKPZXJWINXKXQWIGZKLYDUUFNZDKSZUUEXPDUUFKUMXQWIKUNXPYDXFXBP
-      ZDKSUUHDXFXBKUOUUIUUGDKUUIYDXEWSPZYDWJXAPZOZYDXQHPZYDWIIPZOZUUGYDXEWJWSXA
-      QUULUUJYDWHWTPZUUNOZOUUJUUPOZUUNOUUOUUKUUQUUJYDWHWIWTIQVPUUJUUPUUNVKUURUU
-      MUUNYDXQHIJZHUFZPZYDXQWSWTJZPUUMUURYDXQUUTUVBHIHVLVLVMZVLHVNHVOVQUVCVLHVR
-      VSVTWFUVAYOYMXQUUSPZOZEMYMXQNZYOOZEMUUMEYDXQUUSHWGUVEUVGEUVEYOUVFOUVGUVDU
-      VFYOUVDYMXEHPUUAOUVFYMXEWHHIQXEWHYMUUDUUBUSRVPYOUVFVARVBYOUUMEXQXEWHUUDUU
-      BVDZYMXQYDHVCVETYDXEWHWSWTQWAVFWBXQWIYDUVHXTUSTVGRVHXEWHWIUUDUUBVIXJWIVJT
-      UTRVBXKXNCXHWHWHUUBUUBWCXIXJXMWIXEXHWHWDWEVET $.
+      ( vm vt cv cop c1st c2nd ctxp caddcfn wcel wex wceq wa vex wbr wrex df-br
+      bitri 3bitri ccnv cin crn cima cins3 ccom cplc elrn2 elin otelins3 cproj1
+      opelcnv proj1ex eqvinc cproj2 opeq breq1i proj2ex opbr1st oteltxp 3bitr2i
+      trtxp eqcom anbi12i op1st2nd exbii 3bitr4ri anbi1i rexbii risset braddcfn
+      opex elima 3bitr4i anbi2i anass brco ceqsexv bitr2i addcex addceq1 eqeq2d
+      breq1 ) AEZBEZFZGUAZGHUBZIZUCZHIZJUDZUAZUEZGGUFZHGUFZHIZIZJUDZUBZUCKCEZWF
+      FZWTKZCLXAWDWDUGZMZWEXAWDUGZMZNZCLWEXDWDUGZMZCWFWTUHXCXHCXCXBWNKZXBWSKZNX
+      HXBWNWSUIXKXEXLXGXKXAWDFZWMKWDXAFZWLKZXEXAWDWEWMBOZUJXAWDWLULXOWDWDFZXAJP
+      ZXDXAMXEDEZXNWKPZDJQXSXQXAFZMZDJQZXOXRXTYBDJXTXSWDWJPZXSXAHPZNXSXQGPZYENY
+      BXSWDXAWJHVBYDYFYEYDXSWDFZWJKXAYGFWIKZCLZYFXSWDWJRCYGWIUHXSUKZXQMZXAYJMZX
+      AXQMZNZCLYFYICYJXQXSDOZUMZUNYFYJXSUOZFZXQGPYKXSYRXQGXSUPZUQYJYQXQYPXSYOUR
+      ZUSSYHYNCYHXAXSFWGKZXMWHKZNYNXAXSWDWGWHUTUUAYLUUBYMUUAXSXAFGKXSXAGPZYLXAX
+      SGULXSXAGRUUCYRXAGPYJXAMYLXSYRXAGYSUQYJYQXAYPYTUSYJXAVCTZVAUUBXMGKZXMHKZN
+      XAWDGPZXAWDHPZNYMXMGHUIUUGUUEUUHUUFXAWDGRXAWDHRVDWDWDXAAOZUUIVEVAVDSVFVGT
+      VHXQXAXSWDWDUUIUUIVLCOZVETVIDXNWKJVMXRYAJKYCXQXAJRDYAJVJSVNWDWDXAUUIUUIVK
+      XDXAVCTTXLXSXMWEFZMZDJQZXMWEJPZXGXLXSXBWRPZDJQUUMDXBWRJVMUUOUULDJUUOXSXAW
+      OPZXSWFWQPZNZXSXMGPZXSWEHPZNZUULXSXAWFWOWQVBUURUUPXSWDWPPZUUTNZNUUPUVBNZU
+      UTNUVAUUQUVCUUPXSWDWEWPHVBVOUUPUVBUUTVPUVDUUSUUTYJXAGPZYJWDHPZNYJXMMZUVDU
+      USXAWDYJUUJUUIVEUUPUVEUVBUVFUUPXSWDGPZWDXAGPZNZALWDYJMZUVINZALUVEAXSXAGGV
+      QUVJUVLAUVHUVKUVIUVHYRWDGPYJWDMUVKXSYRWDGYSUQYJYQWDYPYTUSYJWDVCTVHVFUVIUV
+      EAYJYPWDYJXAGWCVRTUVBUUCUUHNZCLYLUUHNZCLUVFCXSWDHGVQUVMUVNCUUCYLUUHUUDVHV
+      FUUHUVFCYJYPXAYJWDHWCVRTVDUUSYRXMGPUVGXSYRXMGYSUQYJYQXMYPYTUSSVNVHVAXMWEX
+      SXAWDUUJUUIVLXPVETVISUUNUUKJKUUMXMWEJRDUUKJVJVSUUNXFWEMXGXAWDWEUUJUUIVKXF
+      WEVCSTVDSVFXGXJCXDWDWDUUIUUIVTXEXFXIWEXAXDWDWAWBVRT $.
   $}
 
   ${
