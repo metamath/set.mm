@@ -54398,10 +54398,11 @@ $)
   $c Fns $. $( Function with domain relationship. $)
   $c PProd $. $( Parallel product. $)
   $c Cross $. $( Cross product function. $)
+  $c Compose $. $( Composition function. $)
   $c Pw1Fn $. $( The unit power class function. $)
   $c FullFun $. $( The full function operation. $)
   $c Dom $. $( The domain function. $)
-  $c Ran $.
+  $c Ran $. $( The range function. $)
 
   $( Extend the definition of a class to include the tail cross product. $)
   ctxp $a class ( A (x) B ) $.
@@ -54454,6 +54455,16 @@ $)
        9-Feb-2015.) $)
     df-addcfn $a |- AddC = ( x e. _V , y e. _V |-> ( x +c y ) ) $.
   $}
+
+  $( Extend the definition of a class to include the compostion function. $)
+  ccompose $a class Compose $.
+
+  ${
+    $d x y $.
+    $( Define the composition function.  (Contributed by Scott Fenton,
+       19-Apr-2021.) $)
+    df-compose $a |- Compose = ( x e. _V , y e. _V |-> ( x o. y ) ) $.
+ $}
 
   $( Extend the definition of a class to include the second insertion
      operation. $)
@@ -55137,6 +55148,79 @@ $)
       ZVDVEKKZVALZVIUTLZMCANZCBNZMVIVBLVGVFLVJVLVKVMVJVHVDKGLVLVHVDVEGBOZUGVGVD
       COZAOZPQVKVHVEKGLVMVHVDVEGVPUHVGVEVOVNPQUKVIVAUTRVGVDVERULUMUNEEVBSSVAUTG
       TUOGTUPUQURUS $.
+  $}
+
+  ${
+     $d x y A $. $d x y B $.
+     $( The value of the composition function.  (Contributed by Scott Fenton,
+        19-Apr-2021.) $)
+     composevalg $p |- ( ( A e. V /\ B e. W ) ->
+     ( A Compose B ) = ( A o. B ) ) $=
+       ( vx vy wcel wa cvv ccom ccompose co wceq elex adantr adantl coexg coeq1
+       cv coeq2 df-compose ovmpt2g syl3anc ) ACGZBDGZHAIGZBIGZABJZIGABKLUHMUDUF
+       UEACNOUEUGUDBDNPABCDQEFABIIESZFSZJUHKAUJJIUIAUJRUJBATEFUAUBUC $.     
+  $}
+
+  ${
+     $d x y z $.
+     $( The compose function is a function over the universe.  (Contributed
+        by Scott Fenton, 19-Apr-2021.) $)
+     composefn $p |- Compose Fn _V $=
+       ( vx vy vz ccompose cvv wfn cv wcel ccom wceq coprab copab weu vex eueq1
+       wa coex a1i fnoprab wb cmpt2 df-compose df-mpt2 eqtri df-xp eqtr3i fneq1
+       cxp xpvv fneq2 sylan9bb mp2an mpbir ) DEFZAGZEHBGZEHPZCGUOUPIZJZPABCKZUQ
+       ABLZFZUQUSABCUSCMUQCURUOUPANBNQORSDUTJZEVAJZUNVBTDABEEURUAUTABUBABCEEURU
+       CUDEEUHEVAUIABEEUEUFVCUNUTEFVDVBEDUTUGEVAUTUJUKULUM $.
+  $}
+
+  ${
+    $( Binary relationship form of the compose function.  (Contributed
+       by Scott Fenton, 19-Apr-2021.) $)
+    brcomposeg $p |- ( ( A e. V /\ B e. W ) -> ( <. A , B >. Compose C <->
+      ( A o. B ) = C ) ) $=
+      ( wcel wa cop ccompose cfv wceq wbr ccom cvv wb composefn fnbrfvb sylancr
+      wfn opexg co df-ov composevalg syl5eqr eqeq1d bitr3d ) ADFBEFGZABHZIJZCKZ
+      UHCILZABMZCKUGINSUHNFUJUKOPABDETNUHCIQRUGUIULCUGUIABIUAULABIUBABDEUCUDUEU
+      F $.
+  $}
+
+  ${
+     $d x y z w t u v $.
+     $( The compose function is a set.  (Contributed by Scott Fenton,
+        19-Apr-2021.) $)
+     composeex $p |- Compose e. _V $=
+       ( vx vy vw vu vt vv cvv csset cins2 c1c cv wbr wex wcel cop vex otelins2
+       wa bitri ins2ex vz ccompose cxp c1st ccnv c2nd cin csi3 cins4 cswap cima
+       cid cins3 csymdif cdif ccom cmpt2 df-compose copab wceq csn elopab df-co
+       eleq2i elima1c elin opex oqelins4 otsnelsi3 opelxp mpbiran df-br 3bitr2i
+       brcnv anbi12i op1st2nd 3bitri snex wel df-clel opelssetsn exbii 3bitr4ri
+       brswap2 ideq otelins3 releqmpt2 eqtr4i vvex 1stex cnvex xpex 2ndex si3ex
+       inex ins4ex swapex ssetex 1cex imaex idex ins3ex mpt2exlem eqeltri ) UBG
+       GUCGUCHIZGUDUEZUCZUFUEZIZUGZUHZUIZUJUHZUIZXEIZIZIZUGZJUKZIZULUHZUIZHUMZI
+       ZIZIZIZUGZJUKZUGZJUKZUGZJUKZJUKZUMUNJUKUOZGUBABGGAKZBKZUPZUQYOABURABUAGG
+       YNYRUAKZCKZDKZYQLZUUAEKZYPLZRZDMZCEUSZNYSYTUUCOUTZUUFRZEMZCMZYSYRNYSVAZY
+       PYQOZOZYNNZUUFCEYSVBYRUUGYSCEDYPYQVCVDUUOYTVAZUUNOZYMNZCMUUKCUUNYMVEUURU
+       UJCUURUUCVAZUUQOZYLNZEMUUJEUUQYLVEUVAUUIEUVAUUTXLNZUUTYKNZRUUIUUTXLYKVFU
+       VBUUHUVCUUFUVBUUSUUPUULOOXKNUUCYTYSOZOZXJNZUUHUUSUUPUULUUMXKYPYQAPZBPZVG
+       ZVHUUCYTYSXJEPZCPZUAPVIUVFUVEXGNZUVEXINZRYSYTUDLZYSUUCUFLZRUUHUVEXGXIVFU
+       VLUVNUVMUVOUVLUVDXFNZYTYSXFLUVNUVLUUCGNUVPUVJUUCUVDGXFVJVKYTYSXFVLYTYSUD
+       VNVMUVMUUCYSOXHNUUCYSXHLUVOUUCYTYSXHUVKQUUCYSXHVLUUCYSUFVNVMVOYTUUCYSUVK
+       UVJVPVQVQUVCUUAVAZUUTOZYJNZDMUUFDUUTYJVEUVSUUEDUVSUVRXTNZUVRYINZRUUEUVRX
+       TYIVFUVTUUBUWAUUDUVTUVQUUQOZXSNZUUBUVQUUSUUQXSUUCVRZQYTUUAOZYQNUUCUWEUTZ
+       EBVSZRZEMZUUBUWCEUWEYQVTYTUUAYQVLUWCUUSUWBOZXRNZEMUWIEUWBXRVEUWKUWHEUWKU
+       WJXNNZUWJXQNZRUWHUWJXNXQVFUWLUWFUWMUWGUWLUUSUVQUUPOOXMNZUWFUUSUVQUUPUUNX
+       MUULUUMYSVRZUVIVGZVHUWNUUCUUAYTOZOUJNUUCUWQUJLUWFUUCUUAYTUJUVJDPZUVKVIUU
+       CUWQUJVLUUCUUAYTUWRUVKWDVMSUWMUUTXPNUUSUUNOXONZUWGUUSUVQUUQXPUUAVRZQUUSU
+       UPUUNXOYTVRZQUWSUUSUUMOXENUUSYQOHNUWGUUSUULUUMXEUWOQUUSYPYQHUVGQUUCYQUVJ
+       UVHWAVQVQVOSWBSWCSUUAUUCOZYPNFKZUXBUTZFAVSZRZFMZUUDUWAFUXBYPVTUUAUUCYPVL
+       UWAUXCVAZUVROZYHNZFMUXGFUVRYHVEUXJUXFFUXJUXIYBNZUXIYGNZRUXFUXIYBYGVFUXKU
+       XDUXLUXEUXKUXHUVQUUSOOYANZUXDUXHUVQUUSUUQYAUUPUUNUXAUWPVGVHUXMUXCUXBOULN
+       UXCUXBULLUXDUXCUUAUUCULFPZUWRUVJVIUXCUXBULVLUXCUXBUUAUUCUWRUVJVGWEVMSUXL
+       UXHUUTOYFNUXHUUQOYENZUXEUXHUVQUUTYFUWTQUXHUUSUUQYEUWDQUXOUXHUUNOYDNUXHUU
+       MOYCNZUXEUXHUUPUUNYDUXAQUXHUULUUMYCUWOQUXPUXHYPOHNUXEUXHYPYQHUVHWFUXCYPU
+       XNUVGWASVQVQVOSWBSWCVOSWBSVOSWBSWBSWCWGWHGGYNWIWIYMJYLJXLYKXKXJXGXIGXFWI
+       UDWJWKWLXHUFWMWKTWOWNWPYJJXTYIXSXRJXNXQXMUJWQWNWPXPXOXEHWRTTTTWOWSWTTYHJ
+       YBYGYAULXAWNWPYFYEYDYCHWRXBTTTTWOWSWTWOWSWTWOWSWTWSWTXCXD $.
   $}
 
   ${
@@ -58314,42 +58398,26 @@ $)
   $}
 
   ${
-    $d A s $.  $d A z $.  $d G s $.  $d G z $.  $d p q $.  $d p r $.  $d p s $.
-    $d p t $.  $d p w $.  $d p x $.  $d p y $.  $d q r $.  $d q s $.  $d q t $.
-    $d q w $.  $d q x $.  $d q y $.  $d r s $.  $d r t $.  $d r x $.  $d r z $.
-    $d s t $.  $d s w $.  $d s x $.  $d s y $.  $d s z $.  $d t w $.  $d t x $.
-    $d t y $.  $d w x $.  $d w y $.  $d x y $.  $d x z $.  $d r w $.  $d r y $.
-    $d w z $.  $d y z $.  $d t z $.
+    $d A s p x y $.  $d G s p x y $.  $d r s p x y $.
     enmap2lem1.1 $e |- W = ( s e. ( G ^m A ) |-> ( s o. `' r ) ) $.
     $( Lemma for ~ enmap2 .  Set up stratification.  (Contributed by SF,
        26-Feb-2015.) $)
     enmap2lem1 $p |- W e. _V $=
-      ( vx vy vz vt cvv csset cv c1st c2nd cop wex wcel wa vex co cxp cins3 csi
-      cmap cins2 ctxp csi3 cin c1c cima cpw1 cres csymdif ccompl ccnv ccom cmpt
-      cins4 wceq csn wb wbr elin otelins3 opex opsnelsi opelcnv 3bitr4ri 3bitri
-      df-br wel df-clel elima1c oqelins4 oteltxp bicomi otelins2 bitr4i anbi12i
-      otsnelsi3 op1st2nd snex opelssetsn bitri exbii opelco 3bitr4i sneq opeq1d
-      eleq1d eleq1 bibi12d mpbiri exlimivv pm5.32i opelres ancom snelpw1 anbi1i
-      elvv opeqex pm4.71ri releqmpt eqtr4i ovex ins3ex 1stex 2ndex ins2ex txpex
-      siex si3ex ins4ex ssetex inex 1cex imaex vvex xpex pw1ex mptexlem eqeltri
-      resex ) CBAUEUAZKUBLUCEMZUCZUDZUCZNOUFZUGZUHZUSZLUFZUFZUIZUJUKZUIZUJUKZKK
-      UBZULZUMZUFUNUJUKUOUPUIZKCDYEDMZYFUPZUQZURUUCFDGYEUUBUUFGMZHMZIMZPZUTZIQH
-      QZUUGVAZUUDPZYSRZSZUULUUGUUFRZSUUNUUBRZUUQUULUUOUUQUUKUUOUUQVBZHIUUKUUSUU
-      JVAZUUDPZYSRZUUJUUFRZVBJMZVAZUVAPZYRRZJQUUHUVDUUEVCZUVDUUIUUDVCZSZJQUVBUV
-      CUVGUVJJUVGUVFYIRZUVFYQRZSUVJUVFYIYQVDUVKUVHUVLUVIUVKUVEUUTPZYHRUVDUUJPZY
-      GRZUVHUVEUUTUUDYHDTZVEUVDUUJYGJTZUUHUUIHTZITZVFZVGUUHUVDPUUERUVDUUHPYFRUV
-      HUVOUUHUVDYFVHUUHUVDUUEVKUVDUUHUUIYFUVSVEVIVJUVDUUIPZUUDRUUGUWAUTZGDVLZSZ
-      GQZUVIUVLGUWAUUDVMUVDUUIUUDVKUVLUUMUVFPZYPRZGQUWEGUVFYPVNUWGUWDGUWGUWFYMR
-      ZUWFYORZSUWDUWFYMYOVDUWHUWBUWIUWCUWHUUMUVMPYLRUUGUVNPYKRZUWBUUMUVEUUTUUDY
-      LUVPVOUUGUVDUUJYKGTZUVQUVTWAUWJUUGUVDPNRZUUGUUJPYJRZSUUGUVDNVCZUUGUUIOVCZ
-      SUWBUUGUVDUUJNYJVPUWLUWNUWMUWOUWNUWLUUGUVDNVKVQUWMUUGUUIPORUWOUUGUUHUUIOU
-      VRVRUUGUUIOVKVSVTUVDUUIUUGUVQUVSWBVJVJUWIUUMUVAPYNRUUNLRUWCUUMUVEUVAYNUVD
-      WCVRUUMUUTUUDLUUJWCVRUUGUUDUWKUVPWDVJVTWEWFWEVIVTWEWFJUVAYRVNJUUHUUIUUDUU
-      EWGWHUUKUUOUVBUUQUVCUUKUUNUVAYSUUKUUMUUTUUDUUGUUJWIWJWKUUGUUJUUFWLWMWNWOW
-      PUURUUOUUMUUARZSUWPUUOSUUPUUMUUDYSUUAWQUUOUWPWRUWPUULUUOUWPUUGYTRUULUUGYT
-      WSHIUUGXAWEWTVJUUQUULHIUUGUUFXBXCWHXDXEYEUUBBAUEXFYSUUAYRUJYIYQYHYGYFETXG
-      XLXGYPUJYMYOYLYKNYJXHOXIXJXKXMXNYNLXOXJXJXPXQXRXPXQXRYTKKXSXSXTYAYDYBYC
-      $.
+      ( vx vp c1st c2nd cv cvv ccompose wcel wceq wa cop wbr vex bitri ccnv csn
+      cima cxp cin ccom ctxp cmap cres cmpt copab df-mpt opelres wrex trtxp wex
+      brco ancom brin brxp mpbiran2 eliniseg anbi2i cnvex op1st2nd 3bitri exbii
+      co anbi1i opex breq2 ceqsexv rexbii elima risset 3bitr4i df-br brcomposeg
+      wb mp2an eqcom 3bitr2i anbi2ci opabbi2i 3eqtr4i 1stex snex vvex xpex inex
+      2ndex imaex coex txpex composeex ovex resex eqeltri ) CIJUAZEKZUAZUBZUCZL
+      UDZUEZIUFZJUGZMUCZBAUHVHZUIZLDXIDKZXAUFZUJXKXINZGKZXLOZPZDGUKCXJDGXIXLULF
+      XPDGXJXKXNQZXJNXQXHNZXMPXPXKXNXHXIUMXRXOXMXRXKXAQZXNQZMNZXSXNMRZXOHKZXQXG
+      RZHMUNYCXTOZHMUNXRYAYDYEHMYDYCXKXFRZYCXNJRZPYCXSIRZYGPYEYCXKXNXFJUOYFYHYG
+      YFYCXNIRZXNXKXERZPZGUPXNXSOZYIPZGUPYHGYCXKXEIUQYKYMGYKYJYIPYMYIYJURYJYLYI
+      YJXNXKIRZXNXKXDRZPYNXNXAJRZPYLXNXKIXDUSYOYPYNYOXNXCNZYPYOYQXKLNZDSZXNXKXC
+      LUTVAJXAXNVBTVCXKXAXNYSWTESVDZVEVFVITVGYIYHGXSXKXAYSYTVJZXNXSYCIVKVLVFVIX
+      SXNYCUUAGSVEVFVMHXQXGMVNHXTMVOVPXSXNMVQYBXLXNOZXOYRXALNYBUUBVSYSYTXKXAXNL
+      LVRVTXLXNWATWBWCTWDWEXHXIXGMXFJXEIIXDWFXCLWSXBJWKVDXAWGWLWHWIWJWFWMWKWNWO
+      WLBAUHWPWQWR $.
   $}
 
   ${
@@ -58439,48 +58507,25 @@ $)
   $}
 
   ${
-    $d A s $.  $d A z $.  $d G s $.  $d G z $.  $d p q $.  $d p r $.  $d p s $.
-    $d p t $.  $d p w $.  $d p x $.  $d p y $.  $d q r $.  $d q s $.  $d q t $.
-    $d q w $.  $d q x $.  $d q y $.  $d r s $.  $d r t $.  $d r x $.  $d r z $.
-    $d s t $.  $d s w $.  $d s x $.  $d s y $.  $d s z $.  $d t w $.  $d t x $.
-    $d t y $.  $d w x $.  $d w y $.  $d x y $.  $d x z $.  $d a b $.  $d a c $.
-    $d a p $.  $d a r $.  $d a s $.  $d A t $.  $d a x $.  $d b c $.  $d b p $.
-    $d b r $.  $d b s $.  $d b x $.  $d c p $.  $d c r $.  $d c s $.  $d c x $.
-    $d G t $.  $d r y $.  $d t z $.  $d y z $.
+    $d A p r s x $. $d G p s x $.
     enmap1lem1.1 $e |- W = ( s e. ( A ^m G ) |-> ( r o. s ) ) $.
     $( Lemma for ~ enmap1 .  Set up stratification.  (Contributed by SF,
        3-Mar-2015.) $)
     enmap1lem1 $p |- W e. _V $=
-      ( vx vy vz vt cvv c2nd c1st cv cop wex wcel wa wbr vex co cxp csset cins3
-      cmap ctxp csi3 cins4 cins2 cin c1c cima ccnv ccom csi cpw1 csymdif ccompl
-      cres cmpt wceq csn wb elin oqelins4 opex otsnelsi3 oteltxp df-br otelins3
-      wel bicomi bitr4i anbi12i ancom bitri op1st2nd 3bitri otelins2 opelssetsn
-      snex exbii elima1c df-clel 3bitr4i wrex trtxp brcnv brco2nd anbi2i rexbii
-      opsnelsi elima risset opelco opeq1d eleq1d eleq1 bibi12d exlimivv pm5.32i
-      sneq mpbiri opelres elvv opeqex pm4.71ri releqmpt eqtr4i ovex 2ndex 1stex
-      snelpw1 ins3ex txpex si3ex ins4ex ssetex ins2ex inex 1cex imaex coex siex
-      cnvex vvex xpex pw1ex resex mptexlem eqeltri ) CABUEUAZKUBUCUDLMUDZUFZUGZ
-      UHZUCUIZUIZUJZUKULZMLUMZLUNZUMZUFZENZULZUOZUDZUJZUKULZKKUBZUPZUSZUIUQUKUL
-      URUMUJZKCDYLUUEDNZUNZUTUUNFDGYLUUMUUPGNZHNZINZOZVAZIPHPZUUQVBZUUOOZUUJQZR
-      ZUVBUUQUUPQZRUVDUUMQZUVGUVBUVEUVGUVAUVEUVGVCZHIUVAUVIUUTVBZUUOOZUUJQZUUTU
-      UPQZVCUVCUVKOZUUIQZGPUURUUQUUOSZUUQUUSUUESZRZGPUVLUVMUVOUVRGUVOUVNYTQZUVN
-      UUHQZRUVRUVNYTUUHVDUVSUVPUVTUVQJNZVBZUVNOZYSQZJPUWAUURUUQOZVAZJDVKZRZJPZU
-      VSUVPUWDUWHJUWDUWCYPQZUWCYRQZRUWHUWCYPYRVDUWJUWFUWKUWGUWJUWBUVCUVJOZOYOQU
-      WAUUQUUTOZOYNQZUWFUWBUVCUVJUUOYODTZVEUWAUUQUUTYNJTZGTZUURUUSHTZITZVFZVGUW
-      NUWAUUQOLQZUWAUUTOYMQZRZUWAUURMSZUWAUUQLSZRZUWFUWAUUQUUTLYMVHUXCUXEUXDRUX
-      FUXAUXEUXBUXDUXEUXAUWAUUQLVIVLUXBUWAUUROMQUXDUWAUURUUSMUWSVJUWAUURMVIVMVN
-      UXEUXDVOVPUURUUQUWAUWRUWQVQVRVRUWKUWBUVKOYQQUWBUUOOUCQUWGUWBUVCUVKYQUUQWA
-      VSUWBUVJUUOUCUUTWAVSUWAUUOUWPUWOVTVRVNVPWBJUVNYSWCUVPUWEUUOQUWIUURUUQUUOV
-      IJUWEUUOWDVPWEUWLUUGQZUUQUUSOZUUEQZUVTUVQUXGUWMUUFQZUXIUUQUUTUUFUWQUWTWLU
-      WAUWMUUDSZJUUEWFUWAUXHVAZJUUEWFUXJUXIUXKUXLJUUEUXKUWAUUQMSZUWAUUTUUCSZRUX
-      MUWAUUSLSZRUXLUWAUUQUUTMUUCWGUXNUXOUXMUXNUUTUWAUUBSUUSUWAUUASUXOUWAUUTUUB
-      WHUURUUSUWAUUAUWRUWSWIUUSUWALWHVRWJUUQUUSUWAUWQUWSVQVRWKJUWMUUDUUEWMJUXHU
-      UEWNWEVPUVCUVJUUOUUGUWOVJUUQUUSUUEVIWEVNVPWBGUVKUUIWCGUURUUSUUEUUOWOWEUVA
-      UVEUVLUVGUVMUVAUVDUVKUUJUVAUVCUVJUUOUUQUUTXBWPWQUUQUUTUUPWRWSXCWTXAUVHUVE
-      UVCUULQZRUVEUVBRUVFUVCUUOUUJUULXDUXPUVBUVEUXPUUQUUKQUVBUUQUUKXMHIUUQXEVPW
-      JUVEUVBVOVRUVGUVBHIUUQUUPXFXGWEXHXIYLUUMABUEXJUUJUULUUIUKYTUUHYSUKYPYRYOY
-      NLYMXKMXLXNXOXPXQYQUCXRXSXSXTYAYBUUGUUFUUDUUEMUUCXLUUBUUALLXKYEXKYCYEXOET
-      YBYDXNXTYAYBUUKKKYFYFYGYHYIYJYK $.
+      ( vx vp c1st cv cvv c2nd ccompose wcel wceq wa cop wbr bitri 3bitri copab
+      ccnv csn cima cxp cin ccom ctxp cmap cres cmpt df-mpt opelres elima trtxp
+      wrex wex brco ancom brin vex brxp mpbiran2 eliniseg anbi1i op1st2nd exbii
+      co opex breq2 ceqsexv rexbii risset bitr4i df-br brcomposeg mp2an anbi2ci
+      wb eqcom opabbi2i 3eqtr4i 1stex cnvex snex imaex vvex xpex inex composeex
+      2ndex coex txpex ovex resex eqeltri ) CIUBZEJZUCZUDZKUEZLUFZIUGZLUHZMUDZA
+      BUIVHZUJZKDXFWRDJZUGZUKXHXFNZGJZXIOZPZDGUACXGDGXFXIULFXMDGXGXHXKQZXGNXNXE
+      NZXJPXMXHXKXEXFUMXOXLXJXOWRXHQZXKMRZXIXKOZXLXOXPXKQZMNZXQXOHJZXNXDRZHMUPZ
+      XTHXNXDMUNYCYAXSOZHMUPXTYBYDHMYBYAXHXCRZYAXKLRZPYAXPIRZYFPYDYAXHXKXCLUOYE
+      YGYFYEYAXKIRZXKXHXBRZPZGUQXKXPOZYHPZGUQYGGYAXHXBIURYJYLGYJYIYHPYLYHYIUSYI
+      YKYHYIXKXHXARZXKXHLRZPXKWRIRZYNPYKXKXHXALUTYMYOYNYMXKWTNZYOYMYPXHKNZDVAZX
+      KXHWTKVBVCIWRXKVDSVEWRXHXKEVAZYRVFTVESVGYHYGGXPWRXHYSYRVIZXKXPYAIVJVKTVEX
+      PXKYAYTGVAVFTVLHXSMVMVNSXPXKMVOVNWRKNYQXQXRVSYSYRWRXHXKKKVPVQXIXKVTTVRSWA
+      WBXEXFXDMXCLXBIXALWTKWQWSIWCWDWRWEWFWGWHWKWIWCWLWKWMWJWFABUIWNWOWP $.
   $}
 
   ${
