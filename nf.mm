@@ -47584,16 +47584,6 @@ $)
       ( cop csn crn cuni rnsnop unieqi unisn eqtri ) ABEFGZHBFZHBMNABCIJBDKL $.
   $}
 
-  $( The domain of a universal restriction.  (Contributed by set.mm
-     contributors, 14-May-2008.) $)
-  dmresv $p |- dom ( A |` _V ) = dom A $=
-    ( cvv cres cdm cin dmres incom inv1 3eqtri ) ABCDBADZEJBEJABFBJGJHI $.
-
-  $( The range of a universal restriction.  (Contributed by set.mm
-     contributors, 14-May-2008.) $)
-  rnresv $p |- ran ( A |` _V ) = ran A $=
-    ( crn cvv cima cres df-rn dfima3 eqtr2i ) ABACDACEBAFACGH $.
-
   ${
     $d s t A $.  $d s t B $.  $d s t F $.
     $( An image under the converse of a restriction.  (Contributed by Jeff
