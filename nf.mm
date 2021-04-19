@@ -55633,21 +55633,6 @@ $)
 
   ${
     $d A a $.  $d a b $.  $d A b $.  $d a c $.  $d A c $.  $d a d $.  $d A d $.
-    $d a x $.  $d A x $.  $d a y $.  $d A y $.  $d B a $.  $d B b $.  $d b c $.
-    $d B c $.  $d b d $.  $d B d $.  $d b x $.  $d B x $.  $d b y $.  $d B y $.
-    $d c d $.  $d c x $.  $d c y $.  $d d x $.  $d d y $.  $d x y $.
-    $( A subset law for parallel product.  (Contributed by SF, 24-Feb-2015.) $)
-    pprodss4v $p |- PProd ( A , B ) C_ ( ( _V X. _V ) X. ( _V X. _V ) ) $=
-      ( vx vy va vb vc vd cvv cxp cv cop wcel wceq wbr wex vex opelxp mpbir2an
-      wa cpprod w3a brpprod df-br bitr3i opeq12 syl6eqel exlimivv sylbir relssi
-      3adant3 ) CDABUAZIIJZUMJZCKZDKZLZULMZUOEKZFKZLZNZUPGKZHKZLZNZUSVCAOUTVDBO
-      TZUBZHPGPZFPEPZUQUNMZVJUOUPULOUREFGHUOUPABUCUOUPULUDUEVIVKEFVHVKGHVBVFVKV
-      GVBVFTUQVAVELZUNUOVAUPVEUFVLUNMVAUMMZVEUMMZVMUSIMUTIMEQFQUSUTIIRSVNVCIMVD
-      IMGQHQVCVDIIRSVAVEUMUMRSUGUKUHUHUIUJ $.
-  $}
-
-  ${
-    $d A a $.  $d a b $.  $d A b $.  $d a c $.  $d A c $.  $d a d $.  $d A d $.
     $d a x $.  $d A x $.  $d B a $.  $d B b $.  $d b c $.  $d B c $.  $d b d $.
     $d B d $.  $d b x $.  $d B x $.  $d c d $.  $d c x $.  $d d x $.  $d a t $.
     $d A t $.  $d a u $.  $d A u $.  $d b t $.  $d B t $.  $d b u $.  $d B u $.
