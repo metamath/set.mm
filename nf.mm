@@ -63649,6 +63649,10 @@ htmldef "Cup" as
     " <FONT FACE=sans-serif>Cup</FONT> ";
   althtmldef "Cup" as ' <FONT FACE=sans-serif>Cup</FONT> ';
   latexdef "Cup" as "{\rm Cup}";
+htmldef "Compose" as
+    " <FONT FACE=sans-serif>Compose</FONT> ";
+  althtmldef "Compose" as ' <FONT FACE=sans-serif>Compose</FONT> ';
+  latexdef "Compose" as "{\rm Compose}";
 htmldef "Disj" as
     " <FONT FACE=sans-serif>Disj</FONT> ";
   althtmldef "Disj" as ' <FONT FACE=sans-serif>Disj</FONT> ';
@@ -63859,4 +63863,14 @@ htmldef "Ran" as " <FONT FACE=sans-serif>Ran</FONT> ";
   althtmldef "Ran" as " <FONT FACE=sans-serif>Ran</FONT> ";
   latexdef "Ran" as "{\rm Ran}";
 
-$)
+
+htmldef "Can" as
+    " <FONT FACE=sans-serif>Can</FONT> ";
+  althtmldef "Can" as ' <FONT FACE=sans-serif>Can</FONT> ';
+  latexdef "Can" as "{\rm Can}";
+  
+htmldef "SCan" as
+    " <FONT FACE=sans-serif>SCan</FONT> ";
+  althtmldef "SCan" as ' <FONT FACE=sans-serif>SCan</FONT> ';
+  latexdef "SCan" as "{\rm SCan}";
+ $)
