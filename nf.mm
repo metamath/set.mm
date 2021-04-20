@@ -62767,28 +62767,6 @@ $)
 
    $}
 
-   ${
-      $d A x y z w t $.
-      $( Alternate condition for strong Cantorhood.  This expresses
-         the main reason we are interested in strongly Cantorian sets.
-	 Since ` _E |`` A ` is realized, we can ignore stratification
-	 when quantifying over strongly Cantorian sets.  (Contributed by
-	 Scott Fenton, 19-Apr-2021.) $)
-      elscan2 $p |- ( A e. SCan <-> ( _E |` A ) e. _V ) $=
-        ( vx vy vz vw vt wcel cv csn cvv cep cres csset ccom wceq wbr vex bitri
-        wa eqtri cscan cmpt elscan wss ssv resmpt ax-mp coeq2i eqcomi resco wel
-        eqtr4i wex snex breq1 ceqsexv brssetsn bitr2i epel brco weq sneq eqeq2d
-        eqeq1 mptv brab anbi1i exbii 3bitr4ri eqbrriv reseq1i ssetex coexg mpan
-        syl5eqelr copab df-mpt opelres ancom pm5.32i opabbi2i dmres dmep ineq2i
-        cdm cin inv1 dmexg resexg syl2anc syl5eqel impbii ) AUAGBABHZIZUBZJGZKA
-        LZJGZBAUCWPWRWPWQMWONZJWSMBJWNUBZNZALZWQWSMWTALZNZXBXDWSXCWOMAJUDXCWOOA
-        UEBJAWNUFUGUHUIMWTAUJULXAKACDXAKCDUKZEHZCHZIZOZXFDHZMPZSZEUMZXGXJKPXGXJ
-        XAPZXMXHXJMPZXEXKXOEXHXGUNXFXHXJMUOUPXGXJCQZDQUQURCDUSXNXGXFWTPZXKSZEUM
-        XMEXGXJMWTUTXRXLEXQXIXKFHZWNOXSXHOXIBFXGXFWTXPEQBCVAWNXHXSWMXGVBVCXSXFX
-        HVDBFWNVEVFVGVHRVIVJVKTMJGWPWSJGVLMWOJJVMVNVOWRWO?JWOWMAGZXGWNOZSZBCVP?
-        BCAWNVQYBBC???YBWMXG?AVR??YB?XTVSXT?YA?VTRRWAULWR?AJG??WRAWQWEZJYCAJWFZ
-        AYCAKWEZWFYDKAWBYEJAWCWDTAWGTWQJWHVO?AJJWIWJWKWLR $.
-    $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
