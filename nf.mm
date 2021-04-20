@@ -52019,6 +52019,12 @@ $)
       ( cop wceq c2nd cfv fveq2 opfv2nd syl6eq ) CABFZGCHIMHIBCMHJABDEKL $.
   $}
 
+  $( The domain of the epsilon relationship.  (Contributed by Scott Fenton,
+     20-Apr-2021.) $)
+  dmep $p |- dom _E = _V $=
+    ( vx cep cdm cvv wceq cv wcel eqv csn wbr vex snid epelc mpbir breldm ax-mp
+    snex mpgbir ) BCZDEAFZSGZAASHTTIZBJZUAUCTUBGTAKLTUBTQMNTUBBOPR $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Operations
@@ -62709,6 +62715,24 @@ $)
   $}
 
   ${
+     $d x y A $.
+     $( The domain of the singleton function.  (Contributed by Scott Fenton,
+        20-Apr-2021.) $)
+     dmsnfn $p |- dom ( x e. A |-> { x } ) = A $=
+       ( cv csn cvv wcel crab wa cab cmpt df-rab eqid dmmpt snex biantru abbi2i
+       cdm 3eqtr4i ) ACZDZEFZABGSBFZUAHZAIABTJZQBUAABKABTUDUDLMUCABUAUBSNOPR $.
+  $}
+
+  ${
+     epelcres.1 $e |- Y e. _V $.
+     $( Version of ~ epelc with a restriction in place.  (Contributed by
+        Scott Fenton, 20-Apr-2021.) $)
+     epelcres $p |- ( X e. A -> ( X ( _E |` A ) Y <-> X e. Y ) ) $=
+       ( wcel cep wbr wa cres iba bicomd brres epelc bicomi 3bitr4g ) BAEZBCFGZ
+       PHZQBCFAIGBCEZPQRPQJKBCFALQSBCDMNO $.
+  $}
+
+  ${
      $d A x y $.
      $( Membership in the class of Cantorian sets.  (Contributed by Scott
         Fenton, 19-Apr-2021.) $)
@@ -62720,11 +62744,9 @@ $)
      $( Membership in the class of strongly Cantorian sets.  (Contributed by
         Scott Fenton, 19-Apr-2021.) $)
      elscan $p |- ( A e. SCan <-> ( x e. A |-> { x } ) e. _V ) $=
-       ( vy cscan wcel cvv cv csn cmpt elex cdm crab cab df-rab eqid dmmpt snex
-       wa biantru abbi2i 3eqtr4i syl5eqelr wceq mpteq1 eleq1d df-scan pm5.21nii
-       dmexg elab2g ) BDEBFEABAGZHZIZFEZBDJUMBULKZFUKFEZABLUJBEZUORZAMUNBUOABNA
-       BUKULULOPUQABUOUPUJQSTUAULFUHUBACGZUKIZFEUMCBDFURBUCUSULFAURBUKUDUECAUFU
-       IUG $.
+       ( vy cscan wcel cvv csn cmpt elex cdm dmsnfn dmexg syl5eqelr wceq mpteq1
+       cv eleq1d df-scan elab2g pm5.21nii ) BDEBFEABAPGZHZFEZBDIUCBUBJFABKUBFLM
+       ACPZUAHZFEUCCBDFUDBNUEUBFAUDBUAOQCARST $.
    $}
 
    ${
@@ -62746,26 +62768,26 @@ $)
    $}
 
    ${
-      $d A x y $.
+      $d A x y z w t $.
       $( Alternate condition for strong Cantorhood.  This expresses
          the main reason we are interested in strongly Cantorian sets.
 	 Since ` _E |`` A ` is realized, we can ignore stratification
 	 when quantifying over strongly Cantorian sets.  (Contributed by
 	 Scott Fenton, 19-Apr-2021.) $)
       elscan2 $p |- ( A e. SCan <-> ( _E |` A ) e. _V ) $=
-        ( vx vy vz vw wcel cv csn cvv cep csset wceq wbr wa wex snex vex syl6bb
-        anbi1i bitri cscan cmpt cres elscan ccom wel breq1 brssetsn anbi1d epel
-        ceqsexv bitr4i brco cdm cfv wfun funmpt funbrfv2b ax-mp ancom crab eqid
-        dmmpt cab biantru abbi2i df-rab eqtr4i eleq2i anbi2i fvmpt eqeq1d eqcom
-        wb sneq pm5.32ri an12 exbii brres 3bitr4i eqbrriv ssetex mpan syl5eqelr
-        coexg impbii ) AUAFBABGZHZUBZIFZJAUCZIFZBAUDWJWLWJWKKWIUEZICDWMWKEGZCGZ
-        HZLZWNDGZKMZWOAFZNZNZEOZWOWRJMZWTNZWOWRWMMZWOWRWKMXCCDUFZWTNZXEXAXHEWPW
-        OPZWQWSXGWTWQWSWPWRKMXGWNWPWRKUGWOWRCQDQUHRUIUKXDXGWTCDUJSULXFWOWNWIMZW
-        SNZEOXCEWOWRKWIUMXKXBEXKWQWTNZWSNZXBXJXLWSXJWOWIUNZFZWOWIUOZWNLZNZXLWIU
-        PXJXRVNBAWHUQWOWNWIURUSXRXQXONZXLXOXQUTXSXQWTNXLXOWTXQXNAWOXNWHIFZBAVAZ
-        ABAWHWIWIVBZVCAWGAFZXTNZBVDYAYDBAXTYCWGPVEVFXTBAVGVHVHVIVJWTXQWQWTXQWPW
-        NLWQWTXPWPWNBWOWHWPAWIWGWOVOYBXIVKVLWPWNVMRVPTTTSXMWSXLNXBXLWSUTWSWQWTV
-        QTTVRTWOWRJAVSVTWAKIFWJWMIFWBKWIIIWEWCWD?WFT $.
+        ( vx vy vz vw vt wcel cv csn cvv cep cres csset ccom wceq wbr vex bitri
+        wa eqtri cscan cmpt elscan wss ssv resmpt ax-mp coeq2i eqcomi resco wel
+        eqtr4i wex snex breq1 ceqsexv brssetsn bitr2i epel brco weq sneq eqeq2d
+        eqeq1 mptv brab anbi1i exbii 3bitr4ri eqbrriv reseq1i ssetex coexg mpan
+        syl5eqelr copab df-mpt opelres ancom pm5.32i opabbi2i dmres dmep ineq2i
+        cdm cin inv1 dmexg resexg syl2anc syl5eqel impbii ) AUAGBABHZIZUBZJGZKA
+        LZJGZBAUCWPWRWPWQMWONZJWSMBJWNUBZNZALZWQWSMWTALZNZXBXDWSXCWOMAJUDXCWOOA
+        UEBJAWNUFUGUHUIMWTAUJULXAKACDXAKCDUKZEHZCHZIZOZXFDHZMPZSZEUMZXGXJKPXGXJ
+        XAPZXMXHXJMPZXEXKXOEXHXGUNXFXHXJMUOUPXGXJCQZDQUQURCDUSXNXGXFWTPZXKSZEUM
+        XMEXGXJMWTUTXRXLEXQXIXKFHZWNOXSXHOXIBFXGXFWTXPEQBCVAWNXHXSWMXGVBVCXSXFX
+        HVDBFWNVEVFVGVHRVIVJVKTMJGWPWSJGVLMWOJJVMVNVOWRWO?JWOWMAGZXGWNOZSZBCVP?
+        BCAWNVQYBBC???YBWMXG?AVR??YB?XTVSXT?YA?VTRRWAULWR?AJG??WRAWQWEZJYCAJWFZ
+        AYCAKWEZWFYDKAWBYEJAWCWDTAWGTWQJWHVO?AJJWIWJWKWLR $.
     $}
 
 $(
