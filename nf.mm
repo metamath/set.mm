@@ -61411,7 +61411,6 @@ $)
       MKZXKXONZWBVBXPXNXQUOWFDUPUQSXLDWGVAURUSVCSVDVEVFVGVH $.
   $}
 
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Specker's disproof of the axiom of choice
@@ -62698,7 +62697,7 @@ $)
   ccan $a class Can $.
 
   $( Define the class of all Cantorian sets.  These are so-called because
-     Cantor's Theorem ` A ~< ~P A ` holds for these sets.  (Contributed by
+     Cantor's Theorem ` Nc A <c Nc ~P A ` holds for these sets.  (Contributed by
      Scott Fenton, 19-Apr-2021.) $)
   df-can $a |- Can = { x | ~P1 x ~~ x } $.
 
@@ -62767,6 +62766,17 @@ $)
 
    $}
 
+   $( The cardinality of a Cantorian set is equal to the cardinality
+      of its unit power set.  (Contributed by Scott Fenton, 21-Apr-2021.) $)
+   cannc $p |- ( A e. Can -> Nc ~P1 A = Nc A ) $=
+     ( ccan wcel cnc cpw1 wceq cen wbr elcan ensymi sylbi eqncg mpbird eqcomd )
+     ABCZADZAEZDZOPRFAQGHZOQAGHSAIQAJKAQBLMN $.
+
+  $( The cardinality of a Cantorian set is strictly less than the cardinality
+     of its power set.  (Contributed by Scott Fenton, 21-Apr-2021.) $)
+  canltpw $p |- ( A e. Can -> Nc A <c Nc ~P A ) $=
+    ( ccan wcel cpw1 cnc cpw cltc cannc ltcpw1pwg eqbrtrrd ) ABCADEAEAFEGAHABIJ
+    $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
