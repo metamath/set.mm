@@ -61411,6 +61411,12 @@ $)
       MKZXKXONZWBVBXPXNXQUOWFDUPUQSXLDWGVAURUSVCSVDVEVFVGVH $.
   $}
 
+  $( Cardinal less than is irreflexive.  (Contributed by Scott Fenton,
+     22-Apr-2021.) $)
+  ltcirr $p |- -. A <c A $=
+    ( cltc wbr clec wne wa neirr intnan brltc mtbir ) AABCAADCZAAEZFLKAGHAAIJ
+    $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Specker's disproof of the axiom of choice
@@ -62777,6 +62783,20 @@ $)
   canltpw $p |- ( A e. Can -> Nc A <c Nc ~P A ) $=
     ( ccan wcel cpw1 cnc cpw cltc cannc ltcpw1pwg eqbrtrrd ) ABCADEAEAFEGAHABIJ
     $.
+
+  $( The cardinality of a Cantorian set is equal to the ` T_c ` raising
+     of that cardinal.  (Contributed by Scott Fenton, 22-Apr-2021.) $)
+  cantc $p |- ( A e. Can -> T_c Nc A = Nc A ) $=
+    ( ccan wcel cnc ctc cncs cpw1 wceq ncelncs tccl syl pw1eltc syl2anc cen wbr
+    ncidg elcan elnc bitr4i biimpi nceleq syl22anc ) ABCZADZEZFCZUDFCZAGZUECZUH
+    UDCZUEUDHUCUGUFABIZUDJKUKUCUGAUDCUIUKABPUDALMUCUJUCUHANOUJAQUHARSTUEUDUHUAU
+    B $.
+
+  $( The universe is not Cantorian.  (Contributed by Scott Fenton,
+     22-Apr-2021.) $)
+  vncan $p |- -. _V e. Can $=
+    ( cvv ccan wcel cnc cltc wbr ltcirr cpw canltpw pwv nceqi syl6breq mto ) AB
+    CZADZOEFOGNOAHZDOEAIPAJKLM $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
