@@ -52025,6 +52025,23 @@ $)
     ( vx cep cdm cvv wceq cv wcel eqv csn wbr vex snid epelc mpbir breldm ax-mp
     snex mpgbir ) BCZDEAFZSGZAASHTTIZBJZUAUCTUBGTAKLTUBTQMNTUBBOPR $.
 
+  $( Converse restriction condition.  (Contributed by Scott Fenton,
+     23-Apr-2021.) $)
+  brcnvrescnv $p |- ( A `' ( `' R |` X ) B <-> ( A R B /\ B e. X ) ) $=
+    ( ccnv cres wbr wcel wa brcnv brres anbi1i 3bitri ) ABCEZDFZEGBAOGBANGZBDHZ
+    IABCGZQIABOJBANDKPRQBACJLM $.
+ 
+  ${
+ 
+     brepres.1 $e |- B e. _V $.
+     $( Converse restriction of epsilon relationship.  (Contributed by Scott
+        Fenton, 23-Apr-2021.) $)
+     brepres $p |- ( A `' ( `' _E |` X ) B <-> ( A e. B /\ B e. X ) ) $=
+       ( cep ccnv cres wbr wcel wa brcnvrescnv epelc anbi1i bitri ) ABEFCGFHABE
+       HZBCIZJABIZPJABECKOQPABDLMN $.
+  $}
+
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Operations
@@ -62797,6 +62814,15 @@ $)
   vncan $p |- -. _V e. Can $=
     ( cvv ccan wcel cnc cltc wbr ltcirr cpw canltpw pwv nceqi syl6breq mto ) AB
     CZADZOEFOGNOAHZDOEAIPAJKLM $.
+
+  ${
+     $( Alternate condition for strong Cantorian membership.  This
+        gets to why we care about strong Cantorian sets.  The existence
+	of the singleton function enables us to completely ignore
+	stratification when quantifying over strong Cantorian sets.
+	(Contributed by Scott Fenton, 23-Apr-2021.) $)
+     elscan2 $p |- ( A e. SCan <-> `' ( `' _E |` A ) e. _V ) $= ? $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
