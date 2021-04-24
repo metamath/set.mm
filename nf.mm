@@ -62720,8 +62720,8 @@ $)
   ccan $a class Can $.
 
   $( Define the class of all Cantorian sets.  These are so-called because
-     Cantor's Theorem ` Nc A <c Nc ~P A ` holds for these sets.  (Contributed by
-     Scott Fenton, 19-Apr-2021.) $)
+     Cantor's Theorem ` Nc A <c Nc ~P A ` holds for these sets.  Definition
+     from [Rosser] p. 347.  (Contributed by Scott Fenton, 19-Apr-2021.) $)
   df-can $a |- Can = { x | ~P1 x ~~ x } $.
 
   $( Extend the definition of class to include the class of all strongly
@@ -62730,7 +62730,7 @@ $)
   
   ${
      $d x y $.
-     $( Define the class of strongly Cantorian sets.  Unline general Cantorian
+     $( Define the class of strongly Cantorian sets.  Unlike general Cantorian
         sets, this fixes a specific mapping between ` x ` and ` ~P1 x ` .
 	(Contributed by Scott Fenton, 19-Apr-2021.) $)
      df-scan $a |- SCan = { x | ( y e. x |-> { y } ) e. _V } $.
@@ -62809,8 +62809,8 @@ $)
     UDCZUEUDHUCUGUFABIZUDJKUKUCUGAUDCUIUKABPUDALMUCUJUCUHANOUJAQUHARSTUEUDUHUAU
     B $.
 
-  $( The universe is not Cantorian.  (Contributed by Scott Fenton,
-     22-Apr-2021.) $)
+  $( The universe is not Cantorian.  Theorem XI.1.8 of [Rosser] p. 348.
+     (Contributed by Scott Fenton, 22-Apr-2021.) $)
   vncan $p |- -. _V e. Can $=
     ( cvv ccan wcel cnc cltc wbr ltcirr cpw canltpw pwv nceqi syl6breq mto ) AB
     CZADZOEFOGNOAHZDOEAIPAJKLM $.
