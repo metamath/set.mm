@@ -13985,6 +13985,8 @@
 "zfinf" is used by "axinf2".
 "zfinf" is used by "axinfndlem1".
 "zfpair" is used by "axpr".
+"zfregclOLD" is used by "zfreg2OLD".
+"zfregclOLD" is used by "zfregOLD".
 "zrdivrng" is used by "dvrunz".
 "zringlpirlem2OLD" is used by "zringlpirOLD".
 "zringlpirlem2OLD" is used by "zringlpirlem3OLD".
@@ -18901,6 +18903,9 @@ New usage of "zfcndac" is discouraged (0 uses).
 New usage of "zfcndinf" is discouraged (0 uses).
 New usage of "zfinf" is discouraged (2 uses).
 New usage of "zfpair" is discouraged (1 uses).
+New usage of "zfreg2OLD" is discouraged (0 uses).
+New usage of "zfregOLD" is discouraged (0 uses).
+New usage of "zfregclOLD" is discouraged (2 uses).
 New usage of "zfregs2VD" is discouraged (0 uses).
 New usage of "zrdivrng" is discouraged (1 uses).
 New usage of "zringlpirOLD" is discouraged (0 uses).
@@ -20648,6 +20653,9 @@ Proof modification of "zfcndpow" is discouraged (145 steps).
 Proof modification of "zfcndreg" is discouraged (29 steps).
 Proof modification of "zfcndrep" is discouraged (258 steps).
 Proof modification of "zfcndun" is discouraged (72 steps).
+Proof modification of "zfreg2OLD" is discouraged (46 steps).
+Proof modification of "zfregOLD" is discouraged (46 steps).
+Proof modification of "zfregclOLD" is discouraged (122 steps).
 Proof modification of "zfregs2VD" is discouraged (128 steps).
 Proof modification of "zringlpirOLD" is discouraged (173 steps).
 Proof modification of "zringlpirlem2OLD" is discouraged (49 steps).
