@@ -51793,55 +51793,6 @@ $)
     ( cid csset ccnv cin cvv dfid4 ssetex cnvex inex eqeltri ) ABBCZDEFBKGBGHIJ
     $.
 
-  ${
-    $d x y z w t $.
-    $( ` 1st ` is a mapping from the universe onto the universe.
-       (Contributed by SF, 12-Feb-2015.) (Revised by Scott Fenton,
-       17-Apr-2021.) $)
-    1stfo $p |- 1st : _V -onto-> _V $=
-      ( vx vy vz vw vt cvv c1st wceq cv wbr wa weq wal cop wex vex br1st mpgbir
-      wcel eqv wfo wfn crn wfun cdm wi dffun2 anbi12i eeanv bitr4i opth simplbi
-      eqtr2 exlimivv sylbi gen2 cproj1 cproj2 opeq eqid proj1ex proj2ex opbr1st
-      syl mpbir breldm ax-mp eqeltri df-fn mpbir2an brelrn df-fo ) FFGUAGFUBZGU
-      CZFHZVMGUDZGUEZFHZVPAIZBIZGJZVSCIZGJZKZBCLZUFZCMBMAABCGUGWFBCWDVSVTDIZNZH
-      ZVSWBEIZNZHZKZEODOZWEWDWIDOZWLEOZKWNWAWOWCWPDVSVTBPQEVSWBCPQUHWIWLDEUIUJW
-      MWEDEWMWHWKHZWEVSWHWKUMWQWEDELVTWGWBWJUKULVDUNUOUPRVRVSVQSAAVQTVSVSUQZVSU
-      RZNZVQVSUSWTWRGJZWTVQSXAWRWRHWRUTWRWSWRVSAPZVAVSXBVBVCVEWTWRGVFVGVHRGFVIV
-      JVOVSVNSZAAVNTVSVSNZVSGJZXCXEAALVSUTVSVSVSXBXBVCVEXDVSGVKVGRFFGVLVJ $.
-
-    $( ` 2nd ` is a mapping from the universe onto the universe.
-       (Contributed by SF, 12-Feb-2015.) (Revised by Scott Fenton,
-       17-Apr-2021.) $)
-    2ndfo $p |- 2nd : _V -onto-> _V $=
-      ( vx vy vz vw vt cvv c2nd wceq cv wbr wa weq wal cop wex vex br2nd mpgbir
-      wcel eqv wfo wfn crn wfun cdm wi dffun2 anbi12i eeanv bitr4i opth simprbi
-      eqtr2 exlimivv sylbi gen2 cproj1 cproj2 opeq eqid proj1ex proj2ex opbr2nd
-      syl mpbir breldm ax-mp eqeltri df-fn mpbir2an equid brelrn df-fo ) FFGUAG
-      FUBZGUCZFHZVNGUDZGUEZFHZVQAIZBIZGJZVTCIZGJZKZBCLZUFZCMBMAABCGUGWGBCWEVTDI
-      ZWANZHZVTEIZWCNZHZKZEODOZWFWEWJDOZWMEOZKWOWBWPWDWQDVTWABPQEVTWCCPQUHWJWMD
-      EUIUJWNWFDEWNWIWLHZWFVTWIWLUMWRDELWFWHWAWKWCUKULVDUNUOUPRVSVTVRSAAVRTVTVT
-      UQZVTURZNZVRVTUSXAWTGJZXAVRSXBWTWTHWTUTWSWTWTVTAPZVAVTXCVBVCVEXAWTGVFVGVH
-      RGFVIVJVPVTVOSZAAVOTVTVTNZVTGJZXDXFAALAVKVTVTVTXCXCVCVEXEVTGVLVGRFFGVMVJ
-      $.
-
-  $}
-
-  ${
-    $d A x y z $.
-    $( Alternate definition of domain.  (Contributed by SF, 23-Feb-2015.) $)
-    dfdm4 $p |- dom A = ( 1st " A ) $=
-      ( vx vy vz cdm c1st cima cv cop wcel wex wbr wrex wceq rexcom4 vex rexbii
-      br1st risset exbii 3bitr4ri eldm2 elima 3bitr4i eqriv ) BAEZFAGZBHZCHIZAJ
-      ZCKZDHZUHFLZDAMZUHUFJUHUGJULUINZCKZDAMUODAMZCKUNUKUODCAOUMUPDACULUHBPRQUJ
-      UQCDUIASTUACUHAUBDUHFAUCUDUE $.
-
-    $( Alternate definition of range.  (Contributed by SF, 23-Feb-2015.) $)
-    dfrn5 $p |- ran A = ( 2nd " A ) $=
-      ( vy vx vz crn c2nd cima cv cop wcel wex wbr wrex wceq rexcom4 vex rexbii
-      br2nd risset exbii 3bitr4ri elrn2 elima 3bitr4i eqriv ) BAEZFAGZCHBHZIZAJ
-      ZCKZDHZUHFLZDAMZUHUFJUHUGJULUINZCKZDAMUODAMZCKUNUKUODCAOUMUPDACULUHBPRQUJ
-      UQCDUIASTUACUHAUBDUHFAUCUDUE $.
-  $}
 
   ${
     $d A a $.  $d a b $.  $d A b $.  $d a x $.  $d A x $.  $d a y $.  $d A y $.
@@ -51884,6 +51835,48 @@ $)
       NURAAVNUSVPVPMZVPLZNZVNVPQXCXBXANZEIZXCVNURXEXCXCGXCVBXCXBXAVPAOZRVPXFPSU
       TXCXDEVAVCVDUQEDVEVFZVLVJXGDVKEVGVHUTDDEVIVF $.
 
+  $}
+
+  ${
+    $d x y z w t $.
+    $( ` 1st ` is a mapping from the universe onto the universe.
+       (Contributed by SF, 12-Feb-2015.) (Revised by Scott Fenton,
+       17-Apr-2021.) $)
+    1stfo $p |- 1st : _V -onto-> _V $=
+      ( vx vy vz vw vt cvv c1st wceq cv wbr wa weq wal cop wex vex br1st mpgbir
+      wcel eqv wfo wfn crn wfun cdm wi dffun2 anbi12i eeanv bitr4i opth simplbi
+      eqtr2 exlimivv sylbi gen2 cproj1 cproj2 opeq eqid proj1ex proj2ex opbr1st
+      syl mpbir breldm ax-mp eqeltri df-fn mpbir2an brelrn df-fo ) FFGUAGFUBZGU
+      CZFHZVMGUDZGUEZFHZVPAIZBIZGJZVSCIZGJZKZBCLZUFZCMBMAABCGUGWFBCWDVSVTDIZNZH
+      ZVSWBEIZNZHZKZEODOZWEWDWIDOZWLEOZKWNWAWOWCWPDVSVTBPQEVSWBCPQUHWIWLDEUIUJW
+      MWEDEWMWHWKHZWEVSWHWKUMWQWEDELVTWGWBWJUKULVDUNUOUPRVRVSVQSAAVQTVSVSUQZVSU
+      RZNZVQVSUSWTWRGJZWTVQSXAWRWRHWRUTWRWSWRVSAPZVAVSXBVBVCVEWTWRGVFVGVHRGFVIV
+      JVOVSVNSZAAVNTVSVSNZVSGJZXCXEAALVSUTVSVSVSXBXBVCVEXDVSGVKVGRFFGVLVJ $.
+  $}
+
+  $( ` 2nd ` is a mapping from the universe onto the universe.
+     (Contributed by SF, 12-Feb-2015.) (Revised by Scott Fenton,
+     17-Apr-2021.) $)
+  2ndfo $p |- 2nd : _V -onto-> _V $=
+    ( cvv c2nd wfo c1st cswap ccom 1stfo wf1o swapf1o f1ofo ax-mp foco mp2an wb
+    wceq df2nd2 foeq1 mpbir ) AABCZAADEFZCZAADCAAECZUAGAAEHUBIAAEJKAAADELMBTOSU
+    ANPAABTQKR $.
+
+  ${
+    $d A x y z $.
+    $( Alternate definition of domain.  (Contributed by SF, 23-Feb-2015.) $)
+    dfdm4 $p |- dom A = ( 1st " A ) $=
+      ( vx vy vz cdm c1st cima cv cop wcel wex wbr wrex wceq rexcom4 vex rexbii
+      br1st risset exbii 3bitr4ri eldm2 elima 3bitr4i eqriv ) BAEZFAGZBHZCHIZAJ
+      ZCKZDHZUHFLZDAMZUHUFJUHUGJULUINZCKZDAMUODAMZCKUNUKUODCAOUMUPDACULUHBPRQUJ
+      UQCDUIASTUACUHAUBDUHFAUCUDUE $.
+
+    $( Alternate definition of range.  (Contributed by SF, 23-Feb-2015.) $)
+    dfrn5 $p |- ran A = ( 2nd " A ) $=
+      ( vy vx vz crn c2nd cima cv cop wcel wex wbr wrex wceq rexcom4 vex rexbii
+      br2nd risset exbii 3bitr4ri elrn2 elima 3bitr4i eqriv ) BAEZFAGZCHBHZIZAJ
+      ZCKZDHZUHFLZDAMZUHUFJUHUGJULUINZCKZDAMUODAMZCKUNUKUODCAOUMUPDACULUHBPRQUJ
+      UQCDUIASTUACUHAUBDUHFAUCUDUE $.
   $}
 
   ${
@@ -62814,15 +62807,6 @@ $)
   vncan $p |- -. _V e. Can $=
     ( cvv ccan wcel cnc cltc wbr ltcirr cpw canltpw pwv nceqi syl6breq mto ) AB
     CZADZOEFOGNOAHZDOEAIPAJKLM $.
-
-  ${
-     $( Alternate condition for strong Cantorian membership.  This
-        gets to why we care about strong Cantorian sets.  The existence
-	of the singleton function enables us to completely ignore
-	stratification when quantifying over strong Cantorian sets.
-	(Contributed by Scott Fenton, 23-Apr-2021.) $)
-     elscan2 $p |- ( A e. SCan <-> `' ( `' _E |` A ) e. _V ) $= ? $.
-  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
