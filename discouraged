@@ -15011,7 +15011,6 @@ New usage of "cbv3hvOLD" is discouraged (0 uses).
 New usage of "cbv3hvOLDOLD" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
 New usage of "ccat2s1fvwALT" is discouraged (0 uses).
-New usage of "ccatfnOLD" is discouraged (0 uses).
 New usage of "cdj1i" is discouraged (0 uses).
 New usage of "cdj3i" is discouraged (0 uses).
 New usage of "cdj3lem1" is discouraged (2 uses).
@@ -16217,7 +16216,6 @@ New usage of "funcringcsetclem9ALTV" is discouraged (1 uses).
 New usage of "funcrngcsetcALT" is discouraged (0 uses).
 New usage of "fusgraimpclALT" is discouraged (2 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
-New usage of "fvn0elsuppOLD" is discouraged (0 uses).
 New usage of "gen11" is discouraged (19 uses).
 New usage of "gen11nv" is discouraged (5 uses).
 New usage of "gen12" is discouraged (7 uses).
@@ -18651,7 +18649,6 @@ New usage of "supsr" is discouraged (1 uses).
 New usage of "supsrlem" is discouraged (1 uses).
 New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
-New usage of "symdif1OLD" is discouraged (0 uses).
 New usage of "tb-ax1" is discouraged (3 uses).
 New usage of "tb-ax2" is discouraged (1 uses).
 New usage of "tb-ax3" is discouraged (2 uses).
@@ -19375,7 +19372,6 @@ Proof modification of "cbv3hvOLD" is discouraged (37 steps).
 Proof modification of "cbv3hvOLDOLD" is discouraged (52 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "ccat2s1fvwALT" is discouraged (149 steps).
-Proof modification of "ccatfnOLD" is discouraged (134 steps).
 Proof modification of "cdleme20yOLD" is discouraged (314 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
@@ -19894,7 +19890,6 @@ Proof modification of "fusgraimpclALT" is discouraged (68 steps).
 Proof modification of "fusgraimpclALT2" is discouraged (106 steps).
 Proof modification of "fvilbdRP" is discouraged (27 steps).
 Proof modification of "fvimacnvALT" is discouraged (102 steps).
-Proof modification of "fvn0elsuppOLD" is discouraged (75 steps).
 Proof modification of "gen11" is discouraged (27 steps).
 Proof modification of "gen11nv" is discouraged (14 steps).
 Proof modification of "gen12" is discouraged (16 steps).
@@ -20482,7 +20477,6 @@ Proof modification of "supminfOLD" is discouraged (275 steps).
 Proof modification of "suppss2fOLD" is discouraged (254 steps).
 Proof modification of "syl5imp" is discouraged (23 steps).
 Proof modification of "syl5impVD" is discouraged (57 steps).
-Proof modification of "symdif1OLD" is discouraged (52 steps).
 Proof modification of "tb-ax1" is discouraged (4 steps).
 Proof modification of "tb-ax2" is discouraged (3 steps).
 Proof modification of "tb-ax3" is discouraged (3 steps).
