@@ -15744,6 +15744,7 @@ New usage of "dipfval" is discouraged (3 uses).
 New usage of "diporthcom" is discouraged (1 uses).
 New usage of "dipsubdi" is discouraged (2 uses).
 New usage of "dipsubdir" is discouraged (2 uses).
+New usage of "disjxiunOLD" is discouraged (0 uses).
 New usage of "distrlem1pr" is discouraged (1 uses).
 New usage of "distrlem4pr" is discouraged (1 uses).
 New usage of "distrlem5pr" is discouraged (1 uses).
@@ -19446,6 +19447,7 @@ Proof modification of "dgraavalOLD" is discouraged (93 steps).
 Proof modification of "difexOLD" is discouraged (14 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
+Proof modification of "disjxiunOLD" is discouraged (860 steps).
 Proof modification of "divalglem2OLD" is discouraged (306 steps).
 Proof modification of "divalglem5OLD" is discouraged (404 steps).
 Proof modification of "divalglem9OLD" is discouraged (509 steps).
