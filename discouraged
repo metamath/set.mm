@@ -15804,7 +15804,6 @@ New usage of "dochord2N" is discouraged (0 uses).
 New usage of "dochpolN" is discouraged (0 uses).
 New usage of "dochsordN" is discouraged (0 uses).
 New usage of "dochspocN" is discouraged (0 uses).
-New usage of "dprdwdOLD" is discouraged (0 uses).
 New usage of "dral1-o" is discouraged (4 uses).
 New usage of "dral1ALT" is discouraged (0 uses).
 New usage of "dral2-o" is discouraged (4 uses).
@@ -18702,7 +18701,6 @@ New usage of "uniioombllem2OLD" is discouraged (0 uses).
 New usage of "unipwr" is discouraged (0 uses).
 New usage of "unipwrVD" is discouraged (0 uses).
 New usage of "unisnALT" is discouraged (0 uses).
-New usage of "unitgOLD" is discouraged (0 uses).
 New usage of "unop" is discouraged (5 uses).
 New usage of "unopadj" is discouraged (2 uses).
 New usage of "unopadj2" is discouraged (0 uses).
@@ -19445,7 +19443,6 @@ Proof modification of "divalglem2OLD" is discouraged (306 steps).
 Proof modification of "divalglem5OLD" is discouraged (404 steps).
 Proof modification of "divalglem9OLD" is discouraged (509 steps).
 Proof modification of "dmtrclfvRP" is discouraged (46 steps).
-Proof modification of "dprdwdOLD" is discouraged (145 steps).
 Proof modification of "dral1ALT" is discouraged (34 steps).
 Proof modification of "dral2-o" is discouraged (14 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
@@ -20517,7 +20514,6 @@ Proof modification of "uniioombllem2OLD" is discouraged (1159 steps).
 Proof modification of "unipwr" is discouraged (32 steps).
 Proof modification of "unipwrVD" is discouraged (41 steps).
 Proof modification of "unisnALT" is discouraged (146 steps).
-Proof modification of "unitgOLD" is discouraged (95 steps).
 Proof modification of "upgr0eopALT" is discouraged (55 steps).
 Proof modification of "upgr1eopALT" is discouraged (126 steps).
 Proof modification of "usgedgimpALT" is discouraged (142 steps).
