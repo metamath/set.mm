@@ -17439,6 +17439,7 @@ New usage of "mndomgmid" is discouraged (3 uses).
 New usage of "modidmul0OLD" is discouraged (0 uses).
 New usage of "mptrabexOLD" is discouraged (0 uses).
 New usage of "mpv" is discouraged (1 uses).
+New usage of "mreexexdOLD" is discouraged (0 uses).
 New usage of "mulassnq" is discouraged (10 uses).
 New usage of "mulasspi" is discouraged (12 uses).
 New usage of "mulasspr" is discouraged (1 uses).
@@ -20176,6 +20177,7 @@ Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
 Proof modification of "modidmul0OLD" is discouraged (107 steps).
 Proof modification of "mptrabexOLD" is discouraged (15 steps).
+Proof modification of "mreexexdOLD" is discouraged (872 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nanbiOLD" is discouraged (66 steps).
 Proof modification of "nbgraopALT" is discouraged (271 steps).
