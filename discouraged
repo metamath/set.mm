@@ -9959,6 +9959,8 @@
 "metnrmlem1aOLD" is used by "metnrmlem3OLD".
 "metnrmlem2OLD" is used by "metnrmlem3OLD".
 "mgmplusgiopALT" is used by "mgm2mgm".
+"minimp-ax1" is used by "minimp-pm2.43".
+"minimp-ax2" is used by "minimp-pm2.43".
 "minimp-ax2c" is used by "minimp-ax2".
 "minimp-sylsimp" is used by "minimp-ax1".
 "minimp-sylsimp" is used by "minimp-ax2".
@@ -15744,6 +15746,7 @@ New usage of "dipfval" is discouraged (3 uses).
 New usage of "diporthcom" is discouraged (1 uses).
 New usage of "dipsubdi" is discouraged (2 uses).
 New usage of "dipsubdir" is discouraged (2 uses).
+New usage of "disjxiunOLD" is discouraged (0 uses).
 New usage of "distrlem1pr" is discouraged (1 uses).
 New usage of "distrlem4pr" is discouraged (1 uses).
 New usage of "distrlem5pr" is discouraged (1 uses).
@@ -16216,6 +16219,7 @@ New usage of "funcringcsetclem9ALTV" is discouraged (1 uses).
 New usage of "funcrngcsetcALT" is discouraged (0 uses).
 New usage of "fusgraimpclALT" is discouraged (2 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
+New usage of "fzo0ssnn0OLD" is discouraged (0 uses).
 New usage of "gen11" is discouraged (19 uses).
 New usage of "gen11nv" is discouraged (5 uses).
 New usage of "gen12" is discouraged (7 uses).
@@ -17387,9 +17391,10 @@ New usage of "metnrmlem1aOLD" is discouraged (2 uses).
 New usage of "metnrmlem2OLD" is discouraged (1 uses).
 New usage of "metnrmlem3OLD" is discouraged (0 uses).
 New usage of "mgmplusgiopALT" is discouraged (1 uses).
-New usage of "minimp-ax1" is discouraged (0 uses).
-New usage of "minimp-ax2" is discouraged (0 uses).
+New usage of "minimp-ax1" is discouraged (1 uses).
+New usage of "minimp-ax2" is discouraged (1 uses).
 New usage of "minimp-ax2c" is discouraged (1 uses).
+New usage of "minimp-pm2.43" is discouraged (0 uses).
 New usage of "minimp-sylsimp" is discouraged (3 uses).
 New usage of "minvecOLD" is discouraged (0 uses).
 New usage of "minveclem2OLD" is discouraged (2 uses).
@@ -19446,6 +19451,7 @@ Proof modification of "dgraavalOLD" is discouraged (93 steps).
 Proof modification of "difexOLD" is discouraged (14 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
+Proof modification of "disjxiunOLD" is discouraged (860 steps).
 Proof modification of "divalglem2OLD" is discouraged (306 steps).
 Proof modification of "divalglem5OLD" is discouraged (404 steps).
 Proof modification of "divalglem9OLD" is discouraged (509 steps).
@@ -19891,6 +19897,7 @@ Proof modification of "fusgraimpclALT" is discouraged (68 steps).
 Proof modification of "fusgraimpclALT2" is discouraged (106 steps).
 Proof modification of "fvilbdRP" is discouraged (27 steps).
 Proof modification of "fvimacnvALT" is discouraged (102 steps).
+Proof modification of "fzo0ssnn0OLD" is discouraged (21 steps).
 Proof modification of "gen11" is discouraged (27 steps).
 Proof modification of "gen11nv" is discouraged (14 steps).
 Proof modification of "gen12" is discouraged (16 steps).
@@ -20138,6 +20145,7 @@ Proof modification of "mgmplusgiopALT" is discouraged (80 steps).
 Proof modification of "minimp-ax1" is discouraged (21 steps).
 Proof modification of "minimp-ax2" is discouraged (62 steps).
 Proof modification of "minimp-ax2c" is discouraged (272 steps).
+Proof modification of "minimp-pm2.43" is discouraged (40 steps).
 Proof modification of "minimp-sylsimp" is discouraged (261 steps).
 Proof modification of "minvecOLD" is discouraged (79 steps).
 Proof modification of "minveclem2OLD" is discouraged (1589 steps).
