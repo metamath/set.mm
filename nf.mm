@@ -39343,10 +39343,10 @@ $)
     c0 ) ABCZNDANDBNDANONANEONBCZNANBFPBNCNNBGBHIJKBNONBNEOANCNBNALAHJKM $.
 
   ${
-    $d M m n p k t $.  $d N m n p k t $.  $d P m n p k t $.
-    $( Lemma for ~ preaddccan2 .  Establish stratification for the induction
-       step.  (Contributed by SF, 30-Mar-2021.) $)
-    preaddccan2lem1 $p |- ( ( N e. Nn /\ P e. Nn ) ->
+     $d M m n p k t $. $d N m n p k t $. $d P m n p k t $.
+     $( Lemma for ~ preaddccan2 . Establish stratification for the induction
+        step.  (Contributed by SF, 30-Mar-2021.) $)
+     preaddccan2lem1 $p |- ( ( N e. Nn /\ P e. Nn ) ->
      { m | ( ( ( m +c N ) =/= (/) /\ ( m +c N ) = ( m +c P ) ) -> N = P ) }
      e. _V ) $=
        ( vt cv cplc c0 wceq wa cab cvv wcel cpw1 cimak copk 3bitr4i bitri pw1ex
@@ -39372,9 +39372,9 @@ $)
        VTRRWNWOZWPGWQWNWSUUNKUUMUUDUULUWAUUKYTUUJWRUUIXKUBTRRWNWOWTWPXAWNWTWSXB
        XOBXCXDXEXF $.
 
-    $( Cancellation law for natural addition with a non-null condition.
-       (Contributed by SF, 29-Jan-2015.) $)
-    preaddccan2 $p |- ( ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) /\
+     $( Cancellation law for natural addition with a non-null condition.
+     	(Contributed by SF, 29-Jan-2015.) $)
+     preaddccan2 $p |- ( ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) /\
      ( M +c N ) =/= (/) ) -> ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
        ( vm vk cnnc wcel cplc c0 wne wa wceq wi c0c c1c addceq1 eqeq12d anbi12d
        neeq1d imbi1d w3a cv cvv preaddccan2lem1 weq addc32 syl6eq biimpi adantl
@@ -42481,15 +42481,16 @@ $)
     SVAWNAQBVFVGVH $.
 
   ${
-    projex.1 $e |- A e. _V $.
-    $( The first projection of a set is a set.  (Contributed by Scott Fenton,
-       16-Apr-2021.) $)
-    proj1ex $p |- Proj1 A e. _V $=
+     projex.1 $e |- A e. _V $.
+
+     $( The first projection of a set is a set.  (Contributed by Scott Fenton,
+        16-Apr-2021.) $)
+     proj1ex $p |- Proj1 A e. _V $=
        ( cvv wcel cproj1 proj1exg ax-mp ) ACDAECDBACFG $.
 
-    $( The second projection of a set is a set.  (Contributed by Scott Fenton,
-       16-Apr-2021.) $)
-    proj2ex $p |- Proj2 A e. _V $=
+     $( The second projection of a set is a set.  (Contributed by Scott Fenton,
+        16-Apr-2021.) $)
+     proj2ex $p |- Proj2 A e. _V $=
        ( cvv wcel cproj2 proj2exg ax-mp ) ACDAECDBACFG $.
   $}
 
@@ -42771,8 +42772,9 @@ $)
   ${
     $d A x y z w $.
     phiall.1 $e |- A e. _V $.
-    $( Lemma for ~ phiall .  Any set of numbers without zero is the Phi of a
-       set.  (Contributed by Scott Fenton, 14-Apr-2021.) $)
+
+    $( Lemma for ~ phiall .  Any set of numbers without zero is the
+       Phi of a set.  (Contributed by Scott Fenton, 14-Apr-2021.) $)
     phialllem1 $p |- ( ( A C_ Nn /\ -. 0c e. A ) -> E. x A = Phi x ) $=
       ( vz vy vw cnnc c0c wcel wa cv c1c wceq wrex cab eqeq2d cssetk cpw1 cimak
       cins3k wss wn cplc crab cphi wex weq wo eleq1 biimpcd con3d adantll ssel2
@@ -42796,8 +42798,8 @@ $)
       BLXHXIXIXJXKXLCXJXMXNXQXOYLYIMYMYJBYLYIXPPXRXS $.
 
 
-    $( Lemma for ~ phiall .  Any set without ` 0c ` is equal to the ` Phi ` of
-       a set.  (Contributed by Scott Fenton, 8-Apr-2021.) $)
+    $( Lemma for ~ phiall .  Any set without ` 0c ` is equal to the ` Phi `
+       of a set.  (Contributed by Scott Fenton, 8-Apr-2021.) $)
     phialllem2 $p |- ( -. 0c e. A -> E. x A = Phi x ) $=
       ( vy c0c wcel wn cnnc cin cv cphi wceq wex wss inss2 nncex cun eqtri syl
       c0 inss1 sseli con3i phialllem1 sylancr uncom inundif uneq2 syl5eqr phiun
@@ -42820,10 +42822,10 @@ $)
   $}
 
   ${
-    $d A x y z $.
-    $( Any class is equal to an ordered pair.  (Contributed by Scott Fenton,
-       8-Apr-2021.) $)
-    opeq $p |- A = <. Proj1 A , Proj2 A >. $=
+     $d A x y z $.
+     $( Any class is equal to an ordered pair.  (Contributed by Scott Fenton,
+        8-Apr-2021.) $)
+     opeq $p |- A = <. Proj1 A , Proj2 A >. $=
        ( vx vy vz cv cphi wceq wrex cab cun wex crab wcel wa rexeqi rexab ancom
        eleq1d 3bitri eqtr4i cproj1 cop c0c csn df-op df-proj1 weq phieq pm5.32i
        cproj2 eleq1 bitr4i exbii 19.41v abbii df-rab df-proj2 uneq1d uneq12i wo
@@ -45021,8 +45023,8 @@ $)
 
     $( Define a function.  Definition 10.1 of [Quine] p. 65.  For alternate
        definitions, see ~ dffun2 , ~ dffun3 , ~ dffun4 , ~ dffun5 , ~ dffun6 ,
-       ~ dffun7 , ~ dffun8 , and ~ dffun9 .  (Contributed by SF, 5-Jan-2015.)
-       (Revised by Scott Fenton, 14-Apr-2021.) $)
+       ~ dffun7 , ~ dffun8 , and ~ dffun9 .  (Contributed by SF,
+       5-Jan-2015.) (Revised by Scott Fenton, 14-Apr-2021.) $)
     df-fun $a |- ( Fun A <-> ( A o. `' A ) C_ _I ) $.
 
     $( Define a function with domain.  Definition 6.15(1) of [TakeutiZaring]
@@ -45293,7 +45295,6 @@ $)
       RWFWTJZXRLZLYAXSLXTXCYBWRWFDWTXAVLVMWRYAXRVNYAXQXSYAXOXQAWSVRAEVOTVPVSVQX
       SWOEWFXFXQWRWMXRWNWMEAVTXQXACDXQCXACXAPAEXPWAWBRSWCTWDWE $.
   $}
-
   ${
     $d y A $.  $d y B $.  $d x y C $.  $d x y D $.  $d x E $.  $d x V $.
     $( Membership in a union of Cartesian products.  Analogue of ~ elxp for
@@ -45557,7 +45558,7 @@ $)
 
   $( The cross product of the universe with itself is the universe.
      (Contributed by Scott Fenton, 14-Apr-2021.) $)
-  xpvv $p |- ( _V X. _V ) = _V $=
+   xpvv $p |- ( _V X. _V ) = _V $=
      ( vx cvv cxp wceq cv wcel eqv cproj1 cproj2 cop vex proj1ex proj2ex opelxp
      opeq mpbir2an eqeltri mpgbir ) BBCZBDAEZSFAASGTTHZTIZJZSTOUCSFUABFUBBFTAKZ
      LTUDMUAUBBBNPQR $.
@@ -45578,7 +45579,7 @@ $)
       UFZSVPVGVDDVQSQRUJVAVDCVAUKZTVAVDDVRTUGUHUI $.
 
     $( Extensionality principle for relations.  Theorem 3.2(ii) of [Monk1]
-       p. 33.  (Contributed by NM, 2-Aug-1994.)  (Revised by Scott Fenton,
+       p. 33.  (Contributed by NM, 2-Aug-1994.) (Revised by Scott Fenton,
        14-Apr-2021.) $)
     eqrel $p |- ( A = B <->
                 A. x A. y ( <. x , y >. e. A <-> <. x , y >. e. B ) ) $=
@@ -45590,7 +45591,7 @@ $)
        19-Apr-2021.) $)
     ssopr $p |- ( A C_ B <->
                 A. x A. y A. z ( <. <. x , y >. , z >. e. A ->
-                <. <. x , y >. , z >. e. B ) ) $=
+		<. <. x , y >. , z >. e. B ) ) $=
       ( vw wss cv cop wcel wi wal ssrel wex cvv vex albii alrot3 eleq1d 3bitri
       alcom bitri wceq opeqex ax-mp 19.23vv bitr4i opeq1 imbi12d ceqsalv 2albii
       a1bi opex ) DEGZFHZCHZIZDJZUQEJZKZFLZCLZAHZBHZIZUPIZDJZVFEJZKZBLALZCLVICL
@@ -45602,7 +45603,7 @@ $)
        19-Apr-2021.) $)
     eqopr $p |- ( A = B <->
                 A. x A. y A. z ( <. <. x , y >. , z >. e. A <->
-                <. <. x , y >. , z >. e. B ) ) $=
+		<. <. x , y >. , z >. e. B ) ) $=
       ( wss wa cv cop wcel wi wal wceq ssopr anbi12i eqss 2albiim albii 19.26
       wb bitri 3bitr4i ) DEFZEDFZGAHBHICHIZDJZUEEJZKCLBLZALZUGUFKCLBLZALZGZDEMU
       FUGTCLBLZALZUCUIUDUKABCDENABCEDNODEPUNUHUJGZALULUMUOAUFUGBCQRUHUJASUAUB
@@ -45611,20 +45612,21 @@ $)
 
 
   ${
-    $d x y A $.  $d x y B $.
+    $d x y A $. $d x y B $. 
     relssi.1 $e |- ( <. x , y >. e. A -> <. x , y >. e. B ) $.
     $( Inference from subclass principle for relations.  (Contributed by NM,
-       31-Mar-1998.)  (Revised by Scott Fenton, 15-Apr-2021.) $)
+       31-Mar-1998.) (Revised by Scott Fenton, 15-Apr-2021.) $)
     relssi $p |- A C_ B $=
       ( wss cv cop wcel wi wal ssrel ax-gen mpgbir ) CDFAGBGHZCIODIJZBKAABCDLPB
       EMN $.
   $}
 
   ${
-    $d x y A $.  $d x y B $.  $d x y ph $.
+    $d x y A $. $d x y B $. $d x y ph $.
     relssdv.1 $e |- ( ph -> ( <. x , y >. e. A -> <. x , y >. e. B ) ) $.
+    
     $( Deduction from subclass principle for relations.  (Contributed by set.mm
-       contributors, 11-Sep-2004.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
+       contributors, 11-Sep-2004.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     relssdv $p |- ( ph -> A C_ B ) $=
       ( cv cop wcel wi wal wss alrimivv ssrel sylibr ) ABGCGHZDIPEIJZCKBKDELAQB
       CFMBCDENO $.
@@ -45634,7 +45636,7 @@ $)
     $d x y A $.  $d x y B $.
     eqrelriv.1 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
     $( Inference from extensionality principle for relations.  (Contributed by
-       FL, 15-Oct-2012.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
+       FL, 15-Oct-2012.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     eqrelriv $p |- A = B $=
       ( wceq cv cop wcel wb wal eqrel ax-gen mpgbir ) CDFAGBGHZCIODIJZBKAABCDLP
       BEMN $.
@@ -45644,7 +45646,7 @@ $)
     $d x y A $.  $d x y B $.
     eqbrriv.1 $e |- ( x A y <-> x B y ) $.
     $( Inference from extensionality principle for relations.  (Contributed by
-       NM, 12-Dec-2006.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
+       NM, 12-Dec-2006.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     eqbrriv $p |- A = B $=
       ( cv wbr cop wcel df-br 3bitr3i eqrelriv ) ABCDAFZBFZCGMNDGMNHZCIODIEMNCJ
       MNDJKL $.
@@ -45654,7 +45656,7 @@ $)
     $d x y A $.  $d x y B $.  $d ph x $.  $d ph y $.
     eqrelrdv.1 $e |- ( ph -> ( <. x , y >. e. A <-> <. x , y >. e. B ) ) $.
     $( Deduce equality of relations from equivalence of membership.
-       (Contributed by Rodolfo Medina, 10-Oct-2010.)  (Revised by Scott Fenton,
+       (Contributed by Rodolfo Medina, 10-Oct-2010.) (Revised by Scott Fenton,
        16-Apr-2021.) $)
     eqrelrdv $p |- ( ph -> A = B ) $=
       ( cv cop wcel wb wal wceq alrimivv eqrel sylibr ) ABGCGHZDIPEIJZCKBKDELAQ
@@ -45662,9 +45664,10 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d x y z B $.
+    $d x y z A $. $d x y z B $.
     eqoprriv.1 $e |- ( <. <. x , y >. , z >. e. A <->
     <. <. x , y >. , z >. e. B ) $.
+
     $( Equality inference for operators.  (Contributed by Scott Fenton,
        19-Apr-2021.) $)
     eqoprriv $p |- A = B $=
@@ -45674,9 +45677,10 @@ $)
 
 
   ${
-    $d x y z A $.  $d x y z B $.  $d x y z ph $.
+    $d x y z A $. $d x y z B $. $d x y z ph $.
     eqoprrdv.1 $e |- ( ph -> ( <. <. x , y >. , z >. e. A <->
     <. <. x , y >. , z >. e. B ) ) $.
+
     $( Equality deduction for operators.  (Contributed by Scott Fenton,
        19-Apr-2021.) $)
     eqoprrdv $p |- ( ph -> A = B ) $=
@@ -45789,12 +45793,12 @@ $)
 
 
   ${
-    $d x y A $.
-    opabbi2i.1 $e |- ( <. x , y >. e. A <-> ph ) $.
-    $( Equality of a class variable and an ordered pair abstractions (inference
-       rule).  Compare ~ abbi2i .  (Contributed by Scott Fenton,
-       18-Apr-2021.) $)
-    opabbi2i $p |- A = { <. x , y >. | ph } $=
+     $d x y A $.
+     opabbi2i.1 $e |- ( <. x , y >. e. A <-> ph ) $.
+     $( Equality of a class variable and an ordered pair abstractions
+     	(inference rule). Compare ~ abbi2i .  (Contributed by Scott Fenton,
+	18-Apr-2021.) $)
+     opabbi2i $p |- A = { <. x , y >. | ph } $=
        ( cv cop wcel copab opabid2 opabbii eqtr3i ) BFCFGDHZBCIDABCIBCDJMABCEKL
        $.
   $}
@@ -46274,7 +46278,7 @@ $)
       LBHPUOCHPQURUMHBCAUGTUSUPHBCAUHTQ $.
 
     $( A class is empty iff its domain is empty.  (Contributed by set.mm
-       contributors, 15-Sep-2004.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
+       contributors, 15-Sep-2004.) (Revised by Scott Fenton, 17-Apr-2021.) $)
     dmeq0 $p |- ( A = (/) <-> dom A = (/) ) $=
       ( vx vy cv cdm wcel wn wal cop c0 wb wceq wex eldm2 notbii alnex noel nbn
       albii 3bitr2i eq0 eqrel 3bitr4ri ) BDZAEZFZGZBHUDCDIZAFZUHJFZKZCHZBHUEJLA
@@ -46313,12 +46317,12 @@ $)
     ( cxp wceq cdm dmeq dmxpid 3eqtr3g xpeq12 anidms impbii ) AACZBBCZDZABDZNLE
     MEABLMFAGBGHONABABIJK $.
 
-  $( The first member of an ordered pair in a class belongs to the domain of
-     the class.  (Contributed by set.mm contributors, 28-Jul-2004.)  (Revised
-     by Scott Fenton, 18-Apr-2021.) $)
+  $( The first member of an ordered pair in a class belongs to the domain
+     of the class.  (Contributed by set.mm contributors, 28-Jul-2004.)
+     (Revised by Scott Fenton, 18-Apr-2021.) $)
   proj1eldm $p |- ( B e. A -> Proj1 B e. dom A ) $=
-    ( wcel cproj1 cproj2 cop cdm opeq eleq1i opeldm sylbi ) BACBDZBEZFZACLAGCBN
-    ABHILMAJK $.
+    ( wcel cproj1 cproj2 cop cdm opeq eleq1i opeldm sylbi ) BACBDZBEZFZACLAGC
+    BNABHILMAJK $.
 
   $( Equality theorem for restrictions.  (Contributed by set.mm contributors,
      7-Aug-1994.) $)
@@ -46664,7 +46668,7 @@ $)
     ( c0 cdm wceq crn dm0 dm0rn0 mpbi ) ABACADACEAFG $.
 
   $( A relation is empty iff its range is empty.  (Contributed by set.mm
-     contributors, 15-Sep-2004.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
+     contributors, 15-Sep-2004.) (Revised by Scott Fenton, 17-Apr-2021.) $)
   rneq0 $p |- ( A = (/) <-> ran A = (/) ) $=
     ( c0 wceq cdm crn dmeq0 dm0rn0 bitri ) ABCADBCAEBCAFAGH $.
 
@@ -46870,7 +46874,7 @@ $)
 
     $( Simplification law for restriction.  (Contributed by set.mm
        contributors, 16-Aug-1994.)  (Revised by set.mm contributors,
-       15-Mar-2004.)  (Revised by Scott Fenton, 18-Apr-2021.) $)
+       15-Mar-2004.) (Revised by Scott Fenton, 18-Apr-2021.) $)
     ssreseq $p |- ( dom A C_ B -> ( A |` B ) = A ) $=
       ( vx vy cdm wss cres resss a1i cv cop wcel opeldm ssel syl5 ancld opelres
       wa syl6ibr relssdv eqssd ) AEZBFZABGZAUDAFUCABHIUCCDAUDUCCJZDJZKZALZUHUEB
@@ -46878,7 +46882,7 @@ $)
   $}
 
   $( A class restricted to its domain equals itself.  (Contributed by set.mm
-     contributors, 12-Dec-2006.)  (Revised by Scott Fenton, 18-Apr-2021.) $)
+     contributors, 12-Dec-2006.) (Revised by Scott Fenton, 18-Apr-2021.) $)
   resdm $p |- ( A |` dom A ) = A $=
     ( cdm wss cres wceq ssid ssreseq ax-mp ) ABZICAIDAEIFAIGH $.
 
@@ -46947,7 +46951,7 @@ $)
     HIJABKL $.
 
   $( Any class restricted to the universe is itself.  (Contributed by set.mm
-     contributors, 16-Mar-2004.)  (Revised by Scott Fenton, 18-Apr-2021.) $)
+     contributors, 16-Mar-2004.) (Revised by Scott Fenton, 18-Apr-2021.) $)
   resid $p |- ( A |` _V ) = A $=
     ( cdm cvv wss cres wceq ssv ssreseq ax-mp ) ABZCDACEAFJGACHI $.
 
@@ -47459,17 +47463,17 @@ $)
   ${
     $d x y A $.
     $( The domain of a singleton is nonzero iff the singleton argument is a
-       set.  (Contributed by NM, 14-Dec-2008.)  (Proof shortened by Andrew
-       Salmon, 27-Aug-2011.)  (Revised by Scott Fenton, 19-Apr-2021.) $)
+       set.  (Contributed by NM, 14-Dec-2008.)  (Proof shortened by
+       Andrew Salmon, 27-Aug-2011.)  (Revised by Scott Fenton, 19-Apr-2021.) $)
     dmsnn0 $p |- ( A e. _V <-> dom { A } =/= (/) ) $=
       ( vx vy cv csn cdm wcel wex cop wceq wne cvv eldm2 opex elsnc eqcom bitri
       c0 vex exbii n0 opeqexb 3bitr4ri ) BDZAEZFZGZBHAUDCDZIZJZCHZBHUFRKALGUGUK
       BUGUIUEGZCHUKCUDUEMULUJCULUIAJUJUIAUDUHBSCSNOUIAPQTQTBUFUABCAUBUC $.
   $}
 
-  $( The range of a singleton is nonzero iff the singleton argument is a set.
-     (Contributed by set.mm contributors, 14-Dec-2008.)  (Revised by Scott
-     Fenton, 19-Apr-2021.) $)
+  $( The range of a singleton is nonzero iff the singleton argument is a
+     set.  (Contributed by set.mm contributors, 14-Dec-2008.)
+     (Revised by Scott Fenton, 19-Apr-2021.) $)
   rnsnn0 $p |- ( A e. _V <-> ran { A } =/= (/) ) $=
     ( cvv wcel csn cdm c0 wne crn dmsnn0 dm0rn0 necon3bii bitri ) ABCADZEZFGMHZ
     FGAINFOFMJKL $.
@@ -47761,7 +47765,7 @@ $)
   $}
 
   $( Composition with a restricted identity relation.  (Contributed by FL,
-     19-Jun-2011.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
+     19-Jun-2011.) (Revised by Scott Fenton, 17-Apr-2021.) $)
   coires1 $p |- ( A o. ( _I |` B ) ) = ( A |` B ) $=
     ( cid ccom cres resco coi1 reseq1i eqtr3i ) ACDZBEACBEDABEACBFJABAGHI $.
 
@@ -47780,22 +47784,22 @@ $)
       MAUHPTUE $.
   $}
 
-  $( A class is transitive iff its converse is transitive.  (Contributed by FL,
-     19-Sep-2011.)  (Revised by Scott Fenton, 18-Apr-2021.) $)
+  $( A class is transitive iff its converse is transitive.  (Contributed by
+     FL, 19-Sep-2011.) (Revised by Scott Fenton, 18-Apr-2021.) $)
   cnvtr $p |- ( ( R o. R ) C_ R <-> ( `' R o. `' R ) C_ `' R ) $=
     ( ccom wss ccnv cnvco cnvss syl5eqssr cnveqi cnvcnv eqtr3i 3sstr3g impbii )
     AABZACZADZOBZOCZNPMDZOAAEZMAFGQPDZODMAPOFRDTMRPSHMIJAIKL $.
 
   ${
     $d x y A $.
-    $( A class is included in the cross product of its domain and range.
+     $( A class is included in the cross product of its domain and range.
        Exercise 4.12(t) of [Mendelson] p. 235.  (Contributed by set.mm
-       contributors, 3-Aug-1994.)  (Revised by Scott Fenton, 15-Apr-2021.) $)
+       contributors, 3-Aug-1994.) (Revised by Scott Fenton, 15-Apr-2021.) $)
     ssdmrn $p |- A C_ ( dom A X. ran A ) $=
       ( vx vy cdm crn cxp wss cv cop wi wal ssrel opeldm opelrn opelxp sylanbrc
       wcel ax-gen mpgbir ) AADZAEZFZGBHZCHZIZAQZUEUBQZJZCKBBCAUBLUHCUFUCTQUDUAQ
       UGUCUDAMUCUDANUCUDTUAOPRS $.
-
+      
   $}
 
   ${
@@ -47824,8 +47828,8 @@ $)
       ( cvv wcel ccnv cnvexg ax-mp ) ACDAECDBACFG $.
   $}
 
-  $( A class is a set iff its converse is a set.  (Contributed by FL,
-     3-Mar-2007.)  (Revised by Scott Fenton, 18-Apr-2021.) $)
+  $( A class is a set iff its converse is a set.   (Contributed by FL,
+     3-Mar-2007.) (Revised by Scott Fenton, 18-Apr-2021.) $)
   cnvexb $p |- ( R e. _V <-> `' R e. _V ) $=
     ( cvv wcel ccnv cnvexg cnvcnv syl5eqelr impbii ) ABCADZBCZABEJAIDBAFIBEGH
     $.
@@ -47963,7 +47967,7 @@ $)
   ${
     $d A a b x $.  $d B a b $.
     $( The converse of an intersection is the intersection of the converse.
-       (Contributed by FL, 15-Oct-2012.)  (Revised by Scott Fenton,
+       (Contributed by FL, 15-Oct-2012.) (Revised by Scott Fenton,
        18-Apr-2021.) $)
     cnviin $p |- `' |^|_ x e. A B = |^|_ x e. A `' B $=
       ( va vb ciin ccnv cv cop wcel wral cvv wb opex eliin ax-mp opelcnv ralbii
@@ -47976,7 +47980,7 @@ $)
     $d x y z A $.
     $( Alternate definition of a function.  (Contributed by set.mm
        contributors, 29-Dec-1996.)  (Revised by set.mm contributors,
-       23-Apr-2004.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
+       23-Apr-2004.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun2 $p |- ( Fun A <-> 
                  A. x A. y A. z ( ( x A y /\ x A z ) -> y = z ) ) $=
       ( wfun ccnv ccom cid wss cv cop wcel wi wal wbr wa weq df-fun wex bitr4i
@@ -47995,7 +47999,7 @@ $)
 
     $( Alternate definition of a function.  Definition 6.4(4) of
        [TakeutiZaring] p. 24.  (Contributed by set.mm contributors,
-       29-Dec-1996.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
+       29-Dec-1996.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun4 $p |- ( Fun A <-> 
                  A. x A. y A. z ( ( <. x , y >. e. A /\ <. x , z >. e. A )
                  -> y = z ) ) $=
@@ -48004,7 +48008,7 @@ $)
       AKABCDMUIUNABUHUMCUFULUGUCUJUEUKUAUBDNUAUDDNOPQRT $.
 
     $( Alternate definition of function.  (Contributed by set.mm contributors,
-       29-Dec-1996.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
+       29-Dec-1996.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun5 $p |- ( Fun A <-> A. x E. z A. y ( <. x , y >. e. A -> y = z ) ) $=
       ( wfun cv wbr weq wal wex cop wcel dffun3 df-br imbi1i albii exbii bitri
       wi ) DEAFZBFZDGZBCHZSZBIZCJZAITUAKDLZUCSZBIZCJZAIABCDMUFUJAUEUICUDUHBUBUG
@@ -48017,7 +48021,7 @@ $)
     dffun6f.2 $e |- F/_ y A $.
     $( Definition of function, using bound-variable hypotheses instead of
        distinct variable conditions.  (Contributed by NM, 9-Mar-1995.)
-       (Revised by Mario Carneiro, 15-Oct-2016.)  (Revised by Scott Fenton,
+       (Revised by Mario Carneiro, 15-Oct-2016.) (Revised by Scott Fenton,
        16-Apr-2021.) $)
     dffun6f $p |- ( Fun A <-> A. x E* y x A y ) $=
       ( vw vv vu wfun cv wbr weq wi wal wex wmo nfcv nfbr nfv albii breq2 cbvmo
@@ -48030,7 +48034,7 @@ $)
   ${
     $d x y A $.  $d x y z F $.
     $( Alternate definition of a function using "at most one" notation.
-       (Contributed by NM, 9-Mar-1995.)  (Revised by Scott Fenton,
+       (Contributed by NM, 9-Mar-1995.) (Revised by Scott Fenton,
        16-Apr-2021.) $)
     dffun6 $p |- ( Fun F <-> A. x E* y x F y ) $=
       ( nfcv dffun6f ) ABCACDBCDE $.
@@ -48109,7 +48113,7 @@ $)
        because "there is only one" could mean either "there is at most one" or
        "there is exactly one."  However, ~ dffun8 shows that it doesn't matter
        which meaning we pick.)  (Contributed by set.mm contributors,
-       4-Nov-2002.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
+       4-Nov-2002.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun7 $p |- ( Fun A <-> A. x e. dom A E* y x A y ) $=
       ( cv wbr wmo wal cdm wcel wi wfun wral wex moabs eldm imbi1i bitr4i albii
       dffun6 df-ral 3bitr4i ) ADZBDCEZBFZAGUBCHZIZUDJZAGCKUDAUELUDUGAUDUCBMZUDJ
@@ -48119,14 +48123,14 @@ $)
        of a function in [Enderton] p. 42.  Compare ~ dffun7 .  (The proof was
        shortened by Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm
        contributors, 4-Nov-2002.)  (Revised by set.mm contributors,
-       18-Sep-2011.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
+       18-Sep-2011.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun8 $p |- ( Fun A <-> A. x e. dom A E! y x A y ) $=
       ( wfun cv wbr wmo cdm wral weu dffun7 wcel wex eldm exmoeu2 sylbi ralbiia
       wb bitri ) CDAEZBECFZBGZACHZIUABJZAUCIABCKUBUDAUCTUCLUABMUBUDRBTCNUABOPQS
       $.
 
     $( Alternate definition of a function.  (Contributed by set.mm
-       contributors, 28-Mar-2007.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
+       contributors, 28-Mar-2007.) (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun9 $p |- ( Fun A <-> A. x e. dom A E* y ( y e. ran A /\ x A y ) ) $=
       ( wfun cv wbr wmo cdm wral crn wcel wa dffun7 brelrn pm4.71ri mobii bitri
       ralbii ) CDAEZBEZCFZBGZACHZITCJKZUALZBGZAUCIABCMUBUFAUCUAUEBUAUDSTCNOPRQ
@@ -48246,10 +48250,10 @@ $)
       BVJWNWFOZDEVJXOEPDPZCVJXPCPCDEBTUTVAVBVEVCVFVGCDEVTTVH $.
   $}
 
-  ${
+ ${
     $d A x y z w $.  $d B x y z w $.
     $( A singleton of an ordered pair is a function.  Theorem 10.5 of [Quine]
-       p. 65.  (Contributed by NM, 12-Aug-1994.)  (Revised by Scott Fenton,
+       p. 65.  (Contributed by NM, 12-Aug-1994.) (Revised by Scott Fenton,
        16-Apr-2021.) $)
     funsn $p |- Fun { <. A , B >. } $=
       ( vx vy cop csn wfun cv wbr wmo dffun6 wceq wi moeq a1i wa wcel df-br vex
@@ -48269,8 +48273,8 @@ $)
 
 
   $( A set of two pairs is a function if their first members are different.
-     (Contributed by FL, 26-Jun-2011.)  (Revised by Scott Fenton,
-     16-Apr-2021.) $)
+     (Contributed by FL, 26-Jun-2011.) (Revised by Scott Fenton,
+       16-Apr-2021.) $)
   funprg $p |- ( ( A =/= B /\ C e. V /\ D e. W )
      -> Fun { <. A , C >. , <. B , D >. } ) $=
     ( wne wcel w3a cop csn cun wfun cpr cdm cin c0 wceq dmsnopg funsn eqtrd syl
@@ -48284,12 +48288,12 @@ $)
      (Contributed by FL, 26-Jun-2011.) $)
   funprgOLD $p |- ( ( A =/= B /\ ( A e. V /\ B e. W ) /\ ( C e. T /\ D e. U ) )
      -> Fun { <. A , C >. , <. B , D >. } ) $=
-    ( wcel wa cop csn wfun cdm cin c0 wceq funsngOLD syl2anc dmsnopg wne simp2l
-    w3a cun cpr simp3l simp2r syl ineq12d disjsn2 3ad2ant1 eqtrd funun syl21anc
-    simp3r df-pr funeqi sylibr ) ABUAZAGIZBHIZJZCEIZDFIZJZUCZACKZLZBDKZLZUDZMZV
-    GVIUEZMVFVHMZVJMZVHNZVJNZOZPQVLVFUTVCVNUSUTVAVEUBUSVBVCVDUFZACGERSVFVAVDVOU
-    SUTVAVEUGUSVBVCVDUOZBDHFRSVFVRALZBLZOZPVFVPWAVQWBVFVCVPWAQVSACETUHVFVDVQWBQ
-    VTBDFTUHUIUSVBWCPQVEABUJUKULVHVJUMUNVMVKVGVIUPUQUR $.
+    ( wcel wa cop csn wfun cdm cin c0 wceq funsngOLD syl2anc dmsnopg simp2l simp3l
+    wne w3a cun cpr simp2r simp3r ineq12d disjsn2 3ad2ant1 eqtrd funun syl21anc
+    syl df-pr funeqi sylibr ) ABUCZAGIZBHIZJZCEIZDFIZJZUDZACKZLZBDKZLZUEZMZVGVI
+    UFZMVFVHMZVJMZVHNZVJNZOZPQVLVFUTVCVNUSUTVAVEUAUSVBVCVDUBZACGERSVFVAVDVOUSUT
+    VAVEUGUSVBVCVDUHZBDHFRSVFVRALZBLZOZPVFVPWAVQWBVFVCVPWAQVSACETUOVFVDVQWBQVTB
+    DFTUOUIUSVBWCPQVEABUJUKULVHVJUMUNVMVKVGVIUPUQUR $.
 
   ${
     funpr.1 $e |- C e. _V $.
@@ -48316,9 +48320,9 @@ $)
        (Contributed by FL, 26-Jun-2011.) $)
     fnprg $p |- ( ( A =/= B /\ ( A e. V /\ B e. W ) /\ ( C e. T /\ D e. U ) )
          -> { <. A , C >. , <. B , D >. } Fn { A , B } ) $=
-      ( wne wcel wa w3a cop cpr wfun cdm wceq wfn funprgOLD dmpropg 3ad2ant3
-      df-fn sylanbrc ) ABIZAGJBHJKZCEJDFJKZLACMBDMNZOUGPABNZQZUGUHRABCDEFGHSUFU
-      DUIUEACBDEFTUAUGUHUBUC $.
+      ( wne wcel wa w3a cop cpr wfun cdm wceq wfn funprgOLD dmpropg 3ad2ant3 df-fn
+      sylanbrc ) ABIZAGJBHJKZCEJDFJKZLACMBDMNZOUGPABNZQZUGUHRABCDEFGHSUFUDUIUEA
+      CBDEFTUAUGUHUBUC $.
   $}
 
   $( The empty set is a function.  Theorem 10.3 of [Quine] p. 65.  (Contributed
@@ -48369,10 +48373,11 @@ $)
       WCXBWRWPJXDWAWBCDUQWRWPRSNWCXDRSWPWRWCURSSUSWHXAWPWCACUTVATVBVCVDVFVGWGWH
       BDVHTVOVSRWDWIBDWCACVIVJTVK $.
 
-    $( Two ways of stating that ` A ` is one-to-one.  Each side is equivalent
-       to Definition 6.4(3) of [TakeutiZaring] p. 24, who use the notation
-       "Un_2 (A)" for one-to-one.  (Contributed by NM, 17-Jan-2006.)  (Revised
-       by Scott Fenton, 18-Apr-2021.) $)
+    $( Two ways of stating that ` A ` is one-to-one.
+       Each side is equivalent to Definition 6.4(3) of
+       [TakeutiZaring] p. 24, who use the notation "Un_2 (A)" for one-to-one.
+       (Contributed by NM, 17-Jan-2006.) (Revised by Scott Fenton,
+       18-Apr-2021.) $)
     fun11 $p |- ( ( Fun A /\ Fun `' A ) <->
          A. x A. y A. z A. w ( ( x A y /\ z A w ) -> ( x = z <-> y = w ) ) ) $=
       ( cv wbr wa weq wi wal wfun bi2.04 anbi12i 2albii 19.26-2 alcom nfv albii
@@ -49253,11 +49258,11 @@ $)
       BDEZBCFZGACDHZDIJZACDERABDHZSTABDKABCDLMRUASRUBUAABDNOPACDNQ $.
   $}
 
-  $( Two ways to express that a set ` A ` is one-to-one.  Each side is
-     equivalent to Definition 6.4(3) of [TakeutiZaring] p. 24, who use the
-     notation "Un_2 (A)" for one-to-one.  We do not introduce a separate
-     notation since we rarely use it.  (Contributed by set.mm contributors,
-     13-Aug-2004.)  (Revised by Scott Fenton, 18-Apr-2021.) $)
+  $( Two ways to express that a set ` A ` is one-to-one.  Each side is equivalent
+     to Definition 6.4(3) of [TakeutiZaring] p. 24, who use the notation
+     "Un_2 (A)" for one-to-one.  We do not introduce a separate notation since we
+     rarely use it.  (Contributed by set.mm contributors, 13-Aug-2004.) (Revised
+     by Scott Fenton, 18-Apr-2021.) $)
   f1funfun $p |- ( A : dom A -1-1-> _V <-> ( Fun `' A /\ Fun A ) ) $=
     ( cdm cvv wf1 wf ccnv wfun df-f1 ancom wfn crn wss ssv df-f mpbiran2 bitr4i
     wa funfn anbi2i 3bitri ) ABZCADUACAEZAFGZQUCUBQUCAGZQUACAHUBUCIUBUDUCUBAUAJ
@@ -49498,7 +49503,7 @@ $)
 
   $( A class is a one-to-one onto function iff its converse is a one-to-one
      onto function with domain and range interchanged.  (Contributed by set.mm
-     contributors, 8-Dec-2003.)  (Modified by Scott Fenton, 17-Apr-2021.) $)
+     contributors, 8-Dec-2003.) (Modified by Scott Fenton, 17-Apr-2021.) $)
   f1ocnvb $p |- ( F : A -1-1-onto-> B <-> `' F : B -1-1-onto-> A ) $=
     ( ccnv wfn wa wf1o cnvcnv fneq1i anbi2i ancom bitri dff1o4 3bitr4ri ) CDZBE
     ZODZAEZFZCAEZPFZBAOGABCGSPTFUARTPAQCCHIJPTKLBAOMABCMN $.
@@ -51788,6 +51793,55 @@ $)
     ( cid csset ccnv cin cvv dfid4 ssetex cnvex inex eqeltri ) ABBCZDEFBKGBGHIJ
     $.
 
+  ${
+    $d x y z w t $.
+    $( ` 1st ` is a mapping from the universe onto the universe.
+       (Contributed by SF, 12-Feb-2015.) (Revised by Scott Fenton,
+       17-Apr-2021.) $)
+    1stfo $p |- 1st : _V -onto-> _V $=
+      ( vx vy vz vw vt cvv c1st wceq cv wbr wa weq wal cop wex vex br1st mpgbir
+      wcel eqv wfo wfn crn wfun cdm wi dffun2 anbi12i eeanv bitr4i opth simplbi
+      eqtr2 exlimivv sylbi gen2 cproj1 cproj2 opeq eqid proj1ex proj2ex opbr1st
+      syl mpbir breldm ax-mp eqeltri df-fn mpbir2an brelrn df-fo ) FFGUAGFUBZGU
+      CZFHZVMGUDZGUEZFHZVPAIZBIZGJZVSCIZGJZKZBCLZUFZCMBMAABCGUGWFBCWDVSVTDIZNZH
+      ZVSWBEIZNZHZKZEODOZWEWDWIDOZWLEOZKWNWAWOWCWPDVSVTBPQEVSWBCPQUHWIWLDEUIUJW
+      MWEDEWMWHWKHZWEVSWHWKUMWQWEDELVTWGWBWJUKULVDUNUOUPRVRVSVQSAAVQTVSVSUQZVSU
+      RZNZVQVSUSWTWRGJZWTVQSXAWRWRHWRUTWRWSWRVSAPZVAVSXBVBVCVEWTWRGVFVGVHRGFVIV
+      JVOVSVNSZAAVNTVSVSNZVSGJZXCXEAALVSUTVSVSVSXBXBVCVEXDVSGVKVGRFFGVLVJ $.
+
+    $( ` 2nd ` is a mapping from the universe onto the universe.
+       (Contributed by SF, 12-Feb-2015.) (Revised by Scott Fenton,
+       17-Apr-2021.) $)
+    2ndfo $p |- 2nd : _V -onto-> _V $=
+      ( vx vy vz vw vt cvv c2nd wceq cv wbr wa weq wal cop wex vex br2nd mpgbir
+      wcel eqv wfo wfn crn wfun cdm wi dffun2 anbi12i eeanv bitr4i opth simprbi
+      eqtr2 exlimivv sylbi gen2 cproj1 cproj2 opeq eqid proj1ex proj2ex opbr2nd
+      syl mpbir breldm ax-mp eqeltri df-fn mpbir2an equid brelrn df-fo ) FFGUAG
+      FUBZGUCZFHZVNGUDZGUEZFHZVQAIZBIZGJZVTCIZGJZKZBCLZUFZCMBMAABCGUGWGBCWEVTDI
+      ZWANZHZVTEIZWCNZHZKZEODOZWFWEWJDOZWMEOZKWOWBWPWDWQDVTWABPQEVTWCCPQUHWJWMD
+      EUIUJWNWFDEWNWIWLHZWFVTWIWLUMWRDELWFWHWAWKWCUKULVDUNUOUPRVSVTVRSAAVRTVTVT
+      UQZVTURZNZVRVTUSXAWTGJZXAVRSXBWTWTHWTUTWSWTWTVTAPZVAVTXCVBVCVEXAWTGVFVGVH
+      RGFVIVJVPVTVOSZAAVOTVTVTNZVTGJZXDXFAALAVKVTVTVTXCXCVCVEXEVTGVLVGRFFGVMVJ
+      $.
+
+  $}
+
+  ${
+    $d A x y z $.
+    $( Alternate definition of domain.  (Contributed by SF, 23-Feb-2015.) $)
+    dfdm4 $p |- dom A = ( 1st " A ) $=
+      ( vx vy vz cdm c1st cima cv cop wcel wex wbr wrex wceq rexcom4 vex rexbii
+      br1st risset exbii 3bitr4ri eldm2 elima 3bitr4i eqriv ) BAEZFAGZBHZCHIZAJ
+      ZCKZDHZUHFLZDAMZUHUFJUHUGJULUINZCKZDAMUODAMZCKUNUKUODCAOUMUPDACULUHBPRQUJ
+      UQCDUIASTUACUHAUBDUHFAUCUDUE $.
+
+    $( Alternate definition of range.  (Contributed by SF, 23-Feb-2015.) $)
+    dfrn5 $p |- ran A = ( 2nd " A ) $=
+      ( vy vx vz crn c2nd cima cv cop wcel wex wbr wrex wceq rexcom4 vex rexbii
+      br2nd risset exbii 3bitr4ri elrn2 elima 3bitr4i eqriv ) BAEZFAGZCHBHZIZAJ
+      ZCKZDHZUHFLZDAMZUHUFJUHUGJULUINZCKZDAMUODAMZCKUNUKUODCAOUMUPDACULUHBPRQUJ
+      UQCDUIASTUACUHAUBDUHFAUCUDUE $.
+  $}
 
   ${
     $d A a $.  $d a b $.  $d A b $.  $d a x $.  $d A x $.  $d a y $.  $d A y $.
@@ -51817,7 +51871,7 @@ $)
   ${
     $d p q r x y z w $.
     $( ` Swap ` is a bijection over the universe.  (Contributed by SF,
-       23-Feb-2015.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
+       23-Feb-2015.) (Revised by Scott Fenton, 17-Apr-2021.) $)
     swapf1o $p |- Swap : _V -1-1-onto-> _V $=
       ( vx vy vz cvv cswap wfn wceq cv wbr wa wal cproj2 cproj1 cop vex proj1ex
       opeq proj2ex brswap2 bitri wf1o ccnv cdm weq wi dffun2 breq2i eqtr2 ancom
@@ -51833,48 +51887,8 @@ $)
   $}
 
   ${
-    $d x y z w t $.
-    $( ` 1st ` is a mapping from the universe onto the universe.  (Contributed
-       by SF, 12-Feb-2015.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
-    1stfo $p |- 1st : _V -onto-> _V $=
-      ( vx vy vz vw vt cvv c1st wceq cv wbr wa weq wal cop wex vex br1st mpgbir
-      wcel eqv wfo wfn crn wfun cdm wi dffun2 anbi12i eeanv bitr4i opth simplbi
-      eqtr2 exlimivv sylbi gen2 cproj1 cproj2 opeq eqid proj1ex proj2ex opbr1st
-      syl mpbir breldm ax-mp eqeltri df-fn mpbir2an brelrn df-fo ) FFGUAGFUBZGU
-      CZFHZVMGUDZGUEZFHZVPAIZBIZGJZVSCIZGJZKZBCLZUFZCMBMAABCGUGWFBCWDVSVTDIZNZH
-      ZVSWBEIZNZHZKZEODOZWEWDWIDOZWLEOZKWNWAWOWCWPDVSVTBPQEVSWBCPQUHWIWLDEUIUJW
-      MWEDEWMWHWKHZWEVSWHWKUMWQWEDELVTWGWBWJUKULVDUNUOUPRVRVSVQSAAVQTVSVSUQZVSU
-      RZNZVQVSUSWTWRGJZWTVQSXAWRWRHWRUTWRWSWRVSAPZVAVSXBVBVCVEWTWRGVFVGVHRGFVIV
-      JVOVSVNSZAAVNTVSVSNZVSGJZXCXEAALVSUTVSVSVSXBXBVCVEXDVSGVKVGRFFGVLVJ $.
-  $}
-
-  $( ` 2nd ` is a mapping from the universe onto the universe.  (Contributed by
-     SF, 12-Feb-2015.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
-  2ndfo $p |- 2nd : _V -onto-> _V $=
-    ( cvv c2nd wfo c1st cswap ccom 1stfo wf1o swapf1o f1ofo ax-mp foco mp2an wb
-    wceq df2nd2 foeq1 mpbir ) AABCZAADEFZCZAADCAAECZUAGAAEHUBIAAEJKAAADELMBTOSU
-    ANPAABTQKR $.
-
-  ${
-    $d A x y z $.
-    $( Alternate definition of domain.  (Contributed by SF, 23-Feb-2015.) $)
-    dfdm4 $p |- dom A = ( 1st " A ) $=
-      ( vx vy vz cdm c1st cima cv cop wcel wex wbr wrex wceq rexcom4 vex rexbii
-      br1st risset exbii 3bitr4ri eldm2 elima 3bitr4i eqriv ) BAEZFAGZBHZCHIZAJ
-      ZCKZDHZUHFLZDAMZUHUFJUHUGJULUINZCKZDAMUODAMZCKUNUKUODCAOUMUPDACULUHBPRQUJ
-      UQCDUIASTUACUHAUBDUHFAUCUDUE $.
-
-    $( Alternate definition of range.  (Contributed by SF, 23-Feb-2015.) $)
-    dfrn5 $p |- ran A = ( 2nd " A ) $=
-      ( vy vx vz crn c2nd cima cv cop wcel wex wbr wrex wceq rexcom4 vex rexbii
-      br2nd risset exbii 3bitr4ri elrn2 elima 3bitr4i eqriv ) BAEZFAGZCHBHZIZAJ
-      ZCKZDHZUHFLZDAMZUHUFJUHUGJULUINZCKZDAMUODAMZCKUNUKUODCAOUMUPDACULUHBPRQUJ
-      UQCDUIASTUACUHAUBDUHFAUCUDUE $.
-  $}
-
-  ${
     $( Bijection law for restrictions of ` Swap ` .  (Contributed by SF,
-       23-Feb-2015.)  (Modified by Scott Fenton, 17-Apr-2021.) $)
+       23-Feb-2015.) (Modified by Scott Fenton, 17-Apr-2021.) $)
     swapres $p |- ( Swap |` A ) : A -1-1-onto-> `' A $=
       ( ccnv cswap cres wf1o cima cvv wf1 swapf1o f1of1 ax-mp f1ores mp2an wceq
       wss ssv wb dfcnv2 f1oeq3 mpbir ) AABZCADZEZACAFZUBEZGGCHZAGOUEGGCEUFIGGCJ
@@ -52010,23 +52024,6 @@ $)
   dmep $p |- dom _E = _V $=
     ( vx cep cdm cvv wceq cv wcel eqv csn wbr vex snid epelc mpbir breldm ax-mp
     snex mpgbir ) BCZDEAFZSGZAASHTTIZBJZUAUCTUBGTAKLTUBTQMNTUBBOPR $.
-
-  $( Converse restriction condition.  (Contributed by Scott Fenton,
-     23-Apr-2021.) $)
-  brcnvrescnv $p |- ( A `' ( `' R |` X ) B <-> ( A R B /\ B e. X ) ) $=
-    ( ccnv cres wbr wcel wa brcnv brres anbi1i 3bitri ) ABCEZDFZEGBAOGBANGZBDHZ
-    IABCGZQIABOJBANDKPRQBACJLM $.
-
-  ${
-
-    brepres.1 $e |- B e. _V $.
-    $( Converse restriction of epsilon relationship.  (Contributed by Scott
-       Fenton, 23-Apr-2021.) $)
-    brepres $p |- ( A `' ( `' _E |` X ) B <-> ( A e. B /\ B e. X ) ) $=
-       ( cep ccnv cres wbr wcel wa brcnvrescnv epelc anbi1i bitri ) ABEFCGFHABE
-       HZBCIZJABIZPJABECKOQPABDLMN $.
-  $}
-
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -52586,7 +52583,7 @@ $)
       ( cv wcel wa coprab crn wex cab wrex rnoprab r2ex abbii eqtr4i ) BGEHCGFH
       IAIZBCDJKSCLBLZDMACFNBENZDMSBCDOUATDABCEFPQR $.
   $}
-
+ 
   ${
     $d x y z w A $.  $d x y z w B $.  $d x y z w C $.  $d w ph $.
     $d x y z w ps $.
@@ -53487,11 +53484,11 @@ $)
   $}
 
   ${
-    $d x y z w t u A $.
-    $( Identity law for operator abstractions.  (Contributed by Scott Fenton,
-       19-Apr-2021.) $)
-    oprabid2 $p |- { <. <. x , y >. , z >. | <. <. x , y >. , z >. e. A }
-                 = A $=
+     $d x y z w t u A $.
+     $( Identity law for operator abstractions.  (Contributed by Scott Fenton,
+        19-Apr-2021.) $)
+     oprabid2 $p |- { <. <. x , y >. , z >. | <. <. x , y >. , z >. e. A }
+     	      	 = A $=
        ( vw vt vu cv cop wcel coprab cvv wb vex weq opeq1 opeq1d opeq2 eloprabg
        eleq1d mp3an eqoprriv ) EFGAHZBHZIZCHZIZDJZABCKZDEHZLJFHZLJGHZLJUJUKIZUL
        IZUIJUNDJZMENFNGNUHUJUDIZUFIZDJUMUFIZDJUOABCUJUKULLLLAEOZUGUQDUSUEUPUFUC
@@ -54135,7 +54132,6 @@ $)
       ECDGHEAIZCJBIZDJKFITUAELZMKABFNZMEABCDUBOZMABFCDEPUDUCEABFCDUBQRS $.
 
   $}
-
   ${
     $d w x y z A $.  $d w y z B $.  $d w x y C $.  $d w z D $.
     mpt2mpt.1 $e |- ( z = <. x , y >. -> C = D ) $.
@@ -54422,6 +54418,7 @@ $)
     $d t u v w x y z A $.  $d t u v w y z B $.  $d t u v w z C $.
     $d v w x y z D $.
     fmpt2x.1 $e |- F = ( x e. A , y e. B |-> C ) $.
+
     $( Functionality, domain and codomain of a class given by the "maps to"
        notation, where ` B ( x ) ` is not constant but depends on ` x ` .
        (Contributed by NM, 29-Dec-2014.) $)
@@ -54472,7 +54469,7 @@ $)
     dmmpt2 $p |- dom F = ( A X. B ) $=
       ( cxp wfn cdm wceq fnmpt2i fndm ax-mp ) FCDIZJFKPLABCDEFGHMPFNO $.
   $}
-
+  
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Set construction lemmas
@@ -54559,7 +54556,7 @@ $)
     $( Define the composition function.  (Contributed by Scott Fenton,
        19-Apr-2021.) $)
     df-compose $a |- Compose = ( x e. _V , y e. _V |-> ( x o. y ) ) $.
-  $}
+ $}
 
   $( Extend the definition of a class to include the second insertion
      operation. $)
@@ -55181,8 +55178,9 @@ $)
 
   ${
     $d x y z $.
-    $( The cup function is a function over the universe.  (Contributed by SF,
-       11-Feb-2015.)  (Revised by Scott Fenton, 19-Apr-2021.) $)
+    $( The cup function is a function over the universe.
+       (Contributed by SF, 11-Feb-2015.) (Revised by Scott Fenton,
+       19-Apr-2021.) $)
     fncup $p |- Cup Fn _V $=
       ( vx vy ccup cvv cxp wfn cv cun df-cup vex unex fnmpt2i xpvv fneq2i mpbi
       ) CDDEZFCDFABDDAGZBGZHCABIQRAJBJKLPDCMNO $.
@@ -55221,21 +55219,21 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x y B $.
-    $( The value of the composition function.  (Contributed by Scott Fenton,
-       19-Apr-2021.) $)
-    composevalg $p |- ( ( A e. V /\ B e. W ) ->
+     $d x y A $. $d x y B $.
+     $( The value of the composition function.  (Contributed by Scott Fenton,
+        19-Apr-2021.) $)
+     composevalg $p |- ( ( A e. V /\ B e. W ) ->
      ( A Compose B ) = ( A o. B ) ) $=
        ( vx vy wcel wa cvv ccom ccompose co wceq elex adantr adantl coexg coeq1
        cv coeq2 df-compose ovmpt2g syl3anc ) ACGZBDGZHAIGZBIGZABJZIGABKLUHMUDUF
-       UEACNOUEUGUDBDNPABCDQEFABIIESZFSZJUHKAUJJIUIAUJRUJBATEFUAUBUC $.
+       UEACNOUEUGUDBDNPABCDQEFABIIESZFSZJUHKAUJJIUIAUJRUJBATEFUAUBUC $.     
   $}
 
   ${
-    $d x y z $.
-    $( The compose function is a function over the universe.  (Contributed by
-       Scott Fenton, 19-Apr-2021.) $)
-    composefn $p |- Compose Fn _V $=
+     $d x y z $.
+     $( The compose function is a function over the universe.  (Contributed
+        by Scott Fenton, 19-Apr-2021.) $)
+     composefn $p |- Compose Fn _V $=
        ( vx vy vz ccompose cvv wfn cv wcel ccom wceq coprab copab weu vex eueq1
        wa coex a1i fnoprab wb cmpt2 df-compose df-mpt2 eqtri df-xp eqtr3i fneq1
        cxp xpvv fneq2 sylan9bb mp2an mpbir ) DEFZAGZEHBGZEHPZCGUOUPIZJZPABCKZUQ
@@ -55244,8 +55242,8 @@ $)
   $}
 
   ${
-    $( Binary relationship form of the compose function.  (Contributed by Scott
-       Fenton, 19-Apr-2021.) $)
+    $( Binary relationship form of the compose function.  (Contributed
+       by Scott Fenton, 19-Apr-2021.) $)
     brcomposeg $p |- ( ( A e. V /\ B e. W ) -> ( <. A , B >. Compose C <->
       ( A o. B ) = C ) ) $=
       ( wcel wa cop ccompose cfv wceq wbr ccom cvv wb composefn fnbrfvb sylancr
@@ -55255,10 +55253,10 @@ $)
   $}
 
   ${
-    $d x y z w t u v $.
-    $( The compose function is a set.  (Contributed by Scott Fenton,
-       19-Apr-2021.) $)
-    composeex $p |- Compose e. _V $=
+     $d x y z w t u v $.
+     $( The compose function is a set.  (Contributed by Scott Fenton,
+        19-Apr-2021.) $)
+     composeex $p |- Compose e. _V $=
        ( vx vy vw vu vt vv cvv csset cins2 c1c cv wbr wex wcel cop vex otelins2
        wa bitri ins2ex vz ccompose cxp c1st ccnv c2nd cin csi3 cins4 cswap cima
        cid cins3 csymdif cdif ccom cmpt2 df-compose copab wceq csn elopab df-co
@@ -55372,7 +55370,7 @@ $)
   ${
     $d x y z $.
     $( ` AddC ` is a function over the universe.  (Contributed by SF,
-       2-Mar-2015.)  (Revised by Scott Fenton, 19-Apr-2021.) $)
+       2-Mar-2015.) (Revised by Scott Fenton, 19-Apr-2021.) $)
     addcfn $p |- AddC Fn _V $=
       ( vx vy caddcfn cvv cxp wfn cplc df-addcfn vex addcex fnmpt2i xpvv fneq2i
       cv mpbi ) CDDEZFCDFABDDANZBNZGCABHQRAIBIJKPDCLMO $.
@@ -57697,13 +57695,13 @@ $)
     $d f x y z $.
     $( Set exponentiation has a universal domain.  (Contributed by set.mm
        contributors, 8-Dec-2003.)  (Revised by set.mm contributors,
-       8-Sep-2013.)  (Revised by Scott Fenton, 19-Apr-2019.) $)
+       8-Sep-2013.) (Revised by Scott Fenton, 19-Apr-2019.) $)
     fnmap $p |- ^m Fn _V $=
       ( vx vy vf cmap cvv cxp wfn cv wf cab df-map vex mapexi fnmpt2i xpvv mpbi
       fneq2i ) DEEFZGDEGABEEBHZAHZCHICJDABCKSTCBLALMNREDOQP $.
 
     $( Partial function exponentiation has a universal domain.  (Contributed by
-       set.mm contributors, 14-Nov-2013.)  (Revised by Scott Fenton,
+       set.mm contributors, 14-Nov-2013.) (Revised by Scott Fenton,
        19-Apr-2019.) $)
     fnpm $p |- ^pm Fn _V $=
       ( vx vy vf cpm cvv cxp wfn cv wfun cpw crab df-pm cfuns cin wcel cab elin
@@ -58096,7 +58094,7 @@ $)
       HUFUBUDAGUDALUHRMNUDCOPST $.
 
     $( A relational set is equinumerous to its converse.  (Contributed by
-       set.mm contributors, 28-Dec-2014.)  (Modified by Scott Fenton,
+       set.mm contributors, 28-Dec-2014.) (Modified by Scott Fenton,
        17-Apr-2021.) $)
     cnven $p |- ( A e. V -> A ~~ `' A ) $=
       ( wcel cswap cres cvv ccnv wf1o cen wbr swapex resexg mpan swapres f1oeng
@@ -58215,7 +58213,7 @@ $)
   $}
 
   ${
-    $d x t $.  $d y t $.
+    $d x t $. $d y t $.
     $( Lemma for ~ xpassen .  Compute a projection.  (Contributed by Scott
        Fenton, 19-Apr-2021.) $)
     xpassenlem $p |- ( y ( ( 1st o. 1st ) (x) ( ( 2nd o. 1st ) (x) 2nd ) ) x
@@ -58236,7 +58234,7 @@ $)
   $}
 
   ${
-    $d A a b c x y z t p $.  $d B a b c x y z t p $.  $d C a b c x y z t p $.
+    $d A a b c x y z t p $. $d B a b c x y z t p $. $d C a b c x y z t p $.
     xpassen.1 $e |- A e. _V $.
     xpassen.2 $e |- B e. _V $.
     xpassen.3 $e |- C e. _V $.
@@ -58533,7 +58531,7 @@ $)
   $}
 
   ${
-    $d A p r s x $.  $d G p s x $.
+    $d A p r s x $. $d G p s x $.
     enmap1lem1.1 $e |- W = ( s e. ( A ^m G ) |-> ( r o. s ) ) $.
     $( Lemma for ~ enmap1 .  Set up stratification.  (Contributed by SF,
        3-Mar-2015.) $)
@@ -61413,11 +61411,6 @@ $)
       MKZXKXONZWBVBXPXNXQUOWFDUPUQSXLDWGVAURUSVCSVDVEVFVGVH $.
   $}
 
-  $( Cardinal less than is irreflexive.  (Contributed by Scott Fenton,
-     22-Apr-2021.) $)
-  ltcirr $p |- -. A <c A $=
-    ( cltc wbr clec wne wa neirr intnan brltc mtbir ) AABCAADCZAAEZFLKAGHAAIJ
-    $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -62705,62 +62698,62 @@ $)
   ccan $a class Can $.
 
   $( Define the class of all Cantorian sets.  These are so-called because
-     Cantor's Theorem ` Nc A <c Nc ~P A ` holds for these sets.  (Contributed
-     by Scott Fenton, 19-Apr-2021.) $)
+     Cantor's Theorem ` A ~< ~P A ` holds for these sets.  (Contributed by
+     Scott Fenton, 19-Apr-2021.) $)
   df-can $a |- Can = { x | ~P1 x ~~ x } $.
 
   $( Extend the definition of class to include the class of all strongly
      Cantorian sets. $)
   cscan $a class SCan $.
-
+  
   ${
-    $d x y $.
-    $( Define the class of strongly Cantorian sets.  Unline general Cantorian
-       sets, this fixes a specific mapping between ` x ` and ` ~P1 x ` .
-       (Contributed by Scott Fenton, 19-Apr-2021.) $)
-    df-scan $a |- SCan = { x | ( y e. x |-> { y } ) e. _V } $.
+     $d x y $.
+     $( Define the class of strongly Cantorian sets.  Unline general Cantorian
+        sets, this fixes a specific mapping between ` x ` and ` ~P1 x ` .
+	(Contributed by Scott Fenton, 19-Apr-2021.) $)
+     df-scan $a |- SCan = { x | ( y e. x |-> { y } ) e. _V } $.
   $}
 
   ${
-    $d x y A $.
-    $( The domain of the singleton function.  (Contributed by Scott Fenton,
-       20-Apr-2021.) $)
-    dmsnfn $p |- dom ( x e. A |-> { x } ) = A $=
+     $d x y A $.
+     $( The domain of the singleton function.  (Contributed by Scott Fenton,
+        20-Apr-2021.) $)
+     dmsnfn $p |- dom ( x e. A |-> { x } ) = A $=
        ( cv csn cvv wcel crab wa cab cmpt df-rab eqid dmmpt snex biantru abbi2i
        cdm 3eqtr4i ) ACZDZEFZABGSBFZUAHZAIABTJZQBUAABKABTUDUDLMUCABUAUBSNOPR $.
   $}
 
   ${
-    epelcres.1 $e |- Y e. _V $.
-    $( Version of ~ epelc with a restriction in place.  (Contributed by Scott
-       Fenton, 20-Apr-2021.) $)
-    epelcres $p |- ( X e. A -> ( X ( _E |` A ) Y <-> X e. Y ) ) $=
+     epelcres.1 $e |- Y e. _V $.
+     $( Version of ~ epelc with a restriction in place.  (Contributed by
+        Scott Fenton, 20-Apr-2021.) $)
+     epelcres $p |- ( X e. A -> ( X ( _E |` A ) Y <-> X e. Y ) ) $=
        ( wcel cep wbr wa cres iba bicomd brres epelc bicomi 3bitr4g ) BAEZBCFGZ
        PHZQBCFAIGBCEZPQRPQJKBCFALQSBCDMNO $.
   $}
 
   ${
-    $d A x y $.
-    $( Membership in the class of Cantorian sets.  (Contributed by Scott
-       Fenton, 19-Apr-2021.) $)
-    elcan $p |- ( A e. Can <-> ~P1 A ~~ A ) $=
+     $d A x y $.
+     $( Membership in the class of Cantorian sets.  (Contributed by Scott
+        Fenton, 19-Apr-2021.) $)
+     elcan $p |- ( A e. Can <-> ~P1 A ~~ A ) $=
        ( vx ccan wcel cvv cpw1 cen wbr elex brrelrnex wceq pw1eq breq12d df-can
        cv id elab2g pm5.21nii ) ACDAEDAFZAGHZACISAGJBOZFZUAGHTBACEUAAKZUBSUAAGU
        AALUCPMBNQR $.
 
-    $( Membership in the class of strongly Cantorian sets.  (Contributed by
-       Scott Fenton, 19-Apr-2021.) $)
-    elscan $p |- ( A e. SCan <-> ( x e. A |-> { x } ) e. _V ) $=
+     $( Membership in the class of strongly Cantorian sets.  (Contributed by
+        Scott Fenton, 19-Apr-2021.) $)
+     elscan $p |- ( A e. SCan <-> ( x e. A |-> { x } ) e. _V ) $=
        ( vy cscan wcel cvv csn cmpt elex cdm dmsnfn dmexg syl5eqelr wceq mpteq1
        cv eleq1d df-scan elab2g pm5.21nii ) BDEBFEABAPGZHZFEZBDIUCBUBJFABKUBFLM
        ACPZUAHZFEUCCBDFUDBNUEUBFAUDBUAOQCARST $.
-  $}
+   $}
 
-  ${
-    $d A x y z w $.
-    $( Strongly Cantorian implies Cantorian.  (Contributed by Scott Fenton,
-       19-Apr-2021.) $)
-    scancan $p |- ( A e. SCan -> A e. Can ) $=
+   ${
+      $d A x y z w $.
+      $( Strongly Cantorian implies Cantorian.  (Contributed by Scott Fenton,
+         19-Apr-2021.) $)
+      scancan $p |- ( A e. SCan -> A e. Can ) $=
         ( vx vy vz cv csn cmpt cvv wcel cpw1 cen wbr cscan wfn ccnv wceq weu wa
         weq copab ccan wf1o snex eqid fnmpti wrex elpw1 euequ1 eqeq1 vex equcom
         sneqb bitri syl6bb eubidv mpbiri rexlimivw sylbi df-mpt cnvopab snelpw1
@@ -62772,33 +62765,8 @@ $)
         BWQBCUTWQWSCBWHWPWIWHWIVSWBIWPWGVSWBVCVRAVAVDVEVFVGVHAWBVTVIVLAWBHVTVJV
         KAWBVMVNBAVOAVPVQ $.
 
-  $}
+   $}
 
-  $( The cardinality of a Cantorian set is equal to the cardinality of its unit
-     power set.  (Contributed by Scott Fenton, 21-Apr-2021.) $)
-  cannc $p |- ( A e. Can -> Nc ~P1 A = Nc A ) $=
-     ( ccan wcel cnc cpw1 wceq cen wbr elcan ensymi sylbi eqncg mpbird eqcomd )
-     ABCZADZAEZDZOPRFAQGHZOQAGHSAIQAJKAQBLMN $.
-
-  $( The cardinality of a Cantorian set is strictly less than the cardinality
-     of its power set.  (Contributed by Scott Fenton, 21-Apr-2021.) $)
-  canltpw $p |- ( A e. Can -> Nc A <c Nc ~P A ) $=
-    ( ccan wcel cpw1 cnc cpw cltc cannc ltcpw1pwg eqbrtrrd ) ABCADEAEAFEGAHABIJ
-    $.
-
-  $( The cardinality of a Cantorian set is equal to the ` T_c ` raising of that
-     cardinal.  (Contributed by Scott Fenton, 22-Apr-2021.) $)
-  cantc $p |- ( A e. Can -> T_c Nc A = Nc A ) $=
-    ( ccan wcel cnc ctc cncs cpw1 wceq ncelncs tccl syl pw1eltc syl2anc cen wbr
-    ncidg elcan elnc bitr4i biimpi nceleq syl22anc ) ABCZADZEZFCZUDFCZAGZUECZUH
-    UDCZUEUDHUCUGUFABIZUDJKUKUCUGAUDCUIUKABPUDALMUCUJUCUHANOUJAQUHARSTUEUDUHUAU
-    B $.
-
-  $( The universe is not Cantorian.  (Contributed by Scott Fenton,
-     22-Apr-2021.) $)
-  vncan $p |- -. _V e. Can $=
-    ( cvv ccan wcel cnc cltc wbr ltcirr cpw canltpw pwv nceqi syl6breq mto ) AB
-    CZADZOEFOGNOAHZDOEAIPAJKLM $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
