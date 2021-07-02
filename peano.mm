@@ -9,8 +9,10 @@ $)
 $( Copyright (GPL) 2004 Robert Solovay, PO Box 5949, Eugene OR, 97405   $)
 $( Comments welcome; email to:  solovay at gmail dot com $)
 
-$( Version of 20-January-07 $)
+$( Version of 22-Jun-2021 $)
 $( Replaces prior version of 13-July-04 $)
+$( 22-Jun-2021 (Patrick Brosnan) - Add missing distinct variable constraints
+   to pa_ax7 $)
 $( 7-Oct-2004 (N. Megill) - Minor fixes to conform to strict Metamath spec $)
 $( 11-Oct-2004 (N. Megill) - "$a implies" --> "$a |- implies" at line 224 $)
 $( 24-Jun-2006 (N. Megill) - Made label and math symbol names spaces
@@ -779,9 +781,12 @@ pa_ax5 $a |- = 0
                * x 0 $.
 pa_ax6 $a |- = + * x y x
                * x S y $.
-pa_ax7 $a |- iff
-             < x y
-             exists z = y + x S z $.
+${
+  $d z x $.  $d z y $.
+  pa_ax7 $a |- iff
+               < x y
+               exists z = y + x S z $.
+$}
 
 $( It suffices to give the induction axiom for the case when phi does
 not contain x free. For the usual form of the axiom follows from this
