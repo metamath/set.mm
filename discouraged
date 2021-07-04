@@ -14319,6 +14319,7 @@ New usage of "ax-pre-mulgt0" is discouraged (1 uses).
 New usage of "ax-pre-sup" is discouraged (1 uses).
 New usage of "ax1" is discouraged (0 uses).
 New usage of "ax10" is discouraged (3 uses).
+New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12a2-o" is discouraged (0 uses).
 New usage of "ax12a2OLD" is discouraged (1 uses).
 New usage of "ax12el" is discouraged (0 uses).
@@ -18955,6 +18956,7 @@ Proof modification of "ax1" is discouraged (3 steps).
 Proof modification of "ax10" is discouraged (50 steps).
 Proof modification of "ax11-pm" is discouraged (39 steps).
 Proof modification of "ax11-pm2" is discouraged (119 steps).
+Proof modification of "ax12OLD" is discouraged (57 steps).
 Proof modification of "ax12a2-o" is discouraged (22 steps).
 Proof modification of "ax12a2OLD" is discouraged (9 steps).
 Proof modification of "ax12el" is discouraged (577 steps).
