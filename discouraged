@@ -16088,6 +16088,7 @@ New usage of "eqeqan12dALT" is discouraged (0 uses).
 New usage of "eqerOLD" is discouraged (0 uses).
 New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqresr" is discouraged (4 uses).
+New usage of "eqsbc3rOLD" is discouraged (0 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
 New usage of "equequ2OLD" is discouraged (0 uses).
 New usage of "equid1" is discouraged (0 uses).
@@ -18351,10 +18352,12 @@ New usage of "sbcel2gOLD" is discouraged (8 uses).
 New usage of "sbcexgOLD" is discouraged (7 uses).
 New usage of "sbcim2g" is discouraged (2 uses).
 New usage of "sbcim2gVD" is discouraged (0 uses).
+New usage of "sbcimdvOLD" is discouraged (0 uses).
 New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
 New usage of "sbcorgOLD" is discouraged (2 uses).
 New usage of "sbcrexgOLD" is discouraged (2 uses).
+New usage of "sbcrextOLD" is discouraged (0 uses).
 New usage of "sbcssOLD" is discouraged (0 uses).
 New usage of "sbcssgVD" is discouraged (0 uses).
 New usage of "sbequ8ALT" is discouraged (0 uses).
@@ -19622,6 +19625,7 @@ Proof modification of "eqeq1dALT" is discouraged (62 steps).
 Proof modification of "eqeqan12dALT" is discouraged (23 steps).
 Proof modification of "eqerOLD" is discouraged (165 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
+Proof modification of "eqsbc3rOLD" is discouraged (71 steps).
 Proof modification of "eqsbc3rVD" is discouraged (129 steps).
 Proof modification of "equequ2OLD" is discouraged (26 steps).
 Proof modification of "equid1" is discouraged (50 steps).
@@ -20370,10 +20374,12 @@ Proof modification of "sbcel2gOLD" is discouraged (38 steps).
 Proof modification of "sbcexgOLD" is discouraged (49 steps).
 Proof modification of "sbcim2g" is discouraged (83 steps).
 Proof modification of "sbcim2gVD" is discouraged (139 steps).
+Proof modification of "sbcimdvOLD" is discouraged (59 steps).
 Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (127 steps).
 Proof modification of "sbcorgOLD" is discouraged (61 steps).
 Proof modification of "sbcrexgOLD" is discouraged (77 steps).
+Proof modification of "sbcrextOLD" is discouraged (190 steps).
 Proof modification of "sbcssOLD" is discouraged (130 steps).
 Proof modification of "sbcssgVD" is discouraged (223 steps).
 Proof modification of "sbequ8ALT" is discouraged (30 steps).
