@@ -14541,6 +14541,7 @@ New usage of "bitsfzolemOLD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
 New usage of "bj-1" is discouraged (0 uses).
 New usage of "bj-ax12iOLD" is discouraged (0 uses).
+New usage of "bj-ax12v3ALT" is discouraged (0 uses).
 New usage of "bj-ax6e" is discouraged (0 uses).
 New usage of "bj-axc4" is discouraged (0 uses).
 New usage of "bj-axd2d" is discouraged (0 uses).
@@ -16140,6 +16141,7 @@ New usage of "ex-natded9.20" is discouraged (0 uses).
 New usage of "ex-natded9.20-2" is discouraged (0 uses).
 New usage of "ex-natded9.26" is discouraged (0 uses).
 New usage of "ex-natded9.26-2" is discouraged (0 uses).
+New usage of "exanOLD" is discouraged (0 uses).
 New usage of "exatleN" is discouraged (1 uses).
 New usage of "exbiOLD" is discouraged (0 uses).
 New usage of "exbidhOLD" is discouraged (0 uses).
@@ -18993,6 +18995,7 @@ Proof modification of "axc10" is discouraged (37 steps).
 Proof modification of "axc11-o" is discouraged (47 steps).
 Proof modification of "axc11n-16" is discouraged (154 steps).
 Proof modification of "axc11n11" is discouraged (23 steps).
+Proof modification of "axc11n11r" is discouraged (146 steps).
 Proof modification of "axc11nALT" is discouraged (62 steps).
 Proof modification of "axc11nOLD" is discouraged (64 steps).
 Proof modification of "axc11nOLDOLD" is discouraged (63 steps).
@@ -19106,6 +19109,7 @@ Proof modification of "bj-aecomsv" is discouraged (16 steps).
 Proof modification of "bj-alcomexcom" is discouraged (45 steps).
 Proof modification of "bj-ax12iOLD" is discouraged (20 steps).
 Proof modification of "bj-ax12v" is discouraged (35 steps).
+Proof modification of "bj-ax12v3ALT" is discouraged (44 steps).
 Proof modification of "bj-ax6e" is discouraged (43 steps).
 Proof modification of "bj-ax6elem1" is discouraged (27 steps).
 Proof modification of "bj-ax6elem2" is discouraged (23 steps).
@@ -19115,10 +19119,10 @@ Proof modification of "bj-axc10" is discouraged (30 steps).
 Proof modification of "bj-axc10v" is discouraged (37 steps).
 Proof modification of "bj-axc11nlemv" is discouraged (58 steps).
 Proof modification of "bj-axc11nv" is discouraged (66 steps).
-Proof modification of "bj-axc11rv" is discouraged (40 steps).
 Proof modification of "bj-axc11v" is discouraged (14 steps).
 Proof modification of "bj-axc15v" is discouraged (103 steps).
 Proof modification of "bj-axc16b" is discouraged (14 steps).
+Proof modification of "bj-axc16g16" is discouraged (25 steps).
 Proof modification of "bj-axc4" is discouraged (15 steps).
 Proof modification of "bj-axd2d" is discouraged (16 steps).
 Proof modification of "bj-axdd2" is discouraged (28 steps).
@@ -19654,6 +19658,7 @@ Proof modification of "ex-natded9.20" is discouraged (58 steps).
 Proof modification of "ex-natded9.20-2" is discouraged (44 steps).
 Proof modification of "ex-natded9.26" is discouraged (65 steps).
 Proof modification of "ex-natded9.26-2" is discouraged (22 steps).
+Proof modification of "exanOLD" is discouraged (23 steps).
 Proof modification of "exbiOLD" is discouraged (28 steps).
 Proof modification of "exbidhOLD" is discouraged (24 steps).
 Proof modification of "exbirVD" is discouraged (65 steps).
