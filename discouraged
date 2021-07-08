@@ -968,20 +968,20 @@
 "ax-c11n" is used by "axc11-o".
 "ax-c14" is used by "ax12el".
 "ax-c14" is used by "ax5el".
-"ax-c15" is used by "ax12o".
+"ax-c15" is used by "ax12fromc15".
 "ax-c16" is used by "ax5el".
 "ax-c16" is used by "ax5eq".
 "ax-c16" is used by "axc11n-16".
 "ax-c16" is used by "axc16g-o".
-"ax-c4" is used by "ax10".
-"ax-c4" is used by "ax4".
+"ax-c4" is used by "ax10fromc7".
+"ax-c4" is used by "ax4fromc4".
 "ax-c4" is used by "equid1".
-"ax-c5" is used by "ax10".
+"ax-c5" is used by "ax10fromc7".
+"ax-c5" is used by "ax12fromc15".
 "ax-c5" is used by "ax12inda2ALT".
 "ax-c5" is used by "ax12indalem".
-"ax-c5" is used by "ax12o".
 "ax-c5" is used by "ax13fromc9".
-"ax-c5" is used by "ax4".
+"ax-c5" is used by "ax4fromc4".
 "ax-c5" is used by "axc5c7".
 "ax-c5" is used by "axc5c711".
 "ax-c5" is used by "axc711toc7".
@@ -989,7 +989,7 @@
 "ax-c5" is used by "hba1-o".
 "ax-c5" is used by "hbae-o".
 "ax-c5" is used by "sps-o".
-"ax-c7" is used by "ax10".
+"ax-c7" is used by "ax10fromc7".
 "ax-c7" is used by "ax6fromc10".
 "ax-c7" is used by "axc5c7".
 "ax-c7" is used by "axc5c711".
@@ -1406,9 +1406,9 @@
 "ax-pre-lttrn" is used by "axlttrn".
 "ax-pre-mulgt0" is used by "axmulgt0".
 "ax-pre-sup" is used by "axsup".
-"ax10" is used by "axc5c711".
-"ax10" is used by "equidq".
-"ax10" is used by "hba1-o".
+"ax10fromc7" is used by "axc5c711".
+"ax10fromc7" is used by "equidq".
+"ax10fromc7" is used by "hba1-o".
 "ax12a2OLD" is used by "axc15OLD".
 "ax12inda2" is used by "ax12inda".
 "ax12indalem" is used by "ax12inda2".
@@ -5313,9 +5313,9 @@
 "docavalN" is used by "diaocN".
 "docavalN" is used by "docaclN".
 "dochfN" is used by "dochpolN".
+"dral1-o" is used by "ax12fromc15".
 "dral1-o" is used by "ax12inda2ALT".
 "dral1-o" is used by "ax12indalem".
-"dral1-o" is used by "ax12o".
 "dral1-o" is used by "axc16g-o".
 "dral2-o" is used by "ax12el".
 "dral2-o" is used by "ax12eq".
@@ -14319,20 +14319,20 @@ New usage of "ax-pre-lttrn" is discouraged (1 uses).
 New usage of "ax-pre-mulgt0" is discouraged (1 uses).
 New usage of "ax-pre-sup" is discouraged (1 uses).
 New usage of "ax1" is discouraged (0 uses).
-New usage of "ax10" is discouraged (3 uses).
+New usage of "ax10fromc7" is discouraged (3 uses).
 New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12a2-o" is discouraged (0 uses).
 New usage of "ax12a2OLD" is discouraged (1 uses).
 New usage of "ax12el" is discouraged (0 uses).
 New usage of "ax12eq" is discouraged (0 uses).
 New usage of "ax12f" is discouraged (0 uses).
+New usage of "ax12fromc15" is discouraged (0 uses).
 New usage of "ax12inda" is discouraged (0 uses).
 New usage of "ax12inda2" is discouraged (1 uses).
 New usage of "ax12inda2ALT" is discouraged (0 uses).
 New usage of "ax12indalem" is discouraged (1 uses).
 New usage of "ax12indi" is discouraged (0 uses).
 New usage of "ax12indn" is discouraged (1 uses).
-New usage of "ax12o" is discouraged (0 uses).
 New usage of "ax12v2-o" is discouraged (1 uses).
 New usage of "ax12v2OLD" is discouraged (1 uses).
 New usage of "ax12vALT" is discouraged (0 uses).
@@ -14348,7 +14348,7 @@ New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax2" is discouraged (0 uses).
 New usage of "ax3" is discouraged (0 uses).
 New usage of "ax3h" is discouraged (0 uses).
-New usage of "ax4" is discouraged (0 uses).
+New usage of "ax4fromc4" is discouraged (0 uses).
 New usage of "ax5ALT" is discouraged (0 uses).
 New usage of "ax5el" is discouraged (1 uses).
 New usage of "ax5eq" is discouraged (1 uses).
@@ -18951,7 +18951,7 @@ Proof modification of "ancomstVD" is discouraged (22 steps).
 Proof modification of "anmp" is discouraged (8 steps).
 Proof modification of "avril1" is discouraged (194 steps).
 Proof modification of "ax1" is discouraged (3 steps).
-Proof modification of "ax10" is discouraged (50 steps).
+Proof modification of "ax10fromc7" is discouraged (50 steps).
 Proof modification of "ax11-pm" is discouraged (39 steps).
 Proof modification of "ax11-pm2" is discouraged (119 steps).
 Proof modification of "ax12OLD" is discouraged (57 steps).
@@ -18960,24 +18960,24 @@ Proof modification of "ax12a2OLD" is discouraged (9 steps).
 Proof modification of "ax12el" is discouraged (577 steps).
 Proof modification of "ax12eq" is discouraged (500 steps).
 Proof modification of "ax12f" is discouraged (23 steps).
+Proof modification of "ax12fromc15" is discouraged (57 steps).
 Proof modification of "ax12inda" is discouraged (146 steps).
 Proof modification of "ax12inda2" is discouraged (51 steps).
 Proof modification of "ax12inda2ALT" is discouraged (220 steps).
 Proof modification of "ax12indalem" is discouraged (272 steps).
 Proof modification of "ax12indi" is discouraged (83 steps).
 Proof modification of "ax12indn" is discouraged (70 steps).
-Proof modification of "ax12o" is discouraged (57 steps).
 Proof modification of "ax12v2-o" is discouraged (107 steps).
 Proof modification of "ax12v2OLD" is discouraged (90 steps).
 Proof modification of "ax12vALT" is discouraged (35 steps).
 Proof modification of "ax12vOLD" is discouraged (65 steps).
 Proof modification of "ax12vOLDOLD" is discouraged (69 steps).
 Proof modification of "ax13OLD" is discouraged (54 steps).
-Proof modification of "ax13fromc9" is discouraged (72 steps).
+Proof modification of "ax13fromc9" is discouraged (54 steps).
 Proof modification of "ax2" is discouraged (46 steps).
 Proof modification of "ax3" is discouraged (24 steps).
 Proof modification of "ax3h" is discouraged (21 steps).
-Proof modification of "ax4" is discouraged (45 steps).
+Proof modification of "ax4fromc4" is discouraged (45 steps).
 Proof modification of "ax5ALT" is discouraged (3 steps).
 Proof modification of "ax5el" is discouraged (30 steps).
 Proof modification of "ax5eq" is discouraged (30 steps).
