@@ -2925,20 +2925,21 @@ not occur in ` ph ` </TD></TR>
 </TABLE>
 </CENTER>
 
-<P>All of our extensions are provable (outside of Metamath) as
-metatheorems of Tarski's original system, meaning that they are sound
-(and also logically redundant).  Specifically, all instances of our extensions
- not involving wff metavariables (and with all setvar
-metavariables mutually distinct) can be proved inside of Metamath from
-Tarski's axiom schemes; see theorem schemes ~ ax10w , ~ ax11w ,
-~ ax12w , and ~ ax13w .  These
-theorem schemes have hypotheses that can be eliminated for such
-instances.  Theorem ~ ax12wdemo shows an
-example of how we can eliminate the hypotheses of ~ ax12w .  Finally, we
-combine all such instances (outside of Metamath) to result in the metatheorem
-represented by our extensions.
+<P>
+All of our extensions are provable (outside of Metamath) as metatheorems of
+Tarski's original system, meaning that they are sound (and also logically
+redundant).  Specifically, all instances of our extensions not involving wff
+metavariables (and with all setvar metavariables mutually distinct) can be
+proved inside of Metamath from Tarski's axiom schemes; see theorem schemes
+~ ax10w , ~ ax11w , ~ ax12w , and ~ ax13w .  These theorem schemes have
+hypotheses that can be eliminated for such instances.  Theorem ~ ax12wdemo
+shows an example of how we can eliminate the hypotheses of ~ ax12w .  Finally,
+we combine all such instances (outside of Metamath) to result in the
+metatheorem represented by our extensions.
+</P>
 
-<P>Except for ~ ax-6 , our system includes all axiom schemes of Tarski's
+<P>
+Except for ~ ax-6 , our system includes all axiom schemes of Tarski's
 system.  In the case of ax-6, Tarski's version is weaker because it
 includes a distinct variable proviso.  If we wish, we can also weaken
 our version in this way and still have a metalogically complete system.
@@ -3500,33 +3501,30 @@ following accompanying an axiom or theorem (for example, ~ ax-5 and ~ dtru ):
 These three groups (in this example 3 pairs)  have the following meanings,
 respectively, as side conditions of the theorem scheme or axiom scheme shown
 above them:
-<OL><LI>
-where ` x `
-and
-` y `
-may not be
-substituted with the same setvar variable,
-</LI><LI> where whatever setvar variable is substituted for
-` x `
-may not appear in the wff expression substituted for
-` ph ` ,
-and </LI><LI> where whatever setvar variable is substituted for
-` x `
-may not appear in the class expression substituted for
-` A ` .
-</LI></OL>
-For brevity we may say more informally, <OL><LI>where
-` x `
-and
-` y `
-are distinct, </LI><LI>where
-` x `
-does not occur in
-` ph ` ,
-and </LI><LI>where
-` x `
-does not occur in
-` A ` .</LI>
+<OL>
+<LI>
+where ` x ` and ` y ` may not be substituted with the same setvar variable,
+</LI>
+<LI>
+where whatever setvar variable is substituted for ` x ` may not appear in the
+wff expression substituted for ` ph ` , and
+</LI>
+<LI>
+where whatever setvar variable is substituted for ` x ` may not appear in the
+class expression substituted for ` A ` .
+</LI>
+</OL>
+For brevity we may say more informally,
+<OL>
+<LI>
+where ` x ` and ` y ` are distinct,
+</LI>
+<LI>
+where ` x ` does not occur in ` ph ` , and
+</LI>
+<LI>
+where ` x ` does not occur in ` A ` .
+</LI>
 </OL>
 </P>
 
@@ -4549,111 +4547,139 @@ propositional calculus) are present, except for the ones listed in the
 <P><TABLE BORDER CELLSPACING=0 WIDTH="100%"
 SUMMARY="Variations of axiom system">
 
-<TR><TH>Omit axioms
+<TR>
+<TH>Omit axioms</TH>
+<TH>Discussion of resulting subsystem</TH>
+</TR>
 
-</TH><TH>Discussion of resulting subsystem</TH></TR>
-
-<TR><TD> ~ ax-c5 , ~ ax-c4 , ~ ax-c7 , ~ ax-c10 , ~ ax-c11n , ~ ax-c11 ,
-~ ax-c15 , ~ ax-c9 , ~ ax-c14 , and ~ ax-c16
-<TD>As mentioned above, these 10 omitted
-axioms can be derived from the others (see theorems ~ axc5 , ~ axc4 , ~ axc7 ,
-~ axc10 , ~ axc11 , ~ axc11n , ~ axc15 , ~ axc9 ,
-~ axc14 , ~ axc16 ).  This system
-is <A HREF="#axiomnote">metalogically complete</A> and is the one we
-ordinarily use.  It is equivalent to system S3' in Remark 9.6 of [<A
-HREF="#bibmegill">Megill</A>].
-
-<!--
-<P>Even though we reference these 10 redundant
-axioms in proofs for better granularity, each of them is proved
-from the others in the corresponding theorem immediately before
-each redundant axiom is introduced, so if desired all
-references to them can be eliminated easily.
--->
-
-</TD></TR>
-
-<TR><TD> ~ ax-5 </TD><TD>This system is logically
-complete (see comments in ~ ax5ALT ), but we lose
-the powerful metalogic afforded by the concept of "a variable not
-occurring in a wff".  It is conjectured that ~ ax-c5 , ~ ax-c15 , and ~ ax-c14
-(and possibly other otherwise redundant ones as well) cannot
-be derived from the others in this system.
-Proofs in any system omitting ~ ax-5 tend to be
-long.</TD></TR>
-
-<TR><TD>
+<TR>
+<TD>
+~ ax-c5 , ~ ax-c4 , ~ ax-c7 , ~ ax-c10 , ~ ax-c11 , ~ ax-c11n , ~ ax-c15 ,
+~ ax-c9 , ~ ax-c14 , and ~ ax-c16
+</TD>
+<TD>
+<P>
+As mentioned above, these 10 omitted axioms can be derived from the others (see
+theorems ~ axc5 , ~ axc4 , ~ axc7 , ~ axc10 , ~ axc11 , ~ axc11n , ~ axc15 ,
+~ axc9 , ~ axc14 , ~ axc16 ).  This system is
+<A HREF="#axiomnote">metalogically complete</A> and is the one we ordinarily
+use.  It is equivalent to system S3' in Remark 9.6 of
+[<A HREF="#bibmegill">Megill</A>].
+</P>
 
 <!--
-~ ax-12 , ~ ax-c15
+<P>
+Even though we reference these 10 redundant axioms in proofs for better
+granularity, each of them is proved from the others in the corresponding
+theorem immediately before each redundant axiom is introduced, so if desired
+all references to them can be eliminated easily.
+</P>
 -->
+</TD>
+</TR>
 
-Omit all predicate calculus axioms <I>except</I>
-~ ax-4 ,
-~ ax-5 ,
-~ ax-6 ,
-~ ax-7 ,
-~ ax-8 ,
-~ ax-9 , and
-~ ax-gen
+<TR>
+<TD> ~ ax-5 </TD>
+<TD>
+<P>
+This system is logically complete (see comments in ~ ax5ALT ), but we lose the
+powerful metalogic afforded by the concept of "a variable not occurring in a
+wff".  It is conjectured that ~ ax-c5 , ~ ax-c15 , and ~ ax-c14 (and possibly
+other otherwise redundant ones as well) cannot be derived from the others in
+this system.  Proofs in any system omitting ~ ax-5 tend to be long.
+</P>
+</TD>
+</TR>
 
-</TD><TD>This is Tarski's system S2 and is logically (though not
-<I>metalogically</I>) complete.  This means that
-any substitution instance of the omitted axioms that contains
-no wff metavariables and whose setvar variables are
-mutually distinct can be derived from the axioms of this
-subsystem.  However, many schemes with wff metavariables or
-bundled setvar variables cannot be derived.  In particular,
-~ ax-10 ,
-~ ax-11 ,
-~ ax-12 , and
-~ ax-13 are conjectured not to be
+<TR>
+<TD>
+<!-- ~ ax-12 , ~ ax-c15 -->
+Omit all predicate calculus axioms <I>except</I> ~ ax-4 , ~ ax-5 , ~ ax-6 ,
+~ ax-7 , ~ ax-8 , ~ ax-9 , and ~ ax-gen
+</TD>
+<TD>
+<P>
+This is Tarski's system S2 and is logically (though not <I>metalogically</I>)
+complete.  This means that any substitution instance of the omitted axioms that
+contains no wff metavariables and whose setvar variables are mutually distinct
+can be derived from the axioms of this subsystem.  However, many schemes with
+wff metavariables or bundled setvar variables cannot be derived.  In
+particular, ~ ax-10 , ~ ax-11 , ~ ax-12 , and ~ ax-13 are conjectured not to be
 derivable.
-</TD></TR>
+</P>
+</TD>
+</TR>
 
 <TR><TD> ~ ax-c11n , ~ ax-12 ,
-~ ax-c15 , ~ ax-c16 , ~ ax-5 </TD><TD> <A NAME="dvfreesystem"></A>
-<B>System with no distinct variables.</B> This system has no distinct
-variable constraints, making the concept of substitution as simple as it
-can possibly be and also significantly simplifying the algorithm for
-verifying proofs.  It is
-equivalent to system S2 in Section 4 of [<A
-HREF="#bibmegill">Megill</A>].  The primary drawback of this system is
+~ ax-c15 , ~ ax-c16 , ~ ax-5 </TD>
+<TD>
+<A NAME="dvfreesystem"></A>
+<P>
+<B>System with no distinct variables.</B>
+This system has no distinct variable constraints, making the concept of
+substitution as simple as it can possibly be and also significantly simplifying
+the algorithm for verifying proofs.  It is equivalent to system S2 in Section 4
+of [<A HREF="#bibmegill">Megill</A>].  The primary drawback of this system is
 that for it to be considered complete, we must ignore antecedents called
-"<A HREF="mmzfcnd.html#distinctors">distinctors</A>" that stand in for
-what would be distinct variable constraints (see the linked discussion).
+"<A HREF="mmzfcnd.html#distinctors">distinctors</A>" that stand in for what
+would be distinct variable constraints (see the linked discussion).
+</P>
 
 <P>
 We can optionally include ~ ax-c15 or ~ ax-12 for a somewhat more powerful
 metalogic, since these also involve no distinct variable restrictions (although
 without them we can still derive any instance of them not containing wff
 metavariables).
+</P>
 
-<P>Proofs in this system tend to
-be long.</TD></TR>
+<P>Proofs in this system tend to be long.</P>
+</TD>
+</TR>
 
-<TR><TD> ~ ax-c15 , ~ ax-c16 , ~ ax-5 </TD><TD>It
-is conjectured that ~ ax-c15 cannot be derived
-from the axioms of this subsystem.  See Item 9b on the <A
-HREF="../award2003.html#9b">Workshop Miscellany</A> page.</TD></TR>
+<TR>
+<TD> ~ ax-c15 , ~ ax-c16 , ~ ax-5 </TD>
+<TD>
+<P>
+It is conjectured that ~ ax-c15 cannot be derived from the axioms of this
+subsystem.  See Item 9b on the
+<A HREF="../award2003.html#9b">Workshop Miscellany</A> page.
+</P>
+</TD>
+</TR>
 
-<TR><TD> ~ ax-12 , ~ ax-c16 , ~ ax-5 </TD><TD>It
-is known that ~ ax-12 can be derived from the
-axioms of this subsystem (see theorem ~ ax12o ).</TD></TR>
+<TR>
+<TD> ~ ax-12 , ~ ax-c16 , ~ ax-5 </TD>
+<TD>
+<P>
+It is known that ~ ax-12 can be derived from the axioms of this subsystem (see
+theorem ~ ax12fromc15 ).
+</P>
+</TD>
+</TR>
 
-<TR><TD> ~ ax-c11 and ~ ax-12 </TD><TD>It is conjectured that ~ ax-c11 cannot
-be derived from the axioms of this subsystem.</TD></TR>
+<TR>
+<TD> ~ ax-c11 and ~ ax-12 </TD>
+<TD>
+<P>
+It is conjectured that ~ ax-c11 cannot be derived from the axioms of this
+subsystem.
+</P>
+</TD>
+</TR>
 
-
-<TR><TD>Omit all predicate calculus axioms <I>except</I>
-~ ax-c5 , ~ ax-4 , ~ ax-10 , ~ ax-11 , and ~ ax-gen </TD><TD>
-
-
-<A NAME="pure"></A>The subsystem <A HREF="ax-4.html">ax-1</A> through
-~ ax-11 , ~ ax-mp , and ~ ax-gen , i.e. the axioms not involving equality,
-is weaker than traditional predicate calculus without equality (i.e.
-that omits the equality axioms labeled stdpc6 and stdpc7 in the table in
-the <A HREF="#traditional">traditional predicate calculus</A> section).
+<TR>
+<TD>
+Omit all predicate calculus axioms <I>except</I> ~ ax-c5 , ~ ax-4 , ~ ax-10 ,
+~ ax-11 , and ~ ax-gen
+</TD>
+<TD>
+<A NAME="pure"></A>
+<P>
+The subsystem <A HREF="ax-4.html">ax-1</A> through ~ ax-11 , ~ ax-mp , and
+~ ax-gen , i.e. the axioms not involving equality, is weaker than traditional
+predicate calculus without equality (i.e. that omits the equality axioms
+labeled stdpc6 and stdpc7 in the table in the
+<A HREF="#traditional">traditional predicate calculus</A> section).
 The reason is that traditional predicate calculus incorporates proper
 substitution as part of its metalogic, whereas in our system proper
 substitution is accomplished directly by the logic itself through our more
@@ -4662,23 +4688,25 @@ equality are intimately tied in with each other.  This "pure" subsystem in
 effect represents the fragment of logic that remains when equality, proper
 substitution, and the concept of distinct variables are completely
 stripped out.  Interestingly, if we map "for all" to "necessity" and
-omit ~ ax-11 from the "pure" subsystem, the result
-is exactly the modal logic system known as S5 (thanks to Bob Meyer for
-pointing this out).  See also Item 12 on the <A
-HREF="../award2003.html#12">Workshop Miscellany</A> page.
+omit ~ ax-11 from the "pure" subsystem, the result is exactly the modal logic
+system known as S5 (thanks to Bob Meyer for pointing this out).  See also
+Item 12 on the <A HREF="../award2003.html#12">Workshop Miscellany</A> page.
+</P>
 
-<P>Optionally, we can replace ~ ax-4 and ~ ax-10 with ~ ax-c4 and ~ ax-c7
+<P>
+Optionally, we can replace ~ ax-4 and ~ ax-10 with ~ ax-c4 and ~ ax-c7
 (provided we replace them both) to obtain an equivalent subsystem.  Theorems
-~ ax4 , ~ ax10 , ~ axc4 , and ~ axc7 prove the equivalence.  In this subsystem,
-~ axc5c711 can replace ~ ax-c5 , ~ ax-c7 , and ~ ax-11 .
-
-</TD></TR>
-
+~ ax4fromc4 , ~ ax10fromc7 , ~ axc4 , and ~ axc7 prove the equivalence.  In
+this subsystem, ~ axc5c711 can replace ~ ax-c5 , ~ ax-c7 , and ~ ax-11 .
+</P>
+</TD>
+</TR>
 </TABLE>
 </CENTER>
 
 <P>
-<HR NOSHADE SIZE=1><A NAME="oldaxioms"></A><B>
+<HR NOSHADE SIZE=1><A NAME="oldaxioms"></A>
+<B>
 <FONT COLOR="#006633">Appendix 8:  Axiom Numbering Before December 2018</FONT>
 </B>
 &nbsp;&nbsp;&nbsp;
@@ -4736,7 +4764,7 @@ SUMMARY="Cross reference between orginal and new predicate calculus axioms">
 </TR>
 
 <TR ALIGN=LEFT>
-<TD> ~ ax-4 </TD><TD> ax-5&#8203; </TD><TD> ~ ax4 </TD><TD> - </TD>
+<TD> ~ ax-4 </TD><TD> ax-5&#8203; </TD><TD> ~ ax4fromc4 </TD><TD> - </TD>
 <TD> ` |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) ` </TD>
 <TD> Quantified Implication </TD></TR>
 
@@ -4766,7 +4794,7 @@ SUMMARY="Cross reference between orginal and new predicate calculus axioms">
 <TD> Right Equality for Binary Predicate </TD></TR>
 
 <TR ALIGN=LEFT>
-<TD> ~ ax-10 </TD><TD> ax-6&#8203; </TD><TD> ~ ax10 </TD><TD> - </TD>
+<TD> ~ ax-10 </TD><TD> ax-6&#8203; </TD><TD> ~ ax10fromc7 </TD><TD> - </TD>
 <TD> ` |- ( -. A. x ph -> A. x -. A. x ph ) ` </TD>
 <TD> Quantified Negation </TD></TR>
 
@@ -4776,7 +4804,7 @@ SUMMARY="Cross reference between orginal and new predicate calculus axioms">
 <TD> Quantifier Commutation </TD></TR>
 
 <TR ALIGN=LEFT>
-<TD> ~ ax-12 </TD><TD> ax-11&#8203; </TD><TD> ~ ax12o </TD><TD> - </TD>
+<TD> ~ ax-12 </TD><TD> ax-11&#8203; </TD><TD> ~ ax12fromc15 </TD><TD> - </TD>
 <TD> ` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD>
 <TD> Substitution </TD></TR>
 
@@ -4849,7 +4877,8 @@ distinct </TD>
 
 <P>
 <HR NOSHADE SIZE=1><A NAME="read"></A>
-<B><FONT COLOR="#006633">Reading Suggestions</FONT></B>&nbsp;&nbsp;&nbsp;
+<B><FONT COLOR="#006633">Reading Suggestions</FONT></B>
+&nbsp;&nbsp;&nbsp;
 Logic and set theory provide a foundation for all of mathematics.  One possible
 way to start to learn about them is to use the Metamath Proof Explorer in
 conjunction with one or more textbooks listed in the Bibliography of the next
@@ -4899,260 +4928,301 @@ am not specifically endorsing them but just indicating which books and papers I
 consulted frequently while building the database.
 </P>
 
-<MENU>
-<LI> Axioms of propositional calculus&mdash;Margaris.</LI>
-
+<UL>
+<LI> Axioms of propositional calculus&mdash;Margaris.
+</LI>
 <LI>
-Theorems of propositional calculus&mdash;Whitehead and Russell.</LI>
-
-<LI> Axioms of predicate calculus&mdash;Megill (System S3' in the article
-referenced).</LI>
-
+Theorems of propositional calculus&mdash;Whitehead and Russell.
+</LI>
 <LI>
-Theorems of pure predicate calculus&mdash;Margaris.</LI>
-
+Axioms of predicate calculus&mdash;Megill (System S3' in the article
+referenced).
+</LI>
 <LI>
-Theorems of equality and substitution&mdash;Monk2, Tarski, Megill.</LI>
-
+Theorems of pure predicate calculus&mdash;Margaris.
+</LI>
 <LI>
-Axioms of set theory&mdash;Bell and Machover.</LI>
-
+Theorems of equality and substitution&mdash;Monk2, Tarski, Megill.
+</LI>
+<LI>
+Axioms of set theory&mdash;Bell and Machover.
+</LI>
 <LI>
 Virtual classes in set theory (our class builder notation and
-our purple class variables)&mdash;Quine.</LI>
-
+our purple class variables)&mdash;Quine.
+</LI>
 <LI> Development of set theory (including most of the notation we
 use)&mdash;Takeuti and Zaring.
-
+</LI>
 <LI>
-Construction of real and complex numbers&mdash;Gleason</LI>
-
+Construction of real and complex numbers&mdash;Gleason.
+</LI>
 <LI>
-Elementary theorems about real numbers&mdash;Apostol</LI>
-</MENU>
+Elementary theorems about real numbers&mdash;Apostol.
+</LI>
+</UL>
 
-<HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
-COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
+<HR NOSHADE SIZE=1><A NAME="bib"></A>
+<B><FONT COLOR="#006633">Bibliography</FONT></B>
+&nbsp;&nbsp;&nbsp;
 
-This is the complete list of books and articles that are <A
-HREF="mmbiblio.html">cross referenced</A> in the Metamath Proof Explorer
-database.  The numbers in brackets are the Library of Congress
-classifications to make them easier to find on your university library
-shelves.  These may differ slightly for resources assigned by the
-libary itself, and the ones we show are used by the MIT libraries.
+This is the complete list of books and articles that are
+<A HREF="mmbiblio.html">cross referenced</A> in the Metamath Proof Explorer
+database.  The numbers in brackets are the Library of Congress classifications
+to make them easier to find on your university library shelves.  These may
+differ slightly for resources assigned by the libary itself, and the ones we
+show are used by the MIT libraries.
 
 <OL>
-
-<LI><A NAME="Adamek"></A> [Adamek] Ji&#345;&iacute; Ad&aacute;mek, Horst
+<LI>
+<A NAME="Adamek"></A> [Adamek] Ji&#345;&iacute; Ad&aacute;mek, Horst
 Herrlich, George E. Strecker, <I>Abstract and Concrete Categories:  The Joy of
 Cats</I>, Dover Publications, Mineola, New York (2004); available at <A
 HREF="http://katmat.math.uni-bremen.de/acc">
-http://katmat.math.uni-bremen.de/acc</A> (retrieved 2-Jan-2017).  </LI>
-
-<LI><A NAME="AhoHopUll"></A> [AhoHopUll] Alfred V. Aho, John E. Hopcroft and
+http://katmat.math.uni-bremen.de/acc</A> (retrieved 2-Jan-2017).
+</LI>
+<LI>
+<A NAME="AhoHopUll"></A> [AhoHopUll] Alfred V. Aho, John E. Hopcroft and
 Jeffrey D. Ullman, <I>The Design and Analysis of Computer Algorithms</I>,
-Addison-Wesley, Reading, Massachusetts (1974) [QA76.6 .A36]. </LI>
-
-<LI><A NAME="AitkenIBG"></A> [AitkenIBG] Aitken, Wayne, "Incidence Betweenness
-Geometry," Handout (2008); available at <A
-HREF="http://public.csusm.edu/aitken_html/m410/betweenness.08.pdf"
+Addison-Wesley, Reading, Massachusetts (1974) [QA76.6 .A36].
+</LI>
+<LI>
+<A NAME="AitkenIBG"></A> [AitkenIBG] Aitken, Wayne, "Incidence Betweenness
+Geometry," Handout (2008); available at
+<A HREF="http://public.csusm.edu/aitken_html/m410/betweenness.08.pdf"
 >http://public.csusm.edu/aitken_html/m410/betweenness.08.pdf</A>
 (retrieved 6 Apr 2016). [The series of handouts is available at
 <A HREF="http://public.csusm.edu/aitken_html/m410/"
->http://public.csusm.edu/aitken_html/m410/</A> (retrieved 6 Apr 2016).]</LI>
-
-<LI><A NAME="AitkenIBCG"></A> [AitkenIBCG] Aitken, Wayne, "IBC
+>http://public.csusm.edu/aitken_html/m410/</A> (retrieved 6 Apr 2016).]
+</LI>
+<LI>
+<A NAME="AitkenIBCG"></A> [AitkenIBCG] Aitken, Wayne, "IBC
 Geometry," Handout (2008); available at <A
 HREF="http://public.csusm.edu/aitken_html/m410/congruence.08.pdf"
 >http://public.csusm.edu/aitken_html/m410/congruence.08.pdf</A>
-(retrieved 6 Apr 2016).</LI>
-
-<LI><A NAME="AitkenNG"></A> [AitkenNG] Aitken, Wayne, "Neutral
+(retrieved 6 Apr 2016).
+</LI>
+<LI>
+<A NAME="AitkenNG"></A> [AitkenNG] Aitken, Wayne, "Neutral
 Geometry," Handout (2010); available at <A
 HREF="http://public.csusm.edu/aitken_html/m410/neutral.10.pdf"
 >http://public.csusm.edu/aitken_html/m410/neutral.10.pdf</A>
-(retrieved 6 Apr 2016).</LI>
-
-<LI><A NAME="AitkenEG"></A> [AitkenEG] Aitken, Wayne, "Euclidean
+(retrieved 6 Apr 2016).
+</LI>
+<LI>
+<A NAME="AitkenEG"></A> [AitkenEG] Aitken, Wayne, "Euclidean
 Geometry," Handout (2010); available at <A
 HREF="http://public.csusm.edu/aitken_html/m410/euclidean.10.pdf"
 >http://public.csusm.edu/aitken_html/m410/euclidean.10.pdf</A>
-(retrieved 6 Apr 2016).</LI>
-
-<LI><A NAME="AitkenQ"></A> [AitkenQ] Aitken, Wayne, "Quadrilaterals,"
+(retrieved 6 Apr 2016).
+</LI>
+<LI>
+<A NAME="AitkenQ"></A> [AitkenQ] Aitken, Wayne, "Quadrilaterals,"
 Handout (2008); available at <A
 HREF="http://public.csusm.edu/aitken_html/m410/quad.08.pdf"
 >http://public.csusm.edu/aitken_html/m410/quad.08.pdf</A>
-(retrieved 6 Apr 2016).</LI>
-
-<LI><A NAME="AitkenLDZT"></A> [AitkenLDZT] Aitken, Wayne, "Legendre's Defect
+(retrieved 6 Apr 2016).
+</LI>
+<LI>
+<A NAME="AitkenLDZT"></A> [AitkenLDZT] Aitken, Wayne, "Legendre's Defect
 Zero Theorem,"  Handout (2008); available at <A
 HREF="http://public.csusm.edu/aitken_html/m410/defectzero.08.pdf"
 >http://public.csusm.edu/aitken_html/m410/defectzero.08.pdf</A>
-(retrieved 6 Apr 2016).</LI>
-
-<LI><A NAME="AitkenEHC"></A> [AitkenEHC] Aitken, Wayne, "Euclidean
+(retrieved 6 Apr 2016).
+</LI>
+<LI>
+<A NAME="AitkenEHC"></A> [AitkenEHC] Aitken, Wayne, "Euclidean
 and Hyperbolic Conditions," Handout (2008); available at <A
 HREF="http://public.csusm.edu/aitken_html/m410/conditions.08.pdf"
 >http://public.csusm.edu/aitken_html/m410/conditions.08.pdf</A>
-(retrieved 6 Apr 2016).</LI>
-
-<LI><A NAME="AitkenTHG"></A> [AitkenTHG] Aitken, Wayne, "Topics
+(retrieved 6 Apr 2016).
+</LI>
+<LI>
+<A NAME="AitkenTHG"></A> [AitkenTHG] Aitken, Wayne, "Topics
 in Hyperbolic Geometry," Handout (2008); available at <A
 HREF="http://public.csusm.edu/aitken_html/m410/hyperbolic.08.pdf"
 >http://public.csusm.edu/aitken_html/m410/hyperbolic.08.pdf</A>
-(retrieved 6 Apr 2016).</LI>
-
-<LI><A NAME="AkhiezerGlazman"></A> [AkhiezerGlazman] Akhiezer, N. I.,
+(retrieved 6 Apr 2016).
+</LI>
+<LI>
+<A NAME="AkhiezerGlazman"></A> [AkhiezerGlazman] Akhiezer, N. I.,
 and I. M. Glazman, <I>Theory of Linear Operators in Hilbert Space</I>,
 Vol.  I, Dover Publications, Mineola, New York (1993) [QA322.4.A3813
-1993].  </LI>
-
-<LI><A NAME="Apostol"></A> [Apostol] Apostol, Tom M.,
+1993].
+</LI>
+<LI>
+<A NAME="Apostol"></A> [Apostol] Apostol, Tom M.,
 <I>Calculus,</I> vol. 1, 2nd ed.,
-John Wiley &amp; Sons Inc. (1967) [QA300.A645 1967].</LI>
-
-<LI><A NAME="Baer"></A> [Baer] Baer, Reinhold, <I>Linear Algebra and
+John Wiley &amp; Sons Inc. (1967) [QA300.A645 1967].
+</LI>
+<LI>
+<A NAME="Baer"></A> [Baer] Baer, Reinhold, <I>Linear Algebra and
 Projective Geometry,</I> Academic Press, New York (1952)
-[QA471.B34].</LI>
-
-<LI><A NAME="BellMachover"></A> [BellMachover] Bell, J. L., and M.
+[QA471.B34].
+</LI>
+<LI>
+<A NAME="BellMachover"></A> [BellMachover] Bell, J. L., and M.
 Machover, <I>A Course in Mathematical Logic,</I> North-Holland,
-Amsterdam (1977) [QA9.B3953].</LI>
-
-<LI><A NAME="Beeson2016"></A> [Beeson2016] Beeson, Michael, and
+Amsterdam (1977) [QA9.B3953].
+</LI>
+<LI>
+<A NAME="Beeson2016"></A> [Beeson2016] Beeson, Michael, and
 Larry Wos, "Finding Proofs in Tarskian Geometry",
 2016-06-22, <I>Journal of Automated Reasoning</I>,
 Volume 58, DOI 10.1007/s10817-016-9392-2,
 <A HREF="https://www.researchgate.net/publication/304350412_Finding_Proofs_in_Tarskian_Geometry">
 ResearchGate</A> or
 <A HREF="http://www.michaelbeeson.com/research/papers/Tarski-JAR.pdf">
-Prepublication</A>.  </LI>
-
-<LI><A NAME="BeltramettiCassinelli1"></A> [BeltramettiCassinelli1] Enrico
+Prepublication</A>.
+</LI>
+<LI>
+<A NAME="BeltramettiCassinelli1"></A> [BeltramettiCassinelli1] Enrico
 G. Beltrametti and Gianni Cassinelli, "Logical and Mathematical Structures
 of Quantum Mechanics," <I>La Rivista del Nuovo cimento</I> 6:321-404 (1976)
- [QC.R625]. </LI>
-
-<LI><A NAME="BeltramettiCassinelli"></A> [BeltramettiCassinelli] Enrico
+[QC.R625].
+</LI>
+<LI>
+<A NAME="BeltramettiCassinelli"></A> [BeltramettiCassinelli] Enrico
 G. Beltrametti and Gianni Cassinelli, <I>The Logic of Quantum
 Mechanics</I> (Encyclopedia of Mathematics and Its Applications; v. 15,
 Mathematics of Physics), Addison-Wesley, Reading, Massachusetts (1981)
-[QC174.12.B45]. </LI>
-
-<LI><A NAME="Beran"></A> [Beran] Ladislav Beran, <I>Orthomodular
+[QC174.12.B45].
+</LI>
+<LI>
+<A NAME="Beran"></A> [Beran] Ladislav Beran, <I>Orthomodular
 Lattices; Algebraic Approach</I>, D. Reidel, Dordrecht (1985)
-[QA171.5.B4].  </LI>
-
-<LI><A NAME="Berge"></A> [Berge] Berge, Claude <I>Hypergraphs</I>,
-Elsevier Science B.V., Amsterdam (1989) [QA166.23.B4813 1989]</LI>
-
-<LI><A NAME="Bobzien"></A> [Bobzien] Bobzien, Susanne,
-"Stoic Logic",
+[QA171.5.B4].
+</LI>
+<LI>
+<A NAME="Berge"></A> [Berge] Berge, Claude <I>Hypergraphs</I>,
+Elsevier Science B.V., Amsterdam (1989) [QA166.23.B4813 1989]
+</LI>
+<LI>
+<A NAME="Bobzien"></A> [Bobzien] Bobzien, Susanne, "Stoic Logic",
 <I>The Cambridge Companion to Stoic Philosophy</I>,
 Brad Inwood (ed.), Cambridge University Press (2003-2006),
 <A HREF="https://philpapers.org/rec/BOBSL">
 https://philpapers.org/rec/BOBSL</A>.
-
-<LI><A NAME="Bogachev"></A> [Bogachev] Bogachev, V.I., <I>Measure Theory,
+</LI>
+<LI>
+<A NAME="Bogachev"></A> [Bogachev] Bogachev, V.I., <I>Measure Theory,
 Volume I</I> Springer-Verlag, Berlin, New York, (2007)
-[QC20.7.M34.B64 2007].</LI>
-
-<LI><A NAME="Bollobas"></A> [Bollobas] B&eacute;la Bollob&aacute;s, <I>Modern
+[QC20.7.M34.B64 2007].
+</LI>
+<LI>
+<A NAME="Bollobas"></A> [Bollobas] B&eacute;la Bollob&aacute;s, <I>Modern
 Graph Theory</I>, Graduate Texts in Mathematics, Springer Science+Media New
 York (1998)
-[QA166.B663].  </LI>
-
-<LI><A NAME="BourbakiEns"></A> [BourbakiEns] Bourbaki, Nicolas,
+[QA166.B663].
+</LI>
+<LI>
+<A NAME="BourbakiEns"></A> [BourbakiEns] Bourbaki, Nicolas,
 <I>Th&eacute;orie des ensembles,</I> Springer-Verlag,
 Berlin Heidelberg (2007); available in English (for purchase) at
 <A HREF="http://www.springer.com/us/book/9783540225256">
 http://www.springer.com/us/book/9783540225256</A> (retrieved
-15-Aug-2016). Page references in set.mm are for the French edition.</LI>
-
-<LI><A NAME="BourbakiAlg1"></A> [BourbakiAlg1] Bourbaki, Nicolas,
+15-Aug-2016). Page references in set.mm are for the French edition.
+</LI>
+<LI>
+<A NAME="BourbakiAlg1"></A> [BourbakiAlg1] Bourbaki, Nicolas,
 <I>Alg&egrave;bre, Chapitres 1 &agrave; 3,</I> Springer-Verlag,
 Berlin Heidelberg (2007); available in English (for purchase) at
 <A HREF="http://www.springer.com/us/book/9783540642435">
 /http://www.springer.com/us/book/9783540642435</A> (retrieved
-15-Aug-2016). Page references in set.mm are for the French edition.</LI>
-
-<LI><A NAME="BourbakiTop1"></A> [BourbakiTop1] Bourbaki, Nicolas, <I>Topologie
+15-Aug-2016). Page references in set.mm are for the French edition.
+</LI>
+<LI>
+<A NAME="BourbakiTop1"></A> [BourbakiTop1] Bourbaki, Nicolas, <I>Topologie
 g&eacute;n&eacute;rale, Chapitres 1 &agrave; 4,</I> Springer-Verlag,
 Berlin Heidelberg (2007); available in English (for purchase) at
 <A HREF="http://www.springer.com/us/book/9783540642411">
 http://www.springer.com/us/book/9783540642411</A> (retrieved
-15-Aug-2016). Page references in set.mm are for the French edition.</LI>
-
-<LI><A NAME="BourbakiTop2"></A> [BourbakiTop2] Bourbaki, Nicolas, <I>Topologie
+15-Aug-2016). Page references in set.mm are for the French edition.
+</LI>
+<LI>
+<A NAME="BourbakiTop2"></A> [BourbakiTop2] Bourbaki, Nicolas, <I>Topologie
 g&eacute;n&eacute;rale, Chapitres 5 &agrave; 10,</I> Springer-Verlag,
 Berlin Heidelberg (2007); available in English (for purchase) at
 <A HREF="http://www.springer.com/us/book/9783540645634">
 http://www.springer.com/us/book/9783540645634</A> (retrieved
-15-Aug-2016). Page references in set.mm are for the French edition.</LI>
-
-<LI><A NAME="BourbakiFVR"></A> [BourbakiFVR] Bourbaki, Nicolas, <I>Fonctions
+15-Aug-2016). Page references in set.mm are for the French edition.
+</LI>
+<LI>
+<A NAME="BourbakiFVR"></A> [BourbakiFVR] Bourbaki, Nicolas, <I>Fonctions
 d'une variable r&eacute;elle,</I> Springer-Verlag,
 Berlin Heidelberg (2007); available in English (for purchase) at
 <A HREF="http://www.springer.com/us/book/9783540653400">
 http://www.springer.com/us/book/9783540653400</A> (retrieved
-15-Aug-2016). Page references in set.mm are for the French edition.</LI>
-
-<LI><A NAME="BrosowskiDeutsh"></A> [BrosowskiDeutsh] Bruno Brosowsky and
+15-Aug-2016). Page references in set.mm are for the French edition.
+</LI>
+<LI>
+<A NAME="BrosowskiDeutsh"></A> [BrosowskiDeutsh] Bruno Brosowsky and
 Frank Deutsh, "An elementary proof of the Stone-Weierstrass theorem",
 Proc.  Amer.  Math.  Soc. 81 (1981), 89-92; available at <A
 HREF="http://www.ams.org/journals/proc/1981-081-01/S0002-9939-1981-0589143-8/">
 http://www.ams.org/journals/proc/1981-081-01/S0002-9939-1981-0589143-8/</A>
-(retrieved 24-Apr-2017).  </LI>
-
-<LI><A NAME="Bruck"></A> [Bruck] Bruck, Richard Hubert <I>A survey of binary
-systems</I>, 3rd ed., Springer-Verlag Berlin Heidelberg New York (1971)</LI>
-
-<LI><A NAME="ChoquetDD"></A> [ChoquetDD] Choquet-Bruhat, Yvonne and Cecile
+(retrieved 24-Apr-2017).
+</LI>
+<LI>
+<A NAME="Bruck"></A> [Bruck] Bruck, Richard Hubert <I>A survey of binary
+systems</I>, 3rd ed., Springer-Verlag Berlin Heidelberg New York (1971)
+</LI>
+<LI>
+<A NAME="ChoquetDD"></A> [ChoquetDD] Choquet-Bruhat, Yvonne and Cecile
 DeWitt-Morette, with Margaret Dillard-Bleick, <I>Analysis, Manifolds and
 Physics,</I> Elsevier Science B.V., Amsterdam (1982) [QC20.7.A5C48
-1981].</LI>
-
-<LI><A NAME="Church"></A> [Church] Church, Alonzo, <I>Introduction to
-Mathematical Logic,</I> Princeton University Press, 1956.</LI>
-
-<LI><A NAME="Clemente"></A> [Clemente] Clemente Laboreo, Daniel
+1981].
+</LI>
+<LI>
+<A NAME="Church"></A> [Church] Church, Alonzo, <I>Introduction to
+Mathematical Logic,</I> Princeton University Press, 1956.
+</LI>
+<LI>
+<A NAME="Clemente"></A> [Clemente] Clemente Laboreo, Daniel
 <I>Introduction to natural deduction</I> (2014); available
 at <A HREF="http://www.danielclemente.com/logica/dn.en.pdf">
 http://www.danielclemente.com/logica/dn.en.pdf</A> (PDF) and
 <A HREF="http://www.danielclemente.com/logica/dn.en.html">
 http://www.danielclemente.com/logica/dn.en.html</A> (HTML)
-(retrieved 10 Feb 2017).</LI>
-
-<LI><A NAME="Cohen"></A> [Cohen] Cohen, David, <I>Precalculus With Unit-Circle
+(retrieved 10 Feb 2017).
+</LI>
+<LI>
+<A NAME="Cohen"></A> [Cohen] Cohen, David, <I>Precalculus With Unit-Circle
 Trigonometry,</I> Brooks-Cole, Pacific Grove, CA (1988)
-[QA331.3.C64].</LI>
-
-<LI><A NAME="Cohen4"></A> [Cohen4] Cohen, David, <I>Precalculus With Unit-Circle
+[QA331.3.C64].
+</LI>
+<LI>
+<A NAME="Cohen4"></A> [Cohen4] Cohen, David, <I>Precalculus With Unit-Circle
 Trigonometry</I>, 4th ed., Brooks-Cole, Pacific Grove, CA (2006)
-[QA331.3.C64].</LI>
-
-<LI><A NAME="Cohn"></A> [Cohn] Cohn, Paul Moritz, <I>Universal Algebra,</I>
-D. Reidel, Dordrecht (1981) [QA251.C55].</LI>
-
-<LI><A NAME="CohnMT"></A> [CohnMT] Cohn, Donald L., <I>Measure Theory,</I>
- Birkh&auml;user, New York (2013).</LI>
-
-<LI><A NAME="Connell"></A> [Connell] Edwin H. Connell, <I>Elements of Abstract
+[QA331.3.C64].
+</LI>
+<LI>
+<A NAME="Cohn"></A> [Cohn] Cohn, Paul Moritz, <I>Universal Algebra,</I>
+D. Reidel, Dordrecht (1981) [QA251.C55].
+</LI>
+<LI>
+<A NAME="CohnMT"></A> [CohnMT] Cohn, Donald L., <I>Measure Theory,</I>
+ Birkh&auml;user, New York (2013).
+</LI>
+<LI>
+<A NAME="Connell"></A> [Connell] Edwin H. Connell, <I>Elements of Abstract
 and Linear Algebra,</I> Orange Grove Texts Plus (October 21, 2009); ISBN
 978-1616100032; available at <A HREF="http://www.math.miami.edu/~~ec/book">
-http://www.math.miami.edu/~~ec/book</A> (retrieved 10 Dec 2019).</LI>
-
-<LI><A NAME="CormenLeisersonRivest"></A> [CormenLeisersonRivest] Cormen,
+http://www.math.miami.edu/~~ec/book</A> (retrieved 10 Dec 2019).
+</LI>
+<LI>
+<A NAME="CormenLeisersonRivest"></A> [CormenLeisersonRivest] Cormen,
 Thomas, Charles E. Leiserson, and Ronald L. Rivest, <I>Introduction to
 Algorithms,</I> The MIT Press, Cambridge, Massachusetts (1989)
-[QA76.6.C662].</LI>
-
-<LI><A NAME="Crawley"></A> [Crawley] Crawley, Peter and Robert P.
+[QA76.6.C662].
+</LI>
+<LI>
+<A NAME="Crawley"></A> [Crawley] Crawley, Peter and Robert P.
 Dilworth, <I>Algebraic Theory of Lattices,</I> Prentice-Hall, Englewood
-Cliffs, New Jersey (1973) [QA171.5.C7].</LI>
-
-<LI><A NAME="Diestel"></A> [Diestel] Diestel, Reinhard, <I>Graph Theory,
+Cliffs, New Jersey (1973) [QA171.5.C7].
+</LI>
+<LI>
+<A NAME="Diestel"></A> [Diestel] Diestel, Reinhard, <I>Graph Theory,
 5th Electronic Edition,</I> Springer-Verlag, Heidelberg (2016)
 [QA166.D51413].
 <!-- old url
@@ -5160,282 +5230,331 @@ URL: <A HREF="http://www.math.uni-hamburg.de/home/diestel/books/graph.theory/">
 http://www.math.uni-hamburg.de/home/diestel/books/graph.theory/</A>
 -->
 URL: <A HREF="http://diestel-graph-theory.com/index.html">
-http://diestel-graph-theory.com/index.html</A></LI>
-
-<LI><A NAME="Eisenberg"></A> [Eisenberg] Eisenberg, Murray,
+http://diestel-graph-theory.com/index.html</A>
+</LI>
+<LI>
+<A NAME="Eisenberg"></A> [Eisenberg] Eisenberg, Murray,
 <I>Axiomatic Theory of Sets and Classes,</I>
 Holt, Rinehart and Winston, Inc., New York (1971)
-[QA248.E36].</LI>
-
-<LI><A NAME="Enderton"></A> [Enderton] Enderton, Herbert B., <I>Elements of Set
+[QA248.E36].
+</LI>
+<LI>
+<A NAME="Enderton"></A> [Enderton] Enderton, Herbert B., <I>Elements of Set
 Theory,</I> Academic Press, Inc., San Diego, California (1977)
-[QA248.E5].</LI>
-
-<LI><A NAME="Euclid1"></A> [Euclid1] Euclid, <I>The Thirteen Books of
+[QA248.E5].
+</LI>
+<LI>
+<A NAME="Euclid1"></A> [Euclid1] Euclid, <I>The Thirteen Books of
 Euclid's Elements,</I> Vol. I:  Introduction and books I&mdash;II,
 translated by Thomas L. Heath, Cambridge University Press, Cambridge
-(1908); available at <A
-HREF="https://archive.org/details/thirteenbookseu02heibgoog">
+(1908); available at
+<A HREF="https://archive.org/details/thirteenbookseu02heibgoog">
 https://archive.org/details/thirteenbookseu03heibgoog</A> (retrieved 9
-Apr 2016).  See also David Joyce's web pages at <A
-HREF="http://aleph0.clarku.edu/~~djoyce/java/elements/">
+Apr 2016).  See also David Joyce's web pages at
+<A HREF="http://aleph0.clarku.edu/~~djoyce/java/elements/">
 http://aleph0.clarku.edu/~~djoyce/java/elements/</A> for interactive Java
-applets and detailed expositions.</LI>
-
-<LI><A NAME="Euclid2"></A> [Euclid2] Euclid, <I>The Thirteen Books of
+applets and detailed expositions.
+</LI>
+<LI>
+<A NAME="Euclid2"></A> [Euclid2] Euclid, <I>The Thirteen Books of
 Euclid's Elements,</I> Vol. II:  Books III&mdash;IX, translated by
 Thomas L. Heath, Cambridge University Press, Cambridge (1908); available
 at <A HREF="https://archive.org/details/thirteenbookseu00heibgoog">
 https://archive.org/details/thirteenbookseu03heibgoog</A> (retrieved 9
-Apr 2016).</LI>
-
-<LI><A NAME="Euclid3"></A> [Euclid3] Euclid, <I>The Thirteen Books of
+Apr 2016).
+</LI>
+<LI>
+<A NAME="Euclid3"></A> [Euclid3] Euclid, <I>The Thirteen Books of
 Euclid's Elements,</I> Vol. III:  Books X&mdash;XIII and appendix,
 translated by Thomas L. Heath, Cambridge University Press, Cambridge
-(1908); available at <A
-HREF="https://archive.org/details/thirteenbookseu03heibgoog">
+(1908); available at
+<A HREF="https://archive.org/details/thirteenbookseu03heibgoog">
 https://archive.org/details/thirteenbookseu03heibgoog</A> (retrieved 9
-Apr 2016).</LI>
-
-<LI><A NAME="FaureFrolicher"></A> [FaureFrolicher] Faure, Claude-Alain
+Apr 2016).
+</LI>
+<LI>
+<A NAME="FaureFrolicher"></A> [FaureFrolicher] Faure, Claude-Alain
 and Fr&ouml;licher, Alfred, <I>Modern Projective Geometry,</I>
-Springer, Dordrecht (2000) [QA471.F33 2000].</LI>
-
-<LI><A NAME="Frege1879"></A> [Frege1879] Frege, Gottlob, <I>Begriffsschrift</I>
+Springer, Dordrecht (2000) [QA471.F33 2000].
+</LI>
+<LI>
+<A NAME="Frege1879"></A> [Frege1879] Frege, Gottlob, <I>Begriffsschrift</I>
 (German for "concept-script"),
 <A HREF="https://gallica.bnf.fr/ark:/12148/bpt6k65658c">
 https://gallica.bnf.fr/ark:/12148/bpt6k65658c</A>.
-
-<LI><A NAME="Fremlin1"></A> [Fremlin1] Fremlin, D. H., <I>Measure
+</LI>
+<LI>
+<A NAME="Fremlin1"></A> [Fremlin1] Fremlin, D. H., <I>Measure
 Theory, Vol. 1:  The Irreducible Minimum</I>, 2nd ed., Lulu Press,
-Morrisville, North Carolina (2011) [QA312.F72]; available at <A
-HREF="https://wiki.math.ntnu.no/_media/tma4225/2011/fremlin-mt1.pdf"
+Morrisville, North Carolina (2011) [QA312.F72]; available at
+<A HREF="https://wiki.math.ntnu.no/_media/tma4225/2011/fremlin-mt1.pdf"
 >https://wiki.math.ntnu.no/_media/tma4225/2011/fremlin-mt1.pdf</A>
-(retrieved 14 Apr 2015).  </LI>
-
-<LI><A NAME="Fremlin5"></A> [Fremlin5] Fremlin, D. H., <I>Measure
+(retrieved 14 Apr 2015).
+</LI>
+<LI>
+<A NAME="Fremlin5"></A> [Fremlin5] Fremlin, D. H., <I>Measure
 Theory, Vol. 5:  Set-theoretic Measure Theory</I>  Lulu Press,
 Morrisville, North Carolina (2008)  [QA312.F72]; available
 at <A HREF="https://www.essex.ac.uk/maths/people/fremlin/mt.htm"
 >https://www.essex.ac.uk/maths/people/fremlin/mt.htm</A> (retrieved 14
-Apr 2015).  </LI>
-
-<LI><A NAME="FreydScedrov"></A> [FreydScedrov] Freyd, Peter J. and Andre
+Apr 2015).
+</LI>
+<LI>
+<A NAME="FreydScedrov"></A> [FreydScedrov] Freyd, Peter J. and Andre
 Scedrov, <I>Categories, Allegories,</I> Elsevier Science Publishers
-B.V., Amsterdam (1990) [QA169.F73 1990].</LI>
-
-<LI><A NAME="Gleason"></A> [Gleason] Gleason, Andrew M., <I>Fundamentals of
+B.V., Amsterdam (1990) [QA169.F73 1990].
+</LI>
+<LI>
+<A NAME="Gleason"></A> [Gleason] Gleason, Andrew M., <I>Fundamentals of
 Abstract Analysis,</I> Jones and Bartlett Publishers, Boston (1991)
-[QA300.G554].</LI>
-
-<LI><A NAME="Golan"></A> [Golan] Golan, Jonathan S., <I>Semirings and their
+[QA300.G554].
+</LI>
+<LI>
+<A NAME="Golan"></A> [Golan] Golan, Jonathan S., <I>Semirings and their
 Applications,</I> Kluwer Academic Publishers, Dordrecht (1999)
-[QA251.5 .G642 1999].</LI>
-
-<LI><A NAME="Gratzer"></A> [Gratzer] Gr&auml;tzer, George, <I>Universal
+[QA251.5 .G642 1999].
+</LI>
+<LI>
+<A NAME="Gratzer"></A> [Gratzer] Gr&auml;tzer, George, <I>Universal
 Algebra,</I> 2nd ed. with updates, Springer, New York (2008)
-[QA251.G68 2008].</LI>
-
-<LI><A NAME="GramKnuthPat"></A> [GramKnuthPat] Gram, Ronald L., Knuth, Donald
+[QA251.G68 2008].
+</LI>
+<LI>
+<A NAME="GramKnuthPat"></A> [GramKnuthPat] Gram, Ronald L., Knuth, Donald
 E., and Patashnik, Oren, <I>Concrete Mathematics,</I> 2nd Ed., Addison-Wesley
-Publishing Company, Reading, MA (1994) [QA39.2.G733].</LI>
-
-<LI><A NAME="Hall"></A> [Hall] Hall, Marshall Jr., <I>The Theory of Groups,</I>
-The Macmillan Company, New York (1959) [QA171.H27 2018].</LI>
-
-<LI><A NAME="Hamilton"></A> [Hamilton] Hamilton, A. G., <I>Logic for
+Publishing Company, Reading, MA (1994) [QA39.2.G733].
+</LI>
+<LI>
+<A NAME="Hall"></A> [Hall] Hall, Marshall Jr., <I>The Theory of Groups,</I>
+The Macmillan Company, New York (1959) [QA171.H27 2018].
+</LI>
+<LI>
+<A NAME="Hamilton"></A> [Hamilton] Hamilton, A. G., <I>Logic for
 Mathematicians,</I> Cambridge University Press, Cambridge, revised
-edition (1988) [QA9.H298 1988].</LI>
-
-<LI><A NAME="Hatcher"></A> [Hatcher] Hatcher, Allen, <I>Algebraic
+edition (1988) [QA9.H298 1988].
+</LI>
+<LI>
+<A NAME="Hatcher"></A> [Hatcher] Hatcher, Allen, <I>Algebraic
 Topology,</I> Cambridge University Press, Cambridge (2002)
 [QA612.H42 2002];
 available at
 <A HREF="http://www.math.cornell.edu/~~hatcher/AT/ATpage.html">
 http://www.math.cornell.edu/~~hatcher/AT/ATpage.html</A>
-(retrieved 11 Nov 2014).</LI>
-
-<LI><A NAME="Hefferon"></A> [Hefferon] Hefferon, Jim, <I>Linear Algebra</I>,
+(retrieved 11 Nov 2014).
+</LI>
+<LI>
+<A NAME="Hefferon"></A> [Hefferon] Hefferon, Jim, <I>Linear Algebra</I>,
 3rd edition, Lightning Source Inc. (2017), ISBN-13: 978-1944325039,
 available at <A HREF="http://joshua.smcvt.edu/linearalgebra">
-http://joshua.smcvt.edu/linearalgebra</A> (retrieved 26 Nov 2019).</LI>
-
-<LI><A NAME="Helfgott"></A> [Helfgott] Helfgott, Harald A.,
+http://joshua.smcvt.edu/linearalgebra</A> (retrieved 26 Nov 2019).
+</LI>
+<LI>
+<A NAME="Helfgott"></A> [Helfgott] Helfgott, Harald A.,
 <I>The ternary Goldbach conjecture is true</I> arXiv:1312.7748v2 (17-Jan-2014);
 available at <A HREF="https://arxiv.org/abs/1312.7748">
-https://arxiv.org/abs/1312.7748</A> (retrieved 2 Aug 2020).</LI>
-
-<LI><A NAME="Herstein"></A> [Herstein] Herstein, I. N., <I>Abstract
+https://arxiv.org/abs/1312.7748</A> (retrieved 2 Aug 2020).
+</LI>
+<LI>
+<A NAME="Herstein"></A> [Herstein] Herstein, I. N., <I>Abstract
 Algebra,</I> Macmillan Publishing Company, New York (1986) [QA162.H47
-1986].</LI>
-
-<LI><A NAME="Hitchcock"></A> [Hitchcock] Hitchcock, David, <I>The
+1986].
+</LI>
+<LI>
+<A NAME="Hitchcock"></A> [Hitchcock] Hitchcock, David, <I>The
 peculiarities of Stoic propositional logic</I>, McMaster University;
-available at <A
-HREF="http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf">
+available at
+<A HREF="http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf">
 http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf</A>
-(retrieved 3 Jul 2016).</LI>
-
-<LI><A NAME="Holland95"></A> [Holland95] Holland, Samuel S.,
+(retrieved 3 Jul 2016).
+</LI>
+<LI>
+<A NAME="Holland95"></A> [Holland95] Holland, Samuel S.,
 &quot;Orthomodularity in infinite dimensions; a theorem of M.
 Sol&egrave;r,&quot; <I>Bull.  Am.  Math.  Soc.</I> 32:205-234 (1995)
 [QA.A513]; available at <A HREF="http://arxiv.org/abs/math/9504224v1">
-http://arxiv.org/abs/math/9504224v1</A> (retrieved 11 Nov 2014).</LI>
-
-<LI><A NAME="Huneke"></A> [Huneke] Huneke, Craig L.,
+http://arxiv.org/abs/math/9504224v1</A> (retrieved 11 Nov 2014).
+</LI>
+<LI>
+<A NAME="Huneke"></A> [Huneke] Huneke, Craig L.,
 &quot;The Friendship Theorem&quot; <I>American Mathematical Monthly</I>
 109:192-194 (2002); available at <A
 HREF="https://www.researchgate.net/publication/268313555_The_Friendship_Theorem">
 https://www.researchgate.net/publication/268313555_The_Friendship_Theorem</A>
-(retrieved 30 Dec 2017).</LI>
-
-<LI><A NAME="Indrzejczak"></A> [Indrzejczak] Indrzejczak, Andrzej,
+(retrieved 30 Dec 2017).
+</LI>
+<LI>
+<A NAME="Indrzejczak"></A> [Indrzejczak] Indrzejczak, Andrzej,
 <I>Natural Deduction, Hybrid Systems and Modal Logic</I>,
-Trends in Logic Vol. 30, Springer (2010).</LI>
-
-<LI><A NAME="Jech"></A> [Jech] Jech, Thomas, <I>Set Theory,</I>
-Academic Press, San Diego (1978) [QA248.J42].</LI>
-
-<LI><A NAME="JonesMatijasevic"></A> [JonesMatijasevic] Jones, J. P.
+Trends in Logic Vol. 30, Springer (2010).
+</LI>
+<LI>
+<A NAME="Jech"></A> [Jech] Jech, Thomas, <I>Set Theory,</I>
+Academic Press, San Diego (1978) [QA248.J42].
+</LI>
+<LI>
+<A NAME="JonesMatijasevic"></A> [JonesMatijasevic] Jones, J. P.
 and Y. V. Matijasevi&#269; (Matiyasevich), &quot;Proof of
 Recursive Unsolvability of Hilbert's Tenth Problem,&quot; <I>American
 Mathematical Monthly,</I> 98:689-709 (1991) [QA.A5125]; available at <A
 HREF="http://www.williamstein.org/edu/Spring2003/21n/papers/hilbert10.pdf"
 >http://www.williamstein.org/edu/Spring2003/21n/papers/hilbert10.pdf</A>
-(retrieved 11 Nov 2014).</LI>
-
-<LI><A NAME="Juillerat"></A> [Juillerat] Jacob Juillerat, "Transcendental Numbers ",
+(retrieved 11 Nov 2014).
+</LI>
+<LI>
+<A NAME="Juillerat"></A> [Juillerat] Jacob Juillerat, "Transcendental Numbers ",
 Lake Forest College, Senior Thesis, April 25, 2016 ; available at <A
 HREF="https://publications.lakeforest.edu/seniortheses/62/">
 https://publications.lakeforest.edu/seniortheses/62/</A>
-(retrieved 5-Apr-2020).  </LI>
-
-<LI><A NAME="JustWeese"></A> [JustWeese] Just, Winfried, and Martin Weese,
+(retrieved 5-Apr-2020).
+</LI>
+<LI>
+<A NAME="JustWeese"></A> [JustWeese] Just, Winfried, and Martin Weese,
 <I>Discovering Modern Set Theory I:  The Basics,</I> The American
-Mathematical Society, Providence, R.I. (1995) [QA248.J87].</LI>
-
-<LI><A NAME="KalishMontague"></A> [KalishMontague] Kalish, D. and R.
+Mathematical Society, Providence, R.I. (1995) [QA248.J87].
+</LI>
+<LI>
+<A NAME="KalishMontague"></A> [KalishMontague] Kalish, D. and R.
 Montague, &quot;On Tarski's formalization of predicate logic with
 identity,&quot; <I>Archiv f&uuml;r Mathematische Logik und
 Grundlagenforschung,</I> 7:81-101 (1965) [QA.A673]; available at <A
 HREF="http://gdz.sub.uni-goettingen.de/dms/load/img/?PID=GDZPPN002043211"
 >http://gdz.sub.uni-goettingen.de/dms/load/img/?PID=GDZPPN002043211</A>
-(retrieved 29-Apr-2017).</LI>
-
-<LI><A NAME="Kalmbach"></A> [Kalmbach] Kalmbach, Gudrun <I>Orthomodular
-Lattices</I>, Academic Press, London (1983) [QA171.5.K34].  </LI>
-
-<LI><A NAME="KanamoriPincus"></A> [KanamoriPincus] Kanamori, A. and D.
+(retrieved 29-Apr-2017).
+</LI>
+<LI>
+<A NAME="Kalmbach"></A> [Kalmbach] Kalmbach, Gudrun <I>Orthomodular
+Lattices</I>, Academic Press, London (1983) [QA171.5.K34].
+</LI>
+<LI>
+<A NAME="KanamoriPincus"></A> [KanamoriPincus] Kanamori, A. and D.
 Pincus, &quot;Does GCH Imply AC Locally?&quot;, in G&aacute;bor
 Hal&aacute;sz, et al.(eds.), <I>Paul Erd&#337;s and his Mathematics,</I>
 <I>Bolyai Society Mathematical Studies</I> 11:413-426, J&aacute;nos
 Bolyai Mathematical Society, Budapest (2002) [QA1.P194 2002]; available
 at <A HREF="http://math.bu.edu/people/aki/7.pdf"
->http://math.bu.edu/people/aki/7.pdf</A> (retrieved 4 Jun 2015).</LI>
-
-<LI><A NAME="Kreyszig"></A> [Kreyszig] Kreysig, Erwin, <I>Introductory
+>http://math.bu.edu/people/aki/7.pdf</A> (retrieved 4 Jun 2015).
+</LI>
+<LI>
+<A NAME="Kreyszig"></A> [Kreyszig] Kreysig, Erwin, <I>Introductory
 Functional Analysis with Applications</I>, John Wiley &amp; Sons, New
-York (1989) [QA320.K74].  </LI>
-
-<LI><A NAME="Kulpa"></A> [Kulpa] Kulpa, Wladislaw, "The Poincar&eacute;-
+York (1989) [QA320.K74].
+</LI>
+<LI>
+<A NAME="Kulpa"></A> [Kulpa] Kulpa, Wladislaw, "The Poincar&eacute;-
 Miranda Theorem", <I>American Mathematical Monthly</I> 104:545-550 (1997);
 available at <A HREF="https://www.jstor.org/stable/2975081">
-https://www.jstor.org/stable/2975081</A> (retrieved 6 Feb 2019).</LI>
-
-<LI><A NAME="Kunen"></A> [Kunen] Kunen, Kenneth, <I>Set Theory:  An
+https://www.jstor.org/stable/2975081</A> (retrieved 6 Feb 2019).
+</LI>
+<LI>
+<A NAME="Kunen"></A> [Kunen] Kunen, Kenneth, <I>Set Theory:  An
 Introduction to Independence Proofs,</I> Elsevier Science B.V.,
-Amsterdam (1980) [QA248.K75].</LI>
-
-<LI><A NAME="KuratowskiMostowski"></A> [KuratowskiMostowski] Kuratowski, K.
+Amsterdam (1980) [QA248.K75].
+</LI>
+<LI>
+<A NAME="KuratowskiMostowski"></A> [KuratowskiMostowski] Kuratowski, K.
 and A. Mostowski, <I>Set Theory: with an Introduction to
 Descriptive Set Theory,</I> 2nd ed., North-Holland,
-Amsterdam (1976) [QA248.K7683 1976].</LI>
-
-<LI><A NAME="Lang"></A> [Lang] Serge Lang, <I>Algebra</I>, revised 3rd edition,
+Amsterdam (1976) [QA248.K7683 1976].
+</LI>
+<LI>
+<A NAME="Lang"></A> [Lang] Serge Lang, <I>Algebra</I>, revised 3rd edition,
 Graduate Texts in Mathematics, Springer-Verlag New York (2002)
-[QA154.3.L3].  </LI>
-
-<LI><A NAME="LarsonHostetlerEdwards"></A> [LarsonHostetlerEdwards]
+[QA154.3.L3].
+</LI>
+<LI>
+<A NAME="LarsonHostetlerEdwards"></A> [LarsonHostetlerEdwards]
 Larson, Ron, Robert P. Hostetler, and Bruce H. Edwards, <I>Calculus:
 Early Transcendental Functions,</I> 3rd ed., Houghton Mifflin Company
-(2003) [QA303.L3274 2003]</LI>
-
-<LI><A NAME="LeBlanc"></A> [LeBlanc]  LeBlanc, Hugues,
+(2003) [QA303.L3274 2003]
+</LI>
+<LI>
+<A NAME="LeBlanc"></A> [LeBlanc]  LeBlanc, Hugues,
 "On Meyer and Lambert's Quantificational Calculus FQ,"
 <I>J. Symb. Logic</I> 33:275-280 (1968)   [QA.J87].
-
-<LI><A NAME="Levy58"></A> [Levy58] L&eacute;vy, A., &quot;The independence
+</LI>
+<LI>
+<A NAME="Levy58"></A> [Levy58] L&eacute;vy, A., &quot;The independence
 of various definitions of finiteness,&quot; <I>Fundamenta
-Mathematicae</I>, 46:1-13 (1958) [QA.F981] </LI>
-
-<LI><A NAME="Levy"></A> [Levy] Levy, Azriel, <I>Basic Set Theory</I>,
-Dover Publications, Mineola, N.Y. (2002) [QA248.L398 2002]. </LI>
-
-<LI><A NAME="Lopez-Astorga"></A> [Lopez-Astorga] Lopez-Astorga, Miguel,
+Mathematicae</I>, 46:1-13 (1958) [QA.F981]
+</LI>
+<LI>
+<A NAME="Levy"></A> [Levy] Levy, Azriel, <I>Basic Set Theory</I>,
+Dover Publications, Mineola, N.Y. (2002) [QA248.L398 2002].
+</LI>
+<LI>
+<A NAME="Lopez-Astorga"></A> [Lopez-Astorga] Lopez-Astorga, Miguel,
 "The First Rule of Stoic Logic and its Relationship with the
 Indemonstrables", <I>Revista de Filosof&iacute;a T&oacute;picos</I> (2016);
 available at <A HREF="http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf">
 http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf</A> (retrieved 3 Jul
-2016).</LI>
-
-<LI><A NAME="MaedaMaeda"></A> [MaedaMaeda]  Maeda, Fumitomo (1897-1965)
+2016).
+</LI>
+<LI>
+<A NAME="MaedaMaeda"></A> [MaedaMaeda]  Maeda, Fumitomo (1897-1965)
 and Shuichiro Maeda, <I>Theory of Symmetric Lattices</I>,
-Springer-Verlag, New York (1970) [Q171.5.M184].</LI>
-
-<LI><A NAME="Margaris"></A> [Margaris] Margaris, Angelo, <I>First Order
+Springer-Verlag, New York (1970) [Q171.5.M184].
+</LI>
+<LI>
+<A NAME="Margaris"></A> [Margaris] Margaris, Angelo, <I>First Order
 Mathematical Logic,</I> Blaisdell Publishing Company, Waltham,
-Massachusetts (1967) [QA9.M327].</LI>
-
-<LI><A NAME="McKMegPav"></A> [McKMegPav] McKay, B., N. Megill, and M.
+Massachusetts (1967) [QA9.M327].
+</LI>
+<LI>
+<A NAME="McKMegPav"></A> [McKMegPav] McKay, B., N. Megill, and M.
 Pavicic, &quot;Algorithms for Greechie Diagrams,&quot; <I>Int.  J.
 Theor.  Phys.,</I> 39:2393-2417 (2000) [QC.I626]; available at  <A
 HREF="http://xxx.lanl.gov/abs/quant-ph/0009039">
 http://xxx.lanl.gov/abs/quant-ph/0009039</A>
-(retrieved 11 Nov 2014). </LI>
-
-<LI><A NAME="Megill"></A><A NAME="bibmegill"></A> [Megill] Megill, N.,
+(retrieved 11 Nov 2014).
+</LI>
+<LI>
+<A NAME="Megill"></A><A NAME="bibmegill"></A> [Megill] Megill, N.,
 &quot;A Finitely Axiomatized Formalization of Predicate Calculus with
 Equality,&quot; <I>Notre Dame Journal of Formal Logic,</I> 36:435-453
-(1995) [QA.N914]; available at  <A
-HREF="http://projecteuclid.org/euclid.ndjfl/1040149359"
+(1995) [QA.N914]; available at
+<A HREF="http://projecteuclid.org/euclid.ndjfl/1040149359"
 >http://projecteuclid.org/euclid.ndjfl/1040149359</A> (retrieved
 11 Nov 2014); the <A HREF="../downloads/finiteaxiom.pdf">PDF
 preprint</A> has the same content (with corrections) but pages are
 numbered 1-22, and the database references use the numbers printed on the
 page itself, not the PDF page numbers.  See <A HREF="#technote">technical
-note 1</A> above for some additional notes on this paper.</LI>
-
-<LI><A NAME="MegPav2000"></A> [MegPav2000] Megill, N. and M.
+note 1</A> above for some additional notes on this paper.
+</LI>
+<LI>
+<A NAME="MegPav2000"></A> [MegPav2000] Megill, N. and M.
 Pavi&#269;i&#263;, "Equations, States, and Lattices of
 Infinite-Dimensional Hilbert Space," <I>Int.  J. Theor.  Phys.</I>
-39:2337-2379 (2000) [QC.I626]; available at <A
-HREF="http://xxx.lanl.gov/abs/quant-ph/0009038"
+39:2337-2379 (2000) [QC.I626]; available at
+<A HREF="http://xxx.lanl.gov/abs/quant-ph/0009038"
 >http://xxx.lanl.gov/abs/quant-ph/0009038</A> (retrieved 11 Nov 2014).
 </LI>
-
-<LI> <A NAME="MegPav2002"></A> [MegPav2002] Megill, N. and M.
+<LI>
+<A NAME="MegPav2002"></A> [MegPav2002] Megill, N. and M.
 Pavi&#269;i&#263; "Deduction, Ordering, and Operations in Quantum
-Logic," <I>Found.  Phys.</I> 32:357-378 (2002) QC.F771; available at <A
-HREF="http://xxx.lanl.gov/abs/quant-ph/0108074"
+Logic," <I>Found.  Phys.</I> 32:357-378 (2002) QC.F771; available at
+<A HREF="http://xxx.lanl.gov/abs/quant-ph/0108074"
 >http://xxx.lanl.gov/abs/quant-ph/0108074</A> (retrieved 11 Nov 2014).
 </LI>
-
-<LI><A NAME="Mendelson"></A> [Mendelson] Mendelson, Elliott, <I>Introduction to
-Mathematical Logic,</I> 2nd ed., D. Van Nostrand (1979) [QA9.M537].</LI>
-
-<LI><A NAME="MertziosUnger"></A> [MertziosUnger] George B. Mertzios,
-Walter Unger, <I>The friendship problem on graphs</I>, ROGICS'08, 12-17
-May 2008, Mahida, Tunisia, pp. 152-158, or Journal of Multiple-Valued
-Logic and Soft Computing, Vol. 27(2-3), 2016, pp. 275-285 (Page
+<LI>
+<A NAME="Mendelson"></A> [Mendelson] Mendelson, Elliott, <I>Introduction to
+Mathematical Logic,</I> 2nd ed., D. Van Nostrand (1979) [QA9.M537].
+</LI>
+<LI>
+<A NAME="MertziosUnger"></A> [MertziosUnger] George B. Mertzios, Walter Unger,
+<I>The friendship problem on graphs</I>,
+ROGICS'08, 12-17 May 2008, Mahida, Tunisia, pp. 152-158, or Journal of
+Multiple-Valued Logic and Soft Computing, Vol. 27(2-3), 2016, pp. 275-285 (Page
 references in set.mm are for the ROGICS'08 paper); available at <A
 HREF="http://community.dur.ac.uk/george.mertzios/papers/Conf/Conf_Windmills.pdf">
 http://community.dur.ac.uk/george.mertzios/papers/Conf/Conf_Windmills.pdf</A>
-(retrieved 28-Nov-2017).</LI>
-
-<LI><A NAME="Monk1"></A> [Monk1] Monk, J. Donald, <I>Introduction to Set
-Theory,</I> McGraw-Hill, Inc. (1969) [QA248.M745].</LI>
-
-<LI><A NAME="Monk2"></A> [Monk2] Monk, J. Donald, &quot;Substitutionless
+(retrieved 28-Nov-2017).
+</LI>
+<LI>
+<A NAME="Monk1"></A> [Monk1] Monk, J. Donald, <I>Introduction to Set
+Theory,</I> McGraw-Hill, Inc. (1969) [QA248.M745].
+</LI>
+<LI>
+<A NAME="Monk2"></A> [Monk2] Monk, J. Donald, &quot;Substitutionless
 Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r Mathematische
 Logik und Grundlagenforschung,</I> 7:103-121 (1965) [QA.A673]; available
 at <A HREF="http://euclid.colorado.edu/~~monkd/monk07.pdf"
@@ -5443,170 +5562,204 @@ at <A HREF="http://euclid.colorado.edu/~~monkd/monk07.pdf"
 29-Apr-2017) or <A
 HREF="http://gdz.sub.uni-goettingen.de/dms/load/img/?PID=GDZPPN00204322X"
 >http://gdz.sub.uni-goettingen.de/dms/load/img/?PID=GDZPPN00204322X</A>
-(retrieved 29-Apr-2017).</LI>
-
-<LI><A NAME="Moore"></A>[Moore] Moore, Eliakim Hastings, <I>Introduction to
+(retrieved 29-Apr-2017).
+</LI>
+<LI>
+<A NAME="Moore"></A>[Moore] Moore, Eliakim Hastings, <I>Introduction to
 a Form of General Analysis,</I> Yale University Press, New Haven (1910)
-[QA331.M78].</LI>
-
-<LI><A NAME="Moschovakis"></A> [Moschovakis] Moschovakis, Yiannis N.,
+[QA331.M78].
+</LI>
+<LI>
+<A NAME="Moschovakis"></A> [Moschovakis] Moschovakis, Yiannis N.,
 <I>Notes on Set Theory,</I> Springer, New York,
-second edition (2006) [QA248.M665 2006].</LI>
-
-<LI><A NAME="Munkres"></A> [Munkres] Munkres, James Raymond,
+second edition (2006) [QA248.M665 2006].
+</LI>
+<LI>
+<A NAME="Munkres"></A> [Munkres] Munkres, James Raymond,
 <I>Topology:  a first course,</I> Prentice-Hall, Englewood Cliffs, New
-Jersey (1975) [QA611.M82].</LI>
-
-<LI><A NAME="OeSilva"></A> [OeSilva] Tom&aacute;s Oliveira e Silva, Siegfried
+Jersey (1975) [QA611.M82].
+</LI>
+<LI>
+<A NAME="OeSilva"></A> [OeSilva] Tom&aacute;s Oliveira e Silva, Siegfried
 Herzog, and Silvio Pardi, <I>Empirical verification of the even Goldbach
 conjecture and computation of prime gaps up to 4 x 10^18,</I> Mathematics of
 Computation, vol. 83, no. 288, pp. 2033-2060, July 2014 (published
 electronically on November 18, 2013).
-
-<LI><A NAME="Pfenning"></A> [Pfenning] Pfenning, Frank,
+</LI>
+<LI>
+<A NAME="Pfenning"></A> [Pfenning] Pfenning, Frank,
 <I>Automated Theorem Proving,</I> Carnegie-Mellon University (April 13, 2004);
-available at <A
-HREF="http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf">
+available at
+<A HREF="http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf">
 http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf</A>
 and <A
 HREF="http://web.archive.org/web/20160304013704/http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf">
 http://web.archive.org/web/20160304013704/http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf</A>
-(retrieved 7 Feb 2017).</LI>
-
-<LI><A NAME="Peano"></A> [Peano]
+(retrieved 7 Feb 2017).
+</LI>
+<LI>
+<A NAME="Peano"></A> [Peano]
 Peano, Giuseppe. <I>Arithmetices principia: Nove Methodo Ezposita</I>, 1889.
-
-<LI><A NAME="Ponnusamy"></A> [Ponnusamy] Ponnusamy, S., <I>Foundations
+</LI>
+<LI>
+<A NAME="Ponnusamy"></A> [Ponnusamy] Ponnusamy, S., <I>Foundations
 of Functional Analysis,</I> Alpha Science International Ltd., Pangbourne
-(2002) [QA320.P66 2002].</LI>
-
-<LI><A NAME="PtakPulmannova"></A> [PtakPulmannova] Pavel Pt&aacute;k and
+(2002) [QA320.P66 2002].
+</LI>
+<LI>
+<A NAME="PtakPulmannova"></A> [PtakPulmannova] Pavel Pt&aacute;k and
 Sylvia Pulmannov&aacute;, <I>Orthomodular Structures as Quantum
 Logics</I>, Kluwer Academic Publishers, Dordrecht (1991)
-[QC174.17.M35P7713].  </LI>
-
-<LI><A NAME="Quine"></A> [Quine] Quine, Willard van Orman, <I>Set Theory
+[QC174.17.M35P7713].
+</LI>
+<LI>
+<A NAME="Quine"></A> [Quine] Quine, Willard van Orman, <I>Set Theory
 and Its Logic,</I> Harvard University Press, Cambridge, Massachusetts,
-revised edition (1969) [QA248.Q7 1969].</LI>
-
-<LI><A NAME="ReedSimon"></A> [ReedSimon] Michael Reed and Barry Simon,
+revised edition (1969) [QA248.Q7 1969].
+</LI>
+<LI>
+<A NAME="ReedSimon"></A> [ReedSimon] Michael Reed and Barry Simon,
 <I>Methods of Modern Mathematical Physics</I>, Vol.  I:  Functional
-Analysis, Academic Press, New York (1972) [QC20.7.F84.R43].  </LI>
-
-<LI><A NAME="Roman"></A> [Roman] Steven Roman, <I>Advanced Linear Algebra</I>,
+Analysis, Academic Press, New York (1972) [QC20.7.F84.R43].
+</LI>
+<LI>
+<A NAME="Roman"></A> [Roman] Steven Roman, <I>Advanced Linear Algebra</I>,
 3rd edition, Graduate Texts in Mathematics, Springer Science+Business Media,
-New York (2008) [QA184.R65 1992].  </LI>
-
-<LI><A NAME="Rosenlicht"></a> [Rosenlicht] Maxwell Rosenlicht, <I>Introduction
-to Analysis,</I> Dover Publications, Inc., New York (1986) [QA300.R63]. </LI>
-
-<LI><A NAME="Rosser"></a> [Rosser] Rosser, John B.,
+New York (2008) [QA184.R65 1992].
+</LI>
+<LI>
+<A NAME="Rosenlicht"></a> [Rosenlicht] Maxwell Rosenlicht, <I>Introduction
+to Analysis,</I> Dover Publications, Inc., New York (1986) [QA300.R63].
+</LI>
+<LI>
+<A NAME="Rosser"></a> [Rosser] Rosser, John B.,
 <I>Logic for Mathematicians</I>, Dover Publications, Mineola, N.Y. (2008)
-[BC135.R58 2008]. </LI>
-
-<LI><A NAME="Rotman"></A> [Rotman] Rotman, Joseph J., <I>The theory of
-groups,</I> Allyn and Bacon, Inc., Boston (1973).</LI>
-
-<LI><A NAME="Rudin"></A> [Rudin] Rudin, Walter, <I>Principles of Mathematical
+[BC135.R58 2008].
+</LI>
+<LI>
+<A NAME="Rotman"></A> [Rotman] Rotman, Joseph J., <I>The theory of
+groups,</I> Allyn and Bacon, Inc., Boston (1973).
+</LI>
+<LI>
+<A NAME="Rudin"></A> [Rudin] Rudin, Walter, <I>Principles of Mathematical
 Analysis,</I> McGraw-Hill, New York, second edition (1964) [QA300.R916
-1964].</LI>
-
-<LI><A NAME="Sanford"></A> [Sanford] Sanford, David H., <I>If P, then Q:
+1964].
+</LI>
+<LI>
+<A NAME="Sanford"></A> [Sanford] Sanford, David H., <I>If P, then Q:
 Conditionals and the Foundations of Reasoning</I>, 2nd ed., Routledge
 Taylor &amp; Francis Group (2003); ISBN 0-415-28369-8; available at <A
 HREF="https://books.google.com/books?id=h_AUynB6PA8C&amp;pg=PA39#v=onepage&amp;q&amp;f=false">https://books.google.com/books?id=h_AUynB6PA8C&amp;pg=PA39#v=onepage&amp;q&amp;f=false</A>
-(retrieved 3 Jul 2016).</LI>
-
-<LI><A NAME="Schechter"></A> [Schechter] Schechter, Eric, <I>Handbook of
-Analysis and Its Foundations</I>, Academic Press, San Diego (1997)
-[QA300.S339].</LI>
-
-<LI><A NAME="Schwabhauser"></A> [Schwabhauser] Schwabhauser, Wolfram,
+(retrieved 3 Jul 2016).
+</LI>
+<LI>
+<A NAME="Schechter"></A> [Schechter] Schechter, Eric,
+<I>Handbook of Analysis and Its Foundations</I>,
+Academic Press, San Diego (1997) [QA300.S339].
+</LI>
+<LI>
+<A NAME="Schwabhauser"></A> [Schwabhauser] Schwabhauser, Wolfram,
 Wanda Szmielew, and Alfred Tarski, <I>Metamathematische Methoden in der
-Geometrie</I>, Springer-Verlag, Berlin, New York (1983) [QA481.S38]</LI>
-
-<LI><A NAME="Shapiro"></A> [Shapiro] Shapiro,
-Harold N., <I>Introduction to the Theory of Numbers,</I>
-Dover Publications, Inc. (2008) [QA241.S445 1983].</LI>
-
-<LI><A NAME="Stoll"></A> [Stoll] Stoll, Robert R., <I>Set Theory and Logic,</I>
-Dover Publications, Inc. (1979) [QA248.S7985 1979].</LI>
-
-<LI><A NAME="Strang"></A> [Strang] Strang, Gilbert, <I>Calculus</I>, 1st
+Geometrie</I>, Springer-Verlag, Berlin, New York (1983) [QA481.S38]
+</LI>
+<LI>
+<A NAME="Shapiro"></A> [Shapiro] Shapiro, Harold N.,
+<I>Introduction to the Theory of Numbers,</I>
+Dover Publications, Inc. (2008) [QA241.S445 1983].
+</LI>
+<LI>
+<A NAME="Stoll"></A> [Stoll] Stoll, Robert R., <I>Set Theory and Logic,</I>
+Dover Publications, Inc. (1979) [QA248.S7985 1979].
+</LI>
+<LI>
+<A NAME="Strang"></A> [Strang] Strang, Gilbert, <I>Calculus</I>, 1st
 ed., Wellesley-Cambridge Press (1991) [QA303.S8839 1991]; ISBN
 978-09802327-45; available at <A
 HREF="http://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-2005/">
 http://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-2005/</A>
-(retrieved 24 Nov 2015).</LI>
-
-<LI><A NAME="Sullivan2004"></A> [Sullivan2004] Sullivan, Peter M,
+(retrieved 24 Nov 2015).
+</LI>
+<LI>
+<A NAME="Sullivan2004"></A> [Sullivan2004] Sullivan, Peter M,
 "Frege's Logic", <I>Handbook of the History of Logic, Volume 3: The Rise of
 Modern Logic from Leibniz to Frege</I>, Edited by Dov M. Gabbay and John WOods,
 2004, Elsevier, ISBN 0-444-51611-5.
-
-<LI><A NAME="Suppes"></A> [Suppes] Suppes, Patrick, <I>Axiomatic Set Theory,</I>
-Dover Publications, Inc. (1972) [QA248.S959].</LI>
-
-<LI><A NAME="Siegrist"></A> [Siegrist] Siegrist, Kyle &amp;al
+</LI>
+<LI>
+<A NAME="Suppes"></A> [Suppes] Suppes, Patrick, <I>Axiomatic Set Theory,</I>
+Dover Publications, Inc. (1972) [QA248.S959].
+</LI>
+<LI>
+<A NAME="Siegrist"></A> [Siegrist] Siegrist, Kyle &amp;al
 <I>Random: Probability, Mathematical Statistics, Stochastic Processes</I>
- available at <A HREF="http://www.randomservices.org/random/index.html">
- http://www.randomservices.org/random/index.html</A> (retrieved Oct 2017).</LI>
-
-<LI><A NAME="TakeutiZaring"></A> [TakeutiZaring] Takeuti, Gaisi, and
+available at <A HREF="http://www.randomservices.org/random/index.html">
+http://www.randomservices.org/random/index.html</A> (retrieved Oct 2017).
+</LI>
+<LI>
+<A NAME="TakeutiZaring"></A> [TakeutiZaring] Takeuti, Gaisi, and
 Wilson M. Zaring, <I>Introduction to Axiomatic Set Theory,</I>
-Springer-Verlag, New York, second edition (1982) [QA248.T136 1982].</LI>
-
-<LI><A NAME="Tarski"></A> [Tarski] Tarski, Alfred, &quot;A Simplified
+Springer-Verlag, New York, second edition (1982) [QA248.T136 1982].
+</LI>
+<LI>
+<A NAME="Tarski"></A> [Tarski] Tarski, Alfred, &quot;A Simplified
 Formalization of Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r
 Mathematische Logik und Grundlagenforschung,</I> 7:61-79 (1965)
 [QA.A673]; available at <A
 HREF="http://gdz.sub.uni-goettingen.de/dms/load/img/?PID=GDZPPN002043203"
 >http://gdz.sub.uni-goettingen.de/dms/load/img/?PID=GDZPPN002043203</A>
-(retrieved 29-Apr-2017).</LI>
-
-<LI><A NAME="Tarski1999"></A> [Tarski1999] Tarski, Alfred, and Steven Givant,
+(retrieved 29-Apr-2017).
+</LI>
+<LI>
+<A NAME="Tarski1999"></A> [Tarski1999] Tarski, Alfred, and Steven Givant,
 &quot;Tarski's System of Geometry&quot;
 <I>The Bulletin of Symbolic Logic</I>, Volume 5, Number 2, June 1999,
 pp. 175-214.
-
-<LI><A NAME="Truss"></A> [Truss] Truss, John Kenneth, <I>Foundations of
+</LI>
+<LI>
+<A NAME="Truss"></A> [Truss] Truss, John Kenneth, <I>Foundations of
 Mathematical Analysis,</I> Oxford University Press, Oxford (1997)
-[QA299.8.T78 1997].</LI>
-
-<LI><A NAME="vandenDries"></A> [vandenDries] van den Dries,  Lou,
+[QA299.8.T78 1997].
+</LI>
+<LI>
+<A NAME="vandenDries"></A> [vandenDries] van den Dries,  Lou,
 &quot;Recursion Theory Notes, Fall 2011,&quot; available at <A
 HREF="http://www.math.uiuc.edu/~~vddries/recursion.pdf"
 >http://www.math.uiuc.edu/~~vddries/recursion.pdf</A>
-(retrieved 11 Nov 2014).  </LI>
-
-<LI><A NAME="Viaclovsky7"></A> [Viaclovsky7] Viaclovsky, Jeff, <I>Measurability
+(retrieved 11 Nov 2014).
+</LI>
+<LI>
+<A NAME="Viaclovsky7"></A> [Viaclovsky7] Viaclovsky, Jeff, <I>Measurability
 and Integration, Fall 2003, Lecture 7,</I> available at <A
 HREF="https://ocw.mit.edu/courses/mathematics/18-125-measure-and-integration-fall-2003/lecture-notes/18125_lec7.pdf">
 https://ocw.mit.edu/courses/mathematics/18-125-measure-and-integration-fall-2003/lecture-notes/18125_lec7.pdf
-</A> (retrieved 23-Mar-2018). </LI>
-
-<LI><A NAME="Viaclovsky8"></A> [Viaclovsky8] Viaclovsky, Jeff, <I>Measurability
+</A> (retrieved 23-Mar-2018).
+</LI>
+<LI>
+<A NAME="Viaclovsky8"></A> [Viaclovsky8] Viaclovsky, Jeff, <I>Measurability
 and Integration, Fall 2003, Lecture 8,</I> available at <A
 HREF="https://ocw.mit.edu/courses/mathematics/18-125-measure-and-integration-fall-2003/lecture-notes/18125_lec8.pdf">
 https://ocw.mit.edu/courses/mathematics/18-125-measure-and-integration-fall-2003/lecture-notes/18125_lec8.pdf
-</A> (retrieved 21-Feb-2018). </LI>
-
-<LI><A NAME="Weierstrass"></A> [Weierstrass] Weierstra&szlig;, Karl,
+</A> (retrieved 21-Feb-2018).
+</LI>
+<LI>
+<A NAME="Weierstrass"></A> [Weierstrass] Weierstra&szlig;, Karl,
 <I>Zur Determinantentheorie,</I>
 1886/87, posthumously published 1903 in &quot;Mathematische Werke&quot;,
 vol. III, 271-287, J. Knoblauch,
 Ed. Berlin: Mayer &amp; M&uuml;ller; available at <A
 HREF="https://www.yumpu.com/de/document/read/20688945/mathematische-werke-von-karl-weierstrass-herausgegeben-unter-"
 >https://www.yumpu.com/de/document/read/20688945/mathematische-werke-von-karl-weierstrass-herausgegeben-unter-</A>
-(retrieved 18-Feb-2019). </LI>
-
-<LI><A NAME="WhiteheadRussell"></A> [WhiteheadRussell] Whitehead, Alfred
+(retrieved 18-Feb-2019).
+</LI>
+<LI>
+<A NAME="WhiteheadRussell"></A> [WhiteheadRussell] Whitehead, Alfred
 North, and Bertrand Russell, <I>Principia Mathematica to *56,</I>
 Cambridge University Press, Cambridge, 1962 [QA9.W592 1962]; available
 at <A
 HREF="https://ia600602.us.archive.org/35/items/PrincipiaMathematicaVolumeI/WhiteheadRussell-PrincipiaMathematicaVolumeI_text.pdf"
 >https://ia600602.us.archive.org/35/items/PrincipiaMathematicaVolumeI/WhiteheadRussell-PrincipiaMathematicaVolumeI_text.pdf</A>
-(retrieved 22-Jan-2018).</LI>
+(retrieved 22-Jan-2018).
+</LI>
 </OL>
 
 <P>
@@ -5627,14 +5780,16 @@ version on a page with a proof.
 </P>
 
 <!--
-<P>Unfortunately, Internet Explorer versions 6 and 7 do not implement
-some of the standard Unicode math symbols, which is <A
-HREF="../symbols/symbols.html#why">why</A> I chose GIF images as the
-default.  The missing symbols are displayed as <A
-HREF="../fontcompare.gif">blank rectangular boxes</A>, making the page
+<P>
+Unfortunately, Internet Explorer versions 6 and 7 do not implement some of the
+standard Unicode math symbols, which is
+<A HREF="../symbols/symbols.html#why">why</A> I chose GIF images as the
+default.  The missing symbols are displayed as
+<A HREF="../fontcompare.gif">blank rectangular boxes</A>, making the page
 unreadable.  The free <A HREF="http://mozilla.org/">Firefox and
 Mozilla</A> [retrieved 21-Dec-2016] browsers implement them correctly.
 Safari on MacOS X (10.3.9) has also been reported to work.
+</P>
 -->
 
 <P>
@@ -5660,10 +5815,11 @@ let you override it if you wish.
 </P>
 
 <!--
-<P>If you are viewing the GIF version of these pages, the appearance may
-be more consistent if font antialiasing is turned off.  If you are
-viewing the Unicode version, the Unicode symbols may be more legible if
-it is turned on.
+<P>
+If you are viewing the GIF version of these pages, the appearance may be more
+consistent if font antialiasing is turned off.  If you are viewing the Unicode
+version, the Unicode symbols may be more legible if it is turned on.
+</P>
 -->
 
 <P>
@@ -5689,19 +5845,23 @@ any feedback on this.
 </P>
 
 <!--
-<P><HR NOSHADE SIZE=1><A NAME="copyright"></A><B>
-<FONT COLOR="#006633">Copyright Terms</FONT></B>&nbsp;&nbsp;&nbsp;
 <P>
+<HR NOSHADE SIZE=1><A NAME="copyright"></A>
+<B><FONT COLOR="#006633">Copyright Terms</FONT></B>
+&nbsp;&nbsp;&nbsp;
 All text and images displayed on this web page, other than any short
 attributed quotations from other copyrighted sources, are placed in the
 public domain by the author per the <A
 HREF="http://creativecommons.org/licenses/publicdomain/">Creative
 Commons Public Domain Dedication</A> [external].
+</P>
 
-<P><B>Exception.</B> Short quotations from copyrighted works, with
+<P>
+<B>Exception.</B> Short quotations from copyrighted works, with
 attribution, may appear on this page under the "fair use" provision of
 Section 107 of the United States Copyright Act (Title 17 of the
 <I>United States Code</I>).
+</P>
 -->
 
 <HR NOSHADE SIZE=1>
@@ -5712,7 +5872,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER>
-<I><FONT SIZE=-1>This page was last updated on 24-Mar-2021.</FONT></I>
+<I><FONT SIZE=-1>This page was last updated on 8-Jul-2021.</FONT></I>
 <BR>
 <FONT FACE="ARIAL" SIZE=-2>Your comments are welcome: Norman Megill
 <A HREF="../email.html"><IMG BORDER=0 SRC="_nmemail.gif"
