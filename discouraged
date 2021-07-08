@@ -6047,6 +6047,8 @@
 "eqresr" is used by "axpre-lttri".
 "eqresr" is used by "axrrecex".
 "eqresr" is used by "ltresr".
+"equcomi1" is used by "aecom-o".
+"equid1" is used by "equcomi1".
 "equidqe" is used by "axc5sp1".
 "equidqe" is used by "equidq".
 "erngbase-rN" is used by "erngdvlem1-rN".
@@ -16090,8 +16092,9 @@ New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqresr" is discouraged (4 uses).
 New usage of "eqsbc3rOLD" is discouraged (0 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
+New usage of "equcomi1" is discouraged (1 uses).
 New usage of "equequ2OLD" is discouraged (0 uses).
-New usage of "equid1" is discouraged (0 uses).
+New usage of "equid1" is discouraged (1 uses).
 New usage of "equid1ALT" is discouraged (0 uses).
 New usage of "equidOLD" is discouraged (0 uses).
 New usage of "equidq" is discouraged (0 uses).
@@ -18933,6 +18936,7 @@ Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
 Proof modification of "addmodlteqALT" is discouraged (237 steps).
+Proof modification of "aecom-o" is discouraged (28 steps).
 Proof modification of "aev-o" is discouraged (117 steps).
 Proof modification of "aev2ALT" is discouraged (34 steps).
 Proof modification of "aevALTOLD" is discouraged (36 steps).
@@ -19627,6 +19631,7 @@ Proof modification of "eqerOLD" is discouraged (165 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqsbc3rOLD" is discouraged (71 steps).
 Proof modification of "eqsbc3rVD" is discouraged (129 steps).
+Proof modification of "equcomi1" is discouraged (16 steps).
 Proof modification of "equequ2OLD" is discouraged (26 steps).
 Proof modification of "equid1" is discouraged (50 steps).
 Proof modification of "equid1ALT" is discouraged (36 steps).
