@@ -14011,7 +14011,6 @@ New usage of "0r" is discouraged (11 uses).
 New usage of "0reALT" is discouraged (1 uses).
 New usage of "0vfval" is discouraged (9 uses).
 New usage of "19.21a3con13vVD" is discouraged (0 uses).
-New usage of "19.21vOLDOLD" is discouraged (0 uses).
 New usage of "19.23tOLD" is discouraged (0 uses).
 New usage of "19.29rOLD" is discouraged (0 uses).
 New usage of "19.40bOLD" is discouraged (0 uses).
@@ -17459,7 +17458,6 @@ New usage of "natded" is discouraged (0 uses).
 New usage of "nbgraopALT" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "nelsnOLD" is discouraged (0 uses).
-New usage of "nexdvOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfnfcALT" is discouraged (0 uses).
@@ -18884,7 +18882,6 @@ Proof modification of "0erOLD" is discouraged (95 steps).
 Proof modification of "0heALT" is discouraged (25 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
-Proof modification of "19.21vOLDOLD" is discouraged (44 steps).
 Proof modification of "19.23tOLD" is discouraged (54 steps).
 Proof modification of "19.29rOLD" is discouraged (30 steps).
 Proof modification of "19.40bOLD" is discouraged (56 steps).
@@ -20130,7 +20127,6 @@ Proof modification of "mreexexdOLD" is discouraged (872 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nbgraopALT" is discouraged (271 steps).
 Proof modification of "nelsnOLD" is discouraged (46 steps).
-Proof modification of "nexdvOLD" is discouraged (8 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfnfcALT" is discouraged (30 steps).
