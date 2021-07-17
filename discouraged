@@ -14533,6 +14533,7 @@ New usage of "bdopssadj" is discouraged (4 uses).
 New usage of "bezoutlem2OLD" is discouraged (2 uses).
 New usage of "bezoutlem3OLD" is discouraged (1 uses).
 New usage of "bezoutlem4OLD" is discouraged (0 uses).
+New usage of "biorfiOLD" is discouraged (0 uses).
 New usage of "bitr3" is discouraged (6 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bitsfzolemOLD" is discouraged (0 uses).
@@ -18580,7 +18581,6 @@ New usage of "stcltr2i" is discouraged (1 uses).
 New usage of "stcltrlem1" is discouraged (1 uses).
 New usage of "stcltrlem2" is discouraged (1 uses).
 New usage of "stcltrthi" is discouraged (0 uses).
-New usage of "stdpc5vOLD" is discouraged (0 uses).
 New usage of "stge0" is discouraged (1 uses).
 New usage of "stge1i" is discouraged (1 uses).
 New usage of "sthil" is discouraged (2 uses).
@@ -19091,6 +19091,7 @@ Proof modification of "bcsiALT" is discouraged (444 steps).
 Proof modification of "bezoutlem2OLD" is discouraged (264 steps).
 Proof modification of "bezoutlem3OLD" is discouraged (991 steps).
 Proof modification of "bezoutlem4OLD" is discouraged (906 steps).
+Proof modification of "biorfiOLD" is discouraged (19 steps).
 Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bitsfzolemOLD" is discouraged (737 steps).
@@ -20438,7 +20439,6 @@ Proof modification of "ssralv2VD" is discouraged (147 steps).
 Proof modification of "sstrALT2" is discouraged (81 steps).
 Proof modification of "sstrALT2VD" is discouraged (84 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
-Proof modification of "stdpc5vOLD" is discouraged (15 steps).
 Proof modification of "stoweidlem29OLD" is discouraged (410 steps).
 Proof modification of "stoweidlem62OLD" is discouraged (763 steps).
 Proof modification of "sucidALT" is discouraged (28 steps).
