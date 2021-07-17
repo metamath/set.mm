@@ -15373,6 +15373,7 @@ New usage of "con5VD" is discouraged (0 uses).
 New usage of "con5i" is discouraged (2 uses).
 New usage of "conventions" is discouraged (0 uses).
 New usage of "conventions-label" is discouraged (0 uses).
+New usage of "coprmdvdsOLD" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
 New usage of "crhmsubcALTV" is discouraged (1 uses).
 New usage of "cringcALTV" is discouraged (9 uses).
@@ -16026,7 +16027,6 @@ New usage of "elimph" is discouraged (3 uses).
 New usage of "elimphu" is discouraged (3 uses).
 New usage of "ellnfn" is discouraged (5 uses).
 New usage of "ellnop" is discouraged (9 uses).
-New usage of "elmod2OLD" is discouraged (0 uses).
 New usage of "elmptrab2OLD" is discouraged (0 uses).
 New usage of "elni" is discouraged (7 uses).
 New usage of "elni2" is discouraged (7 uses).
@@ -19355,6 +19355,7 @@ Proof modification of "con5" is discouraged (10 steps).
 Proof modification of "con5VD" is discouraged (47 steps).
 Proof modification of "con5i" is discouraged (13 steps).
 Proof modification of "conventions" is discouraged (1 steps).
+Proof modification of "coprmdvdsOLD" is discouraged (256 steps).
 Proof modification of "csbabgOLD" is discouraged (93 steps).
 Proof modification of "csbcnvgALT" is discouraged (112 steps).
 Proof modification of "csbeq2gOLD" is discouraged (33 steps).
@@ -19601,7 +19602,6 @@ Proof modification of "eliminable2b" is discouraged (7 steps).
 Proof modification of "eliminable2c" is discouraged (8 steps).
 Proof modification of "eliminable3a" is discouraged (7 steps).
 Proof modification of "eliminable3b" is discouraged (8 steps).
-Proof modification of "elmod2OLD" is discouraged (260 steps).
 Proof modification of "elmptrab2OLD" is discouraged (73 steps).
 Proof modification of "elopOLD" is discouraged (35 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
