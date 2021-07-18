@@ -15002,7 +15002,11 @@ New usage of "cba" is discouraged (92 uses).
 New usage of "cbncms" is discouraged (6 uses).
 New usage of "cbv3hvOLD" is discouraged (0 uses).
 New usage of "cbv3hvOLDOLD" is discouraged (0 uses).
+New usage of "cbval2vOLD" is discouraged (0 uses).
+New usage of "cbvaldvaOLD" is discouraged (0 uses).
 New usage of "cbvalvOLD" is discouraged (0 uses).
+New usage of "cbvex2vOLD" is discouraged (0 uses).
+New usage of "cbvexdvaOLD" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
 New usage of "cbvexvOLD" is discouraged (0 uses).
 New usage of "ccat2s1fvwALT" is discouraged (0 uses).
@@ -19351,7 +19355,11 @@ Proof modification of "caurcvgrOLD" is discouraged (307 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbv3hvOLD" is discouraged (37 steps).
 Proof modification of "cbv3hvOLDOLD" is discouraged (52 steps).
+Proof modification of "cbval2vOLD" is discouraged (20 steps).
+Proof modification of "cbvaldvaOLD" is discouraged (22 steps).
 Proof modification of "cbvalvOLD" is discouraged (12 steps).
+Proof modification of "cbvex2vOLD" is discouraged (20 steps).
+Proof modification of "cbvexdvaOLD" is discouraged (22 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "cbvexvOLD" is discouraged (12 steps).
 Proof modification of "ccat2s1fvwALT" is discouraged (149 steps).
