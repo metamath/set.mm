@@ -16813,6 +16813,8 @@ New usage of "imasvalOLD" is discouraged (2 uses).
 New usage of "imbi12VD" is discouraged (0 uses).
 New usage of "imbi13" is discouraged (2 uses).
 New usage of "imbi13VD" is discouraged (0 uses).
+New usage of "imp4aOLD" is discouraged (0 uses).
+New usage of "imp4bOLD" is discouraged (0 uses).
 New usage of "impelOLD" is discouraged (0 uses).
 New usage of "impexpd" is discouraged (1 uses).
 New usage of "impexpdcom" is discouraged (0 uses).
@@ -18821,8 +18823,6 @@ New usage of "wl-com12" is discouraged (2 uses).
 New usage of "wl-con1i" is discouraged (2 uses).
 New usage of "wl-con4i" is discouraged (1 uses).
 New usage of "wl-embant" is discouraged (0 uses).
-New usage of "wl-embantALT" is discouraged (0 uses).
-New usage of "wl-embantd" is discouraged (0 uses).
 New usage of "wl-id" is discouraged (1 uses).
 New usage of "wl-imim2" is discouraged (1 uses).
 New usage of "wl-imim2i" is discouraged (4 uses).
@@ -19953,6 +19953,8 @@ Proof modification of "imasvalOLD" is discouraged (1195 steps).
 Proof modification of "imbi12VD" is discouraged (121 steps).
 Proof modification of "imbi13" is discouraged (34 steps).
 Proof modification of "imbi13VD" is discouraged (67 steps).
+Proof modification of "imp4aOLD" is discouraged (18 steps).
+Proof modification of "imp4bOLD" is discouraged (15 steps).
 Proof modification of "impelOLD" is discouraged (13 steps).
 Proof modification of "impexpd" is discouraged (16 steps).
 Proof modification of "impexpdcom" is discouraged (32 steps).
@@ -20585,9 +20587,7 @@ Proof modification of "wl-cases2-dnf" is discouraged (85 steps).
 Proof modification of "wl-com12" is discouraged (11 steps).
 Proof modification of "wl-con1i" is discouraged (14 steps).
 Proof modification of "wl-con4i" is discouraged (14 steps).
-Proof modification of "wl-embant" is discouraged (9 steps).
-Proof modification of "wl-embantALT" is discouraged (12 steps).
-Proof modification of "wl-embantd" is discouraged (11 steps).
+Proof modification of "wl-embant" is discouraged (12 steps).
 Proof modification of "wl-equsal" is discouraged (32 steps).
 Proof modification of "wl-id" is discouraged (12 steps).
 Proof modification of "wl-imim2" is discouraged (14 steps).
