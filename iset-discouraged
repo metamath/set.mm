@@ -56,6 +56,7 @@
 "ax-addcom" is used by "addcom".
 "ax-addrcl" is used by "readdcl".
 "ax-arch" is used by "arch".
+"ax-caucvg" is used by "caucvgre".
 "ax-cnex" is used by "cnex".
 "ax-cnre" is used by "cnre".
 "ax-distr" is used by "adddi".
@@ -224,6 +225,7 @@ New usage of "ax-addcl" is discouraged (1 uses).
 New usage of "ax-addcom" is discouraged (1 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-arch" is discouraged (1 uses).
+New usage of "ax-caucvg" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
 New usage of "ax-distr" is discouraged (1 uses).
