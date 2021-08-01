@@ -225,6 +225,7 @@
 "2uasbanh" is used by "2uasban".
 "3atnelvolN" is used by "2atnelvolN".
 "3atnelvolN" is used by "islvol2aN".
+"3decOLD" is used by "3dvds2decOLD".
 "3lcm2e6woprm" is used by "lcmf2a3a4e12".
 "3noncolr1N" is used by "lplnribN".
 "3oalem1" is used by "3oalem2".
@@ -13229,6 +13230,8 @@
 "sps-o" is used by "axc11-o".
 "sps-o" is used by "axc11n-16".
 "sps-o" is used by "axc5c711toc7".
+"sq10OLD" is used by "sq10e99m1OLD".
+"sq10e99m1OLD" is used by "3dvds2decOLD".
 "sqgt0sr" is used by "recexsr".
 "srhmsubcALTV" is used by "crhmsubcALTV".
 "srhmsubcALTV" is used by "drhmsubcALTV".
@@ -14066,8 +14069,10 @@ New usage of "2zrngALT" is discouraged (0 uses).
 New usage of "3anidm12p1" is discouraged (0 uses).
 New usage of "3anidm12p2" is discouraged (0 uses).
 New usage of "3atnelvolN" is discouraged (2 uses).
+New usage of "3decOLD" is discouraged (1 uses).
 New usage of "3dimlem3OLDN" is discouraged (0 uses).
 New usage of "3dimlem4OLDN" is discouraged (0 uses).
+New usage of "3dvds2decOLD" is discouraged (0 uses).
 New usage of "3impdirp1" is discouraged (0 uses).
 New usage of "3impexpVD" is discouraged (0 uses).
 New usage of "3impexpbicomVD" is discouraged (0 uses).
@@ -14106,6 +14111,7 @@ New usage of "5oalem4" is discouraged (1 uses).
 New usage of "5oalem5" is discouraged (1 uses).
 New usage of "5oalem6" is discouraged (1 uses).
 New usage of "5oalem7" is discouraged (1 uses).
+New usage of "9p1e10bOLD" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (5 uses).
 New usage of "ablo4" is discouraged (5 uses).
 New usage of "ablocom" is discouraged (9 uses).
@@ -18544,6 +18550,8 @@ New usage of "specval" is discouraged (1 uses).
 New usage of "speimfwALT" is discouraged (0 uses).
 New usage of "spimvALT" is discouraged (0 uses).
 New usage of "sps-o" is discouraged (7 uses).
+New usage of "sq10OLD" is discouraged (1 uses).
+New usage of "sq10e99m1OLD" is discouraged (1 uses).
 New usage of "sqgt0sr" is discouraged (1 uses).
 New usage of "srhmsubcALTV" is discouraged (4 uses).
 New usage of "srhmsubcALTVlem1" is discouraged (1 uses).
@@ -18944,8 +18952,10 @@ Proof modification of "2uasbanhVD" is discouraged (313 steps).
 Proof modification of "2zrngALT" is discouraged (207 steps).
 Proof modification of "3anidm12p1" is discouraged (5 steps).
 Proof modification of "3anidm12p2" is discouraged (19 steps).
+Proof modification of "3decOLD" is discouraged (121 steps).
 Proof modification of "3dimlem3OLDN" is discouraged (335 steps).
 Proof modification of "3dimlem4OLDN" is discouraged (338 steps).
+Proof modification of "3dvds2decOLD" is discouraged (476 steps).
 Proof modification of "3impdirp1" is discouraged (21 steps).
 Proof modification of "3impexpVD" is discouraged (104 steps).
 Proof modification of "3impexpbicomVD" is discouraged (89 steps).
@@ -18961,6 +18971,7 @@ Proof modification of "4sqlem15OLD" is discouraged (767 steps).
 Proof modification of "4sqlem16OLD" is discouraged (1399 steps).
 Proof modification of "4sqlem17OLD" is discouraged (1423 steps).
 Proof modification of "4sqlem18OLD" is discouraged (501 steps).
+Proof modification of "9p1e10bOLD" is discouraged (11 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
@@ -20472,6 +20483,8 @@ Proof modification of "snsslVD" is discouraged (24 steps).
 Proof modification of "speimfwALT" is discouraged (35 steps).
 Proof modification of "spimvALT" is discouraged (9 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
+Proof modification of "sq10OLD" is discouraged (57 steps).
+Proof modification of "sq10e99m1OLD" is discouraged (25 steps).
 Proof modification of "ssdisjOLD" is discouraged (49 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "sseqin2OLD" is discouraged (3 steps).
