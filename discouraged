@@ -16202,7 +16202,10 @@ New usage of "fngid" is discouraged (0 uses).
 New usage of "foco2OLD" is discouraged (0 uses).
 New usage of "fourierdlem31OLD" is discouraged (0 uses).
 New usage of "fourierdlem42OLD" is discouraged (0 uses).
+New usage of "fprodcom2OLD" is discouraged (0 uses).
+New usage of "fsumcom2OLD" is discouraged (0 uses).
 New usage of "fsumshftdOLD" is discouraged (0 uses).
+New usage of "fsuppmapnn0fiubOLD" is discouraged (0 uses).
 New usage of "ftalem4OLD" is discouraged (1 uses).
 New usage of "ftalem5OLD" is discouraged (0 uses).
 New usage of "funadj" is discouraged (4 uses).
@@ -19747,6 +19750,7 @@ Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "foco2OLD" is discouraged (167 steps).
 Proof modification of "fourierdlem31OLD" is discouraged (946 steps).
 Proof modification of "fourierdlem42OLD" is discouraged (7481 steps).
+Proof modification of "fprodcom2OLD" is discouraged (1241 steps).
 Proof modification of "frege10" is discouraged (27 steps).
 Proof modification of "frege100" is discouraged (31 steps).
 Proof modification of "frege101" is discouraged (49 steps).
@@ -19912,7 +19916,9 @@ Proof modification of "frege95" is discouraged (79 steps).
 Proof modification of "frege96" is discouraged (39 steps).
 Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
+Proof modification of "fsumcom2OLD" is discouraged (1241 steps).
 Proof modification of "fsumshftdOLD" is discouraged (217 steps).
+Proof modification of "fsuppmapnn0fiubOLD" is discouraged (421 steps).
 Proof modification of "ftalem4OLD" is discouraged (455 steps).
 Proof modification of "ftalem5OLD" is discouraged (2088 steps).
 Proof modification of "funcnvmptOLD" is discouraged (291 steps).
