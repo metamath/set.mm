@@ -18220,6 +18220,7 @@ New usage of "raleleqALT" is discouraged (0 uses).
 New usage of "ralf0OLD" is discouraged (0 uses).
 New usage of "ralnexOLD" is discouraged (0 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
+New usage of "ralxfrdOLD" is discouraged (0 uses).
 New usage of "ramcl2OLD" is discouraged (0 uses).
 New usage of "ramcl2lemOLD" is discouraged (4 uses).
 New usage of "ramtcl2OLD" is discouraged (1 uses).
@@ -18283,6 +18284,8 @@ New usage of "retbwax1" is discouraged (0 uses).
 New usage of "retbwax2" is discouraged (3 uses).
 New usage of "retbwax3" is discouraged (0 uses).
 New usage of "retbwax4" is discouraged (0 uses).
+New usage of "reusv1OLD" is discouraged (0 uses).
+New usage of "reusv2lem2OLD" is discouraged (0 uses).
 New usage of "rexbidvALT" is discouraged (0 uses).
 New usage of "rexbidvaALT" is discouraged (0 uses).
 New usage of "rgenzOLD" is discouraged (0 uses).
@@ -20378,6 +20381,7 @@ Proof modification of "raleleqALT" is discouraged (26 steps).
 Proof modification of "ralf0OLD" is discouraged (47 steps).
 Proof modification of "ralnexOLD" is discouraged (39 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
+Proof modification of "ralxfrdOLD" is discouraged (106 steps).
 Proof modification of "ramcl2OLD" is discouraged (184 steps).
 Proof modification of "ramcl2lemOLD" is discouraged (296 steps).
 Proof modification of "ramtcl2OLD" is discouraged (179 steps).
@@ -20421,6 +20425,8 @@ Proof modification of "retbwax1" is discouraged (195 steps).
 Proof modification of "retbwax2" is discouraged (127 steps).
 Proof modification of "retbwax3" is discouraged (20 steps).
 Proof modification of "retbwax4" is discouraged (13 steps).
+Proof modification of "reusv1OLD" is discouraged (98 steps).
+Proof modification of "reusv2lem2OLD" is discouraged (213 steps).
 Proof modification of "rexbidvALT" is discouraged (10 steps).
 Proof modification of "rexbidvaALT" is discouraged (10 steps).
 Proof modification of "rgen2a" is discouraged (81 steps).
