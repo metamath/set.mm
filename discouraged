@@ -15390,6 +15390,7 @@ New usage of "con4iOLD" is discouraged (0 uses).
 New usage of "con5" is discouraged (1 uses).
 New usage of "con5VD" is discouraged (0 uses).
 New usage of "con5i" is discouraged (2 uses).
+New usage of "conss34OLD" is discouraged (0 uses).
 New usage of "conventions" is discouraged (0 uses).
 New usage of "conventions-label" is discouraged (0 uses).
 New usage of "coprmdvdsOLD" is discouraged (0 uses).
@@ -19419,6 +19420,7 @@ Proof modification of "con4iOLD" is discouraged (8 steps).
 Proof modification of "con5" is discouraged (10 steps).
 Proof modification of "con5VD" is discouraged (47 steps).
 Proof modification of "con5i" is discouraged (13 steps).
+Proof modification of "conss34OLD" is discouraged (64 steps).
 Proof modification of "conventions" is discouraged (1 steps).
 Proof modification of "coprmdvdsOLD" is discouraged (256 steps).
 Proof modification of "csbabgOLD" is discouraged (93 steps).
