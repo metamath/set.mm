@@ -1,6 +1,17 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">
 <HTML LANG="EN-US">
+
+<!-- To convert mmset.raw.html to mmset.html, use the metamath.exe command:
+  markup mmset.raw.html mmset.html /alt_html /symbols /css /labels
+-->
+
+<!-- Warning (4-Aug-2021):  The link http://validator.w3.org/check?uri=referer
+on the bottom right of this page no longer works correctly (it checks the wrong
+page, so you may be tricked into thinking there are no errors).  Instead, paste
+the URL of this page directly into http://validator.w3.org/ or use their
+upload feature.  -->
+
 <HEAD>
 
 <!-- improve mobile display -->
@@ -1023,7 +1034,7 @@ must match two expressions to use theorem <tt>mp</tt>:
 <LI> ` |- ( ( t + 0 ) = t -> ( ( t + 0 ) = t -> t = t ) ) `
 </UL>
 
-This could be matched many different expressions, for examle:
+This could be matched many different expressions, for example:
 <UL>
 <LI> `P` := ` ( t + 0 ) = t `
 <LI> `Q` := ` ( ( t + 0 ) = t -> t = t ) `
@@ -1035,7 +1046,7 @@ or
 <LI> ` P ` := ` ( t + 0 ) = t -> ( ( t + 0 ) = t `
 <LI> ` Q ` := ` t = t )`
 </UL>
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 However, theorem <tt>mp</tt> in database <tt>demo0.mm</tt> actually has four
@@ -1096,7 +1107,7 @@ understand how these tie into the primitive concepts used by the axioms.
 <A NAME="axioms"></A>
 <B><FONT COLOR="#006633">The Axioms</FONT></B>
 &nbsp;&nbsp;&nbsp;
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <!--
 <P><CENTER><FONT COLOR="#006633"><I>Everything should be made as simple
@@ -1215,7 +1226,7 @@ setvar variable, so we cannot replace a setvar variable with say the symbol
 introduce in the <A HREF="#class">Theory of Classes</A> section below.)
 </P>
 
-<P>
+<P>  <A NAME="wffsyntax"></A>
 A <B>wff</B> is an expression (string of symbols) constructed as follows.  A
 starting wff either is a wff variable, or it consists of two setvar variables
 connected with either ` = ` ("equals," "is identical to") or ` e. ` ("is an
@@ -1467,7 +1478,7 @@ SUMMARY="Axioms of predicate calculus with equality">
 <TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA" WIDTH="100%"
 SUMMARY="Axioms of predicate calculus with equality">
 <CAPTION>
-<B>Axioms of predicate calculus with equality - auxiliary</B>
+<B>Axioms of predicate calculus with equality - auxiliary schemes</B>
 </CAPTION>
 
 <TR ALIGN=LEFT>
@@ -1517,9 +1528,12 @@ theorems.
 
 <P>
 The above table is divided into two groups, those from a system devised by
-logician Alfred Tarski and auxiliary technical axioms needed to endow the
-system with a property called "metalogical completeness."  This is explained
-<A HREF="#compare">below</A>.
+logician Alfred Tarski and some additional auxilliary axiom schemes.  The
+latter, while logically redundant at the object language level, endow the the
+system with a property called "scheme completeness", which means that any theorem (scheme) expressible in the <A
+HREF="#wffsyntax">wff syntax</A> described above can be proved <I>directly</I>,
+without having to resort to techniques like combining cases or induction on
+formula length.  This is explained <A HREF="#compare">below</A>.
 </P>
 
 <P>
@@ -1605,7 +1619,7 @@ connectives are extended with ` <-> ` , ` /\ ` , and ` E. ` , and our wff
 construction rules are extended with ~ wb , ~ wa , and ~ wex .  Alternately,
 you can rewrite the set theory axioms below with these three definitions
 eliminated.
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 <A NAME="staxioms"></A><B><FONT COLOR="#006633">Set theory</FONT></B> uses the
@@ -1812,7 +1826,7 @@ point feel lost, wondering how our introductory 2+2=4 example bears any
 relationship at all to the axioms!  In this section, we will discuss how this
 notation ties into our axioms and how to convert it to the primitive or basic
 language used by the axioms.
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 In principle, mathematics can be done using only the setvar and wff variables
@@ -2128,7 +2142,7 @@ RunParms.txt file:
 <PRE>
         SetMMDefinitionsCheckWithExclusions,ax-*,df-bi,df-clab,df-cleq,df-clel
 </PRE>
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 A skeptic is free to rename these four to be axioms (with prefix "ax-"), but
@@ -2746,7 +2760,7 @@ clever use of equality axioms) it eliminates the latter's primitive notions of
 "proper substitution" and "free variable," replacing them with direct
 substitution and the notion of a variable not occurring in a formula (which we
 express with <A HREF="#distinct">distinct variable</A> constraints).
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 In advocating his system, Tarski wrote, "The relatively complicated character
@@ -2791,17 +2805,20 @@ built into it.)
 The Metamath axiom system (shown as <A HREF="#scaxioms">ax-1 through ax-13</A>
 above) extends Tarski's system to eliminate this difficulty.  The additional
 axiom schemes (as we will call them in this section; see below) endow Tarski's
-system with a nice property we call <B>metalogical completeness</B> (defined in
-Remark 9.6 of [<A HREF="#bibmegill">Megill</A>]).  As a result, we can prove
+system with a nice property we call <B>scheme completeness</B> (defined in
+Remark 9.6 of [<A HREF="#bibmegill">Megill</A>] and called
+"metalogical completeness" there).  As a result, we can prove
 <I>any</I> theorem scheme expressable in the "simple metalogic" of Tarski's
 system by using <I>only</I> Metamath's direct substitution rule applied to the
 axiom system (and no other metalogical or set-theoretical notions "outside" of
 the system).  <B>Simple metalogic</B> consists of schemes containing wff
 metavariables (with no arguments) and/or setvar (also called "individual")
-metavariables, accompanied by optional provisos each stating that two specified
-setvar metavariables must be distinct or that a specified setvar metavariable
-may not occur in a specified wff metavariable.  Metamath's logic and set theory
-axiom and rule schemes are all examples of simple metalogic.  The schemes
+metavariables (i.e. in the form of the <A HREF="#wffsyntax">wff syntax</A>
+described above), accompanied by optional provisos each stating that two
+specified setvar metavariables must be distinct or that a specified setvar
+metavariable may not occur in a specified wff metavariable.  Metamath's logic
+and set theory axiom and rule schemes are all examples of simple metalogic.
+The schemes
 
 <!--
 ~ stdpc4 , ~ stdpc5 , and ~ stdpc7
@@ -2914,8 +2931,8 @@ is the instance&nbsp;
 Tarski's original axiom schemes</FONT></B>
 &nbsp;&nbsp;&nbsp;
 In the figure below we compare Tarski's original axiom schemes for predicate
-calculus with equality (rightmost column) with the extensions that make our
-system "<A HREF="#simplemetalogic">metalogically complete</A>."
+calculus with equality (rightmost column) with the extensions that provide
+our system with "<A HREF="#simplemetalogic">scheme completeness</A>."
 </P>
 
 <!-- TODO: This image should be replaced with a table -->
@@ -3045,15 +3062,15 @@ SUMMARY="Axioms of predicate calculus with equality">
 </CENTER>
 
 <P>
-All of our extensions are provable (outside of Metamath) as metatheorems of
-Tarski's original system, meaning that they are sound (and also logically
-redundant).  Specifically, all instances of our extensions not involving wff
-metavariables (and with all setvar metavariables mutually distinct) can be
-proved inside of Metamath from Tarski's axiom schemes; see theorem schemes
-~ ax10w , ~ ax11w , ~ ax12w , and ~ ax13w .  These theorem schemes have
-hypotheses that can be eliminated for such instances.  Theorem ~ ax12wdemo
-shows an example of how we can eliminate the hypotheses of ~ ax12w .  Finally,
-we combine all such instances (outside of Metamath) to result in the
+Our extensions ~ ax-10 through ~ ax-13 are provable (outside of Metamath) as
+metatheorems of Tarski's original system, meaning that they are sound (and also
+logically redundant).  Specifically, all instances of our extensions not
+involving wff metavariables (and with all setvar metavariables mutually
+distinct) can be proved inside of Metamath from Tarski's axiom schemes; see
+theorem schemes ~ ax10w , ~ ax11w , ~ ax12w , and ~ ax13w . These theorem
+schemes have hypotheses that can be eliminated for such instances.  Theorem ~
+ax12wdemo shows an example of how we can eliminate the hypotheses of ~ ax12w .
+Finally, we combine all such instances (outside of Metamath) to result in the
 metatheorem represented by our extensions.
 </P>
 
@@ -3061,7 +3078,7 @@ metatheorem represented by our extensions.
 Except for ~ ax-6 , our system includes all axiom schemes of Tarski's
 system.  In the case of ax-6, Tarski's version is weaker because it
 includes a distinct variable proviso.  If we wish, we can also weaken
-our version in this way and still have a metalogically complete system.
+our version in this way and still have a system that is scheme-complete.
 Theorem ~ ax6 shows this by deriving, in the presence of the other
 axioms, our ax-6 from Tarski's weaker version ~ ax6v . However, we chose
 the stronger version for our system because it is simpler to state and
@@ -3326,7 +3343,8 @@ discovered in 2006 and not
 known at the time of the paper.  The somewhat strange-looking axiom C10'
 ( ~ ax-c10 ) was found to be equivalent to the simpler ~ ax-6 after
 the paper was submitted; see theorem ~ ax6fromc10 .  In the
-proof of the metalogical completeness theorem, Theorem 9.7, some details
+proof of the scheme (or "metalogical") completeness theorem,
+Theorem 9.7, some details
 that are stated without proof as "provable in S3' with simple
 metalogic," but which are nonetheless are tricky, are proved by theorems
 ~ sbequ , ~ sbcom2 , and ~ sbid2v .
@@ -3360,8 +3378,8 @@ less bundling are possible, of course.
 <!-- An interesting open problem is to devise an alternate
 axiomatization using only non-bundled axiom schemes (more specifically,
 schemes that don't allow a bound variable to be substituted for a free
-variable in its scope).  If we want the system to be metalogically
-complete, we must be able to derive our bundled axiom schemes as
+variable in its scope).  If we want the system to have scheme
+completeness, we must be able to derive our bundled axiom schemes as
 theorems.  For example, we can prove our bundled ~ ax-6 from the weaker
 non-bundled version that requires its variables to be distinct, as theorem
 ~ ax6 shows, but the proof is not trivial and makes use of all of the
@@ -3431,7 +3449,7 @@ corresponding to this Metamath scheme. -->
 <HR NOSHADE SIZE=1><A NAME="traditional"></A><B><FONT
 COLOR="#006633">Appendix 2:  Traditional Textbook Axioms of Predicate
 Calculus with Equality</FONT></B>&nbsp;&nbsp;&nbsp;
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 If you want to acquire a practical working ability in logic, <!-- (as
@@ -3481,7 +3499,7 @@ free in ` ph ` </TD>
 </TR>
 <TR ALIGN=LEFT>
 <TD> ~ stdpc6 </TD>
-<TD> ` |- A. x x = x ` </TD>
+<TD> ` |- A. x ` ` x = x ` </TD>
 </TR>
 <TR ALIGN=LEFT>
 <TD> ~ stdpc7 </TD>
@@ -3598,7 +3616,7 @@ This would indeed result in a
 <I>logically</I> complete system, in the sense that we would have
 schemes for all actual axioms of predicate calculus.  However, we would
 still need some of the axioms ax-c5 through ax-5 in order to achieve a
-<I>metalogically</I> complete system, so that we can eliminate the need
+system with <I>scheme completeness</I>, so that we can eliminate the need
 for informal rules outside of the system, or more specifically, so that
 we can prove ax-c5 through ax-5 as theorems.  An <A
 HREF="../award2003.html#17">open problem (Item 17)</A> is:  Which of the
@@ -3620,7 +3638,7 @@ Metamath implements three kinds of provisos through the use of its "distinct
 variable" conditions.  These restrict what substitutions are allowed, and often
 you will see a proviso such as the following accompanying an axiom or theorem
 (for example, ~ ax-5 and ~ dtru ):
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 <CENTER>Distinct variable groups:
@@ -3712,7 +3730,7 @@ the two distinct variable pairs ` z ` ,` x ` and ` z ` ,` y ` , which will
 implicitly accompany step 1 (although not shown explicitly in step 1 of the
 proof listing).  Thus step 1 can be read in full, "` ( x e. y -> A. z `
 ` x e. y ) ` where ` z ` ,` x ` are distinct and ` z ` ,` y ` are distinct."
-The proofverifier will check that this requirement accompanies the final
+The proof verifier will check that this requirement accompanies the final
 theorem, otherwise it will flag the proof step as invalid.  You can see this
 requirement in the "Distinct variable groups" list on the ~ cleljustALT page.
 </P>
@@ -3791,7 +3809,7 @@ violation.  If you are having trouble understanding the distinct
 variable concept, you should really do this experiment to help you
 understand it better.
 -->
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 For a dynamic example of distinct variable inheritance in action, enter the
@@ -4121,7 +4139,7 @@ requirements of a theorem he or she wishes to reference.
 <A NAME="dvnote6"></A>
 <B><FONT COLOR="#006633">Note 6</FONT></B>
 &nbsp;&nbsp;&nbsp;
-Introducing redundant distinct variable groups in a theorem is always allowed
+Introducing unnecessary distinct variable groups in a theorem is always allowed
 and doesn't affect its proof in any way; all it does is weaken the theorem so
 that later theorems may also have to be weaker in order to make use of it.  We
 rarely do this, but when we do (for the purpose of creating a weaker starting
@@ -4296,7 +4314,7 @@ to the RunParms.txt file.  (The 4 excluded definitions, ~ df-bi , ~ df-clab ,
 mmj2's capabilities.  You can consider them additional axioms if it bothers
 you.  See also the discussion "Definitions or Axioms?" in the
 <A HREF="#class">Theory of Classes</A> section above.)
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <!--
 <P>Raph Levien has written a program to translate Metamath's set.mm database
@@ -4374,7 +4392,7 @@ for the particular logic system used by the database.  (Such a tool might
 recognize the "df-" prefix as a keyword meaning "definition" and would impose
 constraints to guarantee that the definition is sound under the axiom system of
 that database.)
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <!--
 But except for four cases ( ~ df-bi , ~ df-clab , ~ df-cleq , and ~ df-clel ),
@@ -4474,7 +4492,7 @@ were eliminated.  (You can also do this from within the <A
 HREF="../index.html#mmprog">Metamath program</A>:  after "read set.mm",
 type "show trace_back tfr2 /essential /axioms" to get the list for
 Transfinite Recursion theorem ~ tfr2 .)
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 You shouldn't expect to see immediately the relationship between the
@@ -4572,7 +4590,7 @@ results when the function is evaluated at the argument.  (The result, however,
 is well-defined for any classes whatsoever substituted for the class variables,
 and our definition ends up evaluating to the empty set when it is not
 meaningful&mdash;see for example theorem ~ ndmfv .)
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 Textbooks often use the familiar notation &quot;` F ( A ) `&quot; for the value
@@ -4660,7 +4678,7 @@ R _FrSe A
 (To find out where say "A Fn B" is defined, type "search * 'A Fn B'" in the
 metamath program after reading in set.mm.  In this case, df-fn matches, and you
 can look at the web page ~ df-fn for more information.)
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 There are a several other cases in the notation where infix is used without
@@ -4672,7 +4690,7 @@ F : A -onto-> B
 F : A -1-1-onto-> B
 H Isom R , S ( A , B )
 </PRE>
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 <HR NOSHADE SIZE=1><A NAME="subsys"></A>
@@ -4730,7 +4748,7 @@ SUMMARY="Variations of axiom system">
 As mentioned above, these 10 omitted axioms can be derived from the others (see
 theorems ~ axc5 , ~ axc4 , ~ axc7 , ~ axc10 , ~ axc11 , ~ axc11n , ~ axc15 ,
 ~ axc9 , ~ axc14 , ~ axc16 ).  This system is
-<A HREF="#axiomnote">metalogically complete</A> and is the one we ordinarily
+<A HREF="#axiomnote">scheme-complete</A> and is the one we ordinarily
 use.  It is equivalent to system S3' in Remark 9.6 of
 [<A HREF="#bibmegill">Megill</A>].
 </P>
@@ -4766,7 +4784,7 @@ Omit all predicate calculus axioms <I>except</I> ~ ax-4 , ~ ax-5 , ~ ax-6 ,
 </TD>
 <TD>
 <P>
-This is Tarski's system S2 and is logically (though not <I>metalogically</I>)
+This is Tarski's system S2 and is logically (though not <I>scheme</I>)
 complete.  This means that any substitution instance of the omitted axioms that
 contains no wff metavariables and whose setvar variables are mutually distinct
 can be derived from the axioms of this subsystem.  However, many schemes with
@@ -4882,7 +4900,7 @@ were renumbered to eliminate gaps caused by obsolete or redundant axiom
 schemes, as well as to order them according to their current organization.
 Older papers, slide presentations, and websites may reference the old
 numbering, and the table below provides a cross reference.
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 For further information about this renumbering, see this <A
@@ -5002,8 +5020,8 @@ SUMMARY="Cross reference between orginal and new predicate calculus axioms">
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-c9 </TD><TD> ax-12o&#8203; </TD><TD> ~ axc9 </TD><TD> C9' </TD>
-<TD> ` |- ( -. A. z z = x -> ( -. A. z `
-` z = y -> ( x = y -> A. z x = y ) ) ) ` </TD>
+<TD> ` |- ( -. A. z ` ` z = x -> ( -. A. z `
+` z = y -> ( x = y -> A. z ` ` x = y ) ) ) ` </TD>
 <TD> Quantified Equality </TD></TR>
 
 <TR ALIGN=LEFT>
@@ -5023,8 +5041,8 @@ SUMMARY="Cross reference between orginal and new predicate calculus axioms">
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-c14 </TD><TD> ax-15&#8203; </TD><TD> ~ axc14 </TD><TD> C14' </TD>
-<TD> ` |- ( -. A. z z = x -> ( -. A. z `
-` z = y -> ( x e. y -> A. z x e. y ) ) ) ` </TD>
+<TD> ` |- ( -. A. z ` ` z = x -> ( -. A. z `
+` z = y -> ( x e. y -> A. z ` ` x e. y ) ) ) ` </TD>
 <TD> Quantified Binary Predicate </TD></TR>
 
 <TR ALIGN=LEFT>
@@ -5054,7 +5072,7 @@ Metamath Proof Explorer lets you see in detail all hidden and implicit steps.
 Most standard theorems are accompanied by <A HREF="mmbiblio.html">literature
 cross references</A>, and it will probably be easier to acquire a higher-level
 understanding of them if you consult these.
-</P>
+<!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
 For propositional and predicate calculus, Margaris is now available in an
@@ -6040,7 +6058,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER>
-<I><FONT SIZE=-1>This page was last updated on 8-Jul-2021.</FONT></I>
+<I><FONT SIZE=-1>This page was last updated on 4-Aug-2021.</FONT></I>
 <BR>
 <FONT FACE="ARIAL" SIZE=-2>Your comments are welcome: Norman Megill
 <A HREF="../email.html"><IMG BORDER=0 SRC="_nmemail.gif"

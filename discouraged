@@ -15390,6 +15390,7 @@ New usage of "con4iOLD" is discouraged (0 uses).
 New usage of "con5" is discouraged (1 uses).
 New usage of "con5VD" is discouraged (0 uses).
 New usage of "con5i" is discouraged (2 uses).
+New usage of "conss34OLD" is discouraged (0 uses).
 New usage of "conventions" is discouraged (0 uses).
 New usage of "conventions-label" is discouraged (0 uses).
 New usage of "coprmdvdsOLD" is discouraged (0 uses).
@@ -16202,7 +16203,10 @@ New usage of "fngid" is discouraged (0 uses).
 New usage of "foco2OLD" is discouraged (0 uses).
 New usage of "fourierdlem31OLD" is discouraged (0 uses).
 New usage of "fourierdlem42OLD" is discouraged (0 uses).
+New usage of "fprodcom2OLD" is discouraged (0 uses).
+New usage of "fsumcom2OLD" is discouraged (0 uses).
 New usage of "fsumshftdOLD" is discouraged (0 uses).
+New usage of "fsuppmapnn0fiubOLD" is discouraged (0 uses).
 New usage of "ftalem4OLD" is discouraged (1 uses).
 New usage of "ftalem5OLD" is discouraged (0 uses).
 New usage of "funadj" is discouraged (4 uses).
@@ -18216,6 +18220,7 @@ New usage of "raleleqALT" is discouraged (0 uses).
 New usage of "ralf0OLD" is discouraged (0 uses).
 New usage of "ralnexOLD" is discouraged (0 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
+New usage of "ralxfrdOLD" is discouraged (0 uses).
 New usage of "ramcl2OLD" is discouraged (0 uses).
 New usage of "ramcl2lemOLD" is discouraged (4 uses).
 New usage of "ramtcl2OLD" is discouraged (1 uses).
@@ -18279,6 +18284,8 @@ New usage of "retbwax1" is discouraged (0 uses).
 New usage of "retbwax2" is discouraged (3 uses).
 New usage of "retbwax3" is discouraged (0 uses).
 New usage of "retbwax4" is discouraged (0 uses).
+New usage of "reusv1OLD" is discouraged (0 uses).
+New usage of "reusv2lem2OLD" is discouraged (0 uses).
 New usage of "rexbidvALT" is discouraged (0 uses).
 New usage of "rexbidvaALT" is discouraged (0 uses).
 New usage of "rgenzOLD" is discouraged (0 uses).
@@ -19416,6 +19423,7 @@ Proof modification of "con4iOLD" is discouraged (8 steps).
 Proof modification of "con5" is discouraged (10 steps).
 Proof modification of "con5VD" is discouraged (47 steps).
 Proof modification of "con5i" is discouraged (13 steps).
+Proof modification of "conss34OLD" is discouraged (64 steps).
 Proof modification of "conventions" is discouraged (1 steps).
 Proof modification of "coprmdvdsOLD" is discouraged (256 steps).
 Proof modification of "csbabgOLD" is discouraged (93 steps).
@@ -19748,6 +19756,7 @@ Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "foco2OLD" is discouraged (167 steps).
 Proof modification of "fourierdlem31OLD" is discouraged (946 steps).
 Proof modification of "fourierdlem42OLD" is discouraged (7481 steps).
+Proof modification of "fprodcom2OLD" is discouraged (1241 steps).
 Proof modification of "frege10" is discouraged (27 steps).
 Proof modification of "frege100" is discouraged (31 steps).
 Proof modification of "frege101" is discouraged (49 steps).
@@ -19913,7 +19922,9 @@ Proof modification of "frege95" is discouraged (79 steps).
 Proof modification of "frege96" is discouraged (39 steps).
 Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
+Proof modification of "fsumcom2OLD" is discouraged (1241 steps).
 Proof modification of "fsumshftdOLD" is discouraged (217 steps).
+Proof modification of "fsuppmapnn0fiubOLD" is discouraged (421 steps).
 Proof modification of "ftalem4OLD" is discouraged (455 steps).
 Proof modification of "ftalem5OLD" is discouraged (2088 steps).
 Proof modification of "funcnvmptOLD" is discouraged (291 steps).
@@ -20370,6 +20381,7 @@ Proof modification of "raleleqALT" is discouraged (26 steps).
 Proof modification of "ralf0OLD" is discouraged (47 steps).
 Proof modification of "ralnexOLD" is discouraged (39 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
+Proof modification of "ralxfrdOLD" is discouraged (106 steps).
 Proof modification of "ramcl2OLD" is discouraged (184 steps).
 Proof modification of "ramcl2lemOLD" is discouraged (296 steps).
 Proof modification of "ramtcl2OLD" is discouraged (179 steps).
@@ -20413,6 +20425,8 @@ Proof modification of "retbwax1" is discouraged (195 steps).
 Proof modification of "retbwax2" is discouraged (127 steps).
 Proof modification of "retbwax3" is discouraged (20 steps).
 Proof modification of "retbwax4" is discouraged (13 steps).
+Proof modification of "reusv1OLD" is discouraged (98 steps).
+Proof modification of "reusv2lem2OLD" is discouraged (213 steps).
 Proof modification of "rexbidvALT" is discouraged (10 steps).
 Proof modification of "rexbidvaALT" is discouraged (10 steps).
 Proof modification of "rgen2a" is discouraged (81 steps).
