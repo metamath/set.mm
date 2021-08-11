@@ -1393,6 +1393,11 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>r19.2z</TD>
+  <TD>~ r19.2m</TD>
+</TR>
+
+<TR>
 <TD>r19.45zv</TD>
 <TD>~ r19.45mv </TD>
 </TR>
@@ -1450,10 +1455,20 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
-<TD>elimif , ifbothda , ifboth , ifid , eqif , ifval , elif ,
-ifel , ifcl , ifcld , ifeqor , 2if2 , ifcomnan , csbif ,
+<TD>elimif , ifbothda , ifid , eqif , ifval , elif ,
+ifel , ifeqor , 2if2 , ifcomnan , csbif ,
 csbifgOLD</TD>
 <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>ifboth</TD>
+  <TD>~ ifbothdc</TD>
+</TR>
+
+<TR>
+  <TD>ifcl , ifcld</TD>
+  <TD>~ ifcldcd</TD>
 </TR>
 
 <TR>
@@ -3579,6 +3594,11 @@ divdird, divsubdird, div11d</TD>
 </TR>
 
 <TR>
+  <TD>divmuldivd</TD>
+  <TD>~ divmuldivapd</TD>
+</TR>
+
+<TR>
 <TD>rereccld , redivcld</TD>
 <TD>~ rerecclapd , ~ redivclapd </TD>
 </TR>
@@ -4786,6 +4806,32 @@ related results</TD>
 <TD><I>none</I></TD>
 <TD>Although this is presumably provable, the set.mm proof is not
 intuitionistic and it is lightly used in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>rexanre</TD>
+  <TD><I>none yet</I></TD>
+  <TD>May be feasible once we've added maximum for real numbers</TD>
+</TR>
+
+<TR>
+  <TD>rexfiuz</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on findcard2</TD>
+</TR>
+
+<TR>
+  <TD>rexuzre</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably could be intuitionized although it would be
+  easier after we add maximum for real numbers. It is unused in
+  set.mm for whatever that is worth.</TD>
+</TR>
+
+<TR>
+  <TD>rexico</TD>
+  <TD><I>none</I></TD>
+  <TD>May be feasible once we've added maximum for real numbers</TD>
 </TR>
 
 <TR>
