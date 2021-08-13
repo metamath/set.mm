@@ -14010,6 +14010,7 @@ New usage of "0lno" is discouraged (3 uses).
 New usage of "0lnop" is discouraged (6 uses).
 New usage of "0lt1sr" is discouraged (2 uses).
 New usage of "0ncn" is discouraged (3 uses).
+New usage of "0nelxpOLD" is discouraged (0 uses).
 New usage of "0ngrp" is discouraged (2 uses).
 New usage of "0nnq" is discouraged (22 uses).
 New usage of "0npi" is discouraged (9 uses).
@@ -16102,6 +16103,7 @@ New usage of "elss2prOLD" is discouraged (0 uses).
 New usage of "elunirnALT" is discouraged (0 uses).
 New usage of "elunop" is discouraged (7 uses).
 New usage of "elunop2" is discouraged (0 uses).
+New usage of "elxp2OLD" is discouraged (0 uses).
 New usage of "en3lpVD" is discouraged (0 uses).
 New usage of "en3lplem1VD" is discouraged (1 uses).
 New usage of "en3lplem2VD" is discouraged (1 uses).
@@ -18950,6 +18952,7 @@ New usage of "zringlpirlem3OLD" is discouraged (1 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0erOLD" is discouraged (95 steps).
 Proof modification of "0heALT" is discouraged (25 steps).
+Proof modification of "0nelxpOLD" is discouraged (61 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
 Proof modification of "19.23tOLD" is discouraged (54 steps).
@@ -19702,6 +19705,7 @@ Proof modification of "elqaalem3OLD" is discouraged (1072 steps).
 Proof modification of "elsnxpOLD" is discouraged (203 steps).
 Proof modification of "elss2prOLD" is discouraged (57 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
+Proof modification of "elxp2OLD" is discouraged (82 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
