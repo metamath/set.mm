@@ -20434,7 +20434,7 @@ Proof modification of "re1tbw4" is discouraged (88 steps).
 Proof modification of "re2luk1" is discouraged (198 steps).
 Proof modification of "re2luk2" is discouraged (88 steps).
 Proof modification of "re2luk3" is discouraged (59 steps).
-Proof modification of "reexALT" is discouraged (191 steps).
+Proof modification of "reexALT" is discouraged (19 steps).
 Proof modification of "relopabVD" is discouraged (354 steps).
 Proof modification of "renegcl" is discouraged (34 steps).
 Proof modification of "renegclALT" is discouraged (149 steps).
@@ -20461,7 +20461,7 @@ Proof modification of "rp-frege3g" is discouraged (24 steps).
 Proof modification of "rp-misc1-frege" is discouraged (29 steps).
 Proof modification of "rp-simp2" is discouraged (9 steps).
 Proof modification of "rp-simp2-frege" is discouraged (15 steps).
-Proof modification of "rpnnen1" is discouraged (128 steps).
+Proof modification of "rpnnen1" is discouraged (175 steps).
 Proof modification of "rpnnen1OLD" is discouraged (124 steps).
 Proof modification of "rpnnen1lem1" is discouraged (345 steps).
 Proof modification of "rpnnen1lem1OLD" is discouraged (345 steps).
@@ -20471,6 +20471,7 @@ Proof modification of "rpnnen1lem4" is discouraged (155 steps).
 Proof modification of "rpnnen1lem4OLD" is discouraged (151 steps).
 Proof modification of "rpnnen1lem5" is discouraged (1023 steps).
 Proof modification of "rpnnen1lem5OLD" is discouraged (1017 steps).
+Proof modification of "rpnnen1lem6" is discouraged (128 steps).
 Proof modification of "rspsbc2" is discouraged (65 steps).
 Proof modification of "rspsbc2VD" is discouraged (90 steps).
 Proof modification of "ruALT" is discouraged (29 steps).
