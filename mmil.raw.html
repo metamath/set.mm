@@ -4679,7 +4679,21 @@ theorem is unused in set.mm.</TD>
 <TR>
 <TD>df-sqrt</TD>
 <TD>~ df-rsqrt</TD>
-<TD>See discussion of complex square roots in the comment of ~ df-rsqrt</TD>
+<TD>See discussion of complex square roots in the comment of ~ df-rsqrt .
+Here's one possibility if we do want to define square roots on (some)
+complex numbers:
+It should be possible to define the complex square root function on all
+complex numbers satisfying ` ( Im `` x ) # 0 \/ 0 <_ ( Re `` x ) ` , using a
+similar construction to the one used in set.mm. You need the real square
+root as a basis for the construction, but then there is a trick using
+the complex number x + |x| (see sqreu) that yields the complex square
+root whenever it is apart from zero (you need to divide by it at one
+point IIRC), which is exactly on the negative real line. You can either
+live with this constraint, which gives you the complex square root except
+on the negative real line (which puts a hole at zero), or you can extend
+it by continuity to zero as well by joining it with the real square root.
+The disjunctive domain of the resulting function might not be so
+useful though.</TD>
 </TR>
 
 <TR>
