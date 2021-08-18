@@ -1777,6 +1777,11 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
+  <TD>dffv3</TD>
+  <TD>~ dffv3g</TD>
+</TR>
+
+<TR>
 <TD ROWSPAN="5">fvex</TD>
 <TD>~ funfvex </TD>
 <TD>when evaluating a function within its domain</TD>
@@ -1822,6 +1827,16 @@ and is evaluated at a set</TD>
 <TR>
 <TD>f0cli</TD>
 <TD>~ ffvelrn </TD>
+</TR>
+
+<TR>
+  <TD>dff3</TD>
+  <TD>~ dff3im</TD>
+</TR>
+
+<TR>
+  <TD>dff4</TD>
+  <TD>~ dff4im</TD>
 </TR>
 
 <TR>
@@ -3186,12 +3201,12 @@ favor of theorems in deduction form.</TD>
 
 <TR>
 <TD>leltne , leltned</TD>
-<TD><I>none</I></TD>
+<TD>~ leltap , ~ leltapd</TD>
 </TR>
 
 <TR>
 <TD>ltneOLD</TD>
-<TD>~ ltne </TD>
+<TD>~ ltne , ~ ltap</TD>
 </TR>
 
 <TR>
@@ -4524,6 +4539,21 @@ than reals.</TD>
 </TR>
 
 <TR>
+  <TD>seqshft</TD>
+  <TD><I>none currently</I></TD>
+  <TD>need to figure out how to adjust this for the differences
+  between set.mm and iset.mm concerning ` seq `.</TD>
+</TR>
+
+<TR>
+  <TD>df-sgn and theorems related to the sgn function</TD>
+  <TD><I>none</I></TD>
+  <TD>To choose a value near zero requires knowing the argument
+  with unlimited precision. It would be possible to define
+  for rational numbers, or real numbers apart from zero.</TD>
+</TR>
+
+<TR>
 <TD>mulre</TD>
 <TD>~ mulreap</TD>
 </TR>
@@ -4609,7 +4639,7 @@ iset.mm equivalent removes some complex number related parts.</TD>
 </TR>
 
 <TR>
-<TD>sqrtneg</TD>
+<TD>sqrtneg , sqrtnegd</TD>
 <TD><I>none</I></TD>
 <TD>Although it may be possible to extend the domain of square root
 somewhat beyond nonnegative reals without excluded middle, in
@@ -4627,17 +4657,17 @@ in the comment of ~ df-rsqrt</TD>
 </TR>
 
 <TR>
-<TD>absrpcl</TD>
-<TD>~ absrpclap</TD>
+<TD>absrpcl , absrpcld</TD>
+<TD>~ absrpclap , ~ absrpclapd</TD>
 </TR>
 
 <TR>
-<TD>absdiv</TD>
-<TD>~ absdivap</TD>
+<TD>absdiv , absdivzi , absdivd</TD>
+<TD>~ absdivap , ~ absdivapzi , ~ absdivapd</TD>
 </TR>
 
 <TR>
-<TD>absor , absori</TD>
+<TD>absor , absori , absord</TD>
 <TD><I>none</I></TD>
 <TD>We could prove this for rationals, or real numbers apart from zero,
 if we wanted</TD>
@@ -4670,6 +4700,48 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>recval</TD>
+  <TD>~ recvalap</TD>
+</TR>
+
+<TR>
+  <TD>absgt0 , absgt0i</TD>
+  <TD>~ absgt0ap , absgt0api</TD>
+</TR>
+
+<TR>
+  <TD>absmax</TD>
+  <TD><I>none</I></TD>
+  <TD>The right hand side of this theorem (which is in terms of absolute
+  value) could serve as a definition of maximum, but the left hand side
+  (in terms of ` if ` ) is not well behaved in the absence of trichotomy.</TD>
+</TR>
+
+<TR>
+  <TD>abs1m</TD>
+  <TD><I>none</I></TD>
+  <TD>Because this theorem provides ` ( * `` A ) / ( abs `` A ) ` as the
+  answer if ` A =/= 0 ` and ` i ` as the answer if ` A = 0 ` , and uses
+  excluded middle to combine those cases, it is presumably not provable
+  as stated. We could prove the theorem with the additional condition
+  that ` A # 0 ` , but it is unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>abslem2</TD>
+  <TD><I>none</I></TD>
+  <TD>Although this could presumably be proved if not equal were
+  changed to apart, it is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>rddif , absrdbnd</TD>
+  <TD><I>none</I></TD>
+  <TD>As described under df-fl , floor is problematic without
+  excluded middle.</TD>
+</TR>
+
+<TR>
   <TD>rexanre</TD>
   <TD><I>none yet</I></TD>
   <TD>May be feasible once we've added maximum for real numbers</TD>
@@ -4693,6 +4765,60 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>rexico</TD>
   <TD><I>none</I></TD>
   <TD>May be feasible once we've added maximum for real numbers</TD>
+</TR>
+
+<TR>
+  <TD>cau3lem , cau3 , cau4 , caubnd2 , caubnd</TD>
+  <TD>~ cvg1n</TD>
+  <TD>The Cauchy conditions in these theorems do not fix the
+  rate of convergence (for example via a modulus of convergence),
+  so they are not suitable for sequence convergence in iset.mm.</TD>
+</TR>
+
+<TR>
+  <TD>sqreulem , sqreu , sqrtcl , sqrtcld , sqrtthlem , sqrtf ,
+  sqrtth , sqsqrtd , msqsqrtd , sqr00d , sqrtrege0 , sqrtrege0d ,
+  eqsqrtor , eqsqrtd , eqsqrt2d</TD>
+  <TD>~ rersqreu , ~ resqrtcl , ~ resqrtcld , ~ resqrtth</TD>
+  <TD>As described at ~ df-rsqrt , square roots of complex numbers
+  are in set.mm defined with the help of excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>df-limsup and all superior limit theorems</TD>
+  <TD><I>none</I></TD>
+  <TD>This is not developed in iset.mm currently. If it was it
+  would presumably be noticeably different from set.mm given
+  various differences relating to sequence convergence,
+  supremums, etc.</TD>
+</TR>
+
+<TR>
+  <TD>df-rlim and theorems related to limits of partial
+  functions on the reals</TD>
+  <TD><I>none</I></TD>
+  <TD>This is not developed in iset.mm currently. If it was it
+  would presumably be noticeably different from set.mm given
+  various differences relating to convergence.</TD>
+</TR>
+
+<TR>
+  <TD>df-o1 and theorems related to eventually bounded functions</TD>
+  <TD><I>none</I></TD>
+  <TD>This is not developed in iset.mm currently. If it was it
+  would presumably be noticeably different from set.mm given
+  various differences relating to sequence convergence,
+  supremums, etc.</TD>
+</TR>
+
+<TR>
+  <TD>df-lo1 and theorems related to eventually upper bounded
+  functions</TD>
+  <TD><I>none</I></TD>
+  <TD>This is not developed in iset.mm currently. If it was it
+  would presumably be noticeably different from set.mm given
+  various differences relating to sequence convergence,
+  supremums, etc.</TD>
 </TR>
 
 <TR>
