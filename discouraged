@@ -1707,12 +1707,6 @@
 "bezoutlem2OLD" is used by "bezoutlem3OLD".
 "bezoutlem2OLD" is used by "bezoutlem4OLD".
 "bezoutlem3OLD" is used by "bezoutlem4OLD".
-"bitr3" is used by "3orbi123VD".
-"bitr3" is used by "csbrngVD".
-"bitr3" is used by "e2ebindALT".
-"bitr3" is used by "e2ebindVD".
-"bitr3" is used by "sbc3orgVD".
-"bitr3" is used by "trsbcVD".
 "bj-0" is used by "bj-1".
 "bj-csbsnlem" is used by "bj-csbsn".
 "bj-df-clel" is used by "bj-dfclel".
@@ -14024,6 +14018,7 @@ New usage of "0psubclN" is discouraged (1 uses).
 New usage of "0r" is discouraged (11 uses).
 New usage of "0reALT" is discouraged (0 uses).
 New usage of "0vfval" is discouraged (9 uses).
+New usage of "139prmALT" is discouraged (0 uses).
 New usage of "19.21a3con13vVD" is discouraged (0 uses).
 New usage of "19.23tOLD" is discouraged (0 uses).
 New usage of "19.29rOLD" is discouraged (0 uses).
@@ -14550,7 +14545,6 @@ New usage of "bezoutlem2OLD" is discouraged (2 uses).
 New usage of "bezoutlem3OLD" is discouraged (1 uses).
 New usage of "bezoutlem4OLD" is discouraged (0 uses).
 New usage of "biorfiOLD" is discouraged (0 uses).
-New usage of "bitr3" is discouraged (6 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bitsfzolemOLD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
@@ -18954,6 +18948,7 @@ Proof modification of "0erOLD" is discouraged (95 steps).
 Proof modification of "0heALT" is discouraged (25 steps).
 Proof modification of "0nelxpOLD" is discouraged (61 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
+Proof modification of "139prmALT" is discouraged (834 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
 Proof modification of "19.23tOLD" is discouraged (54 steps).
 Proof modification of "19.29rOLD" is discouraged (30 steps).
@@ -18976,6 +18971,7 @@ Proof modification of "2uasban" is discouraged (34 steps).
 Proof modification of "2uasbanh" is discouraged (214 steps).
 Proof modification of "2uasbanhVD" is discouraged (313 steps).
 Proof modification of "2zrngALT" is discouraged (207 steps).
+Proof modification of "31prm" is discouraged (541 steps).
 Proof modification of "3anidm12p1" is discouraged (5 steps).
 Proof modification of "3anidm12p2" is discouraged (19 steps).
 Proof modification of "3decOLD" is discouraged (121 steps).
@@ -19154,7 +19150,6 @@ Proof modification of "bezoutlem2OLD" is discouraged (264 steps).
 Proof modification of "bezoutlem3OLD" is discouraged (991 steps).
 Proof modification of "bezoutlem4OLD" is discouraged (906 steps).
 Proof modification of "biorfiOLD" is discouraged (19 steps).
-Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bitsfzolemOLD" is discouraged (737 steps).
 Proof modification of "bj-0" is discouraged (5 steps).
