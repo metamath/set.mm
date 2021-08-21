@@ -15771,6 +15771,7 @@ New usage of "distrsr" is discouraged (3 uses).
 New usage of "divalglem2OLD" is discouraged (2 uses).
 New usage of "divalglem5OLD" is discouraged (1 uses).
 New usage of "divalglem9OLD" is discouraged (0 uses).
+New usage of "divalgmodOLD" is discouraged (0 uses).
 New usage of "djaclN" is discouraged (0 uses).
 New usage of "djaffvalN" is discouraged (1 uses).
 New usage of "djafvalN" is discouraged (1 uses).
@@ -18175,6 +18176,7 @@ New usage of "prmgaplcmlem2OLD" is discouraged (1 uses).
 New usage of "prmgapprmo" is discouraged (0 uses).
 New usage of "prmgapprmorOLD" is discouraged (0 uses).
 New usage of "prmgapprmorlemOLD" is discouraged (1 uses).
+New usage of "prmn2uzge3OLD" is discouraged (0 uses).
 New usage of "prmordvdslcmfOLD" is discouraged (1 uses).
 New usage of "prmordvdslcmsOLDOLD" is discouraged (1 uses).
 New usage of "prmorlefacOLD" is discouraged (0 uses).
@@ -19499,6 +19501,7 @@ Proof modification of "disjxiunOLD" is discouraged (860 steps).
 Proof modification of "divalglem2OLD" is discouraged (306 steps).
 Proof modification of "divalglem5OLD" is discouraged (404 steps).
 Proof modification of "divalglem9OLD" is discouraged (509 steps).
+Proof modification of "divalgmodOLD" is discouraged (389 steps).
 Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "dral1ALT" is discouraged (34 steps).
 Proof modification of "dral2-o" is discouraged (14 steps).
@@ -20366,6 +20369,7 @@ Proof modification of "prmgaplcmlem2OLD" is discouraged (185 steps).
 Proof modification of "prmgapprmo" is discouraged (387 steps).
 Proof modification of "prmgapprmorOLD" is discouraged (115 steps).
 Proof modification of "prmgapprmorlemOLD" is discouraged (217 steps).
+Proof modification of "prmn2uzge3OLD" is discouraged (25 steps).
 Proof modification of "prmordvdslcmfOLD" is discouraged (317 steps).
 Proof modification of "prmordvdslcmsOLDOLD" is discouraged (443 steps).
 Proof modification of "prmorlefacOLD" is discouraged (331 steps).
