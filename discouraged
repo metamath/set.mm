@@ -152,7 +152,6 @@
 "1nq" is used by "reclem3pr".
 "1nq" is used by "recmulnq".
 "1nqenq" is used by "recmulnq".
-"1p1e2apr1" is used by "pellfundgt1".
 "1pi" is used by "1lt2nq".
 "1pi" is used by "1lt2pi".
 "1pi" is used by "1nq".
@@ -10027,6 +10026,8 @@
 "mulerpq" is used by "mulassnq".
 "mulerpq" is used by "recmulnq".
 "mulerpqlem" is used by "mulerpq".
+"mulgnnclOLD" is used by "mulgnnassOLD".
+"mulgnndirOLD" is used by "mulgnnassOLD".
 "mulgt0sr" is used by "axpre-mulgt0".
 "mulgt0sr" is used by "sqgt0sr".
 "mulidnq" is used by "1idpr".
@@ -13874,7 +13875,7 @@ New usage of "1lt2pi" is discouraged (1 uses).
 New usage of "1ne0sr" is discouraged (1 uses).
 New usage of "1nq" is discouraged (9 uses).
 New usage of "1nqenq" is discouraged (1 uses).
-New usage of "1p1e2apr1" is discouraged (1 uses).
+New usage of "1p1e2apr1" is discouraged (0 uses).
 New usage of "1pi" is discouraged (11 uses).
 New usage of "1pr" is discouraged (16 uses).
 New usage of "1psubclN" is discouraged (0 uses).
@@ -17296,6 +17297,9 @@ New usage of "mulcompr" is discouraged (6 uses).
 New usage of "mulcomsr" is discouraged (5 uses).
 New usage of "mulerpq" is discouraged (3 uses).
 New usage of "mulerpqlem" is discouraged (1 uses).
+New usage of "mulgnnassOLD" is discouraged (0 uses).
+New usage of "mulgnnclOLD" is discouraged (1 uses).
+New usage of "mulgnndirOLD" is discouraged (1 uses).
 New usage of "mulgt0sr" is discouraged (2 uses).
 New usage of "mulidnq" is discouraged (11 uses).
 New usage of "mulidpi" is discouraged (5 uses).
@@ -20026,6 +20030,9 @@ Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
 Proof modification of "mptrabexOLD" is discouraged (15 steps).
 Proof modification of "mreexexdOLD" is discouraged (872 steps).
+Proof modification of "mulgnnassOLD" is discouraged (439 steps).
+Proof modification of "mulgnnclOLD" is discouraged (39 steps).
+Proof modification of "mulgnndirOLD" is discouraged (440 steps).
 Proof modification of "n0fOLD" is discouraged (51 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nbgraopALT" is discouraged (271 steps).
