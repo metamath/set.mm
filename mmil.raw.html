@@ -1518,6 +1518,30 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
+  <TD>intex</TD>
+  <TD>~ inteximm , ~ intexr</TD>
+  <TD>inteximm is the forward direction
+  (but for inhabited rather than non-empty classes) and intexr
+  is the reverse direction.</TD>
+</TR>
+
+<TR>
+  <TD>intexab</TD>
+  <TD>~ intexabim</TD>
+</TR>
+
+<TR>
+  <TD>intexrab</TD>
+  <TD>~ intexrabim</TD>
+</TR>
+
+<TR>
+  <TD>iinexg</TD>
+  <TD>~ iinexgm</TD>
+  <TD>Changes not empty to inhabited</TD>
+</TR>
+
+<TR>
 <TD>intabs</TD>
 <TD><I>none</I></TD>
 <TD>Lightly used in set.mm, and the set.mm proof is not intuitionistic</TD>
@@ -1692,14 +1716,19 @@ we don't have a specific proof analogous to ~ ordtriexmid .</TD>
 </TR>
 
 <TR>
-<TD>ordtri3 , ordtri4 ,
-ordtri2or2 , ordtri2or3 , dford2
+<TD>ordtri3 , ordtri4 , ordtri2or3 , dford2
 </TD>
 <TD><I>none</I></TD>
 <TD>Ordinal trichotomy implies the law of the excluded middle as shown
 in ~ ordtriexmid . We don't have similar proofs for every variation of
 of trichotomy but most of them are presumably powerful enough to imply
 excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>ordtri2or2</TD>
+  <TD>~ ordtri2or2exmid</TD>
+  <TD>Ordinal trichotomy implies excluded middle.</TD>
 </TR>
 
 <TR>
@@ -2017,8 +2046,8 @@ fair bit of intuitionizing.</TD>
 
 <TR>
 <TD>onint</TD>
-<TD><I>none</I></TD>
-<TD>Conjectured to not be provable without excluded middle. If you apply onint to a pair you can derive totality of the order.</TD>
+<TD>~ onintexmid</TD>
+<TD>Implies excluded middle as shown in onintexmid.</TD>
 </TR>
 
 <TR>
@@ -2035,14 +2064,19 @@ fair bit of intuitionizing.</TD>
 
 <TR>
 <TD>oninton</TD>
-<TD><I>none yet</I></TD>
-<TD>This one (with non-empty changed to inhabited) I think can still be salvaged though. From the fact that it is inhabited you get that it exists, and is a subset of an ordinal x. It is an intersection of transitive sets so it is transitive, and of course all its members are members of x so they are transitive too. And E. Fr A falls to subsets.</TD>
+<TD>~ onintonm</TD>
 </TR>
 
 <TR>
-<TD>onintrab, onintrab2</TD>
-<TD><I>none yet</I></TD>
-<TD>The set.mm proof uses oninton.</TD>
+<TD>onintrab</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on the converse of ~ inteximm .</TD>
+</TR>
+
+<TR>
+<TD>onintrab2</TD>
+<TD>~ onintrab2im</TD>
+<TD>The converse would appear to need the converse of ~ inteximm .</TD>
 </TR>
 
 <TR>
@@ -2053,8 +2087,7 @@ fair bit of intuitionizing.</TD>
 
 <TR>
 <TD>onminex</TD>
-<TD><I>none yet</I></TD>
-<TD>falls as written because it implies onint, but it might be useful to keep the reverse direction for subsets that do have a minimum.</TD>
+<TD><I>none</I></TD>
 </TR>
 
 <TR>
@@ -2678,6 +2711,148 @@ this implies excluded middle</TD>
 <TD>ax-reg , axreg2 , zfregcl</TD>
 <TD>~ ax-setind </TD>
 <TD>ax-reg implies excluded middle as seen at ~ regexmid</TD>
+</TR>
+
+<TR>
+  <TD>df-aleph and all theorems involving aleph</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>df-cf and all theorems involving cofinality</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>df-acn and all theorems using this definition</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>cardf2 , cardon , isnum2</TD>
+  <TD>~ cardcl , ~ isnumi</TD>
+  <TD>It would also be easy to prove ` Fun card `
+  if there is a need.</TD>
+</TR>
+
+<TR>
+  <TD>ennum</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isnum2</TD>
+</TR>
+
+<TR>
+  <TD>tskwe</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on df-sdom</TD>
+</TR>
+
+<TR>
+  <TD>xpnum</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isnum2</TD>
+</TR>
+
+<TR>
+  <TD>cardval3</TD>
+  <TD>~ cardval3ex</TD>
+</TR>
+
+<TR>
+  <TD>cardid2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on onint</TD>
+</TR>
+
+<TR>
+  <TD>isnum3</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>oncardid</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on cardid2</TD>
+</TR>
+
+<TR>
+  <TD>cardidm</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably this would need a condition on ` A `
+  but even with that, the set.mm proof relies on
+  cardid2</TD>
+</TR>
+
+<TR>
+  <TD>oncard</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on theorems we don't have,
+  and this theorem is unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>ficardom</TD>
+  <TD><I>none</I></TD>
+  <TD>Both the set.mm proof, and perhaps some possible alternative
+  proofs, rely on onomeneq and perhaps other theorems we don't have
+  currently.</TD>
+</TR>
+
+<TR>
+  <TD>ficardid</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on cardid2</TD>
+</TR>
+
+<TR>
+  <TD>cardnn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on a variety of theorems we don't have
+  currently.</TD>
+</TR>
+
+<TR>
+  <TD>cardnueq0</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on cardid2</TD>
+</TR>
+
+<TR>
+  <TD>cardne</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ordinal trichotomy (and if that can be
+  solved there might be some more minor problems which require revisions
+  to the theorem)</TD>
+</TR>
+
+<TR>
+  <TD>carden2a</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>carden2b</TD>
+  <TD>~ carden2bex</TD>
+</TR>
+
+<TR>
+  <TD>card1 , cardsn</TD>
+  <TD><I>none</I></TD>
+  <TD>Rely on a variety of theorems we don't currently have.
+  Lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>carddomi2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>sdomsdomcardi</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on a variety of theorems we don't currently have.</TD>
 </TR>
 
 <TR>
