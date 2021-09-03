@@ -4597,7 +4597,6 @@
 "df-gdiv" is used by "vsfval".
 "df-gexOLD" is used by "gexvalOLD".
 "df-ghomOLD" is used by "elghomlem1OLD".
-"df-gid" is used by "fngid".
 "df-gid" is used by "gidval".
 "df-ginv" is used by "grpoinvfval".
 "df-grpo" is used by "isgrpo".
@@ -4605,7 +4604,6 @@
 "df-gt" is used by "gt-lth".
 "df-gte" is used by "gte-lte".
 "df-gte" is used by "gte-lteh".
-"df-gx" is used by "gxfval".
 "df-h0op" is used by "ho0f".
 "df-h0op" is used by "ho0val".
 "df-h0op" is used by "pjbdlni".
@@ -6175,17 +6173,9 @@
 "grpo2inv" is used by "grpodivinv".
 "grpo2inv" is used by "grpoinvdiv".
 "grpo2inv" is used by "grpoinvf".
-"grpo2inv" is used by "gxinv2".
-"grpo2inv" is used by "gxmul".
-"grpo2inv" is used by "gxneg".
-"grpo2inv" is used by "gxneg2".
-"grpo2inv" is used by "gxsuc".
 "grpo2inv" is used by "nvnegneg".
 "grpoass" is used by "ablo32".
 "grpoass" is used by "ablo4".
-"grpoass" is used by "grpo2grp".
-"grpoass" is used by "grpoasscan1".
-"grpoass" is used by "grpoasscan2".
 "grpoass" is used by "grpoidinvlem1".
 "grpoass" is used by "grpoidinvlem2".
 "grpoass" is used by "grpoidinvlem4".
@@ -6197,30 +6187,21 @@
 "grpoass" is used by "grponpcan".
 "grpoass" is used by "grpopnpcan2".
 "grpoass" is used by "grporcan".
-"grpoass" is used by "gxcom".
-"grpoass" is used by "gxnn0add".
 "grpoass" is used by "hhssabloilem".
 "grpoass" is used by "nvass".
 "grpoass" is used by "rngoaass".
 "grpoass" is used by "vcaass".
 "grpoass" is used by "vcm".
-"grpoasscan1" is used by "gxcom".
-"grpoasscan1" is used by "gxsuc".
-"grpoasscan2" is used by "gxadd".
-"grpoasscan2" is used by "gxcom".
 "grpocl" is used by "ablo4".
 "grpocl" is used by "ablo4pnp".
 "grpocl" is used by "divrngcl".
 "grpocl" is used by "ghomco".
-"grpocl" is used by "grpo2grp".
 "grpocl" is used by "grpodivf".
 "grpocl" is used by "grpoidinvlem2".
 "grpocl" is used by "grpoidinvlem3".
 "grpocl" is used by "grpoinvop".
 "grpocl" is used by "grpomuldivass".
 "grpocl" is used by "grpopnpcan2".
-"grpocl" is used by "gxcl".
-"grpocl" is used by "gxcom".
 "grpocl" is used by "iscringd".
 "grpocl" is used by "nvgcl".
 "grpocl" is used by "rngogcl".
@@ -6233,7 +6214,6 @@
 "grpodivcl" is used by "dmncan1".
 "grpodivcl" is used by "ghomdiv".
 "grpodivcl" is used by "grpodivdiv".
-"grpodivcl" is used by "grpodiveq".
 "grpodivcl" is used by "grpokerinj".
 "grpodivcl" is used by "grponpncan".
 "grpodivdiv" is used by "ablodivdiv".
@@ -6243,7 +6223,6 @@
 "grpodivfval" is used by "nvmfval".
 "grpodivid" is used by "ablonncan".
 "grpodivid" is used by "grpoeqdivid".
-"grpodivid" is used by "grpopncan".
 "grpodivinv" is used by "ablodivdiv4".
 "grpodivval" is used by "ablodivdiv4".
 "grpodivval" is used by "grpodivdiv".
@@ -6261,7 +6240,6 @@
 "grpofo" is used by "grporndm".
 "grpofo" is used by "hhssabloilem".
 "grpofo" is used by "nvgf".
-"grpofo" is used by "resgrprn".
 "grpofo" is used by "rngodm1dm2".
 "grpofo" is used by "rngosn3".
 "grpofo" is used by "vcoprnelem".
@@ -6269,12 +6247,8 @@
 "grpoid" is used by "hhssnv".
 "grpoidcl" is used by "ghomidOLD".
 "grpoidcl" is used by "gidsn".
-"grpoidcl" is used by "grpo2grp".
 "grpoidcl" is used by "grpoid".
-"grpoidcl" is used by "grpoinvid".
 "grpoidcl" is used by "grpokerinj".
-"grpoidcl" is used by "gxcl".
-"grpoidcl" is used by "gxid".
 "grpoidcl" is used by "keridl".
 "grpoidcl" is used by "nvzcl".
 "grpoidcl" is used by "rngo0cl".
@@ -6307,10 +6281,7 @@
 "grpoinv" is used by "grpolinv".
 "grpoinv" is used by "grporinv".
 "grpoinvcl" is used by "ablodivdiv4".
-"grpoinvcl" is used by "grpo2grp".
 "grpoinvcl" is used by "grpo2inv".
-"grpoinvcl" is used by "grpoasscan1".
-"grpoinvcl" is used by "grpoasscan2".
 "grpoinvcl" is used by "grpodivf".
 "grpoinvcl" is used by "grpodivinv".
 "grpoinvcl" is used by "grpoinvdiv".
@@ -6323,11 +6294,6 @@
 "grpoinvcl" is used by "grponnncan2".
 "grpoinvcl" is used by "grponpcan".
 "grpoinvcl" is used by "grpopnpcan2".
-"grpoinvcl" is used by "gxcl".
-"grpoinvcl" is used by "gxcom".
-"grpoinvcl" is used by "gxinv".
-"grpoinvcl" is used by "gxinv2".
-"grpoinvcl" is used by "gxsuc".
 "grpoinvcl" is used by "isdrngo2".
 "grpoinvcl" is used by "rngonegcl".
 "grpoinvcl" is used by "vcm".
@@ -6337,18 +6303,11 @@
 "grpoinvf" is used by "nvinvfval".
 "grpoinvfval" is used by "grpoinvf".
 "grpoinvfval" is used by "grpoinvval".
-"grpoinvid" is used by "gxid".
-"grpoinvid" is used by "gxinv".
-"grpoinvid" is used by "gxnn0neg".
-"grpoinvid1" is used by "grpoinvid".
 "grpoinvid1" is used by "grpoinvop".
 "grpoinvid1" is used by "rngonegmn1l".
 "grpoinvid2" is used by "rngonegmn1r".
 "grpoinvop" is used by "grpoinvdiv".
 "grpoinvop" is used by "grpopnpcan2".
-"grpoinvop" is used by "gxcom".
-"grpoinvop" is used by "gxinv".
-"grpoinvop" is used by "gxsuc".
 "grpoinvval" is used by "grpoinv".
 "grpoinvval" is used by "grpoinvcl".
 "grpolcan" is used by "grpo2inv".
@@ -6358,18 +6317,13 @@
 "grpolcan" is used by "vclcan".
 "grpolid" is used by "ablonncan".
 "grpolid" is used by "ghomidOLD".
-"grpolid" is used by "grpo2grp".
-"grpolid" is used by "grpoasscan1".
 "grpolid" is used by "grpoeqdivid".
 "grpolid" is used by "grpoid".
-"grpolid" is used by "grpoinvid".
 "grpolid" is used by "grpoinvid1".
 "grpolid" is used by "grpoinvid2".
 "grpolid" is used by "grpoinvop".
 "grpolid" is used by "grpolcan".
 "grpolid" is used by "grpopnpcan2".
-"grpolid" is used by "gxcom".
-"grpolid" is used by "gxnn0suc".
 "grpolid" is used by "hhssabloilem".
 "grpolid" is used by "keridl".
 "grpolid" is used by "nv0lid".
@@ -6380,9 +6334,7 @@
 "grpolid" is used by "vcm".
 "grpolidinv" is used by "grpoidinv".
 "grpolidinv" is used by "grpon0".
-"grpolinv" is used by "grpo2grp".
 "grpolinv" is used by "grpo2inv".
-"grpolinv" is used by "grpoasscan2".
 "grpolinv" is used by "grpoinvid1".
 "grpolinv" is used by "grpoinvid2".
 "grpolinv" is used by "grpolcan".
@@ -6397,7 +6349,6 @@
 "grpomuldivass" is used by "ablodivdiv".
 "grpomuldivass" is used by "ablomuldiv".
 "grpomuldivass" is used by "grponpncan".
-"grpomuldivass" is used by "grpopncan".
 "grpomuldivass" is used by "nvaddsubass".
 "grpon0" is used by "0ngrp".
 "grpon0" is used by "rngone0".
@@ -6405,36 +6356,27 @@
 "grponnncan2" is used by "nvnnncan2".
 "grponpcan" is used by "ablonnncan".
 "grponpcan" is used by "ghomdiv".
-"grponpcan" is used by "grpodiveq".
 "grponpcan" is used by "grpoeqdivid".
 "grponpcan" is used by "grponpncan".
 "grponpncan" is used by "nvmtri2".
 "grpopnpcan2" is used by "grponnncan2".
 "grporcan" is used by "ghomdiv".
-"grporcan" is used by "grpodiveq".
 "grporcan" is used by "grpoid".
 "grporcan" is used by "grpoinveu".
 "grporcan" is used by "nvrcan".
 "grporcan" is used by "rngorcan".
 "grporcan" is used by "rngorz".
 "grporcan" is used by "vcrcan".
-"grporid" is used by "grpoasscan2".
 "grporid" is used by "grpoinvid1".
 "grporid" is used by "grpoinvid2".
 "grporid" is used by "grponpcan".
-"grporid" is used by "grpopncan".
 "grporid" is used by "grporcan".
-"grporid" is used by "gxcom".
-"grporid" is used by "gxid".
-"grporid" is used by "gxmodid".
-"grporid" is used by "gxnn0add".
 "grporid" is used by "nv0rid".
 "grporid" is used by "rngo0rid".
 "grporid" is used by "rngolz".
 "grporid" is used by "vc0rid".
 "grporid" is used by "vcm".
 "grporinv" is used by "grpo2inv".
-"grporinv" is used by "grpoasscan1".
 "grporinv" is used by "grpodivid".
 "grporinv" is used by "grpoinvid1".
 "grporinv" is used by "grpoinvid2".
@@ -6468,64 +6410,6 @@
 "gt0srpr" is used by "mulgt0sr".
 "gt0srpr" is used by "recexsrlem".
 "gte-lteh" is used by "ex-gte".
-"gx0" is used by "gxcl".
-"gx0" is used by "gxcom".
-"gx0" is used by "gxid".
-"gx0" is used by "gxinv".
-"gx0" is used by "gxnn0add".
-"gx0" is used by "gxnn0mul".
-"gx0" is used by "gxnn0neg".
-"gx0" is used by "gxnn0suc".
-"gx1" is used by "gxm1".
-"gx1" is used by "gxnn0suc".
-"gxadd" is used by "gxmodid".
-"gxadd" is used by "gxnn0mul".
-"gxadd" is used by "gxsub".
-"gxcl" is used by "gxadd".
-"gxcl" is used by "gxcom".
-"gxcl" is used by "gxid".
-"gxcl" is used by "gxinv".
-"gxcl" is used by "gxmodid".
-"gxcl" is used by "gxmul".
-"gxcl" is used by "gxneg".
-"gxcl" is used by "gxneg2".
-"gxcl" is used by "gxnn0add".
-"gxcl" is used by "gxnn0mul".
-"gxcl" is used by "gxsuc".
-"gxcom" is used by "gxinv".
-"gxcom" is used by "gxsuc".
-"gxfval" is used by "gxval".
-"gxid" is used by "gxmodid".
-"gxinv" is used by "gxinv2".
-"gxinv" is used by "gxmul".
-"gxmul" is used by "gxmodid".
-"gxneg" is used by "gxadd".
-"gxneg" is used by "gxcom".
-"gxneg" is used by "gxid".
-"gxneg" is used by "gxinv".
-"gxneg" is used by "gxm1".
-"gxneg" is used by "gxmul".
-"gxneg" is used by "gxneg2".
-"gxneg" is used by "gxsub".
-"gxneg" is used by "gxsuc".
-"gxnn0add" is used by "gxadd".
-"gxnn0mul" is used by "gxmul".
-"gxnn0neg" is used by "gxcl".
-"gxnn0neg" is used by "gxneg".
-"gxnn0suc" is used by "gxcl".
-"gxnn0suc" is used by "gxcom".
-"gxnn0suc" is used by "gxinv".
-"gxnn0suc" is used by "gxsuc".
-"gxnval" is used by "gxnn0neg".
-"gxpval" is used by "gx1".
-"gxpval" is used by "gxnn0neg".
-"gxpval" is used by "gxnn0suc".
-"gxsuc" is used by "gxid".
-"gxsuc" is used by "gxnn0add".
-"gxsuc" is used by "gxnn0mul".
-"gxval" is used by "gx0".
-"gxval" is used by "gxnval".
-"gxval" is used by "gxpval".
 "h0elch" is used by "atcv0eq".
 "h0elch" is used by "atcvat2".
 "h0elch" is used by "atcveq0".
@@ -8836,7 +8720,6 @@
 "isexid" is used by "ismndo".
 "isexid" is used by "opidonOLD".
 "isexid2" is used by "exidu1".
-"isgrp2d" is used by "isgrp2i".
 "isgrpda" is used by "isdrngo2".
 "isgrpix" is used by "cnaddablx".
 "isgrpix" is used by "zaddablx".
@@ -8844,9 +8727,7 @@
 "isgrpo" is used by "grpofo".
 "isgrpo" is used by "grpolidinv".
 "isgrpo" is used by "grpomndo".
-"isgrpo" is used by "isgrp2d".
 "isgrpo" is used by "isgrpda".
-"isgrpo" is used by "isgrpo2".
 "isgrpo" is used by "isgrpoi".
 "isgrpoi" is used by "cnaddablo".
 "isgrpoi" is used by "grposnOLD".
@@ -15321,12 +15202,11 @@ New usage of "df-gcdOLD" is discouraged (1 uses).
 New usage of "df-gdiv" is discouraged (2 uses).
 New usage of "df-gexOLD" is discouraged (1 uses).
 New usage of "df-ghomOLD" is discouraged (1 uses).
-New usage of "df-gid" is discouraged (2 uses).
+New usage of "df-gid" is discouraged (1 uses).
 New usage of "df-ginv" is discouraged (1 uses).
 New usage of "df-grpo" is discouraged (1 uses).
 New usage of "df-gt" is discouraged (2 uses).
 New usage of "df-gte" is discouraged (2 uses).
-New usage of "df-gx" is discouraged (1 uses).
 New usage of "df-h0op" is discouraged (3 uses).
 New usage of "df-h0v" is discouraged (4 uses).
 New usage of "df-hba" is discouraged (25 uses).
@@ -16006,7 +15886,6 @@ New usage of "fldcatALTV" is discouraged (1 uses).
 New usage of "flddivrng" is discouraged (2 uses).
 New usage of "fldhmsubcALTV" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
-New usage of "fngid" is discouraged (0 uses).
 New usage of "foco2OLD" is discouraged (0 uses).
 New usage of "fourierdlem31OLD" is discouraged (0 uses).
 New usage of "fourierdlem42OLD" is discouraged (0 uses).
@@ -16084,23 +15963,19 @@ New usage of "grothomex" is discouraged (0 uses).
 New usage of "grothpw" is discouraged (0 uses).
 New usage of "grothpwex" is discouraged (1 uses).
 New usage of "grpbasex" is discouraged (3 uses).
-New usage of "grpo2grp" is discouraged (0 uses).
-New usage of "grpo2inv" is discouraged (9 uses).
-New usage of "grpoass" is discouraged (23 uses).
-New usage of "grpoasscan1" is discouraged (2 uses).
-New usage of "grpoasscan2" is discouraged (2 uses).
-New usage of "grpocl" is discouraged (17 uses).
-New usage of "grpodivcl" is discouraged (11 uses).
+New usage of "grpo2inv" is discouraged (4 uses).
+New usage of "grpoass" is discouraged (18 uses).
+New usage of "grpocl" is discouraged (14 uses).
+New usage of "grpodivcl" is discouraged (10 uses).
 New usage of "grpodivdiv" is discouraged (1 uses).
-New usage of "grpodiveq" is discouraged (0 uses).
 New usage of "grpodivf" is discouraged (1 uses).
 New usage of "grpodivfval" is discouraged (3 uses).
-New usage of "grpodivid" is discouraged (3 uses).
+New usage of "grpodivid" is discouraged (2 uses).
 New usage of "grpodivinv" is discouraged (1 uses).
 New usage of "grpodivval" is discouraged (11 uses).
-New usage of "grpofo" is discouraged (9 uses).
+New usage of "grpofo" is discouraged (8 uses).
 New usage of "grpoid" is discouraged (2 uses).
-New usage of "grpoidcl" is discouraged (14 uses).
+New usage of "grpoidcl" is discouraged (10 uses).
 New usage of "grpoideu" is discouraged (5 uses).
 New usage of "grpoidinv" is discouraged (4 uses).
 New usage of "grpoidinv2" is discouraged (5 uses).
@@ -16110,31 +15985,29 @@ New usage of "grpoidinvlem3" is discouraged (1 uses).
 New usage of "grpoidinvlem4" is discouraged (2 uses).
 New usage of "grpoidval" is discouraged (4 uses).
 New usage of "grpoinv" is discouraged (2 uses).
-New usage of "grpoinvcl" is discouraged (25 uses).
+New usage of "grpoinvcl" is discouraged (17 uses).
 New usage of "grpoinvdiv" is discouraged (1 uses).
 New usage of "grpoinveu" is discouraged (2 uses).
 New usage of "grpoinvf" is discouraged (1 uses).
 New usage of "grpoinvfval" is discouraged (2 uses).
-New usage of "grpoinvid" is discouraged (3 uses).
-New usage of "grpoinvid1" is discouraged (3 uses).
+New usage of "grpoinvid1" is discouraged (2 uses).
 New usage of "grpoinvid2" is discouraged (1 uses).
-New usage of "grpoinvop" is discouraged (5 uses).
+New usage of "grpoinvop" is discouraged (2 uses).
 New usage of "grpoinvval" is discouraged (2 uses).
 New usage of "grpolcan" is discouraged (5 uses).
-New usage of "grpolid" is discouraged (22 uses).
+New usage of "grpolid" is discouraged (17 uses).
 New usage of "grpolidinv" is discouraged (2 uses).
-New usage of "grpolinv" is discouraged (12 uses).
+New usage of "grpolinv" is discouraged (10 uses).
 New usage of "grpomndo" is discouraged (1 uses).
-New usage of "grpomuldivass" is discouraged (6 uses).
+New usage of "grpomuldivass" is discouraged (5 uses).
 New usage of "grpon0" is discouraged (3 uses).
 New usage of "grponnncan2" is discouraged (1 uses).
-New usage of "grponpcan" is discouraged (5 uses).
+New usage of "grponpcan" is discouraged (4 uses).
 New usage of "grponpncan" is discouraged (1 uses).
-New usage of "grpopncan" is discouraged (0 uses).
 New usage of "grpopnpcan2" is discouraged (1 uses).
-New usage of "grporcan" is discouraged (8 uses).
-New usage of "grporid" is discouraged (15 uses).
-New usage of "grporinv" is discouraged (11 uses).
+New usage of "grporcan" is discouraged (7 uses).
+New usage of "grporid" is discouraged (9 uses).
+New usage of "grporinv" is discouraged (10 uses).
 New usage of "grporn" is discouraged (11 uses).
 New usage of "grporndm" is discouraged (5 uses).
 New usage of "grposnOLD" is discouraged (1 uses).
@@ -16144,29 +16017,6 @@ New usage of "gt-lth" is discouraged (1 uses).
 New usage of "gt0srpr" is discouraged (2 uses).
 New usage of "gte-lte" is discouraged (0 uses).
 New usage of "gte-lteh" is discouraged (1 uses).
-New usage of "gx0" is discouraged (8 uses).
-New usage of "gx1" is discouraged (2 uses).
-New usage of "gxadd" is discouraged (3 uses).
-New usage of "gxcl" is discouraged (11 uses).
-New usage of "gxcom" is discouraged (2 uses).
-New usage of "gxfval" is discouraged (1 uses).
-New usage of "gxid" is discouraged (1 uses).
-New usage of "gxinv" is discouraged (2 uses).
-New usage of "gxinv2" is discouraged (0 uses).
-New usage of "gxm1" is discouraged (0 uses).
-New usage of "gxmodid" is discouraged (0 uses).
-New usage of "gxmul" is discouraged (1 uses).
-New usage of "gxneg" is discouraged (9 uses).
-New usage of "gxneg2" is discouraged (0 uses).
-New usage of "gxnn0add" is discouraged (1 uses).
-New usage of "gxnn0mul" is discouraged (1 uses).
-New usage of "gxnn0neg" is discouraged (2 uses).
-New usage of "gxnn0suc" is discouraged (4 uses).
-New usage of "gxnval" is discouraged (1 uses).
-New usage of "gxpval" is discouraged (3 uses).
-New usage of "gxsub" is discouraged (0 uses).
-New usage of "gxsuc" is discouraged (3 uses).
-New usage of "gxval" is discouraged (3 uses).
 New usage of "h0elch" is discouraged (44 uses).
 New usage of "h0elsh" is discouraged (10 uses).
 New usage of "h1da" is discouraged (3 uses).
@@ -16737,12 +16587,9 @@ New usage of "isdivrngo" is discouraged (2 uses).
 New usage of "iseriALT" is discouraged (0 uses).
 New usage of "isexid" is discouraged (4 uses).
 New usage of "isexid2" is discouraged (1 uses).
-New usage of "isgrp2d" is discouraged (1 uses).
-New usage of "isgrp2i" is discouraged (0 uses).
 New usage of "isgrpda" is discouraged (1 uses).
 New usage of "isgrpix" is discouraged (2 uses).
-New usage of "isgrpo" is discouraged (8 uses).
-New usage of "isgrpo2" is discouraged (0 uses).
+New usage of "isgrpo" is discouraged (6 uses).
 New usage of "isgrpoi" is discouraged (4 uses).
 New usage of "ishlat3N" is discouraged (0 uses).
 New usage of "ishlatiN" is discouraged (0 uses).
@@ -18057,7 +17904,6 @@ New usage of "relrngo" is discouraged (6 uses).
 New usage of "renegclALT" is discouraged (0 uses).
 New usage of "renicax" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
-New usage of "resgrprn" is discouraged (0 uses).
 New usage of "resima2OLD" is discouraged (0 uses).
 New usage of "resiun1OLD" is discouraged (0 uses).
 New usage of "restidsingOLD" is discouraged (0 uses).
