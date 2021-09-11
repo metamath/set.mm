@@ -1125,6 +1125,11 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TR>
 
 <TR>
+  <TD>pm4.42</TD>
+  <TD>~ pm4.42r</TD>
+</TR>
+
+<TR>
 <TD>3ianor</TD>
 <TD>~ 3ianorr </TD>
 </TR>
@@ -1364,12 +1369,12 @@ is double negation elimination.</TD>
 
 <TR>
 <TD>n0f</TD>
-<TD>~ n0rf </TD>
+<TD>~ n0rf</TD>
 </TR>
 
 <TR>
 <TD>n0</TD>
-<TD>~ n0r </TD>
+<TD>~ n0r , ~ fin0</TD>
 </TR>
 
 <TR>
@@ -1398,8 +1403,18 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>undif1</TD>
+  <TD>~ undif1ss</TD>
+</TR>
+
+<TR>
 <TD>undif2</TD>
 <TD>~ undif2ss </TD>
+</TR>
+
+<TR>
+  <TD>inundif</TD>
+  <TD>~ inundifss</TD>
 </TR>
 
 <TR>
@@ -1507,13 +1522,70 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-  <TD>difsnid</TD>
-  <TD>~ difsnss , ~ nndifsnid</TD>
+  <TD ROWSPAN="3">difsnid</TD>
+  <TD>~ difsnss</TD>
+  <TD>One direction, for any set</TD>
+</TR>
+
+<TR>
+  <TD>~ nndifsnid</TD>
+  <TD>for a natural number</TD>
+</TR>
+
+<TR>
+  <TD>~ fidifsnid</TD>
+  <TD>for a finite set</TD>
 </TR>
 
 <TR>
 <TD>iundif2</TD>
 <TD>~ iundif2ss </TD>
+</TR>
+
+<TR>
+  <TD>iindif2</TD>
+  <TD>~ iindif2m</TD>
+</TR>
+
+<TR>
+  <TD>iinin2</TD>
+  <TD>~ iinin2m</TD>
+</TR>
+
+<TR>
+  <TD>iinin1</TD>
+  <TD>~ iinin1m</TD>
+</TR>
+
+<TR>
+  <TD>iinvdif</TD>
+  <TD>~ iindif2m</TD>
+  <TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>riinn0</TD>
+  <TD>~ riinm</TD>
+</TR>
+
+<TR>
+  <TD>riinrab</TD>
+  <TD>~ iinrabm</TD>
+</TR>
+
+<TR>
+  <TD>iinuni</TD>
+  <TD>~ iinuniss</TD>
+</TR>
+
+<TR>
+  <TD>iununi</TD>
+  <TD>~ iununir</TD>
+</TR>
+
+<TR>
+  <TD>rintn0</TD>
+  <TD>~ rintm</TD>
 </TR>
 
 <TR>
@@ -2516,8 +2588,7 @@ we wanted strict dominance to have the expected properties.</TD>
 
 <TR>
 <TD>difsnen</TD>
-<TD><I>none</I></TD>
-<TD>The set.mm proof uses excluded middle.</TD>
+<TD>~ fidifsnen</TD>
 </TR>
 
 <TR>
@@ -2698,16 +2769,34 @@ this implies excluded middle</TD>
 
 <TR>
 <TD>diffi</TD>
-<TD><I>none</I></TD>
-<TD>The set.mm proof is in terms of ssfi</TD>
+<TD>~ diffitest</TD>
+<TD>Not provable, as shown at diffitest</TD>
 </TR>
 
 <TR>
-<TD>dif1en</TD>
-<TD><I>none</I></TD>
-<TD>The set.mm proof relies on diffi</TD>
+  <TD>enp1ilem , enp1i , en2 , en3 , en4</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle and undif1</TD>
 </TR>
 
+<TR>
+  <TD>findcard2s , findcard2d</TD>
+  <TD><I>none</I></TD>
+  <TD>These rely on membership in a finite set being decidable.</TD>
+</TR>
+
+<TR>
+  <TD>findcard3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof is in terms of strict dominance.</TD>
+</TR>
+
+<TR>
+  <TD>ac6sfi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not require the axiom of choice
+  (as this is for finite sets), but it does rely on findcard2s</TD>
+</TR>
 
 <TR>
 <TD>ax-reg , axreg2 , zfregcl</TD>
