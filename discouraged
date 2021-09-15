@@ -4431,7 +4431,6 @@
 "chub2i" is used by "pjclem1".
 "chub2i" is used by "qlaxr3i".
 "chub2i" is used by "sumdmdlem2".
-"climinfOLD" is used by "climinffOLD".
 "clmgmOLD" is used by "exidcl".
 "cm0" is used by "chirred".
 "cm2j" is used by "cm2ji".
@@ -9001,10 +9000,8 @@
 "in3" is used by "truniALTVD".
 "in3an" is used by "onfrALTlem2VD".
 "indpi" is used by "prlem934".
-"infmrclOLD" is used by "climinfOLD".
 "infmrclOLD" is used by "infmrgelbOLD".
 "infmrclOLD" is used by "infmrlbOLD".
-"infmrclOLD" is used by "infrglbOLD".
 "infmrclOLD" is used by "minveclem3bOLD".
 "infmrclOLD" is used by "minveclem4cOLD".
 "infmrclOLD" is used by "minveclem6OLD".
@@ -9022,7 +9019,6 @@
 "infmrgelbOLD" is used by "minvecolem4OLD".
 "infmrgelbOLD" is used by "minvecolem5OLD".
 "infmrgelbOLD" is used by "minvecolem6OLD".
-"infmrlbOLD" is used by "climinfOLD".
 "infmrlbOLD" is used by "fourierdlem42OLD".
 "infmrlbOLD" is used by "minveclem2OLD".
 "infmrlbOLD" is used by "minveclem4OLD".
@@ -9079,7 +9075,6 @@
 "infmxrgelbOLD" is used by "metdsgeOLD".
 "infmxrgelbOLD" is used by "nmogelbOLD".
 "infmxrlbOLD" is used by "infxrmnfOLD".
-"infrglbOLD" is used by "climinfOLD".
 "infxrge0glbOLD" is used by "infxrge0gelbOLD".
 "infxrmnfOLD" is used by "xrinfmOLD".
 "int2" is used by "sspwimpVD".
@@ -15502,8 +15497,6 @@ New usage of "chunssji" is discouraged (0 uses).
 New usage of "chvarvOLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
-New usage of "climinfOLD" is discouraged (1 uses).
-New usage of "climinffOLD" is discouraged (0 uses).
 New usage of "clmgmOLD" is discouraged (1 uses).
 New usage of "cm0" is discouraged (1 uses).
 New usage of "cm2j" is discouraged (1 uses).
@@ -17053,10 +17046,10 @@ New usage of "indistps2ALT" is discouraged (0 uses).
 New usage of "indistpsALT" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
-New usage of "infmrclOLD" is discouraged (12 uses).
+New usage of "infmrclOLD" is discouraged (10 uses).
 New usage of "infmrgelbOLD" is discouraged (9 uses).
 New usage of "infmrgelbiOLD" is discouraged (0 uses).
-New usage of "infmrlbOLD" is discouraged (6 uses).
+New usage of "infmrlbOLD" is discouraged (5 uses).
 New usage of "infmssuzclOLD" is discouraged (23 uses).
 New usage of "infmssuzleOLD" is discouraged (13 uses).
 New usage of "infmsupOLD" is discouraged (1 uses).
@@ -17064,7 +17057,6 @@ New usage of "infmxrclOLD" is discouraged (9 uses).
 New usage of "infmxrgelbOLD" is discouraged (4 uses).
 New usage of "infmxrlbOLD" is discouraged (1 uses).
 New usage of "infpssALT" is discouraged (0 uses).
-New usage of "infrglbOLD" is discouraged (1 uses).
 New usage of "infxrge0gelbOLD" is discouraged (0 uses).
 New usage of "infxrge0glbOLD" is discouraged (1 uses).
 New usage of "infxrge0lbOLD" is discouraged (0 uses).
@@ -19601,8 +19593,6 @@ Proof modification of "chordthmALT" is discouraged (440 steps).
 Proof modification of "chvarvOLD" is discouraged (10 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleljustALT2" is discouraged (25 steps).
-Proof modification of "climinfOLD" is discouraged (850 steps).
-Proof modification of "climinffOLD" is discouraged (219 steps).
 Proof modification of "clmgmOLD" is discouraged (50 steps).
 Proof modification of "cnaddcom" is discouraged (71 steps).
 Proof modification of "cnexALT" is discouraged (52 steps).
@@ -20251,7 +20241,6 @@ Proof modification of "infmxrgelbOLD" is discouraged (197 steps).
 Proof modification of "infmxrlbOLD" is discouraged (99 steps).
 Proof modification of "infpssALT" is discouraged (52 steps).
 Proof modification of "infregelb" is discouraged (185 steps).
-Proof modification of "infrglbOLD" is discouraged (336 steps).
 Proof modification of "infxrge0gelbOLD" is discouraged (201 steps).
 Proof modification of "infxrge0glbOLD" is discouraged (201 steps).
 Proof modification of "infxrge0lbOLD" is discouraged (166 steps).
