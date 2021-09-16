@@ -1363,6 +1363,11 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>nss</TD>
+  <TD>~ nssr</TD>
+</TR>
+
+<TR>
 <TD>sspss</TD>
 <TD>~ sspssr </TD>
 </TR>
@@ -1649,6 +1654,11 @@ set exists or it does not"</TD>
 </TR>
 
 <TR>
+  <TD>nssss</TD>
+  <TD>~ nssssr</TD>
+</TR>
+
+<TR>
 <TD>opex</TD>
 <TD>~ opexg , ~ opex </TD>
 <TD>The iset.mm version of ~ opex has additional hypotheses</TD>
@@ -1814,8 +1824,8 @@ excluded middle.</TD>
 
 <TR>
   <TD>ordtri2or2</TD>
-  <TD>~ ordtri2or2exmid</TD>
-  <TD>Ordinal trichotomy implies excluded middle.</TD>
+  <TD>~ nntri2or2</TD>
+  <TD>ordtri2or2 implies excluded middle as shown at ~ ordtri2or2exmid .</TD>
 </TR>
 
 <TR>
@@ -1968,6 +1978,11 @@ and is evaluated at a set</TD>
 <TR>
   <TD>dff4</TD>
   <TD>~ dff4im</TD>
+</TR>
+
+<TR>
+  <TD>fvunsn</TD>
+  <TD>~ fvunsng</TD>
 </TR>
 
 <TR>
@@ -2622,7 +2637,7 @@ we wanted strict dominance to have the expected properties.</TD>
 
 <TR>
 <TD>sbth and its lemmas, sbthb , sbthcl</TD>
-<TD><I>none</I></TD>
+<TD>~ fisbth</TD>
 <TD>The Schroeder-Bernstein Theorem implies excluded middle</TD>
 </TR>
 
@@ -2769,8 +2784,8 @@ this implies excluded middle</TD>
 
 <TR>
 <TD>diffi</TD>
-<TD>~ diffitest</TD>
-<TD>Not provable, as shown at diffitest</TD>
+<TD>~ diffisn , ~ diffifi</TD>
+<TD>diffi is not provable, as shown at ~ diffitest</TD>
 </TR>
 
 <TR>
@@ -2780,22 +2795,9 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
-  <TD>findcard2s , findcard2d</TD>
-  <TD><I>none</I></TD>
-  <TD>These rely on membership in a finite set being decidable.</TD>
-</TR>
-
-<TR>
   <TD>findcard3</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof is in terms of strict dominance.</TD>
-</TR>
-
-<TR>
-  <TD>ac6sfi</TD>
-  <TD><I>none</I></TD>
-  <TD>The set.mm proof does not require the axiom of choice
-  (as this is for finite sets), but it does rely on findcard2s</TD>
 </TR>
 
 <TR>
@@ -2944,6 +2946,13 @@ this implies excluded middle</TD>
   <TD>sdomsdomcardi</TD>
   <TD><I>none</I></TD>
   <TD>Relies on a variety of theorems we don't currently have.</TD>
+</TR>
+
+<TR>
+  <TD>entri3</TD>
+  <TD>~ fientri3</TD>
+  <TD>Because full entri3 is equivalent to the axiom of choice,
+  it implies excluded middle.</TD>
 </TR>
 
 <TR>
