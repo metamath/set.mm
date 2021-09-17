@@ -5246,8 +5246,6 @@
 "df-odOLD" is used by "odfvalOLD".
 "df-odzOLD" is used by "odzvalOLD".
 "df-omsOLD" is used by "omsvalOLD".
-"df-ovolOLD" is used by "ovolvalOLD".
-"df-pellfundOLD" is used by "pellfundvalOLD".
 "df-ph" is used by "isphg".
 "df-ph" is used by "phnv".
 "df-pjh" is used by "pjhfval".
@@ -9008,7 +9006,6 @@
 "infmrclOLD" is used by "minvecolem4cOLD".
 "infmrclOLD" is used by "minvecolem5OLD".
 "infmrclOLD" is used by "minvecolem6OLD".
-"infmrgelbOLD" is used by "infmrgelbiOLD".
 "infmrgelbOLD" is used by "minveclem2OLD".
 "infmrgelbOLD" is used by "minveclem3bOLD".
 "infmrgelbOLD" is used by "minveclem4OLD".
@@ -9041,7 +9038,6 @@
 "infmssuzclOLD" is used by "odlem1OLD".
 "infmssuzclOLD" is used by "odlem2OLD".
 "infmssuzclOLD" is used by "odzcllemOLD".
-"infmssuzclOLD" is used by "ovolicc2lem4OLD".
 "infmssuzclOLD" is used by "zringlpirlem2OLD".
 "infmssuzclOLD" is used by "zringlpirlem3OLD".
 "infmssuzleOLD" is used by "bezoutlem3OLD".
@@ -9055,7 +9051,6 @@
 "infmssuzleOLD" is used by "ig1peuOLD".
 "infmssuzleOLD" is used by "odlem2OLD".
 "infmssuzleOLD" is used by "odzdvdsOLD".
-"infmssuzleOLD" is used by "ovolicc2lem4OLD".
 "infmssuzleOLD" is used by "zringlpirlem3OLD".
 "infmsupOLD" is used by "infmrclOLD".
 "infmxrclOLD" is used by "infmxrgelbOLD".
@@ -15805,8 +15800,6 @@ New usage of "df-oc" is discouraged (1 uses).
 New usage of "df-odOLD" is discouraged (1 uses).
 New usage of "df-odzOLD" is discouraged (1 uses).
 New usage of "df-omsOLD" is discouraged (1 uses).
-New usage of "df-ovolOLD" is discouraged (1 uses).
-New usage of "df-pellfundOLD" is discouraged (1 uses).
 New usage of "df-pgpOLD" is discouraged (0 uses).
 New usage of "df-ph" is discouraged (2 uses).
 New usage of "df-pjh" is discouraged (2 uses).
@@ -17039,11 +17032,10 @@ New usage of "indistpsALT" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
 New usage of "infmrclOLD" is discouraged (10 uses).
-New usage of "infmrgelbOLD" is discouraged (9 uses).
-New usage of "infmrgelbiOLD" is discouraged (0 uses).
+New usage of "infmrgelbOLD" is discouraged (8 uses).
 New usage of "infmrlbOLD" is discouraged (5 uses).
-New usage of "infmssuzclOLD" is discouraged (22 uses).
-New usage of "infmssuzleOLD" is discouraged (13 uses).
+New usage of "infmssuzclOLD" is discouraged (21 uses).
+New usage of "infmssuzleOLD" is discouraged (12 uses).
 New usage of "infmsupOLD" is discouraged (1 uses).
 New usage of "infmxrclOLD" is discouraged (9 uses).
 New usage of "infmxrgelbOLD" is discouraged (4 uses).
@@ -18051,8 +18043,6 @@ New usage of "otpsbasOLD" is discouraged (0 uses).
 New usage of "otpsleOLD" is discouraged (0 uses).
 New usage of "otpsstrOLD" is discouraged (3 uses).
 New usage of "otpstsetOLD" is discouraged (0 uses).
-New usage of "ovolicc2lem4OLD" is discouraged (0 uses).
-New usage of "ovolvalOLD" is discouraged (0 uses).
 New usage of "p0exALT" is discouraged (0 uses).
 New usage of "padd12N" is discouraged (2 uses).
 New usage of "padd4N" is discouraged (1 uses).
@@ -18077,7 +18067,6 @@ New usage of "pclssidN" is discouraged (3 uses).
 New usage of "pclun2N" is discouraged (0 uses).
 New usage of "pclunN" is discouraged (1 uses).
 New usage of "pclvalN" is discouraged (6 uses).
-New usage of "pellfundvalOLD" is discouraged (0 uses).
 New usage of "perpdragALT" is discouraged (0 uses).
 New usage of "pexmidALTN" is discouraged (0 uses).
 New usage of "pexmidN" is discouraged (0 uses).
@@ -20218,7 +20207,6 @@ Proof modification of "indistps2ALT" is discouraged (43 steps).
 Proof modification of "indistpsALT" is discouraged (64 steps).
 Proof modification of "infmrclOLD" is discouraged (329 steps).
 Proof modification of "infmrgelbOLD" is discouraged (329 steps).
-Proof modification of "infmrgelbiOLD" is discouraged (97 steps).
 Proof modification of "infmrlbOLD" is discouraged (254 steps).
 Proof modification of "infmssuzclOLD" is discouraged (62 steps).
 Proof modification of "infmssuzleOLD" is discouraged (79 steps).
@@ -20504,10 +20492,7 @@ Proof modification of "otpsbasOLD" is discouraged (40 steps).
 Proof modification of "otpsleOLD" is discouraged (40 steps).
 Proof modification of "otpsstrOLD" is discouraged (41 steps).
 Proof modification of "otpstsetOLD" is discouraged (40 steps).
-Proof modification of "ovolicc2lem4OLD" is discouraged (2737 steps).
-Proof modification of "ovolvalOLD" is discouraged (132 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
-Proof modification of "pellfundvalOLD" is discouraged (64 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
 Proof modification of "perpdragALT" is discouraged (241 steps).
 Proof modification of "phtpcerOLD" is discouraged (421 steps).
