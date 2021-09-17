@@ -1125,6 +1125,11 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TR>
 
 <TR>
+  <TD>pm4.42</TD>
+  <TD>~ pm4.42r</TD>
+</TR>
+
+<TR>
 <TD>3ianor</TD>
 <TD>~ 3ianorr </TD>
 </TR>
@@ -1358,18 +1363,23 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>nss</TD>
+  <TD>~ nssr</TD>
+</TR>
+
+<TR>
 <TD>sspss</TD>
 <TD>~ sspssr </TD>
 </TR>
 
 <TR>
 <TD>n0f</TD>
-<TD>~ n0rf </TD>
+<TD>~ n0rf</TD>
 </TR>
 
 <TR>
 <TD>n0</TD>
-<TD>~ n0r </TD>
+<TD>~ n0r , ~ fin0</TD>
 </TR>
 
 <TR>
@@ -1398,8 +1408,28 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>undif1</TD>
+  <TD>~ undif1ss</TD>
+</TR>
+
+<TR>
 <TD>undif2</TD>
 <TD>~ undif2ss </TD>
+</TR>
+
+<TR>
+  <TD>inundif</TD>
+  <TD>~ inundifss</TD>
+</TR>
+
+<TR>
+  <TD>undif</TD>
+  <TD>~ undifss</TD>
+</TR>
+
+<TR>
+  <TD>ssundif</TD>
+  <TD>~ ssundifim</TD>
 </TR>
 
 <TR>
@@ -1497,8 +1527,70 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
+  <TD ROWSPAN="3">difsnid</TD>
+  <TD>~ difsnss</TD>
+  <TD>One direction, for any set</TD>
+</TR>
+
+<TR>
+  <TD>~ nndifsnid</TD>
+  <TD>for a natural number</TD>
+</TR>
+
+<TR>
+  <TD>~ fidifsnid</TD>
+  <TD>for a finite set</TD>
+</TR>
+
+<TR>
 <TD>iundif2</TD>
 <TD>~ iundif2ss </TD>
+</TR>
+
+<TR>
+  <TD>iindif2</TD>
+  <TD>~ iindif2m</TD>
+</TR>
+
+<TR>
+  <TD>iinin2</TD>
+  <TD>~ iinin2m</TD>
+</TR>
+
+<TR>
+  <TD>iinin1</TD>
+  <TD>~ iinin1m</TD>
+</TR>
+
+<TR>
+  <TD>iinvdif</TD>
+  <TD>~ iindif2m</TD>
+  <TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>riinn0</TD>
+  <TD>~ riinm</TD>
+</TR>
+
+<TR>
+  <TD>riinrab</TD>
+  <TD>~ iinrabm</TD>
+</TR>
+
+<TR>
+  <TD>iinuni</TD>
+  <TD>~ iinuniss</TD>
+</TR>
+
+<TR>
+  <TD>iununi</TD>
+  <TD>~ iununir</TD>
+</TR>
+
+<TR>
+  <TD>rintn0</TD>
+  <TD>~ rintm</TD>
 </TR>
 
 <TR>
@@ -1559,6 +1651,11 @@ set exists or it does not"</TD>
 <TD>snex</TD>
 <TD>~ snexg , ~ snex </TD>
 <TD>The iset.mm version of ~ snex has an additional hypothesis</TD>
+</TR>
+
+<TR>
+  <TD>nssss</TD>
+  <TD>~ nssssr</TD>
 </TR>
 
 <TR>
@@ -1727,8 +1824,8 @@ excluded middle.</TD>
 
 <TR>
   <TD>ordtri2or2</TD>
-  <TD>~ ordtri2or2exmid</TD>
-  <TD>Ordinal trichotomy implies excluded middle.</TD>
+  <TD>~ nntri2or2</TD>
+  <TD>ordtri2or2 implies excluded middle as shown at ~ ordtri2or2exmid .</TD>
 </TR>
 
 <TR>
@@ -1881,6 +1978,11 @@ and is evaluated at a set</TD>
 <TR>
   <TD>dff4</TD>
   <TD>~ dff4im</TD>
+</TR>
+
+<TR>
+  <TD>fvunsn</TD>
+  <TD>~ fvunsng</TD>
 </TR>
 
 <TR>
@@ -2169,15 +2271,10 @@ middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
-<TD>onsucuni2</TD>
-<TD><I>none yet</I></TD>
-<TD>Conjectured to be provable.</TD>
-</TR>
-
-<TR>
 <TD>0elsuc</TD>
-<TD><I>none yet</I></TD>
-<TD>Conjectured to be provable.</TD>
+<TD>~ 0elsucexmid</TD>
+<TD>This theorem may appear to be innocuous but it implies excluded
+middle as shown at 0elsucexmid .</TD>
 </TR>
 
 <TR>
@@ -2187,21 +2284,9 @@ middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
-<TD>onuninsuci, ordununsuc</TD>
+<TD>onuninsuci, orduninsuc</TD>
 <TD><I>none</I></TD>
 <TD>Conjectured to be provable in the forward direction but not the reverse one.</TD>
-</TR>
-
-<TR>
-<TD>onsucssi</TD>
-<TD><I>none yet</I></TD>
-<TD>Conjectured to be provable.</TD>
-</TR>
-
-<TR>
-<TD>nlimsucg</TD>
-<TD><I>none yet</I></TD>
-<TD>Conjectured to be provable.</TD>
 </TR>
 
 <TR>
@@ -2518,8 +2603,7 @@ we wanted strict dominance to have the expected properties.</TD>
 
 <TR>
 <TD>difsnen</TD>
-<TD><I>none</I></TD>
-<TD>The set.mm proof uses excluded middle.</TD>
+<TD>~ fidifsnen</TD>
 </TR>
 
 <TR>
@@ -2553,7 +2637,7 @@ we wanted strict dominance to have the expected properties.</TD>
 
 <TR>
 <TD>sbth and its lemmas, sbthb , sbthcl</TD>
-<TD><I>none</I></TD>
+<TD>~ fisbth</TD>
 <TD>The Schroeder-Bernstein Theorem implies excluded middle</TD>
 </TR>
 
@@ -2563,15 +2647,19 @@ we wanted strict dominance to have the expected properties.</TD>
 </TR>
 
 <TR>
-<TD>onomeneq , onfin , onfin2</TD>
-<TD><I>none</I></TD>
-<TD>The set.mm proofs rely on excluded middle</TD>
+  <TD>php</TD>
+  <TD>~ phpm</TD>
 </TR>
 
 <TR>
-<TD>nndomo</TD>
+  <TD>snnen2o</TD>
+  <TD>~ snnen2og , ~ snnen2oprc</TD>
+</TR>
+
+<TR>
+<TD>onomeneq , onfin , onfin2</TD>
 <TD><I>none</I></TD>
-<TD>Should be provable but the set.mm proof wouldn't work</TD>
+<TD>The set.mm proofs rely on excluded middle</TD>
 </TR>
 
 <TR>
@@ -2696,16 +2784,21 @@ this implies excluded middle</TD>
 
 <TR>
 <TD>diffi</TD>
-<TD><I>none</I></TD>
-<TD>The set.mm proof is in terms of ssfi</TD>
+<TD>~ diffisn , ~ diffifi</TD>
+<TD>diffi is not provable, as shown at ~ diffitest</TD>
 </TR>
 
 <TR>
-<TD>dif1en</TD>
-<TD><I>none</I></TD>
-<TD>The set.mm proof relies on diffi</TD>
+  <TD>enp1ilem , enp1i , en2 , en3 , en4</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle and undif1</TD>
 </TR>
 
+<TR>
+  <TD>findcard3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof is in terms of strict dominance.</TD>
+</TR>
 
 <TR>
 <TD>ax-reg , axreg2 , zfregcl</TD>
@@ -2853,6 +2946,13 @@ this implies excluded middle</TD>
   <TD>sdomsdomcardi</TD>
   <TD><I>none</I></TD>
   <TD>Relies on a variety of theorems we don't currently have.</TD>
+</TR>
+
+<TR>
+  <TD>entri3</TD>
+  <TD>~ fientri3</TD>
+  <TD>Because full entri3 is equivalent to the axiom of choice,
+  it implies excluded middle.</TD>
 </TR>
 
 <TR>
@@ -5319,6 +5419,19 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on caurcvg2 which does not specify
   a rate of convergence.</TD>
+</TR>
+
+<TR>
+  <TD>sumex</TD>
+  <TD><I>none</I></TD>
+  <TD>This will need to replaced by suitable closure theorems.</TD>
+</TR>
+
+<TR>
+  <TD>sumeq2w</TD>
+  <TD>sumeq2</TD>
+  <TD>Presumably could be proved, and perhaps also would rely only
+  on extensionality (and logical axioms). But unused in set.mm.</TD>
 </TR>
 
 <TR>
