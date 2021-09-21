@@ -1765,6 +1765,10 @@ similar to the current proof of ~ elirr except that ~ ax-setind would
 be replaced by ` _E ` Fr ` A ` and ` _V ` throughout the ~ elirr proof
 would be replaced by ` A ` . Likewise for ~ en2lp . These theorems (for
 ordinals) would then not rely on ~ ax-setind .</P>
+
+<P>For more on axioms which might be adopted which are incompatible
+with ~ ax-setind (that is, Non-wellfounded Set Theory but in the absence
+of excluded middle), see Chapter 20 of [AczelRathjen], p. 183.</P>
 </TD>
 </TR>
 
@@ -1792,10 +1796,11 @@ will be different from set.mm.</TD>
 </TR>
 
 <TR>
-<TD>ordsseleq</TD>
-<TD>~ onelss , ~ eqimss </TD>
+<TD>ordsseleq , onsseleq</TD>
+<TD>~ onelss , ~ eqimss , ~ nnsseleq</TD>
 <TD>Taken together, ~ onelss and ~ eqimss represent the reverse direction of
-the biconditional from ordsseleq</TD>
+the biconditional from ordsseleq . For natural numbers the biconditional
+is provable.</TD>
 </TR>
 
 <TR>
@@ -1839,7 +1844,7 @@ is biconditional, but just for natural numbers.</TD>
 <TR>
 <TD>ordtr2 , ontr2</TD>
 <TD><I>none</I></TD>
-<TD>See also ordelpss in set.mm</TD>
+<TD>Implies excluded middle as shown at ~ ontr2exmid</TD>
 </TR>
 
 <TR>
@@ -2148,8 +2153,8 @@ fair bit of intuitionizing.</TD>
 
 <TR>
 <TD>onint</TD>
-<TD>~ onintexmid</TD>
-<TD>Implies excluded middle as shown in onintexmid.</TD>
+<TD>~ onintss</TD>
+<TD>onint implies excluded middle as shown in ~ onintexmid .</TD>
 </TR>
 
 <TR>
@@ -2272,9 +2277,9 @@ middle as seen at ~ ordpwsucexmid .</TD>
 
 <TR>
 <TD>0elsuc</TD>
-<TD>~ 0elsucexmid</TD>
+<TD><I>none</I></TD>
 <TD>This theorem may appear to be innocuous but it implies excluded
-middle as shown at 0elsucexmid .</TD>
+middle as shown at ~ 0elsucexmid .</TD>
 </TR>
 
 <TR>
@@ -2728,7 +2733,8 @@ ssfi , since ` { (/) } e. _om `</TD>
 
 <TR>
 <TD>ssfi</TD>
-<TD>~ ssfiexmid</TD>
+<TD><I>none</I></TD>
+<TD>Implies excluded middle as shown at ~ ssfiexmid</TD>
 </TR>
 
 <TR>
@@ -2801,9 +2807,22 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
+  <TD>unfi</TD>
+  <TD><I>none</I></TD>
+  <TD>Not provable according to Remark 8.1.17 of [AczelRathjen].</TD>
+</TR>
+
+<TR>
 <TD>ax-reg , axreg2 , zfregcl</TD>
 <TD>~ ax-setind </TD>
 <TD>ax-reg implies excluded middle as seen at ~ regexmid</TD>
+</TR>
+
+<TR>
+  <TD>df-rank and all theorems realted to the rank function</TD>
+  <TD><I>none</I></TD>
+  <TD>One possible definition is Definition 9.3.4
+  of [AczelRathjen], p. 91</TD>
 </TR>
 
 <TR>
@@ -2953,6 +2972,16 @@ this implies excluded middle</TD>
   <TD>~ fientri3</TD>
   <TD>Because full entri3 is equivalent to the axiom of choice,
   it implies excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>df-wina , df-ina , df-tsk , df-gru , ax-groth and all theorems
+  related to inaccessibles and large cardinals</TD>
+  <TD><I>none</I></TD>
+  <TD>For an introduction to inaccessibles and large set properties
+  see Chapter 18 of [AczelRathjen], p. 165 (including why "large set
+  properties" is more apt terminology than "large cardinal
+  properties" in the absence of excluded middle).</TD>
 </TR>
 
 <TR>
@@ -5498,6 +5527,11 @@ intuitionistic and it is lightly used in set.mm</TD>
 COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
 
 <OL>
+
+<LI><A NAME="AczelRathjen"></A> [AczelRathjen] Aczel, Peter, and
+Rathjen, Michael, "Constructive Set Theory", 2018,
+<A HREF="http://www1.maths.leeds.ac.uk/~~rathjen/book.pdf"
+>http://www1.maths.leeds.ac.uk/~~rathjen/book.pdf</A></LI>
 
 <LI><A NAME="Apostol"></A> [Apostol] Apostol, Tom M.,
 <I>Calculus,</I> vol. 1, 2nd ed.,
