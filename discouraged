@@ -8946,7 +8946,6 @@
 "isvclem" is used by "vcoprnelem".
 "iunconlem2" is used by "iunconALT".
 "iunonOLD" is used by "hsmexlem5".
-"iunonOLD" is used by "inar1".
 "jaoded" is used by "suctrALT3".
 "joincomALT" is used by "joincom".
 "jplem1" is used by "jplem2".
@@ -16780,7 +16779,7 @@ New usage of "isvclem" is discouraged (2 uses).
 New usage of "iswatN" is discouraged (0 uses).
 New usage of "iunconALT" is discouraged (0 uses).
 New usage of "iunconlem2" is discouraged (1 uses).
-New usage of "iunonOLD" is discouraged (2 uses).
+New usage of "iunonOLD" is discouraged (1 uses).
 New usage of "ivthALT" is discouraged (0 uses).
 New usage of "jaoded" is discouraged (1 uses).
 New usage of "joincomALT" is discouraged (1 uses).
