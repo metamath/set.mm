@@ -17634,10 +17634,14 @@ New usage of "opsqrlem6" is discouraged (0 uses).
 New usage of "opsrbaslemOLD" is discouraged (0 uses).
 New usage of "orbi1r" is discouraged (0 uses).
 New usage of "orbi1rVD" is discouraged (0 uses).
+New usage of "ordelinelOLD" is discouraged (0 uses).
 New usage of "ordelordALT" is discouraged (0 uses).
 New usage of "ordelordALTVD" is discouraged (0 uses).
+New usage of "ordnbtwnOLD" is discouraged (0 uses).
 New usage of "ordpinq" is discouraged (6 uses).
 New usage of "ordpipq" is discouraged (5 uses).
+New usage of "ordtr3OLD" is discouraged (0 uses).
+New usage of "ordtri3OLD" is discouraged (0 uses).
 New usage of "orthcom" is discouraged (6 uses).
 New usage of "orthin" is discouraged (2 uses).
 New usage of "osum" is discouraged (0 uses).
@@ -18410,6 +18414,7 @@ New usage of "suctrALT2VD" is discouraged (0 uses).
 New usage of "suctrALT3" is discouraged (0 uses).
 New usage of "suctrALTcf" is discouraged (0 uses).
 New usage of "suctrALTcfVD" is discouraged (0 uses).
+New usage of "suctrOLD" is discouraged (0 uses).
 New usage of "sumdmdi" is discouraged (2 uses).
 New usage of "sumdmdii" is discouraged (2 uses).
 New usage of "sumdmdlem" is discouraged (1 uses).
@@ -20101,8 +20106,12 @@ Proof modification of "opnmblALT" is discouraged (332 steps).
 Proof modification of "opsrbaslemOLD" is discouraged (165 steps).
 Proof modification of "orbi1r" is discouraged (9 steps).
 Proof modification of "orbi1rVD" is discouraged (101 steps).
+Proof modification of "ordelinelOLD" is discouraged (126 steps).
 Proof modification of "ordelordALT" is discouraged (128 steps).
 Proof modification of "ordelordALTVD" is discouraged (202 steps).
+Proof modification of "ordnbtwnOLD" is discouraged (77 steps).
+Proof modification of "ordtr3OLD" is discouraged (76 steps).
+Proof modification of "ordtri3OLD" is discouraged (107 steps).
 Proof modification of "otpsbasOLD" is discouraged (40 steps).
 Proof modification of "otpsleOLD" is discouraged (40 steps).
 Proof modification of "otpsstrOLD" is discouraged (41 steps).
@@ -20308,6 +20317,7 @@ Proof modification of "suctrALT2VD" is discouraged (173 steps).
 Proof modification of "suctrALT3" is discouraged (137 steps).
 Proof modification of "suctrALTcf" is discouraged (164 steps).
 Proof modification of "suctrALTcfVD" is discouraged (164 steps).
+Proof modification of "suctrOLD" is discouraged (122 steps).
 Proof modification of "syl5imp" is discouraged (23 steps).
 Proof modification of "syl5impVD" is discouraged (57 steps).
 Proof modification of "tb-ax1" is discouraged (4 steps).
