@@ -9331,7 +9331,6 @@
 "ltmpi" is used by "ltsonq".
 "ltneOLD" is used by "coprm".
 "ltneOLD" is used by "phibndlem".
-"ltneOLD" is used by "sineq0".
 "ltneOLD" is used by "stadd3i".
 "ltneOLD" is used by "znnenlem".
 "ltpiord" is used by "1lt2pi".
@@ -16949,7 +16948,7 @@ New usage of "ltexprlem6" is discouraged (1 uses).
 New usage of "ltexprlem7" is discouraged (1 uses).
 New usage of "ltmnq" is discouraged (11 uses).
 New usage of "ltmpi" is discouraged (5 uses).
-New usage of "ltneOLD" is discouraged (5 uses).
+New usage of "ltneOLD" is discouraged (4 uses).
 New usage of "ltpiord" is discouraged (7 uses).
 New usage of "ltprord" is discouraged (6 uses).
 New usage of "ltpsrpr" is discouraged (1 uses).
