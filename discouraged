@@ -8656,7 +8656,6 @@
 "infmssuzclOLD" is used by "elaa2lemOLD".
 "infmssuzclOLD" is used by "elqaalem1OLD".
 "infmssuzclOLD" is used by "elqaalem3OLD".
-"infmssuzclOLD" is used by "etransclem48OLD".
 "infmssuzclOLD" is used by "fourierdlem31OLD".
 "infmssuzclOLD" is used by "ftalem4OLD".
 "infmssuzclOLD" is used by "ftalem5OLD".
@@ -8672,16 +8671,12 @@
 "infmssuzleOLD" is used by "odlem2OLD".
 "infmsupOLD" is used by "infmrclOLD".
 "infmxrclOLD" is used by "infmxrgelbOLD".
-"infmxrclOLD" is used by "infmxrlbOLD".
-"infmxrclOLD" is used by "infxrmnfOLD".
 "infmxrclOLD" is used by "limsupclOLD".
 "infmxrclOLD" is used by "metdsfOLD".
 "infmxrgelbOLD" is used by "limsupleOLD".
 "infmxrgelbOLD" is used by "metdsfOLD".
 "infmxrgelbOLD" is used by "metdsgeOLD".
-"infmxrlbOLD" is used by "infxrmnfOLD".
 "infxrge0glbOLD" is used by "infxrge0gelbOLD".
-"infxrmnfOLD" is used by "xrinfmOLD".
 "int2" is used by "sspwimpVD".
 "int2" is used by "sspwimpcfVD".
 "int2" is used by "suctrALTcfVD".
@@ -15896,7 +15891,6 @@ New usage of "erngplus-rN" is discouraged (1 uses).
 New usage of "erngplus2-rN" is discouraged (0 uses).
 New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
-New usage of "etransclem48OLD" is discouraged (0 uses).
 New usage of "euexALT" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
 New usage of "ex-gt" is discouraged (0 uses).
@@ -16559,17 +16553,15 @@ New usage of "indpi" is discouraged (1 uses).
 New usage of "infmrclOLD" is discouraged (10 uses).
 New usage of "infmrgelbOLD" is discouraged (8 uses).
 New usage of "infmrlbOLD" is discouraged (5 uses).
-New usage of "infmssuzclOLD" is discouraged (14 uses).
+New usage of "infmssuzclOLD" is discouraged (13 uses).
 New usage of "infmssuzleOLD" is discouraged (7 uses).
 New usage of "infmsupOLD" is discouraged (1 uses).
-New usage of "infmxrclOLD" is discouraged (5 uses).
+New usage of "infmxrclOLD" is discouraged (3 uses).
 New usage of "infmxrgelbOLD" is discouraged (3 uses).
-New usage of "infmxrlbOLD" is discouraged (1 uses).
 New usage of "infpssALT" is discouraged (0 uses).
 New usage of "infxrge0gelbOLD" is discouraged (0 uses).
 New usage of "infxrge0glbOLD" is discouraged (1 uses).
 New usage of "infxrge0lbOLD" is discouraged (0 uses).
-New usage of "infxrmnfOLD" is discouraged (1 uses).
 New usage of "int0OLD" is discouraged (0 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
@@ -18333,7 +18325,6 @@ New usage of "tgblthelfgottOLD" is discouraged (1 uses).
 New usage of "tgoldbachOLD" is discouraged (0 uses).
 New usage of "tgoldbachltOLD" is discouraged (1 uses).
 New usage of "topnfbey" is discouraged (0 uses).
-New usage of "tosglbOLD" is discouraged (0 uses).
 New usage of "tpid3gOLD" is discouraged (0 uses).
 New usage of "tpid3gVD" is discouraged (0 uses).
 New usage of "tratrb" is discouraged (2 uses).
@@ -18543,7 +18534,6 @@ New usage of "xpexgALT" is discouraged (0 uses).
 New usage of "xrge0infssOLD" is discouraged (7 uses).
 New usage of "xrge0infssdOLD" is discouraged (1 uses).
 New usage of "xrge0tmdOLD" is discouraged (0 uses).
-New usage of "xrinfmOLD" is discouraged (0 uses).
 New usage of "zaddablx" is discouraged (0 uses).
 New usage of "zexALT" is discouraged (1 uses).
 New usage of "zfac" is discouraged (1 uses).
@@ -19411,7 +19401,6 @@ Proof modification of "equsexALT" is discouraged (37 steps).
 Proof modification of "equtr2OLD" is discouraged (20 steps).
 Proof modification of "equvinivOLD" is discouraged (32 steps).
 Proof modification of "equvinvOLD" is discouraged (35 steps).
-Proof modification of "etransclem48OLD" is discouraged (1560 steps).
 Proof modification of "euexALT" is discouraged (32 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
 Proof modification of "ex-natded5.13" is discouraged (67 steps).
@@ -19703,13 +19692,11 @@ Proof modification of "infmssuzleOLD" is discouraged (79 steps).
 Proof modification of "infmsupOLD" is discouraged (319 steps).
 Proof modification of "infmxrclOLD" is discouraged (30 steps).
 Proof modification of "infmxrgelbOLD" is discouraged (197 steps).
-Proof modification of "infmxrlbOLD" is discouraged (99 steps).
 Proof modification of "infpssALT" is discouraged (52 steps).
 Proof modification of "infregelb" is discouraged (185 steps).
 Proof modification of "infxrge0gelbOLD" is discouraged (201 steps).
 Proof modification of "infxrge0glbOLD" is discouraged (201 steps).
 Proof modification of "infxrge0lbOLD" is discouraged (166 steps).
-Proof modification of "infxrmnfOLD" is discouraged (38 steps).
 Proof modification of "int0OLD" is discouraged (45 steps).
 Proof modification of "int2" is discouraged (14 steps).
 Proof modification of "int3" is discouraged (17 steps).
@@ -20186,7 +20173,6 @@ Proof modification of "tgblthelfgottOLD" is discouraged (900 steps).
 Proof modification of "tgoldbachOLD" is discouraged (640 steps).
 Proof modification of "tgoldbachltOLD" is discouraged (405 steps).
 Proof modification of "topnfbey" is discouraged (75 steps).
-Proof modification of "tosglbOLD" is discouraged (167 steps).
 Proof modification of "toycom" is discouraged (142 steps).
 Proof modification of "tpid3gOLD" is discouraged (78 steps).
 Proof modification of "tpid3gVD" is discouraged (116 steps).
@@ -20327,7 +20313,6 @@ Proof modification of "xpexgALT" is discouraged (84 steps).
 Proof modification of "xrge0infssOLD" is discouraged (592 steps).
 Proof modification of "xrge0infssdOLD" is discouraged (203 steps).
 Proof modification of "xrge0tmdOLD" is discouraged (166 steps).
-Proof modification of "xrinfmOLD" is discouraged (19 steps).
 Proof modification of "zexALT" is discouraged (34 steps).
 Proof modification of "zfcndac" is discouraged (256 steps).
 Proof modification of "zfcndext" is discouraged (19 steps).
