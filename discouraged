@@ -4871,7 +4871,6 @@
 "df-nv" is used by "isnvlem".
 "df-nv" is used by "nvss".
 "df-oc" is used by "ocval".
-"df-odOLD" is used by "odfvalOLD".
 "df-ph" is used by "isphg".
 "df-ph" is used by "phnv".
 "df-pjh" is used by "pjhfval".
@@ -8585,9 +8584,6 @@
 "in3" is used by "truniALTVD".
 "in3an" is used by "onfrALTlem2VD".
 "indpi" is used by "prlem934".
-"infmssuzclOLD" is used by "odlem1OLD".
-"infmssuzclOLD" is used by "odlem2OLD".
-"infmssuzleOLD" is used by "odlem2OLD".
 "infmxrclOLD" is used by "infmxrgelbOLD".
 "infmxrclOLD" is used by "metdsfOLD".
 "infmxrgelbOLD" is used by "metdsfOLD".
@@ -8852,10 +8848,6 @@
 "latmassOLD" is used by "lhp2at0".
 "latmassOLD" is used by "omlfh1N".
 "latmmdiN" is used by "omlfh1N".
-"lbinfmOLD" is used by "lbinfmclOLD".
-"lbinfmOLD" is used by "lbinfmleOLD".
-"lbinfmclOLD" is used by "infmssuzclOLD".
-"lbinfmleOLD" is used by "infmssuzleOLD".
 "lecm" is used by "chirredlem2".
 "lecmi" is used by "lecm".
 "lecmi" is used by "lecmii".
@@ -11027,13 +11019,6 @@
 "ocval" is used by "occon".
 "ocval" is used by "ocel".
 "ocval" is used by "ocsh".
-"odclOLD" is used by "odfOLD".
-"odfvalOLD" is used by "odfOLD".
-"odfvalOLD" is used by "odvalOLD".
-"odlem1OLD" is used by "odclOLD".
-"odlem1OLD" is used by "odidOLD".
-"odvalOLD" is used by "odlem1OLD".
-"odvalOLD" is used by "odlem2OLD".
 "oldmm3N" is used by "cmtbr3N".
 "oldmm3N" is used by "lhprelat3N".
 "omlfh1N" is used by "omlfh3N".
@@ -15111,8 +15096,6 @@ New usage of "df-nq" is discouraged (5 uses).
 New usage of "df-nr" is discouraged (24 uses).
 New usage of "df-nv" is discouraged (2 uses).
 New usage of "df-oc" is discouraged (1 uses).
-New usage of "df-odOLD" is discouraged (1 uses).
-New usage of "df-pgpOLD" is discouraged (0 uses).
 New usage of "df-ph" is discouraged (2 uses).
 New usage of "df-pjh" is discouraged (2 uses).
 New usage of "df-pli" is discouraged (2 uses).
@@ -16317,8 +16300,6 @@ New usage of "indistps2ALT" is discouraged (0 uses).
 New usage of "indistpsALT" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
-New usage of "infmssuzclOLD" is discouraged (2 uses).
-New usage of "infmssuzleOLD" is discouraged (1 uses).
 New usage of "infmxrclOLD" is discouraged (2 uses).
 New usage of "infmxrgelbOLD" is discouraged (2 uses).
 New usage of "infpssALT" is discouraged (0 uses).
@@ -16455,9 +16436,6 @@ New usage of "largei" is discouraged (0 uses).
 New usage of "latmassOLD" is discouraged (17 uses).
 New usage of "latmmdiN" is discouraged (1 uses).
 New usage of "lautcnvclN" is discouraged (0 uses).
-New usage of "lbinfmOLD" is discouraged (2 uses).
-New usage of "lbinfmclOLD" is discouraged (1 uses).
-New usage of "lbinfmleOLD" is discouraged (1 uses).
 New usage of "lcd0vvalN" is discouraged (0 uses).
 New usage of "lcdlkreq2N" is discouraged (0 uses).
 New usage of "lcdlkreqN" is discouraged (0 uses).
@@ -17172,13 +17150,6 @@ New usage of "ocorth" is discouraged (3 uses).
 New usage of "ocsh" is discouraged (6 uses).
 New usage of "ocss" is discouraged (11 uses).
 New usage of "ocval" is discouraged (4 uses).
-New usage of "odclOLD" is discouraged (1 uses).
-New usage of "odfOLD" is discouraged (0 uses).
-New usage of "odfvalOLD" is discouraged (2 uses).
-New usage of "odidOLD" is discouraged (0 uses).
-New usage of "odlem1OLD" is discouraged (2 uses).
-New usage of "odlem2OLD" is discouraged (0 uses).
-New usage of "odvalOLD" is discouraged (2 uses).
 New usage of "ogrpinvOLD" is discouraged (0 uses).
 New usage of "oldmm3N" is discouraged (2 uses).
 New usage of "olposN" is discouraged (0 uses).
@@ -19378,8 +19349,6 @@ Proof modification of "in3" is discouraged (12 steps).
 Proof modification of "in3an" is discouraged (21 steps).
 Proof modification of "indistps2ALT" is discouraged (43 steps).
 Proof modification of "indistpsALT" is discouraged (64 steps).
-Proof modification of "infmssuzclOLD" is discouraged (62 steps).
-Proof modification of "infmssuzleOLD" is discouraged (79 steps).
 Proof modification of "infmxrclOLD" is discouraged (30 steps).
 Proof modification of "infmxrgelbOLD" is discouraged (197 steps).
 Proof modification of "infpssALT" is discouraged (52 steps).
@@ -19409,9 +19378,6 @@ Proof modification of "karatsubaOLD" is discouraged (408 steps).
 Proof modification of "konigsbergiedgwOLD" is discouraged (208 steps).
 Proof modification of "konigsbergupgrOLD" is discouraged (118 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
-Proof modification of "lbinfmOLD" is discouraged (146 steps).
-Proof modification of "lbinfmclOLD" is discouraged (35 steps).
-Proof modification of "lbinfmleOLD" is discouraged (47 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
 Proof modification of "lediv2aALT" is discouraged (264 steps).
 Proof modification of "ltrnmwOLD" is discouraged (292 steps).
@@ -19549,13 +19515,6 @@ Proof modification of "notnotrALT2" is discouraged (2 steps).
 Proof modification of "notnotrALTVD" is discouraged (34 steps).
 Proof modification of "notnotriOLD" is discouraged (8 steps).
 Proof modification of "npss0OLD" is discouraged (29 steps).
-Proof modification of "odclOLD" is discouraged (79 steps).
-Proof modification of "odfOLD" is discouraged (94 steps).
-Proof modification of "odfvalOLD" is discouraged (189 steps).
-Proof modification of "odidOLD" is discouraged (102 steps).
-Proof modification of "odlem1OLD" is discouraged (160 steps).
-Proof modification of "odlem2OLD" is discouraged (190 steps).
-Proof modification of "odvalOLD" is discouraged (137 steps).
 Proof modification of "ogrpinvOLD" is discouraged (149 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
 Proof modification of "onfrALT" is discouraged (88 steps).
