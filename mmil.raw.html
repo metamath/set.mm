@@ -1379,7 +1379,7 @@ is double negation elimination.</TD>
 
 <TR>
 <TD>n0</TD>
-<TD>~ n0r , ~ fin0</TD>
+<TD>~ n0r , ~ fin0 , ~ fin0or</TD>
 </TR>
 
 <TR>
@@ -1723,57 +1723,83 @@ there is less need for this convenience theorem.</TD>
 </TR>
 
 <TR>
-<TD>df-fr and all theorems using <TT>Fr</TT></TD>
-<TD><I>none</I></TD>
-<TD><P>Right now iset.mm does not have a well-founded predicate
-(<code>Fr</code> in set.mm). This means that various theorems (involving
-ordinals, especially) require the
-Axiom of Set Induction ~ ax-setind (the IZF equivalent to the Axiom of
-Foundation/Regularity in ZF), where the set.mm proofs of those theorems
-do not.</P>
-
-<P>Presumably if we were to add <code>Fr</code> we'd define it as being
-inductive, that is, a property that satisfies the epsilon (or R)
-induction principle is always true. For example:
-R Fr A ` <-> A. s ( A. x ( A. y ( y R x -> y e. s ) -> x e. s ) -> A C_ s ) `
-</P>
-
-<P>This definition has some problems when A is a proper class. As such,
-~ ax-setind has to be stated as a schema instead:
-` A. x ( A. y ( y e. x -> y e. S ) -> x e. S ) -> S = _V `
-</P>
-
-<P>There are two ways to say no infinite descending sequence, using
-` E. -. ` or ` -. A. `, which are not intuitionistically equivalent.
-Furthermore there are some trivial commutations that are not
-intuitionistically valid. So I think that makes the following definition
-possibilities:</P>
-
-<P>R Fr A ` <-> A. s ( A. x ( A. y ( y R x -> y e. s ) -> x e. s ) -> A C_ s ) `</P>
-<P>R Fr2 A ` <-> A. s ( s C_ A -> ( A. x e. s E. y e. s y R x -> s = (/) ) ) `</P>
-<P>R Fr3 A ` <-> A. s ( s C_ A -> ( E. x x e. s -> E. x e. s A. y e. s -. y R x ) ) `</P>
-
-<P>The set.mm definition is roughly Fr3 (but it uses nonempty in place of
-inhabited). We can probably just focus on the first definition, but ideally
-we'd prove it in set.mm (to show that given excluded middle it is equivalent
-to the definition of Fr in set.mm).</P>
-
-<P>If we adopted well-foundedness along these lines, we'd be able to add
-well-foundedness to the definition of an ordinal and prove many of the
-ordinal theorems without ~ ax-setind . The proof of ~ ordirr would be
-similar to the current proof of ~ elirr except that ~ ax-setind would
-be replaced by ` _E ` Fr ` A ` and ` _V ` throughout the ~ elirr proof
-would be replaced by ` A ` . Likewise for ~ en2lp . These theorems (for
-ordinals) would then not rely on ~ ax-setind .</P>
-</TD>
+  <TD>df-fr</TD>
+  <TD>~ df-frind</TD>
 </TR>
 
 <TR>
-<TD>df-we (and all theorems using <TT>We</TT>)</TD>
-<TD><I>none</I></TD>
-<TD>Ordering is moderately different in constructive logic,
-so if there is anything along these lines worth doing it
-will be different from set.mm.</TD>
+  <TD>fri , dffr2 , frc</TD>
+  <TD><I>none</I></TD>
+  <TD>That any subset of the base set has an element which is
+  minimal accordng to a well-founded relation presumably
+  implies excluded middle (or is otherwise unprovable).</TD>
+</TR>
+
+<TR>
+  <TD>frss</TD>
+  <TD>~ freq2</TD>
+  <TD>Because the definition of ` Fr ` is different than set.mm, the
+  proof would need to be different.</TD>
+</TR>
+
+<TR>
+  <TD>frirr</TD>
+  <TD>~ frirrg</TD>
+  <TD>We do not yet have a lot of theorems for the case where ` A ` is
+  a proper class.</TD>
+</TR>
+
+<TR>
+  <TD>fr2nr</TD>
+  <TD><I>none</I></TD>
+  <TD>Shouldn't be hard to prove if we need it (using a proof similar
+  to ~frirrg and ~ en2lp ).</TD>
+</TR>
+
+<TR>
+  <TD>frminex</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably unprovable.</TD>
+</TR>
+
+<TR>
+  <TD>efrn2lp</TD>
+  <TD><I>none</I></TD>
+  <TD>Should be easy but lightly used in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>dfepfr , epfrc</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably unprovable.</TD>
+</TR>
+
+<TR>
+<TD>df-we</TD>
+<TD>~ df-wetr</TD>
+</TR>
+
+<TR>
+  <TD>wess</TD>
+  <TD><I>none</I></TD>
+  <TD>See frss entry. Holds for ` _E ` (see for example ~ wessep ).</TD>
+</TR>
+
+<TR>
+  <TD>weso</TD>
+  <TD>~ wepo</TD>
+</TR>
+
+<TR>
+  <TD>wecmpep</TD>
+  <TD><I>none</I></TD>
+  <TD>` We ` does not imply trichotomy in iset.mm</TD>
+</TR>
+
+<TR>
+  <TD>wefrc , wereu , wereu2</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably not provable</TD>
 </TR>
 
 <TR>
@@ -1792,10 +1818,11 @@ will be different from set.mm.</TD>
 </TR>
 
 <TR>
-<TD>ordsseleq</TD>
-<TD>~ onelss , ~ eqimss </TD>
+<TD>ordsseleq , onsseleq</TD>
+<TD>~ onelss , ~ eqimss , ~ nnsseleq</TD>
 <TD>Taken together, ~ onelss and ~ eqimss represent the reverse direction of
-the biconditional from ordsseleq</TD>
+the biconditional from ordsseleq . For natural numbers the biconditional
+is provable.</TD>
 </TR>
 
 <TR>
@@ -1839,7 +1866,7 @@ is biconditional, but just for natural numbers.</TD>
 <TR>
 <TD>ordtr2 , ontr2</TD>
 <TD><I>none</I></TD>
-<TD>See also ordelpss in set.mm</TD>
+<TD>Implies excluded middle as shown at ~ ontr2exmid</TD>
 </TR>
 
 <TR>
@@ -2148,8 +2175,8 @@ fair bit of intuitionizing.</TD>
 
 <TR>
 <TD>onint</TD>
-<TD>~ onintexmid</TD>
-<TD>Implies excluded middle as shown in onintexmid.</TD>
+<TD>~ onintss</TD>
+<TD>onint implies excluded middle as shown in ~ onintexmid .</TD>
 </TR>
 
 <TR>
@@ -2272,9 +2299,9 @@ middle as seen at ~ ordpwsucexmid .</TD>
 
 <TR>
 <TD>0elsuc</TD>
-<TD>~ 0elsucexmid</TD>
+<TD><I>none</I></TD>
 <TD>This theorem may appear to be innocuous but it implies excluded
-middle as shown at 0elsucexmid .</TD>
+middle as shown at ~ 0elsucexmid .</TD>
 </TR>
 
 <TR>
@@ -2728,7 +2755,8 @@ ssfi , since ` { (/) } e. _om `</TD>
 
 <TR>
 <TD>ssfi</TD>
-<TD>~ ssfiexmid</TD>
+<TD><I>none</I></TD>
+<TD>Implies excluded middle as shown at ~ ssfiexmid</TD>
 </TR>
 
 <TR>
@@ -2801,9 +2829,22 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
+  <TD>unfi</TD>
+  <TD><I>none</I></TD>
+  <TD>Not provable according to Remark 8.1.17 of [AczelRathjen].</TD>
+</TR>
+
+<TR>
 <TD>ax-reg , axreg2 , zfregcl</TD>
 <TD>~ ax-setind </TD>
 <TD>ax-reg implies excluded middle as seen at ~ regexmid</TD>
+</TR>
+
+<TR>
+  <TD>df-rank and all theorems realted to the rank function</TD>
+  <TD><I>none</I></TD>
+  <TD>One possible definition is Definition 9.3.4
+  of [AczelRathjen], p. 91</TD>
 </TR>
 
 <TR>
@@ -2953,6 +2994,16 @@ this implies excluded middle</TD>
   <TD>~ fientri3</TD>
   <TD>Because full entri3 is equivalent to the axiom of choice,
   it implies excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>df-wina , df-ina , df-tsk , df-gru , ax-groth and all theorems
+  related to inaccessibles and large cardinals</TD>
+  <TD><I>none</I></TD>
+  <TD>For an introduction to inaccessibles and large set properties
+  see Chapter 18 of [AczelRathjen], p. 165 (including why "large set
+  properties" is more apt terminology than "large cardinal
+  properties" in the absence of excluded middle).</TD>
 </TR>
 
 <TR>
@@ -5498,6 +5549,11 @@ intuitionistic and it is lightly used in set.mm</TD>
 COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
 
 <OL>
+
+<LI><A NAME="AczelRathjen"></A> [AczelRathjen] Aczel, Peter, and
+Rathjen, Michael, "Constructive Set Theory", 2018,
+<A HREF="http://www1.maths.leeds.ac.uk/~~rathjen/book.pdf"
+>http://www1.maths.leeds.ac.uk/~~rathjen/book.pdf</A></LI>
 
 <LI><A NAME="Apostol"></A> [Apostol] Apostol, Tom M.,
 <I>Calculus,</I> vol. 1, 2nd ed.,
