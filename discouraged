@@ -563,7 +563,7 @@
 "ablogrpo" is used by "ablonnncan".
 "ablogrpo" is used by "ablonnncan1".
 "ablogrpo" is used by "cncph".
-"ablogrpo" is used by "cnid".
+"ablogrpo" is used by "cnidOLD".
 "ablogrpo" is used by "cnnv".
 "ablogrpo" is used by "cnnvba".
 "ablogrpo" is used by "hhba".
@@ -573,8 +573,8 @@
 "ablogrpo" is used by "hhssnv".
 "ablogrpo" is used by "hilid".
 "ablogrpo" is used by "iscringd".
-"ablogrpo" is used by "isvc".
-"ablogrpo" is used by "isvci".
+"ablogrpo" is used by "isvcOLD".
+"ablogrpo" is used by "isvciOLD".
 "ablogrpo" is used by "nvgrp".
 "ablogrpo" is used by "rngogrpo".
 "ablogrpo" is used by "vcgrp".
@@ -996,11 +996,11 @@
 "ax-addf" is used by "addcn".
 "ax-addf" is used by "addcomgi".
 "ax-addf" is used by "addex".
-"ax-addf" is used by "cnaddablo".
+"ax-addf" is used by "cnaddabloOLD".
 "ax-addf" is used by "cncph".
-"ax-addf" is used by "cncvc".
+"ax-addf" is used by "cncvcOLD".
 "ax-addf" is used by "cnfldplusf".
-"ax-addf" is used by "cnid".
+"ax-addf" is used by "cnidOLD".
 "ax-addf" is used by "cnnv".
 "ax-addf" is used by "cnnvba".
 "ax-addf" is used by "itg1addlem4".
@@ -1441,7 +1441,7 @@
 "ax-mulass" is used by "mulass".
 "ax-mulcl" is used by "mulcl".
 "ax-mulcom" is used by "mulcom".
-"ax-mulf" is used by "cncvc".
+"ax-mulf" is used by "cncvcOLD".
 "ax-mulf" is used by "dvdsmulf1o".
 "ax-mulf" is used by "fsumdvdsmul".
 "ax-mulf" is used by "iimulcn".
@@ -4291,20 +4291,20 @@
 "cmtvalN" is used by "cmtcomlemN".
 "cnaddabl" is used by "cnaddcom".
 "cnaddabl" is used by "cnaddinv".
-"cnaddablo" is used by "cncph".
-"cnaddablo" is used by "cncvc".
-"cnaddablo" is used by "cnid".
-"cnaddablo" is used by "cnnv".
-"cnaddablo" is used by "cnnvba".
+"cnaddabloOLD" is used by "cncph".
+"cnaddabloOLD" is used by "cncvcOLD".
+"cnaddabloOLD" is used by "cnidOLD".
+"cnaddabloOLD" is used by "cnnv".
+"cnaddabloOLD" is used by "cnnvba".
 "cnaddid" is used by "cnaddinv".
 "cnbn" is used by "cnchl".
 "cnbn" is used by "ubth".
 "cnchl" is used by "htth".
 "cncph" is used by "cnchl".
 "cncph" is used by "elimphu".
-"cncvc" is used by "cnnv".
+"cncvcOLD" is used by "cnnv".
 "cnfnc" is used by "nmcfnexi".
-"cnid" is used by "cnnv".
+"cnidOLD" is used by "cnnv".
 "cnims" is used by "cnbn".
 "cnlnadj" is used by "adjbdln".
 "cnlnadj" is used by "cnlnssadj".
@@ -4928,7 +4928,7 @@
 "df-va" is used by "vafval".
 "df-va" is used by "vsfval".
 "df-vc" is used by "isvclem".
-"df-vc" is used by "vci".
+"df-vc" is used by "vciOLD".
 "df-vc" is used by "vcrel".
 "df-vd1" is used by "dfvd1imp".
 "df-vd1" is used by "dfvd1impr".
@@ -6370,7 +6370,7 @@
 "grpoidcl" is used by "rngolz".
 "grpoidcl" is used by "rngorz".
 "grpoidcl" is used by "vczcl".
-"grpoideu" is used by "cnid".
+"grpoideu" is used by "cnidOLD".
 "grpoideu" is used by "grpoidcl".
 "grpoideu" is used by "grpoidinv2".
 "grpoideu" is used by "grpoidval".
@@ -6389,7 +6389,7 @@
 "grpoidinvlem3" is used by "grpoidinv".
 "grpoidinvlem4" is used by "grpoideu".
 "grpoidinvlem4" is used by "grpoidinv".
-"grpoidval" is used by "cnid".
+"grpoidval" is used by "cnidOLD".
 "grpoidval" is used by "grpoidcl".
 "grpoidval" is used by "grpoidinv2".
 "grpoidval" is used by "hilid".
@@ -6458,7 +6458,7 @@
 "grpolinv" is used by "isdrngo2".
 "grpolinv" is used by "nvlinv".
 "grpolinv" is used by "rngoaddneg2".
-"grpolinv" is used by "vclinv".
+"grpolinv" is used by "vclinvOLD".
 "grpomndo" is used by "isdrngo2".
 "grpomuldivass" is used by "ablo4pnp".
 "grpomuldivass" is used by "ablodivdiv".
@@ -6500,9 +6500,9 @@
 "grporinv" is used by "nvrinv".
 "grporinv" is used by "rngoaddneg1".
 "grporinv" is used by "vcm".
-"grporinv" is used by "vcrinv".
+"grporinv" is used by "vcrinvOLD".
 "grporn" is used by "cncph".
-"grporn" is used by "cnid".
+"grporn" is used by "cnidOLD".
 "grporn" is used by "cnnv".
 "grporn" is used by "cnnvba".
 "grporn" is used by "hhba".
@@ -6511,12 +6511,12 @@
 "grporn" is used by "hhssnv".
 "grporn" is used by "hilid".
 "grporn" is used by "isabloi".
-"grporn" is used by "isvci".
+"grporn" is used by "isvciOLD".
 "grporndm" is used by "divrngcl".
 "grporndm" is used by "hhshsslem1".
 "grporndm" is used by "isdrngo2".
 "grporndm" is used by "rngorn1".
-"grporndm" is used by "vcoprne".
+"grporndm" is used by "vcoprneOLD".
 "grposnOLD" is used by "gidsn".
 "grpplusgx" is used by "cnaddablx".
 "grpplusgx" is used by "isgrpix".
@@ -8667,7 +8667,7 @@
 "isablo" is used by "ablocom".
 "isablo" is used by "ablogrpo".
 "isablo" is used by "isabloi".
-"isabloi" is used by "cnaddablo".
+"isabloi" is used by "cnaddabloOLD".
 "isabloi" is used by "hhssabloi".
 "isabloi" is used by "hilablo".
 "isass" is used by "issmgrpOLD".
@@ -8715,7 +8715,7 @@
 "isgrpo" is used by "grpomndo".
 "isgrpo" is used by "isgrpda".
 "isgrpo" is used by "isgrpoi".
-"isgrpoi" is used by "cnaddablo".
+"isgrpoi" is used by "cnaddabloOLD".
 "isgrpoi" is used by "grposnOLD".
 "isgrpoi" is used by "hhssabloilem".
 "isgrpoi" is used by "hilablo".
@@ -8808,11 +8808,11 @@
 "isst" is used by "strlem3a".
 "istrkg2d" is used by "axtglowdim2OLD".
 "istrkg2d" is used by "axtgupdim2OLD".
-"isvc" is used by "isvci".
-"isvci" is used by "cncvc".
-"isvci" is used by "hhssnv".
-"isvci" is used by "hilvc".
-"isvclem" is used by "isvc".
+"isvcOLD" is used by "isvciOLD".
+"isvciOLD" is used by "cncvcOLD".
+"isvciOLD" is used by "hhssnv".
+"isvciOLD" is used by "hilvc".
+"isvclem" is used by "isvcOLD".
 "isvclem" is used by "vcoprnelem".
 "iunconlem2" is used by "iunconALT".
 "jaoded" is used by "suctrALT3".
@@ -13042,10 +13042,10 @@
 "vc0" is used by "vcm".
 "vc0" is used by "vcz".
 "vc0rid" is used by "vc0".
-"vc0rid" is used by "vcoprne".
-"vc2" is used by "ipdirilem".
-"vc2" is used by "nv2".
-"vca4" is used by "vcsub4".
+"vc0rid" is used by "vcoprneOLD".
+"vc2OLD" is used by "ipdirilem".
+"vc2OLD" is used by "nv2".
+"vca4" is used by "vcsub4OLD".
 "vcablo" is used by "ip0i".
 "vcablo" is used by "ipdirilem".
 "vcablo" is used by "nvablo".
@@ -13054,57 +13054,57 @@
 "vcablo" is used by "vccom".
 "vcablo" is used by "vcgrp".
 "vcass" is used by "nvsass".
-"vcass" is used by "vcnegneg".
-"vcass" is used by "vcsubdir".
+"vcass" is used by "vcnegnegOLD".
+"vcass" is used by "vcsubdirOLD".
 "vcass" is used by "vcz".
 "vccl" is used by "nvscl".
 "vccl" is used by "vc0".
 "vccl" is used by "vcm".
-"vccl" is used by "vcnegsubdi2".
-"vccl" is used by "vcsub4".
-"vccom" is used by "vcnegsubdi2".
+"vccl" is used by "vcnegsubdi2OLD".
+"vccl" is used by "vcsub4OLD".
+"vccom" is used by "vcnegsubdi2OLD".
 "vcdi" is used by "nvdi".
-"vcdi" is used by "vcnegsubdi2".
-"vcdi" is used by "vcsub4".
+"vcdi" is used by "vcnegsubdi2OLD".
+"vcdi" is used by "vcsub4OLD".
 "vcdir" is used by "nvdir".
 "vcdir" is used by "vc0".
-"vcdir" is used by "vc2".
+"vcdir" is used by "vc2OLD".
 "vcdir" is used by "vcm".
-"vcdir" is used by "vcsubdir".
+"vcdir" is used by "vcsubdirOLD".
 "vcex" is used by "isnv".
-"vcex" is used by "isvc".
+"vcex" is used by "isvcOLD".
 "vcex" is used by "nvex".
 "vcgrp" is used by "vc0lid".
 "vcgrp" is used by "vc0rid".
 "vcgrp" is used by "vcaass".
 "vcgrp" is used by "vcgcl".
 "vcgrp" is used by "vclcan".
-"vcgrp" is used by "vclinv".
+"vcgrp" is used by "vclinvOLD".
 "vcgrp" is used by "vcm".
-"vcgrp" is used by "vcoprne".
+"vcgrp" is used by "vcoprneOLD".
 "vcgrp" is used by "vcrcan".
-"vcgrp" is used by "vcrinv".
+"vcgrp" is used by "vcrinvOLD".
 "vcgrp" is used by "vczcl".
-"vci" is used by "vcablo".
-"vci" is used by "vcass".
-"vci" is used by "vcdi".
-"vci" is used by "vcdir".
-"vci" is used by "vcid".
-"vci" is used by "vcsm".
-"vcid" is used by "nvsid".
-"vcid" is used by "vc0".
-"vcid" is used by "vc2".
-"vcid" is used by "vcm".
-"vcid" is used by "vcnegneg".
-"vcid" is used by "vcoprne".
+"vciOLD" is used by "vcablo".
+"vciOLD" is used by "vcass".
+"vciOLD" is used by "vcdi".
+"vciOLD" is used by "vcdir".
+"vciOLD" is used by "vcidOLD".
+"vciOLD" is used by "vcsm".
+"vcidOLD" is used by "nvsid".
+"vcidOLD" is used by "vc0".
+"vcidOLD" is used by "vc2OLD".
+"vcidOLD" is used by "vcm".
+"vcidOLD" is used by "vcnegnegOLD".
+"vcidOLD" is used by "vcoprneOLD".
 "vclcan" is used by "vc0".
-"vclcan" is used by "vcoprne".
+"vclcan" is used by "vcoprneOLD".
 "vcm" is used by "nvinv".
-"vcm" is used by "vclinv".
-"vcm" is used by "vcrinv".
-"vcnegneg" is used by "vcnegsubdi2".
-"vcoprne" is used by "nvoprne".
-"vcoprnelem" is used by "vcoprne".
+"vcm" is used by "vclinvOLD".
+"vcm" is used by "vcrinvOLD".
+"vcnegnegOLD" is used by "vcnegsubdi2OLD".
+"vcoprneOLD" is used by "nvoprne".
+"vcoprnelem" is used by "vcoprneOLD".
 "vcrel" is used by "nvvop".
 "vcrel" is used by "phop".
 "vcrel" is used by "vcex".
@@ -13112,9 +13112,9 @@
 "vcsm" is used by "nvsf".
 "vcsm" is used by "vccl".
 "vcz" is used by "nvsz".
-"vcz" is used by "vcoprne".
+"vcz" is used by "vcoprneOLD".
 "vczcl" is used by "vc0".
-"vczcl" is used by "vcoprne".
+"vczcl" is used by "vcoprneOLD".
 "vczcl" is used by "vcz".
 "vd01" is used by "e001".
 "vd01" is used by "e01".
@@ -14849,17 +14849,17 @@ New usage of "cmtfvalN" is discouraged (1 uses).
 New usage of "cmtidN" is discouraged (1 uses).
 New usage of "cmtvalN" is discouraged (4 uses).
 New usage of "cnaddabl" is discouraged (2 uses).
-New usage of "cnaddablo" is discouraged (5 uses).
+New usage of "cnaddabloOLD" is discouraged (5 uses).
 New usage of "cnaddablx" is discouraged (0 uses).
 New usage of "cnaddid" is discouraged (1 uses).
 New usage of "cnaddinv" is discouraged (0 uses).
 New usage of "cnbn" is discouraged (2 uses).
 New usage of "cnchl" is discouraged (1 uses).
 New usage of "cncph" is discouraged (2 uses).
-New usage of "cncvc" is discouraged (1 uses).
+New usage of "cncvcOLD" is discouraged (1 uses).
 New usage of "cnexALT" is discouraged (0 uses).
 New usage of "cnfnc" is discouraged (1 uses).
-New usage of "cnid" is discouraged (1 uses).
+New usage of "cnidOLD" is discouraged (1 uses).
 New usage of "cnims" is discouraged (1 uses).
 New usage of "cnlnadj" is discouraged (2 uses).
 New usage of "cnlnadjeu" is discouraged (1 uses).
@@ -16425,8 +16425,8 @@ New usage of "isst" is discouraged (4 uses).
 New usage of "issubgoilem" is discouraged (0 uses).
 New usage of "istrkg2d" is discouraged (2 uses).
 New usage of "istrnN" is discouraged (0 uses).
-New usage of "isvc" is discouraged (1 uses).
-New usage of "isvci" is discouraged (3 uses).
+New usage of "isvcOLD" is discouraged (1 uses).
+New usage of "isvciOLD" is discouraged (3 uses).
 New usage of "isvclem" is discouraged (2 uses).
 New usage of "iswatN" is discouraged (0 uses).
 New usage of "iunconALT" is discouraged (0 uses).
@@ -18130,7 +18130,7 @@ New usage of "vafval" is discouraged (20 uses).
 New usage of "vc0" is discouraged (3 uses).
 New usage of "vc0lid" is discouraged (0 uses).
 New usage of "vc0rid" is discouraged (2 uses).
-New usage of "vc2" is discouraged (2 uses).
+New usage of "vc2OLD" is discouraged (2 uses).
 New usage of "vca32" is discouraged (0 uses).
 New usage of "vca4" is discouraged (1 uses).
 New usage of "vcaass" is discouraged (0 uses).
@@ -18143,21 +18143,21 @@ New usage of "vcdir" is discouraged (5 uses).
 New usage of "vcex" is discouraged (3 uses).
 New usage of "vcgcl" is discouraged (0 uses).
 New usage of "vcgrp" is discouraged (11 uses).
-New usage of "vci" is discouraged (6 uses).
-New usage of "vcid" is discouraged (6 uses).
+New usage of "vciOLD" is discouraged (6 uses).
+New usage of "vcidOLD" is discouraged (6 uses).
 New usage of "vclcan" is discouraged (2 uses).
-New usage of "vclinv" is discouraged (0 uses).
+New usage of "vclinvOLD" is discouraged (0 uses).
 New usage of "vcm" is discouraged (3 uses).
-New usage of "vcnegneg" is discouraged (1 uses).
-New usage of "vcnegsubdi2" is discouraged (0 uses).
-New usage of "vcoprne" is discouraged (1 uses).
+New usage of "vcnegnegOLD" is discouraged (1 uses).
+New usage of "vcnegsubdi2OLD" is discouraged (0 uses).
+New usage of "vcoprneOLD" is discouraged (1 uses).
 New usage of "vcoprnelem" is discouraged (1 uses).
 New usage of "vcrcan" is discouraged (0 uses).
 New usage of "vcrel" is discouraged (4 uses).
-New usage of "vcrinv" is discouraged (0 uses).
+New usage of "vcrinvOLD" is discouraged (0 uses).
 New usage of "vcsm" is discouraged (2 uses).
-New usage of "vcsub4" is discouraged (0 uses).
-New usage of "vcsubdir" is discouraged (0 uses).
+New usage of "vcsub4OLD" is discouraged (0 uses).
+New usage of "vcsubdirOLD" is discouraged (0 uses).
 New usage of "vcz" is discouraged (2 uses).
 New usage of "vczcl" is discouraged (3 uses).
 New usage of "vd01" is discouraged (14 uses).
@@ -18767,8 +18767,11 @@ Proof modification of "chvarvOLD" is discouraged (10 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleljustALT2" is discouraged (25 steps).
 Proof modification of "clmgmOLD" is discouraged (50 steps).
+Proof modification of "cnaddabloOLD" is discouraged (65 steps).
 Proof modification of "cnaddcom" is discouraged (71 steps).
+Proof modification of "cncvcOLD" is discouraged (38 steps).
 Proof modification of "cnexALT" is discouraged (52 steps).
+Proof modification of "cnidOLD" is discouraged (118 steps).
 Proof modification of "cnnvdemo" is discouraged (50 steps).
 Proof modification of "cnvssOLD" is discouraged (62 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
@@ -19394,6 +19397,8 @@ Proof modification of "isrnsigaOLD" is discouraged (202 steps).
 Proof modification of "issgrpALT" is discouraged (53 steps).
 Proof modification of "issmgrpOLD" is discouraged (85 steps).
 Proof modification of "istrkg2d" is discouraged (439 steps).
+Proof modification of "isvcOLD" is discouraged (170 steps).
+Proof modification of "isvciOLD" is discouraged (178 steps).
 Proof modification of "iunconALT" is discouraged (56 steps).
 Proof modification of "iunconlem2" is discouraged (580 steps).
 Proof modification of "ivthALT" is discouraged (1080 steps).
@@ -19884,6 +19889,16 @@ Proof modification of "uunTT1" is discouraged (26 steps).
 Proof modification of "uunTT1p1" is discouraged (37 steps).
 Proof modification of "uunTT1p2" is discouraged (37 steps).
 Proof modification of "uzind4ALT" is discouraged (16 steps).
+Proof modification of "vc2OLD" is discouraged (85 steps).
+Proof modification of "vciOLD" is discouraged (518 steps).
+Proof modification of "vcidOLD" is discouraged (144 steps).
+Proof modification of "vclinvOLD" is discouraged (65 steps).
+Proof modification of "vcnegnegOLD" is discouraged (71 steps).
+Proof modification of "vcnegsubdi2OLD" is discouraged (157 steps).
+Proof modification of "vcoprneOLD" is discouraged (369 steps).
+Proof modification of "vcrinvOLD" is discouraged (65 steps).
+Proof modification of "vcsub4OLD" is discouraged (156 steps).
+Proof modification of "vcsubdirOLD" is discouraged (165 steps).
 Proof modification of "vd01" is discouraged (7 steps).
 Proof modification of "vd02" is discouraged (13 steps).
 Proof modification of "vd03" is discouraged (19 steps).
