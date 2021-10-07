@@ -184,9 +184,11 @@
 "10reOLD" is used by "problem2OLD".
 "10reOLD" is used by "tgblthelfgottOLD".
 "10reOLD" is used by "tgoldbachOLD".
+"19.21OLD" is used by "19.21-2OLD".
 "19.21OLD" is used by "19.21hOLD".
 "19.21hOLD" is used by "hbim1OLD".
 "19.21t-1OLD" is used by "19.21tOLD".
+"19.21t-1OLD" is used by "stdpc5OLD".
 "19.21tOLD" is used by "19.21OLD".
 "19.21tOLD" is used by "19.23tOLD".
 "19.21tOLD" is used by "nfimdOLD".
@@ -13518,6 +13520,7 @@
 "wnfOLD" is used by "nfvdOLD".
 "wnfOLD" is used by "nfxfrOLD".
 "wnfOLD" is used by "nfxfrdOLD".
+"wnfOLD" is used by "stdpc5OLD".
 "wvd2" is used by "dfvd2".
 "wvd2" is used by "dfvd2i".
 "wvd2" is used by "dfvd2imp".
@@ -13581,10 +13584,11 @@ New usage of "10p10e20OLD" is discouraged (0 uses).
 New usage of "10posOLD" is discouraged (3 uses).
 New usage of "10reOLD" is discouraged (14 uses).
 New usage of "139prmALT" is discouraged (0 uses).
-New usage of "19.21OLD" is discouraged (1 uses).
+New usage of "19.21-2OLD" is discouraged (0 uses).
+New usage of "19.21OLD" is discouraged (2 uses).
 New usage of "19.21a3con13vVD" is discouraged (0 uses).
 New usage of "19.21hOLD" is discouraged (1 uses).
-New usage of "19.21t-1OLD" is discouraged (1 uses).
+New usage of "19.21t-1OLD" is discouraged (2 uses).
 New usage of "19.21tOLD" is discouraged (3 uses).
 New usage of "19.23tOLD" is discouraged (0 uses).
 New usage of "19.29rOLD" is discouraged (0 uses).
@@ -18073,6 +18077,7 @@ New usage of "stcltr2i" is discouraged (1 uses).
 New usage of "stcltrlem1" is discouraged (1 uses).
 New usage of "stcltrlem2" is discouraged (1 uses).
 New usage of "stcltrthi" is discouraged (0 uses).
+New usage of "stdpc5OLD" is discouraged (0 uses).
 New usage of "stge0" is discouraged (1 uses).
 New usage of "stge1i" is discouraged (1 uses).
 New usage of "sthil" is discouraged (2 uses).
@@ -18339,7 +18344,7 @@ New usage of "wl-syl5" is discouraged (7 uses).
 New usage of "wl-syl6" is discouraged (2 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
-New usage of "wnfOLD" is discouraged (25 uses).
+New usage of "wnfOLD" is discouraged (26 uses).
 New usage of "wvd2" is discouraged (5 uses).
 New usage of "wvd3" is discouraged (3 uses).
 New usage of "wvhc10" is discouraged (0 uses).
@@ -18382,6 +18387,7 @@ Proof modification of "10p10e20OLD" is discouraged (17 steps).
 Proof modification of "10posOLD" is discouraged (16 steps).
 Proof modification of "10reOLD" is discouraged (13 steps).
 Proof modification of "139prmALT" is discouraged (758 steps).
+Proof modification of "19.21-2OLD" is discouraged (34 steps).
 Proof modification of "19.21OLD" is discouraged (20 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
 Proof modification of "19.21hOLD" is discouraged (8 steps).
@@ -19923,6 +19929,7 @@ Proof modification of "ssralv2VD" is discouraged (147 steps).
 Proof modification of "sstrALT2" is discouraged (81 steps).
 Proof modification of "sstrALT2VD" is discouraged (84 steps).
 Proof modification of "ssuniOLD" is discouraged (84 steps).
+Proof modification of "stdpc5OLD" is discouraged (20 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
 Proof modification of "sucidALT" is discouraged (28 steps).
 Proof modification of "sucidALTVD" is discouraged (28 steps).
