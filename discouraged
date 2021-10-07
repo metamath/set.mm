@@ -9894,6 +9894,8 @@
 "nfnf1OLD" is used by "nfimdOLD".
 "nfnf1OLD" is used by "nfntOLD".
 "nfntOLD" is used by "19.23tOLD".
+"nfntOLD" is used by "nfnOLD".
+"nfntOLD" is used by "nfndOLD".
 "nfrOLD" is used by "19.21t-1OLD".
 "nfrOLD" is used by "nfimdOLD".
 "nfrOLD" is used by "nfrdOLD".
@@ -13506,6 +13508,8 @@
 "wnfOLD" is used by "nfiOLD".
 "wnfOLD" is used by "nfimOLD".
 "wnfOLD" is used by "nfimdOLD".
+"wnfOLD" is used by "nfnOLD".
+"wnfOLD" is used by "nfndOLD".
 "wnfOLD" is used by "nfnf1OLD".
 "wnfOLD" is used by "nfntOLD".
 "wnfOLD" is used by "nfrOLD".
@@ -16971,9 +16975,11 @@ New usage of "nfiOLD" is discouraged (9 uses).
 New usage of "nfim1OLD" is discouraged (1 uses).
 New usage of "nfimOLD" is discouraged (0 uses).
 New usage of "nfimdOLD" is discouraged (1 uses).
+New usage of "nfnOLD" is discouraged (0 uses).
+New usage of "nfndOLD" is discouraged (0 uses).
 New usage of "nfnf1OLD" is discouraged (2 uses).
 New usage of "nfnfcALT" is discouraged (0 uses).
-New usage of "nfntOLD" is discouraged (1 uses).
+New usage of "nfntOLD" is discouraged (3 uses).
 New usage of "nfnthOLD" is discouraged (0 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfrOLD" is discouraged (4 uses).
@@ -18333,7 +18339,7 @@ New usage of "wl-syl5" is discouraged (7 uses).
 New usage of "wl-syl6" is discouraged (2 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
-New usage of "wnfOLD" is discouraged (23 uses).
+New usage of "wnfOLD" is discouraged (25 uses).
 New usage of "wvd2" is discouraged (5 uses).
 New usage of "wvd3" is discouraged (3 uses).
 New usage of "wvhc10" is discouraged (0 uses).
@@ -19634,6 +19640,8 @@ Proof modification of "nfiOLD" is discouraged (14 steps).
 Proof modification of "nfim1OLD" is discouraged (18 steps).
 Proof modification of "nfimOLD" is discouraged (11 steps).
 Proof modification of "nfimdOLD" is discouraged (66 steps).
+Proof modification of "nfnOLD" is discouraged (12 steps).
+Proof modification of "nfndOLD" is discouraged (13 steps).
 Proof modification of "nfnf1OLD" is discouraged (18 steps).
 Proof modification of "nfnfcALT" is discouraged (30 steps).
 Proof modification of "nfntOLD" is discouraged (30 steps).
