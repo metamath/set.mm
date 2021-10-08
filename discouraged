@@ -195,6 +195,9 @@
 "19.23OLD" is used by "19.23hOLD".
 "19.23OLD" is used by "exlimiOLD".
 "19.23tOLD" is used by "19.23OLD".
+"19.28OLD" is used by "nfan1OLD".
+"19.3OLD" is used by "19.27OLD".
+"19.3OLD" is used by "19.28OLD".
 "19.41rg" is used by "ax6e2nd".
 "19.41rg" is used by "ax6e2ndALT".
 "19.41rg" is used by "ax6e2ndVD".
@@ -9884,6 +9887,10 @@
 "nfa1-o" is used by "ax12v2-o".
 "nfa1-o" is used by "axc11n-16".
 "nfa1OLD" is used by "nfnf1OLD".
+"nfan1OLD" is used by "nfanOLD".
+"nfanOLD" is used by "nf3anOLD".
+"nfanOLD" is used by "nfnanOLD".
+"nfandOLD" is used by "nf3andOLD".
 "nfbiiOLD" is used by "nfxfrOLD".
 "nfbiiOLD" is used by "nfxfrdOLD".
 "nfdOLD" is used by "nfdhOLD".
@@ -9895,6 +9902,7 @@
 "nfiOLD" is used by "exlimdhOLD".
 "nfiOLD" is used by "exlimihOLD".
 "nfiOLD" is used by "nfa1OLD".
+"nfiOLD" is used by "nfan1OLD".
 "nfiOLD" is used by "nfdhOLD".
 "nfiOLD" is used by "nfdiOLD".
 "nfiOLD" is used by "nfe1OLD".
@@ -9904,6 +9912,9 @@
 "nfiOLD" is used by "nfvOLD".
 "nfim1OLD" is used by "nfimOLD".
 "nfimdOLD" is used by "hbimdOLD".
+"nfimdOLD" is used by "nfandOLD".
+"nfnOLD" is used by "nfnanOLD".
+"nfndOLD" is used by "nfandOLD".
 "nfnf1OLD" is used by "nfimdOLD".
 "nfnf1OLD" is used by "nfntOLD".
 "nfntOLD" is used by "19.23tOLD".
@@ -9915,6 +9926,7 @@
 "nfrOLD" is used by "nfriOLD".
 "nfrdOLD" is used by "alrimddOLD".
 "nfrdOLD" is used by "hbimdOLD".
+"nfrdOLD" is used by "nfan1OLD".
 "nfrdOLD" is used by "nfdiOLD".
 "nfrdOLD" is used by "nfim1OLD".
 "nfriOLD" is used by "19.3OLD".
@@ -9926,7 +9938,11 @@
 "nfriOLD" is used by "nexdOLD".
 "nfriOLD" is used by "nfim1OLD".
 "nfvOLD" is used by "nfvdOLD".
+"nfxfrOLD" is used by "nf3anOLD".
+"nfxfrOLD" is used by "nfnanOLD".
 "nfxfrOLD" is used by "nfnf1OLD".
+"nfxfrdOLD" is used by "nf3andOLD".
+"nfxfrdOLD" is used by "nfandOLD".
 "nic-ax" is used by "lukshef-ax1".
 "nic-ax" is used by "nic-id".
 "nic-ax" is used by "nic-idlem1".
@@ -13516,6 +13532,7 @@
 "wnfOLD" is used by "19.9dOLD".
 "wnfOLD" is used by "19.9tOLD".
 "wnfOLD" is used by "alrimdOLD".
+"wnfOLD" is used by "nfanOLD".
 "wnfOLD" is used by "nfbidfOLD".
 "wnfOLD" is used by "nfbiiOLD".
 "wnfOLD" is used by "nfdOLD".
@@ -13606,8 +13623,10 @@ New usage of "19.21tOLD" is discouraged (3 uses).
 New usage of "19.23OLD" is discouraged (2 uses).
 New usage of "19.23hOLD" is discouraged (0 uses).
 New usage of "19.23tOLD" is discouraged (1 uses).
+New usage of "19.27OLD" is discouraged (0 uses).
+New usage of "19.28OLD" is discouraged (1 uses).
 New usage of "19.29rOLD" is discouraged (0 uses).
-New usage of "19.3OLD" is discouraged (0 uses).
+New usage of "19.3OLD" is discouraged (2 uses).
 New usage of "19.40bOLD" is discouraged (0 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
@@ -16985,8 +17004,13 @@ New usage of "nbgraopALT" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "nelsnOLD" is discouraged (0 uses).
 New usage of "nexdOLD" is discouraged (0 uses).
+New usage of "nf3anOLD" is discouraged (0 uses).
+New usage of "nf3andOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
 New usage of "nfa1OLD" is discouraged (1 uses).
+New usage of "nfan1OLD" is discouraged (1 uses).
+New usage of "nfanOLD" is discouraged (2 uses).
+New usage of "nfandOLD" is discouraged (1 uses).
 New usage of "nfbidfOLD" is discouraged (0 uses).
 New usage of "nfbiiOLD" is discouraged (2 uses).
 New usage of "nfdOLD" is discouraged (2 uses).
@@ -16995,27 +17019,28 @@ New usage of "nfdiOLD" is discouraged (0 uses).
 New usage of "nfdvOLD" is discouraged (0 uses).
 New usage of "nfe1OLD" is discouraged (0 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
-New usage of "nfiOLD" is discouraged (13 uses).
+New usage of "nfiOLD" is discouraged (14 uses).
 New usage of "nfim1OLD" is discouraged (1 uses).
 New usage of "nfimOLD" is discouraged (0 uses).
-New usage of "nfimdOLD" is discouraged (1 uses).
-New usage of "nfnOLD" is discouraged (0 uses).
-New usage of "nfndOLD" is discouraged (0 uses).
+New usage of "nfimdOLD" is discouraged (2 uses).
+New usage of "nfnOLD" is discouraged (1 uses).
+New usage of "nfnanOLD" is discouraged (0 uses).
+New usage of "nfndOLD" is discouraged (1 uses).
 New usage of "nfnf1OLD" is discouraged (2 uses).
 New usage of "nfnfcALT" is discouraged (0 uses).
 New usage of "nfntOLD" is discouraged (3 uses).
 New usage of "nfnthOLD" is discouraged (0 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfrOLD" is discouraged (4 uses).
-New usage of "nfrdOLD" is discouraged (4 uses).
+New usage of "nfrdOLD" is discouraged (5 uses).
 New usage of "nfriOLD" is discouraged (8 uses).
 New usage of "nfthOLD" is discouraged (0 uses).
 New usage of "nfunidALT" is discouraged (0 uses).
 New usage of "nfunidALT2" is discouraged (0 uses).
 New usage of "nfvOLD" is discouraged (1 uses).
 New usage of "nfvdOLD" is discouraged (0 uses).
-New usage of "nfxfrOLD" is discouraged (1 uses).
-New usage of "nfxfrdOLD" is discouraged (0 uses).
+New usage of "nfxfrOLD" is discouraged (3 uses).
+New usage of "nfxfrdOLD" is discouraged (2 uses).
 New usage of "nic-ax" is discouraged (7 uses).
 New usage of "nic-axALT" is discouraged (0 uses).
 New usage of "nic-bi1" is discouraged (3 uses).
@@ -18364,7 +18389,7 @@ New usage of "wl-syl5" is discouraged (7 uses).
 New usage of "wl-syl6" is discouraged (2 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
-New usage of "wnfOLD" is discouraged (27 uses).
+New usage of "wnfOLD" is discouraged (28 uses).
 New usage of "wvd2" is discouraged (5 uses).
 New usage of "wvd3" is discouraged (3 uses).
 New usage of "wvhc10" is discouraged (0 uses).
@@ -18416,6 +18441,8 @@ Proof modification of "19.21tOLD" is discouraged (39 steps).
 Proof modification of "19.23OLD" is discouraged (20 steps).
 Proof modification of "19.23hOLD" is discouraged (8 steps).
 Proof modification of "19.23tOLD" is discouraged (52 steps).
+Proof modification of "19.27OLD" is discouraged (28 steps).
+Proof modification of "19.28OLD" is discouraged (28 steps).
 Proof modification of "19.29rOLD" is discouraged (30 steps).
 Proof modification of "19.3OLD" is discouraged (12 steps).
 Proof modification of "19.40bOLD" is discouraged (56 steps).
@@ -19659,8 +19686,13 @@ Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nbgraopALT" is discouraged (271 steps).
 Proof modification of "nelsnOLD" is discouraged (46 steps).
 Proof modification of "nexdOLD" is discouraged (9 steps).
+Proof modification of "nf3anOLD" is discouraged (26 steps).
+Proof modification of "nf3andOLD" is discouraged (29 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfa1OLD" is discouraged (8 steps).
+Proof modification of "nfan1OLD" is discouraged (29 steps).
+Proof modification of "nfanOLD" is discouraged (11 steps).
+Proof modification of "nfandOLD" is discouraged (29 steps).
 Proof modification of "nfbidfOLD" is discouraged (48 steps).
 Proof modification of "nfbiiOLD" is discouraged (42 steps).
 Proof modification of "nfdOLD" is discouraged (21 steps).
@@ -19674,6 +19706,7 @@ Proof modification of "nfim1OLD" is discouraged (18 steps).
 Proof modification of "nfimOLD" is discouraged (11 steps).
 Proof modification of "nfimdOLD" is discouraged (66 steps).
 Proof modification of "nfnOLD" is discouraged (12 steps).
+Proof modification of "nfnanOLD" is discouraged (21 steps).
 Proof modification of "nfndOLD" is discouraged (13 steps).
 Proof modification of "nfnf1OLD" is discouraged (18 steps).
 Proof modification of "nfnfcALT" is discouraged (30 steps).
