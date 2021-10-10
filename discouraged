@@ -18080,6 +18080,7 @@ New usage of "spanval" is discouraged (6 uses).
 New usage of "speccl" is discouraged (0 uses).
 New usage of "specval" is discouraged (1 uses).
 New usage of "speimfwALT" is discouraged (0 uses).
+New usage of "spfwOLD" is discouraged (0 uses).
 New usage of "spimvALT" is discouraged (0 uses).
 New usage of "sps-o" is discouraged (7 uses).
 New usage of "sq10OLD" is discouraged (1 uses).
@@ -20005,6 +20006,7 @@ Proof modification of "snssiALTVD" is discouraged (64 steps).
 Proof modification of "snssl" is discouraged (18 steps).
 Proof modification of "snsslVD" is discouraged (24 steps).
 Proof modification of "speimfwALT" is discouraged (35 steps).
+Proof modification of "spfwOLD" is discouraged (57 steps).
 Proof modification of "spimvALT" is discouraged (9 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
 Proof modification of "sq10OLD" is discouraged (57 steps).
