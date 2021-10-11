@@ -14008,6 +14008,7 @@ New usage of "ax12vALT" is discouraged (0 uses).
 New usage of "ax12vOLD" is discouraged (0 uses).
 New usage of "ax12vOLDOLD" is discouraged (0 uses).
 New usage of "ax13OLD" is discouraged (0 uses).
+New usage of "ax13dgen4OLD" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
 New usage of "ax13lem1" is discouraged (8 uses).
 New usage of "ax13lem2" is discouraged (4 uses).
@@ -16017,6 +16018,7 @@ New usage of "hatomici" is discouraged (6 uses).
 New usage of "hatomistici" is discouraged (1 uses).
 New usage of "hb3anOLD" is discouraged (0 uses).
 New usage of "hba1-o" is discouraged (8 uses).
+New usage of "hba1wOLD" is discouraged (0 uses).
 New usage of "hbae-o" is discouraged (4 uses).
 New usage of "hbalg" is discouraged (1 uses).
 New usage of "hbalgVD" is discouraged (0 uses).
@@ -17023,6 +17025,7 @@ New usage of "nbgraopALT" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "nelsnOLD" is discouraged (0 uses).
 New usage of "nexdOLD" is discouraged (0 uses).
+New usage of "nexdvOLD" is discouraged (0 uses).
 New usage of "nf3anOLD" is discouraged (1 uses).
 New usage of "nf3andOLD" is discouraged (0 uses).
 New usage of "nf3orOLD" is discouraged (0 uses).
@@ -18079,6 +18082,7 @@ New usage of "spanval" is discouraged (6 uses).
 New usage of "speccl" is discouraged (0 uses).
 New usage of "specval" is discouraged (1 uses).
 New usage of "speimfwALT" is discouraged (0 uses).
+New usage of "spfwOLD" is discouraged (0 uses).
 New usage of "spimvALT" is discouraged (0 uses).
 New usage of "sps-o" is discouraged (7 uses).
 New usage of "sq10OLD" is discouraged (1 uses).
@@ -18595,6 +18599,7 @@ Proof modification of "ax12vALT" is discouraged (35 steps).
 Proof modification of "ax12vOLD" is discouraged (65 steps).
 Proof modification of "ax12vOLDOLD" is discouraged (69 steps).
 Proof modification of "ax13OLD" is discouraged (54 steps).
+Proof modification of "ax13dgen4OLD" is discouraged (3 steps).
 Proof modification of "ax13fromc9" is discouraged (54 steps).
 Proof modification of "ax2" is discouraged (46 steps).
 Proof modification of "ax3" is discouraged (24 steps).
@@ -19544,6 +19549,7 @@ Proof modification of "hashf1rnOLD" is discouraged (192 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
 Proof modification of "hashprgOLD" is discouraged (172 steps).
 Proof modification of "hb3anOLD" is discouraged (23 steps).
+Proof modification of "hba1wOLD" is discouraged (62 steps).
 Proof modification of "hbae-o" is discouraged (85 steps).
 Proof modification of "hbalg" is discouraged (31 steps).
 Proof modification of "hbalgVD" is discouraged (53 steps).
@@ -19716,6 +19722,7 @@ Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nbgraopALT" is discouraged (271 steps).
 Proof modification of "nelsnOLD" is discouraged (46 steps).
 Proof modification of "nexdOLD" is discouraged (9 steps).
+Proof modification of "nexdvOLD" is discouraged (18 steps).
 Proof modification of "nf3anOLD" is discouraged (26 steps).
 Proof modification of "nf3andOLD" is discouraged (29 steps).
 Proof modification of "nf3orOLD" is discouraged (26 steps).
@@ -20003,6 +20010,7 @@ Proof modification of "snssiALTVD" is discouraged (64 steps).
 Proof modification of "snssl" is discouraged (18 steps).
 Proof modification of "snsslVD" is discouraged (24 steps).
 Proof modification of "speimfwALT" is discouraged (35 steps).
+Proof modification of "spfwOLD" is discouraged (57 steps).
 Proof modification of "spimvALT" is discouraged (9 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
 Proof modification of "sq10OLD" is discouraged (57 steps).
