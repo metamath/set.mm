@@ -14056,6 +14056,7 @@ New usage of "axc11nlemALT" is discouraged (2 uses).
 New usage of "axc11nlemOLD" is discouraged (0 uses).
 New usage of "axc11nlemOLD2" is discouraged (2 uses).
 New usage of "axc11rvOLD" is discouraged (1 uses).
+New usage of "axc11vOLD" is discouraged (0 uses).
 New usage of "axc15OLD" is discouraged (0 uses).
 New usage of "axc16ALT" is discouraged (1 uses).
 New usage of "axc16b" is discouraged (0 uses).
@@ -18639,6 +18640,7 @@ Proof modification of "axc11nlemALT" is discouraged (58 steps).
 Proof modification of "axc11nlemOLD" is discouraged (55 steps).
 Proof modification of "axc11nlemOLD2" is discouraged (54 steps).
 Proof modification of "axc11rvOLD" is discouraged (38 steps).
+Proof modification of "axc11vOLD" is discouraged (27 steps).
 Proof modification of "axc14" is discouraged (72 steps).
 Proof modification of "axc15OLD" is discouraged (9 steps).
 Proof modification of "axc16ALT" is discouraged (20 steps).
