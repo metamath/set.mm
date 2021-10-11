@@ -188,7 +188,7 @@
 "19.21OLD" is used by "19.21hOLD".
 "19.21hOLD" is used by "hbim1OLD".
 "19.21t-1OLD" is used by "19.21tOLD".
-"19.21t-1OLD" is used by "stdpc5OLD".
+"19.21t-1OLD" is used by "stdpc5OLDOLD".
 "19.21tOLD" is used by "19.21OLD".
 "19.21tOLD" is used by "19.23tOLD".
 "19.21tOLD" is used by "nfimdOLD".
@@ -13566,7 +13566,7 @@
 "wnfOLD" is used by "nfvdOLD".
 "wnfOLD" is used by "nfxfrOLD".
 "wnfOLD" is used by "nfxfrdOLD".
-"wnfOLD" is used by "stdpc5OLD".
+"wnfOLD" is used by "stdpc5OLDOLD".
 "wvd2" is used by "dfvd2".
 "wvd2" is used by "dfvd2i".
 "wvd2" is used by "dfvd2imp".
@@ -18151,6 +18151,7 @@ New usage of "stcltrlem1" is discouraged (1 uses).
 New usage of "stcltrlem2" is discouraged (1 uses).
 New usage of "stcltrthi" is discouraged (0 uses).
 New usage of "stdpc5OLD" is discouraged (0 uses).
+New usage of "stdpc5OLDOLD" is discouraged (0 uses).
 New usage of "stge0" is discouraged (1 uses).
 New usage of "stge1i" is discouraged (1 uses).
 New usage of "sthil" is discouraged (2 uses).
@@ -20032,7 +20033,8 @@ Proof modification of "ssralv2VD" is discouraged (147 steps).
 Proof modification of "sstrALT2" is discouraged (81 steps).
 Proof modification of "sstrALT2VD" is discouraged (84 steps).
 Proof modification of "ssuniOLD" is discouraged (84 steps).
-Proof modification of "stdpc5OLD" is discouraged (20 steps).
+Proof modification of "stdpc5OLD" is discouraged (24 steps).
+Proof modification of "stdpc5OLDOLD" is discouraged (20 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
 Proof modification of "sucidALT" is discouraged (28 steps).
 Proof modification of "sucidALTVD" is discouraged (28 steps).
