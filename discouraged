@@ -1532,6 +1532,7 @@
 "axc11nlemALT" is used by "axc11nALT".
 "axc11nlemOLD2" is used by "aevlemOLD".
 "axc11nlemOLD2" is used by "axc11nOLDOLD".
+"axc11rvOLD" is used by "axc16gOLD".
 "axc16ALT" is used by "axc16gALT".
 "axc16g-o" is used by "ax12inda2".
 "axc4i-o" is used by "aev-o".
@@ -14054,11 +14055,13 @@ New usage of "axc11nfromc11" is discouraged (0 uses).
 New usage of "axc11nlemALT" is discouraged (2 uses).
 New usage of "axc11nlemOLD" is discouraged (0 uses).
 New usage of "axc11nlemOLD2" is discouraged (2 uses).
+New usage of "axc11rvOLD" is discouraged (1 uses).
 New usage of "axc15OLD" is discouraged (0 uses).
 New usage of "axc16ALT" is discouraged (1 uses).
 New usage of "axc16b" is discouraged (0 uses).
 New usage of "axc16g-o" is discouraged (1 uses).
 New usage of "axc16gALT" is discouraged (0 uses).
+New usage of "axc16gOLD" is discouraged (0 uses).
 New usage of "axc16nfALT" is discouraged (0 uses).
 New usage of "axc16nfOLD" is discouraged (0 uses).
 New usage of "axc4i-o" is discouraged (5 uses).
@@ -18635,12 +18638,14 @@ Proof modification of "axc11nfromc11" is discouraged (28 steps).
 Proof modification of "axc11nlemALT" is discouraged (58 steps).
 Proof modification of "axc11nlemOLD" is discouraged (55 steps).
 Proof modification of "axc11nlemOLD2" is discouraged (54 steps).
+Proof modification of "axc11rvOLD" is discouraged (38 steps).
 Proof modification of "axc14" is discouraged (72 steps).
 Proof modification of "axc15OLD" is discouraged (9 steps).
 Proof modification of "axc16ALT" is discouraged (20 steps).
 Proof modification of "axc16b" is discouraged (14 steps).
 Proof modification of "axc16g-o" is discouraged (40 steps).
 Proof modification of "axc16gALT" is discouraged (40 steps).
+Proof modification of "axc16gOLD" is discouraged (30 steps).
 Proof modification of "axc16i" is discouraged (135 steps).
 Proof modification of "axc16nfALT" is discouraged (17 steps).
 Proof modification of "axc16nfOLD" is discouraged (31 steps).
