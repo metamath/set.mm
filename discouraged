@@ -9774,7 +9774,7 @@
 "nfa1-o" is used by "ax12eq".
 "nfa1-o" is used by "ax12v2-o".
 "nfa1-o" is used by "axc11n-16".
-"nfa1OLD" is used by "nfnf1OLD".
+"nfa1OLDOLD" is used by "nfnf1OLD".
 "nfan1OLD" is used by "nfanOLDOLD".
 "nfanOLDOLD" is used by "hbanOLD".
 "nfanOLDOLD" is used by "nf3anOLD".
@@ -9794,7 +9794,7 @@
 "nfiOLD" is used by "exlimihOLD".
 "nfiOLD" is used by "hb3anOLD".
 "nfiOLD" is used by "hbanOLD".
-"nfiOLD" is used by "nfa1OLD".
+"nfiOLD" is used by "nfa1OLDOLD".
 "nfiOLD" is used by "nfan1OLD".
 "nfiOLD" is used by "nfdhOLD".
 "nfiOLD" is used by "nfdiOLD".
@@ -16871,7 +16871,8 @@ New usage of "nf3anOLD" is discouraged (1 uses).
 New usage of "nf3andOLD" is discouraged (0 uses).
 New usage of "nf3orOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
-New usage of "nfa1OLD" is discouraged (1 uses).
+New usage of "nfa1OLD" is discouraged (0 uses).
+New usage of "nfa1OLDOLD" is discouraged (1 uses).
 New usage of "nfan1OLD" is discouraged (1 uses).
 New usage of "nfanOLD" is discouraged (0 uses).
 New usage of "nfanOLDOLD" is discouraged (3 uses).
@@ -19521,6 +19522,7 @@ Proof modification of "nf3andOLD" is discouraged (29 steps).
 Proof modification of "nf3orOLD" is discouraged (26 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfa1OLD" is discouraged (8 steps).
+Proof modification of "nfa1OLDOLD" is discouraged (8 steps).
 Proof modification of "nfan1OLD" is discouraged (29 steps).
 Proof modification of "nfanOLD" is discouraged (25 steps).
 Proof modification of "nfanOLDOLD" is discouraged (11 steps).
