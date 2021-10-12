@@ -13950,6 +13950,7 @@ New usage of "axc16g-o" is discouraged (1 uses).
 New usage of "axc16gALT" is discouraged (0 uses).
 New usage of "axc16gOLD" is discouraged (0 uses).
 New usage of "axc16nfALT" is discouraged (0 uses).
+New usage of "axc16nfOLD" is discouraged (0 uses).
 New usage of "axc4i-o" is discouraged (5 uses).
 New usage of "axc5" is discouraged (0 uses).
 New usage of "axc5c4c711to11" is discouraged (0 uses).
@@ -18491,6 +18492,7 @@ Proof modification of "axc16gALT" is discouraged (40 steps).
 Proof modification of "axc16gOLD" is discouraged (30 steps).
 Proof modification of "axc16i" is discouraged (135 steps).
 Proof modification of "axc16nfALT" is discouraged (17 steps).
+Proof modification of "axc16nfOLD" is discouraged (31 steps).
 Proof modification of "axc4" is discouraged (49 steps).
 Proof modification of "axc5" is discouraged (3 steps).
 Proof modification of "axc5c4c711to11" is discouraged (111 steps).
