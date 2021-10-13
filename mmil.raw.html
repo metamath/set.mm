@@ -3538,7 +3538,7 @@ favor of theorems in deduction form.</TD>
 
 <TR>
 <TD>lttri2 , lttri4</TD>
-<TD>~ ztri3or </TD>
+<TD>~ ztri3or , ~ qtri3or</TD>
 <TD>Real number trichotomy is not provable.</TD>
 </TR>
 
@@ -3559,12 +3559,12 @@ favor of theorems in deduction form.</TD>
 
 <TR>
 <TD>letric , letrii , letrid</TD>
-<TD>~ zletric </TD>
+<TD>~ zletric , ~ qletric</TD>
 </TR>
 
 <TR>
 <TD>ltlen , ltleni , ltlend</TD>
-<TD>~ ltleap , ~ zltlen </TD>
+<TD>~ ltleap , ~ zltlen , ~ qltlen</TD>
 </TR>
 
 <TR>
@@ -3580,7 +3580,7 @@ favor of theorems in deduction form.</TD>
 
 <TR>
 <TD>lelttric</TD>
-<TD>~ zlelttric </TD>
+<TD>~ zlelttric , ~ qlelttric</TD>
 </TR>
 
 <TR>
@@ -3594,6 +3594,11 @@ only if they are apart" which relies on excluded middle</TD>
 <TD>lttrid , lttri2d , lttri4d</TD>
 <TD><I>none</I></TD>
 <TD>These are real number trichotomy</TD>
+</TR>
+
+<TR>
+  <TD>leneltd</TD>
+  <TD>~ leltapd</TD>
 </TR>
 
 <TR>
@@ -4083,6 +4088,25 @@ in iset.mm</TD>
 </TR>
 
 <TR>
+  <TD>uzwo3 , zmin</TD>
+  <TD><I>none</I></TD>
+  <TD>Proved in terms of supremum theorems and presumably not possible
+  without excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>zbtwnre</TD>
+  <TD><I>none</I></TD>
+  <TD>Proved in terms of supremum theorems and presumably not possible
+  without excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>rebtwnz</TD>
+  <TD>~ qbtwnz</TD>
+</TR>
+
+<TR>
 <TD>rpneg</TD>
 <TD>~ rpnegap </TD>
 </TR>
@@ -4335,15 +4359,249 @@ proof is not intuitionistic and it is lightly used in set.mm.</TD>
 </TR>
 
 <TR>
-<TD>df-fl , df-ceil , and other floor and ceiling theoerms.</TD>
-<TD><I>none</I></TD>
-<TD>Most of the theorems in this section are conjectured to imply
-excluded middle. Imagine a real number which is around 2.99995 or
-3.00001 . In order to determine whether its floor is 2 or 3, it
-would be necessary to compute the number to arbitrary precision.
-For similarity to the Metamath Proof Explorer, it may be desirable
-to define floor and ceiling, but only provide most of the theorems
-where the argument is a rational number.</TD>
+  <TD>flcl , reflcl , flcld</TD>
+  <TD>~ flqcl , ~ flqcld</TD>
+</TR>
+
+<TR>
+  <TD>fllelt</TD>
+  <TD>~ flqlelt</TD>
+</TR>
+
+<TR>
+  <TD>flle</TD>
+  <TD>~ flqle</TD>
+</TR>
+
+<TR>
+  <TD>flltp1 , fllep1</TD>
+  <TD>~ flqltp1</TD>
+</TR>
+
+<TR>
+  <TD>fraclt1 , fracle1</TD>
+  <TD>~ qfraclt1</TD>
+</TR>
+
+<TR>
+  <TD>fracge0</TD>
+  <TD>~ qfracge0</TD>
+</TR>
+
+<TR>
+  <TD>flge</TD>
+  <TD>~ flqge</TD>
+</TR>
+
+<TR>
+  <TD>fllt</TD>
+  <TD>~ flqlt</TD>
+</TR>
+
+<TR>
+  <TD>flflp1</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on case elimination.</TD>
+</TR>
+
+<TR>
+  <TD>flidm</TD>
+  <TD>~ flqidm</TD>
+</TR>
+
+<TR>
+  <TD>flidz</TD>
+  <TD>~ flqidz</TD>
+</TR>
+
+<TR>
+  <TD>flltnz</TD>
+  <TD>~ flqltnz</TD>
+</TR>
+
+<TR>
+  <TD>flwordi</TD>
+  <TD>~ flqwordi</TD>
+</TR>
+
+<TR>
+  <TD>flword2</TD>
+  <TD>~ flqword2</TD>
+</TR>
+
+<TR>
+  <TD>flval2 , flval3</TD>
+  <TD><I>none</I></TD>
+  <TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>flbi</TD>
+  <TD>~ flqbi</TD>
+</TR>
+
+<TR>
+  <TD>flbi2</TD>
+  <TD>~ flqbi2</TD>
+</TR>
+
+<TR>
+  <TD>ico01fl0</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably could be proved for rationals, but lightly used in
+  set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>flge0nn0</TD>
+  <TD>~ flqge0nn0</TD>
+</TR>
+
+<TR>
+  <TD>flge1nn</TD>
+  <TD>~ flqge1nn</TD>
+</TR>
+
+<TR>
+  <TD>refldivcl</TD>
+  <TD>~ flqcl</TD>
+</TR>
+
+<TR>
+  <TD>fladdz</TD>
+  <TD>~ flqaddz</TD>
+</TR>
+
+<TR>
+  <TD>flzadd</TD>
+  <TD>~ flqzadd</TD>
+</TR>
+
+<TR>
+  <TD>flmulnn0</TD>
+  <TD>~ flqmulnn0</TD>
+</TR>
+
+<TR>
+  <TD>fldivle</TD>
+  <TD>~ flqle</TD>
+</TR>
+
+<TR>
+  <TD>ltdifltdiv</TD>
+  <TD><I>none</I></TD>
+  <TD>Unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>fldiv4lem1div2uz2 , fldiv4lem1div2</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable, but lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>ceilval</TD>
+  <TD>~ ceilqval</TD>
+  <TD>The set.mm ceilval, with a real argument and no additional
+  conditions, is probably provable if there is a need.</TD>
+</TR>
+
+<TR>
+  <TD>dfceil2 , ceilval2</TD>
+  <TD><I>none</I></TD>
+  <TD>Unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>ceicl</TD>
+  <TD>~ ceiqcl</TD>
+</TR>
+
+<TR>
+  <TD>ceilcl</TD>
+  <TD>~ ceilqcl</TD>
+</TR>
+
+<TR>
+  <TD>ceilge</TD>
+  <TD>~ ceilqge</TD>
+</TR>
+
+<TR>
+  <TD>ceige</TD>
+  <TD>~ ceiqge</TD>
+</TR>
+
+<TR>
+  <TD>ceim1l</TD>
+  <TD>~ ceiqm1l</TD>
+</TR>
+
+<TR>
+  <TD>ceilm1lt</TD>
+  <TD>~ ceilqm1lt</TD>
+</TR>
+
+<TR>
+  <TD>ceile</TD>
+  <TD>~ ceiqle</TD>
+</TR>
+
+<TR>
+  <TD>ceille</TD>
+  <TD>~ ceilqle</TD>
+</TR>
+
+<TR>
+  <TD>ceilidz</TD>
+  <TD>~ ceilqidz</TD>
+</TR>
+
+<TR>
+  <TD>flleceil</TD>
+  <TD>~ flqleceil</TD>
+</TR>
+
+<TR>
+  <TD>fleqceilz</TD>
+  <TD>~ flqeqceilz</TD>
+</TR>
+
+<TR>
+  <TD>quoremz , quoremnn0 , quoremnn0ALT</TD>
+  <TD><I>none</I></TD>
+  <TD>Unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>intfrac2</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would be provable if real is changed to rational.</TD>
+</TR>
+
+<TR>
+  <TD>intfracq</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable.</TD>
+</TR>
+
+<TR>
+  <TD>fldiv , fldiv2</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would be provable if real is changed to rational.</TD>
+</TR>
+
+<TR>
+  <TD>fznnfl</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would be provable if real is changed to rational.</TD>
+</TR>
+
+<TR>
+  <TD>uzsup , ioopnfsup , icopnfsup , rpsup , resup , xrsup</TD>
+  <TD><I>none</I></TD>
+  <TD>As with most theorems involving supremums, these would
+  likely need significant changes</TD>
 </TR>
 
 <TR>
