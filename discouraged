@@ -4764,7 +4764,7 @@
 "df-nfOLD" is used by "nfdvOLD".
 "df-nfOLD" is used by "nfiOLD".
 "df-nfOLD" is used by "nfimdOLD".
-"df-nfOLD" is used by "nfnf1OLD".
+"df-nfOLD" is used by "nfnf1OLDOLD".
 "df-nfOLD" is used by "nfntOLD".
 "df-nfOLD" is used by "nfrOLD".
 "df-ni" is used by "dmaddpi".
@@ -9774,7 +9774,7 @@
 "nfa1-o" is used by "ax12eq".
 "nfa1-o" is used by "ax12v2-o".
 "nfa1-o" is used by "axc11n-16".
-"nfa1OLD" is used by "nfnf1OLD".
+"nfa1OLDOLD" is used by "nfnf1OLDOLD".
 "nfan1OLD" is used by "nfanOLDOLD".
 "nfanOLDOLD" is used by "hbanOLD".
 "nfanOLDOLD" is used by "nf3anOLD".
@@ -9794,7 +9794,7 @@
 "nfiOLD" is used by "exlimihOLD".
 "nfiOLD" is used by "hb3anOLD".
 "nfiOLD" is used by "hbanOLD".
-"nfiOLD" is used by "nfa1OLD".
+"nfiOLD" is used by "nfa1OLDOLD".
 "nfiOLD" is used by "nfan1OLD".
 "nfiOLD" is used by "nfdhOLD".
 "nfiOLD" is used by "nfdiOLD".
@@ -9811,8 +9811,8 @@
 "nfnOLD" is used by "nfnanOLD".
 "nfnOLD" is used by "nforOLD".
 "nfndOLD" is used by "nfandOLD".
-"nfnf1OLD" is used by "nfimdOLD".
-"nfnf1OLD" is used by "nfntOLD".
+"nfnf1OLDOLD" is used by "nfimdOLD".
+"nfnf1OLDOLD" is used by "nfntOLD".
 "nfntOLD" is used by "19.23tOLD".
 "nfntOLD" is used by "nfnOLD".
 "nfntOLD" is used by "nfndOLD".
@@ -9840,7 +9840,7 @@
 "nfxfrOLD" is used by "nf3anOLD".
 "nfxfrOLD" is used by "nf3orOLD".
 "nfxfrOLD" is used by "nfnanOLD".
-"nfxfrOLD" is used by "nfnf1OLD".
+"nfxfrOLD" is used by "nfnf1OLDOLD".
 "nfxfrOLD" is used by "nforOLD".
 "nfxfrdOLD" is used by "nf3andOLD".
 "nfxfrdOLD" is used by "nfandOLD".
@@ -13445,7 +13445,7 @@
 "wnfOLD" is used by "nfimdOLD".
 "wnfOLD" is used by "nfnOLD".
 "wnfOLD" is used by "nfndOLD".
-"wnfOLD" is used by "nfnf1OLD".
+"wnfOLD" is used by "nfnf1OLDOLD".
 "wnfOLD" is used by "nfntOLD".
 "wnfOLD" is used by "nfrOLD".
 "wnfOLD" is used by "nfrdOLD".
@@ -13950,6 +13950,7 @@ New usage of "axc16g-o" is discouraged (1 uses).
 New usage of "axc16gALT" is discouraged (0 uses).
 New usage of "axc16gOLD" is discouraged (0 uses).
 New usage of "axc16nfALT" is discouraged (0 uses).
+New usage of "axc16nfOLD" is discouraged (0 uses).
 New usage of "axc4i-o" is discouraged (5 uses).
 New usage of "axc5" is discouraged (0 uses).
 New usage of "axc5c4c711to11" is discouraged (0 uses).
@@ -16871,7 +16872,8 @@ New usage of "nf3anOLD" is discouraged (1 uses).
 New usage of "nf3andOLD" is discouraged (0 uses).
 New usage of "nf3orOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
-New usage of "nfa1OLD" is discouraged (1 uses).
+New usage of "nfa1OLD" is discouraged (0 uses).
+New usage of "nfa1OLDOLD" is discouraged (1 uses).
 New usage of "nfan1OLD" is discouraged (1 uses).
 New usage of "nfanOLD" is discouraged (0 uses).
 New usage of "nfanOLDOLD" is discouraged (3 uses).
@@ -16893,7 +16895,8 @@ New usage of "nfimdOLD" is discouraged (3 uses).
 New usage of "nfnOLD" is discouraged (2 uses).
 New usage of "nfnanOLD" is discouraged (0 uses).
 New usage of "nfndOLD" is discouraged (1 uses).
-New usage of "nfnf1OLD" is discouraged (2 uses).
+New usage of "nfnf1OLD" is discouraged (0 uses).
+New usage of "nfnf1OLDOLD" is discouraged (2 uses).
 New usage of "nfnfcALT" is discouraged (0 uses).
 New usage of "nfntOLD" is discouraged (3 uses).
 New usage of "nfnthOLD" is discouraged (0 uses).
@@ -18489,6 +18492,7 @@ Proof modification of "axc16gALT" is discouraged (40 steps).
 Proof modification of "axc16gOLD" is discouraged (30 steps).
 Proof modification of "axc16i" is discouraged (135 steps).
 Proof modification of "axc16nfALT" is discouraged (17 steps).
+Proof modification of "axc16nfOLD" is discouraged (31 steps).
 Proof modification of "axc4" is discouraged (49 steps).
 Proof modification of "axc5" is discouraged (3 steps).
 Proof modification of "axc5c4c711to11" is discouraged (111 steps).
@@ -19521,6 +19525,7 @@ Proof modification of "nf3andOLD" is discouraged (29 steps).
 Proof modification of "nf3orOLD" is discouraged (26 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfa1OLD" is discouraged (8 steps).
+Proof modification of "nfa1OLDOLD" is discouraged (8 steps).
 Proof modification of "nfan1OLD" is discouraged (29 steps).
 Proof modification of "nfanOLD" is discouraged (25 steps).
 Proof modification of "nfanOLDOLD" is discouraged (11 steps).
@@ -19543,6 +19548,7 @@ Proof modification of "nfnOLD" is discouraged (12 steps).
 Proof modification of "nfnanOLD" is discouraged (21 steps).
 Proof modification of "nfndOLD" is discouraged (13 steps).
 Proof modification of "nfnf1OLD" is discouraged (18 steps).
+Proof modification of "nfnf1OLDOLD" is discouraged (18 steps).
 Proof modification of "nfnfcALT" is discouraged (30 steps).
 Proof modification of "nfntOLD" is discouraged (30 steps).
 Proof modification of "nfnthOLD" is discouraged (9 steps).
