@@ -15891,6 +15891,7 @@ New usage of "hbimdOLD" is discouraged (0 uses).
 New usage of "hbimpg" is discouraged (0 uses).
 New usage of "hbimpgVD" is discouraged (0 uses).
 New usage of "hbnae-o" is discouraged (3 uses).
+New usage of "hbntOLD" is discouraged (0 uses).
 New usage of "hbntal" is discouraged (3 uses).
 New usage of "hbra2VD" is discouraged (0 uses).
 New usage of "hcau" is discouraged (4 uses).
@@ -19377,6 +19378,7 @@ Proof modification of "hbimdOLD" is discouraged (23 steps).
 Proof modification of "hbimpg" is discouraged (88 steps).
 Proof modification of "hbimpgVD" is discouraged (165 steps).
 Proof modification of "hbnae-o" is discouraged (11 steps).
+Proof modification of "hbntOLD" is discouraged (27 steps).
 Proof modification of "hbntal" is discouraged (48 steps).
 Proof modification of "hbra2VD" is discouraged (26 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
