@@ -16875,6 +16875,7 @@ New usage of "nf3orOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
 New usage of "nfa1OLD" is discouraged (0 uses).
 New usage of "nfa1OLDOLD" is discouraged (1 uses).
+New usage of "nfa2OLD" is discouraged (0 uses).
 New usage of "nfaldOLD" is discouraged (0 uses).
 New usage of "nfan1OLD" is discouraged (1 uses).
 New usage of "nfanOLD" is discouraged (0 uses).
@@ -19530,6 +19531,7 @@ Proof modification of "nf3orOLD" is discouraged (26 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfa1OLD" is discouraged (8 steps).
 Proof modification of "nfa1OLDOLD" is discouraged (8 steps).
+Proof modification of "nfa2OLD" is discouraged (9 steps).
 Proof modification of "nfaldOLD" is discouraged (44 steps).
 Proof modification of "nfan1OLD" is discouraged (29 steps).
 Proof modification of "nfanOLD" is discouraged (25 steps).
