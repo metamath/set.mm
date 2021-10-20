@@ -1547,7 +1547,6 @@
 "axc711" is used by "axc711to11".
 "axc711" is used by "axc711toc7".
 "axc711toc7" is used by "axc711to11".
-"axicn" is used by "sineq0ALT".
 "axinfnd" is used by "axinfprim".
 "axinfnd" is used by "zfcndinf".
 "axinfndlem1" is used by "axinfnd".
@@ -14000,7 +13999,7 @@ New usage of "axia1" is discouraged (0 uses).
 New usage of "axia2" is discouraged (0 uses).
 New usage of "axia3" is discouraged (0 uses).
 New usage of "axial" is discouraged (0 uses).
-New usage of "axicn" is discouraged (1 uses).
+New usage of "axicn" is discouraged (0 uses).
 New usage of "axie1" is discouraged (0 uses).
 New usage of "axin1" is discouraged (0 uses).
 New usage of "axin2" is discouraged (0 uses).
