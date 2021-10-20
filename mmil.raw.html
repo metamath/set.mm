@@ -4570,18 +4570,16 @@ proof is not intuitionistic and it is lightly used in set.mm.</TD>
 
 <TR>
   <TD>intfrac2</TD>
-  <TD><I>none</I></TD>
-  <TD>Presumably would be provable if real is changed to rational.</TD>
+  <TD>~ intqfrac2</TD>
 </TR>
 
 <TR>
-  <TD>intfracq</TD>
-  <TD><I>none</I></TD>
-  <TD>Presumably provable.</TD>
+  <TD>fldiv</TD>
+  <TD>~ flqdiv</TD>
 </TR>
 
 <TR>
-  <TD>fldiv , fldiv2</TD>
+  <TD>fldiv2</TD>
   <TD><I>none</I></TD>
   <TD>Presumably would be provable if real is changed to rational.</TD>
 </TR>
@@ -4600,10 +4598,86 @@ proof is not intuitionistic and it is lightly used in set.mm.</TD>
 </TR>
 
 <TR>
-<TD>df-mod and other modulus theoerms.</TD>
-<TD><I>none</I></TD>
-<TD>As with df-fl it may be feasible to define this for rational
-numbers rather than reals.</TD>
+<TD>modval</TD>
+<TD>~ modqval</TD>
+<TD>As with theorems such as ~ flqcl , we prove most of the modulo related
+theorems for rationals, although other conditions on real arguments other
+than whether they are rational would be possible in the future.</TD>
+</TR>
+
+<TR>
+  <TD>modvalr</TD>
+  <TD>~ modqvalr</TD>
+</TR>
+
+<TR>
+  <TD>modcl , modcld</TD>
+  <TD>~ modqcl , ~ modqcld</TD>
+</TR>
+
+<TR>
+  <TD>flpmodeq</TD>
+  <TD>~ flqpmodeq</TD>
+</TR>
+
+<TR>
+  <TD>mod0</TD>
+  <TD>~ modq0</TD>
+</TR>
+
+<TR>
+  <TD>mulmod0</TD>
+  <TD>~ mulqmod0</TD>
+</TR>
+
+<TR>
+  <TD>negmod0</TD>
+  <TD>~ negqmod0</TD>
+</TR>
+
+<TR>
+  <TD>modge0</TD>
+  <TD>~ modqge0</TD>
+</TR>
+
+<TR>
+  <TD>modlt</TD>
+  <TD>~ modqlt</TD>
+</TR>
+
+<TR>
+  <TD>modelico</TD>
+  <TD>~ modqelico</TD>
+</TR>
+
+<TR>
+  <TD>moddiffl</TD>
+  <TD>~ modqdiffl</TD>
+</TR>
+
+<TR>
+  <TD>moddifz</TD>
+  <TD>~ modqdifz</TD>
+</TR>
+
+<TR>
+  <TD>modfrac</TD>
+  <TD>~ modqfrac</TD>
+</TR>
+
+<TR>
+  <TD>flmod</TD>
+  <TD>~ flqmod</TD>
+</TR>
+
+<TR>
+  <TD>intfrac</TD>
+  <TD>~ intqfrac</TD>
+</TR>
+
+<TR>
+  <TD>modmulnn</TD>
+  <TD>~ modqmulnn</TD>
 </TR>
 
 <TR>
@@ -5818,6 +5892,9 @@ Rathjen, Michael, "Constructive Set Theory", 2018,
 <LI><A NAME="Apostol"></A> [Apostol] Apostol, Tom M.,
 <I>Calculus,</I> vol. 1, 2nd ed.,
 John Wiley &amp; Sons Inc. (1967) [QA300.A645 1967].</LI>
+
+<LI><A NAME="ApostolNT"></A> [ApostolNT] Apostol, Tom M.,
+<I>Introduction to analytic number theory,</I> Springer-Verlag, New York, Heidelberg, Berlin (1976) [QA241.A6].</LI>
 
 <LI><A NAME="Bauer"></A> [Bauer] Bauer, Andrej, &quot;Five stages of
 accepting constructive mathematics,&quot; <I>Bulletin (New Series) of
