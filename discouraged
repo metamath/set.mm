@@ -4837,6 +4837,11 @@
 "df-rq" is used by "dmrecnq".
 "df-rq" is used by "recmulnq".
 "df-scon" is used by "isscon".
+"df-setrecs" is used by "nfsetrecs".
+"df-setrecs" is used by "setrec1".
+"df-setrecs" is used by "setrec2".
+"df-setrecs" is used by "setrec2fun".
+"df-setrecs" is used by "setrecseq".
 "df-sgrOLD" is used by "issmgrpOLD".
 "df-sgrOLD" is used by "smgrpismgmOLD".
 "df-sh" is used by "issh".
@@ -5952,6 +5957,7 @@
 "elreal2" is used by "ltresr2".
 "elringchomALTV" is used by "ringccatidALTV".
 "elrngchomALTV" is used by "rngccatidALTV".
+"elsetrecslem" is used by "elsetrecs".
 "elspancl" is used by "elspansncl".
 "elspani" is used by "spansni".
 "elspani" is used by "spanuni".
@@ -10940,6 +10946,10 @@
 "onfrALTlem4" is used by "onfrALTlem1VD".
 "onfrALTlem5" is used by "onfrALTlem3".
 "onfrALTlem5" is used by "onfrALTlem3VD".
+"onsetreclem1" is used by "onsetreclem2".
+"onsetreclem1" is used by "onsetreclem3".
+"onsetreclem2" is used by "onsetrec".
+"onsetreclem3" is used by "onsetrec".
 "opelcn" is used by "axicn".
 "opelopabsbALT" is used by "brabsb2".
 "opelopabsbALT" is used by "cnvopab".
@@ -12100,6 +12110,15 @@
 "sbcorgOLD" is used by "sbc3orgVD".
 "sbcrexgOLD" is used by "2sbcrexOLD".
 "sbcrexgOLD" is used by "sbc2rexgOLD".
+"setrec1lem1" is used by "setrec1lem2".
+"setrec1lem1" is used by "setrec1lem4".
+"setrec1lem1" is used by "setrec2fun".
+"setrec1lem2" is used by "setrec1lem3".
+"setrec1lem3" is used by "setrec1".
+"setrec1lem4" is used by "setrec1".
+"setrec2fun" is used by "setrec2".
+"setrec2lem1" is used by "setrec2".
+"setrec2lem2" is used by "setrec2".
 "sh0" is used by "ch0".
 "sh0" is used by "hhssabloilem".
 "sh0" is used by "hhssnv".
@@ -14979,6 +14998,7 @@ New usage of "df-rngcALTV" is discouraged (1 uses).
 New usage of "df-rngo" is discouraged (2 uses).
 New usage of "df-rq" is discouraged (2 uses).
 New usage of "df-scon" is discouraged (1 uses).
+New usage of "df-setrecs" is discouraged (5 uses).
 New usage of "df-sgrOLD" is discouraged (2 uses).
 New usage of "df-sh" is discouraged (1 uses).
 New usage of "df-shs" is discouraged (1 uses).
@@ -15449,6 +15469,7 @@ New usage of "elreal" is discouraged (7 uses).
 New usage of "elreal2" is discouraged (3 uses).
 New usage of "elringchomALTV" is discouraged (1 uses).
 New usage of "elrngchomALTV" is discouraged (1 uses).
+New usage of "elsetrecslem" is discouraged (1 uses).
 New usage of "elsnxpOLD" is discouraged (0 uses).
 New usage of "elspancl" is discouraged (1 uses).
 New usage of "elspani" is discouraged (2 uses).
@@ -17068,6 +17089,9 @@ New usage of "onfrALTlem4" is discouraged (2 uses).
 New usage of "onfrALTlem4VD" is discouraged (0 uses).
 New usage of "onfrALTlem5" is discouraged (2 uses).
 New usage of "onfrALTlem5VD" is discouraged (0 uses).
+New usage of "onsetreclem1" is discouraged (2 uses).
+New usage of "onsetreclem2" is discouraged (1 uses).
+New usage of "onsetreclem3" is discouraged (1 uses).
 New usage of "opelcn" is discouraged (1 uses).
 New usage of "opelopab4" is discouraged (0 uses).
 New usage of "opelopabsbALT" is discouraged (3 uses).
@@ -17620,6 +17644,13 @@ New usage of "sbequ8ALT" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "scmateALT" is discouraged (0 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
+New usage of "setrec1lem1" is discouraged (3 uses).
+New usage of "setrec1lem2" is discouraged (1 uses).
+New usage of "setrec1lem3" is discouraged (1 uses).
+New usage of "setrec1lem4" is discouraged (1 uses).
+New usage of "setrec2fun" is discouraged (1 uses).
+New usage of "setrec2lem1" is discouraged (1 uses).
+New usage of "setrec2lem2" is discouraged (1 uses).
 New usage of "sgrpplusgaopALT" is discouraged (0 uses).
 New usage of "sh0" is discouraged (13 uses).
 New usage of "sh0le" is discouraged (6 uses).
