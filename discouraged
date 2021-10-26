@@ -6549,7 +6549,6 @@
 "hashprgOLD" is used by "nbhashuvtx1".
 "hashprgOLD" is used by "umgraex".
 "hashprgOLD" is used by "usgra1".
-"hashprgOLD" is used by "usgraexmplef".
 "hashprgOLD" is used by "usgranloopv".
 "hatomic" is used by "atomli".
 "hatomici" is used by "atcvat4i".
@@ -15743,7 +15742,7 @@ New usage of "halfnq" is discouraged (1 uses).
 New usage of "hasheqf1oiOLD" is discouraged (1 uses).
 New usage of "hashf1rnOLD" is discouraged (0 uses).
 New usage of "hashfOLD" is discouraged (0 uses).
-New usage of "hashprgOLD" is discouraged (11 uses).
+New usage of "hashprgOLD" is discouraged (10 uses).
 New usage of "hatomic" is discouraged (1 uses).
 New usage of "hatomici" is discouraged (6 uses).
 New usage of "hatomistici" is discouraged (1 uses).
