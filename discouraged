@@ -15030,6 +15030,7 @@ New usage of "dfdecOLD" is discouraged (37 uses).
 New usage of "dfdp2OLD" is discouraged (1 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
 New usage of "dfiop2" is discouraged (3 uses).
+New usage of "dfiota4OLD" is discouraged (0 uses).
 New usage of "dfnfc2OLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfpleOLD" is discouraged (2 uses).
@@ -18724,6 +18725,7 @@ Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfcleq" is discouraged (10 steps).
 Proof modification of "dfdecOLD" is discouraged (35 steps).
 Proof modification of "dfdp2OLD" is discouraged (37 steps).
+Proof modification of "dfiota4OLD" is discouraged (40 steps).
 Proof modification of "dfnfc2OLD" is discouraged (116 steps).
 Proof modification of "dfpleOLD" is discouraged (44 steps).
 Proof modification of "dfss1OLD" is discouraged (24 steps).
