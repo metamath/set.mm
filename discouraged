@@ -15025,6 +15025,7 @@ New usage of "df-wsucOLD" is discouraged (0 uses).
 New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfadj2" is discouraged (7 uses).
 New usage of "dfbi1ALT" is discouraged (0 uses).
+New usage of "dfbi3OLD" is discouraged (0 uses).
 New usage of "dfch2" is discouraged (0 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfdecOLD" is discouraged (37 uses).
@@ -18725,6 +18726,7 @@ Proof modification of "decsuccOLD" is discouraged (44 steps).
 Proof modification of "dedtOLD" is discouraged (23 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
+Proof modification of "dfbi3OLD" is discouraged (45 steps).
 Proof modification of "dfcleq" is discouraged (10 steps).
 Proof modification of "dfdecOLD" is discouraged (35 steps).
 Proof modification of "dfdp2OLD" is discouraged (37 steps).
