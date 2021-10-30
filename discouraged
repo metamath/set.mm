@@ -17953,6 +17953,7 @@ New usage of "trclubiOLD" is discouraged (0 uses).
 New usage of "trelded" is discouraged (1 uses).
 New usage of "trintALT" is discouraged (0 uses).
 New usage of "trintALTVD" is discouraged (0 uses).
+New usage of "trintssOLD" is discouraged (0 uses).
 New usage of "trlcoabs2N" is discouraged (1 uses).
 New usage of "trnfsetN" is discouraged (1 uses).
 New usage of "trnsetN" is discouraged (1 uses).
@@ -19754,6 +19755,7 @@ Proof modification of "trclubiOLD" is discouraged (62 steps).
 Proof modification of "trelded" is discouraged (27 steps).
 Proof modification of "trintALT" is discouraged (166 steps).
 Proof modification of "trintALTVD" is discouraged (211 steps).
+Proof modification of "trintssOLD" is discouraged (67 steps).
 Proof modification of "trsbc" is discouraged (203 steps).
 Proof modification of "trsbcVD" is discouraged (398 steps).
 Proof modification of "trssOLD" is discouraged (63 steps).
