@@ -12902,7 +12902,6 @@
 "unoplin" is used by "unopbd".
 "unopnorm" is used by "elunop2".
 "unopnorm" is used by "nmopun".
-"upgriswlkOLD" is used by "uspgrn2crct".
 "uun0.1" is used by "sspwimp".
 "uun0.1" is used by "un0.1".
 "uunT1" is used by "sspwimpALT".
@@ -17987,7 +17986,6 @@ New usage of "unopnorm" is discouraged (2 uses).
 New usage of "upgr0eopALT" is discouraged (0 uses).
 New usage of "upgr1eopALT" is discouraged (0 uses).
 New usage of "upgriswlkALT" is discouraged (0 uses).
-New usage of "upgriswlkOLD" is discouraged (1 uses).
 New usage of "usgra2adedgwlkonALT" is discouraged (0 uses).
 New usage of "usgredg2ALT" is discouraged (0 uses).
 New usage of "usgredg2vtxeuALT" is discouraged (0 uses).
@@ -19769,7 +19767,6 @@ Proof modification of "unisnALT" is discouraged (146 steps).
 Proof modification of "upgr0eopALT" is discouraged (55 steps).
 Proof modification of "upgr1eopALT" is discouraged (126 steps).
 Proof modification of "upgriswlkALT" is discouraged (84 steps).
-Proof modification of "upgriswlkOLD" is discouraged (320 steps).
 Proof modification of "usgra2adedgwlkonALT" is discouraged (389 steps).
 Proof modification of "usgredg2ALT" is discouraged (84 steps).
 Proof modification of "usgredg2vtxeuALT" is discouraged (134 steps).
