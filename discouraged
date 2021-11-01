@@ -4292,8 +4292,8 @@
 "cringcALTV" is used by "ringccatidALTV".
 "cringcALTV" is used by "ringcvalALTV".
 "cringcALTV" is used by "srhmsubcALTV".
+"cringcALTV" is used by "srhmsubcALTVlem1".
 "cringcALTV" is used by "srhmsubcALTVlem2".
-"cringcALTV" is used by "srhmsubcALTVlem3".
 "cringcALTV" is used by "sringcatALTV".
 "crngcALTV" is used by "rhmsubcALTV".
 "crngcALTV" is used by "rhmsubcALTVcat".
@@ -11834,7 +11834,7 @@
 "ringcbasALTV" is used by "ringccofvalALTV".
 "ringcbasALTV" is used by "ringchomfvalALTV".
 "ringcbasALTV" is used by "srhmsubcALTV".
-"ringcbasALTV" is used by "srhmsubcALTVlem2".
+"ringcbasALTV" is used by "srhmsubcALTVlem1".
 "ringcbasbasALTV" is used by "funcringcsetclem2ALTV".
 "ringcbasbasALTV" is used by "funcringcsetclem3ALTV".
 "ringcbasbasALTV" is used by "funcringcsetclem7ALTV".
@@ -11855,7 +11855,7 @@
 "ringchomALTV" is used by "ringccatidALTV".
 "ringchomALTV" is used by "ringcsectALTV".
 "ringchomALTV" is used by "srhmsubcALTV".
-"ringchomALTV" is used by "srhmsubcALTVlem3".
+"ringchomALTV" is used by "srhmsubcALTVlem2".
 "ringchomfvalALTV" is used by "ringccofvalALTV".
 "ringchomfvalALTV" is used by "ringchomALTV".
 "ringcidALTV" is used by "funcringcsetclem7ALTV".
@@ -12654,10 +12654,9 @@
 "srhmsubcALTV" is used by "drhmsubcALTV".
 "srhmsubcALTV" is used by "fldhmsubcALTV".
 "srhmsubcALTV" is used by "sringcatALTV".
+"srhmsubcALTVlem1" is used by "srhmsubcALTV".
 "srhmsubcALTVlem1" is used by "srhmsubcALTVlem2".
 "srhmsubcALTVlem2" is used by "srhmsubcALTV".
-"srhmsubcALTVlem2" is used by "srhmsubcALTVlem3".
-"srhmsubcALTVlem3" is used by "srhmsubcALTV".
 "sringcatALTV" is used by "drngcatALTV".
 "sringcatALTV" is used by "fldcatALTV".
 "ssdmd1" is used by "atdmd".
@@ -17806,9 +17805,8 @@ New usage of "sq10OLD" is discouraged (1 uses).
 New usage of "sq10e99m1OLD" is discouraged (1 uses).
 New usage of "sqgt0sr" is discouraged (1 uses).
 New usage of "srhmsubcALTV" is discouraged (4 uses).
-New usage of "srhmsubcALTVlem1" is discouraged (1 uses).
-New usage of "srhmsubcALTVlem2" is discouraged (2 uses).
-New usage of "srhmsubcALTVlem3" is discouraged (1 uses).
+New usage of "srhmsubcALTVlem1" is discouraged (2 uses).
+New usage of "srhmsubcALTVlem2" is discouraged (1 uses).
 New usage of "sringcatALTV" is discouraged (2 uses).
 New usage of "ssdisjOLD" is discouraged (0 uses).
 New usage of "ssdmd1" is discouraged (1 uses).
