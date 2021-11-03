@@ -1404,7 +1404,6 @@ $)
   $}
 
   ${
-    $d p A $.
     19.8a.1 $e |- A : bool $.
     $( Existential introduction. $)
     19.8a $p |- A |= ( ? \ x : al . A ) $=
