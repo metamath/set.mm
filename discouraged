@@ -13768,7 +13768,7 @@ New usage of "ax12v2OLD" is discouraged (1 uses).
 New usage of "ax12vALT" is discouraged (0 uses).
 New usage of "ax12vOLD" is discouraged (0 uses).
 New usage of "ax12vOLDOLD" is discouraged (0 uses).
-New usage of "ax13OLD" is discouraged (0 uses).
+New usage of "ax13ALT" is discouraged (0 uses).
 New usage of "ax13dgen4OLD" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
 New usage of "ax13lem1" is discouraged (7 uses).
@@ -18306,7 +18306,7 @@ Proof modification of "ax12v2OLD" is discouraged (90 steps).
 Proof modification of "ax12vALT" is discouraged (35 steps).
 Proof modification of "ax12vOLD" is discouraged (65 steps).
 Proof modification of "ax12vOLDOLD" is discouraged (69 steps).
-Proof modification of "ax13OLD" is discouraged (54 steps).
+Proof modification of "ax13ALT" is discouraged (54 steps).
 Proof modification of "ax13dgen4OLD" is discouraged (3 steps).
 Proof modification of "ax13fromc9" is discouraged (54 steps).
 Proof modification of "ax2" is discouraged (46 steps).
