@@ -1683,7 +1683,6 @@
 "bj-inftyexpidisj" is used by "bj-minftynrr".
 "bj-inftyexpidisj" is used by "bj-pinftynrr".
 "bj-inftyexpiinv" is used by "bj-inftyexpiinj".
-"bj-nalnaleximiOLD" is used by "bj-nalnalimiOLD".
 "bj-vexw" is used by "bj-ralvw".
 "bj-vexwt" is used by "bj-vexw".
 "blo3i" is used by "ipblnfi".
@@ -13916,7 +13915,6 @@ New usage of "biorfiOLD" is discouraged (0 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
 New usage of "bj-1" is discouraged (0 uses).
-New usage of "bj-ax12iOLD" is discouraged (0 uses).
 New usage of "bj-ax12v3ALT" is discouraged (0 uses).
 New usage of "bj-ax6e" is discouraged (0 uses).
 New usage of "bj-axc4" is discouraged (0 uses).
@@ -13938,8 +13936,6 @@ New usage of "bj-inftyexpidisj" is discouraged (3 uses).
 New usage of "bj-inftyexpiinv" is discouraged (1 uses).
 New usage of "bj-mo3OLD" is discouraged (0 uses).
 New usage of "bj-mpt2mptALT" is discouraged (0 uses).
-New usage of "bj-nalnaleximiOLD" is discouraged (1 uses).
-New usage of "bj-nalnalimiOLD" is discouraged (0 uses).
 New usage of "bj-nfdiOLD" is discouraged (0 uses).
 New usage of "bj-nuliotaALT" is discouraged (0 uses).
 New usage of "bj-peirce" is discouraged (0 uses).
@@ -18386,7 +18382,6 @@ Proof modification of "bj-ablssgrpel" is discouraged (5 steps).
 Proof modification of "bj-abv" is discouraged (29 steps).
 Proof modification of "bj-aecomsv" is discouraged (16 steps).
 Proof modification of "bj-alcomexcom" is discouraged (45 steps).
-Proof modification of "bj-ax12iOLD" is discouraged (20 steps).
 Proof modification of "bj-ax12v3ALT" is discouraged (44 steps).
 Proof modification of "bj-ax6e" is discouraged (43 steps).
 Proof modification of "bj-ax6elem1" is discouraged (27 steps).
@@ -18449,6 +18444,7 @@ Proof modification of "bj-ceqsalv" is discouraged (10 steps).
 Proof modification of "bj-chvarv" is discouraged (18 steps).
 Proof modification of "bj-chvarvv" is discouraged (11 steps).
 Proof modification of "bj-clabel" is discouraged (43 steps).
+Proof modification of "bj-cleljustab" is discouraged (93 steps).
 Proof modification of "bj-cleljusti" is discouraged (20 steps).
 Proof modification of "bj-clelsb3" is discouraged (63 steps).
 Proof modification of "bj-cleqhyp" is discouraged (21 steps).
@@ -18518,8 +18514,6 @@ Proof modification of "bj-issetw" is discouraged (21 steps).
 Proof modification of "bj-issetwt" is discouraged (63 steps).
 Proof modification of "bj-mo3OLD" is discouraged (206 steps).
 Proof modification of "bj-mpt2mptALT" is discouraged (130 steps).
-Proof modification of "bj-nalnaleximiOLD" is discouraged (33 steps).
-Proof modification of "bj-nalnalimiOLD" is discouraged (34 steps).
 Proof modification of "bj-nalset" is discouraged (100 steps).
 Proof modification of "bj-nfab1" is discouraged (10 steps).
 Proof modification of "bj-nfcjust" is discouraged (29 steps).
