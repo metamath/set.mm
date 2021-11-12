@@ -4830,7 +4830,6 @@
 "df-rngo" is used by "relrngo".
 "df-rq" is used by "dmrecnq".
 "df-rq" is used by "recmulnq".
-"df-sconn" is used by "issconn".
 "df-setrecs" is used by "nfsetrecs".
 "df-setrecs" is used by "setrec1".
 "df-setrecs" is used by "setrec2".
@@ -14978,7 +14977,6 @@ New usage of "df-ringcALTV" is discouraged (1 uses).
 New usage of "df-rngcALTV" is discouraged (1 uses).
 New usage of "df-rngo" is discouraged (2 uses).
 New usage of "df-rq" is discouraged (2 uses).
-New usage of "df-sconn" is discouraged (1 uses).
 New usage of "df-setrecs" is discouraged (5 uses).
 New usage of "df-sgrOLD" is discouraged (2 uses).
 New usage of "df-sh" is discouraged (1 uses).
