@@ -67,6 +67,7 @@
 "ax-ia2" is used by "simpr".
 "ax-inf2" is used by "bj-nn0sucALT".
 "ax-inf2" is used by "bj-omex2".
+"ax-io" is used by "jaob".
 "ax-mulass" is used by "mulass".
 "ax-mulcl" is used by "mulcl".
 "ax-mulcom" is used by "mulcom".
@@ -236,6 +237,7 @@ New usage of "ax-distr" is discouraged (1 uses).
 New usage of "ax-ia1" is discouraged (1 uses).
 New usage of "ax-ia2" is discouraged (1 uses).
 New usage of "ax-inf2" is discouraged (2 uses).
+New usage of "ax-io" is discouraged (1 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
