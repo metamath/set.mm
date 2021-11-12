@@ -4830,7 +4830,7 @@
 "df-rngo" is used by "relrngo".
 "df-rq" is used by "dmrecnq".
 "df-rq" is used by "recmulnq".
-"df-scon" is used by "isscon".
+"df-sconn" is used by "issconn".
 "df-setrecs" is used by "nfsetrecs".
 "df-setrecs" is used by "setrec1".
 "df-setrecs" is used by "setrec2".
@@ -8052,7 +8052,7 @@
 "idiALT" is used by "ax6e2ndALT".
 "idiALT" is used by "ax6e2ndeqALT".
 "idiALT" is used by "isosctrlem1ALT".
-"idiALT" is used by "iunconlem2".
+"idiALT" is used by "iunconnlem2".
 "idiALT" is used by "sineq0ALT".
 "idiALT" is used by "sspwimpALT".
 "idiALT" is used by "sspwtrALT".
@@ -8684,7 +8684,7 @@
 "isvciOLD" is used by "hhssnv".
 "isvciOLD" is used by "hilvc".
 "isvclem" is used by "isvcOLD".
-"iunconlem2" is used by "iunconALT".
+"iunconnlem2" is used by "iunconnALT".
 "jaoded" is used by "suctrALT3".
 "joincomALT" is used by "joincom".
 "jplem1" is used by "jplem2".
@@ -14740,6 +14740,7 @@ New usage of "cnvbraval" is discouraged (1 uses).
 New usage of "cnvssOLD" is discouraged (0 uses).
 New usage of "cnvunop" is discouraged (2 uses).
 New usage of "com3rgbi" is discouraged (1 uses).
+New usage of "compneOLD" is discouraged (0 uses).
 New usage of "con3ALT" is discouraged (0 uses).
 New usage of "con3ALT2" is discouraged (0 uses).
 New usage of "con3ALTVD" is discouraged (0 uses).
@@ -14977,7 +14978,7 @@ New usage of "df-ringcALTV" is discouraged (1 uses).
 New usage of "df-rngcALTV" is discouraged (1 uses).
 New usage of "df-rngo" is discouraged (2 uses).
 New usage of "df-rq" is discouraged (2 uses).
-New usage of "df-scon" is discouraged (1 uses).
+New usage of "df-sconn" is discouraged (1 uses).
 New usage of "df-setrecs" is discouraged (5 uses).
 New usage of "df-sgrOLD" is discouraged (2 uses).
 New usage of "df-sh" is discouraged (1 uses).
@@ -16290,8 +16291,8 @@ New usage of "isvcOLD" is discouraged (1 uses).
 New usage of "isvciOLD" is discouraged (3 uses).
 New usage of "isvclem" is discouraged (1 uses).
 New usage of "iswatN" is discouraged (0 uses).
-New usage of "iunconALT" is discouraged (0 uses).
-New usage of "iunconlem2" is discouraged (1 uses).
+New usage of "iunconnALT" is discouraged (0 uses).
+New usage of "iunconnlem2" is discouraged (1 uses).
 New usage of "ivthALT" is discouraged (0 uses).
 New usage of "jaoded" is discouraged (1 uses).
 New usage of "joincomALT" is discouraged (1 uses).
@@ -18632,6 +18633,7 @@ Proof modification of "cnncvsmulassdemo" is discouraged (95 steps).
 Proof modification of "cnv0OLD" is discouraged (40 steps).
 Proof modification of "cnvssOLD" is discouraged (62 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
+Proof modification of "compneOLD" is discouraged (89 steps).
 Proof modification of "con3ALT" is discouraged (63 steps).
 Proof modification of "con3ALT2" is discouraged (14 steps).
 Proof modification of "con3ALTVD" is discouraged (51 steps).
@@ -19268,8 +19270,8 @@ Proof modification of "issmgrpOLD" is discouraged (85 steps).
 Proof modification of "istrkg2d" is discouraged (439 steps).
 Proof modification of "isvcOLD" is discouraged (170 steps).
 Proof modification of "isvciOLD" is discouraged (178 steps).
-Proof modification of "iunconALT" is discouraged (56 steps).
-Proof modification of "iunconlem2" is discouraged (580 steps).
+Proof modification of "iunconnALT" is discouraged (56 steps).
+Proof modification of "iunconnlem2" is discouraged (580 steps).
 Proof modification of "ivthALT" is discouraged (1080 steps).
 Proof modification of "jaoded" is discouraged (26 steps).
 Proof modification of "jccil" is discouraged (10 steps).
