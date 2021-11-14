@@ -968,6 +968,10 @@ which conditions such as ` A e. N. ` are added, or set.mm's ltbtwnnq versus
 iset.mm's ~ ltbtwnnqq , in which ` E. x ` is changed to ` E. x e. Q. ` ).
 If the result of applying a function is inhabited, then we know we applied
 it within its domain - that is ~ relelfvdm or ~ elmpt2cl may be useful.
+(These thoughts apply to operations - in at least one place, ~ dvdszrcl ,
+set.mm uses the term "reverse closure" for binary relations - but this is
+a lot more like ~ brel than like the reverse closure theorems described
+above).
 </LI>
 
 <LI>
@@ -1106,6 +1110,13 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 <TR>
 <TD>ianor</TD>
 <TD>~ pm3.14 </TD>
+</TR>
+
+<TR>
+  <TD>pm5.17</TD>
+  <TD>~ xorbin</TD>
+  <TD>The combination of ~ df-xor and ~ xorbin is the forward direction
+  of pm5.17</TD>
 </TR>
 
 <TR>
@@ -1519,11 +1530,15 @@ csbifgOLD</TD>
 <TR>
 <TD>dedth , dedth2h , dedth3h , dedth4h , dedth2v , dedth3v ,
 dedth4v , elimhyp , elimhyp2v , elimhyp3v , elimhyp4v ,
-elimel , elimdhyp , keephyp , keephyp2v , keephyp3v , keepel ,
-ifex , ifexg</TD>
+elimel , elimdhyp , keephyp , keephyp2v , keephyp3v , keepel</TD>
 <TD><I>none</I></TD>
 <TD>Even in set.mm, the weak deduction theorem is discouraged in
 favor of theorems in deduction form.</TD>
+</TR>
+
+<TR>
+  <TD>ifex , ifexg</TD>
+  <TD>~ ifcldcd</TD>
 </TR>
 
 <TR>
@@ -2858,6 +2873,15 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
+  <TD>df-sup , df-inf , supcl , and other supremum theorems</TD>
+  <TD><I>none</I></TD>
+  <TD>There are many supremum theorems which run afoul of ~ regexmid ,
+  ~ reg2exmid , or the like. We have not yet done much development of
+  what may still be possible with supremums (with additional
+  conditions).</TD>
+</TR>
+
+<TR>
   <TD>enp1ilem , enp1i , en2 , en3 , en4</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on excluded middle and undif1</TD>
@@ -3571,7 +3595,13 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-<TD>lttri2 , lttri4</TD>
+<TD>lttri2 , lttri2i , lttri2d</TD>
+<TD>~ qlttri2</TD>
+<TD>Real number trichotomy is not provable.</TD>
+</TR>
+
+<TR>
+<TD>lttri4</TD>
 <TD>~ ztri3or , ~ qtri3or</TD>
 <TD>Real number trichotomy is not provable.</TD>
 </TR>
@@ -3618,14 +3648,7 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-<TD>lttri2i</TD>
-<TD><I>none</I></TD>
-<TD>This can be read as "two real numbers are non-equal if and
-only if they are apart" which relies on excluded middle</TD>
-</TR>
-
-<TR>
-<TD>lttrid , lttri2d , lttri4d</TD>
+<TD>lttrid , lttri4d</TD>
 <TD><I>none</I></TD>
 <TD>These are real number trichotomy</TD>
 </TR>
@@ -3834,8 +3857,18 @@ zero changes to apart from zero.</TD>
 </TR>
 
 <TR>
-<TD>diveq1 , divneg , divsubdir</TD>
-<TD>~ diveqap1 , ~ divnegap , ~ divsubdirap </TD>
+<TD>diveq1 , divneg</TD>
+<TD>~ diveqap1 , ~ divnegap</TD>
+</TR>
+
+<TR>
+  <TD>muldivdir</TD>
+  <TD>~ muldivdirap</TD>
+</TR>
+
+<TR>
+  <TD>divsubdir</TD>
+  <TD>~ divsubdirap</TD>
 </TR>
 
 <TR>
@@ -4088,13 +4121,6 @@ a fintely supported function.</TD>
 <TR>
 <TD>suprfinzcl</TD>
 <TD><I>none</I></TD>
-</TR>
-
-<TR>
-  <TD>sq10 , sq10e99m1 , 3dec and maybe others</TD>
-  <TD><I>none</I></TD>
-  <TD>Need to copy these from set.mm to get changes related to
-  whether ten is expressed as ` 10 ` or ` ; 1 0 ` .</TD>
 </TR>
 
 <TR>
@@ -5306,7 +5332,7 @@ or ~ ssfiexmid </TD>
   <TD>seqid2</TD>
   <TD><I>none yet</I></TD>
   <TD>It should be possible to come up with a (presumably
-  modified) versiona of this, but we have not done so yet.</TD>
+  modified) version of this, but we have not done so yet.</TD>
 </TR>
 
 <TR>
@@ -5315,7 +5341,12 @@ or ~ ssfiexmid </TD>
 </TR>
 
 <TR>
-  <TD>seqz , seqfeq4 , seqfeq3</TD>
+  <TD>seqz</TD>
+  <TD>~ iseqz</TD>
+</TR>
+
+<TR>
+  <TD>seqfeq4 , seqfeq3</TD>
   <TD><I>none yet</I></TD>
   <TD>It should be possible to come up with some (presumably
   modified) versions of these, but we have not done so yet.</TD>
@@ -5598,6 +5629,11 @@ than reals.</TD>
 </TR>
 
 <TR>
+  <TD>expne0d</TD>
+  <TD>~ expap0d</TD>
+</TR>
+
+<TR>
 <TD>expnegd</TD>
 <TD>~ expnegapd</TD>
 </TR>
@@ -5701,6 +5737,11 @@ than reals.</TD>
   <TD>faclbnd4 , faclbnd5 , and lemmas</TD>
   <TD><I>none</I></TD>
   <TD>Presumably provable; unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>bcval5</TD>
+  <TD>~ ibcval5</TD>
 </TR>
 
 <TR>
@@ -5847,8 +5888,8 @@ in the comment of ~ df-rsqrt</TD>
 
 <TR>
 <TD>absor , absori , absord</TD>
-<TD><I>none</I></TD>
-<TD>We could prove this for rationals, or real numbers apart from zero,
+<TD>~ qabsor</TD>
+<TD>It also would be possible to prove this for real numbers apart from zero,
 if we wanted</TD>
 </TR>
 
@@ -6124,6 +6165,33 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>sumeq2</TD>
   <TD>Presumably could be proved, and perhaps also would rely only
   on extensionality (and logical axioms). But unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>df-prod and theorems using it</TD>
+  <TD><I>none</I></TD>
+  <TD>To define this, will need to tackle all the issues
+  with ~ df-sum plus some more around, for example, not equal to zero
+  versus apart from zero</TD>
+</TR>
+
+<TR>
+  <TD>dvdsaddre2b</TD>
+  <TD><I>none</I></TD>
+  <TD>Something along these lines (perhaps with real changed to
+  rational) may be possible</TD>
+</TR>
+
+<TR>
+  <TD>fsumdvds , 3dvds</TD>
+  <TD><I>none</I></TD>
+  <TD>May be possible when summation is well enough developed</TD>
+</TR>
+
+<TR>
+  <TD>sumeven , sumodd , evensumodd , oddsumodd , pwp1fsum , oddpwp1fsum</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably possible when summation is well enough developed</TD>
 </TR>
 
 <TR>
