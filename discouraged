@@ -12796,8 +12796,6 @@
 "strlem4" is used by "strlem6".
 "strlem5" is used by "strlem6".
 "strlem6" is used by "stri".
-"structgrssiedgOLD" is used by "setsgriedgd".
-"structgrssvtxOLD" is used by "setsgrvtxd".
 "structgrssvtxlemOLD" is used by "structgrssiedgOLD".
 "structgrssvtxlemOLD" is used by "structgrssvtxOLD".
 "sumdmdi" is used by "dmdbr4ati".
@@ -17902,8 +17900,8 @@ New usage of "strlem3a" is discouraged (1 uses).
 New usage of "strlem4" is discouraged (1 uses).
 New usage of "strlem5" is discouraged (1 uses).
 New usage of "strlem6" is discouraged (1 uses).
-New usage of "structgrssiedgOLD" is discouraged (1 uses).
-New usage of "structgrssvtxOLD" is discouraged (1 uses).
+New usage of "structgrssiedgOLD" is discouraged (0 uses).
+New usage of "structgrssvtxOLD" is discouraged (0 uses).
 New usage of "structgrssvtxlemOLD" is discouraged (2 uses).
 New usage of "sucidALT" is discouraged (0 uses).
 New usage of "sucidALTVD" is discouraged (0 uses).
