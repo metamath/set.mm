@@ -11,6 +11,8 @@
 "19.42h" is used by "19.42v".
 "19.9hd" is used by "bj-sbimedh".
 "19.9hd" is used by "sbiedh".
+"4syl" is used by "bcm1k".
+"4syl" is used by "climuni".
 "4syl" is used by "f1ocnvfvrneq".
 "4syl" is used by "fcof1o".
 "4syl" is used by "fzofzp1".
@@ -19,6 +21,7 @@
 "4syl" is used by "fzssp1".
 "4syl" is used by "isose".
 "4syl" is used by "isoselem".
+"4syl" is used by "serif0".
 "4syl" is used by "smoiso".
 "4syl" is used by "tposss".
 "a9evsep" is used by "ax9vsep".
@@ -64,6 +67,7 @@
 "ax-ia2" is used by "simpr".
 "ax-inf2" is used by "bj-nn0sucALT".
 "ax-inf2" is used by "bj-omex2".
+"ax-io" is used by "jaob".
 "ax-mulass" is used by "mulass".
 "ax-mulcl" is used by "mulcl".
 "ax-mulcom" is used by "mulcom".
@@ -211,8 +215,9 @@ New usage of "19.41h" is discouraged (5 uses).
 New usage of "19.42h" is discouraged (1 uses).
 New usage of "19.9hd" is discouraged (2 uses).
 New usage of "2eluzge0OLD" is discouraged (0 uses).
-New usage of "4syl" is discouraged (10 uses).
+New usage of "4syl" is discouraged (13 uses).
 New usage of "a9evsep" is discouraged (1 uses).
+New usage of "addmodlteqALT" is discouraged (0 uses).
 New usage of "alrimih" is discouraged (25 uses).
 New usage of "ax-0id" is discouraged (1 uses).
 New usage of "ax-0lt1" is discouraged (1 uses).
@@ -232,6 +237,7 @@ New usage of "ax-distr" is discouraged (1 uses).
 New usage of "ax-ia1" is discouraged (1 uses).
 New usage of "ax-ia2" is discouraged (1 uses).
 New usage of "ax-inf2" is discouraged (2 uses).
+New usage of "ax-io" is discouraged (1 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
@@ -329,6 +335,7 @@ New usage of "spimth" is discouraged (1 uses).
 New usage of "stoic2a" is discouraged (0 uses).
 New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
+New usage of "trintssmOLD" is discouraged (0 uses).
 New usage of "truanOLD" is discouraged (0 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
@@ -336,6 +343,7 @@ Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "2eluzge0OLD" is discouraged (22 steps).
 Proof modification of "a9evsep" is discouraged (63 steps).
+Proof modification of "addmodlteqALT" is discouraged (237 steps).
 Proof modification of "ax16ALT" is discouraged (20 steps).
 Proof modification of "ax9vsep" is discouraged (19 steps).
 Proof modification of "axi12" is discouraged (47 steps).
@@ -447,6 +455,7 @@ Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "snexgOLD" is discouraged (27 steps).
 Proof modification of "speano5" is discouraged (50 steps).
 Proof modification of "strcollnfALT" is discouraged (79 steps).
+Proof modification of "trintssmOLD" is discouraged (67 steps).
 Proof modification of "truanOLD" is discouraged (13 steps).
 Proof modification of "uzind4ALT" is discouraged (16 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
