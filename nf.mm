@@ -60481,14 +60481,19 @@ $)
       BMWIWJWMWKWNXAXCXHXFXICWTXBMWIXEACWTWOWPWQWRWF $.
   $}
 
+  $( Compute the T-raising of a cardinality.  (Contributed by SF,
+     23-Apr-2021.) $)
+  tcncg $p |- ( A e. V -> T_c Nc A = Nc ~P1 A ) $=
+    ( wcel cnc ctc cncs cpw1 wceq ncelncs tccl syl pw1exg ncidg pw1eltc syl2anc
+    cvv nceleq syl22anc ) ABCZADZEZFCZAGZDZFCZUCUACZUCUDCZUAUDHSTFCZUBABIZTJKSU
+    CPCZUEABLZUCPIKSUHATCUFUIABMTANOSUJUGUKUCPMKUAUDUCQR $.
+
   ${
     tcnc.1 $e |- A e. _V $.
     $( Compute the T-raising of a cardinality.  (Contributed by SF,
        4-Mar-2015.) $)
     tcnc $p |- T_c Nc A = Nc ~P1 A $=
-      ( cnc ctc cncs wcel cpw1 wceq ncelncsi tccl ax-mp pw1ex ncid mp2an nceleq
-      pw1eltc mp4an ) ACZDZEFZAGZCZEFUASFZUAUBFSUBHREFZTABIZRJKUAABLZIUDARFUCUE
-      ABMRAPNUAUFMSUBUAOQ $.
+      ( cvv wcel cnc ctc cpw1 wceq tcncg ax-mp ) ACDAEFAGEHBACIJ $.
   $}
 
   $( Compute the T-raising of the cardinality of the universe.  Part of Theorem
@@ -62534,8 +62539,9 @@ $)
   ccan $a class Can $.
 
   $( Define the class of all Cantorian sets.  These are so-called because
-     Cantor's Theorem ` A ~< ~P A ` holds for these sets.  (Contributed by
-     Scott Fenton, 19-Apr-2021.) $)
+     Cantor's Theorem ` Nc A <c Nc ~P A ` holds for these sets.  Definition
+     from [Rosser] p. 347 and [Holmes] p. 134.  (Contributed by Scott Fenton,
+     19-Apr-2021.) $)
   df-can $a |- Can = { x | ~P1 x ~~ x } $.
 
   $( Extend the definition of class to include the class of all strongly
@@ -62544,8 +62550,9 @@ $)
   
   ${
      $d x y $.
-     $( Define the class of strongly Cantorian sets.  Unline general Cantorian
+     $( Define the class of strongly Cantorian sets.  Unlike general Cantorian
         sets, this fixes a specific mapping between ` x ` and ` ~P1 x ` .
+	Definition from [Holmes] p. 134.
 	(Contributed by Scott Fenton, 19-Apr-2021.) $)
      df-scan $a |- SCan = { x | ( y e. x |-> { y } ) e. _V } $.
   $}
@@ -62586,9 +62593,9 @@ $)
    $}
 
    ${
-      $d A x y z $.
-      $( Strongly Cantorian implies Cantorian.  (Contributed by Scott Fenton,
-         19-Apr-2021.) $)
+      $d A x y z w $.
+      $( Strongly Cantorian implies Cantorian.  Observation from [Holmes],
+         p. 134. (Contributed by Scott Fenton, 19-Apr-2021.) $)
       scancan $p |- ( A e. SCan -> A e. Can ) $=
         ( vx vy vz cv csn cmpt cvv wcel cpw1 cen wbr cscan wfn ccnv wceq weu wa
         weq copab ccan wf1o snex eqid fnmpti wrex elpw1 euequ1 eqeq1 vex equcom
@@ -62601,8 +62608,41 @@ $)
         BWQBCUTWQWSCBWHWPWIWHWIVSWBIWPWGVSWBVCVRAVAVDVEVFVGVHAWBVTVIVLAWBHVTVJV
         KAWBVMVNBAVOAVPVQ $.
 
-   $}
+  $}
 
+   $( The cardinality of a Cantorian set is equal to the cardinality
+      of its unit power set.  (Contributed by Scott Fenton, 23-Apr-2021.) $)
+   canncb $p |- ( A e. V -> ( A e. Can <-> Nc ~P1 A = Nc A ) ) $=
+     ( wcel cpw1 cnc wceq cen wbr ccan cvv wb pw1exg eqncg syl elcan syl6rbbr )
+     ABCZADZEAEFZRAGHZAICQRJCSTKABLRAJMNAOP $.
+
+   $( The cardinality of a Cantorian set is equal to the cardinality
+      of its unit power set.  (Contributed by Scott Fenton, 21-Apr-2021.) $)
+   cannc $p |- ( A e. Can -> Nc ~P1 A = Nc A ) $=
+     ( ccan wcel cpw1 cnc wceq canncb ibi ) ABCADEAEFABGH $.
+
+  $( The cardinality of a Cantorian set is strictly less than the cardinality
+     of its power set.  (Contributed by Scott Fenton, 21-Apr-2021.) $)
+  canltpw $p |- ( A e. Can -> Nc A <c Nc ~P A ) $=
+    ( ccan wcel cpw1 cnc cpw cltc cannc ltcpw1pwg eqbrtrrd ) ABCADEAEAFEGAHABIJ
+    $.
+
+  $( The cardinality of a Cantorian set is equal to the ` T_c ` raising
+     of that cardinal.  (Contributed by Scott Fenton, 23-Apr-2021.) $)
+  cantcb $p |- ( A e. V -> ( A e. Can <-> T_c Nc A = Nc A ) ) $=
+    ( wcel ccan cpw1 cnc wceq ctc canncb tcncg eqeq1d bitr4d ) ABCZADCAEFZAFZGO
+    HZOGABIMPNOABJKL $.
+
+  $( The cardinality of a Cantorian set is equal to the ` T_c ` raising
+     of that cardinal.  (Contributed by Scott Fenton, 22-Apr-2021.) $)
+  cantc $p |- ( A e. Can -> T_c Nc A = Nc A ) $=
+    ( ccan wcel cnc ctc wceq cantcb ibi ) ABCADZEIFABGH $.
+
+  $( The universe is not Cantorian.  Theorem XI.1.8 of [Rosser] p. 348.
+     (Contributed by Scott Fenton, 22-Apr-2021.) $)
+  vncan $p |- -. _V e. Can $=
+    ( cvv ccan wcel cnc cltc wbr ltcirr cpw canltpw pwv nceqi syl6breq mto ) AB
+    CZADZOEFOGNOAHZDOEAIPAJKLM $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
