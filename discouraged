@@ -4572,6 +4572,7 @@
 "df-cnfld" is used by "cnfldcj".
 "df-cnfld" is used by "cnfldds".
 "df-cnfld" is used by "cnfldfun".
+"df-cnfld" is used by "cnfldfunALT".
 "df-cnfld" is used by "cnfldle".
 "df-cnfld" is used by "cnfldmul".
 "df-cnfld" is used by "cnfldstr".
@@ -14723,6 +14724,7 @@ New usage of "cnchl" is discouraged (1 uses).
 New usage of "cncph" is discouraged (2 uses).
 New usage of "cncvcOLD" is discouraged (1 uses).
 New usage of "cnexALT" is discouraged (0 uses).
+New usage of "cnfldfunALT" is discouraged (0 uses).
 New usage of "cnfnc" is discouraged (1 uses).
 New usage of "cnidOLD" is discouraged (1 uses).
 New usage of "cnims" is discouraged (1 uses).
@@ -14901,7 +14903,7 @@ New usage of "df-ch0" is discouraged (8 uses).
 New usage of "df-chj" is discouraged (1 uses).
 New usage of "df-chsup" is discouraged (1 uses).
 New usage of "df-cm" is discouraged (1 uses).
-New usage of "df-cnfld" is discouraged (11 uses).
+New usage of "df-cnfld" is discouraged (12 uses).
 New usage of "df-cnfn" is discouraged (2 uses).
 New usage of "df-cnop" is discouraged (2 uses).
 New usage of "df-com2" is discouraged (1 uses).
@@ -18656,6 +18658,7 @@ Proof modification of "cnaddabloOLD" is discouraged (65 steps).
 Proof modification of "cnaddcom" is discouraged (71 steps).
 Proof modification of "cncvcOLD" is discouraged (38 steps).
 Proof modification of "cnexALT" is discouraged (52 steps).
+Proof modification of "cnfldfunALT" is discouraged (423 steps).
 Proof modification of "cnidOLD" is discouraged (118 steps).
 Proof modification of "cnncvsabsnegdemo" is discouraged (74 steps).
 Proof modification of "cnncvsaddassdemo" is discouraged (46 steps).
