@@ -12797,6 +12797,9 @@
 "strlem4" is used by "strlem6".
 "strlem5" is used by "strlem6".
 "strlem6" is used by "stri".
+"strlemor1OLD" is used by "strlemor2OLD".
+"strlemor1OLD" is used by "strlemor3OLD".
+"strlemor2OLD" is used by "strlemor3OLD".
 "structgrssvtxlemOLD" is used by "structgrssiedgOLD".
 "structgrssvtxlemOLD" is used by "structgrssvtxOLD".
 "sumdmdi" is used by "dmdbr4ati".
@@ -14755,6 +14758,7 @@ New usage of "cnvbrabra" is discouraged (2 uses).
 New usage of "cnvbracl" is discouraged (2 uses).
 New usage of "cnvbramul" is discouraged (1 uses).
 New usage of "cnvbraval" is discouraged (1 uses).
+New usage of "cnvcnvOLD" is discouraged (0 uses).
 New usage of "cnvssOLD" is discouraged (0 uses).
 New usage of "cnvunop" is discouraged (2 uses).
 New usage of "com3rgbi" is discouraged (1 uses).
@@ -17902,6 +17906,10 @@ New usage of "strlem3a" is discouraged (1 uses).
 New usage of "strlem4" is discouraged (1 uses).
 New usage of "strlem5" is discouraged (1 uses).
 New usage of "strlem6" is discouraged (1 uses).
+New usage of "strlemor0OLD" is discouraged (0 uses).
+New usage of "strlemor1OLD" is discouraged (2 uses).
+New usage of "strlemor2OLD" is discouraged (1 uses).
+New usage of "strlemor3OLD" is discouraged (0 uses).
 New usage of "structgrssiedgOLD" is discouraged (0 uses).
 New usage of "structgrssvtxOLD" is discouraged (0 uses).
 New usage of "structgrssvtxlemOLD" is discouraged (2 uses).
@@ -18664,6 +18672,7 @@ Proof modification of "cnncvsabsnegdemo" is discouraged (74 steps).
 Proof modification of "cnncvsaddassdemo" is discouraged (46 steps).
 Proof modification of "cnncvsmulassdemo" is discouraged (95 steps).
 Proof modification of "cnv0OLD" is discouraged (40 steps).
+Proof modification of "cnvcnvOLD" is discouraged (86 steps).
 Proof modification of "cnvssOLD" is discouraged (62 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
 Proof modification of "compneOLD" is discouraged (89 steps).
@@ -19725,6 +19734,10 @@ Proof modification of "ssuniOLD" is discouraged (84 steps).
 Proof modification of "stdpc5OLD" is discouraged (24 steps).
 Proof modification of "stdpc5OLDOLD" is discouraged (20 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
+Proof modification of "strlemor0OLD" is discouraged (26 steps).
+Proof modification of "strlemor1OLD" is discouraged (327 steps).
+Proof modification of "strlemor2OLD" is discouraged (62 steps).
+Proof modification of "strlemor3OLD" is discouraged (73 steps).
 Proof modification of "structgrssiedgOLD" is discouraged (62 steps).
 Proof modification of "structgrssvtxOLD" is discouraged (62 steps).
 Proof modification of "structgrssvtxlemOLD" is discouraged (148 steps).
