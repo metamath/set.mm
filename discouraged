@@ -12797,6 +12797,9 @@
 "strlem4" is used by "strlem6".
 "strlem5" is used by "strlem6".
 "strlem6" is used by "stri".
+"strlemor1OLD" is used by "strlemor2OLD".
+"strlemor1OLD" is used by "strlemor3OLD".
+"strlemor2OLD" is used by "strlemor3OLD".
 "structgrssvtxlemOLD" is used by "structgrssiedgOLD".
 "structgrssvtxlemOLD" is used by "structgrssvtxOLD".
 "sumdmdi" is used by "dmdbr4ati".
@@ -13402,9 +13405,7 @@ New usage of "19.23hOLD" is discouraged (0 uses).
 New usage of "19.23tOLD" is discouraged (1 uses).
 New usage of "19.27OLD" is discouraged (0 uses).
 New usage of "19.28OLD" is discouraged (1 uses).
-New usage of "19.29rOLD" is discouraged (0 uses).
 New usage of "19.3OLD" is discouraged (2 uses).
-New usage of "19.40bOLD" is discouraged (0 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
 New usage of "19.43OLD" is discouraged (0 uses).
@@ -14755,6 +14756,7 @@ New usage of "cnvbrabra" is discouraged (2 uses).
 New usage of "cnvbracl" is discouraged (2 uses).
 New usage of "cnvbramul" is discouraged (1 uses).
 New usage of "cnvbraval" is discouraged (1 uses).
+New usage of "cnvcnvOLD" is discouraged (0 uses).
 New usage of "cnvssOLD" is discouraged (0 uses).
 New usage of "cnvunop" is discouraged (2 uses).
 New usage of "com3rgbi" is discouraged (1 uses).
@@ -15424,7 +15426,6 @@ New usage of "eleigvec" is discouraged (2 uses).
 New usage of "eleigvec2" is discouraged (2 uses).
 New usage of "eleigveccl" is discouraged (3 uses).
 New usage of "eleq2dALT" is discouraged (0 uses).
-New usage of "eleq2dOLD" is discouraged (0 uses).
 New usage of "elex22VD" is discouraged (0 uses).
 New usage of "elex2VD" is discouraged (0 uses).
 New usage of "elghomOLD" is discouraged (5 uses).
@@ -15563,9 +15564,7 @@ New usage of "ex-natded9.26-2" is discouraged (0 uses).
 New usage of "exanOLD" is discouraged (0 uses).
 New usage of "exanOLDOLD" is discouraged (0 uses).
 New usage of "exatleN" is discouraged (1 uses).
-New usage of "exbiOLD" is discouraged (0 uses).
 New usage of "exbidOLD" is discouraged (0 uses).
-New usage of "exbidhOLD" is discouraged (0 uses).
 New usage of "exbirVD" is discouraged (0 uses).
 New usage of "exbiriVD" is discouraged (0 uses).
 New usage of "exidu1" is discouraged (3 uses).
@@ -15573,7 +15572,6 @@ New usage of "eximdOLD" is discouraged (1 uses).
 New usage of "exinst" is discouraged (1 uses).
 New usage of "exinst01" is discouraged (1 uses).
 New usage of "exinst11" is discouraged (1 uses).
-New usage of "exintrbiOLD" is discouraged (0 uses).
 New usage of "exlimdOLD" is discouraged (1 uses).
 New usage of "exlimdhOLD" is discouraged (0 uses).
 New usage of "exlimexi" is discouraged (2 uses).
@@ -17902,6 +17900,10 @@ New usage of "strlem3a" is discouraged (1 uses).
 New usage of "strlem4" is discouraged (1 uses).
 New usage of "strlem5" is discouraged (1 uses).
 New usage of "strlem6" is discouraged (1 uses).
+New usage of "strlemor0OLD" is discouraged (0 uses).
+New usage of "strlemor1OLD" is discouraged (2 uses).
+New usage of "strlemor2OLD" is discouraged (1 uses).
+New usage of "strlemor3OLD" is discouraged (0 uses).
 New usage of "structgrssiedgOLD" is discouraged (0 uses).
 New usage of "structgrssvtxOLD" is discouraged (0 uses).
 New usage of "structgrssvtxlemOLD" is discouraged (2 uses).
@@ -18006,6 +18008,7 @@ New usage of "usgredgprvALT" is discouraged (0 uses).
 New usage of "usgrnloop0ALT" is discouraged (0 uses).
 New usage of "usgrnloopALT" is discouraged (0 uses).
 New usage of "usgrnloopvALT" is discouraged (0 uses).
+New usage of "uspgrbisymrelALT" is discouraged (0 uses).
 New usage of "uun0.1" is discouraged (2 uses).
 New usage of "uun111" is discouraged (0 uses).
 New usage of "uun121" is discouraged (0 uses).
@@ -18123,7 +18126,6 @@ New usage of "wl-sbcom2d-lem2" is discouraged (1 uses).
 New usage of "wl-sbcom3" is discouraged (0 uses).
 New usage of "wl-section-boot" is discouraged (0 uses).
 New usage of "wl-section-impchain" is discouraged (0 uses).
-New usage of "wl-section-nf" is discouraged (0 uses).
 New usage of "wl-section-prop" is discouraged (0 uses).
 New usage of "wl-syl" is discouraged (7 uses).
 New usage of "wl-syl5" is discouraged (7 uses).
@@ -18187,9 +18189,7 @@ Proof modification of "19.23hOLD" is discouraged (8 steps).
 Proof modification of "19.23tOLD" is discouraged (52 steps).
 Proof modification of "19.27OLD" is discouraged (28 steps).
 Proof modification of "19.28OLD" is discouraged (28 steps).
-Proof modification of "19.29rOLD" is discouraged (30 steps).
 Proof modification of "19.3OLD" is discouraged (12 steps).
-Proof modification of "19.40bOLD" is discouraged (56 steps).
 Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
 Proof modification of "19.43OLD" is discouraged (72 steps).
@@ -18664,6 +18664,7 @@ Proof modification of "cnncvsabsnegdemo" is discouraged (74 steps).
 Proof modification of "cnncvsaddassdemo" is discouraged (46 steps).
 Proof modification of "cnncvsmulassdemo" is discouraged (95 steps).
 Proof modification of "cnv0OLD" is discouraged (40 steps).
+Proof modification of "cnvcnvOLD" is discouraged (86 steps).
 Proof modification of "cnvssOLD" is discouraged (62 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
 Proof modification of "compneOLD" is discouraged (89 steps).
@@ -18945,7 +18946,6 @@ Proof modification of "el123" is discouraged (26 steps).
 Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
-Proof modification of "eleq2dOLD" is discouraged (84 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
 Proof modification of "elghomOLD" is discouraged (117 steps).
@@ -19017,16 +19017,13 @@ Proof modification of "ex-natded9.26" is discouraged (65 steps).
 Proof modification of "ex-natded9.26-2" is discouraged (22 steps).
 Proof modification of "exanOLD" is discouraged (31 steps).
 Proof modification of "exanOLDOLD" is discouraged (23 steps).
-Proof modification of "exbiOLD" is discouraged (28 steps).
 Proof modification of "exbidOLD" is discouraged (10 steps).
-Proof modification of "exbidhOLD" is discouraged (24 steps).
 Proof modification of "exbirVD" is discouraged (65 steps).
 Proof modification of "exbiriVD" is discouraged (70 steps).
 Proof modification of "eximdOLD" is discouraged (10 steps).
 Proof modification of "exinst" is discouraged (12 steps).
 Proof modification of "exinst01" is discouraged (16 steps).
 Proof modification of "exinst11" is discouraged (21 steps).
-Proof modification of "exintrbiOLD" is discouraged (31 steps).
 Proof modification of "exlimdOLD" is discouraged (20 steps).
 Proof modification of "exlimdhOLD" is discouraged (14 steps).
 Proof modification of "exlimexi" is discouraged (15 steps).
@@ -19725,6 +19722,10 @@ Proof modification of "ssuniOLD" is discouraged (84 steps).
 Proof modification of "stdpc5OLD" is discouraged (24 steps).
 Proof modification of "stdpc5OLDOLD" is discouraged (20 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
+Proof modification of "strlemor0OLD" is discouraged (26 steps).
+Proof modification of "strlemor1OLD" is discouraged (327 steps).
+Proof modification of "strlemor2OLD" is discouraged (62 steps).
+Proof modification of "strlemor3OLD" is discouraged (73 steps).
 Proof modification of "structgrssiedgOLD" is discouraged (62 steps).
 Proof modification of "structgrssvtxOLD" is discouraged (62 steps).
 Proof modification of "structgrssvtxlemOLD" is discouraged (148 steps).
@@ -19804,6 +19805,7 @@ Proof modification of "usgredgprvALT" is discouraged (124 steps).
 Proof modification of "usgrnloop0ALT" is discouraged (86 steps).
 Proof modification of "usgrnloopALT" is discouraged (95 steps).
 Proof modification of "usgrnloopvALT" is discouraged (149 steps).
+Proof modification of "uspgrbisymrelALT" is discouraged (155 steps).
 Proof modification of "uun0.1" is discouraged (32 steps).
 Proof modification of "uun111" is discouraged (26 steps).
 Proof modification of "uun121" is discouraged (12 steps).
@@ -19896,7 +19898,6 @@ Proof modification of "wl-sbal2" is discouraged (36 steps).
 Proof modification of "wl-sbcom3" is discouraged (93 steps).
 Proof modification of "wl-section-boot" is discouraged (1 steps).
 Proof modification of "wl-section-impchain" is discouraged (1 steps).
-Proof modification of "wl-section-nf" is discouraged (1 steps).
 Proof modification of "wl-section-prop" is discouraged (1 steps).
 Proof modification of "wl-syl" is discouraged (13 steps).
 Proof modification of "wl-syl5" is discouraged (14 steps).
