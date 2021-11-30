@@ -4366,12 +4366,6 @@ maxle , lemin , maxlt , ltmin , max0sub , ifle</TD>
 </TR>
 
 <TR>
-<TD>qbtwnxr</TD>
-<TD><I>none</I></TD>
-<TD>Presumably provable from ~ qbtwnre .</TD>
-</TR>
-
-<TR>
 <TD>qsqueeze</TD>
 <TD><I>none yet</I></TD>
 <TD>Presumably provable from ~ qbtwnre and ~ squeeze0 , but unused
@@ -4387,7 +4381,7 @@ in set.mm.</TD>
 <TR>
 <TD>xralrple , alrple</TD>
 <TD><I>none yet</I></TD>
-<TD>If we had qbtwnxr , it looks like the set.mm proof would work
+<TD>Now that we have ~ qbtwnxr , it looks like the set.mm proof would work
 with minor changes.</TD>
 </TR>
 
@@ -4438,18 +4432,9 @@ set.mm, and the set.mm proofs would require significant changes.</TD>
 </TR>
 
 <TR>
-<TD>ioo0</TD>
-<TD><I>none</I></TD>
-<TD>Once we have qbtwnxr , it may be possible to rearrange
-the logic from set.mm so that this proof works (via ~ rabeq0 ,
-~ ralnex , and ~ xrlenlt perhaps).</TD>
-</TR>
-
-<TR>
 <TD>ioon0</TD>
-<TD><I>none</I></TD>
-<TD>Presumably non-empty would need to be changed to inhabited,
-see also discussion at ioo0</TD>
+<TD>~ ioom</TD>
+<TD>Non-empty is changed to inhabited</TD>
 </TR>
 
 <TR>
@@ -4472,12 +4457,6 @@ both in proving this and in using it.</TD>
 <TR>
 <TD>iooin</TD>
 <TD><I>none</I></TD>
-</TR>
-
-<TR>
-<TD>ico0 , ioc0</TD>
-<TD><I>none</I></TD>
-<TD>Possibly similar to ioo0 ; see discussion there.</TD>
 </TR>
 
 <TR>
@@ -5219,10 +5198,17 @@ middle and iset.mm has few cardinality related theorems.</TD>
 </TR>
 
 <TR>
-<TD>fseqsupcl , fseqsupubi</TD>
-<TD><I>none</I></TD>
-<TD>iset.mm does not have the "sup" syntax and lacks most
-supremum theorems from set.mm.</TD>
+  <TD>fseqsupcl</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fisupcl and it is not clear whether this
+  supremum theorem or anything similar can be proved.</TD>
+</TR>
+
+<TR>
+  <TD>fseqsupubi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fsequb2 and suprub and it is not clear
+  whether this supremum theorem or anything similar can be proved.</TD>
 </TR>
 
 <TR>
@@ -5661,13 +5647,6 @@ and the theorem is lightly used in set.mm</TD>
 </TR>
 
 <TR>
-<TD>iexpcyc</TD>
-<TD><I>none yet</I></TD>
-<TD>See discussion under df-mod ; modulus for integers would suffice
-so issues with modulus for reals would not be an impediment.</TD>
-</TR>
-
-<TR>
 <TD>sqrecii , sqrecd</TD>
 <TD>~ exprecap</TD>
 </TR>
@@ -6088,20 +6067,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>rddif , absrdbnd</TD>
   <TD><I>none</I></TD>
-  <TD>As described under df-fl , floor is problematic without
-  excluded middle.</TD>
+  <TD>If there is a need, we could prove these for rationals or real
+  numbers apart from any rational. Alternately, we could prove a result
+  with a slightly larger bound for any real number.</TD>
 </TR>
 
 <TR>
   <TD>rexanre</TD>
   <TD><I>none yet</I></TD>
   <TD>May be feasible once we've added maximum for real numbers</TD>
-</TR>
-
-<TR>
-  <TD>rexfiuz</TD>
-  <TD><I>none</I></TD>
-  <TD>Relies on findcard2</TD>
 </TR>
 
 <TR>
