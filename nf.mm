@@ -61264,6 +61264,12 @@ $)
       MKZXKXONZWBVBXPXNXQUOWFDUPUQSXLDWGVAURUSVCSVDVEVFVGVH $.
   $}
 
+  $( Cardinal less than is irreflexive. (Contributed by Scott Fenton,
+     12-Dec-2021.) $)
+  ltcirr $p |- -. A <c A $=
+    ( clec wbr wn wne wo cltc neirr olci wa brltc anor bitri con2bii mpbi ) AAB
+    CZDZAAEZDZFZAAGCZDSQAHIUATUAPRJTDAAKPRLMNO $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
