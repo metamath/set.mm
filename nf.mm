@@ -62593,7 +62593,7 @@ $)
    $}
 
    ${
-      $d A x y z w $.
+      $d A x y z $.
       $( Strongly Cantorian implies Cantorian.  Observation from [Holmes],
          p. 134. (Contributed by Scott Fenton, 19-Apr-2021.) $)
       scancan $p |- ( A e. SCan -> A e. Can ) $=
