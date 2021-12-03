@@ -16740,6 +16740,7 @@ New usage of "mulpqnq" is discouraged (7 uses).
 New usage of "mulresr" is discouraged (4 uses).
 New usage of "mulsrpr" is discouraged (9 uses).
 New usage of "n0fOLD" is discouraged (0 uses).
+New usage of "n0lpligOLD" is discouraged (0 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
 New usage of "natded" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
@@ -19398,6 +19399,7 @@ Proof modification of "mulgnnassOLD" is discouraged (439 steps).
 Proof modification of "mulgnnclOLD" is discouraged (39 steps).
 Proof modification of "mulgnndirOLD" is discouraged (440 steps).
 Proof modification of "n0fOLD" is discouraged (51 steps).
+Proof modification of "n0lpligOLD" is discouraged (77 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nelsnOLD" is discouraged (46 steps).
 Proof modification of "nexdOLD" is discouraged (9 steps).
