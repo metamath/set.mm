@@ -1542,6 +1542,12 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
+  <TD>ifpr</TD>
+  <TD><I>none</I></TD>
+  <TD>Should be provable if the condition is decidable.</TD>
+</TR>
+
+<TR>
   <TD ROWSPAN="3">difsnid</TD>
   <TD>~ difsnss</TD>
   <TD>One direction, for any set</TD>
@@ -1676,9 +1682,25 @@ set exists or it does not"</TD>
 </TR>
 
 <TR>
+  <TD>rmorabex</TD>
+  <TD>~ euabex</TD>
+  <TD>See discussion under moabex</TD>
+</TR>
+
+<TR>
+  <TD>nnullss</TD>
+  <TD>~ mss</TD>
+</TR>
+
+<TR>
 <TD>opex</TD>
 <TD>~ opexg , ~ opex </TD>
 <TD>The iset.mm version of ~ opex has additional hypotheses</TD>
+</TR>
+
+<TR>
+  <TD>otex</TD>
+  <TD>~ otexg</TD>
 </TR>
 
 <TR>
@@ -2900,13 +2922,122 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
+  <TD>dfsup2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses excluded middle in several places and the
+  theorem is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>supmo</TD>
+  <TD>~ supmoti</TD>
+  <TD>The conditions on the order are different.</TD>
+</TR>
+
+<TR>
+  <TD>supexd , supex</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses rmorabex</TD>
+</TR>
+
+<TR>
+  <TD>supeu</TD>
+  <TD>~ supeuti</TD>
+</TR>
+
+<TR>
+  <TD>supval2</TD>
+  <TD>~ supval2ti</TD>
+</TR>
+
+<TR>
+  <TD>eqsup</TD>
+  <TD>~ eqsupti</TD>
+</TR>
+
+<TR>
+  <TD>eqsupd</TD>
+  <TD>~ eqsuptid</TD>
+</TR>
+
+<TR>
+  <TD>supcl</TD>
+  <TD>~ supclti</TD>
+</TR>
+
+<TR>
+  <TD>supub</TD>
+  <TD>~ supubti</TD>
+</TR>
+
+<TR>
+  <TD>suplub</TD>
+  <TD>~ suplubti</TD>
+</TR>
+
+<TR>
+  <TD>suplub2</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable, probably with more conditions on
+  the order compared with ~ suplubti and similar theorems, but
+  the set.mm proof relies on excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>supnub</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable, although the set.mm proof relies on
+  excluded middle and it is not used until later in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>sup0riota , sup0 , infempty</TD>
+  <TD><I>none</I></TD>
+  <TD>Suitably modified verions may be provable, but they
+  are unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>supmax</TD>
+  <TD>~ supmaxti</TD>
+</TR>
+
+<TR>
+  <TD>fisup2g , fisupcl</TD>
+  <TD><I>none</I></TD>
+  <TD>Something along these lines may be possible (perhaps we'd need
+  trichotomy of the order when restricted to the finite set or something
+  like that), but the set.mm proof will not work as-is or with small
+  modifications.</TD>
+</TR>
+
+<TR>
+  <TD>supgtoreq</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses fisup2g and also trichotomy.</TD>
+</TR>
+
+<TR>
+  <TD>suppr</TD>
+  <TD><I>none</I></TD>
+  <TD>The formulation using ` if ` would seem to require a trichotomous
+  order. For real numbers, might be possible to define maximum via
+  absolute value (see absmax in set.mm).</TD>
+</TR>
+
+<TR>
+  <TD>supiso</TD>
+  <TD>~ supisoti</TD>
+</TR>
+
+<TR>
 <TD>ax-reg , axreg2 , zfregcl</TD>
 <TD>~ ax-setind </TD>
 <TD>ax-reg implies excluded middle as seen at ~ regexmid</TD>
 </TR>
 
 <TR>
-  <TD>df-rank and all theorems realted to the rank function</TD>
+  <TD>df-rank and all theorems related to the rank function</TD>
   <TD><I>none</I></TD>
   <TD>One possible definition is Definition 9.3.4
   of [AczelRathjen], p. 91</TD>
@@ -4235,12 +4366,6 @@ maxle , lemin , maxlt , ltmin , max0sub , ifle</TD>
 </TR>
 
 <TR>
-<TD>qbtwnxr</TD>
-<TD><I>none</I></TD>
-<TD>Presumably provable from ~ qbtwnre .</TD>
-</TR>
-
-<TR>
 <TD>qsqueeze</TD>
 <TD><I>none yet</I></TD>
 <TD>Presumably provable from ~ qbtwnre and ~ squeeze0 , but unused
@@ -4256,7 +4381,7 @@ in set.mm.</TD>
 <TR>
 <TD>xralrple , alrple</TD>
 <TD><I>none yet</I></TD>
-<TD>If we had qbtwnxr , it looks like the set.mm proof would work
+<TD>Now that we have ~ qbtwnxr , it looks like the set.mm proof would work
 with minor changes.</TD>
 </TR>
 
@@ -4307,18 +4432,9 @@ set.mm, and the set.mm proofs would require significant changes.</TD>
 </TR>
 
 <TR>
-<TD>ioo0</TD>
-<TD><I>none</I></TD>
-<TD>Once we have qbtwnxr , it may be possible to rearrange
-the logic from set.mm so that this proof works (via ~ rabeq0 ,
-~ ralnex , and ~ xrlenlt perhaps).</TD>
-</TR>
-
-<TR>
 <TD>ioon0</TD>
-<TD><I>none</I></TD>
-<TD>Presumably non-empty would need to be changed to inhabited,
-see also discussion at ioo0</TD>
+<TD>~ ioom</TD>
+<TD>Non-empty is changed to inhabited</TD>
 </TR>
 
 <TR>
@@ -4341,12 +4457,6 @@ both in proving this and in using it.</TD>
 <TR>
 <TD>iooin</TD>
 <TD><I>none</I></TD>
-</TR>
-
-<TR>
-<TD>ico0 , ioc0</TD>
-<TD><I>none</I></TD>
-<TD>Possibly similar to ioo0 ; see discussion there.</TD>
 </TR>
 
 <TR>
@@ -5088,10 +5198,17 @@ middle and iset.mm has few cardinality related theorems.</TD>
 </TR>
 
 <TR>
-<TD>fseqsupcl , fseqsupubi</TD>
-<TD><I>none</I></TD>
-<TD>iset.mm does not have the "sup" syntax and lacks most
-supremum theorems from set.mm.</TD>
+  <TD>fseqsupcl</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fisupcl and it is not clear whether this
+  supremum theorem or anything similar can be proved.</TD>
+</TR>
+
+<TR>
+  <TD>fseqsupubi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fsequb2 and suprub and it is not clear
+  whether this supremum theorem or anything similar can be proved.</TD>
 </TR>
 
 <TR>
@@ -5530,13 +5647,6 @@ and the theorem is lightly used in set.mm</TD>
 </TR>
 
 <TR>
-<TD>iexpcyc</TD>
-<TD><I>none yet</I></TD>
-<TD>See discussion under df-mod ; modulus for integers would suffice
-so issues with modulus for reals would not be an impediment.</TD>
-</TR>
-
-<TR>
 <TD>sqrecii , sqrecd</TD>
 <TD>~ exprecap</TD>
 </TR>
@@ -5957,20 +6067,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>rddif , absrdbnd</TD>
   <TD><I>none</I></TD>
-  <TD>As described under df-fl , floor is problematic without
-  excluded middle.</TD>
+  <TD>If there is a need, we could prove these for rationals or real
+  numbers apart from any rational. Alternately, we could prove a result
+  with a slightly larger bound for any real number.</TD>
 </TR>
 
 <TR>
   <TD>rexanre</TD>
   <TD><I>none yet</I></TD>
   <TD>May be feasible once we've added maximum for real numbers</TD>
-</TR>
-
-<TR>
-  <TD>rexfiuz</TD>
-  <TD><I>none</I></TD>
-  <TD>Relies on findcard2</TD>
 </TR>
 
 <TR>
