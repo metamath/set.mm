@@ -16989,6 +16989,7 @@ New usage of "nqerrel" is discouraged (4 uses).
 New usage of "nqex" is discouraged (4 uses).
 New usage of "nqpr" is discouraged (1 uses).
 New usage of "nsmallnq" is discouraged (3 uses).
+New usage of "nsnlpligALT" is discouraged (0 uses).
 New usage of "nv0" is discouraged (5 uses).
 New usage of "nv0lid" is discouraged (4 uses).
 New usage of "nv0rid" is discouraged (7 uses).
@@ -19401,7 +19402,7 @@ Proof modification of "mulgnnassOLD" is discouraged (439 steps).
 Proof modification of "mulgnnclOLD" is discouraged (39 steps).
 Proof modification of "mulgnndirOLD" is discouraged (440 steps).
 Proof modification of "n0fOLD" is discouraged (51 steps).
-Proof modification of "n0lpligALT" is discouraged (77 steps).
+Proof modification of "n0lpligALT" is discouraged (74 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nelsnOLD" is discouraged (46 steps).
 Proof modification of "nexdOLD" is discouraged (9 steps).
@@ -19497,6 +19498,7 @@ Proof modification of "notnotrALT2" is discouraged (2 steps).
 Proof modification of "notnotrALTVD" is discouraged (34 steps).
 Proof modification of "notnotriOLD" is discouraged (8 steps).
 Proof modification of "npss0OLD" is discouraged (29 steps).
+Proof modification of "nsnlpligALT" is discouraged (110 steps).
 Proof modification of "ogrpinvOLD" is discouraged (149 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
 Proof modification of "onfrALT" is discouraged (88 steps).
