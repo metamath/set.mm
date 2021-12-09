@@ -5682,6 +5682,9 @@
 "e3bi" is used by "en3lplem2VD".
 "e3bir" is used by "en3lplem2VD".
 "edgfiedgvalOLD" is used by "structgrssiedgOLD".
+"edgvalOLD" is used by "edg0iedg0OLD".
+"edgvalOLD" is used by "edgiedgbOLD".
+"edgvalOLD" is used by "edginwlkOLD".
 "ee03" is used by "ee03an".
 "ee03" is used by "suctrALT2".
 "ee1111" is used by "e1111".
@@ -15320,7 +15323,11 @@ New usage of "e33an" is discouraged (0 uses).
 New usage of "e3bi" is discouraged (1 uses).
 New usage of "e3bir" is discouraged (1 uses).
 New usage of "ecopoverOLD" is discouraged (0 uses).
+New usage of "edg0iedg0OLD" is discouraged (0 uses).
 New usage of "edgfiedgvalOLD" is discouraged (1 uses).
+New usage of "edgiedgbOLD" is discouraged (0 uses).
+New usage of "edginwlkOLD" is discouraged (0 uses).
+New usage of "edgvalOLD" is discouraged (3 uses).
 New usage of "ee001" is discouraged (0 uses).
 New usage of "ee002" is discouraged (0 uses).
 New usage of "ee010" is discouraged (0 uses).
@@ -18867,7 +18874,11 @@ Proof modification of "e33an" is discouraged (14 steps).
 Proof modification of "e3bi" is discouraged (11 steps).
 Proof modification of "e3bir" is discouraged (11 steps).
 Proof modification of "ecopoverOLD" is discouraged (269 steps).
+Proof modification of "edg0iedg0OLD" is discouraged (82 steps).
 Proof modification of "edgfiedgvalOLD" is discouraged (75 steps).
+Proof modification of "edgiedgbOLD" is discouraged (71 steps).
+Proof modification of "edginwlkOLD" is discouraged (103 steps).
+Proof modification of "edgvalOLD" is discouraged (57 steps).
 Proof modification of "ee001" is discouraged (16 steps).
 Proof modification of "ee002" is discouraged (27 steps).
 Proof modification of "ee010" is discouraged (16 steps).
