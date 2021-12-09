@@ -13544,6 +13544,8 @@ New usage of "ablomuldiv" is discouraged (3 uses).
 New usage of "ablonncan" is discouraged (1 uses).
 New usage of "ablonnncan" is discouraged (0 uses).
 New usage of "ablonnncan1" is discouraged (1 uses).
+New usage of "abrexex2OLD" is discouraged (0 uses).
+New usage of "abrexexOLD" is discouraged (0 uses).
 New usage of "abscncfALT" is discouraged (0 uses).
 New usage of "abshicom" is discouraged (1 uses).
 New usage of "ac2" is discouraged (1 uses).
@@ -18270,6 +18272,8 @@ Proof modification of "9p1e10OLD" is discouraged (7 steps).
 Proof modification of "9p1e10bOLD" is discouraged (11 steps).
 Proof modification of "9p2e11OLD" is discouraged (22 steps).
 Proof modification of "9t11e99OLD" is discouraged (93 steps).
+Proof modification of "abrexex2OLD" is discouraged (94 steps).
+Proof modification of "abrexexOLD" is discouraged (31 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "adant423OLD" is discouraged (15 steps).
