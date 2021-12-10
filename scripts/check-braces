@@ -35,9 +35,13 @@
 # active scope.  If $c, $d, $e, $f, or $v are seen, the opening line number of
 # the current scope is set to 0.  When a right curly brace is encountered, if
 # the line number for that scope has not been set to zero, then we report it.
+#
+# The variable c is nonzero when looking at the contents of a comment.  Curly
+# braces are ignored in comments.
 
-BEGIN { i = 0 }
-/\$\{ \.\.\. \$\}/ { next } # Skip comments about the braces
-/\$\{/ { scope[++i] = NR }
-/\$\}/ { if (scope[i] != 0) print(scope[i]); delete scope[i] }
+BEGIN { i = 0; c = 0 }
+/\$\(/ { ++c }
+/\$\)/ { --c }
+/\$\{/ { if (c == 0) scope[++i] = NR }
+/\$\}/ { if (c == 0 && scope[i] != 0) print(scope[i]); delete scope[i] }
 /\$[cdefv]/ { scope[i] = 0 }
