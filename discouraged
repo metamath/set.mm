@@ -5682,6 +5682,9 @@
 "e3bi" is used by "en3lplem2VD".
 "e3bir" is used by "en3lplem2VD".
 "edgfiedgvalOLD" is used by "structgrssiedgOLD".
+"edgvalOLD" is used by "edg0iedg0OLD".
+"edgvalOLD" is used by "edgiedgbOLD".
+"edgvalOLD" is used by "edginwlkOLD".
 "ee03" is used by "ee03an".
 "ee03" is used by "suctrALT2".
 "ee1111" is used by "e1111".
@@ -13544,6 +13547,8 @@ New usage of "ablomuldiv" is discouraged (3 uses).
 New usage of "ablonncan" is discouraged (1 uses).
 New usage of "ablonnncan" is discouraged (0 uses).
 New usage of "ablonnncan1" is discouraged (1 uses).
+New usage of "abrexex2OLD" is discouraged (0 uses).
+New usage of "abrexexOLD" is discouraged (0 uses).
 New usage of "abscncfALT" is discouraged (0 uses).
 New usage of "abshicom" is discouraged (1 uses).
 New usage of "ac2" is discouraged (1 uses).
@@ -15320,7 +15325,11 @@ New usage of "e33an" is discouraged (0 uses).
 New usage of "e3bi" is discouraged (1 uses).
 New usage of "e3bir" is discouraged (1 uses).
 New usage of "ecopoverOLD" is discouraged (0 uses).
+New usage of "edg0iedg0OLD" is discouraged (0 uses).
 New usage of "edgfiedgvalOLD" is discouraged (1 uses).
+New usage of "edgiedgbOLD" is discouraged (0 uses).
+New usage of "edginwlkOLD" is discouraged (0 uses).
+New usage of "edgvalOLD" is discouraged (3 uses).
 New usage of "ee001" is discouraged (0 uses).
 New usage of "ee002" is discouraged (0 uses).
 New usage of "ee010" is discouraged (0 uses).
@@ -18270,6 +18279,8 @@ Proof modification of "9p1e10OLD" is discouraged (7 steps).
 Proof modification of "9p1e10bOLD" is discouraged (11 steps).
 Proof modification of "9p2e11OLD" is discouraged (22 steps).
 Proof modification of "9t11e99OLD" is discouraged (93 steps).
+Proof modification of "abrexex2OLD" is discouraged (94 steps).
+Proof modification of "abrexexOLD" is discouraged (31 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "adant423OLD" is discouraged (15 steps).
@@ -18635,7 +18646,6 @@ Proof modification of "bj-zfpow" is discouraged (71 steps).
 Proof modification of "bnj142OLD" is discouraged (51 steps).
 Proof modification of "bnj145OLD" is discouraged (112 steps).
 Proof modification of "bnj538OLD" is discouraged (94 steps).
-Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "brfi1indALT" is discouraged (789 steps).
 Proof modification of "brfi1indALTOLD" is discouraged (789 steps).
 Proof modification of "brfi1indOLD" is discouraged (48 steps).
@@ -18868,7 +18878,11 @@ Proof modification of "e33an" is discouraged (14 steps).
 Proof modification of "e3bi" is discouraged (11 steps).
 Proof modification of "e3bir" is discouraged (11 steps).
 Proof modification of "ecopoverOLD" is discouraged (269 steps).
+Proof modification of "edg0iedg0OLD" is discouraged (82 steps).
 Proof modification of "edgfiedgvalOLD" is discouraged (75 steps).
+Proof modification of "edgiedgbOLD" is discouraged (71 steps).
+Proof modification of "edginwlkOLD" is discouraged (103 steps).
+Proof modification of "edgvalOLD" is discouraged (57 steps).
 Proof modification of "ee001" is discouraged (16 steps).
 Proof modification of "ee002" is discouraged (27 steps).
 Proof modification of "ee010" is discouraged (16 steps).
