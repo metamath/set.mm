@@ -16,7 +16,10 @@ The "set.mm" database is one of the largest
 collections of formally-verified mathematics in the world (e.g., it
 has completed many challenge theorems in the
 [Formalizing-100 Theorems](https://www.cs.ru.nl/~freek/100/) challenge list).
-It is also one of the most rigorously verified.
+It is also one of the most rigorously verified collection of
+formally-verified mathematics in the world; it's verified by
+5 different verifiers written by 5 different people
+in 5 different programming languages.
 
 ## What is Metamath?
 
