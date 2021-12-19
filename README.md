@@ -58,7 +58,7 @@ The databases included, in (approximate) decreasing size, are:
   In particular, it does not presume that the law of excluded middle is
   necessarily true in all cases.
 * "nf.mm" aka "New Foundations Explorer" - constructs mathematics using
-  Quine's "New Foundations" (NF) set theory axioms, a direct derivative
+  Quine's New Foundations (NF) set theory axioms, a direct derivative
   of the "hierarchy of types" set theory originally presented in
   Whitehead and Russell's *Principia Mathematica*.
 * "ql.mm" aka "Quantum Logic Explorer" - Starts from the orthomodular
