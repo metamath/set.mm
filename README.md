@@ -31,32 +31,32 @@ of axioms into the system. Instead, the Matamath language is simple and robust,
 with an almost total absence of hard-wired syntax.
 In Metamath you express the axioms *and* the theorems in a database.
 To prove a theorem, every proof step *must* be proven using an axiom or
-a previously-proven theorem; as a result, nothing is hidden.
+a previously proven theorem; as a result, nothing is hidden.
 We believe Metamath provides about the simplest possible framework that
-allows essentially of mathematics to be expressed with absolute rigor.
+allows essentially all of mathematics to be expressed with absolute rigor.
 
 For more information see
 the [Metamath Home Page](http://us.metamath.org/), the
 [Metamath Proof Explorer Home Page](http://us.metamath.org/mpeuni/mmset.html),
 the [Metamath book](http://us.metamath.org#book), or the
-[video "Metamath Proof Explorer: A Modern Principia Mathematica](https://www.youtube.com/watch?v=8WH4Rd4UKGE).
+[video "Metamath Proof Explorer: A Modern Principia Mathematica"](https://www.youtube.com/watch?v=8WH4Rd4UKGE).
 
 ## What databases are included in this collection?
 
 This is a collection of many databases, but since "set.mm" is by far
 the most actively maintained, you may want to look at it first even if you
 plan to eventually work on something else.
-[The video "Metamath Proof Explorer (set.mm) contributions visualized with Gource through 2019-10-04"]( https://www.youtube.com/watch?v=XC1g8FmFcUU&list=PL1jSu6GGefBm7RBP0Id2Sa9uyVuyhioAC&index=4) shows set.mm's growth over time.
+[The video "Metamath Proof Explorer (set.mm) contributions visualized with Gource through 2020-04-29"](https://www.youtube.com/watch?v=LVGSeDjWzUo) shows set.mm's growth over time.
 
 The databases included, in (approximate) decreasing size, are:
 
-* "set.mm" aka Metamath Proof Explorer (MPE) -
+* "set.mm" aka "Metamath Proof Explorer (MPE)" -
   uses classical logic and
   Zermelo–Fraenkel set theory with the axiom of choice (ZFC).
 * "iset.mm" aka "Intuitionistic Logic Explorer" -
-  uses intuitionistic logic instead of classical logic,
-  e.g., it does not presume that the law of the implied middle is true
-  in all cases.
+  uses intuitionistic set theory.
+  In particular, it does not presume that the law of excluded middle is
+  necessarily true in all cases.
 * "nf.mm" aka "New Foundations Explorer" - constructs mathematics using
   Quine's "New Foundations" (NF) set theory axioms, a direct derivative
   of the "hierarchy of types" set theory originally presented in
@@ -70,7 +70,7 @@ The databases included, in (approximate) decreasing size, are:
 * "peano.mm" - Peano arithmetic.
 * "big-unifier.mm" - a unification and substitution test for
   Metamath verifiers, where small input expressions blow up to thousands
-  of symbols.  It is a translation of William McCune's "big-unifier.in"
+  of symbols. It is a translation of William McCune's "big-unifier.in"
   for the OTTER theorem prover.
 * "miu.mm"  - a simple formal system for use as a demonstration based
   on work by Hofstadter.
@@ -83,8 +83,8 @@ Changes ("commits") to any database are first automatically verified
 before they are accepted, using GitHub actions.
 
 The set.mm and iset.mm databases are the ones primarily being updated.
-Every change to these databases are verified by the following
-different verifiers:
+In *every* change, *each* of these two databases is re-verified by *all*
+of the following verifiers:
 
 * metamath.exe aka Cmetamath (the original C verifier by Norman Megill)
 * checkmm (a C++ verifier by Eric Schmidt)
@@ -94,13 +94,16 @@ different verifiers:
 
 Note that these are different verifiers written in different programming
 languages by different people. In addition, the verification algorithm
-is intentionally simple (it fits in two pages in the Matamath book).
-This provides *extremely* high confidence that the proofs are correct.
+is intentionally simple (it fits in two pages in the Matamath book),
+so it's relatively easy to implement a verifier, it's more likely to be
+correct (because of its simplicity), and it's also relatively
+easy to review a verifier.
 Most math proofs are not formally verified at all (that is, where a
-computer verification verifies every step). The rest are typically only
+computer verifies every step). The rest are typically only
 verified by a single program (which might have an error in it).
-These multiple independent verifications provide very high confidence
-of their being correct.
+Metamath is different.
+Our use of multiple independent automated verifiers
+provides *extremely* high confidence that these proofs are completely correct.
 
 All other databases are verified by at least one verifier.
 
@@ -117,7 +120,7 @@ Many in the community use the [mmj2 tool](http://us.metamath.org#book).
 The video [Introduction to Metamath and mmj2](https://www.youtube.com/watch?v=Rst2hZpWUbU) demonstrates using mmj2.
 The mmj2 tool includes an interactive tutorial, and if you just want to watch,
 there's a video giving a
-[Walkthrough of the tutorial in mmj2](https://www.youtube.com/watch?v=87mnU1ckbI0&t=2094s).
+[Walkthrough of the tutorial in mmj2](https://www.youtube.com/watch?v=87mnU1ckbI0).
 You should start small and try to reprove what's already
 proven with Metamath before you try to prove something new.
 If you're contributing to set.mm or iset.mm, take a look at its
@@ -125,7 +128,7 @@ If you're contributing to set.mm or iset.mm, take a look at its
 
 At some point you should join the
 [Metamath mailing list](https://groups.google.com/g/metamath).
-We're a friendly community and we would love to have more collaborators!
+We're a friendly community, and we would love to have more collaborators!
 
 The Wiki page
 [Getting started with contributing](https://github.com/metamath/set.mm/wiki/Getting-started-with-contributing) will walk you the process of contributing
@@ -166,7 +169,7 @@ That makes changes much easier to review.
 It also makes it easy to accept some changes while not accepting others.
 
 Many contributors have or create a personal "mathbox" - a sandbox of work that
-is visible to others. Changes to ones' own mathbox still go through a
+is visible to others. Changes to someone's own mathbox still go through a
 review, but usually it's cursory - we generally just want to ensure that those
 changes don't interfere with or confuse others.
 Mathbox changes must still pass all verifiers, though, and that is
