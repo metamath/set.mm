@@ -1103,8 +1103,8 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TR>
 
 <TR>
-<TD>oran</TD>
-<TD>~ oranim </TD>
+<TD>oran , pm4.57</TD>
+<TD>~ oranim , ~ orandc</TD>
 </TR>
 
 <TR>
@@ -1379,13 +1379,28 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>df-pss and all proper subclass theorems</TD>
+  <TD><I>none</I></TD>
+  <TD>In set.mm, "A is a proper subclass of B" is defined to be
+  ` ( A C_ B /\ A =/= B ) ` and this definition is almost always used in
+  conjunction with excluded middle. A more natural definition
+  might be ` ( A C_ B /\ E. x x e. ( B \ A ) )` , if we need proper subclass
+  at all.</TD>
+</TR>
+
+<TR>
   <TD>nss</TD>
   <TD>~ nssr</TD>
 </TR>
 
 <TR>
-<TD>sspss</TD>
-<TD>~ sspssr </TD>
+  <TD>ddif</TD>
+  <TD>~ ddifnel , ~ ddifss</TD>
+</TR>
+
+<TR>
+  <TD>dfss4</TD>
+  <TD>~ ssddif</TD>
 </TR>
 
 <TR>
@@ -2253,7 +2268,13 @@ fair bit of intuitionizing.</TD>
 <TR>
 <TD>ssonprc</TD>
 <TD><I>none</I></TD>
-<TD>not provable (we conjecture), but interesting enough to intuitionize anyway. ` U. A = On -> A e/ V ` is provable, and ` ( B e. On /\ U. A C_ B ) -> A e. V ` is provable. (Why isn't ~ df-pss stated so that the set difference is inhabited? If so, you could prove ` U. A C. On -> A e. V `.)</TD>
+<TD>not provable (we conjecture), but interesting enough to intuitionize
+anyway. ` U. A = On -> A e/ V ` is provable, and
+` ( B e. On /\ U. A C_ B ) -> A e. V ` is provable.
+(One thing we presumably could prove is
+` ( U. A C_ On /\ E. x x e. ( On \ U. A ) ) -> A e. V `
+which might be easier to understand if we define (or think of) proper subset
+as meaning that the set difference is inhabited.)</TD>
 </TR>
 
 <TR>
@@ -3009,11 +3030,9 @@ this implies excluded middle</TD>
 
 <TR>
   <TD>fisup2g , fisupcl</TD>
-  <TD><I>none</I></TD>
-  <TD>Something along these lines may be possible (perhaps we'd need
-  trichotomy of the order when restricted to the finite set or something
-  like that), but the set.mm proof will not work as-is or with small
-  modifications.</TD>
+  <TD>~ zsssupcl</TD>
+  <TD>Other variations may be possible, but the set.mm proof will not
+  work as-is or with small modifications.</TD>
 </TR>
 
 <TR>
@@ -6309,6 +6328,13 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>~ divalglemnn and other lemmas</TD>
   <TD>Since the end result ~ divalg is the same, we don't list
   all the differences in lemmas here.</TD>
+</TR>
+
+<TR>
+  <TD>gcdcllem1 , gcdcllem2 , gcdcllem3</TD>
+  <TD>~ gcdn0cl , ~ gcddvds , ~ dvdslegcd</TD>
+  <TD>These are lemmas which are part of the proof of theorems
+  that iset.mm proves a somewhat different way</TD>
 </TR>
 
 <TR>
