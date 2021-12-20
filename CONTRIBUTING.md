@@ -8,7 +8,7 @@ This document briefly explains
 We also discuss
 [Formatting recommendation prior to submitting a pull request](#formatting-recommendation-prior-to-submitting-a-pull-request), and for the rare cases
 when it's needed, information on
-[regenerating the `discouraged` file][#regenerating-the-discouraged-file].
+[regenerating the `discouraged` file](#regenerating-the-discouraged-file).
 This page also describes
 [how these proposed changes are evaluated](#what-are-the-requirements-for-acceptance-merging)
 to decide if they will be accepted, since presumably you'll want to
