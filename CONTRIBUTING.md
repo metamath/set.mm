@@ -155,7 +155,7 @@ See the automated verification script for the details.
 The metamath.exe and mmj2 proof assistants will prevent most accidental
 violations.  The behavior of the metamath.exe proof assistant in the presence
 of these tags and how to override them is described in the 11-May-2016 entry of
-http://us.metamath.org/mpeuni/mmnotes.txt.
+<http://us.metamath.org/mpeuni/mmnotes.txt>.
 
 Please note that when you regenerate the `discouraged` file, before comitting
 it you should compare it to the existing one to make sure the differences are
