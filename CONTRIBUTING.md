@@ -178,6 +178,11 @@ You can also approve by using the comment "+1".
 Feel free to approve something others have approved, that makes it clear
 there's no serious issue.
 
+*Note*: Reviewers should investigate a commit that changes a
+`discouraged` file, since this means the commit is doing something
+that is normally discouraged.  That doesn't make it wrong, it just means a
+rationale is needed.
+
 Once a pull request is approved (other than the person
 originally proposing the change), any maintainer can merge it,
 including the approver.
