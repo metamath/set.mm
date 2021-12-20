@@ -91,7 +91,7 @@ We could do that in Metamath, too, but we go much further.
 
 Changes ("commits") to any database are first automatically verified
 before they are accepted, using GitHub actions.
-In *every* change, the proofs of *each* of these two databases
+In *every* change, the proofs of *each* of the set.mm and iset.mm databases
 is re-verified by *five* different verifiers:
 
 * metamath.exe aka Cmetamath (the original C verifier by Norman Megill)
