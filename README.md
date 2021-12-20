@@ -82,7 +82,10 @@ We work to provide *extremely* high confidence that the
 proofs are completely correct in these databases,
 especially for the set.mm and iset.mm databases (the
 primary databases under active development).
-Most projects would be delighted to have formal verification of
+Most published mathematical proofs don't have a formal proof at all
+(a formal proof is a proof where every step is completely and
+automatically verified by machine).
+Most other projects would be delighted to have formal verification of
 proofs by a *single* verification tool.
 We could do that in Metamath, too, but we go much further.
 
