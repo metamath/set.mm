@@ -2,24 +2,11 @@
 
 # Metamath set.mm repository
 
-This is a collection of databases that specify mathematical axioms and
-rigorous formal proofs of various mathematical theorems
-derived from those axioms.
-This collection is specified and derived using the Metamath system.
-A "database" in Metamath parlance is a collection of one or more text files.
+This is a collection of rigorously-verified [Metamath](http://us.metamath.org/)
+databases that specify mathematical axioms and
+formal proofs of theorems derived from those axioms.
 
-This collection is being actively improved by an international community.
-Please join us!
-
-The two largest databases in this collection are "set.mm" and "iset.mm".
-The "set.mm" database is one of the largest
-collections of formally-verified mathematics in the world (e.g., it
-has completed many challenge theorems in the
-[Formalizing-100 Theorems](https://www.cs.ru.nl/~freek/100/) challenge list).
-It is also one of the most rigorously verified collection of
-formally-verified mathematics in the world; it's verified by
-5 different verifiers written by 5 different people
-in 5 different programming languages.
+Please join us to improve it further!
 
 ## What is Metamath?
 
@@ -43,48 +30,66 @@ the [Metamath book](http://us.metamath.org#book), or the
 
 ## What databases are included in this collection?
 
-This is a collection of many databases, but since "set.mm" is by far
+This is a collection of many databases.
+A "database" in Metamath parlance is a collection of one or more text files
+that define axioms, theorems, and their proofs.
+Since "set.mm" is by far
 the most actively maintained, you may want to look at it first even if you
 plan to eventually work on something else.
-[The video "Metamath Proof Explorer (set.mm) contributions visualized with Gource through 2020-04-29"](https://www.youtube.com/watch?v=LVGSeDjWzUo) shows set.mm's growth over time.
+The databases included and links to their generated displays,
+in (approximate) decreasing size, are:
 
-The databases included, in (approximate) decreasing size, are:
-
-* "set.mm" aka "Metamath Proof Explorer (MPE)" -
+* "[set.mm](./set.mm)" aka "Metamath Proof Explorer (MPE)" -
   uses classical logic and
   Zermelo–Fraenkel set theory with the axiom of choice (ZFC).
-* "iset.mm" aka "Intuitionistic Logic Explorer" -
+  This is one of the largest collections of formally verified mathematics
+  in the world (e.g., it has completed many challenge theorems in the
+  [Formalizing-100 Theorems](https://www.cs.ru.nl/~freek/100/) challenge list);
+  [this video visualizes set.mm's growth through 2020-04-29](https://www.youtube.com/watch?v=LVGSeDjWzUo).
+  [[Generated display](http://us.metamath.org/mpeuni/mmset.html)]
+* "[iset.mm](./iset.mm)" aka "Intuitionistic Logic Explorer" -
   uses intuitionistic set theory.
   In particular, it does not presume that the law of excluded middle is
   necessarily true in all cases.
-* "nf.mm" aka "New Foundations Explorer" - constructs mathematics using
+  [[Generated display](http://us.metamath.org/mpeuni/mmil.html)]
+* "[nf.mm](.nf.mm)" aka "New Foundations Explorer" -
+  constructs mathematics using
   Quine's New Foundations (NF) set theory axioms, a direct derivative
   of the "hierarchy of types" set theory originally presented in
   Whitehead and Russell's *Principia Mathematica*.
-* "ql.mm" aka "Quantum Logic Explorer" - Starts from the orthomodular
-  lattice properties proved in the Hilbert Space Explorer and takes
-  you into quantum logic.
-* "hol.mm" aka "Higher-Order Logic Explorer" - Starts with HOL (also
-  called simple type theory) and derives equivalents to ZFC axioms,
-  connecting the two approaches.
-* "peano.mm" - Peano arithmetic.
-* "big-unifier.mm" - a unification and substitution test for
+  [[Generated display](http://us.metamath.org/nfeuni/mmnf.html)]
+* "[ql.mm](./ql.mm)" aka "Quantum Logic Explorer" - Starts from the
+  orthomodular lattice properties proved in the Hilbert Space Explorer and
+  takes you into quantum logic.
+  [[Generated display](http://us.metamath.org/qleuni/mmql.html)]
+* "[hol.mm](./hol.mm)" aka "Higher-Order Logic Explorer" - Starts with
+  higher-order logic (HOL, also called simple type theory) and derives
+  equivalents to ZFC axioms, connecting the two approaches.
+  [[Generated display](http://us.metamath.org/holuni/mmhol.html)]
+* "[peano.mm](./peano.mm)" - Peano arithmetic.
+* "[big-unifier.mm](./big-unifier.mm)" - a unification and substitution test for
   Metamath verifiers, where small input expressions blow up to thousands
   of symbols. It is a translation of William McCune's "big-unifier.in"
   for the OTTER theorem prover.
-* "miu.mm"  - a simple formal system for use as a demonstration based
-  on work by Hofstadter.
-* "demo0.mm" - a simple formal system used as a demonstration in
+* "[miu.mm](./miu.mm)"  - a simple formal system for use as a
+  demonstration based on work by Hofstadter.
+* "[demo0.mm](./demo0.mm)" - a simple formal system used as a demonstration in
   Chapter 2 of the Metamath book.
 
 ## How are they verified?
 
+We work to provide *extremely* high confidence that the
+proofs are completely correct in these databases,
+especially for the set.mm and iset.mm databases (the
+primary databases under active development).
+Most projects would be delighted to have formal verification of
+proofs by a *single* verification tool.
+We could do that in Metamath, too, but we go much further.
+
 Changes ("commits") to any database are first automatically verified
 before they are accepted, using GitHub actions.
-
-The set.mm and iset.mm databases are the ones primarily being updated.
-In *every* change, *each* of these two databases is re-verified by *all*
-of the following verifiers:
+In *every* change, the proofs of *each* of these two databases
+is re-verified by *five* different verifiers:
 
 * metamath.exe aka Cmetamath (the original C verifier by Norman Megill)
 * checkmm (a C++ verifier by Eric Schmidt)
@@ -93,19 +98,16 @@ of the following verifiers:
 * mmverify.py (a Python verifier by Raph Levien)
 
 Note that these are different verifiers written in different programming
-languages by different people. In addition, the verification algorithm
-is intentionally simple (it fits in two pages in the Matamath book),
+languages by different people. The verification algorithm
+is also intentionally simple (it fits in two pages in the Matamath book),
 so it's relatively easy to implement a verifier, it's more likely to be
-correct (because of its simplicity), and it's also relatively
+correct (because of its simplicity), and it's relatively
 easy to review a verifier.
-Most math proofs are not formally verified at all (that is, where a
-computer verifies every step). The rest are typically only
-verified by a single program (which might have an error in it).
-Metamath is different.
-Our use of multiple independent automated verifiers
-provides *extremely* high confidence that these proofs are completely correct.
 
-All other databases are verified by at least one verifier.
+All other databases' proofs are verified by one verifier (metamath.exe).
+
+Other checks are also performed.
+Text markup is checked by metamath-exe, and definitions are checked by mmj2.
 
 ## How can I contribute? How are contributions evaluated?
 
@@ -119,7 +121,7 @@ to decide if they will be merged in.
 
 Our sincere thanks to *everyone* who has contributed to this work.
 
-In addition, this entire collection is dedicated to the memory of
+This entire collection is dedicated to the memory of
 [Norman "Norm" Dwight Megill, Ph.D. (1950-2021)](https://www.legacy.com/us/obituaries/bostonglobe/name/norman-megill-obituary?id=31842140),
 creator of the Metamath system and cultivator of an international
 community of people with the shared dream of digitizing and
