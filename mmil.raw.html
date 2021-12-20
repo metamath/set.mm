@@ -1379,18 +1379,28 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>df-pss and all proper subclass theorems</TD>
+  <TD><I>none</I></TD>
+  <TD>In set.mm, "A is a proper subclass of B" is defined to be
+  ` ( A C_ B /\ A =/= B ) ` and this definition is almost always used in
+  conjunction with excluded middle. A more natural definition
+  might be ` ( A C_ B /\ E. x x e. ( B \ A ) )` , if we need proper subclass
+  at all.</TD>
+</TR>
+
+<TR>
   <TD>nss</TD>
   <TD>~ nssr</TD>
 </TR>
 
 <TR>
-<TD>sspss</TD>
-<TD>~ sspssr </TD>
+  <TD>ddif</TD>
+  <TD>~ ddifnel , ~ ddifss</TD>
 </TR>
 
 <TR>
-  <TD>ddif</TD>
-  <TD>~ ddifnel , ~ ddifss</TD>
+  <TD>dfss4</TD>
+  <TD>~ ssddif</TD>
 </TR>
 
 <TR>
@@ -2258,7 +2268,13 @@ fair bit of intuitionizing.</TD>
 <TR>
 <TD>ssonprc</TD>
 <TD><I>none</I></TD>
-<TD>not provable (we conjecture), but interesting enough to intuitionize anyway. ` U. A = On -> A e/ V ` is provable, and ` ( B e. On /\ U. A C_ B ) -> A e. V ` is provable. (Why isn't ~ df-pss stated so that the set difference is inhabited? If so, you could prove ` U. A C. On -> A e. V `.)</TD>
+<TD>not provable (we conjecture), but interesting enough to intuitionize
+anyway. ` U. A = On -> A e/ V ` is provable, and
+` ( B e. On /\ U. A C_ B ) -> A e. V ` is provable.
+(One thing we presumably could prove is
+` ( U. A C_ On /\ E. x x e. ( On \ U. A ) ) -> A e. V `
+which might be easier to understand if we define (or think of) proper subset
+as meaning that the set difference is inhabited.)</TD>
 </TR>
 
 <TR>
