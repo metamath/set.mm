@@ -26,7 +26,7 @@ everyone has to use.
 Many in the community use the [mmj2 tool](http://us.metamath.org#book), and
 many of the rest use the original metamath C program (aka "metamath.exe").
 The page
-[Metmath Proof Assistants](https://github.com/metamath/set.mm/wiki/Metamath-Proof-Assistants)
+[Metamath Proof Assistants](https://github.com/metamath/set.mm/wiki/Metamath-Proof-Assistants)
 provides more information about each tool.
 The video [Introduction to Metamath and mmj2](https://www.youtube.com/watch?v=Rst2hZpWUbU) demonstrates using mmj2.
 The mmj2 tool includes an interactive tutorial, and if you just want
