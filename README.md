@@ -6,21 +6,27 @@ This is a collection of rigorously-verified [Metamath](http://us.metamath.org/)
 databases that specify mathematical axioms and
 formal proofs of theorems derived from those axioms.
 
-Please join us to improve it further!
-
 ## What is Metamath?
 
 Metamath is a computer language and associated computer program for
 archiving, verifying, and studying mathematical proofs.
 
 Unlike some other systems, Metamath does not build a particular set
-of axioms into the system. Instead, the Matamath language is simple and robust,
+of axioms into the system. Instead, the Metamath language is simple and robust,
 with an almost total absence of hard-wired syntax.
-In Metamath you express the axioms *and* the theorems in a database.
+In Metamath you express the axioms, theorems, and their proofs in a database
+(set of text files).
 To prove a theorem, every proof step *must* be proven using an axiom or
 a previously proven theorem; as a result, nothing is hidden.
 We believe Metamath provides about the simplest possible framework that
 allows essentially all of mathematics to be expressed with absolute rigor.
+
+The resulting databases provide human-readable axioms and theorem statements.
+We compress proofs in this repository, so their proofs take relatively
+little space, but tools can easily decompress them to provide a human-readable
+sequence of every proof step.
+Metamath verification is incredibly fast; the largest database available
+can be re-verified within seconds by some verifier.
 
 For more information see
 the [Metamath Home Page](http://us.metamath.org/), the
@@ -30,12 +36,6 @@ the [Metamath book](http://us.metamath.org#book), or the
 
 ## What databases are included in this collection?
 
-This is a collection of many databases.
-A "database" in Metamath parlance is a collection of one or more text files
-that define axioms, theorems, and their proofs.
-Since "set.mm" is by far
-the most actively maintained, you may want to look at it first even if you
-plan to eventually work on something else.
 The databases included and links to their generated displays,
 in (approximate) decreasing size, are:
 
@@ -76,41 +76,20 @@ in (approximate) decreasing size, are:
 * "[demo0.mm](./demo0.mm)" - a simple formal system used as a demonstration in
   Chapter 2 of the Metamath book.
 
-## How are they verified?
+## How are the databases verified?
 
 We work to provide *extremely* high confidence that the
 proofs are completely correct in these databases,
 especially for the set.mm and iset.mm databases (the
 primary databases under active development).
-Most published mathematical proofs don't have a formal proof at all
-(a formal proof is a proof where every step is completely and
-automatically verified by machine).
-Most other projects would be delighted to have formal verification of
-proofs by a *single* verification tool.
-We could do that in Metamath, too, but we go much further.
 
 Changes ("commits") to any database are first automatically verified
-before they are accepted, using GitHub actions.
-In *every* change, the proofs of *each* of the set.mm and iset.mm databases
-is re-verified by *five* different verifiers:
-
-* metamath.exe aka Cmetamath (the original C verifier by Norman Megill)
-* checkmm (a C++ verifier by Eric Schmidt)
-* smetamath-rs (smm3) (a Rust verifier by Stefan O'Rear)
-* mmj2 (a Java verifier by Mel L. O'Cat and Mario Carneiro)
-* mmverify.py (a Python verifier by Raph Levien)
-
-Note that these are different verifiers written in different programming
-languages by different people. The verification algorithm
-is also intentionally simple (it fits in two pages in the Matamath book),
-so it's relatively easy to implement a verifier, it's more likely to be
-correct (because of its simplicity), and it's relatively
-easy to review a verifier.
-
-All other databases' proofs are verified by one verifier (metamath.exe).
-
-Other checks are also performed.
-Text markup is checked by metamath-exe, and definitions are checked by mmj2.
+before they are accepted, using GitHub actions. Every change to
+set.mm and iset.mm is verified by many independent verifiers,
+including metamath-exe, which also checks markup, and mmj2, which
+checks definition soundness. All other databases' proofs are verified
+by one verifier (metamath-exe) in every commit.
+For more information, see [VERIFIERS.md](./VERIFIERS.md).
 
 ## How can I contribute? How are contributions evaluated?
 
