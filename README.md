@@ -26,7 +26,7 @@ We compress proofs in this repository, so their proofs take relatively
 little space, but tools can easily decompress them to provide a human-readable
 sequence of every proof step.
 Metamath verification is incredibly fast; the largest database available
-can be re-verified within seconds by some verifier.
+can be re-verified within seconds by some verifiers.
 
 For more information see
 the [Metamath Home Page](http://us.metamath.org/), the
