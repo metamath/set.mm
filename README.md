@@ -2,7 +2,7 @@
 
 # Metamath set.mm repository
 
-This is a collection of rigorously-verified [Metamath](http://us.metamath.org/)
+This is a collection of rigorously verified [Metamath](http://us.metamath.org/)
 databases that specify mathematical axioms and
 formal proofs of theorems derived from those axioms.
 
