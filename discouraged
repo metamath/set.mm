@@ -13412,7 +13412,6 @@ New usage of "19.3OLD" is discouraged (2 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
 New usage of "19.43OLD" is discouraged (0 uses).
-New usage of "19.8aOLD" is discouraged (0 uses).
 New usage of "19.9OLD" is discouraged (2 uses).
 New usage of "19.9dOLD" is discouraged (1 uses).
 New usage of "19.9hOLD" is discouraged (0 uses).
@@ -13959,7 +13958,6 @@ New usage of "bj-inftyexpidisj" is discouraged (3 uses).
 New usage of "bj-inftyexpiinv" is discouraged (1 uses).
 New usage of "bj-mo3OLD" is discouraged (0 uses).
 New usage of "bj-mpt2mptALT" is discouraged (0 uses).
-New usage of "bj-nfdiOLD" is discouraged (0 uses).
 New usage of "bj-nuliotaALT" is discouraged (0 uses).
 New usage of "bj-peirce" is discouraged (0 uses).
 New usage of "bj-peircecurry" is discouraged (0 uses).
@@ -13969,7 +13967,6 @@ New usage of "bj-rabtrAUTO" is discouraged (0 uses).
 New usage of "bj-sbceqgALT" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
 New usage of "bj-sbidmOLD" is discouraged (0 uses).
-New usage of "bj-sbieOLD" is discouraged (0 uses).
 New usage of "bj-ssbid1ALT" is discouraged (0 uses).
 New usage of "bj-ssbid2ALT" is discouraged (0 uses).
 New usage of "bj-vexw" is discouraged (1 uses).
@@ -18207,7 +18204,6 @@ Proof modification of "19.3OLD" is discouraged (12 steps).
 Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
 Proof modification of "19.43OLD" is discouraged (72 steps).
-Proof modification of "19.8aOLD" is discouraged (47 steps).
 Proof modification of "19.9OLD" is discouraged (13 steps).
 Proof modification of "19.9dOLD" is discouraged (27 steps).
 Proof modification of "19.9hOLD" is discouraged (7 steps).
@@ -18569,7 +18565,6 @@ Proof modification of "bj-nfcjust" is discouraged (29 steps).
 Proof modification of "bj-nfcri" is discouraged (11 steps).
 Proof modification of "bj-nfcrii" is discouraged (23 steps).
 Proof modification of "bj-nfcsym" is discouraged (38 steps).
-Proof modification of "bj-nfdiOLD" is discouraged (26 steps).
 Proof modification of "bj-nfeel2" is discouraged (20 steps).
 Proof modification of "bj-nfnfc" is discouraged (30 steps).
 Proof modification of "bj-nfs1" is discouraged (16 steps).
@@ -18609,7 +18604,6 @@ Proof modification of "bj-sbftv" is discouraged (37 steps).
 Proof modification of "bj-sbfv" is discouraged (15 steps).
 Proof modification of "bj-sbfvv" is discouraged (32 steps).
 Proof modification of "bj-sbidmOLD" is discouraged (41 steps).
-Proof modification of "bj-sbieOLD" is discouraged (47 steps).
 Proof modification of "bj-sbtv" is discouraged (12 steps).
 Proof modification of "bj-spcimdv" is discouraged (56 steps).
 Proof modification of "bj-spcimdvv" is discouraged (56 steps).

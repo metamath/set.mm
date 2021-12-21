@@ -77,3 +77,4 @@
 2019-12-11|2019-12-11 Proof: Fourier convergence (fourier, Glauco Siliprandi), Metamath 100 #76 with 400 proven theorems
 2020-03-25|2020-03-25 Contributor: OpenAI provides first contribution of a Metamath proof created/minimized via machine learning
 2020-04-05|2020-04-05 Proof: e is Transcendental (etransc, Glauco Siliprandi), Metamath 100 #67
+2021-12-09|2021-12-09 Norman "Norm" Dwight Megill, Metamath founder, dies; his work continues
