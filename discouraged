@@ -14382,8 +14382,6 @@ New usage of "c-bnj18" is discouraged (58 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
 New usage of "cba" is discouraged (85 uses).
 New usage of "cbncms" is discouraged (5 uses).
-New usage of "cbv3hvOLD" is discouraged (0 uses).
-New usage of "cbv3hvOLDOLD" is discouraged (0 uses).
 New usage of "cbval2vOLD" is discouraged (0 uses).
 New usage of "cbvaldvaOLD" is discouraged (0 uses).
 New usage of "cbvalvOLD" is discouraged (0 uses).
@@ -15484,7 +15482,6 @@ New usage of "elspansn4" is discouraged (1 uses).
 New usage of "elspansn5" is discouraged (2 uses).
 New usage of "elspansncl" is discouraged (1 uses).
 New usage of "elspansni" is discouraged (2 uses).
-New usage of "elss2prOLD" is discouraged (0 uses).
 New usage of "elunirnALT" is discouraged (0 uses).
 New usage of "elunop" is discouraged (7 uses).
 New usage of "elunop2" is discouraged (0 uses).
@@ -18437,7 +18434,7 @@ Proof modification of "bj-axc10v" is discouraged (37 steps).
 Proof modification of "bj-axc11nv" is discouraged (5 steps).
 Proof modification of "bj-axc11v" is discouraged (14 steps).
 Proof modification of "bj-axc14" is discouraged (35 steps).
-Proof modification of "bj-axc14nf" is discouraged (31 steps).
+Proof modification of "bj-axc14nf" is discouraged (28 steps).
 Proof modification of "bj-axc16b" is discouraged (14 steps).
 Proof modification of "bj-axc16g16" is discouraged (25 steps).
 Proof modification of "bj-axc4" is discouraged (15 steps).
@@ -18561,7 +18558,7 @@ Proof modification of "bj-nfcjust" is discouraged (29 steps).
 Proof modification of "bj-nfcri" is discouraged (11 steps).
 Proof modification of "bj-nfcrii" is discouraged (23 steps).
 Proof modification of "bj-nfcsym" is discouraged (38 steps).
-Proof modification of "bj-nfeel2" is discouraged (20 steps).
+Proof modification of "bj-nfeel2" is discouraged (17 steps).
 Proof modification of "bj-nfnfc" is discouraged (30 steps).
 Proof modification of "bj-nfs1" is discouraged (16 steps).
 Proof modification of "bj-nfs1v" is discouraged (10 steps).
@@ -18642,8 +18639,6 @@ Proof modification of "brfi1indOLD" is discouraged (48 steps).
 Proof modification of "brfi1uzindOLD" is discouraged (244 steps).
 Proof modification of "brfvidRP" is discouraged (92 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
-Proof modification of "cbv3hvOLD" is discouraged (37 steps).
-Proof modification of "cbv3hvOLDOLD" is discouraged (52 steps).
 Proof modification of "cbval2vOLD" is discouraged (20 steps).
 Proof modification of "cbvaldvaOLD" is discouraged (22 steps).
 Proof modification of "cbvalvOLD" is discouraged (12 steps).
@@ -18976,7 +18971,6 @@ Proof modification of "elpr2OLD" is discouraged (59 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
 Proof modification of "elsnxpOLD" is discouraged (203 steps).
-Proof modification of "elss2prOLD" is discouraged (57 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "elwlimOLD" is discouraged (90 steps).
 Proof modification of "elxp2OLD" is discouraged (82 steps).
