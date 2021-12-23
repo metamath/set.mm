@@ -60,7 +60,7 @@
 2015-04-17|2015-04-17 Definition: Decimal constructor df-dec
 2016-01-28|2016-01-28 Article: Mario Carneiro, "Models for Metamath"
 2016-08-08|2016-08-08 Article: Daniel Whalen, "Holophrasm: a Neural Automated Theorem Prover for Higher-Order Logic"
-2016-08-11|2016-08-11 Definition: "Not free" predicate (df-nf, df-nfc) (Mario Carneiro)
+2016-08-11|2016-08-11 Definitions: "Not free" predicates (df-nf, df-nfc) (Mario Carneiro)
 2016-11-25|2016-11-25 Proof: All assertic syllogisms in Aristotelian logic (David A. Wheeler)
 2017-02-28|2017-02-28 Proof: Intersecting chords theorem (chordthm, David Moews)
 2017-05-07|2017-05-07 Proof: Ballot Problem (ballotth, Thierry Arnoux), Metamath 100 #30 (tied Coq)
