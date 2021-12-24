@@ -205,13 +205,18 @@ review, but usually it's cursory - we generally just want to ensure that those
 changes don't interfere with or confuse others.
 Mathbox changes must still pass all verifiers, though, and that is
 a very rigorous check.
-
-Some areas may have "area maintainers" - changes to those areas
-must generally also be approved by at least one of the area maintainer(s).
-Similarly, mathboxes should normally only be changed by the owner of the
+Mathboxes should normally only be changed by the owner of the
 mathbox (unless it's a general improvement that applies across the database).
-We don't currently have a list of area maintainers; please propose
-a change to this file if you want to be an area maintainer.
+
+The following people are active and are willing to be contacted
+concerning the areas listed.  This area maintainership is not (at least
+currently) part of the approval/merge process described above, but hopefully
+this list will help you find people who work on a particular area.
+Please propose a change to this file if you want to be an area maintainer.
+
+* Mario Carneiro (@digama0): Any part of set.mm or iset.mm
+
+* Jim Kingdon (@jkingdon): iset.mm, df-tau
 
 ## For more information
 
