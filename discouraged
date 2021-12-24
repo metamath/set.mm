@@ -2220,11 +2220,6 @@
 "bnj206" is used by "bnj207".
 "bnj207" is used by "bnj600".
 "bnj207" is used by "bnj908".
-"bnj21" is used by "bnj1212".
-"bnj21" is used by "bnj1286".
-"bnj21" is used by "bnj1312".
-"bnj21" is used by "bnj1523".
-"bnj21" is used by "bnj213".
 "bnj213" is used by "bnj1128".
 "bnj213" is used by "bnj1137".
 "bnj213" is used by "bnj1145".
@@ -13412,7 +13407,6 @@ New usage of "19.3OLD" is discouraged (2 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
 New usage of "19.43OLD" is discouraged (0 uses).
-New usage of "19.8aOLD" is discouraged (0 uses).
 New usage of "19.9OLD" is discouraged (2 uses).
 New usage of "19.9dOLD" is discouraged (1 uses).
 New usage of "19.9hOLD" is discouraged (0 uses).
@@ -13959,7 +13953,6 @@ New usage of "bj-inftyexpidisj" is discouraged (3 uses).
 New usage of "bj-inftyexpiinv" is discouraged (1 uses).
 New usage of "bj-mo3OLD" is discouraged (0 uses).
 New usage of "bj-mpt2mptALT" is discouraged (0 uses).
-New usage of "bj-nfdiOLD" is discouraged (0 uses).
 New usage of "bj-nuliotaALT" is discouraged (0 uses).
 New usage of "bj-peirce" is discouraged (0 uses).
 New usage of "bj-peircecurry" is discouraged (0 uses).
@@ -13969,7 +13962,6 @@ New usage of "bj-rabtrAUTO" is discouraged (0 uses).
 New usage of "bj-sbceqgALT" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
 New usage of "bj-sbidmOLD" is discouraged (0 uses).
-New usage of "bj-sbieOLD" is discouraged (0 uses).
 New usage of "bj-ssbid1ALT" is discouraged (0 uses).
 New usage of "bj-ssbid2ALT" is discouraged (0 uses).
 New usage of "bj-vexw" is discouraged (1 uses).
@@ -14203,7 +14195,6 @@ New usage of "bnj170" is discouraged (6 uses).
 New usage of "bnj18eq1" is discouraged (1 uses).
 New usage of "bnj206" is discouraged (2 uses).
 New usage of "bnj207" is discouraged (2 uses).
-New usage of "bnj21" is discouraged (5 uses).
 New usage of "bnj213" is discouraged (8 uses).
 New usage of "bnj216" is discouraged (9 uses).
 New usage of "bnj219" is discouraged (4 uses).
@@ -14391,8 +14382,6 @@ New usage of "c-bnj18" is discouraged (58 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
 New usage of "cba" is discouraged (85 uses).
 New usage of "cbncms" is discouraged (5 uses).
-New usage of "cbv3hvOLD" is discouraged (0 uses).
-New usage of "cbv3hvOLDOLD" is discouraged (0 uses).
 New usage of "cbval2vOLD" is discouraged (0 uses).
 New usage of "cbvaldvaOLD" is discouraged (0 uses).
 New usage of "cbvalvOLD" is discouraged (0 uses).
@@ -15456,6 +15445,8 @@ New usage of "elintgOLD" is discouraged (0 uses).
 New usage of "ellnfn" is discouraged (5 uses).
 New usage of "ellnop" is discouraged (9 uses).
 New usage of "elmptrab2OLD" is discouraged (0 uses).
+New usage of "elneldisjOLD" is discouraged (0 uses).
+New usage of "elnelunOLD" is discouraged (0 uses).
 New usage of "elni" is discouraged (7 uses).
 New usage of "elni2" is discouraged (7 uses).
 New usage of "elnlfn" is discouraged (4 uses).
@@ -15491,7 +15482,6 @@ New usage of "elspansn4" is discouraged (1 uses).
 New usage of "elspansn5" is discouraged (2 uses).
 New usage of "elspansncl" is discouraged (1 uses).
 New usage of "elspansni" is discouraged (2 uses).
-New usage of "elss2prOLD" is discouraged (0 uses).
 New usage of "elunirnALT" is discouraged (0 uses).
 New usage of "elunop" is discouraged (7 uses).
 New usage of "elunop2" is discouraged (0 uses).
@@ -15608,7 +15598,9 @@ New usage of "fnexALT" is discouraged (0 uses).
 New usage of "foco2OLD" is discouraged (0 uses).
 New usage of "fprodcom2OLD" is discouraged (0 uses).
 New usage of "fsumcom2OLD" is discouraged (0 uses).
+New usage of "fsummsnunzOLD" is discouraged (0 uses).
 New usage of "fsumshftdOLD" is discouraged (0 uses).
+New usage of "fsumsplitsnunOLD" is discouraged (0 uses).
 New usage of "fsuppmapnn0fiubOLD" is discouraged (0 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
@@ -18207,7 +18199,6 @@ Proof modification of "19.3OLD" is discouraged (12 steps).
 Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
 Proof modification of "19.43OLD" is discouraged (72 steps).
-Proof modification of "19.8aOLD" is discouraged (47 steps).
 Proof modification of "19.9OLD" is discouraged (13 steps).
 Proof modification of "19.9dOLD" is discouraged (27 steps).
 Proof modification of "19.9hOLD" is discouraged (7 steps).
@@ -18443,7 +18434,7 @@ Proof modification of "bj-axc10v" is discouraged (37 steps).
 Proof modification of "bj-axc11nv" is discouraged (5 steps).
 Proof modification of "bj-axc11v" is discouraged (14 steps).
 Proof modification of "bj-axc14" is discouraged (35 steps).
-Proof modification of "bj-axc14nf" is discouraged (31 steps).
+Proof modification of "bj-axc14nf" is discouraged (28 steps).
 Proof modification of "bj-axc16b" is discouraged (14 steps).
 Proof modification of "bj-axc16g16" is discouraged (25 steps).
 Proof modification of "bj-axc4" is discouraged (15 steps).
@@ -18525,8 +18516,6 @@ Proof modification of "bj-dvelimdv1" is discouraged (63 steps).
 Proof modification of "bj-dvelimv" is discouraged (28 steps).
 Proof modification of "bj-eeanvw" is discouraged (32 steps).
 Proof modification of "bj-el" is discouraged (48 steps).
-Proof modification of "bj-eleq1w" is discouraged (51 steps).
-Proof modification of "bj-eleq2w" is discouraged (51 steps).
 Proof modification of "bj-elisset" is discouraged (24 steps).
 Proof modification of "bj-elissetv" is discouraged (25 steps).
 Proof modification of "bj-equs45fv" is discouraged (43 steps).
@@ -18569,8 +18558,7 @@ Proof modification of "bj-nfcjust" is discouraged (29 steps).
 Proof modification of "bj-nfcri" is discouraged (11 steps).
 Proof modification of "bj-nfcrii" is discouraged (23 steps).
 Proof modification of "bj-nfcsym" is discouraged (38 steps).
-Proof modification of "bj-nfdiOLD" is discouraged (26 steps).
-Proof modification of "bj-nfeel2" is discouraged (20 steps).
+Proof modification of "bj-nfeel2" is discouraged (17 steps).
 Proof modification of "bj-nfnfc" is discouraged (30 steps).
 Proof modification of "bj-nfs1" is discouraged (16 steps).
 Proof modification of "bj-nfs1v" is discouraged (10 steps).
@@ -18609,7 +18597,6 @@ Proof modification of "bj-sbftv" is discouraged (37 steps).
 Proof modification of "bj-sbfv" is discouraged (15 steps).
 Proof modification of "bj-sbfvv" is discouraged (32 steps).
 Proof modification of "bj-sbidmOLD" is discouraged (41 steps).
-Proof modification of "bj-sbieOLD" is discouraged (47 steps).
 Proof modification of "bj-sbtv" is discouraged (12 steps).
 Proof modification of "bj-spcimdv" is discouraged (56 steps).
 Proof modification of "bj-spcimdvv" is discouraged (56 steps).
@@ -18652,8 +18639,6 @@ Proof modification of "brfi1indOLD" is discouraged (48 steps).
 Proof modification of "brfi1uzindOLD" is discouraged (244 steps).
 Proof modification of "brfvidRP" is discouraged (92 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
-Proof modification of "cbv3hvOLD" is discouraged (37 steps).
-Proof modification of "cbv3hvOLDOLD" is discouraged (52 steps).
 Proof modification of "cbval2vOLD" is discouraged (20 steps).
 Proof modification of "cbvaldvaOLD" is discouraged (22 steps).
 Proof modification of "cbvalvOLD" is discouraged (12 steps).
@@ -18979,12 +18964,13 @@ Proof modification of "eliminable3a" is discouraged (7 steps).
 Proof modification of "eliminable3b" is discouraged (8 steps).
 Proof modification of "elintgOLD" is discouraged (47 steps).
 Proof modification of "elmptrab2OLD" is discouraged (73 steps).
+Proof modification of "elneldisjOLD" is discouraged (53 steps).
+Proof modification of "elnelunOLD" is discouraged (53 steps).
 Proof modification of "elopOLD" is discouraged (35 steps).
 Proof modification of "elpr2OLD" is discouraged (59 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
 Proof modification of "elsnxpOLD" is discouraged (203 steps).
-Proof modification of "elss2prOLD" is discouraged (57 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "elwlimOLD" is discouraged (90 steps).
 Proof modification of "elxp2OLD" is discouraged (82 steps).
@@ -19224,7 +19210,9 @@ Proof modification of "frege96" is discouraged (39 steps).
 Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
 Proof modification of "fsumcom2OLD" is discouraged (1241 steps).
+Proof modification of "fsummsnunzOLD" is discouraged (91 steps).
 Proof modification of "fsumshftdOLD" is discouraged (217 steps).
+Proof modification of "fsumsplitsnunOLD" is discouraged (239 steps).
 Proof modification of "fsuppmapnn0fiubOLD" is discouraged (421 steps).
 Proof modification of "funcnvmptOLD" is discouraged (291 steps).
 Proof modification of "funcnvqpOLD" is discouraged (249 steps).

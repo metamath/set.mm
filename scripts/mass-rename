@@ -165,7 +165,7 @@ if [ "$rewrap" = 'true' ]; then
 fi
 
 # Rewrap, then verify database to ensure that it's okay
-metamath "read $mmfile" 'verify proof *' 'verify markup *' quit
+metamath "read $mmfile" 'verify proof *' 'verify markup * /top_date_skip' quit
 
 echo 'File ,dated-renames has all the dates + renames listed above' >&2
 echo 'Reminder: You may need to hand-wrap $a / $p / $e expressions.' >&2

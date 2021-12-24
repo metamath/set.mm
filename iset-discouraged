@@ -131,32 +131,9 @@
 "nnindnn" is used by "nntopi".
 "opelopabsbALT" is used by "cnvopab".
 "opelopabsbALT" is used by "inopab".
-"opexgOLD" is used by "elxp4".
-"opexgOLD" is used by "elxp5".
-"opexgOLD" is used by "fliftel".
-"opexgOLD" is used by "fvsn".
-"opexgOLD" is used by "op2ndb".
-"opexgOLD" is used by "opbrop".
-"opexgOLD" is used by "opeliunxp".
-"opexgOLD" is used by "opswapg".
-"opexgOLD" is used by "otth2".
-"opexgOLD" is used by "relsnop".
-"opexgOLD" is used by "resfunexg".
 "peano1nnnn" is used by "nnindnn".
 "peano2nnnn" is used by "nnindnn".
 "peano5nnnn" is used by "nnindnn".
-"prexgOLD" is used by "op1stb".
-"prexgOLD" is used by "op1stbg".
-"prexgOLD" is used by "opeqpr".
-"prexgOLD" is used by "opeqsn".
-"prexgOLD" is used by "opexgOLD".
-"prexgOLD" is used by "opi2".
-"prexgOLD" is used by "opth".
-"prexgOLD" is used by "opthreg".
-"prexgOLD" is used by "prelpwi".
-"prexgOLD" is used by "relop".
-"prexgOLD" is used by "unex".
-"prexgOLD" is used by "uniop".
 "rdgivallem" is used by "rdgival".
 "rdgivallem" is used by "rdgon".
 "reapti" is used by "apreap".
@@ -166,8 +143,6 @@
 "reapval" is used by "reaplt".
 "reapval" is used by "reapti".
 "reapval" is used by "recexre".
-"rexsnsOLD" is used by "r19.12sn".
-"rexsnsOLD" is used by "rexsng".
 "sbiedh" is used by "sbcomxyyz".
 "sbiedh" is used by "sbied".
 "sbiedh" is used by "sbieh".
@@ -178,33 +153,6 @@
 "sbieh" is used by "sbco2vlem".
 "sbieh" is used by "sbco2yz".
 "sbieh" is used by "sbie".
-"snexgOLD" is used by "1stvalg".
-"snexgOLD" is used by "2ndvalg".
-"snexgOLD" is used by "dtruex".
-"snexgOLD" is used by "elxp4".
-"snexgOLD" is used by "elxp5".
-"snexgOLD" is used by "euabex".
-"snexgOLD" is used by "exss".
-"snexgOLD" is used by "fo1st".
-"snexgOLD" is used by "fo2nd".
-"snexgOLD" is used by "funopg".
-"snexgOLD" is used by "intid".
-"snexgOLD" is used by "mss".
-"snexgOLD" is used by "op1stb".
-"snexgOLD" is used by "op1stbg".
-"snexgOLD" is used by "opeqpr".
-"snexgOLD" is used by "opeqsn".
-"snexgOLD" is used by "opexgOLD".
-"snexgOLD" is used by "opi1".
-"snexgOLD" is used by "opm".
-"snexgOLD" is used by "relop".
-"snexgOLD" is used by "rext".
-"snexgOLD" is used by "snelpw".
-"snexgOLD" is used by "snelpwi".
-"snexgOLD" is used by "snnex".
-"snexgOLD" is used by "sspwb".
-"snexgOLD" is used by "sucexb".
-"snexgOLD" is used by "uniop".
 "spimh" is used by "spim".
 "spimth" is used by "equveli".
 New usage of "0cnALT" is discouraged (0 uses).
@@ -214,7 +162,6 @@ New usage of "19.21ht" is discouraged (2 uses).
 New usage of "19.41h" is discouraged (5 uses).
 New usage of "19.42h" is discouraged (1 uses).
 New usage of "19.9hd" is discouraged (2 uses).
-New usage of "2eluzge0OLD" is discouraged (0 uses).
 New usage of "4syl" is discouraged (13 uses).
 New usage of "a9evsep" is discouraged (1 uses).
 New usage of "addmodlteqALT" is discouraged (0 uses).
@@ -300,8 +247,6 @@ New usage of "df-tru" is discouraged (1 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
-New usage of "elfz0addOLD" is discouraged (0 uses).
-New usage of "elfzmlbmOLD" is discouraged (0 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "fnexALT" is discouraged (0 uses).
@@ -313,22 +258,17 @@ New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnindnn" is discouraged (1 uses).
 New usage of "opelopabsbALT" is discouraged (2 uses).
-New usage of "opexgOLD" is discouraged (11 uses).
 New usage of "peano1nnnn" is discouraged (1 uses).
 New usage of "peano2nnnn" is discouraged (1 uses).
 New usage of "peano5nnnn" is discouraged (1 uses).
-New usage of "peano5setOLD" is discouraged (0 uses).
-New usage of "prexgOLD" is discouraged (12 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rdgivallem" is discouraged (2 uses).
 New usage of "reapti" is discouraged (3 uses).
 New usage of "reapval" is discouraged (4 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
-New usage of "rexsnsOLD" is discouraged (2 uses).
 New usage of "ruALT" is discouraged (0 uses).
 New usage of "sbiedh" is discouraged (3 uses).
 New usage of "sbieh" is discouraged (7 uses).
-New usage of "snexgOLD" is discouraged (27 uses).
 New usage of "spimeh" is discouraged (0 uses).
 New usage of "spimh" is discouraged (1 uses).
 New usage of "spimth" is discouraged (1 uses).
@@ -336,12 +276,10 @@ New usage of "stoic2a" is discouraged (0 uses).
 New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
 New usage of "trintssmOLD" is discouraged (0 uses).
-New usage of "truanOLD" is discouraged (0 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
-Proof modification of "2eluzge0OLD" is discouraged (22 steps).
 Proof modification of "a9evsep" is discouraged (63 steps).
 Proof modification of "addmodlteqALT" is discouraged (237 steps).
 Proof modification of "ax16ALT" is discouraged (20 steps).
@@ -433,8 +371,6 @@ Proof modification of "bj-zfpair2" is discouraged (80 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dvelimALT" is discouraged (158 steps).
-Proof modification of "elfz0addOLD" is discouraged (94 steps).
-Proof modification of "elfzmlbmOLD" is discouraged (203 steps).
 Proof modification of "findset" is discouraged (96 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "idALT" is discouraged (26 steps).
@@ -442,20 +378,14 @@ Proof modification of "idref" is discouraged (94 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
-Proof modification of "opexgOLD" is discouraged (51 steps).
 Proof modification of "peano5set" is discouraged (60 steps).
-Proof modification of "peano5setOLD" is discouraged (192 steps).
-Proof modification of "prexgOLD" is discouraged (65 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
-Proof modification of "rexsnsOLD" is discouraged (55 steps).
 Proof modification of "ruALT" is discouraged (35 steps).
 Proof modification of "sbc8g" is discouraged (55 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
-Proof modification of "snexgOLD" is discouraged (27 steps).
 Proof modification of "speano5" is discouraged (50 steps).
 Proof modification of "strcollnfALT" is discouraged (79 steps).
 Proof modification of "trintssmOLD" is discouraged (67 steps).
-Proof modification of "truanOLD" is discouraged (13 steps).
 Proof modification of "uzind4ALT" is discouraged (16 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).

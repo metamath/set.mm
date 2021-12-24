@@ -1379,18 +1379,28 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>df-pss and all proper subclass theorems</TD>
+  <TD><I>none</I></TD>
+  <TD>In set.mm, "A is a proper subclass of B" is defined to be
+  ` ( A C_ B /\ A =/= B ) ` and this definition is almost always used in
+  conjunction with excluded middle. A more natural definition
+  might be ` ( A C_ B /\ E. x x e. ( B \ A ) )` , if we need proper subclass
+  at all.</TD>
+</TR>
+
+<TR>
   <TD>nss</TD>
   <TD>~ nssr</TD>
 </TR>
 
 <TR>
-<TD>sspss</TD>
-<TD>~ sspssr </TD>
+  <TD>ddif</TD>
+  <TD>~ ddifnel , ~ ddifss</TD>
 </TR>
 
 <TR>
-  <TD>ddif</TD>
-  <TD>~ ddifnel , ~ ddifss</TD>
+  <TD>dfss4</TD>
+  <TD>~ ssddif</TD>
 </TR>
 
 <TR>
@@ -2258,7 +2268,13 @@ fair bit of intuitionizing.</TD>
 <TR>
 <TD>ssonprc</TD>
 <TD><I>none</I></TD>
-<TD>not provable (we conjecture), but interesting enough to intuitionize anyway. ` U. A = On -> A e/ V ` is provable, and ` ( B e. On /\ U. A C_ B ) -> A e. V ` is provable. (Why isn't ~ df-pss stated so that the set difference is inhabited? If so, you could prove ` U. A C. On -> A e. V `.)</TD>
+<TD>not provable (we conjecture), but interesting enough to intuitionize
+anyway. ` U. A = On -> A e/ V ` is provable, and
+` ( B e. On /\ U. A C_ B ) -> A e. V ` is provable.
+(One thing we presumably could prove is
+` ( U. A C_ On /\ E. x x e. ( On \ U. A ) ) -> A e. V `
+which might be easier to understand if we define (or think of) proper subset
+as meaning that the set difference is inhabited.)</TD>
 </TR>
 
 <TR>
@@ -2926,6 +2942,19 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
+  <TD>frfi</TD>
+  <TD><I>none</I></TD>
+  <TD>Not known whether this can be proved (either with the current
+  ~ df-frind or any other possible concept analogous to ` Fr ` ).</TD>
+</TR>
+
+<TR>
+  <TD>fimax2g , fimaxg</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on frfi and fri</TD>
+</TR>
+
+<TR>
   <TD>unfi</TD>
   <TD><I>none</I></TD>
   <TD>Not provable according to Remark 8.1.17 of [AczelRathjen].</TD>
@@ -3036,6 +3065,110 @@ this implies excluded middle</TD>
 <TR>
   <TD>supiso</TD>
   <TD>~ supisoti</TD>
+</TR>
+
+<TR>
+  <TD>infexd , infex</TD>
+  <TD><I>none</I></TD>
+  <TD>See supexd</TD>
+</TR>
+
+<TR>
+  <TD>eqinf , eqinfd</TD>
+  <TD>~ eqinfti , ~ eqinftid</TD>
+</TR>
+
+<TR>
+  <TD>infval</TD>
+  <TD>~ infvalti</TD>
+</TR>
+
+<TR>
+  <TD>infcllem</TD>
+  <TD>~ cnvinfex</TD>
+  <TD>infcllem has an unnecessary hypothesis; other than that
+  these are the same</TD>
+</TR>
+
+<TR>
+  <TD>infcl</TD>
+  <TD>infclti</TD>
+</TR>
+
+<TR>
+  <TD>inflb</TD>
+  <TD>~ inflbti</TD>
+</TR>
+
+<TR>
+  <TD>infglb</TD>
+  <TD>~ infglbti</TD>
+</TR>
+
+<TR>
+  <TD>infglbb</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable with additional conditions (see suplub2)</TD>
+</TR>
+
+<TR>
+  <TD>infnlb</TD>
+  <TD>~ infnlbti</TD>
+</TR>
+
+<TR>
+  <TD>infmin</TD>
+  <TD>~ infminti</TD>
+</TR>
+
+<TR>
+  <TD>infmo</TD>
+  <TD>~ infmoti</TD>
+</TR>
+
+<TR>
+  <TD>infeu</TD>
+  <TD>~ infeuti</TD>
+</TR>
+
+<TR>
+  <TD>fimin2g , fiming</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on frfi and fri</TD>
+</TR>
+
+<TR>
+  <TR>fiinfg , fiinf2g</TR>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fiming</TD>
+</TR>
+
+<TR>
+  <TD>fiinfcl</TD>
+  <TD><I>none</I></TD>
+  <TD>See fisupcl</TD>
+</TR>
+
+<TR>
+  <TD>infltoreq</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof depends on supgtoreq and fiinfcl</TD>
+</TR>
+
+<TR>
+  <TD>infpr</TD>
+  <TD><I>none</I></TD>
+  <TD>See suppr</TD>
+</TR>
+
+<TR>
+  <TD>infsn</TD>
+  <TD>~ infsnti</TD>
+</TR>
+
+<TR>
+  <TD>infiso</TD>
+  <TD>~ infisoti</TD>
 </TR>
 
 <TR>
