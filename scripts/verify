@@ -27,7 +27,7 @@ done
 mmfile="${1:-'set.mm'}"
 
 if [ "$verify_markup" = true ] ; then
-  inner_commands="${inner_commands}${NL}verify markup \"${top_date_skip}\""
+  inner_commands="${inner_commands}${NL}verify markup *${top_date_skip}"
 fi
 
 if [ -n "$extra" ] ; then
@@ -38,8 +38,9 @@ fi
 # "extra" commands (since they can be blank).
 run_verify () {
   metamath << COMMANDS
-read ${mmfile}
+set echo on
 set scroll continuous
+read ${mmfile}
 ${inner_commands}
 quit
 COMMANDS
