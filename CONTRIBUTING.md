@@ -49,8 +49,8 @@ you'll basically create a "pull request" on GitHub to request
 merging of some change(s) into the corresponding Git repository.
 **Warning**: Changes are made to the **develop** branch.
 The Wiki page
-[Getting started with contributing](https://github.com/metamath/set.mm/wiki/Getting-started-with-contributing) will walk you the process of contributing
-a final proof once you have one.
+[Getting started with contributing](https://github.com/metamath/set.mm/wiki/Getting-started-with-contributing)
+will walk you through the process of contributing a final proof once you have one.
 
 **NOTE**: Any proposed contribution must be licensed under the
 [Creative Commons 0 (CC0) License](LICENSE), so any proposed contribution
