@@ -97,7 +97,8 @@ We're a friendly community, and we would love to have more collaborators!
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on
 how to create a contribution, as well as how contributions are evaluated
-to decide if they will be merged in.
+to decide if they will be merged in. That file also has some ways to contact
+us if you'd like help contributing.
 
 ## Credits and a memorium
 
