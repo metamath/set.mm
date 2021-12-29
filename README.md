@@ -76,6 +76,9 @@ in (approximate) decreasing size, are:
 * "[demo0.mm](./demo0.mm)" - a simple formal system used as a demonstration in
   Chapter 2 of the Metamath book.
 
+Feel free to also look at this
+[list of other Metamath databases](./OTHER-DATABASES.md).
+
 ## How are the databases verified?
 
 We work to provide *extremely* high confidence that the
