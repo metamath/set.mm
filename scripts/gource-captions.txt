@@ -16,10 +16,10 @@
 1995-07-14|1995-07-14 Article: Norman Megill, "A Finitely Axiomatized Formalization of Predicate Calculus with Equality"
 1996-02-22|1996-02-22 Definition: Set of complex numbers (df-c)
 1996-07-18|1996-07-18 Axiom: ZFC Axiom of Choice (ax-ac)
-1997-01-21|1997-01-21 Proof: Archimedian Property for Reals (arch, Norman Megill)
+1997-01-21|1997-01-21 Proof: Archimedean Property for Reals (arch, Norman Megill)
 1997-04-06|1997-04-06 Proof: Zorn's Lemma (zorn2, Norman Megill)
 1998-03-28|1998-03-28 Definitions: Equinumerosity (df-en) and dominance (df-dom)
-1998-06-08|1998-06-08 Proof: Schroeder-Bernstein Theorem (sbth, Norman Megill), Metamath 100 #25
+1998-06-08|1998-06-08 Proof: Schröder–Bernstein Theorem (sbth, Norman Megill), Metamath 100 #25
 1999-05-15|1999-05-15 Proof: Weak Deduction Theorem (dedth, Norman Megill)
 1999-05-27|1999-05-27 Proof: 2+2=4 (2p2e4, Norman Megill)
 1999-09-05|1999-09-05 Contributor: First external contributor (David Harvey)
@@ -35,14 +35,14 @@
 2006-03-01|2006-03-01 Book: Freek Wiedijk et al, "The Seventeen Provers of the World" (including Metamath), ISBN 9783540307044
 2006-11-10|2006-11-10 Proof: De Moivre's Theorem (demoivreALT, Steve Rodriguez), Metamath 100 #17
 2006-11-16|2006-11-16 Proof: Sum of an arithmetic series (arisum, Frédéric Liné), Metamath 100 #68
-2007-03-18|2007-03-18 Axiom: Tarski-Grothendieck Axiom (ax-groth)
-2008-01-12|2008-01-12 Proof: Cauchy-Schwarz Inequality (sii, Norman Megill), Metamath 100 #78
+2007-03-18|2007-03-18 Axiom: Tarski–Grothendieck Axiom (ax-groth)
+2008-01-12|2008-01-12 Proof: Cauchy–Schwarz Inequality (sii, Norman Megill), Metamath 100 #78
 2008-01-22|2008-01-22 Proof: Intermediate Value Theorem (ivth, Paul Chapman), Metamath 100 #79
 2008-04-17|2008-04-17 Proof: Pythagorean Theorem (pythi, Norman Megill), Metamath 100 #4
 2008-07-25|2008-07-25 Book: Norman Megill, "Metamath: A Computer Language for Pure Mathematics"
 2009-11-02|2009-11-02 Definition: Magma (df-mgm, Frédéric Liné)
 2010-10-22|2010-10-22 Definitions: True (df-tru) and False (df-fal) constants (Anthony Hart)
-2011-03-31|2011-03-31 Proof: eucalgval - Greatest Common Divisor Algorithm (eucalgval, Paul Chapman), Metamath 100 #69 (tied PVS)
+2011-03-31|2011-03-31 Proof: Greatest Common Divisor Algorithm (eucalgval, Paul Chapman), Metamath 100 #69 (tied PVS)
 2012-05-12|2012-05-12 Contributor: Mario Carneiro begins contributing
 2012-06-14|2012-06-14 Article: Eric Schmidt, "Reductions in Norman Megill's axiom system for complex numbers"
 2012-11-17|2012-11-17 Proof: Fundamental Theorem of Arithmetic (1arith2, Paul Chapman), Metamath 100 #80 (tied ACL2)
@@ -70,7 +70,7 @@
 2018-08-14|2018-08-14 Proof: Euler's Partition Theorem (eulerpart, Thierry Arnoux), Metamath 100 #45
 2018-10-09|2018-10-09 Proof: Friendship Theorem (friendship, Alexander van der Vekens), Metamath 100 #83
 2019-02-21|2019-02-21 Proof: Cramer's Rule (cramer, Alexander van der Vekens), Metamath 100 #97
-2019-03-10|2019-03-10 Proof: Cayley-Hamilton Theorem (cayley, Alexander van der Vekens), Metamath 100 #49
+2019-03-10|2019-03-10 Proof: Cayley–Hamilton Theorem (cayley, Alexander van der Vekens), Metamath 100 #49
 2019-03-10|2019-03-10 Proof: Heron's Formula (heron, Mario Carneiro), Metamath 100 #57
 2019-06-02|2019-06-02 Book: Norman Megill and David A. Wheeler, "Metamath: A Computer Language for Mathematical Proofs"
 2019-09-26|2019-09-26 Visualization: First Gource visualization of set.mm (David A. Wheeler)
