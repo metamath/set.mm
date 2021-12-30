@@ -76,6 +76,9 @@ in (approximate) decreasing size, are:
 * "[demo0.mm](./demo0.mm)" - a simple formal system used as a demonstration in
   Chapter 2 of the Metamath book.
 
+Feel free to also look at this
+[list of other Metamath databases](./other-databases.md).
+
 ## How are the databases verified?
 
 We work to provide *extremely* high confidence that the
@@ -89,7 +92,7 @@ set.mm and iset.mm is verified by many independent verifiers,
 including metamath-exe, which also checks markup, and mmj2, which
 checks definition soundness. All other databases' proofs are verified
 by one verifier (metamath-exe) in every commit.
-For more information, see [VERIFIERS.md](./VERIFIERS.md).
+For more information, see [VERIFIERS.md](./verifiers.md).
 
 ## How can I contribute? How are contributions evaluated?
 
@@ -97,7 +100,8 @@ We're a friendly community, and we would love to have more collaborators!
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on
 how to create a contribution, as well as how contributions are evaluated
-to decide if they will be merged in.
+to decide if they will be merged in. That file also has some ways to contact
+us if you'd like help contributing.
 
 ## Credits and a memorium
 
