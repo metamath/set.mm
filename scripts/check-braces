@@ -40,8 +40,8 @@
 # braces are ignored in comments.
 
 BEGIN { i = 0; c = 0 }
-/\$\(/ { ++c }
-/\$\)/ { --c }
+/\$\(/ { c += gsub(/\$\(/, "") }
+/\$\)/ { c -= gsub(/\$\)/, "") }
 /\$\{/ { if (c == 0) scope[++i] = NR }
 /\$\}/ { if (c == 0 && scope[i] != 0) print(scope[i]); delete scope[i] }
 /\$[cdefv]/ { scope[i] = 0 }
