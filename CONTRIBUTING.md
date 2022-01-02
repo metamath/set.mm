@@ -216,6 +216,8 @@ Please propose a change to this file if you want to be an area maintainer.
 
 * Mario Carneiro (@digama0): Any part of set.mm or iset.mm
 
+* Benoit Jubin (@benjub): set.mm and the CZF part of iset.mm
+
 * Jim Kingdon (@jkingdon): iset.mm, df-tau
 
 ## For more information
