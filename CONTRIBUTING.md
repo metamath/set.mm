@@ -58,12 +58,17 @@ is automatically licensed as such.
 
 ## Formatting recommendation prior to submitting a pull request
 
-Periodically we rewrap set.mm to help conform to its formatting conventions.
-This may affect your mathbox (your local sandbox)
-if you submitted it without rewrapping, possibly
-causing merge conflicts with your work in progress.
+On pull requests we check that set.mm and iset.mm have been rewrapped to
+help conform to their formatting conventions.
 
-Here is the procedure recommended prior to submitting a pull request:
+Locally you will need to run `scripts/rewrap set.mm` to avoid failing this
+check.
+
+If you prefer to run metamath yourself rather than via `scripts/rewrap`,
+the following commands should do the same thing, and/or help you detect
+other problems before submission. But if you want you can just leave it up to
+the automated verification checks and worry about rewrapping and the
+others if and when something fails.
 
 <PRE>
 ./metamath
