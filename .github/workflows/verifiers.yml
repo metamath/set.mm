@@ -120,12 +120,12 @@ jobs:
       # We'd probably rather have a bot push up a commit with the rewrapping
       # when a pull request is submitted, but until we set that up,
       # at least check that the rewrapping has been done.
-      - run: cp set.mm set-unwrapped.mm
-      - run: scripts/rewrap set.mm
-      - run: echo 'Checking for set.mm rewrapping:' && diff -U 0 set-unwrapped.mm set.mm
-      - run: cp iset.mm iset-unwrapped.mm
-      - run: scripts/rewrap iset.mm
-      - run: echo 'Checking for iset.mm rewrapping:' && diff -U 0 iset-unwrapped.mm iset.mm
+      - run: cp set.mm set-wrapped.mm
+      - run: scripts/rewrap set-wrapped.mm
+      - run: echo 'Checking for set.mm rewrapping:' && diff -U 0 set.mm set-wrapped.mm
+      - run: cp iset.mm iset-wrapped.mm
+      - run: scripts/rewrap iset-wrapped.mm
+      - run: echo 'Checking for iset.mm rewrapping:' && diff -U 0 iset.mm iset-wrapped.mm
       # The following checks are arbitrarily included in the metamath job.
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
