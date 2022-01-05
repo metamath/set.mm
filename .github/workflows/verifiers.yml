@@ -116,6 +116,16 @@ jobs:
       - run: scripts/regen-from-raw --force '/ALT_HTML' .regened.html
       - run: mkdir -p mpeuni-html/
       - run: for f in *.regened.html; do mv $f mpeuni-html/${f%.regened.html}.html ; done
+      # Check that set.mm and iset.mm have been rewrapped.
+      # We'd probably rather have a bot push up a commit with the rewrapping
+      # when a pull request is submitted, but until we set that up,
+      # at least check that the rewrapping has been done.
+      - run: cp set.mm set-wrapped.mm
+      - run: scripts/rewrap set-wrapped.mm
+      - run: echo 'Checking for set.mm rewrapping:' && diff -U 0 set.mm set-wrapped.mm
+      - run: cp iset.mm iset-wrapped.mm
+      - run: scripts/rewrap iset-wrapped.mm
+      - run: echo 'Checking for iset.mm rewrapping:' && diff -U 0 iset.mm iset-wrapped.mm
       # The following checks are arbitrarily included in the metamath job.
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
