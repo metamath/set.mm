@@ -47,32 +47,7 @@ $i wff ka $: <mi mathcolor=#008> &kappa; </mi> $.
 
 
 $( Set variables, first declared as class $)
-$i class a $: <mi mathcolor=#800>a</mi> $.
-$i class b $: <mi mathcolor=#800>b</mi> $.
-$i class c $: <mi mathcolor=#800>c</mi> $.
-$i class d $: <mi mathcolor=#800>d</mi> $.
-$i class e $: <mi mathcolor=#800>e</mi> $.
-$i class f $: <mi mathcolor=#800>f</mi> $.
-$i class g $: <mi mathcolor=#800>g</mi> $.
-$i class h $: <mi mathcolor=#800>h</mi> $.
-$i class i $: <mi mathcolor=#800>i</mi> $.
-$i class j $: <mi mathcolor=#800>j</mi> $.
-$i class k $: <mi mathcolor=#800>k</mi> $.
-$i class l $: <mi mathcolor=#800>l</mi> $.
-$i class m $: <mi mathcolor=#800>m</mi> $.
-$i class n $: <mi mathcolor=#800>n</mi> $.
-$i class o $: <mi mathcolor=#800>o</mi> $.
-$i class p $: <mi mathcolor=#800>p</mi> $.
-$i class q $: <mi mathcolor=#800>q</mi> $.
-$i class r $: <mi mathcolor=#800>r</mi> $.
-$i class s $: <mi mathcolor=#800>s</mi> $.
-$i class t $: <mi mathcolor=#800>t</mi> $.
-$i class u $: <mi mathcolor=#800>u</mi> $.
-$i class v $: <mi mathcolor=#800>v</mi> $.
-$i class w $: <mi mathcolor=#800>w</mi> $.
-$i class x $: <mi mathcolor=#800>x</mi> $.
-$i class y $: <mi mathcolor=#800>y</mi> $.
-$i class z $: <mi mathcolor=#800>z</mi> $.
+$s class x $: #x# $.
 
 $( Set variables $)
 $i setvar a $: <mi mathcolor=#800>a</mi> $.
@@ -969,6 +944,15 @@ $s class normOpOLD $: <msub href="df-nmoo.html"><mo>normOp</mo> <mi>OLD</mi></ms
 $s class CPreHilOLD $: <msub href="df-ph.html"><mo>CPreHil</mo> <mi>OLD</mi></msub> $.
 $s class CHilOLD $: <msub href="df-hlo.html"><mo>CHil</mo> <mi>OLD</mi></msub> $.
 
+$( M L $)
+$s class ( A ^^ B ) $: <mrow> #A# <mo href="df-finxp.html">&uarr;&uarr;</mo> #B# </mrow> $.
+
+
+$( Wolf Lammen $)
+$s wff x wl-el A $: <mrow> #A# <mo href="ax-wl-8cl.html">&isin;</mo> #B# </mrow> $.
+$s wff x wl-el2 A $: <mrow> #A# <mo href="df-wl-clelv2.html">&isin;</mo> #B# </mrow> $.
+
+
 $( Removed as part of FL'mathbox
 
 $s class <> $: <mi>&#9671;</mi> $.
@@ -1182,7 +1166,15 @@ $s class Hf $: <mi href="df-hf.html"> Hf </mi> $.
 $( Surreal Numbers $)
 $s class No $: <mi href="df-no.html">No</mi> $.
 $s class <s $: <msub href="df-slt.html"><mo>&lt;</mo> <mi>s</mi></msub> $.
+$s class <_s $: <msub href="df-sle.html"><mo>&le;</mo> <mi>s</mi></msub> $.
+$s class <<s $: <msub href="df-sslt.html"><mo>&#x226A;</mo> <mi>s</mi></msub> $.
+$s class |s $: <msub href="df-scut.html"><mo>|</mo> <mi>s</mi></msub> $.
 $s class bday $: <mi href="df-bday.html">bday</mi> $.
+$s class _M $: <mi href="df-made.html">M</mi> $.
+$s class _Old $: <mi href="df-old.html">Old</mi> $.
+$s class _N $: <mi href="df-new.html">N</mi> $.
+$s class _L $: <mi href="df-left.html">L</mi> $.
+$s class _R $: <mi href="df-right.html">R</mi> $.
 
 $s class pprod ( A , B ) $: <mrow> <mo>pprod</mo> <mfenced>#A# #B#</mfenced></mrow> $.
 $s class << A , B >> $: <mfenced href="df-altop" open="&#10218;" close="&#10219;">#A# #B#</mfenced> $.
@@ -1340,8 +1332,9 @@ $s class SMblFn $: <mi href="df-smblfn.html">SMblFn</mi> $.
 
 
 $( Alexander van der Vekens $)
+$s class e// $: <mi href="df-nelbr">&notin;</mi> $.
 $s class ~=c $: <msub href="df-cic.html"><mo>&#8771;</mo> <mi>&#x1D450;</mi></msub> $. 
-$s class F defAt A $: <mrow> #F# <mi href="df-dfat.html">defAt</mi> #A# </mrow> $.
+$s wff F defAt A $: <mrow> #F# <mi href="df-dfat.html">defAt</mi> #A# </mrow> $.
 $s class ( A ''' B ) $: <mfenced><mrow>#A# <mi href="df-afv.html">&#39&#39&#39</mi> #B#</mrow></mfenced> $.
 $s class (( A F B )) $: <mfenced open="((" close="))"><mrow>#A# #F# #B#</mrow></mfenced> $.
 $s class FriendGraph $: <mi href="df-frgr.html">FriendGraph</mi> $.
@@ -1395,8 +1388,6 @@ $s class tanh $: <mi href="df-tanh.html">tanh</mi> $.
 $s class sec $: <mi href="df-sec.html">sec</mi> $.
 $s class csc $: <mi href="df-csc.html">csc</mi> $.
 $s class cot $: <mi href="df-cot.html">cot</mi> $.
-$s class _ A B $: <mrow><mi mathcolor=#888>_</mi> #A# #B# </mrow> $.
-$s class . $: <mi href="df-dp.html">.</mi> $.
 $s class sgn $: <mi href="df-sgn.html">sgn</mi> $.
 $s class logb $: <mi href="df-logb.html">logb</mi> $.
 $s class log_ $: <mi href="df-log_.html">log_</mi> $.
@@ -1464,6 +1455,7 @@ $s class .cc $: <msub href="df-bj-mulc.html"><mo>&sdot;</mo> <mover><mi>&Copf;</
 $s class invc $: <msup href="df-bj-invc.html"><mo>&sdot;</mo> <mn>-1</mn></msup> $.
 $s class RRVec $: <mi href="df-bj-rrvec.html">&Ropf;Vec</mi> $.
 
+$s class Moore_ $: <munder href="df-bj-moore.html"><mi>Moore</mi> <mo>&#x5F;</mo></munder> $.
 $s class -Set-> $: <munder accentunder href="df-bj-fset.html"><mo>&xrarr;</mo><mo>Set</mo></munder> $.
 $s wff F e. ( A -Set-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-fset.html"><mo>&xrarr;</mo><mo>Set</mo></munder> #B# </mrow> $.
 $s class curry_ $: <mi href="df-bj-cur">curry_</mi> $.
@@ -1471,7 +1463,10 @@ $s class uncurry_ $: <mi href="df-bj-unc">uncurry_</mi> $.
 
 
 $s wff Prv ph $: <mrow><mo href="ax-prv1.html">Prv</mo> #ph#</mrow> $.
+$s wff F/ x e. A ph $:  <mrow> <mo href="df-bj-rnf.html">&#8498;</mo> #x# <mo>&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff [b x /b y ]b ph $: <mrow><mfenced open="[b" close="]b" separators="/b"> #y# #x# </mfenced> #ph# </mrow> $.
 $s wff if- ( ph , ps , ch ) $: <mrow> <mo href="df-bj-if.html">if-</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
+$s class elmtwise $: <mi href="df-elmtwise.html">elmtwise</mi> $.
 $s class ( A Proj B ) $: <mfenced><mrow>#A# <mo href="df-bj-proj.html">Proj</mo> #B#</mrow></mfenced> $.
 $s class (| A |) $: <mfenced open="&#x2985;" close="&#x2986;">#A#</mfenced> $.
 $s class FinSum $: <mo href="df-bj-finsum.html">FinSum</mo> $.
@@ -1623,10 +1618,13 @@ $s class-n 6 $: 6 $.
 $s class-n 7 $: 7 $.
 $s class-n 8 $: 8 $.
 $s class-n 9 $: 9 $.
-$s class -u N $: <mn> -#N# </mn> $.
-$s class-n ; M N $: <mn> #M##N# </mn> $.
-$s class-n ; ; M N I $: <mn> #M##N##I# </mn> $.
-$s class-n ; ; ; M N I J $: <mn> #M##N##I##J# </mn> $.
+$s class-n ; M N $: #M##N# $.
+$s class -u N $: -#N# $.
+$s class-n _ M N $: #M##N# $.
+$s class . $: <mi href="df-dp.html">.</mi> $.
+$s class-o ( M . N ) $: <mn>#M#<mi href="df-dp.html">.</mi>#N#</mn> $.
+$s class-n ( M . N ) $: <mn>#M#<mi href="df-dp.html">.</mi>#N#</mn> $.
+$s class ( M . N ) $: <mn>#M#<mi href="df-dp.html">.</mi>#N#</mn> $.
 
 $( Special constants $)
 $s class ( RR X. RR ) $: <msup> <mi> &Ropf; </mi> <mn>2</mn> </msup> $.
@@ -1712,7 +1710,7 @@ $s class oR R $: <mrow> <msub href="df-ofr.html"><mo>&compfn;</mo> <mi>r</mi></m
 $s class oFC R $: <mrow> <msub href="df-ofc.html"><mo>&compfn;</mo> <mi>fc</mi></msub> <mo>&ApplyFunction;</mo> #R# </mrow> $. $( was &fnof; $)
 $s class ( F oF R G ) $: <mfenced><mrow>#F# <msub>#R# <mi href="df-of.html">f</mi></msub> #G#</mrow></mfenced> $.
 $s class-o ( F oF R G ) $: <mrow>#F# <msub>#R# <mi href="df-of.html">f</mi></msub> #G#</mrow> $.
-$s class F oR R G $: <mrow>#F# <msub>#R# <mi href="df-ofr.html">f</mi></msub> #G#</mrow> $.
+$s wff F oR R G $: <mrow>#F# <msub>#R# <mi href="df-ofr.html">f</mi></msub> #G#</mrow> $.
 $s class ( F supp Z ) $: <mrow><msub><mo href="df-supp.html">supp</mo> #Z#</msub><mo>&ApplyFunction;</mo> <mfenced>#F#</mfenced> </mrow> $.
 $s wff F finSupp Z $: <mrow><msub><mo href="df-fsupp.html">finSupp</mo> #Z#</msub><mo>&ApplyFunction;</mo> <mfenced>#F#</mfenced> </mrow> $.
 
