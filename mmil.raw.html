@@ -2973,15 +2973,6 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
-  <TD>df-sup , df-inf , supcl , and other supremum theorems</TD>
-  <TD><I>none</I></TD>
-  <TD>There are many supremum theorems which run afoul of ~ regexmid ,
-  ~ reg2exmid , or the like. We have not yet done much development of
-  what may still be possible with supremums (with additional
-  conditions).</TD>
-</TR>
-
-<TR>
   <TD>enp1ilem , enp1i , en2 , en3 , en4</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on excluded middle and undif1</TD>
@@ -4472,29 +4463,45 @@ which makes this different from ~ nnregexmid .</TD>
 </TR>
 
 <TR>
-<TD>uzinfmi , nninfm , nn0infm , infmssuzle , infmssuzcl</TD>
-<TD><I>none</I></TD>
-<TD>We do not yet have a supremum notation, or most supremum theorems,
-in iset.mm</TD>
-</TR>
-
-<TR>
 <TD>negn0</TD>
 <TD>~ negm </TD>
 </TR>
 
 <TR>
-<TD>supminf</TD>
+<TD>uzinfi, nninf, nn0inf</TD>
 <TD><I>none</I></TD>
-<TD>We do not yet have a supremum notation, or most supremum theorems,
-in iset.mm</TD>
+<TD>Presumably provable</TD>
 </TR>
 
 <TR>
-<TD>zsupss , suprzcl2 , suprzub , uzsupss</TD>
+  <TD>infssuzle , infssuzcl</TD>
+  <TD><I>none</I></TD>
+  <TD>Would need additional conditions around the existence of
+  the infimum, for example along the lines of ~ zsupcl </TD>
+</TR>
+
+<TR>
+<TD>supminf</TD>
 <TD><I>none</I></TD>
-<TD>We do not yet have a supremum notation, or most supremum theorems,
-in iset.mm</TD>
+<TD>Probably could prove something like this, but the conditions
+around the existence of the supremum would need to change.</TD>
+</TR>
+
+<TR>
+  <TD>zsupss , suprzcl2</TD>
+  <TD>~ zsupcl , ~ zsssupcl</TD>
+</TR>
+
+<TR>
+<TD>suprzub</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could prove something like this with different conditions
+for the existence of the supremum.</TD>
+</TR>
+
+<TR>
+<TD>uzsupss</TD>
+<TD>~ zsupcl</TD>
 </TR>
 
 <TR>
@@ -6410,9 +6417,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>climsup</TD>
   <TD><I>none</I></TD>
-  <TD>To even show convergence would presumably require a hypothesis
-  related to the rate of convergence. Not to mention the lack of much
-  in the way of supremum notation or theorems in iset.mm.</TD>
+  <TD>To show convergence would presumably require a hypothesis
+  related to the rate of convergence.</TD>
 </TR>
 
 <TR>
