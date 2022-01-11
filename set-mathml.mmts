@@ -1619,7 +1619,7 @@ $s class-n 7 $: 7 $.
 $s class-n 8 $: 8 $.
 $s class-n 9 $: 9 $.
 $s class-n ; M N $: #M##N# $.
-$s class -u N $: -#N# $.
+$s class -u N $: <mn>-#N#</mn> $.
 $s class-n _ M N $: #M##N# $.
 $s class . $: <mi href="df-dp.html">.</mi> $.
 $s class-o ( M . N ) $: <mn>#M#<mi href="df-dp.html">.</mi>#N#</mn> $.
