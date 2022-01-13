@@ -13750,6 +13750,8 @@ New usage of "ax-pre-sup" is discouraged (1 uses).
 New usage of "ax-tgoldbachgtOLD" is discouraged (1 uses).
 New usage of "ax1" is discouraged (0 uses).
 New usage of "ax10fromc7" is discouraged (3 uses).
+New usage of "ax10w" is discouraged (0 uses).
+New usage of "ax11w" is discouraged (0 uses).
 New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12a2-o" is discouraged (0 uses).
 New usage of "ax12a2OLD" is discouraged (1 uses).
@@ -17817,6 +17819,7 @@ New usage of "sps-o" is discouraged (7 uses).
 New usage of "sq10OLD" is discouraged (1 uses).
 New usage of "sq10e99m1OLD" is discouraged (1 uses).
 New usage of "sqgt0sr" is discouraged (1 uses).
+New usage of "sqr2irrlemOLD" is discouraged (0 uses).
 New usage of "srhmsubcALTV" is discouraged (4 uses).
 New usage of "srhmsubcALTVlem1" is discouraged (2 uses).
 New usage of "srhmsubcALTVlem2" is discouraged (1 uses).
@@ -18522,7 +18525,6 @@ Proof modification of "bj-elissetv" is discouraged (25 steps).
 Proof modification of "bj-equs45fv" is discouraged (43 steps).
 Proof modification of "bj-equsal" is discouraged (31 steps).
 Proof modification of "bj-equsalhv" is discouraged (10 steps).
-Proof modification of "bj-equsalv" is discouraged (39 steps).
 Proof modification of "bj-equsb1v" is discouraged (17 steps).
 Proof modification of "bj-equsexval" is discouraged (38 steps).
 Proof modification of "bj-eunex" is discouraged (53 steps).
@@ -19719,6 +19721,7 @@ Proof modification of "spimvALT" is discouraged (9 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
 Proof modification of "sq10OLD" is discouraged (57 steps).
 Proof modification of "sq10e99m1OLD" is discouraged (25 steps).
+Proof modification of "sqr2irrlemOLD" is discouraged (288 steps).
 Proof modification of "ssdisjOLD" is discouraged (49 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "sseqin2OLD" is discouraged (3 steps).

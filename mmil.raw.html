@@ -1055,6 +1055,9 @@ pm2.61iii , pm2.61ian , pm2.61dan , pm2.61ddan , pm2.61dda , pm2.61ine , pm2.61n
 pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TD>
 <TD><I>none</I></TD>
+<TD>If the proposition being eliminated is decidable
+(for example due to ~ nndceq , ~ zdceq , ~ zdcle , ~ zdclt , ~ eluzdc , or ~ fzdcel ),
+then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan</TD>
 </TR>
 
 <TR>
@@ -1109,7 +1112,7 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 
 <TR>
 <TD>ianor</TD>
-<TD>~ pm3.14 </TD>
+<TD>~ pm3.14 , ~ ianordc</TD>
 </TR>
 
 <TR>
@@ -1485,7 +1488,7 @@ is double negation elimination.</TD>
 
 <TR>
 <TD>ifsb</TD>
-<TD><I>none</I></TD>
+<TD>~ ifsbdc</TD>
 </TR>
 
 <TR>
@@ -1498,6 +1501,11 @@ is double negation elimination.</TD>
 <TD>dfif5</TD>
 <TD><I>none</I></TD>
 <TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>ifeq1da</TD>
+  <TD>~ ifeq1dadc</TD>
 </TR>
 
 <TR>
@@ -1516,13 +1524,13 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
-<TD>ifeq1da, ifeq2da</TD>
+<TD>ifeq2da</TD>
 <TD><I>none</I></TD>
 </TR>
 
 <TR>
 <TD>ifclda</TD>
-<TD><I>none</I></TD>
+<TD>~ ifcldadc</TD>
 </TR>
 
 <TR>
@@ -2075,6 +2083,11 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
+  <TD>fvif</TD>
+  <TD>~ fvifdc</TD>
+</TR>
+
+<TR>
 <TD>ndmfv</TD>
 <TD>~ ndmfvg </TD>
 <TD>The ` -. A e. _V ` case is ~ fvprc .</TD>
@@ -2088,6 +2101,48 @@ and is evaluated at a set</TD>
 <TR>
 <TD>elfvex</TD>
 <TD>~ relelfvdm </TD>
+</TR>
+
+<TR>
+  <TD>fvmptss</TD>
+  <TD>~ fvmptssdm</TD>
+</TR>
+
+<TR>
+  <TD>fvmptex</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on case elimination</TD>
+</TR>
+
+<TR>
+  <TD>fvmptnf</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on case elimination</TD>
+</TR>
+
+<TR>
+  <TD>fvmptn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on case elimination</TD>
+</TR>
+
+<TR>
+  <TD>fvmptss2</TD>
+  <TD>~ fvmpt</TD>
+  <TD>What fvmptss2 adds is the cases where this is a proper class,
+  or we are out of the domain.</TD>
+</TR>
+
+<TR>
+  <TD>fvopab4ndm</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>fndmdifeq0</TD>
+  <TD><I>none</I></TD>
+  <TD>Although it seems like this might be intuitionizable, it is
+  lightly used in set.mm.</TD>
 </TR>
 
 <TR>
@@ -2918,15 +2973,6 @@ this implies excluded middle</TD>
 <TD>diffi</TD>
 <TD>~ diffisn , ~ diffifi</TD>
 <TD>diffi is not provable, as shown at ~ diffitest</TD>
-</TR>
-
-<TR>
-  <TD>df-sup , df-inf , supcl , and other supremum theorems</TD>
-  <TD><I>none</I></TD>
-  <TD>There are many supremum theorems which run afoul of ~ regexmid ,
-  ~ reg2exmid , or the like. We have not yet done much development of
-  what may still be possible with supremums (with additional
-  conditions).</TD>
 </TR>
 
 <TR>
@@ -4420,29 +4466,45 @@ which makes this different from ~ nnregexmid .</TD>
 </TR>
 
 <TR>
-<TD>uzinfmi , nninfm , nn0infm , infmssuzle , infmssuzcl</TD>
-<TD><I>none</I></TD>
-<TD>We do not yet have a supremum notation, or most supremum theorems,
-in iset.mm</TD>
-</TR>
-
-<TR>
 <TD>negn0</TD>
 <TD>~ negm </TD>
 </TR>
 
 <TR>
-<TD>supminf</TD>
+<TD>uzinfi, nninf, nn0inf</TD>
 <TD><I>none</I></TD>
-<TD>We do not yet have a supremum notation, or most supremum theorems,
-in iset.mm</TD>
+<TD>Presumably provable</TD>
 </TR>
 
 <TR>
-<TD>zsupss , suprzcl2 , suprzub , uzsupss</TD>
+  <TD>infssuzle , infssuzcl</TD>
+  <TD><I>none</I></TD>
+  <TD>Would need additional conditions around the existence of
+  the infimum, for example along the lines of ~ zsupcl </TD>
+</TR>
+
+<TR>
+<TD>supminf</TD>
 <TD><I>none</I></TD>
-<TD>We do not yet have a supremum notation, or most supremum theorems,
-in iset.mm</TD>
+<TD>Probably could prove something like this, but the conditions
+around the existence of the supremum would need to change.</TD>
+</TR>
+
+<TR>
+  <TD>zsupss , suprzcl2</TD>
+  <TD>~ zsupcl , ~ zsssupcl</TD>
+</TR>
+
+<TR>
+<TD>suprzub</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could prove something like this with different conditions
+for the existence of the supremum.</TD>
+</TR>
+
+<TR>
+<TD>uzsupss</TD>
+<TD>~ zsupcl</TD>
 </TR>
 
 <TR>
@@ -5355,7 +5417,7 @@ middle and iset.mm has few cardinality related theorems.</TD>
 <TR>
 <TD>uzindi</TD>
 <TD><I>none</I></TD>
-<TD>This could presumably be proved, perhaps from ~ uzind4 ,
+<TD>This could presumably be proved, perhaps from ~ uzsinds ,
 but is lightly used in set.mm</TD>
 </TR>
 
@@ -6358,9 +6420,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>climsup</TD>
   <TD><I>none</I></TD>
-  <TD>To even show convergence would presumably require a hypothesis
-  related to the rate of convergence. Not to mention the lack of much
-  in the way of supremum notation or theorems in iset.mm.</TD>
+  <TD>To show convergence would presumably require a hypothesis
+  related to the rate of convergence.</TD>
 </TR>
 
 <TR>
@@ -6510,6 +6571,12 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>~ ialgfx</TD>
   <TD>Two hypotheses are tweaked or added to reflect differences in how
   ` seq ` works</TD>
+</TR>
+
+<TR>
+  <TD>eucalg</TD>
+  <TD>~ eucialg</TD>
+  <TD>Tweaked for the different ` seq ` syntax</TD>
 </TR>
 
 </TABLE>
