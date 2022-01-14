@@ -1208,9 +1208,7 @@ $s class FullFun F $: <mrow><mi href="df-fullfun.html">&#x1D5A5;&#x1D5CE;&#x1D5C
 $s class UB A $: <mrow><mi href="df-ub.html">UB</mi> #A# </mrow> $.
 $s class LB A $: <mrow><mi href="df-lb.html">LB</mi> #A# </mrow> $.
 $s class wsuc ( R , O , P ) $: <mrow> <mo href="df-wsuc.html">wsuc</mo> <mfenced>#R# #O# #P#</mfenced></mrow> $.
-$s class wsucOLD ( R , O , P ) $: <mrow> <mo href="df-wsucOLD.html">wsucOLD</mo> <mfenced>#R# #O# #P#</mfenced></mrow> $.
 $s class WLim ( R , O ) $: <mrow> <mo href="df-wlim.html">WLim</mo> <mfenced>#R# #O#</mfenced></mrow> $.
-$s class WLimOLD ( R , O ) $: <mrow> <mo href="df-wlimOLD.html">WLimOLD</mo> <mfenced>#R# #O#</mfenced></mrow> $.
 
 $s class _|_P $: <msub href="df-polarityN.html"><mo>&perp;</mo> <mi>&#x1D443;</mi></msub> $. 
 $s class +P $: <msub href="df-padd.html"><mo>+</mo> <mi>&#x1D443;</mi></msub> $. 
