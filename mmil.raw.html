@@ -1382,6 +1382,11 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>2reuswap</TD>
+  <TD>~ 2reuswapdc</TD>
+</TR>
+
+<TR>
   <TD>df-pss and all proper subclass theorems</TD>
   <TD><I>none</I></TD>
   <TD>In set.mm, "A is a proper subclass of B" is defined to be
@@ -1688,6 +1693,12 @@ favor of theorems in deduction form.</TD>
 <TD>intabs</TD>
 <TD><I>none</I></TD>
 <TD>Lightly used in set.mm, and the set.mm proof is not intuitionistic</TD>
+</TR>
+
+<TR>
+  <TD>reuxfr2d , reuxfr2 , reuxfrd , reuxfr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof of reuxfr2d relies on 2reuswap</TD>
 </TR>
 
 <TR>
@@ -2198,7 +2209,8 @@ and is evaluated at a set</TD>
 <TR>
 <TD>riotaxfrd</TD>
 <TD><I>none</I></TD>
-<TD>Although it may be intuitionizable, it is lightly used in set.mm.</TD>
+<TD>Although it may be intuitionizable, it is lightly used in set.mm.
+The set.mm proof relies on reuxfrd .</TD>
 </TR>
 
 <TR>
@@ -4475,6 +4487,13 @@ favor of theorems in deduction form.</TD>
   <TD><I>none</I></TD>
   <TD>Presumably provable with suitable conditions for the existence
   of the supremums</TD>
+</TR>
+
+<TR>
+  <TD>riotaneg</TD>
+  <TD><I>none</I></TD>
+  <TD>The theorem is unused in set.mm and the set.mm proof
+  relies on reuxfrd</TD>
 </TR>
 
 <TR>
