@@ -17820,7 +17820,7 @@ New usage of "sps-o" is discouraged (7 uses).
 New usage of "sq10OLD" is discouraged (1 uses).
 New usage of "sq10e99m1OLD" is discouraged (1 uses).
 New usage of "sqgt0sr" is discouraged (1 uses).
-New usage of "sqr2irrlemOLD" is discouraged (0 uses).
+New usage of "sqrt2irrlemOLD" is discouraged (0 uses).
 New usage of "srhmsubcALTV" is discouraged (4 uses).
 New usage of "srhmsubcALTVlem1" is discouraged (2 uses).
 New usage of "srhmsubcALTVlem2" is discouraged (1 uses).
@@ -19723,7 +19723,7 @@ Proof modification of "spimvALT" is discouraged (9 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
 Proof modification of "sq10OLD" is discouraged (57 steps).
 Proof modification of "sq10e99m1OLD" is discouraged (25 steps).
-Proof modification of "sqr2irrlemOLD" is discouraged (288 steps).
+Proof modification of "sqrt2irrlemOLD" is discouraged (288 steps).
 Proof modification of "ssdisjOLD" is discouraged (49 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "sseqin2OLD" is discouraged (3 steps).
