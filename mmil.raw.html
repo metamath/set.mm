@@ -2866,9 +2866,21 @@ we wanted strict dominance to have the expected properties.</TD>
 </TR>
 
 <TR>
-<TD>nnsdomo , sucdom2 , sucdom , 0sdom1dom , 1sdom2 , sdom1</TD>
+<TD>nnsdomo , sucdom2 , sucdom , 0sdom1dom , sdom1</TD>
 <TD><I>none</I></TD>
 <TD>iset.mm doesn't yet have strict dominance</TD>
+</TR>
+
+<TR>
+  <TD>1sdom2</TD>
+  <TD>~ 1nen2</TD>
+  <TD>Although the presence of ~ 1nen2 might make it look
+  like a natural definition for strict dominance would be
+  ` A ~<_ B /\ -. A ~~ B ` , that definition may be more suitable
+  for finite sets than all sets, so at least for now we only
+  define ` ~~ ` and express certain theorems (such as this one)
+  in terms of equinumerosity which in set.mm are expressed in terms
+  of strict dominance.</TD>
 </TR>
 
 <TR>
