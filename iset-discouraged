@@ -108,6 +108,22 @@
 "df-pnf" is used by "pnfxr".
 "df-tru" is used by "tru".
 "dvelimALT" is used by "hbsb4".
+"elirr" is used by "elirrv".
+"elirr" is used by "fiunsnnn".
+"elirr" is used by "nndcel".
+"elirr" is used by "nndceq".
+"elirr" is used by "nntri2".
+"elirr" is used by "nntri3".
+"elirr" is used by "onnmin".
+"elirr" is used by "onunsnss".
+"elirr" is used by "ordirr".
+"elirr" is used by "ordsoexmid".
+"elirr" is used by "ordtri2or2exmid".
+"elirr" is used by "phpelm".
+"elirr" is used by "reg3exmidlemwe".
+"elirr" is used by "snon0".
+"elirr" is used by "ssnel".
+"elirr" is used by "sucprcreg".
 "equsalh" is used by "dvelimALT".
 "equsalh" is used by "dvelimfALT2".
 "equsalh" is used by "dvelimfv".
@@ -248,6 +264,7 @@ New usage of "df-tru" is discouraged (1 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
+New usage of "elirr" is discouraged (16 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "fnexALT" is discouraged (0 uses).
