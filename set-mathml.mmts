@@ -1327,6 +1327,7 @@ $s class CaraGen $: <mi href="df-caragen.html">CaraGen</mi> $.
 $s class voln* $: <mi href="df-ovoln.html">voln*</mi> $.
 $s class voln $: <mi href="df-voln.html">voln</mi> $.
 $s class SMblFn $: <mi href="df-smblfn.html">SMblFn</mi> $.
+$s class liminf $: <mi href="df-liminf.html">lim inf</mi> $.
 
 
 $( Alexander van der Vekens $)
