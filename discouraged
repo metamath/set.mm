@@ -14392,6 +14392,7 @@ New usage of "cbvexdvaOLD" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
 New usage of "cbvexvOLD" is discouraged (0 uses).
 New usage of "ccat2s1fvwALT" is discouraged (0 uses).
+New usage of "ccatws1lenrevOLD" is discouraged (0 uses).
 New usage of "cdj1i" is discouraged (0 uses).
 New usage of "cdj3i" is discouraged (0 uses).
 New usage of "cdj3lem1" is discouraged (2 uses).
@@ -18654,6 +18655,7 @@ Proof modification of "cbvexdvaOLD" is discouraged (22 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "cbvexvOLD" is discouraged (12 steps).
 Proof modification of "ccat2s1fvwALT" is discouraged (149 steps).
+Proof modification of "ccatws1lenrevOLD" is discouraged (81 steps).
 Proof modification of "cdleme20yOLD" is discouraged (314 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
