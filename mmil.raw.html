@@ -1050,6 +1050,11 @@ elimination.</TD>
 </TR>
 
 <TR>
+  <TD>mt4d</TD>
+  <TD>~ mt2d</TD>
+</TR>
+
+<TR>
 <TD>pm2.61 , pm2.61d , pm2.61d1 , pm2.61d2 , pm2.61i , pm2.61ii , pm2.61nii ,
 pm2.61iii , pm2.61ian , pm2.61dan , pm2.61ddan , pm2.61dda , pm2.61ine , pm2.61ne ,
 pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
@@ -1082,7 +1087,7 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 
 <TR>
 <TD>df-or , pm4.64 , pm2.54 , orri , orrd</TD>
-<TD>~ pm2.53 , ~ ori , ~ ord </TD>
+<TD>~ pm2.53 , ~ ori , ~ ord , ~ dfordc</TD>
 </TR>
 
 <TR>
@@ -2866,9 +2871,21 @@ we wanted strict dominance to have the expected properties.</TD>
 </TR>
 
 <TR>
-<TD>nnsdomo , sucdom2 , sucdom , 0sdom1dom , 1sdom2 , sdom1</TD>
+<TD>nnsdomo , sucdom2 , sucdom , 0sdom1dom , sdom1</TD>
 <TD><I>none</I></TD>
 <TD>iset.mm doesn't yet have strict dominance</TD>
+</TR>
+
+<TR>
+  <TD>1sdom2</TD>
+  <TD>~ 1nen2</TD>
+  <TD>Although the presence of ~ 1nen2 might make it look
+  like a natural definition for strict dominance would be
+  ` A ~<_ B /\ -. A ~~ B ` , that definition may be more suitable
+  for finite sets than all sets, so at least for now we only
+  define ` ~~ ` and express certain theorems (such as this one)
+  in terms of equinumerosity which in set.mm are expressed in terms
+  of strict dominance.</TD>
 </TR>
 
 <TR>
@@ -2892,7 +2909,9 @@ we wanted strict dominance to have the expected properties.</TD>
 <TR>
 <TD>fisseneq</TD>
 <TD><I>none</I></TD>
-<TD>The set.mm proof relies on excluded middle</TD>
+<TD>Perhaps it would work to generalize ~ en2eqpr from two element
+sets to any finite sets (presumably by induction)
+and thus prove fisseneq or something which easily implies it.</TD>
 </TR>
 
 <TR>
@@ -3021,6 +3040,14 @@ this implies excluded middle</TD>
   <TD>unfi</TD>
   <TD><I>none</I></TD>
   <TD>Not provable according to Remark 8.1.17 of [AczelRathjen].</TD>
+</TR>
+
+<TR>
+  <TD>prfi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof depends on unfi and it would appear that
+  mapping ` { A , B } ` to a natural number would decide whether
+  ` A ` and ` B ` are equal and thus imply excluded middle.</TD>
 </TR>
 
 <TR>
@@ -6756,6 +6783,26 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>coprmprod , coprmproddvds</TD>
   <TD><I>none</I></TD>
   <TD>Can investigate once product is better developed.</TD>
+</TR>
+
+<TR>
+  <TD>isprm5</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable, but the set.mm proof relies on excluded
+  middle in multiple places.</TD>
+</TR>
+
+<TR>
+  <TD>isprm7</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isprm5</TD>
+</TR>
+
+<TR>
+  <TD>maxprmfct</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable with suitable adjustments to the
+  condition for the existence of the supremum</TD>
 </TR>
 
 </TABLE>
