@@ -2957,7 +2957,7 @@ ssfi , since ` { (/) } e. _om `</TD>
 <TR>
 <TD>domfi</TD>
 <TD><I>none</I></TD>
-<TD>The set.mm proof is in terms of ssfi</TD>
+<TD>Implies excluded middle as shown at ~ domfiexmid</TD>
 </TR>
 
 <TR>
@@ -2970,8 +2970,7 @@ set.mm proof also uses domfi</TD>
 <TR>
 <TD>infi</TD>
 <TD><I>none</I></TD>
-<TD>Presumably the proof of ~ ssfiexmid could be adapted to show
-this implies excluded middle</TD>
+<TD>Implies excluded middle as shown at ~ infiexmid</TD>
 </TR>
 
 <TR>
@@ -3037,8 +3036,19 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
-  <TD>unfi</TD>
-  <TD><I>none</I></TD>
+  <TD ROWSPAN="3">unfi</TD>
+  <TD>~ unsnfi</TD>
+  <TD>For the union of a set and a singleton whose element is not
+  a member of that set</TD>
+</TR>
+
+<TR>
+  <TD><I>for the union of two disjoint sets</I></TD>
+  <TD>presumably provable</TD>
+</TR>
+
+<TR>
+  <TD><I>for any two finite sets</I></TD>
   <TD>Not provable according to Remark 8.1.17 of [AczelRathjen].</TD>
 </TR>
 
@@ -3048,6 +3058,41 @@ this implies excluded middle</TD>
   <TD>The set.mm proof depends on unfi and it would appear that
   mapping ` { A , B } ` to a natural number would decide whether
   ` A ` and ` B ` are equal and thus imply excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>dmfi</TD>
+  <TD>~ fundmfi</TD>
+</TR>
+
+<TR>
+  <TD>resfnfinfin</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would need to have a ` B C_ A ` condition added,
+  but lightly used in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>residfi</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable, but lightly used in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>cnvfi</TD>
+  <TD>~ relcnvfi</TD>
+</TR>
+
+<TR>
+  <TD>rnfi</TD>
+  <TD>~ funrnfi</TD>
+</TR>
+
+<TR>
+  <TD>abrexfi</TD>
+  <TD><I>none</I></TD>
+  <TD>At first glance it would appear that the mapping would need to
+  be one to one or some other condition.</TD>
 </TR>
 
 <TR>
@@ -3226,7 +3271,7 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
-  <TR>fiinfg , fiinf2g</TR>
+  <TD>fiinfg , fiinf2g</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on fiming</TD>
 </TR>
@@ -4441,32 +4486,17 @@ favor of theorems in deduction form.</TD>
 
 <TR>
   <TD>fimaxre</TD>
-  <TD><I>none</I></TD>
-  <TD>The theorem as stated states there is an upper bound (rather
-  than directly a maximum), so it probably would be provable
+  <TD>~ fimaxre2</TD>
+  <TD>When applied to a pair this could show which of two unequal
+  real numbers is larger, so perhaps not provable for that reason.
   (see ~ fin0 for inhabited versus nonempty).
   </TD>
 </TR>
 
 <TR>
-  <TD>fimaxre2</TD>
-  <TD><I>none</I></TD>
-  <TD>Presumably provable (see ~ fin0or for how to replace the case
-  elimination).</TD>
-</TR>
-
-<TR>
   <TD>fimaxre3</TD>
   <TD><I>none</I></TD>
-  <TD>Presumably provable (the set.mm proof would appear to work once
-  we have fimaxre2.</TD>
-</TR>
-
-<TR>
-  <TD>negfi</TD>
-  <TD><I>none</I></TD>
-  <TD>The set.mm proof depends on fundmfibi which seems like it
-  should be provable but which we don't have yet.</TD>
+  <TD>The set.mm proof relies on abrexfi .</TD>
 </TR>
 
 <TR>
