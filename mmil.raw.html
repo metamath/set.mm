@@ -4049,8 +4049,11 @@ favor of theorems in deduction form.</TD>
 <TR>
 <TD>ltordlem , ltord1 , leord1 , eqord1 , ltord2 , leord2 , eqord2</TD>
 <TD><I>none</I></TD>
-<TD>These depend on real number trichotomy and are not used until
-later in set.mm.</TD>
+<TD>Although these presumably could be proved using theorems like
+~ letri3 and ~ lenlt , at least for now we have chosen to just invoke
+those other theorems directly (example: ~ expcan and its lemma
+~ expcanlem ) which avoids some extra set variables and produces proofs
+which are almost as short.</TD>
 </TR>
 
 <TR>
@@ -4743,9 +4746,33 @@ numbers).</TD>
 
 <TR>
 <TD>xrmax1 , xrmax2 , xrmin1 , xrmin2 , xrmaxeq , xrmineq ,
-xrmaxlt , xrltmin , xrmaxle , xrlemin , max1 , max2 , min1 , min2 ,
-maxle , lemin , maxlt , ltmin , max0sub , ifle</TD>
+xrmaxlt , xrltmin , xrmaxle , xrlemin , min1 , min2 ,
+lemin , maxlt , ltmin , max0sub , ifle</TD>
 <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>max1</TD>
+  <TD>~ maxle1</TD>
+</TR>
+
+<TR>
+  <TD>max2</TD>
+  <TD>~ maxle2</TD>
+</TR>
+
+<TR>
+  <TD>2resupmax</TD>
+  <TD><I>none</I></TD>
+  <TD>Proved from real trichotomy. Because we do not have this theorem
+  we express maximum in iset.mm using ` sup ( { A , B } , RR , < ) ` (which
+  has expected maximum properties such as ~ maxcl , ~ maxle1 , ~ maxle2 ,
+  ~ maxleast , and ~ maxleb ) rather than ` if ( A <_ B , B , A ) ` .</TD>
+</TR>
+
+<TR>
+  <TD>maxle</TD>
+  <TD>~ maxleastb</TD>
 </TR>
 
 <TR>
@@ -6001,13 +6028,6 @@ dividing by zero.</TD>
 </TR>
 
 <TR>
-<TD>expcan , expcand</TD>
-<TD><I>none</I></TD>
-<TD>Presumably provable, but the set.mm proof uses eqord1
-and the theorem is lightly used in set.mm</TD>
-</TR>
-
-<TR>
 <TD>ltexp2 , leexp2 , leexp2 , ltexp2d , leexp2d</TD>
 <TD><I>none</I></TD>
 <TD>Presumably provable, but the set.mm proof uses ltord1</TD>
@@ -6399,10 +6419,7 @@ if we wanted</TD>
 
 <TR>
 <TD>max0add</TD>
-<TD><I>none</I></TD>
-<TD>This would hold if we defined the maximum of two real numbers and
-recast this theoerem in terms of that (rather than using ` if ` in a way
-which relies on real number trichotomy).</TD>
+<TD>~ max0addsup</TD>
 </TR>
 
 <TR>
@@ -6424,10 +6441,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>absmax</TD>
-  <TD><I>none</I></TD>
-  <TD>The right hand side of this theorem (which is in terms of absolute
-  value) could serve as a definition of maximum, but the left hand side
-  (in terms of ` if ` ) is not well behaved in the absence of trichotomy.</TD>
+  <TD>~ maxabs</TD>
 </TR>
 
 <TR>
@@ -6456,32 +6470,20 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
-  <TD>rexanre</TD>
-  <TD><I>none yet</I></TD>
-  <TD>May be feasible once we've added maximum for real numbers</TD>
-</TR>
-
-<TR>
   <TD>rexuzre</TD>
   <TD><I>none</I></TD>
-  <TD>Presumably could be intuitionized although it would be
-  easier after we add maximum for real numbers. It is unused in
-  set.mm for whatever that is worth.</TD>
-</TR>
-
-<TR>
-  <TD>rexico</TD>
-  <TD><I>none</I></TD>
-  <TD>May be feasible once we've added maximum for real numbers</TD>
+  <TD>Unless the real number ` j ` is known to be apart from an
+  integer, it isn't clear there would be any way to prove this
+  (see the steps in the set.mm proof which rely on the floor of
+  a real number). It is unused in set.mm for whatever that is worth.</TD>
 </TR>
 
 <TR>
   <TD>caubnd</TD>
   <TD><I>none</I></TD>
-  <TD>The caubnd proof uses theorems related
-  to finite sets and maximums which are not present in iset.mm,
-  so this will need developing those areas
-  and/or a different approach than set.mm.</TD>
+  <TD>If we can prove fimaxre3 it would appear that the set.mm
+  proof would work with small changes (in the case of the maximum
+  of two real numbers, using ~ maxle1 , ~ maxle2 , and ~ maxcl ).</TD>
 </TR>
 
 <TR>
@@ -6803,6 +6805,12 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD><I>none</I></TD>
   <TD>Presumably provable with suitable adjustments to the
   condition for the existence of the supremum</TD>
+</TR>
+
+<TR>
+  <TD>ncoprmlnprm</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable but the set.mm proof uses excluded middle</TD>
 </TR>
 
 </TABLE>
