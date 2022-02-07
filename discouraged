@@ -15600,6 +15600,7 @@ New usage of "fldhmsubcALTV" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "foco2OLD" is discouraged (0 uses).
 New usage of "fprodcom2OLD" is discouraged (0 uses).
+New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
 New usage of "fsumcom2OLD" is discouraged (0 uses).
 New usage of "fsummsnunzOLD" is discouraged (0 uses).
 New usage of "fsumshftdOLD" is discouraged (0 uses).
@@ -19218,6 +19219,7 @@ Proof modification of "frege95" is discouraged (79 steps).
 Proof modification of "frege96" is discouraged (39 steps).
 Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
+Proof modification of "frgrwopreglem5ALT" is discouraged (519 steps).
 Proof modification of "fsumcom2OLD" is discouraged (1241 steps).
 Proof modification of "fsummsnunzOLD" is discouraged (91 steps).
 Proof modification of "fsumshftdOLD" is discouraged (217 steps).
