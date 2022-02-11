@@ -14358,6 +14358,8 @@ New usage of "bnnv" is discouraged (7 uses).
 New usage of "bnrel" is discouraged (1 uses).
 New usage of "bnsscmcl" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
+New usage of "br1steqgOLD" is discouraged (0 uses).
+New usage of "br2ndeqgOLD" is discouraged (0 uses).
 New usage of "bra0" is discouraged (1 uses).
 New usage of "bra11" is discouraged (6 uses).
 New usage of "braadd" is discouraged (1 uses).
@@ -18633,6 +18635,8 @@ Proof modification of "bj-zfpow" is discouraged (71 steps).
 Proof modification of "bnj142OLD" is discouraged (51 steps).
 Proof modification of "bnj145OLD" is discouraged (112 steps).
 Proof modification of "bnj538OLD" is discouraged (94 steps).
+Proof modification of "br1steqgOLD" is discouraged (134 steps).
+Proof modification of "br2ndeqgOLD" is discouraged (134 steps).
 Proof modification of "brfi1indALT" is discouraged (789 steps).
 Proof modification of "brfi1indALTOLD" is discouraged (789 steps).
 Proof modification of "brfi1indOLD" is discouraged (48 steps).
