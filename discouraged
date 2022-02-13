@@ -4360,7 +4360,6 @@
 "cvpss" is used by "cvnsym".
 "cvpss" is used by "cvntr".
 "cvr2N" is used by "cvrval4N".
-"cwlimOLD" is used by "elwlimOLD".
 "dec0uOLD" is used by "5t5e25OLD".
 "dec0uOLD" is used by "6t6e36OLD".
 "dec0uOLD" is used by "8t6e48OLD".
@@ -4860,7 +4859,6 @@
 "df-vhc2" is used by "dfvd2an".
 "df-vhc3" is used by "dfvd3an".
 "df-vs" is used by "vsfval".
-"df-wlimOLD" is used by "elwlimOLD".
 "df-wrecs" is used by "csbwrecsg".
 "df-wrecs" is used by "dfrecs3".
 "df-wrecs" is used by "nfwrecs".
@@ -14816,8 +14814,6 @@ New usage of "cvr2N" is discouraged (1 uses).
 New usage of "cvrletrN" is discouraged (0 uses).
 New usage of "cvrnrefN" is discouraged (0 uses).
 New usage of "cvrval4N" is discouraged (0 uses).
-New usage of "cwlimOLD" is discouraged (1 uses).
-New usage of "cwsucOLD" is discouraged (0 uses).
 New usage of "dalem31N" is discouraged (0 uses).
 New usage of "dec0hOLD" is discouraged (0 uses).
 New usage of "dec0uOLD" is discouraged (4 uses).
@@ -15007,9 +15003,7 @@ New usage of "df-vd3" is discouraged (1 uses).
 New usage of "df-vhc2" is discouraged (1 uses).
 New usage of "df-vhc3" is discouraged (1 uses).
 New usage of "df-vs" is discouraged (1 uses).
-New usage of "df-wlimOLD" is discouraged (1 uses).
 New usage of "df-wrecs" is discouraged (11 uses).
-New usage of "df-wsucOLD" is discouraged (0 uses).
 New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfadj2" is discouraged (7 uses).
 New usage of "dfbi1ALT" is discouraged (0 uses).
@@ -15480,7 +15474,6 @@ New usage of "elspansni" is discouraged (2 uses).
 New usage of "elunirnALT" is discouraged (0 uses).
 New usage of "elunop" is discouraged (7 uses).
 New usage of "elunop2" is discouraged (0 uses).
-New usage of "elwlimOLD" is discouraged (0 uses).
 New usage of "elxp2OLD" is discouraged (0 uses).
 New usage of "en3lpVD" is discouraged (0 uses).
 New usage of "en3lplem1VD" is discouraged (1 uses).
@@ -18141,7 +18134,6 @@ New usage of "wl-syl6" is discouraged (2 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
 New usage of "wnfOLD" is discouraged (29 uses).
-New usage of "wsuclemOLD" is discouraged (0 uses).
 New usage of "wvd2" is discouraged (5 uses).
 New usage of "wvd3" is discouraged (3 uses).
 New usage of "wvhc10" is discouraged (0 uses).
@@ -18155,7 +18147,6 @@ New usage of "wvhc6" is discouraged (0 uses).
 New usage of "wvhc7" is discouraged (0 uses).
 New usage of "wvhc8" is discouraged (0 uses).
 New usage of "wvhc9" is discouraged (0 uses).
-New usage of "wzelOLD" is discouraged (0 uses).
 New usage of "xihopellsmN" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 New usage of "xrge0tmdOLD" is discouraged (0 uses).
@@ -18976,7 +18967,6 @@ Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
 Proof modification of "elsnxpOLD" is discouraged (203 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
-Proof modification of "elwlimOLD" is discouraged (90 steps).
 Proof modification of "elxp2OLD" is discouraged (82 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
@@ -19928,8 +19918,6 @@ Proof modification of "wl-syl5" is discouraged (14 steps).
 Proof modification of "wl-syl6" is discouraged (14 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
-Proof modification of "wsuclemOLD" is discouraged (412 steps).
-Proof modification of "wzelOLD" is discouraged (270 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
 Proof modification of "xrge0tmdOLD" is discouraged (166 steps).
 Proof modification of "zexALT" is discouraged (34 steps).
