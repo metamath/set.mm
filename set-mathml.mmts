@@ -1163,6 +1163,9 @@ $s class Ray $: <mi href="df-ray.html">Ray</mi> $.
 $s class BernPoly $: <mi href="df-bpoly.html"> BernPoly </mi> $.
 $s class Hf $: <mi href="df-hf.html"> Hf </mi> $.
 
+$( Founded recursion $)
+$s class frecs ( R , O , P ) $: <mrow> <mi href="df-frecs.html">frecs</mi> <mo>&ApplyFunction;</mo> <mfenced> #R# #O# #P# </mfenced> </mrow> $. $( Removed stretchy="false" $)
+
 $( Surreal Numbers $)
 $s class No $: <mi href="df-no.html">No</mi> $.
 $s class <s $: <msub href="df-slt.html"><mo>&lt;</mo> <mi>s</mi></msub> $.
@@ -1327,6 +1330,7 @@ $s class CaraGen $: <mi href="df-caragen.html">CaraGen</mi> $.
 $s class voln* $: <mi href="df-ovoln.html">voln*</mi> $.
 $s class voln $: <mi href="df-voln.html">voln</mi> $.
 $s class SMblFn $: <mi href="df-smblfn.html">SMblFn</mi> $.
+$s class liminf $: <mi href="df-liminf.html">lim inf</mi> $.
 
 
 $( Alexander van der Vekens $)

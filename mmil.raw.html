@@ -1050,6 +1050,11 @@ elimination.</TD>
 </TR>
 
 <TR>
+  <TD>mt4d</TD>
+  <TD>~ mt2d</TD>
+</TR>
+
+<TR>
 <TD>pm2.61 , pm2.61d , pm2.61d1 , pm2.61d2 , pm2.61i , pm2.61ii , pm2.61nii ,
 pm2.61iii , pm2.61ian , pm2.61dan , pm2.61ddan , pm2.61dda , pm2.61ine , pm2.61ne ,
 pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
@@ -1082,7 +1087,7 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 
 <TR>
 <TD>df-or , pm4.64 , pm2.54 , orri , orrd</TD>
-<TD>~ pm2.53 , ~ ori , ~ ord </TD>
+<TD>~ pm2.53 , ~ ori , ~ ord , ~ dfordc</TD>
 </TR>
 
 <TR>
@@ -1382,6 +1387,11 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>2reuswap</TD>
+  <TD>~ 2reuswapdc</TD>
+</TR>
+
+<TR>
   <TD>df-pss and all proper subclass theorems</TD>
   <TD><I>none</I></TD>
   <TD>In set.mm, "A is a proper subclass of B" is defined to be
@@ -1474,6 +1484,11 @@ is double negation elimination.</TD>
 <TR>
   <TD>r19.2z</TD>
   <TD>~ r19.2m</TD>
+</TR>
+
+<TR>
+  <TD>r19.9rzv</TD>
+  <TD>~ r19.9rmv</TD>
 </TR>
 
 <TR>
@@ -1688,6 +1703,12 @@ favor of theorems in deduction form.</TD>
 <TD>intabs</TD>
 <TD><I>none</I></TD>
 <TD>Lightly used in set.mm, and the set.mm proof is not intuitionistic</TD>
+</TR>
+
+<TR>
+  <TD>reuxfr2d , reuxfr2 , reuxfrd , reuxfr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof of reuxfr2d relies on 2reuswap</TD>
 </TR>
 
 <TR>
@@ -2198,7 +2219,8 @@ and is evaluated at a set</TD>
 <TR>
 <TD>riotaxfrd</TD>
 <TD><I>none</I></TD>
-<TD>Although it may be intuitionizable, it is lightly used in set.mm.</TD>
+<TD>Although it may be intuitionizable, it is lightly used in set.mm.
+The set.mm proof relies on reuxfrd .</TD>
 </TR>
 
 <TR>
@@ -2849,9 +2871,21 @@ we wanted strict dominance to have the expected properties.</TD>
 </TR>
 
 <TR>
-<TD>nnsdomo , sucdom2 , sucdom , 0sdom1dom , 1sdom2 , sdom1</TD>
+<TD>nnsdomo , sucdom2 , sucdom , 0sdom1dom , sdom1</TD>
 <TD><I>none</I></TD>
 <TD>iset.mm doesn't yet have strict dominance</TD>
+</TR>
+
+<TR>
+  <TD>1sdom2</TD>
+  <TD>~ 1nen2</TD>
+  <TD>Although the presence of ~ 1nen2 might make it look
+  like a natural definition for strict dominance would be
+  ` A ~<_ B /\ -. A ~~ B ` , that definition may be more suitable
+  for finite sets than all sets, so at least for now we only
+  define ` ~~ ` and express certain theorems (such as this one)
+  in terms of equinumerosity which in set.mm are expressed in terms
+  of strict dominance.</TD>
 </TR>
 
 <TR>
@@ -2875,7 +2909,9 @@ we wanted strict dominance to have the expected properties.</TD>
 <TR>
 <TD>fisseneq</TD>
 <TD><I>none</I></TD>
-<TD>The set.mm proof relies on excluded middle</TD>
+<TD>Perhaps it would work to generalize ~ en2eqpr from two element
+sets to any finite sets (presumably by induction)
+and thus prove fisseneq or something which easily implies it.</TD>
 </TR>
 
 <TR>
@@ -2921,7 +2957,7 @@ ssfi , since ` { (/) } e. _om `</TD>
 <TR>
 <TD>domfi</TD>
 <TD><I>none</I></TD>
-<TD>The set.mm proof is in terms of ssfi</TD>
+<TD>Implies excluded middle as shown at ~ domfiexmid</TD>
 </TR>
 
 <TR>
@@ -2934,8 +2970,7 @@ set.mm proof also uses domfi</TD>
 <TR>
 <TD>infi</TD>
 <TD><I>none</I></TD>
-<TD>Presumably the proof of ~ ssfiexmid could be adapted to show
-this implies excluded middle</TD>
+<TD>Implies excluded middle as shown at ~ infiexmid</TD>
 </TR>
 
 <TR>
@@ -3001,9 +3036,63 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
-  <TD>unfi</TD>
-  <TD><I>none</I></TD>
+  <TD ROWSPAN="3">unfi</TD>
+  <TD>~ unsnfi</TD>
+  <TD>For the union of a set and a singleton whose element is not
+  a member of that set</TD>
+</TR>
+
+<TR>
+  <TD><I>for the union of two disjoint sets</I></TD>
+  <TD>presumably provable</TD>
+</TR>
+
+<TR>
+  <TD><I>for any two finite sets</I></TD>
   <TD>Not provable according to Remark 8.1.17 of [AczelRathjen].</TD>
+</TR>
+
+<TR>
+  <TD>prfi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof depends on unfi and it would appear that
+  mapping ` { A , B } ` to a natural number would decide whether
+  ` A ` and ` B ` are equal and thus imply excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>dmfi</TD>
+  <TD>~ fundmfi</TD>
+</TR>
+
+<TR>
+  <TD>resfnfinfin</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would need to have a ` B C_ A ` condition added,
+  but lightly used in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>residfi</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable, but lightly used in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>cnvfi</TD>
+  <TD>~ relcnvfi</TD>
+</TR>
+
+<TR>
+  <TD>rnfi</TD>
+  <TD>~ funrnfi</TD>
+</TR>
+
+<TR>
+  <TD>abrexfi</TD>
+  <TD><I>none</I></TD>
+  <TD>At first glance it would appear that the mapping would need to
+  be one to one or some other condition.</TD>
 </TR>
 
 <TR>
@@ -3062,10 +3151,7 @@ this implies excluded middle</TD>
 
 <TR>
   <TD>suplub2</TD>
-  <TD><I>none</I></TD>
-  <TD>Presumably provable, probably with more conditions on
-  the order compared with ~ suplubti and similar theorems, but
-  the set.mm proof relies on excluded middle.</TD>
+  <TD>~ suplub2ti</TD>
 </TR>
 
 <TR>
@@ -3089,7 +3175,7 @@ this implies excluded middle</TD>
 
 <TR>
   <TD>fisup2g , fisupcl</TD>
-  <TD>~ zsssupcl</TD>
+  <TD><I>none</I></TD>
   <TD>Other variations may be possible, but the set.mm proof will not
   work as-is or with small modifications.</TD>
 </TR>
@@ -3104,8 +3190,9 @@ this implies excluded middle</TD>
   <TD>suppr</TD>
   <TD><I>none</I></TD>
   <TD>The formulation using ` if ` would seem to require a trichotomous
-  order. For real numbers, might be possible to define maximum via
-  absolute value (see absmax in set.mm).</TD>
+  order. For real numbers, supremum on a pair does yield the maximum of
+  two numbers: see ~ maxcl , ~ maxle1 , ~ maxle2 , ~ maxleast ,
+  and ~ maxleb .</TD>
 </TR>
 
 <TR>
@@ -3184,7 +3271,7 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
-  <TR>fiinfg , fiinf2g</TR>
+  <TD>fiinfg , fiinf2g</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on fiming</TD>
 </TR>
@@ -4007,8 +4094,11 @@ favor of theorems in deduction form.</TD>
 <TR>
 <TD>ltordlem , ltord1 , leord1 , eqord1 , ltord2 , leord2 , eqord2</TD>
 <TD><I>none</I></TD>
-<TD>These depend on real number trichotomy and are not used until
-later in set.mm.</TD>
+<TD>Although these presumably could be proved using theorems like
+~ letri3 and ~ lenlt , at least for now we have chosen to just invoke
+those other theorems directly (example: ~ expcan and its lemma
+~ expcanlem ) which avoids some extra set variables and produces proofs
+which are almost as short.</TD>
 </TR>
 
 <TR>
@@ -4162,6 +4252,16 @@ zero changes to apart from zero.</TD>
 <TR>
 <TD>div23 , div32 , div13 , div12</TD>
 <TD>~ div23ap , ~ div32ap , ~ div13ap , ~ div12ap </TD>
+</TR>
+
+<TR>
+  <TD>divmulass</TD>
+  <TD>~ divmulassap</TD>
+</TR>
+
+<TR>
+  <TD>divmulasscom</TD>
+  <TD>~ divmulasscomap</TD>
 </TR>
 
 <TR>
@@ -4385,8 +4485,114 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
+  <TD>fimaxre</TD>
+  <TD>~ fimaxre2</TD>
+  <TD>When applied to a pair this could show which of two unequal
+  real numbers is larger, so perhaps not provable for that reason.
+  (see ~ fin0 for inhabited versus nonempty).
+  </TD>
+</TR>
+
+<TR>
+  <TD>fimaxre3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on abrexfi .</TD>
+</TR>
+
+<TR>
+  <TD>fiminre</TD>
+  <TD><I>none</I></TD>
+  <TD>See fimaxre</TD>
+</TR>
+
+<TR>
+  <TD>sup2 , sup3 , sup3ii</TD>
+  <TD><I>none</I></TD>
+  <TD>We won't be able to have the least upper bound property for all
+  nonempty bounded sets. In cases where we can show that the supremum
+  exists, we might be able to prove slightly different ways of stating
+  there is a supremum.</TD>
+</TR>
+
+<TR>
+  <TD>infm3</TD>
+  <TD><I>none</I></TD>
+  <TD>See sup3</TD>
+</TR>
+
+<TR>
+  <TD>suprcl , suprcld , suprclii</TD>
+  <TD>~ supclti</TD>
+</TR>
+
+<TR>
+  <TD>suprub , suprubd , suprubii</TD>
+  <TD>~ suprubex</TD>
+</TR>
+
+<TR>
+  <TD>suprlub , suprlubii</TD>
+  <TD>~ suprlubex</TD>
+</TR>
+
+<TR>
+  <TD>suprnub , suprnubii</TD>
+  <TD>~ suprnubex</TD>
+</TR>
+
+<TR>
+  <TD>suprleub , suprleubii</TD>
+  <TD>~ suprleubex</TD>
+</TR>
+
+<TR>
+  <TD>supaddc , supadd</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable with suitable conditions for the existence
+  of the supremums</TD>
+</TR>
+
+<TR>
+  <TD>supmul1 , supmul</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable with suitable conditions for the existence
+  of the supremums</TD>
+</TR>
+
+<TR>
+  <TD>riotaneg</TD>
+  <TD><I>none</I></TD>
+  <TD>The theorem is unused in set.mm and the set.mm proof
+  relies on reuxfrd</TD>
+</TR>
+
+<TR>
+  <TD>infrecl</TD>
+  <TD>~ infclti</TD>
+</TR>
+
+<TR>
   <TD>infrenegsup</TD>
   <TD>~ infrenegsupex</TD>
+</TR>
+
+<TR>
+  <TD>infregelb</TD>
+  <TD><I>none yet</I></TD>
+  <TD>Presumably could be handled in a way analogous to ~ suprleubex</TD>
+</TR>
+
+<TR>
+  <TD>infrelb</TD>
+  <TD><I>none yet</I></TD>
+  <TD>Presumably could be handled in a way analogous to ~ suprubex</TD>
+</TR>
+
+<TR>
+  <TD>supfirege</TD>
+  <TD>~ suprubex</TD>
+  <TD>The question here is whether results like ~ maxle1 can be generalized
+  (presumably by induction) from pairs to finite sets.</TD>
 </TR>
 
 <TR>
@@ -4432,24 +4638,13 @@ a fintely supported function.</TD>
 
 <TR>
 <TD>suprzcl</TD>
-<TD>~ zsssupcl</TD>
-<TD>Presumably it is possble to remove the ` sup ( B , RR , < ) e. ZZ `
-hypotheses (if we can intuitionize suprleub and the other theorems needed
-by the set.mm proof in a way satisfied by the other hypotheses).</TD>
+<TD>~ suprzclex</TD>
 </TR>
 
 <TR>
 <TD>zriotaneg</TD>
 <TD><I>none</I></TD>
 <TD>Lightly used in set.mm</TD>
-</TR>
-
-<TR>
-  <TD>suprleub</TD>
-  <TD><I>none</I></TD>
-  <TD>Looks like it might be intuitionizable (with suitable changes to
-  the conditions for existence of the supremum), if we can get suplub2
-  (which set.mm uses via suprnub and suprlub).</TD>
 </TR>
 
 <TR>
@@ -4499,10 +4694,7 @@ which makes this different from ~ nnregexmid .</TD>
 
 <TR>
   <TD>infssuzcl</TD>
-  <TD>~ infuzre</TD>
-  <TD>It should
-  be possible to show the infimum is an element of ` S ` , but ~ infuzre
-  only shows it is an element of ` RR ` .</TD>
+  <TD>~ infssuzcldc</TD>
 </TR>
 
 <TR>
@@ -4512,7 +4704,7 @@ which makes this different from ~ nnregexmid .</TD>
 
 <TR>
   <TD>zsupss , suprzcl2</TD>
-  <TD>~ zsupcl , ~ zsssupcl</TD>
+  <TD>~ zsupcl , ~ suprzclex</TD>
 </TR>
 
 <TR>
@@ -4584,9 +4776,59 @@ numbers).</TD>
 
 <TR>
 <TD>xrmax1 , xrmax2 , xrmin1 , xrmin2 , xrmaxeq , xrmineq ,
-xrmaxlt , xrltmin , xrmaxle , xrlemin , max1 , max2 , min1 , min2 ,
-maxle , lemin , maxlt , ltmin , max0sub , ifle</TD>
+xrmaxlt , xrltmin , xrmaxle , xrlemin ,
+max0sub , ifle</TD>
 <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>max1</TD>
+  <TD>~ maxle1</TD>
+</TR>
+
+<TR>
+  <TD>max2</TD>
+  <TD>~ maxle2</TD>
+</TR>
+
+<TR>
+  <TD>2resupmax</TD>
+  <TD><I>none</I></TD>
+  <TD>Proved from real trichotomy.
+  We express maximum in iset.mm using ` sup ( { A , B } , RR , < ) `
+  rather than ` if ( A <_ B , B , A ) ` . The former has the
+  expected maximum properties such as ~ maxcl , ~ maxle1 , ~ maxle2 ,
+  ~ maxleast , and ~ maxleb .</TD>
+</TR>
+
+<TR>
+  <TD>min1</TD>
+  <TD>~ min1inf</TD>
+</TR>
+
+<TR>
+  <TD>min2</TD>
+  <TD>~ min2inf</TD>
+</TR>
+
+<TR>
+  <TD>maxle</TD>
+  <TD>~ maxleastb</TD>
+</TR>
+
+<TR>
+  <TD>lemin</TD>
+  <TD>~ lemininf</TD>
+</TR>
+
+<TR>
+  <TD>maxlt</TD>
+  <TD>~ maxltsup</TD>
+</TR>
+
+<TR>
+  <TD>ltmin</TD>
+  <TD>~ ltmininf</TD>
 </TR>
 
 <TR>
@@ -5842,13 +6084,6 @@ dividing by zero.</TD>
 </TR>
 
 <TR>
-<TD>expcan , expcand</TD>
-<TD><I>none</I></TD>
-<TD>Presumably provable, but the set.mm proof uses eqord1
-and the theorem is lightly used in set.mm</TD>
-</TR>
-
-<TR>
 <TD>ltexp2 , leexp2 , leexp2 , ltexp2d , leexp2d</TD>
 <TD><I>none</I></TD>
 <TD>Presumably provable, but the set.mm proof uses ltord1</TD>
@@ -6240,10 +6475,7 @@ if we wanted</TD>
 
 <TR>
 <TD>max0add</TD>
-<TD><I>none</I></TD>
-<TD>This would hold if we defined the maximum of two real numbers and
-recast this theoerem in terms of that (rather than using ` if ` in a way
-which relies on real number trichotomy).</TD>
+<TD>~ max0addsup</TD>
 </TR>
 
 <TR>
@@ -6265,10 +6497,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>absmax</TD>
-  <TD><I>none</I></TD>
-  <TD>The right hand side of this theorem (which is in terms of absolute
-  value) could serve as a definition of maximum, but the left hand side
-  (in terms of ` if ` ) is not well behaved in the absence of trichotomy.</TD>
+  <TD>~ maxabs</TD>
 </TR>
 
 <TR>
@@ -6297,32 +6526,20 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
-  <TD>rexanre</TD>
-  <TD><I>none yet</I></TD>
-  <TD>May be feasible once we've added maximum for real numbers</TD>
-</TR>
-
-<TR>
   <TD>rexuzre</TD>
   <TD><I>none</I></TD>
-  <TD>Presumably could be intuitionized although it would be
-  easier after we add maximum for real numbers. It is unused in
-  set.mm for whatever that is worth.</TD>
-</TR>
-
-<TR>
-  <TD>rexico</TD>
-  <TD><I>none</I></TD>
-  <TD>May be feasible once we've added maximum for real numbers</TD>
+  <TD>Unless the real number ` j ` is known to be apart from an
+  integer, it isn't clear there would be any way to prove this
+  (see the steps in the set.mm proof which rely on the floor of
+  a real number). It is unused in set.mm for whatever that is worth.</TD>
 </TR>
 
 <TR>
   <TD>caubnd</TD>
   <TD><I>none</I></TD>
-  <TD>The caubnd proof uses theorems related
-  to finite sets and maximums which are not present in iset.mm,
-  so this will need developing those areas
-  and/or a different approach than set.mm.</TD>
+  <TD>If we can prove fimaxre3 it would appear that the set.mm
+  proof would work with small changes (in the case of the maximum
+  of two real numbers, using ~ maxle1 , ~ maxle2 , and ~ maxcl ).</TD>
 </TR>
 
 <TR>
@@ -6605,6 +6822,51 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD><I>none</I></TD>
   <TD>Although this could be defined, most of the theorems would
   need decidability conditions analogous to ~ zsupcl</TD>
+</TR>
+
+<TR>
+  <TD>absproddvds , absprodnn</TD>
+  <TD><I>none</I></TD>
+  <TD>Needs product to be developed, but once that is done seems
+  like it might be possible.</TD>
+</TR>
+
+<TR>
+  <TD>fissn0dvds , fissn0dvdsn0</TD>
+  <TD><I>none</I></TD>
+  <TD>Possibly could be proved using ~ findcard2 or the like.</TD>
+</TR>
+
+<TR>
+  <TD>coprmprod , coprmproddvds</TD>
+  <TD><I>none</I></TD>
+  <TD>Can investigate once product is better developed.</TD>
+</TR>
+
+<TR>
+  <TD>isprm5</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable, but the set.mm proof relies on excluded
+  middle in multiple places.</TD>
+</TR>
+
+<TR>
+  <TD>isprm7</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isprm5</TD>
+</TR>
+
+<TR>
+  <TD>maxprmfct</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable with suitable adjustments to the
+  condition for the existence of the supremum</TD>
+</TR>
+
+<TR>
+  <TD>ncoprmlnprm</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable but the set.mm proof uses excluded middle</TD>
 </TR>
 
 </TABLE>
