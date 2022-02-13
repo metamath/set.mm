@@ -1163,6 +1163,9 @@ $s class Ray $: <mi href="df-ray.html">Ray</mi> $.
 $s class BernPoly $: <mi href="df-bpoly.html"> BernPoly </mi> $.
 $s class Hf $: <mi href="df-hf.html"> Hf </mi> $.
 
+$( Founded recursion $)
+$s class frecs ( R , O , P ) $: <mrow> <mi href="df-frecs.html">frecs</mi> <mo>&ApplyFunction;</mo> <mfenced> #R# #O# #P# </mfenced> </mrow> $. $( Removed stretchy="false" $)
+
 $( Surreal Numbers $)
 $s class No $: <mi href="df-no.html">No</mi> $.
 $s class <s $: <msub href="df-slt.html"><mo>&lt;</mo> <mi>s</mi></msub> $.
@@ -1208,9 +1211,7 @@ $s class FullFun F $: <mrow><mi href="df-fullfun.html">&#x1D5A5;&#x1D5CE;&#x1D5C
 $s class UB A $: <mrow><mi href="df-ub.html">UB</mi> #A# </mrow> $.
 $s class LB A $: <mrow><mi href="df-lb.html">LB</mi> #A# </mrow> $.
 $s class wsuc ( R , O , P ) $: <mrow> <mo href="df-wsuc.html">wsuc</mo> <mfenced>#R# #O# #P#</mfenced></mrow> $.
-$s class wsucOLD ( R , O , P ) $: <mrow> <mo href="df-wsucOLD.html">wsucOLD</mo> <mfenced>#R# #O# #P#</mfenced></mrow> $.
 $s class WLim ( R , O ) $: <mrow> <mo href="df-wlim.html">WLim</mo> <mfenced>#R# #O#</mfenced></mrow> $.
-$s class WLimOLD ( R , O ) $: <mrow> <mo href="df-wlimOLD.html">WLimOLD</mo> <mfenced>#R# #O#</mfenced></mrow> $.
 
 $s class _|_P $: <msub href="df-polarityN.html"><mo>&perp;</mo> <mi>&#x1D443;</mi></msub> $. 
 $s class +P $: <msub href="df-padd.html"><mo>+</mo> <mi>&#x1D443;</mi></msub> $. 
@@ -1330,6 +1331,7 @@ $s class voln* $: <mi href="df-ovoln.html">voln*</mi> $.
 $s class voln $: <mi href="df-voln.html">voln</mi> $.
 $s class SMblFn $: <mi href="df-smblfn.html">SMblFn</mi> $.
 $s class liminf $: <mi href="df-liminf.html">lim inf</mi> $.
+$s class ~~>* $: <munder accentunder href="df-xlim.html"><mo>&zigrarr;</mo><mi>*</mi></munder> $.
 
 
 $( Alexander van der Vekens $)
@@ -1458,20 +1460,27 @@ $s class RRVec $: <mi href="df-bj-rrvec.html">&Ropf;Vec</mi> $.
 
 $s class Moore_ $: <munder href="df-bj-moore.html"><mi>Moore</mi> <mo>&#x5F;</mo></munder> $.
 $s class -Set-> $: <munder accentunder href="df-bj-fset.html"><mo>&xrarr;</mo><mo>Set</mo></munder> $.
+$s class -Top-> $: <munder accentunder href="df-bj-tophom.html"><mo>&xrarr;</mo><mo>Top</mo></munder> $.
+$s class -Magma-> $: <munder accentunder href="df-bj-magmahom.html"><mo>&xrarr;</mo><mo>Magma</mo></munder> $.
 $s wff F e. ( A -Set-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-fset.html"><mo>&xrarr;</mo><mo>Set</mo></munder> #B# </mrow> $.
+$s wff F e. ( A -Top-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-tophom.html"><mo>&xrarr;</mo><mo>Top</mo></munder> #B# </mrow> $.
+$s wff F e. ( A -Magma-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-magmahom.html"><mo>&xrarr;</mo><mo>Magma</mo></munder> #B# </mrow> $.
 $s class curry_ $: <mi href="df-bj-cur">curry_</mi> $.
 $s class uncurry_ $: <mi href="df-bj-unc">uncurry_</mi> $.
 
+$s class [s B / A ]s S $: <mrow><mfenced open="[s" close="]s" separators="/"> #B# #A# </mfenced> #S# </mrow> $.
 
 $s wff Prv ph $: <mrow><mo href="ax-prv1.html">Prv</mo> #ph#</mrow> $.
 $s wff F/ x e. A ph $:  <mrow> <mo href="df-bj-rnf.html">&#8498;</mo> #x# <mo>&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
 $s wff [b x /b y ]b ph $: <mrow><mfenced open="[b" close="]b" separators="/b"> #y# #x# </mfenced> #ph# </mrow> $.
 $s wff if- ( ph , ps , ch ) $: <mrow> <mo href="df-bj-if.html">if-</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
-$s class elmtwise $: <mi href="df-elmtwise.html">elmtwise</mi> $.
+$s class elwise $: <mi href="df-elwise.html">elwise</mi> $.
 $s class ( A Proj B ) $: <mfenced><mrow>#A# <mo href="df-bj-proj.html">Proj</mo> #B#</mrow></mfenced> $.
 $s class (| A |) $: <mfenced open="&#x2985;" close="&#x2986;">#A#</mfenced> $.
 $s class FinSum $: <mo href="df-bj-finsum.html">FinSum</mo> $.
 
+$( Peter Mazsa $)
+$s class ( A |X. B ) $: <mrow> #A# <mo href="df-xrn.html">&ltimes;</mo> #B# </mrow> $.
 
 $( Norm Megill $)
 $s class <oL $: <msub href="df-lcv.html"><mo>&#8918;</mo> <mi>L</mi></msub> $.
