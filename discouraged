@@ -14360,6 +14360,8 @@ New usage of "bnnv" is discouraged (7 uses).
 New usage of "bnrel" is discouraged (1 uses).
 New usage of "bnsscmcl" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
+New usage of "br1steqgOLD" is discouraged (0 uses).
+New usage of "br2ndeqgOLD" is discouraged (0 uses).
 New usage of "bra0" is discouraged (1 uses).
 New usage of "bra11" is discouraged (6 uses).
 New usage of "braadd" is discouraged (1 uses).
@@ -14754,6 +14756,8 @@ New usage of "cnvbracl" is discouraged (2 uses).
 New usage of "cnvbramul" is discouraged (1 uses).
 New usage of "cnvbraval" is discouraged (1 uses).
 New usage of "cnvcnvOLD" is discouraged (0 uses).
+New usage of "cnvsnOLD" is discouraged (0 uses).
+New usage of "cnvsngOLD" is discouraged (0 uses).
 New usage of "cnvssOLD" is discouraged (0 uses).
 New usage of "cnvunop" is discouraged (2 uses).
 New usage of "com3rgbi" is discouraged (1 uses).
@@ -17522,6 +17526,9 @@ New usage of "reglogmul" is discouraged (1 uses).
 New usage of "relopabVD" is discouraged (0 uses).
 New usage of "relopabiALT" is discouraged (0 uses).
 New usage of "relrngo" is discouraged (6 uses).
+New usage of "relsn2OLD" is discouraged (0 uses).
+New usage of "relsnOLD" is discouraged (0 uses).
+New usage of "relsnopOLD" is discouraged (0 uses).
 New usage of "renegclALT" is discouraged (0 uses).
 New usage of "renicax" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
@@ -17776,6 +17783,7 @@ New usage of "snelpwrVD" is discouraged (0 uses).
 New usage of "sneqrgOLD" is discouraged (0 uses).
 New usage of "snexALT" is discouraged (1 uses).
 New usage of "snnexOLD" is discouraged (0 uses).
+New usage of "snssgOLD" is discouraged (0 uses).
 New usage of "snssiALT" is discouraged (0 uses).
 New usage of "snssiALTVD" is discouraged (0 uses).
 New usage of "snssl" is discouraged (0 uses).
@@ -18642,6 +18650,8 @@ Proof modification of "bj-zfpow" is discouraged (71 steps).
 Proof modification of "bnj142OLD" is discouraged (51 steps).
 Proof modification of "bnj145OLD" is discouraged (112 steps).
 Proof modification of "bnj538OLD" is discouraged (94 steps).
+Proof modification of "br1steqgOLD" is discouraged (134 steps).
+Proof modification of "br2ndeqgOLD" is discouraged (134 steps).
 Proof modification of "brfi1indALT" is discouraged (789 steps).
 Proof modification of "brfi1indALTOLD" is discouraged (789 steps).
 Proof modification of "brfi1indOLD" is discouraged (48 steps).
@@ -18675,6 +18685,8 @@ Proof modification of "cnncvsaddassdemo" is discouraged (46 steps).
 Proof modification of "cnncvsmulassdemo" is discouraged (95 steps).
 Proof modification of "cnv0OLD" is discouraged (40 steps).
 Proof modification of "cnvcnvOLD" is discouraged (86 steps).
+Proof modification of "cnvsnOLD" is discouraged (29 steps).
+Proof modification of "cnvsngOLD" is discouraged (102 steps).
 Proof modification of "cnvssOLD" is discouraged (62 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
 Proof modification of "compneOLD" is discouraged (89 steps).
@@ -19626,6 +19638,9 @@ Proof modification of "re2luk3" is discouraged (59 steps).
 Proof modification of "reexALT" is discouraged (19 steps).
 Proof modification of "relopabVD" is discouraged (354 steps).
 Proof modification of "relopabiALT" is discouraged (74 steps).
+Proof modification of "relsn2OLD" is discouraged (18 steps).
+Proof modification of "relsnOLD" is discouraged (18 steps).
+Proof modification of "relsnopOLD" is discouraged (21 steps).
 Proof modification of "renegcl" is discouraged (34 steps).
 Proof modification of "renegclALT" is discouraged (149 steps).
 Proof modification of "renicax" is discouraged (76 steps).
@@ -19717,6 +19732,7 @@ Proof modification of "sneqrgOLD" is discouraged (47 steps).
 Proof modification of "snex" is discouraged (64 steps).
 Proof modification of "snexALT" is discouraged (48 steps).
 Proof modification of "snnexOLD" is discouraged (119 steps).
+Proof modification of "snssgOLD" is discouraged (38 steps).
 Proof modification of "snssiALT" is discouraged (40 steps).
 Proof modification of "snssiALTVD" is discouraged (64 steps).
 Proof modification of "snssl" is discouraged (18 steps).

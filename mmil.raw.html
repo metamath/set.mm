@@ -4776,8 +4776,8 @@ numbers).</TD>
 
 <TR>
 <TD>xrmax1 , xrmax2 , xrmin1 , xrmin2 , xrmaxeq , xrmineq ,
-xrmaxlt , xrltmin , xrmaxle , xrlemin , min1 , min2 ,
-lemin , maxlt , ltmin , max0sub , ifle</TD>
+xrmaxlt , xrltmin , xrmaxle , xrlemin ,
+max0sub , ifle</TD>
 <TD><I>none</I></TD>
 </TR>
 
@@ -4794,15 +4794,41 @@ lemin , maxlt , ltmin , max0sub , ifle</TD>
 <TR>
   <TD>2resupmax</TD>
   <TD><I>none</I></TD>
-  <TD>Proved from real trichotomy. Because we do not have this theorem
-  we express maximum in iset.mm using ` sup ( { A , B } , RR , < ) ` (which
-  has expected maximum properties such as ~ maxcl , ~ maxle1 , ~ maxle2 ,
-  ~ maxleast , and ~ maxleb ) rather than ` if ( A <_ B , B , A ) ` .</TD>
+  <TD>Proved from real trichotomy.
+  We express maximum in iset.mm using ` sup ( { A , B } , RR , < ) `
+  rather than ` if ( A <_ B , B , A ) ` . The former has the
+  expected maximum properties such as ~ maxcl , ~ maxle1 , ~ maxle2 ,
+  ~ maxleast , and ~ maxleb .</TD>
+</TR>
+
+<TR>
+  <TD>min1</TD>
+  <TD>~ min1inf</TD>
+</TR>
+
+<TR>
+  <TD>min2</TD>
+  <TD>~ min2inf</TD>
 </TR>
 
 <TR>
   <TD>maxle</TD>
   <TD>~ maxleastb</TD>
+</TR>
+
+<TR>
+  <TD>lemin</TD>
+  <TD>~ lemininf</TD>
+</TR>
+
+<TR>
+  <TD>maxlt</TD>
+  <TD>~ maxltsup</TD>
+</TR>
+
+<TR>
+  <TD>ltmin</TD>
+  <TD>~ ltmininf</TD>
 </TR>
 
 <TR>
