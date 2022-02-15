@@ -9706,6 +9706,15 @@
 "mulsrpr" is used by "mulgt0sr".
 "mulsrpr" is used by "recexsrlem".
 "naecoms-o" is used by "ax12inda2ALT".
+"nbgrclOLD" is used by "nbgrelOLD".
+"nbgrelOLD" is used by "nbgrisvtxOLD".
+"nbgrelOLD" is used by "nbgrsymOLD".
+"nbgrisvtxOLD" is used by "nbgrnself2OLD".
+"nbgrisvtxOLD" is used by "nbgrssovtxOLD".
+"nbgrisvtxOLD" is used by "nbgrssvtxOLD".
+"nbgrnself2OLD" is used by "nbgrssovtxOLD".
+"nbgrnself2OLD" is used by "usgrnbnself2OLD".
+"nbgrssovtxOLD" is used by "nbgrssvwo2OLD".
 "nf3anOLD" is used by "hb3anOLD".
 "nfa1-o" is used by "ax12el".
 "nfa1-o" is used by "ax12eq".
@@ -16733,6 +16742,14 @@ New usage of "n0fOLD" is discouraged (0 uses).
 New usage of "n0lpligALT" is discouraged (0 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
 New usage of "natded" is discouraged (0 uses).
+New usage of "nbgrclOLD" is discouraged (1 uses).
+New usage of "nbgrelOLD" is discouraged (2 uses).
+New usage of "nbgrisvtxOLD" is discouraged (3 uses).
+New usage of "nbgrnself2OLD" is discouraged (2 uses).
+New usage of "nbgrssovtxOLD" is discouraged (1 uses).
+New usage of "nbgrssvtxOLD" is discouraged (0 uses).
+New usage of "nbgrssvwo2OLD" is discouraged (0 uses).
+New usage of "nbgrsymOLD" is discouraged (0 uses).
 New usage of "ndxidOLD" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "nelsnOLD" is discouraged (0 uses).
@@ -18005,6 +18022,7 @@ New usage of "usgredg2ALT" is discouraged (0 uses).
 New usage of "usgredg2vtxeuALT" is discouraged (0 uses).
 New usage of "usgredgleordALT" is discouraged (0 uses).
 New usage of "usgredgprvALT" is discouraged (0 uses).
+New usage of "usgrnbnself2OLD" is discouraged (0 uses).
 New usage of "usgrnloop0ALT" is discouraged (0 uses).
 New usage of "usgrnloopALT" is discouraged (0 uses).
 New usage of "usgrnloopvALT" is discouraged (0 uses).
@@ -19401,6 +19419,14 @@ Proof modification of "mulgnndirOLD" is discouraged (440 steps).
 Proof modification of "n0fOLD" is discouraged (51 steps).
 Proof modification of "n0lpligALT" is discouraged (74 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
+Proof modification of "nbgrclOLD" is discouraged (68 steps).
+Proof modification of "nbgrelOLD" is discouraged (185 steps).
+Proof modification of "nbgrisvtxOLD" is discouraged (53 steps).
+Proof modification of "nbgrnself2OLD" is discouraged (87 steps).
+Proof modification of "nbgrssovtxOLD" is discouraged (100 steps).
+Proof modification of "nbgrssvtxOLD" is discouraged (26 steps).
+Proof modification of "nbgrssvwo2OLD" is discouraged (89 steps).
+Proof modification of "nbgrsymOLD" is discouraged (107 steps).
 Proof modification of "ndxidOLD" is discouraged (48 steps).
 Proof modification of "nelsnOLD" is discouraged (46 steps).
 Proof modification of "nexdOLD" is discouraged (9 steps).
@@ -19814,6 +19840,7 @@ Proof modification of "usgredg2ALT" is discouraged (84 steps).
 Proof modification of "usgredg2vtxeuALT" is discouraged (134 steps).
 Proof modification of "usgredgleordALT" is discouraged (102 steps).
 Proof modification of "usgredgprvALT" is discouraged (124 steps).
+Proof modification of "usgrnbnself2OLD" is discouraged (4 steps).
 Proof modification of "usgrnloop0ALT" is discouraged (86 steps).
 Proof modification of "usgrnloopALT" is discouraged (95 steps).
 Proof modification of "usgrnloopvALT" is discouraged (149 steps).
