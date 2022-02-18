@@ -8683,6 +8683,7 @@
 "isst" is used by "strlem3a".
 "istrkg2d" is used by "axtglowdim2OLD".
 "istrkg2d" is used by "axtgupdim2OLD".
+"isuvtxaOLD" is used by "uvtxael1OLD".
 "isvcOLD" is used by "isvciOLD".
 "isvciOLD" is used by "cncvcOLD".
 "isvciOLD" is used by "hhssnv".
@@ -12904,6 +12905,9 @@
 "uun0.1" is used by "un0.1".
 "uunT1" is used by "sspwimpALT".
 "uunT1" is used by "uunT21".
+"uvtxavalOLD" is used by "isuvtxaOLD".
+"uvtxavalOLD" is used by "uvtxa01vtx0OLD".
+"uvtxavalOLD" is used by "uvtxaelOLD".
 "vacn" is used by "dipcn".
 "vacn" is used by "hlimadd".
 "vacn" is used by "vmcn".
@@ -14772,6 +14776,7 @@ New usage of "conventions" is discouraged (0 uses).
 New usage of "conventions-label" is discouraged (0 uses).
 New usage of "coprmdvdsOLD" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
+New usage of "cplgruvtxbOLD" is discouraged (0 uses).
 New usage of "cqpOLD" is discouraged (0 uses).
 New usage of "crhmsubcALTV" is discouraged (1 uses).
 New usage of "cringcALTV" is discouraged (9 uses).
@@ -16310,6 +16315,7 @@ New usage of "isst" is discouraged (4 uses).
 New usage of "issubgoilem" is discouraged (0 uses).
 New usage of "istrkg2d" is discouraged (2 uses).
 New usage of "istrnN" is discouraged (0 uses).
+New usage of "isuvtxaOLD" is discouraged (1 uses).
 New usage of "isvcOLD" is discouraged (1 uses).
 New usage of "isvciOLD" is discouraged (3 uses).
 New usage of "isvclem" is discouraged (1 uses).
@@ -18058,6 +18064,10 @@ New usage of "uunT21" is discouraged (0 uses).
 New usage of "uunTT1" is discouraged (0 uses).
 New usage of "uunTT1p1" is discouraged (0 uses).
 New usage of "uunTT1p2" is discouraged (0 uses).
+New usage of "uvtxa01vtx0OLD" is discouraged (0 uses).
+New usage of "uvtxael1OLD" is discouraged (0 uses).
+New usage of "uvtxaelOLD" is discouraged (0 uses).
+New usage of "uvtxavalOLD" is discouraged (3 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "vacn" is discouraged (3 uses).
 New usage of "vafval" is discouraged (20 uses).
@@ -18693,6 +18703,7 @@ Proof modification of "con5i" is discouraged (13 steps).
 Proof modification of "conss34OLD" is discouraged (64 steps).
 Proof modification of "conventions" is discouraged (1 steps).
 Proof modification of "coprmdvdsOLD" is discouraged (256 steps).
+Proof modification of "cplgruvtxbOLD" is discouraged (96 steps).
 Proof modification of "csbabgOLD" is discouraged (93 steps).
 Proof modification of "csbcnvgALT" is discouraged (112 steps).
 Proof modification of "csbeq2gOLD" is discouraged (33 steps).
@@ -19326,6 +19337,7 @@ Proof modification of "isrnsigaOLD" is discouraged (202 steps).
 Proof modification of "issgrpALT" is discouraged (53 steps).
 Proof modification of "issmgrpOLD" is discouraged (85 steps).
 Proof modification of "istrkg2d" is discouraged (439 steps).
+Proof modification of "isuvtxaOLD" is discouraged (154 steps).
 Proof modification of "isvcOLD" is discouraged (170 steps).
 Proof modification of "isvciOLD" is discouraged (178 steps).
 Proof modification of "iunconnALT" is discouraged (56 steps).
@@ -19876,6 +19888,10 @@ Proof modification of "uunT21" is discouraged (6 steps).
 Proof modification of "uunTT1" is discouraged (26 steps).
 Proof modification of "uunTT1p1" is discouraged (37 steps).
 Proof modification of "uunTT1p2" is discouraged (37 steps).
+Proof modification of "uvtxa01vtx0OLD" is discouraged (294 steps).
+Proof modification of "uvtxael1OLD" is discouraged (102 steps).
+Proof modification of "uvtxaelOLD" is discouraged (89 steps).
+Proof modification of "uvtxavalOLD" is discouraged (125 steps).
 Proof modification of "uzind4ALT" is discouraged (16 steps).
 Proof modification of "vc2OLD" is discouraged (85 steps).
 Proof modification of "vciOLD" is discouraged (518 steps).
