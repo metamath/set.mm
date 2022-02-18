@@ -15543,6 +15543,7 @@ New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "euexALT" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
+New usage of "eumoOLD" is discouraged (0 uses).
 New usage of "ex-gt" is discouraged (0 uses).
 New usage of "ex-gte" is discouraged (0 uses).
 New usage of "ex-natded5.13" is discouraged (0 uses).
@@ -19025,6 +19026,7 @@ Proof modification of "equvinivOLD" is discouraged (32 steps).
 Proof modification of "equvinvOLD" is discouraged (35 steps).
 Proof modification of "euexALT" is discouraged (32 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
+Proof modification of "eumoOLD" is discouraged (13 steps).
 Proof modification of "ex-natded5.13" is discouraged (67 steps).
 Proof modification of "ex-natded5.13-2" is discouraged (21 steps).
 Proof modification of "ex-natded5.2" is discouraged (18 steps).
