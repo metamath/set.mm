@@ -901,7 +901,7 @@ $s class SubGraph $: <mi href="df-subgr.html">SubGraph</mi> $.
 $s class NeighbVtx $: <mi href="df-nbgr.html">NeighbVtx</mi> $.
 $s class ComplGraph $: <mi href="df-cplgr.html">ComplGraph</mi> $.
 $s class ComplUSGraph $: <mi href="df-cusgr.html">ComplUSGraph</mi> $.
-$s class UnivVtx $: <mi href="df-uvtxa.html">UnivVtx</mi> $.
+$s class UnivVtx $: <mi href="df-uvtx.html">UnivVtx</mi> $.
 $s class .ef $: <mi href="df-edgf.html"> ef </mi> $.
 $s class Vtx $: <mi href="df-vtx.html"> Vtx </mi> $.
 $s class iEdg $: <mi href="df-iedg.html"> iEdg </mi> $.
@@ -1181,11 +1181,11 @@ $s class _R $: <mi href="df-right.html">R</mi> $.
 
 $s class pprod ( A , B ) $: <mrow> <mo>pprod</mo> <mfenced>#A# #B#</mfenced></mrow> $.
 $s class << A , B >> $: <mfenced href="df-altop" open="&#10218;" close="&#10219;">#A# #B#</mfenced> $.
-$s class ( A XX. B ) $: <mfenced>#A# <mi href="df-altxp"> &times;&times; </mi> #B#</mfenced> $.
-$s class ( A /_\ B ) $: <mfenced>#A# <mi href="df-symdif"> &#x2206; </mi> #B#</mfenced> $.
+$s class ( A XX. B ) $: <mfenced><mrow>#A# <mi href="df-altxp"> &times;&times; </mi> #B#</mrow></mfenced> $.
+$s class ( A /_\ B ) $: <mfenced><mrow>#A# <mi href="df-symdif"> &#x2206; </mi> #B#</mrow></mfenced> $.
 $s class _/_\ $: <mi href="df-fwddif.html">&#x25b3;</mi> $.
 $s class _/_\^n $: <msup><mi href="df-fwddifn.html">&#x25b3;</mi><mi>n</mi></msup> $.
-$s class ( A (x) B ) $: <mfenced>#A# <mi href="df-txp"> &otimes; </mi> #B#</mfenced> $.
+$s class ( A (x) B ) $: <mfenced><mrow>#A# <mi href="df-txp"> &otimes; </mi> #B#</mrow></mfenced> $.
 $( $s class (+) $: <mi> &#x2295; </mi> $. $)
 
 $s class SSet $: <mi href="df-sset.html">&#x1D5B2;&#x1D5B2;&#x1D5BE;&#x1D5CD;</mi> $.
@@ -1461,14 +1461,16 @@ $s class RRVec $: <mi href="df-bj-rrvec.html">&Ropf;Vec</mi> $.
 $s class Moore_ $: <munder href="df-bj-moore.html"><mi>Moore</mi> <mo>&#x5F;</mo></munder> $.
 $s class -Set-> $: <munder accentunder href="df-bj-fset.html"><mo>&xrarr;</mo><mo>Set</mo></munder> $.
 $s class -Top-> $: <munder accentunder href="df-bj-tophom.html"><mo>&xrarr;</mo><mo>Top</mo></munder> $.
-$s class -Magma-> $: <munder accentunder href="df-bj-magmahom.html"><mo>&xrarr;</mo><mo>Magma</mo></munder> $.
+$s class -Mgm-> $: <munder accentunder href="df-bj-magmahom.html"><mo>&xrarr;</mo><mo>Mgm</mo></munder> $.
+$s class -TopMgm-> $: <munder accentunder href="df-bj-topmgmhom.html"><mo>&xrarr;</mo><mo>TopMgm</mo></munder> $.
 $s wff F e. ( A -Set-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-fset.html"><mo>&xrarr;</mo><mo>Set</mo></munder> #B# </mrow> $.
 $s wff F e. ( A -Top-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-tophom.html"><mo>&xrarr;</mo><mo>Top</mo></munder> #B# </mrow> $.
-$s wff F e. ( A -Magma-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-magmahom.html"><mo>&xrarr;</mo><mo>Magma</mo></munder> #B# </mrow> $.
+$s wff F e. ( A -Mgm-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-magmahom.html"><mo>&xrarr;</mo><mo>Mgm</mo></munder> #B# </mrow> $.
+$s wff F e. ( A -TopMgm-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-topmgmhom.html"><mo>&xrarr;</mo><mo>TopMgm</mo></munder> #B# </mrow> $.
 $s class curry_ $: <mi href="df-bj-cur">curry_</mi> $.
 $s class uncurry_ $: <mi href="df-bj-unc">uncurry_</mi> $.
 
-$s class [s B / A ]s S $: <mrow><mfenced open="[s" close="]s" separators="/"> #B# #A# </mfenced> #S# </mrow> $.
+$s class [s B / A ]s S $: <mrow><mfenced open="[" close="]s" separators="/"> #B# #A# </mfenced> #S# </mrow> $.
 
 $s wff Prv ph $: <mrow><mo href="ax-prv1.html">Prv</mo> #ph#</mrow> $.
 $s wff F/ x e. A ph $:  <mrow> <mo href="df-bj-rnf.html">&#8498;</mo> #x# <mo>&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
