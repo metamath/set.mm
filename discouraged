@@ -14737,6 +14737,7 @@ New usage of "cnvbracl" is discouraged (2 uses).
 New usage of "cnvbramul" is discouraged (1 uses).
 New usage of "cnvbraval" is discouraged (1 uses).
 New usage of "cnvcnvOLD" is discouraged (0 uses).
+New usage of "cnvoprabOLD" is discouraged (0 uses).
 New usage of "cnvsnOLD" is discouraged (0 uses).
 New usage of "cnvsngOLD" is discouraged (0 uses).
 New usage of "cnvssOLD" is discouraged (0 uses).
@@ -18672,6 +18673,7 @@ Proof modification of "cnncvsaddassdemo" is discouraged (46 steps).
 Proof modification of "cnncvsmulassdemo" is discouraged (95 steps).
 Proof modification of "cnv0OLD" is discouraged (40 steps).
 Proof modification of "cnvcnvOLD" is discouraged (86 steps).
+Proof modification of "cnvoprabOLD" is discouraged (262 steps).
 Proof modification of "cnvsnOLD" is discouraged (29 steps).
 Proof modification of "cnvsngOLD" is discouraged (102 steps).
 Proof modification of "cnvssOLD" is discouraged (62 steps).
