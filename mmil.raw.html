@@ -3036,6 +3036,13 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
+  <TD>fisupg</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle and presumably
+  this theorem would need to be modified to be provable.</TD>
+</TR>
+
+<TR>
   <TD ROWSPAN="3">unfi</TD>
   <TD>~ unsnfi</TD>
   <TD>For the union of a set and a singleton whose element is not
@@ -3050,6 +3057,13 @@ this implies excluded middle</TD>
 <TR>
   <TD><I>for any two finite sets</I></TD>
   <TD>Not provable according to Remark 8.1.17 of [AczelRathjen].</TD>
+</TR>
+
+<TR>
+  <TD>xpfi</TD>
+  <TD><I>none</I></TD>
+  <TD>This is Lemma 8.1.16 of [AczelRathjen] and is therefore presumably
+  provable.</TD>
 </TR>
 
 <TR>
@@ -3086,6 +3100,13 @@ this implies excluded middle</TD>
 <TR>
   <TD>rnfi</TD>
   <TD>~ funrnfi</TD>
+</TR>
+
+<TR>
+  <TD>fofi</TD>
+  <TD>~ f1ofi</TD>
+  <TD>Presumably precluded by an argument similar to ~ domfiexmid
+  (the set.mm proof relies on domfi).</TD>
 </TR>
 
 <TR>
@@ -3464,6 +3485,14 @@ this implies excluded middle</TD>
   <TD>~ fientri3</TD>
   <TD>Because full entri3 is equivalent to the axiom of choice,
   it implies excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>infinf</TD>
+  <TD>~ infnfi</TD>
+  <TD>Defining "A is infinite" as ` _om ~<_ A ` follows definition
+  8.1.4 of [AczelRathjen], p. 71. It can presumably not be shown to
+  be equivalent to ` -. A e. Fin ` in the absence of excluded middle.</TD>
 </TR>
 
 <TR>
@@ -6314,6 +6343,142 @@ than reals.</TD>
 </TR>
 
 <TR>
+  <TD>df-hash</TD>
+  <TD>~ df-size</TD>
+</TR>
+
+<TR>
+  <TD>hashkf , hashgval , hashginv</TD>
+  <TD><I>none</I></TD>
+  <TD>Due to the differences between df-hash in set.mm and
+  ~ df-size here, there's no particular need for these as stated</TD>
+</TR>
+
+<TR>
+  <TD>hashinf</TD>
+  <TD>~ sizeinf</TD>
+</TR>
+
+<TR>
+  <TD>hashbnd</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof is not intuitionistic.</TD>
+</TR>
+
+<TR>
+  <TD>hashfxnn0 , hashf , hashxnn0 , hashresfn , dmhashres ,
+  hashnn0pnf</TD>
+  <TD><I>none</I></TD>
+  <TD>Although ~ df-size is defined for finite sets and infinite
+  sets, it is not clear we would be able to show this definition
+  (or another definition) is defined for all sets.</TD>
+</TR>
+
+<TR>
+  <TD>hashnnn0genn0</TD>
+  <TD><I>none</I></TD>
+  <TD>Not yet known whether this is provable or whether it is the
+  sort of reverse closure theorem that we (at least so far) have
+  been unable to intuitionize.</TD>
+</TR>
+
+<TR>
+  <TD>hashnemnf</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable but the set.mm proof relies on hashnn0pnf</TD>
+</TR>
+
+<TR>
+  <TD>hashv01gt1</TD>
+  <TD>~ sizefiv01gt1</TD>
+</TR>
+
+<TR>
+  <TD>hashfz1</TD>
+  <TD>~ sizefz1</TD>
+</TR>
+
+<TR>
+  <TD>hashen</TD>
+  <TD>~ sizeen</TD>
+</TR>
+
+<TR>
+  <TD>hasheni</TD>
+  <TD>~ sizeen , ~ sizeinf</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hasheqf1o</TD>
+  <TD>~ sizeeqf1o</TD>
+</TR>
+
+<TR>
+  <TD>hasheqf1oi</TD>
+  <TD>~ sizeeqf1oi</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hashf1rn</TD>
+  <TD>~ sizef1rn</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hasheqf1od</TD>
+  <TD>~ sizeeqf1od</TD>
+</TR>
+
+<TR>
+  <TD>hashcard</TD>
+  <TD><I>none</I></TD>
+  <TD>Cardinality is not well developed in iset.mm</TD>
+</TR>
+
+<TR>
+  <TD>hashcl</TD>
+  <TD>~ sizecl</TD>
+</TR>
+
+<TR>
+  <TD>hashxrcl</TD>
+  <TD><I>none</I></TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hashclb , hashvnfin</TD>
+  <TD><I>none</I></TD>
+  <TD>Not yet known whether this is provable or whether it is the
+  sort of reverse closure theorem that we (at least so far) have
+  been unable to intuitionize.</TD>
+</TR>
+
+<TR>
+  <TD>nfile</TD>
+  <TD>~ filtinf</TD>
+  <TD>It is not clear there would be any way to combine the case
+  where ` A ` is finite and the case where it is infinite.</TD>
+</TR>
+
+<TR>
+  <TD>hashvnfin</TD>
+  <TD><I>none</I></TD>
+  <TD>This is a form of reverse closure, presumably not provable.</TD>
+</TR>
+
+<TR>
+  <TD>hashnfinnn0</TD>
+  <TD>~ sizeinf</TD>
+</TR>
+
+<TR>
   <TD>seqshft</TD>
   <TD><I>none currently</I></TD>
   <TD>need to figure out how to adjust this for the differences
@@ -6731,6 +6896,20 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>To define this, will need to tackle all the issues
   with ~ df-isum plus some more around, for example, not equal to zero
   versus apart from zero</TD>
+</TR>
+
+<TR>
+  <TD>znnen</TD>
+  <TD><I>none</I></TD>
+  <TD>Corollary 8.1.23 of [AczelRathjen] and thus presumably provable.
+  The set.mm proof would not work as-is or with small changes, however.</TD>
+</TR>
+
+<TR>
+  <TD>qnnen</TD>
+  <TD><I>none</I></TD>
+  <TD>Corollary 8.1.23 of [AczelRathjen] and thus presumably provable.
+  The set.mm proof would not work as-is or with small changes, however.</TD>
 </TR>
 
 <TR>
