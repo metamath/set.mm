@@ -14365,7 +14365,7 @@ New usage of "brfi1uzindOLD" is discouraged (1 uses).
 New usage of "brresOLD" is discouraged (0 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
-New usage of "cases2OLD" is discouraged (0 uses).
+New usage of "cases2ALT" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
 New usage of "cba" is discouraged (85 uses).
 New usage of "cbncms" is discouraged (5 uses).
@@ -18647,7 +18647,7 @@ Proof modification of "brfi1indOLD" is discouraged (48 steps).
 Proof modification of "brfi1uzindOLD" is discouraged (244 steps).
 Proof modification of "brfvidRP" is discouraged (92 steps).
 Proof modification of "brresOLD" is discouraged (43 steps).
-Proof modification of "cases2OLD" is discouraged (88 steps).
+Proof modification of "cases2ALT" is discouraged (88 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbval2vOLD" is discouraged (20 steps).
 Proof modification of "cbvaldvaOLD" is discouraged (22 steps).
