@@ -12,7 +12,7 @@
 !
 ! Before running 1.tmp as a script from MM>, change "xxx" in 1.tmp to the
 ! label list (such as "ax-?,mp*") to scan to see if the proof size is
-! recuded.
+! reduced.
 !
 ! Example: we want to see if any theorem currently using "funsn1" or
 ! "funsn2" can be "minimize"d with 2 newly added theorems "fnsn1" and
