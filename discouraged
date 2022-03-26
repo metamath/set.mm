@@ -17765,6 +17765,7 @@ New usage of "siilem2" is discouraged (1 uses).
 New usage of "simpl2imOLD" is discouraged (0 uses).
 New usage of "simplbi2VD" is discouraged (0 uses).
 New usage of "simplbi2comtVD" is discouraged (0 uses).
+New usage of "simplbiimOLD" is discouraged (0 uses).
 New usage of "sineq0ALT" is discouraged (0 uses).
 New usage of "smcn" is discouraged (3 uses).
 New usage of "smcnlem" is discouraged (1 uses).
@@ -19731,6 +19732,7 @@ Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
 Proof modification of "simpl2imOLD" is discouraged (12 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comtVD" is discouraged (42 steps).
+Proof modification of "simplbiimOLD" is discouraged (12 steps).
 Proof modification of "sineq0ALT" is discouraged (986 steps).
 Proof modification of "smgrpassOLD" is discouraged (54 steps).
 Proof modification of "smgrpismgmOLD" is discouraged (22 steps).
