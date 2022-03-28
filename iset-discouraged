@@ -132,7 +132,11 @@
 "eu3h" is used by "2eu4".
 "eu3h" is used by "eu3".
 "eu3h" is used by "mo2r".
-"frecclOLD" is used by "frecuzrdgrrn".
+"frecclOLD" is used by "frecuzrdgrrnOLD".
+"frecuzrdgrrnOLD" is used by "frec2uzrdg".
+"frecuzrdgrrnOLD" is used by "frecuzrdgcl".
+"frecuzrdgrrnOLD" is used by "frecuzrdgfn".
+"frecuzrdgrrnOLD" is used by "frecuzrdgsuc".
 "hbs1" is used by "eu1".
 "hbs1" is used by "hbab1".
 "hbs1" is used by "mopick".
@@ -270,6 +274,7 @@ New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "frecclOLD" is discouraged (1 uses).
+New usage of "frecuzrdgrrnOLD" is discouraged (4 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
 New usage of "mathbox" is discouraged (0 uses).
@@ -396,6 +401,7 @@ Proof modification of "dvelimALT" is discouraged (158 steps).
 Proof modification of "findset" is discouraged (96 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "frecclOLD" is discouraged (285 steps).
+Proof modification of "frecuzrdgrrnOLD" is discouraged (362 steps).
 Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "idref" is discouraged (94 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
