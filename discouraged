@@ -340,8 +340,6 @@
 "4syl" is used by "acunirnmpt2".
 "4syl" is used by "acunirnmpt2f".
 "4syl" is used by "aevlem".
-"4syl" is used by "aevlemALTOLD".
-"4syl" is used by "aevlemOLD".
 "4syl" is used by "afv0nbfvbi".
 "4syl" is used by "aomclem6".
 "4syl" is used by "axdc3lem2".
@@ -1513,10 +1511,7 @@
 "axacndlem4" is used by "axacndlem5".
 "axacndlem5" is used by "axacnd".
 "axaddf" is used by "axaddcl".
-"axc11nlemALT" is used by "aevlemALTOLD".
 "axc11nlemALT" is used by "axc11nALT".
-"axc11nlemOLD2" is used by "aevlemOLD".
-"axc11nlemOLD2" is used by "axc11nOLDOLD".
 "axc11rvOLD" is used by "axc16gOLD".
 "axc16ALT" is used by "axc16gALT".
 "axc16g-o" is used by "ax12inda2".
@@ -13483,7 +13478,7 @@ New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4exmidOLD" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
 New usage of "4lt10OLD" is discouraged (1 uses).
-New usage of "4syl" is discouraged (190 uses).
+New usage of "4syl" is discouraged (188 uses).
 New usage of "5lt10OLD" is discouraged (1 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
@@ -13598,10 +13593,7 @@ New usage of "aecom-o" is discouraged (4 uses).
 New usage of "aecoms-o" is discouraged (6 uses).
 New usage of "aev-o" is discouraged (1 uses).
 New usage of "aev2ALT" is discouraged (0 uses).
-New usage of "aevALTOLD" is discouraged (0 uses).
 New usage of "aevdemo" is discouraged (0 uses).
-New usage of "aevlemALTOLD" is discouraged (0 uses).
-New usage of "aevlemOLD" is discouraged (0 uses).
 New usage of "ajfun" is discouraged (0 uses).
 New usage of "ajfuni" is discouraged (1 uses).
 New usage of "ajfval" is discouraged (2 uses).
@@ -13621,6 +13613,7 @@ New usage of "amgmlemALT" is discouraged (0 uses).
 New usage of "anabss7p1" is discouraged (0 uses).
 New usage of "ancomstVD" is discouraged (0 uses).
 New usage of "anmp" is discouraged (11 uses).
+New usage of "annotanannotOLD" is discouraged (0 uses).
 New usage of "archnq" is discouraged (1 uses).
 New usage of "arglem1N" is discouraged (0 uses).
 New usage of "atabs2i" is discouraged (1 uses).
@@ -13796,11 +13789,9 @@ New usage of "axc11-o" is discouraged (0 uses).
 New usage of "axc11n-16" is discouraged (0 uses).
 New usage of "axc11nALT" is discouraged (0 uses).
 New usage of "axc11nOLD" is discouraged (0 uses).
-New usage of "axc11nOLDOLD" is discouraged (0 uses).
 New usage of "axc11next" is discouraged (0 uses).
 New usage of "axc11nfromc11" is discouraged (0 uses).
-New usage of "axc11nlemALT" is discouraged (2 uses).
-New usage of "axc11nlemOLD2" is discouraged (2 uses).
+New usage of "axc11nlemALT" is discouraged (1 uses).
 New usage of "axc11rvOLD" is discouraged (1 uses).
 New usage of "axc11vOLD" is discouraged (0 uses).
 New usage of "axc16ALT" is discouraged (1 uses).
@@ -17406,7 +17397,6 @@ New usage of "poml4N" is discouraged (3 uses).
 New usage of "poml5N" is discouraged (1 uses).
 New usage of "poml6N" is discouraged (1 uses).
 New usage of "prcdnq" is discouraged (14 uses).
-New usage of "preqr1OLD" is discouraged (0 uses).
 New usage of "preqsnOLD" is discouraged (0 uses).
 New usage of "prlem934" is discouraged (3 uses).
 New usage of "prlem936" is discouraged (1 uses).
@@ -18289,10 +18279,7 @@ Proof modification of "addmodlteqALT" is discouraged (237 steps).
 Proof modification of "aecom-o" is discouraged (28 steps).
 Proof modification of "aev-o" is discouraged (117 steps).
 Proof modification of "aev2ALT" is discouraged (34 steps).
-Proof modification of "aevALTOLD" is discouraged (36 steps).
 Proof modification of "aevdemo" is discouraged (69 steps).
-Proof modification of "aevlemALTOLD" is discouraged (42 steps).
-Proof modification of "aevlemOLD" is discouraged (52 steps).
 Proof modification of "al2imVD" is discouraged (48 steps).
 Proof modification of "albidOLD" is discouraged (10 steps).
 Proof modification of "alephf1ALT" is discouraged (47 steps).
@@ -18307,6 +18294,7 @@ Proof modification of "amgmlemALT" is discouraged (1054 steps).
 Proof modification of "anabss7p1" is discouraged (5 steps).
 Proof modification of "ancomstVD" is discouraged (22 steps).
 Proof modification of "anmp" is discouraged (8 steps).
+Proof modification of "annotanannotOLD" is discouraged (50 steps).
 Proof modification of "avril1" is discouraged (194 steps).
 Proof modification of "ax1" is discouraged (3 steps).
 Proof modification of "ax10fromc7" is discouraged (50 steps).
@@ -18356,11 +18344,9 @@ Proof modification of "axc11n11" is discouraged (23 steps).
 Proof modification of "axc11n11r" is discouraged (146 steps).
 Proof modification of "axc11nALT" is discouraged (62 steps).
 Proof modification of "axc11nOLD" is discouraged (64 steps).
-Proof modification of "axc11nOLDOLD" is discouraged (63 steps).
 Proof modification of "axc11next" is discouraged (270 steps).
 Proof modification of "axc11nfromc11" is discouraged (28 steps).
 Proof modification of "axc11nlemALT" is discouraged (58 steps).
-Proof modification of "axc11nlemOLD2" is discouraged (54 steps).
 Proof modification of "axc11rvOLD" is discouraged (38 steps).
 Proof modification of "axc11vOLD" is discouraged (27 steps).
 Proof modification of "axc14" is discouraged (72 steps).
@@ -19566,7 +19552,6 @@ Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
 Proof modification of "pm3.2an3OLD" is discouraged (29 steps).
 Proof modification of "pm4.81ALT" is discouraged (11 steps).
-Proof modification of "preqr1OLD" is discouraged (81 steps).
 Proof modification of "preqsnOLD" is discouraged (75 steps).
 Proof modification of "prmgaplcm" is discouraged (247 steps).
 Proof modification of "prmgapprmo" is discouraged (387 steps).
