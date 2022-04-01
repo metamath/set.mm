@@ -4104,7 +4104,9 @@
 "chub2i" is used by "qlaxr3i".
 "chub2i" is used by "sumdmdlem2".
 "clmgmOLD" is used by "exidcl".
+"clwwlknOLD" is used by "isclwwlknOLD".
 "clwwlknclwwlkdifsOLD" is used by "clwwlknclwwlkdifnumOLD".
+"clwwlknonOLD" is used by "isclwwlknonOLD".
 "cm0" is used by "chirred".
 "cm2j" is used by "cm2ji".
 "cm2ji" is used by "cm2mi".
@@ -4548,6 +4550,7 @@
 "df-ch0" is used by "spansn0".
 "df-chj" is used by "sshjval".
 "df-chsup" is used by "hsupval".
+"df-clwwlknOLD" is used by "clwwlknOLD".
 "df-cm" is used by "cmbr".
 "df-cnfld" is used by "cffldtocusgr".
 "df-cnfld" is used by "cnfldadd".
@@ -8561,6 +8564,9 @@
 "isch2" is used by "nlelchi".
 "isch3" is used by "chcompl".
 "isch3" is used by "occl".
+"isclwwlknOLD" is used by "clwwlknwwlksnOLD".
+"isclwwlknonOLD" is used by "clwwlknonelOLD".
+"isclwwlknonOLD" is used by "clwwlknonwwlknonbOLD".
 "iscom2" is used by "iscringd".
 "iscom2" is used by "iscrngo2".
 "isdivrngo" is used by "isdrngo1".
@@ -14656,11 +14662,18 @@ New usage of "chvarvOLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
 New usage of "clmgmOLD" is discouraged (1 uses).
+New usage of "clwwlkn0OLD" is discouraged (0 uses).
+New usage of "clwwlknOLD" is discouraged (1 uses).
 New usage of "clwwlknclwwlkdifnumOLD" is discouraged (0 uses).
 New usage of "clwwlknclwwlkdifsOLD" is discouraged (1 uses).
-New usage of "clwwlksndisjOLD" is discouraged (0 uses).
-New usage of "clwwlksnunOLD" is discouraged (0 uses).
-New usage of "clwwlksvbijOLD" is discouraged (0 uses).
+New usage of "clwwlknonOLD" is discouraged (1 uses).
+New usage of "clwwlknondisjOLD" is discouraged (0 uses).
+New usage of "clwwlknonelOLD" is discouraged (0 uses).
+New usage of "clwwlknonwwlknonbOLD" is discouraged (0 uses).
+New usage of "clwwlknunOLD" is discouraged (0 uses).
+New usage of "clwwlknwwlknclOLD" is discouraged (0 uses).
+New usage of "clwwlknwwlksnOLD" is discouraged (0 uses).
+New usage of "clwwlkvbijOLD" is discouraged (0 uses).
 New usage of "cm0" is discouraged (1 uses).
 New usage of "cm2j" is discouraged (1 uses).
 New usage of "cm2ji" is discouraged (1 uses).
@@ -14888,6 +14901,7 @@ New usage of "df-ch" is discouraged (1 uses).
 New usage of "df-ch0" is discouraged (8 uses).
 New usage of "df-chj" is discouraged (1 uses).
 New usage of "df-chsup" is discouraged (1 uses).
+New usage of "df-clwwlknOLD" is discouraged (1 uses).
 New usage of "df-cm" is discouraged (1 uses).
 New usage of "df-cnfld" is discouraged (12 uses).
 New usage of "df-cnfn" is discouraged (2 uses).
@@ -16243,6 +16257,8 @@ New usage of "iscbn" is discouraged (6 uses).
 New usage of "isch" is discouraged (2 uses).
 New usage of "isch2" is discouraged (8 uses).
 New usage of "isch3" is discouraged (2 uses).
+New usage of "isclwwlknOLD" is discouraged (1 uses).
+New usage of "isclwwlknonOLD" is discouraged (2 uses).
 New usage of "iscmgmALT" is discouraged (0 uses).
 New usage of "iscom2" is discouraged (2 uses).
 New usage of "iscsgrpALT" is discouraged (0 uses).
@@ -18660,11 +18676,18 @@ Proof modification of "chvarvOLD" is discouraged (10 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleljustALT2" is discouraged (25 steps).
 Proof modification of "clmgmOLD" is discouraged (50 steps).
+Proof modification of "clwwlkn0OLD" is discouraged (24 steps).
+Proof modification of "clwwlknOLD" is discouraged (164 steps).
 Proof modification of "clwwlknclwwlkdifnumOLD" is discouraged (201 steps).
 Proof modification of "clwwlknclwwlkdifsOLD" is discouraged (162 steps).
-Proof modification of "clwwlksndisjOLD" is discouraged (105 steps).
-Proof modification of "clwwlksnunOLD" is discouraged (245 steps).
-Proof modification of "clwwlksvbijOLD" is discouraged (492 steps).
+Proof modification of "clwwlknonOLD" is discouraged (132 steps).
+Proof modification of "clwwlknondisjOLD" is discouraged (105 steps).
+Proof modification of "clwwlknonelOLD" is discouraged (120 steps).
+Proof modification of "clwwlknonwwlknonbOLD" is discouraged (497 steps).
+Proof modification of "clwwlknunOLD" is discouraged (245 steps).
+Proof modification of "clwwlknwwlknclOLD" is discouraged (138 steps).
+Proof modification of "clwwlknwwlksnOLD" is discouraged (217 steps).
+Proof modification of "clwwlkvbijOLD" is discouraged (492 steps).
 Proof modification of "cnaddabloOLD" is discouraged (65 steps).
 Proof modification of "cnaddcom" is discouraged (71 steps).
 Proof modification of "cncvcOLD" is discouraged (38 steps).
@@ -19312,6 +19335,8 @@ Proof modification of "infregelb" is discouraged (185 steps).
 Proof modification of "int0OLD" is discouraged (45 steps).
 Proof modification of "int2" is discouraged (14 steps).
 Proof modification of "int3" is discouraged (17 steps).
+Proof modification of "isclwwlknOLD" is discouraged (58 steps).
+Proof modification of "isclwwlknonOLD" is discouraged (68 steps).
 Proof modification of "iscmgmALT" is discouraged (57 steps).
 Proof modification of "iscsgrpALT" is discouraged (57 steps).
 Proof modification of "iseriALT" is discouraged (54 steps).
