@@ -133,16 +133,19 @@
 "eu3h" is used by "eu3".
 "eu3h" is used by "mo2r".
 "frec2uzrdgOLD" is used by "frecuzrdgfn".
-"frec2uzrdgOLD" is used by "frecuzrdglem".
+"frec2uzrdgOLD" is used by "frecuzrdglemOLD".
 "frec2uzrdgOLD" is used by "frecuzrdgsuc".
 "frecclOLD" is used by "frecuzrdgrrnOLD".
 "frecsucOLD" is used by "frec2uzrdgOLD".
 "frecsucOLD" is used by "frec2uzsucd".
 "frecsucOLD" is used by "frecclOLD".
 "frecsucOLD" is used by "frecuzrdgsuc".
+"frecuzrdglemOLD" is used by "frecuzrdgcl".
+"frecuzrdglemOLD" is used by "frecuzrdgfn".
+"frecuzrdglemOLD" is used by "frecuzrdgsuc".
 "frecuzrdgrom" is used by "frecuzrdg0".
 "frecuzrdgrom" is used by "frecuzrdgfn".
-"frecuzrdgrom" is used by "frecuzrdglem".
+"frecuzrdgrom" is used by "frecuzrdglemOLD".
 "frecuzrdgrrnOLD" is used by "frec2uzrdgOLD".
 "frecuzrdgrrnOLD" is used by "frecuzrdgcl".
 "frecuzrdgrrnOLD" is used by "frecuzrdgfn".
@@ -286,6 +289,7 @@ New usage of "fnexALT" is discouraged (0 uses).
 New usage of "frec2uzrdgOLD" is discouraged (3 uses).
 New usage of "frecclOLD" is discouraged (1 uses).
 New usage of "frecsucOLD" is discouraged (4 uses).
+New usage of "frecuzrdglemOLD" is discouraged (3 uses).
 New usage of "frecuzrdgrom" is discouraged (3 uses).
 New usage of "frecuzrdgrrnOLD" is discouraged (4 uses).
 New usage of "hbs1" is discouraged (5 uses).
@@ -416,6 +420,7 @@ Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "frec2uzrdgOLD" is discouraged (771 steps).
 Proof modification of "frecclOLD" is discouraged (285 steps).
 Proof modification of "frecsucOLD" is discouraged (263 steps).
+Proof modification of "frecuzrdglemOLD" is discouraged (119 steps).
 Proof modification of "frecuzrdgrrnOLD" is discouraged (362 steps).
 Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "idref" is discouraged (94 steps).
