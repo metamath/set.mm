@@ -140,6 +140,10 @@
 "frecsucOLD" is used by "frec2uzsucd".
 "frecsucOLD" is used by "frecclOLD".
 "frecsucOLD" is used by "frecuzrdgsuc".
+"frecuzrdgfn" is used by "frecuzrdg0".
+"frecuzrdgfn" is used by "frecuzrdgcl".
+"frecuzrdgfn" is used by "frecuzrdgsuc".
+"frecuzrdgfn" is used by "iseqfn".
 "frecuzrdglemOLD" is used by "frecuzrdgcl".
 "frecuzrdglemOLD" is used by "frecuzrdgfn".
 "frecuzrdglemOLD" is used by "frecuzrdgsuc".
@@ -289,6 +293,7 @@ New usage of "fnexALT" is discouraged (0 uses).
 New usage of "frec2uzrdgOLD" is discouraged (3 uses).
 New usage of "frecclOLD" is discouraged (1 uses).
 New usage of "frecsucOLD" is discouraged (4 uses).
+New usage of "frecuzrdgfn" is discouraged (4 uses).
 New usage of "frecuzrdglemOLD" is discouraged (3 uses).
 New usage of "frecuzrdgrom" is discouraged (3 uses).
 New usage of "frecuzrdgrrnOLD" is discouraged (4 uses).
