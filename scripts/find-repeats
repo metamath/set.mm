@@ -15,7 +15,7 @@ mmfile="${1:-set.mm}"
 
 # MacOS' grep implementation is terrible & runs out of memory, so prefer
 # ggrep (GNU grep) if it exists on the system.
-if command -v grep > /dev/null ; then
+if command -v ggrep > /dev/null ; then
   GREP=ggrep
 else
   GREP=grep
