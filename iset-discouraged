@@ -140,12 +140,13 @@
 "frecsucOLD" is used by "frec2uzsucd".
 "frecsucOLD" is used by "frecclOLD".
 "frecsucOLD" is used by "frecuzrdgsuc".
-"frecuzrdgfn" is used by "frecuzrdg0".
+"frecuzrdg0OLD" is used by "iseq1".
+"frecuzrdgfn" is used by "frecuzrdg0OLD".
 "frecuzrdgfn" is used by "frecuzrdgsuc".
 "frecuzrdgfn" is used by "iseqfn".
 "frecuzrdglemOLD" is used by "frecuzrdgfn".
 "frecuzrdglemOLD" is used by "frecuzrdgsuc".
-"frecuzrdgrom" is used by "frecuzrdg0".
+"frecuzrdgrom" is used by "frecuzrdg0OLD".
 "frecuzrdgrom" is used by "frecuzrdgfn".
 "frecuzrdgrom" is used by "frecuzrdglemOLD".
 "frecuzrdgrrnOLD" is used by "frec2uzrdgOLD".
@@ -305,6 +306,7 @@ New usage of "fnexALT" is discouraged (0 uses).
 New usage of "frec2uzrdgOLD" is discouraged (3 uses).
 New usage of "frecclOLD" is discouraged (1 uses).
 New usage of "frecsucOLD" is discouraged (4 uses).
+New usage of "frecuzrdg0OLD" is discouraged (1 uses).
 New usage of "frecuzrdgfn" is discouraged (3 uses).
 New usage of "frecuzrdglemOLD" is discouraged (2 uses).
 New usage of "frecuzrdgrom" is discouraged (3 uses).
@@ -438,6 +440,7 @@ Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "frec2uzrdgOLD" is discouraged (771 steps).
 Proof modification of "frecclOLD" is discouraged (285 steps).
 Proof modification of "frecsucOLD" is discouraged (263 steps).
+Proof modification of "frecuzrdg0OLD" is discouraged (152 steps).
 Proof modification of "frecuzrdglemOLD" is discouraged (119 steps).
 Proof modification of "frecuzrdgrrnOLD" is discouraged (362 steps).
 Proof modification of "idALT" is discouraged (26 steps).
