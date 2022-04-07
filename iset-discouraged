@@ -159,6 +159,21 @@
 "hbs1" is used by "mopick".
 "hbs1" is used by "nfs1v".
 "hbs1" is used by "sb9v".
+"iseqclOLD" is used by "expival".
+"iseqclOLD" is used by "expivallem".
+"iseqclOLD" is used by "ialgrp1".
+"iseqclOLD" is used by "ibcval5".
+"iseqclOLD" is used by "iseqcaopr2".
+"iseqclOLD" is used by "iseqdistr".
+"iseqclOLD" is used by "iseqf".
+"iseqclOLD" is used by "iseqhomo".
+"iseqclOLD" is used by "iseqid3".
+"iseqclOLD" is used by "iseqp1".
+"iseqclOLD" is used by "iseqsplit".
+"iseqclOLD" is used by "iseqz".
+"iseqclOLD" is used by "isermono".
+"iseqclOLD" is used by "serige0".
+"iseqclOLD" is used by "serile".
 "mo3h" is used by "mo2dc".
 "mo3h" is used by "mo3".
 "mo3h" is used by "mo4f".
@@ -299,6 +314,7 @@ New usage of "frecuzrdgrom" is discouraged (3 uses).
 New usage of "frecuzrdgrrnOLD" is discouraged (4 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
+New usage of "iseqclOLD" is discouraged (15 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
@@ -429,6 +445,7 @@ Proof modification of "frecuzrdglemOLD" is discouraged (119 steps).
 Proof modification of "frecuzrdgrrnOLD" is discouraged (362 steps).
 Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "idref" is discouraged (94 steps).
+Proof modification of "iseqclOLD" is discouraged (12 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
