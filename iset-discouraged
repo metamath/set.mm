@@ -140,13 +140,10 @@
 "frecsucOLD" is used by "frec2uzsucd".
 "frecsucOLD" is used by "frecclOLD".
 "frecsucOLD" is used by "frecuzrdgsuc".
-"frecuzrdg0OLD" is used by "iseq1".
-"frecuzrdgfn" is used by "frecuzrdg0OLD".
 "frecuzrdgfn" is used by "frecuzrdgsuc".
 "frecuzrdgfn" is used by "iseqfn".
 "frecuzrdglemOLD" is used by "frecuzrdgfn".
 "frecuzrdglemOLD" is used by "frecuzrdgsuc".
-"frecuzrdgrom" is used by "frecuzrdg0OLD".
 "frecuzrdgrom" is used by "frecuzrdgfn".
 "frecuzrdgrom" is used by "frecuzrdglemOLD".
 "frecuzrdgrrnOLD" is used by "frec2uzrdgOLD".
@@ -157,6 +154,23 @@
 "hbs1" is used by "mopick".
 "hbs1" is used by "nfs1v".
 "hbs1" is used by "sb9v".
+"iseq1OLD" is used by "bcn2".
+"iseq1OLD" is used by "exp1".
+"iseq1OLD" is used by "expivallem".
+"iseq1OLD" is used by "fac1".
+"iseq1OLD" is used by "ialgr0".
+"iseq1OLD" is used by "iseq1p".
+"iseq1OLD" is used by "iseqcaopr3".
+"iseq1OLD" is used by "iseqfveq".
+"iseq1OLD" is used by "iseqfveq2".
+"iseq1OLD" is used by "iseqhomo".
+"iseq1OLD" is used by "iseqid".
+"iseq1OLD" is used by "iseqid3s".
+"iseq1OLD" is used by "iseqshft2".
+"iseq1OLD" is used by "iseqsplit".
+"iseq1OLD" is used by "iseqss".
+"iseq1OLD" is used by "iseqz".
+"iseq1OLD" is used by "resqrexlemf1".
 "iseqclOLD" is used by "expival".
 "iseqclOLD" is used by "expivallem".
 "iseqclOLD" is used by "ialgrp1".
@@ -306,13 +320,13 @@ New usage of "fnexALT" is discouraged (0 uses).
 New usage of "frec2uzrdgOLD" is discouraged (3 uses).
 New usage of "frecclOLD" is discouraged (1 uses).
 New usage of "frecsucOLD" is discouraged (4 uses).
-New usage of "frecuzrdg0OLD" is discouraged (1 uses).
-New usage of "frecuzrdgfn" is discouraged (3 uses).
+New usage of "frecuzrdgfn" is discouraged (2 uses).
 New usage of "frecuzrdglemOLD" is discouraged (2 uses).
-New usage of "frecuzrdgrom" is discouraged (3 uses).
+New usage of "frecuzrdgrom" is discouraged (2 uses).
 New usage of "frecuzrdgrrnOLD" is discouraged (3 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
+New usage of "iseq1OLD" is discouraged (17 uses).
 New usage of "iseqclOLD" is discouraged (15 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
@@ -440,11 +454,11 @@ Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "frec2uzrdgOLD" is discouraged (771 steps).
 Proof modification of "frecclOLD" is discouraged (285 steps).
 Proof modification of "frecsucOLD" is discouraged (263 steps).
-Proof modification of "frecuzrdg0OLD" is discouraged (152 steps).
 Proof modification of "frecuzrdglemOLD" is discouraged (119 steps).
 Proof modification of "frecuzrdgrrnOLD" is discouraged (362 steps).
 Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "idref" is discouraged (94 steps).
+Proof modification of "iseq1OLD" is discouraged (11 steps).
 Proof modification of "iseqclOLD" is discouraged (12 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
