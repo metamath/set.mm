@@ -134,21 +134,22 @@
 "eu3h" is used by "mo2r".
 "frec2uzrdgOLD" is used by "frecuzrdgfn".
 "frec2uzrdgOLD" is used by "frecuzrdglemOLD".
-"frec2uzrdgOLD" is used by "frecuzrdgsuc".
+"frec2uzrdgOLD" is used by "frecuzrdgsucOLD".
 "frecclOLD" is used by "frecuzrdgrrnOLD".
 "frecsucOLD" is used by "frec2uzrdgOLD".
 "frecsucOLD" is used by "frec2uzsucd".
 "frecsucOLD" is used by "frecclOLD".
-"frecsucOLD" is used by "frecuzrdgsuc".
-"frecuzrdgfn" is used by "frecuzrdgsuc".
+"frecsucOLD" is used by "frecuzrdgsucOLD".
+"frecuzrdgfn" is used by "frecuzrdgsucOLD".
 "frecuzrdgfn" is used by "iseqfn".
 "frecuzrdglemOLD" is used by "frecuzrdgfn".
-"frecuzrdglemOLD" is used by "frecuzrdgsuc".
+"frecuzrdglemOLD" is used by "frecuzrdgsucOLD".
 "frecuzrdgrom" is used by "frecuzrdgfn".
 "frecuzrdgrom" is used by "frecuzrdglemOLD".
 "frecuzrdgrrnOLD" is used by "frec2uzrdgOLD".
 "frecuzrdgrrnOLD" is used by "frecuzrdgfn".
-"frecuzrdgrrnOLD" is used by "frecuzrdgsuc".
+"frecuzrdgrrnOLD" is used by "frecuzrdgsucOLD".
+"frecuzrdgsucOLD" is used by "iseqp1".
 "hbs1" is used by "eu1".
 "hbs1" is used by "hbab1".
 "hbs1" is used by "mopick".
@@ -324,6 +325,7 @@ New usage of "frecuzrdgfn" is discouraged (2 uses).
 New usage of "frecuzrdglemOLD" is discouraged (2 uses).
 New usage of "frecuzrdgrom" is discouraged (2 uses).
 New usage of "frecuzrdgrrnOLD" is discouraged (3 uses).
+New usage of "frecuzrdgsucOLD" is discouraged (1 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
 New usage of "iseq1OLD" is discouraged (17 uses).
@@ -456,6 +458,7 @@ Proof modification of "frecclOLD" is discouraged (285 steps).
 Proof modification of "frecsucOLD" is discouraged (263 steps).
 Proof modification of "frecuzrdglemOLD" is discouraged (119 steps).
 Proof modification of "frecuzrdgrrnOLD" is discouraged (362 steps).
+Proof modification of "frecuzrdgsucOLD" is discouraged (754 steps).
 Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "idref" is discouraged (94 steps).
 Proof modification of "iseq1OLD" is discouraged (11 steps).
