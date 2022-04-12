@@ -180,6 +180,17 @@
 "iseqclOLD" is used by "isermono".
 "iseqclOLD" is used by "serige0".
 "iseqclOLD" is used by "serile".
+"iseqf" is used by "ialgrf".
+"iseqf" is used by "iserf".
+"iseqf" is used by "iserfre".
+"iseqf" is used by "resqrexlemf".
+"iseqfn" is used by "fac0".
+"iseqfn" is used by "facnn".
+"iseqfn" is used by "iseqf".
+"iseqfn" is used by "iseqfeq".
+"iseqfn" is used by "iseqfeq2".
+"iseqfn" is used by "iseqss".
+"iseqfn" is used by "iser0f".
 "iseqp1OLD" is used by "climserile".
 "iseqp1OLD" is used by "expivallem".
 "iseqp1OLD" is used by "expp1".
@@ -339,6 +350,8 @@ New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
 New usage of "iseq1OLD" is discouraged (17 uses).
 New usage of "iseqclOLD" is discouraged (14 uses).
+New usage of "iseqf" is discouraged (4 uses).
+New usage of "iseqfn" is discouraged (7 uses).
 New usage of "iseqp1OLD" is discouraged (17 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
