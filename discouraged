@@ -13462,6 +13462,7 @@ New usage of "3dvds2decOLD" is discouraged (0 uses).
 New usage of "3dvdsOLD" is discouraged (0 uses).
 New usage of "3dvdsdecOLD" is discouraged (0 uses).
 New usage of "3ianorOLD" is discouraged (0 uses).
+New usage of "3imp3i2anOLD" is discouraged (0 uses).
 New usage of "3impdirp1" is discouraged (0 uses).
 New usage of "3impexpVD" is discouraged (0 uses).
 New usage of "3impexpbicomVD" is discouraged (0 uses).
@@ -15517,7 +15518,6 @@ New usage of "eqsbc3rOLD" is discouraged (0 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
 New usage of "eqsnOLD" is discouraged (0 uses).
 New usage of "equcomi1" is discouraged (1 uses).
-New usage of "equequ2OLD" is discouraged (0 uses).
 New usage of "equid1" is discouraged (1 uses).
 New usage of "equid1ALT" is discouraged (0 uses).
 New usage of "equidq" is discouraged (0 uses).
@@ -15528,9 +15528,6 @@ New usage of "equs5aALT" is discouraged (0 uses).
 New usage of "equs5eALT" is discouraged (0 uses).
 New usage of "equsb3ALT" is discouraged (0 uses).
 New usage of "equsexALT" is discouraged (0 uses).
-New usage of "equtr2OLD" is discouraged (0 uses).
-New usage of "equvinivOLD" is discouraged (0 uses).
-New usage of "equvinvOLD" is discouraged (0 uses).
 New usage of "erngbase-rN" is discouraged (4 uses).
 New usage of "erngdv-rN" is discouraged (0 uses).
 New usage of "erngdvlem1-rN" is discouraged (3 uses).
@@ -18268,6 +18265,7 @@ Proof modification of "3dvds2decOLD" is discouraged (476 steps).
 Proof modification of "3dvdsOLD" is discouraged (556 steps).
 Proof modification of "3dvdsdecOLD" is discouraged (222 steps).
 Proof modification of "3ianorOLD" is discouraged (20 steps).
+Proof modification of "3imp3i2anOLD" is discouraged (64 steps).
 Proof modification of "3impdirp1" is discouraged (21 steps).
 Proof modification of "3impexpVD" is discouraged (104 steps).
 Proof modification of "3impexpbicomVD" is discouraged (89 steps).
@@ -19040,7 +19038,6 @@ Proof modification of "eqsbc3rOLD" is discouraged (71 steps).
 Proof modification of "eqsbc3rVD" is discouraged (129 steps).
 Proof modification of "eqsnOLD" is discouraged (73 steps).
 Proof modification of "equcomi1" is discouraged (16 steps).
-Proof modification of "equequ2OLD" is discouraged (26 steps).
 Proof modification of "equid1" is discouraged (50 steps).
 Proof modification of "equid1ALT" is discouraged (36 steps).
 Proof modification of "equidq" is discouraged (27 steps).
@@ -19051,9 +19048,6 @@ Proof modification of "equs5aALT" is discouraged (25 steps).
 Proof modification of "equs5eALT" is discouraged (39 steps).
 Proof modification of "equsb3ALT" is discouraged (44 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
-Proof modification of "equtr2OLD" is discouraged (20 steps).
-Proof modification of "equvinivOLD" is discouraged (32 steps).
-Proof modification of "equvinvOLD" is discouraged (35 steps).
 Proof modification of "euexALT" is discouraged (32 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
 Proof modification of "eumoOLD" is discouraged (13 steps).
