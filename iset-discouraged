@@ -222,7 +222,6 @@
 "peano2nnnn" is used by "nnindnn".
 "peano5nnnn" is used by "nnindnn".
 "rdgivallem" is used by "rdgival".
-"rdgivallem" is used by "rdgon".
 "reapti" is used by "apreap".
 "reapti" is used by "apti".
 "reapti" is used by "rimul".
@@ -363,7 +362,7 @@ New usage of "peano1nnnn" is discouraged (1 uses).
 New usage of "peano2nnnn" is discouraged (1 uses).
 New usage of "peano5nnnn" is discouraged (1 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
-New usage of "rdgivallem" is discouraged (2 uses).
+New usage of "rdgivallem" is discouraged (1 uses).
 New usage of "reapti" is discouraged (3 uses).
 New usage of "reapval" is discouraged (4 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
