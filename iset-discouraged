@@ -158,7 +158,6 @@
 "iseq1OLD" is used by "iseqfveq".
 "iseq1OLD" is used by "iseqhomo".
 "iseq1OLD" is used by "iseqid".
-"iseq1OLD" is used by "iseqid3s".
 "iseq1OLD" is used by "iseqz".
 "iseq1OLD" is used by "resqrexlemf1".
 "iseqclOLD" is used by "expival".
@@ -190,7 +189,6 @@
 "iseqp1OLD" is used by "ialgrp1".
 "iseqp1OLD" is used by "iseqhomo".
 "iseqp1OLD" is used by "iseqid2".
-"iseqp1OLD" is used by "iseqid3s".
 "iseqp1OLD" is used by "iseqz".
 "iseqp1OLD" is used by "resqrexlemfp1".
 "mo3h" is used by "mo2dc".
@@ -332,11 +330,11 @@ New usage of "frecuzrdgrom" is discouraged (2 uses).
 New usage of "frecuzrdgrrnOLD" is discouraged (2 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
-New usage of "iseq1OLD" is discouraged (12 uses).
+New usage of "iseq1OLD" is discouraged (11 uses).
 New usage of "iseqclOLD" is discouraged (12 uses).
 New usage of "iseqf" is discouraged (4 uses).
 New usage of "iseqfn" is discouraged (6 uses).
-New usage of "iseqp1OLD" is discouraged (10 uses).
+New usage of "iseqp1OLD" is discouraged (9 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
