@@ -318,7 +318,6 @@ New usage of "iseq1OLD" is discouraged (8 uses).
 New usage of "iseqclOLD" is discouraged (8 uses).
 New usage of "iseqf" is discouraged (4 uses).
 New usage of "iseqfn" is discouraged (6 uses).
-New usage of "iseqp1OLD" is discouraged (0 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
@@ -451,7 +450,6 @@ Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "idref" is discouraged (94 steps).
 Proof modification of "iseq1OLD" is discouraged (11 steps).
 Proof modification of "iseqclOLD" is discouraged (12 steps).
-Proof modification of "iseqp1OLD" is discouraged (12 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
