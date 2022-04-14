@@ -199,7 +199,6 @@
 "iseqp1OLD" is used by "iseqhomo".
 "iseqp1OLD" is used by "iseqid2".
 "iseqp1OLD" is used by "iseqid3s".
-"iseqp1OLD" is used by "iseqm1".
 "iseqp1OLD" is used by "iseqshft2".
 "iseqp1OLD" is used by "iseqsplit".
 "iseqp1OLD" is used by "iseqz".
@@ -348,7 +347,7 @@ New usage of "iseq1OLD" is discouraged (16 uses).
 New usage of "iseqclOLD" is discouraged (14 uses).
 New usage of "iseqf" is discouraged (4 uses).
 New usage of "iseqfn" is discouraged (6 uses).
-New usage of "iseqp1OLD" is discouraged (16 uses).
+New usage of "iseqp1OLD" is discouraged (15 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
