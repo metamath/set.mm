@@ -149,54 +149,15 @@
 "hbs1" is used by "mopick".
 "hbs1" is used by "nfs1v".
 "hbs1" is used by "sb9v".
-"iseq1OLD" is used by "bcn2".
-"iseq1OLD" is used by "exp1".
-"iseq1OLD" is used by "expivallem".
-"iseq1OLD" is used by "fac1".
-"iseq1OLD" is used by "ialgr0".
-"iseq1OLD" is used by "iseq1p".
-"iseq1OLD" is used by "iseqcaopr3".
-"iseq1OLD" is used by "iseqfveq".
-"iseq1OLD" is used by "iseqfveq2".
-"iseq1OLD" is used by "iseqhomo".
-"iseq1OLD" is used by "iseqid".
-"iseq1OLD" is used by "iseqid3s".
-"iseq1OLD" is used by "iseqshft2".
-"iseq1OLD" is used by "iseqsplit".
-"iseq1OLD" is used by "iseqss".
-"iseq1OLD" is used by "iseqz".
-"iseq1OLD" is used by "resqrexlemf1".
-"iseqclOLD" is used by "expival".
-"iseqclOLD" is used by "expivallem".
-"iseqclOLD" is used by "ialgrp1".
-"iseqclOLD" is used by "ibcval5".
-"iseqclOLD" is used by "iseqcaopr2".
-"iseqclOLD" is used by "iseqdistr".
-"iseqclOLD" is used by "iseqf".
-"iseqclOLD" is used by "iseqhomo".
-"iseqclOLD" is used by "iseqid3".
-"iseqclOLD" is used by "iseqsplit".
-"iseqclOLD" is used by "iseqz".
-"iseqclOLD" is used by "isermono".
-"iseqclOLD" is used by "serige0".
-"iseqclOLD" is used by "serile".
-"iseqp1OLD" is used by "climserile".
-"iseqp1OLD" is used by "expivallem".
-"iseqp1OLD" is used by "expp1".
-"iseqp1OLD" is used by "facp1".
-"iseqp1OLD" is used by "ialgrp1".
-"iseqp1OLD" is used by "iseqcaopr3".
-"iseqp1OLD" is used by "iseqfveq2".
-"iseqp1OLD" is used by "iseqhomo".
-"iseqp1OLD" is used by "iseqid2".
-"iseqp1OLD" is used by "iseqid3s".
-"iseqp1OLD" is used by "iseqm1".
-"iseqp1OLD" is used by "iseqshft2".
-"iseqp1OLD" is used by "iseqsplit".
-"iseqp1OLD" is used by "iseqss".
-"iseqp1OLD" is used by "iseqz".
-"iseqp1OLD" is used by "isermono".
-"iseqp1OLD" is used by "resqrexlemfp1".
+"iseqf" is used by "ialgrf".
+"iseqf" is used by "iserf".
+"iseqf" is used by "iserfre".
+"iseqf" is used by "resqrexlemf".
+"iseqfn" is used by "fac0".
+"iseqfn" is used by "facnn".
+"iseqfn" is used by "iseqfeq".
+"iseqfn" is used by "iseqfeq2".
+"iseqfn" is used by "iser0f".
 "mo3h" is used by "mo2dc".
 "mo3h" is used by "mo3".
 "mo3h" is used by "mo4f".
@@ -211,7 +172,6 @@
 "peano2nnnn" is used by "nnindnn".
 "peano5nnnn" is used by "nnindnn".
 "rdgivallem" is used by "rdgival".
-"rdgivallem" is used by "rdgon".
 "reapti" is used by "apreap".
 "reapti" is used by "apti".
 "reapti" is used by "rimul".
@@ -337,9 +297,8 @@ New usage of "frecuzrdgrom" is discouraged (2 uses).
 New usage of "frecuzrdgrrnOLD" is discouraged (2 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
-New usage of "iseq1OLD" is discouraged (17 uses).
-New usage of "iseqclOLD" is discouraged (14 uses).
-New usage of "iseqp1OLD" is discouraged (17 uses).
+New usage of "iseqf" is discouraged (4 uses).
+New usage of "iseqfn" is discouraged (5 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
@@ -350,7 +309,7 @@ New usage of "peano1nnnn" is discouraged (1 uses).
 New usage of "peano2nnnn" is discouraged (1 uses).
 New usage of "peano5nnnn" is discouraged (1 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
-New usage of "rdgivallem" is discouraged (2 uses).
+New usage of "rdgivallem" is discouraged (1 uses).
 New usage of "reapti" is discouraged (3 uses).
 New usage of "reapval" is discouraged (4 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
@@ -470,9 +429,6 @@ Proof modification of "frecuzrdglemOLD" is discouraged (119 steps).
 Proof modification of "frecuzrdgrrnOLD" is discouraged (362 steps).
 Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "idref" is discouraged (94 steps).
-Proof modification of "iseq1OLD" is discouraged (11 steps).
-Proof modification of "iseqclOLD" is discouraged (12 steps).
-Proof modification of "iseqp1OLD" is discouraged (12 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
