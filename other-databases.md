@@ -15,6 +15,7 @@ included in this repository (sorted alphabetically by GitHub ID):
 * @sorear's [A variation on Peano](https://github.com/sorear/metamath-stuff/blob/master/yapeano.mm), whose goal is to treat Peano arithmetic as a first-order theory with terms.
 * @tirix's [FOL without overloading](https://github.com/tirix/set-noov.mm).
 * @tirix's [Q0 Logic](https://github.com/tirix/q0.mm).
+* @openai's [MiniF2F](https://github.com/openai/miniF2F/tree/main/metamath) is a collection of exercise statements from math olympiads.
 
 *Anyone* can create a Metamath database, but we thought linking to some of them
 might be of use.
