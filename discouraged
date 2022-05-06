@@ -10381,6 +10381,17 @@
 "nsmallnq" is used by "ltbtwnnq".
 "nsmallnq" is used by "nqpr".
 "nsmallnq" is used by "reclem2pr".
+"numclwlk2lem2f1oOLD" is used by "numclwwlk2lem3OLD".
+"numclwlk2lem2fOLD" is used by "numclwlk2lem2f1oOLD".
+"numclwlk2lem2fvOLD" is used by "numclwlk2lem2f1oOLD".
+"numclwwlk2lem1OLD" is used by "numclwlk2lem2f1oOLD".
+"numclwwlk2lem3OLD" is used by "numclwwlk2OLD".
+"numclwwlkovgOLD" is used by "numclwwlk3lemOLD".
+"numclwwlkovgOLD" is used by "numclwwlkovgelOLD".
+"numclwwlkovhOLD" is used by "numclwlk2lem2f1oOLD".
+"numclwwlkovhOLD" is used by "numclwlk2lem2fOLD".
+"numclwwlkovhOLD" is used by "numclwwlk2lem1OLD".
+"numclwwlkovhOLD" is used by "numclwwlk3lemOLD".
 "nv0" is used by "hlmul0".
 "nv0" is used by "ipasslem1".
 "nv0" is used by "nvge0".
@@ -17027,7 +17038,17 @@ New usage of "nqex" is discouraged (4 uses).
 New usage of "nqpr" is discouraged (1 uses).
 New usage of "nsmallnq" is discouraged (3 uses).
 New usage of "nsnlpligALT" is discouraged (0 uses).
+New usage of "numclwlk2lem2f1oOLD" is discouraged (1 uses).
+New usage of "numclwlk2lem2fOLD" is discouraged (1 uses).
+New usage of "numclwlk2lem2fvOLD" is discouraged (1 uses).
+New usage of "numclwwlk2OLD" is discouraged (0 uses).
+New usage of "numclwwlk2lem1OLD" is discouraged (1 uses).
 New usage of "numclwwlk2lem1lemOLD" is discouraged (0 uses).
+New usage of "numclwwlk2lem3OLD" is discouraged (1 uses).
+New usage of "numclwwlk3lemOLD" is discouraged (0 uses).
+New usage of "numclwwlkovgOLD" is discouraged (2 uses).
+New usage of "numclwwlkovgelOLD" is discouraged (0 uses).
+New usage of "numclwwlkovhOLD" is discouraged (4 uses).
 New usage of "nv0" is discouraged (5 uses).
 New usage of "nv0lid" is discouraged (4 uses).
 New usage of "nv0rid" is discouraged (7 uses).
@@ -19604,7 +19625,17 @@ Proof modification of "notnotrALTVD" is discouraged (34 steps).
 Proof modification of "notnotriOLD" is discouraged (8 steps).
 Proof modification of "npss0OLD" is discouraged (29 steps).
 Proof modification of "nsnlpligALT" is discouraged (110 steps).
+Proof modification of "numclwlk2lem2f1oOLD" is discouraged (842 steps).
+Proof modification of "numclwlk2lem2fOLD" is discouraged (817 steps).
+Proof modification of "numclwlk2lem2fvOLD" is discouraged (75 steps).
+Proof modification of "numclwwlk2OLD" is discouraged (187 steps).
+Proof modification of "numclwwlk2lem1OLD" is discouraged (755 steps).
 Proof modification of "numclwwlk2lem1lemOLD" is discouraged (293 steps).
+Proof modification of "numclwwlk2lem3OLD" is discouraged (66 steps).
+Proof modification of "numclwwlk3lemOLD" is discouraged (349 steps).
+Proof modification of "numclwwlkovgOLD" is discouraged (110 steps).
+Proof modification of "numclwwlkovgelOLD" is discouraged (115 steps).
+Proof modification of "numclwwlkovhOLD" is discouraged (108 steps).
 Proof modification of "ogrpinvOLD" is discouraged (149 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
 Proof modification of "onfrALT" is discouraged (88 steps).
