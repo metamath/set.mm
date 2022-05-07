@@ -197,7 +197,11 @@ jobs:
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      # See https://github.com/actions/setup-python
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '>=3.9'
       - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
       # Python3 is very slow.  We can speed it up by deleting all
       # logging calls, since we don't use the logging anyway.
@@ -212,7 +216,11 @@ jobs:
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      # See https://github.com/actions/setup-python
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '>=3.9'
       - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
       # Python3 is very slow.  We can speed it up by deleting all
       # logging calls, since we don't use the logging anyway.
@@ -227,7 +235,11 @@ jobs:
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      # See https://github.com/actions/setup-python
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '>=3.9'
       - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
       # Python3 is very slow.  We can speed it up by deleting all
       # logging calls, since we don't use the logging anyway.
