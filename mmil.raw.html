@@ -2582,8 +2582,10 @@ the definition of limit ordinal or is it unrelated?).</TD>
 </TR>
 
 <TR>
-<TD>tfinds</TD>
+<TD>tfinds , tfindsg</TD>
 <TD>~ tfis3 </TD>
+<TD>We are unable to separate limit and successor ordinals
+using case elimination.</TD>
 </TR>
 
 <TR>
@@ -2722,6 +2724,19 @@ hasn't been a need for it.</TD>
 </TR>
 
 <TR>
+  <TD>omopth2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ordinal trichotomy.</TD>
+</TR>
+
+<TR>
+  <TD>omeulem1 , omeu</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ordinal trichotomy, omopth2 ,
+  oaord , and other theorems we don't have.</TD>
+</TR>
+
+<TR>
 <TD>suc11reg</TD>
 <TD>~ suc11g </TD>
 </TR>
@@ -2753,14 +2768,59 @@ characteristic function and initial value.</TD>
 </TR>
 
 <TR>
-<TD>oaord1</TD>
-<TD><I>none yet</I></TD>
+  <TD>oa0r</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof distinguishes between limit and successor
+  cases using case elimination.</TD>
+</TR>
+
+<TR>
+  <TD>oaordi</TD>
+  <TD>~ nnaordi</TD>
+  <TD>The set.mm proof of oaordi relies on being able to distinguish
+  between limit ordinals and successor ordinals via case
+  elimination.</TD>
+</TR>
+
+<TR>
+  <TD>oaord</TD>
+  <TD>~ nnaord</TD>
+  <TD>The set.mm proof of oaord relies on ordinal trichotomy.</TD>
+</TR>
+
+<TR>
+  <TD>oawordri</TD>
+  <TD><I>none</I></TD>
+  <TD>Implies excluded middle as shown at ~ oawordriexmid</TD>
 </TR>
 
 <TR>
 <TD>oaword</TD>
 <TD>~ oawordi </TD>
 <TD>The other direction presumably could be proven but isn't yet.</TD>
+</TR>
+
+<TR>
+<TD>oaord1</TD>
+<TD><I>none yet</I></TD>
+</TR>
+
+<TR>
+  <TD>oaword2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on oawordri and oa0r</TD>
+</TR>
+
+<TR>
+  <TD>oawordeu</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on a number of things we don't have</TD>
+</TR>
+
+<TR>
+  <TD>oawordex</TD>
+  <TD>~ nnawordex</TD>
+  <TD>The set.mm proof relies on oawordeu</TD>
 </TR>
 
 <TR>
@@ -2775,9 +2835,8 @@ characteristic function and initial value.</TD>
 </TR>
 
 <TR>
-<TD>nnawordex</TD>
-<TD>~ nnaordex </TD>
-<TD>nnawordex is only used a few places in set.mm</TD>
+<TD>oawordex</TD>
+<TD>~ nnawordex </TD>
 </TR>
 
 <TR>
@@ -2882,7 +2941,8 @@ we wanted strict dominance to have the expected properties.</TD>
 <TR>
 <TD>omxpenlem , omxpen , omf1o</TD>
 <TD><I>none</I></TD>
-<TD>The set.mm proof relies on omwordi</TD>
+<TD>The set.mm proof relies on omwordi , oaord , om0r , and
+other theorems we do not have</TD>
 </TR>
 
 <TR>
