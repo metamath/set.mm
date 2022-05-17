@@ -596,6 +596,7 @@
 "abshicom" is used by "bcs3".
 "ac2" is used by "ac3".
 "ac3" is used by "axac2".
+"adantl3rOLD" is used by "ad5ant1345OLD".
 "addassnq" is used by "addasspr".
 "addassnq" is used by "ltaddnq".
 "addassnq" is used by "ltexprlem7".
@@ -13568,6 +13569,7 @@ New usage of "ad4ant23OLD" is discouraged (0 uses).
 New usage of "ad4ant24OLD" is discouraged (0 uses).
 New usage of "ad4antlrOLD" is discouraged (0 uses).
 New usage of "ad4antrOLD" is discouraged (0 uses).
+New usage of "ad5ant1345OLD" is discouraged (0 uses).
 New usage of "ad5ant13OLD" is discouraged (0 uses).
 New usage of "ad5ant14OLD" is discouraged (0 uses).
 New usage of "ad5ant15OLD" is discouraged (0 uses).
@@ -13588,6 +13590,7 @@ New usage of "ad8antrOLD" is discouraged (0 uses).
 New usage of "ad9antlrOLD" is discouraged (0 uses).
 New usage of "ad9antrOLD" is discouraged (0 uses).
 New usage of "adant423OLD" is discouraged (0 uses).
+New usage of "adantl3rOLD" is discouraged (1 uses).
 New usage of "addassnq" is discouraged (4 uses).
 New usage of "addasspi" is discouraged (1 uses).
 New usage of "addasspr" is discouraged (17 uses).
@@ -18352,6 +18355,7 @@ Proof modification of "ad4ant23OLD" is discouraged (25 steps).
 Proof modification of "ad4ant24OLD" is discouraged (18 steps).
 Proof modification of "ad4antlrOLD" is discouraged (17 steps).
 Proof modification of "ad4antrOLD" is discouraged (17 steps).
+Proof modification of "ad5ant1345OLD" is discouraged (8 steps).
 Proof modification of "ad5ant13OLD" is discouraged (49 steps).
 Proof modification of "ad5ant14OLD" is discouraged (57 steps).
 Proof modification of "ad5ant15OLD" is discouraged (66 steps).
@@ -18372,6 +18376,7 @@ Proof modification of "ad8antrOLD" is discouraged (29 steps).
 Proof modification of "ad9antlrOLD" is discouraged (32 steps).
 Proof modification of "ad9antrOLD" is discouraged (32 steps).
 Proof modification of "adant423OLD" is discouraged (15 steps).
+Proof modification of "adantl3rOLD" is discouraged (27 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
 Proof modification of "addmodlteqALT" is discouraged (237 steps).
 Proof modification of "aecom-o" is discouraged (28 steps).
