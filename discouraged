@@ -17808,6 +17808,8 @@ New usage of "simp-6lOLD" is discouraged (0 uses).
 New usage of "simp-6rOLD" is discouraged (0 uses).
 New usage of "simp-7lOLD" is discouraged (0 uses).
 New usage of "simp-7rOLD" is discouraged (0 uses).
+New usage of "simp-8lOLD" is discouraged (0 uses).
+New usage of "simp-8rOLD" is discouraged (0 uses).
 New usage of "simpl2imOLD" is discouraged (0 uses).
 New usage of "simplbi2VD" is discouraged (0 uses).
 New usage of "simplbi2comtVD" is discouraged (0 uses).
@@ -19814,6 +19816,8 @@ Proof modification of "simp-6lOLD" is discouraged (21 steps).
 Proof modification of "simp-6rOLD" is discouraged (21 steps).
 Proof modification of "simp-7lOLD" is discouraged (24 steps).
 Proof modification of "simp-7rOLD" is discouraged (24 steps).
+Proof modification of "simp-8lOLD" is discouraged (27 steps).
+Proof modification of "simp-8rOLD" is discouraged (27 steps).
 Proof modification of "simpl2imOLD" is discouraged (12 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comtVD" is discouraged (42 steps).
