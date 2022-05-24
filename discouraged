@@ -17803,6 +17803,7 @@ New usage of "siilem2" is discouraged (1 uses).
 New usage of "simp-4lOLD" is discouraged (0 uses).
 New usage of "simp-4rOLD" is discouraged (0 uses).
 New usage of "simp-5lOLD" is discouraged (0 uses).
+New usage of "simp-5rOLD" is discouraged (0 uses).
 New usage of "simpl2imOLD" is discouraged (0 uses).
 New usage of "simplbi2VD" is discouraged (0 uses).
 New usage of "simplbi2comtVD" is discouraged (0 uses).
@@ -19804,6 +19805,7 @@ Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
 Proof modification of "simp-4lOLD" is discouraged (15 steps).
 Proof modification of "simp-4rOLD" is discouraged (15 steps).
 Proof modification of "simp-5lOLD" is discouraged (18 steps).
+Proof modification of "simp-5rOLD" is discouraged (18 steps).
 Proof modification of "simpl2imOLD" is discouraged (12 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comtVD" is discouraged (42 steps).
