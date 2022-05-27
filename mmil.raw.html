@@ -990,7 +990,7 @@ above).
 </LI>
 
 <LI>
-With excluded middle not equal (` =/= `) and apart (` # `) are equivalent.
+With excluded middle not equal (` =/= `) and apart (` =//= `) are equivalent.
 When working with real and complex numbers, apartness is almost always what
 you want. See ~ df-ap for more on apartness.
 </LI>
@@ -5024,7 +5024,7 @@ these lines).</TD>
 <TD>xrltlen</TD>
 <TD><I>none</I></TD>
 <TD>We presumably could prove an analogue to ~ ltleap but we have not
-yet defined apartness for extended reals (` # ` is for complex
+yet defined apartness for extended reals (` =//= ` is for complex
 numbers).</TD>
 </TR>
 
@@ -6992,7 +6992,7 @@ theorem is unused in set.mm.</TD>
 Here's one possibility if we do want to define square roots on (some)
 complex numbers:
 It should be possible to define the complex square root function on all
-complex numbers satisfying ` ( Im `` x ) # 0 \/ 0 <_ ( Re `` x ) ` , using a
+complex numbers satisfying ` ( Im `` x ) =//= 0 \/ 0 <_ ( Re `` x ) ` , using a
 similar construction to the one used in set.mm. You need the real square
 root as a basis for the construction, but then there is a trick using
 the complex number x + |x| (see sqreu) that yields the complex square
@@ -7117,7 +7117,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   answer if ` A =/= 0 ` and ` i ` as the answer if ` A = 0 ` , and uses
   excluded middle to combine those cases, it is presumably not provable
   as stated. We could prove the theorem with the additional condition
-  that ` A # 0 ` , but it is unused in set.mm.</TD>
+  that ` A =//= 0 ` , but it is unused in set.mm.</TD>
 </TR>
 
 <TR>
