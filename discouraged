@@ -4098,6 +4098,25 @@
 "chub2i" is used by "qlaxr3i".
 "chub2i" is used by "sumdmdlem2".
 "clmgmOLD" is used by "exidcl".
+"clwlksf1clwwlkOLD" is used by "clwlksf1oclwwlkOLD".
+"clwlksf1clwwlklem0OLD" is used by "clwlksf1clwwlklem1OLD".
+"clwlksf1clwwlklem0OLD" is used by "clwlksf1clwwlklem2OLD".
+"clwlksf1clwwlklem0OLD" is used by "clwlksf1clwwlklem3OLD".
+"clwlksf1clwwlklem1OLD" is used by "clwlksf1clwwlklemOLD".
+"clwlksf1clwwlklem2OLD" is used by "clwlksf1clwwlklemOLD".
+"clwlksf1clwwlklem3OLD" is used by "clwlksf1clwwlklemOLD".
+"clwlksf1clwwlklemOLD" is used by "clwlksf1clwwlkOLD".
+"clwlksf1oclwwlkOLD" is used by "clwlkssizeeqOLD".
+"clwlksfclwwlk1hashOLD" is used by "clwlksfclwwlk2sswdOLD".
+"clwlksfclwwlk1hashOLD" is used by "clwlksfclwwlkOLD".
+"clwlksfclwwlk1hashnOLD" is used by "clwlksf1clwwlkOLD".
+"clwlksfclwwlk1hashnOLD" is used by "clwlksf1clwwlklemOLD".
+"clwlksfclwwlk2sswdOLD" is used by "clwlksfclwwlkOLD".
+"clwlksfclwwlk2wrdOLD" is used by "clwlksfclwwlk2sswdOLD".
+"clwlksfclwwlk2wrdOLD" is used by "clwlksfclwwlkOLD".
+"clwlksfclwwlkOLD" is used by "clwlksf1clwwlkOLD".
+"clwlksfclwwlkOLD" is used by "clwlksfoclwwlkOLD".
+"clwlksfoclwwlkOLD" is used by "clwlksf1oclwwlkOLD".
 "clwwlknOLD" is used by "isclwwlknOLD".
 "clwwlknclwwlkdifsOLD" is used by "clwwlknclwwlkdifnumOLD".
 "clwwlknonOLD" is used by "isclwwlknonOLD".
@@ -14700,6 +14719,20 @@ New usage of "chvarvOLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
 New usage of "clmgmOLD" is discouraged (1 uses).
+New usage of "clwlksf1clwwlkOLD" is discouraged (1 uses).
+New usage of "clwlksf1clwwlklem0OLD" is discouraged (3 uses).
+New usage of "clwlksf1clwwlklem1OLD" is discouraged (1 uses).
+New usage of "clwlksf1clwwlklem2OLD" is discouraged (1 uses).
+New usage of "clwlksf1clwwlklem3OLD" is discouraged (1 uses).
+New usage of "clwlksf1clwwlklemOLD" is discouraged (1 uses).
+New usage of "clwlksf1oclwwlkOLD" is discouraged (1 uses).
+New usage of "clwlksfclwwlk1hashOLD" is discouraged (2 uses).
+New usage of "clwlksfclwwlk1hashnOLD" is discouraged (2 uses).
+New usage of "clwlksfclwwlk2sswdOLD" is discouraged (1 uses).
+New usage of "clwlksfclwwlk2wrdOLD" is discouraged (2 uses).
+New usage of "clwlksfclwwlkOLD" is discouraged (2 uses).
+New usage of "clwlksfoclwwlkOLD" is discouraged (1 uses).
+New usage of "clwlkssizeeqOLD" is discouraged (0 uses).
 New usage of "clwwlkn0OLD" is discouraged (0 uses).
 New usage of "clwwlknOLD" is discouraged (1 uses).
 New usage of "clwwlknclwwlkdifnumOLD" is discouraged (0 uses).
@@ -18742,6 +18775,20 @@ Proof modification of "chvarvOLD" is discouraged (10 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleljustALT2" is discouraged (25 steps).
 Proof modification of "clmgmOLD" is discouraged (50 steps).
+Proof modification of "clwlksf1clwwlkOLD" is discouraged (481 steps).
+Proof modification of "clwlksf1clwwlklem0OLD" is discouraged (159 steps).
+Proof modification of "clwlksf1clwwlklem1OLD" is discouraged (124 steps).
+Proof modification of "clwlksf1clwwlklem2OLD" is discouraged (80 steps).
+Proof modification of "clwlksf1clwwlklem3OLD" is discouraged (116 steps).
+Proof modification of "clwlksf1clwwlklemOLD" is discouraged (544 steps).
+Proof modification of "clwlksf1oclwwlkOLD" is discouraged (51 steps).
+Proof modification of "clwlksfclwwlk1hashOLD" is discouraged (181 steps).
+Proof modification of "clwlksfclwwlk1hashnOLD" is discouraged (65 steps).
+Proof modification of "clwlksfclwwlk2sswdOLD" is discouraged (65 steps).
+Proof modification of "clwlksfclwwlk2wrdOLD" is discouraged (160 steps).
+Proof modification of "clwlksfclwwlkOLD" is discouraged (1368 steps).
+Proof modification of "clwlksfoclwwlkOLD" is discouraged (743 steps).
+Proof modification of "clwlkssizeeqOLD" is discouraged (143 steps).
 Proof modification of "clwwlkn0OLD" is discouraged (24 steps).
 Proof modification of "clwwlknOLD" is discouraged (164 steps).
 Proof modification of "clwwlknclwwlkdifnumOLD" is discouraged (201 steps).
