@@ -19883,11 +19883,13 @@ Proof modification of "simp-8rOLD" is discouraged (27 steps).
 Proof modification of "simp-9lOLD" is discouraged (30 steps).
 Proof modification of "simp-9rOLD" is discouraged (30 steps).
 Proof modification of "simpl2imOLD" is discouraged (12 steps).
+Proof modification of "simplOLD" is discouraged (7 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comtVD" is discouraged (42 steps).
 Proof modification of "simplbiimOLD" is discouraged (12 steps).
 Proof modification of "simplllOLD" is discouraged (10 steps).
 Proof modification of "simpllrOLD" is discouraged (10 steps).
+Proof modification of "simprOLD" is discouraged (7 steps).
 Proof modification of "sineq0ALT" is discouraged (986 steps).
 Proof modification of "smgrpassOLD" is discouraged (54 steps).
 Proof modification of "smgrpismgmOLD" is discouraged (22 steps).
