@@ -3,7 +3,10 @@
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 This is part of an ongoing project to improve naming consistency.  If you have
-suggestions for better names, let me know.
+suggestions for better names, let us know. It lists changes in set.mm (for
+iset.mm, see the git history, although many of the proposed or historical
+changes described here also apply to iset.mm, or should be adopted in iset.mm
+when someone gets the chance).
 
 To update your mathbox, you can make global substitutions into
 your local version by processing the ones WITHOUT "Notes" in REVERSE order.
@@ -19,7 +22,8 @@ proposed  syl5*     *trid       (syl5bi -> biimtrid; syl5eqel -> eqeltrid;etc.)
 proposed  syl6*     *trdi
 proposed  *mpt*     *mpf* or *mptf* (maps-to for functions)
 proposed  *mpt2*    *mpo* or *mpto* (maps-to for operations)
-(Please send any comments on these proposals to Norm Megill.)
+(Please send any comments on these proposals to the mailing list or
+make a github issue.)
 
 DONE:
 Date      Old       New         Notes
@@ -12411,3 +12415,5 @@ Date      Old       New         Notes
  8-Feb-04 zfnull    0ex
  8-Feb-04 limelon   [--same--]  changed first -> to /\ in antecedent
 
+For older changes, the git history has some old archives checked in
+going back to 1998.
