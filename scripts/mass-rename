@@ -164,7 +164,7 @@ if [ "$rewrap" = 'true' ]; then
   scripts/rewrap "$mmfile"
 fi
 
-# Rewrap, then verify database to ensure that it's okay
+# Verify database to ensure that everything is okay
 metamath "read $mmfile" 'verify proof *' 'verify markup * /top_date_skip' quit
 
 echo 'File ,dated-renames has all the dates + renames listed above' >&2

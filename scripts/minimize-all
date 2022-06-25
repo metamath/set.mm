@@ -20,5 +20,5 @@ metamath "read ${mmfile}" \
          "substitute 1.tmp xxx $theorem a \"\"" \
          exit \
          'submit 1.tmp' \
-         "write source \"${mmfile}\"" \
+         "write source \"${mmfile}\" /rewrap" \
          quit
