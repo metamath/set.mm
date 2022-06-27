@@ -18133,6 +18133,8 @@ New usage of "supsrlem" is discouraged (1 uses).
 New usage of "syl2an2rOLD" is discouraged (0 uses).
 New usage of "syl3an2OLD" is discouraged (0 uses).
 New usage of "syl3an3OLD" is discouraged (0 uses).
+New usage of "syl3anl2OLD" is discouraged (0 uses).
+New usage of "syl3anr2OLD" is discouraged (0 uses).
 New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
 New usage of "syld3an1OLD" is discouraged (0 uses).
@@ -20138,6 +20140,8 @@ Proof modification of "suppfnssOLD" is discouraged (319 steps).
 Proof modification of "syl2an2rOLD" is discouraged (15 steps).
 Proof modification of "syl3an2OLD" is discouraged (19 steps).
 Proof modification of "syl3an3OLD" is discouraged (18 steps).
+Proof modification of "syl3anl2OLD" is discouraged (24 steps).
+Proof modification of "syl3anr2OLD" is discouraged (23 steps).
 Proof modification of "syl5imp" is discouraged (23 steps).
 Proof modification of "syl5impVD" is discouraged (57 steps).
 Proof modification of "syld3an1OLD" is discouraged (23 steps).
