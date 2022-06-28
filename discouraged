@@ -13524,6 +13524,7 @@ New usage of "3impexpVD" is discouraged (0 uses).
 New usage of "3impexpbicomVD" is discouraged (0 uses).
 New usage of "3impexpbicomiVD" is discouraged (0 uses).
 New usage of "3impiaOLD" is discouraged (0 uses).
+New usage of "3jaoOLD" is discouraged (0 uses).
 New usage of "3lcm2e6woprm" is discouraged (1 uses).
 New usage of "3lt10OLD" is discouraged (1 uses).
 New usage of "3noncolr1N" is discouraged (1 uses).
@@ -18130,6 +18131,7 @@ New usage of "suplem2pr" is discouraged (1 uses).
 New usage of "suppfnssOLD" is discouraged (0 uses).
 New usage of "supsr" is discouraged (1 uses).
 New usage of "supsrlem" is discouraged (1 uses).
+New usage of "syl2an23anOLD" is discouraged (0 uses).
 New usage of "syl2an2rOLD" is discouraged (0 uses).
 New usage of "syl3an2OLD" is discouraged (0 uses).
 New usage of "syl3an3OLD" is discouraged (0 uses).
@@ -18473,6 +18475,7 @@ Proof modification of "3impexpVD" is discouraged (104 steps).
 Proof modification of "3impexpbicomVD" is discouraged (89 steps).
 Proof modification of "3impexpbicomiVD" is discouraged (28 steps).
 Proof modification of "3impiaOLD" is discouraged (12 steps).
+Proof modification of "3jaoOLD" is discouraged (49 steps).
 Proof modification of "3lcm2e6woprm" is discouraged (285 steps).
 Proof modification of "3lt10OLD" is discouraged (22 steps).
 Proof modification of "3orbi123" is discouraged (29 steps).
@@ -20137,6 +20140,7 @@ Proof modification of "suctrALTcf" is discouraged (164 steps).
 Proof modification of "suctrALTcfVD" is discouraged (164 steps).
 Proof modification of "suctrOLD" is discouraged (122 steps).
 Proof modification of "suppfnssOLD" is discouraged (319 steps).
+Proof modification of "syl2an23anOLD" is discouraged (27 steps).
 Proof modification of "syl2an2rOLD" is discouraged (15 steps).
 Proof modification of "syl3an2OLD" is discouraged (19 steps).
 Proof modification of "syl3an3OLD" is discouraged (18 steps).
