@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 1-Jul-22 bj-1ex    1oex        moved from BJ's mathbox to main set.mm
 23-Jun-22 rspcda    ---         deleted; use rspcdva instead
 17-May-22 ad5ant1345  adantl3r  eliminate duplicated theorem
 17-May-22 adantlllr  adantl3r  eliminate duplicated theorem
