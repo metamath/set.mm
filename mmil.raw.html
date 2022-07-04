@@ -1779,7 +1779,28 @@ set exists or it does not"</TD>
 <TR>
 <TD>snex</TD>
 <TD>~ snexg , ~ snex </TD>
-<TD>The iset.mm version of ~ snex has an additional hypothesis</TD>
+<TD><P>The iset.mm version of ~ snex has an additional hypothesis.</P>
+
+<P>We conjecture that the set.mm snex ( ` { A } e. _V ` with
+no condition on whether ` A ` is a set) is not provable.</P>
+
+<P>The axioms of set theory allow us to construct rank levels from others, but
+not to construct something from nothing (except the 0 rank and stuff you can
+bootstrap from there). A class provides no "data" about where it lives,
+because it is spread out over the whole universe - you only get the ability
+to ask yes-no(-maybe) questions about set membership in the class. An
+assertion that a class exists is a piece of data that gives you a bound
+on the rank of this set, which can be used to build other existing things
+like unions and powersets of this class and so on. Anything with unbounded
+rank cannot be proven to exist.</P>
+
+<P>So snex, which starts from an arbitrary class and produces evidence
+that { A } exists, cannot be provable, because the bound here can't
+depend on A and cannot be upper bounded by anything independent of
+A either - there are singletons at every rank.</P>
+
+<P>However, we can refute a singleton being a proper class - see
+~ notnotsnex .</P></TD>
 </TR>
 
 <TR>
