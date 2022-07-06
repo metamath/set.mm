@@ -27,7 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
- 6-Jul-22 nfimt      bj-nfimt   moved to mathbox on request of its owner
+ 6-Jul-22 nfimt     bj-nfimt   moved to mathbox on request of its owner
  6-Jul-22 nfimt2    nfimt       nfimt was more difficult to prove and has no application
  1-Jul-22 bj-1ex    1oex        moved from BJ's mathbox to main set.mm
 23-Jun-22 rspcda    ---         deleted; use rspcdva instead
