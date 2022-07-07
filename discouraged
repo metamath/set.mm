@@ -16860,6 +16860,7 @@ New usage of "nfa1OLDOLD" is discouraged (1 uses).
 New usage of "nfa2OLD" is discouraged (0 uses).
 New usage of "nfaldOLD" is discouraged (0 uses).
 New usage of "nfan1OLD" is discouraged (1 uses).
+New usage of "nfan1OLDOLD" is discouraged (0 uses).
 New usage of "nfanOLD" is discouraged (0 uses).
 New usage of "nfanOLDOLD" is discouraged (3 uses).
 New usage of "nfandOLD" is discouraged (2 uses).
@@ -19708,6 +19709,7 @@ Proof modification of "nfa1OLDOLD" is discouraged (8 steps).
 Proof modification of "nfa2OLD" is discouraged (9 steps).
 Proof modification of "nfaldOLD" is discouraged (44 steps).
 Proof modification of "nfan1OLD" is discouraged (29 steps).
+Proof modification of "nfan1OLDOLD" is discouraged (33 steps).
 Proof modification of "nfanOLD" is discouraged (25 steps).
 Proof modification of "nfanOLDOLD" is discouraged (11 steps).
 Proof modification of "nfandOLD" is discouraged (29 steps).
