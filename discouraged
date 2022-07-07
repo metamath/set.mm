@@ -13845,7 +13845,6 @@ New usage of "ax1" is discouraged (0 uses).
 New usage of "ax10fromc7" is discouraged (3 uses).
 New usage of "ax10w" is discouraged (0 uses).
 New usage of "ax11w" is discouraged (0 uses).
-New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12a2-o" is discouraged (0 uses).
 New usage of "ax12el" is discouraged (0 uses).
 New usage of "ax12eq" is discouraged (0 uses).
@@ -13898,7 +13897,6 @@ New usage of "axaddf" is discouraged (1 uses).
 New usage of "axaddrcl" is discouraged (0 uses).
 New usage of "axc11-o" is discouraged (0 uses).
 New usage of "axc11n-16" is discouraged (0 uses).
-New usage of "axc11nOLD" is discouraged (0 uses).
 New usage of "axc11next" is discouraged (0 uses).
 New usage of "axc11nfromc11" is discouraged (0 uses).
 New usage of "axc11rvOLD" is discouraged (1 uses).
@@ -15611,7 +15609,6 @@ New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqoreldifOLD" is discouraged (0 uses).
 New usage of "eqrdOLD" is discouraged (0 uses).
 New usage of "eqresr" is discouraged (4 uses).
-New usage of "eqsbc3rOLD" is discouraged (0 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
 New usage of "eqsnOLD" is discouraged (0 uses).
 New usage of "equcomi1" is discouraged (1 uses).
@@ -15663,7 +15660,6 @@ New usage of "ex-natded9.20-2" is discouraged (0 uses).
 New usage of "ex-natded9.26" is discouraged (0 uses).
 New usage of "ex-natded9.26-2" is discouraged (0 uses).
 New usage of "exanOLD" is discouraged (0 uses).
-New usage of "exanOLDOLD" is discouraged (0 uses).
 New usage of "exatleN" is discouraged (1 uses).
 New usage of "exbidOLD" is discouraged (0 uses).
 New usage of "exbirVD" is discouraged (0 uses).
@@ -16864,6 +16860,7 @@ New usage of "nfa1OLDOLD" is discouraged (1 uses).
 New usage of "nfa2OLD" is discouraged (0 uses).
 New usage of "nfaldOLD" is discouraged (0 uses).
 New usage of "nfan1OLD" is discouraged (1 uses).
+New usage of "nfan1OLDOLD" is discouraged (0 uses).
 New usage of "nfanOLD" is discouraged (0 uses).
 New usage of "nfanOLDOLD" is discouraged (3 uses).
 New usage of "nfandOLD" is discouraged (2 uses).
@@ -17770,12 +17767,10 @@ New usage of "sbcel2gOLD" is discouraged (3 uses).
 New usage of "sbcexgOLD" is discouraged (3 uses).
 New usage of "sbcim2g" is discouraged (2 uses).
 New usage of "sbcim2gVD" is discouraged (0 uses).
-New usage of "sbcimdvOLD" is discouraged (0 uses).
 New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
 New usage of "sbcorgOLD" is discouraged (1 uses).
 New usage of "sbcrexgOLD" is discouraged (2 uses).
-New usage of "sbcrextOLD" is discouraged (0 uses).
 New usage of "sbcssOLD" is discouraged (0 uses).
 New usage of "sbcssgVD" is discouraged (0 uses).
 New usage of "sbequ8ALT" is discouraged (0 uses).
@@ -18589,7 +18584,6 @@ Proof modification of "ax1" is discouraged (3 steps).
 Proof modification of "ax10fromc7" is discouraged (50 steps).
 Proof modification of "ax11-pm" is discouraged (39 steps).
 Proof modification of "ax11-pm2" is discouraged (119 steps).
-Proof modification of "ax12OLD" is discouraged (57 steps).
 Proof modification of "ax12a2-o" is discouraged (22 steps).
 Proof modification of "ax12el" is discouraged (577 steps).
 Proof modification of "ax12eq" is discouraged (500 steps).
@@ -18631,7 +18625,6 @@ Proof modification of "axc11-o" is discouraged (47 steps).
 Proof modification of "axc11n-16" is discouraged (154 steps).
 Proof modification of "axc11n11" is discouraged (23 steps).
 Proof modification of "axc11n11r" is discouraged (146 steps).
-Proof modification of "axc11nOLD" is discouraged (64 steps).
 Proof modification of "axc11next" is discouraged (270 steps).
 Proof modification of "axc11nfromc11" is discouraged (28 steps).
 Proof modification of "axc11rvOLD" is discouraged (38 steps).
@@ -19280,7 +19273,6 @@ Proof modification of "eqeqan12dALT" is discouraged (23 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqoreldifOLD" is discouraged (100 steps).
 Proof modification of "eqrdOLD" is discouraged (35 steps).
-Proof modification of "eqsbc3rOLD" is discouraged (71 steps).
 Proof modification of "eqsbc3rVD" is discouraged (129 steps).
 Proof modification of "eqsnOLD" is discouraged (73 steps).
 Proof modification of "equcomi1" is discouraged (16 steps).
@@ -19315,7 +19307,6 @@ Proof modification of "ex-natded9.20-2" is discouraged (44 steps).
 Proof modification of "ex-natded9.26" is discouraged (65 steps).
 Proof modification of "ex-natded9.26-2" is discouraged (22 steps).
 Proof modification of "exanOLD" is discouraged (31 steps).
-Proof modification of "exanOLDOLD" is discouraged (23 steps).
 Proof modification of "exbidOLD" is discouraged (10 steps).
 Proof modification of "exbirVD" is discouraged (65 steps).
 Proof modification of "exbiriVD" is discouraged (70 steps).
@@ -19718,6 +19709,7 @@ Proof modification of "nfa1OLDOLD" is discouraged (8 steps).
 Proof modification of "nfa2OLD" is discouraged (9 steps).
 Proof modification of "nfaldOLD" is discouraged (44 steps).
 Proof modification of "nfan1OLD" is discouraged (29 steps).
+Proof modification of "nfan1OLDOLD" is discouraged (33 steps).
 Proof modification of "nfanOLD" is discouraged (25 steps).
 Proof modification of "nfanOLDOLD" is discouraged (11 steps).
 Proof modification of "nfandOLD" is discouraged (29 steps).
@@ -19995,12 +19987,10 @@ Proof modification of "sbcel2gOLD" is discouraged (37 steps).
 Proof modification of "sbcexgOLD" is discouraged (49 steps).
 Proof modification of "sbcim2g" is discouraged (83 steps).
 Proof modification of "sbcim2gVD" is discouraged (139 steps).
-Proof modification of "sbcimdvOLD" is discouraged (59 steps).
 Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (127 steps).
 Proof modification of "sbcorgOLD" is discouraged (61 steps).
 Proof modification of "sbcrexgOLD" is discouraged (77 steps).
-Proof modification of "sbcrextOLD" is discouraged (190 steps).
 Proof modification of "sbcssOLD" is discouraged (119 steps).
 Proof modification of "sbcssgVD" is discouraged (223 steps).
 Proof modification of "sbequ8ALT" is discouraged (30 steps).
