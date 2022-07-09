@@ -1479,10 +1479,12 @@
 "ax13lem1" is used by "ax13lem2".
 "ax13lem1" is used by "ax6e".
 "ax13lem1" is used by "nfeqf2".
+"ax13lem1" is used by "nfeqf2OLD".
 "ax13lem1" is used by "wl-19.2reqv".
 "ax13lem1" is used by "wl-19.8eqv".
 "ax13lem1" is used by "wl-dveeq12".
 "ax13lem2" is used by "nfeqf2".
+"ax13lem2" is used by "nfeqf2OLD".
 "ax13lem2" is used by "wl-19.2reqv".
 "ax13lem2" is used by "wl-dveeq12".
 "ax13lem2" is used by "wl-speqv".
@@ -13865,8 +13867,8 @@ New usage of "ax12vALT" is discouraged (0 uses).
 New usage of "ax13ALT" is discouraged (0 uses).
 New usage of "ax13dgen4OLD" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
-New usage of "ax13lem1" is discouraged (7 uses).
-New usage of "ax13lem2" is discouraged (4 uses).
+New usage of "ax13lem1" is discouraged (8 uses).
+New usage of "ax13lem2" is discouraged (5 uses).
 New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
@@ -16888,6 +16890,7 @@ New usage of "nfdhOLD" is discouraged (1 uses).
 New usage of "nfdiOLD" is discouraged (0 uses).
 New usage of "nfdvOLD" is discouraged (0 uses).
 New usage of "nfe1OLD" is discouraged (0 uses).
+New usage of "nfeqf2OLD" is discouraged (0 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfexOLD" is discouraged (0 uses).
 New usage of "nfiOLD" is discouraged (16 uses).
@@ -19754,6 +19757,7 @@ Proof modification of "nfdhOLD" is discouraged (9 steps).
 Proof modification of "nfdiOLD" is discouraged (13 steps).
 Proof modification of "nfdvOLD" is discouraged (20 steps).
 Proof modification of "nfe1OLD" is discouraged (8 steps).
+Proof modification of "nfeqf2OLD" is discouraged (52 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfexOLD" is discouraged (13 steps).
 Proof modification of "nfiOLD" is discouraged (14 steps).
