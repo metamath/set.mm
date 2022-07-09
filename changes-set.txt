@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 8-Jul-22 spimvALT  spimv       shorter, and based on the same set of axioms
  6-Jul-22 nfimt     bj-nfimt    moved to mathbox on request of its owner
  6-Jul-22 nfimt2    nfimt       nfimt was more difficult to prove and has no application
  5-Jul-22 zrhcopsgndif copsgndif
