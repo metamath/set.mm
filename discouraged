@@ -16903,6 +16903,7 @@ New usage of "nfimdOLD2OLD" is discouraged (0 uses).
 New usage of "nfimdOLDOLD" is discouraged (0 uses).
 New usage of "nfnOLD" is discouraged (2 uses).
 New usage of "nfnanOLD" is discouraged (0 uses).
+New usage of "nfnbiOLD" is discouraged (0 uses).
 New usage of "nfndOLD" is discouraged (1 uses).
 New usage of "nfnf1OLD" is discouraged (0 uses).
 New usage of "nfnf1OLDOLD" is discouraged (2 uses).
@@ -19772,6 +19773,7 @@ Proof modification of "nfimdOLD2OLD" is discouraged (19 steps).
 Proof modification of "nfimdOLDOLD" is discouraged (74 steps).
 Proof modification of "nfnOLD" is discouraged (12 steps).
 Proof modification of "nfnanOLD" is discouraged (21 steps).
+Proof modification of "nfnbiOLD" is discouraged (46 steps).
 Proof modification of "nfndOLD" is discouraged (13 steps).
 Proof modification of "nfnf1OLD" is discouraged (18 steps).
 Proof modification of "nfnf1OLDOLD" is discouraged (18 steps).
