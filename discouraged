@@ -13431,6 +13431,8 @@ New usage of "19.27OLD" is discouraged (0 uses).
 New usage of "19.28OLD" is discouraged (1 uses).
 New usage of "19.36ivOLD" is discouraged (0 uses).
 New usage of "19.37ivOLD" is discouraged (0 uses).
+New usage of "19.38aOLD" is discouraged (0 uses).
+New usage of "19.38bOLD" is discouraged (0 uses).
 New usage of "19.3OLD" is discouraged (2 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
@@ -16901,6 +16903,7 @@ New usage of "nfimdOLD2OLD" is discouraged (0 uses).
 New usage of "nfimdOLDOLD" is discouraged (0 uses).
 New usage of "nfnOLD" is discouraged (2 uses).
 New usage of "nfnanOLD" is discouraged (0 uses).
+New usage of "nfnbiOLD" is discouraged (0 uses).
 New usage of "nfndOLD" is discouraged (1 uses).
 New usage of "nfnf1OLD" is discouraged (0 uses).
 New usage of "nfnf1OLDOLD" is discouraged (2 uses).
@@ -18428,6 +18431,8 @@ Proof modification of "19.27OLD" is discouraged (28 steps).
 Proof modification of "19.28OLD" is discouraged (28 steps).
 Proof modification of "19.36ivOLD" is discouraged (16 steps).
 Proof modification of "19.37ivOLD" is discouraged (16 steps).
+Proof modification of "19.38aOLD" is discouraged (48 steps).
+Proof modification of "19.38bOLD" is discouraged (48 steps).
 Proof modification of "19.3OLD" is discouraged (12 steps).
 Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
@@ -19768,6 +19773,7 @@ Proof modification of "nfimdOLD2OLD" is discouraged (19 steps).
 Proof modification of "nfimdOLDOLD" is discouraged (74 steps).
 Proof modification of "nfnOLD" is discouraged (12 steps).
 Proof modification of "nfnanOLD" is discouraged (21 steps).
+Proof modification of "nfnbiOLD" is discouraged (46 steps).
 Proof modification of "nfndOLD" is discouraged (13 steps).
 Proof modification of "nfnf1OLD" is discouraged (18 steps).
 Proof modification of "nfnf1OLDOLD" is discouraged (18 steps).
