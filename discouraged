@@ -11678,6 +11678,8 @@
 "prnmax" is used by "prnmadd".
 "prnmax" is used by "reclem3pr".
 "prnmax" is used by "suplem1pr".
+"prodge0OLD" is used by "prodge02OLD".
+"prodge0OLD" is used by "prodge0iOLD".
 "prpssnq" is used by "elprnq".
 "prpssnq" is used by "genpnnp".
 "prpssnq" is used by "ltexprlem2".
@@ -17563,6 +17565,9 @@ New usage of "prnmax" is discouraged (7 uses).
 New usage of "prnzgOLD" is discouraged (0 uses).
 New usage of "probfinmeasbOLD" is discouraged (0 uses).
 New usage of "problem2OLD" is discouraged (0 uses).
+New usage of "prodge02OLD" is discouraged (0 uses).
+New usage of "prodge0OLD" is discouraged (2 uses).
+New usage of "prodge0iOLD" is discouraged (0 uses).
 New usage of "prpssnq" is discouraged (8 uses).
 New usage of "prssOLD" is discouraged (0 uses).
 New usage of "prub" is discouraged (6 uses).
@@ -19906,6 +19911,9 @@ Proof modification of "problem2OLD" is discouraged (102 steps).
 Proof modification of "problem3" is discouraged (56 steps).
 Proof modification of "problem4" is discouraged (310 steps).
 Proof modification of "problem5" is discouraged (133 steps).
+Proof modification of "prodge02OLD" is discouraged (82 steps).
+Proof modification of "prodge0OLD" is discouraged (142 steps).
+Proof modification of "prodge0iOLD" is discouraged (28 steps).
 Proof modification of "prssOLD" is discouraged (51 steps).
 Proof modification of "pwm1geoserALT" is discouraged (201 steps).
 Proof modification of "pwsnALT" is discouraged (164 steps).
