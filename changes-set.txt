@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+12-Jul-22 equviniva equvinva    correct a typo
 11-Jul-22 prodge02   ---        deleted; use prodge0ld instead
 11-Jul-22 prodge0i   ---        deleted; use prodge0rd instead
 11-Jul-22 prodge0   ---         deleted; use prodge0rd instead
