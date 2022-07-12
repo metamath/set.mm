@@ -28,9 +28,13 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 12-Jul-22 equviniva equvinva    correct a typo
+11-Jul-22 prodge02   ---        deleted; use prodge0ld instead
+11-Jul-22 prodge0i   ---        deleted; use prodge0rd instead
+11-Jul-22 prodge0   ---         deleted; use prodge0rd instead
  8-Jul-22 spimvALT  spimv       shorter, and based on the same set of axioms
  6-Jul-22 nfimt     bj-nfimt    moved to mathbox on request of its owner
- 6-Jul-22 nfimt2    nfimt       nfimt was more difficult to prove and has no application
+ 6-Jul-22 nfimt2    nfimt       nfimt was more difficult to prove and has no
+                                application
  5-Jul-22 zrhcopsgndif copsgndif
  5-Jul-22 ssrind    [same]      moved from GS's mathbox to main set.mm
  3-Jul-22 zrhcofipsgn cofipsgn
