@@ -13723,6 +13723,7 @@ New usage of "ajmoi" is discouraged (1 uses).
 New usage of "ajval" is discouraged (0 uses).
 New usage of "al2imVD" is discouraged (0 uses).
 New usage of "albidOLD" is discouraged (1 uses).
+New usage of "alcomiwOLD" is discouraged (0 uses).
 New usage of "alephf1ALT" is discouraged (0 uses).
 New usage of "alexsubALT" is discouraged (0 uses).
 New usage of "alimdOLD" is discouraged (1 uses).
@@ -16877,6 +16878,7 @@ New usage of "nexdvOLD" is discouraged (0 uses).
 New usage of "nf3anOLD" is discouraged (1 uses).
 New usage of "nf3andOLD" is discouraged (0 uses).
 New usage of "nf3orOLD" is discouraged (0 uses).
+New usage of "nf5dvOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
 New usage of "nfa1OLD" is discouraged (0 uses).
 New usage of "nfa1OLDOLD" is discouraged (1 uses).
@@ -18220,7 +18222,6 @@ New usage of "un0.1" is discouraged (1 uses).
 New usage of "un01" is discouraged (0 uses).
 New usage of "un10" is discouraged (0 uses).
 New usage of "un2122" is discouraged (1 uses).
-New usage of "undif3OLD" is discouraged (0 uses).
 New usage of "undif3VD" is discouraged (0 uses).
 New usage of "uneqdifeqOLD" is discouraged (0 uses).
 New usage of "unierri" is discouraged (0 uses).
@@ -18603,6 +18604,7 @@ Proof modification of "aev2ALT" is discouraged (34 steps).
 Proof modification of "aevdemo" is discouraged (69 steps).
 Proof modification of "al2imVD" is discouraged (48 steps).
 Proof modification of "albidOLD" is discouraged (10 steps).
+Proof modification of "alcomiwOLD" is discouraged (62 steps).
 Proof modification of "alephf1ALT" is discouraged (47 steps).
 Proof modification of "alexsubALT" is discouraged (869 steps).
 Proof modification of "alimdOLD" is discouraged (10 steps).
@@ -19752,6 +19754,7 @@ Proof modification of "nexdvOLD" is discouraged (18 steps).
 Proof modification of "nf3anOLD" is discouraged (26 steps).
 Proof modification of "nf3andOLD" is discouraged (29 steps).
 Proof modification of "nf3orOLD" is discouraged (26 steps).
+Proof modification of "nf5dvOLD" is discouraged (20 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfa1OLD" is discouraged (8 steps).
 Proof modification of "nfa1OLDOLD" is discouraged (8 steps).
@@ -20245,7 +20248,6 @@ Proof modification of "un0.1" is discouraged (21 steps).
 Proof modification of "un01" is discouraged (18 steps).
 Proof modification of "un10" is discouraged (18 steps).
 Proof modification of "un2122" is discouraged (44 steps).
-Proof modification of "undif3OLD" is discouraged (154 steps).
 Proof modification of "undif3VD" is discouraged (295 steps).
 Proof modification of "uneqdifeqOLD" is discouraged (219 steps).
 Proof modification of "unipwr" is discouraged (32 steps).
