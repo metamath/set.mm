@@ -14468,6 +14468,7 @@ New usage of "bralnfn" is discouraged (2 uses).
 New usage of "bramul" is discouraged (1 uses).
 New usage of "branmfn" is discouraged (1 uses).
 New usage of "braval" is discouraged (10 uses).
+New usage of "brecop2OLD" is discouraged (0 uses).
 New usage of "brfi1indALT" is discouraged (0 uses).
 New usage of "brresOLD" is discouraged (0 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
@@ -16598,6 +16599,9 @@ New usage of "lsatfixedN" is discouraged (1 uses).
 New usage of "lshpinN" is discouraged (0 uses).
 New usage of "lshpnel2N" is discouraged (0 uses).
 New usage of "lshpset2N" is discouraged (1 uses).
+New usage of "lspfixedOLD" is discouraged (0 uses).
+New usage of "lspsncv0OLD" is discouraged (0 uses).
+New usage of "lssssrOLD" is discouraged (0 uses).
 New usage of "ltaddnq" is discouraged (7 uses).
 New usage of "ltaddpr" is discouraged (5 uses).
 New usage of "ltaddpr2" is discouraged (1 uses).
@@ -18283,6 +18287,7 @@ New usage of "uvtxael1OLD" is discouraged (0 uses).
 New usage of "uvtxaelOLD" is discouraged (0 uses).
 New usage of "uvtxavalOLD" is discouraged (3 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
+New usage of "uzind4iOLD" is discouraged (0 uses).
 New usage of "vacn" is discouraged (3 uses).
 New usage of "vafval" is discouraged (20 uses).
 New usage of "vc0" is discouraged (3 uses).
@@ -18939,6 +18944,7 @@ Proof modification of "bj-zfpow" is discouraged (71 steps).
 Proof modification of "bnj538OLD" is discouraged (94 steps).
 Proof modification of "br1steqgOLD" is discouraged (134 steps).
 Proof modification of "br2ndeqgOLD" is discouraged (134 steps).
+Proof modification of "brecop2OLD" is discouraged (175 steps).
 Proof modification of "brfi1indALT" is discouraged (789 steps).
 Proof modification of "brfvidRP" is discouraged (92 steps).
 Proof modification of "brresOLD" is discouraged (43 steps).
@@ -19660,6 +19666,9 @@ Proof modification of "karatsubaOLD" is discouraged (408 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
 Proof modification of "lediv2aALT" is discouraged (264 steps).
+Proof modification of "lspfixedOLD" is discouraged (1103 steps).
+Proof modification of "lspsncv0OLD" is discouraged (149 steps).
+Proof modification of "lssssrOLD" is discouraged (119 steps).
 Proof modification of "ltrnmwOLD" is discouraged (292 steps).
 Proof modification of "luk-1" is discouraged (73 steps).
 Proof modification of "luk-2" is discouraged (52 steps).
@@ -20300,6 +20309,7 @@ Proof modification of "uvtxael1OLD" is discouraged (102 steps).
 Proof modification of "uvtxaelOLD" is discouraged (89 steps).
 Proof modification of "uvtxavalOLD" is discouraged (125 steps).
 Proof modification of "uzind4ALT" is discouraged (16 steps).
+Proof modification of "uzind4iOLD" is discouraged (21 steps).
 Proof modification of "vc2OLD" is discouraged (85 steps).
 Proof modification of "vciOLD" is discouraged (518 steps).
 Proof modification of "vcidOLD" is discouraged (144 steps).
