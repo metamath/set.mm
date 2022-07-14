@@ -16671,6 +16671,7 @@ New usage of "lvolnltN" is discouraged (0 uses).
 New usage of "m1m1sr" is discouraged (1 uses).
 New usage of "m1p1sr" is discouraged (3 uses).
 New usage of "m1r" is discouraged (11 uses).
+New usage of "map0eOLD" is discouraged (0 uses).
 New usage of "map2psrpr" is discouraged (1 uses).
 New usage of "mapd1dim2lem1N" is discouraged (0 uses).
 New usage of "mapdcnv11N" is discouraged (3 uses).
@@ -19686,6 +19687,7 @@ Proof modification of "luklem8" is discouraged (25 steps).
 Proof modification of "lukshef-ax1" is discouraged (6 steps).
 Proof modification of "lukshefth1" is discouraged (88 steps).
 Proof modification of "lukshefth2" is discouraged (129 steps).
+Proof modification of "map0eOLD" is discouraged (49 steps).
 Proof modification of "mapdm0OLD" is discouraged (108 steps).
 Proof modification of "matmulcellOLD" is discouraged (225 steps).
 Proof modification of "max1ALT" is discouraged (48 steps).
