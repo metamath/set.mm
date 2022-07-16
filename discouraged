@@ -6129,6 +6129,7 @@
 "funcringcsetclem9ALTV" is used by "funcringcsetcALTV".
 "funiedgdm2valOLD" is used by "funiedgvalOLD".
 "funiedgdmge2valOLD" is used by "edgfiedgvalOLD".
+"funsneqopsnOLD" is used by "funsneqopOLD".
 "funvtxdm2valOLD" is used by "funvtxval0OLD".
 "funvtxdm2valOLD" is used by "funvtxvalOLD".
 "funvtxdmge2valOLD" is used by "basvtxvalOLD".
@@ -10983,6 +10984,7 @@
 "opelreal" is used by "axrnegex".
 "opelreal" is used by "axrrecex".
 "opelreal" is used by "ltresr".
+"opeqsnOLD" is used by "snopeqopOLD".
 "opidon2OLD" is used by "exidreslem".
 "opidonOLD" is used by "opidon2OLD".
 "opidonOLD" is used by "rngopidOLD".
@@ -12546,6 +12548,7 @@
 "snatpsubN" is used by "pclfinclN".
 "snatpsubN" is used by "pointpsubN".
 "snexALT" is used by "p0exALT".
+"snopeqopOLD" is used by "funsneqopsnOLD".
 "spancl" is used by "elspancl".
 "spancl" is used by "shatomistici".
 "spancl" is used by "shsupcl".
@@ -15747,6 +15750,8 @@ New usage of "funiedgdm2valOLD" is discouraged (1 uses).
 New usage of "funiedgdmge2valOLD" is discouraged (1 uses).
 New usage of "funiedgvalOLD" is discouraged (0 uses).
 New usage of "funprgOLD" is discouraged (0 uses).
+New usage of "funsneqopOLD" is discouraged (0 uses).
+New usage of "funsneqopsnOLD" is discouraged (1 uses).
 New usage of "funtpgOLD" is discouraged (0 uses).
 New usage of "funvtxdm2valOLD" is discouraged (2 uses).
 New usage of "funvtxdmge2valOLD" is discouraged (1 uses).
@@ -17254,6 +17259,7 @@ New usage of "opelopabsbALT" is discouraged (3 uses).
 New usage of "opelreal" is discouraged (8 uses).
 New usage of "opelresOLD" is discouraged (0 uses).
 New usage of "opelresgOLD" is discouraged (0 uses).
+New usage of "opeqsnOLD" is discouraged (1 uses).
 New usage of "opidon2OLD" is discouraged (1 uses).
 New usage of "opidonOLD" is discouraged (2 uses).
 New usage of "opnmblALT" is discouraged (0 uses).
@@ -17989,6 +17995,7 @@ New usage of "snelpwrVD" is discouraged (0 uses).
 New usage of "sneqrgOLD" is discouraged (0 uses).
 New usage of "snexALT" is discouraged (1 uses).
 New usage of "snnexOLD" is discouraged (0 uses).
+New usage of "snopeqopOLD" is discouraged (1 uses).
 New usage of "snssgOLD" is discouraged (0 uses).
 New usage of "snssiALT" is discouraged (0 uses).
 New usage of "snssiALTVD" is discouraged (0 uses).
@@ -19549,6 +19556,8 @@ Proof modification of "funiedgdm2valOLD" is discouraged (68 steps).
 Proof modification of "funiedgdmge2valOLD" is discouraged (56 steps).
 Proof modification of "funiedgvalOLD" is discouraged (57 steps).
 Proof modification of "funprgOLD" is discouraged (143 steps).
+Proof modification of "funsneqopOLD" is discouraged (25 steps).
+Proof modification of "funsneqopsnOLD" is discouraged (74 steps).
 Proof modification of "funtpgOLD" is discouraged (262 steps).
 Proof modification of "funvtxdm2valOLD" is discouraged (68 steps).
 Proof modification of "funvtxdmge2valOLD" is discouraged (56 steps).
@@ -19874,6 +19883,7 @@ Proof modification of "opelopab4" is discouraged (69 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
 Proof modification of "opelresOLD" is discouraged (54 steps).
 Proof modification of "opelresgOLD" is discouraged (58 steps).
+Proof modification of "opeqsnOLD" is discouraged (124 steps).
 Proof modification of "opidon2OLD" is discouraged (80 steps).
 Proof modification of "opidonOLD" is discouraged (198 steps).
 Proof modification of "opnmblALT" is discouraged (332 steps).
@@ -20135,6 +20145,7 @@ Proof modification of "sneqrgOLD" is discouraged (47 steps).
 Proof modification of "snex" is discouraged (64 steps).
 Proof modification of "snexALT" is discouraged (48 steps).
 Proof modification of "snnexOLD" is discouraged (119 steps).
+Proof modification of "snopeqopOLD" is discouraged (64 steps).
 Proof modification of "snssgOLD" is discouraged (38 steps).
 Proof modification of "snssiALT" is discouraged (40 steps).
 Proof modification of "snssiALTVD" is discouraged (64 steps).
