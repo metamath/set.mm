@@ -187,38 +187,23 @@ jobs:
       - run: echo 'Checking iset-discouraged file:' && diff -U 0 iset-discouraged iset-discouraged.new
 
   ###########################################################
-  # Python is relatively slow, so we just split up the work.
-  # We should try to speed up the main mmverify.py culprits, e.g.,
-  # ./mmverify.py:299(verify), ./mmverify.py:223(apply_subst), or
-  # ./mmverify.py:237(decompress_proof)
   mmverifypy-setmm:
-    name: Verify set.mm body using mmverify.py (Python verifier by Raph Levien)
+    name: Verify set.mm using mmverify.py (Python verifier by Raph Levien)
     runs-on: ubuntu-latest
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      # See https://github.com/actions/setup-python
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '>=3.9'
       - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
-      # Python3 is very slow.  We can speed it up by deleting all
-      # logging calls, since we don't use the logging anyway.
+      # We can speed up the script by deleting all logging calls, since we do
+      # not need them.
       - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
       - run: chmod a+x mmverify.faster.py
-      - run: ./mmverify.faster.py --stop-label mathbox < set.mm
-
-  ###########################################################
-  mmverifypy-setmm-mathboxes:
-    name: Verify set.mm mathboxes using mmverify.py (Python verifier by Raph Levien)
-    runs-on: ubuntu-latest
-    needs: skip_dups
-    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
-    steps:
-      - uses: actions/checkout@v2
-      - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
-      # Python3 is very slow.  We can speed it up by deleting all
-      # logging calls, since we don't use the logging anyway.
-      - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
-      - run: chmod a+x mmverify.faster.py
-      - run: ./mmverify.faster.py --begin-label mathbox < set.mm
+      - run: ./mmverify.faster.py set.mm
 
   ###########################################################
   mmverifypy-isetmm:
@@ -227,13 +212,17 @@ jobs:
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      # See https://github.com/actions/setup-python
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '>=3.9'
       - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
-      # Python3 is very slow.  We can speed it up by deleting all
-      # logging calls, since we don't use the logging anyway.
+      # We can speed up the script by deleting all logging calls, since we do
+      # not need them.
       - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
       - run: chmod a+x mmverify.faster.py
-      - run: ./mmverify.faster.py < iset.mm
+      - run: ./mmverify.faster.py iset.mm
 
   ###########################################################
   check-dates:

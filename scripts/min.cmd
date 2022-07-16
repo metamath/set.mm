@@ -28,7 +28,7 @@
 ! TOOLS> exit
 ! MM> open log log.txt                (recommended, to review result later)
 ! MM> submit 1.tmp
-! MM> write source set.mm
+! MM> write source set.mm /rewrap
 ! MM> close log
 
 tools

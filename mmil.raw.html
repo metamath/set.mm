@@ -990,7 +990,7 @@ above).
 </LI>
 
 <LI>
-With excluded middle not equal (` =/= `) and apart (` # `) are equivalent.
+With excluded middle not equal (` =/= `) and apart (` =//= `) are equivalent.
 When working with real and complex numbers, apartness is almost always what
 you want. See ~ df-ap for more on apartness.
 </LI>
@@ -1027,7 +1027,7 @@ with the closest replacements.</P>
 </TR>
 
 <TR>
-<TD>ax-3 , con4d , con34b , necon4bd</TD>
+<TD>ax-3 , con4d , con34b , necon4d , necon4bd</TD>
 <TD>~ con3 </TD>
 <TD>The form of contraposition which removes negation does not hold
 in intutionistic logic.</TD>
@@ -1369,7 +1369,7 @@ is double negation elimination.</TD>
 
 <TR>
 <TD>dfrex2</TD>
-<TD>~ rexalim </TD>
+<TD>~ rexalim , ~ dfrex2dc</TD>
 </TR>
 
 <TR>
@@ -1444,7 +1444,7 @@ is double negation elimination.</TD>
 
 <TR>
 <TD>n0</TD>
-<TD>~ n0r , ~ fin0 , ~ fin0or</TD>
+<TD>~ n0r , ~ notm0 , ~ fin0 , ~ fin0or</TD>
 </TR>
 
 <TR>
@@ -1458,11 +1458,6 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
-<TD>rabn0</TD>
-<TD>~ rabn0m , ~ rabn0r </TD>
-</TR>
-
-<TR>
 <TD>ssdif0</TD>
 <TD>~ ssdif0im </TD>
 </TR>
@@ -1470,6 +1465,16 @@ is double negation elimination.</TD>
 <TR>
 <TD>inssdif0</TD>
 <TD>~ inssdif0im </TD>
+</TR>
+
+<TR>
+  <TD>abn0</TD>
+  <TD>~ abn0r , ~ abn0m</TD>
+</TR>
+
+<TR>
+<TD>rabn0</TD>
+<TD>~ rabn0m , ~ rabn0r </TD>
 </TR>
 
 <TR>
@@ -1488,8 +1493,29 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
-  <TD>undif</TD>
-  <TD>~ undifss , ~ undiffi</TD>
+  <TD ROWSPAN="5">undif</TD>
+  <TD>~ undifss</TD>
+  <TD>subset rather than equality, for any sets</TD>
+</TR>
+
+<TR>
+  <TD>~ undiffi</TD>
+  <TD>where both container and subset are finite</TD>
+</TR>
+
+<TR>
+  <TD>~ undifdc</TD>
+  <TD>where the container has decidable equality and the subset is finite</TD>
+</TR>
+
+<TR>
+  <TD>~ undifdcss</TD>
+  <TD>when membership in the subset is decidable</TD>
+</TR>
+
+<TR>
+  <TD><I>for any sets</I></TD>
+  <TD>implies excluded middle as shown at ~ undifexmid</TD>
 </TR>
 
 <TR>
@@ -1580,10 +1606,15 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
-<TD>elimif , ifbothda , ifid , eqif , ifval , elif ,
+<TD>elimif , ifid , eqif , ifval , elif ,
 ifel , ifeqor , 2if2 , ifcomnan , csbif ,
 csbifgOLD</TD>
 <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>ifbothda</TD>
+  <TD>~ ifbothdadc</TD>
 </TR>
 
 <TR>
@@ -1617,7 +1648,7 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-  <TD ROWSPAN="3">difsnid</TD>
+  <TD ROWSPAN="4">difsnid</TD>
   <TD>~ difsnss</TD>
   <TD>One direction, for any set</TD>
 </TR>
@@ -1628,8 +1659,24 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
+  <TD>~ dcdifsnid</TD>
+  <TD>for a set with decidable equality</TD>
+</TR>
+
+<TR>
   <TD>~ fidifsnid</TD>
   <TD>for a finite set</TD>
+</TR>
+
+<TR>
+  <TD>sssn</TD>
+  <TD>~ sssnr , ~ sssnm</TD>
+</TR>
+
+<TR>
+  <TD>pwsn</TD>
+  <TD>~ pwsnss</TD>
+  <TD>Also see ~ exmidpw</TD>
 </TR>
 
 <TR>
@@ -1748,7 +1795,28 @@ set exists or it does not"</TD>
 <TR>
 <TD>snex</TD>
 <TD>~ snexg , ~ snex </TD>
-<TD>The iset.mm version of ~ snex has an additional hypothesis</TD>
+<TD><P>The iset.mm version of ~ snex has an additional hypothesis.</P>
+
+<P>We conjecture that the set.mm snex ( ` { A } e. _V ` with
+no condition on whether ` A ` is a set) is not provable.</P>
+
+<P>The axioms of set theory allow us to construct rank levels from others, but
+not to construct something from nothing (except the 0 rank and stuff you can
+bootstrap from there). A class provides no "data" about where it lives,
+because it is spread out over the whole universe - you only get the ability
+to ask yes-no(-maybe) questions about set membership in the class. An
+assertion that a class exists is a piece of data that gives you a bound
+on the rank of this set, which can be used to build other existing things
+like unions and powersets of this class and so on. Anything with unbounded
+rank cannot be proven to exist.</P>
+
+<P>So snex, which starts from an arbitrary class and produces evidence
+that { A } exists, cannot be provable, because the bound here can't
+depend on A and cannot be upper bounded by anything independent of
+A either - there are singletons at every rank.</P>
+
+<P>However, we can refute a singleton being a proper class - see
+~ notnotsnex .</P></TD>
 </TR>
 
 <TR>
@@ -1917,6 +1985,11 @@ there is less need for this convenience theorem.</TD>
 </TR>
 
 <TR>
+<TD>dmxp</TD>
+<TD>~ dmxpm </TD>
+</TR>
+
+<TR>
 <TD>dmxpid</TD>
 <TD>~ dmxpm </TD>
 </TR>
@@ -1924,6 +1997,11 @@ there is less need for this convenience theorem.</TD>
 <TR>
 <TD>relimasn</TD>
 <TD>~ imasng </TD>
+</TR>
+
+<TR>
+  <TD>rnxp</TD>
+  <TD>~ rnxpm</TD>
 </TR>
 
 <TR>
@@ -2225,6 +2303,14 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
+  <TD>fnsnsplit</TD>
+  <TD><I>none</I></TD>
+  <TD>Although it should be possible to prove subset rather than
+  equality (using difsnss instead of difsnid ), this theorem is
+  lightly used in set.mm.</TD>
+</TR>
+
+<TR>
 <TD>funiunfv</TD>
 <TD>~ fniunfv , ~ funiunfvdm </TD>
 </TR>
@@ -2288,6 +2374,11 @@ The set.mm proof relies on reuxfrd .</TD>
 <TD>~ mpt2fvex </TD>
 <TD>When the operation is defined via maps-to, yields a set on
 any inputs, and is being evaluated at two sets.</TD>
+</TR>
+
+<TR>
+  <TD>ovrcl</TD>
+  <TD>~ elmpt2cl , ~ relelfvdm</TD>
 </TR>
 
 <TR>
@@ -2582,8 +2673,10 @@ the definition of limit ordinal or is it unrelated?).</TD>
 </TR>
 
 <TR>
-<TD>tfinds</TD>
+<TD>tfinds , tfindsg</TD>
 <TD>~ tfis3 </TD>
+<TD>We are unable to separate limit and successor ordinals
+using case elimination.</TD>
 </TR>
 
 <TR>
@@ -2722,6 +2815,19 @@ hasn't been a need for it.</TD>
 </TR>
 
 <TR>
+  <TD>omopth2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ordinal trichotomy.</TD>
+</TR>
+
+<TR>
+  <TD>omeulem1 , omeu</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ordinal trichotomy, omopth2 ,
+  oaord , and other theorems we don't have.</TD>
+</TR>
+
+<TR>
 <TD>suc11reg</TD>
 <TD>~ suc11g </TD>
 </TR>
@@ -2753,14 +2859,59 @@ characteristic function and initial value.</TD>
 </TR>
 
 <TR>
-<TD>oaord1</TD>
-<TD><I>none yet</I></TD>
+  <TD>oa0r</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof distinguishes between limit and successor
+  cases using case elimination.</TD>
+</TR>
+
+<TR>
+  <TD>oaordi</TD>
+  <TD>~ nnaordi</TD>
+  <TD>The set.mm proof of oaordi relies on being able to distinguish
+  between limit ordinals and successor ordinals via case
+  elimination.</TD>
+</TR>
+
+<TR>
+  <TD>oaord</TD>
+  <TD>~ nnaord</TD>
+  <TD>The set.mm proof of oaord relies on ordinal trichotomy.</TD>
+</TR>
+
+<TR>
+  <TD>oawordri</TD>
+  <TD><I>none</I></TD>
+  <TD>Implies excluded middle as shown at ~ oawordriexmid</TD>
 </TR>
 
 <TR>
 <TD>oaword</TD>
 <TD>~ oawordi </TD>
 <TD>The other direction presumably could be proven but isn't yet.</TD>
+</TR>
+
+<TR>
+<TD>oaord1</TD>
+<TD><I>none yet</I></TD>
+</TR>
+
+<TR>
+  <TD>oaword2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on oawordri and oa0r</TD>
+</TR>
+
+<TR>
+  <TD>oawordeu</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on a number of things we don't have</TD>
+</TR>
+
+<TR>
+  <TD>oawordex</TD>
+  <TD>~ nnawordex</TD>
+  <TD>The set.mm proof relies on oawordeu</TD>
 </TR>
 
 <TR>
@@ -2775,9 +2926,8 @@ characteristic function and initial value.</TD>
 </TR>
 
 <TR>
-<TD>nnawordex</TD>
-<TD>~ nnaordex </TD>
-<TD>nnawordex is only used a few places in set.mm</TD>
+<TD>oawordex</TD>
+<TD>~ nnawordex </TD>
 </TR>
 
 <TR>
@@ -2833,6 +2983,13 @@ middle in its proof.</TD>
 </TR>
 
 <TR>
+  <TD>ralxpmap</TD>
+  <TD><I>none</I></TD>
+  <TD>Lightly used in set.mm. The set.mm proof relies on fnsnsplit
+  and undif .</TD>
+</TR>
+
+<TR>
 <TD>df-sdom , relsdom , brsdom , dfdom2 , sdomdom , sdomnen ,
 brdom2 , bren2 , domdifsn</TD>
 <TD><I>none</I></TD>
@@ -2849,7 +3006,7 @@ we wanted strict dominance to have the expected properties.</TD>
 <TR>
 <TD>mapsnen , map1 , pw2f1olem , pw2f1o , pw2eng , pw2en</TD>
 <TD><I>none</I></TD>
-<TD>We have not added set exponentiation to iset.mm yet.</TD>
+<TD>May be feasible now that iset.mm has ~ df-map .</TD>
 </TR>
 
 <TR>
@@ -2882,7 +3039,8 @@ we wanted strict dominance to have the expected properties.</TD>
 <TR>
 <TD>omxpenlem , omxpen , omf1o</TD>
 <TD><I>none</I></TD>
-<TD>The set.mm proof relies on omwordi</TD>
+<TD>The set.mm proof relies on omwordi , oaord , om0r , and
+other theorems we do not have</TD>
 </TR>
 
 <TR>
@@ -2894,7 +3052,15 @@ we wanted strict dominance to have the expected properties.</TD>
 <TR>
 <TD>sbth and its lemmas, sbthb , sbthcl</TD>
 <TD>~ fisbth</TD>
-<TD>The Schroeder-Bernstein Theorem implies excluded middle</TD>
+<TD>That the Schroeder-Bernstein Theorem implies excluded middle
+is Theorem 1 of [PradicBrown2021], p. 1.</TD>
+</TR>
+
+<TR>
+  <TD>fodomr</TD>
+  <TD><I>none</I></TD>
+  <TD>That fodomr implies excluded middle is Proposition 1.2
+  of [PradicBrown2021], p. 2</TD>
 </TR>
 
 <TR>
@@ -2955,17 +3121,8 @@ we wanted strict dominance to have the expected properties.</TD>
 </TR>
 
 <TR>
-<TD>fisseneq</TD>
-<TD><I>none</I></TD>
-<TD>Perhaps it would work to generalize ~ en2eqpr from two element
-sets to any finite sets (presumably by induction)
-and thus prove fisseneq or something which easily implies it.</TD>
-</TR>
-
-<TR>
 <TD>isinf</TD>
-<TD><I>none</I></TD>
-<TD>The set.mm proof uses the converse of ~ ssdif0im</TD>
+<TD>~ isinfinf</TD>
 </TR>
 
 <TR>
@@ -2990,8 +3147,18 @@ ssfi , since ` { (/) } e. _om `</TD>
 </TR>
 
 <TR>
-<TD>ssfi</TD>
-<TD><I>none</I></TD>
+<TD ROWSPAN="3">ssfi</TD>
+<TD>~ ssfirab</TD>
+<TD>when the subset is defined by a decidable property</TD>
+</TR>
+
+<TR>
+<TD>~ ssfidc</TD>
+<TD>when membership in the subset is decidable</TD>
+</TR>
+
+<TR>
+<TD><I>for the general case</I></TD>
 <TD>Implies excluded middle as shown at ~ ssfiexmid</TD>
 </TR>
 
@@ -3039,12 +3206,6 @@ this implies excluded middle</TD>
 <TD>nfielex</TD>
 <TD><I>none</I></TD>
 <TD>The set.mm proof relies on neq0</TD>
-</TR>
-
-<TR>
-<TD>en1eqsn , en1eqsnbi</TD>
-<TD><I>none</I></TD>
-<TD>The set.mm proof relies on fisseneq</TD>
 </TR>
 
 <TR>
@@ -3108,15 +3269,13 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
-  <TD>xpfi</TD>
-  <TD><I>none</I></TD>
-  <TD>This is Lemma 8.1.16 of [AczelRathjen] and is therefore presumably
-  provable.</TD>
+  <TD ROWSPAN="2">prfi</TD>
+  <TD>~ prfidisj</TD>
+  <TD>for two unequal sets</TD>
 </TR>
 
 <TR>
-  <TD>prfi</TD>
-  <TD><I>none</I></TD>
+  <TD><I>in general</I></TD>
   <TD>The set.mm proof depends on unfi and it would appear that
   mapping ` { A , B } ` to a natural number would decide whether
   ` A ` and ` B ` are equal and thus imply excluded middle.</TD>
@@ -3536,9 +3695,115 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
+  <TD>prdom2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof would only work in the case where
+  ` A = B ` is decidable.
+  If we can prove fodomfi , that would appear to imply
+  prsomd2 fairly quickly.</TD>
+</TR>
+
+<TR>
+  <TD>dif1card</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on cardennn</TD>
+</TR>
+
+<TR>
+  <TD>leweon</TD>
+  <TD><I>none</I></TD>
+  <TD>We lack the well ordering related theorems this relies on,
+  and it isn't clear they are provable.</TD>
+</TR>
+
+<TR>
+  <TD>r0weon</TD>
+  <TD><I>none</I></TD>
+  <TD>We lack the well ordering related theorems this relies on,
+  and it isn't clear they are provable.</TD>
+</TR>
+
+<TR>
+  <TD>infxpen</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on well ordering related theorems that
+  we don't have (and may not be able to have), and it isn't clear
+  that infxpen is provable.</TD>
+</TR>
+
+<TR>
+  <TD>infxpidm2</TD>
+  <TD><I>none</I></TD>
+  <TD>Depends on cardinality theorems we don't have.</TD>
+</TR>
+
+<TR>
+  <TD>infxpenc</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on notations and theorems we don't have.</TD>
+</TR>
+
+<TR>
+  <TD>infxpenc2</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on theorems we don't have.</TD>
+</TR>
+
+<TR>
+  <TD>dfac8a</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is and numerability
+  may not be able to work the same way.</TD>
+</TR>
+
+<TR>
+  <TD>dfac8b</TD>
+  <TD><I>none</I></TD>
+  <TD>We are lacking much of what this proof relies on and
+  we may not be able to make numerability and well-ordering
+  work as in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>dfac8c</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is and well-ordering
+  may not be able to work the same way.</TD>
+</TR>
+
+<TR>
+  <TD>ac10ct</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is and well-ordering
+  may not be able to work the same way.</TD>
+</TR>
+
+<TR>
+  <TD>ween</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is and well-ordering
+  and numerability may not be able to work the same way.</TD>
+</TR>
+
+<TR>
+  <TD>ac5num , ondomen , numdom , ssnum , onssnum , indcardi</TD>
+  <TD><I>none</I></TD>
+  <TD>Numerability (or cardinality in general) is not well
+  developed and to a certain extent cannot be.</TD>
+</TR>
+
+<TR>
   <TD>fodom , fodomnum</TD>
   <TD><I>none</I></TD>
   <TD>Presumably not provable as stated</TD>
+</TR>
+
+<TR>
+  <TD>fodomb</TD>
+  <TD><I>none</I></TD>
+  <TD>That the reverse direction implies excluded middle is
+  Proposition 1.2 of [PradicBrown2021], p. 2. The forward direction
+  is presumably also not provable.</TD>
 </TR>
 
 <TR>
@@ -3553,7 +3818,9 @@ this implies excluded middle</TD>
   <TD>~ infnfi</TD>
   <TD>Defining "A is infinite" as ` _om ~<_ A ` follows definition
   8.1.4 of [AczelRathjen], p. 71. It can presumably not be shown to
-  be equivalent to ` -. A e. Fin ` in the absence of excluded middle.</TD>
+  be equivalent to ` -. A e. Fin ` in the absence of excluded middle
+  (see ~ inffiexmid which isn't exactly about ` -. A e. Fin <->
+  _om ~<_ A` but which is close).</TD>
 </TR>
 
 <TR>
@@ -4850,7 +5117,7 @@ these lines).</TD>
 <TD>xrltlen</TD>
 <TD><I>none</I></TD>
 <TD>We presumably could prove an analogue to ~ ltleap but we have not
-yet defined apartness for extended reals (` # ` is for complex
+yet defined apartness for extended reals (` =//= ` is for complex
 numbers).</TD>
 </TR>
 
@@ -5678,7 +5945,7 @@ if anything, along these lines is possible.</TD>
 
 <TR>
 <TD>uzrdgfni</TD>
-<TD>~ frecuzrdgfn</TD>
+<TD>~ frecuzrdgtcl</TD>
 </TR>
 
 <TR>
@@ -6385,9 +6652,8 @@ than reals.</TD>
 <TR>
   <TD>facmapnn</TD>
   <TD>~ faccl</TD>
-  <TD>We could express this in terms of ~ wf notation, or alternately
-  define the mapping operation "^m" in iset.mm. But ~ faccl would be
-  sufficient for the uses in set.mm.</TD>
+  <TD>Presumably provable now that iset.mm has ~ df-map .
+  But ~ faccl would be sufficient for the uses in set.mm.</TD>
 </TR>
 
 <TR>
@@ -6403,19 +6669,21 @@ than reals.</TD>
 
 <TR>
   <TD>df-hash</TD>
-  <TD>~ df-size</TD>
+  <TD>~ df-ihash</TD>
 </TR>
 
 <TR>
   <TD>hashkf , hashgval , hashginv</TD>
   <TD><I>none</I></TD>
   <TD>Due to the differences between df-hash in set.mm and
-  ~ df-size here, there's no particular need for these as stated</TD>
+  ~ df-ihash here, there's no particular need for these as stated</TD>
 </TR>
 
 <TR>
   <TD>hashinf</TD>
-  <TD>~ sizeinf</TD>
+  <TD>~ hashinfom</TD>
+  <TD>The condition that ` A ` is infinite is changed from
+  ` -. A e. Fin ` to ` _om ~<_ A ` .</TD>
 </TR>
 
 <TR>
@@ -6428,7 +6696,7 @@ than reals.</TD>
   <TD>hashfxnn0 , hashf , hashxnn0 , hashresfn , dmhashres ,
   hashnn0pnf</TD>
   <TD><I>none</I></TD>
-  <TD>Although ~ df-size is defined for finite sets and infinite
+  <TD>Although ~ df-ihash is defined for finite sets and infinite
   sets, it is not clear we would be able to show this definition
   (or another definition) is defined for all sets.</TD>
 </TR>
@@ -6449,59 +6717,43 @@ than reals.</TD>
 
 <TR>
   <TD>hashv01gt1</TD>
-  <TD>~ sizefiv01gt1</TD>
-</TR>
-
-<TR>
-  <TD>hashfz1</TD>
-  <TD>~ sizefz1</TD>
-</TR>
-
-<TR>
-  <TD>hashen</TD>
-  <TD>~ sizeen</TD>
-</TR>
-
-<TR>
-  <TD>hasheni</TD>
-  <TD>~ sizeen , ~ sizeinf</TD>
+  <TD>~ hashfiv01gt1</TD>
   <TD>It is not clear there would be any way to combine the finite
   and infinite cases.</TD>
 </TR>
 
 <TR>
-  <TD>hasheqf1o</TD>
-  <TD>~ sizeeqf1o</TD>
+  <TD>hasheni</TD>
+  <TD>~ hashen , ~ hashinfom</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
 </TR>
 
 <TR>
   <TD>hasheqf1oi</TD>
-  <TD>~ sizeeqf1oi</TD>
+  <TD>~ fihasheqf1oi</TD>
   <TD>It is not clear there would be any way to combine the finite
   and infinite cases.</TD>
 </TR>
 
 <TR>
   <TD>hashf1rn</TD>
-  <TD>~ sizef1rn</TD>
+  <TD>~ fihashf1rn</TD>
   <TD>It is not clear there would be any way to combine the finite
   and infinite cases.</TD>
 </TR>
 
 <TR>
   <TD>hasheqf1od</TD>
-  <TD>~ sizeeqf1od</TD>
+  <TD>~ fihasheqf1od</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
 </TR>
 
 <TR>
   <TD>hashcard</TD>
   <TD><I>none</I></TD>
   <TD>Cardinality is not well developed in iset.mm</TD>
-</TR>
-
-<TR>
-  <TD>hashcl</TD>
-  <TD>~ sizecl</TD>
 </TR>
 
 <TR>
@@ -6534,7 +6786,7 @@ than reals.</TD>
 
 <TR>
   <TD>hashnfinnn0</TD>
-  <TD>~ sizeinf</TD>
+  <TD>~ hashinfom</TD>
 </TR>
 
 <TR>
@@ -6544,32 +6796,19 @@ than reals.</TD>
 
 <TR>
   <TD>hasheq0</TD>
-  <TD>~ sizeeq0</TD>
+  <TD>~ fihasheq0</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
 </TR>
 
 <TR>
   <TD>hashneq0 , hashgt0n0</TD>
-  <TD>~ sizeneq0</TD>
-</TR>
-
-<TR>
-  <TD>hashnncl</TD>
-  <TD>~ sizenncl</TD>
-</TR>
-
-<TR>
-  <TD>hash0</TD>
-  <TD>~ size0</TD>
-</TR>
-
-<TR>
-  <TD>hashsng</TD>
-  <TD>~ sizesng</TD>
+  <TD>~ fihashneq0</TD>
 </TR>
 
 <TR>
   <TD>hashen1</TD>
-  <TD>~ sizeen1</TD>
+  <TD>~ fihashen1</TD>
 </TR>
 
 <TR>
@@ -6595,13 +6834,8 @@ than reals.</TD>
 
 <TR>
   <TD>hashfn</TD>
-  <TD>~ sizefn</TD>
+  <TD>~ fihashfn</TD>
   <TD>There is an added condition that the domain be finite.</TD>
-</TR>
-
-<TR>
-  <TD>fseq1hash</TD>
-  <TD>~ fseq1size</TD>
 </TR>
 
 <TR>
@@ -6612,27 +6846,22 @@ than reals.</TD>
 <TR>
   <TD>hashgval2</TD>
   <TD><I>none</I></TD>
-  <TD>Presumably provable, when reestated as
-  ` ( size |`` _om ) = frec ( ( x e. ZZ |-> ( x + 1 ) ) , 0 ) ` ,
+  <TD>Presumably provable, when restated as
+  ` ( # |`` _om ) = frec ( ( x e. ZZ |-> ( x + 1 ) ) , 0 ) ` ,
   but lightly used in set.mm.</TD>
 </TR>
 
 <TR>
   <TD>hashdom</TD>
-  <TD>~ sizedom</TD>
+  <TD>~ fihashdom</TD>
   <TD>There is an added condition that ` B ` is finite.</TD>
 </TR>
 
 <TR>
   <TD>hashdomi</TD>
-  <TD>~ sizedom</TD>
-  <TD>It is presumably not possible to extend ~ sizedom beyond the
+  <TD>~ fihashdom</TD>
+  <TD>It is presumably not possible to extend ~ fihashdom beyond the
   finite set case.</TD>
-</TR>
-
-<TR>
-  <TD>hashun</TD>
-  <TD>~ sizeun</TD>
 </TR>
 
 <TR>
@@ -6662,52 +6891,37 @@ than reals.</TD>
 
 <TR>
   <TD>hashge0</TD>
-  <TD>~ sizecl</TD>
+  <TD>~ hashcl</TD>
   <TD>It is not clear there would be any way to combine the finite
   and infinite cases.</TD>
 </TR>
 
 <TR>
   <TD>hashgt0 , hashge1</TD>
-  <TD>~ sizenncl</TD>
+  <TD>~ hashnncl</TD>
   <TD>It is not clear there would be any way to combine the finite
   and infinite cases.</TD>
 </TR>
 
 <TR>
-  <TD>1elfz0hash</TD>
-  <TD>~ 1elfz0size</TD>
-</TR>
-
-<TR>
   <TD>hashnn0n0nn</TD>
-  <TD>~ sizenncl</TD>
+  <TD>~ hashnncl</TD>
   <TD>To the extent this is reverse closure, we probably can't prove
   it. For inhabited versus non-empty, see ~ fin0</TD>
 </TR>
 
 <TR>
-  <TD>hashunsng</TD>
-  <TD>~ sizeunsng</TD>
-</TR>
-
-<TR>
-  <TD>hashprg</TD>
-  <TD>~ sizeprg</TD>
-</TR>
-
-<TR>
   <TD>elprchashprn2</TD>
-  <TD>~ sizesng</TD>
+  <TD>~ hashsng</TD>
   <TD>Given either ` N e. _V ` or ` -. N e. _V ` this
-  could be proved (as ` ( size `` { M , N } ) ` reduces to
-  ~ sizesng or ~ size0 respectively), but is not clear we can
+  could be proved (as ` ( # `` { M , N } ) ` reduces to
+  ~ hashsng or ~ hash0 respectively), but is not clear we can
   combine the cases (even ~ 1domsn may not be enough).</TD>
 </TR>
 
 <TR>
   <TD>hashprb</TD>
-  <TD>~ sizeprg</TD>
+  <TD>~ hashprg</TD>
 </TR>
 
 <TR>
@@ -6717,36 +6931,99 @@ than reals.</TD>
 </TR>
 
 <TR>
-  <TD>prhash2ex</TD>
-  <TD>~ prsize2ex</TD>
-</TR>
-
-<TR>
   <TD>hashle00</TD>
-  <TD>~ sizeeq0</TD>
+  <TD>~ fihasheq0</TD>
 </TR>
 
 <TR>
   <TD>hashgt0elex , hashgt0elexb</TD>
-  <TD>~ sizeneq0</TD>
+  <TD>~ fihashneq0</TD>
   <TD>See ~ fin0 for inhabited versus non-empty. It isn't clear
   it would be possible to also include the infinite case as
   hashgt0elex does.</TD>
 </TR>
 
 <TR>
-  <TD>hashp1i</TD>
-  <TD>~ sizep1i</TD>
+  <TD>hashss</TD>
+  <TD>~ fihashss</TD>
 </TR>
 
 <TR>
-  <TD>hash1 , hash2 , hash3 , hash4</TD>
-  <TD>~ size1 , ~ size2 , ~ size3 , ~ size4</TD>
+  <TD>prsshashgt1</TD>
+  <TD>~ fiprsshashgt1</TD>
 </TR>
 
 <TR>
-  <TD>pr0hash2ex</TD>
-  <TD>~ pr0size2ex</TD>
+  <TD>hashin</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably additional conditions would be
+  needed (see infi entry).</TD>
+</TR>
+
+<TR>
+  <TD>hashssdif</TD>
+  <TD>~ fihashssdif</TD>
+</TR>
+
+<TR>
+  <TD>hashdif</TD>
+  <TD><I>none</I></TD>
+  <TD>Modified versions presumably would be provable, but this is
+  unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>hashsn01</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably not provable</TD>
+</TR>
+
+<TR>
+  <TD>hashsnle1</TD>
+  <TD><I>none</I></TD>
+  <TD>At first glance this would appear to be the same as ~ 1domsn
+  but to apply ~ fihashdom would require that the singleton be
+  finite, which might imply that we cannot improve on ~ hashsng .</TD>
+</TR>
+
+<TR>
+  <TD>hashsnlei</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably not provable</TD>
+</TR>
+
+<TR>
+  <TD>hash1snb , euhash1 , hash1n0 , hashgt12el , hashgt12el2</TD>
+  <TD><I>none</I></TD>
+  <TD>Conjectured to be provable in the finite set case</TD>
+</TR>
+
+<TR>
+  <TD>hashunlei</TD>
+  <TD><I>none</I></TD>
+  <TD>Not provable per ~ unfiexmid (see also entry for hashun2)</TD>
+</TR>
+
+<TR>
+  <TD>hashsslei</TD>
+  <TD>~ fihashss</TD>
+  <TD>Would be provable if we transfered ` B e. Fin ` from the
+  conclusion to the hypothesis but as written falls afoul of
+  ~ ssfiexmid .</TD>
+</TR>
+
+<TR>
+  <TD>hashpw</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable. The set.mm proof is in terms of set
+  exponentiation and may be worth considering now that iset.mm has
+  ~ df-map .</TD>
+</TR>
+
+<TR>
+  <TD>hashfun</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof will not work as-is</TD>
 </TR>
 
 <TR>
@@ -6818,7 +7095,7 @@ theorem is unused in set.mm.</TD>
 Here's one possibility if we do want to define square roots on (some)
 complex numbers:
 It should be possible to define the complex square root function on all
-complex numbers satisfying ` ( Im `` x ) # 0 \/ 0 <_ ( Re `` x ) ` , using a
+complex numbers satisfying ` ( Im `` x ) =//= 0 \/ 0 <_ ( Re `` x ) ` , using a
 similar construction to the one used in set.mm. You need the real square
 root as a basis for the construction, but then there is a trick using
 the complex number x + |x| (see sqreu) that yields the complex square
@@ -6943,7 +7220,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   answer if ` A =/= 0 ` and ` i ` as the answer if ` A = 0 ` , and uses
   excluded middle to combine those cases, it is presumably not provable
   as stated. We could prove the theorem with the additional condition
-  that ` A # 0 ` , but it is unused in set.mm.</TD>
+  that ` A =//= 0 ` , but it is unused in set.mm.</TD>
 </TR>
 
 <TR>
@@ -7235,7 +7512,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>seq1st</TD>
   <TD><I>none</I></TD>
   <TD>The second argument to ` seq ` , at least as handled in
-  theorems such as ~ iseqfn , must be defined on all integers
+  theorems such as ~ iseqfcl , must be defined on all integers
   greater than or equal to ` M ` , not just at ` M ` itself.
   It may be possible to patch this up, but seq1st is unused in
   set.mm.</TD>
@@ -7345,6 +7622,56 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>ncoprmlnprm</TD>
   <TD><I>none</I></TD>
   <TD>Presumably provable but the set.mm proof uses excluded middle</TD>
+</TR>
+
+<TR>
+  <TD>zsqrtelqelz</TD>
+  <TD>~ nn0sqrtelqelz</TD>
+  <TD>We don't yet have much on the square root of a negative number</TD>
+</TR>
+
+<TR>
+  <TD>df-odz and all theorems concerning the order function on the
+  class of integers mod N</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably could be defined, but would require changes to
+  how we show the infimum exists. Lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>eulerth</TD>
+  <TD><I>none</I></TD>
+  <TD>The lemma eulerthlem2 relies on seqf1o</TD>
+</TR>
+
+<TR>
+  <TD>fermltl</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on eulerth</TD>
+</TR>
+
+<TR>
+  <TD>prmdiv</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on eulerth</TD>
+</TR>
+
+<TR>
+  <TD>prmdiveq</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on prmdiv</TD>
+</TR>
+
+<TR>
+  <TD>prmdivdiv</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on prmdiveq</TD>
+</TR>
+
+<TR>
+  <TD>phisum</TD>
+  <TD><I>none</I></TD>
+  <TD>May be provable once summation is better developed</TD>
 </TR>
 
 </TABLE>
@@ -7514,6 +7841,18 @@ Theory,</I> McGraw-Hill, Inc. (1969) [QA248.M745].</LI>
 <LI><A NAME="Monk2"></A> [Monk2] Monk, J. Donald, &quot;Substitutionless
 Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r Mathematische Logik
 und Grundlagenforschung,</I> 7:103-121 (1965) [QA.A673].</LI>
+
+<LI><A NAME="Pierik"></A> [Pierik], Pierik, Ceel, "Infinite Omniscient Sets in
+Constructive Mathematics", Bachelor thesis Computing Science, Radboud University,
+June 25, 2020,
+<A HREF="https://www.cs.ru.nl/bachelors-theses/2020/Ceel_Pierik___4806182___Infinite_Omniscient_Sets_in_Constructive_Mathematics.pdf"
+>https://www.cs.ru.nl/bachelors-theses/2020/Ceel_Pierik___4806182___Infinite_Omniscient_Sets_in_Constructive_Mathematics.pdf</A></LI>
+
+<LI><A NAME="PradicBrown2021"></A> [PradicBrown2021] Pradic, Pierre, and
+Brown, Chad E. (December 8, 2021), &quot;Cantor-Bernstein implies
+Excluded Middle&quot;,
+<A HREF="https://arxiv.org/abs/1904.09193">https://arxiv.org/abs/1904.09193</A>
+</LI>
 
 <LI><A NAME="Quine"></A> [Quine] Quine, Willard van Orman, <I>Set Theory
 and Its Logic,</I> Harvard University Press, Cambridge, Massachusetts,
