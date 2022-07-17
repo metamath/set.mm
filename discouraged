@@ -16604,6 +16604,7 @@ New usage of "lshpnel2N" is discouraged (0 uses).
 New usage of "lshpset2N" is discouraged (1 uses).
 New usage of "lspfixedOLD" is discouraged (0 uses).
 New usage of "lspsncv0OLD" is discouraged (0 uses).
+New usage of "lssneln0OLD" is discouraged (0 uses).
 New usage of "lssssrOLD" is discouraged (0 uses).
 New usage of "ltaddnq" is discouraged (7 uses).
 New usage of "ltaddpr" is discouraged (5 uses).
@@ -19669,6 +19670,7 @@ Proof modification of "lcmftp" is discouraged (1057 steps).
 Proof modification of "lediv2aALT" is discouraged (264 steps).
 Proof modification of "lspfixedOLD" is discouraged (1103 steps).
 Proof modification of "lspsncv0OLD" is discouraged (149 steps).
+Proof modification of "lssneln0OLD" is discouraged (64 steps).
 Proof modification of "lssssrOLD" is discouraged (119 steps).
 Proof modification of "ltrnmwOLD" is discouraged (292 steps).
 Proof modification of "luk-1" is discouraged (73 steps).
