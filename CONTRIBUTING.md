@@ -117,7 +117,7 @@ the automated verification checks to check those.)
 
 In almost all cases, especially when you're starting, you won't need to
 regenerate the `discouraged` file. So if you're just starting out, you can
-probably ignore this section.However, there are rare cases when that
+probably ignore this section. However, there are rare cases when that
 is needed. This section explains what the discouraged file is all about.
 
 Some statement descriptions in `set.mm` and ` iset.mm` have one or both of the
