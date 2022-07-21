@@ -27,12 +27,13 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+20-Jul-22 brfi1indlem hashdifsnp1
 17-Jul-22 mapsnend  [same]      moved from GS's mathbox to main set.mm
 17-Jul-22 mapsnd    [same]      moved from GS's mathbox to main set.mm
 16-Jul-22 bj-cbv3v2 cbv3v2      moved from mathbox to main
 12-Jul-22 equviniva equvinva    correct a typo
-11-Jul-22 prodge02   ---        deleted; use prodge0ld instead
-11-Jul-22 prodge0i   ---        deleted; use prodge0rd instead
+11-Jul-22 prodge02  ---         deleted; use prodge0ld instead
+11-Jul-22 prodge0i  ---         deleted; use prodge0rd instead
 11-Jul-22 prodge0   ---         deleted; use prodge0rd instead
  8-Jul-22 spimvALT  spimv       shorter, and based on the same set of axioms
  6-Jul-22 nfimt     bj-nfimt    moved to mathbox on request of its owner
@@ -43,8 +44,8 @@ Date      Old       New         Notes
  3-Jul-22 zrhcofipsgn cofipsgn
  1-Jul-22 bj-1ex    1oex        moved from BJ's mathbox to main set.mm
 23-Jun-22 rspcda    ---         deleted; use rspcdva instead
-17-May-22 ad5ant1345  adantl3r  eliminate duplicated theorem
-17-May-22 adantlllr  adantl3r  eliminate duplicated theorem
+17-May-22 ad5ant1345 adantl3r   eliminate duplicated theorem
+17-May-22 adantlllr adantl3r    eliminate duplicated theorem
 21-Apr-22 fz1ssfz0  [same]      moved from GS's mathbox to main set.mm
 21-Apr-22 rabrab    [same]      moved from TA's mathbox to main set.mm
  8-Mar-22 rabbii    [same]      moved from PM's mathbox to main set.mm

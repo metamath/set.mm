@@ -8231,9 +8231,6 @@
 "ifchhv" is used by "pjpyth".
 "ifchhv" is used by "spansncv".
 "ifchhv" is used by "spansnj".
-"ifeq123d" is used by "fourierdlem103".
-"ifeq123d" is used by "fourierdlem104".
-"ifeq123d" is used by "icccncfext".
 "ifhvhv0" is used by "bcs".
 "ifhvhv0" is used by "eigorth".
 "ifhvhv0" is used by "eigre".
@@ -15887,8 +15884,6 @@ New usage of "hdmap1eq4N" is discouraged (1 uses).
 New usage of "hdmap1euOLDN" is discouraged (0 uses).
 New usage of "hdmap1eulemOLDN" is discouraged (1 uses).
 New usage of "hdmap1l6b0N" is discouraged (0 uses).
-New usage of "hdmap1neglem1N" is discouraged (0 uses).
-New usage of "hdmap1p6N" is discouraged (0 uses).
 New usage of "hdmapf1oN" is discouraged (0 uses).
 New usage of "hdmapfnN" is discouraged (5 uses).
 New usage of "hdmaplem2N" is discouraged (0 uses).
@@ -16284,7 +16279,6 @@ New usage of "idrval" is discouraged (2 uses).
 New usage of "idunop" is discouraged (1 uses).
 New usage of "iedgvalOLD" is discouraged (2 uses).
 New usage of "ifchhv" is discouraged (22 uses).
-New usage of "ifeq123d" is discouraged (3 uses).
 New usage of "ifhvhv0" is discouraged (48 uses).
 New usage of "iidn3" is discouraged (1 uses).
 New usage of "iin1" is discouraged (3 uses).
@@ -16688,7 +16682,6 @@ New usage of "mapdh7dN" is discouraged (1 uses).
 New usage of "mapdh7eN" is discouraged (0 uses).
 New usage of "mapdh7fN" is discouraged (0 uses).
 New usage of "mapdh8d0N" is discouraged (0 uses).
-New usage of "mapdh8fN" is discouraged (0 uses).
 New usage of "mapdh9aOLDN" is discouraged (1 uses).
 New usage of "mapdheq2biN" is discouraged (0 uses).
 New usage of "mapdm0OLD" is discouraged (0 uses).
