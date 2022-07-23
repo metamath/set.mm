@@ -1482,11 +1482,9 @@
 "ax13lem1" is used by "nfeqf2OLD".
 "ax13lem1" is used by "wl-19.2reqv".
 "ax13lem1" is used by "wl-19.8eqv".
-"ax13lem1" is used by "wl-dveeq12".
 "ax13lem2" is used by "nfeqf2".
 "ax13lem2" is used by "nfeqf2OLD".
 "ax13lem2" is used by "wl-19.2reqv".
-"ax13lem2" is used by "wl-dveeq12".
 "ax13lem2" is used by "wl-speqv".
 "ax5el" is used by "dveel2ALT".
 "ax5eq" is used by "dveeq1-o16".
@@ -13872,8 +13870,8 @@ New usage of "ax12vALT" is discouraged (0 uses).
 New usage of "ax13ALT" is discouraged (0 uses).
 New usage of "ax13dgen4OLD" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
-New usage of "ax13lem1" is discouraged (8 uses).
-New usage of "ax13lem2" is discouraged (5 uses).
+New usage of "ax13lem1" is discouraged (7 uses).
+New usage of "ax13lem2" is discouraged (4 uses).
 New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
