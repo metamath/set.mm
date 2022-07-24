@@ -12874,6 +12874,9 @@
 "tbwsyl" is used by "tbwlem5".
 "tendospcanN" is used by "dihmeetlem13N".
 "tgblthelfgottOLD" is used by "tgoldbachltOLD".
+"tgiooss" is used by "fourierdlem48".
+"tgiooss" is used by "fourierdlem49".
+"tgiooss" is used by "fourierdlem62".
 "tgoldbachltOLD" is used by "tgoldbachOLD".
 "tratrb" is used by "ordelordALT".
 "tratrb" is used by "ordelordALTVD".
@@ -18152,6 +18155,7 @@ New usage of "tfr1ALT" is discouraged (0 uses).
 New usage of "tfr2ALT" is discouraged (0 uses).
 New usage of "tfr3ALT" is discouraged (0 uses).
 New usage of "tgblthelfgottOLD" is discouraged (1 uses).
+New usage of "tgiooss" is discouraged (3 uses).
 New usage of "tgoldbachOLD" is discouraged (0 uses).
 New usage of "tgoldbachltOLD" is discouraged (1 uses).
 New usage of "topnfbey" is discouraged (0 uses).
@@ -18361,6 +18365,7 @@ New usage of "wwlksext2clwwlkOLD" is discouraged (0 uses).
 New usage of "wwlksnwwlksnonOLD" is discouraged (1 uses).
 New usage of "xihopellsmN" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
+New usage of "xrge0neqmnfOLD" is discouraged (0 uses).
 New usage of "xrge0tmdOLD" is discouraged (0 uses).
 New usage of "zaddablx" is discouraged (0 uses).
 New usage of "zexALT" is discouraged (1 uses).
@@ -20307,6 +20312,7 @@ Proof modification of "wwlknonOLD" is discouraged (108 steps).
 Proof modification of "wwlksext2clwwlkOLD" is discouraged (1197 steps).
 Proof modification of "wwlksnwwlksnonOLD" is discouraged (322 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
+Proof modification of "xrge0neqmnfOLD" is discouraged (87 steps).
 Proof modification of "xrge0tmdOLD" is discouraged (166 steps).
 Proof modification of "zexALT" is discouraged (34 steps).
 Proof modification of "zfcndac" is discouraged (256 steps).
