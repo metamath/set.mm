@@ -18320,7 +18320,6 @@ New usage of "wl-sbal1" is discouraged (0 uses).
 New usage of "wl-sbal2" is discouraged (0 uses).
 New usage of "wl-sbcom2d-lem1" is discouraged (1 uses).
 New usage of "wl-sbcom2d-lem2" is discouraged (1 uses).
-New usage of "wl-sbcom3" is discouraged (0 uses).
 New usage of "wl-section-boot" is discouraged (0 uses).
 New usage of "wl-section-impchain" is discouraged (0 uses).
 New usage of "wl-section-prop" is discouraged (0 uses).
@@ -20275,7 +20274,6 @@ Proof modification of "wl-pm2.24i" is discouraged (10 steps).
 Proof modification of "wl-pm2.27" is discouraged (27 steps).
 Proof modification of "wl-sbal1" is discouraged (36 steps).
 Proof modification of "wl-sbal2" is discouraged (36 steps).
-Proof modification of "wl-sbcom3" is discouraged (93 steps).
 Proof modification of "wl-section-boot" is discouraged (1 steps).
 Proof modification of "wl-section-impchain" is discouraged (1 steps).
 Proof modification of "wl-section-prop" is discouraged (1 steps).
