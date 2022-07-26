@@ -15137,7 +15137,6 @@ New usage of "dfdp2OLD" is discouraged (1 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
 New usage of "dfiop2" is discouraged (3 uses).
 New usage of "dfiota4OLD" is discouraged (0 uses).
-New usage of "dfnfc2OLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfpleOLD" is discouraged (2 uses).
 New usage of "dfsn2ALT" is discouraged (0 uses).
@@ -15547,7 +15546,6 @@ New usage of "elimnv" is discouraged (1 uses).
 New usage of "elimnvu" is discouraged (5 uses).
 New usage of "elimph" is discouraged (3 uses).
 New usage of "elimphu" is discouraged (3 uses).
-New usage of "elintgOLD" is discouraged (0 uses).
 New usage of "ellnfn" is discouraged (5 uses).
 New usage of "ellnop" is discouraged (9 uses).
 New usage of "elneldisjOLD" is discouraged (0 uses).
@@ -16299,7 +16297,6 @@ New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
 New usage of "inffzOLD" is discouraged (0 uses).
 New usage of "infpssALT" is discouraged (0 uses).
-New usage of "int0OLD" is discouraged (0 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
 New usage of "intnatN" is discouraged (0 uses).
@@ -18052,7 +18049,6 @@ New usage of "ssralv2VD" is discouraged (0 uses).
 New usage of "ssrelOLD" is discouraged (0 uses).
 New usage of "sstrALT2" is discouraged (0 uses).
 New usage of "sstrALT2VD" is discouraged (0 uses).
-New usage of "ssuniOLD" is discouraged (0 uses).
 New usage of "st0" is discouraged (1 uses).
 New usage of "stadd3i" is discouraged (1 uses).
 New usage of "staddi" is discouraged (0 uses).
@@ -18167,7 +18163,6 @@ New usage of "trnfsetN" is discouraged (1 uses).
 New usage of "trnsetN" is discouraged (1 uses).
 New usage of "trsbc" is discouraged (4 uses).
 New usage of "trsbcVD" is discouraged (0 uses).
-New usage of "trssOLD" is discouraged (0 uses).
 New usage of "trsspwALT" is discouraged (0 uses).
 New usage of "trsspwALT2" is discouraged (0 uses).
 New usage of "trsspwALT3" is discouraged (0 uses).
@@ -18313,8 +18308,6 @@ New usage of "wl-impchain-mp-0" is discouraged (2 uses).
 New usage of "wl-impchain-mp-1" is discouraged (2 uses).
 New usage of "wl-impchain-mp-2" is discouraged (1 uses).
 New usage of "wl-ja" is discouraged (1 uses).
-New usage of "wl-jarli" is discouraged (0 uses).
-New usage of "wl-jarri" is discouraged (0 uses).
 New usage of "wl-mpi" is discouraged (1 uses).
 New usage of "wl-mps" is discouraged (1 uses).
 New usage of "wl-notnotr" is discouraged (0 uses).
@@ -19031,7 +19024,6 @@ Proof modification of "dfcleq" is discouraged (10 steps).
 Proof modification of "dfdecOLD" is discouraged (35 steps).
 Proof modification of "dfdp2OLD" is discouraged (37 steps).
 Proof modification of "dfiota4OLD" is discouraged (40 steps).
-Proof modification of "dfnfc2OLD" is discouraged (116 steps).
 Proof modification of "dfpleOLD" is discouraged (44 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
 Proof modification of "dfvd1imp" is discouraged (10 steps).
@@ -19247,7 +19239,6 @@ Proof modification of "eliminable2b" is discouraged (7 steps).
 Proof modification of "eliminable2c" is discouraged (8 steps).
 Proof modification of "eliminable3a" is discouraged (7 steps).
 Proof modification of "eliminable3b" is discouraged (8 steps).
-Proof modification of "elintgOLD" is discouraged (47 steps).
 Proof modification of "elneldisjOLD" is discouraged (53 steps).
 Proof modification of "elnelunOLD" is discouraged (53 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
@@ -19571,7 +19562,6 @@ Proof modification of "indistpsALT" is discouraged (64 steps).
 Proof modification of "inffzOLD" is discouraged (128 steps).
 Proof modification of "infpssALT" is discouraged (52 steps).
 Proof modification of "infregelb" is discouraged (185 steps).
-Proof modification of "int0OLD" is discouraged (45 steps).
 Proof modification of "int2" is discouraged (14 steps).
 Proof modification of "int3" is discouraged (17 steps).
 Proof modification of "isclwwlknOLD" is discouraged (58 steps).
@@ -20100,7 +20090,6 @@ Proof modification of "ssralv2VD" is discouraged (147 steps).
 Proof modification of "ssrelOLD" is discouraged (151 steps).
 Proof modification of "sstrALT2" is discouraged (81 steps).
 Proof modification of "sstrALT2VD" is discouraged (84 steps).
-Proof modification of "ssuniOLD" is discouraged (84 steps).
 Proof modification of "stdpc5OLD" is discouraged (24 steps).
 Proof modification of "stdpc5OLDOLD" is discouraged (20 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
@@ -20166,7 +20155,6 @@ Proof modification of "trintALTVD" is discouraged (211 steps).
 Proof modification of "trintssOLD" is discouraged (67 steps).
 Proof modification of "trsbc" is discouraged (203 steps).
 Proof modification of "trsbcVD" is discouraged (398 steps).
-Proof modification of "trssOLD" is discouraged (63 steps).
 Proof modification of "trsspwALT" is discouraged (64 steps).
 Proof modification of "trsspwALT2" is discouraged (65 steps).
 Proof modification of "trsspwALT3" is discouraged (27 steps).
@@ -20277,8 +20265,6 @@ Proof modification of "wl-impchain-mp-0" is discouraged (5 steps).
 Proof modification of "wl-impchain-mp-1" is discouraged (13 steps).
 Proof modification of "wl-impchain-mp-2" is discouraged (14 steps).
 Proof modification of "wl-ja" is discouraged (20 steps).
-Proof modification of "wl-jarli" is discouraged (11 steps).
-Proof modification of "wl-jarri" is discouraged (10 steps).
 Proof modification of "wl-mpi" is discouraged (14 steps).
 Proof modification of "wl-mps" is discouraged (14 steps).
 Proof modification of "wl-notnotr" is discouraged (6 steps).
