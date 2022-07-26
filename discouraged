@@ -9463,9 +9463,9 @@
 "minimp-ax1" is used by "minimp-pm2.43".
 "minimp-ax2" is used by "minimp-pm2.43".
 "minimp-ax2c" is used by "minimp-ax2".
-"minimp-sylsimp" is used by "minimp-ax1".
-"minimp-sylsimp" is used by "minimp-ax2".
-"minimp-sylsimp" is used by "minimp-ax2c".
+"minimp-syllsimp" is used by "minimp-ax1".
+"minimp-syllsimp" is used by "minimp-ax2".
+"minimp-syllsimp" is used by "minimp-ax2c".
 "minveco" is used by "pjhthlem2".
 "minvecolem1" is used by "minvecolem2".
 "minvecolem1" is used by "minvecolem3".
@@ -16779,7 +16779,7 @@ New usage of "minimp-ax1" is discouraged (1 uses).
 New usage of "minimp-ax2" is discouraged (1 uses).
 New usage of "minimp-ax2c" is discouraged (1 uses).
 New usage of "minimp-pm2.43" is discouraged (0 uses).
-New usage of "minimp-sylsimp" is discouraged (3 uses).
+New usage of "minimp-syllsimp" is discouraged (3 uses).
 New usage of "minmar1marrepOLD" is discouraged (0 uses).
 New usage of "minveco" is discouraged (1 uses).
 New usage of "minvecolem1" is discouraged (6 uses).
@@ -19673,7 +19673,7 @@ Proof modification of "minimp-ax1" is discouraged (21 steps).
 Proof modification of "minimp-ax2" is discouraged (62 steps).
 Proof modification of "minimp-ax2c" is discouraged (272 steps).
 Proof modification of "minimp-pm2.43" is discouraged (40 steps).
-Proof modification of "minimp-sylsimp" is discouraged (261 steps).
+Proof modification of "minimp-syllsimp" is discouraged (261 steps).
 Proof modification of "minmar1marrepOLD" is discouraged (118 steps).
 Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
