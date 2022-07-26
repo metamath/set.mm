@@ -27,6 +27,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+26-Jul-22 wl-jarri  jarri       moved from WL's mathbox to main
+26-Jul-22 wl-jarli  jarli       moved from WL's mathbox to main
+25-Jul-22 bj-sb3b   sb3b        moved from BJ's mathbox to main
 20-Jul-22 brfi1indlem hashdifsnp1
 17-Jul-22 mapsnend  [same]      moved from GS's mathbox to main set.mm
 17-Jul-22 mapsnd    [same]      moved from GS's mathbox to main set.mm
