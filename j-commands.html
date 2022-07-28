@@ -3,7 +3,7 @@
 <html>
   <head>
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
-    <title>Metamath $j annotations</title>
+    <title>Metamath $j commands</title>
   </head>
   <body>
 <TABLE BORDER=0 WIDTH="100%"><TR>
@@ -15,7 +15,7 @@ ALT="Home" HEIGHT=32 WIDTH=32 ALIGN=LEFT><IMG SRC="spacer.gif" BORDER=0
 ALT="" HEIGHT=32 WIDTH=1 ALIGN=LEFT>Metamath<BR>Home</A></FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE="+3"
-COLOR="#006633"><B>Metamath $j annotations</B></FONT></TD>
+COLOR="#006633"><B>Metamath $j commands</B></FONT></TD>
 
 <TD WIDTH="25%"> &nbsp; </TD>
 
@@ -31,16 +31,13 @@ metamath specification has some examples, it seems better to document
 the full list here because they aren't part of the specification in
 the sense of being needed for verification.</p>
 
-<p>Many of these are experimental and may be used by one or a few
-tools.  Or in many cases, are intended for future use by tools but
-the tools haven't been written yet.  Be prepared to look at the
-documentation (or source code) for a particular tool before you make
-too many assumptions about what these comments do, or whether they do
-anything at all. But some of the reasons for documenting them
-in a centralized way are: (1) to register
-names so that different tools don't use the same name in different
-ways, and (2) as a pointer to where more information might be found about
-each comment.</p>
+<p>Many of these are experimental and may be lightly used in practice.
+We would like for this page to be the source of truth which
+describes the rules that the tools should implement. But don't
+make too many assumptions, including about whether the $j commands
+do anything at all in a particular situation. Contact us (for example
+via a github issue or the mailing list) if this documentation
+is incomplete.</p>
 
 <h2>Syntax and definitions</h2>
 <code>$j syntax 'TYPECODE' ...;</code>
@@ -77,7 +74,7 @@ definition.</p>
 represents an alternative definition for the syntax represented by
 the $a statement `SYNTAX`. The definition should have a top level
 equality declared by the `equality` command with the definition on
-the right hand side. (This annotation is only needed when the
+the right hand side. (This command is only needed when the
 definition does not immediately follow the syntax itself, which
 in set.mm only occurs for df-bi. For most definitions we can
 automatically infer the requisite structure.)</p>
@@ -372,10 +369,10 @@ The theorems provided should not mention any other constructors
 than the specified `NOT` and `FALSE` however (and
 `IMP`, `AND`, `TRUE` from `natded_init`).</p>
 
-<h2>Usage of these comments</h2>
+<h2>Usage of these commands</h2>
 
 <p>Although it may be difficult to keep an up to date list of which
-tools use which $j comments, here is the information we currently
+tools use which $j commands, here is the information we currently
 have. Please contact us (for example via github issue or mailing
 list) if you find inaccuracies in this list.</p>
 
@@ -397,7 +394,7 @@ natded_init, natded_assume, natded_weak, natded_cut, natded_true,
 natded_imp, natded_and, natded_or, natded_not</dd>
 
 <dt><a href="https://github.com/digama0/mmj2">mmj2</a></dt>
-<dd><i>Although mmj2 at one point had been planning to parse $j comments,
+<dd><i>Although mmj2 at one point had been planning to parse $j commands,
 this was not implemented and as of 2022 there are no known plans
 to add any of them.</i></dd>
 </dl>
