@@ -15572,6 +15572,8 @@ New usage of "elreal" is discouraged (7 uses).
 New usage of "elreal2" is discouraged (3 uses).
 New usage of "elringchomALTV" is discouraged (1 uses).
 New usage of "elrngchomALTV" is discouraged (1 uses).
+New usage of "elsb3OLD" is discouraged (0 uses).
+New usage of "elsb4OLD" is discouraged (0 uses).
 New usage of "elsetrecslem" is discouraged (1 uses).
 New usage of "elspancl" is discouraged (1 uses).
 New usage of "elspani" is discouraged (2 uses).
@@ -19242,6 +19244,8 @@ Proof modification of "elneldisjOLD" is discouraged (53 steps).
 Proof modification of "elnelunOLD" is discouraged (53 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
+Proof modification of "elsb3OLD" is discouraged (60 steps).
+Proof modification of "elsb4OLD" is discouraged (60 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "elwwlks2ons3OLD" is discouraged (449 steps).
 Proof modification of "elxp2OLD" is discouraged (82 steps).
