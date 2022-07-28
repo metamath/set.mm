@@ -15867,6 +15867,7 @@ New usage of "hbnae-o" is discouraged (3 uses).
 New usage of "hbntOLD" is discouraged (0 uses).
 New usage of "hbntal" is discouraged (3 uses).
 New usage of "hbra2VD" is discouraged (0 uses).
+New usage of "hbs1OLD" is discouraged (0 uses).
 New usage of "hcau" is discouraged (4 uses).
 New usage of "hcaucvg" is discouraged (1 uses).
 New usage of "hcauseq" is discouraged (0 uses).
@@ -16895,6 +16896,7 @@ New usage of "nforOLD" is discouraged (1 uses).
 New usage of "nfrOLD" is discouraged (4 uses).
 New usage of "nfrdOLD" is discouraged (5 uses).
 New usage of "nfriOLD" is discouraged (10 uses).
+New usage of "nfs1vOLD" is discouraged (0 uses).
 New usage of "nfthOLD" is discouraged (0 uses).
 New usage of "nfunidALT" is discouraged (0 uses).
 New usage of "nfunidALT2" is discouraged (0 uses).
@@ -17744,6 +17746,7 @@ New usage of "s1dmALT" is discouraged (0 uses).
 New usage of "s2dmALT" is discouraged (0 uses).
 New usage of "sb5ALT" is discouraged (0 uses).
 New usage of "sb5ALTVD" is discouraged (0 uses).
+New usage of "sb6OLD" is discouraged (0 uses).
 New usage of "sbc2rexgOLD" is discouraged (1 uses).
 New usage of "sbc3or" is discouraged (1 uses).
 New usage of "sbc3orgOLD" is discouraged (1 uses).
@@ -19533,6 +19536,7 @@ Proof modification of "hbnae-o" is discouraged (11 steps).
 Proof modification of "hbntOLD" is discouraged (27 steps).
 Proof modification of "hbntal" is discouraged (48 steps).
 Proof modification of "hbra2VD" is discouraged (26 steps).
+Proof modification of "hbs1OLD" is discouraged (22 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
 Proof modification of "icccmpALT" is discouraged (71 steps).
@@ -19734,6 +19738,7 @@ Proof modification of "nforOLD" is discouraged (21 steps).
 Proof modification of "nfrOLD" is discouraged (18 steps).
 Proof modification of "nfrdOLD" is discouraged (14 steps).
 Proof modification of "nfriOLD" is discouraged (13 steps).
+Proof modification of "nfs1vOLD" is discouraged (10 steps).
 Proof modification of "nfthOLD" is discouraged (7 steps).
 Proof modification of "nfunidALT" is discouraged (33 steps).
 Proof modification of "nfunidALT2" is discouraged (49 steps).
@@ -19952,6 +19957,7 @@ Proof modification of "s1dmALT" is discouraged (25 steps).
 Proof modification of "s2dmALT" is discouraged (38 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
+Proof modification of "sb6OLD" is discouraged (32 steps).
 Proof modification of "sbc2or" is discouraged (134 steps).
 Proof modification of "sbc2rexgOLD" is discouraged (62 steps).
 Proof modification of "sbc3or" is discouraged (73 steps).
