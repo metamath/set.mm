@@ -13314,6 +13314,16 @@
 "wl-syl5" is used by "wl-pm2.04".
 "wl-syl6" is used by "wl-ax3".
 "wl-syl6" is used by "wl-pm2.27".
+"wlknwwlksnbijOLD" is used by "wlksnwwlknvbijOLD".
+"wlknwwlksnfunOLD" is used by "wlknwwlksninjOLD".
+"wlknwwlksnfunOLD" is used by "wlknwwlksnsurOLD".
+"wlknwwlksninjOLD" is used by "wlknwwlksnbijOLD".
+"wlknwwlksnsurOLD" is used by "wlknwwlksnbijOLD".
+"wlkwwlkbijOLD" is used by "wlkwwlkbij2OLD".
+"wlkwwlkfunOLD" is used by "wlkwwlkinjOLD".
+"wlkwwlkfunOLD" is used by "wlkwwlksurOLD".
+"wlkwwlkinjOLD" is used by "wlkwwlkbijOLD".
+"wlkwwlksurOLD" is used by "wlkwwlkbijOLD".
 "wnfOLD" is used by "19.21OLD".
 "wnfOLD" is used by "19.21t-1OLD".
 "wnfOLD" is used by "19.21tOLD".
@@ -17097,6 +17107,7 @@ New usage of "nsnlpligALT" is discouraged (0 uses).
 New usage of "numclwlk2lem2f1oOLD" is discouraged (1 uses).
 New usage of "numclwlk2lem2fOLD" is discouraged (1 uses).
 New usage of "numclwlk2lem2fvOLD" is discouraged (1 uses).
+New usage of "numclwwlk1lem2OLD" is discouraged (0 uses).
 New usage of "numclwwlk2OLD" is discouraged (0 uses).
 New usage of "numclwwlk2lem1OLD" is discouraged (1 uses).
 New usage of "numclwwlk2lem1lemOLD" is discouraged (0 uses).
@@ -18333,6 +18344,17 @@ New usage of "wl-syl5" is discouraged (7 uses).
 New usage of "wl-syl6" is discouraged (2 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
+New usage of "wlknwwlksnbij2OLD" is discouraged (0 uses).
+New usage of "wlknwwlksnbijOLD" is discouraged (1 uses).
+New usage of "wlknwwlksnfunOLD" is discouraged (2 uses).
+New usage of "wlknwwlksninjOLD" is discouraged (1 uses).
+New usage of "wlknwwlksnsurOLD" is discouraged (1 uses).
+New usage of "wlksnwwlknvbijOLD" is discouraged (0 uses).
+New usage of "wlkwwlkbij2OLD" is discouraged (0 uses).
+New usage of "wlkwwlkbijOLD" is discouraged (1 uses).
+New usage of "wlkwwlkfunOLD" is discouraged (2 uses).
+New usage of "wlkwwlkinjOLD" is discouraged (1 uses).
+New usage of "wlkwwlksurOLD" is discouraged (1 uses).
 New usage of "wnfOLD" is discouraged (29 uses).
 New usage of "wpthswwlks2onOLD" is discouraged (0 uses).
 New usage of "wrdlenccats1lenm1OLD" is discouraged (0 uses).
@@ -19789,6 +19811,7 @@ Proof modification of "nsnlpligALT" is discouraged (110 steps).
 Proof modification of "numclwlk2lem2f1oOLD" is discouraged (842 steps).
 Proof modification of "numclwlk2lem2fOLD" is discouraged (817 steps).
 Proof modification of "numclwlk2lem2fvOLD" is discouraged (75 steps).
+Proof modification of "numclwwlk1lem2OLD" is discouraged (192 steps).
 Proof modification of "numclwwlk2OLD" is discouraged (187 steps).
 Proof modification of "numclwwlk2lem1OLD" is discouraged (755 steps).
 Proof modification of "numclwwlk2lem1lemOLD" is discouraged (293 steps).
@@ -20292,6 +20315,17 @@ Proof modification of "wl-syl5" is discouraged (14 steps).
 Proof modification of "wl-syl6" is discouraged (14 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
+Proof modification of "wlknwwlksnbij2OLD" is discouraged (77 steps).
+Proof modification of "wlknwwlksnbijOLD" is discouraged (46 steps).
+Proof modification of "wlknwwlksnfunOLD" is discouraged (90 steps).
+Proof modification of "wlknwwlksninjOLD" is discouraged (234 steps).
+Proof modification of "wlknwwlksnsurOLD" is discouraged (369 steps).
+Proof modification of "wlksnwwlknvbijOLD" is discouraged (304 steps).
+Proof modification of "wlkwwlkbij2OLD" is discouraged (237 steps).
+Proof modification of "wlkwwlkbijOLD" is discouraged (55 steps).
+Proof modification of "wlkwwlkfunOLD" is discouraged (192 steps).
+Proof modification of "wlkwwlkinjOLD" is discouraged (348 steps).
+Proof modification of "wlkwwlksurOLD" is discouraged (490 steps).
 Proof modification of "wpthswwlks2onOLD" is discouraged (385 steps).
 Proof modification of "wrdlenccats1lenm1OLD" is discouraged (59 steps).
 Proof modification of "wspthnonOLD" is discouraged (67 steps).
