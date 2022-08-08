@@ -1,0 +1,408 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+    <title>Metamath $j commands</title>
+  </head>
+  <body>
+<TABLE BORDER=0 WIDTH="100%"><TR>
+<!-- ...TD style="line-height:100%"... -->
+
+<TD NOWRAP ALIGN=LEFT VALIGN=MIDDLE WIDTH="25%"> <FONT SIZE=-2
+FACE=arial><A HREF="../index.html"><IMG SRC="mm.gif" BORDER=0
+ALT="Home" HEIGHT=32 WIDTH=32 ALIGN=LEFT><IMG SRC="spacer.gif" BORDER=0
+ALT="" HEIGHT=32 WIDTH=1 ALIGN=LEFT>Metamath<BR>Home</A></FONT></TD>
+
+<TD NOWRAP ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE="+3"
+COLOR="#006633"><B>Metamath $j commands</B></FONT></TD>
+
+<TD WIDTH="25%"> &nbsp; </TD>
+
+</TR></TABLE>
+
+<HR NOSHADE SIZE=1>
+<p>As noted in section 4.4.3, "Additional Information Comment ($j)",
+of the metamath specification, we have a way to include information in
+metamath proof files which are not needed for verifying, but which are
+useful for other tools like proof assistants, definition checkers,
+conversion to and from other proof formats, and the like. Although the
+metamath specification has some examples, it seems better to document
+the full list here because they aren't part of the specification in
+the sense of being needed for verification.</p>
+
+<p>Many of these are experimental and may be lightly used in practice.
+We would like for this page to be the source of truth which
+describes the rules that the tools should implement. But don't
+make too many assumptions, including about whether the $j commands
+do anything at all in a particular situation. Contact us (for example
+via a github issue or the mailing list) if this documentation
+is incomplete.</p>
+
+<h2>Syntax and definitions</h2>
+<code>$j syntax 'TYPECODE' ...;</code>
+
+<p>State that TYPECODE is a typecode. That is, it is a constant symbol
+which appears in the leftmost position in statements. This form is
+specifically for variable typecodes, which means they have one or
+more $f statements and are usually omitted from HTML display. Syntax
+axioms (which have this typecode) should not have any repeated
+variables or $d or $e hypotheses.</p>
+
+<p>This command is repeatable by passing a list of typecodes.</p>
+
+<code>$j syntax 'SYNTAX' as 'TYPECODE';</code>
+
+<p>State that SYNTAX is a logical typecode, that is, a constant symbol
+which appears in the leftmost position in statements. This form is
+for typecodes that are not directly used for variables but can appear
+in provable statements, and any statement starting with <code>SYNTAX</code> should
+be followed by a grammatically correct expression which parses as
+an expression with typecode <code>TYPECODE</code>.</p>
+
+<code>$j primitive 'PRIMITIVE' ...;</code>
+
+<p>State that PRIMITIVE is the name of a $a statement which represents
+syntax which is only defined implicitly (by axioms), not by a
+definition.</p>
+
+<p>This command is repeatable by passing a list of constructors.</p>
+
+<code>$j definition 'DEFTHM' for 'SYNTAX';</code>
+
+<p>Declare a theorem to be a definition. <code>DEFTHM</code> is a $p statement which
+represents an alternative definition for the syntax represented by
+the $a statement <code>SYNTAX</code>. The definition should have a top level
+equality declared by the <code>equality</code> command with the definition on
+the right hand side. (This command is only needed when the
+definition does not immediately follow the syntax itself, which
+in set.mm only occurs for df-bi. For most definitions we can
+automatically infer the requisite structure.)</p>
+
+<code>$j justification 'JUSTIFICATION' for 'DEFINITION';</code>
+
+<p>State that the theorem called JUSTIFICATION is a justification
+theorem for the definition DEFINITION, as described in the section
+"Appendix 4: A Note on Definitions" of mmset.html</p>
+
+<code>$j restatement 'AXIOM' of 'THEOREM';</code>
+
+<p>This is used immediately after an axiom which exactly matches a
+previous theorem statement. This is used when the full set of axioms
+is redundant but there are many overlapping subsystems, so some axioms
+imply the others. Theorem displays can make use of this information
+to decrease the number of listed axioms. For example, if a theorem
+depends on <code>A, B, C</code> but <code>C</code> can be proven from <code>A + B</code>, a theorem
+display might say that the theorem only depends on <code>A, B</code> even
+though it makes use of a theorem that depends on <code>A, C</code> which
+cannot be minimized in this way.</p>
+
+<code>$j type_conversions;</code>
+
+<p>Adds all "type conversions" to the grammatical parser. These are
+syntax axioms like <code>class x</code> (where <code>x</code> is a
+variable of type <code>setvar</code>) that introduce no syntax but
+allow conversion from one typecode to another.</p>
+
+<code>$j unambiguous 'klr 5';</code>
+
+<p>State that the grammar is unambiguous, verifiable using the KLR
+parser, with compositing depth 5.</p>
+
+<code>$j garden_path 'TOKEN' 'TOKEN' ... =&gt; 'TOKEN' ...;</code>
+
+<p>This is used to help the metamath-knife parser parse expressions
+which can be parsed only after some lookahead. The syntax gives an
+initial token sequence (possibly containing variables representing
+previously parsed subexpressions), and gives a replacement parse
+to consider instead. For example,
+<code>garden_path ( x e. A   =&gt;   ( ph ;</code>
+asserts that after parsing an initial sequence <code>( x e. A</code>,
+it should consider revising the parse to <code>( ph</code> (that is,
+reducing <code>x e. A</code> to a wff) if the next token does not
+continue constructing a syntax form. (In this case, it could be the
+start of <code>( x e. A |- ph )</code> or the <code>x e. A</code>
+may need to be interpreted as a wff if it
+is <code> ( x e. A /\ ph ) </code>.)</p>
+
+<h2>Equality and congruence</h2>
+
+<code>$j equality 'SYNTAX' from 'REFL' 'SYM' 'TRAN';</code>
+
+<p>Register an equivalence relation. SYNTAX is the $a statement
+for the syntax, and REFL, SYM, and TRAN are the names of theorems
+(in inference form) establishing reflexivity, symmetry, and
+transitivity respectively.</p>
+
+<code>$j congruence 'THEOREM' ...;</code>
+
+<p>State that <code>THEOREM</code> is a congurence lemma. This should have the
+form</p>
+
+<blockquote>
+  <code>|- a1 = b1 & ... & |- an = bn ==&gt; |- F(a1,...,an) = F(b1,...,bn)</code>
+</blockquote>
+
+<p>where each <code>=</code> is the appropriate <code>equality</code> for the type and <code>F</code> is
+the constructor to prove the congruence about. This is only required
+for <code>primitive</code> constructors; for definitions these theorems can be inferred.</p>
+
+<p>This command is repeatable by passing a list of theorems.</p>
+
+<code>$j condequality 'CONDEQ' from 'THEOREM';</code>
+
+<p>This labels a declaration <code>CONDEQ</code> as a "conditional equality".
+This is a technical definition used in the proof that equality is a
+congruence; it should be a ternary constructor
+<code>CondEq(x, y, ph)</code> which
+expresses <code> ( x = y -> ph )</code>. The THEOREM should be a proof of
+<code>ph |- CondEq(x, y, ph)</code>, which is one of the structural
+rules required for it.</p>
+
+<code>$j condcongruence 'THEOREM' ...;</code>
+
+<p>The THEOREM should be a proof of
+<code>CondEq(x, y, a1 = b1), ..., CondEq(x, y, an = bn)
+|- CondEq(x, y, F(a1, ..., an) = F(b1, ..., bn))</code> for a
+primitive constructor <code>F</code>. There should be one for every
+primitive constructor. For setvar arguments to binding constructors,
+there should be two versions: one has the form
+<code>CondEq(x, y, A = B) |- CondEq(x, y, F(z, A) = F(z, B))</code>
+where <code>x,z</code> and <code>y,z</code> are distinct, and the
+other should have the form
+<code>CondEq(x, y, A = B) |- CondEq(x, y, F(x, A) = F(y, B))</code>
+where <code>x,B</code> and <code>y,A</code> are distinct. This is
+used in the proof that equality is a congruence.</p>
+
+<p>This command is repeatable by passing a list of theorems.</p>
+
+<h2>Bound and free variables</h2>
+
+<code>$j bound 'TYPECODE' ...;</code>
+
+<p>State that <code>TYPECODE</code> is a typecode which permits binding
+constructors, like the <code>x</code> in <code>A. x ph</code>
+or <code>{ x | ph }</code>. These
+typecodes are required to not have any constructors.</p>
+
+<p>This command is repeatable by passing a list of typecodes.</p>
+
+<code>$j free_var 'SYNTAX' with 'BVAR' ...;</code>
+
+<p>SYNTAX should be the name of a $a statement which defines a syntax containing the variable 
+> VARIABLE. State that VARIABLE is free in that syntax.
+
+<p>Declares that variables <code>BVAR</code> are not binders in syntax <code>SYNTAX</code>,
+and instead represent free variables. This is needed when <code>SYNTAX</code>
+is a syntax constructor containing both a variable of <code>bound</code> typecode
+and another variable, in which case the default assumption is that
+the syntax is a binder like <code>A. x ph</code>. If the definition
+of syntax <code>foo x ph</code> is instead <code>x = 0 /\ ph</code>
+we want to indicate that <code>x</code> is not binding occurrences
+in <code>ph</code> and <code>x</code> is a free variable in the
+result.</p>
+
+<code>$j free_var_in 'SYNTAX' with 'VAR' 'BVAR';</code>
+
+<p>Declares that occurrences of variable <code>BVAR</code> are not bound in
+<code>VAR</code> in syntax <code>SYNTAX</code>, and instead represent free variables.
+This is needed when <code>SYNTAX</code> is a syntax constructor containing both
+a variable of <code>bound</code> typecode and another variable, in which case
+the default assumption is that the syntax is a binder like
+<code>A. x ph</code>. If the definition of syntax <code>foo x ph</code>
+is instead <code>x = 0 /\ ph</code> we want to indicate that
+<code>x</code> is not binding occurrences in <code>ph</code>
+and <code>x</code> is a free variable in the result.</p>
+
+<p>This is a more specific version of <code>free_var</code> which points to a
+specific variable <code>VAR</code> which <code>BVAR</code> does not bind, while still
+allowing it to bind occurrences in other variables in the syntax.
+For example if <code>foo A x ph</code> has definition
+<code>A = 0 /\ A. x ph</code> we want to indicate that occurrences
+of <code>x</code> in <code>A</code> are not bound, even though
+<code>x</code> is a binding variable in the notation.</p>
+
+<code>$j notfree 'NF' from 'THEOREM';</code>
+
+<p>This declares <code>NF</code> as a "not-free" operator. The 
+THEOREM should be a proof of 
+<code>NF(x, A), CondEq(x, y, A = B) |- A = B</code> where <code>=</code> is the
+appropriate <code>equality</code> for the typecode. It makes use of a
+<code>condequality</code> to justify the definition.</p>
+
+<h2>Natural deduction based automation</h2>
+
+<code>$j natded_init 'IMP', 'AND', 'TRUE';</code>
+
+<p>Sets up the basic structure for natural deduction based automation.
+Expects arguments indicating the names of implication (the turnstile
+symbol in natural deduction), conjunction (which is used to build
+up the context of a natural deduction sequent), and true (the empty
+context). This command must precede any other <code>natded_*</code> commands.</p>
+
+<code>$j natded_assume 'THEOREM' ...;</code>
+
+<p>Registers <code>THEOREM</code> as an "assumption" style rule. This should
+have the form <code>|- (CONJ -&gt; A)</code> where <code>CONJ</code> is
+some nesting of conjunctions in which <code>A</code> is a member.
+(There are no other requirements on these lemmas, and the automation
+has free choice to use these as required, but there should at least
+be <code>A -&gt; A</code> available.)</p>
+
+<p>This command is repeatable by passing a list of theorems.</p>
+
+<code>$j natded_weak 'THEOREM' ...;</code>
+
+<p>Registers <code>THEOREM</code> as a "weakening" style rule. This should have
+the form <code>|- (CONJ1 -&gt; A) ==&gt; |- (CONJ2 -&gt; A)</code> where
+CONJ1 and CONJ2 are some nesting of
+conjunctions in which all atoms of CONJ1 are elements of CONJ2.
+For the empty context, either <code>|- (T -&gt; A)</code> or
+<code>|- A</code> are acceptable forms. (There are no other
+requirements on these lemmas, and the automation has free choice
+to use these as required, but there should at least
+be <code>A -&gt; C |- (A /\ B) -&gt; C</code> and
+<code>B -&gt; C |- (A /\ B) -&gt; C</code> available.)</p>
+
+<p>This command is repeatable by passing a list of theorems.</p>
+
+<code>$j natded_cut 'THEOREM' ...;</code>
+
+<p>Registers <code>THEOREM</code> as a "cut" style rule. Every hypothesis and
+conclusion should have the form <code>|- (CONJ -&gt; A)</code> or <code>|- A</code>,
+and it should represent some Horn clause reasoning, like
+<code>A -&gt; B, B -&gt; C |- A -&gt; C</code>, <code>A, A -&gt; B |- B</code>,
+<code>A -&gt; B, (A /\ B) -&gt; C |- A -&gt; C</code> and so on. (There are no
+other requirements on these lemmas, and the automation has free
+choice to use these as required.)</p>
+
+<p>This command is repeatable by passing a list of theorems.</p>
+
+<code>$j natded_true 'TRUE' with 'THEOREM' ...;</code>
+
+<p>Registers <code>THEOREM</code> as a natural deduction rule pertaining to
+the true constant <code>TRUE</code> (which does not necessarily have to coincide
+with the <code>TRUE</code> constant used for the empty context in <code>natded_init</code>).
+These have no specified form besides the use of <code>| (CONJ -&gt; A)</code> and
+<code>|- A</code> hypotheses and conclusion, but they will generally involve
+introducing true as in <code>|- T.</code> or <code>|- ( A -&gt; T. )</code> or eliminating
+true on the left as in <code>( T. -&gt; A ) |- A</code>. (Automation has free
+choice to make use of these lemmas as required, but an analogue
+of <code>tru</code> is recommended.)</p>
+
+<p>This command is repeatable by passing a list of theorems, or
+it can be split into multiple commands; the <code>'TRUE' with</code> part must
+be repeated in this case. Multiple <code>TRUE</code> constants can also be
+introduced by using multiple commands.</p>
+
+<code>$j natded_imp 'IMP' with 'THEOREM' ...;</code>
+
+<p>Registers <code>THEOREM</code> as a natural deduction rule pertaining to
+implication <code>IMP</code> (which does not necessarily have to coincide
+with the <code>IMP</code> constant used for the sequent operator in <code>natded_init</code>).
+These have no specified form besides the use of
+<code>| (CONJ -&gt; A)</code> and <code>|- A</code> hypotheses and conclusion, but they
+will generally involve introducing implication as in
+<code>(A /\ B) -&gt; C |- A -&gt; (B -&gt; C)</code> and eliminating it as in
+<code>A -&gt; B, A -&gt; (B -&gt; C) |- A -&gt; C</code>. (Automation has
+free choice to make use of these lemmas as required, but analogues
+of <code>ex</code> and <code>mpd</code> are recommended.)</p>
+
+<p>This command is repeatable by passing a list of theorems, or it
+can be split into multiple commands; the <code>'IMP' with</code> part must be
+repeated in this case. Multiple <code>IMP</code> constants can also be
+introduced by using multiple commands.</p>
+
+<code>$j natded_and 'AND' with 'THEOREM' ...;</code>
+
+<p>Registers <code>THEOREM</code> as a natural deduction rule pertaining to
+conjunction <code>AND</code> (which does not necessarily have to coincide
+with the <code>AND</code> constant used for the context conjunction in
+<code>natded_init</code>). These have no specified form besides the use
+of <code>| (CONJ -&gt; A)</code> and <code>|- A</code> hypotheses and conclusion, but they
+will generally involve introducing conjunction as in
+<code>A -&gt; B, A -&gt; C |- A -&gt; (B /\ C)</code> and eliminating it as in
+A -&gt; (B /\ C) |- A -&gt; B</code>. (Automation has free choice to
+make use of these lemmas as required, but analogues of <code>jca</code>,
+<code>simpld</code> and <code>simprd</code> are recommended.)</p>
+
+<p>This command is repeatable by passing a list of theorems,
+or it can be split into multiple commands; the <code>'AND' with</code> part
+must be repeated in this case. Multiple <code>AND</code> constants can also be
+introduced by using multiple commands.</p>
+
+<code>$j natded_or 'OR' with 'THEOREM' ...;</code>
+
+<p>Registers <code>THEOREM</code> as a natural deduction rule pertaining to
+disjunction <code>OR</code>. These have no specified form besides the use of
+<code>| (CONJ -&gt; A)</code> and <code>|- A</code> hypotheses and conclusion, but they
+will generally involve introducing disjunction as in
+<code>A -&gt; B |- A -&gt; (B \/ C)</code>, and eliminating it as in
+<code>(A /\ B) -&gt; D, (A /\ C) -&gt; D, A -&gt; (B \/ C) |- A -&gt; D</code>.
+(Automation has free choice to make use of these lemmas as
+required, but analogues of <code>olcd</code>, <code>orcd</code> and <code>mpjaodan</code> are
+recommended.)</p>
+
+<p>This command is repeatable by passing a list of theorems, or
+it can be split into multiple commands; the <code>'OR' with</code> part
+must be repeated in this case. Multiple <code>OR</code> constants can also
+be introduced by using multiple commands.</p>
+
+<code>$j natded_not 'NOT' 'FALSE' with 'THEOREM' ...;</code>
+
+<p>Registers <code>THEOREM</code> as a natural deduction rule pertaining to
+negation <code>NOT</code> and falsity symbol <code>FALSE</code>. These have no specified
+form besides the use of <code>| (CONJ -&gt; A)</code> and <code>|- A</code> hypotheses
+and conclusion, but they will generally involve introducing
+negation as in <code>(A /\ B) -&gt; F. |- A -&gt; -. B</code>, and eliminating
+it as in <code>A -&gt; B, A -&gt; -. B |- A -&gt; C</code>, and eliminating
+falsity via <code>A -&gt; F. |- A -&gt; B</code>. (Automation has free choice
+to make use of these lemmas as required, but analogues of <code>inegd</code>,
+<code>pm2.21dd</code> and <code>falimdd</code> are recommended.)</p>
+
+<p>This command is repeatable by passing a list of theorems, or it
+can be split into multiple commands; the <code>'NOT' 'FALSE' with</code> part
+must be repeated in this case. Multiple <code>NOT</code> and <code>FALSE</code> constants
+can also be introduced by using multiple commands, and a negation
+can associate to multiple falsity constants and vice versa.
+The theorems provided should not mention any other constructors
+than the specified <code>NOT</code> and <code>FALSE</code> however (and
+<code>IMP</code>, <code>AND</code>, <code>TRUE</code> from <code>natded_init</code>).</p>
+
+<h2>Usage of these commands in existing verifiers</h2>
+
+<p>Although it may be difficult to keep an up to date list of which
+tools use which $j commands, here is the information we currently
+have. Please contact us (for example via github issue or mailing
+list) if you find inaccuracies in this list.</p>
+
+<dl>
+<dt><a href="https://github.com/digama0/mm-scala">mm-scala</a></dt>
+<dd>syntax, grammar, unambiguous, equality, primitive,
+congruence, definition, justification</dd>
+
+<dt><a href="https://github.com/david-a-wheeler/metamath-knife"
+>metamath-knife</a></dt>
+<dd>syntax, garden_path, type_conversions</dd>
+
+<dt><a href="https://github.com/digama0/mm0/tree/master/mm0-hs/src/MM0/FromMM"
+>mm0-hs from-mm</a></dt>
+<dd>syntax, bound, equality, free_var, free_var_in, restatement.
+<i>Additionally parsed without doing anything with the result</i>: primitive,
+justification, congruence, condequality, condcongruence, notfree,
+natded_init, natded_assume, natded_weak, natded_cut, natded_true,
+natded_imp, natded_and, natded_or, natded_not</dd>
+
+<dt><a href="https://github.com/digama0/mmj2">mmj2</a></dt>
+<dd><i>Although mmj2 at one point had been planning to parse $j commands,
+this was not implemented and as of 2022 there are no known plans
+to add any of them.</i></dd>
+</dl>
+
+<p>This page is <a
+href="https://creativecommons.org/choose/zero/"> dedicated to the public
+domain through the Creative Commons license CC0</a>, to maximize the
+availability of this page's information.</p>
+
+  </body>
+</html>
