@@ -12069,14 +12069,6 @@
 "rngosn6" is used by "dvrunz".
 "rngoueqz" is used by "dvrunz".
 "rngoueqz" is used by "isdmn3".
-"rpnnen1lem1OLD" is used by "rpnnen1OLD".
-"rpnnen1lem1OLD" is used by "rpnnen1lem3OLD".
-"rpnnen1lem1OLD" is used by "rpnnen1lem4OLD".
-"rpnnen1lem1OLD" is used by "rpnnen1lem5OLD".
-"rpnnen1lem3OLD" is used by "rpnnen1lem4OLD".
-"rpnnen1lem3OLD" is used by "rpnnen1lem5OLD".
-"rpnnen1lem4OLD" is used by "rpnnen1lem5OLD".
-"rpnnen1lem5OLD" is used by "rpnnen1OLD".
 "rspsbc2" is used by "tratrb".
 "rspsbc2" is used by "tratrbVD".
 "sbc2rexgOLD" is used by "sbc4rexgOLD".
@@ -13396,7 +13388,6 @@ New usage of "0lno" is discouraged (3 uses).
 New usage of "0lnop" is discouraged (6 uses).
 New usage of "0lt1sr" is discouraged (2 uses).
 New usage of "0ncn" is discouraged (3 uses).
-New usage of "0nelxpOLD" is discouraged (0 uses).
 New usage of "0ngrp" is discouraged (2 uses).
 New usage of "0nnq" is discouraged (22 uses).
 New usage of "0npi" is discouraged (9 uses).
@@ -15590,7 +15581,6 @@ New usage of "elunirnALT" is discouraged (0 uses).
 New usage of "elunop" is discouraged (7 uses).
 New usage of "elunop2" is discouraged (0 uses).
 New usage of "elwwlks2ons3OLD" is discouraged (0 uses).
-New usage of "elxp2OLD" is discouraged (0 uses).
 New usage of "en3lpVD" is discouraged (0 uses).
 New usage of "en3lplem1VD" is discouraged (1 uses).
 New usage of "en3lplem2VD" is discouraged (1 uses).
@@ -17734,11 +17724,6 @@ New usage of "rngosn3" is discouraged (1 uses).
 New usage of "rngosn4" is discouraged (1 uses).
 New usage of "rngosn6" is discouraged (1 uses).
 New usage of "rngoueqz" is discouraged (2 uses).
-New usage of "rpnnen1OLD" is discouraged (0 uses).
-New usage of "rpnnen1lem1OLD" is discouraged (4 uses).
-New usage of "rpnnen1lem3OLD" is discouraged (2 uses).
-New usage of "rpnnen1lem4OLD" is discouraged (1 uses).
-New usage of "rpnnen1lem5OLD" is discouraged (1 uses).
 New usage of "rspsbc2" is discouraged (2 uses).
 New usage of "rspsbc2VD" is discouraged (0 uses).
 New usage of "ruALT" is discouraged (0 uses).
@@ -18385,7 +18370,6 @@ New usage of "zrhcopsgndifOLD" is discouraged (0 uses).
 Proof modification of "0.999...OLD" is discouraged (337 steps).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0heALT" is discouraged (25 steps).
-Proof modification of "0nelxpOLD" is discouraged (61 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "10nn0OLD" is discouraged (3 steps).
 Proof modification of "10nnOLD" is discouraged (18 steps).
@@ -19261,7 +19245,6 @@ Proof modification of "elsb3OLD" is discouraged (60 steps).
 Proof modification of "elsb4OLD" is discouraged (60 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "elwwlks2ons3OLD" is discouraged (449 steps).
-Proof modification of "elxp2OLD" is discouraged (82 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
@@ -19948,15 +19931,10 @@ Proof modification of "rp-misc1-frege" is discouraged (29 steps).
 Proof modification of "rp-simp2" is discouraged (9 steps).
 Proof modification of "rp-simp2-frege" is discouraged (15 steps).
 Proof modification of "rpnnen1" is discouraged (175 steps).
-Proof modification of "rpnnen1OLD" is discouraged (124 steps).
 Proof modification of "rpnnen1lem1" is discouraged (345 steps).
-Proof modification of "rpnnen1lem1OLD" is discouraged (345 steps).
 Proof modification of "rpnnen1lem3" is discouraged (468 steps).
-Proof modification of "rpnnen1lem3OLD" is discouraged (466 steps).
 Proof modification of "rpnnen1lem4" is discouraged (155 steps).
-Proof modification of "rpnnen1lem4OLD" is discouraged (151 steps).
 Proof modification of "rpnnen1lem5" is discouraged (1023 steps).
-Proof modification of "rpnnen1lem5OLD" is discouraged (1017 steps).
 Proof modification of "rpnnen1lem6" is discouraged (128 steps).
 Proof modification of "rspsbc2" is discouraged (65 steps).
 Proof modification of "rspsbc2VD" is discouraged (90 steps).
