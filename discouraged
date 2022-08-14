@@ -9924,7 +9924,6 @@
 "nmcvfval" is used by "nvop".
 "nmcvfval" is used by "nvop2".
 "nmcvfval" is used by "phop".
-"nmcvfval" is used by "phpar".
 "nmfn0" is used by "branmfn".
 "nmfn0" is used by "nmbdfnlb".
 "nmfnlb" is used by "nmbdfnlbi".
@@ -12521,7 +12520,6 @@
 "smfval" is used by "nvtri".
 "smfval" is used by "nvvop".
 "smfval" is used by "phop".
-"smfval" is used by "phpar".
 "smgrpassOLD" is used by "ismndo1".
 "smgrpismgmOLD" is used by "mndoismgmOLD".
 "smgrpmgm" is used by "ismndo1".
@@ -12925,7 +12923,6 @@
 "vafval" is used by "nvsz".
 "vafval" is used by "nvvop".
 "vafval" is used by "phop".
-"vafval" is used by "phpar".
 "vc0" is used by "nv0".
 "vc0" is used by "vcm".
 "vc0" is used by "vcz".
@@ -16945,7 +16942,7 @@ New usage of "nmcopexi" is discouraged (5 uses).
 New usage of "nmcoplb" is discouraged (1 uses).
 New usage of "nmcoplbi" is discouraged (3 uses).
 New usage of "nmcvcn" is discouraged (1 uses).
-New usage of "nmcvfval" is discouraged (7 uses).
+New usage of "nmcvfval" is discouraged (6 uses).
 New usage of "nmfn0" is discouraged (2 uses).
 New usage of "nmfnge0" is discouraged (0 uses).
 New usage of "nmfnlb" is discouraged (3 uses).
@@ -17935,7 +17932,7 @@ New usage of "simprr3OLD" is discouraged (0 uses).
 New usage of "sineq0ALT" is discouraged (0 uses).
 New usage of "smcn" is discouraged (3 uses).
 New usage of "smcnlem" is discouraged (1 uses).
-New usage of "smfval" is discouraged (18 uses).
+New usage of "smfval" is discouraged (17 uses).
 New usage of "smgrpassOLD" is discouraged (1 uses).
 New usage of "smgrpismgmOLD" is discouraged (1 uses).
 New usage of "smgrpmgm" is discouraged (1 uses).
@@ -18231,7 +18228,7 @@ New usage of "uvtxavalOLD" is discouraged (3 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "uzind4iOLD" is discouraged (0 uses).
 New usage of "vacn" is discouraged (3 uses).
-New usage of "vafval" is discouraged (20 uses).
+New usage of "vafval" is discouraged (19 uses).
 New usage of "vc0" is discouraged (3 uses).
 New usage of "vc0rid" is discouraged (1 uses).
 New usage of "vc2OLD" is discouraged (2 uses).
