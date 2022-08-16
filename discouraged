@@ -16293,6 +16293,7 @@ New usage of "infpssALT" is discouraged (0 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
 New usage of "intnatN" is discouraged (0 uses).
+New usage of "ioounsnOLD" is discouraged (0 uses).
 New usage of "iorlid" is discouraged (2 uses).
 New usage of "ip0i" is discouraged (1 uses).
 New usage of "ip1i" is discouraged (2 uses).
@@ -19562,6 +19563,7 @@ Proof modification of "infpssALT" is discouraged (52 steps).
 Proof modification of "infregelb" is discouraged (185 steps).
 Proof modification of "int2" is discouraged (14 steps).
 Proof modification of "int3" is discouraged (17 steps).
+Proof modification of "ioounsnOLD" is discouraged (150 steps).
 Proof modification of "isclwwlknOLD" is discouraged (58 steps).
 Proof modification of "isclwwlknonOLD" is discouraged (68 steps).
 Proof modification of "iscmgmALT" is discouraged (57 steps).
