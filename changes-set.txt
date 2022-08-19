@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Aug-22 eel1111   syl1111anc  moved from AS's mathbox to main
 26-Jul-22 wl-jarri  jarri       moved from WL's mathbox to main
 26-Jul-22 wl-jarli  jarli       moved from WL's mathbox to main
 25-Jul-22 bj-sb3b   sb3b        moved from BJ's mathbox to main
