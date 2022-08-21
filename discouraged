@@ -3021,6 +3021,7 @@
 "cba" is used by "hlcompl".
 "cba" is used by "hlex".
 "cba" is used by "htth".
+"cba" is used by "htthlem".
 "cba" is used by "imsmet".
 "cba" is used by "imsmetlem".
 "cba" is used by "isblo2".
@@ -7046,7 +7047,6 @@
 "hlex" is used by "axhilex-zf".
 "hlex" is used by "h2hcau".
 "hlex" is used by "h2hlm".
-"hlex" is used by "htthlem".
 "hlim0" is used by "hsn0elch".
 "hlimadd" is used by "chscllem4".
 "hlimcaui" is used by "chscllem2".
@@ -14455,7 +14455,7 @@ New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
 New usage of "cases2ALT" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
-New usage of "cba" is discouraged (85 uses).
+New usage of "cba" is discouraged (86 uses).
 New usage of "cbncms" is discouraged (5 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
 New usage of "ccat2s1fvwALT" is discouraged (0 uses).
@@ -15989,7 +15989,7 @@ New usage of "hlcom" is discouraged (1 uses).
 New usage of "hlcompl" is discouraged (1 uses).
 New usage of "hldi" is discouraged (1 uses).
 New usage of "hldir" is discouraged (1 uses).
-New usage of "hlex" is discouraged (4 uses).
+New usage of "hlex" is discouraged (3 uses).
 New usage of "hlexch4N" is discouraged (0 uses).
 New usage of "hlhils1N" is discouraged (0 uses).
 New usage of "hlim0" is discouraged (1 uses).
