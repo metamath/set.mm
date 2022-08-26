@@ -16379,6 +16379,7 @@ New usage of "issh" is discouraged (3 uses).
 New usage of "issh2" is discouraged (10 uses).
 New usage of "issh3" is discouraged (1 uses).
 New usage of "issmgrpOLD" is discouraged (3 uses).
+New usage of "issref" is discouraged (0 uses).
 New usage of "isssp" is discouraged (8 uses).
 New usage of "isst" is discouraged (4 uses).
 New usage of "issubgoilem" is discouraged (0 uses).
@@ -19522,7 +19523,6 @@ Proof modification of "idiVD" is discouraged (6 steps).
 Proof modification of "idn1" is discouraged (5 steps).
 Proof modification of "idn2" is discouraged (7 steps).
 Proof modification of "idn3" is discouraged (15 steps).
-Proof modification of "idref" is discouraged (92 steps).
 Proof modification of "iedgvalOLD" is discouraged (77 steps).
 Proof modification of "iidn3" is discouraged (8 steps).
 Proof modification of "iin1" is discouraged (1 steps).
@@ -19558,6 +19558,7 @@ Proof modification of "isosctrlem1ALT" is discouraged (363 steps).
 Proof modification of "isrnsigaOLD" is discouraged (202 steps).
 Proof modification of "issgrpALT" is discouraged (53 steps).
 Proof modification of "issmgrpOLD" is discouraged (85 steps).
+Proof modification of "issref" is discouraged (347 steps).
 Proof modification of "istrkg2d" is discouraged (439 steps).
 Proof modification of "isuvtxaOLD" is discouraged (154 steps).
 Proof modification of "isvcOLD" is discouraged (170 steps).
