@@ -15243,7 +15243,6 @@ New usage of "distrnq" is discouraged (7 uses).
 New usage of "distrpi" is discouraged (5 uses).
 New usage of "distrpr" is discouraged (7 uses).
 New usage of "distrsr" is discouraged (3 uses).
-New usage of "divalgmodOLD" is discouraged (0 uses).
 New usage of "djaclN" is discouraged (0 uses).
 New usage of "djaffvalN" is discouraged (1 uses).
 New usage of "djafvalN" is discouraged (1 uses).
@@ -17523,7 +17522,6 @@ New usage of "prlem934" is discouraged (3 uses).
 New usage of "prlem936" is discouraged (1 uses).
 New usage of "prmgaplcm" is discouraged (0 uses).
 New usage of "prmgapprmo" is discouraged (0 uses).
-New usage of "prmn2uzge3OLD" is discouraged (0 uses).
 New usage of "prn0" is discouraged (8 uses).
 New usage of "prnmadd" is discouraged (2 uses).
 New usage of "prnmax" is discouraged (7 uses).
@@ -17620,10 +17618,7 @@ New usage of "renegclALT" is discouraged (0 uses).
 New usage of "renicax" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
 New usage of "residOLD" is discouraged (0 uses).
-New usage of "resima2OLD" is discouraged (0 uses).
-New usage of "resiun1OLD" is discouraged (0 uses).
 New usage of "ressval3dOLD" is discouraged (1 uses).
-New usage of "restidsingOLD" is discouraged (0 uses).
 New usage of "retbwax1" is discouraged (0 uses).
 New usage of "retbwax2" is discouraged (3 uses).
 New usage of "retbwax3" is discouraged (0 uses).
@@ -19030,7 +19025,6 @@ Proof modification of "dfvd3i" is discouraged (19 steps).
 Proof modification of "dfvd3ir" is discouraged (19 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
-Proof modification of "divalgmodOLD" is discouraged (389 steps).
 Proof modification of "djuexALT" is discouraged (51 steps).
 Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "dpfrac1OLD" is discouraged (151 steps).
@@ -19838,7 +19832,6 @@ Proof modification of "preqsnOLD" is discouraged (55 steps).
 Proof modification of "preqsndOLD" is discouraged (69 steps).
 Proof modification of "prmgaplcm" is discouraged (247 steps).
 Proof modification of "prmgapprmo" is discouraged (387 steps).
-Proof modification of "prmn2uzge3OLD" is discouraged (25 steps).
 Proof modification of "probfinmeasbOLD" is discouraged (225 steps).
 Proof modification of "problem1" is discouraged (20 steps).
 Proof modification of "problem2" is discouraged (104 steps).
@@ -19897,10 +19890,7 @@ Proof modification of "renegclALT" is discouraged (149 steps).
 Proof modification of "renicax" is discouraged (76 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
 Proof modification of "residOLD" is discouraged (17 steps).
-Proof modification of "resima2OLD" is discouraged (93 steps).
-Proof modification of "resiun1OLD" is discouraged (66 steps).
 Proof modification of "ressval3dOLD" is discouraged (288 steps).
-Proof modification of "restidsingOLD" is discouraged (193 steps).
 Proof modification of "retbwax1" is discouraged (195 steps).
 Proof modification of "retbwax2" is discouraged (127 steps).
 Proof modification of "retbwax3" is discouraged (20 steps).
