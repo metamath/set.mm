@@ -16882,6 +16882,7 @@ New usage of "nfrdOLD" is discouraged (5 uses).
 New usage of "nfriOLD" is discouraged (10 uses).
 New usage of "nfs1vOLD" is discouraged (0 uses).
 New usage of "nfthOLD" is discouraged (0 uses).
+New usage of "nfthtOLD" is discouraged (0 uses).
 New usage of "nfunidALT" is discouraged (0 uses).
 New usage of "nfunidALT2" is discouraged (0 uses).
 New usage of "nfvOLD" is discouraged (1 uses).
@@ -19715,6 +19716,7 @@ Proof modification of "nfrdOLD" is discouraged (14 steps).
 Proof modification of "nfriOLD" is discouraged (13 steps).
 Proof modification of "nfs1vOLD" is discouraged (10 steps).
 Proof modification of "nfthOLD" is discouraged (7 steps).
+Proof modification of "nfthtOLD" is discouraged (18 steps).
 Proof modification of "nfunidALT" is discouraged (33 steps).
 Proof modification of "nfunidALT2" is discouraged (49 steps).
 Proof modification of "nfvOLD" is discouraged (6 steps).
