@@ -27,6 +27,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 3-Sep-22 pwexd                 moved from GS's mathbox to main
+ 3-Sep-22 moimd                 moved from TA's mathbox to main
+ 3-Sep-22 csbvargi              moved from GM's mathbox to main
 26-Aug-22 elv                   moved from PM's mathbox to main
 18-Aug-22 eel1111   syl1111anc  moved from AS's mathbox to main
 26-Jul-22 wl-jarri  jarri       moved from WL's mathbox to main
