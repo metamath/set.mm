@@ -8193,6 +8193,11 @@
 "idn3" is used by "tratrbVD".
 "idn3" is used by "trintALTVD".
 "idn3" is used by "truniALTVD".
+"idrefALT" is used by "elrefsymrels3".
+"idrefALT" is used by "idinxpssinxp2".
+"idrefALT" is used by "idinxpssinxp3".
+"idrefALT" is used by "refsymrels3".
+"idrefALT" is used by "symrefref3".
 "idrval" is used by "cmpidelt".
 "idrval" is used by "iorlid".
 "idunop" is used by "idlnop".
@@ -9635,8 +9640,6 @@
 "mulerpq" is used by "mulassnq".
 "mulerpq" is used by "recmulnq".
 "mulerpqlem" is used by "mulerpq".
-"mulgnnclOLD" is used by "mulgnnassOLD".
-"mulgnndirOLD" is used by "mulgnnassOLD".
 "mulgt0sr" is used by "axpre-mulgt0".
 "mulgt0sr" is used by "sqgt0sr".
 "mulidnq" is used by "1idpr".
@@ -16246,6 +16249,8 @@ New usage of "idlnop" is discouraged (5 uses).
 New usage of "idn1" is discouraged (77 uses).
 New usage of "idn2" is discouraged (39 uses).
 New usage of "idn3" is discouraged (12 uses).
+New usage of "idrefALT" is discouraged (5 uses).
+New usage of "idrefOLD" is discouraged (0 uses).
 New usage of "idrval" is discouraged (2 uses).
 New usage of "idunop" is discouraged (1 uses).
 New usage of "iedgvalOLD" is discouraged (2 uses).
@@ -16801,9 +16806,6 @@ New usage of "mulcompr" is discouraged (6 uses).
 New usage of "mulcomsr" is discouraged (5 uses).
 New usage of "mulerpq" is discouraged (3 uses).
 New usage of "mulerpqlem" is discouraged (1 uses).
-New usage of "mulgnnassOLD" is discouraged (0 uses).
-New usage of "mulgnnclOLD" is discouraged (1 uses).
-New usage of "mulgnndirOLD" is discouraged (1 uses).
 New usage of "mulgt0sr" is discouraged (2 uses).
 New usage of "mulidnq" is discouraged (11 uses).
 New usage of "mulidpi" is discouraged (5 uses).
@@ -16847,6 +16849,7 @@ New usage of "nfandOLD" is discouraged (2 uses).
 New usage of "nfbiOLD" is discouraged (0 uses).
 New usage of "nfbidOLD" is discouraged (1 uses).
 New usage of "nfbidfOLD" is discouraged (0 uses).
+New usage of "nfbii2OLD" is discouraged (0 uses).
 New usage of "nfbiiOLD" is discouraged (2 uses).
 New usage of "nfdOLD" is discouraged (2 uses).
 New usage of "nfdhOLD" is discouraged (1 uses).
@@ -17651,7 +17654,6 @@ New usage of "ringcvalALTV" is discouraged (3 uses).
 New usage of "riotaocN" is discouraged (1 uses).
 New usage of "rmo4fOLD" is discouraged (0 uses).
 New usage of "rmoxfrdOLD" is discouraged (0 uses).
-New usage of "rmspecsqrtnqOLD" is discouraged (0 uses).
 New usage of "rnbra" is discouraged (2 uses).
 New usage of "rnelshi" is discouraged (1 uses).
 New usage of "rngcbasALTV" is discouraged (6 uses).
@@ -19520,7 +19522,8 @@ Proof modification of "idiVD" is discouraged (6 steps).
 Proof modification of "idn1" is discouraged (5 steps).
 Proof modification of "idn2" is discouraged (7 steps).
 Proof modification of "idn3" is discouraged (15 steps).
-Proof modification of "idref" is discouraged (92 steps).
+Proof modification of "idrefALT" is discouraged (146 steps).
+Proof modification of "idrefOLD" is discouraged (347 steps).
 Proof modification of "iedgvalOLD" is discouraged (77 steps).
 Proof modification of "iidn3" is discouraged (8 steps).
 Proof modification of "iin1" is discouraged (1 steps).
@@ -19649,9 +19652,6 @@ Proof modification of "minmar1marrepOLD" is discouraged (118 steps).
 Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
 Proof modification of "mptssALT" is discouraged (57 steps).
-Proof modification of "mulgnnassOLD" is discouraged (439 steps).
-Proof modification of "mulgnnclOLD" is discouraged (39 steps).
-Proof modification of "mulgnndirOLD" is discouraged (440 steps).
 Proof modification of "n0lpligALT" is discouraged (74 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nbgrclOLD" is discouraged (68 steps).
@@ -19682,6 +19682,7 @@ Proof modification of "nfandOLD" is discouraged (29 steps).
 Proof modification of "nfbiOLD" is discouraged (23 steps).
 Proof modification of "nfbidOLD" is discouraged (35 steps).
 Proof modification of "nfbidfOLD" is discouraged (48 steps).
+Proof modification of "nfbii2OLD" is discouraged (15 steps).
 Proof modification of "nfbiiOLD" is discouraged (42 steps).
 Proof modification of "nfdOLD" is discouraged (21 steps).
 Proof modification of "nfdhOLD" is discouraged (9 steps).
@@ -19898,7 +19899,6 @@ Proof modification of "rexbidvaALT" is discouraged (10 steps).
 Proof modification of "rgen2a" is discouraged (81 steps).
 Proof modification of "rmo4fOLD" is discouraged (198 steps).
 Proof modification of "rmoxfrdOLD" is discouraged (126 steps).
-Proof modification of "rmspecsqrtnqOLD" is discouraged (370 steps).
 Proof modification of "rngopidOLD" is discouraged (27 steps).
 Proof modification of "rntrclfv" is discouraged (46 steps).
 Proof modification of "rntrclfvRP" is discouraged (53 steps).
