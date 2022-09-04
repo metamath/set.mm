@@ -16875,6 +16875,7 @@ New usage of "nfnfcALT" is discouraged (0 uses).
 New usage of "nfntOLD" is discouraged (3 uses).
 New usage of "nfntOLDOLD" is discouraged (0 uses).
 New usage of "nfnthOLD" is discouraged (0 uses).
+New usage of "nfnthtOLD" is discouraged (0 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nforOLD" is discouraged (1 uses).
 New usage of "nfrOLD" is discouraged (4 uses).
@@ -19709,6 +19710,7 @@ Proof modification of "nfnfcALT" is discouraged (30 steps).
 Proof modification of "nfntOLD" is discouraged (30 steps).
 Proof modification of "nfntOLDOLD" is discouraged (46 steps).
 Proof modification of "nfnthOLD" is discouraged (9 steps).
+Proof modification of "nfnthtOLD" is discouraged (19 steps).
 Proof modification of "nfopdALT" is discouraged (70 steps).
 Proof modification of "nforOLD" is discouraged (21 steps).
 Proof modification of "nfrOLD" is discouraged (18 steps).
