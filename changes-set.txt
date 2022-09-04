@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 4-Sep-22 funresfunco           moved from AV's mathbox to main
  3-Sep-22 pwexd                 moved from GS's mathbox to main
  3-Sep-22 moimd                 moved from TA's mathbox to main
  3-Sep-22 csbvargi              moved from GM's mathbox to main
