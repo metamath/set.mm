@@ -27,6 +27,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 4-Sep-22 funresfunco           moved from AV's mathbox to main
+ 3-Sep-22 pwexd                 moved from GS's mathbox to main
+ 3-Sep-22 moimd                 moved from TA's mathbox to main
+ 3-Sep-22 csbvargi              moved from GM's mathbox to main
  1-Sep-22 keepel    ifcli
 26-Aug-22 elv                   moved from PM's mathbox to main
 18-Aug-22 eel1111   syl1111anc  moved from AS's mathbox to main
