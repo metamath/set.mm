@@ -18108,6 +18108,7 @@ New usage of "syl5impVD" is discouraged (0 uses).
 New usage of "syld3an1OLD" is discouraged (0 uses).
 New usage of "syld3an2OLD" is discouraged (0 uses).
 New usage of "symdif2OLD" is discouraged (0 uses).
+New usage of "symdifassOLD" is discouraged (0 uses).
 New usage of "tb-ax1" is discouraged (3 uses).
 New usage of "tb-ax2" is discouraged (1 uses).
 New usage of "tb-ax3" is discouraged (2 uses).
@@ -20107,6 +20108,7 @@ Proof modification of "syl5impVD" is discouraged (57 steps).
 Proof modification of "syld3an1OLD" is discouraged (23 steps).
 Proof modification of "syld3an2OLD" is discouraged (23 steps).
 Proof modification of "symdif2OLD" is discouraged (59 steps).
+Proof modification of "symdifassOLD" is discouraged (118 steps).
 Proof modification of "symrefref3" is discouraged (75 steps).
 Proof modification of "tb-ax1" is discouraged (4 steps).
 Proof modification of "tb-ax2" is discouraged (3 steps).
