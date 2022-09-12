@@ -4761,6 +4761,8 @@
 "dfhnorm2" is used by "hilnormi".
 "dfhnorm2" is used by "normf".
 "dfhnorm2" is used by "normval".
+"dfid2" is used by "fsplit".
+"dfid3" is used by "dfid2".
 "dfiop2" is used by "hoico1".
 "dfiop2" is used by "hoico2".
 "dfiop2" is used by "hoif".
@@ -14863,6 +14865,8 @@ New usage of "dfbi3OLD" is discouraged (0 uses).
 New usage of "dfch2" is discouraged (0 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
+New usage of "dfid2" is discouraged (1 uses).
+New usage of "dfid3" is discouraged (1 uses).
 New usage of "dfiop2" is discouraged (3 uses).
 New usage of "dfiota4OLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
