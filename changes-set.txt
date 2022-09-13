@@ -27,6 +27,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+13-Sep-22 a1tru     trud
+13-Sep-22 trud      mptru
  8-Sep-22 el2v2     elvd        moved from PM's mathbox to main
  8-Sep-22 exlimimdd             moved from ML's mathbox to main
  4-Sep-22 funresfunco           moved from AV's mathbox to main
