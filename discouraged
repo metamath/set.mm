@@ -15999,6 +15999,7 @@ New usage of "idn3" is discouraged (12 uses).
 New usage of "idrefALT" is discouraged (5 uses).
 New usage of "idrefOLD" is discouraged (0 uses).
 New usage of "idrval" is discouraged (2 uses).
+New usage of "idssxpOLD" is discouraged (0 uses).
 New usage of "idunop" is discouraged (1 uses).
 New usage of "iedgvalOLD" is discouraged (2 uses).
 New usage of "ifchhv" is discouraged (22 uses).
@@ -19190,6 +19191,7 @@ Proof modification of "idn2" is discouraged (7 steps).
 Proof modification of "idn3" is discouraged (15 steps).
 Proof modification of "idrefALT" is discouraged (126 steps).
 Proof modification of "idrefOLD" is discouraged (347 steps).
+Proof modification of "idssxpOLD" is discouraged (37 steps).
 Proof modification of "iedgvalOLD" is discouraged (77 steps).
 Proof modification of "iidn3" is discouraged (8 steps).
 Proof modification of "iin1" is discouraged (1 steps).
