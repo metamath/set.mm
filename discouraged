@@ -12701,6 +12701,7 @@
 "ubthlem3" is used by "ubth".
 "un0.1" is used by "sspwimpVD".
 "un2122" is used by "suctrALT3".
+"unisnOLD" is used by "unisngOLD".
 "unop" is used by "cnvunop".
 "unop" is used by "counop".
 "unop" is used by "unopadj".
@@ -17898,6 +17899,8 @@ New usage of "unierri" is discouraged (0 uses).
 New usage of "unipwr" is discouraged (0 uses).
 New usage of "unipwrVD" is discouraged (0 uses).
 New usage of "unisnALT" is discouraged (0 uses).
+New usage of "unisnOLD" is discouraged (1 uses).
+New usage of "unisngOLD" is discouraged (0 uses).
 New usage of "unop" is discouraged (5 uses).
 New usage of "unopadj" is discouraged (2 uses).
 New usage of "unopadj2" is discouraged (0 uses).
@@ -19803,6 +19806,8 @@ Proof modification of "undif3VD" is discouraged (295 steps).
 Proof modification of "unipwr" is discouraged (32 steps).
 Proof modification of "unipwrVD" is discouraged (41 steps).
 Proof modification of "unisnALT" is discouraged (146 steps).
+Proof modification of "unisnOLD" is discouraged (24 steps).
+Proof modification of "unisngOLD" is discouraged (36 steps).
 Proof modification of "upgr0eopALT" is discouraged (55 steps).
 Proof modification of "upgr1eopALT" is discouraged (126 steps).
 Proof modification of "upgrisupwlkALT" is discouraged (84 steps).
