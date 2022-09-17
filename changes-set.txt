@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+17-Sep-22 zfnuleu   ---         deleted; use nulmo instead
 17-Sep-22 bm2.5ii   uniordint
 17-Sep-22 bm1.1     ---         deleted; use axextmo instead
 13-Sep-22 epelc     epeli
