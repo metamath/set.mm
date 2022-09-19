@@ -14236,6 +14236,7 @@ New usage of "branmfn" is discouraged (1 uses).
 New usage of "braval" is discouraged (10 uses).
 New usage of "brecop2OLD" is discouraged (0 uses).
 New usage of "brfi1indALT" is discouraged (0 uses).
+New usage of "brinxp2OLD" is discouraged (0 uses).
 New usage of "brresOLD" is discouraged (0 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
@@ -15300,6 +15301,8 @@ New usage of "elpwgded" is discouraged (2 uses).
 New usage of "elpwgdedVD" is discouraged (1 uses).
 New usage of "elreal" is discouraged (7 uses).
 New usage of "elreal2" is discouraged (3 uses).
+New usage of "elresOLD" is discouraged (0 uses).
+New usage of "elridOLD" is discouraged (0 uses).
 New usage of "elringchomALTV" is discouraged (1 uses).
 New usage of "elrngchomALTV" is discouraged (1 uses).
 New usage of "elsb3OLD" is discouraged (0 uses).
@@ -18576,6 +18579,7 @@ Proof modification of "bj-zfpow" is discouraged (71 steps).
 Proof modification of "bnj538OLD" is discouraged (94 steps).
 Proof modification of "br1steqgOLD" is discouraged (134 steps).
 Proof modification of "br2ndeqgOLD" is discouraged (134 steps).
+Proof modification of "brinxp2OLD" is discouraged (58 steps).
 Proof modification of "brecop2OLD" is discouraged (175 steps).
 Proof modification of "brfi1indALT" is discouraged (789 steps).
 Proof modification of "brfvidRP" is discouraged (92 steps).
@@ -18885,6 +18889,8 @@ Proof modification of "elnelunOLD" is discouraged (53 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
 Proof modification of "elrefsymrels3" is discouraged (65 steps).
+Proof modification of "elresOLD" is discouraged (171 steps).
+Proof modification of "elridOLD" is discouraged (107 steps).
 Proof modification of "elsb3OLD" is discouraged (60 steps).
 Proof modification of "elsb4OLD" is discouraged (60 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
