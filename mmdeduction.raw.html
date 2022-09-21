@@ -80,7 +80,7 @@ Metalogic, and Metametalogic</A>
 <LI> <A HREF="#set">The Weak Deduction Theorem in Set Theory</A></LI>
 <LI> <A HREF="#setex">Set Theory Example</A></LI>
 <LI> <A HREF="#proof">Informal Proof of the Weak Deduction Theorem</A></LI>
-<LI> <A HREF="#special">Another Special Case of the Deduction Theorem</A>
+<LI> <A HREF="#special">Another Special Case of the Weak Deduction Theorem</A>
 <!--
 <FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>New</FONT> <FONT
 SIZE=-1><I>2-Mar-2008</I></FONT>
@@ -152,17 +152,18 @@ be interesting to you.
 </P>
 
 <!--
-<P>Why does Metamath need these complicated-looking steps to convert an
-inference (deduction) into a closed theorem, when other systems of logic
-typically have a (metalogical) rule that allows you to do it in one
-step?  The answer is that these steps are part of the price for
-Metamath's philosophical goal to show all proofs <I>directly</I> from
-the axiom system in its database and not have to rely on higher-level
-metatheorems derived outside of that axiom system.  From a practical
-point of view, this minimalist philosophy also makes automated proof
-verification extremely simple:  the only metalogical rule needed to
-construct a proof from the axioms is the substitution of an expression
-for a variable.
+<p>
+Why does Metamath need these complicated-looking steps to convert an inference
+(deduction) into a closed theorem, when other systems of logic typically have
+a (metalogical) rule that allows to do it in one step?  The answer is that
+these steps are part of the price for Metamath's philosophical goal to show
+all proofs <I>directly</I> from the axiom system in its database and not have
+to rely on higher-level metatheorems derived outside of that axiom system.
+From a practical point of view, this minimalist philosophy also makes
+automated proof verification extremely simple:  the only metalogical rule
+needed to construct a proof from the axioms is the substitution of an
+expression for a variable.
+</p>
 -->
 
 <P>
@@ -220,7 +221,7 @@ An example of a theorem is the law of contraposition:
 This looks almost the same as the deduction, except the hypothesis and
 conclusion are connected together with the formal mathematical symbol for
 &quot;implies&quot;.  We don't have to prove a hypothesis; instead it is a
-stand-alone statement that is unconditionally true.  Even though it looks
+standalone statement that is unconditionally true.  Even though it looks
 similar, it is &quot;stronger&quot; than the deduction in a fundamental way.
 </P>
 
@@ -346,7 +347,7 @@ theory:
 <P>
 The reason this deduction holds is that the hypothesis, which effectively
 states (using <A HREF="ax-gen.html">ax-gen</A>) "for all ` x ` and ` y ` ,
-` x = y ` is true," can never be proved as a stand-alone theorem.  In fact it
+` x = y ` is true", can never be proved as a standalone theorem.  In fact it
 is provably false (by <A HREF="dtru.html">dtru</A>), so any conclusion
 whatsoever follows from it.  However, if we naively apply the Standard
 Deduction Theorem and blindly convert the hypothesis to an antecedent, the
@@ -375,7 +376,7 @@ theorem form of this deduction:
 The way we have presented the Standard Deduction Theorem above is slightly
 different from that in most textbooks, which use a list of hypotheses to the
 left of the the turnstile symbol ` |- ` .  This is discussed further in the
-<A HREF="#meta">Logic, Metalogic,..."</A> section below.
+<A HREF="#meta">Logic, Metalogic,...</A> section below.
 </P>
 
 <P>
@@ -411,7 +412,7 @@ deduction that can be used in many (but not all) cases.  We call it the
 <B>Weak Deduction Theorem</B>.  (There is also an unrelated "Weak
 Deduction Theorem" in the field of relevance logic, so to avoid
 confusion we could call ours the "Weak Deduction Theorem for Classical
-Logic.")  Unlike the Standard Deduction Theorem, the Weak Deduction
+Logic".)  Unlike the Standard Deduction Theorem, the Weak Deduction
 Theorem produces the theorem directly from a special substitution
 instance of the deduction, using a small, fixed number of steps roughly
 proportional to the length of the final theorem.  The number of
@@ -427,7 +428,7 @@ compact.  Here we describe it in some detail since it is not necessarily
 intuitive, nor has it ever been published.
 
 <P>What are its limitations?  Specifically, we must be able to prove a
-special case of the deduction's hypothesis as a stand-alone theorem.
+special case of the deduction hypothesis as a standalone theorem.
 This means it cannot be used in all cases&mdash;for example, it cannot be
 used when the hypothesis is a contradiction such as ` ( ph /\ -. ph ) ` .
 However, in the case of the contraposition deduction above, by
@@ -1040,17 +1041,17 @@ variants that keep some hypotheses while eliminating others.
 
 <P>
 <HR NOSHADE SIZE=1><A NAME="special"></A>
-<B><FONT COLOR="#006633">Another Special Case of the Deduction Theorem</FONT></B>
+<B><FONT COLOR="#006633">Another Special Case of the Weak Deduction Theorem</FONT></B>
 &nbsp;&nbsp;&nbsp;
 As we mentioned above, the Weak Deduction Theorem cannot always be used to
 convert a hypothesis to an antecedent (which is why we call it "weak").
-Sometimes other techniques can be devised for special cases where the Weak
-Deduction Theorem can't be used or is less efficient.  An example is the
-theorem <A HREF="dedhb.html">dedhb</A>, which can convert a "bound-variable
-hypothesis builder" (an hb* theorem such as <A HREF="hbneg.html">hbneg</A>) to
-a closed-theorem form, as explained in its description.  In practice, we
-usually use the closely related <A HREF="abidhb.html">abidhb</A> to strengthen
-an hb* inference to a deduction form such as <A HREF="hbnegd.html">hbnegd</A>.
+Sometimes, other techniques can be devised for special cases where the Weak
+Deduction Theorem cannot be used or is less efficient.  An example is the
+theorem <A HREF="dedhb.html">dedhb</A>, which can convert a nonfreeness
+hypothesis (an nf* theorem such as <A HREF="nfneg.html">nfneg</A>) to
+a closed theorem form, as explained in its description.  In practice, we
+usually use the closely related <A HREF="abidnf.html">abidnf</A> to strengthen
+an nf* inference to a deduction form such as <A HREF="nfnegd.html">nfnegd</A>.
 </P>
 
 <P>
@@ -1076,7 +1077,7 @@ Standard Deduction Theorem) have become a kind of lost art.
 <FONT SIZE=-2 FACE=sans-serif>&nbsp;</FONT>
 </TD>
 <TD NOWRAP ALIGN=CENTER>
-<I>This page was last updated on 16-Mar-2020.</I>
+<I>This page was last updated on 21-Sep-2022.</I>
 <BR>
 <FONT SIZE=-2 FACE=ARIAL>
 Copyright terms: <A HREF="../copyright.html#pd">Public domain</A>
