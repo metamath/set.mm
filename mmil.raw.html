@@ -1581,11 +1581,6 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
-<TD>ifan</TD>
-<TD><I>none</I></TD>
-</TR>
-
-<TR>
 <TD>ifor</TD>
 <TD><I>none</I></TD>
 </TR>
@@ -1606,7 +1601,7 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
-<TD>elimif , ifid , ifval , elif ,
+<TD>elimif , ifval , elif ,
 ifel , ifeqor , 2if2 , ifcomnan , csbif ,
 csbifgOLD</TD>
 <TD><I>none</I></TD>
@@ -1623,6 +1618,11 @@ csbifgOLD</TD>
 </TR>
 
 <TR>
+  <TD>ifid</TD>
+  <TD>~ ifiddc</TD>
+</TR>
+
+<TR>
   <TD>eqif</TD>
   <TD>~ eqifdc</TD>
 </TR>
@@ -1630,6 +1630,11 @@ csbifgOLD</TD>
 <TR>
   <TD>ifcl , ifcld</TD>
   <TD>~ ifcldcd , ~ ifcldadc</TD>
+</TR>
+
+<TR>
+  <TD>ifan</TD>
+  <TD>~ ifandc</TD>
 </TR>
 
 <TR>
@@ -7669,6 +7674,18 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>sum2id</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is. Lightly used in
+  set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>sumfc</TD>
+  <TD>~ sumfct</TD>
+</TR>
+
+<TR>
   <TD>sumrblem</TD>
   <TD>~ isumrblem</TD>
 </TR>
@@ -7704,18 +7721,21 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>sumz</TD>
+  <TD>~ isumz</TD>
+</TR>
+
+<TR>
+  <TD>sumss</TD>
+  <TD>~ isumss</TD>
+</TR>
+
+<TR>
   <TD>df-prod and theorems using it</TD>
   <TD><I>none</I></TD>
   <TD>To define this, will need to tackle all the issues
   with ~ df-isum plus some more around, for example, not equal to zero
   versus apart from zero</TD>
-</TR>
-
-<TR>
-  <TD>znnen</TD>
-  <TD><I>none</I></TD>
-  <TD>Corollary 8.1.23 of [AczelRathjen] and thus presumably provable.
-  The set.mm proof would not work as-is or with small changes, however.</TD>
 </TR>
 
 <TR>
