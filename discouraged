@@ -15610,7 +15610,6 @@ New usage of "h2hva" is discouraged (9 uses).
 New usage of "h2hvs" is discouraged (2 uses).
 New usage of "halfnq" is discouraged (1 uses).
 New usage of "hashfOLD" is discouraged (0 uses).
-New usage of "hashprgOLD" is discouraged (0 uses).
 New usage of "hatomic" is discouraged (1 uses).
 New usage of "hatomici" is discouraged (6 uses).
 New usage of "hatomistici" is discouraged (1 uses).
@@ -19222,7 +19221,6 @@ Proof modification of "gsummptnn0fzvOLD" is discouraged (17 steps).
 Proof modification of "gtinfOLD" is discouraged (249 steps).
 Proof modification of "hashfOLD" is discouraged (95 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
-Proof modification of "hashprgOLD" is discouraged (172 steps).
 Proof modification of "hb3anOLD" is discouraged (23 steps).
 Proof modification of "hba1-o" is discouraged (34 steps).
 Proof modification of "hba1wOLD" is discouraged (62 steps).
