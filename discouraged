@@ -7882,6 +7882,22 @@
 "idhmop" is used by "leopnmid".
 "idhmop" is used by "nmopleid".
 "idhmop" is used by "opsqrlem6".
+"idi" is used by "dvmptfprod".
+"idi" is used by "dvnprodlem1".
+"idi" is used by "fprodcnlem".
+"idi" is used by "frege55lem2a".
+"idi" is used by "fsovrfovd".
+"idi" is used by "imo72b2lem0".
+"idi" is used by "limsupvaluz2".
+"idi" is used by "madjusmdetlem2".
+"idi" is used by "ovncvr2".
+"idi" is used by "pfxcl".
+"idi" is used by "rngcifuestrc".
+"idi" is used by "sge0f1o".
+"idi" is used by "smfinfmpt".
+"idi" is used by "smfsupmpt".
+"idi" is used by "ssmapsn".
+"idi" is used by "wspthnonOLD".
 "idiALT" is used by "ax6e2nd".
 "idiALT" is used by "ax6e2ndALT".
 "idiALT" is used by "ax6e2ndeqALT".
@@ -13370,6 +13386,7 @@ New usage of "5oalem4" is discouraged (1 uses).
 New usage of "5oalem5" is discouraged (1 uses).
 New usage of "5oalem6" is discouraged (1 uses).
 New usage of "5oalem7" is discouraged (1 uses).
+New usage of "a1ii" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (4 uses).
 New usage of "ablo4" is discouraged (3 uses).
 New usage of "ablocom" is discouraged (6 uses).
@@ -16010,6 +16027,7 @@ New usage of "idALT" is discouraged (1 uses).
 New usage of "idcnop" is discouraged (2 uses).
 New usage of "iden2" is discouraged (0 uses).
 New usage of "idhmop" is discouraged (6 uses).
+New usage of "idi" is discouraged (16 uses).
 New usage of "idiALT" is discouraged (12 uses).
 New usage of "idiVD" is discouraged (0 uses).
 New usage of "idleop" is discouraged (1 uses).
@@ -18213,6 +18231,7 @@ Proof modification of "3simpaOLD" is discouraged (13 steps).
 Proof modification of "3simpbOLD" is discouraged (20 steps).
 Proof modification of "3simpcOLD" is discouraged (20 steps).
 Proof modification of "4exmidOLD" is discouraged (37 steps).
+Proof modification of "a1ii" is discouraged (1 steps).
 Proof modification of "abrexex2OLD" is discouraged (94 steps).
 Proof modification of "abrexexOLD" is discouraged (31 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
@@ -18679,6 +18698,8 @@ Proof modification of "con5" is discouraged (10 steps).
 Proof modification of "con5VD" is discouraged (47 steps).
 Proof modification of "con5i" is discouraged (13 steps).
 Proof modification of "conventions" is discouraged (1 steps).
+Proof modification of "conventions-comments" is discouraged (1 steps).
+Proof modification of "conventions-labels" is discouraged (1 steps).
 Proof modification of "cplgruvtxbOLD" is discouraged (96 steps).
 Proof modification of "cramerimplem1OLD" is discouraged (410 steps).
 Proof modification of "csbabgOLD" is discouraged (97 steps).
@@ -19229,6 +19250,7 @@ Proof modification of "icccmpALT" is discouraged (71 steps).
 Proof modification of "id1" is discouraged (2 steps).
 Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "iden2" is discouraged (18 steps).
+Proof modification of "idi" is discouraged (1 steps).
 Proof modification of "idiALT" is discouraged (1 steps).
 Proof modification of "idiVD" is discouraged (6 steps).
 Proof modification of "idinxpssinxp2" is discouraged (80 steps).
@@ -19311,6 +19333,7 @@ Proof modification of "lukshefth1" is discouraged (88 steps).
 Proof modification of "lukshefth2" is discouraged (129 steps).
 Proof modification of "map0eOLD" is discouraged (49 steps).
 Proof modification of "mapdm0OLD" is discouraged (108 steps).
+Proof modification of "mathbox" is discouraged (1 steps).
 Proof modification of "matmulcellOLD" is discouraged (225 steps).
 Proof modification of "max1ALT" is discouraged (48 steps).
 Proof modification of "measdivcstOLD" is discouraged (627 steps).
