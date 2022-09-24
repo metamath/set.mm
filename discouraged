@@ -475,7 +475,6 @@
 "ablodivdiv" is used by "ablonncan".
 "ablodivdiv4" is used by "ablo4pnp".
 "ablodivdiv4" is used by "ablodiv32".
-"ablodivdiv4" is used by "ablonnncan".
 "ablogrpo" is used by "ablo32".
 "ablogrpo" is used by "ablo4".
 "ablogrpo" is used by "ablo4pnp".
@@ -483,7 +482,6 @@
 "ablogrpo" is used by "ablodivdiv4".
 "ablogrpo" is used by "ablomuldiv".
 "ablogrpo" is used by "ablonncan".
-"ablogrpo" is used by "ablonnncan".
 "ablogrpo" is used by "ablonnncan1".
 "ablogrpo" is used by "cncph".
 "ablogrpo" is used by "cnidOLD".
@@ -6084,7 +6082,6 @@
 "grpodivcl" is used by "ablo4pnp".
 "grpodivcl" is used by "ablodivdiv4".
 "grpodivcl" is used by "ablomuldiv".
-"grpodivcl" is used by "ablonnncan".
 "grpodivcl" is used by "ablonnncan1".
 "grpodivcl" is used by "dmncan1".
 "grpodivcl" is used by "ghomdiv".
@@ -6214,7 +6211,6 @@
 "grpomuldivass" is used by "ablomuldiv".
 "grpon0" is used by "0ngrp".
 "grpon0" is used by "rngone0".
-"grponpcan" is used by "ablonnncan".
 "grponpcan" is used by "ghomdiv".
 "grponpcan" is used by "grpoeqdivid".
 "grporcan" is used by "ghomdiv".
@@ -13392,11 +13388,10 @@ New usage of "ablo4" is discouraged (3 uses).
 New usage of "ablocom" is discouraged (6 uses).
 New usage of "ablodiv32" is discouraged (1 uses).
 New usage of "ablodivdiv" is discouraged (2 uses).
-New usage of "ablodivdiv4" is discouraged (3 uses).
-New usage of "ablogrpo" is discouraged (25 uses).
+New usage of "ablodivdiv4" is discouraged (2 uses).
+New usage of "ablogrpo" is discouraged (24 uses).
 New usage of "ablomuldiv" is discouraged (3 uses).
 New usage of "ablonncan" is discouraged (1 uses).
-New usage of "ablonnncan" is discouraged (0 uses).
 New usage of "ablonnncan1" is discouraged (1 uses).
 New usage of "abrexex2OLD" is discouraged (0 uses).
 New usage of "abrexexOLD" is discouraged (0 uses).
@@ -15537,7 +15532,7 @@ New usage of "grpbasex" is discouraged (3 uses).
 New usage of "grpo2inv" is discouraged (4 uses).
 New usage of "grpoass" is discouraged (16 uses).
 New usage of "grpocl" is discouraged (12 uses).
-New usage of "grpodivcl" is discouraged (9 uses).
+New usage of "grpodivcl" is discouraged (8 uses).
 New usage of "grpodivdiv" is discouraged (1 uses).
 New usage of "grpodivf" is discouraged (1 uses).
 New usage of "grpodivfval" is discouraged (3 uses).
@@ -15572,7 +15567,7 @@ New usage of "grpolinv" is discouraged (9 uses).
 New usage of "grpomndo" is discouraged (1 uses).
 New usage of "grpomuldivass" is discouraged (3 uses).
 New usage of "grpon0" is discouraged (2 uses).
-New usage of "grponpcan" is discouraged (3 uses).
+New usage of "grponpcan" is discouraged (2 uses).
 New usage of "grporcan" is discouraged (6 uses).
 New usage of "grporid" is discouraged (9 uses).
 New usage of "grporinv" is discouraged (8 uses).
