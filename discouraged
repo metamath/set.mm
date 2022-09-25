@@ -16792,6 +16792,7 @@ New usage of "nn0indALT" is discouraged (3 uses).
 New usage of "nn0pnfge0OLD" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
+New usage of "nnmulclOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
 New usage of "norm-i" is discouraged (13 uses).
 New usage of "norm-i-i" is discouraged (2 uses).
@@ -19483,6 +19484,7 @@ Proof modification of "nn0indALT" is discouraged (15 steps).
 Proof modification of "nn0pnfge0OLD" is discouraged (26 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
+Proof modification of "nnmulclOLD" is discouraged (239 steps).
 Proof modification of "normlem7tALT" is discouraged (177 steps).
 Proof modification of "notnotrALT" is discouraged (12 steps).
 Proof modification of "notnotrALT2" is discouraged (2 steps).
