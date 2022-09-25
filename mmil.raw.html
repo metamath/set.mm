@@ -1534,8 +1534,23 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>r19.3rz</TD>
+  <TD>~ r19.3rm</TD>
+</TR>
+
+<TR>
+  <TD>r19.28z</TD>
+  <TD>~ r19.28m</TD>
+</TR>
+
+<TR>
   <TD>r19.9rzv</TD>
   <TD>~ r19.9rmv</TD>
+</TR>
+
+<TR>
+  <TD>r19.37zv</TD>
+  <TD>~ r19.3rmv</TD>
 </TR>
 
 <TR>
@@ -1546,6 +1561,16 @@ is double negation elimination.</TD>
 <TR>
 <TD>r19.44zv</TD>
 <TD>~ r19.44mv </TD>
+</TR>
+
+<TR>
+  <TD>r19.27z</TD>
+  <TD>~ r19.27m</TD>
+</TR>
+
+<TR>
+  <TD>r19.36zv</TD>
+  <TD>~ r19.36av</TD>
 </TR>
 
 <TR>
@@ -1581,11 +1606,6 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
-<TD>ifan</TD>
-<TD><I>none</I></TD>
-</TR>
-
-<TR>
 <TD>ifor</TD>
 <TD><I>none</I></TD>
 </TR>
@@ -1606,7 +1626,7 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
-<TD>elimif , ifid , ifval , elif ,
+<TD>elimif , ifval , elif ,
 ifel , ifeqor , 2if2 , ifcomnan , csbif ,
 csbifgOLD</TD>
 <TD><I>none</I></TD>
@@ -1623,6 +1643,11 @@ csbifgOLD</TD>
 </TR>
 
 <TR>
+  <TD>ifid</TD>
+  <TD>~ ifiddc</TD>
+</TR>
+
+<TR>
   <TD>eqif</TD>
   <TD>~ eqifdc</TD>
 </TR>
@@ -1630,6 +1655,11 @@ csbifgOLD</TD>
 <TR>
   <TD>ifcl , ifcld</TD>
   <TD>~ ifcldcd , ~ ifcldadc</TD>
+</TR>
+
+<TR>
+  <TD>ifan</TD>
+  <TD>~ ifandc</TD>
 </TR>
 
 <TR>
@@ -3359,9 +3389,15 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
-  <TD>fimax2g , fimaxg</TD>
+  <TD>fimax2g</TD>
+  <TD>~ fimax2gtri</TD>
+</TR>
+
+<TR>
+  <TD>fimaxg</TD>
   <TD><I>none</I></TD>
-  <TD>The set.mm proof relies on frfi and fri</TD>
+  <TD>The set.mm proof of fimaxg relies on fimax2g which
+  relies on frfi and fri</TD>
 </TR>
 
 <TR>
@@ -3414,6 +3450,12 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
+  <TD>fofinf1o</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses excluded middle in several places.</TD>
+</TR>
+
+<TR>
   <TD>dmfi</TD>
   <TD>~ fundmfi</TD>
 </TR>
@@ -3457,6 +3499,12 @@ this implies excluded middle</TD>
   <TD><I>none</I></TD>
   <TD>At first glance it would appear that the mapping would need to
   be one to one or some other condition.</TD>
+</TR>
+
+<TR>
+  <TD>fisuppfi</TD>
+  <TD>~ preimaf1ofi</TD>
+  <TD>The set.mm proof of fisuppfi uses ssfi</TD>
 </TR>
 
 <TR>
@@ -4971,8 +5019,8 @@ favor of theorems in deduction form.</TD>
 
 <TR>
   <TD>fimaxre</TD>
-  <TD>~ fimaxre2</TD>
-  <TD>When applied to a pair this could show which of two unequal
+  <TD>~ fimaxq , ~ fimaxre2</TD>
+  <TD>When applied to a pair fimaxre could show which of two unequal
   real numbers is larger, so perhaps not provable for that reason.
   (see ~ fin0 for inhabited versus nonempty).
   </TD>
@@ -6357,10 +6405,11 @@ or ~ ssfiexmid </TD>
 
 <TR>
   <TD>seqf1o</TD>
-  <TD><I>none</I></TD>
-  <TD>May be adaptable with sufficient attention to issues such as
-  whether the operation ` .+ ` is closed with respect to ` C ` as
-  well as ` S ` , and perhaps other issues.</TD>
+  <TD>~ iseqf1o</TD>
+  <TD>The functions ` G ` and ` H ` need to be defined on ` ( ZZ>= `` M ) `
+  not merely ` ( M ... N ) ` as in seqf1o . Also, a single set ` S `
+  takes the place of ` C ` and ` S ` because that is sufficient
+  flexibility at least for now.</TD>
 </TR>
 
 <TR>
@@ -7209,15 +7258,16 @@ than reals.</TD>
 </TR>
 
 <TR>
-  <TD>leiso , leisorel</TD>
+  <TD>leiso</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof uses isocnv3 .</TD>
 </TR>
 
 <TR>
   <TD>fz1iso</TD>
-  <TD><I>none</I></TD>
-  <TD>The set.mm proof depends on OrdIso</TD>
+  <TD>~ zfz1iso</TD>
+  <TD>The set.mm proof of fz1iso depends on OrdIso. Furthermore,
+  trichotomy rather than weak linearity would seem to be needed.</TD>
 </TR>
 
 <TR>
@@ -7227,10 +7277,19 @@ than reals.</TD>
   to ` _om ~<_ A ` but the set.mm proof does not work as is.</TD>
 </TR>
 
+
 <TR>
-  <TD>seqcoll , seqcoll2</TD>
+  <TD>seqcoll</TD>
+  <TD>~ iseqcoll</TD>
+  <TD>The functions ` F ` and ` H ` need to be defined on
+  ` ZZ>= `` M ` not just a subset thereof.</TD>
+</TR>
+
+<TR>
+  <TD>seqcoll2</TD>
   <TD><I>none</I></TD>
-  <TD>Presumably will require significant modifications.</TD>
+  <TD>Presumably can be done with modifications similar
+  to ~ iseqcoll .</TD>
 </TR>
 
 <TR>
@@ -7646,6 +7705,18 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>sum2id</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is. Lightly used in
+  set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>sumfc</TD>
+  <TD>~ sumfct</TD>
+</TR>
+
+<TR>
   <TD>sumrblem</TD>
   <TD>~ isumrblem</TD>
 </TR>
@@ -7661,18 +7732,41 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>summo</TD>
+  <TD>~ isummo</TD>
+</TR>
+
+<TR>
+  <TD>zsum</TD>
+  <TD>~ zisum</TD>
+</TR>
+
+<TR>
+  <TD>isum</TD>
+  <TD>~ iisum</TD>
+</TR>
+
+<TR>
+  <TD>fsum</TD>
+  <TD>~ fisum</TD>
+</TR>
+
+<TR>
+  <TD>sumz</TD>
+  <TD>~ isumz</TD>
+</TR>
+
+<TR>
+  <TD>sumss</TD>
+  <TD>~ isumss</TD>
+</TR>
+
+<TR>
   <TD>df-prod and theorems using it</TD>
   <TD><I>none</I></TD>
   <TD>To define this, will need to tackle all the issues
   with ~ df-isum plus some more around, for example, not equal to zero
   versus apart from zero</TD>
-</TR>
-
-<TR>
-  <TD>znnen</TD>
-  <TD><I>none</I></TD>
-  <TD>Corollary 8.1.23 of [AczelRathjen] and thus presumably provable.
-  The set.mm proof would not work as-is or with small changes, however.</TD>
 </TR>
 
 <TR>
