@@ -2258,7 +2258,6 @@
 "bnj523" is used by "bnj934".
 "bnj525" is used by "bnj1040".
 "bnj525" is used by "bnj523".
-"bnj525" is used by "bnj538OLD".
 "bnj525" is used by "bnj539".
 "bnj525" is used by "bnj540".
 "bnj525" is used by "bnj91".
@@ -14106,14 +14105,13 @@ New usage of "bnj519" is discouraged (2 uses).
 New usage of "bnj521" is discouraged (2 uses).
 New usage of "bnj523" is discouraged (3 uses).
 New usage of "bnj524" is discouraged (0 uses).
-New usage of "bnj525" is discouraged (8 uses).
+New usage of "bnj525" is discouraged (7 uses).
 New usage of "bnj526" is discouraged (1 uses).
 New usage of "bnj528" is discouraged (2 uses).
 New usage of "bnj529" is discouraged (3 uses).
 New usage of "bnj534" is discouraged (2 uses).
 New usage of "bnj535" is discouraged (1 uses).
 New usage of "bnj538" is discouraged (3 uses).
-New usage of "bnj538OLD" is discouraged (0 uses).
 New usage of "bnj539" is discouraged (4 uses).
 New usage of "bnj540" is discouraged (2 uses).
 New usage of "bnj543" is discouraged (1 uses).
@@ -16383,7 +16381,6 @@ New usage of "ltrniotacnvN" is discouraged (0 uses).
 New usage of "ltrniotafvawN" is discouraged (0 uses).
 New usage of "ltrniotaidvalN" is discouraged (1 uses).
 New usage of "ltrniotavalbN" is discouraged (0 uses).
-New usage of "ltrnmwOLD" is discouraged (0 uses).
 New usage of "ltrnq" is discouraged (3 uses).
 New usage of "ltsonq" is discouraged (10 uses).
 New usage of "ltsopi" is discouraged (4 uses).
@@ -17011,14 +17008,11 @@ New usage of "opsqrlem6" is discouraged (0 uses).
 New usage of "opthregOLD" is discouraged (0 uses).
 New usage of "orbi1r" is discouraged (0 uses).
 New usage of "orbi1rVD" is discouraged (0 uses).
-New usage of "ordelinelOLD" is discouraged (0 uses).
 New usage of "ordelordALT" is discouraged (0 uses).
 New usage of "ordelordALTVD" is discouraged (0 uses).
-New usage of "ordnbtwnOLD" is discouraged (0 uses).
 New usage of "ordpinq" is discouraged (6 uses).
 New usage of "ordpipq" is discouraged (5 uses).
 New usage of "ordtr3OLD" is discouraged (0 uses).
-New usage of "ordtri3OLD" is discouraged (0 uses).
 New usage of "orim12dALT" is discouraged (0 uses).
 New usage of "orthcom" is discouraged (6 uses).
 New usage of "orthin" is discouraged (2 uses).
@@ -17857,7 +17851,6 @@ New usage of "suctrALT2VD" is discouraged (0 uses).
 New usage of "suctrALT3" is discouraged (0 uses).
 New usage of "suctrALTcf" is discouraged (0 uses).
 New usage of "suctrALTcfVD" is discouraged (0 uses).
-New usage of "suctrOLD" is discouraged (0 uses).
 New usage of "sumdmdi" is discouraged (2 uses).
 New usage of "sumdmdii" is discouraged (2 uses).
 New usage of "sumdmdlem" is discouraged (1 uses).
@@ -18618,7 +18611,6 @@ Proof modification of "bj-xpnzex" is discouraged (71 steps).
 Proof modification of "bj-zfauscl" is discouraged (65 steps).
 Proof modification of "bj-zfpow" is discouraged (71 steps).
 Proof modification of "bm1.1OLD" is discouraged (96 steps).
-Proof modification of "bnj538OLD" is discouraged (94 steps).
 Proof modification of "br1steqgOLD" is discouraged (134 steps).
 Proof modification of "br2ndeqgOLD" is discouraged (134 steps).
 Proof modification of "brecop2OLD" is discouraged (175 steps).
@@ -19314,7 +19306,6 @@ Proof modification of "lspfixedOLD" is discouraged (1103 steps).
 Proof modification of "lspsncv0OLD" is discouraged (149 steps).
 Proof modification of "lssneln0OLD" is discouraged (64 steps).
 Proof modification of "lssssrOLD" is discouraged (119 steps).
-Proof modification of "ltrnmwOLD" is discouraged (292 steps).
 Proof modification of "luk-1" is discouraged (73 steps).
 Proof modification of "luk-2" is discouraged (52 steps).
 Proof modification of "luk-3" is discouraged (20 steps).
@@ -19536,12 +19527,9 @@ Proof modification of "opnmblALT" is discouraged (332 steps).
 Proof modification of "opthregOLD" is discouraged (112 steps).
 Proof modification of "orbi1r" is discouraged (9 steps).
 Proof modification of "orbi1rVD" is discouraged (101 steps).
-Proof modification of "ordelinelOLD" is discouraged (126 steps).
 Proof modification of "ordelordALT" is discouraged (128 steps).
 Proof modification of "ordelordALTVD" is discouraged (202 steps).
-Proof modification of "ordnbtwnOLD" is discouraged (77 steps).
 Proof modification of "ordtr3OLD" is discouraged (76 steps).
-Proof modification of "ordtri3OLD" is discouraged (107 steps).
 Proof modification of "orim12dALT" is discouraged (34 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
@@ -19810,7 +19798,6 @@ Proof modification of "suctrALT2VD" is discouraged (173 steps).
 Proof modification of "suctrALT3" is discouraged (137 steps).
 Proof modification of "suctrALTcf" is discouraged (164 steps).
 Proof modification of "suctrALTcfVD" is discouraged (164 steps).
-Proof modification of "suctrOLD" is discouraged (122 steps).
 Proof modification of "suppfnssOLD" is discouraged (319 steps).
 Proof modification of "syl2an23anOLD" is discouraged (27 steps).
 Proof modification of "syl2an2rOLD" is discouraged (15 steps).
