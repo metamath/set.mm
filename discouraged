@@ -2970,7 +2970,7 @@
 "cba" is used by "sspmlem".
 "cba" is used by "sspmval".
 "cba" is used by "sspn".
-"cba" is used by "sspph".
+"cba" is used by "sspphOLD".
 "cba" is used by "ssps".
 "cba" is used by "sspz".
 "cba" is used by "ubth".
@@ -8448,7 +8448,7 @@
 "ishlo" is used by "hhsshl".
 "ishlo" is used by "hlobn".
 "ishlo" is used by "hlph".
-"ishlo" is used by "ssphl".
+"ishlo" is used by "ssphlOLD".
 "ishst" is used by "hst1a".
 "ishst" is used by "hstcl".
 "ishst" is used by "hstel2".
@@ -8480,7 +8480,7 @@
 "isnvi" is used by "hhssnv".
 "isnvlem" is used by "isnv".
 "isph" is used by "phpar2".
-"isph" is used by "sspph".
+"isph" is used by "sspphOLD".
 "isphg" is used by "cncph".
 "isphg" is used by "hhph".
 "isphg" is used by "isph".
@@ -10378,7 +10378,7 @@
 "nvgcl" is used by "nvpi".
 "nvgcl" is used by "nvpncan2".
 "nvgcl" is used by "pythi".
-"nvgcl" is used by "sspph".
+"nvgcl" is used by "sspphOLD".
 "nvgcl" is used by "ubthlem2".
 "nvgcl" is used by "vacn".
 "nvge0" is used by "htthlem".
@@ -10444,7 +10444,7 @@
 "nvmcl" is used by "siilem1".
 "nvmcl" is used by "smcnlem".
 "nvmcl" is used by "sspimsval".
-"nvmcl" is used by "sspph".
+"nvmcl" is used by "sspphOLD".
 "nvmcl" is used by "vacn".
 "nvmdi" is used by "minvecolem2".
 "nvmdi" is used by "smcnlem".
@@ -10942,7 +10942,7 @@
 "phnv" is used by "phnvi".
 "phnv" is used by "phop".
 "phnv" is used by "phrel".
-"phnv" is used by "sspph".
+"phnv" is used by "sspphOLD".
 "phnvi" is used by "ajfuni".
 "phnvi" is used by "elimph".
 "phnvi" is used by "ip0i".
@@ -10971,7 +10971,7 @@
 "phpar" is used by "ip0i".
 "phpar2" is used by "hlpar2".
 "phpar2" is used by "minvecolem2".
-"phpar2" is used by "sspph".
+"phpar2" is used by "sspphOLD".
 "phrel" is used by "phop".
 "pinn" is used by "addasspi".
 "pinn" is used by "addcanpi".
@@ -12518,14 +12518,14 @@
 "sspba" is used by "sspmlem".
 "sspba" is used by "sspmval".
 "sspba" is used by "sspn".
-"sspba" is used by "sspph".
+"sspba" is used by "sspphOLD".
 "sspba" is used by "ssps".
 "sspba" is used by "sspz".
 "sspg" is used by "sspgval".
 "sspgval" is used by "hhshsslem2".
 "sspgval" is used by "minvecolem2".
 "sspgval" is used by "sspmval".
-"sspgval" is used by "sspph".
+"sspgval" is used by "sspphOLD".
 "sspid" is used by "hhsssh".
 "sspims" is used by "bnsscmcl".
 "sspims" is used by "minvecolem4a".
@@ -12535,7 +12535,7 @@
 "sspmlem" is used by "sspm".
 "sspmval" is used by "sspimsval".
 "sspmval" is used by "sspm".
-"sspmval" is used by "sspph".
+"sspmval" is used by "sspphOLD".
 "sspmval" is used by "sspz".
 "sspn" is used by "sspnval".
 "sspnv" is used by "bnsscmcl".
@@ -12547,13 +12547,13 @@
 "sspnv" is used by "sspmlem".
 "sspnv" is used by "sspmval".
 "sspnv" is used by "sspn".
-"sspnv" is used by "sspph".
+"sspnv" is used by "sspphOLD".
 "sspnv" is used by "ssps".
 "sspnv" is used by "sspz".
 "sspnval" is used by "sspimsval".
-"sspnval" is used by "sspph".
-"sspph" is used by "hhssph".
-"sspph" is used by "ssphl".
+"sspnval" is used by "sspphOLD".
+"sspphOLD" is used by "hhssph".
+"sspphOLD" is used by "ssphlOLD".
 "ssps" is used by "sspsval".
 "sspsval" is used by "hhshsslem2".
 "sspsval" is used by "minvecolem2".
@@ -17769,7 +17769,7 @@ New usage of "ssmd2" is discouraged (3 uses).
 New usage of "sspba" is discouraged (16 uses).
 New usage of "sspg" is discouraged (1 uses).
 New usage of "sspgval" is discouraged (4 uses).
-New usage of "ssphl" is discouraged (0 uses).
+New usage of "ssphlOLD" is discouraged (0 uses).
 New usage of "sspid" is discouraged (1 uses).
 New usage of "sspims" is discouraged (2 uses).
 New usage of "sspimsval" is discouraged (1 uses).
@@ -17780,7 +17780,7 @@ New usage of "sspmval" is discouraged (4 uses).
 New usage of "sspn" is discouraged (1 uses).
 New usage of "sspnv" is discouraged (12 uses).
 New usage of "sspnval" is discouraged (2 uses).
-New usage of "sspph" is discouraged (2 uses).
+New usage of "sspphOLD" is discouraged (2 uses).
 New usage of "ssps" is discouraged (1 uses).
 New usage of "sspsval" is discouraged (3 uses).
 New usage of "sspval" is discouraged (1 uses).
@@ -19772,6 +19772,8 @@ Proof modification of "sps-o" is discouraged (10 steps).
 Proof modification of "sqrt2irrlemOLD" is discouraged (288 steps).
 Proof modification of "ssdifsnOLD" is discouraged (107 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
+Proof modification of "ssphlOLD" is discouraged (34 steps).
+Proof modification of "sspphOLD" is discouraged (502 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).
 Proof modification of "sspwimpALT" is discouraged (74 steps).
 Proof modification of "sspwimpALT2" is discouraged (50 steps).
