@@ -15396,6 +15396,7 @@ New usage of "erngplus2-rN" is discouraged (0 uses).
 New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "estrresOLD" is discouraged (0 uses).
+New usage of "eu5" is discouraged (0 uses).
 New usage of "eubidvOLD" is discouraged (0 uses).
 New usage of "eueqOLD" is discouraged (1 uses).
 New usage of "euexALT" is discouraged (0 uses).
@@ -16562,6 +16563,7 @@ New usage of "mndoisexid" is discouraged (2 uses).
 New usage of "mndoismgmOLD" is discouraged (3 uses).
 New usage of "mndoissmgrpOLD" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
+New usage of "mo2v" is discouraged (0 uses).
 New usage of "mobidvOLD" is discouraged (0 uses).
 New usage of "moeqOLD" is discouraged (0 uses).
 New usage of "mptssALT" is discouraged (0 uses).
@@ -18562,12 +18564,9 @@ Proof modification of "bj-rexvwv" is discouraged (34 steps).
 Proof modification of "bj-ru" is discouraged (22 steps).
 Proof modification of "bj-ru0" is discouraged (50 steps).
 Proof modification of "bj-ru1" is discouraged (27 steps).
-Proof modification of "bj-sb2v" is discouraged (29 steps).
 Proof modification of "bj-sb3v" is discouraged (25 steps).
 Proof modification of "bj-sb4v" is discouraged (25 steps).
-Proof modification of "bj-sb5" is discouraged (25 steps).
 Proof modification of "bj-sb56" is discouraged (50 steps).
-Proof modification of "bj-sb6" is discouraged (32 steps).
 Proof modification of "bj-sbab" is discouraged (17 steps).
 Proof modification of "bj-sbceqgALT" is discouraged (143 steps).
 Proof modification of "bj-sbeqALT" is discouraged (44 steps).
@@ -18966,6 +18965,7 @@ Proof modification of "equvelvOLD" is discouraged (37 steps).
 Proof modification of "equvinvOLD" is discouraged (47 steps).
 Proof modification of "eqvOLD" is discouraged (6 steps).
 Proof modification of "estrresOLD" is discouraged (427 steps).
+Proof modification of "eu5" is discouraged (35 steps).
 Proof modification of "eubidvOLD" is discouraged (9 steps).
 Proof modification of "eueqOLD" is discouraged (52 steps).
 Proof modification of "euexALT" is discouraged (32 steps).
@@ -19377,6 +19377,7 @@ Proof modification of "minimp-syllsimp" is discouraged (261 steps).
 Proof modification of "minmar1marrepOLD" is discouraged (118 steps).
 Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
+Proof modification of "mo2v" is discouraged (142 steps).
 Proof modification of "mobidvOLD" is discouraged (9 steps).
 Proof modification of "moeqOLD" is discouraged (29 steps).
 Proof modification of "mptssALT" is discouraged (57 steps).
@@ -19637,6 +19638,7 @@ Proof modification of "rucALT" is discouraged (25 steps).
 Proof modification of "rusbcALT" is discouraged (77 steps).
 Proof modification of "s1dmALT" is discouraged (25 steps).
 Proof modification of "s2dmALT" is discouraged (38 steps).
+Proof modification of "sb2v" is discouraged (29 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
 Proof modification of "sb6OLD" is discouraged (32 steps).
