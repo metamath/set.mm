@@ -14891,11 +14891,13 @@ New usage of "dfbi1ALT" is discouraged (0 uses).
 New usage of "dfbi3OLD" is discouraged (0 uses).
 New usage of "dfch2" is discouraged (0 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
+New usage of "dfeu" is discouraged (0 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
 New usage of "dfid2" is discouraged (1 uses).
 New usage of "dfid3" is discouraged (1 uses).
 New usage of "dfiop2" is discouraged (3 uses).
 New usage of "dfiota4OLD" is discouraged (0 uses).
+New usage of "dfmo" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfsn2ALT" is discouraged (0 uses).
 New usage of "dftru2" is discouraged (0 uses).
@@ -15397,7 +15399,6 @@ New usage of "erngplus2-rN" is discouraged (0 uses).
 New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "estrresOLD" is discouraged (0 uses).
-New usage of "eu5" is discouraged (0 uses).
 New usage of "eubidvOLD" is discouraged (0 uses).
 New usage of "eubidvOLDOLD" is discouraged (1 uses).
 New usage of "eueqOLD" is discouraged (1 uses).
@@ -16565,7 +16566,6 @@ New usage of "mndoisexid" is discouraged (2 uses).
 New usage of "mndoismgmOLD" is discouraged (3 uses).
 New usage of "mndoissmgrpOLD" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
-New usage of "mo2v" is discouraged (0 uses).
 New usage of "mobidvOLD" is discouraged (0 uses).
 New usage of "mobidvOLDOLD" is discouraged (0 uses).
 New usage of "moeqOLD" is discouraged (0 uses).
@@ -18720,7 +18720,9 @@ Proof modification of "dfac2OLD" is discouraged (822 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfbi3OLD" is discouraged (45 steps).
 Proof modification of "dfcleq" is discouraged (10 steps).
+Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dfiota4OLD" is discouraged (40 steps).
+Proof modification of "dfmo" is discouraged (142 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
 Proof modification of "dfvd1imp" is discouraged (10 steps).
 Proof modification of "dfvd1impr" is discouraged (10 steps).
@@ -18970,7 +18972,6 @@ Proof modification of "equvelvOLD" is discouraged (37 steps).
 Proof modification of "equvinvOLD" is discouraged (47 steps).
 Proof modification of "eqvOLD" is discouraged (6 steps).
 Proof modification of "estrresOLD" is discouraged (427 steps).
-Proof modification of "eu5" is discouraged (35 steps).
 Proof modification of "eubidvOLD" is discouraged (9 steps).
 Proof modification of "eubidvOLDOLD" is discouraged (48 steps).
 Proof modification of "eueqOLD" is discouraged (52 steps).
@@ -19383,7 +19384,6 @@ Proof modification of "minimp-syllsimp" is discouraged (261 steps).
 Proof modification of "minmar1marrepOLD" is discouraged (118 steps).
 Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
-Proof modification of "mo2v" is discouraged (142 steps).
 Proof modification of "mobidvOLD" is discouraged (9 steps).
 Proof modification of "mobidvOLDOLD" is discouraged (46 steps).
 Proof modification of "moeqOLD" is discouraged (29 steps).
