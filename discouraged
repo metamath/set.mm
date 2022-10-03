@@ -17909,6 +17909,7 @@ New usage of "tratrbVD" is discouraged (0 uses).
 New usage of "trelded" is discouraged (1 uses).
 New usage of "trintALT" is discouraged (0 uses).
 New usage of "trintALTVD" is discouraged (0 uses).
+New usage of "trintOLD" is discouraged (0 uses).
 New usage of "trintssOLD" is discouraged (0 uses).
 New usage of "trlcoabs2N" is discouraged (1 uses).
 New usage of "trnfsetN" is discouraged (1 uses).
@@ -19852,6 +19853,7 @@ Proof modification of "trcleq2lemRP" is discouraged (32 steps).
 Proof modification of "trelded" is discouraged (27 steps).
 Proof modification of "trintALT" is discouraged (166 steps).
 Proof modification of "trintALTVD" is discouraged (211 steps).
+Proof modification of "trintOLD" is discouraged (129 steps).
 Proof modification of "trintssOLD" is discouraged (67 steps).
 Proof modification of "trsbc" is discouraged (203 steps).
 Proof modification of "trsbcVD" is discouraged (398 steps).
