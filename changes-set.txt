@@ -27,21 +27,24 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-26-Sep-22 euequ1    euequi
-26-Sep-22 eueq1     eueqi
+ 1-Oct-22 eu5       dfeu        this is now a rederivation
+ 1-Oct-22 mo2v      dfmo        this is now a rederivation
+ 1-Oct-22 mo2       mof         "f-version" of df-mo
+26-Sep-22 euequ1    euequ
+26-Sep-22 eueq1     eueqi       inference associated with eueq
 17-Sep-22 zfnuleu   ---         deleted; use nulmo instead
-17-Sep-22 bm2.5ii   uniordint
+17-Sep-22 bm2.5ii   uniordint   more informative label
 17-Sep-22 bm1.1     ---         deleted; use axextmo instead
-13-Sep-22 epelc     epeli
-13-Sep-22 a1tru     trud
-13-Sep-22 trud      mptru
+13-Sep-22 epelc     epeli       inference associated with epelg
+13-Sep-22 a1tru     trud        deduction form of tru
+13-Sep-22 trud      mptru       modus ponens when minor is tru
  8-Sep-22 el2v2     elvd        moved from PM's mathbox to main
  8-Sep-22 exlimimdd             moved from ML's mathbox to main
  4-Sep-22 funresfunco           moved from AV's mathbox to main
  3-Sep-22 pwexd                 moved from GS's mathbox to main
  3-Sep-22 moimd                 moved from TA's mathbox to main
  3-Sep-22 csbvargi              moved from GM's mathbox to main
- 1-Sep-22 keepel    ifcli
+ 1-Sep-22 keepel    ifcli       inference associated with ifcl
 26-Aug-22 elv                   moved from PM's mathbox to main
 18-Aug-22 eel1111   syl1111anc  moved from AS's mathbox to main
 26-Jul-22 wl-jarri  jarri       moved from WL's mathbox to main
