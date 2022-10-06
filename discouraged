@@ -16574,6 +16574,7 @@ New usage of "mndoisexid" is discouraged (2 uses).
 New usage of "mndoismgmOLD" is discouraged (3 uses).
 New usage of "mndoissmgrpOLD" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
+New usage of "mobidvALT" is discouraged (0 uses).
 New usage of "mobidvOLD" is discouraged (0 uses).
 New usage of "mobidvOLDOLD" is discouraged (0 uses).
 New usage of "moeqOLD" is discouraged (0 uses).
@@ -19403,6 +19404,7 @@ Proof modification of "minimp-syllsimp" is discouraged (261 steps).
 Proof modification of "minmar1marrepOLD" is discouraged (118 steps).
 Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
+Proof modification of "mobidvALT" is discouraged (48 steps).
 Proof modification of "mobidvOLD" is discouraged (9 steps).
 Proof modification of "mobidvOLDOLD" is discouraged (46 steps).
 Proof modification of "moeqOLD" is discouraged (29 steps).
