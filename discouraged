@@ -14900,6 +14900,7 @@ New usage of "dfbi3OLD" is discouraged (0 uses).
 New usage of "dfch2" is discouraged (0 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfeu" is discouraged (0 uses).
+New usage of "dfeuOLD" is discouraged (0 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
 New usage of "dfid2" is discouraged (1 uses).
 New usage of "dfid3" is discouraged (1 uses).
@@ -15411,7 +15412,8 @@ New usage of "eubiOLD" is discouraged (0 uses).
 New usage of "eubidvOLD" is discouraged (0 uses).
 New usage of "eubidvOLDOLD" is discouraged (1 uses).
 New usage of "eueqOLD" is discouraged (1 uses).
-New usage of "euexALT" is discouraged (0 uses).
+New usage of "euexALTOLD" is discouraged (0 uses).
+New usage of "euexOLD" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
 New usage of "eumoOLD" is discouraged (0 uses).
 New usage of "ex-gt" is discouraged (0 uses).
@@ -15448,6 +15450,7 @@ New usage of "exlimdhOLD" is discouraged (0 uses).
 New usage of "exlimexi" is discouraged (2 uses).
 New usage of "exlimiOLD" is discouraged (1 uses).
 New usage of "exlimihOLD" is discouraged (0 uses).
+New usage of "exmoeuOLD" is discouraged (0 uses).
 New usage of "expcomdg" is discouraged (0 uses).
 New usage of "expdOLD" is discouraged (0 uses).
 New usage of "expdcomOLD" is discouraged (0 uses).
@@ -18742,6 +18745,7 @@ Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfbi3OLD" is discouraged (45 steps).
 Proof modification of "dfcleq" is discouraged (10 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
+Proof modification of "dfeuOLD" is discouraged (33 steps).
 Proof modification of "dfiota4OLD" is discouraged (40 steps).
 Proof modification of "dfmo" is discouraged (142 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
@@ -18997,9 +19001,10 @@ Proof modification of "eubiOLD" is discouraged (15 steps).
 Proof modification of "eubidvOLD" is discouraged (9 steps).
 Proof modification of "eubidvOLDOLD" is discouraged (48 steps).
 Proof modification of "eueqOLD" is discouraged (52 steps).
-Proof modification of "euexALT" is discouraged (32 steps).
+Proof modification of "euexALTOLD" is discouraged (32 steps).
+Proof modification of "euexOLD" is discouraged (44 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
-Proof modification of "eumoOLD" is discouraged (13 steps).
+Proof modification of "eumoOLD" is discouraged (18 steps).
 Proof modification of "ex-natded5.13" is discouraged (67 steps).
 Proof modification of "ex-natded5.13-2" is discouraged (21 steps).
 Proof modification of "ex-natded5.2" is discouraged (18 steps).
@@ -19030,6 +19035,7 @@ Proof modification of "exlimdhOLD" is discouraged (14 steps).
 Proof modification of "exlimexi" is discouraged (15 steps).
 Proof modification of "exlimiOLD" is discouraged (16 steps).
 Proof modification of "exlimihOLD" is discouraged (9 steps).
+Proof modification of "exmoeuOLD" is discouraged (39 steps).
 Proof modification of "expdOLD" is discouraged (18 steps).
 Proof modification of "expdcomOLD" is discouraged (11 steps).
 Proof modification of "extwwlkfablem1OLD" is discouraged (257 steps).
