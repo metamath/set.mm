@@ -27,11 +27,15 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 6-Oct-22 hhsshl    csschl      hhsshl was in deprecated Part 19
+ 6-Oct-22 hhssbn    cssbn       hhssbn was in deprecated Part 19
  3-Oct-22 brrelexi  brrelex1i
  3-Oct-22 brrelex   brrelex1
  1-Oct-22 eu5       dfeu        this is now a rederivation
  1-Oct-22 mo2v      dfmo        this is now a rederivation
  1-Oct-22 mo2       mof         "f-version" of df-mo
+29-Sep-22 ssphl     cphssphl    ssphl was in deprecated Part 19
+29-Sep-22 sspph     cphsscph    sspph was in deprecated Part 19
 26-Sep-22 euequ1    euequ
 26-Sep-22 eueq1     eueqi       inference associated with eueq
 17-Sep-22 zfnuleu   ---         deleted; use nulmo instead
