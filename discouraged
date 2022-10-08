@@ -13287,7 +13287,7 @@ New usage of "1t1e1ALT" is discouraged (0 uses).
 New usage of "2atm2atN" is discouraged (0 uses).
 New usage of "2atnelvolN" is discouraged (0 uses).
 New usage of "2bornot2b" is discouraged (0 uses).
-New usage of "2cnOLD" is discouraged (0 uses).
+New usage of "2cnALT" is discouraged (0 uses).
 New usage of "2llnjN" is discouraged (1 uses).
 New usage of "2llnjaN" is discouraged (1 uses).
 New usage of "2llnm2N" is discouraged (1 uses).
@@ -16804,9 +16804,11 @@ New usage of "nmounbi" is discouraged (2 uses).
 New usage of "nmounbseqi" is discouraged (0 uses).
 New usage of "nmounbseqiALT" is discouraged (0 uses).
 New usage of "nmoxr" is discouraged (7 uses).
+New usage of "nn0cniOLD" is discouraged (0 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nn0indALT" is discouraged (3 uses).
 New usage of "nn0pnfge0OLD" is discouraged (0 uses).
+New usage of "nn0sscnOLD" is discouraged (0 uses).
 New usage of "nncniOLD" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
@@ -18180,7 +18182,7 @@ Proof modification of "1div0apr" is discouraged (77 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "1t1e1ALT" is discouraged (13 steps).
 Proof modification of "2bornot2b" is discouraged (26 steps).
-Proof modification of "2cnOLD" is discouraged (3 steps).
+Proof modification of "2cnALT" is discouraged (3 steps).
 Proof modification of "2pm13.193" is discouraged (91 steps).
 Proof modification of "2pm13.193VD" is discouraged (223 steps).
 Proof modification of "2sb5nd" is discouraged (125 steps).
@@ -19508,9 +19510,11 @@ Proof modification of "nmobndseqiALT" is discouraged (189 steps).
 Proof modification of "nmopsetretALT" is discouraged (76 steps).
 Proof modification of "nmopub2tALT" is discouraged (240 steps).
 Proof modification of "nmounbseqiALT" is discouraged (146 steps).
+Proof modification of "nn0cniOLD" is discouraged (5 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nn0indALT" is discouraged (15 steps).
 Proof modification of "nn0pnfge0OLD" is discouraged (26 steps).
+Proof modification of "nn0sscnOLD" is discouraged (6 steps).
 Proof modification of "nncniOLD" is discouraged (5 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).

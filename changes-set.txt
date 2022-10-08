@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 8-Oct-22 2cnOLD    2cnALT
  3-Oct-22 brrelexi  brrelex1i
  3-Oct-22 brrelex   brrelex1
  1-Oct-22 eu5       dfeu        this is now a rederivation
