@@ -28,6 +28,7 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
  7-Oct-22 exmoeu2   exmoeub     biconditional form of exmoeu
+ 7-Oct-22 eubi                  moved from ATS's mathbox to main
  3-Oct-22 brrelexi  brrelex1i
  3-Oct-22 brrelex   brrelex1
  1-Oct-22 eu5       dfeu        this is now a rederivation
