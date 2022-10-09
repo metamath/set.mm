@@ -28,6 +28,20 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
  9-Oct-22 19.9alt   19.3t       moved from NM's mathbox to main
+ 7-Oct-22 exmoeu2   exmoeub     biconditional form of exmoeu
+ 7-Oct-22 eubi                  moved from ATS's mathbox to main
+ 4-Oct-22 brresi    brresi2
+ 4-Oct-22 opelresi  opelidres
+ 4-Oct-22 brres     brresi
+ 4-Oct-22 opelres   opelresi
+ 4-Oct-22 brresALTV brres       moved from PM's mathbox to main set.mm
+ 4-Oct-22 opelresALTV opelres   moved from PM's mathbox to main set.mm
+ 4-Oct-22 inxpssres [same]      moved from PM's mathbox to main set.mm
+ 4-Oct-22 anbi1cd   [same]      moved from PM's mathbox to main set.mm
+ 4-Oct-22 anbi1ci   [same]      moved from PM's mathbox to main set.mm
+ 4-Oct-22 biancomd  [same]      moved from PM's mathbox to main set.mm
+ 4-Oct-22 biancomi  biancom     moved from PM's mathbox to main set.mm
+ 4-Oct-22 dvreslem  [same]      commutation in theorem
  3-Oct-22 brrelexi  brrelex1i
  3-Oct-22 brrelex   brrelex1
  1-Oct-22 eu5       dfeu        this is now a rederivation
