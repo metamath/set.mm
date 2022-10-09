@@ -2703,6 +2703,7 @@
 "braval" is used by "kbass2".
 "braval" is used by "kbass6".
 "braval" is used by "rnbra".
+"brresOLD2" is used by "funressnvmoOLD".
 "brresgOLD2" is used by "brresOLD2".
 "c-bnj14" is used by "bnj1000".
 "c-bnj14" is used by "bnj1006".
@@ -14261,7 +14262,7 @@ New usage of "brecop2OLD" is discouraged (0 uses).
 New usage of "brfi1indALT" is discouraged (0 uses).
 New usage of "brinxp2OLD" is discouraged (0 uses).
 New usage of "brresOLD" is discouraged (0 uses).
-New usage of "brresOLD2" is discouraged (0 uses).
+New usage of "brresOLD2" is discouraged (1 uses).
 New usage of "brresgOLD2" is discouraged (1 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
@@ -15501,6 +15502,7 @@ New usage of "funcrngcsetcALT" is discouraged (0 uses).
 New usage of "funiedgdm2valOLD" is discouraged (1 uses).
 New usage of "funiedgdmge2valOLD" is discouraged (1 uses).
 New usage of "funiedgvalOLD" is discouraged (0 uses).
+New usage of "funressnvmoOLD" is discouraged (0 uses).
 New usage of "funsneqopOLD" is discouraged (0 uses).
 New usage of "funsneqopsnOLD" is discouraged (1 uses).
 New usage of "funvtxdm2valOLD" is discouraged (2 uses).
@@ -19208,6 +19210,7 @@ Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "funiedgdm2valOLD" is discouraged (68 steps).
 Proof modification of "funiedgdmge2valOLD" is discouraged (56 steps).
 Proof modification of "funiedgvalOLD" is discouraged (57 steps).
+Proof modification of "funressnvmoOLD" is discouraged (87 steps).
 Proof modification of "funsneqopOLD" is discouraged (25 steps).
 Proof modification of "funsneqopsnOLD" is discouraged (74 steps).
 Proof modification of "funvtxdm2valOLD" is discouraged (68 steps).
