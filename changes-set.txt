@@ -27,6 +27,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 7-Oct-22 exmoeu2   exmoeub     biconditional form of exmoeu
+ 7-Oct-22 eubi                  moved from ATS's mathbox to main
  6-Oct-22 hhsshl    csschl      hhsshl was in deprecated Part 19
  6-Oct-22 hhssbn    cssbn       hhssbn was in deprecated Part 19
  6-Oct-22 ssphl     cphssphl    ssphl was in deprecated Part 19
