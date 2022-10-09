@@ -29,6 +29,18 @@ DONE:
 Date      Old       New         Notes
  7-Oct-22 exmoeu2   exmoeub     biconditional form of exmoeu
  7-Oct-22 eubi                  moved from ATS's mathbox to main
+ 4-Oct-22 brresi    brresi2
+ 4-Oct-22 opelresi  opelidres
+ 4-Oct-22 brres     brresi
+ 4-Oct-22 opelres   opelresi
+ 4-Oct-22 brresALTV brres       moved from PM's mathbox to main set.mm
+ 4-Oct-22 opelresALTV opelres   moved from PM's mathbox to main set.mm
+ 4-Oct-22 inxpssres [same]      moved from PM's mathbox to main set.mm
+ 4-Oct-22 anbi1cd   [same]      moved from PM's mathbox to main set.mm
+ 4-Oct-22 anbi1ci   [same]      moved from PM's mathbox to main set.mm
+ 4-Oct-22 biancomd  [same]      moved from PM's mathbox to main set.mm
+ 4-Oct-22 biancomi  biancom     moved from PM's mathbox to main set.mm
+ 4-Oct-22 dvreslem  [same]      commutation in theorem
  3-Oct-22 brrelexi  brrelex1i
  3-Oct-22 brrelex   brrelex1
  1-Oct-22 eu5       dfeu        this is now a rederivation
@@ -36,9 +48,14 @@ Date      Old       New         Notes
  1-Oct-22 mo2       mof         "f-version" of df-mo
 26-Sep-22 euequ1    euequ
 26-Sep-22 eueq1     eueqi       inference associated with eueq
+18-Sep-22 brinxp2ALTV brinxp2   moved from PM's mathbox to main set.mm
 17-Sep-22 zfnuleu   ---         deleted; use nulmo instead
 17-Sep-22 bm2.5ii   uniordint   more informative label
 17-Sep-22 bm1.1     ---         deleted; use axextmo instead
+14-Sep-22 idinxpres [same]      moved from PM's mathbox to main set.mm
+14-Sep-22 relinxp   [same]      moved from PM's mathbox to main set.mm
+14-Sep-22 opelinxp  [same]      moved from PM's mathbox to main set.mm
+14-Sep-22 ralanid   [same]      moved from PM's mathbox to main set.mm
 13-Sep-22 epelc     epeli       inference associated with epelg
 13-Sep-22 a1tru     trud        deduction form of tru
 13-Sep-22 trud      mptru       modus ponens when minor is tru
