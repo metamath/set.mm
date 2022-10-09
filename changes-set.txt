@@ -29,15 +29,13 @@ DONE:
 Date      Old       New         Notes
  4-Oct-22 brresi    brresi2
  4-Oct-22 opelresi  opelidres
- 4-Oct-22 brresg    brresgOLD2
- 4-Oct-22 opelresg  opelresgOLD2
- 4-Oct-22 brres     brresOLD2
  4-Oct-22 brres     brresi
- 4-Oct-22 opelres   opelresOLD2
  4-Oct-22 opelres   opelresi
  4-Oct-22 brresALTV brres       moved from PM's mathbox to main set.mm
  4-Oct-22 opelresALTV opelres   moved from PM's mathbox to main set.mm
  4-Oct-22 inxpssres [same]      moved from PM's mathbox to main set.mm
+ 4-Oct-22 anbi1cd   [same]      moved from PM's mathbox to main set.mm
+ 4-Oct-22 anbi1ci   [same]      moved from PM's mathbox to main set.mm
  4-Oct-22 biancomd  [same]      moved from PM's mathbox to main set.mm
  4-Oct-22 biancomi  biancom     moved from PM's mathbox to main set.mm
  4-Oct-22 dvreslem  [same]      commutation in theorem
@@ -47,12 +45,9 @@ Date      Old       New         Notes
 26-Sep-22 euequ1    euequ
 26-Sep-22 eueq1     eueqi       inference associated with eueq
 18-Sep-22 brinxp2ALTV brinxp2   moved from PM's mathbox to main set.mm
-18-Sep-22 brinxp2   brinxp2OLD
 17-Sep-22 zfnuleu   ---         deleted; use nulmo instead
 17-Sep-22 bm2.5ii   uniordint   more informative label
 17-Sep-22 bm1.1     ---         deleted; use axextmo instead
-14-Sep-22 idssxp    [same]      proved by pre-function definitions
-14-Sep-22 idssxp    idssxpOLD 
 14-Sep-22 idinxpres [same]      moved from PM's mathbox to main set.mm
 14-Sep-22 relinxp   [same]      moved from PM's mathbox to main set.mm
 14-Sep-22 opelinxp  [same]      moved from PM's mathbox to main set.mm
