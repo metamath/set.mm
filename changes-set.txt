@@ -27,6 +27,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 7-Oct-22 exmoeu2   exmoeub     biconditional form of exmoeu
+ 7-Oct-22 eubi                  moved from ATS's mathbox to main
  4-Oct-22 brresi    brresi2
  4-Oct-22 opelresi  opelidres
  4-Oct-22 brres     brresi
@@ -39,6 +41,8 @@ Date      Old       New         Notes
  4-Oct-22 biancomd  [same]      moved from PM's mathbox to main set.mm
  4-Oct-22 biancomi  biancom     moved from PM's mathbox to main set.mm
  4-Oct-22 dvreslem  [same]      commutation in theorem
+ 3-Oct-22 brrelexi  brrelex1i
+ 3-Oct-22 brrelex   brrelex1
  1-Oct-22 eu5       dfeu        this is now a rederivation
  1-Oct-22 mo2v      dfmo        this is now a rederivation
  1-Oct-22 mo2       mof         "f-version" of df-mo
