@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 9-Oct-22 19.9alt   19.3t       moved from NM's mathbox to main
  7-Oct-22 exmoeu2   exmoeub     biconditional form of exmoeu
  7-Oct-22 eubi                  moved from ATS's mathbox to main
  4-Oct-22 brresi    brresi2
