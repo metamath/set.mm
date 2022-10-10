@@ -1413,6 +1413,11 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>rmo2</TD>
+  <TD>~ rmo2i</TD>
+</TR>
+
+<TR>
   <TD>df-pss and all proper subclass theorems</TD>
   <TD><I>none</I></TD>
   <TD>In set.mm, "A is a proper subclass of B" is defined to be
@@ -1763,6 +1768,33 @@ favor of theorems in deduction form.</TD>
 <TR>
   <TD>rintn0</TD>
   <TD>~ rintm</TD>
+</TR>
+
+<TR>
+  <TD>disjor</TD>
+  <TD>~ disjnim</TD>
+</TR>
+
+<TR>
+  <TD>disjors</TD>
+  <TD>~ disjnims</TD>
+</TR>
+
+<TR>
+  <TD>disji</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>disjprg , disjxiun , disjxun</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>disjss3</TD>
+  <TD><I>none</I></TD>
+  <TD>Might need to be restated or have decidability conditions
+  added</TD>
 </TR>
 
 <TR>
@@ -3491,6 +3523,23 @@ this implies excluded middle</TD>
   <TD>~ f1ofi</TD>
   <TD>Presumably precluded by an argument similar to ~ domfiexmid
   (the set.mm proof relies on domfi).</TD>
+</TR>
+
+<TR>
+  <TD ROWSPAN="2">iunfi</TD>
+  <TD>~ iunfidisj</TD>
+  <TD>for a disjoint collection</TD>
+</TR>
+
+<TR>
+  <TD><I>in general</I></TD>
+  <TD>Presumably not possible for the same reasons as in ~ unfiexmid</TD>
+</TR>
+
+<TR>
+  <TD>unifi</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably the issues are similar to iunfi</TD>
 </TR>
 
 <TR>
@@ -7740,6 +7789,12 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>isumdivc</TD>
   <TD>~ isumdivapc</TD>
   <TD>Changes not equal to apart</TD>
+</TR>
+
+<TR>
+  <TD>sumsplit</TD>
+  <TD>~ isumsplit</TD>
+  <TD>Adds decidability conditions</TD>
 </TR>
 
 <TR>
