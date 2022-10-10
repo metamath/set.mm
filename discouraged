@@ -3803,9 +3803,9 @@
 "chshii" is used by "hatomici".
 "chshii" is used by "hatomistici".
 "chshii" is used by "helsh".
-"chshii" is used by "hhssbn".
+"chshii" is used by "hhssbnOLD".
 "chshii" is used by "hhsscms".
-"chshii" is used by "hhsshl".
+"chshii" is used by "hhsshlOLD".
 "chshii" is used by "mayete3i".
 "chshii" is used by "nonbooli".
 "chshii" is used by "ococi".
@@ -6581,7 +6581,7 @@
 "hhnv" is used by "occllem".
 "hhph" is used by "bcsiHIL".
 "hhph" is used by "hhhl".
-"hhph" is used by "hhssph".
+"hhph" is used by "hhssphOLD".
 "hhph" is used by "pjhthlem2".
 "hhshsslem1" is used by "hhshsslem2".
 "hhshsslem1" is used by "hhssba".
@@ -6595,15 +6595,15 @@
 "hhssabloi" is used by "hhssablo".
 "hhssabloi" is used by "hhssnv".
 "hhssabloilem" is used by "hhssabloi".
-"hhssba" is used by "hhssbn".
+"hhssba" is used by "hhssbnOLD".
 "hhssba" is used by "hhssmet".
 "hhssba" is used by "hhssmetdval".
 "hhssba" is used by "hhssvs".
 "hhssba" is used by "hhssvsf".
 "hhssba" is used by "pjhthlem2".
-"hhssbn" is used by "hhsshl".
-"hhssbn" is used by "pjhthlem2".
-"hhsscms" is used by "hhssbn".
+"hhssbnOLD" is used by "hhsshlOLD".
+"hhssbnOLD" is used by "pjhthlem2".
+"hhsscms" is used by "hhssbnOLD".
 "hhssims" is used by "hhssims2".
 "hhssims2" is used by "hhsscms".
 "hhssmet" is used by "hhsscms".
@@ -6611,19 +6611,19 @@
 "hhssnm" is used by "hhssmetdval".
 "hhssnm" is used by "hhsssh2".
 "hhssnm" is used by "hhsst".
-"hhssnv" is used by "hhssbn".
+"hhssnv" is used by "hhssbnOLD".
 "hhssnv" is used by "hhssims".
 "hhssnv" is used by "hhssmet".
 "hhssnv" is used by "hhssmetdval".
 "hhssnv" is used by "hhssnvt".
 "hhssnv" is used by "hhssvsf".
 "hhssnvt" is used by "hhsst".
-"hhssph" is used by "hhsshl".
+"hhssphOLD" is used by "hhsshlOLD".
 "hhsssh" is used by "hhsssh2".
 "hhsssm" is used by "hhsssh2".
 "hhsssm" is used by "hhsst".
 "hhsst" is used by "hhssba".
-"hhsst" is used by "hhssph".
+"hhsst" is used by "hhssphOLD".
 "hhsst" is used by "hhsssh".
 "hhsst" is used by "hhssvs".
 "hhsst" is used by "pjhthlem2".
@@ -8408,7 +8408,7 @@
 "iscbn" is used by "cbncms".
 "iscbn" is used by "cnbn".
 "iscbn" is used by "hhhl".
-"iscbn" is used by "hhssbn".
+"iscbn" is used by "hhssbnOLD".
 "isch" is used by "chsh".
 "isch" is used by "isch2".
 "isch2" is used by "chintcli".
@@ -8448,7 +8448,7 @@
 "isgrpoi" is used by "hilablo".
 "ishlo" is used by "cnchl".
 "ishlo" is used by "hhhl".
-"ishlo" is used by "hhsshl".
+"ishlo" is used by "hhsshlOLD".
 "ishlo" is used by "hlobn".
 "ishlo" is used by "hlph".
 "ishlo" is used by "ssphlOLD".
@@ -12561,7 +12561,7 @@
 "sspnv" is used by "sspz".
 "sspnval" is used by "sspimsval".
 "sspnval" is used by "sspphOLD".
-"sspphOLD" is used by "hhssph".
+"sspphOLD" is used by "hhssphOLD".
 "sspphOLD" is used by "ssphlOLD".
 "ssps" is used by "sspsval".
 "sspsval" is used by "hhshsslem2".
@@ -15731,9 +15731,9 @@ New usage of "hhssablo" is discouraged (0 uses).
 New usage of "hhssabloi" is discouraged (2 uses).
 New usage of "hhssabloilem" is discouraged (1 uses).
 New usage of "hhssba" is discouraged (6 uses).
-New usage of "hhssbn" is discouraged (2 uses).
+New usage of "hhssbnOLD" is discouraged (2 uses).
 New usage of "hhsscms" is discouraged (1 uses).
-New usage of "hhsshl" is discouraged (0 uses).
+New usage of "hhsshlOLD" is discouraged (0 uses).
 New usage of "hhssims" is discouraged (1 uses).
 New usage of "hhssims2" is discouraged (1 uses).
 New usage of "hhssmet" is discouraged (1 uses).
@@ -15741,7 +15741,7 @@ New usage of "hhssmetdval" is discouraged (0 uses).
 New usage of "hhssnm" is discouraged (4 uses).
 New usage of "hhssnv" is discouraged (6 uses).
 New usage of "hhssnvt" is discouraged (1 uses).
-New usage of "hhssph" is discouraged (1 uses).
+New usage of "hhssphOLD" is discouraged (1 uses).
 New usage of "hhsssh" is discouraged (1 uses).
 New usage of "hhsssh2" is discouraged (0 uses).
 New usage of "hhsssm" is discouraged (2 uses).
@@ -19290,6 +19290,9 @@ Proof modification of "hbntal" is discouraged (48 steps).
 Proof modification of "hbra2VD" is discouraged (26 steps).
 Proof modification of "hbs1OLD" is discouraged (22 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
+Proof modification of "hhssbnOLD" is discouraged (39 steps).
+Proof modification of "hhsshlOLD" is discouraged (24 steps).
+Proof modification of "hhssphOLD" is discouraged (38 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
 Proof modification of "icccmpALT" is discouraged (71 steps).
 Proof modification of "id1" is discouraged (2 steps).
