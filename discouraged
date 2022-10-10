@@ -135,11 +135,11 @@
 "19.21t-1OLD" is used by "19.21tOLD".
 "19.21t-1OLD" is used by "stdpc5OLDOLD".
 "19.21tOLD" is used by "19.21OLD".
-"19.21tOLD" is used by "19.23tOLD".
+"19.21tOLD" is used by "19.23tOLDOLD".
 "19.21tOLD" is used by "nfimdOLD".
 "19.23OLD" is used by "19.23hOLD".
 "19.23OLD" is used by "exlimiOLD".
-"19.23tOLD" is used by "19.23OLD".
+"19.23tOLDOLD" is used by "19.23OLD".
 "19.28OLD" is used by "nfan1OLD".
 "19.3OLD" is used by "19.27OLD".
 "19.3OLD" is used by "19.28OLD".
@@ -9613,7 +9613,7 @@
 "nfndOLD" is used by "nfandOLD".
 "nfnf1OLDOLD" is used by "nfimdOLD".
 "nfnf1OLDOLD" is used by "nfntOLD".
-"nfntOLD" is used by "19.23tOLD".
+"nfntOLD" is used by "19.23tOLDOLD".
 "nfntOLD" is used by "nfnOLD".
 "nfntOLD" is used by "nfndOLD".
 "nforOLD" is used by "nf3orOLD".
@@ -13159,7 +13159,7 @@
 "wnfOLD" is used by "19.21t-1OLD".
 "wnfOLD" is used by "19.21tOLD".
 "wnfOLD" is used by "19.23OLD".
-"wnfOLD" is used by "19.23tOLD".
+"wnfOLD" is used by "19.23tOLDOLD".
 "wnfOLD" is used by "19.9OLD".
 "wnfOLD" is used by "19.9dOLD".
 "wnfOLD" is used by "19.9tOLD".
@@ -13257,8 +13257,8 @@ New usage of "19.21tOLD" is discouraged (3 uses).
 New usage of "19.21tOLDOLD" is discouraged (0 uses).
 New usage of "19.23OLD" is discouraged (2 uses).
 New usage of "19.23hOLD" is discouraged (0 uses).
-New usage of "19.23tOLD" is discouraged (1 uses).
-New usage of "19.23tOLDOLD" is discouraged (0 uses).
+New usage of "19.23tOLD" is discouraged (0 uses).
+New usage of "19.23tOLDOLD" is discouraged (1 uses).
 New usage of "19.23vOLD" is discouraged (0 uses).
 New usage of "19.26-3anOLD" is discouraged (0 uses).
 New usage of "19.27OLD" is discouraged (0 uses).
