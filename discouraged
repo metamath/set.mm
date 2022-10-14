@@ -15423,6 +15423,7 @@ New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "estrresOLD" is discouraged (0 uses).
 New usage of "eubiOLD" is discouraged (0 uses).
+New usage of "eubidOLD" is discouraged (0 uses).
 New usage of "eubidvOLD" is discouraged (0 uses).
 New usage of "eubidvOLDOLD" is discouraged (1 uses).
 New usage of "eueqOLD" is discouraged (1 uses).
@@ -16595,6 +16596,7 @@ New usage of "mndoismgmOLD" is discouraged (3 uses).
 New usage of "mndoissmgrpOLD" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
 New usage of "moabsOLD" is discouraged (0 uses).
+New usage of "mobidOLD" is discouraged (0 uses).
 New usage of "mobidvALT" is discouraged (0 uses).
 New usage of "mobidvOLD" is discouraged (0 uses).
 New usage of "mobidvOLDOLD" is discouraged (0 uses).
@@ -16677,6 +16679,7 @@ New usage of "nfe1OLD" is discouraged (0 uses).
 New usage of "nfeqf2OLD" is discouraged (0 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfeu1ALT" is discouraged (0 uses).
+New usage of "nfeud2OLD" is discouraged (0 uses).
 New usage of "nfexOLD" is discouraged (0 uses).
 New usage of "nfiOLD" is discouraged (16 uses).
 New usage of "nfim1OLD" is discouraged (1 uses).
@@ -16685,6 +16688,7 @@ New usage of "nfimdOLD" is discouraged (3 uses).
 New usage of "nfimdOLD2OLD" is discouraged (0 uses).
 New usage of "nfimdOLDOLD" is discouraged (0 uses).
 New usage of "nfmo1OLD" is discouraged (0 uses).
+New usage of "nfmod2OLD" is discouraged (0 uses).
 New usage of "nfnOLD" is discouraged (2 uses).
 New usage of "nfnanOLD" is discouraged (0 uses).
 New usage of "nfnbiOLD" is discouraged (0 uses).
@@ -19028,6 +19032,7 @@ Proof modification of "equvinvOLD" is discouraged (47 steps).
 Proof modification of "eqvOLD" is discouraged (6 steps).
 Proof modification of "estrresOLD" is discouraged (427 steps).
 Proof modification of "eubiOLD" is discouraged (15 steps).
+Proof modification of "eubidOLD" is discouraged (49 steps).
 Proof modification of "eubidvOLD" is discouraged (9 steps).
 Proof modification of "eubidvOLDOLD" is discouraged (48 steps).
 Proof modification of "eueqOLD" is discouraged (52 steps).
@@ -19448,6 +19453,7 @@ Proof modification of "minmar1marrepOLD" is discouraged (118 steps).
 Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
 Proof modification of "moabsOLD" is discouraged (28 steps).
+Proof modification of "mobidOLD" is discouraged (48 steps).
 Proof modification of "mobidvALT" is discouraged (48 steps).
 Proof modification of "mobidvOLD" is discouraged (9 steps).
 Proof modification of "mobidvOLDOLD" is discouraged (46 steps).
@@ -19494,6 +19500,7 @@ Proof modification of "nfe1OLD" is discouraged (8 steps).
 Proof modification of "nfeqf2OLD" is discouraged (52 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfeu1ALT" is discouraged (25 steps).
+Proof modification of "nfeud2OLD" is discouraged (56 steps).
 Proof modification of "nfexOLD" is discouraged (13 steps).
 Proof modification of "nfiOLD" is discouraged (14 steps).
 Proof modification of "nfim1OLD" is discouraged (18 steps).
@@ -19502,6 +19509,7 @@ Proof modification of "nfimdOLD" is discouraged (66 steps).
 Proof modification of "nfimdOLD2OLD" is discouraged (19 steps).
 Proof modification of "nfimdOLDOLD" is discouraged (74 steps).
 Proof modification of "nfmo1OLD" is discouraged (25 steps).
+Proof modification of "nfmod2OLD" is discouraged (35 steps).
 Proof modification of "nfnOLD" is discouraged (12 steps).
 Proof modification of "nfnanOLD" is discouraged (21 steps).
 Proof modification of "nfnbiOLD" is discouraged (46 steps).
