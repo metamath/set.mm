@@ -27,6 +27,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+13-Oct-22 rmo4f     [same]      moved from TA's mathbox to main
+13-Oct-22 rmo3f     [same]      moved from TA's mathbox to main
+13-Oct-22 iunxsngf  [same]      moved from TA's mathbox to main
  9-Oct-22 ndisj     [same]      moved from RP's mathbox to main
  9-Oct-22 19.9alt   19.3t       moved from NM's mathbox to main
  7-Oct-22 exmoeu2   exmoeub     biconditional form of exmoeu
