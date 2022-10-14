@@ -15464,6 +15464,7 @@ New usage of "exlimdhOLD" is discouraged (0 uses).
 New usage of "exlimexi" is discouraged (2 uses).
 New usage of "exlimiOLD" is discouraged (1 uses).
 New usage of "exlimihOLD" is discouraged (0 uses).
+New usage of "exmoOLD" is discouraged (0 uses).
 New usage of "exmoeuOLD" is discouraged (0 uses).
 New usage of "expcomdg" is discouraged (0 uses).
 New usage of "expdOLD" is discouraged (0 uses).
@@ -16593,10 +16594,12 @@ New usage of "mndoisexid" is discouraged (2 uses).
 New usage of "mndoismgmOLD" is discouraged (3 uses).
 New usage of "mndoissmgrpOLD" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
+New usage of "moabsOLD" is discouraged (0 uses).
 New usage of "mobidvALT" is discouraged (0 uses).
 New usage of "mobidvOLD" is discouraged (0 uses).
 New usage of "mobidvOLDOLD" is discouraged (0 uses).
 New usage of "moeqOLD" is discouraged (0 uses).
+New usage of "moeuOLD" is discouraged (0 uses).
 New usage of "mptssALT" is discouraged (0 uses).
 New usage of "mpv" is discouraged (1 uses).
 New usage of "mulassnq" is discouraged (10 uses).
@@ -19062,6 +19065,7 @@ Proof modification of "exlimdhOLD" is discouraged (14 steps).
 Proof modification of "exlimexi" is discouraged (15 steps).
 Proof modification of "exlimiOLD" is discouraged (16 steps).
 Proof modification of "exlimihOLD" is discouraged (9 steps).
+Proof modification of "exmoOLD" is discouraged (22 steps).
 Proof modification of "exmoeuOLD" is discouraged (39 steps).
 Proof modification of "expdOLD" is discouraged (18 steps).
 Proof modification of "expdcomOLD" is discouraged (11 steps).
@@ -19443,10 +19447,12 @@ Proof modification of "minimp-syllsimp" is discouraged (261 steps).
 Proof modification of "minmar1marrepOLD" is discouraged (118 steps).
 Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
+Proof modification of "moabsOLD" is discouraged (28 steps).
 Proof modification of "mobidvALT" is discouraged (48 steps).
 Proof modification of "mobidvOLD" is discouraged (9 steps).
 Proof modification of "mobidvOLDOLD" is discouraged (46 steps).
 Proof modification of "moeqOLD" is discouraged (29 steps).
+Proof modification of "moeuOLD" is discouraged (52 steps).
 Proof modification of "mptssALT" is discouraged (57 steps).
 Proof modification of "n0lpligALT" is discouraged (74 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
