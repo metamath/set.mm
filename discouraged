@@ -15276,7 +15276,6 @@ New usage of "fsummsnunzOLD" is discouraged (0 uses).
 New usage of "fsumsplitsnunOLD" is discouraged (0 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
-New usage of "funcnvmptOLD" is discouraged (0 uses).
 New usage of "funcringcsetcALTV" is discouraged (0 uses).
 New usage of "funcringcsetcALTV2" is discouraged (0 uses).
 New usage of "funcringcsetcALTV2lem1" is discouraged (4 uses).
@@ -18931,7 +18930,6 @@ Proof modification of "fresisonOLD" is discouraged (31 steps).
 Proof modification of "frgrwopreglem5ALT" is discouraged (519 steps).
 Proof modification of "fsummsnunzOLD" is discouraged (91 steps).
 Proof modification of "fsumsplitsnunOLD" is discouraged (239 steps).
-Proof modification of "funcnvmptOLD" is discouraged (291 steps).
 Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "funiedgdm2valOLD" is discouraged (68 steps).
 Proof modification of "funiedgdmge2valOLD" is discouraged (56 steps).
