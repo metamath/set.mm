@@ -15,10 +15,12 @@
 "4syl" is used by "climuni".
 "4syl" is used by "f1ocnvfvrneq".
 "4syl" is used by "fcof1o".
+"4syl" is used by "fsumparts".
 "4syl" is used by "fzofzp1".
 "4syl" is used by "fzosplitsnm1".
 "4syl" is used by "fzostep1".
 "4syl" is used by "fzssp1".
+"4syl" is used by "hashiun".
 "4syl" is used by "isose".
 "4syl" is used by "isoselem".
 "4syl" is used by "serif0".
@@ -137,6 +139,10 @@
 "hbs1" is used by "mopick".
 "hbs1" is used by "nfs1v".
 "hbs1" is used by "sb9v".
+"iisermulc2" is used by "isermulc2".
+"iisermulc2" is used by "isummulc2".
+"iseqdistr" is used by "iisermulc2".
+"iseqhomo" is used by "iseqdistr".
 "iser0" is used by "iser0f".
 "iser0" is used by "isumz".
 "iser0" is used by "ser0f".
@@ -182,7 +188,7 @@ New usage of "19.21ht" is discouraged (2 uses).
 New usage of "19.41h" is discouraged (5 uses).
 New usage of "19.42h" is discouraged (1 uses).
 New usage of "19.9hd" is discouraged (2 uses).
-New usage of "4syl" is discouraged (13 uses).
+New usage of "4syl" is discouraged (15 uses).
 New usage of "a9evsep" is discouraged (1 uses).
 New usage of "addmodlteqALT" is discouraged (0 uses).
 New usage of "alrimih" is discouraged (25 uses).
@@ -277,6 +283,9 @@ New usage of "fnexALT" is discouraged (0 uses).
 New usage of "foelrnOLD" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
+New usage of "iisermulc2" is discouraged (2 uses).
+New usage of "iseqdistr" is discouraged (1 uses).
+New usage of "iseqhomo" is discouraged (1 uses).
 New usage of "iser0" is discouraged (3 uses).
 New usage of "iser0f" is discouraged (1 uses).
 New usage of "mathbox" is discouraged (0 uses).
