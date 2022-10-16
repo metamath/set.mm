@@ -4241,11 +4241,11 @@
 "csbrngOLD" is used by "csbima12gALTVD".
 "csbxpgOLD" is used by "csbresgVD".
 "cshwordOLD" is used by "cshw0OLD".
-"cshwordOLD" is used by "cshwcl".
+"cshwordOLD" is used by "cshwclOLD".
 "cshwordOLD" is used by "cshwidxmodOLD".
-"cshwordOLD" is used by "cshwlen".
-"cshwordOLD" is used by "cshwmodn".
-"cshwordOLD" is used by "repswcshw".
+"cshwordOLD" is used by "cshwlenOLD".
+"cshwordOLD" is used by "cshwmodnOLD".
+"cshwordOLD" is used by "repswcshwOLD".
 "cvati" is used by "cvbr4i".
 "cvbr" is used by "cvbr2".
 "cvbr" is used by "cvcon3".
@@ -14877,7 +14877,10 @@ New usage of "csbunigVD" is discouraged (0 uses).
 New usage of "csbxpgOLD" is discouraged (1 uses).
 New usage of "csbxpgVD" is discouraged (0 uses).
 New usage of "cshw0OLD" is discouraged (0 uses).
+New usage of "cshwclOLD" is discouraged (0 uses).
 New usage of "cshwidxmodOLD" is discouraged (0 uses).
+New usage of "cshwlenOLD" is discouraged (0 uses).
+New usage of "cshwmodnOLD" is discouraged (0 uses).
 New usage of "cshwordOLD" is discouraged (6 uses).
 New usage of "csmdsymi" is discouraged (0 uses).
 New usage of "cvati" is discouraged (1 uses).
@@ -17594,6 +17597,7 @@ New usage of "relsnOLD" is discouraged (0 uses).
 New usage of "relsnopOLD" is discouraged (0 uses).
 New usage of "renegclALT" is discouraged (0 uses).
 New usage of "renicax" is discouraged (0 uses).
+New usage of "repswcshwOLD" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
 New usage of "residOLD" is discouraged (1 uses).
 New usage of "ressval3dOLD" is discouraged (1 uses).
@@ -18976,7 +18980,10 @@ Proof modification of "csbunigVD" is discouraged (294 steps).
 Proof modification of "csbxpgOLD" is discouraged (231 steps).
 Proof modification of "csbxpgVD" is discouraged (520 steps).
 Proof modification of "cshw0OLD" is discouraged (201 steps).
+Proof modification of "cshwclOLD" is discouraged (92 steps).
 Proof modification of "cshwidxmodOLD" is discouraged (1154 steps).
+Proof modification of "cshwlenOLD" is discouraged (362 steps).
+Proof modification of "cshwmodnOLD" is discouraged (238 steps).
 Proof modification of "cshwordOLD" is discouraged (211 steps).
 Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
@@ -19900,6 +19907,7 @@ Proof modification of "relsnopOLD" is discouraged (21 steps).
 Proof modification of "renegcl" is discouraged (34 steps).
 Proof modification of "renegclALT" is discouraged (149 steps).
 Proof modification of "renicax" is discouraged (76 steps).
+Proof modification of "repswcshwOLD" is discouraged (585 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
 Proof modification of "residOLD" is discouraged (17 steps).
 Proof modification of "ressval3dOLD" is discouraged (288 steps).
