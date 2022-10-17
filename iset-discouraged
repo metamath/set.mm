@@ -257,6 +257,8 @@
 "iseqp1" is used by "isermono".
 "iseqp1t" is used by "iseqsst".
 "iseqp1t" is used by "seq3p1".
+"iseqshft2" is used by "iseqf1olemqsumkj".
+"iseqshft2" is used by "seq3shft2".
 "iseqval" is used by "iseq1".
 "iseqval" is used by "iseqcl".
 "iseqval" is used by "iseqfcl".
@@ -427,6 +429,7 @@ New usage of "iseqhomo" is discouraged (1 uses).
 New usage of "iseqoveq" is discouraged (0 uses).
 New usage of "iseqp1" is discouraged (19 uses).
 New usage of "iseqp1t" is discouraged (2 uses).
+New usage of "iseqshft2" is discouraged (2 uses).
 New usage of "iseqval" is discouraged (4 uses).
 New usage of "iseqvalt" is discouraged (3 uses).
 New usage of "iser0" is discouraged (3 uses).
