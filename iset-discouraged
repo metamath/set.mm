@@ -228,7 +228,6 @@
 "iseqfcl" is used by "iseqsst".
 "iseqfcl" is used by "iserf".
 "iseqfcl" is used by "iserfre".
-"iseqfclt" is used by "climserile".
 "iseqfclt" is used by "iseqp1t".
 "iseqfclt" is used by "iseqsst".
 "iseqfclt" is used by "seqf".
@@ -236,7 +235,6 @@
 "iseqfeq" is used by "seq3feq".
 "iseqfeq" is used by "zisum".
 "iseqhomo" is used by "iseqdistr".
-"iseqp1" is used by "climserile".
 "iseqp1" is used by "expivallem".
 "iseqp1" is used by "expp1".
 "iseqp1" is used by "facp1".
@@ -423,11 +421,11 @@ New usage of "iseqeq2" is discouraged (1 uses).
 New usage of "iseqeq3" is discouraged (12 uses).
 New usage of "iseqex" is discouraged (7 uses).
 New usage of "iseqfcl" is discouraged (9 uses).
-New usage of "iseqfclt" is discouraged (4 uses).
+New usage of "iseqfclt" is discouraged (3 uses).
 New usage of "iseqfeq" is discouraged (3 uses).
 New usage of "iseqhomo" is discouraged (1 uses).
 New usage of "iseqoveq" is discouraged (0 uses).
-New usage of "iseqp1" is discouraged (19 uses).
+New usage of "iseqp1" is discouraged (18 uses).
 New usage of "iseqp1t" is discouraged (2 uses).
 New usage of "iseqshft2" is discouraged (2 uses).
 New usage of "iseqval" is discouraged (4 uses).
