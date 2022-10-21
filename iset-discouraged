@@ -191,7 +191,6 @@
 "iseqdistr" is used by "iisermulc2".
 "iseqeq1" is used by "bcn2".
 "iseqeq1" is used by "ibcval5".
-"iseqeq1" is used by "iiserex".
 "iseqeq1" is used by "iseqf1olemqsum".
 "iseqeq1" is used by "iseqid".
 "iseqeq1" is used by "iseqz".
@@ -212,8 +211,6 @@
 "iseqeq3" is used by "sumeq1".
 "iseqeq3" is used by "sumeq2".
 "iseqeq3" is used by "zisum".
-"iseqex" is used by "clim2iser".
-"iseqex" is used by "clim2iser2".
 "iseqex" is used by "fisumcvg".
 "iseqex" is used by "iisermulc2".
 "iseqex" is used by "isumclim3".
@@ -257,8 +254,6 @@
 "iseqp1t" is used by "seq3p1".
 "iseqshft2" is used by "iseqf1olemqsumkj".
 "iseqshft2" is used by "seq3shft2".
-"iseqsplit" is used by "clim2iser".
-"iseqsplit" is used by "clim2iser2".
 "iseqsplit" is used by "ibcval5".
 "iseqsplit" is used by "iseq1p".
 "iseqsplit" is used by "iseqf1olemqsum".
@@ -422,10 +417,10 @@ New usage of "iseq1t" is discouraged (2 uses).
 New usage of "iseqcl" is discouraged (16 uses).
 New usage of "iseqclt" is discouraged (2 uses).
 New usage of "iseqdistr" is discouraged (1 uses).
-New usage of "iseqeq1" is discouraged (10 uses).
+New usage of "iseqeq1" is discouraged (9 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
 New usage of "iseqeq3" is discouraged (12 uses).
-New usage of "iseqex" is discouraged (7 uses).
+New usage of "iseqex" is discouraged (5 uses).
 New usage of "iseqfcl" is discouraged (9 uses).
 New usage of "iseqfclt" is discouraged (3 uses).
 New usage of "iseqfeq" is discouraged (3 uses).
@@ -434,7 +429,7 @@ New usage of "iseqoveq" is discouraged (0 uses).
 New usage of "iseqp1" is discouraged (18 uses).
 New usage of "iseqp1t" is discouraged (2 uses).
 New usage of "iseqshft2" is discouraged (2 uses).
-New usage of "iseqsplit" is discouraged (6 uses).
+New usage of "iseqsplit" is discouraged (4 uses).
 New usage of "iseqval" is discouraged (4 uses).
 New usage of "iseqvalt" is discouraged (3 uses).
 New usage of "iser0" is discouraged (3 uses).
