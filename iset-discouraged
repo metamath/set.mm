@@ -257,6 +257,12 @@
 "iseqp1t" is used by "seq3p1".
 "iseqshft2" is used by "iseqf1olemqsumkj".
 "iseqshft2" is used by "seq3shft2".
+"iseqsplit" is used by "clim2iser".
+"iseqsplit" is used by "clim2iser2".
+"iseqsplit" is used by "ibcval5".
+"iseqsplit" is used by "iseq1p".
+"iseqsplit" is used by "iseqf1olemqsum".
+"iseqsplit" is used by "iseqf1olemqsumk".
 "iseqval" is used by "iseq1".
 "iseqval" is used by "iseqcl".
 "iseqval" is used by "iseqfcl".
@@ -428,6 +434,7 @@ New usage of "iseqoveq" is discouraged (0 uses).
 New usage of "iseqp1" is discouraged (18 uses).
 New usage of "iseqp1t" is discouraged (2 uses).
 New usage of "iseqshft2" is discouraged (2 uses).
+New usage of "iseqsplit" is discouraged (6 uses).
 New usage of "iseqval" is discouraged (4 uses).
 New usage of "iseqvalt" is discouraged (3 uses).
 New usage of "iser0" is discouraged (3 uses).
