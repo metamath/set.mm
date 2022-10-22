@@ -7892,6 +7892,17 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>divcnvshft</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses ovex to show that ` A / ( k + B ) `
+  is a set, even when ` k + B ` might be zero.  This could be
+  solved by adding another usage of ~ df-div or proving
+  ` ( 1 / 0 ) = (/) ` but relying on the value of dividing by
+  zero is not something we usually let ourselves do.  Another
+  solution would be to add a ` 0 < ( M + B ) ` hypothesis.</TD>
+</TR>
+
+<TR>
   <TD>df-prod and theorems using it</TD>
   <TD><I>none</I></TD>
   <TD>To define this, we will need to tackle all the issues analogous
