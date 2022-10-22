@@ -6356,12 +6356,12 @@ or ~ ssfiexmid </TD>
 
 <TR>
 <TD>seqfeq</TD>
-<TD>~ iseqfeq</TD>
+<TD>~ seq3feq</TD>
 </TR>
 
 <TR>
 <TD>seqshft2</TD>
-<TD>~ iseqshft2</TD>
+<TD>~ seq3shft2</TD>
 </TR>
 
 <TR>
@@ -7309,9 +7309,7 @@ than reals.</TD>
 
 <TR>
   <TD>seqshft</TD>
-  <TD><I>none currently</I></TD>
-  <TD>need to figure out how to adjust this for the differences
-  between set.mm and iset.mm concerning ` seq `.</TD>
+  <TD>~ seq3shft</TD>
 </TR>
 
 <TR>
@@ -7608,15 +7606,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
-  <TD>climserle</TD>
-  <TD>~ climserile</TD>
-  <TD>The only difference is the syntax of ` seq ` .</TD>
-</TR>
-
-<TR>
   <TD>isershft</TD>
-  <TD><I>none yet</I></TD>
-  <TD>Relies on seqshft</TD>
+  <TD>~ iser3shft</TD>
 </TR>
 
 <TR>
@@ -7884,6 +7875,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>incexclem , incexc , incexc2</TD>
+  <TD><I>none</I></TD>
+  <TD>A metamath 100 theorem but otherwise unused in set.mm.</TD>
+</TR>
+
+<TR>
   <TD>df-prod and theorems using it</TD>
   <TD><I>none</I></TD>
   <TD>To define this, we will need to tackle all the issues analogous
@@ -7934,8 +7931,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>seq1st</TD>
   <TD><I>none</I></TD>
-  <TD>The second argument to ` seq ` , at least as handled in
-  theorems such as ~ iseqfcl , must be defined on all integers
+  <TD>The sequence passed to ` seq ` , at least as handled in
+  theorems such as ~ seqf , must be defined on all integers
   greater than or equal to ` M ` , not just at ` M ` itself.
   It may be possible to patch this up, but seq1st is unused in
   set.mm.</TD>
@@ -7972,7 +7969,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>algcvg</TD>
   <TD>~ ialgcvg</TD>
-  <TD>` seq ` as defined in ~ df-iseq has a third argument</TD>
+  <TD>` seq ` as defined in ~ df-iseq has an additional argument</TD>
 </TR>
 
 <TR>
