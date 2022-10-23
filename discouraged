@@ -16415,6 +16415,7 @@ New usage of "mulresr" is discouraged (4 uses).
 New usage of "mulsrpr" is discouraged (9 uses).
 New usage of "n0lpligALT" is discouraged (0 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
+New usage of "nanassOLD" is discouraged (0 uses).
 New usage of "nanbi1OLD" is discouraged (0 uses).
 New usage of "nancomOLD" is discouraged (0 uses).
 New usage of "nannanOLD" is discouraged (0 uses).
@@ -19140,6 +19141,7 @@ Proof modification of "mofOLD" is discouraged (62 steps).
 Proof modification of "mptssALT" is discouraged (57 steps).
 Proof modification of "n0lpligALT" is discouraged (74 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
+Proof modification of "nanassOLD" is discouraged (191 steps).
 Proof modification of "nanbi1OLD" is discouraged (32 steps).
 Proof modification of "nancomOLD" is discouraged (26 steps).
 Proof modification of "nannanOLD" is discouraged (32 steps).
