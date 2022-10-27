@@ -232,7 +232,6 @@
 "iseqfeq" is used by "zisum".
 "iseqhomo" is used by "iseqdistr".
 "iseqp1" is used by "expivallem".
-"iseqp1" is used by "expp1".
 "iseqp1" is used by "facp1".
 "iseqp1" is used by "ialgrp1".
 "iseqp1" is used by "iseqcaopr3".
@@ -425,7 +424,7 @@ New usage of "iseqfclt" is discouraged (3 uses).
 New usage of "iseqfeq" is discouraged (3 uses).
 New usage of "iseqhomo" is discouraged (1 uses).
 New usage of "iseqoveq" is discouraged (0 uses).
-New usage of "iseqp1" is discouraged (18 uses).
+New usage of "iseqp1" is discouraged (17 uses).
 New usage of "iseqp1t" is discouraged (2 uses).
 New usage of "iseqshft2" is discouraged (2 uses).
 New usage of "iseqsplit" is discouraged (4 uses).
