@@ -8006,6 +8006,7 @@
 "idn3" is used by "tratrbVD".
 "idn3" is used by "trintALTVD".
 "idn3" is used by "truniALTVD".
+"idrefALT" is used by "dfeqvrels3".
 "idrefALT" is used by "elrefsymrels3".
 "idrefALT" is used by "idinxpssinxp2".
 "idrefALT" is used by "idinxpssinxp3".
@@ -16004,7 +16005,7 @@ New usage of "idlnop" is discouraged (5 uses).
 New usage of "idn1" is discouraged (76 uses).
 New usage of "idn2" is discouraged (39 uses).
 New usage of "idn3" is discouraged (12 uses).
-New usage of "idrefALT" is discouraged (5 uses).
+New usage of "idrefALT" is discouraged (6 uses).
 New usage of "idrefOLD" is discouraged (0 uses).
 New usage of "idrval" is discouraged (2 uses).
 New usage of "idssxpOLD" is discouraged (0 uses).
