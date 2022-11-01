@@ -8010,6 +8010,8 @@
 "idrefALT" is used by "elrefsymrels3".
 "idrefALT" is used by "idinxpssinxp2".
 "idrefALT" is used by "idinxpssinxp3".
+"idrefALT" is used by "refrelred3".
+"idrefALT" is used by "refrelsred3".
 "idrefALT" is used by "refsymrels3".
 "idrefALT" is used by "symrefref3".
 "idrval" is used by "cmpidelt".
@@ -16005,7 +16007,7 @@ New usage of "idlnop" is discouraged (5 uses).
 New usage of "idn1" is discouraged (76 uses).
 New usage of "idn2" is discouraged (39 uses).
 New usage of "idn3" is discouraged (12 uses).
-New usage of "idrefALT" is discouraged (6 uses).
+New usage of "idrefALT" is discouraged (8 uses).
 New usage of "idrefOLD" is discouraged (0 uses).
 New usage of "idrval" is discouraged (2 uses).
 New usage of "idssxpOLD" is discouraged (0 uses).
