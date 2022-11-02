@@ -222,7 +222,7 @@
 "2polvalN" is used by "sspmaplubN".
 "2sb5nd" is used by "2uasbanh".
 "2sb5nd" is used by "2uasbanhVD".
-"2swrd1eqwrdeqOLD" is used by "clwwlkf1".
+"2swrd1eqwrdeqOLD" is used by "clwwlkf1OLD".
 "2swrd1eqwrdeqOLD" is used by "wwlksnextinjOLD".
 "2swrd2eqwrdeqOLD" is used by "numclwwlk1lem2f1OLD".
 "2swrdeqwrdeqOLD" is used by "2swrd1eqwrdeqOLD".
@@ -4027,6 +4027,16 @@
 "clwlksfclwwlkOLD" is used by "clwlksf1clwwlkOLD".
 "clwlksfclwwlkOLD" is used by "clwlksfoclwwlkOLD".
 "clwlksfoclwwlkOLD" is used by "clwlksf1oclwwlkOLD".
+"clwwlkf1OLD" is used by "clwwlkf1oOLD".
+"clwwlkf1oOLD" is used by "clwwlken".
+"clwwlkf1oOLD" is used by "clwwlkvbij".
+"clwwlkf1oOLD" is used by "clwwlkvbijOLD".
+"clwwlkf1oOLD" is used by "clwwlkvbijOLDOLD".
+"clwwlkfOLD" is used by "clwwlkf1OLD".
+"clwwlkfOLD" is used by "clwwlkfoOLD".
+"clwwlkfoOLD" is used by "clwwlkf1oOLD".
+"clwwlkfvOLD" is used by "clwwlkf1OLD".
+"clwwlkfvOLD" is used by "clwwlkfoOLD".
 "clwwlkinwwlkOLD" is used by "clwwnrepclwwnOLD".
 "clwwlknOLD" is used by "isclwwlknOLD".
 "clwwlknclwwlkdifsOLD" is used by "clwwlknclwwlkdifnumOLD".
@@ -10174,6 +10184,7 @@
 "numclwwlk1lem2fOLD" is used by "numclwwlk1lem2f1OLD".
 "numclwwlk1lem2fOLD" is used by "numclwwlk1lem2foOLD".
 "numclwwlk1lem2foOLD" is used by "numclwwlk1lem2f1oOLD".
+"numclwwlk1lem2foalemOLD" is used by "numclwwlk1lem2foa".
 "numclwwlk1lem2fvOLD" is used by "numclwwlk1lem2f1OLD".
 "numclwwlk1lem2fvOLD" is used by "numclwwlk1lem2foOLD".
 "numclwwlk2lem1OLD" is used by "numclwlk2lem2f1oOLDOLD".
@@ -12587,7 +12598,7 @@
 "swrd0fOLD" is used by "swrdn0OLD".
 "swrd0fv0OLD" is used by "2clwwlklemOLD".
 "swrd0fv0OLD" is used by "clwlksfclwwlkOLD".
-"swrd0fv0OLD" is used by "clwwlkf".
+"swrd0fv0OLD" is used by "clwwlkfOLD".
 "swrd0fv0OLD" is used by "clwwlkinwwlkOLD".
 "swrd0fv0OLD" is used by "clwwlknonclwlknonf1oOLD".
 "swrd0fv0OLD" is used by "clwwlkvbij".
@@ -12598,7 +12609,7 @@
 "swrd0fv0OLD" is used by "wwlksnextproplem1OLD".
 "swrd0fv0OLD" is used by "wwlksnredwwlkn0OLD".
 "swrd0fvOLD" is used by "clwlksfclwwlkOLD".
-"swrd0fvOLD" is used by "clwwlkf".
+"swrd0fvOLD" is used by "clwwlkfOLD".
 "swrd0fvOLD" is used by "clwwlkinwwlkOLD".
 "swrd0fvOLD" is used by "cshwidxmodOLD".
 "swrd0fvOLD" is used by "dlwwlknonclwlknonf1olem1OLD".
@@ -12610,7 +12621,7 @@
 "swrd0fvOLD" is used by "wwlksnredOLD".
 "swrd0fvOLD" is used by "wwlksubclwwlkOLD".
 "swrd0fvlswOLD" is used by "clwlksfclwwlkOLD".
-"swrd0fvlswOLD" is used by "clwwlkf".
+"swrd0fvlswOLD" is used by "clwwlkfOLD".
 "swrd0fvlswOLD" is used by "clwwlkinwwlkOLD".
 "swrd0fvlswOLD" is used by "numclwlk2lem2fOLD".
 "swrd0fvlswOLD" is used by "numclwlk2lem2fOLDOLD".
@@ -12622,7 +12633,7 @@
 "swrd0lenOLD" is used by "clwlkclwwlkOLD".
 "swrd0lenOLD" is used by "clwlknf1oclwwlknlem1OLD".
 "swrd0lenOLD" is used by "clwlksfclwwlk2sswdOLD".
-"swrd0lenOLD" is used by "clwwlkf".
+"swrd0lenOLD" is used by "clwwlkfOLD".
 "swrd0lenOLD" is used by "clwwlkinwwlkOLD".
 "swrd0lenOLD" is used by "cshwidxmodOLD".
 "swrd0lenOLD" is used by "efgredlem".
@@ -12652,7 +12663,7 @@
 "swrd0valOLD" is used by "wrdsplex".
 "swrd0valOLD" is used by "wwlksm1edgOLD".
 "swrdccat1OLD" is used by "ccatopthOLD".
-"swrdccat1OLD" is used by "clwwlkfo".
+"swrdccat1OLD" is used by "clwwlkfoOLD".
 "swrdccat1OLD" is used by "reuccats1OLD".
 "swrdccat1OLD" is used by "wwlksnextbiOLD".
 "swrdccat1OLD" is used by "wwlksnextsurOLD".
@@ -12665,7 +12676,7 @@
 "swrdccatidOLD" is used by "clwlkclwwlkfoOLD".
 "swrdccatidOLD" is used by "clwlksfoclwwlkOLD".
 "swrdccatidOLD" is used by "numclwwlk1lem2foOLD".
-"swrdccatidOLD" is used by "numclwwlk1lem2foalem".
+"swrdccatidOLD" is used by "numclwwlk1lem2foalemOLD".
 "swrdccatin12OLD" is used by "swrdccat3OLD".
 "swrdccatin12OLD" is used by "swrdccatin12dOLD".
 "swrdccatin12lem2OLD" is used by "swrdccatin12OLD".
@@ -14611,6 +14622,11 @@ New usage of "clwlksfclwwlk2wrdOLD" is discouraged (2 uses).
 New usage of "clwlksfclwwlkOLD" is discouraged (2 uses).
 New usage of "clwlksfoclwwlkOLD" is discouraged (1 uses).
 New usage of "clwlkssizeeqOLD" is discouraged (0 uses).
+New usage of "clwwlkf1OLD" is discouraged (1 uses).
+New usage of "clwwlkf1oOLD" is discouraged (4 uses).
+New usage of "clwwlkfOLD" is discouraged (2 uses).
+New usage of "clwwlkfoOLD" is discouraged (1 uses).
+New usage of "clwwlkfvOLD" is discouraged (2 uses).
 New usage of "clwwlkinwwlkOLD" is discouraged (1 uses).
 New usage of "clwwlkn0OLD" is discouraged (0 uses).
 New usage of "clwwlknOLD" is discouraged (1 uses).
@@ -16911,6 +16927,7 @@ New usage of "numclwwlk1lem2f1OLD" is discouraged (1 uses).
 New usage of "numclwwlk1lem2f1oOLD" is discouraged (2 uses).
 New usage of "numclwwlk1lem2fOLD" is discouraged (2 uses).
 New usage of "numclwwlk1lem2foOLD" is discouraged (1 uses).
+New usage of "numclwwlk1lem2foalemOLD" is discouraged (1 uses).
 New usage of "numclwwlk1lem2fvOLD" is discouraged (2 uses).
 New usage of "numclwwlk2OLD" is discouraged (0 uses).
 New usage of "numclwwlk2lem1OLD" is discouraged (1 uses).
@@ -18754,6 +18771,11 @@ Proof modification of "clwlksfclwwlk2wrdOLD" is discouraged (160 steps).
 Proof modification of "clwlksfclwwlkOLD" is discouraged (1368 steps).
 Proof modification of "clwlksfoclwwlkOLD" is discouraged (743 steps).
 Proof modification of "clwlkssizeeqOLD" is discouraged (143 steps).
+Proof modification of "clwwlkf1OLD" is discouraged (782 steps).
+Proof modification of "clwwlkf1oOLD" is discouraged (41 steps).
+Proof modification of "clwwlkfOLD" is discouraged (1079 steps).
+Proof modification of "clwwlkfoOLD" is discouraged (317 steps).
+Proof modification of "clwwlkfvOLD" is discouraged (26 steps).
 Proof modification of "clwwlkinwwlkOLD" is discouraged (891 steps).
 Proof modification of "clwwlkn0OLD" is discouraged (24 steps).
 Proof modification of "clwwlknOLD" is discouraged (164 steps).
@@ -19598,6 +19620,7 @@ Proof modification of "numclwwlk1lem2f1OLD" is discouraged (906 steps).
 Proof modification of "numclwwlk1lem2f1oOLD" is discouraged (69 steps).
 Proof modification of "numclwwlk1lem2fOLD" is discouraged (104 steps).
 Proof modification of "numclwwlk1lem2foOLD" is discouraged (649 steps).
+Proof modification of "numclwwlk1lem2foalemOLD" is discouraged (238 steps).
 Proof modification of "numclwwlk1lem2fvOLD" is discouraged (54 steps).
 Proof modification of "numclwwlk2OLD" is discouraged (187 steps).
 Proof modification of "numclwwlk2lem1OLD" is discouraged (755 steps).
