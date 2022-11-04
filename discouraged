@@ -4002,7 +4002,7 @@
 "clwlkclwwlkf1lem2OLD" is used by "clwlkclwwlkf1OLD".
 "clwlkclwwlkf1lem2OLD" is used by "clwlkclwwlkf1lem3OLD".
 "clwlkclwwlkf1lem3OLD" is used by "clwlkclwwlkf1OLD".
-"clwlkclwwlkf1oOLD" is used by "clwlkclwwlken".
+"clwlkclwwlkf1oOLD" is used by "clwlkclwwlkenOLD".
 "clwlkclwwlkf1oOLD" is used by "clwlknf1oclwwlknOLD".
 "clwlkclwwlkfOLD" is used by "clwlkclwwlkf1OLD".
 "clwlkclwwlkfOLD" is used by "clwlkclwwlkfoOLD".
@@ -14599,6 +14599,7 @@ New usage of "cleljustALT2" is discouraged (0 uses).
 New usage of "clmgmOLD" is discouraged (1 uses).
 New usage of "clwlkclwwlk2OLD" is discouraged (0 uses).
 New usage of "clwlkclwwlkOLD" is discouraged (2 uses).
+New usage of "clwlkclwwlkenOLD" is discouraged (0 uses).
 New usage of "clwlkclwwlkf1OLD" is discouraged (1 uses).
 New usage of "clwlkclwwlkf1lem2OLD" is discouraged (2 uses).
 New usage of "clwlkclwwlkf1lem3OLD" is discouraged (1 uses).
@@ -18760,6 +18761,7 @@ Proof modification of "cleljustALT2" is discouraged (25 steps).
 Proof modification of "clmgmOLD" is discouraged (50 steps).
 Proof modification of "clwlkclwwlk2OLD" is discouraged (302 steps).
 Proof modification of "clwlkclwwlkOLD" is discouraged (686 steps).
+Proof modification of "clwlkclwwlkenOLD" is discouraged (146 steps).
 Proof modification of "clwlkclwwlkf1OLD" is discouraged (576 steps).
 Proof modification of "clwlkclwwlkf1lem2OLD" is discouraged (286 steps).
 Proof modification of "clwlkclwwlkf1lem3OLD" is discouraged (415 steps).
