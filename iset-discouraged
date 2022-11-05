@@ -167,7 +167,6 @@
 "iseq1" is used by "iseqz".
 "iseq1" is used by "sumsnf".
 "iseq1t" is used by "iseqsst".
-"iseq1t" is used by "seq3-1".
 "iseqcl" is used by "fisum".
 "iseqcl" is used by "ialgrp1".
 "iseqcl" is used by "ibcval5".
@@ -407,7 +406,7 @@ New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
 New usage of "iisermulc2" is discouraged (2 uses).
 New usage of "iseq1" is discouraged (17 uses).
-New usage of "iseq1t" is discouraged (2 uses).
+New usage of "iseq1t" is discouraged (1 uses).
 New usage of "iseqcl" is discouraged (13 uses).
 New usage of "iseqclt" is discouraged (2 uses).
 New usage of "iseqdistr" is discouraged (1 uses).
