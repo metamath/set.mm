@@ -144,7 +144,6 @@
 "eu3h" is used by "mo2r".
 "fisum" is used by "fsum3".
 "fisum" is used by "fsumadd".
-"fisum" is used by "fsumcl2lem".
 "fisum" is used by "fsumf1o".
 "fisum" is used by "isumz".
 "fisum" is used by "sumsnf".
@@ -186,7 +185,6 @@
 "iseqcl" is used by "iseqsplit".
 "iseqcl" is used by "iseqz".
 "iseqcl" is used by "isermono".
-"iseqclt" is used by "fsumcl2lem".
 "iseqdistr" is used by "iisermulc2".
 "iseqeq1" is used by "bcn2".
 "iseqeq1" is used by "ibcval5".
@@ -403,7 +401,7 @@ New usage of "elirr" is discouraged (16 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
-New usage of "fisum" is discouraged (6 uses).
+New usage of "fisum" is discouraged (5 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "foelrnOLD" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
@@ -412,7 +410,7 @@ New usage of "iisermulc2" is discouraged (2 uses).
 New usage of "iseq1" is discouraged (17 uses).
 New usage of "iseq1t" is discouraged (1 uses).
 New usage of "iseqcl" is discouraged (13 uses).
-New usage of "iseqclt" is discouraged (1 uses).
+New usage of "iseqclt" is discouraged (0 uses).
 New usage of "iseqdistr" is discouraged (1 uses).
 New usage of "iseqeq1" is discouraged (8 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
