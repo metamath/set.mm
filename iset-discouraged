@@ -181,7 +181,6 @@
 "iseqcl" is used by "iseqz".
 "iseqcl" is used by "isermono".
 "iseqclt" is used by "fsumcl2lem".
-"iseqclt" is used by "seq3clss".
 "iseqdistr" is used by "iisermulc2".
 "iseqeq1" is used by "bcn2".
 "iseqeq1" is used by "ibcval5".
@@ -406,7 +405,7 @@ New usage of "iisermulc2" is discouraged (2 uses).
 New usage of "iseq1" is discouraged (17 uses).
 New usage of "iseq1t" is discouraged (1 uses).
 New usage of "iseqcl" is discouraged (13 uses).
-New usage of "iseqclt" is discouraged (2 uses).
+New usage of "iseqclt" is discouraged (1 uses).
 New usage of "iseqdistr" is discouraged (1 uses).
 New usage of "iseqeq1" is discouraged (8 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
