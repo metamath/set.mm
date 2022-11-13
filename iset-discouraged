@@ -218,7 +218,6 @@
 "iseqfcl" is used by "iseqoveq".
 "iseqfcl" is used by "iseqsst".
 "iseqfcl" is used by "iserf".
-"iseqfcl" is used by "iserfre".
 "iseqfclt" is used by "iseqp1t".
 "iseqfclt" is used by "iseqsst".
 "iseqfeq" is used by "fisumcvg2".
@@ -421,7 +420,7 @@ New usage of "iseqeq1" is discouraged (8 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
 New usage of "iseqeq3" is discouraged (9 uses).
 New usage of "iseqex" is discouraged (5 uses).
-New usage of "iseqfcl" is discouraged (9 uses).
+New usage of "iseqfcl" is discouraged (8 uses).
 New usage of "iseqfclt" is discouraged (2 uses).
 New usage of "iseqfeq" is discouraged (3 uses).
 New usage of "iseqfeq2" is discouraged (1 uses).
