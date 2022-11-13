@@ -230,6 +230,8 @@
 "iseqfveq2" is used by "iseqfeq2".
 "iseqfveq2" is used by "iseqfveq".
 "iseqhomo" is used by "iseqdistr".
+"iseqid2" is used by "fisumcvg".
+"iseqid2" is used by "iseqcoll".
 "iseqm1" is used by "bcn2".
 "iseqm1" is used by "iseqcoll".
 "iseqm1" is used by "iseqid".
@@ -427,6 +429,7 @@ New usage of "iseqfeq2" is discouraged (1 uses).
 New usage of "iseqfveq" is discouraged (3 uses).
 New usage of "iseqfveq2" is discouraged (2 uses).
 New usage of "iseqhomo" is discouraged (1 uses).
+New usage of "iseqid2" is discouraged (2 uses).
 New usage of "iseqm1" is discouraged (5 uses).
 New usage of "iseqoveq" is discouraged (0 uses).
 New usage of "iseqp1" is discouraged (15 uses).
