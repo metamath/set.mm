@@ -15427,6 +15427,7 @@ New usage of "f1oweALT" is discouraged (0 uses).
 New usage of "f1rhm0to0ALT" is discouraged (0 uses).
 New usage of "fesapoOLD" is discouraged (0 uses).
 New usage of "festinoALT" is discouraged (0 uses).
+New usage of "ffz0iswrdOLD" is discouraged (0 uses).
 New usage of "fh1" is discouraged (3 uses).
 New usage of "fh1i" is discouraged (2 uses).
 New usage of "fh2" is discouraged (3 uses).
@@ -18072,8 +18073,11 @@ New usage of "wpthswwlks2onOLD" is discouraged (0 uses).
 New usage of "wrd2indOLD" is discouraged (0 uses).
 New usage of "wrdcctswrdOLD" is discouraged (2 uses).
 New usage of "wrdeqs1catOLD" is discouraged (0 uses).
+New usage of "wrdexgOLD" is discouraged (0 uses).
 New usage of "wrdindOLD" is discouraged (0 uses).
 New usage of "wrdlenccats1lenm1OLD" is discouraged (0 uses).
+New usage of "wrdlndmOLD" is discouraged (0 uses).
+New usage of "wrdvOLD" is discouraged (0 uses).
 New usage of "wspthnonOLD" is discouraged (0 uses).
 New usage of "wspthnonOLDOLD" is discouraged (1 uses).
 New usage of "wspthsnwspthsnonOLD" is discouraged (0 uses).
@@ -18994,6 +18998,7 @@ Proof modification of "falimfal" is discouraged (6 steps).
 Proof modification of "falimtru" is discouraged (6 steps).
 Proof modification of "fesapoOLD" is discouraged (28 steps).
 Proof modification of "festinoALT" is discouraged (24 steps).
+Proof modification of "ffz0iswrdOLD" is discouraged (94 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnmpt2ovdOLD" is discouraged (219 steps).
 Proof modification of "fnotovbOLD" is discouraged (79 steps).
@@ -19976,8 +19981,11 @@ Proof modification of "wpthswwlks2onOLD" is discouraged (385 steps).
 Proof modification of "wrd2indOLD" is discouraged (1615 steps).
 Proof modification of "wrdcctswrdOLD" is discouraged (102 steps).
 Proof modification of "wrdeqs1catOLD" is discouraged (191 steps).
+Proof modification of "wrdexgOLD" is discouraged (113 steps).
 Proof modification of "wrdindOLD" is discouraged (621 steps).
 Proof modification of "wrdlenccats1lenm1OLD" is discouraged (59 steps).
+Proof modification of "wrdlndmOLD" is discouraged (42 steps).
+Proof modification of "wrdvOLD" is discouraged (42 steps).
 Proof modification of "wspthnonOLD" is discouraged (67 steps).
 Proof modification of "wspthnonOLDOLD" is discouraged (83 steps).
 Proof modification of "wspthsnwspthsnonOLD" is discouraged (433 steps).
