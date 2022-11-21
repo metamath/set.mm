@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Minimize theorem $1 in mmfile $2 ($2 default "set.mm")
+theorem="$1"
+source="${2:-set.mm}"
+
+metamath "read ${source}" \
+         "prove ${theorem}" \
+         'minimize */allow */no_new ax-*' \
+         'save new /compressed' \
+         "write source ${source} /rewrap" \
+         quit \
+         quit

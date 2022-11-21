@@ -1,0 +1,44 @@
+#!/bin/sh
+
+# Get metamath C program and supporting files (to validate against them)
+# We create subdirectory "metamath/" and put metamath.tar.bz2 there, and
+# also download symbols.tar.bz2 into the current directory & untar it.
+
+# 8/29/18 NM Some mirrors don't allow directory listing
+# Note that set.mm includes mmset.html and mmhil.html
+
+set -v -e
+
+# Return URL for latest zipball of GitHub repo named "$1"
+# We determine the "latest" version from the number itself, not the date,
+# since a older commit might be tagged later on
+latest_zipball () {
+  curl --silent "https://api.github.com/repos/$1/tags" | \
+    grep zipball_url | grep -o 'https:[^"]*' | sort -n | tail -n 1
+}
+
+# Download the main metamath.exe program latest version.
+# GitHub doesn't provide a "latest" for tags, only for releases,
+# so we will do it ourselves.
+# rm -f metamath-program.zip
+# wget -N -q http://us.metamath.org/downloads/metamath-program.zip
+set -x
+latest_version="$(latest_zipball metamath/metamath-exe)"
+curl --silent -L -o metamath-program.zip "$latest_version"
+
+# Extract into a different directory to prevent overwriting .mm's
+# This will be updated, but we need a starting point:
+mkdir -p metamath/
+cd metamath/
+wget -N -q http://us.metamath.org/mpegif/mmbiblio.html
+cd ..
+
+# Store latest_version value inside metamath/ so we can get it later.
+printf '%s' "$latest_version" > metamath/.latest_version
+
+rm -f symbols.tar.bz2
+wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
+
+# Untar the symbols in the current directory so we can use them
+# (e.g., to test if they exist).
+tar --strip-components=1 -jxf symbols.tar.bz2

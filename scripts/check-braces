@@ -1,0 +1,47 @@
+#!/bin/awk -f
+# Copyright 2021 Jerry James <loganjerry@gmail.com>
+# SPDX-License-Identifier: MIT
+#
+# This file is released under the terms of the MIT license, as follows.
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+#
+# Find useless braces in a metamath file.
+# Usage: check-braces file.mm
+#
+# The output is a list of line numbers.  Each line holds the opening brace of
+# a scope that contains no $c, $d, $e, $f, or $v statements.  The contents of
+# that scope can therefore be moved to its enclosing scope.
+#
+# The variable i is a scope depth counter.  The global scope has depth 0.
+# Each left curly brace increases the scope depth by 1; each right curly brace
+# decreases it by 1.  The scope array contains the opening line number of each
+# active scope.  If $c, $d, $e, $f, or $v are seen, the opening line number of
+# the current scope is set to 0.  When a right curly brace is encountered, if
+# the line number for that scope has not been set to zero, then we report it.
+#
+# The variable c is nonzero when looking at the contents of a comment.  Curly
+# braces are ignored in comments.
+
+BEGIN { i = 0; c = 0 }
+/\$\(/ { c += gsub(/\$\(/, "") }
+/\$\)/ { c -= gsub(/\$\)/, "") }
+/\$\{/ { if (c == 0) scope[++i] = NR }
+/\$\}/ { if (c == 0 && scope[i] != 0) print(scope[i]); delete scope[i] }
+/\$[cdefv]/ { scope[i] = 0 }

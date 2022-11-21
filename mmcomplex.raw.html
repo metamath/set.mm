@@ -1,0 +1,1000 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+
+<!-- improve mobile display -->
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+
+<META HTTP-EQUIV="Content-Type"
+ CONTENT="text/html; charset=iso-8859-1">
+ <TITLE>Real and Complex Numbers - Metamath Proof Explorer</TITLE>
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+
+<STYLE TYPE="text/css">
+<!--
+img { margin-bottom: -4px }
+.r { font-family: "Arial Narrow";
+     font-size: x-small;
+		        }
+.i { font-family: "Arial Narrow";
+     font-size: x-small;
+     color: gray;
+				     }
+-->
+</STYLE>
+<STYLE TYPE="text/css">
+<!--
+  .set { color: red; }
+  .wff { color: blue; }
+  .class { color: #C3C; }
+  .typecode { color: gray }
+  .hidden { color: gray }
+  @font-face {
+    font-family: XITSMath-Regular;
+    src: url(xits-math.woff);
+  }
+  .math { font-family: XITSMath-Regular }
+-->
+</STYLE>
+<LINK href="mmset.css" title="mmset"
+    rel="stylesheet" type="text/css">
+<LINK href="mmsetalt.css" title="mmsetalt"
+    rel="alternate stylesheet" type="text/css">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" STYLE="padding: 0px 8px">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP><A HREF="mmset.html"><IMG SRC="mm.gif"
+      BORDER=0
+      ALT="Metamath Proof Explorer Home"
+      TITLE="Metamath Proof Explorer Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"> </A>
+    </TD>
+    <TD ALIGN=CENTER VALIGN=TOP><FONT SIZE="+3"
+      COLOR="#006633"><B>Metamath Proof Explorer</B></FONT><BR>
+       <FONT SIZE="+2" COLOR="#006633"><B>Real and Complex Numbers</B>
+        </FONT>
+    </TD>
+    <TD NOWRAP ALIGN=RIGHT VALIGN=TOP> &nbsp;
+    </TD>
+  </TR>
+
+  <TR>
+    <TD COLSPAN=3 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+        &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmset.html">MPE Home</A>&nbsp; &gt;
+      &nbsp;Real and Complex Numbers
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+
+
+<HR NOSHADE SIZE=1>
+
+
+<TABLE WIDTH="100%" BORDER=0><TR><TD WIDTH="45%">
+
+<B><FONT COLOR="#006633">Contents of this page</FONT></B>
+
+<MENU>
+<LI> <A HREF="#axioms">Axioms for Complex Numbers</A></LI>
+<LI> <A HREF="#past-work">Past Work</A></LI>
+<LI> <A HREF="#construction">Construction</A></LI>
+<LI> <A HREF="#xr">The Extended Real Number System</A></LI>
+<LI> <A HREF="#uncountable">The Real Numbers are Uncountable</A></LI>
+</MENU>
+
+</TD><TD WIDTH="2%">&nbsp;</TD><TD ALIGN=right WIDTH="50%">
+
+
+<FONT COLOR="#006633">
+<!--
+<I>
+God made integers, all else is the work of man.
+</I><BR>
+
+&mdash;Leopold Kronecker
+<BR>
+<BR>
+-->
+<I>
+...my daughters have been studying (chemistry) for several
+semesters, think they have learned differential and integral calculus in
+school, and yet even today don't know why </I>
+<I>x</I> &middot; <I>y</I> =
+<I>y</I> &middot; <I>x</I> <I>is true.</I>
+<BR>
+&mdash;Edmund Landau
+
+
+
+
+</FONT>
+
+</TD></TR></TABLE>
+
+
+
+<HR NOSHADE SIZE=1>
+
+<A NAME="axioms"></A>
+<B><FONT COLOR="#006633">Axioms for Complex
+Numbers</FONT></B>&nbsp;&nbsp;&nbsp;In the Metamath Proof Explorer (MPE) we
+derive the postulates or axioms of complex arithmetic as
+theorems of ZFC set theory.  This page collects in one place these
+results, providing a complete specification of the properties of complex
+numbers.
+
+<P>To derive the postulates as theorems, we define each of these objects
+as specific sets, then derive their properties from the axioms of set
+theory.  The derivation is not easy, but the fact that it works is quite
+remarkable and lends support to the idea that ZFC set theory is all we
+need to provide a foundation for essentially all of mathematics.
+
+<P>For convenience, after deriving the complex number postulates we
+re-introduce them as new axioms on top of set theory.
+This lets us easily identify which axioms are needed
+for a particular complex number proof, without the obfuscation
+of the set theory used to derive them.
+To do this, we introduce two classes
+` CC `
+(set of complex numbers) and
+` RR `
+(set of real numbers); three constants
+` 0 `
+(zero),
+` 1 `
+(one), and
+` _i `
+(imaginary unit, that is, the square root of minus 1); two binary operations
+` + `
+(plus) and
+` x. `
+(times); and one binary relation
+` <RR `
+(less than for real numbers).
+We then assert that these eight objects have the
+properties specified by the axioms in the table below, as
+extensions to ZFC set theory.
+Note that the real number less-than relation
+` <RR `
+is the same as the traditional relation
+` < ` , but
+` <RR `
+is limited to only comparing real numbers.
+<A HREF="conventions.html">As always with proven axioms</A>,
+each new axiom has a name in the form "ax-NAME",
+and each corresponding proof has a name in the form "axNAME".
+
+<P>
+In some cases, an alias for an axiom is created so that its name
+will follow other naming conventions.
+In these cases, the alias is used from then on.
+For example, the closure law for addition of complex numbers
+(axiom 4 of 22) is proven in
+<A HREF="axaddcl.html">axaddcl</A>,
+restated as axiom <A HREF="ax-addcl.html">ax-addcl</A>,
+and then aliased as <A HREF="addcl.html">addcl</A>
+so its name follows closure naming conventions;
+<A HREF="addcl.html">addcl</A> is used from then on.
+In these cases the axiom's comment
+is marked with "(New usage is discouraged.)"
+and identifies its conventional alias.
+This improves consistency by
+encouraging proofs to use our conventional aliases.
+
+<P>
+Many other concepts are derived from the postulates.
+For example,
+<A HREF="df-sub.html">subtraction</A> and <A
+HREF="df-div.html">division</A> are introduced later as definitions.
+We later define <A HREF="df-n.html">natural numbers</A>, <A
+HREF="df-z.html">integers</A>, and <A HREF="df-q.html">rational
+numbers</A> as specific subsets of
+` CC ` ,
+leading to the nice <A HREF="nthruc.html">relationships</A>
+` NN `
+` C. `
+` ZZ `
+` C. `
+` QQ `
+` C. `
+` RR `
+` C. `
+` CC ` .
+We later define the set of extended reals
+(real numbers, positive infinity, and negative infinity), and once those
+are defined, we define
+the traditional relation
+<A HREF="ltxr.html">` < `
+(less than)</A> over the extended reals by building on the
+previously-defined relation
+` <RR ` .
+
+<P>Interestingly, <!-- because <I>i</I><SUP>2</SUP> = -1, --> we could
+eliminate 0 as an axiomatic object by defining it as as ` ( ( _i x. _i ) + 1 ) `
+and replacing it with this expression throughout the axioms.  If this is
+done, axiom <A HREF="ax-i2m1.html">ax-i2m1</A> becomes redundant.
+However, the remaining axioms would become longer and less intuitive.
+
+<P>
+The following table presents the 22 axioms for complex numbers
+in the Metamath Proof Explorer,
+along with some commentary about them:
+
+<P>
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="The 22 Axioms for Complex Numbers">
+<CAPTION><B>The 22 Axioms for Complex Numbers
+</B></CAPTION>
+<TR><TH>#</TH><TH>Ref</TH><TH>Expression</TH></TR>
+
+<TR ALIGN=LEFT><TD>1</TD><TD NOWRAP><A HREF="ax-resscn.html">ax-resscn</A></TD><TD>
+` |- RR C_ CC ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>2</TD><TD NOWRAP><A HREF="ax-1cn.html">ax-1cn</A></TD><TD>
+` |- 1 e. CC `
+
+
+&nbsp;&nbsp;&nbsp; Weakened from earlier
+` 1 e. RR ` by Eric Schmidt,
+11-Apr-2007; see
+theorem <A HREF="1re.html">1re</A>.
+
+</TD></TR>
+
+<TR ALIGN=LEFT><TD>3</TD><TD NOWRAP><A HREF="ax-icn.html">ax-icn</A></TD><TD>
+` |- _i e. CC ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>4</TD><TD NOWRAP><A HREF="ax-addcl.html">ax-addcl</A></TD><TD>
+` |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>5</TD><TD NOWRAP><A HREF="ax-addrcl.html">ax-addrcl</A></TD><TD>
+` |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>6</TD><TD NOWRAP><A HREF="ax-mulcl.html">ax-mulcl</A></TD><TD>
+` |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>7</TD><TD NOWRAP><A HREF="ax-mulrcl.html">ax-mulrcl</A></TD><TD>
+` |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>8</TD><TD NOWRAP><A HREF="ax-mulcom.html">ax-mulcom</A></TD><TD>
+` |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) `
+&nbsp; It is unknown if this can be derived from the other axioms.
+</TD></TR>
+
+<TR ALIGN=LEFT><TD>9</TD><TD NOWRAP><A HREF="ax-addass.html">ax-addass</A></TD><TD>
+` |- ( ( A e. CC /\ B e. CC /\ C e. CC ) -> ( ( A + B ) + C ) = ( A + ( B + C ) ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>10</TD><TD NOWRAP><A HREF="ax-mulass.html">ax-mulass</A></TD><TD>
+` |- ( ( A e. CC /\ B e. CC /\ C e. CC ) -> ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>11</TD><TD NOWRAP><A HREF="ax-distr.html">ax-distr</A></TD><TD>
+` |- ( ( A e. CC /\ B e. CC /\ C e. CC ) -> ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>12</TD><TD NOWRAP><A HREF="ax-i2m1.html">ax-i2m1</A></TD><TD>
+` |- ( ( _i x. _i ) + 1 ) = 0 ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>13</TD><TD NOWRAP><A HREF="ax-1ne0.html">ax-1ne0</A></TD><TD>
+` |- 1 =/= 0 ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>14</TD><TD NOWRAP><A HREF="ax-1rid.html">ax-1rid</A></TD><TD>
+` |- ( A e. `
+<!-- ` CC ` -->
+` RR `
+` -> ( A x. 1 ) = A ) `
+
+
+&nbsp;&nbsp;&nbsp; Weakened from earlier
+<A HREF="mulid1.html">ax1id (now mulid1)</A> by Eric Schmidt,
+19-Jun-2012, with formalization by Scott Fenton, 4-Jan-2013
+
+
+</TD></TR>
+
+<TR ALIGN=LEFT><TD>15</TD><TD NOWRAP><A HREF="ax-rnegex.html">ax-rnegex</A></TD><TD>
+` |- ( A e. `
+` RR -> E. x e. RR ( A + x ) = 0 ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>16</TD><TD NOWRAP><A HREF="ax-rrecex.html">ax-rrecex</A></TD><TD>
+` |- ( ( A e. RR /\ A =/= 0 ) -> E. x e. RR `
+` ( A x. x ) = 1 ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>17</TD><TD NOWRAP><A HREF="ax-cnre.html">ax-cnre</A></TD><TD>
+` |- ( A e. `
+` CC -> E. x e. RR E. y e. `
+` RR A = ( x + ( _i x. y ) ) ) ` </TD></TR>
+
+
+<TR ALIGN=LEFT><TD>18</TD><TD NOWRAP><A HREF="ax-pre-lttri.html">ax-pre-lttri</A></TD><TD>
+` |- ( ( A e. RR /\ B e. `
+` RR ) -> ( A <RR B <-> `
+` -. ( A = `
+` B \/ B <RR A ) ) ) `
+&nbsp; For extended reals see <A HREF="axlttri.html">axlttri</A>
+</TD></TR>
+
+
+<TR ALIGN=LEFT><TD>19</TD><TD NOWRAP><A HREF="ax-pre-lttrn.html">ax-pre-lttrn</A></TD><TD>
+` |- ( ( A e. RR /\ B e. `
+` RR /\ C e. RR ) -> ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) `
+&nbsp; For extended reals see <A HREF="axlttrn.html">axlttrn</A>
+</TD></TR>
+
+<TR ALIGN=LEFT><TD>20</TD><TD NOWRAP><A HREF="ax-pre-ltadd.html">ax-pre-ltadd</A></TD><TD>
+` |- ( ( A e. RR /\ B e. `
+` RR /\ C e. RR ) -> ( A <RR B -> ( C + `
+` A ) <RR ( C + B ) ) ) `
+&nbsp; For extended reals see <A HREF="axltadd.html">axltadd</A>
+</TD></TR>
+
+<TR ALIGN=LEFT><TD>21</TD><TD NOWRAP><A HREF="ax-pre-mulgt0.html">ax-pre-mulgt0</A></TD><TD>
+` |- ( ( A e. RR /\ B e. `
+` RR ) -> ( ( 0 <RR A /\ 0 <RR B ) -> 0 <RR ( A x. B ) ) ) `
+&nbsp; For extended reals see <A HREF="axmulgt0.html">axmulgt0</A>
+</TD></TR>
+
+<TR ALIGN=LEFT><TD>22</TD><TD NOWRAP><A HREF="ax-pre-sup.html">ax-pre-sup</A></TD><TD>
+` |- ( ( A C_ `
+` RR /\ A =/= (/) /\ E. x e. RR A. y e. A y <RR x ) -> E. x e. RR ( A. y e. A -. x `
+` <RR y /\ A. y e. RR ( y <RR x -> E. z e. A `
+` y <RR z ) ) ) `
+&nbsp;&nbsp;&nbsp;
+This means that a non-empty, bounded-above set of reals has a supremum.
+&nbsp; For extended reals see <A HREF="axsup.html">axsup</A>
+</TD></TR>
+
+</TABLE></CENTER>
+<FONT SIZE=-2 FACE=ARIAL>Colors of variables:
+ <FONT COLOR="#0000FF">wff</FONT> <FONT COLOR="#FF0000">set</FONT> <FONT
+COLOR="#CC33CC">class</FONT></FONT>
+
+<P>In case you are wondering:  Why do we use (purple) class variables
+for most postulates
+instead of more conventional (red) setvar variables?
+The answer is simply that it's more convenient.
+In fact, we can equivalently state these
+with setvar variables only (which would be more in keeping with
+textbook notation), and then prove these class-variable versions from them.
+You may want to do that if you want a nice conventional presentation of
+these axioms for your classroom, book, etc.  However, in our formalism,
+the advantage of a class variable is that we can directly substitute it
+with another class expression such as the number "2" or the term
+"` ( ( _i x. `
+` x ) + `
+` B ) `".
+  A setvar variable would require some logic manipulations to do
+this, using theorems such as <A HREF="vtoclg.html">vtoclg</A> (as used,
+for example, to convert <A HREF="elirrv.html">elirrv</A> to
+<A HREF="elirr.html">elirr</A>).
+So for convenience we use class variables outright.  On the other
+hand, a class variable cannot be quantified with
+` A. `
+(for all)
+and
+` E. `
+(there exists),
+so for axioms with quantifiers, the setvar variables are unavoidable.
+
+<P>The axioms and proven theorems that apply to all sets or classes
+are not considered axioms for complex numbers, since they apply
+in other situations as well.
+<!-- E.g., "Axioms of Algebra" http://www.aaamath.com/ac11.htm -->
+For example, there are many general theorems about equality
+that apply to complex numbers.
+We separately prove that
+` A `
+` = `
+` A `
+in <A HREF="eqid.html">eqid</A>.
+If
+` A `
+` = `
+` B ` ,
+then
+` B `
+` = `
+` A `
+per <A HREF="eqcomi.html">eqcomi</A>,
+
+` ( A F C ) = ( B F C ) `
+per <A HREF="oveq1i.html">oveq1i</A>, and
+` ( C F A ) = ( C F B ) `
+per <A HREF="oveq2i.html">oveq2i</A>.
+If
+` A `
+` = `
+` B `
+and
+` B `
+` = `
+` C ` ,
+then
+` A `
+` = `
+` C ` per
+<A HREF="eqtri.html">eqtri</A> (that is, equality is transitive).
+Also note that
+` ( ( A = B /\ C = `
+` D ) -> ( A F C ) = ( B F D ) ) `
+as proven in <A HREF="oveq12.html">oveq12</A>.
+
+<P>
+From these axioms many other statements can be proven.
+For example,
+` 0 `
+` e. `
+` CC `
+is proven in <A HREF="0cn.html">0cn</A>.
+
+<P><HR NOSHADE SIZE=1><A NAME="past-work"></A><B><FONT
+COLOR="#006633">Past Work</FONT></B>
+
+<P>Most analysis texts construct complex numbers as ordered pairs of
+reals, leading to construction-dependent properties that satisfy these
+axioms but are not usually stated as explicit axioms.  Other texts state
+simply that " ` RR `
+is a complete ordered subfield of ` CC ` ," leading to redundant axioms when this phrase is
+completely expanded out.
+To our knowledge, the complete set of axioms in the
+exact form given here has never been published before.
+That said, Slawomir Kolodynski found a reference with
+27 complex number axioms, similar in spirit to Metamath's axioms:
+Edward V. Huntington, "The fundamental propositions of
+algebra," <I>Monographs on Topics of Modern Mathematics Relevant to the
+Elementary Field,</I> edited by I. W. A. Young, New York, 1911; see also
+Trans.  Amer.  Math.  Soc., vol.  VI, 1905, pp. 209&mdash;229.]
+
+<P>
+The original list of complex number axioms was longer.
+In 2012 Eric Schmidt released
+"Reductions in Norman Megill's axiom system for complex numbers",
+available as <A
+HREF="../downloads/schmidt-cnaxioms.pdf">schmidt-cnaxioms.pdf</A> (<A
+HREF="../downloads/schmidt-cnaxioms.tex">schmidt-cnaxioms.tex</A>).
+This paper showed that several of the original axioms could be weakened
+(as discussed above).
+The paper also showed that several of the axioms of the time
+were redundant (could be derived from the others), e.g., that
+<A HREF="addcom.html">axaddcom (now addcom)</A> and
+<A HREF="addid1.html">ax0id (now addid1)</A> are redundant.
+Scott Fenton later formalized these results within Metamath itself
+(as proofs of the redundant theorems).
+Mario Carneiro on 18-Feb-2014 proved that <A HREF="cnex.html">cnex</A>
+was redundant (it can be proven that the complex numbers are a set).
+Eric Schmidt presented a proof that the remaining MPE complex number axioms,
+with the possible exception of <A HREF="ax-mulcom.html">ax-mulcom</A>,
+are independent of the others.
+These independence proofs have not yet been formalized in Metamath.
+It is currently an open question if <A HREF="ax-mulcom.html">ax-mulcom</A>
+is independent of the others.
+
+<P>
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Former Axioms for Complex Numbers">
+<CAPTION><B>Former Axioms for Complex Numbers
+</B></CAPTION>
+<TR><TH>Ref
+</TH><TH>Expression</TH></TR>
+
+<TR ALIGN=LEFT><TD><FONT COLOR=gray><STRIKE>axcnex</STRIKE></FONT><TD>
+` |- CC e. _V `
+
+&nbsp;&nbsp;&nbsp; Proved redundant by Mario Carneiro on 18-Feb-2014; see
+theorem <A HREF="cnex.html">cnex</A>
+</TD></TR>
+
+<TR ALIGN=LEFT><TD><FONT COLOR=gray><STRIKE>axaddcom</STRIKE></FONT></TD><TD>
+` |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) `
+
+
+&nbsp;&nbsp;&nbsp; Proved redundant by Eric Schmidt, 19-Jun-2012,
+and formalized by Scott Fenton on 4-Jan-2013; see
+theorem <A HREF="addcom.html">addcom</A>.
+
+
+</TD></TR>
+
+<TR ALIGN=LEFT><TD><FONT COLOR=gray><STRIKE>ax0id</STRIKE></FONT></TD><TD>
+` |- ( A e. `
+` CC -> ( A + 0 ) = A ) `
+
+&nbsp;&nbsp;&nbsp; Proved redundant by Eric Schmidt, 19-Jun-2012,
+and formalized by Scott Fenton on 4-Jan-2013; see
+theorem <A HREF="addid1.html">addid1</A>
+
+</TD></TR>
+
+
+<TR ALIGN=LEFT><TD><FONT COLOR=gray><STRIKE>axnegex</STRIKE></FONT></TD><TD>
+` |- ( A e. `
+` CC -> E. x e. CC ( A + x ) = 0 ) `
+
+
+&nbsp;&nbsp;&nbsp; Proved redundant by Eric Schmidt, 21-May-2007; see
+theorem <A HREF="cnegex.html">cnegex</A>
+
+</TD></TR>
+
+<TR ALIGN=LEFT><TD><FONT COLOR=gray><STRIKE>axrecex</STRIKE></FONT>
+</TD><TD> ` |- ( ( A e. CC /\ `
+` A =/= 0 ) -> E. x e. CC ( A x. x ) = 1 ) `
+
+
+
+&nbsp;&nbsp;&nbsp; Proved redundant by Eric Schmidt, 21-May-2007; see
+theorem <A HREF="recex.html">recex</A>
+
+
+<TR ALIGN=LEFT><TD><FONT COLOR=gray><STRIKE>ax0re</STRIKE></FONT></TD><TD>
+` |- 0 e. RR `
+&nbsp;&nbsp;&nbsp; Proved redundant on 19-Feb-2005; see
+theorem <A HREF="0re.html">0re</A>
+<!--
+(
+&lt;- <A HREF="subid.html">subid</A>
+&lt;- <A HREF="negid.html">negid</A>
+&lt;- <A HREF="0cn.html">0cn</A>
+&lt;- <A HREF="axi2m1.html">axi2m1</A>)
+-->
+</TD></TR>
+
+
+</TABLE></CENTER>
+<FONT SIZE=-2 FACE=ARIAL>Colors of variables:
+ <FONT COLOR="#0000FF">wff</FONT> <FONT COLOR="#FF0000">set</FONT> <FONT
+COLOR="#CC33CC">class</FONT></FONT>
+
+<P><HR NOSHADE SIZE=1><A NAME="construction"></A><B><FONT
+COLOR="#006633">Construction</FONT></B>
+
+<P> To construct the complex numbers, we start with the <A
+HREF="df-om.html">finite ordinals</A> (natural numbers) of set theory
+and successively build <A HREF="df-ni.html">temporary positive
+integers</A>, <A HREF="df-nq.html">temporary positive rationals</A>, <A
+HREF="df-np.html">temporary positive reals</A> (based on Dedekind cuts),
+<A HREF="df-nr.html">temporary signed reals</A>, and finally the actual
+<A HREF="df-c.html">complex numbers</A>.  ("Temporary" means they would
+not normally be used outside of the construction.)  Together with the
+arithmetic operations and other auxilliary sets needed at each level,
+there are a total of 36 temporary definitions involved.  You can look at
+the Statement List starting at <A HREF="cnpi.html">cnpi</A> (click on
+its "Related theorems" link) to see the theorems used for the
+construction, which total 254 (including the 22 that result in the final
+axioms).  These theorems are, in essence, the complete formalization of
+an entire 136-page book, Landau's <I>Foundations of Analysis</I> (a.k.a.
+<I>Grundlagen der Analysis</I>), although the approach we use is somewhat
+more modern.
+
+<P>In 2013 Mario Carneiro did a
+major revision and cleanup of the construction.  In particular, rather
+than using equivalence classes as is customary for the construction
+of the temporary rationals, he used only "reduced
+fractions", so that the use of
+the axiom of infinity is avoided until it becomes necessary for the
+construction of the temporary reals.
+
+<P>The construction is "portable" in the sense that the final axioms
+hide how they are constructed, and another construction that
+develops the same axioms could be used in place of it.  For
+example, another common construction is to define real numbers as Cauchy
+sequences of rationals instead of the Dedekind cuts that we use.
+
+
+<P><HR NOSHADE SIZE=1>
+
+<A NAME="xr"></A> <B><FONT COLOR="#006633">The Extended Real Number
+System</FONT></B>&nbsp;&nbsp;&nbsp;A convenient device used in most
+analysis texts is an extension ` RR* ` of the real number system (see <A
+HREF="df-xr.html">df-xr</A> and related theorems) that includes ` +oo ` and ` -oo ` .
+
+<P>Analysis textbooks rarely if ever actually define ` +oo ` and ` -oo ` as concrete
+objects.  Instead, they just say that they are two "new" distinguished
+elements.  But we must choose specific sets in order to use set theory
+to work with them.  So we pick ` ~P U. CC `
+(the power set of the union of the set of complex numbers) for
+` +oo ` (<A
+HREF="df-pnf.html">df-pnf</A>) and ` ~P +oo ` for ` -oo ` (<A HREF="df-mnf.html">df-mnf</A>), which we can
+prove are different from each other and to not belong to ` RR ` (see theorems <A
+HREF="pnfnemnf.html">pnfnemnf</A>, <A HREF="pnfnre.html">pnfnre</A>, and
+<A HREF="mnfnre.html">mnfnre</A>).  Many other choices are possible too.
+
+<P>In spite of the seemingly awesome "size" of these two new members, they
+are really nothing deeper than notational devices to make some proofs
+shorter.  Any theorems making use of them can be stated equivalently
+without them.  They provide a shorthand for saying, for example, "no
+matter how large a number we pick, this series will eventually grow
+larger than that number."  These "infinities" have nothing to do with
+the infinite cardinals of set theory&mdash;in fact one possible choice for
+` -oo ` is ` { CC } ` , which is a singleton with cardinality 1!
+(We didn't use this simpler choice because its justification requires
+the Axiom of Regularity, whose use we prefer to avoid when possible.)
+
+<!--
+<P>These definitions were also chosen to be independent of any
+particular construction of ` CC ` , and the Axiom of Regularity
+<A HREF="ax-reg.html">ax-reg</A> ensures that they are
+not equal to each other and are not members of ` RR ` .  Actually, there appears to be
+no way to define ` +oo ` and ` -oo ` in a construction-independent way without invoking
+Regularity, which is interesting because it is generally thought that
+Regularity is not important for "ordinary" mathematics (see the
+comments after the Axiom of Regularity in [<A
+HREF="mmset.html#Schechter">Schechter</A>] p. 31).  In particular,
+Regularity is not essential for the construction of ` CC ` itself.
+-->
+
+<P>Once the extended reals are defined, we can then define
+the traditional less-than operation
+` < ` using the
+relation
+` <RR `
+(less than for real numbers) while
+accounting for positive and negative infinity.
+The full definition of
+` < ` is given in
+<A HREF="df-ltxr.html">df-ltxr</A>.
+The complex number axioms, and this new definition, are then
+used to prove variants of the axioms that can handle the full
+set of the extended reals;
+see <A HREF="axlttri.html">axlttri</A>,
+<A HREF="axlttrn.html">axlttrn</A>,
+<A HREF="axltadd.html">axltadd</A>,
+<A HREF="axmulgt0.html">axmulgt0</A>,
+and
+<A HREF="axsup.html">axsup</A>.
+
+
+<P><HR NOSHADE SIZE=1><A NAME="uncountable"></A><B><FONT
+COLOR="#006633">The Real Numbers are Uncountable</FONT></B>
+&nbsp;&nbsp;&nbsp;
+
+
+In mathematics, a countable set is a set with the same cardinality
+(number of elements) as the set (or some subset) of the natural numbers.
+A countable set may be infinite, but every element of the set can be
+mapped to a unique natural number.
+The natural numbers and the integers are countably infinite sets.
+Even the rational numbers are a countably infinite set; see
+<A HREF="qnnen.html">qnnen</A>.
+In contrast, the real numbers are not a countable set, but instead,
+they are an uncountable set.
+This is a remarkable result.
+The question is, how can this be proved in Metamath?
+
+<!--
+I thought it would be interesting to work out a formalization of <A
+HREF="http://en.wikipedia.org/wiki/Diagonal_proof">Cantor's diagonal
+argument</A> [external],
+in part as one answer to certain web pages that
+have expressed concerns about its correctness.
+-->
+
+<!--
+<P>(Incidentally <A
+HREF="http://en.wikipedia.org/wiki/Cantor%27s_first_uncountability_proof">Cantor's
+first proof</A> [external] that the set of real numbers is uncountable
+was considerably different and didn't mention decimal expansions at
+all.)
+-->
+
+<P>Norman Megill's initial plan to prove that the
+rational numbers are uncountable was to formalize <A
+HREF="http://en.wikipedia.org/wiki/Diagonal_proof">Cantor's diagonal
+argument</A> [external] using decimal (or possibly quaternary) expansions.
+<!--
+Base Name
+  2  binary
+  3  ternary
+  4  quaternary
+  5  quinary
+  6  senary
+  7  septenary
+  8  octal
+  9  nonary
+ 10  decimal
+ 11  undenary
+ 12  duodecimal
+ 16  hexadecimal
+ 20  vigesimal
+ 60  sexagesimal
+mono, di, tri, tetra, penta, hexa, hepta, octa, ennea,
+   1    2   3     4      5      6     7      8     9
+
+ deca, hendeca, dodeca, triskaideca, tetrakaideca, ..., enneakaideca,
+  10      11      12        13            14                  19
+
+ icosa, icosikaihena, icosikaidi, icosikaitri, ..., icosikaiennea,
+   20       21            22          23                  29
+
+ triaconta, triacontakaihena, ..., triacontakaiennea, tetraconta, ...,
+    30             31                     39             40
+
+pentaconta, hexaconta, heptaconta, octaconta, enneaconta, hecta
+    50         60          70          80          90      100
+   80  octacontagon ...
+   90  enneacontagon ...
+  100  hectogon, hecatontagon
+ 1000  chiliagon
+10000  myriagon
+-->
+
+However, he ran into some technical complications, such as the fact that some
+numbers have two equivalent decimal representations (e.g.  <A
+HREF="0.999....html">0.999...  = 1.000...</A>), that would have made a
+formal proof somewhat messy.  So he chose another proof that is simpler
+to formalize but which he believes is in the same spirit as Cantor's
+diagonal proof, in the sense that it constructs a real number different
+from all the numbers in a purported list of all real numbers.
+
+<P>Even so, the "simpler" proof is still daunting when worked out in
+complete formal detail, involving some 39 lemmas.  Therefore we will
+first give an informal description of the proof, then describe the key
+formal lemmas that lead to the final result, which is theorem <A
+HREF="ruc.html">ruc</A> (or equivalently <A
+HREF="ruclem39.html">ruclem39</A>).
+
+<P> <B><FONT COLOR="#006633">The informal
+argument</FONT></B>&nbsp;&nbsp;&nbsp; We will start by claiming that we
+can list all the reals, i.e. that there exists a function <I>f</I> from
+` NN ` (natural
+numbers) onto ` RR `
+(the reals).  We will then proceed to construct a real number that is
+<I>not</I> in this purported list <I>f</I>(1), <I>f</I>(2),
+<I>f</I>(3),... of all reals, thereby falsifying this claim.
+
+<P>Here is how we construct this number.  We construct, in parallel, two
+auxiliary sequences <I>g</I>(1), <I>g</I>(2), <I>g</I>(3),... and
+<I>h</I>(1), <I>h</I>(2), <I>h</I>(3),... derived from <I>f</I>(1),
+<I>f</I>(2), <I>f</I>(3),...
+
+<P>We start off by assigning:
+
+<BLOCKQUOTE>
+<I>g</I>(1) = <I>f</I>(1) + 1 <BR>
+ <I>h</I>(1) = <I>f</I>(1) + 2
+</BLOCKQUOTE>
+
+Given <I>g</I>(<I>i</I>) and <I>h</I>(<I>i</I>), we construct the next
+value <I>g</I>(<I>i</I>+1) and <I>h</I>(<I>i</I>+1) as follows:
+
+<BLOCKQUOTE>
+  If <I>g</I>(<I>i</I>) &lt; <I>f</I>(<I>i</I>+1) &lt; <I>h</I>(<I>i</I>),
+ then assign
+<BLOCKQUOTE>
+       <I>g</I>(<I>i</I>+1) =
+(2` x. ` <I>f</I>(<I>i</I>+1)
+                + <I>h</I>(<I>i</I>)) / 3<BR>
+       <I>h</I>(<I>i</I>+1) = (<I>f</I>(<I>i</I>+1) +
+ 2` x. ` <I>h</I>(<I>i</I>))
+   / 3
+</BLOCKQUOTE>
+  Otherwise, assign
+<BLOCKQUOTE>
+       <I>g</I>(<I>i</I>+1) =
+(2` x. ` <I>g</I>(<I>i</I>)
+                 + <I>h</I>(<I>i</I>)) / 3<BR>
+       <I>h</I>(<I>i</I>+1) = (<I>g</I>(<I>i</I>) +
+2` x. ` <I>h</I>(<I>i</I>))
+ / 3
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+
+In either case, <I>f</I>(<I>i</I>+1) will not fall
+between <I>g</I>(<I>i</I>+1) and <I>h</I>(<I>i</I>+1).
+
+<P>Now, using elementary algebra, you can check that <I>g</I>(1) &lt;
+<I>g</I>(2) &lt; <I>g</I>(3) &lt; ...  &lt; <I>h</I>(3) &lt; <I>h</I>(2)
+&lt; <I>h</I>(1).  In addition, for each <I>i</I>, the interval between
+<I>g</I>(<I>i</I>) and <I>h</I>(<I>i</I>) does not contain any of the
+numbers <I>f</I>(1), <I>f</I>(2), <I>f</I>(3), ..., <I>f</I>(<I>i</I>).
+This interval keeps getting smaller and smaller as <I>i</I> grows,
+avoiding all the <I>f</I>(<I>i</I>)'s up to that point.  In effect we
+are constructing an interval of real numbers that are different from all
+<I>f</I>(<I>i</I>)'s.  This is very much like the diagonal argument, but
+it is much better suited to a formal proof.  Just as happens when we add
+more decimals in Cantor's proof, the sequence <I>g</I>(1), <I>g</I>(2),
+<I>g</I>(3),... gets closer and closer (converges to) to a real number
+that is not in the claimed complete listing.
+
+
+<P>As <I>i</I> goes to infinity, the interval shrinks down to almost
+nothing.  What is left in this shrinking interval?  Well,
+<I>g</I>(<I>i</I>) and <I>h</I>(<I>i</I>) will converge towards each
+other, from opposite directions, so the interval will shrink down either
+to a single point or to an empty interval.  It is tempting to think that
+the interval will shrink down to exactly nothing, but in fact it will
+not be empty, and the formal proof shows this.  Specifically, it will
+contain exactly one real number, which is the supremum (meaning "least
+upper bound") of all values <I>g</I>(<I>i</I>).  How do we know this?
+Well, it results from one of the axioms for real numbers.  This axiom,
+shown as <A HREF="ax-sup.html">ax-sup</A> above, says that the supremum of
+any bounded-above set of real numbers is a real number.  And the set of
+values <I>g</I>(<I>i</I>) is certainly bounded from above; in fact all
+of them are less than <I>h</I>(1) in particular.
+
+<P>Contrast this to the rational numbers, where the supremum axiom does
+not hold.  That is why this proof fails for the rational numbers, as it
+should, since we <I>can</I> make a countable list of all rational numbers.
+To give you a concrete feel for why the supremum axiom fails for
+rationals, consider the infinite set of numbers 3, 3.1, 3.14, 3.141,
+3.1415...  Each of these numbers is a rational number.  But the supremum
+is pi, which is not a rational number.
+
+<P>In Cantor's original diagonal proof, the supremum comes into play as
+follows.  As you go diagonally down the list of decimal expansions of
+real numbers, mismatching the list digit by digit, at each point you
+will have a new rational number with one more digit (that is different
+from all numbers in the list up to that point).  The supremum of this
+list of new rational numbers is a real number (with an infinite number of
+digits after the decimal point) that is not on the list.  The statement
+"all decimal expansions represent real numbers," which is often stated
+casually and taken for granted, is actually somewhat deep and needs the
+supremum axiom for its derivation.
+
+<P> <B><FONT COLOR="#006633">The formal
+proof</FONT></B>&nbsp;&nbsp;&nbsp;
+
+The formal proof consists of 39 lemmas, <A
+HREF="ruclem1.html">ruclem1</A> through <A
+HREF="ruclem39.html">ruclem39</A>, and the final theorem <A
+HREF="ruc.html">ruc</A>.
+
+In the formal proof, the functions <I>f</I>, <I>g</I>, and <I>h</I>
+above are called ` F ` , ` G ` ,
+and ` H ` .  A
+function value such as <I>f</I>(1) is expressed ` ( F `` 1 ) ` .  A
+natural number index <I>i</I> is usually expressed as ` A ` ; you can tell by
+the hypothesis ` A e. NN ` such as ruclem18.a in <A
+HREF="ruclem26.html">ruclem26</A>.
+
+
+<P> In the hypotheses for many of the lemmas, for example those for <A
+HREF="ruclem14.html">ruclem14</A>, we let ` F ` be any function such that ` F : NN --> RR ` , meaning ` F ` can be any arbitrary mapping from ` NN ` <I>into</I> ` RR ` .  We then derive  additional
+properties that ` F ` must
+have.  In particular, we will conclude that no matter what the
+function ` F ` is, it
+is impossible for it to map <I>onto</I> the set of all reals.
+
+
+<P> We also have to
+construct the functions ` G ` and ` H ` ,
+and doing this formally is rather involved.  The purpose of the majority
+of the lemmas, in fact, is simply to work out that the hypotheses of <A
+HREF="ruclem14.html">ruclem14</A> indeed result in functions ` G ` and ` H ` that have the
+properties described in our informal argument section above.
+
+<P> What makes it complicated is the fact that ` G ` and ` H ` depend not only on ` F ` but on each other as well.  So, we
+have to construct them in parallel, and we do this using a
+&quot;sequence builder&quot; that you can see defined in <A
+HREF="df-seq.html">df-seq</A>.  The sequence builder takes in the
+functions ` C ` and
+` D ` defined in
+hypotheses ruclem.1 and ruclem.2 of <A
+HREF="ruclem14.html">ruclem14</A>, and uses them to construct a function
+on ` NN ` whose
+values are <I>ordered pairs</I>.  The first member of each ordered pair
+is the value of ` G `
+and the second is the value of ` H ` .  By using ordered pairs, the sequence builder can
+make use of the previous values of both ` G ` and ` H ` simultaneously for its internal recursive
+construction.
+
+<P> The function ` C ` , which provides the second argument or &quot;input
+sequence&quot; for the sequence builder ` seq ` , is constructed from ` F ` as follows.  Its first value
+(value at 1) is the ordered pair ` <. ( ( F `` 1 ) + 1 ) , ( ( F `` 1 ) + 2 ) >. ` .  This provides the
+&quot;seed&quot; for the sequence builder, corresponding to the initial
+assignment to <I>g</I>(1) and <I>h</I>(1) in the informal argument
+section above.  The subsequent values at 2, 3,... are just the values of ` F ` , and these feed the
+recursion part of the sequence builder to generate new ordered pairs for
+the values of the sequence builder at 2, 3,....
+
+
+<P>The two functions called ` 1st ` and ` 2nd ` in hypothesis ruclem.2 of <A
+HREF="ruclem14.html">ruclem14</A> return the <A
+HREF="op1st.html">first</A> and <A HREF="op2nd.html">second</A> members,
+respectively, of an ordered pair.  The ` if ` operation, defined by <A
+HREF="df-if.html">df-if</A>, can be thought of as a conditional
+expression operator analogous to those used by computer languages.  The
+expression ` if ( ph , A , B ) ` can be read &quot;if
+` ph ` is true
+then the expression equals ` A ` else the expression equals ` B `&quot;.
+
+<P>Hypotheses ruclem.3 and ruclem.4 of <A
+HREF="ruclem14.html">ruclem14</A> extract the first and second
+members from the ordered pair values of the sequence builder
+finally giving us our desired auxiliary functions
+` G ` ,
+and ` H `
+
+<P>Armed with this information, you should now compare the arithmetic
+expressions in the hypothesis ruclem.2 of <A
+HREF="ruclem14.html">ruclem14</A> to the ones in the informal argument
+section above.  Hopefully you will see a resemblance, if only a very
+rough one, that will provide you with a clue should you want to study
+the formal proof in more depth.  By the way, the assertion (conclusion)
+of <A HREF="ruclem14.html">ruclem14</A> shows the first value of the
+sequence builder.  You can see that the ordered pair entries match
+<I>g</I>(1) and <I>h</I>(1) from the informal argument section above.
+
+<P> Let us now look at the key lemmas for the uncountability proof.
+Lemma <A HREF="ruclem26.html">ruclem26</A> shows that ` G ` has an ever-increasing set of
+values, and <A HREF="ruclem27.html">ruclem27</A> shows that ` H ` has an
+ever-decreasing set of values.  In spite of this, the twain shall never
+meet, as shown by <A HREF="ruclem32.html">ruclem32</A>.  Lemma <A
+HREF="ruclem34.html">ruclem34</A> defines the supremum ` S ` of the values of
+` G `
+(i.e. the supremum of its range) and shows that
+the supremum is a real number.  Lemma <A
+HREF="ruclem35.html">ruclem35</A> shows that the supremum ` S ` is always sandwiched
+between ` G ` and
+` H ` , whereas <A
+HREF="ruclem29.html">ruclem29</A> shows that this is not true for any
+value of ` F ` .
+Lemma <A HREF="ruclem36.html">ruclem36</A> uses these last two facts to
+show that the supremum is not equal to any value of ` F ` and therefore not in the list of
+real numbers provided by ` F ` .  This means, as shown by <A
+HREF="ruclem37.html">ruclem37</A>, that ` F ` cannot map onto the set of all reals.
+
+<P> We are now in a position to get rid of most of the hypotheses (since
+their variables are no longer referenced in the assertion).  In <A
+HREF="ruclem38.html">ruclem38</A> we eliminate all but one hypotheses of
+<A HREF="ruclem37.html">ruclem37</A> by using instances of <A
+HREF="eqid.html">eqid</A>.  In <A HREF="ruclem39.html">ruclem39</A>
+we get rid of the final hypothesis (using the
+<A HREF="mmdeduction.html#quick">weak deduction theorem</A> <A
+HREF="dedth.html">dedth</A>, involving a quite different application of
+the ` if `
+operator) to result in &quot;there is no function mapping ` NN ` onto the
+reals,&quot; and finally <A HREF="ruc.html">ruc</A> converts this to the
+notation for a strict dominance relation.
+
+<P>
+There are several related interesting proofs.
+There are at least
+aleph-one reals (<A HREF="aleph1re.html">aleph1re</A>) and
+irrationals (<A HREF="aleph1irr.html">aleph1irr</A>).
+For another very different proof that the reals are uncountable, see <A
+HREF="rucALT.html">rucALT</A>, which follows from the exact
+computation of the cardinality of reals,
+<A HREF="rpnnen.html">rpnnen</A>.
+
+
+<HR NOSHADE SIZE=1>
+
+<TABLE BORDER=0 WIDTH="100%"><TR>
+
+<TD ALIGN=left VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
+&nbsp;</FONT></TD>
+
+<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 21-Aug-2020.</I>
+<BR><FONT SIZE=-2 FACE=ARIAL>
+Copyright terms:
+<A HREF="../copyright.html#pd">Public domain</A>
+</FONT></TD>
+
+<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT FACE="ARIAL" SIZE=-2>
+<A
+HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
+[external]
+</FONT>
+</TD>
+
+</TR></TABLE>
+
+<!-- <SCRIPT SRC="http://www.google-analytics.com/urchin.js" TYPE="text/javascript">
+</SCRIPT>
+<SCRIPT TYPE="text/javascript">
+_uacct = "UA-1862729-1";
+urchinTracker();
+</SCRIPT>
+-->
+
+</BODY></HTML>
+

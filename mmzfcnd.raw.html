@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+
+<!-- improve mobile display -->
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+
+<META HTTP-EQUIV="Content-Type"
+ CONTENT="text/html; charset=iso-8859-1">
+ <TITLE>ZFC Axioms Without Distinct Variable
+        Conditions - Metamath Proof Explorer</TITLE>
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+
+<STYLE TYPE="text/css">
+<!--
+/* Math symbol image will be shifted down 4 pixels to align with normal
+  text for compatibility with various browsers.  The old ALIGN=TOP for
+  math symbol images did not align in all browsers and should be deleted.
+  All other images must override this shift with STYLE="margin-bottom:0px".
+  (2-Oct-2015 nm) */
+img { margin-bottom: -4px }
+-->
+</STYLE>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" STYLE="padding: 0px 8px">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP><A HREF="mmset.html"><IMG SRC="mm.gif"
+      BORDER=0
+      ALT="Metamath Proof Explorer Home"
+      TITLE="Metamath Proof Explorer Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER VALIGN=TOP><FONT SIZE="+3"
+      COLOR="#006633"><B>Metamath Proof Explorer</B></FONT><BR>
+       <FONT SIZE="+2" COLOR="#006633"><B>ZFC Axioms Without Distinct
+Variable Conditions</B>
+        </FONT>
+    </TD>
+    <TD NOWRAP ALIGN=RIGHT VALIGN=TOP> &nbsp;
+    </TD>
+  </TR>
+
+  <TR>
+    <TD COLSPAN=3 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+        &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmset.html">MPE Home</A>&nbsp; &gt;
+      &nbsp;ZFC Axioms Without Distinct Variable Conditions
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+
+<!--
+<CENTER><FONT SIZE="+2" COLOR="#006633"><B>ZFC Axioms Without Distinct
+Variable Conditions</B></FONT></CENTER>
+-->
+
+<HR NOSHADE SIZE=1>
+
+
+<B><FONT COLOR="#006633">On the variables in the ZFC
+axioms</FONT></B>&nbsp;&nbsp;&nbsp;Each of our <A
+HREF="mmset.html#zfcaxioms">standard ZFC (Zermelo-Fraenkel
+with Choice) set theory axioms</A> is accompanied by
+the proviso that all of its setvar variables be <A
+HREF="mmset.html#distinct">distinct</A> from each other.  This is
+indicated by the "Distinct variable group" on its web page
+(for example <A HREF="ax-ext.html">ax-ext</A>) and
+corresponds to its $d restriction in the database source file, <A
+HREF="../index.html#mmprog">set.mm</A>.
+
+<P>Each "axiom" in Metamath's version of ZFC set theory is not an actual
+axiom in the language of first-order logic but is a <A
+HREF="mmset.html#schemes"><I>scheme</I></A> or template that represents
+an infinite number of actual axioms.  From the point of view of
+first-order logic, the <FONT COLOR=red>setvar</FONT> and <FONT
+COLOR=blue>wff</FONT> "variables" are metavariables that range over the
+individual variables and wffs of the language of the actual logic.  This
+is the way Metamath&mdash;"metavariable math"&mdash;works; it doesn't have a
+way of directly representing an individual variable or a single actual axiom.
+
+<P>Most textbooks, on the other hand, state the ZFC axioms (except
+Replacement, which necessarily has a wff metavariable) as specific
+actual axioms in the language of first-order logic.  So, for example,
+they will state the Axiom of Extensionality as a single actual axiom
+with fixed individual variables, not a scheme ranging over an infinite
+number of actual axioms.  To recover the textbook version from
+Metamath's version, we simply make a fixed assignment of individual
+variables to our setvar metavariables, outside of Metamath; in other
+words, we pick any instance of the scheme that our Axiom of Extensionality
+statement represents.  The math works
+out exactly the same, because we have attached provisos to our standard
+version of the ZFC axioms stating that their setvar metavariables must be
+distinct from each other, and a metatheorem of predicate calculus states
+that the truth of an axiom is not affected by renaming its variables
+as long as the variable names remain distinct.
+
+<P><B><FONT COLOR="#006633">ZFC axioms without distinct variable
+conditions</FONT></B>&nbsp;&nbsp;&nbsp;It is possible to exploit the
+fact that we are using metavariables instead of individual variables in
+the following interesting way.  We can use various logic tricks to
+formulate an equivalent set of ZFC axiom schemes that have <B>no</B>
+distinct variable provisos.  Here we show such a set, proved as
+theorems from the standard ones.  Accompanying them is an optional simple
+additional scheme, which we have called the Axiom of Twoness, that does
+have a proviso and will be discussed below.
+
+<P>The axioms below can be added to a
+<A HREF="mmset.html#dvfreesystem">predicate calculus system with no distinct
+variables</A> to obtain a logically complete set of axioms for
+logic and set theory.
+
+<P><CENTER>
+
+<TABLE BORDER=0 CELLSPACING=0><TR><TD>
+
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="ZFC Axioms Without Distinct Variable Conditions">
+<CAPTION><B>ZFC Axioms Without Distinct
+Variable Conditions</B></CAPTION>
+
+
+<TR><TH>Ref
+</TH><TH>Expression</TH></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="axextnd.html">Axiom of Extensionality
+with no distinct variable conditions</A></TD><TD>
+` |- E. x ( ( x e. y <-> x e. z ) -> y = z ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="axrepnd.html">Axiom of Replacement
+with no distinct variable conditions</A></TD><TD>
+` |- E. x ( E. y A. z ( ph -> z = y ) -> A. z ( A. y z e. x <-> E. x ( A. z x e. y /\ A. y ph ) ) ) ` </TD></TR>
+
+
+<TR ALIGN=LEFT><TD><A HREF="axpownd.html">Axiom of Power Sets
+with no distinct variable conditions</A></TD><TD>
+` |- ( -. x `
+` = y -> E. x A. y ( A. x ( E. z x e. y -> A. y x e. `
+` z ) -> y e. x ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="axunnd.html">Axiom of Union
+with no distinct variable conditions</A></TD><TD>
+` |- E. x A. y ( E. x ( y e. x /\ x e. z ) -> y e. x ) ` </TD></TR>
+
+
+<TR ALIGN=LEFT><TD><A HREF="axregnd.html">Axiom of Regularity
+with no distinct variable conditions</A></TD><TD>
+` |- ( x e. `
+` y -> E. x ( x e. y /\ A. z ( z e. x -> -. z e. y ) ) ) ` </TD></TR>
+
+
+<TR ALIGN=LEFT><TD><A HREF="axinfnd.html">Axiom of Infinity
+with no distinct variable conditions</A></TD><TD>
+` |- E. x ( y e. z -> ( y e. x /\ A. y ( y e. x -> E. z ( y e. z /\ z e. x ) ) ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="axacnd.html">Axiom of Choice
+with no distinct variable conditions</A></TD><TD>
+` |- E. x A. y A. z ( A. x ( y e. z /\ z e. w ) -> E. w A. y ( E. w ( ( y e. z /\ z e. w ) /\ ( y e. w /\ w e. `
+` x ) ) <-> y = w ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT><TD>(Optional; see below) <A HREF="dtru.html">Axiom of
+Twoness</A></TD><TD>
+` |- -. A. x x = y ` ,
+where
+` x `
+and
+` y `
+are distinct variables.</TD></TR>
+
+</TABLE>
+
+</TD></TR><TR><TD ALIGN=LEFT>
+
+<FONT SIZE=-2 FACE=ARIAL>Colors of variables:
+ <FONT COLOR="#0000FF">wff</FONT> <FONT COLOR="#FF0000">set</FONT> <FONT
+COLOR="#CC33CC">class</FONT></FONT>
+
+</TD></TR></TABLE>
+</CENTER>
+
+<P> To prove that they really are equivalent, we also rederive the
+standard ones from them:  <A HREF="zfcndext.html">rederivation of
+Extensionality</A>, <A HREF="zfcndrep.html">rederivation of
+Replacement</A>, <A HREF="zfcndun.html">rederivation of Union</A>, <A
+HREF="zfcndpow.html">rederivation of Power Sets</A>, <A
+HREF="zfcndreg.html">rederivation of Regularity</A>, <A
+HREF="zfcndinf.html">rederivation of Infinity</A>, and <A
+HREF="zfcndac.html">rederivation of Choice</A>.
+
+<P><B><FONT COLOR="#006633">Remarks</FONT></B>&nbsp;&nbsp;&nbsp; In an
+axiom scheme with no distinct variable restrictions, the complicated
+rules for free variables and proper substitution, needed to avoid
+distinct variable clashes, disappear.  A quantified ("bound") variable
+loses its special status, and the concept of a quantified variable's
+scope vanishes&mdash;all variables become "global" throughout the
+expression.  Think about what that means&mdash;it is a rather startling and
+even counterintuitive property if you are used to working with
+first-order logic.  For example, in our condition-free Axiom of Union, we
+can blindly change all of its free and bound setvar variables to ` x ` ,
+and the strange-looking result,
+` |- E. x A. x ( E. x ( x e. x /\ x e. x ) -> x e. x ) ` , is still a sound
+(although probably not very useful) theorem scheme of set theory!
+Among other things, such axiom schemes are trivial to manipulate
+with a computer program, since the "for all" and "there exists"
+quantifiers effectively become simple binary operations.
+
+<P>Most mathematicians are used to free and bound variables being
+intrinsically distinct (which they are in the <I>actual</I> axioms of
+logic&mdash;again, see the <A HREF="mmset.html#schemes">note on the
+axioms</A>), and this version may make some of them grimace, which is
+why I didn't put them on the main Metamath Proof Explorer page.
+Certainly they are more difficult to grasp intuitively, and I would not
+advocate using them as the starting point for a set theory course,
+although they might provide interesting exercises that stress a student's
+understanding of free and bound variables.
+
+<!--
+<P>Nonetheless, I think it is remarkable that the need for distinct
+variables in the axiom schemes for (essentially) <I>all of
+mathematics</I> can be distilled down to a single simple axiom scheme,
+which I call the "Axiom of Twoness," that in essence asserts merely that
+at least two things exist.
+-->
+
+<P><A NAME="twoness"></A><B><FONT COLOR="#006633">Axiom of
+Twoness</FONT></B>&nbsp;&nbsp;&nbsp;
+The axiom above that I have
+dubbed the "Axiom of Twoness" in essence asserts merely that
+at least two things exist.
+When added to
+the axioms of our <A HREF="mmset.html#dvfreesystem">predicate calculus
+system with no distinct variables</A>, the Axiom of Twoness implies <A
+HREF="ax-c16.html">ax-c16</A> (as shown by theorem <A
+HREF="axc16b.html">axc16b</A>) and therefore all instances of <A
+HREF="ax-5.html">ax-5</A>, making those two axioms of predicate
+calculus unnecessary for logical completeness.  This means that the need
+for distinct variables in mathematics is completely captured by the Axiom
+of Twoness, a fact that I think is somewhat remarkable.
+
+<P>One way to look at the Axiom of Twoness is not as axiom of set theory
+but as an axiom of a somewhat stronger and less general predicate
+calculus, where the domain of discourse is assumed to contain at least
+two objects.  (The ordinary assumption in predicate calculus is that at
+least one object exists.  Even this assumption is somewhat arbitrary and
+made for convenience in standard predicate calculus.  There are more
+complex versions of predicate calculus called "free logics" that allow
+the domain of discourse to be empty.)
+
+<P>My conjecture is that the Axiom of Twoness, and not just the weaker
+Axiom of Distinct Variables <A HREF="ax-c16.html">ax-c16</A>, is necessary
+for completeness.  Specifically, I haven't been able to <A
+HREF="zfcndpow.html">rederive</A> the standard Axiom of Power Sets (nor
+the standard Axiom of Infinity, which uses it for its rederivation) from
+our condition-free version without invoking the Axiom of Twoness, nor
+have I been able to find any other condition-free version of Power Sets
+that would let me do this.
+
+<P><I>Update 11-Apr-2018:</I> Beno&icirc;t Jubin has shown that
+the Axiom of Twoness is necessary to rederive the standard
+axioms of Power Sets and Infinity.  See
+<A HREF="../award2003.html#14">item 14</A> on the
+"Open problems and miscellany" page.
+
+<P><A NAME="distinctors"></A><B><FONT
+COLOR="#006633">Distinctors</FONT></B>&nbsp;&nbsp;&nbsp; Is there any way
+to avoid the Axiom of Twoness, or more generally any need for distinct
+variable provisos at all?  Yes and yes, provided that we are willing to
+live with theorems prefixed with antecedents of the form
+
+"` -. A. x x = y `",
+
+which I call "distinctors," in place of explicitly requiring ` x ` and ` y `
+to be distinct variables.  But the
+list of distinctors needed for a theorem can grow quite long, as it will
+accumulate all the "dummy" variables used in the theorem's proof, even if
+those variables do not appear in the main part of the theorem.  It is
+theoretically impossible to avoid dummy variables, which was proved by a
+theorem of Andr&eacute;ka and is discussed in my paper, "<A
+HREF="mmset.html#bibmegill">A Finitely Axiomatized Formalization of
+Predicate Calculus with Equality</A>."
+
+<P>Nonetheless, for informal display purpose we could drop the distinctors
+having dummy variables not occurring in the theorem.  For more precise
+communication, we  could abbreviate the list of distinctors for
+dummy variables
+with a notation such "d(7)", meaning that distinctors for 7 dummy
+variables are implicit in the antecedent.  In this way, we could derive
+essentially all of mathematics from a system having no distinct variable
+requirements, without an excessive notational burden for the
+accumulation of distinctors.
+
+<!--
+  Nonetheless, we can postpone the
+application of the Axiom of Twoness until the very end of the proof,
+using it to trim off redundant distinctors (i.e. those containing dummy
+variables) in a trivial algorithmic way.  If we view this as just a
+postprocessing clean-up "outside" of the proof for the benefit of
+readability, it means that in principle the no distinct variables at all
+are needed for mathematics.
+(From a practical point of view,
+the explicit manipulation of distinctors is tedious and results in long
+proofs, so such a system is mostly only of theoretical interest.)
+-->
+
+<P><B><FONT COLOR="#006633">Interdependence</FONT></B>&nbsp;&nbsp;&nbsp;
+Although these condition-free axioms are provably equivalent as a group
+to the standard ZFC axioms, it should be noted that there is a sense in
+which they are not "pure" individually.  At the end of their proofs, in
+the list of axioms used, you can see that some of them involve the use
+of set theory axioms other than the ones they correspond to.  For
+example, one of the tricks we use is the fact that ` A. x y e. `
+` z ` evaluates to ` y e. z ` if all three variables are mutually distinct, and
+false otherwise.  To prove this we need the Axiom of Regularity, so that
+any axiom using this trick incorporates a component derived from
+Regularity.  So for some purposes, such as studying the independence of the
+standard ZFC axioms, they are not suitable as a replacement for the
+standard ones.
+
+<HR NOSHADE SIZE=1>
+
+<TABLE BORDER=0 WIDTH="100%"><TR>
+
+<TD ALIGN=left VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
+&nbsp;</FONT></TD>
+
+<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 20-Jul-2019.</I>
+<BR><FONT SIZE=-2 FACE=ARIAL>
+Copyright terms:
+<A HREF="../copyright.html#pd">Public domain</A>
+</FONT></TD>
+
+<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT FACE="ARIAL" SIZE=-2>
+<A
+HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
+[external]
+</FONT>
+</TD>
+
+</TR></TABLE>
+
+<!-- <SCRIPT SRC="http://www.google-analytics.com/urchin.js" TYPE="text/javascript">
+</SCRIPT>
+<SCRIPT TYPE="text/javascript">
+_uacct = "UA-1862729-1";
+urchinTracker();
+</SCRIPT>
+-->
+
+</BODY></HTML>

@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# Find repeats, that is, statements that are repeatedly proved but
+# NOT top-level theorems/axioms.  This is an imperfect heuristic approach,
+# since it reports expressions that may only be true in some contexts,
+# but it can sometimes find some interesting generally-true assertions.
+# The result is stored in ,embedded-counts
+
+# If you're running on a system without GNU grep, install GNU grep since
+# some other greps run out of memory. We prefer "ggrep" instead of grep.
+# On MacOS, you can install GNU grep via "brew install grep".
+
+# Analyze the mmfile given in $1, by default set.mm.
+mmfile="${1:-set.mm}"
+
+# MacOS' grep implementation is terrible & runs out of memory, so prefer
+# ggrep (GNU grep) if it exists on the system.
+if command -v ggrep > /dev/null ; then
+  GREP=ggrep
+else
+  GREP=grep
+fi
+
+# What are the top-level proven theorems/axioms?
+metamath "read \"${mmfile}\"" 'set width 9999' 'show statement *' quit | \
+  sed -e 's/  */ /g' | $GREP '^[1-9].*\$[ap]' | cut -d ' ' -f 4- | \
+  sed -e 's/ *\$= .*$//' > ,statements
+
+
+# What's been proven at any step?
+metamath "read \"${mmfile}\"" 'set width 9999' 'show proof * /lemmon' quit | \
+  sed -e 's/  */ /g' | $GREP -E '^[0-9]+ [1-9][0-9,]* [^ ]* \$[ap] ' | \
+  cut -d ' ' -f 5- | \
+  sed -e 's/ *\$\. *$//' > ,proven
+
+# Show proven by any step NOT including theorems/axioms.
+# "comm -23 ,proven ,statements" won't work because of duplicate lines.
+
+$GREP -v -F -f ,statements < ,proven > ,embedded
+
+sort ,embedded | uniq -c | sort -n -r > ,embedded-counts

@@ -1,0 +1,146 @@
+#!/bin/sh
+# rename-proposals old_fragment new_fragment required_symbol
+
+# Create a first-cut list of rename proposals.
+# The result can then be hand-edited, including deleting irrelevant lines
+# or adding comment '#' symbols at the beginning of a line.
+
+# The result is stored in ",proposed-renames"
+
+# The intent is to run the following after hand editing:
+# scripts/mass-rename < hand-edited-version
+
+# If old_fragment, new_fragment, or required_symbol can be
+# interpreted as regexes you must escape them.
+# E.g., if they include these characters: . * ? { } [ ] \
+
+# This works better if you have "hunspell" installed.
+# If it is, it will automatically check all possibly-to-be renamed old labels
+# to see if they are also English words.
+# You don't want to blindly apply a rename proposal if the old-label is
+# an ordinary word in English, since the rename is applied to all text
+# (including comments) so it might be over-replaced.
+
+# We create a list of labels to rename, but *ONLY* if the old_fragment
+# is the label (since otherwise it's irrelevant) AND there's a relevant
+# required_symbol on the same line (this latter is a reasonable heuristic).
+# If a "$e" label XYZ.N is found that meets this criterion, we pull in all
+# the other $e labels named XYZ.N and the underlying $a/$p statement XYZ.
+# Note that "N" can be multiple characterts but it can't include ".".
+# A $e label can have a different name, but then we won't see the
+# correlation (we presume there's a reason for the name difference
+# and don't try to "fix" it). The $e label SHOULD be named with '.' and
+# at least one chacter after it.
+
+# Example: change "cn" to "cc" if the symbol CC is present
+# scripts/rename-proposals 'cn' 'cc' 'CC'
+# Example: change "rng" to "ring" if the symbol Ring is present
+# scripts/rename-proposals 'rng' 'ring' 'Ring'
+
+set -eu
+
+mmfile='set.mm'
+
+usage () {
+  echo 'rename-proposals [--datbase MMDATABASE=set.mm]' >&2
+  echo '  old_fragment new_fragment required_symbol' >&2
+}
+
+while [ "$#" -gt 0 ] ; do
+  case "$1" in
+    --database)
+      shift
+      mmfile="$1"
+      shift ;;
+    --help)
+      usage
+      exit 0 ;;
+    --)
+      shift
+      break ;;
+    --*)
+      echo 'Unknown option.' >&2
+      exit 1 ;;
+    *) break ;;
+  esac
+done
+
+if [ "$#" -ne 3 ] ; then
+    echo 'Error: Must have exactly 3 parameters (skipping options)'
+  exit 1
+fi
+
+old_label_fragment="$1"
+new_label_fragment="$2"
+required_symbol="$3"
+
+case "$required_symbol" in
+  (\ *)
+    echo 'Required symbol must not begin with space' >&2
+    exit 1;;
+esac
+
+echo "rename-proposals working on $mmfile" 2>&1
+
+# Find every statement with old_label_fragment
+metamath "read ${mmfile}" 'set scroll continuous' 'set width 9999' \
+  "show statement *${old_label_fragment}*" quit | \
+  grep -- '^[1-9].* \$[aep] ' > ,old_label_found
+
+# Find the subset that also have the required_symbol
+grep -- " \$[aep] .* ${required_symbol} " ,old_label_found > ,required_symbol
+
+# For all $e statements, find the paired $e statements and underlying $a/$p.
+# For all $p statements, find the paired $e statements.
+# Note: If a $e statement names don't match $a/$p, we report them.
+# Use "read -r" to disable backslash interpretation.
+grep -E -- '^[0-9]+ [^ ]+(\.[^. ]+ \$e| \$p) ' ,required_symbol | \
+while read -r linenum label type rest
+do
+  if [ "$type" = '$e' ]; then
+    prefix="${label%.?*}"
+  else
+    prefix="${label}"
+  fi
+  # Escape any internal "." with backslash
+  regexed_prefix="$(printf '%s' "$prefix" | sed -e 's/\./\\./g')"
+  # Find all matching $e's
+  grep -E -- '^[0-9]+ '"${regexed_prefix}"'\.[^. ]+ \$e ' ,old_label_found || \
+    true
+  # Find matching $a or $p; warn if we didn't find one
+  if ! grep -E -- '^[0-9]+ '"${regexed_prefix}"' \$[ap] ' ,old_label_found
+  then
+    printf '%s\n' "$linenum "'# Note: Did not find $a or $p named: '"$prefix"
+  fi
+done > ,matches-e
+
+# Merge and short the results. We have to handle sorts specially so that
+# the "Notes" end up in a useful place.
+cat ,required_symbol ,matches-e | sort -n | uniq | \
+while read -r linenum label rest ; do
+  case "$label" in
+    \#*)
+      printf '%s\n' "$linenum $label $rest" ;;
+    *)
+      newlabel="$(printf '%s\n' "$label" | \
+	          sed -e "s/${old_label_fragment}/${new_label_fragment}/g")"
+      printf '%s\n' "$linenum $label $newlabel $rest" ;;
+  esac
+done > ,proposed-renames
+
+# Warn about old labels that are also English words, since replacing them
+# may be especially tricky.
+if which hunspell 2>/dev/null >&2 ; then
+  sed -E -e 's/^[0-9]+ //' -e 's/ .*//' -e '/^#/d' < ,proposed-renames \
+    > ,old_names
+  sed -E -e 's/\.[^. ]+$//' < ,old_names > ,unstemmed_old_names
+  hunspell -G ,unstemmed_old_names | sort | uniq > ,dangerous_old_names
+  if [ -s ,dangerous_old_names ] ; then
+    echo 'Warning - the following old labels are also English words:'
+    cat ,dangerous_old_names
+  fi
+fi
+
+echo 'Rename file ,proposed-renames to another-filename.' >&2
+echo 'Then edit it to reflect what you want renamed (use # for comments).' >&2
+echo 'When you are done, run: scripts/mass-rename < another-filename' >&2

@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="104" height="92" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <desc>Judgment: Beta xor Alpha</desc>
+  <!--
+      size = 16 ;
+      tx = 4 = size / 4 ;
+      ty = 4 = size / 4 ;
+      x1 = 8 = size / 2 ;
+      x2 = 32 = x1 + (3/2) size ;
+      x3 = 56 = x2 + (3/2) size ;
+      x4 = 80 = x2 + (3/2) size ;
+      width = 104 = x4 + max((3/2) size, size + 2 tx ) ;
+      y1 = 16 = size ;
+      y2 = 36 = y1 + (5/4) size ;
+      y3 = 56 = y2 + (5/4) size ;
+      height = 72 = y3 + size ;
+  -->
+  <style>
+	.arc { fill: black; stroke-width: 0.75px; stroke: black; stroke-linecap: round; stroke-linejoin: round; }
+	.bracehoriz { stroke-width: 0.75px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.bracevert { stroke-width: 1.5px; stroke: black; stroke-linecap: butt; stroke-linejoin: round; fill: none;}
+	.definevert { stroke-width: 2.5px; stroke: black; stroke-linecap: butt; }
+	.funhoriz { stroke-width: 0.75; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.funvert { stroke-width: 1.5px; stroke: black; stroke-linecap: butt; stroke-linejoin: round; fill: none;}
+	.judgmentvert { stroke-width: 2.5px; stroke: black; stroke-linecap: butt; }
+	.line { stroke-width: 0.5px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.notstroke { stroke-width: 0.5px; stroke: black; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+	.smalltext { fill: black; font-size: 12px;}
+	.sub { vertical-align: sub; baseline-shift: sub; font-size: 70%;}
+	.text { fill: black; font-size: 16px;}
+  </style>
+  <line x1="8" x2="8" y1="8" y2="24" class="judgmentvert" />
+  <line x1="20" x2="20" y1="16" y2="24" class="notstroke"/>
+  <line x1="8" x2="80" y1="16" y2="16" class="line"/>
+  <line x1="44" x2="44" y1="16" y2="24" class="notstroke"/>
+  <text class="text" x="84" y="20">&#120546;</text>
+  <polyline points="56,16 56,36 80,36" class="line"/>
+  <line x1="68" x2="68" y1="36" y2="44" class="notstroke"/>
+  <text class="text" x="84" y="40">&#120547;</text>
+  <polyline points="32,16 32,56 80,56" class="line"/>
+  <line x1="68" x2="68" y1="56" y2="64" class="notstroke"/>
+  <text class="text" x="84" y="60">&#120546;</text>
+  <polyline points="56,56 56,76 80,76" class="line"/>
+  <text class="text" x="84" y="80">&#120547;</text>
+</svg>

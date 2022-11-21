@@ -1,0 +1,257 @@
+name: verifiers
+on: [push, pull_request, workflow_dispatch]
+
+# Run many verifiers on metamath files.
+# We *primarily* check set.mm and iset.mm, but we also run some checks on
+# other files (in particular on some HTML files).
+#
+# Only one verifier is necessary, but using multiple verifiers counters
+# the risk that a verifier might have a defect in its implementation.
+# With 4 verifiers, all 4 would have to have a defect involving an
+# invalid theorem for that invalid theorem to be accepted as valid.
+# This is unlikely, because the verifiers are written by different people
+# in different languages.  This can be considered extreme peer review, where
+# every reviewer is separately checking each step.
+# Some of these verifiers also check for style,
+# so using multiple verifiers can also detect many different style problems.
+#
+# Note that one of the checks is scripts/verify.
+#
+# We report an error if the list of "discouraged" results is unexpected;
+# this makes it easy to detect changes (which can then be specially reviewed).
+# To regenerate the "discouraged" file, you can run scripts/gen-discouraged
+#
+# We typically rewrap the file using scripts/rewrap.
+
+# TODO: We aren't caching many old results; add caches
+# (e.g., of unchanged compiled programs) to speed things further.
+
+# In each job we download, build, install, and run a verifier.
+# NOTE: We generally install programs in $HOME/bin, so ensure that's on the
+# PATH (usually it is on any non-Windows system).
+
+jobs:
+  ###########################################################
+  skip_dups:
+    name: Check for duplicate jobs to avoid duplication
+    # continue-on-error: true # Uncomment once integration is finished
+    runs-on: ubuntu-latest
+    # Map a step output to a job output
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@master
+        with:
+          github_token: ${{ github.token }}
+          paths_ignore: '["**/README.md", "**/docs/**"]'
+
+  ###########################################################
+  checkmm:
+    name: Verify using checkmm (a C++ verifier by Eric Schmidt)
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    steps:
+      # By default checkout fetches a single commit, which is what we want.
+      # See: https://github.com/actions/checkout
+      - uses: actions/checkout@v2
+      - run: echo 'Starting'
+      - run: pwd
+      - run: ls -l
+      - run: g++ --version
+      # Get and compile checkmm, a C++ verifier by Eric Schmidt
+      - run: wget -N -q http://us.metamath.org/downloads/checkmm.cpp
+      - run: g++ -O2 -o checkmm checkmm.cpp
+      # Use it to verify set.mm and iset.mm
+      - run: ./checkmm set.mm
+      - run: ./checkmm iset.mm
+
+  ###########################################################
+  metamathexe:
+    name: Verify using metamath.exe (original C verifier by Norman Megill)
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    steps:
+      - uses: actions/checkout@v2
+      # Use GITHUB_PATH to set PATH. For details see:
+      # https://docs.github.com/en/free-pro-team@latest/actions/reference/
+      # workflow-commands-for-github-actions#setting-an-environment-variable
+      - name: Ensure ~/bin is in PATH
+        run: |
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          mkdir -p "$HOME/bin"
+      - name: Get metamath C program and supporting files
+        run: scripts/download-metamath
+      - name: Record latest version of metamath as env variable
+        run: |
+          echo "METAMATH_LATEST_VERSION=$(cat metamath/.latest_version)" >> $GITHUB_ENV
+      # Note: cache key includes version of metamath in use
+      - name: Cache metamathexe
+        id: cache-metamathexe
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-metamathexe
+        with:
+          path: ~/bin/metamath
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ env.METAMATH_LATEST_VERSION }}
+      - name: Build/install metamath, a C verifier (and more) by Norm Megill
+        if: ${{ !steps.cache-metamathexe.outputs.cache-hit }}
+        run: |
+          gcc --version
+          scripts/build-metamath
+      # Create mmset.html and mmil.html so we can verify against them.
+      - run: metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
+      - run: metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit
+      - run: scripts/verify --top_date_skip --extra 'write bibliography mmbiblio.html' set.mm
+      - run: scripts/verify --top_date_skip iset.mm
+      - run: ls -1 *.mm | sed -e '/^set\.mm$/d' -e '/^iset\.mm$/d' | while read db; do scripts/verify --top_date_skip --no-verify-markup "$db"; done
+      - run: scripts/check-raw-html set.mm mmcomplex.raw.html mmdeduction.raw.html mmnatded.raw.html mmnf.raw.html mmset.raw.html mmzfcnd.raw.html mmfrege.raw.html
+      - run: scripts/check-raw-html iset.mm mmil.raw.html
+      # Generate HTML from raw files into mpegif-html/ and mpeuni-html/
+      - run: scripts/regen-from-raw --force '/HTML' .regened.html
+      - run: mkdir -p mpegif-html/
+      - run: for f in *.regened.html; do mv $f mpegif-html/${f%.regened.html}.html ; done
+      - run: scripts/regen-from-raw --force '/ALT_HTML' .regened.html
+      - run: mkdir -p mpeuni-html/
+      - run: for f in *.regened.html; do mv $f mpeuni-html/${f%.regened.html}.html ; done
+      # Check that set.mm and iset.mm have been rewrapped.
+      # We'd probably rather have a bot push up a commit with the rewrapping
+      # when a pull request is submitted, but until we set that up,
+      # at least check that the rewrapping has been done.
+      - run: cp set.mm set-wrapped.mm
+      - run: scripts/rewrap set-wrapped.mm
+      - run: echo 'Checking for set.mm rewrapping:' && diff -U 0 set.mm set-wrapped.mm
+      - run: cp iset.mm iset-wrapped.mm
+      - run: scripts/rewrap iset-wrapped.mm
+      - run: echo 'Checking for iset.mm rewrapping:' && diff -U 0 iset.mm iset-wrapped.mm
+      # The following checks are arbitrarily included in the metamath job.
+      - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
+      - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
+
+  ###########################################################
+  smetamath-rs:
+    name: Verify using smetamath-rs (smm3) (Rust verifier by Stefan O'Rear)
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache smm3
+        id: cache-smm3
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-smetamath
+        with:
+          path: ~/.cargo/bin/smetamath
+          key: ${{ runner.os }}-build-${{ env.cache-name }}
+      - name: Install rust
+        if: ${{ !steps.cache-smm3.outputs.cache-hit }}
+        uses: hecrj/setup-rust-action@v1
+        with:
+          rust-version: stable
+      - name: Install smm3
+        if: ${{ !steps.cache-smm3.outputs.cache-hit }}
+        run: cargo install smetamath --vers 3.0.0
+      - name: Verify set.mm
+        run: |
+          ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
+      - name: Verify iset.mm
+        run: |
+          ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
+
+  ###########################################################
+  mmj2:
+    name: Verify using mmj2 (Java verifier by Mel L. O'Cat and Mario Carneiro)
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    steps:
+      - uses: actions/checkout@v2
+      # See: https://github.com/actions/setup-java
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '10' # The JDK version to make available on the path.
+          # java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
+          # architecture: x64 # (x64 or x86) - defaults to x64
+      - run: wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
+      - run: unzip -q mmj2jar.zip
+      # Do extra checking and generate the '*discouraged.new' file
+      # (the 'printf' lets us insert multiple lines).
+      # We use setparser to check that definitions don't create
+      # syntax ambiguities
+      - run: scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,discouraged.new')" set.mm
+      - run: scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,iset-discouraged.new')" iset.mm
+      - run: echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
+      - run: echo 'Checking iset-discouraged file:' && diff -U 0 iset-discouraged iset-discouraged.new
+
+  ###########################################################
+  mmverifypy-setmm:
+    name: Verify set.mm using mmverify.py (Python verifier by Raph Levien)
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    steps:
+      - uses: actions/checkout@v3
+      # See https://github.com/actions/setup-python
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '>=3.9'
+      - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
+      # We can speed up the script by deleting all logging calls, since we do
+      # not need them.
+      - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
+      - run: chmod a+x mmverify.faster.py
+      - run: ./mmverify.faster.py set.mm
+
+  ###########################################################
+  mmverifypy-isetmm:
+    name: Verify iset.mm using mmverify.py (Python verifier by Raph Levien)
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    steps:
+      - uses: actions/checkout@v3
+      # See https://github.com/actions/setup-python
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '>=3.9'
+      - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
+      # We can speed up the script by deleting all logging calls, since we do
+      # not need them.
+      - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
+      - run: chmod a+x mmverify.faster.py
+      - run: ./mmverify.faster.py iset.mm
+
+  ###########################################################
+  check-dates:
+    name: Check dates in set.mm
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    # Check for valid dates (detect nonsense like "June 31")
+    # We run scripts/report-changes.py to convert dates to Unix timestamps;
+    # this will raise an exception if the conversion can't occur,
+    # thus checking that dates are valid. If the conversion is invalid,
+    # you'll see the output from the last *valid* date followed by
+    # an exception.
+    # TODO: Check other .mm files, currently this only checks set.mm.
+    steps:
+      - uses: actions/checkout@v2
+      - run: pip3 install ply
+      - run: scripts/report-changes.py --gource > /dev/null
+
+# TODO: Add mm-scala. Something like this:
+#     ###########################################################
+#     # - # mm-scala, a Scala verifier by Mario Caneiro
+#     #   name: mm-scala (Scala)
+#     #   language: scala
+#     #   install:
+#     #     - git clone --depth 1 https://github.com/digama0/mm-scala.git
+#     #   script:
+#     #     - cd mm-scala; sbt ++$TRAVIS_SCALA_VERSION test
+#     #     - ls
+#     #     - ls mm-scala
+#     #     - mm-scala/mm-scala set.mm
+#     ###########################################################

@@ -1,0 +1,52 @@
+#!/bin/sh
+# regen-from-raw - regenerate files from .raw parts
+# $1 = Markup options (default /HTML)
+# $2 = Suffix of resulting file (default .html)
+
+# Just run this program without arguments to regen the HTML from raw files
+
+if [ "$1" = '--force' ]; then
+  force=true
+  shift
+else
+  force=false
+fi
+
+markup_options="${1:-"/ALT_HTML"} /SYMBOLS /LABELS"
+suffix="${2:-".html"}"
+
+# This is a list of the .raw.html files (omitting their suffix)
+# that use set.mm conventions to generate non-raw versions (most of them)
+setmm_raw='mmcomplex mmnatded mmset mmdeduction mmzfcnd mmfrege'
+
+# Echo the metamath commands necessary to
+# generate files from .raw files listed in $2 using db conventions of $1
+generate_files_using_convention() {
+  convention_database="$1"
+  files_to_regen="$2"
+  echo "read $1"
+  echo 'set scroll continuous'
+  # Since $files_to_regen is a space-separated list we must NOT quote it here:
+  for file in $files_to_regen; do
+    raw_file="${file}.raw.html"
+    generated_file="${file}${suffix}"
+    # Regenerate file only if it's forced or outdated.
+    # The "-f" is because dash and bash's "-ot" behavior differs
+    # if the first file does not exist.
+    if [ "$force" = 'true' ] || ! [ -f "$generated_file" ] || \
+       [ "$generated_file" -ot "$raw_file" ] || \
+       [ "$generated_file" -ot "$convention_database" ] ; then
+      echo "markup \"${raw_file}\" \"${generated_file}\" ${markup_options}"
+    fi
+  done
+  echo quit
+}
+
+generate_files_using_convention 'set.mm' "$setmm_raw" | metamath | tee ,errs
+generate_files_using_convention 'iset.mm' 'mmil' | metamath | tee -a ,errs
+generate_files_using_convention 'nf.mm' 'mmnf' | metamath | tee -a ,errs
+
+# Return nonzero error code if "Warning" or "Error" found in the output.
+echo
+echo 'RECAP: The following warnings and errors were found:'
+! grep -E '^\?(Warning|Error): ' ,errs

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Rewrap source file $1 (default "set.mm")
+source="${1:-set.mm}"
+
+# The reason for doing /rewrap first is so that 'save proof' will subsequently
+# adjust the proof indentation to match any indentation changes made by /rewrap.
+metamath "read ${source}" "write source ${source} /rewrap" \
+  'erase' "read ${source}" 'save proof */compressed/fast' \
+  "write source ${source}" quit

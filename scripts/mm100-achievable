@@ -1,0 +1,69 @@
+#!/usr/bin/python
+# mm100-achievable - list Metamath 100 "to do" sorted by achievability.
+# by David A. Wheeler
+# SPDX-License-Identifier: MIT
+#
+# Given the list of 100 theorems at <http://www.cs.ru.nl/~freek/100/>,
+# this lists the Metamath 100 theorems that have *not*
+# been formalized, sorted by the number of other systems which *have*
+# formalized a proof. This gives a rough sense of how hard the theorem
+# is to formalize.
+
+# First, do:
+# curl -o freek.html http://www.cs.ru.nl/~freek/100/
+# Then run as:
+# scripts/mm100-achievable | sort -nr
+
+# Try to hide Python 2/3 differences. For more, see:
+# http://www.dwheeler.com/essays/python3-in-python2.html
+from __future__ import print_function, unicode_literals
+from __future__ import absolute_import, division
+
+try:
+  xrange = xrange
+  # We have Python 2
+except:
+  xrange = range
+  # We have Python 3
+
+# Use regular expressions to extract info
+import re
+proof_re = re.compile(r'<li id="([0-9]*)">(.*)')
+
+provers = ['HOL Light', 'Isabelle', 'Mizar', 'Coq', 'Metamath',
+           'ProofPower', 'nqthm', 'ACL2', 'PVS', 'NuPRL']
+
+name = ['' for x in xrange(101) ] # Name for given id#
+
+results = [ {} for x in xrange(101) ]
+
+before_list = 1
+
+def show_report(rows):
+  for counter, row in enumerate(rows):
+    if counter > 0 and 'Metamath' not in row:
+      print(str(len(row)) + "\t" + str(counter) + ". " + name[counter])
+
+# Process lines
+with open('freek.html') as f:
+  for line in f:
+    if before_list and '<li id="1">' in line: # List begun?
+      before_list = 0
+    if not before_list and 'has some obvious omissions.' in line: # end?
+      break
+    if before_list: # Skip stuff before list begin.
+      continue
+    find_id = proof_re.search(line)
+    if find_id != None:
+      id = int(find_id.group(1))
+      # print(find_id.group(2))
+      ugly_name = find_id.group(2)
+      pretty_name = ugly_name.replace('</li>', '').replace('<b>', '') \
+                    .replace('</b>', '')
+      name[id] = pretty_name
+    for prover in provers:
+      if prover in line:
+        results[id][prover] = 1
+
+# print(results)
+show_report(results)

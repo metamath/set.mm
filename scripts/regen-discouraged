@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Regenerate 'discouraged' values for $1 (default set.mm) using metamath.exe.
+# By default place the results in 'discouraged' (use --results NAME to change)
+# We sort "show discouraged" results to ignore benign reordering, and sort
+# using LC_ALL=C so that the current locale won't affect the reorder.
+
+result_file='discouraged'
+
+while [ $# -gt 0 ] ; do
+  case "$1" in
+    --results) shift ; result_file="$1" ; shift ;; # Extra command
+    --*) echo "Error, unknown option $1" ; exit 1 ;;
+    *) break ;;
+  esac
+done
+
+mmfile="${1:-'set.mm'}"
+
+metamath "read ${mmfile}" 'set width 9999' 'show discouraged' quit |
+  grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' |
+  LC_ALL=C sort > "$result_file"

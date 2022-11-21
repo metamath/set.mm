@@ -1,0 +1,50 @@
+#!/bin/sh
+# Report the # of uses (direct or indirect) for each theorem ($p).
+# We expect "syl" to be the winner.
+
+# Usage:
+# count-usage [--indirect] [mmfile=set.mm]
+
+indirect='false'
+
+if [ "$1" = '--indirect' ] ; then
+  indirect='true'
+  shift
+fi
+
+mmfile="${1:-set.mm}"
+
+scripts/list-theorems "$mmfile" 1.tmp
+
+# To debug:
+# echo syl > 1.tmp
+# echo a1ii >> 1.tmp
+# OR:
+# head 1.tmp > 2.tmp; mv 2.tmp 1.tmp
+
+# Use "show usage NAME /recursive" which generates:
+# Statement "syl" directly or indirectly affects the proofs of 32021 statements:
+#   3syl 4syl a1d a2d a1iiALT sylcom syl5com com12 syl5 syl6 syl56 syl6com
+# ...
+
+# sed -e 's/^/show usage /' -e 's/$/ \/recursive/' < 1.tmp > 2.tmp
+sed -e 's/^/show usage /' < 1.tmp > 2.tmp
+
+# Add the "recursive" option if we wanted the indirect dependencies
+if [ "$indirect" = 'true' ]; then
+  mv 2.tmp 1.tmp
+  sed -e 's/$/ \/recursive/' < 1.tmp > 2.tmp
+fi
+
+# Two possible formats:
+# "(.*)" directly or indirectly affects the proofs of (.*) statements:/\2 \1
+# Statement "a1ii" directly or indirectly affects the proofs of 8458 statements:
+# "(.*)" is directly referenced in the proofs of (.*) statements:/\2 \1
+
+metamath "read \"${mmfile}\"" 'set scroll continuous' 'set width 9999' \
+  'submit 2.tmp' quit | \
+  grep '^Statement .* proof' | \
+  grep -v ' is not referenced in the proof of any statement' | \
+  sed -E -e 's/^Statement "([^ "]+)" (is directly referenced in|directly or indirectly affects) the proofs? of ([0-9]+) statements?:/\3 \1/' | \
+  grep '^[1-9]' | \
+  sort -n

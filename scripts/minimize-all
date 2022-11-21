@@ -1,0 +1,24 @@
+#!/bin/sh
+# Minimize all using theorem pattern $1 in mmfile $2 (default set.mm)
+# $1 can be comma-separated and/or use "*".
+# Optional argument $3 is the first theorem to minimize.
+# Optional argument $4 is the last theorem to minimize.
+
+theorem="$1"
+mmfile="${2:-set.mm}"
+
+# Put all theorems in 1.tmp
+scripts/list-theorems "$mmfile" 1.tmp "$3" "$4"
+
+# You can just test a few cases by doing this:
+# echo '  oppgval' > 1.tmp
+# echo '  oppgplus' >> 1.tmp
+
+metamath "read ${mmfile}" \
+         'submit "scripts/min.cmd"' \
+         tools \
+         "substitute 1.tmp xxx $theorem a \"\"" \
+         exit \
+         'submit 1.tmp' \
+         "write source \"${mmfile}\" /rewrap" \
+         quit

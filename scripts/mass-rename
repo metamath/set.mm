@@ -1,0 +1,171 @@
+#!/bin/sh
+
+# Mass rename of mmfile (set.mm) file.  Each line from
+# standard input has one of these forms (blank lines are ignored):
+# - # COMMENT
+# - LINE_NUMBER # COMMENT
+# - LINE_NUMBER OLD_NAME NEW_NAME $[aep] OTHER_INFO
+# - OLD_NAME NEW_NAME $[aep] OTHER_INFo
+
+# For every non-comment line this program does a mass rename of the database.
+
+# We print, on standard output, text suitable for inserting near the start
+# of the database to note renames. This text is of the form:
+# TODAYS_DATE OLD_NAME NEW_NAME
+
+# Beware if "old_name" is an ordinary English word!
+# We will rename it!
+
+set -eu
+
+mmfile='set.mm'
+rename_html='true' # Do the renames in the HTML files?
+rewrap='true' # Do we rewrap the database (mmfile)?
+today="$(date '+%d-%b-%y')"
+reason='Rename' # Stub reason so people can replace it later.
+
+usage () {
+  echo 'Usage: mass-rename [--database MMDATABASE=set.mm] [--today DATE]' >&2
+  echo '         [--reason R] [--skip-html] [--skip-rewrap] RENAME_LIST' >&2
+  echo 'RENAME_LIST is a file with the renames. Each nonblank line says:' >&2
+  echo ' # COMMENT' >&2
+  echo ' LINE_NUMBER # COMMENT' >&2
+  echo ' LINE_NUMBER OLD_NAME NEW_NAME $[aep] OTHER_INFO' >&2
+  echo ' OLD_NAME NEW_NAME $[aep] OTHER_INFo' >&2
+  echo 'where COMMENT lines (the first two) are ignored.' >&2
+}
+
+while [ "$#" -gt 0 ] ; do
+  case "$1" in
+    --database)
+      shift
+      mmfile="$1"
+      shift ;;
+    --today)
+      shift
+      today="$1"
+      shift ;;
+    --reason)
+      shift
+      reason="$1"
+      shift ;;
+    --skip-html) # If set, we don't do renames in the HTML files
+      shift
+      rename_html='false' ;;
+    --skip-rewrap) # If set, don't rewrap the database (mmfile)
+      shift
+      rewrap='false' ;;
+    --help)
+      usage
+      exit 0 ;;
+    --)
+      shift
+      break ;;
+    --*)
+      echo 'Unknown option.' >&2
+      exit 1 ;;
+    *) break ;;
+  esac
+done
+
+if [ "$#" -ne 1 ] ; then
+  echo 'Requires 1 non-option arguments (the list of renames)' >&2
+  usage
+  exit 1
+fi
+
+if ! command -v tac > /dev/null ; then
+  echo 'Requires "tac" command to be installed' >&2
+  exit 1
+fi
+
+if ! command -v metamath > /dev/null ; then
+  echo 'Requires "metamath" command to be installed' >&2
+  exit 1
+fi
+
+# Remove leading 0 in date; later formatting will use a space if needed
+today="${today#0}"
+
+input_file="$1"
+
+echo 'Processing renames...' >&2
+
+# Skip the list of "past renames" so we don't accidentally
+# change any historical info.
+range='/^ *[a-zA-Z0-9._-]+ \$[apef] /,$'
+
+is_aep () {
+  [ "$1" = '$a' ] || [ "$1" = '$e' ] || [ "$1" = '$p' ]
+}
+
+rm -f ,dated-renames ,dated-renames.unreversed
+
+# Process renames. "type" is type of assertion ($[aep]), NOT a typecode.
+
+while read -r linenum old new type rest
+do
+  if [ "$linenum" = '' ] ; then # Skip blank line
+    continue
+  fi
+  case "$linenum" in # Skip line beginning with #
+    (\#*) continue ;;
+  esac
+  case "$old" in # Skip "old" label beginning with #
+    (\#*) continue ;;
+  esac
+  if ! is_aep "$type" ; then
+    # We don't have line_number old_name new_name $[aep] other_info
+    # Maybe it is: old_name new_name $[aep] other_info
+    if ! is_aep "$new" ; then
+      echo "Error: assertion type is $new in line beginning with $linenum" >&2
+      exit 1
+    fi
+    type="$new"
+    new="$old"
+    old="$linenum"
+    linenum=0
+  fi
+  # Output
+  if [ "$type" = '$e' ] ; then
+    info="${reason} (\$e)"
+  else
+    info="$reason"
+  fi
+  msg="$(printf '%9s %-9s %-11s %-s' "$today" "$old" "$new" "$info")"
+  printf '%s\n' "$msg"
+  if [ "$type" != '$e' ]; then
+    printf '%s\n' "$msg" >> ,dated-renames.unreversed
+  fi
+  regexed_old="$(printf '%s' "$old" | sed -e 's/\./\\./g')"
+  sed -E -e "${range}"'s/(^| )'"${regexed_old}"'( |$)/\1'"$new"'\2/g' \
+    < "$mmfile" > "$mmfile.tmp"
+  mv "$mmfile.tmp" "$mmfile"
+  if [ "$rename_html" = 'true' ] ; then
+    for f in $(git ls-files | grep -- '^mm.*\.html')
+    do
+      sed -E -e "s/ ${regexed_old}( |$)/ $new /g" -e 's/ $//' \
+          -e "s/<A HREF=\"${old}.html\">${old}<\/A>/<A HREF=\"${new}.html\">${new}<\/A>/ig" \
+          < "$f" > "$f.tmp"
+      mv "$f.tmp" "$f"
+    done
+  fi
+done < "$input_file"
+
+echo >&2
+echo >&2
+echo '=== Renames in reverse order (skipping $e) ===' >&2
+
+tac < ,dated-renames.unreversed > ,dated-renames
+cat ,dated-renames
+
+# Rewrap the format to clean it up.
+if [ "$rewrap" = 'true' ]; then
+  scripts/rewrap "$mmfile"
+fi
+
+# Verify database to ensure that everything is okay
+metamath "read $mmfile" 'verify proof *' 'verify markup * /top_date_skip' quit
+
+echo 'File ,dated-renames has all the dates + renames listed above' >&2
+echo 'Reminder: You may need to hand-wrap $a / $p / $e expressions.' >&2

@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Generate and show HTML of theorem $1 in source file $2 ($2 default "set.mm")
+if [ "$#" -lt 0 ] ; then
+  echo 'Must have at least one argument' >&2
+  exit 1
+fi
+
+theorem="$1"
+source="${2:-set.mm}"
+
+metamath "read ${source}" "show statement ${theorem} /alt_html" quit
+
+# Figure out how to invoke the current user's browser.
+# See: https://dwheeler.com/essays/open-files-urls.html
+viewer=FAIL
+for possibility in xdg-open gnome-open cygstart start open ; do
+  if command -v "$possibility" >/dev/null 2>&1 ; then
+    viewer="$possibility"
+    break
+  fi
+done
+if [ "$viewer" = FAIL ] ; then
+  echo 'No viewer found.' >&2
+  exit 1
+fi
+
+$viewer "${theorem}.html"

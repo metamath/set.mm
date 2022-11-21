@@ -1,0 +1,19 @@
+#!/bin/sh
+# Output caption information given Metamath 100 input
+# Problem: Metamath 100 sometimes uses old names, we may need to
+# update things
+
+tab="$(printf '\t')"
+sep='|'
+
+sed -e"s/${tab}/${sep}/g" ,mm100 | \
+while IFS="$sep" read -r date sequence tie item name author url misc; do
+  label=$(printf '%s' "$url" | sed -e 's/.*\///' -e 's/\.html$//')
+  match=$(grep -E "/$label[|][^|]*$" changes-sorted.log | head -n 1)
+  timestamp=$(printf '%s' "$match" | cut -d '|' -f 1)
+  author_match=$(printf '%s' "$match" | cut -d '|' -f 2)
+  printf '%s\n' "$timestamp|Proved $label - $name ($author), Metamath 100 #${item}"
+  if [ "$author" != "$author_match" ]; then
+    echo "WARNING: Author does not match: $author_match"
+  fi
+done

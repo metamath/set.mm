@@ -1,0 +1,50 @@
+#!/bin/sh
+
+# Verify mmfile $1 (default "set.mm") using mmj2
+
+extra=''
+setparser='' # Set to mmj.verify.LRParser for rigorous parse check
+
+while [ $# -gt 0 ] ; do
+  case "$1" in
+    --extra) shift ; extra="$1"; shift ;; # Extra command
+    --setparser) shift ; setparser="$1"; shift ;;
+    --*) echo "Error, unknown option $1" ; exit 1 ;;
+    *) break ;;
+  esac
+done
+
+# A common "extra" might be this to generate discouraged.new:
+# RunMacro,showDiscouraged,discouraged.new
+
+mmfile="${1:-'set.mm'}"
+runparamsfile="runparams$$.txt"
+
+# Generate commands to run.
+echo "LoadFile,$mmfile" > "$runparamsfile"
+if [ -n "$setparser" ] ; then
+  echo "SetParser,$setparser" >> "$runparamsfile"
+fi
+cat >> "$runparamsfile" << RUNPARAMS
+VerifyProof,*
+Parse,*
+RUNPARAMS
+
+# Append $extra to the run parameters if we have it.
+if [ -n "$extra" ] ; then
+  printf '%s\n' "${extra}" >> runparams$$.txt
+fi
+
+# Run verify command, tee results to a separate file so we can examine it.
+java -Xms512M -Xmx1024M -jar mmj2.jar runparams$$.txt | tee mmj2-$$.log
+
+# Get status, which is false (nonzero) if an error or warning was found.
+! egrep 'Exception|.-..-[0-9]{4}' < mmj2-$$.log | \
+  egrep -qv 'I-UT-0015|I-MA-0001' > /dev/null
+result=$?
+
+# Remove temp files, or we'll have lots of useless files
+rm mmj2-$$.log runparams$$.txt
+
+# Return result, which is false (nonzero) if there was a problem.
+exit "$result"

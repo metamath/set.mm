@@ -1,0 +1,38 @@
+#!/bin/sh
+# Creates a file which lists all the theorems ($p-statements) of the
+# mmfile argument.  Each line is a label with two spaces in front.
+# First parameter is the mmfile (default set.mm).
+# Second parameter is the output file (default 1.tmp).
+# Third parameter is the first theorem to list (default first theorem of mmfile).
+# Fourth parameter is the last theorem to list (default last theorem of mmfile).
+# This can be a useful step to take before using scripts/min.cmd.
+
+mmfile="${1:-set.mm}"
+output="${2:-1.tmp}"
+
+metamath "read \"${mmfile}\"" \
+         'set scroll continuous' \
+         'open log 0.tmp' \
+         'show labels * /linear' \
+         'close log' \
+         quit > /dev/null
+
+grep -E ' \$p' < 0.tmp | \
+  sed -E -e 's/ \$p//' -e 's/^[0-9]+ /  /' > "${output}"
+
+if [ $# -gt 2 ]; then
+  # GNU and BSD sed handle -i differently
+  if sed --version > /dev/null 2>&1; then
+    sedflags='-i -n'
+  else
+    sedflags='-i "" -n'
+  fi
+
+  if [ $# -gt 3 -a -n "$3" -a -n "$4" ]; then
+    sed ${sedflags} "/^  $3\$/,/^  $4\$/p" "${output}"
+  elif [ -n "$3" ]; then
+    sed ${sedflags} "/^  $3\$/,\$p" "${output}"
+  elif [ $# -gt 3 -a -n "$4" ]; then
+    sed ${sedflags} "1,/^  $4\$/p" "${output}"
+  fi
+fi

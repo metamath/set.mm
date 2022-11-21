@@ -1,0 +1,2896 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+
+<!-- improve mobile display -->
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+
+<META HTTP-EQUIV="Content-Type"
+ CONTENT="text/html; charset=iso-8859-1">
+ <TITLE>Hilbert Space Explorer Home Page</TITLE>
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+
+<STYLE TYPE="text/css">
+<!--
+/* Math symbol image will be shifted down 4 pixels to align with normal
+  text for compatibility with various browsers.  The old ALIGN=TOP for
+  math symbol images did not align in all browsers and should be deleted.
+  All other images must override this shift with STYLE="margin-bottom:0px".
+  (2-Oct-2015 nm) */
+img { margin-bottom: -4px }
+-->
+</STYLE>
+
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" STYLE="padding: 0px 8px">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP><A HREF="../index.html"><IMG SRC="atomic.gif"
+      BORDER=0
+      ALT="Metamath Home"
+      TITLE="Metamath Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER VALIGN=TOP><FONT SIZE="+3"
+      COLOR="#006633"><B>Hilbert Space Explorer Home Page</B></FONT>
+    </TD>
+
+    <TD NOWRAP ALIGN=RIGHT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif> <A HREF="chil.html">First &gt;</A><BR><A
+      HREF="cdj3i.html">Last &gt;</A></FONT>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD COLSPAN=3 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+        &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;MPE Home&nbsp; &gt;
+      &nbsp;<A HREF="mmtheorems.html">Th. List</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmrecent.html">Recent</A>
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+
+<HR NOSHADE SIZE=1>
+
+<B><FONT COLOR="#006633">Hilbert Space
+Explorer</FONT></B>&nbsp;&nbsp;&nbsp;
+
+
+<TABLE>
+<TR><TD ROWSPAN=2>
+
+<!--
+The motivation for our study of quantum logic in the <A
+HREF="">Quantum Logic Explorer</A> derives from the fact that the set
+of closed subspaces of a Hilbert space, called <IMG SRC='_scrch.gif'
+WIDTH=22 HEIGHT=19 ALT='CH'>, obeys the properties of an
+orthomodular lattice.
+-->
+
+<I>Hilbert space</I> (<A
+HREF="http://en.wikipedia.org/wiki/Hilbert_space">Wikipedia</A>
+[external],
+<!--
+<A
+HREF="http://planetmath.org/encyclopedia/HilbertSpace.html">PlanetMath</A>
+[external],
+-->
+<A
+HREF="http://mathworld.wolfram.com/HilbertSpace.html">MathWorld</A>
+[external]) is a generalization of finite-dimensional
+vector spaces to include vector spaces with infinite
+dimensions.  It provides a
+foundation of quantum mechanics, and there is a strong physical and
+philosophical motivation to study its properties.  For example, the
+properties of Hilbert space ultimately determine what kinds of
+operations are theoretically possible in quantum computation.
+
+</TD><TD><!-- <A HREF="#calcite"> --><IMG SRC='_calcite.jpg'
+WIDTH=166 HEIGHT=113
+ALT="Calcite" BORDER=0 STYLE="margin-bottom:0px"><!-- </A> --></TD>
+</TR><TR><TD ALIGN=CENTER><FONT SIZE=-1><A
+HREF="#calcite">Calcite</A></FONT></TD></TR>
+</TABLE>
+
+<HR NOSHADE SIZE=1>
+<TABLE BORDER=0 WIDTH="100%"><TR><TD ROWSPAN=2>
+<B><FONT COLOR="#006633">Contents of this page</FONT></B>
+
+<MENU>
+<LI> <A HREF="#follow">How to Follow the Proofs</A></LI>
+<LI> <A HREF="#symbol">Symbol List</A>
+
+<!--
+<FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Revised</FONT> <FONT
+SIZE=-1><I>10-Sep-2009</I></FONT>
+-->
+
+</LI>
+<LI> <A HREF="#approaches">Two Approaches to Hilbert Space</A>
+
+</LI>
+<LI> <A HREF="#axioms">The Axioms</A>
+
+<FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Revised</FONT> <FONT
+SIZE=-1><I>10-Sep-2009</I></FONT>
+
+</LI>
+<LI> <A HREF="#definitions">Some Definitions</A></LI>
+<LI> <A HREF="#theorems">Some Theorems</A></LI>
+
+<!--
+<LI> <A HREF="#choice">The Axiom of Choice</A></LI>
+-->
+
+<LI> <A HREF="#quantum">Quantum Logic</A>
+
+<!--
+<FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Revised</FONT> <FONT
+SIZE=-1><I>20-Feb-2006</I></FONT>
+-->
+
+</LI>
+<LI> <A HREF="#next">What Next? (Orthoarguesian Law, etc.)</A></LI>
+<!--
+<LI> <A HREF="#state">States on Orthomodular Lattices</A></LI>
+-->
+<LI> <A HREF="#ref">References</A></LI>
+</MENU>
+
+</TD><TD VALIGN=TOP>
+<B><FONT COLOR="#006633">Related pages</FONT></B>
+
+<MENU>
+<LI> <A HREF="mmtheorems.html">Table of Contents and Theorem List</A></LI>
+<LI> <A HREF="mmbiblio.html">Bibliographic Cross-Reference</A></LI>
+<LI><A HREF="mmset.html">Metamath Proof Explorer Home Page</A></LI>
+<LI><A HREF="../qleuni/mmql.html">Quantum Logic Explorer Home Page</A></LI>
+</MENU>
+</TD></TR>
+
+<TR><TD>
+
+&nbsp;
+<!--
+<P><CENTER><FONT COLOR="#006633"><I>The lyf so short,<BR>
+the craft so long to lerne
+</I><BR> &mdash;Chaucer</FONT></CENTER>
+-->
+
+</TD></TR>
+
+
+
+</TABLE>
+
+
+<HR NOSHADE SIZE=1><A NAME="follow"></A><B><FONT COLOR="#006633">How to
+Follow the Proofs</FONT></B>&nbsp;&nbsp;&nbsp; We develop Hilbert space
+theory as an extension of ZFC set theory, and many steps in various
+proofs use results from set theory.  To understand how to read the
+proofs, see <A HREF="mmset.html#proofs">How Proofs Work</A> on the
+Metamath Proof Explorer Home Page.
+
+
+<HR NOSHADE SIZE=1><A NAME="symbol"></A><B><FONT COLOR="#006633">Symbol
+List</FONT></B>&nbsp;&nbsp;&nbsp;
+
+The chart below provides a quick reference for the new symbols
+introduced in the Hilbert Space Explorer.  The five symbols marked
+"primitive" are postulated to have the properties specified by the <A
+HREF="#axioms">axioms</A>, and the rest are defined in terms of them.
+The complete list of all syntax elements, axioms, and definitions used
+by the Hilbert Space Explorer pages, including those for the underlying
+logic and ZFC set theory, is provided in the <A
+HREF="mmdefinitions.html#startext">Definition List</A> (900K).
+
+<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<CAPTION><B>Symbol List for Hilbert Space</B></CAPTION>
+
+<TR><TH>Symbol</TH>
+<TH>Description</TH>
+<TH>Link to Definition</TH></TR>
+
+<TR><TD><IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'></TD>
+<TD>Hilbert space base set</TD>
+<TD>(primitive)</TD></TR>
+
+<TR><TD><IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'></TD>
+<TD>vector addition</TD>
+<TD>(primitive)</TD></TR>
+
+<TR><TD><IMG SRC='_cds.gif' WIDTH=9 HEIGHT=19 ALT='.s'></TD>
+<TD>scalar multiplication</TD>
+<TD>(primitive)</TD></TR>
+
+<TR><TD><IMG SRC='_0vh.gif' WIDTH=14 HEIGHT=19 ALT='0h'></TD>
+<TD>zero vector</TD>
+<TD>(primitive)</TD></TR>
+
+<TR><TD><IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'></TD>
+<TD>inner (scalar) product</TD>
+<TD>(primitive)</TD></TR>
+
+<TR><TD><IMG SRC='_mvh.gif' WIDTH=16 HEIGHT=19 ALT='-h'></TD>
+<TD>vector subtraction</TD>
+<TD><A HREF="df-hvsub.html">df-hvsub</A></TD></TR>
+
+<TR><TD><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'></TD>
+<TD>norm of a vector</TD>
+<TD><A HREF="df-hnorm.html">df-hnorm</A></TD></TR>
+
+<TR><TD><IMG SRC='_cauchy.gif' WIDTH=47 HEIGHT=19 ALT='Cauchy'></TD>
+<TD>set of Cauchy sequences</TD>
+<TD><A HREF="df-hcau.html">df-hcau</A></TD></TR>
+
+<TR><TD><IMG SRC='_squigv.gif' WIDTH=21 HEIGHT=19 ALT='~~&gt;v'></TD>
+<TD>convergence relation</TD>
+<TD><A HREF="df-hlim.html">df-hlim</A></TD></TR>
+
+<TR><TD><IMG SRC='_sh.gif' WIDTH=24 HEIGHT=19 ALT='SH'></TD>
+<TD>set of subspaces</TD>
+<TD><A HREF="df-sh.html">df-sh</A></TD></TR>
+
+<TR><TD><IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'></TD>
+<TD>set of closed subspaces</TD>
+<TD><A HREF="df-ch.html">df-ch</A></TD></TR>
+
+<TR><TD><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'></TD>
+<TD>orthocomplement</TD>
+<TD><A HREF="df-oc.html">df-oc</A></TD></TR>
+
+<TR><TD><IMG SRC='_plh.gif' WIDTH=24 HEIGHT=19 ALT='+H'></TD>
+<TD>subspace sum</TD>
+<TD><A HREF="df-shs.html">df-shs</A></TD></TR>
+
+<TR><TD><IMG SRC='_span.gif' WIDTH=31 HEIGHT=19 ALT='span'></TD>
+<TD>subspace span</TD>
+<TD><A HREF="df-span.html">df-span</A></TD></TR>
+
+<TR><TD><IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'></TD>
+<TD>join</TD>
+<TD><A HREF="df-chj.html">df-chj</A></TD></TR>
+
+<TR><TD><IMG SRC='_bigveeh.gif' WIDTH=23 HEIGHT=19 ALT='\/H'></TD>
+<TD>supremum</TD>
+<TD><A HREF="df-chsup.html">df-chsup</A></TD></TR>
+
+<TR><TD><IMG SRC='_0h.gif' WIDTH=20 HEIGHT=19 ALT='0H'></TD>
+<TD>zero subspace</TD>
+<TD><A HREF="df-ch0.html">df-ch0</A></TD></TR>
+
+<TR><TD><IMG SRC='_cch.gif' WIDTH=23 HEIGHT=19 ALT='C_H'></TD>
+<TD>commutes relation</TD>
+<TD><A HREF="df-cm.html">df-cm</A></TD></TR>
+
+<TR><TD><IMG SRC='_plop.gif' WIDTH=25 HEIGHT=19 ALT='+op'></TD>
+<TD>operator sum;<BR>definition of "operator"</TD>
+<TD><A HREF="df-hosum.html">df-hosum</A></TD></TR>
+
+<TR><TD><IMG SRC='_cdop.gif' WIDTH=16 HEIGHT=19 ALT='.op'></TD>
+<TD>operator scalar product</TD>
+<TD><A HREF="df-homul.html">df-homul</A></TD></TR>
+
+<TR><TD><IMG SRC='_mop.gif' WIDTH=23 HEIGHT=19 ALT='-op'></TD>
+<TD>operator difference</TD>
+<TD><A HREF="df-hodif.html">df-hodif</A></TD></TR>
+
+<TR><TD><IMG SRC='_plfn.gif' WIDTH=24 HEIGHT=19 ALT='+fn'></TD>
+<TD>functional sum;<BR>definition of "functional"</TD>
+<TD><A HREF="df-hfsum.html">df-hfsum</A></TD></TR>
+
+<TR><TD><IMG SRC='_cdfn.gif' WIDTH=15 HEIGHT=19 ALT='.fn'></TD>
+<TD>functional scalar product</TD>
+<TD><A HREF="df-hfmul.html">df-hfmul</A></TD></TR>
+
+<!--
+<TR><TD><IMG SRC='_0op.gif' WIDTH=21 HEIGHT=19 ALT='0op'></TD>
+-->
+<TR><TD>0<SUB>hop</SUB> </TD>
+<TD>zero operator</TD>
+<TD><A HREF="df-h0op.html">df-h0op</A></TD></TR>
+
+<TR><TD><IMG SRC='_iop.gif' WIDTH=18 HEIGHT=19 ALT='iop'></TD>
+<TD>identity operator</TD>
+<TD><A HREF="df-iop.html">df-iop</A></TD></TR>
+
+
+<TR><TD>proj</TD>
+<TD>projection operator (projector)</TD>
+<TD><A HREF="df-pj.html">df-pj</A></TD></TR>
+
+
+<TR><TD>norm<SUB>op</SUB></TD>
+<TD>norm of an operator</TD>
+<TD><A HREF="df-nmop.html">df-nmop</A></TD></TR>
+
+<TR><TD>ConOp</TD>
+<TD>set of continuous operators</TD>
+<TD><A HREF="df-cnop.html">df-cnop</A></TD></TR>
+
+<TR><TD>LinOp</TD>
+<TD>set of linear operators</TD>
+<TD><A HREF="df-lnop.html">df-lnop</A></TD></TR>
+
+<TR><TD>BndLinOp</TD>
+<TD>set of bounded linear operators</TD>
+<TD><A HREF="df-bdop.html">df-bdop</A></TD></TR>
+
+<TR><TD>UniOp</TD>
+<TD>set of unitary operators</TD>
+<TD><A HREF="df-unop.html">df-unop</A></TD></TR>
+
+<TR><TD>HrmOp</TD>
+<TD>set of Hermitian operators</TD>
+<TD><A HREF="df-hmop.html">df-hmop</A></TD></TR>
+
+<TR><TD>norm<SUB>fn</SUB></TD>
+<TD>norm of a functional</TD>
+<TD><A HREF="df-nmfn.html">df-nmfn</A></TD></TR>
+
+<TR><TD>null</TD>
+<TD>null space of a functional</TD>
+<TD><A HREF="df-nlfn.html">df-nlfn</A></TD></TR>
+
+<TR><TD>ConFn</TD>
+<TD>set of continuous functionals</TD>
+<TD><A HREF="df-cnfn.html">df-cnfn</A></TD></TR>
+
+<TR><TD>LinFn</TD>
+<TD>set of linear functionals</TD>
+<TD><A HREF="df-lnfn.html">df-lnfn</A></TD></TR>
+
+<TR><TD>adj<SUB>h</SUB></TD>
+<TD>adjoint of an operator</TD>
+<TD><A HREF="df-adjh.html">df-adjh</A></TD></TR>
+
+<TR><TD>bra</TD>
+<TD>Dirac "bra" of a vector</TD>
+<TD><A HREF="df-bra.html">df-bra</A></TD></TR>
+
+<TR><TD><IMG SRC='_leop.gif' WIDTH=24 HEIGHT=19 ALT='<_op'></TD>
+<TD>ordering relation for positive operators</TD>
+<TD><A HREF="df-leop.html">df-leop</A></TD></TR>
+
+<TR><TD>ketbra</TD>
+<TD>Dirac "ket-bra" (outer product) of two vectors</TD>
+<TD><A HREF="df-kb.html">df-kb</A></TD></TR>
+
+<TR><TD>eigvec</TD>
+<TD>eigenvectors of an operator</TD>
+<TD><A HREF="df-eigvec.html">df-eigvec</A></TD></TR>
+
+<TR><TD>eigval</TD>
+<TD>eigenvalue of an eigenvector</TD>
+<TD><A HREF="df-eigval.html">df-eigval</A></TD></TR>
+
+
+<TR><TD><IMG SRC='clambda.gif' WIDTH=11 HEIGHT=19 ALT='Lambda'></TD>
+<TD>spectrum of an operator</TD>
+<TD><A HREF="df-spec.html">df-spec</A></TD></TR>
+
+<TR><TD><IMG SRC='_states.gif' WIDTH=40 HEIGHT=19 ALT='States'></TD>
+<TD>set of states</TD>
+<TD><A HREF="df-st.html">df-st</A></TD></TR>
+
+
+<TR><TD>CHStates</TD>
+<TD>set of (Mayet's) Hilbert-space-valued states</TD>
+<TD><A HREF="df-hst.html">df-hst</A></TD></TR>
+
+
+<TR><TD><IMG SRC='_atoms.gif' WIDTH=40 HEIGHT=19 ALT='Atoms'></TD>
+<TD>set of atoms</TD>
+<TD><A HREF="df-at.html">df-at</A></TD></TR>
+
+<TR><TD><IMG SRC='lessdot.gif' WIDTH=11 HEIGHT=19 ALT='&lt;o'></TD>
+<TD>covering relation</TD>
+<TD><A HREF="df-cv.html">df-cv</A></TD></TR>
+
+<TR><TD><IMG SRC='_mh.gif' WIDTH=27 HEIGHT=19 ALT='MH'></TD>
+<TD>modular pair relation</TD>
+<TD><A HREF="df-md.html">df-md</A></TD></TR>
+
+<TR><TD><IMG SRC='_mhast.gif' WIDTH=27 HEIGHT=19 ALT='MH*'></TD>
+<TD>dual modular pair relation</TD>
+<TD><A HREF="df-dmd.html">df-dmd</A></TD></TR>
+
+</TABLE></CENTER>
+
+<P>
+
+<P><HR NOSHADE SIZE=1><A NAME="approaches"></A><B><FONT
+COLOR="#006633">Two Approaches to Hilbert
+Space</FONT></B>&nbsp;&nbsp;&nbsp; There are several ways to develop the
+theory of Hilbert spaces.  The purest way, philosophically, is to define
+the class of all Hilbert spaces and use only the axioms of ZFC set
+theory to derive its properties.  That way we need to assume only the
+axioms of ZFC (which in principle is all that is needed for essentially
+all of mathematics, including the theory of Hilbert spaces).  This is
+done in the Metamath Proof Explorer with definition <A
+HREF="df-hl.html">df-hl</A>.
+
+<P>However, we chose separate axioms for the Hilbert Space Explorer for
+several reasons.  A practical problem with the pure ZFC approach is that
+theorems becomes somewhat awkward to state and prove, since they usually
+need additional hypotheses.  Compare, for example, the ZFC-derived <A
+HREF="hlcom.html">hlcom</A> with the Hilbert Space Explorer axiom <A
+HREF="ax-hvcom.html">ax-hvcom</A>.  Another advantage for a newcomer is that
+the Hilbert Space Explorer states outright all of its axioms, so there
+is nothing else to learn (aside from standard set theory tools to
+manipulate them).  In the Metamath Proof Explorer, on the other hand,
+one needs to become familiar with the hierarchy of groups, topologies,
+vector spaces, metric spaces, normed vector spaces, and Banach spaces
+that leads to Hilbert spaces.
+
+<P> If we want to use the Hilbert Space Explorer with any <I>fixed</I>
+Hilbert space, such as the set of complex numbers (which, as it turns
+out, is an example of a Hilbert space - see theorem <A
+HREF="cnhl.html">cnhl</A>), a simple change to the axiomatization will
+convert all theorems in the Hilbert Space Explorer to pure ZFC theorems.
+A description of how this can be done is given in the comment for axiom
+<A HREF="ax-hilex.html">ax-hilex</A>.  On the other hand, if we want to prove
+theorems involving relationships between Hilbert spaces, the Hilbert
+Space Explorer may not be not suitable, but rewriting its proofs for the
+general ZFC approach as needed is relatively straightforward.
+(Actually, many such theorems can still be done in the Hilbert Space
+Explorer itself using subspaces, each of which acts like a stand-alone
+Hilbert Space.)
+
+
+<P><HR NOSHADE SIZE=1><A NAME="axioms"></A><B><FONT COLOR="#006633">The
+Axioms</FONT></B>&nbsp;&nbsp;&nbsp; In our separately axiomatized
+approach of the Hilbert Space Explorer,
+we postulate the existence of a new primitive fixed object, <IMG
+SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> (<A
+HREF="chil.html">chil</A>), called the
+Hilbert space base set, and add to ZFC set
+theory explicit axioms for the properties of <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'>.
+The members of
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'>
+are called vectors, and they have the same
+properties as the vectors you normally find in any linear algebra
+textbook, except that the dimension (the number of basis vectors) is not
+specified and may be infinite.  In addition to
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'>,
+we postulate
+the existence and properties of 4 more objects:  a fixed zero vector
+<IMG SRC='_0vh.gif' WIDTH=14 HEIGHT=19 ALT='0h'>
+(<A HREF="c0v.html">c0v</A>); the operations of vector
+addition
+<IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'>
+(<A HREF="cva.html">cva</A>) and scalar
+multiplication
+<IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'>
+(<A HREF="csm.html">csm</A>); and finally, an inner product operation
+<IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'>
+(<A HREF="csp.html">csp</A>).  The five objects
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'>,
+<IMG SRC='_0vh.gif' WIDTH=14 HEIGHT=19 ALT='0h'>,
+<IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'>,
+<IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'>,
+and
+<IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'>
+are the complete
+set of objects needed to describe Hilbert space.  We will encounter
+other objects as well, but all of them are defined either in terms of these
+five, or as specific sets of set theory.  For example, the object
+<IMG SRC='bbc.gif' WIDTH=12 HEIGHT=19 ALT='CC'>
+(the set of complex numbers <A HREF="cc.html">cc</A>) is
+defined as a specific set of set theory.
+
+<P>The page for each axiom below is accompanied by a precise breakdown
+of its syntax.  You can break the
+syntax down into as much detail as you want by using the hyperlinks
+in the syntax breakdown chart.  Note our use of the
+notation &quot;<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'>
+<IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'>
+<IMG SRC='_cb.gif'
+WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'>&quot; instead of the more common notation &quot;<IMG
+SRC='langle.gif' WIDTH=4 HEIGHT=19 ALT='&lt;.' ><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='comma.gif'
+WIDTH=4 HEIGHT=19 ALT=','><IMG SRC='_cb.gif' WIDTH=12
+HEIGHT=19 ALT='B'><IMG SRC='rangle.gif' WIDTH=4 HEIGHT=19
+ALT='&gt;.' >&quot; for inner products; the latter would
+conflict with our notation for ordered pairs <A HREF="cop.html">cop</A>.
+
+
+<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<CAPTION><B>Axioms for Hilbert Space</B></CAPTION>
+
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hilex.html">ax-hilex</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
+SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='in.gif'
+WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='cv.gif' WIDTH=12 HEIGHT=19
+ALT='V'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hfvadd.html">ax-hfvadd</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
+SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'> <IMG SRC='colon.gif'
+WIDTH=4 HEIGHT=19 ALT=':'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG
+SRC='times.gif' WIDTH=9 HEIGHT=19 ALT='X.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='longrightarrow.gif' WIDTH=23 HEIGHT=19 ALT='--&gt;'
+ALIGN=TOP><IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hvcom.html">ax-hvcom</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif'
+WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19
+ALT='+h'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP> <IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'> <IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hvass.html">ax-hvass</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'> <IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'> <IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'
+ALIGN=TOP> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12
+HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP> <IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'> <IMG
+SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hv0cl.html">ax-hv0cl</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
+SRC='_0vh.gif' WIDTH=14 HEIGHT=19 ALT='0h'> <IMG SRC='in.gif'
+WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'
+ALIGN=TOP></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hvaddid.html">ax-hvaddid</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='to.gif'
+WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'> <IMG SRC='_0vh.gif'
+WIDTH=14 HEIGHT=19 ALT='0h'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hfvmul.html">ax-hfvmul</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
+SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'> <IMG SRC='colon.gif'
+WIDTH=4 HEIGHT=19 ALT=':'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='bbc.gif' WIDTH=12 HEIGHT=19 ALT='CC'> <IMG
+SRC='times.gif' WIDTH=9 HEIGHT=19 ALT='X.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='longrightarrow.gif' WIDTH=23 HEIGHT=19 ALT='--&gt;'
+ALIGN=TOP><IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hvmulid.html">ax-hvmulid</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='to.gif'
+WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ALT='('><IMG SRC='1.gif' WIDTH=7 HEIGHT=19 ALT='1'> <IMG
+SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'> <IMG SRC='_ca.gif'
+WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hvmulass.html">ax-hvmulass</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbc.gif' WIDTH=12
+HEIGHT=19 ALT='CC'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'
+ALIGN=TOP> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbc.gif' WIDTH=12
+HEIGHT=19 ALT='CC'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'
+ALIGN=TOP> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT='x.'> <IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'> <IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'
+ALIGN=TOP> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12
+HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP> <IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'> <IMG
+SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hvdistr1.html">ax-hvdistr1</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbc.gif' WIDTH=12
+HEIGHT=19 ALT='CC'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'
+ALIGN=TOP> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif'
+WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19
+ALT='.h'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='_pvh.gif' WIDTH=18
+HEIGHT=19 ALT='+h'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19
+ALT='C'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12
+HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_cdh.gif' WIDTH=9
+HEIGHT=19 ALT='.h'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'> <IMG
+SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hvdistr2.html">ax-hvdistr2</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbc.gif' WIDTH=12
+HEIGHT=19 ALT='CC'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'
+ALIGN=TOP> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbc.gif' WIDTH=12
+HEIGHT=19 ALT='CC'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'
+ALIGN=TOP> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT='+'> <IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'> <IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'
+ALIGN=TOP> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12
+HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_cdh.gif' WIDTH=9
+ HEIGHT=19 ALT='.h'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP> <IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'> <IMG
+SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hvmul0.html">ax-hvmul0</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='to.gif'
+WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ALT='('><IMG SRC='0.gif' WIDTH=8 HEIGHT=19 ALT='0'> <IMG
+SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'> <IMG SRC='_ca.gif'
+WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='_0vh.gif' WIDTH=14 HEIGHT=19 ALT='0h'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hfi.html">ax-hfi</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
+SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'> <IMG SRC='colon.gif'
+WIDTH=4 HEIGHT=19 ALT=':'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG
+SRC='times.gif' WIDTH=9 HEIGHT=19 ALT='X.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='longrightarrow.gif' WIDTH=23 HEIGHT=19 ALT='--&gt;'
+ALIGN=TOP><IMG SRC='bbc.gif' WIDTH=12 HEIGHT=19 ALT='CC'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-his1.html">ax-his1</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif'
+WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19
+ALT='.ih'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='ast.gif' WIDTH=7 HEIGHT=19 ALT='*'
+ALIGN=TOP><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cb.gif' WIDTH=12
+HEIGHT=19 ALT='B'> <IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'
+ALIGN=TOP> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-his2.html">ax-his2</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'> <IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'> <IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'
+ALIGN=TOP> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12
+HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_cdih.gif'
+WIDTH=13 HEIGHT=19 ALT='.ih'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19
+ALT='C'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT='+'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP> <IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'> <IMG
+SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-his3.html">ax-his3</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbc.gif' WIDTH=12
+HEIGHT=19 ALT='CC'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'
+ALIGN=TOP> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'> <IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'> <IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'
+ALIGN=TOP> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12
+HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT='x.'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP> <IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'> <IMG
+SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-his4.html">ax-his4</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'>
+<IMG SRC='ne.gif' WIDTH=12 HEIGHT=19 ALT='=/='> <IMG SRC='_0vh.gif'
+WIDTH=14 HEIGHT=19 ALT='0h'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='0.gif' WIDTH=8 HEIGHT=19 ALT='0'> <IMG SRC='lt.gif'
+WIDTH=11 HEIGHT=19 ALT='&lt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'> <IMG SRC='_ca.gif'
+WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-hcompl.html">ax-hcompl</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cf.gif' WIDTH=13 HEIGHT=19
+ALT='F'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='_cauchy.gif' WIDTH=47 HEIGHT=19 ALT='Cauchy'> <IMG
+SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='exists.gif'
+WIDTH=9 HEIGHT=19 ALT='E.'><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19
+ALT='x'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='_cf.gif'
+WIDTH=13 HEIGHT=19 ALT='F'> <IMG SRC='_squigv.gif' WIDTH=21 HEIGHT=19
+ALT='~~&gt;v'> <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+
+</TABLE></CENTER>
+
+<P><I>Comments on the axioms.</I> The first axiom just says that the
+primitive class
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'>
+ exists (is a member of the universe of sets <I>V</I>).
+The next 11 axioms are the axioms for any vector space with
+an unspecified dimension; they are the same as those you would find in
+any linear algebra book, except for the notation and possibly their
+precise form.
+
+<P>The next 5 axioms show the properties of the special inner product
+<IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'>.  The official
+name for this inner product is a &quot;sesquilinear Hermitian
+mapping&quot;.  (Sesquilinear means "one-and-a-half linear," i.e.,
+antilinear in the first argument and linear in the second.)  The symbol
+<IMG SRC='ast.gif' WIDTH=7 HEIGHT=19 ALT='*'> in Axiom <A
+HREF="ax-his1.html">ax-his1</A> is the complex conjugate (<A
+HREF="cjval.html">cjval</A>).  See <A
+HREF="mmset.html#function">Notation for Function Values</A> for an
+explanation of why we use this notation rather than the standard
+superscript asterisk used in textbooks; this will help you understand
+some of our other non-standard notation as well.
+
+<P>The last axiom, which is the most important and also the most
+complicated, is called the Completeness Axiom, and is shown above using
+abbreviations.  You can click on its links to expand the abbreviations.
+It basically says that the limit of any converging (&quot;Cauchy&quot;)
+sequence of vectors in Hilbert space converges to a vector in Hilbert
+space.  To understand what completeness means, consider this analogy:
+the sequence 3, 3.1, 3.14, 3.1415, 3.14159... converges to pi.  This is
+a converging sequence of rational numbers, but it converges to something
+that is not a rational number, meaning the set of rational numbers is
+<I>not</I> complete.  The set of real numbers, on the other hand,
+<I>is</I> complete, because all converging sequences of real numbers
+converge to a real number.
+
+
+
+<P><HR NOSHADE SIZE=1><A NAME="definitions"></A><B><FONT
+COLOR="#006633">Some Definitions</FONT></B>&nbsp;&nbsp;&nbsp; Here we
+show explicitly a few of the definitions you will encounter in our
+Hilbert space proofs.  The complete list is given at the top of this
+page.  We typically define new symbols as a self-contained objects, which
+can make their definitions seem unnecessarily complicated, but usually
+their Descriptions point to simpler theorems showing their values or
+other properties.  For example, the vector subtraction operation <IMG
+SRC='_mvh.gif' WIDTH=16 HEIGHT=19 ALT='-h'> is formally a set
+of ordered pairs as shown below, but its value is just <IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_pvh.gif'
+WIDTH=18 HEIGHT=19 ALT='+h'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19
+ALT='-u'><IMG SRC='1.gif' WIDTH=7 HEIGHT=19 ALT='1'>
+<IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'> <IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif'
+WIDTH=5 HEIGHT=19 ALT=')'> as can be seen from theorem <A
+HREF="hvsubval.html">hvsubval</A>.
+
+
+<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<CAPTION><B>Some Definitions for Hilbert Space</B></CAPTION>
+
+
+<TR ALIGN=LEFT><TD>The vector subtraction operation
+<A HREF="df-hvsub.html">df-hvsub</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'>  <IMG
+SRC='_mvh.gif' WIDTH=16 HEIGHT=19 ALT='-h'>  <IMG SRC='eq.gif'
+WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lbrace.gif' WIDTH=6 HEIGHT=19
+ALT='{'><IMG SRC='langle.gif' WIDTH=4 HEIGHT=19 ALT='&lt;.'
+ALIGN=TOP><IMG SRC='langle.gif' WIDTH=4 HEIGHT=19 ALT='&lt;.'><IMG
+SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'><IMG SRC='comma.gif' WIDTH=4
+HEIGHT=19 ALT=','><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'
+ALIGN=TOP><IMG SRC='rangle.gif' WIDTH=4 HEIGHT=19 ALT='&gt;.'><IMG
+SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','><IMG SRC='_z.gif' WIDTH=9
+HEIGHT=19 ALT='z'><IMG SRC='rangle.gif' WIDTH=4 HEIGHT=19 ALT='&gt;.'
+ALIGN=TOP> <IMG SRC='vert.gif' WIDTH=3 HEIGHT=19 ALT='|'> <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'
+ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
+SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif'
+WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='_y.gif' WIDTH=9 HEIGHT=19
+ALT='y'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif'
+WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'> <IMG
+SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'
+ALIGN=TOP> <IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'> <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='shortminus.gif'
+WIDTH=8 HEIGHT=19 ALT='-u'><IMG SRC='1.gif' WIDTH=7 HEIGHT=19 ALT='1'
+ALIGN=TOP> <IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'> <IMG
+SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rbrace.gif' WIDTH=6 HEIGHT=19 ALT='}'></TD></TR>
+
+
+<TR ALIGN=LEFT><TD>The norm of a vector
+<A HREF="df-hnorm.html">df-hnorm</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
+SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'> <IMG SRC='eq.gif'
+WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lbrace.gif' WIDTH=6 HEIGHT=19
+ALT='{'><IMG SRC='langle.gif' WIDTH=4 HEIGHT=19 ALT='&lt;.'
+ALIGN=TOP><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'><IMG
+SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','><IMG SRC='_y.gif' WIDTH=9
+HEIGHT=19 ALT='y'><IMG SRC='rangle.gif' WIDTH=4 HEIGHT=19 ALT='&gt;.'
+ALIGN=TOP> <IMG SRC='vert.gif' WIDTH=3 HEIGHT=19 ALT='|'> <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_x.gif' WIDTH=10
+HEIGHT=19 ALT='x'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'
+ALIGN=TOP> <IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG
+SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='_y.gif'
+WIDTH=9 HEIGHT=19 ALT='y'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='surd.gif' WIDTH=14 HEIGHT=19 ALT='sqrt'><IMG SRC='backtick.gif'
+WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'> <IMG
+SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'> <IMG SRC='_x.gif'
+WIDTH=10 HEIGHT=19 ALT='x'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rbrace.gif' WIDTH=6
+HEIGHT=19 ALT='}'></TD></TR>
+
+<TR ALIGN=LEFT><TD>The set of all Cauchy sequences
+<A HREF="df-hcau.html">df-hcau</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
+SRC='_cauchy.gif' WIDTH=47 HEIGHT=19 ALT='Cauchy'> <IMG SRC='eq.gif'
+WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lbrace.gif' WIDTH=6 HEIGHT=19
+ALT='{'><IMG SRC='_f.gif' WIDTH=9 HEIGHT=19 ALT='f'> <IMG
+SRC='vert.gif' WIDTH=3 HEIGHT=19 ALT='|'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_f.gif' WIDTH=9 HEIGHT=19 ALT='f'
+ALIGN=TOP><IMG SRC='colon.gif' WIDTH=4 HEIGHT=19 ALT=':'><IMG
+SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT='NN'><IMG
+SRC='longrightarrow.gif' WIDTH=23 HEIGHT=19 ALT='--&gt;'><IMG
+SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif'
+WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='forall.gif' WIDTH=10 HEIGHT=19
+ALT='A.'><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbr.gif' WIDTH=13
+HEIGHT=19 ALT='RR'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='0.gif' WIDTH=8 HEIGHT=19 ALT='0'> <IMG
+SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT='&lt;'> <IMG SRC='_x.gif'
+WIDTH=10 HEIGHT=19 ALT='x'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
+ALT='-&gt;'> <IMG SRC='exists.gif' WIDTH=9 HEIGHT=19 ALT='E.'
+ALIGN=TOP><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbn.gif' WIDTH=12
+HEIGHT=19 ALT='NN'><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.'
+ALIGN=TOP><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbn.gif' WIDTH=12
+HEIGHT=19 ALT='NN'><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.'
+ALIGN=TOP><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 ALT='w'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbn.gif' WIDTH=12
+HEIGHT=19 ALT='NN'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'> <IMG SRC='le.gif' WIDTH=11
+HEIGHT=19 ALT='&lt;_'> <IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'
+ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
+SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'> <IMG SRC='le.gif' WIDTH=11
+HEIGHT=19 ALT='&lt;_'> <IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 ALT='w'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19
+ALT='normh'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cf.gif' WIDTH=13
+HEIGHT=19 ALT='F'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'
+ALIGN=TOP><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='_mvh.gif'
+WIDTH=16 HEIGHT=19 ALT='-h'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_cf.gif' WIDTH=13 HEIGHT=19 ALT='F'><IMG
+SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_w.gif'
+WIDTH=12 HEIGHT=19 ALT='w'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='lt.gif' WIDTH=11
+HEIGHT=19 ALT='&lt;'> <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rbrace.gif' WIDTH=6 HEIGHT=19 ALT='}'
+ALIGN=TOP></TD></TR>
+
+<TR ALIGN=LEFT><TD>The limit of a vector sequence
+<A HREF="df-hlim.html">df-hlim</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'>  <IMG
+SRC='_squigv.gif' WIDTH=21 HEIGHT=19 ALT='~~&gt;v'>  <IMG
+SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lbrace.gif'
+WIDTH=6 HEIGHT=19 ALT='{'><IMG SRC='langle.gif' WIDTH=4 HEIGHT=19
+ALT='&lt;.'><IMG SRC='_f.gif' WIDTH=9 HEIGHT=19 ALT='f'
+ALIGN=TOP><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','><IMG
+SRC='_w.gif' WIDTH=12 HEIGHT=19 ALT='w'><IMG SRC='rangle.gif' WIDTH=4
+HEIGHT=19 ALT='&gt;.'> <IMG SRC='vert.gif' WIDTH=3 HEIGHT=19 ALT='|'
+ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_f.gif' WIDTH=9
+HEIGHT=19 ALT='f'><IMG SRC='colon.gif' WIDTH=4 HEIGHT=19 ALT=':'
+ALIGN=TOP><IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT='NN'><IMG
+SRC='longrightarrow.gif' WIDTH=23 HEIGHT=19 ALT='--&gt;'><IMG
+SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif'
+WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='_w.gif' WIDTH=12 HEIGHT=19
+ALT='w'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif'
+WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.'
+ALIGN=TOP><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbr.gif' WIDTH=13
+HEIGHT=19 ALT='RR'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='0.gif' WIDTH=8 HEIGHT=19 ALT='0'> <IMG
+SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT='&lt;'> <IMG SRC='_x.gif'
+WIDTH=10 HEIGHT=19 ALT='x'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
+ALT='-&gt;'> <IMG SRC='exists.gif' WIDTH=9 HEIGHT=19 ALT='E.'
+ALIGN=TOP><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbn.gif' WIDTH=12
+HEIGHT=19 ALT='NN'><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.'
+ALIGN=TOP><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbn.gif' WIDTH=12
+HEIGHT=19 ALT='NN'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'> <IMG
+SRC='le.gif' WIDTH=11 HEIGHT=19 ALT='&lt;_'> <IMG SRC='_z.gif'
+WIDTH=9 HEIGHT=19 ALT='z'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
+ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'><IMG
+SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_f.gif' WIDTH=9 HEIGHT=19 ALT='f'><IMG
+SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_z.gif'
+WIDTH=9 HEIGHT=19 ALT='z'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP> <IMG SRC='_mvh.gif' WIDTH=16 HEIGHT=19 ALT='-h'> <IMG
+SRC='_w.gif' WIDTH=12 HEIGHT=19 ALT='w'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP> <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT='&lt;'> <IMG
+SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rbrace.gif' WIDTH=6 HEIGHT=19 ALT='}'></TD></TR>
+
+<TR ALIGN=LEFT><TD>The set of all subspaces of Hilbert space
+<A HREF="df-sh.html">df-sh</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_sh.gif'
+WIDTH=24 HEIGHT=19 ALT='SH'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ALT='='> <IMG SRC='lbrace.gif' WIDTH=6 HEIGHT=19 ALT='{'
+ALIGN=TOP><IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 ALT='h'> <IMG
+SRC='vert.gif' WIDTH=3 HEIGHT=19 ALT='|'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 ALT='h'> <IMG
+SRC='subseteq.gif' WIDTH=12 HEIGHT=19 ALT='(_'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_0vh.gif' WIDTH=14 HEIGHT=19 ALT='0h'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_h.gif'
+WIDTH=10 HEIGHT=19 ALT='h'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='forall.gif'
+WIDTH=10 HEIGHT=19 ALT='A.'><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19
+ALT='x'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 ALT='h'><IMG SRC='forall.gif'
+WIDTH=10 HEIGHT=19 ALT='A.'><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19
+ALT='y'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 ALT='h'><IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19
+ALT='x'> <IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'>
+<IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'
+ALIGN=TOP> <IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 ALT='h'> <IMG
+SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='forall.gif'
+WIDTH=10 HEIGHT=19 ALT='A.'><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19
+ALT='x'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='bbc.gif' WIDTH=12 HEIGHT=19 ALT='CC'><IMG SRC='forall.gif'
+WIDTH=10 HEIGHT=19 ALT='A.'><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19
+ALT='y'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 ALT='h'><IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19
+ALT='x'> <IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'>
+<IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'
+ALIGN=TOP> <IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 ALT='h'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rbrace.gif' WIDTH=6 HEIGHT=19 ALT='}'
+ALIGN=TOP></TD></TR>
+
+<TR ALIGN=LEFT><TD>The set of all closed subspaces of Hilbert space
+<A HREF="df-ch.html">df-ch</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
+SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'> <IMG SRC='eq.gif'
+WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lbrace.gif' WIDTH=6 HEIGHT=19
+ALT='{'><IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 ALT='h'> <IMG
+SRC='vert.gif' WIDTH=3 HEIGHT=19 ALT='|'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 ALT='h'
+ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
+SRC='_sh.gif' WIDTH=24 HEIGHT=19 ALT='SH'> <IMG SRC='wedge.gif'
+WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='forall.gif' WIDTH=10 HEIGHT=19
+ALT='A.'><IMG SRC='_f.gif' WIDTH=9 HEIGHT=19 ALT='f'><IMG
+SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.'><IMG SRC='_x.gif'
+WIDTH=10 HEIGHT=19 ALT='x'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_f.gif' WIDTH=9 HEIGHT=19 ALT='f'><IMG SRC='colon.gif' WIDTH=4
+HEIGHT=19 ALT=':'><IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT='NN'
+ALIGN=TOP><IMG SRC='longrightarrow.gif' WIDTH=23 HEIGHT=19 ALT='--&gt;'
+ALIGN=TOP><IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 ALT='h'> <IMG
+SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='_f.gif'
+WIDTH=9 HEIGHT=19 ALT='f'> <IMG SRC='_squigv.gif' WIDTH=21 HEIGHT=19
+ALT='~~&gt;v'> <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='_x.gif'
+WIDTH=10 HEIGHT=19 ALT='x'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 ALT='h'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rbrace.gif' WIDTH=6 HEIGHT=19 ALT='}'
+ALIGN=TOP></TD></TR>
+
+<TR ALIGN=LEFT><TD>The sum of two subspaces
+<A HREF="df-shsum.html">df-shsum</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'>  <IMG
+SRC='_plh.gif' WIDTH=24 HEIGHT=19 ALT='+H'>  <IMG SRC='eq.gif'
+WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lbrace.gif' WIDTH=6 HEIGHT=19
+ALT='{'><IMG SRC='langle.gif' WIDTH=4 HEIGHT=19 ALT='&lt;.'
+ALIGN=TOP><IMG SRC='langle.gif' WIDTH=4 HEIGHT=19 ALT='&lt;.'><IMG
+SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'><IMG SRC='comma.gif' WIDTH=4
+HEIGHT=19 ALT=','><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'
+ALIGN=TOP><IMG SRC='rangle.gif' WIDTH=4 HEIGHT=19 ALT='&gt;.'><IMG
+SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','><IMG SRC='_z.gif' WIDTH=9
+HEIGHT=19 ALT='z'><IMG SRC='rangle.gif' WIDTH=4 HEIGHT=19 ALT='&gt;.'
+ALIGN=TOP> <IMG SRC='vert.gif' WIDTH=3 HEIGHT=19 ALT='|'> <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'
+ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
+SRC='_sh.gif' WIDTH=24 HEIGHT=19 ALT='SH'> <IMG SRC='wedge.gif'
+WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='_y.gif' WIDTH=9 HEIGHT=19
+ALT='y'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='_sh.gif' WIDTH=24 HEIGHT=19 ALT='SH'><IMG SRC='rp.gif'
+WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'> <IMG
+SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lbrace.gif'
+WIDTH=6 HEIGHT=19 ALT='{'><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19
+ALT='w'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='vert.gif'
+WIDTH=3 HEIGHT=19 ALT='|'> <IMG SRC='exists.gif' WIDTH=9 HEIGHT=19
+ALT='E.'><IMG SRC='_v.gif' WIDTH=9 HEIGHT=19 ALT='v'>  <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_x.gif' WIDTH=10
+HEIGHT=19 ALT='x'><IMG SRC='exists.gif' WIDTH=9 HEIGHT=19 ALT='E.'
+ALIGN=TOP><IMG SRC='_u.gif' WIDTH=10 HEIGHT=19 ALT='u'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_y.gif' WIDTH=9
+HEIGHT=19 ALT='y'><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 ALT='w'
+ALIGN=TOP> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_v.gif' WIDTH=9
+HEIGHT=19 ALT='v'>  <IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'
+ALIGN=TOP> <IMG SRC='_u.gif' WIDTH=10 HEIGHT=19 ALT='u'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rbrace.gif' WIDTH=6
+HEIGHT=19 ALT='}'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rbrace.gif' WIDTH=6 HEIGHT=19 ALT='}'></TD></TR>
+
+
+</TABLE></CENTER>
+
+
+
+<P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">Some
+Theorems</FONT></B>&nbsp;&nbsp;&nbsp; First we show some basic
+properties of vectors.  These are laws in any vector space, not just
+Hilbert spaces, so they should be familiar if you've taken a linear
+algebra course.
+
+
+
+<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<CAPTION><B>Some Basic Properties of Vectors</B></CAPTION>
+
+
+<TR ALIGN=LEFT><TD><A HREF="hvsubcl.html">hvsubcl</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif'
+WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_mvh.gif' WIDTH=16 HEIGHT=19
+ALT='-h'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'></TD></TR>
+
+
+<TR ALIGN=LEFT><TD><A
+HREF="hvnegid.html">hvnegid</A></TD><TD><IMG SRC='_vdash.gif'
+WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='shortminus.gif'
+WIDTH=8 HEIGHT=19 ALT='-u'><IMG SRC='1.gif' WIDTH=7 HEIGHT=19 ALT='1'
+ALIGN=TOP> <IMG SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'> <IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='_0vh.gif' WIDTH=14 HEIGHT=19 ALT='0h'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="hvmul0.html">hvmul0</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='bbc.gif' WIDTH=12 HEIGHT=19 ALT='CC'> <IMG SRC='to.gif'
+WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='_cdh.gif' WIDTH=9 HEIGHT=19 ALT='.h'> <IMG SRC='_0vh.gif'
+WIDTH=14
+HEIGHT=19 ALT='0h'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='_0vh.gif' WIDTH=14 HEIGHT=19 ALT='0h'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'></TD></TR>
+
+
+<TR ALIGN=LEFT><TD><A HREF="hvsubid.html">hvsubid</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='to.gif'
+WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='_mvh.gif' WIDTH=16 HEIGHT=19 ALT='-h'> <IMG SRC='_ca.gif'
+WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='_0vh.gif' WIDTH=14 HEIGHT=19 ALT='0h'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="hvsubeq0.html">hvsubeq0</A></TD><TD><IMG SRC='_vdash.gif'
+WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif'
+WIDTH=15 HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='_mvh.gif' WIDTH=16 HEIGHT=19 ALT='-h'> <IMG SRC='_cb.gif'
+WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='_0vh.gif' WIDTH=14 HEIGHT=19 ALT='0h'> <IMG
+SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 ALT='&lt;-&gt;'> <IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='eq.gif' WIDTH=12
+HEIGHT=19 ALT='='> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+
+</TABLE></CENTER>
+
+<P>Next we show some basic properties of the special inner product defined for
+Hilbert space.
+
+<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<CAPTION><B>Theorems Involving Inner Product</B></CAPTION>
+
+
+<TR ALIGN=LEFT><TD><A HREF="his5.html">his5</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='bbc.gif' WIDTH=12
+HEIGHT=19 ALT='CC'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'
+ALIGN=TOP> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cb.gif'
+WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19
+ALT='.ih'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_cdh.gif' WIDTH=9
+HEIGHT=19 ALT='.h'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12
+HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='ast.gif' WIDTH=7 HEIGHT=19 ALT='*'><IMG SRC='backtick.gif'
+WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT='x.'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP> <IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'> <IMG
+SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="his6.html">his6</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='to.gif'
+WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_cdih.gif'
+WIDTH=13 HEIGHT=19 ALT='.ih'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='0.gif' WIDTH=8
+HEIGHT=19 ALT='0'> <IMG SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19
+ALT='&lt;-&gt;'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='_0vh.gif' WIDTH=14 HEIGHT=19 ALT='0h'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="his7.html">his7</A></TD><TD>
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
+ALT='/\'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'>
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif'
+WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19
+ALT='.ih'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='_pvh.gif'
+WIDTH=18 HEIGHT=19 ALT='+h'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19
+ALT='C'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12
+HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_cdih.gif'
+WIDTH=13 HEIGHT=19 ALT='.ih'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19
+ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT='+'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'> <IMG
+SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+</TABLE></CENTER>
+
+<P>Next we show some theorems involving norms.  Note our use of the
+notation
+&quot;<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ALT='('><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'
+ALIGN=TOP><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'>&quot;
+instead of the more common notation &quot;||<IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'>||&quot; - see <A
+HREF="mmset.html#function">Notation for Function Values</A>.
+
+<P>Theorems <A HREF="norm-ii.html">norm-i</A>, <A
+HREF="norm-ii.html">norm-ii</A> (triangle inequality), and <A
+HREF="norm-ii.html">norm-iii</A> show that the basic properties expected
+of any norm hold for the norm we defined for Hilbert space.  Theorem <A
+HREF="normpyth.html">normpyth</A> is an analogy to the Pythagorean
+theorem, and theorem <A HREF="normpar.html">normpar</A> is the
+parallellogram law.  Theorem <A HREF="bcs.html">bcs</A> is the
+Bunjakovaskij-Cauchy-Schwarz inequality.
+
+<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<CAPTION><B>Theorems Involving Norms</B></CAPTION>
+
+<TR ALIGN=LEFT><TD><A
+HREF="norm-i.html">norm-i</A></TD><TD><IMG SRC='_vdash.gif' WIDTH=10
+HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
+SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'>&nbsp;&nbsp;&nbsp;<IMG
+SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'><IMG
+SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_ca.gif'
+WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='0.gif' WIDTH=8 HEIGHT=19 ALT='0'> <IMG SRC='leftrightarrow.gif'
+WIDTH=15 HEIGHT=19 ALT='&lt;-&gt;'> <IMG SRC='_ca.gif' WIDTH=11
+HEIGHT=19 ALT='A'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='
+ALIGN=TOP> <IMG SRC='_0vh.gif' WIDTH=14 HEIGHT=19 ALT='0h'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+
+<TR ALIGN=LEFT><TD><A
+HREF="norm-ii.html">norm-ii</A></TD><TD><IMG SRC='_vdash.gif'
+WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif'
+WIDTH=15 HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19
+ALT='normh'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_pvh.gif'
+WIDTH=18 HEIGHT=19 ALT='+h'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19
+ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='le.gif' WIDTH=11
+HEIGHT=19 ALT='&lt;_'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'><IMG SRC='backtick.gif'
+WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT='+'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'
+ALIGN=TOP><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP></TD></TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="norm-iii.html">norm-iii</A></TD><TD><IMG SRC='_vdash.gif'
+WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='bbc.gif' WIDTH=12 HEIGHT=19 ALT='CC'>&nbsp;&nbsp;&nbsp;<IMG
+SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;' >&nbsp;&nbsp;&nbsp;<IMG
+SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cb.gif'
+WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19
+ALT='normh'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_cdh.gif' WIDTH=9
+HEIGHT=19 ALT='.h'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12
+HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_abs.gif' WIDTH=22 HEIGHT=19 ALT='abs'><IMG SRC='backtick.gif'
+WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT='x.'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19
+ALT='normh'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'
+ALIGN=TOP><IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP></TD></TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="normpyth.html">normpyth</A></TD><TD><IMG SRC='_vdash.gif'
+WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif'
+WIDTH=15 HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'> <IMG SRC='_cb.gif'
+WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='0.gif' WIDTH=8 HEIGHT=19 ALT='0'> <IMG SRC='to.gif' WIDTH=15
+HEIGHT=19 ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'><IMG SRC='backtick.gif'
+WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'> <IMG SRC='_cb.gif'
+WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='uparrow.gif' WIDTH=7 HEIGHT=19 ALT='^'><IMG SRC='2.gif' WIDTH=8
+HEIGHT=19 ALT='2'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'><IMG
+SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_ca.gif'
+WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='uparrow.gif' WIDTH=7 HEIGHT=19 ALT='^'><IMG
+SRC='2.gif' WIDTH=8 HEIGHT=19 ALT='2'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'> <IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT='+'
+ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_normh.gif' WIDTH=38
+HEIGHT=19 ALT='normh'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19
+ALT='`'><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='uparrow.gif' WIDTH=7
+HEIGHT=19 ALT='^'><IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT='2'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'></TD></TR>
+
+
+<TR ALIGN=LEFT><TD><A
+HREF="normpar.html">normpar</A></TD><TD><IMG SRC='_vdash.gif'
+WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='scrh.gif'
+WIDTH=19 HEIGHT=19 ALT='H~'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif'
+WIDTH=15 HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'><IMG SRC='backtick.gif'
+WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='_mvh.gif' WIDTH=16 HEIGHT=19 ALT='-h'> <IMG SRC='_cb.gif'
+WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='uparrow.gif' WIDTH=7 HEIGHT=19 ALT='^'><IMG SRC='2.gif' WIDTH=8
+HEIGHT=19 ALT='2'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP> <IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT='+'> <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19
+ALT='normh'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'
+ALIGN=TOP><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11
+HEIGHT=19 ALT='A'> <IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'
+ALIGN=TOP> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='uparrow.gif' WIDTH=7 HEIGHT=19 ALT='^'
+ALIGN=TOP><IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT='2'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='
+ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='2.gif' WIDTH=8
+HEIGHT=19 ALT='2'> <IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT='x.'
+ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_normh.gif' WIDTH=38
+HEIGHT=19 ALT='normh'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19
+ALT='`'><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='uparrow.gif' WIDTH=7
+HEIGHT=19 ALT='^'><IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT='2'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='plus.gif' WIDTH=13
+HEIGHT=19 ALT='+'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='2.gif' WIDTH=8 HEIGHT=19 ALT='2'> <IMG
+SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT='x.'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'><IMG
+SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_cb.gif'
+WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='uparrow.gif' WIDTH=7 HEIGHT=19 ALT='^'><IMG
+SRC='2.gif' WIDTH=8 HEIGHT=19 ALT='2'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+
+<TR ALIGN=LEFT><TD><A
+HREF="bcs.html">bcs</A></TD><TD><IMG SRC='_vdash.gif' WIDTH=10
+HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
+SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'>&nbsp;&nbsp;&nbsp;<IMG
+SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;' >&nbsp;&nbsp;&nbsp;<IMG
+SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cb.gif'
+WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_abs.gif' WIDTH=22 HEIGHT=19
+ALT='abs'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_cdih.gif'
+WIDTH=13 HEIGHT=19 ALT='.ih'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19
+ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='le.gif' WIDTH=11
+HEIGHT=19 ALT='&lt;_'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'><IMG
+SRC='backtick.gif'
+WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT='x.'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19
+ALT='normh'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'
+ALIGN=TOP><IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP></TD></TR>
+
+</TABLE></CENTER>
+
+<P>Next we show some basic theorems about sequences.  Theorem <A
+HREF="hlimcaui.html">hlimcaui</A> shows any converging sequence is a
+Cauchy sequence and <A HREF="hlimunii.html">hlimunii</A> shows that the
+limit of a converging sequence is unique.  The theorem <A
+HREF="pjth.html">pjth</A> is the important Projection Theorem; it shows
+any vector can be decomposed into a pair of &quot;projections&quot; on a
+subspace and the orthocomplement of the subspace (see below for the
+definition of the orthocomplement
+<IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'>).
+
+<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<CAPTION><B>Theorems Involving Limits and Subspaces</B></CAPTION>
+
+
+<TR ALIGN=LEFT><TD><A
+HREF="hlimcaui.html">hlimcaui</A></TD><TD><IMG SRC='_vdash.gif'
+WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='cv.gif' WIDTH=12 HEIGHT=19 ALT='V'>&nbsp;&nbsp;&nbsp;<IMG
+SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;' >&nbsp;&nbsp;&nbsp;<IMG
+SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cf.gif'
+WIDTH=13 HEIGHT=19 ALT='F'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='cv.gif' WIDTH=12 HEIGHT=19 ALT='V'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cf.gif' WIDTH=13 HEIGHT=19
+ALT='F'> <IMG SRC='_squigv.gif' WIDTH=21 HEIGHT=19 ALT='~~&gt;v'
+ALIGN=TOP> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='_cf.gif'
+WIDTH=13 HEIGHT=19 ALT='F'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='_cauchy.gif' WIDTH=47 HEIGHT=19 ALT='Cauchy'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+
+<TR ALIGN=LEFT><TD><A
+HREF="hlimunii.html">hlimunii</A></TD><TD><IMG SRC='_vdash.gif'
+WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='cv.gif' WIDTH=12 HEIGHT=19 ALT='V'>&nbsp;&nbsp;&nbsp;<IMG
+SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;' >&nbsp;&nbsp;&nbsp;<IMG
+SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cb.gif'
+WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='cv.gif' WIDTH=12 HEIGHT=19 ALT='V'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='_cf.gif' WIDTH=13 HEIGHT=19 ALT='F'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='cv.gif' WIDTH=12
+HEIGHT=19 ALT='V'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15
+HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_cf.gif' WIDTH=13 HEIGHT=19 ALT='F'> <IMG
+SRC='_squigv.gif' WIDTH=21 HEIGHT=19 ALT='~~&gt;v'> <IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='wedge.gif'
+WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='_cf.gif' WIDTH=13 HEIGHT=19
+ALT='F'> <IMG SRC='_squigv.gif' WIDTH=21 HEIGHT=19 ALT='~~&gt;v'
+ALIGN=TOP> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='to.gif' WIDTH=15
+HEIGHT=19 ALT='-&gt;'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'></TD></TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="pjth.html">pjth</A></TD><TD><IMG SRC='_vdash.gif' WIDTH=10
+HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
+SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'>&nbsp;&nbsp;&nbsp;<IMG
+SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;' >&nbsp;&nbsp;&nbsp;<IMG
+SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ch.gif'
+WIDTH=14 HEIGHT=19 ALT='H'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
+SRC='exists.gif' WIDTH=9 HEIGHT=19 ALT='E.'><IMG SRC='_x.gif'
+WIDTH=10 HEIGHT=19 ALT='x'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='_ch.gif' WIDTH=14 HEIGHT=19 ALT='H'
+ALIGN=TOP><IMG SRC='exists.gif' WIDTH=9 HEIGHT=19 ALT='E.'><IMG
+SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'> <IMG SRC='in.gif' WIDTH=10
+HEIGHT=19 ALT='e.'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG
+SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_ch.gif'
+WIDTH=14 HEIGHT=19 ALT='H'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'>
+<IMG
+SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'
+ALIGN=TOP> <IMG SRC='_pvh.gif' WIDTH=18 HEIGHT=19 ALT='+h'> <IMG
+SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'></TD></TR>
+
+
+</TABLE></CENTER>
+
+
+<!--
+<P><HR NOSHADE SIZE=1><A NAME="choice"></A><B><FONT COLOR="#006633">The
+Axiom of Choice</FONT></B>&nbsp;&nbsp;&nbsp; The example here is rather
+technical and not very interesting in itself (it is used to prove the
+Projection Theorem <A HREF="pjth.html">pjth</A>), except that it shows
+how a seemingly innocent, simple assertion in a textbook proof, "Let
+<IMG SRC='_f.gif' WIDTH=9 HEIGHT=19 ALT='f'> be a vector
+sequence such that..." has, implicit under it, a rather complex proof
+that such a sequence <IMG SRC='_f.gif' WIDTH=9 HEIGHT=19 ALT='f'
+ALIGN=TOP> actually exists.  (If it didn't exist, the rules of logic
+would not allow us to state "Let <IMG SRC='_f.gif' WIDTH=9 HEIGHT=19
+ALT='f'> be...")  In fact it appears impossible to prove it
+without invoking the Axiom of Choice - at least I could not do it.  But
+the textbook author does not mention this.  This is a disadvantage of
+Metamath - it won't let you gloss over hand-waving textbook arguments,
+so a lot of hard work may be needed to come up with a correct and
+complete proof.  But if you want mathematical rigor, then that is an
+advantage.
+
+<P>In the proof, the Axiom of Choice is referenced in the step
+with <A HREF="ac6.html">ac6</A>.
+
+<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<CAPTION><B>A Lemma Using the Axiom of Choice</B></CAPTION>
+
+
+<TR ALIGN=LEFT><TD><A
+HREF="projlem17.html">projlem17</A></TD><TD><IMG SRC='_vdash.gif'
+WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='_ch.gif' WIDTH=14 HEIGHT=19 ALT='H'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif'
+WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10
+HEIGHT=19 ALT='|-'> <IMG SRC='_cs.gif' WIDTH=11 HEIGHT=19 ALT='S'
+ALIGN=TOP> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+SRC='lbrace.gif' WIDTH=6 HEIGHT=19 ALT='{'><IMG SRC='_u.gif' WIDTH=10
+HEIGHT=19 ALT='u'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'
+ALIGN=TOP> <IMG SRC='bbr.gif' WIDTH=13 HEIGHT=19 ALT='RR'> <IMG
+SRC='vert.gif' WIDTH=3 HEIGHT=19 ALT='|'> <IMG SRC='exists.gif'
+WIDTH=9 HEIGHT=19 ALT='E.'><IMG SRC='_v.gif' WIDTH=9 HEIGHT=19
+ALT='v'>  <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+<IMG SRC='_ch.gif' WIDTH=14 HEIGHT=19 ALT='H'><IMG SRC='_u.gif'
+WIDTH=10 HEIGHT=19 ALT='u'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ALT='='> <IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT='-u'
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'><IMG
+SRC='backtick.gif'
+WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_v.gif' WIDTH=9 HEIGHT=19 ALT='v'>  <IMG
+SRC='_mvh.gif' WIDTH=16 HEIGHT=19 ALT='-h'> <IMG SRC='_ca.gif'
+WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rbrace.gif' WIDTH=6 HEIGHT=19 ALT='}'>&nbsp;&nbsp;&nbsp;<IMG
+SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;' >&nbsp;&nbsp;&nbsp;<IMG
+SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cr.gif'
+WIDTH=12 HEIGHT=19 ALT='R'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ALT='='> <IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT='-u'
+ALIGN=TOP><IMG SRC='_sup.gif' WIDTH=22 HEIGHT=19 ALT='sup'><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cs.gif' WIDTH=11
+HEIGHT=19 ALT='S'><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','
+ALIGN=TOP><IMG SRC='bbr.gif' WIDTH=13 HEIGHT=19 ALT='RR'><IMG
+SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','> <IMG SRC='lt.gif' WIDTH=11
+HEIGHT=19 ALT='&lt;'> <IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
+SRC='exists.gif' WIDTH=9 HEIGHT=19 ALT='E.'><IMG SRC='_f.gif' WIDTH=9
+HEIGHT=19 ALT='f'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_f.gif' WIDTH=9 HEIGHT=19 ALT='f'><IMG
+SRC='colon.gif' WIDTH=4 HEIGHT=19 ALT=':'><IMG SRC='bbn.gif' WIDTH=12
+HEIGHT=19 ALT='NN'><IMG SRC='longrightarrow.gif' WIDTH=23 HEIGHT=19
+ALT='- -&gt;'><IMG SRC='_ch.gif' WIDTH=14 HEIGHT=19 ALT='H'>
+<IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
+SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.'><IMG SRC='_w.gif'
+WIDTH=12 HEIGHT=19 ALT='w'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT='NN'
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cr.gif' WIDTH=12
+HEIGHT=19 ALT='R'> <IMG SRC='minus.gif' WIDTH=11 HEIGHT=19 ALT='-'
+ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='1.gif' WIDTH=7 HEIGHT=19 ALT='1'> <IMG SRC='solidus.gif' WIDTH=6
+HEIGHT=19 ALT='/'> <IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 ALT='w'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='lt.gif' WIDTH=11
+HEIGHT=19 ALT='&lt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_normh.gif' WIDTH=38 HEIGHT=19 ALT='normh'><IMG
+SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_f.gif' WIDTH=9 HEIGHT=19 ALT='f'><IMG
+SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_w.gif'
+WIDTH=12 HEIGHT=19 ALT='w'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='_mvh.gif' WIDTH=16 HEIGHT=19 ALT='-h'>
+<IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif'
+WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_normh.gif' WIDTH=38
+HEIGHT=19 ALT='normh'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19
+ALT='`'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_f.gif' WIDTH=9
+HEIGHT=19 ALT='f'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'
+ALIGN=TOP><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 ALT='w'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='_mvh.gif' WIDTH=16
+HEIGHT=19 ALT='-h'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='lt.gif' WIDTH=11
+HEIGHT=19 ALT='&lt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_cr.gif' WIDTH=12 HEIGHT=19 ALT='R'> <IMG
+SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT='+'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='1.gif' WIDTH=7 HEIGHT=19 ALT='1'
+ALIGN=TOP> <IMG SRC='solidus.gif' WIDTH=6 HEIGHT=19 ALT='/'> <IMG
+SRC='_w.gif' WIDTH=12 HEIGHT=19 ALT='w'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+</TABLE></CENTER>
+
+<P>I think it is philosophically interesting that, in order to prove
+certain laws concerning the physical universe, we may need the Axiom of
+Choice.  The Axiom of Choice can have bizarre consequences.  One of
+them is the
+Banach-Tarski paradox, which shows it is possible to break up a
+3-dimensional sphere into finitely many pieces, then by moving those
+pieces in rigid motions (rotations and translations) reassemble them to
+form two copies of the sphere.  Of course that makes no sense from a
+physical point of view.  Otherwise we could put a bar of gold in our
+Banach-Tarski reassembler and turn it into two!
+
+<P>(For a less simplistic discussion of the Banach-Tarski paradox, see
+<A HREF="http://math.vanderbilt.edu/~schectex/ccc/choice.html">A Home
+Page for the Axiom of Choice</A> [external].  Also, the Banach-Tarski
+paradox cannot be derived from the weak derivative of the Axiom of
+Choice, called &quot;Countable Choice,&quot; used in the proof of <A
+HREF="projlem17.html">projlem17</A>).
+
+-->
+
+<P><HR NOSHADE SIZE=1><A NAME="quantum"></A><B><FONT COLOR="#006633">Quantum
+Logic</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P>The set of closed subspaces of Hilbert space obey the laws of a
+simple equational algebra called "orthomodular lattice algebra."  This
+algebra is sometimes called "quantum logic," and it can be used as the
+basis for a propositional calculus that resembles but is somewhat weaker
+than standard (classical) propositional calculus.  This is explained in
+greater detail in the <A HREF="../qleuni/mmql.html">Quantum Logic
+Explorer</A>.  Our purpose here is to show that the orthomodular lattice
+laws hold in Hilbert space.  This provides a rigorous justification for
+the axioms of the Quantum Logic Explorer.
+(By the way, theorem
+<A HREF="nonbooli.html">nonbooli</A> shows why classical logic, i.e.
+Boolean algebra, does not hold in Hilbert space.)
+
+<P>The advantage of the Quantum Logic Explorer is that it lets us work
+with a simpler axiomatic structure.  But in principle, all the theorems
+of the Quantum Logic Explorer could be proved directly in Hilbert space,
+using the theorems below as the starting point.  In fact in a few cases
+we do this, because sometimes we need the Hilbert space version to help
+prove theorems that exploit Hilbert space properties beyond those
+provided by the orthomodular lattice laws alone.  For example, compare
+the proofs of the Hilbert Space Explorer theorem <A
+HREF="fh3i.html">fh3i</A> and the Quantum Logic Explorer version <A
+HREF="../qleuni/fh3.html">fh3</A>.  If you ignore the steps with an
+"<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.' >" in the
+Hilbert space version, you'll see the proofs are almost identical except
+for notation; in fact, any differences beyond that just result from
+the proofs having been developed somewhat independently.  You
+can see why the Quantum Logic Explorer is simpler to work with for these
+kinds of things:  we don't need the "<IMG SRC='in.gif' WIDTH=10
+HEIGHT=19 ALT='e.' > <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19
+ALT='CH'>" hypotheses, and we don't have to keep proving
+operation closure over and over.
+
+<P>To derive the orthomodular lattice postulates, first we define two
+new operations on members of <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19
+ALT='CH'> (the set of closed subspaces of Hilbert space).
+The <I>orthocomplement</I> of a subspace is the set of vectors
+orthogonal to all vectors in the subpace.  It is analogous to logical
+NOT.  The <I>join</I> of two subspaces is the closure (i.e. the
+double orthocomplement) of their union.  It is analogous to logical
+OR.
+
+<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<CAPTION><B>Lattice Definitions for
+<IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'></B></CAPTION>
+
+<TR ALIGN=LEFT><TD>Orthocomplement <A
+HREF="chocvali.html">chocvali</A></TD><TD>
+<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19
+ ALT='=&gt;'>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10
+ HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG
+ SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='` '><IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='>
+ <IMG SRC='lbrace.gif' WIDTH=6 HEIGHT=19 ALT='{'><IMG SRC='_x.gif'
+ WIDTH=10 HEIGHT=19 ALT='x'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='scrh.gif' WIDTH=19 HEIGHT=19 ALT='H~'>
+ <IMG SRC='vert.gif' WIDTH=3 HEIGHT=19 ALT='|'> <IMG SRC='forall.gif'
+ WIDTH=10 HEIGHT=19 ALT='A.'><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19
+ ALT='y'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
+ <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='lp.gif'
+ WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19
+ ALT='x'> <IMG SRC='_cdih.gif' WIDTH=13 HEIGHT=19 ALT='.ih'>
+ <IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'><IMG SRC='rp.gif'
+ WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ ALT='='> <IMG SRC='0.gif' WIDTH=8 HEIGHT=19 ALT='0'><IMG
+ SRC='rbrace.gif' WIDTH=6 HEIGHT=19 ALT='}'></TD></TR>
+
+<TR ALIGN=LEFT><TD>Join
+<A
+ HREF="chjval.html">chjval</A></TD><TD>
+<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+ SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+ WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif'
+ WIDTH=15 HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+ WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ ALT='A'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'>
+ <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif'
+ WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG SRC='backtick.gif'
+ WIDTH=4 HEIGHT=19 ALT='` '><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ ALT='('><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'
+><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='` '><IMG
+ SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11
+ HEIGHT=19 ALT='A'> <IMG SRC='cup.gif' WIDTH=10 HEIGHT=19 ALT='u.'
+> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG
+ SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+ HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+></TD></TR>
+
+</TABLE></CENTER>
+
+<P>Next we show that with these operations, we can derive the Hilbert
+space versions of the <A HREF="../qleuni/mmql.html#axioms">axioms for
+the Quantum Logic Explorer</A>.  You can see that these axioms
+correspond directly to the 10 theorems below.  This provides a physical
+justification for the study of quantum logic (since quantum physics is
+based on Hilbert space) and gives us a rigorous mathematical link for
+quantum logic all the way from the axioms of ZFC set theory and Hilbert
+space.  If you think of the logical OR / logical NOT analogy, you can
+see that these laws are a subset of the laws that hold in a Boolean
+algebra.  They provide us with a rich and very challenging logical
+structure to study.
+
+<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<CAPTION><B>Derivation of Properties of Orthomodular Lattices (for Quantum
+Logic)</B></CAPTION>
+
+
+<TR><TD ALIGN=CENTER><A
+ HREF="qlax1i.html">qlax1i</A></TD>
+
+<TD COLSPAN=3 ALIGN=LEFT><IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19
+ ALT='=&gt;'>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10
+ HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+ SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='perp.gif' WIDTH=11
+ HEIGHT=19 ALT='_|_'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`
+ '><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG SRC='backtick.gif'
+ WIDTH=4 HEIGHT=19 ALT='` '><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+ SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+
+<TR><TD ALIGN=CENTER><A
+ HREF="qlax2i.html">qlax2i</A></TD>
+
+<TD COLSPAN=3 ALIGN=LEFT><IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+ SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+ WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif'
+ WIDTH=15 HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+ WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ ALT='A'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'>
+ <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif'
+ WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='_veeh.gif'
+ WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+></TD></TR>
+
+
+<TR><TD ALIGN=CENTER><A
+ HREF="qlax3i.html">qlax3i</A></TD>
+
+<TD COLSPAN=3 ALIGN=LEFT><IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+ SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+ WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif'
+ WIDTH=12 HEIGHT=19 ALT='&amp;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cc.gif'
+ WIDTH=12 HEIGHT=19 ALT='C'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19
+ ALT='=&gt;'>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10
+ HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_veeh.gif'
+ WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19
+ ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+ SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cc.gif'
+ WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='>
+ <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19
+ ALT='vH'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='_veeh.gif'
+ WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19
+ ALT='C'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+ SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+
+<TR><TD ALIGN=CENTER><A
+ HREF="qlax4i.html">qlax4i</A></TD>
+
+<TD COLSPAN=3 ALIGN=LEFT><IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+ SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+ WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif'
+ WIDTH=15 HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+ WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ ALT='A'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'>
+ <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cb.gif'
+ WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19
+ ALT='vH'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG SRC='backtick.gif'
+ WIDTH=4 HEIGHT=19 ALT='` '><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19
+ ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+ SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+ HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='
+> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='_veeh.gif'
+ WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ ALT='('><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'
+><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='` '><IMG
+ SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5
+ HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+></TD></TR>
+
+
+<TR><TD ALIGN=CENTER><A
+ HREF="qlax5i.html">qlax5i</A></TD>
+
+<TD COLSPAN=3 ALIGN=LEFT><IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+ SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+ WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif'
+ WIDTH=15 HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+ WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ ALT='A'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'>
+ <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='perp.gif'
+ WIDTH=11 HEIGHT=19 ALT='_|_'><IMG SRC='backtick.gif' WIDTH=4
+ HEIGHT=19 ALT='` '><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG SRC='backtick.gif'
+ WIDTH=4 HEIGHT=19 ALT='` '><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
+ ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+ SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cb.gif'
+ WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+ SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='eq.gif' WIDTH=12
+ HEIGHT=19 ALT='='> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+></TD></TR>
+
+
+<TR><TD ALIGN=CENTER><A
+ HREF="qlaxr1i.html">qlaxr1i</A></TD>
+
+<TD COLSPAN=3 ALIGN=LEFT><IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+ SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+ WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif'
+ WIDTH=12 HEIGHT=19 ALT='&amp;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ ALT='='> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19
+ ALT='=&gt;'>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10
+ HEIGHT=19 ALT='|-'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+ SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'></TD></TR>
+
+
+<TR><TD ALIGN=CENTER><A
+ HREF="qlaxr2i.html">qlaxr2i</A></TD>
+
+<TD COLSPAN=3 ALIGN=LEFT><IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+ SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+ WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif'
+ WIDTH=12 HEIGHT=19 ALT='&amp;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cc.gif'
+ WIDTH=12 HEIGHT=19 ALT='C'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+ SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='_cb.gif' WIDTH=12
+ HEIGHT=19 ALT='B'>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12
+ HEIGHT=19 ALT='&amp;'>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif'
+ WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19
+ ALT='B'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='>
+ <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+ SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='_cc.gif' WIDTH=12
+ HEIGHT=19 ALT='C'></TD></TR>
+
+
+<TR><TD ALIGN=CENTER><A
+ HREF="qlaxr4i.html">qlaxr4i</A></TD>
+
+<TD COLSPAN=3 ALIGN=LEFT><IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+ SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+ WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif'
+ WIDTH=12 HEIGHT=19 ALT='&amp;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ ALT='='> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19
+ ALT='=&gt;'>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10
+ HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG
+ SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='` '><IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='>
+ <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='perp.gif'
+ WIDTH=11 HEIGHT=19 ALT='_|_'><IMG SRC='backtick.gif' WIDTH=4
+ HEIGHT=19 ALT='` '><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+
+<TR><TD ALIGN=CENTER><A
+ HREF="qlaxr5i.html">qlaxr5i</A></TD>
+
+<TD COLSPAN=3 ALIGN=LEFT><IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+ SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+ WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif'
+ WIDTH=12 HEIGHT=19 ALT='&amp;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cc.gif'
+ WIDTH=12 HEIGHT=19 ALT='C'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+ SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='_cb.gif' WIDTH=12
+ HEIGHT=19 ALT='B'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15
+ HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif'
+ WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'>
+ <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cc.gif'
+ WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ ALT=')'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='>
+ <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cb.gif'
+ WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19
+ ALT='vH'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'
+><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+
+<TR><TD ALIGN=CENTER><A
+ HREF="qlaxr3i.html">qlaxr3i</A></TD>
+
+<TD COLSPAN=3 ALIGN=LEFT><IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+ SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+ WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif'
+ WIDTH=12 HEIGHT=19 ALT='&amp;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cc.gif'
+ WIDTH=12 HEIGHT=19 ALT='C'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'> <IMG SRC='_veeh.gif'
+ WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ ALT='('><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'
+><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='` '><IMG
+ SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5
+ HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG
+ SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+ HEIGHT=19 ALT='('><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'
+><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='` '><IMG
+ SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+ HEIGHT=19 ALT='('><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'
+><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='` '><IMG
+ SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5
+ HEIGHT=19 ALT=')'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'
+> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG SRC='backtick.gif'
+ WIDTH=4 HEIGHT=19 ALT='` '><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19
+ ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+ SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+ HEIGHT=19 ALT=')'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'
+> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG SRC='backtick.gif'
+ WIDTH=4 HEIGHT=19 ALT='` '><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'>
+ <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cb.gif'
+ WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+ SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+ SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='_cb.gif' WIDTH=12
+ HEIGHT=19 ALT='B'></TD></TR>
+
+</TABLE></CENTER>
+
+<P><HR NOSHADE SIZE=1><A NAME="next"></A><B><FONT COLOR="#006633">What
+Next?</FONT></B>&nbsp;&nbsp;&nbsp; At the time quantum logic was first
+defined, the orthomodular lattice equations for <IMG SRC='_scrch.gif'
+WIDTH=22 HEIGHT=19 ALT='CH'> were the only ones that were
+known, and so "orthomodular lattice" and "quantum logic" became almost
+synonymous.  Since then, equations that strengthen the system have been
+discovered:  the orthoarguesian law <A
+HREF="#GodowskiGreechie">[GodowskiGreechie]</A> <A
+HREF="../qleuni/mmql.html#strong">[click for Quantum Logic Explorer
+page]</A> found by Alan Day in 1975, a family of equations discovered by
+Godowski in 1981, and several equations found by Mayet in 1986 <A
+HREF="#Mayet2">[Mayet2]</A>.  It has also been proved that there are
+infinitely many more, but no one knows what they look like nor how to
+find them.  From <A HREF="#Mayet">[Mayet]</A>:  "An open problem is to
+determine all equations satisfied by hilbertian lattices [i.e.  <IMG
+SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'>], which would
+make possible the separation of the 'purely logic' part from the above
+axiomatics.  It is not known if this problem is solvable, for it is not
+certain that these equations form a recursively enumerable set."
+
+<P>Recently myself and M. Pavicic <A
+HREF="#MegillPavicic">[MegillPavicic]</A> have proved that all equations
+appearing in the literature that are stronger than orthomodularity but
+valid in <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'>
+can be derived from either the 4-variable orthoarguesian equation or one
+of the Godowski equations.  In addition we recently discovered <A
+HREF="#MegillPavicic">[MegillPavicic]</A> a family of <I>n</I>-variable
+equations generalizing the orthoarguesian equation (which can be
+expressed with 4 variables) that are strictly stronger than it for all
+members with 5 or more variables.  Below we show the 5-variable member
+of this family (expressed as an equivalent 8-variable inference below)
+and also show the 3-variable Godowski equation, backed by their complete
+formal proofs.
+
+<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"> <CAPTION><B>
+5-Variable Orthoarguesian Equation (browser note:  large proof,
+750K)</B></CAPTION>
+
+<TR ALIGN=LEFT><TD><A
+HREF="5oai.html">5oai</A></TD><TD><IMG SRC='_vdash.gif' WIDTH=10
+HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
+SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG
+SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;' >&nbsp;&nbsp;&nbsp;<IMG
+SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cb.gif'
+WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif'
+WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10
+HEIGHT=19 ALT='|-'> <IMG SRC='_cd.gif' WIDTH=12 HEIGHT=19 ALT='D'
+ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
+SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG
+SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;' >&nbsp;&nbsp;&nbsp;<IMG
+SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cf.gif'
+WIDTH=13 HEIGHT=19 ALT='F'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='_cg.gif' WIDTH=12 HEIGHT=19 ALT='G'> <IMG
+SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif'
+WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10
+HEIGHT=19 ALT='|-'> <IMG SRC='_cr.gif' WIDTH=12 HEIGHT=19 ALT='R'
+ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
+SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG
+SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;' >&nbsp;&nbsp;&nbsp;<IMG
+SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cs.gif'
+WIDTH=11 HEIGHT=19 ALT='S'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='subseteq.gif' WIDTH=12 HEIGHT=19 ALT='(_'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19
+ALT='_|_'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'
+ALIGN=TOP><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>&nbsp;&nbsp;&nbsp;<IMG
+SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;' >&nbsp;&nbsp;&nbsp;<IMG
+SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cc.gif'
+WIDTH=12 HEIGHT=19 ALT='C'> <IMG SRC='subseteq.gif' WIDTH=12
+HEIGHT=19 ALT='(_'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG
+SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_cd.gif'
+WIDTH=12 HEIGHT=19 ALT='D'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif'
+WIDTH=12 HEIGHT=19 ALT='&amp;'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='_cf.gif' WIDTH=13 HEIGHT=19 ALT='F'> <IMG
+SRC='subseteq.gif' WIDTH=12 HEIGHT=19 ALT='(_'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19
+ALT='_|_'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'
+ALIGN=TOP><IMG SRC='_cg.gif' WIDTH=12 HEIGHT=19 ALT='G'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>&nbsp;&nbsp;&nbsp;<IMG
+SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;' >&nbsp;&nbsp;&nbsp;<IMG
+SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cr.gif'
+WIDTH=12 HEIGHT=19 ALT='R'> <IMG SRC='subseteq.gif' WIDTH=12
+HEIGHT=19 ALT='(_'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG
+SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`'><IMG SRC='_cs.gif'
+WIDTH=11 HEIGHT=19 ALT='S'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif'
+WIDTH=15 HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp;
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_veeh.gif'
+WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19
+ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'
+ALIGN=TOP> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG
+SRC='_cd.gif' WIDTH=12 HEIGHT=19 ALT='D'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP> <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'> <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_cf.gif' WIDTH=13 HEIGHT=19 ALT='F'
+ALIGN=TOP> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG
+SRC='_cg.gif' WIDTH=12 HEIGHT=19 ALT='G'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'> <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'
+ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_cr.gif' WIDTH=12 HEIGHT=19 ALT='R'> <IMG SRC='_veeh.gif'
+WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cs.gif' WIDTH=11 HEIGHT=19
+ALT='S'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'> <IMG SRC='subseteq.gif' WIDTH=12 HEIGHT=19
+ALT='(_'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='_veeh.gif'
+WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'
+ALIGN=TOP> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='_veeh.gif'
+WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19
+ALT='C'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+ALIGN=TOP> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG
+SRC='_cd.gif' WIDTH=12 HEIGHT=19 ALT='D'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP> <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'> <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
+SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cr.gif'
+WIDTH=12 HEIGHT=19 ALT='R'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cb.gif'
+WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19
+ALT='vH'> <IMG SRC='_cs.gif' WIDTH=11 HEIGHT=19 ALT='S'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='_veeh.gif' WIDTH=21
+HEIGHT=19 ALT='vH'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'> <IMG SRC='_veeh.gif'
+WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cr.gif' WIDTH=12 HEIGHT=19
+ALT='R'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'> <IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_cd.gif' WIDTH=12 HEIGHT=19 ALT='D'
+ALIGN=TOP> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG
+SRC='_cs.gif' WIDTH=11 HEIGHT=19 ALT='S'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='cap.gif' WIDTH=10
+HEIGHT=19 ALT='i^i'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+ALIGN=TOP> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG
+SRC='_cf.gif' WIDTH=13 HEIGHT=19 ALT='F'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'> <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'
+ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='_veeh.gif'
+WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cg.gif' WIDTH=12 HEIGHT=19
+ALT='G'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='cap.gif' WIDTH=10
+HEIGHT=19 ALT='i^i'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11
+HEIGHT=19 ALT='A'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'
+ALIGN=TOP> <IMG SRC='_cr.gif' WIDTH=12 HEIGHT=19 ALT='R'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='cap.gif' WIDTH=10
+HEIGHT=19 ALT='i^i'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cs.gif'
+WIDTH=11 HEIGHT=19 ALT='S'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_cf.gif' WIDTH=13 HEIGHT=19 ALT='F'> <IMG
+SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cr.gif'
+WIDTH=12 HEIGHT=19 ALT='R'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cg.gif'
+WIDTH=12 HEIGHT=19 ALT='G'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19
+ALT='vH'> <IMG SRC='_cs.gif' WIDTH=11 HEIGHT=19 ALT='S'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
+HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT='C'> <IMG
+SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cf.gif'
+WIDTH=13 HEIGHT=19 ALT='F'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cd.gif'
+WIDTH=12 HEIGHT=19 ALT='D'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19
+ALT='vH'> <IMG SRC='_cg.gif' WIDTH=12 HEIGHT=19 ALT='G'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='cap.gif' WIDTH=10
+HEIGHT=19 ALT='i^i'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cc.gif' WIDTH=12
+HEIGHT=19 ALT='C'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'
+ALIGN=TOP> <IMG SRC='_cr.gif' WIDTH=12 HEIGHT=19 ALT='R'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='cap.gif' WIDTH=10
+HEIGHT=19 ALT='i^i'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_cd.gif' WIDTH=12 HEIGHT=19 ALT='D'> <IMG
+SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cs.gif'
+WIDTH=11 HEIGHT=19 ALT='S'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='lp.gif'
+WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+ALIGN=TOP><IMG SRC='_cf.gif' WIDTH=13 HEIGHT=19 ALT='F'> <IMG
+SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='_cr.gif'
+WIDTH=12 HEIGHT=19 ALT='R'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ALT=')'> <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'>
+<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cg.gif'
+WIDTH=12 HEIGHT=19 ALT='G'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19
+ALT='vH'> <IMG SRC='_cs.gif' WIDTH=11 HEIGHT=19 ALT='S'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
+HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+
+</TABLE></CENTER>
+
+<P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"> <CAPTION><B>
+Godowski 3-Variable Strong State Equation</B> <A
+HREF="#Godowski">[Godowski]</A></CAPTION>
+
+<TR ALIGN=LEFT><TD><A HREF="goeqi.html">goeqi</A></TD><TD><IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
+ SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_scrch.gif'
+ WIDTH=22 HEIGHT=19 ALT='CH'>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif'
+ WIDTH=12 HEIGHT=19 ALT='&amp;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cc.gif'
+ WIDTH=12 HEIGHT=19 ALT='C'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
+ ALT='e.'> <IMG SRC='_scrch.gif' WIDTH=22 HEIGHT=19 ALT='CH'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_cf.gif' WIDTH=13 HEIGHT=19 ALT='F'> <IMG
+ SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5
+ HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG
+ SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='` '><IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ ALT=')'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'>
+ <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19
+ ALT='i^i'> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
+><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+ SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cg.gif'
+ WIDTH=12 HEIGHT=19 ALT='G'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='perp.gif' WIDTH=11
+ HEIGHT=19 ALT='_|_'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`
+ '><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG
+ SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='_veeh.gif'
+ WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ ALT='('><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'>
+ <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'> <IMG SRC='_cc.gif'
+ WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+> <IMG SRC='_ch.gif' WIDTH=14 HEIGHT=19 ALT='H'> <IMG
+ SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lp.gif' WIDTH=5
+ HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+><IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='_|_'><IMG
+ SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='` '><IMG SRC='_cc.gif'
+ WIDTH=12 HEIGHT=19 ALT='C'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ ALT=')'> <IMG SRC='_veeh.gif' WIDTH=21 HEIGHT=19 ALT='vH'>
+ <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_cc.gif'
+ WIDTH=12 HEIGHT=19 ALT='C'> <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19
+ ALT='i^i'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
+><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
+ SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'>&nbsp;&nbsp;&nbsp;<IMG
+ SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_cd.gif'
+ WIDTH=12 HEIGHT=19 ALT='D'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ ALT='='> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='perp.gif' WIDTH=11
+ HEIGHT=19 ALT='_|_'><IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT='`
+ '><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG
+ SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='_veeh.gif'
+ WIDTH=21 HEIGHT=19 ALT='vH'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ ALT='('><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'>
+ <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'> <IMG SRC='_ca.gif'
+ WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
+>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19
+ ALT='=&gt;'>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10
+ HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
+><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+ SRC='_cf.gif' WIDTH=13 HEIGHT=19 ALT='F'> <IMG SRC='cap.gif'
+ WIDTH=10 HEIGHT=19 ALT='i^i'> <IMG SRC='_cg.gif' WIDTH=12 HEIGHT=19
+ ALT='G'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
+ SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT='i^i'> <IMG SRC='_ch.gif'
+ WIDTH=14 HEIGHT=19 ALT='H'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
+ ALT=')'> <IMG SRC='subseteq.gif' WIDTH=12 HEIGHT=19 ALT='(_'
+> <IMG SRC='_cd.gif' WIDTH=12 HEIGHT=19 ALT='D'></TD></TR>
+
+</TABLE></CENTER>
+
+
+<P><HR NOSHADE SIZE=1>
+
+
+<A NAME="ref"></A><B><FONT COLOR="#006633">References</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P>
+
+<OL>
+
+<LI><A NAME="AkhiezerGlazman"></A> [AkhiezerGlazman] N. I. Akhiezer and
+I. M. Glazman, <I>Theory of Linear Operators in Hilbert Space</I>, Vol.
+I, Dover Publications, Mineola, New York (1993) [QA322.4.A3813
+1993].  </LI>
+
+<LI><A NAME="BeltramettiCassinelli1"></A> [BeltramettiCassinelli1] Enrico
+G. Beltrametti and Gianni Cassinelli, "Logical and Mathematical Structures
+of Quantum Mechanics," <I>La Rivista del Nuovo cimento</I> 6 (1976),
+321-404 [QC.R625]. </LI>
+
+<LI><A NAME="BeltramettiCassinelli"></A> [BeltramettiCassinelli] Enrico
+G. Beltrametti and Gianni Cassinelli, <I>The Logic of Quantum
+Mechanics</I> (Encyclopedia of Mathematics and Its Applications; v. 15,
+Mathematics of Physics), Addison-Wesley, Reading, Massachusetts (1981)
+[QC174.12.B45]. </LI>
+
+<LI><A NAME="Beran"></A> [Beran] Ladislav Beran, <I>Orthomodular
+Lattices; Algebraic Approach</I>, D. Reidel, Dordrecht (1985)
+[QA171.5.B4].  </LI>
+
+<LI><A NAME="Godowski"></A> [Godowski] Radoslaw Godowski, "Varieties of
+orthomodular lattices with a strongly full set of states,"
+<I>Demonstratio Mathematica</I> 14 (1981), 725-733 [QA.D384].  </LI>
+
+<LI><A NAME="GodowskiGreechie"></A> [GodowskiGreechie] Radoslaw Godowski
+and Richard Greechie, "Some equations related to states on orthomodular
+lattices," <I>Demonstratio Mathematica</I> 17 (1984), 241-251 [QA.D384].
+</LI>
+
+<LI><A NAME="Goldberg"></A> [Goldberg] Seymour Goldberg, <I>Unbounded
+Linear Operators: Theory and Applications</I>, McGraw-Hill,
+New York (1966) [QA251.G56].  </LI>
+
+<LI><A NAME="Halmos"></A> [Halmos] Paul R. Halmos, <I>Introduction to
+Hilbert Space and the Theory of Spectral Multiplicity</I>, AMS Chelsea
+Publishing, Providence, Rhode Island (1957) [QA691.H194 1957].  </LI>
+
+<LI><A NAME="Holland"></A> [Holland] Samuel S. Holland, "Partial solution
+to Mackey's problem about modular pairs and completeness," <I>Canadian
+Jornal of Mathematics</I> 21 (1969), 1518-1525 [QA.C212].</LI>
+
+<LI><A NAME="Hughes"></A> [Hughes] R. I. G. Hughes, <I>The Structure and
+Interpretation of Quantum Mechanics</I>, Harvard University Press,
+Cambridge, Massachusetts (1989) [QC174.12.H82].  </LI>
+
+<LI><A NAME="Kalmbach"></A> [Kalmbach] Gudrun Kalmbach, <I>Orthomodular
+Lattices</I>, Academic Press, London (1983) [QA171.5.K34].  </LI>
+
+<LI><A NAME="Kalmbach2"></A> [Kalmbach2] Gudrun Kalmbach, <I>Quantum
+Measures and Spaces</I>, Kluwer Academic Publishers, Dordrecht (1998)
+[QC20.7.M43.K37 1998].  </LI>
+
+<LI><A NAME="Kreyszig"></A> [Kreyszig] Erwin Kreyszig, <I>Introductory
+Functional Analysis with Applications</I>, John Wiley &amp; Sons, New
+York (1989) [QA320.K74].  </LI>
+
+<LI><A NAME="Maeda"></A> [Maeda] Shuichiro Maeda,
+"On the Symmetry of the Modular Relation in Atomic Lattices,"
+<I>J. Sci. Hiroshima Univ.</I> Ser. A-I 29 (1965), 165-170. </LI>
+
+<LI><A NAME="MaedaMaeda"></A> [MaedaMaeda] Fumitomo Maeda (1897-1965)
+and Shuichiro Maeda, <I>Theory of Symmetric Lattices</I>,
+Springer-Verlag, New York (1970) [Q171.5.M184].</LI>
+
+<LI><A NAME="Mayet"></A> [Mayet] Ren&eacute; Mayet, "Varieties of
+orthomodular lattices related to states," <I>Algebra Universalis</I> 20
+(1985), 368-396 [QA.A395].  </LI>
+
+<LI><A NAME="Mayet2"></A> [Mayet2] Ren&eacute; Mayet, "Equational bases
+for some varieties of orthomodular lattices related to states,"
+<I>Algebra Universalis</I> 23 (1986), 167-195 [QA.A395].  </LI>
+
+<LI><A NAME="Mayet3"></A> [Mayet3] Ren&eacute; Mayet, "Equations holding
+in Hilbert Lattices," <I>Int. J. Theor. Phys.</I> 45 (2006),
+1216-1246 [QC.I626].
+</LI>
+
+<LI><A NAME="MegPav2000"></A> [MegPav2000] N. Megill and M.
+Pavi&#269;i&#263;, "Equations, States, and Lattices of
+Infinite-Dimensional Hilbert Space," <I>Int. J. Theor. Phys.</I> 39
+(2000), 2337-2379, <A HREF="http://xxx.lanl.gov/abs/quant-ph/0009038"
+>http://xxx.lanl.gov/abs/quant-ph/0009038</A> [external] [QC.I626].  </LI>
+
+<LI><A NAME="Mittelstaedt"></A> [Mittelstaedt] Peter Mittelstaedt,
+<I>Quantum
+Logic</I>, D. Reidel, Dordrecht (1978) [QC174.17.M35M57].  </LI>
+
+<LI><A NAME="NielsenChuang"></A> [NielsenChuang] Michael A. Nielsen
+and Isaac L. Chuang,
+<I>Quantum
+Computation and Quantum Information</I>, Cambridge University
+Press, Cambridge (2000) [QA401.G47].  </LI>
+
+<LI><A NAME="Pavicic"></A> [Pavicic] M. Pavi&#269;i&#263;, "Nonordered
+Quantum Logic," <I>Int.  J. of Theor.  Phys.</I> 32, 1481-1505 (1993),
+<A
+HREF="ftp://m3k.grad.hr/pavicic/quantum-logic/1993-int-j-theor-phys-2.ps.gz">
+ftp://m3k.grad.hr/pavicic/quantum-logic/1993-int-j-theor-phys-2.ps.gz</A>
+[external] [QC.I626].  </LI>
+
+<LI><A NAME="Pavicic2"></A> [Pavicic2] Mladen Pavi&#269;i&#263;,
+<I>Quantum
+Computation and Quantum Communication: Theory
+and Experiments</I>, Springer, New York (2005) [QA76.889.P38].  </LI>
+
+<LI><A NAME="PavicicMegill"></A> [PavicicMegill] M. Pavi&#269;i&#263;
+and N. Megill, "Quantum and Classical Implicational Algebras with
+Primitive Implication," <I>Int.  J. of Theor.  Phys.</I> 37, 2091-2098
+(1998), <A
+HREF="ftp://m3k.grad.hr/pavicic/quantum-logic/1998-int-j-theor-phys-2.ps.gz">
+ftp://m3k.grad.hr/pavicic/quantum-logic/1998-int-j-theor-phys-2.ps.gz</A>
+[external] [QC.I626].  </LI>
+
+<LI><A NAME="Prugovecki"></A> [Prugovecki] Eduard Prugove&#269;ki,
+<I>Quantum Mechanics in Hilbert Space</I>, Academic Press, New York
+(1981) [QA322.P971 1981].  </LI>
+
+<LI><A NAME="PtakPulmannova"></A> [PtakPulmannova] Pavel Pt&aacute;k and
+Sylvia Pulmannov&aacute;, <I>Orthomodular Structures as Quantum
+Logics</I>, Kluwer Academic Publishers, Dordrecht (1991)
+[QC174.17.M35P7713].  </LI>
+
+<LI><A NAME="ReedSimon"></A> [ReedSimon] Michael Reed and Barry Simon,
+<I>Methods of Modern Mathematical Physics</I>, Vol.  I:  Functional
+Analysis, Academic Press, New York (1972) [QC20.7.F84.R43].  </LI>
+
+<LI><A NAME="Retherford"></A> [Retherford] J. Ron Retherford,
+<I>Hilbert Space:  Compact Operators and the Trace Theorem</I>,
+Cambridge University Press, Cambridge (1993) [QA322.4.R48].  </LI>
+
+<LI><A NAME="Schechter"></A> [Schechter] Eric Schechter, <I>Handbook of
+Analysis and Its Foundations</I>, Academic Press, San Diego (1997)
+[QA300.S339].  </LI>
+
+<LI><A NAME="Young"></A> [Young] Nicholas Young, <I>An Introduction to
+Hilbert Space</I>, Cambridge University Press, Cambridge (1988)
+[QA322.4.Y68].  </LI>
+
+
+<LI>(The remaining references are not part of the Hilbert Space
+Explorer but are referenced by user mathboxes at the end of
+set.mm)  </LI>
+
+
+<LI><A NAME="Diestel"></A> Diestel, Reinhard, <I>Graph Theory,
+Electronic Edition,</I> Springer-Verlag, Heidelberg, 2005
+[QA166.D51413].
+URL: <A HREF="http://www.math.uni-hamburg.de/home/diestel/books/graph.theory/">
+http://www.math.uni-hamburg.de/home/diestel/books/graph.theory/</A></LI>
+
+<LI><A NAME="Margaris"></A> Margaris, Angelo, <I>First Order
+Mathematical Logic,</I> Blaisdell Publishing Company, Waltham,
+Massachusetts, 1967 [QA9.M327].</LI>
+
+<LI><A NAME="McKMegPav"></A> McKay, B., N. Megill, and M. Pavicic,
+&quot;Algorithms for Greechie Diagrams,&quot; <I>Int.  J. Theor.
+Phys.,</I> 39:2393-2417, 2000 [QC.I626].
+URL: <A HREF="http://xxx.lanl.gov/abs/quant-ph/0009039">
+http://xxx.lanl.gov/abs/quant-ph/0009039</A></LI>
+
+<LI><A NAME="Suppes"></A> Suppes, Patrick, <I>Axiomatic Set Theory,</I>
+Dover Publications, Inc., 1972 [QA248.S959].</LI>
+
+
+
+
+</OL>
+
+
+<P><HR NOSHADE SIZE=1><A NAME="calcite"></A><B><FONT
+COLOR="#006633">(Explanation of photo)</FONT></B>&nbsp;&nbsp;&nbsp;
+<I>Optical calcite</I> (CaCO<SUB>3</SUB>)
+is often used as a polarization analyzer in quantum
+mechanics experiments.    It is birefringent, splitting
+a beam of light into two beams of orthogonally polarized photons.
+The specimen shown is about 2.5cm long and
+illustrates the 74&deg;55' natural
+cleavage angle of the crystal's rhombohedral structure.
+
+<P><FONT SIZE=-1>Photo credit:  Norman Megill
+<BR>Photo copyright:  Released to public domain by
+  the photographer (March 2004)</FONT>
+
+
+<P>
+
+<HR NOSHADE SIZE=1>
+
+<TABLE BORDER=0 WIDTH="100%"><TR>
+
+<TD ALIGN=LEFT VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
+&nbsp;</FONT></TD>
+
+<TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
+ page was last updated on 26-Sep-2017.</FONT></I><BR><FONT
+FACE="ARIAL" SIZE=-2>Your
+ comments are welcome:
+Norman Megill <A HREF="../email.html"><IMG BORDER=0
+SRC="_nmemail.gif"
+ALT="nm at alum dot mit dot edu"
+TITLE="nm at alum dot mit dot edu"
+ WIDTH=90 HEIGHT=13 STYLE="margin-bottom:-3px"></A><BR>
+Copyright terms:
+<A HREF="../copyright.html#pd">Public domain</A></FONT></TD>
+
+<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT FACE="ARIAL" SIZE=-2>
+<A
+HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
+[external]
+</FONT>
+</TD>
+
+</TR></TABLE>
+
+<!-- <SCRIPT SRC="http://www.google-analytics.com/urchin.js" TYPE="text/javascript">
+</SCRIPT>
+<SCRIPT TYPE="text/javascript">
+_uacct = "UA-1862729-1";
+urchinTracker();
+</SCRIPT>
+-->
+
+</BODY>
+</HTML>

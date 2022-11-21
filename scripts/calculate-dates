@@ -1,0 +1,51 @@
+#!/bin/sh
+# Report dates and cumulative contributions by those dates in CSV format.
+# (C) 2018 David A. Wheeler
+# This script is released as open source software under the MIT license.
+# SPDX-License-Identifier: MIT
+
+# Compute dates of .mm file specified in $1 (default set.mm)
+mmfile="${1:-set.mm}"
+
+# Requires GNU extension for grep (-o)
+# We use the grep "-E" option for extended regular expressions.
+
+# The metamath.exe program breaks up comments, so we'll find contribution
+# dates by processing the text of set.mm directly.  They're stored
+# in the file in this form: 2-Jun-2015.
+# Note: We auto-fix contributions from 1017 (should be 2017).
+
+# This is a simple AWK script to calculate cumulative values, as well as
+# swapping the order and separating with commas.
+calculate_cumulative='
+BEGIN {
+  sum=0
+  OFS=","
+  print "Date,Cumulative Total"
+}
+{
+  sum=sum+$1
+  print $2,sum
+}
+'
+
+# Extract the "Contributed by" dates, convert them to ISO 8601 date format,
+# sort and count how many occur on each date, and finally convert
+# them to cumulative values.
+tr '\n' ' ' < "$mmfile" | grep -Eo '\(Contributed by [^)]*\)' | \
+  grep -Eo '[1-9][0-9]?-[A-Z][a-z][a-z]-[0-9]{4}' |
+  sed -Ee 's/([0-9]*)-Jan-([0-9]{4})/\2-01-\1/' \
+      -e 's/([0-9]*)-Feb-([0-9]{4})/\2-02-\1/' \
+      -e 's/([0-9]*)-Mar-([0-9]{4})/\2-03-\1/' \
+      -e 's/([0-9]*)-Apr-([0-9]{4})/\2-04-\1/' \
+      -e 's/([0-9]*)-May-([0-9]{4})/\2-05-\1/' \
+      -e 's/([0-9]*)-Jun-([0-9]{4})/\2-06-\1/' \
+      -e 's/([0-9]*)-Jul-([0-9]{4})/\2-07-\1/' \
+      -e 's/([0-9]*)-Aug-([0-9]{4})/\2-08-\1/' \
+      -e 's/([0-9]*)-Sep-([0-9]{4})/\2-09-\1/' \
+      -e 's/([0-9]*)-Oct-([0-9]{4})/\2-10-\1/' \
+      -e 's/([0-9]*)-Nov-([0-9]{4})/\2-11-\1/' \
+      -e 's/([0-9]*)-Dec-([0-9]{4})/\2-12-\1/' \
+      -e 's/^1017-/2017-/' \
+      -e 's/-([1-9])$/-0\1/' | sort | uniq -c | sed -e 's/^ *//' |
+  awk -- "$calculate_cumulative"

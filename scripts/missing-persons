@@ -1,0 +1,19 @@
+#!/bin/sh
+# Print contributors missing from "people" directory; sort by # contributions
+
+IFS="$(printf '\n\t')"
+
+# Get all contributions
+scripts/report-changes.py > changes-simple.log
+
+# List just contributors, sorted by number of contributions
+cut -d '|' -f 2 changes-simple.log | sort | uniq -c | \
+  sort -nr | sed -e 's/^ *//' -e 's/  */ /' | cut -f 2- -d ' ' > people.log
+
+# Print contributors not found in the pictures directory, sorted by number
+# of contributions (top first)
+for p in $(cat people.log); do
+  if [ "$(echo "people/${p}."*)" = "people/${p}.*" ] ; then
+    printf '%s\n' "$p"
+  fi
+done

@@ -1,0 +1,8408 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+
+<!-- improve mobile display -->
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>Home - Intuitionistic Logic Explorer</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+
+<STYLE TYPE="text/css">
+<!--
+/* Math symbol image will be shifted down 4 pixels to align with normal
+  text for compatibility with various browsers.  The old ALIGN=TOP for
+  math symbol images did not align in all browsers and should be deleted.
+  All other images must override this shift with STYLE="margin-bottom:0px".
+  (2-Oct-2015 nm) */
+img { margin-bottom: -4px }
+-->
+</STYLE>
+
+</HEAD>
+
+
+<!-- <BODY BGCOLOR="#EEFFFA"> -->
+<BODY BGCOLOR="#FFFFFF" STYLE="padding: 0px 8px">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP><A HREF="../index.html"><IMG SRC="_icon-il.gif"
+      BORDER=0
+      ALT="Metamath Home"
+      TITLE="Metamath Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER VALIGN=TOP><FONT SIZE="+3"
+      COLOR="#006633"><B>Intuitionistic Logic Explorer Home Page</B></FONT>
+    </TD>
+
+    <TD NOWRAP ALIGN=RIGHT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif> <A HREF="wn.html">First &gt;</A><BR><A
+      HREF="ax1hfs.html">Last &gt;</A></FONT>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD COLSPAN=3 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+        &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;ILE Home&nbsp; &gt;
+      &nbsp;<A HREF="mmtheorems.html">Th. List</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmrecent.html">Recent</A>
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+
+<HR NOSHADE SIZE=1>
+
+<CENTER>
+<B><FONT COLOR="#006633">Created by Mario Carneiro</FONT></B>
+</CENTER>
+
+<HR NOSHADE SIZE=1>
+<B><FONT COLOR="#006633">Intuitionistic Logic Proof Explorer</FONT></B>
+
+
+<!--
+<P><I>Intuitionistic Logic</I> (<A
+HREF="https://en.wikipedia.org/wiki/Intuitionistic_logic">Wikipedia</A>
+[accessed 19-Jul-2015], <A
+HREF="http://plato.stanford.edu/entries/logic-intuitionistic/"> Stanford
+Encyclopedia of Philosophy</A> [accessed 19-Jul-2015]) is a logic weaker
+than classical logic that can be thought of as a weakening of classical
+logic such that the law of excluded middle, (<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> <FONT FACE=sans-serif> &or;</FONT>
+&not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>), doesn't always hold.
+Specifically, it holds if we have a proof for <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> or we have a proof for &not; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>, but it doesn't necessarily hold if
+we don't have a proof of either one.  Intuitionistic logic can be
+thought of as a constructive logic in which we must build and exhibit
+concrete examples of objects before we can accept their existence.  A
+proof by contradiction, where denial of an assertion to be proved leads
+to asserting a falsehood, will generally not be valid in intuitionistic
+logic.
+-->
+
+<!-- the above was replaced by David A. Wheeler: -->
+
+<P><I>Intuitionistic Logic</I> (<A
+HREF="https://en.wikipedia.org/wiki/Intuitionistic_logic">Wikipedia</A>
+[accessed 19-Jul-2015], <A
+HREF="http://plato.stanford.edu/entries/logic-intuitionistic/"> Stanford
+Encyclopedia of Philosophy</A> [accessed 19-Jul-2015]) can be
+thought of as a constructive logic in which we must build and exhibit
+concrete examples of objects before we can accept their existence.
+Unproved statements in intuitionistic logic are not given an intermediate truth value,
+instead, they remain of unknown truth value until they are either proved or disproved.
+Intuitionist logic can also be thought of as a weakening of classical
+logic such that the law of excluded middle (LEM), (<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> <FONT FACE=sans-serif> &or;</FONT>
+&not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>), doesn't always hold.
+Specifically, it holds if we have a proof for <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> or we have a proof for &not; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>, but it doesn't necessarily hold if
+we don't have a proof of either one.
+There is also no rule for double negation elimination.
+Brouwer observed in 1908 that LEM was abstracted from finite situations,
+then extended without justification to statements about infinite collections.
+
+<HR NOSHADE SIZE=1>
+
+
+
+<TABLE  WIDTH="100%"><TR>
+
+<TD VALIGN=top>
+<B><FONT COLOR="#006633">Contents of this page</FONT></B>
+<MENU>
+  <LI> <A HREF="#overview">Overview of intuitionistic logic</A></LI>
+  <LI> <A HREF="#overview2">Overview of this work</A></LI>
+  <LI> <A HREF="#axioms">The axioms</A></LI>
+  <LI> <A HREF="#theorems">Some theorems</A></LI>
+  <LI> <A HREF="#intuitionize">How to intuitionize classical proofs</A></LI>
+  <LI> <A HREF="#setmm">Metamath Proof Explorer cross reference</A></LI>
+  <LI> <A HREF="#bib">Bibliography</A></LI>
+</MENU></TD>
+
+<TD VALIGN=top>
+<B><FONT COLOR="#006633">Related pages</FONT></B>
+
+<MENU>
+<LI> <A HREF="mmtheorems.html">Table of Contents and Theorem List</A></LI>
+
+<LI>
+ <A HREF="mmrecent.html">Most Recent Proofs
+ (this mirror)</A>
+  (<A HREF="http://us2.metamath.org:88/ileuni/mmrecent.html">latest</A>)
+    </LI>
+
+<LI> <A HREF="mmbiblio.html">Bibliographic Cross-Reference</A></LI>
+<LI> <A HREF="mmdefinitions.html">Definition List</A></LI>
+<LI> <A HREF="mmascii.html">ASCII Equivalents for Text-Only Browsers</A></LI>
+<LI>
+<A HREF="../metamath/iset.mm">Metamath database iset.mm (ASCII file)</A>
+</LI>
+</MENU>
+
+<B><FONT COLOR="#006633">External links</FONT></B>
+<MENU>
+<LI>
+<A HREF=" https://github.com/metamath/set.mm">GitHub repository</A>
+[accessed 06-Jan-2018]
+</LI>
+</MENU>
+
+</TD>
+</TR></TABLE>
+
+<HR NOSHADE SIZE=1><A NAME="overview"></A><B><FONT COLOR="#006633">
+Overview of intuitionistic logic</FONT></B>
+
+<P>(Placeholder for future use)
+
+
+<HR NOSHADE SIZE=1><A NAME="overview2"></A><B><FONT COLOR="#006633">
+Overview of this work</FONT></B>
+
+<P>(By G&eacute;rard Lang, 7-May-2018)
+
+<P>Mario Carneiro's work (Metamath database) "iset.mm" provides in Metamath a
+development of "set.mm" whose eventual
+aim is to show how many of the theorems of set theory and
+mathematics that can be derived from classical first order logic can
+also be derived from a weaker system called "intuitionistic logic."  To
+achieve this task, iset.mm adds (or substitutes) intuitionistic
+axioms for a number of the classical logical axioms of set.mm.
+
+<P>Among these new axioms, the first six
+( ~ ax-ia1 ,
+~ ax-ia2 ,
+~ ax-ia3 ,
+~ ax-io ,
+~ ax-in1 ,
+and
+~ ax-in2 ), when added to
+~ ax-1 ,
+~ ax-2 ,
+and
+~ ax-mp ,
+allow for the development of intuitionistic propositional logic.
+We omit the classical axiom
+<SPAN CLASS=math>((&not;
+<SPAN CLASS=wff STYLE="color:blue">&#x1D711;</SPAN> &rarr; &not; <SPAN
+CLASS=wff STYLE="color:blue">&#x1D713;</SPAN>) &rarr; (<SPAN CLASS=wff
+STYLE="color:blue">&#x1D713;</SPAN> &rarr; <SPAN CLASS=wff
+STYLE="color:blue">&#x1D711;</SPAN>))</SPAN> (which is ax-3 in
+set.mm).  Each of our new axioms is a theorem of classical
+propositional logic, but ax-3 cannot be derived from them.  Similarly,
+other basic classical theorems, like the third middle excluded or the
+equivalence of a proposition with its double negation, cannot be derived
+in intuitionistic propositional calculus.  Glivenko showed that a
+proposition <FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+ is a theorem of classical propositional calculus if and only
+if &not;&not;<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+ is a theorem of intuitionistic propositional calculus.
+
+<P>The next 4 new axioms
+( ~ ax-ial ,
+~ ax-i5r ,
+~ ax-ie1 ,
+and
+~ ax-ie2 )
+together with the set.mm axioms
+~ ax-4 ,
+~ ax-5 ,
+~ ax-7 ,
+and
+~ ax-gen
+do not mention equality or distinct variables.
+
+<P>The ~ ax-i9 axiom is just a slight variation of the classical ~ ax-9 .
+The classical axiom ~ ax-12 is strengthened into first ~ ax-i12 and then
+~ ax-bndl (two results which would be fairly readily equivalent to ~ ax-12
+classically but which do not follow from ~ ax-12 , at least not in an obvious
+way, in intuitionistic logic).
+
+The substitution of ~ ax-i9 , ~ ax-i12 , and ~ ax-bndl for ~ ax-9 and ~ ax-12
+and the inclusion of
+~ ax-8 ,
+~ ax-10 ,
+~ ax-11 ,
+~ ax-13 ,
+~ ax-14 ,
+and
+~ ax-17
+allow for the development of the intuitionistic predicate calculus.
+
+<P>Each of the new axioms is a theorem of classical first order
+logic with equality.  But some axioms of classical first order logic
+with equality, like ax-3, cannot be derived in the intuitionistic
+predicate calculus.</P>
+
+<P>One of the major interests of the intuitionistic predicate calculus
+is that its use can be considered as a realization of the program of the
+constructivist philosophical view of mathematics.
+
+
+<HR NOSHADE SIZE=1><A NAME="axioms"></A><B><FONT COLOR="#006633">
+The axioms</FONT></B>
+
+<P>As with the <A HREF="mmset.html#axioms">classical axioms</A>
+we have propositional logic and predicate logic.
+
+<P>The axioms of intuitionistic propositional logic consist of some of the axioms from
+classical propositional logic, plus additional axioms for the operation of the 'and',
+'or' and 'not' connectives.
+
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Axioms of intuitionistic propositional calculus">
+<CAPTION><B>Axioms of intuitionistic propositional calculus</B></CAPTION>
+
+<TR ALIGN=LEFT><TD> <A HREF="ax-1.html"> Axiom <I>Simp</I></A></TD>
+<TD><FONT COLOR="#006633"><B>ax-1</B></FONT></TD>
+<TD><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; (<FONT
+COLOR="#0000FF"><I>&psi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>))</TD>
+</TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-2.html">Axiom <I>Frege</I></A></TD> <TD
+NOWRAP><FONT COLOR="#006633"><B>ax-2</B></FONT></TD>
+<TD>
+<FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>((<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; (<FONT
+COLOR="#0000FF"><I>&psi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&chi;</I></FONT>)) &rarr; ((<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr; (<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&chi;</I></FONT>)))</TD>
+</TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="ax-mp.html">Rule of Modus Ponens</A></TD> <TD NOWRAP><FONT
+COLOR="#006633"><B>ax-mp</B></FONT></TD>
+<TD>` |- ph `  &nbsp;&nbsp;&amp; &nbsp;
+` |- ph -> ps `  &nbsp; &#x21D2; &nbsp; ` |- ps `</TD>
+</TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="ax-ia1.html">Left 'and' elimination</A></TD><TD><FONT
+COLOR="#006633"><B>ax-ia1</B></FONT></TD><TD>
+` |- ( ( ph /\ ps ) -> ph ) `</TD></TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="ax-ia2.html">Right 'and' elimination</A></TD><TD><FONT
+COLOR="#006633"><B>ax-ia2</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>((<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+<FONT FACE="sans-serif">&and;</FONT> <FONT COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>)</TD></TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="ax-ia3.html">'And' introduction</A></TD><TD><FONT
+COLOR="#006633"><B>ax-ia3</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>(<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+&rarr; (<FONT COLOR="#0000FF"><I>&psi;</I></FONT> &rarr; (<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+<FONT FACE="sans-serif">&and;</FONT> <FONT COLOR="#0000FF"><I>&psi;</I></FONT>)))</TD></TR>
+
+<TR ALIGN="LEFT"><TD><A
+HREF="ax-io.html">Definition of 'or'</A></TD><TD><FONT COLOR="#006633"><B>ax-io</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>(((<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+<FONT FACE="sans-serif"> &or;</FONT> <FONT COLOR="#0000FF"><I>&chi;</I></FONT>)
+&rarr; <FONT COLOR="#0000FF"><I>&psi;</I></FONT>)
+&#x2194; ((<FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>) <FONT FACE="sans-serif">&and;</FONT>
+(<FONT COLOR="#0000FF"><I>&chi;</I></FONT> &rarr; <FONT COLOR="#0000FF"><I>&psi;</I></FONT>)))
+
+<TR ALIGN="LEFT"><TD><A
+HREF="ax-in1.html">'Not' introduction</A></TD><TD><FONT COLOR="#006633"><b>ax-in1</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866;
+</FONT>((<FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>)
+&rarr; &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>)</TD></TR>
+
+<TR ALIGN="LEFT"><TD><A
+HREF="ax-in2.html">'Not' elimination</A></TD><TD><FONT COLOR="#006633"><B>ax-in2</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>(&not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+&rarr; (<FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT COLOR="#0000FF"><I>&psi;</I></FONT>))</TD></TR>
+
+</TABLE>
+
+</CENTER>
+
+<P>Unlike in classical propositional logic, 'and' and 'or' are not readily defined in terms of
+implication and 'not'. In particular, <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &or;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT> is not equivalent to &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>,
+nor is <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT> equivalent to &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &or;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>, nor is <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &and;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT> equivalent to &not; (<FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; &not;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>).</P>
+
+<P>The ax-in1 axiom is a form of proof by contradiction which does hold intuitionistically. That is, if
+<FONT COLOR="#0000FF"><I>&phi;</I></FONT> implies a contradiction (such as its own negation),
+then one can conclude &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>. By contrast, assuming
+&not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+and then deriving a contradiction only serves to prove &not; &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>,
+which in intuitionistic logic is not the same as <FONT COLOR="#0000FF"><I>&phi;</I></FONT>.</P>
+
+<P>The biconditional can be defined as the conjunction of two implications, as in
+<A HREF="dfbi2.html">dfbi2</a> and <A HREF="df-bi.html">df-bi</a>.</P>
+
+<P><A NAME="pcaxioms"></A><B><FONT COLOR="#006633">Predicate
+logic</FONT></B> adds set variables (individual variables) and the ability to quantify
+them with &#x2200; (for-all) and &#x2203; (there-exists). Unlike in classical logic, &#x2203;
+cannot be defined in terms of &#x2200;. As in classical logic, we also add = for equality
+(which is key to how we handle substitution in metamath) and &#x2208; (which for current
+purposes can just be thought of as an arbitrary predicate, but which will later come to
+mean set membership).</P>
+
+<p>Our axioms are based on the classical set.mm predicate logic axioms, but adapted for
+intuitionistic logic, chiefly by adding additional axioms for &#x2203; and also changing
+some aspects of how we handle negations.</p>
+
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Axioms of intuitionistic predicate logic">
+<CAPTION><B>Axioms of intuitionistic predicate logic</B></CAPTION>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-4.html">Axiom of Specialization</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-4</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD> <A HREF="ax-5.html">Axiom of Quantified Implication</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-5</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr; (<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-i5r.html">The converse of ax-5o</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-i5r</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>((<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-7.html">Axiom of Quantifier Commutation</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-7</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-gen.html">Rule of Generalization</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-gen</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &nbsp;&nbsp;=&gt; &nbsp;&nbsp;<SPAN >
+<FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT></SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ial.html"><SPAN ><I><FONT
+COLOR="#FF0000">x</FONT></I></SPAN> is bound in <SPAN ><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT></SPAN></A></TD>
+<TD><FONT COLOR="#006633"><B>ax-ial</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ie1.html"><SPAN ><I><FONT
+COLOR="#FF0000">x</FONT></I></SPAN> is bound in <SPAN ><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT></SPAN></A></TD>
+<TD><FONT COLOR="#006633"><B>ax-ie1</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ie2.html">Define existential
+quantification</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-ie2</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
+COLOR="#0000FF"><I>&psi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr; (<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &harr; (<FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-8.html">Axiom of Equality</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-8</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">z</FONT></I>
+&rarr; <I><FONT COLOR="#FF0000">y</FONT></I> = <I><FONT
+COLOR="#FF0000">z</FONT></I>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-i9.html">Axiom of Existence</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-i9</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I> <I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I></SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-10.html">Axiom of Quantifier
+Substitution</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-10</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I> <I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">y</FONT></I>
+<I><FONT COLOR="#FF0000">y</FONT></I> = <I><FONT
+COLOR="#FF0000">x</FONT></I>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-11.html">Axiom of Variable
+Substitution</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-11</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">y</FONT></I><FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">x</FONT></I>(<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I> &rarr; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-i12.html">Axiom of Quantifier
+Introduction</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-i12</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I> <I><FONT
+COLOR="#FF0000">z</FONT></I> = <I><FONT COLOR="#FF0000">x</FONT></I> <FONT
+FACE=sans-serif> &or;</FONT> (<FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">z</FONT></I> <I><FONT COLOR="#FF0000">z</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif> &or;</FONT> <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>
+<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-bndl.html">Axiom of Bundling</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-bndl</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I> <I><FONT
+COLOR="#FF0000">z</FONT></I> = <I><FONT COLOR="#FF0000">x</FONT></I> <FONT
+FACE=sans-serif> &or;</FONT> (<FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">z</FONT></I> <I><FONT COLOR="#FF0000">z</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif> &or;</FONT> <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>
+<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-13.html">Left Membership Equality</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-13</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<I><FONT COLOR="#FF0000">x</FONT></I> <FONT FACE=sans-serif>&isin;</FONT>
+<I><FONT COLOR="#FF0000">z</FONT></I> &rarr; <I><FONT
+COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">z</FONT></I>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-14.html">Right Membership Equality</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-14</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<I><FONT COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT>
+<I><FONT COLOR="#FF0000">x</FONT></I> &rarr; <I><FONT
+COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">y</FONT></I>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-17.html">Distinctness</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-17</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN>,
+where <FONT COLOR="#FF0000">x</FONT> does not occur in <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT></TD></TR>
+
+</TABLE>
+</CENTER>
+
+<P><A NAME="staxioms"></A><B><FONT COLOR="#006633">Set theory</FONT></B>
+uses the formalism of propositional and predicate calculus to assert
+properties of arbitrary mathematical objects called "sets."  A set can
+be an element of another set, and this relationship is indicated by the
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> symbol.
+Starting with the simplest mathematical object, called the empty set,
+set theory builds up more and more complex structures whose existence
+follows from the axioms, eventually resulting in extremely complicated
+sets that we identify with the real numbers and other familiar
+mathematical objects.  These axioms were developed in response to <A
+HREF="ru.html">Russell's Paradox</A>, a discovery that revolutionized
+the foundations of mathematics and logic.</P>
+
+<P><A NAME="izfaxioms"></A> In the IZF axioms that follow, <I>all set
+variables are assumed to be</I> <A HREF="#distinct">distinct</A>.  If
+you click on their links you will see the explicit distinct variable
+conditions.</P>
+
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Intuitionistic Zermelo-Fraenkel Set Theory (IZF)">
+<CAPTION><B>Intuitionistic Zermelo-Fraenkel Set Theory (IZF)</B></CAPTION>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ext.html">Axiom of Extensionality</A></TD>
+<TD NOWRAP><FONT COLOR="#006633"><B>ax-ext</B></FONT></TD>
+<TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<I><FONT
+COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">x</FONT></I> &harr; <I><FONT COLOR="#FF0000">z</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">y</FONT></I>) &rarr;
+<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-coll.html">Axiom of Collection</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-coll</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <SPAN CLASS=set
+STYLE="color:red">&#x1D44E;</SPAN> <FONT FACE=sans-serif>&exist;</FONT><I><FONT
+COLOR="#FF0000">y</FONT></I><FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT FACE=sans-serif>&exist;</FONT><SPAN CLASS=set
+STYLE="color:red">&#x1D44F;</SPAN><FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">x</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <SPAN
+CLASS=set STYLE="color:red">&#x1D44E;</SPAN> <FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">y</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <SPAN CLASS=set
+STYLE="color:red">&#x1D44F;</SPAN> <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-sep.html">Axiom of Separation</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-sep</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<I><FONT
+COLOR="#FF0000">x</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">y</FONT></I> &harr; (<I><FONT COLOR="#FF0000">x</FONT></I>
+<FONT FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">z</FONT></I> <FONT
+FACE=sans-serif>&and;</FONT> <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-pow.html">Axiom of Power Sets</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-pow</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">w</FONT></I>(<I><FONT
+COLOR="#FF0000">w</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">z</FONT></I> &rarr; <I><FONT COLOR="#FF0000">w</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">x</FONT></I>) &rarr;
+<I><FONT COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT>
+<I><FONT COLOR="#FF0000">y</FONT></I>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-pr.html">Axiom of Pairing</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-pr</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">z</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">w</FONT></I>((<I><FONT
+COLOR="#FF0000">w</FONT></I> = <I><FONT COLOR="#FF0000">x</FONT></I> <FONT
+FACE=sans-serif> &or;</FONT> <I><FONT COLOR="#FF0000">w</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I>) &rarr; <I><FONT COLOR="#FF0000">w</FONT></I>
+<FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">z</FONT></I>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-un.html">Axiom of Union</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-un</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">w</FONT></I>(<I><FONT
+COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">w</FONT></I> <FONT FACE=sans-serif>&and;</FONT> <I><FONT
+COLOR="#FF0000">w</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">x</FONT></I>) &rarr; <I><FONT COLOR="#FF0000">z</FONT></I>
+<FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">y</FONT></I>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-setind.html">Axiom of Set Induction</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-setind</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><SPAN CLASS=set
+STYLE="color:red">&#x1D44E;</SPAN>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">y</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <SPAN CLASS=set
+STYLE="color:red">&#x1D44E;</SPAN> [<I><FONT COLOR="#FF0000">y</FONT></I> /
+<SPAN CLASS=set STYLE="color:red">&#x1D44E;</SPAN>]<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>) &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><SPAN CLASS=set
+STYLE="color:red">&#x1D44E;</SPAN><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD>
+</TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-iinf.html">Axiom of Infinity</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-iinf</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(&empty;
+<FONT FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">x</FONT></I> <FONT
+FACE=sans-serif>&and;</FONT> <FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">y</FONT></I>(<I><FONT COLOR="#FF0000">y</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">x</FONT></I> &rarr; suc
+<I><FONT COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif>&isin;</FONT>
+<I><FONT COLOR="#FF0000">x</FONT></I>))</SPAN>
+</TD></TR>
+
+</TABLE></CENTER>
+
+<P>We develop set theory based on the Intuitionistic Zermelo-Fraenkel
+(IZF) system, mostly following the IZF axioms as laid out in [Crosilla].
+The one exception to the statement that we use IZF is that a few sections
+develop set theory using Constructive Zermelo-Fraenkel (CZF), also described
+in Crosilla. These sections start at ~ wbd (including the section header right
+before it) and the biggest complication is the machinery to classify formulas
+as bounded formulas, for purposes of the Axiom of Restricted Separation
+~ ax-bdsep .</P>
+
+<P></P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
+Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P></P><CENTER><FONT COLOR="#006633"><I>From a psychological point of view,
+learning constructive mathematics is agonizing, for it requires one to
+first unlearn certain deeply ingrained intuitions and
+habits acquired during classical mathematical training.</I>
+<BR> &mdash;Andrej Bauer</FONT></CENTER>
+
+<P>Listed here are some examples of starting points for your journey
+through the maze.  Some are stated just as they would be in a
+non-constructive context; others are here to highlight areas which
+look different constructively.
+You should study some simple proofs from
+propositional calculus until you get the hang of it.  Then try some
+predicate calculus and finally set theory.</P>
+
+<P>The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
+theorems in the database.  You may also find the <A
+HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.</P>
+
+
+<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%"><TR><TD VALIGN=TOP WIDTH="50%">
+<B>Propositional calculus</B>
+<MENU>
+<LI>
+<A HREF="idALT.html">Law of identity</A></LI>
+
+<LI>
+<A HREF="prth.html">Praeclarum theorema</A></LI>
+
+<LI>
+<A HREF="con3.html">Contraposition introduction</A></LI>
+
+<LI>
+<A HREF="notnot.html">Double negation introduction</A></LI>
+
+<LI>
+<A HREF="notnotnot.html">Triple negation</A></LI>
+
+<LI>
+<A HREF="df-xor.html">Definition of exclusive or</A></LI>
+
+<LI>
+<A HREF="dfnot.html">Negation and the false constant</A></LI>
+</MENU>
+<B>Predicate calculus</B>
+<MENU>
+<LI>
+<A HREF="19.12.html">Existential and universal quantifier swap</A></LI>
+
+<LI>
+<A HREF="19.35-1.html">Existentially quantified implication</A></LI>
+
+<LI>
+<A HREF="equid.html"><I>x</I> = <I>x</I></A></LI>
+
+<LI>
+<A HREF="df-sb.html">Definition of proper substitution</A></LI>
+
+<LI>
+<A HREF="2eu7.html">Double existential uniqueness</A></LI>
+
+</MENU>
+<B>Set theory</B>
+<MENU>
+<LI>
+<A HREF="uncom.html">Commutative law for union</A></LI>
+
+<LI>
+<A HREF="abeq2.html">A basic relationship between class and wff
+variables</A></LI>
+
+<LI>
+<A HREF="isset.html">Two ways of saying &quot;is a set&quot;</A></LI>
+
+<LI>
+<A HREF="regexmid.html">The ZF axiom of foundation implies excluded middle</A></LI>
+
+<LI>
+<A HREF="ru.html">Russell's paradox</A></LI>
+
+<LI>
+<A HREF="ordtriexmid.html">Ordinal trichotomy implies excluded middle</A></LI>
+
+<LI>
+<A HREF="findes.html">Mathematical (finite) induction</A></LI>
+
+<LI>Peano's postulates for arithmetic:
+<A HREF="peano1.html">1</A>
+<A HREF="peano2.html">2</A>
+<A HREF="peano3.html">3</A>
+<A HREF="peano4.html">4</A>
+<A HREF="peano5.html">5</A></LI>
+
+<LI><A HREF="nndceq.html">Two natural numbers are either equal or not equal</A> (a special case of the law of the excluded middle which we can prove).</LI>
+
+<LI><A HREF="nn0suc.html">A natural number is either zero or a successor</A></LI>
+
+<LI>
+<A HREF="acexmid.html">The axiom of choice implies excluded middle</A></LI>
+
+<LI>
+<A HREF="onprc.html">Burali-Forti paradox</A></LI>
+
+<LI>
+<A HREF="tfis3.html">Transfinite induction</A></LI>
+
+<LI>
+<A HREF="oacl.html">Closure law for ordinal addition</A></LI>
+
+</MENU>
+<B>Real and complex numbers</B>
+
+<MENU>
+<LI> <A HREF="arch.html">Archimedean property of real numbers</A></LI>
+
+<LI>Properties of apartness:
+<A HREF="apirr.html">1</A>
+<A HREF="apsym.html">2</A>
+<A HREF="apcotr.html">3</A>
+<A HREF="apti.html">4</A></LI>
+
+<LI> <A HREF="sqrt2irrap.html">The square root of 2 is irrational</A> (a
+different statement than <A HREF="sqrt2irr.html">The square root of 2
+is not rational</A>)</LI>
+
+<LI> <A HREF="climcvg1n.html">Convergence of a sequence of complex
+numbers</A> given a condition on the rate of convergence</LI>
+
+<LI> <A HREF="abstrii.html">Triangle inequality for absolute
+value</A></LI>
+
+<LI> <A HREF="maxleb.html">The maximum of two real numbers</A></LI>
+
+</MENU>
+</TD></TR></TABLE>
+
+<HR NOSHADE SIZE=1><A NAME="intuitionize"></A><B><FONT
+COLOR="#006633">How to intuitionize classical proofs</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P>For the student or master of classical mathematics, constructive mathematics
+can be baffling. One can get over some of the intial hurdles of understanding
+how constructive mathematics works and why it might be interesting by reading
+<A HREF="#Bauer">[Bauer]</A> but that work does little to explain in concrete terms how to write
+proofs in intuitionistic logic. Fortunately, metamath helps with one of the
+biggest hurdles: noticing when one is even using the law of the excluded
+middle or the axiom of choice. But suppose you have a classical proof from
+the Metamath Proof Explorer and it fails to verify when you copy it over to
+the Intuitionistic Logic Explorer. What then? Here are some rules of thumb
+in converting classical proofs to intuitionistic ones.</P>
+
+<UL>
+
+<LI>If you see case elimination ( pm2.61 or its variants) you'll probably end up with two theorems for the two cases. In particular, if the cases were ` A e. _V ` and ` -. A e. _V ` you probably just care about the ` A e. _V ` case.
+On the other hand, if the proposition being eliminated is decidable
+(for example due to ~ nndceq , ~ zdceq , ~ zdcle , ~ zdclt , ~ eluzdc , or ~ fzdcel ),
+then case elimination will work using theorems such as ~ df-dc and ~ mpjaodan .</LI>
+
+<LI>
+Non-empty almost always needs to be changed to inhabited (those terms are defined at ~ n0rf ).
+</LI>
+
+<LI>If the original proof relied on propositional/predicate logic which isn't a theorem of intuitionistic logic, maybe there is a way of expressing the logic more directly. This is perhaps the hardest one to put in cookbook form: you might need to try some things and see if anything works.</LI>
+
+<LI>If the original proof relied on df-ex so that it could prove a theorem for ` A. ` and then get ` E. ` for free (or vice versa), instead go look at the original proof and try to come up the analogues to each step for the other quantifier (for example, ~ cbvrexcsf , ~ sbcrext , ~ rexxpf ). Similarly, if you have a theorem for ` <_ ` and are trying to prove the corresponding theorem for ` < ` you'll probably need to use analogous steps rather than negation (examples: ~ leaddsub , ~ ltsub1 , ~ ltsub2 ).</LI>
+
+<LI>If you are dealing with a definition, try to find the best constructive definition from the literature ([HoTT] book, Stanford Encyclopedia of Philosophy, [Bauer], etc). Once you pick a definition, that'll affect the proofs which rely on that definition.</LI>
+
+<LI>If there is case elimination on whether variables are distinct, most of the time you just need the variant with distinct variables. Sometimes you can then remove the constraint with a temporary variable (e.g. the various sbco2* variants, ~ nfralya , ~ r19.3rm ).</LI>
+
+<LI>Sometimes one direction of a biconditional holds, or subset holds instead of equality. You might be able to keep the easy direction and worry about the other one later.</LI>
+
+<LI>
+If there is case elimination sometimes only one of the two cases is possible.
+For example, in ~ mosubopt the rest of the formula being proved constrains
+which case matters.
+</LI>
+
+<LI>
+If you need an additional condition (for example, because the original proof
+used case elimination) and you are proving a biconditional, consider whether
+both sides of the biconditional imply the condition. If so, you'll be able to
+prove the biconditional with that condition as an antecedent, and then use
+~ pm5.21nii or one of its variants to remove the antecedent (example:
+~ elxp4 ).
+</LI>
+
+<LI>
+If your proof relies on dveeq2 try ~ dveeq2or and likewise for the other things
+downstream of ~ ax-i12 or ~ ax-bndl .
+</LI>
+
+<LI>
+If you have a disjunction, be reluctant to turn it into an implication using
+~ ord and the like. Instead, show that each disjunct implies what you are
+trying to prove and use ~ jaoi to join those two implications into something
+which can hook up to the disjunction.
+</LI>
+
+<LI>
+Disjunctive syllogism holds in intuitionistic logic and we state it a few ways
+(for example ~ orel1 and ~ ecased ) but we don't have a wide variety of
+convenience theorems. Unless we add those, you'll use ~ ord or something
+similar followed by ~ mpd or something similar. This may add a few steps but
+they are straightforward ones.
+</LI>
+
+<LI>
+If your proof is doing tricky things perhaps in the interest of shortness, try
+just expanding the definitions and applying logic in a straightforward way. See
+if this gets you a working (although perhaps longer) proof.
+</LI>
+
+<LI>
+If your proof relies on a biconditional in set.mm which isn't in iset.mm, see
+if one direction is in iset.mm and see which direction your proof is using. For
+example ~ 19.35-1 or ~ exnalim .
+</LI>
+
+<LI>
+If you are doing things with inhabited classes (beyond just applying existing
+inhabited class theorems), you may be able to dig up some predicate logic you
+haven't used in a while (e.g. ~ raaan ).
+</LI>
+
+<LI>
+Consider the possibility of giving up. Some things just won't have
+intuitionistic proofs. The more it looks like excluded middle or other
+non-intuitionistic statements, the more likely you are dealing with one of
+these. But it can be hard to have good intuition about this. In some cases it
+may be possible to ask "can I use this statement to prove ` ph \/ -. ph ` for an
+arbitrary proposition" (see ~ ordtriexmid for example ), but this is not always
+an easy technique to apply.
+</LI>
+
+<LI>
+Switching between ~ 2th and ~ 2false might help (e.g. ~ dfnul2 , ~ dfnul3 ,
+~ rab0 ).
+</LI>
+
+<LI>
+In many cases statements which are equivalent in classical logic become several
+non-equivalent statements (e.g. exclusive or, ordinals, non-empty versus
+inhabited, apartness versus negated equality). This is usually a good place to
+look for a literature reference, but don't be afraid to change the statement
+being proved to "what you really meant is X" as appropriate.
+</LI>
+
+<LI>
+If a statement has multiple equivalences in set.mm (e.g. mo2 and mo3 , or
+dffun2 and dffun3 ) and only some of them in iset.mm, sometimes a pretty
+similar proof will work (that is, which one to use in the original proof may
+have been a fairly arbitrary choice).
+</LI>
+
+<LI>
+A number of theorems related to functions (especially ovex and fvex ) in
+set.mm perform case elimination based on whether we are evaluating the function
+within its domain or outside it. The most straightforward solution is to
+use ~ fnovex or ~ funfvex which only work within the domain. Using these
+may involve rearranging logic, for example by changing ~ rexlimivw to
+~ rexlimdva (example: ~ ovelrn or indeed most uses of ~ fnovex and ~ funfvex ).
+If a function value is inhabited, we know we are evaluating it within
+its domain by ~ relelfvdm .
+</LI>
+
+<LI>
+With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
+` A ` is an ordinal). In such theorems, ` (/) e. A ` is generally the more
+interesting condition constructively.</LI>
+
+<LI>
+Reverse closure in set.mm uses excluded middle (for example ovrcl or ndmfvrcl
+). The most general way to handle this is to add more conditions that we are
+evaluating operations within
+their domains (for example set.mm's addasspi versus iset.mm's ~ addasspig in
+which conditions such as ` A e. N. ` are added, or set.mm's ltbtwnnq versus
+iset.mm's ~ ltbtwnnqq , in which ` E. x ` is changed to ` E. x e. Q. ` ).
+If the result of applying a function is inhabited, then we know we applied
+it within its domain - that is ~ relelfvdm or ~ elmpt2cl may be useful.
+(These thoughts apply to operations - in at least one place, ~ dvdszrcl ,
+set.mm uses the term "reverse closure" for binary relations - but this is
+a lot more like ~ brel than like the reverse closure theorems described
+above).
+</LI>
+
+<LI>
+With excluded middle not equal (` =/= `) and apart (` =//= `) are equivalent.
+When working with real and complex numbers, apartness is almost always what
+you want. See ~ df-ap for more on apartness.
+</LI>
+
+<LI>Exclusive or ( ` ph \/_ ps ` ) is equivalent to ` ph <-> -. ps `
+given excluded middle but we just have one direction ( ~ xorbin ).
+Consider intuitionizing ` ph <-> -. ps ` as ` ph \/_ ps `
+(example: ~ rpnegap ).</LI>
+
+<LI>
+If you get stuck, ask! (for example in a GitHub issue or on the mailing list).
+We have a number of contributors who have experience in constructive
+mathematics in general, or iset.mm in particular, and one of the best things
+about doing/learning mathematics in metamath is the collaborative nature of how
+we develop it.
+</UL>
+
+<HR NOSHADE SIZE=1><A NAME="setmm"></A>
+<B><FONT COLOR="#006633">Metamath Proof Explorer cross
+reference</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P>This is a list of theorems from the Metamath Proof Explorer (which
+assumes the law of the excluded middle throughout) which we do not
+have in the Intuitionistic Logic Explorer (generally because they
+are not provable without the law of the excluded middle, although some
+could be proved but aren't for a variety of reasons), together
+with the closest replacements.</P>
+
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR>
+<TH>set.mm</TH>
+<TH>iset.mm</TH>
+<TH>notes</TH>
+</TR>
+
+<TR>
+<TD>ax-3 , con4d , con34b , necon4d , necon4bd</TD>
+<TD>~ con3 </TD>
+<TD>The form of contraposition which removes negation does not hold
+in intutionistic logic.</TD>
+</TR>
+
+<TR>
+<TD>pm2.18</TD>
+<TD>~ pm2.01 </TD>
+<TD>See for example [Bauer] who uses the terminology "proof of negation"
+versus "proof by contradiction" to distinguish these.</TD>
+</TR>
+
+<TR>
+<TD>pm2.18d , pm2.18i</TD>
+<TD>~ pm2.01d</TD>
+<TD>See for example [Bauer] who uses the terminology "proof of negation"
+versus "proof by contradiction" to distinguish these.</TD>
+</TR>
+
+<TR>
+<TD>notnotrd , notnotri , notnotr , notnotb</TD>
+<TD>~ notnot </TD>
+<TD>Double negation introduction holds but not double negation
+elimination.</TD>
+</TR>
+
+<TR>
+<TD>mt3d</TD>
+<TD>~ mtod </TD>
+</TR>
+
+<TR>
+<TD>nsyl2</TD>
+<TD>~ nsyl </TD>
+</TR>
+
+<TR>
+  <TD>mt4d</TD>
+  <TD>~ mt2d</TD>
+</TR>
+
+<TR>
+<TD>pm2.61 , pm2.61d , pm2.61d1 , pm2.61d2 , pm2.61i , pm2.61ii , pm2.61nii ,
+pm2.61iii , pm2.61ian , pm2.61dan , pm2.61ddan , pm2.61dda , pm2.61ine , pm2.61ne ,
+pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
+</TD>
+<TD><I>none</I></TD>
+<TD>If the proposition being eliminated is decidable
+(for example due to ~ nndceq , ~ zdceq , ~ zdcle , ~ zdclt , ~ eluzdc , or ~ fzdcel ),
+then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan</TD>
+</TR>
+
+<TR>
+  <TD>dfbi1 , dfbi3</TD>
+  <TD>~ df-bi , ~ dfbi2</TD>
+</TR>
+
+<TR>
+<TD>impcon4bid, con4bid, notbi, con1bii, con4bii, con2bii</TD>
+<TD>~ con3 , ~ condc</TD>
+</TR>
+
+<TR>
+<TD>xor3 , nbbn</TD>
+<TD>~ xorbin , ~ xornbi , ~ xor3dc , ~ nbbndc </TD>
+</TR>
+
+<TR>
+<TD>biass</TD>
+<TD>~ biassdc </TD>
+</TR>
+
+<TR>
+<TD>df-or , pm4.64 , pm2.54 , orri , orrd</TD>
+<TD>~ pm2.53 , ~ ori , ~ ord , ~ dfordc</TD>
+</TR>
+
+<TR>
+<TD>imor , imori</TD>
+<TD>~ imorr , ~ imorri , ~ imordc</TD>
+</TR>
+
+<TR>
+<TD>pm4.63</TD>
+<TD>~ pm3.2im </TD>
+</TR>
+
+<TR>
+<TD>iman</TD>
+<TD>~ imanim , ~ imanst</TD>
+</TR>
+
+<TR>
+<TD>annim</TD>
+<TD>~ annimim </TD>
+</TR>
+
+<TR>
+<TD>oran , pm4.57</TD>
+<TD>~ oranim , ~ orandc</TD>
+</TR>
+
+<TR>
+<TD>ianor</TD>
+<TD>~ pm3.14 , ~ ianordc</TD>
+</TR>
+
+<TR>
+  <TD>pm4.14</TD>
+  <TD>~ pm4.14dc , ~ pm3.37</TD>
+</TR>
+
+<TR>
+  <TD>pm5.17</TD>
+  <TD>~ xorbin</TD>
+  <TD>The combination of ~ df-xor and ~ xorbin is the forward direction
+  of pm5.17</TD>
+</TR>
+
+<TR>
+<TD>biluk</TD>
+<TD>~ bilukdc </TD>
+</TR>
+
+<TR>
+  <TD>ecase</TD>
+  <TD><I>none</I></TD>
+  <TD>This is a form of case elimination.<TD>
+</TR>
+
+<TR>
+<TD>ecase3d</TD>
+<TD><I>none</I></TD>
+<TD>This is a form of case elimination.<TD>
+</TR>
+
+<TR>
+<TD>dedlem0b</TD>
+<TD>~ dedlemb </TD>
+</TR>
+
+<TR>
+  <TD>pm4.42</TD>
+  <TD>~ pm4.42r</TD>
+</TR>
+
+<TR>
+<TD>3ianor</TD>
+<TD>~ 3ianorr </TD>
+</TR>
+
+<TR>
+<TD>df-nan and other theorems using NAND (Sheffer stroke) notation</TD>
+<TD><I>none</I></TD>
+<TD>A quick glance at the internet shows this mostly being used in
+the presence of excluded middle; in any case it is not currently
+present in iset.mm</TD>
+</TR>
+
+<TR>
+<TD>df-xor</TD>
+<TD>~ df-xor </TD>
+<TD>Although the definition of exclusive or is called df-xor in both
+set.mm and iset.mm (at least currently), the definitions are not
+equivalent (in the absence of excluded middle).</TD>
+</TR>
+
+<TR>
+<TD>xnor</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof uses theorems not in iset.mm.</TD>
+</TR>
+
+<TR>
+<TD>xorass</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof uses theorems not in iset.mm.</TD>
+</TR>
+
+<TR>
+<TD>xor2</TD>
+<TD>~ xoranor , ~ xor2dc</TD>
+</TR>
+
+<TR>
+<TD>xornan</TD>
+<TD>~ xor2dc</TD>
+</TR>
+
+<TR>
+<TD>xornan2</TD>
+<TD><I>none</I></TD>
+<TD>See discussion under df-nan</TD>
+</TR>
+
+<TR>
+<TD>xorneg2 , xorneg1 , xorneg</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proofs use theorems not in iset.mm.</TD>
+</TR>
+
+<TR>
+<TD>xorexmid</TD>
+<TD><I>none</I></TD>
+<TD>A form of excluded middle</TD>
+</TR>
+
+<TR>
+<TD>df-ex</TD>
+<TD>~ exalim </TD>
+</TR>
+
+<TR>
+<TD>alex</TD>
+<TD>~ alexim </TD>
+</TR>
+
+<TR>
+<TD>exnal</TD>
+<TD>~ exnalim </TD>
+</TR>
+
+<TR>
+<TD>alexn</TD>
+<TD>~ alexnim </TD>
+</TR>
+
+<TR>
+<TD>exanali</TD>
+<TD>~ exanaliim </TD>
+</TR>
+
+<TR>
+<TD>19.35 , 19.35ri</TD>
+<TD>~ 19.35-1 </TD>
+</TR>
+
+<TR>
+<TD>19.30</TD>
+<TD><I>none</I>
+</TR>
+
+<TR>
+  <TD>19.39</TD>
+  <TD>~ i19.39</TD>
+</TR>
+
+<TR>
+  <TD>19.24</TD>
+  <TD>~ i19.24</TD>
+</TR>
+
+<TR>
+<TD>19.36 , 19.36v</TD>
+<TD>~ 19.36-1 </TD>
+</TR>
+
+<TR>
+<TD>19.37 , 19.37v</TD>
+<TD>~ 19.37-1 </TD>
+</TR>
+
+<TR>
+<TD>19.32</TD>
+<TD>~ 19.32r </TD>
+</TR>
+
+<TR>
+<TD>19.31</TD>
+<TD>~ 19.31r </TD>
+</TR>
+
+<TR>
+<TD>exdistrf</TD>
+<TD>~ exdistrfor </TD>
+</TR>
+
+<TR>
+<TD>exmo</TD>
+<TD>~ exmonim </TD>
+</TR>
+
+<TR>
+<TD>mo2</TD>
+<TD>~ mo2r , ~ mo3 </TD>
+</TR>
+
+<TR>
+<TD>nne</TD>
+<TD>~ nner , ~ nnedc</TD>
+</TR>
+
+<TR>
+<TD>exmidne</TD>
+<TD>~ dcne </TD>
+</TR>
+
+<TR>
+<TD>neor</TD>
+<TD>~ pm2.53 , ~ ori , ~ ord </TD>
+</TR>
+
+<TR>
+<TD>neorian</TD>
+<TD>~ pm3.14 </TD>
+</TR>
+
+<TR>
+<TD>nnel</TD>
+<TD><I>none</I></TD>
+<TD>The reverse direction could be proved; the forward direction
+is double negation elimination.</TD>
+</TR>
+
+<TR>
+<TD>nfrald</TD>
+<TD>~ nfraldxy , ~ nfraldya </TD>
+</TR>
+
+<TR>
+<TD>rexnal</TD>
+<TD>~ rexnalim </TD>
+</TR>
+
+<TR>
+<TD>rexanali</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>nrexralim</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>dfral2</TD>
+<TD>~ ralexim </TD>
+</TR>
+
+<TR>
+<TD>dfrex2</TD>
+<TD>~ rexalim , ~ dfrex2dc</TD>
+</TR>
+
+<TR>
+<TD>nfrexd</TD>
+<TD>~ nfrexdxy , ~ nfrexdya </TD>
+</TR>
+
+<TR>
+<TD>nfral</TD>
+<TD>~ nfralxy , ~ nfralya </TD>
+</TR>
+
+<TR>
+<TD>nfra2</TD>
+<TD>~ nfra1 , ~ nfralya </TD>
+</TR>
+
+<TR>
+<TD>nfrex</TD>
+<TD>~ nfrexxy , ~ nfrexya </TD>
+</TR>
+
+<TR>
+<TD>r19.30</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>r19.35</TD>
+<TD>~ r19.35-1</TD>
+</TR>
+
+<TR>
+<TD>ralcom2</TD>
+<TD>~ ralcom </TD>
+</TR>
+
+<TR>
+  <TD>2reuswap</TD>
+  <TD>~ 2reuswapdc</TD>
+</TR>
+
+<TR>
+  <TD>rmo2</TD>
+  <TD>~ rmo2i</TD>
+</TR>
+
+<TR>
+  <TD>df-pss and all proper subclass theorems</TD>
+  <TD><I>none</I></TD>
+  <TD>In set.mm, "A is a proper subclass of B" is defined to be
+  ` ( A C_ B /\ A =/= B ) ` and this definition is almost always used in
+  conjunction with excluded middle. A more natural definition
+  might be ` ( A C_ B /\ E. x x e. ( B \ A ) )` , if we need proper subclass
+  at all.</TD>
+</TR>
+
+<TR>
+  <TD>nss</TD>
+  <TD>~ nssr</TD>
+</TR>
+
+<TR>
+  <TD>ddif</TD>
+  <TD>~ ddifnel , ~ ddifss</TD>
+</TR>
+
+<TR>
+  <TD>dfss4</TD>
+  <TD>~ ssddif , ~ dfss4st</TD>
+</TR>
+
+<TR>
+<TD>n0f</TD>
+<TD>~ n0rf</TD>
+</TR>
+
+<TR>
+<TD>n0</TD>
+<TD>~ n0r , ~ notm0 , ~ fin0 , ~ fin0or</TD>
+</TR>
+
+<TR>
+<TD>neq0</TD>
+<TD>~ neq0r </TD>
+</TR>
+
+<TR>
+<TD>reximdva0</TD>
+<TD>~ reximdva0m </TD>
+</TR>
+
+<TR>
+<TD>ssdif0</TD>
+<TD>~ ssdif0im </TD>
+</TR>
+
+<TR>
+<TD>inssdif0</TD>
+<TD>~ inssdif0im </TD>
+</TR>
+
+<TR>
+  <TD>abn0</TD>
+  <TD>~ abn0r , ~ abn0m</TD>
+</TR>
+
+<TR>
+<TD>rabn0</TD>
+<TD>~ rabn0m , ~ rabn0r </TD>
+</TR>
+
+<TR>
+  <TD>undif1</TD>
+  <TD>~ undif1ss</TD>
+</TR>
+
+<TR>
+<TD>undif2</TD>
+<TD>~ undif2ss </TD>
+</TR>
+
+<TR>
+  <TD>inundif</TD>
+  <TD>~ inundifss</TD>
+</TR>
+
+<TR>
+  <TD ROWSPAN="5">undif</TD>
+  <TD>~ undifss</TD>
+  <TD>subset rather than equality, for any sets</TD>
+</TR>
+
+<TR>
+  <TD>~ undiffi</TD>
+  <TD>where both container and subset are finite</TD>
+</TR>
+
+<TR>
+  <TD>~ undifdc</TD>
+  <TD>where the container has decidable equality and the subset is finite</TD>
+</TR>
+
+<TR>
+  <TD>~ undifdcss</TD>
+  <TD>when membership in the subset is decidable</TD>
+</TR>
+
+<TR>
+  <TD><I>for any sets</I></TD>
+  <TD>implies excluded middle as shown at ~ undifexmid</TD>
+</TR>
+
+<TR>
+  <TD>ssundif</TD>
+  <TD>~ ssundifim</TD>
+</TR>
+
+<TR>
+<TD>uneqdifeq</TD>
+<TD>~ uneqdifeqim </TD>
+</TR>
+
+<TR>
+  <TD>r19.2z</TD>
+  <TD>~ r19.2m</TD>
+</TR>
+
+<TR>
+  <TD>r19.3rz</TD>
+  <TD>~ r19.3rm</TD>
+</TR>
+
+<TR>
+  <TD>r19.28z</TD>
+  <TD>~ r19.28m</TD>
+</TR>
+
+<TR>
+  <TD>r19.9rzv</TD>
+  <TD>~ r19.9rmv</TD>
+</TR>
+
+<TR>
+  <TD>r19.37zv</TD>
+  <TD>~ r19.3rmv</TD>
+</TR>
+
+<TR>
+<TD>r19.45zv</TD>
+<TD>~ r19.45mv </TD>
+</TR>
+
+<TR>
+<TD>r19.44zv</TD>
+<TD>~ r19.44mv </TD>
+</TR>
+
+<TR>
+  <TD>r19.27z</TD>
+  <TD>~ r19.27m</TD>
+</TR>
+
+<TR>
+  <TD>r19.36zv</TD>
+  <TD>~ r19.36av</TD>
+</TR>
+
+<TR>
+<TD>dfif2</TD>
+<TD>~ df-if </TD>
+</TR>
+
+<TR>
+<TD>ifsb</TD>
+<TD>~ ifsbdc</TD>
+</TR>
+
+<TR>
+<TD>dfif4</TD>
+<TD><I>none</I></TD>
+<TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+<TD>dfif5</TD>
+<TD><I>none</I></TD>
+<TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>ifeq1da</TD>
+  <TD>~ ifeq1dadc</TD>
+</TR>
+
+<TR>
+<TD>ifnot</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ifor</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ifeq2da</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ifclda</TD>
+<TD>~ ifcldadc</TD>
+</TR>
+
+<TR>
+<TD>ifeqda</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>elimif , ifval , elif ,
+ifel , ifeqor , 2if2 , ifcomnan , csbif ,
+csbifgOLD</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>ifbothda</TD>
+  <TD>~ ifbothdadc</TD>
+</TR>
+
+<TR>
+  <TD>ifboth</TD>
+  <TD>~ ifbothdc</TD>
+</TR>
+
+<TR>
+  <TD>ifid</TD>
+  <TD>~ ifiddc</TD>
+</TR>
+
+<TR>
+  <TD>eqif</TD>
+  <TD>~ eqifdc</TD>
+</TR>
+
+<TR>
+  <TD>ifcl , ifcld</TD>
+  <TD>~ ifcldcd , ~ ifcldadc</TD>
+</TR>
+
+<TR>
+  <TD>ifan</TD>
+  <TD>~ ifandc</TD>
+</TR>
+
+<TR>
+<TD>dedth , dedth2h , dedth3h , dedth4h , dedth2v , dedth3v ,
+dedth4v , elimhyp , elimhyp2v , elimhyp3v , elimhyp4v ,
+elimel , elimdhyp , keephyp , keephyp2v , keephyp3v , keepel</TD>
+<TD><I>none</I></TD>
+<TD>Even in set.mm, the weak deduction theorem is discouraged in
+favor of theorems in deduction form.</TD>
+</TR>
+
+<TR>
+  <TD>ifex , ifexg</TD>
+  <TD>~ ifcldcd , ~ ifcldadc</TD>
+</TR>
+
+<TR>
+  <TD>ifpr</TD>
+  <TD><I>none</I></TD>
+  <TD>Should be provable if the condition is decidable.</TD>
+</TR>
+
+<TR>
+  <TD ROWSPAN="4">difsnid</TD>
+  <TD>~ difsnss</TD>
+  <TD>One direction, for any set</TD>
+</TR>
+
+<TR>
+  <TD>~ nndifsnid</TD>
+  <TD>for a natural number</TD>
+</TR>
+
+<TR>
+  <TD>~ dcdifsnid</TD>
+  <TD>for a set with decidable equality</TD>
+</TR>
+
+<TR>
+  <TD>~ fidifsnid</TD>
+  <TD>for a finite set</TD>
+</TR>
+
+<TR>
+  <TD>sssn</TD>
+  <TD>~ sssnr , ~ sssnm</TD>
+</TR>
+
+<TR>
+  <TD>pwsn</TD>
+  <TD>~ pwsnss</TD>
+  <TD>Also see ~ exmidpw</TD>
+</TR>
+
+<TR>
+<TD>iundif2</TD>
+<TD>~ iundif2ss </TD>
+</TR>
+
+<TR>
+  <TD>iindif2</TD>
+  <TD>~ iindif2m</TD>
+</TR>
+
+<TR>
+  <TD>iinin2</TD>
+  <TD>~ iinin2m</TD>
+</TR>
+
+<TR>
+  <TD>iinin1</TD>
+  <TD>~ iinin1m</TD>
+</TR>
+
+<TR>
+  <TD>iinvdif</TD>
+  <TD>~ iindif2m</TD>
+  <TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>riinn0</TD>
+  <TD>~ riinm</TD>
+</TR>
+
+<TR>
+  <TD>riinrab</TD>
+  <TD>~ iinrabm</TD>
+</TR>
+
+<TR>
+  <TD>iinuni</TD>
+  <TD>~ iinuniss</TD>
+</TR>
+
+<TR>
+  <TD>iununi</TD>
+  <TD>~ iununir</TD>
+</TR>
+
+<TR>
+  <TD>rintn0</TD>
+  <TD>~ rintm</TD>
+</TR>
+
+<TR>
+  <TD>disjor</TD>
+  <TD>~ disjnim</TD>
+</TR>
+
+<TR>
+  <TD>disjors</TD>
+  <TD>~ disjnims</TD>
+</TR>
+
+<TR>
+  <TD>disji</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>disjprg , disjxiun , disjxun</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>disjss3</TD>
+  <TD><I>none</I></TD>
+  <TD>Might need to be restated or have decidability conditions
+  added</TD>
+</TR>
+
+<TR>
+<TD>trintss</TD>
+<TD>~ trintssm </TD>
+</TR>
+
+<TR>
+  <TD>ax-rep</TD>
+  <TD>~ ax-coll</TD>
+  <TD>There are a lot of ways to state replacement and most/all
+  of them hold, for example ~ zfrep6 or ~ funimaexg .</TD>
+</TR>
+
+<TR>
+<TD>csbexg , csbex</TD>
+<TD>~ csbexga , ~ csbexa </TD>
+<TD>set.mm uses case elimination to remove the ` A e. _V ` condition.</TD>
+</TR>
+
+<TR>
+  <TD>intex</TD>
+  <TD>~ inteximm , ~ intexr</TD>
+  <TD>inteximm is the forward direction
+  (but for inhabited rather than non-empty classes) and intexr
+  is the reverse direction.</TD>
+</TR>
+
+<TR>
+  <TD>intexab</TD>
+  <TD>~ intexabim</TD>
+</TR>
+
+<TR>
+  <TD>intexrab</TD>
+  <TD>~ intexrabim</TD>
+</TR>
+
+<TR>
+  <TD>iinexg</TD>
+  <TD>~ iinexgm</TD>
+  <TD>Changes not empty to inhabited</TD>
+</TR>
+
+<TR>
+<TD>intabs</TD>
+<TD><I>none</I></TD>
+<TD>Lightly used in set.mm, and the set.mm proof is not intuitionistic</TD>
+</TR>
+
+<TR>
+  <TD>reuxfr2d , reuxfr2 , reuxfrd , reuxfr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof of reuxfr2d relies on 2reuswap</TD>
+</TR>
+
+<TR>
+<TD>moabex</TD>
+<TD>~ euabex </TD>
+<TD>In general, most of the set.mm ` E! ` theorems still hold, but a
+decent number of the ` E* ` ones get caught up on "there are two cases: the
+set exists or it does not"</TD>
+</TR>
+
+<TR>
+<TD>snex</TD>
+<TD>~ snexg , ~ snex </TD>
+<TD><P>The iset.mm version of ~ snex has an additional hypothesis.</P>
+
+<P>We conjecture that the set.mm snex ( ` { A } e. _V ` with
+no condition on whether ` A ` is a set) is not provable.</P>
+
+<P>The axioms of set theory allow us to construct rank levels from others, but
+not to construct something from nothing (except the 0 rank and stuff you can
+bootstrap from there). A class provides no "data" about where it lives,
+because it is spread out over the whole universe - you only get the ability
+to ask yes-no(-maybe) questions about set membership in the class. An
+assertion that a class exists is a piece of data that gives you a bound
+on the rank of this set, which can be used to build other existing things
+like unions and powersets of this class and so on. Anything with unbounded
+rank cannot be proven to exist.</P>
+
+<P>So snex, which starts from an arbitrary class and produces evidence
+that { A } exists, cannot be provable, because the bound here can't
+depend on A and cannot be upper bounded by anything independent of
+A either - there are singletons at every rank.</P>
+
+<P>However, we can refute a singleton being a proper class - see
+~ notnotsnex .</P></TD>
+</TR>
+
+<TR>
+  <TD>nssss</TD>
+  <TD>~ nssssr</TD>
+</TR>
+
+<TR>
+  <TD>rmorabex</TD>
+  <TD>~ euabex</TD>
+  <TD>See discussion under moabex</TD>
+</TR>
+
+<TR>
+  <TD>nnullss</TD>
+  <TD>~ mss</TD>
+</TR>
+
+<TR>
+<TD>opex</TD>
+<TD>~ opexg , ~ opex </TD>
+<TD>The iset.mm version of ~ opex has additional hypotheses</TD>
+</TR>
+
+<TR>
+  <TD>otex</TD>
+  <TD>~ otexg</TD>
+</TR>
+
+<TR>
+<TD>df-so</TD>
+<TD>~ df-iso </TD>
+<TD>Although we define ` Or ` to describe a weakly linear order (such
+as real numbers), there are some orders which are also trichotomous, for
+example ~ nntri3or , ~ pitri3or , and ~ nqtri3or .
+</TR>
+
+<TR>
+<TD ROWSPAN="5">sotric</TD>
+<TD>~ sotricim </TD>
+<TD>One direction, for any weak linear order.</TD>
+</TR>
+
+<TR>
+<TD>~ sotritric </TD>
+<TD>For a trichotomous order.</TD>
+</TR>
+
+<TR>
+<TD>~ nntri2 </TD>
+<TD>For the specific order ` _E Or _om `</TD>
+</TR>
+
+<TR>
+<TD>~ pitric </TD>
+<TD>For the specific order ` <N Or N. `</TD>
+</TR>
+
+<TR>
+<TD>~ nqtric </TD>
+<TD>For the specific order ` <Q Or Q. `</TD>
+</TR>
+
+<TR>
+<TD>sotrieq</TD>
+<TD>~ sotritrieq </TD>
+<TD>For a trichotomous order</TD>
+</TR>
+
+<TR>
+<TD>sotrieq2</TD>
+<TD>see sotrieq and then apply ~ ioran </TD>
+</TR>
+
+<TR>
+<TD>issoi</TD>
+<TD>~ issod , ~ ispod </TD>
+<TD>Many of the set.mm usages of issoi don't carry over, so
+there is less need for this convenience theorem.</TD>
+</TR>
+
+<TR>
+<TD>isso2i</TD>
+<TD>~ issod </TD>
+<TD>Presumably this could be proved if we need it.</TD>
+</TR>
+
+<TR>
+  <TD>df-fr</TD>
+  <TD>~ df-frind</TD>
+</TR>
+
+<TR>
+  <TD>fri , dffr2 , frc</TD>
+  <TD><I>none</I></TD>
+  <TD>That any subset of the base set has an element which is
+  minimal accordng to a well-founded relation presumably
+  implies excluded middle (or is otherwise unprovable).</TD>
+</TR>
+
+<TR>
+  <TD>frss</TD>
+  <TD>~ freq2</TD>
+  <TD>Because the definition of ` Fr ` is different than set.mm, the
+  proof would need to be different.</TD>
+</TR>
+
+<TR>
+  <TD>frirr</TD>
+  <TD>~ frirrg</TD>
+  <TD>We do not yet have a lot of theorems for the case where ` A ` is
+  a proper class.</TD>
+</TR>
+
+<TR>
+  <TD>fr2nr</TD>
+  <TD><I>none</I></TD>
+  <TD>Shouldn't be hard to prove if we need it (using a proof similar
+  to ~frirrg and ~ en2lp ).</TD>
+</TR>
+
+<TR>
+  <TD>frminex</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably unprovable.</TD>
+</TR>
+
+<TR>
+  <TD>efrn2lp</TD>
+  <TD><I>none</I></TD>
+  <TD>Should be easy but lightly used in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>dfepfr , epfrc</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably unprovable.</TD>
+</TR>
+
+<TR>
+<TD>df-we</TD>
+<TD>~ df-wetr</TD>
+</TR>
+
+<TR>
+  <TD>wess</TD>
+  <TD><I>none</I></TD>
+  <TD>See frss entry. Holds for ` _E ` (see for example ~ wessep ).</TD>
+</TR>
+
+<TR>
+  <TD>weso</TD>
+  <TD>~ wepo</TD>
+</TR>
+
+<TR>
+  <TD>wecmpep</TD>
+  <TD><I>none</I></TD>
+  <TD>` We ` does not imply trichotomy in iset.mm</TD>
+</TR>
+
+<TR>
+  <TD>wefrc , wereu , wereu2</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably not provable</TD>
+</TR>
+
+<TR>
+<TD>dmxp</TD>
+<TD>~ dmxpm </TD>
+</TR>
+
+<TR>
+<TD>dmxpid</TD>
+<TD>~ dmxpm </TD>
+</TR>
+
+<TR>
+<TD>relimasn</TD>
+<TD>~ imasng </TD>
+</TR>
+
+<TR>
+  <TD>rnxp</TD>
+  <TD>~ rnxpm</TD>
+</TR>
+
+<TR>
+<TD>opswap</TD>
+<TD>~ opswapg </TD>
+</TR>
+
+<TR>
+<TD>cnvso</TD>
+<TD>~ cnvsom </TD>
+</TR>
+
+<TR>
+<TD>tz7.7</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ordelssne</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ordelpss</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ordsseleq , onsseleq</TD>
+<TD>~ onelss , ~ eqimss , ~ nnsseleq</TD>
+<TD>Taken together, ~ onelss and ~ eqimss represent the reverse direction of
+the biconditional from ordsseleq . For natural numbers the biconditional
+is provable.</TD>
+</TR>
+
+<TR>
+<TD>ordtri3or</TD>
+<TD>~ nntri3or </TD>
+<TD>Ordinal trichotomy implies the law of the excluded middle as shown
+in ~ ordtriexmid .
+</TR>
+
+<TR>
+<TD>ordtri2</TD>
+<TD>~ nntri2 </TD>
+<TD>ordtri2 for all ordinals presumably implies excluded middle although
+we don't have a specific proof analogous to ~ ordtriexmid .</TD>
+</TR>
+
+<TR>
+<TD>ordtri3 , ordtri4 , ordtri2or3 , dford2
+</TD>
+<TD><I>none</I></TD>
+<TD>Ordinal trichotomy implies the law of the excluded middle as shown
+in ~ ordtriexmid . We don't have similar proofs for every variation of
+of trichotomy but most of them are presumably powerful enough to imply
+excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>ordtri1 , ontri1 , onssneli , onssnel2i</TD>
+<TD>~ ssnel , ~ nntri1 </TD>
+<TD>~ ssnel is a trichotomy-like theorem which does hold, although
+it is an implication whereas ordtri1 is a biconditional. ~ nntri1
+is biconditional, but just for natural numbers.</TD>
+</TR>
+
+<TR>
+<TD>ordtr2 , ontr2</TD>
+<TD><I>none</I></TD>
+<TD>Implies excluded middle as shown at ~ ontr2exmid</TD>
+</TR>
+
+<TR>
+<TD>ordtr3</TD>
+<TD><I>none</I></TD>
+<TD>This is weak linearity of ordinals, which presumably
+implies excluded middle by ~ ordsoexmid .</TD>
+</TR>
+
+<TR>
+<TD>ord0eln0 , on0eln0</TD>
+<TD>~ ne0i , ~ nn0eln0 </TD>
+</TR>
+
+<TR>
+<TD>nsuceq0</TD>
+<TD>~ nsuceq0g </TD>
+</TR>
+
+<TR>
+<TD>ordsssuc</TD>
+<TD>~ trsucss </TD>
+</TR>
+
+<TR>
+<TD>ordequn</TD>
+<TD><I>none</I></TD>
+<TD>If you know which ordinal is larger, you can achieve
+a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
+</TR>
+
+<TR>
+<TD>ordun</TD>
+<TD>~ onun2 </TD>
+</TR>
+
+<TR>
+<TD>ordtri2or</TD>
+<TD><I>none</I></TD>
+<TD>Implies excluded middle as shown at ~ ordtri2orexmid .</TD>
+</TR>
+
+<TR>
+  <TD>ordtri2or2</TD>
+  <TD>~ nntri2or2</TD>
+  <TD>ordtri2or2 implies excluded middle as shown at ~ ordtri2or2exmid .</TD>
+</TR>
+
+<TR>
+  <TD>onsseli</TD>
+  <TD><I>none</I></TD>
+  <TD>See entry for ordsseleq</TD>
+</TR>
+
+<TR>
+  <TD>unizlim</TD>
+  <TD><I>none</I></TD>
+  <TD>The reverse direction is basically ~ uni0 plus ~ limuni</TD>
+</TR>
+
+<TR>
+  <TD>on0eqel</TD>
+  <TD>~ 0elnn</TD>
+  <TD>The full on0eqel is conjectured to imply excluded middle by
+  an argument similar to ~ ordtriexmid</TD>
+</TR>
+
+<TR>
+  <TD>snsn0non</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would be provable (by first proving ` -. (/) e. { { (/) } } `
+  as in the set.mm proof, and then using that to show that ` { { (/) } } `
+  is not a transitive set).</TD>
+</TR>
+
+<TR>
+  <TD>onxpdisj</TD>
+  <TD><I>none</I></TD>
+  <TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>onnev</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable (see snsn0non entry)</TD>
+</TR>
+
+<TR>
+<TD>iotaex</TD>
+<TD>~iotacl , ~ euiotaex </TD>
+</TR>
+
+<TR>
+<TD>dffun3</TD>
+<TD>~ dffun5r</TD>
+</TR>
+
+<TR>
+<TD>dffun5</TD>
+<TD>~ dffun5r</TD>
+</TR>
+
+<TR>
+  <TD>resasplit</TD>
+  <TD>~ resasplitss</TD>
+</TR>
+
+<TR>
+  <TD>fresaun</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resasplit</TD>
+</TR>
+
+<TR>
+  <TD>fresaunres2 , fresaunres1</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resasplit</TD>
+</TR>
+
+<TR>
+  <TD>fint</TD>
+  <TD>~ fintm</TD>
+</TR>
+
+<TR>
+  <TD>foconst</TD>
+  <TD><I>none</I></TD>
+  <TD>Although it presumably holds if non-empty is changed to
+    inhabited, it would need a new proof and it is unused in
+    set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>f1oprswap</TD>
+  <TD><I>none</I></TD>
+  <TD>The ` A =/= B ` case is handled (basically) by ~ f1oprg . If
+  there is a proof of the original f1oprswap which does not rely
+  on case elimination, it would look very different from the set.mm
+  proof.</TD>
+</TR>
+
+<TR>
+  <TD>dffv3</TD>
+  <TD>~ dffv3g</TD>
+</TR>
+
+<TR>
+<TD ROWSPAN="5">fvex</TD>
+<TD>~ funfvex </TD>
+<TD>when evaluating a function within its domain</TD>
+</TR>
+
+<TR>
+<TD>~ fvexg , ~ fvex </TD>
+<TD>when the function is a set and is evaluated at a set</TD>
+</TR>
+
+<TR>
+<TD>~ relrnfvex </TD>
+<TD>when evaluating a relation whose range is a set</TD>
+</TR>
+
+<TR>
+<TD>~ mptfvex </TD>
+<TD>when the function is defined via maps-to, yields a set for all inputs,
+and is evaluated at a set</TD>
+</TR>
+
+<TR>
+<TD>~ 1stexg , ~ 2ndexg </TD>
+<TD>for the functions ` 1st ` and ` 2nd `</TD>
+</TR>
+
+<TR>
+  <TD>fvif</TD>
+  <TD>~ fvifdc</TD>
+</TR>
+
+<TR>
+<TD>ndmfv</TD>
+<TD>~ ndmfvg </TD>
+<TD>The ` -. A e. _V ` case is ~ fvprc .</TD>
+</TR>
+
+<TR>
+<TD>elfvdm</TD>
+<TD>~ relelfvdm </TD>
+</TR>
+
+<TR>
+<TD>elfvex</TD>
+<TD>~ relelfvdm </TD>
+</TR>
+
+<TR>
+  <TD>fvmpti</TD>
+  <TD>~ fvmptg</TD>
+  <TD>The set.mm proof relies on case elimination on ` C e. _V `</TD>
+</TR>
+
+<TR>
+  <TD>fvmpt2i</TD>
+  <TD>~ fvmpt2</TD>
+  <TD>The set.mm proof relies on case elimination on ` C e. _V `</TD>
+</TR>
+
+<TR>
+  <TD>fvmptss</TD>
+  <TD>~ fvmptssdm</TD>
+</TR>
+
+<TR>
+  <TD>fvmptex</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on case elimination</TD>
+</TR>
+
+<TR>
+  <TD>fvmptnf</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on case elimination</TD>
+</TR>
+
+<TR>
+  <TD>fvmptn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on case elimination</TD>
+</TR>
+
+<TR>
+  <TD>fvmptss2</TD>
+  <TD>~ fvmpt</TD>
+  <TD>What fvmptss2 adds is the cases where this is a proper class,
+  or we are out of the domain.</TD>
+</TR>
+
+<TR>
+  <TD>fvopab4ndm</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>fndmdifeq0</TD>
+  <TD><I>none</I></TD>
+  <TD>Although it seems like this might be intuitionizable, it is
+  lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>f0cli</TD>
+<TD>~ ffvelrn </TD>
+</TR>
+
+<TR>
+  <TD>dff3</TD>
+  <TD>~ dff3im</TD>
+</TR>
+
+<TR>
+  <TD>dff4</TD>
+  <TD>~ dff4im</TD>
+</TR>
+
+<TR>
+  <TD>fvunsn</TD>
+  <TD>~ fvunsng</TD>
+</TR>
+
+<TR>
+  <TD>fnsnsplit</TD>
+  <TD><I>none</I></TD>
+  <TD>Although it should be possible to prove subset rather than
+  equality (using difsnss instead of difsnid ), this theorem is
+  lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>funiunfv</TD>
+<TD>~ fniunfv , ~ funiunfvdm </TD>
+</TR>
+
+<TR>
+<TD>funiunfvf</TD>
+<TD>~ funiunfvdmf </TD>
+</TR>
+
+<TR>
+<TD>eluniima</TD>
+<TD>~ eluniimadm </TD>
+</TR>
+
+<TR>
+  <TD>dff14a , dff14b</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof depends, in an apparently essential way,
+  on excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>fveqf1o</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on f1oprswap , which we don't have</TD>
+</TR>
+
+<TR>
+  <TD>soisores</TD>
+  <TD>~ isoresbr</TD>
+</TR>
+
+<TR>
+  <TD>soisoi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on trichotomy</TD>
+</TR>
+
+<TR>
+  <TD>isocnv3</TD>
+  <TD><I>none</I></TD>
+  <TD>It seems possible that one direction of the biconditional
+  could be proved.</TD>
+</TR>
+
+<TR>
+  <TD>isomin</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>riotaex</TD>
+<TD>~ riotacl , ~ riotaexg</TD>
+</TR>
+
+<TR>
+<TD>nfriotad</TD>
+<TD>~ nfriotadxy </TD>
+</TR>
+
+<TR>
+<TD>csbriota , csbriotagOLD</TD>
+<TD>~ csbriotag </TD>
+</TR>
+
+<TR>
+<TD>riotaxfrd</TD>
+<TD><I>none</I></TD>
+<TD>Although it may be intuitionizable, it is lightly used in set.mm.
+The set.mm proof relies on reuxfrd .</TD>
+</TR>
+
+<TR>
+<TD ROWSPAN="4">ovex</TD>
+<TD>~ fnovex </TD>
+<TD>when the operation is a function evaluated within its domain.</TD>
+</TR>
+
+<TR>
+<TD>~ ovexg</TD>
+<TD>when the operation is a set and is evaluated at a set</TD>
+</TR>
+
+<TR>
+<TD>~ relrnfvex</TD>
+<TD>when the operation is a relation whose range is a set</TD>
+</TR>
+
+<TR>
+<TD>~ mpt2fvex </TD>
+<TD>When the operation is defined via maps-to, yields a set on
+any inputs, and is being evaluated at two sets.</TD>
+</TR>
+
+<TR>
+  <TD>ovrcl</TD>
+  <TD>~ elmpt2cl , ~ relelfvdm</TD>
+</TR>
+
+<TR>
+<TD>fnov</TD>
+<TD>~ fnovim </TD>
+</TR>
+
+<TR>
+<TD>ov3</TD>
+<TD>~ ovi3 </TD>
+<TD>Although set.mm's ov3 could be proved, it is only used a few places
+in set.mm, and in iset.mm those places need the modified form
+found in ~ ovi3 .</TD>
+</TR>
+
+<TR>
+<TD>oprssdm</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ndmovg , ndmov</TD>
+<TD>~ ndmfvg </TD>
+<TD>These theorems are generally used in set.mm for case elimination
+which is why we just have the general ~ ndmfvg rather than an
+operation-specific version.
+</TR>
+
+<TR>
+<TD>ndmovcl , ndmovcom , ndmovass , ndmovdistr , ndmovord ,
+    and ndmovordi</TD>
+<TD><I>none</I></TD>
+<TD>These theorems are generally used in set.mm for case elimination
+and the most straightforward way to avoid them is to add conditions
+that we are evaluating functions within their domains.
+</TR>
+
+<TR>
+<TD>ndmovrcl</TD>
+<TD>~ elmpt2cl , ~ relelfvdm</TD>
+</TR>
+
+<TR>
+<TD>caov4</TD>
+<TD>~ caov4d </TD>
+<TD>Note that ~ caov4d has a closure hypothesis.</TD>
+</TR>
+
+<TR>
+<TD>caov411</TD>
+<TD>~ caov411d </TD>
+<TD>Note that ~ caov411d has a closure hypothesis.</TD>
+</TR>
+
+<TR>
+<TD>caov42</TD>
+<TD>~ caov42d </TD>
+<TD>Note that ~ caov42d has a closure hypothesis.</TD>
+</TR>
+
+<TR>
+<TD>caovdir</TD>
+<TD>~ caovdird </TD>
+<TD>~ caovdird adds some constraints about where the operations are evaluated.</TD>
+</TR>
+
+<TR>
+<TD>caovdilem</TD>
+<TD>~ caovdilemd </TD>
+</TR>
+
+<TR>
+<TD>caovlem2</TD>
+<TD>~ caovlem2d </TD>
+</TR>
+
+<TR>
+<TD>caovmo</TD>
+<TD>~ caovimo </TD>
+</TR>
+
+<TR>
+<TD>ofval</TD>
+<TD>~ fnofval </TD>
+</TR>
+
+<TR>
+<TD>offn , offveq , caofid0l , caofid0r , caofid1 , caofid2</TD>
+<TD><I>none</I></TD>
+<TD>Assuming we really need to add conditions that the operations
+are functions being evaluated within their domains, there would be a
+fair bit of intuitionizing.</TD>
+</TR>
+
+<TR>
+<TD>ordeleqon</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ssonprc</TD>
+<TD><I>none</I></TD>
+<TD>not provable (we conjecture), but interesting enough to intuitionize
+anyway. ` U. A = On -> A e/ V ` is provable, and
+` ( B e. On /\ U. A C_ B ) -> A e. V ` is provable.
+(One thing we presumably could prove is
+` ( U. A C_ On /\ E. x x e. ( On \ U. A ) ) -> A e. V `
+which might be easier to understand if we define (or think of) proper subset
+as meaning that the set difference is inhabited.)</TD>
+</TR>
+
+<TR>
+<TD>onint</TD>
+<TD>~ onintss</TD>
+<TD>onint implies excluded middle as shown in ~ onintexmid .</TD>
+</TR>
+
+<TR>
+<TD>onint0</TD>
+<TD><I>none</I></TD>
+<TD>Thought to be "trivially not intuitionistic", and it is not clear if there is an alternate way to state it that is true. If the empty set is in A then of course |^| A = (/), but the converse seems difficult. I don't know so much about the structure of the ordinals without linearity,</TD>
+</TR>
+
+<TR>
+<TD>onssmin, onminesb, onminsb</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable without excluded middle, for the same reason as onint.</TD>
+</TR>
+
+<TR>
+<TD>oninton</TD>
+<TD>~ onintonm</TD>
+</TR>
+
+<TR>
+<TD>onintrab</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on the converse of ~ inteximm .</TD>
+</TR>
+
+<TR>
+<TD>onintrab2</TD>
+<TD>~ onintrab2im</TD>
+<TD>The converse would appear to need the converse of ~ inteximm .</TD>
+</TR>
+
+<TR>
+<TD>oneqmin</TD>
+<TD><I>none</I></TD>
+<TD>Falls as written because it implies onint, but it might be useful to keep the reverse direction for subsets that do have a minimum.</TD>
+</TR>
+
+<TR>
+<TD>onminex</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>onmindif2</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>onmindif2</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>ordpwsuc</TD>
+<TD>~ ordpwsucss </TD>
+<TD>See the ~ ordpwsucss comment for discussion of the succcessor-like
+properites of ` ( ~P A i^i On ) ` .  Full ordpwsuc implies excluded
+middle as seen at ~ ordpwsucexmid .</TD>
+</TR>
+
+<TR>
+<TD>ordsucelsuc</TD>
+<TD>~ onsucelsucr , ~ nnsucelsuc </TD>
+<TD>The converse of ~ onsucelsucr implies excluded middle, as shown at ~ onsucelsucexmid .</TD>
+</TR>
+
+<TR>
+<TD>ordsucsssuc</TD>
+<TD>~ onsucsssucr , ~ nnsucsssuc </TD>
+<TD>The converse of ~ onsucsssucr implies excluded middle, as shown at ~ onsucsssucexmid .</TD>
+</TR>
+
+<TR>
+<TD>ordsucuniel</TD>
+<TD>~ sucunielr , ~ nnsucuniel</TD>
+<TD>Full ordsucuniel implies excluded middle, as shown at ~ ordsucunielexmid .</TD>
+</TR>
+
+<TR>
+<TD>ordsucun</TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable in the reverse direction, but not the forward direction (implies some order totality).</TD>
+</TR>
+
+<TR>
+<TD>ordunpr</TD>
+<TD><I>none</I></TD>
+<TD>Presumably not provable without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>ordunel</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable (ordunel implies ordsucun).</TD>
+</TR>
+
+<TR>
+<TD>onsucuni, ordsucuni</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>orduniorsuc</TD>
+<TD><I>none</I></TD>
+<TD>Presumably not provable.</TD>
+</TR>
+
+<TR>
+<TD>ordunisuc</TD>
+<TD>~ onunisuci , ~ unisuc , ~ unisucg </TD>
+</TR>
+
+<TR>
+<TD>orduniss2</TD>
+<TD>~ onuniss2 </TD>
+</TR>
+
+<TR>
+<TD>0elsuc</TD>
+<TD><I>none</I></TD>
+<TD>This theorem may appear to be innocuous but it implies excluded
+middle as shown at ~ 0elsucexmid .</TD>
+</TR>
+
+<TR>
+<TD>onuniorsuci</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>onuninsuci, orduninsuc</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to be provable in the forward direction but not the reverse one.</TD>
+</TR>
+
+<TR>
+<TD>ordunisuc2</TD>
+<TD>~ ordunisuc2r </TD>
+<TD><P>The forward direction is conjectured to imply excluded middle. Here is a sketch of the proposed proof.</P>
+
+<P>Let om' be the set of all finite iterations of suc' A = ` ( ~P A i^i On ) ` on ` (/) `. (We can formalize this proof but not until we have om and at least finite induction.) Then om' = U. om' because if x e. om' then x = suc'^n (/) for some n, and then x C_ suc'^n (/) implies x e. suc'^(n+1) (/) e. om' so x e. U. om'.<p>
+
+<P>Now supposing the theorem, we know that A. x e. om' suc x e. om', so in particular 2o e. om', that is, 2o = suc'^n (/) for some n. (Note that 1o = suc' (/) - see ~ pw0 .) For n = 0 and n = 1 this is clearly false, and for n = m+3 we have 1o e. suc' suc' (/) , so 2o C_ suc' suc' (/), so 2o e. suc' suc' suc' (/) C_ suc' suc' suc' suc'^m (/) = 2o, contradicting ordirr.</P>
+
+<P>Thus 2o = suc' suc' (/) = suc' 1o. Applying this to X = ` { x e. { (/) } | ph } ` we have X C_ 1o implies X e. suc' 1o = 2o and hence X = (/) \/ X = 1o, and LEM follows (by ~ ordtriexmidlem2 for ` X = (/) ` and ~ rabsnt as seen in the ~ onsucsssucexmid proof for ` X = 1o ` ).</P>
+</TD>
+</TR>
+
+<TR>
+<TD>ordzsl, onzsl, dflim3, nlimon</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>dflim4</TD>
+<TD>~ df-ilim </TD>
+<TD>We conjecture that dflim4 is not equivalent to ~ df-ilim .</TD>
+</TR>
+
+<TR>
+<TD>limsuc</TD>
+<TD><I>none</I></TD>
+<TD>This would be trivial if dflim4 were the definition of a limit ordinal.
+With ~ dflim2 as the definition, limsuc might need ordunisuc2 (which we
+believe is not provable, see its entry in this list).</TD>
+</TR>
+
+<TR>
+<TD>limsssuc</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to be provable (is this also based on dflim4 being
+the definition of limit ordinal or is it unrelated?).</TD>
+</TR>
+
+<TR>
+<TD>tfinds , tfindsg</TD>
+<TD>~ tfis3 </TD>
+<TD>We are unable to separate limit and successor ordinals
+using case elimination.</TD>
+</TR>
+
+<TR>
+<TD>findsg</TD>
+<TD>~ uzind4 </TD>
+<TD>findsg presumably could be proved, but there
+hasn't been a need for it.</TD>
+</TR>
+
+<TR>
+<TD>xpexr2</TD>
+<TD>~ xpexr2m </TD>
+</TR>
+
+<TR>
+<TD>1stval</TD>
+<TD>~ 1stvalg </TD>
+</TR>
+
+<TR>
+<TD>2ndval</TD>
+<TD>~ 2ndvalg </TD>
+</TR>
+
+<TR>
+<TD>1stnpr</TD>
+<TD><I>none</I></TD>
+<TD>May be intuitionizable, but very lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>2ndnpr</TD>
+<TD><I>none</I></TD>
+<TD>May be intuitionizable, but very lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>brtpos</TD>
+<TD>~ brtposg </TD>
+</TR>
+
+<TR>
+<TD>ottpos</TD>
+<TD>~ ottposg </TD>
+</TR>
+
+<TR>
+<TD>ovtpos</TD>
+<TD>~ ovtposg </TD>
+</TR>
+
+<TR>
+<TD>pwuninel</TD>
+<TD>~ pwuninel2 </TD>
+<TD>The set.mm proof of pwuninel uses case elimination.</TD>
+</TR>
+
+<TR>
+<TD>iunonOLD</TD>
+<TD>~ iunon </TD>
+</TR>
+
+<TR>
+<TD>smofvon2</TD>
+<TD>~ smofvon2dm </TD>
+</TR>
+
+<TR>
+<TD>tfr1</TD>
+<TD>~ tfri1 </TD>
+</TR>
+
+<TR>
+<TD>tfr2</TD>
+<TD>~ tfri2 </TD>
+</TR>
+
+<TR>
+<TD>tfr3</TD>
+<TD>~ tfri3 </TD>
+</TR>
+
+<TR>
+<TD>tfr2b , recsfnon , recsval</TD>
+<TD><I>none</I></TD>
+<TD>These transfinite recursion theorems are lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>df-rdg</TD>
+<TD>~ df-irdg</TD>
+<TD>This definition combines the successor and limit cases (rather than specifying them as separate cases in a way which relies on excluded middle). In the words of [Crosilla], p. "Set-theoretic principles incompatible with intuitionistic logic", "we can still define many of the familiar set-theoretic operations by transfinite recursion on ordinals (see Aczel and Rathjen 2001, Section 4.2). This is fine as long as the definitions by transfinite recursion do not make case distinctions such as in the classical ordinal cases of successor and limit."</TD>
+</TR>
+
+<TR>
+<TD>rdgfnon</TD>
+<TD>~ rdgifnon </TD>
+</TR>
+
+<TR>
+<TD>ordge1n0</TD>
+<TD>~ ordge1n0im , ~ ordgt0ge1 </TD>
+</TR>
+
+<TR>
+<TD>ondif1</TD>
+<TD>~ dif1o </TD>
+<TD>In set.mm, ondif1 is used for Cantor Normal Form</TD>
+</TR>
+
+<TR>
+<TD>ondif2 , dif20el</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is not intuitionistic</TD>
+</TR>
+
+<TR>
+<TD>brwitnlem</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is not intuitionistic</TD>
+</TR>
+
+<TR>
+<TD>om0r</TD>
+<TD>~ om0 , ~ nnm0r </TD>
+</TR>
+
+<TR>
+<TD>om00</TD>
+<TD>~ nnm00 </TD>
+</TR>
+
+<TR>
+<TD>om00el</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>omopth2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ordinal trichotomy.</TD>
+</TR>
+
+<TR>
+  <TD>omeulem1 , omeu</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ordinal trichotomy, omopth2 ,
+  oaord , and other theorems we don't have.</TD>
+</TR>
+
+<TR>
+<TD>suc11reg</TD>
+<TD>~ suc11g </TD>
+</TR>
+
+<TR>
+<TD>frfnom</TD>
+<TD>~ frecfnom </TD>
+<TD>frecfnom adopts the ` frec ` notation and adds conditions on the
+characteristic function and initial value.</TD>
+</TR>
+
+<TR>
+<TD>fr0g</TD>
+<TD>~ frec0g </TD>
+<TD>frec0g adopts the ` frec ` notation and adds a condition on the
+characteristic function.</TD>
+</TR>
+
+<TR>
+<TD>frsuc</TD>
+<TD>~ frecsuc </TD>
+<TD>frecsuc adopts the ` frec ` notation and adds conditions on the
+characteristic function and initial value.</TD>
+</TR>
+
+<TR>
+<TD>om0x</TD>
+<TD>~ om0 </TD>
+</TR>
+
+<TR>
+  <TD>oa0r</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof distinguishes between limit and successor
+  cases using case elimination.</TD>
+</TR>
+
+<TR>
+  <TD>oaordi</TD>
+  <TD>~ nnaordi</TD>
+  <TD>The set.mm proof of oaordi relies on being able to distinguish
+  between limit ordinals and successor ordinals via case
+  elimination.</TD>
+</TR>
+
+<TR>
+  <TD>oaord</TD>
+  <TD>~ nnaord</TD>
+  <TD>The set.mm proof of oaord relies on ordinal trichotomy.</TD>
+</TR>
+
+<TR>
+  <TD>oawordri</TD>
+  <TD><I>none</I></TD>
+  <TD>Implies excluded middle as shown at ~ oawordriexmid</TD>
+</TR>
+
+<TR>
+<TD>oaword</TD>
+<TD>~ oawordi </TD>
+<TD>The other direction presumably could be proven but isn't yet.</TD>
+</TR>
+
+<TR>
+<TD>oaord1</TD>
+<TD><I>none yet</I></TD>
+</TR>
+
+<TR>
+  <TD>oaword2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on oawordri and oa0r</TD>
+</TR>
+
+<TR>
+  <TD>oawordeu</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on a number of things we don't have</TD>
+</TR>
+
+<TR>
+  <TD>oawordex</TD>
+  <TD>~ nnawordex</TD>
+  <TD>The set.mm proof relies on oawordeu</TD>
+</TR>
+
+<TR>
+<TD>omwordi</TD>
+<TD>~ nnmword</TD>
+<TD>The set.mm proof of omwordi relies on case elimination.</TD>
+</TR>
+
+<TR>
+<TD>omword1</TD>
+<TD>~ nnmword</TD>
+</TR>
+
+<TR>
+<TD>oawordex</TD>
+<TD>~ nnawordex </TD>
+</TR>
+
+<TR>
+<TD>swoso</TD>
+<TD><I>none</I></TD>
+<TD>Unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>ecdmn0</TD>
+<TD>~ ecdmn0m </TD>
+</TR>
+
+<TR>
+<TD>erdisj, qsdisj, qsdisj2, uniinqs</TD>
+<TD><I>none</I></TD>
+<TD>These could presumably be restated to be provable, but they are lightly
+used in set.mm</TD>
+</TR>
+
+<TR>
+<TD>xpider</TD>
+<TD>~ xpiderm </TD>
+</TR>
+
+<TR>
+<TD>iiner</TD>
+<TD>~ iinerm </TD>
+</TR>
+
+<TR>
+<TD>riiner</TD>
+<TD>~ riinerm </TD>
+</TR>
+
+<TR>
+<TD>brecop2</TD>
+<TD><I>none</I></TD>
+<TD>This is a form of reverse closure and uses excluded
+middle in its proof.</TD>
+</TR>
+
+<TR>
+<TD>erov , erov2</TD>
+<TD><I>none</I></TD>
+<TD>Unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>eceqoveq</TD>
+<TD><I>none</I></TD>
+<TD>Unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>ralxpmap</TD>
+  <TD><I>none</I></TD>
+  <TD>Lightly used in set.mm. The set.mm proof relies on fnsnsplit
+  and undif .</TD>
+</TR>
+
+<TR>
+<TD>df-sdom , relsdom , brsdom , dfdom2 , sdomdom , sdomnen ,
+brdom2 , bren2 , domdifsn</TD>
+<TD><I>none</I></TD>
+<TD>Many aspects of strict dominance as developed in set.mm rely
+on excluded middle and a different definition would be needed if
+we wanted strict dominance to have the expected properties.</TD>
+</TR>
+
+<TR>
+<TD>en1b</TD>
+<TD>~ en1bg </TD>
+</TR>
+
+<TR>
+<TD>snfi</TD>
+<TD>~ snfig</TD>
+</TR>
+
+<TR>
+<TD>difsnen</TD>
+<TD>~ fidifsnen</TD>
+</TR>
+
+<TR>
+<TD>undom</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof uses undif2 and we just have ~ undif2ss </TD>
+</TR>
+
+<TR>
+<TD>xpdom3</TD>
+<TD>~ xpdom3m </TD>
+</TR>
+
+<TR>
+<TD>domunsncan</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on difsnen</TD>
+</TR>
+
+<TR>
+<TD>omxpenlem , omxpen , omf1o</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on omwordi , oaord , om0r , and
+other theorems we do not have</TD>
+</TR>
+
+<TR>
+  <TD>pw2f1o , pw2eng , pw2en</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would require some kind of decidability
+  hypothesis. Discussions of this sort tend to get into how
+  many truth values there are and sets like ` { s | s C_ 1o } `
+  (relatively undeveloped so far except for a few results like
+  ~ exmid01 and ~ uni0b ).</TD>
+</TR>
+
+<TR>
+<TD>enfixsn</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on difsnen</TD>
+</TR>
+
+<TR>
+<TD>sbth and its lemmas, sbthb , sbthcl</TD>
+<TD>~ fisbth</TD>
+<TD>The Schroeder-Bernstein Theorem is equivalent to excluded middle
+by ~ exmidsbth </TD>
+</TR>
+
+<TR>
+  <TD>fodomr</TD>
+  <TD><I>none</I></TD>
+  <TD>Equivalent to excluded middle per ~ exmidfodomr</TD>
+</TR>
+
+<TR>
+  <TD>mapdom1</TD>
+  <TD>~ mapdom1g</TD>
+</TR>
+
+<TR>
+<TD>2pwuninel</TD>
+<TD>~ 2pwuninelg</TD>
+</TR>
+
+<TR>
+  <TD>mapunen</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fresaunres1 and fresaunres2 .</TD>
+</TR>
+
+<TR>
+  <TD>map2xp</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on mapunen</TD>
+</TR>
+
+<TR>
+  <TD>mapdom2 , mapdom3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on case elimination and undif .
+  At a minimum, it would appear that nonempty would need to
+  be changed to inhabited.</TD>
+</TR>
+
+<TR>
+  <TD>pwen</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on pw2eng</TD>
+</TR>
+
+<TR>
+  <TD>limenpsi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on sbth</TD>
+</TR>
+
+<TR>
+  <TD>limensuci , limensuc</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on undif</TD>
+</TR>
+
+<TR>
+  <TD>infensuc</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on limensuc</TD>
+</TR>
+
+<TR>
+  <TD>php</TD>
+  <TD>~ phpm</TD>
+</TR>
+
+<TR>
+  <TD>snnen2o</TD>
+  <TD>~ snnen2og , ~ snnen2oprc</TD>
+</TR>
+
+<TR>
+<TD>onomeneq , onfin , onfin2</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proofs rely on excluded middle</TD>
+</TR>
+
+<TR>
+<TD>nnsdomo , sucdom2 , sucdom , 0sdom1dom , sdom1</TD>
+<TD><I>none</I></TD>
+<TD>iset.mm doesn't yet have strict dominance</TD>
+</TR>
+
+<TR>
+  <TD>1sdom2</TD>
+  <TD>~ 1nen2</TD>
+  <TD>Although the presence of ~ 1nen2 might make it look
+  like a natural definition for strict dominance would be
+  ` A ~<_ B /\ -. A ~~ B ` , that definition may be more suitable
+  for finite sets than all sets, so at least for now we only
+  define ` ~~ ` and express certain theorems (such as this one)
+  in terms of equinumerosity which in set.mm are expressed in terms
+  of strict dominance.</TD>
+</TR>
+
+<TR>
+<TD>modom , modom2</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proofs rely on excluded middle</TD>
+</TR>
+
+<TR>
+<TD>1sdom , unxpdom , unxpdom2 , sucxpdom</TD>
+<TD><I>none</I></TD>
+<TD>iset.mm doesn't yet have strict dominance</TD>
+</TR>
+
+<TR>
+<TD>pssinf</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on sdomnen</TD>
+</TR>
+
+<TR>
+<TD>isinf</TD>
+<TD>~ isinfinf</TD>
+</TR>
+
+<TR>
+<TD>fineqv</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on theorems we don't have, and even
+for the theorems we do have, we'd need to carefully look at
+what axioms they rely on.</TD>
+</TR>
+
+<TR>
+<TD>pssnn</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof uses excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>ssnnfi</TD>
+<TD><I>none</I></TD>
+<TD>The proof in ~ ssfiexmid would apply to this as well as to
+ssfi , since ` { (/) } e. _om `</TD>
+</TR>
+
+<TR>
+<TD ROWSPAN="3">ssfi</TD>
+<TD>~ ssfirab</TD>
+<TD>when the subset is defined by a decidable property</TD>
+</TR>
+
+<TR>
+<TD>~ ssfidc</TD>
+<TD>when membership in the subset is decidable</TD>
+</TR>
+
+<TR>
+<TD><I>for the general case</I></TD>
+<TD>Implies excluded middle as shown at ~ ssfiexmid</TD>
+</TR>
+
+<TR>
+<TD>domfi</TD>
+<TD><I>none</I></TD>
+<TD>Implies excluded middle as shown at ~ domfiexmid</TD>
+</TR>
+
+<TR>
+<TD>xpfir</TD>
+<TD><I>none</I></TD>
+<TD>Nonempty would need to be changed to inhabited, but the
+set.mm proof also uses domfi</TD>
+</TR>
+
+<TR>
+<TD>infi</TD>
+<TD><I>none</I></TD>
+<TD>Implies excluded middle as shown at ~ infiexmid . It
+is conjectured that we could prove the special case
+` ( A e. Fin /\ B e. Fin /\ ( A u. B ) e. Fin ) -> ( A i^i B ) e. Fin `</TD>
+</TR>
+
+<TR>
+<TD>rabfi</TD>
+<TD><I>none</I></TD>
+<TD>Presumably the proof of ~ ssfiexmid could be adapted to show
+this implies excluded middle</TD>
+</TR>
+
+<TR>
+<TD>finresfin</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is in terms of ssfi</TD>
+</TR>
+
+<TR>
+<TD>f1finf1o</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is not intuitionistic</TD>
+</TR>
+
+<TR>
+<TD>nfielex</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof relies on neq0</TD>
+</TR>
+
+<TR>
+<TD>diffi</TD>
+<TD>~ diffisn , ~ diffifi</TD>
+<TD>diffi is not provable, as shown at ~ diffitest</TD>
+</TR>
+
+<TR>
+  <TD>enp1ilem , enp1i , en2 , en3 , en4</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle and undif1</TD>
+</TR>
+
+<TR>
+  <TD>findcard3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof is in terms of strict dominance.</TD>
+</TR>
+
+<TR>
+  <TD>frfi</TD>
+  <TD><I>none</I></TD>
+  <TD>Not known whether this can be proved (either with the current
+  ~ df-frind or any other possible concept analogous to ` Fr ` ).</TD>
+</TR>
+
+<TR>
+  <TD>fimax2g</TD>
+  <TD>~ fimax2gtri</TD>
+</TR>
+
+<TR>
+  <TD>fimaxg</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof of fimaxg relies on fimax2g which
+  relies on frfi and fri</TD>
+</TR>
+
+<TR>
+  <TD>fisupg</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle and presumably
+  this theorem would need to be modified to be provable.</TD>
+</TR>
+
+<TR>
+  <TD ROWSPAN="4">unfi</TD>
+  <TD>~ unsnfi</TD>
+  <TD>For the union of a set and a singleton whose element is not
+  a member of that set</TD>
+</TR>
+
+<TR>
+  <TD>~ unfidisj</TD>
+  <TD>For the union of two disjoint sets</TD>
+</TR>
+
+<TR>
+  <TD>~ unfiin</TD>
+  <TD>When the intersection is known to be finite</TD>
+</TR>
+
+<TR>
+  <TD><I>for any two finite sets</I></TD>
+  <TD>Implies excluded middle as shown at ~ unfiexmid .</TD>
+</TR>
+
+<TR>
+  <TD ROWSPAN="2">prfi</TD>
+  <TD>~ prfidisj</TD>
+  <TD>for two unequal sets</TD>
+</TR>
+
+<TR>
+  <TD><I>in general</I></TD>
+  <TD>The set.mm proof depends on unfi and it would appear that
+  mapping ` { A , B } ` to a natural number would decide whether
+  ` A ` and ` B ` are equal and thus imply excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>tpfi</TD>
+  <TD>~ tpfidisj</TD>
+</TR>
+
+<TR>
+  <TD>fodomfi</TD>
+  <TD><I>none</I></TD>
+  <TD>Might be provable, for example via ~ ac6sfi or induction directly.
+  The set.mm proof does use undom in addition to induction.</TD>
+</TR>
+
+<TR>
+  <TD>fofinf1o</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses excluded middle in several places.</TD>
+</TR>
+
+<TR>
+  <TD>dmfi</TD>
+  <TD>~ fundmfi</TD>
+</TR>
+
+<TR>
+  <TD>resfnfinfin</TD>
+  <TD>~ resfnfinfinss</TD>
+</TR>
+
+<TR>
+  <TD>residfi</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable, but lightly used in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>cnvfi</TD>
+  <TD>~ relcnvfi</TD>
+</TR>
+
+<TR>
+  <TD>rnfi</TD>
+  <TD>~ funrnfi</TD>
+</TR>
+
+<TR>
+  <TD>fofi</TD>
+  <TD>~ f1ofi</TD>
+  <TD>Presumably precluded by an argument similar to ~ domfiexmid
+  (the set.mm proof relies on domfi).</TD>
+</TR>
+
+<TR>
+  <TD ROWSPAN="2">iunfi</TD>
+  <TD>~ iunfidisj</TD>
+  <TD>for a disjoint collection</TD>
+</TR>
+
+<TR>
+  <TD><I>in general</I></TD>
+  <TD>Presumably not possible for the same reasons as in ~ unfiexmid</TD>
+</TR>
+
+<TR>
+  <TD>unifi</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably the issues are similar to iunfi</TD>
+</TR>
+
+<TR>
+  <TD>pwfi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses domfi and other theorems we don't have</TD>
+</TR>
+
+<TR>
+  <TD>abrexfi</TD>
+  <TD><I>none</I></TD>
+  <TD>At first glance it would appear that the mapping would need to
+  be one to one or some other condition.</TD>
+</TR>
+
+<TR>
+  <TD>fisuppfi</TD>
+  <TD>~ preimaf1ofi</TD>
+  <TD>The set.mm proof of fisuppfi uses ssfi</TD>
+</TR>
+
+<TR>
+  <TD>dfsup2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses excluded middle in several places and the
+  theorem is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>supmo</TD>
+  <TD>~ supmoti</TD>
+  <TD>The conditions on the order are different.</TD>
+</TR>
+
+<TR>
+  <TD>supexd , supex</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses rmorabex</TD>
+</TR>
+
+<TR>
+  <TD>supeu</TD>
+  <TD>~ supeuti</TD>
+</TR>
+
+<TR>
+  <TD>supval2</TD>
+  <TD>~ supval2ti</TD>
+</TR>
+
+<TR>
+  <TD>eqsup</TD>
+  <TD>~ eqsupti</TD>
+</TR>
+
+<TR>
+  <TD>eqsupd</TD>
+  <TD>~ eqsuptid</TD>
+</TR>
+
+<TR>
+  <TD>supcl</TD>
+  <TD>~ supclti</TD>
+</TR>
+
+<TR>
+  <TD>supub</TD>
+  <TD>~ supubti</TD>
+</TR>
+
+<TR>
+  <TD>suplub</TD>
+  <TD>~ suplubti</TD>
+</TR>
+
+<TR>
+  <TD>suplub2</TD>
+  <TD>~ suplub2ti</TD>
+</TR>
+
+<TR>
+  <TD>supnub</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable, although the set.mm proof relies on
+  excluded middle and it is not used until later in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>sup0riota , sup0 , infempty</TD>
+  <TD><I>none</I></TD>
+  <TD>Suitably modified verions may be provable, but they
+  are unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>supmax</TD>
+  <TD>~ supmaxti</TD>
+</TR>
+
+<TR>
+  <TD>fisup2g , fisupcl</TD>
+  <TD><I>none</I></TD>
+  <TD>Other variations may be possible, but the set.mm proof will not
+  work as-is or with small modifications.</TD>
+</TR>
+
+<TR>
+  <TD>supgtoreq</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses fisup2g and also trichotomy.</TD>
+</TR>
+
+<TR>
+  <TD>suppr</TD>
+  <TD><I>none</I></TD>
+  <TD>The formulation using ` if ` would seem to require a trichotomous
+  order. For real numbers, supremum on a pair does yield the maximum of
+  two numbers: see ~ maxcl , ~ maxle1 , ~ maxle2 , ~ maxleast ,
+  and ~ maxleb .</TD>
+</TR>
+
+<TR>
+  <TD>supiso</TD>
+  <TD>~ supisoti</TD>
+</TR>
+
+<TR>
+  <TD>infexd , infex</TD>
+  <TD><I>none</I></TD>
+  <TD>See supexd</TD>
+</TR>
+
+<TR>
+  <TD>eqinf , eqinfd</TD>
+  <TD>~ eqinfti , ~ eqinftid</TD>
+</TR>
+
+<TR>
+  <TD>infval</TD>
+  <TD>~ infvalti</TD>
+</TR>
+
+<TR>
+  <TD>infcllem</TD>
+  <TD>~ cnvinfex</TD>
+  <TD>infcllem has an unnecessary hypothesis; other than that
+  these are the same</TD>
+</TR>
+
+<TR>
+  <TD>infcl</TD>
+  <TD>infclti</TD>
+</TR>
+
+<TR>
+  <TD>inflb</TD>
+  <TD>~ inflbti</TD>
+</TR>
+
+<TR>
+  <TD>infglb</TD>
+  <TD>~ infglbti</TD>
+</TR>
+
+<TR>
+  <TD>infglbb</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable with additional conditions (see suplub2)</TD>
+</TR>
+
+<TR>
+  <TD>infnlb</TD>
+  <TD>~ infnlbti</TD>
+</TR>
+
+<TR>
+  <TD>infmin</TD>
+  <TD>~ infminti</TD>
+</TR>
+
+<TR>
+  <TD>infmo</TD>
+  <TD>~ infmoti</TD>
+</TR>
+
+<TR>
+  <TD>infeu</TD>
+  <TD>~ infeuti</TD>
+</TR>
+
+<TR>
+  <TD>fimin2g , fiming</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on frfi and fri</TD>
+</TR>
+
+<TR>
+  <TD>fiinfg , fiinf2g</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fiming</TD>
+</TR>
+
+<TR>
+  <TD>fiinfcl</TD>
+  <TD><I>none</I></TD>
+  <TD>See fisupcl</TD>
+</TR>
+
+<TR>
+  <TD>infltoreq</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof depends on supgtoreq and fiinfcl</TD>
+</TR>
+
+<TR>
+  <TD>infpr</TD>
+  <TD><I>none</I></TD>
+  <TD>See suppr</TD>
+</TR>
+
+<TR>
+  <TD>infsn</TD>
+  <TD>~ infsnti</TD>
+</TR>
+
+<TR>
+  <TD>infiso</TD>
+  <TD>~ infisoti</TD>
+</TR>
+
+<TR>
+<TD>ax-reg , axreg2 , zfregcl</TD>
+<TD>~ ax-setind </TD>
+<TD>ax-reg implies excluded middle as seen at ~ regexmid</TD>
+</TR>
+
+<TR>
+  <TD>df-rank and all theorems related to the rank function</TD>
+  <TD><I>none</I></TD>
+  <TD>One possible definition is Definition 9.3.4
+  of [AczelRathjen], p. 91</TD>
+</TR>
+
+<TR>
+  <TD>df-aleph and all theorems involving aleph</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>df-cf and all theorems involving cofinality</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>df-acn and all theorems using this definition</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>cardf2 , cardon , isnum2</TD>
+  <TD>~ cardcl , ~ isnumi</TD>
+  <TD>It would also be easy to prove ` Fun card `
+  if there is a need.</TD>
+</TR>
+
+<TR>
+  <TD>ennum</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isnum2</TD>
+</TR>
+
+<TR>
+  <TD>tskwe</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on df-sdom</TD>
+</TR>
+
+<TR>
+  <TD>xpnum</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isnum2</TD>
+</TR>
+
+<TR>
+  <TD>cardval3</TD>
+  <TD>~ cardval3ex</TD>
+</TR>
+
+<TR>
+  <TD>cardid2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on onint</TD>
+</TR>
+
+<TR>
+  <TD>isnum3</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>oncardid</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on cardid2</TD>
+</TR>
+
+<TR>
+  <TD>cardidm</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably this would need a condition on ` A `
+  but even with that, the set.mm proof relies on
+  cardid2</TD>
+</TR>
+
+<TR>
+  <TD>oncard</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on theorems we don't have,
+  and this theorem is unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>ficardom</TD>
+  <TD><I>none</I></TD>
+  <TD>Both the set.mm proof, and perhaps some possible alternative
+  proofs, rely on onomeneq and perhaps other theorems we don't have
+  currently.</TD>
+</TR>
+
+<TR>
+  <TD>ficardid</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on cardid2</TD>
+</TR>
+
+<TR>
+  <TD>cardnn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on a variety of theorems we don't have
+  currently.</TD>
+</TR>
+
+<TR>
+  <TD>cardnueq0</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on cardid2</TD>
+</TR>
+
+<TR>
+  <TD>cardne</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ordinal trichotomy (and if that can be
+  solved there might be some more minor problems which require revisions
+  to the theorem)</TD>
+</TR>
+
+<TR>
+  <TD>carden2a</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>carden2b</TD>
+  <TD>~ carden2bex</TD>
+</TR>
+
+<TR>
+  <TD>card1 , cardsn</TD>
+  <TD><I>none</I></TD>
+  <TD>Rely on a variety of theorems we don't currently have.
+  Lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>carddomi2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>sdomsdomcardi</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on a variety of theorems we don't currently have.</TD>
+</TR>
+
+<TR>
+  <TD>prdom2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof would only work in the case where
+  ` A = B ` is decidable.
+  If we can prove fodomfi , that would appear to imply
+  prsomd2 fairly quickly.</TD>
+</TR>
+
+<TR>
+  <TD>dif1card</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on cardennn</TD>
+</TR>
+
+<TR>
+  <TD>leweon</TD>
+  <TD><I>none</I></TD>
+  <TD>We lack the well ordering related theorems this relies on,
+  and it isn't clear they are provable.</TD>
+</TR>
+
+<TR>
+  <TD>r0weon</TD>
+  <TD><I>none</I></TD>
+  <TD>We lack the well ordering related theorems this relies on,
+  and it isn't clear they are provable.</TD>
+</TR>
+
+<TR>
+  <TD>infxpen</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on well ordering related theorems that
+  we don't have (and may not be able to have), and it isn't clear
+  that infxpen is provable.</TD>
+</TR>
+
+<TR>
+  <TD>infxpidm2</TD>
+  <TD><I>none</I></TD>
+  <TD>Depends on cardinality theorems we don't have.</TD>
+</TR>
+
+<TR>
+  <TD>infxpenc</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on notations and theorems we don't have.</TD>
+</TR>
+
+<TR>
+  <TD>infxpenc2</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on theorems we don't have.</TD>
+</TR>
+
+<TR>
+  <TD>dfac8a</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is and numerability
+  may not be able to work the same way.</TD>
+</TR>
+
+<TR>
+  <TD>dfac8b</TD>
+  <TD><I>none</I></TD>
+  <TD>We are lacking much of what this proof relies on and
+  we may not be able to make numerability and well-ordering
+  work as in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>dfac8c</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is and well-ordering
+  may not be able to work the same way.</TD>
+</TR>
+
+<TR>
+  <TD>ac10ct</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is and well-ordering
+  may not be able to work the same way.</TD>
+</TR>
+
+<TR>
+  <TD>ween</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is and well-ordering
+  and numerability may not be able to work the same way.</TD>
+</TR>
+
+<TR>
+  <TD>ac5num , ondomen , numdom , ssnum , onssnum , indcardi</TD>
+  <TD><I>none</I></TD>
+  <TD>Numerability (or cardinality in general) is not well
+  developed and to a certain extent cannot be.</TD>
+</TR>
+
+<TR>
+  <TD>fodom , fodomnum</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably not provable as stated</TD>
+</TR>
+
+<TR>
+  <TD>fodomb</TD>
+  <TD><I>none</I></TD>
+  <TD>That the reverse direction is equivalent to excluded middle is
+  ~ exmidfodomr . The forward direction is presumably also not provable.</TD>
+</TR>
+
+<TR>
+  <TD>entri3</TD>
+  <TD>~ fientri3</TD>
+  <TD>Because full entri3 is equivalent to the axiom of choice,
+  it implies excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>infinf</TD>
+  <TD>~ infnfi</TD>
+  <TD>Defining "A is infinite" as ` _om ~<_ A ` follows definition
+  8.1.4 of [AczelRathjen], p. 71. It can presumably not be shown to
+  be equivalent to ` -. A e. Fin ` in the absence of excluded middle
+  (see ~ inffiexmid which isn't exactly about ` -. A e. Fin <->
+  _om ~<_ A` but which is close).</TD>
+</TR>
+
+<TR>
+  <TD>df-wina , df-ina , df-tsk , df-gru , ax-groth and all theorems
+  related to inaccessibles and large cardinals</TD>
+  <TD><I>none</I></TD>
+  <TD>For an introduction to inaccessibles and large set properties
+  see Chapter 18 of [AczelRathjen], p. 165 (including why "large set
+  properties" is more apt terminology than "large cardinal
+  properties" in the absence of excluded middle).</TD>
+</TR>
+
+<TR>
+<TD>addcompi</TD>
+<TD>~ addcompig </TD>
+</TR>
+
+<TR>
+<TD>addasspi</TD>
+<TD>~ addasspig </TD>
+</TR>
+
+<TR>
+<TD>mulcompi</TD>
+<TD>~ mulcompig </TD>
+</TR>
+
+<TR>
+<TD>mulasspi</TD>
+<TD>~ mulasspig </TD>
+</TR>
+
+<TR>
+<TD>distrpi</TD>
+<TD>~ distrpig </TD>
+</TR>
+
+<TR>
+<TD>addcanpi</TD>
+<TD>~ addcanpig </TD>
+</TR>
+
+<TR>
+<TD>mulcanpi</TD>
+<TD>~ mulcanpig </TD>
+</TR>
+
+<TR>
+<TD>addnidpi</TD>
+<TD>~ addnidpig </TD>
+</TR>
+
+<TR>
+<TD>ltapi</TD>
+<TD>~ ltapig </TD>
+</TR>
+
+<TR>
+<TD>ltmpi</TD>
+<TD>~ ltmpig </TD>
+</TR>
+
+<TR>
+<TD>nlt1pi</TD>
+<TD>~ nlt1pig </TD>
+</TR>
+
+<TR>
+<TD>df-nq</TD>
+<TD>~ df-nqqs </TD>
+</TR>
+
+<TR>
+<TD>df-nq</TD>
+<TD>~ df-nqqs </TD>
+</TR>
+
+<TR>
+<TD>df-erq</TD>
+<TD><I>none</I></TD>
+<TD>Not needed given ~ df-nqqs </TD>
+</TR>
+
+<TR>
+<TD>df-plq</TD>
+<TD>~ df-plqqs </TD>
+</TR>
+
+<TR>
+<TD>df-mq</TD>
+<TD>~ df-mqqs </TD>
+</TR>
+
+<TR>
+<TD>df-1nq</TD>
+<TD>~ df-1nqqs </TD>
+</TR>
+
+<TR>
+<TD>df-ltnq</TD>
+<TD>~ df-ltnqqs </TD>
+</TR>
+
+<TR>
+<TD>elpqn</TD>
+<TD><I>none</I></TD>
+<TD>Not needed given ~ df-nqqs </TD>
+</TR>
+
+<TR>
+<TD>ordpipq</TD>
+<TD>~ ordpipqqs </TD>
+</TR>
+
+<TR>
+<TD>addnqf</TD>
+<TD>~ dmaddpq , ~ addclnq </TD>
+<TD>It should be possible to prove that ` +Q ` is a function, but
+so far there hasn't been a need to do so.</TD>
+</TR>
+
+<TR>
+<TD>addcomnq</TD>
+<TD>~ addcomnqg </TD>
+</TR>
+
+<TR>
+<TD>mulcomnq</TD>
+<TD>~ mulcomnqg </TD>
+</TR>
+
+<TR>
+<TD>mulassnq</TD>
+<TD>~ mulassnqg </TD>
+</TR>
+
+<TR>
+<TD>recmulnq</TD>
+<TD>~ recmulnqg </TD>
+</TR>
+
+<TR>
+<TD>ltanq</TD>
+<TD>~ ltanqg </TD>
+</TR>
+
+<TR>
+<TD>ltmnq</TD>
+<TD>~ ltmnqg </TD>
+</TR>
+
+<TR>
+<TD>ltexnq</TD>
+<TD>~ ltexnqq </TD>
+</TR>
+
+<TR>
+<TD>archnq</TD>
+<TD>~ archnqq </TD>
+</TR>
+
+<TR>
+<TD>df-np</TD>
+<TD>~ df-inp </TD>
+</TR>
+
+<TR>
+<TD>df-1p</TD>
+<TD>~ df-i1p </TD>
+</TR>
+
+<TR>
+<TD>df-plp</TD>
+<TD>~ df-iplp </TD>
+</TR>
+
+<TR>
+<TD>df-ltp</TD>
+<TD>~ df-iltp </TD>
+</TR>
+
+<TR>
+<TD>elnp , elnpi</TD>
+<TD>~ elinp </TD>
+</TR>
+
+<TR>
+<TD>prn0</TD>
+<TD>~ prml , ~ prmu </TD>
+</TR>
+
+<TR>
+<TD>prpssnq</TD>
+<TD>~ prssnql , ~ prssnqu </TD>
+</TR>
+
+<TR>
+<TD>elprnq</TD>
+<TD>~ elprnql , ~ elprnqu </TD>
+</TR>
+
+<TR>
+<TD>prcdnq</TD>
+<TD>~ prcdnql , ~ prcunqu </TD>
+</TR>
+
+<TR>
+<TD>prub</TD>
+<TD>~ prubl </TD>
+</TR>
+
+<TR>
+<TD>prnmax</TD>
+<TD>~ prnmaxl </TD>
+</TR>
+
+<TR>
+<TD>npomex</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>prnmadd</TD>
+<TD>~ prnmaddl </TD>
+</TR>
+
+<TR>
+<TD>genpv</TD>
+<TD>~ genipv </TD>
+</TR>
+
+<TR>
+<TD>genpcd</TD>
+<TD>~ genpcdl </TD>
+</TR>
+
+<TR>
+<TD>genpnmax</TD>
+<TD>~ genprndl</TD>
+</TR>
+
+<TR>
+<TD>ltrnq</TD>
+<TD>~ltrnqg , ~ ltrnqi </TD>
+</TR>
+
+<TR>
+<TD>genpcl</TD>
+<TD>~ addclpr , ~ mulclpr </TD>
+</TR>
+
+<TR>
+<TD>genpass</TD>
+<TD>~ genpassg </TD>
+</TR>
+
+<TR>
+<TD>addclprlem1</TD>
+<TD>~ addnqprllem , ~ addnqprulem </TD>
+</TR>
+
+<TR>
+<TD>addclprlem2</TD>
+<TD>~ addnqprl , ~ addnqpru </TD>
+</TR>
+
+<TR>
+<TD>plpv</TD>
+<TD>~ plpvlu </TD>
+</TR>
+
+<TR>
+<TD>mpv</TD>
+<TD>~ mpvlu </TD>
+</TR>
+
+<TR>
+<TD>nqpr</TD>
+<TD>~ nqprlu </TD>
+</TR>
+
+<TR>
+<TD>mulclprlem</TD>
+<TD>~ mulnqprl , ~ mulnqpru </TD>
+</TR>
+
+<TR>
+<TD>addcompr</TD>
+<TD>~ addcomprg </TD>
+</TR>
+
+<TR>
+<TD>addasspr</TD>
+<TD>~ addassprg </TD>
+</TR>
+
+<TR>
+<TD>mulcompr</TD>
+<TD>~ mulcomprg </TD>
+</TR>
+
+<TR>
+<TD>mulasspr</TD>
+<TD>~ mulassprg </TD>
+</TR>
+
+<TR>
+<TD>distrlem1pr</TD>
+<TD>~ distrlem1prl , ~ distrlem1pru </TD>
+</TR>
+
+<TR>
+<TD>distrlem4pr</TD>
+<TD>~ distrlem4prl , ~ distrlem4pru </TD>
+</TR>
+
+<TR>
+<TD>distrlem5pr</TD>
+<TD>~ distrlem5prl , ~ distrlem5pru </TD>
+</TR>
+
+<TR>
+<TD>distrpr</TD>
+<TD>~ distrprg </TD>
+</TR>
+
+<TR>
+<TD>ltprord</TD>
+<TD>~ ltprordil </TD>
+<TD>There hasn't yet been a need to investigate versions which are
+biconditional or which involve proper subsets.</TD>
+</TR>
+
+<TR>
+<TD>psslinpr</TD>
+<TD>~ ltsopr </TD>
+</TR>
+
+<TR>
+<TD>prlem934</TD>
+<TD>~ prarloc2 </TD>
+</TR>
+
+<TR>
+<TD>ltaddpr2</TD>
+<TD>~ ltaddpr </TD>
+</TR>
+
+<TR>
+<TD>ltexprlem1 , ltexprlem2 , ltexprlem3 , ltexprlem4</TD>
+<TD><I>none</I></TD>
+<TD>See the lemmas for ~ ltexpri generally.</TD>
+</TR>
+
+<TR>
+<TD>ltexprlem5</TD>
+<TD>~ ltexprlempr </TD>
+</TR>
+
+<TR>
+<TD>ltexprlem6</TD>
+<TD>~ ltexprlemfl , ~ ltexprlemfu </TD>
+</TR>
+
+<TR>
+<TD>ltexprlem7</TD>
+<TD>~ ltexprlemrl , ~ ltexprlemru </TD>
+</TR>
+
+<TR>
+<TD>ltapr</TD>
+<TD>~ ltaprg </TD>
+</TR>
+
+<TR>
+<TD>addcanpr</TD>
+<TD>~ addcanprg </TD>
+</TR>
+
+<TR>
+<TD>prlem936</TD>
+<TD>~ prmuloc2 </TD>
+</TR>
+
+<TR>
+<TD>reclem2pr</TD>
+<TD>~ recexprlempr </TD>
+</TR>
+
+<TR>
+<TD>reclem3pr</TD>
+<TD>~ recexprlem1ssl , ~ recexprlem1ssu </TD>
+</TR>
+
+<TR>
+<TD>reclem4pr</TD>
+<TD>~ recexprlemss1l , ~ recexprlemss1u , ~ recexprlemex </TD>
+</TR>
+
+<TR>
+<TD>supexpr , suplem1pr , suplem2pr</TD>
+<TD>~ caucvgprpr</TD>
+<TD>The Least Upper Bound property for sets of real numbers does not hold,
+in general, without excluded middle. We express completeness using
+sequences.</TD>
+</TR>
+
+<TR>
+<TD>mulcmpblnrlem</TD>
+<TD>~ mulcmpblnrlemg </TD>
+</TR>
+
+<TR>
+<TD>ltsrpr</TD>
+<TD>~ ltsrprg </TD>
+</TR>
+
+<TR>
+<TD>dmaddsr , dmmulsr</TD>
+<TD><I>none</I></TD>
+<TD>Although these presumably could be proved in a way similar
+to ~ dmaddpq and ~dmmulpq (in fact ~ dmaddpqlem would seem to
+be easily generalizable to anything of the form
+` ( ( S X. T ) /. R ) ` ), we haven't yet had a need to do so.
+</TR>
+
+<TR>
+<TD>addcomsr</TD>
+<TD>~ addcomsrg </TD>
+</TR>
+
+<TR>
+<TD>addasssr</TD>
+<TD>~ addasssrg </TD>
+</TR>
+
+<TR>
+<TD>mulcomsr</TD>
+<TD>~ mulcomsrg </TD>
+</TR>
+
+<TR>
+<TD>mulasssr</TD>
+<TD>~ mulasssrg </TD>
+</TR>
+
+<TR>
+<TD>distrsr</TD>
+<TD>~ distrsrg </TD>
+</TR>
+
+<TR>
+<TD>ltasr</TD>
+<TD>~ ltasrg </TD>
+</TR>
+
+<TR>
+<TD>sqgt0sr</TD>
+<TD>~ mulgt0sr , ~ apsqgt0 </TD>
+</TR>
+
+<TR>
+<TD>recexsr</TD>
+<TD>~ recexsrlem </TD>
+<TD>This would follow from sqgt0sr (as in the set.mm proof of recexsr),
+but "not equal to zero" would need to be changed to
+"apart from zero".</TD>
+</TR>
+
+<TR>
+<TD>mappsrpr , ltpsrpr , map2psrpr</TD>
+<TD>~ prsrpos , ~ prsrlt , ~ srpospr</TD>
+</TR>
+
+<TR>
+<TD>supsrlem , supsr</TD>
+<TD>~ caucvgsr</TD>
+<TD>The Least Upper Bound property for sets of real numbers does not hold,
+in general, without excluded middle. We express completeness using
+sequences.</TD>
+</TR>
+
+<TR>
+<TD>axaddf , ax-addf , axmulf , ax-mulf</TD>
+<TD><I>none</I></TD>
+<TD>Because these are described as deprecated in set.mm, we haven't
+figured out what would be involved in proving them for iset.mm.</TD>
+</TR>
+
+<TR>
+<TD>ax1ne0 , ax-1ne0</TD>
+<TD>~ ax0lt1 , ~ ax-0lt1 , ~ 1ap0 , ~ 1ne0 </TD>
+</TR>
+
+<TR>
+<TD>axrrecex , ax-rrecex</TD>
+<TD>~ axprecex , ~ ax-precex </TD>
+</TR>
+
+<TR>
+<TD>axpre-lttri , ax-pre-lttri</TD>
+<TD>~ axpre-ltirr , ~ axpre-ltwlin , ~ ax-pre-ltirr , ~ ax-pre-ltwlin </TD>
+</TR>
+
+<TR>
+<TD>axpre-sup , ax-pre-sup , axsup</TD>
+<TD>~ axcaucvg , ~ ax-caucvg , ~ caucvgre</TD>
+<TD>The Least Upper Bound property for sets of real numbers does not hold,
+in general, without excluded middle. We express completeness using
+sequences.</TD>
+</TR>
+
+<TR>
+<TD>elimne0</TD>
+<TD><I>none</I></TD>
+<TD>Even in set.mm, the weak deduction theorem is discouraged in
+favor of theorems in deduction form.</TD>
+</TR>
+
+<TR>
+<TD>xrltnle</TD>
+<TD>~ xrlenlt </TD>
+</TR>
+
+<TR>
+<TD>ssxr</TD>
+<TD>~ df-xr </TD>
+<TD>Lightly used in set.mm</TD>
+</TR>
+
+<TR>
+<TD>ltnle , ltnlei , ltnled</TD>
+<TD>~ lenlt , ~ zltnle </TD>
+</TR>
+
+<TR>
+<TD>lttri2 , lttri2i , lttri2d</TD>
+<TD>~ qlttri2</TD>
+<TD>Real number trichotomy is not provable.</TD>
+</TR>
+
+<TR>
+<TD>lttri4</TD>
+<TD>~ ztri3or , ~ qtri3or</TD>
+<TD>Real number trichotomy is not provable.</TD>
+</TR>
+
+<TR>
+<TD>leloe , eqlelt , leloei , leloed , eqleltd</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>leltne , leltned</TD>
+<TD>~ leltap , ~ leltapd</TD>
+</TR>
+
+<TR>
+<TD>ltneOLD</TD>
+<TD>~ ltne , ~ ltap</TD>
+</TR>
+
+<TR>
+<TD>letric , letrii , letrid</TD>
+<TD>~ zletric , ~ qletric</TD>
+</TR>
+
+<TR>
+<TD>ltlen , ltleni , ltlend</TD>
+<TD>~ ltleap , ~ zltlen , ~ qltlen</TD>
+</TR>
+
+<TR>
+<TD>ne0gt0 , ne0gt0d</TD>
+<TD>~ ap0gt0 , ~ ap0gt0d</TD>
+</TR>
+
+<TR>
+<TD>lecasei , ltlecasei</TD>
+<TD><I>none</I></TD>
+<TD>These are real number trichotomy</TD>
+</TR>
+
+<TR>
+<TD>lelttric</TD>
+<TD>~ zlelttric , ~ qlelttric</TD>
+</TR>
+
+<TR>
+<TD>lttrid , lttri4d</TD>
+<TD><I>none</I></TD>
+<TD>These are real number trichotomy</TD>
+</TR>
+
+<TR>
+  <TD>leneltd</TD>
+  <TD>~ leltapd</TD>
+</TR>
+
+<TR>
+<TD>dedekind , dedekindle</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>mul02lem1</TD>
+<TD><I>none</I></TD>
+<TD>The one use in set.mm is not needed in iset.mm.</TD>
+</TR>
+
+<TR>
+<TD>negex</TD>
+<TD>~ negcl </TD>
+</TR>
+
+<TR>
+<TD>msqgt0 , msqgt0i , msqgt0d</TD>
+<TD>~ apsqgt0 </TD>
+<TD>"Not equal to zero" is changed to "apart from zero"</TD>
+</TR>
+
+<TR>
+<TD>relin01</TD>
+<TD><I>none</I></TD>
+<TD>Relies on real number trichotomy.</TD>
+</TR>
+
+<TR>
+<TD>ltordlem , ltord1 , leord1 , eqord1 , ltord2 , leord2 , eqord2</TD>
+<TD><I>none</I></TD>
+<TD>Although these presumably could be proved using theorems like
+~ letri3 and ~ lenlt , at least for now we have chosen to just invoke
+those other theorems directly (example: ~ expcan and its lemma
+~ expcanlem ) which avoids some extra set variables and produces proofs
+which are almost as short.</TD>
+</TR>
+
+<TR>
+<TD>wloglei , wlogle</TD>
+<TD><I>none</I></TD>
+<TD>These depend on real number trichotomy and are not used until
+later in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>recex</TD>
+<TD>~ recexap </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>mulcand, mulcan2d</TD>
+<TD>~ mulcanapd , ~ mulcanap2d </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>mulcanad , mulcan2ad</TD>
+<TD>~ mulcanapad , ~ mulcanap2ad</TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>mulcan , mulcan2 , mulcani</TD>
+<TD>~ mulcanap , ~ mulcanap2 , ~ mulcanapi </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>mul0or , mul0ori , mul0ord</TD>
+<TD><I>none</I></TD>
+<TD>Remark 2.19 of [Geuvers] says that this does not hold in
+general and has a counterexample.</TD>
+</TR>
+
+<TR>
+<TD>mulne0b , mulne0bd , mulne0bad , mulne0bbd</TD>
+<TD>~ mulap0b , ~ mulap0bd , ~ mulap0bad , ~ mulap0bbd </TD>
+</TR>
+
+<TR>
+<TD>mulne0 , mulne0i , mulne0d</TD>
+<TD>~ mulap0 , ~ mulap0i , ~ mulap0d </TD>
+</TR>
+
+<TR>
+<TD>receu</TD>
+<TD>~ receuap </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>mulnzcnopr</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>msq0i , msq0d</TD>
+<TD>~ sqeq0 , ~ sqeq0i</TD>
+<TD>These slight restatements of sqeq0 are unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>mulcan1g , mulcan2g</TD>
+<TD><I>various cancellation theorems</I></TD>
+<TD>Presumably this is unavailable for the same reason that mul0or
+is unavailable.</TD>
+</TR>
+
+<TR>
+<TD>1div0</TD>
+<TD><I>none</I></TD>
+<TD>This could be proved, but the set.mm proof does not work as-is.</TD>
+</TR>
+
+<TR>
+<TD>divval</TD>
+<TD>~ divvalap </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>divmul , divmul2 , divmul3</TD>
+<TD>~ divmulap , ~ divmulap2 , divmulap3 </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>divcl , reccl</TD>
+<TD>~ divclap , ~ recclap </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>divcan1 , divcan2</TD>
+<TD>~ divcanap1 , ~ divcanap2 </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>diveq0</TD>
+<TD>~ diveqap0 </TD>
+<TD>In theorems involving reciprocals or division, not equal to
+zero changes to apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>divne0b , divne0</TD>
+<TD>~ divap0b , ~ divap0 </TD>
+</TR>
+
+<TR>
+<TD>recne0</TD>
+<TD>~ recap0 </TD>
+</TR>
+
+<TR>
+<TD>recid , recid2</TD>
+<TD>~ recidap , ~ recidap2 </TD>
+</TR>
+
+<TR>
+<TD>divrec</TD>
+<TD>~ divrecap </TD>
+</TR>
+
+<TR>
+<TD>divrec2</TD>
+<TD>~ divrecap2  </TD>
+</TR>
+
+<TR>
+<TD>divass</TD>
+<TD>~ divassap </TD>
+</TR>
+
+<TR>
+<TD>div23 , div32 , div13 , div12</TD>
+<TD>~ div23ap , ~ div32ap , ~ div13ap , ~ div12ap </TD>
+</TR>
+
+<TR>
+  <TD>divmulass</TD>
+  <TD>~ divmulassap</TD>
+</TR>
+
+<TR>
+  <TD>divmulasscom</TD>
+  <TD>~ divmulasscomap</TD>
+</TR>
+
+<TR>
+<TD>divdir , divcan3 , divcan4</TD>
+<TD>~ divdirap , ~ divcanap3 , ~ divcanap4 </TD>
+</TR>
+
+<TR>
+<TD>div11 , divid , div0</TD>
+<TD>~ div11ap , ~ dividap , ~ div0ap </TD>
+</TR>
+
+<TR>
+<TD>diveq1 , divneg</TD>
+<TD>~ diveqap1 , ~ divnegap</TD>
+</TR>
+
+<TR>
+  <TD>muldivdir</TD>
+  <TD>~ muldivdirap</TD>
+</TR>
+
+<TR>
+  <TD>divsubdir</TD>
+  <TD>~ divsubdirap</TD>
+</TR>
+
+<TR>
+<TD>recrec , rec11 , rec11r</TD>
+<TD>~ recrecap , ~ rec11ap , ~ rec11rap </TD>
+</TR>
+
+<TR>
+<TD>divmuldiv , divdivdiv , divcan5</TD>
+<TD>~ divmuldivap , ~ divdivdivap , ~ divcanap5 </TD>
+</TR>
+
+<TR>
+<TD>divmul13 , divmul24 , divmuleq</TD>
+<TD>~ divmul13ap , ~ divmul24ap , ~ divmuleqap </TD>
+</TR>
+
+<TR>
+<TD>recdiv , divcan6 , divdiv32 , divcan7</TD>
+<TD>~ recdivap , ~ divcanap6 , ~ divdiv32ap , ~ divcanap7 </TD>
+</TR>
+
+<TR>
+<TD>dmdcan , divdiv1 , divdiv2 , recdiv2</TD>
+<TD>~ dmdcanap , ~ divdivap1 , ~ divdivap2 , ~ recdivap2 </TD>
+</TR>
+
+<TR>
+<TD>ddcan , divadddiv , divsubdiv</TD>
+<TD>~ ddcanap , ~ divadddivap , ~ divsubdivap </TD>
+</TR>
+
+<TR>
+<TD>ddcan , divadddiv , divsubdiv</TD>
+<TD>~ ddcanap , ~ divadddivap , ~ divsubdivap </TD>
+</TR>
+
+<TR>
+<TD>conjmul , rereccl, redivcl</TD>
+<TD>~ conjmulap , ~ rerecclap , ~ redivclap </TD>
+</TR>
+
+<TR>
+<TD>div2neg , divneg2</TD>
+<TD>~ div2negap , ~ divneg2ap </TD>
+</TR>
+
+<TR>
+<TD>recclzi , recne0zi , recidzi</TD>
+<TD>~ recclapzi , ~ recap0apzi , ~ recidapzi </TD>
+</TR>
+
+<TR>
+<TD>reccli , recidi , recreci</TD>
+<TD>~ recclapi , ~ recidapi , ~ recrecapi </TD>
+</TR>
+
+<TR>
+<TD>dividi , div0i</TD>
+<TD>~ dividapi , ~ div0api </TD>
+</TR>
+
+<TR>
+<TD>divclzi , divcan1zi , divcan2zi</TD>
+<TD>~ divclapzi , ~ divcanap1zi , ~ divcanap2zi </TD>
+</TR>
+
+<TR>
+<TD>divreczi , divcan3zi , divcan4zi</TD>
+<TD>~ divrecapzi , ~ divcanap3zi , ~ divcanap4zi </TD>
+</TR>
+
+<TR>
+<TD>rec11i , rec11ii</TD>
+<TD>~ rec11api , ~ rec11apii </TD>
+</TR>
+
+<TR>
+<TD>divcli , divcan2i , divcan1i , divreci ,
+divcan3i , divcan4i </TD>
+<TD>~ divclapi , ~ divcanap2i , ~ divcanap1i , ~ divrecapi ,
+~ divcanap3i , ~ divcanap4i </TD>
+</TR>
+
+<TR>
+<TD>div0i</TD>
+<TD>~ divap0i </TD>
+</TR>
+
+<TR>
+<TD>divasszi , divmulzi , divdirzi , divdiv23zi</TD>
+<TD>~ divassapzi , ~ divmulapzi , ~ divdirapzi , ~ divdiv23apzi </TD>
+</TR>
+
+<TR>
+<TD>divmuli , divdiv32i</TD>
+<TD>~ divmulapi , ~ divdiv32api </TD>
+</TR>
+
+<TR>
+<TD>divassi , divdiri , div23i , div11i </TD>
+<TD>~ divassapi , ~ divdirapi , ~ div23api , ~ div11api </TD>
+</TR>
+
+<TR>
+<TD>divmuldivi, divmul13i, divadddivi, divdivdivi</TD>
+<TD>~ divmuldivapi , ~ divmul13api , ~ divadddivapi , ~ divdivdivapi </TD>
+</TR>
+
+<TR>
+<TD>rerecclzi , rereccli , redivclzi , redivcli</TD>
+<TD>~ rerecclapzi , ~ rerecclapi , ~ redivclapzi , ~ redivclapi </TD>
+</TR>
+
+<TR>
+<TD>reccld , rec0d , recidd , recid2d , recrecd ,
+dividd , div0d</TD>
+<TD>~ recclapd , ~ recap0d , ~ recidapd , ~ recidap2d , ~ recrecapd ,
+~ dividapd , ~ div0apd </TD>
+</TR>
+
+<TR>
+<TD>divcld , divcan1d , divcan2d , divrecd , divrec2d ,
+divcan3d , divcan4d</TD>
+<TD>~ divclapd , ~ divcanap1d , ~ divcanap2d , ~ divrecapd , ~ divrecap2d ,
+~ divcanap3d , ~ divcanap4d </TD>
+</TR>
+
+<TR>
+<TD>diveq0d , diveq1d , diveq1ad , diveq0ad , divne1d , div0bd , divnegd ,
+divneg2d , div2negd</TD>
+<TD>~ diveqap0d , ~ diveqap1d , ~ diveqap1ad , ~ diveqap0ad , ~ divap1d ,
+~ divap0bd , ~ divnegapd , ~ divneg2apd , ~ div2negapd </TD>
+</TR>
+
+<TR>
+<TD>divne0d , recdivd , recdiv2d , divcan6d , ddcand , rec11d</TD>
+<TD>~ divap0d , ~ recdivapd , ~ recdivap2d , ~ divcanap6d , ~ ddcanapd ,
+~ rec11apd </TD>
+</TR>
+
+<TR>
+<TD>divmuld , div32d , div13d , divdiv32d , divcan5d , divcan5rd ,
+divcan7d , dmdcand , dmdcan2d , divdiv1d , divdiv2d</TD>
+<TD>~ divmulapd , ~ div32apd , ~ div13apd , ~ divdiv32apd , ~ divcanap5d ,
+~ divcanap5rd , ~ divcanap7d , ~ dmdcanapd , ~ dmdcanap2d , ~ divdivap1d ,
+~ divdivap2d </TD>
+</TR>
+
+<TR>
+<TD>divmul2d, divmul3d, divassd, div12d, div23d,
+divdird, divsubdird, div11d</TD>
+<TD>~ divmulap2d , ~ divmulap3d , ~ divassapd , ~ div12apd , ~ div23apd ,
+~ divdirapd , ~ divsubdirapd , ~ div11apd </TD>
+</TR>
+
+<TR>
+  <TD>divmuldivd</TD>
+  <TD>~ divmuldivapd</TD>
+</TR>
+
+<TR>
+<TD>rereccld , redivcld</TD>
+<TD>~ rerecclapd , ~ redivclapd </TD>
+</TR>
+
+<TR>
+  <TD>div2sub , div2subd</TD>
+  <TD>~ div2subap , ~ div2subapd</TD>
+</TR>
+
+<TR>
+<TD>mvllmuld</TD>
+<TD>~ mvllmulapd</TD>
+</TR>
+
+<TR>
+<TD>elimgt0 , elimge0</TD>
+<TD><I>none</I></TD>
+<TD>Even in set.mm, the weak deduction theorem is discouraged in
+favor of theorems in deduction form.</TD>
+</TR>
+
+<TR>
+<TD>mulge0b , mulsuble0b</TD>
+<TD><I>none</I></TD>
+<TD>Presumably unprovable for reasons analogous to mul0or.</TD>
+</TR>
+
+<TR>
+  <TD>mulle0b</TD>
+  <TD>~ mulle0r</TD>
+  <TD>The converse of mulle0r is presumably unprovable for reasons
+  analogous to mul0or.</TD>
+</TR>
+
+<TR>
+<TD>ledivp1i , ltdivp1i</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could be proved, but unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>fimaxre</TD>
+  <TD>~ fimaxq , ~ fimaxre2</TD>
+  <TD>When applied to a pair fimaxre could show which of two unequal
+  real numbers is larger, so perhaps not provable for that reason.
+  (see ~ fin0 for inhabited versus nonempty).
+  </TD>
+</TR>
+
+<TR>
+  <TD>fimaxre3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on abrexfi .</TD>
+</TR>
+
+<TR>
+  <TD>fiminre</TD>
+  <TD><I>none</I></TD>
+  <TD>See fimaxre</TD>
+</TR>
+
+<TR>
+  <TD>sup2 , sup3 , sup3ii</TD>
+  <TD><I>none</I></TD>
+  <TD>We won't be able to have the least upper bound property for all
+  nonempty bounded sets. In cases where we can show that the supremum
+  exists, we might be able to prove slightly different ways of stating
+  there is a supremum.</TD>
+</TR>
+
+<TR>
+  <TD>infm3</TD>
+  <TD><I>none</I></TD>
+  <TD>See sup3</TD>
+</TR>
+
+<TR>
+  <TD>suprcl , suprcld , suprclii</TD>
+  <TD>~ supclti</TD>
+</TR>
+
+<TR>
+  <TD>suprub , suprubd , suprubii</TD>
+  <TD>~ suprubex</TD>
+</TR>
+
+<TR>
+  <TD>suprlub , suprlubii</TD>
+  <TD>~ suprlubex</TD>
+</TR>
+
+<TR>
+  <TD>suprnub , suprnubii</TD>
+  <TD>~ suprnubex</TD>
+</TR>
+
+<TR>
+  <TD>suprleub , suprleubii</TD>
+  <TD>~ suprleubex</TD>
+</TR>
+
+<TR>
+  <TD>supaddc , supadd</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable with suitable conditions for the existence
+  of the supremums</TD>
+</TR>
+
+<TR>
+  <TD>supmul1 , supmul</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable with suitable conditions for the existence
+  of the supremums</TD>
+</TR>
+
+<TR>
+  <TD>riotaneg</TD>
+  <TD><I>none</I></TD>
+  <TD>The theorem is unused in set.mm and the set.mm proof
+  relies on reuxfrd</TD>
+</TR>
+
+<TR>
+  <TD>infrecl</TD>
+  <TD>~ infclti</TD>
+</TR>
+
+<TR>
+  <TD>infrenegsup</TD>
+  <TD>~ infrenegsupex</TD>
+</TR>
+
+<TR>
+  <TD>infregelb</TD>
+  <TD><I>none yet</I></TD>
+  <TD>Presumably could be handled in a way analogous to ~ suprleubex</TD>
+</TR>
+
+<TR>
+  <TD>infrelb</TD>
+  <TD><I>none yet</I></TD>
+  <TD>Presumably could be handled in a way analogous to ~ suprubex</TD>
+</TR>
+
+<TR>
+  <TD>supfirege</TD>
+  <TD>~ suprubex</TD>
+  <TD>The question here is whether results like ~ maxle1 can be generalized
+  (presumably by induction) from pairs to finite sets.</TD>
+</TR>
+
+<TR>
+<TD>crne0</TD>
+<TD>~ crap0 </TD>
+</TR>
+
+<TR>
+<TD>ofsubeq0 , ofnegsub , ofsubge0</TD>
+<TD><I>none</I></TD>
+<TD>Depend on ofval and/or offn .</TD>
+</TR>
+
+<TR>
+<TD>df-nn</TD>
+<TD>~ dfnn2 </TD>
+</TR>
+
+<TR>
+<TD>dfnn3</TD>
+<TD>~ dfnn2 </TD>
+<TD>Presumably could be proved, as it is a slight variation of dfnn2</TD>
+</TR>
+
+<TR>
+<TD>avgle</TD>
+<TD>~ qavgle</TD>
+</TR>
+
+<TR>
+<TD>nnunb</TD>
+<TD><I>none</I></TD>
+<TD>Presumably provable from ~ arch but unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>frnnn0supp , frnnn0fsupp</TD>
+<TD>~ nn0supp </TD>
+<TD>iset.mm does not yet have either the notation, or in some
+cases the theorems, related to the support of a function or
+a fintely supported function.</TD>
+</TR>
+
+<TR>
+<TD>suprzcl</TD>
+<TD>~ suprzclex</TD>
+</TR>
+
+<TR>
+<TD>zriotaneg</TD>
+<TD><I>none</I></TD>
+<TD>Lightly used in set.mm</TD>
+</TR>
+
+<TR>
+<TD>suprfinzcl</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>decex</TD>
+<TD>~ deccl </TD>
+</TR>
+
+<TR>
+  <TD>halfthird</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably will be easy to intuitionize</TD>
+</TR>
+
+<TR>
+  <TD>5recm6rec</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably will be easy to intuitionize</TD>
+</TR>
+
+<TR>
+<TD>uzwo , uzwo2 , nnwo , nnwof , nnwos</TD>
+<TD><I>none</I></TD>
+<TD>Presumably would imply excluded middle, unless there is something
+which makes this different from ~ nnregexmid .</TD>
+</TR>
+
+<TR>
+<TD>negn0</TD>
+<TD>~ negm </TD>
+</TR>
+
+<TR>
+<TD>uzinfi, nninf, nn0inf</TD>
+<TD><I>none</I></TD>
+<TD>Presumably provable</TD>
+</TR>
+
+<TR>
+  <TD>infssuzle</TD>
+  <TD>~ infssuzledc</TD>
+</TR>
+
+<TR>
+  <TD>infssuzcl</TD>
+  <TD>~ infssuzcldc</TD>
+</TR>
+
+<TR>
+<TD>supminf</TD>
+<TD>~ supminfex</TD>
+</TR>
+
+<TR>
+  <TD>zsupss , suprzcl2</TD>
+  <TD>~ zsupcl , ~ suprzclex</TD>
+</TR>
+
+<TR>
+<TD>suprzub</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could prove something like this with different conditions
+for the existence of the supremum (see ~ infssuzledc for something along
+these lines).</TD>
+</TR>
+
+<TR>
+<TD>uzsupss</TD>
+<TD>~ zsupcl</TD>
+</TR>
+
+<TR>
+  <TD>uzwo3 , zmin</TD>
+  <TD><I>none</I></TD>
+  <TD>Proved in terms of supremum theorems and presumably not possible
+  without excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>zbtwnre</TD>
+  <TD><I>none</I></TD>
+  <TD>Proved in terms of supremum theorems and presumably not possible
+  without excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>rebtwnz</TD>
+  <TD>~ qbtwnz</TD>
+</TR>
+
+<TR>
+<TD>rpneg</TD>
+<TD>~ rpnegap </TD>
+</TR>
+
+<TR>
+<TD>xrlttri , xrlttri2</TD>
+<TD><I>none</I></TD>
+<TD>A generalization of real trichotomy.</TD>
+</TR>
+
+<TR>
+<TD>xrleloe , xrleltne , dfle2</TD>
+<TD><I>none</I></TD>
+<TD>Consequences of real trichotomy.</TD>
+</TR>
+
+<TR>
+<TD>xrltlen</TD>
+<TD><I>none</I></TD>
+<TD>We presumably could prove an analogue to ~ ltleap but we have not
+yet defined apartness for extended reals (` =//= ` is for complex
+numbers).</TD>
+</TR>
+
+<TR>
+<TD>dflt2</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>xrletri</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>xrmax1 , xrmax2 , xrmin1 , xrmin2 , xrmaxeq , xrmineq ,
+xrmaxlt , xrltmin , xrmaxle , xrlemin ,
+max0sub , ifle</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>max1</TD>
+  <TD>~ maxle1</TD>
+</TR>
+
+<TR>
+  <TD>max2</TD>
+  <TD>~ maxle2</TD>
+</TR>
+
+<TR>
+  <TD>2resupmax</TD>
+  <TD><I>none</I></TD>
+  <TD>Proved from real trichotomy.
+  We express maximum in iset.mm using ` sup ( { A , B } , RR , < ) `
+  rather than ` if ( A <_ B , B , A ) ` . The former has the
+  expected maximum properties such as ~ maxcl , ~ maxle1 , ~ maxle2 ,
+  ~ maxleast , and ~ maxleb .</TD>
+</TR>
+
+<TR>
+  <TD>min1</TD>
+  <TD>~ min1inf</TD>
+</TR>
+
+<TR>
+  <TD>min2</TD>
+  <TD>~ min2inf</TD>
+</TR>
+
+<TR>
+  <TD>maxle</TD>
+  <TD>~ maxleastb</TD>
+</TR>
+
+<TR>
+  <TD>lemin</TD>
+  <TD>~ lemininf</TD>
+</TR>
+
+<TR>
+  <TD>maxlt</TD>
+  <TD>~ maxltsup</TD>
+</TR>
+
+<TR>
+  <TD>ltmin</TD>
+  <TD>~ ltmininf</TD>
+</TR>
+
+<TR>
+<TD>qsqueeze</TD>
+<TD><I>none yet</I></TD>
+<TD>Presumably provable from ~ qbtwnre and ~ squeeze0 , but unused
+in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>qextltlem , qextlt , qextle</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is not intuitionistic.</TD>
+</TR>
+
+<TR>
+<TD>xralrple , alrple</TD>
+<TD><I>none yet</I></TD>
+<TD>Now that we have ~ qbtwnxr , it looks like the set.mm proof would work
+with minor changes.</TD>
+</TR>
+
+<TR>
+<TD>xnegex</TD>
+<TD>~ xnegcl </TD>
+</TR>
+
+<TR>
+<TD>xaddval , xaddf , xmulval , xaddpnf1 , xaddpnf2 , xaddmnf1 ,
+xaddmnf2 , pnfaddmnf , mnfaddpnf , rexadd , rexsub , xaddnemnf ,
+xaddnepnf , xnegid , xaddcl , xaddcom , xaddid1 , xaddid2 ,
+xnegdi , xaddass , xaddass2 , xpncan , xnpcan , xleadd1a ,
+xleadd2a , xleadd1 , xltadd1 , xltadd2 , xaddge0 , xle2add ,
+xlt2add , xsubge0 , xposdif , xlesubadd , xmullem , xmullem2 ,
+xmulcom , xmul01 , xmul02 , xmulneg1 , xmulneg2 , rexmul ,
+xmulf , xmulcl , xmulpnf1 , xmulpnf2 , xmulmnf1 , xmulmnf2 ,
+xmulpnf1n , xmulid1 , xmulid2 , xmulm1 , xmulasslem2 , xmulgt0 ,
+xmulge0 , xmulasslem , xmulasslem3 , xmulass , xlemul1a ,
+xlemul2a , xlemul1 , xlemul2 , xltmul1 , xltmul2 , xadddilem ,
+xadddi , xadddir , xadddi2 , xadddi2r , x2times , xaddcld ,
+xmulcld , xadd4d</TD>
+<TD><I>none</I></TD>
+<TD>There appears to be no fundamental obstacle to proving these,
+because disjunctions can arise from ~ elxr rather than excluded
+middle. However, ` -e ` , ` +e ` , and ` *e ` are lightly used in
+set.mm, and the set.mm proofs would require significant changes.</TD>
+</TR>
+
+<TR>
+<TD>ixxub , ixxlb</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>iccen</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>supicc , supiccub , supicclub , supicclub2</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ixxun , ixxin</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ioon0</TD>
+<TD>~ ioom</TD>
+<TD>Non-empty is changed to inhabited</TD>
+</TR>
+
+<TR>
+<TD>iooid</TD>
+<TD>~ iooidg </TD>
+</TR>
+
+<TR>
+<TD>ndmioo</TD>
+<TD><I>none</I></TD>
+<TD>See discussion at ndmov but set.mm uses excluded middle,
+both in proving this and in using it.</TD>
+</TR>
+
+<TR>
+<TD>lbioo , ubioo</TD>
+<TD>~ lbioog , ~ ubioog </TD>
+</TR>
+
+<TR>
+<TD>iooin</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>icc0</TD>
+<TD>~ icc0r </TD>
+</TR>
+
+<TR>
+<TD>ioorebas</TD>
+<TD>~ ioorebasg </TD>
+</TR>
+
+<TR>
+<TD>ge0xaddcl , ge0xmulcl</TD>
+<TD><I>none</I></TD>
+<TD>Rely on xaddcl and xmulcl ; see discussion in this list
+for those theorems.</TD>
+</TR>
+
+<TR>
+<TD>icoun , snunioo , snunico , snunioc , prunioo</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ioojoin</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>difreicc</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>iccsplit</TD>
+<TD><I>none</I></TD>
+<TD>This depends, apparently in an essential way, on real number
+trichotomy.</TD>
+</TR>
+
+<TR>
+<TD>xov1plusxeqvd</TD>
+<TD><I>none</I></TD>
+<TD>This presumably could be proved if not equal is changed
+to apart, but is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>fzn0</TD>
+<TD>~ fzm </TD>
+</TR>
+
+<TR>
+<TD>fz0</TD>
+<TD><I>none</I></TD>
+<TD>Although it would be possible to prove a version of this
+with the additional conditions that ` M e. _V ` and ` N e. _V ` ,
+the theorem is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>fzon0</TD>
+<TD>~ fzom </TD>
+</TR>
+
+<TR>
+<TD>fzo0n0</TD>
+<TD>~ fzo0m </TD>
+</TR>
+
+<TR>
+<TD>ssfzoulel</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could be proven, but the set.mm proof is not
+intuitionistic and it is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>fzonfzoufzol</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could be proven, but the set.mm proof is not
+intuitionistic and it is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>elfznelfzo , elfznelfzob , injresinjlem , injresinj</TD>
+<TD><I>none</I></TD>
+<TD>Some or all of this presumably could be proven, but the set.mm
+proof is not intuitionistic and it is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>flcl , reflcl , flcld</TD>
+  <TD>~ flqcl , ~ flqcld</TD>
+</TR>
+
+<TR>
+  <TD>fllelt</TD>
+  <TD>~ flqlelt</TD>
+</TR>
+
+<TR>
+  <TD>flle</TD>
+  <TD>~ flqle</TD>
+</TR>
+
+<TR>
+  <TD>flltp1 , fllep1</TD>
+  <TD>~ flqltp1</TD>
+</TR>
+
+<TR>
+  <TD>fraclt1 , fracle1</TD>
+  <TD>~ qfraclt1</TD>
+</TR>
+
+<TR>
+  <TD>fracge0</TD>
+  <TD>~ qfracge0</TD>
+</TR>
+
+<TR>
+  <TD>flge</TD>
+  <TD>~ flqge</TD>
+</TR>
+
+<TR>
+  <TD>fllt</TD>
+  <TD>~ flqlt</TD>
+</TR>
+
+<TR>
+  <TD>flflp1</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on case elimination.</TD>
+</TR>
+
+<TR>
+  <TD>flidm</TD>
+  <TD>~ flqidm</TD>
+</TR>
+
+<TR>
+  <TD>flidz</TD>
+  <TD>~ flqidz</TD>
+</TR>
+
+<TR>
+  <TD>flltnz</TD>
+  <TD>~ flqltnz</TD>
+</TR>
+
+<TR>
+  <TD>flwordi</TD>
+  <TD>~ flqwordi</TD>
+</TR>
+
+<TR>
+  <TD>flword2</TD>
+  <TD>~ flqword2</TD>
+</TR>
+
+<TR>
+  <TD>flval2 , flval3</TD>
+  <TD><I>none</I></TD>
+  <TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>flbi</TD>
+  <TD>~ flqbi</TD>
+</TR>
+
+<TR>
+  <TD>flbi2</TD>
+  <TD>~ flqbi2</TD>
+</TR>
+
+<TR>
+  <TD>ico01fl0</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably could be proved for rationals, but lightly used in
+  set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>flge0nn0</TD>
+  <TD>~ flqge0nn0</TD>
+</TR>
+
+<TR>
+  <TD>flge1nn</TD>
+  <TD>~ flqge1nn</TD>
+</TR>
+
+<TR>
+  <TD>refldivcl</TD>
+  <TD>~ flqcl</TD>
+</TR>
+
+<TR>
+  <TD>fladdz</TD>
+  <TD>~ flqaddz</TD>
+</TR>
+
+<TR>
+  <TD>flzadd</TD>
+  <TD>~ flqzadd</TD>
+</TR>
+
+<TR>
+  <TD>flmulnn0</TD>
+  <TD>~ flqmulnn0</TD>
+</TR>
+
+<TR>
+  <TD>fldivle</TD>
+  <TD>~ flqle</TD>
+</TR>
+
+<TR>
+  <TD>ltdifltdiv</TD>
+  <TD><I>none</I></TD>
+  <TD>Unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>fldiv4lem1div2uz2 , fldiv4lem1div2</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable, but lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>ceilval</TD>
+  <TD>~ ceilqval</TD>
+  <TD>The set.mm ceilval, with a real argument and no additional
+  conditions, is probably provable if there is a need.</TD>
+</TR>
+
+<TR>
+  <TD>dfceil2 , ceilval2</TD>
+  <TD><I>none</I></TD>
+  <TD>Unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>ceicl</TD>
+  <TD>~ ceiqcl</TD>
+</TR>
+
+<TR>
+  <TD>ceilcl</TD>
+  <TD>~ ceilqcl</TD>
+</TR>
+
+<TR>
+  <TD>ceilge</TD>
+  <TD>~ ceilqge</TD>
+</TR>
+
+<TR>
+  <TD>ceige</TD>
+  <TD>~ ceiqge</TD>
+</TR>
+
+<TR>
+  <TD>ceim1l</TD>
+  <TD>~ ceiqm1l</TD>
+</TR>
+
+<TR>
+  <TD>ceilm1lt</TD>
+  <TD>~ ceilqm1lt</TD>
+</TR>
+
+<TR>
+  <TD>ceile</TD>
+  <TD>~ ceiqle</TD>
+</TR>
+
+<TR>
+  <TD>ceille</TD>
+  <TD>~ ceilqle</TD>
+</TR>
+
+<TR>
+  <TD>ceilidz</TD>
+  <TD>~ ceilqidz</TD>
+</TR>
+
+<TR>
+  <TD>flleceil</TD>
+  <TD>~ flqleceil</TD>
+</TR>
+
+<TR>
+  <TD>fleqceilz</TD>
+  <TD>~ flqeqceilz</TD>
+</TR>
+
+<TR>
+  <TD>quoremz , quoremnn0 , quoremnn0ALT</TD>
+  <TD><I>none</I></TD>
+  <TD>Unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>intfrac2</TD>
+  <TD>~ intqfrac2</TD>
+</TR>
+
+<TR>
+  <TD>fldiv</TD>
+  <TD>~ flqdiv</TD>
+</TR>
+
+<TR>
+  <TD>fldiv2</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would be provable if real is changed to rational.</TD>
+</TR>
+
+<TR>
+  <TD>fznnfl</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would be provable if real is changed to rational.</TD>
+</TR>
+
+<TR>
+  <TD>uzsup , ioopnfsup , icopnfsup , rpsup , resup , xrsup</TD>
+  <TD><I>none</I></TD>
+  <TD>As with most theorems involving supremums, these would
+  likely need significant changes</TD>
+</TR>
+
+<TR>
+<TD>modval</TD>
+<TD>~ modqval</TD>
+<TD>As with theorems such as ~ flqcl , we prove most of the modulo related
+theorems for rationals, although other conditions on real arguments other
+than whether they are rational would be possible in the future.</TD>
+</TR>
+
+<TR>
+  <TD>modvalr</TD>
+  <TD>~ modqvalr</TD>
+</TR>
+
+<TR>
+  <TD>modcl , modcld</TD>
+  <TD>~ modqcl , ~ modqcld</TD>
+</TR>
+
+<TR>
+  <TD>flpmodeq</TD>
+  <TD>~ flqpmodeq</TD>
+</TR>
+
+<TR>
+  <TD>mod0</TD>
+  <TD>~ modq0</TD>
+</TR>
+
+<TR>
+  <TD>mulmod0</TD>
+  <TD>~ mulqmod0</TD>
+</TR>
+
+<TR>
+  <TD>negmod0</TD>
+  <TD>~ negqmod0</TD>
+</TR>
+
+<TR>
+  <TD>modge0</TD>
+  <TD>~ modqge0</TD>
+</TR>
+
+<TR>
+  <TD>modlt</TD>
+  <TD>~ modqlt</TD>
+</TR>
+
+<TR>
+  <TD>modelico</TD>
+  <TD>~ modqelico</TD>
+</TR>
+
+<TR>
+  <TD>moddiffl</TD>
+  <TD>~ modqdiffl</TD>
+</TR>
+
+<TR>
+  <TD>moddifz</TD>
+  <TD>~ modqdifz</TD>
+</TR>
+
+<TR>
+  <TD>modfrac</TD>
+  <TD>~ modqfrac</TD>
+</TR>
+
+<TR>
+  <TD>flmod</TD>
+  <TD>~ flqmod</TD>
+</TR>
+
+<TR>
+  <TD>intfrac</TD>
+  <TD>~ intqfrac</TD>
+</TR>
+
+<TR>
+  <TD>modmulnn</TD>
+  <TD>~ modqmulnn</TD>
+</TR>
+
+<TR>
+  <TD>modvalp1</TD>
+  <TD>~ modqvalp1</TD>
+</TR>
+
+<TR>
+  <TD>modid</TD>
+  <TD>~ modqid</TD>
+</TR>
+
+<TR>
+  <TD>modid0</TD>
+  <TD>~ modqid0</TD>
+</TR>
+
+<TR>
+  <TD>modid2</TD>
+  <TD>~ modqid2</TD>
+</TR>
+
+<TR>
+  <TD>0mod</TD>
+  <TD>~ q0mod</TD>
+</TR>
+
+<TR>
+  <TD>1mod</TD>
+  <TD>~ q1mod</TD>
+</TR>
+
+<TR>
+  <TD>modabs</TD>
+  <TD>~ modqabs</TD>
+</TR>
+
+<TR>
+  <TD>modabs2</TD>
+  <TD>~ modqabs2</TD>
+</TR>
+
+<TR>
+  <TD>modcyc</TD>
+  <TD>~ modqcyc</TD>
+</TR>
+
+<TR>
+  <TD>modcyc2</TD>
+  <TD>~ modqcyc2</TD>
+</TR>
+
+<TR>
+  <TD>modadd1</TD>
+  <TD>~ modqadd1</TD>
+</TR>
+
+<TR>
+  <TD>modaddabs</TD>
+  <TD>~ modqaddabs</TD>
+</TR>
+
+<TR>
+  <TD>modaddmod</TD>
+  <TD>~ modqaddmod</TD>
+</TR>
+
+<TR>
+  <TD>muladdmodid</TD>
+  <TD>~ mulqaddmodid</TD>
+</TR>
+
+<TR>
+  <TD>modmuladd</TD>
+  <TD>~ modqmuladd</TD>
+</TR>
+
+<TR>
+  <TD>modmuladdim</TD>
+  <TD>~ modqmuladdim</TD>
+</TR>
+
+<TR>
+  <TD>modmuladdnn0</TD>
+  <TD>~ modqmuladdnn0</TD>
+</TR>
+
+<TR>
+  <TD>negmod</TD>
+  <TD>~ qnegmod</TD>
+</TR>
+
+<TR>
+  <TD>modadd2mod</TD>
+  <TD>~ modqadd2mod</TD>
+</TR>
+
+<TR>
+  <TD>modm1p1mod0</TD>
+  <TD>~ modqm1p1mod0</TD>
+</TR>
+
+<TR>
+  <TD>modltm1p1mod</TD>
+  <TD>~ modqltm1p1mod</TD>
+</TR>
+
+<TR>
+  <TD>modmul1</TD>
+  <TD>~ modqmul1</TD>
+</TR>
+
+<TR>
+  <TD>modmul12d</TD>
+  <TD>~ modqmul12d</TD>
+</TR>
+
+<TR>
+  <TD>modnegd</TD>
+  <TD>~ modqnegd</TD>
+</TR>
+
+<TR>
+  <TD>modadd12d</TD>
+  <TD>~ modqadd12d</TD>
+</TR>
+
+<TR>
+  <TD>modsub12d</TD>
+  <TD>~ modqsub12d</TD>
+</TR>
+
+<TR>
+  <TD>modsubmod</TD>
+  <TD>~ modqsubmod</TD>
+</TR>
+
+<TR>
+  <TD>modsubmodmod</TD>
+  <TD>~ modqsubmodmod</TD>
+</TR>
+
+<TR>
+  <TD>2txmodxeq0</TD>
+  <TD>~ q2txmodxeq0</TD>
+</TR>
+
+<TR>
+  <TD>2submod</TD>
+  <TD>~ q2submod</TD>
+</TR>
+
+<TR>
+  <TD>modmulmod</TD>
+  <TD>~ modqmulmod</TD>
+</TR>
+
+<TR>
+  <TD>modmulmodr</TD>
+  <TD>~ modqmulmodr</TD>
+</TR>
+
+<TR>
+  <TD>modaddmulmod</TD>
+  <TD>~ modqaddmulmod</TD>
+</TR>
+
+<TR>
+  <TD>moddi</TD>
+  <TD>~ modqdi</TD>
+</TR>
+
+<TR>
+  <TD>modsubdir</TD>
+  <TD>~ modqsubdir</TD>
+</TR>
+
+<TR>
+  <TD>modeqmodmin</TD>
+  <TD>~ modqeqmodmin</TD>
+</TR>
+
+<TR>
+  <TD>modirr</TD>
+  <TD><I>none</I></TD>
+  <TD>A version of this (presumably modified) may be possible,
+  but it is unused in set.mm</TD>
+</TR>
+
+<TR>
+<TD>om2uz0i</TD>
+<TD>~ frec2uz0d</TD>
+</TR>
+
+<TR>
+<TD>om2uzsuci</TD>
+<TD>~ frec2uzsucd</TD>
+</TR>
+
+<TR>
+<TD>om2uzuzi</TD>
+<TD>~ frec2uzuzd</TD>
+</TR>
+
+<TR>
+<TD>om2uzlti</TD>
+<TD>~ frec2uzltd</TD>
+</TR>
+
+<TR>
+<TD>om2uzlt2i</TD>
+<TD>~ frec2uzlt2d</TD>
+</TR>
+
+<TR>
+<TD>om2uzrani</TD>
+<TD>~ frec2uzrand</TD>
+</TR>
+
+<TR>
+<TD>om2uzf1oi</TD>
+<TD>~ frec2uzf1od</TD>
+</TR>
+
+<TR>
+<TD>om2uzisoi</TD>
+<TD>~ frec2uzisod</TD>
+</TR>
+
+<TR>
+<TD>om2uzoi , ltweuz , ltwenn , ltwefz</TD>
+<TD><I>none</I></TD>
+<TD>Based on theorems like ~ nnregexmid it is not clear what,
+if anything, along these lines is possible.</TD>
+</TR>
+
+<TR>
+<TD>om2uzrdg</TD>
+<TD>~ frec2uzrdg</TD>
+</TR>
+
+<TR>
+<TD>uzrdglem</TD>
+<TD>~ frecuzrdglem</TD>
+</TR>
+
+<TR>
+<TD>uzrdgfni</TD>
+<TD>~ frecuzrdgtcl</TD>
+</TR>
+
+<TR>
+<TD>uzrdg0i</TD>
+<TD>~ frecuzrdg0</TD>
+</TR>
+
+<TR>
+<TD>uzrdgsuci</TD>
+<TD>~ frecuzrdgsuc</TD>
+</TR>
+
+<TR>
+<TD>uzinf</TD>
+<TD><I>none</I></TD>
+<TD>See ominf</TD>
+</TR>
+
+<TR>
+<TD>uzrdgxfr</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could be proved if restated in terms of ` frec `
+(a la ~ frec2uz0d ). However, it is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>fzennn</TD>
+<TD>~ frecfzennn</TD>
+</TR>
+
+<TR>
+<TD>fzen2</TD>
+<TD>~ frecfzen2</TD>
+</TR>
+
+<TR>
+<TD>cardfz</TD>
+<TD><I>none</I></TD>
+<TD>Cardinality does not work the same way without excluded
+middle and iset.mm has few cardinality related theorems.</TD>
+</TR>
+
+<TR>
+<TD>hashgf1o</TD>
+<TD>~ frechashgf1o</TD>
+</TR>
+
+<TR>
+<TD>fzfi</TD>
+<TD>~ fzfig</TD>
+</TR>
+
+<TR>
+<TD>fzfid</TD>
+<TD>~ fzfigd</TD>
+</TR>
+
+<TR>
+<TD>fzofi</TD>
+<TD>~ fzofig</TD>
+</TR>
+
+<TR>
+<TD>fsequb</TD>
+<TD><I>none</I></TD>
+<TD>Seems like it might be provable, but unused in set.mm</TD>
+</TR>
+
+<TR>
+<TD>fsequb2</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof does not work as-is</TD>
+</TR>
+
+<TR>
+  <TD>fseqsupcl</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fisupcl and it is not clear whether this
+  supremum theorem or anything similar can be proved.</TD>
+</TR>
+
+<TR>
+  <TD>fseqsupubi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fsequb2 and suprub and it is not clear
+  whether this supremum theorem or anything similar can be proved.</TD>
+</TR>
+
+<TR>
+<TD>uzindi</TD>
+<TD><I>none</I></TD>
+<TD>This could presumably be proved, perhaps from ~ uzsinds ,
+but is lightly used in set.mm</TD>
+</TR>
+
+<TR>
+<TD>axdc4uz</TD>
+<TD><I>none</I></TD>
+<TD>Although some versions of constructive mathematics accept dependent
+choice, we have not yet developed it in iset.mm</TD>
+</TR>
+
+<TR>
+<TD>ssnn0fi , rabssnn0fi</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to imply excluded middle along the lines of ~ nnregexmid
+or ~ ssfiexmid </TD>
+</TR>
+
+<TR>
+<TD>df-seq</TD>
+<TD>~ df-iseq , ~ df-seq3</TD>
+</TR>
+
+<TR>
+<TD>seqval</TD>
+<TD>~ iseqval , ~ iseqvalt</TD>
+</TR>
+
+<TR>
+<TD>seqfn</TD>
+<TD>~ seqf</TD>
+</TR>
+
+<TR>
+<TD>seq1 , seq1i</TD>
+<TD>~ seq3-1</TD>
+</TR>
+
+<TR>
+<TD>seqp1 , seqp1i</TD>
+<TD>~ seq3p1</TD>
+</TR>
+
+<TR>
+  <TD>seqm1</TD>
+  <TD>~ iseqm1</TD>
+</TR>
+
+<TR>
+  <TD>seqcl2</TD>
+  <TD><I>none yet</I></TD>
+  <TD>Presumably could prove this (with adjustments analogous
+  to ~ iseqp1 ). The third argument to ` seq ` in iset.mm would
+  correspond to ` C ` rather than ` D ` (some of the other ` seq `
+  related theorems do not allow ` C ` and ` D ` to be different,
+  but seqcl2 does).</TD>
+</TR>
+
+<TR>
+  <TD>seqf2</TD>
+  <TD><I>none yet</I></TD>
+  <TD>Presumably could prove this, analogously to seqcl2.</TD>
+</TR>
+
+<TR>
+  <TD>seqcl</TD>
+  <TD>~ seqf , ~ iseqcl , ~ seq3clss</TD>
+  <TD>~ iseqcl and ~ seqf require that ` F ` be defined
+  on ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` . This requirement is
+  relaxed somewhat in ~ seq3clss .</TD>
+</TR>
+
+<TR>
+<TD>seqfveq2</TD>
+<TD>~ iseqfveq2</TD>
+</TR>
+
+<TR>
+<TD>seqfeq2</TD>
+<TD>~ iseqfeq2</TD>
+</TR>
+
+<TR>
+<TD>seqfveq</TD>
+<TD>~ iseqfveq</TD>
+</TR>
+
+<TR>
+<TD>seqfeq</TD>
+<TD>~ seq3feq</TD>
+</TR>
+
+<TR>
+<TD>seqshft2</TD>
+<TD>~ seq3shft2</TD>
+</TR>
+
+<TR>
+  <TD>seqres</TD>
+  <TD><I>none</I></TD>
+  <TD>Should be intuitionizable as with the other ` seq ` theorems,
+  but unused in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>sermono</TD>
+  <TD>~ isermono</TD>
+  <TD>isermono requires that ` F ` be defined on ` ( ZZ>= `` M ) `
+  not merely ` ( M ... N ) ` as in sermono . Given that the intention is to
+  use this for infinite series, there may be no need to look
+  into whether this requirement can be relaxed.</TD>
+</TR>
+
+<TR>
+  <TD>seqsplit</TD>
+  <TD>~ seq3split</TD>
+  <TD>seq3split requires that ` F ` be defined on ` ( ZZ>= `` K ) `
+  not merely ` ( K ... N ) ` as in seqsplit . This is not a problem
+  when used on infinite sequences; finite sums may find it easier to
+  use ~ fsumsplit instead.</TD>
+</TR>
+
+<TR>
+  <TD>seq1p</TD>
+  <TD>~ iseq1p</TD>
+  <TD>iseq1p requires that ` F ` be defined on ` ( ZZ>= `` M ) `
+  not merely ` ( M ... N ) ` as in seq1p . This is not a problem
+  when used on infinite sequences, but perhaps this requirement
+  could be relaxed if there is a need.</TD>
+</TR>
+
+<TR>
+  <TD>seqcaopr3</TD>
+  <TD>~ iseqcaopr3</TD>
+  <TD>iseqcaopr3 requires that ` F ` , ` G ` , and ` H ` be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seqcaopr3 . This
+  is not a problem when used on infinite sequences, but perhaps this
+  requirement could be relaxed if there is a need.</TD>
+</TR>
+
+<TR>
+  <TD>seqcaopr2</TD>
+  <TD>~ iseqcaopr2</TD>
+  <TD>iseqcaopr2 requires that ` F ` , ` G ` , and ` H ` be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seqcaopr2 . This
+  is not a problem when used on infinite sequences, but perhaps this
+  requirement could be relaxed if there is a need.</TD>
+</TR>
+
+<TR>
+  <TD>seqcaopr</TD>
+  <TD>~ iseqcaopr</TD>
+  <TD>iseqcaopr requires that ` F ` , ` G ` , and ` H ` be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seqcaopr . This
+  is not a problem when used on infinite sequences, but perhaps this
+  requirement could be relaxed if there is a need.</TD>
+</TR>
+
+<TR>
+  <TD>seqf1o</TD>
+  <TD>~ iseqf1o</TD>
+  <TD>The functions ` G ` and ` H ` need to be defined on ` ( ZZ>= `` M ) `
+  not merely ` ( M ... N ) ` as in seqf1o . Also, a single set ` S `
+  takes the place of ` C ` and ` S ` because that is sufficient
+  flexibility at least for now.</TD>
+</TR>
+
+<TR>
+  <TD>seradd</TD>
+  <TD>~ ser3add</TD>
+  <TD>iseradd requires that ` F ` , ` G ` , and ` H ` be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seradd . This
+  is not a problem when used on infinite sequences, but perhaps this
+  requirement could be relaxed if there is a need.</TD>
+</TR>
+
+<TR>
+  <TD>sersub</TD>
+  <TD>~ isersub</TD>
+  <TD>isersub requires that ` F ` , ` G ` , and ` H ` be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in sersub . This
+  is not a problem when used on infinite sequences, but perhaps this
+  requirement could be relaxed if there is a need.</TD>
+</TR>
+
+<TR>
+  <TD>seqid3</TD>
+  <TD>~ iseqid3 , ~ iseqid3s</TD>
+  <TD>~ iseqid3 and ~ iseqid3s differ with respect to which
+  entries in ` F ` need to be
+  zero. Further refinements to the hypotheses including where ` F `
+  needs to be defined and the like might be possible (with
+  a greater amount of work), but perhaps these are sufficient.</TD>
+</TR>
+
+<TR>
+  <TD>seqid</TD>
+  <TD>~ iseqid</TD>
+</TR>
+
+<TR>
+  <TD>seqid2</TD>
+  <TD>~ iseqid2</TD>
+</TR>
+
+<TR>
+  <TD>seqhomo</TD>
+  <TD>~ seq3homo</TD>
+</TR>
+
+<TR>
+  <TD>seqz</TD>
+  <TD>~ iseqz</TD>
+</TR>
+
+<TR>
+  <TD>seqfeq4 , seqfeq3</TD>
+  <TD><I>none yet</I></TD>
+  <TD>It should be possible to come up with some (presumably
+  modified) versions of these, but we have not done so yet.</TD>
+</TR>
+
+<TR>
+  <TD>seqdistr</TD>
+  <TD>~ seq3distr</TD>
+</TR>
+
+<TR>
+  <TD>serge0</TD>
+  <TD>~ ser3ge0</TD>
+  <TD>The sequence has to be defined on ` ( ZZ>= `` M ) ` not just
+  ` ( M ... N ) `</TD>
+</TR>
+
+<TR>
+  <TD>serle</TD>
+  <TD>~ ser3le</TD>
+  <TD>Changes several hypotheses from ` ( M ... N ) ` to
+  ` ( ZZ>= `` M ) `</TD>
+</TR>
+
+<TR>
+  <TD>ser1const</TD>
+  <TD>~ fsumconst</TD>
+  <TD>Finite summation in iset.mm is easier to express using ` sum_ `
+  rather than ` seq ` directly.</TD>
+</TR>
+
+<TR>
+  <TD>seqof , seqof2</TD>
+  <TD><I>none</I></TD>
+  <TD>It should be possible to come up with some (presumably
+  modified) versions of these, but we have not done so yet.</TD>
+</TR>
+
+<TR>
+<TD>expval</TD>
+<TD>~ exp3val</TD>
+<TD>The set.mm theorem does not exclude the case of
+dividing by zero.</TD>
+</TR>
+
+<TR>
+<TD>expneg</TD>
+<TD>~ expnegap0</TD>
+<TD>The set.mm theorem does not exclude the case of
+dividing by zero.</TD>
+</TR>
+
+<TR>
+<TD>expneg2</TD>
+<TD>~ expineg2</TD>
+</TR>
+
+<TR>
+<TD>expn1</TD>
+<TD>~ expn1ap0</TD>
+</TR>
+
+<TR>
+<TD>expcl2lem</TD>
+<TD>~ expcl2lemap</TD>
+</TR>
+
+<TR>
+<TD>reexpclz</TD>
+<TD>~ reexpclzap</TD>
+</TR>
+
+<TR>
+<TD>expclzlem</TD>
+<TD>~ expclzaplem</TD>
+</TR>
+
+<TR>
+<TD>expclz</TD>
+<TD>~ expclzap</TD>
+</TR>
+
+<TR>
+<TD>expne0</TD>
+<TD>~ expap0</TD>
+</TR>
+
+<TR>
+<TD>expne0i</TD>
+<TD>~ expap0i</TD>
+</TR>
+
+<TR>
+<TD>expnegz</TD>
+<TD>~ expnegzap</TD>
+</TR>
+
+<TR>
+<TD>mulexpz</TD>
+<TD>~ mulexpzap</TD>
+</TR>
+
+<TR>
+<TD>exprec</TD>
+<TD>~ exprecap</TD>
+</TR>
+
+<TR>
+<TD>expaddzlem , expaddz</TD>
+<TD>~ expaddzaplem , ~ expaddzap</TD>
+</TR>
+
+<TR>
+<TD>expmulz</TD>
+<TD>~ expmulzap</TD>
+</TR>
+
+<TR>
+<TD>expsub</TD>
+<TD>~ expsubap</TD>
+</TR>
+
+<TR>
+<TD>expp1z</TD>
+<TD>~ expp1zap</TD>
+</TR>
+
+<TR>
+<TD>expm1</TD>
+<TD>~ expm1ap</TD>
+</TR>
+
+<TR>
+<TD>expdiv</TD>
+<TD>~ expdivap</TD>
+</TR>
+
+<TR>
+<TD>ltexp2 , leexp2 , leexp2 , ltexp2d , leexp2d</TD>
+<TD><I>none</I></TD>
+<TD>Presumably provable, but the set.mm proof uses ltord1</TD>
+</TR>
+
+<TR>
+<TD>ltexp2r , ltexp2rd</TD>
+<TD><I>none</I></TD>
+<TD>Presumably provable, but the set.mm proof uses ltexp2</TD>
+</TR>
+
+<TR>
+<TD>sqdiv</TD>
+<TD>~ sqdivap</TD>
+</TR>
+
+<TR>
+<TD>sqgt0</TD>
+<TD>~ sqgt0ap</TD>
+</TR>
+
+<TR>
+<TD>sqrecii , sqrecd</TD>
+<TD>~ exprecap</TD>
+</TR>
+
+<TR>
+<TD>sqdivi</TD>
+<TD>~ sqdivapi</TD>
+</TR>
+
+<TR>
+<TD>sqgt0i</TD>
+<TD>~ sqgt0api</TD>
+</TR>
+
+<TR>
+<TD>sqlecan</TD>
+<TD>~ lemul1</TD>
+<TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+<TD>sqeqori</TD>
+<TD><I>none</I></TD>
+<TD>The reverse direction is ~ oveq1 together with ~ sqneg .
+The forward direction is presumably not provable, see mul0or for
+more discussion.</TD>
+</TR>
+
+<TR>
+<TD>subsq0i , sqeqor</TD>
+<TD><I>none</I></TD>
+<TD>Variations of sqeqori .</TD>
+</TR>
+
+<TR>
+<TD>sq01</TD>
+<TD><I>none</I></TD>
+<TD>Lightly used in set.mm. Presumably not provable as stated,
+for reasons analogous to mul0or .</TD>
+</TR>
+
+<TR>
+<TD>crreczi</TD>
+<TD><I>none</I></TD>
+<TD>Presumably could be proved if not-equal is changed to apart,
+but unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>expmulnbnd</TD>
+<TD><I>none</I></TD>
+<TD>Should be possible to prove this or something similar, but the
+set.mm proof relies on case elimination based on whether ` 0 <_ A `
+or not.</TD>
+</TR>
+
+<TR>
+<TD>digit2 , digit1</TD>
+<TD><I>none</I></TD>
+<TD>Depends on modulus and floor, and unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>modexp</TD>
+<TD><I>none</I></TD>
+<TD>Depends on modulus. Presumably it, or something similar,
+can be made to work as it is mostly about integers rather
+than reals.</TD>
+</TR>
+
+<TR>
+<TD>discr1 , discr</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof uses real number trichotomy.</TD>
+</TR>
+
+<TR>
+<TD>sqrecd</TD>
+<TD>~ sqrecapd</TD>
+</TR>
+
+<TR>
+<TD>expclzd</TD>
+<TD>~ expclzapd</TD>
+</TR>
+
+<TR>
+<TD>exp0d</TD>
+<TD>~ expap0d</TD>
+</TR>
+
+<TR>
+  <TD>expne0d</TD>
+  <TD>~ expap0d</TD>
+</TR>
+
+<TR>
+<TD>expnegd</TD>
+<TD>~ expnegapd</TD>
+</TR>
+
+<TR>
+<TD>exprecd</TD>
+<TD>~ exprecapd</TD>
+</TR>
+
+<TR>
+<TD>expp1zd</TD>
+<TD>~ expp1zapd</TD>
+</TR>
+
+<TR>
+<TD>expm1d</TD>
+<TD>~ expm1apd</TD>
+</TR>
+
+<TR>
+<TD>expsubd</TD>
+<TD>~ expsubapd</TD>
+</TR>
+
+<TR>
+<TD>sqdivd</TD>
+<TD>~ sqdivapd</TD>
+</TR>
+
+<TR>
+<TD>expdivd</TD>
+<TD>~ expdivapd</TD>
+</TR>
+
+<TR>
+<TD>reexpclzd</TD>
+<TD>~ reexpclzapd</TD>
+</TR>
+
+<TR>
+<TD>sqgt0d</TD>
+<TD>~ sqgt0apd</TD>
+</TR>
+
+<TR>
+  <TD>mulsubdivbinom2</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable if not equal is changed to apart.</TD>
+</TR>
+
+<TR>
+  <TD>muldivbinom2</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable if not equal is changed to apart.</TD>
+</TR>
+
+<TR>
+  <TD>nn0le2msqi</TD>
+  <TD>~ nn0le2msqd</TD>
+  <TD>Although nn0le2msqi could be proved, having a version in
+  deduction form will be more useful.</TD>
+</TR>
+
+<TR>
+  <TD>nn0opthlem1</TD>
+  <TD>~ nn0opthlem1d</TD>
+  <TD>Although nn0opthlem1 could be proved, having a version in
+  deduction form will be more useful.</TD>
+</TR>
+
+<TR>
+  <TD>nn0opthlem2</TD>
+  <TD>~ nn0opthlem2d</TD>
+  <TD>Although nn0opthlem2 could be proved, having a version in
+  deduction form will be more useful.</TD>
+</TR>
+
+<TR>
+  <TD>nn0opthi</TD>
+  <TD>~ nn0opthd</TD>
+  <TD>Although nn0opthi could be proved, having a version in
+  deduction form will be more useful.</TD>
+</TR>
+
+<TR>
+  <TD>nn0opth2i</TD>
+  <TD>~ nn0opth2d</TD>
+  <TD>Although nn0opth2i could be proved, having a version in
+  deduction form will be more useful.</TD>
+</TR>
+
+<TR>
+  <TD>facmapnn</TD>
+  <TD>~ faccl</TD>
+  <TD>Presumably provable now that iset.mm has ~ df-map .
+  But ~ faccl would be sufficient for the uses in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>faclbnd4 , faclbnd5 , and lemmas</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable; unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>bcval5</TD>
+  <TD>~ ibcval5</TD>
+</TR>
+
+<TR>
+  <TD>df-hash</TD>
+  <TD>~ df-ihash</TD>
+</TR>
+
+<TR>
+  <TD>hashkf , hashgval , hashginv</TD>
+  <TD><I>none</I></TD>
+  <TD>Due to the differences between df-hash in set.mm and
+  ~ df-ihash here, there's no particular need for these as stated</TD>
+</TR>
+
+<TR>
+  <TD>hashinf</TD>
+  <TD>~ hashinfom</TD>
+  <TD>The condition that ` A ` is infinite is changed from
+  ` -. A e. Fin ` to ` _om ~<_ A ` .</TD>
+</TR>
+
+<TR>
+  <TD>hashbnd</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof is not intuitionistic.</TD>
+</TR>
+
+<TR>
+  <TD>hashfxnn0 , hashf , hashxnn0 , hashresfn , dmhashres ,
+  hashnn0pnf</TD>
+  <TD><I>none</I></TD>
+  <TD>Although ~ df-ihash is defined for finite sets and infinite
+  sets, it is not clear we would be able to show this definition
+  (or another definition) is defined for all sets.</TD>
+</TR>
+
+<TR>
+  <TD>hashnnn0genn0</TD>
+  <TD><I>none</I></TD>
+  <TD>Not yet known whether this is provable or whether it is the
+  sort of reverse closure theorem that we (at least so far) have
+  been unable to intuitionize.</TD>
+</TR>
+
+<TR>
+  <TD>hashnemnf</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable but the set.mm proof relies on hashnn0pnf</TD>
+</TR>
+
+<TR>
+  <TD>hashv01gt1</TD>
+  <TD>~ hashfiv01gt1</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hasheni</TD>
+  <TD>~ hashen , ~ hashinfom</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hasheqf1oi</TD>
+  <TD>~ fihasheqf1oi</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hashf1rn</TD>
+  <TD>~ fihashf1rn</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hasheqf1od</TD>
+  <TD>~ fihasheqf1od</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hashcard</TD>
+  <TD><I>none</I></TD>
+  <TD>Cardinality is not well developed in iset.mm</TD>
+</TR>
+
+<TR>
+  <TD>hashxrcl</TD>
+  <TD><I>none</I></TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hashclb</TD>
+  <TD><I>none</I></TD>
+  <TD>Not yet known whether this is provable or whether it is the
+  sort of reverse closure theorem that we (at least so far) have
+  been unable to intuitionize.</TD>
+</TR>
+
+<TR>
+  <TD>nfile</TD>
+  <TD>~ filtinf</TD>
+  <TD>It is not clear there would be any way to combine the case
+  where ` A ` is finite and the case where it is infinite.</TD>
+</TR>
+
+<TR>
+  <TD>hashvnfin</TD>
+  <TD><I>none</I></TD>
+  <TD>This is a form of reverse closure, presumably not provable.</TD>
+</TR>
+
+<TR>
+  <TD>hashnfinnn0</TD>
+  <TD>~ hashinfom</TD>
+</TR>
+
+<TR>
+  <TD>isfinite4</TD>
+  <TD>~ isfinite4im</TD>
+</TR>
+
+<TR>
+  <TD>hasheq0</TD>
+  <TD>~ fihasheq0</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hashneq0 , hashgt0n0</TD>
+  <TD>~ fihashneq0</TD>
+</TR>
+
+<TR>
+  <TD>hashen1</TD>
+  <TD>~ fihashen1</TD>
+</TR>
+
+<TR>
+  <TD>hashrabrsn</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would need conditions around the existence of ` A ` and
+  decidability of ` ph ` but unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>hashrabsn01</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would need conditions around the existence of ` A ` and
+  decidability of ` ph ` but unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>hashrabsn1</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses excluded middle and this theorem is
+  unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>hashfn</TD>
+  <TD>~ fihashfn</TD>
+  <TD>There is an added condition that the domain be finite.</TD>
+</TR>
+
+<TR>
+  <TD>hashgadd</TD>
+  <TD>~ omgadd</TD>
+</TR>
+
+<TR>
+  <TD>hashgval2</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable, when restated as
+  ` ( # |`` _om ) = frec ( ( x e. ZZ |-> ( x + 1 ) ) , 0 ) ` ,
+  but lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>hashdom</TD>
+  <TD>~ fihashdom</TD>
+  <TD>There is an added condition that ` B ` is finite.</TD>
+</TR>
+
+<TR>
+  <TD>hashdomi</TD>
+  <TD>~ fihashdom</TD>
+  <TD>It is presumably not possible to extend ~ fihashdom beyond the
+  finite set case.</TD>
+</TR>
+
+<TR>
+  <TD>hashun2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on undif2 (we just have ~ undif2ss ) and
+  diffi (we just have ~ diffifi )</TD>
+</TR>
+
+<TR>
+  <TD>hashun3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on various theorems we do not have</TD>
+</TR>
+
+<TR>
+  <TD>hashinfxadd</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>hashunx</TD>
+  <TD><I>none</I></TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hashge0</TD>
+  <TD>~ hashcl</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hashgt0 , hashge1</TD>
+  <TD>~ hashnncl</TD>
+  <TD>It is not clear there would be any way to combine the finite
+  and infinite cases.</TD>
+</TR>
+
+<TR>
+  <TD>hashnn0n0nn</TD>
+  <TD>~ hashnncl</TD>
+  <TD>To the extent this is reverse closure, we probably can't prove
+  it. For inhabited versus non-empty, see ~ fin0</TD>
+</TR>
+
+<TR>
+  <TD>elprchashprn2</TD>
+  <TD>~ hashsng</TD>
+  <TD>Given either ` N e. _V ` or ` -. N e. _V ` this
+  could be proved (as ` ( # `` { M , N } ) ` reduces to
+  ~ hashsng or ~ hash0 respectively), but is not clear we can
+  combine the cases (even ~ 1domsn may not be enough).</TD>
+</TR>
+
+<TR>
+  <TD>hashprb</TD>
+  <TD>~ hashprg</TD>
+</TR>
+
+<TR>
+  <TD>hashprdifel</TD>
+  <TD><I>none</I></TD>
+  <TD>This would appear to be a form of reverse closure.</TD>
+</TR>
+
+<TR>
+  <TD>hashle00</TD>
+  <TD>~ fihasheq0</TD>
+</TR>
+
+<TR>
+  <TD>hashgt0elex , hashgt0elexb</TD>
+  <TD>~ fihashneq0</TD>
+  <TD>See ~ fin0 for inhabited versus non-empty. It isn't clear
+  it would be possible to also include the infinite case as
+  hashgt0elex does.</TD>
+</TR>
+
+<TR>
+  <TD>hashss</TD>
+  <TD>~ fihashss</TD>
+</TR>
+
+<TR>
+  <TD>prsshashgt1</TD>
+  <TD>~ fiprsshashgt1</TD>
+</TR>
+
+<TR>
+  <TD>hashin</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably additional conditions would be
+  needed (see infi entry).</TD>
+</TR>
+
+<TR>
+  <TD>hashssdif</TD>
+  <TD>~ fihashssdif</TD>
+</TR>
+
+<TR>
+  <TD>hashdif</TD>
+  <TD><I>none</I></TD>
+  <TD>Modified versions presumably would be provable, but this is
+  unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>hashsn01</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably not provable</TD>
+</TR>
+
+<TR>
+  <TD>hashsnle1</TD>
+  <TD><I>none</I></TD>
+  <TD>At first glance this would appear to be the same as ~ 1domsn
+  but to apply ~ fihashdom would require that the singleton be
+  finite, which might imply that we cannot improve on ~ hashsng .</TD>
+</TR>
+
+<TR>
+  <TD>hashsnlei</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably not provable</TD>
+</TR>
+
+<TR>
+  <TD>hash1snb , euhash1 , hash1n0 , hashgt12el , hashgt12el2</TD>
+  <TD><I>none</I></TD>
+  <TD>Conjectured to be provable in the finite set case</TD>
+</TR>
+
+<TR>
+  <TD>hashunlei</TD>
+  <TD><I>none</I></TD>
+  <TD>Not provable per ~ unfiexmid (see also entry for hashun2)</TD>
+</TR>
+
+<TR>
+  <TD>hashsslei</TD>
+  <TD>~ fihashss</TD>
+  <TD>Would be provable if we transfered ` B e. Fin ` from the
+  conclusion to the hypothesis but as written falls afoul of
+  ~ ssfiexmid .</TD>
+</TR>
+
+<TR>
+  <TD>hashmap</TD>
+  <TD><I>none</I></TD>
+  <TD>Probably provable but the set.mm proof relies on a number
+  of theorems which we don't have.</TD>
+</TR>
+
+<TR>
+  <TD>hashpw</TD>
+  <TD><I>none</I></TD>
+  <TD>Unlike pw2en this is only for finite sets, so it presumably
+  is provable. The set.mm proof may be usable.</TD>
+</TR>
+
+<TR>
+  <TD>hashfun</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable but the set.mm proof relies on excluded
+  middle and undif.</TD>
+</TR>
+
+<TR>
+  <TD>hashres , hashreshashfun</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would need to add ` B e. Fin ` or similar
+  conditions.</TD>
+</TR>
+
+<TR>
+  <TD>hashimarn , hashimarni</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would need an additional condition such as
+  ` F e. Fin ` but unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>fnfz0hashnn0</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would need an additional condition such as
+  ` N e. NN0 ` but unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>fnfzo0hashnn0</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would need an additional condition such as
+  ` N e. NN0 ` but unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>hashbc</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses pwfi and ssfi .</TD>
+</TR>
+
+<TR>
+  <TD>hashf1</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses ssfi , excluded middle, abn0 , diffi
+  and perhaps other theorems we don't have.</TD>
+</TR>
+
+<TR>
+  <TD>hashfac</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses hashf1 .</TD>
+</TR>
+
+<TR>
+  <TD>leiso</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses isocnv3 .</TD>
+</TR>
+
+<TR>
+  <TD>fz1iso</TD>
+  <TD>~ zfz1iso</TD>
+  <TD>The set.mm proof of fz1iso depends on OrdIso. Furthermore,
+  trichotomy rather than weak linearity would seem to be needed.</TD>
+</TR>
+
+<TR>
+  <TD>ishashinf</TD>
+  <TD><I>none</I></TD>
+  <TD>May be possible with the antecedent changed from ` -. A e. Fin `
+  to ` _om ~<_ A ` but the set.mm proof does not work as is.</TD>
+</TR>
+
+
+<TR>
+  <TD>seqcoll</TD>
+  <TD>~ iseqcoll</TD>
+  <TD>The functions ` F ` and ` H ` need to be defined on
+  ` ZZ>= `` M ` not just a subset thereof.</TD>
+</TR>
+
+<TR>
+  <TD>seqcoll2</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably can be done with modifications similar
+  to ~ iseqcoll .</TD>
+</TR>
+
+<TR>
+  <TD>seqshft</TD>
+  <TD>~ seq3shft</TD>
+</TR>
+
+<TR>
+  <TD>df-sgn and theorems related to the sgn function</TD>
+  <TD><I>none</I></TD>
+  <TD>To choose a value near zero requires knowing the argument
+  with unlimited precision. It would be possible to define
+  for rational numbers, or real numbers apart from zero.</TD>
+</TR>
+
+<TR>
+<TD>mulre</TD>
+<TD>~ mulreap</TD>
+</TR>
+
+<TR>
+<TD>rediv</TD>
+<TD>~ redivap</TD>
+</TR>
+
+<TR>
+<TD>imdiv</TD>
+<TD>~ imdivap</TD>
+</TR>
+
+<TR>
+<TD>cjdiv</TD>
+<TD>~ cjdivap</TD>
+</TR>
+
+<TR>
+<TD>sqeqd</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is not intuitionistic, and this
+theorem is unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>cjdivi</TD>
+<TD>~ cjdivapi</TD>
+</TR>
+
+<TR>
+<TD>cjdivd</TD>
+<TD>~ cjdivapd</TD>
+</TR>
+
+<TR>
+<TD>redivd</TD>
+<TD>~ redivapd</TD>
+</TR>
+
+<TR>
+<TD>imdivd</TD>
+<TD>~ imdivapd</TD>
+</TR>
+
+<TR>
+<TD>df-sqrt</TD>
+<TD>~ df-rsqrt</TD>
+<TD>See discussion of complex square roots in the comment of ~ df-rsqrt .
+Here's one possibility if we do want to define square roots on (some)
+complex numbers:
+It should be possible to define the complex square root function on all
+complex numbers satisfying ` ( Im `` x ) =//= 0 \/ 0 <_ ( Re `` x ) ` , using a
+similar construction to the one used in set.mm. You need the real square
+root as a basis for the construction, but then there is a trick using
+the complex number x + |x| (see sqreu) that yields the complex square
+root whenever it is apart from zero (you need to divide by it at one
+point IIRC), which is exactly on the negative real line. You can either
+live with this constraint, which gives you the complex square root except
+on the negative real line (which puts a hole at zero), or you can extend
+it by continuity to zero as well by joining it with the real square root.
+The disjunctive domain of the resulting function might not be so
+useful though.</TD>
+</TR>
+
+<TR>
+<TD>sqrtval</TD>
+<TD>~ sqrtrval</TD>
+<TD>See discussion of complex square roots in the comment of ~ df-rsqrt</TD>
+</TR>
+
+<TR>
+<TD>01sqrex and its lemmas</TD>
+<TD>~ resqrex</TD>
+<TD>Both set.mm and iset.mm prove resqrex although via different mechanisms
+so there is no need for 01sqrex.</TD>
+</TR>
+
+<TR>
+<TD>cnpart</TD>
+<TD><I>none</I></TD>
+<TD>See discussion of complex square roots in the comment of ~ df-rsqrt</TD>
+</TR>
+
+<TR>
+<TD>sqrmo</TD>
+<TD>~ rsqrmo</TD>
+<TD>See discussion of complex square roots in the comment of ~ df-rsqrt</TD>
+</TR>
+
+<TR>
+<TD>resqreu</TD>
+<TD>~ rersqreu</TD>
+<TD>Although the set.mm theorem is primarily about real square roots, the
+iset.mm equivalent removes some complex number related parts.</TD>
+</TR>
+
+<TR>
+<TD>sqrtneg , sqrtnegd</TD>
+<TD><I>none</I></TD>
+<TD>Although it may be possible to extend the domain of square root
+somewhat beyond nonnegative reals without excluded middle, in
+general complex square roots are difficult, as discussed
+in the comment of ~ df-rsqrt</TD>
+</TR>
+
+<TR>
+<TD>sqrtm1</TD>
+<TD><I>none</I></TD>
+<TD>Although it may be possible to extend the domain of square root
+somewhat beyond nonnegative reals without excluded middle, in
+general complex square roots are difficult, as discussed
+in the comment of ~ df-rsqrt</TD>
+</TR>
+
+<TR>
+<TD>absrpcl , absrpcld</TD>
+<TD>~ absrpclap , ~ absrpclapd</TD>
+</TR>
+
+<TR>
+<TD>absdiv , absdivzi , absdivd</TD>
+<TD>~ absdivap , ~ absdivapzi , ~ absdivapd</TD>
+</TR>
+
+<TR>
+<TD>absor , absori , absord</TD>
+<TD>~ qabsor</TD>
+<TD>It also would be possible to prove this for real numbers apart from zero,
+if we wanted</TD>
+</TR>
+
+<TR>
+<TD>absmod0</TD>
+<TD><I>none</I></TD>
+<TD>See df-mod ; we may want to supply this for rationals or integers</TD>
+</TR>
+
+<TR>
+<TD>absexpz</TD>
+<TD>~ absexpzap</TD>
+</TR>
+
+<TR>
+<TD>max0add</TD>
+<TD>~ max0addsup</TD>
+</TR>
+
+<TR>
+<TD>absz</TD>
+<TD><I>none</I></TD>
+<TD>Although this is presumably provable, the set.mm proof is not
+intuitionistic and it is lightly used in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>recval</TD>
+  <TD>~ recvalap</TD>
+</TR>
+
+<TR>
+  <TD>absgt0 , absgt0i</TD>
+  <TD>~ absgt0ap , absgt0api</TD>
+</TR>
+
+<TR>
+  <TD>absmax</TD>
+  <TD>~ maxabs</TD>
+</TR>
+
+<TR>
+  <TD>abs1m</TD>
+  <TD><I>none</I></TD>
+  <TD>Because this theorem provides ` ( * `` A ) / ( abs `` A ) ` as the
+  answer if ` A =/= 0 ` and ` i ` as the answer if ` A = 0 ` , and uses
+  excluded middle to combine those cases, it is presumably not provable
+  as stated. We could prove the theorem with the additional condition
+  that ` A =//= 0 ` , but it is unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>abslem2</TD>
+  <TD><I>none</I></TD>
+  <TD>Although this could presumably be proved if not equal were
+  changed to apart, it is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>rddif , absrdbnd</TD>
+  <TD><I>none</I></TD>
+  <TD>If there is a need, we could prove these for rationals or real
+  numbers apart from any rational. Alternately, we could prove a result
+  with a slightly larger bound for any real number.</TD>
+</TR>
+
+<TR>
+  <TD>rexuzre</TD>
+  <TD><I>none</I></TD>
+  <TD>Unless the real number ` j ` is known to be apart from an
+  integer, it isn't clear there would be any way to prove this
+  (see the steps in the set.mm proof which rely on the floor of
+  a real number). It is unused in set.mm for whatever that is worth.</TD>
+</TR>
+
+<TR>
+  <TD>caubnd</TD>
+  <TD><I>none</I></TD>
+  <TD>If we can prove fimaxre3 it would appear that the set.mm
+  proof would work with small changes (in the case of the maximum
+  of two real numbers, using ~ maxle1 , ~ maxle2 , and ~ maxcl ).</TD>
+</TR>
+
+<TR>
+  <TD>sqreulem , sqreu , sqrtcl , sqrtcld , sqrtthlem , sqrtf ,
+  sqrtth , sqsqrtd , msqsqrtd , sqr00d , sqrtrege0 , sqrtrege0d ,
+  eqsqrtor , eqsqrtd , eqsqrt2d</TD>
+  <TD>~ rersqreu , ~ resqrtcl , ~ resqrtcld , ~ resqrtth</TD>
+  <TD>As described at ~ df-rsqrt , square roots of complex numbers
+  are in set.mm defined with the help of excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>df-limsup and all superior limit theorems</TD>
+  <TD><I>none</I></TD>
+  <TD>This is not developed in iset.mm currently. If it was it
+  would presumably be noticeably different from set.mm given
+  various differences relating to sequence convergence,
+  supremums, etc.</TD>
+</TR>
+
+<TR>
+  <TD>df-rlim and theorems related to limits of partial
+  functions on the reals</TD>
+  <TD><I>none</I></TD>
+  <TD>This is not developed in iset.mm currently. If it was it
+  would presumably be noticeably different from set.mm given
+  various differences relating to convergence.</TD>
+</TR>
+
+<TR>
+  <TD>df-o1 and theorems related to eventually bounded functions</TD>
+  <TD><I>none</I></TD>
+  <TD>This is not developed in iset.mm currently. If it was it
+  would presumably be noticeably different from set.mm given
+  various differences relating to sequence convergence,
+  supremums, etc.</TD>
+</TR>
+
+<TR>
+  <TD>df-lo1 and theorems related to eventually upper bounded
+  functions</TD>
+  <TD><I>none</I></TD>
+  <TD>This is not developed in iset.mm currently. If it was it
+  would presumably be noticeably different from set.mm given
+  various differences relating to sequence convergence,
+  supremums, etc.</TD>
+</TR>
+
+<TR>
+  <TD>reccn2</TD>
+  <TD><I>none yet</I></TD>
+  <TD>Will need to be revamped to deal with negated equality
+  versus apartness and perhaps other issues.</TD>
+</TR>
+
+<TR>
+  <TD>isershft</TD>
+  <TD>~ iser3shft</TD>
+</TR>
+
+<TR>
+  <TD>isercoll and its lemmas, isercoll2</TD>
+  <TD><I>none yet</I></TD>
+  <TD>The set.mm proof would need modification</TD>
+</TR>
+
+<TR>
+  <TD>climsup</TD>
+  <TD><I>none</I></TD>
+  <TD>To show convergence would presumably require a hypothesis
+  related to the rate of convergence.</TD>
+</TR>
+
+<TR>
+  <TD>climbdd</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably could be proved but the current proof of caubnd
+  would need at least some minor adjustments.</TD>
+</TR>
+
+<TR>
+  <TD>caurcvg2</TD>
+  <TD>~ climrecvg1n</TD>
+</TR>
+
+<TR>
+  <TD>caucvg</TD>
+  <TD>~ climcvg1n</TD>
+</TR>
+
+<TR>
+  <TD>caucvgb</TD>
+  <TD>~ climcaucn , ~ climcvg1n</TD>
+  <TD>Without excluded middle, there are additional complications
+  related to the rate of convergence.</TD>
+</TR>
+
+<TR>
+  <TD>serf0</TD>
+  <TD>~ serif0</TD>
+  <TD>The only difference is the syntax of ` seq ` .</TD>
+</TR>
+
+<TR>
+  <TD>iseralt</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on caurcvg2 which does not specify
+  a rate of convergence.</TD>
+</TR>
+
+<TR>
+  <TD>df-sum</TD>
+  <TD>~ df-isum</TD>
+  <TD>Although this defintion is intended to function similarly to
+  the set.mm one, a lot of details have to be changed, especially
+  around decidability, to make sum work.</TD>
+</TR>
+
+<TR>
+  <TD>sumex</TD>
+  <TD><I>none</I></TD>
+  <TD>This will need to be replaced by suitable closure theorems.</TD>
+</TR>
+
+<TR>
+  <TD>sumeq2w</TD>
+  <TD>~ sumeq2</TD>
+  <TD>Presumably could be proved, and perhaps also would rely only
+  on extensionality (and logical axioms). But unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>sumeq2ii</TD>
+  <TD>~ sumeq2d</TD>
+</TR>
+
+<TR>
+  <TD>sum2id</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is. Lightly used in
+  set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>sumfc</TD>
+  <TD>~ sumfct</TD>
+</TR>
+
+<TR>
+  <TD>sumrblem</TD>
+  <TD>~ isumrblem</TD>
+</TR>
+
+<TR>
+  <TD>fsumcvg</TD>
+  <TD>~ fisumcvg</TD>
+</TR>
+
+<TR>
+  <TD>sumrb</TD>
+  <TD>~ isumrb</TD>
+</TR>
+
+<TR>
+  <TD>summo</TD>
+  <TD>~ isummo</TD>
+</TR>
+
+<TR>
+  <TD>zsum</TD>
+  <TD>~ zisum</TD>
+</TR>
+
+<TR>
+  <TD>fsum</TD>
+  <TD>~ fsum3</TD>
+</TR>
+
+<TR>
+  <TD>sumz</TD>
+  <TD>~ isumz</TD>
+</TR>
+
+<TR>
+  <TD>sumss</TD>
+  <TD>~ isumss</TD>
+</TR>
+
+<TR>
+  <TD>sumss2</TD>
+  <TD>~ isumss2</TD>
+</TR>
+
+<TR>
+  <TD>fsumcvg2</TD>
+  <TD>~ fisumcvg2</TD>
+</TR>
+
+<TR>
+  <TD>fsumsers</TD>
+  <TD>~ fisumsers</TD>
+</TR>
+
+<TR>
+  <TD>fsumcvg3</TD>
+  <TD>~ fisumcvg3</TD>
+</TR>
+
+<TR>
+  <TD>fsumser</TD>
+  <TD>~ fsum3ser</TD>
+</TR>
+
+<TR>
+  <TD>fsummsnunz</TD>
+  <TD><I>none</I></TD>
+  <TD>Could be proved if we added a ` Z e. _V ` condition, but
+  unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>isumdivc</TD>
+  <TD>~ isumdivapc</TD>
+  <TD>Changes not equal to apart</TD>
+</TR>
+
+<TR>
+  <TD>sumsplit</TD>
+  <TD>~ sumsplitdc</TD>
+  <TD>Adds decidability conditions</TD>
+</TR>
+
+<TR>
+  <TD>fsumcom2</TD>
+  <TD>~ fisumcom2</TD>
+  <TD>Although it is possible that ` ( ph /\ k e. C ) -> D e. Fin `
+  can be proved from the other hypotheses, the set.mm proof of
+  that uses ssfi .</TD>
+</TR>
+
+<TR>
+  <TD>fsum0diag</TD>
+  <TD>~ fisum0diag</TD>
+  <TD>Adds a ` N e. ZZ ` hypothesis</TD>
+</TR>
+
+<TR>
+  <TD>fsumrev2</TD>
+  <TD>~ fisumrev2</TD>
+  <TD>Adds ` M e. ZZ ` and ` N e. ZZ ` hypotheses</TD>
+</TR>
+
+<TR>
+  <TD>fsum0diag2</TD>
+  <TD>~ fisum0diag2</TD>
+  <TD>Adds a ` N e. ZZ ` hypothesis</TD>
+</TR>
+
+<TR>
+  <TD>fsumdivc</TD>
+  <TD>~ fsumdivapc</TD>
+  <TD>Changes not equal to apart</TD>
+</TR>
+
+<TR>
+  <TD>fsumless</TD>
+  <TD>~ fsumlessfi</TD>
+  <TD>Whether this can be proved without the ` C e. Fin ` condition
+  is unknown but such a proof would be fairly different from the set.mm
+  proof.</TD>
+</TR>
+
+<TR>
+  <TD>seqabs</TD>
+  <TD>~ fsumabs</TD>
+  <TD>Finite sums are more naturally expressed with ` sum_ ` rather
+  than ` seq ` especially in iset.mm.</TD>
+</TR>
+
+<TR>
+  <TD>iserabs</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable but the set.mm proof is via seqabs .</TD>
+</TR>
+
+<TR>
+  <TD>cvgcmp</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently would need an additional condition on the rate of
+  convergence.  The set.mm proof relies on caurcvg2 which does not
+  specify a rate of convergence.</TD>
+</TR>
+
+<TR>
+  <TD>cvgcmpce</TD>
+  <TD><I>none</I></TD>
+  <TD>The proof, and perhaps the statement of the theorem, would
+  need some changes related to the rate of convergence.</TD>
+</TR>
+
+<TR>
+  <TD>abscvgcvg</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on cvgcmpce</TD>
+</TR>
+
+<TR>
+  <TD>climfsum</TD>
+  <TD><I>none</I></TD>
+  <TD>Likely provable, but lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>qshash</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof will not work as-is.</TD>
+</TR>
+
+<TR>
+  <TD>ackbijnn</TD>
+  <TD><I>none</I></TD>
+  <TD>iset.mm does not have ackbij1</TD>
+</TR>
+
+<TR>
+  <TD>incexclem , incexc , incexc2</TD>
+  <TD><I>none</I></TD>
+  <TD>A metamath 100 theorem but otherwise unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>isumless</TD>
+  <TD><I>none</I></TD>
+  <TD>Should be provable with the addition of a decidability
+  condition such as the one found in ~ isumss2 and
+  ~ fisumcvg3 .</TD>
+</TR>
+
+<TR>
+  <TD>isumsup2 , isumsup</TD>
+  <TD><I>none</I></TD>
+  <TD>Having an upper bound on the partial sums would not suffice;
+  a stronger convergence condition would be needed.</TD>
+</TR>
+
+<TR>
+  <TD>isumltss</TD>
+  <TD><I>none</I></TD>
+  <TD>Should be provable with the addition of a decidability
+  condition such as the one found in ~ isumss2 and
+  ~ fisumcvg3 .</TD>
+</TR>
+
+<TR>
+  <TD>climcnds</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof will not work without modifications.</TD>
+</TR>
+
+<TR>
+  <TD>divcnvshft</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses ovex to show that ` A / ( k + B ) `
+  is a set, even when ` k + B ` might be zero.  This could be
+  solved by adding another usage of ~ df-div or proving
+  ` ( 1 / 0 ) = (/) ` but relying on the value of dividing by
+  zero is not something we usually let ourselves do.  Another
+  solution would be to add a ` 0 < ( M + B ) ` hypothesis.</TD>
+</TR>
+
+<TR>
+  <TD>supcvg</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses countable choice and also various supremum
+  theorems proved via excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>infcvgaux1i , infcvgaux2i</TD>
+  <TD><I>none</I></TD>
+  <TD>See supcvg entry</TD>
+</TR>
+
+<TR>
+  <TD>harmonic</TD>
+  <TD><I>none</I></TD>
+  <TD>Should be feasible once we get isumless and climcnds (or similar
+  theorems).  A Metamath 100 theorem but otherwise unused in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>geoserg</TD>
+  <TD>~ geosergap</TD>
+  <TD>Not equal is changed to apart</TD>
+</TR>
+
+<TR>
+  <TD>geoser</TD>
+  <TD>~ geoserap</TD>
+  <TD>Not equal is changed to apart</TD>
+</TR>
+
+<TR>
+  <TD>pwm1geoser</TD>
+  <TD>~ pwm1geoserap1</TD>
+  <TD>Adds a condition that the base is apart from one.  The
+  set.mm proof relies on case elimination on whether the base is
+  one or not equal to one.</TD>
+</TR>
+
+<TR>
+  <TD>geomulcvg</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on cvgcmpce and expmulnbnd and would
+  appear to also require ` A ` to be apart from zero.</TD>
+</TR>
+
+<TR>
+  <TD>df-prod and theorems using it</TD>
+  <TD><I>none</I></TD>
+  <TD>To define this, we will need to tackle all the issues analogous
+  to ~ df-isum plus some more around, for example, not equal to zero
+  versus apart from zero</TD>
+</TR>
+
+<TR>
+  <TD>qnnen</TD>
+  <TD><I>none</I></TD>
+  <TD>Corollary 8.1.23 of [AczelRathjen] and thus presumably provable.
+  The set.mm proof would not work as-is or with small changes, however.</TD>
+</TR>
+
+<TR>
+  <TD>dvdsaddre2b</TD>
+  <TD><I>none</I></TD>
+  <TD>Something along these lines (perhaps with real changed to
+  rational) may be possible</TD>
+</TR>
+
+<TR>
+  <TD>fsumdvds , 3dvds</TD>
+  <TD><I>none</I></TD>
+  <TD>May be possible when summation is well enough developed</TD>
+</TR>
+
+<TR>
+  <TD>sumeven , sumodd , evensumodd , oddsumodd , pwp1fsum , oddpwp1fsum</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably possible when summation is well enough developed</TD>
+</TR>
+
+<TR>
+  <TD>divalglem0 and other ~ divalg lemmas</TD>
+  <TD>~ divalglemnn and other lemmas</TD>
+  <TD>Since the end result ~ divalg is the same, we don't list
+  all the differences in lemmas here.</TD>
+</TR>
+
+<TR>
+  <TD>gcdcllem1 , gcdcllem2 , gcdcllem3</TD>
+  <TD>~ gcdn0cl , ~ gcddvds , ~ dvdslegcd</TD>
+  <TD>These are lemmas which are part of the proof of theorems
+  that iset.mm proves a somewhat different way</TD>
+</TR>
+
+<TR>
+  <TD>seq1st</TD>
+  <TD><I>none</I></TD>
+  <TD>The sequence passed to ` seq ` , at least as handled in
+  theorems such as ~ seqf , must be defined on all integers
+  greater than or equal to ` M ` , not just at ` M ` itself.
+  It may be possible to patch this up, but seq1st is unused in
+  set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>algr0</TD>
+  <TD>~ ialgr0</TD>
+  <TD>Several hypotheses are tweaked or added to reflect differences in how
+  ` seq ` works</TD>
+</TR>
+
+<TR>
+  <TD>algrf</TD>
+  <TD>~ ialgrf</TD>
+  <TD>Several hypotheses are tweaked or added to reflect differences in how
+  ` seq ` works</TD>
+</TR>
+
+<TR>
+  <TD>algrp1</TD>
+  <TD>~ ialgrp1</TD>
+  <TD>Several hypotheses are tweaked or added to reflect differences in how
+  ` seq ` works</TD>
+</TR>
+
+<TR>
+  <TD>alginv</TD>
+  <TD>~ ialginv</TD>
+  <TD>Two hypotheses are tweaked or added to reflect differences in how
+  ` seq ` works</TD>
+</TR>
+
+<TR>
+  <TD>algcvg</TD>
+  <TD>~ ialgcvg</TD>
+  <TD>` seq ` as defined in ~ df-iseq has an additional argument</TD>
+</TR>
+
+<TR>
+  <TD>algcvga</TD>
+  <TD>~ ialgcvga</TD>
+  <TD>Two hypotheses are tweaked or added to reflect differences in how
+  ` seq ` works</TD>
+</TR>
+
+<TR>
+  <TD>algfx</TD>
+  <TD>~ ialgfx</TD>
+  <TD>Two hypotheses are tweaked or added to reflect differences in how
+  ` seq ` works</TD>
+</TR>
+
+<TR>
+  <TD>eucalg</TD>
+  <TD>~ eucialg</TD>
+  <TD>Tweaked for the different ` seq ` syntax</TD>
+</TR>
+
+<TR>
+  <TD>df-lcmf and theorems using it</TD>
+  <TD><I>none</I></TD>
+  <TD>Although this could be defined, most of the theorems would
+  need decidability conditions analogous to ~ zsupcl</TD>
+</TR>
+
+<TR>
+  <TD>absproddvds , absprodnn</TD>
+  <TD><I>none</I></TD>
+  <TD>Needs product to be developed, but once that is done seems
+  like it might be possible.</TD>
+</TR>
+
+<TR>
+  <TD>fissn0dvds , fissn0dvdsn0</TD>
+  <TD><I>none</I></TD>
+  <TD>Possibly could be proved using ~ findcard2 or the like.</TD>
+</TR>
+
+<TR>
+  <TD>coprmprod , coprmproddvds</TD>
+  <TD><I>none</I></TD>
+  <TD>Can investigate once product is better developed.</TD>
+</TR>
+
+<TR>
+  <TD>isprm5</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable, but the set.mm proof relies on excluded
+  middle in multiple places.</TD>
+</TR>
+
+<TR>
+  <TD>isprm7</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isprm5</TD>
+</TR>
+
+<TR>
+  <TD>maxprmfct</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable with suitable adjustments to the
+  condition for the existence of the supremum</TD>
+</TR>
+
+<TR>
+  <TD>ncoprmlnprm</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable but the set.mm proof uses excluded middle</TD>
+</TR>
+
+<TR>
+  <TD>zsqrtelqelz</TD>
+  <TD>~ nn0sqrtelqelz</TD>
+  <TD>We don't yet have much on the square root of a negative number</TD>
+</TR>
+
+<TR>
+  <TD>df-odz and all theorems concerning the order function on the
+  class of integers mod N</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably could be defined, but would require changes to
+  how we show the infimum exists. Lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>eulerth</TD>
+  <TD><I>none</I></TD>
+  <TD>The lemma eulerthlem2 relies on seqf1o</TD>
+</TR>
+
+<TR>
+  <TD>fermltl</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on eulerth</TD>
+</TR>
+
+<TR>
+  <TD>prmdiv</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on eulerth</TD>
+</TR>
+
+<TR>
+  <TD>prmdiveq</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on prmdiv</TD>
+</TR>
+
+<TR>
+  <TD>prmdivdiv</TD>
+  <TD><I>none</I></TD>
+  <TD>Relies on prmdiveq</TD>
+</TR>
+
+<TR>
+  <TD>phisum</TD>
+  <TD><I>none</I></TD>
+  <TD>May be provable once summation is better developed</TD>
+</TR>
+
+</TABLE>
+
+<HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
+COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<OL>
+
+<LI><A NAME="AczelRathjen"></A> [AczelRathjen] Aczel, Peter, and
+Rathjen, Michael, "Constructive Set Theory", 2018,
+<A HREF="http://www1.maths.leeds.ac.uk/~~rathjen/book.pdf"
+>http://www1.maths.leeds.ac.uk/~~rathjen/book.pdf</A></LI>
+
+<LI><A NAME="Apostol"></A> [Apostol] Apostol, Tom M.,
+<I>Calculus,</I> vol. 1, 2nd ed.,
+John Wiley &amp; Sons Inc. (1967) [QA300.A645 1967].</LI>
+
+<LI><A NAME="ApostolNT"></A> [ApostolNT] Apostol, Tom M.,
+<I>Introduction to analytic number theory,</I> Springer-Verlag, New York, Heidelberg, Berlin (1976) [QA241.A6].</LI>
+
+<LI><A NAME="Bauer"></A> [Bauer] Bauer, Andrej, &quot;Five stages of
+accepting constructive mathematics,&quot; <I>Bulletin (New Series) of
+the American Mathematical Society</I>, 54:481-498 (2017),
+DOI: <A HREF="http://dx.doi.org/10.1090/bull/1556">10.1090/bull/1556</A> .</LI>
+
+<LI><A NAME="BauerTaylor"></A> [BauerTaylor] Andrej Bauer and Paul Taylor,
+"The Dedekind Reals in Abstract Stone Duality",
+<I>Mathematical structures in computer science</I>, 19(4):757&#x2013;838, 2009,
+<A HREF="http://www.paultaylor.eu/ASD/dedras.pdf">
+http://www.paultaylor.eu/ASD/dedras.pdf</A>
+</LI>
+
+<LI><A NAME="BellMachover"></A> [BellMachover] Bell, J. L., and M.
+Machover, <I>A Course in Mathematical Logic,</I> North-Holland,
+Amsterdam (1977) [QA9.B3953].</LI>
+
+<LI><A NAME="Bobzien"></A> [Bobzien] Bobzien, Susanne,
+"Stoic Logic",
+<I>The Cambridge Companion to Stoic Philosophy</I>,
+Brad Inwood (ed.), Cambridge University Press (2003-2006),
+<A HREF="https://philpapers.org/rec/BOBSL">
+https://philpapers.org/rec/BOBSL</A>.
+
+<LI><A NAME="BourbakiEns"></A> [BourbakiEns] Bourbaki, Nicolas,
+<I>Th&eacute;orie des ensembles,</I> Springer-Verlag,
+Berlin Heidelberg (2007); available in English (for purchase) at
+<A HREF="http://www.springer.com/us/book/9783540225256">
+http://www.springer.com/us/book/9783540225256</A> (retrieved
+15-Aug-2016). Page references in iset.mm are for the French edition.</LI>
+
+<LI><A NAME="BourbakiTop1"></A> [BourbakiTop1] Bourbaki, Nicolas, <I>Topologie
+g&eacute;n&eacute;rale, Chapitres 1 &agrave; 4,</I> Springer-Verlag,
+Berlin Heidelberg (2007); available in English (for purchase) at
+<A HREF="http://www.springer.com/us/book/9783540642411">
+http://www.springer.com/us/book/9783540642411</A> (retrieved
+15-Aug-2016). Page references in set.mm are for the French edition.</LI>
+
+<LI><A NAME="ChoquetDD"></A> [ChoquetDD] Choquet-Bruhat, Yvonne and Cecile
+DeWitt-Morette, with Margaret Dillard-Bleick, <I>Analysis, Manifolds and
+Physics,</I> Elsevier Science B.V., Amsterdam (1982) [QC20.7.A5C48
+1981].</LI>
+
+<LI><A NAME="Crosilla"></A> [Crosilla] Crosilla, Laura,
+&quot;Set Theory: Constructive and Intuitionistic ZF&quot;, <I>The
+Stanford Encyclopedia of Philosophy</I> (Summer 2015 Edition),
+Edward N. Zalta (ed.), <A
+HREF="https://plato.stanford.edu/archives/sum2015/entries/set-theory-constructive/">
+https://plato.stanford.edu/archives/sum2015/entries/set-theory-constructive/</A>.
+</LI>
+
+<LI><A NAME="Moschovakis"></A> [Moschovakis] Moschovakis, Joan, &quot;Intuitionistic Logic&quot;, <I>The Stanford Encyclopedia of Philosophy (Spring 2015 Edition)</I>, Edward N. Zalta (ed.), <A HREF="https://plato.stanford.edu/archives/spr2015/entries/logic-intuitionistic/">https://plato.stanford.edu/archives/spr2015/entries/logic-intuitionistic/</A>.
+</LI>
+
+<LI><A NAME="Eisenberg"></A> [Eisenberg] Eisenberg, Murray, <I>Axiomatic Theory of
+Sets and Classes,</I> Holt, Rinehart and Winston, Inc., New York (1971)
+[QA248.E36].</LI>
+
+<LI><A NAME="Enderton"></A> [Enderton] Enderton, Herbert B., <I>Elements of Set
+Theory,</I> Academic Press, Inc., San Diego, California (1977)
+[QA248.E5].</LI>
+
+<LI><A NAME="Gleason"></A> [Gleason] Gleason, Andrew M., <I>Fundamentals of
+Abstract Analysis,</I> Jones and Bartlett Publishers, Boston (1991)
+[QA300.G554].</LI>
+
+<LI><A NAME="Geuvers"></A> [Geuvers] Herman Geuvers, Randy Pollack, Freek
+Wiedijk, Jan Zwanenburg, "Skeleton for the Proof development leading to
+the Fundamental Theorem of Algebra", October 2, 2000,
+<A HREF="http://www.cs.ru.nl/~~herman/PUBS/FTA.mathproof.ps.gz"
+>http://www.cs.ru.nl/~~herman/PUBS/FTA.mathproof.ps.gz</A> (accessed
+19 Feb 2020).</LI>
+
+<LI><A NAME="Hamilton"></A> [Hamilton] Hamilton, A. G., <I>Logic for
+Mathematicians,</I> Cambridge University Press, Cambridge, revised
+edition (1988) [QA9.H298 1988].</LI>
+
+<LI><A NAME="Heyting"></A> [Heyting] Heyting, A., <I>Intuitionism: An
+introduction</I>, North-Holland publishing company, Amsterdam, second
+edition (1966).</LI>
+
+<LI><A NAME="Hitchcock"></A> [Hitchcock] Hitchcock, David, <I>The
+peculiarities of Stoic propositional logic</I>, McMaster University;
+available at <A
+HREF="http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf">
+http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf</A>
+(retrieved 3 Jul 2016).</LI>
+
+<LI><A NAME="HoTT"></A> [HoTT] The Univalent Foundations Program,
+<I>Homotopy Type Theory: Univalent Foundations of Mathematics</I>,
+<A HREF="https://homotopytypetheory.org/book"
+>https://homotopytypetheory.org/book</A>, first edition.</LI>
+
+<LI><A NAME="Jech"></A> [Jech] Jech, Thomas, <I>Set Theory,</I>
+Academic Press, San Diego (1978) [QA248.J42].</LI>
+
+<LI><A NAME="KalishMontague"></A> [KalishMontague] Kalish, D. and R.
+Montague, &quot;On Tarski's formalization of predicate logic with
+identity,&quot; <I>Archiv f&uuml;r Mathematische Logik und
+Grundlagenforschung,</I> 7:81-101 (1965) [QA.A673].</LI>
+
+<LI><A NAME="Kreyszig"></A> [Kreyszig] Kreysig, Erwin, <I>Introductory
+Functional Analysis with Applications</I>, John Wiley &amp; Sons, New
+York (1989) [QA320.K74].  </LI>
+
+<LI><A NAME="Kunen"></A> [Kunen] Kunen, Kenneth, <I>Set Theory:  An
+Introduction to Independence Proofs,</I> Elsevier Science B.V.,
+Amsterdam (1980) [QA248.K75].</LI>
+
+<LI><A NAME="KuratowskiMostowski"></A> [KuratowskiMostowski] Kuratowski, K.
+and A. Mostowski, <I>Set Theory: with an Introduction to
+Descriptive Set Theory,</I> 2nd ed., North-Holland,
+Amsterdam (1976) [QA248.K7683 1976].</LI>
+
+<LI><A NAME="Levy"></A> [Levy] Levy, Azriel, <I>Basic Set Theory</I>,
+Dover Publications, Mineola, N.Y. (2002) [QA248.L398 2002]. </LI>
+
+<LI><A NAME="Lopez-Astorga"></A> [Lopez-Astorga] Lopez-Astorga, Miguel,
+"The First Rule of Stoic Logic and its Relationship with the
+Indemonstrables", <I>Revista de Filosof&#xED;a T&#xF3;picos</I>
+(2016); available
+at <A HREF="http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf">
+http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf</A> (retrieved 3 Jul
+2016).</LI>
+
+<LI><A NAME="Margaris"></A> [Margaris] Margaris, Angelo, <I>First Order
+Mathematical Logic,</I> Blaisdell Publishing Company, Waltham,
+Massachusetts (1967) [QA9.M327].</LI>
+
+<LI><A NAME="Megill"></A><A NAME="bibmegill"></A> [Megill] Megill, N.,
+&quot;A Finitely Axiomatized Formalization of Predicate Calculus with
+Equality,&quot; <I>Notre Dame Journal of Formal Logic,</I> 36:435-453
+(1995) [QA.N914]; available at  <A
+HREF="http://projecteuclid.org/euclid.ndjfl/1040149359"
+>http://projecteuclid.org/euclid.ndjfl/1040149359</A> (accessed
+11 Nov 2014); the <A HREF="../downloads/finiteaxiom.pdf">PDF
+preprint</A> has the same content (with corrections) but pages are
+numbered 1-22, and the database references use the numbers printed on the
+page itself, not the PDF page numbers.</LI>
+
+<LI><A NAME="Mendelson"></A> [Mendelson] Mendelson, Elliott, <I>Introduction to
+Mathematical Logic,</I> 2nd ed., D. Van Nostrand (1979) [QA9.M537].</LI>
+
+<LI><A NAME="Monk1"></A> [Monk1] Monk, J. Donald, <I>Introduction to Set
+Theory,</I> McGraw-Hill, Inc. (1969) [QA248.M745].</LI>
+
+<LI><A NAME="Monk2"></A> [Monk2] Monk, J. Donald, &quot;Substitutionless
+Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r Mathematische Logik
+und Grundlagenforschung,</I> 7:103-121 (1965) [QA.A673].</LI>
+
+<LI><A NAME="Pierik"></A> [Pierik], Pierik, Ceel, "Infinite Omniscient Sets in
+Constructive Mathematics", Bachelor thesis Computing Science, Radboud University,
+June 25, 2020,
+<A HREF="https://www.cs.ru.nl/bachelors-theses/2020/Ceel_Pierik___4806182___Infinite_Omniscient_Sets_in_Constructive_Mathematics.pdf"
+>https://www.cs.ru.nl/bachelors-theses/2020/Ceel_Pierik___4806182___Infinite_Omniscient_Sets_in_Constructive_Mathematics.pdf</A></LI>
+
+<LI><A NAME="PradicBrown2022"></A> [PradicBrown2022] Pradic, Pierre, and
+Brown, Chad E. (August 15, 2022), &quot;Cantor-Bernstein implies
+Excluded Middle&quot;,
+<A HREF="https://arxiv.org/abs/1904.09193">https://arxiv.org/abs/1904.09193</A>
+</LI>
+
+<LI><A NAME="Quine"></A> [Quine] Quine, Willard van Orman, <I>Set Theory
+and Its Logic,</I> Harvard University Press, Cambridge, Massachusetts,
+revised edition (1969) [QA248.Q7 1969].</LI>
+
+<LI><A NAME="Sanford"></A> [Sanford] Sanford, David H., <I>If P, then Q:
+Conditionals and the Foundations of Reasoning</I>, 2nd ed., Routledge
+Taylor &amp; Francis Group (2003); ISBN 0-415-28369-8; available at <A
+HREF="https://books.google.com/books?id=h_AUynB6PA8C&amp;pg=PA39#v=onepage&amp;q&amp;f=false">https://books.google.com/books?id=h_AUynB6PA8C&amp;pg=PA39#v=onepage&amp;q&amp;f=false</A>
+(retrieved 3 Jul 2016).</LI>
+
+<LI><A NAME="Schechter"></A> [Schechter] Schechter, Eric, <I>Handbook of
+Analysis and Its Foundations</I>, Academic Press, San Diego (1997)
+[QA300.S339].</LI>
+
+<LI><A NAME="Stoll"></A> [Stoll] Stoll, Robert R., <I>Set Theory and Logic,</I>
+Dover Publications, Inc. (1979) [QA248.S7985 1979].</LI>
+
+<LI><A NAME="Suppes"></A> [Suppes] Suppes, Patrick, <I>Axiomatic Set Theory,</I>
+Dover Publications, Inc. (1972) [QA248.S959].</LI>
+
+<LI><A NAME="TakeutiZaring"></A> [TakeutiZaring] Takeuti, Gaisi, and
+Wilson M. Zaring, <I>Introduction to Axiomatic Set Theory,</I>
+Springer-Verlag, New York, second edition (1982) [QA248.T136 1982].</LI>
+
+<LI><A NAME="Tarski"></A> [Tarski] Tarski, Alfred, &quot;A Simplified
+Formalization of Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r
+Mathematische Logik und Grundlagenforschung,</I> 7:61-79 (1965)
+[QA.A673].</LI>
+
+<LI><A NAME="WhiteheadRussell"></A> [WhiteheadRussell] Whitehead, Alfred
+North, and Bertrand Russell, <I>Principia Mathematica to *56,</I>
+Cambridge University Press, Cambridge, 1962 [QA9.W592 1962].</LI>
+
+</OL>
+
+
+<HR NOSHADE SIZE=1>
+
+<TABLE BORDER=0 WIDTH="100%"><TR>
+
+<TD ALIGN=LEFT VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
+&nbsp;</FONT></TD>
+
+<TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
+ page was last updated on 15-Aug-2015.</FONT></I><BR><FONT
+FACE="ARIAL" SIZE=-2>Your
+ comments are welcome:
+Norman Megill <A HREF="../email.html"><IMG BORDER=0
+SRC="_nmemail.gif"
+ALT="nm at alum dot mit dot edu"
+TITLE="nm at alum dot mit dot edu"
+ WIDTH=90 HEIGHT=13 STYLE="margin-bottom:-3px"></A><BR>
+Copyright terms:
+<A HREF="../copyright.html#pd">Public domain</A></FONT></TD>
+
+<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT FACE="ARIAL" SIZE=-2>
+<A
+HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
+[external]
+</FONT>
+</TD>
+
+</TR></TABLE>
+
+</BODY>
+</HTML>

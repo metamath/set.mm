@@ -1,0 +1,1095 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+
+<!-- improve mobile display -->
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>Metamath Music Page</TITLE>
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+</HEAD>
+
+<!--
+<BODY BGCOLOR="#FFFFFF"  STYLE="padding: 0px 8px; font-family: 'Georgia'">
+-->
+<BODY BGCOLOR="#FFFFFF"  STYLE="padding: 0px 8px">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP><A HREF="../index.html"><IMG SRC="mm.gif"
+      BORDER=0
+      ALT="Metamath Home"
+      TITLE="Metamath Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER VALIGN=TOP><FONT SIZE="+3"
+      COLOR="#006633"><B>Metamath Music Page</B>  </FONT>
+    </TD>
+    <TD NOWRAP ALIGN=RIGHT VALIGN=TOP> &nbsp;
+    </TD>
+  </TR>
+
+  <TR>
+    <TD COLSPAN=3 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+        &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;Metamath Music Page
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+
+<HR NOSHADE SIZE=1>
+
+<TABLE WIDTH="100%" BORDER=0><TR><TD WIDTH="50%">
+
+<B><FONT COLOR="#006633">Contents of this page</FONT></B>
+
+<MENU>
+<LI> <A HREF="#music">Mathematical Proofs Set to Music</A></LI>
+<LI> <A HREF="#sampler">Music Sampler</A></LI>
+<LI> <A HREF="#visual">Music Visualization</A>
+<!--
+<FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>New</FONT> <FONT
+SIZE=-1><I>24-May-2003</I></FONT>
+-->
+</LI>
+<LI> <A HREF="#how">How to Generate this Music</A></LI>
+<LI> <A HREF="#algorithm">The Algorithm</A></LI>
+<LI> <A HREF="#modify">Experimenting With the Algorithm</A>
+
+<!--
+<FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Revised</FONT> <FONT
+SIZE=-1><I>18-May-2004</I></FONT>
+-->
+
+</LI>
+<LI> <A HREF="#sherwood">An Original Arrangement</A>
+    <!-- <I><FONT COLOR="#FF9900">New</FONT> 26-Sep-00</I> -->
+    </LI>
+<LI> <A HREF="#copyright">Copyright Considerations</A></LI>
+</MENU>
+
+</TD>
+
+<!-- <TD WIDTH="10%"></TD> changed 16-May-04 not to wrap "Revised":-->
+<TD WIDTH="5%"></TD>
+
+<TD ALIGN=right>
+
+
+<FONT COLOR="#006633"><I>
+The Metamath Music Page offers some eerie
+sounds that will certainly pass for music in avant-garde circles.  We
+must admit to a certain fascination at hearing the steps of a proof
+rendered as notes that occasionally announce themes, only to abandon
+them.
+</I><BR>
+ &mdash; AK Dewdney (author, <I>The Turing Omnibus</I>)
+</FONT>
+
+
+<P><FONT COLOR="#006633"><I>
+ Metamath Music Page - Proofs you can listen to in MIDI format. Fun
+ </I>and<I> edjemacational!
+</I><BR>
+
+&mdash; Haddon Kime (composer,
+<A
+HREF="http://web.archive.org/web/20110725123937/http://www.haddongivenskime.com/theater/proof/">music
+score</A> for the play
+<I><A HREF="https://en.wikipedia.org/wiki/Proof_(play)">Proof</A></I>)
+</FONT>
+
+
+<P><FONT COLOR="#006633"><I>
+...instead of turning in analysis homework, I'll just bring an electronic
+piano to class and play the proof for my professor.
+</I><BR>
+&mdash; User MarcME222,
+<A HREF="https://web.archive.org/web/20080513193424/http://digg.com/music/Mathematical_Proofs_turned_into_Music">digg.com</A>
+</FONT>
+
+
+<!--
+<FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>New</FONT> <FONT
+SIZE=-1><I>29-May-2006</I></FONT>&nbsp;
+A <A
+HREF="https://web.archive.org/web/20080513193424/http://digg.com/music/Mathematical_Proofs_turned_into_Music">discussion</A>
+about this page on digg.com, 29-May-2006
+-->
+<!-- </A> [retrieved 3-Feb-2017 from archive.org] about this page.</FONT> -->
+
+</TD></TR></TABLE>
+
+<HR NOSHADE SIZE=1> <A NAME="music"></A><B><FONT
+COLOR="#006633">Mathematical Proofs Set to
+Music</FONT></B>&nbsp;&nbsp;&nbsp;
+
+I added this web page just for fun.  While looking at some proofs, it
+
+<A HREF="abstri-fsbi.mid">
+<IMG BORDER=0 SRC="_78abstri.jpg" WIDTH=136 HEIGHT=101
+ALT="Triangle Inequality played on black keys only 1:49"
+TITLE="Triangle Inequality played on black keys only 1:49" ALIGN=RIGHT>
+</A>
+
+occurred to me that their structure resembled musical scores, so as an
+experiment I decided to see what they "sounded" like.  Essentially, the
+musical notes correspond to the depth of the proof tree as the proof is
+constructed by the proof verifier.  A fast higher note is produced for
+each step in the construction of a formula.  A sustained lower note is
+produced when the formula is matched to a previous theorem or earlier
+proof step, to result in a new proof step (which corresponds to a proof
+step displayed on the Metamath Proof Explorer page that shows the
+theorem's proof).
+
+<P>Is it "music"?  I guess that's for you to decide.  It is richly
+structured, with underlying themes that on the one hand seem to repeat
+but on the other hand are interestingly unpredictable, teasing your mind
+as the piece progresses.
+
+<P>For these MIDI files, <I>make sure your media player is set to a
+"piano" sound and not an "electronic organ" sound,</I> otherwise it will
+sound horrible, because the sustained notes need to decay automatically.
+For example, I had to select Yamaha OPL3-SA SoftSynth from
+Devices/Properties in Microsoft Media Player on a Windows 95 computer I
+tried.  More recent computers seem to default to the piano sound.  If
+you are using QuickTime, it has a bug that sometimes causes <I>a burst
+of loud, annoying static</I> at the beginning of a piece; you can work
+around this bug by changing the <A
+HREF="http://web.archive.org/web/20150912035227/http://tones.wolfram.com/tsfaqs/windows/quicktimemidi.html">MIDI
+settings</A> [retrieved 3-Feb-2017 from archive.org].
+
+<P>I set the tempo quite fast, partly to help you decide more quickly whether
+it interests you.  (The tempo can be slowed down by rerunning the <A
+HREF="#how">program</A> that generated these.)  I chose to give the
+selections a "syncopated" character by substituting a repeated note with
+a silent pause, since to me it usually sounded a little better.  The
+frenetic non-syncopated version can be interesting too, with one note
+for every proof step.  Sometimes, syncopation has only a small effect,
+as in the case of the <B>Second Peano Postulate</B> <A
+HREF="peano2.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10
+HEIGHT=15><FONT SIZE=-2>0:16</FONT></A>.  Other times the effect is
+significant; compare the <A HREF="abstri.mid">syncopated<IMG
+SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+SIZE=-2>1:49</FONT></A> and <A HREF="abstri-ns.mid">non-syncopated<IMG
+SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+SIZE=-2>1:49</FONT></A> versions of the <B>Triangle Inequality</B>
+<A NAME="L46-7"></A>
+(and also <A HREF="#modify">another version</A>).
+Another curious piece with a pronounced syncopated effect is the
+<B>Square Root Theorem</B> <A HREF="sqrth.mid"><IMG SRC="_note.gif"
+ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+SIZE=-2>0:41</FONT></A>.
+
+<P>In deeper proofs, a kind of tension sometimes builds up, with
+occasional partial relief but growing overall, until finally many
+subproofs come together.  For example, you may want to sample the
+<B>Axiom of Choice Equivalent</B> <A HREF="ac2.mid"><IMG SRC="_note.gif"
+ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+SIZE=-2>3:51</FONT></A>, where a crescendo slowly builds up starting at
+around 2:20 minutes, reaching a dramatic climax at 3:11 minutes and then
+suddenly cascading down to the main theme.  Another frenzied, climactic
+piece is <B>Zermelo's Well-Ordering Theorem</B> <A HREF="weth.mid"><IMG
+SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+SIZE=-2>0:50</FONT></A>.  The <B>Schr&ouml;der-Bernstein Theorem</B> <A
+HREF="sbth.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10
+HEIGHT=15><FONT SIZE=-2>1:47</FONT></A> (I like this one) changes its
+theme during its course, starting off with a ominous staccato then
+breaking out into a colorful display of notes.
+
+<P>The music generated from these mathematical proofs stands in sharp
+contrast to certain other experimental music based on such mathematics
+as the digits of &pi; (pi).  Unlike a proof's tree structure, which is
+inherently suggestive of a musical score, the digits of &pi; have no
+obvious pattern.  To make it interesting, a human composer will often
+add a non-mathematical creative element such as an underlying beat with
+pre-selected chords and instrumentation.  What one hears, then, might be
+based as much on the originality of the composer as on the essential
+nature of &pi;:  the same algorithm applied to the digits of say
+<I>e</I> (Euler's constant), or even a series of random digits, would
+typically sound about the same after the first few notes.  The music
+here, on the other hand, is a raw and unadorned representation of the
+mathematics itself, involving few human preconceptions beyond a basic
+mapping needed to accommodate the Western tonal scale.
+
+
+<P><HR NOSHADE SIZE=1> <A NAME="sampler"></A><B><FONT
+COLOR="#006633">Music Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P>The theorems below are from (the
+August 2000 version of) the <A HREF="mmset.html#theorems">Theorem
+Sampler</A> on the Metamath Proof Explorer Home Page.  Click on a
+theorem name to see its proof, and click on the musical note to hear it
+set to music.  The music is faithful to the original proofs.  For
+example, the five sustained (lower) notes you will hear in the Law of
+Identity match, in order, the five steps of its <A
+HREF="idALT.html">proof</A>, while the faster notes represent the
+construction of the formulas used in those steps.
+
+<!--
+     In the following list, the .mid is the original name in
+     set.mm.1999-08-01-non-neg-int, and the .html is the name in the
+     current set.mm (as of 3-Feb-2017).  This was done so that the
+     original MIDI files can be reproduced exactly from the old set.mm.
+     Note that abstri was added 2-Oct-99 and is in set.mm.2001-12-16 .
+     The archive file mmmusic.html.2000-08-30 also has the original names.
+-->
+
+<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%">
+<MENU>
+
+<LI> <A HREF="idALT.html">Law of identity</A> <A HREF="id1.mid"><IMG
+SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT SIZE=-2>0:05</FONT></A> </LI>
+
+<LI>
+<A HREF="peirce.html">Peirce's axiom</A>
+<A HREF="peirce.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:03</FONT></A>
+</LI>
+
+<LI>
+<A HREF="prth.html">Praeclarum theorema</A>
+<A HREF="prth.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:06</FONT></A>
+</LI>
+
+<LI>
+<A HREF="pm5.18.html">Proposition *5.18 from Principia Mathematica</A>
+<A HREF="nbbn.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:47</FONT></A>
+</LI>
+
+<LI>
+<A HREF="exintr.html">Existential quantifier introduction</A>
+<A HREF="exintr.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:10</FONT></A>
+</LI>
+
+<LI>
+<A HREF="equid.html"><I>x</I> = <I>x</I></A>
+<A HREF="eqid.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:10</FONT></A>
+</LI>
+
+<LI>
+<A HREF="eupick.html">Existential elimination by uniqueness</A>
+<A HREF="eupick.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:03</FONT></A>
+</LI>
+
+<LI>
+<A HREF="abeq2.html">Basic relationship between class and wff variables</A>
+<A HREF="cleqab.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:10</FONT></A>
+</LI>
+
+<LI>
+<A HREF="isset.html">Two ways of saying &quot;is a set&quot;</A>
+<A HREF="isset.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:06</FONT></A>
+</LI>
+
+<LI>
+<A HREF="axsep.html">Derivation of Separation Axiom</A>
+<A HREF="axsep.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:41</FONT></A>
+</LI>
+
+<LI>
+<A HREF="0ex.html">Derivation of Empty Set Axiom</A>
+<A HREF="zfnull.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:02</FONT></A>
+</LI>
+
+<LI>
+<A HREF="zfpair.html">Derivation of Pairing Axiom</A>
+<A HREF="zfpair.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:30</FONT></A>
+</LI>
+
+<LI>
+<A HREF="dfss4.html">Subset defined in terms of set difference</A>
+<A HREF="ssdifb.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:32</FONT></A>
+</LI>
+
+<LI>
+<A HREF="ru.html">Russell's paradox</A>
+<A HREF="ru.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:20</FONT></A>
+</LI>
+
+<LI>
+<A HREF="coass.html">Associativity of function composition</A>
+<A HREF="coass.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:41</FONT></A>
+</LI>
+
+<LI>
+<A HREF="funfvop.html">Function value in terms of ordered pair</A>
+<A HREF="funfvop.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:06</FONT></A>
+</LI>
+
+<LI>
+<A HREF="canth2.html">Cantor's theorem</A>
+<A HREF="canth2.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:27</FONT></A>
+</LI>
+
+<LI>
+<A HREF="find.html">Mathematical induction</A>
+<A HREF="find.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:14</FONT></A>
+</LI>
+
+<LI>Peano's postulates:
+<A HREF="peano1.html">1</A>
+<A HREF="peano1.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:06</FONT></A>
+<A HREF="peano2.html">2</A>
+<A HREF="peano2.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:16</FONT></A>
+<A HREF="peano3.html">3</A>
+<A HREF="peano3.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:01</FONT></A>
+<A HREF="peano4.html">4</A>
+<A HREF="peano4.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:35</FONT></A>
+<A HREF="peano5.html">5</A>
+<A HREF="peano5.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>3:39</FONT></A>
+</LI>
+
+</MENU>
+</TD>
+<TD VALIGN=TOP>
+<MENU>
+
+<LI>
+<A HREF="omex.html">The existence of omega</A>
+<A HREF="omex.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:20</FONT></A>
+</LI>
+
+<LI>
+<A HREF="tfi.html">Transfinite induction</A>
+<A HREF="tfi.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:19</FONT></A>
+</LI>
+
+<LI>
+<A HREF="tfr2.html">Transfinite recursion</A>
+<A HREF="tfr2.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:18</FONT></A>
+</LI>
+
+<LI>
+<A HREF="sbth.html">Schr&ouml;der-Bernstein Theorem</A>
+<A HREF="sbth.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:47</FONT></A>
+</LI>
+
+<LI>
+<A HREF="php.html">Pigeonhole Principle</A>
+<A HREF="php.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>2:35</FONT></A>
+</LI>
+
+<LI>
+<A HREF="ac2.html">Axiom of Choice equivalent</A>
+<A HREF="ac2.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>3:51</FONT></A>
+</LI>
+
+<LI>
+<A HREF="weth.html">Zermelo's well-ordering theorem</A>
+<A HREF="weth.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:50</FONT></A>
+</LI>
+
+<LI>
+<A HREF="zorn.html">Zorn's Lemma</A>
+<A HREF="zorn.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>5:05</FONT></A>
+</LI>
+
+<LI>The 27 postulates for real and complex numbers:
+<A HREF="axcnex.html">1</A>
+<A HREF="axcnex.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:01</FONT></A>
+<A HREF="axresscn.html">2</A>
+<A HREF="axresscn.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:06</FONT></A>
+<A HREF="1re.html">3</A>
+<A HREF="ax1re.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:02</FONT></A>
+<A HREF="axicn.html">4</A>
+<A HREF="axicn.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:06</FONT></A>
+<A HREF="axaddcl.html">5</A>
+<A HREF="axaddcl.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:51</FONT></A>
+<A HREF="axaddrcl.html">6</A>
+<A HREF="axaddrcl.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:27</FONT></A>
+<A HREF="axmulcl.html">7</A>
+<A HREF="axmulcl.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:34</FONT></A>
+<A HREF="axmulrcl.html">8</A>
+<A HREF="axmulrcl.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:27</FONT></A>
+<A HREF="addcom.html">9</A>
+<A HREF="axaddcom.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:09</FONT></A>
+<A HREF="axmulcom.html">10</A>
+<A HREF="axmulcom.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:34</FONT></A>
+<A HREF="axaddass.html">11</A>
+<A HREF="axaddass.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:39</FONT></A>
+<A HREF="axmulass.html">12</A>
+<A HREF="axmulass.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>6:46</FONT></A>
+<A HREF="axdistr.html">13</A>
+<A HREF="axdistr.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>3:37</FONT></A>
+<A HREF="ax1ne0.html">14</A>
+<A HREF="ax1ne0.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:06</FONT></A>
+<A HREF="addid1.html">15</A>
+<A HREF="ax0id.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:34</FONT></A>
+<A HREF="mulid1.html">16</A>
+<A HREF="ax1id.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:13</FONT></A>
+<A HREF="cnegex.html">17</A>
+<A HREF="axnegex.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>2:16</FONT></A>
+<A HREF="recex.html">18</A>
+<A HREF="axrecex.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>7:45</FONT></A>
+<A HREF="axrnegex.html">19</A>
+<A HREF="axrnegex.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:20</FONT></A>
+<A HREF="axrrecex.html">20</A>
+<A HREF="axrrecex.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:45</FONT></A>
+<A HREF="axi2m1.html">21</A>
+<A HREF="axi2m1.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:14</FONT></A>
+<A HREF="axlttri.html">22</A>
+<A HREF="axlttri.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:04</FONT></A>
+<A HREF="axlttrn.html">23</A>
+<A HREF="axlttrn.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:04</FONT></A>
+<A HREF="axltadd.html">24</A>
+<A HREF="axltadd.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:59</FONT></A>
+<A HREF="axmulgt0.html">25</A>
+<A HREF="axmulgt0.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:17</FONT></A>
+<A HREF="axcnre.html">26</A>
+<A HREF="axcnre.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>3:11</FONT></A>
+<A HREF="axsup.html">27</A>
+<A HREF="axsup.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>4:37</FONT></A>
+</LI>
+
+<LI>
+<A HREF="arch.html">Archimedean property of real numbers</A>
+<A HREF="arch.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:58</FONT></A>
+</LI>
+
+<LI>
+<A HREF="sqrth.html">Square root theorem</A>
+<A HREF="sqrth.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:41</FONT></A>
+</LI>
+
+<LI>
+<A HREF="replim.html">Complex number in terms of real and imaginary parts</A>
+<A HREF="replim.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:02</FONT></A>
+</LI>
+
+<LI>
+<A HREF="remim.html">Complex conjugate</A>
+<A HREF="cjval.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:12</FONT></A>
+</LI>
+
+<LI>
+<!-- abstri was added to set.mm 2-Oct-99 -->
+<A HREF="abstrii.html">Triangle inequality for absolute value</A>
+<A HREF="abstri.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>1:49</FONT></A>
+</LI>
+
+<LI> <A HREF="2p2e4.html">2 + 2 = 4 for complex numbers</A>
+<A HREF="2p2e4.mid"><IMG SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+ SIZE=-2>0:07</FONT></A>
+</LI>
+
+</MENU>
+</TD></TR></TABLE>
+
+<P> Each of the above proofs is actually just the highest level of each
+theorem's proof, where typically several other theorems are pieced
+together to obtain the final result.  In fact the Metamath database has
+over 7,000 other proofs - who knows what they sound like!
+
+<P><HR NOSHADE SIZE=1> <A NAME="visual"></A><B><FONT
+COLOR="#006633">Music Visualization</FONT></B>&nbsp;&nbsp;&nbsp;
+
+It is interesting to look at the visualizations of music structure that
+are produced by Martin Wattenberg's <A
+HREF="http://turbulence.org/Works/song/index.html">The Shape of Song</A>
+[retrieved 3-Feb-2017] Java applet.  At the top we show the
+Schr&ouml;der-Bernstein Theorem <A HREF="sbth.mid"><IMG SRC="_note.gif"
+ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+SIZE=-2>1:47</FONT></A>.  Under it we show the theme song for the TV
+show <I>Futurama</I> and Beethoven's <I>Sonata Pathetique, Adagio</I>.
+
+<P><CENTER><TABLE><TR>
+<TD COLSPAN=2 ALIGN=CENTER>
+<IMG SRC="_music_shape_mm.gif" ALT="Schr&ouml;der-Bernstein Theorem
+   visualization" WIDTH=326 HEIGHT=203></TD>
+<TR>
+<TD><IMG SRC="_music_shape_fu.gif" ALT="Futurama visualization"
+   WIDTH=326 HEIGHT=203></TD>
+<TD><IMG SRC="_music_shape_be.gif" ALT="Sonata Pathetique visualization"
+   WIDTH=326 HEIGHT=203></TD>
+</TR>
+</TABLE></CENTER>
+
+
+<P> What does this mean?  I'm not sure, other than that it says
+something about the complexity of the music structure.  But it looks
+neat. [Images used by permission of Martin Wattenberg.]
+
+<!--
+<P>Music is supposed to be a uniquely human form of artistic expression.
+When I listen to music, I have a subconscious connection with the
+composer, knowing the composer is or was (presumably) capable of feeling
+the emotions the music communicates.  But if music derived from a
+mathematical proof evokes an emotion, where does that emotion come from?
+There was no human composer.  I find that somewhat eerie.
+
+<P>On the other hand, the proofs here were created by humans.  There are
+many ways to prove a mathematical result, subject only to the constraint
+that proof be correct, and usually the mathematician chooses the
+shortest and most elegant way he or she can find.  That process results
+in a proof that embodies some of the beauty of mathematics.  The music
+here can be viewed as a translation of a component of this beauty to an
+audible form.  Wattenberg's software in turn translates it to a visual
+form with a beauty of its own.  Having gone through these
+transformations, this visualization is far removed from the original
+proof yet at the same time it is completely and unambiguously determined
+by nothing more than the original proof.
+-->
+
+<P><HR NOSHADE SIZE=1> <A NAME="how"></A><B><FONT COLOR="#006633">How to
+Generate this Music</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<I>(Note added 28-Nov-2002:</I>&nbsp; The MIDI files here were created in
+Aug. 2000, and shorter proofs have since been discovered for some of the
+theorems.  This means the MIDI files generated from the current database
+may not always be the same as the ones on this page.  Contact me if you
+would like the old set.mm database that reproduces exactly the results
+on this page.)
+
+<P>Here is how to generate these melodies with the Metamath program.
+There are currently over 19,000 proofs in the Metamath database
+<TT>set.mm</TT>, each with a different melody.
+
+<P><B>For Windows</B>:<BR>
+
+<I>Step 1.</I> Extract the file <TT>t2mf.exe</TT> (a program
+that converts a text file to a MIDI file) from <TT>mf2t.zip</TT>, which
+you can download from <A
+HREF="http://www.hitsquad.com/smm/programs/mf2t/download.shtml">
+http://www.hitsquad.com/smm/programs/mf2t/download.shtml</A> [retrieved
+3-Feb-2017].  (You can also download and unzip <A
+HREF="../downloads/mf2t.zip">mf2t.zip</A>.  The t2mf.exe file is located
+in the folder mf2t\mf2t-original\mf2t\.)
+
+<P><I>Step 2.</I> Extract the files <TT>metamath.exe</TT> (the Metamath
+program) and <TT>set.mm</TT> (the Metamath set theory database) from
+<TT>metamath.zip</TT>, which is the <A
+HREF="../index.html#mmprog">Metamath Program</A> download.
+
+<P><I>Step 3.</I> Put the three files
+<TT>metamath.exe</TT>, <TT>set.mm</TT> and <TT>t2mf.exe</TT> into a
+new directory (folder).
+
+<P><I>Step 4.</I> Browse through the <A HREF="mmset.html">Metamath
+Proof Explorer</A> proof pages to find a proof you want to listen to.
+For this example, we'll suppose you want to listen to the
+Schr&ouml;der-Bernstein
+Theorem, whose proof page is <A HREF="sbth.html">sbth.html</A>.
+The name "sbth" is the name of the theorem that you will give to
+the program.
+
+<P><I>Step 5.</I> Let's say you called your new directory C:\metamidi in
+Step 3. To create the MIDI file for theorem <TT>sbth</TT>, open an
+MS-DOS or Command Prompt window (Start -> Programs -> Accessories ->
+Command Prompt, or Start -> Run -> command, or Start -> Run -> cmd) and
+type:
+
+<PRE>
+  C:\WINDOWS>cd \metamidi
+  C:\metamidi>metamath set.mm
+  MM> midi sbth /parameter "fsh"
+  Creating MIDI source file "sbth.txt"... length = 107 sec
+  MM> exit
+  C:\metamidi>t2mf sbth.txt sbth.mid
+</PRE>
+
+Now you can play the MIDI for the <B>Schr&ouml;der-Bernstein
+Theorem</B> <A HREF="sbth.mid"><IMG SRC="_note.gif" ALT="MIDI file"
+BORDER=0 WIDTH=10 HEIGHT=15><FONT SIZE=-2>1:47</FONT></A> by clicking
+on <TT>sbth.mid</TT> in the Windows Explorer.
+
+<!--
+<P><FONT SIZE=-1>Tip:  you can abbreviate "<TT>midi sbth /parameter
+"fsh"</TT>" by "<TT>midi sbth/p fsh</TT>"</FONT>.
+-->
+
+<P>The parameter argument is specified by a combination of the following
+letters, with no spaces separating them:
+<UL>
+
+<LI> <TT>f</TT> = make the tempo fast (default is slow).
+
+<LI> <TT>m</TT> = make the tempo medium (default is slow).
+Both "<TT>f</TT>" and "<TT>m</TT>" should not be specified simultaneously.
+
+<LI><TT>s</TT> = syncopate the melody by silencing repeated notes, using
+a method selected by whether the "<TT>h</TT>" parameter below is also
+present (default is no syncopation).
+
+<LI><TT>h</TT> = allow syncopation to hesitate i.e. all notes in a
+sequence of repeated notes are silenced except the first (default is no
+hesitation, which means that every other note in a repeated sequence is
+silenced - this makes it sound slightly more rhythmic).  The "<TT>h</TT>"
+parameter is meaningful only if the "<TT>s</TT>" parameter above is also
+present.
+
+<LI><TT>w</TT> = use only the white keys on the piano keyboard (default
+is potentially to use all keys).
+
+<LI><TT>b</TT> = use only the black keys on the piano keyboard (default
+is all keys).  Both "<TT>w</TT>" and "<TT>b</TT>" should not be specified
+simultaneously.
+
+<LI><TT>i</TT> = use an increment of one keyboard note per proof
+indentation level.  The default is to use an automatic increment of up
+to four notes per level based on the dynamic range of the whole song.
+(An increment of "one keyboard note" means adjacent keys by default,
+successive black keys if "<TT>b</TT>" was selected, and successive white
+keys if "<TT>w</TT>" was selected.)
+
+</UL> If you just type "<TT>midi sbth</TT>" and omit the parameter list,
+the defaults will be used.  I used "<TT>midi sbth /parameter "fsh"</TT>"
+for the selections on this page.
+
+<P>You can see what theorems are available by typing "<TT>show
+labels</TT>".  In general you can use "<TT>help</TT>" to guide you,
+including "<TT>help midi</TT>".
+
+<P><FONT SIZE=-1>Tip:The "<TT>midi</TT>" command in Metamath will not
+destroy existing files, but will rename an existing one with ~1 appended
+(for example, an older <TT>sbth.txt</TT> would be renamed
+<TT>sbth.txt~1</TT>), an existing ~1 to ~2, etc. up to ~9.  (An existing
+~9 is deleted.)  This makes it safer to use but also will clutter up your
+directory, so you may want to clean them out occasionally.</FONT>
+
+<!--
+<P>To generate the MIDI source files for all theorems in the database,
+type "<TT>midi * /parameter "fsh"</TT>".  (Warning:  there are over
+5,000, so make sure you have enough disk space.)  To convert all of
+these to MIDI, you will have to run <TT>t2mf.exe</TT> on each of them,
+so if you are clever you will create a batch file to do this rather than
+typing them one at a time.  Hint:  before running "<TT>midi */p
+fsh</TT>", type "<TT>open log midi.log</TT>" in Metamath.  This will log
+everything you see on the Metamath screen.  You can transform it into a
+batch file using text-manipulation tools you may have or, inside
+Metamath, there is a text processing utility you get by typing
+<TT>tools</TT> (then <TT>help</TT> for instructions) that can make
+deletions, additions, substitutions, etc. on each line in a file.
+-->
+
+<P><FONT SIZE=-1>Tip:  There is a problem with <TT>t2mf.exe</TT>:  it
+can only handle Microsoft's 8.3 file format (8-character file name,
+period, and 3-character extension).  It will complain if you ask it to
+convert <TT>pm2.11.txt</TT> because a file name can't have 2 periods, so
+you have to use the "real" Microsoft file name such as
+<TT>PM211~1.TXT</TT> which you can see with the MS-DOS <TT>DIR</TT>
+command (or <TT>DIR/X</TT> in the Windows XP Command Prompt).
+Alternately you could rename the file to, say, <TT>pm2_11.txt</TT>
+before running <TT>t2mf.exe</TT>.  I am not the author of
+<TT>t2mf.exe</TT> and unfortunately have no other solution at this
+point.</FONT>
+
+<A NAME="howmac"></A> <P><B>MacOSX:</B><BR>  In 2006, Luca Ciciriello
+modified the program to run on MacOSX.  Download and unzip <A
+HREF="../downloads/mf2t.zip">mf2t.zip</A>.  The files are located
+in mf2t/mf2t-Mac/.  I have not tested it personally.
+
+
+<A NAME="howunix"></A>
+<P><B>For Unix/Linux:</B><BR>
+
+The t2mf program was written in 1991, before C was standardized by ANSI,
+and it will not compile on modern compilers.  However, if you wish to
+attempt to convert it to modern C, download and unzip <A
+HREF="../downloads/mf2t.zip">mf2t.zip</A>.  The source files are located
+in mf2t/mf2t-original/mf2tsrc/, which includes the sources for t2mf.  You
+may also wish to consult the sources for Luca Ciciriello's Mac upgrade,
+located in
+mf2t/mf2t-Mac/Midi_MacOSX_Xcode/Midi_MacOSX_Xcode/midisrc/t2mf/.  If you
+are successful, let me know and I will add it to the mf2t.zip download.
+Note that the authors Tim Thompson (original author) and M. Czeiszperger
+agreed to place their code in the public domain, but I was unable to
+contact Piet van Oostrum who made some additional modifications to the
+code.
+
+<!--
+<BLOCKQUOTE>
+<FONT SIZE=-1><B>Note added 30-Dec-2003:</B> The source files were
+apparently removed from the above download, and only the Windows
+binaries remain.  I located a copy of the source files at <A
+HREF="ftp://ftp.cs.ruu.nl/pub/MIDI/PROGRAMS/mf2tsrc.zip">
+ftp://ftp.cs.ruu.nl/pub/MIDI/PROGRAMS/mf2tsrc.zip</A> [external] but it
+is unclear if they will compile on modern C compilers.  If someone is
+successful at doing this, let me know and I will put the instructions
+here.  Otherwise, you may have to borrow a Windows machine to run
+<TT>t2mf.exe</TT>.</FONT>
+</BLOCKQUOTE>
+
+<BLOCKQUOTE>
+<FONT SIZE=-1><B>Update added 9-May-2006:</B>
+Luca Ciciriello has upgraded the t2mf program, which is a C
+program used to create the MIDI files on the Metamath Music Page, so
+that it works on MacOS X. This is a nice accomplishment, since the
+original program was written before C was standardized by ANSI and will
+not compile on modern compilers.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Unfortunately, the original program source has no copyright terms.
+The main author, Tim Thompson, has kindly agreed to release his code to
+public domain, but two other authors have also contributed to the code,
+and so far I have been unable to contact them for copyright clearance.
+Therefore I cannot offer the MacOS X version for public download on this
+site until this is resolved. <I>Update 10-May-2006: Another author,
+M. Czeiszperger, has released his contribution to public domain.</I><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+If you are interested in Luca's modified source code,
+please <A HREF="../email.html">contact me</A> directly until the
+copyright issues are resolved.
+</FONT>
+</BLOCKQUOTE>
+-->
+
+
+<P><B>For Unix/Linux and MacOSX:</B><BR>
+
+
+Assuming you have successfully compiled t2mf,
+next download the file
+<A HREF="../downloads/metamath.tar.gz"
+>metamath.tar.gz</A>.
+Type:
+<PRE>
+  $ tar -xzf metamath.tar.gz
+</PRE>
+
+<P>This will create a directory called "metamath".  To compile the
+program with gcc, type
+<PRE>
+  $ cd metamath
+  $ gcc m*.c -o metamath
+</PRE>
+Now you can run the Metamath program, then <TT>t2mf</TT>, to
+create the MIDI file:
+<PRE>
+  $ ./metamath
+  MM> read "set.mm"
+  MM> midi sbth /parameter "fsh"
+  Creating MIDI source file "sbth.txt"... length = 107 sec
+  MM> exit
+  $ t2mf sbth.txt sbth.mid
+</PRE>
+
+<P>See the notes above for Windows for information on the parameters.
+
+<P><HR NOSHADE SIZE=1>
+
+<A NAME="algorithm"></A><B><FONT COLOR="#006633">The
+Algorithm</FONT></B>&nbsp;&nbsp;&nbsp;
+
+
+I'll use as an example the simple theorem <TT>idALT</TT> which is the <A
+HREF="idALT.html">Law of Identity</A> <A HREF="id1.mid"><IMG
+SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+SIZE=-2>0:05</FONT></A>.  The database file <TT>set.mm</TT> stores the
+proof in a compressed format to save space, so first we must store it
+internally in uncompressed format, otherwise when we view the proof
+we'll see a more compact version with indirect references to repeated
+steps.  (The "<TT>midi</TT>" command does the uncompressing
+automatically, but for "<TT>show proof</TT>" to show the format shown
+below, we must perform this step.)  In the Metamath program, we type:
+
+<PRE>
+  MM> save proof idALT / normal
+</PRE>
+
+Then we type
+
+<PRE>
+  MM> show proof idALT / all
+</PRE>
+
+This will show the microsteps that construct wffs, as well as regular proof
+steps, in the form of an indented proof tree.  The notation for
+proofs is described in the <A
+HREF="../downloads/metamath.pdf">Metamath book (1.3Mb)</A>
+if you are interested. You'll see:
+
+<PRE>
+   1     wph=wph   $f wff ph
+   2       wph=wph   $f wff ph
+   3       wps=wph   $f wff ph
+   4     wps=wi    $a wff ( ph -> ph )
+   5   wph=wi    $a wff ( ph -> ( ph -> ph ) )
+   6     wph=wph   $f wff ph
+   7     wps=wph   $f wff ph
+   8   wps=wi    $a wff ( ph -> ph )
+   9     wph=wph   $f wff ph
+  10     wps=wph   $f wff ph
+  11   min=ax-1  $a |- ( ph -> ( ph -> ph ) )
+  12       wph=wph   $f wff ph
+  13           wph=wph   $f wff ph
+  14           wps=wph   $f wff ph
+  15         wph=wi    $a wff ( ph -> ph )
+  16         wps=wph   $f wff ph
+  17       wps=wi    $a wff ( ( ph -> ph ) -> ph )
+  18     wph=wi    $a wff ( ph -> ( ( ph -> ph ) -> ph ) )
+  19         wph=wph   $f wff ph
+  20           wph=wph   $f wff ph
+  21           wps=wph   $f wff ph
+  ...
+</PRE>
+
+<P>Reading down, you can see the indentation levels (each
+level indents 2 more spaces) are
+successively
+<BR>&nbsp;&nbsp;&nbsp; 2,3,3,2,1,2,2,1,2,2,1,3,...<BR>
+
+<P>We want to fit the proof within a desirable maximum dynamic range of
+note frequencies, which I defined as 27 &lt; <I>n</I> &lt; 104, where
+<I>n</I> is the midi note number.  We obtain an the largest possible
+integer "scale factor", with a maximum of 4, that allows the music to
+fit in the dynamic range.  For the <TT>idALT</TT> proof, the scale factor
+will be 4.
+
+<P>We also compute a "baseline" note which allows the proof to fit in the
+dynamic range.  For the <TT>idALT</TT> proof, the baseline is 61.
+
+<P>We multiply the indentation level by the scale factor 4 and add it
+to the baseline.  In addition, whenever we encounter a "logical" (real)
+proof step (as opposed to a formula-building proof step), identified
+by a <TT>|-</TT> in the proof listing, we shift the note down by 12
+(one octave) and sustain it rather than turning it on and off.
+
+<P>So in this example the midi note numbers will be
+be
+<BR>&nbsp;&nbsp;&nbsp; 69,73,73,69,65,69,73,65,69,69,53,73...<BR>
+where 53 = 65-12 is the shifted note of step 11, which you can see
+has a <TT>|-</TT> in it in the proof listing.
+
+<P>Finally, if syncopation is selected, which was the case for all the
+selections on this page, repeated notes are replaced with silence.  (The
+sustained notes are not syncopated.)  So what we hear through step 12
+above is<BR>
+
+&nbsp;&nbsp;&nbsp;69,73,-,69,65,69,-,65,69,-,53,73,...<BR>
+
+where the 53 is the first sustained note.
+
+<P>Now, listen carefully to the <A
+HREF="idALT.html">Law of Identity</A> <A HREF="id1.mid"><IMG
+SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+SIZE=-2>0:05</FONT></A>, and you
+will hear that the first 12 notes and pauses match exactly the above
+sequence.
+
+<P><HR NOSHADE SIZE=1>
+
+<A NAME="modify"></A><B><FONT COLOR="#006633">Experimenting With
+the Algorithm</FONT></B>&nbsp;&nbsp;&nbsp;
+
+If you know how to program in C, you can experiment with the algorithm.
+For example, you might want to try an alternative to the equidistant note
+algorithm, which not everyone likes:
+
+<BLOCKQUOTE>
+    <I>"Kind of amusing in that the entire output of these pages proves a
+    theorem of its own: that not all mathematicians make good music (take
+    THAT, Douglas Hofstadter!). Mis-step one was to program using only
+    equal distances between pitches (MIDI note numbers), resulting in
+    endless whole-tone melodies."</I>  &mdash;musician
+<A HREF="http://www.bayimproviser.com/artistdetail.asp?artist_id=137">Tom
+Djll</A> [external]
+    <!-- 16-May-04
+http://eartha.mills.edu:8000/guest/archives/ba-newmus/log0403/msg00136.html
+        Subject: [BA-NEWMUS:12791] Re: Metamath Music Page
+        From: Tom Djll <td@djll.com>
+        Date: Tue, 30 Mar 2004 21:10:31 -0800
+     -->
+</BLOCKQUOTE>
+
+(By the way, the "b", "w", and "i" parameters that are already available
+may appeal to more conventional musical tastes.  An example is the
+<B>Triangle Inequality</B>
+<A HREF="abstri-fsbi.mid"><IMG
+SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+SIZE=-2>1:49</FONT></A> played with the black keys, using the parameter
+string "fsbi".  To me it lacks some of the vaguely disturbing eeriness
+of the other versions, and there is a certain gentle pleasantness to it.
+What do you think?)
+
+<P>To modify the algorithm, download the <A
+HREF="../index.html#mmprog">Metamath program</A>, which includes the
+source code.  In the file <TT>mmcmds.c</TT>, at the very end you will
+find the function <TT>outputMidi()</TT> which generates the MIDI file.
+I put in a lot of comments, so hopefully you won't find it too hard to
+follow what it does.  I recommend confining any experiments to this
+function, which gives you access to everything you should need.  Let me
+know if there is something you don't understand.
+
+<P><FONT SIZE=-1>Tip:  In Metamath program download, the C programs are
+stored in Unix ASCII format with no carriage-return at the end of lines.
+If you are using Windows, see the note on text files at the end of the <A
+HREF="../index.html#dlhelp">download help</A>
+section.</FONT>
+
+<P>The user parameter from the "<TT>/parameter</TT>" argument in the
+Metamath "<TT>midi</TT>" command is just an arbitrary string that is not
+syntax-checked, and you can use it to put in your own parameters to
+experiment with.
+
+<P>To compile the program, you need an ANSI C compiler such as gcc,
+which is built into Linux and available free for Windows as part of <A
+HREF="http://cygwin.com/">Cygwin</A> [external].  Assuming you have only
+the Metamath source files in your directory, you type in the
+Cygwin or Linux shell
+<PRE>
+  gcc m*.c -o metamath.exe
+</PRE>
+where you omit the <TT>.exe</TT> in Unix/Linux.
+
+<P><HR NOSHADE SIZE=1>
+
+<A NAME="sherwood"></A><B><FONT COLOR="#006633">An Original
+Arrangement</FONT></B>&nbsp;&nbsp;&nbsp;
+
+George Sherwood
+
+<!-- (<A HREF="http://home.att.net/~darkblues/">DarkBlues</A>) -->
+
+(<A
+HREF="https://web.archive.org/web/20011205184456/http://home.att.net/~darkblues/">old
+home page</A>) has combined a few of the proofs on this page into an
+original arrangement called <A HREF="abstricombo.mid">Abstricombo<IMG
+SRC="_note.gif" ALT="MIDI file" BORDER=0 WIDTH=10 HEIGHT=15><FONT
+SIZE=-2>5:13</FONT></A> (Copyright &copy; 2000 DarkBlues).  He writes:
+
+<BLOCKQUOTE><I>
+"Natural music has fascinated me for some time.... It is a strange music
+that seems to speak to the soul in a way that manufactured music
+cannot."
+<!--
+Date: Mon, 18 Sep 2000 19:20:10 -0700
+From: DarkBlues <darkblues@att.net>
+Norm, natural music has fascinated me for some time. What can
+be more natural than equations, which are the basis of
+everything from biology to the atomic bomb. Others are much
+more informed on music theory than I am, but I'm not
+interested in making it more "musical" anyway. It would be
+interesting to see what E=mc2 would come out to, or the
+mathematical explosion of an atomic bomb. All I did was use
+you made MIDI files and arrange them one on top of the other
+on different staffs. This gave it a more harmonic effect while
+still keeping it natural. It only took a few hours. I don't
+have a page up up yet that you can link to for this one, but
+hope to soon. In the mean time, you can, of course, post it at
+your own site and we can link to each other once I get the
+page up. Glad you enjoyed it. It is some strange music that
+seems to speak to the soul in a way that manufactured music
+cannot.
+-->
+</I></BLOCKQUOTE>
+
+<P><HR NOSHADE SIZE=1>
+
+<A NAME="copyright"></A><B><FONT COLOR="#006633">Copyright
+Considerations</FONT></B>&nbsp;&nbsp;&nbsp;
+
+All MIDI files linked to from this page are placed in the public domain
+(meaning they may be used for any purpose whatsoever, with or without
+acknowledgement, commercial or non-commercial, including use in a
+separate or derivative copyrighted work), with the following exception:
+
+<BLOCKQUOTE>
+The "Abstricombo" arrangement is copyright &copy; 2000 by DarkBlues.
+</BLOCKQUOTE>
+
+<P>The "78 RPM record label" image may be copyright and/or trademarked
+by says-it.com.  The "Shape of Song" images are copyright by Martin
+Wattenberg.  Any short attributed quotations may be copyright by their
+authors.  All other text and images on this page are placed in the
+public domain.
+
+<P>See also <A HREF="../copyright.html">Metamath Web Site - Copyright
+Terms</A>.
+
+
+<HR NOSHADE SIZE=1>
+
+<TABLE BORDER=0 WIDTH="100%"><TR>
+
+<TD ALIGN=LEFT VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
+&nbsp;</FONT></TD>
+
+<TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
+ page was last updated on 3-Feb-2017.</FONT></I><BR><FONT
+FACE="ARIAL" SIZE=-2>Your
+ comments are welcome:
+Norman Megill <A HREF="../email.html"><IMG BORDER=0
+SRC="_nmemail.gif" ALIGN=TOP
+ALT="nm at alum dot mit dot edu"
+TITLE="nm at alum dot mit dot edu"
+ WIDTH=90 HEIGHT=13 STYLE="margin-bottom:-3px"></A><BR>
+<A HREF="http://metamath.org/">metamath.org mirrors</A></FONT></TD>
+
+<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT FACE="ARIAL" SIZE=-2>
+<A
+HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
+[external]
+</FONT>
+</TD>
+
+</TR></TABLE>
+
+</BODY></HTML>

@@ -1,0 +1,526 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+
+<!-- improve mobile display -->
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>Home Page - New Foundations Explorer</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+
+<STYLE TYPE="text/css">
+<!--
+/* Math symbol image will be shifted down 4 pixels to align with normal
+  text for compatibility with various browsers.  The old ALIGN=TOP for
+  math symbol images did not align in all browsers and should be deleted.
+  All other images must override this shift with STYLE="margin-bottom:0px".
+  (2-Oct-2015 nm) */
+img { margin-bottom: -4px }
+-->
+</STYLE>
+
+</HEAD>
+<!-- <BODY BGCOLOR="#EEFFFA"> -->
+<BODY BGCOLOR="#FFFFFF" STYLE="padding: 0px 8px">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP><A HREF="../index.html"><IMG SRC="nf.gif"
+      BORDER=0
+      ALT="Metamath Home"
+      TITLE="Metamath Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER VALIGN=TOP><FONT SIZE="+3"
+      COLOR="#006633"><B>New Foundations Explorer Home Page</B></FONT>
+    </TD>
+
+    <TD NOWRAP ALIGN=RIGHT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif> <A HREF="wn.html">First &gt;</A><BR><A
+      HREF="elopprim.html">Last &gt;</A></FONT>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD COLSPAN=3 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+        &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;NFE Home&nbsp; &gt;
+      &nbsp;<A HREF="mmtheorems.html">Th. List</A>
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+
+<HR NOSHADE SIZE=1>
+
+<CENTER>
+<B><FONT COLOR="#006633">Created by Scott Fenton</FONT></B>
+</CENTER>
+
+<HR NOSHADE SIZE=1>
+<B><FONT COLOR="#006633">New Foundations Proof Explorer</FONT></B>
+
+<TABLE>
+<TR><TD ROWSPAN=2>
+
+<I>New Foundations</I>
+(<A HREF="http://en.wikipedia.org/wiki/New_Foundations">Wikipedia</A>
+[external], <A HREF="http://plato.stanford.edu/entries/quine-nf/">
+Stanford Encyclopedia of Philosophy</A> [external]) is an alternative set
+theory to the Zermelo-Fraenkel set theory presented in the regular Metamath
+Proof Explorer.
+Unlike the Zermelo-Fraenkel system with the Axiom of Choice
+(known as ZFC), New Foundations is a direct derivative of
+the set theory originally presented in <I>Principia Mathematica</I>.
+</TD></TR></TABLE>
+
+<HR NOSHADE SIZE=1>
+
+
+
+<TABLE  WIDTH="100%"><TR>
+
+<TD VALIGN=top>
+<B><FONT COLOR="#006633">Contents of this page</FONT></B>
+<MENU>
+  <LI> <A HREF="#strat">Stratification</A></LI>
+  <LI> <A HREF="#axioms">The axioms</A></LI>
+  <LI> <A HREF="#theorems">Some theorems</A></LI>
+  <LI> <A HREF="#bib">Bibliography</A></LI>
+</MENU></TD>
+
+<TD VALIGN=top>
+<B><FONT COLOR="#006633">Related pages</FONT></B>
+<MENU>
+<LI> <A HREF="mmtheorems.html">Table of Contents and Theorem List</A></LI>
+<LI> <A HREF="mmbiblio.html">Bibliographic Cross-Reference</A></LI>
+<LI> <A HREF="mmdefinitions.html">Definition List</A></LI>
+<LI> <A HREF="mmascii.html">ASCII Equivalents for Text-Only Browsers</A></LI>
+<LI> <A HREF="../metamath/nf.mm">Metamath database nf.mm (ASCII file)</A></LI>
+</MENU>
+
+<B><FONT COLOR="#006633">External links</FONT></B>
+<MENU>
+<LI> <A HREF="https://github.com/sctfn/metamath-nf/">GitHub repository</A></LI>
+</MENU>
+
+</TD>
+</TR></TABLE>
+
+
+<HR NOSHADE SIZE=1><A NAME="strat"></A><B><FONT COLOR="#006633">
+Stratification</FONT></B>
+
+<p>
+In <I>Principia Mathematica</I>, Russell and Whitehead used a typing system
+to avoid the paradoxes of naive set theory,
+rather than restrict the size of sets (as Zermelo-Fraenkel theory does).
+This typing system was
+eventually refined by Russell down to Typed Set Theory (TST).
+In TST, unlimited comprehension is allowed
+(approximately,
+A&nbsp;` e. `&nbsp;` _V ` is a theorem).
+TST avoids the standard paradoxes by being a multi-sorted system.
+That is, there are variables of type 0, 1, 2,... The WFFs are
+restricted so that you must say
+x[n] = y[n] and x[n] ` e. ` y[n+1], where n
+is a variable type.
+This means, among other things, that
+x&nbsp;` e. `&nbsp;x is not a well-formed formula,
+so we can't even sensibly speak of the Russell class.
+Thus TST counters <A HREF="ru.html">Russell's Paradox</A>.
+<p>
+Now, consider introducing virtual classes into this theory. You need
+to say things like V[n] = { x[n] | x[n] = x[n] } for each type n.
+This leads to a "hall of mirrors" type situation: each named object is
+duplicated for each type.
+<p>
+Quine noticed this and proposed collapsing
+the whole theory into a one-sorted set theory, where the comprehension
+axiom is restricted to formulas where you could theoretically introduce
+subscripts to make the formula a WFF of TST.
+Quine described this approach in a paper titled
+&quot;New Foundations for Mathematical Logic,&quot;
+so this approach is now called &quot;New Foundations&quot; (NF)
+<A HREF="#Quine2">[Quine2]</A>.
+For more details, see the
+<A HREF="http://en.wikipedia.org/wiki/New_Foundations">Wikipedia
+article on NF</A>.
+
+
+
+<HR NOSHADE SIZE=1><A NAME="axioms"></A><B><FONT COLOR="#006633">
+The axioms</FONT></B>
+
+<p>
+The axioms begin with traditional axioms for
+classical first order logic with equality.
+See the regular
+<a href="/mpeuni/mmset.html">Metamath Proof Explorer</a>
+for discussions about these
+axioms and some of their implications.
+
+<p>
+The key axioms specific to NF are
+<a href="ax-ext.html">extensionality</a>
+(two sets are identical if they contain the same elements) and
+a comprehension schema.
+Extensionality is formally defined as:
+
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Extensionality">
+<CAPTION><B>Extensionality</B></CAPTION>
+<TR><TH>Name</TH><TH>Ref</TH><TH>Expression</TH></TR>
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-ext.html">Axiom of Extensionality</A></TD>
+<TD><FONT COLOR="#006633"> ~ ax-ext </FONT></TD>
+<TD>` |- ( A. z ( z e. x <-> z e. y ) -> x = y ) ` </TD></TR>
+</TABLE>
+</CENTER>
+
+<p>
+The comprehension schema is stated using the concept of stratified formula;
+the approach is the Stratification Axiom from [Quine2].
+In short,
+a well-formed formula using only propositional symbols, predicate
+symbols, and ` e. ` is "stratified" iff you can make a (metalogical)
+mapping from the variables to the natural numbers such that any formulas
+of the form x&nbsp;=&nbsp;y have the same number,
+and any formulas of the form
+x&nbsp;` e. `&nbsp;y have
+x as one less than y.
+Quine's stratification axiom states that there is a
+set corresponding to any stratified formula.
+We use Hailperin's axioms and prove existence of stratified sets using
+Hailperin's algorithm.
+Thus the stratification axiom of [Quine2] is
+implemented in this formalization using the axioms P1 through P9 from [Hailperin] and
+the <a href="ax-sn.html">Axiom of Singleton ax-sn</a>:
+
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="List of New Foundations Stratification Axioms">
+<CAPTION><B>New Foundations Stratification Axioms</B></CAPTION><TR
+ALIGN=LEFT><TD><B>Name</B></TD><TD><B>
+Ref</B></TD><TD><B>Expression (see link for any distinct variable requirements)
+</B></TD></TR>
+
+<TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
+<TD><A HREF="ax-nin.html">Axiom of Anti-Intersection (P1)</A></TD>
+<TD> ~ ax-nin </TD>
+<TD>` |- E. z A. w ( w e. z <-> ( w e. x -/\ w e. y ) ) ` </TD></TR>
+
+<TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
+<TD><A HREF="ax-si.html">Axiom of Singleton Image (P2)</A></TD>
+<TD> ~ ax-si </TD>
+<TD>` |- E. y A. z A. w ( << { z } , { w } >> e. y <-> << z , w >> e. x ) ` </TD></TR>
+
+<TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
+<TD><A HREF="ax-sn.html">Axiom of Singleton (not directly stated in Hailperin)</A></TD>
+<TD> ~ ax-sn </TD>
+<TD>` |- E. y A. z ( z e. y <-> z = x ) ` </TD></TR>
+
+<TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
+<TD><A HREF="ax-ins2.html">Axiom of Insertion Two (P3)</A></TD>
+<TD> ~ ax-ins2 </TD>
+<TD>` |- E. y A. z A. w A. t ( << { { z } } , << w , t >> >> e. y <-> << z , t >> `
+` e. x ) ` </TD></TR>
+
+<TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
+<TD><A HREF="ax-ins3.html">Axiom of Insertion Three (P4)</A></TD>
+<TD> ~ ax-ins3 </TD>
+<TD>` |- E. y A. z A. w A. t ( << { { z } } , << w , t >> >> e. y <-> << z , w >> `
+` e. x ) ` </TD></TR>
+
+<TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
+<TD><A HREF="ax-xp.html">Axiom of Cross Product (P5)</A></TD>
+<TD> ~ ax-xp </TD><TD>` |- E. y A. z ( z e. y <-> E. w E. t ( z = << w , t >> /\ t e. x ) ) ` </TD></TR>
+
+<TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
+<TD><A HREF="ax-typlower.html">Axiom of Type Lowering (P6)</A></TD>
+<TD> ~ ax-typlower </TD>
+<TD>` |- E. y A. z ( z e. y <-> A. w << w , { z } >> e. x ) ` </TD></TR>
+
+<TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
+<TD><A HREF="ax-cnv.html">Axiom of Converse (P7)</A></TD>
+<TD> ~ ax-cnv </TD>
+<TD>` |- E. y A. z A. w ( << z , w >> e. y <-> << w , z >> e. x ) ` </TD></TR>
+
+<TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
+<TD><A HREF="ax-1c.html">Axiom of Cardinal One (P8)</A></TD>
+<TD> ~ ax-1c </TD>
+<TD>` |- E. x A. y ( y e. x <-> E. z A. w ( w e. y <-> w = z ) ) ` </TD></TR>
+
+<TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
+<TD><A HREF="ax-sset.html">Axiom of Subset Relationship (P9)</A></TD>
+<TD> ~ ax-sset </TD>
+<TD>` |- E. x A. y A. z ( << y , z >> e. x <-> A. w ( w e. y -> w e. z ) ) ` </TD></TR>
+</TABLE>
+</CENTER>
+
+<p>
+The usual definition of the ordered pair, first proposed by Kuratowski
+in 1921 and used in the regular Metamath Proof Explorer,
+has a serious drawback for NF and related theories that use stratification.
+The Kuratowski ordered pair
+is defined as &lt;&lt; x , y &gt;&gt; = { { x } , { x , y } }.
+This leads to the ordered pair having a type two greater than its arguments.
+For example, z in &lt;&lt; &lt;&lt; x , y &gt;&gt; , z &gt;&gt;
+would have a different type than x and y,
+which makes multi-argument functions extremely awkward to work with.
+Operations such as "1st" and complex "+" would not form sets
+in NF with the Kuratowski ordered pairs.
+
+<p>
+In contrast, the Quine definition of ordered pairs,
+defined in definition <a href="df-op.html">df-op</a>, is type level.
+That is, &lt;. x , y &gt;. has the same type as x and y,
+which means that the same holds of &lt;. &lt;. x , y &gt;. , z &gt;.
+This means that "1st" is a set with the Quine definition,
+as is complex "+".
+The Kuratowski ordered pair is defined
+(as <a href="df-opk.html">df-opk</a>), because
+it is a simple definition that can be used by the set construction axioms
+that follow it, but for typical uses the Quine definition of ordered pairs
+<a href="df-op.html">df-op</a> is used instead.
+
+<p>
+Perhaps one of the most remarkable aspects of NF is that the
+<A HREF="nchoice.html">Axiom of Choice (an axiom of the widely-used ZFC system)
+can be disproven in NF</A>, a result
+proven in [Specker].
+As a corollary, NF proves infinity.
+
+<p>
+There are several systems <i>related</i> to NF.
+In particular, NFU is a small modification of NF that also allows
+urelements (multiple distinct objects lacking members).
+NFU corresponds to a modified type theory TSTU,
+where type 0 has urelements, not just a single empty set.
+NFU is consistent with both Infinity and Choice, so both can be added to NFU.
+NFU + Infinity + Choice has the same consistency strength
+as the theory of types with the Axiom of Infinity.
+NFU + Infinity + Choice has been extended further, e.g., with various strong
+axioms of infinity (similar to ways that ZFC has been extended).
+Randall Holmes states that <a href="http://math.boisestate.edu/~~holmes/holmes/nf.html#Consistent">"Extensions of NFU
+are adequate vehicles for mathematics in a basically familiar style"</a>.
+NFU is not further discussed here.
+
+<p>
+A fair amount of the definitions and
+theorems (notably the ones on boolean set operations)
+are taken verbatim from the regular Metamath Proof Explorer
+source file set.mm (based on ZFC).
+This also follows the development in [Rosser] fairly closely.
+An unusual aspect is the
+<a href="df-tcfn.html">stratified T-raising function TcFn</a>.
+The work to specifically formalize New Foundations in metamath
+was originally created by Scott Fenton.
+Those who are interested in New Foundations may want to look at the
+<a href="http://math.boisestate.edu/~~holmes/holmes/nf.html">New Foundations
+home page</a>, as well as a
+<a href="http://math.boisestate.edu/~~holmes/">proof of the consistency of
+New Foundations by Randall Holmes</a>.
+The descriptions given here are based on a
+<a href="https://groups.google.com/forum/#!topic/metamath/yj1j4Ebb1bI">discussion on the metamath mailing list</a>.
+
+
+<HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">
+Some theorems</FONT></B>
+
+
+<MENU>
+<LI> <A HREF="1p1e2c.html">Proof of <I>Principia
+         Mathematica</I>'s version of 1+1=2</A></LI>
+<LI> <A HREF="vinf.html">Proof of the Axiom of Infinity</A></LI>
+<LI> <A HREF="ru.html">Russell's Paradox</A></LI>
+<LI> <A HREF="vvex.html">Proof that the universal class exists</A></LI>
+<LI> <A HREF="nchoice.html">Disproof of the Axiom of Choice</A></LI>
+</MENU>
+
+<HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
+COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<OL>
+
+<LI><A NAME="BellMachover"></A> [BellMachover] Bell, J. L., and M.
+Machover, <I>A Course in Mathematical Logic,</I> North-Holland,
+Amsterdam (1977) [QA9.B3953].</LI>
+
+<LI><A NAME="ChoquetDD"></A> [ChoquetDD] Choquet-Bruhat, Yvonne and Cecile
+DeWitt-Morette, with Margaret Dillard-Bleick, <I>Analysis, Manifolds and
+Physics,</I> Elsevier Science B.V., Amsterdam (1982) [QC20.7.A5C48
+1981].</LI>
+
+<LI><A NAME="Eisenberg"></A> [Eisenberg] Eisenberg, Murray, <I>Axiomatic Theory of
+Sets and Classes,</I> Holt, Rinehart and Winston, Inc., New York (1971)
+[QA248.E36].</LI>
+
+<LI><A NAME="Enderton"></A> [Enderton] Enderton, Herbert B., <I>Elements of Set
+Theory,</I> Academic Press, Inc., San Diego, California (1977)
+[QA248.E5].</LI>
+
+<LI><A NAME="Gleason"></A> [Gleason] Gleason, Andrew M., <I>Fundamentals of
+Abstract Analysis,</I> Jones and Bartlett Publishers, Boston (1991)
+[QA300.G554].</LI>
+
+<LI><A NAME="Hailperin"></A> [Hailperin] Hailperin, Theodore, &quot;A Set of
+Axioms for Logic,&quot; <I>Journal of Symbolic Logic,</I> 9:1-14 (1944) [BC1.J6].</LI>
+
+<LI><A NAME="Hamilton"></A> [Hamilton] Hamilton, A. G., <I>Logic for
+Mathematicians,</I> Cambridge University Press, Cambridge, revised
+edition (1988) [QA9.H298 1988].</LI>
+
+<LI><A NAME="Hitchcock"></A> [Hitchcock] Hitchcock, David, <I>The
+peculiarities of Stoic propositional logic</I>, McMaster University;
+available at <A
+HREF="http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf">
+http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf</A>
+(retrieved 3 Jul 2016).</LI>
+
+<LI><A NAME="Holmes"></A> [Holmes] Holmes, Robert, <I>Elementary Set Theory With a Universal Set,</I> Web. Accessed 23 Feb 2015. <A HREF="http://math.boisestate.edu/~~holmes/holmes/head.pdf">Link</A></LI>
+
+<LI><A NAME="Jech"></A> [Jech] Jech, Thomas, <I>Set Theory,</I>
+Academic Press, San Diego (1978) [QA248.J42].</LI>
+
+<LI><A NAME="KalishMontague"></A> [KalishMontague] Kalish, D. and R.
+Montague, &quot;On Tarski's formalization of predicate logic with
+identity,&quot; <I>Archiv f&uuml;r Mathematische Logik und
+Grundlagenforschung,</I> 7:81-101 (1965) [QA.A673].</LI>
+
+<LI><A NAME="Kunen"></A> [Kunen] Kunen, Kenneth, <I>Set Theory:  An
+Introduction to Independence Proofs,</I> Elsevier Science B.V.,
+Amsterdam (1980) [QA248.K75].</LI>
+
+<LI><A NAME="KuratowskiMostowski"></A> [KuratowskiMostowski] Kuratowski, K.
+and A. Mostowski, <I>Set Theory: with an Introduction to
+Descriptive Set Theory,</I> 2nd ed., North-Holland,
+Amsterdam (1976) [QA248.K7683 1976].</LI>
+
+<LI><A NAME="Levy"></A> [Levy] Levy, Azriel, <I>Basic Set Theory</I>,
+Dover Publications, Mineola, N.Y. (2002) [QA248.L398 2002]. </LI>
+
+<LI><A NAME="Lopez-Astorga"></A> [Lopez-Astorga] Lopez-Astorga, Miguel,
+"The First Rule of Stoic Logic and its Relationship with the
+Indemonstrables", <I>Revista de Filosof&iacute;a T&oacute;picos</I> (2016);
+available at <A HREF="http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf">
+http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf</A> (retrieved 3 Jul
+2016).</LI>
+
+<LI><A NAME="Margaris"></A> [Margaris] Margaris, Angelo, <I>First Order
+Mathematical Logic,</I> Blaisdell Publishing Company, Waltham,
+Massachusetts (1967) [QA9.M327].</LI>
+
+<LI><A NAME="Megill"></A><A NAME="bibmegill"></A> [Megill] Megill, N.,
+&quot;A Finitely Axiomatized Formalization of Predicate Calculus with
+Equality,&quot; <I>Notre Dame Journal of Formal Logic,</I> 36:435-453
+(1995) [QA.N914]; available at  <A
+HREF="http://projecteuclid.org/euclid.ndjfl/1040149359"
+>http://projecteuclid.org/euclid.ndjfl/1040149359</A> (accessed
+11 Nov 2014); the <A HREF="../downloads/finiteaxiom.pdf">PDF
+preprint</A> has the same content (with corrections) but pages are
+numbered 1-22, and the database references use the numbers printed on the
+page itself, not the PDF page numbers.</LI>
+
+<LI><A NAME="Mendelson"></A> [Mendelson] Mendelson, Elliott, <I>Introduction to
+Mathematical Logic,</I> 2nd ed., D. Van Nostrand (1979) [QA9.M537].</LI>
+
+<LI><A NAME="Monk1"></A> [Monk1] Monk, J. Donald, <I>Introduction to Set
+Theory,</I> McGraw-Hill, Inc. (1969) [QA248.M745].</LI>
+
+<LI><A NAME="Monk2"></A> [Monk2] Monk, J. Donald, &quot;Substitutionless
+Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r Mathematische Logik
+und Grundlagenforschung,</I> 7:103-121 (1965) [QA.A673].</LI>
+
+<LI><A NAME="Pfenning"></A> [Pfenning] Pfenning, Frank,
+<I>Automated Theorem Proving,</I> Carnegie-Mellon University (April 13, 2004);
+available at <A
+HREF="http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf">http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf</A>
+and <A
+HREF="http://web.archive.org/web/20160304013704/http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf">http://web.archive.org/web/20160304013704/http://www.cs.cmu.edu/~~fp/courses/atp/handouts/atp.pdf</A>
+(retrieved 7 Feb 2017).</LI>
+
+<LI><A NAME="Quine"></A> [Quine] Quine, Willard van Orman, <I>Set Theory
+and Its Logic,</I> Harvard University Press, Cambridge, Massachusetts,
+revised edition (1969) [QA248.Q7 1969].</LI>
+
+<LI><A NAME="Quine2"></A> [Quine2] Quine, W.V., 1937a, &quot;New Foundations
+for Mathematical Logic,&quot; <I>American Mathematical Monthly,</I>
+44: 70-80 (1937) [QA1.A515].</LI>
+
+<LI><A NAME="Rosser"></A> [Rosser] Rosser, John B., <I>Logic for Mathematicians,</I> Dover Publications, Mineola, N.Y. (2008) [BC135.R58 2008].</LI>
+
+<LI><A NAME="Sanford"></A> [Sanford] Sanford, David H., <I>If P, then Q:
+Conditionals and the Foundations of Reasoning</I>, 2nd ed., Routledge
+Taylor &amp; Francis Group (2003); ISBN 0-415-28369-8; available at <A
+HREF="https://books.google.com/books?id=h_AUynB6PA8C&amp;pg=PA39#v=onepage&amp;q&amp;f=false">https://books.google.com/books?id=h_AUynB6PA8C&amp;pg=PA39#v=onepage&amp;q&amp;f=false</A>
+(retrieved 3 Jul 2016).</LI>
+
+<LI><A NAME="Schechter"></A> [Schechter] Schechter, Eric, <I>Handbook of
+Analysis and Its Foundations</I>, Academic Press, San Diego (1997)
+[QA300.S339].</LI>
+
+<LI><A NAME="Specker"></A> [Specker] Specker, E.P.,
+&quot;The axiom of choice in Quine's new foundations for mathematical
+logic,&quot; <I>Proceedings of the National Academy of Sciences of the
+USA,</I> 39:972-975 (1953) [Q11.N26]</LI>
+
+<LI><A NAME="Stoll"></A> [Stoll] Stoll, Robert R., <I>Set Theory and Logic,</I>
+Dover Publications, Inc. (1979) [QA248.S7985 1979].</LI>
+
+<LI><A NAME="Suppes"></A> [Suppes] Suppes, Patrick, <I>Axiomatic Set Theory,</I>
+Dover Publications, Inc. (1972) [QA248.S959].</LI>
+
+<LI><A NAME="TakeutiZaring"></A> [TakeutiZaring] Takeuti, Gaisi, and
+Wilson M. Zaring, <I>Introduction to Axiomatic Set Theory,</I>
+Springer-Verlag, New York, second edition (1982) [QA248.T136 1982].</LI>
+
+<LI><A NAME="Tarski"></A> [Tarski] Tarski, Alfred, &quot;A Simplified
+Formalization of Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r
+Mathematische Logik und Grundlagenforschung,</I> 7:61-79 (1965)
+[QA.A673].</LI>
+
+<LI><A NAME="WhiteheadRussell"></A> [WhiteheadRussell] Whitehead, Alfred
+North, and Bertrand Russell, <I>Principia Mathematica to *56,</I>
+Cambridge University Press, Cambridge, 1962 [QA9.W592 1962].</LI>
+
+</OL>
+
+
+<HR NOSHADE SIZE=1>
+
+<TABLE BORDER=0 WIDTH="100%"><TR>
+
+<TD ALIGN=LEFT VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
+&nbsp;</FONT></TD>
+
+<TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
+ page was last updated on 28-May-2018.</FONT></I><BR><FONT
+FACE="ARIAL" SIZE=-2>Your
+ comments are welcome:
+Norman Megill <A HREF="../email.html"><IMG BORDER=0
+SRC="_nmemail.gif"
+ALT="nm at alum dot mit dot edu"
+TITLE="nm at alum dot mit dot edu"
+ WIDTH=90 HEIGHT=13 STYLE="margin-bottom:-3px"></A><BR>
+Copyright terms:
+<A HREF="../copyright.html#pd">Public domain</A></FONT></TD>
+
+<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT FACE="ARIAL" SIZE=-2>
+<A
+HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
+[external]
+</FONT>
+</TD>
+
+</TR></TABLE>
+
+</BODY>
+</HTML>

@@ -1,0 +1,2048 @@
+$( Metamath-MathML Presentation Typesetting for set.mm, with MathJax rendering $)
+
+$( The idea behind Metamath "structural" typesetting is to use the formula as a
+   structure rather than a list of tokens. 
+   Therefore a correspondence is provided for a list of schemes, rather than 
+   for the tokens. A scheme consists in a metamath formula, possibly including 
+   variables (e.g. ` A ` ), and a translation text, where variables can occur
+   between # signs (e.g. #A# ).
+
+	 Unification is done top-down, and checks for the schemes in sequence.
+	 It stops as soon as a matching scheme is found, therefore specific schemes
+	 shall be listed first, and generic ones last.
+
+   This is used here for presentation MathML, but the same could be used for
+   any translation.
+
+	 In this version, 
+	 - by default brackets are present in class infix operations ( A F B ).
+	 - they are removed in cases where they can be omitted.
+   $)
+
+$( Terminal types - when diplaying tokens or in-comment math, only try those types $)
+$u wff class setvar $.
+
+$( No brackets and extra space for top level statements $)
+$s |- ( ph -> ps ) $: <mrow> <mo mathcolor=#CCC>&vdash;</mo> #ph# <mo linebreak=goodbreak lspace=1em rspace=1em href="wi.html">&rarr;</mo> #ps# </mrow> $.
+$s |- ( ph <-> ps ) $: <mrow> <mo mathcolor=#CCC>&vdash;</mo> #ph# <mo linebreak=goodbreak lspace=1em rspace=1em href="df-bi.html">&harr;</mo> #ps# </mrow> $.
+
+$( Representation for a provable statement - usually the top level statement to
+   be represented. $)
+$s |- ph $: <mrow><mo mathcolor=#CCC>&vdash;</mo> #ph# </mrow> $.
+
+$( WFF variables $)
+$i wff ph $: <mi mathcolor=#008> &phi; </mi> $.
+$i wff ps $: <mi mathcolor=#008> &psi; </mi> $.
+$i wff ch $: <mi mathcolor=#008> &chi; </mi> $.
+
+$i wff th $: <mi mathcolor=#008> &theta; </mi> $.
+$i wff ta $: <mi mathcolor=#008> &tau; </mi> $.
+$i wff et $: <mi mathcolor=#008> &eta; </mi> $.
+$i wff ze $: <mi mathcolor=#008> &zeta; </mi> $.
+$i wff si $: <mi mathcolor=#008> &sigma; </mi> $.
+$i wff rh $: <mi mathcolor=#008> &rho; </mi> $.
+$i wff mu $: <mi mathcolor=#008> &mu; </mi> $.
+$i wff la $: <mi mathcolor=#008> &lambda; </mi> $.
+$i wff ka $: <mi mathcolor=#008> &kappa; </mi> $.
+
+
+$( Set variables, first declared as class $)
+$s class x $: #x# $.
+
+$( Set variables $)
+$i setvar a $: <mi mathcolor=#800>a</mi> $.
+$i setvar b $: <mi mathcolor=#800>b</mi> $.
+$i setvar c $: <mi mathcolor=#800>c</mi> $.
+$i setvar d $: <mi mathcolor=#800>d</mi> $.
+$i setvar e $: <mi mathcolor=#800>e</mi> $.
+$i setvar f $: <mi mathcolor=#800>f</mi> $.
+$i setvar g $: <mi mathcolor=#800>g</mi> $.
+$i setvar h $: <mi mathcolor=#800>h</mi> $.
+$i setvar i $: <mi mathcolor=#800>i</mi> $.
+$i setvar j $: <mi mathcolor=#800>j</mi> $.
+$i setvar k $: <mi mathcolor=#800>k</mi> $.
+$i setvar l $: <mi mathcolor=#800>l</mi> $.
+$i setvar m $: <mi mathcolor=#800>m</mi> $.
+$i setvar n $: <mi mathcolor=#800>n</mi> $.
+$i setvar o $: <mi mathcolor=#800>o</mi> $.
+$i setvar p $: <mi mathcolor=#800>p</mi> $.
+$i setvar q $: <mi mathcolor=#800>q</mi> $.
+$i setvar r $: <mi mathcolor=#800>r</mi> $.
+$i setvar s $: <mi mathcolor=#800>s</mi> $.
+$i setvar t $: <mi mathcolor=#800>t</mi> $.
+$i setvar u $: <mi mathcolor=#800>u</mi> $.
+$i setvar v $: <mi mathcolor=#800>v</mi> $.
+$i setvar w $: <mi mathcolor=#800>w</mi> $.
+$i setvar x $: <mi mathcolor=#800>x</mi> $.
+$i setvar y $: <mi mathcolor=#800>y</mi> $.
+$i setvar z $: <mi mathcolor=#800>z</mi> $.
+
+$( Class variables $)
+$i class A $: <mi mathcolor=#808>A</mi> $.
+$i class B $: <mi mathcolor=#808>B</mi> $.
+$i class C $: <mi mathcolor=#808>C</mi> $.
+$i class D $: <mi mathcolor=#808>D</mi> $.
+$i class E $: <mi mathcolor=#808>E</mi> $.
+$i class F $: <mi mathcolor=#808>F</mi> $.
+$i class G $: <mi mathcolor=#808>G</mi> $.
+$i class H $: <mi mathcolor=#808>H</mi> $.
+$i class I $: <mi mathcolor=#808>I</mi> $.
+$i class J $: <mi mathcolor=#808>J</mi> $.
+$i class K $: <mi mathcolor=#808>K</mi> $.
+$i class L $: <mi mathcolor=#808>L</mi> $.
+$i class M $: <mi mathcolor=#808>M</mi> $.
+$i class N $: <mi mathcolor=#808>N</mi> $.
+$i class O $: <mi mathcolor=#808>O</mi> $.
+$i class P $: <mi mathcolor=#808>P</mi> $.
+$i class Q $: <mi mathcolor=#808>Q</mi> $.
+$i class R $: <mi mathcolor=#808>R</mi> $.
+$i class S $: <mi mathcolor=#808>S</mi> $.
+$i class T $: <mi mathcolor=#808>T</mi> $.
+$i class U $: <mi mathcolor=#808>U</mi> $.
+$i class V $: <mi mathcolor=#808>V</mi> $.
+$i class W $: <mi mathcolor=#808>W</mi> $.
+$i class X $: <mi mathcolor=#808>X</mi> $.
+$i class Y $: <mi mathcolor=#808>Y</mi> $.
+$i class Z $: <mi mathcolor=#808>Z</mi> $.
+$i class ./\ $: <munder accentunder><mi mathcolor=#808>&and;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .\/ $: <munder accentunder><mi mathcolor=#808>&or;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .<_ $: <munder accentunder><mi mathcolor=#808>&le;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .< $: <munder accentunder><mi mathcolor=#808>&lt;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .+ $: <munder accentunder><mi mathcolor=#808>+</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .- $: <munder accentunder><mi mathcolor=#808>-</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .X. $: <munder accentunder><mi mathcolor=#808>&times;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class ./ $: <munder accentunder><mi mathcolor=#808>&times;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .^ $: <munder accentunder><mi mathcolor=#808>&times;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .0. $: <munder accentunder><mi mathcolor=#808>0</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .1. $: <munder accentunder><mi mathcolor=#808>1</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .|| $: <munder accentunder><mi mathcolor=#808>&#8741;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .~ $: <munder accentunder><mi mathcolor=#808>&#x223C;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class ._|_ $: <munder accentunder><mi mathcolor=#808>&#8869;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .+^ $: <munder accentunder><mi mathcolor=#808>&#x2A23;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .+b $: <munder accentunder><mi mathcolor=#808>&#x271A;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .(+) $: <munder accentunder><mi mathcolor=#808>&#x2295;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .* $: <munder accentunder><mi mathcolor=#808>&lowast;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .x. $: <munder accentunder><mi mathcolor=#808>&middot;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .xb $: <munder accentunder><mi mathcolor=#808>&#x2219;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class ., $: <munder accentunder><mi mathcolor=#808>,</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .(x) $: <munder accentunder><mi mathcolor=#808>&#x2297;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .0b $: <munder accentunder><mi mathcolor=#808>&#x1D7CE</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+
+$( Constants $)
+$s wff T. $: <mi href="df-tru.html">&#x22A4;</mi> $. $( There is actually an entity &true; $)
+$s wff F. $: <mi href="df-fal.html">&#x22A5;</mi> $. $( There is actually an entity &false; $)
+$s class _V $: <mi href="df-v.html" mathvariant="normal">V</mi> $.
+$s class (/) $: <mi href="df-nul.html">&empty;</mi> $. $( &empty; or &#x2205; looks like a zero, &#x00D8; looks like an O, &#x2300; is actually a diameter $)
+$s class Undef $: <mi href="df-undef.html">Undef</mi> $.
+$s class _E $: <mi href="df-eprel.html" mathvariant="normal">E</mi> $.
+$s class _I $: <mi href="df-id.html" mathvariant="normal">I</mi> $.
+$s class O(1) $: <mrow href="df-o1.html"><mo>&#x1D442;</mo><mo>&ApplyFunction;</mo><mfenced><mn>1</mn></mfenced></mrow> $.
+$s class <_O(1) $: <mrow href="df-lo1.html"><mo>&le;</mo><mo>&#x1D442;</mo><mo>&ApplyFunction;</mo><mfenced><mn>1</mn></mfenced></mrow> $.
+$s class odZ $: <msub href="df-odz.html"><mi>od</mi><mi>&#8484;</mi></msub> $.
+
+$( Ordinals $)
+$s class 1o $: <msub href="df-1o.html"> <mn>1</mn> <mo>&#x1D45C;</mo> </msub> $.
+$s class 2o $: <msub href="df-2o.html"> <mn>2</mn> <mo>&#x1D45C;</mo> </msub> $.
+$s class 3o $: <msub href="df-3o.html"> <mn>3</mn> <mo>&#x1D45C;</mo> </msub> $.
+$s class 4o $: <msub href="df-4o.html"> <mn>4</mn> <mo>&#x1D45C;</mo> </msub> $.
+
+$s class On $: <mi href="df-on.html">On</mi> $.
+$s class _om $: <mi href="df-om.html" mathvariant="normal">&omega;</mi> $.
+$s class aleph $: <mi href="df-aleph.html">&aleph;</mi> $.
+$s class CNF $: <mi href="df-cnf.html">CNF</mi> $.
+$s class TC $: <mi href="df-tc.html">TC</mi> $.
+$s class R1 $: <msub href="df-r1.html"><mi>R</mi><mn>1</mn></msub> $.
+$s class rank $: <mi href="df-rank.html">rank</mi> $.
+$s class card $: <mi href="df-card.html">card</mi> $.
+$s class cf $: <mi href="df-cf.html">cf</mi> $.
+$s wff CHOICE $: <mi href="df-ac.html">CHOICE</mi> $.
+$s class Fin1a $: <msup href="df-fin1a.html"><mi>Fin</mi><mn>Ia</mn></msup> $.
+$s class Fin2 $: <msup href="df-fin2.html"><mi>Fin</mi><mn>II</mn></msup> $.
+$s class Fin3 $: <msup href="df-fin3.html"><mi>Fin</mi><mn>III</mn></msup> $.
+$s class Fin4 $: <msup href="df-fin4.html"><mi>Fin</mi><mn>IV</mn></msup> $.
+$s class Fin5 $: <msup href="df-fin5.html"><mi>Fin</mi><mn>V</mn></msup> $.
+$s class Fin6 $: <msup href="df-fin6.html"><mi>Fin</mi><mn>VI</mn></msup> $.
+$s class Fin7 $: <msup href="df-fin7.html"><mi>Fin</mi><mn>VII</mn></msup> $.
+$s class GCH $: <mi href="df-gch.html">GCH</mi> $.
+$s class InaccW $: <msub href="df-wina.html"><mi>Inacc</mi> <mo>&#x1D464;</mo></msub> $.
+$s class Inacc $: <mi href="df-ina.html">Inacc</mi> $.
+$s class WUni $: <mi href="df-wun.html">WUni</mi> $.
+$s class wUniCl $: <mi href="df-wunc.html">wUniCl</mi> $.
+$s class Tarski $: <mi href="df-tsk.html">Tarski</mi> $.
+$s class Univ $: <mi href="df-gru.html">Univ</mi> $.
+$s class tarskiMap $: <mi href="df-tskm.html">tarskiMap</mi> $.
+
+$( Temporary constants used in the construction of ` CC ` $)
+$s class N. $: <mi href="df-ni.html">&#x1d475;</mi> $.
+$s class +N $: <msub href="df-pli.html"> <mo>+</mo> <mo>&#x1d475;</mo> </msub> $.
+$s class .N $: <msub href="df-mi.html"> <mo>&sdot;</mo> <mo>&#x1d475;</mo> </msub> $.
+$s class <N $: <msub href="df-lti.html"> <mo>&lt;</mo> <mo>&#x1d475;</mo> </msub> $.
+$s class +pQ $: <msub href="df-plpq.html"> <mo>+</mo> <mi>&#x1d45d;&#x1d478;</mi> </msub> $.
+$s class .pQ $: <msub href="df-mpq.html"> <mo>&sdot;</mo> <mi>&#x1d45d;&#x1d478;</mi> </msub> $.
+$s class <pQ $: <msub href="df-ltpq.html"> <mo>&lt;</mo> <mi>&#x1d45d;&#x1d478;</mi> </msub> $.
+$s class ~Q $: <msub href="df-enq.html"> <mo>~</mo> <mi>&#x1d478;</mi> </msub> $.
+$s class Q. $: <mi href="df-nq.html">&#x1d478;</mi> </msub> $.
+$s class 1Q $: <msub href="df-1nq.html"> <mn>1</mn> <mi>&#x1d478;</mi> </msub> $.
+$s class /Q $: <msub href="df-erq.html"> <mo>/</mo> <mi>&#x1d478;</mi> </msub> $.
+$s class +Q $: <msub href="df-plq.html"> <mo>+</mo> <mi>&#x1d478;</mi> </msub> $.
+$s class .Q $: <msub href="df-mq.html"> <mo>&sdot;</mo> <mi>&#x1d478;</mi> </msub> $.
+$s class *Q $: <msub href="df-rq.html"> <mo>*</mo> <mi>&#x1d478;</mi> </msub> $.
+$s class <Q $: <msub href="df-ltnq.html"> <mo>&lt;</mo> <mi>&#x1d478;</mi> </msub> $.
+$s class P. $: <mi href="df-np.html">&#x1d477;</mi> </msub> $.
+$s class 1P $: <msub href="df-1p.html"> <mn>1</mn> <mi>&#x1d477;</mi> </msub> $.
+$s class +P. $: <msub href="df-plp.html"> <mo>+</mo> <mi>&#x1d477;</mi> </msub> $.
+$s class .P. $: <msub href="df-mp.html"> <mo>&sdot;</mo> <mi>&#x1d477;</mi> </msub> $.
+$s class <P $: <msub href="df-ltp.html"> <mo>&lt;</mo> <mi>&#x1d477;</mi> </msub> $.
+$s class ~R $: <msub href="df-enr.html"> <mo>~</mo> <mi>&#x1d479;</mi> </msub> $.
+$s class R. $: <mi href="df-nr.html">&#x1d479;</mi> $.
+$s class 0R $: <msub href="df-0r.html"> <mn>0</mn> <mi>&#x1d479;</mi> </msub> $.
+$s class 1R $: <msub href="df-1r.html"> <mn>1</mn> <mi>&#x1d479;</mi> </msub> $.
+$s class -1R $: <msub href="df-m1r.html"> <mn>-1</mn> <mi>&#x1d479;</mi> </msub> $.
+$s class +R $: <msub href="df-plr.html"> <mo>+</mo> <mi>&#x1d479;</mi> </msub> $.
+$s class .R $: <msub href="df-mr.html"> <mo>&sdot;</mo> <mi>&#x1d479;</mi> </msub> $.
+$s class <R $: <msub href="df-ltr.html"> <mo>&lt;</mo> <mi>&#x1d479;</mi> </msub> $.
+
+$( Strutures $)
+$s class Slot A $: <mrow><mi href="df-cnfld.html">Slot</mi> #A# </mrow> $.
+$s class |`s $: <msub href="df-ress.html"><mo>&uharr;</mo> <mi>&#x1D460;</mi></msub> $.
+$s class +g $: <msub href="df-plusg.html"> <mo>+</mo> <mi>&#x1D454;</mi> </msub> $.
+$s class +f $: <msub href="df-plusf.html"> <mo>+</mo> <mi>&#x1D453;</mi> </msub> $.
+$s class 0g $: <msub href="df-0g.html"> <mn>0</mn> <mi>&#x1D454;</mi> </msub> $.
+$s class -g $: <msub href="df-sbg.html"> <mo>-</mo> <mi>&#x1D454;</mi> </msub> $.
+$s class .g $: <msub href="df-mulg.html"> <mn>&sdot;</mn> <mi>&#x1D454;</mi> </msub> $.
+$s class .r $: <msub href="df-mulr.html"> <mo>&sdot;</mo> <mi>&#x1D45F;</mi> </msub> $.
+$s class *r $: <msub href="df-starv.html"> <mo>&lowast;</mo> <mi>&#x1D45F;</mi> </msub> $.
+$s class .s $: <msub href="df-vsca.html"> <mo>&sdot;</mo> <mi>&#x1D460;</mi> </msub> $.
+$s class .i $: <msub href="df-ip.html"> <mo>&sdot;</mo> <mi>&#x1D456;</mi> </msub> $.
+$s class |`t $: <msub href="df-rest.html"><mo>&uharr;</mo> <mi>&#x1D461;</mi></msub> $.
+$s class Xt_ $: <msub href="df-pt.html"><mo>&prod;</mo> <mi>&#x1D461;</mi></msub> $.
+$s class Xs_ $: <msub href="df-prds.html"><mo>&#x2a09;</mo> <mi>&#x1D460;</mi></msub> $.
+$s class ^s $: <msub href="df-pws.html"><mo>&uarr;</mo> <mi>&#x1D460;</mi></msub> $.
+$s class RR*s $: <msubsup href="df-xrs.html"><mo>&Ropf;</mo> <mi>&#x1D460;</mi> <mo>*</mo></msubsup> $.
+$s class "s $: <msub href="df-imas.html"><mo>&ldquo;</mo> <mi>&#x1D460;</mi></msub> $.
+$s class /s $: <msub href="df-divs.html"><mo>/</mo> <mi>&#x1D460;</mi></msub> $.
+$s class Xs. $: <msub href="df-xps.html"><mo>&times;</mo> <mi>&#x1D460;</mi></msub> $.
+$s class |`v $: <msub href="df-resv.html"><mo>&uharr;</mo> <mi>&#x1D463;</mi></msub> $.
+
+$s class *rf $: <msub href="df-staf.html"> <mo>&lowast;</mo> <mi>&#x1D45F;&#x1D453;</mi> </msub> $.
+$s class *Ring $: <mi href="df-srng.html">*-Ring</mi> $.
+$s class .sf $: <msub href="df-scaf.html"> <mo>&sdot;</mo> <mi>&#x1D460;&#x1D453;</mi> </msub> $.
+$s class ~=m $: <msub href="df-lmic.html"> <mo>&#x2243;</mo> <mi>&#x1D45A;</mi> </msub> $.
+
+$s class *Met $: <mi href="df-xmet.html">&infin;Met</mi> $.
+$s class *MetSp $: <mi href="df-xms.html">&infin;MetSp</mi> $.
+$s class Z/nZ $: <mi href="df-zn.html">&Zopf;/n&Zopf;</mi> $.
+$s class CCfld $:  <msub href="df-cnfld.html"> <mi>&Copf;</mi> <mi>fld</mi> </msub>  $.
+$s class RRfld $:  <msub href="df-refld.html"> <mi>&Ropf;</mi> <mi>fld</mi> </msub>  $.
+$s class ZZring $:  <msub href="df-zring.html"> <mi>&Zopf;</mi> <mi>ring</mi> </msub>  $.
+$s class CHil $: <mi href="df-hl.html">&Copf;Hil</mi> $.
+$s class CVec $: <mi href="df-cvs.html">&Copf;Vec</mi> $.
+$s class EEhil $: <msub href="df-ehl.html"> <mi>&Eopf;</mi> <mi>hil</mi> </msub>  $.
+$s class RR^ $: <mi href="df-rrx.html">&Ropf;&uarr;</mi>  $.
+$s class ( RR^ ` A ) $: <msup><mi href="df-rrx.html"> #A# </msup>  $.
+
+
+
+$s class invg $: <msub href="df-minusg.html"><mo>inv</mo> <mo>g</mo></msub> $.
+$s class invr $: <msub href="df-invr.html"><mo>inv</mo> <mi>r</mi></msub> $.
+$s class ~=g $: <msub href="df-gic.html"><mo>&simeq;</mo> <mo>&#x1D454;</mo></msub> $.
+$s class oppG $: <msub href="df-oppg.html"><mo>opp</mo> <mo>&#x1D454;</mo></msub> $.
+$s class oppR $: <msub href="df-oppr.html"><mo>opp</mo> <mi>r</mi></msub> $.
+$s class proj1 $: <msub href="df-pj1.html"><mo>proj</mo> <mn>1</mn></msub> $.
+$s class ~QG $: <msub href="df-eqg.html"><mo>~</mo> <mi mathvariant="italic">QG</mi></msub> $.
+$s class ~FG $: <msub href="df-efg.html"><mo>~</mo> <mi mathvariant="italic">FG</mi></msub> $.
+$s class varFMnd $: <msub href="df-vrmd.html"><mo>var</mo> <mi mathvariant="italic">FMnd</mi></msub> $.
+$s class varFGrp $: <msub href="df-vrgp.html"><mo>var</mo> <mi mathvariant="italic">FGrp</mi></msub> $.
+$s class 1r $: <msub href="df-ur.html"><mn>1</mn> <mi>r</mi></msub> $.
+$s class ||r $: <msub href="df-dvdsr.html"><mo>&par;</mo> <mi>r</mi></msub> $.
+$s class /r $: <msub href="df-dvr.html"><mo>/</mo> <mi>r</mi></msub> $.
+
+$( Category Theory $)
+$s class Homf $: <msub href="df-homf.html"><mi>Hom</mi> <mi>&#x1D453;</mi></msub> $.
+$s class comf $: <msub href="df-comf.html"><mi>comp</mi> <mi>&#x1D453;</mi></msub> $.
+$s class C_cat $: <msub href="df-ssc.html"><mo>&sube;</mo> <mi>cat</mi></msub> $.
+$s class |`cat $: <msub href="df-resc.html"><mo>&uharr;</mo> <mi>cat</mi></msub> $.
+$s class idFunc $: <msub href="df-idfu.html"><mo>id</mo> <mi>func</mi></msub> $.
+$s class o.func $: <msub href="df-cofu.html"><mo>&compfn;</mo> <mi>func</mi></msub> $.
+$s class |`f $: <msub href="df-resf.html"><mo>&uharr;</mo> <mi>f</mi></msub> $.
+$s class domA $: <msub href="df-doma.html"><mo>dom</mo> <mi>a</mi></msub> $.
+$s class codA $: <msub href="df-coda.html"><mo>cod</mo> <mi>a</mi></msub> $.
+$s class HomA $: <msub href="df-homa.html"><mo>Hom</mo> <mi>a</mi></msub> $.
+$s class IdA $: <msub href="df-ida.html"><mo>Id</mo> <mi>a</mi></msub> $.
+$s class compA $: <msub href="df-coa.html"><mo>comp</mo> <mi>a</mi></msub> $.
+$s class Xc. $: <msub href="df-xpc.html"><mo>&times;</mo> <mi>c</mi></msub> $.
+$s class 1stF $: <msub href="df-1stf.html"><msup><mo>1</mo> <mo>st</mo></msup> <mi>F</mi></msub> $.
+$s class 2ndF $: <msub href="df-2ndf.html"><msup><mo>2</mo> <mo>nd</mo></msup> <mi>F</mi></msub> $.
+$s class pairF $: <msub href="df-prf.html"><mo>&lang;,&rang;</mo> <mi>F</mi></msub> $.
+$s class evalF $: <msub href="df-evlf.html"><mo>eval</mo> <mi>F</mi></msub> $.
+$s class curryF $: <msub href="df-curf.html"><mo>curry</mo> <mi>F</mi></msub> $.
+$s class uncurryF $: <msub href="df-uncf.html"><mo>uncurry</mo> <mi>F</mi></msub> $.
+$s class DiagFunc $: <msub href="df-diag.html"><mo>&Delta;</mo> <mi>func</mi></msub> $.
+$s class HomF $: <msub href="df-hof.html"><mo>Hom</mo> <mi>F</mi></msub> $.
+$s class Yon $: <mi href="df-yon.html">Yon</mi> $.
+
+$s class RngCat $: <mi href="df-rngc.html">RngCat</mi> $.
+$s class RingCat $: <mi href="df-ringc.html">RingCat</mi> $.
+$s class ExtStrCat $: <mi href="df-estrc.html">ExtStrCat</mi> $.
+
+$s class RngCatALTV $: <mi href="df-rngcALTV.html">RngCatALTV</mi> $.
+$s class RingCatALTV $: <mi href="df-ringcALTV.html">RingCatALTV</mi> $.
+
+$s class InitO $: <mi href="df-inito.html">InitO</mi> $.
+$s class TermO $: <mi href="df-termo.html">TermO</mi> $.
+$s class ZeroO $: <mi href="df-zeroo.html">ZeroO</mi> $.
+
+
+$s class 0. $: <mi href="df-p0.html">0.</mi> $.
+$s class 1. $: <mi href="df-p1.html">1.</mi> $.
+$s class lastS $: <mi href="df-lswrd.html">lastS</mi> $.
+$s class repeatS $: <mi href="df-reps.html">repeatS</mi> $.
+$s class cyclShift $: <mi href="df-csh.html">cyclShift</mi> $.
+$s class <bag $: <msub href="df-ltbag.html"><mo>&lt;</mo> <mo>bag</mo></msub> $.
+
+$( Analysis $)
+$s class NN $: <mi href="df-nn.html"> &Nopf; </mi> $.
+$s class ZZ $: <mi href="df-z.html"> &Zopf; </mi> $.
+$s class NN0 $: <msub href="df-n0.html"> <mi> &Nopf; </mi><mn> 0 </mn></msub> $.
+$s class NN0* $: <msubsup href="df-n0.html"> <mi> &Nopf; </mi><mn> 0 </mn><mo> * </mo></msubsup> $.
+$s class QQ $: <mi href="df-q.html"> &Qopf; </mi> $.
+$s class RR $: <mi href="df-r.html"> &Ropf; </mi> $.
+$s class RR* $: <msup href="df-xr.html"> <mi> &Ropf; </mi><mo> * </mo></msup> $.
+$s class RR+ $: <msup href="df-rp.html"> <mi> &Ropf; </mi><mo> + </mo></msup> $.
+$s class CC $: <mi href="df-c.html"> &Copf; </mi> $.
+$s class Z[i] $: <mrow href="df-gz.html"> <mi>&Zopf;</mi> <mfenced open="[" close="]"><mi>i</mi></mfenced> </mrow> $.
+$s class L^1 $: <msup href="df-ibl.html"> <mi>&#x1D43F;</mi> <mn>1</mn> </msup> $.
+$s class Fin $: <mi href="df-fin.html">Fin</mi> $.
+$s class +oo $: <mi href="df-pnf.html">+&infin;</mi> $.
+$s class -oo $: <mi href="df-mnf.html">&minus;&infin;</mi> $.
+$s class 0p $: <msub href="df-0p.html"> <mn>0</mn> <mo>&#x1d45d;</mo> </msub> $.
+$s class 1/_G $: <mfrac href="df-igam.html"><mn>1</mn> <mi mathvariant="normal">&Gamma;</mi></mfrac> $.
+
+$( Number-theoretical functions $)
+$s class ppi $: <munder href="df-ppi.html"><mo>&pi;</mo> <mo>&#x5F;</mo></munder> $. 
+$s class theta $: <mi href="df-cht.html">&theta;</mi> $.
+$s class Lam $: <mi href="df-vma.html">&Lambda;</mi> $.
+$s class psi $: <mi href="df-chp.html">&psi;</mi> $.
+$s class mmu $: <mi href="df-mu.html">&mu;</mi> $.
+$s class sigma $: <mi href="df-sgm.html"> &sigma; </mi> $.
+$s class #p $: <msub href="df-prmo.html"><mi> # </mi> <mi> p </mi></msub> $.
+
+
+$s class 1stc $: <mrow href="df-1stc.html"> <msup><mo>1</mo> <mo>st</mo></msup> <mi>&#x1D714;</mi> </mrow> $. $( math italic omega $)
+$s class 2ndc $: <mrow href="df-2ndc.html"> <msup><mo>2</mo> <mo>nd</mo></msup> <mi>&#x1D714;</mi> </mrow> $. $( math italic omega $)
+
+$( Geometry $)
+$s class TarskiG $: <msub href="df-trkg.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi></msub> $.
+$s class TarskiGC $: <msubsup href="df-trkgc.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi> <mi>C</mi></msubsup> $.
+$s class TarskiGB $: <msubsup href="df-trkgb.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi> <mi>B</mi></msubsup> $.
+$s class TarskiGCB $: <msubsup href="df-trkgcb.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi> <mi>CB</mi></msubsup> $.
+$s class TarskiGDim>= $: <mrow href="df-trkgld.html"><msub><mi>Dim</mi> <mi>&#x1d4a2;</mi></msub> <mo>&ge;</mo></mrow> $.
+$s class TarskiG2D $: <msubsup href="df-trkg2d.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi> <mi>2D</mi></msubsup> $.
+$s class TarskiGE $: <msubsup href="df-trkge.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi> <mi>E</mi></msubsup> $.
+$s class Itv $: <mi href="df-itv.html"> Itv </mi> $.
+$s class LineG $: <msub href="df-lineg.html"><mo>Line</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class cgrG $: <msub href="df-cgrg.html"><mo>&#x223C;</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class leG $: <msub href="df-leg.html"><mo>&le;</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class hlG $: <msub href="df-hlg.html"><mo>hl</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class midG $: <msub href="df-mid.html"><mo>mid</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class pInvG $: <msub href="df-mir.html"><mo>pInv</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class lInvG $: <msub href="df-lmi.html"><mo>lInv</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class raG $: <msub href="df-rag.html"><mo>&angrt;</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class perpG $: <msub href="df-perp.html"><mo>&#x27C2;</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class cgrA $: <msubsup href="df-cgra.html"><mo>&#x223C;</mo> <mo>&#x1d4a2;</mo> <mo>&ang;</mo></msubsup> $.
+$s class inA $: <msubsup href="df-inag.html"><mo>&isin;</mo> <mo>&#x1d4a2;</mo> <mo>&ang;</mo></msubsup> $.
+$s class leA $: <msubsup href="df-leag.html"><mo>&le;</mo> <mo>&#x1d4a2;</mo> <mo>&ang;</mo></msubsup> $.
+$s class eqltrG $: <msub href="df-eqlg.html"><mo>Equilaterals</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class toTG $: <msub href="df-ttg.html"><mo>to&#x1d4a2;</mo> <mi>Tarski</mi></msub> $.
+$s class EEG $: <msub href="df-eeg.html"><mo>&Eopf;</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class AFS $: <mo href="df-afs.html">AFS</mo> $.
+$s class Ismt $: <mo href="df-ismt.html">Ismt</mo> $.
+$s class hpG $: <msub href="df-hpg.html"><mo>hp</mo> <mo>&#x1d4a2;</mo></msub> $.
+
+
+$( Commented out in set.mm
+
+$s class supw $: <msub href="df-spw.html"><mo>sup</mo> <mo>w</mo></msub> $.
+$s class infw $: <msub href="df-nfw.html"><mo>inf</mo> <mo>w</mo></msub> $.
+$s class ceiling $: <mi href="df-ceiling.html">&#8968;</mi> $.
+$s class LatRel $: <mi href="df-lar.html">LatRel</mi> $.
+$)
+
+
+$( Constant classes with simple "mi" rules 
+   (this part has been generated from the althtmldef rules of set.mm) $)
+$s class On $: <mi href="df-on.html">On</mi> $.
+$s class Undef $: <mi href="df-undef.html">Undef</mi> $.
+$s class Fin $: <mi href="df-fin.html">Fin</mi> $.
+$s class fi $: <mi href="df-fi.html">fi</mi> $.
+$s class har $: <mi href="df-har.html">har</mi> $.
+$s class CNF $: <mi href="df-cnf.html"> CNF </mi> $.
+$s class TC $: <mi href="df-tc.html">TC</mi> $.
+$s class rank $: <mi href="df-rank.html">rank</mi> $.
+$s class card $: <mi href="df-card.html">card</mi> $.
+$s class aleph $: <mi href="df-aleph.html">&#8501;</mi> $.
+$s class cf $: <mi href="df-cf.html">cf</mi> $.
+$s class Inacc $: <mi href="df-ina.html">Inacc</mi> $.
+$s class WUni $: <mi href="df-wun.html">WUni</mi> $.
+$s class wUniCl $: <mi href="df-wunc.html">wUniCl</mi> $.
+$s class Tarski $: <mi href="df-tsk.html">Tarski</mi> $.
+$s class Univ $: <mi href="df-gru.html">Univ</mi> $.
+$s class tarskiMap $: <mi href="df-tskm.html">tarskiMap</mi> $.
+$s class supp $: <mi href="df-supp.html">supp</mi> $.
+$s class finSupp $: <mi href="df-supp.html">finSupp</mi> $.
+$s class CC $: <mi href="df-c.html">&#8450;</mi> $.
+$s class RR $: <mi href="df-r.html">&#8477;</mi> $.
+$s class _i $: <mi href="df-i.html" mathvariant="normal">i</mi> $. $( There is actually an entity &ImaginaryI; $)
+$s class NN $: <mi href="df-nn.html">&#8469;</mi> $.
+$s class ZZ $: <mi href="df-z.html">&#8484;</mi> $.
+$s class QQ $: <mi href="df-q.html">&#8474;</mi> $.
+$s class mod $: <mi href="df-mod.html"> mod </mi> $.
+$s class ++ $: <mi href="df-concat.html"> ++ </mi> $.
+$s class substr $: <mi href="df-substr.html"> substr </mi> $.
+$s class splice $: <mi href="df-splice.html"> splice </mi> $.
+$s class reverse $: <mi href="df-reverse.html">reverse</mi> $.
+$s class shift $: <mi href="df-shft.html">shift</mi> $.
+$s class Re $: <mi href="df-re.html">&real;</mi> $.
+$s class Im $: <mi href="df-im.html">&image;</mi> $.
+$s class sqrt $: <mi href="df-sqrt.html">&radic;</mi> $.
+$s class abs $: <mi href="df-abs.html">abs</mi> $.
+$s class limsup $: <mi href="df-limsup.html">lim sup</mi> $.
+$s class exp $: <mi href="df-ef.html">exp</mi> $.
+$s class _e $: <mi href="df-e.html" mathvariant="normal">e</mi> $.
+$s class sin $: <mi href="df-sin.html">sin</mi> $.
+$s class cos $: <mi href="df-cos.html">cos</mi> $.
+$s class tan $: <mi href="df-tan.html">tan</mi> $.
+$s class _pi $: <mi href="df-pi.html" mathvariant="normal">&pi;</mi> $.
+$s class bits $: <mi href="df-bits.html">bits</mi> $.
+$s class sadd $: <mi href="df-sad.html">sadd</mi> $.
+$s class smul $: <mi href="df-smu.html">smul</mi> $.
+$s class gcd $: <mi href="df-gcd.html">gcd</mi> $.
+$s class Prime $: <mi href="df-prm.html">&#8473;</mi> $.
+$s class numer $: <mi href="df-numer.html">numer</mi> $.
+$s class denom $: <mi href="df-denom.html">denom</mi> $.
+$s class phi $: <mi href="df-phi.html" mathvariant="normal">&#981;</mi> $.
+$s class pCnt $: <mi href="df-pc.html">pCnt</mi> $.
+$s class AP $: <mi href="df-vdwap.html">AP</mi> $.
+$s class MonoAP $: <mi href="df-vdwmc.html">MonoAP</mi> $.
+$s class PolyAP $: <mi href="df-vdwpc.html">PolyAP</mi> $.
+$s class Ramsey $: <mi href="df-ram.html">Ramsey</mi> $.
+$s class Struct $: <mi href="df-struct.html">Struct</mi> $.
+$s class ndx $: <mi href="df-ndx.html">ndx</mi> $.
+$s class sSet $: <mi href="df-sets.html">sSet</mi> $.
+$s class Base $: <mi href="df-base.html">Base</mi> $.
+$s class Scalar $: <mi href="df-sca.html">Scalar</mi> $.
+$s class TopSet $: <mi href="df-tset.html">TopSet</mi> $.
+$s class le $: <mi href="df-ple.html">le</mi> $.
+$s class oc $: <mi href="df-ocomp.html">oc</mi> $.
+$s class dist $: <mi href="df-ds.html">dist</mi> $.
+$s class Hom $: <mi href="df-linm.html">Hom</mi> $.
+$s class comp $: <mi href="df-cco.html">comp</mi> $.
+$s class TopOpen $: <mi href="df-topn.html">TopOpen</mi> $.
+$s class topGen $: <mi href="df-topgen.html">topGen</mi> $.
+$s class ordTop $: <mi href="df-ordt.html">ordTop</mi> $.
+$s class qTop $: <mi href="df-qtop.html"> qTop </mi> $.
+$s class Moore $: <mi href="df-mre.html">Moore</mi> $.
+$s class mrCls $: <mi href="df-mrc.html">mrCls</mi> $.
+$s class mrInd $: <mi href="df-mri.html">mrInd</mi> $.
+$s class ACS $: <mi href="df-acs.html">ACS</mi> $.
+$s class Cat $: <mi href="df-cat.html">Cat</mi> $.
+$s class Id $: <mi href="df-cid.html">Id</mi> $.
+$s class oppCat $: <mi href="df-oppc.html">oppCat</mi> $.
+$s class Mono $: <mi href="df-mon.html">Mono</mi> $.
+$s class Epi $: <mi href="df-epi.html">Epi</mi> $.
+$s class Sect $: <mi href="df-sect.html">Sect</mi> $.
+$s class Inv $: <mi href="df-inv.html">Inv</mi> $.
+$s class Iso $: <mi href="df-iso.html">Iso</mi> $.
+$s class Subcat $: <mi href="df-subc.html">Subcat</mi> $.
+$s class Func $: <mi href="df-func.html">Func</mi> $.
+$s class Full $: <mi href="df-full.html">Full</mi> $.
+$s class Faith $: <mi href="df-fth.html">Faith</mi> $.
+$s class Nat $: <mi href="df-nat.html">Nat</mi> $.
+$s class FuncCat $: <mi href="df-fuc.html">FuncCat</mi> $.
+$s class Arrow $: <mi href="df-arw.html">Arrow</mi> $.
+$s class SetCat $: <mi href="df-setc.html">SetCat</mi> $.
+$s class CatCat $: <mi href="df-catc.html">CatCat</mi> $.
+$s class Preset $: <mi href="df-preset.html"> Preset </mi> $.
+$s class Dirset $: <mi href="df-drs.html">Dirset</mi> $.
+$s class Poset $: <mi href="df-poset.html">Poset</mi> $.
+$s class lt $: <mi href="df-plt.html">lt</mi> $.
+$s class lub $: <mi href="df-lubOLD.html">lub</mi> $.
+$s class glb $: <mi href="df-glb.html">glb</mi> $.
+$s class join $: <mi href="df-join.html">join</mi> $.
+$s class meet $: <mi href="df-meet.html">meet</mi> $.
+$s class Toset $: <mi href="df-toset.html">Toset</mi> $.
+$s class Lat $: <mi href="df-lat.html">Lat</mi> $.
+$s class CLat $: <mi href="df-clat.html">CLat</mi> $.
+$s class ODual $: <mi href="df-odu.html">ODual</mi> $.
+$s class toInc $: <mi href="df-ipo.html">toInc</mi> $.
+$s class DLat $: <mi href="df-dlat.html">DLat</mi> $.
+$s class PosetRel $: <mi href="df-ps.html">PosetRel</mi> $.
+$s class TosetRel $: <mi href="df-tsr.html">TosetRel</mi> $.
+$s class DirRel $: <mi href="df-dir.html">DirRel</mi> $.
+$s class tail $: <mi href="df-tail.html">tail</mi> $.
+$s class Mgm $: <mi href="df-mgm.html">Mgm</mi> $.
+$s class Mnd $: <mi href="df-mnd.html">Mnd</mi> $.
+$s class SGrp $: <mi href="df-sgrp.html">SGrp</mi> $.
+$s class Grp $: <mi href="df-grp.html">Grp</mi> $.
+$s class MgmHom $: <mi href="df-mgmhm.html"> MgmHom </mi> $.
+$s class MndHom $: <mi href="df-mhm.html"> MndHom </mi> $.
+$s class SubMgm $: <mi href="df-submgm.html">SubMgm</mi> $.
+$s class SubMnd $: <mi href="df-submnd.html">SubMnd</mi> $.
+$s class freeMnd $: <mi href="df-frmd.html">freeMnd</mi> $.
+$s class SubGrp $: <mi href="df-subg.html">SubGrp</mi> $.
+$s class NrmSGrp $: <mi href="df-nsg.html">NrmSGrp</mi> $.
+$s class GrpHom $: <mi href="df-ghm.html"> GrpHom </mi> $.
+$s class GrpIso $: <mi href="df-gim.html"> GrpIso </mi> $.
+$s class GrpAct $: <mi href="df-ga.html"> GrpAct </mi> $.
+$s class SymGrp $: <mi href="df-symg.html">SymGrp</mi> $.
+$s class Cntz $: <mi href="df-cntz.html">Cntz</mi> $.
+$s class Cntr $: <mi href="df-cntr.html">Cntr</mi> $.
+$s class od $: <mi href="df-od.html">od</mi> $.
+$s class gEx $: <mi href="df-gex.html">gEx</mi> $.
+$s class pGrp $: <mi href="df-pgp.html"> pGrp </mi> $.
+$s class pSyl $: <mi href="df-slw.html"> pSyl </mi> $.
+$s class LSSum $: <mi href="df-lsm.html">LSSum</mi> $.
+$s class freeGrp $: <mi href="df-frgp.html">freeGrp</mi> $.
+$s class CMnd $: <mi href="df-cmn.html">CMnd</mi> $.
+$s class Abel $: <mi href="df-abl.html">Abel</mi> $.
+$s class CycGrp $: <mi href="df-cyg.html">CycGrp</mi> $.
+$s class DProd $: <mi href="df-dprd.html"> DProd </mi> $.
+$s class dProj $: <mi href="df-dpj.html">dProj</mi> $.
+$s class mulGrp $: <mi href="df-mgp.html">mulGrp</mi> $.
+$s class Rng $: <mi href="df-rng.html">Rng</mi> $.
+$s class Ring $: <mi href="df-ring.html">Ring</mi> $.
+$s class CRing $: <mi href="df-cring.html">CRing</mi> $.
+$s class Unit $: <mi href="df-unit.html">Unit</mi> $.
+$s class Irred $: <mi href="df-irred.html">Irred</mi> $.
+$s class RngHomo $: <mi href="df-rnghomo.html"> RngHomo </mi> $.
+$s class RngIsom $: <mi href="df-rngisom.html"> RngIsom </mi> $.
+$s class RingHom $: <mi href="df-rnghom.html"> RingHom </mi> $.
+$s class RingIso $: <mi href="df-rngiso.html"> RingIso </mi> $.
+$s class ~=r $: <msub href="df-ric.html"> <mo>&#x2243;</mo> <mi>&#x1D45F;</mi> </msub> $.
+$s class DivRing $: <mi href="df-drng.html">DivRing</mi> $.
+$s class Field $: <mi href="df-field.html">Field</mi> $.
+$s class SubRing $: <mi href="df-subrg.html">SubRing</mi> $.
+$s class RingSpan $: <mi href="df-rgspn.html">RingSpan</mi> $.
+$s class AbsVal $: <mi href="df-abv.html">AbsVal</mi> $.
+$s class LMod $: <mi href="df-lmod.html">LMod</mi> $.
+$s class LSubSp $: <mi href="df-lss.html">LSubSp</mi> $.
+$s class LSpan $: <mi href="df-lsp.html">LSpan</mi> $.
+$s class LMHom $: <mi href="df-lmhm.html"> LMHom </mi> $.
+$s class LMIso $: <mi href="df-lmim.html"> LMIso </mi> $.
+$s class LBasis $: <mi href="df-lbs.html">LBasis</mi> $.
+$s class LVec $: <mi href="df-lvec.html">LVec</mi> $.
+$s class subringAlg $: <mi href="df-sra.html"> subringAlg </mi> $.
+$s class ringLMod $: <mi href="df-rgmod.html">ringLMod</mi> $.
+$s class LIdeal $: <mi href="df-lidl.html">LIdeal</mi> $.
+$s class RSpan $: <mi href="df-rsp.html">RSpan</mi> $.
+$s class 2Ideal $: <mi href="df-2idl.html">2Ideal</mi> $.
+$s class LPIdeal $: <mi href="df-lpidl.html">LPIdeal</mi> $.
+$s class LPIR $: <mi href="df-lpir.html">LPIR</mi> $.
+$s class NzRing $: <mi href="df-nzr.html">NzRing</mi> $.
+$s class RLReg $: <mi href="df-rlreg.html">RLReg</mi> $.
+$s class Domn $: <mi href="df-domn.html">Domn</mi> $.
+$s class IDomn $: <mi href="df-idom.html">IDomn</mi> $.
+$s class PID $: <mi href="df-pid.html">PID</mi> $.
+$s class AssAlg $: <mi href="df-assa.html">AssAlg</mi> $.
+$s class AlgSpan $: <mi href="df-asp.html">AlgSpan</mi> $.
+$s class algSc $: <mi href="df-ascl.html">algSc</mi> $.
+$s class mPwSer $: <mi href="df-psr.html"> mPwSer </mi> $.
+$s class mVar $: <mi href="df-mvr.html"> mVar </mi> $.
+$s class mPoly $: <mi href="df-mpl.html"> mPoly </mi> $.
+$s class evalSub $: <mi href="df-evls.html"> evalSub </mi> $.
+$s class eval $: <mi href="df-evl.html"> eval </mi> $.
+$s class mHomP $: <mi href="df-mhp.html"> mHomP </mi> $.
+$s class mPSDer $: <mi href="df-psd.html"> mPSDer </mi> $.
+$s class ordPwSer $: <mi href="df-opsr.html"> ordPwSer </mi> $.
+$s class selectVars $: <mi href="df-selv.html"> selectVars </mi> $.
+$s class AlgInd $: <mi href="df-algind.html"> AlgInd </mi> $.
+$s class Met $: <mi href="df-met.html">Met</mi> $.
+$s class ball $: <mi href="df-bl.html">ball</mi> $.
+$s class MetOpen $: <mi href="df-mopn.html">MetOpen</mi> $.
+$s class chr $: <mi href="df-chr.html">chr</mi> $.
+$s class PreHil $: <mi href="df-phl.html">PreHil</mi> $.
+$s class ocv $: <mi href="df-ocv.html">ocv</mi> $.
+$s class CSubSp $: <mi href="df-cs.html">CSubSp</mi> $.
+$s class toHL $: <mi href="df-thl.html">toHL</mi> $.
+$s class proj $: <mi href="df-pj.html">proj</mi> $.
+$s class Hil $: <mi href="df-hil.html">Hil</mi> $.
+$s class OBasis $: <mi href="df-obs.html">OBasis</mi> $.
+$s class Top $: <mi href="df-top.html">Top</mi> $.
+$s class TopOn $: <mi href="df-topon.html">TopOn</mi> $.
+$s class TopSp $: <mi href="df-topsp.html">TopSp</mi> $.
+$s class TopBases $: <mi href="df-bases.html">TopBases</mi> $.
+$s class Clsd $: <mi href="df-cld.html">Clsd</mi> $.
+$s class int $: <mi href="df-ntr.html">int</mi> $.
+$s class cls $: <mi href="df-clsOLD.html">cls</mi> $.
+$s class nei $: <mi href="df-nei.html">nei</mi> $.
+$s class limPt $: <mi href="df-lp.html">limPt</mi> $.
+$s class Perf $: <mi href="df-perf.html">Perf</mi> $.
+$s class Cn $: <mi href="df-cn.html">Cn</mi> $.
+$s class CnP $: <mi href="df-cnp.html">CnP</mi> $.
+$s class Kol2 $: <mi href="df-t0.html">Kol2</mi> $.
+$s class Fre $: <mi href="df-t1.html">Fre</mi> $.
+$s class Haus $: <mi href="df-haus.html">Haus</mi> $.
+$s class Reg $: <mi href="df-reg.html">Reg</mi> $.
+$s class Nrm $: <mi href="df-nrm.html">Nrm</mi> $.
+$s class CNrm $: <mi href="df-cnrm.html">CNrm</mi> $.
+$s class PNrm $: <mi href="df-pnrm.html">PNrm</mi> $.
+$s class Comp $: <mi href="df-cmp.html">Comp</mi> $.
+$s class Conn $: <mi href="df-conn.html">Conn</mi> $.
+$s class kGen $: <mi href="df-kgen.html">&#x1D458;Gen</mi> $.
+$s class KQ $: <mi href="df-kq.html">KQ</mi> $.
+$s class Homeo $: <mi href="df-hmeo.html">Homeo</mi> $.
+$s class fBas $: <mi href="df-fbas.html">fBas</mi> $.
+$s class filGen $: <mi href="df-fg.html">filGen</mi> $.
+$s class Fil $: <mi href="df-fil.html">Fil</mi> $.
+$s class UFil $: <mi href="df-ufil.html">UFil</mi> $.
+$s class UFL $: <mi href="df-ufl.html">UFL</mi> $.
+$s class FilMap $: <mi href="df-fm.html"> FilMap </mi> $.
+$s class fLim $: <mi href="df-flim.html"> fLim </mi> $.
+$s class fLimf $: <mi href="df-flf.html"> fLimf </mi> $.
+$s class fClus $: <mi href="df-fcls.html"> fClus </mi> $.
+$s class fClusf $: <mi href="df-fcf.html"> fClusf </mi> $.
+$s class TopMnd $: <mi href="df-tmd.html">TopMnd</mi> $.
+$s class TopGrp $: <mi href="df-tgp.html">TopGrp</mi> $.
+$s class tsums $: <mi href="df-tsms.html">tsums</mi> $.
+$s class TopRing $: <mi href="df-trg.html">TopRing</mi> $.
+$s class TopDRing $: <mi href="df-tdrg.html">TopDRing</mi> $.
+$s class TopMod $: <mi href="df-tlm.html">TopMod</mi> $.
+$s class TopVec $: <mi href="df-tvc.html">TopVec</mi> $.
+$s class MetSp $: <mi href="df-ms.html">MetSp</mi> $.
+$s class toMetSp $: <mi href="df-tms.html">toMetSp</mi> $.
+$s class norm $: <mi href="df-norm.html">norm</mi> $.
+$s class NrmGrp $: <mi href="df-ngp.html">NrmGrp</mi> $.
+$s class toNrmGrp $: <mi href="df-tng.html"> toNrmGrp </mi> $.
+$s class NrmRing $: <mi href="df-nrg.html">NrmRing</mi> $.
+$s class NrmMod $: <mi href="df-nlm.html">NrmMod</mi> $.
+$s class NrmVec $: <mi href="df-nvc.html">NrmVec</mi> $.
+$s class normOp $: <mi href="df-nmo.html"> normOp </mi> $.
+$s class NGHom $: <mi href="df-nghm.html"> NGHom </mi> $.
+$s class NMHom $: <mi href="df-nmhm.html"> NMHom </mi> $.
+$s class II $: <mi href="df-ii.html">II</mi> $.
+$s class Htpy $: <mi href="df-htpy.html"> Htpy </mi> $.
+$s class PHtpy $: <mi href="df-phtpy.html">PHtpy</mi> $.
+$s class CMod $: <mi href="df-clm.html">CMod</mi> $.
+$s class CPreHil $: <mi href="df-cph.html">CPreHil</mi> $.
+$s class toCHil $: <mi href="df-tch.html">toCHil</mi> $.
+$s class CauFil $: <mi href="df-cfil.html">CauFil</mi> $.
+$s class CauFilU $: <mi href="df-cfilu.html">CauFilU</mi> $.
+$s class Cau $: <mi href="df-cau.html">Cau</mi> $.
+$s class CMet $: <mi href="df-cmet.html">CMet</mi> $.
+$s class CMetSp $: <mi href="df-cms.html">CMetSp</mi> $.
+$s class Ban $: <mi href="df-bn.html">Ban</mi> $.
+$s class mDeg $: <mi href="df-mdeg.html"> mDeg </mi> $.
+$s class Poly $: <mi href="df-ply.html">Poly</mi> $.
+$s class coeff $: <mi href="df-coe.html">coeff</mi> $.
+$s class deg $: <mi href="df-dgr.html">deg</mi> $.
+$s class quot $: <mi href="df-quot.html"> quot </mi> $.
+$s class AA $: <mi href="df-aa.html">&#120120;</mi> $.
+$s class Tayl $: <mi href="df-tayl.html"> Tayl </mi> $.
+$s class Ana $: <mi href="df-ana.html">Ana</mi> $.
+$s class DChr $: <mi href="df-dchr.html">DChr</mi> $.
+$s class Plig $: <mi href="df-plig.html">Plig</mi> $.
+$s class RPrime $: <mi href="df-rprm.html">RPrime</mi> $.
+$s class t+ $: <mi href="df-trcl.html">t+</mi> $.
+$s class t* $: <mi href="df-rtrcl.html">t*</mi> $.
+$s class GrpOp $: <mi href="df-grpo.html">GrpOp</mi> $.
+$s class GId $: <mi href="df-gid.html">GId</mi> $.
+$s class inv $: <mi href="df-ginv.html">inv</mi> $.
+$s class AbelOp $: <mi href="df-ablo.html">AbelOp</mi> $.
+$s class Ass $: <mi href="df-ass.html">Ass</mi> $.
+$s class ExId $: <mi href="df-exid.html"> ExId </mi> $.
+$s class Magma $: <mi href="df-mgm.html">Magma</mi> $.
+$s class SemiGrp $: <mi href="df-sgr.html">SemiGrp</mi> $.
+$s class MndOp $: <mi href="df-mndo.html">MndOp</mi> $.
+$s class GrpOpHom $: <mi href="df-ghom.html"> GrpOpHom </mi> $.
+$s class RingOps $: <mi href="df-rngo.html">RingOps</mi> $.
+$s class DivRingOps $: <mi href="df-drngo.html">DivRingOps</mi> $.
+$s class Com2 $: <mi href="df-com2.html">Com2</mi> $.
+$s class Fld $: <mi href="df-fld.html">Fld</mi> $.
+$s class NrmCVec $: <mi href="df-nv.html">NrmCVec</mi> $.
+$s class BaseSet $: <mi href="df-ba.html">BaseSet</mi> $.
+$s class IndMet $: <mi href="df-ims.html">IndMet</mi> $.
+$s class SubSp $: <mi href="df-ssp.html">SubSp</mi> $.
+$s class LnOp $: <mi href="df-lno.html"> LnOp </mi> $.
+$s class BLnOp $: <mi href="df-blo.html"> BLnOp </mi> $.
+$s class adj $: <mi href="df-aj.html">adj</mi> $.
+$s class HmOp $: <mi href="df-hmo.html">HmOp</mi> $.
+$s class CBan $: <mi href="df-cbn.html">CBan</mi> $.
+$s class Cauchy $: <mi href="df-hcau.html">Cauchy</mi> $.
+$s class _|_ $: <mi href="df-oc.html">&#8869;</mi> $.
+$s class span $: <mi href="df-span.html">span</mi> $.
+$s class ContOp $: <mi href="df-cnop.html">ContOp</mi> $.
+$s class LinOp $: <mi href="df-lnop.html">LinOp</mi> $.
+$s class BndLinOp $: <mi href="df-bdop.html">BndLinOp</mi> $.
+$s class UniOp $: <mi href="df-unop.html">UniOp</mi> $.
+$s class HrmOp $: <mi href="df-hmop.html">HrmOp</mi> $.
+$s class null $: <mi href="df-nlfn.html">null</mi> $.
+$s class ContFn $: <mi href="df-cnfn.html">ContFn</mi> $.
+$s class LinFn $: <mi href="df-lnfn.html">LinFn</mi> $.
+$s class bra $: <mi href="df-bra.html">bra</mi> $.
+$s class ketbra $: <mi href="df-kb.html"> ketbra </mi> $.
+$s class eigvec $: <mi href="df-eigvec.html">eigvec</mi> $.
+$s class eigval $: <mi href="df-eigval.html">eigval</mi> $.
+$s class Lambda $: <mi href="df-spec.html">Lambda</mi> $.
+$s class States $: <mi href="df-st.html">States</mi> $.
+$s class CHStates $: <mi href="df-hst.html">CHStates</mi> $.
+$s class HAtoms $: <mi href="df-at.html">HAtoms</mi> $.
+
+$( Mario Carneiro's Mathbox $)
+
+$s class gamma $: <mi href="df-em.html">&gamma;</mi> $.
+$s class zeta $: <mi href="df-zeta.html" mathvariant="normal">&zeta;</mi> $.
+$s class _G $: <mi href="df-gam.html" mathvariant="normal">&Gamma;</mi> $.
+$s class log_G $: <mrow><mi href="df-lgam.html">log</mi> <mi href="df-gam.html" mathvariant="normal">&Gamma;</mi></mrow> $.
+$s class Retr $: <mi href="df-retr.html"> Retr </mi> $.
+$s class PConn $: <mi href="df-pconn.html">PConn</mi> $.
+$s class SConn $: <mi href="df-sconn.html">SConn</mi> $.
+$s class CovMap $: <mi href="df-cvm.html"> CovMap </mi> $.
+$s class AxExt $: <mi href="df-gzext.html">AxExt</mi> $.
+$s class AxRep $: <mi href="df-gzrep.html">AxRep</mi> $.
+$s class AxPow $: <mi href="df-gzpow.html">AxPow</mi> $.
+$s class AxUn $: <mi href="df-gzun.html">AxUn</mi> $.
+$s class AxReg $: <mi href="df-gzreg.html">AxReg</mi> $.
+$s class AxInf $: <mi href="df-gzinf.html">AxInf</mi> $.
+$s class IntgRing $: <mi href="df-irng.html"> IntgRing </mi> $.
+$s class cplMetSp $: <mi href="df-cplmet.html"> cplMetSp </mi> $.
+$s class HomLimB $: <mi href="df-homlimb.html"> HomLimB </mi> $.
+$s class HomLim $: <mi href="df-homlim.html"> HomLim </mi> $.
+$s class polyFld $: <mi href="df-plfl.html"> polyFld </mi> $.
+$s class splitFld $: <mi href="df-sfl.html"> splitFld </mi> $.
+$s class splitFld1 $: <msub href="df-sfl1.html"><mi> splitFld </mi> <mn>1</mn></msub> $.
+$s class polySplitLim $: <mi href="df-psl.html"> polySplitLim </mi> $.
+$s class t*rec $: <mi href="df-rtrclrec.html">t*rec</mi> $.
+$s class numer $: <mi href="df-numer.html">numer</mi> $.
+$s class denom $: <mi href="df-denom.html">denom</mi> $.
+
+$( Metamath formal systems $)
+$s class mCN $: <mi href="df-mcn.html">mCN</mi> $.
+$s class mVR $: <mi href="df-mvar.html">mVR</mi> $.
+$s class mType $: <mi href="df-mty.html">mType</mi> $.
+$s class mVT $: <mi href="df-mvt.html">mVT</mi> $.
+$s class mTC $: <mi href="df-mtc.html">mTC</mi> $.
+$s class mAx $: <mi href="df-max.html">mAx</mi> $.
+$s class mREx $: <mi href="df-mrex.html">mREx</mi> $.
+$s class mEx $: <mi href="df-mex.html">mEx</mi> $.
+$s class mDV $: <mi href="df-mdv.html">mDV</mi> $.
+$s class mVars $: <mi href="df-mvrs.html">mVars</mi> $.
+$s class mRSubst $: <mi href="df-mrsub.html">mRSubst</mi> $.
+$s class mSubst $: <mi href="df-msub.html">mSubst</mi> $.
+$s class mVH $: <mi href="df-mvh.html">mVH</mi> $.
+$s class mPreSt $: <mi href="df-mpst.html">mPreSt</mi> $.
+$s class mStRed $: <mi href="df-msr.html">mStRed</mi> $.
+$s class mStat $: <mi href="df-msta.html">mStat</mi> $.
+$s class mFS $: <mi href="df-mfs.html">mFS</mi> $.
+$s class mCls $: <mi href="df-mcls.html">mCls</mi> $.
+$s class mPPSt $: <mi href="df-mpps.html">mPPSt</mi> $.
+$s class mThm $: <mi href="df-mthm.html">mThm</mi> $.
+
+$s class m0St $: <mi href="df-m0s.html">m0St</mi> $.
+$s class mSA $: <mi href="df-msa.html">mSA</mi> $.
+$s class mWGFS $: <mi href="df-mwgfs.html">mWGFS</mi> $.
+$s class mSyn $: <mi href="df-msy.html">mSyn</mi> $.
+$s class mESyn $: <mi href="df-mesy.html">mESyn</mi> $.
+$s class mGFS $: <mi href="df-mgfs.html">mGFS</mi> $.
+$s class mTree $: <mi href="df-mtree.html">mTree</mi> $.
+$s class mST $: <mi href="df-mst.html">mST</mi> $.
+$s class mSAX $: <mi href="df-msax.html">mSAX</mi> $.
+$s class mUFS $: <mi href="df-mufs.html">mUFS</mi> $.
+
+$s class mUV $: <mi href="df-muv.html">mUV</mi> $.
+$s class mVL $: <mi href="df-mvl.html">mVL</mi> $.
+$s class mVSubst $: <mi href="df-mvsb.html">mVSubst</mi> $.
+$s class mFresh $: <mi href="df-mfsh.html">mFresh</mi> $.
+$s class mFRel $: <mi href="df-mfrel.html">mFRel</mi> $.
+$s class mEval $: <mi href="df-mevl.html">mEval</mi> $.
+$s class mMdl $: <mi href="df-mdl.html">mMdl</mi> $.
+$s class mUSyn $: <mi href="df-musyn.html">mUSyn</mi> $.
+$s class mGMdl $: <mi href="df-gmdl.html">mGMdl</mi> $.
+$s class mItp $: <mi href="df-mitp.html">mItp</mi> $.
+$s class mFromItp $: <mi href="df-mfitp.html">mFromItp</mi> $.
+
+
+$( PseudoMetrics and Uniformities $)
+$s class PsMet $: <mi href="df-psmet.html">PsMet</mi> $.
+$s class uCn $: <mi href="df-ucn.html">uCn</mi> $.
+$s class CnExt $: <mi href="df-cnext.html">CnExt</mi> $.
+$s class UnifSt $: <mi href="df-uss.html">UnifSt</mi> $.
+$s class unifTop $: <mi href="df-utop.html">unifTop</mi> $.
+$s class UnifOn $: <mi href="df-ust.html">UnifOn</mi> $.
+$s class UnifSet $: <mi href="df-unif.html">UnifSet</mi> $.
+$s class UnifSp $: <mi href="df-unifsp.html">UnifSp</mi> $.
+$s class CUnifSp $: <mi href="df-cusp.html">CUnifSp</mi> $.
+$s class toUnifSp $: <mi href="df-tus.html">toUnifSp</mi> $.
+$s class metUnif $: <mi href="df-metu.html">metUnif</mi> $.
+$s class ~Met $: <msub href="df-metid.html"><mo>~</mo> <mi mathvariant="italic">Met</mi></msub> $.
+$s class pstoMet $: <mi href="df-pstm.html">pstoMet</mi> $.
+$s class HCmp $: <mi href="df-hcmp.html">HCmp</mi> $.
+
+
+$( Hilbert Spaces $)
+$s class ~H $: <mi href="df-hba.html"> &#8459;</mi> $.
+$s class 0h $: <msub href="df-h0v.html"><mi>0</mi> <mi>&#x210E;</mi></msub> $. 
+$s class +h $: <msub href="h2hva.html"><mo>+</mo> <mi>&#x210E;</mi></msub> $. 
+$s class -h $: <msub href="df-hvsub.html"><mo>-</mo> <mi>&#x210E;</mi></msub> $. 
+$s class .h $: <msub href="h2hsm.html"><mo>&sdot;</mo> <mi>&#x210E;</mi></msub> $. 
+$s class .ih $: <msub href="ax-hfi.html"><mo>&sdot;</mo> <mi>ih</mi></msub> $. 
+$s class normh $: <msub href="df-hnorm.html"><mo>norm</mo> <mi>&#x210E;</mi></msub> $. 
+$s class -op $: <msub href="df-hodif.html"><mo>-</mo> <mi>op</mi></msub> $. 
+$s class +op $: <msub href="df-hosum.html"><mo>+</mo> <mi>op</mi></msub> $. 
+$s class .op $: <msub href="df-homul.html"><mo>&middot;</mo> <mi>op</mi></msub> $. 
+$s class 0op $: <msub href="df-0o.html"><mi>0</mi> <mi>op</mi></msub> $. 
+$s class <_op $: <msub href="df-leop.html"><mi>&le;</mi> <mi>op</mi></msub> $. 
+$s class +fn $: <msub href="df-hfsum.html"><mo>+</mo> <mi>fn</mi></msub> $. 
+$s class .fn $: <msub href="df-hfmul.html"><mo>&middot;</mo> <mi>fn</mi></msub> $. 
+$s class 0hop $: <msub href="df-h0op.html"><mi>0</mi> <mi>hop</mi></msub> $. 
+$s class Iop $: <msub href="df-iop.html"><mi>I</mi> <mi>op</mi></msub> $. 
+$s class normop $: <msub href="df-nmop.html"><mo>norm</mo> <mi>op</mi></msub> $. 
+$s class normfn $: <msub href="df-nmfn.html"><mo>norm</mo> <mi>fn</mi></msub> $. 
+$s class adjh $: <msub href="df-adjh.html"><mo>adj</mo> <mi>h</mi></msub> $. 
+$s class +H $: <msub href="df-shs.html"><mo>+</mo> <mi>&#8459;</mi></msub> $.
+$s class vH $: <msub href="df-chj.html"><mo>&or;</mo> <mi>&#8459;</mi></msub> $.
+$s class \/H $: <msub href="df-chsup.html"><mo>&#x22C1;</mo> <mi>&#8459;</mi></msub> $.
+$s class 0H $: <msub href="df-ch0.html"><mi>0</mi> <mi>&#8459;</mi></msub> $.
+$s class projh $: <msub href="df-pjh.html"><mi>proj</mi> <mi>&#x210E;</mi></msub> $.
+$s class C_H $: <msub href="df-cm.html"><mo>&#x1D436;</mo> <mi>&#8459;</mi></msub> $.
+$s class CH $: <msub href="df-ch.html"><mo mathvariant="bold">C</mo> <mi>&#8459;</mi></msub> $.
+$s class SH $: <msub href="df-sh.html"><mo mathvariant="bold">S</mo> <mi>&#8459;</mi></msub> $.
+$s class <oH $: <msub href="df-cv.html"><mo>&#8918;</mo> <mi>&#8459;</mi></msub> $. 
+$s class MH $: <msub href="df-md.html"><mo>&#x1D440;</mo> <mi>&#8459;</mi></msub> $. 
+$s class MH* $: <msubsup href="df-dmd.html"><mo>&#x1D440;</mo> <mi>&#8459;</mi> <mi>*</mi></msubsup> $. 
+$s class _|_ $: <mo href="df-oc.html">&perp;</mo> $.
+
+$( Thierry Arnoux $)
+
+$( Ordered Structures $)
+$s class oGrp $: <mi href="df-ogrp.html">oGrp</mi> $.
+$s class oField $: <mi href="df-ofld.html">oField</mi> $.
+$s class <<< $: <mo href="df-inftm.html">&#x22D8;</mo> $.
+$s class Archi $: <mi href="df-archi.html">Archi</mi> $.
+$s class oMnd $: <mi href="df-omnd.html">oMnd</mi> $.
+$s class oRing $: <mi href="df-orng.html">oRing</mi> $.
+$s class SRing $: <mi href="df-srg.html">SRing</mi> $.
+$s class SLMod $: <mi href="df-slmod.html">SLMod</mi> $.
+$s class sgns $: <msub href="df-sgns.html"><mo>sgn</mo> <mi>s</mi></msub> $.
+
+$( Cannonical embeddings $)
+$s class ZRHom $: <mi href="df-zrh.html">&#8484;RHom</mi> $.
+$s class ZMod $: <mi href="df-zlm.html">&#8484;Mod</mi> $.
+$s class QQHom $: <mi href="df-qqh.html">&Qopf;Hom</mi> $.
+$s class RRHom $: <mi href="df-rrh.html">&Ropf;Hom</mi> $.
+$s class RR*Hom $: <mi href="df-xrh.html"><msup><mi>&Ropf;</mi> <mo>*</mo></msup>Hom</mi> $.
+$s class RRExt $: <mi href="df-rrext.html">&Ropf;Ext</mi> $.
+
+$( Indicator function $)
+$s class _Ind $: <mi href="df-ind.html">&#x1D7D9;</mi> $.
+$s class ( _Ind ` O ) $: <msub><mi href="df-ind.html">&#x1D7D9;</mi> #O#</msub> $.
+
+$( Topology $)
+$s class CovHasRef A $: <mrow><mi href="df-cref.html">CovHasRef</mi> #A#</mrow> $.
+$s class Ldlf $: <mi href="df-ldlf.html">Ldlf</mi> $.
+$s class Paracomp $: <mi href="df-pcmp.html">Paracomp</mi> $.
+$s class ManTop $: <mi href="df-mntop.html">ManTop</mi> $.
+
+$( Number Theory $)
+$s class repr $: <mi href="df-repr.html">repr</mi> $.
+$s class vts $: <mi href="df-vts.html">vts</mi> $.
+
+
+$( Measure Theory $)
+$s class sigAlgebra $: <mi href="df-siga.html">sigAlgebra</mi> $.
+$s class sigaGen $: <mi href="df-sigagen.html">&#x1d6d4;</mi> $. $( Gives a warning, but with &sigma; there is no distinction ` sigma ` $)
+$s class BrSiga $: <msub href="df-brsiga.html"><mi>&#x1D505;</mi> <mi>&Ropf;</mi></msub> $.
+$s class sX $: <msub href="df-sx.html"><mo>&times;</mo> <mi>s</mi></msub> $.
+$s class measures $: <mi href="df-meas.html">measures</mi> $.
+$s class Ddelta $: <mi href="df-dde.html">&delta;</mi> $.
+$s class ae $: <mi href="df-ae.html">ae</mi> $.
+$s class ~ae $: <msub href="df-fae.html"><mo>~</mo><mi>ae</mi></msub> $.
+$s wff A ae B $: <mrow>#A# #B#<mi href="df-ae.html">-ae.</mi></mrow> $.
+$s wff { x e. A | ph } ae B $: <mrow>#ph# <msub><mrow>#B#<mi href="df-ae.html">-ae.</mi></mrow> <mrow>#x# <mo>&isin;</mo> #A#</mrow></msub></mrow> $.
+$s wff R ~ae C $: <msub>#R# <mrow>#C#<mi href="df-fae.html">-ae.</mi></mrow></msub> $.
+$s wff A ( R ~ae C ) B $: <mrow>#A# #R# #B# #C#<mi href="df-fae.html">-ae.</mi></mrow> $.
+$s class toOMeas $: <mi href="df-oms.html">toOMeas</mi> $.
+$s class toCaraSiga $: <mi href="df-carsg.html">toCaraSiga</mi> $.
+$s class MblFnM $: <msub href="df-mbfm.html"><mi>MblFn</mi> <mi>&mu;</mi></msub> $.
+$s class itgm $: <mi href="df-itgm.html">itgm</mi> $.
+$s class sitg $: <mi href="df-sitg.html">sitg</mi> $.
+$s class sitm $: <mi href="df-sitm.html">sitm</mi> $.
+$s class ( ( A itgm B ) ` F ) $: <mrow><msubsup><mo href="df-itgm.html">&#x222B;</mo> <mi>&mu;</mi> #A#</msubsup> #F# <mo>d</mo>#B#</mrow> $.
+$s class ( ( A sitg B ) ` F ) $: <mrow><msubsup><mo href="df-sitg.html">&#x222B;</mo> <mi>&#x2111;</mi> #A#</msubsup> #F# <mo>d</mo>#B#</mrow> $.
+$s class dom ( A sitg B ) $: <msubsup><mo href="df-sitg.html">&#x2111;</mo> #B# #A#</msubsup> $.
+$s class ( A sitm B ) $: <msubsup><mrow><mo>&vert;</mo><mi>.</mi> <mo>-</mo> <mi>.</mi><mo>&vert;</mo></mrow> #B# #A#</msubsup> $. $( Looks like mfenced does not work with &vert; $)
+$s class ( F ( A sitm B ) G ) $: <msubsup><mrow><mo>&vert;</mo>#G# <mo>-</mo> #F#<mo>&vert;</mo></mrow> #B# #A#</msubsup> $. $( Looks like mfenced does not work with &vert; $)
+$s class-o ( F ( A sitm B ) G ) $: <msubsup><mrow><mo>&vert;</mo>#G# <mo>-</mo> #F#<mo>&vert;</mo></mrow> #B# #A#</msubsup> $. $( Looks like mfenced does not work with &vert; $)
+$s class Prob $: <mi href="df-prob.html">Prob</mi> $.
+$s class cprob $: <mi href="df-cndprob.html">cProb</mi> $.
+$s class rRndVar $: <msub href="df-rrv.html"><mi>RndVar</mi> <mi>&Ropf;</mi></msub> $.
+$s class oRVC R $: <mrow> <msub><mo href="df-orvc.html">&compfn;</mo> <mi>RV/c</mi></msub> <mo>&ApplyFunction;</mo> #R# </mrow> $.
+$s class ( F oRVC R A ) $: <mfenced><mrow>#F# <msub>#R# <mi href="df-orvc.html">RV/c</mi></msub> #A#</mrow></mfenced> $.
+$s class-o ( F oRVC R A ) $: <mrow>#F# <msub>#R# <mi href="df-orvc.html">RV/c</mi></msub> #A#</mrow> $.
+
+
+$( p-adic number fields $)
+$s class ZRing $: <mi href="df-zrng.html">&Zopf;Ring</mi> $.
+$s class GF $: <mi href="df-gf.html"> GF </mi> $.
+$s class ~Qp $: <msub href="df-eqp.html"><mo>~</mo><msub><mi>&Qopf;</mi><mi>p</mi></msub></msub> $.
+$s class /Qp $: <msub href="df-rqp.html"><mo>/</mo><msub><mi>&Qopf;</mi><mi>p</mi></msub></msub> $.
+$s class Qp $: <msub href="df-qp.html"><mi>&Qopf;</mi><mi>p</mi></msub> $.
+$s class QpOLD $: <msub href="df-qpOLD.html"><mi>&Qopf;OLD</mi><mi>p</mi></msub> $.
+$s class Zp $: <msub href="df-zp.html"><mi>&Zopf;</mi><mi>p</mi></msub> $.
+$s class _Qp $: <mover href="df-qpa.html"><msub><mi>&Qopf;</mi><mi>p</mi></msub> <mo>&oline;</mo></mover> $.
+$s class Cp $: <msub href="df-cp.html"><mi>&Copf;</mi><mi>p</mi></msub> $.
+
+
+$( Graph Theory $)
+$s class UMGraph $: <mi href="df-umgr.html">UMGraph</mi> $.
+$s class UHGraph $: <mi href="df-uhgr.html">UHGraph</mi> $.
+$s class USHGraph $: <mi href="df-ushgr.html">USHGraph</mi> $.
+$s class USGraph $: <mi href="df-usgr.html">USGraph</mi> $.
+$s class SubGraph $: <mi href="df-subgr.html">SubGraph</mi> $.
+$s class NeighbVtx $: <mi href="df-nbgr.html">NeighbVtx</mi> $.
+$s class ComplGraph $: <mi href="df-cplgr.html">ComplGraph</mi> $.
+$s class ComplUSGraph $: <mi href="df-cusgr.html">ComplUSGraph</mi> $.
+$s class UnivVtx $: <mi href="df-uvtx.html">UnivVtx</mi> $.
+$s class .ef $: <mi href="df-edgf.html"> ef </mi> $.
+$s class Vtx $: <mi href="df-vtx.html"> Vtx </mi> $.
+$s class iEdg $: <mi href="df-iedg.html"> iEdg </mi> $.
+$s class Edg $: <mi href="df-edg.html"> Edg </mi> $.
+$s class UPGraph $: <mi href="df-upgr.html"> UPGraph </mi> $.
+$s class USPGraph $: <mi href="df-ushgr.html"> USHGraph </mi> $.
+$s class FinUSGraph $: <mi href="df-fusg.html"> FinUSGraph </mi> $.
+$s class EulerPaths $: <mi href="df-eupth.html"> EulerPaths </mi> $.
+$s class VtxDeg $: <mi href="df-vtxdg.html"> VtxDeg </mi> $.
+$s class Walks $: <mi href="df-wlk.html">Walks</mi> $.
+$s class Trails $: <mi href="df-trls.html">Trails</mi> $.
+$s class TrailsOn $: <mi href="df-trlson.html">TrailsOn</mi> $.
+$s class Paths $: <mi href="df-pth.html">Paths</mi> $.
+$s class SPaths $: <mi href="df-spth.html">SPaths</mi> $.
+$s class PathsOn $: <mi href="df-pthson.html">PathsOn</mi> $.
+$s class SPathsOn $: <mi href="df-spthson.html">SPathsOn</mi> $.
+$s class Circuits $: <mi href="df-crct.html">Circuits</mi> $.
+$s class Cycles $: <mi href="df-cycl.html">Cycles</mi> $.
+$s class ConnGraph $: <mi href="df-conngr.html">ConnGraph</mi> $.
+$s class WWalks $: <mi href="df-wwlk.html">WWalks</mi> $.
+$s class WWalksN $: <mi href="df-wwlkn.html">WWalksN</mi> $.
+$s class WWalksNOn $: <mi href="df-wwlksnon.html">WWalksNOn</mi> $.
+$s class WSPathsN $: <mi href="df-wspthsn.html">WSPathsN</mi> $.
+$s class WSPathsNOn $: <mi href="df-wspthsnon.html">WSPathsNOn</mi> $.
+$s class RegGraph $: <mi href="df-rgr.html">RegGraph</mi> $.
+$s class RegUSGraph $: <mi href="df-rusgr.html">RegUSGraph</mi> $.
+$s class ClWalks $: <mi href="df-clwlk.html">ClWalks</mi> $.
+$s class ClWWalks $: <mi href="df-clwwlk.html">ClWWalks</mi> $.
+$s class ClWWalksN $: <mi href="df-clwwlkn.html">ClWWalksN</mi> $.
+
+$s class seqstr $: <msub href="df-sseq.html"><mi>seq</mi> <mo>str</mo></msub> $.
+$s class Fibci $: <mi href="df-fibci.html">Fibci</mi> $.
+
+
+
+$s class CVecOLD $: <msub href="df-vc.html"><mo>CVec</mo> <mi>OLD</mi></msub> $.
+$s class .sOLD $: <msub href="df-sm.html"><mo>&sdot;</mo> <mi>&#x1D460;OLD</mi></msub> $.
+$s class .iOLD $: <msub href="df-dip.html"><mo>&sdot;</mo> <mi>&#x1D456;OLD</mi></msub> $.
+$s class normOpOLD $: <msub href="df-nmoo.html"><mo>normOp</mo> <mi>OLD</mi></msub> $.
+$s class CPreHilOLD $: <msub href="df-ph.html"><mo>CPreHil</mo> <mi>OLD</mi></msub> $.
+$s class CHilOLD $: <msub href="df-hlo.html"><mo>CHil</mo> <mi>OLD</mi></msub> $.
+
+$( M L $)
+$s class ( A ^^ B ) $: <mrow> #A# <mo href="df-finxp.html">&uarr;&uarr;</mo> #B# </mrow> $.
+
+
+$( Wolf Lammen $)
+$s wff x wl-el A $: <mrow> #A# <mo href="ax-wl-8cl.html">&isin;</mo> #B# </mrow> $.
+$s wff x wl-el2 A $: <mrow> #A# <mo href="df-wl-clelv2.html">&isin;</mo> #B# </mrow> $.
+
+
+$( Removed as part of FL'mathbox
+
+$s class <> $: <mi>&#9671;</mi> $.
+$s class [.] $: <mi>&#9723;</mi> $.
+$s class () $: <mi>&#9675;</mi> $.
+$s class until $: <mi> until </mi> $.
+$s class pr $: <mi href="df-pro.html"> pr </mi> $.
+$s class prj $: <mi href="df-prj.html"> prj </mi> $.
+$s class cset $: <mi href="df-cst.html">cset</mi> $.
+$s class LatAlg $: <mi href="df-latalg.html">LatAlg</mi> $.
+$s class cur1 $: <mi href="df-cur1.html">cur1</mi> $.
+$s class cur2 $: <mi href="df-cur2.html">cur2</mi> $.
+$s class OrHom $: <mi href="df-orhom.html"> OrHom </mi> $.
+$s class OrIso $: <mi href="df-oriso.html"> OrIso </mi> $.
+$s class mxl $: <mi href="df-mxl.html">mxl</mi> $.
+$s class mnl $: <mi href="df-mnl.html">mnl</mi> $.
+$s class ub $: <mi href="df-ub.html"> ub </mi> $.
+$s class lb $: <mi href="df-lb.html">lb</mi> $.
+$s class PresetRel $: <mi href="df-prs.html">PresetRel</mi> $.
+$s class ge $: <mi href="df-ge.html">ge</mi> $.
+$s class leR $: <mi href="df-ler.html">leR</mi> $.
+$s class AntiDir $: <mi href="df-antidir.html">AntiDir</mi> $.
+$s class BndLat $: <mi href="df-bnlat.html">BndLat</mi> $.
+$s class Com1 $: <mi href="df-com1.html">Com1</mi> $.
+$s class SubSemiGrp $: <mi href="df-subsmg.html">SubSemiGrp</mi> $.
+$s class subSemiGrpGen $: <mi href="df-sggen.html">subSemiGrpGen</mi> $.
+$s class SemiGrpHom $: <mi href="df-gsmhom.html">SemiGrpHom</mi> $.
+$s class FreeSemiGrp $: <mi href="df-frsmgrp.html">FreeSemiGrp</mi> $.
+$s class Tofld $: <mi href="df-tofld.html"> Tofld </mi> $.
+$s class zeroDiv $: <mi href="df-zd.html"> zeroDiv </mi> $.
+$s class IdlNEW $: <mi href="df-idlNEW.html">IdlNEW</mi> $.
+$s class Action $: <mi href="df-act.html">Action</mi> $.
+$s class Vec $: <mi href="df-vec.html"> Vec </mi> $.
+$s class SubVec $: <mi href="df-svs.html">SubVec</mi> $.
+$s class RVec $: <mi href="df-vr.html"> RVec </mi> $.
+$s class RAffSp $: <mi href="df-raffsp.html"> RAffSp </mi> $.
+$s class topX $: <mi href="df-prtop.html"> topX </mi> $.
+$s class fLimfrs $: <mi href="df-flimfrs.html"> fLimfrs </mi> $.
+$s class IsolatedPt $: <mi href="df-islpt.html">IsolatedPt</mi> $.
+$s class opfn $: <mi href="df-opfn.html"> opfn </mi> $.
+$s class TopFld $: <mi href="df-topfld.html"> TopFld </mi> $.
+$s class sup_ $: <mi> sup_ </mi> $.
+$s class inf_ $: <mi> inf_ </mi> $.
+$s class Frf $: <mi href="df-frf.html">Frf</mi> $.
+$s class +cv $: <mi href="df-addcv.html">+cv</mi> $.
+$s class 0cv $: <mi href="df-nullcv.html">0cv</mi> $.
+$s class Intvl $: <mi href="df-intvl.html">Intvl</mi> $.
+$s class der $: <mi href="df-der.html">der</mi> $.
+$s class Dgra $: <mi href="df-mgra.html"> Dgra </mi> $.
+$s class Alg $: <mi href="df-alg.html"> Alg </mi> $.
+$s class Ded $: <mi href="df-ded.html"> Ded </mi> $.
+$s class hom $: <mi href="df-homOLD.html"> hom </mi> $.
+$s class Epic $: <mi href="df-epiOLD.html">Epic</mi> $.
+$s class Isofunc $: <mi href="df-isof.html"> Isofunc </mi> $.
+$s class SubCat $: <mi href="df-subcat.html"> SubCat </mi> $.
+$s class InitObj $: <mi href="df-inob.html"> InitObj </mi> $.
+$s class TermObj $: <mi href="df-termob.html"> TermObj </mi> $.
+$s class Source $: <mi href="df-source.html"> Source </mi> $.
+$s class Sink $: <mi href="df-sink.html"> Sink </mi> $.
+$s class Natural $: <mi href="df-natur.html"> Natural </mi> $.
+$s class LimCat $: <mi href="df-limcat.html"> LimCat </mi> $.
+$s class ProdObj $: <mi href="df-prodobj.html"> ProdObj </mi> $.
+$s class tar $: <mi href="df-tar.html">tar</mi> $.
+$s class tr $: <mi href="df-trcls.html">tr</mi> $.
+$s class line $: <mi href="df-li.html">line</mi> $.
+$s class seg $: <mi href="df-seg2.html">seg</mi> $.
+$s class Kleene $: <mi href="df-kle.html">Kleene</mi> $.
+$s class Words $: <mi href="df-words.html"> Words </mi> $.
+$s class IndCls $: <mi href="df-indcls.html"> IndCls </mi> $.
+$s class Grammar $: <mi href="df-grm.html">Grammar</mi> $.
+$s class sym $: <mi href="df-sym.html">sym</mi> $.
+$s class prdct $: <mi href="df-prodct.html">prdct</mi> $.
+$s class conc $: <mi href="df-conc.html"> conc </mi> $.
+$s class Prop $: <mi href="df-prop.html">Prop</mi> $.
+$s class derv $: <mi href="df-derv.html">derv</mi> $.
+$s class PPoints $: <mi href="df-points.html">PPoints</mi> $.
+$s class PLines $: <mi href="df-plines.html">PLines</mi> $.
+$s class Ig $: <mi href="df-ig2.html">Ig</mi> $.
+$s class coln $: <mi href="df-col.html">coln</mi> $.
+$s class con $: <mi href="df-con2.html">con</mi> $.
+$s class Ibg $: <mi href="df-ibg2.html">Ibg</mi> $.
+$s class btw $: <mi href="df-btw.html">btw</mi> $.
+$s class Segments $: <mi href="df-Seg.html">Segments</mi> $.
+$s class ray $: <mi href="df-ray2.html">ray</mi> $.
+$s class convex $: <mi href="df-cnvx.html">convex</mi> $.
+$s class Ibcg $: <mi href="df-ibcg.html">Ibcg</mi> $.
+$s class angc $: <mi href="df-angc.html">angc</mi> $.
+$s class segc $: <mi href="df-segc.html">segc</mi> $.
+$s class slices $: <mi href="df-slices.html">slices</mi> $.
+$s class Cut $: <mi href="df-Cut.html">Cut</mi> $.
+$s class Neug $: <mi href="df-neug.html">Neug</mi> $.
+$s class Circle $: <mi href="df-crcl.html">Circle</mi> $.
+$s class angle $: <mi href="df-angle.html">angle</mi> $.
+$s class triangle $: <mi href="df-triangle.html">triangle</mi> $.
+$s class dWords $: <mi href="df-dwords.html">dWords</mi> $.
+$s class ss $: <mi href="df-sside.html">ss</mi> $.
+$s class trcng $: <mi href="df-trcng.html">trcng</mi> $.
+$s class Halfplane $: <mi href="df-halfplane.html">Halfplane</mi> $.
+$s class angtrg $: <mi href="df-angtrg.html">angtrg</mi> $.
+$s class segtrg $: <mi href="df-segtrg.html">segtrg</mi> $.
+$s class CatOLD $: <msub href="df-catOLD.html"><mo>Cat</mo> <mi>OLD</mi></msub> $.
+$s class SetCatOLD $: <msub href="df-catset.html"><mo>SetCat</mo> <mi>OLD</mi></msub> $.
+$s class MonoOLD $: <msub href="df-monOLD.html"><mo>Mono</mo> <mi>OLD</mi></msub> $.
+$s class IsoOLD $: <msub href="df-isoc.html"><mo>Iso</mo> <mi>OLD</mi></msub> $.
+$s class cinvOLD $: <msub href="df-cinv.html"><mo>cinv</mo> <mi>OLD</mi></msub> $.
+$s class FuncOLD $: <msub href="df-funcOLD.html"><mo>Func</mo> <mi>OLD</mi></msub> $.
+$s class MorphismSetCat $: <msub href="df-morcatset.html"><mo>Morphism</mo> <mi>SetCat</mi></msub> $.
+$s class domSetCat $: <msub href="df-domcatset.html"><mo>dom</mo> <mi>SetCat</mi></msub> $.
+$s class graphSetCat $: <msub href="df-graphcatset.html"><mo>graph</mo> <mi>SetCat</mi></msub> $.
+$s class codSetCat $: <msub href="df-codcatset.html"><mo>cod</mo> <mi>SetCat</mi></msub> $.
+$s class IdSetCat $: <msub href="df-idcatset.html"><mo>Id</mo> <mi>SetCat</mi></msub> $.
+$s class roSetCat $: <msub href="df-rocatset.html"><mo>ro</mo> <mi>SetCat</mi></msub> $.
+
+$s class dom_ $: <munder href="df-dom_.html"><mo>dom</mo> <mo>&#x5F;</mo></munder> $. 
+$s class cod_ $: <munder href="df-cod_.html"><mo>cod</mo> <mo>&#x5F;</mo></munder> $. 
+$s class id_ $: <munder href="df-id_.html"><mo>id</mo> <mo>&#x5F;</mo></munder> $. 
+$s class o_ $: <munder href="df-cmpa.html"><mo>o</mo> <mo>&#x5F;</mo></munder> $. 
+
+$s class ^md $: <msub href="df-expsg.html"><mo>&uarr;</mo> <mi>md</mi></msub> $.
+$s class +m $: <msub href="df-amat.html"><mo>+</mo> <mi>&#x1D45A;</mi></msub> $. 
+$s class .m $: <msub href="df-smat.html"><mo>&sdot;</mo> <mi>&#x1D45A;</mi></msub> $. 
+$s class xm $: <msub href="df-mmat.html"><mo>&times;</mo> <mi>&#x1D45A;</mi></msub> $.
+
+End of FL's mathbox removed
+$)
+
+$( Constant classes with subscript rules $)
+$s class PwSer1 $: <msub href="df-psr1.html"><mi>PwSer</mi> <mn>1</mn></msub> $.
+$s class var1 $: <msub href="df-vr1.html"><mi>var</mi> <mn>1</mn></msub> $.
+$s class Poly1 $: <msub href="df-ply1.html"><mi>Poly</mi> <mn>1</mn></msub> $.
+$s class evalSub1 $: <msub href="df-evls1.html"><mi>evalSub</mi> <mn>1</mn></msub> $.
+$s class eval1 $: <msub href="df-evl1.html"><mi>eval</mi> <mn>1</mn></msub> $.
+$s class deg1 $: <msub href="df-deg1.html"><mi>deg</mi> <mn>1</mn></msub> $.
+$s class coe1 $: <msub href="df-coe1.html"><mi>coe</mi> <mn>1</mn></msub> $.
+$s class toPoly1 $: <msub href="df-toply1.html"><mi>toPoly</mi> <mn>1</mn></msub> $.
+$s class *p $: <msub href="df-pco.html"><mo>*</mo> <mi>&#x1D45D;</mi></msub> $.
+$s class Om1 $: <msub href="df-om1.html"><mo>&Omega;</mo> <mn>1</mn></msub> $.
+$s class OmN $: <msub href="df-omn.html"><mo>&Omega;</mo> <mn>&#x1D45B;</mn></msub> $.
+$s class pi1 $: <msub href="df-pi1.html"><mo>&pi;</mo> <mn>1</mn></msub> $.
+$s class piN $: <msub href="df-pin.html"><mo>&pi;</mo> <mn>&#x1D45B;</mn></msub> $.
+$s class .if $: <msub href="df-ipf.html"><mo>&sdot;</mo> <mi>if</mi></msub> $.
+$s class gcdOLD ( A , B ) $: <mrow><msub><mo>gcd</mo> <mi>OLD</mi></msub> <mfenced>#A# #B#</mfenced></mrow> $.
+
+$s class Monic1p $: <msub href="df-mon1.html"><mo>Monic</mo> <mi>1p</mi></msub> $.
+$s class Unic1p $: <msub href="df-uc1p.html"><mo>Unic</mo> <mi>1p</mi></msub> $.
+$s class quot1p $: <msub href="df-q1p.html"><mo>quot</mo> <mi>1p</mi></msub> $.
+$s class rem1p $: <msub href="df-r1p.html"><mo>rem</mo> <mi>1p</mi></msub> $.
+$s class idlGen1p $: <msub href="df-ig1p.html"><mo>idlGen</mo> <mi>1p</mi></msub> $.
+$s class GF_oo $: <msub href="df-gfoo.html"><mi>GF</mi> <mi>&infin;</mi></msub> $.
+
+$s class ^ko $: <msub href="df-xko.html"><mi>^</mi> <mi>ko</mi></msub> $.
+$s class C^n $: <msup href="df-cpn.html"><mi>C</mi> <mi>n</mi></msup> $.
+$s class Dn $: <msup href="df-dvn.html"><mi>D</mi> <mi>n</mi></msup> $.
+$s class Xp $: <msup href="df-idp.html"><mi>X</mi> <mi>p</mi></msup> $.
+$s class ~= $: <mo href="df-hmph.html">&simeq;</mo> $.
+$s class ~=ph $: <msub href="df-phtpc.html"><mo>&simeq;</mo> <mi>ph</mi></msub> $.
+
+$s class /L $: <msub href="df-lgs.html"><mo>/</mo> <mi>L</mi></msub> $. 
+$s class /g $: <msub href="df-gdiv.html"><mo>/</mo> <mi>g</mi></msub> $. 
+$s class ^c $: <msub href="df-cxp.html"><mo>&uarr;</mo> <mi>c</mi></msub> $. 
+$s class +v $: <msub href="df-va.html"><mo>+</mo> <mi>v</mi></msub> $. 
+$s class -v $: <msub href="df-vs.html"><mo>-</mo> <mi>v</mi></msub> $. 
+$s class .v $: <msub href="df-mulv.html"><mo>&sdot;</mo> <mi>v</mi></msub> $. 
+$s class 0vec $: <msub href="df-0v.html"><mi>0</mi> <mi>vec</mi></msub> $. 
+$s class normCV $: <msub href="df-nmcv.html"><mo>norm</mo> <mo>CV</mo></msub> $. 
+
+$( Goedel $)
+$s class e.g $: <msub href="df-goel.html"><mo>&isin;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class |g $: <msub href="df-gona.html"><mo>&#8892;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class A.g A B $: <mfenced open="[" close="]" separators=""><msub><mo>&forall;</mo> <mi>&#x1D454;</mi></msub> #A# #B#</mfenced> $.
+$s class E.g A B $: <mfenced open="[" close="]" separators=""><msub><mo>&exist;</mo> <mi>&#x1D454;</mi></msub> #A# #B#</mfenced> $.
+$s class -.g A $: <mfenced open="[" close="]" separators=""><msub><mo>&not;</mo> <mi>&#x1D454;</mi></msub> #A#</mfenced> $.
+$s class =g $: <msub href="df-goeq.html"><mo>=</mo> <mi>&#x1D454;</mi></msub> $.
+$s class /\g $: <msub href="df-goan.html"><mo>&and;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class \/g $: <msub href="df-goor.html"><mo>&or;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class ->g $: <msub href="df-goim.html"><mo>&rarr;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class <->g $: <msub href="df-gobi.html"><mo>&harr;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class Fmla $: <mi href="df-fmla.html">Fmla</mi> $.
+$s class |= $: <mo href="df-prv.html">&#8871;</mo> $.
+$s class Sat $: <mi href="df-sat.html">Sat</mi> $.
+$s class SatE $: <msub href="df-sate.html"><mi>Sat</mi> <mi>&isin;</mi></msub> $.
+$s class ZF $: <mi mathvariant="bold" href="df-gzf.html">ZF</mi> $.
+
+
+$( Scott Fenton $)
+$s class FallFac $: <mo href="df-fallfac.html">FallFac</mo> $. $( With dots: <msup><mi>.</mi> <munder><mi>.</mi> <mo>&#x5F;</mo></munder></msup> $)
+$s class RiseFac $: <mo href="df-risefac.html">RiseFac</mo> $. $( With dots: <msup><mi>.</mi> <mover><mi>.</mi> <mo>&oline;</mo></mover></msup> $)
+$s class ( A FallFac B ) $: <mfenced><msup>#A# <munder>#B# <mo>&#x5F;</mo></munder></msup></mfenced> $.
+$s class ( A RiseFac B ) $: <mfenced><msup>#A# <mover>#B# <mo>&oline;</mo></mover></msup></mfenced> $.
+$s class-o ( A FallFac B ) $: <msup>#A# <munder>#B# <mo>&#x5F;</mo></munder></msup> $.
+$s class-o ( A RiseFac B ) $: <msup>#A# <mover>#B# <mo>&oline;</mo></mover></msup> $.
+$s class Pred ( R , A , B ) $: <mrow> <mo href="df-pred.html">Pred</mo> <mfenced>#R# #A# #B#</mfenced></mrow> $.
+$s class TrPred ( R , A , B ) $: <mrow> <mo href="df-trpred.html">TrPred</mo> <mfenced>#R# #A# #B#</mfenced></mrow> $.
+$s class EE $: <mi href="df-ee.html"> &#x1D53C; </mi> $.
+$s class Btwn $: <mi href="df-btwn.html"> Btwn </mi> $.
+$s class Cgr $: <mi href="df-cgr.html">Cgr</mi> $.
+$s class OuterFiveSeg $: <mi href="df-ofs.html"> OuterFiveSeg </mi> $.
+$s class TransportTo $: <mi href="df-transport.html">TransportTo</mi> $.
+$s class InnerFiveSeg $: <mi href="df-ifs.html"> InnerFiveSeg </mi> $.
+$s class Cgr3 $: <mi href="df-cgr3.html">Cgr3</mi> $.
+$s class Colinear $: <mi href="df-colinear.html"> Colinear </mi> $.
+$s class FiveSeg $: <mi href="df-fs.html"> FiveSeg </mi> $.
+$s class Seg<_ $: <msub href="df-segle.html"><mi>Seg</mi> <mo>&le;</mo></msub> $.
+$s class OutsideOf $: <mi href="df-outsideof.html">OutsideOf</mi> $.
+$s class Line $: <mi href="df-line2.html">Line</mi> $.
+$s class LinesEE $: <mi href="df-lines2.html">LinesEE</mi> $.
+$s class Ray $: <mi href="df-ray.html">Ray</mi> $.
+$s class BernPoly $: <mi href="df-bpoly.html"> BernPoly </mi> $.
+$s class Hf $: <mi href="df-hf.html"> Hf </mi> $.
+
+$( Founded recursion $)
+$s class frecs ( R , O , P ) $: <mrow> <mi href="df-frecs.html">frecs</mi> <mo>&ApplyFunction;</mo> <mfenced> #R# #O# #P# </mfenced> </mrow> $. $( Removed stretchy="false" $)
+
+$( Surreal Numbers $)
+$s class No $: <mi href="df-no.html">No</mi> $.
+$s class <s $: <msub href="df-slt.html"><mo>&lt;</mo> <mi>s</mi></msub> $.
+$s class <_s $: <msub href="df-sle.html"><mo>&le;</mo> <mi>s</mi></msub> $.
+$s class <<s $: <msub href="df-sslt.html"><mo>&#x226A;</mo> <mi>s</mi></msub> $.
+$s class |s $: <msub href="df-scut.html"><mo>|</mo> <mi>s</mi></msub> $.
+$s class bday $: <mi href="df-bday.html">bday</mi> $.
+$s class _M $: <mi href="df-made.html">M</mi> $.
+$s class _Old $: <mi href="df-old.html">Old</mi> $.
+$s class _N $: <mi href="df-new.html">N</mi> $.
+$s class _L $: <mi href="df-left.html">L</mi> $.
+$s class _R $: <mi href="df-right.html">R</mi> $.
+
+$s class pprod ( A , B ) $: <mrow> <mo>pprod</mo> <mfenced>#A# #B#</mfenced></mrow> $.
+$s class << A , B >> $: <mfenced href="df-altop" open="&#10218;" close="&#10219;">#A# #B#</mfenced> $.
+$s class ( A XX. B ) $: <mfenced><mrow>#A# <mi href="df-altxp"> &times;&times; </mi> #B#</mrow></mfenced> $.
+$s class ( A /_\ B ) $: <mfenced><mrow>#A# <mi href="df-symdif"> &#x2206; </mi> #B#</mrow></mfenced> $.
+$s class _/_\ $: <mi href="df-fwddif.html">&#x25b3;</mi> $.
+$s class _/_\^n $: <msup><mi href="df-fwddifn.html">&#x25b3;</mi><mi>n</mi></msup> $.
+$s class ( A (x) B ) $: <mfenced><mrow>#A# <mi href="df-txp"> &otimes; </mi> #B#</mrow></mfenced> $.
+$( $s class (+) $: <mi> &#x2295; </mi> $. $)
+
+$s class SSet $: <mi href="df-sset.html">&#x1D5B2;&#x1D5B2;&#x1D5BE;&#x1D5CD;</mi> $.
+$s class Trans $: <mi href="df-trans.html">&#x1D5B3;&#x1D5CB;&#x1D5BA;&#x1D5C7;&#x1D5CC;</mi> $.
+$s class Bigcup $: <mi href="df-bigcup.html">&#x1D5A1;&#x1D5C2;&#x1D5C0;&#x1D5BC;&#x1D5CE;&#x1D5C9;</mi> $.
+$s class Fix A $: <mrow><mi href="df-fix.html">&#x1D5A5;&#x1D5C2;&#x1D5D1;</mi> #A#</mrow> $.
+$s class Limits $: <mi href="df-limits.html">&#x1D5AB;&#x1D5C2;&#x1D5C6;&#x1D5C2;&#x1D5CD;&#x1D5CC;</mi> $.
+$s class Funs $: <mi href="df-funs.html">&#x1D5A5;&#x1D5CE;&#x1D5C7;&#x1D5CC;</mi> $.
+$s class Singleton $:  <mi>&#x1D5B2;&#x1D5C2;&#x1D5C7;&#x1D5C0;&#x1D5C5;&#x1D5BE;&#x1D5CD;&#x1D5C8;&#x1D5C7;</mi> $.
+$s class Singletons $: <mi href="df-singles.html">&#x1D5B2;&#x1D5C2;&#x1D5C7;&#x1D5C0;&#x1D5C5;&#x1D5BE;&#x1D5CD;&#x1D5C8;&#x1D5C7;&#x1D5CC;</mi> $.
+$s class Image A $: <mrow><mi href="df-image.html">&#x1D5A8;&#x1D5C6;&#x1D5BA;&#x1D5C0;&#x1D5BE;</mi> #A#</mrow> $.
+$s class Cart $: <mi href="df-cart.html">&#x1D5A2;&#x1D5BA;&#x1D5CB;&#x1D5CD;</mi> $.
+$s class Img $: <mi href="df-img.html">&#x1D5A8;&#x1D5C6;&#x1D5C0;</mi> $.
+$s class Domain $: <mi href="df-domain.html">&#x1D5A3;&#x1D5C8;&#x1D5C6;&#x1D5BA;&#x1D5C2;&#x1D5C7;</mi> $.
+$s class Range $: <mi href="df-range.html">&#x1D5B1;&#x1D5BA;&#x1D5C7;&#x1D5C0;&#x1D5BE;</mi> $.
+$s class Apply $: <mi href="df-apply.html">&#x1D5A0;&#x1D5C9;&#x1D5C9;&#x1D5C5;&#x1D5D2;</mi> $.
+$s class Cup $: <mi href="df-cup.html">&#x1D5A2;&#x1D5CE;&#x1D5C9;</mi> $.
+$s class Cap $: <mi href="df-cap.html">&#x1D5A2;&#x1D5BA;&#x1D5C9;</mi> $.
+$s class Succ $: <mi href="df-succf.html">&#x1D5B2;&#x1D5CE;&#x1D5BC;&#x1D5BC;</mi> $.
+$s class Restrict $: <mi href="df-restrict.html">&#x1D5B1;&#x1D5BE;&#x1D5CC;&#x1D5CD;&#x1D5CB;&#x1D5C2;&#x1D5BC;&#x1D5CD;</mi> $.
+$s class Funpart F $: <mrow><mi href="df-funpart.html">&#x1D5A5;&#x1D5CE;&#x1D5C7;&#x1D5AF;&#x1D5BA;&#x1D5CB;&#x1D5CD;</mi> #F#</mrow> $.
+$s class FullFun F $: <mrow><mi href="df-fullfun.html">&#x1D5A5;&#x1D5CE;&#x1D5C5;&#x1D5C5;&#x1D5A5;&#x1D5CE;&#x1D5C7;</mi> #F#</mrow> $.
+$s class UB A $: <mrow><mi href="df-ub.html">UB</mi> #A# </mrow> $.
+$s class LB A $: <mrow><mi href="df-lb.html">LB</mi> #A# </mrow> $.
+$s class wsuc ( R , O , P ) $: <mrow> <mo href="df-wsuc.html">wsuc</mo> <mfenced>#R# #O# #P#</mfenced></mrow> $.
+$s class WLim ( R , O ) $: <mrow> <mo href="df-wlim.html">WLim</mo> <mfenced>#R# #O#</mfenced></mrow> $.
+
+$s class _|_P $: <msub href="df-polarityN.html"><mo>&perp;</mo> <mi>&#x1D443;</mi></msub> $. 
+$s class +P $: <msub href="df-padd.html"><mo>+</mo> <mi>&#x1D443;</mi></msub> $. 
+
+$s class ^r $: <msub href="df-relexp.html"><mo>&uarr;</mo> <mi>r</mi></msub> $.
+
+
+$( Jeff Madsen $)
+$s class Fne $: <mi href="df-fne.html">Fne</mi> $.
+$s class Ref $: <mi href="df-ref.html">Ref</mi> $.
+$s class PtFin $: <mi href="df-ptfin.html">PtFin</mi> $.
+$s class LocFin $: <mi href="df-locfin.html">LocFin</mi> $.
+$s class TotBnd $: <mi href="df-totbnd.html">TotBnd</mi> $.
+$s class Bnd $: <mi href="df-bnd.html">Bnd</mi> $.
+$s class Ismty $: <mi href="df-ismty.html"> Ismty </mi> $.
+$s class Rn $: <msup href="df-rrn.html"><mi>&Ropf;</mi> <mi>n</mi></msup> $.
+$s class RngHom $: <mi href="df-rngohom.html"> RngHom </mi> $.
+$s class RngIso $: <mi href="df-rngoiso.html"> RngIso </mi> $.
+$s class ~=R $: <msub href="df-risc.html"><mo>&#8771;</mo> <mi>&#x1D45F;</mi></msub> $.
+$s class CRingOps $: <mi href="df-crngo.html">CRingOps</mi> $.
+$s class Idl $: <mi href="df-idl.html">Idl</mi> $.
+$s class PrIdl $: <mi href="df-pridl.html">PrIdl</mi> $.
+$s class MaxIdl $: <mi href="df-maxidl.html">MaxIdl</mi> $.
+$s class PrRing $: <mi href="df-prrngo.html">PrRing</mi> $.
+$s class Dmn $: <mi href="df-dmn.html">Dmn</mi> $.
+$s class IdlGen $: <mi href="df-igen.html">IdlGen</mi> $.
+
+$( Rodolfo Medina $)
+$s wff Prt A $: <mrow><mi href="df-prt.html">Prt</mi> #A# </mrow> $.
+
+$( Stefan O'Rear $)
+$s class NoeACS $: <mi href="df-nacs.html">NoeACS</mi> $.
+$s class mzPolyCld $: <mi href="df-mzpcl.html">mzPolyCld</mi> $.
+$s class mzPoly $: <mi href="df-mzp.html">mzPoly</mi> $.
+$s class Dioph $: <mi href="df-dioph.html">Dioph</mi> $.
+
+$s class []NN $: <msub href="df-squarenn.html"><mi>&#x25FB;</mi> <mi>&Nopf;</mi></msub> $.
+$s class Pell1QR $: <mi href="df-pell1qr.html">Pell1QR</mi> $.
+$s class Pell14QR $: <mi href="df-pell14qr.html">Pell14QR</mi> $.
+$s class Pell1234QR $: <mi href="df-pell1234qr.html">Pell1234QR</mi> $.
+$s class PellFund $: <mi href="df-pellfund.html">PellFund</mi> $.
+$s class rmX $: <msub href="df-rmx.html"><mo>X</mo> <mi>rm</mi></msub> $. 
+$s class rmY $: <msub href="df-rmy.html"><mo>Y</mo> <mi>rm</mi></msub> $. 
+$s class LFinGen $: <mi href="df-lfig.html">LFinGen</mi> $.
+$s class LNoeM $: <mi href="df-lnm.html">LNoeM</mi> $.
+$s class (+)m $: <msub href="df-dsmm.html"><mo>&#x2295;</mo> <mi>m</mi></msub> $.
+$s class freeLMod $: <mi href="df-frlm.html"> freeLMod </mi> $.
+$s class unitVec $: <mi href="df-uvc.html"> unitVec </mi> $.
+$s class LIndF $: <mi href="df-lindf.html"> LIndF </mi> $.
+$s class LIndS $: <mi href="df-linds.html">LIndS</mi> $.
+$s class LNoeR $: <mi href="df-lnr.html">LNoeR</mi> $.
+$s class ldgIdlSeq $: <mi href="df-ldgis.html">ldgIdlSeq</mi> $.
+$s class Monic $: <mi href="df-mnc.html"> Monic </mi> $.
+$s class Poly< $: <msub href="df-plylt.html"><mi>Poly</mi> <mo>&lt;</mo></msub> $.
+$s class degAA $: <msub href="df-dgraa.html"><mi>deg</mi> <mi>&Aopf;</mi></msub> $.
+$s class minPolyAA $: <msub href="df-mpaa.html"><mi>minPoly</mi> <mi>&Aopf;</mi></msub> $.
+$s class _ZZ $: <mover href="df-za.html"><mi>&Zopf;</mi> <mo>&oline;</mo></mover> $.
+$s class IntgOver $: <mi href="df-itgo.html">IntgOver</mi> $.
+$s class pmTrsp $: <mi href="df-pmtr.html">pmTrsp</mi> $.
+$s class pmSgn $: <mi href="df-psgn.html">pmSgn</mi> $.
+$s class pmEven $: <mi href="df-evpm.html">pmEven</mi> $.
+
+$( Matrix Algebra $)
+$s class Mat $: <mi href="df-mat.html"> Mat </mi> $.
+$s class DMat $: <mi href="df-dmat.html"> DMat </mi> $.
+$s class ScMat $: <mi href="df-scmat.html"> ScMat </mi> $.
+$s class DMatALT $: <mi href="df-dmatALT.html"> DMatALT </mi> $.
+$s class ScMatALT $: <mi href="df-scmatALT.html"> ScMatALT </mi> $.
+$s class maMul $: <mi href="df-mamu.html"> maMul </mi> $.
+$s class maVecMul $: <mi href="df-mvmul.html"> maVecMul </mi> $.
+$s class matRRep $: <mi href="df-marrep.html"> matRRep </mi> $.
+$s class matRepV $: <mi href="df-marepv.html"> matRepV </mi> $.
+$s class subMat $: <mi href="df-subma.html"> subMat </mi> $.
+$s class subMat1 $: <msub href="df-smat.html"><mi> subMat </mi><mn> 1 </mn></msub> $.
+$s class litMat $: <mi href="df-lmat.html"> litMat </mi> $.
+$s class maDet $: <mi href="df-mdet.html"> maDet </mi> $.
+$s class maAdju $: <mi href="df-madu.html"> maAdju </mi> $.
+$s class minMatR1 $: <mi href="df-minmar1.html"> minMatR1 </mi> $.
+$s class ConstPolyMat $: <mi href="df-cnstpmat.html">ConstPolyMat</mi> $.
+$s class matToPolyMat $: <mi href="df-mat2pmat.html">matToPolyMat</mi> $.
+$s class CharPlyMat $: <mi href="df-chpmat.html">CharPlyMat</mi> $.
+$s class cPolyMatToMat $: <mi href="df-cpmat2mat.html"> cPolyMatToMat </mi> $.
+$s class decompPMat $: <mi href="df-decpmat.html"> decompPMat </mi> $.
+$s class pMatToMatPoly $: <mi href="df-pm2mp.html"> pMatToMatPoly </mi> $.
+
+$s class MEndo $: <mi href="df-mend.html">MEndo</mi> $.
+$s class SubDRing $: <mi href="df-sdrg.html">SubDRing</mi> $.
+$s class Cntr $: <mi href="df-cntr.html">Cntr</mi> $.
+$s class Cntz $: <mi href="df-cntz.html">Cntz</mi> $.
+$s class CytP $: <mi href="df-cytp.html">CytP</mi> $.
+$s class TopSep $: <mi href="df-topsep.html">TopSep</mi> $.
+$s class TopLnd $: <mi href="df-toplnd.html">TopLnd</mi> $.
+
+$( Steve Rodriguez $)
+$s class lcm $: <mi href="df-lcm.html">lcm</mi> $. 
+$s class _lcm $: <munder href="df-lcmf.html"><mi>lcm</mi> <mo>&#x5F;</mo></munder> $. 
+$s class _Cc $: <msub href="df-bcc.html"><mo>C</mo> <mi>&#x1D450;</mi></msub> $. 
+
+
+$( Andrew Salmon $)
+$s class +r $: <msub href="df-addr.html"><mo>+</mo> <mi>r</mi></msub> $. 
+$s class -r $: <msub href="df-subr.html"><mo>-</mo> <mi>r</mi></msub> $. 
+$s class PtDf ( A , B ) $: <mrow> <mo>PtDf</mo> <mfenced>#A# #B#</mfenced></mrow> $.
+$s class RR3 $: <mi href="df-rr3.html">RR3</mi> $.
+$s class line3 $: <mi href="df-line3.html">line3</mi> $.
+
+
+$( Glauco Siliprandi $)
+$s class SAlg $: <mi href="df-salg.html">SAlg</mi> $.
+$s class SalOn $: <mi href="df-salon.html">SalOn</mi> $.
+$s class SalGen $: <mi href="df-salgen.html">SalGen</mi> $.
+$s class sum^ $: <mi href="df-sumge0.html">sum^</mi> $.
+$s class Meas $: <mi href="df-mea.html">Meas</mi> $.
+$s class OutMeas $: <mi href="df-ome.html">OutMeas</mi> $.
+$s class CaraGen $: <mi href="df-caragen.html">CaraGen</mi> $.
+$s class voln* $: <mi href="df-ovoln.html">voln*</mi> $.
+$s class voln $: <mi href="df-voln.html">voln</mi> $.
+$s class SMblFn $: <mi href="df-smblfn.html">SMblFn</mi> $.
+$s class liminf $: <mi href="df-liminf.html">lim inf</mi> $.
+$s class ~~>* $: <munder accentunder href="df-xlim.html"><mo>&zigrarr;</mo><mi>*</mi></munder> $.
+
+
+$( Alexander van der Vekens $)
+$s class e// $: <mi href="df-nelbr">&notin;</mi> $.
+$s class ~=c $: <msub href="df-cic.html"><mo>&#8771;</mo> <mi>&#x1D450;</mi></msub> $. 
+$s wff F defAt A $: <mrow> #F# <mi href="df-dfat.html">defAt</mi> #A# </mrow> $.
+$s class ( A ''' B ) $: <mfenced><mrow>#A# <mi href="df-afv.html">&#39&#39&#39</mi> #B#</mrow></mfenced> $.
+$s class (( A F B )) $: <mfenced open="((" close="))"><mrow>#A# #F# #B#</mrow></mfenced> $.
+$s class FriendGraph $: <mi href="df-frgr.html">FriendGraph</mi> $.
+$s class Trails $: <mi href="df-trls.html">Trails</mi> $.
+$s class TrailsOn $: <mi href="df-trlson.html">TrailsOn</mi> $.
+$s class EdgWalks $: <mi href="df-ewlks.html">EdgWalks</mi> $.
+$s class Walks $: <mi href="df-wlks.html">Walks</mi> $.
+$s class WalksOn $: <mi href="df-wlkson.html">WalksOn</mi> $.
+
+$s class linC $: <mi href="df-linc.html">linC</mi> $.
+$s class LinCo $: <mi href="df-lco.html">LinCo</mi> $.
+$s class linIndS $: <mi href="df-lininds.html">linIndS</mi> $.
+$s class linDepS $: <mi href="df-lindeps.html">linDepS</mi> $.
+
+$s class clLaw $: <mi href="df-cllaw.html">clLaw</mi> $.
+$s class assLaw $: <mi href="df-asslaw.html">assLaw</mi> $.
+$s class comLaw $: <mi href="df-comlaw.html">comLaw</mi> $.
+$s class intOp $: <mi href="df-intop.html">intOp</mi> $.
+$s class clIntOp $: <mi href="df-clintop.html">clIntOp</mi> $.
+$s class assIntOp $: <mi href="df-assintop.html">assIntOp</mi> $.
+
+$s class MgmALT $: <mi href="df-mgm2.html">MgmALT</mi> $.
+$s class CMgmALT $: <mi href="df-cmgm2.html">CMgmALT</mi> $.
+$s class SGrpALT $: <mi href="df-sgrp2.html">SGrpALT</mi> $.
+$s class CSGrpALT $: <mi href="df-csgrp2.html">CSGrpALT</mi> $.
+
+$s class prefix $: <mi href="df-pfx.html">prefix</mi> $.
+
+$s class RePart $: <mi href="df-iccp.html">RePart</mi> $.
+$s class FermatNo $: <mi href="df-fmtno.html">FermatNo</mi> $.
+$s class Even $: <mi href="df-even.html">Even</mi> $.
+$s class Odd $: <mi href="df-odd.html">Odd</mi> $.
+$s class GoldbachEven $: <mi href="df-gbe.html">GoldbachEven</mi> $.
+$s class GoldbachOddW $: <mi href="df-gbow.html">GoldbachOddW</mi> $.
+$s class GoldbachOdd $: <mi href="df-gbo.html">GoldbachOdd</mi> $.
+
+$s class UPWalks $: <mi href="df-upwlks.html">UPWalks</mi> $.
+$s class Pairs $: <mi href="df-spr.html">Pairs</mi> $.
+
+$s class /_f $: <msub href="df-fdiv"><mi>/</mi> <mi>f<mi></msub> $.
+$s class _O $: <mi href="df-bigo">O</mi> $.
+$s class #b $: <msub href="df-blen"><mi>#</mi> <mi>b<mi></msub> $.
+$s class digit $: <mi href="df-dig.html">digit</mi> $.
+
+$( David A. Wheeler $)
+$s class >_ $: <mi href="df-gte.html"> &ge; </mi> $.
+$s class > $: <mi href="df-gt.html"> &gt; </mi> $.
+$s class sinh $: <mi href="df-sinh.html">sinh</mi> $.
+$s class cosh $: <mi href="df-cosh.html">cosh</mi> $.
+$s class tanh $: <mi href="df-tanh.html">tanh</mi> $.
+$s class sec $: <mi href="df-sec.html">sec</mi> $.
+$s class csc $: <mi href="df-csc.html">csc</mi> $.
+$s class cot $: <mi href="df-cot.html">cot</mi> $.
+$s class sgn $: <mi href="df-sgn.html">sgn</mi> $.
+$s class logb $: <mi href="df-logb.html">logb</mi> $.
+$s class log_ $: <mi href="df-log_.html">log_</mi> $.
+$s wff A! x ( ph -> ps ) $: <mrow> <mo href="df-alsi.html">&forall;!</mo> #x# <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
+$s wff A! x e. A ph $: <mrow> <mo href="df-alsc.html">&forall;!</mo> #x# <mo href="df-reu.html">&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff A Reflexive B $: <mrow>#A# <mo href="df-reflexive.html">Reflexive</mo> #B#</mrow> $.
+$s wff A Irreflexive B $: <mrow>#A# <mo href="df-irreflexive.html">Irreflexive</mo> #B#</mrow> $.
+
+
+$( Emmett Weisz $)
+$s class setrecs ( F ) $: <mrow> <mi href="df-setrecs">setrecs</mi> <mo>&ApplyFunction;</mo> <mfenced>#F#</mfenced> </mrow> $.
+$s class Pg $: <mi href="df-pg.html">Pg</mi> $.
+
+
+$( Richard Penner $)
+$s wff A hereditary B $: <mrow>#A# <mo href="df-he.html">hereditary</mo> #B#</mrow> $.
+$s class r* $: <mi href="df-rcl.html">r*</mi> $.
+
+$( Alan Sare's Virtual Deduction $)
+$s wff (. ph ->. ps ). $: <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> $.
+$s wff (. ph ,. ps ->. ch ). $: <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>,</mo> #ps# <mo mathcolor=#0D0>&rarr;</mo> #ch#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ->. th ). $: <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>,</mo> #ps# <mo mathcolor=#0D0>,</mo> #ch# <mo mathcolor=#0D0>&rarr;</mo> #th#</mfenced> $.
+$s wff (. ph ,. ps ). $: <mfenced mathcolor=#0D0>#ph# #ps#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ,. rh ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si# #rh#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ,. rh ,. mu ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si# #rh# #mu#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ,. rh ,. mu ,. la ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si# #rh# #mu# #la#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ,. rh ,. mu ,. la ,. ka ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si# #rh# #mu# #la# #ka#</mfenced> $.
+
+$( Jonathan Ben-Naim's $)
+$s class _pred ( X , A , R ) $: <mrow> <mo>pred</mo> <mfenced>#X# #A# #R#</mfenced></mrow> $.
+$s wff A _Se B $: <mrow>#A# <mo href="df-bnj13.html">Se</mo> #B#</mrow> $.
+$s wff A _FrSe B $: <mrow>#A# <mo href="df-bnj15.html">FrSe</mo> #B#</mrow> $.
+$s class _trCl ( X , A , R ) $: <mrow> <mo>trCl</mo> <mfenced>#X# #A# #R#</mfenced></mrow> $.
+$s wff _TrFo ( B , A , R ) $: <mrow> <mo>TrFo</mo> <mfenced>#B# #A# #R#</mfenced></mrow> $.
+
+
+$( Benoit Jubin $)
+$s class sngl A $: <mrow><mo href="df-bj-sngl.html">sngl</mo> #A#</mrow> $.
+$s class tag A $: <mrow><mo href="df-bj-tag.html">tag</mo> #A#</mrow> $.
+$s class (| A ,, B |) $: <mfenced open="&#x2985;" close="&#x2986;">#A# #B#</mfenced> $.
+$s class pr1 A $: <mrow><mo href="df-bj-pr1.html">pr1</mo> #A#</mrow> $.
+$s class pr2 A $: <mrow><mo href="df-bj-pr2.html">pr2</mo> #A#</mrow> $.
+$s class Diag $: <mo href="df-bj-diag.html">Diag</mo> $.
+$s class ( Diag ` A ) $: <msub><mo href="df-bj-diag.html">Diag</mo> #A#</msub> $.
+$s class inftyexpi $: <mo href="df-bj-inftyexpi.html">inftyexpi</mo> $.
+$s class pinfty $: <mo href="df-bj-pinfty.html">+&infin;</mo> $.
+$s class minfty $: <mo href="df-bj-minfty.html">-&infin;</mo> $.
+$s class RRbar $: <mover href="df-bj-rrbar.html"><mi>&Ropf;</mi> <mo>&oline;</mo></mover> $.
+$s class RRhat $: <mover href="df-bj-rrhat.html"><mi>&Ropf;</mi> <mo>^</mo></mover> $.
+$s class CCbar $: <mover href="df-bj-ccbar.html"><mi>&Copf;</mi> <mo>&oline;</mo></mover> $.
+$s class CChat $: <mover href="df-bj-cchat.html"><mi>&Copf;</mi> <mo>^</mo></mover> $.
+$s class CCinfty $: <msub href="df-bj-ccinfty"><mi>&Copf;</mi> <mi>&infin;</mi></msub> $.
+$s class infty $: <mi href="df-bj-infty">&infin;</mi> $.
+$s class prcpal $: <mi href="df-bj-prcpal">prcpal</mi> $.
+$s class Arg $: <mi href="df-bj-arg">Arg</mi> $.
+$s class +cc $: <msub href="df-bj-addc.html"><mo>+</mo> <mover><mi>&Copf;</mi> <mo>&oline;</mo></mover></msub> $.
+$s class -cc $: <msub href="df-bj-oppc.html"><mo>-</mo> <mover><mi>&Copf;</mi> <mo>&oline;</mo></mover></msub> $.
+$s class .cc $: <msub href="df-bj-mulc.html"><mo>&sdot;</mo> <mover><mi>&Copf;</mi> <mo>&oline;</mo></mover></msub> $.
+$s class invc $: <msup href="df-bj-invc.html"><mo>&sdot;</mo> <mn>-1</mn></msup> $.
+$s class RRVec $: <mi href="df-bj-rrvec.html">&Ropf;Vec</mi> $.
+
+$s class Moore_ $: <munder href="df-bj-moore.html"><mi>Moore</mi> <mo>&#x5F;</mo></munder> $.
+$s class -Set-> $: <munder accentunder href="df-bj-fset.html"><mo>&xrarr;</mo><mo>Set</mo></munder> $.
+$s class -Top-> $: <munder accentunder href="df-bj-tophom.html"><mo>&xrarr;</mo><mo>Top</mo></munder> $.
+$s class -Mgm-> $: <munder accentunder href="df-bj-magmahom.html"><mo>&xrarr;</mo><mo>Mgm</mo></munder> $.
+$s class -TopMgm-> $: <munder accentunder href="df-bj-topmgmhom.html"><mo>&xrarr;</mo><mo>TopMgm</mo></munder> $.
+$s wff F e. ( A -Set-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-fset.html"><mo>&xrarr;</mo><mo>Set</mo></munder> #B# </mrow> $.
+$s wff F e. ( A -Top-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-tophom.html"><mo>&xrarr;</mo><mo>Top</mo></munder> #B# </mrow> $.
+$s wff F e. ( A -Mgm-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-magmahom.html"><mo>&xrarr;</mo><mo>Mgm</mo></munder> #B# </mrow> $.
+$s wff F e. ( A -TopMgm-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-bj-topmgmhom.html"><mo>&xrarr;</mo><mo>TopMgm</mo></munder> #B# </mrow> $.
+$s class curry_ $: <mi href="df-bj-cur">curry_</mi> $.
+$s class uncurry_ $: <mi href="df-bj-unc">uncurry_</mi> $.
+
+$s class [s B / A ]s S $: <mrow><mfenced open="[" close="]s" separators="/"> #B# #A# </mfenced> #S# </mrow> $.
+
+$s wff Prv ph $: <mrow><mo href="ax-prv1.html">Prv</mo> #ph#</mrow> $.
+$s wff F/ x e. A ph $:  <mrow> <mo href="df-bj-rnf.html">&#8498;</mo> #x# <mo>&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff [b x /b y ]b ph $: <mrow><mfenced open="[b" close="]b" separators="/b"> #y# #x# </mfenced> #ph# </mrow> $.
+$s wff if- ( ph , ps , ch ) $: <mrow> <mo href="df-bj-if.html">if-</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
+$s class elwise $: <mi href="df-elwise.html">elwise</mi> $.
+$s class ( A Proj B ) $: <mfenced><mrow>#A# <mo href="df-bj-proj.html">Proj</mo> #B#</mrow></mfenced> $.
+$s class (| A |) $: <mfenced open="&#x2985;" close="&#x2986;">#A#</mfenced> $.
+$s class FinSum $: <mo href="df-bj-finsum.html">FinSum</mo> $.
+
+$( Peter Mazsa $)
+$s class ( A |X. B ) $: <mrow> #A# <mo href="df-xrn.html">&ltimes;</mo> #B# </mrow> $.
+
+$( Norm Megill $)
+$s class <oL $: <msub href="df-lcv.html"><mo>&#8918;</mo> <mi>L</mi></msub> $.
+$s class <o $: <mo href="df-covers.html">&#8918;</mo> $.
+$s class ( <o ` A ) $: <msub><mo>&#8918;</mo> #A#</msub> $.
+$s class LSAtoms $: <mi href="df-lsatoms.html">LSAtoms</mi> $.
+$s class LSHyp $: <mi href="df-lshyp.html">LSHyp</mi> $.
+$s class LFnl $: <mi href="df-lfl.html">LFnl</mi> $.
+$s class LKer $: <mi href="df-lkr.html">LKer</mi> $.
+$s class LDual $: <mi href="df-ldual.html">LDual</mi> $.
+$s class OP $: <mi href="df-oposet.html">OP</mi> $.
+$s class cm $: <mi href="df-cmtN.html">cm</mi> $.
+$s class OL $: <mi href="df-ol.html">OL</mi> $.
+$s class OML $: <mi href="df-oml.html">OML</mi> $.
+$s class Atoms $: <mi href="df-ats.html">Atoms</mi> $.
+$s class AtLat $: <mi href="df-atl.html">AtLat</mi> $.
+$s class CvLat $: <mi href="df-cvlat.html">CvLat</mi> $.
+$s class HL $: <mi href="df-hlat.html">HL</mi> $.
+$s class LLines $: <mi href="df-llines.html">LLines</mi> $.
+$s class LPlanes $: <mi href="df-lplanes.html">LPlanes</mi> $.
+$s class LVols $: <mi href="df-lvols.html">LVols</mi> $.
+$s class Lines $: <mi href="df-lines.html">Lines</mi> $.
+$s class Points $: <mi href="df-pointsN.html">Points</mi> $.
+$s class PSubSp $: <mi href="df-psubsp.html">PSubSp</mi> $.
+$s class pmap $: <mi href="df-pmap.html">pmap</mi> $.
+$s class PCl $: <mi href="df-pclN.html">PCl</mi> $.
+$s class PSubCl $: <mi href="df-psubclN.html">PSubCl</mi> $.
+$s class LHyp $: <mi href="df-lhyp.html">LHyp</mi> $.
+$s class LAut $: <mi href="df-laut.html">LAut</mi> $.
+$s class WAtoms $: <mi href="df-watsN.html">WAtoms</mi> $.
+$s class PAut $: <mi href="df-pautN.html">PAut</mi> $.
+$s class LDil $: <mi href="df-ldil.html">LDil</mi> $.
+$s class LTrn $: <mi href="df-ltrn.html">LTrn</mi> $.
+$s class Dil $: <mi href="df-dilN.html">Dil</mi> $.
+$s class Trn $: <mi href="df-trnN.html">Trn</mi> $.
+$s class trL $: <mi href="df-trl.html">trL</mi> $.
+$s class TGrp $: <mi href="df-tgrp.html">TGrp</mi> $.
+$s class TEndo $: <mi href="df-tendo.html">TEndo</mi> $.
+$s class EDRing $: <mi href="df-edring.html">EDRing</mi> $.
+$s class EDRingR $: <msub><mi>EDRing</mi> <mi>R</mi></msub> $.
+$s class DVecA $: <mi href="df-dveca.html">DVecA</mi> $.
+$s class DIsoA $: <mi href="df-disoa.html">DIsoA</mi> $.
+$s class DVecH $: <mi href="df-dvech.html">DVecH</mi> $.
+$s class ocA $: <mi href="df-docaN.html">ocA</mi> $.
+$s class vA $: <mi href="df-djaN.html">vA</mi> $.
+$s class DIsoB $: <mi href="df-dib.html">DIsoB</mi> $.
+$s class DIsoC $: <mi href="df-dic.html">DIsoC</mi> $.
+$s class DIsoH $: <mi href="df-dih.html">DIsoH</mi> $.
+$s class ocH $: <mi href="df-doch.html">ocH</mi> $.
+$s class joinH $: <mi href="df-djh.html">joinH</mi> $.
+$s class LPol $: <mi href="df-lpolN.html">LPol</mi> $.
+$s class LCDual $: <mi href="df-lcdual.html">LCDual</mi> $.
+$s class mapd $: <mi href="df-mapd.html">mapd</mi> $.
+$s class HVMap $: <mi href="df-hvmap.html">HVMap</mi> $.
+$s class HDMap1 $: <mi href="df-hdmap1.html">HDMap1</mi> $.
+$s class HDMap $: <mi href="df-hdmap.html">HDMap</mi> $.
+$s class HGMap $: <mi href="df-hgmap.html">HGMap</mi> $.
+$s class HLHil $: <mi href="df-hlhil.html">HLHil</mi> $.
+$s class mapd $: <mi href="df-mapd.html">mapd</mi> $.
+
+$( Jim Kingdon $)
+$s class _tau $: <mi href="df-tau.html" mathvariant="normal"> &tau; </mi> $.
+
+$( Schemes with unknown tokens:
+$s class ==3 $: <mi> &#x2261;&#x2083; </mi> $.
+$s class dst $: <mi href="df-dst.html">dst</mi> $.
+$s class absv $: <mi href="df-absv.html">absv</mi> $.
+$s class nrm $: <mi>nrm</mi> $.
+$s class IndClsBu $: <mi href="df-indclsbu.html">IndClsBu</mi> $.
+$s class ||g $: <mi>||g</mi> $.
+$s class plane3 $: <mi>plane3</mi> $.
+$s class trP $: <mi href="df-trp.html">trP</mi> $.
+$s class _fns $: <mi> fns </mi> $.
+$s class AtsLat $: <mi href="df-atslat.html">AtsLat</mi> $.
+$s class ser $: <mi>ser</mi> $.
+$s class fcard $: <mi href="df-fcard.html">fcard</mi> $.
+$s class C_rng $: <mi>C_rng</mi> $.
+$s class -vNEW $: <mi href="df-minusv.html">-vNEW</mi> $.
+$s class RVecNEW $: <mi href="df-rvec.html">RVecNEW</mi> $.
+$s class SubSpNEW $: <mi href="df-sbsp.html">SubSpNEW</mi> $.
+$s class spanNEW $: <mi href="df-vspan.html">spanNEW</mi> $.
+$s class o+ $: <mi href="df-oplus.html">o+</mi> $.
+$s class /v $: <mi href="df-quov.html">/v</mi> $.
+$s class normv $: <mi href="df-normv.html">normv</mi> $.
+$s class sumP $: <mi href="df-sump.html">sumP</mi> $.
+$s class BasesP $: <mi href="df-basesp.html">BasesP</mi> $.
+$s class rankP $: <mi href="df-rankp.html">rankP</mi> $.
+$s class PHyp $: <mi href="df-hyp.html">PHyp</mi> $.
+$s class eImage $: <mi href="df-eimage.html">eImage</mi> $.
+$s class *HRing $: <mi>*HRing</mi> $.
+$)
+
+$( Words $)
+$s class Word A $: <mrow> <mi>Word</mi> #A# </mrow> $.
+$s class <" A "> $: <mrow> <mo>&lang;&ldquo;</mo> #A# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B C "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B C D "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C##D# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B C D E "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C##D##E# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B C D E F "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C##D##E##F# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B C D E F G "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C##D##E##F##G# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B C D E F G H "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C##D##E##F##G##H# <mo>&rdquo;&rang;</mo> </mrow> $.
+
+
+$( Orders $)
+$s wff R Po A $: <mrow> #R# <mi href="df-po.html">Po</mi> #A# </mrow> $.
+$s wff R Or A $: <mrow> #R# <mi href="df-so.html">Or</mi> #A# </mrow> $.
+$s wff R Fr A $: <mrow> #R# <mi href="df-fr.html">Fr</mi> #A# </mrow> $.
+$s wff R Se A $: <mrow> #R# <mi href="df-se.html">Se</mi> #A# </mrow> $.
+$s wff R We A $: <mrow> #R# <mi href="df-we.html">We</mi> #A# </mrow> $.
+$s wff Ord A $: <mrow> <mi href="df-ord.html">Ord</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s wff Lim A $: <mrow> <mi href="df-lim.html">Lim</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class suc A $: <mrow> <mi href="df-suc.html">suc</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class AC_ A $: <mrow> <munder><mi href="df-acn.html">AC</mi> <mo>&#x5F;</mo></munder> #A# </mrow> $.
+
+
+$(
+@( Numerical constants @)
+@s class 0 @: <mn> 0 </mn> @.
+@s class 1 @: <mn> 1 </mn> @.
+@s class 2 @: <mn> 2 </mn> @.
+@s class 3 @: <mn> 3 </mn> @.
+@s class 4 @: <mn> 4 </mn> @.
+@s class 5 @: <mn> 5 </mn> @.
+@s class 6 @: <mn> 6 </mn> @.
+@s class 7 @: <mn> 7 </mn> @.
+@s class 8 @: <mn> 8 </mn> @.
+@s class 9 @: <mn> 9 </mn> @.
+$)
+
+$s class 10 $: <mn href="df-10.html"> 10 </mn> $.
+
+$( Arithmetic number builder $)
+$i class-n M $: <mi mathcolor=#808>M</mi> $.
+$i class-n N $: <mi mathcolor=#808>N</mi> $.
+$i class-n I $: <mi mathcolor=#808>I</mi> $.
+$i class-n J $: <mi mathcolor=#808>J</mi> $.
+$s class-n 0 $: 0 $.
+$s class-n 1 $: 1 $.
+$s class-n 2 $: 2 $.
+$s class-n 3 $: 3 $.
+$s class-n 4 $: 4 $.
+$s class-n 5 $: 5 $.
+$s class-n 6 $: 6 $.
+$s class-n 7 $: 7 $.
+$s class-n 8 $: 8 $.
+$s class-n 9 $: 9 $.
+$s class-n ; M N $: #M##N# $.
+$s class -u N $: <mn>-#N#</mn> $.
+$s class-n _ M N $: #M##N# $.
+$s class . $: <mi href="df-dp.html">.</mi> $.
+$s class-o ( M . N ) $: <mn>#M#<mi href="df-dp.html">.</mi>#N#</mn> $.
+$s class-n ( M . N ) $: <mn>#M#<mi href="df-dp.html">.</mi>#N#</mn> $.
+$s class ( M . N ) $: <mn>#M#<mi href="df-dp.html">.</mi>#N#</mn> $.
+
+$( Special constants $)
+$s class ( RR X. RR ) $: <msup> <mi> &Ropf; </mi> <mn>2</mn> </msup> $.
+$s class-o ( RR X. RR ) $: <msup> <mi> &Ropf; </mi> <mn>2</mn> </msup> $.
+
+$( Using token ` class-o ` as a type token for classes constructs without parenthesis, and ` O ` and ` P ` as identifiers for such cases. $)
+$i class-o O $: <mi mathcolor=#808>O</mi> $.
+$i class-o P $: <mi mathcolor=#808>P</mi> $.
+$i class-o Q $: <mi mathcolor=#808>Q</mi> $.
+$i class-o S $: <mi mathcolor=#808>S</mi> $.
+
+$( Logics $)
+$s wff -. ph $: <mrow> <mo href="wn.html">&not;</mo> #ph# </mrow> $.
+$s wff ( ph -> ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.7em rspace=.7em href="wi.html">&rarr;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph <-> ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.7em rspace=.7em href="df-bi.html">&harr;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph /\ ps /\ ch ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-3an.html">&and;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-3an.html">&and;</mo> #ch# </mrow></mfenced> $.
+$s wff ( ph \/ ps \/ ch ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-3or.html">&or;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-3or.html">&or;</mo> #ch# </mrow></mfenced> $.
+$s wff ( ph /\ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-an.html">&and;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph \/ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-or.html">&or;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph -/\ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-nan.html">&#8892;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph \/_ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-xor.html">&#8891</mo> #ps# </mrow></mfenced> $.
+
+$( Quantifiers $)
+$s wff A. x e. A ph $: <mrow> <mo href="df-ral.html">&forall;</mo> #x# <mo href="df-ral.html">&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E. x e. A ph $: <mrow> <mo href="df-rex.html">&exist;</mo> #x# <mo href="df-rex.html">&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E! x e. A ph $: <mrow> <mo href="df-reu.html">&exist;!</mo> #x# <mo href="df-reu.html">&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E* x e. A ph $: <mrow> <msup href="df-rmo.html"><mo>&exist;</mo><mo>*</mo></msup> #x# <mo href="df-rmo.html">&isin;</mo> #A# #ph# </mrow> $.
+$s wff A. x ph $: <mrow> <mo href="wal.html">&forall;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E. x ph $: <mrow> <mo href="df-ex.html">&exist;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E! x ph $: <mrow> <mo href="df-eu.html">&exist;!</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E* x ph $: <mrow> <msup href="df-mo.html"><mo>&exist;</mo><mo>*</mo></msup> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff F/ x ph $: <mrow> <mo href="df-nf.html">&#8498;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff F/_ x A $: <mrow> <munder><mo href="df-nfc.html"> &#8498; </mo><mo> &#x5F; </mo></munder> #x# <mspace width=.4em /> #A# </mrow> $.
+$s wff nfOLD x ph $: <mrow> <mo href="df-nfOLD.html">&#8498;OLD</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+
+
+
+
+$( Classes and sets $)
+$s wff O = P $: <mrow> #O# <mo href="wceq.html">=</mo> #P# </mrow> $.
+$s wff O =/= P $: <mrow> #O# <mo href="df-ne.html">&ne;</mo> #P# </mrow> $.
+$s wff O < P $: <mrow> #O# <mo href="df-ltxr.html"><</mo> #P# </mrow> $.
+$s wff O <_ P $: <mrow> #O# <mo href="df-le.html">&le;</mo> #P# </mrow> $.
+$s wff O <RR P $: <mrow> #O# <msub><mo href="df-lt.html">&lt;</mo> <mi>&Ropf;</mi></msub> #P# </mrow> $.
+$s wff -. O C_ P $: <mrow> #O# <mo href="df-ss.html">&nsube;</mo> #P# </mrow> $.
+$s wff O C_ P $: <mrow> #O# <mo href="df-ss.html">&sube;</mo> #P# </mrow> $.
+$s wff O C. P $: <mrow> #O# <mo href="df-pss.html">&sub;</mo> #P# </mrow> $.
+$s wff -. A e. B $: <mrow> #A# <mo href="df-nel.html">&notin;</mo> #B# </mrow> $.
+$s wff A e/ B $: <mrow> #A# <mo href="df-nel.html">&notin;</mo> #B# </mrow> $.
+$s wff [ y / x ] ph $: <mrow><mfenced open="[" close="]" separators="/"> #y# #x# </mfenced> #ph# </mrow> $.
+$s wff [. A / x ]. ph $: <mrow><munder accentunder><mo fence>[</mo><mo>&#x02D9;</mo></munder>#A# <mo>/</mo> #x#<munder accentunder><mo fence>]</mo><mo>&#x02D9;</mo></munder> #ph#</mrow> $.
+$s class [_ A / x ]_ B $: <mrow><mo fence>&#x298B;</mo> #A# <mo>/</mo> #x#<mo fence>&#x298C;</mo> #B#</mrow> $.
+$s class { <. x , y >. | ph } $: <mfenced open="{" close="}"> <mrow><mfenced open="&lang;" close="&rang;">#x# #y#</mfenced> <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class { <. <. x , y >. , z >. | ph } $: <mfenced open="{" close="}"> <mrow><mfenced open="&lang;" close="&rang;"><mfenced open="&lang;" close="&rang;">#x# #y#</mfenced> #z#</mfenced> <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class { x e. A | ph } $: <mfenced open="{" close="}"> <mrow>#x# <mo href="df-rab.html">&isin;</mo> #A# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class { x | ph } $: <mfenced open="{" close="}"><mrow> #x#  <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class ~P A $: <mrow> <mo from="prefix" href="df-pw.html">&#119979;</mo> #A# </mrow> $.
+$s class ( A X. B ) $: <mfenced><mrow> #A# <mo href="df-xp.html">&times;</mo> #B# </mrow></mfenced> $.
+$s class ( A u. B ) $: <mfenced><mrow> #A# <mo href="df-un.html">&cup;</mo> #B# </mrow></mfenced> $.
+$s class ( A i^i B ) $: <mfenced><mrow> #A# <mo href="df-in.html">&cap;</mo> #B# </mrow></mfenced> $.
+$s class ( A \ B ) $: <mfenced><mrow> #A# <mo href="df-dif.html">&ssetmn;</mo> #B# </mrow></mfenced> $.
+$s class-o ( A X. B ) $: <mrow> #A# <mo href="df-xp.html">&times;</mo> #B# </mrow> $.
+$s class-o ( A u. B ) $: <mrow> #A# <mo href="df-un.html">&cup;</mo> #B# </mrow> $.
+$s class-o ( A i^i B ) $: <mrow> #A# <mo href="df-in.html">&cap;</mo> #B# </mrow> $.
+$s class-o ( A \ B ) $: <mrow> #A# <mo href="df-dif.html">&ssetmn;</mo> #B# </mrow> $.
+$s class { O , P , Q } $: <mfenced open="{" close="}"> #O# #P# #Q# </mfenced> $.
+$s class { O , P } $: <mfenced open="{" close="}"> #O# #P# </mfenced> $.
+$s class { O } $: <mfenced open="{" close="}"> #O# </mfenced> $.
+$s class <. O , P , Q >. $: <mfenced open="&lang;" close="&rang;"> #O# #P# #Q# </mfenced> $.
+$s class <. O , P >. $: <mfenced open="&lang;" close="&rang;"> #O# #P# </mfenced> $.
+$s wff Smo A $: <mrow> <mi href="df-smo.html">Smo</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class [ A ] R $: <mrow><mfenced open="[" close="]"> #A# </mfenced> #R#</mrow> $.
+$s class ( A /. R ) $: <mfenced><mrow> #A# <mo href="df-qs.html">/</mo> #R# </mrow></mfenced> $.
+$s class-o ( A /. R ) $: <mrow> #A# <mo href="df-qs.html">/</mo> #R# </mrow> $.
+$s wff R Er A $: <mrow>#R# <mi href="df-er.html">Er</mi> #A#</mrow> $.
+$s wff Tr A $: <mrow> <mi href="df-tr.html">Tr</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s wff Rel R $: <mrow> <mi href="df-rel.html">Rel</mi> <mo>&ApplyFunction;</mo> #R# </mrow> $.
+$s wff Fun A $: <mrow> <mi href="df-fun.html">Fun</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class dom A $: <mrow> <mi href="df-dm.html">dom</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ran A $: <mrow> <mi href="df-rn.html">ran</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class oF R $: <mrow> <msub href="df-of.html"><mo>&compfn;</mo> <mi>f</mi></msub> <mo>&ApplyFunction;</mo> #R# </mrow> $. $( was &fnof; $)
+$s class oR R $: <mrow> <msub href="df-ofr.html"><mo>&compfn;</mo> <mi>r</mi></msub> <mo>&ApplyFunction;</mo> #R# </mrow> $.
+$s class oFC R $: <mrow> <msub href="df-ofc.html"><mo>&compfn;</mo> <mi>fc</mi></msub> <mo>&ApplyFunction;</mo> #R# </mrow> $. $( was &fnof; $)
+$s class ( F oF R G ) $: <mfenced><mrow>#F# <msub>#R# <mi href="df-of.html">f</mi></msub> #G#</mrow></mfenced> $.
+$s class-o ( F oF R G ) $: <mrow>#F# <msub>#R# <mi href="df-of.html">f</mi></msub> #G#</mrow> $.
+$s wff F oR R G $: <mrow>#F# <msub>#R# <mi href="df-ofr.html">f</mi></msub> #G#</mrow> $.
+$s class ( F supp Z ) $: <mrow><msub><mo href="df-supp.html">supp</mo> #Z#</msub><mo>&ApplyFunction;</mo> <mfenced>#F#</mfenced> </mrow> $.
+$s wff F finSupp Z $: <mrow><msub><mo href="df-fsupp.html">finSupp</mo> #Z#</msub><mo>&ApplyFunction;</mo> <mfenced>#F#</mfenced> </mrow> $.
+
+$( Functions $)
+$s class `' A $: <msup> #A# <mn href="df-cnv.html">-1</mn> </msup> $.
+$s class ( A " O ) $: <mrow> #A# <mfenced open="[" close="]">#O#</mfenced> </mrow> $. $( Removed stretchy="false" $)
+$s class ( A o. B ) $: <mfenced><mrow> #A# <mo href="df-co.html">&compfn;</mo> #B# </mrow></mfenced> $.
+$s class ( A |` B ) $: <mfenced><msub><mrow> #A# <mo href="df-res.html">&uharr;</mo></mrow> #B# </msub></mfenced> $.
+$s class ( A ^m B ) $: <mfenced><msup> #A# #B# </msup></mfenced> $.
+$s class-o ( A o. B ) $: <mrow> #A# <mo href="df-co.html">&compfn;</mo> #B# </mrow> $.
+$s class-o ( A |` B ) $: <msub><mrow> #A# <mo href="df-res.html">&uharr;</mo></mrow> #B# </msub> $.
+$s class-o ( A ^m B ) $: <msup> #A# #B# </msup> $.
+$s wff A Fn B $:  <mrow> #A# <mo href="df-fn.html">Fn</mo> #B# </mrow> $.
+
+
+$( Arithmetics $)
+$s class ( O / P ) $: <mfenced><mfrac> #O# #P# </mfrac></mfenced> $.
+$s class-o ( O / P ) $: <mfrac> #O# #P# </mfrac> $.
+$s class -u ( O / P ) $: <mfenced><mrow><mo form="prefix" href="df-neg.html">&minus;</mo> <mfrac> #O# #P# </mfrac> </mrow></mfenced> $.
+$s class-o -u ( O / P ) $: <mrow><mo form="prefix" href="df-nrg.html">&minus;</mo> <mfrac> #O# #P# </mfrac> </mrow> $.
+$s class -u A $: <mfenced><mrow><mo form="prefix" href="df-neg.html">&minus;</mo> #A# </mrow></mfenced> $.
+$s class-o -u A $: <mrow><mo form="prefix" href="df-neg.html">&minus;</mo> #A# </mrow> $.
+$s class -e A $: <mfenced><mrow><mo form="prefix" href="df-xneg.html">&minus;</mo> #A# </mrow></mfenced> $.
+$s class-o -e A $: <mrow><mo form="prefix" href="df-xneg.html">&minus;</mo> #A# </mrow> $.
+$s class ( sqrt ` O ) $: <msqrt> #O# </msqrt> $.
+$s class ( * ` O ) $: <mover> #O# <mo>&oline;</mo></mover> $.
+$s class ( sin ` A ) $: <mrow> <mi href="df-sin.html">sin</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ( cos ` A ) $: <mrow> <mi href="df-cos.html">cos</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ( tan ` A ) $: <mrow> <mi href="df-tan.html">tan</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ( log ` A ) $: <mrow> <mi href="df-log.html">log</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ( abs ` O ) $: <mfenced open="|" close="|">#O#</mfenced> $.
+$s class ( exp ` O ) $: <msup><mi href="df-ef.html" mathvariant="normal">e</mi> #O#</msup> $.
+$s class ( logb ` O ) $: <msub><mi href="df-logb.html">log</mi> #O#</msub> $.
+$s class-o ( O logb A ) $: <mrow><msub><mi href="df-logb.html">log</mi> #O#</msub> #A#</mrow> $.
+$s class ( O logb A ) $: <mrow><msub><mi href="df-logb.html">log</mi> #O#</msub> #A#</mrow> $.
+$s class ( # ` O ) $: <mfenced open="|" close="|">#O#</mfenced> $.
+$s class ( |_ ` O ) $: <mfenced open="&lfloor;" close="&rfloor;">#O#</mfenced> $.
+$s class ( |^ ` O ) $: <mfenced open="&lceil;" close="&rceil;">#O#</mfenced> $.
+$s class ( ! ` A ) $: <mrow>#A# <mo form="postfix" href="df-fac.html">&excl;</mo></mrow> $.
+
+$( Minus sign and exponents : make sure brackets are added. $)
+$s class ( -u A ^ O ) $: <msup> <mfenced><mrow><mo form="prefix" href="df-neg.html">&minus;</mo> #A# </mrow></mfenced> #O# </msup> $.
+$s class ( -u A ^c O ) $: <msup> <mfenced><mrow><mo form="prefix" href="df-neg.html">&minus;</mo> #A# </mrow></mfenced> #O# </msup> $.
+$s class-o ( -u A ^ O ) $: <msup> <mfenced><mrow><mo form="prefix" href="df-neg.html">&minus;</mo> #A# </mrow></mfenced> #O# </msup> $.
+$s class-o ( -u A ^c O ) $: <msup> <mfenced><mrow><mo form="prefix" href="df-neg.html">&minus;</mo> #A# </mrow></mfenced> #O# </msup> $.
+
+
+$( Composing exponents $)
+$s class ( ( A ^ O ) ^ P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class ( ( A ^ O ) ^c P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class ( ( A ^c O ) ^ P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class ( ( A ^c O ) ^c P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class-o ( ( A ^ O ) ^ P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class-o ( ( A ^ O ) ^c P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class-o ( ( A ^c O ) ^ P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class-o ( ( A ^c O ) ^c P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+
+$s class ( A ^ O ) $: <msup> #A# #O# </msup> $.
+$s class ( A ^c O ) $: <msup> #A# #O# </msup> $.
+$s class-o ( A ^ O ) $: <msup> #A# #O# </msup> $.
+$s class-o ( A ^c O ) $: <msup> #A# #O# </msup> $.
+
+$( Intervals $)
+$s class ( O [,] P ) $: <mfenced open='[' close=']'> #O# #P# </mfenced> $.
+$s class ( O [,) P ) $: <mfenced open='[' close=')'> #O# #P# </mfenced> $.
+$s class ( O (,] P ) $: <mfenced open='(' close=']'> #O# #P# </mfenced> $.
+$s class ( O (,) P ) $: <mfenced open='(' close=')'> #O# #P# </mfenced> $.
+$s class ( O ... P ) $: <mfenced><mrow>#O# <mo href="df-fz.html">&hellip;</mo> #P#</mrow></mfenced> $.
+$s class ( O ..^ P ) $: <mfenced><mrow>#O# <mo href="df-fzo.html">..^</mo> #P#</mrow></mfenced> $.
+$s class-o ( O [,] P ) $: <mfenced open='[' close=']'> #O# #P# </mfenced> $.
+$s class-o ( O [,) P ) $: <mfenced open='[' close=')'> #O# #P# </mfenced> $.
+$s class-o ( O (,] P ) $: <mfenced open='(' close=']'> #O# #P# </mfenced> $.
+$s class-o ( O (,) P ) $: <mfenced open='(' close=')'> #O# #P# </mfenced> $.
+$s class-o ( O ... P ) $: <mfenced><mrow>#O# <mo href="df-fz.html">&hellip;</mo> #P#</mrow></mfenced> $.
+$s class-o ( O ..^ P ) $: <mfenced><mrow>#O# <mo href="df-fzo.html">..^</mo> #P#</mrow></mfenced> $.
+
+
+$( Associativity for addition $)
+$s class ( ( A + B ) + ( C + D ) ) $: <mfenced><mrow>#A# <mo href="df-add.html">+</mo> #B# <mo href="df-add.html">+</mo> #C# <mo href="df-add.html">+</mo> #D# </mrow></mfenced> $.
+$s class ( ( A + B ) + C ) $: <mfenced><mrow>#A# <mo href="df-add.html">+</mo> #B# <mo href="df-add.html">+</mo> #C# </mrow></mfenced> $.
+$s class ( A + ( B + C ) ) $: <mfenced><mrow>#A# <mo href="df-add.html">+</mo> #B# <mo href="df-add.html">+</mo> #C# </mrow></mfenced> $.
+
+$s class ( A + ( B - C ) ) $: <mfenced><mrow>#A# <mo href="df-add.html">+</mo> #B# <mo href="df-sub.html">-</mo> #C# </mrow></mfenced> $.
+$s class ( ( A - B ) + C ) $: <mfenced><mrow>#A# <mo href="df-sub.html">-</mo> #B# <mo href="df-add.html">+</mo> #C# </mrow></mfenced> $.
+$s class ( ( A + B ) - C ) $: <mfenced><mrow>#A# <mo href="df-add.html">+</mo> #B# <mo href="df-sub.html">-</mo> #C# </mrow></mfenced> $.
+$s class ( ( A - B ) - C ) $: <mfenced><mrow>#A# <mo href="df-sub.html">-</mo> #B# <mo href="df-sub.html">-</mo> #C# </mrow></mfenced> $.
+
+$s class ( -u A + B ) $: <mfenced><mrow> <mo>-</mo> #A# <mo href="df-add.html">+</mo> #B# </mrow></mfenced> $.
+$s class ( -u A - B ) $: <mfenced><mrow> <mo>-</mo> #A# <mo href="df-sub.html">-</mo> #B# </mrow></mfenced> $.
+
+$( Associativity for addition non-fenced expressions $)
+$s class-o ( ( A + B ) + ( C + D ) ) $: <mrow>#A# <mo>+</mo> #B# <mo>+</mo> #C# <mo>+</mo> #D# </mrow> $.
+$s class-o ( ( A + B ) + C ) $: <mrow>#A# <mo>+</mo> #B# <mo>+</mo> #C# </mrow> $.
+$s class-o ( A + ( B + C ) ) $: <mrow>#A# <mo>+</mo> #B# <mo>+</mo> #C# </mrow> $.
+
+$s class-o ( A + ( B - C ) ) $: <mrow>#A# <mo>+</mo> #B# <mo>-</mo> #C# </mrow> $.
+$s class-o ( ( A - B ) + C ) $: <mrow>#A# <mo>-</mo> #B# <mo>+</mo> #C# </mrow> $.
+$s class-o ( ( A + B ) - C ) $: <mrow>#A# <mo>+</mo> #B# <mo>-</mo> #C# </mrow> $.
+$s class-o ( ( A - B ) - C ) $: <mrow>#A# <mo>-</mo> #B# <mo>-</mo> #C# </mrow> $.
+
+$s class-o ( -u A + B ) $: <mrow> <mo href="df-neg.html">-</mo> #A# <mo>+</mo> #B# </mrow> $.
+$s class-o ( -u A - B ) $: <mrow> <mo href="df-neg.html">-</mo> #A# <mo>-</mo> #B# </mrow> $.
+
+$( No need for additional rules for associativity for multiplication, as it is already not fenced $)
+$( No need for additional rules for precedence of multiplication over addition as it is already not fenced. $)
+$( Precedence of multiplication over addition - no need for additional rules, multiplication is already not fenced. $)
+
+$( Multiplication : invisible times or dot $)
+$s class ( M x. N ) $: <mrow> <mn>#M#</mn> <mo href="df-mul.html">&sdot;</mo> <mn>#N#</mn> </mrow> $.
+$s class ( 0 x. A ) $: <mrow> <mn href="df-0.html">0</mn> <mo href="df-mul.html">&sdot;</mo> #A# </mrow> $. $( Add a dot when multiplying with zero, as this is not commonly written. $)
+$s class ( A x. M ) $: <mrow> #A# <mo href="df-mul.html">&sdot;</mo> <mn>#M#</mn> </mrow> $. $( Add a dot when right-multiplying with a number, as this is not commonly written. $)
+$s class ( A x. B ) $: <mrow> #A# <mo>&InvisibleTimes;</mo> #B# </mrow> $.
+$s class-o ( M x. N ) $: <mrow> <mn>#M#</mn> <mo href="df-mul.html">&sdot;</mo> <mn>#N#</mn> </mrow> $.
+$s class-o ( 0 x. A ) $: <mrow> <mn href="df-0.html">0</mn> <mo href="df-mul.html">&sdot;</mo> #A# </mrow> $. $( Add a dot when multiplying with zero, as this is not commonly written. $)
+$s class-o ( A x. M ) $: <mrow> #A# <mo href="df-mul.html">&sdot;</mo> <mn>#M#</mn> </mrow> $. $( Add a dot when right-multiplying with a number, as this is not commonly written. $)
+$s class-o ( A x. B ) $: <mrow> #A# <mo>&InvisibleTimes;</mo> #B# </mrow> $.
+
+$( Algebraic Constructs $)
+$s class ( Base ` A ) $: <msub><mi href="df-base.html">Base</mi> #A#</msub> $.
+$s class ( 0g ` A ) $: <msub><mn href="df-0g.html">0</mn> #A#</msub> $.
+$s class ( .g ` A ) $: <msub><mo href="df-mulg.html">&sdot;</mo> #A#</msub> $.
+$s class ( +g ` A ) $: <msub><mo href="df-plusg.html">+</mo> #A#</msub> $.
+$s class ( -g ` A ) $: <msub><mo href="df-sbg.html">-</mo> #A#</msub> $.
+$s class ( 1r ` A ) $: <msub><mn href="df-ur.html">1</mn> #A#</msub> $.
+$s class ( *r ` A ) $: <msub><mn href="df-starv.html">*</mn> #A#</msub> $.
+$s class ( .r ` A ) $: <msub><mo href="df-mulr.html">&sdot;</mo> #A#</msub> $.
+$s class ( .s ` A ) $: <msub><mo href="df-vsca.html">&sdot;</mo> #A#</msub> $.
+$s class ( le ` A ) $: <msub><mo href="df-ple.html">&le;</mo> #A#</msub> $.
+$s class ( lt ` A ) $: <msub><mo href="df-plt.html">&lt;</mo> #A#</msub> $.
+$s class ( mulGrp ` A ) $: <msub><mi href="df-mgp.html">mulGrp</mi> #A#</msub> $.
+$s class ( ( *r ` A ) ` B ) $: <msup>#B# <msub><mn href="df-starv.html">*</mn> #A#</msub></msup> $.
+$s class ( Z/nZ ` A ) $: <mrow><mi href="df-zn.html">&Zopf;</mi><mo>/</mo>#A#<mi href="df-zn.html">&Zopf;</mi></mrow> $.
+
+$( Constructs $)
+$s class ( O _C P ) $: <mrow> <mo>(</mo> <mfrac linethickness="0">#O# #P#</mfrac><mo>)</mo> </mrow> $.
+$s class-o ( O _C P ) $: <mrow> <mo>(</mo> <mfrac linethickness="0">#O# #P#</mfrac><mo>)</mo> </mrow> $.
+$s class ( x e. A , y e. B , z e. C |-> O ) $: <mfenced> <mrow> #x# <mo href="df-bj-mpt3.html">&isin;</mo> #A# <mo>,</mo> #y# <mo href="df-bj-mpt3.html">&isin;</mo> #B# <mo>,</mo> #z# <mo href="df-bj-mpt3.html">&isin;</mo> #C# <mo href="df-bj-mpt3.html">&longmapsto;</mo> #O# </mrow></mfenced> $.
+$s class ( x e. A , y e. B |-> O ) $: <mfenced> <mrow> #x# <mo href="df-mpt2.html">&isin;</mo> #A# <mo>,</mo> #y# <mo href="df-mpt2.html">&isin;</mo> #B# <mo href="df-mpt2.html">&longmapsto;</mo> #O# </mrow></mfenced> $.
+$s class ( x e. A |-> O ) $: <mfenced> <mrow> #x# <mo href="df-mpt.html">&isin;</mo> #A# <mo href="df-mpt.html">&longmapsto;</mo> #O# </mrow></mfenced> $.
+$s class if ( ph , O , P ) $: <mrow> <mo href="df-if.html">if</mo> <mfenced>#ph# #O# #P#</mfenced></mrow> $.
+$s class sup ( O , P , Q ) $: <mrow> <mo href="df-sup.html">sup</mo> <mfenced>#O# #P# #Q#</mfenced></mrow> $.
+$s class inf ( O , P , Q ) $: <mrow> <mo href="df-inf.html">sup</mo> <mfenced>#O# #P# #Q#</mfenced></mrow> $.
+$s class |^|_ x e. ( O ... P ) A $: <mrow><munderover><mo href="df-uni.html">&xcap;</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
+$s class U_ x e. ( O ... P ) A $: <mrow><munderover><mo href="df-iun.html">&xcup;</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
+$s wff Disj_ x e. ( O ... P ) A $: <mrow><munderover><mo href="df-disj.html">Disj</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
+$s class sum_ x e. ( O ... P ) A $: <mrow><munderover><mo href="df-sum.html">&sum;</mo><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
+$s class sum* x e. ( O ... P ) A $: <mrow><munderover><msup><mo href="df-esum.html">&sum;</mo> <mi>*</mi></msup><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
+$s class prod_ x e. ( O ... P ) A $: <mrow><munderover><mo href="df-prod.html">&prod;</mo><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
+$s class X_ x e. ( O ... P ) A $: <mrow><munderover><mo href="df-ixp.html">&#x2a09;</mo><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
+$s class |^|_ x e. O A $: <mrow><munder><mo href="df-iin.html">&xcap;</mo> <mrow>#x# <mo>&isin;</mo> #O#</mrow></munder> #A# </mrow> $.
+$s class U_ x e. O A $: <mrow><munder><mo href="df-iun.html">&xcup;</mo> <mrow>#x# <mo>&isin;</mo> #O#</mrow></munder> #A# </mrow> $.
+$s wff Disj_ x e. O A $: <mrow><munder><mo href="df-disj.html">Disj</mo> <mrow>#x# <mo>&isin;</mo> #O#</mrow></munder> #A# </mrow> $.
+$s class sum_ x e. O A $: <mrow><munder><mo href="df-sum.html">&sum;</mo><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
+$s class sum* x e. O A $: <mrow><munder><msup><mo href="df-esum.html">&sum;</mo> <mi>*</mi></msup><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
+$s class prod_ x e. O A $: <mrow><munder><mo href="df-prod.html">&prod;</mo><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
+$s class X_ x e. O A $: <mrow><munder><mo href="df-ixp.html">&#x2a09;</mo><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
+$s class ( Q gsum ( x e. ( O ... P ) |-> B ) ) $: <mfenced><munderover><msub><mo href="df-gsum.html">&Sum;</mo> #Q#</msub> <mrow> #x# <mo>=</mo> #O# </mrow> #P#</munderover> #B#</mfenced> $.
+$s class ( Q gsum ( x e. O |-> B ) ) $: <mfenced><munder><msub><mo href="df-gsum.html">&Sum;</mo> #Q#</msub> <mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #B#</mfenced> $.
+$s class ( Q gsum A ) $: <mfenced><msub><mo href="df-gsum.html">&Sum;</mo> #Q#</msub> #A#</mfenced> $.
+$s class-o ( Q gsum ( x e. ( O ... P ) |-> B ) ) $: <mrow><munderover><msub><mo href="df-gsum.html">&Sum;</mo> #Q#</msub> <mrow> #x# <mo>=</mo> #O# </mrow> #P#</munderover> #B#</mrow> $.
+$s class-o ( Q gsum ( x e. O |-> B ) ) $: <mrow><munder><msub><mo href="df-gsum.html">&Sum;</mo> #Q#</msub> <mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #B#</mrow> $.
+$s class-o ( Q gsum A ) $: <mrow><msub><mo href="df-gsum.html">&Sum;</mo> #Q#</msub> #A#</mrow> $.
+$s class |^| A $: <mrow> <mo href="df-int.html">&xcap;</mo> #A# </mrow> $.
+$s class U. A $: <mrow> <mo href="df-uni.html">&xcup;</mo> #A# </mrow> $.
+$s class recs ( F ) $: <mrow> <mi href="df-recs.html">recs</mi> <mo>&ApplyFunction;</mo> <mfenced>#F#</mfenced> </mrow> $. $( Removed stretchy="false" $)
+$s class rec ( F , O ) $: <mrow> <mi href="df-rdg.html">rec</mi> <mo>&ApplyFunction;</mo> <mfenced> #F# #O# </mfenced> </mrow> $. $( Removed stretchy="false" $)
+$s class wrecs ( R , O , P ) $: <mrow> <mi href="df-wrecs.html">wrecs</mi> <mo>&ApplyFunction;</mo> <mfenced> #R# #O# #P# </mfenced> </mrow> $. $( Removed stretchy="false" $)
+$s class seq A ( .+ , F ) $: <mrow> <mo href="df-seq.html">seq</mo> #A# <mfenced> #.+# #F# </mfenced></mrow> $.
+$s class ( iota x ph ) $: <mfenced> <mrow><mo href="df-iota.html">&iota;</mo> #x# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class ( iota_ x e. A ph ) $: <mfenced> <mrow><mo href="df-iota.html">&iota;</mo> #x# <mo>&isin;</mo> #A# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class ( ZZ>= ` A ) $: <msub> <mi href="df-uz.html">&Zopf;</mi> <mrow> <mo href="df-uz.html">&ge;</mo> #A# </mrow> </msub> $.
+$s class S. A B _d x $:  <mrow> <msub> <mo href="df-itg.html"> &#x222B;</mo> #A# </msub> #B# <mo>d</mo>#x#</mrow> $.
+$s class S_ [ A -> B ] C _d x $: <mrow> <msubsup> <mo href="df-ditg.html"> &#x222B;</mo> #A# #B# </msubsup> #C# <mo>d</mo>#x#</mrow> $.
+$s class-o ( A _D ( x e. B |-> O ) ) $: <mfrac><mrow><mo href="df-dv.html">d</mo><mfenced separators="&longmapsto;"><mrow>#x# <mo>&isin;</mo> #B#</mrow> #O#</mfenced></mrow> <mrow><msub><mo href="df-dv.html">d</mo>#A#</msub> #x#</mrow></mfrac> $.
+$s class ( A _D ( x e. B |-> O ) ) $: <mfrac><mrow><mo href="df-dv.html">d</mo><mfenced separators="&longmapsto;"><mrow>#x# <mo>&isin;</mo> #B#</mrow> #O#</mfenced></mrow> <mrow><msub><mo href="df-dv.html">d</mo>#A#</msub> #x#</mrow></mfrac> $.
+$s class ( A _D F ) $: <msubsup>#F# #A# <mo href="df-dv.html">&#x2032;</mo></msubsup> $.
+$( s class ( A _D F ) $: <mfenced><msubsup>#F# #A# <mo href="df-dv.html">&#x2032;</mo></msubsup></mfenced> $)
+$s wff F : O --> P $: <mrow> #F# <mo>:</mo> #O# <mo href="df-f.html">&xrarr;</mo> #P# </mrow> $.
+$s wff F : O -1-1-> P $: <mrow> #F# <mo>:</mo> #O# <munder href="df-f1.html"><mo>&xrarr;</mo> <mo>1-1</mo></munder> #P# </mrow> $.
+$s wff F : O -onto-> P $: <mrow> #F# <mo>:</mo> #O# <munder href="df-fo.html"><mo>&xrarr;</mo> <mo>onto</mo></munder> #P# </mrow> $.
+$s wff F : O -1-1-onto-> P $: <mrow> #F# <mo>:</mo> #O# <munder href="df-f1o.html"><mo>&xrarr;</mo> <mo>1-1 onto</mo></munder> #P# </mrow> $.
+$s wff F e. ( A -cn-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-cncf.html"><mo>&xrarr;</mo><mo>cn</mo></munder> #B# </mrow> $.
+$s wff hadd ( ph , ps , ch ) $: <mrow> <mo href="df-had.html">hadd</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
+$s wff cadd ( ph , ps , ch ) $: <mrow> <mo href="df-cad.html">cadd</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
+$s wff CondEq ( x = y -> ph ) $: <mrow> <mo href="df-cdeq.html">CondEq</mo> <mfenced><mrow>#x# <mo>=</mo> #y# <mo>&rarr;</mo> #ph#</mrow></mfenced></mrow> $.
+$s wff H Isom O , P ( Q , S ) $: <mrow> #H# <msub><mo href="df-isom.html">Isom</mo> <mrow>#O# <mo>,</mo> #P#</mrow></msub> <mfenced>#Q# #S#</mfenced></mrow> $.
+$s class OrdIso ( O , P ) $: <mrow> <mo href="df-oi.html">OrdIso</mo> <mfenced>#O# #P#</mfenced></mrow> $.
+$s class seqom ( O , P ) $: <mrow> <msub href="df-seqom.html"><mo>seq</mo> <mi>&omega;</mi></msub> <mfenced>#O# #P#</mfenced></mrow> $.
+
+$s class Locally A $: <mrow><mo href="df-lly.html">Locally<mo> #A# </mrow> $.
+$s class N-Locally A $: <mrow><mo href="df-nlly.html">N-Locally<mo> #A# </mrow> $.
+$s wff Prt A $: <mrow><mo href="df-prt.html">Prt<mo> #A# </mrow> $.
+
+$( These definitions are placed later because they are overridden by some constructs $)
+$s wff O e. A $: <mrow> #O# <mo href="wcel.html">&isin;</mo> #A# </mrow> $.
+$s class ( F ` O ) $: <mrow> #F# <mo>&ApplyFunction;</mo> <mfenced>#O#</mfenced> </mrow> $. $( Removed <mo fence stretchy="false">(</mo> $)
+
+$( From Mathboxes $)
+$s wff ( ph -/\ ps -/\ ch ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-3nand.html">&#8892;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-3nand.html">&#8892;</mo> #ch# </mrow></mfenced> $.
+$s wff ( ph /\ ps /\ ch /\ th ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-bnj17.html">&and;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-bnj17.html">&and;</mo> #ch#  <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-bnj17.html">&and;</mo> #th# </mrow></mfenced> $.
+
+
+$( Relation Constants $)
+$s class ~~ $: <mo href="df-en.html">&ap;</mo> $.
+$s class ~< $: <mo href="df-sdom.html">&pr;</mo> $.
+$s class ~<_ $: <mo href="df-dom.html">&prcue;</mo> $.
+$s class ~<_* $: <msup href="df-wdom.html"><mo>&prcue;</mo> <mo>*</mo></msup> $.
+$s class ~~> $: <mo href="df-clim.html">&zigrarr;</mo> $. $( I preferred &dzigrarr; , but that one is not the MathJax fonts. $)
+$s class ~~>r $: <munder accentunder href="df-rlim.html"><mo>&zigrarr;</mo><mi>&Ropf;</mi></munder> $.
+$s class ~~>t $: <munder accentunder href="df-lm.html"><mo>&zigrarr;</mo><mi>t</mi></munder> $.
+$s class ~~>u $: <munder accentunder href="df-ulm.html"><mo>&zigrarr;</mo><mi>u</mi></munder> $.
+$s class ~~>v $: <munder accentunder href="df-hlim.html"><mo>&zigrarr;</mo><mi>v</mi></munder> $.
+$s class <_ $: <mo href="df-le.html">&le;</mo> $.
+$s class < $: <mo href="df-ltxr.html">&lt;</mo> $.
+$s class <RR $: <msub href="df-lt.html"><mo>&lt;</mo> <mi>&Ropf;</mi></msub> $.
+$s class [C.] $: <mo href="df-rpss.html">[&sub;]</mo> $.
+
+$( Function-like constructs $)
+$s class tpos F $: <mrow><mo href="df-tpos.html">tpos</mo> #F#</mrow> $.
+$s class curry F $: <mrow><mo href="df-cur.html">curry</mo> #F#</mrow> $.
+$s class uncurry F $: <mrow><mo href="df-unc.html">uncurry</mo> #F#</mrow> $.
+
+$( Function Constants $)
+$s class || $: <mo href="df-dvds.html">&par;</mo> $.
+$s class # $: <mfenced open="|" close="|" href="df-hash.html"><mi>.</mi></mfenced> $.
+$s class ! $: <mo href="df-fac.html">&excl;</mo> $.
+$s class har $: <mo href="df-har.html">har</mo> $.
+$s class fi $: <mo href="df-fi.html">fi</mo> $.
+$s class shift $: <mo href="df-shft.html">shift</mo> $.
+$s class abs $: <mo href="df-abs.html">abs</mo> $.
+$s class log $: <mo href="df-log.html">log</mo> $.
+$s class exp $: <mo href="df-ef.html">exp</mo> $.
+$s class sin $: <mo href="df-sin.html">sin</mo> $.
+$s class cos $: <mo href="df-cos.html">cos</mo> $.
+$s class tan $: <mo href="df-tan.html">tan</mo> $.
+$s class arcsin $: <mo href="df-asin.html">arcsin</mo> $.
+$s class arccos $: <mo href="df-acos.html">arccos</mo> $.
+$s class arctan $: <mo href="df-atan.html">arctan</mo> $.
+$s class 1st $: <msup href="df-1st.html"><mo>1</mo> <mo>st</mo></msup> $.
+$s class 2nd $: <msup href="df-2nd.html"><mo>2</mo> <mo>nd</mo></msup> $.
+$s class ZZ>= $: <msub href="df-uz.html"><mi>&Zopf;</mi> <mo>&ge;</mo></msub> $.
+$s class |_ $: <mfenced open="&lfloor;" close="&rfloor;" href="df-fl.html"><mi>.</mi></mfenced> $.
+$s class |^ $: <mfenced open="&lceil;" close="&rceil;" href="df-ceil.html"><mi>.</mi></mfenced> $.
+$s class Re $: <mo href="df-re.html">&Rfr;</mo> $.
+$s class Im $: <mo href="df-im.html">&Ifr;</mo> $.
+$s class * $: <mo href="df-cj.html">*</mo> $.
+$s class gsum $: <msub href="df-gsum.html"><mo>&Sigma;</mo><mi>&#x1D454;</mi></msub> $.
+$s class vol $: <mo href="df-vol.html">vol</mo> $.
+$s class vol* $: <msup href="df-ovol.html"><mo>vol</mo> <mo>*</mo></msup> $.
+$s class S.1 $: <msup href="df-itg1.html"><mo>&int;</mo> <mn>1</mn></msup> $.
+$s class S.2 $: <msup href="df-itg2.html"><mo>&int;</mo> <mn>2</mn></msup> $.
+$s class area $: <mo href="df-area.html">area</mo> $.
+
+$( Operator Constants - usually not used outside definition $)
+$s class +c $: <msub href="df-cda.html"> <mo>+</mo> <mo>c</mo> </msub> $.
+$s class + $: <mo href="df-add.html">&plus;</mo> $.
+$s class - $: <mo href="df-sub.html">&minus;</mo> $.
+$s class / $: <mo href="df-div.html">&divide;</mo> $.
+$s class x. $: <mo href="df-mul.html">&times;</mo> $.
+$s class ^ $: <mo href="df-exp.html">^</mo> $.
+$s class +e $: <msub href="df-xadd.html"><mo>&plus;</mo> <mi>&#x1D452;</mi></msub> $.
+$s class -e A $: <mrow><msub href="df-xneg.html"><mo>&minus;</mo> <mi>&#x1D452;</mi></msub> #A </mrow> $.
+$s class /e $: <msub href="df-xdiv.html"><mo>&divide;</mo> <mi>&#x1D452;</mi></msub> $.
+$s class *e $: <msub href="df-xmul.html"><mo>&sdot;</mo> <mi>&#x1D452;</mi></msub> $.
+$s class [,] $: <mfenced open='[' close=']' href="df-icc.html"><mi>.</mi></mfenced> $.
+$s class [,) $: <mfenced open='[' close=')' href="df-ico.html"><mi>.</mi></mfenced> $.
+$s class (,] $: <mfenced open='(' close=']' href="df-ioc.html"><mi>.</mi></mfenced> $.
+$s class (,) $: <mfenced open='(' close=')' href="df-ioo.html"><mi>.</mi></mfenced> $.
+$s class _C $: <mrow href="df-bc.html"> <mo>(</mo> <mfrac linethickness="0"><mi>.</mi> <mi>.</mi></mfrac><mo>)</mo> </mrow> $.
+$s class _D $: <mi href="df-dv.html" mathvariant="normal">D</mi> $.
+$s class sqrt $: <msqrt href="df-sqrt.html"><mi>.</mi></msqrt> $.
+$s class ... $: <mo href="df-fz.html">&hellip;</mo> $.
+$s class ..^ $: <mo href="df-fzo.html">..^</mo> $.
+$s class -cn-> $: <munder accentunder href="df-cncf.html"><mo>&xrarr;</mo><mo>cn</mo></munder> $.
+$s class mod $: <mo href="df-mod.html">mod</mo> $.
+$s class +o $: <msub href="df-oadd.html"> <mo>+</mo> <mo>&#x1d45c;</mo> </msub> $.
+$s class .o $: <msub href="df-omul.html"> <mo>&sdot;</mo> <mo>&#x1d45c;</mo> </msub> $.
+$s class ^o $: <msub href="df-oexp.html"> <mo>&uarr;</mo> <mo>&#x1d45c;</mo> </msub> $.
+$s class ^m $: <msub href="df-map.html"> <mo>&uarr;</mo> <mo>&#x1d45a;</mo> </msub> $.
+$s class ^pm $: <msub href="df-pm.html"> <mo>&uarr;</mo> <mo>&#x1d45d;&#x1d45a;</mo> </msub> $.
+$s class MblFn $: <mo href="df-mbf.html">MblFn</mo> $.
+$s class limCC $: <msub href="df-limc.html"><mo>lim</mo> <mi>&Copf;</mi></msub> $.
+$s class tX $: <msub href="df-tx.html"><mo>&times;</mo> <mi>t</mi></msub> $.
+
+$s wff A R B $: <mrow>#A# #R# #B#</mrow> $.
+
+$( By default, put brackets on infix operator classes $)
+$s class ( A F B ) $: <mfenced><mrow>#A# #F# #B#</mrow></mfenced> $.
+
+$( By default, don't put brackets on O-classes $)
+$s class-o ( A F B ) $: <mrow>#A# #F# #B#</mrow> $.
+
+$( In last resort, revert class-o to normal class (with parens) $)
+$s class-o A $: #A# $.
+
+$( Try displaying classes as numbers $)
+$s class M $: <mn> #M# </mn> $.
+
+$( For mmdefinitions.html exclusively ... does not work 
+$s wff A = B $: <mrow> #A# <mo href="wceq.html">=</mo> #B# </mrow> $.
+$s wff A e. B $: <mrow> #A# <mo href="wcel.html">&isin;</mo> #B# </mrow> $.
+$s class ; A B $: <mrow> <mo>;</mo> #A# #B# </mrow> $. $)
+
+
+$( ======================================================================= $)
+
+$( Command: this is the command to be run by Metamath when outputting files
+   for offline pre-rendering. The generated HTML/MATHML output is piped to
+   the command's input stream, and the command's output stream is saved. $)
+$c ../node_modules/mathjax-node-page/bin/mjpage --format MathML --output SVG --speech false --fontURL "http://metamath.tirix.org/fonts/HTML-CSS" --linebreaks $.
+
+
+$( Container: this is what needs to be included around each formula. 
+   The ### is replaced with the formula. It comes in two flavors, one diplay (block), and one for text (inline). $)
+$d <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> ### </math> $.
+$t <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"> ### </math> $.
+$( Header: this is what needs to be included in the HTML header $)
+$h 
+  <!-- Include the mm-web-ui javascript and stylesheet. -->
+  <script src="mm-web-ui/externals/jquery.min.js" type="text/javascript"></script>
+  <script src="mm-web-ui/mm-web-ui.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="mm-web-ui/mm-web-ui.css">
+$.

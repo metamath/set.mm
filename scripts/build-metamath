@@ -1,0 +1,46 @@
+#!/bin/sh
+
+# Build metamath executable, extract related files, and install the executable.
+# This assumes the needed files are downloaded, see download-metamath
+# The executable is installed in $prefix/bin; default $prefix is $HOME
+
+set -e -v
+
+fail () {
+  printf '%s\n' "$1"
+  exit 1
+}
+
+test -f metamath-program.zip || fail 'Cannot find metamath-program.zip'
+
+# Unzip the .zip file; put all its contents into directory "./metamath"
+# ignoring any of its structure (-j) so that the version number provided
+# by GitHub is quietly removed.
+mkdir -p metamath/
+unzip -o -j -d metamath/ metamath-program.zip
+
+cd metamath/
+
+# Compile metamath, a C verifier (and more) of metamath files by Norm Megill.
+# We could just run "gcc *.c -O2 -o metamath", but this will do some
+# auto-detection to try to find the best available options.
+autoreconf -i
+./configure
+
+# We can't just "build everything", because that would require .mm files
+# not included in this subset distribution.  So ask to build *just*
+# metamath.  We have to extract the extension and use it so the build request
+# will work on Cygwin.
+rm -f metamath metamath.exe
+extension=$( gawk '/^EXEEXT = / { print $3 }' < Makefile )
+make "metamath${extension}"
+
+# install metamath to $prefix/bin (by default, $HOME/bin); this honors DESTDIR:
+make prefix="${prefix:-"$HOME"}" install-binPROGRAMS
+
+# If there's no more recent mmbiblio.html, use this one.
+if ! [ -e ../mmbiblio.html ] ; then
+  cp -p mmbiblio.html ../
+fi
+
+cd ../

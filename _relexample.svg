@@ -1,0 +1,86 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.1" width="241px" height="81px" viewBox="-0.5 -0.5 241 81"
+	content="&lt;mxfile userAgent=&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36&quot; version=&quot;9.4.6&quot; editor=&quot;www.draw.io&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;3991d60a-011f-6da9-589f-da01d08b9253&quot; name=&quot;Page-1&quot;&gt;1VbbjtowEP0aHlvlQlJ4XGDZvrSqxKrdPppkkrjrxKljltCv7zh2LoZwkbZVtyCBfTwzntuxZuIv8/pBkDL7xGNgE8+J64m/mnjefDrDXwUcNBD4cw2kgsYacntgQ3+BAR2D7mgMlSUoOWeSljYY8aKASFoYEYLvbbGEM/vWkqRwAmwiwk7RbzSWmUZngdPjH4GmWXuz65iTnLTCBqgyEvP9APLvJ/5ScC71Kq+XwFTu2rxovfWZ084xAYW8RcHTCi+E7UxsEy9kqLpIOFpAB+XBRB3+3PH24F3V1OQOBdywrPtDXKXmv7FSlaQ4xl5n+ZGXrSEMS9uy7SM8du1WjAiO6Rv/EhLZ7n0FEZOCDF26IQj3UnroICrOeEqxx0793ZTKld5pejUQz3LNw5ojNXCz2GdUgrbnr/ZITsQymTPcubgkVan5ktAasEUWgu+KWK1Wjqpm262OCXRNcsoUiZd8Jyigx85n2KtDytgSIxKNA36SJF4UKQtS8GcYnMThNgzCzukXEBLqs83sdhTBpwV4DlIcUMQo+KFh1eFovx+Q1EDZgJ8tRsyzkHaWe+bgwpBnnEj+/0gkrDc+o2+GTWMR/x2GOSryK4wai/pMjMNkvDnqBeo7Rr2w+RhzA1x//gwlPeffUXJ6QknJywcoTmtUxHdqKsDdlvHo+TGjhV2ciwnXiW0HASWOBteUtcpQU/k0WH9XVXwfNHIY0pMparPpz47KGBOYJaMvaBguvDWmZPFjl5dmVgq1E2Y372oJ8dFgU2EshpjtEyaJSEFa48EN9T7YE9qgvMFIeVtMACOSvtg+jdXcXPiF0+Y1Md01de3u8uZHbaPDM1rDMeiKIf/DkSGdlAuGWkGeJBVYMk2bdpka61zc9hOfFu/HZv/+Nw==&lt;/diagram&gt;&lt;/mxfile&gt;">
+	<defs />
+	<ellipse cx="200" cy="40" rx="40" ry="40" fill="#fff2cc"
+		stroke="#d6b656" pointer-events="none" />
+	<g transform="translate(168.5,16.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="62" height="47"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+				<div xmlns="http://www.w3.org/1999/xhtml"
+					style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 62px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+					<div xmlns="http://www.w3.org/1999/xhtml"
+						style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+						<font style="font-size: 16px">
+							<span>
+								<font style="font-size: 16px">Top</font>
+							</span>
+							<br />
+						</font>
+						<font face="Verdana" style="font-size: 11px">
+							<i>
+								Topological
+								<br />
+								Space
+							</i>
+						</font>
+					</div>
+				</div>
+			</foreignObject>
+			<text x="31" y="30" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">[Not supported by viewer]</text>
+		</switch>
+	</g>
+	<ellipse cx="40" cy="40" rx="40" ry="40" fill="#f5f5f5" stroke="#666666"
+		pointer-events="none" />
+	<g transform="translate(0.5,16.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="78" height="47"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+				<div xmlns="http://www.w3.org/1999/xhtml"
+					style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(51, 51, 51); line-height: 1.2; vertical-align: top; width: 78px; white-space: normal; overflow-wrap: normal; text-align: center;">
+					<div xmlns="http://www.w3.org/1999/xhtml"
+						style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+						<font style="font-size: 16px">
+							<span>
+								<font style="font-size: 16px">TopBases</font>
+							</span>
+							<br />
+						</font>
+						<font face="Verdana">
+							<span style="font-size: 11px">
+								<i>Topological Base</i>
+							</span>
+						</font>
+						<br />
+					</div>
+				</div>
+			</foreignObject>
+			<text x="39" y="30" fill="#333333" text-anchor="middle"
+				font-size="12px" font-family="Courier New">[Not supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 80 40 L 148.88 40" fill="none" stroke="#66b2ff"
+		stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 158.88 40 L 148.88 43.33 L 148.88 36.67 Z" fill="#66b2ff"
+		stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<g transform="translate(99.5,24.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="40" height="11"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+				<div xmlns="http://www.w3.org/1999/xhtml"
+					style="display: inline-block; font-size: 11px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;">
+					<div xmlns="http://www.w3.org/1999/xhtml"
+						style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">topGen</div>
+				</div>
+			</foreignObject>
+			<text x="20" y="11" fill="#000000" text-anchor="middle"
+				font-size="11px" font-family="Courier New">topGen</text>
+		</switch>
+	</g>
+</svg>

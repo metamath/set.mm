@@ -1,0 +1,773 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+-->
+
+<head>
+
+<!-- improve mobile display -->
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+
+<title>Metamath 100</title>
+
+<!--
+<link type="text/css" rel="stylesheet"
+href="metamath_100_files/banner-styles.css">
+
+<link type="text/css" rel="stylesheet"
+href="xdtmp/wiki.css">
+
+<link href="metamath_100_files/toolbar.css" type="text/css"
+rel="stylesheet">
+
+<link rel="alternate"
+type="application/wiki" title="Edit this page"
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl?action=edit;id=metamath_100">
+
+<meta name="robots"
+content="INDEX,FOLLOW"><link rel="alternate" type="application/rss+xml"
+title="AsteroidMeta"
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl?action=rss">
+
+<link rel="alternate" type="application/rss+xml" title="AsteroidMeta:
+metamath_100"
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl?action=rss;rcidonly=metamath_100">
+-->
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body class="http://wiki.planetmath.org/cgi-bin/wiki.pl">
+
+<!--
+<div class="" id="wm-ipp" style="display:  block;" lang="en">
+-->
+
+
+
+<!--
+<div class="header"><span class="gotobar bar"><a class="local"
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl/HomePage">HomePage</a>
+<a class="local"
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl/RecentChanges">RecentChanges</a>
+</span><h1><a title="Click to search for references to this page"
+
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl?search=%22metamath+100%22">metamath
+100</a></h1></div><div class="wrapper">
+
+
+<div class="content browse"><p>
+-->
+
+
+
+<TABLE BORDER=0 WIDTH="100%"><TR>
+<!-- ...TD style="line-height:100%"... -->
+
+<TD NOWRAP ALIGN=LEFT VALIGN=MIDDLE WIDTH="25%"> <FONT SIZE=-2
+FACE=arial><A HREF="../index.html"><IMG SRC="mm.gif" BORDER=0
+ALT="Home" HEIGHT=32 WIDTH=32 ALIGN=LEFT><IMG SRC="spacer.gif" BORDER=0
+ALT="" HEIGHT=32 WIDTH=1 ALIGN=LEFT>Metamath<BR>Home</A></FONT></TD>
+
+<TD NOWRAP ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE="+3"
+COLOR="#006633"><B>Metamath 100</B></FONT></TD>
+
+<TD WIDTH="25%"> &nbsp; </TD>
+
+</TR></TABLE>
+
+<HR NOSHADE SIZE=1>
+
+<CENTER>
+<B><FONT COLOR="#006633">Created by David A. Wheeler</FONT></B>
+</CENTER>
+
+<HR NOSHADE SIZE=1>
+
+
+
+<p><a href="http://www.cs.ru.nl/%7Efreek/100/">"Formalizing 100
+Theorems" by Freek Wiedijk</a> lists 100 mathematical theorems and the
+various systems that have formalized a nontrivial number of them.  This
+list is discussed in <a
+href="http://www.ams.org/notices/200811/tx081101408p.pdf">"Formal Proof
+- Getting Started" (Freek Wiedijk, Notices of the AMS, Volume 55, Number
+11, December 2008)</a>.  Rightly or wrongly, this list is used by others
+to judge proof systems.  Wiedijk's "getting started" picks as its
+primary examples HOL Light and Mizar, which at the time had the largest
+number of proofs.  Similarly, <a
+href="http://www.cs.sjsu.edu/faculty/beeson/Masters/KamThesis.pdf">"Case
+Studies in Proof Checking" by Robert C. Kam</a> says, "Judging by Dr.
+Wiedijk's Formalizing 100 Theorems list, which gives an overview of the
+headway various proof systems have made in mathematics, Coq and Mizar
+are two of the most successful systems in use today (Wiedijk,
+2007)".</p>
+
+<p>Currently there are <b>74</b> proofs proven by Metamath from this list of
+100.  As of 2020-04-05 this number of proofs is more than
+Coq (70), Mizar (69),
+ProofPower (43), Lean (29),
+PVS (22), nqthm/ACL2 (18), and NuPRL/MetaPRL (8);
+it is short of only Isabelle (83) and HOL Light (86).
+This is very good, especially considering that there had been no significant
+effort until 2014 to prove theorems from this list of 100 using Metamath.
+In this page, you can see the
+<a href="#done">completed Metamath proofs</a> and the
+<a href="#todo">Metamath proofs to be done</a> from this list of
+metamath proofs.
+</p>
+
+<p>Like all Metamath proofs, all reasoning is done directly in the
+proof itself rather than by algorithms embedded in the verification
+program.  As a result, the proofs are completely transparent with
+nothing hidden from the user, and every step can be followed through a
+hyperlink to its corresponding proof or definition.
+Therefore, the Metamath Proof Explorer (MPE aka set.mm) database
+is the <i>largest</i> database of formally-verified mathematics
+that records every step of a proof by directly
+referring to only an axiom or previous proof
+(many competing databases only record tactics that are
+intended to rediscover the proof, instead of recording
+the specific proven steps actually used in the proof).
+</p>
+
+<p>
+The theorems in MPE are routinely verified by 5 different programs
+written in 5 different programming languages by more than 5 different people.
+These are the
+original metamath (a C verifier by Norm Megill),
+mmj2 (a Java verifier by Mel O'Cat and Mario Carneiro),
+smetamath-rs (a high-speed Rust verifier by Stefan O'Rear),
+checkmm (a C++ verifier by Eric Schmidt), and
+mmverify (a Python verifier by Raph Levien).
+This checking by multiple independent verifiers in different languages
+provides very strong justification for believing
+that the proofs are correct.
+</p>
+
+<p>
+What's more, all of
+the proofs listed here are current and verified with the current
+versions of Metamath tools.
+This is not the case with some
+other systems, where older proofs have not always been kept synchronized
+with the current system and thus have become essentially lost.
+</p>
+
+<!--
+This is different from some other systems.
+For example, Isabelle's proof of the prime number theorem was done in
+Isabelle2005, and it was not kept up in the Isabelle AFP (its archive of
+formal proofs), so its proof is uncheckable with current tools and
+essentially lost.
+-->
+
+<p>
+Since the kernel of Metamath is extremely small and rarely changes, the
+underlying Metamath language (as implemented by over a dozen
+independently-written verifiers) is very stable over time
+and can be verified very rapidly.
+The entire
+content of  <A HREF="index.html#mmprog">set.mm</A>
+set theory database can be verified in less than 5 sec
+with the <A HREF="index.html#mmprog">metamath program</A> and in 0.7 sec
+with a recent version of Stefan O'Rear's <A
+HREF="other.html#smm">smm3</A> verifier that utilizes multiple CPU
+cores.  As of June 2016, altogether
+the theorems listed here ultimately make use of
+12151 of the 28366 theorems in set.mm for their full derivation from ZFC
+axioms.  (This doesn't mean that 12151 theorems are dedicated to the
+theorems on this list.  Most are library-type theorems shared
+by many other theorems; for
+example, many of the theorems on this list
+depend on the complex number construction, which itself
+involves 3014 theorems to derive starting from the ZFC axioms.)</p>
+
+<p>
+<a
+href="https://docs.google.com/spreadsheets/d/1jcLOp_jF4sPrVPdPedL_ZWebXp8oYEQOSmbWb168YHE"
+>Some graphs showing Metamath 100 progress are available on another page</a>
+(click the Authors tab for a pie chart).
+You can also see a
+<a href="https://www.youtube.com/watch?v=LVGSeDjWzUo">Gource Visualization of
+the growth of the Metamath Proof Explorer (MPE / set.mm) database of proofs</a>.
+</p>
+
+<p id="done">Here is the list of the <a
+href="http://www.metamath.org/">Metamath</a> proofs that are available
+from this list of 100, along with credit to the individual(s) who
+created the Metamath formalization.
+Almost all of these proofs are from the <a
+href="http://us.metamath.org/mpeuni/mmset.html">Metamath Proof Explorer</a>,
+aka database set.mm, which is based on classical logic.
+However, there are some proofs available in the <a
+href="http://us.metamath.org/ileuni/mmil.html">Intuitionistic Logic Explorer</a>,
+aka database iset.mm, which uses intuitionistic logic instead.
+Please let us know about missing entries via
+<a href="https://github.com/metamath/set.mm">github issue</a> or the
+<a
+href="http://groups.google.com/group/metamath">Metamath mailing list</a>.
+
+<p><a name="developers"></a><font size=-1>Note for potential
+contributors:  The development tools most people use, in addition to a
+good text editor, are <a href="index.html#mmj2">mmj2</a> (which has an
+introductory video) and the <a href="index.html#mmprog">metamath
+program</A> (which has a tutorial in Chapter 2 of the <A
+HREF="index.html#book"><i>Metamath</i></a> book).  Most contributors
+keep their work in progress in private sections of set.mm called
+"mathboxes" to prevent interfering with others' work.  Mathboxes can be
+released via a <a
+href="https://github.com/metamath/set.mm/tree/develop">GitHub</a> pull
+request and will later be moved to the main part of set.mm by its
+maintainers as appropriate.  Alternately, mathboxes can be emailed to
+Norm.  Requests for help on the <a
+href="http://groups.google.com/group/metamath">Metamath Google Group</a>
+can help things go smoother.  See the <a
+href="mpeuni/mmrecent.html">Most Recent Proofs</a> page for recent
+announcements.</font></p>
+
+<ul>
+
+<!-- 5th added to list -->
+<li><a name="1">1</a>.  The Irrationality of the Square Root of 2 (<a
+href="mpeuni/sqrt2irr.html">sqrt2irr</a>, by Norman Megill, 2001-08-20).
+The intuitionistic logic explorer (iset.mm) database also includes <a
+href="http://us.metamath.org/ileuni/sqrt2irrap.html">sqrt2irrap</a>
+(by Jim Kingdon, 2022-02-01).</li>
+</li>
+
+<!-- 37th added to list -->
+<li><a name="2">2</a>. The Fundamental Theorem of Algebra (<a
+href="mpeuni/fta.html">fta</a>,
+by Mario Carneiro, 2014-09-15)</li>
+
+<!-- 19th added to list -->
+<li><a name="3">3</a>.  The Denumerability of the Rational Numbers (<a
+href="mpeuni/qnnen.html">qnnen</a>,
+by Norman Megill, 2004-07-31,
+revised by Mario Carneiro, 2013-03-03)</li>
+
+<!-- 15th added to list -->
+<li><a name="4">4</a>.  Pythagorean Theorem (<a
+href="mpeuni/pythi.html">pythi</a>, by Norman Megill, 2008-04-17)</li>
+
+<!-- 58th added to list -->
+<li><a name="5">5</a>.  The Prime Number Theorem (<a
+href="mpeuni/pnt.html">pnt</a>, by Mario Carneiro, 2016-06-01) - also see
+<a href="mpeuni/pnt2.html">pnt2</a>, <a href="mpeuni/pnt3.html">pnt3</a></li>
+
+<!-- 53rd added to list -->
+<li><a name="7">7</a>.  Law of Quadratic Reciprocity (<a
+href="mpeuni/lgsquad.html">lgsquad</a>, by Mario Carneiro, 2015-06-19)</li>
+
+<!-- 66th added to list -->
+<li><a name="9">9</a>.  The Area of a Circle (<a
+href="http://us.metamath.org/mpeuni/areacirc.html">areacirc</a>,
+by Brendan Leahy, 2017-08-31)</li>
+
+<!-- 21st added to list -->
+<li><a name="10">10</a>.  Euler's Generalization of Fermat's Little Theorem (<a
+href="mpeuni/eulerth.html">eulerth</a>, by Mario Carneiro,
+2014-02-28)</li>
+
+<!-- 8th added to list -->
+<li><a name="11">11</a>.  The Infinitude of Primes (<a
+href="mpeuni/infpn2.html">infpn2</a>, by Norman Megill, 2005-05-05)</li>
+
+<!-- 33rd added to list -->
+<li><a name="14">14</a>.  Euler's Summation of 1 + (1/2)^2 + (1/3)^2 + .... (<a
+href="mpeuni/basel.html">basel</a>, by Mario Carneiro,
+2014-07-30)</li>
+
+<!-- 35th added to list -->
+<li><a name="15">15</a>. The Fundamental Theorem of Integral
+Calculus (<a
+href="mpeuni/ftc1.html">ftc1</a> and <a
+href="mpeuni/ftc2.html">ftc2</a>,
+by Mario Carneiro, 2014-09-03)</li>
+
+<!-- 11th added to list -->
+<li><a name="17">17</a>.  De Moivre's Theorem (<a
+href="mpeuni/demoivreALT.html">demoivreALT</a>, by Steve Rodriguez, 2006-11-10).
+See also the later proof <a
+href="mpeuni/demoivre.html">demoivre</a> (by Norman Megill, 2007-07-24),
+which is shorter and more general but uses the exponential function.</li>
+
+<!-- 40th added to list -->
+<li><a name="18">18</a>. Liouville's Theorem and the Construction
+of Transcendental Numbers (<a
+href="mpeuni/aaliou.html">aaliou</a>,
+by Stefan O'Rear, 2014-11-22)</li>
+
+<!-- 31st added to list -->
+<li><a name="19">19</a>.  Four Squares Theorem (<a
+href="mpeuni/4sq.html">4sq</a>,
+by Mario Carneiro, 2014-07-16)</li>
+
+<!-- 54th added to list -->
+<li><a name="20">20</a>.  All Primes (1 mod 4) Equal the Sum of Two Squares (<a
+href="mpeuni/2sq.html">2sq</a>, by Mario Carneiro, 2015-06-20)</li>
+
+<!-- 7th added to list -->
+<li><a name="22">22</a>.  The Non-Denumerability of the Continuum (<a
+href="mpeuni/ruc.html">ruc</a>, by Norman Megill, 2004-08-13)</li>
+
+<!-- 23rd added to list -->
+<li><a name="23">23</a>.  Formula for Pythagorean Triples (<a
+href="mpeuni/pythagtrip.html">pythagtrip</a>, by Scott Fenton, 2014-04-19)</li>
+
+<!-- 3rd added to list -->
+<li><a name="25">25</a>.  Schroeder-Bernstein Theorem (<a
+href="mpeuni/sbth.html">sbth</a>, by Norman Megill, 1998-06-08).
+The intuitionistic logic explorer (iset.mm) database shows that
+Schroeder-Bernstein is equivalent to excluded middle, resolving
+this problem in the negative, at <a
+href="http://us.metamath.org/ileuni/exmidsbth.html">exmidsbth</a>
+(by Jim Kingdon, 2022-08-13).</li>
+
+<!-- 45th added to list -->
+<li><a name="26">26</a>.  Leibniz' Series for Pi (<a
+href="mpeuni/leibpi.html">leibpi</a>,
+by Mario Carneiro, 2015-04-16)</li>
+
+<!-- 38th added to list -->
+<li><a name="27">27</a>.  Sum of the Angles of a Triangle (<a
+href="mpeuni/ang180.html">ang180</a>,
+by Mario Carneiro, 2014-09-24)</li>
+
+<!-- 63rd added to list -->
+<li><a name="30">30</a>.  The Ballot Problem (aka Bertrand's ballot problem)
+(<a href="mpeuni/ballotth.html">ballotth</a>,
+by Thierry Arnoux, contributed 2016-12-07)</li>
+
+<!-- 48th added to list -->
+<li><a name="31">31</a>.  Ramsey's Theorem (<a
+href="mpeuni/ramsey.html">ramsey</a>,
+by Mario Carneiro, 2015-04-23)</li>
+
+<!-- 27th added to list -->
+<li><a name="34">34</a>.  Divergence of the Harmonic Series (<a
+href="mpeuni/harmonic.html">harmonic</a>, by Mario Carneiro, 2014-07-11)</li>
+
+<!-- 60th added to list -->
+<li><a name="35">35</a>.  Taylor's Theorem (<a
+href="mpeuni/taylth.html">taylth</a>, by Mario Carneiro, 2017-01-01)</li>
+
+<!-- 49th added to list -->
+<li><a name="37">37</a>.  The Solution of a Cubic (<a
+href="mpeuni/cubic.html">cubic</a>,
+by Mario Carneiro, 2015-04-26)</li>
+
+<!-- 55th added to list -->
+<li><a name="38">38</a>.  Arithmetic Mean/Geometric Mean (<a
+href="mpeuni/amgm.html">amgm</a>,
+by Mario Carneiro, 2015-06-21)</li>
+
+<!-- 39th added to list -->
+<li><a name="39">39</a>. Solutions to Pell's Equation (<a
+href="mpeuni/rmxycomplete.html">rmxycomplete</a>,
+by Stefan O'Rear, 2014-11-22)</li>
+
+<!-- 24th added to list -->
+<li><a name="42">42</a>.  Sum of the Reciprocals of the Triangular Numbers (<a
+href="mpeuni/trirecip.html">trirecip</a>, by Scott Fenton,
+2014-05-02).
+The intuitionistic logic explorer (iset.mm) database includes this proof
+as <a href="http://us.metamath.org/ileuni/trirecip.html">trirecip</a>
+(added 2022-10-22).</li>
+
+<!-- 9th added to list -->
+<li><a name="44">44</a>.  The Binomial Theorem (<a
+href="mpeuni/binom.html">binom</a>, Norman Megill, 2005-12-07).
+The intuitionistic logic explorer (iset.mm) database includes this proof
+as <a href="http://us.metamath.org/ileuni/binom.html">binom</a>
+(added 2022-10-15).</li>
+
+<!-- 68th added to list -->
+<li><a name="45">45</a>.  The Partition Theorem (by Euler) (<a
+href="mpeuni/eulerpart.html">eulerpart</a>, Thierry Arnoux, 2018-08-30)</li>
+
+<!-- 50th added to list -->
+<li><a name="46">46</a>.  The Solution of the General Quartic Equation (<a
+href="mpeuni/quart.html">quart</a>,
+by Mario Carneiro, 2015-05-06)</li>
+
+<!-- 56th added to list -->
+<li><a name="48">48</a>.  Dirichlet's Theorem (<a
+href="mpeuni/dirith.html">dirith</a>,
+by Mario Carneiro, 2016-05-12)</li>
+
+<!-- 72nd added to list -->
+<li><a name="49">49</a>.  The Cayley-Hamilton Theorem (<a
+href="mpeuni/cayleyhamilton.html">cayleyhamilton</a>,
+by Alexander van der Vekens, 2019-11-25)</li>
+
+<!-- 42th added to list -->
+<li><a name="51">51</a>.  Wilson's Theorem (<a
+href="mpeuni/wilth.html">wilth</a>,
+by Mario Carneiro, 2015-01-28)</li>
+
+<!-- 6th added to list -->
+<li><a name="52">52</a>.  The Number of Subsets of a Set (<a
+href="mpeuni/pw2en.html">pw2en</a>, by Norman Megill, 2004-01-29)</li>
+
+<!-- 46th added to list -->
+<li><a name="54">54</a>. The Konigsberg Bridge Problem (<a
+href="mpeuni/konigsberg.html">konigsberg</a>,
+by Mario Carneiro, 2015-04-16)</li>
+
+<!-- 62nd added to list -->
+<li><a name="55">55</a>.  Product of Segments of Chords (<a
+href="mpeuni/chordthm.html">chordthm</a>
+by David Moews, 2017-02-28)</li>
+
+<!-- 71st added to list -->
+<li><a name="57">57</a>.  Heron's Formula (<a
+href="mpeuni/heron.html">heron</a>
+by Mario Carneiro based on work by Jon Pennant and Thierry Arnoux,
+2019-03-10)</li>
+
+<!-- 29th added to list -->
+<li><a name="58">58</a>.  Formula for the Number of Combinations (<a
+href="mpeuni/hashbc.html">hashbc</a>, by Mario Carneiro, 2014-07-13)</li>
+
+<!-- 20th added to list -->
+<li><a name="60">60</a>.  Bezout's Theorem (<a
+href="mpeuni/bezout.html">bezout</a>, by Mario Carneiro, 2014-02-22).
+The intuitionistic logic explorer (iset.mm) database also includes <a
+href="http://us.metamath.org/ileuni/bezout.html">bezout</a>
+(by Mario Carneiro and Jim Kingdon, 2022-01-09).</li>
+
+<!-- 67th added to list -->
+<li><a name="61">61</a>.  Theorem of Ceva (<a
+href="mpeuni/cevath.html">cevath</a>, by
+Saveliy Skresanov, 2017-09-24)</li>
+
+<!-- 1st added to list -->
+<li><a name="63">63</a>.  Cantor's Theorem (<a
+href="mpeuni/canth2.html">canth2</a>, by Norman Megill, 1994-08-07)</li>
+
+<!-- 59th added to list -->
+<li><a name="64">64</a>.  L'H&ocirc;pital's Rule (<a
+href="mpeuni/lhop.html">lhop</a>, by Mario Carneiro, 2016-12-30)</li>
+
+<!-- 61st added to list -->
+<li><a name="65">65</a>.  Isosceles Triangle Theorem (<a
+href="http://us.metamath.org/mpeuni/isosctr.html">isosctr</a>,
+by Saveliy Skresanov, 2017-01-01)</li>
+
+<!-- 10th added to list -->
+<li><a name="66">66</a>.  Sum of a Geometric Series (<a
+href="mpeuni/geoser.html">geoser</a>, by Norman Megill, 2006-05-09).
+The intuitionistic logic explorer (iset.mm) database includes this proof
+as <a href="http://us.metamath.org/ileuni/geoserap.html">geoserap</a>
+(added 2022-10-24).</li>
+
+<!-- 74th added to list -->
+<li><a name="67">67</a>.  <i>e</i> is Transcendental (<a
+href="mpeuni/etransc.html">etransc</a>, by Glauco Siliprandi, 2020-04-05)</li>
+
+<!-- 12th added to list -->
+<!-- Note: arisum was originally named fnsmnt -->
+<li><a name="68">68</a>.  Sum of an arithmetic series (<a
+href="mpeuni/arisum.html">arisum</a>, by Frédéric Liné, 2006-11-16) - arisum
+is not fully general, but it would be straightforward to enhance.
+The intuitionistic logic explorer (iset.mm) database includes this proof
+as <a href="http://us.metamath.org/ileuni/arisum.html">arisum</a>
+(added 2022-10-22).</li>
+
+<!-- 16th added to list -->
+<li><a name="69">69</a>.  Greatest Common Divisor Algorithm (<a
+href="mpeuni/eucalg.html">eucalg</a>, by Paul Chapman, 2011-03-31).
+The intuitionistic logic explorer (iset.mm) database includes this proof
+(with only minor changes from set.mm) as <a
+href="http://us.metamath.org/ileuni/eucialg.html">eucialg</a>
+(by Jim Kingdon, 2022-01-11).</li>
+
+<!-- 57th added to list -->
+<li><a name="70">70</a>.  The Perfect Number Theorem (<a
+href="mpeuni/perfect.html">perfect</a>, by Mario Carneiro, 2016-05-17)</li>
+
+<!-- 28th added to list -->
+<li><a name="71">71</a>.  Order of a Subgroup (<a
+href="mpeuni/lagsubg.html">lagsubg</a>, by Mario Carneiro, 2014-07-11) -
+also see <a href="mpeuni/lagsubg2.html">lagsubg2</a></li>
+
+<!-- 41st added to list -->
+<li><a name="72">72</a>.  Sylow's Theorem (<a
+href="mpeuni/sylow1.html">sylow1</a> and <a
+href="mpeuni/sylow2.html">sylow2</a> and <a
+href="mpeuni/sylow2b.html">sylow2b</a> and <a
+href="mpeuni/sylow3.html">sylow3</a>,
+by Mario Carneiro, 2015-01-19)</li>
+
+<!-- 43rd added to list -->
+<li><a name="73">73</a>.  Ascending or Descending Sequences (<a
+href="mpeuni/erdsze.html">erdsze</a> and <a
+href="mpeuni/erdsze2.html">erdsze2</a>,
+by Mario Carneiro, 2015-01-28)</li>
+
+<!-- 2nd added to list -->
+<li><a name="74">74</a>.  The Principle of Mathematical Induction (<a
+href="mpeuni/finds.html">finds</a>, by Norman Megill, 1995-04-14).
+There are many versions of Mathematical Induction in set.mm. Theorem <a
+href="mpeuni/findes.html">findes</a> (by Raph Levien, 2003-07-09)
+is a compact and more traditional-looking version with explicit substitution.
+Another alternative is <a
+href="mpeuni/nnind.html">nnind</a> (by Norman Megill, 1997-01-10),
+which uses natural numbers instead of ordinal numbers and might be
+less obscure for non-mathematicians.
+The intuitionistic logic explorer (iset.mm) database also includes <a
+href="http://us.metamath.org/ileuni/finds.html">finds</a>
+(adapted from Norman Megill's set.mm proof by Jim Kingdon, 2018-12-01)
+proved from IZF (intuitionistic Zermelo--Fraenkel) and <a
+href="http://us.metamath.org/ileuni/bj-findes.html">bj-findes</a>
+(by Benoit Jubin, 2019-11-21) proved from CZF (constructive
+Zermelo--Fraenkel).
+</li>
+
+<!-- 36th added to list -->
+<li><a name="75">75</a>. The Mean Value Theorem (<a
+href="mpeuni/mvth.html">mvth</a>,
+by Mario Carneiro, 2014-09-14)</li>
+
+<!-- 73rd added to list -->
+<li><a name="76">76</a>. Fourier Series (<a
+href="mpeuni/fourier.html">fourier</a>,
+by Glauco Siliprandi, 2019-12-11)</li>
+
+<!-- 25th added to list -->
+<li><a name="77">77</a>.  Sum of kth powers (<a
+href="mpeuni/fsumkthpow.html">fsumkthpow</a>, by Scott Fenton, 2014-05-16)</li>
+
+<!-- 13th added to list -->
+<li><a name="78">78</a>.  The Cauchy-Schwarz Inequality (<a
+href="mpeuni/sii.html">sii</a>, by Norman Megill, 2008-01-12) - note that this
+is also called "Schwarz" by some authors and "Bunjakovaskij-Cauchy-Schwarz"
+by others.</li>
+
+<!-- 14th added to list -->
+<li><a name="79">79</a>.  The Intermediate Value Theorem (<a
+href="mpeuni/ivth.html">ivth</a>, by Paul Chapman, 2008-01-22)</li>
+
+<!-- 18th added to list -->
+<li><a name="80">80</a>.  Fundamental Theorem of Arithmetic (<a
+href="mpeuni/1arith2.html">1arith2</a>, by Paul Chapman, 2012-11-17)</li>
+
+<!-- 34th added to list -->
+<li><a name="81">81</a>.  Erd&#337;s's proof of the divergence
+of the inverse prime series (<a
+href="mpeuni/prmrec.html">prmrec</a>,
+by Mario Carneiro, 2014-08-10)</li>
+
+<!-- 69th added to list -->
+<li><a name="83">83</a>.  The Friendship Theorem (<a
+href="mpeuni/friendship.html">friendship</a>,
+by Alexander van der Vekens, 2018-10-09)</li>
+
+<!-- 30th added to list -->
+<li><a name="85">85</a>.  Divisibility by 3 Rule (<a
+href="mpeuni/3dvds.html">3dvds</a>, by Mario Carneiro, 2014-07-14)</li>
+
+<!-- 26th added to list -->
+<li><a name="86">86</a>.  Lebesgue Measure and Integration (<a
+href="mpeuni/itgcl.html">itgcl</a>, by Mario Carneiro, 2014-06-29)</li>
+
+<!-- 17th added to list -->
+<li><a name="87">87</a>.  Desargues's Theorem (<a
+href="mpeuni/dath.html">dath</a>, by Norman Megill, 2012-08-20)</li>
+
+<!-- 44th added to list -->
+<li><a name="88">88</a>. Derangements Formula (<a
+href="mpeuni/derangfmla.html">derangfmla</a> and <a
+href="mpeuni/subfaclim.html">subfaclim</a>,
+by Mario Carneiro, 2015-01-28)</li>
+
+<!-- 32nd added to list -->
+<li><a name="89">89</a>.  The Factor and Remainder Theorems (<a
+href="mpeuni/facth.html">facth</a> and <a
+href="mpeuni/plyrem.html">plyrem</a>, by Mario
+Carneiro, 2014-07-26)</li>
+
+<!-- 64th added to list -->
+<li><a name="90">90</a>.  Stirling's Formula (<a
+href="mpeuni/stirling.html">stirling</a> by
+Glauco Siliprandi, 2017-06-29)</li>
+
+<!-- 4th added to list -->
+<li><a name="91">91</a>.  The Triangle Inequality (<a
+href="mpeuni/abstrii.html">abstrii</a>, by Norman Megill, 1999-10-02).
+The intuitionistic logic explorer (iset.mm) database includes this proof
+as <a href="http://us.metamath.org/ileuni/abstrii.html">abstrii</a>
+(added 2021-08-13).</li>
+
+<!-- 47th added to list -->
+<li><a name="93">93</a>.  The Birthday Problem (<a
+href="mpeuni/birthday.html">birthday</a>, by Mario Carneiro, 2015-04-17)</li>
+
+<!-- 52nd added to list -->
+<li><a name="94">94</a>.  The Law of Cosines (<a
+href="mpeuni/lawcos.html">lawcos</a>, by David A. Wheeler, 2015-06-12)</li>
+
+<!-- 51st added to list -->
+<li><a name="95">95</a>.  Ptolemy's Theorem (<a
+href="mpeuni/ptolemy.html">ptolemy</a>, by David A. Wheeler, 2015-05-31)</li>
+
+<!-- 65th added to list -->
+<li><a name="96">96</a>.  Principle of Inclusion/Exclusion (<a
+href="mpeuni/incexc.html">incexc</a>, by Mario Carneiro, 2017-08-07)</li>
+
+<!-- 70th added to list -->
+<li><a name="97">97</a>.  Cramer's Rule (<a
+href="mpeuni/cramer.html">cramer</a>,
+by Alexander van der Vekens, 2019-02-21,
+which built on the key work on determinants by Stefan O'Rear)</li>
+
+<!-- 22nd added to list -->
+<li><a name="98">98</a>.  Bertrand's Postulate (<a
+href="mpeuni/bpos.html">bpos</a>, by Mario Carneiro, 2014-03-15)</li>
+
+</ul>
+
+
+<p><a name="sup"></a>The page <a
+href="http://www.cs.ru.nl/%7Efreek/100/">"Formalizing 100 Theorems"</a>
+also contains a supplementary list of "obvious omissions" from the 100.
+Of those, the following have been formalized:</p>
+
+<ul>
+
+<li><a name="lbsex"></a>Every vector space is free (<a href="mpeuni/lbsex.html">lbsex</a>,
+by Mario Carneiro, 2014-06-25)</li>
+
+<li><a name="heibor"></a>Heine-Borel Theorem (<a href="mpeuni/heibor.html">heibor</a>,
+by Jeff Madsen, 2009-09-02) - also see <a href="mpeuni/cnheibor.html">cnheibor</a></li>
+
+<li><a name="hbt"></a>Hilbert Basis Theorem (<a href="mpeuni/hbt.html">hbt</a>,
+by Stefan O'Rear, 2015-04-04)</li>
+
+<li><a name="stowei"></a>Stone-Weierstrass Theorem (<a
+href="mpeuni/stowei.html">stowei</a>, by Glauco Siliprandi,
+2017-04-20)</li>
+
+</ul>
+
+
+
+<p id="todo">These are all the theorems from the list of 100 that have <b>not</b> been formalized in Metamath. Please move these to the above list!</p>
+
+<ul>
+<li><a name="6">6</a>.  G&ouml;del's Incompleteness Theorem</li>
+<li><a name="8">8</a>.  The Impossibility of Trisecting the Angle and Doubling the Cube</li>
+<li><a name="12">12</a>.  The Independence of the Parallel Postulate</li>
+<li><a name="13">13</a>.  Polyhedron Formula</li>
+<li><a name="16">16</a>.  Insolvability of General Higher Degree Equations</li>
+<li><a name="21">21</a>.  Green's Theorem</li>
+<li><a name="24">24</a>.  The Undecidability of the Continuum Hypothesis</li>
+<li><a name="28">28</a>.  Pascal's Hexagon Theorem</li>
+<li><a name="29">29</a>.  Feuerbach's Theorem</li>
+<li><a name="32">32</a>.  The Four Color Problem</li>
+<li><a name="33">33</a>.  Fermat's Last Theorem</li>
+<li><a name="36">36</a>.  Brouwer Fixed Point Theorem</li>
+<li><a name="40">40</a>.  Minkowski's Fundamental Theorem</li>
+<li><a name="41">41</a>.  Puiseux's Theorem</li>
+<li><a name="43">43</a>.  The Isoperimetric Theorem</li>
+<li><a name="47">47</a>.  The Central Limit Theorem</li>
+<li><a name="50">50</a>.  The Number of Platonic Solids</li>
+<li><a name="53">53</a>.  <i>&pi;</i> is Transcendental</li>
+<li><a name="56">56</a>.  The Hermite-Lindemann Transcendence Theorem</li>
+<li><a name="59">59</a>.  The Laws of Large Numbers</li>
+<li><a name="62">62</a>.  Fair Games Theorem</li>
+<li><a name="82">82</a>.  Dissection of Cubes (J.E. Littlewood's "elegant" proof)</li>
+<li><a name="84">84</a>.  Morley's Theorem</li>
+<li><a name="92">92</a>.  Pick's Theorem</li>
+<li><a name="99">99</a>.  Buffon Needle Problem</li>
+<li><a name="100">100</a>.  Descartes Rule of Signs</li>
+</ul>
+
+<p>You can see other proofs done with <a
+href="http://us.metamath.org/">Metamath</a> and for traditional
+mathematics on the <a
+href="mpeuni/mmset.html">Metamath Proof Explorer
+Home Page</a>.  Note that there are pages similar to this one for other
+tools, such as these pages on <a
+href="http://www.cs.ru.nl/%7Efreek/100/hol.html">HOL</a> and <a
+href="http://www.cs.ru.nl/%7Efreek/100/mizar.html">Mizar</a>.</p>
+
+<p>This metamath list was originally developed by <a
+href="http://www.dwheeler.com/">David A. Wheeler</a> and Norman Megill.
+If you add new theorems to the list, please tell Freek Wiedijk (freek at
+cs dot ru dot nl)</p>
+
+<p>This page is <a
+href="https://creativecommons.org/choose/zero/"> dedicated to the public
+domain through the Creative Commons license CC0</a>, to maximize the
+availability of this page's information.</p>
+
+
+
+<!--
+</div> <div class="wrapper close"></div></div>
+<div
+class="footer"><hr><span class="gotobar bar"><a class="local"
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl/HomePage">HomePage</a>
+<a class="local"
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl/RecentChanges">RecentChanges</a>
+</span><span class="edit bar"><br> <a class="password"
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl?action=password">This
+page is read-only</a> <a class="history"
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl?action=history;id=metamath_100">View
+other revisions</a> <a class="admin"
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl?action=admin;id=metamath_100">Administration</a></span><span
+class="time"><br> Last edited 2014-07-31 04:28 UTC by <a class="author"
+title="cable-47-143.sssnet.com"
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl/digama">digama</a>
+
+<a class="diff"
+href="http://wiki.planetmath.org/cgi-bin/wiki.pl?action=browse;diff=2;id=metamath_100">(diff)</a>
+
+</span><form
+method="get"
+action="/web/20140804110134/http://wiki.planetmath.org/cgi-bin/wiki.pl"
+enctype="multipart/form-data" accept-charset="utf-8" class="search">
+<p><label for="search">Search:</label> <input name="search" size="20"
+accesskey="f" id="search" type="text"> <input name="dosearch"
+value="Go!" type="submit"></p></form></div>
+
+-->
+
+<!--
+<TABLE ALIGN=CENTER> <TR><TD HEIGHT=500 VALIGN=MIDDLE>
+(This space purposely left blank so that anchors in external
+links will align properly)</TD></TR></TABLE>
+-->
+
+
+<P>
+<HR NOSHADE SIZE=1>
+<TABLE WIDTH="100%">
+  <TR>
+    <TD ALIGN=RIGHT>
+      <FONT FACE="ARIAL" SIZE=-2> <A
+      HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
+     </FONT>
+    </TD>
+  </TR>
+</TABLE>
+
+
+</body></html>
+<!--
+     FILE ARCHIVED ON 11:01:34 Aug 4, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 1:16:06 Apr 18, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

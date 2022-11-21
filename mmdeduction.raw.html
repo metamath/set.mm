@@ -1,0 +1,1106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+
+<!-- improve mobile display -->
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+
+<META HTTP-EQUIV="Content-Type"
+ CONTENT="text/html; charset=UTF-8">
+ <TITLE>The Weak Deduction Theorem - Metamath Proof Explorer</TITLE>
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+
+<STYLE TYPE="text/css">
+<!--
+/* Math symbol image will be shifted down 4 pixels to align with normal
+  text for compatibility with various browsers.  The old ALIGN=TOP for
+  math symbol images did not align in all browsers and should be deleted.
+  All other images must override this shift with STYLE="margin-bottom:0px".
+  (2-Oct-2015 nm) */
+img { margin-bottom: -4px }
+-->
+</STYLE>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" STYLE="padding: 0px 8px">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP><A HREF="mmset.html"><IMG SRC="mm.gif"
+      BORDER=0
+      ALT="Metamath Proof Explorer Home"
+      TITLE="Metamath Proof Explorer Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER VALIGN=TOP><FONT SIZE="+3"
+      COLOR="#006633"><B>Metamath Proof Explorer</B></FONT><BR>
+       <FONT SIZE="+2" COLOR="#006633"><B>The Weak Deduction Theorem</B>
+        </FONT>
+    </TD>
+    <TD NOWRAP ALIGN=RIGHT VALIGN=TOP> &nbsp;
+    </TD>
+  </TR>
+
+  <TR>
+    <TD COLSPAN=3 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+        &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmset.html">MPE Home</A>&nbsp; &gt;
+      &nbsp;The Weak Deduction Theorem
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+<HR NOSHADE SIZE=1>
+
+<TABLE WIDTH="100%" BORDER=0><TR><TD WIDTH="50%">
+
+<B><FONT COLOR="#006633">Contents of this page</FONT></B>
+
+<MENU>
+<LI> <A HREF="#quick">A Quick Hint</A></LI>
+<LI> <A HREF="#dedvsth">Deductions vs. Theorems</A></LI>
+<LI> <A HREF="#convert">Converting Deductions to Theorems</A></LI>
+<LI> <A HREF="#standard">The Standard Deduction Theorem</A></LI>
+<LI> <A HREF="#weak">Weak Deduction Theorem</A></LI>
+<LI> <A HREF="#meta">Logic,
+Metalogic, and Metametalogic</A>
+   <!--  -->
+   <FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>New</FONT> <FONT
+   SIZE=-1><I>2-Dec-2008</I></FONT>
+   <!--  -->
+</LI>
+
+<LI> <A HREF="#prop">The Weak Deduction Theorem in Propositional Calculus</A></LI>
+<LI> <A HREF="#propex">Propositional Calculus Example</A></LI>
+<LI> <A HREF="#set">The Weak Deduction Theorem in Set Theory</A></LI>
+<LI> <A HREF="#setex">Set Theory Example</A></LI>
+<LI> <A HREF="#proof">Informal Proof of the Weak Deduction Theorem</A></LI>
+<LI> <A HREF="#special">Another Special Case of the Weak Deduction Theorem</A>
+<!--
+<FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>New</FONT> <FONT
+SIZE=-1><I>2-Mar-2008</I></FONT>
+-->
+</LI>
+</MENU>
+</TD>
+<TD WIDTH="10%"></TD>
+<TD ALIGN=right>
+<FONT COLOR="#006633"><I>
+A Theorem fine is Deduction,<BR>
+For it allows work-reduction:<BR>
+To show "A implies B",<BR>
+Assume A and prove B;<BR>
+Quite often a simpler production.<BR>
+</I>
+<BR>
+--Stefan Bilaniuk
+<BR>
+<A HREF="http://euclid.trentu.ca/math/sb/pcml/">
+<I>A Problem Course in Mathematical Logic</I>, 2003</A> [external]
+</FONT>
+</TD>
+</TR>
+</TABLE>
+
+<P>
+<HR NOSHADE SIZE=1><A NAME="quick"></A>
+<B><FONT COLOR="#006633">A Quick Hint</FONT></B>
+&nbsp;&nbsp;&nbsp;
+If you came to this page because you
+found a proof referencing the Weak Deduction Theorem <A
+HREF="dedth.html">dedth</A> (or one of its variants dedth<I>xx</I>),
+here is how to follow the proof without getting into the details
+described on this page: just
+click on the theorem referenced in the step
+just before the reference to <A HREF="dedth.html">dedth</A>
+and ignore everything else.  All that <A HREF="dedth.html">dedth</A>
+does is turn a
+hypothesis into an antecedent (i.e. the hypothesis followed by ` -> ` is placed in
+front of the assertion, and the hypothesis itself is eliminated).
+<B>Example:</B> Look at the proof of
+<A HREF="renegcl.html">renegcl</A>.  In step 5, there is a reference
+to the deduction <A HREF="renegcli.html">renegcli</A>,
+"` |- A e. RR `&nbsp;&nbsp;` => `&nbsp;&nbsp;
+` |- -u A e. RR `".  A special substitution instance of
+<A HREF="renegcli.html">renegcli</A>
+is used to feed the last hypothesis of
+the deduction theorem <A HREF="dedth.html">dedth</A>, which in turn
+converts it to the theorem
+"` |- ( A e. ` ` RR -> -u A e. RR ) `" in step 6.  The somewhat
+strange-looking steps before step 5 are just some technical stuff that
+makes this magic work, and they can be ignored for a quick
+overview of the proof.  To continue following the "important" part of
+the proof, click on the reference to <A HREF="renegcli.html">renegcli</A> at
+step 5.
+
+<P>
+On this page we attempt to show you how this technical stuff works if you are
+interested.  We also discuss the <A HREF="#set">conditional operator</A>
+"` if ( ph , A , B ) `" that you will find in these proofs.
+</P>
+
+<P>
+In many situations today MPE no longer uses the approach described here.  We
+instead tend to use <A HREF="mmnatded.html">deduction form and natural
+deduction</A>.  However, the approach described here is still valid, and it may
+be interesting to you.
+</P>
+
+<!--
+<p>
+Why does Metamath need these complicated-looking steps to convert an inference
+(deduction) into a closed theorem, when other systems of logic typically have
+a (metalogical) rule that allows to do it in one step?  The answer is that
+these steps are part of the price for Metamath's philosophical goal to show
+all proofs <I>directly</I> from the axiom system in its database and not have
+to rely on higher-level metatheorems derived outside of that axiom system.
+From a practical point of view, this minimalist philosophy also makes
+automated proof verification extremely simple:  the only metalogical rule
+needed to construct a proof from the axioms is the substitution of an
+expression for a variable (as well as checking the non-violation of disjoint
+variable conditions).
+</p>
+-->
+
+<P>
+<HR NOSHADE SIZE=1><A NAME="dedvsth"></A>
+<B><FONT COLOR="#006633">Deductions vs. Theorems</FONT></B>
+&nbsp;&nbsp;&nbsp;
+A <B>deduction</B> (also called an <B>inference</B>) is a kind of statement
+that needs some hypotheses to be true in order for its conclusion to be true.
+A <B>theorem</B>, on the other hand, has no hypotheses.  (Informally we may
+call both of them theorems, but on this page we will stick to the strict
+definition.)  An example of a deduction is the contraposition inference:
+</P>
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR ALIGN=LEFT>
+<TD><A HREF="con3i.html">con3i</A></TD>
+<TD>` |- ( ph -> ps ) `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+    ` |- ( -. ps -> -. ph ) `</TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+This means that if we have proved a theorem of the form ` |- ( ph -> ps ) `
+(where ` ph ` and ` ps ` are any wffs), then we can conclude the theorem
+` |- ( -. ps -> -. ph ) ` .  Here, the symbol &quot;` |- `&quot; is just a
+place-holder that can be read as &quot;a proof exists for&quot;.  The big arrow
+connecting the hypothesis and conclusion isn't a formal mathematical symbol; I
+put it there to suggest informally the relationship between hypothesis and
+conclusion.  To gain an informal feel for what the contraposition inference
+says, suppose we agree with the English statement, &quot;If it is raining,
+there are clouds in the sky.&quot;  From contraposition we can conclude,
+&quot;If there are no clouds in the sky, it is not raining.&quot;
+</P>
+
+<P>
+An example of a theorem is the law of contraposition:
+</P>
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR ALIGN=LEFT>
+<TD><A HREF="con3ALT.html">con3ALT</A></TD>
+<TD>` |- ( ( ph -> ps ) -> ( -. ps -> -. ph ) ) `</TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+This looks almost the same as the deduction, except the hypothesis and
+conclusion are connected together with the formal mathematical symbol for
+&quot;implies&quot;.  We don't have to prove a hypothesis; instead it is a
+standalone statement that is unconditionally true.  Even though it looks
+similar, it is &quot;stronger&quot; than the deduction in a fundamental way.
+</P>
+
+<P>
+<HR NOSHADE SIZE=1><A NAME="convert"></A>
+<B><FONT COLOR="#006633">Converting Deductions to Theorems</FONT></B>
+&nbsp;&nbsp;&nbsp;
+It sometimes happens that we have proved a deduction of the form
+</P>
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR ALIGN=LEFT>
+<TD>` |- si `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp; ` |- ta ` </TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+and we want to then prove a theorem of the form
+</P>
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR ALIGN=LEFT>
+<TD> ` |- ( si -> ta ) ` </TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+Doing this is not as simple as you might think.  The deduction says, "if we can
+prove ` si ` then we can prove ` ta ` ,&quot; which is in some sense
+weaker<FONT SIZE=-1>*</FONT> than saying &quot;` si ` implies ` ta ` .&quot;
+Now, there is no axiom of logic that permits us to directly obtain the theorem
+given the deduction.  However, it is possible to make use of information
+contained in the deduction or its proof to assist us with the proof of the
+theorem, and this is what the standard deduction (meta)theorem and a related
+version that we use are all about.
+</P>
+
+<P>
+On the other hand, if we have the theorem, it is easy to recover the deduction
+using modus ponens <A HREF="ax-mp.html">ax-mp</A>.  An example of this is the
+derivation of the inference <A HREF="simpli.html">simpli</A> from the theorem
+<A HREF="simpl.html">simpl</A>.
+</P>
+
+<P>
+<FONT SIZE=-1>
+*For example, the conversion of a deduction to its theorem form does not hold
+in general for <A HREF="../qlegif/mmql.html#prop">quantum propositional
+calculus</A>, which is a weak subset of classical propositional calculus.  In
+fact, it has been shown that adding the Standard Deduction Theorem (below) to
+quantum propositional calculus turns it into classical propositional calculus!
+</FONT>
+</P>
+
+<P>
+<HR NOSHADE SIZE=1><A NAME="standard"></A>
+<B><FONT COLOR="#006633">The Standard Deduction Theorem</FONT></B>
+&nbsp;&nbsp;&nbsp;
+In traditional logic books, there is a metatheorem called the <B>Standard
+Deduction Theorem</B> (discovered independently by Herbrand and Tarski around
+1930; I added "Standard" to distinguish it from our "Weak" version below) that
+provides an algorithm for constructing a proof of a theorem from the proof of
+its corresponding deduction.  See, for example, Margaris, <I>First Order
+Mathematical Logic,</I> p. 56.  To construct a proof for a theorem, the
+algorithm looks at each step in the proof of the original deduction and
+rewrites the step with several steps wherein the hypothesis is eliminated and
+becomes an antecedent.
+</P>
+
+<P>In ordinary mathematics, no one actually carries out the algorithm,
+because (in its most basic form) it involves an exponential explosion of
+the number of proof steps as more hypotheses are eliminated.  Instead,
+the Standard Deduction Theorem is invoked simply to claim that it can be
+done in principle, without actually doing it.
+
+<!--
+<P>On these Metamath web pages, we want to show you actual proofs rather
+than just telling you that a proof is possible.  It is kind of like the
+difference between saying, &quot;according to advanced number theory,
+this large integer is composite&quot;, versus &quot;here are the factors
+of this large integer.&quot; Only a few people could verify the former,
+whereas almost anyone could verify the latter, even though they are both
+valid ways of proving that an integer is composite.
+
+The use of a high-level metatheorem such as the Standard Deduction
+Theorem in our proofs would require you to learn metamathematical
+concepts beyond the simple substitution of expressions for variables, in
+order to verify for yourself that they are rigorously correct.
+-->
+
+<P><A NAME="bad"></A>Actually, the Standard Deduction Theorem is not
+quite as simple as it might first appear.  There is a subtle restriction
+that must be taken into account when working with predicate calculus.
+If the Axiom of Generalization <A HREF="ax-gen.html">ax-gen</A> was used
+in the proof of the original deduction (or anywhere in the potentially
+large tree of lemmas building up to it) to quantify over a free variable
+contained in one of its hypotheses, then converting that hypothesis to
+an antecedent may fail.
+
+The following example shows why.  When ` x ` and ` y ` are distinct variables,
+the following (silly) deduction can be <A HREF="dtrucor.html">proved</A> in set
+theory:
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR ALIGN=LEFT>
+<TD>` |- x ` ` = ` ` y `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+` |- x ` ` =/= ` ` y `</TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+The reason this deduction holds is that the hypothesis, which effectively
+states (using <A HREF="ax-gen.html">ax-gen</A>) "for all ` x ` and ` y ` ,
+` x = y ` is true", can never be proved as a standalone theorem.  In fact it
+is provably false (by <A HREF="dtru.html">dtru</A>), so any conclusion
+whatsoever follows from it.  However, if we naively apply the Standard
+Deduction Theorem and blindly convert the hypothesis to an antecedent, the
+theorem form of this deduction:
+</P>
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR ALIGN=LEFT>
+<TD><B><I>Wrong!</I></B>&nbsp;&nbsp;
+` |- ( x ` ` = ` ` y -> ` ` x ` ` =/= ` ` y ) `
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+("if two things are equal then they are not equal") is obviously
+<A HREF="dtrucor2.html">absurd</A>!
+</P>
+
+<P>
+<I>Note.</I>
+The way we have presented the Standard Deduction Theorem above is slightly
+different from that in most textbooks, which use a list of hypotheses to the
+left of the the turnstile symbol ` |- ` .  This is discussed further in the
+<A HREF="#meta">Logic, Metalogic,...</A> section below.
+</P>
+
+<P>
+<HR NOSHADE SIZE=1><A NAME="weak"></A>
+<B><FONT COLOR="#006633">Weak Deduction Theorem</FONT></B>
+&nbsp;&nbsp;&nbsp;
+One of the goals of Metamath is to let you plainly see, with as few underlying
+concepts as possible, how mathematics can be derived <I>directly</I> from the
+axioms, and not indirectly according to some hidden rules buried inside a
+program or understood only by logicians.  If we added the Standard Deduction
+Theorem to the language and proof verifier, that would greatly complicate both
+and largely defeat Metamath's goal of simplicity.
+
+<!--
+In addition, Metamath is intended in principle to be independent of any
+particular system of logic, including quantum logic where
+the Standard Deduction Theorem fails.  If the Standard Deduction
+Theorem were built in as a high-level rule, it would defeat this
+purpose. -->
+
+In principle, we could show direct proofs by expanding out the proof
+steps generated by the algorithm of the Standard Deduction Theorem, but
+it is not feasible in practice because the number of proof steps quickly
+becomes huge, even astronomical.  Since the algorithm is driven by proof
+of the deduction, we would have to go through that proof all over
+again&mdash;starting from axioms&mdash;in order to obtain the theorem
+form.  In terms of proof length, there would be no savings over just
+proving the theorem directly instead of first proving the deduction
+form.
+
+<P>There is a much more efficient method for proving a theorem from a
+deduction that can be used in many (but not all) cases.  We call it the
+<B>Weak Deduction Theorem</B>.  (There is also an unrelated "Weak
+Deduction Theorem" in the field of relevance logic, so to avoid
+confusion we could call ours the "Weak Deduction Theorem for Classical
+Logic".)  Unlike the Standard Deduction Theorem, the Weak Deduction
+Theorem produces the theorem directly from a special substitution
+instance of the deduction, using a small, fixed number of steps roughly
+proportional to the length of the final theorem.  The number of
+additional steps is completely independent of the size of the original
+proof, so in practice it can be applied to very advanced theorems
+without a corresponding increase in proof size.  There are also no
+restrictions on the use of the Axiom of Generalization that may cause us
+to stumble:  how the original deduction was proved is irrelevant.
+
+<P>The Weak Deduction Theorem is used frequently in the Metamath Proof
+Explorer, especially in set theory, in order to make formal proofs more
+compact.  Here we describe it in some detail since it is not necessarily
+intuitive, nor has it ever been published.
+
+<P>What are its limitations?  Specifically, we must be able to prove a
+special case of the deduction hypothesis as a standalone theorem.
+This means it cannot be used in all cases&mdash;for example, it cannot be
+used when the hypothesis is a contradiction such as ` ( ph /\ -. ph ) ` .
+However, in the case of the contraposition deduction above, by
+substituting ` ph ` for ` ps ` in the hypothesis ` |- ( ph `
+` -> ps ) ` , we obtain the trivially proved
+identity theorem <A HREF="id.html">id</A>,&nbsp; ` |- ( ph -> ph ) ` .  This
+special case can be used (together with some auxiliary lemmas) to
+eliminate the hypothesis and introduce it as an antecedent.
+
+<P>Does this limitation cause us inconvenience?  In Metamath's set
+theory development, a modified version for class variables (see the <A
+HREF="#set">set theory version</A> below) is used extensively.  For most
+practical deductions we can almost always display an easy-to-prove
+special case of a hypothesis, since otherwise the deduction tends not to
+be of much use.  For example, if the hypothesis requires a class
+variable to be a nonzero real number, the special case of the number 1
+will satisfy the hypothesis.
+
+<P>An exception is a deduction for which we can never display an actual
+example satisfying its hypothesis but can show only the existence of a
+set satisfying it.  Theorems involving the <A HREF="ac5.html">Axiom of
+Choice</A> are sometimes like this.  In such a case, the Weak Deduction
+Theorem cannot be used.  Therefore we must settle for a longer direct
+proof of the theorem form, but so far I haven't encountered a case where
+this has been impractical.
+
+<P>Is this to say that the Standard Deduction Theorem is of little use?
+Definitely not!  When outlining proofs prior to entering and verifying
+them with the Metamath program, I informally use the Standard Deduction
+Theorem implicitly and extensively just like any mathematician would.
+When satisfied with the informal outline, I then work out the details
+necessary to create a (hopefully short) formal proof either directly or
+with the help of the Weak Deduction Theorem.
+
+<!--  The nitpicking and
+absolutely rigorous formal proofs of Metamath are often quite different
+from the informal high-level reasoning that mathematicians use in
+practice.  High-level informal reasoning is essential for achieving
+practical results in mathematics, but it is also dangerously subject to
+the possibility of an error for those who are inexperienced, and the
+complete elimination of this possibility is part of what Metamath is
+about.  -->
+
+<P>
+By the way, the Standard and Weak Deduction Theorems are not
+&quot;theorems&quot; in the sense described in the &quot;Deductions vs.
+Theorems&quot; section above but are "metatheorems" (or more precisely
+&quot;metametatheorems,&quot; since all Metamath theorems are actually theorem
+schemes) whose proofs require metamathematics outside of the axiom system.
+Specifically, they are both algorithms for generating actual proofs.  However,
+once the Weak Deduction Theorem generates a proof, questions about the
+justification and rigor of its metamathematics become irrelevant, because the
+proof it produces is independently verified by the Metamath proof verifier.
+Where a proof came from, whether written by a human or generated by some
+algorithm, is of no importance to the verifier.  The same cannot be said about
+the Standard Deduction Theorem in the way it is normally used, since it does
+not produce a practical proof that can be verified directly but only shows that
+a proof is possible in principle.
+</P>
+
+<P>
+<HR NOSHADE SIZE=1><A NAME="meta"></A>
+<B><FONT COLOR="#006633">Logic, Metalogic, and Metametalogic</FONT></B>
+&nbsp;&nbsp;&nbsp;
+In logic textbooks, the treatment of the Standard Deduction Theorem is slightly
+different from how we presented it above.  They typically show deductions in
+the following way: the set of hypotheses is shown to the left of the turnstile
+` |- ` , and the conclusion from them to the right.  For example, the deduction
+<A HREF="con3i.html">con3i</A> in <A HREF="#dedvsth">Deductions vs.
+Theorems</A> would be represented as
+</P>
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR ALIGN=LEFT>
+<TD><A HREF="con3i.html">con3i</A></TD>
+<TD>` { ( ph -> ps ) } ` ` |- ( -. ps -> -. ph ) `
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+In order to talk conveniently about deductions in general, the set of
+hypotheses may represented by a metavariable such as ` _G ` that ranges over
+sets of wffs, with a conclusion represented by a metavariable such as ` ta `
+ranging over wffs:
+</P>
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR ALIGN=LEFT>
+<TD>` _G ` ` |- ta ` </TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+For example, Theorem 7 in [<A HREF="mmset.html#Margaris">Margaris</A>] p. 76
+states (using our notation),
+</P>
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR ALIGN=LEFT>
+<TD>If ` _G |- ta ` , then ` _G ` ` |- A. x ta ` , provided that ` x ` is not
+free in ` _G ` .</TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+There are actually three kinds of implications in this statement.  First we
+have any implication arrow ` -> ` (not shown) that might be present in the wff
+represented by ` ta ` .  At the next higher level, we have the connection
+between ` _G ` and ` ta ` that is represented by the turnstile ` |- ` .
+Finally at the top-most level, we have the connection between the two
+deductions of the theorem, represented by the English phrase "If...then".  We
+might think of these three as belonging to the logic, the metalogic, and the
+metametalogic respectively.
+</P>
+
+<!--
+(If we want to have fun with words, in Metamath an implication arrow ` -> ` is
+actually part of a <A HREF="mmset.html#schemes">scheme</A> and thus at the
+level of metalogic.  So the two higher levels are really metametalogic and
+metametametalogic!)
+-->
+
+<P>
+The expression between the "if" and "then" above is usually called a "premise"
+rather then a "hypothesis".  The Standard Deduction Theorem does not provide
+for the elimination of premises, only of hypotheses.  Viewed in this way, there
+is actually a fundamental difference between the Standard Deduction Theorem and
+the Weak Deduction Theorem: the former applies to hypotheses, and the latter
+applies to premises.  In other words, they apply to different "meta" levels.
+</P>
+
+<P>
+The set.mm database doesn't have a way of representing deductions in the way we
+have just described.  However, the "natural deduction" database
+<A HREF="http://wiki.planetmath.org/cgi-bin/wiki.pl/Natural_deduction_based_metamath_system">nat.mm</A>
+[external], developed by Fr&eacute;d&eacute;ric Lin&eacute;, shows how this can
+be done in the Metamath language.  Under such a system, Margaris's theorem
+would be represented in the database with a premise ($e statement) for the
+expression "` _G |- ta `" and with a provable conclusion ($p statement) for the
+expression "` _G |- A. x ta `".
+</P>
+
+<!--
+<P>Looking at it this way, the Weak Deduction Theorem is actually quite
+different in nature from the Standard Deduction Theorem.  It converts a
+hypothesis at the metametalogic level to an antecedent at the logic
+level, skipping the metalogic level entirely.
+-->
+  <!-- Indeed, there is an
+important intrinsic difference that can be seen immediately:  the
+hypotheses for the Weak Deduction Theorem are asserted to be provable
+statements (due to their turnstiles), whereas the hypotheses of the
+Standard Deduction Theorem do not have to be provable.  -->
+
+<P>
+<HR NOSHADE SIZE=1><A NAME="prop"></A>
+<B><FONT COLOR="#006633">The Weak Deduction Theorem in Propositional Calculus</FONT></B>
+&nbsp;&nbsp;&nbsp;
+<I>Suggestion:</I> This section describes the technical details of our
+Weak Deduction Theorem and is unfortunately quite complex.  If you want
+to understand how it works, you will be less confused if you first
+carefully study the <A HREF="#proof">informal proof</A> below.  Then you
+may want to take a quick look at the <A HREF="#propex">propositional
+calculus example</A> in the next section before continuing with this
+section, in order to see a concrete example that achieves our goal.
+
+<P><I>Another suggestion:</I> If you are familiar with a little set
+theory, you may want to skip ahead directly to the <A HREF="#set">Weak
+Deduction Theorem in set theory</A>, which may be easier to understand.
+We never use the Weak Deduction Theorem in propositional calculus except
+in the contrived example <A HREF="con3ALT.html">con3ALT</A> created for
+the next section.
+
+<P>
+The auxiliary lemmas we need for the Weak Deduction Theorem in propositional
+calculus are <A HREF="elimh.html">elimh</A> and <A HREF="dedt.html">dedt</A>.
+The first takes the special case (such as <A HREF="id.html">id</A> above) as
+its third hypothesis and builds a strange-looking theorem from it.  This
+strange-looking theorem is a substitution instance of the hypothesis we want to
+convert to an antecedent.  We then apply the strange-looking theorem to the
+hypothesis of the deduction, resulting in a (still strange-looking)
+substitution instance of its conclusion.  Finally, we take this result and
+apply it to the second hypothesis of <A HREF="dedt.html">dedt</A>, and
+magically the desired theorem pops out as the conclusion of
+<A HREF="dedt.html">dedt</A>, with the original hypothesis transformed into an
+antecedent.  Below we show these auxiliary lemmas.
+</P>
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<CAPTION><B>Definition of the conditional operator and auxiliary lemmas for the Weak Deduction Theorem</B></CAPTION>
+<TR ALIGN=LEFT>
+<TD><A HREF="df-ifp.html">df-ifp</A></TD>
+<TD>`	|- ( if- ( ph , ps , ch ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ ch ) ) ) `</TD>
+</TR>
+<TR ALIGN=LEFT>
+<TD><A HREF="elimh.html">elimh</A></TD>
+<TD>` |- ( ( if- ( ch , ph , ps ) <-> ph ) -> ( ch <-> ta ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;
+    ` |- ( ( if- ( ch , ph , ps ) <-> ps ) -> ( th <-> ta ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;
+    ` |- th `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+    ` |- ta `</TD>
+</TR>
+<TR ALIGN=LEFT>
+<TD><A HREF="dedt.html">dedt</A></TD>
+<TD>` |- ( ( if- ( ch , ph , ps ) <-> ph ) -> ( th <-> ta ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;
+    ` |- ta ` &nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+    ` |- ( ch -> th ) `</TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+In lemma <A HREF="elimh.html">elimh</A>, the wff ` ch ` is the hypothesis of
+the original deduction.  The wff ` th ` is the special case (such as
+<A HREF="id.html">id</A> in our example above) of that hypothesis.  The wff
+variable ` ph ` is the deduction's hypothesis that is replaced with wff
+variable ` ps ` to result in the special case.  The first two hypotheses of
+<A HREF="elimh.html">elimh</A> are trivially-proved technical hypotheses that
+specify the substitution instances we need.  The first one tells
+<A HREF="elimh.html">elimh</A> that when the wff ` if- ( ch , ph , ps ) ` is
+substituted for the wff variable ` ph ` in the wff ` ch ` (the hypothesis of
+the original deduction), the result is the wff ` ta ` .  The "substitution" of
+` if- ( ch , ph , ps ) ` for ` ps ` (in the wff ` th ` to result in the wff
+` ta `) specified by the second hypothesis of <A HREF="elimh.html">elimh</A> is
+special &mdash; not all occurrences of the wff variable ` ps ` are replaced,
+but only the ones at the variable positions replaced in the first
+<A HREF="elimh.html">elimh</A> hypothesis (Step 6 of the example in the next
+section will help clarify this).
+</P>
+
+<P>
+The conclusion of <A HREF="elimh.html">elimh</A> is applied to the hypothesis
+of a matching substitution instance of the original deduction, which in turn
+produces as its conclusion a wff that is applied to the second hypothesis of
+lemma <A HREF="dedt.html">dedt</A>.
+</P>
+
+<P>
+In lemma <A HREF="dedt.html">dedt</A>, the wff ` ch ` is the hypothesis of the
+original deduction, and the wff ` th ` is the conclusion of the original
+deduction.  The first hypothesis of <A HREF="dedt.html">dedt</A> tells it that
+when the wff ` if- ( ch , ph , ps ) ` is substituted for the wff variable
+` ph ` in the wff ` th ` , the result is the wff ` ta ` .  The conclusion of
+<A HREF="dedt.html">dedt</A>, the wff ` ( ch -> th ) ` , is the desired
+theorem.
+</P>
+
+<P>
+It may be hard to understand intuitively how the Weak Deduction Theorem works
+just by looking at <A HREF="elimh.html">elimh</A> and
+<A HREF="dedt.html">dedt</A>.  In a later section, we give a
+<A HREF="#proof">proof</A> that presents the algorithm in detail and should be
+easier to understand.  Our two lemmas just encapsulate the algorithm into a
+form convenient to use.
+</P>
+
+<P><HR NOSHADE SIZE=1><A NAME="propex"></A><B><FONT
+COLOR="#006633">A Propositional Calculus Example</FONT></B>
+&nbsp;&nbsp;&nbsp;
+Let's examine the application of these lemmas in the contraposition theorem
+<A HREF="con3ALT.html">con3ALT</A> (look at its proof).  Step 7 applies the
+special case <A HREF="id.html">id</A> to the third hypothesis of
+<A HREF="elimh.html">elimh</A>, resulting in step 8.  Step 8 is applied to the
+hypothesis of the contraposition deduction <A HREF="con3i.html">con3i</A> to
+result in Step 9.  Finally, Step 9 is applied to the second hypothesis of
+<A HREF="dedt.html">dedt</A>, resulting in the contraposition theorem.
+</P>
+
+<P>
+Steps 1 through 6 of <A HREF="con3ALT.html">con3ALT</A> build the technical
+substitution instances that we need.  In general these substitution instances
+are quite easy to prove by repeatedly applying "formula-builder" lemmas such as
+<A HREF="notbid.html">notbid</A> and <A HREF="imbi1d.html">imbi1d</A>.  Note
+that we use the term "substitution" in a nonstandard way in the description of
+Step 6 below, since not all occurrences of the thing being substituted for are
+replaced.
+</P>
+
+<P>
+Step 3 proves that the substitution of ` if- ( ( ph -> ps ) , ps , ph ) ` for
+` ps ` in the contraposition conclusion wff ` ( -. ps -> -. ph ) ` results in
+` ( -. if- ( ( ph -> ps ) , ps , ph ) -> -. ph ) ` .  This is assigned to the
+first hypothesis of <A HREF="dedt.html">dedt</A>.
+</P>
+
+<P>
+Step 4 proves that the substitution of ` if- ( ( ph -> ps ) , ps , ph ) ` for
+` ps ` in the contraposition hypothesis wff ` ( ph -> ps ) ` results in
+` ( ph -> if- ( ( ph -> ps ) , ps , ph ) ) ` .  This is assigned to the first
+hypothesis of <A HREF="elimh.html">elimh</A>.
+</P>
+
+<P>
+Step 6 proves that the substitution of ` if- ( ( ph -> ps ) , ps , ph ) ` for
+<I>only the second</I> ` ph ` in the special case wff ` ( ph -> ph ) ` results
+in ` ( ph -> if- ( ( ph -> ps ) , ps , ph ) ) ` .  Unlike a "normal"
+substitution, we replaced only the second one because that was the position
+where the substitution took place in Step 4.  This is assigned to the second
+hypothesis of <A HREF="elimh.html">elimh</A>.
+</P>
+
+<P>
+In practice, the Weak Deduction Theorem is not used very often in our
+propositional calculus development because direct proofs that build on a
+previously proved hierarchy of theorems are usually more efficient.  In fact,
+our proof of the contraposition theorem <A HREF="con3ALT.html">con3ALT</A> was
+contrived just for the purpose of this example.  Compare the more efficient
+direct proof of the same theorem in <A HREF="con3.html">con3</A>.
+</P>
+
+<P>
+<HR NOSHADE SIZE=1><A NAME="set"></A>
+<B><FONT COLOR="#006633">The Weak Deduction Theorem in Set Theory</FONT></B>
+&nbsp;&nbsp;&nbsp;
+Where the Weak Deduction Theorem becomes very useful, if not essential, is in
+set theory.  For set theory, special versions of <A HREF="elimh.html">elimh</A>
+and <A HREF="dedt.html">dedt</A>, called <A HREF="elimhyp.html">elimhyp</A> and
+<A HREF="dedth.html">dedth</A> respectively, work with substitutions into
+classes instead of wffs.
+</P>
+
+<P>
+To make things more efficient, we introduce a special notation called the
+&quot;conditional operator&quot; and denoted by &quot;` if ( ph , A , B ) `
+&quot; which combines a wff and two classes to produce another class.
+See definition <A HREF="df-if.html">df-if</A>.
+Read &quot;` if ( ph , A , B ) `&quot; as &quot;if ` ph ` is true then the
+value is ` A ` else the value is ` B ` .&quot;  It is
+just an abbreviation for a more complicated class expression like other
+such abbreviations (class union, etc.).  This abbreviation makes working
+with the Weak Deduction Theorem a little easier, and like all
+definitions, in principle it can be eliminated by expanding out the
+abbreviation at each occurrence in a proof.  (It also has many other
+applications in addition to its use with the Weak Deduction Theorem.)
+
+<P>Next, there are two basic lemmas involving the conditional operator
+that we use for the Weak Deduction Theorem.  The
+lemma <A HREF="elimhyp.html">elimhyp</A> is intended to take a provable
+special case of the hypothesis to be eliminated and transform it into a
+special substitution instance of that hypothesis.  This in turn is fed
+into the deduction to be eliminated, and the deduction's output is then
+fed into the lemma <A HREF="dedth.html">dedth</A> to produce the final
+theorem.
+
+<P>The last hypothesis of each of the following lemmas is the important
+one.  The other hypotheses just specify the substitution instances we
+need and are are always easily constructed using simple equality laws.
+Using each last hypothesis as the "input" to each lemma, the proof of a
+theorem from a deduction follows this outline:  [provable special case]
+-&gt; <A HREF="elimhyp.html">elimhyp</A> -&gt; [known deduction] -&gt;
+<A HREF="dedth.html">dedth</A> -&gt; [deduction converted to theorem].
+
+<P>
+An auxiliary lemma, <A HREF="keephyp.html">keephyp</A>, can be used if we wish
+to eliminate some hypotheses but keep others.
+</P>
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<CAPTION><B>Definition of the conditional operator and three key lemmas</B></CAPTION>
+<TR ALIGN=LEFT>
+<TD><A HREF="df-if.html">df-if</A></TD>
+<TD>` |- if ( ph , A , B ) = { x | ( ( x e. A /\ ph ) \/ ( x e. B /\ -. ph ) ) } `</TD>
+</TR>
+<TR ALIGN=LEFT>
+<TD><A HREF="elimhyp.html">elimhyp</A></TD>
+<TD>` |- ( A = if ( ph , A , B ) -> ( ph <-> ps ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;
+    ` |- ( B = if ( ph , A , B ) -> ( ch <-> ps ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;
+    ` |- ch `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+    ` |- ps `</TD>
+</TR>
+<TR ALIGN=LEFT><TD><A HREF="dedth.html">dedth</A></TD>
+<TD>` |- ( A = if ( ph , A , B ) -> ( ps <-> ch ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;
+    ` |- ch `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+    ` |- ( ph -> ps ) `</TD>
+</TR>
+<TR ALIGN=LEFT><TD><A HREF="keephyp.html">keephyp</A></TD>
+<TD>` |- ( A = if ( ph , A , B ) -> ( ps <-> th ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;
+    ` |- ( B = if ( ph , A , B ) -> ( ch <-> th ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;
+    ` |- ps `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;
+    ` |- ch `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+    ` |- th `</TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+In addition to the above lemmas, a number of variations are also proved for
+convenient use.  These allow us to eliminate several hypotheses simultaneously,
+to eliminate hypotheses where multiple class variables must be substituted
+simultaneously with specific classes in order to obtain the provable special
+case, and to eliminate hypotheses that occur in frequently-used specific forms.
+They can be browsed by clicking on <A HREF="dedth.html">dedth</A> then clicking
+on the "Related theorems" link.  It is easiest to learn how they work by
+looking at examples of their use, which can be found in the "This theorem is
+referenced by" links on their web pages.
+</P>
+
+<P><HR NOSHADE SIZE=1><A NAME="setex"></A>
+<B><FONT COLOR="#006633">A Set Theory Example</FONT></B> &nbsp;&nbsp;&nbsp;
+Probably the easiest way to become familiar with the Weak Deduction Theorem is
+by studying a few of the many places it is used in set theory.
+</P>
+
+<P>Here is an example of the class version of the Weak Deduction Theorem
+in action.  In the set.mm database you will find that we have proved the
+result
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR ALIGN=LEFT>
+<TD><A HREF="renegcli.html">renegcli</A></TD>
+<TD>` |- A e. RR `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp; ` |- -u A e. RR ` </TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>which means, if you have a proof that <I><FONT
+COLOR="#CC33CC">A</FONT></I> is a real number (belongs to the set of
+reals), then you will also have a proof that its negative is a
+real number.  (The proof of <A HREF="renegcli.html">renegcli</A> is not
+relevant to us right now, and you can ignore it.)  The application of
+the Weak Deduction Theorem yields (and this is the proof you'll want to
+look at):
+</P>
+
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR ALIGN=LEFT>
+<TD><A HREF="renegcl.html">renegcl</A></TD>
+<TD>` |- ( A e. RR -> -u A e. RR ) ` </TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+which means that &quot;` A ` is a real number&quot; implies &quot;the negative
+of ` A ` is a real number&quot;.  In the proof, we made use of
+<A HREF="elimel.html">elimel</A>, which is a frequently used special case
+of <A HREF="elimhyp.html">elimhyp</A>.  Also, we made use of the special
+case that one is a real number <A HREF="1re.html">1re</A> to
+eliminate the hypothesis of <A HREF="elimel.html">elimel</A> (and thus
+<A HREF="elimhyp.html">elimhyp</A> from which it is derived).
+
+<P>
+In this example, we did not make use of <A HREF="keephyp.html">keephyp</A>.
+For an example that uses it (via <A HREF="keepel.html">keepel</A>), see the
+proof of <A HREF="divcan2zi.html">divcan2zi</A>.
+</P>
+
+<P><HR NOSHADE SIZE=1><A NAME="proof"></A>
+<B><FONT COLOR="#006633">Informal Proof of the Weak Deduction Theorem</FONT></B> &nbsp;&nbsp;&nbsp;
+Here we show a high-level proof of the Weak Deduction Theorem.  The proof
+contains the detailed construction that converts a hypothesis into an
+antecedent.  Our lemmas <A HREF="elimh.html">elimh</A> and
+<A HREF="dedt.html">dedt</A> implement this construction into a more compact
+form for practical application.  This proof was adapted from an email I wrote,
+and I left it in its original ASCII form, where <TT>&#126;</TT> means ` -. ` ,
+<TT>^</TT> means ` /\ ` , etc.
+</P>
+
+<!-- <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#FAEEFF"><TR><TD ALIGN=LEFT> -->
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 CELLPADDING=5 BGCOLOR="#F0F0F0">
+<TR>
+<TD ALIGN=LEFT>
+<PRE>
+In propositional calculus, the deduction theorem for one hypothesis states
+(where A and B are wffs):
+
+   If  A |- B  then  |- A -&gt; B
+
+(We will ignore the converse, being a trivial application of modus ponens.  In
+the description that follows, all letters refer to fixed wffs or to variables
+ranging over wffs&mdash;"wff variables"&mdash;as indicated.)
+
+Here we show a different kind of construction for the deduction theorem that,
+unlike the standard Tarski/Herbrand deduction theorem, does not require
+rewriting the proof of the deduction but simply adds a fixed number of steps
+(roughly proportional to formula length) to a proof for A |- B to result in a
+proof for |- A -&gt; B.
+
+It is an unusual application of classical logic in that it involves a kind of
+self-reference wherein a formula is substituted into itself.
+
+It is important to note that this version does not replace the standard one
+because it is weaker.  In particular, we can't eliminate a hypothesis that is
+a contradiction:  for example we can't use the theorem to derive
+|- (&not;A ^ A) -&gt; B from &not;A ^ A |- B.  We must be able to prove
+separately a special case of the hypothesis.  For example, if we are given
+(A -&gt; B) |- (&not;B -&gt; &not;A) and want to prove
+|- (A -&gt; B) -&gt; (&not;B -&gt; &not;A), the theorem will give us the proof
+provided we also have a proof for the special case |- (B -&gt; B), where wff
+"(B -&gt; B)" is the hypothesis "(A -&gt; B)" with B substituted for A.
+
+Now for the theorem.  For our notation, we state axioms, theorems, and proof
+steps as _schemes_ where the variables range over wffs.  If F is a wff, and A
+is a wff variable contained in F, let us denote F by F(A).  If G is another
+wff, then F(G) is the wff obtained by substituting all occurrences of wff
+variable A with wff G. (More precisely, we first replace variable A in F with
+a new wff variable not occurring elsewhere, then we substitute G for that new
+wff variable.  This eliminates any ambiguity when G itself contains A.)  For
+example, if F == F(A) = A v B and G = A ^ C, we have F(G) = (A ^ C) v B.
+ Also, F(F(A)) = F(F) = (A v B) v B, F(F(F(A))) = ((A v B) v B) v B, etc.  I
+ hope this notation is clear.
+
+
+Theorem
+-------
+
+Assume F |- G.  Denote F by F(A) where A is some wff variable in F, and assume
+there is a wff B such that |- F(B).  Then, in classical logic, |- F -&gt; G.
+
+Proof
+-----
+
+We will use F and F(A) interchangeably, and we also will denote G by G(A).
+
+In classical logic, we have
+
+    |- F -&gt; (A &lt;-&gt; ((A ^ F) v (B ^ &not;F)))             (1)
+    |- &not;F -&gt; (B &lt;-&gt; ((A ^ F) v (B ^ &not;F)))            (2)
+
+Also in classical logic, for any wffs P, Q, R, S, T, we have
+
+    If  |- P -&gt; (Q &lt;-&gt; R)  then  |- P -&gt; (&not;Q &lt;-&gt; &not;R)
+
+    If  |- P -&gt; (Q &lt;-&gt; R)  and   |- P -&gt; (S &lt;-&gt; T)
+         then  |- P -&gt; ((Q -&gt; S) &lt;-&gt; (R -&gt; T))
+
+corresponding to the primitive connectives &not; and -&gt;.  Using these, and
+(1) and (2) as the basis, we derive by induction on the formula length of F
+(with ^, v, etc. implicitly expanded into &not; and -&gt; primitives)
+
+    |- F -&gt; (F(A) &lt;-&gt; F((A ^ F) v (B ^ &not;F)))         (3)
+    |- &not;F -&gt; (F(B) &lt;-&gt; F((A ^ F) v (B ^ &not;F)))        (4)
+
+From (3) we have (since F = F(A) by definition)
+
+    |- F -&gt; F((A ^ F) v (B ^ &not;F))                    (5)
+
+Since |- F(B) by hypothesis, from (4) we have
+
+    |- &not;F -&gt; F((A ^ F) v (B ^ &not;F))                   (6)
+
+Combining (5) and (6), we obtain
+
+    |- F((A ^ F) v (B ^ &not;F))                         (7)
+
+By hypothesis F(A) |- G(A).  Substituting ((A ^ F) v (B ^ &not;F)) for A gives
+
+    F((A ^ F) v (B ^ &not;F)) |- G((A ^ F) v (B ^ &not;F))   (8)
+
+Since (7) satisfies the hypothesis of (8) we have
+
+    |- G((A ^ F) v (B ^ &not;F))                         (9)
+
+By induction on the formula length of G, from (1) we derive
+
+    |- F -&gt; (G(A) &lt;-&gt; G((A ^ F) v (B ^ &not;F)))         (10)
+
+From (9) and (10) we finally obtain
+
+    |- F -&gt; G            Q.E.D.
+
+
+Example:  Suppose we have a proof for (A -&gt; B) |- (&not;B -&gt; &not;A) and
+also a proof of |- (B -&gt; B), which is a special case of the hypothesis.  Let
+F(A) = (A -&gt; B) and G(A) = (&not;B -&gt; &not;A).  Then F(B) = (B -&gt; B),
+and the theorem gives us |- (A -&gt; B) -&gt; (&not;B -&gt; &not;A).
+
+The theorem provides us with the algorithm for constructing the proof in
+detail if we wish.  For example the proof step corresponding to (7) becomes
+|- (A ^ (A -&gt; B)) v (B ^ &not;(A -&gt; B))) -&gt; B.  It is easy to see
+that the number of steps in the final proof is equal to the number of steps in
+the proof of the original deduction and the special case, plus (primarily) a
+number of steps proportional to formula length used to derive (3), (4),
+and (10).
+
+The theorem can be extended to eliminate multiple hypotheses, as well as
+variants that keep some hypotheses while eliminating others.
+</PRE>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</P>
+
+<P>
+<HR NOSHADE SIZE=1><A NAME="special"></A>
+<B><FONT COLOR="#006633">Another Special Case of the Weak Deduction Theorem</FONT></B>
+&nbsp;&nbsp;&nbsp;
+As we mentioned above, the Weak Deduction Theorem cannot always be used to
+convert a hypothesis to an antecedent (which is why we call it "weak").
+Sometimes, other techniques can be devised for special cases where the Weak
+Deduction Theorem cannot be used or is less efficient.  An example is the
+theorem <A HREF="dedhb.html">dedhb</A>, which can convert a nonfreeness
+hypothesis (an nf* theorem such as <A HREF="nfneg.html">nfneg</A>) to
+a closed theorem form, as explained in its description.  In practice, we
+usually use the closely related <A HREF="abidnf.html">abidnf</A> to strengthen
+an nf* inference to a deduction form such as <A HREF="nfnegd.html">nfnegd</A>.
+</P>
+
+<P>
+There are very few alternatives to the Standard Deduction Theorem in the
+literature.  Historically, it is possible that once the Standard Deduction
+Theorem was discovered, mathematicians lost interest in alternate techniques,
+since they were no longer considered important.  A mathematician can show, in
+one high-level application of the Standard Deduction Theorem, that a proof
+exists without displaying the actual proof.  The Metamath proof verifier does
+not have that luxury (with the Hilbert-style axiom system of the set.mm
+database) unless we were to greatly complicate its language and proof
+verification engine.  That would be contrary to the philosophical aim of
+Metamath, so efficient actual proofs are important to us.  But techniques such
+as those in <I>Principia Mathematica</I> (published before the discovery of the
+Standard Deduction Theorem) have become a kind of lost art.
+</P>
+
+<HR NOSHADE SIZE=1>
+
+<TABLE BORDER=0 WIDTH="100%">
+<TR>
+<TD ALIGN=left VALIGN=TOP WIDTH="25%">
+<FONT SIZE=-2 FACE=sans-serif>&nbsp;</FONT>
+</TD>
+<TD NOWRAP ALIGN=CENTER>
+<I>This page was last updated on 21-Sep-2022.</I>
+<BR>
+<FONT SIZE=-2 FACE=ARIAL>
+Copyright terms: <A HREF="../copyright.html#pd">Public domain</A>
+</FONT>
+</TD>
+<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT FACE="ARIAL" SIZE=-2>
+<A HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
+[external]
+</FONT>
+</TD>
+</TR>
+</TABLE>
+
+<!--
+<SCRIPT SRC="http://www.google-analytics.com/urchin.js" TYPE="text/javascript">
+</SCRIPT>
+<SCRIPT TYPE="text/javascript">
+_uacct = "UA-1862729-1";
+urchinTracker();
+</SCRIPT>
+-->
+
+</BODY>
+</HTML>

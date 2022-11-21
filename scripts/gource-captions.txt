@@ -1,0 +1,81 @@
+1992-09-30|1992-09-30 The first six set.mm entries are hand developed by Norman Megill (ax-mp, ax-1, ax-2, ax-3, syl, idALT)
+1992-12-27|1992-12-27 Norman Megill adds another 38 entries using early metamath.exe (id, pm2.04, pm2.18, pm2.21, peirce, exmid...)
+1992-12-27|1992-12-27 Definitions: Logical equivalence (df-bi), disjunction (df-or) and conjunction (df-an)
+1993-05-21|1993-05-21 Axiom: ZFC Axiom of Extensionality (ax-ext)
+1993-05-26|1993-05-26 Definition: Class (set) builder abstraction (df-clab)
+1993-06-17|1993-06-17 Definition: Null set (df-nul)
+1993-06-21|1993-06-21 Axiom: ZFC Axiom of Power Sets (ax-pow)
+1993-08-14|1993-08-14 Axiom: ZFC Axiom of Regularity (ax-reg)
+1993-08-16|1993-08-16 Axiom: ZFC Axiom of Infinity (ax-inf)
+1993-12-23|1993-12-23 Axioms: ZFC Axioms of Replacement (ax-rep) and Union (ax-un)
+1993-12-31|1993-12-31 Definition: Binary relation (df-br)
+1994-04-29|1994-04-29 Definitions: Set difference (df-dif) and set intersection (df-in)
+1994-08-02|1994-08-02 Definitions: Image (df-ima) and restriction (df-res) of a class
+1994-08-07|1994-08-07 Proof: Cantor's Theorem (canth2, Norman Megill), Metamath 100 #63
+1995-04-14|1995-04-14 Proof: Principle of Mathematical Induction (finds, Norman Megill), Metamath 100 #74
+1995-07-14|1995-07-14 Article: Norman Megill, "A Finitely Axiomatized Formalization of Predicate Calculus with Equality"
+1996-02-22|1996-02-22 Definition: Set of complex numbers (df-c)
+1996-07-18|1996-07-18 Axiom: ZFC Axiom of Choice (ax-ac)
+1997-01-21|1997-01-21 Proof: Archimedean Property for Reals (arch, Norman Megill)
+1997-04-06|1997-04-06 Proof: Zorn's Lemma (zorn2, Norman Megill)
+1998-03-28|1998-03-28 Definitions: Equinumerosity (df-en) and dominance (df-dom)
+1998-06-08|1998-06-08 Proof: Schröder–Bernstein Theorem (sbth, Norman Megill), Metamath 100 #25
+1999-05-15|1999-05-15 Proof: Weak Deduction Theorem (dedth, Norman Megill)
+1999-05-27|1999-05-27 Proof: 2+2=4 (2p2e4, Norman Megill)
+1999-09-05|1999-09-05 Contributor: First external contributor (David Harvey)
+1999-10-02|1999-10-02 Proof: Triangle Inequality (abstrii, Norman Megill), Metamath 100 #91
+2000-12-29|2000-12-29 Contributor: Second external contributor (Josh Purinton)
+2001-08-19|2001-08-19 Proof: Law of addition and subtraction (addsub, Norman Megill)
+2002-01-08|2002-01-08 Proof: Irrationality of the Square Root of 2 (sqrt2irr, Norman Megill), Metamath 100 #1
+2003-07-09|2003-07-09 Proof: Finite induction w/explicit subst. (findes, Raph Levien)
+2004-07-31|2004-07-31 Proof: Denumerability of the Rational Numbers (qnnen, Norman Megill, later revised), Metamath 100 #3
+2004-10-13|2004-10-13 Proof: Non-Denumerability of the Continuum (ruc, Norman Megill), Metamath 100 #22
+2005-03-14|2005-03-14 Definition: Cosine function (df-cos)
+2005-05-05|2005-05-05 Proof: Infinitude of Primes (infpn2, Norman Megill), Metamath 100 #11
+2006-03-01|2006-03-01 Book: Freek Wiedijk et al, "The Seventeen Provers of the World" (including Metamath), ISBN 9783540307044
+2006-11-10|2006-11-10 Proof: De Moivre's Theorem (demoivreALT, Steve Rodriguez), Metamath 100 #17
+2006-11-16|2006-11-16 Proof: Sum of an arithmetic series (arisum, Frédéric Liné), Metamath 100 #68
+2007-03-18|2007-03-18 Axiom: Tarski–Grothendieck Axiom (ax-groth)
+2008-01-12|2008-01-12 Proof: Cauchy–Schwarz Inequality (sii, Norman Megill), Metamath 100 #78
+2008-01-22|2008-01-22 Proof: Intermediate Value Theorem (ivth, Paul Chapman), Metamath 100 #79
+2008-04-17|2008-04-17 Proof: Pythagorean Theorem (pythi, Norman Megill), Metamath 100 #4
+2008-07-25|2008-07-25 Book: Norman Megill, "Metamath: A Computer Language for Pure Mathematics"
+2009-11-02|2009-11-02 Definition: Magma (df-mgm, Frédéric Liné)
+2010-10-22|2010-10-22 Definitions: True (df-tru) and False (df-fal) constants (Anthony Hart)
+2011-03-31|2011-03-31 Proof: Greatest Common Divisor Algorithm (eucalgval, Paul Chapman), Metamath 100 #69 (tied PVS)
+2012-05-12|2012-05-12 Contributor: Mario Carneiro begins contributing
+2012-06-14|2012-06-14 Article: Eric Schmidt, "Reductions in Norman Megill's axiom system for complex numbers"
+2012-11-17|2012-11-17 Proof: Fundamental Theorem of Arithmetic (1arith2, Paul Chapman), Metamath 100 #80 (tied ACL2)
+2013-03-03|2013-03-03 Proof: Denumerability of Rational Numbers (qnnen, Mario Carneiro), Metamath 100 #3
+2014-02-22|2014-02-22 Proof: Bézout's Theorem (bezout, Mario Carneiro), Metamath 100 #60
+2014-02-28|2014-02-28 Proof: Euler's Generalization of Fermat's Little Theorem (eulerth, Mario Carneiro), Metamath 100 #10
+2014-03-14|2014-03-14 Contributor: David A. Wheeler begins contributing
+2014-03-14|2014-03-14 Proof: Bertrand's Postulate (bpos, Mario Carneiro), Metamath 100 #98
+2014-04-19|2014-04-19 Large number of Metamath 100 proofs begin being completed
+2014-05-16|2014-05-16 Proof: Sum of kth powers (fsumkthpow, Scott Fenton), Metamath 100 #77
+2014-07-01|2014-07-01 Article: Mario Carneiro, "Natural Deductions in the Metamath Proof Language"
+2014-11-22|2014-11-22 Proof: Solutions to Pell's Equation (rmxycomplete, Stefan O'Rear), Metamath 100 #39
+2015-01-21|2015-01-21 Database: Intuitionistic logic database iset.mm created from set.mm by Mario Carneiro, extended by Jim Kingdon
+2015-01-28|2015-01-28 Proof: Wilson's Theorem (wilth, Mario Carneiro), Metamath 100 #51 (tied ProofPower)
+2015-04-17|2015-04-17 Definition: Decimal constructor df-dec
+2016-01-28|2016-01-28 Article: Mario Carneiro, "Models for Metamath"
+2016-08-08|2016-08-08 Article: Daniel Whalen, "Holophrasm: a Neural Automated Theorem Prover for Higher-Order Logic"
+2016-08-11|2016-08-11 Definitions: "Not free" predicates (df-nf, df-nfc) (Mario Carneiro)
+2016-11-25|2016-11-25 Proof: All assertic syllogisms in Aristotelian logic (David A. Wheeler)
+2017-02-28|2017-02-28 Proof: Intersecting chords theorem (chordthm, David Moews)
+2017-05-07|2017-05-07 Proof: Ballot Problem (ballotth, Thierry Arnoux), Metamath 100 #30 (tied Coq)
+2017-08-24|2017-08-24 Definition: Tarskian geometry using extensible structures, df-trkg
+2017-08-31|2017-08-31 Proof: Area of a Circle (areacirc, Brendan Leahy), Metamath 100 #9 (tied Mizar)
+2017-09-24|2017-09-24 Proof: Theorem of Ceva (cevath, Saveliy Skresanov), Metamath 100 #61
+2018-08-14|2018-08-14 Proof: Euler's Partition Theorem (eulerpart, Thierry Arnoux), Metamath 100 #45
+2018-10-09|2018-10-09 Proof: Friendship Theorem (friendship, Alexander van der Vekens), Metamath 100 #83
+2019-02-21|2019-02-21 Proof: Cramer's Rule (cramer, Alexander van der Vekens), Metamath 100 #97
+2019-03-10|2019-03-10 Proof: Cayley–Hamilton Theorem (cayley, Alexander van der Vekens), Metamath 100 #49
+2019-03-10|2019-03-10 Proof: Heron's Formula (heron, Mario Carneiro), Metamath 100 #57
+2019-06-02|2019-06-02 Book: Norman Megill and David A. Wheeler, "Metamath: A Computer Language for Mathematical Proofs"
+2019-09-26|2019-09-26 Visualization: First Gource visualization of set.mm (David A. Wheeler)
+2019-10-22|2019-10-22 Article: Mario Carneiro, "Metamath Zero: The Cartesian Theorem Prover"
+2019-12-11|2019-12-11 Proof: Fourier convergence (fourier, Glauco Siliprandi), Metamath 100 #76 with 400 proven theorems
+2020-03-25|2020-03-25 Contributor: OpenAI provides first contribution of a Metamath proof created/minimized via machine learning
+2020-04-05|2020-04-05 Proof: e is Transcendental (etransc, Glauco Siliprandi), Metamath 100 #67
+2021-12-09|2021-12-09 Norman "Norm" Dwight Megill, Metamath founder, dies; his work continues
