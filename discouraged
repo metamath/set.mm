@@ -15256,6 +15256,7 @@ New usage of "el123" is discouraged (1 uses).
 New usage of "el2122old" is discouraged (1 uses).
 New usage of "elALT" is discouraged (0 uses).
 New usage of "ela" is discouraged (3 uses).
+New usage of "elabgOLD" is discouraged (0 uses).
 New usage of "elat2" is discouraged (4 uses).
 New usage of "elatcv0" is discouraged (0 uses).
 New usage of "elbdop" is discouraged (4 uses).
@@ -15306,6 +15307,7 @@ New usage of "elpqn" is discouraged (24 uses).
 New usage of "elprnq" is discouraged (22 uses).
 New usage of "elpwgded" is discouraged (2 uses).
 New usage of "elpwgdedVD" is discouraged (1 uses).
+New usage of "elrabOLD" is discouraged (0 uses).
 New usage of "elreal" is discouraged (7 uses).
 New usage of "elreal2" is discouraged (3 uses).
 New usage of "elresOLD" is discouraged (0 uses).
@@ -18899,6 +18901,7 @@ Proof modification of "el12" is discouraged (19 steps).
 Proof modification of "el123" is discouraged (26 steps).
 Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
+Proof modification of "elabgOLD" is discouraged (13 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
@@ -18916,6 +18919,7 @@ Proof modification of "elneldisjOLD" is discouraged (53 steps).
 Proof modification of "elnelunOLD" is discouraged (53 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
+Proof modification of "elrabOLD" is discouraged (16 steps).
 Proof modification of "elrefsymrels3" is discouraged (65 steps).
 Proof modification of "elresOLD" is discouraged (171 steps).
 Proof modification of "elridOLD" is discouraged (107 steps).
@@ -19595,6 +19599,7 @@ Proof modification of "rpreOLD" is discouraged (21 steps).
 Proof modification of "rpssreOLD" is discouraged (7 steps).
 Proof modification of "rspsbc2" is discouraged (65 steps).
 Proof modification of "rspsbc2VD" is discouraged (90 steps).
+Proof modification of "ru" is discouraged (88 steps).
 Proof modification of "ruALT" is discouraged (29 steps).
 Proof modification of "rucALT" is discouraged (25 steps).
 Proof modification of "rusbcALT" is discouraged (77 steps).
