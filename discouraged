@@ -15241,6 +15241,7 @@ New usage of "el123" is discouraged (1 uses).
 New usage of "el2122old" is discouraged (1 uses).
 New usage of "elALT" is discouraged (0 uses).
 New usage of "ela" is discouraged (3 uses).
+New usage of "elabOLD" is discouraged (0 uses).
 New usage of "elabgOLD" is discouraged (0 uses).
 New usage of "elat2" is discouraged (4 uses).
 New usage of "elatcv0" is discouraged (0 uses).
@@ -16728,6 +16729,7 @@ New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnmulclOLD" is discouraged (0 uses).
 New usage of "nnsscnOLD" is discouraged (0 uses).
+New usage of "nnsszOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
 New usage of "norm-i" is discouraged (13 uses).
 New usage of "norm-i-i" is discouraged (2 uses).
@@ -17977,6 +17979,7 @@ New usage of "vk15.4j" is discouraged (0 uses).
 New usage of "vk15.4jVD" is discouraged (0 uses).
 New usage of "vmcn" is discouraged (1 uses).
 New usage of "vsfval" is discouraged (4 uses).
+New usage of "vtocl2gOLD" is discouraged (0 uses).
 New usage of "vtoclALT" is discouraged (0 uses).
 New usage of "vtxdusgr0edgnelALT" is discouraged (0 uses).
 New usage of "w-bnj13" is discouraged (5 uses).
@@ -18871,6 +18874,7 @@ Proof modification of "el12" is discouraged (19 steps).
 Proof modification of "el123" is discouraged (26 steps).
 Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
+Proof modification of "elabOLD" is discouraged (10 steps).
 Proof modification of "elabgOLD" is discouraged (13 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
@@ -19408,6 +19412,7 @@ Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnmulclOLD" is discouraged (239 steps).
 Proof modification of "nnsscnOLD" is discouraged (6 steps).
+Proof modification of "nnsszOLD" is discouraged (18 steps).
 Proof modification of "normlem7tALT" is discouraged (177 steps).
 Proof modification of "notnotrALT" is discouraged (12 steps).
 Proof modification of "notnotrALT2" is discouraged (2 steps).
@@ -19875,6 +19880,7 @@ Proof modification of "vd23" is discouraged (15 steps).
 Proof modification of "vfermltlALT" is discouraged (279 steps).
 Proof modification of "vk15.4j" is discouraged (217 steps).
 Proof modification of "vk15.4jVD" is discouraged (268 steps).
+Proof modification of "vtocl2gOLD" is discouraged (28 steps).
 Proof modification of "vtoclALT" is discouraged (11 steps).
 Proof modification of "vtxdusgr0edgnelALT" is discouraged (94 steps).
 Proof modification of "wfrlem4OLD" is discouraged (543 steps).
