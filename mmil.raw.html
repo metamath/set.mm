@@ -7947,6 +7947,17 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>mertens</TD>
+  <TD>~ mertensabs</TD>
+  <TD>Because we don't (yet at least) have abscvgcvg or anything
+  else relating the convergence of a sequence's absolute values
+  to the convergence of the sequence itself, we add the condition
+  that both the sequence ` F ` and the sequence of its absolute
+  values converge (that is, ` seq 0 ( + , F ) e. dom ~~> ` is
+  an additional hypothesis beyond what set.mm has).</TD>
+</TR>
+
+<TR>
   <TD>df-prod and theorems using it</TD>
   <TD><I>none</I></TD>
   <TD>To define this, we will need to tackle all the issues analogous
