@@ -149,6 +149,8 @@
 "fisum" is used by "sumsnf".
 "fisumcvg" is used by "fisumcvg2".
 "fisumcvg" is used by "isummolem2a".
+"fisumcvg2" is used by "fisumcvg3".
+"fisumcvg2" is used by "fisumsers".
 "fisumser" is used by "fsum3ser".
 "fisumser" is used by "isumclim3".
 "hbs1" is used by "eu1".
@@ -411,6 +413,7 @@ New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
 New usage of "fisum" is discouraged (5 uses).
 New usage of "fisumcvg" is discouraged (2 uses).
+New usage of "fisumcvg2" is discouraged (2 uses).
 New usage of "fisumser" is discouraged (2 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "foelrnOLD" is discouraged (0 uses).
