@@ -10872,6 +10872,9 @@
 "pexmidlem6N" is used by "pexmidlem8N".
 "pexmidlem7N" is used by "pexmidlem8N".
 "pexmidlem8N" is used by "pexmidALTN".
+"pfxnndmnd" is used by "pfxnd0".
+"pfxnndmnd" is used by "pfxval0".
+"pfxval0" is used by "pfxwrdsymb".
 "phnv" is used by "ajval".
 "phnv" is used by "dipassr".
 "phnv" is used by "dipdi".
@@ -12695,6 +12698,7 @@
 "swrdn0OLD" is used by "clwlksfclwwlkOLD".
 "swrdn0OLD" is used by "clwwlkinwwlkOLD".
 "swrdn0OLD" is used by "wwlksnredOLD".
+"swrdnznd" is used by "swrdnnn0nd".
 "swrdswrd0OLD" is used by "swrd0swrd0OLD".
 "swrdtrcfv0OLD" is used by "clwlkclwwlkOLD".
 "swrdtrcfvOLD" is used by "clwlkclwwlkOLD".
@@ -15534,6 +15538,7 @@ New usage of "fh2" is discouraged (3 uses).
 New usage of "fh2i" is discouraged (1 uses).
 New usage of "fh3i" is discouraged (1 uses).
 New usage of "fh4i" is discouraged (0 uses).
+New usage of "fimadmfoALT" is discouraged (0 uses).
 New usage of "fldcALTV" is discouraged (0 uses).
 New usage of "fldcatALTV" is discouraged (1 uses).
 New usage of "flddivrng" is discouraged (2 uses).
@@ -17128,6 +17133,8 @@ New usage of "pexmidlem5N" is discouraged (1 uses).
 New usage of "pexmidlem6N" is discouraged (1 uses).
 New usage of "pexmidlem7N" is discouraged (1 uses).
 New usage of "pexmidlem8N" is discouraged (1 uses).
+New usage of "pfxnndmnd" is discouraged (2 uses).
+New usage of "pfxval0" is discouraged (1 uses).
 New usage of "phnv" is discouraged (19 uses).
 New usage of "phnvi" is discouraged (22 uses).
 New usage of "phoeqi" is discouraged (1 uses).
@@ -17946,6 +17953,7 @@ New usage of "swrdccatwrdOLD" is discouraged (8 uses).
 New usage of "swrdeqOLD" is discouraged (2 uses).
 New usage of "swrdidOLD" is discouraged (9 uses).
 New usage of "swrdn0OLD" is discouraged (4 uses).
+New usage of "swrdnznd" is discouraged (1 uses).
 New usage of "swrdswrd0OLD" is discouraged (1 uses).
 New usage of "swrdtrcfv0OLD" is discouraged (1 uses).
 New usage of "swrdtrcfvOLD" is discouraged (2 uses).
@@ -19156,6 +19164,7 @@ Proof modification of "falimfal" is discouraged (6 steps).
 Proof modification of "falimtru" is discouraged (6 steps).
 Proof modification of "fesapoOLD" is discouraged (28 steps).
 Proof modification of "festinoALT" is discouraged (24 steps).
+Proof modification of "fimadmfoALT" is discouraged (108 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnmpt2ovdOLD" is discouraged (219 steps).
 Proof modification of "fnotovbOLD" is discouraged (79 steps).
