@@ -14299,6 +14299,7 @@ New usage of "brresOLD2" is discouraged (1 uses).
 New usage of "brresgOLD2" is discouraged (1 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
+New usage of "c0exALT" is discouraged (0 uses).
 New usage of "calemesOLD" is discouraged (0 uses).
 New usage of "calemosOLD" is discouraged (0 uses).
 New usage of "camestresOLD" is discouraged (0 uses).
@@ -18731,6 +18732,7 @@ Proof modification of "brinxp2OLD" is discouraged (58 steps).
 Proof modification of "brresOLD" is discouraged (43 steps).
 Proof modification of "brresOLD2" is discouraged (26 steps).
 Proof modification of "brresgOLD2" is discouraged (46 steps).
+Proof modification of "c0exALT" is discouraged (15 steps).
 Proof modification of "calemesOLD" is discouraged (26 steps).
 Proof modification of "calemosOLD" is discouraged (31 steps).
 Proof modification of "camestresOLD" is discouraged (23 steps).
