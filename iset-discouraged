@@ -15,10 +15,12 @@
 "4syl" is used by "climuni".
 "4syl" is used by "f1ocnvfvrneq".
 "4syl" is used by "fcof1o".
+"4syl" is used by "fsumparts".
 "4syl" is used by "fzofzp1".
 "4syl" is used by "fzosplitsnm1".
 "4syl" is used by "fzostep1".
 "4syl" is used by "fzssp1".
+"4syl" is used by "hashiun".
 "4syl" is used by "isose".
 "4syl" is used by "isoselem".
 "4syl" is used by "serif0".
@@ -100,6 +102,14 @@
 "df-inn" is used by "dfnn2".
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
+"df-iseq" is used by "dfseq3-2".
+"df-iseq" is used by "iseqeq1".
+"df-iseq" is used by "iseqeq2".
+"df-iseq" is used by "iseqeq3".
+"df-iseq" is used by "iseqex".
+"df-iseq" is used by "iseqval".
+"df-iseq" is used by "iseqvalt".
+"df-iseq" is used by "nfiseq".
 "df-mnf" is used by "mnfnre".
 "df-mnf" is used by "mnfxr".
 "df-mnf" is used by "pnfnemnf".
@@ -132,15 +142,137 @@
 "eu3h" is used by "2eu4".
 "eu3h" is used by "eu3".
 "eu3h" is used by "mo2r".
+"fisum" is used by "fsum3".
+"fisum" is used by "fsumadd".
+"fisum" is used by "fsumf1o".
+"fisum" is used by "isumz".
+"fisum" is used by "sumsnf".
+"fisumcvg" is used by "fisumcvg2".
+"fisumcvg" is used by "isummolem2a".
+"fisumser" is used by "fsum3ser".
+"fisumser" is used by "isumclim3".
 "hbs1" is used by "eu1".
 "hbs1" is used by "hbab1".
 "hbs1" is used by "mopick".
 "hbs1" is used by "nfs1v".
 "hbs1" is used by "sb9v".
-"iseqss" is used by "climserile".
-"iseqss" is used by "iserile".
-"iseqss" is used by "serige0".
-"iseqss" is used by "serile".
+"iisermulc2" is used by "isermulc2".
+"iisermulc2" is used by "isummulc2".
+"iseq1" is used by "bcn2".
+"iseq1" is used by "fac1".
+"iseq1" is used by "ialgr0".
+"iseq1" is used by "iseqcaopr3".
+"iseq1" is used by "iseqcoll".
+"iseq1" is used by "iseqfveq".
+"iseq1" is used by "iseqfveq2".
+"iseq1" is used by "iseqhomo".
+"iseq1" is used by "iseqid".
+"iseq1" is used by "iseqid3s".
+"iseq1" is used by "iseqoveq".
+"iseq1" is used by "iseqshft2".
+"iseq1" is used by "iseqsplit".
+"iseq1" is used by "iseqsst".
+"iseq1" is used by "iseqz".
+"iseq1" is used by "sumsnf".
+"iseq1t" is used by "iseqsst".
+"iseqcl" is used by "fisum".
+"iseqcl" is used by "ialgrp1".
+"iseqcl" is used by "ibcval5".
+"iseqcl" is used by "iseqcaopr2".
+"iseqcl" is used by "iseqcoll".
+"iseqcl" is used by "iseqdistr".
+"iseqcl" is used by "iseqhomo".
+"iseqcl" is used by "iseqid3".
+"iseqcl" is used by "iseqoveq".
+"iseqcl" is used by "iseqp1".
+"iseqcl" is used by "iseqsplit".
+"iseqcl" is used by "iseqz".
+"iseqcl" is used by "isermono".
+"iseqdistr" is used by "iisermulc2".
+"iseqeq1" is used by "bcn2".
+"iseqeq1" is used by "ibcval5".
+"iseqeq1" is used by "iseqid".
+"iseqeq1" is used by "iseqz".
+"iseqeq1" is used by "isummo".
+"iseqeq1" is used by "isummolem2".
+"iseqeq1" is used by "seqeq1".
+"iseqeq1" is used by "zisum".
+"iseqeq2" is used by "seqeq2".
+"iseqeq3" is used by "cbvsum".
+"iseqeq3" is used by "fisum".
+"iseqeq3" is used by "fsumadd".
+"iseqeq3" is used by "isummo".
+"iseqeq3" is used by "isumz".
+"iseqeq3" is used by "seqeq3".
+"iseqeq3" is used by "sumeq1".
+"iseqeq3" is used by "sumeq2".
+"iseqeq3" is used by "zisum".
+"iseqex" is used by "fisumcvg".
+"iseqex" is used by "iisermulc2".
+"iseqex" is used by "isumclim3".
+"iseqex" is used by "isumrb".
+"iseqex" is used by "seqex".
+"iseqfcl" is used by "fac0".
+"iseqfcl" is used by "facnn".
+"iseqfcl" is used by "ialgrf".
+"iseqfcl" is used by "iseqfeq".
+"iseqfcl" is used by "iseqfeq2".
+"iseqfcl" is used by "iseqoveq".
+"iseqfcl" is used by "iseqsst".
+"iseqfcl" is used by "iserf".
+"iseqfclt" is used by "iseqp1t".
+"iseqfclt" is used by "iseqsst".
+"iseqfeq" is used by "fisumcvg2".
+"iseqfeq" is used by "seq3feq".
+"iseqfeq" is used by "zisum".
+"iseqfeq2" is used by "iseqid".
+"iseqfveq" is used by "fisum".
+"iseqfveq" is used by "fisumser".
+"iseqfveq" is used by "iseqfeq".
+"iseqfveq2" is used by "iseqfeq2".
+"iseqfveq2" is used by "iseqfveq".
+"iseqhomo" is used by "iseqdistr".
+"iseqid2" is used by "fisumcvg".
+"iseqid2" is used by "iseqcoll".
+"iseqm1" is used by "bcn2".
+"iseqm1" is used by "iseqcoll".
+"iseqm1" is used by "iseqid".
+"iseqm1" is used by "iseqz".
+"iseqm1" is used by "serif0".
+"iseqp1" is used by "facp1".
+"iseqp1" is used by "ialgrp1".
+"iseqp1" is used by "iseqcaopr3".
+"iseqp1" is used by "iseqcoll".
+"iseqp1" is used by "iseqfveq2".
+"iseqp1" is used by "iseqhomo".
+"iseqp1" is used by "iseqid2".
+"iseqp1" is used by "iseqid3s".
+"iseqp1" is used by "iseqm1".
+"iseqp1" is used by "iseqoveq".
+"iseqp1" is used by "iseqshft2".
+"iseqp1" is used by "iseqsplit".
+"iseqp1" is used by "iseqsst".
+"iseqp1" is used by "iseqz".
+"iseqp1" is used by "isermono".
+"iseqp1t" is used by "iseqsst".
+"iseqshft2" is used by "seq3shft2".
+"iseqsplit" is used by "ibcval5".
+"iseqval" is used by "iseq1".
+"iseqval" is used by "iseqcl".
+"iseqval" is used by "iseqfcl".
+"iseqval" is used by "iseqp1".
+"iseqvalt" is used by "iseq1t".
+"iseqvalt" is used by "iseqfclt".
+"iseqvalt" is used by "iseqp1t".
+"iser0" is used by "iser0f".
+"iser0" is used by "isumz".
+"iser0" is used by "ser0f".
+"iser0f" is used by "iserclim0".
+"iserf" is used by "fisumcvg".
+"iserf" is used by "iisermulc2".
+"iserf" is used by "iser0f".
+"iserf" is used by "ser0f".
+"iserf" is used by "serif0".
 "mo3h" is used by "mo2dc".
 "mo3h" is used by "mo3".
 "mo3h" is used by "mo4f".
@@ -148,6 +280,9 @@
 "mo3h" is used by "moim".
 "mo3h" is used by "moimv".
 "mo3h" is used by "mopick".
+"nfiseq" is used by "nfseq".
+"nfiseq" is used by "nfsum".
+"nfiseq" is used by "nfsum1".
 "nnindnn" is used by "nntopi".
 "opelopabsbALT" is used by "cnvopab".
 "opelopabsbALT" is used by "inopab".
@@ -182,7 +317,7 @@ New usage of "19.21ht" is discouraged (2 uses).
 New usage of "19.41h" is discouraged (5 uses).
 New usage of "19.42h" is discouraged (1 uses).
 New usage of "19.9hd" is discouraged (2 uses).
-New usage of "4syl" is discouraged (13 uses).
+New usage of "4syl" is discouraged (15 uses).
 New usage of "a9evsep" is discouraged (1 uses).
 New usage of "addmodlteqALT" is discouraged (0 uses).
 New usage of "alrimih" is discouraged (25 uses).
@@ -261,6 +396,7 @@ New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
 New usage of "df-iord" is discouraged (1 uses).
+New usage of "df-iseq" is discouraged (8 uses).
 New usage of "df-mnf" is discouraged (3 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-tru" is discouraged (1 uses).
@@ -273,13 +409,44 @@ New usage of "elirr" is discouraged (16 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
+New usage of "fisum" is discouraged (5 uses).
+New usage of "fisumcvg" is discouraged (2 uses).
+New usage of "fisumser" is discouraged (2 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "foelrnOLD" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
-New usage of "iseqss" is discouraged (4 uses).
+New usage of "iisermulc2" is discouraged (2 uses).
+New usage of "iseq1" is discouraged (16 uses).
+New usage of "iseq1t" is discouraged (1 uses).
+New usage of "iseqcl" is discouraged (13 uses).
+New usage of "iseqdistr" is discouraged (1 uses).
+New usage of "iseqeq1" is discouraged (8 uses).
+New usage of "iseqeq2" is discouraged (1 uses).
+New usage of "iseqeq3" is discouraged (9 uses).
+New usage of "iseqex" is discouraged (5 uses).
+New usage of "iseqfcl" is discouraged (8 uses).
+New usage of "iseqfclt" is discouraged (2 uses).
+New usage of "iseqfeq" is discouraged (3 uses).
+New usage of "iseqfeq2" is discouraged (1 uses).
+New usage of "iseqfveq" is discouraged (3 uses).
+New usage of "iseqfveq2" is discouraged (2 uses).
+New usage of "iseqhomo" is discouraged (1 uses).
+New usage of "iseqid2" is discouraged (2 uses).
+New usage of "iseqm1" is discouraged (5 uses).
+New usage of "iseqoveq" is discouraged (0 uses).
+New usage of "iseqp1" is discouraged (15 uses).
+New usage of "iseqp1t" is discouraged (1 uses).
+New usage of "iseqshft2" is discouraged (1 uses).
+New usage of "iseqsplit" is discouraged (1 uses).
+New usage of "iseqval" is discouraged (4 uses).
+New usage of "iseqvalt" is discouraged (3 uses).
+New usage of "iser0" is discouraged (3 uses).
+New usage of "iser0f" is discouraged (1 uses).
+New usage of "iserf" is discouraged (5 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
+New usage of "nfiseq" is discouraged (3 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnindnn" is discouraged (1 uses).

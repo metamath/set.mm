@@ -209,14 +209,8 @@ SIZE=-1><I>21-Dec-2016</I></FONT>
 -->
 
 </LI>
-<LI> <A HREF="#definitions">Appendix 4: A Note on Definitions</A>
+<LI> <A HREF="#definitions">Appendix 4: A Note on Definitions</A></LI>
 
-<!--
-<FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Revised</FONT> <FONT
-SIZE=-1><I>11-Nov-2014</I></FONT>
--->
-
-</LI>
 <LI> <A HREF="#assume">Appendix 5: How to Find Out What Axioms a Proof
 Depends On</A></LI>
 <LI> <A HREF="#function">Appendix 6: Notation for Function and Operation
@@ -4304,7 +4298,9 @@ automated tool customized for the logic used by the database.
 <P>
 For the specific case of the set theory database set.mm, Mario Carneiro added
 an enhancement to the <A HREF="../index.html#mmj2">mmj2</A> program that will
-verify the soundness of all but four definitions.  This test can be turned on
+verify the soundness of all but four definitions.  There is a specification
+for this definition checker in the "additional rules for definitions" section
+of the ~ conventions page.  The mmj2 definition checker can be turned on
 by adding
 <BLOCKQUOTE>
 <TT>
@@ -4404,23 +4400,6 @@ we adopt the convention of introducing definitions by connecting a new symbol
 class).  With this convention, the soundness of definitions is more or less
 obvious by inspection.
 -->
-
-<P>
-In the set theory database set.mm, we have adopted the conservative convention
-that most definitions, beyond the basics needed for a practical development of
-set theory, consist of a single new class constant symbol followed by an equal
-sign followed by a class expression built from earlier symbols, for example the
-definition of power class ~ df-pw .  Thus the definition is more or less a
-drop-in replacement that abbreviates a fixed, more complicated expression (with
-possible renaming of bound variables).  The soundness of such definitions is
-simple to check by inspection:  if (1) the left-hand constant symbol is new and
-doesn't appear in the right-hand side, (2) all variables are distinct (all of
-them appear in a single $d statement), and (3) we can prove (with a Metamath
-theorem, e.g. ~ pwjust for ~ df-pw ) that the right-hand expression equals
-itself with all variables renamed, then the definition is sound.  This
-convention allows all but four definitions to be verified automatically by mmj2
-as described above.
-</P>
 
 <P>
 A non-mathematical (human) issue with a definition is whether it matches the
@@ -5317,7 +5296,7 @@ http://www.springer.com/us/book/9783540225256</A> (retrieved
 <I>Alg&egrave;bre, Chapitres 1 &agrave; 3,</I> Springer-Verlag,
 Berlin Heidelberg (2007); available in English (for purchase) at
 <A HREF="http://www.springer.com/us/book/9783540642435">
-/http://www.springer.com/us/book/9783540642435</A> (retrieved
+http://www.springer.com/us/book/9783540642435</A> (retrieved
 15-Aug-2016). Page references in set.mm are for the French edition.
 </LI>
 <LI>
@@ -5543,7 +5522,7 @@ http://joshua.smcvt.edu/linearalgebra</A> (retrieved 26 Nov 2019).
 available at <A HREF="https://arxiv.org/abs/1312.7748">
 https://arxiv.org/abs/1312.7748</A> (retrieved 2 Aug 2020). See also
 <A HREF="https://webusers.imj-prg.fr/~~harald.helfgott/anglais/book.html">
-https://webusers.imj-prg.fr/~~harald.helfgott/anglais/book.html</A> 
+https://webusers.imj-prg.fr/~~harald.helfgott/anglais/book.html</A>
 </LI>
 <LI>
 <A NAME="Herstein"></A> [Herstein] Herstein, I. N., <I>Abstract
@@ -5598,7 +5577,7 @@ HREF="http://www.williamstein.org/edu/Spring2003/21n/papers/hilbert10.pdf"
 (retrieved 11 Nov 2014).
 </LI>
 <LI>
-<A NAME="Juillerat"></A> [Juillerat] Jacob Juillerat, "Transcendental Numbers ",
+<A NAME="Juillerat"></A> [Juillerat] Jacob Juillerat, "Transcendental Numbers",
 Lake Forest College, Senior Thesis, April 25, 2016 ; available at <A
 HREF="https://publications.lakeforest.edu/seniortheses/62/">
 https://publications.lakeforest.edu/seniortheses/62/</A>
