@@ -13318,11 +13318,13 @@ New usage of "1ne0sr" is discouraged (1 uses).
 New usage of "1nq" is discouraged (9 uses).
 New usage of "1nqenq" is discouraged (1 uses).
 New usage of "1p1e2apr1" is discouraged (0 uses).
+New usage of "1p2e3OLD" is discouraged (0 uses).
 New usage of "1pi" is discouraged (11 uses).
 New usage of "1pr" is discouraged (16 uses).
 New usage of "1psubclN" is discouraged (0 uses).
 New usage of "1sr" is discouraged (8 uses).
 New usage of "1t1e1ALT" is discouraged (0 uses).
+New usage of "235t711" is discouraged (0 uses).
 New usage of "2atm2atN" is discouraged (0 uses).
 New usage of "2atnelvolN" is discouraged (0 uses).
 New usage of "2bornot2b" is discouraged (0 uses).
@@ -15493,6 +15495,7 @@ New usage of "eufOLD" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
 New usage of "eumoOLD" is discouraged (0 uses).
 New usage of "eupthresOLD" is discouraged (1 uses).
+New usage of "ex-decpmul" is discouraged (0 uses).
 New usage of "ex-gt" is discouraged (0 uses).
 New usage of "ex-gte" is discouraged (0 uses).
 New usage of "ex-natded5.13" is discouraged (0 uses).
@@ -18276,6 +18279,7 @@ Proof modification of "19.43OLD" is discouraged (72 steps).
 Proof modification of "19.9dOLDOLD" is discouraged (24 steps).
 Proof modification of "1div0apr" is discouraged (77 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
+Proof modification of "1p2e3OLD" is discouraged (7 steps).
 Proof modification of "1t1e1ALT" is discouraged (13 steps).
 Proof modification of "2bornot2b" is discouraged (26 steps).
 Proof modification of "2clwwlk2clwwlkOLD" is discouraged (782 steps).
@@ -19134,6 +19138,7 @@ Proof modification of "eufOLD" is discouraged (62 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
 Proof modification of "eumoOLD" is discouraged (18 steps).
 Proof modification of "eupthresOLD" is discouraged (142 steps).
+Proof modification of "ex-decpmul" is discouraged (261 steps).
 Proof modification of "ex-natded5.13" is discouraged (67 steps).
 Proof modification of "ex-natded5.13-2" is discouraged (21 steps).
 Proof modification of "ex-natded5.2" is discouraged (18 steps).
