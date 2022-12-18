@@ -23,7 +23,7 @@
 "4syl" is used by "hashiun".
 "4syl" is used by "isose".
 "4syl" is used by "isoselem".
-"4syl" is used by "serif0".
+"4syl" is used by "serf0".
 "4syl" is used by "smoiso".
 "4syl" is used by "tposss".
 "a9evsep" is used by "ax9vsep".
@@ -149,6 +149,7 @@
 "fisum" is used by "sumsnf".
 "fisumcvg" is used by "fisumcvg2".
 "fisumcvg" is used by "isummolem2a".
+"fisumcvg2" is used by "fisumsers".
 "fisumser" is used by "fsum3ser".
 "fisumser" is used by "isumclim3".
 "hbs1" is used by "eu1".
@@ -238,7 +239,6 @@
 "iseqm1" is used by "iseqcoll".
 "iseqm1" is used by "iseqid".
 "iseqm1" is used by "iseqz".
-"iseqm1" is used by "serif0".
 "iseqp1" is used by "facp1".
 "iseqp1" is used by "ialgrp1".
 "iseqp1" is used by "iseqcaopr3".
@@ -272,7 +272,6 @@
 "iserf" is used by "iisermulc2".
 "iserf" is used by "iser0f".
 "iserf" is used by "ser0f".
-"iserf" is used by "serif0".
 "mo3h" is used by "mo2dc".
 "mo3h" is used by "mo3".
 "mo3h" is used by "mo4f".
@@ -411,6 +410,7 @@ New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
 New usage of "fisum" is discouraged (5 uses).
 New usage of "fisumcvg" is discouraged (2 uses).
+New usage of "fisumcvg2" is discouraged (1 uses).
 New usage of "fisumser" is discouraged (2 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "foelrnOLD" is discouraged (0 uses).
@@ -433,7 +433,7 @@ New usage of "iseqfveq" is discouraged (3 uses).
 New usage of "iseqfveq2" is discouraged (2 uses).
 New usage of "iseqhomo" is discouraged (1 uses).
 New usage of "iseqid2" is discouraged (2 uses).
-New usage of "iseqm1" is discouraged (5 uses).
+New usage of "iseqm1" is discouraged (4 uses).
 New usage of "iseqoveq" is discouraged (0 uses).
 New usage of "iseqp1" is discouraged (15 uses).
 New usage of "iseqp1t" is discouraged (1 uses).
@@ -443,7 +443,7 @@ New usage of "iseqval" is discouraged (4 uses).
 New usage of "iseqvalt" is discouraged (3 uses).
 New usage of "iser0" is discouraged (3 uses).
 New usage of "iser0f" is discouraged (1 uses).
-New usage of "iserf" is discouraged (5 uses).
+New usage of "iserf" is discouraged (4 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
 New usage of "nfiseq" is discouraged (3 uses).

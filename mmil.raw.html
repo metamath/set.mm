@@ -7627,12 +7627,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
-  <TD>serf0</TD>
-  <TD>~ serif0</TD>
-  <TD>The only difference is the syntax of ` seq ` .</TD>
-</TR>
-
-<TR>
   <TD>iseralt</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on caurcvg2 which does not specify
@@ -7724,7 +7718,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>fsumcvg2</TD>
-  <TD>~ fisumcvg2</TD>
+  <TD>~ fsum3cvg2</TD>
 </TR>
 
 <TR>
@@ -7734,7 +7728,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>fsumcvg3</TD>
-  <TD>~ fisumcvg3</TD>
+  <TD>~ fsum3cvg3</TD>
 </TR>
 
 <TR>
@@ -7861,10 +7855,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>isumless</TD>
-  <TD><I>none</I></TD>
-  <TD>Should be provable with the addition of a decidability
-  condition such as the one found in ~ isumss2 and
-  ~ fisumcvg3 .</TD>
+  <TD>~ isumlessdc</TD>
+  <TD>Adds a decidability condition on the index set for the sum</TD>
 </TR>
 
 <TR>
@@ -7879,7 +7871,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD><I>none</I></TD>
   <TD>Should be provable with the addition of a decidability
   condition such as the one found in ~ isumss2 and
-  ~ fisumcvg3 .</TD>
+  ~ fsum3cvg3 .</TD>
 </TR>
 
 <TR>
@@ -7955,11 +7947,35 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>mertens</TD>
+  <TD>~ mertensabs</TD>
+  <TD>Because we don't (yet at least) have abscvgcvg or anything
+  else relating the convergence of a sequence's absolute values
+  to the convergence of the sequence itself, we add the condition
+  that both the sequence ` F ` and the sequence of its absolute
+  values converge (that is, ` seq 0 ( + , F ) e. dom ~~> ` is
+  an additional hypothesis beyond what set.mm has).</TD>
+</TR>
+
+<TR>
   <TD>df-prod and theorems using it</TD>
   <TD><I>none</I></TD>
   <TD>To define this, we will need to tackle all the issues analogous
   to ~ df-isum plus some more around, for example, not equal to zero
   versus apart from zero</TD>
+</TR>
+
+<TR>
+  <TD>eftval</TD>
+  <TD>~ eftvalcn</TD>
+  <TD>Adds an easily satisfied condition.</TD>
+</TR>
+
+<TR>
+  <TD>fprodefsum</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably feasible once finite products are better
+  developed.</TD>
 </TR>
 
 <TR>
@@ -8346,6 +8362,12 @@ June 25, 2020,
 Brown, Chad E. (August 15, 2022), &quot;Cantor-Bernstein implies
 Excluded Middle&quot;,
 <A HREF="https://arxiv.org/abs/1904.09193">https://arxiv.org/abs/1904.09193</A>
+</LI>
+
+<LI>
+<A NAME="Rudin"></A> [Rudin] Rudin, Walter, <I>Principles of Mathematical
+Analysis,</I> McGraw-Hill, New York, second edition (1964) [QA300.R916
+1964].
 </LI>
 
 <LI><A NAME="Quine"></A> [Quine] Quine, Willard van Orman, <I>Set Theory

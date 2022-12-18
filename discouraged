@@ -4681,8 +4681,8 @@
 "df-plr" is used by "addsrpr".
 "df-plr" is used by "dmaddsr".
 "df-pnf" is used by "mnfnre".
+"df-pnf" is used by "pnfex".
 "df-pnf" is used by "pnfnre".
-"df-pnf" is used by "pnfxr".
 "df-r" is used by "avril1".
 "df-r" is used by "ax1rid".
 "df-r" is used by "axresscn".
@@ -14797,6 +14797,7 @@ New usage of "dalem31N" is discouraged (0 uses).
 New usage of "daraptiALT" is discouraged (0 uses).
 New usage of "dariiALT" is discouraged (0 uses).
 New usage of "datisiOLD" is discouraged (0 uses).
+New usage of "decmul1OLD" is discouraged (0 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-0" is discouraged (5 uses).
 New usage of "df-0o" is discouraged (1 uses).
@@ -17332,6 +17333,7 @@ New usage of "pmod2iN" is discouraged (0 uses).
 New usage of "pmodN" is discouraged (0 uses).
 New usage of "pmodl42N" is discouraged (1 uses).
 New usage of "pn0sr" is discouraged (4 uses).
+New usage of "pnfexOLD" is discouraged (0 uses).
 New usage of "pnonsingN" is discouraged (3 uses).
 New usage of "pointpsubN" is discouraged (0 uses).
 New usage of "pointsetN" is discouraged (1 uses).
@@ -18849,6 +18851,7 @@ Proof modification of "cshnzOLD" is discouraged (93 steps).
 Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "datisiOLD" is discouraged (26 steps).
+Proof modification of "decmul1OLD" is discouraged (119 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfac2OLD" is discouraged (822 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
@@ -19681,6 +19684,7 @@ Proof modification of "pm2.21ddALT" is discouraged (10 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
 Proof modification of "pm3.2an3OLD" is discouraged (19 steps).
+Proof modification of "pnfexOLD" is discouraged (4 steps).
 Proof modification of "prel12OLD" is discouraged (191 steps).
 Proof modification of "prel12gOLD" is discouraged (329 steps).
 Proof modification of "preleqALT" is discouraged (115 steps).
