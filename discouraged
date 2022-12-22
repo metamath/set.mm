@@ -15378,8 +15378,6 @@ New usage of "elimph" is discouraged (3 uses).
 New usage of "elimphu" is discouraged (3 uses).
 New usage of "ellnfn" is discouraged (5 uses).
 New usage of "ellnop" is discouraged (9 uses).
-New usage of "elneldisjOLD" is discouraged (0 uses).
-New usage of "elnelunOLD" is discouraged (0 uses).
 New usage of "elni" is discouraged (7 uses).
 New usage of "elni2" is discouraged (7 uses).
 New usage of "elnlfn" is discouraged (4 uses).
@@ -15541,8 +15539,6 @@ New usage of "fnmpt2ovdOLD" is discouraged (0 uses).
 New usage of "fnotovbOLD" is discouraged (0 uses).
 New usage of "fresisonOLD" is discouraged (0 uses).
 New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
-New usage of "fsummsnunzOLD" is discouraged (0 uses).
-New usage of "fsumsplitsnunOLD" is discouraged (0 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
 New usage of "funcringcsetcALTV" is discouraged (0 uses).
@@ -17568,6 +17564,7 @@ New usage of "sbcbi" is discouraged (2 uses).
 New usage of "sbcbiVD" is discouraged (0 uses).
 New usage of "sbcim2g" is discouraged (2 uses).
 New usage of "sbcim2gVD" is discouraged (0 uses).
+New usage of "sbcom2OLD" is discouraged (0 uses).
 New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
 New usage of "sbcrexgOLD" is discouraged (2 uses).
@@ -19063,8 +19060,6 @@ Proof modification of "eliminable2b" is discouraged (7 steps).
 Proof modification of "eliminable2c" is discouraged (8 steps).
 Proof modification of "eliminable3a" is discouraged (7 steps).
 Proof modification of "eliminable3b" is discouraged (8 steps).
-Proof modification of "elneldisjOLD" is discouraged (53 steps).
-Proof modification of "elnelunOLD" is discouraged (53 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
 Proof modification of "elrabOLD" is discouraged (16 steps).
@@ -19322,8 +19317,6 @@ Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
 Proof modification of "fresisonOLD" is discouraged (31 steps).
 Proof modification of "frgrwopreglem5ALT" is discouraged (519 steps).
-Proof modification of "fsummsnunzOLD" is discouraged (91 steps).
-Proof modification of "fsumsplitsnunOLD" is discouraged (239 steps).
 Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "funressnvmoOLD" is discouraged (87 steps).
 Proof modification of "funsneqopOLD" is discouraged (25 steps).
@@ -19780,6 +19773,7 @@ Proof modification of "sbcbi" is discouraged (33 steps).
 Proof modification of "sbcbiVD" is discouraged (59 steps).
 Proof modification of "sbcim2g" is discouraged (83 steps).
 Proof modification of "sbcim2gVD" is discouraged (139 steps).
+Proof modification of "sbcom2OLD" is discouraged (185 steps).
 Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
 Proof modification of "sbcrexgOLD" is discouraged (77 steps).
