@@ -61,7 +61,7 @@ jobs:
       - run: ls -l
       - run: g++ --version
       # Get and compile checkmm, a C++ verifier by Eric Schmidt
-      - run: wget -N -q http://us.metamath.org/downloads/checkmm.cpp
+      - run: wget -N https://github.com/metamath/metamath-website-seed/tree/main/downloads/checkmm.cpp
       - run: g++ -O2 -o checkmm checkmm.cpp
       # Use it to verify set.mm and iset.mm
       - run: ./checkmm set.mm
@@ -176,8 +176,7 @@ jobs:
           java-version: '10' # The JDK version to make available on the path.
           # java-package: jdk # (jdk, jre, jdk+fx, or jre+fx) - defaults to jdk
           # architecture: x64 # (x86, x64, armv7, aarch64, or ppc64le) - default value derived from the runner machine
-      - run: wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
-      - run: unzip -q mmj2jar.zip
+      - run: wget -N https://github.com/digama0/mmj2/tree/master/mmj2jar
       # Do extra checking and generate the '*discouraged.new' file
       # (the 'printf' lets us insert multiple lines).
       # We use setparser to check that definitions don't create
@@ -199,7 +198,7 @@ jobs:
       - uses: actions/setup-python@v3
         with:
           python-version: '>=3.9'
-      - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
+      - run: wget -N https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
       # We can speed up the script by deleting all logging calls, since we do
       # not need them.
       - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
@@ -218,7 +217,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '>=3.9'
-      - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
+      - run: wget -N https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
       # We can speed up the script by deleting all logging calls, since we do
       # not need them.
       - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
