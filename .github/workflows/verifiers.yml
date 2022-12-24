@@ -172,10 +172,10 @@ jobs:
       # See: https://github.com/actions/setup-java
       - uses: actions/setup-java@v3
         with:
-          distribution: 'zulu'
+          distribution: 'zulu' # required field
           java-version: '10' # The JDK version to make available on the path.
-          # java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
-          # architecture: x64 # (x64 or x86) - defaults to x64
+          # java-package: jdk # (jdk, jre, jdk+fx, or jre+fx) - defaults to jdk
+          # architecture: x64 # (x86, x64, armv7, aarch64, or ppc64le) - default value derived from the runner machine
       - run: wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
       - run: unzip -q mmj2jar.zip
       # Do extra checking and generate the '*discouraged.new' file
