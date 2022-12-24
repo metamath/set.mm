@@ -176,7 +176,7 @@ jobs:
           java-version: '10' # The JDK version to make available on the path.
           # java-package: jdk # (jdk, jre, jdk+fx, or jre+fx) - defaults to jdk
           # architecture: x64 # (x86, x64, armv7, aarch64, or ppc64le) - default value derived from the runner machine
-      - run: wget -N https://github.com/digama0/mmj2/tree/master/mmj2jar
+      - run: wget -N https://github.com/digama0/mmj2/tree/master/mmj2jar/mmj2.jar
       # Do extra checking and generate the '*discouraged.new' file
       # (the 'printf' lets us insert multiple lines).
       # We use setparser to check that definitions don't create
