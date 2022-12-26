@@ -61,7 +61,7 @@ jobs:
       - run: ls -l
       - run: g++ --version
       # Get and compile checkmm, a C++ verifier by Eric Schmidt
-      - run: wget -N https://github.com/metamath/metamath-website-seed/tree/main/downloads/checkmm.cpp
+      - run: wget -N https://github.com/metamath/metamath-website-seed/blob/main/downloads/checkmm.cpp
       - run: g++ -O2 -o checkmm checkmm.cpp
       # Use it to verify set.mm and iset.mm
       - run: ./checkmm set.mm
