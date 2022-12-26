@@ -195,7 +195,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       # See https://github.com/actions/setup-python
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v4
         with:
           python-version: '>=3.9'
       - run: wget -N https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
