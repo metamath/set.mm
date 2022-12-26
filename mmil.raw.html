@@ -995,6 +995,16 @@ When working with real and complex numbers, apartness is almost always what
 you want. See ~ df-ap for more on apartness.
 </LI>
 
+<LI>
+Given a theorem of the form ` X = Y <-> Z = W ` we can derive
+` X =/= Y <-> Z =/= W ` but in many contexts what we really want is
+` X =//= Y <-> Z =//= W ` .  See if the version with apartness already
+exists and if not consider adding it (building from basic apartness
+theorems like ~ apadd1 and ~ apmul1 for example).  Once you have proved
+the version using apartness you can use it to prove the version with
+equality if you don't already have it, using ~ notbid and ~ apti .
+</LI>
+
 <LI>Exclusive or ( ` ph \/_ ps ` ) is equivalent to ` ph <-> -. ps `
 given excluded middle but we just have one direction ( ~ xorbin ).
 Consider intuitionizing ` ph <-> -. ps ` as ` ph \/_ ps `
