@@ -16892,6 +16892,7 @@ New usage of "normval" is discouraged (7 uses).
 New usage of "notnotrALT" is discouraged (0 uses).
 New usage of "notnotrALT2" is discouraged (0 uses).
 New usage of "notnotrALTVD" is discouraged (0 uses).
+New usage of "notnotriALT" is discouraged (0 uses).
 New usage of "npex" is discouraged (2 uses).
 New usage of "npomex" is discouraged (0 uses).
 New usage of "nqercl" is discouraged (6 uses).
@@ -19592,6 +19593,7 @@ Proof modification of "normlem7tALT" is discouraged (177 steps).
 Proof modification of "notnotrALT" is discouraged (12 steps).
 Proof modification of "notnotrALT2" is discouraged (2 steps).
 Proof modification of "notnotrALTVD" is discouraged (34 steps).
+Proof modification of "notnotriALT" is discouraged (7 steps).
 Proof modification of "nsnlpligALT" is discouraged (110 steps).
 Proof modification of "numclwlk2lem2f1oOLD" is discouraged (848 steps).
 Proof modification of "numclwlk2lem2f1oOLDOLD" is discouraged (842 steps).
