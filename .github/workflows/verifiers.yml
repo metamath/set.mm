@@ -170,13 +170,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       # See: https://github.com/actions/setup-java
-      - uses: actions/setup-java@v1
+      - uses: actions/setup-java@v3
         with:
-          # distribution: 'temurin' # or 'zulu' ; required field if using actions/setup-java@v3
-          java-version: '10' # The JDK version to make available on the path.
+          distribution: 'zulu' # ('temurin', 'zulu', ...) - required field
+          java-version: '11' # The JDK version to make available on the path.
           # java-package: jdk # (jdk, jre, jdk+fx, or jre+fx) - defaults to jdk
           # architecture: x64 # (x86, x64, armv7, aarch64, or ppc64le) - default value derived from the runner machine
       - run: wget -N https://github.com/digama0/mmj2/raw/master/mmj2jar/mmj2.jar
+      - run: mkdir macros
+      - run: wget -O macros/definitionCheck.js https://github.com/digama0/mmj2/raw/master/mmj2jar/macros/definitionCheck.js
+      - run: wget -O macros/init.js https://github.com/digama0/mmj2/raw/master/mmj2jar/macros/init.js
+      - run: wget -O macros/showDiscouraged.js https://github.com/digama0/mmj2/raw/master/mmj2jar/macros/showDiscouraged.js
       # Do extra checking and generate the '*discouraged.new' file
       # (the 'printf' lets us insert multiple lines).
       # We use setparser to check that definitions don't create
