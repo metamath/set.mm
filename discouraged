@@ -15467,6 +15467,7 @@ New usage of "erngplus2-rN" is discouraged (0 uses).
 New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "estrresOLD" is discouraged (0 uses).
+New usage of "eu6OLD" is discouraged (0 uses).
 New usage of "eubiOLD" is discouraged (0 uses).
 New usage of "eubidOLD" is discouraged (0 uses).
 New usage of "eubidvOLD" is discouraged (0 uses).
@@ -16687,7 +16688,6 @@ New usage of "nbgrssovtxOLD" is discouraged (1 uses).
 New usage of "nbgrssvtxOLD" is discouraged (0 uses).
 New usage of "nbgrssvwo2OLD" is discouraged (0 uses).
 New usage of "nbgrsymOLD" is discouraged (0 uses).
-New usage of "ndxidOLD" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "nexmoOLD" is discouraged (0 uses).
 New usage of "nf5dvOLD" is discouraged (0 uses).
@@ -19095,6 +19095,7 @@ Proof modification of "equvelvOLD" is discouraged (37 steps).
 Proof modification of "equvinvOLD" is discouraged (47 steps).
 Proof modification of "eqvOLD" is discouraged (6 steps).
 Proof modification of "estrresOLD" is discouraged (427 steps).
+Proof modification of "eu6OLD" is discouraged (265 steps).
 Proof modification of "eubiOLD" is discouraged (15 steps).
 Proof modification of "eubidOLD" is discouraged (49 steps).
 Proof modification of "eubidvOLD" is discouraged (9 steps).
@@ -19528,7 +19529,6 @@ Proof modification of "nbgrssovtxOLD" is discouraged (100 steps).
 Proof modification of "nbgrssvtxOLD" is discouraged (26 steps).
 Proof modification of "nbgrssvwo2OLD" is discouraged (89 steps).
 Proof modification of "nbgrsymOLD" is discouraged (107 steps).
-Proof modification of "ndxidOLD" is discouraged (48 steps).
 Proof modification of "nexmoOLD" is discouraged (60 steps).
 Proof modification of "nf5dvOLD" is discouraged (20 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
