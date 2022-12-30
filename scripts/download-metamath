@@ -36,9 +36,15 @@ cd ..
 # Store latest_version value inside metamath/ so we can get it later.
 printf '%s' "$latest_version" > metamath/.latest_version
 
-rm -f symbols.tar.bz2
-wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
+rm -f symbols.tar.bz2 symbols.tgz
+
+# Get symbols file. We used to get it from the Metamath website, but now the
+# website is generated from version controlled files, so we need to
+# get the symbols from our version controlled sources.
+# wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
+
+wget -N -q -o symbols.tgz https://github.com/metamath/symbols/tarball/main
 
 # Untar the symbols in the current directory so we can use them
 # (e.g., to test if they exist).
-tar --strip-components=1 -jxf symbols.tar.bz2
+tar --strip-components=1 -xzf symbols.tgz
