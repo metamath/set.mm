@@ -24,6 +24,7 @@ latest_zipball () {
 # wget -N -q http://us.metamath.org/downloads/metamath-program.zip
 set -x
 latest_version="$(latest_zipball metamath/metamath-exe)"
+echo "metamath-exe latest_version=$latest_version"
 curl --silent -L -o metamath-program.zip "$latest_version"
 
 # Extract into a different directory to prevent overwriting .mm's
