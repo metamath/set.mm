@@ -13,6 +13,9 @@ set -v -e
 # We determine the "latest" version from the number itself, not the date,
 # since a older commit might be tagged later on
 latest_zipball () {
+  echo "Debug info for latest_zipball $1" >&2
+  curl --silent "https://api.github.com/repos/$1/tags" >&2
+  echo "End of debug output from latest_version" >&2
   curl --silent "https://api.github.com/repos/$1/tags" | \
     grep zipball_url | grep -o 'https:[^"]*' | sort -n | tail -n 1
 }
@@ -25,7 +28,7 @@ latest_zipball () {
 set -x
 latest_version="$(latest_zipball metamath/metamath-exe)"
 echo "metamath-exe latest_version=$latest_version"
-curl --silent -L -o metamath-program.zip "$latest_version"
+curl -L -o metamath-program.zip "$latest_version"
 
 # Extract into a different directory to prevent overwriting .mm's
 # This will be updated, but we need a starting point:
