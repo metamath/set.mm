@@ -43,8 +43,9 @@ rm -f symbols.tar.bz2 symbols.tgz
 # get the symbols from our version controlled sources.
 # wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
 
-wget -N -q -o symbols.tgz https://github.com/metamath/symbols/tarball/main
+wget -N -O symbols.tgz https://github.com/metamath/symbols/tarball/main
 
 # Untar the symbols in the current directory so we can use them
 # (e.g., to test if they exist).
-tar --strip-components=1 -xzf symbols.tgz
+# Change the level of --strip-components to "1" to extract them into symbols/
+tar --strip-components=2 -xzf symbols.tgz
