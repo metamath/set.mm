@@ -8,27 +8,38 @@
 # Note that set.mm includes mmset.html and mmhil.html
 
 set -v -e
+set -x
+
 
 # Return URL for latest zipball of GitHub repo named "$1"
 # We determine the "latest" version from the number itself, not the date,
 # since a older commit might be tagged later on
-latest_zipball () {
-  echo "Debug info for latest_zipball $1" >&2
-  curl --silent "https://api.github.com/repos/$1/tags" >&2
-  echo "End of debug output from latest_version" >&2
-  curl --silent "https://api.github.com/repos/$1/tags" | \
-    grep zipball_url | grep -o 'https:[^"]*' | sort -n | tail -n 1
-}
+# We don't use this any more, because the API is rate-limited.
+# latest_zipball () {
+#   echo "Debug info for latest_zipball $1" >&2
+#   curl --silent "https://api.github.com/repos/$1/tags" >&2
+#   echo "End of debug output from latest_version" >&2
+#   curl --silent "https://api.github.com/repos/$1/tags" | \
+#     grep zipball_url | grep -o 'https:[^"]*' | sort -n | tail -n 1
+# }
 
 # Download the main metamath.exe program latest version.
 # GitHub doesn't provide a "latest" for tags, only for releases,
 # so we will do it ourselves.
 # rm -f metamath-program.zip
 # wget -N -q http://us.metamath.org/downloads/metamath-program.zip
-set -x
-latest_version="$(latest_zipball metamath/metamath-exe)"
-echo "metamath-exe latest_version=$latest_version"
-curl -L -o metamath-program.zip "$latest_version"
+# latest_version="$(latest_zipball metamath/metamath-exe)"
+# echo "metamath-exe latest_version=$latest_version"
+# curl -L -o metamath-program.zip "$latest_version"
+
+# Note: This "zipball" has an extra directory layer that incorporates
+# the first characters of the commit ID in its name. We grab a zip because
+# it's what was previously done, and also because unzip "-j" can remove levels.
+# Note: If the main branch name changes (e.g., "master" to "main") change
+# the branch being requested here.
+
+curl -L -o metamath-program.zip \
+     https://github.com/metamath/metamath-exe/zipball/master
 
 # Extract into a different directory to prevent overwriting .mm's
 # This will be updated, but we need a starting point:
@@ -38,7 +49,7 @@ wget -N -q http://us.metamath.org/mpegif/mmbiblio.html
 cd ..
 
 # Store latest_version value inside metamath/ so we can get it later.
-printf '%s' "$latest_version" > metamath/.latest_version
+# printf '%s' "$latest_version" > metamath/.latest_version
 
 rm -f symbols.tar.bz2 symbols.tgz
 
