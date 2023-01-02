@@ -15482,6 +15482,7 @@ New usage of "euexOLD" is discouraged (0 uses).
 New usage of "eufOLD" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
 New usage of "eumoOLD" is discouraged (0 uses).
+New usage of "eunexOLD" is discouraged (0 uses).
 New usage of "eupthresOLD" is discouraged (1 uses).
 New usage of "ex-decpmul" is discouraged (0 uses).
 New usage of "ex-gt" is discouraged (0 uses).
@@ -18608,7 +18609,7 @@ Proof modification of "bj-equsal" is discouraged (31 steps).
 Proof modification of "bj-equsalhv" is discouraged (10 steps).
 Proof modification of "bj-equsb1v" is discouraged (17 steps).
 Proof modification of "bj-equsexval" is discouraged (38 steps).
-Proof modification of "bj-eunex" is discouraged (53 steps).
+Proof modification of "bj-eunex" is discouraged (45 steps).
 Proof modification of "bj-evaleq" is discouraged (37 steps).
 Proof modification of "bj-exlimmpbi" is discouraged (11 steps).
 Proof modification of "bj-exlimmpbir" is discouraged (11 steps).
@@ -19112,6 +19113,7 @@ Proof modification of "euexOLD" is discouraged (44 steps).
 Proof modification of "eufOLD" is discouraged (62 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
 Proof modification of "eumoOLD" is discouraged (18 steps).
+Proof modification of "eunexOLD" is discouraged (53 steps).
 Proof modification of "eupthresOLD" is discouraged (142 steps).
 Proof modification of "ex-decpmul" is discouraged (261 steps).
 Proof modification of "ex-natded5.13" is discouraged (67 steps).
