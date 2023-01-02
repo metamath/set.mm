@@ -13327,6 +13327,7 @@ New usage of "2bornot2b" is discouraged (0 uses).
 New usage of "2clwwlk2clwwlkOLD" is discouraged (0 uses).
 New usage of "2clwwlklemOLD" is discouraged (2 uses).
 New usage of "2cnALT" is discouraged (0 uses).
+New usage of "2irrexpqALT" is discouraged (0 uses).
 New usage of "2llnjN" is discouraged (1 uses).
 New usage of "2llnjaN" is discouraged (1 uses).
 New usage of "2llnm2N" is discouraged (1 uses).
@@ -13334,6 +13335,7 @@ New usage of "2llnm3N" is discouraged (0 uses).
 New usage of "2llnma2rN" is discouraged (1 uses).
 New usage of "2llnne2N" is discouraged (1 uses).
 New usage of "2llnneN" is discouraged (0 uses).
+New usage of "2logb9irrALT" is discouraged (0 uses).
 New usage of "2lplnm2N" is discouraged (0 uses).
 New usage of "2lplnmN" is discouraged (0 uses).
 New usage of "2pm13.193" is discouraged (3 uses).
@@ -18266,6 +18268,8 @@ Proof modification of "2bornot2b" is discouraged (26 steps).
 Proof modification of "2clwwlk2clwwlkOLD" is discouraged (782 steps).
 Proof modification of "2clwwlklemOLD" is discouraged (90 steps).
 Proof modification of "2cnALT" is discouraged (3 steps).
+Proof modification of "2irrexpqALT" is discouraged (90 steps).
+Proof modification of "2logb9irrALT" is discouraged (141 steps).
 Proof modification of "2pm13.193" is discouraged (91 steps).
 Proof modification of "2pm13.193VD" is discouraged (223 steps).
 Proof modification of "2sb5nd" is discouraged (125 steps).
