@@ -14307,7 +14307,9 @@ New usage of "cases2ALT" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
 New usage of "cba" is discouraged (86 uses).
 New usage of "cbncms" is discouraged (5 uses).
+New usage of "cbveuALT" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
+New usage of "cbvmoOLD" is discouraged (0 uses).
 New usage of "ccat2s1fvwALT" is discouraged (0 uses).
 New usage of "ccatopthOLD" is discouraged (0 uses).
 New usage of "ccats1swrdeqOLD" is discouraged (2 uses).
@@ -17815,7 +17817,6 @@ New usage of "splvalOLD" is discouraged (6 uses).
 New usage of "splvalpfxOLD" is discouraged (0 uses).
 New usage of "sps-o" is discouraged (7 uses).
 New usage of "sqgt0sr" is discouraged (1 uses).
-New usage of "sqrt2irrlemOLD" is discouraged (0 uses).
 New usage of "srhmsubcALTV" is discouraged (4 uses).
 New usage of "srhmsubcALTVlem1" is discouraged (2 uses).
 New usage of "srhmsubcALTVlem2" is discouraged (1 uses).
@@ -18731,7 +18732,9 @@ Proof modification of "camestresOLD" is discouraged (23 steps).
 Proof modification of "camestrosOLD" is discouraged (28 steps).
 Proof modification of "cases2ALT" is discouraged (88 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
+Proof modification of "cbveuALT" is discouraged (48 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
+Proof modification of "cbvmoOLD" is discouraged (48 steps).
 Proof modification of "ccat2s1fvwALT" is discouraged (149 steps).
 Proof modification of "ccatopthOLD" is discouraged (245 steps).
 Proof modification of "ccats1swrdeqOLD" is discouraged (203 steps).
@@ -19895,7 +19898,6 @@ Proof modification of "splval2OLD" is discouraged (681 steps).
 Proof modification of "splvalOLD" is discouraged (268 steps).
 Proof modification of "splvalpfxOLD" is discouraged (300 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
-Proof modification of "sqrt2irrlemOLD" is discouraged (288 steps).
 Proof modification of "ssdifsnOLD" is discouraged (107 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "ssphlOLD" is discouraged (34 steps).
