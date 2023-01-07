@@ -390,6 +390,7 @@ New usage of "bj-nn0sucALT" is discouraged (0 uses).
 New usage of "bj-omex2" is discouraged (0 uses).
 New usage of "bj-omssonALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
+New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-div" is discouraged (2 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
@@ -564,6 +565,7 @@ Proof modification of "bj-vnex" is discouraged (14 steps).
 Proof modification of "bj-vprc" is discouraged (53 steps).
 Proof modification of "bj-zfpair2" is discouraged (80 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
+Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "djulclALT" is discouraged (53 steps).
 Proof modification of "djurclALT" is discouraged (53 steps).
