@@ -26,7 +26,6 @@ metamath "read \"${mmfile}\"" 'set width 9999' 'show statement *' quit | \
   sed -e 's/  */ /g' | $GREP '^[1-9].*\$[ap]' | cut -d ' ' -f 4- | \
   sed -e 's/ *\$= .*$//' > ,statements
 
-
 # What's been proven at any step?
 metamath "read \"${mmfile}\"" 'set width 9999' 'show proof * /lemmon' quit | \
   sed -e 's/  */ /g' | $GREP -E '^[0-9]+ [1-9][0-9,]* [^ ]* \$[ap] ' | \
