@@ -10,16 +10,15 @@
 set -v -e
 set -x
 
-
-# Return URL for latest zipball of GitHub repo named "$1"
+# Return URL for latest zipball of GitHub repo named "$1".
 # We determine the "latest" version from the number itself, not the date,
-# since a older commit might be tagged later on
-# We don't use this any more, because the API is rate-limited.
+# since an older commit might be tagged later on.
+# We do not use this any more, because the API is rate-limited.
 # latest_zipball () {
 #   echo "Debug info for latest_zipball $1" >&2
-#   curl --silent "https://api.github.com/repos/$1/tags" >&2
+#   curl "https://api.github.com/repos/$1/tags" >&2
 #   echo "End of debug output from latest_version" >&2
-#   curl --silent "https://api.github.com/repos/$1/tags" | \
+#   curl "https://api.github.com/repos/$1/tags" | \
 #     grep zipball_url | grep -o 'https:[^"]*' | sort -n | tail -n 1
 # }
 
@@ -27,7 +26,7 @@ set -x
 # GitHub doesn't provide a "latest" for tags, only for releases,
 # so we will do it ourselves.
 # rm -f metamath-program.zip
-# wget -N -q http://us.metamath.org/downloads/metamath-program.zip
+# wget -N http://us.metamath.org/downloads/metamath-program.zip
 # latest_version="$(latest_zipball metamath/metamath-exe)"
 # echo "metamath-exe latest_version=$latest_version"
 # curl -L -o metamath-program.zip "$latest_version"
@@ -45,7 +44,7 @@ curl -L -o metamath-program.zip \
 # This will be updated, but we need a starting point:
 mkdir -p metamath/
 cd metamath/
-wget -N -q http://us.metamath.org/mpegif/mmbiblio.html
+wget -N http://us.metamath.org/mpegif/mmbiblio.html
 cd ..
 
 # Store latest_version value inside metamath/ so we can get it later.
@@ -56,7 +55,7 @@ rm -f symbols.tar.bz2 symbols.tgz
 # Get symbols file. We used to get it from the Metamath website, but now the
 # website is generated from version controlled files, so we need to
 # get the symbols from our version controlled sources.
-# wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
+# wget -N http://us.metamath.org/downloads/symbols.tar.bz2
 
 wget -N -O symbols.tgz https://github.com/metamath/symbols/tarball/main
 
