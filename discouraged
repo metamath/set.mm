@@ -15472,6 +15472,7 @@ New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "estrresOLD" is discouraged (0 uses).
 New usage of "eu6OLD" is discouraged (0 uses).
+New usage of "euanvOLD" is discouraged (0 uses).
 New usage of "eubiOLD" is discouraged (0 uses).
 New usage of "eubidOLD" is discouraged (0 uses).
 New usage of "eubidvOLD" is discouraged (1 uses).
@@ -17463,6 +17464,7 @@ New usage of "retbwax1" is discouraged (0 uses).
 New usage of "retbwax2" is discouraged (3 uses).
 New usage of "retbwax3" is discouraged (0 uses).
 New usage of "retbwax4" is discouraged (0 uses).
+New usage of "reubidvaOLD" is discouraged (0 uses).
 New usage of "reuccats1OLD" is discouraged (3 uses).
 New usage of "reuccats1lemOLD" is discouraged (1 uses).
 New usage of "reuccats1vOLD" is discouraged (0 uses).
@@ -19105,6 +19107,7 @@ Proof modification of "equvinvOLD" is discouraged (47 steps).
 Proof modification of "eqvOLD" is discouraged (6 steps).
 Proof modification of "estrresOLD" is discouraged (427 steps).
 Proof modification of "eu6OLD" is discouraged (265 steps).
+Proof modification of "euanvOLD" is discouraged (7 steps).
 Proof modification of "eubiOLD" is discouraged (15 steps).
 Proof modification of "eubidOLD" is discouraged (49 steps).
 Proof modification of "eubidvOLD" is discouraged (48 steps).
@@ -19743,6 +19746,7 @@ Proof modification of "retbwax1" is discouraged (195 steps).
 Proof modification of "retbwax2" is discouraged (127 steps).
 Proof modification of "retbwax3" is discouraged (20 steps).
 Proof modification of "retbwax4" is discouraged (13 steps).
+Proof modification of "reubidvaOLD" is discouraged (10 steps).
 Proof modification of "reuccats1OLD" is discouraged (340 steps).
 Proof modification of "reuccats1lemOLD" is discouraged (319 steps).
 Proof modification of "reuccats1vOLD" is discouraged (9 steps).
