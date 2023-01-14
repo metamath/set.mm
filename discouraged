@@ -5,7 +5,7 @@
 "0bdop" is used by "adjeq0".
 "0bdop" is used by "nmbdoplb".
 "0blo" is used by "nmblolbi".
-"0cnALT2" is used by "rsubeulem1".
+"0cnALT3" is used by "resubeulem1".
 "0cnfn" is used by "nmcfnex".
 "0cnfn" is used by "nmcfnlb".
 "0cnfn" is used by "riesz1".
@@ -13261,8 +13261,8 @@ New usage of "00sr" is discouraged (4 uses).
 New usage of "0bdop" is discouraged (2 uses).
 New usage of "0blo" is discouraged (1 uses).
 New usage of "0cnALT" is discouraged (0 uses).
-New usage of "0cnALT2" is discouraged (1 uses).
-New usage of "0cnALTOLD" is discouraged (0 uses).
+New usage of "0cnALT2" is discouraged (0 uses).
+New usage of "0cnALT3" is discouraged (1 uses).
 New usage of "0cnfn" is discouraged (4 uses).
 New usage of "0cnop" is discouraged (1 uses).
 New usage of "0csh0OLD" is discouraged (0 uses).
@@ -18246,8 +18246,8 @@ New usage of "zrdivrng" is discouraged (1 uses).
 New usage of "zrhcofipsgnOLD" is discouraged (1 uses).
 New usage of "zrhcopsgndifOLD" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (82 steps).
-Proof modification of "0cnALT2" is discouraged (3 steps).
-Proof modification of "0cnALTOLD" is discouraged (49 steps).
+Proof modification of "0cnALT2" is discouraged (49 steps).
+Proof modification of "0cnALT3" is discouraged (3 steps).
 Proof modification of "0csh0OLD" is discouraged (195 steps).
 Proof modification of "0heALT" is discouraged (25 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
