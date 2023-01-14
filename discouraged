@@ -5892,7 +5892,7 @@
 "erngset-rN" is used by "erngbase-rN".
 "erngset-rN" is used by "erngfmul-rN".
 "erngset-rN" is used by "erngfplus-rN".
-"eubidvOLDOLD" is used by "mobidvOLDOLD".
+"eubidvOLD" is used by "mobidvOLDOLD".
 "eucrct2eupth1OLD" is used by "eucrct2eupthOLD".
 "eueqOLD" is used by "moeqOLD".
 "eupthresOLD" is used by "eucrct2eupth1OLD".
@@ -15474,8 +15474,8 @@ New usage of "estrresOLD" is discouraged (0 uses).
 New usage of "eu6OLD" is discouraged (0 uses).
 New usage of "eubiOLD" is discouraged (0 uses).
 New usage of "eubidOLD" is discouraged (0 uses).
-New usage of "eubidvOLD" is discouraged (0 uses).
-New usage of "eubidvOLDOLD" is discouraged (1 uses).
+New usage of "eubidvOLD" is discouraged (1 uses).
+New usage of "eubidvOLDOLD" is discouraged (0 uses).
 New usage of "eucrct2eupth1OLD" is discouraged (1 uses).
 New usage of "eucrct2eupthOLD" is discouraged (0 uses).
 New usage of "eueqOLD" is discouraged (1 uses).
@@ -15485,6 +15485,7 @@ New usage of "eufOLD" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
 New usage of "eumoOLD" is discouraged (0 uses).
 New usage of "eunexOLD" is discouraged (0 uses).
+New usage of "euorvOLD" is discouraged (0 uses).
 New usage of "eupthresOLD" is discouraged (1 uses).
 New usage of "ex-decpmul" is discouraged (0 uses).
 New usage of "ex-gt" is discouraged (0 uses).
@@ -19106,8 +19107,8 @@ Proof modification of "estrresOLD" is discouraged (427 steps).
 Proof modification of "eu6OLD" is discouraged (265 steps).
 Proof modification of "eubiOLD" is discouraged (15 steps).
 Proof modification of "eubidOLD" is discouraged (49 steps).
-Proof modification of "eubidvOLD" is discouraged (9 steps).
-Proof modification of "eubidvOLDOLD" is discouraged (48 steps).
+Proof modification of "eubidvOLD" is discouraged (48 steps).
+Proof modification of "eubidvOLDOLD" is discouraged (9 steps).
 Proof modification of "eucrct2eupth1OLD" is discouraged (104 steps).
 Proof modification of "eucrct2eupthOLD" is discouraged (1469 steps).
 Proof modification of "eueqOLD" is discouraged (52 steps).
@@ -19117,6 +19118,7 @@ Proof modification of "eufOLD" is discouraged (62 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
 Proof modification of "eumoOLD" is discouraged (18 steps).
 Proof modification of "eunexOLD" is discouraged (53 steps).
+Proof modification of "euorvOLD" is discouraged (7 steps).
 Proof modification of "eupthresOLD" is discouraged (142 steps).
 Proof modification of "ex-decpmul" is discouraged (261 steps).
 Proof modification of "ex-natded5.13" is discouraged (67 steps).
