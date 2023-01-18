@@ -4,7 +4,7 @@ We're a friendly community, and we would love to have more collaborators!
 
 This document briefly explains
 [how to contribute proposed changes](#how-can-i-contribute)
-("contributions" or "merge requests") to this collection of databases
+("contributions" or "merge requests") to this collection of databases.
 We also discuss
 [Formatting recommendation prior to submitting a pull request](#formatting-recommendation-prior-to-submitting-a-pull-request), and for the rare cases
 when it's needed, information on
@@ -117,10 +117,10 @@ the automated verification checks to check those.)
 
 In almost all cases, especially when you're starting, you won't need to
 regenerate the `discouraged` file. So if you're just starting out, you can
-probably ignore this section.However, there are rare cases when that
+probably ignore this section. However, there are rare cases when that
 is needed. This section explains what the discouraged file is all about.
 
-Some statement descriptions in `set.mm` and ` iset.mm` have one or both of the
+Some statement descriptions in `set.mm` and `iset.mm` have one or both of the
 markup tags `(New usage is discouraged.)` and `(Proof modification is discouraged.)`.
 In order to monitor accidental violations of these tags in set.mm and iset.mm,
 we store the usage and proof lengths of statements with these tags in a file
