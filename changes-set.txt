@@ -27,6 +27,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 7-Dec-22 decmul1   [same]      revised - remove unneeded hypothesis
+ 5-Dec-22 f1oeq2d   [same]      moved from GS's mathbox to main set.mm
+ 5-Dec-22 dmexd     [same]      moved from GS's mathbox to main set.mm
 13-Oct-22 rmo4f     [same]      moved from TA's mathbox to main set.mm
 13-Oct-22 rmo3f     [same]      moved from TA's mathbox to main set.mm
 13-Oct-22 iunxsngf  [same]      moved from TA's mathbox to main set.mm

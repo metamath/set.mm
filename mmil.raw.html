@@ -995,6 +995,16 @@ When working with real and complex numbers, apartness is almost always what
 you want. See ~ df-ap for more on apartness.
 </LI>
 
+<LI>
+Given a theorem of the form ` X = Y <-> Z = W ` we can derive
+` X =/= Y <-> Z =/= W ` but in many contexts what we really want is
+` X =//= Y <-> Z =//= W ` .  See if the version with apartness already
+exists and if not consider adding it (building from basic apartness
+theorems like ~ apadd1 and ~ apmul1 for example).  Once you have proved
+the version using apartness you can use it to prove the version with
+equality if you don't already have it, using ~ notbid and ~ apti .
+</LI>
+
 <LI>Exclusive or ( ` ph \/_ ps ` ) is equivalent to ` ph <-> -. ps `
 given excluded middle but we just have one direction ( ~ xorbin ).
 Consider intuitionizing ` ph <-> -. ps ` as ` ph \/_ ps `
@@ -3471,12 +3481,18 @@ this implies excluded middle</TD>
   <TD><I>in general</I></TD>
   <TD>The set.mm proof depends on unfi and it would appear that
   mapping ` { A , B } ` to a natural number would decide whether
-  ` A ` and ` B ` are equal and thus imply excluded middle.</TD>
+  ` A ` and ` B ` are equal and thus imply any set has decidable
+  equality.</TD>
 </TR>
 
 <TR>
   <TD>tpfi</TD>
   <TD>~ tpfidisj</TD>
+</TR>
+
+<TR>
+  <TD>fiint</TD>
+  <TD>~ fiintim</TD>
 </TR>
 
 <TR>
@@ -3559,6 +3575,15 @@ this implies excluded middle</TD>
   <TD>fisuppfi</TD>
   <TD>~ preimaf1ofi</TD>
   <TD>The set.mm proof of fisuppfi uses ssfi</TD>
+</TR>
+
+<TR>
+  <TD>df-fi and all theorems using the fi (class of finite
+  intersections) notation</TD>
+  <TD><I>none</I></TD>
+  <TD>Although some of these theorems could be intuitionized if
+  there is a need, others rely on excluded middle in apparently
+  essential ways.</TD>
 </TR>
 
 <TR>
@@ -4679,13 +4704,9 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-<TD>ltordlem , ltord1 , leord1 , eqord1 , ltord2 , leord2 , eqord2</TD>
+<TD>ltord1 , leord1 , ltord2 , leord2</TD>
 <TD><I>none</I></TD>
-<TD>Although these presumably could be proved using theorems like
-~ letri3 and ~ lenlt , at least for now we have chosen to just invoke
-those other theorems directly (example: ~ expcan and its lemma
-~ expcanlem ) which avoids some extra set variables and produces proofs
-which are almost as short.</TD>
+<TD>The set.mm proof relies on real number trichotomy.</TD>
 </TR>
 
 <TR>
@@ -7627,12 +7648,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
-  <TD>serf0</TD>
-  <TD>~ serif0</TD>
-  <TD>The only difference is the syntax of ` seq ` .</TD>
-</TR>
-
-<TR>
   <TD>iseralt</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on caurcvg2 which does not specify
@@ -7724,7 +7739,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>fsumcvg2</TD>
-  <TD>~ fisumcvg2</TD>
+  <TD>~ fsum3cvg2</TD>
 </TR>
 
 <TR>
@@ -7734,7 +7749,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>fsumcvg3</TD>
-  <TD>~ fisumcvg3</TD>
+  <TD>~ fsum3cvg3</TD>
 </TR>
 
 <TR>
@@ -7805,13 +7820,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>seqabs</TD>
   <TD>~ fsumabs</TD>
   <TD>Finite sums are more naturally expressed with ` sum_ ` rather
-  than ` seq ` especially in iset.mm.</TD>
-</TR>
-
-<TR>
-  <TD>iserabs</TD>
-  <TD><I>none</I></TD>
-  <TD>Presumably provable but the set.mm proof is via seqabs .</TD>
+  than ` seq ` especially in iset.mm.  Use ~ fsum3ser as needed.</TD>
 </TR>
 
 <TR>
@@ -7861,10 +7870,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>isumless</TD>
-  <TD><I>none</I></TD>
-  <TD>Should be provable with the addition of a decidability
-  condition such as the one found in ~ isumss2 and
-  ~ fisumcvg3 .</TD>
+  <TD>~ isumlessdc</TD>
+  <TD>Adds a decidability condition on the index set for the sum</TD>
 </TR>
 
 <TR>
@@ -7879,7 +7886,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD><I>none</I></TD>
   <TD>Should be provable with the addition of a decidability
   condition such as the one found in ~ isumss2 and
-  ~ fisumcvg3 .</TD>
+  ~ fsum3cvg3 .</TD>
 </TR>
 
 <TR>
@@ -7947,11 +7954,105 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>cvgrat</TD>
+  <TD>~ cvgratgt0</TD>
+  <TD>Adds a ` 0 < A ` condition which presumably is omitted
+  from the set.mm theorem only for convenience (the theorem isn't
+  interesting unless it holds).</TD>
+</TR>
+
+<TR>
+  <TD>mertens</TD>
+  <TD>~ mertensabs</TD>
+  <TD>Because we don't (yet at least) have abscvgcvg or anything
+  else relating the convergence of a sequence's absolute values
+  to the convergence of the sequence itself, we add the condition
+  that both the sequence ` F ` and the sequence of its absolute
+  values converge (that is, ` seq 0 ( + , F ) e. dom ~~> ` is
+  an additional hypothesis beyond what set.mm has).</TD>
+</TR>
+
+<TR>
   <TD>df-prod and theorems using it</TD>
   <TD><I>none</I></TD>
   <TD>To define this, we will need to tackle all the issues analogous
   to ~ df-isum plus some more around, for example, not equal to zero
   versus apart from zero</TD>
+</TR>
+
+<TR>
+  <TD>eftval</TD>
+  <TD>~ eftvalcn</TD>
+  <TD>Adds an easily satisfied condition.</TD>
+</TR>
+
+<TR>
+  <TD>fprodefsum</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably feasible once finite products are better
+  developed.</TD>
+</TR>
+
+<TR>
+  <TD>eflt</TD>
+  <TD>~ efltim</TD>
+  <TD>The set.mm proof of the converse relies on ltord1</TD>
+</TR>
+
+<TR>
+  <TD>efle</TD>
+  <TD>~ efler</TD>
+  <TD>The set.mm proof of the converse relies on eflt</TD>
+</TR>
+
+<TR>
+  <TD>tanval</TD>
+  <TD>~ tanvalap</TD>
+</TR>
+
+<TR>
+  <TD>tancl , tancld</TD>
+  <TD>~ tanclap , ~ tanclapd</TD>
+</TR>
+
+<TR>
+  <TD>tanval2</TD>
+  <TD>~ tanval2ap</TD>
+</TR>
+
+<TR>
+  <TD>tanval3</TD>
+  <TD>~ tanval3ap</TD>
+</TR>
+
+<TR>
+  <TD>retancl , retancld</TD>
+  <TD>~ retanclap , ~ retanclapd</TD>
+</TR>
+
+<TR>
+  <TD>tanneg</TD>
+  <TD>~ tannegap</TD>
+</TR>
+
+<TR>
+  <TD>sinhval , coshval , resinhcl , rpcoshcl , recoshcl ,
+  retanhcl , tanhlt1 , tanhbnd</TD>
+  <TD><I>none yet</I></TD>
+  <TD>should be provable</TD>
+</TR>
+
+<TR>
+  <TD>tanadd</TD>
+  <TD>~ tanaddap</TD>
+</TR>
+
+<TR>
+  <TD>sinltx</TD>
+  <TD>~ sin01bnd , ~ sinbnd</TD>
+  <TD>Although we can prove the ` A <_ 1 ` case (see ~ sin01bnd )
+  or the ` 1 < A ` case (from ~ sinbnd ), set.mm uses real number
+  trichotomy to combine those cases.</TD>
 </TR>
 
 <TR>
@@ -8160,6 +8261,53 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>May be provable once summation is better developed</TD>
 </TR>
 
+<TR>
+  <TD>istop2g</TD>
+  <TD>~ istopfin</TD>
+</TR>
+
+<TR>
+  <TD>iinopn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on abrexfi</TD>
+</TR>
+
+<TR>
+  <TD>riinopn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on iinopn (the other issues
+  in the set.mm proof could apparently be handled by ~ fin0or ).</TD>
+</TR>
+
+<TR>
+  <TD>rintopn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on riinopn</TD>
+</TR>
+
+<TR>
+  <TD>toponsspwpw</TD>
+  <TD>~ toponsspwpwg</TD>
+</TR>
+
+<TR>
+  <TD>toprntopon</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably could be proved but the set.mm proof does not
+  work as it is.</TD>
+</TR>
+
+<TR>
+  <TD>topsn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on pwsn</TD>
+</TR>
+
+<TR>
+  <TD>divccncf</TD>
+  <TD>~ divccncfap</TD>
+</TR>
+
 </TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
@@ -8338,6 +8486,12 @@ June 25, 2020,
 Brown, Chad E. (August 15, 2022), &quot;Cantor-Bernstein implies
 Excluded Middle&quot;,
 <A HREF="https://arxiv.org/abs/1904.09193">https://arxiv.org/abs/1904.09193</A>
+</LI>
+
+<LI>
+<A NAME="Rudin"></A> [Rudin] Rudin, Walter, <I>Principles of Mathematical
+Analysis,</I> McGraw-Hill, New York, second edition (1964) [QA300.R916
+1964].
 </LI>
 
 <LI><A NAME="Quine"></A> [Quine] Quine, Willard van Orman, <I>Set Theory
