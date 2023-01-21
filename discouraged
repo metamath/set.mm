@@ -5,6 +5,7 @@
 "0bdop" is used by "adjeq0".
 "0bdop" is used by "nmbdoplb".
 "0blo" is used by "nmblolbi".
+"0cnALT3" is used by "resubeulem1".
 "0cnfn" is used by "nmcfnex".
 "0cnfn" is used by "nmcfnlb".
 "0cnfn" is used by "riesz1".
@@ -13260,6 +13261,8 @@ New usage of "00sr" is discouraged (4 uses).
 New usage of "0bdop" is discouraged (2 uses).
 New usage of "0blo" is discouraged (1 uses).
 New usage of "0cnALT" is discouraged (0 uses).
+New usage of "0cnALT2" is discouraged (0 uses).
+New usage of "0cnALT3" is discouraged (1 uses).
 New usage of "0cnfn" is discouraged (4 uses).
 New usage of "0cnop" is discouraged (1 uses).
 New usage of "0csh0OLD" is discouraged (0 uses).
@@ -13874,7 +13877,6 @@ New usage of "bj-nuliotaALT" is discouraged (0 uses).
 New usage of "bj-peirce" is discouraged (0 uses).
 New usage of "bj-peircecurry" is discouraged (0 uses).
 New usage of "bj-rabtrALT" is discouraged (0 uses).
-New usage of "bj-rabtrALTALT" is discouraged (0 uses).
 New usage of "bj-rabtrAUTO" is discouraged (0 uses).
 New usage of "bj-sbceqgALT" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
@@ -17328,6 +17330,7 @@ New usage of "pmod2iN" is discouraged (0 uses).
 New usage of "pmodN" is discouraged (0 uses).
 New usage of "pmodl42N" is discouraged (1 uses).
 New usage of "pn0sr" is discouraged (4 uses).
+New usage of "pncan3OLD" is discouraged (0 uses).
 New usage of "pnfexOLD" is discouraged (0 uses).
 New usage of "pnonsingN" is discouraged (3 uses).
 New usage of "pointpsubN" is discouraged (0 uses).
@@ -18244,7 +18247,9 @@ New usage of "znnenlemOLD" is discouraged (0 uses).
 New usage of "zrdivrng" is discouraged (1 uses).
 New usage of "zrhcofipsgnOLD" is discouraged (1 uses).
 New usage of "zrhcopsgndifOLD" is discouraged (0 uses).
-Proof modification of "0cnALT" is discouraged (49 steps).
+Proof modification of "0cnALT" is discouraged (82 steps).
+Proof modification of "0cnALT2" is discouraged (49 steps).
+Proof modification of "0cnALT3" is discouraged (3 steps).
 Proof modification of "0csh0OLD" is discouraged (195 steps).
 Proof modification of "0heALT" is discouraged (25 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
@@ -18660,7 +18665,6 @@ Proof modification of "bj-peirce" is discouraged (25 steps).
 Proof modification of "bj-peircecurry" is discouraged (58 steps).
 Proof modification of "bj-rababwv" is discouraged (34 steps).
 Proof modification of "bj-rabtrALT" is discouraged (36 steps).
-Proof modification of "bj-rabtrALTALT" is discouraged (33 steps).
 Proof modification of "bj-rabtrAUTO" is discouraged (33 steps).
 Proof modification of "bj-ralcom4" is discouraged (63 steps).
 Proof modification of "bj-ralvw" is discouraged (34 steps).
@@ -19673,6 +19677,7 @@ Proof modification of "pm2.21ddALT" is discouraged (10 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
 Proof modification of "pm3.2an3OLD" is discouraged (19 steps).
+Proof modification of "pncan3OLD" is discouraged (49 steps).
 Proof modification of "pnfexOLD" is discouraged (4 steps).
 Proof modification of "prel12OLD" is discouraged (191 steps).
 Proof modification of "prel12gOLD" is discouraged (329 steps).
