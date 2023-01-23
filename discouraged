@@ -51,6 +51,7 @@
 "0ncn" is used by "axaddf".
 "0ncn" is used by "axmulf".
 "0ncn" is used by "bj-inftyexpidisj".
+"0ncn" is used by "bj-inftyexpitaudisj".
 "0ngrp" is used by "vsfval".
 "0ngrp" is used by "zrdivrng".
 "0nnq" is used by "addassnq".
@@ -4351,6 +4352,7 @@
 "df-bj-inftyexpi" is used by "bj-inftyexpidisj".
 "df-bj-inftyexpi" is used by "bj-inftyexpiinv".
 "df-bj-inftyexpi" is used by "bj-minftyccb".
+"df-bj-inftyexpitau" is used by "bj-inftyexpitaudisj".
 "df-bj-pr1" is used by "bj-pr1eq".
 "df-bj-pr1" is used by "bj-pr1ex".
 "df-bj-pr1" is used by "bj-pr1un".
@@ -4419,6 +4421,7 @@
 "df-c" is used by "axcnre".
 "df-c" is used by "axmulf".
 "df-c" is used by "axresscn".
+"df-c" is used by "bj-inftyexpitaudisj".
 "df-c" is used by "dfcnqs".
 "df-c" is used by "mulcnsr".
 "df-c" is used by "opelcn".
@@ -4643,7 +4646,6 @@
 "df-nr" is used by "addclsr".
 "df-nr" is used by "addcomsr".
 "df-nr" is used by "addsrpr".
-"df-nr" is used by "axcnex".
 "df-nr" is used by "distrsr".
 "df-nr" is used by "ltasr".
 "df-nr" is used by "ltsosr".
@@ -4655,6 +4657,7 @@
 "df-nr" is used by "mulcomsr".
 "df-nr" is used by "mulgt0sr".
 "df-nr" is used by "mulsrpr".
+"df-nr" is used by "nrex1".
 "df-nr" is used by "recexsrlem".
 "df-nr" is used by "wuncn".
 "df-nv" is used by "isnvlem".
@@ -5845,10 +5848,10 @@
 "enreceq" is used by "recexsrlem".
 "enrer" is used by "0nsr".
 "enrer" is used by "addsrmo".
-"enrer" is used by "axcnex".
 "enrer" is used by "enreceq".
 "enrer" is used by "ltsrpr".
 "enrer" is used by "mulsrmo".
+"enrer" is used by "nrex1".
 "enrer" is used by "prsrlem1".
 "enrer" is used by "wuncn".
 "enrex" is used by "0r".
@@ -10125,8 +10128,8 @@
 "normval" is used by "normge0".
 "normval" is used by "normgt0".
 "normval" is used by "normsqi".
-"npex" is used by "axcnex".
 "npex" is used by "enrex".
+"npex" is used by "nrex1".
 "nqercl" is used by "addclnq".
 "nqercl" is used by "adderpq".
 "nqercl" is used by "lterpq".
@@ -10165,6 +10168,8 @@
 "nqex" is used by "genpv".
 "nqex" is used by "npex".
 "nqpr" is used by "1pr".
+"nrex1" is used by "axcnex".
+"nrex1" is used by "bj-inftyexpitaudisj".
 "nsmallnq" is used by "ltbtwnnq".
 "nsmallnq" is used by "nqpr".
 "nsmallnq" is used by "reclem2pr".
@@ -13275,7 +13280,7 @@ New usage of "0lnfn" is discouraged (9 uses).
 New usage of "0lno" is discouraged (3 uses).
 New usage of "0lnop" is discouraged (6 uses).
 New usage of "0lt1sr" is discouraged (2 uses).
-New usage of "0ncn" is discouraged (3 uses).
+New usage of "0ncn" is discouraged (4 uses).
 New usage of "0ngrp" is discouraged (2 uses).
 New usage of "0nnq" is discouraged (22 uses).
 New usage of "0npi" is discouraged (9 uses).
@@ -14819,8 +14824,11 @@ New usage of "df-bdop" is discouraged (2 uses).
 New usage of "df-bj-1upl" is discouraged (6 uses).
 New usage of "df-bj-2upl" is discouraged (6 uses).
 New usage of "df-bj-ccinfty" is discouraged (3 uses).
+New usage of "df-bj-fractemp" is discouraged (0 uses).
 New usage of "df-bj-infty" is discouraged (0 uses).
 New usage of "df-bj-inftyexpi" is discouraged (5 uses).
+New usage of "df-bj-inftyexpitau" is discouraged (1 uses).
+New usage of "df-bj-onehalf" is discouraged (0 uses).
 New usage of "df-bj-pr1" is discouraged (4 uses).
 New usage of "df-bj-pr2" is discouraged (4 uses).
 New usage of "df-bj-proj" is discouraged (4 uses).
@@ -14832,7 +14840,7 @@ New usage of "df-bnj17" is discouraged (27 uses).
 New usage of "df-bnj18" is discouraged (2 uses).
 New usage of "df-bnj19" is discouraged (5 uses).
 New usage of "df-bra" is discouraged (3 uses).
-New usage of "df-c" is discouraged (11 uses).
+New usage of "df-c" is discouraged (12 uses).
 New usage of "df-cbn" is discouraged (1 uses).
 New usage of "df-ch" is discouraged (1 uses).
 New usage of "df-ch0" is discouraged (8 uses).
@@ -16914,6 +16922,7 @@ New usage of "nqerid" is discouraged (8 uses).
 New usage of "nqerrel" is discouraged (4 uses).
 New usage of "nqex" is discouraged (4 uses).
 New usage of "nqpr" is discouraged (1 uses).
+New usage of "nrex1" is discouraged (2 uses).
 New usage of "nsmallnq" is discouraged (3 uses).
 New usage of "nsnlpligALT" is discouraged (0 uses).
 New usage of "numclwlk2lem2f1oOLD" is discouraged (1 uses).
