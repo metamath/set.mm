@@ -1010,6 +1010,14 @@ given excluded middle but we just have one direction ( ~ xorbin ).
 Consider intuitionizing ` ph <-> -. ps ` as ` ph \/_ ps `
 (example: ~ rpnegap ).</LI>
 
+<LI>The expression ` ( _I `` A ) ` evaluates to ` A ` if ` A ` is
+a set (by ~ fvi ) and the empty set if ` A ` is a proper class (by
+~ fvprc ).  However, combining these two facts and thus using ` _I `
+to protect against proper classes does not seem to be possible
+without excluded middle (set.mm examples: sumeq2ii and strfvi ).
+Usually you will end up adding a ` A e. _V ` condition in such
+cases.</LI>
+
 <LI>
 If you get stuck, ask! (for example in a GitHub issue or on the mailing list).
 We have a number of contributors who have experience in constructive
@@ -8430,6 +8438,13 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>str0</TD>
   <TD>~ strn0</TD>
+</TR>
+
+<TR>
+  <TD>strfvi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses excluded middle to combine the
+  proper class and set cases.</TD>
 </TR>
 
 <TR>
