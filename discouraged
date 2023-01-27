@@ -2977,7 +2977,6 @@
 "ccats1swrdeqOLD" is used by "ccats1swrdeqrexOLD".
 "ccats1swrdeqrexOLD" is used by "reuccats1lemOLD".
 "ccatws1lenOLD" is used by "ccatw2s1lenOLD".
-"ccatws1lenOLD" is used by "ccatws1lenrevOLD".
 "ccatws1lenOLD" is used by "ccatws1n0OLD".
 "ccatws1lenOLD" is used by "wrdlenccats1lenm1OLD".
 "ccshOLD" is used by "0csh0OLD".
@@ -14317,8 +14316,7 @@ New usage of "ccats1swrdeqOLD" is discouraged (2 uses).
 New usage of "ccats1swrdeqbiOLD" is discouraged (0 uses).
 New usage of "ccats1swrdeqrexOLD" is discouraged (1 uses).
 New usage of "ccatw2s1lenOLD" is discouraged (0 uses).
-New usage of "ccatws1lenOLD" is discouraged (4 uses).
-New usage of "ccatws1lenrevOLD" is discouraged (0 uses).
+New usage of "ccatws1lenOLD" is discouraged (3 uses).
 New usage of "ccatws1n0OLD" is discouraged (0 uses).
 New usage of "ccshOLD" is discouraged (3 uses).
 New usage of "cdj1i" is discouraged (0 uses).
@@ -18745,7 +18743,6 @@ Proof modification of "ccats1swrdeqbiOLD" is discouraged (132 steps).
 Proof modification of "ccats1swrdeqrexOLD" is discouraged (161 steps).
 Proof modification of "ccatw2s1lenOLD" is discouraged (105 steps).
 Proof modification of "ccatws1lenOLD" is discouraged (57 steps).
-Proof modification of "ccatws1lenrevOLD" is discouraged (81 steps).
 Proof modification of "ccatws1n0OLD" is discouraged (69 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
 Proof modification of "cesareOLD" is discouraged (23 steps).
