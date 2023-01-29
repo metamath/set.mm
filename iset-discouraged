@@ -94,6 +94,9 @@
 "axresscn" is used by "peano5nnnn".
 "axresscn" is used by "recriota".
 "axresscn" is used by "rereceu".
+"basendx" is used by "1strstrg".
+"basendx" is used by "2strbasg".
+"basendx" is used by "2strstrg".
 "bj-axemptylem" is used by "bj-axempty".
 "bj-axemptylem" is used by "bj-axempty2".
 "df-div" is used by "divfnzn".
@@ -382,7 +385,7 @@ New usage of "axpre-mulgt0" is discouraged (0 uses).
 New usage of "axprecex" is discouraged (2 uses).
 New usage of "axresscn" is discouraged (4 uses).
 New usage of "axrnegex" is discouraged (0 uses).
-New usage of "basendx" is discouraged (0 uses).
+New usage of "basendx" is discouraged (3 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
