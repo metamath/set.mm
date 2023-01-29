@@ -5,7 +5,6 @@
 "0bdop" is used by "adjeq0".
 "0bdop" is used by "nmbdoplb".
 "0blo" is used by "nmblolbi".
-"0cnALT3" is used by "resubeulem1".
 "0cnfn" is used by "nmcfnex".
 "0cnfn" is used by "nmcfnlb".
 "0cnfn" is used by "riesz1".
@@ -13262,7 +13261,7 @@ New usage of "0bdop" is discouraged (2 uses).
 New usage of "0blo" is discouraged (1 uses).
 New usage of "0cnALT" is discouraged (0 uses).
 New usage of "0cnALT2" is discouraged (0 uses).
-New usage of "0cnALT3" is discouraged (1 uses).
+New usage of "0cnALT3" is discouraged (0 uses).
 New usage of "0cnfn" is discouraged (4 uses).
 New usage of "0cnop" is discouraged (1 uses).
 New usage of "0csh0OLD" is discouraged (0 uses).
@@ -19126,7 +19125,7 @@ Proof modification of "eumoOLD" is discouraged (18 steps).
 Proof modification of "eunexOLD" is discouraged (53 steps).
 Proof modification of "euorvOLD" is discouraged (7 steps).
 Proof modification of "eupthresOLD" is discouraged (142 steps).
-Proof modification of "ex-decpmul" is discouraged (261 steps).
+Proof modification of "ex-decpmul" is discouraged (339 steps).
 Proof modification of "ex-natded5.13" is discouraged (67 steps).
 Proof modification of "ex-natded5.13-2" is discouraged (21 steps).
 Proof modification of "ex-natded5.2" is discouraged (18 steps).
