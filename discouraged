@@ -13276,6 +13276,7 @@ New usage of "0lnop" is discouraged (6 uses).
 New usage of "0lt1sr" is discouraged (2 uses).
 New usage of "0ncn" is discouraged (3 uses).
 New usage of "0ngrp" is discouraged (2 uses).
+New usage of "0nnnOLD" is discouraged (0 uses).
 New usage of "0nnq" is discouraged (22 uses).
 New usage of "0npi" is discouraged (9 uses).
 New usage of "0npr" is discouraged (8 uses).
@@ -15451,7 +15452,7 @@ New usage of "equs5aALT" is discouraged (0 uses).
 New usage of "equs5eALT" is discouraged (0 uses).
 New usage of "equsalhwOLD" is discouraged (0 uses).
 New usage of "equsb3ALT" is discouraged (0 uses).
-New usage of "equsb3lemOLD" is discouraged (0 uses).
+New usage of "equsb3vOLD" is discouraged (0 uses).
 New usage of "equsexALT" is discouraged (0 uses).
 New usage of "equvelvOLD" is discouraged (0 uses).
 New usage of "equvinvOLD" is discouraged (0 uses).
@@ -16846,6 +16847,7 @@ New usage of "nncniOLD" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnmulclOLD" is discouraged (0 uses).
+New usage of "nnne0ALT" is discouraged (0 uses).
 New usage of "nnsscnOLD" is discouraged (0 uses).
 New usage of "nnsszOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
@@ -18254,6 +18256,7 @@ Proof modification of "0cnALT2" is discouraged (49 steps).
 Proof modification of "0cnALT3" is discouraged (3 steps).
 Proof modification of "0csh0OLD" is discouraged (195 steps).
 Proof modification of "0heALT" is discouraged (25 steps).
+Proof modification of "0nnnOLD" is discouraged (11 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "0reOLD" is discouraged (47 steps).
 Proof modification of "10reOLD" is discouraged (5 steps).
@@ -19102,7 +19105,7 @@ Proof modification of "equs5aALT" is discouraged (25 steps).
 Proof modification of "equs5eALT" is discouraged (39 steps).
 Proof modification of "equsalhwOLD" is discouraged (39 steps).
 Proof modification of "equsb3ALT" is discouraged (44 steps).
-Proof modification of "equsb3lemOLD" is discouraged (16 steps).
+Proof modification of "equsb3vOLD" is discouraged (16 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
 Proof modification of "equvelvOLD" is discouraged (37 steps).
 Proof modification of "equvinvOLD" is discouraged (47 steps).
@@ -19605,6 +19608,7 @@ Proof modification of "nncniOLD" is discouraged (5 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnmulclOLD" is discouraged (239 steps).
+Proof modification of "nnne0ALT" is discouraged (19 steps).
 Proof modification of "nnsscnOLD" is discouraged (6 steps).
 Proof modification of "nnsszOLD" is discouraged (18 steps).
 Proof modification of "normlem7tALT" is discouraged (177 steps).
