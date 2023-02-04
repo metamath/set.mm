@@ -52,6 +52,7 @@
 "0ncn" is used by "bj-inftyexpidisj".
 "0ngrp" is used by "vsfval".
 "0ngrp" is used by "zrdivrng".
+"0nnnALT" is used by "nnne0ALT".
 "0nnq" is used by "addassnq".
 "0nnq" is used by "adderpq".
 "0nnq" is used by "distrnq".
@@ -13276,7 +13277,7 @@ New usage of "0lnop" is discouraged (6 uses).
 New usage of "0lt1sr" is discouraged (2 uses).
 New usage of "0ncn" is discouraged (3 uses).
 New usage of "0ngrp" is discouraged (2 uses).
-New usage of "0nnnOLD" is discouraged (0 uses).
+New usage of "0nnnALT" is discouraged (1 uses).
 New usage of "0nnq" is discouraged (22 uses).
 New usage of "0npi" is discouraged (9 uses).
 New usage of "0npr" is discouraged (8 uses).
@@ -18256,7 +18257,7 @@ Proof modification of "0cnALT2" is discouraged (49 steps).
 Proof modification of "0cnALT3" is discouraged (3 steps).
 Proof modification of "0csh0OLD" is discouraged (195 steps).
 Proof modification of "0heALT" is discouraged (25 steps).
-Proof modification of "0nnnOLD" is discouraged (11 steps).
+Proof modification of "0nnnALT" is discouraged (11 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "0reOLD" is discouraged (47 steps).
 Proof modification of "10reOLD" is discouraged (5 steps).
