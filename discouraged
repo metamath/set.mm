@@ -1326,21 +1326,21 @@
 "ax-hvmulid" is used by "mayete3i".
 "ax-hvmulid" is used by "strlem1".
 "ax-inf" is used by "zfinf".
-"ax-luk1" is used by "wl-ax3".
-"ax-luk1" is used by "wl-imim1i".
-"ax-luk1" is used by "wl-imim2".
-"ax-luk1" is used by "wl-imim2i".
-"ax-luk1" is used by "wl-pm2.27".
-"ax-luk2" is used by "wl-ax3".
-"ax-luk2" is used by "wl-id".
-"ax-luk2" is used by "wl-pm2.18d".
-"ax-luk2" is used by "wl-pm2.27".
-"ax-luk3" is used by "wl-ax1".
-"ax-luk3" is used by "wl-ax3".
-"ax-luk3" is used by "wl-con4i".
-"ax-luk3" is used by "wl-id".
-"ax-luk3" is used by "wl-pm2.21".
-"ax-luk3" is used by "wl-pm2.24i".
+"ax-luk1" is used by "wl-luk-ax3".
+"ax-luk1" is used by "wl-luk-imim1i".
+"ax-luk1" is used by "wl-luk-imim2".
+"ax-luk1" is used by "wl-luk-imim2i".
+"ax-luk1" is used by "wl-luk-pm2.27".
+"ax-luk2" is used by "wl-luk-ax3".
+"ax-luk2" is used by "wl-luk-id".
+"ax-luk2" is used by "wl-luk-pm2.18d".
+"ax-luk2" is used by "wl-luk-pm2.27".
+"ax-luk3" is used by "wl-luk-ax1".
+"ax-luk3" is used by "wl-luk-ax3".
+"ax-luk3" is used by "wl-luk-con4i".
+"ax-luk3" is used by "wl-luk-id".
+"ax-luk3" is used by "wl-luk-pm2.21".
+"ax-luk3" is used by "wl-luk-pm2.24i".
 "ax-mulass" is used by "mulass".
 "ax-mulcl" is used by "mulcl".
 "ax-mulcom" is used by "mulcom".
@@ -13116,25 +13116,6 @@
 "w-bnj19" is used by "bnj978".
 "watfvalN" is used by "watvalN".
 "watvalN" is used by "iswatN".
-"wl-a1d" is used by "wl-ax2".
-"wl-a1i" is used by "wl-impchain-a1-1".
-"wl-a1i" is used by "wl-mpi".
-"wl-ax1" is used by "wl-a1d".
-"wl-ax1" is used by "wl-pm2.04".
-"wl-ax1" is used by "wl-pm2.27".
-"wl-ax2" is used by "wl-pm2.04".
-"wl-ax3" is used by "wl-ax1".
-"wl-com12" is used by "wl-imim2".
-"wl-com12" is used by "wl-pm2.21".
-"wl-con1i" is used by "wl-ja".
-"wl-con1i" is used by "wl-notnotr".
-"wl-con4i" is used by "wl-a1i".
-"wl-id" is used by "wl-notnotr".
-"wl-imim2" is used by "wl-ax2".
-"wl-imim2i" is used by "wl-impchain-mp-1".
-"wl-imim2i" is used by "wl-impchain-mp-2".
-"wl-imim2i" is used by "wl-ja".
-"wl-imim2i" is used by "wl-syl6".
 "wl-impchain-a1-1" is used by "wl-impchain-a1-2".
 "wl-impchain-a1-2" is used by "wl-impchain-a1-3".
 "wl-impchain-com-1.1" is used by "wl-impchain-com-1.2".
@@ -13153,38 +13134,57 @@
 "wl-impchain-mp-1" is used by "wl-impchain-com-1.3".
 "wl-impchain-mp-1" is used by "wl-impchain-mp-2".
 "wl-impchain-mp-2" is used by "wl-impchain-com-1.4".
-"wl-ja" is used by "wl-ax2".
-"wl-mpi" is used by "wl-imim2i".
+"wl-luk-a1d" is used by "wl-luk-ax2".
+"wl-luk-a1i" is used by "wl-impchain-a1-1".
+"wl-luk-a1i" is used by "wl-luk-mpi".
+"wl-luk-ax1" is used by "wl-luk-a1d".
+"wl-luk-ax1" is used by "wl-luk-pm2.04".
+"wl-luk-ax1" is used by "wl-luk-pm2.27".
+"wl-luk-ax2" is used by "wl-luk-pm2.04".
+"wl-luk-ax3" is used by "wl-luk-ax1".
+"wl-luk-com12" is used by "wl-luk-imim2".
+"wl-luk-com12" is used by "wl-luk-pm2.21".
+"wl-luk-con1i" is used by "wl-luk-ja".
+"wl-luk-con1i" is used by "wl-luk-notnotr".
+"wl-luk-con4i" is used by "wl-luk-a1i".
+"wl-luk-id" is used by "wl-luk-notnotr".
+"wl-luk-imim2" is used by "wl-luk-ax2".
+"wl-luk-imim2i" is used by "wl-impchain-mp-1".
+"wl-luk-imim2i" is used by "wl-impchain-mp-2".
+"wl-luk-imim2i" is used by "wl-luk-ja".
+"wl-luk-imim2i" is used by "wl-luk-syl6".
+"wl-luk-ja" is used by "wl-luk-ax2".
+"wl-luk-mpi" is used by "wl-luk-imim2i".
+"wl-luk-pm2.04" is used by "wl-impchain-com-1.2".
+"wl-luk-pm2.04" is used by "wl-impchain-com-1.3".
+"wl-luk-pm2.04" is used by "wl-impchain-com-1.4".
+"wl-luk-pm2.18d" is used by "wl-luk-con1i".
+"wl-luk-pm2.18d" is used by "wl-luk-con4i".
+"wl-luk-pm2.18d" is used by "wl-luk-ja".
+"wl-luk-pm2.18d" is used by "wl-luk-mpi".
+"wl-luk-pm2.21" is used by "wl-luk-ax2".
+"wl-luk-pm2.21" is used by "wl-luk-con1i".
+"wl-luk-pm2.24i" is used by "wl-luk-a1i".
+"wl-luk-pm2.27" is used by "wl-luk-com12".
+"wl-luk-syl" is used by "wl-luk-a1d".
+"wl-luk-syl" is used by "wl-luk-ax1".
+"wl-luk-syl" is used by "wl-luk-id".
+"wl-luk-syl" is used by "wl-luk-pm2.18d".
+"wl-luk-syl" is used by "wl-luk-pm2.27".
+"wl-luk-syl" is used by "wl-luk-syl5".
+"wl-luk-syl" is used by "wl-luk-syl6".
+"wl-luk-syl5" is used by "wl-luk-ax3".
+"wl-luk-syl5" is used by "wl-luk-com12".
+"wl-luk-syl5" is used by "wl-luk-con1i".
+"wl-luk-syl5" is used by "wl-luk-con4i".
+"wl-luk-syl5" is used by "wl-luk-ja".
+"wl-luk-syl5" is used by "wl-luk-mpi".
+"wl-luk-syl5" is used by "wl-luk-pm2.04".
+"wl-luk-syl6" is used by "wl-luk-ax3".
+"wl-luk-syl6" is used by "wl-luk-pm2.27".
 "wl-mps" is used by "wl-syls1".
-"wl-pm2.04" is used by "wl-impchain-com-1.2".
-"wl-pm2.04" is used by "wl-impchain-com-1.3".
-"wl-pm2.04" is used by "wl-impchain-com-1.4".
-"wl-pm2.18d" is used by "wl-con1i".
-"wl-pm2.18d" is used by "wl-con4i".
-"wl-pm2.18d" is used by "wl-ja".
-"wl-pm2.18d" is used by "wl-mpi".
-"wl-pm2.21" is used by "wl-ax2".
-"wl-pm2.21" is used by "wl-con1i".
-"wl-pm2.24i" is used by "wl-a1i".
-"wl-pm2.27" is used by "wl-com12".
 "wl-sbcom2d-lem1" is used by "wl-sbcom2d".
 "wl-sbcom2d-lem2" is used by "wl-sbcom2d".
-"wl-syl" is used by "wl-a1d".
-"wl-syl" is used by "wl-ax1".
-"wl-syl" is used by "wl-id".
-"wl-syl" is used by "wl-pm2.18d".
-"wl-syl" is used by "wl-pm2.27".
-"wl-syl" is used by "wl-syl5".
-"wl-syl" is used by "wl-syl6".
-"wl-syl5" is used by "wl-ax3".
-"wl-syl5" is used by "wl-com12".
-"wl-syl5" is used by "wl-con1i".
-"wl-syl5" is used by "wl-con4i".
-"wl-syl5" is used by "wl-ja".
-"wl-syl5" is used by "wl-mpi".
-"wl-syl5" is used by "wl-pm2.04".
-"wl-syl6" is used by "wl-ax3".
-"wl-syl6" is used by "wl-pm2.27".
 "wlknwwlksnbijOLD" is used by "wlksnwwlknvbijOLD".
 "wlknwwlksnfunOLD" is used by "wlknwwlksninjOLD".
 "wlknwwlksnfunOLD" is used by "wlknwwlksnsurOLD".
@@ -18129,18 +18129,7 @@ New usage of "w-bnj19" is discouraged (8 uses).
 New usage of "watfvalN" is discouraged (1 uses).
 New usage of "watvalN" is discouraged (1 uses).
 New usage of "wfrlem4OLD" is discouraged (0 uses).
-New usage of "wl-a1d" is discouraged (1 uses).
-New usage of "wl-a1i" is discouraged (2 uses).
-New usage of "wl-ax1" is discouraged (3 uses).
-New usage of "wl-ax2" is discouraged (1 uses).
-New usage of "wl-ax3" is discouraged (1 uses).
-New usage of "wl-com12" is discouraged (2 uses).
-New usage of "wl-con1i" is discouraged (2 uses).
-New usage of "wl-con4i" is discouraged (1 uses).
 New usage of "wl-embant" is discouraged (0 uses).
-New usage of "wl-id" is discouraged (1 uses).
-New usage of "wl-imim2" is discouraged (1 uses).
-New usage of "wl-imim2i" is discouraged (4 uses).
 New usage of "wl-impchain-a1-1" is discouraged (1 uses).
 New usage of "wl-impchain-a1-2" is discouraged (1 uses).
 New usage of "wl-impchain-a1-3" is discouraged (0 uses).
@@ -18154,15 +18143,29 @@ New usage of "wl-impchain-com-3.2.1" is discouraged (0 uses).
 New usage of "wl-impchain-mp-0" is discouraged (2 uses).
 New usage of "wl-impchain-mp-1" is discouraged (2 uses).
 New usage of "wl-impchain-mp-2" is discouraged (1 uses).
-New usage of "wl-ja" is discouraged (1 uses).
-New usage of "wl-mpi" is discouraged (1 uses).
+New usage of "wl-luk-a1d" is discouraged (1 uses).
+New usage of "wl-luk-a1i" is discouraged (2 uses).
+New usage of "wl-luk-ax1" is discouraged (3 uses).
+New usage of "wl-luk-ax2" is discouraged (1 uses).
+New usage of "wl-luk-ax3" is discouraged (1 uses).
+New usage of "wl-luk-com12" is discouraged (2 uses).
+New usage of "wl-luk-con1i" is discouraged (2 uses).
+New usage of "wl-luk-con4i" is discouraged (1 uses).
+New usage of "wl-luk-id" is discouraged (1 uses).
+New usage of "wl-luk-imim2" is discouraged (1 uses).
+New usage of "wl-luk-imim2i" is discouraged (4 uses).
+New usage of "wl-luk-ja" is discouraged (1 uses).
+New usage of "wl-luk-mpi" is discouraged (1 uses).
+New usage of "wl-luk-notnotr" is discouraged (0 uses).
+New usage of "wl-luk-pm2.04" is discouraged (3 uses).
+New usage of "wl-luk-pm2.18d" is discouraged (4 uses).
+New usage of "wl-luk-pm2.21" is discouraged (2 uses).
+New usage of "wl-luk-pm2.24i" is discouraged (1 uses).
+New usage of "wl-luk-pm2.27" is discouraged (1 uses).
+New usage of "wl-luk-syl" is discouraged (7 uses).
+New usage of "wl-luk-syl5" is discouraged (7 uses).
+New usage of "wl-luk-syl6" is discouraged (2 uses).
 New usage of "wl-mps" is discouraged (1 uses).
-New usage of "wl-notnotr" is discouraged (0 uses).
-New usage of "wl-pm2.04" is discouraged (3 uses).
-New usage of "wl-pm2.18d" is discouraged (4 uses).
-New usage of "wl-pm2.21" is discouraged (2 uses).
-New usage of "wl-pm2.24i" is discouraged (1 uses).
-New usage of "wl-pm2.27" is discouraged (1 uses).
 New usage of "wl-sbal1" is discouraged (0 uses).
 New usage of "wl-sbal2" is discouraged (0 uses).
 New usage of "wl-sbcom2d-lem1" is discouraged (1 uses).
@@ -18170,9 +18173,6 @@ New usage of "wl-sbcom2d-lem2" is discouraged (1 uses).
 New usage of "wl-section-boot" is discouraged (0 uses).
 New usage of "wl-section-impchain" is discouraged (0 uses).
 New usage of "wl-section-prop" is discouraged (0 uses).
-New usage of "wl-syl" is discouraged (7 uses).
-New usage of "wl-syl5" is discouraged (7 uses).
-New usage of "wl-syl6" is discouraged (2 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
 New usage of "wlknwwlksnbij2OLD" is discouraged (0 uses).
@@ -20099,20 +20099,9 @@ Proof modification of "vtocl2gOLD" is discouraged (28 steps).
 Proof modification of "vtoclALT" is discouraged (11 steps).
 Proof modification of "vtxdusgr0edgnelALT" is discouraged (94 steps).
 Proof modification of "wfrlem4OLD" is discouraged (543 steps).
-Proof modification of "wl-a1d" is discouraged (10 steps).
-Proof modification of "wl-a1i" is discouraged (8 steps).
-Proof modification of "wl-ax1" is discouraged (16 steps).
-Proof modification of "wl-ax2" is discouraged (24 steps).
-Proof modification of "wl-ax3" is discouraged (27 steps).
 Proof modification of "wl-cases2-dnf" is discouraged (85 steps).
-Proof modification of "wl-com12" is discouraged (11 steps).
-Proof modification of "wl-con1i" is discouraged (14 steps).
-Proof modification of "wl-con4i" is discouraged (14 steps).
 Proof modification of "wl-embant" is discouraged (12 steps).
 Proof modification of "wl-equsal" is discouraged (32 steps).
-Proof modification of "wl-id" is discouraged (12 steps).
-Proof modification of "wl-imim2" is discouraged (14 steps).
-Proof modification of "wl-imim2i" is discouraged (15 steps).
 Proof modification of "wl-impchain-a1-1" is discouraged (4 steps).
 Proof modification of "wl-impchain-a1-2" is discouraged (10 steps).
 Proof modification of "wl-impchain-a1-3" is discouraged (12 steps).
@@ -20126,23 +20115,34 @@ Proof modification of "wl-impchain-com-3.2.1" is discouraged (12 steps).
 Proof modification of "wl-impchain-mp-0" is discouraged (5 steps).
 Proof modification of "wl-impchain-mp-1" is discouraged (13 steps).
 Proof modification of "wl-impchain-mp-2" is discouraged (14 steps).
-Proof modification of "wl-ja" is discouraged (20 steps).
-Proof modification of "wl-mpi" is discouraged (14 steps).
+Proof modification of "wl-luk-a1d" is discouraged (10 steps).
+Proof modification of "wl-luk-a1i" is discouraged (8 steps).
+Proof modification of "wl-luk-ax1" is discouraged (16 steps).
+Proof modification of "wl-luk-ax2" is discouraged (24 steps).
+Proof modification of "wl-luk-ax3" is discouraged (27 steps).
+Proof modification of "wl-luk-com12" is discouraged (11 steps).
+Proof modification of "wl-luk-con1i" is discouraged (14 steps).
+Proof modification of "wl-luk-con4i" is discouraged (14 steps).
+Proof modification of "wl-luk-id" is discouraged (12 steps).
+Proof modification of "wl-luk-imim2" is discouraged (14 steps).
+Proof modification of "wl-luk-imim2i" is discouraged (15 steps).
+Proof modification of "wl-luk-ja" is discouraged (20 steps).
+Proof modification of "wl-luk-mpi" is discouraged (14 steps).
+Proof modification of "wl-luk-notnotr" is discouraged (6 steps).
+Proof modification of "wl-luk-pm2.04" is discouraged (20 steps).
+Proof modification of "wl-luk-pm2.18d" is discouraged (10 steps).
+Proof modification of "wl-luk-pm2.21" is discouraged (8 steps).
+Proof modification of "wl-luk-pm2.24i" is discouraged (10 steps).
+Proof modification of "wl-luk-pm2.27" is discouraged (27 steps).
+Proof modification of "wl-luk-syl" is discouraged (13 steps).
+Proof modification of "wl-luk-syl5" is discouraged (14 steps).
+Proof modification of "wl-luk-syl6" is discouraged (14 steps).
 Proof modification of "wl-mps" is discouraged (14 steps).
-Proof modification of "wl-notnotr" is discouraged (6 steps).
-Proof modification of "wl-pm2.04" is discouraged (20 steps).
-Proof modification of "wl-pm2.18d" is discouraged (10 steps).
-Proof modification of "wl-pm2.21" is discouraged (8 steps).
-Proof modification of "wl-pm2.24i" is discouraged (10 steps).
-Proof modification of "wl-pm2.27" is discouraged (27 steps).
 Proof modification of "wl-sbal1" is discouraged (36 steps).
 Proof modification of "wl-sbal2" is discouraged (36 steps).
 Proof modification of "wl-section-boot" is discouraged (1 steps).
 Proof modification of "wl-section-impchain" is discouraged (1 steps).
 Proof modification of "wl-section-prop" is discouraged (1 steps).
-Proof modification of "wl-syl" is discouraged (13 steps).
-Proof modification of "wl-syl5" is discouraged (14 steps).
-Proof modification of "wl-syl6" is discouraged (14 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
 Proof modification of "wlknwwlksnbij2OLD" is discouraged (77 steps).
