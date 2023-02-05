@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 5-Feb-23 srngfn    srngstr
 30-Jan-23 elsb4lem  elsb4v
 30-Jan-23 elsb3lem  elsb3v
 30-Jan-23 equsb3lem equsb3v     equsb3lem was a duplicate of equsb3v
