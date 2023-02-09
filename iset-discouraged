@@ -101,6 +101,7 @@
 "basendx" is used by "2strstrg".
 "basendx" is used by "lmodstrd".
 "basendx" is used by "rngstrg".
+"basendx" is used by "topgrpstrd".
 "bj-axemptylem" is used by "bj-axempty".
 "bj-axemptylem" is used by "bj-axempty2".
 "df-div" is used by "divfnzn".
@@ -389,7 +390,7 @@ New usage of "axpre-mulgt0" is discouraged (0 uses).
 New usage of "axprecex" is discouraged (2 uses).
 New usage of "axresscn" is discouraged (4 uses).
 New usage of "axrnegex" is discouraged (0 uses).
-New usage of "basendx" is discouraged (7 uses).
+New usage of "basendx" is discouraged (8 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
