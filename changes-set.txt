@@ -27,6 +27,16 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+10-Feb-23 rrxmetfi  [same]      moved from GS's mathbox to main set.mm
+10-Feb-23 rrxdsfi   [same]      moved from GS's mathbox to main set.mm
+10-Feb-23 rrxbasefi [same]      moved from GS's mathbox to main set.mm
+10-Feb-23 addgtge0d [same]      moved from AI's mathbox to main set.mm
+10-Feb-23 addeq0    [same]      moved from TA's mathbox to main set.mm
+10-Feb-23 assraddsubd [same]    moved from DAW's mathbox to main set.mm
+10-Feb-23 xpexd     [same]      moved from GS's mathbox to main set.mm
+10-Feb-23 fvmptd3   [same]      moved from GS's mathbox to main set.mm
+10-Feb-23 eqeqan1d  [same]      moved from PM's mathbox to main set.mm
+10-Feb-23 orcomdd   [same]      moved from GM's mathbox to main set.mm
  5-Feb-23 srngfn    srngstr
 30-Jan-23 elsb4lem  elsb4v
 30-Jan-23 elsb3lem  elsb3v
