@@ -94,6 +94,13 @@
 "axresscn" is used by "peano5nnnn".
 "axresscn" is used by "recriota".
 "axresscn" is used by "rereceu".
+"basendx" is used by "1strstrg".
+"basendx" is used by "2strbasg".
+"basendx" is used by "2stropg".
+"basendx" is used by "2strstr1g".
+"basendx" is used by "2strstrg".
+"basendx" is used by "lmodstrd".
+"basendx" is used by "rngstrg".
 "bj-axemptylem" is used by "bj-axempty".
 "bj-axemptylem" is used by "bj-axempty2".
 "df-div" is used by "divfnzn".
@@ -309,6 +316,9 @@
 "sbieh" is used by "sbie".
 "spimh" is used by "spim".
 "spimth" is used by "equveli".
+"strnfvn" is used by "baseval".
+"strnfvn" is used by "ndxarg".
+"strnfvn" is used by "strsl0".
 New usage of "0cnALT" is discouraged (0 uses).
 New usage of "0reALT" is discouraged (0 uses).
 New usage of "19.21h" is discouraged (3 uses).
@@ -379,6 +389,8 @@ New usage of "axpre-mulgt0" is discouraged (0 uses).
 New usage of "axprecex" is discouraged (2 uses).
 New usage of "axresscn" is discouraged (4 uses).
 New usage of "axrnegex" is discouraged (0 uses).
+New usage of "basendx" is discouraged (7 uses).
+New usage of "baseval" is discouraged (0 uses).
 New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
 New usage of "bdsbcALT" is discouraged (0 uses).
@@ -470,6 +482,7 @@ New usage of "spimth" is discouraged (1 uses).
 New usage of "stoic2a" is discouraged (0 uses).
 New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
+New usage of "strnfvn" is discouraged (3 uses).
 New usage of "tfri1dALT" is discouraged (0 uses).
 New usage of "trintssmOLD" is discouraged (0 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).

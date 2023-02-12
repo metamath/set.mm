@@ -27,6 +27,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 5-Feb-23 srngfn    srngstr
+30-Jan-23 elsb4lem  elsb4v
+30-Jan-23 elsb3lem  elsb3v
+30-Jan-23 equsb3lem equsb3v     equsb3lem was a duplicate of equsb3v
 19-Jan-23 bj-stdpc4v stdpc4v    moved from BJ's mathbox to main set.mm
 19-Jan-23 bj-sbftv  sbftv       moved from BJ's mathbox to main set.mm
 19-Jan-23 bj-sbfv   sbfv        moved from BJ's mathbox to main set.mm

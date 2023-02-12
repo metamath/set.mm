@@ -1010,6 +1010,14 @@ given excluded middle but we just have one direction ( ~ xorbin ).
 Consider intuitionizing ` ph <-> -. ps ` as ` ph \/_ ps `
 (example: ~ rpnegap ).</LI>
 
+<LI>The expression ` ( _I `` A ) ` evaluates to ` A ` if ` A ` is
+a set (by ~ fvi ) and the empty set if ` A ` is a proper class (by
+~ fvprc ).  However, combining these two facts and thus using ` _I `
+to protect against proper classes does not seem to be possible
+without excluded middle (set.mm examples: sumeq2ii and strfvi ).
+Usually you will end up adding a ` A e. _V ` condition in such
+cases.</LI>
+
 <LI>
 If you get stuck, ask! (for example in a GitHub issue or on the mailing list).
 We have a number of contributors who have experience in constructive
@@ -1924,6 +1932,11 @@ A either - there are singletons at every rank.</P>
 </TR>
 
 <TR>
+  <TD>opnz</TD>
+  <TD>~ opm , ~ opnzi</TD>
+</TR>
+
+<TR>
 <TD>df-so</TD>
 <TD>~ df-iso </TD>
 <TD>Although we define ` Or ` to describe a weakly linear order (such
@@ -2079,6 +2092,15 @@ there is less need for this convenience theorem.</TD>
 <TR>
   <TD>rnxp</TD>
   <TD>~ rnxpm</TD>
+</TR>
+
+<TR>
+  <TD>dmsnopss</TD>
+  <TD>~ dmsnopg</TD>
+  <TD>The domain is empty in the ` -. B e. _V ` case which follows
+  readily from ~ opprc2 and ~ dmsn0 . But we presumably cannot combine
+  the ` B e. _V ` and ` -. B e. _V ` cases (set.mm uses excluded middle
+  to do so).</TD>
 </TR>
 
 <TR>
@@ -2324,8 +2346,25 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
+  <TD>fvexi , fvexd</TD>
+  <TD><I>see fvex</I></TD>
+</TR>
+
+<TR>
   <TD>fvif</TD>
   <TD>~ fvifdc</TD>
+</TR>
+
+<TR>
+  <TD>fvrn0</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses case elimination on whether ` ( F `` X ) `
+  is the empty set.</TD>
+</TR>
+
+<TR>
+  <TD>fvssunirn</TD>
+  <TD>~ fvssunirng , ~ relfvssunirn</TD>
 </TR>
 
 <TR>
@@ -2419,11 +2458,32 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
-  <TD>fnsnsplit</TD>
+  <TD ROWSPAN="2">fnsnsplit</TD>
+  <TD>~ fnsnsplitss</TD>
+  <TD>Subset rather than equality, for a function on any set.</TD>
+</TR>
+
+<TR>
+  <TD>~ fnsnsplitdc</TD>
+  <TD>For a function on a set with decidable equality.</TD>
+</TR>
+
+<TR>
+  <TD>fsnunf2</TD>
   <TD><I>none</I></TD>
-  <TD>Although it should be possible to prove subset rather than
-  equality (using difsnss instead of difsnid ), this theorem is
-  lightly used in set.mm.</TD>
+  <TD>Apparently would need decidable equality on ` S ` or some
+  other condition.</TD>
+</TR>
+
+<TR>
+  <TD ROWSPAN="2">funresdfunsn</TD>
+  <TD>~ funresdfunsnss</TD>
+  <TD>Subset rather than equality, for a function on any set.</TD>
+</TR>
+
+<TR>
+  <TD>~ funresdfunsndc</TD>
+  <TD>For a function on a set with decidable equality.</TD>
 </TR>
 
 <TR>
@@ -4089,6 +4149,11 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
+  <TD>df-wun and all weak universe theorems</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
 <TD>addcompi</TD>
 <TD>~ addcompig </TD>
 </TR>
@@ -5405,13 +5470,25 @@ max0sub , ifle</TD>
 </TR>
 
 <TR>
-  <TD>2resupmax</TD>
-  <TD><I>none</I></TD>
-  <TD>Proved from real trichotomy.
+  <TD ROWSPAN="2">2resupmax</TD>
+  <TD>~ 2zsupmax</TD>
+  <TD>for integers</TD>
+</TR>
+
+<TR>
+  <TD><I>in general</I></TD>
+  <TD>The set.mm proof uses real trichotomy in an apparently
+  essential way.
   We express maximum in iset.mm using ` sup ( { A , B } , RR , < ) `
   rather than ` if ( A <_ B , B , A ) ` . The former has the
   expected maximum properties such as ~ maxcl , ~ maxle1 , ~ maxle2 ,
   ~ maxleast , and ~ maxleb .</TD>
+</TR>
+
+<TR>
+  <TD>ssfzunsnext</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable using ~ 2zsupmax and similar theorems.</TD>
 </TR>
 
 <TR>
@@ -8259,6 +8336,372 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>phisum</TD>
   <TD><I>none</I></TD>
   <TD>May be provable once summation is better developed</TD>
+</TR>
+
+<TR>
+  <TD>isstruct2</TD>
+  <TD>~ isstruct2im , ~ isstruct2r</TD>
+  <TD>The difference is the addition of the ` F e. V ` condition
+  for the reverse direction.</TD>
+</TR>
+
+<TR>
+  <TD>isstruct</TD>
+  <TD>~ isstructim , ~ isstructr</TD>
+  <TD>The difference is the addition of the ` F e. V ` condition
+  for the reverse direction.</TD>
+</TR>
+
+<TR>
+  <TD>slotfn</TD>
+  <TD>~ slotfni</TD>
+</TR>
+
+<TR>
+  <TD>strfvnd</TD>
+  <TD>~ strnfvnd</TD>
+</TR>
+
+<TR>
+  <TD>strfvn</TD>
+  <TD>~ strnfvn</TD>
+</TR>
+
+<TR>
+  <TD>strfvss</TD>
+  <TD>~ strfvssn</TD>
+</TR>
+
+<TR>
+  <TD>setsval</TD>
+  <TD>~ setsvala</TD>
+</TR>
+
+<TR>
+  <TD>setsidvald</TD>
+  <TD>~ strsetsid</TD>
+</TR>
+
+<TR>
+  <TD>fsets</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently would need decidable equality on ` A ` or some
+  other condition.</TD>
+</TR>
+
+<TR>
+  <TD>setsdm</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on undif1</TD>
+</TR>
+
+<TR>
+  <TD>setsstruct2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on setsdm</TD>
+</TR>
+
+<TR>
+  <TD>setsexstruct2 , setsstruct</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on setsstruct2</TD>
+</TR>
+
+<TR>
+  <TD>setsres</TD>
+  <TD>~ setsresg</TD>
+</TR>
+
+<TR>
+  <TD>setsabs</TD>
+  <TD>~ setsabsd</TD>
+</TR>
+
+<TR>
+  <TD>strfvd</TD>
+  <TD>~ strslfvd</TD>
+</TR>
+
+<TR>
+  <TD>strfv2d</TD>
+  <TD>~ strslfv2d</TD>
+</TR>
+
+<TR>
+  <TD>strfv2</TD>
+  <TD>~ strslfv2</TD>
+</TR>
+
+<TR>
+  <TD>strfv</TD>
+  <TD>~ strslfv</TD>
+</TR>
+
+<TR>
+  <TD>strfv3</TD>
+  <TD>~ strslfv3</TD>
+</TR>
+
+<TR>
+  <TD>strssd</TD>
+  <TD>~ strslssd</TD>
+</TR>
+
+<TR>
+  <TD>strss</TD>
+  <TD>~ strslss</TD>
+</TR>
+
+<TR>
+  <TD>str0</TD>
+  <TD>~ strsl0</TD>
+</TR>
+
+<TR>
+  <TD>strfvi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses excluded middle to combine the
+  proper class and set cases.</TD>
+</TR>
+
+<TR>
+  <TD>setsid</TD>
+  <TD>~ setsslid</TD>
+</TR>
+
+<TR>
+  <TD>setsnid</TD>
+  <TD>~ setsslnid</TD>
+</TR>
+
+<TR>
+  <TD>sbcie2s</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently would require conditions that ` A ` and ` B `
+  are sets.</TD>
+</TR>
+
+<TR>
+  <TD>sbcie3s</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently would require conditions that ` A ` , ` B ` ,
+  and ` C ` are sets.</TD>
+</TR>
+
+<TR>
+  <TD>elbasfv , elbasov , strov2rcl</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>basprssdmsets</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on setsdm</TD>
+</TR>
+
+<TR>
+  <TD>ressval</TD>
+  <TD>~ ressid2 , ~ ressval2</TD>
+  <TD>For the ` B C_ A ` and ` -. B C_ A ` cases, respectively.</TD>
+</TR>
+
+<TR>
+  <TD>ressbas</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently needs to have conditions added, for example
+  that ` W ` is a set plus one of ` B C_ A ` or ` -. B C_ A ` .</TD>
+</TR>
+
+<TR>
+  <TD>ressbas2 , ressbasss</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ressbas .</TD>
+</TR>
+
+<TR>
+  <TD>resslem , ress0</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>ressinbas</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently needs to have conditions added, for example
+  that ` W ` is a set plus one of ` B C_ A ` or ` -. B C_ A ` .</TD>
+</TR>
+
+<TR>
+  <TD>ressval3d</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on setsidvald and sspss .</TD>
+</TR>
+
+<TR>
+  <TD>ressress</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ressinbas and excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>ressabs</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ressress but at first glance this would
+  appear to be feasible given the ` B C_ A ` condition.</TD>
+</TR>
+
+<TR>
+  <TD>strle1</TD>
+  <TD>~ strle1g</TD>
+</TR>
+
+<TR>
+  <TD>strle2</TD>
+  <TD>~ strle2g</TD>
+</TR>
+
+<TR>
+  <TD>strle3</TD>
+  <TD>~ strle3g</TD>
+</TR>
+
+<TR>
+  <TD>1strstr</TD>
+  <TD>~ 1strstrg</TD>
+</TR>
+
+<TR>
+  <TD>2strstr</TD>
+  <TD>~ 2strstrg</TD>
+</TR>
+
+<TR>
+  <TD>2strbas</TD>
+  <TD>~ 2strbasg</TD>
+</TR>
+
+<TR>
+  <TD>2strop</TD>
+  <TD>~ 2stropg</TD>
+</TR>
+
+<TR>
+  <TD>2strstr1</TD>
+  <TD>~ 2strstr1g</TD>
+</TR>
+
+<TR>
+  <TD>2strbas1</TD>
+  <TD>~ 2strbas1g</TD>
+</TR>
+
+<TR>
+  <TD>2strop1</TD>
+  <TD>~ 2strop1g</TD>
+</TR>
+
+<TR>
+  <TD>grpstr</TD>
+  <TD>~ grpstrg</TD>
+</TR>
+
+<TR>
+  <TD>grpbase</TD>
+  <TD>~ grpbaseg</TD>
+</TR>
+
+<TR>
+  <TD>grpplusg</TD>
+  <TD>~ grpplusgg</TD>
+</TR>
+
+<TR>
+  <TD>ressplusg</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resslem</TD>
+</TR>
+
+<TR>
+  <TD>grpbasex , grpplusgx</TD>
+  <TD>~ grpbaseg , ~ grpplusgg</TD>
+  <TD>Marked as discouraged even in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>rngstr</TD>
+  <TD>~ rngstrg</TD>
+</TR>
+
+<TR>
+  <TD>rngbase</TD>
+  <TD>~ rngbaseg</TD>
+</TR>
+
+<TR>
+  <TD>rngplusg</TD>
+  <TD>~ rngplusgg</TD>
+</TR>
+
+<TR>
+  <TD>rngmulr</TD>
+  <TD>~ rngmulrg</TD>
+</TR>
+
+<TR>
+  <TD>ressmulr , ressstarv</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resslem</TD>
+</TR>
+
+<TR>
+  <TD>srngstr</TD>
+  <TD>~ srngstrd</TD>
+</TR>
+
+<TR>
+  <TD>srngbase</TD>
+  <TD>~ srngbased</TD>
+</TR>
+
+<TR>
+  <TD>srngplusg</TD>
+  <TD>~ srngplusgd</TD>
+</TR>
+
+<TR>
+  <TD>srngmulr</TD>
+  <TD>~ srngmulrd</TD>
+</TR>
+
+<TR>
+  <TD>srnginvl</TD>
+  <TD>~ srnginvld</TD>
+</TR>
+
+<TR>
+  <TD>lmodstr</TD>
+  <TD>~ lmodstrd</TD>
+</TR>
+
+<TR>
+  <TD>lmodbase</TD>
+  <TD>~ lmodbased</TD>
+</TR>
+
+<TR>
+  <TD>lmodplusg</TD>
+  <TD>~ lmodplusgd</TD>
+</TR>
+
+<TR>
+  <TD>lmodsca</TD>
+  <TD>~ lmodscad</TD>
+</TR>
+
+<TR>
+  <TD>lmodvsca</TD>
+  <TD>~ lmodvscad</TD>
 </TR>
 
 <TR>
