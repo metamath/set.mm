@@ -27,6 +27,11 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+16-Feb-23 subdivcomb2 [same]    moved from SF's mathbox to main set.mm
+16-Feb-23 negelrpd  [same]      moved from GS's mathbox to main set.mm
+16-Feb-23 1xr       [same]      moved from GS's mathbox to main set.mm
+16-Feb-23 rexlimdva2 [same]     moved from GS's mathbox to main set.mm
+16-Feb-23 mvrladdd  [same]      moved from DAW's mathbox to main set.mm
 10-Feb-23 rrxmetfi  [same]      moved from GS's mathbox to main set.mm
 10-Feb-23 rrxdsfi   [same]      moved from GS's mathbox to main set.mm
 10-Feb-23 rrxbasefi [same]      moved from GS's mathbox to main set.mm
