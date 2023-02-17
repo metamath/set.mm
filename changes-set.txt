@@ -27,6 +27,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+16-Feb-23 bj-ldiv   ldiv        moved from BJ's mathbox to main set.mm
+16-Feb-23 bj-rdiv   rdiv        moved from BJ's mathbox to main set.mm
+16-Feb-23 bj-mdiv   mdiv        moved from BJ's mathbox to main set.mm
+16-Feb-23 bj-lineq  lineq       moved from BJ's mathbox to main set.mm
 16-Feb-23 subdivcomb2 [same]    moved from SF's mathbox to main set.mm
 16-Feb-23 negelrpd  [same]      moved from GS's mathbox to main set.mm
 16-Feb-23 1xr       [same]      moved from GS's mathbox to main set.mm
