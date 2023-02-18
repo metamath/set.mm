@@ -15433,6 +15433,8 @@ New usage of "enrer" is discouraged (8 uses).
 New usage of "enrex" is discouraged (9 uses).
 New usage of "eqeq1dALT" is discouraged (0 uses).
 New usage of "eqeqan12dALT" is discouraged (0 uses).
+New usage of "eqeqan1dOLD" is discouraged (0 uses).
+New usage of "eqeqan1dOLDOLD" is discouraged (0 uses).
 New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqresr" is discouraged (4 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
@@ -17068,6 +17070,7 @@ New usage of "opsqrlem6" is discouraged (0 uses).
 New usage of "opthregOLD" is discouraged (0 uses).
 New usage of "orbi1r" is discouraged (0 uses).
 New usage of "orbi1rVD" is discouraged (0 uses).
+New usage of "orcomdd" is discouraged (0 uses).
 New usage of "ordelordALT" is discouraged (0 uses).
 New usage of "ordelordALTVD" is discouraged (0 uses).
 New usage of "ordpinq" is discouraged (6 uses).
@@ -19073,6 +19076,8 @@ Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
 Proof modification of "eqeq1dALT" is discouraged (62 steps).
 Proof modification of "eqeqan12dALT" is discouraged (23 steps).
+Proof modification of "eqeqan1dOLD" is discouraged (12 steps).
+Proof modification of "eqeqan1dOLDOLD" is discouraged (21 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqsbc3rVD" is discouraged (131 steps).
 Proof modification of "equcomi1" is discouraged (16 steps).
@@ -19643,6 +19648,7 @@ Proof modification of "opnmblALT" is discouraged (332 steps).
 Proof modification of "opthregOLD" is discouraged (112 steps).
 Proof modification of "orbi1r" is discouraged (9 steps).
 Proof modification of "orbi1rVD" is discouraged (101 steps).
+Proof modification of "orcomdd" is discouraged (13 steps).
 Proof modification of "ordelordALT" is discouraged (128 steps).
 Proof modification of "ordelordALTVD" is discouraged (202 steps).
 Proof modification of "orim12dALT" is discouraged (34 steps).
