@@ -952,7 +952,7 @@ being proved to "what you really meant is X" as appropriate.
 </LI>
 
 <LI>
-If a statement has multiple equivalences in set.mm (e.g. mo2 and mo3 , or
+If a statement has multiple equivalences in set.mm (e.g. mof and mo3 , or
 dffun2 and dffun3 ) and only some of them in iset.mm, sometimes a pretty
 similar proof will work (that is, which one to use in the original proof may
 have been a fairly arbitrary choice).
@@ -1324,13 +1324,32 @@ equivalent (in the absence of excluded middle).</TD>
 </TR>
 
 <TR>
+  <TD>df-mo</TD>
+  <TD>~ df-mo</TD>
+  <TD>The definitions are different although they currently
+  share the same name.</TD>
+</TR>
+
+<TR>
 <TD>exmo</TD>
 <TD>~ exmonim </TD>
 </TR>
 
 <TR>
-<TD>mo2</TD>
+<TD>mof</TD>
 <TD>~ mo2r , ~ mo3 </TD>
+</TR>
+
+<TR>
+  <TD>df-eu , dfeu , eu6</TD>
+  <TD>~ df-eu , ~ eu5</TD>
+  <TD>The same statements are present in both but the names are
+  different because the definitions are different.</TD>
+</TR>
+
+<TR>
+  <TD>nfabd2</TD>
+  <TD>~ nfabd</TD>
 </TR>
 
 <TR>
@@ -1501,6 +1520,23 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>csb0</TD>
+  <TD>~ csbconstg , ~ csbprc</TD>
+  <TD>The set.mm proof uses excluded middle to combine the
+  ` A e. _V ` and ` -. A e. _V ` cases.</TD>
+</TR>
+
+<TR>
+  <TD>sbcel12</TD>
+  <TD>~ sbcel12g</TD>
+</TR>
+
+<TR>
+  <TD>sbcne12</TD>
+  <TD>~ sbcne12g</TD>
+</TR>
+
+<TR>
   <TD>undif1</TD>
   <TD>~ undif1ss</TD>
 </TR>
@@ -1516,7 +1552,7 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
-  <TD ROWSPAN="5">undif</TD>
+  <TD ROWSPAN="6">undif</TD>
   <TD>~ undifss</TD>
   <TD>subset rather than equality, for any sets</TD>
 </TR>
@@ -1539,6 +1575,11 @@ is double negation elimination.</TD>
 <TR>
   <TD><I>for any sets</I></TD>
   <TD>implies excluded middle as shown at ~ undifexmid</TD>
+</TR>
+
+<TR>
+  <TD><I>forward direction only, for any sets</I></TD>
+  <TD>still implies excluded middle as shown at ~ exmidundifim</TD>
 </TR>
 
 <TR>
@@ -2384,6 +2425,11 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
+  <TD>dffn5</TD>
+  <TD>~ dffn5im</TD>
+</TR>
+
+<TR>
   <TD>fvmpti</TD>
   <TD>~ fvmptg</TD>
   <TD>The set.mm proof relies on case elimination on ` C e. _V `</TD>
@@ -3192,6 +3238,64 @@ middle in its proof.</TD>
   <TD><I>none</I></TD>
   <TD>Lightly used in set.mm. The set.mm proof relies on fnsnsplit
   and undif .</TD>
+</TR>
+
+<TR>
+  <TD>nfixp</TD>
+  <TD>~ nfixpxy , ~ nfixp1</TD>
+  <TD>set.mm (indirectly) uses excluded middle to combine
+  the cases where ` x ` and ` y ` are distinct and where
+  they are not.</TD>
+</TR>
+
+<TR>
+  <TD>ixpexg</TD>
+  <TD>~ ixpexgg</TD>
+</TR>
+
+<TR>
+  <TD>ixpiin</TD>
+  <TD>~ ixpiinm</TD>
+</TR>
+
+<TR>
+  <TD>ixpint</TD>
+  <TD>~ ixpintm</TD>
+</TR>
+
+<TR>
+  <TD>ixpn0</TD>
+  <TD>~ ixpm</TD>
+</TR>
+
+<TR>
+  <TD>undifixp</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on undif</TD>
+</TR>
+
+<TR>
+  <TD>resixpfo</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on membership in ` B ` being
+  decidable and would need to have nonempty changed to inhabited,
+  but might be adaptable with those conditions added. However,
+  this theorem is currently only used in the proof of Tychonoff's
+  Theorem, which we do not expect to be able to prove.</TD>
+</TR>
+
+<TR>
+  <TD>boxriin</TD>
+  <TD><I>none</I></TD>
+  <TD>Would seem to need a condition that ` I ` has decidable
+  equality.</TD>
+</TR>
+
+<TR>
+  <TD>boxcutc</TD>
+  <TD><I>none</I></TD>
+  <TD>Would seem to need a condition that ` A ` has decidable
+  equality.</TD>
 </TR>
 
 <TR>
@@ -8702,6 +8806,90 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>lmodvsca</TD>
   <TD>~ lmodvscad</TD>
+</TR>
+
+<TR>
+  <TD>ipsstr</TD>
+  <TD>~ ipsstrd</TD>
+</TR>
+
+<TR>
+  <TD>ipsbase</TD>
+  <TD>~ ipsbased</TD>
+</TR>
+
+<TR>
+  <TD>ipsaddg</TD>
+  <TD>~ ipsaddgd</TD>
+</TR>
+
+<TR>
+  <TD>ipsmulr</TD>
+  <TD>~ ipsmulrd</TD>
+</TR>
+
+<TR>
+  <TD>ipssca</TD>
+  <TD>~ ipsscad</TD>
+</TR>
+
+<TR>
+  <TD>ipsvsca</TD>
+  <TD>~ ipsvscad</TD>
+</TR>
+
+<TR>
+  <TD>ipsip</TD>
+  <TD>~ ipsipd</TD>
+</TR>
+
+<TR>
+  <TD>resssca , ressvsca , ressip</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resslem</TD>
+</TR>
+
+<TR>
+  <TD>phlstr , phlbase , phlplusg , phlsca , phlvsca , phlip</TD>
+  <TD><I>none</I></TD>
+  <TD>Intuitionizing these will be straightforward once we get
+  around to it, in a manner similar to ~ lmodstrd .  The proofs will
+  use theorems like ~ strle1g , ~ strleund , and ~ opelstrsl .</TD>
+</TR>
+
+<TR>
+  <TD>topgrpstr</TD>
+  <TD>~ topgrpstrd</TD>
+</TR>
+
+<TR>
+  <TD>topgrpbas</TD>
+  <TD>~ topgrpbasd</TD>
+</TR>
+
+<TR>
+  <TD>topgrpplusg</TD>
+  <TD>~ topgrpplusgd</TD>
+</TR>
+
+<TR>
+  <TD>topgrptset</TD>
+  <TD>~ topgrptsetd</TD>
+</TR>
+
+<TR>
+  <TD>resstset</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resslem</TD>
+</TR>
+
+<TR>
+  <TD>otpsstr , otpsbas , otpstset , otpsle</TD>
+  <TD><I>none</I></TD>
+  <TD>Unused in set.mm.  If we want to develop this more we
+  may need to figure out whether to define order in terms of
+  ` < ` or ` <_ ` as the relationship between those may be
+  different without excluded middle.</TD>
 </TR>
 
 <TR>
