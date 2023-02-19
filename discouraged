@@ -11610,7 +11610,6 @@
 "relrngo" is used by "rngoablo2".
 "relrngo" is used by "rngoi".
 "relrngo" is used by "rngosn3".
-"residOLD" is used by "elid".
 "ressval3dOLD" is used by "estrresOLD".
 "retbwax2" is used by "merco1lem2".
 "retbwax2" is used by "merco1lem3".
@@ -15467,6 +15466,7 @@ New usage of "eu6OLD" is discouraged (0 uses).
 New usage of "euanvOLD" is discouraged (0 uses).
 New usage of "eubiOLD" is discouraged (0 uses).
 New usage of "eubidOLD" is discouraged (0 uses).
+New usage of "eubidOLDOLD" is discouraged (0 uses).
 New usage of "eubidvOLD" is discouraged (1 uses).
 New usage of "eubidvOLDOLD" is discouraged (0 uses).
 New usage of "eucrct2eupth1OLD" is discouraged (1 uses).
@@ -15476,7 +15476,6 @@ New usage of "euexALTOLD" is discouraged (0 uses).
 New usage of "euexOLD" is discouraged (0 uses).
 New usage of "eufOLD" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
-New usage of "eumoOLD" is discouraged (0 uses).
 New usage of "eunexOLD" is discouraged (0 uses).
 New usage of "euorvOLD" is discouraged (0 uses).
 New usage of "eupthresOLD" is discouraged (1 uses).
@@ -17443,7 +17442,6 @@ New usage of "relrngo" is discouraged (6 uses).
 New usage of "renegclALT" is discouraged (0 uses).
 New usage of "renicax" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
-New usage of "residOLD" is discouraged (1 uses).
 New usage of "ressval3dOLD" is discouraged (1 uses).
 New usage of "retbwax1" is discouraged (0 uses).
 New usage of "retbwax2" is discouraged (3 uses).
@@ -19084,7 +19082,8 @@ Proof modification of "eu1OLD" is discouraged (86 steps).
 Proof modification of "eu6OLD" is discouraged (265 steps).
 Proof modification of "euanvOLD" is discouraged (7 steps).
 Proof modification of "eubiOLD" is discouraged (15 steps).
-Proof modification of "eubidOLD" is discouraged (49 steps).
+Proof modification of "eubidOLD" is discouraged (48 steps).
+Proof modification of "eubidOLDOLD" is discouraged (49 steps).
 Proof modification of "eubidvOLD" is discouraged (48 steps).
 Proof modification of "eubidvOLDOLD" is discouraged (9 steps).
 Proof modification of "eucrct2eupth1OLD" is discouraged (104 steps).
@@ -19094,7 +19093,6 @@ Proof modification of "euexALTOLD" is discouraged (32 steps).
 Proof modification of "euexOLD" is discouraged (44 steps).
 Proof modification of "eufOLD" is discouraged (62 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
-Proof modification of "eumoOLD" is discouraged (18 steps).
 Proof modification of "eunexOLD" is discouraged (53 steps).
 Proof modification of "euorvOLD" is discouraged (7 steps).
 Proof modification of "eupthresOLD" is discouraged (142 steps).
@@ -19707,7 +19705,6 @@ Proof modification of "renegcl" is discouraged (34 steps).
 Proof modification of "renegclALT" is discouraged (149 steps).
 Proof modification of "renicax" is discouraged (76 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
-Proof modification of "residOLD" is discouraged (17 steps).
 Proof modification of "ressval3dOLD" is discouraged (288 steps).
 Proof modification of "retbwax1" is discouraged (195 steps).
 Proof modification of "retbwax2" is discouraged (127 steps).
