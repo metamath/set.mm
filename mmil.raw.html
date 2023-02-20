@@ -2360,7 +2360,7 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
-<TD ROWSPAN="5">fvex</TD>
+<TD ROWSPAN="6">fvex</TD>
 <TD>~ funfvex </TD>
 <TD>when evaluating a function within its domain</TD>
 </TR>
@@ -2384,6 +2384,11 @@ and is evaluated at a set</TD>
 <TR>
 <TD>~ 1stexg , ~ 2ndexg </TD>
 <TD>for the functions ` 1st ` and ` 2nd `</TD>
+</TR>
+
+<TR>
+<TD>~ slotex</TD>
+<TD>for a slot of an extensible structure</TD>
 </TR>
 
 <TR>
@@ -2606,7 +2611,7 @@ The set.mm proof relies on reuxfrd .</TD>
 </TR>
 
 <TR>
-<TD ROWSPAN="4">ovex</TD>
+<TD ROWSPAN="5">ovex</TD>
 <TD>~ fnovex </TD>
 <TD>when the operation is a function evaluated within its domain.</TD>
 </TR>
@@ -2625,6 +2630,13 @@ The set.mm proof relies on reuxfrd .</TD>
 <TD>~ mpt2fvex </TD>
 <TD>When the operation is defined via maps-to, yields a set on
 any inputs, and is being evaluated at two sets.</TD>
+</TR>
+
+<TR>
+<TD>~ addcl , ~ expcl , etc</TD>
+<TD>If there is a closure theorem for a particular operation, that
+is often the way to intuitionize ovex (check for your particular
+operation, as these are just a few examples).</TD>
 </TR>
 
 <TR>
@@ -8458,7 +8470,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>slotfn</TD>
-  <TD>~ slotfni</TD>
+  <TD>~ slotslfn</TD>
 </TR>
 
 <TR>
@@ -8890,6 +8902,52 @@ intuitionistic and it is lightly used in set.mm</TD>
   may need to figure out whether to define order in terms of
   ` < ` or ` <_ ` as the relationship between those may be
   different without excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>0rest</TD>
+  <TD><I>none</I></TD>
+  <TD>Might need a ` A e. _V ` condition added, and this theorem seems
+  to be mostly be used in conjunction with excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>topnval</TD>
+  <TD>~ topnvalg</TD>
+</TR>
+
+<TR>
+  <TD>topnid</TD>
+  <TD>~ topnidg</TD>
+</TR>
+
+<TR>
+  <TD>topnpropd</TD>
+  <TD>~ topnpropgd</TD>
+</TR>
+
+<TR>
+  <TD>prdsbasex</TD>
+  <TD><I>none</I></TD>
+  <TD>Would need some conditions on whether ` R ` is a function,
+  on set existence, or the like. However, it is unused in
+  set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>imasvalstr , prdsvalstr , prdsvallem , prdsval , prdssca ,
+  prdsbas , prdsplusg , prdsmulr , prdsvsca , prdsip , prdsle ,
+  prdsless , prdsds , prdsdsfn , prdstset , prdshom , prdsco ,
+  prdsbas2 , prdsbasmpt , prdsbasfn , prdsbasprj , prdsplusgval ,
+  prdsplusgfval , prdsmulrval , prdsmulrfval , prdsleval , prdsdsval ,
+  prdsvscaval , prdsvscafval , prdsbas3 , prdsbasmpt2 , prdsbascl ,
+  prdsdsval2 , prdsdsval3 , pwsval , pwsbas , pwselbasb , pwselbas ,
+  pwsplusgval , pwsmulrval , pwsle , pwsleval , pwsvscafval , pwsvscaval ,
+  pwssca , pwsdiagel , pwssnf1o</TD>
+  <TD><I>none</I></TD>
+  <TD>At a minimum, these theorems would need new set existence
+  conditions and other routine intuitionizing.  At worst, they
+  would need a bigger revamp for things like how order works.</TD>
 </TR>
 
 <TR>
