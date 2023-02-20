@@ -952,7 +952,7 @@ being proved to "what you really meant is X" as appropriate.
 </LI>
 
 <LI>
-If a statement has multiple equivalences in set.mm (e.g. mo2 and mo3 , or
+If a statement has multiple equivalences in set.mm (e.g. mof and mo3 , or
 dffun2 and dffun3 ) and only some of them in iset.mm, sometimes a pretty
 similar proof will work (that is, which one to use in the original proof may
 have been a fairly arbitrary choice).
@@ -1324,13 +1324,32 @@ equivalent (in the absence of excluded middle).</TD>
 </TR>
 
 <TR>
+  <TD>df-mo</TD>
+  <TD>~ df-mo</TD>
+  <TD>The definitions are different although they currently
+  share the same name.</TD>
+</TR>
+
+<TR>
 <TD>exmo</TD>
 <TD>~ exmonim </TD>
 </TR>
 
 <TR>
-<TD>mo2</TD>
+<TD>mof</TD>
 <TD>~ mo2r , ~ mo3 </TD>
+</TR>
+
+<TR>
+  <TD>df-eu , dfeu , eu6</TD>
+  <TD>~ df-eu , ~ eu5</TD>
+  <TD>The same statements are present in both but the names are
+  different because the definitions are different.</TD>
+</TR>
+
+<TR>
+  <TD>nfabd2</TD>
+  <TD>~ nfabd</TD>
 </TR>
 
 <TR>
@@ -1501,6 +1520,23 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>csb0</TD>
+  <TD>~ csbconstg , ~ csbprc</TD>
+  <TD>The set.mm proof uses excluded middle to combine the
+  ` A e. _V ` and ` -. A e. _V ` cases.</TD>
+</TR>
+
+<TR>
+  <TD>sbcel12</TD>
+  <TD>~ sbcel12g</TD>
+</TR>
+
+<TR>
+  <TD>sbcne12</TD>
+  <TD>~ sbcne12g</TD>
+</TR>
+
+<TR>
   <TD>undif1</TD>
   <TD>~ undif1ss</TD>
 </TR>
@@ -1516,7 +1552,7 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
-  <TD ROWSPAN="5">undif</TD>
+  <TD ROWSPAN="6">undif</TD>
   <TD>~ undifss</TD>
   <TD>subset rather than equality, for any sets</TD>
 </TR>
@@ -1539,6 +1575,11 @@ is double negation elimination.</TD>
 <TR>
   <TD><I>for any sets</I></TD>
   <TD>implies excluded middle as shown at ~ undifexmid</TD>
+</TR>
+
+<TR>
+  <TD><I>forward direction only, for any sets</I></TD>
+  <TD>still implies excluded middle as shown at ~ exmidundifim</TD>
 </TR>
 
 <TR>
@@ -2319,7 +2360,7 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
-<TD ROWSPAN="5">fvex</TD>
+<TD ROWSPAN="6">fvex</TD>
 <TD>~ funfvex </TD>
 <TD>when evaluating a function within its domain</TD>
 </TR>
@@ -2343,6 +2384,11 @@ and is evaluated at a set</TD>
 <TR>
 <TD>~ 1stexg , ~ 2ndexg </TD>
 <TD>for the functions ` 1st ` and ` 2nd `</TD>
+</TR>
+
+<TR>
+<TD>~ slotex</TD>
+<TD>for a slot of an extensible structure</TD>
 </TR>
 
 <TR>
@@ -2381,6 +2427,11 @@ and is evaluated at a set</TD>
 <TR>
 <TD>elfvex</TD>
 <TD>~ relelfvdm </TD>
+</TR>
+
+<TR>
+  <TD>dffn5</TD>
+  <TD>~ dffn5im</TD>
 </TR>
 
 <TR>
@@ -2560,7 +2611,7 @@ The set.mm proof relies on reuxfrd .</TD>
 </TR>
 
 <TR>
-<TD ROWSPAN="4">ovex</TD>
+<TD ROWSPAN="5">ovex</TD>
 <TD>~ fnovex </TD>
 <TD>when the operation is a function evaluated within its domain.</TD>
 </TR>
@@ -2579,6 +2630,13 @@ The set.mm proof relies on reuxfrd .</TD>
 <TD>~ mpt2fvex </TD>
 <TD>When the operation is defined via maps-to, yields a set on
 any inputs, and is being evaluated at two sets.</TD>
+</TR>
+
+<TR>
+<TD>~ addcl , ~ expcl , etc</TD>
+<TD>If there is a closure theorem for a particular operation, that
+is often the way to intuitionize ovex (check for your particular
+operation, as these are just a few examples).</TD>
 </TR>
 
 <TR>
@@ -3192,6 +3250,64 @@ middle in its proof.</TD>
   <TD><I>none</I></TD>
   <TD>Lightly used in set.mm. The set.mm proof relies on fnsnsplit
   and undif .</TD>
+</TR>
+
+<TR>
+  <TD>nfixp</TD>
+  <TD>~ nfixpxy , ~ nfixp1</TD>
+  <TD>set.mm (indirectly) uses excluded middle to combine
+  the cases where ` x ` and ` y ` are distinct and where
+  they are not.</TD>
+</TR>
+
+<TR>
+  <TD>ixpexg</TD>
+  <TD>~ ixpexgg</TD>
+</TR>
+
+<TR>
+  <TD>ixpiin</TD>
+  <TD>~ ixpiinm</TD>
+</TR>
+
+<TR>
+  <TD>ixpint</TD>
+  <TD>~ ixpintm</TD>
+</TR>
+
+<TR>
+  <TD>ixpn0</TD>
+  <TD>~ ixpm</TD>
+</TR>
+
+<TR>
+  <TD>undifixp</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on undif</TD>
+</TR>
+
+<TR>
+  <TD>resixpfo</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on membership in ` B ` being
+  decidable and would need to have nonempty changed to inhabited,
+  but might be adaptable with those conditions added. However,
+  this theorem is currently only used in the proof of Tychonoff's
+  Theorem, which we do not expect to be able to prove.</TD>
+</TR>
+
+<TR>
+  <TD>boxriin</TD>
+  <TD><I>none</I></TD>
+  <TD>Would seem to need a condition that ` I ` has decidable
+  equality.</TD>
+</TR>
+
+<TR>
+  <TD>boxcutc</TD>
+  <TD><I>none</I></TD>
+  <TD>Would seem to need a condition that ` A ` has decidable
+  equality.</TD>
 </TR>
 
 <TR>
@@ -8354,7 +8470,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>slotfn</TD>
-  <TD>~ slotfni</TD>
+  <TD>~ slotslfn</TD>
 </TR>
 
 <TR>
@@ -8786,6 +8902,52 @@ intuitionistic and it is lightly used in set.mm</TD>
   may need to figure out whether to define order in terms of
   ` < ` or ` <_ ` as the relationship between those may be
   different without excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>0rest</TD>
+  <TD><I>none</I></TD>
+  <TD>Might need a ` A e. _V ` condition added, and this theorem seems
+  to be mostly be used in conjunction with excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>topnval</TD>
+  <TD>~ topnvalg</TD>
+</TR>
+
+<TR>
+  <TD>topnid</TD>
+  <TD>~ topnidg</TD>
+</TR>
+
+<TR>
+  <TD>topnpropd</TD>
+  <TD>~ topnpropgd</TD>
+</TR>
+
+<TR>
+  <TD>prdsbasex</TD>
+  <TD><I>none</I></TD>
+  <TD>Would need some conditions on whether ` R ` is a function,
+  on set existence, or the like. However, it is unused in
+  set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>imasvalstr , prdsvalstr , prdsvallem , prdsval , prdssca ,
+  prdsbas , prdsplusg , prdsmulr , prdsvsca , prdsip , prdsle ,
+  prdsless , prdsds , prdsdsfn , prdstset , prdshom , prdsco ,
+  prdsbas2 , prdsbasmpt , prdsbasfn , prdsbasprj , prdsplusgval ,
+  prdsplusgfval , prdsmulrval , prdsmulrfval , prdsleval , prdsdsval ,
+  prdsvscaval , prdsvscafval , prdsbas3 , prdsbasmpt2 , prdsbascl ,
+  prdsdsval2 , prdsdsval3 , pwsval , pwsbas , pwselbasb , pwselbas ,
+  pwsplusgval , pwsmulrval , pwsle , pwsleval , pwsvscafval , pwsvscaval ,
+  pwssca , pwsdiagel , pwssnf1o</TD>
+  <TD><I>none</I></TD>
+  <TD>At a minimum, these theorems would need new set existence
+  conditions and other routine intuitionizing.  At worst, they
+  would need a bigger revamp for things like how order works.</TD>
 </TR>
 
 <TR>
