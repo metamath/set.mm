@@ -2360,7 +2360,7 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
-<TD ROWSPAN="5">fvex</TD>
+<TD ROWSPAN="6">fvex</TD>
 <TD>~ funfvex </TD>
 <TD>when evaluating a function within its domain</TD>
 </TR>
@@ -2384,6 +2384,11 @@ and is evaluated at a set</TD>
 <TR>
 <TD>~ 1stexg , ~ 2ndexg </TD>
 <TD>for the functions ` 1st ` and ` 2nd `</TD>
+</TR>
+
+<TR>
+<TD>~ slotex</TD>
+<TD>for a slot of an extensible structure</TD>
 </TR>
 
 <TR>
@@ -2606,7 +2611,7 @@ The set.mm proof relies on reuxfrd .</TD>
 </TR>
 
 <TR>
-<TD ROWSPAN="4">ovex</TD>
+<TD ROWSPAN="5">ovex</TD>
 <TD>~ fnovex </TD>
 <TD>when the operation is a function evaluated within its domain.</TD>
 </TR>
@@ -2625,6 +2630,13 @@ The set.mm proof relies on reuxfrd .</TD>
 <TD>~ mpt2fvex </TD>
 <TD>When the operation is defined via maps-to, yields a set on
 any inputs, and is being evaluated at two sets.</TD>
+</TR>
+
+<TR>
+<TD>~ addcl , ~ expcl , etc</TD>
+<TD>If there is a closure theorem for a particular operation, that
+is often the way to intuitionize ovex (check for your particular
+operation, as these are just a few examples).</TD>
 </TR>
 
 <TR>
@@ -8244,6 +8256,16 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>ruc</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently not provable without countable choice, assuming
+  the following result holds up:
+  Andrej Bauer (12-May-2022), <a
+  href="https://researchseminars.org/talk/ToposInstituteColloquium/57/"
+  >"The countable reals"</a>, Topos Institute Colloquium</TD>
+</TR>
+
+<TR>
   <TD>dvdsaddre2b</TD>
   <TD><I>none</I></TD>
   <TD>Something along these lines (perhaps with real changed to
@@ -8458,7 +8480,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>slotfn</TD>
-  <TD>~ slotfni</TD>
+  <TD>~ slotslfn</TD>
 </TR>
 
 <TR>
@@ -8893,6 +8915,52 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>0rest</TD>
+  <TD><I>none</I></TD>
+  <TD>Might need a ` A e. _V ` condition added, and this theorem seems
+  to be mostly be used in conjunction with excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>topnval</TD>
+  <TD>~ topnvalg</TD>
+</TR>
+
+<TR>
+  <TD>topnid</TD>
+  <TD>~ topnidg</TD>
+</TR>
+
+<TR>
+  <TD>topnpropd</TD>
+  <TD>~ topnpropgd</TD>
+</TR>
+
+<TR>
+  <TD>prdsbasex</TD>
+  <TD><I>none</I></TD>
+  <TD>Would need some conditions on whether ` R ` is a function,
+  on set existence, or the like. However, it is unused in
+  set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>imasvalstr , prdsvalstr , prdsvallem , prdsval , prdssca ,
+  prdsbas , prdsplusg , prdsmulr , prdsvsca , prdsip , prdsle ,
+  prdsless , prdsds , prdsdsfn , prdstset , prdshom , prdsco ,
+  prdsbas2 , prdsbasmpt , prdsbasfn , prdsbasprj , prdsplusgval ,
+  prdsplusgfval , prdsmulrval , prdsmulrfval , prdsleval , prdsdsval ,
+  prdsvscaval , prdsvscafval , prdsbas3 , prdsbasmpt2 , prdsbascl ,
+  prdsdsval2 , prdsdsval3 , pwsval , pwsbas , pwselbasb , pwselbas ,
+  pwsplusgval , pwsmulrval , pwsle , pwsleval , pwsvscafval , pwsvscaval ,
+  pwssca , pwsdiagel , pwssnf1o</TD>
+  <TD><I>none</I></TD>
+  <TD>At a minimum, these theorems would need new set existence
+  conditions and other routine intuitionizing.  At worst, they
+  would need a bigger revamp for things like how order works.</TD>
+</TR>
+
+<TR>
   <TD>istop2g</TD>
   <TD>~ istopfin</TD>
 </TR>
@@ -9009,6 +9077,12 @@ https://plato.stanford.edu/archives/sum2015/entries/set-theory-constructive/</A>
 </LI>
 
 <LI><A NAME="Moschovakis"></A> [Moschovakis] Moschovakis, Joan, &quot;Intuitionistic Logic&quot;, <I>The Stanford Encyclopedia of Philosophy (Spring 2015 Edition)</I>, Edward N. Zalta (ed.), <A HREF="https://plato.stanford.edu/archives/spr2015/entries/logic-intuitionistic/">https://plato.stanford.edu/archives/spr2015/entries/logic-intuitionistic/</A>.
+</LI>
+
+<LI>
+<A NAME="Munkres"></A> [Munkres] Munkres, James Raymond,
+<I>Topology:  a first course,</I> Prentice-Hall, Englewood Cliffs, New
+Jersey (1975) [QA611.M82].
 </LI>
 
 <LI><A NAME="Eisenberg"></A> [Eisenberg] Eisenberg, Murray, <I>Axiomatic Theory of

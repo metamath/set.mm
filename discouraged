@@ -7890,7 +7890,6 @@
 "idi" is used by "imo72b2lem0".
 "idi" is used by "limsupvaluz2".
 "idi" is used by "madjusmdetlem2".
-"idi" is used by "ovncvr2".
 "idi" is used by "rngcifuestrc".
 "idi" is used by "sge0f1o".
 "idi" is used by "smfinfmpt".
@@ -15563,6 +15562,10 @@ New usage of "funressnvmoOLD" is discouraged (0 uses).
 New usage of "funsneqopOLD" is discouraged (0 uses).
 New usage of "funsneqopsnOLD" is discouraged (1 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
+New usage of "fvsnOLD" is discouraged (0 uses).
+New usage of "fvsngOLD" is discouraged (0 uses).
+New usage of "fvsnun1OLD" is discouraged (0 uses).
+New usage of "fvsnun2OLD" is discouraged (0 uses).
 New usage of "gen11" is discouraged (19 uses).
 New usage of "gen11nv" is discouraged (5 uses).
 New usage of "gen12" is discouraged (7 uses).
@@ -16082,7 +16085,7 @@ New usage of "idALT" is discouraged (1 uses).
 New usage of "idcnop" is discouraged (2 uses).
 New usage of "iden2" is discouraged (0 uses).
 New usage of "idhmop" is discouraged (6 uses).
-New usage of "idi" is discouraged (15 uses).
+New usage of "idi" is discouraged (14 uses).
 New usage of "idiALT" is discouraged (12 uses).
 New usage of "idiVD" is discouraged (0 uses).
 New usage of "idleop" is discouraged (1 uses).
@@ -17544,6 +17547,7 @@ New usage of "rusbcALT" is discouraged (0 uses).
 New usage of "rusgrnumwwlksOLD" is discouraged (0 uses).
 New usage of "s1dmALT" is discouraged (0 uses).
 New usage of "s2dmALT" is discouraged (0 uses).
+New usage of "sacgrOLD" is discouraged (0 uses).
 New usage of "sb5ALT" is discouraged (0 uses).
 New usage of "sb5ALTVD" is discouraged (0 uses).
 New usage of "sb6OLD" is discouraged (0 uses).
@@ -19311,6 +19315,10 @@ Proof modification of "funsneqopOLD" is discouraged (25 steps).
 Proof modification of "funsneqopsnOLD" is discouraged (74 steps).
 Proof modification of "fvilbdRP" is discouraged (27 steps).
 Proof modification of "fvimacnvALT" is discouraged (102 steps).
+Proof modification of "fvsnOLD" is discouraged (28 steps).
+Proof modification of "fvsngOLD" is discouraged (86 steps).
+Proof modification of "fvsnun1OLD" is discouraged (124 steps).
+Proof modification of "fvsnun2OLD" is discouraged (112 steps).
 Proof modification of "gen11" is discouraged (27 steps).
 Proof modification of "gen11nv" is discouraged (14 steps).
 Proof modification of "gen12" is discouraged (16 steps).
@@ -19741,6 +19749,7 @@ Proof modification of "rusbcALT" is discouraged (77 steps).
 Proof modification of "rusgrnumwwlksOLD" is discouraged (951 steps).
 Proof modification of "s1dmALT" is discouraged (25 steps).
 Proof modification of "s2dmALT" is discouraged (38 steps).
+Proof modification of "sacgrOLD" is discouraged (990 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
 Proof modification of "sb6OLD" is discouraged (32 steps).
