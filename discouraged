@@ -15562,6 +15562,10 @@ New usage of "funressnvmoOLD" is discouraged (0 uses).
 New usage of "funsneqopOLD" is discouraged (0 uses).
 New usage of "funsneqopsnOLD" is discouraged (1 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
+New usage of "fvsnOLD" is discouraged (0 uses).
+New usage of "fvsngOLD" is discouraged (0 uses).
+New usage of "fvsnun1OLD" is discouraged (0 uses).
+New usage of "fvsnun2OLD" is discouraged (0 uses).
 New usage of "gen11" is discouraged (19 uses).
 New usage of "gen11nv" is discouraged (5 uses).
 New usage of "gen12" is discouraged (7 uses).
@@ -19311,6 +19315,10 @@ Proof modification of "funsneqopOLD" is discouraged (25 steps).
 Proof modification of "funsneqopsnOLD" is discouraged (74 steps).
 Proof modification of "fvilbdRP" is discouraged (27 steps).
 Proof modification of "fvimacnvALT" is discouraged (102 steps).
+Proof modification of "fvsnOLD" is discouraged (28 steps).
+Proof modification of "fvsngOLD" is discouraged (86 steps).
+Proof modification of "fvsnun1OLD" is discouraged (124 steps).
+Proof modification of "fvsnun2OLD" is discouraged (112 steps).
 Proof modification of "gen11" is discouraged (27 steps).
 Proof modification of "gen11nv" is discouraged (14 steps).
 Proof modification of "gen12" is discouraged (16 steps).
