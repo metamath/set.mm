@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Feb-23 moimd     moimdv      align with mobidv, eubidv 
 16-Feb-23 bj-ldiv   ldiv        moved from BJ's mathbox to main set.mm
 16-Feb-23 bj-rdiv   rdiv        moved from BJ's mathbox to main set.mm
 16-Feb-23 bj-mdiv   mdiv        moved from BJ's mathbox to main set.mm
