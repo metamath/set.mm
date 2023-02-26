@@ -10888,7 +10888,7 @@ latexdef "==2" as "\equiv_2";
 latexdef "==3" as "\equiv_3";
 latexdef "==4" as "\equiv_4";
 latexdef "==5" as "\equiv_5";
-latexdef "==OA" as "\equiv_{\mathrm{OA}}";
+latexdef "==OA" as "\equiv_\mathrm{OA}";
 
 /* End of typesetting definition section */
 $)
