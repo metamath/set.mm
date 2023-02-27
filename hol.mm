@@ -2075,16 +2075,16 @@ althtmldir "../holuni/";
 
 htmldef "wff" as '<FONT COLOR="#808080">wff </FONT>';
   althtmldef "wff" as '<FONT COLOR="#808080">wff </FONT>';
-  latexdef "wff" as "{\rm wff}";
+  latexdef "wff" as "\mathrm{wff}";
 htmldef "var" as '<FONT COLOR="#808080">var </FONT>';
   althtmldef "var" as '<FONT COLOR="#808080">var </FONT>';
-  latexdef "var" as "{\rm var}";
+  latexdef "var" as "\mathrm{var}";
 htmldef "type" as '<FONT COLOR="#808080">type </FONT>';
   althtmldef "type" as '<FONT COLOR="#808080">type </FONT>';
-  latexdef "type" as "{\rm type}";
+  latexdef "type" as "\mathrm{type}";
 htmldef "term" as '<FONT COLOR="#808080">term </FONT>';
   althtmldef "term" as '<FONT COLOR="#808080">term </FONT>';
-  latexdef "term" as "{\rm term}";
+  latexdef "term" as "\mathrm{term}";
 htmldef "|-" as
     "<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-' ALIGN=TOP> ";
   althtmldef "|-" as
