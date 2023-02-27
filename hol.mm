@@ -2245,5 +2245,3 @@ htmldef "@" as
 $)
 
 $( 456789012345 (79-character line to adjust text window width) 567890123456 $)
-
-
