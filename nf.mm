@@ -62681,7 +62681,7 @@ htmldef "A." as
 htmldef "setvar" as
     "<IMG SRC='_setvar.gif' WIDTH=20 HEIGHT=19 TITLE='setvar' ALIGN=TOP> ";
   althtmldef "setvar" as '<FONT COLOR="#808080">setvar </FONT>';
-  latexdef "setvar" as "{\rm setvar}";
+  latexdef "setvar" as "\mathrm{setvar}";
 htmldef "x" as "<IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALIGN=TOP>";
   althtmldef "x" as '<I><FONT COLOR="#FF0000">x</FONT></I>';
   latexdef "x" as "x";
