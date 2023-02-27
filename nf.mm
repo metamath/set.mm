@@ -62670,10 +62670,10 @@ htmldef "-/\" as
   latexdef "-/\" as "\barwedge";
 htmldef "hadd" as "hadd";
   althtmldef "hadd" as "hadd";
-  latexdef "hadd" as "\mbox{hadd}";
+  latexdef "hadd" as "\text{ hadd }";
 htmldef "cadd" as "cadd";
   althtmldef "cadd" as "cadd";
-  latexdef "cadd" as "\mbox{cadd}";
+  latexdef "cadd" as "\text{ cadd }";
 htmldef "A." as
     "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALIGN=TOP>";
   althtmldef "A." as '<FONT FACE=sans-serif>&forall;</FONT>'; /* &#8704; */
