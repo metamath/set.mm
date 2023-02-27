@@ -2229,13 +2229,13 @@ htmldef "?!" as "<IMG SRC='_e1.gif' WIDTH=12 HEIGHT=19 ALT='E!' ALIGN=TOP>";
   latexdef "?!" as "\exists{!}";
 htmldef "typedef" as "typedef ";
   althtmldef "typedef" as 'typedef ';
-  latexdef "typedef" as "\mbox{typedef }";
+  latexdef "typedef" as "\text{typedef }";
 htmldef "1-1" as "1-1 ";
   althtmldef "1-1" as '1-1 ';
-  latexdef "1-1" as "\mbox{1-1 }";
+  latexdef "1-1" as "\text{1-1 }";
 htmldef "onto" as "onto ";
   althtmldef "onto" as 'onto ';
-  latexdef "onto" as "\mbox{onto }";
+  latexdef "onto" as "\text{onto }";
 htmldef "@" as
     "<IMG SRC='varepsilon.gif' WIDTH=8 HEIGHT=19 ALT='@' ALIGN=TOP>";
   althtmldef "@" as '&epsilon;';
