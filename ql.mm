@@ -10867,7 +10867,7 @@ latexdef "1" as "1";
 latexdef "'" as "'";
 latexdef "wff" as "\mathrm{wff}";
 latexdef "term" as "\mathrm{term}";
-latexdef "|-" as "";
+latexdef "|-" as "\vdash";
 latexdef "C" as "C";
 latexdef "," as ",";
 latexdef "=<" as "\le ";
