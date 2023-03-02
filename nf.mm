@@ -63195,27 +63195,19 @@ htmldef "-1-1->" as
     "<IMG SRC='onetoone.gif' WIDTH=23 HEIGHT=19 TITLE='-1-1-&gt;' ALIGN=TOP>";
   althtmldef "-1-1->" as
     '&ndash;<FONT SIZE=-2 FACE=sans-serif>1-1</FONT>&rarr;';
-  latexdef "-1-1->" as
-    "\raisebox{.5ex}{${\textstyle{\:}_{\mbox{\footnotesize\rm 1" +
-    "\tt -\rm 1}}}\atop{\textstyle{" +
-    "\longrightarrow}\atop{\textstyle{}^{\mbox{\footnotesize\rm {\ }}}}}$}";
+  latexdef "-1-1->" as "\overset{\mathrm{1-1}}{\longrightarrow}";
 htmldef "-onto->" as
     "<IMG SRC='onto.gif' WIDTH=23 HEIGHT=19 TITLE='-onto-&gt;' ALIGN=TOP>";
   althtmldef "-onto->" as
     '&ndash;<FONT SIZE=-2 FACE=sans-serif>onto</FONT>&rarr;';
-  latexdef "-onto->" as
-    "\raisebox{.5ex}{${\textstyle{\:}_{\mbox{\footnotesize\rm {\ }}}}" +
-    "\atop{\textstyle{" +
-    "\longrightarrow}\atop{\textstyle{}^{\mbox{\footnotesize\rm onto}}}}$}";
+  latexdef "-onto->" as "\underset{\mathrm{onto}}{\longrightarrow}";
 htmldef "-1-1-onto->" as "<IMG SRC='onetooneonto.gif' WIDTH=23 HEIGHT=19 " +
     "TITLE='-1-1-onto-&gt;' ALIGN=TOP>";
   althtmldef "-1-1-onto->" as '&ndash;<FONT SIZE=-2 '
     + 'FACE=sans-serif>1-1</FONT>-<FONT SIZE=-2 '
     + 'FACE=sans-serif>onto</FONT>&rarr;';
-  latexdef "-1-1-onto->" as
-    "\raisebox{.5ex}{${\textstyle{\:}_{\mbox{\footnotesize\rm 1" +
-    "\tt -\rm 1}}}\atop{\textstyle{" +
-    "\longrightarrow}\atop{\textstyle{}^{\mbox{\footnotesize\rm onto}}}}$}";
+  latexdef "-1-1-onto->" as "\overset{\mathrm{1-1}}{\underset{\mathrm{onto}}" +
+    "{\longrightarrow}}";
 htmldef "`" as
     "<IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 TITLE='` ' ALIGN=TOP>";
     /* Above, IE7 _printing_ is corrupted by '`'; use '` ' which works */
