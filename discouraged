@@ -4039,7 +4039,6 @@
 "clwwlkfvOLD" is used by "clwwlkfoOLD".
 "clwwlkinwwlkOLD" is used by "clwwnrepclwwnOLD".
 "clwwlknOLD" is used by "isclwwlknOLD".
-"clwwlknclwwlkdifsOLD" is used by "clwwlknclwwlkdifnumOLD".
 "clwwlknonOLD" is used by "isclwwlknonOLD".
 "clwwlknonclwlknonf1oOLD" is used by "clwwlknonclwlknonenOLD".
 "clwwlknonclwlknonf1oOLD" is used by "dlwwlknondlwlknonf1oOLD".
@@ -13834,6 +13833,7 @@ New usage of "bdophsi" is discouraged (3 uses).
 New usage of "bdopln" is discouraged (9 uses).
 New usage of "bdopssadj" is discouraged (4 uses).
 New usage of "biadan2OLD" is discouraged (0 uses).
+New usage of "biadanOLD" is discouraged (0 uses).
 New usage of "biadaniALT" is discouraged (0 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
@@ -14614,8 +14614,6 @@ New usage of "clwwlkfvOLD" is discouraged (2 uses).
 New usage of "clwwlkinwwlkOLD" is discouraged (1 uses).
 New usage of "clwwlkn0OLD" is discouraged (0 uses).
 New usage of "clwwlknOLD" is discouraged (1 uses).
-New usage of "clwwlknclwwlkdifnumOLD" is discouraged (0 uses).
-New usage of "clwwlknclwwlkdifsOLD" is discouraged (1 uses).
 New usage of "clwwlknonOLD" is discouraged (1 uses).
 New usage of "clwwlknonclwlknonenOLD" is discouraged (0 uses).
 New usage of "clwwlknonclwlknonf1oOLD" is discouraged (2 uses).
@@ -18467,6 +18465,7 @@ Proof modification of "barbariALT" is discouraged (22 steps).
 Proof modification of "barocoALT" is discouraged (24 steps).
 Proof modification of "bcsiALT" is discouraged (444 steps).
 Proof modification of "biadan2OLD" is discouraged (17 steps).
+Proof modification of "biadanOLD" is discouraged (121 steps).
 Proof modification of "biadaniALT" is discouraged (28 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bj-0" is discouraged (5 steps).
@@ -18755,8 +18754,6 @@ Proof modification of "clwwlkfvOLD" is discouraged (26 steps).
 Proof modification of "clwwlkinwwlkOLD" is discouraged (891 steps).
 Proof modification of "clwwlkn0OLD" is discouraged (24 steps).
 Proof modification of "clwwlknOLD" is discouraged (164 steps).
-Proof modification of "clwwlknclwwlkdifnumOLD" is discouraged (201 steps).
-Proof modification of "clwwlknclwwlkdifsOLD" is discouraged (162 steps).
 Proof modification of "clwwlknonOLD" is discouraged (132 steps).
 Proof modification of "clwwlknonclwlknonenOLD" is discouraged (99 steps).
 Proof modification of "clwwlknonclwlknonf1oOLD" is discouraged (417 steps).
