@@ -25,9 +25,9 @@ def collect(filename):
     with open("list.tex", "w") as fileID: # Output file
         fileID.write("\\documentclass{article}\n")
         fileID.write("\\usepackage{longtable} % for the 'longtable' environment\n")
+        fileID.write("\\usepackage{amssymb}\n")
         fileID.write("\\usepackage{phonetic} % for \\riota\n")
         fileID.write("\\usepackage{mathrsfs} % for \\mathscr\n")
-        fileID.write("\\usepackage{amssymb}\n")
         fileID.write("\\usepackage{mathtools} % loads package amsmath\n")
         fileID.write("\\begin{document}\n")
         fileID.write("\n")
