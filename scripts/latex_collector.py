@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Creative Commons Zero v1.0 Universal
 #
 # Permission to use, copy, modify, and/or distribute this software for any
@@ -11,7 +13,7 @@
 # with the name of the file as argument. E.g. collect('set.mm') for collecting latex
 # definitions from the set.mm database.
 
-import re
+import re, sys
 def collect(filename):
     with open(filename, 'r') as file:
         text = file.read()
@@ -43,3 +45,7 @@ def collect(filename):
         fileID.write("\\end{longtable}\n")
         fileID.write("\n")
         fileID.write("\\end{document}")
+        
+if __name__ == '__main__':
+    collect(sys.argv[1])
+    
