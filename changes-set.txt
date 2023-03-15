@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+15-Mar-23 mapfvd    [same]      moved from AV's mathbox to main set.mm
  2-Mar-23 wl-hbnaev hbnaev      moved from WL's mathbox to main set.mm
 21-Feb-23 moimd     moimdv      align with mobidv, eubidv 
 16-Feb-23 bj-ldiv   ldiv        moved from BJ's mathbox to main set.mm
