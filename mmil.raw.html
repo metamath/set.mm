@@ -8429,55 +8429,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>algr0</TD>
   <TD>~ ialgr0</TD>
-  <TD>Several hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algrf</TD>
-  <TD>~ ialgrf</TD>
-  <TD>Several hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algrp1</TD>
-  <TD>~ ialgrp1</TD>
-  <TD>Several hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>alginv</TD>
-  <TD>~ ialginv</TD>
-  <TD>Two hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algcvg</TD>
-  <TD>~ ialgcvg</TD>
-  <TD>` seq ` as defined in ~ df-iseq has an additional argument</TD>
-</TR>
-
-<TR>
-  <TD>algcvga</TD>
-  <TD>~ ialgcvga</TD>
-  <TD>Two hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algfx</TD>
-  <TD>~ ialgfx</TD>
-  <TD>Two hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>eucalg</TD>
-  <TD>~ eucialg</TD>
-  <TD>Tweaked for the different ` seq ` syntax</TD>
+  <TD>The ` F : S --> S ` hypothesis is added (related theorems
+  already have that hypothesis).</TD>
 </TR>
 
 <TR>
@@ -9079,6 +9032,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>df-mre , df-mrc and all theorems using the Moore or mrCls syntax</TD>
+  <TD><I>none</I></TD>
+  <TD>The closest we have currently is ~ df-cls but even that
+  doesn't function as it does in set.mm (because complements
+  are different without excluded middle).</TD>
+</TR>
+
+<TR>
   <TD>istop2g</TD>
   <TD>~ istopfin</TD>
 </TR>
@@ -9199,6 +9160,143 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proofs rely on indiscrete topology theorems we don't
   have</TD>
+</TR>
+
+<TR>
+  <TD>isopn2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4</TD>
+</TR>
+
+<TR>
+  <TD>opncld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isopn2</TD>
+</TR>
+
+<TR>
+  <TD>iincld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on opncld</TD>
+</TR>
+
+<TR>
+  <TD>intcld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on iincld</TD>
+</TR>
+
+<TR>
+  <TD>incld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on intcld</TD>
+</TR>
+
+<TR>
+  <TD>riincld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on iincld , incld , and case elimination</TD>
+</TR>
+
+<TR>
+  <TD>clscld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on intcld</TD>
+</TR>
+
+<TR>
+  <TD>clsf</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on clscld</TD>
+</TR>
+
+<TR>
+  <TD>clsval2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4 and opncld</TD>
+</TR>
+
+<TR>
+  <TD>ntrval2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4 and clsval2</TD>
+</TR>
+
+<TR>
+  <TD>ntrdif , clsdif</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>cmclsopn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4 and clsval2</TD>
+</TR>
+
+<TR>
+  <TD>cmntrcld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on opncld</TD>
+</TR>
+
+<TR>
+  <TD>iscld3 , iscld4</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>clsidm</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on clscld</TD>
+</TR>
+
+<TR>
+  <TD>0ntr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ssdif0</TD>
+</TR>
+
+<TR>
+  <TD>elcls , elcls2</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>clsndisj</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on elcls</TD>
+</TR>
+
+<TR>
+  <TD>elcls3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on elcls</TD>
+</TR>
+
+<TR>
+  <TD>opncldf1 , opncldf2 , opncldf3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on dfss4 and opncld</TD>
+</TR>
+
+<TR>
+  <TD>isclo</TD>
+  <TD><I>none</I></TD>
+  <TD>One direction of the biconditional may be provable by
+  taking the set.mm proof and replacing undif with ~ undifss</TD>
+</TR>
+
+<TR>
+  <TD>isclo2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isclo</TD>
+</TR>
+
+<TR>
+  <TD>indiscld</TD>
+  <TD><I>none</I></TD>
+  <TD>Something along these lines may be possible once we
+  define the indiscrete topology</TD>
 </TR>
 
 <TR>
