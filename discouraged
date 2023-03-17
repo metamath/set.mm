@@ -8533,9 +8533,6 @@
 "isvciOLD" is used by "hhssnv".
 "isvciOLD" is used by "hilvc".
 "isvclem" is used by "isvcOLD".
-"iswspthsnonOLD" is used by "wpthswwlks2onOLD".
-"iswwlksnonOLD" is used by "wpthswwlks2onOLD".
-"iswwlksnonOLD" is used by "wwlknonOLD".
 "iunconnlem2" is used by "iunconnALT".
 "jaoded" is used by "suctrALT3".
 "joincomALT" is used by "joincom".
@@ -13198,8 +13195,6 @@
 "wvhc3" is used by "dfvd3an".
 "wvhc3" is used by "dfvd3ani".
 "wvhc3" is used by "dfvd3anir".
-"wwlknbp2OLD" is used by "numclwwlk2lem1lemOLD".
-"wwlknonOLD" is used by "wpthswwlks2onOLD".
 "wwlksm1edgOLD" is used by "wwlksnextproplem3OLD".
 "wwlksnextbij0OLD" is used by "wwlksnextbijOLD".
 "wwlksnextbijOLD" is used by "wwlksnexthasheqOLD".
@@ -16216,8 +16211,6 @@ New usage of "isvcOLD" is discouraged (1 uses).
 New usage of "isvciOLD" is discouraged (3 uses).
 New usage of "isvclem" is discouraged (1 uses).
 New usage of "iswatN" is discouraged (0 uses).
-New usage of "iswspthsnonOLD" is discouraged (1 uses).
-New usage of "iswwlksnonOLD" is discouraged (2 uses).
 New usage of "iunconnALT" is discouraged (0 uses).
 New usage of "iunconnlem2" is discouraged (1 uses).
 New usage of "ivthALT" is discouraged (0 uses).
@@ -16900,7 +16893,6 @@ New usage of "numclwwlk1lem2foalemOLD" is discouraged (1 uses).
 New usage of "numclwwlk1lem2fvOLD" is discouraged (2 uses).
 New usage of "numclwwlk2OLD" is discouraged (0 uses).
 New usage of "numclwwlk2lem1OLD" is discouraged (1 uses).
-New usage of "numclwwlk2lem1lemOLD" is discouraged (0 uses).
 New usage of "numclwwlk2lem3OLD" is discouraged (0 uses).
 New usage of "numclwwlk2lem3OLDOLD" is discouraged (1 uses).
 New usage of "numclwwlk3lemOLD" is discouraged (0 uses).
@@ -17786,6 +17778,7 @@ New usage of "splval2OLD" is discouraged (0 uses).
 New usage of "splvalOLD" is discouraged (6 uses).
 New usage of "splvalpfxOLD" is discouraged (0 uses).
 New usage of "sps-o" is discouraged (7 uses).
+New usage of "spsbimvOLD" is discouraged (0 uses).
 New usage of "sqgt0sr" is discouraged (1 uses).
 New usage of "srhmsubcALTV" is discouraged (4 uses).
 New usage of "srhmsubcALTVlem1" is discouraged (2 uses).
@@ -18146,7 +18139,6 @@ New usage of "wlkwwlkbijOLD" is discouraged (1 uses).
 New usage of "wlkwwlkfunOLD" is discouraged (2 uses).
 New usage of "wlkwwlkinjOLD" is discouraged (1 uses).
 New usage of "wlkwwlksurOLD" is discouraged (1 uses).
-New usage of "wpthswwlks2onOLD" is discouraged (0 uses).
 New usage of "wrd2indOLD" is discouraged (0 uses).
 New usage of "wrdcctswrdOLD" is discouraged (2 uses).
 New usage of "wrdeqs1catOLD" is discouraged (0 uses).
@@ -18165,8 +18157,6 @@ New usage of "wvhc6" is discouraged (0 uses).
 New usage of "wvhc7" is discouraged (0 uses).
 New usage of "wvhc8" is discouraged (0 uses).
 New usage of "wvhc9" is discouraged (0 uses).
-New usage of "wwlknbp2OLD" is discouraged (1 uses).
-New usage of "wwlknonOLD" is discouraged (1 uses).
 New usage of "wwlksm1edgOLD" is discouraged (1 uses).
 New usage of "wwlksnextbiOLD" is discouraged (0 uses).
 New usage of "wwlksnextbij0OLD" is discouraged (1 uses).
@@ -19381,8 +19371,6 @@ Proof modification of "issmgrpOLD" is discouraged (85 steps).
 Proof modification of "istrkg2d" is discouraged (439 steps).
 Proof modification of "isvcOLD" is discouraged (170 steps).
 Proof modification of "isvciOLD" is discouraged (178 steps).
-Proof modification of "iswspthsnonOLD" is discouraged (296 steps).
-Proof modification of "iswwlksnonOLD" is discouraged (246 steps).
 Proof modification of "iunconnALT" is discouraged (56 steps).
 Proof modification of "iunconnlem2" is discouraged (580 steps).
 Proof modification of "ivthALT" is discouraged (1080 steps).
@@ -19578,7 +19566,6 @@ Proof modification of "numclwwlk1lem2foalemOLD" is discouraged (238 steps).
 Proof modification of "numclwwlk1lem2fvOLD" is discouraged (54 steps).
 Proof modification of "numclwwlk2OLD" is discouraged (187 steps).
 Proof modification of "numclwwlk2lem1OLD" is discouraged (755 steps).
-Proof modification of "numclwwlk2lem1lemOLD" is discouraged (293 steps).
 Proof modification of "numclwwlk2lem3OLD" is discouraged (66 steps).
 Proof modification of "numclwwlk2lem3OLDOLD" is discouraged (66 steps).
 Proof modification of "numclwwlk3lemOLD" is discouraged (349 steps).
@@ -19851,6 +19838,7 @@ Proof modification of "splval2OLD" is discouraged (681 steps).
 Proof modification of "splvalOLD" is discouraged (268 steps).
 Proof modification of "splvalpfxOLD" is discouraged (300 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
+Proof modification of "spsbimvOLD" is discouraged (28 steps).
 Proof modification of "ssdifsnOLD" is discouraged (107 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "ssphlOLD" is discouraged (34 steps).
@@ -20094,14 +20082,11 @@ Proof modification of "wlkwwlkbijOLD" is discouraged (55 steps).
 Proof modification of "wlkwwlkfunOLD" is discouraged (192 steps).
 Proof modification of "wlkwwlkinjOLD" is discouraged (348 steps).
 Proof modification of "wlkwwlksurOLD" is discouraged (490 steps).
-Proof modification of "wpthswwlks2onOLD" is discouraged (385 steps).
 Proof modification of "wrd2indOLD" is discouraged (1615 steps).
 Proof modification of "wrdcctswrdOLD" is discouraged (102 steps).
 Proof modification of "wrdeqs1catOLD" is discouraged (191 steps).
 Proof modification of "wrdindOLD" is discouraged (621 steps).
 Proof modification of "wrdsplexOLD" is discouraged (162 steps).
-Proof modification of "wwlknbp2OLD" is discouraged (36 steps).
-Proof modification of "wwlknonOLD" is discouraged (108 steps).
 Proof modification of "wwlksm1edgOLD" is discouraged (700 steps).
 Proof modification of "wwlksnextbiOLD" is discouraged (443 steps).
 Proof modification of "wwlksnextbij0OLD" is discouraged (82 steps).
