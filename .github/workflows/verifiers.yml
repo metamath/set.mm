@@ -75,8 +75,9 @@ jobs:
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v3
-      # Install TeX so we can test generated TeX:
-      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils
+      # Install TeX so we can test generated TeX; texlive-extra-utils provides
+      # pdflatex, and texlive-fonts-extra provides phonetic.sty:
+      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra
       # Use GITHUB_PATH to set PATH. For details see:
       # https://docs.github.com/en/free-pro-team@latest/actions/reference/
       # workflow-commands-for-github-actions#setting-an-environment-variable
