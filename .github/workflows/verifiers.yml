@@ -79,6 +79,7 @@ jobs:
       # pdflatex, and texlive-fonts-extra provides phonetic.sty:
       - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra
       # Install LaTeX "accents" package
+      - run: tlmgr init-usertree
       - run: tlmgr install accents
       # Use GITHUB_PATH to set PATH. For details see:
       # https://docs.github.com/en/free-pro-team@latest/actions/reference/
