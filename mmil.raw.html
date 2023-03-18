@@ -1159,6 +1159,16 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 </TR>
 
 <TR>
+  <TD>pm4.52</TD>
+  <TD>~ pm4.52im</TD>
+</TR>
+
+<TR>
+  <TD>pm4.53</TD>
+  <TD>~ pm4.53r</TD>
+</TR>
+
+<TR>
   <TD>pm5.17</TD>
   <TD>~ xorbin</TD>
   <TD>The combination of ~ df-xor and ~ xorbin is the forward direction
@@ -1475,8 +1485,55 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>df-symdif , dfsymdif2</TD>
+  <TD>~ symdifxor</TD>
+  <TD>The symmetric difference notation and a number of
+  the theorems could be brought over from set.mm.</TD>
+</TR>
+
+<TR>
   <TD>dfss4</TD>
   <TD>~ ssddif , ~ dfss4st</TD>
+</TR>
+
+<TR>
+  <TD>dfun3</TD>
+  <TD>~ unssin</TD>
+</TR>
+
+<TR>
+  <TD>dfin3</TD>
+  <TD>~ inssun</TD>
+</TR>
+
+<TR>
+  <TD>dfin4</TD>
+  <TD>~ inssddif</TD>
+</TR>
+
+<TR>
+  <TD>unineq</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>difindi</TD>
+  <TD>~ difindiss</TD>
+</TR>
+
+<TR>
+  <TD>difdif2</TD>
+  <TD>~ difdif2ss</TD>
+</TR>
+
+<TR>
+  <TD>indm</TD>
+  <TD>~ indmss</TD>
+</TR>
+
+<TR>
+  <TD>undif3</TD>
+  <TD>~ undif3ss</TD>
 </TR>
 
 <TR>
@@ -1768,14 +1825,75 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-  <TD>sssn</TD>
-  <TD>~ sssnr , ~ sssnm</TD>
+  <TD>pwpw0</TD>
+  <TD>~ pwpw0ss</TD>
+</TR>
+
+<TR>
+  <TD ROWSPAN="3">sssn</TD>
+  <TD>~ sssnr</TD>
+  <TD>One direction, for any classes.</TD>
+</TR>
+
+<TR>
+  <TD>~ sssnm</TD>
+  <TD>When the subset is inhabited.</TD>
+</TR>
+
+<TR>
+  <TD><I>for all sets</I></TD>
+  <TD>Equivalent to excluded middle by ~ exmidsssn .</TD>
+</TR>
+
+<TR>
+  <TD>ssunsn2 , ssunsn</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>eqsn</TD>
+  <TD>~ eqsnm</TD>
+</TR>
+
+<TR>
+  <TD>ssunpr</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>sspr</TD>
+  <TD>~ ssprr</TD>
+</TR>
+
+<TR>
+  <TD>sstp</TD>
+  <TD>~ sstpr</TD>
+</TR>
+
+<TR>
+  <TD>prnebg</TD>
+  <TD><I>none</I></TD>
 </TR>
 
 <TR>
   <TD>pwsn</TD>
   <TD>~ pwsnss</TD>
   <TD>Also see ~ exmidpw</TD>
+</TR>
+
+<TR>
+  <TD>pwpr</TD>
+  <TD>~ pwprss</TD>
+</TR>
+
+<TR>
+  <TD>pwtp</TD>
+  <TD>~ pwtpss</TD>
+</TR>
+
+<TR>
+  <TD>pwpwpw0</TD>
+  <TD>~ pwpwpw0ss</TD>
 </TR>
 
 <TR>
@@ -8311,55 +8429,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>algr0</TD>
   <TD>~ ialgr0</TD>
-  <TD>Several hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algrf</TD>
-  <TD>~ ialgrf</TD>
-  <TD>Several hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algrp1</TD>
-  <TD>~ ialgrp1</TD>
-  <TD>Several hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>alginv</TD>
-  <TD>~ ialginv</TD>
-  <TD>Two hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algcvg</TD>
-  <TD>~ ialgcvg</TD>
-  <TD>` seq ` as defined in ~ df-iseq has an additional argument</TD>
-</TR>
-
-<TR>
-  <TD>algcvga</TD>
-  <TD>~ ialgcvga</TD>
-  <TD>Two hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algfx</TD>
-  <TD>~ ialgfx</TD>
-  <TD>Two hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>eucalg</TD>
-  <TD>~ eucialg</TD>
-  <TD>Tweaked for the different ` seq ` syntax</TD>
+  <TD>The ` F : S --> S ` hypothesis is added (related theorems
+  already have that hypothesis).</TD>
 </TR>
 
 <TR>
@@ -8961,6 +9032,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>df-mre , df-mrc and all theorems using the Moore or mrCls syntax</TD>
+  <TD><I>none</I></TD>
+  <TD>The closest we have currently is ~ df-cls but even that
+  doesn't function as it does in set.mm (because complements
+  are different without excluded middle).</TD>
+</TR>
+
+<TR>
   <TD>istop2g</TD>
   <TD>~ istopfin</TD>
 </TR>
@@ -9000,6 +9079,224 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>topsn</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on pwsn</TD>
+</TR>
+
+<TR>
+  <TD>tpsprop2d</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is.  Unused in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>basdif0</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on undif1</TD>
+</TR>
+
+<TR>
+  <TD>0top</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on sssn</TD>
+</TR>
+
+<TR>
+  <TD>en2top</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on strict dominance</TD>
+</TR>
+
+<TR>
+  <TD>2basgen</TD>
+  <TD>~ 2basgeng</TD>
+</TR>
+
+<TR>
+  <TD>tgdif0</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle</TD>
+</TR>
+
+<TR>
+  <TD>indistopon</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on sspr</TD>
+</TR>
+
+<TR>
+  <TD>indistop , indisuni</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on indistopon</TD>
+</TR>
+
+<TR>
+  <TD>fctop</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on theorems we don't have
+  including con1d , ssfi , unfi , rexnal , and difindi .</TD>
+</TR>
+
+<TR>
+  <TD>fctop2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fctop</TD>
+</TR>
+
+<TR>
+  <TD>cctop</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on theorems we don't have
+  including con1d , rexnal , and difindi .</TD>
+</TR>
+
+<TR>
+  <TD>ppttop , pptbas</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on theorems we don't have
+  including orrd and ianor</TD>
+</TR>
+
+<TR>
+  <TD>indistpsx , indistps , indistps2 , indistpsALT , indistps2ALT</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on indiscrete topology theorems we don't
+  have</TD>
+</TR>
+
+<TR>
+  <TD>isopn2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4</TD>
+</TR>
+
+<TR>
+  <TD>opncld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isopn2</TD>
+</TR>
+
+<TR>
+  <TD>iincld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on opncld</TD>
+</TR>
+
+<TR>
+  <TD>intcld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on iincld</TD>
+</TR>
+
+<TR>
+  <TD>incld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on intcld</TD>
+</TR>
+
+<TR>
+  <TD>riincld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on iincld , incld , and case elimination</TD>
+</TR>
+
+<TR>
+  <TD>clscld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on intcld</TD>
+</TR>
+
+<TR>
+  <TD>clsf</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on clscld</TD>
+</TR>
+
+<TR>
+  <TD>clsval2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4 and opncld</TD>
+</TR>
+
+<TR>
+  <TD>ntrval2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4 and clsval2</TD>
+</TR>
+
+<TR>
+  <TD>ntrdif , clsdif</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>cmclsopn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4 and clsval2</TD>
+</TR>
+
+<TR>
+  <TD>cmntrcld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on opncld</TD>
+</TR>
+
+<TR>
+  <TD>iscld3 , iscld4</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>clsidm</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on clscld</TD>
+</TR>
+
+<TR>
+  <TD>0ntr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ssdif0</TD>
+</TR>
+
+<TR>
+  <TD>elcls , elcls2</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>clsndisj</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on elcls</TD>
+</TR>
+
+<TR>
+  <TD>elcls3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on elcls</TD>
+</TR>
+
+<TR>
+  <TD>opncldf1 , opncldf2 , opncldf3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on dfss4 and opncld</TD>
+</TR>
+
+<TR>
+  <TD>isclo</TD>
+  <TD><I>none</I></TD>
+  <TD>One direction of the biconditional may be provable by
+  taking the set.mm proof and replacing undif with ~ undifss</TD>
+</TR>
+
+<TR>
+  <TD>isclo2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isclo</TD>
+</TR>
+
+<TR>
+  <TD>indiscld</TD>
+  <TD><I>none</I></TD>
+  <TD>Something along these lines may be possible once we
+  define the indiscrete topology</TD>
 </TR>
 
 <TR>
