@@ -78,6 +78,8 @@ jobs:
       # Install TeX so we can test generated TeX; texlive-extra-utils provides
       # pdflatex, and texlive-fonts-extra provides phonetic.sty:
       - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra
+      # Install LaTeX "accents" package
+      - run: tlmgr install accents
       # Use GITHUB_PATH to set PATH. For details see:
       # https://docs.github.com/en/free-pro-team@latest/actions/reference/
       # workflow-commands-for-github-actions#setting-an-environment-variable
