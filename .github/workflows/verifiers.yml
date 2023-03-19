@@ -75,7 +75,7 @@ jobs:
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v3
-      # Install TeX so we can test generated TeX. We use extended packages:
+      # Install LaTeX so we can test generated LaTeX. We use extended packages:
       # texlive-extra-utils provides pdflatex
       # texlive-fonts-extra provides phonetic.sty
       # texlive-science provides accents.sty
@@ -140,7 +140,7 @@ jobs:
       # The following checks are arbitrarily included in the metamath job.
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
-      # Check generated TeX, to ensure the TeX definitions are okay. set.mm:
+      # Check generated LaTeX, to ensure the TeX definitions are okay. set.mm:
       - run: python3 scripts/latex_collector.py set.mm list-set.tex
       - run: pdflatex -halt-on-error list-set.tex 2>&1 | tee ,latex-output
       # Complain if the pdflatex output says something is invalid
