@@ -142,7 +142,9 @@ jobs:
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
       # Check generated TeX, to ensure the TeX definitions are okay. set.mm:
       - run: python3 scripts/latex_collector.py set.mm list-set.tex
-      - run: pdflatex -halt-on-error list-set.tex 
+      - run: pdflatex -halt-on-error list-set.tex 2>&1 | tee ,latex-output
+      # Complain if the pdflatex output says something is invalid
+      - run: grev -v ' invalid ' ,latex-output
 
   ###########################################################
   smetamath-rs:
