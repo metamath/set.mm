@@ -144,7 +144,7 @@ jobs:
       - run: python3 scripts/latex_collector.py set.mm list-set.tex
       - run: pdflatex -halt-on-error list-set.tex 2>&1 | tee ,latex-output
       # Complain if the pdflatex output says something is invalid
-      - run: grep -v ' invalid ' ,latex-output
+      - run: ! grep ' invalid ' ,latex-output
 
   ###########################################################
   smetamath-rs:
