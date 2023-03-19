@@ -75,15 +75,17 @@ jobs:
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v3
-      # Install TeX so we can test generated TeX; texlive-extra-utils provides
-      # pdflatex, and texlive-fonts-extra provides phonetic.sty:
-      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra
-      # Install LaTeX "accents" package. See: 
+      # Install TeX so we can test generated TeX. We use extended packages:
+      # texlive-extra-utils provides pdflatex
+      # texlive-fonts-extra provides phonetic.sty
+      # texlive-science provides accents.sty
+      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra texlive-science
+      # Here's an eXample of how to install "extra" LaTeX packages. See: 
       # https://tex.stackexchange.com/questions/38978/how-can-i-manually-install-a-latex-package-debian-ubuntu-linux/39259#39259
-      - run: mkdir -p "$HOME/texmf"
-      - run: wget https://mirrors.ctan.org/macros/latex/contrib/accents.zip -o "$HOME/texmf/accents.zip"
-      - run: cd "$HOME/texmf"; unzip -j accents.zip
-        run: texhash texmf
+      # - run: mkdir -p "$HOME/texmf"
+      # - run: wget https://mirrors.ctan.org/macros/latex/contrib/accents.zip -o "$HOME/texmf/accents.zip"
+      # - run: cd "$HOME/texmf"; unzip -j accents.zip
+      # - run: texhash texmf
       # Use GITHUB_PATH to set PATH. For details see:
       # https://docs.github.com/en/free-pro-team@latest/actions/reference/
       # workflow-commands-for-github-actions#setting-an-environment-variable
