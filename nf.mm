@@ -62852,13 +62852,13 @@ htmldef ".+^" as
   althtmldef ".+^" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#x2A23;</SPAN> ';       /* &plusacir; */
-  latexdef ".+^" as "\hat{+}";
+  latexdef ".+^" as "\mathbin{\hat{+}}";
 htmldef ".+b" as
     " <IMG SRC='_.plusb.gif' WIDTH=14 HEIGHT=19 ALT=' .+b' TITLE='.+b'> ";
   althtmldef ".+b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#x271A;</SPAN> ';
-  latexdef ".+b" as "\boldsymbol{+}";
+  latexdef ".+b" as "\pmb{+}";
 htmldef ".(+)" as
     " <IMG SRC='_.oplus.gif' WIDTH=13 HEIGHT=19 ALT=' .(+)' TITLE='.(+)'> ";
   althtmldef ".(+)" as
@@ -63137,7 +63137,7 @@ htmldef "F." as
 htmldef "iota" as
     "<IMG SRC='riota.gif' WIDTH=6 HEIGHT=19 TITLE='iota' ALIGN=TOP>";
   althtmldef "iota" as '&#8489;';
-  latexdef "iota" as "\mathrm{\rotatebox[origin=C]{180}{$\iota$}}";
+  latexdef "iota" as "\text{\riota}";
 htmldef "h" as "<IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 TITLE='h' ALIGN=TOP>";
   althtmldef "h" as '<I><FONT COLOR="#FF0000">h</FONT></I>';
   latexdef "h" as "h";
