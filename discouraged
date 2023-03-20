@@ -13322,6 +13322,7 @@ New usage of "2polvalN" is discouraged (8 uses).
 New usage of "2sb5nd" is discouraged (2 uses).
 New usage of "2sb5ndALT" is discouraged (0 uses).
 New usage of "2sb5ndVD" is discouraged (0 uses).
+New usage of "2sb8evOLD" is discouraged (0 uses).
 New usage of "2sbcrexOLD" is discouraged (0 uses).
 New usage of "2swrd1eqwrdeqOLD" is discouraged (2 uses).
 New usage of "2swrd2eqwrdeqOLD" is discouraged (1 uses).
@@ -18235,6 +18236,7 @@ Proof modification of "2pm13.193VD" is discouraged (223 steps).
 Proof modification of "2sb5nd" is discouraged (125 steps).
 Proof modification of "2sb5ndALT" is discouraged (224 steps).
 Proof modification of "2sb5ndVD" is discouraged (230 steps).
+Proof modification of "2sb8evOLD" is discouraged (86 steps).
 Proof modification of "2sbcrexOLD" is discouraged (63 steps).
 Proof modification of "2stdpc5" is discouraged (34 steps).
 Proof modification of "2swrd1eqwrdeqOLD" is discouraged (338 steps).
