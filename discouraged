@@ -18194,6 +18194,7 @@ New usage of "zfnuleuOLD" is discouraged (0 uses).
 New usage of "zfpair" is discouraged (1 uses).
 New usage of "zfregs2VD" is discouraged (0 uses).
 New usage of "znnenlemOLD" is discouraged (0 uses).
+New usage of "zqOLD" is discouraged (0 uses).
 New usage of "zrdivrng" is discouraged (1 uses).
 New usage of "zrhcofipsgnOLD" is discouraged (1 uses).
 New usage of "zrhcopsgndifOLD" is discouraged (0 uses).
@@ -20130,5 +20131,6 @@ Proof modification of "zfcndun" is discouraged (72 steps).
 Proof modification of "zfnuleuOLD" is discouraged (59 steps).
 Proof modification of "zfregs2VD" is discouraged (128 steps).
 Proof modification of "znnenlemOLD" is discouraged (201 steps).
+Proof modification of "zqOLD" is discouraged (91 steps).
 Proof modification of "zrhcofipsgnOLD" is discouraged (95 steps).
 Proof modification of "zrhcopsgndifOLD" is discouraged (156 steps).
