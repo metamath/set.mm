@@ -4341,12 +4341,15 @@
 "df-bj-ccinfty" is used by "bj-ccinftydisj".
 "df-bj-ccinfty" is used by "bj-elccinfty".
 "df-bj-ccinfty" is used by "bj-minftyccb".
+"df-bj-ccinftyN" is used by "bj-inftyexpitaufo".
 "df-bj-inftyexpi" is used by "bj-ccinftydisj".
 "df-bj-inftyexpi" is used by "bj-elccinfty".
 "df-bj-inftyexpi" is used by "bj-inftyexpidisj".
 "df-bj-inftyexpi" is used by "bj-inftyexpiinv".
 "df-bj-inftyexpi" is used by "bj-minftyccb".
 "df-bj-inftyexpitau" is used by "bj-inftyexpitaudisj".
+"df-bj-inftyexpitau" is used by "bj-inftyexpitaufo".
+"df-bj-iomnn" is used by "bj-iomnnom".
 "df-bj-pr1" is used by "bj-pr1eq".
 "df-bj-pr1" is used by "bj-pr1ex".
 "df-bj-pr1" is used by "bj-pr1un".
@@ -13319,6 +13322,7 @@ New usage of "2polvalN" is discouraged (8 uses).
 New usage of "2sb5nd" is discouraged (2 uses).
 New usage of "2sb5ndALT" is discouraged (0 uses).
 New usage of "2sb5ndVD" is discouraged (0 uses).
+New usage of "2sb8evOLD" is discouraged (0 uses).
 New usage of "2sbcrexOLD" is discouraged (0 uses).
 New usage of "2swrd1eqwrdeqOLD" is discouraged (2 uses).
 New usage of "2swrd2eqwrdeqOLD" is discouraged (1 uses).
@@ -14773,10 +14777,12 @@ New usage of "df-bdop" is discouraged (2 uses).
 New usage of "df-bj-1upl" is discouraged (6 uses).
 New usage of "df-bj-2upl" is discouraged (6 uses).
 New usage of "df-bj-ccinfty" is discouraged (3 uses).
+New usage of "df-bj-ccinftyN" is discouraged (1 uses).
 New usage of "df-bj-fractemp" is discouraged (0 uses).
 New usage of "df-bj-infty" is discouraged (0 uses).
 New usage of "df-bj-inftyexpi" is discouraged (5 uses).
-New usage of "df-bj-inftyexpitau" is discouraged (1 uses).
+New usage of "df-bj-inftyexpitau" is discouraged (2 uses).
+New usage of "df-bj-iomnn" is discouraged (1 uses).
 New usage of "df-bj-onehalf" is discouraged (0 uses).
 New usage of "df-bj-pr1" is discouraged (4 uses).
 New usage of "df-bj-pr2" is discouraged (4 uses).
@@ -17768,6 +17774,7 @@ New usage of "spanval" is discouraged (6 uses).
 New usage of "speccl" is discouraged (0 uses).
 New usage of "specval" is discouraged (1 uses).
 New usage of "speimfwALT" is discouraged (0 uses).
+New usage of "spimtOLD" is discouraged (0 uses).
 New usage of "spimvALT" is discouraged (0 uses).
 New usage of "splclOLD" is discouraged (0 uses).
 New usage of "splfv1OLD" is discouraged (0 uses).
@@ -18230,6 +18237,7 @@ Proof modification of "2pm13.193VD" is discouraged (223 steps).
 Proof modification of "2sb5nd" is discouraged (125 steps).
 Proof modification of "2sb5ndALT" is discouraged (224 steps).
 Proof modification of "2sb5ndVD" is discouraged (230 steps).
+Proof modification of "2sb8evOLD" is discouraged (86 steps).
 Proof modification of "2sbcrexOLD" is discouraged (63 steps).
 Proof modification of "2stdpc5" is discouraged (34 steps).
 Proof modification of "2swrd1eqwrdeqOLD" is discouraged (338 steps).
@@ -18581,6 +18589,11 @@ Proof modification of "bj-exlimmpi" is discouraged (11 steps).
 Proof modification of "bj-exlimvmpi" is discouraged (10 steps).
 Proof modification of "bj-falor" is discouraged (4 steps).
 Proof modification of "bj-falor2" is discouraged (13 steps).
+Proof modification of "bj-fununsn1" is discouraged (37 steps).
+Proof modification of "bj-fununsn2" is discouraged (50 steps).
+Proof modification of "bj-fvmptunsn1" is discouraged (35 steps).
+Proof modification of "bj-fvmptunsn2" is discouraged (54 steps).
+Proof modification of "bj-fvsnun2" is discouraged (44 steps).
 Proof modification of "bj-gl4" is discouraged (39 steps).
 Proof modification of "bj-gl4lem" is discouraged (37 steps).
 Proof modification of "bj-godellob" is discouraged (19 steps).
@@ -19832,6 +19845,7 @@ Proof modification of "snssiALTVD" is discouraged (64 steps).
 Proof modification of "snssl" is discouraged (18 steps).
 Proof modification of "snsslVD" is discouraged (24 steps).
 Proof modification of "speimfwALT" is discouraged (35 steps).
+Proof modification of "spimtOLD" is discouraged (52 steps).
 Proof modification of "spimvALT" is discouraged (16 steps).
 Proof modification of "splclOLD" is discouraged (257 steps).
 Proof modification of "splfv1OLD" is discouraged (439 steps).
