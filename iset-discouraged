@@ -292,6 +292,17 @@
 "peano1nnnn" is used by "nnindnn".
 "peano2nnnn" is used by "nnindnn".
 "peano5nnnn" is used by "nnindnn".
+"r19.2mOLD" is used by "climuni".
+"r19.2mOLD" is used by "cnviinm".
+"r19.2mOLD" is used by "eusvobj2".
+"r19.2mOLD" is used by "iinerm".
+"r19.2mOLD" is used by "iinexgm".
+"r19.2mOLD" is used by "intssunim".
+"r19.2mOLD" is used by "r19.2uz".
+"r19.2mOLD" is used by "rexfiuz".
+"r19.2mOLD" is used by "riinm".
+"r19.2mOLD" is used by "trintssmOLD".
+"r19.2mOLD" is used by "xpiindim".
 "rdgivallem" is used by "rdgival".
 "reapti" is used by "apreap".
 "reapti" is used by "apti".
@@ -464,6 +475,7 @@ New usage of "opelopabsbALT" is discouraged (2 uses).
 New usage of "peano1nnnn" is discouraged (1 uses).
 New usage of "peano2nnnn" is discouraged (1 uses).
 New usage of "peano5nnnn" is discouraged (1 uses).
+New usage of "r19.2mOLD" is discouraged (11 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rdgivallem" is discouraged (1 uses).
 New usage of "reapti" is discouraged (3 uses).
@@ -590,6 +602,7 @@ Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
 Proof modification of "peano5set" is discouraged (60 steps).
+Proof modification of "r19.2mOLD" is discouraged (46 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
 Proof modification of "ruALT" is discouraged (35 steps).
