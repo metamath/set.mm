@@ -27,6 +27,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 2-Apr-23 reuxfr4d  [same]      moved from TA's mathbox to main set.mm
+ 2-Apr-23 reuxfr3d  [same]      moved from TA's mathbox to main set.mm
+ 2-Apr-23 2reuswap2 [same]      moved from TA's mathbox to main set.mm
+ 2-Apr-23 pm5.31r   [same]      moved from RM's mathbox to main set.mm
 19-Mar-23 soasym    [same]      moved from SF's mathbox to main set.mm
 19-Mar-23 fvmptd2   [same]      moved from GS's mathbox to main set.mm
 15-Mar-23 mapfvd    [same]      moved from AV's mathbox to main set.mm
