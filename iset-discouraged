@@ -254,7 +254,6 @@
 "iseqp1" is used by "iseqz".
 "iseqp1" is used by "isermono".
 "iseqp1t" is used by "iseqsst".
-"iseqshft2" is used by "seq3shft2".
 "iseqsplit" is used by "ibcval5".
 "iseqval" is used by "iseq1".
 "iseqval" is used by "iseqcl".
@@ -440,7 +439,7 @@ New usage of "iseqid2" is discouraged (2 uses).
 New usage of "iseqm1" is discouraged (4 uses).
 New usage of "iseqp1" is discouraged (13 uses).
 New usage of "iseqp1t" is discouraged (1 uses).
-New usage of "iseqshft2" is discouraged (1 uses).
+New usage of "iseqshft2" is discouraged (0 uses).
 New usage of "iseqsplit" is discouraged (1 uses).
 New usage of "iseqval" is discouraged (4 uses).
 New usage of "iseqvalt" is discouraged (3 uses).
