@@ -171,7 +171,6 @@
 "iseq1" is used by "iseqcoll".
 "iseq1" is used by "iseqfveq".
 "iseq1" is used by "iseqfveq2".
-"iseq1" is used by "iseqhomo".
 "iseq1" is used by "iseqid".
 "iseq1" is used by "iseqid3s".
 "iseq1" is used by "iseqsplit".
@@ -183,7 +182,6 @@
 "iseqcl" is used by "ibcval5".
 "iseqcl" is used by "iseqcaopr2".
 "iseqcl" is used by "iseqcoll".
-"iseqcl" is used by "iseqhomo".
 "iseqcl" is used by "iseqid3".
 "iseqcl" is used by "iseqp1".
 "iseqcl" is used by "iseqsplit".
@@ -237,7 +235,6 @@
 "iseqp1" is used by "iseqcaopr3".
 "iseqp1" is used by "iseqcoll".
 "iseqp1" is used by "iseqfveq2".
-"iseqp1" is used by "iseqhomo".
 "iseqp1" is used by "iseqid2".
 "iseqp1" is used by "iseqid3s".
 "iseqp1" is used by "iseqm1".
@@ -410,9 +407,9 @@ New usage of "fisumser" is discouraged (2 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
-New usage of "iseq1" is discouraged (13 uses).
+New usage of "iseq1" is discouraged (12 uses).
 New usage of "iseq1t" is discouraged (1 uses).
-New usage of "iseqcl" is discouraged (10 uses).
+New usage of "iseqcl" is discouraged (9 uses).
 New usage of "iseqeq1" is discouraged (8 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
 New usage of "iseqeq3" is discouraged (9 uses).
@@ -423,10 +420,9 @@ New usage of "iseqfeq" is discouraged (2 uses).
 New usage of "iseqfeq2" is discouraged (1 uses).
 New usage of "iseqfveq" is discouraged (3 uses).
 New usage of "iseqfveq2" is discouraged (2 uses).
-New usage of "iseqhomo" is discouraged (0 uses).
 New usage of "iseqid2" is discouraged (2 uses).
 New usage of "iseqm1" is discouraged (4 uses).
-New usage of "iseqp1" is discouraged (12 uses).
+New usage of "iseqp1" is discouraged (11 uses).
 New usage of "iseqp1t" is discouraged (1 uses).
 New usage of "iseqsplit" is discouraged (1 uses).
 New usage of "iseqval" is discouraged (4 uses).
