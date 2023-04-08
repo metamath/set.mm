@@ -176,7 +176,6 @@
 "iseq1" is used by "iseqhomo".
 "iseq1" is used by "iseqid".
 "iseq1" is used by "iseqid3s".
-"iseq1" is used by "iseqoveq".
 "iseq1" is used by "iseqshft2".
 "iseq1" is used by "iseqsplit".
 "iseq1" is used by "iseqsst".
@@ -190,7 +189,6 @@
 "iseqcl" is used by "iseqdistr".
 "iseqcl" is used by "iseqhomo".
 "iseqcl" is used by "iseqid3".
-"iseqcl" is used by "iseqoveq".
 "iseqcl" is used by "iseqp1".
 "iseqcl" is used by "iseqsplit".
 "iseqcl" is used by "iseqz".
@@ -223,7 +221,6 @@
 "iseqfcl" is used by "facnn".
 "iseqfcl" is used by "iseqfeq".
 "iseqfcl" is used by "iseqfeq2".
-"iseqfcl" is used by "iseqoveq".
 "iseqfcl" is used by "iseqsst".
 "iseqfcl" is used by "iserf".
 "iseqfclt" is used by "iseqp1t".
@@ -252,7 +249,6 @@
 "iseqp1" is used by "iseqid2".
 "iseqp1" is used by "iseqid3s".
 "iseqp1" is used by "iseqm1".
-"iseqp1" is used by "iseqoveq".
 "iseqp1" is used by "iseqshft2".
 "iseqp1" is used by "iseqsplit".
 "iseqp1" is used by "iseqsst".
@@ -426,15 +422,15 @@ New usage of "fnexALT" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
 New usage of "iisermulc2" is discouraged (2 uses).
-New usage of "iseq1" is discouraged (15 uses).
+New usage of "iseq1" is discouraged (14 uses).
 New usage of "iseq1t" is discouraged (1 uses).
-New usage of "iseqcl" is discouraged (12 uses).
+New usage of "iseqcl" is discouraged (11 uses).
 New usage of "iseqdistr" is discouraged (1 uses).
 New usage of "iseqeq1" is discouraged (8 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
 New usage of "iseqeq3" is discouraged (9 uses).
 New usage of "iseqex" is discouraged (5 uses).
-New usage of "iseqfcl" is discouraged (7 uses).
+New usage of "iseqfcl" is discouraged (6 uses).
 New usage of "iseqfclt" is discouraged (2 uses).
 New usage of "iseqfeq" is discouraged (3 uses).
 New usage of "iseqfeq2" is discouraged (1 uses).
@@ -443,8 +439,7 @@ New usage of "iseqfveq2" is discouraged (2 uses).
 New usage of "iseqhomo" is discouraged (1 uses).
 New usage of "iseqid2" is discouraged (2 uses).
 New usage of "iseqm1" is discouraged (4 uses).
-New usage of "iseqoveq" is discouraged (0 uses).
-New usage of "iseqp1" is discouraged (14 uses).
+New usage of "iseqp1" is discouraged (13 uses).
 New usage of "iseqp1t" is discouraged (1 uses).
 New usage of "iseqshft2" is discouraged (1 uses).
 New usage of "iseqsplit" is discouraged (1 uses).
