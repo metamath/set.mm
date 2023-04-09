@@ -186,6 +186,7 @@
 "iseqcl" is used by "iseqsplit".
 "iseqcl" is used by "iseqz".
 "iseqcl" is used by "isermono".
+"iseqcoll" is used by "isummolem2a".
 "iseqeq1" is used by "bcn2".
 "iseqeq1" is used by "ibcval5".
 "iseqeq1" is used by "iseqid".
@@ -416,6 +417,7 @@ New usage of "idALT" is discouraged (0 uses).
 New usage of "iseq1" is discouraged (12 uses).
 New usage of "iseq1t" is discouraged (1 uses).
 New usage of "iseqcl" is discouraged (8 uses).
+New usage of "iseqcoll" is discouraged (1 uses).
 New usage of "iseqeq1" is discouraged (8 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
 New usage of "iseqeq3" is discouraged (9 uses).
