@@ -153,7 +153,6 @@
 "fisum" is used by "fsum3".
 "fisum" is used by "fsumadd".
 "fisum" is used by "fsumf1o".
-"fisum" is used by "isumz".
 "fisum" is used by "sumsnf".
 "fisumcvg" is used by "fisumcvg2".
 "fisumcvg" is used by "isummolem2a".
@@ -200,7 +199,6 @@
 "iseqeq3" is used by "fisum".
 "iseqeq3" is used by "fsumadd".
 "iseqeq3" is used by "isummo".
-"iseqeq3" is used by "isumz".
 "iseqeq3" is used by "seqeq3".
 "iseqeq3" is used by "sumeq1".
 "iseqeq3" is used by "sumeq2".
@@ -257,7 +255,6 @@
 "iseqvalt" is used by "iseqfclt".
 "iseqvalt" is used by "iseqp1t".
 "iser0" is used by "iser0f".
-"iser0" is used by "isumz".
 "iser0" is used by "ser0f".
 "iser0f" is used by "iserclim0".
 "iserf" is used by "fisumcvg".
@@ -312,7 +309,6 @@
 "zisum" is used by "fisumsers".
 "zisum" is used by "iisum".
 "zisum" is used by "isumss".
-"zisum" is used by "isumz".
 New usage of "0cnALT" is discouraged (0 uses).
 New usage of "0reALT" is discouraged (0 uses).
 New usage of "19.21h" is discouraged (3 uses).
@@ -415,7 +411,7 @@ New usage of "elirr" is discouraged (16 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
-New usage of "fisum" is discouraged (5 uses).
+New usage of "fisum" is discouraged (4 uses).
 New usage of "fisumcvg" is discouraged (2 uses).
 New usage of "fisumcvg2" is discouraged (1 uses).
 New usage of "fisumser" is discouraged (2 uses).
@@ -428,7 +424,7 @@ New usage of "iseqcl" is discouraged (8 uses).
 New usage of "iseqcoll" is discouraged (1 uses).
 New usage of "iseqeq1" is discouraged (8 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
-New usage of "iseqeq3" is discouraged (9 uses).
+New usage of "iseqeq3" is discouraged (8 uses).
 New usage of "iseqex" is discouraged (4 uses).
 New usage of "iseqfcl" is discouraged (6 uses).
 New usage of "iseqfclt" is discouraged (2 uses).
@@ -445,7 +441,7 @@ New usage of "iseqp1t" is discouraged (1 uses).
 New usage of "iseqsplit" is discouraged (1 uses).
 New usage of "iseqval" is discouraged (4 uses).
 New usage of "iseqvalt" is discouraged (3 uses).
-New usage of "iser0" is discouraged (3 uses).
+New usage of "iser0" is discouraged (2 uses).
 New usage of "iser0f" is discouraged (1 uses).
 New usage of "iserf" is discouraged (3 uses).
 New usage of "isummolem2a" is discouraged (2 uses).
@@ -481,7 +477,7 @@ New usage of "strnfvn" is discouraged (3 uses).
 New usage of "tfri1dALT" is discouraged (0 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
-New usage of "zisum" is discouraged (4 uses).
+New usage of "zisum" is discouraged (3 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "a9evsep" is discouraged (63 steps).
