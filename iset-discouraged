@@ -292,17 +292,6 @@
 "peano1nnnn" is used by "nnindnn".
 "peano2nnnn" is used by "nnindnn".
 "peano5nnnn" is used by "nnindnn".
-"r19.2mOLD" is used by "climuni".
-"r19.2mOLD" is used by "cnviinm".
-"r19.2mOLD" is used by "eusvobj2".
-"r19.2mOLD" is used by "iinerm".
-"r19.2mOLD" is used by "iinexgm".
-"r19.2mOLD" is used by "intssunim".
-"r19.2mOLD" is used by "r19.2uz".
-"r19.2mOLD" is used by "rexfiuz".
-"r19.2mOLD" is used by "riinm".
-"r19.2mOLD" is used by "trintssmOLD".
-"r19.2mOLD" is used by "xpiindim".
 "rdgivallem" is used by "rdgival".
 "reapti" is used by "apreap".
 "reapti" is used by "apti".
@@ -475,7 +464,7 @@ New usage of "opelopabsbALT" is discouraged (2 uses).
 New usage of "peano1nnnn" is discouraged (1 uses).
 New usage of "peano2nnnn" is discouraged (1 uses).
 New usage of "peano5nnnn" is discouraged (1 uses).
-New usage of "r19.2mOLD" is discouraged (11 uses).
+New usage of "r19.2mOLD" is discouraged (0 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rdgivallem" is discouraged (1 uses).
 New usage of "reapti" is discouraged (3 uses).
@@ -493,7 +482,6 @@ New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
 New usage of "strnfvn" is discouraged (3 uses).
 New usage of "tfri1dALT" is discouraged (0 uses).
-New usage of "trintssmOLD" is discouraged (0 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
@@ -611,6 +599,5 @@ Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "speano5" is discouraged (50 steps).
 Proof modification of "strcollnfALT" is discouraged (79 steps).
 Proof modification of "tfri1dALT" is discouraged (247 steps).
-Proof modification of "trintssmOLD" is discouraged (67 steps).
 Proof modification of "uzind4ALT" is discouraged (16 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
