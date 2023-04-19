@@ -16918,6 +16918,7 @@ New usage of "nvvop" is discouraged (3 uses).
 New usage of "nvz" is discouraged (9 uses).
 New usage of "nvz0" is discouraged (8 uses).
 New usage of "nvzcl" is discouraged (21 uses).
+New usage of "oaabs2OLD" is discouraged (0 uses).
 New usage of "oc0" is discouraged (2 uses).
 New usage of "occl" is discouraged (15 uses).
 New usage of "occllem" is discouraged (1 uses).
@@ -17894,7 +17895,6 @@ New usage of "tendospcanN" is discouraged (1 uses).
 New usage of "tfr1ALT" is discouraged (0 uses).
 New usage of "tfr2ALT" is discouraged (0 uses).
 New usage of "tfr3ALT" is discouraged (0 uses).
-New usage of "oaabs2OLD" is discouraged (0 uses).
 New usage of "topnfbey" is discouraged (0 uses).
 New usage of "tpid3gVD" is discouraged (0 uses).
 New usage of "tratrb" is discouraged (2 uses).
@@ -19477,6 +19477,7 @@ Proof modification of "numclwwlk3lemOLD" is discouraged (349 steps).
 Proof modification of "numclwwlkovgOLD" is discouraged (110 steps).
 Proof modification of "numclwwlkovgelOLD" is discouraged (115 steps).
 Proof modification of "numclwwlkovhOLD" is discouraged (108 steps).
+Proof modification of "oaabs2OLD" is discouraged (1366 steps).
 Proof modification of "ogrpinvOLD" is discouraged (149 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
 Proof modification of "onfrALT" is discouraged (88 steps).
@@ -19830,7 +19831,6 @@ Proof modification of "tbwsyl" is discouraged (20 steps).
 Proof modification of "tfr1ALT" is discouraged (19 steps).
 Proof modification of "tfr2ALT" is discouraged (52 steps).
 Proof modification of "tfr3ALT" is discouraged (84 steps).
-Proof modification of "oaabs2OLD" is discouraged (1366 steps).
 Proof modification of "topnfbey" is discouraged (75 steps).
 Proof modification of "toycom" is discouraged (142 steps).
 Proof modification of "tpid3gVD" is discouraged (116 steps).
