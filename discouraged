@@ -16918,6 +16918,7 @@ New usage of "nvvop" is discouraged (3 uses).
 New usage of "nvz" is discouraged (9 uses).
 New usage of "nvz0" is discouraged (8 uses).
 New usage of "nvzcl" is discouraged (21 uses).
+New usage of "oaabs2OLD" is discouraged (0 uses).
 New usage of "oc0" is discouraged (2 uses).
 New usage of "occl" is discouraged (15 uses).
 New usage of "occllem" is discouraged (1 uses).
@@ -19476,6 +19477,7 @@ Proof modification of "numclwwlk3lemOLD" is discouraged (349 steps).
 Proof modification of "numclwwlkovgOLD" is discouraged (110 steps).
 Proof modification of "numclwwlkovgelOLD" is discouraged (115 steps).
 Proof modification of "numclwwlkovhOLD" is discouraged (108 steps).
+Proof modification of "oaabs2OLD" is discouraged (1366 steps).
 Proof modification of "ogrpinvOLD" is discouraged (149 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
 Proof modification of "onfrALT" is discouraged (88 steps).
