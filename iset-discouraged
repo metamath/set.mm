@@ -178,7 +178,6 @@
 "iseq1" is used by "sumsnf".
 "iseq1t" is used by "iseqsst".
 "iseqcaopr2" is used by "iseqcaopr".
-"iseqcaopr2" is used by "isersub".
 "iseqcaopr3" is used by "iseqcaopr2".
 "iseqcl" is used by "fisum".
 "iseqcl" is used by "ibcval5".
@@ -418,7 +417,7 @@ New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
 New usage of "iseq1" is discouraged (12 uses).
 New usage of "iseq1t" is discouraged (1 uses).
-New usage of "iseqcaopr2" is discouraged (2 uses).
+New usage of "iseqcaopr2" is discouraged (1 uses).
 New usage of "iseqcaopr3" is discouraged (1 uses).
 New usage of "iseqcl" is discouraged (7 uses).
 New usage of "iseqcoll" is discouraged (1 uses).
@@ -443,7 +442,6 @@ New usage of "iseqval" is discouraged (4 uses).
 New usage of "iseqvalt" is discouraged (3 uses).
 New usage of "iser0" is discouraged (1 uses).
 New usage of "iserf" is discouraged (2 uses).
-New usage of "isersub" is discouraged (0 uses).
 New usage of "isummolem2a" is discouraged (2 uses).
 New usage of "isummolem3" is discouraged (2 uses).
 New usage of "isumrb" is discouraged (2 uses).
