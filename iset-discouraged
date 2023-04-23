@@ -184,7 +184,6 @@
 "iseqcl" is used by "iseqp1".
 "iseqcl" is used by "iseqsplit".
 "iseqcl" is used by "iseqz".
-"iseqcl" is used by "isermono".
 "iseqcoll" is used by "isummolem2a".
 "iseqeq1" is used by "bcn2".
 "iseqeq1" is used by "ibcval5".
@@ -244,7 +243,6 @@
 "iseqp1" is used by "iseqsplit".
 "iseqp1" is used by "iseqsst".
 "iseqp1" is used by "iseqz".
-"iseqp1" is used by "isermono".
 "iseqp1t" is used by "iseqsst".
 "iseqsplit" is used by "ibcval5".
 "iseqval" is used by "iseq1".
@@ -417,7 +415,7 @@ New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
 New usage of "iseq1" is discouraged (12 uses).
 New usage of "iseq1t" is discouraged (1 uses).
-New usage of "iseqcl" is discouraged (8 uses).
+New usage of "iseqcl" is discouraged (7 uses).
 New usage of "iseqcoll" is discouraged (1 uses).
 New usage of "iseqeq1" is discouraged (8 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
@@ -433,7 +431,7 @@ New usage of "iseqid" is discouraged (2 uses).
 New usage of "iseqid2" is discouraged (2 uses).
 New usage of "iseqid3s" is discouraged (3 uses).
 New usage of "iseqm1" is discouraged (4 uses).
-New usage of "iseqp1" is discouraged (11 uses).
+New usage of "iseqp1" is discouraged (10 uses).
 New usage of "iseqp1t" is discouraged (1 uses).
 New usage of "iseqsplit" is discouraged (1 uses).
 New usage of "iseqval" is discouraged (4 uses).
