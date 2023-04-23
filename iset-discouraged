@@ -106,6 +106,9 @@
 "bj-axemptylem" is used by "bj-axempty2".
 "df-div" is used by "divfnzn".
 "df-div" is used by "divvalap".
+"df-fac" is used by "dffac3".
+"df-fac" is used by "fac0".
+"df-fac" is used by "ifacnn".
 "df-ilim" is used by "dflim2".
 "df-inn" is used by "dfnn2".
 "df-iom" is used by "dfom3".
@@ -164,6 +167,10 @@
 "hbs1" is used by "mopick".
 "hbs1" is used by "nfs1v".
 "hbs1" is used by "sb9v".
+"ibcval5" is used by "bcn2".
+"ifacnn" is used by "fac1".
+"ifacnn" is used by "facp1".
+"ifacnn" is used by "ibcval5".
 "iseq1" is used by "bcn2".
 "iseq1" is used by "fac1".
 "iseq1" is used by "iseqcaopr3".
@@ -209,7 +216,7 @@
 "iseqex" is used by "isumrb".
 "iseqex" is used by "seqex".
 "iseqfcl" is used by "fac0".
-"iseqfcl" is used by "facnn".
+"iseqfcl" is used by "ifacnn".
 "iseqfcl" is used by "iseqfeq".
 "iseqfcl" is used by "iseqfeq2".
 "iseqfcl" is used by "iseqsst".
@@ -392,6 +399,7 @@ New usage of "bj-omssonALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-div" is discouraged (2 uses).
+New usage of "df-fac" is discouraged (3 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
@@ -415,7 +423,9 @@ New usage of "fisumcvg2" is discouraged (1 uses).
 New usage of "fisumser" is discouraged (2 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
+New usage of "ibcval5" is discouraged (1 uses).
 New usage of "idALT" is discouraged (0 uses).
+New usage of "ifacnn" is discouraged (3 uses).
 New usage of "iseq1" is discouraged (12 uses).
 New usage of "iseq1t" is discouraged (1 uses).
 New usage of "iseqcaopr2" is discouraged (1 uses).
