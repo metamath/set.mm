@@ -13712,6 +13712,7 @@ New usage of "axhvmul0-zf" is discouraged (0 uses).
 New usage of "axhvmulass-zf" is discouraged (0 uses).
 New usage of "axhvmulid-zf" is discouraged (0 uses).
 New usage of "axi10" is discouraged (0 uses).
+New usage of "axi12OLD" is discouraged (0 uses).
 New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axi4" is discouraged (0 uses).
 New usage of "axi9" is discouraged (0 uses).
@@ -18339,6 +18340,7 @@ Proof modification of "axc711toc7" is discouraged (37 steps).
 Proof modification of "axc7eOLD" is discouraged (14 steps).
 Proof modification of "axext3ALT" is discouraged (57 steps).
 Proof modification of "axfrege8" is discouraged (31 steps).
+Proof modification of "axi12OLD" is discouraged (76 steps).
 Proof modification of "axnul" is discouraged (36 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
 Proof modification of "axtglowdim2OLD" is discouraged (115 steps).
