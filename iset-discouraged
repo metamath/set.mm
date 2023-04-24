@@ -106,7 +106,6 @@
 "bj-axemptylem" is used by "bj-axempty2".
 "df-div" is used by "divfnzn".
 "df-div" is used by "divvalap".
-"df-fac" is used by "dffac3".
 "df-ilim" is used by "dflim2".
 "df-inn" is used by "dfnn2".
 "df-iom" is used by "dfom3".
@@ -377,7 +376,6 @@ New usage of "bj-omssonALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-div" is discouraged (2 uses).
-New usage of "df-fac" is discouraged (1 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
