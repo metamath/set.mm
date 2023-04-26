@@ -10166,7 +10166,6 @@
 "numclwwlk2lem1OLD" is used by "numclwlk2lem2f1oOLDOLD".
 "numclwwlk2lem3OLDOLD" is used by "numclwwlk2OLD".
 "numclwwlkovgOLD" is used by "numclwwlk3lemOLD".
-"numclwwlkovgOLD" is used by "numclwwlkovgelOLD".
 "numclwwlkovhOLD" is used by "numclwlk2lem2f1oOLDOLD".
 "numclwwlkovhOLD" is used by "numclwlk2lem2fOLDOLD".
 "numclwwlkovhOLD" is used by "numclwwlk2lem1OLD".
@@ -13289,6 +13288,8 @@ New usage of "2bornot2b" is discouraged (0 uses).
 New usage of "2clwwlk2clwwlkOLD" is discouraged (0 uses).
 New usage of "2clwwlklemOLD" is discouraged (2 uses).
 New usage of "2cnALT" is discouraged (0 uses).
+New usage of "2eu1OLD" is discouraged (0 uses).
+New usage of "2eu3OLD" is discouraged (0 uses).
 New usage of "2irrexpqALT" is discouraged (0 uses).
 New usage of "2llnjN" is discouraged (1 uses).
 New usage of "2llnjaN" is discouraged (1 uses).
@@ -13657,6 +13658,7 @@ New usage of "axaddass" is discouraged (0 uses).
 New usage of "axaddcl" is discouraged (0 uses).
 New usage of "axaddf" is discouraged (1 uses).
 New usage of "axaddrcl" is discouraged (0 uses).
+New usage of "axbndOLD" is discouraged (0 uses).
 New usage of "axc11-o" is discouraged (0 uses).
 New usage of "axc11n-16" is discouraged (0 uses).
 New usage of "axc11next" is discouraged (0 uses).
@@ -13711,6 +13713,7 @@ New usage of "axhvmul0-zf" is discouraged (0 uses).
 New usage of "axhvmulass-zf" is discouraged (0 uses).
 New usage of "axhvmulid-zf" is discouraged (0 uses).
 New usage of "axi10" is discouraged (0 uses).
+New usage of "axi12OLD" is discouraged (0 uses).
 New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axi4" is discouraged (0 uses).
 New usage of "axi9" is discouraged (0 uses).
@@ -16845,8 +16848,7 @@ New usage of "numclwwlk2lem1OLD" is discouraged (1 uses).
 New usage of "numclwwlk2lem3OLD" is discouraged (0 uses).
 New usage of "numclwwlk2lem3OLDOLD" is discouraged (1 uses).
 New usage of "numclwwlk3lemOLD" is discouraged (0 uses).
-New usage of "numclwwlkovgOLD" is discouraged (2 uses).
-New usage of "numclwwlkovgelOLD" is discouraged (0 uses).
+New usage of "numclwwlkovgOLD" is discouraged (1 uses).
 New usage of "numclwwlkovhOLD" is discouraged (4 uses).
 New usage of "nv0" is discouraged (5 uses).
 New usage of "nv0lid" is discouraged (4 uses).
@@ -18167,6 +18169,8 @@ Proof modification of "2bornot2b" is discouraged (26 steps).
 Proof modification of "2clwwlk2clwwlkOLD" is discouraged (782 steps).
 Proof modification of "2clwwlklemOLD" is discouraged (90 steps).
 Proof modification of "2cnALT" is discouraged (3 steps).
+Proof modification of "2eu1OLD" is discouraged (83 steps).
+Proof modification of "2eu3OLD" is discouraged (134 steps).
 Proof modification of "2irrexpqALT" is discouraged (90 steps).
 Proof modification of "2logb9irrALT" is discouraged (141 steps).
 Proof modification of "2pm13.193" is discouraged (91 steps).
@@ -18301,6 +18305,7 @@ Proof modification of "ax6vsep" is discouraged (73 steps).
 Proof modification of "axac" is discouraged (55 steps).
 Proof modification of "axac2" is discouraged (108 steps).
 Proof modification of "axac3" is discouraged (74 steps).
+Proof modification of "axbndOLD" is discouraged (75 steps).
 Proof modification of "axc10" is discouraged (37 steps).
 Proof modification of "axc11-o" is discouraged (47 steps).
 Proof modification of "axc11n-16" is discouraged (154 steps).
@@ -18337,6 +18342,7 @@ Proof modification of "axc711toc7" is discouraged (37 steps).
 Proof modification of "axc7eOLD" is discouraged (14 steps).
 Proof modification of "axext3ALT" is discouraged (57 steps).
 Proof modification of "axfrege8" is discouraged (31 steps).
+Proof modification of "axi12OLD" is discouraged (76 steps).
 Proof modification of "axnul" is discouraged (36 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
 Proof modification of "axtglowdim2OLD" is discouraged (115 steps).
@@ -19474,7 +19480,6 @@ Proof modification of "numclwwlk2lem3OLD" is discouraged (66 steps).
 Proof modification of "numclwwlk2lem3OLDOLD" is discouraged (66 steps).
 Proof modification of "numclwwlk3lemOLD" is discouraged (349 steps).
 Proof modification of "numclwwlkovgOLD" is discouraged (110 steps).
-Proof modification of "numclwwlkovgelOLD" is discouraged (115 steps).
 Proof modification of "numclwwlkovhOLD" is discouraged (108 steps).
 Proof modification of "ogrpinvOLD" is discouraged (149 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
