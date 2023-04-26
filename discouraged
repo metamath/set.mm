@@ -4231,6 +4231,15 @@
 "crngcALTV" is used by "rngcvalALTV".
 "csbopabgALT" is used by "csbcnvgALT".
 "cshnzOLD" is used by "0csh0OLD".
+"cspliceOLD" is used by "gsumsplOLD"
+"cspliceOLD" is used by "splclOLD"
+"cspliceOLD" is used by "splfv1OLD"
+"cspliceOLD" is used by "splfv2aOLD"
+"cspliceOLD" is used by "splidOLD"
+"cspliceOLD" is used by "spllenOLD"
+"cspliceOLD" is used by "splval2OLD"
+"cspliceOLD" is used by "splvalOLD"
+"cspliceOLD" is used by "splvalpfxOLD"
 "cvati" is used by "cvbr4i".
 "cvbr" is used by "cvbr2".
 "cvbr" is used by "cvcon3".
@@ -14671,6 +14680,7 @@ New usage of "csbxpgVD" is discouraged (0 uses).
 New usage of "cshfnOLD" is discouraged (0 uses).
 New usage of "cshnzOLD" is discouraged (1 uses).
 New usage of "csmdsymi" is discouraged (0 uses).
+New usage of "cspliceOLD" is discouraged (9 uses).
 New usage of "cvati" is discouraged (1 uses).
 New usage of "cvbr" is discouraged (4 uses).
 New usage of "cvbr2" is discouraged (2 uses).
