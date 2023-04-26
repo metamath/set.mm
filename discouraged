@@ -4231,6 +4231,15 @@
 "crngcALTV" is used by "rngcvalALTV".
 "csbopabgALT" is used by "csbcnvgALT".
 "cshnzOLD" is used by "0csh0OLD".
+"cspliceOLD" is used by "gsumsplOLD".
+"cspliceOLD" is used by "splclOLD".
+"cspliceOLD" is used by "splfv1OLD".
+"cspliceOLD" is used by "splfv2aOLD".
+"cspliceOLD" is used by "splidOLD".
+"cspliceOLD" is used by "spllenOLD".
+"cspliceOLD" is used by "splval2OLD".
+"cspliceOLD" is used by "splvalOLD".
+"cspliceOLD" is used by "splvalpfxOLD".
 "cvati" is used by "cvbr4i".
 "cvbr" is used by "cvbr2".
 "cvbr" is used by "cvcon3".
@@ -14674,6 +14683,7 @@ New usage of "csbxpgVD" is discouraged (0 uses).
 New usage of "cshfnOLD" is discouraged (0 uses).
 New usage of "cshnzOLD" is discouraged (1 uses).
 New usage of "csmdsymi" is discouraged (0 uses).
+New usage of "cspliceOLD" is discouraged (9 uses).
 New usage of "cvati" is discouraged (1 uses).
 New usage of "cvbr" is discouraged (4 uses).
 New usage of "cvbr2" is discouraged (2 uses).
@@ -14876,7 +14886,6 @@ New usage of "dfhnorm2" is discouraged (3 uses).
 New usage of "dfid2" is discouraged (1 uses).
 New usage of "dfid3" is discouraged (1 uses).
 New usage of "dfiop2" is discouraged (3 uses).
-New usage of "dfiota4OLD" is discouraged (0 uses).
 New usage of "dfmo" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfsn2ALT" is discouraged (0 uses).
@@ -16751,7 +16760,6 @@ New usage of "nmoxr" is discouraged (7 uses).
 New usage of "nn0cniOLD" is discouraged (0 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nn0indALT" is discouraged (3 uses).
-New usage of "nn0pnfge0OLD" is discouraged (0 uses).
 New usage of "nn0sscnOLD" is discouraged (0 uses).
 New usage of "nncniOLD" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
@@ -18698,7 +18706,6 @@ Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfcleq" is discouraged (10 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dfeuOLD" is discouraged (33 steps).
-Proof modification of "dfiota4OLD" is discouraged (40 steps).
 Proof modification of "dfmo" is discouraged (142 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
 Proof modification of "dfvd1imp" is discouraged (10 steps).
@@ -19444,7 +19451,6 @@ Proof modification of "nmounbseqiALT" is discouraged (146 steps).
 Proof modification of "nn0cniOLD" is discouraged (5 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nn0indALT" is discouraged (15 steps).
-Proof modification of "nn0pnfge0OLD" is discouraged (26 steps).
 Proof modification of "nn0sscnOLD" is discouraged (6 steps).
 Proof modification of "nncniOLD" is discouraged (5 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
