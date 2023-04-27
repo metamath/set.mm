@@ -4287,6 +4287,7 @@
 "cvpss" is used by "cvnsym".
 "cvpss" is used by "cvntr".
 "cvr2N" is used by "cvrval4N".
+"dedtOLD" is used by "con3ALTOLD".
 "df-0" is used by "ax1ne0".
 "df-0" is used by "axi2m1".
 "df-0" is used by "axpre-mulgt0".
@@ -5665,6 +5666,7 @@
 "elhmop" is used by "idhmop".
 "elhmop" is used by "lnophmi".
 "elhmop" is used by "pjhmopi".
+"elimhOLD" is used by "con3ALTOLD".
 "elimnv" is used by "elimph".
 "elimnvu" is used by "ajfun".
 "elimnvu" is used by "imsmet".
@@ -14655,6 +14657,7 @@ New usage of "com3rgbi" is discouraged (1 uses).
 New usage of "compneOLD" is discouraged (0 uses).
 New usage of "con3ALT" is discouraged (0 uses).
 New usage of "con3ALT2" is discouraged (0 uses).
+New usage of "con3ALTOLD" is discouraged (0 uses).
 New usage of "con3ALTVD" is discouraged (0 uses).
 New usage of "con5" is discouraged (1 uses).
 New usage of "con5VD" is discouraged (0 uses).
@@ -14715,6 +14718,7 @@ New usage of "daraptiALT" is discouraged (0 uses).
 New usage of "dariiALT" is discouraged (0 uses).
 New usage of "datisiOLD" is discouraged (0 uses).
 New usage of "decmul1OLD" is discouraged (0 uses).
+New usage of "dedtOLD" is discouraged (1 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-0" is discouraged (5 uses).
 New usage of "df-0o" is discouraged (1 uses).
@@ -15291,6 +15295,7 @@ New usage of "elghomOLD" is discouraged (5 uses).
 New usage of "elghomlem1OLD" is discouraged (1 uses).
 New usage of "elghomlem2OLD" is discouraged (1 uses).
 New usage of "elhmop" is discouraged (10 uses).
+New usage of "elimhOLD" is discouraged (1 uses).
 New usage of "eliminable1" is discouraged (0 uses).
 New usage of "eliminable2a" is discouraged (0 uses).
 New usage of "eliminable2b" is discouraged (0 uses).
@@ -18674,8 +18679,9 @@ Proof modification of "cnncvsmulassdemo" is discouraged (95 steps).
 Proof modification of "cnvoprabOLD" is discouraged (262 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
 Proof modification of "compneOLD" is discouraged (89 steps).
-Proof modification of "con3ALT" is discouraged (63 steps).
+Proof modification of "con3ALT" is discouraged (54 steps).
 Proof modification of "con3ALT2" is discouraged (14 steps).
+Proof modification of "con3ALTOLD" is discouraged (63 steps).
 Proof modification of "con3ALTVD" is discouraged (51 steps).
 Proof modification of "con5" is discouraged (10 steps).
 Proof modification of "con5VD" is discouraged (47 steps).
@@ -18701,6 +18707,7 @@ Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "datisiOLD" is discouraged (26 steps).
 Proof modification of "decmul1OLD" is discouraged (119 steps).
+Proof modification of "dedtOLD" is discouraged (19 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfac2OLD" is discouraged (822 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
@@ -18922,6 +18929,7 @@ Proof modification of "elfvdmOLD" is discouraged (23 steps).
 Proof modification of "elghomOLD" is discouraged (117 steps).
 Proof modification of "elghomlem1OLD" is discouraged (232 steps).
 Proof modification of "elghomlem2OLD" is discouraged (195 steps).
+Proof modification of "elimhOLD" is discouraged (41 steps).
 Proof modification of "eliminable1" is discouraged (4 steps).
 Proof modification of "eliminable2a" is discouraged (7 steps).
 Proof modification of "eliminable2b" is discouraged (7 steps).
