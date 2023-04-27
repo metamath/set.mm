@@ -16836,6 +16836,7 @@ New usage of "nqpr" is discouraged (1 uses).
 New usage of "nrex1" is discouraged (2 uses).
 New usage of "nsmallnq" is discouraged (3 uses).
 New usage of "nsnlpligALT" is discouraged (0 uses).
+New usage of "nulmoOLD" is discouraged (0 uses).
 New usage of "numclwlk2lem2f1oOLD" is discouraged (1 uses).
 New usage of "numclwlk2lem2f1oOLDOLD" is discouraged (1 uses).
 New usage of "numclwlk2lem2fOLD" is discouraged (1 uses).
@@ -19465,6 +19466,7 @@ Proof modification of "notnotrALT2" is discouraged (2 steps).
 Proof modification of "notnotrALTVD" is discouraged (34 steps).
 Proof modification of "notnotriALT" is discouraged (7 steps).
 Proof modification of "nsnlpligALT" is discouraged (110 steps).
+Proof modification of "nulmoOLD" is discouraged (36 steps).
 Proof modification of "numclwlk2lem2f1oOLD" is discouraged (848 steps).
 Proof modification of "numclwlk2lem2f1oOLDOLD" is discouraged (842 steps).
 Proof modification of "numclwlk2lem2fOLD" is discouraged (814 steps).
