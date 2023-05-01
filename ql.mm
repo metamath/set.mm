@@ -10865,9 +10865,9 @@ latexdef "^" as "\wedge ";
 latexdef "0" as "0";
 latexdef "1" as "1";
 latexdef "'" as "'";
-latexdef "wff" as "{\rm wff}";
-latexdef "term" as "{\rm term}";
-latexdef "|-" as "";
+latexdef "wff" as "\mathrm{wff}";
+latexdef "term" as "\mathrm{term}";
+latexdef "|-" as "\vdash";
 latexdef "C" as "C";
 latexdef "," as ",";
 latexdef "=<" as "\le ";
@@ -10888,7 +10888,7 @@ latexdef "==2" as "\equiv_2";
 latexdef "==3" as "\equiv_3";
 latexdef "==4" as "\equiv_4";
 latexdef "==5" as "\equiv_5";
-latexdef "==OA" as "\equiv_{\mathrm{OA}}";
+latexdef "==OA" as "\equiv_\mathrm{OA}";
 
 /* End of typesetting definition section */
 $)
