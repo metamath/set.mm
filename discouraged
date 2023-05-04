@@ -13173,6 +13173,8 @@
 "wlkwwlksurOLD" is used by "wlkwwlkbijOLD".
 "wrdcctswrdOLD" is used by "2clwwlk2clwwlkOLD".
 "wrdcctswrdOLD" is used by "lencctswrdOLD".
+"wrdnfiOLD" is used by "clwwlknfiOLD".
+"wrdnfiOLD" is used by "wwlksnfiOLD".
 "wvd2" is used by "dfvd2".
 "wvd2" is used by "dfvd2i".
 "wvd2" is used by "dfvd2imp".
@@ -14553,6 +14555,7 @@ New usage of "clwwlkfOLD" is discouraged (2 uses).
 New usage of "clwwlkfoOLD" is discouraged (1 uses).
 New usage of "clwwlkfvOLD" is discouraged (2 uses).
 New usage of "clwwlkinwwlkOLD" is discouraged (1 uses).
+New usage of "clwwlknfiOLD" is discouraged (0 uses).
 New usage of "clwwlknonclwlknonenOLD" is discouraged (0 uses).
 New usage of "clwwlknonclwlknonf1oOLD" is discouraged (2 uses).
 New usage of "clwwlkvbijOLD" is discouraged (0 uses).
@@ -14683,6 +14686,7 @@ New usage of "cvdmd" is discouraged (1 uses).
 New usage of "cvexch" is discouraged (3 uses).
 New usage of "cvexchi" is discouraged (1 uses).
 New usage of "cvexchlem" is discouraged (1 uses).
+New usage of "cvjustOLD" is discouraged (0 uses).
 New usage of "cvlexch4N" is discouraged (1 uses).
 New usage of "cvlposN" is discouraged (0 uses).
 New usage of "cvmd" is discouraged (2 uses).
@@ -18099,6 +18103,7 @@ New usage of "wrdeqs1catOLD" is discouraged (0 uses).
 New usage of "wrdexgOLD" is discouraged (0 uses).
 New usage of "wrdindOLD" is discouraged (0 uses).
 New usage of "wrdlndmOLD" is discouraged (0 uses).
+New usage of "wrdnfiOLD" is discouraged (2 uses).
 New usage of "wrdsplexOLD" is discouraged (0 uses).
 New usage of "wrdvOLD" is discouraged (0 uses).
 New usage of "wvd2" is discouraged (5 uses).
@@ -18127,6 +18132,7 @@ New usage of "wwlksnextproplem2OLD" is discouraged (1 uses).
 New usage of "wwlksnextproplem3OLD" is discouraged (1 uses).
 New usage of "wwlksnextsurOLD" is discouraged (1 uses).
 New usage of "wwlksnextwrdOLD" is discouraged (2 uses).
+New usage of "wwlksnfiOLD" is discouraged (0 uses).
 New usage of "wwlksnredOLD" is discouraged (2 uses).
 New usage of "wwlksnredwwlkn0OLD" is discouraged (1 uses).
 New usage of "wwlksnredwwlknOLD" is discouraged (1 uses).
@@ -18657,6 +18663,7 @@ Proof modification of "clwwlkfOLD" is discouraged (1079 steps).
 Proof modification of "clwwlkfoOLD" is discouraged (317 steps).
 Proof modification of "clwwlkfvOLD" is discouraged (26 steps).
 Proof modification of "clwwlkinwwlkOLD" is discouraged (891 steps).
+Proof modification of "clwwlknfiOLD" is discouraged (112 steps).
 Proof modification of "clwwlknonclwlknonenOLD" is discouraged (99 steps).
 Proof modification of "clwwlknonclwlknonf1oOLD" is discouraged (417 steps).
 Proof modification of "clwwlkvbijOLD" is discouraged (481 steps).
@@ -18698,6 +18705,7 @@ Proof modification of "csbunigVD" is discouraged (302 steps).
 Proof modification of "csbxpgVD" is discouraged (538 steps).
 Proof modification of "cshfnOLD" is discouraged (165 steps).
 Proof modification of "cshnzOLD" is discouraged (93 steps).
+Proof modification of "cvjustOLD" is discouraged (38 steps).
 Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "datisiOLD" is discouraged (26 steps).
@@ -20009,6 +20017,7 @@ Proof modification of "wrdeqs1catOLD" is discouraged (191 steps).
 Proof modification of "wrdexgOLD" is discouraged (113 steps).
 Proof modification of "wrdindOLD" is discouraged (621 steps).
 Proof modification of "wrdlndmOLD" is discouraged (42 steps).
+Proof modification of "wrdnfiOLD" is discouraged (79 steps).
 Proof modification of "wrdsplexOLD" is discouraged (162 steps).
 Proof modification of "wrdvOLD" is discouraged (42 steps).
 Proof modification of "wwlksm1edgOLD" is discouraged (700 steps).
@@ -20024,6 +20033,7 @@ Proof modification of "wwlksnextproplem2OLD" is discouraged (418 steps).
 Proof modification of "wwlksnextproplem3OLD" is discouraged (592 steps).
 Proof modification of "wwlksnextsurOLD" is discouraged (623 steps).
 Proof modification of "wwlksnextwrdOLD" is discouraged (582 steps).
+Proof modification of "wwlksnfiOLD" is discouraged (305 steps).
 Proof modification of "wwlksnredOLD" is discouraged (805 steps).
 Proof modification of "wwlksnredwwlkn0OLD" is discouraged (400 steps).
 Proof modification of "wwlksnredwwlknOLD" is discouraged (516 steps).
