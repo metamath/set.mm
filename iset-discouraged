@@ -171,7 +171,6 @@
 "iseqcaopr" is used by "iseradd".
 "iseqcaopr2" is used by "iseqcaopr".
 "iseqcaopr3" is used by "iseqcaopr2".
-"iseqcl" is used by "fisum".
 "iseqcl" is used by "iseqcaopr2".
 "iseqcl" is used by "iseqcoll".
 "iseqcl" is used by "iseqp1".
@@ -183,7 +182,6 @@
 "iseqeq1" is used by "zisum".
 "iseqeq2" is used by "seqeq2".
 "iseqeq3" is used by "cbvsum".
-"iseqeq3" is used by "fisum".
 "iseqeq3" is used by "isummo".
 "iseqeq3" is used by "seqeq3".
 "iseqeq3" is used by "sumeq1".
@@ -202,7 +200,6 @@
 "iseqfeq" is used by "fisumcvg2".
 "iseqfeq" is used by "zisum".
 "iseqfeq2" is used by "iseqid".
-"iseqfveq" is used by "fisum".
 "iseqfveq" is used by "fisumser".
 "iseqfveq" is used by "iseqfeq".
 "iseqfveq2" is used by "iseqfeq2".
@@ -235,7 +232,6 @@
 "iseradd" is used by "ser3add".
 "iserf" is used by "fisumcvg".
 "iserf" is used by "ser0f".
-"isummo" is used by "fisum".
 "isummolem2" is used by "isummo".
 "isummolem2a" is used by "isummolem2".
 "isummolem2a" is used by "zisum".
@@ -388,7 +384,6 @@ New usage of "elirr" is discouraged (16 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
-New usage of "fisum" is discouraged (0 uses).
 New usage of "fisumcvg" is discouraged (2 uses).
 New usage of "fisumcvg2" is discouraged (1 uses).
 New usage of "fisumser" is discouraged (2 uses).
@@ -400,17 +395,17 @@ New usage of "iseq1t" is discouraged (1 uses).
 New usage of "iseqcaopr" is discouraged (1 uses).
 New usage of "iseqcaopr2" is discouraged (1 uses).
 New usage of "iseqcaopr3" is discouraged (1 uses).
-New usage of "iseqcl" is discouraged (4 uses).
+New usage of "iseqcl" is discouraged (3 uses).
 New usage of "iseqcoll" is discouraged (1 uses).
 New usage of "iseqeq1" is discouraged (5 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
-New usage of "iseqeq3" is discouraged (7 uses).
+New usage of "iseqeq3" is discouraged (6 uses).
 New usage of "iseqex" is discouraged (4 uses).
 New usage of "iseqfcl" is discouraged (4 uses).
 New usage of "iseqfclt" is discouraged (2 uses).
 New usage of "iseqfeq" is discouraged (2 uses).
 New usage of "iseqfeq2" is discouraged (1 uses).
-New usage of "iseqfveq" is discouraged (3 uses).
+New usage of "iseqfveq" is discouraged (2 uses).
 New usage of "iseqfveq2" is discouraged (2 uses).
 New usage of "iseqid" is discouraged (2 uses).
 New usage of "iseqid2" is discouraged (2 uses).
@@ -423,7 +418,7 @@ New usage of "iseqvalt" is discouraged (3 uses).
 New usage of "iser0" is discouraged (1 uses).
 New usage of "iseradd" is discouraged (1 uses).
 New usage of "iserf" is discouraged (2 uses).
-New usage of "isummo" is discouraged (1 uses).
+New usage of "isummo" is discouraged (0 uses).
 New usage of "isummolem2" is discouraged (1 uses).
 New usage of "isummolem2a" is discouraged (2 uses).
 New usage of "isummolem3" is discouraged (2 uses).
