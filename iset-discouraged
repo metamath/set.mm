@@ -150,7 +150,6 @@
 "eu3h" is used by "2eu4".
 "eu3h" is used by "eu3".
 "eu3h" is used by "mo2r".
-"fisum" is used by "fsum3".
 "fisum" is used by "fsumadd".
 "fisum" is used by "fsumf1o".
 "fisum" is used by "sumsnf".
@@ -393,7 +392,7 @@ New usage of "elirr" is discouraged (16 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
-New usage of "fisum" is discouraged (4 uses).
+New usage of "fisum" is discouraged (3 uses).
 New usage of "fisumcvg" is discouraged (2 uses).
 New usage of "fisumcvg2" is discouraged (1 uses).
 New usage of "fisumser" is discouraged (2 uses).
