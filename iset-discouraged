@@ -240,6 +240,7 @@
 "iser0" is used by "ser0f".
 "iserf" is used by "fisumcvg".
 "iserf" is used by "ser0f".
+"isummo" is used by "fisum".
 "isummolem2" is used by "isummo".
 "isummolem2a" is used by "isummolem2".
 "isummolem2a" is used by "zisum".
@@ -426,6 +427,7 @@ New usage of "iseqval" is discouraged (4 uses).
 New usage of "iseqvalt" is discouraged (3 uses).
 New usage of "iser0" is discouraged (1 uses).
 New usage of "iserf" is discouraged (2 uses).
+New usage of "isummo" is discouraged (1 uses).
 New usage of "isummolem2" is discouraged (1 uses).
 New usage of "isummolem2a" is discouraged (2 uses).
 New usage of "isummolem3" is discouraged (2 uses).
