@@ -277,7 +277,6 @@
 "strnfvn" is used by "strsl0".
 "zisum" is used by "fisumsers".
 "zisum" is used by "iisum".
-"zisum" is used by "isumss".
 New usage of "0cnALT" is discouraged (0 uses).
 New usage of "0reALT" is discouraged (0 uses).
 New usage of "19.21h" is discouraged (3 uses).
@@ -448,7 +447,7 @@ New usage of "strnfvn" is discouraged (3 uses).
 New usage of "tfri1dALT" is discouraged (0 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
-New usage of "zisum" is discouraged (3 uses).
+New usage of "zisum" is discouraged (2 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "a9evsep" is discouraged (63 steps).
