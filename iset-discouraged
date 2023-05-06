@@ -155,6 +155,7 @@
 "fisumcvg2" is used by "fisumsers".
 "fisumser" is used by "fsum3ser".
 "fisumser" is used by "isumclim3".
+"fisumsers" is used by "fisumser".
 "hbs1" is used by "eu1".
 "hbs1" is used by "hbab1".
 "hbs1" is used by "mopick".
@@ -382,6 +383,7 @@ New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
 New usage of "fisumcvg" is discouraged (2 uses).
 New usage of "fisumcvg2" is discouraged (1 uses).
 New usage of "fisumser" is discouraged (2 uses).
+New usage of "fisumsers" is discouraged (1 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
