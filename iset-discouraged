@@ -176,7 +176,6 @@
 "iseqcl" is used by "iseqp1".
 "iseqcoll" is used by "isummolem2a".
 "iseqeq1" is used by "iseqid".
-"iseqeq1" is used by "isummolem2".
 "iseqeq1" is used by "seqeq1".
 "iseqeq1" is used by "zisum".
 "iseqeq2" is used by "seqeq2".
@@ -230,7 +229,6 @@
 "iseradd" is used by "ser3add".
 "iserf" is used by "fisumcvg".
 "iserf" is used by "ser0f".
-"isummolem2a" is used by "isummolem2".
 "isummolem2a" is used by "zisum".
 "isummolem3" is used by "isummolem2a".
 "isumrb" is used by "zisum".
@@ -392,7 +390,7 @@ New usage of "iseqcaopr2" is discouraged (1 uses).
 New usage of "iseqcaopr3" is discouraged (1 uses).
 New usage of "iseqcl" is discouraged (3 uses).
 New usage of "iseqcoll" is discouraged (1 uses).
-New usage of "iseqeq1" is discouraged (4 uses).
+New usage of "iseqeq1" is discouraged (3 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
 New usage of "iseqeq3" is discouraged (5 uses).
 New usage of "iseqex" is discouraged (4 uses).
@@ -413,8 +411,7 @@ New usage of "iseqvalt" is discouraged (3 uses).
 New usage of "iser0" is discouraged (1 uses).
 New usage of "iseradd" is discouraged (1 uses).
 New usage of "iserf" is discouraged (2 uses).
-New usage of "isummolem2" is discouraged (0 uses).
-New usage of "isummolem2a" is discouraged (2 uses).
+New usage of "isummolem2a" is discouraged (1 uses).
 New usage of "isummolem3" is discouraged (1 uses).
 New usage of "isumrb" is discouraged (1 uses).
 New usage of "mathbox" is discouraged (0 uses).
