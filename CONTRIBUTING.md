@@ -40,9 +40,7 @@ If you're contributing to set.mm or iset.mm, take a look at its
 
 At some point you should join the
 [Metamath mailing list](https://groups.google.com/g/metamath).
-If you're seriously working on proofs, we'd love
-to help you get started!
-
+If you're seriously working on proofs, we'd love to help you get started!
 
 For contributing a final proof once you have one,
 you'll basically create a "pull request" on GitHub to request
