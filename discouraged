@@ -13392,8 +13392,12 @@ New usage of "7cnOLD" is discouraged (0 uses).
 New usage of "8cnOLD" is discouraged (0 uses).
 New usage of "9cnOLD" is discouraged (0 uses).
 New usage of "a1ii" is discouraged (0 uses).
+New usage of "abbi2dvOLD" is discouraged (0 uses).
+New usage of "abbi2iOLD" is discouraged (0 uses).
 New usage of "abbidOLD" is discouraged (0 uses).
+New usage of "abbidvOLD" is discouraged (0 uses).
 New usage of "abbiiOLD" is discouraged (0 uses).
+New usage of "abbiiOLDOLD" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (4 uses).
 New usage of "ablo4" is discouraged (3 uses).
 New usage of "ablocom" is discouraged (6 uses).
@@ -14521,6 +14525,7 @@ New usage of "chub2i" is discouraged (24 uses).
 New usage of "chunssji" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
+New usage of "clelsb3fOLD" is discouraged (0 uses).
 New usage of "clmgmOLD" is discouraged (1 uses).
 New usage of "clwlkclwwlk2OLD" is discouraged (0 uses).
 New usage of "clwlkclwwlkOLD" is discouraged (2 uses).
@@ -18259,8 +18264,12 @@ Proof modification of "7cnOLD" is discouraged (3 steps).
 Proof modification of "8cnOLD" is discouraged (3 steps).
 Proof modification of "9cnOLD" is discouraged (3 steps).
 Proof modification of "a1ii" is discouraged (1 steps).
+Proof modification of "abbi2dvOLD" is discouraged (24 steps).
+Proof modification of "abbi2iOLD" is discouraged (18 steps).
 Proof modification of "abbidOLD" is discouraged (24 steps).
-Proof modification of "abbiiOLD" is discouraged (17 steps).
+Proof modification of "abbidvOLD" is discouraged (9 steps).
+Proof modification of "abbiiOLD" is discouraged (38 steps).
+Proof modification of "abbiiOLDOLD" is discouraged (17 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "ad5ant123OLD" is discouraged (45 steps).
@@ -18637,6 +18646,7 @@ Proof modification of "cesaroOLD" is discouraged (28 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleljustALT2" is discouraged (25 steps).
+Proof modification of "clelsb3fOLD" is discouraged (65 steps).
 Proof modification of "clmgmOLD" is discouraged (50 steps).
 Proof modification of "clwlkclwwlk2OLD" is discouraged (302 steps).
 Proof modification of "clwlkclwwlkOLD" is discouraged (686 steps).
