@@ -5926,12 +5926,55 @@ numbers).</TD>
 <TD><I>none</I></TD>
 </TR>
 
-<TR>
-<TD>xrmax1 , xrmax2 , xrmin1 , xrmin2 , xrmaxeq , xrmineq ,
-xrmaxlt , xrltmin , xrmaxle , xrlemin ,
-max0sub , ifle</TD>
-<TD><I>none</I></TD>
-</TR>
+<tr>
+  <td>xrmax1</td>
+  <td>~ xrmax1sup</td>
+</tr>
+
+<tr>
+  <td>xrmax2</td>
+  <td>~ xrmax2sup</td>
+</tr>
+
+<tr>
+  <td>xrmin1 , xrmin2</td>
+  <td>~ xrmin1inf , ~ xrmin2inf</td>
+</tr>
+
+<tr>
+  <td>xrmaxeq</td>
+  <td>~ xrmaxleim</td>
+</tr>
+
+<tr>
+  <td>xrmineq</td>
+  <td>~ xrmineqinf</td>
+</tr>
+
+<tr>
+  <td>xrmaxlt</td>
+  <td>~ xrmaxltsup</td>
+</tr>
+
+<tr>
+  <td>xrltmin</td>
+  <td>~ xrltmininf</td>
+</tr>
+
+<tr>
+  <td>xrmaxle</td>
+  <td>~ xrmaxlesup</td>
+</tr>
+
+<tr>
+  <td>xrlemin</td>
+  <td>~ xrlemininf</td>
+</tr>
+
+<tr>
+  <td>max0sub , ifle</td>
+  <td><i>none</i></td>
+</tr>
 
 <TR>
   <TD>max1</TD>
@@ -6961,11 +7004,9 @@ or ~ ssfiexmid </TD>
 
 <TR>
   <TD>sermono</TD>
-  <TD>~ isermono</TD>
-  <TD>isermono requires that ` F ` be defined on ` ( ZZ>= `` M ) `
-  not merely ` ( M ... N ) ` as in sermono . Given that the intention is to
-  use this for infinite series, there may be no need to look
-  into whether this requirement can be relaxed.</TD>
+  <TD>~ ser3mono</TD>
+  <TD>ser3mono requires that ` F ` be defined on ` ( ZZ>= `` M ) `
+  not merely ` ( M ... N ) ` as in sermono .</TD>
 </TR>
 
 <TR>
@@ -6988,29 +7029,23 @@ or ~ ssfiexmid </TD>
 
 <TR>
   <TD>seqcaopr3</TD>
-  <TD>~ iseqcaopr3</TD>
-  <TD>iseqcaopr3 requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seqcaopr3 .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>~ seq3caopr3</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
   <TD>seqcaopr2</TD>
-  <TD>~ iseqcaopr2</TD>
-  <TD>iseqcaopr2 requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seqcaopr2 .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>~ seq3caopr2</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
   <TD>seqcaopr</TD>
-  <TD>~ iseqcaopr</TD>
-  <TD>iseqcaopr requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seqcaopr .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>~ seq3caopr</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
@@ -7025,19 +7060,15 @@ or ~ ssfiexmid </TD>
 <TR>
   <TD>seradd</TD>
   <TD>~ ser3add</TD>
-  <TD>iseradd requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seradd .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
   <TD>sersub</TD>
-  <TD>~ isersub</TD>
-  <TD>isersub requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in sersub .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>~ ser3sub</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
@@ -7062,7 +7093,9 @@ or ~ ssfiexmid </TD>
 
 <TR>
   <TD>seqz</TD>
-  <TD>~ iseqz</TD>
+  <TD>~ seq3z</TD>
+  <TD>The sequence has to be defined on ` ( ZZ>= `` M ) ` not just
+  ` ( M ... N ) `</TD>
 </TR>
 
 <TR>
@@ -7426,11 +7459,6 @@ than reals.</TD>
   <TD>faclbnd4 , faclbnd5 , and lemmas</TD>
   <TD><I>none</I></TD>
   <TD>Presumably provable; unused in set.mm.</TD>
-</TR>
-
-<TR>
-  <TD>bcval5</TD>
-  <TD>~ ibcval5</TD>
 </TR>
 
 <TR>
@@ -8260,7 +8288,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>summo</TD>
-  <TD>~ isummo</TD>
+  <TD>~ summodc</TD>
 </TR>
 
 <TR>
@@ -8295,7 +8323,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>fsumsers</TD>
-  <TD>~ fisumsers</TD>
+  <TD>~ fsumsersdc</TD>
 </TR>
 
 <TR>
@@ -9789,6 +9817,16 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>~ xmeteq0 , ~ meteq0</td>
   <td>Presumably would require defining apartness on ` X ` or something
   along those lines.</td>
+</tr>
+
+<tr>
+  <td>xbln0</td>
+  <td>~ xblm</td>
+</tr>
+
+<tr>
+  <td>blin</td>
+  <td>~ blininf</td>
 </tr>
 
 <TR>
