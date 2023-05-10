@@ -16636,6 +16636,7 @@ New usage of "nfabd2OLD" is discouraged (0 uses).
 New usage of "nfabdOLD" is discouraged (0 uses).
 New usage of "nfan1OLDOLD" is discouraged (0 uses).
 New usage of "nfbii2OLD" is discouraged (0 uses).
+New usage of "nfcvfOLD" is discouraged (0 uses).
 New usage of "nfeqf2OLD" is discouraged (0 uses).
 New usage of "nfeqf2OLDOLD" is discouraged (0 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
@@ -19449,6 +19450,7 @@ Proof modification of "nfabd2OLD" is discouraged (75 steps).
 Proof modification of "nfabdOLD" is discouraged (18 steps).
 Proof modification of "nfan1OLDOLD" is discouraged (33 steps).
 Proof modification of "nfbii2OLD" is discouraged (15 steps).
+Proof modification of "nfcvfOLD" is discouraged (18 steps).
 Proof modification of "nfeqf2OLD" is discouraged (65 steps).
 Proof modification of "nfeqf2OLDOLD" is discouraged (52 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
