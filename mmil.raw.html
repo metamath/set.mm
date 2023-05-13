@@ -2767,7 +2767,7 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
-<TD>elfvex</TD>
+<TD>elfvex , elfvexd</TD>
 <TD>~ relelfvdm , ~ mptrcl</TD>
 </TR>
 
@@ -6153,10 +6153,10 @@ both in proving this and in using it.</TD>
 </TR>
 
 <TR>
-<TD>ge0xaddcl , ge0xmulcl</TD>
+<TD>ge0xmulcl</TD>
 <TD><I>none</I></TD>
-<TD>Rely on xaddcl and xmulcl ; see discussion in this list
-for those theorems.</TD>
+<TD>Relies on xmulcl ; see discussion in this list
+for that theorems.</TD>
 </TR>
 
 <TR>
@@ -9307,6 +9307,14 @@ intuitionistic and it is lightly used in set.mm</TD>
   are different without excluded middle).</TD>
 </TR>
 
+<tr>
+  <td>df-qtop , df-imas , df-qus , df-xps and all theorems defined
+  in terms of quotient topology, image structure, quotient ring,
+  and binary product</td>
+  <td><i>none</i></td>
+  <td>presumably could be added in some form</td>
+</tr>
+
 <TR>
   <TD>istop2g</TD>
   <TD>~ istopfin</TD>
@@ -9827,6 +9835,47 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>blin</td>
   <td>~ blininf</td>
+</tr>
+
+<tr>
+  <td>setsmsbas</td>
+  <td>~ setsmsbasg</td>
+</tr>
+
+<tr>
+  <td>setsmsds</td>
+  <td>~ setsmsdsg</td>
+</tr>
+
+<tr>
+  <td>setsmstset</td>
+  <td>~ setsmstsetg</td>
+</tr>
+
+<tr>
+  <td>setsmstopn , setsxms , setsms , tmsval , tmslem , tmsbas ,
+  tmsds , tmstopn , tmsxms , tmsms</td>
+  <td><i>none</i></td>
+  <td>Presumably could prove these or similar theorems, analogous
+  to ~ setsmsbasg</td>
+</tr>
+
+<tr>
+  <td>blcld</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on xrltnle</td>
+</tr>
+
+<tr>
+  <td>blcls</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on blcld</td>
+</tr>
+
+<tr>
+  <td>blsscls</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on blcls</td>
 </tr>
 
 <TR>
