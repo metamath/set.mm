@@ -16631,6 +16631,7 @@ New usage of "nannanOLD" is discouraged (0 uses).
 New usage of "nannotOLD" is discouraged (0 uses).
 New usage of "natded" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
+New usage of "nelne1OLD" is discouraged (0 uses).
 New usage of "nexmoOLD" is discouraged (0 uses).
 New usage of "nf5dvOLD" is discouraged (0 uses).
 New usage of "nf5riOLD" is discouraged (0 uses).
@@ -17241,6 +17242,7 @@ New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
 New usage of "pm110.643ALT" is discouraged (0 uses).
 New usage of "pm13.183OLD" is discouraged (0 uses).
+New usage of "pm13.18OLD" is discouraged (0 uses).
 New usage of "pm2.21ddALT" is discouraged (0 uses).
 New usage of "pm2.43bgbi" is discouraged (0 uses).
 New usage of "pm2.43cbi" is discouraged (2 uses).
@@ -19447,6 +19449,7 @@ Proof modification of "nanbi1OLD" is discouraged (32 steps).
 Proof modification of "nancomOLD" is discouraged (26 steps).
 Proof modification of "nannanOLD" is discouraged (32 steps).
 Proof modification of "nannotOLD" is discouraged (17 steps).
+Proof modification of "nelne1OLD" is discouraged (26 steps).
 Proof modification of "nexmoOLD" is discouraged (60 steps).
 Proof modification of "nf5dvOLD" is discouraged (20 steps).
 Proof modification of "nf5riOLD" is discouraged (13 steps).
@@ -19567,6 +19570,7 @@ Proof modification of "pilem3OLD" is discouraged (583 steps).
 Proof modification of "pm110.643" is discouraged (72 steps).
 Proof modification of "pm110.643ALT" is discouraged (35 steps).
 Proof modification of "pm13.183OLD" is discouraged (111 steps).
+Proof modification of "pm13.18OLD" is discouraged (28 steps).
 Proof modification of "pm2.21ddALT" is discouraged (10 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
