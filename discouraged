@@ -16632,6 +16632,7 @@ New usage of "nannotOLD" is discouraged (0 uses).
 New usage of "natded" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "nelne1OLD" is discouraged (0 uses).
+New usage of "nelne2OLD" is discouraged (0 uses).
 New usage of "nexmoOLD" is discouraged (0 uses).
 New usage of "nf5dvOLD" is discouraged (0 uses).
 New usage of "nf5riOLD" is discouraged (0 uses).
@@ -19450,6 +19451,7 @@ Proof modification of "nancomOLD" is discouraged (26 steps).
 Proof modification of "nannanOLD" is discouraged (32 steps).
 Proof modification of "nannotOLD" is discouraged (17 steps).
 Proof modification of "nelne1OLD" is discouraged (26 steps).
+Proof modification of "nelne2OLD" is discouraged (26 steps).
 Proof modification of "nexmoOLD" is discouraged (60 steps).
 Proof modification of "nf5dvOLD" is discouraged (20 steps).
 Proof modification of "nf5riOLD" is discouraged (13 steps).
