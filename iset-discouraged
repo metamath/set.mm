@@ -162,7 +162,6 @@
 "hbs1" is used by "mopick".
 "hbs1" is used by "nfs1v".
 "hbs1" is used by "sb9v".
-"iisum" is used by "isumclim".
 "iisum" is used by "isumclim3".
 "iseq1" is used by "iseqcaopr3".
 "iseq1" is used by "iseqcoll".
@@ -387,7 +386,7 @@ New usage of "fisumsers" is discouraged (1 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
-New usage of "iisum" is discouraged (2 uses).
+New usage of "iisum" is discouraged (1 uses).
 New usage of "iseq1" is discouraged (7 uses).
 New usage of "iseq1t" is discouraged (1 uses).
 New usage of "iseqcaopr" is discouraged (1 uses).
