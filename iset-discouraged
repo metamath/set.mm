@@ -153,7 +153,6 @@
 "eu3h" is used by "mo2r".
 "fisumcvg" is used by "fisumcvg2".
 "fisumcvg" is used by "isummolem2a".
-"fisumcvg2" is used by "fisumsers".
 "hbs1" is used by "eu1".
 "hbs1" is used by "hbab1".
 "hbs1" is used by "mopick".
@@ -269,7 +268,6 @@
 "strnfvn" is used by "baseval".
 "strnfvn" is used by "ndxarg".
 "strnfvn" is used by "strsl0".
-"zisum" is used by "fisumsers".
 New usage of "0cnALT" is discouraged (0 uses).
 New usage of "0reALT" is discouraged (0 uses).
 New usage of "19.21h" is discouraged (3 uses).
@@ -373,8 +371,7 @@ New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
 New usage of "fisumcvg" is discouraged (2 uses).
-New usage of "fisumcvg2" is discouraged (1 uses).
-New usage of "fisumsers" is discouraged (0 uses).
+New usage of "fisumcvg2" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
@@ -439,7 +436,7 @@ New usage of "strnfvn" is discouraged (3 uses).
 New usage of "tfri1dALT" is discouraged (0 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
-New usage of "zisum" is discouraged (1 uses).
+New usage of "zisum" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "a9evsep" is discouraged (63 steps).
