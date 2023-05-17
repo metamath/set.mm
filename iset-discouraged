@@ -155,14 +155,12 @@
 "fisumcvg" is used by "isummolem2a".
 "fisumcvg2" is used by "fisumsers".
 "fisumser" is used by "fsum3ser".
-"fisumser" is used by "isumclim3".
 "fisumsers" is used by "fisumser".
 "hbs1" is used by "eu1".
 "hbs1" is used by "hbab1".
 "hbs1" is used by "mopick".
 "hbs1" is used by "nfs1v".
 "hbs1" is used by "sb9v".
-"iisum" is used by "isumclim3".
 "iseq1" is used by "iseqcaopr3".
 "iseq1" is used by "iseqcoll".
 "iseq1" is used by "iseqfveq".
@@ -188,7 +186,6 @@
 "iseqeq3" is used by "sumeq2".
 "iseqeq3" is used by "zisum".
 "iseqex" is used by "fisumcvg".
-"iseqex" is used by "isumclim3".
 "iseqex" is used by "isumrb".
 "iseqex" is used by "seqex".
 "iseqfcl" is used by "iseqfeq".
@@ -381,12 +378,12 @@ New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
 New usage of "fisumcvg" is discouraged (2 uses).
 New usage of "fisumcvg2" is discouraged (1 uses).
-New usage of "fisumser" is discouraged (2 uses).
+New usage of "fisumser" is discouraged (1 uses).
 New usage of "fisumsers" is discouraged (1 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
-New usage of "iisum" is discouraged (1 uses).
+New usage of "iisum" is discouraged (0 uses).
 New usage of "iseq1" is discouraged (7 uses).
 New usage of "iseq1t" is discouraged (1 uses).
 New usage of "iseqcaopr" is discouraged (1 uses).
@@ -397,7 +394,7 @@ New usage of "iseqcoll" is discouraged (1 uses).
 New usage of "iseqeq1" is discouraged (3 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
 New usage of "iseqeq3" is discouraged (5 uses).
-New usage of "iseqex" is discouraged (4 uses).
+New usage of "iseqex" is discouraged (3 uses).
 New usage of "iseqfcl" is discouraged (4 uses).
 New usage of "iseqfclt" is discouraged (2 uses).
 New usage of "iseqfeq" is discouraged (2 uses).
