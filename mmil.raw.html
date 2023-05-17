@@ -2767,7 +2767,7 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
-<TD>elfvex</TD>
+<TD>elfvex , elfvexd</TD>
 <TD>~ relelfvdm , ~ mptrcl</TD>
 </TR>
 
@@ -5926,12 +5926,55 @@ numbers).</TD>
 <TD><I>none</I></TD>
 </TR>
 
-<TR>
-<TD>xrmax1 , xrmax2 , xrmin1 , xrmin2 , xrmaxeq , xrmineq ,
-xrmaxlt , xrltmin , xrmaxle , xrlemin ,
-max0sub , ifle</TD>
-<TD><I>none</I></TD>
-</TR>
+<tr>
+  <td>xrmax1</td>
+  <td>~ xrmax1sup</td>
+</tr>
+
+<tr>
+  <td>xrmax2</td>
+  <td>~ xrmax2sup</td>
+</tr>
+
+<tr>
+  <td>xrmin1 , xrmin2</td>
+  <td>~ xrmin1inf , ~ xrmin2inf</td>
+</tr>
+
+<tr>
+  <td>xrmaxeq</td>
+  <td>~ xrmaxleim</td>
+</tr>
+
+<tr>
+  <td>xrmineq</td>
+  <td>~ xrmineqinf</td>
+</tr>
+
+<tr>
+  <td>xrmaxlt</td>
+  <td>~ xrmaxltsup</td>
+</tr>
+
+<tr>
+  <td>xrltmin</td>
+  <td>~ xrltmininf</td>
+</tr>
+
+<tr>
+  <td>xrmaxle</td>
+  <td>~ xrmaxlesup</td>
+</tr>
+
+<tr>
+  <td>xrlemin</td>
+  <td>~ xrlemininf</td>
+</tr>
+
+<tr>
+  <td>max0sub , ifle</td>
+  <td><i>none</i></td>
+</tr>
 
 <TR>
   <TD>max1</TD>
@@ -6110,10 +6153,10 @@ both in proving this and in using it.</TD>
 </TR>
 
 <TR>
-<TD>ge0xaddcl , ge0xmulcl</TD>
+<TD>ge0xmulcl</TD>
 <TD><I>none</I></TD>
-<TD>Rely on xaddcl and xmulcl ; see discussion in this list
-for those theorems.</TD>
+<TD>Relies on xmulcl ; see discussion in this list
+for that theorems.</TD>
 </TR>
 
 <TR>
@@ -7017,10 +7060,8 @@ or ~ ssfiexmid </TD>
 <TR>
   <TD>seradd</TD>
   <TD>~ ser3add</TD>
-  <TD>iseradd requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seradd .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
@@ -8247,7 +8288,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>summo</TD>
-  <TD>~ isummo</TD>
+  <TD>~ summodc</TD>
 </TR>
 
 <TR>
@@ -8282,7 +8323,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>fsumsers</TD>
-  <TD>~ fisumsers</TD>
+  <TD>~ fsumsersdc</TD>
 </TR>
 
 <TR>
@@ -9266,6 +9307,14 @@ intuitionistic and it is lightly used in set.mm</TD>
   are different without excluded middle).</TD>
 </TR>
 
+<tr>
+  <td>df-qtop , df-imas , df-qus , df-xps and all theorems defined
+  in terms of quotient topology, image structure, quotient ring,
+  and binary product</td>
+  <td><i>none</i></td>
+  <td>presumably could be added in some form</td>
+</tr>
+
 <TR>
   <TD>istop2g</TD>
   <TD>~ istopfin</TD>
@@ -9785,22 +9834,48 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>blin</td>
-  <td><i>none</i></td>
-  <td>Presumably could be proved if the minimum is restated in terms of
-  ` inf ` and we have some theorems concerning the minimum of
-  two extended reals analogous to ~ ltmininf (and xrltmin in set.mm).</td>
+  <td>~ blininf</td>
 </tr>
 
 <tr>
-  <td>blin2</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof relies on blin</td>
+  <td>setsmsbas</td>
+  <td>~ setsmsbasg</td>
 </tr>
 
 <tr>
-  <td>blbas</td>
+  <td>setsmsds</td>
+  <td>~ setsmsdsg</td>
+</tr>
+
+<tr>
+  <td>setsmstset</td>
+  <td>~ setsmstsetg</td>
+</tr>
+
+<tr>
+  <td>setsmstopn , setsxms , setsms , tmsval , tmslem , tmsbas ,
+  tmsds , tmstopn , tmsxms , tmsms</td>
   <td><i>none</i></td>
-  <td>the set.mm proof relies on blin2</td>
+  <td>Presumably could prove these or similar theorems, analogous
+  to ~ setsmsbasg</td>
+</tr>
+
+<tr>
+  <td>blcld</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on xrltnle</td>
+</tr>
+
+<tr>
+  <td>blcls</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on blcld</td>
+</tr>
+
+<tr>
+  <td>blsscls</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on blcls</td>
 </tr>
 
 <TR>

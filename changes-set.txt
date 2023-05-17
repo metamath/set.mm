@@ -27,6 +27,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+16-May-23 subdivcomb1 [same]    moved from SF's mathbox to main set.mm
+ 9-May-23 eel0001   mpsyl4anc   moved from AS's mathbox to main set.mm
+ 9-May-23 fprb      [same]      moved from SF's mathbox to main set.mm
+ 9-May-23 el2v      [same]      moved from PM's mathbox to main set.mm
 30-Apr-23 qseq12    [same]      moved from PM's mathbox to main set.mm
 27-Apr-23 dedt      [same]      commuted consequent
 27-Apr-23 elimh     [same]      commuted consequent
