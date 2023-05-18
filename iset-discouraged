@@ -176,14 +176,12 @@
 "iseqeq3" is used by "sumeq1".
 "iseqeq3" is used by "sumeq2".
 "iseqex" is used by "seqex".
-"iseqfcl" is used by "iseqfeq".
 "iseqfcl" is used by "iseqfeq2".
 "iseqfcl" is used by "iseqsst".
 "iseqfcl" is used by "iserf".
 "iseqfclt" is used by "iseqp1t".
 "iseqfclt" is used by "iseqsst".
 "iseqfeq2" is used by "iseqid".
-"iseqfveq" is used by "iseqfeq".
 "iseqfveq2" is used by "iseqfeq2".
 "iseqfveq2" is used by "iseqfveq".
 "iseqid3s" is used by "iseqid".
@@ -362,11 +360,10 @@ New usage of "iseqeq1" is discouraged (2 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
 New usage of "iseqeq3" is discouraged (4 uses).
 New usage of "iseqex" is discouraged (1 uses).
-New usage of "iseqfcl" is discouraged (4 uses).
+New usage of "iseqfcl" is discouraged (3 uses).
 New usage of "iseqfclt" is discouraged (2 uses).
-New usage of "iseqfeq" is discouraged (0 uses).
 New usage of "iseqfeq2" is discouraged (1 uses).
-New usage of "iseqfveq" is discouraged (1 uses).
+New usage of "iseqfveq" is discouraged (0 uses).
 New usage of "iseqfveq2" is discouraged (2 uses).
 New usage of "iseqid" is discouraged (0 uses).
 New usage of "iseqid2" is discouraged (0 uses).
