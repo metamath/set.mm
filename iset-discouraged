@@ -151,7 +151,6 @@
 "eu3h" is used by "2eu4".
 "eu3h" is used by "eu3".
 "eu3h" is used by "mo2r".
-"fisumcvg" is used by "isummolem2a".
 "hbs1" is used by "eu1".
 "hbs1" is used by "hbab1".
 "hbs1" is used by "mopick".
@@ -171,7 +170,6 @@
 "iseqcl" is used by "iseqcaopr2".
 "iseqcl" is used by "iseqcoll".
 "iseqcl" is used by "iseqp1".
-"iseqcoll" is used by "isummolem2a".
 "iseqeq1" is used by "iseqid".
 "iseqeq1" is used by "seqeq1".
 "iseqeq2" is used by "seqeq2".
@@ -220,7 +218,6 @@
 "iseradd" is used by "ser3add".
 "iserf" is used by "fisumcvg".
 "iserf" is used by "ser0f".
-"isummolem3" is used by "isummolem2a".
 "mo3h" is used by "mo2dc".
 "mo3h" is used by "mo3".
 "mo3h" is used by "mo4f".
@@ -363,7 +360,7 @@ New usage of "elirr" is discouraged (16 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
-New usage of "fisumcvg" is discouraged (1 uses).
+New usage of "fisumcvg" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
@@ -373,7 +370,7 @@ New usage of "iseqcaopr" is discouraged (1 uses).
 New usage of "iseqcaopr2" is discouraged (1 uses).
 New usage of "iseqcaopr3" is discouraged (1 uses).
 New usage of "iseqcl" is discouraged (3 uses).
-New usage of "iseqcoll" is discouraged (1 uses).
+New usage of "iseqcoll" is discouraged (0 uses).
 New usage of "iseqeq1" is discouraged (2 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
 New usage of "iseqeq3" is discouraged (4 uses).
@@ -395,8 +392,7 @@ New usage of "iseqvalt" is discouraged (3 uses).
 New usage of "iser0" is discouraged (1 uses).
 New usage of "iseradd" is discouraged (1 uses).
 New usage of "iserf" is discouraged (2 uses).
-New usage of "isummolem2a" is discouraged (0 uses).
-New usage of "isummolem3" is discouraged (1 uses).
+New usage of "isummolem3" is discouraged (0 uses).
 New usage of "isumrb" is discouraged (0 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
