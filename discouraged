@@ -17340,6 +17340,7 @@ New usage of "raleqOLD" is discouraged (0 uses).
 New usage of "raleqbi1dvOLD" is discouraged (0 uses).
 New usage of "raleqbidvOLD" is discouraged (0 uses).
 New usage of "ralnex2OLD" is discouraged (0 uses).
+New usage of "ralnex3OLD" is discouraged (0 uses).
 New usage of "ralsngOLD" is discouraged (0 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rb-ax1" is discouraged (5 uses).
@@ -19609,6 +19610,7 @@ Proof modification of "raleqOLD" is discouraged (11 steps).
 Proof modification of "raleqbi1dvOLD" is discouraged (28 steps).
 Proof modification of "raleqbidvOLD" is discouraged (28 steps).
 Proof modification of "ralnex2OLD" is discouraged (46 steps).
+Proof modification of "ralnex3OLD" is discouraged (62 steps).
 Proof modification of "ralsngOLD" is discouraged (26 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
 Proof modification of "rb-ax1" is discouraged (32 steps).
