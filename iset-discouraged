@@ -158,7 +158,6 @@
 "iseq1t" is used by "iseqsst".
 "iseqcl" is used by "iseqp1".
 "iseqeq3" is used by "seqeq3".
-"iseqex" is used by "seqex".
 "iseqfcl" is used by "iseqsst".
 "iseqfclt" is used by "iseqp1t".
 "iseqfclt" is used by "iseqsst".
@@ -318,7 +317,7 @@ New usage of "iseq1" is discouraged (1 uses).
 New usage of "iseq1t" is discouraged (1 uses).
 New usage of "iseqcl" is discouraged (1 uses).
 New usage of "iseqeq3" is discouraged (1 uses).
-New usage of "iseqex" is discouraged (1 uses).
+New usage of "iseqex" is discouraged (0 uses).
 New usage of "iseqfcl" is discouraged (1 uses).
 New usage of "iseqfclt" is discouraged (2 uses).
 New usage of "iseqp1" is discouraged (1 uses).
