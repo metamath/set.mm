@@ -158,7 +158,6 @@
 "iseq1" is used by "iseqsst".
 "iseq1t" is used by "iseqsst".
 "iseqcl" is used by "iseqp1".
-"iseqeq2" is used by "seqeq2".
 "iseqeq3" is used by "cbvsum".
 "iseqeq3" is used by "seqeq3".
 "iseqeq3" is used by "sumeq1".
@@ -324,7 +323,7 @@ New usage of "idALT" is discouraged (0 uses).
 New usage of "iseq1" is discouraged (1 uses).
 New usage of "iseq1t" is discouraged (1 uses).
 New usage of "iseqcl" is discouraged (1 uses).
-New usage of "iseqeq2" is discouraged (1 uses).
+New usage of "iseqeq2" is discouraged (0 uses).
 New usage of "iseqeq3" is discouraged (4 uses).
 New usage of "iseqex" is discouraged (1 uses).
 New usage of "iseqfcl" is discouraged (1 uses).
