@@ -124,6 +124,8 @@
 "df-pnf" is used by "pnfnre".
 "df-pnf" is used by "pnfxr".
 "df-tru" is used by "tru".
+"dfsumdc" is used by "fsum3".
+"dfsumdc" is used by "zsumdc".
 "dvelimALT" is used by "hbsb4".
 "elirr" is used by "elirrv".
 "elirr" is used by "fiunsnnn".
@@ -157,10 +159,7 @@
 "iseq1" is used by "iseqsst".
 "iseq1t" is used by "iseqsst".
 "iseqcl" is used by "iseqp1".
-"iseqeq3" is used by "cbvsum".
 "iseqeq3" is used by "seqeq3".
-"iseqeq3" is used by "sumeq1".
-"iseqeq3" is used by "sumeq2".
 "iseqex" is used by "seqex".
 "iseqfcl" is used by "iseqsst".
 "iseqfclt" is used by "iseqp1t".
@@ -182,8 +181,6 @@
 "mo3h" is used by "moimv".
 "mo3h" is used by "mopick".
 "nfiseq" is used by "nfseq".
-"nfiseq" is used by "nfsum".
-"nfiseq" is used by "nfsum1".
 "nnindnn" is used by "nntopi".
 "opelopabsbALT" is used by "cnvopab".
 "opelopabsbALT" is used by "inopab".
@@ -307,6 +304,7 @@ New usage of "df-iseq" is discouraged (6 uses).
 New usage of "df-mnf" is discouraged (3 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-tru" is discouraged (1 uses).
+New usage of "dfsumdc" is discouraged (2 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
 New usage of "djulclALT" is discouraged (0 uses).
@@ -322,7 +320,7 @@ New usage of "idALT" is discouraged (0 uses).
 New usage of "iseq1" is discouraged (1 uses).
 New usage of "iseq1t" is discouraged (1 uses).
 New usage of "iseqcl" is discouraged (1 uses).
-New usage of "iseqeq3" is discouraged (4 uses).
+New usage of "iseqeq3" is discouraged (1 uses).
 New usage of "iseqex" is discouraged (1 uses).
 New usage of "iseqfcl" is discouraged (1 uses).
 New usage of "iseqfclt" is discouraged (2 uses).
@@ -332,7 +330,7 @@ New usage of "iseqval" is discouraged (4 uses).
 New usage of "iseqvalt" is discouraged (3 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
-New usage of "nfiseq" is discouraged (3 uses).
+New usage of "nfiseq" is discouraged (1 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnindnn" is discouraged (1 uses).
