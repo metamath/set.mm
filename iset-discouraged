@@ -160,8 +160,6 @@
 "iseq1" is used by "iseqid3s".
 "iseq1" is used by "iseqsst".
 "iseq1t" is used by "iseqsst".
-"iseqcaopr3" is used by "iseqcaopr2".
-"iseqcl" is used by "iseqcaopr2".
 "iseqcl" is used by "iseqp1".
 "iseqeq1" is used by "seqeq1".
 "iseqeq2" is used by "seqeq2".
@@ -336,9 +334,8 @@ New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
 New usage of "iseq1" is discouraged (3 uses).
 New usage of "iseq1t" is discouraged (1 uses).
-New usage of "iseqcaopr2" is discouraged (0 uses).
-New usage of "iseqcaopr3" is discouraged (1 uses).
-New usage of "iseqcl" is discouraged (2 uses).
+New usage of "iseqcaopr3" is discouraged (0 uses).
+New usage of "iseqcl" is discouraged (1 uses).
 New usage of "iseqeq1" is discouraged (1 uses).
 New usage of "iseqeq2" is discouraged (1 uses).
 New usage of "iseqeq3" is discouraged (4 uses).
