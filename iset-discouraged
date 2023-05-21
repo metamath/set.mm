@@ -125,7 +125,6 @@
 "df-pnf" is used by "pnfxr".
 "df-tru" is used by "tru".
 "dfsumdc" is used by "fsum3".
-"dfsumdc" is used by "zsumdc".
 "dvelimALT" is used by "hbsb4".
 "elirr" is used by "elirrv".
 "elirr" is used by "fiunsnnn".
@@ -304,7 +303,7 @@ New usage of "df-iseq" is discouraged (6 uses).
 New usage of "df-mnf" is discouraged (3 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-tru" is discouraged (1 uses).
-New usage of "dfsumdc" is discouraged (2 uses).
+New usage of "dfsumdc" is discouraged (1 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
 New usage of "djulclALT" is discouraged (0 uses).
