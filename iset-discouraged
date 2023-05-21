@@ -182,8 +182,6 @@
 "iseqvalt" is used by "iseq1t".
 "iseqvalt" is used by "iseqfclt".
 "iseqvalt" is used by "iseqp1t".
-"iser0" is used by "ser0f".
-"iserf" is used by "ser0f".
 "mo3h" is used by "mo2dc".
 "mo3h" is used by "mo3".
 "mo3h" is used by "mo4f".
@@ -343,8 +341,8 @@ New usage of "iseqp1" is discouraged (2 uses).
 New usage of "iseqp1t" is discouraged (1 uses).
 New usage of "iseqval" is discouraged (4 uses).
 New usage of "iseqvalt" is discouraged (3 uses).
-New usage of "iser0" is discouraged (1 uses).
-New usage of "iserf" is discouraged (1 uses).
+New usage of "iser0" is discouraged (0 uses).
+New usage of "iserf" is discouraged (0 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
 New usage of "nfiseq" is discouraged (3 uses).
