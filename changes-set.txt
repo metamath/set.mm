@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-May-23 frlmlvec  [same]      moved from SN's mathbox to main set.mm
 20-May-23 dfss7     [same]      moved from AV's mathbox to main set.mm
 18-May-23 fndmd     [same]      moved from GS's mathbox to main set.mm
 18-May-23 elpreimad [same]      moved from GS's mathbox to main set.mm
