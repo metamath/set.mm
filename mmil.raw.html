@@ -2767,7 +2767,7 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
-<TD>elfvex</TD>
+<TD>elfvex , elfvexd</TD>
 <TD>~ relelfvdm , ~ mptrcl</TD>
 </TR>
 
@@ -5926,12 +5926,55 @@ numbers).</TD>
 <TD><I>none</I></TD>
 </TR>
 
-<TR>
-<TD>xrmax1 , xrmax2 , xrmin1 , xrmin2 , xrmaxeq , xrmineq ,
-xrmaxlt , xrltmin , xrmaxle , xrlemin ,
-max0sub , ifle</TD>
-<TD><I>none</I></TD>
-</TR>
+<tr>
+  <td>xrmax1</td>
+  <td>~ xrmax1sup</td>
+</tr>
+
+<tr>
+  <td>xrmax2</td>
+  <td>~ xrmax2sup</td>
+</tr>
+
+<tr>
+  <td>xrmin1 , xrmin2</td>
+  <td>~ xrmin1inf , ~ xrmin2inf</td>
+</tr>
+
+<tr>
+  <td>xrmaxeq</td>
+  <td>~ xrmaxleim</td>
+</tr>
+
+<tr>
+  <td>xrmineq</td>
+  <td>~ xrmineqinf</td>
+</tr>
+
+<tr>
+  <td>xrmaxlt</td>
+  <td>~ xrmaxltsup</td>
+</tr>
+
+<tr>
+  <td>xrltmin</td>
+  <td>~ xrltmininf</td>
+</tr>
+
+<tr>
+  <td>xrmaxle</td>
+  <td>~ xrmaxlesup</td>
+</tr>
+
+<tr>
+  <td>xrlemin</td>
+  <td>~ xrlemininf</td>
+</tr>
+
+<tr>
+  <td>max0sub , ifle</td>
+  <td><i>none</i></td>
+</tr>
 
 <TR>
   <TD>max1</TD>
@@ -5994,6 +6037,11 @@ max0sub , ifle</TD>
   <TD>ltmin</TD>
   <TD>~ ltmininf</TD>
 </TR>
+
+<tr>
+  <td>lemaxle</td>
+  <td>~ maxle2</td>
+</tr>
 
 <TR>
 <TD>qsqueeze</TD>
@@ -6110,10 +6158,10 @@ both in proving this and in using it.</TD>
 </TR>
 
 <TR>
-<TD>ge0xaddcl , ge0xmulcl</TD>
+<TD>ge0xmulcl</TD>
 <TD><I>none</I></TD>
-<TD>Rely on xaddcl and xmulcl ; see discussion in this list
-for those theorems.</TD>
+<TD>Relies on xmulcl ; see discussion in this list
+for that theorems.</TD>
 </TR>
 
 <TR>
@@ -6961,11 +7009,9 @@ or ~ ssfiexmid </TD>
 
 <TR>
   <TD>sermono</TD>
-  <TD>~ isermono</TD>
-  <TD>isermono requires that ` F ` be defined on ` ( ZZ>= `` M ) `
-  not merely ` ( M ... N ) ` as in sermono . Given that the intention is to
-  use this for infinite series, there may be no need to look
-  into whether this requirement can be relaxed.</TD>
+  <TD>~ ser3mono</TD>
+  <TD>ser3mono requires that ` F ` be defined on ` ( ZZ>= `` M ) `
+  not merely ` ( M ... N ) ` as in sermono .</TD>
 </TR>
 
 <TR>
@@ -6988,29 +7034,23 @@ or ~ ssfiexmid </TD>
 
 <TR>
   <TD>seqcaopr3</TD>
-  <TD>~ iseqcaopr3</TD>
-  <TD>iseqcaopr3 requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seqcaopr3 .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>~ seq3caopr3</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
   <TD>seqcaopr2</TD>
-  <TD>~ iseqcaopr2</TD>
-  <TD>iseqcaopr2 requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seqcaopr2 .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>~ seq3caopr2</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
   <TD>seqcaopr</TD>
-  <TD>~ iseqcaopr</TD>
-  <TD>iseqcaopr requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seqcaopr .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>~ seq3caopr</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
@@ -7025,19 +7065,15 @@ or ~ ssfiexmid </TD>
 <TR>
   <TD>seradd</TD>
   <TD>~ ser3add</TD>
-  <TD>iseradd requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seradd .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
   <TD>sersub</TD>
-  <TD>~ isersub</TD>
-  <TD>isersub requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in sersub .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>~ ser3sub</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
@@ -7062,7 +7098,9 @@ or ~ ssfiexmid </TD>
 
 <TR>
   <TD>seqz</TD>
-  <TD>~ iseqz</TD>
+  <TD>~ seq3z</TD>
+  <TD>The sequence has to be defined on ` ( ZZ>= `` M ) ` not just
+  ` ( M ... N ) `</TD>
 </TR>
 
 <TR>
@@ -7426,11 +7464,6 @@ than reals.</TD>
   <TD>faclbnd4 , faclbnd5 , and lemmas</TD>
   <TD><I>none</I></TD>
   <TD>Presumably provable; unused in set.mm.</TD>
-</TR>
-
-<TR>
-  <TD>bcval5</TD>
-  <TD>~ ibcval5</TD>
 </TR>
 
 <TR>
@@ -8212,7 +8245,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>df-sum</TD>
-  <TD>~ df-isum , ~ dfsumdc</TD>
+  <TD>~ df-sumdc</TD>
   <TD>The iset.mm definition/theorem adds a decidability condition
   and an ` if ` expression (which is to deal with differences in
   using ` seq ` for finite sums).  It does function similarity to
@@ -8260,7 +8293,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>summo</TD>
-  <TD>~ isummo</TD>
+  <TD>~ summodc</TD>
 </TR>
 
 <TR>
@@ -8295,7 +8328,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>fsumsers</TD>
-  <TD>~ fisumsers</TD>
+  <TD>~ fsumsersdc</TD>
 </TR>
 
 <TR>
@@ -8527,7 +8560,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>df-prod and theorems using it</TD>
   <TD><I>none</I></TD>
   <TD>To define this, we will need to tackle all the issues analogous
-  to ~ df-isum plus some more around, for example, not equal to zero
+  to ~ df-sumdc plus some more around, for example, not equal to zero
   versus apart from zero</TD>
 </TR>
 
@@ -9271,6 +9304,20 @@ intuitionistic and it is lightly used in set.mm</TD>
   would need a bigger revamp for things like how order works.</TD>
 </TR>
 
+<tr>
+  <td>df-qtop , df-imas , df-qus and all theorems defined
+  in terms of quotient topology, image structure, and quotient ring.</td>
+  <td><i>none</i></td>
+  <td>presumably could be added in some form</td>
+</tr>
+
+<tr>
+  <td>df-xps and all theorems mentioning the binary product on a structure
+  (syntax Xs.)</td>
+  <td><i>none</i></td>
+  <td>presumably could be added in some form</td>
+</tr>
+
 <TR>
   <TD>df-mre , df-mrc and all theorems using the Moore or mrCls syntax</TD>
   <TD><I>none</I></TD>
@@ -9766,6 +9813,29 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>df-haus and all Hausdorff (syntax Haus) theorems</td>
+  <td><i>none</i></td>
+  <td>Perhaps there would need to be an apartness relation to
+  replace the use of negated equality.</td>
+</tr>
+
+<tr>
+  <td>df-1stc and all first-countable theorems</td>
+  <td><i>none</i></td>
+  <td>Worth considering the definition of countable seen
+  in theorems such as ~ ctm and ~ finct , as well as whatever else
+  might come up.</td>
+</tr>
+
+<tr>
+  <td>df-2ndc and all second-countable theorems</td>
+  <td><i>none</i></td>
+  <td>Worth considering the definition of countable seen
+  in theorems such as ~ ctm and ~ finct , as well as whatever else
+  might come up.</td>
+</tr>
+
+<tr>
   <td>df-tx and all theorems using the binary topological product syntax (tX)</td>
   <td><i>none</i></td>
   <td>presumably could be added</td>
@@ -9789,6 +9859,105 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>~ xmeteq0 , ~ meteq0</td>
   <td>Presumably would require defining apartness on ` X ` or something
   along those lines.</td>
+</tr>
+
+<tr>
+  <td>xbln0</td>
+  <td>~ xblm</td>
+</tr>
+
+<tr>
+  <td>blin</td>
+  <td>~ blininf</td>
+</tr>
+
+<tr>
+  <td>setsmsbas</td>
+  <td>~ setsmsbasg</td>
+</tr>
+
+<tr>
+  <td>setsmsds</td>
+  <td>~ setsmsdsg</td>
+</tr>
+
+<tr>
+  <td>setsmstset</td>
+  <td>~ setsmstsetg</td>
+</tr>
+
+<tr>
+  <td>setsmstopn , setsxms , setsms , tmsval , tmslem , tmsbas ,
+  tmsds , tmstopn , tmsxms , tmsms</td>
+  <td><i>none</i></td>
+  <td>Presumably could prove these or similar theorems, analogous
+  to ~ setsmsbasg</td>
+</tr>
+
+<tr>
+  <td>blcld</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on xrltnle</td>
+</tr>
+
+<tr>
+  <td>blcls</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on blcld</td>
+</tr>
+
+<tr>
+  <td>blsscls</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on blcls</td>
+</tr>
+
+<tr>
+  <td>stdbdmetval</td>
+  <td>~ bdmetval</td>
+</tr>
+
+<tr>
+  <td>stdbdxmet</td>
+  <td>~ bdxmet</td>
+</tr>
+
+<tr>
+  <td>stdbdmet</td>
+  <td>~ bdmet</td>
+</tr>
+
+<tr>
+  <td>stdbdbl</td>
+  <td>~ bdbl</td>
+</tr>
+
+<tr>
+  <td>stdbdmopn</td>
+  <td>~ bdmopn</td>
+</tr>
+
+<tr>
+  <td>ressxms , ressms</td>
+  <td><i>none</i></td>
+  <td>Awaits revision of ~ df-ress as described at <a
+  href="https://github.com/metamath/set.mm/issues/3022">Clean
+  up multifunction restriction operator for extensible structures
+  in iset.mm</a></td>
+</tr>
+
+<tr>
+  <td>prdsxms , prdsms</td>
+  <td><i>none</i></td>
+  <td>This would need more extensive development of theorems related
+  to the Xs_ syntax (not just ~ df-prds itself).</td>
+</tr>
+
+<tr>
+  <td>pwsxms , pwsms</td>
+  <td><i>none</i></td>
+  <td>This would need more extensive development of theorems related
+  to the ^s syntax (not just ~ df-pws itself).</td>
 </tr>
 
 <TR>
