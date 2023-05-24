@@ -9304,6 +9304,20 @@ intuitionistic and it is lightly used in set.mm</TD>
   would need a bigger revamp for things like how order works.</TD>
 </TR>
 
+<tr>
+  <td>df-qtop , df-imas , df-qus and all theorems defined
+  in terms of quotient topology, image structure, and quotient ring.</td>
+  <td><i>none</i></td>
+  <td>presumably could be added in some form</td>
+</tr>
+
+<tr>
+  <td>df-xps and all theorems mentioning the binary product on a structure
+  (syntax Xs.)</td>
+  <td><i>none</i></td>
+  <td>presumably could be added in some form</td>
+</tr>
+
 <TR>
   <TD>df-mre , df-mrc and all theorems using the Moore or mrCls syntax</TD>
   <TD><I>none</I></TD>
@@ -9311,14 +9325,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   doesn't function as it does in set.mm (because complements
   are different without excluded middle).</TD>
 </TR>
-
-<tr>
-  <td>df-qtop , df-imas , df-qus , df-xps and all theorems defined
-  in terms of quotient topology, image structure, quotient ring,
-  and binary product</td>
-  <td><i>none</i></td>
-  <td>presumably could be added in some form</td>
-</tr>
 
 <TR>
   <TD>istop2g</TD>
@@ -9807,6 +9813,29 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>df-haus and all Hausdorff (syntax Haus) theorems</td>
+  <td><i>none</i></td>
+  <td>Perhaps there would need to be an apartness relation to
+  replace the use of negated equality.</td>
+</tr>
+
+<tr>
+  <td>df-1stc and all first-countable theorems</td>
+  <td><i>none</i></td>
+  <td>Worth considering the definition of countable seen
+  in theorems such as ~ ctm and ~ finct , as well as whatever else
+  might come up.</td>
+</tr>
+
+<tr>
+  <td>df-2ndc and all second-countable theorems</td>
+  <td><i>none</i></td>
+  <td>Worth considering the definition of countable seen
+  in theorems such as ~ ctm and ~ finct , as well as whatever else
+  might come up.</td>
+</tr>
+
+<tr>
   <td>df-tx and all theorems using the binary topological product syntax (tX)</td>
   <td><i>none</i></td>
   <td>presumably could be added</td>
@@ -9891,6 +9920,44 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>stdbdxmet</td>
   <td>~ bdxmet</td>
+</tr>
+
+<tr>
+  <td>stdbdmet</td>
+  <td>~ bdmet</td>
+</tr>
+
+<tr>
+  <td>stdbdbl</td>
+  <td>~ bdbl</td>
+</tr>
+
+<tr>
+  <td>stdbdmopn</td>
+  <td>~ bdmopn</td>
+</tr>
+
+<tr>
+  <td>ressxms , ressms</td>
+  <td><i>none</i></td>
+  <td>Awaits revision of ~ df-ress as described at <a
+  href="https://github.com/metamath/set.mm/issues/3022">Clean
+  up multifunction restriction operator for extensible structures
+  in iset.mm</a></td>
+</tr>
+
+<tr>
+  <td>prdsxms , prdsms</td>
+  <td><i>none</i></td>
+  <td>This would need more extensive development of theorems related
+  to the Xs_ syntax (not just ~ df-prds itself).</td>
+</tr>
+
+<tr>
+  <td>pwsxms , pwsms</td>
+  <td><i>none</i></td>
+  <td>This would need more extensive development of theorems related
+  to the ^s syntax (not just ~ df-pws itself).</td>
 </tr>
 
 <TR>
