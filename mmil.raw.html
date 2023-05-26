@@ -952,7 +952,7 @@ being proved to "what you really meant is X" as appropriate.
 </LI>
 
 <LI>
-If a statement has multiple equivalences in set.mm (e.g. mo2 and mo3 , or
+If a statement has multiple equivalences in set.mm (e.g. mof and mo3 , or
 dffun2 and dffun3 ) and only some of them in iset.mm, sometimes a pretty
 similar proof will work (that is, which one to use in the original proof may
 have been a fairly arbitrary choice).
@@ -995,10 +995,28 @@ When working with real and complex numbers, apartness is almost always what
 you want. See ~ df-ap for more on apartness.
 </LI>
 
+<LI>
+Given a theorem of the form ` X = Y <-> Z = W ` we can derive
+` X =/= Y <-> Z =/= W ` but in many contexts what we really want is
+` X =//= Y <-> Z =//= W ` .  See if the version with apartness already
+exists and if not consider adding it (building from basic apartness
+theorems like ~ apadd1 and ~ apmul1 for example).  Once you have proved
+the version using apartness you can use it to prove the version with
+equality if you don't already have it, using ~ notbid and ~ apti .
+</LI>
+
 <LI>Exclusive or ( ` ph \/_ ps ` ) is equivalent to ` ph <-> -. ps `
 given excluded middle but we just have one direction ( ~ xorbin ).
 Consider intuitionizing ` ph <-> -. ps ` as ` ph \/_ ps `
 (example: ~ rpnegap ).</LI>
+
+<LI>The expression ` ( _I `` A ) ` evaluates to ` A ` if ` A ` is
+a set (by ~ fvi ) and the empty set if ` A ` is a proper class (by
+~ fvprc ).  However, combining these two facts and thus using ` _I `
+to protect against proper classes does not seem to be possible
+without excluded middle (set.mm examples: sumeq2ii and strfvi ).
+Usually you will end up adding a ` A e. _V ` condition in such
+cases.</LI>
 
 <LI>
 If you get stuck, ask! (for example in a GitHub issue or on the mailing list).
@@ -1067,6 +1085,11 @@ elimination.</TD>
 <TR>
   <TD>mt4d</TD>
   <TD>~ mt2d</TD>
+</TR>
+
+<TR>
+  <TD>nsyl4</TD>
+  <TD>~ con1dc</TD>
 </TR>
 
 <TR>
@@ -1141,6 +1164,16 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 </TR>
 
 <TR>
+  <TD>pm4.52</TD>
+  <TD>~ pm4.52im</TD>
+</TR>
+
+<TR>
+  <TD>pm4.53</TD>
+  <TD>~ pm4.53r</TD>
+</TR>
+
+<TR>
   <TD>pm5.17</TD>
   <TD>~ xorbin</TD>
   <TD>The combination of ~ df-xor and ~ xorbin is the forward direction
@@ -1150,6 +1183,12 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 <TR>
 <TD>biluk</TD>
 <TD>~ bilukdc </TD>
+</TR>
+
+<TR>
+  <TD>biadan</TD>
+  <TD>~ biadani</TD>
+  <TD>The set.mm proof of biadan depends on biluk</TD>
 </TR>
 
 <TR>
@@ -1306,13 +1345,32 @@ equivalent (in the absence of excluded middle).</TD>
 </TR>
 
 <TR>
+  <TD>df-mo</TD>
+  <TD>~ df-mo</TD>
+  <TD>The definitions are different although they currently
+  share the same name.</TD>
+</TR>
+
+<TR>
 <TD>exmo</TD>
 <TD>~ exmonim </TD>
 </TR>
 
 <TR>
-<TD>mo2</TD>
+<TD>mof</TD>
 <TD>~ mo2r , ~ mo3 </TD>
+</TR>
+
+<TR>
+  <TD>df-eu , dfeu , eu6</TD>
+  <TD>~ df-eu , ~ eu5</TD>
+  <TD>The same statements are present in both but the names are
+  different because the definitions are different.</TD>
+</TR>
+
+<TR>
+  <TD>nfabd2</TD>
+  <TD>~ nfabd</TD>
 </TR>
 
 <TR>
@@ -1324,6 +1382,127 @@ equivalent (in the absence of excluded middle).</TD>
 <TD>exmidne</TD>
 <TD>~ dcne </TD>
 </TR>
+
+<tr>
+  <td>necon1ad</td>
+  <td>~ necon1addc</td>
+</tr>
+
+<tr>
+  <td>necon1bd</td>
+  <td>~ necon1bddc</td>
+</tr>
+
+<tr>
+  <td>necon4ad</td>
+  <td>~ necon4addc</td>
+</tr>
+
+<tr>
+  <td>necon4bd</td>
+  <td>~ necon4bddc</td>
+</tr>
+
+<tr>
+  <td>necon1d</td>
+  <td>~ necon1ddc</td>
+</tr>
+
+<tr>
+  <td>necon4d</td>
+  <td>~ necon4ddc</td>
+</tr>
+
+<tr>
+  <td>necon1ai</td>
+  <td>~ necon1aidc</td>
+</tr>
+
+<tr>
+  <td>necon1bi</td>
+  <td>~ necon1bidc</td>
+</tr>
+
+<tr>
+  <td>necon4ai</td>
+  <td>~ necon4aidc</td>
+</tr>
+
+<tr>
+  <td>necon1i</td>
+  <td>~ necon1idc</td>
+</tr>
+
+<tr>
+  <td>necon4i</td>
+  <td>~ necon4idc</td>
+</tr>
+
+<tr>
+  <td>necon4abid</td>
+  <td>~ necon4abiddc</td>
+</tr>
+
+<tr>
+  <td>necon4bbid</td>
+  <td>~ necon4bbiddc</td>
+</tr>
+
+<tr>
+  <td>necon4bid</td>
+  <td>~ necon4biddc</td>
+</tr>
+
+<tr>
+  <td>necon1abii</td>
+  <td>~ necon1abiidc</td>
+</tr>
+
+<tr>
+  <td>necon1bbii</td>
+  <td>~ necon1bbiidc</td>
+</tr>
+
+<tr>
+  <td>necon1abid</td>
+  <td>~ necon1abiddc</td>
+</tr>
+
+<tr>
+  <td>necon1bbid</td>
+  <td>~ necon1bbiddc</td>
+</tr>
+
+<tr>
+  <td>necon2abid</td>
+  <td>~ necon2abiddc</td>
+</tr>
+
+<tr>
+  <td>necon2bbid</td>
+  <td>~ necon2bbiddc</td>
+</tr>
+
+<tr>
+  <td>necon2abii</td>
+  <td>~ necon2abiidc</td>
+</tr>
+
+<tr>
+  <td>necon2bbii</td>
+  <td>~ necon2bbiidc</td>
+</tr>
+
+<tr>
+  <td>nebi</td>
+  <td>~ nebidc</td>
+</tr>
+
+<tr>
+  <td>pm2.61ne, pm2.61ine, pm2.61dne, pm2.61dane,
+  pm2.61da2ne, pm2.61da3ne</td>
+  <td>~ pm2.61dc</td>
+</tr>
 
 <TR>
 <TD>neor</TD>
@@ -1438,8 +1617,55 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>df-symdif , dfsymdif2</TD>
+  <TD>~ symdifxor</TD>
+  <TD>The symmetric difference notation and a number of
+  the theorems could be brought over from set.mm.</TD>
+</TR>
+
+<TR>
   <TD>dfss4</TD>
   <TD>~ ssddif , ~ dfss4st</TD>
+</TR>
+
+<TR>
+  <TD>dfun3</TD>
+  <TD>~ unssin</TD>
+</TR>
+
+<TR>
+  <TD>dfin3</TD>
+  <TD>~ inssun</TD>
+</TR>
+
+<TR>
+  <TD>dfin4</TD>
+  <TD>~ inssddif</TD>
+</TR>
+
+<TR>
+  <TD>unineq</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>difindi</TD>
+  <TD>~ difindiss</TD>
+</TR>
+
+<TR>
+  <TD>difdif2</TD>
+  <TD>~ difdif2ss</TD>
+</TR>
+
+<TR>
+  <TD>indm</TD>
+  <TD>~ indmss</TD>
+</TR>
+
+<TR>
+  <TD>undif3</TD>
+  <TD>~ undif3ss</TD>
 </TR>
 
 <TR>
@@ -1483,6 +1709,23 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>csb0</TD>
+  <TD>~ csbconstg , ~ csbprc</TD>
+  <TD>The set.mm proof uses excluded middle to combine the
+  ` A e. _V ` and ` -. A e. _V ` cases.</TD>
+</TR>
+
+<TR>
+  <TD>sbcel12</TD>
+  <TD>~ sbcel12g</TD>
+</TR>
+
+<TR>
+  <TD>sbcne12</TD>
+  <TD>~ sbcne12g</TD>
+</TR>
+
+<TR>
   <TD>undif1</TD>
   <TD>~ undif1ss</TD>
 </TR>
@@ -1498,7 +1741,7 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
-  <TD ROWSPAN="5">undif</TD>
+  <TD ROWSPAN="6">undif</TD>
   <TD>~ undifss</TD>
   <TD>subset rather than equality, for any sets</TD>
 </TR>
@@ -1521,6 +1764,11 @@ is double negation elimination.</TD>
 <TR>
   <TD><I>for any sets</I></TD>
   <TD>implies excluded middle as shown at ~ undifexmid</TD>
+</TR>
+
+<TR>
+  <TD><I>forward direction only, for any sets</I></TD>
+  <TD>still implies excluded middle as shown at ~ exmidundifim</TD>
 </TR>
 
 <TR>
@@ -1709,14 +1957,75 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-  <TD>sssn</TD>
-  <TD>~ sssnr , ~ sssnm</TD>
+  <TD>pwpw0</TD>
+  <TD>~ pwpw0ss</TD>
+</TR>
+
+<TR>
+  <TD ROWSPAN="3">sssn</TD>
+  <TD>~ sssnr</TD>
+  <TD>One direction, for any classes.</TD>
+</TR>
+
+<TR>
+  <TD>~ sssnm</TD>
+  <TD>When the subset is inhabited.</TD>
+</TR>
+
+<TR>
+  <TD><I>for all sets</I></TD>
+  <TD>Equivalent to excluded middle by ~ exmidsssn .</TD>
+</TR>
+
+<TR>
+  <TD>ssunsn2 , ssunsn</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>eqsn</TD>
+  <TD>~ eqsnm</TD>
+</TR>
+
+<TR>
+  <TD>ssunpr</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>sspr</TD>
+  <TD>~ ssprr</TD>
+</TR>
+
+<TR>
+  <TD>sstp</TD>
+  <TD>~ sstpr</TD>
+</TR>
+
+<TR>
+  <TD>prnebg</TD>
+  <TD><I>none</I></TD>
 </TR>
 
 <TR>
   <TD>pwsn</TD>
   <TD>~ pwsnss</TD>
   <TD>Also see ~ exmidpw</TD>
+</TR>
+
+<TR>
+  <TD>pwpr</TD>
+  <TD>~ pwprss</TD>
+</TR>
+
+<TR>
+  <TD>pwtp</TD>
+  <TD>~ pwtpss</TD>
+</TR>
+
+<TR>
+  <TD>pwpwpw0</TD>
+  <TD>~ pwpwpw0ss</TD>
 </TR>
 
 <TR>
@@ -1914,6 +2223,11 @@ A either - there are singletons at every rank.</P>
 </TR>
 
 <TR>
+  <TD>opnz</TD>
+  <TD>~ opm , ~ opnzi</TD>
+</TR>
+
+<TR>
 <TD>df-so</TD>
 <TD>~ df-iso </TD>
 <TD>Although we define ` Or ` to describe a weakly linear order (such
@@ -2057,29 +2371,130 @@ there is less need for this convenience theorem.</TD>
 </TR>
 
 <TR>
-<TD>dmxpid</TD>
-<TD>~ dmxpm </TD>
-</TR>
-
-<TR>
 <TD>relimasn</TD>
 <TD>~ imasng </TD>
 </TR>
+
+<tr>
+  <td>xpnz</td>
+  <td>~ xpm</td>
+</tr>
+
+<tr>
+  <td>xpeq0</td>
+  <td>~ xpeq0r , ~ sqxpeq0</td>
+</tr>
 
 <TR>
   <TD>rnxp</TD>
   <TD>~ rnxpm</TD>
 </TR>
 
+<tr>
+  <td>ssxpb</td>
+  <td>~ ssxpbm</td>
+</tr>
+
+<tr>
+  <td>xp11</td>
+  <td>~ xp11m</td>
+</tr>
+
+<tr>
+  <td>xpcan</td>
+  <td>~ xpcanm</td>
+</tr>
+
+<tr>
+  <td>xpcan2</td>
+  <td>~ xpcan2m</td>
+</tr>
+
+<tr>
+  <td>xpima2</td>
+  <td>~ xpima2m</td>
+</tr>
+
+<tr>
+  <td>sossfld , sofld , soex</td>
+  <td><i>none</i></td>
+  <td>the set.mm proofs rely on trichotomy</td>
+</tr>
+
+<tr>
+  <td>csbrn</td>
+  <td>~ csbrng</td>
+</tr>
+
+<tr>
+  <td>dmsnn0</td>
+  <td>~ dmsnm</td>
+</tr>
+
+<tr>
+  <td>rnsnn0</td>
+  <td>~ rnsnm</td>
+</tr>
+
+<tr>
+  <td>relsn2</td>
+  <td>~ relsn2m</td>
+</tr>
+
+<TR>
+  <TD>dmsnopss</TD>
+  <TD>~ dmsnopg</TD>
+  <TD>The domain is empty in the ` -. B e. _V ` case which follows
+  readily from ~ opprc2 and ~ dmsn0 . But we presumably cannot combine
+  the ` B e. _V ` and ` -. B e. _V ` cases (set.mm uses excluded middle
+  to do so).</TD>
+</TR>
+
+<tr>
+  <td>dmsnsnsn</td>
+  <td>~ dmsnsnsng</td>
+</tr>
+
 <TR>
 <TD>opswap</TD>
 <TD>~ opswapg </TD>
 </TR>
 
+<tr>
+  <td>unixp</td>
+  <td>~ unixpm</td>
+</tr>
+
 <TR>
 <TD>cnvso</TD>
 <TD>~ cnvsom </TD>
 </TR>
+
+<tr>
+  <td>unixp0</td>
+  <td>~ unixp0im</td>
+</tr>
+
+<tr>
+  <td>unixpid</td>
+  <td><i>none</i></td>
+  <td>We could prove the theorem for the case where A is inhabited</td>
+</tr>
+
+<tr>
+  <td>cnviin</td>
+  <td>~ cnviinm</td>
+</tr>
+
+<tr>
+  <td>xpco</td>
+  <td>~ xpcom</td>
+</tr>
+
+<tr>
+  <td>xpcoid</td>
+  <td>~ xpcom</td>
+</tr>
 
 <TR>
 <TD>tz7.7</TD>
@@ -2287,7 +2702,7 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
-<TD ROWSPAN="5">fvex</TD>
+<TD ROWSPAN="6">fvex</TD>
 <TD>~ funfvex </TD>
 <TD>when evaluating a function within its domain</TD>
 </TR>
@@ -2314,8 +2729,30 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
+<TD>~ slotex</TD>
+<TD>for a slot of an extensible structure</TD>
+</TR>
+
+<TR>
+  <TD>fvexi , fvexd</TD>
+  <TD><I>see fvex</I></TD>
+</TR>
+
+<TR>
   <TD>fvif</TD>
   <TD>~ fvifdc</TD>
+</TR>
+
+<TR>
+  <TD>fvrn0</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses case elimination on whether ` ( F `` X ) `
+  is the empty set.</TD>
+</TR>
+
+<TR>
+  <TD>fvssunirn</TD>
+  <TD>~ fvssunirng , ~ relfvssunirn</TD>
 </TR>
 
 <TR>
@@ -2330,8 +2767,13 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
-<TD>elfvex</TD>
-<TD>~ relelfvdm </TD>
+<TD>elfvex , elfvexd</TD>
+<TD>~ relelfvdm , ~ mptrcl</TD>
+</TR>
+
+<TR>
+  <TD>dffn5</TD>
+  <TD>~ dffn5im</TD>
 </TR>
 
 <TR>
@@ -2409,11 +2851,32 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
-  <TD>fnsnsplit</TD>
+  <TD ROWSPAN="2">fnsnsplit</TD>
+  <TD>~ fnsnsplitss</TD>
+  <TD>Subset rather than equality, for a function on any set.</TD>
+</TR>
+
+<TR>
+  <TD>~ fnsnsplitdc</TD>
+  <TD>For a function on a set with decidable equality.</TD>
+</TR>
+
+<TR>
+  <TD>fsnunf2</TD>
   <TD><I>none</I></TD>
-  <TD>Although it should be possible to prove subset rather than
-  equality (using difsnss instead of difsnid ), this theorem is
-  lightly used in set.mm.</TD>
+  <TD>Apparently would need decidable equality on ` S ` or some
+  other condition.</TD>
+</TR>
+
+<TR>
+  <TD ROWSPAN="2">funresdfunsn</TD>
+  <TD>~ funresdfunsnss</TD>
+  <TD>Subset rather than equality, for a function on any set.</TD>
+</TR>
+
+<TR>
+  <TD>~ funresdfunsndc</TD>
+  <TD>For a function on a set with decidable equality.</TD>
 </TR>
 
 <TR>
@@ -2490,7 +2953,7 @@ The set.mm proof relies on reuxfrd .</TD>
 </TR>
 
 <TR>
-<TD ROWSPAN="4">ovex</TD>
+<TD ROWSPAN="5">ovex</TD>
 <TD>~ fnovex </TD>
 <TD>when the operation is a function evaluated within its domain.</TD>
 </TR>
@@ -2509,6 +2972,13 @@ The set.mm proof relies on reuxfrd .</TD>
 <TD>~ mpt2fvex </TD>
 <TD>When the operation is defined via maps-to, yields a set on
 any inputs, and is being evaluated at two sets.</TD>
+</TR>
+
+<TR>
+<TD>~ addcl , ~ expcl , etc</TD>
+<TD>If there is a closure theorem for a particular operation, that
+is often the way to intuitionize ovex (check for your particular
+operation, as these are just a few examples).</TD>
 </TR>
 
 <TR>
@@ -2593,6 +3063,12 @@ that we are evaluating functions within their domains.
 <TR>
 <TD>caovmo</TD>
 <TD>~ caovimo </TD>
+</TR>
+
+<TR>
+  <TD>relmptopab</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would need a condition that ` B e. dom F `</TD>
 </TR>
 
 <TR>
@@ -2821,6 +3297,11 @@ using case elimination.</TD>
 hasn't been a need for it.</TD>
 </TR>
 
+<tr>
+  <td>xpexr</td>
+  <td><i>none</i></td>
+</tr>
+
 <TR>
 <TD>xpexr2</TD>
 <TD>~ xpexr2m </TD>
@@ -2846,6 +3327,18 @@ hasn't been a need for it.</TD>
 <TD>2ndnpr</TD>
 <TD><I>none</I></TD>
 <TD>May be intuitionizable, but very lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>ovmptss</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fvmptss</TD>
+</TR>
+
+<TR>
+  <TD>relmpt2opab</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ovmptss</TD>
 </TR>
 
 <TR>
@@ -3084,11 +3577,6 @@ used in set.mm</TD>
 </TR>
 
 <TR>
-<TD>xpider</TD>
-<TD>~ xpiderm </TD>
-</TR>
-
-<TR>
 <TD>iiner</TD>
 <TD>~ iinerm </TD>
 </TR>
@@ -3122,6 +3610,64 @@ middle in its proof.</TD>
   <TD><I>none</I></TD>
   <TD>Lightly used in set.mm. The set.mm proof relies on fnsnsplit
   and undif .</TD>
+</TR>
+
+<TR>
+  <TD>nfixp</TD>
+  <TD>~ nfixpxy , ~ nfixp1</TD>
+  <TD>set.mm (indirectly) uses excluded middle to combine
+  the cases where ` x ` and ` y ` are distinct and where
+  they are not.</TD>
+</TR>
+
+<TR>
+  <TD>ixpexg</TD>
+  <TD>~ ixpexgg</TD>
+</TR>
+
+<TR>
+  <TD>ixpiin</TD>
+  <TD>~ ixpiinm</TD>
+</TR>
+
+<TR>
+  <TD>ixpint</TD>
+  <TD>~ ixpintm</TD>
+</TR>
+
+<TR>
+  <TD>ixpn0</TD>
+  <TD>~ ixpm</TD>
+</TR>
+
+<TR>
+  <TD>undifixp</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on undif</TD>
+</TR>
+
+<TR>
+  <TD>resixpfo</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on membership in ` B ` being
+  decidable and would need to have nonempty changed to inhabited,
+  but might be adaptable with those conditions added. However,
+  this theorem is currently only used in the proof of Tychonoff's
+  Theorem, which we do not expect to be able to prove.</TD>
+</TR>
+
+<TR>
+  <TD>boxriin</TD>
+  <TD><I>none</I></TD>
+  <TD>Would seem to need a condition that ` I ` has decidable
+  equality.</TD>
+</TR>
+
+<TR>
+  <TD>boxcutc</TD>
+  <TD><I>none</I></TD>
+  <TD>Would seem to need a condition that ` A ` has decidable
+  equality.</TD>
 </TR>
 
 <TR>
@@ -3471,12 +4017,18 @@ this implies excluded middle</TD>
   <TD><I>in general</I></TD>
   <TD>The set.mm proof depends on unfi and it would appear that
   mapping ` { A , B } ` to a natural number would decide whether
-  ` A ` and ` B ` are equal and thus imply excluded middle.</TD>
+  ` A ` and ` B ` are equal and thus imply any set has decidable
+  equality.</TD>
 </TR>
 
 <TR>
   <TD>tpfi</TD>
   <TD>~ tpfidisj</TD>
+</TR>
+
+<TR>
+  <TD>fiint</TD>
+  <TD>~ fiintim</TD>
 </TR>
 
 <TR>
@@ -3559,6 +4111,15 @@ this implies excluded middle</TD>
   <TD>fisuppfi</TD>
   <TD>~ preimaf1ofi</TD>
   <TD>The set.mm proof of fisuppfi uses ssfi</TD>
+</TR>
+
+<TR>
+  <TD>df-fi and all theorems using the fi (class of finite
+  intersections) notation</TD>
+  <TD><I>none</I></TD>
+  <TD>Although some of these theorems could be intuitionized if
+  there is a need, others rely on excluded middle in apparently
+  essential ways.</TD>
 </TR>
 
 <TR>
@@ -4061,6 +4622,11 @@ this implies excluded middle</TD>
   see Chapter 18 of [AczelRathjen], p. 165 (including why "large set
   properties" is more apt terminology than "large cardinal
   properties" in the absence of excluded middle).</TD>
+</TR>
+
+<TR>
+  <TD>df-wun and all weak universe theorems</TD>
+  <TD><I>none</I></TD>
 </TR>
 
 <TR>
@@ -4679,13 +5245,9 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-<TD>ltordlem , ltord1 , leord1 , eqord1 , ltord2 , leord2 , eqord2</TD>
+<TD>ltord1 , leord1 , ltord2 , leord2</TD>
 <TD><I>none</I></TD>
-<TD>Although these presumably could be proved using theorems like
-~ letri3 and ~ lenlt , at least for now we have chosen to just invoke
-those other theorems directly (example: ~ expcan and its lemma
-~ expcanlem ) which avoids some extra set variables and produces proofs
-which are almost as short.</TD>
+<TD>The set.mm proof relies on real number trichotomy.</TD>
 </TR>
 
 <TR>
@@ -5101,9 +5663,7 @@ favor of theorems in deduction form.</TD>
   <TD>sup2 , sup3 , sup3ii</TD>
   <TD><I>none</I></TD>
   <TD>We won't be able to have the least upper bound property for all
-  nonempty bounded sets. In cases where we can show that the supremum
-  exists, we might be able to prove slightly different ways of stating
-  there is a supremum.</TD>
+  inhabited bounded sets, as shown at ~ sup3exmid .</TD>
 </TR>
 
 <TR>
@@ -5366,12 +5926,55 @@ numbers).</TD>
 <TD><I>none</I></TD>
 </TR>
 
-<TR>
-<TD>xrmax1 , xrmax2 , xrmin1 , xrmin2 , xrmaxeq , xrmineq ,
-xrmaxlt , xrltmin , xrmaxle , xrlemin ,
-max0sub , ifle</TD>
-<TD><I>none</I></TD>
-</TR>
+<tr>
+  <td>xrmax1</td>
+  <td>~ xrmax1sup</td>
+</tr>
+
+<tr>
+  <td>xrmax2</td>
+  <td>~ xrmax2sup</td>
+</tr>
+
+<tr>
+  <td>xrmin1 , xrmin2</td>
+  <td>~ xrmin1inf , ~ xrmin2inf</td>
+</tr>
+
+<tr>
+  <td>xrmaxeq</td>
+  <td>~ xrmaxleim</td>
+</tr>
+
+<tr>
+  <td>xrmineq</td>
+  <td>~ xrmineqinf</td>
+</tr>
+
+<tr>
+  <td>xrmaxlt</td>
+  <td>~ xrmaxltsup</td>
+</tr>
+
+<tr>
+  <td>xrltmin</td>
+  <td>~ xrltmininf</td>
+</tr>
+
+<tr>
+  <td>xrmaxle</td>
+  <td>~ xrmaxlesup</td>
+</tr>
+
+<tr>
+  <td>xrlemin</td>
+  <td>~ xrlemininf</td>
+</tr>
+
+<tr>
+  <td>max0sub , ifle</td>
+  <td><i>none</i></td>
+</tr>
 
 <TR>
   <TD>max1</TD>
@@ -5384,13 +5987,25 @@ max0sub , ifle</TD>
 </TR>
 
 <TR>
-  <TD>2resupmax</TD>
-  <TD><I>none</I></TD>
-  <TD>Proved from real trichotomy.
+  <TD ROWSPAN="2">2resupmax</TD>
+  <TD>~ 2zsupmax</TD>
+  <TD>for integers</TD>
+</TR>
+
+<TR>
+  <TD><I>in general</I></TD>
+  <TD>The set.mm proof uses real trichotomy in an apparently
+  essential way.
   We express maximum in iset.mm using ` sup ( { A , B } , RR , < ) `
   rather than ` if ( A <_ B , B , A ) ` . The former has the
   expected maximum properties such as ~ maxcl , ~ maxle1 , ~ maxle2 ,
   ~ maxleast , and ~ maxleb .</TD>
+</TR>
+
+<TR>
+  <TD>ssfzunsnext</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably provable using ~ 2zsupmax and similar theorems.</TD>
 </TR>
 
 <TR>
@@ -5423,6 +6038,11 @@ max0sub , ifle</TD>
   <TD>~ ltmininf</TD>
 </TR>
 
+<tr>
+  <td>lemaxle</td>
+  <td>~ maxle2</td>
+</tr>
+
 <TR>
 <TD>qsqueeze</TD>
 <TD><I>none yet</I></TD>
@@ -5448,26 +6068,55 @@ with minor changes.</TD>
 <TD>~ xnegcl </TD>
 </TR>
 
+<tr>
+  <td>xmulval</td>
+  <td><i>none</i></td>
+  <td>The set.mm definition would appear to only function if
+  comparing a real number with zero is decidable (which we
+  will not be able to show in general)</td>
+</tr>
+
+<tr>
+  <td>xnn0xaddcl</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
 <TR>
-<TD>xaddval , xaddf , xmulval , xaddpnf1 , xaddpnf2 , xaddmnf1 ,
-xaddmnf2 , pnfaddmnf , mnfaddpnf , rexadd , rexsub , xaddnemnf ,
-xaddnepnf , xnegid , xaddcl , xaddcom , xaddid1 , xaddid2 ,
-xnegdi , xaddass , xaddass2 , xpncan , xnpcan , xleadd1a ,
-xleadd2a , xleadd1 , xltadd1 , xltadd2 , xaddge0 , xle2add ,
-xlt2add , xsubge0 , xposdif , xlesubadd , xmullem , xmullem2 ,
+<TD>
+xmullem , xmullem2 ,
 xmulcom , xmul01 , xmul02 , xmulneg1 , xmulneg2 , rexmul ,
 xmulf , xmulcl , xmulpnf1 , xmulpnf2 , xmulmnf1 , xmulmnf2 ,
 xmulpnf1n , xmulid1 , xmulid2 , xmulm1 , xmulasslem2 , xmulgt0 ,
 xmulge0 , xmulasslem , xmulasslem3 , xmulass , xlemul1a ,
 xlemul2a , xlemul1 , xlemul2 , xltmul1 , xltmul2 , xadddilem ,
-xadddi , xadddir , xadddi2 , xadddi2r , x2times , xaddcld ,
-xmulcld , xadd4d</TD>
+xadddi , xadddir , xadddi2 , xadddi2r , x2times ,
+xmulcld</TD>
 <TD><I>none</I></TD>
-<TD>There appears to be no fundamental obstacle to proving these,
-because disjunctions can arise from ~ elxr rather than excluded
-middle. However, ` -e ` , ` +e ` , and ` *e ` are lightly used in
-set.mm, and the set.mm proofs would require significant changes.</TD>
+<TD>Although a few of these contain hypotheses that arguments are
+apart from zero (and thus could be proved with the current definition
+of ` *e ` ), in general extended real multiplication will not work
+as in set.mm using that definition.</TD>
 </TR>
+
+<tr>
+  <td>xrsupss</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on sup3 which implies excluded middle
+  by ~ sup3exmid</td>
+</tr>
+
+<tr>
+  <td>supxrcl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on xrsupss</td>
+</tr>
+
+<tr>
+  <td>infxrcl</td>
+  <td><i>none</i></td>
+  <td>presumably not provable for all the usual ~ sup3exmid reasons</td>
+</tr>
 
 <TR>
 <TD>ixxub , ixxlb</TD>
@@ -5514,7 +6163,7 @@ both in proving this and in using it.</TD>
 
 <TR>
 <TD>iooin</TD>
-<TD><I>none</I></TD>
+<TD>~ iooinsup</TD>
 </TR>
 
 <TR>
@@ -5528,10 +6177,10 @@ both in proving this and in using it.</TD>
 </TR>
 
 <TR>
-<TD>ge0xaddcl , ge0xmulcl</TD>
+<TD>ge0xmulcl</TD>
 <TD><I>none</I></TD>
-<TD>Rely on xaddcl and xmulcl ; see discussion in this list
-for those theorems.</TD>
+<TD>Relies on xmulcl ; see discussion in this list
+for that theorems.</TD>
 </TR>
 
 <TR>
@@ -6379,11 +7028,9 @@ or ~ ssfiexmid </TD>
 
 <TR>
   <TD>sermono</TD>
-  <TD>~ isermono</TD>
-  <TD>isermono requires that ` F ` be defined on ` ( ZZ>= `` M ) `
-  not merely ` ( M ... N ) ` as in sermono . Given that the intention is to
-  use this for infinite series, there may be no need to look
-  into whether this requirement can be relaxed.</TD>
+  <TD>~ ser3mono</TD>
+  <TD>ser3mono requires that ` F ` be defined on ` ( ZZ>= `` M ) `
+  not merely ` ( M ... N ) ` as in sermono .</TD>
 </TR>
 
 <TR>
@@ -6406,29 +7053,23 @@ or ~ ssfiexmid </TD>
 
 <TR>
   <TD>seqcaopr3</TD>
-  <TD>~ iseqcaopr3</TD>
-  <TD>iseqcaopr3 requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seqcaopr3 .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>~ seq3caopr3</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
   <TD>seqcaopr2</TD>
-  <TD>~ iseqcaopr2</TD>
-  <TD>iseqcaopr2 requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seqcaopr2 .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>~ seq3caopr2</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
   <TD>seqcaopr</TD>
-  <TD>~ iseqcaopr</TD>
-  <TD>iseqcaopr requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seqcaopr .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>~ seq3caopr</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
@@ -6443,34 +7084,25 @@ or ~ ssfiexmid </TD>
 <TR>
   <TD>seradd</TD>
   <TD>~ ser3add</TD>
-  <TD>iseradd requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in seradd .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
   <TD>sersub</TD>
-  <TD>~ isersub</TD>
-  <TD>isersub requires that ` F ` , ` G ` , and ` H ` be defined on
-  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` as in sersub .  This
-  is not a problem when used on infinite sequences, but perhaps this
-  requirement could be relaxed if there is a need.</TD>
+  <TD>~ ser3sub</TD>
+  <TD>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</TD>
 </TR>
 
 <TR>
   <TD>seqid3</TD>
-  <TD>~ iseqid3 , ~ iseqid3s</TD>
-  <TD>~ iseqid3 and ~ iseqid3s differ with respect to which
-  entries in ` F ` need to be
-  zero. Further refinements to the hypotheses including where ` F `
-  needs to be defined and the like might be possible (with
-  a greater amount of work), but perhaps these are sufficient.</TD>
+  <TD>~ seq3id3</TD>
 </TR>
 
 <TR>
   <TD>seqid</TD>
-  <TD>~ iseqid</TD>
+  <TD>~ seq3id</TD>
 </TR>
 
 <TR>
@@ -6485,14 +7117,16 @@ or ~ ssfiexmid </TD>
 
 <TR>
   <TD>seqz</TD>
-  <TD>~ iseqz</TD>
+  <TD>~ seq3z</TD>
+  <TD>The sequence has to be defined on ` ( ZZ>= `` M ) ` not just
+  ` ( M ... N ) `</TD>
 </TR>
 
 <TR>
-  <TD>seqfeq4 , seqfeq3</TD>
-  <TD><I>none yet</I></TD>
-  <TD>It should be possible to come up with some (presumably
-  modified) versions of these, but we have not done so yet.</TD>
+  <TD>seqfeq4</TD>
+  <TD>~ seqfeq3</TD>
+  <TD>The sequence has to be defined on ` ( ZZ>= `` M ) ` not just
+  ` ( M ... N ) `</TD>
 </TR>
 
 <TR>
@@ -6849,11 +7483,6 @@ than reals.</TD>
   <TD>faclbnd4 , faclbnd5 , and lemmas</TD>
   <TD><I>none</I></TD>
   <TD>Presumably provable; unused in set.mm.</TD>
-</TR>
-
-<TR>
-  <TD>bcval5</TD>
-  <TD>~ ibcval5</TD>
 </TR>
 
 <TR>
@@ -7292,7 +7921,7 @@ than reals.</TD>
 
 <TR>
   <TD>seqcoll</TD>
-  <TD>~ iseqcoll</TD>
+  <TD>~ seq3coll</TD>
   <TD>The functions ` F ` and ` H ` need to be defined on
   ` ZZ>= `` M ` not just a subset thereof.</TD>
 </TR>
@@ -7301,7 +7930,7 @@ than reals.</TD>
   <TD>seqcoll2</TD>
   <TD><I>none</I></TD>
   <TD>Presumably can be done with modifications similar
-  to ~ iseqcoll .</TD>
+  to ~ seq3coll .</TD>
 </TR>
 
 <TR>
@@ -7635,16 +8264,16 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>df-sum</TD>
-  <TD>~ df-isum</TD>
-  <TD>Although this defintion is intended to function similarly to
-  the set.mm one, a lot of details have to be changed, especially
-  around decidability, to make sum work.</TD>
+  <TD>~ df-sumdc</TD>
+  <TD>The iset.mm definition/theorem adds a decidability condition
+  and an ` if ` expression (which is to deal with differences in
+  using ` seq ` for finite sums).  It does function similarity to
+  the set.mm definiton of ` sum_ ` .</TD>
 </TR>
 
 <TR>
   <TD>sumex</TD>
-  <TD><I>none</I></TD>
-  <TD>This will need to be replaced by suitable closure theorems.</TD>
+  <TD>~ fsumcl , ~ isumcl</TD>
 </TR>
 
 <TR>
@@ -7672,28 +8301,23 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
-  <TD>sumrblem</TD>
-  <TD>~ isumrblem</TD>
-</TR>
-
-<TR>
   <TD>fsumcvg</TD>
   <TD>~ fsum3cvg</TD>
 </TR>
 
 <TR>
   <TD>sumrb</TD>
-  <TD>~ isumrb</TD>
+  <TD>~ sumrbdc</TD>
 </TR>
 
 <TR>
   <TD>summo</TD>
-  <TD>~ isummo</TD>
+  <TD>~ summodc</TD>
 </TR>
 
 <TR>
   <TD>zsum</TD>
-  <TD>~ zisum</TD>
+  <TD>~ zsumdc</TD>
 </TR>
 
 <TR>
@@ -7723,7 +8347,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>fsumsers</TD>
-  <TD>~ fisumsers</TD>
+  <TD>~ fsumsersdc</TD>
 </TR>
 
 <TR>
@@ -7799,13 +8423,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>seqabs</TD>
   <TD>~ fsumabs</TD>
   <TD>Finite sums are more naturally expressed with ` sum_ ` rather
-  than ` seq ` especially in iset.mm.</TD>
-</TR>
-
-<TR>
-  <TD>iserabs</TD>
-  <TD><I>none</I></TD>
-  <TD>Presumably provable but the set.mm proof is via seqabs .</TD>
+  than ` seq ` especially in iset.mm.  Use ~ fsum3ser as needed.</TD>
 </TR>
 
 <TR>
@@ -7961,7 +8579,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>df-prod and theorems using it</TD>
   <TD><I>none</I></TD>
   <TD>To define this, we will need to tackle all the issues analogous
-  to ~ df-isum plus some more around, for example, not equal to zero
+  to ~ df-sumdc plus some more around, for example, not equal to zero
   versus apart from zero</TD>
 </TR>
 
@@ -7979,10 +8597,82 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>eflt</TD>
+  <TD>~ efltim</TD>
+  <TD>The set.mm proof of the converse relies on ltord1</TD>
+</TR>
+
+<TR>
+  <TD>efle</TD>
+  <TD>~ efler</TD>
+  <TD>The set.mm proof of the converse relies on eflt</TD>
+</TR>
+
+<TR>
+  <TD>tanval</TD>
+  <TD>~ tanvalap</TD>
+</TR>
+
+<TR>
+  <TD>tancl , tancld</TD>
+  <TD>~ tanclap , ~ tanclapd</TD>
+</TR>
+
+<TR>
+  <TD>tanval2</TD>
+  <TD>~ tanval2ap</TD>
+</TR>
+
+<TR>
+  <TD>tanval3</TD>
+  <TD>~ tanval3ap</TD>
+</TR>
+
+<TR>
+  <TD>retancl , retancld</TD>
+  <TD>~ retanclap , ~ retanclapd</TD>
+</TR>
+
+<TR>
+  <TD>tanneg</TD>
+  <TD>~ tannegap</TD>
+</TR>
+
+<TR>
+  <TD>sinhval , coshval , resinhcl , rpcoshcl , recoshcl ,
+  retanhcl , tanhlt1 , tanhbnd</TD>
+  <TD><I>none yet</I></TD>
+  <TD>should be provable</TD>
+</TR>
+
+<TR>
+  <TD>tanadd</TD>
+  <TD>~ tanaddap</TD>
+</TR>
+
+<TR>
+  <TD>sinltx</TD>
+  <TD>~ sin01bnd , ~ sinbnd</TD>
+  <TD>Although we can prove the ` A <_ 1 ` case (see ~ sin01bnd )
+  or the ` 1 < A ` case (from ~ sinbnd ), set.mm uses real number
+  trichotomy to combine those cases.</TD>
+</TR>
+
+<TR>
   <TD>qnnen</TD>
   <TD><I>none</I></TD>
   <TD>Corollary 8.1.23 of [AczelRathjen] and thus presumably provable.
   The set.mm proof would not work as-is or with small changes, however.</TD>
+</TR>
+
+<TR>
+  <TD>ruc</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently not provable without countable choice, assuming
+  the following result holds up:
+  Andrej Bauer (12-May-2022), <a
+  href="https://researchseminars.org/talk/ToposInstituteColloquium/57/"
+  >"The countable reals"</a>, Topos Institute Colloquium</TD>
 </TR>
 
 <TR>
@@ -8031,55 +8721,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>algr0</TD>
   <TD>~ ialgr0</TD>
-  <TD>Several hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algrf</TD>
-  <TD>~ ialgrf</TD>
-  <TD>Several hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algrp1</TD>
-  <TD>~ ialgrp1</TD>
-  <TD>Several hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>alginv</TD>
-  <TD>~ ialginv</TD>
-  <TD>Two hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algcvg</TD>
-  <TD>~ ialgcvg</TD>
-  <TD>` seq ` as defined in ~ df-iseq has an additional argument</TD>
-</TR>
-
-<TR>
-  <TD>algcvga</TD>
-  <TD>~ ialgcvga</TD>
-  <TD>Two hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algfx</TD>
-  <TD>~ ialgfx</TD>
-  <TD>Two hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>eucalg</TD>
-  <TD>~ eucialg</TD>
-  <TD>Tweaked for the different ` seq ` syntax</TD>
+  <TD>The ` F : S --> S ` hypothesis is added (related theorems
+  already have that hypothesis).</TD>
 </TR>
 
 <TR>
@@ -8184,6 +8827,1269 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>May be provable once summation is better developed</TD>
 </TR>
 
+<TR>
+  <TD>isstruct2</TD>
+  <TD>~ isstruct2im , ~ isstruct2r</TD>
+  <TD>The difference is the addition of the ` F e. V ` condition
+  for the reverse direction.</TD>
+</TR>
+
+<TR>
+  <TD>isstruct</TD>
+  <TD>~ isstructim , ~ isstructr</TD>
+  <TD>The difference is the addition of the ` F e. V ` condition
+  for the reverse direction.</TD>
+</TR>
+
+<TR>
+  <TD>slotfn</TD>
+  <TD>~ slotslfn</TD>
+</TR>
+
+<TR>
+  <TD>strfvnd</TD>
+  <TD>~ strnfvnd</TD>
+</TR>
+
+<TR>
+  <TD>strfvn</TD>
+  <TD>~ strnfvn</TD>
+</TR>
+
+<TR>
+  <TD>strfvss</TD>
+  <TD>~ strfvssn</TD>
+</TR>
+
+<TR>
+  <TD>setsval</TD>
+  <TD>~ setsvala</TD>
+</TR>
+
+<TR>
+  <TD>setsidvald</TD>
+  <TD>~ strsetsid</TD>
+</TR>
+
+<TR>
+  <TD>fsets</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently would need decidable equality on ` A ` or some
+  other condition.</TD>
+</TR>
+
+<TR>
+  <TD>setsdm</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on undif1</TD>
+</TR>
+
+<TR>
+  <TD>setsstruct2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on setsdm</TD>
+</TR>
+
+<TR>
+  <TD>setsexstruct2 , setsstruct</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on setsstruct2</TD>
+</TR>
+
+<TR>
+  <TD>setsres</TD>
+  <TD>~ setsresg</TD>
+</TR>
+
+<TR>
+  <TD>setsabs</TD>
+  <TD>~ setsabsd</TD>
+</TR>
+
+<TR>
+  <TD>strfvd</TD>
+  <TD>~ strslfvd</TD>
+</TR>
+
+<TR>
+  <TD>strfv2d</TD>
+  <TD>~ strslfv2d</TD>
+</TR>
+
+<TR>
+  <TD>strfv2</TD>
+  <TD>~ strslfv2</TD>
+</TR>
+
+<TR>
+  <TD>strfv</TD>
+  <TD>~ strslfv</TD>
+</TR>
+
+<TR>
+  <TD>strfv3</TD>
+  <TD>~ strslfv3</TD>
+</TR>
+
+<TR>
+  <TD>strssd</TD>
+  <TD>~ strslssd</TD>
+</TR>
+
+<TR>
+  <TD>strss</TD>
+  <TD>~ strslss</TD>
+</TR>
+
+<TR>
+  <TD>str0</TD>
+  <TD>~ strsl0</TD>
+</TR>
+
+<TR>
+  <TD>strfvi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof uses excluded middle to combine the
+  proper class and set cases.</TD>
+</TR>
+
+<TR>
+  <TD>setsid</TD>
+  <TD>~ setsslid</TD>
+</TR>
+
+<TR>
+  <TD>setsnid</TD>
+  <TD>~ setsslnid</TD>
+</TR>
+
+<TR>
+  <TD>sbcie2s</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently would require conditions that ` A ` and ` B `
+  are sets.</TD>
+</TR>
+
+<TR>
+  <TD>sbcie3s</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently would require conditions that ` A ` , ` B ` ,
+  and ` C ` are sets.</TD>
+</TR>
+
+<TR>
+  <TD>elbasfv , elbasov , strov2rcl</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>basprssdmsets</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on setsdm</TD>
+</TR>
+
+<TR>
+  <TD>ressval</TD>
+  <TD>~ ressid2 , ~ ressval2</TD>
+  <TD>For the ` B C_ A ` and ` -. B C_ A ` cases, respectively.</TD>
+</TR>
+
+<TR>
+  <TD>ressbas</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently needs to have conditions added, for example
+  that ` W ` is a set plus one of ` B C_ A ` or ` -. B C_ A ` .</TD>
+</TR>
+
+<TR>
+  <TD>ressbas2 , ressbasss</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ressbas .</TD>
+</TR>
+
+<TR>
+  <TD>resslem , ress0</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>ressinbas</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently needs to have conditions added, for example
+  that ` W ` is a set plus one of ` B C_ A ` or ` -. B C_ A ` .</TD>
+</TR>
+
+<TR>
+  <TD>ressval3d</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on setsidvald and sspss .</TD>
+</TR>
+
+<TR>
+  <TD>ressress</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ressinbas and excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>ressabs</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ressress but at first glance this would
+  appear to be feasible given the ` B C_ A ` condition.</TD>
+</TR>
+
+<TR>
+  <TD>strle1</TD>
+  <TD>~ strle1g</TD>
+</TR>
+
+<TR>
+  <TD>strle2</TD>
+  <TD>~ strle2g</TD>
+</TR>
+
+<TR>
+  <TD>strle3</TD>
+  <TD>~ strle3g</TD>
+</TR>
+
+<TR>
+  <TD>1strstr</TD>
+  <TD>~ 1strstrg</TD>
+</TR>
+
+<TR>
+  <TD>2strstr</TD>
+  <TD>~ 2strstrg</TD>
+</TR>
+
+<TR>
+  <TD>2strbas</TD>
+  <TD>~ 2strbasg</TD>
+</TR>
+
+<TR>
+  <TD>2strop</TD>
+  <TD>~ 2stropg</TD>
+</TR>
+
+<TR>
+  <TD>2strstr1</TD>
+  <TD>~ 2strstr1g</TD>
+</TR>
+
+<TR>
+  <TD>2strbas1</TD>
+  <TD>~ 2strbas1g</TD>
+</TR>
+
+<TR>
+  <TD>2strop1</TD>
+  <TD>~ 2strop1g</TD>
+</TR>
+
+<TR>
+  <TD>grpstr</TD>
+  <TD>~ grpstrg</TD>
+</TR>
+
+<TR>
+  <TD>grpbase</TD>
+  <TD>~ grpbaseg</TD>
+</TR>
+
+<TR>
+  <TD>grpplusg</TD>
+  <TD>~ grpplusgg</TD>
+</TR>
+
+<TR>
+  <TD>ressplusg</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resslem</TD>
+</TR>
+
+<TR>
+  <TD>grpbasex , grpplusgx</TD>
+  <TD>~ grpbaseg , ~ grpplusgg</TD>
+  <TD>Marked as discouraged even in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>rngstr</TD>
+  <TD>~ rngstrg</TD>
+</TR>
+
+<TR>
+  <TD>rngbase</TD>
+  <TD>~ rngbaseg</TD>
+</TR>
+
+<TR>
+  <TD>rngplusg</TD>
+  <TD>~ rngplusgg</TD>
+</TR>
+
+<TR>
+  <TD>rngmulr</TD>
+  <TD>~ rngmulrg</TD>
+</TR>
+
+<TR>
+  <TD>ressmulr , ressstarv</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resslem</TD>
+</TR>
+
+<TR>
+  <TD>srngstr</TD>
+  <TD>~ srngstrd</TD>
+</TR>
+
+<TR>
+  <TD>srngbase</TD>
+  <TD>~ srngbased</TD>
+</TR>
+
+<TR>
+  <TD>srngplusg</TD>
+  <TD>~ srngplusgd</TD>
+</TR>
+
+<TR>
+  <TD>srngmulr</TD>
+  <TD>~ srngmulrd</TD>
+</TR>
+
+<TR>
+  <TD>srnginvl</TD>
+  <TD>~ srnginvld</TD>
+</TR>
+
+<TR>
+  <TD>lmodstr</TD>
+  <TD>~ lmodstrd</TD>
+</TR>
+
+<TR>
+  <TD>lmodbase</TD>
+  <TD>~ lmodbased</TD>
+</TR>
+
+<TR>
+  <TD>lmodplusg</TD>
+  <TD>~ lmodplusgd</TD>
+</TR>
+
+<TR>
+  <TD>lmodsca</TD>
+  <TD>~ lmodscad</TD>
+</TR>
+
+<TR>
+  <TD>lmodvsca</TD>
+  <TD>~ lmodvscad</TD>
+</TR>
+
+<TR>
+  <TD>ipsstr</TD>
+  <TD>~ ipsstrd</TD>
+</TR>
+
+<TR>
+  <TD>ipsbase</TD>
+  <TD>~ ipsbased</TD>
+</TR>
+
+<TR>
+  <TD>ipsaddg</TD>
+  <TD>~ ipsaddgd</TD>
+</TR>
+
+<TR>
+  <TD>ipsmulr</TD>
+  <TD>~ ipsmulrd</TD>
+</TR>
+
+<TR>
+  <TD>ipssca</TD>
+  <TD>~ ipsscad</TD>
+</TR>
+
+<TR>
+  <TD>ipsvsca</TD>
+  <TD>~ ipsvscad</TD>
+</TR>
+
+<TR>
+  <TD>ipsip</TD>
+  <TD>~ ipsipd</TD>
+</TR>
+
+<TR>
+  <TD>resssca , ressvsca , ressip</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resslem</TD>
+</TR>
+
+<TR>
+  <TD>phlstr , phlbase , phlplusg , phlsca , phlvsca , phlip</TD>
+  <TD><I>none</I></TD>
+  <TD>Intuitionizing these will be straightforward once we get
+  around to it, in a manner similar to ~ lmodstrd .  The proofs will
+  use theorems like ~ strle1g , ~ strleund , and ~ opelstrsl .</TD>
+</TR>
+
+<TR>
+  <TD>topgrpstr</TD>
+  <TD>~ topgrpstrd</TD>
+</TR>
+
+<TR>
+  <TD>topgrpbas</TD>
+  <TD>~ topgrpbasd</TD>
+</TR>
+
+<TR>
+  <TD>topgrpplusg</TD>
+  <TD>~ topgrpplusgd</TD>
+</TR>
+
+<TR>
+  <TD>topgrptset</TD>
+  <TD>~ topgrptsetd</TD>
+</TR>
+
+<TR>
+  <TD>resstset</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resslem</TD>
+</TR>
+
+<TR>
+  <TD>otpsstr , otpsbas , otpstset , otpsle</TD>
+  <TD><I>none</I></TD>
+  <TD>Unused in set.mm.  If we want to develop this more we
+  may need to figure out whether to define order in terms of
+  ` < ` or ` <_ ` as the relationship between those may be
+  different without excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>0rest</TD>
+  <TD><I>none</I></TD>
+  <TD>Might need a ` A e. _V ` condition added, and this theorem seems
+  to be mostly be used in conjunction with excluded middle.</TD>
+</TR>
+
+<TR>
+  <TD>topnval</TD>
+  <TD>~ topnvalg</TD>
+</TR>
+
+<TR>
+  <TD>topnid</TD>
+  <TD>~ topnidg</TD>
+</TR>
+
+<TR>
+  <TD>topnpropd</TD>
+  <TD>~ topnpropgd</TD>
+</TR>
+
+<TR>
+  <TD>prdsbasex</TD>
+  <TD><I>none</I></TD>
+  <TD>Would need some conditions on whether ` R ` is a function,
+  on set existence, or the like. However, it is unused in
+  set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>imasvalstr , prdsvalstr , prdsvallem , prdsval , prdssca ,
+  prdsbas , prdsplusg , prdsmulr , prdsvsca , prdsip , prdsle ,
+  prdsless , prdsds , prdsdsfn , prdstset , prdshom , prdsco ,
+  prdsbas2 , prdsbasmpt , prdsbasfn , prdsbasprj , prdsplusgval ,
+  prdsplusgfval , prdsmulrval , prdsmulrfval , prdsleval , prdsdsval ,
+  prdsvscaval , prdsvscafval , prdsbas3 , prdsbasmpt2 , prdsbascl ,
+  prdsdsval2 , prdsdsval3 , pwsval , pwsbas , pwselbasb , pwselbas ,
+  pwsplusgval , pwsmulrval , pwsle , pwsleval , pwsvscafval , pwsvscaval ,
+  pwssca , pwsdiagel , pwssnf1o</TD>
+  <TD><I>none</I></TD>
+  <TD>At a minimum, these theorems would need new set existence
+  conditions and other routine intuitionizing.  At worst, they
+  would need a bigger revamp for things like how order works.</TD>
+</TR>
+
+<tr>
+  <td>df-ordt , df-xrs , and all theorems involving ordTop or RR*s</td>
+  <td><i>none</i></td>
+  <td>The set.mm definitions would not seem to fit with constructive
+  definitions of these concepts (for example, the ` if `
+  in df-xrs would apparently needed to be expressed in terms of
+  a suitable maximum and perhaps other changes are needed too)</td>
+</tr>
+
+<tr>
+  <td>df-qtop , df-imas , df-qus and all theorems defined
+  in terms of quotient topology, image structure, and quotient ring.</td>
+  <td><i>none</i></td>
+  <td>presumably could be added in some form</td>
+</tr>
+
+<tr>
+  <td>df-xps and all theorems mentioning the binary product on a structure
+  (syntax Xs.)</td>
+  <td><i>none</i></td>
+  <td>presumably could be added in some form</td>
+</tr>
+
+<TR>
+  <TD>df-mre , df-mrc and all theorems using the Moore or mrCls syntax</TD>
+  <TD><I>none</I></TD>
+  <TD>The closest we have currently is ~ df-cls but even that
+  doesn't function as it does in set.mm (because complements
+  are different without excluded middle).</TD>
+</TR>
+
+<tr>
+  <td>df-cnfld and all theorems using CCfld</td>
+  <td><i>none</i></td>
+  <td>Could presumably be defined in some form, but we'd have to look
+  at the literature definitions of a constructive field and see how
+  we'd need to define this.  Plus questions about whether
+  to define order in terms of ` < ` or ` <_ ` .</td>
+</tr>
+
+<TR>
+  <TD>istop2g</TD>
+  <TD>~ istopfin</TD>
+</TR>
+
+<TR>
+  <TD>iinopn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on abrexfi</TD>
+</TR>
+
+<TR>
+  <TD>riinopn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on iinopn (the other issues
+  in the set.mm proof could apparently be handled by ~ fin0or ).</TD>
+</TR>
+
+<TR>
+  <TD>rintopn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on riinopn</TD>
+</TR>
+
+<TR>
+  <TD>toponsspwpw</TD>
+  <TD>~ toponsspwpwg</TD>
+</TR>
+
+<TR>
+  <TD>toprntopon</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably could be proved but the set.mm proof does not
+  work as it is.</TD>
+</TR>
+
+<TR>
+  <TD>topsn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on pwsn</TD>
+</TR>
+
+<TR>
+  <TD>tpsprop2d</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is.  Unused in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>basdif0</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on undif1</TD>
+</TR>
+
+<TR>
+  <TD>0top</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on sssn</TD>
+</TR>
+
+<TR>
+  <TD>en2top</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on strict dominance</TD>
+</TR>
+
+<TR>
+  <TD>2basgen</TD>
+  <TD>~ 2basgeng</TD>
+</TR>
+
+<TR>
+  <TD>tgdif0</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle</TD>
+</TR>
+
+<TR>
+  <TD>indistopon</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on sspr</TD>
+</TR>
+
+<TR>
+  <TD>indistop , indisuni</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on indistopon</TD>
+</TR>
+
+<TR>
+  <TD>fctop</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on theorems we don't have
+  including con1d , ssfi , unfi , rexnal , and difindi .</TD>
+</TR>
+
+<TR>
+  <TD>fctop2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fctop</TD>
+</TR>
+
+<TR>
+  <TD>cctop</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on theorems we don't have
+  including con1d , rexnal , and difindi .</TD>
+</TR>
+
+<TR>
+  <TD>ppttop , pptbas</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on theorems we don't have
+  including orrd and ianor</TD>
+</TR>
+
+<TR>
+  <TD>indistpsx , indistps , indistps2 , indistpsALT , indistps2ALT</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on indiscrete topology theorems we don't
+  have</TD>
+</TR>
+
+<TR>
+  <TD>isopn2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4</TD>
+</TR>
+
+<TR>
+  <TD>opncld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isopn2</TD>
+</TR>
+
+<TR>
+  <TD>iincld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on opncld</TD>
+</TR>
+
+<TR>
+  <TD>intcld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on iincld</TD>
+</TR>
+
+<TR>
+  <TD>incld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on intcld</TD>
+</TR>
+
+<TR>
+  <TD>riincld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on iincld , incld , and case elimination</TD>
+</TR>
+
+<TR>
+  <TD>clscld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on intcld</TD>
+</TR>
+
+<TR>
+  <TD>clsf</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on clscld</TD>
+</TR>
+
+<TR>
+  <TD>clsval2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4 and opncld</TD>
+</TR>
+
+<TR>
+  <TD>ntrval2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4 and clsval2</TD>
+</TR>
+
+<TR>
+  <TD>ntrdif , clsdif</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>cmclsopn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4 and clsval2</TD>
+</TR>
+
+<TR>
+  <TD>cmntrcld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on opncld</TD>
+</TR>
+
+<TR>
+  <TD>iscld3 , iscld4</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>clsidm</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on clscld</TD>
+</TR>
+
+<TR>
+  <TD>0ntr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ssdif0</TD>
+</TR>
+
+<TR>
+  <TD>elcls , elcls2</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>clsndisj</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on elcls</TD>
+</TR>
+
+<TR>
+  <TD>elcls3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on elcls</TD>
+</TR>
+
+<TR>
+  <TD>opncldf1 , opncldf2 , opncldf3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on dfss4 and opncld</TD>
+</TR>
+
+<TR>
+  <TD>isclo</TD>
+  <TD><I>none</I></TD>
+  <TD>One direction of the biconditional may be provable by
+  taking the set.mm proof and replacing undif with ~ undifss</TD>
+</TR>
+
+<TR>
+  <TD>isclo2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isclo</TD>
+</TR>
+
+<TR>
+  <TD>indiscld</TD>
+  <TD><I>none</I></TD>
+  <TD>Something along these lines may be possible once we
+  define the indiscrete topology</TD>
+</TR>
+
+<TR>
+  <TD>neips</TD>
+  <TD>~ neipsm</TD>
+</TR>
+
+<TR>
+  <TD>neindisj</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on clsndisj</TD>
+</TR>
+
+<TR>
+  <TD>opnnei</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently the set.mm proof could easily be adapted for
+  the case in which ` S ` is inhabited</TD>
+</TR>
+
+<TR>
+  <TD>neindisj2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on elcls</TD>
+</TR>
+
+<TR>
+  <TD>neipeltop , neiptopuni , neiptoptop , neiptopnei , neiptopreu</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on several theorems we do not have.</TD>
+</TR>
+
+<TR>
+  <TD>df-lp and all theorems using the limPt syntax</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>df-perf and all theorems using the Perf syntax</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>restbas</TD>
+  <TD>~ restbasg</TD>
+</TR>
+
+<TR>
+  <TD>restsn2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on topsn</TD>
+</TR>
+
+<TR>
+  <TD>restcld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on opncld</TD>
+</TR>
+
+<TR>
+  <TD>restcldi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on restcld</TD>
+</TR>
+
+<TR>
+  <TD>restcldr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on restcld</TD>
+</TR>
+
+<TR>
+  <TD>restfpw</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ssfi</TD>
+</TR>
+
+<TR>
+  <TD>neitr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on inundif</TD>
+</TR>
+
+<TR>
+  <TD>restcls</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on clscld</TD>
+</TR>
+
+<TR>
+  <TD>restntr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle</TD>
+</TR>
+
+<TR>
+  <TD>resstopn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resstset</TD>
+</TR>
+
+<TR>
+  <TD>resstps</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resstopn</TD>
+</TR>
+
+<TR>
+  <TD>lmrel</TD>
+  <TD>~ lmreltop</TD>
+</TR>
+
+<TR>
+  <TD>iscnp2</TD>
+  <TD>~ iscnp</TD>
+</TR>
+
+<TR>
+  <TD>cnptop1 , cnptop2</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>cnprcl</TD>
+  <TD>~ cnprcl2k</TD>
+</TR>
+
+<TR>
+  <TD>cnpf , cnpcl</TD>
+  <TD>~ cnpf2</TD>
+</TR>
+
+<TR>
+  <TD>cnprcl2</TD>
+  <TD>~ cnprcl2k</TD>
+</TR>
+
+<TR>
+  <TD>cnpimaex</TD>
+  <TD>~ icnpimaex</TD>
+</TR>
+
+<tr>
+  <td>cnpco</td>
+  <td>~ cnptopco</td>
+</tr>
+
+<tr>
+  <td>iscncl</td>
+  <TD><I>none</I></TD>
+  <td>The set.mm proof relies on opncld</td>
+</tr>
+
+<tr>
+  <td>cncls2i</td>
+  <TD><I>none</I></TD>
+  <td>The set.mm proof relies on clscld</td>
+</tr>
+
+<tr>
+  <td>cnclsi</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on cncls2i</td>
+</tr>
+
+<tr>
+  <td>cncls2</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on cncls2i and iscncl</td>
+</tr>
+
+<tr>
+  <td>cncls</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on cncls2 and cnclsi</td>
+</tr>
+
+<tr>
+  <td>cncnp2</td>
+  <td>~ cncnp2m</td>
+</tr>
+
+<tr>
+  <td>cnpresti</td>
+  <td>~ cnptopresti</td>
+</tr>
+
+<tr>
+  <td>cnprest</td>
+  <td>~ cnptoprest</td>
+</tr>
+
+<tr>
+  <td>cnprest2</td>
+  <td>~ cnptoprest2</td>
+</tr>
+
+<tr>
+  <td>cnindis</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on indiscrete topology theorems
+  that we don't have.</td>
+</tr>
+
+<tr>
+  <td>paste</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on restcldr</td>
+</tr>
+
+<tr>
+  <td>lmcls , lmcld</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on elcls</td>
+</tr>
+
+<tr>
+  <td>lmcnp</td>
+  <td>~ lmtopcnp</td>
+</tr>
+
+<tr>
+  <td>df-cmp and all compactness (syntax Comp) theorems</td>
+  <td><i>none</i></td>
+  <td>How compactness fares without excluded middle is a complicated
+  topic. See for example [HoTT], section 11.5.</td>
+</tr>
+
+<tr>
+  <td>df-haus and all Hausdorff (syntax Haus) theorems</td>
+  <td><i>none</i></td>
+  <td>Perhaps there would need to be an apartness relation to
+  replace the use of negated equality.</td>
+</tr>
+
+<tr>
+  <td>df-conn and all connected toplogy (syntax Conn) theorems</td>
+  <td><i>none</i></td>
+  <td>would apparently need a lot of changes to work</td>
+</tr>
+
+<tr>
+  <td>df-1stc and all first-countable theorems</td>
+  <td><i>none</i></td>
+  <td>Worth considering the definition of countable seen
+  in theorems such as ~ ctm and ~ finct , as well as whatever else
+  might come up.</td>
+</tr>
+
+<tr>
+  <td>df-2ndc and all second-countable theorems</td>
+  <td><i>none</i></td>
+  <td>Worth considering the definition of countable seen
+  in theorems such as ~ ctm and ~ finct , as well as whatever else
+  might come up.</td>
+</tr>
+
+<tr>
+  <td>df-tx and all theorems using the binary topological product syntax (tX)</td>
+  <td><i>none</i></td>
+  <td>presumably could be added</td>
+</tr>
+
+<tr>
+  <td>df-xko and all theorems using the compact-open topology syntax (^ko)</td>
+  <td><i>none</i></td>
+  <td>not clear what is possible here</td>
+</tr>
+
+<tr>
+  <td>xmetrtri2</td>
+  <td><i>none</i></td>
+  <td>Presumably this or something similar could be defined once we define
+  RR*s ( df-xrs ) or something along those lines.</td>
+</tr>
+
+<tr>
+  <td>xmetgt0 , metgt0</td>
+  <td>~ xmeteq0 , ~ meteq0</td>
+  <td>Presumably would require defining apartness on ` X ` or something
+  along those lines.</td>
+</tr>
+
+<tr>
+  <td>xbln0</td>
+  <td>~ xblm</td>
+</tr>
+
+<tr>
+  <td>blin</td>
+  <td>~ blininf</td>
+</tr>
+
+<tr>
+  <td>setsmsbas</td>
+  <td>~ setsmsbasg</td>
+</tr>
+
+<tr>
+  <td>setsmsds</td>
+  <td>~ setsmsdsg</td>
+</tr>
+
+<tr>
+  <td>setsmstset</td>
+  <td>~ setsmstsetg</td>
+</tr>
+
+<tr>
+  <td>setsmstopn , setsxms , setsms , tmsval , tmslem , tmsbas ,
+  tmsds , tmstopn , tmsxms , tmsms</td>
+  <td><i>none</i></td>
+  <td>Presumably could prove these or similar theorems, analogous
+  to ~ setsmsbasg</td>
+</tr>
+
+<tr>
+  <td>blcld</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on xrltnle</td>
+</tr>
+
+<tr>
+  <td>blcls</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on blcld</td>
+</tr>
+
+<tr>
+  <td>blsscls</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on blcls</td>
+</tr>
+
+<tr>
+  <td>stdbdmetval</td>
+  <td>~ bdmetval</td>
+</tr>
+
+<tr>
+  <td>stdbdxmet</td>
+  <td>~ bdxmet</td>
+</tr>
+
+<tr>
+  <td>stdbdmet</td>
+  <td>~ bdmet</td>
+</tr>
+
+<tr>
+  <td>stdbdbl</td>
+  <td>~ bdbl</td>
+</tr>
+
+<tr>
+  <td>stdbdmopn</td>
+  <td>~ bdmopn</td>
+</tr>
+
+<tr>
+  <td>ressxms , ressms</td>
+  <td><i>none</i></td>
+  <td>Awaits revision of ~ df-ress as described at <a
+  href="https://github.com/metamath/set.mm/issues/3022">Clean
+  up multifunction restriction operator for extensible structures
+  in iset.mm</a></td>
+</tr>
+
+<tr>
+  <td>prdsxms , prdsms</td>
+  <td><i>none</i></td>
+  <td>This would need more extensive development of theorems related
+  to the Xs_ syntax (not just ~ df-prds itself).</td>
+</tr>
+
+<tr>
+  <td>pwsxms , pwsms</td>
+  <td><i>none</i></td>
+  <td>This would need more extensive development of theorems related
+  to the ^s syntax (not just ~ df-pws itself).</td>
+</tr>
+
+<tr>
+  <td>dscmet , dscopn</td>
+  <td><i>none</i></td>
+  <td>The set.mm definition for the discrete metric, and the proofs,
+  would seem to rely on equality being decidable.</td>
+</tr>
+
+<tr>
+  <td>qtopbaslem</td>
+  <td>~ qtopbasss</td>
+</tr>
+
+<tr>
+  <td>iooretop</td>
+  <td>~ iooretopg</td>
+</tr>
+
+<tr>
+  <td>icccld , icopnfcld , iocmnfcld , qdensere</td>
+  <td><i>none</i></td>
+  <td>depend on various closed set theorems</td>
+</tr>
+
+<tr>
+  <td>qdensere2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on qdensere</td>
+</tr>
+
+<tr>
+  <td>blcvx</td>
+  <td><i>none</i></td>
+  <td>presumably provable for either the ` T = 0 ` case or the
+  ` T e. ( 0 (,] 1 ) ` case; set.mm uses excluded middle to
+  combine those two cases</td>
+</tr>
+
+<tr>
+  <td>zcld</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses the floor function in ways that we
+  are unlikely to be able to intuitionize</td>
+</tr>
+
+<tr>
+  <td>iccntr</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses real number trichotomy in many steps</td>
+</tr>
+
+<tr>
+  <td>opnreen</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof is not usable as-is but it would be interesting
+  to see if some portions can be adapted</td>
+</tr>
+
+<tr>
+  <td>rectbntr0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on various theorems we do not have</td>
+</tr>
+
+<tr>
+  <td>cnmpt1ds</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof is in terms of binary topological product theorems
+  we do not have</td>
+</tr>
+
+<tr>
+  <td>metdsval</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses infex</td>
+</tr>
+
+<tr>
+  <td>metdsf</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses infxrcl</td>
+</tr>
+
+<TR>
+  <TD>divccncf</TD>
+  <TD>~ divccncfap</TD>
+</TR>
+
 </TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
@@ -8207,6 +10113,13 @@ John Wiley &amp; Sons Inc. (1967) [QA300.A645 1967].</LI>
 accepting constructive mathematics,&quot; <I>Bulletin (New Series) of
 the American Mathematical Society</I>, 54:481-498 (2017),
 DOI: <A HREF="http://dx.doi.org/10.1090/bull/1556">10.1090/bull/1556</A> .</LI>
+
+<li><a name="BauerSwan"></a>[BauerSwan] Bauer, Andrej and Swan, Andrew,
+"Every Metric Space is Separable in Function Realizability",
+<i>Logical Methods in Computer Science</i>,
+Volume 15, Issue 2, 2019, pp. 14:1&#x2013;14:7,
+<a href="https://lmcs.episciences.org/5501/pdf">
+https://lmcs.episciences.org/5501/pdf</a></li>
 
 <LI><A NAME="BauerTaylor"></A> [BauerTaylor] Andrej Bauer and Paul Taylor,
 "The Dedekind Reals in Abstract Stone Duality",
@@ -8254,6 +10167,12 @@ https://plato.stanford.edu/archives/sum2015/entries/set-theory-constructive/</A>
 </LI>
 
 <LI><A NAME="Moschovakis"></A> [Moschovakis] Moschovakis, Joan, &quot;Intuitionistic Logic&quot;, <I>The Stanford Encyclopedia of Philosophy (Spring 2015 Edition)</I>, Edward N. Zalta (ed.), <A HREF="https://plato.stanford.edu/archives/spr2015/entries/logic-intuitionistic/">https://plato.stanford.edu/archives/spr2015/entries/logic-intuitionistic/</A>.
+</LI>
+
+<LI>
+<A NAME="Munkres"></A> [Munkres] Munkres, James Raymond,
+<I>Topology:  a first course,</I> Prentice-Hall, Englewood Cliffs, New
+Jersey (1975) [QA611.M82].
 </LI>
 
 <LI><A NAME="Eisenberg"></A> [Eisenberg] Eisenberg, Murray, <I>Axiomatic Theory of

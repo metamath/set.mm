@@ -55,13 +55,13 @@ jobs:
     steps:
       # By default checkout fetches a single commit, which is what we want.
       # See: https://github.com/actions/checkout
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: echo 'Starting'
       - run: pwd
       - run: ls -l
       - run: g++ --version
       # Get and compile checkmm, a C++ verifier by Eric Schmidt
-      - run: wget -N -q http://us.metamath.org/downloads/checkmm.cpp
+      - run: wget -N https://github.com/metamath/metamath-website-seed/raw/main/downloads/checkmm.cpp
       - run: g++ -O2 -o checkmm checkmm.cpp
       # Use it to verify set.mm and iset.mm
       - run: ./checkmm set.mm
@@ -74,7 +74,18 @@ jobs:
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      # Install LaTeX so we can test generated LaTeX. We use extended packages:
+      # texlive-extra-utils provides pdflatex
+      # texlive-fonts-extra provides phonetic.sty
+      # texlive-science provides accents.sty
+      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra texlive-science
+      # Here's an eXample of how to install "extra" LaTeX packages. See: 
+      # https://tex.stackexchange.com/questions/38978/how-can-i-manually-install-a-latex-package-debian-ubuntu-linux/39259#39259
+      # - run: mkdir -p "$HOME/texmf"
+      # - run: wget https://mirrors.ctan.org/macros/latex/contrib/accents.zip -o "$HOME/texmf/accents.zip"
+      # - run: cd "$HOME/texmf"; unzip -j accents.zip
+      # - run: texhash texmf
       # Use GITHUB_PATH to set PATH. For details see:
       # https://docs.github.com/en/free-pro-team@latest/actions/reference/
       # workflow-commands-for-github-actions#setting-an-environment-variable
@@ -90,7 +101,7 @@ jobs:
       # Note: cache key includes version of metamath in use
       - name: Cache metamathexe
         id: cache-metamathexe
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         env:
           cache-name: cache-metamathexe
         with:
@@ -129,6 +140,11 @@ jobs:
       # The following checks are arbitrarily included in the metamath job.
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
+      # Check generated LaTeX, to ensure the TeX definitions are okay. set.mm:
+      - run: python3 scripts/latex_collector.py set.mm list-set.tex
+      - run: pdflatex -halt-on-error list-set.tex 2>&1 | tee ,latex-output
+      # Complain if the pdflatex output says something is invalid
+      - run: "! grep ' invalid ' ,latex-output"
 
   ###########################################################
   smetamath-rs:
@@ -137,10 +153,10 @@ jobs:
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Cache smm3
         id: cache-smm3
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         env:
           cache-name: cache-smetamath
         with:
@@ -168,15 +184,19 @@ jobs:
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # See: https://github.com/actions/setup-java
-      - uses: actions/setup-java@v1
+      - uses: actions/setup-java@v3
         with:
-          java-version: '10' # The JDK version to make available on the path.
-          # java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
-          # architecture: x64 # (x64 or x86) - defaults to x64
-      - run: wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
-      - run: unzip -q mmj2jar.zip
+          distribution: 'zulu' # ('temurin', 'zulu', ...) - required field
+          java-version: '11' # The JDK version to make available on the path.
+          # java-package: jdk # (jdk, jre, jdk+fx, or jre+fx) - defaults to jdk
+          # architecture: x64 # (x86, x64, armv7, aarch64, or ppc64le) - default value derived from the runner machine
+      - run: wget -N https://github.com/digama0/mmj2/raw/master/mmj2jar/mmj2.jar
+      - run: mkdir macros
+      - run: wget -O macros/definitionCheck.js https://github.com/digama0/mmj2/raw/master/mmj2jar/macros/definitionCheck.js
+      - run: wget -O macros/init.js https://github.com/digama0/mmj2/raw/master/mmj2jar/macros/init.js
+      - run: wget -O macros/showDiscouraged.js https://github.com/digama0/mmj2/raw/master/mmj2jar/macros/showDiscouraged.js
       # Do extra checking and generate the '*discouraged.new' file
       # (the 'printf' lets us insert multiple lines).
       # We use setparser to check that definitions don't create
@@ -195,10 +215,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       # See https://github.com/actions/setup-python
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v4
         with:
           python-version: '>=3.9'
-      - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
+      - run: wget -N https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
       # We can speed up the script by deleting all logging calls, since we do
       # not need them.
       - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
@@ -214,10 +234,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       # See https://github.com/actions/setup-python
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v4
         with:
           python-version: '>=3.9'
-      - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
+      - run: wget -N https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
       # We can speed up the script by deleting all logging calls, since we do
       # not need them.
       - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
@@ -238,7 +258,7 @@ jobs:
     # an exception.
     # TODO: Check other .mm files, currently this only checks set.mm.
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: pip3 install ply
       - run: scripts/report-changes.py --gource > /dev/null
 

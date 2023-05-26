@@ -62593,7 +62593,7 @@ htmldef "-." as
 htmldef "wff" as
     "<IMG SRC='_wff.gif' WIDTH=24 HEIGHT=19 TITLE='wff' ALIGN=TOP> ";
   althtmldef "wff" as '<FONT COLOR="#808080">wff </FONT>'; /* was #00CC00 */
-  latexdef "wff" as "{\rm wff}";
+  latexdef "wff" as "\mathrm{wff}";
 htmldef "|-" as
     "<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 TITLE='|-' ALIGN=TOP> ";
   althtmldef "|-" as
@@ -62643,7 +62643,7 @@ htmldef "ka" as
   latexdef "ka" as "\rho";
 htmldef "~P" as "<IMG SRC='scrp.gif' WIDTH=16 HEIGHT=19 TITLE='~P' ALIGN=TOP>";
   althtmldef "~P" as '<FONT FACE=sans-serif>&weierp;</FONT>';
-  latexdef "~P" as "{\cal P}";
+  latexdef "~P" as "\mathcal{P}";
 htmldef "<->" as " <IMG SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 " +
     "TITLE='&lt;-&gt;' ALIGN=TOP> ";
   althtmldef "<->" as ' &harr; ';
@@ -62670,10 +62670,10 @@ htmldef "-/\" as
   latexdef "-/\" as "\barwedge";
 htmldef "hadd" as "hadd";
   althtmldef "hadd" as "hadd";
-  latexdef "hadd" as "\mbox{hadd}";
+  latexdef "hadd" as "\text{ hadd }";
 htmldef "cadd" as "cadd";
   althtmldef "cadd" as "cadd";
-  latexdef "cadd" as "\mbox{cadd}";
+  latexdef "cadd" as "\text{ cadd }";
 htmldef "A." as
     "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALIGN=TOP>";
   althtmldef "A." as '<FONT FACE=sans-serif>&forall;</FONT>'; /* &#8704; */
@@ -62681,7 +62681,7 @@ htmldef "A." as
 htmldef "setvar" as
     "<IMG SRC='_setvar.gif' WIDTH=20 HEIGHT=19 TITLE='setvar' ALIGN=TOP> ";
   althtmldef "setvar" as '<FONT COLOR="#808080">setvar </FONT>';
-  latexdef "setvar" as "{\rm setvar}";
+  latexdef "setvar" as "\mathrm{setvar}";
 htmldef "x" as "<IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALIGN=TOP>";
   althtmldef "x" as '<I><FONT COLOR="#FF0000">x</FONT></I>';
   latexdef "x" as "x";
@@ -62753,7 +62753,7 @@ htmldef "F/_" as
 htmldef "class" as
     "<IMG SRC='_class.gif' WIDTH=32 HEIGHT=19 TITLE='class' ALIGN=TOP> ";
   althtmldef "class" as '<FONT COLOR="#808080">class </FONT>';
-  latexdef "class" as "{\rm class}";
+  latexdef "class" as "\mathrm{class}";
 htmldef "./\" as
     " <IMG SRC='_.wedge.gif' WIDTH=11 HEIGHT=19 ALT=' ./\' TITLE='./\'> ";
   althtmldef "./\" as
@@ -62852,13 +62852,13 @@ htmldef ".+^" as
   althtmldef ".+^" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#x2A23;</SPAN> ';       /* &plusacir; */
-  latexdef ".+^" as "\hat{+}";
+  latexdef ".+^" as "\mathbin{\hat{+}}";
 htmldef ".+b" as
     " <IMG SRC='_.plusb.gif' WIDTH=14 HEIGHT=19 ALT=' .+b' TITLE='.+b'> ";
   althtmldef ".+b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#x271A;</SPAN> ';
-  latexdef ".+b" as "\boldsymbol{+}";
+  latexdef ".+b" as "\pmb{+}";
 htmldef ".(+)" as
     " <IMG SRC='_.oplus.gif' WIDTH=13 HEIGHT=19 ALT=' .(+)' TITLE='.(+)'> ";
   althtmldef ".(+)" as
@@ -62900,7 +62900,7 @@ htmldef ".0b" as
   althtmldef ".0b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#x1D7CE</SPAN> ';
-  latexdef ".0b" as "\mbox{\boldmath$0$}";
+  latexdef ".0b" as "\pmb{0}";
 htmldef "A" as "<IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 TITLE='A' ALIGN=TOP>";
   althtmldef "A" as '<I><FONT COLOR="#CC33CC">A</FONT></I>';
   latexdef "A" as "A";
@@ -62935,7 +62935,7 @@ htmldef "e/" as
   latexdef "e/" as "\notin";
 htmldef "_V" as "<IMG SRC='rmcv.gif' WIDTH=10 HEIGHT=19 TITLE='_V' ALIGN=TOP>";
   althtmldef "_V" as 'V';
-  latexdef "_V" as "{\rm V}";
+  latexdef "_V" as "\mathrm{V}";
 htmldef "[." as
     "<IMG SRC='_dlbrack.gif' WIDTH=6 HEIGHT=19 ALT=' [.' TITLE='[.'>";
   /* althtmldef "[." as '&#x298F;'; */   /* corner tick */
@@ -63003,8 +63003,8 @@ htmldef "if" as "<IMG SRC='_if.gif' WIDTH=11 HEIGHT=19 TITLE='if' ALIGN=TOP>";
     "<IMG SRC='_ded.gif' WIDTH=23 HEIGHT=19 TITLE='ded' ALIGN=TOP>";*/
   althtmldef "if" as ' if';
     /*althtmldef "ded" as 'ded';*/
-  latexdef "if" as "{\rm if}";
-    /*latexdef "ded" as "{\rm ded}";*/
+  latexdef "if" as "\mathrm{if}";
+    /*latexdef "ded" as "\mathrm{ded}";*/
 htmldef "," as "<IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 TITLE=',' ALIGN=TOP> ";
   althtmldef "," as ', ';
   latexdef "," as ",";
@@ -63028,7 +63028,6 @@ htmldef "|^|" as
   althtmldef "|^|" as '<FONT SIZE="+1">&cap;</FONT>'; /* &xcap; */
     /*althtmldef "|^|" as '&#8898;';*/ /* &xcap; */
   latexdef "|^|" as "\bigcap";
-
 htmldef "Q" as "<IMG SRC='_cq.gif' WIDTH=12 HEIGHT=19 TITLE='Q' ALIGN=TOP>";
   althtmldef "Q" as '<I><FONT COLOR="#CC33CC">Q</FONT></I>';
   latexdef "Q" as "Q";
@@ -63122,7 +63121,6 @@ htmldef "Y" as "<IMG SRC='_cy.gif' WIDTH=12 HEIGHT=19 TITLE='Y' ALIGN=TOP>";
 htmldef "Z" as "<IMG SRC='_cz.gif' WIDTH=11 HEIGHT=19 TITLE='Z' ALIGN=TOP>";
   althtmldef "Z" as '<I><FONT COLOR="#CC33CC">Z</FONT></I>';
   latexdef "Z" as "Z";
-
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
@@ -63136,18 +63134,16 @@ htmldef "F." as
     " <IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 TITLE='F.' ALIGN=TOP> ";
   althtmldef "F." as ' &perp; ';
   latexdef "F." as "\bot";
-
 htmldef "iota" as
     "<IMG SRC='riota.gif' WIDTH=6 HEIGHT=19 TITLE='iota' ALIGN=TOP>";
   althtmldef "iota" as '&#8489;';
-  latexdef "iota" as "\mathrm{\rotatebox[origin=C]{180}{$\iota$}}";
+  latexdef "iota" as "\text{\riota}";
 htmldef "h" as "<IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 TITLE='h' ALIGN=TOP>";
   althtmldef "h" as '<I><FONT COLOR="#FF0000">h</FONT></I>';
   latexdef "h" as "h";
 htmldef "H" as "<IMG SRC='_ch.gif' WIDTH=14 HEIGHT=19 TITLE='H' ALIGN=TOP>";
   althtmldef "H" as '<I><FONT COLOR="#CC33CC">H</FONT></I>';
   latexdef "H" as "H";
-
 htmldef "X." as
     " <IMG SRC='times.gif' WIDTH=9 HEIGHT=19 TITLE='X.' ALIGN=TOP> ";
   althtmldef "X." as ' &times; ';
@@ -63162,11 +63158,11 @@ htmldef "`'" as "<IMG SRC='_cnv.gif' WIDTH=10 HEIGHT=19 TITLE=" + '"' + "`'" +
 htmldef "dom" as
     "<IMG SRC='_dom.gif' WIDTH=26 HEIGHT=19 TITLE='dom' ALIGN=TOP> ";
   althtmldef "dom" as 'dom ';
-  latexdef "dom" as "{\rm dom}";
+  latexdef "dom" as "\mathrm{dom}";
 htmldef "ran" as
     "<IMG SRC='_ran.gif' WIDTH=22 HEIGHT=19 TITLE='ran' ALIGN=TOP> ";
   althtmldef "ran" as 'ran ';
-  latexdef "ran" as "{\rm ran}";
+  latexdef "ran" as "\mathrm{ran}";
 htmldef "|`" as " <IMG SRC='restriction.gif' WIDTH=5 HEIGHT=19 TITLE='|`'" +
     " ALIGN=TOP> ";
   althtmldef "|`" as ' <FONT FACE=sans-serif>&#8638;</FONT> '; /* &uharr; */
@@ -63182,11 +63178,11 @@ htmldef "o." as
 htmldef
     "Fun" as "<IMG SRC='_fun.gif' WIDTH=25 HEIGHT=19 TITLE='Fun' ALIGN=TOP> ";
   althtmldef "Fun" as 'Fun ';
-  latexdef "Fun" as "{\rm Fun}";
+  latexdef "Fun" as "\mathrm{Fun}";
 htmldef "Fn" as
     " <IMG SRC='_fn.gif' WIDTH=17 HEIGHT=19 TITLE='Fn' ALIGN=TOP> ";
   althtmldef "Fn" as ' Fn ';
-  latexdef "Fn" as "{\rm Fn}";
+  latexdef "Fn" as "\mathrm{Fn}";
 htmldef ":" as "<IMG SRC='colon.gif' WIDTH=4 HEIGHT=19 TITLE=':' ALIGN=TOP>";
   althtmldef ":" as ':';
   latexdef ":" as ":";
@@ -63199,27 +63195,19 @@ htmldef "-1-1->" as
     "<IMG SRC='onetoone.gif' WIDTH=23 HEIGHT=19 TITLE='-1-1-&gt;' ALIGN=TOP>";
   althtmldef "-1-1->" as
     '&ndash;<FONT SIZE=-2 FACE=sans-serif>1-1</FONT>&rarr;';
-  latexdef "-1-1->" as
-    "\raisebox{.5ex}{${\textstyle{\:}_{\mbox{\footnotesize\rm 1" +
-    "\tt -\rm 1}}}\atop{\textstyle{" +
-    "\longrightarrow}\atop{\textstyle{}^{\mbox{\footnotesize\rm {\ }}}}}$}";
+  latexdef "-1-1->" as "\overset{\mathrm{1-1}}{\longrightarrow}";
 htmldef "-onto->" as
     "<IMG SRC='onto.gif' WIDTH=23 HEIGHT=19 TITLE='-onto-&gt;' ALIGN=TOP>";
   althtmldef "-onto->" as
     '&ndash;<FONT SIZE=-2 FACE=sans-serif>onto</FONT>&rarr;';
-  latexdef "-onto->" as
-    "\raisebox{.5ex}{${\textstyle{\:}_{\mbox{\footnotesize\rm {\ }}}}" +
-    "\atop{\textstyle{" +
-    "\longrightarrow}\atop{\textstyle{}^{\mbox{\footnotesize\rm onto}}}}$}";
+  latexdef "-onto->" as "\underset{\mathrm{onto}}{\longrightarrow}";
 htmldef "-1-1-onto->" as "<IMG SRC='onetooneonto.gif' WIDTH=23 HEIGHT=19 " +
     "TITLE='-1-1-onto-&gt;' ALIGN=TOP>";
   althtmldef "-1-1-onto->" as '&ndash;<FONT SIZE=-2 '
     + 'FACE=sans-serif>1-1</FONT>-<FONT SIZE=-2 '
     + 'FACE=sans-serif>onto</FONT>&rarr;';
-  latexdef "-1-1-onto->" as
-    "\raisebox{.5ex}{${\textstyle{\:}_{\mbox{\footnotesize\rm 1" +
-    "\tt -\rm 1}}}\atop{\textstyle{" +
-    "\longrightarrow}\atop{\textstyle{}^{\mbox{\footnotesize\rm onto}}}}$}";
+  latexdef "-1-1-onto->" as "\overset{\mathrm{1-1}}{\underset{\mathrm{onto}}" +
+    "{\longrightarrow}}";
 htmldef "`" as
     "<IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 TITLE='` ' ALIGN=TOP>";
     /* Above, IE7 _printing_ is corrupted by '`'; use '` ' which works */
@@ -63228,7 +63216,7 @@ htmldef "`" as
 htmldef "Isom" as
     " <IMG SRC='_isom.gif' WIDTH=30 HEIGHT=19 TITLE='Isom' ALIGN=TOP> ";
   althtmldef "Isom" as ' Isom ';
-  latexdef "Isom" as "{\rm Isom}";
+  latexdef "Isom" as "\mathrm{Isom}";
 htmldef "|->" as " <IMG SRC='mapsto.gif' WIDTH=15 HEIGHT=19 TITLE='|-&gt;'" +
     " ALIGN=TOP> ";
   althtmldef "|->" as ' <FONT FACE=sans-serif>&#8614;</FONT> ';
@@ -63236,25 +63224,23 @@ htmldef "|->" as " <IMG SRC='mapsto.gif' WIDTH=15 HEIGHT=19 TITLE='|-&gt;'" +
 htmldef "1st" as
     "<IMG SRC='_1st.gif' WIDTH=15 HEIGHT=19 TITLE='1st' ALIGN=TOP>";
   althtmldef "1st" as '1<SUP>st</SUP> ';
-  latexdef "1st" as "1^{\rm st}";
+  latexdef "1st" as "1^\mathrm{st}";
 htmldef "2nd" as
     "<IMG SRC='_2nd.gif' WIDTH=21 HEIGHT=19 TITLE='2nd' ALIGN=TOP>";
   althtmldef "2nd" as '2<SUP>nd</SUP> ';
-  latexdef "2nd" as "2^{\rm nd}";
+  latexdef "2nd" as "2^\mathrm{nd}";
 htmldef "Swap" as
     "<FONT FACE=sans-serif> Swap </FONT>";
   althtmldef "Swap" as '<FONT FACE=sans-serif> Swap </FONT>';
-  latexdef "Swap" as "{\rm Swap}";
-
+  latexdef "Swap" as "\mathrm{Swap}";
 htmldef "_E" as
     " <IMG SRC='rmce.gif' WIDTH=9 HEIGHT=19 TITLE='_E' ALIGN=TOP> ";
   althtmldef "_E" as ' E ';
-  latexdef "_E" as "{\rm E}";
+  latexdef "_E" as "\mathrm{E}";
 htmldef "_I" as
     " <IMG SRC='rmci.gif' WIDTH=4 HEIGHT=19 TITLE='_I' ALIGN=TOP> ";
   althtmldef "_I" as ' I ';
-  latexdef "_I" as "{\rm I}";
-
+  latexdef "_I" as "\mathrm{I}";
 htmldef "U_" as
     "<IMG SRC='_cupbar.gif' WIDTH=13 HEIGHT=19 TITLE='U_' ALIGN=TOP>";
   althtmldef "U_" as '<U><FONT SIZE="+1">&cup;</FONT></U>'; /* &xcup; */
@@ -63263,12 +63249,10 @@ htmldef "|^|_" as
     "<IMG SRC='_capbar.gif' WIDTH=13 HEIGHT=19 TITLE='|^|_' ALIGN=TOP>";
   althtmldef "|^|_" as '<U><FONT SIZE="+1">&cap;</FONT></U>'; /* &xcap; */
   latexdef "|^|_" as "\underline{\bigcap}";
-
 htmldef "(+)" as
     " <IMG SRC='oplus.gif' WIDTH=13 HEIGHT=19 TITLE='(+)' ALIGN=TOP> ";
   althtmldef "(+)" as " &#x2295; ";
   latexdef "(+)" as "\oplus";
-
 htmldef "0c" as '0<SUB><I>c</I></SUB>';
   althtmldef "0c" as '0<SUB><I>c</I></SUB>';
   latexdef "0c" as "0_c";
@@ -63279,15 +63263,13 @@ htmldef "+c" as
     " <IMG SRC='_plc.gif' WIDTH=18 HEIGHT=19 TITLE='+o' ALIGN=TOP> ";
   althtmldef "+c" as ' +<SUB><I>c</I></SUB> ';
   latexdef "+c" as "+_c";
-
 htmldef "l" as "<IMG SRC='_l.gif' WIDTH=6 HEIGHT=19 TITLE='l' ALIGN=TOP>";
   althtmldef "l" as '<I><FONT COLOR="#FF0000">l</FONT></I>';
   latexdef "l" as "l";
-
 htmldef "Fix" as
     "<IMG SRC='_fix.gif' WIDTH=21 HEIGHT=19 TITLE='Fix' ALIGN=TOP>";
   althtmldef "Fix" as '<FONT FACE=sans-serif> Fix </FONT>';
-  latexdef "Fix" as "{\rm Fix}";
+  latexdef "Fix" as "\mathrm{Fix}";
 htmldef "<<" as
     "<IMG SRC='llangle.gif' WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALIGN=TOP>";
   althtmldef "<<" as "&#10218;";
@@ -63302,17 +63284,14 @@ htmldef "(x)" as
   latexdef "(x)" as "\otimes";
 htmldef "Image" as "Image";
   althtmldef "Image" as "Image";
-  latexdef "Image" as "{\rm Image}";
-
+  latexdef "Image" as "\mathrm{Image}";
 htmldef "Image_k" as "Image<SUB><I>k</I></SUB>";
   althtmldef "Image_k" as "Image<SUB><I>k</I></SUB>";
-  latexdef "Image_k" as "{\rm Image}_k";
-
+  latexdef "Image_k" as "\mathrm{Image}_k";
 htmldef "~P1" as
   "<IMG SRC='scrp.gif' WIDTH=16 HEIGHT=19 TITLE='~P' ALIGN=TOP><SUB>1</SUB> ";
   althtmldef "~P1" as '<FONT FACE=sans-serif>&weierp;</FONT><SUB>1</SUB>';
-  latexdef "~P1" as "{\cal P}_1";
-
+  latexdef "~P1" as "\mathcal{P}_1";
 htmldef "X._k" as
     " <IMG SRC='times.gif' WIDTH=9 HEIGHT=19 TITLE='X.'" +
        "ALIGN=TOP><SUB><I>k</I></SUB> ";
@@ -63339,27 +63318,27 @@ htmldef "o._k" as
 htmldef "SI" as
     "<FONT FACE=sans-serif> SI </FONT>";
   althtmldef "SI" as '<FONT FACE=sans-serif> SI </FONT>';
-  latexdef "SI" as "{\rm SI}";
+  latexdef "SI" as "\mathrm{SI}";
 htmldef "Clos1" as
     "<FONT FACE=sans-serif> Clos1 </FONT>";
   althtmldef "Clos1" as '<FONT FACE=sans-serif> Clos1 </FONT>';
-  latexdef "Clos1" as "{\rm Clos1}";
+  latexdef "Clos1" as "\mathrm{Clos1}";
 htmldef "Phi" as
     "<FONT FACE=sans-serif> Phi </FONT>";
   althtmldef "Phi" as '<FONT FACE=sans-serif> Phi </FONT>';
-  latexdef "Phi" as "{\rm Phi}";
+  latexdef "Phi" as "\mathrm{Phi}";
 htmldef "Proj1" as
     "<FONT FACE=sans-serif> Proj1 </FONT>";
   althtmldef "Proj1" as '<FONT FACE=sans-serif> Proj1 </FONT>';
-  latexdef "Proj1" as "{\rm Proj1}";
+  latexdef "Proj1" as "\mathrm{Proj1}";
 htmldef "Proj2" as
     "<FONT FACE=sans-serif> Proj2 </FONT>";
   althtmldef "Proj2" as '<FONT FACE=sans-serif> Proj2 </FONT>';
-  latexdef "Proj2" as "{\rm Proj2}";
+  latexdef "Proj2" as "\mathrm{Proj2}";
 htmldef "_S" as
     "<FONT FACE=sans-serif> S </FONT>";
   althtmldef "_S" as '<FONT FACE=sans-serif> S </FONT>';
-  latexdef "_S" as "{\rm S}";
+  latexdef "_S" as "\mathrm{S}";
 htmldef "U.1" as '&xcup;<SUB>1</SUB>';
   althtmldef "U.1" as '&xcup;<SUB>1</SUB>';
   latexdef "U.1" as "\bigcup_1";
@@ -63367,194 +63346,181 @@ htmldef "_I_k" as
     " <IMG SRC='rmci.gif' WIDTH=4 HEIGHT=19 TITLE='_I_k' ALIGN=TOP>" +
     "<SUB><I>k</I></SUB> ";
   althtmldef "_I_k" as ' I<SUB><I>k</I></SUB> ';
-  latexdef "_I_k" as "{\rm I}_k";
+  latexdef "_I_k" as "\mathrm{I}_k";
 htmldef "_S_k" as
     " <FONT FACE=sans-serif>S</FONT><SUB><I>k</I></SUB> ";
   althtmldef "_S_k" as
     ' <FONT FACE=sans-serif>S</FONT><SUB><I>k</I></SUB> ';
-  latexdef "_S_k" as "{\rm S}_k";
+  latexdef "_S_k" as "\mathrm{S}_k";
 htmldef "Ins2_k" as
     " <FONT FACE=sans-serif>Ins2</FONT><SUB><I>k</I></SUB> ";
   althtmldef "Ins2_k" as
     ' <FONT FACE=sans-serif>Ins2</FONT><SUB><I>k</I></SUB> ';
-  latexdef "Ins2_k" as "{\rm Ins2}_k";
+  latexdef "Ins2_k" as "\mathrm{Ins2}_k";
 htmldef "Ins3_k" as
     " <FONT FACE=sans-serif>Ins3</FONT><SUB><I>k</I></SUB> ";
   althtmldef "Ins3_k" as
     ' <FONT FACE=sans-serif>Ins3</FONT><SUB><I>k</I></SUB> ';
-  latexdef "Ins3_k" as "{\rm Ins3}_k";
+  latexdef "Ins3_k" as "\mathrm{Ins3}_k";
 htmldef "SI_k" as
     " <FONT FACE=sans-serif>SI</FONT><SUB><I>k</I></SUB> ";
   althtmldef "SI_k" as ' <FONT FACE=sans-serif>SI</FONT><SUB><I>k</I></SUB> ';
-  latexdef "SI_k" as "{\rm SI}_k";
-
-
+  latexdef "SI_k" as "\mathrm{SI}_k";
 htmldef "Ins2" as
     " <FONT FACE=sans-serif>Ins2</FONT> ";
   althtmldef "Ins2" as ' <FONT FACE=sans-serif>Ins2</FONT> ';
-  latexdef "Ins2" as "{\rm Ins2}";
+  latexdef "Ins2" as "\mathrm{Ins2}";
 htmldef "Ins3" as
     " <FONT FACE=sans-serif>Ins3</FONT> ";
   althtmldef "Ins3" as ' <FONT FACE=sans-serif>Ins3</FONT> ';
-  latexdef "Ins3" as "{\rm Ins3}";
+  latexdef "Ins3" as "\mathrm{Ins3}";
 htmldef "Ins4" as
     " <FONT FACE=sans-serif>Ins4</FONT> ";
   althtmldef "Ins4" as ' <FONT FACE=sans-serif>Ins4</FONT> ';
-  latexdef "Ins4" as "{\rm Ins4}";
+  latexdef "Ins4" as "\mathrm{Ins4}";
 htmldef "Cup" as
     " <FONT FACE=sans-serif>Cup</FONT> ";
   althtmldef "Cup" as ' <FONT FACE=sans-serif>Cup</FONT> ';
-  latexdef "Cup" as "{\rm Cup}";
+  latexdef "Cup" as "\mathrm{Cup}";
 htmldef "Compose" as
     " <FONT FACE=sans-serif>Compose</FONT> ";
   althtmldef "Compose" as ' <FONT FACE=sans-serif>Compose</FONT> ';
-  latexdef "Compose" as "{\rm Compose}";
+  latexdef "Compose" as "\mathrm{Compose}";
 htmldef "Disj" as
     " <FONT FACE=sans-serif>Disj</FONT> ";
   althtmldef "Disj" as ' <FONT FACE=sans-serif>Disj</FONT> ';
-  latexdef "Disj" as "{\rm Disj}";
+  latexdef "Disj" as "\mathrm{Disj}";
 htmldef "AddC" as
     " <FONT FACE=sans-serif>AddC</FONT> ";
   althtmldef "AddC" as ' <FONT FACE=sans-serif>AddC</FONT> ';
-  latexdef "AddC" as "{\rm AddC}";
-
+  latexdef "AddC" as "\mathrm{AddC}";
 htmldef "SI_3" as
     " <FONT FACE=sans-serif>SI</FONT><SUB><I>3</I></SUB> ";
   althtmldef "SI_3" as ' <FONT FACE=sans-serif>SI</FONT><SUB><I>3</I></SUB> ';
-  latexdef "SI_3" as "{\rm SI}_3";
-
-
+  latexdef "SI_3" as "\mathrm{SI}_3";
 htmldef "P6" as
     " <FONT FACE=sans-serif>P6</FONT> ";
   althtmldef "P6" as ' <FONT FACE=sans-serif>P6</FONT> ';
-  latexdef "P6" as "{\rm P6}";
-
-
+  latexdef "P6" as "\mathrm{P6}";
 htmldef "Nn" as
     " <FONT FACE=sans-serif>Nn</FONT> ";
   althtmldef "Nn" as ' <FONT FACE=sans-serif>Nn</FONT> ';
-  latexdef "Nn" as "{\rm Nn}";
+  latexdef "Nn" as "\mathrm{Nn}";
 htmldef "Fin" as
     " <FONT FACE=sans-serif>Fin</FONT> ";
   althtmldef "Fin" as ' <FONT FACE=sans-serif>Fin</FONT> ';
-  latexdef "Fin" as "{\rm Fin}";
-
+  latexdef "Fin" as "\mathrm{Fin}";
 htmldef "<_[fin]" as
     " <IMG SRC='le.gif' WIDTH=11 HEIGHT=19 ALT='&lt;_' ALIGN=TOP>" +
     "<SUB>fin</SUB> ";
   althtmldef "<_[fin]" as ' &le;<SUB>fin</SUB> ';
-  latexdef "<_[fin]" as "{\le}_{\rm fin}";
+  latexdef "<_[fin]" as "\le_\mathrm{fin}";
 htmldef "<[fin]" as
     " <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT='&lt;' ALIGN=TOP>" +
     "<SUB>fin</SUB> ";
   althtmldef "<[fin]" as ' &lt;<SUB>fin</SUB> ';
-  latexdef "<[fin]" as "<_{\rm fin}";
+  latexdef "<[fin]" as "<_\mathrm{fin}";
 htmldef "Nc[fin]" as
     " <FONT FACE=sans-serif>Nc</FONT><SUB>fin</SUB> ";
   althtmldef "Nc[fin]" as ' <FONT FACE=sans-serif>Nc</FONT><SUB>fin</SUB> ';
-  latexdef "Nc[fin]" as "{\rm Nc}_{\rm fin}";
+  latexdef "Nc[fin]" as "\mathrm{Nc}_\mathrm{fin}";
 htmldef "_T[fin]" as
     " <FONT FACE=sans-serif>T</FONT><SUB>fin</SUB> ";
   althtmldef "_T[fin]" as ' <FONT FACE=sans-serif>T</FONT><SUB>fin</SUB> ';
-  latexdef "_T[fin]" as "{\rm T}_{\rm fin}";
+  latexdef "_T[fin]" as "\mathrm{T}_\mathrm{fin}";
 htmldef "Even[fin]" as
     " <FONT FACE=sans-serif>Even</FONT><SUB>fin</SUB> ";
   althtmldef "Even[fin]" as
     ' <FONT FACE=sans-serif>Even</FONT><SUB>fin</SUB> ';
-  latexdef "Even[fin]" as "{\rm Even}_{\rm fin}";
+  latexdef "Even[fin]" as "\mathrm{Even}_\mathrm{fin}";
 htmldef "Odd[fin]" as
     " <FONT FACE=sans-serif>Odd</FONT><SUB>fin</SUB> ";
   althtmldef "Odd[fin]" as ' <FONT FACE=sans-serif>Odd</FONT><SUB>fin</SUB> ';
-  latexdef "Odd[fin]" as "{\rm Odd}_{\rm fin}";
+  latexdef "Odd[fin]" as "\mathrm{Odd}_\mathrm{fin}";
 htmldef "_S[fin]" as
     " <FONT FACE=sans-serif>S</FONT><SUB>fin</SUB> ";
   althtmldef "_S[fin]" as ' <FONT FACE=sans-serif>S</FONT><SUB>fin</SUB> ';
-  latexdef "_S[fin]" as "{\rm S}_{\rm fin}";
+  latexdef "_S[fin]" as "\mathrm{S}_\mathrm{fin}";
 htmldef "Sp[fin]" as
     " <FONT FACE=sans-serif>Sp</FONT><SUB>fin</SUB> ";
   althtmldef "Sp[fin]" as ' <FONT FACE=sans-serif>Sp</FONT><SUB>fin</SUB> ';
-  latexdef "Sp[fin]" as "{\rm Sp}_{\rm fin}";
-
+  latexdef "Sp[fin]" as "\mathrm{Sp}_\mathrm{fin}";
 htmldef "Funs" as
     " <FONT FACE=sans-serif>Funs</FONT> ";
   althtmldef "Funs" as ' <FONT FACE=sans-serif>Funs</FONT> ';
-  latexdef "Funs" as "{\rm Funs}";
+  latexdef "Funs" as "\mathrm{Funs}";
 htmldef "Fns" as
     " <FONT FACE=sans-serif>Fns</FONT> ";
   althtmldef "Fns" as ' <FONT FACE=sans-serif>Fns</FONT> ';
-  latexdef "Fns" as "{\rm Fns}";
+  latexdef "Fns" as "\mathrm{Fns}";
 htmldef "PProd" as
     " <FONT FACE=sans-serif>PProd</FONT> ";
   althtmldef "PProd" as ' <FONT FACE=sans-serif>PProd</FONT> ';
-  latexdef "PProd" as "{\rm PProd}";
+  latexdef "PProd" as "\mathrm{PProd}";
 htmldef "Cross" as
     " <FONT FACE=sans-serif>Cross</FONT> ";
   althtmldef "Cross" as ' <FONT FACE=sans-serif>Cross</FONT> ';
-  latexdef "Cross" as "{\rm Cross}";
+  latexdef "Cross" as "\mathrm{Cross}";
 htmldef "Pw1Fn" as
     " <FONT FACE=sans-serif>Pw1Fn</FONT> ";
   althtmldef "Pw1Fn" as ' <FONT FACE=sans-serif>Pw1Fn</FONT> ';
-  latexdef "Pw1Fn" as "{\rm Pw1Fn}";
+  latexdef "Pw1Fn" as "\mathrm{Pw1Fn}";
 htmldef "FullFun" as
     " <FONT FACE=sans-serif>FullFun</FONT> ";
   althtmldef "FullFun" as ' <FONT FACE=sans-serif>FullFun</FONT> ';
-  latexdef "FullFun" as "{\rm FullFun}";
-
+  latexdef "FullFun" as "\mathrm{FullFun}";
 htmldef "Trans" as
     " <FONT FACE=sans-serif>Trans</FONT> ";
   althtmldef "Trans" as ' <FONT FACE=sans-serif>Trans</FONT> ';
-  latexdef "Trans" as "{\rm Trans}";
+  latexdef "Trans" as "\mathrm{Trans}";
 htmldef "Ref" as
     " <FONT FACE=sans-serif>Ref</FONT> ";
   althtmldef "Ref" as ' <FONT FACE=sans-serif>Ref</FONT> ';
-  latexdef "Ref" as "{\rm Ref}";
+  latexdef "Ref" as "\mathrm{Ref}";
 htmldef "Antisym" as
     " <FONT FACE=sans-serif>Antisym</FONT> ";
   althtmldef "Antisym" as ' <FONT FACE=sans-serif>Antisym</FONT> ';
-  latexdef "Antisym" as "{\rm Antisym}";
+  latexdef "Antisym" as "\mathrm{Antisym}";
 htmldef "Po" as
     " <FONT FACE=sans-serif>Po</FONT> ";
   althtmldef "Po" as ' <FONT FACE=sans-serif>Po</FONT> ';
-  latexdef "Po" as "{\rm Po}";
+  latexdef "Po" as "\mathrm{Po}";
 htmldef "Connex" as
     " <FONT FACE=sans-serif>Connex</FONT> ";
   althtmldef "Connex" as ' <FONT FACE=sans-serif>Connex</FONT> ';
-  latexdef "Connex" as "{\rm Connex}";
+  latexdef "Connex" as "\mathrm{Connex}";
 htmldef "Or" as
     " <FONT FACE=sans-serif>Or</FONT> ";
   althtmldef "Or" as ' <FONT FACE=sans-serif>Or</FONT> ';
-  latexdef "Or" as "{\rm Or}";
+  latexdef "Or" as "\mathrm{Or}";
 htmldef "Fr" as
     " <FONT FACE=sans-serif>Fr</FONT> ";
   althtmldef "Fr" as ' <FONT FACE=sans-serif>Fr</FONT> ';
-  latexdef "Fr" as "{\rm Fr}";
+  latexdef "Fr" as "\mathrm{Fr}";
 htmldef "We" as
     " <FONT FACE=sans-serif>We</FONT> ";
   althtmldef "We" as ' <FONT FACE=sans-serif>We</FONT> ';
-  latexdef "We" as "{\rm We}";
+  latexdef "We" as "\mathrm{We}";
 htmldef "Ext" as
     " <FONT FACE=sans-serif>Ext</FONT> ";
   althtmldef "Ext" as ' <FONT FACE=sans-serif>Ext</FONT> ';
-  latexdef "Ext" as "{\rm Ext}";
+  latexdef "Ext" as "\mathrm{Ext}";
 htmldef "Sym" as
     " <FONT FACE=sans-serif>Sym</FONT> ";
   althtmldef "Sym" as ' <FONT FACE=sans-serif>Sym</FONT> ';
-  latexdef "Sym" as "{\rm Sym}";
+  latexdef "Sym" as "\mathrm{Sym}";
 htmldef "Er" as
     " <FONT FACE=sans-serif>Er</FONT> ";
   althtmldef "Er" as ' <FONT FACE=sans-serif>Er</FONT> ';
-  latexdef "Er" as "{\rm Er}";
-
+  latexdef "Er" as "\mathrm{Er}";
 htmldef "/." as
     "<IMG SRC='diagup.gif' WIDTH=14 HEIGHT=19 TITLE='/.' ALIGN=TOP>";
   althtmldef "/." as ' <B>/</B> ';
   latexdef "/." as "\diagup";
-
 htmldef "~~" as
     " <IMG SRC='approx.gif' WIDTH=13 HEIGHT=19 TITLE='~~' ALIGN=TOP> ";
   althtmldef "~~" as ' &#8776; '; /* &ap; */
   latexdef "~~" as "\approx";
-
 htmldef "^m" as
     " <IMG SRC='_hatm.gif' WIDTH=15 HEIGHT=19 TITLE='^m' ALIGN=TOP> ";
   althtmldef "^m" as ' &uarr;<SUB><I>m</I></SUB> ';
@@ -63563,16 +63529,15 @@ htmldef "^pm" as
     " <IMG SRC='_hatpm.gif' WIDTH=21 HEIGHT=19 TITLE='^pm' ALIGN=TOP> ";
   althtmldef "^pm" as ' &uarr;<SUB><I>pm</I></SUB> ';
   latexdef "^pm" as "\uparrow_{pm}";
-
 htmldef "NC" as
     " <FONT FACE=sans-serif>NC</FONT> ";
   althtmldef "NC" as ' <FONT FACE=sans-serif>NC</FONT> ';
-  latexdef "NC" as "{\rm NC}";
+  latexdef "NC" as "\mathrm{NC}";
 htmldef "<_c" as
     " <IMG SRC='le.gif' WIDTH=11 HEIGHT=19 ALT='&lt;_' ALIGN=TOP>" +
     "<SUB>c</SUB> ";
   althtmldef "<_c" as ' &le;<SUB>c</SUB> ';
-  latexdef "<_c" as "{\le}_c";
+  latexdef "<_c" as "\le_c";
 htmldef "<c" as
     " <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT='&lt;' ALIGN=TOP><SUB>c</SUB> ";
   althtmldef "<c" as ' &lt;<SUB>c</SUB> ';
@@ -63580,14 +63545,14 @@ htmldef "<c" as
 htmldef "Nc" as
     " <FONT FACE=sans-serif>Nc</FONT> ";
   althtmldef "Nc" as ' <FONT FACE=sans-serif>Nc</FONT> ';
-  latexdef "Nc" as "{\rm Nc}";
+  latexdef "Nc" as "\mathrm{Nc}";
 htmldef ".c" as ' &middot;<SUB><I>c</I></SUB> ';
   althtmldef ".c" as ' &middot;<SUB><I>c</I></SUB> ';
   latexdef ".c" as "\cdot_c";
 htmldef "T_c" as
     " <FONT FACE=sans-serif>T</FONT><SUB>c</SUB> ";
   althtmldef "T_c" as ' <FONT FACE=sans-serif>T</FONT><SUB>c</SUB> ';
-  latexdef "T_c" as "{\rm T}_c ";
+  latexdef "T_c" as "\mathrm{T}_c ";
 htmldef "2c" as '2<SUB><I>c</I></SUB>';
   althtmldef "2c" as '2<SUB><I>c</I></SUB>';
   latexdef "2c" as "2_c";
@@ -63597,36 +63562,28 @@ htmldef "3c" as '3<SUB><I>c</I></SUB>';
 htmldef "^c" as ' &uarr;<SUB><I>c</I></SUB> ';
   althtmldef "^c" as ' &uarr;<SUB><I>c</I></SUB> ';
   latexdef "^c" as "\uparrow_c";
-
 htmldef "Sp[ac]" as
     " <FONT FACE=sans-serif>Sp</FONT><SUB>ac</SUB> ";
   althtmldef "Sp[ac]" as ' <FONT FACE=sans-serif>Sp</FONT><SUB>ac</SUB> ';
-  latexdef "Sp[ac]" as "{\rm Sp}_{\rm ac}";
-
+  latexdef "Sp[ac]" as "\mathrm{Sp}_\mathrm{ac}";
 htmldef "TcFn" as "TcFn";
   althtmldef "TcFn" as "TcFn";
-  latexdef "TcFn" as "{\rm TcFn}";
-
+  latexdef "TcFn" as "\mathrm{TcFn}";
 htmldef "FRec" as " <FONT FACE=sans-serif>FRec</FONT> ";
   althtmldef "FRec" as " <FONT FACE=sans-serif>FRec</FONT> ";
-  latexdef "FRec" as "{\rm FRec}";
-
+  latexdef "FRec" as "\mathrm{FRec}";
 htmldef "Dom" as " <FONT FACE=sans-serif>Dom</FONT> ";
   althtmldef "Dom" as " <FONT FACE=sans-serif>Dom</FONT> ";
-  latexdef "Dom" as "{\rm Dom}";
-
+  latexdef "Dom" as "\mathrm{Dom}";
 htmldef "Ran" as " <FONT FACE=sans-serif>Ran</FONT> ";
   althtmldef "Ran" as " <FONT FACE=sans-serif>Ran</FONT> ";
-  latexdef "Ran" as "{\rm Ran}";
-
-
+  latexdef "Ran" as "\mathrm{Ran}";
 htmldef "Can" as
     " <FONT FACE=sans-serif>Can</FONT> ";
   althtmldef "Can" as ' <FONT FACE=sans-serif>Can</FONT> ';
-  latexdef "Can" as "{\rm Can}";
-  
+  latexdef "Can" as "\mathrm{Can}";
 htmldef "SCan" as
     " <FONT FACE=sans-serif>SCan</FONT> ";
   althtmldef "SCan" as ' <FONT FACE=sans-serif>SCan</FONT> ';
-  latexdef "SCan" as "{\rm SCan}";
+  latexdef "SCan" as "\mathrm{SCan}";
  $)

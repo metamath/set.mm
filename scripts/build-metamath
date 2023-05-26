@@ -13,11 +13,16 @@ fail () {
 
 test -f metamath-program.zip || fail 'Cannot find metamath-program.zip'
 
-# Unzip the .zip file; put all its contents into directory "./metamath"
-# ignoring any of its structure (-j) so that the version number provided
-# by GitHub is quietly removed.
-mkdir -p metamath/
-unzip -o -j -d metamath/ metamath-program.zip
+# Unzip the .zip file; put all its contents into directory "./metamath/".
+# We handle this specially, because GitHub inserts a top-level directory
+# that varies by commit number, and we want to just use "metamath/" as the
+# top directory instead.
+rm -fr metamath-temp/
+mkdir -p metamath/ metamath-temp/
+# Erase subdirectories to ensure it's clean.
+find metamath -type d -mindepth 1 -exec rm -fr {} \+
+unzip -o -d metamath-temp/ metamath-program.zip
+mv -f metamath-temp/*/* metamath/
 
 cd metamath/
 
@@ -27,16 +32,13 @@ cd metamath/
 autoreconf -i
 ./configure
 
-# We can't just "build everything", because that would require .mm files
-# not included in this subset distribution.  So ask to build *just*
-# metamath.  We have to extract the extension and use it so the build request
-# will work on Cygwin.
-rm -f metamath metamath.exe
-extension=$( gawk '/^EXEEXT = / { print $3 }' < Makefile )
-make "metamath${extension}"
+# Make Metamath executable
+make
 
 # install metamath to $prefix/bin (by default, $HOME/bin); this honors DESTDIR:
-make prefix="${prefix:-"$HOME"}" install-binPROGRAMS
+my_bindir="${prefix:-"$HOME"}/${bindir:-bin}/"
+mkdir -p "$my_bindir"
+cp -p src/metamath "${my_bindir}"
 
 # If there's no more recent mmbiblio.html, use this one.
 if ! [ -e ../mmbiblio.html ] ; then
