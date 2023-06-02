@@ -159,7 +159,6 @@
 "mo3h" is used by "moim".
 "mo3h" is used by "moimv".
 "mo3h" is used by "mopick".
-"nfiseq" is used by "nfseq".
 "nnindnn" is used by "nntopi".
 "opelopabsbALT" is used by "cnvopab".
 "opelopabsbALT" is used by "inopab".
@@ -298,7 +297,7 @@ New usage of "idALT" is discouraged (0 uses).
 New usage of "iseqeq3" is discouraged (1 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
-New usage of "nfiseq" is discouraged (1 uses).
+New usage of "nfiseq" is discouraged (0 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnindnn" is discouraged (1 uses).
