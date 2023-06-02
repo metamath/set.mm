@@ -111,7 +111,6 @@
 "df-inn" is used by "dfnn2".
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
-"df-iseq" is used by "dfseq3-2".
 "df-mnf" is used by "mnfnre".
 "df-mnf" is used by "mnfxr".
 "df-mnf" is used by "pnfnemnf".
@@ -275,7 +274,6 @@ New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
 New usage of "df-iord" is discouraged (1 uses).
-New usage of "df-iseq" is discouraged (1 uses).
 New usage of "df-mnf" is discouraged (3 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-tru" is discouraged (1 uses).
