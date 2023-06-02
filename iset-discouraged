@@ -113,7 +113,6 @@
 "df-iord" is used by "dford3".
 "df-iseq" is used by "dfseq3-2".
 "df-iseq" is used by "iseqeq3".
-"df-iseq" is used by "nfiseq".
 "df-mnf" is used by "mnfnre".
 "df-mnf" is used by "mnfxr".
 "df-mnf" is used by "pnfnemnf".
@@ -278,7 +277,7 @@ New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
 New usage of "df-iord" is discouraged (1 uses).
-New usage of "df-iseq" is discouraged (3 uses).
+New usage of "df-iseq" is discouraged (2 uses).
 New usage of "df-mnf" is discouraged (3 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-tru" is discouraged (1 uses).
@@ -297,7 +296,6 @@ New usage of "idALT" is discouraged (0 uses).
 New usage of "iseqeq3" is discouraged (1 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
-New usage of "nfiseq" is discouraged (0 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnindnn" is discouraged (1 uses).
