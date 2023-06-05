@@ -27,6 +27,18 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-May-23 frlmlvec  [same]      moved from SN's mathbox to main set.mm
+20-May-23 dfss7     [same]      moved from AV's mathbox to main set.mm
+18-May-23 fndmd     [same]      moved from GS's mathbox to main set.mm
+18-May-23 elpreimad [same]      moved from GS's mathbox to main set.mm
+18-May-23 fnfvimad  [same]      moved from GS's mathbox to main set.mm
+16-May-23 subdivcomb1 [same]    moved from SF's mathbox to main set.mm
+ 9-May-23 eel0001   mpsyl4anc   moved from AS's mathbox to main set.mm
+ 9-May-23 fprb      [same]      moved from SF's mathbox to main set.mm
+ 9-May-23 el2v      [same]      moved from PM's mathbox to main set.mm
+30-Apr-23 qseq12    [same]      moved from PM's mathbox to main set.mm
+27-Apr-23 dedt      [same]      commuted consequent
+27-Apr-23 elimh     [same]      commuted consequent
 16-Apr-23 xrhaus    [same]      moved from TA's mathbox to main set.mm
  7-Apr-23 rexsngf   [same]      moved from GS's mathbox to main set.mm
  2-Apr-23 reuxfr4d  [same]      moved from TA's mathbox to main set.mm
@@ -37,7 +49,7 @@ Date      Old       New         Notes
 19-Mar-23 fvmptd2   [same]      moved from GS's mathbox to main set.mm
 15-Mar-23 mapfvd    [same]      moved from AV's mathbox to main set.mm
  2-Mar-23 wl-hbnaev hbnaev      moved from WL's mathbox to main set.mm
-21-Feb-23 moimd     moimdv      align with mobidv, eubidv 
+21-Feb-23 moimd     moimdv      align with mobidv, eubidv
 16-Feb-23 bj-ldiv   ldiv        moved from BJ's mathbox to main set.mm
 16-Feb-23 bj-rdiv   rdiv        moved from BJ's mathbox to main set.mm
 16-Feb-23 bj-mdiv   mdiv        moved from BJ's mathbox to main set.mm
