@@ -15248,6 +15248,7 @@ New usage of "elbdop2" is discouraged (8 uses).
 New usage of "elch0" is discouraged (14 uses).
 New usage of "elcnfn" is discouraged (3 uses).
 New usage of "elcnop" is discouraged (4 uses).
+New usage of "eldifsnneqOLD" is discouraged (0 uses).
 New usage of "eleigvec" is discouraged (2 uses).
 New usage of "eleigvec2" is discouraged (2 uses).
 New usage of "eleigveccl" is discouraged (3 uses).
@@ -15438,6 +15439,8 @@ New usage of "fh2i" is discouraged (1 uses).
 New usage of "fh3i" is discouraged (1 uses).
 New usage of "fh4i" is discouraged (0 uses).
 New usage of "fimadmfoALT" is discouraged (0 uses).
+New usage of "fimaxreOLD" is discouraged (0 uses).
+New usage of "fiminreOLD" is discouraged (0 uses).
 New usage of "fldcALTV" is discouraged (0 uses).
 New usage of "fldcatALTV" is discouraged (1 uses).
 New usage of "flddivrng" is discouraged (2 uses).
@@ -18897,6 +18900,7 @@ Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
 Proof modification of "elabOLD" is discouraged (10 steps).
 Proof modification of "elabgOLD" is discouraged (13 steps).
+Proof modification of "eldifsnneqOLD" is discouraged (35 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
@@ -19012,6 +19016,8 @@ Proof modification of "fesapoOLD" is discouraged (28 steps).
 Proof modification of "festinoALT" is discouraged (24 steps).
 Proof modification of "ffz0iswrdOLD" is discouraged (94 steps).
 Proof modification of "fimadmfoALT" is discouraged (108 steps).
+Proof modification of "fimaxreOLD" is discouraged (172 steps).
+Proof modification of "fiminreOLD" is discouraged (312 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnmpt2ovdOLD" is discouraged (219 steps).
 Proof modification of "frege10" is discouraged (27 steps).
