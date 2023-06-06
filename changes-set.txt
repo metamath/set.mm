@@ -27,6 +27,14 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 6-Jun-23 2sqmo     [same]      moved from TA's mathbox to main set.mm
+ 6-Jun-23 2sqmod    [same]      moved from TA's mathbox to main set.mm
+ 6-Jun-23 2sqn0     [same]      moved from TA's mathbox to main set.mm
+ 6-Jun-23 bhmafibid2 [same]     moved from TA's mathbox to main set.mm
+ 6-Jun-23 bhmafibid1 [same]     moved from TA's mathbox to main set.mm
+ 6-Jun-23 nn0sqeq1  [same]      moved from TA's mathbox to main set.mm
+ 6-Jun-23 znsqcld   [same]      moved from TA's mathbox to main set.mm
+ 6-Jun-23 subeqxfrd [same]      moved from TA's mathbox to main set.mm
 22-May-23 frlmlvec  [same]      moved from SN's mathbox to main set.mm
 20-May-23 dfss7     [same]      moved from AV's mathbox to main set.mm
 18-May-23 fndmd     [same]      moved from GS's mathbox to main set.mm
