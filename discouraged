@@ -1495,7 +1495,6 @@
 "basendx" is used by "indistpsx".
 "basendx" is used by "ipostr".
 "basendx" is used by "lmodstr".
-"basendx" is used by "matbas".
 "basendx" is used by "mgpress".
 "basendx" is used by "odubas".
 "basendx" is used by "oppcbas".
@@ -13756,7 +13755,7 @@ New usage of "bafval" is discouraged (38 uses).
 New usage of "bamalipOLD" is discouraged (0 uses).
 New usage of "barbariALT" is discouraged (0 uses).
 New usage of "barocoALT" is discouraged (0 uses).
-New usage of "basendx" is discouraged (25 uses).
+New usage of "basendx" is discouraged (24 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bcs" is discouraged (6 uses).
 New usage of "bcs2" is discouraged (2 uses).
