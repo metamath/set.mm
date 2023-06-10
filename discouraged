@@ -13306,12 +13306,8 @@ New usage of "3adant2rOLD" is discouraged (0 uses).
 New usage of "3adant3OLD" is discouraged (0 uses).
 New usage of "3adant3lOLD" is discouraged (0 uses).
 New usage of "3adant3rOLD" is discouraged (0 uses).
-New usage of "3anan12OLD" is discouraged (0 uses).
-New usage of "3ancomaOLD" is discouraged (0 uses).
-New usage of "3ancombOLD" is discouraged (0 uses).
 New usage of "3anidm12p1" is discouraged (0 uses).
 New usage of "3anidm12p2" is discouraged (0 uses).
-New usage of "3anrotOLD" is discouraged (0 uses).
 New usage of "3atnelvolN" is discouraged (2 uses).
 New usage of "3cnOLD" is discouraged (0 uses).
 New usage of "3com12OLD" is discouraged (0 uses).
@@ -17819,7 +17815,6 @@ New usage of "superpos" is discouraged (1 uses).
 New usage of "supexpr" is discouraged (1 uses).
 New usage of "suplem1pr" is discouraged (1 uses).
 New usage of "suplem2pr" is discouraged (1 uses).
-New usage of "suppfnssOLD" is discouraged (0 uses).
 New usage of "supsr" is discouraged (1 uses).
 New usage of "supsrlem" is discouraged (1 uses).
 New usage of "swrd0fOLD" is discouraged (2 uses).
@@ -18190,12 +18185,8 @@ Proof modification of "3adant2rOLD" is discouraged (19 steps).
 Proof modification of "3adant3OLD" is discouraged (14 steps).
 Proof modification of "3adant3lOLD" is discouraged (19 steps).
 Proof modification of "3adant3rOLD" is discouraged (19 steps).
-Proof modification of "3anan12OLD" is discouraged (22 steps).
-Proof modification of "3ancomaOLD" is discouraged (34 steps).
-Proof modification of "3ancombOLD" is discouraged (21 steps).
 Proof modification of "3anidm12p1" is discouraged (5 steps).
 Proof modification of "3anidm12p2" is discouraged (19 steps).
-Proof modification of "3anrotOLD" is discouraged (28 steps).
 Proof modification of "3cnOLD" is discouraged (3 steps).
 Proof modification of "3com12OLD" is discouraged (15 steps).
 Proof modification of "3com13OLD" is discouraged (15 steps).
@@ -19775,7 +19766,6 @@ Proof modification of "suctrALT2VD" is discouraged (173 steps).
 Proof modification of "suctrALT3" is discouraged (137 steps).
 Proof modification of "suctrALTcf" is discouraged (164 steps).
 Proof modification of "suctrALTcfVD" is discouraged (164 steps).
-Proof modification of "suppfnssOLD" is discouraged (319 steps).
 Proof modification of "swrd0fOLD" is discouraged (102 steps).
 Proof modification of "swrd0fv0OLD" is discouraged (72 steps).
 Proof modification of "swrd0fvOLD" is discouraged (154 steps).
