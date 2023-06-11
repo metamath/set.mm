@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 8-Jun-23 eqneltri  [same]      moved from GS's mathbox to main set.mm
  6-Jun-23 2sqmo     [same]      moved from TA's mathbox to main set.mm
  6-Jun-23 2sqmod    [same]      moved from TA's mathbox to main set.mm
  6-Jun-23 2sqn0     [same]      moved from TA's mathbox to main set.mm
