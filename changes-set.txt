@@ -28,6 +28,7 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
  8-Jun-23 rnmptc    [same]      moved from GS's mathbox to main set.mm
+ 8-Jun-23 eqneltri  [same]      moved from GS's mathbox to main set.mm
  6-Jun-23 eceq2i    [same]      moved from PM's mathbox to main set.mm
  6-Jun-23 eceq2d    [same]      moved from PM's mathbox to main set.mm
  6-Jun-23 2sqmo     [same]      moved from TA's mathbox to main set.mm
