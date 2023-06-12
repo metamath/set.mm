@@ -6099,6 +6099,25 @@ of ` *e ` ), in general extended real multiplication will not work
 as in set.mm using that definition.</TD>
 </TR>
 
+<tr>
+  <td>xrsupss</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on sup3 which implies excluded middle
+  by ~ sup3exmid</td>
+</tr>
+
+<tr>
+  <td>supxrcl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on xrsupss</td>
+</tr>
+
+<tr>
+  <td>infxrcl</td>
+  <td><i>none</i></td>
+  <td>presumably not provable for all the usual ~ sup3exmid reasons</td>
+</tr>
+
 <TR>
 <TD>ixxub , ixxlb</TD>
 <TD><I>none</I></TD>
@@ -6144,7 +6163,7 @@ both in proving this and in using it.</TD>
 
 <TR>
 <TD>iooin</TD>
-<TD><I>none</I></TD>
+<TD>~ iooinsup</TD>
 </TR>
 
 <TR>
@@ -6922,7 +6941,7 @@ or ~ ssfiexmid </TD>
 
 <TR>
 <TD>df-seq</TD>
-<TD>~ dfseq3-2</TD>
+<TD>~ df-seqfrec</TD>
 </TR>
 
 <TR>
@@ -8189,9 +8208,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>reccn2</TD>
-  <TD><I>none yet</I></TD>
-  <TD>Will need to be revamped to deal with negated equality
-  versus apartness and perhaps other issues.</TD>
+  <TD>~ reccn2ap</TD>
 </TR>
 
 <TR>
@@ -9305,6 +9322,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <tr>
+  <td>df-ordt , df-xrs , and all theorems involving ordTop or RR*s</td>
+  <td><i>none</i></td>
+  <td>The set.mm definitions would not seem to fit with constructive
+  definitions of these concepts (for example, the ` if `
+  in df-xrs would apparently needed to be expressed in terms of
+  a suitable maximum and perhaps other changes are needed too)</td>
+</tr>
+
+<tr>
   <td>df-qtop , df-imas , df-qus and all theorems defined
   in terms of quotient topology, image structure, and quotient ring.</td>
   <td><i>none</i></td>
@@ -9325,6 +9351,15 @@ intuitionistic and it is lightly used in set.mm</TD>
   doesn't function as it does in set.mm (because complements
   are different without excluded middle).</TD>
 </TR>
+
+<tr>
+  <td>df-cnfld and all theorems using CCfld</td>
+  <td><i>none</i></td>
+  <td>Could presumably be defined in some form, but we'd have to look
+  at the literature definitions of a constructive field and see how
+  we'd need to define this.  Plus questions about whether
+  to define order in terms of ` < ` or ` <_ ` .</td>
+</tr>
 
 <TR>
   <TD>istop2g</TD>
@@ -9820,6 +9855,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>df-conn and all connected toplogy (syntax Conn) theorems</td>
+  <td><i>none</i></td>
+  <td>would apparently need a lot of changes to work</td>
+</tr>
+
+<tr>
   <td>df-1stc and all first-countable theorems</td>
   <td><i>none</i></td>
   <td>Worth considering the definition of countable seen
@@ -9960,10 +10001,153 @@ intuitionistic and it is lightly used in set.mm</TD>
   to the ^s syntax (not just ~ df-pws itself).</td>
 </tr>
 
+<tr>
+  <td>dscmet , dscopn</td>
+  <td><i>none</i></td>
+  <td>The set.mm definition for the discrete metric, and the proofs,
+  would seem to rely on equality being decidable.</td>
+</tr>
+
+<tr>
+  <td>qtopbaslem</td>
+  <td>~ qtopbasss</td>
+</tr>
+
+<tr>
+  <td>iooretop</td>
+  <td>~ iooretopg</td>
+</tr>
+
+<tr>
+  <td>icccld , icopnfcld , iocmnfcld , qdensere</td>
+  <td><i>none</i></td>
+  <td>depend on various closed set theorems</td>
+</tr>
+
+<tr>
+  <td>cnfldtopn</td>
+  <td><i>none</i></td>
+  <td>if we use ` ( MetOpen `` ( abs o. - ) ) ` as our notation
+  for the topology of the complex numbers, this theorem is not
+  needed</td>
+</tr>
+
+<tr>
+  <td>cnfldtopon</td>
+  <td>~ cntoptopon</td>
+</tr>
+
+<tr>
+  <td>cnfldtop</td>
+  <td>~ cntoptop</td>
+</tr>
+
+<tr>
+  <td>qdensere2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on qdensere</td>
+</tr>
+
+<tr>
+  <td>blcvx</td>
+  <td><i>none</i></td>
+  <td>presumably provable for either the ` T = 0 ` case or the
+  ` T e. ( 0 (,] 1 ) ` case; set.mm uses excluded middle to
+  combine those two cases</td>
+</tr>
+
+<tr>
+  <td>zcld</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses the floor function in ways that we
+  are unlikely to be able to intuitionize</td>
+</tr>
+
+<tr>
+  <td>iccntr</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses real number trichotomy in many steps</td>
+</tr>
+
+<tr>
+  <td>opnreen</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof is not usable as-is but it would be interesting
+  to see if some portions can be adapted</td>
+</tr>
+
+<tr>
+  <td>rectbntr0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on various theorems we do not have</td>
+</tr>
+
+<tr>
+  <td>cnmpt1ds</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof is in terms of binary topological product theorems
+  we do not have</td>
+</tr>
+
+<tr>
+  <td>metdsval</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses infex</td>
+</tr>
+
+<tr>
+  <td>metdsf</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses infxrcl</td>
+</tr>
+
 <TR>
   <TD>divccncf</TD>
   <TD>~ divccncfap</TD>
 </TR>
+
+<tr>
+  <td>cdivcncf</td>
+  <td>~ cdivcncfap</td>
+</tr>
+
+<tr>
+  <td>df-limc</td>
+  <td>~ df-limced</td>
+  <td>~ df-limced is adapted from ellimc3 in set.mm</td>
+</tr>
+
+<tr>
+  <td>limcvallem , limcfval , ellimc</td>
+  <td><i>none</i></td>
+  <td>rely on decidability of real number equality</td>
+</tr>
+
+<tr>
+  <td>ellimc3</td>
+  <td>~ ellimc3ap</td>
+  <td>changes not equal to apart</td>
+</tr>
+
+<tr>
+  <td>limcdif</td>
+  <td>~ limcdifap</td>
+  <td>changes not equal to apart and adds ` A C_ CC ` hypothesis</td>
+</tr>
+
+<tr>
+  <td>ellimc2</td>
+  <td><i>none</i></td>
+  <td>Presumably provable with not equal changed to apart.
+  If iset.mm doesn't have CCfld yet, use
+  ` ( MetOpen `` ( abs o. - ) ) ` for the topology of the
+  complex numbers (see cnfldtopn in set.mm).</td>
+</tr>
+
+<tr>
+  <td>limcmpt , limcmpt2</td>
+  <td><i>none</i></td>
+</tr>
 
 </TABLE>
 
