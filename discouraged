@@ -17291,6 +17291,7 @@ New usage of "r19.12OLD" is discouraged (0 uses).
 New usage of "r19.21biOLD" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
 New usage of "r1pwALT" is discouraged (0 uses).
+New usage of "ralbiOLD" is discouraged (0 uses).
 New usage of "raleleqALT" is discouraged (0 uses).
 New usage of "raleqOLD" is discouraged (0 uses).
 New usage of "raleqbi1dvOLD" is discouraged (0 uses).
@@ -19527,6 +19528,7 @@ Proof modification of "r19.12OLD" is discouraged (61 steps).
 Proof modification of "r19.21biOLD" is discouraged (21 steps).
 Proof modification of "r1omALT" is discouraged (13 steps).
 Proof modification of "r1pwALT" is discouraged (151 steps).
+Proof modification of "ralbiOLD" is discouraged (19 steps).
 Proof modification of "raleleqALT" is discouraged (26 steps).
 Proof modification of "raleqOLD" is discouraged (11 steps).
 Proof modification of "raleqbi1dvOLD" is discouraged (28 steps).
