@@ -15336,6 +15336,7 @@ New usage of "equs5aALT" is discouraged (0 uses).
 New usage of "equs5eALT" is discouraged (0 uses).
 New usage of "equsalhwOLD" is discouraged (0 uses).
 New usage of "equsb1vOLD" is discouraged (0 uses).
+New usage of "equsb1vOLDOLD" is discouraged (0 uses).
 New usage of "equsb3ALT" is discouraged (0 uses).
 New usage of "equsb3vOLD" is discouraged (0 uses).
 New usage of "equsexALT" is discouraged (0 uses).
@@ -15399,6 +15400,7 @@ New usage of "ex-natded9.20-2" is discouraged (0 uses).
 New usage of "ex-natded9.26" is discouraged (0 uses).
 New usage of "ex-natded9.26-2" is discouraged (0 uses).
 New usage of "exanOLD" is discouraged (0 uses).
+New usage of "exanOLDOLD" is discouraged (0 uses).
 New usage of "exatleN" is discouraged (1 uses).
 New usage of "exbirVD" is discouraged (0 uses).
 New usage of "exbiriVD" is discouraged (0 uses).
@@ -18932,7 +18934,8 @@ Proof modification of "equncomiVD" is discouraged (19 steps).
 Proof modification of "equs5aALT" is discouraged (25 steps).
 Proof modification of "equs5eALT" is discouraged (39 steps).
 Proof modification of "equsalhwOLD" is discouraged (39 steps).
-Proof modification of "equsb1vOLD" is discouraged (17 steps).
+Proof modification of "equsb1vOLD" is discouraged (32 steps).
+Proof modification of "equsb1vOLDOLD" is discouraged (17 steps).
 Proof modification of "equsb3ALT" is discouraged (44 steps).
 Proof modification of "equsb3vOLD" is discouraged (16 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
@@ -18978,7 +18981,8 @@ Proof modification of "ex-natded9.20" is discouraged (58 steps).
 Proof modification of "ex-natded9.20-2" is discouraged (44 steps).
 Proof modification of "ex-natded9.26" is discouraged (65 steps).
 Proof modification of "ex-natded9.26-2" is discouraged (22 steps).
-Proof modification of "exanOLD" is discouraged (29 steps).
+Proof modification of "exanOLD" is discouraged (19 steps).
+Proof modification of "exanOLDOLD" is discouraged (29 steps).
 Proof modification of "exbirVD" is discouraged (65 steps).
 Proof modification of "exbiriVD" is discouraged (70 steps).
 Proof modification of "exinst" is discouraged (12 steps).
