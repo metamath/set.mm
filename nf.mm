@@ -134,54 +134,63 @@ $(
 $)
 
   ${
+    idi.1 $e |- ph $.
+    $( (_Note_:  This inference rule and the next one, ~ a1ii , will normally
+       never appear in a completed proof.  They can be ignored if you are using
+       this database to assist learning logic; please start with the statement
+       ~ wn instead.)
+
+       This inference says "if ` ph ` is true then ` ph ` is true".  This
+       inference requires no axioms for its proof, and is useful as a
+       copy-paste mechanism during proof development in mmj2.  It is normally
+       not referenced in the final version of a proof, since it is always
+       redundant.  You can remove this using the metamath-exe (Metamath
+       program) Proof Assistant using the "MM-PA> MINIMIZE_WITH *" command.
+       This is the inference associated with ~ id , hence its name.
+       (Contributed by Alan Sare, 31-Dec-2011.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    idi $p |- ph $=
+      (  ) B $.
+  $}
+
+  ${
     a1ii.1 $e |- ph $.
     a1ii.2 $e |- ps $.
-    $( (_Note_:  This inference rule and the next one, ~ idi , will normally
-       never appear in a completed proof.  It can be ignored if you are using
-       this database to assist learning logic - please start with the statement
-       ~ wn instead.)
+    $( (_Note_:  This inference rule and the previous one, ~ idi , will
+       normally never appear in a completed proof.)
 
        This is a technical inference to assist proof development.  It provides
        a temporary way to add an independent subproof to a proof under
        development, for later assignment to a normal proof step.
 
-       The metamath program's Proof Assistant requires proofs to be developed
-       backwards from the conclusion with no gaps, and it has no mechanism that
-       lets the user to work on isolated subproofs.  This inference provides a
-       workaround for this limitation.  It can be inserted at any point in a
-       proof to allow an independent subproof to be developed on the side, for
-       later use as part of the final proof.
+       The Metamath (Metamath-exe) program Proof Assistant requires proofs to
+       be developed backwards from the conclusion with no gaps, and it has no
+       mechanism that lets the user work on isolated subproofs.  This inference
+       provides a workaround for this limitation.  It can be inserted at any
+       point in a proof to allow an independent subproof to be developed on the
+       side, for later use as part of the final proof.
 
        _Instructions_:  (1) Assign this inference to any unknown step in the
        proof.  Typically, the last unknown step is the most convenient, since
-       'assign last' can be used.  This step will be replicated in hypothesis
-       a1ii.1, from where the development of the main proof can continue.  (2)
-       Develop the independent subproof backwards from hypothesis a1ii.2.  If
-       desired, use a 'let' command to pre-assign the conclusion of the
-       independent subproof to a1ii.2.  (3) After the independent subproof is
-       complete, use 'improve all' to assign it automatically to an unknown
-       step in the main proof that matches it.  (4) After the entire proof is
-       complete, use 'minimize *' to clean up (discard) all ~ a1ii references
+       "MM-PA> ASSIGN LAST" can be used.  This step will be replicated in
+       hypothesis a1ii.1, from where the development of the main proof can
+       continue.  (2) Develop the independent subproof backwards from
+       hypothesis a1ii.2.  If desired, use a "MM-PA> LET STEP" command to
+       pre-assign the conclusion of the independent subproof to a1ii.2.  (3)
+       After the independent subproof is complete, use "MM-PA> IMPROVE ALL" to
+       assign it automatically to an unknown step in the main proof that
+       matches it.  (4) After the entire proof is complete, use "MM-PA>
+       MINIMIZE_WITH *" to clean up (discard) all ~ a1ii references
        automatically.
 
        This inference was originally designed to assist importing partially
        completed Proof Worksheets from the mmj2 Proof Assistant GUI, but it can
        also be useful on its own.  Interestingly, no axioms are required for
-       its proof.  (Contributed by NM, 7-Feb-2006.) $)
+       its proof.  It is the inference associated with ~ a1i .  (Contributed by
+       NM, 7-Feb-2006.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     a1ii $p |- ph $=
       (  ) C $.
-  $}
-
-  ${
-    idi.1 $e |- ph $.
-    $( Inference form of ~ id .  This inference rule, which requires no axioms
-       for its proof, is useful as a copy-paste mechanism during proof
-       development in mmj2.  It is normally not referenced in the final version
-       of a proof, since it is always redundant and can be removed using the
-       'minimize *' command in the metamath program's Proof Assistant.
-       (Contributed by Alan Sare, 31-Dec-2011.) $)
-    idi $p |- ph $=
-      (  ) B $.
   $}
 
 $(
