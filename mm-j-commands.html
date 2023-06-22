@@ -97,6 +97,14 @@ display might say that the theorem only depends on <code>A, B</code> even
 though it makes use of a theorem that depends on <code>A, C</code> which
 cannot be minimized in this way.</p>
 
+<code>$j usage 'THEOREM' avoids 'STATEMENT' ...;</code>
+
+<p>The proof of THEOREM should not use any listed STATEMENT,
+directly or indirectly.  Although STATEMENT will often be an axiom
+(for example the axiom of choice or the axiom of infinity), it can
+also be a theorem which this proof should avoid.  Tools are encouraged
+to check for violations and flag them as errors.</p>
+
 <code>$j type_conversions;</code>
 
 <p>Adds all "type conversions" to the grammatical parser. These are

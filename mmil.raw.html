@@ -10107,6 +10107,16 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <tr>
+  <td>cncfcn</td>
+  <td>~ cncfcncntop</td>
+</tr>
+
+<tr>
+  <td>cncfcn1</td>
+  <td>~ cncfcn1cntop</td>
+</tr>
+
+<tr>
   <td>cdivcncf</td>
   <td>~ cdivcncfap</td>
 </tr>
@@ -10147,6 +10157,42 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>limcmpt , limcmpt2</td>
   <td><i>none</i></td>
+</tr>
+
+<tr>
+  <td>limcres</td>
+  <td><i>none</i></td>
+  <td>Although this would appear to be provable,
+  it might benefit from some additional theorems which
+  help us manipulate ` |``t ` and metric spaces.
+  If iset.mm doesn't have CCfld yet, use
+  ` ( MetOpen `` ( abs o. - ) ) ` for the topology of the
+  complex numbers (see cnfldtopn in set.mm).
+  Proof sketch: because interiors are open, we can form
+  a ball around ` B ` which is contained in
+  ` ( ( int `` J ) `` ( C u. { B } ) ) ` which gives
+  us the delta we need to apply ~ ellimc3ap for
+  ` ( F limCC B ) ` (given that we can apply
+  ~ ellimc3ap for ` ( ( F |`` C ) limCC B ) ` when
+  working within ` C ` ).</td>
+</tr>
+
+<tr>
+  <td>cnplimc</td>
+  <td>~ cnplimcim</td>
+  <td>The converse is conjectured to also be provable, but
+  would require a more involved proof.</td>
+</tr>
+
+<tr>
+  <td>cnlimc</td>
+  <td>~ cnlimcim</td>
+  <td>See cnplimc concerning biconditionalizing this</td>
+</tr>
+
+<tr>
+  <td>limccnp</td>
+  <td>~ limccnpcntop</td>
 </tr>
 
 </TABLE>
