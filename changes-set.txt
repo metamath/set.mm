@@ -27,6 +27,20 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+25-Jun-23 2reu4     [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2reu4a    [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2reu2     [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2reu1     [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2rexreu   [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2rmoswap  [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2reurmo   [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2reurex   [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 reuan     [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 rmoanim   [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 reuimrmo  [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2reu5a    [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 raaan2    [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 csbconstgi [same]     moved from GM's mathbox to main set.mm
 18-Jun-23 ssrmo     ssrmof      moved from TA's mathbox to main set.mm
 18-Jun-23 rmoimi    [same]      moved from AV's mathbox to main set.mm
 18-Jun-23 2reu2rex  [same]      moved from AV's mathbox to main set.mm
