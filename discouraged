@@ -13303,7 +13303,6 @@ New usage of "3impdirp1" is discouraged (0 uses).
 New usage of "3impexpVD" is discouraged (0 uses).
 New usage of "3impexpbicomVD" is discouraged (0 uses).
 New usage of "3impexpbicomiVD" is discouraged (0 uses).
-New usage of "3jaoOLD" is discouraged (0 uses).
 New usage of "3lcm2e6woprm" is discouraged (1 uses).
 New usage of "3noncolr1N" is discouraged (1 uses).
 New usage of "3oai" is discouraged (0 uses).
@@ -17268,6 +17267,7 @@ New usage of "r19.27vOLD" is discouraged (0 uses).
 New usage of "r19.28vOLD" is discouraged (0 uses).
 New usage of "r19.29aOLD" is discouraged (0 uses).
 New usage of "r19.29anOLD" is discouraged (0 uses).
+New usage of "r19.29vvaOLD" is discouraged (0 uses).
 New usage of "r19.30OLD" is discouraged (0 uses).
 New usage of "r19.37vOLD" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
@@ -17766,9 +17766,6 @@ New usage of "swrdswrd0OLD" is discouraged (1 uses).
 New usage of "swrdtrcfv0OLD" is discouraged (1 uses).
 New usage of "swrdtrcfvOLD" is discouraged (2 uses).
 New usage of "swrdtrcfvlOLD" is discouraged (1 uses).
-New usage of "syl2an23anOLD" is discouraged (0 uses).
-New usage of "syl3anl2OLD" is discouraged (0 uses).
-New usage of "syl3anr2OLD" is discouraged (0 uses).
 New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
 New usage of "symdif2OLD" is discouraged (0 uses).
@@ -18101,7 +18098,6 @@ Proof modification of "3impdirp1" is discouraged (21 steps).
 Proof modification of "3impexpVD" is discouraged (104 steps).
 Proof modification of "3impexpbicomVD" is discouraged (89 steps).
 Proof modification of "3impexpbicomiVD" is discouraged (28 steps).
-Proof modification of "3jaoOLD" is discouraged (49 steps).
 Proof modification of "3lcm2e6woprm" is discouraged (285 steps).
 Proof modification of "3orbi123" is discouraged (29 steps).
 Proof modification of "3orbi123VD" is discouraged (134 steps).
@@ -19431,6 +19427,7 @@ Proof modification of "r19.27vOLD" is discouraged (39 steps).
 Proof modification of "r19.28vOLD" is discouraged (38 steps).
 Proof modification of "r19.29aOLD" is discouraged (11 steps).
 Proof modification of "r19.29anOLD" is discouraged (35 steps).
+Proof modification of "r19.29vvaOLD" is discouraged (68 steps).
 Proof modification of "r19.30OLD" is discouraged (75 steps).
 Proof modification of "r19.37vOLD" is discouraged (8 steps).
 Proof modification of "r1omALT" is discouraged (13 steps).
@@ -19634,9 +19631,6 @@ Proof modification of "swrdswrd0OLD" is discouraged (235 steps).
 Proof modification of "swrdtrcfv0OLD" is discouraged (95 steps).
 Proof modification of "swrdtrcfvOLD" is discouraged (111 steps).
 Proof modification of "swrdtrcfvlOLD" is discouraged (114 steps).
-Proof modification of "syl2an23anOLD" is discouraged (27 steps).
-Proof modification of "syl3anl2OLD" is discouraged (24 steps).
-Proof modification of "syl3anr2OLD" is discouraged (23 steps).
 Proof modification of "syl5imp" is discouraged (23 steps).
 Proof modification of "syl5impVD" is discouraged (57 steps).
 Proof modification of "symdif2OLD" is discouraged (59 steps).
