@@ -27,6 +27,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 1-Jul-23 bj-nalset nalset      moved from BJ's mathbox to main set.mm
+ 1-Jul-23 bj-spvv   spvv        moved from BJ's mathbox to main set.mm
 25-Jun-23 2reu4     [same]      moved from AV's mathbox to main set.mm
 25-Jun-23 2reu4a    [same]      moved from AV's mathbox to main set.mm
 25-Jun-23 2reu2     [same]      moved from AV's mathbox to main set.mm
