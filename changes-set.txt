@@ -27,6 +27,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 4-Jul-23 sn-vexwv  sn-vexw
+ 4-Jul-23 bj-sbtv   sbtv        merged from BJ's mathbox to main set.mm
  4-Jul-23 df-ssb    df-sb       moved from BJ's mathbox to main set.mm
  4-Jul-23 wssb      wsb         merged from BJ's mathbox to main set.mm
  4-Jul-23 df-sb     df-sbOLD    temporary rename

@@ -17466,7 +17466,9 @@ New usage of "sbcrexgOLD" is discouraged (2 uses).
 New usage of "sbcssgVD" is discouraged (0 uses).
 New usage of "sbequ8ALT" is discouraged (0 uses).
 New usage of "sbnf2OLD" is discouraged (0 uses).
+New usage of "sbtOLD" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
+New usage of "sbtv" is discouraged (0 uses).
 New usage of "scmateALT" is discouraged (0 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
 New usage of "setrec1lem1" is discouraged (3 uses).
@@ -18425,7 +18427,6 @@ Proof modification of "bj-sbceqgALT" is discouraged (143 steps).
 Proof modification of "bj-sbeqALT" is discouraged (44 steps).
 Proof modification of "bj-sbfvv" is discouraged (32 steps).
 Proof modification of "bj-sbidmOLD" is discouraged (41 steps).
-Proof modification of "bj-sbtv" is discouraged (12 steps).
 Proof modification of "bj-spcimdv" is discouraged (56 steps).
 Proof modification of "bj-spcimdvv" is discouraged (56 steps).
 Proof modification of "bj-speiv" is discouraged (15 steps).
@@ -19545,7 +19546,9 @@ Proof modification of "sbcssgVD" is discouraged (229 steps).
 Proof modification of "sbequ8ALT" is discouraged (30 steps).
 Proof modification of "sbnf2OLD" is discouraged (135 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
+Proof modification of "sbtOLD" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
+Proof modification of "sbtv" is discouraged (31 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
 Proof modification of "signstfveq0OLD" is discouraged (737 steps).
