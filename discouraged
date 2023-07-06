@@ -15412,6 +15412,7 @@ New usage of "flddivrng" is discouraged (2 uses).
 New usage of "fldhmsubcALTV" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fnmpt2ovdOLD" is discouraged (0 uses).
+New usage of "footexALT" is discouraged (0 uses).
 New usage of "fresisonOLD" is discouraged (0 uses).
 New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
 New usage of "funadj" is discouraged (4 uses).
@@ -16928,6 +16929,7 @@ New usage of "opeqsnOLD" is discouraged (1 uses).
 New usage of "opidon2OLD" is discouraged (1 uses).
 New usage of "opidonOLD" is discouraged (2 uses).
 New usage of "opnmblALT" is discouraged (0 uses).
+New usage of "opreu2reuALT" is discouraged (0 uses).
 New usage of "opsqrlem1" is discouraged (0 uses).
 New usage of "opsqrlem2" is discouraged (1 uses).
 New usage of "opsqrlem3" is discouraged (2 uses).
@@ -18903,6 +18905,7 @@ Proof modification of "fimaxreOLD" is discouraged (172 steps).
 Proof modification of "fiminreOLD" is discouraged (312 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnmpt2ovdOLD" is discouraged (219 steps).
+Proof modification of "footexALT" is discouraged (2161 steps).
 Proof modification of "frege10" is discouraged (27 steps).
 Proof modification of "frege100" is discouraged (31 steps).
 Proof modification of "frege101" is discouraged (49 steps).
@@ -19388,6 +19391,7 @@ Proof modification of "opeqsnOLD" is discouraged (124 steps).
 Proof modification of "opidon2OLD" is discouraged (80 steps).
 Proof modification of "opidonOLD" is discouraged (198 steps).
 Proof modification of "opnmblALT" is discouraged (332 steps).
+Proof modification of "opreu2reuALT" is discouraged (913 steps).
 Proof modification of "orbi1r" is discouraged (9 steps).
 Proof modification of "orbi1rVD" is discouraged (101 steps).
 Proof modification of "orcomdd" is discouraged (13 steps).
