@@ -27,7 +27,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
- 6-Jul-23 bj-spex   spsbe       merged from BJ's mathbox to main set.mm
+ 7-Jul-23 bj-ssbequ sbequ       merged from BJ's mathbox to main set.mm
+ 7-Jul-23 bj-spex   spsbe       merged from BJ's mathbox to main set.mm
  6-Jul-23 bj-rababwv bj-rababw
  6-Jul-23 bj-alsb   stdpc4      merged from BJ's mathbox to main set.mm
  6-Jul-23 bj-ssbim  spsbim      merged from BJ's mathbox to main set.mm
