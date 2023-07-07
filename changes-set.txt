@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 6-Jul-23 bj-spex   spsbe       merged from BJ's mathbox to main set.mm
  6-Jul-23 bj-rababwv bj-rababw
  6-Jul-23 bj-alsb   stdpc4      merged from BJ's mathbox to main set.mm
  6-Jul-23 bj-ssbim  spsbim      merged from BJ's mathbox to main set.mm
@@ -37,7 +38,7 @@ Date      Old       New         Notes
  6-Jul-23 bj-sbtv   sbtv        merged from BJ's mathbox to main set.mm
  4-Jul-23 df-ssb    df-sb       moved from BJ's mathbox to main set.mm
  4-Jul-23 wssb      wsb         merged from BJ's mathbox to main set.mm
- 4-Jul-23 df-sb     df-sbOLD    temporary rename
+ 4-Jul-23 df-sb     df-sbOLD    temporary rename, will be dfsb1
  4-Jul-23 bj-ssbjust sbjust     moved from BJ's mathbox to main set.mm
  4-Jul-23 bj-ssbjustlem sbjustlem moved from BJ's mathbox to main set.mm
  4-Jul-23 rspcdf    [same]      moved from EW's mathbox to main set.mm
