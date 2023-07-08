@@ -17454,6 +17454,7 @@ New usage of "rusgrnumwwlksOLD" is discouraged (0 uses).
 New usage of "s1dmALT" is discouraged (0 uses).
 New usage of "s2dmALT" is discouraged (0 uses).
 New usage of "sacgrOLD" is discouraged (0 uses).
+New usage of "sb2vOLD" is discouraged (0 uses).
 New usage of "sb5ALT" is discouraged (0 uses).
 New usage of "sb5ALTVD" is discouraged (0 uses).
 New usage of "sb6OLD" is discouraged (0 uses).
@@ -17471,6 +17472,7 @@ New usage of "sbcbiVD" is discouraged (0 uses).
 New usage of "sbcel1vOLD" is discouraged (0 uses).
 New usage of "sbcim2g" is discouraged (2 uses).
 New usage of "sbcim2gVD" is discouraged (0 uses).
+New usage of "sbco2vvOLD" is discouraged (0 uses).
 New usage of "sbcom2OLD" is discouraged (0 uses).
 New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
@@ -19549,6 +19551,7 @@ Proof modification of "rusgrnumwwlksOLD" is discouraged (951 steps).
 Proof modification of "s1dmALT" is discouraged (25 steps).
 Proof modification of "s2dmALT" is discouraged (38 steps).
 Proof modification of "sacgrOLD" is discouraged (990 steps).
+Proof modification of "sb2vOLD" is discouraged (29 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
 Proof modification of "sb6OLD" is discouraged (20 steps).
@@ -19568,6 +19571,7 @@ Proof modification of "sbcbiVD" is discouraged (59 steps).
 Proof modification of "sbcel1vOLD" is discouraged (48 steps).
 Proof modification of "sbcim2g" is discouraged (83 steps).
 Proof modification of "sbcim2gVD" is discouraged (139 steps).
+Proof modification of "sbco2vvOLD" is discouraged (19 steps).
 Proof modification of "sbcom2OLD" is discouraged (185 steps).
 Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
