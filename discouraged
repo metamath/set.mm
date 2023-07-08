@@ -11832,6 +11832,7 @@
 "sbcrexgOLD" is used by "2sbcrexOLD".
 "sbcrexgOLD" is used by "sbc2rexgOLD".
 "sbftv" is used by "sbfv".
+"sbnv" is used by "sbi2v".
 "setrec1lem1" is used by "setrec1lem2".
 "setrec1lem1" is used by "setrec1lem4".
 "setrec1lem1" is used by "setrec2fun".
@@ -14826,6 +14827,7 @@ New usage of "dfiop2" is discouraged (3 uses).
 New usage of "dfmo" is discouraged (0 uses).
 New usage of "dfnul2OLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
+New usage of "dfsb7OLD" is discouraged (0 uses).
 New usage of "dfsn2ALT" is discouraged (0 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "dfvd1imp" is discouraged (1 uses).
@@ -17486,9 +17488,12 @@ New usage of "sbequiOLD" is discouraged (0 uses).
 New usage of "sbequvv" is discouraged (0 uses).
 New usage of "sbftv" is discouraged (1 uses).
 New usage of "sbfv" is discouraged (0 uses).
+New usage of "sbi2v" is discouraged (0 uses).
 New usage of "sbimdvOLD" is discouraged (0 uses).
 New usage of "sbimiOLD" is discouraged (0 uses).
+New usage of "sbnOLD" is discouraged (0 uses).
 New usage of "sbnf2OLD" is discouraged (0 uses).
+New usage of "sbnv" is discouraged (1 uses).
 New usage of "sbtOLD" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "sbtv" is discouraged (0 uses).
@@ -18597,6 +18602,7 @@ Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dfeuOLD" is discouraged (33 steps).
 Proof modification of "dfmo" is discouraged (142 steps).
 Proof modification of "dfnul2OLD" is discouraged (44 steps).
+Proof modification of "dfsb7OLD" is discouraged (8 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
 Proof modification of "dfvd1imp" is discouraged (10 steps).
 Proof modification of "dfvd1impr" is discouraged (10 steps).
@@ -19588,9 +19594,12 @@ Proof modification of "sbequiOLD" is discouraged (110 steps).
 Proof modification of "sbequvv" is discouraged (28 steps).
 Proof modification of "sbftv" is discouraged (37 steps).
 Proof modification of "sbfv" is discouraged (15 steps).
+Proof modification of "sbi2v" is discouraged (44 steps).
 Proof modification of "sbimdvOLD" is discouraged (61 steps).
 Proof modification of "sbimiOLD" is discouraged (56 steps).
+Proof modification of "sbnOLD" is discouraged (55 steps).
 Proof modification of "sbnf2OLD" is discouraged (135 steps).
+Proof modification of "sbnv" is discouraged (39 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtOLD" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
