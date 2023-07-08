@@ -13760,6 +13760,7 @@ New usage of "bj-rabtrAUTO" is discouraged (0 uses).
 New usage of "bj-sbceqgALT" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
 New usage of "bj-sbidmOLD" is discouraged (0 uses).
+New usage of "bj-ssb1" is discouraged (0 uses).
 New usage of "bj-ssbid1ALT" is discouraged (0 uses).
 New usage of "bj-ssbid2ALT" is discouraged (0 uses).
 New usage of "bj-vexwv" is discouraged (1 uses).
@@ -17456,6 +17457,7 @@ New usage of "sacgrOLD" is discouraged (0 uses).
 New usage of "sb5ALT" is discouraged (0 uses).
 New usage of "sb5ALTVD" is discouraged (0 uses).
 New usage of "sb6OLD" is discouraged (0 uses).
+New usage of "sb6OLDOLD" is discouraged (0 uses).
 New usage of "sbal2OLD" is discouraged (0 uses).
 New usage of "sbbidOLD" is discouraged (0 uses).
 New usage of "sbbidvOLD" is discouraged (0 uses).
@@ -18458,6 +18460,7 @@ Proof modification of "bj-spimev" is discouraged (19 steps).
 Proof modification of "bj-spimevv" is discouraged (9 steps).
 Proof modification of "bj-spimtv" is discouraged (52 steps).
 Proof modification of "bj-spimvv" is discouraged (16 steps).
+Proof modification of "bj-ssb1" is discouraged (101 steps).
 Proof modification of "bj-ssbid1ALT" is discouraged (42 steps).
 Proof modification of "bj-ssbid2ALT" is discouraged (84 steps).
 Proof modification of "bj-stdpc5" is discouraged (20 steps).
@@ -19548,7 +19551,8 @@ Proof modification of "s2dmALT" is discouraged (38 steps).
 Proof modification of "sacgrOLD" is discouraged (990 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
-Proof modification of "sb6OLD" is discouraged (32 steps).
+Proof modification of "sb6OLD" is discouraged (20 steps).
+Proof modification of "sb6OLDOLD" is discouraged (32 steps).
 Proof modification of "sbal2OLD" is discouraged (157 steps).
 Proof modification of "sbbidOLD" is discouraged (27 steps).
 Proof modification of "sbbidvOLD" is discouraged (32 steps).
