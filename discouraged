@@ -4758,6 +4758,9 @@
 "dfpjop" is used by "elpjhmop".
 "dfpjop" is used by "elpjidm".
 "dfpjop" is used by "pjhmopidm".
+"dfsb2ALT" is used by "dfsb3ALT".
+"dfsb3ALT" is used by "sbnALT".
+"dfsb7ALT" is used by "dfsb1".
 "dfvd1imp" is used by "gen11".
 "dfvd1impr" is used by "gen11".
 "dfvd1ir" is used by "2uasbanhVD".
@@ -5854,6 +5857,7 @@
 "equid1" is used by "equcomi1".
 "equidqe" is used by "axc5sp1".
 "equidqe" is used by "equidq".
+"equsb1ALT" is used by "sbieALT".
 "erngbase-rN" is used by "erngdvlem1-rN".
 "erngbase-rN" is used by "erngdvlem2-rN".
 "erngbase-rN" is used by "erngdvlem3-rN".
@@ -6386,6 +6390,7 @@
 "hbntal" is used by "hbexgVD".
 "hbntal" is used by "hbimpg".
 "hbntal" is used by "hbimpgVD".
+"hbsb2ALT" is used by "nfsb2ALT".
 "hcau" is used by "chscllem2".
 "hcau" is used by "hcaucvg".
 "hcau" is used by "hcauseq".
@@ -9540,6 +9545,9 @@
 "nfa1-o" is used by "ax12eq".
 "nfa1-o" is used by "ax12v2-o".
 "nfa1-o" is used by "axc11n-16".
+"nfsb2ALT" is used by "nfsb4tALT".
+"nfsb4ALT" is used by "sbco2ALT".
+"nfsb4tALT" is used by "nfsb4ALT".
 "nic-ax" is used by "lukshef-ax1".
 "nic-ax" is used by "nic-id".
 "nic-ax" is used by "nic-idlem1".
@@ -11816,18 +11824,77 @@
 "rngoueqz" is used by "isdmn3".
 "rspsbc2" is used by "tratrb".
 "rspsbc2" is used by "tratrbVD".
+"sb1ALT" is used by "sb4ALT".
+"sb1ALT" is used by "sb4aALT".
+"sb1ALT" is used by "sb4vALT".
+"sb1ALT" is used by "spsbeALT".
+"sb2ALT" is used by "dfsb2ALT".
+"sb2ALT" is used by "equsb1ALT".
+"sb2ALT" is used by "hbsb2ALT".
+"sb2ALT" is used by "sb6fALT".
+"sb2ALT" is used by "sbequiALT".
+"sb2ALT" is used by "sbi1ALT".
+"sb2ALT" is used by "stdpc4ALT".
+"sb2vALT" is used by "sb6ALT".
+"sb4ALT" is used by "dfsb2ALT".
+"sb4ALT" is used by "hbsb2ALT".
+"sb4ALT" is used by "sbequiALT".
+"sb4ALT" is used by "sbi1ALT".
+"sb4aALT" is used by "sb6fALT".
+"sb4vALT" is used by "sb6ALT".
+"sb5ALT2" is used by "sb7fALT".
+"sb5fALT" is used by "sb7fALT".
+"sb6ALT" is used by "sb5ALT2".
+"sb6fALT" is used by "sb5fALT".
+"sb7fALT" is used by "dfsb7ALT".
+"sbanALT" is used by "sbbiALT".
+"sbbiALT" is used by "sblbisALT".
+"sbbiiALT" is used by "sb7fALT".
+"sbbiiALT" is used by "sbanALT".
+"sbbiiALT" is used by "sbbiALT".
 "sbc2rexgOLD" is used by "sbc4rexgOLD".
 "sbc3or" is used by "sbcoreleleq".
 "sbcbi" is used by "sbcssgVD".
 "sbcbi" is used by "trsbcVD".
 "sbcim2g" is used by "trsbc".
 "sbcim2g" is used by "trsbcVD".
+"sbco2ALT" is used by "sb7fALT".
 "sbcoreleleq" is used by "tratrb".
 "sbcoreleleq" is used by "tratrbVD".
 "sbcrexgOLD" is used by "2sbcrexOLD".
 "sbcrexgOLD" is used by "sbc2rexgOLD".
+"sbequ12ALT" is used by "nfsb4tALT".
+"sbequ12ALT" is used by "sbco2ALT".
+"sbequ1ALT" is used by "dfsb2ALT".
+"sbequ1ALT" is used by "sbequ12ALT".
+"sbequ1ALT" is used by "sbequiALT".
+"sbequ1ALT" is used by "sbi1ALT".
+"sbequ2ALT" is used by "dfsb2ALT".
+"sbequ2ALT" is used by "sbequ12ALT".
+"sbequ2ALT" is used by "sbequiALT".
+"sbequ2ALT" is used by "sbi1ALT".
+"sbequALT" is used by "sbco2ALT".
+"sbequiALT" is used by "sbequALT".
+"sbfALT" is used by "sbieALT".
+"sbfALT" is used by "sbrimALT".
+"sbftALT" is used by "sbfALT".
 "sbftv" is used by "sbfv".
+"sbi1ALT" is used by "sbimALT".
+"sbi2ALT" is used by "sbimALT".
+"sbieALT" is used by "sbiedALT".
+"sbiedALT" is used by "sbco2ALT".
+"sbimALT" is used by "sbanALT".
+"sbimALT" is used by "sbbiALT".
+"sbimALT" is used by "sbrimALT".
+"sbimiALT" is used by "sb6fALT".
+"sbimiALT" is used by "sbbiiALT".
+"sbimiALT" is used by "sbi2ALT".
+"sbimiALT" is used by "sbieALT".
+"sblbisALT" is used by "sbieALT".
+"sbnALT" is used by "sbanALT".
+"sbnALT" is used by "sbi2ALT".
 "sbnv" is used by "sbi2v".
+"sbrimALT" is used by "sbiedALT".
 "setrec1lem1" is used by "setrec1lem2".
 "setrec1lem1" is used by "setrec1lem4".
 "setrec1lem1" is used by "setrec2fun".
@@ -12372,6 +12439,7 @@
 "sps-o" is used by "axc11-o".
 "sps-o" is used by "axc11n-16".
 "sps-o" is used by "axc5c711toc7".
+"spsbeALT" is used by "sbftALT".
 "sqgt0sr" is used by "recexsr".
 "srhmsubcALTV" is used by "crhmsubcALTV".
 "srhmsubcALTV" is used by "drhmsubcALTV".
@@ -12472,6 +12540,7 @@
 "stcltr2i" is used by "stcltrlem1".
 "stcltrlem1" is used by "stcltrlem2".
 "stcltrlem2" is used by "stcltrthi".
+"stdpc4ALT" is used by "sbftALT".
 "stdpc4v" is used by "bj-2stdpc4v".
 "stdpc4v" is used by "bj-sbfvv".
 "stdpc4v" is used by "bj-vexwvt".
@@ -14816,6 +14885,9 @@ New usage of "dfiop2" is discouraged (3 uses).
 New usage of "dfmo" is discouraged (0 uses).
 New usage of "dfnul2OLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
+New usage of "dfsb2ALT" is discouraged (1 uses).
+New usage of "dfsb3ALT" is discouraged (1 uses).
+New usage of "dfsb7ALT" is discouraged (1 uses).
 New usage of "dfsb7OLD" is discouraged (0 uses).
 New usage of "dfsn2ALT" is discouraged (0 uses).
 New usage of "dftru2" is discouraged (0 uses).
@@ -15304,6 +15376,7 @@ New usage of "equncomVD" is discouraged (0 uses).
 New usage of "equncomiVD" is discouraged (0 uses).
 New usage of "equs5aALT" is discouraged (0 uses).
 New usage of "equs5eALT" is discouraged (0 uses).
+New usage of "equsb1ALT" is discouraged (1 uses).
 New usage of "equsb1vOLD" is discouraged (0 uses).
 New usage of "equsb1vOLDOLD" is discouraged (0 uses).
 New usage of "equsb3ALT" is discouraged (0 uses).
@@ -15566,6 +15639,7 @@ New usage of "hbnae-o" is discouraged (3 uses).
 New usage of "hbntal" is discouraged (3 uses).
 New usage of "hbra2VD" is discouraged (0 uses).
 New usage of "hbs1OLD" is discouraged (0 uses).
+New usage of "hbsb2ALT" is discouraged (1 uses).
 New usage of "hcau" is discouraged (4 uses).
 New usage of "hcaucvg" is discouraged (1 uses).
 New usage of "hcauseq" is discouraged (0 uses).
@@ -16575,6 +16649,9 @@ New usage of "nfmo1OLD" is discouraged (0 uses).
 New usage of "nfmod2OLD" is discouraged (0 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfs1vOLD" is discouraged (0 uses).
+New usage of "nfsb2ALT" is discouraged (1 uses).
+New usage of "nfsb4ALT" is discouraged (1 uses).
+New usage of "nfsb4tALT" is discouraged (1 uses).
 New usage of "nfunidALT" is discouraged (0 uses).
 New usage of "nfunidALT2" is discouraged (0 uses).
 New usage of "nic-ax" is discouraged (7 uses).
@@ -17433,14 +17510,29 @@ New usage of "rusgrnumwwlksOLD" is discouraged (0 uses).
 New usage of "s1dmALT" is discouraged (0 uses).
 New usage of "s2dmALT" is discouraged (0 uses).
 New usage of "sacgrOLD" is discouraged (0 uses).
+New usage of "sb1ALT" is discouraged (4 uses).
+New usage of "sb2ALT" is discouraged (7 uses).
+New usage of "sb2vALT" is discouraged (1 uses).
 New usage of "sb2vOLD" is discouraged (0 uses).
+New usage of "sb4ALT" is discouraged (4 uses).
+New usage of "sb4aALT" is discouraged (1 uses).
+New usage of "sb4vALT" is discouraged (1 uses).
+New usage of "sb4vOLD" is discouraged (0 uses).
 New usage of "sb5ALT" is discouraged (0 uses).
+New usage of "sb5ALT2" is discouraged (1 uses).
 New usage of "sb5ALTVD" is discouraged (0 uses).
+New usage of "sb5fALT" is discouraged (1 uses).
+New usage of "sb6ALT" is discouraged (1 uses).
 New usage of "sb6OLD" is discouraged (0 uses).
 New usage of "sb6OLDOLD" is discouraged (0 uses).
+New usage of "sb6fALT" is discouraged (1 uses).
+New usage of "sb7fALT" is discouraged (1 uses).
 New usage of "sbal2OLD" is discouraged (0 uses).
+New usage of "sbanALT" is discouraged (1 uses).
+New usage of "sbbiALT" is discouraged (1 uses).
 New usage of "sbbidOLD" is discouraged (0 uses).
 New usage of "sbbidvOLD" is discouraged (0 uses).
+New usage of "sbbiiALT" is discouraged (3 uses).
 New usage of "sbc2rexgOLD" is discouraged (1 uses).
 New usage of "sbc3or" is discouraged (1 uses).
 New usage of "sbc3orgVD" is discouraged (0 uses).
@@ -17451,26 +17543,44 @@ New usage of "sbcbiVD" is discouraged (0 uses).
 New usage of "sbcel1vOLD" is discouraged (0 uses).
 New usage of "sbcim2g" is discouraged (2 uses).
 New usage of "sbcim2gVD" is discouraged (0 uses).
+New usage of "sbco2ALT" is discouraged (1 uses).
 New usage of "sbco2vvOLD" is discouraged (0 uses).
 New usage of "sbcom2OLD" is discouraged (0 uses).
 New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
 New usage of "sbcrexgOLD" is discouraged (2 uses).
 New usage of "sbcssgVD" is discouraged (0 uses).
+New usage of "sbequ12ALT" is discouraged (2 uses).
+New usage of "sbequ1ALT" is discouraged (4 uses).
 New usage of "sbequ1OLD" is discouraged (0 uses).
+New usage of "sbequ2ALT" is discouraged (4 uses).
 New usage of "sbequ2OLD" is discouraged (0 uses).
 New usage of "sbequ8ALT" is discouraged (0 uses).
+New usage of "sbequALT" is discouraged (1 uses).
 New usage of "sbequOLD" is discouraged (0 uses).
+New usage of "sbequiALT" is discouraged (1 uses).
 New usage of "sbequiOLD" is discouraged (0 uses).
 New usage of "sbequvv" is discouraged (0 uses).
+New usage of "sbfALT" is discouraged (2 uses).
+New usage of "sbftALT" is discouraged (1 uses).
 New usage of "sbftv" is discouraged (1 uses).
 New usage of "sbfv" is discouraged (0 uses).
+New usage of "sbi1ALT" is discouraged (1 uses).
+New usage of "sbi2ALT" is discouraged (1 uses).
 New usage of "sbi2v" is discouraged (0 uses).
+New usage of "sbieALT" is discouraged (1 uses).
+New usage of "sbiedALT" is discouraged (1 uses).
+New usage of "sbimALT" is discouraged (3 uses).
+New usage of "sbimdOLD" is discouraged (0 uses).
 New usage of "sbimdvOLD" is discouraged (0 uses).
+New usage of "sbimiALT" is discouraged (4 uses).
 New usage of "sbimiOLD" is discouraged (0 uses).
+New usage of "sblbisALT" is discouraged (1 uses).
+New usage of "sbnALT" is discouraged (2 uses).
 New usage of "sbnOLD" is discouraged (0 uses).
 New usage of "sbnf2OLD" is discouraged (0 uses).
 New usage of "sbnv" is discouraged (1 uses).
+New usage of "sbrimALT" is discouraged (1 uses).
 New usage of "sbtOLD" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "sbtv" is discouraged (0 uses).
@@ -17639,6 +17749,7 @@ New usage of "splvalOLD" is discouraged (6 uses).
 New usage of "splvalpfxOLD" is discouraged (0 uses).
 New usage of "sps-o" is discouraged (7 uses).
 New usage of "spsbbiOLD" is discouraged (0 uses).
+New usage of "spsbeALT" is discouraged (1 uses).
 New usage of "spsbeOLD" is discouraged (0 uses).
 New usage of "spsbimOLD" is discouraged (0 uses).
 New usage of "spsbimv" is discouraged (0 uses).
@@ -17700,6 +17811,7 @@ New usage of "stcltr2i" is discouraged (1 uses).
 New usage of "stcltrlem1" is discouraged (1 uses).
 New usage of "stcltrlem2" is discouraged (1 uses).
 New usage of "stcltrthi" is discouraged (0 uses).
+New usage of "stdpc4ALT" is discouraged (1 uses).
 New usage of "stdpc4OLD" is discouraged (0 uses).
 New usage of "stdpc4v" is discouraged (5 uses).
 New usage of "stge0" is discouraged (1 uses).
@@ -18570,6 +18682,9 @@ Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dfeuOLD" is discouraged (33 steps).
 Proof modification of "dfmo" is discouraged (142 steps).
 Proof modification of "dfnul2OLD" is discouraged (44 steps).
+Proof modification of "dfsb2ALT" is discouraged (79 steps).
+Proof modification of "dfsb3ALT" is discouraged (39 steps).
+Proof modification of "dfsb7ALT" is discouraged (10 steps).
 Proof modification of "dfsb7OLD" is discouraged (8 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
 Proof modification of "dfvd1imp" is discouraged (10 steps).
@@ -18822,8 +18937,9 @@ Proof modification of "equncomVD" is discouraged (53 steps).
 Proof modification of "equncomiVD" is discouraged (19 steps).
 Proof modification of "equs5aALT" is discouraged (25 steps).
 Proof modification of "equs5eALT" is discouraged (39 steps).
-Proof modification of "equsb1vOLD" is discouraged (32 steps).
-Proof modification of "equsb1vOLDOLD" is discouraged (17 steps).
+Proof modification of "equsb1ALT" is discouraged (16 steps).
+Proof modification of "equsb1vOLD" is discouraged (23 steps).
+Proof modification of "equsb1vOLDOLD" is discouraged (32 steps).
 Proof modification of "equsb3ALT" is discouraged (44 steps).
 Proof modification of "equsb3vOLD" is discouraged (16 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
@@ -19103,6 +19219,7 @@ Proof modification of "hbnae-o" is discouraged (11 steps).
 Proof modification of "hbntal" is discouraged (48 steps).
 Proof modification of "hbra2VD" is discouraged (26 steps).
 Proof modification of "hbs1OLD" is discouraged (22 steps).
+Proof modification of "hbsb2ALT" is discouraged (32 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hhssbnOLD" is discouraged (39 steps).
 Proof modification of "hhsshlOLD" is discouraged (24 steps).
@@ -19290,6 +19407,9 @@ Proof modification of "nfmo1OLD" is discouraged (25 steps).
 Proof modification of "nfmod2OLD" is discouraged (35 steps).
 Proof modification of "nfopdALT" is discouraged (70 steps).
 Proof modification of "nfs1vOLD" is discouraged (10 steps).
+Proof modification of "nfsb2ALT" is discouraged (18 steps).
+Proof modification of "nfsb4ALT" is discouraged (23 steps).
+Proof modification of "nfsb4tALT" is discouraged (119 steps).
 Proof modification of "nfunidALT" is discouraged (33 steps).
 Proof modification of "nfunidALT2" is discouraged (49 steps).
 Proof modification of "nic-ax" is discouraged (142 steps).
@@ -19515,15 +19635,29 @@ Proof modification of "rusgrnumwwlksOLD" is discouraged (951 steps).
 Proof modification of "s1dmALT" is discouraged (25 steps).
 Proof modification of "s2dmALT" is discouraged (38 steps).
 Proof modification of "sacgrOLD" is discouraged (990 steps).
+Proof modification of "sb1ALT" is discouraged (13 steps).
+Proof modification of "sb2ALT" is discouraged (23 steps).
+Proof modification of "sb2vALT" is discouraged (23 steps).
 Proof modification of "sb2vOLD" is discouraged (29 steps).
+Proof modification of "sb4ALT" is discouraged (28 steps).
+Proof modification of "sb4aALT" is discouraged (26 steps).
+Proof modification of "sb4vALT" is discouraged (24 steps).
 Proof modification of "sb4vOLD" is discouraged (25 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
+Proof modification of "sb5ALT2" is discouraged (24 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
+Proof modification of "sb5fALT" is discouraged (26 steps).
+Proof modification of "sb6ALT" is discouraged (21 steps).
 Proof modification of "sb6OLD" is discouraged (20 steps).
 Proof modification of "sb6OLDOLD" is discouraged (32 steps).
+Proof modification of "sb6fALT" is discouraged (49 steps).
+Proof modification of "sb7fALT" is discouraged (68 steps).
 Proof modification of "sbal2OLD" is discouraged (157 steps).
-Proof modification of "sbbidOLD" is discouraged (27 steps).
+Proof modification of "sbanALT" is discouraged (102 steps).
+Proof modification of "sbbiALT" is discouraged (109 steps).
+Proof modification of "sbbidOLD" is discouraged (34 steps).
 Proof modification of "sbbidvOLD" is discouraged (32 steps).
+Proof modification of "sbbiiALT" is discouraged (29 steps).
 Proof modification of "sbc2or" is discouraged (134 steps).
 Proof modification of "sbc2rexgOLD" is discouraged (62 steps).
 Proof modification of "sbc3or" is discouraged (73 steps).
@@ -19536,26 +19670,44 @@ Proof modification of "sbcbiVD" is discouraged (59 steps).
 Proof modification of "sbcel1vOLD" is discouraged (48 steps).
 Proof modification of "sbcim2g" is discouraged (83 steps).
 Proof modification of "sbcim2gVD" is discouraged (139 steps).
+Proof modification of "sbco2ALT" is discouraged (73 steps).
 Proof modification of "sbco2vvOLD" is discouraged (19 steps).
 Proof modification of "sbcom2OLD" is discouraged (185 steps).
 Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
 Proof modification of "sbcrexgOLD" is discouraged (77 steps).
 Proof modification of "sbcssgVD" is discouraged (229 steps).
+Proof modification of "sbequ12ALT" is discouraged (18 steps).
+Proof modification of "sbequ1ALT" is discouraged (24 steps).
 Proof modification of "sbequ1OLD" is discouraged (30 steps).
+Proof modification of "sbequ2ALT" is discouraged (17 steps).
 Proof modification of "sbequ2OLD" is discouraged (23 steps).
 Proof modification of "sbequ8ALT" is discouraged (30 steps).
+Proof modification of "sbequALT" is discouraged (30 steps).
 Proof modification of "sbequOLD" is discouraged (28 steps).
+Proof modification of "sbequiALT" is discouraged (112 steps).
 Proof modification of "sbequiOLD" is discouraged (110 steps).
 Proof modification of "sbequvv" is discouraged (28 steps).
+Proof modification of "sbfALT" is discouraged (14 steps).
+Proof modification of "sbftALT" is discouraged (38 steps).
 Proof modification of "sbftv" is discouraged (37 steps).
 Proof modification of "sbfv" is discouraged (15 steps).
+Proof modification of "sbi1ALT" is discouraged (105 steps).
+Proof modification of "sbi2ALT" is discouraged (55 steps).
 Proof modification of "sbi2v" is discouraged (44 steps).
+Proof modification of "sbieALT" is discouraged (73 steps).
+Proof modification of "sbiedALT" is discouraged (60 steps).
+Proof modification of "sbimALT" is discouraged (27 steps).
+Proof modification of "sbimdOLD" is discouraged (62 steps).
 Proof modification of "sbimdvOLD" is discouraged (61 steps).
+Proof modification of "sbimiALT" is discouraged (44 steps).
 Proof modification of "sbimiOLD" is discouraged (56 steps).
+Proof modification of "sblbisALT" is discouraged (24 steps).
+Proof modification of "sbnALT" is discouraged (48 steps).
 Proof modification of "sbnOLD" is discouraged (55 steps).
 Proof modification of "sbnf2OLD" is discouraged (135 steps).
 Proof modification of "sbnv" is discouraged (39 steps).
+Proof modification of "sbrimALT" is discouraged (41 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtOLD" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
@@ -19590,6 +19742,7 @@ Proof modification of "splvalOLD" is discouraged (268 steps).
 Proof modification of "splvalpfxOLD" is discouraged (300 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
 Proof modification of "spsbbiOLD" is discouraged (28 steps).
+Proof modification of "spsbeALT" is discouraged (22 steps).
 Proof modification of "spsbeOLD" is discouraged (23 steps).
 Proof modification of "spsbimOLD" is discouraged (28 steps).
 Proof modification of "spsbimv" is discouraged (16 steps).
@@ -19610,6 +19763,7 @@ Proof modification of "ssralv2" is discouraged (83 steps).
 Proof modification of "ssralv2VD" is discouraged (147 steps).
 Proof modification of "sstrALT2" is discouraged (81 steps).
 Proof modification of "sstrALT2VD" is discouraged (84 steps).
+Proof modification of "stdpc4ALT" is discouraged (22 steps).
 Proof modification of "stdpc4OLD" is discouraged (23 steps).
 Proof modification of "stdpc4v" is discouraged (23 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
