@@ -75,6 +75,8 @@ jobs:
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v3
+      # Update first to counter problems installing texlive
+      - run: apt-get update --fix-missing
       # Install LaTeX so we can test generated LaTeX. We use extended packages:
       # texlive-extra-utils provides pdflatex
       # texlive-fonts-extra provides phonetic.sty
