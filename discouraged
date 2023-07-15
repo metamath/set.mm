@@ -15353,6 +15353,7 @@ New usage of "enrbreq" is discouraged (3 uses).
 New usage of "enreceq" is discouraged (9 uses).
 New usage of "enrer" is discouraged (8 uses).
 New usage of "enrex" is discouraged (9 uses).
+New usage of "epelgOLD" is discouraged (0 uses).
 New usage of "eqeq1dALT" is discouraged (0 uses).
 New usage of "eqeqan12dALT" is discouraged (0 uses).
 New usage of "eqeqan1dOLD" is discouraged (0 uses).
@@ -17567,7 +17568,7 @@ New usage of "sbnOLD" is discouraged (0 uses).
 New usage of "sbnf2OLD" is discouraged (0 uses).
 New usage of "sbnv" is discouraged (1 uses).
 New usage of "sbrimALT" is discouraged (1 uses).
-New usage of "sbtOLD" is discouraged (0 uses).
+New usage of "sbtALT" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "sbtv" is discouraged (0 uses).
 New usage of "scmateALT" is discouraged (0 uses).
@@ -18902,6 +18903,7 @@ Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
+Proof modification of "epelgOLD" is discouraged (136 steps).
 Proof modification of "eqeq1dALT" is discouraged (62 steps).
 Proof modification of "eqeqan12dALT" is discouraged (23 steps).
 Proof modification of "eqeqan1dOLD" is discouraged (12 steps).
@@ -19682,7 +19684,7 @@ Proof modification of "sbnf2OLD" is discouraged (135 steps).
 Proof modification of "sbnv" is discouraged (39 steps).
 Proof modification of "sbrimALT" is discouraged (41 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
-Proof modification of "sbtOLD" is discouraged (12 steps).
+Proof modification of "sbtALT" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "sbtv" is discouraged (31 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
