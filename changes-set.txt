@@ -27,6 +27,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+16-Jul-23 qseq2i    [same]      moved from PM's mathbox to main set.mm
+16-Jul-23 qseq2d    [same]      moved from PM's mathbox to main set.mm
 14-Jul-23 bj-ssb0   sbv         moved from BJ's mathbox to main set.mm
  8-Jul-23 bj-ssbn   sbn         from BJ's mathbox; equivalent theorems
  8-Jul-23 bj-dfssb2 dfsb7       from BJ's mathbox; equivalent theorems
