@@ -17551,6 +17551,7 @@ New usage of "sbi2ALT" is discouraged (1 uses).
 New usage of "sbi2v" is discouraged (0 uses).
 New usage of "sbieALT" is discouraged (1 uses).
 New usage of "sbiedALT" is discouraged (1 uses).
+New usage of "sbievOLD" is discouraged (0 uses).
 New usage of "sbimALT" is discouraged (3 uses).
 New usage of "sbimdOLD" is discouraged (0 uses).
 New usage of "sbimdvOLD" is discouraged (0 uses).
@@ -19662,6 +19663,7 @@ Proof modification of "sbi2ALT" is discouraged (55 steps).
 Proof modification of "sbi2v" is discouraged (44 steps).
 Proof modification of "sbieALT" is discouraged (73 steps).
 Proof modification of "sbiedALT" is discouraged (60 steps).
+Proof modification of "sbievOLD" is discouraged (41 steps).
 Proof modification of "sbimALT" is discouraged (27 steps).
 Proof modification of "sbimdOLD" is discouraged (62 steps).
 Proof modification of "sbimdvOLD" is discouraged (61 steps).
