@@ -15372,6 +15372,7 @@ New usage of "equs5eALT" is discouraged (0 uses).
 New usage of "equsb1ALT" is discouraged (1 uses).
 New usage of "equsb1vOLD" is discouraged (0 uses).
 New usage of "equsb1vOLDOLD" is discouraged (0 uses).
+New usage of "equsb1vOLDOLDOLD" is discouraged (0 uses).
 New usage of "equsb3ALT" is discouraged (0 uses).
 New usage of "equsb3vOLD" is discouraged (0 uses).
 New usage of "equsexALT" is discouraged (0 uses).
@@ -18916,8 +18917,9 @@ Proof modification of "equncomiVD" is discouraged (19 steps).
 Proof modification of "equs5aALT" is discouraged (25 steps).
 Proof modification of "equs5eALT" is discouraged (39 steps).
 Proof modification of "equsb1ALT" is discouraged (16 steps).
-Proof modification of "equsb1vOLD" is discouraged (23 steps).
-Proof modification of "equsb1vOLDOLD" is discouraged (32 steps).
+Proof modification of "equsb1vOLD" is discouraged (17 steps).
+Proof modification of "equsb1vOLDOLD" is discouraged (23 steps).
+Proof modification of "equsb1vOLDOLDOLD" is discouraged (32 steps).
 Proof modification of "equsb3ALT" is discouraged (44 steps).
 Proof modification of "equsb3vOLD" is discouraged (16 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
@@ -19637,7 +19639,7 @@ Proof modification of "sbcel1vOLD" is discouraged (48 steps).
 Proof modification of "sbcim2g" is discouraged (83 steps).
 Proof modification of "sbcim2gVD" is discouraged (139 steps).
 Proof modification of "sbco2ALT" is discouraged (73 steps).
-Proof modification of "sbco2vvOLD" is discouraged (19 steps).
+Proof modification of "sbco2vvOLD" is discouraged (47 steps).
 Proof modification of "sbcom2OLD" is discouraged (185 steps).
 Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
