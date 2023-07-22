@@ -27,6 +27,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-Jul-23 0neqopab  0nelopab
 16-Jul-23 qseq2i    [same]      moved from PM's mathbox to main set.mm
 16-Jul-23 qseq2d    [same]      moved from PM's mathbox to main set.mm
 14-Jul-23 bj-ssb0   sbv         moved from BJ's mathbox to main set.mm
