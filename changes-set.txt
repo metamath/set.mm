@@ -27,8 +27,33 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-Jul-23 0neqopab  0nelopab
+16-Jul-23 qseq2i    [same]      moved from PM's mathbox to main set.mm
+16-Jul-23 qseq2d    [same]      moved from PM's mathbox to main set.mm
+14-Jul-23 bj-ssb0   sbv         moved from BJ's mathbox to main set.mm
+ 8-Jul-23 bj-ssbn   sbn         from BJ's mathbox; equivalent theorems
+ 8-Jul-23 bj-dfssb2 dfsb7       from BJ's mathbox; equivalent theorems
+ 8-Jul-23 bj-ssbequ2 sbequ2     from BJ's mathbox; equivalent theorems
+ 8-Jul-23 bj-ssbequ1 sbequ1     from BJ's mathbox; equivalent theorems
+ 8-Jul-23 bj-ssbcom3lem sbcom3vv from BJ's mathbox; equivalent theorems
+ 8-Jul-23 bj-ssbssblem sbco2vv  from BJ's mathbox; equivalent theorems
+ 7-Jul-23 bj-ssbequ sbequ       from BJ's mathbox; equivalent theorems
+ 7-Jul-23 bj-spex   spsbe       from BJ's mathbox; equivalent theorems
+ 6-Jul-23 bj-rababwv bj-rababw
+ 6-Jul-23 bj-alsb   stdpc4      from BJ's mathbox; equivalent theorems
+ 6-Jul-23 bj-ssbim  spsbim      from BJ's mathbox; equivalent theorems
+ 6-Jul-23 bj-ssbbi  spsbbi      from BJ's mathbox; equivalent theorems
+ 6-Jul-23 bj-ssbimi sbimi       from BJ's mathbox; equivalent theorems
+ 6-Jul-23 bj-ssbbii sbbii       from BJ's mathbox; equivalent theorems
+ 6-Jul-23 sn-vexwv  sn-vexw
+ 6-Jul-23 bj-sbtv   sbtv        from BJ's mathbox; equivalent theorems
+ 4-Jul-23 df-ssb    df-sb       definition change
+ 4-Jul-23 wssb      wsb         definition change
+ 4-Jul-23 df-sb     dfsb1       definition change
+ 4-Jul-23 bj-ssbjust sbjust     moved from BJ's mathbox to main set.mm
+ 4-Jul-23 bj-ssbjustlem sbjustlem moved from BJ's mathbox to main set.mm
  4-Jul-23 rspcdf    [same]      moved from EW's mathbox to main set.mm
- 1-Jul-23 bj-nalset nalset      moved from BJ's mathbox to main set.mm
+ 1-Jul-23 bj-nalset nalset      from BJ's mathbox; equivalent theorems
  1-Jul-23 bj-spvv   spvv        moved from BJ's mathbox to main set.mm
 25-Jun-23 2reu4     [same]      moved from AV's mathbox to main set.mm
 25-Jun-23 2reu4a    [same]      moved from AV's mathbox to main set.mm
