@@ -17487,6 +17487,7 @@ New usage of "sb2ALT" is discouraged (7 uses).
 New usage of "sb2vALT" is discouraged (1 uses).
 New usage of "sb2vOLD" is discouraged (0 uses).
 New usage of "sb4ALT" is discouraged (4 uses).
+New usage of "sb4OLD" is discouraged (0 uses).
 New usage of "sb4aALT" is discouraged (1 uses).
 New usage of "sb4bOLD" is discouraged (0 uses).
 New usage of "sb4vALT" is discouraged (1 uses).
@@ -19597,6 +19598,7 @@ Proof modification of "sb2ALT" is discouraged (23 steps).
 Proof modification of "sb2vALT" is discouraged (23 steps).
 Proof modification of "sb2vOLD" is discouraged (29 steps).
 Proof modification of "sb4ALT" is discouraged (28 steps).
+Proof modification of "sb4OLD" is discouraged (29 steps).
 Proof modification of "sb4aALT" is discouraged (26 steps).
 Proof modification of "sb4bOLD" is discouraged (24 steps).
 Proof modification of "sb4vALT" is discouraged (24 steps).
