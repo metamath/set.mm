@@ -27,6 +27,11 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+25-Jul-23 mpanrd    [same]      moved from ML's mathbox to main set.mm
+25-Jul-23 f1opr     [same]      moved from JM's mathbox to main set.mm
+25-Jul-23 gsumpr    [same]      moved from AV's mathbox to main set.mm
+25-Jul-23 xpprsng   [same]      moved from AV's mathbox to main set.mm
+25-Jul-23 fnmptd    [same]      moved from GS's mathbox to main set.mm
 22-Jul-23 0neqopab  0nelopab
 16-Jul-23 qseq2i    [same]      moved from PM's mathbox to main set.mm
 16-Jul-23 qseq2d    [same]      moved from PM's mathbox to main set.mm
