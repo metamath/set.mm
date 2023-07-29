@@ -4758,7 +4758,6 @@
 "dfpjop" is used by "pjhmopidm".
 "dfsb2ALT" is used by "dfsb3ALT".
 "dfsb3ALT" is used by "sbnALT".
-"dfsb7ALT" is used by "dfsb1".
 "dfvd1imp" is used by "gen11".
 "dfvd1impr" is used by "gen11".
 "dfvd1ir" is used by "2uasbanhVD".
@@ -14878,7 +14877,7 @@ New usage of "dfnul2OLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfsb2ALT" is discouraged (1 uses).
 New usage of "dfsb3ALT" is discouraged (1 uses).
-New usage of "dfsb7ALT" is discouraged (1 uses).
+New usage of "dfsb7ALT" is discouraged (0 uses).
 New usage of "dfsb7OLD" is discouraged (0 uses).
 New usage of "dfsn2ALT" is discouraged (0 uses).
 New usage of "dftru2" is discouraged (0 uses).
@@ -15368,7 +15367,6 @@ New usage of "equs5eALT" is discouraged (0 uses).
 New usage of "equsb1ALT" is discouraged (1 uses).
 New usage of "equsb1vOLD" is discouraged (0 uses).
 New usage of "equsb1vOLDOLD" is discouraged (0 uses).
-New usage of "equsb1vOLDOLDOLD" is discouraged (0 uses).
 New usage of "equsb3vOLD" is discouraged (0 uses).
 New usage of "equsexALT" is discouraged (0 uses).
 New usage of "eqvOLD" is discouraged (0 uses).
@@ -18908,8 +18906,7 @@ Proof modification of "equs5aALT" is discouraged (25 steps).
 Proof modification of "equs5eALT" is discouraged (39 steps).
 Proof modification of "equsb1ALT" is discouraged (16 steps).
 Proof modification of "equsb1vOLD" is discouraged (17 steps).
-Proof modification of "equsb1vOLDOLD" is discouraged (23 steps).
-Proof modification of "equsb1vOLDOLDOLD" is discouraged (32 steps).
+Proof modification of "equsb1vOLDOLD" is discouraged (32 steps).
 Proof modification of "equsb3vOLD" is discouraged (16 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
 Proof modification of "eqvOLD" is discouraged (6 steps).
