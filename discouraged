@@ -14527,6 +14527,7 @@ New usage of "clel5OLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
 New usage of "clelsb3fOLD" is discouraged (0 uses).
+New usage of "clelsb3v" is discouraged (0 uses).
 New usage of "cleqfOLD" is discouraged (0 uses).
 New usage of "clmgmOLD" is discouraged (1 uses).
 New usage of "clwlkclwwlk2OLD" is discouraged (0 uses).
@@ -15352,7 +15353,6 @@ New usage of "eqeqan1dOLD" is discouraged (0 uses).
 New usage of "eqeqan1dOLDOLD" is discouraged (0 uses).
 New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqresr" is discouraged (4 uses).
-New usage of "eqsb3vOLD" is discouraged (0 uses).
 New usage of "eqsbc3OLD" is discouraged (0 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
 New usage of "equcomi1" is discouraged (1 uses).
@@ -18576,6 +18576,7 @@ Proof modification of "clel5OLD" is discouraged (46 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleljustALT2" is discouraged (25 steps).
 Proof modification of "clelsb3fOLD" is discouraged (65 steps).
+Proof modification of "clelsb3v" is discouraged (54 steps).
 Proof modification of "cleqfOLD" is discouraged (15 steps).
 Proof modification of "clmgmOLD" is discouraged (50 steps).
 Proof modification of "clwlkclwwlk2OLD" is discouraged (302 steps).
@@ -18892,7 +18893,6 @@ Proof modification of "eqeqan12dALT" is discouraged (23 steps).
 Proof modification of "eqeqan1dOLD" is discouraged (12 steps).
 Proof modification of "eqeqan1dOLDOLD" is discouraged (21 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
-Proof modification of "eqsb3vOLD" is discouraged (18 steps).
 Proof modification of "eqsbc3OLD" is discouraged (46 steps).
 Proof modification of "eqsbc3rVD" is discouraged (131 steps).
 Proof modification of "equcomi1" is discouraged (16 steps).
