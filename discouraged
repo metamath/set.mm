@@ -11829,12 +11829,20 @@
 "sb2ALT" is used by "sbequiALT".
 "sb2ALT" is used by "sbi1ALT".
 "sb2ALT" is used by "stdpc4ALT".
+"sb2v" is used by "equsb1vOLD".
+"sb2v" is used by "sb6OLD".
+"sb2v" is used by "sbi1v".
+"sb2v" is used by "stdpc4v".
 "sb2vALT" is used by "sb6ALT".
+"sb4" is used by "sbequiOLD".
+"sb4" is used by "sbi1OLD".
 "sb4ALT" is used by "dfsb2ALT".
 "sb4ALT" is used by "hbsb2ALT".
 "sb4ALT" is used by "sbequiALT".
 "sb4ALT" is used by "sbi1ALT".
 "sb4aALT" is used by "sb6fALT".
+"sb4v" is used by "sb6OLD".
+"sb4v" is used by "sbi1v".
 "sb4vALT" is used by "sb6ALT".
 "sb5ALT2" is used by "sb7fALT".
 "sb5fALT" is used by "sb7fALT".
@@ -17481,10 +17489,13 @@ New usage of "s2dmALT" is discouraged (0 uses).
 New usage of "sacgrOLD" is discouraged (0 uses).
 New usage of "sb1ALT" is discouraged (4 uses).
 New usage of "sb2ALT" is discouraged (7 uses).
+New usage of "sb2v" is discouraged (4 uses).
 New usage of "sb2vALT" is discouraged (1 uses).
 New usage of "sb2vOLD" is discouraged (0 uses).
+New usage of "sb4" is discouraged (2 uses).
 New usage of "sb4ALT" is discouraged (4 uses).
 New usage of "sb4aALT" is discouraged (1 uses).
+New usage of "sb4v" is discouraged (2 uses).
 New usage of "sb4vALT" is discouraged (1 uses).
 New usage of "sb4vOLD" is discouraged (0 uses).
 New usage of "sb5ALT" is discouraged (0 uses).
@@ -18467,7 +18478,7 @@ Proof modification of "bj-hbaeb" is discouraged (22 steps).
 Proof modification of "bj-hbaeb2" is discouraged (73 steps).
 Proof modification of "bj-hbntbi" is discouraged (31 steps).
 Proof modification of "bj-hbs1" is discouraged (27 steps).
-Proof modification of "bj-hbsb2av" is discouraged (32 steps).
+Proof modification of "bj-hbsb2av" is discouraged (35 steps).
 Proof modification of "bj-hbsb3" is discouraged (20 steps).
 Proof modification of "bj-hbsb3v" is discouraged (24 steps).
 Proof modification of "bj-imn3ani" is discouraged (18 steps).
@@ -18505,7 +18516,7 @@ Proof modification of "bj-rexvw" is discouraged (34 steps).
 Proof modification of "bj-ru" is discouraged (22 steps).
 Proof modification of "bj-ru0" is discouraged (50 steps).
 Proof modification of "bj-ru1" is discouraged (27 steps).
-Proof modification of "bj-sb3v" is discouraged (25 steps).
+Proof modification of "bj-sb3bv" is discouraged (25 steps).
 Proof modification of "bj-sb56" is discouraged (50 steps).
 Proof modification of "bj-sbab" is discouraged (17 steps).
 Proof modification of "bj-sbceqgALT" is discouraged (143 steps).
@@ -19585,10 +19596,13 @@ Proof modification of "s2dmALT" is discouraged (38 steps).
 Proof modification of "sacgrOLD" is discouraged (990 steps).
 Proof modification of "sb1ALT" is discouraged (13 steps).
 Proof modification of "sb2ALT" is discouraged (23 steps).
+Proof modification of "sb2v" is discouraged (16 steps).
 Proof modification of "sb2vALT" is discouraged (23 steps).
 Proof modification of "sb2vOLD" is discouraged (29 steps).
+Proof modification of "sb4" is discouraged (20 steps).
 Proof modification of "sb4ALT" is discouraged (28 steps).
 Proof modification of "sb4aALT" is discouraged (26 steps).
+Proof modification of "sb4v" is discouraged (16 steps).
 Proof modification of "sb4vALT" is discouraged (24 steps).
 Proof modification of "sb4vOLD" is discouraged (25 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
