@@ -12541,7 +12541,6 @@
 "stcltrlem1" is used by "stcltrlem2".
 "stcltrlem2" is used by "stcltrthi".
 "stdpc4ALT" is used by "sbftALT".
-"stdpc4v" is used by "bj-sbfvv".
 "stdpc4v" is used by "sbftv".
 "stdpc4v" is used by "spsbimvOLD".
 "stge0" is used by "stle0i".
@@ -17786,7 +17785,7 @@ New usage of "stcltrlem2" is discouraged (1 uses).
 New usage of "stcltrthi" is discouraged (0 uses).
 New usage of "stdpc4ALT" is discouraged (1 uses).
 New usage of "stdpc4OLD" is discouraged (0 uses).
-New usage of "stdpc4v" is discouraged (3 uses).
+New usage of "stdpc4v" is discouraged (2 uses).
 New usage of "stge0" is discouraged (1 uses).
 New usage of "stge1i" is discouraged (1 uses).
 New usage of "sthil" is discouraged (2 uses).
@@ -18425,6 +18424,7 @@ Proof modification of "bj-df-nul" is discouraged (11 steps).
 Proof modification of "bj-df-v" is discouraged (29 steps).
 Proof modification of "bj-dfclel" is discouraged (27 steps).
 Proof modification of "bj-dfcleq" is discouraged (27 steps).
+Proof modification of "bj-dfnnf2" is discouraged (34 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
 Proof modification of "bj-dral1v" is discouraged (36 steps).
 Proof modification of "bj-drex1v" is discouraged (42 steps).
@@ -18482,10 +18482,12 @@ Proof modification of "bj-ndxid" is discouraged (28 steps).
 Proof modification of "bj-nfab1" is discouraged (10 steps).
 Proof modification of "bj-nfcsym" is discouraged (38 steps).
 Proof modification of "bj-nfeel2" is discouraged (17 steps).
+Proof modification of "bj-nfnnfTEMP" is discouraged (20 steps).
 Proof modification of "bj-nfs1" is discouraged (16 steps).
 Proof modification of "bj-nfs1v" is discouraged (10 steps).
 Proof modification of "bj-nfsab1" is discouraged (12 steps).
 Proof modification of "bj-nimn" is discouraged (8 steps).
+Proof modification of "bj-nnfnfTEMP" is discouraged (20 steps).
 Proof modification of "bj-nul" is discouraged (28 steps).
 Proof modification of "bj-nuliota" is discouraged (73 steps).
 Proof modification of "bj-nuliotaALT" is discouraged (60 steps).
@@ -18510,7 +18512,6 @@ Proof modification of "bj-sb56" is discouraged (50 steps).
 Proof modification of "bj-sbab" is discouraged (17 steps).
 Proof modification of "bj-sbceqgALT" is discouraged (143 steps).
 Proof modification of "bj-sbeqALT" is discouraged (44 steps).
-Proof modification of "bj-sbfvv" is discouraged (32 steps).
 Proof modification of "bj-sbidmOLD" is discouraged (41 steps).
 Proof modification of "bj-spcimdv" is discouraged (56 steps).
 Proof modification of "bj-spcimdvv" is discouraged (56 steps).
@@ -18531,8 +18532,7 @@ Proof modification of "bj-vecssmod" is discouraged (18 steps).
 Proof modification of "bj-vecssmodel" is discouraged (5 steps).
 Proof modification of "bj-vexw" is discouraged (14 steps).
 Proof modification of "bj-vexwt" is discouraged (22 steps).
-Proof modification of "bj-vjust" is discouraged (51 steps).
-Proof modification of "bj-vjust2" is discouraged (44 steps).
+Proof modification of "bj-vjust" is discouraged (44 steps).
 Proof modification of "bj-vtocl" is discouraged (12 steps).
 Proof modification of "bj-vtoclf" is discouraged (29 steps).
 Proof modification of "bj-vtoclg" is discouraged (22 steps).
