@@ -8116,6 +8116,30 @@
 "imbi13" is used by "trsbc".
 "imbi13" is used by "trsbcVD".
 "impexpd" is used by "impexpdcom".
+"impsingle" is used by "impsingle-step15".
+"impsingle" is used by "impsingle-step18".
+"impsingle" is used by "impsingle-step20".
+"impsingle" is used by "impsingle-step22".
+"impsingle" is used by "impsingle-step4".
+"impsingle" is used by "impsingle-step8".
+"impsingle-step15" is used by "impsingle-step18".
+"impsingle-step15" is used by "impsingle-step21".
+"impsingle-step15" is used by "impsingle-step25".
+"impsingle-step18" is used by "impsingle-step19".
+"impsingle-step19" is used by "impsingle-step20".
+"impsingle-step20" is used by "impsingle-step21".
+"impsingle-step20" is used by "impsingle-step25".
+"impsingle-step21" is used by "impsingle-imim1".
+"impsingle-step22" is used by "impsingle-peirce".
+"impsingle-step22" is used by "impsingle-step25".
+"impsingle-step25" is used by "impsingle-imim1".
+"impsingle-step25" is used by "impsingle-peirce".
+"impsingle-step4" is used by "impsingle-step22".
+"impsingle-step8" is used by "impsingle-ax1".
+"impsingle-step8" is used by "impsingle-step15".
+"impsingle-step8" is used by "impsingle-step18".
+"impsingle-step8" is used by "impsingle-step20".
+"impsingle-step8" is used by "impsingle-step25".
 "imsdf" is used by "imsmetlem".
 "imsdf" is used by "sspims".
 "imsdval" is used by "blocnilem".
@@ -16042,6 +16066,19 @@ New usage of "imp5aOLD" is discouraged (0 uses).
 New usage of "impcomdOLD" is discouraged (0 uses).
 New usage of "impexpd" is discouraged (1 uses).
 New usage of "impexpdcom" is discouraged (0 uses).
+New usage of "impsingle" is discouraged (6 uses).
+New usage of "impsingle-ax1" is discouraged (0 uses).
+New usage of "impsingle-imim1" is discouraged (0 uses).
+New usage of "impsingle-peirce" is discouraged (0 uses).
+New usage of "impsingle-step15" is discouraged (3 uses).
+New usage of "impsingle-step18" is discouraged (1 uses).
+New usage of "impsingle-step19" is discouraged (1 uses).
+New usage of "impsingle-step20" is discouraged (2 uses).
+New usage of "impsingle-step21" is discouraged (1 uses).
+New usage of "impsingle-step22" is discouraged (2 uses).
+New usage of "impsingle-step25" is discouraged (2 uses).
+New usage of "impsingle-step4" is discouraged (1 uses).
+New usage of "impsingle-step8" is discouraged (5 uses).
 New usage of "imsdf" is discouraged (2 uses).
 New usage of "imsdval" is discouraged (14 uses).
 New usage of "imsdval2" is discouraged (3 uses).
@@ -17871,6 +17908,7 @@ New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
 New usage of "symdif2OLD" is discouraged (0 uses).
 New usage of "symdifassOLD" is discouraged (0 uses).
+New usage of "tarski-bernays-ax2" is discouraged (0 uses).
 New usage of "tb-ax1" is discouraged (3 uses).
 New usage of "tb-ax2" is discouraged (1 uses).
 New usage of "tb-ax3" is discouraged (2 uses).
@@ -19213,6 +19251,19 @@ Proof modification of "imp5aOLD" is discouraged (19 steps).
 Proof modification of "impcomdOLD" is discouraged (18 steps).
 Proof modification of "impexpd" is discouraged (16 steps).
 Proof modification of "impexpdcom" is discouraged (32 steps).
+Proof modification of "impsingle" is discouraged (26 steps).
+Proof modification of "impsingle-ax1" is discouraged (21 steps).
+Proof modification of "impsingle-imim1" is discouraged (49 steps).
+Proof modification of "impsingle-peirce" is discouraged (17 steps).
+Proof modification of "impsingle-step15" is discouraged (130 steps).
+Proof modification of "impsingle-step18" is discouraged (70 steps).
+Proof modification of "impsingle-step19" is discouraged (69 steps).
+Proof modification of "impsingle-step20" is discouraged (134 steps).
+Proof modification of "impsingle-step21" is discouraged (31 steps).
+Proof modification of "impsingle-step22" is discouraged (50 steps).
+Proof modification of "impsingle-step25" is discouraged (45 steps).
+Proof modification of "impsingle-step4" is discouraged (75 steps).
+Proof modification of "impsingle-step8" is discouraged (133 steps).
 Proof modification of "in1" is discouraged (11 steps).
 Proof modification of "in2" is discouraged (10 steps).
 Proof modification of "in2an" is discouraged (18 steps).
@@ -19764,6 +19815,7 @@ Proof modification of "syl5impVD" is discouraged (57 steps).
 Proof modification of "symdif2OLD" is discouraged (59 steps).
 Proof modification of "symdifassOLD" is discouraged (118 steps).
 Proof modification of "symrefref3" is discouraged (75 steps).
+Proof modification of "tarski-bernays-ax2" is discouraged (557 steps).
 Proof modification of "tb-ax1" is discouraged (4 steps).
 Proof modification of "tb-ax2" is discouraged (3 steps).
 Proof modification of "tb-ax3" is discouraged (3 steps).
