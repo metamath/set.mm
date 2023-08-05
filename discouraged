@@ -10172,7 +10172,6 @@
 "numclwlk2lem2fvOLD" is used by "numclwlk2lem2f1oOLD".
 "numclwwlk1lem2f1OLD" is used by "numclwwlk1lem2f1oOLD".
 "numclwwlk1lem2f1oOLD" is used by "numclwwlk1lem2OLD".
-"numclwwlk1lem2f1oOLD" is used by "numclwwlk1lem2OLDOLD".
 "numclwwlk1lem2fOLD" is used by "numclwwlk1lem2f1OLD".
 "numclwwlk1lem2fOLD" is used by "numclwwlk1lem2foOLD".
 "numclwwlk1lem2foOLD" is used by "numclwwlk1lem2f1oOLD".
@@ -13224,21 +13223,11 @@
 "wl-mps" is used by "wl-syls1".
 "wl-sbcom2d-lem1" is used by "wl-sbcom2d".
 "wl-sbcom2d-lem2" is used by "wl-sbcom2d".
-"wlknwwlksnbijOLD" is used by "wlksnwwlknvbijOLD".
-"wlknwwlksnfunOLD" is used by "wlknwwlksninjOLD".
-"wlknwwlksnfunOLD" is used by "wlknwwlksnsurOLD".
-"wlknwwlksninjOLD" is used by "wlknwwlksnbijOLD".
-"wlknwwlksnsurOLD" is used by "wlknwwlksnbijOLD".
 "wlkresOLD" is used by "eupthresOLD".
 "wlkresOLD" is used by "trlresOLD".
 "wlkreslem0OLD" is used by "trlreslemOLD".
 "wlkreslem0OLD" is used by "wlkresOLD".
 "wlkreslemOLD" is used by "wlkresOLD".
-"wlkwwlkbijOLD" is used by "wlkwwlkbij2OLD".
-"wlkwwlkfunOLD" is used by "wlkwwlkinjOLD".
-"wlkwwlkfunOLD" is used by "wlkwwlksurOLD".
-"wlkwwlkinjOLD" is used by "wlkwwlkbijOLD".
-"wlkwwlksurOLD" is used by "wlkwwlkbijOLD".
 "wrdcctswrdOLD" is used by "2clwwlk2clwwlkOLD".
 "wrdcctswrdOLD" is used by "lencctswrdOLD".
 "wrdnfiOLD" is used by "clwwlknfiOLD".
@@ -16062,7 +16051,6 @@ New usage of "imaelshi" is discouraged (1 uses).
 New usage of "imbi12VD" is discouraged (0 uses).
 New usage of "imbi13" is discouraged (2 uses).
 New usage of "imbi13VD" is discouraged (0 uses).
-New usage of "imp5aOLD" is discouraged (0 uses).
 New usage of "impcomdOLD" is discouraged (0 uses).
 New usage of "impexpd" is discouraged (1 uses).
 New usage of "impexpdcom" is discouraged (0 uses).
@@ -16871,9 +16859,8 @@ New usage of "numclwlk2lem2f1oOLD" is discouraged (1 uses).
 New usage of "numclwlk2lem2fOLD" is discouraged (1 uses).
 New usage of "numclwlk2lem2fvOLD" is discouraged (1 uses).
 New usage of "numclwwlk1lem2OLD" is discouraged (0 uses).
-New usage of "numclwwlk1lem2OLDOLD" is discouraged (0 uses).
 New usage of "numclwwlk1lem2f1OLD" is discouraged (1 uses).
-New usage of "numclwwlk1lem2f1oOLD" is discouraged (2 uses).
+New usage of "numclwwlk1lem2f1oOLD" is discouraged (1 uses).
 New usage of "numclwwlk1lem2fOLD" is discouraged (2 uses).
 New usage of "numclwwlk1lem2foOLD" is discouraged (1 uses).
 New usage of "numclwwlk1lem2foaOLD" is discouraged (0 uses).
@@ -18103,21 +18090,10 @@ New usage of "wl-section-impchain" is discouraged (0 uses).
 New usage of "wl-section-prop" is discouraged (0 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
-New usage of "wlknwwlksnbij2OLD" is discouraged (0 uses).
-New usage of "wlknwwlksnbijOLD" is discouraged (1 uses).
-New usage of "wlknwwlksnfunOLD" is discouraged (2 uses).
-New usage of "wlknwwlksninjOLD" is discouraged (1 uses).
-New usage of "wlknwwlksnsurOLD" is discouraged (1 uses).
 New usage of "wlkresOLD" is discouraged (2 uses).
 New usage of "wlkreslem0OLD" is discouraged (2 uses).
 New usage of "wlkreslem0OLDOLD" is discouraged (0 uses).
 New usage of "wlkreslemOLD" is discouraged (1 uses).
-New usage of "wlksnwwlknvbijOLD" is discouraged (0 uses).
-New usage of "wlkwwlkbij2OLD" is discouraged (0 uses).
-New usage of "wlkwwlkbijOLD" is discouraged (1 uses).
-New usage of "wlkwwlkfunOLD" is discouraged (2 uses).
-New usage of "wlkwwlkinjOLD" is discouraged (1 uses).
-New usage of "wlkwwlksurOLD" is discouraged (1 uses).
 New usage of "wrd2indOLD" is discouraged (0 uses).
 New usage of "wrdcctswrdOLD" is discouraged (2 uses).
 New usage of "wrdeqs1catOLD" is discouraged (0 uses).
@@ -19247,7 +19223,6 @@ Proof modification of "imaexALTV" is discouraged (74 steps).
 Proof modification of "imbi12VD" is discouraged (121 steps).
 Proof modification of "imbi13" is discouraged (34 steps).
 Proof modification of "imbi13VD" is discouraged (67 steps).
-Proof modification of "imp5aOLD" is discouraged (19 steps).
 Proof modification of "impcomdOLD" is discouraged (18 steps).
 Proof modification of "impexpd" is discouraged (16 steps).
 Proof modification of "impexpdcom" is discouraged (32 steps).
@@ -19471,7 +19446,6 @@ Proof modification of "numclwlk2lem2f1oOLD" is discouraged (848 steps).
 Proof modification of "numclwlk2lem2fOLD" is discouraged (814 steps).
 Proof modification of "numclwlk2lem2fvOLD" is discouraged (75 steps).
 Proof modification of "numclwwlk1lem2OLD" is discouraged (114 steps).
-Proof modification of "numclwwlk1lem2OLDOLD" is discouraged (192 steps).
 Proof modification of "numclwwlk1lem2f1OLD" is discouraged (906 steps).
 Proof modification of "numclwwlk1lem2f1oOLD" is discouraged (69 steps).
 Proof modification of "numclwwlk1lem2fOLD" is discouraged (104 steps).
@@ -19972,21 +19946,10 @@ Proof modification of "wl-section-impchain" is discouraged (1 steps).
 Proof modification of "wl-section-prop" is discouraged (1 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
-Proof modification of "wlknwwlksnbij2OLD" is discouraged (77 steps).
-Proof modification of "wlknwwlksnbijOLD" is discouraged (46 steps).
-Proof modification of "wlknwwlksnfunOLD" is discouraged (90 steps).
-Proof modification of "wlknwwlksninjOLD" is discouraged (234 steps).
-Proof modification of "wlknwwlksnsurOLD" is discouraged (369 steps).
 Proof modification of "wlkresOLD" is discouraged (1023 steps).
 Proof modification of "wlkreslem0OLD" is discouraged (46 steps).
 Proof modification of "wlkreslem0OLDOLD" is discouraged (48 steps).
 Proof modification of "wlkreslemOLD" is discouraged (227 steps).
-Proof modification of "wlksnwwlknvbijOLD" is discouraged (304 steps).
-Proof modification of "wlkwwlkbij2OLD" is discouraged (237 steps).
-Proof modification of "wlkwwlkbijOLD" is discouraged (55 steps).
-Proof modification of "wlkwwlkfunOLD" is discouraged (192 steps).
-Proof modification of "wlkwwlkinjOLD" is discouraged (348 steps).
-Proof modification of "wlkwwlksurOLD" is discouraged (490 steps).
 Proof modification of "wrd2indOLD" is discouraged (1615 steps).
 Proof modification of "wrdcctswrdOLD" is discouraged (102 steps).
 Proof modification of "wrdeqs1catOLD" is discouraged (191 steps).
