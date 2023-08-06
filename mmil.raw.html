@@ -1361,12 +1361,19 @@ equivalent (in the absence of excluded middle).</TD>
 <TD>~ mo2r , ~ mo3 </TD>
 </TR>
 
-<TR>
-  <TD>df-eu , dfeu , eu6</TD>
-  <TD>~ df-eu , ~ eu5</TD>
-  <TD>The same statements are present in both but the names are
-  different because the definitions are different.</TD>
-</TR>
+<tr>
+  <td>df-eu , dfeu</td>
+  <td>~ eu5</td>
+  <td>Although this is a definition in set.mm and a theorem
+  in iset.mm it is otherwise the same (with a different name).</td>
+</tr>
+
+<tr>
+  <td>eu6</td>
+  <td>~ df-eu</td>
+  <td>Although this is a definition in iset.mm and a theorem
+  in set.mm it is otherwise the same (with a different name).</td>
+</tr>
 
 <TR>
   <TD>nfabd2</TD>
@@ -2383,6 +2390,12 @@ there is less need for this convenience theorem.</TD>
 <tr>
   <td>xpeq0</td>
   <td>~ xpeq0r , ~ sqxpeq0</td>
+</tr>
+
+<tr>
+  <td>difxp</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on ianor</td>
 </tr>
 
 <TR>
@@ -5649,6 +5662,11 @@ divdird, divsubdird, div11d</TD>
 <TD>rereccld , redivcld</TD>
 <TD>~ rerecclapd , ~ redivclapd </TD>
 </TR>
+
+<tr>
+  <td>diveq1bd</td>
+  <td>~ diveqap1bd</td>
+</tr>
 
 <TR>
   <TD>div2sub , div2subd</TD>
@@ -9921,15 +9939,78 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-tx and all theorems using the binary topological product syntax (tX)</td>
+  <td>df-lly and all theorems using the Locally syntax</td>
   <td><i>none</i></td>
-  <td>presumably could be added</td>
 </tr>
 
 <tr>
   <td>df-xko and all theorems using the compact-open topology syntax (^ko)</td>
   <td><i>none</i></td>
   <td>not clear what is possible here</td>
+</tr>
+
+<tr>
+  <td>ptval</td>
+  <td><i>none</i></td>
+  <td>This would need more extensive development of theorems related
+  to the Xt_ syntax (not just ~ df-pt itself).</td>
+</tr>
+
+<tr>
+  <td>ptpjpre1</td>
+  <td><i>none</i></td>
+  <td>Perhaps would be provable in the case where ` A ` has
+  decidable equality.</td>
+</tr>
+
+<tr>
+  <td>elpt , elptr , elptr2 , ptbasid , ptuni2 , ptbasin , ptbasin2 ,
+  ptbas , ptpjpre2 , ptbasfi , pttop , ptopn , ptopn2</td>
+  <td><i>none</i></td>
+  <td>Although some parts of these product topology theorems
+  may be intuitionizable, it isn't clear doing so would produce
+  a set of theorems which function as desired.</td>
+</tr>
+
+<tr>
+  <td>txcld</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on difxp</td>
+</tr>
+
+<tr>
+  <td>txcls</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on txcld</td>
+</tr>
+
+<tr>
+  <td>txcnpi</td>
+  <td><i>none</i></td>
+  <td>Should be provable (via ~ icnpimaex and ~ cnpf2 ) but may
+  need an additional ` L e. Top ` hypothesis.</td>
+</tr>
+
+<tr>
+  <td>ptcld</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof depends on pttop , boxcutc , ptopn2 , and
+  riincld</td>
+</tr>
+
+<tr>
+  <td>dfac14</td>
+  <td><i>none</i></td>
+  <td>The left hand side implies excluded middle by ~ acexmid ;
+  we could see whether the proof that the right hand side implies choice
+  is also valid without excluded middle.</td>
+</tr>
+
+<tr>
+  <td>txindis</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on excluded middle, indistop , and
+  indisuni .</td>
 </tr>
 
 <tr>
@@ -10179,6 +10260,19 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>df-dvn and all theorems mentioning iterated derivative (Dn)</td>
+  <td><i>none</i></td>
+  <td>should be easily intuitionizable</td>
+</tr>
+
+<tr>
+  <td>df-cpn and all theorems mentioning -times continuously
+  differentiable functions (C^n)</td>
+  <td><i>none</i></td>
+  <td>should be easily intuitionizable</td>
+</tr>
+
+<tr>
   <td>reldv</td>
   <td>~ reldvg</td>
 </tr>
@@ -10311,6 +10405,68 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>dvfg</td>
   <td>~ dvfgg</td>
+</tr>
+
+<tr>
+  <td>dvf</td>
+  <td>~ dvfpm</td>
+</tr>
+
+<tr>
+  <td>dvfcn</td>
+  <td>~ dvfcnpm</td>
+</tr>
+
+<tr>
+  <td>dvres</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on ntrrest and limcres .
+  It may be worth seeing if it is easier to prove
+  the ` S e. { RR , CC } ` case.</td>
+</tr>
+
+<tr>
+  <td>dvres2</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on restntr</td>
+</tr>
+
+<tr>
+  <td>dvres3</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on dvres2</td>
+</tr>
+
+<tr>
+  <td>dvres3a</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on dvres2</td>
+</tr>
+
+<tr>
+  <td>dvidlem</td>
+  <td>~ dvidlemap</td>
+</tr>
+
+<tr>
+  <td>dvcnp</td>
+  <td><i>none</i></td>
+  <td>would appear to rely on decidable equality of real
+  numbers</td>
+</tr>
+
+<tr>
+  <td>dvcnp2</td>
+  <td><i>none</i></td>
+  <td>The most obviously missing thing in the set.mm proof
+  is the binary topological product syntax (tX) and several theorems
+  which use it.</td>
+</tr>
+
+<tr>
+  <td>dvcn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on dvcnp2</td>
 </tr>
 
 </TABLE>
