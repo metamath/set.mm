@@ -17550,6 +17550,7 @@ New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
 New usage of "sbcrexgOLD" is discouraged (2 uses).
 New usage of "sbcssgVD" is discouraged (0 uses).
+New usage of "sbelxOLD" is discouraged (0 uses).
 New usage of "sbequ12ALT" is discouraged (2 uses).
 New usage of "sbequ1ALT" is discouraged (4 uses).
 New usage of "sbequ1OLD" is discouraged (0 uses).
@@ -19657,6 +19658,7 @@ Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
 Proof modification of "sbcrexgOLD" is discouraged (77 steps).
 Proof modification of "sbcssgVD" is discouraged (229 steps).
+Proof modification of "sbelxOLD" is discouraged (24 steps).
 Proof modification of "sbequ12ALT" is discouraged (18 steps).
 Proof modification of "sbequ1ALT" is discouraged (24 steps).
 Proof modification of "sbequ1OLD" is discouraged (30 steps).
