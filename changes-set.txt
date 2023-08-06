@@ -20,13 +20,13 @@ proposed  sylbid    biimtrd     etc.
 proposed  sylbird   biimtrrd    etc.
 proposed  syl5*     *trid       (syl5bi -> biimtrid; syl5eqel -> eqeltrid;etc.)
 proposed  syl6*     *trdi
-proposed  *mpt*     *mpf* or *mptf* (maps-to for functions)
-proposed  *mpt2*    *mpo* or *mpto* (maps-to for operations)
+proposed  *mpt2*    *mpo*       (renaming process underway)
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 6-Aug-23 df-mpt2   df-mpo
 31-Jul-23 sbcgfi    [same]      moved from GM's mathbox to main set.mm
 31-Jul-23 csbgfi    [same]      moved from GM's mathbox to main set.mm
 31-Jul-23 sbceqi    [same]      moved from GM's mathbox to main set.mm
