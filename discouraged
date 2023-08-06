@@ -8116,6 +8116,30 @@
 "imbi13" is used by "trsbc".
 "imbi13" is used by "trsbcVD".
 "impexpd" is used by "impexpdcom".
+"impsingle" is used by "impsingle-step15".
+"impsingle" is used by "impsingle-step18".
+"impsingle" is used by "impsingle-step20".
+"impsingle" is used by "impsingle-step22".
+"impsingle" is used by "impsingle-step4".
+"impsingle" is used by "impsingle-step8".
+"impsingle-step15" is used by "impsingle-step18".
+"impsingle-step15" is used by "impsingle-step21".
+"impsingle-step15" is used by "impsingle-step25".
+"impsingle-step18" is used by "impsingle-step19".
+"impsingle-step19" is used by "impsingle-step20".
+"impsingle-step20" is used by "impsingle-step21".
+"impsingle-step20" is used by "impsingle-step25".
+"impsingle-step21" is used by "impsingle-imim1".
+"impsingle-step22" is used by "impsingle-peirce".
+"impsingle-step22" is used by "impsingle-step25".
+"impsingle-step25" is used by "impsingle-imim1".
+"impsingle-step25" is used by "impsingle-peirce".
+"impsingle-step4" is used by "impsingle-step22".
+"impsingle-step8" is used by "impsingle-ax1".
+"impsingle-step8" is used by "impsingle-step15".
+"impsingle-step8" is used by "impsingle-step18".
+"impsingle-step8" is used by "impsingle-step20".
+"impsingle-step8" is used by "impsingle-step25".
 "imsdf" is used by "imsmetlem".
 "imsdf" is used by "sspims".
 "imsdval" is used by "blocnilem".
@@ -10148,7 +10172,6 @@
 "numclwlk2lem2fvOLD" is used by "numclwlk2lem2f1oOLD".
 "numclwwlk1lem2f1OLD" is used by "numclwwlk1lem2f1oOLD".
 "numclwwlk1lem2f1oOLD" is used by "numclwwlk1lem2OLD".
-"numclwwlk1lem2f1oOLD" is used by "numclwwlk1lem2OLDOLD".
 "numclwwlk1lem2fOLD" is used by "numclwwlk1lem2f1OLD".
 "numclwwlk1lem2fOLD" is used by "numclwwlk1lem2foOLD".
 "numclwwlk1lem2foOLD" is used by "numclwwlk1lem2f1oOLD".
@@ -13200,21 +13223,11 @@
 "wl-mps" is used by "wl-syls1".
 "wl-sbcom2d-lem1" is used by "wl-sbcom2d".
 "wl-sbcom2d-lem2" is used by "wl-sbcom2d".
-"wlknwwlksnbijOLD" is used by "wlksnwwlknvbijOLD".
-"wlknwwlksnfunOLD" is used by "wlknwwlksninjOLD".
-"wlknwwlksnfunOLD" is used by "wlknwwlksnsurOLD".
-"wlknwwlksninjOLD" is used by "wlknwwlksnbijOLD".
-"wlknwwlksnsurOLD" is used by "wlknwwlksnbijOLD".
 "wlkresOLD" is used by "eupthresOLD".
 "wlkresOLD" is used by "trlresOLD".
 "wlkreslem0OLD" is used by "trlreslemOLD".
 "wlkreslem0OLD" is used by "wlkresOLD".
 "wlkreslemOLD" is used by "wlkresOLD".
-"wlkwwlkbijOLD" is used by "wlkwwlkbij2OLD".
-"wlkwwlkfunOLD" is used by "wlkwwlkinjOLD".
-"wlkwwlkfunOLD" is used by "wlkwwlksurOLD".
-"wlkwwlkinjOLD" is used by "wlkwwlkbijOLD".
-"wlkwwlksurOLD" is used by "wlkwwlkbijOLD".
 "wrdcctswrdOLD" is used by "2clwwlk2clwwlkOLD".
 "wrdcctswrdOLD" is used by "lencctswrdOLD".
 "wrdnfiOLD" is used by "clwwlknfiOLD".
@@ -16038,10 +16051,22 @@ New usage of "imaelshi" is discouraged (1 uses).
 New usage of "imbi12VD" is discouraged (0 uses).
 New usage of "imbi13" is discouraged (2 uses).
 New usage of "imbi13VD" is discouraged (0 uses).
-New usage of "imp5aOLD" is discouraged (0 uses).
 New usage of "impcomdOLD" is discouraged (0 uses).
 New usage of "impexpd" is discouraged (1 uses).
 New usage of "impexpdcom" is discouraged (0 uses).
+New usage of "impsingle" is discouraged (6 uses).
+New usage of "impsingle-ax1" is discouraged (0 uses).
+New usage of "impsingle-imim1" is discouraged (0 uses).
+New usage of "impsingle-peirce" is discouraged (0 uses).
+New usage of "impsingle-step15" is discouraged (3 uses).
+New usage of "impsingle-step18" is discouraged (1 uses).
+New usage of "impsingle-step19" is discouraged (1 uses).
+New usage of "impsingle-step20" is discouraged (2 uses).
+New usage of "impsingle-step21" is discouraged (1 uses).
+New usage of "impsingle-step22" is discouraged (2 uses).
+New usage of "impsingle-step25" is discouraged (2 uses).
+New usage of "impsingle-step4" is discouraged (1 uses).
+New usage of "impsingle-step8" is discouraged (5 uses).
 New usage of "imsdf" is discouraged (2 uses).
 New usage of "imsdval" is discouraged (14 uses).
 New usage of "imsdval2" is discouraged (3 uses).
@@ -16834,9 +16859,8 @@ New usage of "numclwlk2lem2f1oOLD" is discouraged (1 uses).
 New usage of "numclwlk2lem2fOLD" is discouraged (1 uses).
 New usage of "numclwlk2lem2fvOLD" is discouraged (1 uses).
 New usage of "numclwwlk1lem2OLD" is discouraged (0 uses).
-New usage of "numclwwlk1lem2OLDOLD" is discouraged (0 uses).
 New usage of "numclwwlk1lem2f1OLD" is discouraged (1 uses).
-New usage of "numclwwlk1lem2f1oOLD" is discouraged (2 uses).
+New usage of "numclwwlk1lem2f1oOLD" is discouraged (1 uses).
 New usage of "numclwwlk1lem2fOLD" is discouraged (2 uses).
 New usage of "numclwwlk1lem2foOLD" is discouraged (1 uses).
 New usage of "numclwwlk1lem2foaOLD" is discouraged (0 uses).
@@ -17526,6 +17550,7 @@ New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
 New usage of "sbcrexgOLD" is discouraged (2 uses).
 New usage of "sbcssgVD" is discouraged (0 uses).
+New usage of "sbelxOLD" is discouraged (0 uses).
 New usage of "sbequ12ALT" is discouraged (2 uses).
 New usage of "sbequ1ALT" is discouraged (4 uses).
 New usage of "sbequ1OLD" is discouraged (0 uses).
@@ -17871,6 +17896,7 @@ New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
 New usage of "symdif2OLD" is discouraged (0 uses).
 New usage of "symdifassOLD" is discouraged (0 uses).
+New usage of "tarski-bernays-ax2" is discouraged (0 uses).
 New usage of "tb-ax1" is discouraged (3 uses).
 New usage of "tb-ax2" is discouraged (1 uses).
 New usage of "tb-ax3" is discouraged (2 uses).
@@ -18065,21 +18091,10 @@ New usage of "wl-section-impchain" is discouraged (0 uses).
 New usage of "wl-section-prop" is discouraged (0 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
-New usage of "wlknwwlksnbij2OLD" is discouraged (0 uses).
-New usage of "wlknwwlksnbijOLD" is discouraged (1 uses).
-New usage of "wlknwwlksnfunOLD" is discouraged (2 uses).
-New usage of "wlknwwlksninjOLD" is discouraged (1 uses).
-New usage of "wlknwwlksnsurOLD" is discouraged (1 uses).
 New usage of "wlkresOLD" is discouraged (2 uses).
 New usage of "wlkreslem0OLD" is discouraged (2 uses).
 New usage of "wlkreslem0OLDOLD" is discouraged (0 uses).
 New usage of "wlkreslemOLD" is discouraged (1 uses).
-New usage of "wlksnwwlknvbijOLD" is discouraged (0 uses).
-New usage of "wlkwwlkbij2OLD" is discouraged (0 uses).
-New usage of "wlkwwlkbijOLD" is discouraged (1 uses).
-New usage of "wlkwwlkfunOLD" is discouraged (2 uses).
-New usage of "wlkwwlkinjOLD" is discouraged (1 uses).
-New usage of "wlkwwlksurOLD" is discouraged (1 uses).
 New usage of "wrd2indOLD" is discouraged (0 uses).
 New usage of "wrdcctswrdOLD" is discouraged (2 uses).
 New usage of "wrdeqs1catOLD" is discouraged (0 uses).
@@ -19209,10 +19224,22 @@ Proof modification of "imaexALTV" is discouraged (74 steps).
 Proof modification of "imbi12VD" is discouraged (121 steps).
 Proof modification of "imbi13" is discouraged (34 steps).
 Proof modification of "imbi13VD" is discouraged (67 steps).
-Proof modification of "imp5aOLD" is discouraged (19 steps).
 Proof modification of "impcomdOLD" is discouraged (18 steps).
 Proof modification of "impexpd" is discouraged (16 steps).
 Proof modification of "impexpdcom" is discouraged (32 steps).
+Proof modification of "impsingle" is discouraged (26 steps).
+Proof modification of "impsingle-ax1" is discouraged (21 steps).
+Proof modification of "impsingle-imim1" is discouraged (49 steps).
+Proof modification of "impsingle-peirce" is discouraged (17 steps).
+Proof modification of "impsingle-step15" is discouraged (130 steps).
+Proof modification of "impsingle-step18" is discouraged (70 steps).
+Proof modification of "impsingle-step19" is discouraged (69 steps).
+Proof modification of "impsingle-step20" is discouraged (134 steps).
+Proof modification of "impsingle-step21" is discouraged (31 steps).
+Proof modification of "impsingle-step22" is discouraged (50 steps).
+Proof modification of "impsingle-step25" is discouraged (45 steps).
+Proof modification of "impsingle-step4" is discouraged (75 steps).
+Proof modification of "impsingle-step8" is discouraged (133 steps).
 Proof modification of "in1" is discouraged (11 steps).
 Proof modification of "in2" is discouraged (10 steps).
 Proof modification of "in2an" is discouraged (18 steps).
@@ -19420,7 +19447,6 @@ Proof modification of "numclwlk2lem2f1oOLD" is discouraged (848 steps).
 Proof modification of "numclwlk2lem2fOLD" is discouraged (814 steps).
 Proof modification of "numclwlk2lem2fvOLD" is discouraged (75 steps).
 Proof modification of "numclwwlk1lem2OLD" is discouraged (114 steps).
-Proof modification of "numclwwlk1lem2OLDOLD" is discouraged (192 steps).
 Proof modification of "numclwwlk1lem2f1OLD" is discouraged (906 steps).
 Proof modification of "numclwwlk1lem2f1oOLD" is discouraged (69 steps).
 Proof modification of "numclwwlk1lem2fOLD" is discouraged (104 steps).
@@ -19632,6 +19658,7 @@ Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
 Proof modification of "sbcrexgOLD" is discouraged (77 steps).
 Proof modification of "sbcssgVD" is discouraged (229 steps).
+Proof modification of "sbelxOLD" is discouraged (24 steps).
 Proof modification of "sbequ12ALT" is discouraged (18 steps).
 Proof modification of "sbequ1ALT" is discouraged (24 steps).
 Proof modification of "sbequ1OLD" is discouraged (30 steps).
@@ -19764,6 +19791,7 @@ Proof modification of "syl5impVD" is discouraged (57 steps).
 Proof modification of "symdif2OLD" is discouraged (59 steps).
 Proof modification of "symdifassOLD" is discouraged (118 steps).
 Proof modification of "symrefref3" is discouraged (75 steps).
+Proof modification of "tarski-bernays-ax2" is discouraged (557 steps).
 Proof modification of "tb-ax1" is discouraged (4 steps).
 Proof modification of "tb-ax2" is discouraged (3 steps).
 Proof modification of "tb-ax3" is discouraged (3 steps).
@@ -19920,21 +19948,10 @@ Proof modification of "wl-section-impchain" is discouraged (1 steps).
 Proof modification of "wl-section-prop" is discouraged (1 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
-Proof modification of "wlknwwlksnbij2OLD" is discouraged (77 steps).
-Proof modification of "wlknwwlksnbijOLD" is discouraged (46 steps).
-Proof modification of "wlknwwlksnfunOLD" is discouraged (90 steps).
-Proof modification of "wlknwwlksninjOLD" is discouraged (234 steps).
-Proof modification of "wlknwwlksnsurOLD" is discouraged (369 steps).
 Proof modification of "wlkresOLD" is discouraged (1023 steps).
 Proof modification of "wlkreslem0OLD" is discouraged (46 steps).
 Proof modification of "wlkreslem0OLDOLD" is discouraged (48 steps).
 Proof modification of "wlkreslemOLD" is discouraged (227 steps).
-Proof modification of "wlksnwwlknvbijOLD" is discouraged (304 steps).
-Proof modification of "wlkwwlkbij2OLD" is discouraged (237 steps).
-Proof modification of "wlkwwlkbijOLD" is discouraged (55 steps).
-Proof modification of "wlkwwlkfunOLD" is discouraged (192 steps).
-Proof modification of "wlkwwlkinjOLD" is discouraged (348 steps).
-Proof modification of "wlkwwlksurOLD" is discouraged (490 steps).
 Proof modification of "wrd2indOLD" is discouraged (1615 steps).
 Proof modification of "wrdcctswrdOLD" is discouraged (102 steps).
 Proof modification of "wrdeqs1catOLD" is discouraged (191 steps).
