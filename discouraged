@@ -17599,6 +17599,7 @@ New usage of "sbnvOLD" is discouraged (1 uses).
 New usage of "sbrimALT" is discouraged (1 uses).
 New usage of "sbtALT" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
+New usage of "sbthac" is discouraged (0 uses).
 New usage of "sbtvOLD" is discouraged (0 uses).
 New usage of "scmateALT" is discouraged (0 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
@@ -19720,6 +19721,7 @@ Proof modification of "sbrimALT" is discouraged (41 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtALT" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
+Proof modification of "sbthac" is discouraged (92 steps).
 Proof modification of "sbtvOLD" is discouraged (31 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
