@@ -17552,7 +17552,6 @@ New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
 New usage of "sbcrexgOLD" is discouraged (2 uses).
 New usage of "sbcssgVD" is discouraged (0 uses).
-New usage of "sbelxOLD" is discouraged (0 uses).
 New usage of "sbequ12ALT" is discouraged (2 uses).
 New usage of "sbequ1ALT" is discouraged (4 uses).
 New usage of "sbequ1OLD" is discouraged (0 uses).
@@ -17584,7 +17583,6 @@ New usage of "sblbisALT" is discouraged (1 uses).
 New usage of "sblbisvOLD" is discouraged (1 uses).
 New usage of "sbnALT" is discouraged (2 uses).
 New usage of "sbnOLD" is discouraged (0 uses).
-New usage of "sbnf2OLD" is discouraged (0 uses).
 New usage of "sbnvOLD" is discouraged (1 uses).
 New usage of "sbrimALT" is discouraged (1 uses).
 New usage of "sbtALT" is discouraged (0 uses).
@@ -19662,7 +19660,6 @@ Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
 Proof modification of "sbcrexgOLD" is discouraged (77 steps).
 Proof modification of "sbcssgVD" is discouraged (229 steps).
-Proof modification of "sbelxOLD" is discouraged (24 steps).
 Proof modification of "sbequ12ALT" is discouraged (18 steps).
 Proof modification of "sbequ1ALT" is discouraged (24 steps).
 Proof modification of "sbequ1OLD" is discouraged (30 steps).
@@ -19694,7 +19691,6 @@ Proof modification of "sblbisALT" is discouraged (24 steps).
 Proof modification of "sblbisvOLD" is discouraged (29 steps).
 Proof modification of "sbnALT" is discouraged (48 steps).
 Proof modification of "sbnOLD" is discouraged (55 steps).
-Proof modification of "sbnf2OLD" is discouraged (135 steps).
 Proof modification of "sbnvOLD" is discouraged (39 steps).
 Proof modification of "sbrimALT" is discouraged (41 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
