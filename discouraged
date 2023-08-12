@@ -14259,6 +14259,7 @@ New usage of "cbveuALT" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
 New usage of "cbvmoOLD" is discouraged (0 uses).
 New usage of "cbvrabvOLD" is discouraged (0 uses).
+New usage of "cbvrexdva2OLD" is discouraged (0 uses).
 New usage of "ccat2s1fvwALT" is discouraged (0 uses).
 New usage of "ccatopthOLD" is discouraged (0 uses).
 New usage of "ccats1swrdeqOLD" is discouraged (2 uses).
@@ -15387,7 +15388,6 @@ New usage of "equsb1ALT" is discouraged (1 uses).
 New usage of "equsb1vOLD" is discouraged (0 uses).
 New usage of "equsb1vOLDOLD" is discouraged (0 uses).
 New usage of "equsexALT" is discouraged (0 uses).
-New usage of "eqvOLD" is discouraged (0 uses).
 New usage of "erngbase-rN" is discouraged (4 uses).
 New usage of "erngdv-rN" is discouraged (0 uses).
 New usage of "erngdvlem1-rN" is discouraged (3 uses).
@@ -18584,6 +18584,7 @@ Proof modification of "cbveuALT" is discouraged (48 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "cbvmoOLD" is discouraged (48 steps).
 Proof modification of "cbvrabvOLD" is discouraged (19 steps).
+Proof modification of "cbvrexdva2OLD" is discouraged (128 steps).
 Proof modification of "ccat2s1fvwALT" is discouraged (149 steps).
 Proof modification of "ccatopthOLD" is discouraged (245 steps).
 Proof modification of "ccats1swrdeqOLD" is discouraged (203 steps).
@@ -18930,7 +18931,6 @@ Proof modification of "equsb1ALT" is discouraged (16 steps).
 Proof modification of "equsb1vOLD" is discouraged (17 steps).
 Proof modification of "equsb1vOLDOLD" is discouraged (32 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
-Proof modification of "eqvOLD" is discouraged (6 steps).
 Proof modification of "eu1OLD" is discouraged (86 steps).
 Proof modification of "eu6OLD" is discouraged (265 steps).
 Proof modification of "euaeOLD" is discouraged (49 steps).
