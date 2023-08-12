@@ -18336,6 +18336,7 @@ Proof modification of "biadaniALT" is discouraged (28 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bj-0" is discouraged (5 steps).
 Proof modification of "bj-1" is discouraged (5 steps).
+Proof modification of "bj-19.12" is discouraged (35 steps).
 Proof modification of "bj-19.21t" is discouraged (39 steps).
 Proof modification of "bj-19.41al" is discouraged (51 steps).
 Proof modification of "bj-ab0" is discouraged (54 steps).
@@ -18482,6 +18483,7 @@ Proof modification of "bj-fvsnun2" is discouraged (44 steps).
 Proof modification of "bj-gl4" is discouraged (39 steps).
 Proof modification of "bj-gl4lem" is discouraged (37 steps).
 Proof modification of "bj-godellob" is discouraged (19 steps).
+Proof modification of "bj-hba1" is discouraged (15 steps).
 Proof modification of "bj-hbab1" is discouraged (20 steps).
 Proof modification of "bj-hbaeb" is discouraged (22 steps).
 Proof modification of "bj-hbaeb2" is discouraged (73 steps).
@@ -18496,6 +18498,8 @@ Proof modification of "bj-isseti" is discouraged (15 steps).
 Proof modification of "bj-issetiv" is discouraged (15 steps).
 Proof modification of "bj-issetw" is discouraged (21 steps).
 Proof modification of "bj-issetwt" is discouraged (63 steps).
+Proof modification of "bj-modal4e" is discouraged (32 steps).
+Proof modification of "bj-modalb" is discouraged (11 steps).
 Proof modification of "bj-mpt2mptALT" is discouraged (130 steps).
 Proof modification of "bj-ndxarg" is discouraged (37 steps).
 Proof modification of "bj-ndxid" is discouraged (28 steps).
@@ -18507,6 +18511,14 @@ Proof modification of "bj-nfs1" is discouraged (16 steps).
 Proof modification of "bj-nfs1v" is discouraged (10 steps).
 Proof modification of "bj-nfsab1" is discouraged (12 steps).
 Proof modification of "bj-nimn" is discouraged (8 steps).
+Proof modification of "bj-nnfa1" is discouraged (25 steps).
+Proof modification of "bj-nnfalt" is discouraged (86 steps).
+Proof modification of "bj-nnfe1" is discouraged (25 steps).
+Proof modification of "bj-nnfext" is discouraged (86 steps).
+Proof modification of "bj-nnflemaa" is discouraged (25 steps).
+Proof modification of "bj-nnflemae" is discouraged (25 steps).
+Proof modification of "bj-nnflemea" is discouraged (25 steps).
+Proof modification of "bj-nnflemee" is discouraged (25 steps).
 Proof modification of "bj-nnfnfTEMP" is discouraged (20 steps).
 Proof modification of "bj-nul" is discouraged (28 steps).
 Proof modification of "bj-nuliota" is discouraged (73 steps).
