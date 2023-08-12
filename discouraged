@@ -13271,7 +13271,7 @@
 "zfac" is used by "axacndlem4".
 "zfinf" is used by "axinf2".
 "zfinf" is used by "axinfndlem1".
-"zfpair" is used by "axpr".
+"zfpair" is used by "axprALT".
 "zrdivrng" is used by "dvrunz".
 New usage of "00sr" is discouraged (4 uses).
 New usage of "0bdop" is discouraged (2 uses).
@@ -13764,6 +13764,7 @@ New usage of "axnulALT" is discouraged (0 uses).
 New usage of "axpjcl" is discouraged (7 uses).
 New usage of "axpjpj" is discouraged (8 uses).
 New usage of "axpr" is discouraged (0 uses).
+New usage of "axprALT" is discouraged (0 uses).
 New usage of "axpre-ltadd" is discouraged (0 uses).
 New usage of "axpre-lttri" is discouraged (0 uses).
 New usage of "axpre-lttrn" is discouraged (0 uses).
@@ -18322,6 +18323,7 @@ Proof modification of "axfrege8" is discouraged (31 steps).
 Proof modification of "axi12OLD" is discouraged (76 steps).
 Proof modification of "axnul" is discouraged (36 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
+Proof modification of "axprALT" is discouraged (67 steps).
 Proof modification of "axtglowdim2OLD" is discouraged (115 steps).
 Proof modification of "axtgupdim2OLD" is discouraged (679 steps).
 Proof modification of "bamalipOLD" is discouraged (26 steps).
