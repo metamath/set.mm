@@ -26,6 +26,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+12-Aug-23 mpt2eq123i mpoeq123i
+12-Aug-23 mpt2eq123dv mpoeq123dv
 12-Aug-23 mpt2eq123dva mpoeq123dva
 11-Aug-23 mpt2eq12  mpoeq12
 11-Aug-23 mpt2eq123 mpoeq123
