@@ -11872,6 +11872,7 @@
 "sb6ALT" is used by "sb5ALT2".
 "sb6fALT" is used by "sb5fALT".
 "sb7fALT" is used by "dfsb7ALT".
+"sbal1" is used by "sbalOLD".
 "sbanALT" is used by "sbbiALT".
 "sbanvOLD" is used by "sbbivOLD".
 "sbbiALT" is used by "sblbisALT".
@@ -16656,6 +16657,7 @@ New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfsb2ALT" is discouraged (1 uses).
 New usage of "nfsb4ALT" is discouraged (1 uses).
 New usage of "nfsb4tALT" is discouraged (1 uses).
+New usage of "nfsbvOLD" is discouraged (0 uses).
 New usage of "nfunidALT" is discouraged (0 uses).
 New usage of "nfunidALT2" is discouraged (0 uses).
 New usage of "nic-ax" is discouraged (7 uses).
@@ -17529,8 +17531,11 @@ New usage of "sb6ALT" is discouraged (1 uses).
 New usage of "sb6OLD" is discouraged (0 uses).
 New usage of "sb6fALT" is discouraged (1 uses).
 New usage of "sb7fALT" is discouraged (1 uses).
+New usage of "sbal1" is discouraged (1 uses).
 New usage of "sbal2OLD" is discouraged (0 uses).
+New usage of "sbalOLD" is discouraged (0 uses).
 New usage of "sbanALT" is discouraged (1 uses).
+New usage of "sbanOLD" is discouraged (0 uses).
 New usage of "sbanvOLD" is discouraged (1 uses).
 New usage of "sbbiALT" is discouraged (1 uses).
 New usage of "sbbidOLD" is discouraged (0 uses).
@@ -19407,6 +19412,7 @@ Proof modification of "nfopdALT" is discouraged (70 steps).
 Proof modification of "nfsb2ALT" is discouraged (18 steps).
 Proof modification of "nfsb4ALT" is discouraged (23 steps).
 Proof modification of "nfsb4tALT" is discouraged (119 steps).
+Proof modification of "nfsbvOLD" is discouraged (29 steps).
 Proof modification of "nfunidALT" is discouraged (33 steps).
 Proof modification of "nfunidALT2" is discouraged (49 steps).
 Proof modification of "nic-ax" is discouraged (142 steps).
@@ -19647,8 +19653,11 @@ Proof modification of "sb6ALT" is discouraged (21 steps).
 Proof modification of "sb6OLD" is discouraged (20 steps).
 Proof modification of "sb6fALT" is discouraged (49 steps).
 Proof modification of "sb7fALT" is discouraged (68 steps).
+Proof modification of "sbal1" is discouraged (149 steps).
 Proof modification of "sbal2OLD" is discouraged (157 steps).
+Proof modification of "sbalOLD" is discouraged (49 steps).
 Proof modification of "sbanALT" is discouraged (102 steps).
+Proof modification of "sbanOLD" is discouraged (73 steps).
 Proof modification of "sbanvOLD" is discouraged (73 steps).
 Proof modification of "sbbiALT" is discouraged (109 steps).
 Proof modification of "sbbidOLD" is discouraged (34 steps).
