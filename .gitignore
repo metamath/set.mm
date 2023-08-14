@@ -12,3 +12,8 @@ mmset.html
 mmzfcnd.html
 mmfrege.html
 xits-math.woff
+metamath
+metamath.exe
+*.mmp
+*.mmt
+*.mms
