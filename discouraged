@@ -13809,6 +13809,7 @@ New usage of "bj-0" is discouraged (1 uses).
 New usage of "bj-1" is discouraged (0 uses).
 New usage of "bj-ax12v3ALT" is discouraged (0 uses).
 New usage of "bj-ax6e" is discouraged (0 uses).
+New usage of "bj-ax9" is discouraged (0 uses).
 New usage of "bj-axc4" is discouraged (0 uses).
 New usage of "bj-axd2d" is discouraged (0 uses).
 New usage of "bj-axdd2" is discouraged (0 uses).
@@ -18385,7 +18386,6 @@ Proof modification of "bj-axc4" is discouraged (15 steps).
 Proof modification of "bj-axd2d" is discouraged (16 steps).
 Proof modification of "bj-axdd2" is discouraged (28 steps).
 Proof modification of "bj-axext3" is discouraged (57 steps).
-Proof modification of "bj-axext4" is discouraged (21 steps).
 Proof modification of "bj-axrep1" is discouraged (190 steps).
 Proof modification of "bj-axrep2" is discouraged (181 steps).
 Proof modification of "bj-axrep3" is discouraged (122 steps).
@@ -18679,7 +18679,6 @@ Proof modification of "decmul1OLD" is discouraged (119 steps).
 Proof modification of "dedtOLD" is discouraged (19 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
-Proof modification of "dfclel" is discouraged (17 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dfeuOLD" is discouraged (33 steps).
 Proof modification of "dfiun2gOLD" is discouraged (134 steps).
