@@ -15549,6 +15549,7 @@ New usage of "grothomex" is discouraged (0 uses).
 New usage of "grothpw" is discouraged (0 uses).
 New usage of "grothpwex" is discouraged (1 uses).
 New usage of "grpbasex" is discouraged (3 uses).
+New usage of "grpinvfvalOLD" is discouraged (0 uses).
 New usage of "grpo2inv" is discouraged (4 uses).
 New usage of "grpoass" is discouraged (16 uses).
 New usage of "grpocl" is discouraged (12 uses).
@@ -15595,6 +15596,7 @@ New usage of "grporn" is discouraged (11 uses).
 New usage of "grporndm" is discouraged (4 uses).
 New usage of "grposnOLD" is discouraged (1 uses).
 New usage of "grpplusgx" is discouraged (3 uses).
+New usage of "grpsubfvalOLD" is discouraged (0 uses).
 New usage of "gsumsplOLD" is discouraged (0 uses).
 New usage of "gt-lt" is discouraged (0 uses).
 New usage of "gt-lth" is discouraged (1 uses).
@@ -16614,6 +16616,7 @@ New usage of "mulcompr" is discouraged (6 uses).
 New usage of "mulcomsr" is discouraged (5 uses).
 New usage of "mulerpq" is discouraged (3 uses).
 New usage of "mulerpqlem" is discouraged (1 uses).
+New usage of "mulgfvalOLD" is discouraged (0 uses).
 New usage of "mulgt0sr" is discouraged (2 uses).
 New usage of "mulidnq" is discouraged (11 uses).
 New usage of "mulidpi" is discouraged (5 uses).
@@ -16958,6 +16961,7 @@ New usage of "ocorth" is discouraged (3 uses).
 New usage of "ocsh" is discouraged (6 uses).
 New usage of "ocss" is discouraged (11 uses).
 New usage of "ocval" is discouraged (4 uses).
+New usage of "odfvalOLD" is discouraged (0 uses).
 New usage of "ogrpinvOLD" is discouraged (0 uses).
 New usage of "oldmm3N" is discouraged (2 uses).
 New usage of "olposN" is discouraged (0 uses).
@@ -19194,7 +19198,9 @@ Proof modification of "ggen22" is discouraged (13 steps).
 Proof modification of "ggen31" is discouraged (22 steps).
 Proof modification of "ghomidOLD" is discouraged (178 steps).
 Proof modification of "ghomlinOLD" is discouraged (161 steps).
+Proof modification of "grpinvfvalOLD" is discouraged (161 steps).
 Proof modification of "grposnOLD" is discouraged (291 steps).
+Proof modification of "grpsubfvalOLD" is discouraged (189 steps).
 Proof modification of "gsumsplOLD" is discouraged (327 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
 Proof modification of "hashwwlksnextOLD" is discouraged (129 steps).
@@ -19378,6 +19384,7 @@ Proof modification of "moeuOLD" is discouraged (52 steps).
 Proof modification of "mofOLD" is discouraged (62 steps).
 Proof modification of "moimiOLD" is discouraged (17 steps).
 Proof modification of "mptssALT" is discouraged (57 steps).
+Proof modification of "mulgfvalOLD" is discouraged (317 steps).
 Proof modification of "n0lpligALT" is discouraged (74 steps).
 Proof modification of "n2dvds1OLD" is discouraged (37 steps).
 Proof modification of "n2dvds3OLD" is discouraged (40 steps).
@@ -19470,6 +19477,7 @@ Proof modification of "numclwwlk1lem2foaOLD" is discouraged (420 steps).
 Proof modification of "numclwwlk1lem2foalemOLD" is discouraged (238 steps).
 Proof modification of "numclwwlk1lem2fvOLD" is discouraged (54 steps).
 Proof modification of "numclwwlk2lem3OLD" is discouraged (66 steps).
+Proof modification of "odfvalOLD" is discouraged (181 steps).
 Proof modification of "ogrpinvOLD" is discouraged (149 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
 Proof modification of "onfrALT" is discouraged (88 steps).
