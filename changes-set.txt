@@ -26,6 +26,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+17-Aug-23 mpt2mpt   mpompt
+17-Aug-23 mpt2mptx  mpomptx
 17-Aug-23 mpt2v     mpov
 17-Aug-23 cbvmpt2v  cbvmpov
 17-Aug-23 cbvmpt2   cbvmpo
