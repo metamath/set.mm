@@ -26,6 +26,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Aug-23 resmpt2   resmpo
+18-Aug-23 fconstmpt2 fconstmpo
+18-Aug-23 mpt2snif  mposnif
+18-Aug-23 mpt2difsnif mpodifsnif
 17-Aug-23 mpt2mpt   mpompt
 17-Aug-23 mpt2mptx  mpomptx
 17-Aug-23 mpt2v     mpov
