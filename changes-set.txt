@@ -26,7 +26,6 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-18-Aug-23 eqsnd     [same]      moved from TA's mathbox to main set.mm
 17-Aug-23 mpt2mpt   mpompt
 17-Aug-23 mpt2mptx  mpomptx
 17-Aug-23 mpt2v     mpov
