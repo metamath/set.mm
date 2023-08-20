@@ -13421,10 +13421,6 @@ New usage of "9cnOLD" is discouraged (0 uses).
 New usage of "a1ii" is discouraged (0 uses).
 New usage of "abbi2dvOLD" is discouraged (0 uses).
 New usage of "abbi2iOLD" is discouraged (0 uses).
-New usage of "abbidOLD" is discouraged (0 uses).
-New usage of "abbidvOLD" is discouraged (0 uses).
-New usage of "abbiiOLD" is discouraged (0 uses).
-New usage of "abbiiOLDOLD" is discouraged (0 uses).
 New usage of "abeq2fOLD" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (4 uses).
 New usage of "ablo4" is discouraged (3 uses).
@@ -18230,10 +18226,6 @@ Proof modification of "9cnOLD" is discouraged (3 steps).
 Proof modification of "a1ii" is discouraged (1 steps).
 Proof modification of "abbi2dvOLD" is discouraged (24 steps).
 Proof modification of "abbi2iOLD" is discouraged (18 steps).
-Proof modification of "abbidOLD" is discouraged (24 steps).
-Proof modification of "abbidvOLD" is discouraged (9 steps).
-Proof modification of "abbiiOLD" is discouraged (38 steps).
-Proof modification of "abbiiOLDOLD" is discouraged (17 steps).
 Proof modification of "abeq2fOLD" is discouraged (46 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
