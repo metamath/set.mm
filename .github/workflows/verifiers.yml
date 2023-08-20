@@ -193,15 +193,20 @@ jobs:
         env:
           cache-name: cache-knife
         with:
-          path: ~/.cargo/bin/cache-knife
+          path: metamath-knife/target/release/metamath-knife
           key: ${{ runner.os }}-build-${{ env.cache-name }}
       - name: Install rust
         if: ${{ !steps.cache-metamath-knife.outputs.cache-hit }}
         uses: hecrj/setup-rust-action@v1
         with:
           rust-version: stable
-      - run: git clone --depth 1 https://github.com/david-a-wheeler/metamath-knife.git
-      - run: cd metamath-knife && cargo build --release
+      - name: Install metamath-knife
+        if: ${{ !steps.cache-metamath-knife.outputs.cache-hit }}
+        run: |
+          rm -rf metamath-knife &&
+          git clone --depth 1 https://github.com/metamath/metamath-knife.git &&
+          cd metamath-knife &&
+          cargo build --release
       - name: Verify set.mm
         run: |
           metamath-knife/target/release/metamath-knife --verify \
