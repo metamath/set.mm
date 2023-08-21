@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Aug-23 iunssd    [same]      moved from GS's mathbox to main set.mm
 18-Aug-23 resmpt2   resmpo
 18-Aug-23 fconstmpt2 fconstmpo
 18-Aug-23 mpt2snif  mposnif
