@@ -60,6 +60,8 @@ Date      Old       New         Notes
 21-Aug-23 elrnmpt2  elrnmpo
 21-Aug-23 elrnmpt2g elrnmpog
 21-Aug-23 reldmmpt2 reldmmpo
+21-Aug-23 pm110.643ALT dju1p1e2ALT Changes from +c notation to |_|
+21-Aug-23 pm110.643 dju1p1e2    Changes from +c notation to |_|
 20-Aug-23 rnmpt2    rnmpo
 20-Aug-23 mpt22eqb  mpo2eqb
 20-Aug-23 mpt2fun   mpofun

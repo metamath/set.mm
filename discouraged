@@ -15033,6 +15033,7 @@ New usage of "djajN" is discouraged (0 uses).
 New usage of "djavalN" is discouraged (2 uses).
 New usage of "djhljjN" is discouraged (0 uses).
 New usage of "djhunssN" is discouraged (0 uses).
+New usage of "dju1p1e2ALT" is discouraged (0 uses).
 New usage of "djuexALT" is discouraged (0 uses).
 New usage of "dlwwlknonclwlknonf1olem1OLD" is discouraged (1 uses).
 New usage of "dlwwlknondlwlknonenOLD" is discouraged (0 uses).
@@ -17244,7 +17245,6 @@ New usage of "pl42lem4N" is discouraged (1 uses).
 New usage of "plpv" is discouraged (1 uses).
 New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
-New usage of "pm110.643ALT" is discouraged (0 uses).
 New usage of "pm13.183OLD" is discouraged (0 uses).
 New usage of "pm13.18OLD" is discouraged (0 uses).
 New usage of "pm2.21ddALT" is discouraged (0 uses).
@@ -18710,6 +18710,8 @@ Proof modification of "disamisOLD" is discouraged (19 steps).
 Proof modification of "disjxwrdOLD" is discouraged (13 steps).
 Proof modification of "disjxwwlknOLD" is discouraged (130 steps).
 Proof modification of "disjxwwlksnOLD" is discouraged (80 steps).
+Proof modification of "dju1p1e2" is discouraged (72 steps).
+Proof modification of "dju1p1e2ALT" is discouraged (34 steps).
 Proof modification of "djuexALT" is discouraged (51 steps).
 Proof modification of "dlwwlknonclwlknonf1olem1OLD" is discouraged (253 steps).
 Proof modification of "dlwwlknondlwlknonenOLD" is discouraged (116 steps).
@@ -19501,8 +19503,6 @@ Proof modification of "orim12dALT" is discouraged (34 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
 Proof modification of "perpdragALT" is discouraged (241 steps).
-Proof modification of "pm110.643" is discouraged (72 steps).
-Proof modification of "pm110.643ALT" is discouraged (35 steps).
 Proof modification of "pm13.183OLD" is discouraged (111 steps).
 Proof modification of "pm13.18OLD" is discouraged (28 steps).
 Proof modification of "pm2.21ddALT" is discouraged (10 steps).
