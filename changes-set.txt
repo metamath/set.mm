@@ -26,6 +26,21 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-Aug-23 df-srdg   [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 issrdg    [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 sdrgid    [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 sdrgss    [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 issdrg2   [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 acsfn1p   [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 subrgacs  [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 sdrgacs   [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 cntzsdrg  [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 subdrgint [same]      moved from TA's mathbox to main set.mm
+22-Aug-23 sdrgint   [same]      moved from TA's mathbox to main set.mm
+22-Aug-23 primefld  [same]      moved from TA's mathbox to main set.mm
+22-Aug-23 cntrss    [same]      moved from TA's mathbox to main set.mm
+22-Aug-23 iinssiun  [same]      moved from TA's mathbox to main set.mm
+22-Aug-23 iindif1   [same]      moved from TA's mathbox to main set.mm
 21-Aug-23 iunssd    [same]      moved from GS's mathbox to main set.mm
 18-Aug-23 resmpt2   resmpo
 18-Aug-23 fconstmpt2 fconstmpo
