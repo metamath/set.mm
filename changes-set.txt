@@ -42,6 +42,13 @@ Date      Old       New         Notes
 22-Aug-23 iinssiun  [same]      moved from TA's mathbox to main set.mm
 22-Aug-23 iindif1   [same]      moved from TA's mathbox to main set.mm
 21-Aug-23 iunssd    [same]      moved from GS's mathbox to main set.mm
+21-Aug-23 elrnmpt2res elrnmpores
+21-Aug-23 elrnmpt2  elrnmpo
+21-Aug-23 elrnmpt2g elrnmpog
+21-Aug-23 reldmmpt2 reldmmpo
+20-Aug-23 rnmpt2    rnmpo
+20-Aug-23 mpt22eqb  mpo2eqb
+20-Aug-23 mpt2fun   mpofun
 18-Aug-23 resmpt2   resmpo
 18-Aug-23 fconstmpt2 fconstmpo
 18-Aug-23 mpt2snif  mposnif
