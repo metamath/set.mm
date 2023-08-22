@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Aug-23 elrnmpt2res elrnmpores
 21-Aug-23 elrnmpt2  elrnmpo
 21-Aug-23 elrnmpt2g elrnmpog
 21-Aug-23 reldmmpt2 reldmmpo
