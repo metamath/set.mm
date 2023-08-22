@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-Aug-23 ovmpt2d   ovmpod
 22-Aug-23 ovmpt2dx  ovmpodx
 22-Aug-23 ovmpt2dxf ovmpodxf
 22-Aug-23 ovmpt2s   ovmpos
