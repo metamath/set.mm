@@ -17745,6 +17745,7 @@ New usage of "spanun" is discouraged (2 uses).
 New usage of "spanuni" is discouraged (3 uses).
 New usage of "spanunsni" is discouraged (1 uses).
 New usage of "spanval" is discouraged (6 uses).
+New usage of "spcgvOLD" is discouraged (0 uses).
 New usage of "speccl" is discouraged (0 uses).
 New usage of "specval" is discouraged (1 uses).
 New usage of "speimfwALT" is discouraged (0 uses).
@@ -19728,6 +19729,7 @@ Proof modification of "snssiALT" is discouraged (40 steps).
 Proof modification of "snssiALTVD" is discouraged (64 steps).
 Proof modification of "snssl" is discouraged (18 steps).
 Proof modification of "snsslVD" is discouraged (24 steps).
+Proof modification of "spcgvOLD" is discouraged (13 steps).
 Proof modification of "speimfwALT" is discouraged (35 steps).
 Proof modification of "spimtOLD" is discouraged (52 steps).
 Proof modification of "spimvALT" is discouraged (16 steps).
