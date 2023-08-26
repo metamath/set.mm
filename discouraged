@@ -18056,6 +18056,7 @@ New usage of "watfvalN" is discouraged (1 uses).
 New usage of "watvalN" is discouraged (1 uses).
 New usage of "wfrlem4OLD" is discouraged (0 uses).
 New usage of "wl-embant" is discouraged (0 uses).
+New usage of "wl-fool" is discouraged (0 uses).
 New usage of "wl-impchain-a1-1" is discouraged (1 uses).
 New usage of "wl-impchain-a1-2" is discouraged (1 uses).
 New usage of "wl-impchain-a1-3" is discouraged (0 uses).
@@ -19922,8 +19923,10 @@ Proof modification of "vtoclALT" is discouraged (11 steps).
 Proof modification of "vtxdusgr0edgnelALT" is discouraged (94 steps).
 Proof modification of "wfrlem4OLD" is discouraged (543 steps).
 Proof modification of "wl-cases2-dnf" is discouraged (85 steps).
+Proof modification of "wl-dfclab" is discouraged (73 steps).
 Proof modification of "wl-embant" is discouraged (12 steps).
 Proof modification of "wl-equsal" is discouraged (32 steps).
+Proof modification of "wl-fool" is discouraged (33 steps).
 Proof modification of "wl-impchain-a1-1" is discouraged (4 steps).
 Proof modification of "wl-impchain-a1-2" is discouraged (10 steps).
 Proof modification of "wl-impchain-a1-3" is discouraged (12 steps).
