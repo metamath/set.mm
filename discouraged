@@ -1883,7 +1883,6 @@
 "bnj1294" is used by "bnj1296".
 "bnj1294" is used by "bnj1379".
 "bnj1294" is used by "bnj1421".
-"bnj1294" is used by "bnj1450".
 "bnj1294" is used by "bnj1489".
 "bnj1294" is used by "bnj1501".
 "bnj1294" is used by "bnj1523".
@@ -14020,7 +14019,7 @@ New usage of "bnj1280" is discouraged (1 uses).
 New usage of "bnj1286" is discouraged (1 uses).
 New usage of "bnj1292" is discouraged (4 uses).
 New usage of "bnj1293" is discouraged (4 uses).
-New usage of "bnj1294" is discouraged (10 uses).
+New usage of "bnj1294" is discouraged (9 uses).
 New usage of "bnj1296" is discouraged (1 uses).
 New usage of "bnj1299" is discouraged (3 uses).
 New usage of "bnj130" is discouraged (1 uses).
@@ -18544,6 +18543,7 @@ Proof modification of "bj-eeanvw" is discouraged (32 steps).
 Proof modification of "bj-el" is discouraged (48 steps).
 Proof modification of "bj-elisset" is discouraged (24 steps).
 Proof modification of "bj-elissetv" is discouraged (25 steps).
+Proof modification of "bj-epelg" is discouraged (33 steps).
 Proof modification of "bj-equs45fv" is discouraged (43 steps).
 Proof modification of "bj-equsal" is discouraged (31 steps).
 Proof modification of "bj-equsalhv" is discouraged (10 steps).
@@ -18800,6 +18800,7 @@ Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "dral1ALT" is discouraged (34 steps).
 Proof modification of "dral2-o" is discouraged (14 steps).
 Proof modification of "drnfc1OLD" is discouraged (52 steps).
+Proof modification of "drnfc2" is discouraged (52 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
 Proof modification of "dtruALT2" is discouraged (80 steps).
 Proof modification of "dummylink" is discouraged (1 steps).
@@ -20007,6 +20008,7 @@ Proof modification of "vtoclALT" is discouraged (11 steps).
 Proof modification of "vtxdusgr0edgnelALT" is discouraged (94 steps).
 Proof modification of "wfrlem4OLD" is discouraged (543 steps).
 Proof modification of "wl-cases2-dnf" is discouraged (85 steps).
+Proof modification of "wl-dfclab" is discouraged (73 steps).
 Proof modification of "wl-embant" is discouraged (12 steps).
 Proof modification of "wl-equsal" is discouraged (32 steps).
 Proof modification of "wl-impchain-a1-1" is discouraged (4 steps).
