@@ -982,7 +982,7 @@ their domains (for example set.mm's addasspi versus iset.mm's ~ addasspig in
 which conditions such as ` A e. N. ` are added, or set.mm's ltbtwnnq versus
 iset.mm's ~ ltbtwnnqq , in which ` E. x ` is changed to ` E. x e. Q. ` ).
 If the result of applying a function is inhabited, then we know we applied
-it within its domain - that is ~ relelfvdm or ~ elmpt2cl may be useful.
+it within its domain - that is ~ relelfvdm or ~ elmpocl may be useful.
 (These thoughts apply to operations - in at least one place, ~ dvdszrcl ,
 set.mm uses the term "reverse closure" for binary relations - but this is
 a lot more like ~ brel than like the reverse closure theorems described
@@ -2996,7 +2996,7 @@ operation, as these are just a few examples).</TD>
 
 <TR>
   <TD>ovrcl</TD>
-  <TD>~ elmpt2cl , ~ relelfvdm</TD>
+  <TD>~ elmpocl , ~ relelfvdm</TD>
 </TR>
 
 <TR>
@@ -3036,7 +3036,7 @@ that we are evaluating functions within their domains.
 
 <TR>
 <TD>ndmovrcl</TD>
-<TD>~ elmpt2cl , ~ relelfvdm</TD>
+<TD>~ elmpocl , ~ relelfvdm</TD>
 </TR>
 
 <TR>
@@ -3077,6 +3077,25 @@ that we are evaluating functions within their domains.
 <TD>caovmo</TD>
 <TD>~ caovimo </TD>
 </TR>
+
+<tr>
+  <td>mpondm0</td>
+  <td><i>none</i></td>
+  <td>could be proved, but usually is used in conjunction with
+  excluded middle</td>
+</tr>
+
+<tr>
+  <td>elovmporab</td>
+  <td><i>none</i></td>
+  <td>could be proved, but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>elovmporab1</td>
+  <td><i>none</i></td>
+  <td>could be proved</td>
+</tr>
 
 <TR>
   <TD>relmptopab</TD>
@@ -4624,7 +4643,35 @@ this implies excluded middle</TD>
 </TR>
 
 <tr>
-  <td>uncdadom</td>
+  <td>df-cda</td>
+  <td>~ df-dju</td>
+  <td>df-cda and df-dju are essentially the same. Current
+  thinking is that we want to remove df-cda and the +c syntax
+  from set.mm in favor of df-dju and use ` |_| ` in much the same
+  way that cardinal multiplication uses the df-xp ( ` X. ` )
+  syntax rather than having a notation specific to cardinals.</td>
+</tr>
+
+<tr>
+  <td>cdafn</td>
+  <td>~ djuex</td>
+  <td>Since ` |_| ` is defined on proper classes, the similarity
+  here is somewhat approximate.</td>
+</tr>
+
+<tr>
+  <td>cdaval</td>
+  <td>~ df-dju</td>
+</tr>
+
+<tr>
+  <td>cdadju</td>
+  <td><i>none</i></td>
+  <td>not needed as iset.mm does not have df-cda</td>
+</tr>
+
+<tr>
+  <td>uncdadom , undjudom</td>
   <td><i>none</i></td>
   <td>The set.mm proof relies on undom</td>
 </tr>
@@ -4640,8 +4687,44 @@ this implies excluded middle</TD>
 </tr>
 
 <tr>
-  <td>pm110.643</td>
-  <td>~ dju1p1e2</td>
+  <td>cdaenun</td>
+  <td>~ djuenun</td>
+</tr>
+
+<tr>
+  <td>cda1en</td>
+  <td>~ dju1en</td>
+</tr>
+
+<tr>
+  <td>cda1dif</td>
+  <td><i>none</i></td>
+</tr>
+
+<tr>
+  <td>dju1dif</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>cda0en</td>
+  <td>~ dju0en</td>
+</tr>
+
+<tr>
+  <td>xp2cda</td>
+  <td>~ xp2dju</td>
+</tr>
+
+<tr>
+  <td>cdacomen</td>
+  <td>~ djucomen</td>
+</tr>
+
+<tr>
+  <td>cdaassen</td>
+  <td>~ djuassen</td>
 </tr>
 
 <tr>
@@ -9401,7 +9484,8 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>df-xps and all theorems mentioning the binary product on a structure
   (syntax Xs.)</td>
   <td><i>none</i></td>
-  <td>presumably could be added in some form</td>
+  <td>The set.mm definition depends on df-cda ( +c ), df-imas ( "s ),
+  and df-prds ( Xs_ )</td>
 </tr>
 
 <TR>
