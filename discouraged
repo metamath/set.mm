@@ -13890,7 +13890,6 @@ New usage of "bj-inftyexpidisj" is discouraged (3 uses).
 New usage of "bj-inftyexpiinv" is discouraged (1 uses).
 New usage of "bj-mpt2mptALT" is discouraged (0 uses).
 New usage of "bj-nuliotaALT" is discouraged (0 uses).
-New usage of "bj-peirce" is discouraged (0 uses).
 New usage of "bj-peircecurry" is discouraged (0 uses).
 New usage of "bj-rabtrALT" is discouraged (0 uses).
 New usage of "bj-rabtrAUTO" is discouraged (0 uses).
@@ -17491,8 +17490,6 @@ New usage of "rexanidOLD" is discouraged (0 uses).
 New usage of "rexbidvALT" is discouraged (0 uses).
 New usage of "rexbidvaALT" is discouraged (0 uses).
 New usage of "rexcom4OLD" is discouraged (0 uses).
-New usage of "rexcom4aOLD" is discouraged (0 uses).
-New usage of "rexcom4bOLD" is discouraged (0 uses).
 New usage of "rexcomOLD" is discouraged (0 uses).
 New usage of "rexeqOLD" is discouraged (0 uses).
 New usage of "rexeqbi1dvOLD" is discouraged (0 uses).
@@ -18521,7 +18518,7 @@ Proof modification of "bj-cmnssmnd" is discouraged (36 steps).
 Proof modification of "bj-cmnssmndel" is discouraged (5 steps).
 Proof modification of "bj-consensusALT" is discouraged (30 steps).
 Proof modification of "bj-csbprc" is discouraged (47 steps).
-Proof modification of "bj-currypeirce" is discouraged (51 steps).
+Proof modification of "bj-currypeirce" is discouraged (16 steps).
 Proof modification of "bj-denotes" is discouraged (76 steps).
 Proof modification of "bj-denotesv" is discouraged (15 steps).
 Proof modification of "bj-df-nul" is discouraged (11 steps).
@@ -18606,7 +18603,6 @@ Proof modification of "bj-nul" is discouraged (28 steps).
 Proof modification of "bj-nuliota" is discouraged (73 steps).
 Proof modification of "bj-nuliotaALT" is discouraged (60 steps).
 Proof modification of "bj-orim2" is discouraged (31 steps).
-Proof modification of "bj-peirce" is discouraged (25 steps).
 Proof modification of "bj-peircecurry" is discouraged (58 steps).
 Proof modification of "bj-rababw" is discouraged (34 steps).
 Proof modification of "bj-rabtrALT" is discouraged (36 steps).
@@ -19679,8 +19675,6 @@ Proof modification of "rexanidOLD" is discouraged (37 steps).
 Proof modification of "rexbidvALT" is discouraged (10 steps).
 Proof modification of "rexbidvaALT" is discouraged (10 steps).
 Proof modification of "rexcom4OLD" is discouraged (41 steps).
-Proof modification of "rexcom4aOLD" is discouraged (37 steps).
-Proof modification of "rexcom4bOLD" is discouraged (42 steps).
 Proof modification of "rexcomOLD" is discouraged (75 steps).
 Proof modification of "rexeqOLD" is discouraged (11 steps).
 Proof modification of "rexeqbi1dvOLD" is discouraged (28 steps).
