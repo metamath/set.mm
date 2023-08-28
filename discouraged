@@ -16254,6 +16254,7 @@ New usage of "ispsubclN" is discouraged (10 uses).
 New usage of "isrngo" is discouraged (2 uses).
 New usage of "isrngod" is discouraged (1 uses).
 New usage of "isrnsigaOLD" is discouraged (0 uses).
+New usage of "issetiOLD" is discouraged (0 uses).
 New usage of "issgrpALT" is discouraged (1 uses).
 New usage of "issh" is discouraged (3 uses).
 New usage of "issh2" is discouraged (10 uses).
@@ -19354,6 +19355,7 @@ Proof modification of "ismgmALT" is discouraged (53 steps).
 Proof modification of "ismgmOLD" is discouraged (292 steps).
 Proof modification of "isosctrlem1ALT" is discouraged (363 steps).
 Proof modification of "isrnsigaOLD" is discouraged (202 steps).
+Proof modification of "issetiOLD" is discouraged (14 steps).
 Proof modification of "issgrpALT" is discouraged (53 steps).
 Proof modification of "issmgrpOLD" is discouraged (85 steps).
 Proof modification of "istrkg2d" is discouraged (439 steps).
