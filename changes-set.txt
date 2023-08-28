@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+27-Aug-23 mpt2mptsx mpomptsx
 27-Aug-23 2mpt20    2mpo0
 27-Aug-23 fnfvima2  ---         deleted; duplicate of fnfvimad
 27-Aug-23 rabeqd    ---         deleted; duplicate of rabeqdv
