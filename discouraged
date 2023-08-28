@@ -15389,6 +15389,7 @@ New usage of "elimnv" is discouraged (1 uses).
 New usage of "elimnvu" is discouraged (5 uses).
 New usage of "elimph" is discouraged (3 uses).
 New usage of "elimphu" is discouraged (3 uses).
+New usage of "elissetOLD" is discouraged (0 uses).
 New usage of "ellnfn" is discouraged (5 uses).
 New usage of "ellnop" is discouraged (9 uses).
 New usage of "elni" is discouraged (7 uses).
@@ -18117,6 +18118,7 @@ New usage of "vd03" is discouraged (2 uses).
 New usage of "vd12" is discouraged (9 uses).
 New usage of "vd13" is discouraged (3 uses).
 New usage of "vd23" is discouraged (3 uses).
+New usage of "vexOLD" is discouraged (0 uses).
 New usage of "vfermltlALT" is discouraged (0 uses).
 New usage of "vk15.4j" is discouraged (0 uses).
 New usage of "vk15.4jVD" is discouraged (0 uses).
@@ -18987,6 +18989,7 @@ Proof modification of "eliminable2b" is discouraged (7 steps).
 Proof modification of "eliminable2c" is discouraged (8 steps).
 Proof modification of "eliminable3a" is discouraged (7 steps).
 Proof modification of "eliminable3b" is discouraged (8 steps).
+Proof modification of "elissetOLD" is discouraged (19 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
 Proof modification of "elrabOLD" is discouraged (16 steps).
@@ -19994,6 +19997,7 @@ Proof modification of "vd03" is discouraged (19 steps).
 Proof modification of "vd12" is discouraged (12 steps).
 Proof modification of "vd13" is discouraged (18 steps).
 Proof modification of "vd23" is discouraged (15 steps).
+Proof modification of "vexOLD" is discouraged (16 steps).
 Proof modification of "vfermltlALT" is discouraged (279 steps).
 Proof modification of "vk15.4j" is discouraged (217 steps).
 Proof modification of "vk15.4jVD" is discouraged (268 steps).
