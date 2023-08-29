@@ -26,6 +26,69 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+27-Aug-23 fmpt2     fmpo
+27-Aug-23 fmpt2x    fmpox
+27-Aug-23 dmmpt2ssx dmmpossx
+27-Aug-23 mpt2mpts  mpompts
+27-Aug-23 mpt2mptsx mpomptsx
+27-Aug-23 2mpt20    2mpo0
+27-Aug-23 fnfvima2  ---         deleted; duplicate of fnfvimad
+27-Aug-23 rabeqd    ---         deleted; duplicate of rabeqdv
+27-Aug-23 iunxsngf2 ---         deleted; duplicate of iunxsngf
+27-Aug-23 brabg2a   ---         deleted; duplicate of brab2a
+27-Aug-23 abeq12    ---         deleted; duplicate of abbi1
+26-Aug-23 elovmpt2rab1 elovmporab1
+26-Aug-23 elovmpt2rab elovmporab
+26-Aug-23 elovmpt2  elovmpo
+26-Aug-23 elmpt2cl2 elmpocl2
+26-Aug-23 elmpt2cl1 elmpocl1
+26-Aug-23 elmpt2cl  elmpocl
+26-Aug-23 mpt2ndm0  mpondm0
+24-Aug-23 cdaassen  djuassen    Changes from +c notation to |_|
+23-Aug-23 ovmpt2    ovmpo
+23-Aug-23 ovmpt2g   ovmpog
+23-Aug-23 ovmpt2dv2 ovmpodv2
+23-Aug-23 ovmpt2dv  ovmpodv
+23-Aug-23 ovmpt2df  ovmpodf
+23-Aug-23 ovmpt2a   ovmpoa
+23-Aug-23 ovmpt2ga  ovmpoga
+23-Aug-23 ovmpt2x   ovmpox
+22-Aug-23 ovmpt2d   ovmpod
+22-Aug-23 ovmpt2dx  ovmpodx
+22-Aug-23 ovmpt2dxf ovmpodxf
+22-Aug-23 ovmpt2s   ovmpos
+22-Aug-23 rexrnmpt2 rexrnmpo
+22-Aug-23 ralrnmpt2 ralrnmpo
+22-Aug-23 df-srdg   [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 issrdg    [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 sdrgid    [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 sdrgss    [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 issdrg2   [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 acsfn1p   [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 subrgacs  [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 sdrgacs   [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 cntzsdrg  [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 subdrgint [same]      moved from TA's mathbox to main set.mm
+22-Aug-23 sdrgint   [same]      moved from TA's mathbox to main set.mm
+22-Aug-23 primefld  [same]      moved from TA's mathbox to main set.mm
+22-Aug-23 cntrss    [same]      moved from TA's mathbox to main set.mm
+22-Aug-23 iinssiun  [same]      moved from TA's mathbox to main set.mm
+22-Aug-23 iindif1   [same]      moved from TA's mathbox to main set.mm
+22-Aug-23 mvlladdd  [same]      moved from DAW's mathbox to main set.mm
+22-Aug-23 rpexpmord [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 expmordi  [same]      moved from SO's mathbox to main set.mm
+22-Aug-23 pwm1geoserALT pwm1geoser from AV's mathbox; equivalent theorems
+22-Aug-23 pwdif     [same]      moved from AV's mathbox to main set.mm
+21-Aug-23 iunssd    [same]      moved from GS's mathbox to main set.mm
+21-Aug-23 elrnmpt2res elrnmpores
+21-Aug-23 elrnmpt2  elrnmpo
+21-Aug-23 elrnmpt2g elrnmpog
+21-Aug-23 reldmmpt2 reldmmpo
+21-Aug-23 pm110.643ALT dju1p1e2ALT Changes from +c notation to |_|
+21-Aug-23 pm110.643 dju1p1e2    Changes from +c notation to |_|
+20-Aug-23 rnmpt2    rnmpo
+20-Aug-23 mpt22eqb  mpo2eqb
+20-Aug-23 mpt2fun   mpofun
 18-Aug-23 resmpt2   resmpo
 18-Aug-23 fconstmpt2 fconstmpo
 18-Aug-23 mpt2snif  mposnif
