@@ -75,6 +75,8 @@ jobs:
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v3
+      # Update first to counter problems installing texlive
+      - run: sudo apt-get update --fix-missing
       # Install LaTeX so we can test generated LaTeX. We use extended packages:
       # texlive-extra-utils provides pdflatex
       # texlive-fonts-extra provides phonetic.sty
@@ -176,6 +178,42 @@ jobs:
       - name: Verify iset.mm
         run: |
           ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
+
+  ###########################################################
+  metamath-knife:
+    name: Verify using metamath-knife
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Cache metamath-knife
+        id: cache-metamath-knife
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-knife
+        with:
+          path: ~/.cargo/bin/cache-knife
+          key: ${{ runner.os }}-build-${{ env.cache-name }}
+      - name: Install rust
+        if: ${{ !steps.cache-metamath-knife.outputs.cache-hit }}
+        uses: hecrj/setup-rust-action@v1
+        with:
+          rust-version: stable
+      - run: git clone --depth 1 https://github.com/david-a-wheeler/metamath-knife.git
+      - run: cd metamath-knife && cargo build --release
+      - name: Verify set.mm
+        run: |
+          metamath-knife/target/release/metamath-knife --verify ./set.mm
+      - name: Verify iset.mm
+        run: |
+          metamath-knife/target/release/metamath-knife --verify ./iset.mm
+      - name: Check axiom usage for set.mm
+        run: |
+          metamath-knife/target/release/metamath-knife --verify-usage ./set.mm
+      - name: Check axiom usage for iset.mm
+        run: |
+          metamath-knife/target/release/metamath-knife --verify-usage ./iset.mm
 
   ###########################################################
   mmj2:

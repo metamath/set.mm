@@ -20,13 +20,94 @@ proposed  sylbid    biimtrd     etc.
 proposed  sylbird   biimtrrd    etc.
 proposed  syl5*     *trid       (syl5bi -> biimtrid; syl5eqel -> eqeltrid;etc.)
 proposed  syl6*     *trdi
-proposed  *mpt*     *mpf* or *mptf* (maps-to for functions)
-proposed  *mpt2*    *mpo* or *mpto* (maps-to for operations)
+proposed  *mpt2*    *mpo*       (renaming process underway)
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Aug-23 resmpt2   resmpo
+18-Aug-23 fconstmpt2 fconstmpo
+18-Aug-23 mpt2snif  mposnif
+18-Aug-23 mpt2difsnif mpodifsnif
+17-Aug-23 mpt2mpt   mpompt
+17-Aug-23 mpt2mptx  mpomptx
+17-Aug-23 mpt2v     mpov
+17-Aug-23 cbvmpt2v  cbvmpov
+17-Aug-23 cbvmpt2   cbvmpo
+17-Aug-23 cbvmpt2x  cbvmpox
+17-Aug-23 mpt20     mpo0
+15-Aug-23 nfmpt2    nfmpo
+15-Aug-23 nfmpt22   nfmpo2
+15-Aug-23 nfmpt21   nfmpo1
+14-Aug-23 mpt2eq3dv mpoeq3dv
+14-Aug-23 mpt2eq3ia mpoeq3ia
+13-Aug-23 mpt2eq3dva mpoeq3dva
+12-Aug-23 mpt2eq123i mpoeq123i
+12-Aug-23 mpt2eq123dv mpoeq123dv
+12-Aug-23 mpt2eq123dva mpoeq123dva
+11-Aug-23 mpt2eq12  mpoeq12
+11-Aug-23 mpt2eq123 mpoeq123
+10-Aug-23 cmpt2     cmpo
+ 6-Aug-23 df-mpt2   df-mpo
+31-Jul-23 sbcgfi    [same]      moved from GM's mathbox to main set.mm
+31-Jul-23 csbgfi    [same]      moved from GM's mathbox to main set.mm
+31-Jul-23 sbceqi    [same]      moved from GM's mathbox to main set.mm
+29-Jul-23 19.8ad    [same]      moved from DAW's mathbox to main set.mm
+29-Jul-23 pnfnre2   [same]      moved from GS's mathbox to main set.mm
+29-Jul-23 spc2d     [same]      moved from TA's mathbox to main set.mm
+29-Jul-23 spc2ed    [same]      moved from TA's mathbox to main set.mm
+25-Jul-23 mpnanrd   [same]      moved from ML's mathbox to main set.mm
+25-Jul-23 f1opr     [same]      moved from JM's mathbox to main set.mm
+25-Jul-23 gsumpr    [same]      moved from AV's mathbox to main set.mm
+25-Jul-23 xpprsng   [same]      moved from AV's mathbox to main set.mm
+25-Jul-23 fnmptd    [same]      moved from GS's mathbox to main set.mm
+22-Jul-23 0neqopab  0nelopab
+16-Jul-23 qseq2i    [same]      moved from PM's mathbox to main set.mm
+16-Jul-23 qseq2d    [same]      moved from PM's mathbox to main set.mm
+14-Jul-23 bj-ssb0   sbv         moved from BJ's mathbox to main set.mm
+ 8-Jul-23 bj-ssbn   sbn         from BJ's mathbox; equivalent theorems
+ 8-Jul-23 bj-dfssb2 dfsb7       from BJ's mathbox; equivalent theorems
+ 8-Jul-23 bj-ssbequ2 sbequ2     from BJ's mathbox; equivalent theorems
+ 8-Jul-23 bj-ssbequ1 sbequ1     from BJ's mathbox; equivalent theorems
+ 8-Jul-23 bj-ssbcom3lem sbcom3vv from BJ's mathbox; equivalent theorems
+ 8-Jul-23 bj-ssbssblem sbco2vv  from BJ's mathbox; equivalent theorems
+ 7-Jul-23 bj-ssbequ sbequ       from BJ's mathbox; equivalent theorems
+ 7-Jul-23 bj-spex   spsbe       from BJ's mathbox; equivalent theorems
+ 6-Jul-23 bj-rababwv bj-rababw
+ 6-Jul-23 bj-alsb   stdpc4      from BJ's mathbox; equivalent theorems
+ 6-Jul-23 bj-ssbim  spsbim      from BJ's mathbox; equivalent theorems
+ 6-Jul-23 bj-ssbbi  spsbbi      from BJ's mathbox; equivalent theorems
+ 6-Jul-23 bj-ssbimi sbimi       from BJ's mathbox; equivalent theorems
+ 6-Jul-23 bj-ssbbii sbbii       from BJ's mathbox; equivalent theorems
+ 6-Jul-23 sn-vexwv  sn-vexw
+ 6-Jul-23 bj-sbtv   sbtv        from BJ's mathbox; equivalent theorems
+ 4-Jul-23 df-ssb    df-sb       definition change
+ 4-Jul-23 wssb      wsb         definition change
+ 4-Jul-23 df-sb     dfsb1       definition change
+ 4-Jul-23 bj-ssbjust sbjust     moved from BJ's mathbox to main set.mm
+ 4-Jul-23 bj-ssbjustlem sbjustlem moved from BJ's mathbox to main set.mm
+ 4-Jul-23 rspcdf    [same]      moved from EW's mathbox to main set.mm
+ 1-Jul-23 bj-nalset nalset      from BJ's mathbox; equivalent theorems
+ 1-Jul-23 bj-spvv   spvv        moved from BJ's mathbox to main set.mm
+25-Jun-23 2reu4     [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2reu4a    [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2reu2     [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2reu1     [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2rexreu   [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2rmoswap  [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2reurmo   [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2reurex   [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 reuan     [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 rmoanim   [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 reuimrmo  [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 2reu5a    [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 raaan2    [same]      moved from AV's mathbox to main set.mm
+25-Jun-23 csbconstgi [same]     moved from GM's mathbox to main set.mm
+18-Jun-23 ssrmo     ssrmof      moved from TA's mathbox to main set.mm
+18-Jun-23 rmoimi    [same]      moved from AV's mathbox to main set.mm
+18-Jun-23 2reu2rex  [same]      moved from AV's mathbox to main set.mm
+14-Jun-23 rru       [same]      moved from SN's mathbox to main set.mm
 10-Jun-23 sbtv      [same]      moved fron SN's mathbox to main set.mm
  8-Jun-23 rnmptc    [same]      moved from GS's mathbox to main set.mm
  8-Jun-23 eqneltri  [same]      moved from GS's mathbox to main set.mm
