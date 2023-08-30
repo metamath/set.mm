@@ -26,6 +26,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+30-Aug-23 ovmpt2elrn ovmpoelrn
+30-Aug-23 dmmpt2    dmmpo
 30-Aug-23 fnmpt2i   fnmpoi
 30-Aug-23 fnmpt2    fnmpo
 27-Aug-23 fmpt2     fmpo
