@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+31-Aug-23 dmmpt2g   dmmpog
 31-Aug-23 dmmpt2ga  dmmpoga
 30-Aug-23 ovmpt2elrn ovmpoelrn
 30-Aug-23 dmmpt2    dmmpo
