@@ -26,6 +26,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+30-Aug-23 ovmpt2elrn ovmpoelrn
+30-Aug-23 dmmpt2    dmmpo
+30-Aug-23 fnmpt2i   fnmpoi
+30-Aug-23 fnmpt2    fnmpo
 28-Aug-23 pigt3     [same]      moved from BL's mathbox to main set.mm
 27-Aug-23 fmpt2     fmpo
 27-Aug-23 fmpt2x    fmpox
