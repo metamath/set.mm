@@ -2996,7 +2996,6 @@
 "cdaenun" is used by "cdacomen".
 "cdaenun" is used by "onacda".
 "cdaenun" is used by "pwxpndom2".
-"cdaenun" is used by "xpcdaen".
 "cdafn" is used by "cda1dif".
 "cdafn" is used by "cdacomen".
 "cdafn" is used by "cdadom1".
@@ -3024,7 +3023,6 @@
 "cdaval" is used by "pwcdadom".
 "cdaval" is used by "uncdadom".
 "cdaval" is used by "xp2cda".
-"cdaval" is used by "xpcdaen".
 "cdaval" is used by "xpsc".
 "cdj3lem1" is used by "cdj3i".
 "cdj3lem1" is used by "cdj3lem2b".
@@ -14335,10 +14333,10 @@ New usage of "cda1dif" is discouraged (1 uses).
 New usage of "cda1en" is discouraged (1 uses).
 New usage of "cdacomen" is discouraged (8 uses).
 New usage of "cdaen" is discouraged (6 uses).
-New usage of "cdaenun" is discouraged (5 uses).
+New usage of "cdaenun" is discouraged (4 uses).
 New usage of "cdafn" is discouraged (5 uses).
 New usage of "cdaun" is discouraged (5 uses).
-New usage of "cdaval" is discouraged (19 uses).
+New usage of "cdaval" is discouraged (18 uses).
 New usage of "cdj1i" is discouraged (0 uses).
 New usage of "cdj3i" is discouraged (0 uses).
 New usage of "cdj3lem1" is discouraged (2 uses).
