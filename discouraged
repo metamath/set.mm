@@ -2993,6 +2993,17 @@
 "cdadom1" is used by "gchpwdom".
 "cdadom1" is used by "infdif".
 "cdadom1" is used by "unctb".
+"cdadom2" is used by "canthp1".
+"cdadom2" is used by "cdalepw".
+"cdadom2" is used by "fin45".
+"cdadom2" is used by "gchcdaidm".
+"cdadom2" is used by "gchhar".
+"cdadom2" is used by "gchpwdom".
+"cdadom2" is used by "infcda".
+"cdadom2" is used by "infcdaabs".
+"cdadom2" is used by "infdif".
+"cdadom2" is used by "pwcdandom".
+"cdadom2" is used by "unctb".
 "cdaen" is used by "ackbij1lem5".
 "cdaen" is used by "ackbij1lem9".
 "cdaen" is used by "cardacda".
@@ -14346,6 +14357,7 @@ New usage of "cda1dif" is discouraged (1 uses).
 New usage of "cda1en" is discouraged (1 uses).
 New usage of "cdacomen" is discouraged (8 uses).
 New usage of "cdadom1" is discouraged (7 uses).
+New usage of "cdadom2" is discouraged (11 uses).
 New usage of "cdaen" is discouraged (6 uses).
 New usage of "cdaenun" is discouraged (4 uses).
 New usage of "cdafn" is discouraged (5 uses).
