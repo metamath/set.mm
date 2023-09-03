@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 3-Sep-23 fmpt2co   fmpoco
  3-Sep-23 relmpt2opab relmpoopab
  3-Sep-23 fnmpt2ovd fnmpoovd
  3-Sep-23 el2mpt2cl el2mpocl
