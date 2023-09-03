@@ -14997,6 +14997,7 @@ New usage of "dfsb2ALT" is discouraged (1 uses).
 New usage of "dfsb3ALT" is discouraged (1 uses).
 New usage of "dfsb7ALT" is discouraged (0 uses).
 New usage of "dfsb7OLD" is discouraged (0 uses).
+New usage of "dfsb7OLDOLD" is discouraged (0 uses).
 New usage of "dfsn2ALT" is discouraged (0 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "dfvd1imp" is discouraged (1 uses).
@@ -18785,7 +18786,8 @@ Proof modification of "dfnul2OLD" is discouraged (44 steps).
 Proof modification of "dfsb2ALT" is discouraged (79 steps).
 Proof modification of "dfsb3ALT" is discouraged (39 steps).
 Proof modification of "dfsb7ALT" is discouraged (10 steps).
-Proof modification of "dfsb7OLD" is discouraged (8 steps).
+Proof modification of "dfsb7OLD" is discouraged (56 steps).
+Proof modification of "dfsb7OLDOLD" is discouraged (8 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
 Proof modification of "dfvd1imp" is discouraged (10 steps).
 Proof modification of "dfvd1impr" is discouraged (10 steps).
