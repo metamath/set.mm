@@ -17649,6 +17649,7 @@ New usage of "sbanALT" is discouraged (1 uses).
 New usage of "sbanOLD" is discouraged (0 uses).
 New usage of "sbanvOLD" is discouraged (1 uses).
 New usage of "sbbiALT" is discouraged (1 uses).
+New usage of "sbbibOLD" is discouraged (0 uses).
 New usage of "sbbidOLD" is discouraged (0 uses).
 New usage of "sbbidvOLD" is discouraged (0 uses).
 New usage of "sbbiiALT" is discouraged (3 uses).
@@ -19767,6 +19768,7 @@ Proof modification of "sbanALT" is discouraged (102 steps).
 Proof modification of "sbanOLD" is discouraged (73 steps).
 Proof modification of "sbanvOLD" is discouraged (73 steps).
 Proof modification of "sbbiALT" is discouraged (109 steps).
+Proof modification of "sbbibOLD" is discouraged (115 steps).
 Proof modification of "sbbidOLD" is discouraged (34 steps).
 Proof modification of "sbbidvOLD" is discouraged (32 steps).
 Proof modification of "sbbiiALT" is discouraged (29 steps).
