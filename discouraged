@@ -17634,9 +17634,11 @@ New usage of "sb4aALT" is discouraged (1 uses).
 New usage of "sb4vOLD" is discouraged (2 uses).
 New usage of "sb4vOLDALT" is discouraged (1 uses).
 New usage of "sb4vOLDOLD" is discouraged (0 uses).
+New usage of "sb56OLD" is discouraged (0 uses).
 New usage of "sb5ALT" is discouraged (0 uses).
 New usage of "sb5ALT2" is discouraged (1 uses).
 New usage of "sb5ALTVD" is discouraged (0 uses).
+New usage of "sb5OLD" is discouraged (0 uses).
 New usage of "sb5fALT" is discouraged (1 uses).
 New usage of "sb6ALT" is discouraged (1 uses).
 New usage of "sb6OLD" is discouraged (0 uses).
@@ -17649,6 +17651,7 @@ New usage of "sbanALT" is discouraged (1 uses).
 New usage of "sbanOLD" is discouraged (0 uses).
 New usage of "sbanvOLD" is discouraged (1 uses).
 New usage of "sbbiALT" is discouraged (1 uses).
+New usage of "sbbibOLD" is discouraged (0 uses).
 New usage of "sbbidOLD" is discouraged (0 uses).
 New usage of "sbbidvOLD" is discouraged (0 uses).
 New usage of "sbbiiALT" is discouraged (3 uses).
@@ -19752,9 +19755,11 @@ Proof modification of "sb4aALT" is discouraged (26 steps).
 Proof modification of "sb4vOLD" is discouraged (16 steps).
 Proof modification of "sb4vOLDALT" is discouraged (24 steps).
 Proof modification of "sb4vOLDOLD" is discouraged (25 steps).
+Proof modification of "sb56OLD" is discouraged (29 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALT2" is discouraged (24 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
+Proof modification of "sb5OLD" is discouraged (25 steps).
 Proof modification of "sb5fALT" is discouraged (26 steps).
 Proof modification of "sb6ALT" is discouraged (21 steps).
 Proof modification of "sb6OLD" is discouraged (20 steps).
@@ -19767,6 +19772,7 @@ Proof modification of "sbanALT" is discouraged (102 steps).
 Proof modification of "sbanOLD" is discouraged (73 steps).
 Proof modification of "sbanvOLD" is discouraged (73 steps).
 Proof modification of "sbbiALT" is discouraged (109 steps).
+Proof modification of "sbbibOLD" is discouraged (115 steps).
 Proof modification of "sbbidOLD" is discouraged (34 steps).
 Proof modification of "sbbidvOLD" is discouraged (32 steps).
 Proof modification of "sbbiiALT" is discouraged (29 steps).
