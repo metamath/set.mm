@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 4-Sep-23 mpt2xneldm mpoxneldm
  4-Sep-23 mpt2xeldm mpoxeldm
  3-Sep-23 jcn       [same]      moved from GS's mathbox to main set.mm
  3-Sep-23 mpt2sn    mposn
