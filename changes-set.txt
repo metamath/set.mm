@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 5-Sep-23 bj-spimedv spimedv    moved from BJ's mathbox to main set.mm
  3-Sep-23 mpt2sn    mposn
  3-Sep-23 dfmpt2    dfmpo
  3-Sep-23 fmpt2co   fmpoco
