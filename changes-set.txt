@@ -28,6 +28,14 @@ DONE:
 Date      Old       New         Notes
  5-Sep-23 bj-spimev spimefv     moved from BJ's mathbox to main set.mm
  5-Sep-23 bj-spimedv spimedv    moved from BJ's mathbox to main set.mm
+ 4-Sep-23 mpt2xopynvov0 mpoxopynvov0
+ 4-Sep-23 mpt2xopxprcov0 mpoxopxprcov0
+ 4-Sep-23 mpt2xopx0ov0 mpoxopx0ov0
+ 4-Sep-23 mpt2xopxnop0 mpoxopxnop0
+ 4-Sep-23 mpt2xopynvov0g mpoxopynvov0g
+ 4-Sep-23 mpt2xopn0yelv mpoxopn0yelv
+ 4-Sep-23 mpt2xneldm mpoxneldm
+ 4-Sep-23 mpt2xeldm mpoxeldm
  3-Sep-23 jcn       [same]      moved from GS's mathbox to main set.mm
  3-Sep-23 mpt2sn    mposn
  3-Sep-23 dfmpt2    dfmpo
