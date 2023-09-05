@@ -26,6 +26,15 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 3-Sep-23 mpt2sn    mposn
+ 3-Sep-23 dfmpt2    dfmpo
+ 3-Sep-23 fmpt2co   fmpoco
+ 3-Sep-23 relmpt2opab relmpoopab
+ 3-Sep-23 fnmpt2ovd fnmpoovd
+ 3-Sep-23 el2mpt2cl el2mpocl
+ 3-Sep-23 el2mpt2csbcl el2mpocsbcl
+ 3-Sep-23 mptmpt2opabovd mptmpoopabovd
+ 2-Sep-23 mptmpt2opabbrd mptmpoopabbrd
 31-Aug-23 mpt2ex    mpoex
 31-Aug-23 mpt2exga  mpoexga
 31-Aug-23 mpt2exg   mpoexg
