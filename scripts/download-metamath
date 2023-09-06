@@ -44,7 +44,8 @@ curl -L -o metamath-program.zip \
 # This will be updated, but we need a starting point:
 mkdir -p metamath/
 cd metamath/
-wget -N http://us.metamath.org/mpegif/mmbiblio.html
+#wget -N http://us.metamath.org/mpegif/mmbiblio.html
+wget -N https://raw.githubusercontent.com/metamath/metamath-website-seed/main/mpegif/mmbiblio.html
 cd ..
 
 # Store latest_version value inside metamath/ so we can get it later.
