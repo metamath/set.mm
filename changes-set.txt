@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 6-Sep-23 bj-speiv  speiv       moved from BJ's mathbox to main set.mm
  4-Sep-23 mpt2xopynvov0 mpoxopynvov0
  4-Sep-23 mpt2xopxprcov0 mpoxopxprcov0
  4-Sep-23 mpt2xopx0ov0 mpoxopx0ov0
