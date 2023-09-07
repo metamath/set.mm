@@ -982,7 +982,7 @@ their domains (for example set.mm's addasspi versus iset.mm's ~ addasspig in
 which conditions such as ` A e. N. ` are added, or set.mm's ltbtwnnq versus
 iset.mm's ~ ltbtwnnqq , in which ` E. x ` is changed to ` E. x e. Q. ` ).
 If the result of applying a function is inhabited, then we know we applied
-it within its domain - that is ~ relelfvdm or ~ elmpt2cl may be useful.
+it within its domain - that is ~ relelfvdm or ~ elmpocl may be useful.
 (These thoughts apply to operations - in at least one place, ~ dvdszrcl ,
 set.mm uses the term "reverse closure" for binary relations - but this is
 a lot more like ~ brel than like the reverse closure theorems described
@@ -1361,12 +1361,19 @@ equivalent (in the absence of excluded middle).</TD>
 <TD>~ mo2r , ~ mo3 </TD>
 </TR>
 
-<TR>
-  <TD>df-eu , dfeu , eu6</TD>
-  <TD>~ df-eu , ~ eu5</TD>
-  <TD>The same statements are present in both but the names are
-  different because the definitions are different.</TD>
-</TR>
+<tr>
+  <td>df-eu , dfeu</td>
+  <td>~ eu5</td>
+  <td>Although this is a definition in set.mm and a theorem
+  in iset.mm it is otherwise the same (with a different name).</td>
+</tr>
+
+<tr>
+  <td>eu6</td>
+  <td>~ df-eu</td>
+  <td>Although this is a definition in iset.mm and a theorem
+  in set.mm it is otherwise the same (with a different name).</td>
+</tr>
 
 <TR>
   <TD>nfabd2</TD>
@@ -1450,7 +1457,7 @@ equivalent (in the absence of excluded middle).</TD>
 
 <tr>
   <td>necon4bid</td>
-  <td>~ necon4biddc</td>
+  <td>~ necon4biddc , ~ apcon4bid</td>
 </tr>
 
 <tr>
@@ -2385,6 +2392,12 @@ there is less need for this convenience theorem.</TD>
   <td>~ xpeq0r , ~ sqxpeq0</td>
 </tr>
 
+<tr>
+  <td>difxp</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on ianor</td>
+</tr>
+
 <TR>
   <TD>rnxp</TD>
   <TD>~ rnxpm</TD>
@@ -2845,6 +2858,12 @@ and is evaluated at a set</TD>
   <TD>~ dff4im</TD>
 </TR>
 
+<tr>
+  <td>fmptsng , fmptsnd</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
 <TR>
   <TD>fvunsn</TD>
   <TD>~ fvunsng</TD>
@@ -2983,8 +3002,15 @@ operation, as these are just a few examples).</TD>
 
 <TR>
   <TD>ovrcl</TD>
-  <TD>~ elmpt2cl , ~ relelfvdm</TD>
+  <TD>~ elmpocl , ~ relelfvdm</TD>
 </TR>
+
+<tr>
+  <td>opabresex2d</td>
+  <td><i>none</i></td>
+  <td>it should be possible to update iset.mm to reflect
+  set.mm in this area and related theorems</td>
+</tr>
 
 <TR>
 <TD>fnov</TD>
@@ -3023,7 +3049,7 @@ that we are evaluating functions within their domains.
 
 <TR>
 <TD>ndmovrcl</TD>
-<TD>~ elmpt2cl , ~ relelfvdm</TD>
+<TD>~ elmpocl , ~ relelfvdm</TD>
 </TR>
 
 <TR>
@@ -3064,6 +3090,32 @@ that we are evaluating functions within their domains.
 <TD>caovmo</TD>
 <TD>~ caovimo </TD>
 </TR>
+
+<tr>
+  <td>mpondm0</td>
+  <td><i>none</i></td>
+  <td>could be proved, but usually is used in conjunction with
+  excluded middle</td>
+</tr>
+
+<tr>
+  <td>elovmporab</td>
+  <td><i>none</i></td>
+  <td>could be proved, but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>elovmporab1</td>
+  <td><i>none</i></td>
+  <td>could be proved</td>
+</tr>
+
+<tr>
+  <td>2mpo0</td>
+  <td><i>none</i></td>
+  <td>Possibly provable, but an inhabited set version would
+  be more likely to be helpful (if anything is).</td>
+</tr>
 
 <TR>
   <TD>relmptopab</TD>
@@ -3329,17 +3381,90 @@ hasn't been a need for it.</TD>
 <TD>May be intuitionizable, but very lightly used in set.mm.</TD>
 </TR>
 
+<tr>
+  <td>mptmpoopabbrd</td>
+  <td><i>none</i></td>
+  <td>it should be possible to update iset.mm to reflect
+  set.mm in this area and related theorems</td>
+</tr>
+
+<tr>
+  <td>mptmpoopabovd</td>
+  <td><i>none</i></td>
+  <td>it should be possible to update iset.mm to reflect
+  set.mm in this area and related theorems</td>
+</tr>
+
+<tr>
+  <td>el2mpt2csbcl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses excluded middle</td>
+</tr>
+
+<tr>
+  <td>el2mpocl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses el2mpocsbcl</td>
+</tr>
+
 <TR>
   <TD>ovmptss</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on fvmptss</TD>
 </TR>
 
+<tr>
+  <td>mposn</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
 <TR>
-  <TD>relmpt2opab</TD>
+  <TD>relmpoopab</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on ovmptss</TD>
 </TR>
+
+<tr>
+  <td>mpoxeldm</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>mpoxneldm</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>mpoxopynvov0g</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>mpoxopxnop0</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>mpoxopx0ov0</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>mpoxopxprcov0</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>mpt2xopynvov0</td>
+  <td><i>none</i></td>
+</tr>
 
 <TR>
 <TD>brtpos</TD>
@@ -3985,6 +4110,20 @@ this implies excluded middle</TD>
   this theorem would need to be modified to be provable.</TD>
 </TR>
 
+<tr>
+  <td>unbnn</td>
+  <td><i>none</i></td>
+  <td>the impossibility proof at ~ exmidunben should apply
+  here as well</td>
+</tr>
+
+<tr>
+  <td>unbnn2</td>
+  <td><i>none</i></td>
+  <td>the impossibility proof at ~ exmidunben should apply
+  here as well</td>
+</tr>
+
 <TR>
   <TD ROWSPAN="4">unfi</TD>
   <TD>~ unsnfi</TD>
@@ -4006,6 +4145,11 @@ this implies excluded middle</TD>
   <TD><I>for any two finite sets</I></TD>
   <TD>Implies excluded middle as shown at ~ unfiexmid .</TD>
 </TR>
+
+<tr>
+  <td>difinf</td>
+  <td>~ difinfinf</td>
+</tr>
 
 <TR>
   <TD ROWSPAN="2">prfi</TD>
@@ -4337,6 +4481,13 @@ this implies excluded middle</TD>
 <TD>ax-reg implies excluded middle as seen at ~ regexmid</TD>
 </TR>
 
+<tr>
+  <td>unbnn3</td>
+  <td><i>none</i></td>
+  <td>the impossibility proof at ~ exmidunben should apply
+  here as well</td>
+</tr>
+
 <TR>
   <TD>df-rank and all theorems related to the rank function</TD>
   <TD><I>none</I></TD>
@@ -4585,14 +4736,107 @@ this implies excluded middle</TD>
 </TR>
 
 <tr>
-  <td>uncdadom</td>
+  <td>df-cda</td>
+  <td>~ df-dju</td>
+  <td>df-cda and df-dju are essentially the same. Current
+  thinking is that we want to remove df-cda and the +c syntax
+  from set.mm in favor of df-dju and use ` |_| ` in much the same
+  way that cardinal multiplication uses the df-xp ( ` X. ` )
+  syntax rather than having a notation specific to cardinals.</td>
+</tr>
+
+<tr>
+  <td>cdafn</td>
+  <td>~ djuex</td>
+  <td>Since ` |_| ` is defined on proper classes, the similarity
+  here is somewhat approximate.</td>
+</tr>
+
+<tr>
+  <td>cdaval</td>
+  <td>~ df-dju</td>
+</tr>
+
+<tr>
+  <td>cdadju</td>
+  <td><i>none</i></td>
+  <td>not needed as iset.mm does not have df-cda</td>
+</tr>
+
+<tr>
+  <td>uncdadom , undjudom</td>
   <td><i>none</i></td>
   <td>The set.mm proof relies on undom</td>
 </tr>
 
 <tr>
-  <td>pm110.643</td>
-  <td>~ dju1p1e2</td>
+  <td>cdaun</td>
+  <td>~ endjudisj</td>
+</tr>
+
+<tr>
+  <td>cdaen</td>
+  <td>~ djuen</td>
+</tr>
+
+<tr>
+  <td>cdaenun</td>
+  <td>~ djuenun</td>
+</tr>
+
+<tr>
+  <td>cda1en</td>
+  <td>~ dju1en</td>
+</tr>
+
+<tr>
+  <td>cda1dif</td>
+  <td><i>none</i></td>
+</tr>
+
+<tr>
+  <td>dju1dif</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>cda0en</td>
+  <td>~ dju0en</td>
+</tr>
+
+<tr>
+  <td>xp2cda</td>
+  <td>~ xp2dju</td>
+</tr>
+
+<tr>
+  <td>cdacomen</td>
+  <td>~ djucomen</td>
+</tr>
+
+<tr>
+  <td>mapcdaen , mapdjuen</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on mapunen</td>
+</tr>
+
+<tr>
+  <td>pwcdaen , pwdjuen</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on mapdjuen</td>
+</tr>
+
+<tr>
+  <td>cdadom1 , djudom1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on undom</td>
+</tr>
+
+<tr>
+  <td>cdadom2 , djudom2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on djudom1</td>
 </tr>
 
 <tr>
@@ -5303,8 +5547,9 @@ zero changes to apart from zero.</TD>
 
 <TR>
 <TD>mul0or , mul0ori , mul0ord</TD>
-<TD><I>none</I></TD>
-<TD>Remark 2.19 of [Geuvers] says that this does not hold in
+<TD>~ mul0eqap</TD>
+<TD>Remark 2.19 of [Geuvers] says that
+` ( A x. B ) = 0 -> ( A = 0 \/ B = 0 ) ` does not hold in
 general and has a counterexample.</TD>
 </TR>
 
@@ -5617,6 +5862,11 @@ divdird, divsubdird, div11d</TD>
 <TD>rereccld , redivcld</TD>
 <TD>~ rerecclapd , ~ redivclapd </TD>
 </TR>
+
+<tr>
+  <td>diveq1bd</td>
+  <td>~ diveqap1bd</td>
+</tr>
 
 <TR>
   <TD>div2sub , div2subd</TD>
@@ -8432,9 +8682,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>cvgcmp</TD>
-  <TD><I>none</I></TD>
-  <TD>Apparently would need an additional condition on the rate of
-  convergence.  The set.mm proof relies on caurcvg2 which does not
+  <TD>~ cvgcmp2n</TD>
+  <TD>The set.mm proof of cvgcmp relies on caurcvg2 which does not
   specify a rate of convergence.</TD>
 </TR>
 
@@ -8663,13 +8912,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
-  <TD>qnnen</TD>
-  <TD><I>none</I></TD>
-  <TD>Corollary 8.1.23 of [AczelRathjen] and thus presumably provable.
-  The set.mm proof would not work as-is or with small changes, however.</TD>
-</TR>
-
-<TR>
   <TD>ruc</TD>
   <TD><I>none</I></TD>
   <TD>Apparently not provable without countable choice, assuming
@@ -8830,6 +9072,12 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD><I>none</I></TD>
   <TD>May be provable once summation is better developed</TD>
 </TR>
+
+<tr>
+  <td>unben</td>
+  <td><i>none</i></td>
+  <td>not possible as stated, as shown by ~ exmidunben</td>
+</tr>
 
 <TR>
   <TD>isstruct2</TD>
@@ -9347,7 +9595,8 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>df-xps and all theorems mentioning the binary product on a structure
   (syntax Xs.)</td>
   <td><i>none</i></td>
-  <td>presumably could be added in some form</td>
+  <td>The set.mm definition depends on df-cda ( +c ), df-imas ( "s ),
+  and df-prds ( Xs_ )</td>
 </tr>
 
 <TR>
@@ -9883,15 +10132,84 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-tx and all theorems using the binary topological product syntax (tX)</td>
+  <td>df-lly and all theorems using the Locally syntax</td>
   <td><i>none</i></td>
-  <td>presumably could be added</td>
 </tr>
 
 <tr>
   <td>df-xko and all theorems using the compact-open topology syntax (^ko)</td>
   <td><i>none</i></td>
   <td>not clear what is possible here</td>
+</tr>
+
+<tr>
+  <td>ptval</td>
+  <td><i>none</i></td>
+  <td>This would need more extensive development of theorems related
+  to the Xt_ syntax (not just ~ df-pt itself).</td>
+</tr>
+
+<tr>
+  <td>ptpjpre1</td>
+  <td><i>none</i></td>
+  <td>Perhaps would be provable in the case where ` A ` has
+  decidable equality.</td>
+</tr>
+
+<tr>
+  <td>elpt , elptr , elptr2 , ptbasid , ptuni2 , ptbasin , ptbasin2 ,
+  ptbas , ptpjpre2 , ptbasfi , pttop , ptopn , ptopn2</td>
+  <td><i>none</i></td>
+  <td>Although some parts of these product topology theorems
+  may be intuitionizable, it isn't clear doing so would produce
+  a set of theorems which function as desired.</td>
+</tr>
+
+<tr>
+  <td>txcld</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on difxp</td>
+</tr>
+
+<tr>
+  <td>txcls</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on txcld</td>
+</tr>
+
+<tr>
+  <td>txcnpi</td>
+  <td><i>none</i></td>
+  <td>Should be provable (via ~ icnpimaex and ~ cnpf2 ) but may
+  need an additional ` L e. Top ` hypothesis.</td>
+</tr>
+
+<tr>
+  <td>ptcld</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof depends on pttop , boxcutc , ptopn2 , and
+  riincld</td>
+</tr>
+
+<tr>
+  <td>dfac14</td>
+  <td><i>none</i></td>
+  <td>The left hand side implies excluded middle by ~ acexmid ;
+  we could see whether the proof that the right hand side implies choice
+  is also valid without excluded middle.</td>
+</tr>
+
+<tr>
+  <td>txindis</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on excluded middle, indistop , and
+  indisuni .</td>
+</tr>
+
+<tr>
+  <td>df-hmeo and all theorems using the Homeo syntax</td>
+  <td><i>none</i></td>
+  <td>apparently intuitionizable</td>
 </tr>
 
 <tr>
@@ -10008,6 +10326,18 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>txmetcnp</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof depends on df-xps and related theorems</td>
+</tr>
+
+<tr>
+  <td>txmetcn</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof depends on txmetcnp</td>
+</tr>
+
+<tr>
   <td>dscmet , dscopn</td>
   <td><i>none</i></td>
   <td>The set.mm definition for the discrete metric, and the proofs,
@@ -10063,6 +10393,25 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>tgioo2</td>
+  <td>~ tgioo2cntop</td>
+</tr>
+
+<tr>
+  <td>rerest</td>
+  <td>~ rerestcntop</td>
+</tr>
+
+<tr>
+  <td>tgioo3</td>
+  <td><i>none</i></td>
+  <td>Until we have defined RRfld (presumably closely related
+  to the issues described at the df-cnfld entry here), we
+  can use ` ( topGen `` ran (,) ) ` as a notation for the
+  topology of the real numbers (as seen at ~ tgioo2cntop ).</td>
+</tr>
+
+<tr>
   <td>zcld</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses the floor function in ways that we
@@ -10089,10 +10438,47 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>xmetdcn2</td>
+  <td><i>none</i></td>
+  <td>the set.mm theorem is defined in terms of the RR*s syntax
+  and uses txmetcn in the proof</td>
+</tr>
+
+<tr>
+  <td>xmetdcn</td>
+  <td><i>none</i></td>
+  <td>the set.mm theorem is defined in terms of the ordTop syntax
+  and uses xmetdcn2 in the proof</td>
+</tr>
+
+<tr>
+  <td>metdcn2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on xmetdcn</td>
+</tr>
+
+<tr>
+  <td>metdcn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on metdcn2</td>
+</tr>
+
+<tr>
+  <td>msdcn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on metdcn2</td>
+</tr>
+
+<tr>
   <td>cnmpt1ds</td>
   <td><i>none</i></td>
-  <td>the set.mm proof is in terms of binary topological product theorems
-  we do not have</td>
+  <td>the set.mm proof relies on msdcn</td>
+</tr>
+
+<tr>
+  <td>cnmpt2ds</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on msdcn</td>
 </tr>
 
 <tr>
@@ -10105,6 +10491,49 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>metdsf</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses infxrcl</td>
+</tr>
+
+<tr>
+  <td>addcnlem , addcn , subcn , mulcn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses txmetcn</td>
+</tr>
+
+<tr>
+  <td>divcn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mulcn</td>
+</tr>
+
+<tr>
+  <td>fsumcn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses addcn</td>
+</tr>
+
+<tr>
+  <td>fsum2cn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fsumcn</td>
+</tr>
+
+<tr>
+  <td>expcn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mulcn</td>
+</tr>
+
+<tr>
+  <td>divccn</td>
+  <td><i>none</i></td>
+  <td>Not equal would need to be changed to apart. Also, the
+  set.mm proof uses mulcn</td>
+</tr>
+
+<tr>
+  <td>sqcn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses expcn</td>
 </tr>
 
 <TR>
@@ -10128,6 +10557,13 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>cnmpt2pc</td>
+  <td><i>none</i></td>
+  <td>this kind of piecewise definition would apparently rely on
+  real number trichotomy or something similar</td>
+</tr>
+
+<tr>
   <td>df-limc</td>
   <td>~ df-limced</td>
   <td>~ df-limced is adapted from ellimc3 in set.mm</td>
@@ -10138,6 +10574,19 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>~ df-dvap</td>
   <td>The definition is adjusted for the notation of the topology
   on the complex numbers, and for apartness versus negated equality.</td>
+</tr>
+
+<tr>
+  <td>df-dvn and all theorems mentioning iterated derivative (Dn)</td>
+  <td><i>none</i></td>
+  <td>should be easily intuitionizable</td>
+</tr>
+
+<tr>
+  <td>df-cpn and all theorems mentioning -times continuously
+  differentiable functions (C^n)</td>
+  <td><i>none</i></td>
+  <td>should be easily intuitionizable</td>
 </tr>
 
 <tr>
@@ -10273,6 +10722,67 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>dvfg</td>
   <td>~ dvfgg</td>
+</tr>
+
+<tr>
+  <td>dvf</td>
+  <td>~ dvfpm</td>
+</tr>
+
+<tr>
+  <td>dvfcn</td>
+  <td>~ dvfcnpm</td>
+</tr>
+
+<tr>
+  <td>dvres</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on ntrrest and limcres .
+  It may be worth seeing if it is easier to prove
+  the ` S e. { RR , CC } ` case.</td>
+</tr>
+
+<tr>
+  <td>dvres2</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on restntr</td>
+</tr>
+
+<tr>
+  <td>dvres3</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on dvres2</td>
+</tr>
+
+<tr>
+  <td>dvres3a</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on dvres2</td>
+</tr>
+
+<tr>
+  <td>dvidlem</td>
+  <td>~ dvidlemap</td>
+</tr>
+
+<tr>
+  <td>dvcnp</td>
+  <td><i>none</i></td>
+  <td>would appear to rely on decidable equality of real
+  numbers</td>
+</tr>
+
+<tr>
+  <td>dvcnp2</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on subcn , mulcn , cncfmpt2f , limccnp2 ,
+  and the converse of ~ cnplimcim</td>
+</tr>
+
+<tr>
+  <td>dvcn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on dvcnp2</td>
 </tr>
 
 </TABLE>
