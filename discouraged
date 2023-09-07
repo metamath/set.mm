@@ -11565,6 +11565,11 @@
 "psubspi2N" is used by "pclclN".
 "psubspi2N" is used by "pclfinN".
 "psubspi2N" is used by "pclfinclN".
+"pwcda1" is used by "cdalepw".
+"pwcda1" is used by "gchcdaidm".
+"pwcda1" is used by "gchpwdom".
+"pwcda1" is used by "pwcdaidm".
+"pwcda1" is used by "pwsdompw".
 "pwcdaen" is used by "canthp1lem1".
 "pwcdaen" is used by "gchhar".
 "pwcdaen" is used by "gchxpidm".
@@ -17438,6 +17443,7 @@ New usage of "psubclsetN" is discouraged (1 uses).
 New usage of "psubclssatN" is discouraged (9 uses).
 New usage of "psubclsubN" is discouraged (1 uses).
 New usage of "psubspi2N" is discouraged (3 uses).
+New usage of "pwcda1" is discouraged (5 uses).
 New usage of "pwcdaen" is discouraged (5 uses).
 New usage of "pwm1geoserOLD" is discouraged (0 uses).
 New usage of "pwsnALT" is discouraged (0 uses).
