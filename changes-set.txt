@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 8-Sep-23 cdanum    djunum      Changes from +c notation to |_|
  7-Sep-23 sprmpt2d  sprmpod
  7-Sep-23 brovmpt2ex brovmpoex
  7-Sep-23 mpt2xopoveqd mpoxopoveqd
