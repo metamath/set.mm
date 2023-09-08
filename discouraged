@@ -9963,6 +9963,8 @@
 "nn0indALT" is used by "faclbnd4lem4".
 "nn0indALT" is used by "ipasslem1".
 "nn0indALT" is used by "uzaddcl".
+"nnacda" is used by "ackbij1lem5".
+"nnacda" is used by "ackbij1lem9".
 "nnexALT" is used by "qexALT".
 "nnexALT" is used by "reexALT".
 "nnexALT" is used by "zexALT".
@@ -16923,6 +16925,7 @@ New usage of "nn0cniOLD" is discouraged (0 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nn0indALT" is discouraged (3 uses).
 New usage of "nn0sscnOLD" is discouraged (0 uses).
+New usage of "nnacda" is discouraged (2 uses).
 New usage of "nncniOLD" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
