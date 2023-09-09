@@ -2876,7 +2876,6 @@
 "c-bnj18" is used by "bnj983".
 "c-bnj18" is used by "bnj996".
 "c-bnj18" is used by "bnj998".
-"cardacda" is used by "pwsdompw".
 "cba" is used by "0lno".
 "cba" is used by "0ofval".
 "cba" is used by "ajfuni".
@@ -2978,7 +2977,6 @@
 "ccshOLD" is used by "cshnzOLD".
 "cda0en" is used by "cdalepw".
 "cda1dif" is used by "canthp1".
-"cda1en" is used by "pwsdompw".
 "cdacomen" is used by "alephadd".
 "cdacomen" is used by "cdadom2".
 "cdacomen" is used by "cdalepw".
@@ -3021,7 +3019,6 @@
 "cdaen" is used by "cardacda".
 "cdaen" is used by "cdaenun".
 "cdaen" is used by "gchhar".
-"cdaen" is used by "pwsdompw".
 "cdaenun" is used by "cda1en".
 "cdaenun" is used by "cdacomen".
 "cdaenun" is used by "onacda".
@@ -11574,7 +11571,6 @@
 "pwcda1" is used by "gchcdaidm".
 "pwcda1" is used by "gchpwdom".
 "pwcda1" is used by "pwcdaidm".
-"pwcda1" is used by "pwsdompw".
 "pwcdaen" is used by "canthp1lem1".
 "pwcdaen" is used by "gchhar".
 "pwcdaen" is used by "gchxpidm".
@@ -12911,7 +12907,6 @@
 "uncdadom" is used by "infcda".
 "uncdadom" is used by "infdif".
 "uncdadom" is used by "infunabs".
-"uncdadom" is used by "pwsdompw".
 "uncdadom" is used by "unctb".
 "unisnOLD" is used by "unisngOLD".
 "unop" is used by "cnvunop".
@@ -14362,7 +14357,7 @@ New usage of "calemesOLD" is discouraged (0 uses).
 New usage of "calemosOLD" is discouraged (0 uses).
 New usage of "camestresOLD" is discouraged (0 uses).
 New usage of "camestrosOLD" is discouraged (0 uses).
-New usage of "cardacda" is discouraged (1 uses).
+New usage of "cardacda" is discouraged (0 uses).
 New usage of "cases2ALT" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
 New usage of "cba" is discouraged (86 uses).
@@ -14381,12 +14376,12 @@ New usage of "ccats1swrdeqrexOLD" is discouraged (1 uses).
 New usage of "ccshOLD" is discouraged (3 uses).
 New usage of "cda0en" is discouraged (1 uses).
 New usage of "cda1dif" is discouraged (1 uses).
-New usage of "cda1en" is discouraged (1 uses).
+New usage of "cda1en" is discouraged (0 uses).
 New usage of "cdacomen" is discouraged (8 uses).
 New usage of "cdadom1" is discouraged (7 uses).
 New usage of "cdadom2" is discouraged (11 uses).
 New usage of "cdadom3" is discouraged (11 uses).
-New usage of "cdaen" is discouraged (6 uses).
+New usage of "cdaen" is discouraged (5 uses).
 New usage of "cdaenun" is discouraged (4 uses).
 New usage of "cdafi" is discouraged (1 uses).
 New usage of "cdafn" is discouraged (5 uses).
@@ -17451,7 +17446,7 @@ New usage of "psubclsetN" is discouraged (1 uses).
 New usage of "psubclssatN" is discouraged (9 uses).
 New usage of "psubclsubN" is discouraged (1 uses).
 New usage of "psubspi2N" is discouraged (3 uses).
-New usage of "pwcda1" is discouraged (5 uses).
+New usage of "pwcda1" is discouraged (4 uses).
 New usage of "pwcdaen" is discouraged (5 uses).
 New usage of "pwcdaidm" is discouraged (1 uses).
 New usage of "pwm1geoserOLD" is discouraged (0 uses).
@@ -18105,7 +18100,7 @@ New usage of "un0.1" is discouraged (1 uses).
 New usage of "un01" is discouraged (0 uses).
 New usage of "un10" is discouraged (0 uses).
 New usage of "un2122" is discouraged (1 uses).
-New usage of "uncdadom" is discouraged (6 uses).
+New usage of "uncdadom" is discouraged (5 uses).
 New usage of "undif3VD" is discouraged (0 uses).
 New usage of "unierri" is discouraged (0 uses).
 New usage of "unipwr" is discouraged (0 uses).
