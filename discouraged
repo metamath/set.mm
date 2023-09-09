@@ -2991,7 +2991,6 @@
 "cdadom1" is used by "gchhar".
 "cdadom1" is used by "gchpwdom".
 "cdadom1" is used by "infdif".
-"cdadom1" is used by "unctb".
 "cdadom2" is used by "canthp1".
 "cdadom2" is used by "cdalepw".
 "cdadom2" is used by "fin45".
@@ -3002,7 +3001,6 @@
 "cdadom2" is used by "infcdaabs".
 "cdadom2" is used by "infdif".
 "cdadom2" is used by "pwcdandom".
-"cdadom2" is used by "unctb".
 "cdadom3" is used by "cdainf".
 "cdadom3" is used by "gchcda1".
 "cdadom3" is used by "gchcdaidm".
@@ -12904,7 +12902,6 @@
 "uncdadom" is used by "infcda".
 "uncdadom" is used by "infdif".
 "uncdadom" is used by "infunabs".
-"uncdadom" is used by "unctb".
 "unisnOLD" is used by "unisngOLD".
 "unop" is used by "cnvunop".
 "unop" is used by "counop".
@@ -13371,7 +13368,6 @@
 "xp2cda" is used by "fin56".
 "xp2cda" is used by "infcdaabs".
 "xp2cda" is used by "pwcda1".
-"xp2cda" is used by "unctb".
 "zexALT" is used by "qexALT".
 "zfac" is used by "axacndlem4".
 "zfinf" is used by "axinf2".
@@ -14373,8 +14369,8 @@ New usage of "ccshOLD" is discouraged (3 uses).
 New usage of "cda0en" is discouraged (1 uses).
 New usage of "cda1dif" is discouraged (1 uses).
 New usage of "cdacomen" is discouraged (8 uses).
-New usage of "cdadom1" is discouraged (7 uses).
-New usage of "cdadom2" is discouraged (11 uses).
+New usage of "cdadom1" is discouraged (6 uses).
+New usage of "cdadom2" is discouraged (10 uses).
 New usage of "cdadom3" is discouraged (11 uses).
 New usage of "cdaen" is discouraged (4 uses).
 New usage of "cdaenun" is discouraged (3 uses).
@@ -18095,7 +18091,7 @@ New usage of "un0.1" is discouraged (1 uses).
 New usage of "un01" is discouraged (0 uses).
 New usage of "un10" is discouraged (0 uses).
 New usage of "un2122" is discouraged (1 uses).
-New usage of "uncdadom" is discouraged (5 uses).
+New usage of "uncdadom" is discouraged (4 uses).
 New usage of "undif3VD" is discouraged (0 uses).
 New usage of "unierri" is discouraged (0 uses).
 New usage of "unipwr" is discouraged (0 uses).
@@ -18278,7 +18274,7 @@ New usage of "wwlksnredwwlkn0OLD" is discouraged (1 uses).
 New usage of "wwlksnredwwlknOLD" is discouraged (1 uses).
 New usage of "wwlksubclwwlkOLD" is discouraged (1 uses).
 New usage of "xihopellsmN" is discouraged (0 uses).
-New usage of "xp2cda" is discouraged (5 uses).
+New usage of "xp2cda" is discouraged (4 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 New usage of "xrge0tmdOLD" is discouraged (0 uses).
 New usage of "zaddablx" is discouraged (0 uses).
