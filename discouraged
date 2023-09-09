@@ -8409,6 +8409,7 @@
 "in3" is used by "truniALTVD".
 "in3an" is used by "onfrALTlem2VD".
 "indpi" is used by "prlem934".
+"infcda" is used by "alephadd".
 "infcda1" is used by "canthp1lem2".
 "infcda1" is used by "isfin4-3".
 "infcda1" is used by "pwcdaidm".
@@ -16211,6 +16212,7 @@ New usage of "indistps2ALT" is discouraged (0 uses).
 New usage of "indistpsALT" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
+New usage of "infcda" is discouraged (1 uses).
 New usage of "infcda1" is discouraged (3 uses).
 New usage of "infcdaabs" is discouraged (3 uses).
 New usage of "infpssALT" is discouraged (0 uses).
