@@ -3016,10 +3016,8 @@
 "cdadom3" is used by "pwxpndom".
 "cdaen" is used by "ackbij1lem5".
 "cdaen" is used by "ackbij1lem9".
-"cdaen" is used by "cardacda".
 "cdaen" is used by "cdaenun".
 "cdaen" is used by "gchhar".
-"cdaenun" is used by "cda1en".
 "cdaenun" is used by "cdacomen".
 "cdaenun" is used by "onacda".
 "cdaenun" is used by "pwxpndom2".
@@ -10808,7 +10806,6 @@
 "omlsilem" is used by "omlsii".
 "omlspjN" is used by "djajN".
 "omlspjN" is used by "doca2N".
-"onacda" is used by "cardacda".
 "onacda" is used by "nnacda".
 "onfrALTlem1" is used by "onfrALT".
 "onfrALTlem1VD" is used by "onfrALTVD".
@@ -14357,7 +14354,6 @@ New usage of "calemesOLD" is discouraged (0 uses).
 New usage of "calemosOLD" is discouraged (0 uses).
 New usage of "camestresOLD" is discouraged (0 uses).
 New usage of "camestrosOLD" is discouraged (0 uses).
-New usage of "cardacda" is discouraged (0 uses).
 New usage of "cases2ALT" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
 New usage of "cba" is discouraged (86 uses).
@@ -14376,13 +14372,12 @@ New usage of "ccats1swrdeqrexOLD" is discouraged (1 uses).
 New usage of "ccshOLD" is discouraged (3 uses).
 New usage of "cda0en" is discouraged (1 uses).
 New usage of "cda1dif" is discouraged (1 uses).
-New usage of "cda1en" is discouraged (0 uses).
 New usage of "cdacomen" is discouraged (8 uses).
 New usage of "cdadom1" is discouraged (7 uses).
 New usage of "cdadom2" is discouraged (11 uses).
 New usage of "cdadom3" is discouraged (11 uses).
-New usage of "cdaen" is discouraged (5 uses).
-New usage of "cdaenun" is discouraged (4 uses).
+New usage of "cdaen" is discouraged (4 uses).
+New usage of "cdaenun" is discouraged (3 uses).
 New usage of "cdafi" is discouraged (1 uses).
 New usage of "cdafn" is discouraged (5 uses).
 New usage of "cdainf" is discouraged (1 uses).
@@ -17108,7 +17103,7 @@ New usage of "omlsi" is discouraged (1 uses).
 New usage of "omlsii" is discouraged (4 uses).
 New usage of "omlsilem" is discouraged (1 uses).
 New usage of "omlspjN" is discouraged (2 uses).
-New usage of "onacda" is discouraged (2 uses).
+New usage of "onacda" is discouraged (1 uses).
 New usage of "ondomon" is discouraged (0 uses).
 New usage of "onfrALT" is discouraged (0 uses).
 New usage of "onfrALTVD" is discouraged (0 uses).
