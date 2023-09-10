@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+10-Sep-23 mpt2curryvald mpocurryvald
 10-Sep-23 mpt2curryd mpocurryd
 10-Sep-23 tposmpt2  tposmpo
  9-Sep-23 cdainf    djuinf      Changes from +c notation to |_|
