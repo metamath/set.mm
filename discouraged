@@ -2990,7 +2990,6 @@
 "cdadom1" is used by "gchcdaidm".
 "cdadom1" is used by "gchhar".
 "cdadom1" is used by "gchpwdom".
-"cdadom1" is used by "infdif".
 "cdadom2" is used by "canthp1".
 "cdadom2" is used by "cdalepw".
 "cdadom2" is used by "fin45".
@@ -2999,7 +2998,6 @@
 "cdadom2" is used by "gchpwdom".
 "cdadom2" is used by "infcda".
 "cdadom2" is used by "infcdaabs".
-"cdadom2" is used by "infdif".
 "cdadom2" is used by "pwcdandom".
 "cdadom3" is used by "cdainf".
 "cdadom3" is used by "gchcda1".
@@ -3025,7 +3023,6 @@
 "cdafn" is used by "cdadom1".
 "cdafn" is used by "cdainf".
 "cdafn" is used by "pwcdadom".
-"cdainf" is used by "infdif".
 "cdalepw" is used by "gchdomtri".
 "cdaun" is used by "ackbij1lem9".
 "cdaun" is used by "canthp1lem1".
@@ -8414,7 +8411,6 @@
 "infcda1" is used by "isfin4-3".
 "infcda1" is used by "pwcdaidm".
 "infcdaabs" is used by "infcda".
-"infcdaabs" is used by "infdif".
 "int2" is used by "sspwimpVD".
 "int2" is used by "sspwimpcfVD".
 "int2" is used by "suctrALTcfVD".
@@ -12903,7 +12899,6 @@
 "un2122" is used by "suctrALT3".
 "uncdadom" is used by "cdadom3".
 "uncdadom" is used by "infcda".
-"uncdadom" is used by "infdif".
 "unisnOLD" is used by "unisngOLD".
 "unop" is used by "cnvunop".
 "unop" is used by "counop".
@@ -14371,14 +14366,14 @@ New usage of "ccshOLD" is discouraged (3 uses).
 New usage of "cda0en" is discouraged (1 uses).
 New usage of "cda1dif" is discouraged (1 uses).
 New usage of "cdacomen" is discouraged (8 uses).
-New usage of "cdadom1" is discouraged (6 uses).
-New usage of "cdadom2" is discouraged (10 uses).
+New usage of "cdadom1" is discouraged (5 uses).
+New usage of "cdadom2" is discouraged (9 uses).
 New usage of "cdadom3" is discouraged (11 uses).
 New usage of "cdaen" is discouraged (4 uses).
 New usage of "cdaenun" is discouraged (3 uses).
 New usage of "cdafi" is discouraged (1 uses).
 New usage of "cdafn" is discouraged (5 uses).
-New usage of "cdainf" is discouraged (1 uses).
+New usage of "cdainf" is discouraged (0 uses).
 New usage of "cdalepw" is discouraged (1 uses).
 New usage of "cdaun" is discouraged (4 uses).
 New usage of "cdaval" is discouraged (18 uses).
@@ -16212,7 +16207,7 @@ New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
 New usage of "infcda" is discouraged (1 uses).
 New usage of "infcda1" is discouraged (3 uses).
-New usage of "infcdaabs" is discouraged (2 uses).
+New usage of "infcdaabs" is discouraged (1 uses).
 New usage of "infpssALT" is discouraged (0 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
@@ -18095,7 +18090,7 @@ New usage of "un0.1" is discouraged (1 uses).
 New usage of "un01" is discouraged (0 uses).
 New usage of "un10" is discouraged (0 uses).
 New usage of "un2122" is discouraged (1 uses).
-New usage of "uncdadom" is discouraged (3 uses).
+New usage of "uncdadom" is discouraged (2 uses).
 New usage of "undif3VD" is discouraged (0 uses).
 New usage of "unierri" is discouraged (0 uses).
 New usage of "unipwr" is discouraged (0 uses).
