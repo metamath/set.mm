@@ -26,6 +26,32 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 7-Sep-23 sprmpt2d  sprmpod
+ 7-Sep-23 brovmpt2ex brovmpoex
+ 7-Sep-23 mpt2xopoveqd mpoxopoveqd
+ 7-Sep-23 mpt2xopovel mpoxopovel
+ 7-Sep-23 mpt2xopoveq mpoxopoveq
+ 6-Sep-23 bj-speiv  speiv       moved from BJ's mathbox to main set.mm
+ 5-Sep-23 bj-spimev spimefv     moved from BJ's mathbox to main set.mm
+ 5-Sep-23 bj-spimedv spimedv    moved from BJ's mathbox to main set.mm
+ 4-Sep-23 mpt2xopynvov0 mpoxopynvov0
+ 4-Sep-23 mpt2xopxprcov0 mpoxopxprcov0
+ 4-Sep-23 mpt2xopx0ov0 mpoxopx0ov0
+ 4-Sep-23 mpt2xopxnop0 mpoxopxnop0
+ 4-Sep-23 mpt2xopynvov0g mpoxopynvov0g
+ 4-Sep-23 mpt2xopn0yelv mpoxopn0yelv
+ 4-Sep-23 mpt2xneldm mpoxneldm
+ 4-Sep-23 mpt2xeldm mpoxeldm
+ 3-Sep-23 jcn       [same]      moved from GS's mathbox to main set.mm
+ 3-Sep-23 mpt2sn    mposn
+ 3-Sep-23 dfmpt2    dfmpo
+ 3-Sep-23 fmpt2co   fmpoco
+ 3-Sep-23 relmpt2opab relmpoopab
+ 3-Sep-23 fnmpt2ovd fnmpoovd
+ 3-Sep-23 el2mpt2cl el2mpocl
+ 3-Sep-23 el2mpt2csbcl el2mpocsbcl
+ 3-Sep-23 mptmpt2opabovd mptmpoopabovd
+ 2-Sep-23 mptmpt2opabbrd mptmpoopabbrd
 31-Aug-23 mpt2ex    mpoex
 31-Aug-23 mpt2exga  mpoexga
 31-Aug-23 mpt2exg   mpoexg
