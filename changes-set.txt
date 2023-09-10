@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+10-Sep-23 mpt2matmul mpomatmul
 10-Sep-23 mpt2frlmd mpofrlmd
 10-Sep-23 elovmpt2wrd elovmpowrd
 10-Sep-23 fvmpt2curryd fvmpocurryd
