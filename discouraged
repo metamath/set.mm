@@ -398,6 +398,7 @@
 "4syl" is used by "probmeasb".
 "4syl" is used by "proot1mul".
 "4syl" is used by "pwcdadom".
+"4syl" is used by "pwdjudom".
 "4syl" is used by "pwfseqlem5".
 "4syl" is used by "qqhnm".
 "4syl" is used by "qqhucn".
@@ -11562,6 +11563,9 @@
 "pwcda1" is used by "gchcdaidm".
 "pwcda1" is used by "gchpwdom".
 "pwcda1" is used by "pwcdaidm".
+"pwcdadom" is used by "gchdomtri".
+"pwcdadom" is used by "gchhar".
+"pwcdadom" is used by "gchpwdom".
 "pwcdaen" is used by "canthp1lem1".
 "pwcdaen" is used by "gchhar".
 "pwcdaen" is used by "gchxpidm".
@@ -13499,7 +13503,7 @@ New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4cnOLD" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
-New usage of "4syl" is discouraged (189 uses).
+New usage of "4syl" is discouraged (190 uses).
 New usage of "5cnOLD" is discouraged (0 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
@@ -17433,6 +17437,7 @@ New usage of "psubclssatN" is discouraged (9 uses).
 New usage of "psubclsubN" is discouraged (1 uses).
 New usage of "psubspi2N" is discouraged (3 uses).
 New usage of "pwcda1" is discouraged (4 uses).
+New usage of "pwcdadom" is discouraged (3 uses).
 New usage of "pwcdaen" is discouraged (5 uses).
 New usage of "pwcdaidm" is discouraged (1 uses).
 New usage of "pwm1geoserOLD" is discouraged (0 uses).
