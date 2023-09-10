@@ -2999,7 +2999,6 @@
 "cdadom2" is used by "infcda".
 "cdadom2" is used by "infcdaabs".
 "cdadom2" is used by "pwcdandom".
-"cdadom3" is used by "cdainf".
 "cdadom3" is used by "gchcda1".
 "cdadom3" is used by "gchcdaidm".
 "cdadom3" is used by "gchdomtri".
@@ -3021,7 +3020,6 @@
 "cdafn" is used by "cda1dif".
 "cdafn" is used by "cdacomen".
 "cdafn" is used by "cdadom1".
-"cdafn" is used by "cdainf".
 "cdafn" is used by "pwcdadom".
 "cdalepw" is used by "gchdomtri".
 "cdaun" is used by "ackbij1lem9".
@@ -3036,7 +3034,6 @@
 "cdaval" is used by "cdadom1".
 "cdaval" is used by "cdaen".
 "cdaval" is used by "cdafi".
-"cdaval" is used by "cdainf".
 "cdaval" is used by "cdaun".
 "cdaval" is used by "cdaxpdom".
 "cdaval" is used by "infcda1".
@@ -14368,15 +14365,14 @@ New usage of "cda1dif" is discouraged (1 uses).
 New usage of "cdacomen" is discouraged (8 uses).
 New usage of "cdadom1" is discouraged (5 uses).
 New usage of "cdadom2" is discouraged (9 uses).
-New usage of "cdadom3" is discouraged (11 uses).
+New usage of "cdadom3" is discouraged (10 uses).
 New usage of "cdaen" is discouraged (4 uses).
 New usage of "cdaenun" is discouraged (3 uses).
 New usage of "cdafi" is discouraged (1 uses).
-New usage of "cdafn" is discouraged (5 uses).
-New usage of "cdainf" is discouraged (0 uses).
+New usage of "cdafn" is discouraged (4 uses).
 New usage of "cdalepw" is discouraged (1 uses).
 New usage of "cdaun" is discouraged (4 uses).
-New usage of "cdaval" is discouraged (18 uses).
+New usage of "cdaval" is discouraged (17 uses).
 New usage of "cdaxpdom" is discouraged (1 uses).
 New usage of "cdj1i" is discouraged (0 uses).
 New usage of "cdj3i" is discouraged (0 uses).
