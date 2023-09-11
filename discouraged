@@ -14357,6 +14357,7 @@ New usage of "cbvabvOLD" is discouraged (0 uses).
 New usage of "cbvalvOLD" is discouraged (0 uses).
 New usage of "cbveuALT" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
+New usage of "cbvexvOLD" is discouraged (0 uses).
 New usage of "cbvmoOLD" is discouraged (0 uses).
 New usage of "cbvrabvOLD" is discouraged (0 uses).
 New usage of "cbvrexdva2OLD" is discouraged (0 uses).
@@ -18711,6 +18712,7 @@ Proof modification of "cbvabvOLD" is discouraged (12 steps).
 Proof modification of "cbvalvOLD" is discouraged (53 steps).
 Proof modification of "cbveuALT" is discouraged (48 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
+Proof modification of "cbvexvOLD" is discouraged (38 steps).
 Proof modification of "cbvmoOLD" is discouraged (48 steps).
 Proof modification of "cbvrabvOLD" is discouraged (19 steps).
 Proof modification of "cbvrexdva2OLD" is discouraged (128 steps).
