@@ -21,6 +21,28 @@ proposed  sylbird   biimtrrd    etc.
 proposed  syl5*     *trid       (syl5bi -> biimtrid; syl5eqel -> eqeltrid;etc.)
 proposed  syl6*     *trdi
 proposed  *mpt2*    *mpo*       (renaming process underway)
+proposed  cnmpt2k   cnmpompk
+proposed  cnmptk2   cnmpkmpo
+proposed  cnmptk1p  cnmpkmptp
+proposed  cnmptkk   cnmpkmpk
+proposed  cnmpt1k   cnmptmpk
+proposed  cnmptk1   cnmpkmpt
+proposed  cnmptcom  cnmpocom
+proposed  cnmpt2res cnmpores
+proposed  cnmpt1res cnmptres
+proposed  cnmpt22f  cnmpompof
+proposed  cnmpt22   cnmpompo
+proposed  cnmpt2t   cnmpot
+proposed  cnmpt21f  cnmpomptf
+proposed  cnmpt21   cnmpompt
+proposed  cnmpt2c   cnmpoc
+proposed  cnmpt2nd  cnmpo2nd
+proposed  cnmpt1st  cnmpo1st
+proposed  cnmpt12   cnmptmpo
+proposed  cnmpt12f  cnmptmpof
+proposed  cnmpt1t   cnmptt
+proposed  cnmpt11f  cnmptmptf
+proposed  cnmpt11   cnmptmpt
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
