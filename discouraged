@@ -3009,7 +3009,6 @@
 "cdadom3" is used by "isfin4-3".
 "cdadom3" is used by "isfin5-2".
 "cdadom3" is used by "pwxpndom".
-"cdaen" is used by "ackbij1lem5".
 "cdaen" is used by "ackbij1lem9".
 "cdaen" is used by "cdaenun".
 "cdaen" is used by "gchhar".
@@ -9949,7 +9948,6 @@
 "nn0indALT" is used by "faclbnd4lem4".
 "nn0indALT" is used by "ipasslem1".
 "nn0indALT" is used by "uzaddcl".
-"nnacda" is used by "ackbij1lem5".
 "nnacda" is used by "ackbij1lem9".
 "nnexALT" is used by "qexALT".
 "nnexALT" is used by "reexALT".
@@ -13359,7 +13357,6 @@
 "wwlksnredwwlkn0OLD" is used by "rusgrnumwwlksOLD".
 "wwlksnredwwlknOLD" is used by "wwlksnredwwlkn0OLD".
 "wwlksubclwwlkOLD" is used by "numclwlk2lem2fOLD".
-"xp2cda" is used by "ackbij1lem5".
 "xp2cda" is used by "fin56".
 "xp2cda" is used by "infcdaabs".
 "xp2cda" is used by "pwcda1".
@@ -14369,7 +14366,7 @@ New usage of "cdacomen" is discouraged (8 uses).
 New usage of "cdadom1" is discouraged (5 uses).
 New usage of "cdadom2" is discouraged (9 uses).
 New usage of "cdadom3" is discouraged (10 uses).
-New usage of "cdaen" is discouraged (4 uses).
+New usage of "cdaen" is discouraged (3 uses).
 New usage of "cdaenun" is discouraged (3 uses).
 New usage of "cdafi" is discouraged (1 uses).
 New usage of "cdafn" is discouraged (4 uses).
@@ -16899,7 +16896,7 @@ New usage of "nn0cniOLD" is discouraged (0 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nn0indALT" is discouraged (3 uses).
 New usage of "nn0sscnOLD" is discouraged (0 uses).
-New usage of "nnacda" is discouraged (2 uses).
+New usage of "nnacda" is discouraged (1 uses).
 New usage of "nncniOLD" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
@@ -18263,7 +18260,7 @@ New usage of "wwlksnredwwlkn0OLD" is discouraged (1 uses).
 New usage of "wwlksnredwwlknOLD" is discouraged (1 uses).
 New usage of "wwlksubclwwlkOLD" is discouraged (1 uses).
 New usage of "xihopellsmN" is discouraged (0 uses).
-New usage of "xp2cda" is discouraged (4 uses).
+New usage of "xp2cda" is discouraged (3 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 New usage of "xrge0tmdOLD" is discouraged (0 uses).
 New usage of "zaddablx" is discouraged (0 uses).
