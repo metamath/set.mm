@@ -3009,7 +3009,6 @@
 "cdadom3" is used by "isfin4-3".
 "cdadom3" is used by "isfin5-2".
 "cdadom3" is used by "pwxpndom".
-"cdaen" is used by "ackbij1lem9".
 "cdaen" is used by "cdaenun".
 "cdaen" is used by "gchhar".
 "cdaenun" is used by "cdacomen".
@@ -3021,7 +3020,6 @@
 "cdafn" is used by "cdadom1".
 "cdafn" is used by "pwcdadom".
 "cdalepw" is used by "gchdomtri".
-"cdaun" is used by "ackbij1lem9".
 "cdaun" is used by "canthp1lem1".
 "cdaun" is used by "cda0en".
 "cdaun" is used by "cdaenun".
@@ -9948,7 +9946,6 @@
 "nn0indALT" is used by "faclbnd4lem4".
 "nn0indALT" is used by "ipasslem1".
 "nn0indALT" is used by "uzaddcl".
-"nnacda" is used by "ackbij1lem9".
 "nnexALT" is used by "qexALT".
 "nnexALT" is used by "reexALT".
 "nnexALT" is used by "zexALT".
@@ -14366,12 +14363,12 @@ New usage of "cdacomen" is discouraged (8 uses).
 New usage of "cdadom1" is discouraged (5 uses).
 New usage of "cdadom2" is discouraged (9 uses).
 New usage of "cdadom3" is discouraged (10 uses).
-New usage of "cdaen" is discouraged (3 uses).
+New usage of "cdaen" is discouraged (2 uses).
 New usage of "cdaenun" is discouraged (3 uses).
 New usage of "cdafi" is discouraged (1 uses).
 New usage of "cdafn" is discouraged (4 uses).
 New usage of "cdalepw" is discouraged (1 uses).
-New usage of "cdaun" is discouraged (4 uses).
+New usage of "cdaun" is discouraged (3 uses).
 New usage of "cdaval" is discouraged (17 uses).
 New usage of "cdaxpdom" is discouraged (1 uses).
 New usage of "cdj1i" is discouraged (0 uses).
@@ -16896,7 +16893,7 @@ New usage of "nn0cniOLD" is discouraged (0 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nn0indALT" is discouraged (3 uses).
 New usage of "nn0sscnOLD" is discouraged (0 uses).
-New usage of "nnacda" is discouraged (1 uses).
+New usage of "nnacda" is discouraged (0 uses).
 New usage of "nncniOLD" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
