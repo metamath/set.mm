@@ -2977,7 +2977,6 @@
 "ccshOLD" is used by "cshnzOLD".
 "cda0en" is used by "cdalepw".
 "cda1dif" is used by "canthp1".
-"cdacomen" is used by "alephadd".
 "cdacomen" is used by "cdadom2".
 "cdacomen" is used by "cdalepw".
 "cdacomen" is used by "gchdomtri".
@@ -3020,7 +3019,6 @@
 "cdaun" is used by "canthp1lem1".
 "cdaun" is used by "cda0en".
 "cdaun" is used by "cdaenun".
-"cdaval" is used by "alephadd".
 "cdaval" is used by "canthp1lem2".
 "cdaval" is used by "cda1dif".
 "cdaval" is used by "cdacomen".
@@ -8397,7 +8395,6 @@
 "in3" is used by "truniALTVD".
 "in3an" is used by "onfrALTlem2VD".
 "indpi" is used by "prlem934".
-"infcda" is used by "alephadd".
 "infcda1" is used by "canthp1lem2".
 "infcda1" is used by "isfin4-3".
 "infcda1" is used by "pwcdaidm".
@@ -14356,7 +14353,7 @@ New usage of "ccats1swrdeqrexOLD" is discouraged (1 uses).
 New usage of "ccshOLD" is discouraged (3 uses).
 New usage of "cda0en" is discouraged (1 uses).
 New usage of "cda1dif" is discouraged (1 uses).
-New usage of "cdacomen" is discouraged (8 uses).
+New usage of "cdacomen" is discouraged (7 uses).
 New usage of "cdadom1" is discouraged (5 uses).
 New usage of "cdadom2" is discouraged (8 uses).
 New usage of "cdadom3" is discouraged (9 uses).
@@ -14366,7 +14363,7 @@ New usage of "cdafi" is discouraged (1 uses).
 New usage of "cdafn" is discouraged (4 uses).
 New usage of "cdalepw" is discouraged (1 uses).
 New usage of "cdaun" is discouraged (3 uses).
-New usage of "cdaval" is discouraged (17 uses).
+New usage of "cdaval" is discouraged (16 uses).
 New usage of "cdaxpdom" is discouraged (1 uses).
 New usage of "cdj1i" is discouraged (0 uses).
 New usage of "cdj3i" is discouraged (0 uses).
@@ -16190,7 +16187,7 @@ New usage of "indistps2ALT" is discouraged (0 uses).
 New usage of "indistpsALT" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
-New usage of "infcda" is discouraged (1 uses).
+New usage of "infcda" is discouraged (0 uses).
 New usage of "infcda1" is discouraged (3 uses).
 New usage of "infcdaabs" is discouraged (1 uses).
 New usage of "infpssALT" is discouraged (0 uses).
