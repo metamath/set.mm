@@ -6009,6 +6009,9 @@
 "funcringcsetclem7ALTV" is used by "funcringcsetcALTV".
 "funcringcsetclem8ALTV" is used by "funcringcsetcALTV".
 "funcringcsetclem9ALTV" is used by "funcringcsetcALTV".
+"gchcda1" is used by "gchcdaidm".
+"gchcda1" is used by "gchinf".
+"gchcda1" is used by "gchpwdom".
 "gchdomtricda" is used by "gchaclem".
 "gen11" is used by "ax6e2eqVD".
 "gen11" is used by "ax6e2ndeqVD".
@@ -15611,6 +15614,7 @@ New usage of "fvsnOLD" is discouraged (0 uses).
 New usage of "fvsngOLD" is discouraged (0 uses).
 New usage of "fvsnun1OLD" is discouraged (0 uses).
 New usage of "fvsnun2OLD" is discouraged (0 uses).
+New usage of "gchcda1" is discouraged (3 uses).
 New usage of "gchdomtricda" is discouraged (1 uses).
 New usage of "gen11" is discouraged (19 uses).
 New usage of "gen11nv" is discouraged (5 uses).
