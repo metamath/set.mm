@@ -2979,7 +2979,7 @@
 "cda1dif" is used by "canthp1".
 "cdacomen" is used by "cdadom2".
 "cdacomen" is used by "cdalepw".
-"cdacomen" is used by "gchdomtri".
+"cdacomen" is used by "gchdomtricda".
 "cdacomen" is used by "gchhar".
 "cdacomen" is used by "gchpwdom".
 "cdacomen" is used by "pwxpndom".
@@ -2996,7 +2996,7 @@
 "cdadom2" is used by "pwcdandom".
 "cdadom3" is used by "gchcda1".
 "cdadom3" is used by "gchcdaidm".
-"cdadom3" is used by "gchdomtri".
+"cdadom3" is used by "gchdomtricda".
 "cdadom3" is used by "gchhar".
 "cdadom3" is used by "gchpwdom".
 "cdadom3" is used by "infcda1".
@@ -3011,7 +3011,7 @@
 "cdafn" is used by "cdacomen".
 "cdafn" is used by "cdadom1".
 "cdafn" is used by "pwcdadom".
-"cdalepw" is used by "gchdomtri".
+"cdalepw" is used by "gchdomtricda".
 "cdaun" is used by "canthp1lem1".
 "cdaun" is used by "cda0en".
 "cdaun" is used by "cdaenun".
@@ -6007,6 +6007,7 @@
 "funcringcsetclem7ALTV" is used by "funcringcsetcALTV".
 "funcringcsetclem8ALTV" is used by "funcringcsetcALTV".
 "funcringcsetclem9ALTV" is used by "funcringcsetcALTV".
+"gchdomtricda" is used by "gchaclem".
 "gen11" is used by "ax6e2eqVD".
 "gen11" is used by "ax6e2ndeqVD".
 "gen11" is used by "csbfv12gALTVD".
@@ -11546,7 +11547,7 @@
 "pwcda1" is used by "gchcdaidm".
 "pwcda1" is used by "gchpwdom".
 "pwcda1" is used by "pwcdaidm".
-"pwcdadom" is used by "gchdomtri".
+"pwcdadom" is used by "gchdomtricda".
 "pwcdadom" is used by "gchhar".
 "pwcdadom" is used by "gchpwdom".
 "pwcdaen" is used by "canthp1lem1".
@@ -15608,6 +15609,7 @@ New usage of "fvsnOLD" is discouraged (0 uses).
 New usage of "fvsngOLD" is discouraged (0 uses).
 New usage of "fvsnun1OLD" is discouraged (0 uses).
 New usage of "fvsnun2OLD" is discouraged (0 uses).
+New usage of "gchdomtricda" is discouraged (1 uses).
 New usage of "gen11" is discouraged (19 uses).
 New usage of "gen11nv" is discouraged (5 uses).
 New usage of "gen12" is discouraged (7 uses).
