@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+15-Sep-23 isfin4-3  isfin4p1    Changes from +c notation to |_|
 15-Sep-23 finngch   [same]      Changes from +c notation to |_|
 15-Sep-23 canthp1   canthp1cda
 15-Sep-23 canthp1lem1 canthp1cdalem1
