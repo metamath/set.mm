@@ -3006,7 +3006,7 @@
 "cdaen" is used by "cdaenun".
 "cdaen" is used by "gchhar".
 "cdaenun" is used by "cdacomen".
-"cdaenun" is used by "pwxpndom2".
+"cdaenun" is used by "pwxpndom2cda".
 "cdafi" is used by "canthp1cdalem2".
 "cdafn" is used by "cda1dif".
 "cdafn" is used by "cdacomen".
@@ -11555,6 +11555,8 @@
 "pwcdaen" is used by "pwcda1".
 "pwcdaen" is used by "pwcdadom".
 "pwcdaidm" is used by "gchaclem".
+"pwxpndom2cda" is used by "pwcdandom".
+"pwxpndom2cda" is used by "pwxpndom".
 "qexALT" is used by "reexALT".
 "rb-ax1" is used by "rblem1".
 "rb-ax1" is used by "rblem2".
@@ -17417,6 +17419,7 @@ New usage of "pwm1geoserOLD" is discouraged (0 uses).
 New usage of "pwsnALT" is discouraged (0 uses).
 New usage of "pwtrVD" is discouraged (0 uses).
 New usage of "pwtrrVD" is discouraged (0 uses).
+New usage of "pwxpndom2cda" is discouraged (2 uses).
 New usage of "pythi" is discouraged (0 uses).
 New usage of "qexALT" is discouraged (1 uses).
 New usage of "qlax1i" is discouraged (0 uses).
