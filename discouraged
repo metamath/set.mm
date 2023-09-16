@@ -16164,6 +16164,7 @@ New usage of "iidn3" is discouraged (1 uses).
 New usage of "iin1" is discouraged (3 uses).
 New usage of "iin2" is discouraged (0 uses).
 New usage of "iin3" is discouraged (0 uses).
+New usage of "imacosuppOLD" is discouraged (0 uses).
 New usage of "imaelshi" is discouraged (1 uses).
 New usage of "imbi12VD" is discouraged (0 uses).
 New usage of "imbi13" is discouraged (2 uses).
@@ -18000,6 +18001,7 @@ New usage of "superpos" is discouraged (1 uses).
 New usage of "supexpr" is discouraged (1 uses).
 New usage of "suplem1pr" is discouraged (1 uses).
 New usage of "suplem2pr" is discouraged (1 uses).
+New usage of "supp0cosupp0OLD" is discouraged (0 uses).
 New usage of "supsr" is discouraged (1 uses).
 New usage of "supsrlem" is discouraged (1 uses).
 New usage of "swrd0fOLD" is discouraged (2 uses).
@@ -19349,6 +19351,7 @@ Proof modification of "iidn3" is discouraged (8 steps).
 Proof modification of "iin1" is discouraged (1 steps).
 Proof modification of "iin2" is discouraged (1 steps).
 Proof modification of "iin3" is discouraged (1 steps).
+Proof modification of "imacosuppOLD" is discouraged (262 steps).
 Proof modification of "imaexALTV" is discouraged (74 steps).
 Proof modification of "imbi12VD" is discouraged (121 steps).
 Proof modification of "imbi13" is discouraged (34 steps).
@@ -19898,6 +19901,7 @@ Proof modification of "suctrALT2VD" is discouraged (173 steps).
 Proof modification of "suctrALT3" is discouraged (137 steps).
 Proof modification of "suctrALTcf" is discouraged (164 steps).
 Proof modification of "suctrALTcfVD" is discouraged (164 steps).
+Proof modification of "supp0cosupp0OLD" is discouraged (176 steps).
 Proof modification of "swrd0fOLD" is discouraged (102 steps).
 Proof modification of "swrd0fv0OLD" is discouraged (72 steps).
 Proof modification of "swrd0fvOLD" is discouraged (154 steps).
