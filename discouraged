@@ -15501,6 +15501,7 @@ New usage of "equsb1vOLD" is discouraged (0 uses).
 New usage of "equsb1vOLDOLD" is discouraged (0 uses).
 New usage of "equsb3rOLD" is discouraged (0 uses).
 New usage of "equsexALT" is discouraged (0 uses).
+New usage of "equviniOLD" is discouraged (0 uses).
 New usage of "erngbase-rN" is discouraged (4 uses).
 New usage of "erngdv-rN" is discouraged (0 uses).
 New usage of "erngdvlem1-rN" is discouraged (3 uses).
@@ -19053,6 +19054,7 @@ Proof modification of "equsb1vOLD" is discouraged (17 steps).
 Proof modification of "equsb1vOLDOLD" is discouraged (32 steps).
 Proof modification of "equsb3rOLD" is discouraged (34 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
+Proof modification of "equviniOLD" is discouraged (68 steps).
 Proof modification of "eu1OLD" is discouraged (86 steps).
 Proof modification of "eu6OLD" is discouraged (265 steps).
 Proof modification of "euaeOLD" is discouraged (49 steps).
