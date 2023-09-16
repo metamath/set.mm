@@ -11553,6 +11553,7 @@
 "pwcdaen" is used by "pwcda1".
 "pwcdaen" is used by "pwcdadom".
 "pwcdaidm" is used by "gchaclem".
+"pwcdandom" is used by "gchcdaidm".
 "pwxpndom2cda" is used by "pwcdandom".
 "qexALT" is used by "reexALT".
 "rb-ax1" is used by "rblem1".
@@ -17412,6 +17413,7 @@ New usage of "pwcda1" is discouraged (4 uses).
 New usage of "pwcdadom" is discouraged (3 uses).
 New usage of "pwcdaen" is discouraged (5 uses).
 New usage of "pwcdaidm" is discouraged (1 uses).
+New usage of "pwcdandom" is discouraged (1 uses).
 New usage of "pwm1geoserOLD" is discouraged (0 uses).
 New usage of "pwsnALT" is discouraged (0 uses).
 New usage of "pwtrVD" is discouraged (0 uses).
