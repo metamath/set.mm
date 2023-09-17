@@ -75,17 +75,6 @@ jobs:
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v3
-      # Install LaTeX so we can test generated LaTeX. We use extended packages:
-      # texlive-extra-utils provides pdflatex
-      # texlive-fonts-extra provides phonetic.sty
-      # texlive-science provides accents.sty
-      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra texlive-science
-      # Here's an eXample of how to install "extra" LaTeX packages. See: 
-      # https://tex.stackexchange.com/questions/38978/how-can-i-manually-install-a-latex-package-debian-ubuntu-linux/39259#39259
-      # - run: mkdir -p "$HOME/texmf"
-      # - run: wget https://mirrors.ctan.org/macros/latex/contrib/accents.zip -o "$HOME/texmf/accents.zip"
-      # - run: cd "$HOME/texmf"; unzip -j accents.zip
-      # - run: texhash texmf
       # Use GITHUB_PATH to set PATH. For details see:
       # https://docs.github.com/en/free-pro-team@latest/actions/reference/
       # workflow-commands-for-github-actions#setting-an-environment-variable
@@ -140,6 +129,54 @@ jobs:
       # The following checks are arbitrarily included in the metamath job.
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
+
+  ###########################################################
+  tex:
+    name: Generate TeX output using metamath.exe
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    steps:
+      - uses: actions/checkout@v3
+      # Update first to counter problems installing texlive
+      - run: sudo apt-get update --fix-missing
+      # Install LaTeX so we can test generated LaTeX. We use extended packages:
+      # texlive-extra-utils provides pdflatex
+      # texlive-fonts-extra provides phonetic.sty
+      # texlive-science provides accents.sty
+      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra texlive-science
+      # Here's an eXample of how to install "extra" LaTeX packages. See:
+      # https://tex.stackexchange.com/questions/38978/how-can-i-manually-install-a-latex-package-debian-ubuntu-linux/39259#39259
+      # - run: mkdir -p "$HOME/texmf"
+      # - run: wget https://mirrors.ctan.org/macros/latex/contrib/accents.zip -o "$HOME/texmf/accents.zip"
+      # - run: cd "$HOME/texmf"; unzip -j accents.zip
+      # - run: texhash texmf
+      # Use GITHUB_PATH to set PATH. For details see:
+      # https://docs.github.com/en/free-pro-team@latest/actions/reference/
+      # workflow-commands-for-github-actions#setting-an-environment-variable
+      - name: Ensure ~/bin is in PATH
+        run: |
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          mkdir -p "$HOME/bin"
+      - name: Get metamath C program and supporting files
+        run: scripts/download-metamath
+      - name: Record latest version of metamath as env variable
+        run: |
+          echo "METAMATH_LATEST_VERSION=$(cat metamath/.latest_version)" >> $GITHUB_ENV
+      # Note: cache key includes version of metamath in use
+      - name: Cache metamathexe
+        id: cache-metamathexe
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-metamathexe
+        with:
+          path: ~/bin/metamath
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ env.METAMATH_LATEST_VERSION }}
+      - name: Build/install metamath, a C verifier (and more) by Norm Megill
+        if: ${{ !steps.cache-metamathexe.outputs.cache-hit }}
+        run: |
+          gcc --version
+          scripts/build-metamath
       # Check generated LaTeX, to ensure the TeX definitions are okay. set.mm:
       - run: python3 scripts/latex_collector.py set.mm list-set.tex
       - run: pdflatex -halt-on-error list-set.tex 2>&1 | tee ,latex-output
@@ -176,6 +213,49 @@ jobs:
       - name: Verify iset.mm
         run: |
           ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
+
+  ###########################################################
+  metamath-knife:
+    name: Verify using metamath-knife
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Cache metamath-knife
+        id: cache-metamath-knife
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-knife
+        with:
+          path: metamath-knife/target/release/metamath-knife
+          key: ${{ runner.os }}-build-${{ env.cache-name }}
+      - name: Install rust
+        if: ${{ !steps.cache-metamath-knife.outputs.cache-hit }}
+        uses: hecrj/setup-rust-action@v1
+        with:
+          rust-version: stable
+      - name: Install metamath-knife
+        if: ${{ !steps.cache-metamath-knife.outputs.cache-hit }}
+        run: |
+          rm -rf metamath-knife &&
+          git clone --depth 1 https://github.com/metamath/metamath-knife.git &&
+          cd metamath-knife &&
+          cargo build --release
+      - name: Verify set.mm
+        run: |
+          metamath-knife/target/release/metamath-knife --verify \
+          --verify-markup --parse-typesetting ./set.mm
+      - name: Verify iset.mm
+        run: |
+          metamath-knife/target/release/metamath-knife --verify \
+          --verify-markup --parse-typesetting ./iset.mm
+      - name: Check axiom usage for set.mm
+        run: |
+          metamath-knife/target/release/metamath-knife --verify-usage ./set.mm
+      - name: Check axiom usage for iset.mm
+        run: |
+          metamath-knife/target/release/metamath-knife --verify-usage ./iset.mm
 
   ###########################################################
   mmj2:
