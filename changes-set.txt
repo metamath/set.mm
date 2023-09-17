@@ -32,7 +32,7 @@ Date      Old       New         Notes
 15-Sep-23 canthp1   canthp1cda
 15-Sep-23 canthp1lem1 canthp1cdalem1
 15-Sep-23 canthp1lem2 canthp1cdalem2
-14-Sep-23 gchdomtri gchdomtricda
+14-Sep-23 gchdomtri [same]      Changes from +c notation to |_|
 14-Sep-23 infcdaabs infdjuabs   Changes from +c notation to |_|
 14-Sep-23 infcda    infdju      Changes from +c notation to |_|
 14-Sep-23 alephadd  [same]      Changes from +c notation to |_|

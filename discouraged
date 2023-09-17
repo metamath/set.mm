@@ -2981,7 +2981,6 @@
 "cda1dif" is used by "canthp1cda".
 "cdacomen" is used by "cdadom2".
 "cdacomen" is used by "cdalepw".
-"cdacomen" is used by "gchdomtricda".
 "cdacomen" is used by "gchhar".
 "cdadom1" is used by "cdadom2".
 "cdadom1" is used by "cdalepw".
@@ -2994,7 +2993,6 @@
 "cdadom2" is used by "pwcdandom".
 "cdadom3" is used by "gchcda1".
 "cdadom3" is used by "gchcdaidm".
-"cdadom3" is used by "gchdomtricda".
 "cdadom3" is used by "gchhar".
 "cdadom3" is used by "infcda1".
 "cdaen" is used by "cdaenun".
@@ -3006,7 +3004,6 @@
 "cdafn" is used by "cdacomen".
 "cdafn" is used by "cdadom1".
 "cdafn" is used by "pwcdadom".
-"cdalepw" is used by "gchdomtricda".
 "cdaun" is used by "canthp1cdalem1".
 "cdaun" is used by "cda0en".
 "cdaun" is used by "cdaenun".
@@ -11538,7 +11535,6 @@
 "pwcda1" is used by "cdalepw".
 "pwcda1" is used by "gchcdaidm".
 "pwcda1" is used by "pwcdaidm".
-"pwcdadom" is used by "gchdomtricda".
 "pwcdadom" is used by "gchhar".
 "pwcdaen" is used by "canthp1cdalem1".
 "pwcdaen" is used by "gchhar".
@@ -14338,15 +14334,15 @@ New usage of "ccats1swrdeqrexOLD" is discouraged (1 uses).
 New usage of "ccshOLD" is discouraged (3 uses).
 New usage of "cda0en" is discouraged (1 uses).
 New usage of "cda1dif" is discouraged (1 uses).
-New usage of "cdacomen" is discouraged (4 uses).
+New usage of "cdacomen" is discouraged (3 uses).
 New usage of "cdadom1" is discouraged (4 uses).
 New usage of "cdadom2" is discouraged (5 uses).
-New usage of "cdadom3" is discouraged (5 uses).
+New usage of "cdadom3" is discouraged (4 uses).
 New usage of "cdaen" is discouraged (2 uses).
 New usage of "cdaenun" is discouraged (2 uses).
 New usage of "cdafi" is discouraged (1 uses).
 New usage of "cdafn" is discouraged (4 uses).
-New usage of "cdalepw" is discouraged (1 uses).
+New usage of "cdalepw" is discouraged (0 uses).
 New usage of "cdaun" is discouraged (3 uses).
 New usage of "cdaval" is discouraged (15 uses).
 New usage of "cdaxpdom" is discouraged (1 uses).
@@ -15602,7 +15598,6 @@ New usage of "fvsnun1OLD" is discouraged (0 uses).
 New usage of "fvsnun2OLD" is discouraged (0 uses).
 New usage of "gchcda1" is discouraged (1 uses).
 New usage of "gchcdaidm" is discouraged (1 uses).
-New usage of "gchdomtricda" is discouraged (0 uses).
 New usage of "gen11" is discouraged (19 uses).
 New usage of "gen11nv" is discouraged (5 uses).
 New usage of "gen12" is discouraged (7 uses).
@@ -17402,7 +17397,7 @@ New usage of "psubclssatN" is discouraged (9 uses).
 New usage of "psubclsubN" is discouraged (1 uses).
 New usage of "psubspi2N" is discouraged (3 uses).
 New usage of "pwcda1" is discouraged (3 uses).
-New usage of "pwcdadom" is discouraged (2 uses).
+New usage of "pwcdadom" is discouraged (1 uses).
 New usage of "pwcdaen" is discouraged (4 uses).
 New usage of "pwcdaidm" is discouraged (0 uses).
 New usage of "pwcdandom" is discouraged (1 uses).
