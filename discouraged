@@ -8385,7 +8385,6 @@
 "in3an" is used by "onfrALTlem2VD".
 "indpi" is used by "prlem934".
 "infcda1" is used by "canthp1cdalem2".
-"infcda1" is used by "pwcdaidm".
 "int2" is used by "sspwimpVD".
 "int2" is used by "sspwimpcfVD".
 "int2" is used by "suctrALTcfVD".
@@ -11534,7 +11533,6 @@
 "psubspi2N" is used by "pclfinclN".
 "pwcda1" is used by "cdalepw".
 "pwcda1" is used by "gchcdaidm".
-"pwcda1" is used by "pwcdaidm".
 "pwcdadom" is used by "gchhar".
 "pwcdaen" is used by "canthp1cdalem1".
 "pwcdaen" is used by "gchhar".
@@ -16170,7 +16168,7 @@ New usage of "indistps2ALT" is discouraged (0 uses).
 New usage of "indistpsALT" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
-New usage of "infcda1" is discouraged (2 uses).
+New usage of "infcda1" is discouraged (1 uses).
 New usage of "infpssALT" is discouraged (0 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
@@ -17396,10 +17394,9 @@ New usage of "psubclsetN" is discouraged (1 uses).
 New usage of "psubclssatN" is discouraged (9 uses).
 New usage of "psubclsubN" is discouraged (1 uses).
 New usage of "psubspi2N" is discouraged (3 uses).
-New usage of "pwcda1" is discouraged (3 uses).
+New usage of "pwcda1" is discouraged (2 uses).
 New usage of "pwcdadom" is discouraged (1 uses).
 New usage of "pwcdaen" is discouraged (4 uses).
-New usage of "pwcdaidm" is discouraged (0 uses).
 New usage of "pwcdandom" is discouraged (1 uses).
 New usage of "pwm1geoserOLD" is discouraged (0 uses).
 New usage of "pwsnALT" is discouraged (0 uses).
