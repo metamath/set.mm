@@ -396,7 +396,6 @@
 "4syl" is used by "prdsxms".
 "4syl" is used by "probmeasb".
 "4syl" is used by "proot1mul".
-"4syl" is used by "pwcdadom".
 "4syl" is used by "pwdjudom".
 "4syl" is used by "pwfseqlem5".
 "4syl" is used by "qqhnm".
@@ -2990,7 +2989,6 @@
 "cdafn" is used by "cda1dif".
 "cdafn" is used by "cdacomen".
 "cdafn" is used by "cdadom1".
-"cdafn" is used by "pwcdadom".
 "cdaun" is used by "canthp1cdalem1".
 "cdaun" is used by "cdaenun".
 "cdaval" is used by "canthp1cdalem2".
@@ -3004,7 +3002,6 @@
 "cdaval" is used by "cdaxpdom".
 "cdaval" is used by "infcda1".
 "cdaval" is used by "mapcdaen".
-"cdaval" is used by "pwcdadom".
 "cdaval" is used by "uncdadom".
 "cdaval" is used by "xp2cda".
 "cdaval" is used by "xpsc".
@@ -11517,7 +11514,6 @@
 "psubspi2N" is used by "pclfinclN".
 "pwcdaen" is used by "canthp1cdalem1".
 "pwcdaen" is used by "pwcda1".
-"pwcdaen" is used by "pwcdadom".
 "pwxpndom2cda" is used by "pwcdandom".
 "qexALT" is used by "reexALT".
 "rb-ax1" is used by "rblem1".
@@ -13445,7 +13441,7 @@ New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4cnOLD" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
-New usage of "4syl" is discouraged (189 uses).
+New usage of "4syl" is discouraged (188 uses).
 New usage of "5cnOLD" is discouraged (0 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
@@ -14317,9 +14313,9 @@ New usage of "cdadom3" is discouraged (2 uses).
 New usage of "cdaen" is discouraged (1 uses).
 New usage of "cdaenun" is discouraged (2 uses).
 New usage of "cdafi" is discouraged (1 uses).
-New usage of "cdafn" is discouraged (4 uses).
+New usage of "cdafn" is discouraged (3 uses).
 New usage of "cdaun" is discouraged (2 uses).
-New usage of "cdaval" is discouraged (15 uses).
+New usage of "cdaval" is discouraged (14 uses).
 New usage of "cdaxpdom" is discouraged (1 uses).
 New usage of "cdj1i" is discouraged (0 uses).
 New usage of "cdj3i" is discouraged (0 uses).
@@ -17371,8 +17367,7 @@ New usage of "psubclssatN" is discouraged (9 uses).
 New usage of "psubclsubN" is discouraged (1 uses).
 New usage of "psubspi2N" is discouraged (3 uses).
 New usage of "pwcda1" is discouraged (0 uses).
-New usage of "pwcdadom" is discouraged (0 uses).
-New usage of "pwcdaen" is discouraged (3 uses).
+New usage of "pwcdaen" is discouraged (2 uses).
 New usage of "pwcdandom" is discouraged (0 uses).
 New usage of "pwm1geoserOLD" is discouraged (0 uses).
 New usage of "pwsnALT" is discouraged (0 uses).
