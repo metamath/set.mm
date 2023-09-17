@@ -6003,7 +6003,6 @@
 "funcringcsetclem9ALTV" is used by "funcringcsetcALTV".
 "gchcda1" is used by "gchcdaidm".
 "gchcdaidm" is used by "gchhar".
-"gchdomtricda" is used by "gchaclem".
 "gen11" is used by "ax6e2eqVD".
 "gen11" is used by "ax6e2ndeqVD".
 "gen11" is used by "csbfv12gALTVD".
@@ -11545,7 +11544,6 @@
 "pwcdaen" is used by "gchhar".
 "pwcdaen" is used by "pwcda1".
 "pwcdaen" is used by "pwcdadom".
-"pwcdaidm" is used by "gchaclem".
 "pwcdandom" is used by "gchcdaidm".
 "pwxpndom2cda" is used by "pwcdandom".
 "qexALT" is used by "reexALT".
@@ -15604,7 +15602,7 @@ New usage of "fvsnun1OLD" is discouraged (0 uses).
 New usage of "fvsnun2OLD" is discouraged (0 uses).
 New usage of "gchcda1" is discouraged (1 uses).
 New usage of "gchcdaidm" is discouraged (1 uses).
-New usage of "gchdomtricda" is discouraged (1 uses).
+New usage of "gchdomtricda" is discouraged (0 uses).
 New usage of "gen11" is discouraged (19 uses).
 New usage of "gen11nv" is discouraged (5 uses).
 New usage of "gen12" is discouraged (7 uses).
@@ -17406,7 +17404,7 @@ New usage of "psubspi2N" is discouraged (3 uses).
 New usage of "pwcda1" is discouraged (3 uses).
 New usage of "pwcdadom" is discouraged (2 uses).
 New usage of "pwcdaen" is discouraged (4 uses).
-New usage of "pwcdaidm" is discouraged (1 uses).
+New usage of "pwcdaidm" is discouraged (0 uses).
 New usage of "pwcdandom" is discouraged (1 uses).
 New usage of "pwm1geoserOLD" is discouraged (0 uses).
 New usage of "pwsnALT" is discouraged (0 uses).
