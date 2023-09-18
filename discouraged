@@ -4748,6 +4748,8 @@
 "dfhnorm2" is used by "hilnormi".
 "dfhnorm2" is used by "normf".
 "dfhnorm2" is used by "normval".
+"dfich2ai" is used by "dfich2OLD".
+"dfich2bi" is used by "dfich2OLD".
 "dfid2" is used by "fsplit".
 "dfid3" is used by "dfid2".
 "dfiop2" is used by "hoico1".
@@ -14886,6 +14888,9 @@ New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfeu" is discouraged (0 uses).
 New usage of "dfeuOLD" is discouraged (0 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
+New usage of "dfich2OLD" is discouraged (0 uses).
+New usage of "dfich2ai" is discouraged (1 uses).
+New usage of "dfich2bi" is discouraged (1 uses).
 New usage of "dfid2" is discouraged (1 uses).
 New usage of "dfid3" is discouraged (1 uses).
 New usage of "dfiop2" is discouraged (3 uses).
@@ -18664,6 +18669,9 @@ Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dfeuOLD" is discouraged (33 steps).
+Proof modification of "dfich2OLD" is discouraged (134 steps).
+Proof modification of "dfich2ai" is discouraged (140 steps).
+Proof modification of "dfich2bi" is discouraged (121 steps).
 Proof modification of "dfiun2gOLD" is discouraged (134 steps).
 Proof modification of "dfmo" is discouraged (138 steps).
 Proof modification of "dfnul2OLD" is discouraged (44 steps).
