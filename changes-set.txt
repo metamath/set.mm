@@ -26,6 +26,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+17-Sep-23 cdafi     djufi       Changes from +c notation to |_|
+17-Sep-23 cda1dif   dju1dif     Changes from +c notation to |_|
 17-Sep-23 pwcdandom pwdjundom   Changes from +c notation to |_|
 17-Sep-23 pwcda1    pwdju1      Changes from +c notation to |_|
 16-Sep-23 gchcda1   gchdju1     Changes from +c notation to |_|
