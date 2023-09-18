@@ -2987,7 +2987,6 @@
 "cdaval" is used by "cdadom1".
 "cdaval" is used by "cdaen".
 "cdaval" is used by "cdaun".
-"cdaval" is used by "cdaxpdom".
 "cdaval" is used by "infcda1".
 "cdaval" is used by "mapcdaen".
 "cdaval" is used by "uncdadom".
@@ -14294,8 +14293,7 @@ New usage of "cdaen" is discouraged (1 uses).
 New usage of "cdaenun" is discouraged (2 uses).
 New usage of "cdafn" is discouraged (2 uses).
 New usage of "cdaun" is discouraged (1 uses).
-New usage of "cdaval" is discouraged (11 uses).
-New usage of "cdaxpdom" is discouraged (0 uses).
+New usage of "cdaval" is discouraged (10 uses).
 New usage of "cdj1i" is discouraged (0 uses).
 New usage of "cdj3i" is discouraged (0 uses).
 New usage of "cdj3lem1" is discouraged (2 uses).
