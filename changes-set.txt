@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Sep-23 clwwlknonmpt2 clwwlknonmpo
 18-Sep-23 cnmpt2pc  cnmpopc
 17-Sep-23 cdaun     endjudisj   Changes from +c notation to |_|
 17-Sep-23 cdaen     djuen       Changes from +c notation to |_|
