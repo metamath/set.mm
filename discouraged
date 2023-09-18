@@ -273,7 +273,6 @@
 "4syl" is used by "bcm1k".
 "4syl" is used by "binomfallfaclem2".
 "4syl" is used by "bnj1098".
-"4syl" is used by "canthp1cdalem2".
 "4syl" is used by "canthp1lem2".
 "4syl" is used by "cantnf".
 "4syl" is used by "cantnflt2".
@@ -2974,21 +2973,16 @@
 "ccshOLD" is used by "0csh0OLD".
 "ccshOLD" is used by "cshfnOLD".
 "ccshOLD" is used by "cshnzOLD".
-"cda1dif" is used by "canthp1cda".
 "cdacomen" is used by "cdadom2".
 "cdadom1" is used by "cdadom2".
-"cdadom2" is used by "canthp1cda".
 "cdadom3" is used by "infcda1".
 "cdaen" is used by "cdaenun".
 "cdaenun" is used by "cdacomen".
 "cdaenun" is used by "pwxpndom2cda".
-"cdafi" is used by "canthp1cdalem2".
 "cdafn" is used by "cda1dif".
 "cdafn" is used by "cdacomen".
 "cdafn" is used by "cdadom1".
-"cdaun" is used by "canthp1cdalem1".
 "cdaun" is used by "cdaenun".
-"cdaval" is used by "canthp1cdalem2".
 "cdaval" is used by "cda1dif".
 "cdaval" is used by "cdacomen".
 "cdaval" is used by "cdadju".
@@ -3002,7 +2996,6 @@
 "cdaval" is used by "uncdadom".
 "cdaval" is used by "xp2cda".
 "cdaval" is used by "xpsc".
-"cdaxpdom" is used by "canthp1cdalem1".
 "cdj3lem1" is used by "cdj3i".
 "cdj3lem1" is used by "cdj3lem2b".
 "cdj3lem2" is used by "cdj3i".
@@ -8362,7 +8355,6 @@
 "in3" is used by "truniALTVD".
 "in3an" is used by "onfrALTlem2VD".
 "indpi" is used by "prlem934".
-"infcda1" is used by "canthp1cdalem2".
 "int2" is used by "sspwimpVD".
 "int2" is used by "sspwimpcfVD".
 "int2" is used by "suctrALTcfVD".
@@ -11509,7 +11501,6 @@
 "psubspi2N" is used by "pclclN".
 "psubspi2N" is used by "pclfinN".
 "psubspi2N" is used by "pclfinclN".
-"pwcdaen" is used by "canthp1cdalem1".
 "qexALT" is used by "reexALT".
 "rb-ax1" is used by "rblem1".
 "rb-ax1" is used by "rblem2".
@@ -13435,7 +13426,7 @@ New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4cnOLD" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
-New usage of "4syl" is discouraged (188 uses).
+New usage of "4syl" is discouraged (187 uses).
 New usage of "5cnOLD" is discouraged (0 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
@@ -14278,7 +14269,6 @@ New usage of "c0exALT" is discouraged (0 uses).
 New usage of "calemesOLD" is discouraged (0 uses).
 New usage of "camestresOLD" is discouraged (0 uses).
 New usage of "camestrosOLD" is discouraged (0 uses).
-New usage of "canthp1cda" is discouraged (0 uses).
 New usage of "cases2ALT" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
 New usage of "cba" is discouraged (86 uses).
@@ -14299,18 +14289,18 @@ New usage of "ccats1swrdeqOLD" is discouraged (2 uses).
 New usage of "ccats1swrdeqbiOLD" is discouraged (0 uses).
 New usage of "ccats1swrdeqrexOLD" is discouraged (1 uses).
 New usage of "ccshOLD" is discouraged (3 uses).
-New usage of "cda1dif" is discouraged (1 uses).
+New usage of "cda1dif" is discouraged (0 uses).
 New usage of "cdacomen" is discouraged (1 uses).
 New usage of "cdadom1" is discouraged (1 uses).
-New usage of "cdadom2" is discouraged (1 uses).
+New usage of "cdadom2" is discouraged (0 uses).
 New usage of "cdadom3" is discouraged (1 uses).
 New usage of "cdaen" is discouraged (1 uses).
 New usage of "cdaenun" is discouraged (2 uses).
-New usage of "cdafi" is discouraged (1 uses).
+New usage of "cdafi" is discouraged (0 uses).
 New usage of "cdafn" is discouraged (3 uses).
-New usage of "cdaun" is discouraged (2 uses).
-New usage of "cdaval" is discouraged (14 uses).
-New usage of "cdaxpdom" is discouraged (1 uses).
+New usage of "cdaun" is discouraged (1 uses).
+New usage of "cdaval" is discouraged (13 uses).
+New usage of "cdaxpdom" is discouraged (0 uses).
 New usage of "cdj1i" is discouraged (0 uses).
 New usage of "cdj3i" is discouraged (0 uses).
 New usage of "cdj3lem1" is discouraged (2 uses).
@@ -16133,7 +16123,7 @@ New usage of "indistps2ALT" is discouraged (0 uses).
 New usage of "indistpsALT" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
-New usage of "infcda1" is discouraged (1 uses).
+New usage of "infcda1" is discouraged (0 uses).
 New usage of "infpssALT" is discouraged (0 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
@@ -17359,7 +17349,7 @@ New usage of "psubclsetN" is discouraged (1 uses).
 New usage of "psubclssatN" is discouraged (9 uses).
 New usage of "psubclsubN" is discouraged (1 uses).
 New usage of "psubspi2N" is discouraged (3 uses).
-New usage of "pwcdaen" is discouraged (1 uses).
+New usage of "pwcdaen" is discouraged (0 uses).
 New usage of "pwm1geoserOLD" is discouraged (0 uses).
 New usage of "pwsnALT" is discouraged (0 uses).
 New usage of "pwtrVD" is discouraged (0 uses).
