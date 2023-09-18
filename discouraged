@@ -2986,7 +2986,6 @@
 "cdaval" is used by "cdadom1".
 "cdaval" is used by "cdaen".
 "cdaval" is used by "cdaun".
-"cdaval" is used by "mapcdaen".
 "cdaval" is used by "uncdadom".
 "cdaval" is used by "xp2cda".
 "cdaval" is used by "xpsc".
@@ -12820,7 +12819,6 @@
 "ubthlem3" is used by "ubth".
 "un0.1" is used by "sspwimpVD".
 "un2122" is used by "suctrALT3".
-"uncdadom" is used by "cdadom3".
 "unop" is used by "cnvunop".
 "unop" is used by "counop".
 "unop" is used by "unopadj".
@@ -14285,12 +14283,11 @@ New usage of "ccshOLD" is discouraged (3 uses).
 New usage of "cdacomen" is discouraged (1 uses).
 New usage of "cdadom1" is discouraged (1 uses).
 New usage of "cdadom2" is discouraged (0 uses).
-New usage of "cdadom3" is discouraged (0 uses).
 New usage of "cdaen" is discouraged (1 uses).
 New usage of "cdaenun" is discouraged (2 uses).
 New usage of "cdafn" is discouraged (2 uses).
 New usage of "cdaun" is discouraged (1 uses).
-New usage of "cdaval" is discouraged (9 uses).
+New usage of "cdaval" is discouraged (8 uses).
 New usage of "cdj1i" is discouraged (0 uses).
 New usage of "cdj3i" is discouraged (0 uses).
 New usage of "cdj3lem1" is discouraged (2 uses).
@@ -16453,7 +16450,6 @@ New usage of "m1m1sr" is discouraged (1 uses).
 New usage of "m1p1sr" is discouraged (3 uses).
 New usage of "m1r" is discouraged (11 uses).
 New usage of "map2psrpr" is discouraged (1 uses).
-New usage of "mapcdaen" is discouraged (0 uses).
 New usage of "mapd1dim2lem1N" is discouraged (0 uses).
 New usage of "mapdcnv11N" is discouraged (3 uses).
 New usage of "mapdcnvatN" is discouraged (2 uses).
@@ -17988,7 +17984,7 @@ New usage of "un0.1" is discouraged (1 uses).
 New usage of "un01" is discouraged (0 uses).
 New usage of "un10" is discouraged (0 uses).
 New usage of "un2122" is discouraged (1 uses).
-New usage of "uncdadom" is discouraged (1 uses).
+New usage of "uncdadom" is discouraged (0 uses).
 New usage of "undif3VD" is discouraged (0 uses).
 New usage of "unierri" is discouraged (0 uses).
 New usage of "unipwr" is discouraged (0 uses).
