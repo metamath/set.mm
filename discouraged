@@ -11511,7 +11511,6 @@
 "psubspi2N" is used by "pclfinN".
 "psubspi2N" is used by "pclfinclN".
 "pwcdaen" is used by "canthp1cdalem1".
-"pwcdaen" is used by "pwcda1".
 "pwxpndom2cda" is used by "pwcdandom".
 "qexALT" is used by "reexALT".
 "rb-ax1" is used by "rblem1".
@@ -13301,7 +13300,6 @@
 "wwlksnredwwlkn0OLD" is used by "rusgrnumwwlksOLD".
 "wwlksnredwwlknOLD" is used by "wwlksnredwwlkn0OLD".
 "wwlksubclwwlkOLD" is used by "numclwlk2lem2fOLD".
-"xp2cda" is used by "pwcda1".
 "zexALT" is used by "qexALT".
 "zfac" is used by "axacndlem4".
 "zfinf" is used by "axinf2".
@@ -17363,8 +17361,7 @@ New usage of "psubclsetN" is discouraged (1 uses).
 New usage of "psubclssatN" is discouraged (9 uses).
 New usage of "psubclsubN" is discouraged (1 uses).
 New usage of "psubspi2N" is discouraged (3 uses).
-New usage of "pwcda1" is discouraged (0 uses).
-New usage of "pwcdaen" is discouraged (2 uses).
+New usage of "pwcdaen" is discouraged (1 uses).
 New usage of "pwcdandom" is discouraged (0 uses).
 New usage of "pwm1geoserOLD" is discouraged (0 uses).
 New usage of "pwsnALT" is discouraged (0 uses).
@@ -18197,7 +18194,7 @@ New usage of "wwlksnredwwlkn0OLD" is discouraged (1 uses).
 New usage of "wwlksnredwwlknOLD" is discouraged (1 uses).
 New usage of "wwlksubclwwlkOLD" is discouraged (1 uses).
 New usage of "xihopellsmN" is discouraged (0 uses).
-New usage of "xp2cda" is discouraged (1 uses).
+New usage of "xp2cda" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 New usage of "xrge0tmdOLD" is discouraged (0 uses).
 New usage of "zaddablx" is discouraged (0 uses).
