@@ -2978,7 +2978,6 @@
 "cdacomen" is used by "cdadom2".
 "cdadom1" is used by "cdadom2".
 "cdadom2" is used by "canthp1cda".
-"cdadom2" is used by "pwcdandom".
 "cdadom3" is used by "infcda1".
 "cdaen" is used by "cdaenun".
 "cdaenun" is used by "cdacomen".
@@ -11511,7 +11510,6 @@
 "psubspi2N" is used by "pclfinN".
 "psubspi2N" is used by "pclfinclN".
 "pwcdaen" is used by "canthp1cdalem1".
-"pwxpndom2cda" is used by "pwcdandom".
 "qexALT" is used by "reexALT".
 "rb-ax1" is used by "rblem1".
 "rb-ax1" is used by "rblem2".
@@ -14304,7 +14302,7 @@ New usage of "ccshOLD" is discouraged (3 uses).
 New usage of "cda1dif" is discouraged (1 uses).
 New usage of "cdacomen" is discouraged (1 uses).
 New usage of "cdadom1" is discouraged (1 uses).
-New usage of "cdadom2" is discouraged (2 uses).
+New usage of "cdadom2" is discouraged (1 uses).
 New usage of "cdadom3" is discouraged (1 uses).
 New usage of "cdaen" is discouraged (1 uses).
 New usage of "cdaenun" is discouraged (2 uses).
@@ -17362,12 +17360,11 @@ New usage of "psubclssatN" is discouraged (9 uses).
 New usage of "psubclsubN" is discouraged (1 uses).
 New usage of "psubspi2N" is discouraged (3 uses).
 New usage of "pwcdaen" is discouraged (1 uses).
-New usage of "pwcdandom" is discouraged (0 uses).
 New usage of "pwm1geoserOLD" is discouraged (0 uses).
 New usage of "pwsnALT" is discouraged (0 uses).
 New usage of "pwtrVD" is discouraged (0 uses).
 New usage of "pwtrrVD" is discouraged (0 uses).
-New usage of "pwxpndom2cda" is discouraged (1 uses).
+New usage of "pwxpndom2cda" is discouraged (0 uses).
 New usage of "pythi" is discouraged (0 uses).
 New usage of "qexALT" is discouraged (1 uses).
 New usage of "qlax1i" is discouraged (0 uses).
