@@ -4410,7 +4410,6 @@
 "df-c" is used by "opelcn".
 "df-c" is used by "wuncn".
 "df-cbn" is used by "iscbn".
-"df-cda" is used by "cdafn".
 "df-cda" is used by "cdaval".
 "df-ch" is used by "isch".
 "df-ch0" is used by "df0op2".
@@ -14269,7 +14268,6 @@ New usage of "ccats1swrdeqbiOLD" is discouraged (0 uses).
 New usage of "ccats1swrdeqrexOLD" is discouraged (1 uses).
 New usage of "ccshOLD" is discouraged (3 uses).
 New usage of "cdaen" is discouraged (0 uses).
-New usage of "cdafn" is discouraged (0 uses).
 New usage of "cdaun" is discouraged (0 uses).
 New usage of "cdaval" is discouraged (4 uses).
 New usage of "cdj1i" is discouraged (0 uses).
@@ -14766,7 +14764,7 @@ New usage of "df-bnj19" is discouraged (5 uses).
 New usage of "df-bra" is discouraged (3 uses).
 New usage of "df-c" is discouraged (12 uses).
 New usage of "df-cbn" is discouraged (1 uses).
-New usage of "df-cda" is discouraged (2 uses).
+New usage of "df-cda" is discouraged (1 uses).
 New usage of "df-ch" is discouraged (1 uses).
 New usage of "df-ch0" is discouraged (8 uses).
 New usage of "df-chj" is discouraged (1 uses).
