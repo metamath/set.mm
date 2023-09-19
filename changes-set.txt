@@ -26,7 +26,44 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+17-Sep-23 cdaun     endjudisj   Changes from +c notation to |_|
+17-Sep-23 cdaen     djuen       Changes from +c notation to |_|
+17-Sep-23 cdafn     ---         |_| is not a function
+17-Sep-23 cdaenun   djuenun     Changes from +c notation to |_|
+17-Sep-23 cdadom1   djudom1     Changes from +c notation to |_|
+17-Sep-23 cdacomen  djucomen    Changes from +c notation to |_|
+17-Sep-23 cdadom2   djudom2     Changes from +c notation to |_|
+17-Sep-23 pwxpndom2cda pwxpndom2 Changes from +c notation to |_|
+17-Sep-23 xp2cda    xp2dju      Changes from +c notation to |_|
+17-Sep-23 uncdadom  undjudom    Changes from +c notation to |_|
+17-Sep-23 mapcdaen  mapdjuen    Changes from +c notation to |_|
+17-Sep-23 cdadom3   djudoml     Changes from +c notation to |_|
+17-Sep-23 pwcdaen   pwdjuen     Changes from +c notation to |_|
+17-Sep-23 infcda1   infdju1     Changes from +c notation to |_|
+17-Sep-23 cdaxpdom  djuxpdom    Changes from +c notation to |_|
+17-Sep-23 cdafi     djufi       Changes from +c notation to |_|
+17-Sep-23 cda1dif   dju1dif     Changes from +c notation to |_|
+17-Sep-23 pwcdandom pwdjundom   Changes from +c notation to |_|
+17-Sep-23 pwcda1    pwdju1      Changes from +c notation to |_|
+16-Sep-23 gchcda1   gchdju1     Changes from +c notation to |_|
+16-Sep-23 pwcdadom  pwdjudom    Changes from +c notation to |_|
+16-Sep-23 gchcdaidm gchdjuidm   Changes from +c notation to |_|
+16-Sep-23 cda0en    dju0en      Changes from +c notation to |_|
+16-Sep-23 cdalepw   djulepw     Changes from +c notation to |_|
+16-Sep-23 pwcdaidm  pwdjuidm    Changes from +c notation to |_|
+15-Sep-23 pwxpndom2 pwxpndom2cda
+15-Sep-23 isfin4-3  isfin4p1    Changes from +c notation to |_|
+15-Sep-23 finngch   [same]      Changes from +c notation to |_|
+15-Sep-23 canthp1   [same]      Changes from +c notation to |_|
+15-Sep-23 canthp1lem1 [same]    Changes from +c notation to |_|
+15-Sep-23 canthp1lem2 [same]    Changes from +c notation to |_|
 15-Sep-23 fnexd     [same]      moved from GS's mathbox to main set.mm
+14-Sep-23 gchdomtri [same]      Changes from +c notation to |_|
+14-Sep-23 infcdaabs infdjuabs   Changes from +c notation to |_|
+14-Sep-23 infcda    infdju      Changes from +c notation to |_|
+14-Sep-23 alephadd  [same]      Changes from +c notation to |_|
+13-Sep-23 onacda    onadju      Changes from +c notation to |_|
+13-Sep-23 nnacda    nnadju      Changes from +c notation to |_|
 10-Sep-23 mpt2matmul mpomatmul
 10-Sep-23 mpt2frlmd mpofrlmd
 10-Sep-23 elovmpt2wrd elovmpowrd
