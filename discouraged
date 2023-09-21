@@ -15410,6 +15410,7 @@ New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "eu1OLD" is discouraged (0 uses).
 New usage of "eu6OLD" is discouraged (0 uses).
+New usage of "eu6OLDOLD" is discouraged (0 uses).
 New usage of "euaeOLD" is discouraged (0 uses).
 New usage of "euanvOLD" is discouraged (0 uses).
 New usage of "eubiOLD" is discouraged (0 uses).
@@ -18675,7 +18676,7 @@ Proof modification of "dfich2OLD" is discouraged (134 steps).
 Proof modification of "dfich2ai" is discouraged (140 steps).
 Proof modification of "dfich2bi" is discouraged (121 steps).
 Proof modification of "dfiun2gOLD" is discouraged (134 steps).
-Proof modification of "dfmo" is discouraged (138 steps).
+Proof modification of "dfmo" is discouraged (44 steps).
 Proof modification of "dfnul2OLD" is discouraged (44 steps).
 Proof modification of "dfsb2ALT" is discouraged (79 steps).
 Proof modification of "dfsb3ALT" is discouraged (39 steps).
@@ -18939,7 +18940,8 @@ Proof modification of "equsb3rOLD" is discouraged (34 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
 Proof modification of "equviniOLD" is discouraged (68 steps).
 Proof modification of "eu1OLD" is discouraged (86 steps).
-Proof modification of "eu6OLD" is discouraged (265 steps).
+Proof modification of "eu6OLD" is discouraged (52 steps).
+Proof modification of "eu6OLDOLD" is discouraged (265 steps).
 Proof modification of "euaeOLD" is discouraged (49 steps).
 Proof modification of "euanvOLD" is discouraged (7 steps).
 Proof modification of "eubiOLD" is discouraged (15 steps).
