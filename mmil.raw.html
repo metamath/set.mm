@@ -3338,7 +3338,7 @@ the definition of limit ordinal or is it unrelated?).</TD>
 </TR>
 
 <TR>
-<TD>tfinds , tfindsg</TD>
+<TD>tfinds , tfindsg , tfindsg2 , tfindes , tfinds2 , tfinds3</TD>
 <TD>~ tfis3 </TD>
 <TD>We are unable to separate limit and successor ordinals
 using case elimination.</TD>
@@ -3506,6 +3506,14 @@ hasn't been a need for it.</TD>
 <TD>ovtpos</TD>
 <TD>~ ovtposg </TD>
 </TR>
+
+<tr>
+  <td>df-cur , df-unc and all theorems using the curry and uncurry
+  syntaxes</td>
+  <td><i>none</i></td>
+  <td>presumably could be added with only the usual issues around
+  nonempty versus inhabited and the like</td>
+</tr>
 
 <TR>
 <TD>pwuninel</TD>
@@ -3708,6 +3716,24 @@ characteristic function and initial value.</TD>
 <TD>oawordex</TD>
 <TD>~ nnawordex </TD>
 </TR>
+
+<tr>
+  <td>oarec</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on tfinds3</td>
+</tr>
+
+<tr>
+  <td>oaf1o</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ontri1 and oawordeu</td>
+</tr>
+
+<tr>
+  <td>oacomf1o , oacomf1olem</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on oarec and oaf1o</td>
+</tr>
 
 <TR>
 <TD>swoso</TD>
@@ -4819,11 +4845,6 @@ this implies excluded middle</TD>
 </tr>
 
 <tr>
-  <td>cda1en</td>
-  <td>~ dju1en</td>
-</tr>
-
-<tr>
   <td>cda1dif</td>
   <td><i>none</i></td>
 </tr>
@@ -4914,6 +4935,88 @@ this implies excluded middle</TD>
   <td>pwcdaidm , pwdjuidm</td>
   <td><i>none</i></td>
   <td>the set.mm proof relies on infdju1 and pwdju1</td>
+</tr>
+
+<tr>
+  <td>cdalepw , djulepw</td>
+  <td><i>none</i></td>
+</tr>
+
+<tr>
+  <td>onadju</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses oacomf1olem and oarec</td>
+</tr>
+
+<tr>
+  <td>cardadju</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses cardon , onadju , and cardid2</td>
+</tr>
+
+<tr>
+  <td>djunum</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses cardon and cardadju</td>
+</tr>
+
+<tr>
+  <td>unnum</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses djunum , numdom , and undjudom</td>
+</tr>
+
+<tr>
+  <td>nnadju</td>
+  <td><i>none</i></td>
+  <td>depends on various cardinality theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>ficardun</td>
+  <td><i>none</i></td>
+  <td>depends on various cardinality theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>ficardun2</td>
+  <td><i>none</i></td>
+  <td>depends on various cardinality theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>pwsdompw</td>
+  <td><i>none</i></td>
+  <td>depends on various cardinality theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>infdjuabs</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses sbth and other theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>infunabs</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses undjudom and infdjuabs</td>
+</tr>
+
+<tr>
+  <td>infdju</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses sbth and other theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>infdif</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses sbth and other theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>pwcdadom , pwdjudom</td>
+  <td><i>none</i></td>
 </tr>
 
 <TR>
@@ -8261,6 +8364,12 @@ than reals.</TD>
   to ~ seq3coll .</TD>
 </TR>
 
+<tr>
+  <td>df-word and all theorems relating to words over a set</td>
+  <td><i>none</i></td>
+  <td>presumably mostly provable</td>
+</tr>
+
 <TR>
   <TD>seqshft</TD>
   <TD>~ seq3shft</TD>
@@ -10629,7 +10738,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>cnmpt2pc</td>
+  <td>cnmpopc</td>
   <td><i>none</i></td>
   <td>this kind of piecewise definition would apparently rely on
   real number trichotomy or something similar</td>
