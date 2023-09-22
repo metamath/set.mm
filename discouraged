@@ -4748,6 +4748,8 @@
 "dfhnorm2" is used by "hilnormi".
 "dfhnorm2" is used by "normf".
 "dfhnorm2" is used by "normval".
+"dfich2ai" is used by "dfich2OLD".
+"dfich2bi" is used by "dfich2OLD".
 "dfid2" is used by "fsplit".
 "dfid3" is used by "dfid2".
 "dfiop2" is used by "hoico1".
@@ -14886,6 +14888,9 @@ New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfeu" is discouraged (0 uses).
 New usage of "dfeuOLD" is discouraged (0 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
+New usage of "dfich2OLD" is discouraged (0 uses).
+New usage of "dfich2ai" is discouraged (1 uses).
+New usage of "dfich2bi" is discouraged (1 uses).
 New usage of "dfid2" is discouraged (1 uses).
 New usage of "dfid3" is discouraged (1 uses).
 New usage of "dfiop2" is discouraged (3 uses).
@@ -15405,6 +15410,7 @@ New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "eu1OLD" is discouraged (0 uses).
 New usage of "eu6OLD" is discouraged (0 uses).
+New usage of "eu6OLDOLD" is discouraged (0 uses).
 New usage of "euaeOLD" is discouraged (0 uses).
 New usage of "euanvOLD" is discouraged (0 uses).
 New usage of "eubiOLD" is discouraged (0 uses).
@@ -16087,6 +16093,7 @@ New usage of "indistps2ALT" is discouraged (0 uses).
 New usage of "indistpsALT" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
+New usage of "ineq1OLD" is discouraged (0 uses).
 New usage of "infpssALT" is discouraged (0 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
@@ -16654,6 +16661,7 @@ New usage of "nfeud2OLD" is discouraged (0 uses).
 New usage of "nfmo1OLD" is discouraged (0 uses).
 New usage of "nfmod2OLD" is discouraged (0 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
+New usage of "nfsab1OLD" is discouraged (0 uses).
 New usage of "nfsb2ALT" is discouraged (1 uses).
 New usage of "nfsb4ALT" is discouraged (1 uses).
 New usage of "nfsb4tALT" is discouraged (1 uses).
@@ -18664,8 +18672,11 @@ Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dfeuOLD" is discouraged (33 steps).
+Proof modification of "dfich2OLD" is discouraged (134 steps).
+Proof modification of "dfich2ai" is discouraged (140 steps).
+Proof modification of "dfich2bi" is discouraged (121 steps).
 Proof modification of "dfiun2gOLD" is discouraged (134 steps).
-Proof modification of "dfmo" is discouraged (138 steps).
+Proof modification of "dfmo" is discouraged (44 steps).
 Proof modification of "dfnul2OLD" is discouraged (44 steps).
 Proof modification of "dfsb2ALT" is discouraged (79 steps).
 Proof modification of "dfsb3ALT" is discouraged (39 steps).
@@ -18929,7 +18940,8 @@ Proof modification of "equsb3rOLD" is discouraged (34 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
 Proof modification of "equviniOLD" is discouraged (68 steps).
 Proof modification of "eu1OLD" is discouraged (86 steps).
-Proof modification of "eu6OLD" is discouraged (265 steps).
+Proof modification of "eu6OLD" is discouraged (52 steps).
+Proof modification of "eu6OLDOLD" is discouraged (265 steps).
 Proof modification of "euaeOLD" is discouraged (49 steps).
 Proof modification of "euanvOLD" is discouraged (7 steps).
 Proof modification of "eubiOLD" is discouraged (15 steps).
@@ -19250,6 +19262,7 @@ Proof modification of "in3" is discouraged (12 steps).
 Proof modification of "in3an" is discouraged (21 steps).
 Proof modification of "indistps2ALT" is discouraged (43 steps).
 Proof modification of "indistpsALT" is discouraged (64 steps).
+Proof modification of "ineq1OLD" is discouraged (49 steps).
 Proof modification of "infpssALT" is discouraged (52 steps).
 Proof modification of "infregelb" is discouraged (185 steps).
 Proof modification of "int2" is discouraged (14 steps).
@@ -19392,6 +19405,7 @@ Proof modification of "nfeud2OLD" is discouraged (56 steps).
 Proof modification of "nfmo1OLD" is discouraged (25 steps).
 Proof modification of "nfmod2OLD" is discouraged (35 steps).
 Proof modification of "nfopdALT" is discouraged (70 steps).
+Proof modification of "nfsab1OLD" is discouraged (12 steps).
 Proof modification of "nfsb2ALT" is discouraged (18 steps).
 Proof modification of "nfsb4ALT" is discouraged (23 steps).
 Proof modification of "nfsb4tALT" is discouraged (119 steps).
