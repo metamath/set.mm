@@ -26,7 +26,11 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Sep-23 icorempt2 icorempo
+21-Sep-23 csbmpt22g csbmpo123
 20-Sep-23 bj-sels   sels        moved from BJ's mathbox to main set.mm
+20-Sep-23 bj-mpt2mptALT bj-mpomptALT
+20-Sep-23 bj-dfmpt2a bj-dfmpoa
 20-Sep-23 matmpt2   matmpo
 18-Sep-23 mpt2cti   mpocti
 18-Sep-23 mpt2mptxf mpomptxf
