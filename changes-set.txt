@@ -26,7 +26,6 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-22-Sep-23 spimevw   ---         duplicate
 22-Sep-23 bj-spimevv ---        duplicate
 22-Sep-23 bj-spimevw spimevw    moved from BJ's mathbox to main
 20-Sep-23 bj-mpt2mptALT bj-mpomptALT
