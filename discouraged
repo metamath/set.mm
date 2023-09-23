@@ -17549,6 +17549,7 @@ New usage of "sb6fALT" is discouraged (1 uses).
 New usage of "sb7fALT" is discouraged (1 uses).
 New usage of "sbal1" is discouraged (1 uses).
 New usage of "sbal2OLD" is discouraged (0 uses).
+New usage of "sbal2OLDOLD" is discouraged (0 uses).
 New usage of "sbalOLD" is discouraged (0 uses).
 New usage of "sbanALT" is discouraged (1 uses).
 New usage of "sbanOLD" is discouraged (0 uses).
@@ -19660,6 +19661,7 @@ Proof modification of "sb6fALT" is discouraged (49 steps).
 Proof modification of "sb7fALT" is discouraged (68 steps).
 Proof modification of "sbal1" is discouraged (149 steps).
 Proof modification of "sbal2OLD" is discouraged (157 steps).
+Proof modification of "sbal2OLDOLD" is discouraged (157 steps).
 Proof modification of "sbalOLD" is discouraged (49 steps).
 Proof modification of "sbanALT" is discouraged (102 steps).
 Proof modification of "sbanOLD" is discouraged (73 steps).
