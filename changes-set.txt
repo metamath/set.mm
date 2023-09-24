@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+24-Sep-23 cbvmpt22  cbvmpo2
 23-Sep-23 mpt2bi123f mpobi123f
 23-Sep-23 wl-naev   naev        moved from WL's mathbox to main set.mm
 22-Sep-23 bj-spimevw spimevw    moved from BJ's mathbox to main set.mm
