@@ -27,6 +27,14 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 24-Sep-23 0un       [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 ovmpt2x2  ovmpox2
+24-Sep-23 ovmpt2rdx ovmpordx
+24-Sep-23 ovmpt2rdxf ovmpordxf
+24-Sep-23 mpt2exxg2 mpoexxg2
+24-Sep-23 dmmpt2ssx2 dmmpossx2
+24-Sep-23 cbvmpt2x2 cbvmpox2
+24-Sep-23 mpt2mptx2 mpomptx2
+24-Sep-23 opmpt2ismgm opmpoismgm
 24-Sep-23 elrnmpt2id elrnmpoid
 24-Sep-23 cbvmpt21  cbvmpo1
 24-Sep-23 cbvmpt22  cbvmpo2
