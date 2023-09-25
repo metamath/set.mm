@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+24-Sep-23 cbvmpt2x2 cbvmpox2
 24-Sep-23 mpt2mptx2 mpomptx2
 24-Sep-23 opmpt2ismgm opmpoismgm
 24-Sep-23 elrnmpt2id elrnmpoid
