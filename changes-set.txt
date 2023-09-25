@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+24-Sep-23 ovmpt2x2  ovmpox2
 24-Sep-23 ovmpt2rdx ovmpordx
 24-Sep-23 ovmpt2rdxf ovmpordxf
 24-Sep-23 mpt2exxg2 mpoexxg2
