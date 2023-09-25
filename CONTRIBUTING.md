@@ -23,7 +23,7 @@ Walking through the
 To create a proof, you need to pick a tool.
 The Metamath system specifies a common file format, not a single tool
 everyone has to use.
-Many in the community use the [mmj2 tool](http://us.metamath.org#book), and
+Many in the community use the [mmj2 tool](http://us.metamath.org#mmj2), and
 many of the rest use the original metamath C program (aka "metamath.exe").
 The page
 [Metamath Proof Assistants](https://github.com/metamath/set.mm/wiki/Metamath-Proof-Assistants)
