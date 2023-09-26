@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+26-Sep-23 xpsfrn    xpsfrncda
 26-Sep-23 xpsff1o   xpsff1ocda
 26-Sep-23 xpsfval   xpsfvalcda
 24-Sep-23 nelpr1    [same]      moved from GS's mathbox to main set.mm
