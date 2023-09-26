@@ -236,7 +236,9 @@ jobs:
         with:
           rust-version: stable
       - name: Install metamath-knife
-        if: ${{ !steps.cache-metamath-knife.outputs.cache-hit }}
+        # Turning off this caching until we can include the git
+        # revision of metamath-knife in the cache key
+        #if: ${{ !steps.cache-metamath-knife.outputs.cache-hit }}
         run: |
           rm -rf metamath-knife &&
           git clone --depth 1 https://github.com/metamath/metamath-knife.git &&
