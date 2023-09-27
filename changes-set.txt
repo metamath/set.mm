@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+26-Sep-23 xpscf     xpscfcda
 26-Sep-23 xpsfrnel2 xpsfrnel2cda
 26-Sep-23 xpsfeq    xpsfeqcda
 26-Sep-23 xpsff1o2  xpsff1o2cda
