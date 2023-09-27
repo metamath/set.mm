@@ -26,6 +26,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+24-Sep-23 nelpr1    [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 nelpr2    [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 breldmd   [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 fvelimad  [same]      moved from GS's mathbox to main set.mm
 24-Sep-23 0un       [same]      moved from GS's mathbox to main set.mm
 24-Sep-23 ovmpt2x2  ovmpox2
 24-Sep-23 ovmpt2rdx ovmpordx
