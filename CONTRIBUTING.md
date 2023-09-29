@@ -27,7 +27,7 @@ Many in the community use the [mmj2 tool](http://us.metamath.org#mmj2), and
 many of the rest use the original metamath C program (aka "metamath.exe").
 A third option is the [metamath-lamp tool](https://lamp-guide.metamath.org/),
 which can be accessed directly from your web browser at
-[https://expln.github.io/lamp/latest/index.html](https://expln.github.io/lamp/latest/index.html).
+<https://expln.github.io/lamp/latest/index.html>.
 The page
 [Metamath Proof Assistants](https://github.com/metamath/set.mm/wiki/Metamath-Proof-Assistants)
 provides more information about each tool.
