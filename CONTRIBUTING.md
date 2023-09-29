@@ -111,7 +111,7 @@ Then, 'verify markup' will check that no lines became too long due to different
 indentation.  Finally, 'verify proof' is there because you might as well.
 
 In addition, you are encouraged to run `scripts/minimize label`, where label is
-the name of your proof. This script attempts to shorten the proof using other
+the name of your theorem. This script attempts to shorten the proof using other
 theorems in the database. Over many proofs, this can make a big difference in
 speeding up various functions, such as loading the database into a tool.
 However, this step is not a requirement for submissions to be accepted.
