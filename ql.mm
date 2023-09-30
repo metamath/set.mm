@@ -9784,80 +9784,70 @@ $)
     TUPBUPUTVFJST $.
 
   $( Equation 4.10 of [MegPav2000] p. 23.  This is the second part of the
-     equation.  (Contributed by Roy F. Longton, 1-Jul-2005.)  (Revised by Roy
-     F. Longton, 3-Jul-2005.) $)
+     equation.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.2e2 $p |- ( ( a ->1 b ) ^ b ) = ( ( a ^ b ) v ( a ' ^ b ) ) $=
     ( u1lemab ) ABC $.
 
   $( Equation 4.11 of [MegPav2000] p. 23.  This is the first part of the
-     equation.  (Contributed by Roy F. Longton, 1-Jul-2005.)  (Revised by Roy
-     F. Longton, 3-Jul-2005.) $)
+     equation.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.3le1 $p |- ( a ' ->1 b ) ' =< a ' $=
     ( u1lem9a ) ABC $.
 
   $( Equation 4.11 of [MegPav2000] p. 23.  This is the second part of the
-     equation.  (Contributed by Roy F. Longton, 1-Jul-2005.)  (Revised by Roy
-     F. Longton, 3-Jul-2005.) $)
+     equation.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.3le2 $p |- a ' =< ( a ->1 b ) $=
     ( u1lem9b ) ABC $.
 
   $( Equation 4.12 of [MegPav2000] p. 23.  (Contributed by Roy F. Longton,
-     1-Jul-2005.)  (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     1-Jul-2005.) $)
   lem4.6.4 $p |- ( ( a ->1 b ) ->1 b ) = ( a ' ->1 b ) $=
     ( u1lem12 ) ABC $.
 
   $( Equation 4.13 of [MegPav2000] p. 23.  (Contributed by Roy F. Longton,
-     1-Jul-2005.)  (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     1-Jul-2005.) $)
   lem4.6.5 $p |- ( ( a ->1 b ) ' ->1 b ) = ( a ->1 b ) $=
     ( wi1 wn u1lemn1b ax-r1 ) ABCZGDBCABEF $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 0, and j is set to 1.  (Contributed by Roy F. Longton, 1-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 0, and j is set to 1.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.6i0j1 $p |- ( ( a ->0 b ) v ( a ->1 b ) ) = ( a ->0 b ) $=
     ( wn wo wa wi0 wi1 leid lear lelor lel2or leo lebi df-i0 df-i1 2or 3tr1 ) A
     CZBDZRABEZDZDZSABFZABGZDUCUBSSSUASHTBRABIJKSUALMUCSUDUAABNZABOPUEQ $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 0, and j is set to 2.  (Contributed by Roy F. Longton, 1-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 0, and j is set to 2.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.6i0j2 $p |- ( ( a ->0 b ) v ( a ->2 b ) ) = ( a ->0 b ) $=
     ( wn wo wa wi0 wi2 leid leor leao1 lel2or leo lebi df-i0 df-i2 2or 3tr1 ) A
     CZBDZBRBCZEZDZDZSABFZABGZDUDUCSSSUBSHBSUABRIRTBJKKSUBLMUDSUEUBABNZABOPUFQ
     $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 0, and j is set to 3.  (Contributed by Roy F. Longton, 1-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 0, and j is set to 3.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.6i0j3 $p |- ( ( a ->0 b ) v ( a ->3 b ) ) = ( a ->0 b ) $=
     ( wn wo wa wi0 wi3 leid leao1 lel2or lear leo lebi df-i0 df-i3 2or 3tr1 ) A
     CZBDZRBEZRBCZEZDZASEZDZDZSABFZABGZDUGUFSSSUESHUCSUDTSUBRBBIRUABIJASKJJSUELM
     UGSUHUEABNZABOPUIQ $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 0, and j is set to 4.  (Contributed by Roy F. Longton, 1-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 0, and j is set to 4.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.6i0j4 $p |- ( ( a ->0 b ) v ( a ->4 b ) ) = ( a ->0 b ) $=
     ( wn wo wi0 wi4 leid leao4 leao1 lel2or lea leo lebi df-i0 df-i4 2or 3tr1
     wa ) ACZBDZABRZSBRZDZTBCZRZDZDZTABEZABFZDUHUGTTTUFTGUCTUEUATUBBASHSBBIJTUDK
     JJTUFLMUHTUIUFABNZABOPUJQ $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 1, and j is set to 0.  (Contributed by Roy F. Longton, 1-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 1, and j is set to 0.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.6i1j0 $p |- ( ( a ->1 b ) v ( a ->0 b ) ) = ( a ->0 b ) $=
     ( wn wa wo wi1 wi0 lear lelor df-le2 df-i1 df-i0 2or 3tr1 ) ACZABDZEZOBEZER
     ABFZABGZETQRPBOABHIJSQTRABKABLZMUAN $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 1, and j is set to 2.  (Contributed by Roy F. Longton, 1-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 1, and j is set to 2.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.6i1j2 $p |- ( ( a ->1 b ) v ( a ->2 b ) ) = ( a ->0 b ) $=
     ( u12lem ) ABC $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 1, and j is set to 3.  (Contributed by Roy F. Longton, 1-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 1, and j is set to 3.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.6i1j3 $p |- ( ( a ->1 b ) v ( a ->3 b ) ) = ( a ->0 b ) $=
     ( wn wa wo wi1 wi3 ler lecom lea lel2or ax-a3 ax-a2 ran ax-r1 wt lor df-le2
     ax-r5 3tr wi0 leo comcom6 comcom lear lelor ax-a4 df-le1 lem3.3.5lem orordi
@@ -9870,23 +9860,20 @@ $)
     BUTVABVQRQQVFVGVRRTUMTTTUNVKVBVLVIABUOABUPUQABURUS $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 2, and j is set to 0.  (Contributed by Roy F. Longton, 1-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 2, and j is set to 0.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.6i2j0 $p |- ( ( a ->2 b ) v ( a ->0 b ) ) = ( a ->0 b ) $=
     ( wn wa wo wi2 wi0 leor leao1 lel2or df-le2 df-i2 df-i0 2or 3tr1 ) BACZBCZD
     ZEZPBEZETABFZABGZEUBSTBTRBPHPQBIJKUASUBTABLABMZNUCO $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 2, and j is set to 1.  (Contributed by Roy F. Longton, 1-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 2, and j is set to 1.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.6i2j1 $p |- ( ( a ->2 b ) v ( a ->1 b ) ) = ( a ->0 b ) $=
     ( wn wa wo wi2 wi1 wi0 leor leao1 lel2or lear lelor leo lerr ler lebi df-i2
     df-i1 2or df-i0 3tr1 ) BACZBCZDZEZUCABDZEZEZUCBEZABFZABGZEABHUIUJUFUJUHBUJU
     EBUCIUCUDBJKUGBUCABLMKUCUIBUCUHUFUCUGNOBUFUHBUENPKQUKUFULUHABRABSTABUAUB $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 2, and j is set to 4.  (Contributed by Roy F. Longton, 1-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 2, and j is set to 4.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.6i2j4 $p |- ( ( a ->2 b ) v ( a ->4 b ) ) = ( a ->0 b ) $=
     ( wn wa wo wi2 wi4 wi0 ax-a2 ax-r5 ax-a3 ax-r1 lor ancom lan oml 3tr lel2or
     ax-r2 leao1 leao4 leid leor lerr lebi df-i2 df-i4 2or df-i0 3tr1 ) BACZBCZD
@@ -9897,8 +9884,7 @@ $)
     KBBTRURUBRRURVNUMURUQUCUDUEQQQVBUNVCUTABUFABUGUHABUIUJ $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 3, and j is set to 0.  (Contributed by Roy F. Longton, 1-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 3, and j is set to 0.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.6i3j0 $p |- ( ( a ->3 b ) v ( a ->0 b ) ) = ( a ->0 b ) $=
     ( wn wa wi3 wi0 ax-a3 ax-r1 lor ax-a2 omln ax-r2 ax-r5 leid leor lel2or leo
     wo leao1 3tr lebi df-le2 df-i3 df-i0 2or 3tr1 ) ACZBDZUGBCZDZRZAUGBRZDZRZUL
@@ -9907,8 +9893,7 @@ $)
     ULUJUGBBSUGUIBSPUBTTUPUNUQULABUCABUDZUEVCUF $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 3, and j is set to 1.  (Contributed by Roy F. Longton, 1-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 3, and j is set to 1.  (Contributed by Roy F. Longton, 1-Jul-2005.) $)
   lem4.6.6i3j1 $p |- ( ( a ->3 b ) v ( a ->1 b ) ) = ( a ->0 b ) $=
     ( wn wa wo wi3 wi1 wi0 ax-a3 ax-r1 ax-a2 omln ax-r2 ax-r5 leao1 lel2or leid
     lor leao4 leo lerr lebi 3tr df-i3 df-i1 2or df-i0 3tr1 ) ACZBDZUIBCZDZEZAUI
@@ -9917,16 +9902,14 @@ $)
     OUIUKBOPUNUNUQUNQBAUISPPUNVFUMUNUQTUAUBMUCUTUPVAURABUDABUEUFABUGUH $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 4, and j is set to 0.  (Contributed by Roy F. Longton, 2-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 4, and j is set to 0.  (Contributed by Roy F. Longton, 2-Jul-2005.) $)
   lem4.6.6i4j0 $p |- ( ( a ->4 b ) v ( a ->0 b ) ) = ( a ->0 b ) $=
     ( wa wn wo wi4 wi0 leao4 leao1 lel2or lea df-le2 df-i4 df-i0 2or 3tr1 ) ABC
     ZADZBCZEZRBEZBDZCZEZUAEUAABFZABGZEUFUDUATUAUCQUASBARHRBBIJUAUBKJLUEUDUFUAAB
     MABNZOUGP $.
 
   $( Equation 4.14 of [MegPav2000] p. 23.  The variable i in the paper is set
-     to 4, and j is set to 2.  (Contributed by Roy F. Longton, 2-Jul-2005.)
-     (Revised by Roy F. Longton, 3-Jul-2005.) $)
+     to 4, and j is set to 2.  (Contributed by Roy F. Longton, 2-Jul-2005.) $)
   lem4.6.6i4j2 $p |- ( ( a ->4 b ) v ( a ->2 b ) ) = ( a ->0 b ) $=
     ( wa wn wi4 wi2 wi0 ax-a3 ax-r1 ax-a2 ancom lor leor oml2 ax-r5 ax-r2 leao1
     wo 3tr lel2or leao4 leid leo lerr lebi df-i4 df-i2 2or df-i0 3tr1 ) ABCZADZ
@@ -9937,8 +9920,7 @@ $)
 
   ${
     com3iia.1 $e |- a C b $.
-    $( The dual of ~ com3ii .  (Contributed by Roy F. Longton, 2-Jul-2005.)
-       (Revised by Roy F. Longton, 3-Jul-2005.) $)
+    $( The dual of ~ com3ii .  (Contributed by Roy F. Longton, 2-Jul-2005.) $)
     com3iia $p |- ( a v ( a ' ^ b ) ) = ( a v b ) $=
       ( wn wa wo comid comcom2 fh3 lear ax-a4 df-le1 leid ler2an lebi ax-r2 ) A
       ADZBEFAQFZABFZEZSAQBAAAGHCITSRSJSRSSRSAKLSMNOP $.
