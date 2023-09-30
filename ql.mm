@@ -397,7 +397,7 @@ $)
   ${
     cm.1 $e |- a = b $.
     $( Commutative inference rule for ortholattices.  (Contributed by NM,
-       26-May-2008.)  (Revised by NM, 26-May-2008.) $)
+       26-May-2008.) $)
     cm $p |- b = a $=
       ( ax-r1 ) ABCD $.
   $}
@@ -406,7 +406,7 @@ $)
     tr.1 $e |- a = b $.
     tr.2 $e |- b = c $.
     $( Transitive inference rule for ortholattices.  (Contributed by NM,
-       26-May-2008.)  (Revised by NM, 26-May-2008.) $)
+       26-May-2008.) $)
     tr $p |- a = c $=
       ( ax-r2 ) ABCDEF $.
   $}
@@ -2854,8 +2854,7 @@ $)
   ${
     wbctr.1 $e |- ( a == b ) = 1 $.
     wbctr.2 $e |- C ( b , c ) = 1 $.
-    $( Transitive inference.  (Contributed by NM, 13-Oct-1997.)  (Revised by
-       NM, 13-Oct-1997.) $)
+    $( Transitive inference.  (Contributed by NM, 13-Oct-1997.) $)
     wbctr $p |- C ( a , c ) = 1 $=
       ( wa wn wo wdf-c2 wran w2or w3tr1 wdf-c1 ) ACBBCFZBCGZFZHAACFZAOFZHBCEIDQ
       NRPABCDJABODJKLM $.
@@ -7233,7 +7232,7 @@ $)
     e2ast.5 $e |- c =< r ' $.
     $( Lemma towards a possible proof that E*_2 on p. 23 of Mayet, "Equations
        holding in Hilbert lattices" IJTP 2006, holds in all OMLs.  (Contributed
-       by NM, 25-Jun-2006.)  (Revised by NM, 25-Jun-2006.) $)
+       by NM, 25-Jun-2006.) $)
     e2astlem1 $p |- ( ( ( a v b ) ^ ( c v d ) ) ^ ( ( a v c ) v r ) ) =
                    ( ( a v ( b ^ ( c v r ) ) ) ^ ( c v ( d ^ ( a v r ) ) ) ) $=
       ( wo wa ler lecom wn comcom7 fh2r df2le2 wf ax-r2 leo ax-a3 comcom com2or
@@ -10628,31 +10627,31 @@ $)
       BPTBULDBCUGSRUHUI $.
 
     $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
-       NM, 31-Mar-2011.)  (Revised by NM, 31-Mar-2011.) $)
+       NM, 31-Mar-2011.) $)
     vneulem7 $p |- ( ( c ^ a ) v ( b v d ) ) = ( b v d ) $=
       ( wa wo wf leao2 leao1 ler2an lbtr le0 lebi ror or0r tr ) CAFZBDGZGHSGSRH
       SRHRABGZCDGZFHRTUAACBICADJKELRMNOSPQ $.
 
     $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
-       NM, 31-Mar-2011.)  (Revised by NM, 31-Mar-2011.) $)
+       NM, 31-Mar-2011.) $)
     vneulem8 $p |- ( ( ( a v b ) v d ) ^ ( ( b v c ) v d ) ) = ( b v d ) $=
       ( wo wa vneulem6 vneulem7 tr ) ABFDFBCFDFGCAGBDFZFKABCDEHABCDEIJ $.
 
     $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
-       NM, 31-Mar-2011.)  (Revised by NM, 31-Mar-2011.) $)
+       NM, 31-Mar-2011.) $)
     vneulem9 $p |- ( ( ( a v b ) v d ) ^ ( ( a v b ) v c ) )
          = ( ( c ^ d ) v ( a v b ) ) $=
       ( wo wa ancom vneulem5 ax-r2 orcom vneulem4 ror 3tr ) ABFZDFZOCFZGZOQDGZF
       ZSOFCDGZOFRQPGTPQHCDABIJOSKSUAOCDABELMN $.
 
     $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
-       NM, 31-Mar-2011.)  (Revised by NM, 31-Mar-2011.) $)
+       NM, 31-Mar-2011.) $)
     vneulem10 $p |- ( ( ( a v b ) v c ) ^ ( ( a v c ) v d ) ) = ( a v c ) $=
       ( wo wa ax-a2 ax-r5 or32 2an wf orcom tr vneulem8 ) ABFZCFZACFZDFZGBAFZCF
       ZADFCFZGRQUASUBPTCABHIACDJKBADCTDCFZGPCDFZGLTPUCUDBAMDCMKENON $.
 
     $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
-       NM, 31-Mar-2011.)  (Revised by NM, 31-Mar-2011.) $)
+       NM, 31-Mar-2011.) $)
     vneulem11 $p |- ( ( ( b v c ) v d ) ^ ( ( a v c ) v d ) )
          = ( ( c v d ) v ( a ^ b ) ) $=
       ( wo wa ax-a3 orcom tr ax-a2 ror or32 2an wf ancom vneulem9 3tr ) BCFDFZA
@@ -10661,7 +10660,7 @@ $)
   $}
 
   $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by NM,
-     31-Mar-2011.)  (Revised by NM, 31-Mar-2011.) $)
+     31-Mar-2011.) $)
   vneulem12 $p |- ( ( ( c ^ d ) v ( a v b ) ) ^ ( ( c v d ) v ( a ^ b ) ) )
           = ( ( c ^ d ) v ( ( a v b ) ^ ( ( c v d ) v ( a ^ b ) ) ) ) $=
     ( wa wo ml cm orass leao1 df-le2 ror tr lan lor 3tr2 ) CDEZABFZFZQCDFZABEZF
@@ -10671,7 +10670,7 @@ $)
   ${
     vneulem13.1 $e |- ( ( a v b ) ^ ( c v d ) ) = 0 $.
     $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
-       NM, 31-Mar-2011.)  (Revised by NM, 31-Mar-2011.) $)
+       NM, 31-Mar-2011.) $)
     vneulem13 $p |- ( ( c ^ d ) v ( ( a v b ) ^ ( ( c v d ) v ( a ^ b ) ) ) )
            = ( ( c ^ d ) v ( a ^ b ) ) $=
       ( wo wa leao1 leid ler2an lear lebi lor lan mldual wf 2or or0r tr 3tr ) A
@@ -10679,14 +10678,14 @@ $)
       UCIJZUAUCKZLMNUAUBUCOUIPUCFUCUHPUFUCEUFUCUKUJLQUCRSTM $.
 
     $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
-       NM, 31-Mar-2011.)  (Revised by NM, 31-Mar-2011.) $)
+       NM, 31-Mar-2011.) $)
     vneulem14 $p |- ( ( ( c ^ d ) v ( a v b ) ) ^ ( ( c v d ) v ( a ^ b ) ) )
            = ( ( c ^ d ) v ( a ^ b ) ) $=
       ( wa wo vneulem12 vneulem13 tr ) CDFZABGZGCDGABFZGZFKLNFGKMGABCDHABCDEIJ
       $.
 
     $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
-       NM, 31-Mar-2011.)  (Revised by NM, 31-Mar-2011.) $)
+       NM, 31-Mar-2011.) $)
     vneulem15 $p |- ( ( a v c ) ^ ( b v d ) )
         = ( ( ( ( a v b ) v c ) ^ ( ( a v c ) v d ) )
            ^ ( ( ( a v b ) v d ) ^ ( ( b v c ) v d ) ) ) $=
@@ -10694,7 +10693,7 @@ $)
       CDEHABCDEIJK $.
 
     $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
-       NM, 31-Mar-2011.)  (Revised by NM, 31-Mar-2011.) $)
+       NM, 31-Mar-2011.) $)
     vneulem16 $p |- ( ( ( ( a v b ) v c ) ^ ( ( a v c ) v d ) )
            ^ ( ( ( a v b ) v d ) ^ ( ( b v c ) v d ) ) )
         = ( ( a ^ b ) v ( c ^ d ) ) $=
@@ -10706,7 +10705,7 @@ $)
   ${
     vneulem.1 $e |- ( ( a v b ) ^ ( c v d ) ) = 0 $.
     $( von Neumann's modular law lemma.  Lemma 9, Kalmbach p. 96 (Contributed
-       by NM, 31-Mar-2011.)  (Revised by NM, 31-Mar-2011.) $)
+       by NM, 31-Mar-2011.) $)
     vneulem $p |- ( ( a v c ) ^ ( b v d ) ) = ( ( a ^ b ) v ( c ^ d ) ) $=
       ( wo wa vneulem15 vneulem16 tr ) ACFZBDFGABFZCFKDFGLDFBCFDFGGABGCDGFABCDE
       HABCDEIJ $.
@@ -10714,8 +10713,7 @@ $)
 
   ${
     vneulemexp.1 $e |- ( ( a v b ) ^ ( c v d ) ) = 0 $.
-    $( Expanded version of ~ vneulem .  (Contributed by NM, 31-Mar-2011.)
-       (Revised by NM, 31-Mar-2011.) $)
+    $( Expanded version of ~ vneulem .  (Contributed by NM, 31-Mar-2011.) $)
     vneulemexp $p |- ( ( a v c ) ^ ( b v d ) ) = ( ( a ^ b ) v ( c ^ d ) ) $=
       ( wo wa or32 2an orcom ror tr ancom ml cm 3tr ran ler2an lebi wf lor leor
       ax-a2 ax-r5 ax-r2 leid lear anass or0r leao3 lerr bltr lel2or leao2 leror
@@ -11443,7 +11441,7 @@ $)
       VRWSWBUOUIUJWSWBGDGVDUQWCWSUOVLWSDWCDGUNVSUMVBVMUPVHVB $.
 
     $( Part of proof (4)=>(5) in Day/Pickering 1982.  (Contributed by NM,
-       11-Apr-2012.)  (Revised by NM, 11-Apr-2012.) $)
+       11-Apr-2012.) $)
     xdp45lem $p |- ( ( a0 v a1 ) ^ ( ( b0 ^ ( a0 v p0 ) ) v b1 ) )
                   =< ( ( c0 v c1 ) v ( b1 ^ ( a0 v a1 ) ) ) $=
       ( wo wa ax-a2 2an ancom tr leor leror leo le2an bltr df2le2 cm anass or32
