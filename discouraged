@@ -14651,7 +14651,6 @@ New usage of "cnvbraval" is discouraged (1 uses).
 New usage of "cnvoprabOLD" is discouraged (0 uses).
 New usage of "cnvunop" is discouraged (2 uses).
 New usage of "com3rgbi" is discouraged (1 uses).
-New usage of "compneOLD" is discouraged (0 uses).
 New usage of "con3ALT" is discouraged (0 uses).
 New usage of "con3ALT2" is discouraged (0 uses).
 New usage of "con3ALTOLD" is discouraged (0 uses).
@@ -16455,7 +16454,6 @@ New usage of "mapdh7fN" is discouraged (0 uses).
 New usage of "mapdh8d0N" is discouraged (0 uses).
 New usage of "mapdh9aOLDN" is discouraged (1 uses).
 New usage of "mapdheq2biN" is discouraged (0 uses).
-New usage of "mapdm0OLD" is discouraged (0 uses).
 New usage of "mapdordlem1bN" is discouraged (0 uses).
 New usage of "mapdpglem17N" is discouraged (0 uses).
 New usage of "mapdpglem4N" is discouraged (1 uses).
@@ -18623,7 +18621,6 @@ Proof modification of "cnncvsaddassdemo" is discouraged (46 steps).
 Proof modification of "cnncvsmulassdemo" is discouraged (95 steps).
 Proof modification of "cnvoprabOLD" is discouraged (262 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
-Proof modification of "compneOLD" is discouraged (89 steps).
 Proof modification of "con3ALT" is discouraged (54 steps).
 Proof modification of "con3ALT2" is discouraged (14 steps).
 Proof modification of "con3ALTOLD" is discouraged (63 steps).
@@ -19290,7 +19287,6 @@ Proof modification of "luklem8" is discouraged (25 steps).
 Proof modification of "lukshef-ax1" is discouraged (6 steps).
 Proof modification of "lukshefth1" is discouraged (88 steps).
 Proof modification of "lukshefth2" is discouraged (129 steps).
-Proof modification of "mapdm0OLD" is discouraged (108 steps).
 Proof modification of "mathbox" is discouraged (1 steps).
 Proof modification of "max1ALT" is discouraged (48 steps).
 Proof modification of "measdivcstOLD" is discouraged (627 steps).
