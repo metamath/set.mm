@@ -9375,7 +9375,10 @@ $(
 $)
 
   $( New equation that holds in Hilbert space, discovered by Pavicic and Megill
-     (unpublished). $)
+     (unpublished).
+
+     [Editor's note:  The date this was added is unknown within the range
+     1997 to 2012.] (Contributed by NM, 1-Jan-1998.) $)
   ax-newstateeq $a |- ( ( ( a ->1 b ) ->1 ( c ->1 b ) ) ^
                     ( ( a ->1 c ) ^ ( b ->1 a ) ) ) =< ( c ->1 a ) $.
 
