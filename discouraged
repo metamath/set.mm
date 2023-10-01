@@ -5885,7 +5885,6 @@
 "erngset-rN" is used by "erngbase-rN".
 "erngset-rN" is used by "erngfmul-rN".
 "erngset-rN" is used by "erngfplus-rN".
-"eubidvOLD" is used by "mobidvOLDOLD".
 "eucrct2eupth1OLD" is used by "eucrct2eupthOLD".
 "eupthresOLD" is used by "eucrct2eupth1OLD".
 "exatleN" is used by "cdlema2N".
@@ -15409,7 +15408,6 @@ New usage of "euanvOLD" is discouraged (0 uses).
 New usage of "eubiOLD" is discouraged (0 uses).
 New usage of "eubidOLD" is discouraged (0 uses).
 New usage of "eubidOLDOLD" is discouraged (0 uses).
-New usage of "eubidvOLD" is discouraged (1 uses).
 New usage of "eubiiOLD" is discouraged (0 uses).
 New usage of "eucrct2eupth1OLD" is discouraged (1 uses).
 New usage of "eucrct2eupthOLD" is discouraged (0 uses).
@@ -15417,6 +15415,7 @@ New usage of "euequOLD" is discouraged (0 uses).
 New usage of "euexALTOLD" is discouraged (0 uses).
 New usage of "euexOLD" is discouraged (0 uses).
 New usage of "eufOLD" is discouraged (0 uses).
+New usage of "euimOLD" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
 New usage of "eunexOLD" is discouraged (0 uses).
 New usage of "euorvOLD" is discouraged (0 uses).
@@ -16584,7 +16583,6 @@ New usage of "mobidOLD" is discouraged (0 uses).
 New usage of "mobidOLDOLD" is discouraged (0 uses).
 New usage of "mobidvALT" is discouraged (0 uses).
 New usage of "mobidvOLD" is discouraged (0 uses).
-New usage of "mobidvOLDOLD" is discouraged (0 uses).
 New usage of "mobiiOLD" is discouraged (0 uses).
 New usage of "moeuOLD" is discouraged (0 uses).
 New usage of "mofOLD" is discouraged (0 uses).
@@ -16649,7 +16647,6 @@ New usage of "nfeqf2OLD" is discouraged (0 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfeu1ALT" is discouraged (0 uses).
 New usage of "nfeud2OLD" is discouraged (0 uses).
-New usage of "nfmo1OLD" is discouraged (0 uses).
 New usage of "nfmod2OLD" is discouraged (0 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfsab1OLD" is discouraged (0 uses).
@@ -18930,7 +18927,6 @@ Proof modification of "euanvOLD" is discouraged (7 steps).
 Proof modification of "eubiOLD" is discouraged (15 steps).
 Proof modification of "eubidOLD" is discouraged (48 steps).
 Proof modification of "eubidOLDOLD" is discouraged (49 steps).
-Proof modification of "eubidvOLD" is discouraged (48 steps).
 Proof modification of "eubiiOLD" is discouraged (17 steps).
 Proof modification of "eucrct2eupth1OLD" is discouraged (104 steps).
 Proof modification of "eucrct2eupthOLD" is discouraged (1469 steps).
@@ -18938,6 +18934,7 @@ Proof modification of "euequOLD" is discouraged (36 steps).
 Proof modification of "euexALTOLD" is discouraged (32 steps).
 Proof modification of "euexOLD" is discouraged (44 steps).
 Proof modification of "eufOLD" is discouraged (62 steps).
+Proof modification of "euimOLD" is discouraged (37 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
 Proof modification of "eunexOLD" is discouraged (53 steps).
 Proof modification of "euorvOLD" is discouraged (7 steps).
@@ -19354,7 +19351,6 @@ Proof modification of "mobidOLD" is discouraged (49 steps).
 Proof modification of "mobidOLDOLD" is discouraged (48 steps).
 Proof modification of "mobidvALT" is discouraged (48 steps).
 Proof modification of "mobidvOLD" is discouraged (9 steps).
-Proof modification of "mobidvOLDOLD" is discouraged (46 steps).
 Proof modification of "mobiiOLD" is discouraged (17 steps).
 Proof modification of "moeuOLD" is discouraged (52 steps).
 Proof modification of "mofOLD" is discouraged (62 steps).
@@ -19383,7 +19379,6 @@ Proof modification of "nfeqf2OLD" is discouraged (65 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfeu1ALT" is discouraged (25 steps).
 Proof modification of "nfeud2OLD" is discouraged (56 steps).
-Proof modification of "nfmo1OLD" is discouraged (25 steps).
 Proof modification of "nfmod2OLD" is discouraged (35 steps).
 Proof modification of "nfopdALT" is discouraged (70 steps).
 Proof modification of "nfsab1OLD" is discouraged (12 steps).
