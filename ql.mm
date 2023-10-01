@@ -9378,7 +9378,8 @@ $)
      (unpublished).
 
      [Editor's note:  The date this was added is unknown within the range
-     1997 to 2012.] (Contributed by NM, 1-Jan-1998.) $)
+     1997 to 29-Oct-2005. The axiom was discovered before 9-Aug-2003.]
+     (Contributed by NM, 1-Jan-1998.) $)
   ax-newstateeq $a |- ( ( ( a ->1 b ) ->1 ( c ->1 b ) ) ^
                     ( ( a ->1 c ) ^ ( b ->1 a ) ) ) =< ( c ->1 a ) $.
 
