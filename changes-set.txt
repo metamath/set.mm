@@ -26,6 +26,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 2-Oct-23 xpsvalcda xpsval      changes from +c to a pair of ordered pairs
  2-Oct-23 xpslem    xpsrnbas    changes from +c to a pair of ordered pairs
  1-Oct-23 xpsxmetlem [same]     changes from +c to a pair of ordered pairs
  1-Oct-23 xpstopnlem2 [same]    changes from +c to a pair of ordered pairs
