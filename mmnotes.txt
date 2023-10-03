@@ -1250,7 +1250,7 @@ Mario Carneiro finished a major revision of set.mm. Here are his notes:
     cncfco: imported
     cnimass: same as elsubsp2
     cnres: same as elsubsp
-    cnmpt2pc: generalized piececn to two-arg functions and adjusted for
+    cnmpopc: generalized piececn to two-arg functions and adjusted for
     compatibility with cnmpt*
 
     ishomeo2: this is the same as the new ishomeo

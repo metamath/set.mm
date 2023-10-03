@@ -20,7 +20,6 @@ proposed  sylbid    biimtrd     etc.
 proposed  sylbird   biimtrrd    etc.
 proposed  syl5*     *trid       (syl5bi -> biimtrid; syl5eqel -> eqeltrid;etc.)
 proposed  syl6*     *trdi
-proposed  *mpt2*    *mpo*       (renaming process underway)
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
