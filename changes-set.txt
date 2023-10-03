@@ -18,8 +18,42 @@ proposed  syl       imtri       (analogous to *bitr*, sstri, etc.)
 proposed  sylib     imbitri     etc.
 proposed  sylbid    biimtrd     etc.
 proposed  sylbird   biimtrrd    etc.
-proposed  syl5*     *trid       (syl5bi -> biimtrid; syl5eqel -> eqeltrid;etc.)
-proposed  syl6*     *trdi
+proposed  syl5com   imtridcom
+proposed  syl5      imtrid
+proposed  syl56     imtridi
+proposed  syl5d     imtridd
+proposed  syl5bi    biimtrid
+proposed  syl5bir   biimtrrid
+proposed  syl5ib    imbitrid
+proposed  syl5ibcom imbitridcom
+proposed  syl5ibr   imbitrrid
+proposed  syl5ibrcom imbitrridcom
+proposed  syl5bb    bitrid      compare to bitri or bitrd
+proposed  syl5rbb   bitridcom
+proposed  syl5bbr   bitr3id     compare to bitr3i or bitr3d
+proposed  syl5rbbr  bitr3idcom
+proposed  syl5eq    eqtrid      compare to eqtri or eqtrd
+proposed  syl5req   eqtridcom
+proposed  syl5eqr   eqtr3id     compare to eqtr3i or eqtr3d
+proposed  syl5reqr  eqtr3idcom
+proposed  syl5eqel  eqeltrid    compare to eqeltri or eqeltrd
+proposed  syl5eqelr eqeltrrid   compare to eqeltrri or eqeltrrd
+proposed  syl5eleq  eleqtrid    compare to eleqtri or eleqtrd
+proposed  syl5eleqr eleqtrrid   compare to eleqtrri or eleqtrrd
+proposed  syl5eqner eqnetrrid   compare to eqnetrri or eqnetrrd
+proposed  syl5ss    sstrid      compare to sstri or sstrd
+proposed  syl5eqss  eqsstrid    compare to eqsstri or eqsstrd
+proposed  syl5eqssr eqsstrrid   compare to eqsstr3i or eqsstr3d
+proposed  eqsstr3i  eqsstrri
+proposed  eqsstr3d  eqsstrrd
+proposed  syl5sseq  sseqtrid    compare to sseqtri or sseqtrd
+proposed  syl5sseqr sseqtrrid
+proposed  syl5eqbr  eqbrtrid    compare to eqbrtri or eqbrtrd
+proposed  syl5eqbrr eqbrtrrid   compare to eqbrtrri or eqbrtrrd
+proposed  syl5breq  breqtrid    compare to breqtri or breqtrd
+proposed  syl5breqr breqtrrid   compare to breqtrri or breqtrrd
+proposed  wl-luk-syl5 wl-luk-imtrid
+proposed  syl6*     *trdi       analogous to *trid theorems
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
