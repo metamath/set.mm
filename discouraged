@@ -13377,7 +13377,6 @@ New usage of "2zrngALT" is discouraged (0 uses).
 New usage of "3anidm12p1" is discouraged (0 uses).
 New usage of "3anidm12p2" is discouraged (0 uses).
 New usage of "3atnelvolN" is discouraged (2 uses).
-New usage of "3cnOLD" is discouraged (0 uses).
 New usage of "3dimlem3OLDN" is discouraged (0 uses).
 New usage of "3dimlem4OLDN" is discouraged (0 uses).
 New usage of "3impdirp1" is discouraged (0 uses).
@@ -13401,10 +13400,8 @@ New usage of "3polN" is discouraged (4 uses).
 New usage of "4atex2-0aOLDN" is discouraged (1 uses).
 New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
-New usage of "4cnOLD" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
 New usage of "4syl" is discouraged (189 uses).
-New usage of "5cnOLD" is discouraged (0 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
@@ -13413,10 +13410,6 @@ New usage of "5oalem4" is discouraged (1 uses).
 New usage of "5oalem5" is discouraged (1 uses).
 New usage of "5oalem6" is discouraged (1 uses).
 New usage of "5oalem7" is discouraged (1 uses).
-New usage of "6cnOLD" is discouraged (0 uses).
-New usage of "7cnOLD" is discouraged (0 uses).
-New usage of "8cnOLD" is discouraged (0 uses).
-New usage of "9cnOLD" is discouraged (0 uses).
 New usage of "9p10ne21fool" is discouraged (0 uses).
 New usage of "a1ii" is discouraged (0 uses).
 New usage of "abbi2dvOLD" is discouraged (0 uses).
@@ -16779,11 +16772,9 @@ New usage of "nn0cniOLD" is discouraged (0 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nn0indALT" is discouraged (3 uses).
 New usage of "nn0sscnOLD" is discouraged (0 uses).
-New usage of "nncniOLD" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnne0ALT" is discouraged (0 uses).
-New usage of "nnsscnOLD" is discouraged (0 uses).
 New usage of "nnsszOLD" is discouraged (0 uses).
 New usage of "noelOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
@@ -18196,7 +18187,6 @@ Proof modification of "2zrngALT" is discouraged (207 steps).
 Proof modification of "31prm" is discouraged (541 steps).
 Proof modification of "3anidm12p1" is discouraged (5 steps).
 Proof modification of "3anidm12p2" is discouraged (19 steps).
-Proof modification of "3cnOLD" is discouraged (3 steps).
 Proof modification of "3dimlem3OLDN" is discouraged (335 steps).
 Proof modification of "3dimlem4OLDN" is discouraged (338 steps).
 Proof modification of "3impdirp1" is discouraged (21 steps).
@@ -18208,12 +18198,6 @@ Proof modification of "3orbi123" is discouraged (29 steps).
 Proof modification of "3orbi123VD" is discouraged (134 steps).
 Proof modification of "3ornot23" is discouraged (28 steps).
 Proof modification of "3ornot23VD" is discouraged (74 steps).
-Proof modification of "4cnOLD" is discouraged (3 steps).
-Proof modification of "5cnOLD" is discouraged (3 steps).
-Proof modification of "6cnOLD" is discouraged (3 steps).
-Proof modification of "7cnOLD" is discouraged (3 steps).
-Proof modification of "8cnOLD" is discouraged (3 steps).
-Proof modification of "9cnOLD" is discouraged (3 steps).
 Proof modification of "9p10ne21fool" is discouraged (33 steps).
 Proof modification of "a1ii" is discouraged (1 steps).
 Proof modification of "abbi2dvOLD" is discouraged (24 steps).
@@ -19421,11 +19405,9 @@ Proof modification of "nn0cniOLD" is discouraged (5 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nn0indALT" is discouraged (15 steps).
 Proof modification of "nn0sscnOLD" is discouraged (6 steps).
-Proof modification of "nncniOLD" is discouraged (5 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnne0ALT" is discouraged (19 steps).
-Proof modification of "nnsscnOLD" is discouraged (6 steps).
 Proof modification of "nnsszOLD" is discouraged (18 steps).
 Proof modification of "noelOLD" is discouraged (27 steps).
 Proof modification of "normlem7tALT" is discouraged (177 steps).
