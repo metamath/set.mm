@@ -13333,6 +13333,7 @@ New usage of "1t1e1ALT" is discouraged (0 uses).
 New usage of "235t711" is discouraged (0 uses).
 New usage of "2atm2atN" is discouraged (0 uses).
 New usage of "2atnelvolN" is discouraged (0 uses).
+New usage of "2ax6eOLD" is discouraged (0 uses).
 New usage of "2bornot2b" is discouraged (0 uses).
 New usage of "2clwwlk2clwwlkOLD" is discouraged (0 uses).
 New usage of "2clwwlklemOLD" is discouraged (2 uses).
@@ -17933,7 +17934,6 @@ New usage of "tratrbVD" is discouraged (0 uses).
 New usage of "trelded" is discouraged (1 uses).
 New usage of "trintALT" is discouraged (0 uses).
 New usage of "trintALTVD" is discouraged (0 uses).
-New usage of "trintOLD" is discouraged (0 uses).
 New usage of "trlcoabs2N" is discouraged (1 uses).
 New usage of "trlresOLD" is discouraged (0 uses).
 New usage of "trlreslemOLD" is discouraged (2 uses).
@@ -18167,6 +18167,7 @@ Proof modification of "1div0apr" is discouraged (77 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "1p2e3ALT" is discouraged (7 steps).
 Proof modification of "1t1e1ALT" is discouraged (13 steps).
+Proof modification of "2ax6eOLD" is discouraged (47 steps).
 Proof modification of "2bornot2b" is discouraged (26 steps).
 Proof modification of "2clwwlk2clwwlkOLD" is discouraged (782 steps).
 Proof modification of "2clwwlklemOLD" is discouraged (90 steps).
@@ -19820,7 +19821,6 @@ Proof modification of "trcleq2lemRP" is discouraged (32 steps).
 Proof modification of "trelded" is discouraged (27 steps).
 Proof modification of "trintALT" is discouraged (166 steps).
 Proof modification of "trintALTVD" is discouraged (211 steps).
-Proof modification of "trintOLD" is discouraged (129 steps).
 Proof modification of "trlresOLD" is discouraged (111 steps).
 Proof modification of "trlreslemOLD" is discouraged (198 steps).
 Proof modification of "trsbc" is discouraged (203 steps).
