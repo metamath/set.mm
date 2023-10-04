@@ -20,12 +20,23 @@ proposed  sylbid    biimtrd     etc.
 proposed  sylbird   biimtrrd    etc.
 proposed  syl5*     *trid       (syl5bi -> biimtrid; syl5eqel -> eqeltrid;etc.)
 proposed  syl6*     *trdi
-proposed  *mpt2*    *mpo*       (renaming process underway)
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 2-Oct-23 xpsfeqcda xpsfeq      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpscfv    fvprif      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsfvalcda xpsfval    changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsff1ocda xpsff1o    changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsfrncda xpsfrn      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsff1o2cda xpsff1o2  changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsvalcda xpsval      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpslem    xpsrnbas    changes from +c to a pair of ordered pairs
+ 1-Oct-23 xpsxmetlem [same]     changes from +c to a pair of ordered pairs
+ 1-Oct-23 xpstopnlem2 [same]    changes from +c to a pair of ordered pairs
+ 1-Oct-23 xpstopnlem1 [same]    changes from +c to a pair of ordered pairs
+29-Sep-23 xpsaddlem [same]      changes from +c to a pair of ordered pairs
 26-Sep-23 xpscf     xpscfcda
 26-Sep-23 xpsfrnel2 xpsfrnel2cda
 26-Sep-23 xpsfeq    xpsfeqcda
