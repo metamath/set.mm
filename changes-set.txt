@@ -20,16 +20,53 @@ proposed  sylbid    biimtrd     etc.
 proposed  sylbird   biimtrrd    etc.
 proposed  syl5*     *trid       (syl5bi -> biimtrid; syl5eqel -> eqeltrid;etc.)
 proposed  syl6*     *trdi
-proposed  *mpt2*    *mpo*       (renaming process underway)
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 2-Oct-23 xpsfeqcda xpsfeq      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpscfv    fvprif      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsfvalcda xpsfval    changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsff1ocda xpsff1o    changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsfrncda xpsfrn      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsff1o2cda xpsff1o2  changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsvalcda xpsval      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpslem    xpsrnbas    changes from +c to a pair of ordered pairs
+ 1-Oct-23 xpsxmetlem [same]     changes from +c to a pair of ordered pairs
+ 1-Oct-23 xpstopnlem2 [same]    changes from +c to a pair of ordered pairs
+ 1-Oct-23 xpstopnlem1 [same]    changes from +c to a pair of ordered pairs
+29-Sep-23 xpsaddlem [same]      changes from +c to a pair of ordered pairs
+26-Sep-23 xpscf     xpscfcda
+26-Sep-23 xpsfrnel2 xpsfrnel2cda
+26-Sep-23 xpsfeq    xpsfeqcda
+26-Sep-23 xpsff1o2  xpsff1o2cda
+26-Sep-23 xpsfrn2   ---         deleted
+26-Sep-23 xpsfrn    xpsfrncda
+26-Sep-23 xpsff1o   xpsff1ocda
+26-Sep-23 xpsfval   xpsfvalcda
+24-Sep-23 nelpr1    [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 nelpr2    [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 breldmd   [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 fvelimad  [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 0un       [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 ovmpt2x2  ovmpox2
+24-Sep-23 ovmpt2rdx ovmpordx
+24-Sep-23 ovmpt2rdxf ovmpordxf
+24-Sep-23 mpt2exxg2 mpoexxg2
+24-Sep-23 dmmpt2ssx2 dmmpossx2
+24-Sep-23 cbvmpt2x2 cbvmpox2
+24-Sep-23 mpt2mptx2 mpomptx2
+24-Sep-23 opmpt2ismgm opmpoismgm
+24-Sep-23 elrnmpt2id elrnmpoid
+24-Sep-23 cbvmpt21  cbvmpo1
+24-Sep-23 cbvmpt22  cbvmpo2
+23-Sep-23 mpt2bi123f mpobi123f
 23-Sep-23 wl-naev   naev        moved from WL's mathbox to main set.mm
 22-Sep-23 bj-spimevw spimevw    moved from BJ's mathbox to main set.mm
 21-Sep-23 icorempt2 icorempo
 21-Sep-23 csbmpt22g csbmpo123
+21-Sep-23 xpsval    xpsvalcda
 20-Sep-23 bj-sels   sels        moved from BJ's mathbox to main set.mm
 20-Sep-23 bj-mpt2mptALT bj-mpomptALT
 20-Sep-23 bj-dfmpt2a bj-dfmpoa
