@@ -26,6 +26,7 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
  6-Oct-23 vtocl2d   [same]      moved from TA's mathbox to main set.mm
+ 4-Oct-23 xpscg     ---         +c is no longer used or needed
  4-Oct-23 dfxpspr   df-xps      changes from +c to a pair of ordered pairs
  4-Oct-23 df-xps    [same]      changes from +c to a pair of ordered pairs
  4-Oct-23 xpscfn    fnpr2o      changes from +c to a pair of ordered pairs
