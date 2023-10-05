@@ -26,6 +26,7 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
  6-Oct-23 vtocl2d   [same]      moved from TA's mathbox to main set.mm
+ 4-Oct-23 cdaval    df-dju      use |_| instead of +c
  4-Oct-23 cdadju    ---         use |_| instead of +c
  4-Oct-23 xpsc      ---         +c is no longer used or needed
  4-Oct-23 xpscg     ---         +c is no longer used or needed
