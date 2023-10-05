@@ -26,6 +26,7 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
  6-Oct-23 vtocl2d   [same]      moved from TA's mathbox to main set.mm
+ 4-Oct-23 xpsfrnel2cda xpsfrnel2 changes from +c to a pair of ordered pairs
  4-Oct-23 xpscfcda  xpscf       changes from +c to a pair of ordered pairs
  4-Oct-23 dprdpr    [same]      changes from +c to a pair of ordered pairs
  4-Oct-23 dmdprdpr  [same]      changes from +c to a pair of ordered pairs
