@@ -18032,6 +18032,7 @@ New usage of "vsfval" is discouraged (4 uses).
 New usage of "vtocl2OLD" is discouraged (0 uses).
 New usage of "vtocl2gOLD" is discouraged (0 uses).
 New usage of "vtoclALT" is discouraged (0 uses).
+New usage of "vtoclgftOLD" is discouraged (0 uses).
 New usage of "vtxdusgr0edgnelALT" is discouraged (0 uses).
 New usage of "w-bnj13" is discouraged (5 uses).
 New usage of "w-bnj15" is discouraged (92 uses).
@@ -18364,7 +18365,6 @@ Proof modification of "bj-bijust0ALT" is discouraged (6 steps).
 Proof modification of "bj-biorfi" is discouraged (12 steps).
 Proof modification of "bj-brrelex12ALT" is discouraged (66 steps).
 Proof modification of "bj-cbv1hv" is discouraged (62 steps).
-Proof modification of "bj-cbv1v" is discouraged (66 steps).
 Proof modification of "bj-cbv2hv" is discouraged (67 steps).
 Proof modification of "bj-cbv2v" is discouraged (47 steps).
 Proof modification of "bj-cbv3hv2" is discouraged (10 steps).
@@ -19869,6 +19869,7 @@ Proof modification of "vk15.4jVD" is discouraged (268 steps).
 Proof modification of "vtocl2OLD" is discouraged (84 steps).
 Proof modification of "vtocl2gOLD" is discouraged (28 steps).
 Proof modification of "vtoclALT" is discouraged (11 steps).
+Proof modification of "vtoclgftOLD" is discouraged (142 steps).
 Proof modification of "vtxdusgr0edgnelALT" is discouraged (94 steps).
 Proof modification of "wfrlem4OLD" is discouraged (543 steps).
 Proof modification of "wl-cases2-dnf" is discouraged (85 steps).
