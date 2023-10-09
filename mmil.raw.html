@@ -9896,11 +9896,26 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>The set.mm proof relies on setsdm</TD>
 </TR>
 
-<TR>
-  <TD>ressval</TD>
-  <TD>~ ressid2 , ~ ressval2</TD>
-  <TD>For the ` B C_ A ` and ` -. B C_ A ` cases, respectively.</TD>
-</TR>
+<tr>
+  <td>df-ress</td>
+  <td>~ df-iress</td>
+  <td>The set.mm definition is based on ` ( Base `` w ) C_ x `
+  being decidable, so it is more convenient to stick to the
+  non-trivial case.</td>
+</tr>
+
+<tr>
+  <td>ressval</td>
+  <td>~ ressvalsets</td>
+</tr>
+
+<tr>
+  <td>ressid2</td>
+  <td><i>none</i></td>
+  <td>Given ~ df-iress this needs additional conditions on ` W ` , for
+  example the ones in ~ strsetsid (which can be used together with
+  ~ ressvalsets ).</td>
+</tr>
 
 <TR>
   <TD>ressbas</TD>
@@ -9921,17 +9936,16 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>The set.mm proof relies on excluded middle.</TD>
 </TR>
 
+<tr>
+  <td>ressid</td>
+  <td>~ strressid</td>
+</tr>
+
 <TR>
   <TD>ressinbas</TD>
   <TD><I>none</I></TD>
   <TD>Apparently needs to have conditions added, for example
   that ` W ` is a set plus one of ` B C_ A ` or ` -. B C_ A ` .</TD>
-</TR>
-
-<TR>
-  <TD>ressval3d</TD>
-  <TD><I>none</I></TD>
-  <TD>The set.mm proof relies on setsidvald and sspss .</TD>
 </TR>
 
 <TR>
@@ -11626,7 +11640,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>ressxms , ressms</td>
   <td><i>none</i></td>
-  <td>Awaits revision of ~ df-ress as described at <a
+  <td>May be possible now that we have ~ df-iress as described at <a
   href="https://github.com/metamath/set.mm/issues/3022">Clean
   up multifunction restriction operator for extensible structures
   in iset.mm</a></td>
