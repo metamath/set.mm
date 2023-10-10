@@ -13705,7 +13705,6 @@ New usage of "axcnex" is discouraged (0 uses).
 New usage of "axcnre" is discouraged (0 uses).
 New usage of "axdc" is discouraged (0 uses).
 New usage of "axdistr" is discouraged (0 uses).
-New usage of "axext3ALT" is discouraged (0 uses).
 New usage of "axfrege8" is discouraged (0 uses).
 New usage of "axhcompl-zf" is discouraged (0 uses).
 New usage of "axhfi-zf" is discouraged (0 uses).
@@ -18295,7 +18294,6 @@ Proof modification of "axc5sp1" is discouraged (11 steps).
 Proof modification of "axc711" is discouraged (37 steps).
 Proof modification of "axc711to11" is discouraged (32 steps).
 Proof modification of "axc711toc7" is discouraged (37 steps).
-Proof modification of "axext3ALT" is discouraged (57 steps).
 Proof modification of "axfrege8" is discouraged (31 steps).
 Proof modification of "axi12OLD" is discouraged (76 steps).
 Proof modification of "axnul" is discouraged (36 steps).
@@ -18351,14 +18349,6 @@ Proof modification of "bj-axc16g16" is discouraged (25 steps).
 Proof modification of "bj-axc4" is discouraged (15 steps).
 Proof modification of "bj-axd2d" is discouraged (16 steps).
 Proof modification of "bj-axdd2" is discouraged (28 steps).
-Proof modification of "bj-axext3" is discouraged (57 steps).
-Proof modification of "bj-axrep1" is discouraged (190 steps).
-Proof modification of "bj-axrep2" is discouraged (181 steps).
-Proof modification of "bj-axrep3" is discouraged (122 steps).
-Proof modification of "bj-axrep4" is discouraged (130 steps).
-Proof modification of "bj-axrep5" is discouraged (125 steps).
-Proof modification of "bj-axsep" is discouraged (132 steps).
-Proof modification of "bj-axsep2" is discouraged (58 steps).
 Proof modification of "bj-axtd" is discouraged (26 steps).
 Proof modification of "bj-bibibi" is discouraged (34 steps).
 Proof modification of "bj-bijust0ALT" is discouraged (6 steps).
@@ -18397,7 +18387,6 @@ Proof modification of "bj-ceqsalt0" is discouraged (116 steps).
 Proof modification of "bj-ceqsalt1" is discouraged (118 steps).
 Proof modification of "bj-ceqsaltv" is discouraged (45 steps).
 Proof modification of "bj-ceqsalv" is discouraged (10 steps).
-Proof modification of "bj-chvarvv" is discouraged (11 steps).
 Proof modification of "bj-clabel" is discouraged (43 steps).
 Proof modification of "bj-cleljusti" is discouraged (20 steps).
 Proof modification of "bj-cmnssmnd" is discouraged (36 steps).
