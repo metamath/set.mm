@@ -15,9 +15,21 @@ The ones WITH "Notes" may have to be processed manually.
 PROPOSED:
 Date      Old       New         Notes
 proposed  syl       imtri       (analogous to *bitr*, sstri, etc.)
-proposed  sylib     imbitri     etc.
-proposed  sylbid    biimtrd     etc.
-proposed  sylbird   biimtrrd    etc.
+proposed  syld      imtrd
+proposed  syldc     imtrdcom
+proposed  syldd     imtrdd
+proposed  sylbi     biimtri
+proposed  sylib     imbitri
+proposed  sylbb     bitriim
+proposed  sylibr    imbitrri
+proposed  sylbir    biimtrri
+proposed  sylbbr    bitrriim
+proposed  sylbb1    bitr3iim
+proposed  sylbb2    bitr4iim
+proposed  sylibd    imbitrd
+proposed  sylbid    biimtrd
+proposed  sylibrd   imbitrrd
+proposed  sylbird   biimtrrd
 proposed  syl5com   imtridcom
 proposed  syl5      imtrid
 proposed  syl56     imtridi
