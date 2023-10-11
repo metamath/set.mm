@@ -26,6 +26,20 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
  6-Oct-23 vtocl2d   [same]      moved from TA's mathbox to main set.mm
+ 4-Oct-23 df-cda    df-dju      use |_| instead of +c
+ 4-Oct-23 cdaval    df-dju      use |_| instead of +c
+ 4-Oct-23 cdadju    ---         use |_| instead of +c
+ 4-Oct-23 xpsc      ---         +c is no longer used or needed
+ 4-Oct-23 xpscg     ---         +c is no longer used or needed
+ 4-Oct-23 dfxpspr   df-xps      changes from +c to a pair of ordered pairs
+ 4-Oct-23 df-xps    [same]      changes from +c to a pair of ordered pairs
+ 4-Oct-23 xpscfn    fnpr2o      changes from +c to a pair of ordered pairs
+ 4-Oct-23 xpsc0     fvpr0o      changes from +c to a pair of ordered pairs
+ 4-Oct-23 xpsc1     fvpr1o      changes from +c to a pair of ordered pairs
+ 4-Oct-23 xpsfrnel2cda xpsfrnel2 changes from +c to a pair of ordered pairs
+ 4-Oct-23 xpscfcda  xpscf       changes from +c to a pair of ordered pairs
+ 4-Oct-23 dprdpr    [same]      changes from +c to a pair of ordered pairs
+ 4-Oct-23 dmdprdpr  [same]      changes from +c to a pair of ordered pairs
  2-Oct-23 xpsfeqcda xpsfeq      changes from +c to a pair of ordered pairs
  2-Oct-23 xpscfv    fvprif      changes from +c to a pair of ordered pairs
  2-Oct-23 xpsfvalcda xpsfval    changes from +c to a pair of ordered pairs
