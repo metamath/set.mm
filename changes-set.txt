@@ -65,7 +65,35 @@ proposed  syl5eqbrr eqbrtrrid   compare to eqbrtrri or eqbrtrrd
 proposed  syl5breq  breqtrid    compare to breqtri or breqtrd
 proposed  syl5breqr breqtrrid   compare to breqtrri or breqtrrd
 proposed  wl-luk-syl5 wl-luk-imtrid
-proposed  syl6*     *trdi       analogous to *trid theorems
+proposed  syl6      imtrdi
+proposed  syl6com   imtrdicom
+proposed  syl6d     imtrdid
+proposed  syl6ib    imbitrdi
+proposed  syl6ibr   imbitrrdi
+proposed  syl6bi    biimtrdi
+proposed  syl6bir   biimtrrdi
+proposed  syl6bb    bitrdi      compare to bitri or bitrd
+proposed  syl6rbb   bitrdicom
+proposed  syl6bbr   bitr4di     compare to bitr4i or bitr4d
+proposed  syl6rbbr  bitr4dicom
+proposed  syl6eq    eqtrdi      compare to eqtri or eqtrd
+proposed  syl6req   eqtrdicom
+proposed  syl6eqr   eqtr4di     compare to eqtr4i or eqtr4d
+proposed  syl6reqr  eqtr4dicom
+proposed  syl6eqel  eqeltrdi    compare to eqeltri or eqeltrd
+proposed  syl6eqelr eqeltrrdi   compare to eqeltrri or eqeltrrd
+proposed  syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
+proposed  syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
+proposed  syl6ss    sstrdi      compare to sstri or sstrd
+proposed  syl6sseq  sseqtrdi    compare to sseqtri or sseqtrd
+proposed  syl6sseqr sseqtrrdi
+proposed  syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
+proposed  syl6eqssr eqsstrrdi
+proposed  syl6eqbr  eqbrtrdi    compare to eqbrtri or eqbrtrd
+proposed  syl6eqbrr eqbrtrrdi   compare to eqbrtrri or eqbrtrrd
+proposed  syl6breq  breqtrdi    compare to breqtri or breqtrd
+proposed  syl6breqr breqtrrdi   compare to breqtrri or breqtrrd
+proposed  wl-luk-syl6 wl-luk-imtrdi
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
