@@ -24273,14 +24273,15 @@ $)
   $}
 
   ${
-    $d x y z $.  $d x z ph $.  $d y z ps $.
+    $d x y z $.  $d x z ps $.  $d y z ph $.
     sbralie.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Implicit to explicit substitution that swaps variables in a quantified
        expression.  (Contributed by NM, 5-Sep-2004.) $)
-    sbralie $p |- ( [ y / x ] A. y e. x ph <-> A. x e. y ps ) $=
-      ( vz cv wral wsb cbvralsv sbbii nfv raleq sbie bitri sbco2 eqcoms ralbii
-      wb ) ADCGZHZCDIZADFIZFDGZHZBCUDHZUBUCFTHZCDIUEUAUGCDADFTJKUGUECDUECLUCFTU
-      DMNOUEUCFCIZCUDHUFUCFCUDJUHBCUDUHADCIBADCFAFLPABDCBDLABSTUDEQNOROO $.
+    sbralie $p |- ( A. x e. y ph <-> [ y / x ] A. y e. x ps ) $=
+      ( vz cv wral wsb cbvralsv sbbii nfv raleq sbie sbco2 wb weq equcoms bitri
+      bicomd ralbii 3bitrri ) BDCGZHZCDIBDFIZFUCHZCDIUEFDGZHZACUGHZUDUFCDBDFUCJ
+      KUFUHCDUHCLUEFUCUGMNUHUEFCIZCUGHUIUEFCUGJUJACUGUJBDCIABDCFBFLOBADCADLBAPC
+      DCDQABETRNSUASUB $.
   $}
 
   ${
