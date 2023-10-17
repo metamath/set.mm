@@ -15,6 +15,8 @@ The ones WITH "Notes" may have to be processed manually.
 PROPOSED:
 Date      Old       New         Notes
 proposed  syl       imtri       (analogous to *bitr*, sstri, etc.)
+                                there is less agreemnt on renaming syl
+                                than others here
 proposed  syld      imtrd
 proposed  syldc     imtrdcom
 proposed  syldd     imtrdd
@@ -31,7 +33,7 @@ proposed  sylbid    biimtrd
 proposed  sylibrd   imbitrrd
 proposed  sylbird   biimtrrd
 proposed  syl5com   imtridcom
-proposed  syl5      imtrid
+proposed  syl5      imtrid      alternate proposal: sylid
 proposed  syl56     imtridi
 proposed  syl5d     imtridd
 proposed  syl5bi    biimtrid
@@ -65,7 +67,7 @@ proposed  syl5eqbrr eqbrtrrid   compare to eqbrtrri or eqbrtrrd
 proposed  syl5breq  breqtrid    compare to breqtri or breqtrd
 proposed  syl5breqr breqtrrid   compare to breqtrri or breqtrrd
 proposed  wl-luk-syl5 wl-luk-imtrid
-proposed  syl6      imtrdi
+proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
 proposed  syl6ib    imbitrdi
