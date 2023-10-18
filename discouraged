@@ -12680,7 +12680,6 @@
 "swrd0swrd0OLD" is used by "swrd0swrdidOLD".
 "swrd0valOLD" is used by "efgredlemOLD".
 "swrd0valOLD" is used by "efgsresOLD".
-"swrd0valOLD" is used by "iwrdsplitOLD".
 "swrd0valOLD" is used by "psgnunilem5OLD".
 "swrd0valOLD" is used by "swrd0lenOLD".
 "swrd0valOLD" is used by "swrdccat1OLD".
@@ -12705,7 +12704,6 @@
 "swrdccatin12lem2OLD" is used by "swrdccatin12OLD".
 "swrdccatin12lem2bOLD" is used by "swrdccatin12lem2OLD".
 "swrdccatwrdOLD" is used by "ccats1swrdeqOLD".
-"swrdccatwrdOLD" is used by "iwrdsplitOLD".
 "swrdccatwrdOLD" is used by "psgnunilem5OLD".
 "swrdccatwrdOLD" is used by "wrd2indOLD".
 "swrdccatwrdOLD" is used by "wrdindOLD".
@@ -16169,7 +16167,6 @@ New usage of "iswatN" is discouraged (0 uses).
 New usage of "iunconnALT" is discouraged (0 uses).
 New usage of "iunconnlem2" is discouraged (1 uses).
 New usage of "ivthALT" is discouraged (0 uses).
-New usage of "iwrdsplitOLD" is discouraged (0 uses).
 New usage of "jaoded" is discouraged (1 uses).
 New usage of "joincomALT" is discouraged (1 uses).
 New usage of "jpi" is discouraged (0 uses).
@@ -17853,7 +17850,7 @@ New usage of "swrd0lenOLD" is discouraged (19 uses).
 New usage of "swrd0swrd0OLD" is discouraged (1 uses).
 New usage of "swrd0swrdOLD" is discouraged (0 uses).
 New usage of "swrd0swrdidOLD" is discouraged (0 uses).
-New usage of "swrd0valOLD" is discouraged (8 uses).
+New usage of "swrd0valOLD" is discouraged (7 uses).
 New usage of "swrdccat1OLD" is discouraged (5 uses).
 New usage of "swrdccat3OLD" is discouraged (3 uses).
 New usage of "swrdccat3aOLD" is discouraged (1 uses).
@@ -17864,7 +17861,7 @@ New usage of "swrdccatin12OLD" is discouraged (2 uses).
 New usage of "swrdccatin12dOLD" is discouraged (0 uses).
 New usage of "swrdccatin12lem2OLD" is discouraged (1 uses).
 New usage of "swrdccatin12lem2bOLD" is discouraged (1 uses).
-New usage of "swrdccatwrdOLD" is discouraged (6 uses).
+New usage of "swrdccatwrdOLD" is discouraged (5 uses).
 New usage of "swrdeqOLD" is discouraged (1 uses).
 New usage of "swrdidOLD" is discouraged (8 uses).
 New usage of "swrdn0OLD" is discouraged (3 uses).
@@ -19206,7 +19203,6 @@ Proof modification of "isvciOLD" is discouraged (178 steps).
 Proof modification of "iunconnALT" is discouraged (56 steps).
 Proof modification of "iunconnlem2" is discouraged (580 steps).
 Proof modification of "ivthALT" is discouraged (1080 steps).
-Proof modification of "iwrdsplitOLD" is discouraged (303 steps).
 Proof modification of "jaoded" is discouraged (26 steps).
 Proof modification of "jath" is discouraged (318 steps).
 Proof modification of "jccil" is discouraged (10 steps).
