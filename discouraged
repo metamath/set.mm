@@ -8447,7 +8447,6 @@
 "ishlo" is used by "hhhl".
 "ishlo" is used by "hlobn".
 "ishlo" is used by "hlph".
-"ishlo" is used by "ssphlOLD".
 "ishst" is used by "hst1a".
 "ishst" is used by "hstcl".
 "ishst" is used by "hstel2".
@@ -12530,7 +12529,6 @@
 "sspnv" is used by "sspz".
 "sspnval" is used by "sspimsval".
 "sspnval" is used by "sspphOLD".
-"sspphOLD" is used by "ssphlOLD".
 "ssps" is used by "sspsval".
 "sspsval" is used by "hhshsslem2".
 "sspsval" is used by "minvecolem2".
@@ -16111,7 +16109,7 @@ New usage of "isgrpo" is discouraged (6 uses).
 New usage of "isgrpoi" is discouraged (4 uses).
 New usage of "ishlat3N" is discouraged (0 uses).
 New usage of "ishlatiN" is discouraged (0 uses).
-New usage of "ishlo" is discouraged (5 uses).
+New usage of "ishlo" is discouraged (4 uses).
 New usage of "ishmo" is discouraged (0 uses).
 New usage of "ishst" is discouraged (4 uses).
 New usage of "isline4N" is discouraged (0 uses).
@@ -17744,7 +17742,6 @@ New usage of "ssmd2" is discouraged (3 uses).
 New usage of "sspba" is discouraged (16 uses).
 New usage of "sspg" is discouraged (1 uses).
 New usage of "sspgval" is discouraged (4 uses).
-New usage of "ssphlOLD" is discouraged (0 uses).
 New usage of "sspid" is discouraged (1 uses).
 New usage of "sspims" is discouraged (2 uses).
 New usage of "sspimsval" is discouraged (1 uses).
@@ -17755,7 +17752,7 @@ New usage of "sspmval" is discouraged (4 uses).
 New usage of "sspn" is discouraged (1 uses).
 New usage of "sspnv" is discouraged (12 uses).
 New usage of "sspnval" is discouraged (2 uses).
-New usage of "sspphOLD" is discouraged (1 uses).
+New usage of "sspphOLD" is discouraged (0 uses).
 New usage of "ssps" is discouraged (1 uses).
 New usage of "sspsval" is discouraged (3 uses).
 New usage of "sspval" is discouraged (1 uses).
@@ -19656,7 +19653,6 @@ Proof modification of "spsbeOLD" is discouraged (75 steps).
 Proof modification of "spsbeOLDOLD" is discouraged (23 steps).
 Proof modification of "spsbimvOLD" is discouraged (16 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
-Proof modification of "ssphlOLD" is discouraged (34 steps).
 Proof modification of "sspphOLD" is discouraged (502 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).
 Proof modification of "sspwimpALT" is discouraged (74 steps).
