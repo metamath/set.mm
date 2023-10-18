@@ -3787,7 +3787,6 @@
 "chshii" is used by "helsh".
 "chshii" is used by "hhssbnOLD".
 "chshii" is used by "hhsscms".
-"chshii" is used by "hhsshlOLD".
 "chshii" is used by "mayete3i".
 "chshii" is used by "nonbooli".
 "chshii" is used by "ococi".
@@ -6585,7 +6584,6 @@
 "hhssba" is used by "hhssvs".
 "hhssba" is used by "hhssvsf".
 "hhssba" is used by "pjhthlem2".
-"hhssbnOLD" is used by "hhsshlOLD".
 "hhssbnOLD" is used by "pjhthlem2".
 "hhsscms" is used by "hhssbnOLD".
 "hhssims" is used by "hhssims2".
@@ -6602,7 +6600,6 @@
 "hhssnv" is used by "hhssnvt".
 "hhssnv" is used by "hhssvsf".
 "hhssnvt" is used by "hhsst".
-"hhssphOLD" is used by "hhsshlOLD".
 "hhsssh" is used by "hhsssh2".
 "hhsssm" is used by "hhsssh2".
 "hhsssm" is used by "hhsst".
@@ -8450,7 +8447,6 @@
 "isgrpoi" is used by "hilablo".
 "ishlo" is used by "cnchl".
 "ishlo" is used by "hhhl".
-"ishlo" is used by "hhsshlOLD".
 "ishlo" is used by "hlobn".
 "ishlo" is used by "hlph".
 "ishlo" is used by "ssphlOLD".
@@ -14485,7 +14481,7 @@ New usage of "chscllem3" is discouraged (1 uses).
 New usage of "chscllem4" is discouraged (1 uses).
 New usage of "chseli" is discouraged (3 uses).
 New usage of "chsh" is discouraged (35 uses).
-New usage of "chshii" is discouraged (65 uses).
+New usage of "chshii" is discouraged (64 uses).
 New usage of "chslej" is discouraged (1 uses).
 New usage of "chsleji" is discouraged (5 uses).
 New usage of "chss" is discouraged (10 uses).
@@ -15684,9 +15680,8 @@ New usage of "hhssablo" is discouraged (0 uses).
 New usage of "hhssabloi" is discouraged (2 uses).
 New usage of "hhssabloilem" is discouraged (1 uses).
 New usage of "hhssba" is discouraged (6 uses).
-New usage of "hhssbnOLD" is discouraged (2 uses).
+New usage of "hhssbnOLD" is discouraged (1 uses).
 New usage of "hhsscms" is discouraged (1 uses).
-New usage of "hhsshlOLD" is discouraged (0 uses).
 New usage of "hhssims" is discouraged (1 uses).
 New usage of "hhssims2" is discouraged (1 uses).
 New usage of "hhssmet" is discouraged (1 uses).
@@ -15694,7 +15689,7 @@ New usage of "hhssmetdval" is discouraged (0 uses).
 New usage of "hhssnm" is discouraged (4 uses).
 New usage of "hhssnv" is discouraged (6 uses).
 New usage of "hhssnvt" is discouraged (1 uses).
-New usage of "hhssphOLD" is discouraged (1 uses).
+New usage of "hhssphOLD" is discouraged (0 uses).
 New usage of "hhsssh" is discouraged (1 uses).
 New usage of "hhsssh2" is discouraged (0 uses).
 New usage of "hhsssm" is discouraged (2 uses).
@@ -16120,7 +16115,7 @@ New usage of "isgrpo" is discouraged (6 uses).
 New usage of "isgrpoi" is discouraged (4 uses).
 New usage of "ishlat3N" is discouraged (0 uses).
 New usage of "ishlatiN" is discouraged (0 uses).
-New usage of "ishlo" is discouraged (6 uses).
+New usage of "ishlo" is discouraged (5 uses).
 New usage of "ishmo" is discouraged (0 uses).
 New usage of "ishst" is discouraged (4 uses).
 New usage of "isline4N" is discouraged (0 uses).
@@ -19135,7 +19130,6 @@ Proof modification of "hbra2VD" is discouraged (26 steps).
 Proof modification of "hbsb2ALT" is discouraged (32 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hhssbnOLD" is discouraged (39 steps).
-Proof modification of "hhsshlOLD" is discouraged (24 steps).
 Proof modification of "hhssphOLD" is discouraged (38 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
 Proof modification of "icccmpALT" is discouraged (71 steps).
