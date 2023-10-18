@@ -2951,7 +2951,6 @@
 "cba" is used by "sspmlem".
 "cba" is used by "sspmval".
 "cba" is used by "sspn".
-"cba" is used by "sspphOLD".
 "cba" is used by "ssps".
 "cba" is used by "sspz".
 "cba" is used by "ubth".
@@ -8478,7 +8477,6 @@
 "isnvi" is used by "hhssnv".
 "isnvlem" is used by "isnv".
 "isph" is used by "phpar2".
-"isph" is used by "sspphOLD".
 "isphg" is used by "cncph".
 "isphg" is used by "hhph".
 "isphg" is used by "isph".
@@ -10156,7 +10154,6 @@
 "nsmallnq" is used by "ltbtwnnq".
 "nsmallnq" is used by "nqpr".
 "nsmallnq" is used by "reclem2pr".
-"numclwlk2lem2f1oOLD" is used by "numclwwlk2lem3OLD".
 "numclwlk2lem2fOLD" is used by "numclwlk2lem2f1oOLD".
 "numclwlk2lem2fvOLD" is used by "numclwlk2lem2f1oOLD".
 "numclwwlk1lem2f1OLD" is used by "numclwwlk1lem2f1oOLD".
@@ -10296,7 +10293,6 @@
 "nvgcl" is used by "nvpi".
 "nvgcl" is used by "nvpncan2".
 "nvgcl" is used by "pythi".
-"nvgcl" is used by "sspphOLD".
 "nvgcl" is used by "ubthlem2".
 "nvgcl" is used by "vacn".
 "nvge0" is used by "htthlem".
@@ -10362,7 +10358,6 @@
 "nvmcl" is used by "siilem1".
 "nvmcl" is used by "smcnlem".
 "nvmcl" is used by "sspimsval".
-"nvmcl" is used by "sspphOLD".
 "nvmcl" is used by "vacn".
 "nvmdi" is used by "minvecolem2".
 "nvmdi" is used by "smcnlem".
@@ -10862,7 +10857,6 @@
 "phnv" is used by "phnvi".
 "phnv" is used by "phop".
 "phnv" is used by "phrel".
-"phnv" is used by "sspphOLD".
 "phnvi" is used by "ajfuni".
 "phnvi" is used by "elimph".
 "phnvi" is used by "ip0i".
@@ -10891,7 +10885,6 @@
 "phpar" is used by "ip0i".
 "phpar2" is used by "hlpar2".
 "phpar2" is used by "minvecolem2".
-"phpar2" is used by "sspphOLD".
 "phrel" is used by "phop".
 "pinn" is used by "addasspi".
 "pinn" is used by "addcanpi".
@@ -12495,14 +12488,12 @@
 "sspba" is used by "sspmlem".
 "sspba" is used by "sspmval".
 "sspba" is used by "sspn".
-"sspba" is used by "sspphOLD".
 "sspba" is used by "ssps".
 "sspba" is used by "sspz".
 "sspg" is used by "sspgval".
 "sspgval" is used by "hhshsslem2".
 "sspgval" is used by "minvecolem2".
 "sspgval" is used by "sspmval".
-"sspgval" is used by "sspphOLD".
 "sspid" is used by "hhsssh".
 "sspims" is used by "bnsscmcl".
 "sspims" is used by "minvecolem4a".
@@ -12512,7 +12503,6 @@
 "sspmlem" is used by "sspm".
 "sspmval" is used by "sspimsval".
 "sspmval" is used by "sspm".
-"sspmval" is used by "sspphOLD".
 "sspmval" is used by "sspz".
 "sspn" is used by "sspnval".
 "sspnv" is used by "bnsscmcl".
@@ -12524,11 +12514,9 @@
 "sspnv" is used by "sspmlem".
 "sspnv" is used by "sspmval".
 "sspnv" is used by "sspn".
-"sspnv" is used by "sspphOLD".
 "sspnv" is used by "ssps".
 "sspnv" is used by "sspz".
 "sspnval" is used by "sspimsval".
-"sspnval" is used by "sspphOLD".
 "ssps" is used by "sspsval".
 "sspsval" is used by "hhshsslem2".
 "sspsval" is used by "minvecolem2".
@@ -14211,7 +14199,7 @@ New usage of "c-bnj18" is discouraged (58 uses).
 New usage of "c0exALT" is discouraged (0 uses).
 New usage of "cases2ALT" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
-New usage of "cba" is discouraged (86 uses).
+New usage of "cba" is discouraged (85 uses).
 New usage of "cbncms" is discouraged (5 uses).
 New usage of "cbv2OLD" is discouraged (0 uses).
 New usage of "cbvabvOLD" is discouraged (0 uses).
@@ -16131,7 +16119,7 @@ New usage of "isolatiN" is discouraged (0 uses).
 New usage of "isomliN" is discouraged (0 uses).
 New usage of "isosctrlem1ALT" is discouraged (0 uses).
 New usage of "ispautN" is discouraged (0 uses).
-New usage of "isph" is discouraged (2 uses).
+New usage of "isph" is discouraged (1 uses).
 New usage of "isphg" is discouraged (4 uses).
 New usage of "ispointN" is discouraged (2 uses).
 New usage of "ispsubcl2N" is discouraged (0 uses).
@@ -16815,7 +16803,7 @@ New usage of "nrex1" is discouraged (2 uses).
 New usage of "nsmallnq" is discouraged (3 uses).
 New usage of "nsnlpligALT" is discouraged (0 uses).
 New usage of "nulmoOLD" is discouraged (0 uses).
-New usage of "numclwlk2lem2f1oOLD" is discouraged (1 uses).
+New usage of "numclwlk2lem2f1oOLD" is discouraged (0 uses).
 New usage of "numclwlk2lem2fOLD" is discouraged (1 uses).
 New usage of "numclwlk2lem2fvOLD" is discouraged (1 uses).
 New usage of "numclwwlk1lem2OLD" is discouraged (0 uses).
@@ -16826,7 +16814,6 @@ New usage of "numclwwlk1lem2foOLD" is discouraged (1 uses).
 New usage of "numclwwlk1lem2foaOLD" is discouraged (0 uses).
 New usage of "numclwwlk1lem2foalemOLD" is discouraged (1 uses).
 New usage of "numclwwlk1lem2fvOLD" is discouraged (2 uses).
-New usage of "numclwwlk2lem3OLD" is discouraged (0 uses).
 New usage of "nv0" is discouraged (5 uses).
 New usage of "nv0lid" is discouraged (4 uses).
 New usage of "nv0rid" is discouraged (7 uses).
@@ -16847,7 +16834,7 @@ New usage of "nvdif" is discouraged (3 uses).
 New usage of "nvdir" is discouraged (7 uses).
 New usage of "nvex" is discouraged (4 uses).
 New usage of "nvf" is discouraged (5 uses).
-New usage of "nvgcl" is discouraged (26 uses).
+New usage of "nvgcl" is discouraged (25 uses).
 New usage of "nvge0" is discouraged (12 uses).
 New usage of "nvgf" is discouraged (3 uses).
 New usage of "nvgrp" is discouraged (14 uses).
@@ -16858,7 +16845,7 @@ New usage of "nvinvfval" is discouraged (1 uses).
 New usage of "nvlinv" is discouraged (3 uses).
 New usage of "nvm" is discouraged (1 uses).
 New usage of "nvm1" is discouraged (2 uses).
-New usage of "nvmcl" is discouraged (14 uses).
+New usage of "nvmcl" is discouraged (13 uses).
 New usage of "nvmdi" is discouraged (2 uses).
 New usage of "nvmeq0" is discouraged (2 uses).
 New usage of "nvmf" is discouraged (5 uses).
@@ -17021,12 +17008,12 @@ New usage of "pexmidlem7N" is discouraged (1 uses).
 New usage of "pexmidlem8N" is discouraged (1 uses).
 New usage of "pfxnndmnd" is discouraged (2 uses).
 New usage of "pfxval0" is discouraged (1 uses).
-New usage of "phnv" is discouraged (19 uses).
+New usage of "phnv" is discouraged (18 uses).
 New usage of "phnvi" is discouraged (22 uses).
 New usage of "phoeqi" is discouraged (1 uses).
 New usage of "phop" is discouraged (1 uses).
 New usage of "phpar" is discouraged (2 uses).
-New usage of "phpar2" is discouraged (3 uses).
+New usage of "phpar2" is discouraged (2 uses).
 New usage of "phrel" is discouraged (1 uses).
 New usage of "pige3ALT" is discouraged (0 uses).
 New usage of "pinn" is discouraged (17 uses).
@@ -17739,20 +17726,19 @@ New usage of "sshjval3" is discouraged (0 uses).
 New usage of "ssjo" is discouraged (1 uses).
 New usage of "ssmd1" is discouraged (3 uses).
 New usage of "ssmd2" is discouraged (3 uses).
-New usage of "sspba" is discouraged (16 uses).
+New usage of "sspba" is discouraged (15 uses).
 New usage of "sspg" is discouraged (1 uses).
-New usage of "sspgval" is discouraged (4 uses).
+New usage of "sspgval" is discouraged (3 uses).
 New usage of "sspid" is discouraged (1 uses).
 New usage of "sspims" is discouraged (2 uses).
 New usage of "sspimsval" is discouraged (1 uses).
 New usage of "sspm" is discouraged (1 uses).
 New usage of "sspmaplubN" is discouraged (0 uses).
 New usage of "sspmlem" is discouraged (2 uses).
-New usage of "sspmval" is discouraged (4 uses).
+New usage of "sspmval" is discouraged (3 uses).
 New usage of "sspn" is discouraged (1 uses).
-New usage of "sspnv" is discouraged (12 uses).
-New usage of "sspnval" is discouraged (2 uses).
-New usage of "sspphOLD" is discouraged (0 uses).
+New usage of "sspnv" is discouraged (11 uses).
+New usage of "sspnval" is discouraged (1 uses).
 New usage of "ssps" is discouraged (1 uses).
 New usage of "sspsval" is discouraged (3 uses).
 New usage of "sspval" is discouraged (1 uses).
@@ -19371,7 +19357,6 @@ Proof modification of "numclwwlk1lem2foOLD" is discouraged (649 steps).
 Proof modification of "numclwwlk1lem2foaOLD" is discouraged (420 steps).
 Proof modification of "numclwwlk1lem2foalemOLD" is discouraged (238 steps).
 Proof modification of "numclwwlk1lem2fvOLD" is discouraged (54 steps).
-Proof modification of "numclwwlk2lem3OLD" is discouraged (66 steps).
 Proof modification of "odfvalALT" is discouraged (181 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
 Proof modification of "onfrALT" is discouraged (88 steps).
@@ -19653,7 +19638,6 @@ Proof modification of "spsbeOLD" is discouraged (75 steps).
 Proof modification of "spsbeOLDOLD" is discouraged (23 steps).
 Proof modification of "spsbimvOLD" is discouraged (16 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
-Proof modification of "sspphOLD" is discouraged (502 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).
 Proof modification of "sspwimpALT" is discouraged (74 steps).
 Proof modification of "sspwimpALT2" is discouraged (50 steps).
