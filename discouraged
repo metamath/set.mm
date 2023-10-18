@@ -2963,7 +2963,6 @@
 "ccats1swrdeqOLD" is used by "ccats1swrdeqbiOLD".
 "ccats1swrdeqOLD" is used by "ccats1swrdeqrexOLD".
 "ccats1swrdeqrexOLD" is used by "reuccats1lemOLD".
-"ccshOLD" is used by "cshfnOLD".
 "cdj3lem1" is used by "cdj3i".
 "cdj3lem1" is used by "cdj3lem2b".
 "cdj3lem2" is used by "cdj3i".
@@ -4165,14 +4164,6 @@
 "crngcALTV" is used by "rngcrescrhmALTV".
 "crngcALTV" is used by "rngcvalALTV".
 "csbopabgALT" is used by "csbcnvgALT".
-"cspliceOLD" is used by "splclOLD".
-"cspliceOLD" is used by "splfv1OLD".
-"cspliceOLD" is used by "splfv2aOLD".
-"cspliceOLD" is used by "splidOLD".
-"cspliceOLD" is used by "spllenOLD".
-"cspliceOLD" is used by "splval2OLD".
-"cspliceOLD" is used by "splvalOLD".
-"cspliceOLD" is used by "splvalpfxOLD".
 "cvati" is used by "cvbr4i".
 "cvbr" is used by "cvbr2".
 "cvbr" is used by "cvcon3".
@@ -4394,7 +4385,6 @@
 "df-cnop" is used by "elcnop".
 "df-cnop" is used by "hhcno".
 "df-com2" is used by "iscom2".
-"df-cshOLD" is used by "cshfnOLD".
 "df-cv" is used by "cvbr".
 "df-dip" is used by "dipfval".
 "df-div" is used by "1div0".
@@ -4649,9 +4639,6 @@
 "df-sm" is used by "smfval".
 "df-span" is used by "spanval".
 "df-spec" is used by "specval".
-"df-spliceOLD" is used by "splclOLD".
-"df-spliceOLD" is used by "splvalOLD".
-"df-spliceOLD" is used by "splvalpfxOLD".
 "df-ssp" is used by "sspval".
 "df-st" is used by "isst".
 "df-trkg2d" is used by "istrkg2d".
@@ -12374,11 +12361,6 @@
 "spanval" is used by "spanss".
 "spanval" is used by "spanss2".
 "specval" is used by "speccl".
-"splvalOLD" is used by "splfv1OLD".
-"splvalOLD" is used by "splfv2aOLD".
-"splvalOLD" is used by "splidOLD".
-"splvalOLD" is used by "spllenOLD".
-"splvalOLD" is used by "splval2OLD".
 "sps-o" is used by "ax12el".
 "sps-o" is used by "ax12eq".
 "sps-o" is used by "ax12inda".
@@ -12556,7 +12538,6 @@
 "swrd0fvOLD" is used by "swrdtrcfvOLD".
 "swrd0fvlswOLD" is used by "swrdtrcfvlOLD".
 "swrd0lenOLD" is used by "addlenrevswrdOLD".
-"swrd0lenOLD" is used by "splval2OLD".
 "swrd0lenOLD" is used by "swrd0fvlswOLD".
 "swrd0lenOLD" is used by "swrd0len0OLD".
 "swrd0lenOLD" is used by "swrdccatin12OLD".
@@ -12580,8 +12561,6 @@
 "swrdccatwrdOLD" is used by "ccats1swrdeqOLD".
 "swrdccatwrdOLD" is used by "wrd2indOLD".
 "swrdccatwrdOLD" is used by "wrdindOLD".
-"swrdidOLD" is used by "splidOLD".
-"swrdidOLD" is used by "splval2OLD".
 "swrdidOLD" is used by "swrdccat3aOLD".
 "swrdidOLD" is used by "swrdccat3bOLD".
 "swrdidOLD" is used by "swrdccatidOLD".
@@ -14078,7 +14057,6 @@ New usage of "ccatopthOLD" is discouraged (0 uses).
 New usage of "ccats1swrdeqOLD" is discouraged (2 uses).
 New usage of "ccats1swrdeqbiOLD" is discouraged (0 uses).
 New usage of "ccats1swrdeqrexOLD" is discouraged (1 uses).
-New usage of "ccshOLD" is discouraged (1 uses).
 New usage of "cdj1i" is discouraged (0 uses).
 New usage of "cdj3i" is discouraged (0 uses).
 New usage of "cdj3lem1" is discouraged (2 uses).
@@ -14470,9 +14448,8 @@ New usage of "csbrngVD" is discouraged (0 uses).
 New usage of "csbsngVD" is discouraged (0 uses).
 New usage of "csbunigVD" is discouraged (0 uses).
 New usage of "csbxpgVD" is discouraged (0 uses).
-New usage of "cshfnOLD" is discouraged (0 uses).
 New usage of "csmdsymi" is discouraged (0 uses).
-New usage of "cspliceOLD" is discouraged (8 uses).
+New usage of "cspliceOLD" is discouraged (0 uses).
 New usage of "currysetALT" is discouraged (0 uses).
 New usage of "cvati" is discouraged (1 uses).
 New usage of "cvbr" is discouraged (4 uses).
@@ -14554,7 +14531,6 @@ New usage of "df-cnfld" is discouraged (12 uses).
 New usage of "df-cnfn" is discouraged (2 uses).
 New usage of "df-cnop" is discouraged (2 uses).
 New usage of "df-com2" is discouraged (1 uses).
-New usage of "df-cshOLD" is discouraged (1 uses).
 New usage of "df-cv" is discouraged (1 uses).
 New usage of "df-dip" is discouraged (1 uses).
 New usage of "df-div" is discouraged (6 uses).
@@ -14649,7 +14625,6 @@ New usage of "df-shs" is discouraged (1 uses).
 New usage of "df-sm" is discouraged (1 uses).
 New usage of "df-span" is discouraged (1 uses).
 New usage of "df-spec" is discouraged (1 uses).
-New usage of "df-spliceOLD" is discouraged (3 uses).
 New usage of "df-ssp" is discouraged (1 uses).
 New usage of "df-st" is discouraged (1 uses).
 New usage of "df-trkg2d" is discouraged (1 uses).
@@ -17508,14 +17483,6 @@ New usage of "specval" is discouraged (1 uses).
 New usage of "speimfwALT" is discouraged (0 uses).
 New usage of "spimtOLD" is discouraged (0 uses).
 New usage of "spimvALT" is discouraged (0 uses).
-New usage of "splclOLD" is discouraged (0 uses).
-New usage of "splfv1OLD" is discouraged (0 uses).
-New usage of "splfv2aOLD" is discouraged (0 uses).
-New usage of "splidOLD" is discouraged (0 uses).
-New usage of "spllenOLD" is discouraged (0 uses).
-New usage of "splval2OLD" is discouraged (0 uses).
-New usage of "splvalOLD" is discouraged (5 uses).
-New usage of "splvalpfxOLD" is discouraged (0 uses).
 New usage of "sps-o" is discouraged (7 uses).
 New usage of "spsbbiOLD" is discouraged (0 uses).
 New usage of "spsbeALT" is discouraged (1 uses).
@@ -17632,7 +17599,7 @@ New usage of "swrd0fv0OLD" is discouraged (0 uses).
 New usage of "swrd0fvOLD" is discouraged (4 uses).
 New usage of "swrd0fvlswOLD" is discouraged (1 uses).
 New usage of "swrd0len0OLD" is discouraged (0 uses).
-New usage of "swrd0lenOLD" is discouraged (8 uses).
+New usage of "swrd0lenOLD" is discouraged (7 uses).
 New usage of "swrd0swrd0OLD" is discouraged (1 uses).
 New usage of "swrd0swrdOLD" is discouraged (0 uses).
 New usage of "swrd0swrdidOLD" is discouraged (0 uses).
@@ -17649,7 +17616,7 @@ New usage of "swrdccatin12lem2OLD" is discouraged (1 uses).
 New usage of "swrdccatin12lem2bOLD" is discouraged (1 uses).
 New usage of "swrdccatwrdOLD" is discouraged (3 uses).
 New usage of "swrdeqOLD" is discouraged (0 uses).
-New usage of "swrdidOLD" is discouraged (8 uses).
+New usage of "swrdidOLD" is discouraged (6 uses).
 New usage of "swrdn0OLD" is discouraged (0 uses).
 New usage of "swrdnznd" is discouraged (1 uses).
 New usage of "swrdswrd0OLD" is discouraged (1 uses).
@@ -18325,7 +18292,6 @@ Proof modification of "csbrngVD" is discouraged (266 steps).
 Proof modification of "csbsngVD" is discouraged (204 steps).
 Proof modification of "csbunigVD" is discouraged (302 steps).
 Proof modification of "csbxpgVD" is discouraged (538 steps).
-Proof modification of "cshfnOLD" is discouraged (165 steps).
 Proof modification of "currysetALT" is discouraged (13 steps).
 Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
@@ -19363,14 +19329,6 @@ Proof modification of "spcgvOLD" is discouraged (13 steps).
 Proof modification of "speimfwALT" is discouraged (35 steps).
 Proof modification of "spimtOLD" is discouraged (52 steps).
 Proof modification of "spimvALT" is discouraged (16 steps).
-Proof modification of "splclOLD" is discouraged (257 steps).
-Proof modification of "splfv1OLD" is discouraged (439 steps).
-Proof modification of "splfv2aOLD" is discouraged (452 steps).
-Proof modification of "splidOLD" is discouraged (220 steps).
-Proof modification of "spllenOLD" is discouraged (421 steps).
-Proof modification of "splval2OLD" is discouraged (681 steps).
-Proof modification of "splvalOLD" is discouraged (268 steps).
-Proof modification of "splvalpfxOLD" is discouraged (300 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
 Proof modification of "spsbbiOLD" is discouraged (28 steps).
 Proof modification of "spsbeALT" is discouraged (22 steps).
