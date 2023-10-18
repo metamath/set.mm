@@ -639,7 +639,6 @@
 "adderpq" is used by "ltexnq".
 "adderpqlem" is used by "adderpq".
 "addlenrevswrdOLD" is used by "addlenswrdOLD".
-"addlenrevswrdOLD" is used by "lenrevcctswrdOLD".
 "addnqf" is used by "addassnq".
 "addnqf" is used by "addcomnq".
 "addnqf" is used by "adderpq".
@@ -12539,8 +12538,6 @@
 "swrd0swrd0OLD" is used by "swrd0swrdidOLD".
 "swrd0valOLD" is used by "swrd0lenOLD".
 "swrd0valOLD" is used by "swrdccat1OLD".
-"swrdccatwrdOLD" is used by "ccats1swrdeqOLD".
-"swrdidOLD" is used by "swrdccatwrdOLD".
 "swrdidOLD" is used by "wrdcctswrdOLD".
 "swrdnznd" is used by "swrdnnn0nd".
 "swrdswrd0OLD" is used by "swrd0swrd0OLD".
@@ -13031,7 +13028,6 @@
 "wlkreslem0OLD" is used by "trlreslemOLD".
 "wlkreslem0OLD" is used by "wlkresOLD".
 "wlkreslemOLD" is used by "wlkresOLD".
-"wrdcctswrdOLD" is used by "lencctswrdOLD".
 "wrdnfiOLD" is used by "clwwlknfiOLD".
 "wrdnfiOLD" is used by "wwlksnfiOLD".
 "wvd2" is used by "dfvd2".
@@ -13234,7 +13230,7 @@ New usage of "addcomsr" is discouraged (8 uses).
 New usage of "adderpq" is discouraged (3 uses).
 New usage of "adderpqlem" is discouraged (1 uses).
 New usage of "addgt0sr" is discouraged (0 uses).
-New usage of "addlenrevswrdOLD" is discouraged (2 uses).
+New usage of "addlenrevswrdOLD" is discouraged (1 uses).
 New usage of "addlenswrdOLD" is discouraged (0 uses).
 New usage of "addltmulALT" is discouraged (0 uses).
 New usage of "addmodlteqALT" is discouraged (0 uses).
@@ -14028,7 +14024,6 @@ New usage of "cbvmoOLD" is discouraged (0 uses).
 New usage of "cbvrabvOLD" is discouraged (0 uses).
 New usage of "cbvrexdva2OLD" is discouraged (0 uses).
 New usage of "ccat2s1fvwALT" is discouraged (0 uses).
-New usage of "ccats1swrdeqOLD" is discouraged (0 uses).
 New usage of "cdj1i" is discouraged (0 uses).
 New usage of "cdj3i" is discouraged (0 uses).
 New usage of "cdj3lem1" is discouraged (2 uses).
@@ -15959,8 +15954,6 @@ New usage of "lediv2aALT" is discouraged (0 uses).
 New usage of "leibpilem1OLD" is discouraged (0 uses).
 New usage of "lejdii" is discouraged (1 uses).
 New usage of "lejdiri" is discouraged (1 uses).
-New usage of "lencctswrdOLD" is discouraged (0 uses).
-New usage of "lenrevcctswrdOLD" is discouraged (0 uses).
 New usage of "leop" is discouraged (4 uses).
 New usage of "leop2" is discouraged (5 uses).
 New usage of "leop3" is discouraged (2 uses).
@@ -17574,9 +17567,8 @@ New usage of "swrd0swrdOLD" is discouraged (0 uses).
 New usage of "swrd0swrdidOLD" is discouraged (0 uses).
 New usage of "swrd0valOLD" is discouraged (2 uses).
 New usage of "swrdccat1OLD" is discouraged (0 uses).
-New usage of "swrdccatwrdOLD" is discouraged (1 uses).
 New usage of "swrdeqOLD" is discouraged (0 uses).
-New usage of "swrdidOLD" is discouraged (2 uses).
+New usage of "swrdidOLD" is discouraged (1 uses).
 New usage of "swrdn0OLD" is discouraged (0 uses).
 New usage of "swrdnznd" is discouraged (1 uses).
 New usage of "swrdswrd0OLD" is discouraged (1 uses).
@@ -17782,7 +17774,7 @@ New usage of "wl-syls2" is discouraged (0 uses).
 New usage of "wlkresOLD" is discouraged (2 uses).
 New usage of "wlkreslem0OLD" is discouraged (2 uses).
 New usage of "wlkreslemOLD" is discouraged (1 uses).
-New usage of "wrdcctswrdOLD" is discouraged (1 uses).
+New usage of "wrdcctswrdOLD" is discouraged (0 uses).
 New usage of "wrdexgOLD" is discouraged (0 uses).
 New usage of "wrdlndmOLD" is discouraged (0 uses).
 New usage of "wrdnfiOLD" is discouraged (2 uses).
@@ -18203,7 +18195,6 @@ Proof modification of "cbvmoOLD" is discouraged (48 steps).
 Proof modification of "cbvrabvOLD" is discouraged (19 steps).
 Proof modification of "cbvrexdva2OLD" is discouraged (128 steps).
 Proof modification of "ccat2s1fvwALT" is discouraged (149 steps).
-Proof modification of "ccats1swrdeqOLD" is discouraged (203 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
 Proof modification of "clel5OLD" is discouraged (46 steps).
@@ -18857,8 +18848,6 @@ Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
 Proof modification of "lediv2aALT" is discouraged (264 steps).
 Proof modification of "leibpilem1OLD" is discouraged (254 steps).
-Proof modification of "lencctswrdOLD" is discouraged (34 steps).
-Proof modification of "lenrevcctswrdOLD" is discouraged (77 steps).
 Proof modification of "luk-1" is discouraged (73 steps).
 Proof modification of "luk-2" is discouraged (52 steps).
 Proof modification of "luk-3" is discouraged (20 steps).
@@ -19323,7 +19312,6 @@ Proof modification of "swrd0swrdOLD" is discouraged (144 steps).
 Proof modification of "swrd0swrdidOLD" is discouraged (50 steps).
 Proof modification of "swrd0valOLD" is discouraged (199 steps).
 Proof modification of "swrdccat1OLD" is discouraged (233 steps).
-Proof modification of "swrdccatwrdOLD" is discouraged (247 steps).
 Proof modification of "swrdeqOLD" is discouraged (418 steps).
 Proof modification of "swrdidOLD" is discouraged (160 steps).
 Proof modification of "swrdn0OLD" is discouraged (122 steps).
