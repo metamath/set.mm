@@ -637,7 +637,6 @@
 "adderpq" is used by "distrnq".
 "adderpq" is used by "ltexnq".
 "adderpqlem" is used by "adderpq".
-"addlenrevswrdOLD" is used by "addlenswrdOLD".
 "addnqf" is used by "addassnq".
 "addnqf" is used by "addcomnq".
 "addnqf" is used by "adderpq".
@@ -12523,20 +12522,7 @@
 "suplem2pr" is used by "supexpr".
 "supsr" is used by "axpre-sup".
 "supsrlem" is used by "supsr".
-"swrd0fOLD" is used by "swrdidOLD".
-"swrd0fOLD" is used by "swrdn0OLD".
-"swrd0fvOLD" is used by "swrd0fv0OLD".
-"swrd0fvOLD" is used by "swrd0fvlswOLD".
-"swrd0fvOLD" is used by "swrdeqOLD".
-"swrd0fvOLD" is used by "swrdtrcfvOLD".
-"swrd0fvlswOLD" is used by "swrdtrcfvlOLD".
-"swrd0lenOLD" is used by "addlenrevswrdOLD".
-"swrd0lenOLD" is used by "swrd0fvlswOLD".
-"swrd0lenOLD" is used by "swrd0len0OLD".
-"swrd0lenOLD" is used by "swrdeqOLD".
-"swrd0valOLD" is used by "swrd0lenOLD".
 "swrdnznd" is used by "swrdnnn0nd".
-"swrdtrcfvOLD" is used by "swrdtrcfv0OLD".
 "tb-ax1" is used by "re1ax2".
 "tb-ax1" is used by "re1ax2lem".
 "tb-ax1" is used by "tbsyl".
@@ -13223,8 +13209,6 @@ New usage of "addcomsr" is discouraged (8 uses).
 New usage of "adderpq" is discouraged (3 uses).
 New usage of "adderpqlem" is discouraged (1 uses).
 New usage of "addgt0sr" is discouraged (0 uses).
-New usage of "addlenrevswrdOLD" is discouraged (1 uses).
-New usage of "addlenswrdOLD" is discouraged (0 uses).
 New usage of "addltmulALT" is discouraged (0 uses).
 New usage of "addmodlteqALT" is discouraged (0 uses).
 New usage of "addnidpi" is discouraged (0 uses).
@@ -17187,8 +17171,6 @@ New usage of "rngosn3" is discouraged (1 uses).
 New usage of "rngosn4" is discouraged (1 uses).
 New usage of "rngosn6" is discouraged (1 uses).
 New usage of "rngoueqz" is discouraged (2 uses).
-New usage of "rpreOLD" is discouraged (0 uses).
-New usage of "rpssreOLD" is discouraged (0 uses).
 New usage of "rspsbc2" is discouraged (2 uses).
 New usage of "rspsbc2VD" is discouraged (0 uses).
 New usage of "ruALT" is discouraged (0 uses).
@@ -17548,20 +17530,7 @@ New usage of "suplem2pr" is discouraged (1 uses).
 New usage of "supp0cosupp0OLD" is discouraged (0 uses).
 New usage of "supsr" is discouraged (1 uses).
 New usage of "supsrlem" is discouraged (1 uses).
-New usage of "swrd0fOLD" is discouraged (2 uses).
-New usage of "swrd0fv0OLD" is discouraged (0 uses).
-New usage of "swrd0fvOLD" is discouraged (4 uses).
-New usage of "swrd0fvlswOLD" is discouraged (1 uses).
-New usage of "swrd0len0OLD" is discouraged (0 uses).
-New usage of "swrd0lenOLD" is discouraged (4 uses).
-New usage of "swrd0valOLD" is discouraged (1 uses).
-New usage of "swrdeqOLD" is discouraged (0 uses).
-New usage of "swrdidOLD" is discouraged (0 uses).
-New usage of "swrdn0OLD" is discouraged (0 uses).
 New usage of "swrdnznd" is discouraged (1 uses).
-New usage of "swrdtrcfv0OLD" is discouraged (0 uses).
-New usage of "swrdtrcfvOLD" is discouraged (1 uses).
-New usage of "swrdtrcfvlOLD" is discouraged (0 uses).
 New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
 New usage of "tarski-bernays-ax2" is discouraged (0 uses).
@@ -17845,8 +17814,6 @@ Proof modification of "abbi2iOLD" is discouraged (18 steps).
 Proof modification of "abeq2fOLD" is discouraged (46 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
-Proof modification of "addlenrevswrdOLD" is discouraged (91 steps).
-Proof modification of "addlenswrdOLD" is discouraged (89 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
 Proof modification of "addmodlteqALT" is discouraged (237 steps).
 Proof modification of "aecom-o" is discouraged (28 steps).
@@ -19133,8 +19100,6 @@ Proof modification of "rpnnen1lem3" is discouraged (468 steps).
 Proof modification of "rpnnen1lem4" is discouraged (155 steps).
 Proof modification of "rpnnen1lem5" is discouraged (1023 steps).
 Proof modification of "rpnnen1lem6" is discouraged (128 steps).
-Proof modification of "rpreOLD" is discouraged (21 steps).
-Proof modification of "rpssreOLD" is discouraged (7 steps).
 Proof modification of "rspsbc2" is discouraged (65 steps).
 Proof modification of "rspsbc2VD" is discouraged (90 steps).
 Proof modification of "ru" is discouraged (88 steps).
@@ -19284,19 +19249,6 @@ Proof modification of "suctrALT3" is discouraged (137 steps).
 Proof modification of "suctrALTcf" is discouraged (164 steps).
 Proof modification of "suctrALTcfVD" is discouraged (164 steps).
 Proof modification of "supp0cosupp0OLD" is discouraged (176 steps).
-Proof modification of "swrd0fOLD" is discouraged (102 steps).
-Proof modification of "swrd0fv0OLD" is discouraged (72 steps).
-Proof modification of "swrd0fvOLD" is discouraged (154 steps).
-Proof modification of "swrd0fvlswOLD" is discouraged (129 steps).
-Proof modification of "swrd0len0OLD" is discouraged (100 steps).
-Proof modification of "swrd0lenOLD" is discouraged (107 steps).
-Proof modification of "swrd0valOLD" is discouraged (199 steps).
-Proof modification of "swrdeqOLD" is discouraged (418 steps).
-Proof modification of "swrdidOLD" is discouraged (160 steps).
-Proof modification of "swrdn0OLD" is discouraged (122 steps).
-Proof modification of "swrdtrcfv0OLD" is discouraged (95 steps).
-Proof modification of "swrdtrcfvOLD" is discouraged (111 steps).
-Proof modification of "swrdtrcfvlOLD" is discouraged (114 steps).
 Proof modification of "syl5imp" is discouraged (23 steps).
 Proof modification of "syl5impVD" is discouraged (57 steps).
 Proof modification of "symrefref3" is discouraged (75 steps).
