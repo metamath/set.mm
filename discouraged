@@ -12665,7 +12665,6 @@
 "swrd0lenOLD" is used by "clwwlkinwwlkOLD".
 "swrd0lenOLD" is used by "efgredlemOLD".
 "swrd0lenOLD" is used by "efgsresOLD".
-"swrd0lenOLD" is used by "signstfveq0OLD".
 "swrd0lenOLD" is used by "splval2OLD".
 "swrd0lenOLD" is used by "swrd0fvlswOLD".
 "swrd0lenOLD" is used by "swrd0len0OLD".
@@ -12709,7 +12708,6 @@
 "swrdccatwrdOLD" is used by "ccats1swrdeqOLD".
 "swrdccatwrdOLD" is used by "iwrdsplitOLD".
 "swrdccatwrdOLD" is used by "psgnunilem5OLD".
-"swrdccatwrdOLD" is used by "signstfveq0OLD".
 "swrdccatwrdOLD" is used by "signsvtn0OLD".
 "swrdccatwrdOLD" is used by "wrd2indOLD".
 "swrdccatwrdOLD" is used by "wrdindOLD".
@@ -17667,7 +17665,6 @@ New usage of "shub2" is discouraged (1 uses).
 New usage of "shuni" is discouraged (3 uses).
 New usage of "shunssi" is discouraged (3 uses).
 New usage of "shunssji" is discouraged (2 uses).
-New usage of "signstfveq0OLD" is discouraged (0 uses).
 New usage of "signsvtn0OLD" is discouraged (0 uses).
 New usage of "sii" is discouraged (2 uses).
 New usage of "siii" is discouraged (2 uses).
@@ -17855,7 +17852,7 @@ New usage of "swrd0fv0OLD" is discouraged (8 uses).
 New usage of "swrd0fvOLD" is discouraged (10 uses).
 New usage of "swrd0fvlswOLD" is discouraged (6 uses).
 New usage of "swrd0len0OLD" is discouraged (1 uses).
-New usage of "swrd0lenOLD" is discouraged (20 uses).
+New usage of "swrd0lenOLD" is discouraged (19 uses).
 New usage of "swrd0swrd0OLD" is discouraged (1 uses).
 New usage of "swrd0swrdOLD" is discouraged (0 uses).
 New usage of "swrd0swrdidOLD" is discouraged (0 uses).
@@ -17870,7 +17867,7 @@ New usage of "swrdccatin12OLD" is discouraged (2 uses).
 New usage of "swrdccatin12dOLD" is discouraged (0 uses).
 New usage of "swrdccatin12lem2OLD" is discouraged (1 uses).
 New usage of "swrdccatin12lem2bOLD" is discouraged (1 uses).
-New usage of "swrdccatwrdOLD" is discouraged (8 uses).
+New usage of "swrdccatwrdOLD" is discouraged (7 uses).
 New usage of "swrdeqOLD" is discouraged (1 uses).
 New usage of "swrdidOLD" is discouraged (8 uses).
 New usage of "swrdn0OLD" is discouraged (3 uses).
@@ -19645,7 +19642,6 @@ Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "sbtvOLD" is discouraged (31 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
-Proof modification of "signstfveq0OLD" is discouraged (737 steps).
 Proof modification of "signsvtn0OLD" is discouraged (802 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comtVD" is discouraged (42 steps).
