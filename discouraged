@@ -4959,7 +4959,6 @@
 "dipsubdi" is used by "siilem1".
 "dipsubdir" is used by "dipsubdi".
 "dipsubdir" is used by "siilem1".
-"disjxwrdOLD" is used by "disjxwwlksnOLD".
 "distrlem1pr" is used by "distrpr".
 "distrlem4pr" is used by "distrlem5pr".
 "distrlem5pr" is used by "distrpr".
@@ -13126,13 +13125,8 @@
 "wvhc3" is used by "dfvd3an".
 "wvhc3" is used by "dfvd3ani".
 "wvhc3" is used by "dfvd3anir".
-"wwlksnextbij0OLD" is used by "wwlksnextbijOLD".
-"wwlksnextbijOLD" is used by "wwlksnexthasheqOLD".
 "wwlksnextfunOLD" is used by "wwlksnextinjOLD".
 "wwlksnextfunOLD" is used by "wwlksnextsurOLD".
-"wwlksnextinjOLD" is used by "wwlksnextbij0OLD".
-"wwlksnextsurOLD" is used by "wwlksnextbij0OLD".
-"wwlksnextwrdOLD" is used by "wwlksnextbijOLD".
 "wwlksnextwrdOLD" is used by "wwlksnextsurOLD".
 "wwlksnredOLD" is used by "wwlksnextbiOLD".
 "wwlksnredOLD" is used by "wwlksnredwwlknOLD".
@@ -14846,8 +14840,7 @@ New usage of "dipfval" is discouraged (3 uses).
 New usage of "diporthcom" is discouraged (1 uses).
 New usage of "dipsubdi" is discouraged (2 uses).
 New usage of "dipsubdir" is discouraged (2 uses).
-New usage of "disjxwrdOLD" is discouraged (1 uses).
-New usage of "disjxwwlksnOLD" is discouraged (0 uses).
+New usage of "disjxwrdOLD" is discouraged (0 uses).
 New usage of "distrlem1pr" is discouraged (1 uses).
 New usage of "distrlem4pr" is discouraged (1 uses).
 New usage of "distrlem5pr" is discouraged (1 uses).
@@ -17919,13 +17912,10 @@ New usage of "wvhc2" is discouraged (5 uses).
 New usage of "wvhc3" is discouraged (3 uses).
 New usage of "wwlksm1edgOLD" is discouraged (0 uses).
 New usage of "wwlksnextbiOLD" is discouraged (0 uses).
-New usage of "wwlksnextbij0OLD" is discouraged (1 uses).
-New usage of "wwlksnextbijOLD" is discouraged (1 uses).
 New usage of "wwlksnextfunOLD" is discouraged (2 uses).
-New usage of "wwlksnexthasheqOLD" is discouraged (0 uses).
-New usage of "wwlksnextinjOLD" is discouraged (1 uses).
-New usage of "wwlksnextsurOLD" is discouraged (1 uses).
-New usage of "wwlksnextwrdOLD" is discouraged (2 uses).
+New usage of "wwlksnextinjOLD" is discouraged (0 uses).
+New usage of "wwlksnextsurOLD" is discouraged (0 uses).
+New usage of "wwlksnextwrdOLD" is discouraged (1 uses).
 New usage of "wwlksnfiOLD" is discouraged (0 uses).
 New usage of "wwlksnredOLD" is discouraged (2 uses).
 New usage of "wwlksnredwwlkn0OLD" is discouraged (0 uses).
@@ -18432,7 +18422,6 @@ Proof modification of "dfvd3ir" is discouraged (19 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
 Proof modification of "disjxwrdOLD" is discouraged (13 steps).
-Proof modification of "disjxwwlksnOLD" is discouraged (80 steps).
 Proof modification of "dju1p1e2" is discouraged (72 steps).
 Proof modification of "dju1p1e2ALT" is discouraged (34 steps).
 Proof modification of "djuexALT" is discouraged (51 steps).
@@ -19675,10 +19664,7 @@ Proof modification of "wrdnfiOLD" is discouraged (79 steps).
 Proof modification of "wrdvOLD" is discouraged (42 steps).
 Proof modification of "wwlksm1edgOLD" is discouraged (700 steps).
 Proof modification of "wwlksnextbiOLD" is discouraged (443 steps).
-Proof modification of "wwlksnextbij0OLD" is discouraged (82 steps).
-Proof modification of "wwlksnextbijOLD" is discouraged (277 steps).
 Proof modification of "wwlksnextfunOLD" is discouraged (270 steps).
-Proof modification of "wwlksnexthasheqOLD" is discouraged (83 steps).
 Proof modification of "wwlksnextinjOLD" is discouraged (841 steps).
 Proof modification of "wwlksnextsurOLD" is discouraged (623 steps).
 Proof modification of "wwlksnextwrdOLD" is discouraged (582 steps).
