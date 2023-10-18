@@ -6564,7 +6564,6 @@
 "hhnv" is used by "occllem".
 "hhph" is used by "bcsiHIL".
 "hhph" is used by "hhhl".
-"hhph" is used by "hhssphOLD".
 "hhph" is used by "pjhthlem2".
 "hhshsslem1" is used by "hhshsslem2".
 "hhshsslem1" is used by "hhssba".
@@ -6604,7 +6603,6 @@
 "hhsssm" is used by "hhsssh2".
 "hhsssm" is used by "hhsst".
 "hhsst" is used by "hhssba".
-"hhsst" is used by "hhssphOLD".
 "hhsst" is used by "hhsssh".
 "hhsst" is used by "hhssvs".
 "hhsst" is used by "pjhthlem2".
@@ -12532,7 +12530,6 @@
 "sspnv" is used by "sspz".
 "sspnval" is used by "sspimsval".
 "sspnval" is used by "sspphOLD".
-"sspphOLD" is used by "hhssphOLD".
 "sspphOLD" is used by "ssphlOLD".
 "ssps" is used by "sspsval".
 "sspsval" is used by "hhshsslem2".
@@ -15672,7 +15669,7 @@ New usage of "hhmetdval" is discouraged (1 uses).
 New usage of "hhnm" is discouraged (9 uses).
 New usage of "hhnmoi" is discouraged (3 uses).
 New usage of "hhnv" is discouraged (30 uses).
-New usage of "hhph" is discouraged (4 uses).
+New usage of "hhph" is discouraged (3 uses).
 New usage of "hhshsslem1" is discouraged (2 uses).
 New usage of "hhshsslem2" is discouraged (1 uses).
 New usage of "hhsm" is discouraged (6 uses).
@@ -15689,11 +15686,10 @@ New usage of "hhssmetdval" is discouraged (0 uses).
 New usage of "hhssnm" is discouraged (4 uses).
 New usage of "hhssnv" is discouraged (6 uses).
 New usage of "hhssnvt" is discouraged (1 uses).
-New usage of "hhssphOLD" is discouraged (0 uses).
 New usage of "hhsssh" is discouraged (1 uses).
 New usage of "hhsssh2" is discouraged (0 uses).
 New usage of "hhsssm" is discouraged (2 uses).
-New usage of "hhsst" is discouraged (5 uses).
+New usage of "hhsst" is discouraged (4 uses).
 New usage of "hhssva" is discouraged (2 uses).
 New usage of "hhssvs" is discouraged (3 uses).
 New usage of "hhssvsf" is discouraged (1 uses).
@@ -17759,7 +17755,7 @@ New usage of "sspmval" is discouraged (4 uses).
 New usage of "sspn" is discouraged (1 uses).
 New usage of "sspnv" is discouraged (12 uses).
 New usage of "sspnval" is discouraged (2 uses).
-New usage of "sspphOLD" is discouraged (2 uses).
+New usage of "sspphOLD" is discouraged (1 uses).
 New usage of "ssps" is discouraged (1 uses).
 New usage of "sspsval" is discouraged (3 uses).
 New usage of "sspval" is discouraged (1 uses).
@@ -19130,7 +19126,6 @@ Proof modification of "hbra2VD" is discouraged (26 steps).
 Proof modification of "hbsb2ALT" is discouraged (32 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hhssbnOLD" is discouraged (39 steps).
-Proof modification of "hhssphOLD" is discouraged (38 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
 Proof modification of "icccmpALT" is discouraged (71 steps).
 Proof modification of "id1" is discouraged (2 steps).
