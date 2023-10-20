@@ -13067,6 +13067,7 @@ New usage of "0reALT" is discouraged (0 uses).
 New usage of "0vfval" is discouraged (9 uses).
 New usage of "139prmALT" is discouraged (0 uses).
 New usage of "19.21a3con13vVD" is discouraged (0 uses).
+New usage of "19.3vOLD" is discouraged (0 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
 New usage of "19.42vvvOLD" is discouraged (0 uses).
@@ -17406,6 +17407,7 @@ New usage of "spsbeALT" is discouraged (1 uses).
 New usage of "spsbeOLD" is discouraged (0 uses).
 New usage of "spsbeOLDOLD" is discouraged (0 uses).
 New usage of "spsbimvOLD" is discouraged (0 uses).
+New usage of "spvwOLD" is discouraged (0 uses).
 New usage of "sqgt0sr" is discouraged (1 uses).
 New usage of "srhmsubcALTV" is discouraged (4 uses).
 New usage of "srhmsubcALTVlem1" is discouraged (2 uses).
@@ -17741,6 +17743,7 @@ Proof modification of "0nnnALT" is discouraged (11 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "139prmALT" is discouraged (758 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
+Proof modification of "19.3vOLD" is discouraged (19 steps).
 Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
 Proof modification of "19.42vvvOLD" is discouraged (37 steps).
@@ -19185,6 +19188,7 @@ Proof modification of "spsbeALT" is discouraged (22 steps).
 Proof modification of "spsbeOLD" is discouraged (75 steps).
 Proof modification of "spsbeOLDOLD" is discouraged (23 steps).
 Proof modification of "spsbimvOLD" is discouraged (16 steps).
+Proof modification of "spvwOLD" is discouraged (8 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).
 Proof modification of "sspwimpALT" is discouraged (74 steps).
