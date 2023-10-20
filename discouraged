@@ -14389,7 +14389,6 @@ New usage of "csbsngVD" is discouraged (0 uses).
 New usage of "csbunigVD" is discouraged (0 uses).
 New usage of "csbxpgVD" is discouraged (0 uses).
 New usage of "csmdsymi" is discouraged (0 uses).
-New usage of "cspliceOLD" is discouraged (0 uses).
 New usage of "currysetALT" is discouraged (0 uses).
 New usage of "cvati" is discouraged (1 uses).
 New usage of "cvbr" is discouraged (4 uses).
@@ -16308,10 +16307,6 @@ New usage of "n2dvds1OLD" is discouraged (0 uses).
 New usage of "n2dvds3OLD" is discouraged (0 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
 New usage of "nanassOLD" is discouraged (0 uses).
-New usage of "nanbi1OLD" is discouraged (0 uses).
-New usage of "nancomOLD" is discouraged (0 uses).
-New usage of "nannanOLD" is discouraged (0 uses).
-New usage of "nannotOLD" is discouraged (0 uses).
 New usage of "natded" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "nelne1OLD" is discouraged (0 uses).
@@ -18860,10 +18855,6 @@ Proof modification of "n2dvds1OLD" is discouraged (37 steps).
 Proof modification of "n2dvds3OLD" is discouraged (40 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nanassOLD" is discouraged (191 steps).
-Proof modification of "nanbi1OLD" is discouraged (32 steps).
-Proof modification of "nancomOLD" is discouraged (26 steps).
-Proof modification of "nannanOLD" is discouraged (32 steps).
-Proof modification of "nannotOLD" is discouraged (17 steps).
 Proof modification of "nelne1OLD" is discouraged (26 steps).
 Proof modification of "nelne2OLD" is discouraged (26 steps).
 Proof modification of "nf5riOLD" is discouraged (13 steps).
