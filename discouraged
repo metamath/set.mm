@@ -13067,6 +13067,7 @@ New usage of "0reALT" is discouraged (0 uses).
 New usage of "0vfval" is discouraged (9 uses).
 New usage of "139prmALT" is discouraged (0 uses).
 New usage of "19.21a3con13vVD" is discouraged (0 uses).
+New usage of "19.3vOLD" is discouraged (0 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
 New usage of "19.42vvvOLD" is discouraged (0 uses).
@@ -14389,7 +14390,6 @@ New usage of "csbsngVD" is discouraged (0 uses).
 New usage of "csbunigVD" is discouraged (0 uses).
 New usage of "csbxpgVD" is discouraged (0 uses).
 New usage of "csmdsymi" is discouraged (0 uses).
-New usage of "cspliceOLD" is discouraged (0 uses).
 New usage of "currysetALT" is discouraged (0 uses).
 New usage of "cvati" is discouraged (1 uses).
 New usage of "cvbr" is discouraged (4 uses).
@@ -15141,6 +15141,7 @@ New usage of "exanOLDOLD" is discouraged (0 uses).
 New usage of "exatleN" is discouraged (1 uses).
 New usage of "exbirVD" is discouraged (0 uses).
 New usage of "exbiriVD" is discouraged (0 uses).
+New usage of "exgenOLD" is discouraged (0 uses).
 New usage of "exidu1" is discouraged (3 uses).
 New usage of "exinst" is discouraged (1 uses).
 New usage of "exinst01" is discouraged (1 uses).
@@ -16308,10 +16309,6 @@ New usage of "n2dvds1OLD" is discouraged (0 uses).
 New usage of "n2dvds3OLD" is discouraged (0 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
 New usage of "nanassOLD" is discouraged (0 uses).
-New usage of "nanbi1OLD" is discouraged (0 uses).
-New usage of "nancomOLD" is discouraged (0 uses).
-New usage of "nannanOLD" is discouraged (0 uses).
-New usage of "nannotOLD" is discouraged (0 uses).
 New usage of "natded" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "nelne1OLD" is discouraged (0 uses).
@@ -17410,6 +17407,7 @@ New usage of "spsbeALT" is discouraged (1 uses).
 New usage of "spsbeOLD" is discouraged (0 uses).
 New usage of "spsbeOLDOLD" is discouraged (0 uses).
 New usage of "spsbimvOLD" is discouraged (0 uses).
+New usage of "spvwOLD" is discouraged (0 uses).
 New usage of "sqgt0sr" is discouraged (1 uses).
 New usage of "srhmsubcALTV" is discouraged (4 uses).
 New usage of "srhmsubcALTVlem1" is discouraged (2 uses).
@@ -17746,6 +17744,7 @@ Proof modification of "0nnnALT" is discouraged (11 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "139prmALT" is discouraged (758 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
+Proof modification of "19.3vOLD" is discouraged (19 steps).
 Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
 Proof modification of "19.42vvvOLD" is discouraged (37 steps).
@@ -18477,6 +18476,7 @@ Proof modification of "exanOLD" is discouraged (19 steps).
 Proof modification of "exanOLDOLD" is discouraged (29 steps).
 Proof modification of "exbirVD" is discouraged (65 steps).
 Proof modification of "exbiriVD" is discouraged (70 steps).
+Proof modification of "exgenOLD" is discouraged (13 steps).
 Proof modification of "exinst" is discouraged (12 steps).
 Proof modification of "exinst01" is discouraged (16 steps).
 Proof modification of "exinst11" is discouraged (21 steps).
@@ -18861,10 +18861,6 @@ Proof modification of "n2dvds1OLD" is discouraged (37 steps).
 Proof modification of "n2dvds3OLD" is discouraged (40 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nanassOLD" is discouraged (191 steps).
-Proof modification of "nanbi1OLD" is discouraged (32 steps).
-Proof modification of "nancomOLD" is discouraged (26 steps).
-Proof modification of "nannanOLD" is discouraged (32 steps).
-Proof modification of "nannotOLD" is discouraged (17 steps).
 Proof modification of "nelne1OLD" is discouraged (26 steps).
 Proof modification of "nelne2OLD" is discouraged (26 steps).
 Proof modification of "nf5riOLD" is discouraged (13 steps).
@@ -19193,6 +19189,7 @@ Proof modification of "spsbeALT" is discouraged (22 steps).
 Proof modification of "spsbeOLD" is discouraged (75 steps).
 Proof modification of "spsbeOLDOLD" is discouraged (23 steps).
 Proof modification of "spsbimvOLD" is discouraged (16 steps).
+Proof modification of "spvwOLD" is discouraged (8 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).
 Proof modification of "sspwimpALT" is discouraged (74 steps).
