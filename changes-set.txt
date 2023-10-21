@@ -15,16 +15,93 @@ The ones WITH "Notes" may have to be processed manually.
 PROPOSED:
 Date      Old       New         Notes
 proposed  syl       imtri       (analogous to *bitr*, sstri, etc.)
-proposed  sylib     imbitri     etc.
-proposed  sylbid    biimtrd     etc.
-proposed  sylbird   biimtrrd    etc.
-proposed  syl5*     *trid       (syl5bi -> biimtrid; syl5eqel -> eqeltrid;etc.)
-proposed  syl6*     *trdi
+                                there is less agreemnt on renaming syl
+                                than others here
+proposed  syld      imtrd
+proposed  syldc     imtrdcom
+proposed  syldd     imtrdd
+proposed  sylbi     biimtri
+proposed  sylib     imbitri
+proposed  sylbb     bitriim
+proposed  sylibr    imbitrri
+proposed  sylbir    biimtrri
+proposed  sylbbr    bitrriim
+proposed  sylbb1    bitr3iim
+proposed  sylbb2    bitr4iim
+proposed  sylibd    imbitrd
+proposed  sylbid    biimtrd
+proposed  sylibrd   imbitrrd
+proposed  sylbird   biimtrrd
+proposed  syl5com   imtridcom
+proposed  syl5      imtrid      alternate proposal: sylid
+proposed  syl56     imtridi
+proposed  syl5d     imtridd
+proposed  syl5bi    biimtrid
+proposed  syl5bir   biimtrrid
+proposed  syl5ib    imbitrid
+proposed  syl5ibcom imbitridcom
+proposed  syl5ibr   imbitrrid
+proposed  syl5ibrcom imbitrridcom
+proposed  syl5bb    bitrid      compare to bitri or bitrd
+proposed  syl5rbb   bitridcom
+proposed  syl5bbr   bitr3id     compare to bitr3i or bitr3d
+proposed  syl5rbbr  bitr3idcom
+proposed  syl5eq    eqtrid      compare to eqtri or eqtrd
+proposed  syl5req   eqtridcom
+proposed  syl5eqr   eqtr3id     compare to eqtr3i or eqtr3d
+proposed  syl5reqr  eqtr3idcom
+proposed  syl5eqel  eqeltrid    compare to eqeltri or eqeltrd
+proposed  syl5eqelr eqeltrrid   compare to eqeltrri or eqeltrrd
+proposed  syl5eleq  eleqtrid    compare to eleqtri or eleqtrd
+proposed  syl5eleqr eleqtrrid   compare to eleqtrri or eleqtrrd
+proposed  syl5eqner eqnetrrid   compare to eqnetrri or eqnetrrd
+proposed  syl5ss    sstrid      compare to sstri or sstrd
+proposed  syl5eqss  eqsstrid    compare to eqsstri or eqsstrd
+proposed  syl5eqssr eqsstrrid   compare to eqsstr3i or eqsstr3d
+proposed  eqsstr3i  eqsstrri
+proposed  eqsstr3d  eqsstrrd
+proposed  syl5sseq  sseqtrid    compare to sseqtri or sseqtrd
+proposed  syl5sseqr sseqtrrid
+proposed  syl5eqbr  eqbrtrid    compare to eqbrtri or eqbrtrd
+proposed  syl5eqbrr eqbrtrrid   compare to eqbrtrri or eqbrtrrd
+proposed  syl5breq  breqtrid    compare to breqtri or breqtrd
+proposed  syl5breqr breqtrrid   compare to breqtrri or breqtrrd
+proposed  wl-luk-syl5 wl-luk-imtrid
+proposed  syl6      imtrdi      alternate proposal: syldi
+proposed  syl6com   imtrdicom
+proposed  syl6d     imtrdid
+proposed  syl6ib    imbitrdi
+proposed  syl6ibr   imbitrrdi
+proposed  syl6bi    biimtrdi
+proposed  syl6bir   biimtrrdi
+proposed  syl6bb    bitrdi      compare to bitri or bitrd
+proposed  syl6rbb   bitrdicom
+proposed  syl6bbr   bitr4di     compare to bitr4i or bitr4d
+proposed  syl6rbbr  bitr4dicom
+proposed  syl6eq    eqtrdi      compare to eqtri or eqtrd
+proposed  syl6req   eqtrdicom
+proposed  syl6eqr   eqtr4di     compare to eqtr4i or eqtr4d
+proposed  syl6reqr  eqtr4dicom
+proposed  syl6eqel  eqeltrdi    compare to eqeltri or eqeltrd
+proposed  syl6eqelr eqeltrrdi   compare to eqeltrri or eqeltrrd
+proposed  syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
+proposed  syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
+proposed  syl6ss    sstrdi      compare to sstri or sstrd
+proposed  syl6sseq  sseqtrdi    compare to sseqtri or sseqtrd
+proposed  syl6sseqr sseqtrrdi
+proposed  syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
+proposed  syl6eqssr eqsstrrdi
+proposed  syl6eqbr  eqbrtrdi    compare to eqbrtri or eqbrtrd
+proposed  syl6eqbrr eqbrtrrdi   compare to eqbrtrri or eqbrtrrd
+proposed  syl6breq  breqtrdi    compare to breqtri or breqtrd
+proposed  syl6breqr breqtrrdi   compare to breqtrri or breqtrrd
+proposed  wl-luk-syl6 wl-luk-imtrdi
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+15-Oct-23 fnssresd  [same]      moved from GS's mathbox to main set.mm
 11-Oct-23 2exanali  [same]      moved from ATS's mathbox to main set.mm
  6-Oct-23 vtocl2d   [same]      moved from TA's mathbox to main set.mm
  4-Oct-23 df-cda    df-dju      use |_| instead of +c
