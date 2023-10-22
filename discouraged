@@ -17402,6 +17402,7 @@ New usage of "spcgvOLD" is discouraged (0 uses).
 New usage of "speccl" is discouraged (0 uses).
 New usage of "specval" is discouraged (1 uses).
 New usage of "speimfwALT" is discouraged (0 uses).
+New usage of "spimehOLD" is discouraged (0 uses).
 New usage of "spimtOLD" is discouraged (0 uses).
 New usage of "spimvALT" is discouraged (0 uses).
 New usage of "sps-o" is discouraged (7 uses).
@@ -19184,6 +19185,7 @@ Proof modification of "snsslVD" is discouraged (24 steps).
 Proof modification of "spcegvOLD" is discouraged (13 steps).
 Proof modification of "spcgvOLD" is discouraged (13 steps).
 Proof modification of "speimfwALT" is discouraged (35 steps).
+Proof modification of "spimehOLD" is discouraged (25 steps).
 Proof modification of "spimtOLD" is discouraged (52 steps).
 Proof modification of "spimvALT" is discouraged (16 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
