@@ -102,6 +102,7 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 22-Oct-23 spimeh    spimew      show relation to spimw
+22-Oct-23 spimev    spimevv     same as with spv/spvv
 15-Oct-23 fnssresd  [same]      moved from GS's mathbox to main set.mm
 11-Oct-23 2exanali  [same]      moved from ATS's mathbox to main set.mm
  6-Oct-23 vtocl2d   [same]      moved from TA's mathbox to main set.mm
