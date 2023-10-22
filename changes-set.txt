@@ -25,6 +25,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-Oct-23 axsep2    axsepg
 11-Oct-23 2exanali  [same]      moved from ATS's mathbox to main set.mm
  6-Oct-23 vtocl2d   [same]      moved from TA's mathbox to main set.mm
  4-Oct-23 df-cda    df-dju      use |_| instead of +c
