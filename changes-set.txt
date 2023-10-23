@@ -101,6 +101,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+23-Oct-23 axext2    axexte      existential form of ax-ext
+23-Oct-23 axext3    axextg      more general form of ax-ext
+23-Oct-23 axext4    axextb      biconditional form of ax-ext
 22-Oct-23 spimeh    spimew      existential version of spimw
 22-Oct-23 speiv     speivw      weak form of speiv
 22-Oct-23 axsep2    axsepg
