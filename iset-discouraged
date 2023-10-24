@@ -105,6 +105,8 @@
 "basendx" is used by "topgrpstrd".
 "bj-axemptylem" is used by "bj-axempty".
 "bj-axemptylem" is used by "bj-axempty2".
+"cnm" is used by "axaddf".
+"cnm" is used by "axmulf".
 "df-div" is used by "divfnzn".
 "df-div" is used by "divvalap".
 "df-ilim" is used by "dflim2".
@@ -269,6 +271,7 @@ New usage of "bj-nn0sucALT" is discouraged (0 uses).
 New usage of "bj-omex2" is discouraged (0 uses).
 New usage of "bj-omssonALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
+New usage of "cnm" is discouraged (2 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-div" is discouraged (2 uses).
 New usage of "df-ilim" is discouraged (1 uses).
