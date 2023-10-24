@@ -59,6 +59,7 @@
 "ax-addass" is used by "addass".
 "ax-addcl" is used by "addcl".
 "ax-addcom" is used by "addcom".
+"ax-addf" is used by "addcncntop".
 "ax-addrcl" is used by "readdcl".
 "ax-arch" is used by "arch".
 "ax-caucvg" is used by "caucvgre".
@@ -209,7 +210,7 @@ New usage of "ax-1re" is discouraged (1 uses).
 New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
 New usage of "ax-addcom" is discouraged (1 uses).
-New usage of "ax-addf" is discouraged (0 uses).
+New usage of "ax-addf" is discouraged (1 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-arch" is discouraged (1 uses).
 New usage of "ax-caucvg" is discouraged (1 uses).
