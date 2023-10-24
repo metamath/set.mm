@@ -101,7 +101,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-23-Oct-23 bj-alequexv alequexv  moved from BJ's mahbox to main set.mm
+23-Oct-23 bj-alequexv alequexv  moved from BJ's mathbox to main set.mm
 22-Oct-23 spimeh    spimew      existential version of spimw
 22-Oct-23 speiv     speivw      weak form of speiv
 22-Oct-23 axsep2    axsepg
