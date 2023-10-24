@@ -80,6 +80,7 @@
 "ax1re" is used by "peano5nnnn".
 "ax1rid" is used by "recriota".
 "ax1rid" is used by "rereceu".
+"axaddcl" is used by "axaddf".
 "axaddrcl" is used by "peano5nnnn".
 "axcnex" is used by "peano5nnnn".
 "axltirr" is used by "ltnr".
@@ -208,6 +209,7 @@ New usage of "ax-1re" is discouraged (1 uses).
 New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
 New usage of "ax-addcom" is discouraged (1 uses).
+New usage of "ax-addf" is discouraged (0 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-arch" is discouraged (1 uses).
 New usage of "ax-caucvg" is discouraged (1 uses).
@@ -231,8 +233,9 @@ New usage of "ax1re" is discouraged (1 uses).
 New usage of "ax1rid" is discouraged (2 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
 New usage of "axaddass" is discouraged (0 uses).
-New usage of "axaddcl" is discouraged (0 uses).
+New usage of "axaddcl" is discouraged (1 uses).
 New usage of "axaddcom" is discouraged (0 uses).
+New usage of "axaddf" is discouraged (0 uses).
 New usage of "axaddrcl" is discouraged (1 uses).
 New usage of "axarch" is discouraged (0 uses).
 New usage of "axcaucvg" is discouraged (0 uses).
