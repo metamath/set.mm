@@ -40,9 +40,4 @@ my_bindir="${prefix:-"$HOME"}/${bindir:-bin}/"
 mkdir -p "$my_bindir"
 cp -p src/metamath "${my_bindir}"
 
-# If there's no more recent mmbiblio.html, use this one.
-if ! [ -e ../mmbiblio.html ] ; then
-  cp -p mmbiblio.html ../
-fi
-
 cd ../

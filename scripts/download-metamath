@@ -40,14 +40,6 @@ set -x
 curl -L -o metamath-program.zip \
      https://github.com/metamath/metamath-exe/zipball/master
 
-# Extract into a different directory to prevent overwriting .mm's
-# This will be updated, but we need a starting point:
-mkdir -p metamath/
-cd metamath/
-#wget -N http://us.metamath.org/mpegif/mmbiblio.html
-wget -N https://raw.githubusercontent.com/metamath/metamath-website-seed/main/mpegif/mmbiblio.html
-cd ..
-
 # Store latest_version value inside metamath/ so we can get it later.
 # printf '%s' "$latest_version" > metamath/.latest_version
 
