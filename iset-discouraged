@@ -88,6 +88,7 @@
 "axlttrn" is used by "lttr".
 "axmulass" is used by "recriota".
 "axmulass" is used by "rereceu".
+"axmulcl" is used by "axmulf".
 "axmulcom" is used by "recriota".
 "axmulcom" is used by "rereceu".
 "axprecex" is used by "recriota".
@@ -224,6 +225,7 @@ New usage of "ax-io" is discouraged (1 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
+New usage of "ax-mulf" is discouraged (0 uses).
 New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax0id" is discouraged (0 uses).
 New usage of "ax0lt1" is discouraged (0 uses).
@@ -248,8 +250,9 @@ New usage of "axicn" is discouraged (0 uses).
 New usage of "axltirr" is discouraged (1 uses).
 New usage of "axlttrn" is discouraged (1 uses).
 New usage of "axmulass" is discouraged (2 uses).
-New usage of "axmulcl" is discouraged (0 uses).
+New usage of "axmulcl" is discouraged (1 uses).
 New usage of "axmulcom" is discouraged (2 uses).
+New usage of "axmulf" is discouraged (0 uses).
 New usage of "axmulrcl" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
 New usage of "axpre-apti" is discouraged (0 uses).
