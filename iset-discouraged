@@ -74,6 +74,7 @@
 "ax-mulass" is used by "mulass".
 "ax-mulcl" is used by "mulcl".
 "ax-mulcom" is used by "mulcom".
+"ax-mulf" is used by "mulcncntop".
 "ax-mulrcl" is used by "remulcl".
 "ax16ALT" is used by "dvelimALT".
 "ax16ALT" is used by "dvelimfv".
@@ -225,7 +226,7 @@ New usage of "ax-io" is discouraged (1 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
-New usage of "ax-mulf" is discouraged (0 uses).
+New usage of "ax-mulf" is discouraged (1 uses).
 New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax0id" is discouraged (0 uses).
 New usage of "ax0lt1" is discouraged (0 uses).
