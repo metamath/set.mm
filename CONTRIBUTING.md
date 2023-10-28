@@ -23,8 +23,11 @@ Walking through the
 To create a proof, you need to pick a tool.
 The Metamath system specifies a common file format, not a single tool
 everyone has to use.
-Many in the community use the [mmj2 tool](http://us.metamath.org#book), and
+Many in the community use the [mmj2 tool](http://us.metamath.org#mmj2), and
 many of the rest use the original metamath C program (aka "metamath.exe").
+A third option is the [metamath-lamp tool](https://lamp-guide.metamath.org/),
+which can be accessed directly from your web browser at
+<https://expln.github.io/lamp/latest/index.html>.
 The page
 [Metamath Proof Assistants](https://github.com/metamath/set.mm/wiki/Metamath-Proof-Assistants)
 provides more information about each tool.
@@ -106,6 +109,12 @@ The reason for doing /rewrap first is so that 'save proof' will subsequently
 adjust the proof indentation to match any indentation changes made by /rewrap.
 Then, 'verify markup' will check that no lines became too long due to different
 indentation.  Finally, 'verify proof' is there because you might as well.
+
+In addition, you are encouraged to run `scripts/minimize label`, where label is
+the name of your theorem. This script attempts to shorten the proof using other
+theorems in the database. Over many proofs, this can make a big difference in
+speeding up various functions, such as loading the database into a tool.
+However, this step is not a requirement for submissions to be accepted.
 
 (You can also check definitional soundness with mmj2 and any 'discouraged'
 markup changes before submission if you want, or you can just leave it up to

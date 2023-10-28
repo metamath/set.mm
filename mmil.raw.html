@@ -1966,6 +1966,8 @@ favor of theorems in deduction form.</TD>
 <TR>
   <TD>pwpw0</TD>
   <TD>~ pwpw0ss</TD>
+  <TD>that pwpw0 is equivalent to excluded middle
+  follows from ~ exmidpw or ~ exmid01</TD>
 </TR>
 
 <TR>
@@ -2988,7 +2990,7 @@ The set.mm proof relies on reuxfrd .</TD>
 </TR>
 
 <TR>
-<TD>~ mpt2fvex </TD>
+<TD>~ mpofvex </TD>
 <TD>When the operation is defined via maps-to, yields a set on
 any inputs, and is being evaluated at two sets.</TD>
 </TR>
@@ -3027,7 +3029,7 @@ found in ~ ovi3 .</TD>
 
 <TR>
 <TD>oprssdm</TD>
-<TD><I>none</I></TD>
+<TD>~ oprssdmm</TD>
 </TR>
 
 <TR>
@@ -3336,7 +3338,7 @@ the definition of limit ordinal or is it unrelated?).</TD>
 </TR>
 
 <TR>
-<TD>tfinds , tfindsg</TD>
+<TD>tfinds , tfindsg , tfindsg2 , tfindes , tfinds2 , tfinds3</TD>
 <TD>~ tfis3 </TD>
 <TD>We are unable to separate limit and successor ordinals
 using case elimination.</TD>
@@ -3358,6 +3360,12 @@ hasn't been a need for it.</TD>
 <TD>xpexr2</TD>
 <TD>~ xpexr2m </TD>
 </TR>
+
+<tr>
+  <td>xpexcnv</td>
+  <td><i>none</i></td>
+  <td>would be provable if nonempty is changed to inhabited</td>
+</tr>
 
 <TR>
 <TD>1stval</TD>
@@ -3396,7 +3404,7 @@ hasn't been a need for it.</TD>
 </tr>
 
 <tr>
-  <td>el2mpt2csbcl</td>
+  <td>el2mpocsbcl</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses excluded middle</td>
 </tr>
@@ -3462,8 +3470,26 @@ hasn't been a need for it.</TD>
 </tr>
 
 <tr>
-  <td>mpt2xopynvov0</td>
+  <td>mpoxopynvov0</td>
   <td><i>none</i></td>
+</tr>
+
+<tr>
+  <td>mpoxopoveqd</td>
+  <td><i>none</i></td>
+  <td>unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>brovmpoex</td>
+  <td><i>none</i></td>
+  <td>unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>sprmpod</td>
+  <td><i>none</i></td>
+  <td>unused in set.mm</td>
 </tr>
 
 <TR>
@@ -3480,6 +3506,14 @@ hasn't been a need for it.</TD>
 <TD>ovtpos</TD>
 <TD>~ ovtposg </TD>
 </TR>
+
+<tr>
+  <td>df-cur , df-unc and all theorems using the curry and uncurry
+  syntaxes</td>
+  <td><i>none</i></td>
+  <td>presumably could be added with only the usual issues around
+  nonempty versus inhabited and the like</td>
+</tr>
 
 <TR>
 <TD>pwuninel</TD>
@@ -3682,6 +3716,24 @@ characteristic function and initial value.</TD>
 <TD>oawordex</TD>
 <TD>~ nnawordex </TD>
 </TR>
+
+<tr>
+  <td>oarec</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on tfinds3</td>
+</tr>
+
+<tr>
+  <td>oaf1o</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ontri1 and oawordeu</td>
+</tr>
+
+<tr>
+  <td>oacomf1o , oacomf1olem</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on oarec and oaf1o</td>
+</tr>
 
 <TR>
 <TD>swoso</TD>
@@ -4257,14 +4309,77 @@ this implies excluded middle</TD>
   <TD>The set.mm proof of fisuppfi uses ssfi</TD>
 </TR>
 
-<TR>
-  <TD>df-fi and all theorems using the fi (class of finite
-  intersections) notation</TD>
-  <TD><I>none</I></TD>
-  <TD>Although some of these theorems could be intuitionized if
-  there is a need, others rely on excluded middle in apparently
-  essential ways.</TD>
-</TR>
+<tr>
+  <td>intrnfi</td>
+  <td><i>none</i></td>
+  <td>presumably not provable; the set.mm proof uses fofi</td>
+</tr>
+
+<tr>
+  <td>iinfi</td>
+  <td><i>none</i></td>
+  <td>presumably not provable; the set.mm proof uses intrnfi</td>
+</tr>
+
+<tr>
+  <td>inelfi</td>
+  <td><i>none</i></td>
+  <td>may need a condition such as ` A =/= B `; the set.mm proof
+  uses prfi</td>
+</tr>
+
+<tr>
+  <td>fiin</td>
+  <td><i>none</i></td>
+  <td>presumably needs a condition analogous to those in ~ unfidisj
+  or ~ unfiin ; the set.mm proof uses unfi</td>
+</tr>
+
+<tr>
+  <td>dffi2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fiin and other theorems we do not have</td>
+</tr>
+
+<tr>
+  <td>inficl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fiin and dffi2 (see also inelfi which might
+  be relevant)</td>
+</tr>
+
+<tr>
+  <td>fipwuni</td>
+  <td><i>none</i></td>
+  <td>would need a ` A e. _V ` condition but even with that,
+  the set.mm proof uses inficl</td>
+</tr>
+
+<tr>
+  <td>fisn</td>
+  <td><i>none</i></td>
+  <td>presumably would be provable (with an ` A e. _V ` condition
+  added), but the set.mm proof uses inficl</td>
+</tr>
+
+<tr>
+  <td>fipwss</td>
+  <td>~ fipwssg</td>
+  <td>adds the condition that ` A ` is a set</td>
+</tr>
+
+<tr>
+  <td>elfiun</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ssfi , fiin , and excluded middle</td>
+</tr>
+
+<tr>
+  <td>dffi3</td>
+  <td><i>none</i></td>
+  <td>might be possible (perhaps using ~ df-frec notation), but the
+  set.mm proof does not work as-is</td>
+</tr>
 
 <TR>
   <TD>dfsup2</TD>
@@ -4480,6 +4595,14 @@ this implies excluded middle</TD>
 <TD>~ ax-setind </TD>
 <TD>ax-reg implies excluded middle as seen at ~ regexmid</TD>
 </TR>
+
+<tr>
+  <td>infdifsn</td>
+  <td><i>none</i></td>
+  <td>would likely need a ` B e. A ` condition but even with
+  that, the set.mm proof relies on limenpsi , difsnen ,
+  and undif</td>
+</tr>
 
 <tr>
   <td>unbnn3</td>
@@ -4785,11 +4908,6 @@ this implies excluded middle</TD>
 </tr>
 
 <tr>
-  <td>cda1en</td>
-  <td>~ dju1en</td>
-</tr>
-
-<tr>
   <td>cda1dif</td>
   <td><i>none</i></td>
 </tr>
@@ -4842,6 +4960,126 @@ this implies excluded middle</TD>
 <tr>
   <td>cdadom3</td>
   <td>~ djudoml</td>
+</tr>
+
+<tr>
+  <td>cdaxpdom , djuxpdom</td>
+  <td><i>none</i></td>
+  <td>presumably provable if having cardinality greater than one
+  is expressed as ` 2o ~<_ A ` instead</td>
+</tr>
+
+<tr>
+  <td>cdafi , djufi</td>
+  <td><i>none</i></td>
+  <td>we should be able to prove
+  ` ( A e. Fin /\ B e. Fin ) -> ( A |_| B ) e. Fin `</td>
+</tr>
+
+<tr>
+  <td>cdainflem , cdainf , djuinf</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof is not easily adapted</td>
+</tr>
+
+<tr>
+  <td>infcda1 , infdju1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on infdifsn</td>
+</tr>
+
+<tr>
+  <td>pwcda1 , pwdju1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on pwdjuen and pwpw0</td>
+</tr>
+
+<tr>
+  <td>pwcdaidm , pwdjuidm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on infdju1 and pwdju1</td>
+</tr>
+
+<tr>
+  <td>cdalepw , djulepw</td>
+  <td><i>none</i></td>
+</tr>
+
+<tr>
+  <td>onadju</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses oacomf1olem and oarec</td>
+</tr>
+
+<tr>
+  <td>cardadju</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses cardon , onadju , and cardid2</td>
+</tr>
+
+<tr>
+  <td>djunum</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses cardon and cardadju</td>
+</tr>
+
+<tr>
+  <td>unnum</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses djunum , numdom , and undjudom</td>
+</tr>
+
+<tr>
+  <td>nnadju</td>
+  <td><i>none</i></td>
+  <td>depends on various cardinality theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>ficardun</td>
+  <td><i>none</i></td>
+  <td>depends on various cardinality theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>ficardun2</td>
+  <td><i>none</i></td>
+  <td>depends on various cardinality theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>pwsdompw</td>
+  <td><i>none</i></td>
+  <td>depends on various cardinality theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>infdjuabs</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses sbth and other theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>infunabs</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses undjudom and infdjuabs</td>
+</tr>
+
+<tr>
+  <td>infdju</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses sbth and other theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>infdif</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses sbth and other theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>pwcdadom , pwdjudom</td>
+  <td><i>none</i></td>
 </tr>
 
 <TR>
@@ -5357,13 +5595,6 @@ but "not equal to zero" would need to be changed to
 <TD>The Least Upper Bound property for sets of real numbers does not hold,
 in general, without excluded middle. We express completeness using
 sequences.</TD>
-</TR>
-
-<TR>
-<TD>axaddf , ax-addf , axmulf , ax-mulf</TD>
-<TD><I>none</I></TD>
-<TD>Because these are described as deprecated in set.mm, we haven't
-figured out what would be involved in proving them for iset.mm.</TD>
 </TR>
 
 <TR>
@@ -8189,6 +8420,12 @@ than reals.</TD>
   to ~ seq3coll .</TD>
 </TR>
 
+<tr>
+  <td>df-word and all theorems relating to words over a set</td>
+  <td><i>none</i></td>
+  <td>presumably mostly provable</td>
+</tr>
+
 <TR>
   <TD>seqshft</TD>
   <TD>~ seq3shft</TD>
@@ -10326,15 +10563,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>txmetcnp</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof depends on df-xps and related theorems</td>
+  <td>tmsxps</td>
+  <td>~ xmetxp</td>
+  <td>tmsxps relies on structure products and related theorems</td>
 </tr>
 
 <tr>
-  <td>txmetcn</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof depends on txmetcnp</td>
+  <td>tmsxpsmopn</td>
+  <td>~ xmettx</td>
+  <td>tmsxpsmopn relies on structure products and related theorems</td>
 </tr>
 
 <tr>
@@ -10440,8 +10677,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>xmetdcn2</td>
   <td><i>none</i></td>
-  <td>the set.mm theorem is defined in terms of the RR*s syntax
-  and uses txmetcn in the proof</td>
+  <td>the set.mm theorem is defined in terms of the RR*s syntax</td>
 </tr>
 
 <tr>
@@ -10482,6 +10718,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>abscn</td>
+  <td>~ abscn2 , ~ abscncf</td>
+  <td>presumably provable (expressing the topology of the complex
+  numbers as ` ( MetOpen `` ( abs o. - ) ) ` if iset.mm doesn't have
+  CCfld yet).</td>
+</tr>
+
+<tr>
   <td>metdsval</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses infex</td>
@@ -10494,9 +10738,31 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>addcnlem , addcn , subcn , mulcn</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses txmetcn</td>
+  <td>addcnlem</td>
+  <td>~ addcncntoplem</td>
+  <td>expresses the topology of the complex
+  numbers as ` ( MetOpen `` ( abs o. - ) ) `</td>
+</tr>
+
+<tr>
+  <td>addcn</td>
+  <td>~ addcncntop</td>
+  <td>expresses the topology of the complex
+  numbers as ` ( MetOpen `` ( abs o. - ) ) `</td>
+</tr>
+
+<tr>
+  <td>subcn</td>
+  <td>~ subcncntop</td>
+  <td>expresses the topology of the complex
+  numbers as ` ( MetOpen `` ( abs o. - ) ) `</td>
+</tr>
+
+<tr>
+  <td>mulcn</td>
+  <td>~ mulcncntop</td>
+  <td>expresses the topology of the complex
+  numbers as ` ( MetOpen `` ( abs o. - ) ) `</td>
 </tr>
 
 <tr>
@@ -10557,7 +10823,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>cnmpt2pc</td>
+  <td>cnmpopc</td>
   <td><i>none</i></td>
   <td>this kind of piecewise definition would apparently rely on
   real number trichotomy or something similar</td>

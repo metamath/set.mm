@@ -75,6 +75,70 @@ jobs:
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
       - uses: actions/checkout@v3
+      # Use GITHUB_PATH to set PATH. For details see:
+      # https://docs.github.com/en/free-pro-team@latest/actions/reference/
+      # workflow-commands-for-github-actions#setting-an-environment-variable
+      - name: Ensure ~/bin is in PATH
+        run: |
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          mkdir -p "$HOME/bin"
+      - name: Get metamath C program and supporting files
+        run: scripts/download-metamath
+      - name: Record latest version of metamath as env variable
+        run: |
+          echo "METAMATH_LATEST_VERSION=$(cat metamath/.latest_version)" >> $GITHUB_ENV
+      # Note: cache key includes version of metamath in use
+      - name: Cache metamathexe
+        id: cache-metamathexe
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-metamathexe
+        with:
+          path: ~/bin/metamath
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ env.METAMATH_LATEST_VERSION }}
+      - name: Build/install metamath, a C verifier (and more) by Norm Megill
+        if: ${{ !steps.cache-metamathexe.outputs.cache-hit }}
+        run: |
+          gcc --version
+          scripts/build-metamath
+      # Create mmset.html and mmil.html so we can verify against them.
+      - run: metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
+      - run: metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit
+      - run: mv mmbiblio.raw.html mmbiblio.html || true
+      - run: scripts/verify --top_date_skip --extra 'write bibliography mmbiblio.html' set.mm
+      - run: scripts/verify --top_date_skip iset.mm
+      - run: ls -1 *.mm | sed -e '/^set\.mm$/d' -e '/^iset\.mm$/d' | while read db; do scripts/verify --top_date_skip --no-verify-markup "$db"; done
+      - run: scripts/check-raw-html set.mm mmcomplex.raw.html mmdeduction.raw.html mmnatded.raw.html mmnf.raw.html mmset.raw.html mmzfcnd.raw.html mmfrege.raw.html
+      - run: scripts/check-raw-html iset.mm mmil.raw.html
+      # Generate HTML from raw files into mpegif-html/ and mpeuni-html/
+      - run: scripts/regen-from-raw --force '/HTML' .regened.html
+      - run: mkdir -p mpegif-html/
+      - run: for f in *.regened.html; do mv $f mpegif-html/${f%.regened.html}.html ; done
+      - run: scripts/regen-from-raw --force '/ALT_HTML' .regened.html
+      - run: mkdir -p mpeuni-html/
+      - run: for f in *.regened.html; do mv $f mpeuni-html/${f%.regened.html}.html ; done
+      # Check that set.mm and iset.mm have been rewrapped.
+      # We'd probably rather have a bot push up a commit with the rewrapping
+      # when a pull request is submitted, but until we set that up,
+      # at least check that the rewrapping has been done.
+      - run: cp set.mm set-wrapped.mm
+      - run: scripts/rewrap set-wrapped.mm
+      - run: echo 'Checking for set.mm rewrapping:' && diff -U 0 set.mm set-wrapped.mm
+      - run: cp iset.mm iset-wrapped.mm
+      - run: scripts/rewrap iset-wrapped.mm
+      - run: echo 'Checking for iset.mm rewrapping:' && diff -U 0 iset.mm iset-wrapped.mm
+      # The following checks are arbitrarily included in the metamath job.
+      - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
+      - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
+
+  ###########################################################
+  tex:
+    name: Generate TeX output using metamath.exe
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    steps:
+      - uses: actions/checkout@v3
       # Update first to counter problems installing texlive
       - run: sudo apt-get update --fix-missing
       # Install LaTeX so we can test generated LaTeX. We use extended packages:
@@ -82,7 +146,7 @@ jobs:
       # texlive-fonts-extra provides phonetic.sty
       # texlive-science provides accents.sty
       - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra texlive-science
-      # Here's an eXample of how to install "extra" LaTeX packages. See: 
+      # Here's an eXample of how to install "extra" LaTeX packages. See:
       # https://tex.stackexchange.com/questions/38978/how-can-i-manually-install-a-latex-package-debian-ubuntu-linux/39259#39259
       # - run: mkdir -p "$HOME/texmf"
       # - run: wget https://mirrors.ctan.org/macros/latex/contrib/accents.zip -o "$HOME/texmf/accents.zip"
@@ -114,34 +178,6 @@ jobs:
         run: |
           gcc --version
           scripts/build-metamath
-      # Create mmset.html and mmil.html so we can verify against them.
-      - run: metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
-      - run: metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit
-      - run: scripts/verify --top_date_skip --extra 'write bibliography mmbiblio.html' set.mm
-      - run: scripts/verify --top_date_skip iset.mm
-      - run: ls -1 *.mm | sed -e '/^set\.mm$/d' -e '/^iset\.mm$/d' | while read db; do scripts/verify --top_date_skip --no-verify-markup "$db"; done
-      - run: scripts/check-raw-html set.mm mmcomplex.raw.html mmdeduction.raw.html mmnatded.raw.html mmnf.raw.html mmset.raw.html mmzfcnd.raw.html mmfrege.raw.html
-      - run: scripts/check-raw-html iset.mm mmil.raw.html
-      # Generate HTML from raw files into mpegif-html/ and mpeuni-html/
-      - run: scripts/regen-from-raw --force '/HTML' .regened.html
-      - run: mkdir -p mpegif-html/
-      - run: for f in *.regened.html; do mv $f mpegif-html/${f%.regened.html}.html ; done
-      - run: scripts/regen-from-raw --force '/ALT_HTML' .regened.html
-      - run: mkdir -p mpeuni-html/
-      - run: for f in *.regened.html; do mv $f mpeuni-html/${f%.regened.html}.html ; done
-      # Check that set.mm and iset.mm have been rewrapped.
-      # We'd probably rather have a bot push up a commit with the rewrapping
-      # when a pull request is submitted, but until we set that up,
-      # at least check that the rewrapping has been done.
-      - run: cp set.mm set-wrapped.mm
-      - run: scripts/rewrap set-wrapped.mm
-      - run: echo 'Checking for set.mm rewrapping:' && diff -U 0 set.mm set-wrapped.mm
-      - run: cp iset.mm iset-wrapped.mm
-      - run: scripts/rewrap iset-wrapped.mm
-      - run: echo 'Checking for iset.mm rewrapping:' && diff -U 0 iset.mm iset-wrapped.mm
-      # The following checks are arbitrarily included in the metamath job.
-      - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
-      - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
       # Check generated LaTeX, to ensure the TeX definitions are okay. set.mm:
       - run: python3 scripts/latex_collector.py set.mm list-set.tex
       - run: pdflatex -halt-on-error list-set.tex 2>&1 | tee ,latex-output

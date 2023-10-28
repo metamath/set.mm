@@ -15,17 +15,222 @@ The ones WITH "Notes" may have to be processed manually.
 PROPOSED:
 Date      Old       New         Notes
 proposed  syl       imtri       (analogous to *bitr*, sstri, etc.)
-proposed  sylib     imbitri     etc.
-proposed  sylbid    biimtrd     etc.
-proposed  sylbird   biimtrrd    etc.
-proposed  syl5*     *trid       (syl5bi -> biimtrid; syl5eqel -> eqeltrid;etc.)
-proposed  syl6*     *trdi
-proposed  *mpt2*    *mpo*       (renaming process underway)
+                                there is less agreemnt on renaming syl
+                                than others here
+proposed  syld      imtrd
+proposed  syldc     imtrdcom
+proposed  syldd     imtrdd
+proposed  sylbi     biimtri
+proposed  sylib     imbitri
+proposed  sylbb     bitriim
+proposed  sylibr    imbitrri
+proposed  sylbir    biimtrri
+proposed  sylbbr    bitrriim
+proposed  sylbb1    bitr3iim
+proposed  sylbb2    bitr4iim
+proposed  sylibd    imbitrd
+proposed  sylbid    biimtrd
+proposed  sylibrd   imbitrrd
+proposed  sylbird   biimtrrd
+proposed  syl5com   imtridcom
+proposed  syl5      imtrid      alternate proposal: sylid
+proposed  syl56     imtridi
+proposed  syl5d     imtridd
+proposed  syl5bi    biimtrid
+proposed  syl5bir   biimtrrid
+proposed  syl5ib    imbitrid
+proposed  syl5ibcom imbitridcom
+proposed  syl5ibr   imbitrrid
+proposed  syl5ibrcom imbitrridcom
+proposed  syl5bb    bitrid      compare to bitri or bitrd
+proposed  syl5rbb   bitridcom
+proposed  syl5bbr   bitr3id     compare to bitr3i or bitr3d
+proposed  syl5rbbr  bitr3idcom
+proposed  syl5eq    eqtrid      compare to eqtri or eqtrd
+proposed  syl5req   eqtridcom
+proposed  syl5eqr   eqtr3id     compare to eqtr3i or eqtr3d
+proposed  syl5reqr  eqtr3idcom
+proposed  syl5eqel  eqeltrid    compare to eqeltri or eqeltrd
+proposed  syl5eqelr eqeltrrid   compare to eqeltrri or eqeltrrd
+proposed  syl5eleq  eleqtrid    compare to eleqtri or eleqtrd
+proposed  syl5eleqr eleqtrrid   compare to eleqtrri or eleqtrrd
+proposed  syl5eqner eqnetrrid   compare to eqnetrri or eqnetrrd
+proposed  syl5ss    sstrid      compare to sstri or sstrd
+proposed  syl5eqss  eqsstrid    compare to eqsstri or eqsstrd
+proposed  syl5eqssr eqsstrrid   compare to eqsstr3i or eqsstr3d
+proposed  eqsstr3i  eqsstrri
+proposed  eqsstr3d  eqsstrrd
+proposed  syl5sseq  sseqtrid    compare to sseqtri or sseqtrd
+proposed  syl5sseqr sseqtrrid
+proposed  syl5eqbr  eqbrtrid    compare to eqbrtri or eqbrtrd
+proposed  syl5eqbrr eqbrtrrid   compare to eqbrtrri or eqbrtrrd
+proposed  syl5breq  breqtrid    compare to breqtri or breqtrd
+proposed  syl5breqr breqtrrid   compare to breqtrri or breqtrrd
+proposed  wl-luk-syl5 wl-luk-imtrid
+proposed  syl6      imtrdi      alternate proposal: syldi
+proposed  syl6com   imtrdicom
+proposed  syl6d     imtrdid
+proposed  syl6ib    imbitrdi
+proposed  syl6ibr   imbitrrdi
+proposed  syl6bi    biimtrdi
+proposed  syl6bir   biimtrrdi
+proposed  syl6bb    bitrdi      compare to bitri or bitrd
+proposed  syl6rbb   bitrdicom
+proposed  syl6bbr   bitr4di     compare to bitr4i or bitr4d
+proposed  syl6rbbr  bitr4dicom
+proposed  syl6eq    eqtrdi      compare to eqtri or eqtrd
+proposed  syl6req   eqtrdicom
+proposed  syl6eqr   eqtr4di     compare to eqtr4i or eqtr4d
+proposed  syl6reqr  eqtr4dicom
+proposed  syl6eqel  eqeltrdi    compare to eqeltri or eqeltrd
+proposed  syl6eqelr eqeltrrdi   compare to eqeltrri or eqeltrrd
+proposed  syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
+proposed  syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
+proposed  syl6ss    sstrdi      compare to sstri or sstrd
+proposed  syl6sseq  sseqtrdi    compare to sseqtri or sseqtrd
+proposed  syl6sseqr sseqtrrdi
+proposed  syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
+proposed  syl6eqssr eqsstrrdi
+proposed  syl6eqbr  eqbrtrdi    compare to eqbrtri or eqbrtrd
+proposed  syl6eqbrr eqbrtrrdi   compare to eqbrtrri or eqbrtrrd
+proposed  syl6breq  breqtrdi    compare to breqtri or breqtrd
+proposed  syl6breqr breqtrrdi   compare to breqtrri or breqtrrd
+proposed  wl-luk-syl6 wl-luk-imtrdi
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+23-Oct-23 bj-alequexv alequexv  moved from BJ's mathbox to main set.mm
+23-Oct-23 axext2    axexte      existential form of ax-ext
+23-Oct-23 axext3    axextg      more general form of ax-ext
+23-Oct-23 axext4    axextb      biconditional form of ax-ext
+22-Oct-23 spimeh    spimew      existential version of spimw
+22-Oct-23 speiv     speivw      weak form of speiv
+22-Oct-23 axsep2    axsepg
+20-Oct-23 xnn0lem1lt [same]     moved from TA's mathbox to main set.mm
+15-Oct-23 fnssresd  [same]      moved from GS's mathbox to main set.mm
+11-Oct-23 2exanali  [same]      moved from ATS's mathbox to main set.mm
+ 6-Oct-23 vtocl2d   [same]      moved from TA's mathbox to main set.mm
+ 4-Oct-23 df-cda    df-dju      use |_| instead of +c
+ 4-Oct-23 cdaval    df-dju      use |_| instead of +c
+ 4-Oct-23 cdadju    ---         use |_| instead of +c
+ 4-Oct-23 xpsc      ---         +c is no longer used or needed
+ 4-Oct-23 xpscg     ---         +c is no longer used or needed
+ 4-Oct-23 dfxpspr   df-xps      changes from +c to a pair of ordered pairs
+ 4-Oct-23 df-xps    [same]      changes from +c to a pair of ordered pairs
+ 4-Oct-23 xpscfn    fnpr2o      changes from +c to a pair of ordered pairs
+ 4-Oct-23 xpsc0     fvpr0o      changes from +c to a pair of ordered pairs
+ 4-Oct-23 xpsc1     fvpr1o      changes from +c to a pair of ordered pairs
+ 4-Oct-23 xpsfrnel2cda xpsfrnel2 changes from +c to a pair of ordered pairs
+ 4-Oct-23 xpscfcda  xpscf       changes from +c to a pair of ordered pairs
+ 4-Oct-23 dprdpr    [same]      changes from +c to a pair of ordered pairs
+ 4-Oct-23 dmdprdpr  [same]      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsfeqcda xpsfeq      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpscfv    fvprif      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsfvalcda xpsfval    changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsff1ocda xpsff1o    changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsfrncda xpsfrn      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsff1o2cda xpsff1o2  changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpsvalcda xpsval      changes from +c to a pair of ordered pairs
+ 2-Oct-23 xpslem    xpsrnbas    changes from +c to a pair of ordered pairs
+ 1-Oct-23 xpsxmetlem [same]     changes from +c to a pair of ordered pairs
+ 1-Oct-23 xpstopnlem2 [same]    changes from +c to a pair of ordered pairs
+ 1-Oct-23 xpstopnlem1 [same]    changes from +c to a pair of ordered pairs
+29-Sep-23 xpsaddlem [same]      changes from +c to a pair of ordered pairs
+26-Sep-23 xpscf     xpscfcda
+26-Sep-23 xpsfrnel2 xpsfrnel2cda
+26-Sep-23 xpsfeq    xpsfeqcda
+26-Sep-23 xpsff1o2  xpsff1o2cda
+26-Sep-23 xpsfrn2   ---         deleted
+26-Sep-23 xpsfrn    xpsfrncda
+26-Sep-23 xpsff1o   xpsff1ocda
+26-Sep-23 xpsfval   xpsfvalcda
+24-Sep-23 nelpr1    [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 nelpr2    [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 breldmd   [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 fvelimad  [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 0un       [same]      moved from GS's mathbox to main set.mm
+24-Sep-23 ovmpt2x2  ovmpox2
+24-Sep-23 ovmpt2rdx ovmpordx
+24-Sep-23 ovmpt2rdxf ovmpordxf
+24-Sep-23 mpt2exxg2 mpoexxg2
+24-Sep-23 dmmpt2ssx2 dmmpossx2
+24-Sep-23 cbvmpt2x2 cbvmpox2
+24-Sep-23 mpt2mptx2 mpomptx2
+24-Sep-23 opmpt2ismgm opmpoismgm
+24-Sep-23 elrnmpt2id elrnmpoid
+24-Sep-23 cbvmpt21  cbvmpo1
+24-Sep-23 cbvmpt22  cbvmpo2
+23-Sep-23 mpt2bi123f mpobi123f
+23-Sep-23 wl-naev   naev        moved from WL's mathbox to main set.mm
+22-Sep-23 bj-spimevw spimevw    moved from BJ's mathbox to main set.mm
+21-Sep-23 icorempt2 icorempo
+21-Sep-23 csbmpt22g csbmpo123
+21-Sep-23 xpsval    xpsvalcda
+20-Sep-23 bj-sels   sels        moved from BJ's mathbox to main set.mm
+20-Sep-23 bj-mpt2mptALT bj-mpomptALT
+20-Sep-23 bj-dfmpt2a bj-dfmpoa
+20-Sep-23 matmpt2   matmpo
+18-Sep-23 mpt2cti   mpocti
+18-Sep-23 mpt2mptxf mpomptxf
+18-Sep-23 rnmpt2ss  rnmposs
+18-Sep-23 clwwlknonmpt2 clwwlknonmpo
+18-Sep-23 cnmpt2pc  cnmpopc
+17-Sep-23 cdaun     endjudisj   Changes from +c notation to |_|
+17-Sep-23 cdaen     djuen       Changes from +c notation to |_|
+17-Sep-23 cdafn     ---         |_| is not a function
+17-Sep-23 cdaenun   djuenun     Changes from +c notation to |_|
+17-Sep-23 cdadom1   djudom1     Changes from +c notation to |_|
+17-Sep-23 cdacomen  djucomen    Changes from +c notation to |_|
+17-Sep-23 cdadom2   djudom2     Changes from +c notation to |_|
+17-Sep-23 pwxpndom2cda pwxpndom2 Changes from +c notation to |_|
+17-Sep-23 xp2cda    xp2dju      Changes from +c notation to |_|
+17-Sep-23 uncdadom  undjudom    Changes from +c notation to |_|
+17-Sep-23 mapcdaen  mapdjuen    Changes from +c notation to |_|
+17-Sep-23 cdadom3   djudoml     Changes from +c notation to |_|
+17-Sep-23 pwcdaen   pwdjuen     Changes from +c notation to |_|
+17-Sep-23 infcda1   infdju1     Changes from +c notation to |_|
+17-Sep-23 cdaxpdom  djuxpdom    Changes from +c notation to |_|
+17-Sep-23 cdafi     djufi       Changes from +c notation to |_|
+17-Sep-23 cda1dif   dju1dif     Changes from +c notation to |_|
+17-Sep-23 pwcdandom pwdjundom   Changes from +c notation to |_|
+17-Sep-23 pwcda1    pwdju1      Changes from +c notation to |_|
+16-Sep-23 gchcda1   gchdju1     Changes from +c notation to |_|
+16-Sep-23 pwcdadom  pwdjudom    Changes from +c notation to |_|
+16-Sep-23 gchcdaidm gchdjuidm   Changes from +c notation to |_|
+16-Sep-23 cda0en    dju0en      Changes from +c notation to |_|
+16-Sep-23 cdalepw   djulepw     Changes from +c notation to |_|
+16-Sep-23 pwcdaidm  pwdjuidm    Changes from +c notation to |_|
+15-Sep-23 pwxpndom2 pwxpndom2cda
+15-Sep-23 isfin4-3  isfin4p1    Changes from +c notation to |_|
+15-Sep-23 finngch   [same]      Changes from +c notation to |_|
+15-Sep-23 canthp1   [same]      Changes from +c notation to |_|
+15-Sep-23 canthp1lem1 [same]    Changes from +c notation to |_|
+15-Sep-23 canthp1lem2 [same]    Changes from +c notation to |_|
+15-Sep-23 fnexd     [same]      moved from GS's mathbox to main set.mm
+14-Sep-23 gchdomtri [same]      Changes from +c notation to |_|
+14-Sep-23 infcdaabs infdjuabs   Changes from +c notation to |_|
+14-Sep-23 infcda    infdju      Changes from +c notation to |_|
+14-Sep-23 alephadd  [same]      Changes from +c notation to |_|
+13-Sep-23 onacda    onadju      Changes from +c notation to |_|
+13-Sep-23 nnacda    nnadju      Changes from +c notation to |_|
+10-Sep-23 mpt2matmul mpomatmul
+10-Sep-23 mpt2frlmd mpofrlmd
+10-Sep-23 elovmpt2wrd elovmpowrd
+10-Sep-23 fvmpt2curryd fvmpocurryd
+10-Sep-23 mpt2curryvald mpocurryvald
+10-Sep-23 mpt2curryd mpocurryd
+10-Sep-23 tposmpt2  tposmpo
+ 9-Sep-23 cdainf    djuinf      Changes from +c notation to |_|
+ 8-Sep-23 cda1en    dju1en      Changes from +c notation to |_|
+ 8-Sep-23 cardacda  cardadju    Changes from +c notation to |_|
+ 8-Sep-23 cdanum    djunum      Changes from +c notation to |_|
+ 7-Sep-23 sprmpt2d  sprmpod
+ 7-Sep-23 brovmpt2ex brovmpoex
+ 7-Sep-23 mpt2xopoveqd mpoxopoveqd
+ 7-Sep-23 mpt2xopovel mpoxopovel
+ 7-Sep-23 mpt2xopoveq mpoxopoveq
  6-Sep-23 bj-speiv  speiv       moved from BJ's mathbox to main set.mm
  5-Sep-23 bj-spimev spimefv     moved from BJ's mathbox to main set.mm
  5-Sep-23 bj-spimedv spimedv    moved from BJ's mathbox to main set.mm
