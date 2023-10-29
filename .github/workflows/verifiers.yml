@@ -104,6 +104,7 @@ jobs:
       # Create mmset.html and mmil.html so we can verify against them.
       - run: metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
       - run: metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit
+      - run: mv mmbiblio.raw.html mmbiblio.html || true
       - run: scripts/verify --top_date_skip --extra 'write bibliography mmbiblio.html' set.mm
       - run: scripts/verify --top_date_skip iset.mm
       - run: ls -1 *.mm | sed -e '/^set\.mm$/d' -e '/^iset\.mm$/d' | while read db; do scripts/verify --top_date_skip --no-verify-markup "$db"; done
