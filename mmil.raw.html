@@ -4859,57 +4859,9 @@ this implies excluded middle</TD>
 </TR>
 
 <tr>
-  <td>df-cda</td>
-  <td>~ df-dju</td>
-  <td>df-cda and df-dju are essentially the same. Current
-  thinking is that we want to remove df-cda and the +c syntax
-  from set.mm in favor of df-dju and use ` |_| ` in much the same
-  way that cardinal multiplication uses the df-xp ( ` X. ` )
-  syntax rather than having a notation specific to cardinals.</td>
-</tr>
-
-<tr>
-  <td>cdafn</td>
-  <td>~ djuex</td>
-  <td>Since ` |_| ` is defined on proper classes, the similarity
-  here is somewhat approximate.</td>
-</tr>
-
-<tr>
-  <td>cdaval</td>
-  <td>~ df-dju</td>
-</tr>
-
-<tr>
-  <td>cdadju</td>
-  <td><i>none</i></td>
-  <td>not needed as iset.mm does not have df-cda</td>
-</tr>
-
-<tr>
-  <td>uncdadom , undjudom</td>
+  <td>undjudom</td>
   <td><i>none</i></td>
   <td>The set.mm proof relies on undom</td>
-</tr>
-
-<tr>
-  <td>cdaun</td>
-  <td>~ endjudisj</td>
-</tr>
-
-<tr>
-  <td>cdaen</td>
-  <td>~ djuen</td>
-</tr>
-
-<tr>
-  <td>cdaenun</td>
-  <td>~ djuenun</td>
-</tr>
-
-<tr>
-  <td>cda1dif</td>
-  <td><i>none</i></td>
 </tr>
 
 <tr>
@@ -4919,89 +4871,69 @@ this implies excluded middle</TD>
 </tr>
 
 <tr>
-  <td>cda0en</td>
-  <td>~ dju0en</td>
-</tr>
-
-<tr>
-  <td>xp2cda</td>
-  <td>~ xp2dju</td>
-</tr>
-
-<tr>
-  <td>cdacomen</td>
-  <td>~ djucomen</td>
-</tr>
-
-<tr>
-  <td>mapcdaen , mapdjuen</td>
+  <td>mapdjuen</td>
   <td><i>none</i></td>
   <td>the set.mm proof relies on mapunen</td>
 </tr>
 
 <tr>
-  <td>pwcdaen , pwdjuen</td>
+  <td>pwdjuen</td>
   <td><i>none</i></td>
   <td>the set.mm proof relies on mapdjuen</td>
 </tr>
 
 <tr>
-  <td>cdadom1 , djudom1</td>
+  <td>djudom1</td>
   <td><i>none</i></td>
   <td>the set.mm proof relies on undom</td>
 </tr>
 
 <tr>
-  <td>cdadom2 , djudom2</td>
+  <td>djudom2</td>
   <td><i>none</i></td>
   <td>the set.mm proof relies on djudom1</td>
 </tr>
 
 <tr>
-  <td>cdadom3</td>
-  <td>~ djudoml</td>
-</tr>
-
-<tr>
-  <td>cdaxpdom , djuxpdom</td>
+  <td>djuxpdom</td>
   <td><i>none</i></td>
   <td>presumably provable if having cardinality greater than one
   is expressed as ` 2o ~<_ A ` instead</td>
 </tr>
 
 <tr>
-  <td>cdafi , djufi</td>
+  <td>djufi</td>
   <td><i>none</i></td>
   <td>we should be able to prove
   ` ( A e. Fin /\ B e. Fin ) -> ( A |_| B ) e. Fin `</td>
 </tr>
 
 <tr>
-  <td>cdainflem , cdainf , djuinf</td>
+  <td>cdainflem , djuinf</td>
   <td><i>none</i></td>
   <td>the set.mm proof is not easily adapted</td>
 </tr>
 
 <tr>
-  <td>infcda1 , infdju1</td>
+  <td>infdju1</td>
   <td><i>none</i></td>
   <td>the set.mm proof relies on infdifsn</td>
 </tr>
 
 <tr>
-  <td>pwcda1 , pwdju1</td>
+  <td>pwdju1</td>
   <td><i>none</i></td>
   <td>the set.mm proof relies on pwdjuen and pwpw0</td>
 </tr>
 
 <tr>
-  <td>pwcdaidm , pwdjuidm</td>
+  <td>pwdjuidm</td>
   <td><i>none</i></td>
   <td>the set.mm proof relies on infdju1 and pwdju1</td>
 </tr>
 
 <tr>
-  <td>cdalepw , djulepw</td>
+  <td>djulepw</td>
   <td><i>none</i></td>
 </tr>
 
@@ -5078,7 +5010,7 @@ this implies excluded middle</TD>
 </tr>
 
 <tr>
-  <td>pwcdadom , pwdjudom</td>
+  <td>pwdjudom</td>
   <td><i>none</i></td>
 </tr>
 
@@ -9832,8 +9764,11 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>df-xps and all theorems mentioning the binary product on a structure
   (syntax Xs.)</td>
   <td><i>none</i></td>
-  <td>The set.mm definition depends on df-cda ( +c ), df-imas ( "s ),
-  and df-prds ( Xs_ )</td>
+  <td>The set.mm definition depends on df-imas ( "s )
+  and df-prds ( Xs_ ). By its nature the definition of the binary
+  product considers every structure slot (including most notably
+  order which presumably will need to be handled differently
+  in iset.mm).</td>
 </tr>
 
 <TR>
