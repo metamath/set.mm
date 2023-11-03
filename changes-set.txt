@@ -101,6 +101,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+31-Oct-23 spimv1    spimfv      labeling consistent with speimfv
 28-Oct-23 bj-2ex    2oex        moved from BJ's mathbox to main set.mm
 23-Oct-23 bj-alequexv alequexv  moved from BJ's mathbox to main set.mm
 23-Oct-23 axext2    axexte      existential form of ax-ext
@@ -109,6 +110,7 @@ Date      Old       New         Notes
 22-Oct-23 spimeh    spimew      existential version of spimw
 22-Oct-23 speiv     speivw      weak form of speiv
 22-Oct-23 axsep2    axsepg
+20-Oct-23 xnn0lem1lt [same]     moved from TA's mathbox to main set.mm
 15-Oct-23 fnssresd  [same]      moved from GS's mathbox to main set.mm
 11-Oct-23 2exanali  [same]      moved from ATS's mathbox to main set.mm
  6-Oct-23 vtocl2d   [same]      moved from TA's mathbox to main set.mm
