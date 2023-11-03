@@ -136,6 +136,7 @@ $s class (/) $: <mi href="df-nul.html">&empty;</mi> $. $( &empty; or &#x2205; lo
 $s class Undef $: <mi href="df-undef.html">Undef</mi> $.
 $s class _E $: <mi href="df-eprel.html" mathvariant="normal">E</mi> $.
 $s class _I $: <mi href="df-id.html" mathvariant="normal">I</mi> $.
+$s class _S $: <mi href="df-ssr.html" mathvariant="normal">S</mi> $.
 $s class O(1) $: <mrow href="df-o1.html"><mo>&#x1D442;</mo><mo>&ApplyFunction;</mo><mfenced><mn>1</mn></mfenced></mrow> $.
 $s class <_O(1) $: <mrow href="df-lo1.html"><mo>&le;</mo><mo>&#x1D442;</mo><mo>&ApplyFunction;</mo><mfenced><mn>1</mn></mfenced></mrow> $.
 $s class odZ $: <msub href="df-odz.html"><mi>od</mi><mi>&#8484;</mi></msub> $.
@@ -359,6 +360,11 @@ $s class AFS $: <mo href="df-afs.html">AFS</mo> $.
 $s class Ismt $: <mo href="df-ismt.html">Ismt</mo> $.
 $s class hpG $: <msub href="df-hpg.html"><mo>hp</mo> <mo>&#x1d4a2;</mo></msub> $.
 
+$( Spheres and lines in real Euclidean spaces $)
+
+$s class LineM $: <msub href="df-line.html"><mo>Line</mo> <mo>M</mo></msub> $.
+$s class Sphere $: <mo href="df-sph.html">Sphere</mo> $.
+
 
 $( Commented out in set.mm
 
@@ -401,6 +407,7 @@ $s class ++ $: <mi href="df-concat.html"> ++ </mi> $.
 $s class substr $: <mi href="df-substr.html"> substr </mi> $.
 $s class splice $: <mi href="df-splice.html"> splice </mi> $.
 $s class reverse $: <mi href="df-reverse.html">reverse</mi> $.
+$s class leftpad $: <mi href="df-leftpad.html">leftpad</mi> $.
 $s class shift $: <mi href="df-shft.html">shift</mi> $.
 $s class Re $: <mi href="df-re.html">&real;</mi> $.
 $s class Im $: <mi href="df-im.html">&image;</mi> $.
@@ -462,7 +469,7 @@ $s class FuncCat $: <mi href="df-fuc.html">FuncCat</mi> $.
 $s class Arrow $: <mi href="df-arw.html">Arrow</mi> $.
 $s class SetCat $: <mi href="df-setc.html">SetCat</mi> $.
 $s class CatCat $: <mi href="df-catc.html">CatCat</mi> $.
-$s class Preset $: <mi href="df-preset.html"> Preset </mi> $.
+$s class Proset $: <mi href="df-proset.html"> Proset </mi> $.
 $s class Dirset $: <mi href="df-drs.html">Dirset</mi> $.
 $s class Poset $: <mi href="df-poset.html">Poset</mi> $.
 $s class lt $: <mi href="df-plt.html">lt</mi> $.
@@ -562,7 +569,7 @@ $s class MetOpen $: <mi href="df-mopn.html">MetOpen</mi> $.
 $s class chr $: <mi href="df-chr.html">chr</mi> $.
 $s class PreHil $: <mi href="df-phl.html">PreHil</mi> $.
 $s class ocv $: <mi href="df-ocv.html">ocv</mi> $.
-$s class CSubSp $: <mi href="df-cs.html">CSubSp</mi> $.
+$s class ClSubSp $: <mi href="df-css.html">ClSubSp</mi> $.
 $s class toHL $: <mi href="df-thl.html">toHL</mi> $.
 $s class proj $: <mi href="df-pj.html">proj</mi> $.
 $s class Hil $: <mi href="df-hil.html">Hil</mi> $.
@@ -624,7 +631,7 @@ $s class Htpy $: <mi href="df-htpy.html"> Htpy </mi> $.
 $s class PHtpy $: <mi href="df-phtpy.html">PHtpy</mi> $.
 $s class CMod $: <mi href="df-clm.html">CMod</mi> $.
 $s class CPreHil $: <mi href="df-cph.html">CPreHil</mi> $.
-$s class toCHil $: <mi href="df-tch.html">toCHil</mi> $.
+$s class toCPreHil $: <mi href="df-tcph.html">toCPreHil</mi> $.
 $s class CauFil $: <mi href="df-cfil.html">CauFil</mi> $.
 $s class CauFilU $: <mi href="df-cfilu.html">CauFilU</mi> $.
 $s class Cau $: <mi href="df-cau.html">Cau</mi> $.
@@ -846,6 +853,14 @@ $( Number Theory $)
 $s class repr $: <mi href="df-repr.html">repr</mi> $.
 $s class vts $: <mi href="df-vts.html">vts</mi> $.
 
+$( Algebra $)
+$s class toCyc $: <mi href="df-tocyc.html">toCyc</mi> $.
+$s class dim $: <mi href="df-dim.html">dim</mi> $.
+$s class /FldExt $: <msub href="df-fldext.html"><mo>/</mo><mi>FldExt</mi></msub> $.
+$s class /FinExt $: <msub href="df-finext.html"><mo>/</mo><mi>FinExt</mi></msub> $.
+$s class /AlgExt $: <msub href="df-algext.html"><mo>/</mo><mi>AlgExt</mi></msub> $.
+$s class ( O [:] P ) $: <mfenced open='[' close=']'><mrow> #O# : #P# </mrow></mfenced> $.
+$s class [:] $:  <mfenced open='[' close=']' href="df-extdg.html"><mrow><mi>.</mi><mo>:</mo><mi>.</mi></mrow></mfenced> $.
 
 $( Measure Theory $)
 $s class sigAlgebra $: <mi href="df-siga.html">sigAlgebra</mi> $.
@@ -886,7 +901,6 @@ $s class GF $: <mi href="df-gf.html"> GF </mi> $.
 $s class ~Qp $: <msub href="df-eqp.html"><mo>~</mo><msub><mi>&Qopf;</mi><mi>p</mi></msub></msub> $.
 $s class /Qp $: <msub href="df-rqp.html"><mo>/</mo><msub><mi>&Qopf;</mi><mi>p</mi></msub></msub> $.
 $s class Qp $: <msub href="df-qp.html"><mi>&Qopf;</mi><mi>p</mi></msub> $.
-$s class QpOLD $: <msub href="df-qpOLD.html"><mi>&Qopf;OLD</mi><mi>p</mi></msub> $.
 $s class Zp $: <msub href="df-zp.html"><mi>&Zopf;</mi><mi>p</mi></msub> $.
 $s class _Qp $: <mover href="df-qpa.html"><msub><mi>&Qopf;</mi><mi>p</mi></msub> <mo>&oline;</mo></mover> $.
 $s class Cp $: <msub href="df-cp.html"><mi>&Copf;</mi><mi>p</mi></msub> $.
@@ -909,6 +923,7 @@ $s class Edg $: <mi href="df-edg.html"> Edg </mi> $.
 $s class UPGraph $: <mi href="df-upgr.html"> UPGraph </mi> $.
 $s class USPGraph $: <mi href="df-ushgr.html"> USHGraph </mi> $.
 $s class FinUSGraph $: <mi href="df-fusg.html"> FinUSGraph </mi> $.
+$s class AcyclicGraph $: <mi href="df-acycgr.html"> AcyclicGraph </mi> $.
 $s class EulerPaths $: <mi href="df-eupth.html"> EulerPaths </mi> $.
 $s class VtxDeg $: <mi href="df-vtxdg.html"> VtxDeg </mi> $.
 $s class Walks $: <mi href="df-wlk.html">Walks</mi> $.
@@ -931,6 +946,7 @@ $s class RegUSGraph $: <mi href="df-rusgr.html">RegUSGraph</mi> $.
 $s class ClWalks $: <mi href="df-clwlk.html">ClWalks</mi> $.
 $s class ClWWalks $: <mi href="df-clwwlk.html">ClWWalks</mi> $.
 $s class ClWWalksN $: <mi href="df-clwwlkn.html">ClWWalksN</mi> $.
+$s class ClWWalksNOn $: <mi href="df-clwwlknon.html">ClWWalksNOn</mi> $.
 
 $s class seqstr $: <msub href="df-sseq.html"><mi>seq</mi> <mo>str</mo></msub> $.
 $s class Fibci $: <mi href="df-fibci.html">Fibci</mi> $.
@@ -949,9 +965,11 @@ $s class ( A ^^ B ) $: <mrow> #A# <mo href="df-finxp.html">&uarr;&uarr;</mo> #B#
 
 
 $( Wolf Lammen $)
-$s wff x wl-el A $: <mrow> #A# <mo href="ax-wl-8cl.html">&isin;</mo> #B# </mrow> $.
-$s wff x wl-el2 A $: <mrow> #A# <mo href="df-wl-clelv2.html">&isin;</mo> #B# </mrow> $.
-
+$s wff A. ( x wl-in A ) ph $: <mrow> <mo href="wl-ral.html">&forall;</mo> #x# <mo href="df-ral.html">:</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E. ( x wl-in A ) ph $: <mrow> <mo href="wl-rex.html">&exist;</mo> #x# <mo href="df-rex.html">:</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E! ( x wl-in A ) ph $: <mrow> <mo href="wl-reu.html">&exist;!</mo> #x# <mo href="df-reu.html">:</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E* ( x wl-in A ) ph $: <mrow> <msup href="wl-rmo.html"><mo>&exist;</mo><mo>*</mo></msup> #x# <mo href="df-rmo.html">:</mo> #A# #ph# </mrow> $.
+$s class { x wl-in A | ph } $: <mfenced open="{" close="}"> <mrow>#x# <mo href="wl-crab.html">:</mo> #A# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
 
 $( Removed as part of FL'mathbox
 
@@ -1338,7 +1356,9 @@ $( Alexander van der Vekens $)
 $s class e// $: <mi href="df-nelbr">&notin;</mi> $.
 $s class ~=c $: <msub href="df-cic.html"><mo>&#8771;</mo> <mi>&#x1D450;</mi></msub> $. 
 $s wff F defAt A $: <mrow> #F# <mi href="df-dfat.html">defAt</mi> #A# </mrow> $.
+$s class ( iota' x ph ) $: <mi href="df-aiota">&iota;</mi> $.
 $s class ( A ''' B ) $: <mfenced><mrow>#A# <mi href="df-afv.html">&#39&#39&#39</mi> #B#</mrow></mfenced> $.
+$s class ( F '''' A ) $: <mfenced><mrow>#F# <mi href="df-afv2.html">&#39&#39&#39&#39</mi> #A#</mrow></mfenced> $.
 $s class (( A F B )) $: <mfenced open="((" close="))"><mrow>#A# #F# #B#</mrow></mfenced> $.
 $s class FriendGraph $: <mi href="df-frgr.html">FriendGraph</mi> $.
 $s class Trails $: <mi href="df-trls.html">Trails</mi> $.
@@ -1375,12 +1395,20 @@ $s class GoldbachOddW $: <mi href="df-gbow.html">GoldbachOddW</mi> $.
 $s class GoldbachOdd $: <mi href="df-gbo.html">GoldbachOdd</mi> $.
 
 $s class UPWalks $: <mi href="df-upwlks.html">UPWalks</mi> $.
+
+$s wff [ x <> y ] ph $: <mrow><mfenced open="[" close="]" separators=""> #x# <mo href="df-ich.html">&#8644;</mo> #y# </mfenced> #ph# </mrow> $.
+
 $s class Pairs $: <mi href="df-spr.html">Pairs</mi> $.
 
 $s class /_f $: <msub href="df-fdiv"><mi>/</mi> <mi>f<mi></msub> $.
 $s class _O $: <mi href="df-bigo">O</mi> $.
 $s class #b $: <msub href="df-blen"><mi>#</mi> <mi>b<mi></msub> $.
 $s class digit $: <mi href="df-dig.html">digit</mi> $.
+
+$s class PrPairs $: <mi href="df-prpr.html">PrPairs</mi> $.
+$s class FPPr $: <mi href="df-fppr.html">FPPr</mi> $.
+$s class GrIsom $: <mi href="df-grisom.html">GrIsom</mi> $.
+$s class IsomGr $: <mi href="df-isomgr.html">IsomGr</mi> $.
 
 $( David A. Wheeler $)
 $s class >_ $: <mi href="df-gte.html"> &ge; </mi> $.
@@ -1415,15 +1443,6 @@ $s wff (. ph ,. ps ->. ch ). $: <mfenced mathcolor=#0D0 separators="">#ph# <mo m
 $s wff (. ph ,. ps ,. ch ->. th ). $: <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>,</mo> #ps# <mo mathcolor=#0D0>,</mo> #ch# <mo mathcolor=#0D0>&rarr;</mo> #th#</mfenced> $.
 $s wff (. ph ,. ps ). $: <mfenced mathcolor=#0D0>#ph# #ps#</mfenced> $.
 $s wff (. ph ,. ps ,. ch ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch#</mfenced> $.
-$s wff (. ph ,. ps ,. ch ,. th ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th#</mfenced> $.
-$s wff (. ph ,. ps ,. ch ,. th ,. ta ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta#</mfenced> $.
-$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et#</mfenced> $.
-$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze#</mfenced> $.
-$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si#</mfenced> $.
-$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ,. rh ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si# #rh#</mfenced> $.
-$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ,. rh ,. mu ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si# #rh# #mu#</mfenced> $.
-$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ,. rh ,. mu ,. la ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si# #rh# #mu# #la#</mfenced> $.
-$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ,. rh ,. mu ,. la ,. ka ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si# #rh# #mu# #la# #ka#</mfenced> $.
 
 $( Jonathan Ben-Naim's $)
 $s class _pred ( X , A , R ) $: <mrow> <mo>pred</mo> <mfenced>#X# #A# #R#</mfenced></mrow> $.
@@ -1448,9 +1467,13 @@ $s class RRbar $: <mover href="df-bj-rrbar.html"><mi>&Ropf;</mi> <mo>&oline;</mo
 $s class RRhat $: <mover href="df-bj-rrhat.html"><mi>&Ropf;</mi> <mo>^</mo></mover> $.
 $s class CCbar $: <mover href="df-bj-ccbar.html"><mi>&Copf;</mi> <mo>&oline;</mo></mover> $.
 $s class CChat $: <mover href="df-bj-cchat.html"><mi>&Copf;</mi> <mo>^</mo></mover> $.
+$s class NNbar $: <mover href="df-bj-nnbar.html"><mi>&Nopf;</mi> <mo>&oline;</mo></mover> $.
+$s class ZZbar $: <mover href="df-bj-zzbar.html"><mi>&Zopf;</mi> <mo>&oline;</mo></mover> $.
+$s class ZZhat $: <mover href="df-bj-zzhat.html"><mi>&Zopf;</mi> <mo>^</mo></mover> $.
+$s class ||C $: <msub href="df-bj-divc.html"><mi>&#8741;</mi> <mi>&Copf;</mi></msub> $.
 $s class CCinfty $: <msub href="df-bj-ccinfty"><mi>&Copf;</mi> <mi>&infin;</mi></msub> $.
 $s class infty $: <mi href="df-bj-infty">&infin;</mi> $.
-$s class prcpal $: <mi href="df-bj-prcpal">prcpal</mi> $.
+$s class iomnn $: <msub href="df-bj-iomnn.html"><mi>i</mi> <mo>&omega;&hookrightarrow;&#8469;</mo></msub> $.
 $s class Arg $: <mi href="df-bj-arg">Arg</mi> $.
 $s class +cc $: <msub href="df-bj-addc.html"><mo>+</mo> <mover><mi>&Copf;</mi> <mo>&oline;</mo></mover></msub> $.
 $s class -cc $: <msub href="df-bj-oppc.html"><mo>-</mo> <mover><mi>&Copf;</mi> <mo>&oline;</mo></mover></msub> $.
@@ -1472,17 +1495,63 @@ $s class uncurry_ $: <mi href="df-bj-unc">uncurry_</mi> $.
 
 $s class [s B / A ]s S $: <mrow><mfenced open="[" close="]s" separators="/"> #B# #A# </mfenced> #S# </mrow> $.
 
+$s wff E** x ph $: <mrow> <msup href="df-bj-mo.html"><mo>&exist;</mo><mo>**</mo></msup> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff F// x ph $:  <mrow> <mo href="df-bj-nnf.html">&#8498;'</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s class {R $: <msub href="df-bj-fractemp.html"><mo>{</mo> <mo>R</mo></msub> $.
+$s class inftyexpitau $: <msup href="df-bj-inftyexpitau.html"><mi>+&infin;e</mi> <mo>i&tau;</mo></msup> $.
+$s class CCinftyN $: <msub href="df-bj-ccinftyN.html"><mi>&#8450;</mi> <mo>&infin;N</mo></msup> $.
+$s class 1/2 $: <mfrac href="df-bj-onehalf.html"><mn>1</mn> <mn>2</mn></mfrac> $.
+$s class <rr $: <msub href=""><mo>&lt;</mo> <mi>R</mi></msub> $.
 $s wff Prv ph $: <mrow><mo href="ax-prv1.html">Prv</mo> #ph#</mrow> $.
 $s wff F/ x e. A ph $:  <mrow> <mo href="df-bj-rnf.html">&#8498;</mo> #x# <mo>&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
-$s wff [b x /b y ]b ph $: <mrow><mfenced open="[b" close="]b" separators="/b"> #y# #x# </mfenced> #ph# </mrow> $.
 $s wff if- ( ph , ps , ch ) $: <mrow> <mo href="df-bj-if.html">if-</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
 $s class elwise $: <mi href="df-elwise.html">elwise</mi> $.
 $s class ( A Proj B ) $: <mfenced><mrow>#A# <mo href="df-bj-proj.html">Proj</mo> #B#</mrow></mfenced> $.
 $s class (| A |) $: <mfenced open="&#x2985;" close="&#x2986;">#A#</mfenced> $.
 $s class FinSum $: <mo href="df-bj-finsum.html">FinSum</mo> $.
 
+$( Jim Kingdon $)
+$s class _tau $: <mi href="df-tau.html" mathvariant="normal"> &tau; </mi> $.
+
 $( Peter Mazsa $)
+$s class ,~ R $: <mrow><mo href="df-coss.html">&#8768;</mo> #R# </mrow> $.
+$s class ~ A $: <mrow><mo href="df-coss.html">&Tilde;</mo> #A# </mrow> $.
 $s class ( A |X. B ) $: <mrow> #A# <mo href="df-xrn.html">&ltimes;</mo> #B# </mrow> $.
+$s class Rels $: <mi href="df-rels.html">Rels</mi> $.
+$s class Refs $: <mi href="df-refs.html">Refs</mi> $.
+$s class RefRels $: <mi href="df-refrels.html">RefRels</mi> $.
+$s wff RefRel R $: <mrow><mo href="df-refrel.html">RefRel</mo> #R#</mrow> $.
+$s class CnvRefs $: <mi href="df-cnvrefs.html">CnvRefs</mi> $.
+$s class CnvRefRels $: <mi href="df-cnvrefrels.html">CnvRefRels</mi> $.
+$s wff CnvRefRel R $: <mrow><mo href="df-cnvrefrel.html">CnvRefRel</mo> #R#</mrow> $.
+$s class Syms $: <mi href="df-syms.html">Syms</mi> $.
+$s class SymRels $: <mi href="df-symrels.html">SymRels</mi> $.
+$s wff SymRel R $: <mrow><mo href="df-symrel.html">SymRel</mo> #R#</mrow> $.
+$s wff CnvRefRel R $: <mrow><mo href="df-cnvrefrel.html">CnvRefRel</mo> #R#</mrow> $.
+$s class Trs $: <mi href="df-trs.html">Trs</mi> $.
+$s class TrRels $: <mi href="df-trsrels.html">TrRels</mi> $.
+$s wff TrRel R $: <mrow><mo href="df-trrel.html">TrRel</mo> #R#</mrow> $.
+$s class EqvRels $: <mi href="df-eqvrels.html">EqvRels</mi> $.
+$s wff EqvRel R $: <mrow><mo href="df-eqvrel.html">EqvRel</mo> #R#</mrow> $.
+$s class CoElEqvRels $: <mi href="df-coeleqvrels.html">CoElEqvRels</mi> $.
+$s wff CoElEqvRel R $: <mrow><mo href="df-coeleqvrel.html">CoElEqvRel</mo> #R#</mrow> $.
+$s class Redunds $: <mi href="df-redunds.html">Redunds</mi> $.
+$s wff A Redund <. B , C >. $: <mrow href="df-redund.html">#A# <mo>Redund</mo> <mfenced open="&lang;" close="&rang;">#B# #C#</mfenced></mrow> $.
+$s wff redund ( ph , ps , ch ) $: <mrow href="df-redundp.html"><mo>redund</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
+$s class DomainQss $: <mi href="df-dmqss.html">DomainQss</mi> $.
+$s wff R DomainQs A $: <mrow href="df-dmqs">#R# <mo>DomainQs</mo> #A#</mrow> $.
+$s class Ers $: <mi href="df-ers.html">Ers</mi> $.
+$s wff R ErALTV A $: <mrow>#R# <mo href="df-erALTV.html">ErALTV</mo> #A#</mrow> $.
+$s class MembErs $: <mi href="df-members.html">MembErs</mi> $.
+$s wff MembEr A $: <mrow><mo href="df-member.html">MembEr</mo> #A#</mrow> $.
+$s class Funss $: <mi href="df-funss.html">Funss</mi> $.
+$s class FunsALTV $: <mi href="df-funsALTV.html">FunsALTV</mi> $.
+$s wff FunALTV F $: <mrow><mo href="df-funALTV.html">FunALTV</mo> #F#</mrow> $.
+$s class Disjss $: <mi href="df-disjss.html">Disjss</mi> $.
+$s class Disjs $: <mi href="df-disjs.html">Disjs</mi> $.
+$s wff Disj R $: <mrow><mo href="df-disj.html">Disj</mo> #R#</mrow> $.
+$s class ElDisjs $: <mi href="df-eldisjs.html">ElDisjs</mi> $.
+$s wff ElDisj A $: <mrow><mo href="df-eldisj.html">ElDisj</mo> #A#</mrow> $.
 
 $( Norm Megill $)
 $s class <oL $: <msub href="df-lcv.html"><mo>&#8918;</mo> <mi>L</mi></msub> $.
@@ -1543,8 +1612,15 @@ $s class HGMap $: <mi href="df-hgmap.html">HGMap</mi> $.
 $s class HLHil $: <mi href="df-hlhil.html">HLHil</mi> $.
 $s class mapd $: <mi href="df-mapd.html">mapd</mi> $.
 
-$( Jim Kingdon $)
-$s class _tau $: <mi href="df-tau.html" mathvariant="normal"> &tau; </mi> $.
+$( Steven Nguyen $)
+$s class -R $: <msub href="df-resub.html"><mo>-</mo> <mi>&Ropf;</mi></msub> $.
+$s class PrjSp $: <mi href="df-prjsp.html">&Popf;&ropf;&oopf;&jopf;</mi> $.
+$s class PrjSpn $: <msub href="df-prjspn.html"><mi>&Popf;&ropf;&oopf;&jopf;</mi> <mi>n</mi></msub> $.
+
+$( Rohan Ridenour $)
+$s class Scott A $: <mrow href="df-scott.html"><mo>Scott</mo> #A#</mrow> $.
+$s class ( F Coll A ) $: <mfenced><mrow>#F# <mo  href="df-coll.html">Coll</mo> #A#</mrow></mfenced> $.
+$s class SimpGrp $: <mi href="df-simpg.html">SimpGrp</mi> $.
 
 $( Schemes with unknown tokens:
 $s class ==3 $: <mi> &#x2261;&#x2083; </mi> $.
@@ -1613,8 +1689,6 @@ $(
 @s class 9 @: <mn> 9 </mn> @.
 $)
 
-$s class 10 $: <mn href="df-10.html"> 10 </mn> $.
-
 $( Arithmetic number builder $)
 $i class-n M $: <mi mathcolor=#808>M</mi> $.
 $i class-n N $: <mi mathcolor=#808>N</mi> $.
@@ -1658,6 +1732,7 @@ $s wff ( ph /\ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em 
 $s wff ( ph \/ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-or.html">&or;</mo> #ps# </mrow></mfenced> $.
 $s wff ( ph -/\ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-nan.html">&#8892;</mo> #ps# </mrow></mfenced> $.
 $s wff ( ph \/_ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-xor.html">&#8891</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph -\/ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-nor.html">&#8893;</mo> #ps# </mrow></mfenced> $.
 
 $( Quantifiers $)
 $s wff A. x e. A ph $: <mrow> <mo href="df-ral.html">&forall;</mo> #x# <mo href="df-ral.html">&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
@@ -1670,8 +1745,8 @@ $s wff E! x ph $: <mrow> <mo href="df-eu.html">&exist;!</mo> #x# <mspace width=.
 $s wff E* x ph $: <mrow> <msup href="df-mo.html"><mo>&exist;</mo><mo>*</mo></msup> #x# <mspace width=.4em /> #ph# </mrow> $.
 $s wff F/ x ph $: <mrow> <mo href="df-nf.html">&#8498;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
 $s wff F/_ x A $: <mrow> <munder><mo href="df-nfc.html"> &#8498; </mo><mo> &#x5F; </mo></munder> #x# <mspace width=.4em /> #A# </mrow> $.
-$s wff nfOLD x ph $: <mrow> <mo href="df-nfOLD.html">&#8498;OLD</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
 
+$s wff E! x e. A , y e. B ph $: <mrow> <mo href="df-2reu.html">&exist;!</mo> #x# <mo href="df-reu.html">&isin;</mo> #A#, #y# <mo href="df-2reu.html">&isin;</mo> #B# <mspace width=.4em /> #ph# </mrow> $.
 
 
 
@@ -1977,7 +2052,9 @@ $s class S.2 $: <msup href="df-itg2.html"><mo>&int;</mo> <mn>2</mn></msup> $.
 $s class area $: <mo href="df-area.html">area</mo> $.
 
 $( Operator Constants - usually not used outside definition $)
-$s class +c $: <msub href="df-cda.html"> <mo>+</mo> <mo>c</mo> </msub> $.
+$s class ( A |_| B ) $: <mfenced><mrow>#A# <mi href="df-dju"> &sqcups; </mi> #B#</mrow></mfenced> $.
+$s class inl $: <mo href="df-inl.html">inl</mo> $.
+$s class inr $: <mo href="df-inr.html">inr</mo> $.
 $s class + $: <mo href="df-add.html">&plus;</mo> $.
 $s class - $: <mo href="df-sub.html">&minus;</mo> $.
 $s class / $: <mo href="df-div.html">&divide;</mo> $.
