@@ -17363,6 +17363,7 @@ New usage of "snssiALT" is discouraged (0 uses).
 New usage of "snssiALTVD" is discouraged (0 uses).
 New usage of "snssl" is discouraged (0 uses).
 New usage of "snsslVD" is discouraged (0 uses).
+New usage of "spALT" is discouraged (0 uses).
 New usage of "span0" is discouraged (0 uses).
 New usage of "spancl" is discouraged (6 uses).
 New usage of "spanid" is discouraged (9 uses).
@@ -19178,6 +19179,7 @@ Proof modification of "snssiALT" is discouraged (40 steps).
 Proof modification of "snssiALTVD" is discouraged (64 steps).
 Proof modification of "snssl" is discouraged (18 steps).
 Proof modification of "snsslVD" is discouraged (24 steps).
+Proof modification of "spALT" is discouraged (23 steps).
 Proof modification of "spcegvOLD" is discouraged (13 steps).
 Proof modification of "spcgvOLD" is discouraged (13 steps).
 Proof modification of "speimfwALT" is discouraged (35 steps).
