@@ -701,6 +701,47 @@
 "addsrpr" is used by "distrsr".
 "addsrpr" is used by "ltasr".
 "addsrpr" is used by "m1p1sr".
+"adh-minim-ax1" is used by "adh-minim-ax2-lem5".
+"adh-minim-ax1" is used by "adh-minim-idALT".
+"adh-minim-ax1" is used by "adh-minim-pm2.43".
+"adh-minim-ax1-ax2-lem1" is used by "adh-minim-ax1".
+"adh-minim-ax1-ax2-lem1" is used by "adh-minim-ax1-ax2-lem2".
+"adh-minim-ax1-ax2-lem1" is used by "adh-minim-ax1-ax2-lem3".
+"adh-minim-ax1-ax2-lem2" is used by "adh-minim-ax1-ax2-lem3".
+"adh-minim-ax1-ax2-lem2" is used by "adh-minim-ax1-ax2-lem4".
+"adh-minim-ax1-ax2-lem3" is used by "adh-minim-ax1".
+"adh-minim-ax1-ax2-lem3" is used by "adh-minim-ax2".
+"adh-minim-ax1-ax2-lem4" is used by "adh-minim-ax1".
+"adh-minim-ax1-ax2-lem4" is used by "adh-minim-ax2-lem5".
+"adh-minim-ax1-ax2-lem4" is used by "adh-minim-ax2-lem6".
+"adh-minim-ax1-ax2-lem4" is used by "adh-minim-ax2c".
+"adh-minim-ax2" is used by "adh-minim-idALT".
+"adh-minim-ax2" is used by "adh-minim-pm2.43".
+"adh-minim-ax2-lem5" is used by "adh-minim-ax2-lem6".
+"adh-minim-ax2-lem5" is used by "adh-minim-ax2c".
+"adh-minim-ax2-lem6" is used by "adh-minim-ax2".
+"adh-minim-ax2-lem6" is used by "adh-minim-ax2c".
+"adh-minim-ax2c" is used by "adh-minim-ax2".
+"adh-minimp-ax1" is used by "adh-minimp-idALT".
+"adh-minimp-ax1" is used by "adh-minimp-pm2.43".
+"adh-minimp-ax2" is used by "adh-minimp-idALT".
+"adh-minimp-ax2" is used by "adh-minimp-pm2.43".
+"adh-minimp-ax2-lem4" is used by "adh-minimp-ax2".
+"adh-minimp-ax2c" is used by "adh-minimp-ax2".
+"adh-minimp-ax2c" is used by "adh-minimp-ax2-lem4".
+"adh-minimp-imim1" is used by "adh-minimp-ax2c".
+"adh-minimp-jarr-ax2c-lem3" is used by "adh-minimp-ax2c".
+"adh-minimp-jarr-ax2c-lem3" is used by "adh-minimp-sylsimp".
+"adh-minimp-jarr-imim1-ax2c-lem1" is used by "adh-minimp-ax2c".
+"adh-minimp-jarr-imim1-ax2c-lem1" is used by "adh-minimp-imim1".
+"adh-minimp-jarr-imim1-ax2c-lem1" is used by "adh-minimp-jarr-lem2".
+"adh-minimp-jarr-imim1-ax2c-lem1" is used by "adh-minimp-sylsimp".
+"adh-minimp-jarr-lem2" is used by "adh-minimp-jarr-ax2c-lem3".
+"adh-minimp-jarr-lem2" is used by "adh-minimp-sylsimp".
+"adh-minimp-sylsimp" is used by "adh-minimp-ax1".
+"adh-minimp-sylsimp" is used by "adh-minimp-ax2-lem4".
+"adh-minimp-sylsimp" is used by "adh-minimp-ax2c".
+"adh-minimp-sylsimp" is used by "adh-minimp-imim1".
 "adj0" is used by "adjeq0".
 "adj1" is used by "adj2".
 "adj1" is used by "adjadj".
@@ -13221,6 +13262,28 @@ New usage of "addpqf" is discouraged (5 uses).
 New usage of "addpqnq" is discouraged (8 uses).
 New usage of "addresr" is discouraged (4 uses).
 New usage of "addsrpr" is discouraged (7 uses).
+New usage of "adh-minim-ax1" is discouraged (3 uses).
+New usage of "adh-minim-ax1-ax2-lem1" is discouraged (3 uses).
+New usage of "adh-minim-ax1-ax2-lem2" is discouraged (2 uses).
+New usage of "adh-minim-ax1-ax2-lem3" is discouraged (2 uses).
+New usage of "adh-minim-ax1-ax2-lem4" is discouraged (4 uses).
+New usage of "adh-minim-ax2" is discouraged (2 uses).
+New usage of "adh-minim-ax2-lem5" is discouraged (2 uses).
+New usage of "adh-minim-ax2-lem6" is discouraged (2 uses).
+New usage of "adh-minim-ax2c" is discouraged (1 uses).
+New usage of "adh-minim-idALT" is discouraged (0 uses).
+New usage of "adh-minim-pm2.43" is discouraged (0 uses).
+New usage of "adh-minimp-ax1" is discouraged (2 uses).
+New usage of "adh-minimp-ax2" is discouraged (2 uses).
+New usage of "adh-minimp-ax2-lem4" is discouraged (1 uses).
+New usage of "adh-minimp-ax2c" is discouraged (2 uses).
+New usage of "adh-minimp-idALT" is discouraged (0 uses).
+New usage of "adh-minimp-imim1" is discouraged (1 uses).
+New usage of "adh-minimp-jarr-ax2c-lem3" is discouraged (2 uses).
+New usage of "adh-minimp-jarr-imim1-ax2c-lem1" is discouraged (4 uses).
+New usage of "adh-minimp-jarr-lem2" is discouraged (2 uses).
+New usage of "adh-minimp-pm2.43" is discouraged (0 uses).
+New usage of "adh-minimp-sylsimp" is discouraged (4 uses).
 New usage of "adj0" is discouraged (1 uses).
 New usage of "adj1" is discouraged (3 uses).
 New usage of "adj1o" is discouraged (3 uses).
@@ -17801,6 +17864,29 @@ Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
 Proof modification of "addmodlteqALT" is discouraged (237 steps).
+Proof modification of "adh-jarrsc" is discouraged (31 steps).
+Proof modification of "adh-minim-ax1" is discouraged (91 steps).
+Proof modification of "adh-minim-ax1-ax2-lem1" is discouraged (41 steps).
+Proof modification of "adh-minim-ax1-ax2-lem2" is discouraged (55 steps).
+Proof modification of "adh-minim-ax1-ax2-lem3" is discouraged (40 steps).
+Proof modification of "adh-minim-ax1-ax2-lem4" is discouraged (43 steps).
+Proof modification of "adh-minim-ax2" is discouraged (56 steps).
+Proof modification of "adh-minim-ax2-lem5" is discouraged (27 steps).
+Proof modification of "adh-minim-ax2-lem6" is discouraged (40 steps).
+Proof modification of "adh-minim-ax2c" is discouraged (104 steps).
+Proof modification of "adh-minim-idALT" is discouraged (28 steps).
+Proof modification of "adh-minim-pm2.43" is discouraged (44 steps).
+Proof modification of "adh-minimp-ax1" is discouraged (21 steps).
+Proof modification of "adh-minimp-ax2" is discouraged (40 steps).
+Proof modification of "adh-minimp-ax2-lem4" is discouraged (25 steps).
+Proof modification of "adh-minimp-ax2c" is discouraged (105 steps).
+Proof modification of "adh-minimp-idALT" is discouraged (28 steps).
+Proof modification of "adh-minimp-imim1" is discouraged (55 steps).
+Proof modification of "adh-minimp-jarr-ax2c-lem3" is discouraged (59 steps).
+Proof modification of "adh-minimp-jarr-imim1-ax2c-lem1" is discouraged (45 steps).
+Proof modification of "adh-minimp-jarr-lem2" is discouraged (40 steps).
+Proof modification of "adh-minimp-pm2.43" is discouraged (44 steps).
+Proof modification of "adh-minimp-sylsimp" is discouraged (96 steps).
 Proof modification of "aecom-o" is discouraged (28 steps).
 Proof modification of "aecoms-o" is discouraged (16 steps).
 Proof modification of "aev-o" is discouraged (117 steps).
