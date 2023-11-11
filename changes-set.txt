@@ -101,7 +101,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 5-Nov-23 ascl0     [same]      moved from AV's mathbox to main set.mm
+ 5-Nov-23 fcod      [same]      moved from GS's mathbox to main set.mm
 31-Oct-23 spimv1    spimfv      labeling consistent with speimfv
+28-Oct-23 bj-2ex    2oex        moved from BJ's mathbox to main set.mm
 23-Oct-23 bj-alequexv alequexv  moved from BJ's mathbox to main set.mm
 23-Oct-23 axext2    axexte      existential form of ax-ext
 23-Oct-23 axext3    axextg      more general form of ax-ext
