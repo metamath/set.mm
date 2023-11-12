@@ -7797,8 +7797,6 @@
 "idi" is used by "dvmptfprod".
 "idi" is used by "dvnprodlem1".
 "idi" is used by "fprodcnlem".
-"idi" is used by "frege55lem2a".
-"idi" is used by "fsovrfovd".
 "idi" is used by "imo72b2lem0".
 "idi" is used by "limsupvaluz2".
 "idi" is used by "madjusmdetlem2".
@@ -15723,7 +15721,7 @@ New usage of "idALT" is discouraged (1 uses).
 New usage of "idcnop" is discouraged (2 uses).
 New usage of "iden2" is discouraged (0 uses).
 New usage of "idhmop" is discouraged (6 uses).
-New usage of "idi" is discouraged (13 uses).
+New usage of "idi" is discouraged (11 uses).
 New usage of "idiALT" is discouraged (12 uses).
 New usage of "idiVD" is discouraged (0 uses).
 New usage of "idleop" is discouraged (1 uses).
@@ -18592,7 +18590,7 @@ Proof modification of "frege55b" is discouraged (50 steps).
 Proof modification of "frege55c" is discouraged (68 steps).
 Proof modification of "frege55cor1a" is discouraged (22 steps).
 Proof modification of "frege55lem1a" is discouraged (16 steps).
-Proof modification of "frege55lem2a" is discouraged (22 steps).
+Proof modification of "frege55lem2a" is discouraged (18 steps).
 Proof modification of "frege55lem2b" is discouraged (23 steps).
 Proof modification of "frege55lem2c" is discouraged (27 steps).
 Proof modification of "frege56a" is discouraged (30 steps).
