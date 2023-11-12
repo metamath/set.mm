@@ -64,7 +64,6 @@ proposed  syl5sseq  sseqtrid    compare to sseqtri or sseqtrd
 proposed  syl5sseqr sseqtrrid
 proposed  syl5eqbr  eqbrtrid    compare to eqbrtri or eqbrtrd
 proposed  syl5eqbrr eqbrtrrid   compare to eqbrtrri or eqbrtrrd
-proposed  syl5breq  breqtrid    compare to breqtri or breqtrd
 proposed  wl-luk-syl5 wl-luk-imtrid
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
@@ -100,6 +99,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+12-Nov-23 syl5breq  breqtrid    compare to breqtri or breqtrd
 11-Nov-23 syl5breqr breqtrrid   compare to breqtrri or breqtrrd
  5-Nov-23 ascl0     [same]      moved from AV's mathbox to main set.mm
  5-Nov-23 fcod      [same]      moved from GS's mathbox to main set.mm
