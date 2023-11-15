@@ -12538,7 +12538,7 @@ $)
     spimfw.2 $e |- ( x = y -> ( ph -> ps ) ) $.
     $( Specialization, with additional weakening to allow bundling of ` x ` and
        ` y ` .  Uses only Tarski's FOL axiom schemes.  (Contributed by NM,
-       23-Apr-1017.)  (Proof shortened by Wolf Lammen, 7-Aug-2017.) $)
+       23-Apr-2017.)  (Proof shortened by Wolf Lammen, 7-Aug-2017.) $)
     spimfw $p |- ( -. A. x -. x = y -> ( A. x ph -> ps ) ) $=
       ( weq wn wal wex speimfw df-ex con1i sylbi syl6 ) CDGHCIHACIBCJZBABCDFKPB
       HCIZHBBCLBQEMNO $.
@@ -12815,7 +12815,7 @@ $)
   ${
     sptruw.1 $e |- ph $.
     $( Version of ~ sp when ` ph ` is true.  Uses only Tarski's FOL axiom
-       schemes.  (Contributed by NM, 23-Apr-1017.) $)
+       schemes.  (Contributed by NM, 23-Apr-2017.) $)
     sptruw $p |- ( A. x ph -> ph ) $=
       ( wal a1i ) AABDCE $.
   $}
@@ -12823,7 +12823,7 @@ $)
   ${
     spfalw.1 $e |- -. ph $.
     $( Version of ~ sp when ` ph ` is false.  Uses only Tarski's FOL axiom
-       schemes.  (Contributed by NM, 23-Apr-1017.)  (Proof shortened by Wolf
+       schemes.  (Contributed by NM, 23-Apr-2017.)  (Proof shortened by Wolf
        Lammen, 25-Dec-2017.) $)
     spfalw $p |- ( A. x ph -> ph ) $=
       ( wn hbth spnfw ) ABADBCEF $.
@@ -13065,7 +13065,7 @@ $)
     $d x y $.  $d y ph $.
     spfalwOLD.1 $e |- -. ph $.
     $( Obsolete proof of ~ spfalw as of 25-Dec-2017.  (Contributed by NM,
-       23-Apr-1017.)  (Proof modification is discouraged.)
+       23-Apr-2017.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
     spfalwOLD $p |- ( A. x ph -> ph ) $=
       ( vy wfal wb weq bifal a1i spw ) AEBDAEFBDGACHIJ $.
