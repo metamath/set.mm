@@ -98,6 +98,11 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Nov-23 fun11iun  f1iun       labeling consistent with fiun
+18-Nov-23 inex2ALTV inex2g      moved from PM's mathbox to main set.mm
+18-Nov-23 bj-rabbid rabbid      moved from BJ's mathbox to main set.mm
+18-Nov-23 bj-rabbida rabbida    moved from BJ's mathbox to main set.mm
+18-Nov-23 elmapresaun [same]    moved from SO's mathbox to main set.mm
 13-Nov-23 syl5eqbrr eqbrtrrid   compare to eqbrtrri or eqbrtrrd
 12-Nov-23 syl5breq  breqtrid    compare to breqtri or breqtrd
 11-Nov-23 syl5breqr breqtrrid   compare to breqtrri or breqtrrd
