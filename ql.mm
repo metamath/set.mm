@@ -797,7 +797,7 @@ $)
     ZDZCZAEZSRCZSCZFZDZABFZAESUGDUBUACZSEZUFUAAGUITSEUFUHTSTUHTHIJRSKLLUGUAAUGB
     AFZUAABMZBANLJUGUESUGUJUEUKBUCAUDBHAHOLPQ $.
 
-  $( Lemma in proof of Th. 1 of Pavicic 1987.  (Contributed by NM,
+  $( Lemma in proof of Thm. 1 of Pavicic 1987.  (Contributed by NM,
      12-Aug-1997.) $)
   omlem1 $p |- ( ( a v ( a ' ^ ( a v b ) ) ) v ( a v b ) ) =
                ( a v b ) $=
@@ -805,7 +805,7 @@ $)
     AACZABDZEZDZADBDZRADZSDZTRDZRUDRTDUAUCTRFTABGZRASGHUEUCRRQEZDRUBRSUFUBAADZB
     DZRUHUBUHARDUBAABGARFIJUGABAKLIQRMNRQOIP $.
 
-  $( Lemma in proof of Th. 1 of Pavicic 1987.  (Contributed by NM,
+  $( Lemma in proof of Thm. 1 of Pavicic 1987.  (Contributed by NM,
      12-Aug-1997.) $)
   omlem2 $p |- ( ( a v b ) ' v ( a v ( a ' ^ ( a v b ) ) ) ) = 1 $=
     ( wo wn wa wt ax-a2 anor2 2or ax-a3 ax-r1 df-t 3tr1 ) ABCZDZACZADNEZCZAOCZS
@@ -928,7 +928,7 @@ $)
 
   $( An ortholattice inequality, corresponding to a theorem provable in Hilbert
      space.  Part of Definition 2.1 p. 2092, in M. Pavicic and N. Megill,
-     "Quantum and Classical Implicational Algebras with Primitive Implication,"
+     "Quantum and Classical Implicational Algebras with Primitive Implication",
      _Int.  J. of Theor.  Phys_. 37, 2091-2098 (1998).  (Contributed by NM,
      3-Feb-2002.) $)
   qlhoml1a $p |- a =< a ' ' $=
@@ -1215,8 +1215,8 @@ $(
         Weak "orthomodular law" in ortholattices.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-        All theorems here do not require R3 and
-        are true in all ortholattices.
+  All theorems here do not require R3 and are true in all ortholattices.
+
 $)
 
   $( Weak A1.  (Contributed by NM, 27-Sep-1997.) $)
@@ -1328,7 +1328,7 @@ $)
   ${
     wlem3.1.1 $e |- ( a v b ) = b $.
     wlem3.1.2 $e |- ( b ' v a ) = 1 $.
-    $( Weak analogue to lemma used in proof of Th. 3.1 of Pavicic 1993.
+    $( Weak analogue to lemma used in proof of Thm. 3.1 of Pavicic 1993.
        (Contributed by NM, 2-Sep-1997.) $)
     wlem3.1 $p |- ( a == b ) = 1 $=
       ( tb wn wo wt wa dfb leoa oran ax-r1 ax-r2 con3 2or ax-a2 ) ABEZBFZAGZHRA
@@ -1365,7 +1365,6 @@ $)
       ( wo wn wa df-c2 oran ax-a2 anor2 ax-r1 con3 2an ax-r4 3tr1 ax-r2 con1 )
       AABDZABEZDZFZAEZUBBFZUBSFZDZUAEZUBBCGUDUCDUDEZUCEZFZEUEUFUDUCHUCUDIUAUIRU
       GTUHABHTUCUCTEABJKLMNOPQ $.
-
   $}
 
   ${
@@ -1407,7 +1406,6 @@ $)
       BKZABAVTAUFZRDUGSBVBUHONOOVBBUOVCQOVIVGVDVIVBVTCFZGVGUOWBVBAVTCWAUIPVBCCK
       AEUJSONOVBCVDTOVFVBLGLVELVBBCVCGGZURVCGZVELWDWCBCVCTRCBVCUKURUAULPVBUMOOU
       NO $.
-
   $}
 
   ${
@@ -2754,7 +2752,6 @@ $)
     wlecon $p |- ( b ' =<2 a ' ) = 1 $=
       ( wn wa wo ax-a2 bi1 oran wdf-le2 w3tr2 wcon3 wdf2le1 ) BDZADZNOEZBBAFZAB
       FZPDZBQRBAGHQSBAIHABCJKLM $.
-
   $}
 
   ${
@@ -3001,7 +2998,7 @@ $)
       IJUKBUJHZGZHZUOUKUSBUJKLURUCUQUBBUBUQUBUQACMLNOPQUNULHZUMHZFZHZUPUNVCULUM
       RLVBUFUFVBUDUTUEVAUDUTBARLUEVABCRLSNPQTUA $.
 
-    $( Th. 4.2 Beran p. 49.  (Contributed by NM, 10-Nov-1998.) $)
+    $( Thm. 4.2 Beran p. 49.  (Contributed by NM, 10-Nov-1998.) $)
     wcom2or $p |- C ( a , ( b v c ) ) = 1 $=
       ( wo wa wn wcomcom wdf-c2 ancom 2or bi1 wr2 w2or or4 wfh1 wcomcom3 wdf-c1
       wr1 ) BCFZAUAAUAABGZACGZFZAHZBGZUECGZFZFZUAAGZUAUEGZFZUAUBUFFZUCUGFZFZUIB
@@ -3009,11 +3006,10 @@ $)
       USUCUTUGCAKCUEKLMNOUOUIUBUFUCUGPMNULUIUJUDUKUHUJAUAGZUDUJVBUAAKMABCDEQNUK
       UEUAGZUHUKVCUAUEKMUEBCABDRACERQNOTNSI $.
 
-    $( Th. 4.2 Beran p. 49.  (Contributed by NM, 10-Nov-1998.) $)
+    $( Thm. 4.2 Beran p. 49.  (Contributed by NM, 10-Nov-1998.) $)
     wcom2an $p |- C ( a , ( b ^ c ) ) = 1 $=
       ( wa wn wo wcomcom4 wcom2or df-a con2 ax-r1 bi1 wcbtr wcomcom5 ) ABCFZAGZ
       BGZCGZHZQGZRSTABDIACEIJUAUBUBUAQUABCKLMNOP $.
-
   $}
 
   $( Negated biconditional (distributive form) (Contributed by NM,
@@ -3193,18 +3189,18 @@ $)
   ${
     lem3.1.1 $e |- ( a v b ) = b $.
     lem3.1.2 $e |- ( b ' v a ) = 1 $.
-    $( Lemma used in proof of Th. 3.1 of Pavicic 1993.  (Contributed by NM,
+    $( Lemma used in proof of Thm. 3.1 of Pavicic 1993.  (Contributed by NM,
        12-Aug-1997.) $)
     lem3.1 $p |- a = b $=
       ( tb wt wlem3.1 ax-r1 r3a ) ABABEFABCDGHI $.
 
-    $( Lemma used in proof of Th. 3.1 of Pavicic 1993.  (Contributed by NM,
+    $( Lemma used in proof of Thm. 3.1 of Pavicic 1993.  (Contributed by NM,
        12-Aug-1997.) $)
     lem3a.1 $p |- ( a v b ) = a $=
       ( wo lem3.1 ax-r1 lor oridm ax-r2 ) ABEAAEABAAABABCDFGHAIJ $.
   $}
 
-  $( Orthomodular law.  Compare Th. 1 of Pavicic 1987.  (Contributed by NM,
+  $( Orthomodular law.  Compare Thm. 1 of Pavicic 1987.  (Contributed by NM,
      12-Aug-1997.) $)
   oml $p |- ( a v ( a ' ^ ( a v b ) ) ) = ( a v b ) $=
     ( wn wo wa omlem1 omlem2 lem3.1 ) AACABDZEDIABFABGH $.
@@ -3457,18 +3453,17 @@ $)
       ( wa wo fh4r ancom ax-r5 3tr1 ) ACFZBGABGZCBGZFCAFZBGNMFABCDEHOLBCAIJNMIK
       $.
 
-    $( Th. 4.2 Beran p. 49.  (Contributed by NM, 7-Nov-1997.) $)
+    $( Thm. 4.2 Beran p. 49.  (Contributed by NM, 7-Nov-1997.) $)
     com2or $p |- a C ( b v c ) $=
       ( wo wa wn comcom df-c2 ancom 2or ax-r2 or4 fh1 comcom3 ax-r1 df-c1 ) BCF
       ZASASABGZACGZFZAHZBGZUCCGZFZFZSAGZSUCGZFZSTUDFZUAUEFZFUGBUKCULBBAGZBUCGZF
       UKBAABDIJUMTUNUDBAKBUCKLMCCAGZCUCGZFULCAACEIJUOUAUPUECAKCUCKLMLTUDUAUENMU
       JUGUHUBUIUFUHASGUBSAKABCDEOMUIUCSGUFSUCKUCBCABDPACEPOMLQMRI $.
 
-    $( Th. 4.2 Beran p. 49.  (Contributed by NM, 7-Nov-1997.) $)
+    $( Thm. 4.2 Beran p. 49.  (Contributed by NM, 7-Nov-1997.) $)
     com2an $p |- a C ( b ^ c ) $=
       ( wa wn wo comcom4 com2or df-a con2 ax-r1 cbtr comcom5 ) ABCFZAGZBGZCGZHZ
       PGZQRSABDIACEIJUATPTBCKLMNO $.
-
   $}
 
   $( Commutation theorem for Sasaki implication.  (Contributed by NM,
@@ -3502,7 +3497,7 @@ $)
     gsth.1 $e |- a C b $.
     gsth.2 $e |- b C c $.
     gsth.3 $e |- a C ( b ^ c ) $.
-    $( Gudder-Schelp's Theorem.  Beran, p. 262, Th. 4.1.  (Contributed by NM,
+    $( Gudder-Schelp's Theorem.  Beran, p. 262, Thm. 4.1.  (Contributed by NM,
        20-Sep-1998.) $)
     gsth $p |- ( a ^ b ) C c $=
       ( wa wo wn comcom fh4rc comcom2 lan fh1r ran lea ancom wf ax-r1 3tr lecom
@@ -3519,7 +3514,7 @@ $)
   ${
     gsth2.1 $e |- b C c $.
     gsth2.2 $e |- a C ( b ^ c ) $.
-    $( Stronger version of Gudder-Schelp's Theorem.  Beran, p. 263, Th. 4.2.
+    $( Stronger version of Gudder-Schelp's Theorem.  Beran, p. 263, Thm. 4.2.
        (Contributed by NM, 20-Sep-1998.) $)
     gsth2 $p |- ( a ^ b ) C c $=
       ( wa wn comcom ancom ax-a2 ran ax-r2 comor2 comcom7 comcom2 coman1 com2or
@@ -5271,7 +5266,6 @@ $)
     u5lemc2 $p |- a C ( b ->5 c ) $=
       ( wa wn wo wi5 com2an comcom2 com2or df-i5 ax-r1 cbtr ) ABCFZBGZCFZHZQCGZ
       FZHZBCIZASUAAPRABCDEJAQCABDKZEJLAQTUDACEKJLUCUBBCMNO $.
-
   $}
 
   ${
@@ -5366,7 +5360,6 @@ $)
       ax-r5 comcom3 comcom4 fh4 ax-a2 2an ) ABDABEAFZBEGZUEBFZEZGZUEBGZABHUIBUH
       GZUJUFBUHUFAUEGZBEZBUMUFABUECAAAIJKLUMBULEZBULBMUNBNEBULNBNULAOLPBQRRRSUK
       BUEGZBUGGZEZUJUEBUGABCTABCUAUBUQUJNEUJUOUJUPNBUEUCNUPBOLUDUJQRRRR $.
-
   $}
 
   $( Commutation theorem for Sasaki implication.  (Contributed by NM,
@@ -5619,7 +5612,6 @@ $)
   u5lem0 $p |- ( b ' ->5 a ' ) = ( a ->5 b ) $=
 ?$.
   $)
-
 
   $( Lemma for unified implication study.  (Contributed by NM, 14-Dec-1997.) $)
   u1lem1 $p |- ( ( a ->1 b ) ->1 a ) = a $=
@@ -6135,7 +6127,6 @@ $)
     VMWAVIVQVLVTVHVPABQOVLVBEZVCEZLZVTVBVCQVTWDVRWBVSWCVRCVNMWBVNCRCATKVSCVOMWC
     VOCRCBTKUFPKUGPKVLVDVIVLVDVCVBDZMZVDWFVLVBVCNPVDWEUHSUISUJUKKK $.
 
-
   $( Possible axiom for Kalmbach implication system.  (Contributed by NM,
      23-Jan-1998.) $)
   u3lemax5 $p |- ( ( a ->3 b ) ->3 ( ( a ->3 b )
@@ -6268,7 +6259,6 @@ $)
     NBCLUBACBKMNUSUTUMFZUMCUIBULOVAUEUMFZUMUTUEUMCBLUCVBBUIFZCULFZFUMBCUIULOVCU
     IVDULBUIBUDUHBBAEZBEZGZFZUDBVGPUDVHABQISBBCEZVFGZFZUHBVJPUHVKCBQISRTCULCUJU
     KCCVEVIGZFZUJCVLPUJVMACQISCCVFVIGZFZUKCVNPUKVOBCQISRTNMMMMMM $.
-
 
   $( A 3-variable theorem.  (Contributed by NM, 18-Oct-1998.) $)
   3vth7 $p |- ( ( a ->2 b ) ' ->2 ( b v c ) ) =
@@ -6533,7 +6523,6 @@ $)
     ZDZVMVHVDVFJWEVHVMVHWDUKVHVLTPMQVPVCVIFZVFDVKVNWFVOVFABULBCRUMVIVFVCVIVFVIV
     DVFVHVDOVDVETPUOVIVCVIVHVDFVCEVIVHVDVHVDUNVHVDUPUQABURUSUTVANACRVB $.
 
-
   $( Mladen's OML. (Contributed by NM, 4-Nov-1998.) $)
   mlaoml $p |- ( ( a == b ) ^ ( b == c ) ) =< ( a == c ) $=
     ( wi1 wa tb u1lembi ran mlalem bltr ancom an32 3tr le2an an12 id 3tr1 anass
@@ -6587,7 +6576,6 @@ $)
     wa 3tr 2or df-i2 3tr1 ) ACZBDBEZCZUCBQZEZBUBBCQZEZUCBDABFUFUGBEUHUDUGUEBUDU
     BCZBEZCZUGUCUJUBBGZHUGUKUBBIJKUEUJBQZBBUIEZQZBUCUJBULLUMUNBQUOUJUNBUIBMLUNB
     NKBUIORSUGBMKUCBPABTUA $.
-
 
   $( Weak DeMorgan's law for attempt at Sasaki algebra.  (Contributed by NM,
      4-Jan-1999.) $)
@@ -6721,7 +6709,6 @@ $)
       QABVTXHXOYKWNKZJZXQWJCVTXQUUKXPUUJXOXMYKWNYLOWAQMULABCWEUNABCWBWCWDWCWD
       $.
   $}
-
 
   $( For 5GO proof of Mladen's conjecture.  (Contributed by NM,
      20-Jan-2002.) $)
@@ -9384,8 +9371,23 @@ $)
   $( New equation that holds in Hilbert space, discovered by Pavicic and Megill
      (unpublished).
 
-     [Editor's note:  The date this was added is unknown within the range
-     1997 to 9-Aug-2003.]  (Contributed by NM, 1-Jan-1998.) $)
+     This is the simplest known example of an equation implied by the set of
+     Mayet--Godowski equations that is independent from all Godowski equations.
+     It was discovered by Norman Megill and Mladen Pavicic between 1997 and
+     August 2003.  This is Equation (54) in
+
+     Mladen Pavicic, Norman D. Megill, _Quantum Logic and Quantum Computation_,
+     in _Handbook of Quantum Logic and Quantum Structures_, Volume _Quantum
+     Structures_, Elsevier, Amsterdam, 2007, pp. 751--787.
+     ~ https://arxiv.org/abs/0812.3072
+
+     and Equation (15) in
+
+     Mladen Pavicic, Brendan D. McKay, Norman D. Megill, Kresimir Fresl, _Graph
+     Approach to Quantum Systems_, Journal of Mathematical Physics, Volume 51,
+     Issue 10, October 2010. ~ https://arxiv.org/abs/1004.0776
+
+     (Contributed by NM, 1-Jan-1998.) $)
   ax-newstateeq $a |- ( ( ( a ->1 b ) ->1 ( c ->1 b ) ) ^
                     ( ( a ->1 c ) ^ ( b ->1 a ) ) ) =< ( c ->1 a ) $.
 
@@ -9395,6 +9397,7 @@ $(
         Contributions of Roy Longton
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
