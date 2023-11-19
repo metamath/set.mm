@@ -62,7 +62,6 @@ proposed  eqsstr3i  eqsstrri
 proposed  eqsstr3d  eqsstrrd
 proposed  syl5sseq  sseqtrid    compare to sseqtri or sseqtrd
 proposed  syl5sseqr sseqtrrid
-proposed  wl-luk-syl5 wl-luk-imtrid
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
@@ -91,7 +90,6 @@ proposed  syl6eqbr  eqbrtrdi    compare to eqbrtri or eqbrtrd
 proposed  syl6eqbrr eqbrtrrdi   compare to eqbrtrri or eqbrtrrd
 proposed  syl6breq  breqtrdi    compare to breqtri or breqtrd
 proposed  syl6breqr breqtrrdi   compare to breqtrri or breqtrrd
-proposed  wl-luk-syl6 wl-luk-imtrdi
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
