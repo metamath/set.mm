@@ -9368,10 +9368,7 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( New equation that holds in Hilbert space, discovered by Pavicic and Megill
-     (unpublished).
-
-     This is the simplest known example of an equation implied by the set of
+  $( This is the simplest known example of an equation implied by the set of
      Mayet--Godowski equations that is independent from all Godowski equations.
      It was discovered by Norman Megill and Mladen Pavicic between 1997 and
      August 2003.  This is Equation (54) in
