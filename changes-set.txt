@@ -62,7 +62,6 @@ proposed  eqsstr3i  eqsstrri
 proposed  eqsstr3d  eqsstrrd
 proposed  syl5sseq  sseqtrid    compare to sseqtri or sseqtrd
 proposed  syl5sseqr sseqtrrid
-proposed  syl5eqbr  eqbrtrid    compare to eqbrtri or eqbrtrd
 proposed  wl-luk-syl5 wl-luk-imtrid
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
@@ -103,6 +102,7 @@ Date      Old       New         Notes
 18-Nov-23 bj-rabbid rabbid      moved from BJ's mathbox to main set.mm
 18-Nov-23 bj-rabbida rabbida    moved from BJ's mathbox to main set.mm
 18-Nov-23 elmapresaun [same]    moved from SO's mathbox to main set.mm
+17-Nov-23 syl5eqbr  eqbrtrid    compare to eqbrtri or eqbrtrd
 13-Nov-23 syl5eqbrr eqbrtrrid   compare to eqbrtrri or eqbrtrrd
 12-Nov-23 syl5breq  breqtrid    compare to breqtri or breqtrd
 11-Nov-23 syl5breqr breqtrrid   compare to breqtrri or breqtrrd

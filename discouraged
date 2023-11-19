@@ -11250,6 +11250,7 @@
 "pl42lem3N" is used by "pl42lem4N".
 "pl42lem4N" is used by "pl42N".
 "plpv" is used by "addcompr".
+"pm2.18OLD" is used by "pm2.18dOLD".
 "pm2.43cbi" is used by "ee233".
 "pm2.43cbi" is used by "ee33VD".
 "pmap1N" is used by "pmapglb2N".
@@ -16962,6 +16963,8 @@ New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
 New usage of "pm13.183OLD" is discouraged (0 uses).
 New usage of "pm13.18OLD" is discouraged (0 uses).
+New usage of "pm2.18OLD" is discouraged (1 uses).
+New usage of "pm2.18dOLD" is discouraged (0 uses).
 New usage of "pm2.21ddALT" is discouraged (0 uses).
 New usage of "pm2.43bgbi" is discouraged (0 uses).
 New usage of "pm2.43cbi" is discouraged (2 uses).
@@ -19044,6 +19047,8 @@ Proof modification of "perpdragALT" is discouraged (241 steps).
 Proof modification of "pige3ALT" is discouraged (1082 steps).
 Proof modification of "pm13.183OLD" is discouraged (111 steps).
 Proof modification of "pm13.18OLD" is discouraged (28 steps).
+Proof modification of "pm2.18OLD" is discouraged (18 steps).
+Proof modification of "pm2.18dOLD" is discouraged (10 steps).
 Proof modification of "pm2.21ddALT" is discouraged (10 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
