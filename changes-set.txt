@@ -59,7 +59,6 @@ proposed  syl5ss    sstrid      compare to sstri or sstrd
 proposed  syl5eqss  eqsstrid    compare to eqsstri or eqsstrd
 proposed  syl5eqssr eqsstrrid   compare to eqsstr3i or eqsstr3d
 proposed  syl5sseq  sseqtrid    compare to sseqtri or sseqtrd
-proposed  syl5sseqr sseqtrrid
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
@@ -93,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Nov-23 syl5sseqr sseqtrrid
 21-Nov-23 eqsstr3d  eqsstrrd
 21-Nov-23 eqsstr3i  eqsstrri
 17-Nov-23 syl5eqbr  eqbrtrid    compare to eqbrtri or eqbrtrd
