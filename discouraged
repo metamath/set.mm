@@ -15043,7 +15043,6 @@ New usage of "el123" is discouraged (1 uses).
 New usage of "el2122old" is discouraged (1 uses).
 New usage of "elALT" is discouraged (0 uses).
 New usage of "ela" is discouraged (3 uses).
-New usage of "elabgOLD" is discouraged (0 uses).
 New usage of "elat2" is discouraged (4 uses).
 New usage of "elatcv0" is discouraged (0 uses).
 New usage of "elbdop" is discouraged (4 uses).
@@ -15094,7 +15093,6 @@ New usage of "elpqn" is discouraged (24 uses).
 New usage of "elprnq" is discouraged (22 uses).
 New usage of "elpwgded" is discouraged (2 uses).
 New usage of "elpwgdedVD" is discouraged (1 uses).
-New usage of "elrabOLD" is discouraged (0 uses).
 New usage of "elreal" is discouraged (7 uses).
 New usage of "elreal2" is discouraged (3 uses).
 New usage of "elringchomALTV" is discouraged (1 uses).
@@ -16377,6 +16375,7 @@ New usage of "natded" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "nelne1OLD" is discouraged (0 uses).
 New usage of "nelne2OLD" is discouraged (0 uses).
+New usage of "nf5rOLD" is discouraged (0 uses).
 New usage of "nf5riOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
 New usage of "nfabd2OLD" is discouraged (0 uses).
@@ -18484,7 +18483,6 @@ Proof modification of "el12" is discouraged (19 steps).
 Proof modification of "el123" is discouraged (26 steps).
 Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
-Proof modification of "elabgOLD" is discouraged (13 steps).
 Proof modification of "eldifsnneqOLD" is discouraged (35 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
@@ -18502,7 +18500,6 @@ Proof modification of "eliminable3b" is discouraged (8 steps).
 Proof modification of "elissetOLD" is discouraged (19 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
-Proof modification of "elrabOLD" is discouraged (16 steps).
 Proof modification of "elrefsymrels3" is discouraged (65 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
@@ -18957,6 +18954,7 @@ Proof modification of "n2dvds3OLD" is discouraged (40 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nelne1OLD" is discouraged (26 steps).
 Proof modification of "nelne2OLD" is discouraged (26 steps).
+Proof modification of "nf5rOLD" is discouraged (22 steps).
 Proof modification of "nf5riOLD" is discouraged (13 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfabd2OLD" is discouraged (75 steps).
