@@ -280,6 +280,7 @@ New usage of "bj-omex2" is discouraged (0 uses).
 New usage of "bj-omssonALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
 New usage of "cnm" is discouraged (2 uses).
+New usage of "condcOLD" is discouraged (0 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-div" is discouraged (2 uses).
 New usage of "df-ilim" is discouraged (1 uses).
@@ -289,6 +290,7 @@ New usage of "df-iord" is discouraged (1 uses).
 New usage of "df-mnf" is discouraged (3 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-tru" is discouraged (1 uses).
+New usage of "dftest" is discouraged (0 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
 New usage of "djulclALT" is discouraged (0 uses).
@@ -325,7 +327,7 @@ New usage of "sbieh" is discouraged (7 uses).
 New usage of "spimeh" is discouraged (0 uses).
 New usage of "spimh" is discouraged (1 uses).
 New usage of "spimth" is discouraged (1 uses).
-New usage of "stabtestimpdcOLD" is discouraged (0 uses).
+New usage of "stdcndcOLD" is discouraged (0 uses).
 New usage of "stoic2a" is discouraged (0 uses).
 New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
@@ -368,7 +370,6 @@ Proof modification of "bj-bdfindes" is discouraged (121 steps).
 Proof modification of "bj-bdfindis" is discouraged (84 steps).
 Proof modification of "bj-bdfindisg" is discouraged (44 steps).
 Proof modification of "bj-d0clsepcl" is discouraged (111 steps).
-Proof modification of "bj-dcbi" is discouraged (31 steps).
 Proof modification of "bj-ex" is discouraged (31 steps).
 Proof modification of "bj-exlimmp" is discouraged (34 steps).
 Proof modification of "bj-exlimmpi" is discouraged (11 steps).
@@ -394,9 +395,6 @@ Proof modification of "bj-nnen2lp" is discouraged (52 steps).
 Proof modification of "bj-nnord" is discouraged (53 steps).
 Proof modification of "bj-nntrans" is discouraged (244 steps).
 Proof modification of "bj-nntrans2" is discouraged (24 steps).
-Proof modification of "bj-notbi" is discouraged (22 steps).
-Proof modification of "bj-notbid" is discouraged (14 steps).
-Proof modification of "bj-notbii" is discouraged (13 steps).
 Proof modification of "bj-nvel" is discouraged (11 steps).
 Proof modification of "bj-om" is discouraged (101 steps).
 Proof modification of "bj-omelon" is discouraged (10 steps).
@@ -425,6 +423,7 @@ Proof modification of "bj-vnex" is discouraged (14 steps).
 Proof modification of "bj-vprc" is discouraged (53 steps).
 Proof modification of "bj-zfpair2" is discouraged (80 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
+Proof modification of "condcOLD" is discouraged (39 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "djulclALT" is discouraged (53 steps).
@@ -448,7 +447,7 @@ Proof modification of "ruALT" is discouraged (35 steps).
 Proof modification of "sbc8g" is discouraged (55 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "speano5" is discouraged (50 steps).
-Proof modification of "stabtestimpdcOLD" is discouraged (62 steps).
+Proof modification of "stdcndcOLD" is discouraged (62 steps).
 Proof modification of "strcollnfALT" is discouraged (79 steps).
 Proof modification of "tfri1dALT" is discouraged (247 steps).
 Proof modification of "uzind4ALT" is discouraged (16 steps).

@@ -58,11 +58,7 @@ proposed  syl5eqner eqnetrrid   compare to eqnetrri or eqnetrrd
 proposed  syl5ss    sstrid      compare to sstri or sstrd
 proposed  syl5eqss  eqsstrid    compare to eqsstri or eqsstrd
 proposed  syl5eqssr eqsstrrid   compare to eqsstr3i or eqsstr3d
-proposed  eqsstr3i  eqsstrri
-proposed  eqsstr3d  eqsstrrd
 proposed  syl5sseq  sseqtrid    compare to sseqtri or sseqtrd
-proposed  syl5sseqr sseqtrrid
-proposed  wl-luk-syl5 wl-luk-imtrid
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
@@ -84,6 +80,8 @@ proposed  syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
 proposed  syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
 proposed  syl6ss    sstrdi      compare to sstri or sstrd
 proposed  syl6sseq  sseqtrdi    compare to sseqtri or sseqtrd
+proposed  sseqtr4i  sseqtrri
+proposed  sseqtr4d  sseqtrrd
 proposed  syl6sseqr sseqtrrdi
 proposed  syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
 proposed  syl6eqssr eqsstrrdi
@@ -91,12 +89,14 @@ proposed  syl6eqbr  eqbrtrdi    compare to eqbrtri or eqbrtrd
 proposed  syl6eqbrr eqbrtrrdi   compare to eqbrtrri or eqbrtrrd
 proposed  syl6breq  breqtrdi    compare to breqtri or breqtrd
 proposed  syl6breqr breqtrrdi   compare to breqtrri or breqtrrd
-proposed  wl-luk-syl6 wl-luk-imtrdi
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Nov-23 syl5sseqr sseqtrrid
+21-Nov-23 eqsstr3d  eqsstrrd
+21-Nov-23 eqsstr3i  eqsstrri
 18-Nov-23 fun11iun  f1iun       labeling consistent with fiun
 18-Nov-23 inex2ALTV inex2g      moved from PM's mathbox to main set.mm
 18-Nov-23 bj-rabbid rabbid      moved from BJ's mathbox to main set.mm
