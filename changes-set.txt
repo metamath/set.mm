@@ -93,6 +93,11 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+28-Nov-23 unitresl  [same]      moved from GM's mathbox to main set.mm
+28-Nov-23 unitresr  [same]      moved from GM's mathbox to main set.mm
+28-Nov-23 nel02     [same]      moved from PM's mathbox to main set.mm
+28-Nov-23 fvco3d    [same]      moved from SP's mathbox to main set.mm
+28-Nov-23 fzossz    [same]      moved from GS's mathbox to main set.mm
 26-Nov-23 syl5sseq  sseqtrid    compare to sseqtri or sseqtrd
 21-Nov-23 syl5sseqr sseqtrrid
 21-Nov-23 eqsstr3d  eqsstrrd
