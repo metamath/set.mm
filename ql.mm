@@ -1,4 +1,16 @@
-$( ql.mm - Version of 11-Apr-2012
+$( This is the Metamath database ql.mm. $)
+
+$( Metamath is a formal language and associated computer program for
+   archiving, verifying, and studying mathematical proofs, created by Norman
+   Dwight Megill (1950--2021).  For more information, visit
+   https://us.metamath.org and
+   https://github.com/metamath/set.mm, and feel free to ask questions at
+   https://groups.google.com/group/metamath. $)
+
+$( The database ql.mm was created by Norman Megill on 9-Aug-1997. $)
+
+
+$( !
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
     Metamath source file for logic, set theory, numbers, and Hilbert space
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -7,21 +19,24 @@ $( ql.mm - Version of 11-Apr-2012
 This work is waived of all rights, including copyright, according to the CC0
 Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
 
-Norman Megill - email: nm(at)alum(dot)mit(dot)edu - http://metamath.org
+Norman Megill
 
 $)
+
 
 $( placeholder
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-        AUQL - Algebraic Unified Quantum Logic of M. Pavicic
+        AUQL - Algebraic Unified Quantum Logic of Mladen Pavicic
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
         Ortholattices
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -101,7 +116,6 @@ $)
   $v z $.
 
   $v a0 a1 a2 b0 b1 b2 c0 c1 c2 p0 p1 p2 $.
-
 
   $(
      Specify some variables that we will use to represent terms.
@@ -194,7 +208,6 @@ $)
   $( If ` a ` and ` b ` are terms, ` a C b ` is a wff. $)
   wc $a wff a C b $.
 
-
   $( If ` a ` is a term, so is ` a ' ` . $)
   wn $a term a ' $.
   $( If ` a ` and ` b ` are terms, so is ` ( a == b ) ` . $)
@@ -277,7 +290,6 @@ $)
   df-b $a |- ( a == b ) =
            ( ( a ' ' v b ' ' ) ' v ( a ' v b ' ) ' ) $.
   $)
-
 
   ${
     r1.1 $e |- a = b $.
@@ -410,7 +422,6 @@ $)
     tr $p |- a = c $=
       ( ax-r2 ) ABCDEF $.
   $}
-
 
   ${
     3tr1.1 $e |- a = b $.
@@ -786,7 +797,7 @@ $)
     ZDZCZAEZSRCZSCZFZDZABFZAESUGDUBUACZSEZUFUAAGUITSEUFUHTSTUHTHIJRSKLLUGUAAUGB
     AFZUAABMZBANLJUGUESUGUJUEUKBUCAUDBHAHOLPQ $.
 
-  $( Lemma in proof of Th. 1 of Pavicic 1987.  (Contributed by NM,
+  $( Lemma in proof of Thm. 1 of Pavicic 1987.  (Contributed by NM,
      12-Aug-1997.) $)
   omlem1 $p |- ( ( a v ( a ' ^ ( a v b ) ) ) v ( a v b ) ) =
                ( a v b ) $=
@@ -794,7 +805,7 @@ $)
     AACZABDZEZDZADBDZRADZSDZTRDZRUDRTDUAUCTRFTABGZRASGHUEUCRRQEZDRUBRSUFUBAADZB
     DZRUHUBUHARDUBAABGARFIJUGABAKLIQRMNRQOIP $.
 
-  $( Lemma in proof of Th. 1 of Pavicic 1987.  (Contributed by NM,
+  $( Lemma in proof of Thm. 1 of Pavicic 1987.  (Contributed by NM,
      12-Aug-1997.) $)
   omlem2 $p |- ( ( a v b ) ' v ( a v ( a ' ^ ( a v b ) ) ) ) = 1 $=
     ( wo wn wa wt ax-a2 anor2 2or ax-a3 ax-r1 df-t 3tr1 ) ABCZDZACZADNEZCZAOCZS
@@ -807,7 +818,7 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Define 'less than or equal to' analogue.  (Contributed by NM,
+  $( Define "less than or equal to" analogue.  (Contributed by NM,
      27-Aug-1997.) $)
   df-le $a |- ( a =<2 b ) = ( ( a v b ) == b ) $.
 
@@ -815,39 +826,39 @@ $)
      to eliminate the middle = .  $)
   ${
     df-le1.1 $e |- ( a v b ) = b $.
-    $( Define 'less than or equal to'.  See ~ df-le2 for the other direction.
+    $( Define "less than or equal to".  See ~ df-le2 for the other direction.
        (Contributed by NM, 27-Aug-1997.) $)
     df-le1 $a |- a =< b $.
   $}
 
   ${
     df-le2.1 $e |- a =< b $.
-    $( Define 'less than or equal to'.  See ~ df-le1 for the other direction.
+    $( Define "less than or equal to".  See ~ df-le1 for the other direction.
        (Contributed by NM, 27-Aug-1997.) $)
     df-le2 $a |- ( a v b ) = b $.
   $}
 
   ${
     df-c1.1 $e |- a = ( ( a ^ b ) v ( a ^ b ' ) ) $.
-    $( Define 'commutes'.  See ~ df-c2 for the other direction.  (Contributed
+    $( Define "commutes".  See ~ df-c2 for the other direction.  (Contributed
        by NM, 27-Aug-1997.) $)
     df-c1 $a |- a C b $.
   $}
 
   ${
     df-c2.1 $e |- a C b $.
-    $( Define 'commutes'.  See ~ df-c1 for the other direction.  (Contributed
+    $( Define "commutes".  See ~ df-c1 for the other direction.  (Contributed
        by NM, 27-Aug-1997.) $)
     df-c2 $a |- a = ( ( a ^ b ) v ( a ^ b ' ) ) $.
   $}
 
-  $( Define 'commutator'.  (Contributed by NM, 24-Jan-1999.) $)
+  $( Define "commutator".  (Contributed by NM, 24-Jan-1999.) $)
   df-cmtr $a |- C ( a , b ) = ( ( ( a ^ b ) v ( a ^ b ' ) ) v
              ( ( a ' ^ b ) v ( a ' ^ b ' ) ) ) $.
 
   ${
     df2le1.1 $e |- ( a ^ b ) = a $.
-    $( Alternate definition of 'less than or equal to'.  (Contributed by NM,
+    $( Alternate definition of "less than or equal to".  (Contributed by NM,
        27-Aug-1997.) $)
     df2le1 $p |- a =< b $=
       ( leao df-le1 ) ABABACDE $.
@@ -855,7 +866,7 @@ $)
 
   ${
     df2le2.1 $e |- a =< b $.
-    $( Alternate definition of 'less than or equal to'.  (Contributed by NM,
+    $( Alternate definition of "less than or equal to".  (Contributed by NM,
        27-Aug-1997.) $)
     df2le2 $p |- ( a ^ b ) = a $=
       ( df-le2 leoa ) ABBABCDE $.
@@ -864,7 +875,8 @@ $)
   ${
     letr.1 $e |- a =< b $.
     letr.2 $e |- b =< c $.
-    $( Transitive law for l.e.  (Contributed by NM, 27-Aug-1997.) $)
+    $( Transitive law for "less than or equal to".  (Contributed by NM,
+       27-Aug-1997.) $)
     letr $p |- a =< c $=
       ( wa wo df-le2 ax-r5 ax-r1 ax-a3 3tr2 lan anabs ax-r2 df2le1 ) ACACFAABCG
       ZGZFACRAQABGZCGZCRTQSBCABDHIJBCEHABCKLMAQNOP $.
@@ -908,14 +920,15 @@ $)
 
   ${
     bile.1 $e |- a = b $.
-    $( Biconditional to l.e.  (Contributed by NM, 27-Aug-1997.) $)
+    $( Biconditional to "less than or equal to".  (Contributed by NM,
+       27-Aug-1997.) $)
     bile $p |- a =< b $=
       ( wo ax-r5 oridm ax-r2 df-le1 ) ABABDBBDBABBCEBFGH $.
   $}
 
   $( An ortholattice inequality, corresponding to a theorem provable in Hilbert
      space.  Part of Definition 2.1 p. 2092, in M. Pavicic and N. Megill,
-     "Quantum and Classical Implicational Algebras with Primitive Implication,"
+     "Quantum and Classical Implicational Algebras with Primitive Implication",
      _Int.  J. of Theor.  Phys_. 37, 2091-2098 (1998).  (Contributed by NM,
      3-Feb-2002.) $)
   qlhoml1a $p |- a =< a ' ' $=
@@ -929,20 +942,22 @@ $)
   ${
     lebi.1 $e |- a =< b $.
     lebi.2 $e |- b =< a $.
-    $( L.e. to biconditional.  (Contributed by NM, 27-Aug-1997.) $)
+    $( "Less than or equal to" to biconditional.  (Contributed by NM,
+       27-Aug-1997.) $)
     lebi $p |- a = b $=
       ( wo df-le2 ax-r1 ax-a2 ax-r2 ) AABEZBABAEZJKABADFGBAHIABCFI $.
   $}
 
-  $( Anything is l.e. 1.  (Contributed by NM, 30-Aug-1997.) $)
+  $( Anything is less than or equal to 1.  (Contributed by NM, 30-Aug-1997.) $)
   le1 $p |- a =< 1 $=
     ( wt or1 df-le1 ) ABACD $.
 
-  $( 0 is l.e. anything.  (Contributed by NM, 30-Aug-1997.) $)
+  $( 0 is less than or equal to anything.  (Contributed by NM, 30-Aug-1997.) $)
   le0 $p |- 0 =< a $=
     ( wf wo ax-a2 or0 ax-r2 df-le1 ) BABACABCABADAEFG $.
 
-  $( Identity law for less-than-or-equal.  (Contributed by NM, 24-Dec-1998.) $)
+  $( Identity law for "less than or equal to".  (Contributed by NM,
+     24-Dec-1998.) $)
   leid $p |- a =< a $=
     ( id bile ) AAABC $.
 
@@ -1200,8 +1215,8 @@ $(
         Weak "orthomodular law" in ortholattices.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-        All theorems here do not require R3 and
-        are true in all ortholattices.
+  All theorems here do not require R3 and are true in all ortholattices.
+
 $)
 
   $( Weak A1.  (Contributed by NM, 27-Sep-1997.) $)
@@ -1313,7 +1328,7 @@ $)
   ${
     wlem3.1.1 $e |- ( a v b ) = b $.
     wlem3.1.2 $e |- ( b ' v a ) = 1 $.
-    $( Weak analogue to lemma used in proof of Th. 3.1 of Pavicic 1993.
+    $( Weak analogue to lemma used in proof of Thm. 3.1 of Pavicic 1993.
        (Contributed by NM, 2-Sep-1997.) $)
     wlem3.1 $p |- ( a == b ) = 1 $=
       ( tb wn wo wt wa dfb leoa oran ax-r1 ax-r2 con3 2or ax-a2 ) ABEZBFZAGZHRA
@@ -1350,7 +1365,6 @@ $)
       ( wo wn wa df-c2 oran ax-a2 anor2 ax-r1 con3 2an ax-r4 3tr1 ax-r2 con1 )
       AABDZABEZDZFZAEZUBBFZUBSFZDZUAEZUBBCGUDUCDUDEZUCEZFZEUEUFUDUCHUCUDIUAUIRU
       GTUHABHTUCUCTEABJKLMNOPQ $.
-
   $}
 
   ${
@@ -1392,7 +1406,6 @@ $)
       BKZABAVTAUFZRDUGSBVBUHONOOVBBUOVCQOVIVGVDVIVBVTCFZGVGUOWBVBAVTCWAUIPVBCCK
       AEUJSONOVBCVDTOVFVBLGLVELVBBCVCGGZURVCGZVELWDWCBCVCTRCBVCUKURUAULPVBUMOOU
       NO $.
-
   $}
 
   ${
@@ -1919,7 +1932,6 @@ $)
       EUDUAUDUBUC $.
   $}
 
-
   ${
     wql1.1 $e |- ( a ->1 b ) = 1 $.
     wql1.2 $e |- ( ( a v c ) ->1 ( b v c ) ) = 1 $.
@@ -1940,7 +1952,6 @@ $)
       wt ) AEZBCFZGTBEZBCHZGZGZSUAUDTBCIJTUBGZUCGABHZEZUCGUESUFUHUCABKLTUBUCMUG
       UCUGBCABNDOPQR $.
   $}
-
 
   ${
     womle2a.1 $e |- ( a ^ ( a ->2 b ) ) =<
@@ -2288,28 +2299,28 @@ $)
     ( wo tb wn wa wle2 wi2 mi df-le df-i2 3tr1 ) ABCBDBAEBEFCABGABHABIABJABKL
     $.
 
-  $( Relevance implication is l.e.  Sasaki implication.  (Contributed by NM,
-     26-Jun-2003.) $)
+  $( Relevance implication is less than or equal to Sasaki implication.
+     (Contributed by NM, 26-Jun-2003.) $)
   i5lei1 $p |- ( a ->5 b ) =< ( a ->1 b ) $=
     ( wa wn wi5 wi1 ax-a3 ax-a2 ax-r2 lea lel2or leror bltr df-i5 df-i1 le3tr1
     wo ) ABCZADZBCZQSBDZCZQZSRQZABEABFUCTUBQZRQZUDUCRUEQUFRTUBGRUEHIUESRTSUBSBJ
     SUAJKLMABNABOP $.
 
-  $( Relevance implication is l.e.  Dishkant implication.  (Contributed by NM,
-     26-Jun-2003.) $)
+  $( Relevance implication is less than or equal to Dishkant implication.
+     (Contributed by NM, 26-Jun-2003.) $)
   i5lei2 $p |- ( a ->5 b ) =< ( a ->2 b ) $=
     ( wa wn wo wi5 wi2 lear lel2or leror df-i5 df-i2 le3tr1 ) ABCZADZBCZEZOBDCZ
     EBREABFABGQBRNBPABHOBHIJABKABLM $.
 
-  $( Relevance implication is l.e.  Kalmbach implication.  (Contributed by NM,
-     26-Jun-2003.) $)
+  $( Relevance implication is less than or equal to Kalmbach implication.
+     (Contributed by NM, 26-Jun-2003.) $)
   i5lei3 $p |- ( a ->5 b ) =< ( a ->3 b ) $=
     ( wa wn wo wi5 wi3 leor lelan leror df-i5 ax-a3 ax-r2 df-i3 ax-a2 le3tr1 )
     ABCZADZBCZRBDCZEZEZARBEZCZUAEZABFZABGZQUDUABUCABRHIJUFQSETEUBABKQSTLMUGUAUD
     EUEABNUAUDOMP $.
 
-  $( Relevance implication is l.e. non-tollens implication.  (Contributed by
-     NM, 26-Jun-2003.) $)
+  $( Relevance implication is less than or equal to non-tollens implication.
+     (Contributed by NM, 26-Jun-2003.) $)
   i5lei4 $p |- ( a ->5 b ) =< ( a ->4 b ) $=
     ( wa wn wo wi5 wi4 leo leran lelor df-i5 df-i4 le3tr1 ) ABCADZBCEZNBDZCZEON
     BEZPCZEABFABGQSONRPNBHIJABKABLM $.
@@ -2609,7 +2620,7 @@ $)
 
   ${
     wdf-le1.1 $e |- ( ( a v b ) == b ) = 1 $.
-    $( Define 'less than or equal to' analogue for ` == ` analogue of ` = ` .
+    $( Define "less than or equal to" analogue for ` == ` analogue of ` = ` .
        (Contributed by NM, 27-Sep-1997.) $)
     wdf-le1 $p |- ( a =<2 b ) = 1 $=
       ( wle2 wo tb wt df-le ax-r2 ) ABDABEBFGABHCI $.
@@ -2617,7 +2628,7 @@ $)
 
   ${
     wdf-le2.1 $e |- ( a =<2 b ) = 1 $.
-    $( Define 'less than or equal to' analogue for ` == ` analogue of ` = ` .
+    $( Define "less than or equal to" analogue for ` == ` analogue of ` = ` .
        (Contributed by NM, 27-Sep-1997.) $)
     wdf-le2 $p |- ( ( a v b ) == b ) = 1 $=
       ( wo tb wle2 wt df-le ax-r1 ax-r2 ) ABDBEZABFZGLKABHICJ $.
@@ -2682,7 +2693,7 @@ $)
 
   ${
     wdf2le1.1 $e |- ( ( a ^ b ) == a ) = 1 $.
-    $( Alternate definition of 'less than or equal to'.  (Contributed by NM,
+    $( Alternate definition of "less than or equal to".  (Contributed by NM,
        27-Sep-1997.) $)
     wdf2le1 $p |- ( a =<2 b ) = 1 $=
       ( wleao wdf-le1 ) ABABACDE $.
@@ -2690,7 +2701,7 @@ $)
 
   ${
     wdf2le2.1 $e |- ( a =<2 b ) = 1 $.
-    $( Alternate definition of 'less than or equal to'.  (Contributed by NM,
+    $( Alternate definition of "less than or equal to".  (Contributed by NM,
        27-Sep-1997.) $)
     wdf2le2 $p |- ( ( a ^ b ) == a ) = 1 $=
       ( wdf-le2 wleoa ) ABBABCDE $.
@@ -2704,11 +2715,11 @@ $)
   wlea $p |- ( ( a ^ b ) =<2 a ) = 1 $=
     ( wa wo wa2 wa5b wr2 wdf-le1 ) ABCZAIADAIDAIAEABFGH $.
 
-  $( Anything is l.e. 1.  (Contributed by NM, 27-Sep-1997.) $)
+  $( Anything is less than or equal to 1.  (Contributed by NM, 27-Sep-1997.) $)
   wle1 $p |- ( a =<2 1 ) = 1 $=
     ( wt wo or1 bi1 wdf-le1 ) ABABCBADEF $.
 
-  $( 0 is l.e. anything.  (Contributed by NM, 11-Oct-1997.) $)
+  $( 0 is less than or equal to anything.  (Contributed by NM, 11-Oct-1997.) $)
   wle0 $p |- ( 0 =<2 a ) = 1 $=
     ( wf wle2 wo tb wt df-le ax-a2 or0 ax-r2 bi1 ) BACBADZAEFBAGLALABDABAHAIJKJ
     $.
@@ -2741,7 +2752,6 @@ $)
     wlecon $p |- ( b ' =<2 a ' ) = 1 $=
       ( wn wa wo ax-a2 bi1 oran wdf-le2 w3tr2 wcon3 wdf2le1 ) BDZADZNOEZBBAFZAB
       FZPDZBQRBAGHQSBAIHABCJKLM $.
-
   $}
 
   ${
@@ -2988,7 +2998,7 @@ $)
       IJUKBUJHZGZHZUOUKUSBUJKLURUCUQUBBUBUQUBUQACMLNOPQUNULHZUMHZFZHZUPUNVCULUM
       RLVBUFUFVBUDUTUEVAUDUTBARLUEVABCRLSNPQTUA $.
 
-    $( Th. 4.2 Beran p. 49.  (Contributed by NM, 10-Nov-1998.) $)
+    $( Thm. 4.2 Beran p. 49.  (Contributed by NM, 10-Nov-1998.) $)
     wcom2or $p |- C ( a , ( b v c ) ) = 1 $=
       ( wo wa wn wcomcom wdf-c2 ancom 2or bi1 wr2 w2or or4 wfh1 wcomcom3 wdf-c1
       wr1 ) BCFZAUAAUAABGZACGZFZAHZBGZUECGZFZFZUAAGZUAUEGZFZUAUBUFFZUCUGFZFZUIB
@@ -2996,11 +3006,10 @@ $)
       USUCUTUGCAKCUEKLMNOUOUIUBUFUCUGPMNULUIUJUDUKUHUJAUAGZUDUJVBUAAKMABCDEQNUK
       UEUAGZUHUKVCUAUEKMUEBCABDRACERQNOTNSI $.
 
-    $( Th. 4.2 Beran p. 49.  (Contributed by NM, 10-Nov-1998.) $)
+    $( Thm. 4.2 Beran p. 49.  (Contributed by NM, 10-Nov-1998.) $)
     wcom2an $p |- C ( a , ( b ^ c ) ) = 1 $=
       ( wa wn wo wcomcom4 wcom2or df-a con2 ax-r1 bi1 wcbtr wcomcom5 ) ABCFZAGZ
       BGZCGZHZQGZRSTABDIACEIJUAUBUBUAQUABCKLMNOP $.
-
   $}
 
   $( Negated biconditional (distributive form) (Contributed by NM,
@@ -3138,6 +3147,7 @@ $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Orthomodular law
@@ -3179,18 +3189,18 @@ $)
   ${
     lem3.1.1 $e |- ( a v b ) = b $.
     lem3.1.2 $e |- ( b ' v a ) = 1 $.
-    $( Lemma used in proof of Th. 3.1 of Pavicic 1993.  (Contributed by NM,
+    $( Lemma used in proof of Thm. 3.1 of Pavicic 1993.  (Contributed by NM,
        12-Aug-1997.) $)
     lem3.1 $p |- a = b $=
       ( tb wt wlem3.1 ax-r1 r3a ) ABABEFABCDGHI $.
 
-    $( Lemma used in proof of Th. 3.1 of Pavicic 1993.  (Contributed by NM,
+    $( Lemma used in proof of Thm. 3.1 of Pavicic 1993.  (Contributed by NM,
        12-Aug-1997.) $)
     lem3a.1 $p |- ( a v b ) = a $=
       ( wo lem3.1 ax-r1 lor oridm ax-r2 ) ABEAAEABAAABABCDFGHAIJ $.
   $}
 
-  $( Orthomodular law.  Compare Th. 1 of Pavicic 1987.  (Contributed by NM,
+  $( Orthomodular law.  Compare Thm. 1 of Pavicic 1987.  (Contributed by NM,
      12-Aug-1997.) $)
   oml $p |- ( a v ( a ' ^ ( a v b ) ) ) = ( a v b ) $=
     ( wn wo wa omlem1 omlem2 lem3.1 ) AACABDZEDIABFABGH $.
@@ -3443,18 +3453,17 @@ $)
       ( wa wo fh4r ancom ax-r5 3tr1 ) ACFZBGABGZCBGZFCAFZBGNMFABCDEHOLBCAIJNMIK
       $.
 
-    $( Th. 4.2 Beran p. 49.  (Contributed by NM, 7-Nov-1997.) $)
+    $( Thm. 4.2 Beran p. 49.  (Contributed by NM, 7-Nov-1997.) $)
     com2or $p |- a C ( b v c ) $=
       ( wo wa wn comcom df-c2 ancom 2or ax-r2 or4 fh1 comcom3 ax-r1 df-c1 ) BCF
       ZASASABGZACGZFZAHZBGZUCCGZFZFZSAGZSUCGZFZSTUDFZUAUEFZFUGBUKCULBBAGZBUCGZF
       UKBAABDIJUMTUNUDBAKBUCKLMCCAGZCUCGZFULCAACEIJUOUAUPUECAKCUCKLMLTUDUAUENMU
       JUGUHUBUIUFUHASGUBSAKABCDEOMUIUCSGUFSUCKUCBCABDPACEPOMLQMRI $.
 
-    $( Th. 4.2 Beran p. 49.  (Contributed by NM, 7-Nov-1997.) $)
+    $( Thm. 4.2 Beran p. 49.  (Contributed by NM, 7-Nov-1997.) $)
     com2an $p |- a C ( b ^ c ) $=
       ( wa wn wo comcom4 com2or df-a con2 ax-r1 cbtr comcom5 ) ABCFZAGZBGZCGZHZ
       PGZQRSABDIACEIJUATPTBCKLMNO $.
-
   $}
 
   $( Commutation theorem for Sasaki implication.  (Contributed by NM,
@@ -3488,7 +3497,7 @@ $)
     gsth.1 $e |- a C b $.
     gsth.2 $e |- b C c $.
     gsth.3 $e |- a C ( b ^ c ) $.
-    $( Gudder-Schelp's Theorem.  Beran, p. 262, Th. 4.1.  (Contributed by NM,
+    $( Gudder-Schelp's Theorem.  Beran, p. 262, Thm. 4.1.  (Contributed by NM,
        20-Sep-1998.) $)
     gsth $p |- ( a ^ b ) C c $=
       ( wa wo wn comcom fh4rc comcom2 lan fh1r ran lea ancom wf ax-r1 3tr lecom
@@ -3505,7 +3514,7 @@ $)
   ${
     gsth2.1 $e |- b C c $.
     gsth2.2 $e |- a C ( b ^ c ) $.
-    $( Stronger version of Gudder-Schelp's Theorem.  Beran, p. 263, Th. 4.2.
+    $( Stronger version of Gudder-Schelp's Theorem.  Beran, p. 263, Thm. 4.2.
        (Contributed by NM, 20-Sep-1998.) $)
     gsth2 $p |- ( a ^ b ) C c $=
       ( wa wn comcom ancom ax-a2 ran ax-r2 comor2 comcom7 comcom2 coman1 com2or
@@ -3769,7 +3778,8 @@ $)
 
   ${
     binr1.1 $e |- ( a ->3 b ) = 1 $.
-    $( Pavicic binary logic ax-r1 analog.  (Contributed by NM, 7-Nov-1997.) $)
+    $( Pavicic binary logic ~ ax-r1 analog.  (Contributed by NM,
+       7-Nov-1997.) $)
     binr1 $p |- ( b ' ->3 a ' ) = 1 $=
       ( wn i3le lecon lei3 ) BDADABABCEFG $.
   $}
@@ -3777,7 +3787,8 @@ $)
   ${
     binr2.1 $e |- ( a ->3 b ) = 1 $.
     binr2.2 $e |- ( b ->3 c ) = 1 $.
-    $( Pavicic binary logic ax-r2 analog.  (Contributed by NM, 7-Nov-1997.) $)
+    $( Pavicic binary logic ~ ax-r2 analog.  (Contributed by NM,
+       7-Nov-1997.) $)
     binr2 $p |- ( a ->3 c ) = 1 $=
       ( i3le letr lei3 ) ACABCABDFBCEFGH $.
   $}
@@ -3785,7 +3796,8 @@ $)
   ${
     binr3.1 $e |- ( a ->3 c ) = 1 $.
     binr3.2 $e |- ( b ->3 c ) = 1 $.
-    $( Pavicic binary logic axr3 analog.  (Contributed by NM, 7-Nov-1997.) $)
+    $( Pavicic binary logic ~ ax-r3 analog.  (Contributed by NM,
+       7-Nov-1997.) $)
     binr3 $p |- ( ( a v b ) ->3 c ) = 1 $=
       ( wo i3le le2or oridm lbtr lei3 ) ABFZCLCCFCACBCACDGBCEGHCIJK $.
   $}
@@ -5254,7 +5266,6 @@ $)
     u5lemc2 $p |- a C ( b ->5 c ) $=
       ( wa wn wo wi5 com2an comcom2 com2or df-i5 ax-r1 cbtr ) ABCFZBGZCFZHZQCGZ
       FZHZBCIZASUAAPRABCDEJAQCABDKZEJLAQTUDACEKJLUCUBBCMNO $.
-
   $}
 
   ${
@@ -5349,7 +5360,6 @@ $)
       ax-r5 comcom3 comcom4 fh4 ax-a2 2an ) ABDABEAFZBEGZUEBFZEZGZUEBGZABHUIBUH
       GZUJUFBUHUFAUEGZBEZBUMUFABUECAAAIJKLUMBULEZBULBMUNBNEBULNBNULAOLPBQRRRSUK
       BUEGZBUGGZEZUJUEBUGABCTABCUAUBUQUJNEUJUOUJUPNBUEUCNUPBOLUDUJQRRRR $.
-
   $}
 
   $( Commutation theorem for Sasaki implication.  (Contributed by NM,
@@ -5405,7 +5415,6 @@ $)
     $( L.e. to relevance implication.  (Contributed by NM, 11-Jan-1998.) $)
     u5lemle1 $p |- ( a ->5 b ) = 1 $=
       ( wi5 wn wo wt lecom u5lemc4 sklem ax-r2 ) ABDAEBFGABABCHIABCJK $.
-
   $}
 
   ${
@@ -5580,6 +5589,7 @@ $)
       LQHR $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         More lemmas for unified implication
@@ -5602,7 +5612,6 @@ $)
   u5lem0 $p |- ( b ' ->5 a ' ) = ( a ->5 b ) $=
 ?$.
   $)
-
 
   $( Lemma for unified implication study.  (Contributed by NM, 14-Dec-1997.) $)
   u1lem1 $p |- ( ( a ->1 b ) ->1 a ) = a $=
@@ -6118,7 +6127,6 @@ $)
     VMWAVIVQVLVTVHVPABQOVLVBEZVCEZLZVTVBVCQVTWDVRWBVSWCVRCVNMWBVNCRCATKVSCVOMWC
     VOCRCBTKUFPKUGPKVLVDVIVLVDVCVBDZMZVDWFVLVBVCNPVDWEUHSUISUJUKKK $.
 
-
   $( Possible axiom for Kalmbach implication system.  (Contributed by NM,
      23-Jan-1998.) $)
   u3lemax5 $p |- ( ( a ->3 b ) ->3 ( ( a ->3 b )
@@ -6251,7 +6259,6 @@ $)
     NBCLUBACBKMNUSUTUMFZUMCUIBULOVAUEUMFZUMUTUEUMCBLUCVBBUIFZCULFZFUMBCUIULOVCU
     IVDULBUIBUDUHBBAEZBEZGZFZUDBVGPUDVHABQISBBCEZVFGZFZUHBVJPUHVKCBQISRTCULCUJU
     KCCVEVIGZFZUJCVLPUJVMACQISCCVFVIGZFZUKCVNPUKVOBCQISRTNMMMMMM $.
-
 
   $( A 3-variable theorem.  (Contributed by NM, 18-Oct-1998.) $)
   3vth7 $p |- ( ( a ->2 b ) ' ->2 ( b v c ) ) =
@@ -6491,7 +6498,6 @@ $)
       OPREZHRTOUAOSIDJABCKLOQMN $.
   $}
 
-
   ${
     3vroa.1 $e |- ( ( a ->2 b ) ^
               ( ( b v c ) ->0 ( ( a ->2 b ) ^ ( a ->2 c ) ) ) ) = 1 $.
@@ -6516,7 +6522,6 @@ $)
     DDZWAABVEJABVEUHWBBADVEDZWAWCWBBAVEJKBABCUINLWAVLVMVTVLOVLVHUJPMQMVJVHVDVFD
     ZDZVMVHVDVFJWEVHVMVHWDUKVHVLTPMQVPVCVIFZVFDVKVNWFVOVFABULBCRUMVIVFVCVIVFVIV
     DVFVHVDOVDVETPUOVIVCVIVHVDFVCEVIVHVDVHVDUNVHVDUPUQABURUSUTVANACRVB $.
-
 
   $( Mladen's OML. (Contributed by NM, 4-Nov-1998.) $)
   mlaoml $p |- ( ( a == b ) ^ ( b == c ) ) =< ( a == c ) $=
@@ -6554,7 +6559,6 @@ $)
       BUTCUQCTLUK $.
   $}
 
-
 $(
 lattice (((-xIy)vy)Iy)=(x2y)
 lattice "((xIw)v(yIw))<((((-xIw)^(-yIw))Iw)vw)"
@@ -6572,7 +6576,6 @@ $)
     wa 3tr 2or df-i2 3tr1 ) ACZBDBEZCZUCBQZEZBUBBCQZEZUCBDABFUFUGBEUHUDUGUEBUDU
     BCZBEZCZUGUCUJUBBGZHUGUKUBBIJKUEUJBQZBBUIEZQZBUCUJBULLUMUNBQUOUJUNBUIBMLUNB
     NKBUIORSUGBMKUCBPABTUA $.
-
 
   $( Weak DeMorgan's law for attempt at Sasaki algebra.  (Contributed by NM,
      4-Jan-1999.) $)
@@ -6706,7 +6709,6 @@ $)
       QABVTXHXOYKWNKZJZXQWJCVTXQUUKXPUUJXOXMYKWNYLOWAQMULABCWEUNABCWBWCWDWCWD
       $.
   $}
-
 
   $( For 5GO proof of Mladen's conjecture.  (Contributed by NM,
      20-Jan-2002.) $)
@@ -7649,12 +7651,12 @@ $)
       WAVFUHWIVFUILVFUJFVFVGVH $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
    OML Lemmas for studying orthoarguesian laws
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
-
 
   ${
     oas.1 $e |- ( a ' ^ ( a v b ) ) =< c $.
@@ -7834,7 +7836,6 @@ $)
       DGIZUAGPSQTABCDEFKABCDEFLMUAUBNO $.
   $}
 
-
   ${
     $( Substitutions into OA distributive law. $)
     distoa.1 $e |- d = ( a ->2 b ) $.
@@ -7864,7 +7865,6 @@ $)
       AUCNDSTGOFUBUAJUDIUBUAPQR $.
 
     ${
-
       $( OA distributive law as hypothesis. $)
       distoa.4 $e |- ( d ^ ( e v f ) ) = ( ( d ^ e ) v ( d ^ f ) ) $.
       $( Derivation in OM of OA, assuming OA distributive law ~ oadistd .
@@ -7879,7 +7879,6 @@ $)
         MUOUGVAUMUOUEUMUOUHTUITUNUJUK $.
     $}
   $}
-
 
   ${
     oa3to4lem.1 $e |- a ' =< b $.
@@ -8106,7 +8105,6 @@ $)
       BDGZHZCDGZHDEQDRODPADIBDIJCDIJK $.
   $}
 
-
   ${
     oa4to6lem.1 $e |- a ' =< b $.
     oa4to6lem.2 $e |- c ' =< d $.
@@ -8203,7 +8201,6 @@ $)
       QWKIUNGURPNUDZUEUFVGWCVJWFVDVTVFWBHULJUPOQUEUSVOVEWAWKJUPGURQNUDZUEUFVHWD
       VIWEIUNJUPPQUEVAVQVEWAWLWMUEUFUEUFUEUFUENUGUHUI $.
   $}
-
 
   ${
     oa4btoc.1 $e |- ( ( a ->1 g ) ^ ( a v ( c ^ ( (
@@ -8501,7 +8498,6 @@ $(
    Some 3-OA inferences (derived under OM)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
-
 
   $( Lemma for 3-OA(2).  Equivalence with substitution into 4-OA. (Contributed
      by NM, 24-Dec-1998.) $)
@@ -9056,7 +9052,6 @@ $)
     VBVBUBUCUDUEUFRABCUGUHUOVEVCVJABUIUTVFVBVIVFUTBCUJPUMVGVAVHABTACTZSUKSWAUL
     $.
 
-
   ${
     oadist.1 $e |- d =< ( ( b v c ) ->0 ( ( a ->2 b ) ^ ( a ->2 c ) ) ) $.
     $( Distributive law derived from OAL. (Contributed by NM, 20-Nov-1998.) $)
@@ -9170,7 +9165,6 @@ $)
     ( wi2 wn wo wa ud2lem0c lea bltr ax-oal4 id oa4v3v oal42 oa23 ) ABCACBACBAC
     DEZABDEZPCEZACFZGRACHRSIJZQBEZABFZGUAABHUAUBIJZPCQBTUCKPLQLMNO $.
 
-
   ${
     oa3moa3.1 $e |- a =< b ' $.
     oa3moa3.2 $e |- c =< d ' $.
@@ -9195,6 +9189,7 @@ $)
       KXMXKBVDVPULUNVEVKVOUOUPPUHUM $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
          6-variable orthoarguesian law
@@ -9212,7 +9207,6 @@ $)
    ( ( ( a v e ) ^ ( b v f ) ) v ( ( c v e ) ^ ( d v f ) ) ) ) ) ) ) $.
   $}
 
-
   ${
     oa64v.1 $e |- a =< b ' $.
     oa64v.2 $e |- c =< d ' $.
@@ -9222,7 +9216,6 @@ $)
                    ( ( a v c ) ^ ( b v d ) ) ) ) ) $=
       ( wf wt wn le0 ax-oa6 id oa6v4v ) ABCDGHABCDGHEFHIJKGLHLM $.
   $}
-
 
   $( Derivation of 3-variable OA from 6-variable OA. (Contributed by NM,
      28-Nov-1998.) $)
@@ -9359,8 +9352,8 @@ $)
         UCLUHTUGTVEVDVAUSVDUJVDVAVCQZVAVDVDIQZVMVNVDVDIOUESGVCIUKTVAVCULUMUNUMV
         AUTUOUNGHIUPUQ $.
     $}
-
   $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -9368,25 +9361,40 @@ $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         New state-related equation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( New equation that holds in Hilbert space, discovered by Pavicic and Megill
-     (unpublished).
+  $( This is the simplest known example of an equation implied by the set of
+     Mayet--Godowski equations that is independent from all Godowski equations.
+     It was discovered by Norman Megill and Mladen Pavicic between 1997 and
+     August 2003.  This is Equation (54) in
 
-     [Editor's note:  The date this was added is unknown within the range
-     1997 to 9-Aug-2003.]  (Contributed by NM, 1-Jan-1998.) $)
+     Mladen Pavicic, Norman D. Megill, _Quantum Logic and Quantum Computation_,
+     in _Handbook of Quantum Logic and Quantum Structures_, Volume _Quantum
+     Structures_, Elsevier, Amsterdam, 2007, pp. 751--787.
+     ~ https://arxiv.org/abs/0812.3072
+
+     and Equation (15) in
+
+     Mladen Pavicic, Brendan D. McKay, Norman D. Megill, Kresimir Fresl, _Graph
+     Approach to Quantum Systems_, Journal of Mathematical Physics, Volume 51,
+     Issue 10, October 2010. ~ https://arxiv.org/abs/1004.0776
+
+     (Contributed by NM, 1-Jan-1998.) $)
   ax-newstateeq $a |- ( ( ( a ->1 b ) ->1 ( c ->1 b ) ) ^
                     ( ( a ->1 c ) ^ ( b ->1 a ) ) ) =< ( c ->1 a ) $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
         Contributions of Roy Longton
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -10059,7 +10067,6 @@ $)
       BAAAUCUDUKBCUEUFUGUHUNUMABUIKUJ $.
   $}
 
-
 $( $t
 
 /* The '$t' token indicates the beginning of the typesetting definition
@@ -10092,11 +10099,9 @@ htmlbibliography "mmql.html";
 /* Variable color key */
 htmlvarcolor '<FONT COLOR="#CC4400">term</FONT>';
 
-
 /* GIF and Symbol Font HTML directories */
 htmldir "../qlegif/";
 althtmldir "../qleuni/";
-
 
 /* Symbol definitions */
 htmldef "a" as "<IMG SRC='_ba.gif' WIDTH=9 HEIGHT=19 ALT='a' ALIGN=TOP>";
@@ -10194,7 +10199,6 @@ htmldef "=<u" as '<FONT FACE="Symbol"> &#163;</FONT ><I><SUB>u</SUB> </I>';
 htmldef "=" as '<FONT FACE="Symbol"> = </FONT>';
 */
 
-
 /* Definitions for Unicode version */
 althtmldef "a" as '<I><FONT COLOR="#CC4400">a</FONT></I>';
 althtmldef "b" as '<I><FONT COLOR="#CC4400">b</FONT></I>';
@@ -10290,7 +10294,6 @@ althtmldef "=" as ' = ';
 */
 /* End of Unicode defintions */
 
-
 latexdef "a" as "a";
 latexdef "b" as "b";
 latexdef "c" as "c";
@@ -10372,6 +10375,7 @@ $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         WDOL law
@@ -10409,7 +10413,6 @@ $)
   wddi1 $p |- ( ( a ^ ( b v c ) ) == ( ( a ^ b ) v ( a ^ c ) ) ) = 1 $=
     ( wdcom wfh1 ) ABCABDACDE $.
 
-
   $( The weak distributive law in WDOL. (Contributed by NM, 5-Mar-2006.) $)
   wddi2 $p |- ( ( ( a v b ) ^ c ) == ( ( a ^ c ) v ( b ^ c ) ) ) = 1 $=
     ( wo wa wancom wddi1 w2or wr2 ) ABDZCECJEZACEZBCEZDZJCFKCAEZCBEZDNCABGOLPMC
@@ -10425,7 +10428,6 @@ $)
              ( ( a v c ) ^ ( b v c ) ) ) = 1 $=
     ( wa wo wa2 wddi3 w2an wr2 ) ABDZCECJEZACEZBCEZDZJCFKCAEZCBEZDNCABGOLPMCAFC
     BFHII $.
-
 
   ${
     wdid0id5.1 $e |- ( a ==0 b ) = 1 $.
@@ -10533,7 +10535,6 @@ $)
     mli $p |- ( ( a ^ b ) v c ) = ( a ^ ( b v c ) ) $=
       ( wa wo ancom ror orcom ml2i 3tr ran ) ABEZCFZCBFZAEZBCFZAEAQENBAEZCFCRFP
       MRCABGHRCIABCDJKOQACBILQAGK $.
-
   $}
 
   ${
@@ -10562,7 +10563,6 @@ $)
      1-Apr-2012.) $)
   ml3 $p |- ( a v ( b ^ ( c v a ) ) ) = ( a v ( c ^ ( b v a ) ) ) $=
     ( wo wa ml3le lebi ) ABCADEDACBADEDABCFACBFG $.
-
 
   $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by NM,
      15-Mar-2010.)  (Revised by NM, 31-Mar-2011.) $)
@@ -11238,7 +11238,6 @@ $)
       UDBUBRST $.
   $}
 
-
   ${
     xdp41.c0 $e |- c0 = ( ( a1 v a2 ) ^ ( b1 v b2 ) ) $.
     xdp41.c1 $e |- c1 = ( ( a0 v a2 ) ^ ( b0 v b2 ) ) $.
@@ -11334,7 +11333,6 @@ $)
       VJVGVEUCUETWNWLVPQZVQWNEVOWLQZRVPWLQYEWMYFEWMWLVOQYFWLFVNVKWLVOUIUCUDWLVO
       EBEUQUJVPWLUIVEWLBVPBEUHVLUGUOVFTVAUO $.
   $}
-
 
   ${
     xxdp.1 $e |- p2 =< ( a2 v b2 ) $.
@@ -11588,7 +11586,6 @@ $)
       IUOUIUJYFXIGDGVDUQXJYFUOVLYFDXJDGUNVHUMVBWPUPWDVB $.
   $}
 
-
   ${
     xxxdp.c0 $e |- c0 = ( ( a1 v a2 ) ^ ( b1 v b2 ) ) $.
     xxxdp.c1 $e |- c1 = ( ( a0 v a2 ) ^ ( b0 v b2 ) ) $.
@@ -11726,7 +11723,6 @@ $)
       GDGVCUPXIYEUNVKYEDXIDGUMVGULVAWOUOWCVA $.
   $}
 
-
   ${
     3dp.c0 $e |- c0 = ( ( a1 v a1 ) ^ ( b1 v b1 ) ) $.
     3dp.c1 $e |- c1 = ( ( a0 v a1 ) ^ ( b0 v b1 ) ) $.
@@ -11808,7 +11804,6 @@ $)
       XFFDFVAUNXGYBULVIYBDXGDFUKVEUJUSWMUMWAUS $.
   $}
 
-
   ${
     oadp35lem.1 $e |- c0 = ( ( a1 v a2 ) ^ ( b1 v b2 ) ) $.
     oadp35lem.2 $e |- c1 = ( ( a0 v a2 ) ^ ( b0 v b2 ) ) $.
@@ -11881,7 +11876,6 @@ $(
       ? $.
 $)
   $}
-
 
   ${
     oadp35.1 $e |- c0 = ( ( a1 v a2 ) ^ ( b1 v b2 ) ) $.

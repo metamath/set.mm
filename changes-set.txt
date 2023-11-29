@@ -15,7 +15,7 @@ The ones WITH "Notes" may have to be processed manually.
 PROPOSED:
 Date      Old       New         Notes
 proposed  syl       imtri       (analogous to *bitr*, sstri, etc.)
-                                there is less agreemnt on renaming syl
+                                there is less agreement on renaming syl
                                 than others here
 proposed  syld      imtrd
 proposed  syldc     imtrdcom
@@ -58,15 +58,6 @@ proposed  syl5eqner eqnetrrid   compare to eqnetrri or eqnetrrd
 proposed  syl5ss    sstrid      compare to sstri or sstrd
 proposed  syl5eqss  eqsstrid    compare to eqsstri or eqsstrd
 proposed  syl5eqssr eqsstrrid   compare to eqsstr3i or eqsstr3d
-proposed  eqsstr3i  eqsstrri
-proposed  eqsstr3d  eqsstrrd
-proposed  syl5sseq  sseqtrid    compare to sseqtri or sseqtrd
-proposed  syl5sseqr sseqtrrid
-proposed  syl5eqbr  eqbrtrid    compare to eqbrtri or eqbrtrd
-proposed  syl5eqbrr eqbrtrrid   compare to eqbrtrri or eqbrtrrd
-proposed  syl5breq  breqtrid    compare to breqtri or breqtrd
-proposed  syl5breqr breqtrrid   compare to breqtrri or breqtrrd
-proposed  wl-luk-syl5 wl-luk-imtrid
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
@@ -88,6 +79,8 @@ proposed  syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
 proposed  syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
 proposed  syl6ss    sstrdi      compare to sstri or sstrd
 proposed  syl6sseq  sseqtrdi    compare to sseqtri or sseqtrd
+proposed  sseqtr4i  sseqtrri
+proposed  sseqtr4d  sseqtrrd
 proposed  syl6sseqr sseqtrrdi
 proposed  syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
 proposed  syl6eqssr eqsstrrdi
@@ -95,12 +88,29 @@ proposed  syl6eqbr  eqbrtrdi    compare to eqbrtri or eqbrtrd
 proposed  syl6eqbrr eqbrtrrdi   compare to eqbrtrri or eqbrtrrd
 proposed  syl6breq  breqtrdi    compare to breqtri or breqtrd
 proposed  syl6breqr breqtrrdi   compare to breqtrri or breqtrrd
-proposed  wl-luk-syl6 wl-luk-imtrdi
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+28-Nov-23 unitresl  [same]      moved from GM's mathbox to main set.mm
+28-Nov-23 unitresr  [same]      moved from GM's mathbox to main set.mm
+28-Nov-23 nel02     [same]      moved from PM's mathbox to main set.mm
+28-Nov-23 fvco3d    [same]      moved from SP's mathbox to main set.mm
+28-Nov-23 fzossz    [same]      moved from GS's mathbox to main set.mm
+26-Nov-23 syl5sseq  sseqtrid    compare to sseqtri or sseqtrd
+21-Nov-23 syl5sseqr sseqtrrid
+21-Nov-23 eqsstr3d  eqsstrrd
+21-Nov-23 eqsstr3i  eqsstrri
+18-Nov-23 fun11iun  f1iun       labeling consistent with fiun
+18-Nov-23 inex2ALTV inex2g      moved from PM's mathbox to main set.mm
+18-Nov-23 bj-rabbid rabbid      moved from BJ's mathbox to main set.mm
+18-Nov-23 bj-rabbida rabbida    moved from BJ's mathbox to main set.mm
+18-Nov-23 elmapresaun [same]    moved from SO's mathbox to main set.mm
+17-Nov-23 syl5eqbr  eqbrtrid    compare to eqbrtri or eqbrtrd
+13-Nov-23 syl5eqbrr eqbrtrrid   compare to eqbrtrri or eqbrtrrd
+12-Nov-23 syl5breq  breqtrid    compare to breqtri or breqtrd
+11-Nov-23 syl5breqr breqtrrid   compare to breqtrri or breqtrrd
  5-Nov-23 ascl0     [same]      moved from AV's mathbox to main set.mm
  5-Nov-23 fcod      [same]      moved from GS's mathbox to main set.mm
 31-Oct-23 spimv1    spimfv      labeling consistent with speimfv

@@ -3139,11 +3139,23 @@ that we are evaluating functions within their domains.
 
 <TR>
 <TD>ofval</TD>
-<TD>~ fnofval </TD>
+<TD>~ ofvalg </TD>
 </TR>
 
+<tr>
+  <td>offn</td>
+  <td>~ off</td>
+  <td>the set.mm proof of offn uses ovex and it isn't clear whether
+  anything can be proved with weaker hypotheses than ~ off</td>
+</tr>
+
+<tr>
+  <td>offveq</td>
+  <td>~ offeq</td>
+</tr>
+
 <TR>
-<TD>offn , offveq , caofid0l , caofid0r , caofid1 , caofid2</TD>
+<TD>caofid0l , caofid0r , caofid1 , caofid2</TD>
 <TD><I>none</I></TD>
 <TD>Assuming we really need to add conditions that the operations
 are functions being evaluated within their domains, there would be a
@@ -10823,8 +10835,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>ellimc3</td>
-  <td>~ ellimc3ap</td>
-  <td>changes not equal to apart</td>
+  <td>~ ellimc3apf , ~ ellimc3ap</td>
 </tr>
 
 <tr>
@@ -10848,7 +10859,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>limcmpt , limcmpt2</td>
+  <td>limcmpt</td>
+  <td>~ limcmpted</td>
+</tr>
+
+<tr>
+  <td>limcmpt2</td>
   <td><i>none</i></td>
 </tr>
 
@@ -10872,15 +10888,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>cnplimc</td>
-  <td>~ cnplimcim</td>
-  <td>The converse is conjectured to also be provable, but
-  would require a more involved proof.</td>
-</tr>
-
-<tr>
-  <td>cnlimc</td>
-  <td>~ cnlimcim</td>
-  <td>See cnplimc concerning biconditionalizing this</td>
+  <td>~ cnplimccntop</td>
 </tr>
 
 <tr>
@@ -10890,10 +10898,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>limccnp2</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof relies on limcmpt and also often expects
-  decidable equality between an element of ` ( A u. { B } ) `
-  and ` B ` .</td>
+  <td>~ limccnp2cntop</td>
 </tr>
 
 <tr>
@@ -11003,41 +11008,36 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>dvcnp2</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof relies on limccnp2
-  and the converse of ~ cnplimcim</td>
-</tr>
-
-<tr>
-  <td>dvcn</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof relies on dvcnp2</td>
+  <td>~ dvcnp2cntop</td>
 </tr>
 
 <tr>
   <td>dvaddbr</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof relies on restntr , undif1 , limcres , and
-  limccnp2</td>
+  <td>~ dvaddxxbr</td>
+  <td>dvaddbr allows ` X ` and ` Y ` to be different and uses
+  excluded middle when handling that possibility.</td>
 </tr>
 
 <tr>
   <td>dvmulbr</td>
   <td><i>none</i></td>
-  <td>the set.mm proof relies on restntr , undif1 , limcres , and
-  limccnp2</td>
+  <td>the set.mm proof relies on restntr , undif1 , and limcres</td>
 </tr>
 
 <tr>
-  <td>dvadd , dvmul</td>
+  <td>dvadd</td>
+  <td>~ dvaddxx</td>
+</tr>
+
+<tr>
+  <td>dvmul</td>
   <td><i>none</i></td>
-  <td>the set.mm proofs rely on dvaddbr and dvmulbr</td>
+  <td>the set.mm proof relies on dvmulbr</td>
 </tr>
 
 <tr>
   <td>dvaddf</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof relies on dvaddbr and dvadd</td>
+  <td>~ dviaddf</td>
 </tr>
 
 <tr>
