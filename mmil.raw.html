@@ -3139,11 +3139,23 @@ that we are evaluating functions within their domains.
 
 <TR>
 <TD>ofval</TD>
-<TD>~ fnofval </TD>
+<TD>~ ofvalg </TD>
 </TR>
 
+<tr>
+  <td>offn</td>
+  <td>~ off</td>
+  <td>the set.mm proof of offn uses ovex and it isn't clear whether
+  anything can be proved with weaker hypotheses than ~ off</td>
+</tr>
+
+<tr>
+  <td>offveq</td>
+  <td>~ offeq</td>
+</tr>
+
 <TR>
-<TD>offn , offveq , caofid0l , caofid0r , caofid1 , caofid2</TD>
+<TD>caofid0l , caofid0r , caofid1 , caofid2</TD>
 <TD><I>none</I></TD>
 <TD>Assuming we really need to add conditions that the operations
 are functions being evaluated within their domains, there would be a
@@ -11001,8 +11013,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>dvaddbr</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof relies on restntr , undif1 , and limcres</td>
+  <td>~ dvaddxxbr</td>
+  <td>dvaddbr allows ` X ` and ` Y ` to be different and uses
+  excluded middle when handling that possibility.</td>
 </tr>
 
 <tr>
@@ -11012,15 +11025,19 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>dvadd , dvmul</td>
+  <td>dvadd</td>
+  <td>~ dvaddxx</td>
+</tr>
+
+<tr>
+  <td>dvmul</td>
   <td><i>none</i></td>
-  <td>the set.mm proofs rely on dvaddbr and dvmulbr</td>
+  <td>the set.mm proof relies on dvmulbr</td>
 </tr>
 
 <tr>
   <td>dvaddf</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof relies on dvaddbr and dvadd</td>
+  <td>~ dviaddf</td>
 </tr>
 
 <tr>
