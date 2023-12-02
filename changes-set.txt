@@ -57,7 +57,6 @@ proposed  syl5eleqr eleqtrrid   compare to eleqtrri or eleqtrrd
 proposed  syl5eqner eqnetrrid   compare to eqnetrri or eqnetrrd
 proposed  syl5ss    sstrid      compare to sstri or sstrd
 proposed  syl5eqss  eqsstrid    compare to eqsstri or eqsstrd
-proposed  syl5eqssr eqsstrrid   compare to eqsstr3i or eqsstr3d
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
@@ -93,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 1-Dec-23 syl5eqssr eqsstrrid   compare to eqsstrri or eqsstrrd
 28-Nov-23 unitresl  [same]      moved from GM's mathbox to main set.mm
 28-Nov-23 unitresr  [same]      moved from GM's mathbox to main set.mm
 28-Nov-23 nel02     [same]      moved from PM's mathbox to main set.mm
