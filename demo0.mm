@@ -48,4 +48,3 @@ $( Prove a theorem $)
        tt weq tt tze tpl tt weq tt tt weq wim tt a2
        tt tze tpl tt tt a1 mp mp
      $.
-
