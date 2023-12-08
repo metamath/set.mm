@@ -16562,6 +16562,7 @@ New usage of "normsub0" is discouraged (0 uses).
 New usage of "normsub0i" is discouraged (1 uses).
 New usage of "normsubi" is discouraged (2 uses).
 New usage of "normval" is discouraged (7 uses).
+New usage of "nornotOLD" is discouraged (0 uses).
 New usage of "notnotrALT" is discouraged (0 uses).
 New usage of "notnotrALT2" is discouraged (0 uses).
 New usage of "notnotrALTVD" is discouraged (0 uses).
@@ -19002,6 +19003,7 @@ Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnne0ALT" is discouraged (19 steps).
 Proof modification of "noelOLD" is discouraged (27 steps).
 Proof modification of "normlem7tALT" is discouraged (177 steps).
+Proof modification of "nornotOLD" is discouraged (21 steps).
 Proof modification of "notnotrALT" is discouraged (12 steps).
 Proof modification of "notnotrALT2" is discouraged (2 steps).
 Proof modification of "notnotrALTVD" is discouraged (34 steps).
