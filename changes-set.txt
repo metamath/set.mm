@@ -90,6 +90,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 6-Dec-23 hbaevg                deleted
+ 6-Dec-23 hbnaevg   naev2       similarity to aev2
  4-Dec-23 syl5ss    sstrid      compare to sstri or sstrd
  3-Dec-23 syl5eqss  eqsstrid    compare to eqsstri or eqsstrd
  1-Dec-23 syl5eqssr eqsstrrid   compare to eqsstrri or eqsstrrd
