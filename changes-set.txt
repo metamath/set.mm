@@ -53,7 +53,6 @@ proposed  syl5reqr  eqtr3di     hypotheses would be switched
 proposed  syl5eqel  eqeltrid    compare to eqeltri or eqeltrd
 proposed  syl5eqelr eqeltrrid   compare to eqeltrri or eqeltrrd
 proposed  syl5eleq  eleqtrid    compare to eleqtri or eleqtrd
-proposed  syl5eleqr eleqtrrid   compare to eleqtrri or eleqtrrd
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
@@ -89,6 +88,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+11-Dec-23 syl5eleqr eleqtrrid   compare to eleqtrri or eleqtrrd
 11-Dec-23 syl5eqner eqnetrrid   compare to eqnetrri or eqnetrrd
  6-Dec-23 hbaevg                deleted
  6-Dec-23 hbnaevg   naev2       similarity to aev2
