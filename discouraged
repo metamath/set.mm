@@ -15826,6 +15826,7 @@ New usage of "in2" is discouraged (36 uses).
 New usage of "in2an" is discouraged (1 uses).
 New usage of "in3" is discouraged (13 uses).
 New usage of "in3an" is discouraged (1 uses).
+New usage of "incomOLD" is discouraged (0 uses).
 New usage of "indistps2ALT" is discouraged (0 uses).
 New usage of "indistpsALT" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
@@ -17221,6 +17222,8 @@ New usage of "rngosn3" is discouraged (1 uses).
 New usage of "rngosn4" is discouraged (1 uses).
 New usage of "rngosn6" is discouraged (1 uses).
 New usage of "rngoueqz" is discouraged (2 uses).
+New usage of "rspcevOLD" is discouraged (0 uses).
+New usage of "rspcvOLD" is discouraged (0 uses).
 New usage of "rspsbc2" is discouraged (2 uses).
 New usage of "rspsbc2VD" is discouraged (0 uses).
 New usage of "ruALT" is discouraged (0 uses).
@@ -18839,6 +18842,7 @@ Proof modification of "in2" is discouraged (10 steps).
 Proof modification of "in2an" is discouraged (18 steps).
 Proof modification of "in3" is discouraged (12 steps).
 Proof modification of "in3an" is discouraged (21 steps).
+Proof modification of "incomOLD" is discouraged (37 steps).
 Proof modification of "indistps2ALT" is discouraged (43 steps).
 Proof modification of "indistpsALT" is discouraged (64 steps).
 Proof modification of "ineq1OLD" is discouraged (49 steps).
@@ -19169,6 +19173,8 @@ Proof modification of "rpnnen1lem3" is discouraged (468 steps).
 Proof modification of "rpnnen1lem4" is discouraged (155 steps).
 Proof modification of "rpnnen1lem5" is discouraged (1023 steps).
 Proof modification of "rpnnen1lem6" is discouraged (128 steps).
+Proof modification of "rspcevOLD" is discouraged (10 steps).
+Proof modification of "rspcvOLD" is discouraged (10 steps).
 Proof modification of "rspsbc2" is discouraged (65 steps).
 Proof modification of "rspsbc2VD" is discouraged (90 steps).
 Proof modification of "ru" is discouraged (88 steps).
