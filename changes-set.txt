@@ -84,6 +84,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+28-Dec-23 domep     dmep        moved from SF's mathbox to main set.mm
+28-Dec-23 compel    velcomp     moved from AS's mathbox to main set.mm
 26-Dec-23 syl6breqr breqtrrdi   compare to breqtrri or breqtrrd
 25-Dec-23 prth      anim12
 25-Dec-23 selpw     velpw
