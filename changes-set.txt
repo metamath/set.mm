@@ -85,6 +85,8 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 26-Dec-23 syl6breqr breqtrrdi   compare to breqtrri or breqtrrd
+25-Dec-23 prth      anim12
+25-Dec-23 selpw     velpw
 17-Dec-23 syl5eqel  eqeltrid    compare to eqeltri or eqeltrd
 13-Dec-23 syl5eqelr eqeltrrid   compare to eqeltrri or eqeltrrd
 13-Dec-23 syl5eleq  eleqtrid    compare to eleqtri or eleqtrd
