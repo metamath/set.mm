@@ -84,6 +84,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+29-Dec-23 uzidd     [same]      moved from GS's mathbox to main set.mm
 26-Dec-23 syl6breqr breqtrrdi   compare to breqtrri or breqtrrd
 25-Dec-23 prth      anim12
 25-Dec-23 selpw     velpw
