@@ -78,7 +78,6 @@ proposed  syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
 proposed  syl6eqssr eqsstrrdi   compare to eqsstrri or eqsstrrd
 proposed  syl6eqbr  eqbrtrdi    compare to eqbrtri or eqbrtrd
 proposed  syl6eqbrr eqbrtrrdi   compare to eqbrtrri or eqbrtrrd
-proposed  syl6breq  breqtrdi    compare to breqtri or breqtrd
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
@@ -86,6 +85,7 @@ DONE:
 Date      Old       New         Notes
 28-Dec-23 domep     dmep        moved from SF's mathbox to main set.mm
 28-Dec-23 compel    velcomp     moved from AS's mathbox to main set.mm
+28-Dec-23 syl6breq  breqtrdi    compare to breqtri or breqtrd
 26-Dec-23 syl6breqr breqtrrdi   compare to breqtrri or breqtrrd
 25-Dec-23 prth      anim12
 25-Dec-23 selpw     velpw
