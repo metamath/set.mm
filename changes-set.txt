@@ -83,6 +83,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+28-Dec-23 eqri      [same]      moved from TA's mathbox to main set.mm
 28-Dec-23 domep     dmep        moved from SF's mathbox to main set.mm
 28-Dec-23 compel    velcomp     moved from AS's mathbox to main set.mm
 28-Dec-23 syl6breq  breqtrdi    compare to breqtri or breqtrd
@@ -1183,8 +1184,8 @@ Date      Old       New         Notes
 18-Jul-20 0fallfac  [same]      moved from SF's mathbox to main set.mm
 18-Jul-20 fallfacfwd [same]     moved from SF's mathbox to main set.mm
 18-Jul-20 risefacfac [same]     moved from SF's mathbox to main set.mm
-18-Jul-20 fallfac1 [same]       moved from SF's mathbox to main set.mm
-18-Jul-20 risefac1 [same]       moved from SF's mathbox to main set.mm
+18-Jul-20 fallfac1  [same]      moved from SF's mathbox to main set.mm
+18-Jul-20 risefac1  [same]      moved from SF's mathbox to main set.mm
 18-Jul-20 fallfacp1d [same]     moved from SF's mathbox to main set.mm
 18-Jul-20 risefacp1d [same]     moved from SF's mathbox to main set.mm
 18-Jul-20 fallfacp1 [same]      moved from SF's mathbox to main set.mm
