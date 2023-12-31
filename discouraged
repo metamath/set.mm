@@ -18796,6 +18796,7 @@ Proof modification of "ghomlinOLD" is discouraged (161 steps).
 Proof modification of "grpinvfvalALT" is discouraged (161 steps).
 Proof modification of "grposnOLD" is discouraged (291 steps).
 Proof modification of "grpsubfvalALT" is discouraged (189 steps).
+Proof modification of "gsumccatNEW" is discouraged (310 steps).
 Proof modification of "hadcomaOLD" is discouraged (37 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
 Proof modification of "hba1-o" is discouraged (34 steps).
@@ -18888,6 +18889,7 @@ Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
 Proof modification of "lediv2aALT" is discouraged (264 steps).
 Proof modification of "leibpilem1OLD" is discouraged (254 steps).
+Proof modification of "lsmidmNEW" is discouraged (25 steps).
 Proof modification of "luk-1" is discouraged (73 steps).
 Proof modification of "luk-2" is discouraged (52 steps).
 Proof modification of "luk-3" is discouraged (20 steps).
