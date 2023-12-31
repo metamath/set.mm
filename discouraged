@@ -4730,7 +4730,7 @@
 "dfhnorm2" is used by "normval".
 "dfich2ai" is used by "dfich2OLD".
 "dfich2bi" is used by "dfich2OLD".
-"dfid2" is used by "fsplit".
+"dfid2" is used by "fsplitOLD".
 "dfid3" is used by "dfid2".
 "dfiop2" is used by "hoico1".
 "dfiop2" is used by "hoico2".
@@ -15237,6 +15237,7 @@ New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fnresiOLD" is discouraged (0 uses).
 New usage of "footexALT" is discouraged (0 uses).
 New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
+New usage of "fsplitOLD" is discouraged (0 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
 New usage of "funcringcsetcALTV" is discouraged (0 uses).
@@ -18775,6 +18776,7 @@ Proof modification of "frege96" is discouraged (39 steps).
 Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
 Proof modification of "frgrwopreglem5ALT" is discouraged (519 steps).
+Proof modification of "fsplitOLD" is discouraged (234 steps).
 Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "fvilbdRP" is discouraged (27 steps).
 Proof modification of "fvimacnvALT" is discouraged (102 steps).
