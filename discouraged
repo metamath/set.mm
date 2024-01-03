@@ -14508,6 +14508,7 @@ New usage of "df-ba" is discouraged (1 uses).
 New usage of "df-bdop" is discouraged (2 uses).
 New usage of "df-bj-1upl" is discouraged (6 uses).
 New usage of "df-bj-2upl" is discouraged (6 uses).
+New usage of "df-bj-arg" is discouraged (0 uses).
 New usage of "df-bj-ccinfty" is discouraged (3 uses).
 New usage of "df-bj-ccinftyN" is discouraged (1 uses).
 New usage of "df-bj-fractemp" is discouraged (0 uses).
@@ -18069,7 +18070,7 @@ Proof modification of "bj-ceqsalt1" is discouraged (118 steps).
 Proof modification of "bj-ceqsaltv" is discouraged (45 steps).
 Proof modification of "bj-ceqsalv" is discouraged (10 steps).
 Proof modification of "bj-cleljusti" is discouraged (20 steps).
-Proof modification of "bj-cmnssmnd" is discouraged (36 steps).
+Proof modification of "bj-cmnssmnd" is discouraged (30 steps).
 Proof modification of "bj-cmnssmndel" is discouraged (5 steps).
 Proof modification of "bj-consensusALT" is discouraged (30 steps).
 Proof modification of "bj-csbprc" is discouraged (47 steps).
@@ -18079,9 +18080,7 @@ Proof modification of "bj-df-ifc" is discouraged (60 steps).
 Proof modification of "bj-df-nul" is discouraged (11 steps).
 Proof modification of "bj-df-v" is discouraged (29 steps).
 Proof modification of "bj-dfif" is discouraged (39 steps).
-Proof modification of "bj-dfif" is discouraged (39 steps).
 Proof modification of "bj-dfnnf3" is discouraged (34 steps).
-Proof modification of "bj-disj2r" is discouraged (88 steps).
 Proof modification of "bj-disj2r" is discouraged (88 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
 Proof modification of "bj-dral1v" is discouraged (36 steps).
@@ -18117,6 +18116,8 @@ Proof modification of "bj-fvmptunsn2" is discouraged (54 steps).
 Proof modification of "bj-fvsnun2" is discouraged (44 steps).
 Proof modification of "bj-gl4" is discouraged (58 steps).
 Proof modification of "bj-godellob" is discouraged (19 steps).
+Proof modification of "bj-grpssmnd" is discouraged (29 steps).
+Proof modification of "bj-grpssmndel" is discouraged (5 steps).
 Proof modification of "bj-hbab1" is discouraged (20 steps).
 Proof modification of "bj-hbaeb" is discouraged (22 steps).
 Proof modification of "bj-hbaeb2" is discouraged (73 steps).
