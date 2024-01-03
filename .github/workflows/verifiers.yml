@@ -86,7 +86,9 @@ jobs:
         run: scripts/download-metamath
       - name: Record latest version of metamath as env variable
         run: |
-          echo "METAMATH_LATEST_VERSION=$(cat metamath/.latest_version)" >> $GITHUB_ENV
+          dirname=$(zipinfo -1 metamath-program.zip | head -1)
+          dirname=${dirname#metamath-metamath-exe-}
+          echo "METAMATH_LATEST_VERSION=${dirname%/}" >> $GITHUB_ENV
       # Note: cache key includes version of metamath in use
       - name: Cache metamathexe
         id: cache-metamathexe
@@ -163,7 +165,9 @@ jobs:
         run: scripts/download-metamath
       - name: Record latest version of metamath as env variable
         run: |
-          echo "METAMATH_LATEST_VERSION=$(cat metamath/.latest_version)" >> $GITHUB_ENV
+          dirname=$(zipinfo -1 metamath-program.zip | head -1)
+          dirname=${dirname#metamath-metamath-exe-}
+          echo "METAMATH_LATEST_VERSION=${dirname%/}" >> $GITHUB_ENV
       # Note: cache key includes version of metamath in use
       - name: Cache metamathexe
         id: cache-metamathexe
