@@ -10408,9 +10408,39 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-hmeo and all theorems using the Homeo syntax</td>
+  <td>df-hmph and all theorems using that syntax</td>
   <td><i>none</i></td>
-  <td>apparently intuitionizable</td>
+  <td>presumably would need some modifications to the parts
+  which use set difference</td>
+</tr>
+
+<tr>
+  <td>hmeofval</td>
+  <td>~ hmeofvalg</td>
+</tr>
+
+<tr>
+  <td>hmeocls</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses cncls2i</td>
+</tr>
+
+<tr>
+  <td>hmeoqtop</td>
+  <td><i>none</i></td>
+  <td>relies on qTop syntax</td>
+</tr>
+
+<tr>
+  <td>pt1hmeo</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ptcn</td>
+</tr>
+
+<tr>
+  <td>ptuncnv , ptunhmeo</td>
+  <td><i>none</i></td>
+  <td>the set.mm proofs use ptuni</td>
 </tr>
 
 <tr>
@@ -10577,6 +10607,16 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>cnfldtop</td>
   <td>~ cntoptop</td>
+</tr>
+
+<tr>
+  <td>unicntop</td>
+  <td>~ unicntopcntop</td>
+</tr>
+
+<tr>
+  <td>cnopn</td>
+  <td>~ cnopncntop</td>
 </tr>
 
 <tr>
@@ -10797,6 +10837,11 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>cnrehmeo</td>
+  <td>~ cnrehmeocntop</td>
+</tr>
+
+<tr>
   <td>df-limc</td>
   <td>~ df-limced</td>
   <td>~ df-limced is adapted from ellimc3 in set.mm</td>
@@ -10903,11 +10948,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>limcco</td>
-  <td><i>none</i></td>
-  <td>Presumably something of the sort is possible but it may
-  require close attention to topics such as whether each
-  function involved is being evaluated at a point apart
-  from the point we are taking the limit at.</td>
+  <td>~ limccoap</td>
 </tr>
 
 <tr>
@@ -11020,8 +11061,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>dvmulbr</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof relies on restntr , undif1 , and limcres</td>
+  <td>~ dvmulxxbr </td>
 </tr>
 
 <tr>
@@ -11031,8 +11071,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>dvmul</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof relies on dvmulbr</td>
+  <td>~ dvmulxx</td>
 </tr>
 
 <tr>
@@ -11042,8 +11081,109 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>dvmulf</td>
+  <td>~ dvimulf</td>
+</tr>
+
+<tr>
+  <td>dvcmul</td>
   <td><i>none</i></td>
-  <td>the set.mm proof relies on dvmulbr and dvmul</td>
+  <td>unused in set.mm and the set.mm proof depends on dvres2</td>
+</tr>
+
+<tr>
+  <td>dvcmulf</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on dvres , dvres3 , and caofid2</td>
+</tr>
+
+<tr>
+  <td>dvcobr</td>
+  <td>~ dvcoapbr</td>
+</tr>
+
+<tr>
+  <td>dvco</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on dvcobr</td>
+</tr>
+
+<tr>
+  <td>dvcof</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on dvcobr and dvco</td>
+</tr>
+
+<tr>
+  <td>dvrec</td>
+  <td>~ dvrecap</td>
+</tr>
+
+<tr>
+  <td>dvmptres3</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on dvres3a</td>
+</tr>
+
+<tr>
+  <td>dvmptid</td>
+  <td>~ dvmptidcn</td>
+  <td>the version for real numbers would presumably
+  be provable as well</td>
+</tr>
+
+<tr>
+  <td>dvmptc</td>
+  <td>~ dvmptccn</td>
+  <td>the version for real numbers would presumably
+  be provable as well</td>
+</tr>
+
+<tr>
+  <td>dvmptcl</td>
+  <td>~ dvmptclx</td>
+</tr>
+
+<tr>
+  <td>dvmptadd</td>
+  <td>~ dvmptaddx</td>
+</tr>
+
+<tr>
+  <td>dvmptmul</td>
+  <td>~ dvmptmulx</td>
+</tr>
+
+<tr>
+  <td>dvmptres2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvres</td>
+</tr>
+
+<tr>
+  <td>dvmptres</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvmptres2</td>
+</tr>
+
+<tr>
+  <td>dvmptcmul</td>
+  <td>~ dvmptcmulcn</td>
+</tr>
+
+<tr>
+  <td>dvmptdivc</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvmptcmul</td>
+</tr>
+
+<tr>
+  <td>dvmptneg</td>
+  <td>~ dvmptnegcn</td>
+</tr>
+
+<tr>
+  <td>dvmptsub</td>
+  <td>~ dvmptsubcn</td>
 </tr>
 
 </TABLE>

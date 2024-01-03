@@ -43,21 +43,13 @@ proposed  syl5ibcom imbitridcom
 proposed  syl5ibr   imbitrrid
 proposed  syl5ibrcom imbitrridcom
 proposed  syl5bb    bitrid      compare to bitri or bitrd
-proposed  syl5rbb   bitridcom
+proposed  syl5rbb   bitr2id     compare to bitr2i or bitr2d
 proposed  syl5bbr   bitr3id     compare to bitr3i or bitr3d
-proposed  syl5rbbr  bitr3idcom
+proposed  syl5rbbr  bitr3di     hypotheses would be switched
 proposed  syl5eq    eqtrid      compare to eqtri or eqtrd
-proposed  syl5req   eqtridcom
+proposed  syl5req   eqtr2id     compare to eqtr2i or eqtr2d
 proposed  syl5eqr   eqtr3id     compare to eqtr3i or eqtr3d
-proposed  syl5reqr  eqtr3idcom
-proposed  syl5eqel  eqeltrid    compare to eqeltri or eqeltrd
-proposed  syl5eqelr eqeltrrid   compare to eqeltrri or eqeltrrd
-proposed  syl5eleq  eleqtrid    compare to eleqtri or eleqtrd
-proposed  syl5eleqr eleqtrrid   compare to eleqtrri or eleqtrrd
-proposed  syl5eqner eqnetrrid   compare to eqnetrri or eqnetrrd
-proposed  syl5ss    sstrid      compare to sstri or sstrd
-proposed  syl5eqss  eqsstrid    compare to eqsstri or eqsstrd
-proposed  syl5eqssr eqsstrrid   compare to eqsstr3i or eqsstr3d
+proposed  syl5reqr  eqtr3di     hypotheses would be switched
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
@@ -66,13 +58,13 @@ proposed  syl6ibr   imbitrrdi
 proposed  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
 proposed  syl6bb    bitrdi      compare to bitri or bitrd
-proposed  syl6rbb   bitrdicom
+proposed  syl6rbb   bitr2di     compare to bitr2i or bitr2d
 proposed  syl6bbr   bitr4di     compare to bitr4i or bitr4d
-proposed  syl6rbbr  bitr4dicom
+proposed  syl6rbbr  bitr4id     hypotheses would be switched
 proposed  syl6eq    eqtrdi      compare to eqtri or eqtrd
-proposed  syl6req   eqtrdicom
+proposed  syl6req   eqtr2di     compare to eqtr2i or eqtr2d
 proposed  syl6eqr   eqtr4di     compare to eqtr4i or eqtr4d
-proposed  syl6reqr  eqtr4dicom
+proposed  syl6reqr  eqtr4id     hypotheses would be switched
 proposed  syl6eqel  eqeltrdi    compare to eqeltri or eqeltrd
 proposed  syl6eqelr eqeltrrdi   compare to eqeltrri or eqeltrrd
 proposed  syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
@@ -83,16 +75,32 @@ proposed  sseqtr4i  sseqtrri
 proposed  sseqtr4d  sseqtrrd
 proposed  syl6sseqr sseqtrrdi
 proposed  syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
-proposed  syl6eqssr eqsstrrdi
+proposed  syl6eqssr eqsstrrdi   compare to eqsstrri or eqsstrrd
 proposed  syl6eqbr  eqbrtrdi    compare to eqbrtri or eqbrtrd
 proposed  syl6eqbrr eqbrtrrdi   compare to eqbrtrri or eqbrtrrd
-proposed  syl6breq  breqtrdi    compare to breqtri or breqtrd
-proposed  syl6breqr breqtrrdi   compare to breqtrri or breqtrrd
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+29-Dec-23 uzidd     [same]      moved from GS's mathbox to main set.mm
+28-Dec-23 eqri      [same]      moved from TA's mathbox to main set.mm
+28-Dec-23 domep     dmep        moved from SF's mathbox to main set.mm
+28-Dec-23 compel    velcomp     moved from AS's mathbox to main set.mm
+28-Dec-23 syl6breq  breqtrdi    compare to breqtri or breqtrd
+26-Dec-23 syl6breqr breqtrrdi   compare to breqtrri or breqtrrd
+25-Dec-23 prth      anim12
+25-Dec-23 selpw     velpw
+17-Dec-23 syl5eqel  eqeltrid    compare to eqeltri or eqeltrd
+13-Dec-23 syl5eqelr eqeltrrid   compare to eqeltrri or eqeltrrd
+13-Dec-23 syl5eleq  eleqtrid    compare to eleqtri or eleqtrd
+11-Dec-23 syl5eleqr eleqtrrid   compare to eleqtrri or eleqtrrd
+11-Dec-23 syl5eqner eqnetrrid   compare to eqnetrri or eqnetrrd
+ 6-Dec-23 hbaevg                deleted
+ 6-Dec-23 hbnaevg   naev2       similarity to aev2
+ 4-Dec-23 syl5ss    sstrid      compare to sstri or sstrd
+ 3-Dec-23 syl5eqss  eqsstrid    compare to eqsstri or eqsstrd
+ 1-Dec-23 syl5eqssr eqsstrrid   compare to eqsstrri or eqsstrrd
 28-Nov-23 unitresl  [same]      moved from GM's mathbox to main set.mm
 28-Nov-23 unitresr  [same]      moved from GM's mathbox to main set.mm
 28-Nov-23 nel02     [same]      moved from PM's mathbox to main set.mm
@@ -1177,8 +1185,8 @@ Date      Old       New         Notes
 18-Jul-20 0fallfac  [same]      moved from SF's mathbox to main set.mm
 18-Jul-20 fallfacfwd [same]     moved from SF's mathbox to main set.mm
 18-Jul-20 risefacfac [same]     moved from SF's mathbox to main set.mm
-18-Jul-20 fallfac1 [same]       moved from SF's mathbox to main set.mm
-18-Jul-20 risefac1 [same]       moved from SF's mathbox to main set.mm
+18-Jul-20 fallfac1  [same]      moved from SF's mathbox to main set.mm
+18-Jul-20 risefac1  [same]      moved from SF's mathbox to main set.mm
 18-Jul-20 fallfacp1d [same]     moved from SF's mathbox to main set.mm
 18-Jul-20 risefacp1d [same]     moved from SF's mathbox to main set.mm
 18-Jul-20 fallfacp1 [same]      moved from SF's mathbox to main set.mm

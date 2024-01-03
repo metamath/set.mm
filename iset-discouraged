@@ -21,6 +21,7 @@
 "4syl" is used by "fzostep1".
 "4syl" is used by "fzssp1".
 "4syl" is used by "hashiun".
+"4syl" is used by "hmeores".
 "4syl" is used by "isose".
 "4syl" is used by "isoselem".
 "4syl" is used by "serf0".
@@ -68,6 +69,7 @@
 "ax-distr" is used by "adddi".
 "ax-ia1" is used by "simpl".
 "ax-ia2" is used by "simpr".
+"ax-in1" is used by "pm2.01".
 "ax-inf2" is used by "bj-nn0sucALT".
 "ax-inf2" is used by "bj-omex2".
 "ax-io" is used by "jaob".
@@ -198,7 +200,7 @@ New usage of "19.21ht" is discouraged (2 uses).
 New usage of "19.41h" is discouraged (5 uses).
 New usage of "19.42h" is discouraged (1 uses).
 New usage of "19.9hd" is discouraged (2 uses).
-New usage of "4syl" is discouraged (15 uses).
+New usage of "4syl" is discouraged (16 uses).
 New usage of "a1ii" is discouraged (0 uses).
 New usage of "a9evsep" is discouraged (1 uses).
 New usage of "addmodlteqALT" is discouraged (0 uses).
@@ -221,6 +223,7 @@ New usage of "ax-cnre" is discouraged (1 uses).
 New usage of "ax-distr" is discouraged (1 uses).
 New usage of "ax-ia1" is discouraged (1 uses).
 New usage of "ax-ia2" is discouraged (1 uses).
+New usage of "ax-in1" is discouraged (1 uses).
 New usage of "ax-inf2" is discouraged (2 uses).
 New usage of "ax-io" is discouraged (1 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
@@ -282,6 +285,7 @@ New usage of "bj-omssonALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
 New usage of "cnm" is discouraged (2 uses).
 New usage of "condcOLD" is discouraged (0 uses).
+New usage of "conventions" is discouraged (0 uses).
 New usage of "dcnnOLD" is discouraged (0 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-div" is discouraged (2 uses).

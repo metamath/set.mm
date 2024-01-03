@@ -1,6 +1,20 @@
-$( hol.mm  7-Oct-2014 $)
+$( This is the Metamath database hol.mm. $)
 
-$(
+$( Metamath is a formal language and associated computer program for
+   archiving, verifying, and studying mathematical proofs, created by Norman
+   Dwight Megill (1950--2021).  For more information, visit
+   https://us.metamath.org and
+   https://github.com/metamath/set.mm, and feel free to ask questions at
+   https://groups.google.com/group/metamath. $)
+
+$( The database hol.mm was created by Mario Carneiro on 7-Oct-2014. $)
+
+
+$( !
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Metamath source file for higher order logic
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
                            ~~ PUBLIC DOMAIN ~~
 This work is waived of all rights, including copyright, according to the CC0
 Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
@@ -9,9 +23,10 @@ Mario Carneiro - email: di.gama at gmail.com
 
 $)
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                           Foundations
+  Foundations
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -23,7 +38,7 @@ $)
   $c : $.     $( Typehood indicator $)
   $c . $.     $( Separator $)
   $c |= $.    $( Context separator $)
-  $c bool $.     $( Boolean type $)
+  $c bool $.  $( Boolean type $)
   $c ind $.   $( 'Individual' type $)
   $c -> $.    $( Function type $)
   $c ( $.     $( Open parenthesis $)
@@ -1003,9 +1018,10 @@ $)
       HBEUMZJTQZVJVAGTQVLBVKJBEUNMUOACDFGIKLNUPUHOULUPUL $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                 Add propositional calculus definitions
+  Add propositional calculus definitions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -1480,9 +1496,10 @@ $)
       GZHTGCUBCCDIUBCJKCDALBCDMNOAUATALBCDPABQRS $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                 Type definition mechanism
+  Type definition mechanism
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -1526,9 +1543,11 @@ $)
     ax-tdef $a |- T. |= ( ( ! \ x : be . [ ( A ( R x : be ) ) = x : be ] ) ,
       ( ! \ x : al . [ ( F x : al ) = [ ( R ( A x : al ) ) = x : al ] ] ) ) $.
   $}
+
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                       Extensionality
+  Extensionality
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -1689,9 +1708,10 @@ $)
       EKFLSACMJDNOGFPQR $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                       Axioms of infinity and choice
+  Axioms of infinity and choice
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -1815,9 +1835,10 @@ $)
   ax-inf $a |- T. |= ( ? \ f : ( ind -> ind ) .
     [ ( 1-1 f : ( ind -> ind ) ) /\ ( ~ ( onto f : ( ind -> ind ) ) ) ] ) $.
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                       Rederive the Metamath axioms
+  Rederive the Metamath axioms
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
