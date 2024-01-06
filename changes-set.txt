@@ -76,13 +76,14 @@ proposed  sseqtr4d  sseqtrrd
 proposed  syl6sseqr sseqtrrdi
 proposed  syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
 proposed  syl6eqssr eqsstrrdi   compare to eqsstrri or eqsstrrd
-proposed  syl6eqbr  eqbrtrdi    compare to eqbrtri or eqbrtrd
-proposed  syl6eqbrr eqbrtrrdi   compare to eqbrtrri or eqbrtrrd
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 5-Jan-24 syl6eqbr  eqbrtrdi    compare to eqbrtri or eqbrtrd
+ 5-Jan-24 syl6eqbrr eqbrtrrdi   compare to eqbrtrri or eqbrtrrd
+ 3-Jan-24 unima     [same]      moved from GS's mathbox to main set.mm
 29-Dec-23 uzidd     [same]      moved from GS's mathbox to main set.mm
 28-Dec-23 eqri      [same]      moved from TA's mathbox to main set.mm
 28-Dec-23 domep     dmep        moved from SF's mathbox to main set.mm
