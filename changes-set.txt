@@ -81,6 +81,22 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 5-Jan-24 ---       ---         sections "Groups" and "Simple groups"
+                                moved from RR's mathbox to main set.mm
+ 5-Jan-24 rr-php2d  phpeqd      moved from RR's mathbox to main set.mm
+ 5-Jan-24 phphashd  [same]      moved from RR's mathbox to main set.mm
+ 5-Jan-24 phphash2d phphashrd   moved from RR's mathbox to main set.mm
+ 5-Jan-24 hashelne0d [same]     moved from RR's mathbox to main set.mm
+ 5-Jan-24 hash1elsn [same]      moved from RR's mathbox to main set.mm
+ 5-Jan-24 gcdmuld   gcdmultipled moved from RR's mathbox to main set.mm
+ 5-Jan-24 gcddvdsd  dvdsgcdidd  moved from RR's mathbox to main set.mm
+ 5-Jan-24 neqcomd   [same]      moved from RR's mathbox to main set.mm
+ 5-Jan-24 rr-rspce  rspcime     moved from RR's mathbox to main set.mm
+ 5-Jan-24 rr-elrnmptd elrnmptdv moved from RR's mathbox to main set.mm
+ 5-Jan-24 rr-elrnmpt2d elrnmpt2d moved from RR's mathbox to main set.mm
+ 5-Jan-24 enpr2d    [same]      moved from RR's mathbox to main set.mm
+ 5-Jan-24 cntrcmnd  [same]      moved from TA's mathbox to main set.mm
+ 5-Jan-24 cntrabl   [same]      moved from TA's mathbox to main set.mm
  5-Jan-24 syl6eqbr  eqbrtrdi    compare to eqbrtri or eqbrtrd
  5-Jan-24 syl6eqbrr eqbrtrrdi   compare to eqbrtrri or eqbrtrrd
  3-Jan-24 unima     [same]      moved from GS's mathbox to main set.mm
