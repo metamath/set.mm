@@ -99,6 +99,9 @@ Date      Old       New         Notes
  5-Jan-24 cntrabl   [same]      moved from TA's mathbox to main set.mm
  5-Jan-24 syl6eqbr  eqbrtrdi    compare to eqbrtri or eqbrtrd
  5-Jan-24 syl6eqbrr eqbrtrrdi   compare to eqbrtrri or eqbrtrrd
+ 4-Jan-24 fimaproj  [same]      moved from TA's mathbox to main set.mm
+ 4-Jan-24 fproj     [same]      moved from TA's mathbox to main set.mm
+ 4-Jan-24 mptima    [same]      moved from GS's mathbox to main set.mm
  3-Jan-24 unima     [same]      moved from GS's mathbox to main set.mm
 29-Dec-23 uzidd     [same]      moved from GS's mathbox to main set.mm
 28-Dec-23 eqri      [same]      moved from TA's mathbox to main set.mm
