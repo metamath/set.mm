@@ -71,7 +71,6 @@ proposed  syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
 proposed  syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
 proposed  syl6ss    sstrdi      compare to sstri or sstrd
 proposed  syl6sseq  sseqtrdi    compare to sseqtri or sseqtrd
-proposed  sseqtr4i  sseqtrri
 proposed  sseqtr4d  sseqtrrd
 proposed  syl6sseqr sseqtrrdi
 proposed  syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
@@ -81,6 +80,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+14-Jan-24 sseqtr4i  sseqtrri
  5-Jan-24 ---       ---         sections "Groups" and "Simple groups"
                                 moved from RR's mathbox to main set.mm
  5-Jan-24 rr-php2d  phpeqd      moved from RR's mathbox to main set.mm
