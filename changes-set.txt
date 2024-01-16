@@ -80,6 +80,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+17-Jan-24 mteqand   [same]      moved from SN's mathbox to main set.mm
 14-Jan-24 sseqtr4i  sseqtrri
  5-Jan-24 ---       ---         sections "Groups" and "Simple groups"
                                 moved from RR's mathbox to main set.mm
