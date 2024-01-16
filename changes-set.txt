@@ -71,7 +71,6 @@ proposed  syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
 proposed  syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
 proposed  syl6ss    sstrdi      compare to sstri or sstrd
 proposed  syl6sseq  sseqtrdi    compare to sseqtri or sseqtrd
-proposed  sseqtr4i  sseqtrri
 proposed  sseqtr4d  sseqtrrd
 proposed  syl6sseqr sseqtrrdi
 proposed  syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
@@ -81,6 +80,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+14-Jan-24 sseqtr4i  sseqtrri
 13-Jan-24 mndlsmidm [same]      moved from AV's mathbox to main set.mm
 13-Jan-24 smndlsmidm [same]     moved from AV's mathbox to main set.mm
 13-Jan-24 cycsubm   [same]      moved from AV's mathbox to main set.mm
