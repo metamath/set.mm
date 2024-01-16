@@ -8072,10 +8072,22 @@ than reals.</TD>
   <TD>~ fihashneq0</TD>
 </TR>
 
+<tr>
+  <td>hashelne0d</td>
+  <td><i>none</i></td>
+  <td>would be easy to prove if ` A e. V ` is changed to ` A e. Fin `</td>
+</tr>
+
 <TR>
   <TD>hashen1</TD>
   <TD>~ fihashen1</TD>
 </TR>
+
+<tr>
+  <td>hash1elsn</td>
+  <td><i>none</i></td>
+  <td>would be easy to prove if ` A e. V ` is changed to ` A e. Fin `</td>
+</tr>
 
 <TR>
   <TD>hashrabrsn</TD>
@@ -8366,6 +8378,12 @@ than reals.</TD>
   to ` _om ~<_ A ` but the set.mm proof does not work as is.</TD>
 </TR>
 
+<tr>
+  <td>phphashd , phphashrd</td>
+  <td><i>none</i></td>
+  <td>would appear to need hashclb or some other way of showing that
+  the subset is finite</td>
+</tr>
 
 <TR>
   <TD>seqcoll</TD>
@@ -11184,6 +11202,77 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>dvmptsub</td>
   <td>~ dvmptsubcn</td>
+</tr>
+
+<tr>
+  <td>reeff1olem</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof depends on ivth (the Intermediate
+  Value Theorem).  Apparently, the Monotonic Intermediate
+  Value Theorem (Theorem 5.5 of [Bauer], p. 494) would
+  suffice if we can prove that.</td>
+</tr>
+
+<tr>
+  <td>reeff1o</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses reeff1olem</td>
+</tr>
+
+<tr>
+  <td>reefiso</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses reeff1o and the converse of
+  ~ efltim</td>
+</tr>
+
+<tr>
+  <td>efcvx</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses reeff1o , reefiso , dvres , dvres3 ,
+  iccntr , and dvcvx</td>
+</tr>
+
+<tr>
+  <td>reefgim</td>
+  <td><i>none</i></td>
+</tr>
+
+<tr>
+  <td>pilem2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof needs some obvious intuitionizing around not
+  equal to zero versus apart from zero, and nonempty versus
+  inhabited, but more seriously it depends on infrecl , infregelb ,
+  and infrelb</td>
+</tr>
+
+<tr>
+  <td>pilem3</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof depends on ivth2 (the Intermediate
+  Value Theorem).  Apparently, the Monotonic Intermediate
+  Value Theorem (Theorem 5.5 of [Bauer], p. 494) could
+  replace it if we can prove that.  Additionally, the set.mm
+  proof uses infrelb , infrecl , pilem2 , and infregelb .</td>
+</tr>
+
+<tr>
+  <td>pigt2lt4</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses pilem3</td>
+</tr>
+
+<tr>
+  <td>sinpi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses pilem3</td>
+</tr>
+
+<tr>
+  <td>pire</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses pilem3</td>
 </tr>
 
 </TABLE>
