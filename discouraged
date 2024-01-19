@@ -2998,6 +2998,9 @@
 "cbncms" is used by "ubthlem2".
 "cbvexsv" is used by "onfrALTlem1".
 "cbvexsv" is used by "onfrALTlem1VD".
+"cbvmptALT" is used by "cbvmptvALT".
+"cbvmptfALT" is used by "cbvmptALT".
+"cbvopab1ALT" is used by "cbvmptfALT".
 "cdj3lem1" is used by "cdj3i".
 "cdj3lem1" is used by "cdj3lem2b".
 "cdj3lem2" is used by "cdj3i".
@@ -14060,6 +14063,10 @@ New usage of "cbvalvOLD" is discouraged (0 uses).
 New usage of "cbveuALT" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
 New usage of "cbvexvOLD" is discouraged (0 uses).
+New usage of "cbvmptALT" is discouraged (1 uses).
+New usage of "cbvmptfALT" is discouraged (1 uses).
+New usage of "cbvmptvALT" is discouraged (0 uses).
+New usage of "cbvopab1ALT" is discouraged (1 uses).
 New usage of "cbvrabvOLD" is discouraged (0 uses).
 New usage of "cbvrexdva2OLD" is discouraged (0 uses).
 New usage of "ccat2s1fvwALT" is discouraged (0 uses).
@@ -18210,6 +18217,10 @@ Proof modification of "cbvalvOLD" is discouraged (53 steps).
 Proof modification of "cbveuALT" is discouraged (48 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "cbvexvOLD" is discouraged (38 steps).
+Proof modification of "cbvmptALT" is discouraged (15 steps).
+Proof modification of "cbvmptfALT" is discouraged (166 steps).
+Proof modification of "cbvmptvALT" is discouraged (13 steps).
+Proof modification of "cbvopab1ALT" is discouraged (187 steps).
 Proof modification of "cbvrabvOLD" is discouraged (19 steps).
 Proof modification of "cbvrexdva2OLD" is discouraged (128 steps).
 Proof modification of "ccat2s1fvwALT" is discouraged (149 steps).
