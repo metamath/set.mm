@@ -12,7 +12,7 @@ $( The database hol.mm was created by Mario Carneiro on 7-Oct-2014. $)
 
 $( !
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-  Metamath source file for higher order logic
+  Metamath source file for higher-order logic
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
                            ~~ PUBLIC DOMAIN ~~
