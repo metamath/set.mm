@@ -2998,6 +2998,8 @@
 "cbncms" is used by "ubthlem2".
 "cbvexsv" is used by "onfrALTlem1".
 "cbvexsv" is used by "onfrALTlem1VD".
+"cbviinALT" is used by "cbviinvALT".
+"cbviunALT" is used by "cbviunvALT".
 "cbvmptALT" is used by "cbvmptvALT".
 "cbvmptfALT" is used by "cbvmptALT".
 "cbvopab1ALT" is used by "cbvmptfALT".
@@ -6342,6 +6344,8 @@
 "hba1-o" is used by "axc711toc7".
 "hba1-o" is used by "dvelimf-o".
 "hba1-o" is used by "nfa1-o".
+"hbabALT" is used by "bnj1441ALT".
+"hbabALT" is used by "nfsabALT".
 "hbae-o" is used by "aev-o".
 "hbae-o" is used by "dral1-o".
 "hbae-o" is used by "dral2-o".
@@ -9525,6 +9529,13 @@
 "nfa1-o" is used by "ax12eq".
 "nfa1-o" is used by "ax12v2-o".
 "nfa1-o" is used by "axc11n-16".
+"nfabALT" is used by "nfaba1ALT".
+"nfabALT" is used by "nfiinALT".
+"nfabALT" is used by "nfiunALT".
+"nfrexALT" is used by "nfiunALT".
+"nfrexdALT" is used by "nfiundALT".
+"nfrexdALT" is used by "nfrexALT".
+"nfsabALT" is used by "nfabALT".
 "nfsb2ALT" is used by "nfsb4tALT".
 "nfsb4ALT" is used by "sbco2ALT".
 "nfsb4tALT" is used by "nfsb4ALT".
@@ -13814,6 +13825,7 @@ New usage of "bnj1423" is discouraged (1 uses).
 New usage of "bnj1424" is discouraged (2 uses).
 New usage of "bnj1436" is discouraged (12 uses).
 New usage of "bnj1441" is discouraged (0 uses).
+New usage of "bnj1441ALT" is discouraged (0 uses).
 New usage of "bnj1442" is discouraged (1 uses).
 New usage of "bnj1444" is discouraged (1 uses).
 New usage of "bnj1445" is discouraged (1 uses).
@@ -14063,6 +14075,10 @@ New usage of "cbvalvOLD" is discouraged (0 uses).
 New usage of "cbveuALT" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
 New usage of "cbvexvOLD" is discouraged (0 uses).
+New usage of "cbviinALT" is discouraged (1 uses).
+New usage of "cbviinvALT" is discouraged (0 uses).
+New usage of "cbviunALT" is discouraged (1 uses).
+New usage of "cbviunvALT" is discouraged (0 uses).
 New usage of "cbvmptALT" is discouraged (1 uses).
 New usage of "cbvmptfALT" is discouraged (1 uses).
 New usage of "cbvmptvALT" is discouraged (0 uses).
@@ -15385,6 +15401,7 @@ New usage of "hatomic" is discouraged (1 uses).
 New usage of "hatomici" is discouraged (6 uses).
 New usage of "hatomistici" is discouraged (1 uses).
 New usage of "hba1-o" is discouraged (8 uses).
+New usage of "hbabALT" is discouraged (2 uses).
 New usage of "hbae-o" is discouraged (4 uses).
 New usage of "hbalg" is discouraged (1 uses).
 New usage of "hbalgVD" is discouraged (0 uses).
@@ -15393,6 +15410,7 @@ New usage of "hbexg" is discouraged (0 uses).
 New usage of "hbexgVD" is discouraged (0 uses).
 New usage of "hbimpg" is discouraged (0 uses).
 New usage of "hbimpgVD" is discouraged (0 uses).
+New usage of "hblemALT" is discouraged (0 uses).
 New usage of "hbnae-o" is discouraged (3 uses).
 New usage of "hbntal" is discouraged (3 uses).
 New usage of "hbra2VD" is discouraged (0 uses).
@@ -16385,14 +16403,22 @@ New usage of "nelne2OLD" is discouraged (0 uses).
 New usage of "nf5rOLD" is discouraged (0 uses).
 New usage of "nf5riOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
+New usage of "nfabALT" is discouraged (3 uses).
+New usage of "nfaba1ALT" is discouraged (0 uses).
 New usage of "nfabd2OLD" is discouraged (0 uses).
 New usage of "nfabdOLD" is discouraged (0 uses).
 New usage of "nfceqiOLD" is discouraged (0 uses).
 New usage of "nfcvfOLD" is discouraged (0 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfeu1ALT" is discouraged (0 uses).
+New usage of "nfiinALT" is discouraged (0 uses).
+New usage of "nfiunALT" is discouraged (0 uses).
+New usage of "nfiundALT" is discouraged (0 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
+New usage of "nfrexALT" is discouraged (1 uses).
+New usage of "nfrexdALT" is discouraged (2 uses).
 New usage of "nfsab1OLD" is discouraged (0 uses).
+New usage of "nfsabALT" is discouraged (1 uses).
 New usage of "nfsb2ALT" is discouraged (1 uses).
 New usage of "nfsb4ALT" is discouraged (1 uses).
 New usage of "nfsb4tALT" is discouraged (1 uses).
@@ -18204,6 +18230,7 @@ Proof modification of "bj-xpima1snALT" is discouraged (25 steps).
 Proof modification of "bj-xpima2sn" is discouraged (23 steps).
 Proof modification of "bj-xpnzex" is discouraged (71 steps).
 Proof modification of "bj-zfauscl" is discouraged (65 steps).
+Proof modification of "bnj1441ALT" is discouraged (30 steps).
 Proof modification of "brfi1indALT" is discouraged (789 steps).
 Proof modification of "brfvidRP" is discouraged (92 steps).
 Proof modification of "c0exALT" is discouraged (15 steps).
@@ -18217,6 +18244,10 @@ Proof modification of "cbvalvOLD" is discouraged (53 steps).
 Proof modification of "cbveuALT" is discouraged (48 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "cbvexvOLD" is discouraged (38 steps).
+Proof modification of "cbviinALT" is discouraged (64 steps).
+Proof modification of "cbviinvALT" is discouraged (13 steps).
+Proof modification of "cbviunALT" is discouraged (64 steps).
+Proof modification of "cbviunvALT" is discouraged (13 steps).
 Proof modification of "cbvmptALT" is discouraged (15 steps).
 Proof modification of "cbvmptfALT" is discouraged (166 steps).
 Proof modification of "cbvmptvALT" is discouraged (13 steps).
@@ -18785,6 +18816,7 @@ Proof modification of "gsumccatOLD" is discouraged (995 steps).
 Proof modification of "hadcomaOLD" is discouraged (37 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
 Proof modification of "hba1-o" is discouraged (34 steps).
+Proof modification of "hbabALT" is discouraged (22 steps).
 Proof modification of "hbae-o" is discouraged (85 steps).
 Proof modification of "hbalg" is discouraged (31 steps).
 Proof modification of "hbalgVD" is discouraged (53 steps).
@@ -18793,6 +18825,7 @@ Proof modification of "hbexg" is discouraged (71 steps).
 Proof modification of "hbexgVD" is discouraged (205 steps).
 Proof modification of "hbimpg" is discouraged (88 steps).
 Proof modification of "hbimpgVD" is discouraged (165 steps).
+Proof modification of "hblemALT" is discouraged (33 steps).
 Proof modification of "hbnae-o" is discouraged (11 steps).
 Proof modification of "hbntal" is discouraged (48 steps).
 Proof modification of "hbra2VD" is discouraged (26 steps).
@@ -18963,14 +18996,22 @@ Proof modification of "nelne2OLD" is discouraged (26 steps).
 Proof modification of "nf5rOLD" is discouraged (22 steps).
 Proof modification of "nf5riOLD" is discouraged (13 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
+Proof modification of "nfabALT" is discouraged (12 steps).
+Proof modification of "nfaba1ALT" is discouraged (9 steps).
 Proof modification of "nfabd2OLD" is discouraged (75 steps).
 Proof modification of "nfabdOLD" is discouraged (18 steps).
 Proof modification of "nfceqiOLD" is discouraged (21 steps).
 Proof modification of "nfcvfOLD" is discouraged (18 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfeu1ALT" is discouraged (25 steps).
+Proof modification of "nfiinALT" is discouraged (35 steps).
+Proof modification of "nfiunALT" is discouraged (35 steps).
+Proof modification of "nfiundALT" is discouraged (43 steps).
 Proof modification of "nfopdALT" is discouraged (70 steps).
+Proof modification of "nfrexALT" is discouraged (27 steps).
+Proof modification of "nfrexdALT" is discouraged (34 steps).
 Proof modification of "nfsab1OLD" is discouraged (12 steps).
+Proof modification of "nfsabALT" is discouraged (17 steps).
 Proof modification of "nfsb2ALT" is discouraged (18 steps).
 Proof modification of "nfsb4ALT" is discouraged (23 steps).
 Proof modification of "nfsb4tALT" is discouraged (119 steps).
