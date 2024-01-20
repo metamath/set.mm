@@ -79,6 +79,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+17-Jan-24 mteqand   [same]      moved from SN's mathbox to main set.mm
 15-Jan-24 sseqtr4d  sseqtrrd
 14-Jan-24 sseqtr4i  sseqtrri
 13-Jan-24 mndlsmidm [same]      moved from AV's mathbox to main set.mm
