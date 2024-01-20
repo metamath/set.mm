@@ -223,7 +223,7 @@ $( The following header is the first to appear in the Theorem List contents,
 
 $(
 ###############################################################################
-  CLASSICAL FIRST ORDER LOGIC WITH EQUALITY
+  CLASSICAL FIRST-ORDER LOGIC WITH EQUALITY
 ###############################################################################
 
   Logic can be defined as the "study of the principles of correct reasoning"
@@ -235,7 +235,7 @@ $(
   This section formally defines the logic system we will use.  In particular,
   it defines symbols for declaring truthful statements, along with rules for
   deriving truthful statements from other truthful statements.  The system
-  defined here is classical first order logic with equality (the most common
+  defined here is classical first-order logic with equality (the most common
   logic system used by mathematicians).
 
   We begin with a few housekeeping items in pre-logic, and then introduce
