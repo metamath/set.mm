@@ -267,12 +267,12 @@ $)
   $( Declare the primitive constant symbols for propositional calculus. $)
   $c ( $.  $( Left parenthesis $)
   $c ) $.  $( Right parenthesis $)
-  $c -> $. $( Right arrow (read:  "implies") $)
-  $c -. $. $( Right handle (read:  "not") $)
-  $c wff $. $( Well-formed formula symbol (read:  "the following symbol
-               sequence is a wff") $)
-  $c |- $. $( Turnstile (read:  "the following symbol sequence is provable" or
-              'a proof exists for") $)
+  $c -> $.  $( Right arrow (read:  "implies") $)
+  $c -. $.  $( Right handle (read:  "not") $)
+  $c wff $.  $( Well-formed formula symbol (read:  "the following symbol
+                sequence is a wff") $)
+  $c |- $.  $( Turnstile (read:  "the following symbol sequence is provable" or
+               'a proof exists for") $)
 
   $( Define the syntax and logical typecodes, and declare that our grammar is
      unambiguous (verifiable using the KLR parser, with compositing depth 5).
@@ -285,10 +285,10 @@ $)
   $)
 
   $( Declare typographical constant symbols that are not directly used in the
-     formalism but are useful in to explain the formalism in comments. $)
+     formalism but are useful to explain it in comments. $)
 
-  $c & $. $( Ampersand (read: "and-also") $)
-  $c => $. $( Big-to (read: "proves") $)
+  $c & $.  $( Ampersand (read: "and"). $)
+  $c => $.  $( Double right arrow (read: "implies"). $)
 
   $( wff variable sequence:  ph ps ch th ta et ze si rh mu la ka $)
   $( Introduce some variable names we will use to represent well-formed
