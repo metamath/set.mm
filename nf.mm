@@ -1,21 +1,229 @@
-$( nf.mm - Version of 22-Feb-2021. $)
+$( This is the Metamath database nf.mm. $)
 
-$(
+$( Metamath is a formal language and associated computer program for
+   archiving, verifying, and studying mathematical proofs, created by Norman
+   Dwight Megill (1950--2021).  For more information, visit
+   https://us.metamath.org and
+   https://github.com/metamath/set.mm, and feel free to ask questions at
+   https://groups.google.com/group/metamath. $)
+
+$( New users may want to read https://us.metamath.org/nfeuni/conventions.html
+   to understand the label naming conventions used in nf.mm.  See also the
+   Metamath program command "MM> HELP VERIFY MARKUP" for markup conventions. $)
+
+$( To break this file into smaller modules, in the Metamath program type
+   "MM> READ nf.mm" followed by "MM> WRITE SOURCE nf.mm / SPLIT".  To
+   recombine, omit "/ SPLIT". $)
+
+$( The database nf.mm was created by Scott Fenton on 12-Sep-2005 from a fork of
+   the database set.mm and has been continuously enriched since then (list of
+   contributors below). $)
+
+
+$( !
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Metamath source file for New Foundations set theory
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
                            ~~ PUBLIC DOMAIN ~~
 This work is waived of all rights, including copyright, according to the CC0
 Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
 
-Principal curator:  Scott Fenton
+Currently active maintainers: See the list in the CONTRIBUTING.md file.
 
-Partly based on the set.mm database, itself dedicated to public domain
-by mean of the CC0 Public Domain Dedication.
+Contributor list (partial):
+
+MC  Mario Carneiro
+SF  Scott Fenton
+NM  Norman Megill
+
 $)
 
-$( Begin $[ set-pred.mm $] $)
+
+$( See "MM> HELP VERIFY MARKUP" for help with modularization tags. $)
+$( Begin $[ nf-header.mm $] $)
+$( !
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Contents of this header
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+* Quick "How To"
+* Bibliography
+* Metamath syntax summary
+* Other notes
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Quick "How To"
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+How to use this file under Windows 95/98/NT/2K/XP/Vista/7/10:
+
+1. Download the Metamath program metamath.exe following the instructions on the
+   Metamath home page (https://us.metamath.org) and put it in the same
+   directory as this file.
+2. In Windows Explorer, double-click on metamath.exe.
+3. Type "read nf.mm" and press Enter.
+4. Type "help" for a list of help topics, and "help demo" for some
+   command examples.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Bibliography
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Bibliographical references are made by bracketing an identifier in a theorem's
+comment, such as [RussellWhitehead].  These refer to HTML tags on the following
+web pages:
+
+  Logic and set theory - see https://us.metamath.org/mpeuni/mmset.html#bib
+  Hilbert space - see https://us.metamath.org/mpeuni/mmhil.html#ref
+
+A bracketed reference must be preceded by a theorem number, etc. and followed
+by a page number.  See "MM> HELP WRITE BIBLIOGRAPHY" for details.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Metamath syntax summary
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The HELP LANGUAGE command in the Metamath program will give you a quick
+overview of Metamath.  The specification is found on pp. 92--95 of the
+Metamath book.  The following syntax summary is provided for convenience
+but may omit some details.
+
+A Metamath database (set of one or more ASCII source files) is a sequence of
+_tokens_, which are normally separated by spaces or line breaks.  The only
+tokens that are built into the Metamath language are those (two-character
+sequences) beginning with $, shown in the following. These tokens are called
+_keywords_:
+
+          $c ... $. - Constant declaration
+          $v ... $. - Variable declaration
+          $d ... $. - Disjoint (distinct) variable restriction
+  <label> $f ... $. - "Floating" hypothesis (i.e. variable type declaration)
+  <label> $e ... $. - "Essential" hypothesis (i.e. a logical assumption for a
+                      theorem or axiom)
+  <label> $a ... $. - Axiom or definition or syntax construction
+  <label> $p ... $= ... $. - Theorem and its proof
+          ${ ... $} - Block for defining the scope of the above statements
+                      (except $a, $p which are forever active)
+$)        $( ... $)
+$(                  - Comments (may not be nested); see HELP LANGUAGE
+                      for markup features.
+          $[ ... $] - Include a file
+
+The above two-character sequences beginning with "$" are the only primitives
+built into the Metamath language.  The only "logic" Metamath uses in its proof
+verification algorithm is the substitution of expressions for variables while
+checking for distinct variable violations.  Everything else, including the
+axioms for logic, is defined in this database file.
+
+All other tokens are user-defined, and their names are arbitrary.  There are
+two kinds of user-defined tokens, called math symbols (or just symbols) and
+labels.  A _symbol_ may contain any non-whitespace printable character except
+"$".  A _label_ may contain only alphanumeric characters and the characters "."
+(period), "-" (hyphen), and "_" (underscore).  Symbols and labels are
+case-sensitive.  All labels (except in proofs) must be distinct.  A label may
+not have the same name as a symbol (to simplify the coding of certain parsers
+and translators).
+
+Here is some more detail about the syntax:
+
+  $c <symbollist> $.
+      <symbollist> is a (whitespace-separated) list of distinct symbols that
+      haven't been used before.
+  $v <symbollist> $.
+      <symbollist> is a list of distinct symbols that haven't been used yet
+      in the current scope (see ${ ... $} below).
+  $d <symbollist> $.
+      <symbollist> is a (whitespace-separated) list of distinct symbols
+      previously declared with $v in current scope.  It means that
+      substitutions into these symbols may not have variables in common.
+  <label> $f <symbollist> $.
+      <symbollist> is a list of 2 symbols, the first of which must be
+      previously declared with $c in the current scope.
+  <label> $e <symbollist> $.
+      <symbollist> is a list of 2 or more symbols, the first of which must be
+      previously declared with $c in the current scope.
+  <label> $a <symbollist> $.
+      <symbollist> is a list of 2 or more symbols, the first of which must be
+      previously declared with $c in the current scope.
+  <label> $p <symbollist> $= <proof> $.
+      <symbollist> is a list of 2 or more symbols, the first of which must be
+      previously declared with $c in the current scope.  <proof> is either a
+      whitespace-delimited sequence of previous labels (created by
+      SAVE PROOF <label> /NORMAL) or a compressed proof (created by
+      SAVE PROOF <label> /COMPRESSED).  After using SAVE PROOF, use
+      WRITE SOURCE to save the database file to disk.
+  ${ ... $}
+      Block for scoping the above statements (except $a, $p which are forever
+      active).  Currently, $c may not occur inside of a block.
+$)
+  $( <any text> $)
+$(    Comment.  Note: <any text> may not contain adjacent "$" and ")"
+      characters.  The comment opening and closing delimiters must be
+      surrounded by whitespace (space, tab, CR, LF, or FF).
+  $[ <filename> $]
+      Insert contents of <filename> at this point.  If <filename> is current
+      file or has been already been inserted, it will not be inserted again.
+
+Inside of comments, it is recommended that labels be preceded with a tilde (~)
+and math symbol tokens be enclosed in grave accents, also known as backticks
+(` `). These tildes, tokens, math symbols and backticks should be surrounded by
+spaces.  This way the LaTeX and HTML rendition of comments will be accurate,
+and tools to globally change labels and math symbols will also change them in
+comments.  Note that inside of backticks a pair of backticks is interpreted as
+a single backtick.  A special comment containing $ t (with no space after the
+dollar sign) defines LaTeX and HTML symbols.  See HELP LANGUAGE and HELP HTML
+for other markup features in comments.
+
+The proofs in this file are in "compressed" format for storage efficiency.  The
+Metamath program reads the compressed format directly.  This format is
+described in Appendix B of the Metamath book.  It is not intended to be read by
+humans.  For viewing proofs you should use the various SHOW PROOF commands
+described in the Metamath book (or the online HELP).
+
+The Metamath program does not normally affect any content of this file other
+than proofs, i.e., the text between "$=" and "$." (and some rewrapping).  All
+other content is user-created.  Proofs are created or modified with the PROVE
+command.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Other notes
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+1.  It is recommended that you be familiar with Chapters 2 and 4 of the
+Metamath book to understand the Metamath language.  Chapters 2, 3 and 5 explain
+how to use the Metamath program.  Chapter 3 gives an informal overview of what
+this source file is all about.  Appendix A gives the standard mathematical
+symbols corresponding to some of the ASCII tokens used in this file.
+
+The ASCII tokens may seem cryptic at first, even if you are familiar with set
+theory, but a review of the definition summary in Chapter 3 should quickly
+enable you to see the correspondence to standard mathematical notation.  To
+easily find the definition of a token, search for the first occurrences of the
+token surrounded by spaces.  Some odd-looking ones include "-." for "not", and
+"C_" for "is a subset of".  The Metamath program "MM> HELP TEX" command
+explains how to obtain a LaTeX output to see the real mathematical symbols.
+Let us know if you have better suggestions for naming ASCII tokens.
+
+$)
+
+$( End $[ nf-header.mm $] $)
+
+
+$( Begin $[ nf-pred.mm $] $)
+
+$( The following header is the first to appear in the Theorem List contents,
+   because higher-level headers suppress all previous same-level or
+   lower-level headers in the same comment area between $a and $p statements.
+   See "MM> HELP WRITE THEOREM_LIST" for information about headers. $)
 
 $(
 ###############################################################################
-            CLASSICAL FIRST ORDER LOGIC WITH EQUALITY
+  CLASSICAL FIRST ORDER LOGIC WITH EQUALITY
 ###############################################################################
 
   Logic can be defined as the "study of the principles of correct reasoning"
@@ -48,7 +256,7 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                           Pre-logic
+  Pre-logic
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
   This section includes a few "housekeeping" mechanisms before we begin
@@ -75,6 +283,12 @@ $)
     syntax '|-' as 'wff';
     unambiguous 'klr 5';
   $)
+
+  $( Declare typographical constant symbols that are not directly used in the
+     formalism but are useful in to explain the formalism in comments. $)
+
+  $c & $. $( Ampersand (read: "and-also") $)
+  $c => $. $( Big-to (read: "proves") $)
 
   $( wff variable sequence:  ph ps ch th ta et ze si rh mu la ka $)
   $( Introduce some variable names we will use to represent well-formed
@@ -124,7 +338,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Inferences for assisting proof development
+  Inferences for assisting proof development
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   The inference rules in this section will normally never appear in a completed
@@ -193,9 +407,10 @@ $)
       (  ) C $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                           Propositional calculus
+  Propositional calculus
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
   Propositional calculus deals with general truths about well-formed formulas
@@ -221,15 +436,16 @@ $(
   All 194 axioms, definitions, and theorems for propositional calculus in
   _Principia Mathematica_ (specifically *1.2 through *5.75) are axioms or
   formally proven.  See the Bibliographic Cross-References at
-  ~ http://us.metamath.org/mpeuni/mmbiblio.html for a complete
-  cross-reference from sources used to its formalization in the Metamath
-  Proof Explorer.
+  ~ http://us.metamath.org/nfeuni/mmbiblio.html for a complete
+  cross-reference from sources used to its formalization in the New Foundations
+  Explorer.
 
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Recursively define primitive wffs for propositional calculus
+  Recursively define primitive wffs for propositional calculus
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -243,6 +459,10 @@ $)
      wff.  Later, in predicate calculus, we will extend the basic wff
      definition by including atomic wffs ( ~ weq and ~ wel ). $)
   wn $a wff -. ph $.
+
+  $( Register negation '-.' as a primitive expression (lacking a
+     definition). $)
+  $( $j primitive 'wn'; $)
 
   $( If ` ph ` and ` ps ` are wff's, so is ` ( ph -> ps ) ` or " ` ph ` implies
      ` ps ` ."  Part of the recursive definition of a wff.  The resulting wff
@@ -281,12 +501,14 @@ $)
      implication." $)
   wi $a wff ( ph -> ps ) $.
 
-  $( Register '-.' and '->' as primitive expressions (lacking definitions). $)
-  $( $j primitive 'wn' 'wi'; $)
+  $( Register implication '->' as a primitive expression (lacking a
+     definition). $)
+  $( $j primitive 'wi'; $)
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The axioms of propositional calculus
+  The axioms of propositional calculus
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   Postulate the three axioms of classical propositional calculus.
@@ -316,6 +538,28 @@ $(
   found manually.
 
 $)
+
+  ${
+    $( Minor premise for modus ponens. $)
+    min $e |- ph $.
+    $( Major premise for modus ponens. $)
+    maj $e |- ( ph -> ps ) $.
+    $( Rule of Modus Ponens.  The postulated inference rule of propositional
+       calculus.  See e.g.  Rule 1 of [Hamilton] p. 73.  The rule says, "if
+       ` ph ` is true, and ` ph ` implies ` ps ` , then ` ps ` must also be
+       true".  This rule is sometimes called "detachment", since it detaches
+       the minor premise from the major premise.  "Modus ponens" is short for
+       "modus ponendo ponens", a Latin phrase that means "the mode that by
+       affirming affirms" - remark in [Sanford] p. 39.  This rule is similar to
+       the rule of modus tollens ~ mto .
+
+       Note:  In some web page displays such as the Statement List, the
+       symbols " ` & ` " and " ` => ` " informally indicate the relationship
+       between the hypotheses and the assertion (conclusion), abbreviating the
+       English words "and" and "implies".  They are not part of the formal
+       language.  (Contributed by NM, 30-Sep-1992.) $)
+    ax-mp $a |- ps $.
+  $}
 
   $( Axiom _Simp_.  Axiom A1 of [Margaris] p. 49.  One of the 3 axioms of
      propositional calculus.  The 3 axioms are also given as Definition 2.1 of
@@ -347,40 +591,15 @@ $)
      different technical meaning.  (Contributed by NM, 5-Aug-1993.) $)
   ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
 
-  $(
-     Postulate the modus ponens rule of inference.
-  $)
-
-  ${
-    $( Minor premise for modus ponens. $)
-    min $e |- ph $.
-    $( Major premise for modus ponens. $)
-    maj $e |- ( ph -> ps ) $.
-    $( Rule of Modus Ponens.  The postulated inference rule of propositional
-       calculus.  See e.g.  Rule 1 of [Hamilton] p. 73.  The rule says, "if
-       ` ph ` is true, and ` ph ` implies ` ps ` , then ` ps ` must also be
-       true."  This rule is sometimes called "detachment," since it detaches
-       the minor premise from the major premise.  "Modus ponens" is short for
-       "modus ponendo ponens," a Latin phrase that means "the mood that by
-       affirming affirms" [Sanford] p. 39.  This rule is similar to the rule of
-       modus tollens ~ mto .
-
-       Note:  In some web page displays such as the Statement List, the symbols
-       "&" and "=>" informally indicate the relationship between the hypotheses
-       and the assertion (conclusion), abbreviating the English words "and" and
-       "implies."  They are not part of the formal language.  (Contributed by
-       NM, 5-Aug-1993.) $)
-    ax-mp $a |- ps $.
-  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Logical implication
+  Logical implication
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   The results in this section are based on implication only, and avoid ax-3.
   In an implication, the wff before the arrow is called the "antecedent" and
-  the wff after the arrow is called the "consequent."
+  the wff after the arrow is called the "consequent".
 
   We will use the following descriptive terms very loosely:  A "closed form" or
   "tautology" has no $e hypotheses.  An "inference" has one or more $e
@@ -1135,9 +1354,10 @@ $)
       -> ( ( ps -> ph ) -> ( ps -> ch ) ) ) $=
     ( wi jarr a2d ) ABDACDZDBACABGEF $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Logical negation
+  Logical negation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   This section makes our first use of the third axiom of propositional
@@ -1751,9 +1971,10 @@ $)
                       -> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) ) $=
     ( wi wn id pm2.01 mt2 ) ABCBACDCDZHCZIDCIHEIFG $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Logical equivalence
+  Logical equivalence
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   The definition ~ df-bi in this section is our first definition, which
@@ -1767,6 +1988,7 @@ $(
   allows us to use logic to manipulate definitions directly.  This greatly
   simplifies many proofs since it eliminates the need for a separate mechanism
   for introducing and eliminating definitions.
+
 $)
 
   $( Declare the biconditional connective. $)
@@ -3279,7 +3501,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Logical disjunction and conjunction
+  Logical disjunction and conjunction
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   Here we define disjunction (logical 'or') ` \/ ` ( ~ df-or ) and conjunction
@@ -6689,7 +6911,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Miscellaneous theorems of propositional calculus
+  Miscellaneous theorems of propositional calculus
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -7211,9 +7433,10 @@ $)
     anbi2i 3bitrri ) CABEFZCEZACEZGZUBACFCDEZFEFZEZGUBFUGFEFCCUAAGZEZUDUHCUAAFH
     UHFABIUAAJKLUIUHCEUDCUHMUAACNOOUCUGUBCUFACCUEGUFCDPCUEQORSUBUGQT $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Abbreviated conjunction and disjunction of three wff's
+  Abbreviated conjunction and disjunction of three wff's
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9367,9 +9590,10 @@ $)
       ( wi 3exp wn a1d pm2.61i pm2.61nii ) BCDABCDIZIABCDHJAKZOBPDCELLMFGN $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Logical 'nand' (Sheffer stroke)
+  Logical 'nand' (Sheffer stroke)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9488,9 +9712,10 @@ $)
 
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Logical 'xor'
+  Logical 'xor'
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9575,9 +9800,10 @@ $)
       BDMCEMN $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                True and false constants
+  True and false constants
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9698,9 +9924,10 @@ $)
       ( wfal pm2.21dd ) ABECDF $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Truth tables
+  Truth tables
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   Some sources define operations on true/false values using truth tables.
@@ -9837,9 +10064,10 @@ $)
     ( wfal wxo wtru wn wb df-xor falbifal xchbinx nottru bitri ) AABZCDAKAAECAA
     FGHIJ $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-       Auxiliary theorems for Alan Sare's virtual deduction tool, part 1
+  Auxiliary theorems for Alan Sare's virtual deduction tool, part 1
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9989,9 +10217,10 @@ $)
 
 $( End of auxiliary theorems for Alan Sare's virtual deduction tool, part 1 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-       Half-adders and full adders in propositional calculus
+  Half-adders and full adders in propositional calculus
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   Propositional calculus deals with truth values, which can be interpreted as
@@ -10176,15 +10405,17 @@ $)
     ( wn whad wxo wb had1 hadnot df-xor xorneg bitr3i con1bii 3bitr4g con4bid )
     ADZABCEZBCFZPPBDZCDZESTGZQDRDPSTHABCIUARUADSTFRSTJBCKLMNO $.
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-      Other axiomatizations of classical propositional calculus
+  Other axiomatizations of classical propositional calculus
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-      Derive the Lukasiewicz axioms from Meredith's sole axiom
+  Derive the Lukasiewicz axioms from Meredith's sole axiom
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10346,9 +10577,10 @@ $)
   luk-3 $p |- ( ph -> ( -. ph -> ps ) ) $=
     ( wn wi merlem11 merlem1 ax-mp ) ACZHBDZDIDAIDHBEABHIFG $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-      Derive the standard axioms from the Lukasiewicz axioms
+  Derive the standard axioms from the Lukasiewicz axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10428,9 +10660,10 @@ $)
   ax3 $p |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $=
     ( wn wi luklem2 luklem4 luklem1 ) ACZBCDHADADBADZDIHBAAEAIFG $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-           Derive Nicod's axiom from the standard axioms
+  Derive Nicod's axiom from the standard axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 Prove Nicod's axiom and implication and negation definitions.
@@ -10514,7 +10747,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-          Derive the Lukasiewicz axioms from Nicod's axiom
+  Derive the Lukasiewicz axioms from Nicod's axiom
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10625,7 +10858,7 @@ $)
 
 $( (not in Table of Contents)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Biconditional justification from Nicod's axiom
+  Biconditional justification from Nicod's axiom
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10659,9 +10892,10 @@ $)
       ( wnan nic-isw2 nic-id nic-iimp1 nic-idel ) BBAABDZAADZBBDZBKIJCEBFGH $.
   $}
 
+
 $( (not in Table of Contents)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-             Prove the Lukasiewicz axioms from Nicod's axiom
+  Prove the Lukasiewicz axioms from Nicod's axiom
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10703,9 +10937,10 @@ $)
     ( wnan nic-dfim nic-bi1 nic-dfneg nic-bi2 nic-id nic-iimp1 nic-iimp2 nic-mp
     wn wi ) AALZBMZOCCZAOMZQNBBCZOANRCONBDENAACZSASNAFGAHIJPQAODEK $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Derive Nicod's Axiom from Lukasiewicz's First Sheffer Stroke Axiom
+  Derive Nicod's Axiom from Lukasiewicz's First Sheffer Stroke Axiom
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10747,9 +10982,10 @@ $)
     ( wnan lukshefth1 lukshefth2 nic-mp lukshef-ax1 ) EEEFFZDCFADFZLFFZFZACBFFZ
     FZONFZQOMKFZFZPPROFSSACBEDGORHINRRFFSPPFFOOOFFMKHNRROJIIONHI $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-      Derive the Lukasiewicz Axioms from the Tarski-Bernays-Wajsberg Axioms
+  Derive the Lukasiewicz Axioms from the Tarski-Bernays-Wajsberg Axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -11180,9 +11416,10 @@ $)
     AADALBMJBAJEALAFGGZJJKBZNKKBZJOBZKABZKBZKBZPKADKSBTPBKREKSKFGGRPBPQBCKAHKAA
     KJJIGGGG $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-       Derive the Lukasiewicz axioms from the The Russell-Bernays Axioms
+  Derive the Lukasiewicz axioms from the The Russell-Bernays Axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -11349,9 +11586,10 @@ $)
     ( wn wi wo rb-imdf rblem7 rb-ax4 rb-ax3 rbsyl rb-ax2 anmp rblem2 ) ACZNBDZE
     ZAODZNNCZBEZOOSNBFGNREZNSERNETRNNENNHNNIJRNKLRBNMLJQPAOFGL $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Stoic logic indemonstrables (Chrysippus of Soli)
+  Stoic logic indemonstrables (Chrysippus of Soli)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   The Greek Stoics developed a system of logic.
@@ -11494,7 +11732,7 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-    Predicate calculus with equality:  Tarski's system S2 (1 rule, 6 schemes)
+  Predicate calculus with equality:  Tarski's system S2 (1 rule, 6 schemes)
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
   Here we extend the language of wffs with predicate calculus, which allows us
@@ -11556,9 +11794,10 @@ $(
 
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    Universal quantifier; define "exists" and "not free"
+  Universal quantifier; define "exists" and "not free"
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -11656,9 +11895,10 @@ $)
      11-Aug-2016.) $)
   df-nf $a |- ( F/ x ph <-> A. x ( ph -> A. x ph ) ) $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-       Rule scheme ax-gen (Generalization)
+  Rule scheme ax-gen (Generalization)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -11760,9 +12000,10 @@ $)
       ( wal pm2.21i nfi ) ABAABDCEF $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-         Axiom scheme ax-5 (Quantified Implication)
+  Axiom scheme ax-5 (Quantified Implication)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -12418,9 +12659,10 @@ $)
       ( id alrimivv ) AABCADE $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Equality predicate; define substitution
+  Equality predicate; define substitution
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -12628,9 +12870,10 @@ $)
       ( wsb biimpi sbimi biimpri impbii ) ACDFBCDFABCDABEGHBACDABEIHJ $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Axiom scheme ax-9 (Existence)
+  Axiom scheme ax-9 (Existence)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -12852,7 +13095,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                   Axiom scheme ax-8 (Equality)
+  Axiom scheme ax-8 (Equality)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -13167,9 +13410,10 @@ $)
       ( wal alimi alcomiw syl ) ADHZACHZDHLCHAMDGIABDCEFJK $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                  Membership predicate
+  Membership predicate
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -13256,7 +13500,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Axiom schemes ax-13 (Left Equality for Binary Predicate)
+  Axiom schemes ax-13 (Left Equality for Binary Predicate)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -13284,7 +13528,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Axiom schemes ax-14 (Right Equality for Binary Predicate)
+  Axiom schemes ax-14 (Right Equality for Binary Predicate)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -13307,7 +13551,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-      Logical redundancy of ax-6 , ax-7 , ax-11 , ax-12
+  Logical redundancy of ax-6 , ax-7 , ax-11 , ax-12
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   The orginal axiom schemes of Tarski's predicate calculus are ~ ax-5 ,
@@ -13521,7 +13765,7 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-   Predicate calculus with equality:  Auxiliary axiom schemes (4 schemes)
+  Predicate calculus with equality:  Auxiliary axiom schemes (4 schemes)
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
   In this section we introduce four additional schemes ~ ax-6 , ~ ax-7 ,
@@ -13546,9 +13790,10 @@ $(
 
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-              Axiom scheme ax-6 (Quantified Negation)
+  Axiom scheme ax-6 (Quantified Negation)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -13577,9 +13822,10 @@ $)
   modal-5 $p |- ( -. A. x -. ph -> A. x -. A. x -. ph ) $=
     ( wn hbn1 ) ACBD $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-            Axiom scheme ax-7 (Quantifier Commutation)
+  Axiom scheme ax-7 (Quantifier Commutation)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -13659,7 +13905,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-           Axiom scheme ax-11 (Substitution)
+  Axiom scheme ax-11 (Substitution)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -15122,9 +15368,10 @@ $)
   sb4e $p |- ( [ y / x ] ph -> A. x ( x = y -> E. y ph ) ) $=
     ( wsb weq wa wex wi wal sb1 equs5e syl ) ABCDBCEZAFBGMACGHBIABCJABCKL $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-          Axiom scheme ax-12 (Quantified Equality)
+  Axiom scheme ax-12 (Quantified Equality)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -17469,7 +17716,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-               Legacy theorems using obsolete axioms
+  Legacy theorems using obsolete axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   These theorems were mostly intended to study properties of the older axiom
@@ -18031,9 +18278,10 @@ $)
     ( weq wal wi ax-10 ax11 equcoms sps-o pm2.27 al2imi sylsyld ) BCDZBECBDZCEA
     BEZOAFZCEZACEBCGNPRFZBSCBACBHIJOQACOAKLM $.
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-               Existential uniqueness
+  Existential uniqueness
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -18885,15 +19133,17 @@ $)
       UEBJABKUFUDCFGBIAUGLBCMABCNOPQABRSTUA $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-             Other axiomatizations related to classical predicate calculus
+  Other axiomatizations related to classical predicate calculus
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Predicate calculus with all distinct variables
+  Predicate calculus with all distinct variables
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -18924,9 +19174,10 @@ $)
     ax-11d $a |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-               Aristotelian logic: Assertic syllogisms
+  Aristotelian logic: Assertic syllogisms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   Model the Aristotelian assertic syllogisms using modern notation.
@@ -19468,19 +19719,20 @@ $)
       O $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-               Intuitionistic logic
+  Intuitionistic logic
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-Intuitionistic (constructive) logic is similar to classical logic
-with the notable omission of ~ ax-3 and theorems such as ~ exmid or
-~ peirce . We mostly treat intuitionistic logic in a separate file, iset.mm,
-which is known as the Intuitionistic Logic Explorer on the web site. However,
-iset.mm has a number of additional axioms (mainly to replace definitions like
-~ df-or and ~ df-ex which are not valid in intitionistic logic) and we want
-to prove those axioms here to demonstrate that adding those axioms in iset.mm
-does not make iset.mm any less consistent than set.mm.
+  Intuitionistic (constructive) logic is similar to classical logic with the
+  notable omission of ~ ax-3 and theorems such as ~ exmid or ~ peirce .  We
+  mostly treat intuitionistic logic in a separate file, iset.mm, which is known
+  as the Intuitionistic Logic Explorer on the web site.  However, iset.mm has a
+  number of additional axioms (mainly to replace definitions like ~ df-or and
+  ~ df-ex which are not valid in intitionistic logic) and we want to prove
+  those axioms here to demonstrate that adding those axioms in iset.mm does not
+  make iset.mm any less consistent than set.mm.
 
 $)
 
@@ -19546,39 +19798,39 @@ $)
     IGZGZUNUCIZUMHZUPUOUFIUIHZHABCJUMUQUOUFUIKLMUCUMKMUCUFUINMOUGUICUCUFCUBCPUE
     CPQSRUCUFUJNR $.
 
-$( End $[ set-pred.mm $] $)
+$( End $[ nf-pred.mm $] $)
 
 
 $(
 ###############################################################################
-                NEW FOUNDATIONS (NF) SET THEORY
+  NEW FOUNDATIONS (NF) SET THEORY
 ###############################################################################
 
-Here we introduce New Foundations set theory.
-We first introduce the axiom of extensionality in ~ ax-ext .
-We later add set construction axioms from
-Hailperin, such as ~ ax-nin ,
-that are designed to implement the
-Stratification Axiom from Quine.
+  Here we introduce New Foundations set theory.  We first introduce the axiom
+  of extensionality in ~ ax-ext .  We later add set construction axioms from
+  Hailperin, such as ~ ax-nin , that are designed to implement the
+  Stratification Axiom from Quine.
 
-We then introduce ordered pairs, relationships, and functions.
-Note that the definition of an ordered pair (in ~ df-op ) is different
-than the Kuratowski ordered pair definition (in ~ df-opk )
-typically used in ZFC, because the Kuratowski definition is not type-level.
+  We then introduce ordered pairs, relationships, and functions.  Note that the
+  definition of an ordered pair (in ~ df-op ) is different than the Kuratowski
+  ordered pair definition (in ~ df-opk ) typically used in ZFC, because the
+  Kuratowski definition is not type-level.
 
-We conclude with orderings.
+  We conclude with orderings.
+
 $)
 
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-             NF Set Theory - start with the Axiom of Extensionality
+  NF Set Theory - start with the Axiom of Extensionality
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Introduce the Axiom of Extensionality
+  Introduce the Axiom of Extensionality
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -19677,7 +19929,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                   Class abstractions (a.k.a. class builders)
+  Class abstractions (a.k.a. class builders)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -21261,9 +21513,10 @@ $)
       ( cv wceq wcel wsb sbequ12 abbi2dv ) AEBEFCEDGZABHCDKABIJ $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Class form not-free predicate
+  Class form not-free predicate
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -21606,9 +21859,10 @@ $)
       UMVIBCADUKRSURDUKRTUNBCBGEFUFQUGUHUIUHVCUPBCGULEUJSGUSEUJT $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Negated equality and membership
+  Negated equality and membership
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -22357,7 +22611,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Restricted quantification
+  Restricted quantification
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -24389,9 +24643,10 @@ $)
       ( nfcv nfv cbvrab ) ABCDECEGDEGADHBCHFI $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The universal class
+  The universal class
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -26497,9 +26752,10 @@ $)
       EGTUQURUSUTVA $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                    Russell's Paradox
+  Russell's Paradox
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -26571,9 +26827,10 @@ $)
       JFNUG $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Proper substitution of classes for sets
+  Proper substitution of classes for sets
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -27499,9 +27756,10 @@ $)
       ( wrmo wcel wa wceq rmob biimp3ar ) ADEJFEKBLFGMGEKCLABCDEFGHINO $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Proper substitution of classes for sets into classes
+  Proper substitution of classes for sets into classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -28214,7 +28472,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Define boolean set operations
+  Define boolean set operations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -28548,7 +28806,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Subclasses and subsets
+  Subclasses and subsets
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -29513,9 +29771,10 @@ $)
     ( wss wceq wi wpss wn wa pm4.61 dfpss2 bitr4i con1bii ) ABCZABDZEZABFZOGMNG
     HPMNIABJKL $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The difference, union, and intersection of two classes
+  The difference, union, and intersection of two classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -30738,7 +30997,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-           The empty set
+  The empty set
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -31587,7 +31846,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-           "Weak deduction theorem" for set theory
+  "Weak deduction theorem" for set theory
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   In a Hilbert system of logic (which consists of a set of axioms, modus
@@ -32265,9 +32524,10 @@ $)
       ZIZJKABTIZJKABCIZJKFGBCDESBLUAUBJASBTMNTCLUBUCJATCBONASTFPGPQR $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                          Power classes
+  Power classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -32399,7 +32659,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-          Unordered and ordered pairs
+  Unordered and ordered pairs
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -33627,7 +33887,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                       The union of a class
+  The union of a class
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -33958,7 +34218,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The intersection of a class
+  The intersection of a class
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -34359,7 +34619,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Indexed union and intersection
+  Indexed union and intersection
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35184,7 +35444,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The Kuratowski ordered pair
+  The Kuratowski ordered pair
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35268,9 +35528,10 @@ $)
       $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        More Boolean set operations
+  More Boolean set operations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35338,13 +35599,14 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-             NF Set Theory - add the Set Construction Axioms
+  NF Set Theory - add the Set Construction Axioms
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Introduce the set construction axioms
+  Introduce the set construction axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35452,9 +35714,11 @@ $)
        (Contributed by SF, 12-Jan-2015.) $)
     ax-sn $a |- E. y A. z ( z e. y <-> z = x ) $.
   $}
+
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Primitive forms for some axioms
+  Primitive forms for some axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35636,7 +35900,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Initial existence theorems
+  Initial existence theorems
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35814,7 +36078,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Singletons and pairs (continued)
+  Singletons and pairs (continued)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35911,9 +36175,10 @@ $)
       RVTXHIUMJUMKUMLUMUNUOURUPUSUT $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Kuratowski ordered pairs (continued)
+  Kuratowski ordered pairs (continued)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35958,7 +36223,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Cardinal one, unit unions, and unit power classes
+  Cardinal one, unit unions, and unit power classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -36335,7 +36600,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Kuratowski relationships
+  Kuratowski relationships
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -37352,7 +37617,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Kuratowski existence theorems
+  Kuratowski existence theorems
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -37950,7 +38215,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Definite description binder (inverted iota)
+  Definite description binder (inverted iota)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -38297,7 +38562,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Finite cardinals
+  Finite cardinals
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -39103,7 +39368,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Deriving infinity
+  Deriving infinity
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -42035,16 +42300,17 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     ( cplc wceq cnnc wcel w3a addccom eqeq12i wb addccan2 3coml syl5bb ) BADZCA
     DZEABDZACDZEZBFGZCFGZAFGZHBCEZOQPRBAICAIJUBTUASUCKCABLMN $.
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                Ordered Pairs, Relationships, and Functions
+  Ordered Pairs, Relationships, and Functions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Ordered Pairs
+  Ordered Pairs
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -42403,7 +42669,6 @@ $)
       ( cvv wcel cproj2 proj2exg ax-mp ) ACDAECDBACFG $.
   $}
 
-
   ${
     $d A x y z $.  $d B x y z $.
     $( Lemma for ~ phi11 .  (Contributed by SF, 3-Feb-2015.) $)
@@ -42705,7 +42970,6 @@ $)
       YEYDUVEUVJDXFZWSYDYEUVFUVLUVJWTYFUVKYDYELXAXBXCXDWAXGUVGBUVFUVEUVDUVCXEUV
       BLXHXIXIXJXKXLCXJXMXNXQXOYLYIMYMYJBYLYIXPPXRXS $.
 
-
     $( Lemma for ~ phiall .  Any set without ` 0c ` is equal to the ` Phi ` of
        a set.  (Contributed by Scott Fenton, 8-Apr-2021.) $)
     phialllem2 $p |- ( -. 0c e. A -> E. x A = Phi x ) $=
@@ -42759,13 +43023,12 @@ $)
     opeqex $p |- ( A e. V -> E. x E. y A = <. x , y >. ) $=
       ( wcel cvv cv cop wceq wex elex opeqexb sylib ) CDECFECAGBGHIBJAJCDKABCLM
       $.
-
   $}
 
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Ordered-pair class abstractions (class builders)
+  Ordered-pair class abstractions (class builders)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -42963,9 +43226,10 @@ $)
       SUE $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                     Binary relations
+  Binary relations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -43427,7 +43691,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Ordered-pair class abstractions (cont.)
+  Ordered-pair class abstractions (cont.)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -43680,7 +43944,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Set construction functions
+  Set construction functions
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -44742,7 +45006,7 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Epsilon and identity relations
+  Epsilon and identity relations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -44817,7 +45081,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Functions and relations
+  Functions and relations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -45142,7 +45406,6 @@ $)
       NVECFIVKFPZVMVCVNVDVOVLVBVAVKFUTGTUGVKFUSGTRHUHUIUJUB $.
   $}
 
-
   ${
     $d w y z A $.  $d w y z B $.  $d w x y z C $.
     $( Distributive law for cross product over indexed union.  (Contributed by
@@ -45222,7 +45485,6 @@ $)
       EAUNUEURDUFZVHVAVKVEVLVGUQUTURDEUGUHVLVIVCVJVDURDBUIVLCFEGUOUJUKABCEULUMU
       P $.
   $}
-
 
   ${
     $d x y z A $.  $d x z B $.  $d y z ph $.  $d x ps $.
@@ -45511,7 +45773,6 @@ $)
       $.
   $}
 
-
   ${
     $d x y A $.  $d x y B $.
     relssi.1 $e |- ( <. x , y >. e. A -> <. x , y >. e. B ) $.
@@ -45573,7 +45834,6 @@ $)
       ( wceq cv cop wcel wb wal eqopr gen2 mpgbir ) DEGAHBHICHIZDJPEJKZCLBLAABC
       DEMQBCFNO $.
   $}
-
 
   ${
     $d x y z A $.  $d x y z B $.  $d x y z ph $.
@@ -45688,7 +45948,6 @@ $)
     xpindir $p |- ( ( A i^i B ) X. C ) = ( ( A X. C ) i^i ( B X. C ) ) $=
       ( cxp cin inxp inidm xpeq2i eqtr2i ) ACDBCDEABEZCCEZDJCDACBCFKCJCGHI $.
   $}
-
 
   ${
     $d x y A $.
@@ -48140,7 +48399,6 @@ $)
   funsngOLD $p |- ( ( A e. V /\ B e. W ) -> Fun { <. A , B >. } ) $=
     ( cop csn wfun wcel wa funsn a1i ) ABEFGACHBDHIABJK $.
 
-
   $( A set of two pairs is a function if their first members are different.
      (Contributed by FL, 26-Jun-2011.)  (Revised by Scott Fenton,
      16-Apr-2021.) $)
@@ -48151,7 +48409,6 @@ $)
     df-pr ) ABGZCEHZDFHZIZACJZKZBDJZKZLZMZUQUSNZMUPUROZUTOZPZQRZVBUPVFAKZBKZPZQ
     UPVDVHVEVIUNUMVDVHRUOACESUCUOUMVEVIRUNBDFSUDUEUMUNVJQRUOABUFUGUAURMUTMVGVBA
     CTBDTURUTUHUIUBVCVAUQUSULUJUK $.
-
 
   $( A set of two pairs is a function if their first members are different.
      (Contributed by FL, 26-Jun-2011.)  (Proof modification is discouraged.)
@@ -51855,9 +52112,10 @@ $)
     ( vx cep cdm cvv wceq cv wcel eqv csn wbr vex snid epelc mpbir breldm ax-mp
     snex mpgbir ) BCZDEAFZSGZAASHTTIZBJZUAUCTUBGTAKLTUBTQMNTUBBOPR $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Operations
+  Operations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -52526,7 +52784,6 @@ $)
       VECDEUEUFVDVHVEESZCDMVIVECDEUGVDVLACDVCCUHVBDCUIVCVLAUAZCVBVMDVBVLAVEAEAB
       UJUKVBAABESZIVLVBAVNVAVNABEUMRULABEUNUOUPTTUQURVFVIUSUT $.
   $}
-
 
   ${
     $d x y z $.  $d z ph $.
@@ -53330,7 +53587,6 @@ $)
       KNABCDFLM $.
   $}
 
-
   $( Eliminate antecedent for operator values: domain and range can be taken to
      be a set.  (Contributed by set.mm contributors, 25-Feb-2015.) $)
   elovex12 $p |- ( A e. ( B F C ) -> ( B e. _V /\ C e. _V ) ) $=
@@ -53351,7 +53607,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        "Maps to" notation
+  "Maps to" notation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -54293,9 +54549,10 @@ $)
       ( cxp wfn cdm wceq fnmpt2i fndm ax-mp ) FCDIZJFKPLABCDEFGHMPFNO $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Set construction lemmas
+  Set construction lemmas
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -55793,9 +56050,10 @@ $)
       FCWOWKVMVHVIVJFWIVKWHKWGKWDWFWCHVLVNVOWEGVPVQVQVRVSVTVSVTWAWB $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Closure operation
+  Closure operation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -56039,16 +56297,17 @@ $)
       APAGJQGRUMEAULFUHUKUJUHUKUGSTUAUBUCEFABGHGQCDUDUEARUF $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-       Orderings
+  Orderings
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Basic ordering relationships
+  Basic ordering relationships
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -56805,7 +57064,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Equivalence relations and classes
+  Equivalence relations and classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -57379,7 +57638,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The mapping operation
+  The mapping operation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -57723,7 +57982,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Equinumerosity
+  Equinumerosity
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -58701,7 +58960,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Cardinal numbers
+  Cardinal numbers
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -61188,9 +61447,10 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Specker's disproof of the axiom of choice
+  Specker's disproof of the axiom of choice
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
+
   $c Sp[ac] $. $( Special set generator for axiom of choice. $)
 
   $( Extend the definition of a class to include the special set generator for
@@ -62144,9 +62404,10 @@ m ) e. Fin /\ ( Nc ( Sp[ac] ` T_c m ) = ( T_c Nc ( Sp[ac] ` m ) +c 1c ) \/ Nc (
       $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Finite recursion
+  Finite recursion
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -62435,9 +62696,10 @@ $)
       YGYMRXBXDBXATWT $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-       Cantorian and Strongly Cantorian Sets
+  Cantorian and Strongly Cantorian Sets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -62554,9 +62816,55 @@ $)
     ( cvv ccan wcel cnc cltc wbr ltcirr cpw canltpw pwv nceqi syl6breq mto ) AB
     CZADZOEFOGNOAHZDOEAIPAJKLM $.
 
+
+$(
+###############################################################################
+  GUIDES AND MISCELLANEA
+###############################################################################
+$)
+
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-       Appendix:  Typesetting definitions for the tokens in this file
+  Guides (conventions, explanations, and examples)
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Conventions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  This section describes the conventions we use.  These conventions often refer
+  to existing mathematical practices, which are discussed in more detail in
+  other references.
+
+$)
+
+  ${
+   $( Dummy premise for "conventions". $)
+    conventions.1 $e |- ph $.
+    $( Unless there is a reason to diverge, we follow the conventions of the
+       Metamath Proof Explorer (MPE, set.mm).
+
+       <HTML><li><b>Community.</b>
+       The Metamath mailing list also covers New Foundations set theory and is
+       at:
+       ~ https://groups.google.com/forum/#!forum/metamath .
+       </li>
+       </ul></HTML>
+
+       (Contributed by the Metamath team, 20-Jan-2024.)
+       (New usage is discouraged.) $)
+    conventions $p |- ph $=
+      (  ) B $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -62646,6 +62954,14 @@ htmldef "|-" as
     '<FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>'; /* &vdash; */
     /* Without sans-serif, way too big in FF3 */
   latexdef "|-" as "\vdash";
+htmldef "&" as
+    " <IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'> ";
+  althtmldef "&" as " &amp; ";
+  latexdef "&" as "\mathrel{\&}";
+htmldef "=>" as
+  " <IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'> ";
+  althtmldef "=>" as " &rArr; ";
+  latexdef "=>" as " \Rightarrow ";
 htmldef "ph" as
     "<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 TITLE='ph' ALIGN=TOP>";
   althtmldef "ph" as '<FONT COLOR="#0000FF"><I>&phi;</I></FONT>';
