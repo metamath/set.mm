@@ -5,7 +5,7 @@ $( Metamath is a formal language and associated computer program for
    Dwight Megill (1950--2021).  For more information, visit
    https://us.metamath.org and
    https://github.com/metamath/set.mm, and feel free to ask questions at
-   https://groups.google.com/group/metamath. $)
+   https://groups.google.com/g/metamath. $)
 
 $( The database ql.mm was created by Norman Megill on 9-Aug-1997. $)
 

@@ -5,7 +5,7 @@ $( Metamath is a formal language and associated computer program for
    Dwight Megill (1950--2021).  For more information, visit
    https://us.metamath.org and
    https://github.com/metamath/set.mm, and feel free to ask questions at
-   https://groups.google.com/group/metamath. $)
+   https://groups.google.com/g/metamath. $)
 
 $( New users may want to read https://us.metamath.org/nfeuni/conventions.html
    to understand the label naming conventions used in nf.mm.  See also the
@@ -62848,10 +62848,10 @@ $)
     $( Unless there is a reason to diverge, we follow the conventions of the
        Metamath Proof Explorer (MPE, set.mm).
 
-       <HTML><li><b>Community.</b>
+       <HTML><ul><li><b>Community.</b>
        The Metamath mailing list also covers New Foundations set theory and is
        at:
-       ~ https://groups.google.com/forum/#!forum/metamath .
+       ~ https://groups.google.com/g/metamath .
        </li>
        </ul></HTML>
 
