@@ -12,7 +12,7 @@ $( The database ql.mm was created by Norman Megill on 9-Aug-1997. $)
 
 $( !
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-    Metamath source file for logic, set theory, numbers, and Hilbert space
+  Metamath source file for logic, set theory, numbers, and Hilbert space
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
                            ~~ PUBLIC DOMAIN ~~
@@ -24,23 +24,23 @@ Norman Megill
 $)
 
 
-$( placeholder
+$( !
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-        AUQL - Algebraic Unified Quantum Logic of Mladen Pavicic
+  AUQL - Algebraic Unified Quantum Logic of Mladen Pavicic
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-        Ortholattices
+  Ortholattices
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Basic syntax and axioms
+  Basic syntax and axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -218,7 +218,7 @@ $)
   wa $a term ( a ^ b ) $.
 $(
   @( If ` a ` and ` b ` are terms, so is ` ( a ' b ) ` . @)
-  wp @a term ( a ' b ) @.
+  wp $a term ( a ' b ) $.
 $)
   $( The logical true constant is a term. $)
   wt $a term 1 $.
@@ -390,9 +390,10 @@ $)
   df-id4oa $a |- ( a == c , d ==OA b ) = ( ( a == d ==OA b ) v
                     ( ( a == d ==OA c ) ^ ( b == d ==OA c ) ) ) $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Basic lemmas
+  Basic lemmas
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -814,7 +815,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Relationship analogues (ordering; commutation)
+  Relationship analogues (ordering; commutation)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -1198,9 +1199,10 @@ $)
       ( wo wa id bile ler2an letr ) AABCFZGBAALAAAHIDJEK $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Commutator (ortholattice theorems)
+  Commutator (ortholattice theorems)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -1210,9 +1212,10 @@ $)
     ZEZBACZBQCZENACZNQCZEEZABFBAFUAUBUDEZUCUEEZEUFPUGTUHMUBOUDABGANGHRUCSUEQBGQ
     NGHHUBUDUCUEIJABKBAKL $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Weak "orthomodular law" in ortholattices.
+  Weak "orthomodular law" in ortholattices.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   All theorems here do not require R3 and are true in all ortholattices.
@@ -1504,7 +1507,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
- Kalmbach axioms (soundness proofs) that are true in all ortholattices
+  Kalmbach axioms (soundness proofs) that are true in all ortholattices
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -2438,15 +2441,17 @@ $)
       RULLUAUGAUEULUKMNOPDQ $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-          Weakly orthomodular lattices
+  Weakly orthomodular lattices
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Weak orthomodular law
+  Weak orthomodular law
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -2511,9 +2516,10 @@ $)
       EZWGIVQWIIVQIVRVQVSVPVQULRVQSTBAQNWHWFVEAUOBACUIUJUNRWGSTKNUKONUM $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Weakly orthomodular lattices
+  Weakly orthomodular lattices
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -2597,7 +2603,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Relationship analogues (ordering; commutation) in WOML
+  Relationship analogues (ordering; commutation) in WOML
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -3041,38 +3047,36 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Kalmbach axioms (soundness proofs) that require WOML
+  Kalmbach axioms (soundness proofs) that require WOML
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( >>>Remove "id" when bug is fixed. $)
   $( Soundness theorem for Kalmbach's quantum propositional logic axiom KA2.
      (Contributed by NM, 10-Nov-1998.) $)
   ska2 $p |- ( ( a == b ) ' v ( ( b == c ) ' v ( a == c ) ) ) = 1 $=
-    ( wn wo wa wt ax-a3 ax-r1 ax-a2 or12 lor ax-r2 wcomorr bi1 wcomcom wcomcom2
-    bltr ancom wr2 tb dfnb dfb 2or id le1 df-t oran3 leor le2or lelor letr lebi
-    orordi wcbtr wfh4 or1 ran an1 or32 w2or wlor orordir anor3 wcom2or oran leo
-    wwbmpr wr5-2v wcomcom3 wfh1 wwbmp ax-r5 ledi leror ) ABUADZBCUADZACUAZEZEAB
-    EZADZBDZEFZBCEZWBCDZEZFZACFZWAWEFZEZEZEZGVPWCVSWKABUBVQWGVRWJBCUBACUCUDUDWL
-    WCWGEZWJEZGWNWLWCWGWJHIWNWNGWNUEWNGWNUFGVTWAFZWBVTFZEZWBWDFZWDWEFZEZEZWJEZW
-    NGWOWPWREZWSEZEZWJEZXBXFGWOWBVTWDEZFZWSEZEZWJEZXFXKWJXJEZGXJWJJXLWOWJXIEZEZ
-    GWJWOXIKXNWOWHWIWBEZWSEZEZEZXRWHWOXPEZEZGWOWHXPKXTWHWIWBWOEZWBWSEZEZEZEZGXS
-    YDWHXSXOWOWSEZEZYDWOXOWSKYGWIWBYFEZEYDWIWBYFHYHYCWIWBWOWSUNLMMLYEWHWIWBWAEZ
-    WFEZEZEZYLWIWHYJEZEZGWHWIYJKYNGYNUFGYMYNGWHWAWEEZEZYMGWHWHDZEZYPWHUGYPYRYOY
-    QWHACUHLIMYOYJWHWAYIWEWFWAWBUIWEWBUIUJUKRYMWIUIULUMMYDYKWHYCYJWIYAYIYBWFYAW
-    BVTEZYIFZYIVTWBWAVTBBVTBBAEZVTBANUUAVTBAJOUOZPQVTAAVTABNPQUPYTYIYTGYIFZYIYS
-    GYIYSAWBBEZEZGWBABKUUEAGEGUUDGAUUDBWBEZGWBBJGUUFBUGIZMLAUQMMURUUCYIGFYIGYIS
-    YIUSMMOTYBWBWDEZWFFZWFWDWBWEWDBBWDBCNZPQWDCCWDCCBEZWDCBNUUKWDCBJZOUOPQUPUUI
-    WFUUIGWFFZWFUUHGWFUUHWDWBEZGWBWDJUUNUUFCEZGBCWBUTUUOCUUFEZGUUFCJUUPCGEGUUFG
-    CUUGLCUQMMMMURUUMWFGFWFGWFSWFUSMMOTVAVBVBVHMMXMXQWOXMWHWIXIEZEZXQXMUURWHWIX
-    IHOUUQXPWHUUQWIXHEZWSEZXPUUQUUTUUTUUQWIXHWSHIOUUSXOWSUUSWIXGWBFZEZXOUUSUVBX
-    HUVAWIWBXGSLOUVBWIXGEZXOFZXOXGWIWBXGACEZDZWIXGUVEUVEXGUVEUVEBEZXGUVEBNUVGXG
-    UVGVTUUKEXGACBVCUUKWDVTUULLMOUOPQUVFWIWIUVFACVDIOUOXGBBXGBVTWDUUBUUJVEPQUPU
-    VDXOUVDGXOFZXOUVCGXOUVCGUVCUFGWIUVEEZUVCGWIWIDZEUVIWIUGUVJUVEWIUVEUVJACVFIL
-    MUVEXGWIAVTCWDABVGCBUIUJUKRUMURUVHXOGFXOGXOSXOUSMMOTTVITVBTVBVHMMXJXEWJXIXD
-    WOXHXCWSWBVTWDBVTUUBVJBWDUUJVJVKVIVBVIVLIXEXAWJXEWQWREZWSEZXAXEWOXCEZWSEZUV
-    LUVNXEWOXCWSHIUVMUVKWSUVKUVMWOWPWRHIVMMWQWRWSHMVMMXAWMWJWQWCWTWGWQWOVTWBFZE
-    WCWPUVOWOWBVTSLVTWAWBVNRWTWDWBFZWSEWGWRUVPWSWBWDSVMWDWBWEVNRUJVORUMMMM $.
+    ( wn wo wa wt ax-a3 ax-r1 ax-a2 or12 lor 3tr ax-r2 wcomorr wcomcom wcomcom2
+    bltr bi1 wr2 tb dfnb dfb 2or le1 orordi df-t oran3 leor le2or lerr lebi wa2
+    lelor wcbtr wfh4 or1 ran an1r or32 w2or wlor wwbmpr wa3 ancom orordir ska10
+    wcom2or oran leo wr5-2v wcomcom3 wfh1 wwbmp ax-r5 ledi leror ) ABUADZBCUADZ
+    ACUAZEZEABEZADZBDZEFZBCEZWDCDZEZFZACFZWCWGFZEZEZEZWEWIEZWLEZGVRWEWAWMABUBVS
+    WIVTWLBCUBACUCUDUDWPWNWEWIWLHIWPGWPUEGWBWCFZWDWBFZEZWDWFFZWFWGFZEZEZWLEZWPG
+    WQWRWTEZXAEZEZWLEZXDXHGWQWDWBWFEZFZXAEZEZWLEZXHXMWLXLEWQWLXKEZEZGXLWLJWLWQX
+    KKXOWQWJWKWDEZXAEZEZEZXSWJWQXQEZEWJWKWDWQEZWDXAEZEZEZEZGWQWJXQKXTYDWJXTXPWQ
+    XAEZEWKWDYFEZEYDWQXPXAKWKWDYFHYGYCWKWDWQXAUFLMLYEWJWKWDWCEZWHEZEZEZYKWKWJYI
+    EZEZGWJWKYIKYMGYMUEGYLWKGWJWCWGEZEZYLGWJWJDZEZYOWJUGYOYQYNYPWJACUHLINYNYIWJ
+    WCYHWGWHWCWDUIWGWDUIUJUNRUKULNYDYJWJYCYIWKYAYHYBWHYAWDWBEZYHFZYHWBWDWCWBBBW
+    BBBAEWBBAOBAUMUOZPQWBAAWBABOPQUPYSYHYSGYHFYHYRGYHYRAWDBEZEAGEGWDABKUUAGAUUA
+    BWDEZGWDBJGUUBBUGIZNLAUQMURYHUSNSTYBWDWFEZWHFZWHWFWDWGWFBBWFBCOZPQWFCCWFCCB
+    EZWFCBOCBUMUOPQUPUUEWHUUEGWHFWHUUDGWHUUDWFWDEUUBCEZGWDWFJBCWDUTUUHCUUBECGEG
+    UUBCJUUBGCUUCLCUQMMURWHUSNSTVAVBVBVCMXNXRWQXNWJWKXKEZEXRWJWKXKVDUUIXQWJUUIW
+    KXJEZXAEZXQUUIUUKUUKUUIWKXJXAHISUUJXPXAUUJWKXIWDFZEZXPUUJUUMXJUULWKWDXIVELS
+    UUMWKXIEZXPFZXPXIWKWDXIACEZDWKXIUUPUUPXIUUPUUPBEZXIUUPBOUUQXIUUQWBUUGEXIACB
+    VFUUGWFWBCBJLNSUOPQACVGUOXIBBXIBWBWFYTUUFVHPQUPUUOXPUUOGXPFXPUUNGXPUUNGUUNU
+    EGWKUUPEZUUNGWKWKDZEUURWKUGUUSUUPWKUUPUUSACVIILNUUPXIWKAWBCWFABVJCBUIUJUNRU
+    LURXPUSNSTTVKTVBTVBVCMXLXGWLXKXFWQXJXEXAWDWBWFBWBYTVLBWFUUFVLVMVKVBVKVNIXGX
+    CWLXGWQXEEZXAEZWSWTEZXAEXCUVAXGWQXEXAHIUUTUVBXAUVBUUTWQWRWTHIVOWSWTXAHMVONX
+    CWOWLWSWEXBWIWSWQWBWDFZEWEWRUVCWQWDWBVELWBWCWDVPRXBWFWDFZXAEWIWTUVDXAWDWFVE
+    VOWFWDWGVPRUJVQRULM $.
 
   $( Soundness theorem for Kalmbach's quantum propositional logic axiom KA4.
      (Contributed by NM, 9-Nov-1998.) $)
@@ -3105,9 +3109,10 @@ $)
     UHAUHBUHABCIBBADZEZUFUEDZFUHBACIULUDUMUGUKUCBAJKUFUEJLMNUHOMPABCQUJUDUGUGFZ
     FUHUDUGUGRUNUGUDUGOSTUAUB $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Weak orthomodular law variants
+  Weak orthomodular law variants
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -3143,14 +3148,14 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-        Orthomodular lattices
+  Orthomodular lattices
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Orthomodular law
+  Orthomodular law
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -3237,7 +3242,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Relationship analogues using OML (ordering; commutation)
+  Relationship analogues using OML (ordering; commutation)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -3545,9 +3550,10 @@ $)
       MJN $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Commutator (orthomodular lattice theorems)
+  Commutator (orthomodular lattice theorems)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -3585,7 +3591,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Kalmbach conditional
+  Kalmbach conditional
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -4105,9 +4111,10 @@ $)
     BUSUEUGUHIJKUTURLMUKVAUKUEUQUSDZFVAUJVCUEABRJUEUQUSUEUOUPUEAUFABNZUEBABUAZO
     ZPUEABVDVEPQUEUHUGUEAVDOUEAUFVDVFQPUBKSTUCUNUMABCUDST $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Unified disjunction
+  Unified disjunction
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -4598,9 +4605,10 @@ $)
     ( wi5 wo wn wa ud5lem1 ud5lem0b ud5lem2 ax-r2 ud5lem0a ud5lem3 ax-r1 ) ABCZ
     NBACCZACZCZABDZQNAAEBFDZCRPSNPABEDZACSOTAABGHABIJKABLJM $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Lemmas for unified implication study
+  Lemmas for unified implication study
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -5545,9 +5553,10 @@ $)
   ublemc2 $p |- b C ( a == b ) $=
     ( tb ublemc1 bicom cbtr ) BBACABCBADBAEF $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Some proofs contributed by Josiah Burroughs
+  Some proofs contributed by Josiah Burroughs
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -5592,7 +5601,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        More lemmas for unified implication
+  More lemmas for unified implication
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -6208,7 +6217,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                         Some 3-variable theorems
+  Some 3-variable theorems
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -7264,7 +7273,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-   OML Lemmas for studying Godowski equations.
+  OML lemmas for studying Godowski equations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -7654,7 +7663,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-   OML Lemmas for studying orthoarguesian laws
+  OML lemmas for studying orthoarguesian laws
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -8279,7 +8288,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-   5OA law
+  5OA law
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -8363,7 +8372,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-   "Godowski/Greechie" form of proper 4-OA
+  "Godowski/Greechie" form of proper 4-OA
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -8495,7 +8504,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-   Some 3-OA inferences (derived under OM)
+  Some 3-OA inferences (derived under OM)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -8754,16 +8763,18 @@ $)
       NURUOOPBCQUHCQRCUCSCUISRTCUIUAUB $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-   Derivation of 4-variable proper OA from OA distributive law
+  Derivation of 4-variable proper OA from OA distributive law
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-$)
 
-$( In this section, we postulate a temporary axiom (intended not to
-   be used outside of this section) for the OA distributive law, and derive
-   from it the proper 4-OA.  This shows that the OA distributive law
-   implies the proper 4-OA (and therefore the 6-OA). $)
+  In this section, we postulate a temporary axiom (intended not to be used
+  outside of this section) for the OA distributive law, and derive from it the
+  proper 4-OA.  This shows that the OA distributive law implies the proper 4-OA
+  (and therefore the 6-OA).
+
+$)
 
   ${
     oad.1 $e |- e =
@@ -8831,17 +8842,20 @@ $( In this section, we postulate a temporary axiom (intended not to
       KLZUCUEKUFUEUBNZKLUDUEKUGUIKLKZUHMUJMOUDMUCMUEMPQR $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                  Orthoarguesian laws
+  Orthoarguesian laws
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
+  R. Godowski and R. Greechie, Demonstratio Mathematica 17, 241 (1984).
+
 $)
 
-$( R. Godowski and R. Greechie, Demonstratio Mathematica 17, 241 (1984) $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        3-variable orthoarguesian law
+  3-variable orthoarguesian law
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9079,11 +9093,12 @@ $)
 
   ${
     oadistc0.1 $e |- d =< ( ( a ->2 b ) ^ ( a ->2 c ) ) $.
-    $( Note: inference of 2nd hyp. from 1st may be an OM theorem. $)
     oadistc0.2 $e |- ( ( a ->2 c ) ^
                         ( ( a ->2 b ) ^ ( ( b v c ) ' v d ) ) ) =<
                       ( ( ( a ->2 b ) ^ ( b v c ) ' ) v d ) $.
-    $( Pre-distributive law.  (Contributed by NM, 30-Nov-1998.) $)
+    $( Pre-distributive law.  Note that the inference of the second hypothesis
+       from the first may be an OM theorem.  (Contributed by NM,
+       30-Nov-1998.) $)
     oadistc0 $p |- ( ( a ->2 b ) ^ ( ( b v c ) ' v d ) ) =
                    ( ( ( a ->2 b ) ^ ( b v c ) ' ) v d ) $=
       ( wi2 wo wn wa ancom lelor lelan oal2 letr df2le2 ax-r2 ax-r1 bltr ledior
@@ -9135,9 +9150,10 @@ $)
     ( wi1 wid3oa wa wn wo df-id3oa lan 3oa2 bltr ) ACDZABCEZFMMBCDZFAGCDBGCDFHZ
     FONPMABCIJABCKL $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        4-variable orthoarguesian law
+  4-variable orthoarguesian law
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9192,7 +9208,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-         6-variable orthoarguesian law
+  6-variable orthoarguesian law
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9228,7 +9244,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The proper 4-variable orthoarguesian law
+  The proper 4-variable orthoarguesian law
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9357,14 +9373,14 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-        Other stronger-than-OML laws
+  Other stronger-than-OML laws
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        New state-related equation
+  New state-related equation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9391,14 +9407,14 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-        Contributions of Roy Longton
+  Contributions of Roy F. Longton
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Roy's first section
+  Roy F. Longton's first section
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9682,9 +9698,10 @@ $(
 $)
   $( [28-Jun-05] $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Roy's second section
+  Roy F. Longton's second section
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9734,15 +9751,13 @@ $)
       ZBNZANZMZEZGBAOUJABMZUHUGMZEZABLZGUFUKUIULBAPUGUHPQUNUMABOIDRKJKS $.
   $}
 
-$(
-  @( Lemma intended for ~ thm3.8i1 . @)
-  thm3.8i1lem @p |- ( a ==1 b ) = ( ( b ->0 a ) ^ ( a ->1 b ) ) @=
-    wva wvb wn wo wva wn wva wvb wa wo wa wvb wn wva wo wva wn wva wvb wa wo wa
-    wva wvb wid1 wvb wva wi0 wva wvb wi1 wa wva wvb wn wo wvb wn wva wo wva wn
-    wva wvb wa wo wva wvb wn ax-a2 ran wva wvb df-id1 wvb wva wi0 wvb wn wva wo
-    wva wvb wi1 wva wn wva wvb wa wo wvb wva df-i0 wva wvb df-i1 2an 3tr1 @.
-    @( [31-Mar-2011] @) @( [30-Jun-05] @)
+  $( Lemma intended for ~~ thm3.8i1 .  (Contributed by Roy F. Longton,
+     30-Jun-2005.)  (Revised by Roy F. Longton, 31-Mar-2011.) $)
+  thm3.8i1lem $p |- ( a ==1 b ) = ( ( b ->0 a ) ^ ( a ->1 b ) ) $=
+    ( wn wo wa wid1 wi0 wi1 ax-a2 ran df-id1 df-i0 df-i1 2an 3tr1 ) ABCDACABEDE
+    BCADACABEDEABFBAGABHEABCDBCADACABEDABCIJABKBAGBCADABHACABEDBALABMNO $.
 
+$(
 @{
   thm3.8i1.1 @e |- ( a ==1 b ) = 1 @.
   thm3.8i1 @p |- ( ( a v c ) ==1 ( b v c ) ) = 1 @= ? @.
@@ -9762,26 +9777,26 @@ $(
   thm3.8i4.1 @e |- ( a ==4 b ) = 1 @.
   thm3.8i4 @p |- ( ( a v c ) ==4 ( b v c ) ) = 1 @= ? @.
 @}
+$)
 
-@{
-  thm3.8i5.1 @e |- ( a ==5 b ) = 1 @.
-  thm3.8i5 @p |- ( ( a v c ) ==5 ( b v c ) ) = 1 @=
-    wva wvb wvc thm3.8i5.1 lem3.4.6 @.
-    @( [31-Mar-2011] @) @( [29-Jun-05] @)
-@}
-  $)
+  ${
+    thm3.8i5.1 $e |- ( a ==5 b ) = 1 $.
+    $( (Contributed by Roy F. Longton, 29-Jun-2005.)  (Revised by Roy F.
+       Longton, 31-Mar-2011.) $)
+    thm3.8i5 $p |- ( ( a v c ) ==5 ( b v c ) ) = 1 $=
+      ( lem3.4.6 ) ABCDE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Roy's third section
+  Roy F. Longton's third section
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( lem4.6.1 is u1lemaa $)
-
   $( Equation 4.10 of [MegPav2000] p. 23.  This is the first part of the
-     equation.  (Contributed by Roy F. Longton, 29-Jun-2005.)  (Revised by Roy
-     F. Longton, 3-Jul-2005.) $)
+     equation.  Note that Lemma 4.6.1 is ~ u1lemaa .  (Contributed by Roy F.
+     Longton, 29-Jun-2005.)  (Revised by Roy F. Longton, 3-Jul-2005.) $)
   lem4.6.2e1 $p |- ( ( a ->1 b ) ^ ( a ' ->1 b ) ) = ( ( a ->1 b ) ^ b ) $=
     ( wi1 wn wa wo df-i1 2an ax-a1 ax-r1 ax-r5 lan comcom fh1 lor coman1 coman2
     ancom ran 3tr comorr comcom6 leao1 lecom comcom7 com2an anass anidm comcom2
@@ -9938,8 +9953,9 @@ $)
   $}
 
 $(
-  @( Note: This theorem is unfinished. This is the progress that I was able
-      to make. @)
+  @( Note: This theorem is unfinished.  This is the progress that I was able to
+     make.   (Contributed by Roy F. Longton, 2-Jul-2005.)  (Revised by Roy F.
+     Longton, 31-Mar-2011). @)
   lem4.6.6i4j3 @p |- ( ( a ->4 b ) v ( a ->3 b ) ) = ( a ->0 b ) @=
     wva wvb wa wva wn wvb wa wo wva wn wvb wo wvb wn wa wo wva wn wvb wa wva wn
     wvb wn wa wo wva wva wn wvb wo wa wo wo wva wn wvb wo wva wvb wi4 wva wvb
@@ -10042,7 +10058,6 @@ $(
     ax-r2 ax-r2 ax-r2 ax-r2 ax-r2 wva wvb wi4 wva wvb wa wva wn wvb wa wo wva
     wn wvb wo wvb wn wa wo wva wvb wi3 wva wn wvb wa wva wn wvb wn wa wo wva
     wva wn wvb wo wa wo wva wvb df-i4 wva wvb df-i3 2or wva wvb df-i0 3tr1 @.
-    @( [31-Mar-2011] @) @( [2-Jul-05] @)
 
   lem4.6.6i1j4 @p |- ( ( a ->1 b ) v ( a ->4 b ) ) = ( a ->0 b ) @= ? @.
 
@@ -10371,14 +10386,14 @@ $( 456789012345 (79-character line to adjust text window width) 567890123456 $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-        Weakly distributive ortholattices (WDOL)
+  Weakly distributive ortholattices (WDOL)
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        WDOL law
+  WDOL law
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10496,15 +10511,17 @@ $)
   wddi-4 $p |- ( ( a ^ ( b v c ) ) ==4 ( ( a ^ b ) v ( a ^ c ) ) ) = 1 $=
     ( wo wa wddi-0 wdid0id4 ) ABCDEABEACEDABCFG $.
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-        Modular ortholattices (MOL)
-#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Modular ortholattices (MOL)
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Modular law
+  Modular law
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10764,9 +10781,10 @@ $)
     JHIJHIJHIKHH $.
   $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Arguesian law
+  Arguesian law
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -11822,15 +11840,13 @@ $)
         =< ( a0 v ( b0 ^ ( b1 v ( c2 ^ ( c0 v c1 ) ) ) ) ) $=
       ( wo wa leo oadp35lemg lel2or ) BBEFJHIQRQRZQABUBSABCDEFGHIJKLMNOPTUA $.
 
-    $( Part of proof (3)=>(5) in Day/Pickering 1982. $)
 $(
+    @( Part of proof (3)=>(5) in Day/Pickering 1982. @)
     oadp35leme $p |- ( b0 ^ ( a0 v p0 ) )
         =< ( a0 v ( b0 ^ ( b1 v ( c2 ^ ( c0 v c1 ) ) ) ) ) $=
       ? $.
-$)
 
-    $( Part of proof (3)=>(5) in Day/Pickering 1982. $)
-$(
+    @( Part of proof (3)=>(5) in Day/Pickering 1982. @)
     oadp35lemd $p |- ( b0 ^ ( a0 v p0 ) )
         =< ( b0 ^ ( ( ( a0 ^ b0 ) v b1 ) v ( c2 ^ ( c0 v c1 ) ) ) ) $=
       ? $.
@@ -11845,32 +11861,26 @@ $)
       BUQEURBCSEFSTJUSNUCUDUKIHUKBDRZEGRZQZIBUTEVABDSEGSTIVBMUCUDUEUFUGUHUIUJ
       $.
 
-    $( Part of proof (3)=>(5) in Day/Pickering 1982. $)
 $(
+    @( Part of proof (3)=>(5) in Day/Pickering 1982. @)
     oadp35lemb $p |- ( b0 ^ ( b1 v ( c2 ^ ( c0 v c1 ) ) ) )
         = ( b0 ^ ( b1 v ( ( a0 v a1 ) ^ ( c0 v c1 ) ) ) ) $=
       ? $.
-$)
 
-    $( Part of proof (3)=>(5) in Day/Pickering 1982. $)
-$(
+    @( Part of proof (3)=>(5) in Day/Pickering 1982. @)
     oadp35lembb $p |- ( b0 ^ ( a0 v p0 ) )
         =< ( b0 ^ ( b1 v ( ( a0 v a1 ) ^ ( c0 v c1 ) ) ) ) $=
       ( wo wa oadp35lemd oadp35lemc oadp35lemb tr lbtr )
       EBKQREBERFQJHIQZRZQRZEFBCQUD
       RQRZABCDEFGHIJKLMNOPSUFEFUEQRUGABCDEFGHIJKLMNOPTABCDEFGHIJKLMNOPUAUBUC $.
-$)
 
-    $( Part of proof (3)=>(5) in Day/Pickering 1982. $)
-$(
+    @( Part of proof (3)=>(5) in Day/Pickering 1982. @)
     oadp35lema $p |- ( b1 v ( b0 ^ ( a0 v p0 ) ) )
        =< ( b1 v ( ( a0 v a1 ) ^ ( c0 v c1 ) ) ) $=
     ( wo wa leo oadp35lembb lear letr lel2or ) FFBCQHIQRZQZEBKQRZFUDSUFEUERUEAB
       CDEFGHIJKLMNOPTEUEUAUBUC $.
-$)
 
-    $( Part of proof (3)=>(5) in Day/Pickering 1982. $)
-$(
+    @( Part of proof (3)=>(5) in Day/Pickering 1982. @)
     oadp35lem0 $p |- ( ( a0 v a1 ) ^ ( ( b0 ^ ( a0 v p0 ) ) v b1 ) )
                   =< ( ( c0 v c1 ) v ( b1 ^ ( a0 v a1 ) ) ) $=
       ? $.
@@ -11943,8 +11953,8 @@ $)
     ( wo wa orcom leor ler mli tr lan cm ) ACAEZBCEDAEFZEZBDACEBDEFEFZFZEZPAQEZ
     FZSPQAEZFZUASRAEUCARGPQAANOACHIJKUBTPQAGLKM $.
 
-  $( A modular law experiment.  (Contributed by NM, 22-Apr-2012.) $)
 $(
+  @( A modular law experiment.  (Contributed by NM, 22-Apr-2012.) @)
   testmod4 $p |- ( ( ( c v a ) v ( ( b v c ) ^ ( d v a ) ) )
              ^ ( a v ( b ^ ( d v ( ( a v c ) ^ ( b v d ) ) ) ) ) )
       = ( a v ( ( ( c v a ) v ( ( b v c ) ^ ( d v
