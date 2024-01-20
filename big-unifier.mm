@@ -7,7 +7,7 @@ $( Metamath is a formal language and associated computer program for
    https://github.com/metamath/set.mm, and feel free to ask questions at
    https://groups.google.com/group/metamath. $)
 
-$( The database big-unifier.mm was created by Normal Megill.  This is the version
+$( The database big-unifier.mm was created by Norman Megill.  This is the version
    of 30-Aug-2008. $)
 
 

@@ -62843,7 +62843,7 @@ $(
 $)
 
   ${
-   $( Dummy premise for "conventions". $)
+    $( Dummy premise for ~ conventions . $)
     conventions.1 $e |- ph $.
     $( Unless there is a reason to diverge, we follow the conventions of the
        Metamath Proof Explorer (MPE, set.mm).
