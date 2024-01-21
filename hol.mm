@@ -5,14 +5,14 @@ $( Metamath is a formal language and associated computer program for
    Dwight Megill (1950--2021).  For more information, visit
    https://us.metamath.org and
    https://github.com/metamath/set.mm, and feel free to ask questions at
-   https://groups.google.com/group/metamath. $)
+   https://groups.google.com/g/metamath. $)
 
 $( The database hol.mm was created by Mario Carneiro on 7-Oct-2014. $)
 
 
 $( !
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-  Metamath source file for higher order logic
+  Metamath source file for higher-order logic
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
                            ~~ PUBLIC DOMAIN ~~

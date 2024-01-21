@@ -71,7 +71,6 @@ proposed  syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
 proposed  syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
 proposed  syl6ss    sstrdi      compare to sstri or sstrd
 proposed  syl6sseq  sseqtrdi    compare to sseqtri or sseqtrd
-proposed  sseqtr4d  sseqtrrd
 proposed  syl6sseqr sseqtrrdi
 proposed  syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
 proposed  syl6eqssr eqsstrrdi   compare to eqsstrri or eqsstrrd
@@ -80,7 +79,23 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+17-Jan-24 mteqand   [same]      moved from SN's mathbox to main set.mm
+15-Jan-24 sseqtr4d  sseqtrrd
 14-Jan-24 sseqtr4i  sseqtrri
+13-Jan-24 mndlsmidm [same]      moved from AV's mathbox to main set.mm
+13-Jan-24 smndlsmidm [same]     moved from AV's mathbox to main set.mm
+13-Jan-24 cycsubm   [same]      moved from AV's mathbox to main set.mm
+13-Jan-24 cycsubmcl [same]      moved from AV's mathbox to main set.mm
+13-Jan-24 cycsubmel [same]      moved from AV's mathbox to main set.mm
+13-Jan-24 mulgnn0gsum [same]    moved from AV's mathbox to main set.mm
+13-Jan-24 mulgnngsum [same]     moved from AV's mathbox to main set.mm
+13-Jan-24 gsumxp2   [same]      moved from AV's mathbox to main set.mm
+13-Jan-24 gsumreidx [same]      moved from AV's mathbox to main set.mm
+13-Jan-24 gsumsgrpccat [same]   moved from AV's mathbox to main set.mm
+13-Jan-24 gsumsplit1r [same]    moved from AV's mathbox to main set.mm
+13-Jan-24 mndbn0    [same]      moved from AV's mathbox to main set.mm
+13-Jan-24 lidrididd [same]      moved from AV's mathbox to main set.mm
+13-Jan-24 lidrideqd [same]      moved from AV's mathbox to main set.mm
  5-Jan-24 ---       ---         sections "Groups" and "Simple groups"
                                 moved from RR's mathbox to main set.mm
  5-Jan-24 rr-php2d  phpeqd      moved from RR's mathbox to main set.mm
