@@ -79,9 +79,14 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Jan-24 ccats1val1 [same]     revised - eliminated unnecessary antecedent
+21-Jan-24 ccat2s1p1 [same]      revised - eliminated unnecessary antecedent
+21-Jan-24 ccat2s1p2 [same]      revised - eliminated unnecessary antecedent
 17-Jan-24 mteqand   [same]      moved from SN's mathbox to main set.mm
 15-Jan-24 sseqtr4d  sseqtrrd
 14-Jan-24 sseqtr4i  sseqtrri
+14-Jan-24 ccat2s1len [same]     revised - eliminated unnecessary antecedents
+14-Jan-24 wlklenvclwlk [same]   revised - eliminated unnecessary antecedent
 13-Jan-24 mndlsmidm [same]      moved from AV's mathbox to main set.mm
 13-Jan-24 smndlsmidm [same]     moved from AV's mathbox to main set.mm
 13-Jan-24 cycsubm   [same]      moved from AV's mathbox to main set.mm
