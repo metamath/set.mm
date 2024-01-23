@@ -14489,6 +14489,7 @@ New usage of "cvr2N" is discouraged (1 uses).
 New usage of "cvrletrN" is discouraged (0 uses).
 New usage of "cvrnrefN" is discouraged (0 uses).
 New usage of "cvrval4N" is discouraged (0 uses).
+New usage of "cygablOLD" is discouraged (0 uses).
 New usage of "dalem31N" is discouraged (0 uses).
 New usage of "daraptiALT" is discouraged (0 uses).
 New usage of "dariiALT" is discouraged (0 uses).
@@ -18272,6 +18273,7 @@ Proof modification of "currysetlem" is discouraged (49 steps).
 Proof modification of "currysetlem1" is discouraged (71 steps).
 Proof modification of "currysetlem2" is discouraged (20 steps).
 Proof modification of "currysetlem3" is discouraged (82 steps).
+Proof modification of "cygablOLD" is discouraged (379 steps).
 Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "dedtOLD" is discouraged (19 steps).
