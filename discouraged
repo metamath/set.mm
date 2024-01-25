@@ -13813,6 +13813,7 @@ New usage of "bnj1423" is discouraged (1 uses).
 New usage of "bnj1424" is discouraged (2 uses).
 New usage of "bnj1436" is discouraged (12 uses).
 New usage of "bnj1441" is discouraged (0 uses).
+New usage of "bnj1441g" is discouraged (0 uses).
 New usage of "bnj1442" is discouraged (1 uses).
 New usage of "bnj1444" is discouraged (1 uses).
 New usage of "bnj1445" is discouraged (1 uses).
@@ -14489,6 +14490,7 @@ New usage of "cvr2N" is discouraged (1 uses).
 New usage of "cvrletrN" is discouraged (0 uses).
 New usage of "cvrnrefN" is discouraged (0 uses).
 New usage of "cvrval4N" is discouraged (0 uses).
+New usage of "cygablOLD" is discouraged (0 uses).
 New usage of "dalem31N" is discouraged (0 uses).
 New usage of "daraptiALT" is discouraged (0 uses).
 New usage of "dariiALT" is discouraged (0 uses).
@@ -16378,6 +16380,7 @@ New usage of "n2dvds3OLD" is discouraged (0 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
 New usage of "natded" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
+New usage of "nelbOLD" is discouraged (0 uses).
 New usage of "nelne1OLD" is discouraged (0 uses).
 New usage of "nelne2OLD" is discouraged (0 uses).
 New usage of "nf5rOLD" is discouraged (0 uses).
@@ -18272,6 +18275,7 @@ Proof modification of "currysetlem" is discouraged (49 steps).
 Proof modification of "currysetlem1" is discouraged (71 steps).
 Proof modification of "currysetlem2" is discouraged (20 steps).
 Proof modification of "currysetlem3" is discouraged (82 steps).
+Proof modification of "cygablOLD" is discouraged (379 steps).
 Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "dedtOLD" is discouraged (19 steps).
@@ -18956,6 +18960,7 @@ Proof modification of "n0lpligALT" is discouraged (74 steps).
 Proof modification of "n2dvds1OLD" is discouraged (37 steps).
 Proof modification of "n2dvds3OLD" is discouraged (40 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
+Proof modification of "nelbOLD" is discouraged (81 steps).
 Proof modification of "nelne1OLD" is discouraged (26 steps).
 Proof modification of "nelne2OLD" is discouraged (26 steps).
 Proof modification of "nf5rOLD" is discouraged (22 steps).
