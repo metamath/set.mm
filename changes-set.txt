@@ -71,7 +71,6 @@ proposed  syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
 proposed  syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
 proposed  syl6ss    sstrdi      compare to sstri or sstrd
 proposed  syl6sseq  sseqtrdi    compare to sseqtri or sseqtrd
-proposed  syl6sseqr sseqtrrdi
 proposed  syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
 proposed  syl6eqssr eqsstrrdi   compare to eqsstrri or eqsstrrd
 (Please send any comments on these proposals to the mailing list or
@@ -80,6 +79,7 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 23-Jan-24 nelb      [same]      moved from TA's mathbox to main set.mm
+22-Jan-24 syl6sseqr sseqtrrdi
 20-Jan-24 nfiund    nfiundg
 20-Jan-24 bnj1441   bnj1441g
 20-Jan-24 cbviinv   cbviinvg
