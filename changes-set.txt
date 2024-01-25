@@ -14,6 +14,44 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
+proposed  nfiundg   nfiund
+proposed  bnj1441g  bnj1441
+proposed  cbviinvg  cbviinv
+proposed  cbviunvg  cbviunv
+proposed  cbviing   cbviin
+proposed  cbviung   cbviun
+proposed  nfiing    nfiin
+proposed  nfiung    nfiun
+proposed  nfrexg    nfrex
+proposed  nfrexdg   nfrexd
+proposed  nfaba1g   nfaba1
+proposed  nfabg     nfab
+proposed  hblemg    hblem
+proposed  nfsabg    nfsab
+proposed  hbabg     hbab
+proposed  cbvmptvg  cbvmptv
+proposed  cbvmptg   cbvmpt
+proposed  cbvmptfg  cbvmptf
+proposed  cbvopab1g cbvopab1
+proposed  nfiund    nfiundv
+proposed  bnj1441   bnj1441v
+proposed  cbviinv   cbviinvv
+proposed  cbviunv   cbviunvv
+proposed  cbviin    cbviinv
+proposed  cbviun    cbviunv
+proposed  nfiin     nfiinv
+proposed  nfiun     nfiunv
+proposed  nfrex     nfrexv
+proposed  nfrexd    nfrexdv
+proposed  nfaba1    nfaba1v
+proposed  nfab      nfabv
+proposed  hblem     hblemv
+proposed  nfsab     nfsabv
+proposed  hbab      hbabv
+proposed  cbvmptv   cbvmptvv
+proposed  cbvmpt    cbvmptv
+proposed  cbvmptf   cbvmptfv
+proposed  cbvopab1  cbvopab1v
 proposed  syl       imtri       (analogous to *bitr*, sstri, etc.)
                                 there is less agreement on renaming syl
                                 than others here
@@ -94,7 +132,11 @@ Date      Old       New         Notes
 20-Jan-24 nfab      nfabg
 20-Jan-24 hblem     hblemg
 20-Jan-24 nfsab     nfsabg
-20-Jan-24 hbab      hbabg 
+20-Jan-24 hbab      hbabg
+17-Jan-24 cbvmptv   cbvmptvg
+17-Jan-24 cbvmpt    cbvmptg
+17-Jan-24 cbvmptf   cbvmptfg
+17-Jan-24 cbvopab1  cbvopab1g
 17-Jan-24 mteqand   [same]      moved from SN's mathbox to main set.mm
 15-Jan-24 sseqtr4d  sseqtrrd
 14-Jan-24 sseqtr4i  sseqtrri
