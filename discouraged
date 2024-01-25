@@ -9299,7 +9299,6 @@
 "mndomgmid" is used by "isdrngo2".
 "mndomgmid" is used by "ismndo2".
 "mndomgmid" is used by "rngoidmlem".
-"mo3OLD" is used by "mo4fOLD".
 "mpv" is used by "mulcompr".
 "mulassnq" is used by "1idpr".
 "mulassnq" is used by "addclprlem2".
@@ -14491,6 +14490,7 @@ New usage of "cvr2N" is discouraged (1 uses).
 New usage of "cvrletrN" is discouraged (0 uses).
 New usage of "cvrnrefN" is discouraged (0 uses).
 New usage of "cvrval4N" is discouraged (0 uses).
+New usage of "cygablOLD" is discouraged (0 uses).
 New usage of "dalem31N" is discouraged (0 uses).
 New usage of "daraptiALT" is discouraged (0 uses).
 New usage of "dariiALT" is discouraged (0 uses).
@@ -16328,9 +16328,8 @@ New usage of "mndoisexid" is discouraged (2 uses).
 New usage of "mndoismgmOLD" is discouraged (3 uses).
 New usage of "mndoissmgrpOLD" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
-New usage of "mo3OLD" is discouraged (1 uses).
+New usage of "mo3OLD" is discouraged (0 uses).
 New usage of "mo4OLD" is discouraged (0 uses).
-New usage of "mo4fOLD" is discouraged (0 uses).
 New usage of "moanimvOLD" is discouraged (0 uses).
 New usage of "mobiOLD" is discouraged (0 uses).
 New usage of "mobidOLD" is discouraged (0 uses).
@@ -16381,6 +16380,7 @@ New usage of "n2dvds3OLD" is discouraged (0 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
 New usage of "natded" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
+New usage of "nelbOLD" is discouraged (0 uses).
 New usage of "nelne1OLD" is discouraged (0 uses).
 New usage of "nelne2OLD" is discouraged (0 uses).
 New usage of "nf5rOLD" is discouraged (0 uses).
@@ -18180,6 +18180,7 @@ Proof modification of "bj-sb56" is discouraged (50 steps).
 Proof modification of "bj-sbceqgALT" is discouraged (143 steps).
 Proof modification of "bj-sbeqALT" is discouraged (44 steps).
 Proof modification of "bj-sbidmOLD" is discouraged (41 steps).
+Proof modification of "bj-sbievv" is discouraged (25 steps).
 Proof modification of "bj-spcimdv" is discouraged (56 steps).
 Proof modification of "bj-spcimdvv" is discouraged (56 steps).
 Proof modification of "bj-spimtv" is discouraged (52 steps).
@@ -18274,6 +18275,7 @@ Proof modification of "currysetlem" is discouraged (49 steps).
 Proof modification of "currysetlem1" is discouraged (71 steps).
 Proof modification of "currysetlem2" is discouraged (20 steps).
 Proof modification of "currysetlem3" is discouraged (82 steps).
+Proof modification of "cygablOLD" is discouraged (379 steps).
 Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "dedtOLD" is discouraged (19 steps).
@@ -18944,7 +18946,6 @@ Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
 Proof modification of "mo3OLD" is discouraged (163 steps).
 Proof modification of "mo4OLD" is discouraged (9 steps).
-Proof modification of "mo4fOLD" is discouraged (54 steps).
 Proof modification of "moanimvOLD" is discouraged (7 steps).
 Proof modification of "mobiOLD" is discouraged (63 steps).
 Proof modification of "mobidOLD" is discouraged (49 steps).
@@ -18959,6 +18960,7 @@ Proof modification of "n0lpligALT" is discouraged (74 steps).
 Proof modification of "n2dvds1OLD" is discouraged (37 steps).
 Proof modification of "n2dvds3OLD" is discouraged (40 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
+Proof modification of "nelbOLD" is discouraged (81 steps).
 Proof modification of "nelne1OLD" is discouraged (26 steps).
 Proof modification of "nelne2OLD" is discouraged (26 steps).
 Proof modification of "nf5rOLD" is discouraged (22 steps).
