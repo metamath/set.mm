@@ -80,6 +80,21 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 23-Jan-24 nelb      [same]      moved from TA's mathbox to main set.mm
+20-Jan-24 nfiund    nfiundg
+20-Jan-24 bnj1441   bnj1441g
+20-Jan-24 cbviinv   cbviinvg
+20-Jan-24 cbviunv   cbviunvg
+20-Jan-24 cbviin    cbviing
+20-Jan-24 cbviun    cbviung
+20-Jan-24 nfiin     nfiing
+20-Jan-24 nfiun     nfiung
+20-Jan-24 nfrex     nfrexg
+20-Jan-24 nfrexd    nfrexdg
+20-Jan-24 nfaba1    nfaba1g
+20-Jan-24 nfab      nfabg
+20-Jan-24 hblem     hblemg
+20-Jan-24 nfsab     nfsabg
+20-Jan-24 hbab      hbabg 
 17-Jan-24 mteqand   [same]      moved from SN's mathbox to main set.mm
 15-Jan-24 sseqtr4d  sseqtrrd
 14-Jan-24 sseqtr4i  sseqtrri
