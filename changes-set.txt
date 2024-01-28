@@ -118,6 +118,9 @@ DONE:
 Date      Old       New         Notes
 23-Jan-24 nelb      [same]      moved from TA's mathbox to main set.mm
 22-Jan-24 syl6sseqr sseqtrrdi
+21-Jan-24 ccats1val1 [same]     revised - eliminated unnecessary antecedent
+21-Jan-24 ccat2s1p1 [same]      revised - eliminated unnecessary antecedent
+21-Jan-24 ccat2s1p2 [same]      revised - eliminated unnecessary antecedent
 20-Jan-24 nfiund    nfiundg
 20-Jan-24 bnj1441   bnj1441g
 20-Jan-24 cbviinv   cbviinvg
@@ -140,6 +143,8 @@ Date      Old       New         Notes
 17-Jan-24 mteqand   [same]      moved from SN's mathbox to main set.mm
 15-Jan-24 sseqtr4d  sseqtrrd
 14-Jan-24 sseqtr4i  sseqtrri
+14-Jan-24 ccat2s1len [same]     revised - eliminated unnecessary antecedents
+14-Jan-24 wlklenvclwlk [same]   revised - eliminated unnecessary antecedent
 13-Jan-24 mndlsmidm [same]      moved from AV's mathbox to main set.mm
 13-Jan-24 smndlsmidm [same]     moved from AV's mathbox to main set.mm
 13-Jan-24 cycsubm   [same]      moved from AV's mathbox to main set.mm
