@@ -19,7 +19,7 @@ $( !
 This work is waived of all rights, including copyright, according to the CC0
 Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
 
-Norman Megill
+Norman Megill - https://us.metamath.org
 
 $)
 
@@ -653,11 +653,11 @@ $)
       ( tb lbi rbi ax-r2 ) ACGADGBDGCDAFHABDEIJ $.
   $}
 
-  $( Alternate defintion of "false".  (Contributed by NM, 10-Aug-1997.) $)
+  $( Alternate definition of "false".  (Contributed by NM, 10-Aug-1997.) $)
   dff2 $p |- 0 = ( a v a ' ) ' $=
     ( wf wt wn wo df-f df-t ax-r4 ax-r2 ) BCDAADEZDFCJAGHI $.
 
-  $( Alternate defintion of "false".  (Contributed by NM, 29-Aug-1997.) $)
+  $( Alternate definition of "false".  (Contributed by NM, 29-Aug-1997.) $)
   dff $p |- 0 = ( a ^ a ' ) $=
     ( wf wn wo wa dff2 ancom anor2 ax-r2 ax-r1 ) BAACZDCZAKEZAFMLMKAELAKGAAHIJI
     $.
@@ -10307,7 +10307,7 @@ althtmldef "-u" as ' &minus;<I><SUB>u</SUB> </I>';
 althtmldef "=<u" as ' &le;<I><SUB>u</SUB> </I>';
 althtmldef "=" as ' = ';
 */
-/* End of Unicode defintions */
+/* End of Unicode definitions */
 
 latexdef "a" as "a";
 latexdef "b" as "b";
