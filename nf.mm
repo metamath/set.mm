@@ -41425,13 +41425,13 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     srelk.2 $e |- B e. _V $.
     $( Binary relationship form of the ` _S[fin] ` relationship.  (Contributed
        by SF, 23-Jan-2015.) $)
-    srelk $p |- ( << A , B >> e. ( ( Nn X._k Nn ) i^i ( (
- Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k _S_k (+) Ins2_k SI_k
- _S_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c )
-    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k
-    ~P1 ~P1 1c ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
-                                                             ~P1 1c ) ) <->
-        _S[fin] ( A , B ) ) $=
+    srelk $p |- ( << A , B >> e. ( ( Nn X._k Nn ) i^i ( ( Ins3_k ( (
+                Ins3_k SI_k ( ( ~P 1c X._k _V ) \
+              ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i
+                Ins2_k _S_k ) "_k ~P1 ~P1 1c )
+        i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k
+      ~P1 ~P1 1c ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1  ~P1 1c ) )
+                                                     <-> _S[fin] ( A , B ) ) $=
       ( vx vt vy vz copk cnnc wcel cssetk wa wex wceq exbii 3bitr4i snex 3bitri
       csn cxpk c1c cpw cvv cins3k csik cins2k csymdif cpw1 cimak cdif ccompl cv
       cin wsfin opkelxpk wrex opkex elimak elpw131c anbi1i 19.41v bitr4i df-rex
