@@ -17310,8 +17310,9 @@ New usage of "sbequ1ALT" is discouraged (4 uses).
 New usage of "sbequ1OLD" is discouraged (0 uses).
 New usage of "sbequ2ALT" is discouraged (4 uses).
 New usage of "sbequ2OLD" is discouraged (0 uses).
+New usage of "sbequ2OLDOLD" is discouraged (0 uses).
 New usage of "sbequALT" is discouraged (1 uses).
-New usage of "sbequOLD" is discouraged (0 uses).
+New usage of "sbequOLDOLD" is discouraged (0 uses).
 New usage of "sbequiALT" is discouraged (1 uses).
 New usage of "sbequiOLD" is discouraged (0 uses).
 New usage of "sbequivvOLD" is discouraged (1 uses).
@@ -19264,9 +19265,10 @@ Proof modification of "sbequ12ALT" is discouraged (18 steps).
 Proof modification of "sbequ1ALT" is discouraged (24 steps).
 Proof modification of "sbequ1OLD" is discouraged (30 steps).
 Proof modification of "sbequ2ALT" is discouraged (17 steps).
-Proof modification of "sbequ2OLD" is discouraged (23 steps).
+Proof modification of "sbequ2OLD" is discouraged (75 steps).
+Proof modification of "sbequ2OLDOLD" is discouraged (23 steps).
 Proof modification of "sbequALT" is discouraged (30 steps).
-Proof modification of "sbequOLD" is discouraged (28 steps).
+Proof modification of "sbequOLDOLD" is discouraged (28 steps).
 Proof modification of "sbequiALT" is discouraged (112 steps).
 Proof modification of "sbequiOLD" is discouraged (110 steps).
 Proof modification of "sbequivvOLD" is discouraged (48 steps).
