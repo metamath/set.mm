@@ -39544,8 +39544,8 @@ $)
       AIUGDOPTUCAECDQRUA $.
   $}
 
-  $( If cardinal addition is nonempty, then both addends are nonempty.
-     Theorem X.1.20 of [Rosser] p. 526.  (Contributed by SF, 18-Jan-2015.) $)
+  $( If cardinal addition is nonempty, then both addends are nonempty.  Theorem
+     X.1.20 of [Rosser] p. 526.  (Contributed by SF, 18-Jan-2015.) $)
   addcnnul $p |- ( ( A +c B ) =/= (/) -> ( A =/= (/) /\ B =/= (/) ) ) $=
     ( cplc wne wceq addceq1 addccom addcnul1 eqtri syl6eq necon3i addceq2 jca
     c0 ) ABCZNDANDBNDANONANEONBCZNANBFPBNCNNBGBHIJKBNONBNEOANCNBNALAHJKM $.
@@ -40315,8 +40315,8 @@ $)
     $d a b $.  $d a n $.  $d a p $.  $d b n $.  $d b p $.  $d M a $.  $d M b $.
     $d M n $.  $d M p $.  $d n p $.  $d a q $.  $d b q $.  $d M q $.  $d n q $.
     $d p q $.
-    $( For any nonempty finite cardinal, there is a unique natural containing
-       a unit power class of one of its elements.  Theorem X.1.27 of [Rosser]
+    $( For any nonempty finite cardinal, there is a unique natural containing a
+       unit power class of one of its elements.  Theorem X.1.27 of [Rosser]
        p. 528.  (Contributed by SF, 22-Jan-2015.) $)
     nnpw1ex $p |- ( ( M e. Nn /\ M =/= (/) ) ->
       E! n e. Nn E. a e. M ~P1 a e. n ) $=
@@ -40933,8 +40933,8 @@ $)
 
   ${
     $d x k n m $.
-    $( Every nonempty finite cardinal is either even or odd.  Theorem X.1.35
-       of [Rosser] p. 529.  (Contributed by SF, 20-Jan-2015.) $)
+    $( Every nonempty finite cardinal is either even or odd.  Theorem X.1.35 of
+       [Rosser] p. 529.  (Contributed by SF, 20-Jan-2015.) $)
     evenoddnnnul $p |- ( Even[fin] u. Odd[fin] ) = ( Nn \ { (/) } ) $=
       ( vx vn vm vk cevenfin coddfin cnnc c0 wss cv wcel wne ssriv wi c0c neeq1
       c1c wo eleq1 imbi12d cun cdif wa evennn evennnul eldifsn sylanbrc oddnnul
@@ -59919,8 +59919,8 @@ $)
 
   ${
     $d a b $.  $d a g $.  $d b g $.  $d M a $.  $d M b $.  $d M g $.
-    $( A condition for cardinal exponentiation being nonempty.  Theorem
-       XI.2.42 of [Rosser] p. 382.  (Contributed by SF, 6-Mar-2015.) $)
+    $( A condition for cardinal exponentiation being nonempty.  Theorem XI.2.42
+       of [Rosser] p. 382.  (Contributed by SF, 6-Mar-2015.) $)
     ce0nnul $p |- ( M e. NC -> ( ( M ^c 0c ) =/= (/) <->
        E. a ~P1 a e. M ) ) $=
       ( vg vb cncs wcel cv c0c cce co wex cpw1 cmap cen wbr w3a c0 wb wa wceq
