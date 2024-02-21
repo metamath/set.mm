@@ -17251,6 +17251,7 @@ New usage of "rusbcALT" is discouraged (0 uses).
 New usage of "s1dmALT" is discouraged (0 uses).
 New usage of "s2dmALT" is discouraged (0 uses).
 New usage of "sb1ALT" is discouraged (4 uses).
+New usage of "sb1OLD" is discouraged (0 uses).
 New usage of "sb2ALT" is discouraged (7 uses).
 New usage of "sb2vOLD" is discouraged (3 uses).
 New usage of "sb2vOLDALT" is discouraged (1 uses).
@@ -19200,6 +19201,7 @@ Proof modification of "rusbcALT" is discouraged (77 steps).
 Proof modification of "s1dmALT" is discouraged (25 steps).
 Proof modification of "s2dmALT" is discouraged (38 steps).
 Proof modification of "sb1ALT" is discouraged (13 steps).
+Proof modification of "sb1OLD" is discouraged (54 steps).
 Proof modification of "sb2ALT" is discouraged (23 steps).
 Proof modification of "sb2vOLD" is discouraged (16 steps).
 Proof modification of "sb2vOLDALT" is discouraged (23 steps).
