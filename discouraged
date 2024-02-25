@@ -17612,6 +17612,7 @@ New usage of "supsrlem" is discouraged (1 uses).
 New usage of "swrdnznd" is discouraged (1 uses).
 New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
+New usage of "symgsubmefmndALT" is discouraged (0 uses).
 New usage of "tarski-bernays-ax2" is discouraged (0 uses).
 New usage of "tb-ax1" is discouraged (3 uses).
 New usage of "tb-ax2" is discouraged (1 uses).
@@ -19351,6 +19352,7 @@ Proof modification of "suctrALTcfVD" is discouraged (164 steps).
 Proof modification of "supp0cosupp0OLD" is discouraged (176 steps).
 Proof modification of "syl5imp" is discouraged (23 steps).
 Proof modification of "syl5impVD" is discouraged (57 steps).
+Proof modification of "symgsubmefmndALT" is discouraged (199 steps).
 Proof modification of "symrefref3" is discouraged (75 steps).
 Proof modification of "tarski-bernays-ax2" is discouraged (557 steps).
 Proof modification of "tb-ax1" is discouraged (4 steps).
