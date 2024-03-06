@@ -13607,7 +13607,6 @@ New usage of "bdophmi" is discouraged (2 uses).
 New usage of "bdophsi" is discouraged (3 uses).
 New usage of "bdopln" is discouraged (9 uses).
 New usage of "bdopssadj" is discouraged (4 uses).
-New usage of "biadan2OLD" is discouraged (0 uses).
 New usage of "biadanOLD" is discouraged (0 uses).
 New usage of "biadaniALT" is discouraged (0 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
@@ -15187,10 +15186,8 @@ New usage of "erngplus-rN" is discouraged (1 uses).
 New usage of "erngplus2-rN" is discouraged (0 uses).
 New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
-New usage of "euaeOLD" is discouraged (0 uses).
 New usage of "eubiOLD" is discouraged (0 uses).
 New usage of "eubiiOLD" is discouraged (0 uses).
-New usage of "euequOLD" is discouraged (0 uses).
 New usage of "euimOLD" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
 New usage of "ex-decpmul" is discouraged (0 uses).
@@ -15222,7 +15219,6 @@ New usage of "exidu1" is discouraged (3 uses).
 New usage of "exinst" is discouraged (1 uses).
 New usage of "exinst01" is discouraged (1 uses).
 New usage of "exinst11" is discouraged (1 uses).
-New usage of "exists2OLD" is discouraged (0 uses).
 New usage of "exlimddOLD" is discouraged (0 uses).
 New usage of "exlimexi" is discouraged (2 uses).
 New usage of "exlimimddOLD" is discouraged (0 uses).
@@ -18010,7 +18006,6 @@ Proof modification of "barbariALT" is discouraged (22 steps).
 Proof modification of "barocoALT" is discouraged (24 steps).
 Proof modification of "bcsiALT" is discouraged (444 steps).
 Proof modification of "bhmafibid1" is discouraged (429 steps).
-Proof modification of "biadan2OLD" is discouraged (17 steps).
 Proof modification of "biadanOLD" is discouraged (121 steps).
 Proof modification of "biadaniALT" is discouraged (28 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
@@ -18559,10 +18554,8 @@ Proof modification of "equsb3rOLD" is discouraged (34 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
 Proof modification of "equsexvwOLD" is discouraged (36 steps).
 Proof modification of "equviniOLD" is discouraged (68 steps).
-Proof modification of "euaeOLD" is discouraged (49 steps).
 Proof modification of "eubiOLD" is discouraged (15 steps).
 Proof modification of "eubiiOLD" is discouraged (17 steps).
-Proof modification of "euequOLD" is discouraged (36 steps).
 Proof modification of "euimOLD" is discouraged (37 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
 Proof modification of "ex-decpmul" is discouraged (304 steps).
@@ -18590,7 +18583,6 @@ Proof modification of "exgenOLD" is discouraged (13 steps).
 Proof modification of "exinst" is discouraged (12 steps).
 Proof modification of "exinst01" is discouraged (16 steps).
 Proof modification of "exinst11" is discouraged (21 steps).
-Proof modification of "exists2OLD" is discouraged (61 steps).
 Proof modification of "exlimddOLD" is discouraged (19 steps).
 Proof modification of "exlimexi" is discouraged (15 steps).
 Proof modification of "exlimimddOLD" is discouraged (13 steps).
