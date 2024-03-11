@@ -106,12 +106,12 @@ proposed  syl6reqr  eqtr4id     hypotheses would be switched
 proposed  syl6eqel  eqeltrdi    compare to eqeltri or eqeltrd
 proposed  syl6eqelr eqeltrrdi   compare to eqeltrri or eqeltrrd
 proposed  syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
-proposed  syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+10-Mar-24 syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
 29-Feb-24 syl6ss    sstrdi      compare to sstri or sstrd
 27-Feb-24 syl6sseq  sseqtrdi    compare to sseqtri or sseqtrd
 13-Feb-24 syl6eqss  eqsstrdi    compare to eqsstri or eqsstrd
