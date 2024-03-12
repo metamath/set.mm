@@ -11277,39 +11277,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>pilem2</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof needs some obvious intuitionizing around not
-  equal to zero versus apart from zero, and nonempty versus
-  inhabited, but more seriously it depends on infrecl , infregelb ,
-  and infrelb</td>
-</tr>
-
-<tr>
-  <td>pilem3</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof depends on ivth2 (the Intermediate
-  Value Theorem).  We should be able to use ~ ivthdec
-  if we show that sine is strictly monotonic between 2 and 4 .
-  Additionally, the set.mm
-  proof uses infrelb , infrecl , pilem2 , and infregelb .</td>
-</tr>
-
-<tr>
-  <td>pigt2lt4</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses pilem3</td>
-</tr>
-
-<tr>
-  <td>sinpi</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses pilem3</td>
-</tr>
-
-<tr>
-  <td>pire</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses pilem3</td>
+  <td>~ pilem3</td>
+  <td>our proof of pilem3 is different enough from set.mm
+  that it doesn't need to go via pilem2</td>
 </tr>
 
 </TABLE>
