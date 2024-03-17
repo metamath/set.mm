@@ -111,6 +111,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+17-Mar-24 uniexd    [same]      moved from GS's mathbox to main set.mm
 10-Mar-24 syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
 29-Feb-24 syl6ss    sstrdi      compare to sstri or sstrd
 27-Feb-24 syl6sseq  sseqtrdi    compare to sseqtri or sseqtrd
