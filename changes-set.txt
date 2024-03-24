@@ -110,6 +110,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+23-Mar-24 funfvima2d [same]     moved from SP's mathbox to main set.mm
+17-Mar-24 uniexd    [same]      moved from GS's mathbox to main set.mm
 16-Mar-24 syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
 10-Mar-24 syl6eleqr eleqtrrdi   compare to eleqtrri or eleqtrrd
 29-Feb-24 syl6ss    sstrdi      compare to sstri or sstrd
