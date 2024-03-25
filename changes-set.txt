@@ -110,6 +110,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+24-Mar-24 anim12da  ---         deleted (in JM's mathbox),
+                                duplicate of anim12dan
+24-Mar-24 elabd     spcedv
 23-Mar-24 funfvima2d [same]     moved from SP's mathbox to main set.mm
 17-Mar-24 uniexd    [same]      moved from GS's mathbox to main set.mm
 16-Mar-24 syl6eleq  eleqtrdi    compare to eleqtri or eleqtrd
