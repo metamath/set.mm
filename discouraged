@@ -3232,7 +3232,6 @@
 "cbvral" is used by "cbvral2".
 "cbvral" is used by "cbvralsv".
 "cbvral" is used by "cbvralv".
-"cbvral" is used by "disjxun".
 "cbvral" is used by "ralrnmpt".
 "cbvral" is used by "smfinf".
 "cbvral" is used by "smfinflem".
@@ -3245,7 +3244,6 @@
 "cbvralv" is used by "bnj1452".
 "cbvralv" is used by "cbvral2v".
 "cbvralv" is used by "cbvral3v".
-"cbvralv" is used by "disjxun".
 "cbvralv" is used by "frgrwopreglem5ALT".
 "cbvralv" is used by "smfsuplem2".
 "cbvralv" is used by "vonicc".
@@ -10181,7 +10179,6 @@
 "nfrab" is used by "smfsupxr".
 "nfral" is used by "bnj1228".
 "nfral" is used by "cbvral2".
-"nfral" is used by "disjxun".
 "nfral" is used by "eliuniincex".
 "nfral" is used by "nfiing".
 "nfral" is used by "nfra2".
@@ -14982,13 +14979,13 @@ New usage of "cbvopab1g" is discouraged (1 uses).
 New usage of "cbvrab" is discouraged (3 uses).
 New usage of "cbvrabcsf" is discouraged (4 uses).
 New usage of "cbvrabvOLD" is discouraged (0 uses).
-New usage of "cbvral" is discouraged (9 uses).
+New usage of "cbvral" is discouraged (8 uses).
 New usage of "cbvral2v" is discouraged (1 uses).
 New usage of "cbvral3v" is discouraged (0 uses).
 New usage of "cbvralcsf" is discouraged (2 uses).
 New usage of "cbvralf" is discouraged (2 uses).
 New usage of "cbvralsv" is discouraged (0 uses).
-New usage of "cbvralv" is discouraged (8 uses).
+New usage of "cbvralv" is discouraged (7 uses).
 New usage of "cbvralv2" is discouraged (0 uses).
 New usage of "cbvreu" is discouraged (2 uses).
 New usage of "cbvreucsf" is discouraged (0 uses).
@@ -15753,7 +15750,6 @@ New usage of "dipfval" is discouraged (3 uses).
 New usage of "diporthcom" is discouraged (1 uses).
 New usage of "dipsubdi" is discouraged (2 uses).
 New usage of "dipsubdir" is discouraged (2 uses).
-New usage of "disjxun" is discouraged (0 uses).
 New usage of "distrlem1pr" is discouraged (1 uses).
 New usage of "distrlem4pr" is discouraged (1 uses).
 New usage of "distrlem5pr" is discouraged (1 uses).
@@ -17433,7 +17429,7 @@ New usage of "nfnae" is discouraged (48 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
 New usage of "nfrab" is discouraged (6 uses).
-New usage of "nfral" is discouraged (9 uses).
+New usage of "nfral" is discouraged (8 uses).
 New usage of "nfrald" is discouraged (2 uses).
 New usage of "nfreu" is discouraged (0 uses).
 New usage of "nfreud" is discouraged (1 uses).
