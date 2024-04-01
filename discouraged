@@ -3205,7 +3205,6 @@
 "cbvex" is used by "cbveuALT".
 "cbvex" is used by "cbvexv".
 "cbvex" is used by "sb8e".
-"cbvex2vv" is used by "bj-cbvex4vv".
 "cbvex2vv" is used by "cbvex4v".
 "cbvexd" is used by "axacndlem4".
 "cbvexd" is used by "axinfndlem1".
@@ -3251,7 +3250,6 @@
 "cbvralcsf" is used by "cbvrexcsf".
 "cbvralf" is used by "cbvral".
 "cbvralf" is used by "cbvrexf".
-"cbvralv" is used by "bnj1452".
 "cbvralv" is used by "cbvral2v".
 "cbvralv" is used by "cbvral3v".
 "cbvralv" is used by "frgrwopreglem5ALT".
@@ -4299,14 +4297,11 @@
 "chub2i" is used by "pjclem1".
 "chub2i" is used by "qlaxr3i".
 "chub2i" is used by "sumdmdlem2".
-"chvar" is used by "bnj1384".
-"chvar" is used by "bnj1489".
 "chvar" is used by "chvarv".
 "chvar" is used by "vonhoire".
 "chvar" is used by "vonn0icc2".
 "chvar" is used by "vonn0ioo2".
 "chvar" is used by "zfcndrep".
-"chvarv" is used by "bnj1326".
 "chvarv" is used by "vonicc".
 "chvarv" is used by "vonioo".
 "clmgmOLD" is used by "exidcl".
@@ -10114,7 +10109,6 @@
 "nfeqf2" is used by "wl-sbcom2d-lem1".
 "nfeu" is used by "2eu7".
 "nfeu" is used by "2eu8".
-"nfeu" is used by "bnj1489".
 "nfeud" is used by "nfeu".
 "nfeud2" is used by "nfeud".
 "nfeud2" is used by "nfreud".
@@ -10188,7 +10182,6 @@
 "nfrab" is used by "smflimsuplem7".
 "nfrab" is used by "smfsupmpt".
 "nfrab" is used by "smfsupxr".
-"nfral" is used by "bnj1228".
 "nfral" is used by "cbvral2".
 "nfral" is used by "eliuniincex".
 "nfral" is used by "nfiing".
@@ -10207,7 +10200,6 @@
 "nfsabg" is used by "nfabg".
 "nfsb" is used by "2sb5nd".
 "nfsb" is used by "2sb8e".
-"nfsb" is used by "ax11-pm2".
 "nfsb" is used by "cbviota".
 "nfsb" is used by "cbvmptfg".
 "nfsb" is used by "cbvopab1g".
@@ -12577,7 +12569,6 @@
 "sb7f" is used by "dfsb7OLDOLD".
 "sb7f" is used by "sb7h".
 "sb7fALT" is used by "dfsb7ALT".
-"sb8" is used by "ax11-pm2".
 "sb8" is used by "sb8iota".
 "sb8" is used by "sbhb".
 "sb8" is used by "wl-sb8eut".
@@ -12655,8 +12646,6 @@
 "sbid2" is used by "sbtrt".
 "sbid2v" is used by "dfich2bi".
 "sbie" is used by "2sbiev".
-"sbie" is used by "bj-sbeqALT".
-"sbie" is used by "bnj1321".
 "sbie" is used by "cbvab".
 "sbie" is used by "cbveu".
 "sbie" is used by "cbviota".
@@ -14972,7 +14961,7 @@ New usage of "cbveu" is discouraged (2 uses).
 New usage of "cbveuALT" is discouraged (0 uses).
 New usage of "cbvex" is discouraged (3 uses).
 New usage of "cbvex2" is discouraged (0 uses).
-New usage of "cbvex2vv" is discouraged (2 uses).
+New usage of "cbvex2vv" is discouraged (1 uses).
 New usage of "cbvex4v" is discouraged (0 uses).
 New usage of "cbvexd" is discouraged (12 uses).
 New usage of "cbvexdva" is discouraged (1 uses).
@@ -14999,7 +14988,7 @@ New usage of "cbvral3v" is discouraged (0 uses).
 New usage of "cbvralcsf" is discouraged (2 uses).
 New usage of "cbvralf" is discouraged (2 uses).
 New usage of "cbvralsv" is discouraged (0 uses).
-New usage of "cbvralv" is discouraged (7 uses).
+New usage of "cbvralv" is discouraged (6 uses).
 New usage of "cbvralv2" is discouraged (0 uses).
 New usage of "cbvreu" is discouraged (2 uses).
 New usage of "cbvreucsf" is discouraged (0 uses).
@@ -15308,8 +15297,8 @@ New usage of "chub1i" is discouraged (18 uses).
 New usage of "chub2" is discouraged (14 uses).
 New usage of "chub2i" is discouraged (24 uses).
 New usage of "chunssji" is discouraged (0 uses).
-New usage of "chvar" is discouraged (7 uses).
-New usage of "chvarv" is discouraged (3 uses).
+New usage of "chvar" is discouraged (5 uses).
+New usage of "chvarv" is discouraged (2 uses).
 New usage of "clel5OLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
@@ -17425,7 +17414,7 @@ New usage of "nfeqf" is discouraged (9 uses).
 New usage of "nfeqf1" is discouraged (7 uses).
 New usage of "nfeqf2" is discouraged (16 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
-New usage of "nfeu" is discouraged (3 uses).
+New usage of "nfeu" is discouraged (2 uses).
 New usage of "nfeu1ALT" is discouraged (0 uses).
 New usage of "nfeud" is discouraged (1 uses).
 New usage of "nfeud2" is discouraged (2 uses).
@@ -17443,7 +17432,7 @@ New usage of "nfnae" is discouraged (48 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
 New usage of "nfrab" is discouraged (6 uses).
-New usage of "nfral" is discouraged (8 uses).
+New usage of "nfral" is discouraged (7 uses).
 New usage of "nfrald" is discouraged (2 uses).
 New usage of "nfreu" is discouraged (0 uses).
 New usage of "nfreud" is discouraged (1 uses).
@@ -17455,7 +17444,7 @@ New usage of "nfrmod" is discouraged (0 uses).
 New usage of "nfs1" is discouraged (2 uses).
 New usage of "nfsab1OLD" is discouraged (0 uses).
 New usage of "nfsabg" is discouraged (1 uses).
-New usage of "nfsb" is discouraged (20 uses).
+New usage of "nfsb" is discouraged (19 uses).
 New usage of "nfsb2" is discouraged (4 uses).
 New usage of "nfsb2ALT" is discouraged (1 uses).
 New usage of "nfsb4" is discouraged (2 uses).
@@ -18361,7 +18350,7 @@ New usage of "sb6x" is discouraged (0 uses).
 New usage of "sb7f" is discouraged (2 uses).
 New usage of "sb7fALT" is discouraged (1 uses).
 New usage of "sb7h" is discouraged (0 uses).
-New usage of "sb8" is discouraged (4 uses).
+New usage of "sb8" is discouraged (3 uses).
 New usage of "sb8e" is discouraged (5 uses).
 New usage of "sb8eu" is discouraged (3 uses).
 New usage of "sb8iota" is discouraged (0 uses).
@@ -18434,7 +18423,7 @@ New usage of "sbi2vOLD" is discouraged (0 uses).
 New usage of "sbid2" is discouraged (2 uses).
 New usage of "sbid2v" is discouraged (1 uses).
 New usage of "sbidm" is discouraged (0 uses).
-New usage of "sbie" is discouraged (22 uses).
+New usage of "sbie" is discouraged (20 uses).
 New usage of "sbieALT" is discouraged (1 uses).
 New usage of "sbied" is discouraged (3 uses).
 New usage of "sbiedALT" is discouraged (1 uses).
