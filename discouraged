@@ -3195,7 +3195,6 @@
 "cbvex" is used by "cbveuALT".
 "cbvex" is used by "cbvexv".
 "cbvex" is used by "sb8e".
-"cbvex2vv" is used by "bj-cbvex4vv".
 "cbvex2vv" is used by "cbvex4v".
 "cbvexd" is used by "axacndlem4".
 "cbvexd" is used by "axinfndlem1".
@@ -10196,7 +10195,6 @@
 "nfsabg" is used by "nfabg".
 "nfsb" is used by "2sb5nd".
 "nfsb" is used by "2sb8e".
-"nfsb" is used by "ax11-pm2".
 "nfsb" is used by "cbviota".
 "nfsb" is used by "cbvmptfg".
 "nfsb" is used by "cbvopab1g".
@@ -12566,7 +12564,6 @@
 "sb7f" is used by "dfsb7OLDOLD".
 "sb7f" is used by "sb7h".
 "sb7fALT" is used by "dfsb7ALT".
-"sb8" is used by "ax11-pm2".
 "sb8" is used by "sb8iota".
 "sb8" is used by "sbhb".
 "sb8" is used by "wl-sb8eut".
@@ -12644,7 +12641,6 @@
 "sbid2" is used by "sbtrt".
 "sbid2v" is used by "dfich2bi".
 "sbie" is used by "2sbiev".
-"sbie" is used by "bj-sbeqALT".
 "sbie" is used by "bnj1321".
 "sbie" is used by "cbvab".
 "sbie" is used by "cbveu".
@@ -14958,7 +14954,7 @@ New usage of "cbveu" is discouraged (2 uses).
 New usage of "cbveuALT" is discouraged (0 uses).
 New usage of "cbvex" is discouraged (3 uses).
 New usage of "cbvex2" is discouraged (0 uses).
-New usage of "cbvex2vv" is discouraged (2 uses).
+New usage of "cbvex2vv" is discouraged (1 uses).
 New usage of "cbvex4v" is discouraged (0 uses).
 New usage of "cbvexd" is discouraged (12 uses).
 New usage of "cbvexdva" is discouraged (1 uses).
@@ -17441,7 +17437,7 @@ New usage of "nfrmod" is discouraged (0 uses).
 New usage of "nfs1" is discouraged (2 uses).
 New usage of "nfsab1OLD" is discouraged (0 uses).
 New usage of "nfsabg" is discouraged (1 uses).
-New usage of "nfsb" is discouraged (20 uses).
+New usage of "nfsb" is discouraged (19 uses).
 New usage of "nfsb2" is discouraged (4 uses).
 New usage of "nfsb2ALT" is discouraged (1 uses).
 New usage of "nfsb4" is discouraged (2 uses).
@@ -18347,7 +18343,7 @@ New usage of "sb6x" is discouraged (0 uses).
 New usage of "sb7f" is discouraged (2 uses).
 New usage of "sb7fALT" is discouraged (1 uses).
 New usage of "sb7h" is discouraged (0 uses).
-New usage of "sb8" is discouraged (4 uses).
+New usage of "sb8" is discouraged (3 uses).
 New usage of "sb8e" is discouraged (5 uses).
 New usage of "sb8eu" is discouraged (3 uses).
 New usage of "sb8iota" is discouraged (0 uses).
@@ -18420,7 +18416,7 @@ New usage of "sbi2vOLD" is discouraged (0 uses).
 New usage of "sbid2" is discouraged (2 uses).
 New usage of "sbid2v" is discouraged (1 uses).
 New usage of "sbidm" is discouraged (0 uses).
-New usage of "sbie" is discouraged (22 uses).
+New usage of "sbie" is discouraged (21 uses).
 New usage of "sbieALT" is discouraged (1 uses).
 New usage of "sbied" is discouraged (3 uses).
 New usage of "sbiedALT" is discouraged (1 uses).
