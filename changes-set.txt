@@ -111,7 +111,7 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 29-Mar-24 fvmptdf   fvmptd2f
-28-Mar-24 ---       ---         sections "Monoid of endofunctions"
+28-Mar-24 ---       ---         section "Monoid of endofunctions"
                                 moved from AV's mathbox to main set.mm
 24-Mar-24 anim12da  ---         deleted (in JM's mathbox),
                                 duplicate of anim12dan
