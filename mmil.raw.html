@@ -9045,12 +9045,76 @@ intuitionistic and it is lightly used in set.mm</TD>
   an additional hypothesis beyond what set.mm has).</TD>
 </TR>
 
+<tr>
+  <td>clim2div</td>
+  <td>~ clim2divap</td>
+</tr>
+
+<tr>
+  <td>prodfmul</td>
+  <td>~ prod3fmul</td>
+  <td>The functions ` F ` , ` G ` , and ` H ` need to be defined on
+  ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) ` .</td>
+</tr>
+
+<tr>
+  <td>prodfn0</td>
+  <td>~ prodfap0</td>
+</tr>
+
+<tr>
+  <td>prodfrec</td>
+  <td>~ prodfrecap</td>
+</tr>
+
+<tr>
+  <td>prodfdiv</td>
+  <td>~ prodfdivap</td>
+  <td>in addition to changing not equal to apart, various hypotheses
+  need to hold for ` ( ZZ>= `` M ) ` not merely ` ( M ... N ) `</td>
+</tr>
+
+<tr>
+  <td>ntrivcvg</td>
+  <td>~ ntrivcvgap</td>
+</tr>
+
+<tr>
+  <td>ntrivcvgn0</td>
+  <td>~ ntrivcvgap0</td>
+</tr>
+
+<tr>
+  <td>ntrivcvgfvn0</td>
+  <td><i>none</i></td>
+  <td>To be useful, presumably not equal needs to be changed to apart.
+  This means the set.mm proof does not work and we need another approach
+  (for example, something a bit like ~ seq3p1 or ~ seq3split but for
+  convergence expressed with ` ~~> ` rather than for a finite
+  subsequence).</td>
+</tr>
+
+<tr>
+  <td>ntrivcvgtail</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on ntrivcvgfvn0 .  Would
+  need not equal changed to apart.</td>
+</tr>
+
+<tr>
+  <td>ntrivcvgmullem , ntrivcvgmul</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on ntrivcvgtail .  Would
+  need not equal changed to apart.</td>
+</tr>
+
 <TR>
-  <TD>df-prod and theorems using it</TD>
-  <TD><I>none</I></TD>
-  <TD>To define this, we will need to tackle all the issues analogous
-  to ~ df-sumdc plus some more around, for example, not equal to zero
-  versus apart from zero</TD>
+  <TD>df-prod</TD>
+  <TD>~ df-proddc</TD>
+  <TD>Changes not equal to apart, adds a decidability condition for
+  indexing by a set of integers, and passes a more fully defined
+  sequence to seq in the finite case. Should function similarly
+  to the set.mm definition of ` prod_ ` .</TD>
 </TR>
 
 <TR>
