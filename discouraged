@@ -1445,6 +1445,7 @@
 "ax12" is used by "bj-ax12v3".
 "ax12" is used by "equs5a".
 "ax12" is used by "equs5e".
+"ax12" is used by "wl-axc11r".
 "ax12inda2" is used by "ax12inda".
 "ax12indalem" is used by "ax12inda2".
 "ax12indn" is used by "ax12indi".
@@ -5471,7 +5472,6 @@
 "dveeq1" is used by "nfeqf".
 "dveeq1-o" is used by "ax12inda2ALT".
 "dveeq2" is used by "axc15".
-"dveeq2" is used by "axc15OLD".
 "dveeq2-o" is used by "ax12el".
 "dveeq2-o" is used by "ax12eq".
 "dveeq2-o" is used by "ax12inda".
@@ -14281,7 +14281,7 @@ New usage of "ax1" is discouraged (0 uses).
 New usage of "ax10fromc7" is discouraged (3 uses).
 New usage of "ax10w" is discouraged (0 uses).
 New usage of "ax11w" is discouraged (0 uses).
-New usage of "ax12" is discouraged (4 uses).
+New usage of "ax12" is discouraged (5 uses).
 New usage of "ax12a2-o" is discouraged (0 uses).
 New usage of "ax12b" is discouraged (0 uses).
 New usage of "ax12el" is discouraged (0 uses).
@@ -14349,6 +14349,8 @@ New usage of "axc11n" is discouraged (9 uses).
 New usage of "axc11n-16" is discouraged (0 uses).
 New usage of "axc11next" is discouraged (0 uses).
 New usage of "axc11nfromc11" is discouraged (0 uses).
+New usage of "axc14" is discouraged (0 uses).
+New usage of "axc15" is discouraged (5 uses).
 New usage of "axc16ALT" is discouraged (1 uses).
 New usage of "axc16b" is discouraged (0 uses).
 New usage of "axc16g-o" is discouraged (1 uses).
@@ -15828,7 +15830,7 @@ New usage of "dveel2ALT" is discouraged (0 uses).
 New usage of "dveeq1" is discouraged (2 uses).
 New usage of "dveeq1-o" is discouraged (1 uses).
 New usage of "dveeq1-o16" is discouraged (0 uses).
-New usage of "dveeq2" is discouraged (2 uses).
+New usage of "dveeq2" is discouraged (1 uses).
 New usage of "dveeq2-o" is discouraged (4 uses).
 New usage of "dveeq2ALT" is discouraged (0 uses).
 New usage of "dvelim" is discouraged (3 uses).
