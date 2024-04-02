@@ -1785,8 +1785,10 @@
 "bnj101" is used by "bnj907".
 "bnj1014" is used by "bnj1015".
 "bnj1015" is used by "bnj1018".
+"bnj1015" is used by "bnj1018g".
 "bnj1018" is used by "bnj1020".
 "bnj1019" is used by "bnj1018".
+"bnj1019" is used by "bnj1018g".
 "bnj1019" is used by "bnj1020".
 "bnj1019" is used by "bnj1021".
 "bnj1020" is used by "bnj907".
@@ -1994,6 +1996,7 @@
 "bnj1234" is used by "bnj1311".
 "bnj1235" is used by "bnj1006".
 "bnj1235" is used by "bnj1018".
+"bnj1235" is used by "bnj1018g".
 "bnj1235" is used by "bnj1110".
 "bnj1235" is used by "bnj1121".
 "bnj1235" is used by "bnj1311".
@@ -2118,6 +2121,7 @@
 "bnj133" is used by "bnj983".
 "bnj133" is used by "bnj984".
 "bnj133" is used by "bnj985".
+"bnj133" is used by "bnj985v".
 "bnj1340" is used by "bnj1450".
 "bnj1345" is used by "bnj1379".
 "bnj1345" is used by "bnj1521".
@@ -2366,6 +2370,7 @@
 "bnj257" is used by "bnj543".
 "bnj257" is used by "bnj929".
 "bnj258" is used by "bnj1018".
+"bnj258" is used by "bnj1018g".
 "bnj258" is used by "bnj1019".
 "bnj258" is used by "bnj1110".
 "bnj258" is used by "bnj556".
@@ -2695,12 +2700,14 @@
 "bnj917" is used by "bnj981".
 "bnj917" is used by "bnj996".
 "bnj918" is used by "bnj1018".
+"bnj918" is used by "bnj1018g".
 "bnj918" is used by "bnj528".
 "bnj918" is used by "bnj907".
 "bnj918" is used by "bnj910".
 "bnj918" is used by "bnj929".
 "bnj918" is used by "bnj965".
 "bnj918" is used by "bnj985".
+"bnj918" is used by "bnj985v".
 "bnj918" is used by "bnj999".
 "bnj919" is used by "bnj907".
 "bnj919" is used by "bnj910".
@@ -2811,7 +2818,9 @@
 "bnj982" is used by "bnj1445".
 "bnj983" is used by "bnj1033".
 "bnj984" is used by "bnj985".
-"bnj985" is used by "bnj1018".
+"bnj984" is used by "bnj985v".
+"bnj985" is used by "bnj1018g".
+"bnj985v" is used by "bnj1018".
 "bnj986" is used by "bnj996".
 "bnj996" is used by "bnj1021".
 "bnj998" is used by "bnj1020".
@@ -3000,6 +3009,7 @@
 "c-bnj18" is used by "bnj1014".
 "c-bnj18" is used by "bnj1015".
 "c-bnj18" is used by "bnj1018".
+"c-bnj18" is used by "bnj1018g".
 "c-bnj18" is used by "bnj1020".
 "c-bnj18" is used by "bnj1029".
 "c-bnj18" is used by "bnj1033".
@@ -3240,7 +3250,6 @@
 "cbvralcsf" is used by "cbvrexcsf".
 "cbvralf" is used by "cbvral".
 "cbvralf" is used by "cbvrexf".
-"cbvralv" is used by "bnj1452".
 "cbvralv" is used by "cbvral2v".
 "cbvralv" is used by "cbvral3v".
 "cbvralv" is used by "frgrwopreglem5ALT".
@@ -4288,14 +4297,11 @@
 "chub2i" is used by "pjclem1".
 "chub2i" is used by "qlaxr3i".
 "chub2i" is used by "sumdmdlem2".
-"chvar" is used by "bnj1384".
-"chvar" is used by "bnj1489".
 "chvar" is used by "chvarv".
 "chvar" is used by "vonhoire".
 "chvar" is used by "vonn0icc2".
 "chvar" is used by "vonn0ioo2".
 "chvar" is used by "zfcndrep".
-"chvarv" is used by "bnj1326".
 "chvarv" is used by "vonicc".
 "chvarv" is used by "vonioo".
 "clmgmOLD" is used by "exidcl".
@@ -4634,6 +4640,7 @@
 "df-bnj15" is used by "bnj93".
 "df-bnj17" is used by "bnj1006".
 "df-bnj17" is used by "bnj1018".
+"df-bnj17" is used by "bnj1018g".
 "df-bnj17" is used by "bnj1019".
 "df-bnj17" is used by "bnj1040".
 "df-bnj17" is used by "bnj1174".
@@ -10102,7 +10109,6 @@
 "nfeqf2" is used by "wl-sbcom2d-lem1".
 "nfeu" is used by "2eu7".
 "nfeu" is used by "2eu8".
-"nfeu" is used by "bnj1489".
 "nfeud" is used by "nfeu".
 "nfeud2" is used by "nfeud".
 "nfeud2" is used by "nfreud".
@@ -10176,7 +10182,6 @@
 "nfrab" is used by "smflimsuplem7".
 "nfrab" is used by "smfsupmpt".
 "nfrab" is used by "smfsupxr".
-"nfral" is used by "bnj1228".
 "nfral" is used by "cbvral2".
 "nfral" is used by "eliuniincex".
 "nfral" is used by "nfiing".
@@ -12641,7 +12646,6 @@
 "sbid2" is used by "sbtrt".
 "sbid2v" is used by "dfich2bi".
 "sbie" is used by "2sbiev".
-"sbie" is used by "bnj1321".
 "sbie" is used by "cbvab".
 "sbie" is used by "cbveu".
 "sbie" is used by "cbviota".
@@ -13695,6 +13699,7 @@
 "w-bnj17" is used by "bnj1001".
 "w-bnj17" is used by "bnj1006".
 "w-bnj17" is used by "bnj1018".
+"w-bnj17" is used by "bnj1018g".
 "w-bnj17" is used by "bnj1019".
 "w-bnj17" is used by "bnj1020".
 "w-bnj17" is used by "bnj1021".
@@ -14535,9 +14540,10 @@ New usage of "bnj1001" is discouraged (1 uses).
 New usage of "bnj1006" is discouraged (1 uses).
 New usage of "bnj101" is discouraged (13 uses).
 New usage of "bnj1014" is discouraged (1 uses).
-New usage of "bnj1015" is discouraged (1 uses).
+New usage of "bnj1015" is discouraged (2 uses).
 New usage of "bnj1018" is discouraged (1 uses).
-New usage of "bnj1019" is discouraged (3 uses).
+New usage of "bnj1018g" is discouraged (0 uses).
+New usage of "bnj1019" is discouraged (4 uses).
 New usage of "bnj1020" is discouraged (1 uses).
 New usage of "bnj1021" is discouraged (1 uses).
 New usage of "bnj1023" is discouraged (5 uses).
@@ -14615,7 +14621,7 @@ New usage of "bnj1228" is discouraged (3 uses).
 New usage of "bnj1230" is discouraged (1 uses).
 New usage of "bnj1232" is discouraged (11 uses).
 New usage of "bnj1234" is discouraged (5 uses).
-New usage of "bnj1235" is discouraged (8 uses).
+New usage of "bnj1235" is discouraged (9 uses).
 New usage of "bnj1238" is discouraged (5 uses).
 New usage of "bnj1239" is discouraged (3 uses).
 New usage of "bnj124" is discouraged (2 uses).
@@ -14654,7 +14660,7 @@ New usage of "bnj132" is discouraged (1 uses).
 New usage of "bnj1321" is discouraged (1 uses).
 New usage of "bnj1322" is discouraged (1 uses).
 New usage of "bnj1326" is discouraged (2 uses).
-New usage of "bnj133" is discouraged (6 uses).
+New usage of "bnj133" is discouraged (7 uses).
 New usage of "bnj1340" is discouraged (1 uses).
 New usage of "bnj1345" is discouraged (2 uses).
 New usage of "bnj1350" is discouraged (2 uses).
@@ -14764,7 +14770,7 @@ New usage of "bnj253" is discouraged (9 uses).
 New usage of "bnj255" is discouraged (4 uses).
 New usage of "bnj256" is discouraged (10 uses).
 New usage of "bnj257" is discouraged (4 uses).
-New usage of "bnj258" is discouraged (6 uses).
+New usage of "bnj258" is discouraged (7 uses).
 New usage of "bnj268" is discouraged (3 uses).
 New usage of "bnj290" is discouraged (2 uses).
 New usage of "bnj291" is discouraged (3 uses).
@@ -14864,7 +14870,7 @@ New usage of "bnj910" is discouraged (1 uses).
 New usage of "bnj911" is discouraged (2 uses).
 New usage of "bnj916" is discouraged (1 uses).
 New usage of "bnj917" is discouraged (2 uses).
-New usage of "bnj918" is discouraged (8 uses).
+New usage of "bnj918" is discouraged (10 uses).
 New usage of "bnj919" is discouraged (3 uses).
 New usage of "bnj92" is discouraged (2 uses).
 New usage of "bnj923" is discouraged (14 uses).
@@ -14899,8 +14905,9 @@ New usage of "bnj98" is discouraged (1 uses).
 New usage of "bnj981" is discouraged (1 uses).
 New usage of "bnj982" is discouraged (3 uses).
 New usage of "bnj983" is discouraged (1 uses).
-New usage of "bnj984" is discouraged (1 uses).
+New usage of "bnj984" is discouraged (2 uses).
 New usage of "bnj985" is discouraged (1 uses).
+New usage of "bnj985v" is discouraged (1 uses).
 New usage of "bnj986" is discouraged (1 uses).
 New usage of "bnj996" is discouraged (1 uses).
 New usage of "bnj998" is discouraged (1 uses).
@@ -14925,7 +14932,7 @@ New usage of "branmfn" is discouraged (1 uses).
 New usage of "braval" is discouraged (10 uses).
 New usage of "brfi1indALT" is discouraged (0 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
-New usage of "c-bnj18" is discouraged (58 uses).
+New usage of "c-bnj18" is discouraged (59 uses).
 New usage of "c0exALT" is discouraged (0 uses).
 New usage of "cases2ALT" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
@@ -14981,7 +14988,7 @@ New usage of "cbvral3v" is discouraged (0 uses).
 New usage of "cbvralcsf" is discouraged (2 uses).
 New usage of "cbvralf" is discouraged (2 uses).
 New usage of "cbvralsv" is discouraged (0 uses).
-New usage of "cbvralv" is discouraged (7 uses).
+New usage of "cbvralv" is discouraged (6 uses).
 New usage of "cbvralv2" is discouraged (0 uses).
 New usage of "cbvreu" is discouraged (2 uses).
 New usage of "cbvreucsf" is discouraged (0 uses).
@@ -15290,8 +15297,8 @@ New usage of "chub1i" is discouraged (18 uses).
 New usage of "chub2" is discouraged (14 uses).
 New usage of "chub2i" is discouraged (24 uses).
 New usage of "chunssji" is discouraged (0 uses).
-New usage of "chvar" is discouraged (7 uses).
-New usage of "chvarv" is discouraged (3 uses).
+New usage of "chvar" is discouraged (5 uses).
+New usage of "chvarv" is discouraged (2 uses).
 New usage of "clel5OLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
@@ -15483,7 +15490,7 @@ New usage of "df-blo" is discouraged (1 uses).
 New usage of "df-bnj13" is discouraged (2 uses).
 New usage of "df-bnj14" is discouraged (5 uses).
 New usage of "df-bnj15" is discouraged (4 uses).
-New usage of "df-bnj17" is discouraged (27 uses).
+New usage of "df-bnj17" is discouraged (28 uses).
 New usage of "df-bnj18" is discouraged (2 uses).
 New usage of "df-bnj19" is discouraged (5 uses).
 New usage of "df-bra" is discouraged (3 uses).
@@ -17407,7 +17414,7 @@ New usage of "nfeqf" is discouraged (9 uses).
 New usage of "nfeqf1" is discouraged (7 uses).
 New usage of "nfeqf2" is discouraged (16 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
-New usage of "nfeu" is discouraged (3 uses).
+New usage of "nfeu" is discouraged (2 uses).
 New usage of "nfeu1ALT" is discouraged (0 uses).
 New usage of "nfeud" is discouraged (1 uses).
 New usage of "nfeud2" is discouraged (2 uses).
@@ -17425,7 +17432,7 @@ New usage of "nfnae" is discouraged (48 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
 New usage of "nfrab" is discouraged (6 uses).
-New usage of "nfral" is discouraged (8 uses).
+New usage of "nfral" is discouraged (7 uses).
 New usage of "nfrald" is discouraged (2 uses).
 New usage of "nfreu" is discouraged (0 uses).
 New usage of "nfreud" is discouraged (1 uses).
@@ -18416,7 +18423,7 @@ New usage of "sbi2vOLD" is discouraged (0 uses).
 New usage of "sbid2" is discouraged (2 uses).
 New usage of "sbid2v" is discouraged (1 uses).
 New usage of "sbidm" is discouraged (0 uses).
-New usage of "sbie" is discouraged (21 uses).
+New usage of "sbie" is discouraged (20 uses).
 New usage of "sbieALT" is discouraged (1 uses).
 New usage of "sbied" is discouraged (3 uses).
 New usage of "sbiedALT" is discouraged (1 uses).
@@ -18864,7 +18871,7 @@ New usage of "vtoclgftOLD" is discouraged (0 uses).
 New usage of "vtxdusgr0edgnelALT" is discouraged (0 uses).
 New usage of "w-bnj13" is discouraged (5 uses).
 New usage of "w-bnj15" is discouraged (92 uses).
-New usage of "w-bnj17" is discouraged (103 uses).
+New usage of "w-bnj17" is discouraged (104 uses).
 New usage of "w-bnj19" is discouraged (8 uses).
 New usage of "watfvalN" is discouraged (1 uses).
 New usage of "watvalN" is discouraged (1 uses).
