@@ -13902,6 +13902,7 @@
 "zfinf" is used by "axinf2".
 "zfinf" is used by "axinfndlem1".
 "zfpair" is used by "axprALT".
+"zfun" is used by "axunndlem1".
 "zrdivrng" is used by "dvrunz".
 New usage of "00sr" is discouraged (4 uses).
 New usage of "0bdop" is discouraged (2 uses).
@@ -18946,6 +18947,7 @@ New usage of "zfcndun" is discouraged (0 uses).
 New usage of "zfinf" is discouraged (2 uses).
 New usage of "zfpair" is discouraged (1 uses).
 New usage of "zfregs2VD" is discouraged (0 uses).
+New usage of "zfun" is discouraged (1 uses).
 New usage of "zrdivrng" is discouraged (1 uses).
 Proof modification of "0cnALT" is discouraged (82 steps).
 Proof modification of "0cnALT2" is discouraged (49 steps).
