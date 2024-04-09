@@ -3255,8 +3255,6 @@
 "cbvralv" is used by "cbvral3v".
 "cbvralv" is used by "frgrwopreglem5ALT".
 "cbvralv" is used by "smfsuplem2".
-"cbvralv" is used by "vonicc".
-"cbvralv" is used by "vonioo".
 "cbvreu" is used by "cbvreuv".
 "cbvreu" is used by "cbvrmo".
 "cbvrex" is used by "cbviung".
@@ -4299,12 +4297,7 @@
 "chub2i" is used by "qlaxr3i".
 "chub2i" is used by "sumdmdlem2".
 "chvar" is used by "chvarv".
-"chvar" is used by "vonhoire".
-"chvar" is used by "vonn0icc2".
-"chvar" is used by "vonn0ioo2".
 "chvar" is used by "zfcndrep".
-"chvarv" is used by "vonicc".
-"chvarv" is used by "vonioo".
 "clmgmOLD" is used by "exidcl".
 "cm0" is used by "chirred".
 "cm2j" is used by "cm2ji".
@@ -10116,7 +10109,6 @@
 "nfiota" is used by "nfsum".
 "nfiotad" is used by "nfiota".
 "nfiotad" is used by "nfriotad".
-"nfixp" is used by "vonioo".
 "nfmo" is used by "2euex".
 "nfmo" is used by "2moex".
 "nfmo" is used by "moexex".
@@ -14918,6 +14910,7 @@ New usage of "bnsscmcl" is discouraged (0 uses).
 New usage of "bra0" is discouraged (1 uses).
 New usage of "bra11" is discouraged (6 uses).
 New usage of "braadd" is discouraged (1 uses).
+New usage of "brabidga" is discouraged (0 uses).
 New usage of "brabn" is discouraged (1 uses).
 New usage of "bracl" is discouraged (4 uses).
 New usage of "bracnln" is discouraged (1 uses).
@@ -14988,7 +14981,7 @@ New usage of "cbvral3v" is discouraged (0 uses).
 New usage of "cbvralcsf" is discouraged (2 uses).
 New usage of "cbvralf" is discouraged (2 uses).
 New usage of "cbvralsv" is discouraged (0 uses).
-New usage of "cbvralv" is discouraged (6 uses).
+New usage of "cbvralv" is discouraged (4 uses).
 New usage of "cbvralv2" is discouraged (0 uses).
 New usage of "cbvreu" is discouraged (2 uses).
 New usage of "cbvreucsf" is discouraged (0 uses).
@@ -15297,8 +15290,8 @@ New usage of "chub1i" is discouraged (18 uses).
 New usage of "chub2" is discouraged (14 uses).
 New usage of "chub2i" is discouraged (24 uses).
 New usage of "chunssji" is discouraged (0 uses).
-New usage of "chvar" is discouraged (5 uses).
-New usage of "chvarv" is discouraged (2 uses).
+New usage of "chvar" is discouraged (2 uses).
+New usage of "chvarv" is discouraged (0 uses).
 New usage of "clel5OLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
@@ -17424,7 +17417,7 @@ New usage of "nfiota" is discouraged (1 uses).
 New usage of "nfiotad" is discouraged (2 uses).
 New usage of "nfiundg" is discouraged (0 uses).
 New usage of "nfiung" is discouraged (0 uses).
-New usage of "nfixp" is discouraged (1 uses).
+New usage of "nfixp" is discouraged (0 uses).
 New usage of "nfmo" is discouraged (3 uses).
 New usage of "nfmod" is discouraged (2 uses).
 New usage of "nfmod2" is discouraged (5 uses).
@@ -18212,6 +18205,7 @@ New usage of "rexcomOLD" is discouraged (0 uses).
 New usage of "rexeqOLD" is discouraged (0 uses).
 New usage of "rexeqbi1dvOLD" is discouraged (0 uses).
 New usage of "rexeqbidvOLD" is discouraged (0 uses).
+New usage of "rexlimddvcbv" is discouraged (0 uses).
 New usage of "rexrnmpt" is discouraged (0 uses).
 New usage of "rexsngOLD" is discouraged (0 uses).
 New usage of "rgen2a" is discouraged (0 uses).
