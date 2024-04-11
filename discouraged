@@ -16951,6 +16951,7 @@ New usage of "iunconnALT" is discouraged (0 uses).
 New usage of "iunconnlem2" is discouraged (1 uses).
 New usage of "ivthALT" is discouraged (0 uses).
 New usage of "jaoded" is discouraged (1 uses).
+New usage of "jcnOLD" is discouraged (0 uses).
 New usage of "joincomALT" is discouraged (1 uses).
 New usage of "jpi" is discouraged (0 uses).
 New usage of "jplem1" is discouraged (1 uses).
@@ -18137,7 +18138,6 @@ New usage of "ralnex2OLD" is discouraged (0 uses).
 New usage of "ralnex3OLD" is discouraged (0 uses).
 New usage of "ralrexbidOLD" is discouraged (0 uses).
 New usage of "ralrnmpt" is discouraged (1 uses).
-New usage of "ralsngOLD" is discouraged (0 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rb-ax1" is discouraged (5 uses).
 New usage of "rb-ax2" is discouraged (9 uses).
@@ -18207,7 +18207,6 @@ New usage of "rexeqbi1dvOLD" is discouraged (0 uses).
 New usage of "rexeqbidvOLD" is discouraged (0 uses).
 New usage of "rexlimddvcbv" is discouraged (0 uses).
 New usage of "rexrnmpt" is discouraged (0 uses).
-New usage of "rexsngOLD" is discouraged (0 uses).
 New usage of "rgen2a" is discouraged (0 uses).
 New usage of "rhmsubcALTV" is discouraged (1 uses).
 New usage of "rhmsubcALTVcat" is discouraged (0 uses).
@@ -19993,6 +19992,7 @@ Proof modification of "ivthALT" is discouraged (1080 steps).
 Proof modification of "jaoded" is discouraged (26 steps).
 Proof modification of "jath" is discouraged (318 steps).
 Proof modification of "jccil" is discouraged (10 steps).
+Proof modification of "jcnOLD" is discouraged (22 steps).
 Proof modification of "joincomALT" is discouraged (83 steps).
 Proof modification of "kerf1hrmOLD" is discouraged (432 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
@@ -20225,7 +20225,6 @@ Proof modification of "raleqbidvOLD" is discouraged (28 steps).
 Proof modification of "ralnex2OLD" is discouraged (46 steps).
 Proof modification of "ralnex3OLD" is discouraged (62 steps).
 Proof modification of "ralrexbidOLD" is discouraged (29 steps).
-Proof modification of "ralsngOLD" is discouraged (26 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
 Proof modification of "rb-ax1" is discouraged (32 steps).
 Proof modification of "rb-ax2" is discouraged (17 steps).
@@ -20276,7 +20275,6 @@ Proof modification of "rexcomOLD" is discouraged (75 steps).
 Proof modification of "rexeqOLD" is discouraged (11 steps).
 Proof modification of "rexeqbi1dvOLD" is discouraged (28 steps).
 Proof modification of "rexeqbidvOLD" is discouraged (28 steps).
-Proof modification of "rexsngOLD" is discouraged (25 steps).
 Proof modification of "rgen2a" is discouraged (81 steps).
 Proof modification of "rim0to0OLD" is discouraged (92 steps).
 Proof modification of "rmo3OLD" is discouraged (179 steps).
