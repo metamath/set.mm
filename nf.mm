@@ -29,7 +29,8 @@ $( !
 This work is waived of all rights, including copyright, according to the CC0
 Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
 
-Currently active maintainers: See the list in the CONTRIBUTING.md file.
+Currently active maintainers: See the list in the CONTRIBUTING.md file of
+https://github.com/metamath/set.mm.
 
 Contributor list (partial):
 
@@ -26025,14 +26026,14 @@ $)
   ${
     $d y A $.  $d x y $.  $d y ph $.
     $( Restricted quantifier version of Theorem 19.3 of [Margaris] p. 89.  We
-       don't need the non-empty class condition of ~ r19.3rzv when there is an
+       don't need the nonempty class condition of ~ r19.3rzv when there is an
        outer quantifier.  (Contributed by NM, 25-Oct-2012.) $)
     rr19.3v $p |- ( A. x e. A A. y e. A ph <-> A. x e. A ph ) $=
       ( wral cv wceq biidd rspcv ralimia wcel ax-1 ralrimiv ralimi impbii ) ACD
       EZBDEABDEPABDAACBFZDCFZQGAHIJAPBDAACDARDKLMNO $.
 
     $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  We
-       don't need the non-empty class condition of ~ r19.28zv when there is an
+       don't need the nonempty class condition of ~ r19.28zv when there is an
        outer quantifier.  (Contributed by NM, 29-Oct-2012.) $)
     rr19.28v $p |- ( A. x e. A A. y e. A ( ph /\ ps )
                       <-> A. x e. A ( ph /\ A. y e. A ps ) ) $=
@@ -31075,7 +31076,7 @@ $)
   ${
     $d x A $.  $d x ph $.
     reximdva0.1 $e |- ( ( ph /\ x e. A ) -> ps ) $.
-    $( Restricted existence deduced from non-empty class.  (Contributed by NM,
+    $( Restricted existence deduced from nonempty class.  (Contributed by NM,
        1-Feb-2012.) $)
     reximdva0 $p |- ( ( ph /\ A =/= (/) ) -> E. x e. A ps ) $=
       ( c0 wne wa cv wcel wex wrex n0 ex ancld eximdv imp sylan2b df-rex sylibr
@@ -31141,7 +31142,7 @@ $)
     ( cab c0 wceq wn wal wne wex abn0 df-ne df-ex 3bitr3i con4bii ) ABCZDEZAFBG
     ZODHABIPFQFABJODKABLMN $.
 
-  $( Non-empty restricted class abstraction.  (Contributed by NM,
+  $( Nonempty restricted class abstraction.  (Contributed by NM,
      29-Aug-1999.) $)
   rabn0 $p |- ( { x e. A | ph } =/= (/) <-> E. x e. A ph ) $=
     ( cv wcel wa cab c0 wne wex crab wrex abn0 df-rab neeq1i df-rex 3bitr4i ) B
@@ -31260,7 +31261,7 @@ $)
   vss $p |- ( _V C_ A <-> A = _V ) $=
     ( cvv wss wa wceq ssv biantrur eqss bitr4i ) BACZABCZJDABEKJAFGABHI $.
 
-  $( The null set is a proper subset of any non-empty set.  (Contributed by NM,
+  $( The null set is a proper subset of any nonempty set.  (Contributed by NM,
      27-Feb-1996.) $)
   0pss $p |- ( (/) C. A <-> A =/= (/) ) $=
     ( c0 wpss wne wss 0ss df-pss mpbiran necom bitri ) BACZBADZABDKBAELAFBAGHBA
@@ -31771,7 +31772,7 @@ $)
   ${
     $d x A $.
     rgenz.1 $e |- ( ( A =/= (/) /\ x e. A ) -> ph ) $.
-    $( Generalization rule that eliminates a non-zero class requirement.
+    $( Generalization rule that eliminates a nonzero class requirement.
        (Contributed by NM, 8-Dec-2012.) $)
     rgenz $p |- A. x e. A ph $=
       ( wral c0 rzal wne ralrimiva pm2.61ine ) ABCECFABCGCFHABCDIJ $.
@@ -35142,8 +35143,8 @@ $)
 
   ${
     $d x y A $.  $d y B $.
-    $( There is a non-empty class in an indexed collection ` B ( x ) ` iff the
-       indexed union of them is non-empty.  (Contributed by NM, 15-Oct-2003.)
+    $( There is a nonempty class in an indexed collection ` B ( x ) ` iff the
+       indexed union of them is nonempty.  (Contributed by NM, 15-Oct-2003.)
        (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
     iunn0 $p |- ( E. x e. A B =/= (/) <-> U_ x e. A B =/= (/) ) $=
       ( vy cv wcel wex wrex c0 wne rexcom4 eliun exbii bitr4i n0 rexbii 3bitr4i
@@ -39543,8 +39544,8 @@ $)
       AIUGDOPTUCAECDQRUA $.
   $}
 
-  $( If cardinal addition is non-empty, then both addends are non-empty.
-     Theorem X.1.20 of [Rosser] p. 526.  (Contributed by SF, 18-Jan-2015.) $)
+  $( If cardinal addition is nonempty, then both addends are nonempty.  Theorem
+     X.1.20 of [Rosser] p. 526.  (Contributed by SF, 18-Jan-2015.) $)
   addcnnul $p |- ( ( A +c B ) =/= (/) -> ( A =/= (/) /\ B =/= (/) ) ) $=
     ( cplc wne wceq addceq1 addccom addcnul1 eqtri syl6eq necon3i addceq2 jca
     c0 ) ABCZNDANDBNDANONANEONBCZNANBFPBNCNNBGBHIJKBNONBNEOANCNBNALAHJKM $.
@@ -40314,8 +40315,8 @@ $)
     $d a b $.  $d a n $.  $d a p $.  $d b n $.  $d b p $.  $d M a $.  $d M b $.
     $d M n $.  $d M p $.  $d n p $.  $d a q $.  $d b q $.  $d M q $.  $d n q $.
     $d p q $.
-    $( For any non-empty finite cardinal, there is a unique natural containing
-       a unit power class of one of its elements.  Theorem X.1.27 of [Rosser]
+    $( For any nonempty finite cardinal, there is a unique natural containing a
+       unit power class of one of its elements.  Theorem X.1.27 of [Rosser]
        p. 528.  (Contributed by SF, 22-Jan-2015.) $)
     nnpw1ex $p |- ( ( M e. Nn /\ M =/= (/) ) ->
       E! n e. Nn E. a e. M ~P1 a e. n ) $=
@@ -40465,7 +40466,7 @@ $)
   ${
     $d a n $.  $d M a $.  $d M n $.
 
-    $( Properties of the finite T operator for a non-empty natural.  Theorem
+    $( Properties of the finite T operator for a nonempty natural.  Theorem
        X.1.28 of [Rosser] p. 528.  (Contributed by SF, 22-Jan-2015.) $)
     tfinprop $p |- ( ( M e. Nn /\ M =/= (/) ) ->
       ( _T[fin] M e. Nn /\ E. a e. M ~P1 a e. _T[fin] M ) ) $=
@@ -40479,7 +40480,7 @@ $)
 
   ${
     $d M x $.
-    $( If ` M ` is a non-empty natural, then ` _T[fin] M ` is also non-empty.
+    $( If ` M ` is a nonempty natural, then ` _T[fin] M ` is also nonempty.
        Corollary 1 of Theorem X.1.28 of [Rosser] p. 528.  (Contributed by SF,
        23-Jan-2015.) $)
     tfinnnul $p |- ( ( M e. Nn /\ M =/= (/) ) -> _T[fin] M =/= (/) ) $=
@@ -40559,7 +40560,7 @@ $)
 
   ${
     $d M a b c $.  $d N a b c $.
-    $( The finite T operation distributes over non-empty cardinal sum.  Theorem
+    $( The finite T operation distributes over nonempty cardinal sum.  Theorem
        X.1.32 of [Rosser] p. 529.  (Contributed by SF, 26-Jan-2015.) $)
     tfindi $p |- ( ( M e. Nn /\ N e. Nn /\ ( M +c N ) =/= (/) ) ->
        _T[fin] ( M +c N ) = ( _T[fin] M +c _T[fin] N ) ) $=
@@ -40863,13 +40864,13 @@ $)
 
   ${
     $d A n x $.
-    $( An even number is non-empty.  (Contributed by SF, 22-Jan-2015.) $)
+    $( An even number is nonempty.  (Contributed by SF, 22-Jan-2015.) $)
     evennnul $p |- ( A e. Even[fin] -> A =/= (/) ) $=
       ( vn vx cevenfin wcel cv cplc wceq cnnc wrex c0 wne eqeq1 rexbidv anbi12d
       wa neeq1 df-evenfin elab2g ibi simprd ) ADEZABFZUCGZHZBIJZAKLZUBUFUGPZCFZ
       UDHZBIJZUIKLZPUHCADDUIAHZUKUFULUGUMUJUEBIUIAUDMNUIAKQOCBRSTUA $.
 
-    $( An odd number is non-empty.  (Contributed by SF, 22-Jan-2015.) $)
+    $( An odd number is nonempty.  (Contributed by SF, 22-Jan-2015.) $)
     oddnnul $p |- ( A e. Odd[fin] -> A =/= (/) ) $=
       ( vn vx coddfin wcel cv cplc c1c wceq cnnc wrex c0 wa eqeq1 rexbidv neeq1
       wne anbi12d df-oddfin elab2g ibi simprd ) ADEZABFZUDGHGZIZBJKZALQZUCUGUHM
@@ -40932,8 +40933,8 @@ $)
 
   ${
     $d x k n m $.
-    $( Every non-empty finite cardinal is either even or odd.  Theorem X.1.35
-       of [Rosser] p. 529.  (Contributed by SF, 20-Jan-2015.) $)
+    $( Every nonempty finite cardinal is either even or odd.  Theorem X.1.35 of
+       [Rosser] p. 529.  (Contributed by SF, 20-Jan-2015.) $)
     evenoddnnnul $p |- ( Even[fin] u. Odd[fin] ) = ( Nn \ { (/) } ) $=
       ( vx vn vm vk cevenfin coddfin cnnc c0 wss cv wcel wne ssriv wi c0c neeq1
       c1c wo eleq1 imbi12d cun cdif wa evennn evennnul eldifsn sylanbrc oddnnul
@@ -41424,13 +41425,13 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     srelk.2 $e |- B e. _V $.
     $( Binary relationship form of the ` _S[fin] ` relationship.  (Contributed
        by SF, 23-Jan-2015.) $)
-    srelk $p |- ( << A , B >> e. ( ( Nn X._k Nn ) i^i ( (
- Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k _S_k (+) Ins2_k SI_k
- _S_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c )
-    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k
-    ~P1 ~P1 1c ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
-                                                             ~P1 1c ) ) <->
-        _S[fin] ( A , B ) ) $=
+    srelk $p |- ( << A , B >> e. ( ( Nn X._k Nn ) i^i ( ( Ins3_k ( (
+                Ins3_k SI_k ( ( ~P 1c X._k _V ) \
+              ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i
+                Ins2_k _S_k ) "_k ~P1 ~P1 1c )
+        i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k
+      ~P1 ~P1 1c ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1  ~P1 1c ) )
+                                                     <-> _S[fin] ( A , B ) ) $=
       ( vx vt vy vz copk cnnc wcel cssetk wa wex wceq exbii 3bitr4i snex 3bitri
       csn cxpk c1c cpw cvv cins3k csik cins2k csymdif cpw1 cimak cdif ccompl cv
       cin wsfin opkelxpk wrex opkex elimak elpw131c anbi1i 19.41v bitr4i df-rex
@@ -41956,7 +41957,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d x y z $.
-    $( If the universe is finite, then ` Sp[fin] ` is a subset of the non-empty
+    $( If the universe is finite, then ` Sp[fin] ` is a subset of the nonempty
        naturals.  Theorem X.1.53 of [Rosser] p. 534.  (Contributed by SF,
        27-Jan-2015.) $)
     vfinspnn $p |- ( _V e. Fin -> Sp[fin] C_ ( Nn \ { (/) } ) ) $=
@@ -42005,7 +42006,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d N a $.
-    $( If the universe is finite, then the T-raising of all non-empty naturals
+    $( If the universe is finite, then the T-raising of all nonempty naturals
        are no greater than the size of ` 1c ` .  Theorem X.1.56 of [Rosser]
        p. 534.  (Contributed by SF, 30-Jan-2015.) $)
     vfintle $p |- ( ( _V e. Fin /\ N e. Nn /\ N =/= (/) ) ->
@@ -43932,7 +43933,7 @@ $)
 
   ${
     $d z ph $.  $d z x $.  $d z y $.
-    $( Non-empty ordered pair class abstraction.  (Contributed by NM,
+    $( Nonempty ordered pair class abstraction.  (Contributed by NM,
        10-Oct-2007.) $)
     opabn0 $p |- ( { <. x , y >. | ph } =/= (/) <-> E. x E. y ph ) $=
       ( vz copab c0 wne cv wcel wex cop wceq wa n0 elopab exbii exrot3 vex opex
@@ -47510,7 +47511,7 @@ $)
     MNOPULURUQHUJUIUKSNQCDUARUPBUKTZDUPBUITZVDUJVEBKZULUJVBVFVCUTVFVAABUBPOPULV
     EVDHUJUIUKUCNQCDUDRUEUFACBDUGUH $.
 
-  $( The cross product of non-empty classes is one-to-one.  (Contributed by
+  $( The cross product of nonempty classes is one-to-one.  (Contributed by
      set.mm contributors, 31-May-2008.) $)
   xp11 $p |- ( ( A =/= (/) /\ B =/= (/) )
       -> ( ( A X. B ) = ( C X. D ) <-> ( A = C /\ B = D ) ) ) $=
@@ -57920,7 +57921,7 @@ $)
       QUNUQDANARUNUPDAUNUPDMDULDSUAUBUCUDUEUFUGADCBUKUHCDUIUJ $.
 
     $( Set exponentiation with an empty base is the empty set, provided the
-       exponent is non-empty.  Theorem 96 of [Suppes] p. 89.  (Contributed by
+       exponent is nonempty.  Theorem 96 of [Suppes] p. 89.  (Contributed by
        set.mm contributors, 10-Dec-2003.)  (Revised by set.mm contributors,
        19-Mar-2007.) $)
     map0b $p |- ( A =/= (/) -> ( (/) ^m A ) = (/) ) $=
@@ -59304,7 +59305,7 @@ $)
 
   ${
     $d A x y $.  $d B x y $.
-    $( Closure law for cardinal multiplicaton.  (Contributed by SF,
+    $( Closure law for cardinal multiplication.  (Contributed by SF,
        10-Mar-2015.) $)
     muccl $p |- ( ( A e. NC /\ B e. NC ) -> ( A .c B ) e. NC ) $=
       ( vx vy cncs wcel wa cv cnc wceq wex co elncs anbi12i eeanv bitr4i oveq12
@@ -59918,8 +59919,8 @@ $)
 
   ${
     $d a b $.  $d a g $.  $d b g $.  $d M a $.  $d M b $.  $d M g $.
-    $( A condition for cardinal exponentiation being non-empty.  Theorem
-       XI.2.42 of [Rosser] p. 382.  (Contributed by SF, 6-Mar-2015.) $)
+    $( A condition for cardinal exponentiation being nonempty.  Theorem XI.2.42
+       of [Rosser] p. 382.  (Contributed by SF, 6-Mar-2015.) $)
     ce0nnul $p |- ( M e. NC -> ( ( M ^c 0c ) =/= (/) <->
        E. a ~P1 a e. M ) ) $=
       ( vg vb cncs wcel cv c0c cce co wex cpw1 cmap cen wbr w3a c0 wb wa wceq
@@ -59947,8 +59948,8 @@ $)
     $d a b $.  $d a g $.  $d a p $.  $d a q $.  $d b g $.  $d b p $.  $d b q $.
     $d g p $.  $d g q $.  $d M a $.  $d M b $.  $d M g $.  $d N a $.  $d N b $.
     $d N g $.  $d p q $.
-    $( The sum of two cardinals raised to ` 0c ` is non-empty iff each addend
-       raised to ` 0c ` is non-empty.  Theorem XI.2.43 of [Rosser] p. 383.
+    $( The sum of two cardinals raised to ` 0c ` is nonempty iff each addend
+       raised to ` 0c ` is nonempty.  Theorem XI.2.43 of [Rosser] p. 383.
        (Contributed by SF, 9-Mar-2015.) $)
     ce0addcnnul $p |- ( ( M e. NC /\ N e. NC ) ->
        ( ( ( M +c N ) ^c 0c ) =/= (/) <->
@@ -59989,7 +59990,7 @@ $)
 
   ${
     $d m t $.  $d m n $.  $d N m $.
-    $( A natural raised to cardinal zero is non-empty.  Theorem XI.2.44 of
+    $( A natural raised to cardinal zero is nonempty.  Theorem XI.2.44 of
        [Rosser] p. 383.  (Contributed by SF, 9-Mar-2015.) $)
     ce0nn $p |- ( N e. Nn -> ( N ^c 0c ) =/= (/) ) $=
       ( vm vn vt cv c0c cce co wne c1c c1st c2nd csn cima wcel wbr oveq1 neeq1d
@@ -60034,8 +60035,8 @@ $)
   ${
     $d a b $.  $d a g $.  $d b g $.  $d M a $.  $d M b $.  $d M g $.  $d N a $.
     $d N b $.  $d N g $.
-    $( Cardinal exponentiation is non-empty iff the two sets raised to zero are
-       non-empty.  Theorem XI.2.47 of [Rosser] p. 384.  (Contributed by SF,
+    $( Cardinal exponentiation is nonempty iff the two sets raised to zero are
+       nonempty.  Theorem XI.2.47 of [Rosser] p. 384.  (Contributed by SF,
        9-Mar-2015.) $)
     ce0nnulb $p |- ( ( N e. NC /\ M e. NC ) -> ( ( ( N ^c 0c ) =/= (/) /\ ( M
         ^c 0c ) =/= (/) ) <-> ( N ^c M ) =/= (/) ) ) $=
@@ -60066,7 +60067,7 @@ $)
       UCUKUFUGUHUIULUMVHVFVCVGKLVHVGKVGKRVHKEFUNVGKEUTUOUPBAUQURUS $.
   $}
 
-  $( Cardinal exponentiation to zero is a cardinal iff it is non-empty.
+  $( Cardinal exponentiation to zero is a cardinal iff it is nonempty.
      Corollary 1 of theorem XI.2.38 of [Rosser] p. 384.  (Contributed by SF,
      13-Mar-2015.) $)
   ce0nulnc $p |- ( M e. NC -> ( ( M ^c 0c ) =/= (/) <-> ( M ^c 0c ) e. NC ) )
@@ -60133,7 +60134,7 @@ $)
 
   ${
     $d M a $.
-    $( The value of non-empty cardinal exponentiation.  Theorem XI.2.49 of
+    $( The value of nonempty cardinal exponentiation.  Theorem XI.2.49 of
        [Rosser] p. 385.  (Contributed by SF, 9-Mar-2015.) $)
     ce0 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) -> ( M ^c 0c ) = 1c ) $=
       ( va cncs wcel c0c cce co wa c0 csn cnc c1c wceq cv cpw1 wex ce0ncpw1 vex
@@ -60204,7 +60205,7 @@ $)
 
   ${
     $d A x y $.
-    $( A non-empty set is less than or equal to itself.  Theorem XI.2.14 of
+    $( A nonempty set is less than or equal to itself.  Theorem XI.2.14 of
        [Rosser] p. 375.  (Contributed by SF, 4-Mar-2015.) $)
     lecidg $p |- ( ( A e. V /\ A =/= (/) ) -> A <_c A ) $=
       ( vx vy wcel c0 wne wa clec wbr cv wss wrex ssid sseq2 rspcev mpan2 ancli
@@ -60392,7 +60393,7 @@ $)
   ${
     $d M x $.  $d M y $.  $d M z $.  $d N x $.  $d N y $.  $d N z $.  $d x y $.
     $d x z $.  $d y z $.
-    $( For non-empty sets, cardinal sum always increases cardinal less than or
+    $( For nonempty sets, cardinal sum always increases cardinal less than or
        equal.  Theorem XI.2.19 of [Rosser] p. 376.  (Contributed by SF,
        11-Mar-2015.) $)
     addlec $p |- ( ( M e. V /\ N e. W /\ ( M +c N ) =/= (/) ) ->

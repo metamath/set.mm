@@ -20,7 +20,7 @@ $( !
 This work is waived of all rights, including copyright, according to the CC0
 Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
 
-Norman Megill - http://metamath.org
+Norman Megill - https://us.metamath.org
 
 $)
 
@@ -95,11 +95,11 @@ $)
     ( wi ax-min ax-maj ax-mp ) ABBCFECFFEFFZFZKDFADFFZAFZFJMFFZKNJFFNFZFAOFFZMP
     AFFZFPFQPFZFLRFFLNKMJAJNQPLAPGPMKBADCEOARLHI $.
 
- $( This is the same as ~ theorem1 , except that the proof is saved in
-    uncompressed format with "SAVE PROOF theorem1u / NORMAL" in the Metamath
-    program.  Note the size difference in the compressed versus uncompressed
-    proofs. $)
- theorem1u $p |- e ( e ( e ( x , e ( y , e ( e ( e ( y , z ) , e ( u , z ) )
+  $( This is the same as ~ theorem1 , except that the proof is saved in
+     uncompressed format with "SAVE PROOF theorem1u / NORMAL" in the Metamath
+     program.  Note the size difference in the compressed versus uncompressed
+     proofs. $)
+  theorem1u $p |- e ( e ( e ( x , e ( y , e ( e ( e ( y , z ) , e ( u , z ) )
     , u ) ) ) , v ) , e ( x , v ) ) $=
     wx wy wy wz wi wu wz wi wi wu wi wi wi wx wy wy wz wi wu wz wi wi wu wi wi
     wi wv wi wx wv wi wi wx wi wi wy wy wz wi wu wz wi wi wu wi wi wx wy wy wz
