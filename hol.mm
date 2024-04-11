@@ -1289,7 +1289,7 @@ $)
     $d f x y A $.  $d f x y B $.
     dfan2.1 $e |- A : bool $.
     dfan2.2 $e |- B : bool $.
-    $( An alternative defintion of the "and" term in terms of the context
+    $( An alternative definition of the "and" term in terms of the context
        conjunction.  (Contributed by Mario Carneiro, 9-Oct-2014.) $)
     dfan2 $p |- T. |= [ [ A /\ B ] = ( A , B ) ] $=
       ( vf vx vy kbr kt hb kl kc wl ke id a1i weqi oveq eqid wtru tan kct ht tv
@@ -1537,7 +1537,7 @@ $)
        ` be ` and the definition will provide us with pair of bijections
        ` A , R ` mapping the new type ` be ` to the subset of the old type
        ` al ` such that ` F x ` is true.  In order for this to be a valid
-       (conservative) extension, we must ensure that the new type is non-empty,
+       (conservative) extension, we must ensure that the new type is nonempty,
        and for that purpose we need a witness ` B ` that ` F ` is not always
        false.  (Contributed by Mario Carneiro, 8-Oct-2014.) $)
     ax-tdef $a |- T. |= ( ( ! \ x : be . [ ( A ( R x : be ) ) = x : be ] ) ,
