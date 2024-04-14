@@ -14488,6 +14488,7 @@ New usage of "bj-mpomptALT" is discouraged (0 uses).
 New usage of "bj-nuliotaALT" is discouraged (0 uses).
 New usage of "bj-opelidb1ALT" is discouraged (0 uses).
 New usage of "bj-peircecurry" is discouraged (0 uses).
+New usage of "bj-pw0ALT" is discouraged (0 uses).
 New usage of "bj-rabtrALT" is discouraged (0 uses).
 New usage of "bj-rabtrAUTO" is discouraged (0 uses).
 New usage of "bj-sbceqgALT" is discouraged (0 uses).
@@ -19278,6 +19279,7 @@ Proof modification of "bj-opelidb1ALT" is discouraged (46 steps).
 Proof modification of "bj-orim2" is discouraged (31 steps).
 Proof modification of "bj-peircecurry" is discouraged (58 steps).
 Proof modification of "bj-peircestab" is discouraged (68 steps).
+Proof modification of "bj-pw0ALT" is discouraged (28 steps).
 Proof modification of "bj-rababw" is discouraged (34 steps).
 Proof modification of "bj-rabtrALT" is discouraged (36 steps).
 Proof modification of "bj-rabtrAUTO" is discouraged (33 steps).
