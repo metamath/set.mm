@@ -193,7 +193,6 @@
 "1t1e1ALT" is used by "remulinvcom".
 "2ax6e" is used by "2sb5rf".
 "2ax6e" is used by "2sb6rf".
-"2ax6e" is used by "2sb6rfOLD".
 "2ax6elem" is used by "2ax6e".
 "2ax6elem" is used by "2ax6eOLD".
 "2eu1" is used by "2eu2".
@@ -13955,7 +13954,7 @@ New usage of "1t1e1ALT" is discouraged (2 uses).
 New usage of "235t711" is discouraged (0 uses).
 New usage of "2atm2atN" is discouraged (0 uses).
 New usage of "2atnelvolN" is discouraged (0 uses).
-New usage of "2ax6e" is discouraged (3 uses).
+New usage of "2ax6e" is discouraged (2 uses).
 New usage of "2ax6eOLD" is discouraged (0 uses).
 New usage of "2ax6elem" is discouraged (2 uses).
 New usage of "2bornot2b" is discouraged (0 uses).
@@ -13999,7 +13998,6 @@ New usage of "2sb5ndALT" is discouraged (0 uses).
 New usage of "2sb5ndVD" is discouraged (0 uses).
 New usage of "2sb5rf" is discouraged (1 uses).
 New usage of "2sb6rf" is discouraged (0 uses).
-New usage of "2sb6rfOLD" is discouraged (0 uses).
 New usage of "2sb8e" is discouraged (0 uses).
 New usage of "2sbcrexOLD" is discouraged (0 uses).
 New usage of "2sbiev" is discouraged (0 uses).
@@ -18776,6 +18774,7 @@ New usage of "unierri" is discouraged (0 uses).
 New usage of "unipwr" is discouraged (0 uses).
 New usage of "unipwrVD" is discouraged (0 uses).
 New usage of "unisnALT" is discouraged (0 uses).
+New usage of "unitreslOLD" is discouraged (0 uses).
 New usage of "unop" is discouraged (5 uses).
 New usage of "unopadj" is discouraged (2 uses).
 New usage of "unopadj2" is discouraged (0 uses).
@@ -18974,7 +18973,6 @@ Proof modification of "2pm13.193VD" is discouraged (223 steps).
 Proof modification of "2sb5nd" is discouraged (125 steps).
 Proof modification of "2sb5ndALT" is discouraged (224 steps).
 Proof modification of "2sb5ndVD" is discouraged (230 steps).
-Proof modification of "2sb6rfOLD" is discouraged (93 steps).
 Proof modification of "2sbcrexOLD" is discouraged (63 steps).
 Proof modification of "2stdpc5" is discouraged (34 steps).
 Proof modification of "2uasban" is discouraged (34 steps).
@@ -20509,6 +20507,7 @@ Proof modification of "undif3VD" is discouraged (295 steps).
 Proof modification of "unipwr" is discouraged (32 steps).
 Proof modification of "unipwrVD" is discouraged (41 steps).
 Proof modification of "unisnALT" is discouraged (146 steps).
+Proof modification of "unitreslOLD" is discouraged (24 steps).
 Proof modification of "upgr0eopALT" is discouraged (55 steps).
 Proof modification of "upgr1eopALT" is discouraged (126 steps).
 Proof modification of "upgrisupwlkALT" is discouraged (84 steps).
