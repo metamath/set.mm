@@ -12129,7 +12129,6 @@
 "psubspi2N" is used by "pclfinN".
 "psubspi2N" is used by "pclfinclN".
 "qexALT" is used by "reexALT".
-"ralcom2" is used by "tratrbVD".
 "ralrnmpt" is used by "rexrnmpt".
 "rb-ax1" is used by "rblem1".
 "rb-ax1" is used by "rblem2".
@@ -18127,7 +18126,7 @@ New usage of "rabbidvaOLD" is discouraged (0 uses).
 New usage of "ralab2OLD" is discouraged (0 uses).
 New usage of "ralanidOLD" is discouraged (0 uses).
 New usage of "ralbiOLD" is discouraged (0 uses).
-New usage of "ralcom2" is discouraged (1 uses).
+New usage of "ralcom2" is discouraged (0 uses).
 New usage of "ralcom4OLD" is discouraged (0 uses).
 New usage of "raleleqALT" is discouraged (0 uses).
 New usage of "raleqOLD" is discouraged (0 uses).
@@ -20482,8 +20481,8 @@ Proof modification of "tfr3ALT" is discouraged (84 steps).
 Proof modification of "topnfbey" is discouraged (75 steps).
 Proof modification of "toycom" is discouraged (142 steps).
 Proof modification of "tpid3gVD" is discouraged (116 steps).
-Proof modification of "tratrb" is discouraged (318 steps).
-Proof modification of "tratrbVD" is discouraged (395 steps).
+Proof modification of "tratrb" is discouraged (322 steps).
+Proof modification of "tratrbVD" is discouraged (399 steps).
 Proof modification of "trcleq2lemRP" is discouraged (32 steps).
 Proof modification of "trelded" is discouraged (27 steps).
 Proof modification of "trintALT" is discouraged (166 steps).
