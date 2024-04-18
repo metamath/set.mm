@@ -18075,6 +18075,7 @@ New usage of "psubclsetN" is discouraged (1 uses).
 New usage of "psubclssatN" is discouraged (9 uses).
 New usage of "psubclsubN" is discouraged (1 uses).
 New usage of "psubspi2N" is discouraged (3 uses).
+New usage of "pweqALT" is discouraged (0 uses).
 New usage of "pwm1geoserOLD" is discouraged (0 uses).
 New usage of "pwsnALT" is discouraged (0 uses).
 New usage of "pwtrVD" is discouraged (0 uses).
@@ -18753,6 +18754,7 @@ New usage of "un01" is discouraged (0 uses).
 New usage of "un10" is discouraged (0 uses).
 New usage of "un2122" is discouraged (1 uses).
 New usage of "undif3VD" is discouraged (0 uses).
+New usage of "unieqOLD" is discouraged (0 uses).
 New usage of "unierri" is discouraged (0 uses).
 New usage of "unipwr" is discouraged (0 uses).
 New usage of "unipwrVD" is discouraged (0 uses).
@@ -20182,6 +20184,7 @@ Proof modification of "problem2" is discouraged (104 steps).
 Proof modification of "problem3" is discouraged (56 steps).
 Proof modification of "problem4" is discouraged (310 steps).
 Proof modification of "problem5" is discouraged (133 steps).
+Proof modification of "pweqALT" is discouraged (34 steps).
 Proof modification of "pwm1geoserOLD" is discouraged (371 steps).
 Proof modification of "pwsnALT" is discouraged (164 steps).
 Proof modification of "pwtrVD" is discouraged (110 steps).
@@ -20489,6 +20492,7 @@ Proof modification of "un01" is discouraged (18 steps).
 Proof modification of "un10" is discouraged (18 steps).
 Proof modification of "un2122" is discouraged (44 steps).
 Proof modification of "undif3VD" is discouraged (295 steps).
+Proof modification of "unieqOLD" is discouraged (40 steps).
 Proof modification of "unipwr" is discouraged (32 steps).
 Proof modification of "unipwrVD" is discouraged (41 steps).
 Proof modification of "unisnALT" is discouraged (146 steps).
