@@ -3231,20 +3231,12 @@
 "cbvmptg" is used by "cbvmptvg".
 "cbvopab1g" is used by "cbvmptfg".
 "cbvrab" is used by "cbvrabvOLD".
-"cbvrab" is used by "smfliminf".
-"cbvrab" is used by "smflimsup".
 "cbvrabcsf" is used by "cbvrabv2".
-"cbvrabcsf" is used by "smfinf".
-"cbvrabcsf" is used by "smfinflem".
-"cbvrabcsf" is used by "smfsup".
 "cbvral" is used by "cbviing".
 "cbvral" is used by "cbvral2".
 "cbvral" is used by "cbvralsv".
 "cbvral" is used by "cbvralv".
 "cbvral" is used by "ralrnmpt".
-"cbvral" is used by "smfinf".
-"cbvral" is used by "smfinflem".
-"cbvral" is used by "smfsup".
 "cbvral2v" is used by "cbvral3v".
 "cbvralcsf" is used by "cbvralv2".
 "cbvralcsf" is used by "cbvrexcsf".
@@ -3253,7 +3245,6 @@
 "cbvralv" is used by "cbvral2v".
 "cbvralv" is used by "cbvral3v".
 "cbvralv" is used by "frgrwopreglem5ALT".
-"cbvralv" is used by "smfsuplem2".
 "cbvreu" is used by "cbvreuv".
 "cbvreu" is used by "cbvrmo".
 "cbvrex" is used by "cbviung".
@@ -3267,9 +3258,6 @@
 "cbvrexv" is used by "cbvrex2v".
 "cbvrexv" is used by "cygablOLD".
 "cbvrexv" is used by "rexlimdvaacbv".
-"cbvrexv" is used by "smfinf".
-"cbvrexv" is used by "smfinflem".
-"cbvrexv" is used by "smfsup".
 "cbvriota" is used by "cbvriotav".
 "cbvrmo" is used by "cbvrmov".
 "cbvsbc" is used by "cbvcsb".
@@ -10169,17 +10157,11 @@
 "nfra2" is used by "ralcom2".
 "nfrab" is used by "elfvmptrab1".
 "nfrab" is used by "elovmporab1".
-"nfrab" is used by "smfinfmpt".
-"nfrab" is used by "smflimsuplem7".
-"nfrab" is used by "smfsupmpt".
-"nfrab" is used by "smfsupxr".
 "nfral" is used by "cbvral2".
 "nfral" is used by "eliuniincex".
 "nfral" is used by "nfiing".
 "nfral" is used by "nfra2".
 "nfral" is used by "opreu2reuALT".
-"nfral" is used by "smfinf".
-"nfral" is used by "smfsup".
 "nfrald" is used by "nfral".
 "nfrald" is used by "nfrexdg".
 "nfreud" is used by "nfreu".
@@ -10203,7 +10185,6 @@
 "nfsb" is used by "cbvrexsv".
 "nfsb" is used by "cbvriota".
 "nfsb" is used by "dfich2OLD".
-"nfsb" is used by "dfich2ai".
 "nfsb" is used by "hbsb".
 "nfsb" is used by "sb10f".
 "nfsb" is used by "sb8eu".
@@ -12635,7 +12616,6 @@
 "sbi2ALT" is used by "sbimALT".
 "sbid2" is used by "sbid2v".
 "sbid2" is used by "sbtrt".
-"sbid2v" is used by "dfich2bi".
 "sbie" is used by "2sbiev".
 "sbie" is used by "cbvab".
 "sbie" is used by "cbveu".
@@ -14971,16 +14951,17 @@ New usage of "cbvmptfg" is discouraged (1 uses).
 New usage of "cbvmptg" is discouraged (1 uses).
 New usage of "cbvmptvg" is discouraged (0 uses).
 New usage of "cbvopab1g" is discouraged (1 uses).
-New usage of "cbvrab" is discouraged (3 uses).
-New usage of "cbvrabcsf" is discouraged (4 uses).
+New usage of "cbvrab" is discouraged (1 uses).
+New usage of "cbvrabcsf" is discouraged (1 uses).
+New usage of "cbvrabv2" is discouraged (0 uses).
 New usage of "cbvrabvOLD" is discouraged (0 uses).
-New usage of "cbvral" is discouraged (8 uses).
+New usage of "cbvral" is discouraged (5 uses).
 New usage of "cbvral2v" is discouraged (1 uses).
 New usage of "cbvral3v" is discouraged (0 uses).
 New usage of "cbvralcsf" is discouraged (2 uses).
 New usage of "cbvralf" is discouraged (2 uses).
 New usage of "cbvralsv" is discouraged (0 uses).
-New usage of "cbvralv" is discouraged (4 uses).
+New usage of "cbvralv" is discouraged (3 uses).
 New usage of "cbvralv2" is discouraged (0 uses).
 New usage of "cbvreu" is discouraged (2 uses).
 New usage of "cbvreucsf" is discouraged (0 uses).
@@ -14991,7 +14972,7 @@ New usage of "cbvrexcsf" is discouraged (1 uses).
 New usage of "cbvrexdva2OLD" is discouraged (0 uses).
 New usage of "cbvrexf" is discouraged (1 uses).
 New usage of "cbvrexsv" is discouraged (1 uses).
-New usage of "cbvrexv" is discouraged (6 uses).
+New usage of "cbvrexv" is discouraged (3 uses).
 New usage of "cbvrexv2" is discouraged (0 uses).
 New usage of "cbvriota" is discouraged (1 uses).
 New usage of "cbvriotav" is discouraged (0 uses).
@@ -17426,8 +17407,8 @@ New usage of "nfmod2" is discouraged (5 uses).
 New usage of "nfnae" is discouraged (48 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
-New usage of "nfrab" is discouraged (6 uses).
-New usage of "nfral" is discouraged (7 uses).
+New usage of "nfrab" is discouraged (2 uses).
+New usage of "nfral" is discouraged (5 uses).
 New usage of "nfrald" is discouraged (2 uses).
 New usage of "nfreu" is discouraged (0 uses).
 New usage of "nfreud" is discouraged (1 uses).
@@ -17439,7 +17420,7 @@ New usage of "nfrmod" is discouraged (0 uses).
 New usage of "nfs1" is discouraged (2 uses).
 New usage of "nfsab1OLD" is discouraged (0 uses).
 New usage of "nfsabg" is discouraged (1 uses).
-New usage of "nfsb" is discouraged (19 uses).
+New usage of "nfsb" is discouraged (18 uses).
 New usage of "nfsb2" is discouraged (4 uses).
 New usage of "nfsb2ALT" is discouraged (1 uses).
 New usage of "nfsb4" is discouraged (2 uses).
@@ -18415,7 +18396,7 @@ New usage of "sbi1vOLD" is discouraged (1 uses).
 New usage of "sbi2ALT" is discouraged (1 uses).
 New usage of "sbi2vOLD" is discouraged (0 uses).
 New usage of "sbid2" is discouraged (2 uses).
-New usage of "sbid2v" is discouraged (1 uses).
+New usage of "sbid2v" is discouraged (0 uses).
 New usage of "sbidm" is discouraged (0 uses).
 New usage of "sbie" is discouraged (20 uses).
 New usage of "sbieALT" is discouraged (1 uses).
