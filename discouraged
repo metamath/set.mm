@@ -16798,6 +16798,7 @@ New usage of "idrval" is discouraged (2 uses).
 New usage of "idunop" is discouraged (1 uses).
 New usage of "ifchhv" is discouraged (22 uses).
 New usage of "ifhvhv0" is discouraged (48 uses).
+New usage of "ifpbi123dOLD" is discouraged (0 uses).
 New usage of "iidn3" is discouraged (1 uses).
 New usage of "iin1" is discouraged (3 uses).
 New usage of "iin2" is discouraged (0 uses).
@@ -17332,6 +17333,7 @@ New usage of "mobiiOLD" is discouraged (0 uses).
 New usage of "moexex" is discouraged (2 uses).
 New usage of "moexexv" is discouraged (0 uses).
 New usage of "moimiOLD" is discouraged (0 uses).
+New usage of "mpjao3danOLD" is discouraged (0 uses).
 New usage of "mpteq12dvOLD" is discouraged (0 uses).
 New usage of "mptresidOLD" is discouraged (0 uses).
 New usage of "mptssALT" is discouraged (0 uses).
@@ -19941,6 +19943,7 @@ Proof modification of "idn1" is discouraged (5 steps).
 Proof modification of "idn2" is discouraged (7 steps).
 Proof modification of "idn3" is discouraged (15 steps).
 Proof modification of "idrefALT" is discouraged (126 steps).
+Proof modification of "ifpbi123dOLD" is discouraged (60 steps).
 Proof modification of "iidn3" is discouraged (8 steps).
 Proof modification of "iin1" is discouraged (1 steps).
 Proof modification of "iin2" is discouraged (1 steps).
@@ -20073,6 +20076,7 @@ Proof modification of "mo4OLD" is discouraged (9 steps).
 Proof modification of "mobidvALT" is discouraged (48 steps).
 Proof modification of "mobiiOLD" is discouraged (17 steps).
 Proof modification of "moimiOLD" is discouraged (17 steps).
+Proof modification of "mpjao3danOLD" is discouraged (29 steps).
 Proof modification of "mpteq12dvOLD" is discouraged (18 steps).
 Proof modification of "mptresidOLD" is discouraged (28 steps).
 Proof modification of "mptssALT" is discouraged (57 steps).
