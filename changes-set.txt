@@ -108,6 +108,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Apr-24 nnindd    [same]      moved from TA's mathbox to main set.mm
 17-Apr-24 syl6eqel  eqeltrdi    compare to eqeltri or eqeltrd
 13-Apr-24 unitresl  olcnd
 13-Apr-24 unitresr  orcnd
