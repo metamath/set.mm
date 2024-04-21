@@ -18846,6 +18846,7 @@ New usage of "vsfval" is discouraged (4 uses).
 New usage of "vtocl2OLD" is discouraged (0 uses).
 New usage of "vtocl2dOLD" is discouraged (0 uses).
 New usage of "vtoclALT" is discouraged (0 uses).
+New usage of "vtoclgOLD" is discouraged (0 uses).
 New usage of "vtoclgftOLD" is discouraged (0 uses).
 New usage of "vtxdusgr0edgnelALT" is discouraged (0 uses).
 New usage of "w-bnj13" is discouraged (5 uses).
@@ -20559,6 +20560,7 @@ Proof modification of "vk15.4jVD" is discouraged (268 steps).
 Proof modification of "vtocl2OLD" is discouraged (84 steps).
 Proof modification of "vtocl2dOLD" is discouraged (118 steps).
 Proof modification of "vtoclALT" is discouraged (11 steps).
+Proof modification of "vtoclgOLD" is discouraged (11 steps).
 Proof modification of "vtoclgftOLD" is discouraged (142 steps).
 Proof modification of "vtxdusgr0edgnelALT" is discouraged (94 steps).
 Proof modification of "wl-cases2-dnf" is discouraged (85 steps).
