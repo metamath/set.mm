@@ -14488,6 +14488,7 @@ New usage of "bj-mpomptALT" is discouraged (0 uses).
 New usage of "bj-nuliotaALT" is discouraged (0 uses).
 New usage of "bj-opelidb1ALT" is discouraged (0 uses).
 New usage of "bj-peircecurry" is discouraged (0 uses).
+New usage of "bj-pw0ALT" is discouraged (0 uses).
 New usage of "bj-rabtrALT" is discouraged (0 uses).
 New usage of "bj-rabtrAUTO" is discouraged (0 uses).
 New usage of "bj-sbceqgALT" is discouraged (0 uses).
@@ -18077,7 +18078,7 @@ New usage of "psubclsubN" is discouraged (1 uses).
 New usage of "psubspi2N" is discouraged (3 uses).
 New usage of "pweqALT" is discouraged (0 uses).
 New usage of "pwm1geoserOLD" is discouraged (0 uses).
-New usage of "pwsnALT" is discouraged (0 uses).
+New usage of "pwsnOLD" is discouraged (0 uses).
 New usage of "pwtrVD" is discouraged (0 uses).
 New usage of "pwtrrVD" is discouraged (0 uses).
 New usage of "pwundifOLD" is discouraged (0 uses).
@@ -19281,6 +19282,7 @@ Proof modification of "bj-opelidb1ALT" is discouraged (46 steps).
 Proof modification of "bj-orim2" is discouraged (31 steps).
 Proof modification of "bj-peircecurry" is discouraged (58 steps).
 Proof modification of "bj-peircestab" is discouraged (68 steps).
+Proof modification of "bj-pw0ALT" is discouraged (28 steps).
 Proof modification of "bj-rababw" is discouraged (34 steps).
 Proof modification of "bj-rabtrALT" is discouraged (36 steps).
 Proof modification of "bj-rabtrAUTO" is discouraged (33 steps).
@@ -20191,7 +20193,7 @@ Proof modification of "problem4" is discouraged (310 steps).
 Proof modification of "problem5" is discouraged (133 steps).
 Proof modification of "pweqALT" is discouraged (34 steps).
 Proof modification of "pwm1geoserOLD" is discouraged (371 steps).
-Proof modification of "pwsnALT" is discouraged (164 steps).
+Proof modification of "pwsnOLD" is discouraged (164 steps).
 Proof modification of "pwtrVD" is discouraged (110 steps).
 Proof modification of "pwtrrVD" is discouraged (110 steps).
 Proof modification of "pwundifOLD" is discouraged (49 steps).
