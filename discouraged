@@ -197,19 +197,15 @@
 "2ax6elem" is used by "2ax6eOLD".
 "2eu1" is used by "2eu2".
 "2eu1" is used by "2eu3".
-"2eu1" is used by "2eu3OLD".
 "2eu1" is used by "2eu5OLD".
 "2eu2" is used by "2eu8".
 "2eu7" is used by "2eu8".
 "2euex" is used by "2exeu".
 "2euswap" is used by "2eu1".
-"2euswap" is used by "2eu1OLD".
 "2euswap" is used by "euxfr2".
 "2exeu" is used by "2eu1".
-"2exeu" is used by "2eu1OLD".
 "2exeu" is used by "2eu2".
 "2exeu" is used by "2eu3".
-"2exeu" is used by "2eu3OLD".
 "2llnjN" is used by "2llnm2N".
 "2llnjaN" is used by "2llnjN".
 "2llnm2N" is used by "2llnm3N".
@@ -13938,17 +13934,15 @@ New usage of "2ax6eOLD" is discouraged (0 uses).
 New usage of "2ax6elem" is discouraged (2 uses).
 New usage of "2bornot2b" is discouraged (0 uses).
 New usage of "2cnALT" is discouraged (0 uses).
-New usage of "2eu1" is discouraged (4 uses).
-New usage of "2eu1OLD" is discouraged (0 uses).
+New usage of "2eu1" is discouraged (3 uses).
 New usage of "2eu2" is discouraged (1 uses).
 New usage of "2eu3" is discouraged (0 uses).
-New usage of "2eu3OLD" is discouraged (0 uses).
 New usage of "2eu5OLD" is discouraged (0 uses).
 New usage of "2eu7" is discouraged (1 uses).
 New usage of "2eu8" is discouraged (0 uses).
 New usage of "2euex" is discouraged (1 uses).
-New usage of "2euswap" is discouraged (3 uses).
-New usage of "2exeu" is discouraged (5 uses).
+New usage of "2euswap" is discouraged (2 uses).
+New usage of "2exeu" is discouraged (3 uses).
 New usage of "2falsedOLD" is discouraged (0 uses).
 New usage of "2irrexpqALT" is discouraged (0 uses).
 New usage of "2llnjN" is discouraged (1 uses).
@@ -17564,6 +17558,7 @@ New usage of "noelOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
 New usage of "noranOLD" is discouraged (0 uses).
 New usage of "norassOLD" is discouraged (0 uses).
+New usage of "norcomOLD" is discouraged (0 uses).
 New usage of "norm-i" is discouraged (13 uses).
 New usage of "norm-i-i" is discouraged (2 uses).
 New usage of "norm-ii" is discouraged (3 uses).
@@ -18906,7 +18901,6 @@ New usage of "wlklenvclwlkOLD" is discouraged (0 uses).
 New usage of "wrdexgOLD" is discouraged (0 uses).
 New usage of "wrdlndmOLD" is discouraged (0 uses).
 New usage of "wrdnfiOLD" is discouraged (2 uses).
-New usage of "wrdvOLD" is discouraged (0 uses).
 New usage of "wvd2" is discouraged (5 uses).
 New usage of "wvd3" is discouraged (3 uses).
 New usage of "wvhc2" is discouraged (5 uses).
@@ -18952,8 +18946,6 @@ Proof modification of "1t1e1ALT" is discouraged (13 steps).
 Proof modification of "2ax6eOLD" is discouraged (47 steps).
 Proof modification of "2bornot2b" is discouraged (26 steps).
 Proof modification of "2cnALT" is discouraged (3 steps).
-Proof modification of "2eu1OLD" is discouraged (83 steps).
-Proof modification of "2eu3OLD" is discouraged (134 steps).
 Proof modification of "2eu5OLD" is discouraged (81 steps).
 Proof modification of "2falsedOLD" is discouraged (14 steps).
 Proof modification of "2irrexpqALT" is discouraged (90 steps).
@@ -20133,6 +20125,7 @@ Proof modification of "nnne0ALT" is discouraged (19 steps).
 Proof modification of "noelOLD" is discouraged (27 steps).
 Proof modification of "noranOLD" is discouraged (63 steps).
 Proof modification of "norassOLD" is discouraged (276 steps).
+Proof modification of "norcomOLD" is discouraged (27 steps).
 Proof modification of "normlem7tALT" is discouraged (177 steps).
 Proof modification of "nornotOLD" is discouraged (21 steps).
 Proof modification of "nororOLD" is discouraged (27 steps).
@@ -20618,7 +20611,6 @@ Proof modification of "wlklenvclwlkOLD" is discouraged (197 steps).
 Proof modification of "wrdexgOLD" is discouraged (113 steps).
 Proof modification of "wrdlndmOLD" is discouraged (42 steps).
 Proof modification of "wrdnfiOLD" is discouraged (79 steps).
-Proof modification of "wrdvOLD" is discouraged (42 steps).
 Proof modification of "wwlksnfiOLD" is discouraged (305 steps).
 Proof modification of "xorbi12iOLD" is discouraged (31 steps).
 Proof modification of "xorcomOLD" is discouraged (27 steps).
