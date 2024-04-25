@@ -1567,11 +1567,9 @@
 "axc9" is used by "ax12eq".
 "axc9" is used by "ax12indalem".
 "axc9" is used by "ax13ALT".
-"axc9" is used by "axbndOLD".
 "axc9" is used by "axc11n11r".
 "axc9" is used by "axextbdist".
 "axc9" is used by "axi12".
-"axc9" is used by "axi12OLD".
 "axc9" is used by "bj-ax6elem1".
 "axc9" is used by "bj-hbaeb2".
 "axc9" is used by "hbae".
@@ -9981,7 +9979,6 @@
 "nfae" is used by "axacndlem5".
 "nfae" is used by "axbnd".
 "nfae" is used by "axc16nfALT".
-"nfae" is used by "axi12OLD".
 "nfae" is used by "axpownd".
 "nfae" is used by "axpowndlem3".
 "nfae" is used by "axregnd".
@@ -10108,7 +10105,6 @@
 "nfnae" is used by "axacnd".
 "nfnae" is used by "axacndlem4".
 "nfnae" is used by "axacndlem5".
-"nfnae" is used by "axbndOLD".
 "nfnae" is used by "axextbdist".
 "nfnae" is used by "axextdist".
 "nfnae" is used by "axextnd".
@@ -14312,7 +14308,6 @@ New usage of "axaddcl" is discouraged (0 uses).
 New usage of "axaddf" is discouraged (1 uses).
 New usage of "axaddrcl" is discouraged (0 uses).
 New usage of "axbnd" is discouraged (0 uses).
-New usage of "axbndOLD" is discouraged (0 uses).
 New usage of "axc10" is discouraged (1 uses).
 New usage of "axc11" is discouraged (12 uses).
 New usage of "axc11-o" is discouraged (0 uses).
@@ -14345,7 +14340,7 @@ New usage of "axc5sp1" is discouraged (0 uses).
 New usage of "axc711" is discouraged (2 uses).
 New usage of "axc711to11" is discouraged (0 uses).
 New usage of "axc711toc7" is discouraged (1 uses).
-New usage of "axc9" is discouraged (12 uses).
+New usage of "axc9" is discouraged (10 uses).
 New usage of "axcc" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (0 uses).
 New usage of "axcnre" is discouraged (0 uses).
@@ -14373,7 +14368,6 @@ New usage of "axhvmulass-zf" is discouraged (0 uses).
 New usage of "axhvmulid-zf" is discouraged (0 uses).
 New usage of "axi10" is discouraged (0 uses).
 New usage of "axi12" is discouraged (1 uses).
-New usage of "axi12OLD" is discouraged (0 uses).
 New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axi4" is discouraged (0 uses).
 New usage of "axi9" is discouraged (0 uses).
@@ -17369,7 +17363,7 @@ New usage of "nfabd2" is discouraged (3 uses).
 New usage of "nfabd2OLD" is discouraged (0 uses).
 New usage of "nfabdOLD" is discouraged (0 uses).
 New usage of "nfabg" is discouraged (3 uses).
-New usage of "nfae" is discouraged (23 uses).
+New usage of "nfae" is discouraged (22 uses).
 New usage of "nfald2" is discouraged (6 uses).
 New usage of "nfccdeq" is discouraged (0 uses).
 New usage of "nfcdeq" is discouraged (1 uses).
@@ -17399,7 +17393,7 @@ New usage of "nfixp" is discouraged (0 uses).
 New usage of "nfmo" is discouraged (3 uses).
 New usage of "nfmod" is discouraged (2 uses).
 New usage of "nfmod2" is discouraged (5 uses).
-New usage of "nfnae" is discouraged (48 uses).
+New usage of "nfnae" is discouraged (47 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
 New usage of "nfrab" is discouraged (2 uses).
@@ -19065,7 +19059,6 @@ Proof modification of "ax9ALT" is discouraged (68 steps).
 Proof modification of "axac" is discouraged (55 steps).
 Proof modification of "axac2" is discouraged (108 steps).
 Proof modification of "axac3" is discouraged (74 steps).
-Proof modification of "axbndOLD" is discouraged (75 steps).
 Proof modification of "axc10" is discouraged (37 steps).
 Proof modification of "axc11-o" is discouraged (47 steps).
 Proof modification of "axc11n-16" is discouraged (154 steps).
@@ -19099,7 +19092,6 @@ Proof modification of "axc711" is discouraged (37 steps).
 Proof modification of "axc711to11" is discouraged (32 steps).
 Proof modification of "axc711toc7" is discouraged (37 steps).
 Proof modification of "axfrege8" is discouraged (31 steps).
-Proof modification of "axi12OLD" is discouraged (76 steps).
 Proof modification of "axnul" is discouraged (36 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
 Proof modification of "axprALT" is discouraged (67 steps).
