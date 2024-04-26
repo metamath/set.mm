@@ -103,12 +103,17 @@ proposed  syl6eq    eqtrdi      compare to eqtri or eqtrd
 proposed  syl6req   eqtr2di     compare to eqtr2i or eqtr2d
 proposed  syl6eqr   eqtr4di     compare to eqtr4i or eqtr4d
 proposed  syl6reqr  eqtr4id     hypotheses would be switched
-proposed  syl6eqel  eqeltrdi    compare to eqeltri or eqeltrd
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Apr-24 nnindd    [same]      moved from TA's mathbox to main set.mm
+17-Apr-24 syl6eqel  eqeltrdi    compare to eqeltri or eqeltrd
+13-Apr-24 unitresl  olcnd
+13-Apr-24 unitresr  orcnd
+12-Apr-24 mth8      jcn
+12-Apr-24 jcn       jcnd
 10-Apr-24 syl6eqelr eqeltrrdi   compare to eqeltrri or eqeltrrd
 29-Mar-24 fvmptdf   fvmptd2f
 28-Mar-24 ---       ---         section "Monoid of endofunctions"
