@@ -663,8 +663,7 @@ In mathematics, a countable set is a set with the same cardinality
 A countable set may be infinite, but every element of the set can be
 mapped to a unique natural number.
 The natural numbers and the integers are countably infinite sets.
-Even the rational numbers are a countably infinite set; see
-<A HREF="qnnen.html">qnnen</A>.
+Even the rational numbers are a countably infinite set; see ~ qnnen .
 In contrast, the real numbers are not a countable set, but instead,
 they are an uncountable set.
 This is a remarkable result.
@@ -728,19 +727,18 @@ pentaconta, hexaconta, heptaconta, octaconta, enneaconta, hecta
 -->
 
 However, he ran into some technical complications, such as the fact that some
-numbers have two equivalent decimal representations (e.g.  <A
-HREF="0.999....html">0.999...  = 1.000...</A>), that would have made a
+numbers have two equivalent decimal representations
+(e.g. 0.999... = 1.000..., see ~ 0.999... ), that would have made a
 formal proof somewhat messy.  So he chose another proof that is simpler
 to formalize but which he believes is in the same spirit as Cantor's
 diagonal proof, in the sense that it constructs a real number different
 from all the numbers in a purported list of all real numbers.
 
 <P>Even so, the "simpler" proof is still daunting when worked out in
-complete formal detail, involving some 39 lemmas.  Therefore we will
+complete formal detail, involving many lemmas.  Therefore we will
 first give an informal description of the proof, then describe the key
-formal lemmas that lead to the final result, which is theorem <A
-HREF="ruc.html">ruc</A> (or equivalently <A
-HREF="ruclem39.html">ruclem39</A>).
+formal lemmas that lead to the final result, which is theorem ~ ruc
+(or equivalently ~ ruclem13 ).</P>
 
 <P> <B><FONT COLOR="#006633">The informal
 argument</FONT></B>&nbsp;&nbsp;&nbsp; We will start by claiming that we
@@ -752,48 +750,41 @@ numbers) onto ` RR `
 <I>f</I>(3),... of all reals, thereby falsifying this claim.
 
 <P>Here is how we construct this number.  We construct, in parallel, two
-auxiliary sequences <I>g</I>(1), <I>g</I>(2), <I>g</I>(3),... and
-<I>h</I>(1), <I>h</I>(2), <I>h</I>(3),... derived from <I>f</I>(1),
+auxiliary sequences <I>g</I>(0), <I>g</I>(1), <I>g</I>(2),... and
+<I>h</I>(0), <I>h</I>(1), <I>h</I>(2),... derived from <I>f</I>(1),
 <I>f</I>(2), <I>f</I>(3),...
 
 <P>We start off by assigning:
 
 <BLOCKQUOTE>
-<I>g</I>(1) = <I>f</I>(1) + 1 <BR>
- <I>h</I>(1) = <I>f</I>(1) + 2
+<div><I>g</I>(0) = 0</div>
+<div><I>h</I>(0) = 1</div>
 </BLOCKQUOTE>
 
-Given <I>g</I>(<I>i</I>) and <I>h</I>(<I>i</I>), we construct the next
-value <I>g</I>(<I>i</I>+1) and <I>h</I>(<I>i</I>+1) as follows:
+We construct the next
+value <I>g</I>(<I>i</I>+1) and <I>h</I>(<I>i</I>+1) as follows.
+Consider the average of <I>g</I>(<I>i</I>) and <I>h</I>(<I>i</I>), that is
+set <I>m</I> to ( </i></I><I>g</I>(<I>i</I>) + <I>h</I>(<I>i</I>) ) / 2 .
 
 <BLOCKQUOTE>
-  If <I>g</I>(<I>i</I>) &lt; <I>f</I>(<I>i</I>+1) &lt; <I>h</I>(<I>i</I>),
- then assign
+  If <I>m</I> is less than <I>f</I>(<I>i</I>+1) then assign
 <BLOCKQUOTE>
-       <I>g</I>(<I>i</I>+1) =
-(2` x. ` <I>f</I>(<I>i</I>+1)
-                + <I>h</I>(<I>i</I>)) / 3<BR>
-       <I>h</I>(<I>i</I>+1) = (<I>f</I>(<I>i</I>+1) +
- 2` x. ` <I>h</I>(<I>i</I>))
-   / 3
+  <div><I>g</I>(<I>i</I>+1) = <I>g</I>(<I>i</I>)</div>
+  <div><I>h</I>(<I>i</I>+1) = <I>m</I></div>
 </BLOCKQUOTE>
   Otherwise, assign
 <BLOCKQUOTE>
-       <I>g</I>(<I>i</I>+1) =
-(2` x. ` <I>g</I>(<I>i</I>)
-                 + <I>h</I>(<I>i</I>)) / 3<BR>
-       <I>h</I>(<I>i</I>+1) = (<I>g</I>(<I>i</I>) +
-2` x. ` <I>h</I>(<I>i</I>))
- / 3
+  <div><I>g</I>(<I>i</I>+1) = ( <I>m</I> + <I>h</I>(<I>i</I>) ) / 2</div>
+  <div><I>h</I>(<I>i</I>+1) = <I>h</I>(<I>i</I>)</div>
 </BLOCKQUOTE>
 </BLOCKQUOTE>
 
 In either case, <I>f</I>(<I>i</I>+1) will not fall
 between <I>g</I>(<I>i</I>+1) and <I>h</I>(<I>i</I>+1).
 
-<P>Now, using elementary algebra, you can check that <I>g</I>(1) &lt;
-<I>g</I>(2) &lt; <I>g</I>(3) &lt; ...  &lt; <I>h</I>(3) &lt; <I>h</I>(2)
-&lt; <I>h</I>(1).  In addition, for each <I>i</I>, the interval between
+<P>Now, using elementary algebra, you can check that <I>g</I>(1) ` <_ `
+<I>g</I>(2) ` <_ ` <I>g</I>(3) ` <_ ` ...  ` <_ ` <I>h</I>(3) ` <_ ` <I>h</I>(2)
+` <_ ` <I>h</I>(1).  In addition, for each <I>i</I>, the interval between
 <I>g</I>(<I>i</I>) and <I>h</I>(<I>i</I>) does not contain any of the
 numbers <I>f</I>(1), <I>f</I>(2), <I>f</I>(3), ..., <I>f</I>(<I>i</I>).
 This interval keeps getting smaller and smaller as <I>i</I> grows,
@@ -816,10 +807,10 @@ not be empty, and the formal proof shows this.  Specifically, it will
 contain exactly one real number, which is the supremum (meaning "least
 upper bound") of all values <I>g</I>(<I>i</I>).  How do we know this?
 Well, it results from one of the axioms for real numbers.  This axiom,
-shown as <A HREF="ax-sup.html">ax-sup</A> above, says that the supremum of
+shown as ~ ax-pre-sup above, says that the supremum of
 any bounded-above set of real numbers is a real number.  And the set of
 values <I>g</I>(<I>i</I>) is certainly bounded from above; in fact all
-of them are less than <I>h</I>(1) in particular.
+of them are no greater than 1 in particular.
 
 <P>Contrast this to the rational numbers, where the supremum axiom does
 not hold.  That is why this proof fails for the rational numbers, as it
@@ -843,128 +834,109 @@ supremum axiom for its derivation.
 <P> <B><FONT COLOR="#006633">The formal
 proof</FONT></B>&nbsp;&nbsp;&nbsp;
 
-The formal proof consists of 39 lemmas, <A
-HREF="ruclem1.html">ruclem1</A> through <A
-HREF="ruclem39.html">ruclem39</A>, and the final theorem <A
-HREF="ruc.html">ruc</A>.
+The formal proof consists of 13 lemmas, ~ ruclem1 through ~ ruclem13 ,
+and the final theorem ~ ruc .
 
-In the formal proof, the functions <I>f</I>, <I>g</I>, and <I>h</I>
-above are called ` F ` , ` G ` ,
-and ` H ` .  A
+In the formal proof, ` F ` is the function <I>f</I> above, and
+` G ` is a sequence of ordered pairs such that the <I>i</I>th
+term is ` <. ` <I>g</I>(<I>i</I>) , <I>h</I>(<I>i</I>) ` >. `  A
 function value such as <I>f</I>(1) is expressed ` ( F `` 1 ) ` .  A
-natural number index <I>i</I> is usually expressed as ` A ` ; you can tell by
-the hypothesis ` A e. NN ` such as ruclem18.a in <A
-HREF="ruclem26.html">ruclem26</A>.
+natural number index <I>i</I> may be expressed with notation such as
+` k ` , ` M ` , or ` N ` ; see for example the hypothesis ` M e. NN0 `
+in ~ ruclem10 .
 
 
-<P> In the hypotheses for many of the lemmas, for example those for <A
-HREF="ruclem14.html">ruclem14</A>, we let ` F ` be any function such that ` F : NN --> RR ` , meaning ` F ` can be any arbitrary mapping from ` NN ` <I>into</I> ` RR ` .  We then derive  additional
+<P> In the hypotheses for many of the lemmas, for example those
+for ~ ruclem9 , we let ` F ` be any function such that ` F : NN --> RR ` ,
+meaning ` F ` can be any arbitrary mapping from ` NN ` <I>into</I> ` RR ` .  We then derive  additional
 properties that ` F ` must
 have.  In particular, we will conclude that no matter what the
 function ` F ` is, it
-is impossible for it to map <I>onto</I> the set of all reals.
+is impossible for it to map <I>onto</I> the set of all reals.</P>
 
 
 <P> We also have to
-construct the functions ` G ` and ` H ` ,
-and doing this formally is rather involved.  The purpose of the majority
-of the lemmas, in fact, is simply to work out that the hypotheses of <A
-HREF="ruclem14.html">ruclem14</A> indeed result in functions ` G ` and ` H ` that have the
-properties described in our informal argument section above.
+construct the function ` G ` and show that it has the properties
+described in our informal argument section above, as seen for example
+in ~ ruclem9 .</P>
 
-<P> What makes it complicated is the fact that ` G ` and ` H ` depend not only on ` F ` but on each other as well.  So, we
+<P> What makes it complicated is the fact that <I>g</I> and <I>h</I>
+depend not only on ` F ` but on each other as well.  So, we
 have to construct them in parallel, and we do this using a
 &quot;sequence builder&quot; that you can see defined in <A
 HREF="df-seq.html">df-seq</A>.  The sequence builder takes in the
 functions ` C ` and
 ` D ` defined in
-hypotheses ruclem.1 and ruclem.2 of <A
-HREF="ruclem14.html">ruclem14</A>, and uses them to construct a function
+hypotheses of ~ ruclem4 , and uses them to construct a function
 on ` NN ` whose
 values are <I>ordered pairs</I>.  The first member of each ordered pair
-is the value of ` G `
-and the second is the value of ` H ` .  By using ordered pairs, the sequence builder can
-make use of the previous values of both ` G ` and ` H ` simultaneously for its internal recursive
+is the value of <I>g</I>
+and the second is the value of <I>h</I> .  By using ordered pairs, the sequence builder can
+make use of the previous values of both <I>g</I> and <I>h</I> simultaneously for its internal recursive
 construction.
 
 <P> The function ` C ` , which provides the second argument or &quot;input
 sequence&quot; for the sequence builder ` seq ` , is constructed from ` F ` as follows.  Its first value
-(value at 1) is the ordered pair ` <. ( ( F `` 1 ) + 1 ) , ( ( F `` 1 ) + 2 ) >. ` .  This provides the
+(value at 0) is the ordered pair ` <. 0 , 1 >. ` .  This provides the
 &quot;seed&quot; for the sequence builder, corresponding to the initial
-assignment to <I>g</I>(1) and <I>h</I>(1) in the informal argument
-section above.  The subsequent values at 2, 3,... are just the values of ` F ` , and these feed the
+assignment to <I>g</I>(0) and <I>h</I>(0) in the informal argument
+section above.  The subsequent values at 1, 2,... are just the values of ` F ` , and these feed the
 recursion part of the sequence builder to generate new ordered pairs for
-the values of the sequence builder at 2, 3,....
+the values of the sequence builder at 1, 2,....
 
 
-<P>The two functions called ` 1st ` and ` 2nd ` in hypothesis ruclem.2 of <A
-HREF="ruclem14.html">ruclem14</A> return the <A
-HREF="op1st.html">first</A> and <A HREF="op2nd.html">second</A> members,
-respectively, of an ordered pair.  The ` if ` operation, defined by <A
+<P>The two functions called ` 1st ` and ` 2nd ` in the hypotheses of
+~ ruclem1 return the first and second members,
+respectively, of an ordered pair, as seen at ~ op1st and ~ op2nd .
+The ` if ` operation, defined by <A
 HREF="df-if.html">df-if</A>, can be thought of as a conditional
 expression operator analogous to those used by computer languages.  The
 expression ` if ( ph , A , B ) ` can be read &quot;if
 ` ph ` is true
 then the expression equals ` A ` else the expression equals ` B `&quot;.
 
-<P>Hypotheses ruclem.3 and ruclem.4 of <A
-HREF="ruclem14.html">ruclem14</A> extract the first and second
+<P>The lemma ~ ruclem11 extracts the first
 members from the ordered pair values of the sequence builder
-finally giving us our desired auxiliary functions
-` G ` ,
-and ` H `
+which gives us the set ` ran ( 1st o. G ) ` which is the set we will
+take the supremum of.</P>
 
 <P>Armed with this information, you should now compare the arithmetic
-expressions in the hypothesis ruclem.2 of <A
-HREF="ruclem14.html">ruclem14</A> to the ones in the informal argument
-section above.  Hopefully you will see a resemblance, if only a very
+expressions in ~ ruclem8 , ~ ruclem3 , and ~ ruclem7 to the ones in
+the informal argument
+section above.  Hopefully you will see a resemblance, if only a
 rough one, that will provide you with a clue should you want to study
-the formal proof in more depth.  By the way, the assertion (conclusion)
-of <A HREF="ruclem14.html">ruclem14</A> shows the first value of the
-sequence builder.  You can see that the ordered pair entries match
-<I>g</I>(1) and <I>h</I>(1) from the informal argument section above.
+the formal proof in more depth.  By the way, ~ ruclem4
+shows the first value of the sequence builder.  You can see that the
+ordered pair entries match <I>g</I>(0) and <I>h</I>(0) from the
+informal argument section above.</P>
 
 <P> Let us now look at the key lemmas for the uncountability proof.
-Lemma <A HREF="ruclem26.html">ruclem26</A> shows that ` G ` has an ever-increasing set of
-values, and <A HREF="ruclem27.html">ruclem27</A> shows that ` H ` has an
-ever-decreasing set of values.  In spite of this, the twain shall never
-meet, as shown by <A HREF="ruclem32.html">ruclem32</A>.  Lemma <A
-HREF="ruclem34.html">ruclem34</A> defines the supremum ` S ` of the values of
-` G `
-(i.e. the supremum of its range) and shows that
-the supremum is a real number.  Lemma <A
-HREF="ruclem35.html">ruclem35</A> shows that the supremum ` S ` is always sandwiched
-between ` G ` and
-` H ` , whereas <A
-HREF="ruclem29.html">ruclem29</A> shows that this is not true for any
-value of ` F ` .
-Lemma <A HREF="ruclem36.html">ruclem36</A> uses these last two facts to
-show that the supremum is not equal to any value of ` F ` and therefore not in the list of
-real numbers provided by ` F ` .  This means, as shown by <A
-HREF="ruclem37.html">ruclem37</A>, that ` F ` cannot map onto the set of all reals.
+Lemma ~ ruclem9 shows that <I>g</I> has an non-decreasing set of
+values, and that <I>h</I> has an
+non-increasing set of values.  In spite of this, the twain shall never
+meet, as shown by ~ ruclem8 .  Lemma ~ ruclem12 defines the supremum
+` S ` of the values of ` g `
+(i.e. the supremum of ` ran ( 1st o. G ) ` ) and shows that
+the supremum is a real number.  The same lemma also shows that the
+supremum ` S ` is always sandwiched
+between <I>g</I> and
+<I>h</I> , and that this is not true for any
+value of ` F ` .  Thus, the supremum is not equal to any value
+of ` F ` and therefore not in the list of
+real numbers provided by ` F ` .  This means, as shown by ~ ruclem13 ,
+that ` F ` cannot map onto the set of all reals.
 
-<P> We are now in a position to get rid of most of the hypotheses (since
-their variables are no longer referenced in the assertion).  In <A
-HREF="ruclem38.html">ruclem38</A> we eliminate all but one hypotheses of
-<A HREF="ruclem37.html">ruclem37</A> by using instances of <A
-HREF="eqid.html">eqid</A>.  In <A HREF="ruclem39.html">ruclem39</A>
-we get rid of the final hypothesis (using the
-<A HREF="mmdeduction.html#quick">weak deduction theorem</A> <A
-HREF="dedth.html">dedth</A>, involving a quite different application of
-the ` if `
-operator) to result in &quot;there is no function mapping ` NN ` onto the
-reals,&quot; and finally <A HREF="ruc.html">ruc</A> converts this to the
+<P> Finally ~ ruc converts this to the
 notation for a strict dominance relation.
 
 <P>
 There are several related interesting proofs.
 There are at least
-aleph-one reals (<A HREF="aleph1re.html">aleph1re</A>) and
-irrationals (<A HREF="aleph1irr.html">aleph1irr</A>).
-For another very different proof that the reals are uncountable, see <A
-HREF="rucALT.html">rucALT</A>, which follows from the exact
-computation of the cardinality of reals,
-<A HREF="rpnnen.html">rpnnen</A>.
+aleph-one reals ( ~ aleph1re ) and
+irrationals ( ~ aleph1irr ).
+For another very different proof that the reals are uncountable, see
+~ rucALT , which follows from the exact
+computation of the cardinality of reals, ~ rpnnen .
 
 
 <HR NOSHADE SIZE=1>
@@ -974,7 +946,7 @@ computation of the cardinality of reals,
 <TD ALIGN=left VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
 &nbsp;</FONT></TD>
 
-<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 21-Aug-2020.</I>
+<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 17-Apr-2024.</I>
 <BR><FONT SIZE=-2 FACE=ARIAL>
 Copyright terms:
 <A HREF="../copyright.html#pd">Public domain</A>

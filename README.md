@@ -52,7 +52,7 @@ in (approximate) decreasing size, are:
   In particular, it does not presume that the law of excluded middle is
   necessarily true in all cases.
   [[Generated display](http://us.metamath.org/ileuni/mmil.html)]
-* "[nf.mm](.nf.mm)" aka "New Foundations Explorer" -
+* "[nf.mm](./nf.mm)" aka "New Foundations Explorer" -
   constructs mathematics using
   Quine's New Foundations (NF) set theory axioms, a direct derivative
   of the "hierarchy of types" set theory originally presented in
