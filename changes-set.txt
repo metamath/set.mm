@@ -108,6 +108,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+29-Apr-24 itgpowd   [same]      moved from JPP's mathbox to main set.mm
 26-Apr-24 bddiblnc  [same]      moved from BL's mathbox to main set.mm
 26-Apr-24 cnicciblnc  [same]    moved from BL's mathbox to main set.mm
 21-Apr-24 nnindd    [same]      moved from TA's mathbox to main set.mm
