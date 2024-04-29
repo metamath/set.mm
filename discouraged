@@ -4518,7 +4518,6 @@
 "cvpss" is used by "cvnsym".
 "cvpss" is used by "cvntr".
 "cvr2N" is used by "cvrval4N".
-"dedtOLD" is used by "con3ALTOLD".
 "df-0" is used by "ax1ne0".
 "df-0" is used by "axi2m1".
 "df-0" is used by "axpre-mulgt0".
@@ -5981,7 +5980,6 @@
 "elhmop" is used by "idhmop".
 "elhmop" is used by "lnophmi".
 "elhmop" is used by "pjhmopi".
-"elimhOLD" is used by "con3ALTOLD".
 "elimnv" is used by "elimph".
 "elimnvu" is used by "ajfun".
 "elimnvu" is used by "imsmet".
@@ -6217,7 +6215,6 @@
 "equsal" is used by "sb6x".
 "equsalh" is used by "dvelimf-o".
 "equsb1" is used by "frege54cor1b".
-"equsb1" is used by "pm13.183OLD".
 "equsb1" is used by "sb5ALT".
 "equsb1" is used by "sb5ALTVD".
 "equsb1" is used by "sbequ8".
@@ -15355,7 +15352,6 @@ New usage of "cnvunop" is discouraged (2 uses).
 New usage of "com3rgbi" is discouraged (1 uses).
 New usage of "con3ALT" is discouraged (0 uses).
 New usage of "con3ALT2" is discouraged (0 uses).
-New usage of "con3ALTOLD" is discouraged (0 uses).
 New usage of "con3ALTVD" is discouraged (0 uses).
 New usage of "con5" is discouraged (1 uses).
 New usage of "con5VD" is discouraged (0 uses).
@@ -15416,7 +15412,6 @@ New usage of "cygablOLD" is discouraged (0 uses).
 New usage of "dalem31N" is discouraged (0 uses).
 New usage of "daraptiALT" is discouraged (0 uses).
 New usage of "dariiALT" is discouraged (0 uses).
-New usage of "dedtOLD" is discouraged (1 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-0" is discouraged (5 uses).
 New usage of "df-0o" is discouraged (1 uses).
@@ -16016,7 +16011,6 @@ New usage of "elghomOLD" is discouraged (5 uses).
 New usage of "elghomlem1OLD" is discouraged (1 uses).
 New usage of "elghomlem2OLD" is discouraged (1 uses).
 New usage of "elhmop" is discouraged (10 uses).
-New usage of "elimhOLD" is discouraged (1 uses).
 New usage of "eliminable1" is discouraged (0 uses).
 New usage of "eliminable2a" is discouraged (0 uses).
 New usage of "eliminable2b" is discouraged (0 uses).
@@ -16089,7 +16083,6 @@ New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqopab2b" is discouraged (1 uses).
 New usage of "eqoprab2b" is discouraged (1 uses).
 New usage of "eqresr" is discouraged (4 uses).
-New usage of "eqsbc3OLD" is discouraged (0 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
 New usage of "equcomi1" is discouraged (1 uses).
 New usage of "equid1" is discouraged (1 uses).
@@ -16108,7 +16101,7 @@ New usage of "equs5e" is discouraged (1 uses).
 New usage of "equs5eALT" is discouraged (0 uses).
 New usage of "equsal" is discouraged (6 uses).
 New usage of "equsalh" is discouraged (1 uses).
-New usage of "equsb1" is discouraged (6 uses).
+New usage of "equsb1" is discouraged (5 uses).
 New usage of "equsb1ALT" is discouraged (1 uses).
 New usage of "equsb1vOLD" is discouraged (0 uses).
 New usage of "equsb1vOLDOLD" is discouraged (0 uses).
@@ -17998,7 +17991,6 @@ New usage of "pl42lem4N" is discouraged (1 uses).
 New usage of "plpv" is discouraged (1 uses).
 New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
-New usage of "pm13.183OLD" is discouraged (0 uses).
 New usage of "pm13.18OLD" is discouraged (0 uses).
 New usage of "pm2.18OLD" is discouraged (1 uses).
 New usage of "pm2.18dOLD" is discouraged (0 uses).
@@ -18892,7 +18884,6 @@ New usage of "wl-section-prop" is discouraged (0 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
 New usage of "wlklenvclwlkOLD" is discouraged (0 uses).
-New usage of "wrdexgOLD" is discouraged (0 uses).
 New usage of "wrdlndmOLD" is discouraged (0 uses).
 New usage of "wrdnfiOLD" is discouraged (2 uses).
 New usage of "wvd2" is discouraged (5 uses).
@@ -19361,7 +19352,6 @@ Proof modification of "cnvoprabOLD" is discouraged (262 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
 Proof modification of "con3ALT" is discouraged (54 steps).
 Proof modification of "con3ALT2" is discouraged (14 steps).
-Proof modification of "con3ALTOLD" is discouraged (63 steps).
 Proof modification of "con3ALTVD" is discouraged (51 steps).
 Proof modification of "con5" is discouraged (10 steps).
 Proof modification of "con5VD" is discouraged (47 steps).
@@ -19389,7 +19379,6 @@ Proof modification of "currysetlem3" is discouraged (82 steps).
 Proof modification of "cygablOLD" is discouraged (379 steps).
 Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
-Proof modification of "dedtOLD" is discouraged (19 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
@@ -19610,7 +19599,6 @@ Proof modification of "elex2VD" is discouraged (59 steps).
 Proof modification of "elghomOLD" is discouraged (117 steps).
 Proof modification of "elghomlem1OLD" is discouraged (232 steps).
 Proof modification of "elghomlem2OLD" is discouraged (195 steps).
-Proof modification of "elimhOLD" is discouraged (41 steps).
 Proof modification of "eliminable1" is discouraged (4 steps).
 Proof modification of "eliminable2a" is discouraged (7 steps).
 Proof modification of "eliminable2b" is discouraged (7 steps).
@@ -19632,7 +19620,6 @@ Proof modification of "epelgOLD" is discouraged (136 steps).
 Proof modification of "eqeq1dALT" is discouraged (62 steps).
 Proof modification of "eqeqan12dALT" is discouraged (23 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
-Proof modification of "eqsbc3OLD" is discouraged (46 steps).
 Proof modification of "eqsbc3rVD" is discouraged (131 steps).
 Proof modification of "equcomi1" is discouraged (16 steps).
 Proof modification of "equid1" is discouraged (50 steps).
@@ -20160,7 +20147,6 @@ Proof modification of "p0exALT" is discouraged (2 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
 Proof modification of "perpdragALT" is discouraged (241 steps).
 Proof modification of "pige3ALT" is discouraged (1082 steps).
-Proof modification of "pm13.183OLD" is discouraged (111 steps).
 Proof modification of "pm13.18OLD" is discouraged (28 steps).
 Proof modification of "pm2.18OLD" is discouraged (18 steps).
 Proof modification of "pm2.18dOLD" is discouraged (10 steps).
@@ -20600,7 +20586,6 @@ Proof modification of "wl-section-prop" is discouraged (1 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
 Proof modification of "wlklenvclwlkOLD" is discouraged (197 steps).
-Proof modification of "wrdexgOLD" is discouraged (113 steps).
 Proof modification of "wrdlndmOLD" is discouraged (42 steps).
 Proof modification of "wrdnfiOLD" is discouraged (79 steps).
 Proof modification of "wwlksnfiOLD" is discouraged (305 steps).
