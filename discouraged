@@ -18098,7 +18098,6 @@ New usage of "ralcom4OLD" is discouraged (0 uses).
 New usage of "raleleqALT" is discouraged (0 uses).
 New usage of "raleqOLD" is discouraged (0 uses).
 New usage of "raleqbi1dvOLD" is discouraged (0 uses).
-New usage of "raleqbidvOLD" is discouraged (0 uses).
 New usage of "ralnex2OLD" is discouraged (0 uses).
 New usage of "ralnex3OLD" is discouraged (0 uses).
 New usage of "ralrexbidOLD" is discouraged (0 uses).
@@ -18169,7 +18168,6 @@ New usage of "rexcom4OLD" is discouraged (0 uses).
 New usage of "rexcomOLD" is discouraged (0 uses).
 New usage of "rexeqOLD" is discouraged (0 uses).
 New usage of "rexeqbi1dvOLD" is discouraged (0 uses).
-New usage of "rexeqbidvOLD" is discouraged (0 uses).
 New usage of "rexlimddvcbv" is discouraged (0 uses).
 New usage of "rexrnmpt" is discouraged (0 uses).
 New usage of "rgen2a" is discouraged (0 uses).
@@ -18199,7 +18197,6 @@ New usage of "ringcisoALTV" is discouraged (0 uses).
 New usage of "ringcsectALTV" is discouraged (1 uses).
 New usage of "ringcvalALTV" is discouraged (3 uses).
 New usage of "riotaocN" is discouraged (1 uses).
-New usage of "rmo3OLD" is discouraged (0 uses).
 New usage of "rmoanimALT" is discouraged (0 uses).
 New usage of "rmoeq1OLD" is discouraged (0 uses).
 New usage of "rnbra" is discouraged (2 uses).
@@ -18339,7 +18336,6 @@ New usage of "sbcbiVD" is discouraged (0 uses).
 New usage of "sbcbidvOLD" is discouraged (0 uses).
 New usage of "sbcco" is discouraged (3 uses).
 New usage of "sbcco3g" is discouraged (0 uses).
-New usage of "sbcel1vOLD" is discouraged (0 uses).
 New usage of "sbcim2g" is discouraged (2 uses).
 New usage of "sbcim2gVD" is discouraged (0 uses).
 New usage of "sbcnestg" is discouraged (1 uses).
@@ -20191,7 +20187,6 @@ Proof modification of "ralcom4OLD" is discouraged (41 steps).
 Proof modification of "raleleqALT" is discouraged (26 steps).
 Proof modification of "raleqOLD" is discouraged (11 steps).
 Proof modification of "raleqbi1dvOLD" is discouraged (28 steps).
-Proof modification of "raleqbidvOLD" is discouraged (28 steps).
 Proof modification of "ralnex2OLD" is discouraged (46 steps).
 Proof modification of "ralnex3OLD" is discouraged (62 steps).
 Proof modification of "ralrexbidOLD" is discouraged (29 steps).
@@ -20244,10 +20239,8 @@ Proof modification of "rexcom4OLD" is discouraged (41 steps).
 Proof modification of "rexcomOLD" is discouraged (75 steps).
 Proof modification of "rexeqOLD" is discouraged (11 steps).
 Proof modification of "rexeqbi1dvOLD" is discouraged (28 steps).
-Proof modification of "rexeqbidvOLD" is discouraged (28 steps).
 Proof modification of "rgen2a" is discouraged (81 steps).
 Proof modification of "rim0to0OLD" is discouraged (92 steps).
-Proof modification of "rmo3OLD" is discouraged (179 steps).
 Proof modification of "rmoanimALT" is discouraged (93 steps).
 Proof modification of "rmoeq1OLD" is discouraged (11 steps).
 Proof modification of "rngopidOLD" is discouraged (27 steps).
@@ -20321,7 +20314,6 @@ Proof modification of "sbcbi" is discouraged (33 steps).
 Proof modification of "sbcbi2OLD" is discouraged (48 steps).
 Proof modification of "sbcbiVD" is discouraged (59 steps).
 Proof modification of "sbcbidvOLD" is discouraged (10 steps).
-Proof modification of "sbcel1vOLD" is discouraged (48 steps).
 Proof modification of "sbcim2g" is discouraged (83 steps).
 Proof modification of "sbcim2gVD" is discouraged (139 steps).
 Proof modification of "sbco2ALT" is discouraged (73 steps).
