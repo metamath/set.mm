@@ -5436,7 +5436,6 @@
 "drnfc1" is used by "nfriotad".
 "drngoi" is used by "dvrunz".
 "drngoi" is used by "fldcrng".
-"drsb1" is used by "ichnfimlem2".
 "drsb1" is used by "iotaeq".
 "drsb1" is used by "sb2ae".
 "drsb1" is used by "sbco3".
@@ -8234,10 +8233,6 @@
 "hvsubvali" is used by "pjcji".
 "hvsubvali" is used by "pjssmii".
 "hvsubvali" is used by "pjsubii".
-"ichnfim" is used by "ichnfb".
-"ichnfimlem1" is used by "ichnfimlem3".
-"ichnfimlem2" is used by "ichnfimlem3".
-"ichnfimlem3" is used by "ichnfim".
 "idALT" is used by "id1".
 "idcnop" is used by "nmcopex".
 "idcnop" is used by "nmcoplb".
@@ -10186,7 +10181,6 @@
 "nfsb4" is used by "nfsbOLD".
 "nfsb4" is used by "sbco2".
 "nfsb4ALT" is used by "sbco2ALT".
-"nfsb4t" is used by "ichnfimlem1".
 "nfsb4t" is used by "nfsb4".
 "nfsb4t" is used by "nfsbd".
 "nfsb4tALT" is used by "nfsb4ALT".
@@ -15782,7 +15776,7 @@ New usage of "drnfc1OLD" is discouraged (0 uses).
 New usage of "drnfc2" is discouraged (0 uses).
 New usage of "drngcatALTV" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
-New usage of "drsb1" is discouraged (4 uses).
+New usage of "drsb1" is discouraged (3 uses).
 New usage of "dtruALT" is discouraged (0 uses).
 New usage of "dtruALT2" is discouraged (0 uses).
 New usage of "dtrucor2" is discouraged (0 uses).
@@ -16744,11 +16738,6 @@ New usage of "hvsubsub4i" is discouraged (2 uses).
 New usage of "hvsubval" is discouraged (24 uses).
 New usage of "hvsubvali" is discouraged (13 uses).
 New usage of "icccmpALT" is discouraged (0 uses).
-New usage of "ichnfb" is discouraged (0 uses).
-New usage of "ichnfim" is discouraged (1 uses).
-New usage of "ichnfimlem1" is discouraged (1 uses).
-New usage of "ichnfimlem2" is discouraged (1 uses).
-New usage of "ichnfimlem3" is discouraged (1 uses).
 New usage of "id1" is discouraged (0 uses).
 New usage of "idALT" is discouraged (1 uses).
 New usage of "idcnop" is discouraged (2 uses).
@@ -17413,7 +17402,7 @@ New usage of "nfsb2" is discouraged (4 uses).
 New usage of "nfsb2ALT" is discouraged (1 uses).
 New usage of "nfsb4" is discouraged (2 uses).
 New usage of "nfsb4ALT" is discouraged (1 uses).
-New usage of "nfsb4t" is discouraged (3 uses).
+New usage of "nfsb4t" is discouraged (2 uses).
 New usage of "nfsb4tALT" is discouraged (1 uses).
 New usage of "nfsbOLD" is discouraged (0 uses).
 New usage of "nfsbc" is discouraged (4 uses).
