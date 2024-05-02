@@ -5973,6 +5973,12 @@
 "elhmop" is used by "idhmop".
 "elhmop" is used by "lnophmi".
 "elhmop" is used by "pjhmopi".
+"eliminable-velab" is used by "eliminable-abelab".
+"eliminable-velab" is used by "eliminable-abeqab".
+"eliminable-velab" is used by "eliminable-abeqv".
+"eliminable-velab" is used by "eliminable-veqab".
+"eliminable-veqab" is used by "eliminable-abelab".
+"eliminable-veqab" is used by "eliminable-abelv".
 "elimnv" is used by "elimph".
 "elimnvu" is used by "ajfun".
 "elimnvu" is used by "imsmet".
@@ -15999,6 +16005,12 @@ New usage of "elghomOLD" is discouraged (5 uses).
 New usage of "elghomlem1OLD" is discouraged (1 uses).
 New usage of "elghomlem2OLD" is discouraged (1 uses).
 New usage of "elhmop" is discouraged (10 uses).
+New usage of "eliminable-abelab" is discouraged (0 uses).
+New usage of "eliminable-abelv" is discouraged (0 uses).
+New usage of "eliminable-abeqab" is discouraged (0 uses).
+New usage of "eliminable-abeqv" is discouraged (0 uses).
+New usage of "eliminable-velab" is discouraged (4 uses).
+New usage of "eliminable-veqab" is discouraged (2 uses).
 New usage of "eliminable1" is discouraged (0 uses).
 New usage of "eliminable2a" is discouraged (0 uses).
 New usage of "eliminable2b" is discouraged (0 uses).
@@ -19578,6 +19590,12 @@ Proof modification of "elex2VD" is discouraged (59 steps).
 Proof modification of "elghomOLD" is discouraged (117 steps).
 Proof modification of "elghomlem1OLD" is discouraged (232 steps).
 Proof modification of "elghomlem2OLD" is discouraged (195 steps).
+Proof modification of "eliminable-abelab" is discouraged (57 steps).
+Proof modification of "eliminable-abelv" is discouraged (48 steps).
+Proof modification of "eliminable-abeqab" is discouraged (50 steps).
+Proof modification of "eliminable-abeqv" is discouraged (41 steps).
+Proof modification of "eliminable-velab" is discouraged (4 steps).
+Proof modification of "eliminable-veqab" is discouraged (41 steps).
 Proof modification of "eliminable1" is discouraged (4 steps).
 Proof modification of "eliminable2a" is discouraged (7 steps).
 Proof modification of "eliminable2b" is discouraged (7 steps).
