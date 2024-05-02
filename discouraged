@@ -3173,7 +3173,6 @@
 "cbval" is used by "cbvex".
 "cbval" is used by "sb8".
 "cbval2" is used by "cbvex2".
-"cbval2vv" is used by "brfi1indALT".
 "cbvald" is used by "axacnd".
 "cbvald" is used by "axacndlem5".
 "cbvald" is used by "axextdist".
@@ -3227,7 +3226,6 @@
 "cbvrab" is used by "cbvrabvOLD".
 "cbvrabcsf" is used by "cbvrabv2".
 "cbvral" is used by "cbviing".
-"cbvral" is used by "cbvral2".
 "cbvral" is used by "cbvralsv".
 "cbvral" is used by "cbvralv".
 "cbvral" is used by "ralrnmpt".
@@ -3238,11 +3236,9 @@
 "cbvralf" is used by "cbvrexf".
 "cbvralv" is used by "cbvral2v".
 "cbvralv" is used by "cbvral3v".
-"cbvralv" is used by "frgrwopreglem5ALT".
 "cbvreu" is used by "cbvreuv".
 "cbvreu" is used by "cbvrmo".
 "cbvrex" is used by "cbviung".
-"cbvrex" is used by "cbvrex2".
 "cbvrex" is used by "cbvrexsv".
 "cbvrex" is used by "cbvrexv".
 "cbvrex" is used by "cbvrmo".
@@ -4996,8 +4992,6 @@
 "dfhnorm2" is used by "hilnormi".
 "dfhnorm2" is used by "normf".
 "dfhnorm2" is used by "normval".
-"dfich2ai" is used by "dfich2OLD".
-"dfich2bi" is used by "dfich2OLD".
 "dfid2" is used by "fsplitOLD".
 "dfid3" is used by "dfid2".
 "dfiop2" is used by "hoico1".
@@ -5441,7 +5435,6 @@
 "drnfc1" is used by "nfriotad".
 "drngoi" is used by "dvrunz".
 "drngoi" is used by "fldcrng".
-"drsb1" is used by "ichnfimlem2".
 "drsb1" is used by "iotaeq".
 "drsb1" is used by "sb2ae".
 "drsb1" is used by "sbco3".
@@ -10001,7 +9994,7 @@
 "nfcsb" is used by "cbvreucsf".
 "nfcsb" is used by "elfvmptrab1".
 "nfcsb" is used by "elovmporab1".
-"nfcsb" is used by "nfsum".
+"nfcsb" is used by "nfsumOLD".
 "nfcsbd" is used by "nfcsb".
 "nfcvf" is used by "axacnd".
 "nfcvf" is used by "axacndlem4".
@@ -10083,7 +10076,7 @@
 "nfeud2" is used by "nfeud".
 "nfeud2" is used by "nfreud".
 "nfexd2" is used by "nfeud2".
-"nfiota" is used by "nfsum".
+"nfiota" is used by "nfsumOLD".
 "nfiotad" is used by "nfiota".
 "nfiotad" is used by "nfriotad".
 "nfmo" is used by "2euex".
@@ -10173,7 +10166,6 @@
 "nfsb" is used by "cbvreucsf".
 "nfsb" is used by "cbvrexsv".
 "nfsb" is used by "cbvriota".
-"nfsb" is used by "dfich2OLD".
 "nfsb" is used by "hbsb".
 "nfsb" is used by "sb10f".
 "nfsb" is used by "sb8eu".
@@ -10186,7 +10178,6 @@
 "nfsb4" is used by "nfsbOLD".
 "nfsb4" is used by "sbco2".
 "nfsb4ALT" is used by "sbco2ALT".
-"nfsb4t" is used by "ichnfimlem1".
 "nfsb4t" is used by "nfsb4".
 "nfsb4t" is used by "nfsbd".
 "nfsb4tALT" is used by "nfsb4ALT".
@@ -14909,7 +14900,7 @@ New usage of "cbval" is discouraged (5 uses).
 New usage of "cbval2" is discouraged (1 uses).
 New usage of "cbval2OLD" is discouraged (0 uses).
 New usage of "cbval2vOLD" is discouraged (0 uses).
-New usage of "cbval2vv" is discouraged (1 uses).
+New usage of "cbval2vv" is discouraged (0 uses).
 New usage of "cbvald" is discouraged (16 uses).
 New usage of "cbvaldva" is discouraged (1 uses).
 New usage of "cbvalv" is discouraged (3 uses).
@@ -14941,18 +14932,18 @@ New usage of "cbvrab" is discouraged (1 uses).
 New usage of "cbvrabcsf" is discouraged (1 uses).
 New usage of "cbvrabv2" is discouraged (0 uses).
 New usage of "cbvrabvOLD" is discouraged (0 uses).
-New usage of "cbvral" is discouraged (5 uses).
+New usage of "cbvral" is discouraged (4 uses).
 New usage of "cbvral2v" is discouraged (1 uses).
 New usage of "cbvral3v" is discouraged (0 uses).
 New usage of "cbvralcsf" is discouraged (2 uses).
 New usage of "cbvralf" is discouraged (2 uses).
 New usage of "cbvralsv" is discouraged (0 uses).
-New usage of "cbvralv" is discouraged (3 uses).
+New usage of "cbvralv" is discouraged (2 uses).
 New usage of "cbvralv2" is discouraged (0 uses).
 New usage of "cbvreu" is discouraged (2 uses).
 New usage of "cbvreucsf" is discouraged (0 uses).
 New usage of "cbvreuv" is discouraged (0 uses).
-New usage of "cbvrex" is discouraged (5 uses).
+New usage of "cbvrex" is discouraged (4 uses).
 New usage of "cbvrex2v" is discouraged (0 uses).
 New usage of "cbvrexcsf" is discouraged (1 uses).
 New usage of "cbvrexdva2OLD" is discouraged (0 uses).
@@ -15577,9 +15568,6 @@ New usage of "dfch2" is discouraged (0 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfeu" is discouraged (0 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
-New usage of "dfich2OLD" is discouraged (0 uses).
-New usage of "dfich2ai" is discouraged (1 uses).
-New usage of "dfich2bi" is discouraged (1 uses).
 New usage of "dfid2" is discouraged (1 uses).
 New usage of "dfid3" is discouraged (1 uses).
 New usage of "dfiop2" is discouraged (3 uses).
@@ -15783,7 +15771,7 @@ New usage of "drnfc1OLD" is discouraged (0 uses).
 New usage of "drnfc2" is discouraged (0 uses).
 New usage of "drngcatALTV" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
-New usage of "drsb1" is discouraged (4 uses).
+New usage of "drsb1" is discouraged (3 uses).
 New usage of "dtruALT" is discouraged (0 uses).
 New usage of "dtruALT2" is discouraged (0 uses).
 New usage of "dtrucor2" is discouraged (0 uses).
@@ -17402,19 +17390,19 @@ New usage of "nfrmod" is discouraged (0 uses).
 New usage of "nfs1" is discouraged (2 uses).
 New usage of "nfsab1OLD" is discouraged (0 uses).
 New usage of "nfsabg" is discouraged (1 uses).
-New usage of "nfsb" is discouraged (18 uses).
+New usage of "nfsb" is discouraged (17 uses).
 New usage of "nfsb2" is discouraged (4 uses).
 New usage of "nfsb2ALT" is discouraged (1 uses).
 New usage of "nfsb4" is discouraged (2 uses).
 New usage of "nfsb4ALT" is discouraged (1 uses).
-New usage of "nfsb4t" is discouraged (3 uses).
+New usage of "nfsb4t" is discouraged (2 uses).
 New usage of "nfsb4tALT" is discouraged (1 uses).
 New usage of "nfsbOLD" is discouraged (0 uses).
 New usage of "nfsbc" is discouraged (4 uses).
 New usage of "nfsbcd" is discouraged (3 uses).
 New usage of "nfsbd" is discouraged (4 uses).
 New usage of "nfsbvOLD" is discouraged (0 uses).
-New usage of "nfsum" is discouraged (0 uses).
+New usage of "nfsumOLD" is discouraged (0 uses).
 New usage of "nfunidALT" is discouraged (0 uses).
 New usage of "nfunidALT2" is discouraged (0 uses).
 New usage of "nic-ax" is discouraged (7 uses).
@@ -19296,7 +19284,7 @@ Proof modification of "bj-xpima1snALT" is discouraged (25 steps).
 Proof modification of "bj-xpima2sn" is discouraged (23 steps).
 Proof modification of "bj-xpnzex" is discouraged (71 steps).
 Proof modification of "bj-zfauscl" is discouraged (65 steps).
-Proof modification of "brfi1indALT" is discouraged (789 steps).
+Proof modification of "brfi1indALT" is discouraged (741 steps).
 Proof modification of "brfvidRP" is discouraged (92 steps).
 Proof modification of "c0exALT" is discouraged (15 steps).
 Proof modification of "cases2ALT" is discouraged (88 steps).
@@ -19378,9 +19366,6 @@ Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
-Proof modification of "dfich2OLD" is discouraged (134 steps).
-Proof modification of "dfich2ai" is discouraged (140 steps).
-Proof modification of "dfich2bi" is discouraged (121 steps).
 Proof modification of "dfiun2gOLD" is discouraged (134 steps).
 Proof modification of "dfmo" is discouraged (44 steps).
 Proof modification of "dfnul2OLD" is discouraged (44 steps).
@@ -20060,6 +20045,7 @@ Proof modification of "nfsb4ALT" is discouraged (23 steps).
 Proof modification of "nfsb4tALT" is discouraged (119 steps).
 Proof modification of "nfsbOLD" is discouraged (23 steps).
 Proof modification of "nfsbvOLD" is discouraged (29 steps).
+Proof modification of "nfsumOLD" is discouraged (216 steps).
 Proof modification of "nfunidALT" is discouraged (33 steps).
 Proof modification of "nfunidALT2" is discouraged (49 steps).
 Proof modification of "nic-ax" is discouraged (142 steps).
