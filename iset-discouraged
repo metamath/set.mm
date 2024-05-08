@@ -177,6 +177,35 @@
 "reapval" is used by "reaplt".
 "reapval" is used by "reapti".
 "reapval" is used by "recexre".
+"rgen2a" is used by "1domsn".
+"rgen2a" is used by "axaddf".
+"rgen2a" is used by "axmulf".
+"rgen2a" is used by "cnref1o".
+"rgen2a" is used by "ecopover".
+"rgen2a" is used by "ecopoverg".
+"rgen2a" is used by "eucalgf".
+"rgen2a" is used by "fzof".
+"rgen2a" is used by "gcdf".
+"rgen2a" is used by "hmeofn".
+"rgen2a" is used by "ioof".
+"rgen2a" is used by "ismeti".
+"rgen2a" is used by "isoid".
+"rgen2a" is used by "issmo".
+"rgen2a" is used by "negiso".
+"rgen2a" is used by "oawordriexmid".
+"rgen2a" is used by "onintexmid".
+"rgen2a" is used by "ordsucunielexmid".
+"rgen2a" is used by "peano4nninf".
+"rgen2a" is used by "qnnen".
+"rgen2a" is used by "qredeu".
+"rgen2a" is used by "qtopbasss".
+"rgen2a" is used by "reeff1".
+"rgen2a" is used by "strsetsid".
+"rgen2a" is used by "subf".
+"rgen2a" is used by "tgqioo".
+"rgen2a" is used by "unfiexmid".
+"rgen2a" is used by "xaddf".
+"rgen2a" is used by "xrnegiso".
 "sbbidh" is used by "sbcomxyyz".
 "sbiedh" is used by "sbcomxyyz".
 "sbiedh" is used by "sbied".
@@ -328,6 +357,7 @@ New usage of "rdgivallem" is discouraged (1 uses).
 New usage of "reapti" is discouraged (3 uses).
 New usage of "reapval" is discouraged (4 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
+New usage of "rgen2a" is discouraged (29 uses).
 New usage of "ruALT" is discouraged (0 uses).
 New usage of "sbbidh" is discouraged (1 uses).
 New usage of "sbiedh" is discouraged (3 uses).
