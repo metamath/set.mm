@@ -12565,7 +12565,6 @@
 "sbco" is used by "sbid2".
 "sbco2" is used by "cbvab".
 "sbco2" is used by "clelsb3f".
-"sbco2" is used by "clelsb3fOLD".
 "sbco2" is used by "sb7f".
 "sbco2" is used by "sbcco".
 "sbco2" is used by "sbco2d".
@@ -12615,7 +12614,6 @@
 "sbie" is used by "cbvreu".
 "sbie" is used by "cbvreucsf".
 "sbie" is used by "cbvriota".
-"sbie" is used by "clelsb3fOLD".
 "sbie" is used by "nd1".
 "sbie" is used by "nd2".
 "sbie" is used by "nfcdeq".
@@ -14004,8 +14002,6 @@ New usage of "5oalem6" is discouraged (1 uses).
 New usage of "5oalem7" is discouraged (1 uses).
 New usage of "9p10ne21fool" is discouraged (0 uses).
 New usage of "a1ii" is discouraged (0 uses).
-New usage of "abbi2dvOLD" is discouraged (0 uses).
-New usage of "abbi2iOLD" is discouraged (0 uses).
 New usage of "abbiOLD" is discouraged (0 uses).
 New usage of "abeq2fOLD" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (4 uses).
@@ -15257,7 +15253,6 @@ New usage of "clel5OLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
 New usage of "clelsb3f" is discouraged (0 uses).
-New usage of "clelsb3fOLD" is discouraged (0 uses).
 New usage of "clelsb3vOLD" is discouraged (0 uses).
 New usage of "cleqfOLD" is discouraged (0 uses).
 New usage of "clmgmOLD" is discouraged (1 uses).
@@ -18328,7 +18323,7 @@ New usage of "sbcim2gVD" is discouraged (0 uses).
 New usage of "sbcnestg" is discouraged (1 uses).
 New usage of "sbcnestgf" is discouraged (2 uses).
 New usage of "sbco" is discouraged (2 uses).
-New usage of "sbco2" is discouraged (6 uses).
+New usage of "sbco2" is discouraged (5 uses).
 New usage of "sbco2ALT" is discouraged (1 uses).
 New usage of "sbco2d" is discouraged (2 uses).
 New usage of "sbco3" is discouraged (1 uses).
@@ -18365,7 +18360,7 @@ New usage of "sbi2vOLD" is discouraged (0 uses).
 New usage of "sbid2" is discouraged (2 uses).
 New usage of "sbid2v" is discouraged (0 uses).
 New usage of "sbidm" is discouraged (0 uses).
-New usage of "sbie" is discouraged (20 uses).
+New usage of "sbie" is discouraged (19 uses).
 New usage of "sbieALT" is discouraged (1 uses).
 New usage of "sbied" is discouraged (3 uses).
 New usage of "sbiedALT" is discouraged (1 uses).
@@ -18942,8 +18937,6 @@ Proof modification of "3ornot23" is discouraged (28 steps).
 Proof modification of "3ornot23VD" is discouraged (74 steps).
 Proof modification of "9p10ne21fool" is discouraged (33 steps).
 Proof modification of "a1ii" is discouraged (1 steps).
-Proof modification of "abbi2dvOLD" is discouraged (24 steps).
-Proof modification of "abbi2iOLD" is discouraged (18 steps).
 Proof modification of "abbiOLD" is discouraged (51 steps).
 Proof modification of "abeq2fOLD" is discouraged (46 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
@@ -19314,7 +19307,6 @@ Proof modification of "chordthmALT" is discouraged (440 steps).
 Proof modification of "clel5OLD" is discouraged (46 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleljustALT2" is discouraged (25 steps).
-Proof modification of "clelsb3fOLD" is discouraged (65 steps).
 Proof modification of "clelsb3vOLD" is discouraged (54 steps).
 Proof modification of "cleqfOLD" is discouraged (15 steps).
 Proof modification of "clmgmOLD" is discouraged (50 steps).
