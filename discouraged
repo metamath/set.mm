@@ -18391,6 +18391,7 @@ New usage of "sbtrt" is discouraged (1 uses).
 New usage of "sbtvOLD" is discouraged (0 uses).
 New usage of "scmateALT" is discouraged (0 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
+New usage of "seqp1iOLD" is discouraged (0 uses).
 New usage of "setrec1lem1" is discouraged (3 uses).
 New usage of "setrec1lem2" is discouraged (1 uses).
 New usage of "setrec1lem3" is discouraged (1 uses).
@@ -20338,6 +20339,7 @@ Proof modification of "sbtALT" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "sbtvOLD" is discouraged (31 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
+Proof modification of "seqp1iOLD" is discouraged (20 steps).
 Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comtVD" is discouraged (42 steps).
