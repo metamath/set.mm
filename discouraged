@@ -3162,7 +3162,6 @@
 "cbv3" is used by "cbv1".
 "cbv3" is used by "cbv3h".
 "cbv3" is used by "cbval".
-"cbvab" is used by "cbvabvOLD".
 "cbvab" is used by "cbvrab".
 "cbvab" is used by "cbvrabcsf".
 "cbvab" is used by "cbvsbc".
@@ -14894,8 +14893,7 @@ New usage of "cbv2OLD" is discouraged (0 uses).
 New usage of "cbv2h" is discouraged (2 uses).
 New usage of "cbv3" is discouraged (4 uses).
 New usage of "cbv3h" is discouraged (0 uses).
-New usage of "cbvab" is discouraged (5 uses).
-New usage of "cbvabvOLD" is discouraged (0 uses).
+New usage of "cbvab" is discouraged (4 uses).
 New usage of "cbval" is discouraged (5 uses).
 New usage of "cbval2" is discouraged (1 uses).
 New usage of "cbval2OLD" is discouraged (0 uses).
@@ -17286,7 +17284,6 @@ New usage of "mobidvALT" is discouraged (0 uses).
 New usage of "mobiiOLD" is discouraged (0 uses).
 New usage of "moexex" is discouraged (2 uses).
 New usage of "moexexv" is discouraged (0 uses).
-New usage of "moimiOLD" is discouraged (0 uses).
 New usage of "mpjao3danOLD" is discouraged (0 uses).
 New usage of "mpteq12dvOLD" is discouraged (0 uses).
 New usage of "mptresidOLD" is discouraged (0 uses).
@@ -19279,7 +19276,6 @@ Proof modification of "c0exALT" is discouraged (15 steps).
 Proof modification of "cases2ALT" is discouraged (88 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbv2OLD" is discouraged (40 steps).
-Proof modification of "cbvabvOLD" is discouraged (12 steps).
 Proof modification of "cbval2OLD" is discouraged (85 steps).
 Proof modification of "cbval2vOLD" is discouraged (85 steps).
 Proof modification of "cbvalvOLD" is discouraged (53 steps).
@@ -20009,7 +20005,6 @@ Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
 Proof modification of "mo4OLD" is discouraged (9 steps).
 Proof modification of "mobidvALT" is discouraged (48 steps).
 Proof modification of "mobiiOLD" is discouraged (17 steps).
-Proof modification of "moimiOLD" is discouraged (17 steps).
 Proof modification of "mpjao3danOLD" is discouraged (29 steps).
 Proof modification of "mpteq12dvOLD" is discouraged (18 steps).
 Proof modification of "mptresidOLD" is discouraged (28 steps).
