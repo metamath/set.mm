@@ -108,6 +108,15 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+12-May-24 ioosscn   [same]      moved from GS's mathbox to main set.mm
+12-May-24 iccssred  [same]      moved from GS's mathbox to main set.mm
+12-May-24 cncfcompt2  [same]    moved from GS's mathbox to main set.mm
+12-May-24 idcncf    [same]      moved from JM's mathbox to main set.mm
+12-May-24 sub1cncf  [same]      moved from JM's mathbox to main set.mm
+12-May-24 sub2cncf  [same]      moved from JM's mathbox to main set.mm
+12-May-24 addcncf   [same]      moved from GS's mathbox to main set.mm
+12-May-24 subcncf   [same]      moved from GS's mathbox to main set.mm
+12-May-24 dvmptresicc [same]    moved from GS's mathbox to main set.mm
 29-Apr-24 elunitcn  [same]      moved from TA's mathbox to main set.mm
 29-Apr-24 elunitrn  [same]      moved from TA's mathbox to main set.mm
 29-Apr-24 unitsscn  [same]      moved from TA's mathbox to main set.mm
