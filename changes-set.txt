@@ -83,7 +83,6 @@ proposed  syl5ibrcom imbitrridcom
 proposed  syl5bb    bitrid      compare to bitri or bitrd
 proposed  syl5rbb   bitr2id     compare to bitr2i or bitr2d
 proposed  syl5bbr   bitr3id     compare to bitr3i or bitr3d
-proposed  syl5rbbr  bitr3di     hypotheses would be switched
 proposed  syl5eq    eqtrid      compare to eqtri or eqtrd
 proposed  syl5req   eqtr2id     compare to eqtr2i or eqtr2d
 proposed  syl5eqr   eqtr3id     compare to eqtr3i or eqtr3d
@@ -108,6 +107,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+13-May-24 syl5rbbr  bitr3di     order of hypotheses is switched
  8-May-24 fexd      [same]      moved from GS's mathbox to main set.mm
 29-Apr-24 elunitcn  [same]      moved from TA's mathbox to main set.mm
 29-Apr-24 elunitrn  [same]      moved from TA's mathbox to main set.mm
