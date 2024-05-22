@@ -11374,30 +11374,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>reeff1olem</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof depends on ivth (the Intermediate
-  Value Theorem).  Apparently, ~ ivthinc would suffice
-  so this may be provable.</td>
-</tr>
-
-<tr>
-  <td>reeff1o</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses reeff1olem</td>
-</tr>
-
-<tr>
   <td>reefiso</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses reeff1o and the converse of
-  ~ efltim</td>
+  <td>the set.mm proof uses the converse of ~ efltim</td>
 </tr>
 
 <tr>
   <td>efcvx</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses reeff1o , reefiso , dvres , dvres3 ,
+  <td>the set.mm proof uses reefiso , dvres , dvres3 ,
   iccntr , and dvcvx</td>
 </tr>
 
@@ -11502,6 +11487,107 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>tanregt0</td>
   <td><i>none</i></td>
   <td>the set.mm proof relies on cosne0 , rpcoshcl , rptanhcl , and tanhbnd</td>
+</tr>
+
+<tr>
+  <td>efgh</td>
+  <td><i>none</i></td>
+  <td>depends on SubGrp and CCfld</td>
+</tr>
+
+<tr>
+  <td>efif1o</td>
+  <td><i>none</i></td>
+  <td>depends on complex square root</td>
+</tr>
+
+<tr>
+  <td>efifo</td>
+  <td><i>none</i></td>
+  <td>depends on efif1o</td>
+</tr>
+
+<tr>
+  <td>eff1o , efabl , efsubm , circgrp , circsubm</td>
+  <td><i>none</i></td>
+</tr>
+
+<tr>
+  <td>df-log</td>
+  <td>~ df-relog</td>
+</tr>
+
+<tr>
+  <td>df-cxp</td>
+  <td><i>none yet</i></td>
+  <td>the set.mm definition works best if complex number
+  equality is decidable</td>
+</tr>
+
+<tr>
+  <td>logrn , ellogrn , dflog2</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>relogrn</td>
+  <td><i>none</i></td>
+  <td>Should be provable given ~ reeff1o but perhaps it is better
+  to avoid the theorems involving ` ran log ` from set.mm because
+  they would mean something different with ~ df-relog than with
+  the set.mm definition.</td>
+</tr>
+
+<tr>
+  <td>logrncn , eff1o2 , logf1o</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logrncl , logcl , logimcl , logcld , logimcld , logimclad ,
+  abslogimle , logrnaddcl</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>eflog , logeq0im1 , logccne0</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logne0</td>
+  <td><i>none</i></td>
+  <td>probably provable (the version with not equal changed to apart
+  would probably be more helpful), but may need theorems such as
+  logltb</td>
+</tr>
+
+<tr>
+  <td>logef</td>
+  <td>~ relogef</td>
+</tr>
+
+<tr>
+  <td>logeftb</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logneg , logm1 , lognegb</td>
+  <td><i>none</i></td>
+  <td>See ~ df-relog comment for discussion of complex logarithms
+  (including logarithms on negative reals, since iset.mm only
+  defines the logarithm on ` RR+ ` ).</td>
+</tr>
+
+<tr>
+  <td>irrdiff</td>
+  <td>~ apdiff</td>
 </tr>
 
 </TABLE>
