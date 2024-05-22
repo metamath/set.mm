@@ -107,6 +107,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-May-24 2exp5     [same]      moved from AV's mathbox to main set.mm
 16-May-24 2exp7     [same]      moved from AV's mathbox to main set.mm
 13-May-24 syl5rbbr  bitr3di     order of hypotheses is switched
 12-May-24 ioosscn   [same]      moved from GS's mathbox to main set.mm
