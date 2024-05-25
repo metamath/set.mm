@@ -106,6 +106,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+25-May-24 suppcofnd ---         deleted; its sole usage now uses
+                                suppcoss
 23-May-24 syl5bbr   bitr3id     compare to bitr3i or bitr3d
 23-May-24 elfzd     [same]      moved from GS's mathbox to main set.mm
 23-May-24 elfelzd   [same]      moved from GS's mathbox to main set.mm
