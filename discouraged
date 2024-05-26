@@ -5427,7 +5427,6 @@
 "drnf2" is used by "nfsb4tALT".
 "drnfc1" is used by "bj-nfcsym".
 "drnfc1" is used by "nfabd2".
-"drnfc1" is used by "nfabd2OLD".
 "drnfc1" is used by "nfcvb".
 "drnfc1" is used by "nfriotad".
 "drngoi" is used by "dvrunz".
@@ -10118,7 +10117,6 @@
 "nfnae" is used by "distel".
 "nfnae" is used by "dvelimf".
 "nfnae" is used by "nfabd2".
-"nfnae" is used by "nfabd2OLD".
 "nfnae" is used by "nfald2".
 "nfnae" is used by "nfriotad".
 "nfnae" is used by "nfsb4t".
@@ -10192,7 +10190,6 @@
 "nfsbcd" is used by "nfsbc".
 "nfsbcd" is used by "sbcnestgf".
 "nfsbd" is used by "nfabd".
-"nfsbd" is used by "nfabd2OLD".
 "nfsbd" is used by "nfsb".
 "nfsbd" is used by "wl-sb8eut".
 "nic-ax" is used by "lukshef-ax1".
@@ -15763,7 +15760,7 @@ New usage of "drex2" is discouraged (4 uses).
 New usage of "drhmsubcALTV" is discouraged (1 uses).
 New usage of "drnf1" is discouraged (3 uses).
 New usage of "drnf2" is discouraged (3 uses).
-New usage of "drnfc1" is discouraged (5 uses).
+New usage of "drnfc1" is discouraged (4 uses).
 New usage of "drnfc2" is discouraged (0 uses).
 New usage of "drngcatALTV" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
@@ -16037,6 +16034,7 @@ New usage of "elpwOLD" is discouraged (0 uses).
 New usage of "elpwgOLD" is discouraged (0 uses).
 New usage of "elpwgded" is discouraged (2 uses).
 New usage of "elpwgdedVD" is discouraged (1 uses).
+New usage of "elpwi2OLD" is discouraged (0 uses).
 New usage of "elreal" is discouraged (7 uses).
 New usage of "elreal2" is discouraged (3 uses).
 New usage of "elringchomALTV" is discouraged (1 uses).
@@ -17341,7 +17339,6 @@ New usage of "nfa1-o" is discouraged (4 uses).
 New usage of "nfaba1g" is discouraged (0 uses).
 New usage of "nfabd" is discouraged (5 uses).
 New usage of "nfabd2" is discouraged (2 uses).
-New usage of "nfabd2OLD" is discouraged (0 uses).
 New usage of "nfabg" is discouraged (3 uses).
 New usage of "nfae" is discouraged (22 uses).
 New usage of "nfald2" is discouraged (6 uses).
@@ -17374,7 +17371,7 @@ New usage of "nfixp" is discouraged (0 uses).
 New usage of "nfmo" is discouraged (3 uses).
 New usage of "nfmod" is discouraged (2 uses).
 New usage of "nfmod2" is discouraged (5 uses).
-New usage of "nfnae" is discouraged (47 uses).
+New usage of "nfnae" is discouraged (46 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
 New usage of "nfrab" is discouraged (2 uses).
@@ -17400,7 +17397,7 @@ New usage of "nfsb4tALT" is discouraged (1 uses).
 New usage of "nfsbOLD" is discouraged (0 uses).
 New usage of "nfsbc" is discouraged (4 uses).
 New usage of "nfsbcd" is discouraged (3 uses).
-New usage of "nfsbd" is discouraged (4 uses).
+New usage of "nfsbd" is discouraged (3 uses).
 New usage of "nfsbvOLD" is discouraged (0 uses).
 New usage of "nfsumOLD" is discouraged (0 uses).
 New usage of "nfunidALT" is discouraged (0 uses).
@@ -19582,6 +19579,7 @@ Proof modification of "elpwOLD" is discouraged (20 steps).
 Proof modification of "elpwgOLD" is discouraged (29 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
+Proof modification of "elpwi2OLD" is discouraged (21 steps).
 Proof modification of "elrefsymrels3" is discouraged (65 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
@@ -20017,7 +20015,6 @@ Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nelbOLD" is discouraged (81 steps).
 Proof modification of "nf5rOLD" is discouraged (22 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
-Proof modification of "nfabd2OLD" is discouraged (75 steps).
 Proof modification of "nfceqiOLD" is discouraged (21 steps).
 Proof modification of "nfcriOLD" is discouraged (11 steps).
 Proof modification of "nfcriiOLD" is discouraged (40 steps).
