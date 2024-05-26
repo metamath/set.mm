@@ -5030,6 +5030,26 @@ this implies excluded middle</TD>
   <td><i>none</i></td>
 </tr>
 
+<tr>
+  <td>ax-cc</td>
+  <td>~ cc1</td>
+</tr>
+
+<tr>
+  <td>axcc2</td>
+  <td>~ cc2</td>
+</tr>
+
+<tr>
+  <td>axcc3</td>
+  <td>~ cc3</td>
+</tr>
+
+<tr>
+  <td>axcc4</td>
+  <td>~ cc4</td>
+</tr>
+
 <TR>
   <TD>fodom , fodomnum</TD>
   <TD><I>none</I></TD>
@@ -8751,7 +8771,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>The iset.mm definition/theorem adds a decidability condition
   and an ` if ` expression (which is to deal with differences in
   using ` seq ` for finite sums).  It does function similarity to
-  the set.mm definiton of ` sum_ ` .</TD>
+  the set.mm definition of ` sum_ ` .</TD>
 </TR>
 
 <TR>
@@ -9199,18 +9219,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD><I>none</I></TD>
   <TD>Presumably feasible once finite products are better
   developed.</TD>
-</TR>
-
-<TR>
-  <TD>eflt</TD>
-  <TD>~ efltim</TD>
-  <TD>The set.mm proof of the converse relies on ltord1</TD>
-</TR>
-
-<TR>
-  <TD>efle</TD>
-  <TD>~ efler</TD>
-  <TD>The set.mm proof of the converse relies on eflt</TD>
 </TR>
 
 <TR>
@@ -11003,6 +11011,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>ivthle2</td>
+  <td>~ ivthdec</td>
+  <td>the set.mm proof uses leloe</td>
+</tr>
+
+<tr>
   <td>df-limc</td>
   <td>~ df-limced</td>
   <td>~ df-limced is adapted from ellimc3 in set.mm</td>
@@ -11348,30 +11362,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>reeff1olem</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof depends on ivth (the Intermediate
-  Value Theorem).  Apparently, ~ ivthinc would suffice
-  so this may be provable.</td>
-</tr>
-
-<tr>
-  <td>reeff1o</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses reeff1olem</td>
-</tr>
-
-<tr>
-  <td>reefiso</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses reeff1o and the converse of
-  ~ efltim</td>
-</tr>
-
-<tr>
   <td>efcvx</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses reeff1o , reefiso , dvres , dvres3 ,
+  <td>the set.mm proof uses dvres , dvres3 ,
   iccntr , and dvcvx</td>
 </tr>
 
@@ -11433,6 +11426,205 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>cosne0</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses sineq0</td>
+</tr>
+
+<tr>
+  <td>cosord</td>
+  <td>~ cosordlem , ~ cos11</td>
+  <td>presumably provable but the set.mm proof
+  uses real number trichotomy</td>
+</tr>
+
+<tr>
+  <td>sinord</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on cosord</td>
+</tr>
+
+<tr>
+  <td>recosf1o</td>
+  <td>~ ioocosf1o</td>
+  <td>the set.mm proof of recosf1o relies on ivthle2</td>
+</tr>
+
+<tr>
+  <td>resinf1o</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on recosf1o</td>
+</tr>
+
+<tr>
+  <td>tanord1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on ltord1</td>
+</tr>
+
+<tr>
+  <td>tanord</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on tanord1 , real number trichotomy, and ltord1</td>
+</tr>
+
+<tr>
+  <td>tanregt0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on cosne0 , rpcoshcl , rptanhcl , and tanhbnd</td>
+</tr>
+
+<tr>
+  <td>efgh</td>
+  <td><i>none</i></td>
+  <td>depends on SubGrp and CCfld</td>
+</tr>
+
+<tr>
+  <td>efif1o</td>
+  <td><i>none</i></td>
+  <td>depends on complex square root</td>
+</tr>
+
+<tr>
+  <td>efifo</td>
+  <td><i>none</i></td>
+  <td>depends on efif1o</td>
+</tr>
+
+<tr>
+  <td>eff1o , efabl , efsubm , circgrp , circsubm</td>
+  <td><i>none</i></td>
+</tr>
+
+<tr>
+  <td>df-log</td>
+  <td>~ df-relog</td>
+</tr>
+
+<tr>
+  <td>df-cxp</td>
+  <td><i>none yet</i></td>
+  <td>the set.mm definition works best if complex number
+  equality is decidable</td>
+</tr>
+
+<tr>
+  <td>logrn , ellogrn , dflog2</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>relogrn</td>
+  <td><i>none</i></td>
+  <td>Should be provable given ~ reeff1o but perhaps it is better
+  to avoid the theorems involving ` ran log ` from set.mm because
+  they would mean something different with ~ df-relog than with
+  the set.mm definition.</td>
+</tr>
+
+<tr>
+  <td>logrncn , eff1o2 , logf1o</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logrncl , logcl , logimcl , logcld , logimcld , logimclad ,
+  abslogimle , logrnaddcl</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>eflog , logeq0im1 , logccne0</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logne0</td>
+  <td><i>none</i></td>
+  <td>probably provable (the version with not equal changed to apart
+  would probably be more helpful), but may need theorems such as
+  logltb</td>
+</tr>
+
+<tr>
+  <td>logef</td>
+  <td>~ relogef</td>
+</tr>
+
+<tr>
+  <td>logeftb</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logneg , logm1 , lognegb</td>
+  <td><i>none</i></td>
+  <td>See ~ df-relog comment for discussion of complex logarithms
+  (including logarithms on negative reals, since iset.mm only
+  defines the logarithm on ` RR+ ` ).</td>
+</tr>
+
+<tr>
+  <td>explog</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>relog</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>reloggim</td>
+  <td><i>none</i></td>
+  <td>may be possible if more group theorems and notation
+  are available</td>
+</tr>
+
+<tr>
+  <td>logfac</td>
+  <td><i>none</i></td>
+  <td>Should be provable.  Because of the way seqhomo is used in the
+  set.mm proof, it may be necessary to special-case ` N = 1 ` and
+  start the main proof with two, or prove an analogue of ~ seq3homo
+  which allows using ` RR+ ` on one side of the equation and ` RR `
+  on the other.</td>
+</tr>
+
+<tr>
+  <td>eflogeq</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logcj , efiarg , cosargd , cosarg0d , argregt0 ,
+  argrege0 , argimgt0 , argimlt0 , logimul , logneg2 ,
+  logmul2 , logdiv2 , abslogle , tanarg</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logdivlt</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses real number trichotomy</td>
+</tr>
+
+<tr>
+  <td>logdivle</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses logdivlt</td>
+</tr>
+
+<tr>
+  <td>irrdiff</td>
+  <td>~ apdiff</td>
 </tr>
 
 </TABLE>
