@@ -17728,6 +17728,8 @@ New usage of "opelcn" is discouraged (1 uses).
 New usage of "opelopab4" is discouraged (0 uses).
 New usage of "opelopabsbALT" is discouraged (3 uses).
 New usage of "opelreal" is discouraged (8 uses).
+New usage of "opeq1OLD" is discouraged (0 uses).
+New usage of "opeq2OLD" is discouraged (0 uses).
 New usage of "opidon2OLD" is discouraged (1 uses).
 New usage of "opidonOLD" is discouraged (2 uses).
 New usage of "opnmblALT" is discouraged (0 uses).
@@ -20101,6 +20103,8 @@ Proof modification of "onfrALTlem5VD" is discouraged (320 steps).
 Proof modification of "opabresidOLD" is discouraged (50 steps).
 Proof modification of "opelopab4" is discouraged (69 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
+Proof modification of "opeq1OLD" is discouraged (73 steps).
+Proof modification of "opeq2OLD" is discouraged (68 steps).
 Proof modification of "opidon2OLD" is discouraged (80 steps).
 Proof modification of "opidonOLD" is discouraged (198 steps).
 Proof modification of "opnmblALT" is discouraged (332 steps).
