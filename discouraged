@@ -16172,6 +16172,7 @@ New usage of "fh4i" is discouraged (0 uses).
 New usage of "fimadmfoALT" is discouraged (0 uses).
 New usage of "fimaxreOLD" is discouraged (0 uses).
 New usage of "fiminreOLD" is discouraged (0 uses).
+New usage of "findOLD" is discouraged (0 uses).
 New usage of "fldcALTV" is discouraged (0 uses).
 New usage of "fldcatALTV" is discouraged (1 uses).
 New usage of "flddivrng" is discouraged (2 uses).
@@ -19658,6 +19659,7 @@ Proof modification of "festinoALT" is discouraged (24 steps).
 Proof modification of "fimadmfoALT" is discouraged (108 steps).
 Proof modification of "fimaxreOLD" is discouraged (172 steps).
 Proof modification of "fiminreOLD" is discouraged (312 steps).
+Proof modification of "findOLD" is discouraged (70 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnresiOLD" is discouraged (25 steps).
 Proof modification of "footexALT" is discouraged (2161 steps).
