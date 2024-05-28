@@ -9222,18 +9222,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
-  <TD>eflt</TD>
-  <TD>~ efltim</TD>
-  <TD>The set.mm proof of the converse relies on ltord1</TD>
-</TR>
-
-<TR>
-  <TD>efle</TD>
-  <TD>~ efler</TD>
-  <TD>The set.mm proof of the converse relies on eflt</TD>
-</TR>
-
-<TR>
   <TD>tanval</TD>
   <TD>~ tanvalap</TD>
 </TR>
@@ -11374,15 +11362,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>reefiso</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses the converse of ~ efltim</td>
-</tr>
-
-<tr>
   <td>efcvx</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses reefiso , dvres , dvres3 ,
+  <td>the set.mm proof uses dvres , dvres3 ,
   iccntr , and dvcvx</td>
 </tr>
 
@@ -11583,6 +11565,61 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>See ~ df-relog comment for discussion of complex logarithms
   (including logarithms on negative reals, since iset.mm only
   defines the logarithm on ` RR+ ` ).</td>
+</tr>
+
+<tr>
+  <td>explog</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>relog</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>reloggim</td>
+  <td><i>none</i></td>
+  <td>may be possible if more group theorems and notation
+  are available</td>
+</tr>
+
+<tr>
+  <td>logfac</td>
+  <td><i>none</i></td>
+  <td>Should be provable.  Because of the way seqhomo is used in the
+  set.mm proof, it may be necessary to special-case ` N = 1 ` and
+  start the main proof with two, or prove an analogue of ~ seq3homo
+  which allows using ` RR+ ` on one side of the equation and ` RR `
+  on the other.</td>
+</tr>
+
+<tr>
+  <td>eflogeq</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logcj , efiarg , cosargd , cosarg0d , argregt0 ,
+  argrege0 , argimgt0 , argimlt0 , logimul , logneg2 ,
+  logmul2 , logdiv2 , abslogle , tanarg</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logdivlt</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses real number trichotomy</td>
+</tr>
+
+<tr>
+  <td>logdivle</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses logdivlt</td>
 </tr>
 
 <tr>
