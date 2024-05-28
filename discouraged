@@ -16208,6 +16208,8 @@ New usage of "fundcmpsurinjALT" is discouraged (0 uses).
 New usage of "funop" is discouraged (2 uses).
 New usage of "funopg" is discouraged (0 uses).
 New usage of "funopsn" is discouraged (2 uses).
+New usage of "fveq1OLD" is discouraged (0 uses).
+New usage of "fveq2OLD" is discouraged (0 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
 New usage of "gcdmultipleOLD" is discouraged (0 uses).
 New usage of "gcdmultiplezOLD" is discouraged (0 uses).
@@ -19829,6 +19831,8 @@ Proof modification of "frgrwopreglem5ALT" is discouraged (519 steps).
 Proof modification of "fsplitOLD" is discouraged (234 steps).
 Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "fundcmpsurinjALT" is discouraged (221 steps).
+Proof modification of "fveq1OLD" is discouraged (41 steps).
+Proof modification of "fveq2OLD" is discouraged (41 steps).
 Proof modification of "fvilbdRP" is discouraged (27 steps).
 Proof modification of "fvimacnvALT" is discouraged (102 steps).
 Proof modification of "gcdmultipleOLD" is discouraged (348 steps).
