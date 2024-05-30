@@ -15733,6 +15733,7 @@ New usage of "dmdoc2i" is discouraged (2 uses).
 New usage of "dmdsl3" is discouraged (4 uses).
 New usage of "dmdsym" is discouraged (1 uses).
 New usage of "dmmp" is discouraged (3 uses).
+New usage of "dmmpogaOLD" is discouraged (0 uses).
 New usage of "dmmulpi" is discouraged (6 uses).
 New usage of "dmmulsr" is discouraged (3 uses).
 New usage of "dmplp" is discouraged (9 uses).
@@ -16159,9 +16160,12 @@ New usage of "exlimexi" is discouraged (2 uses).
 New usage of "exlimimddOLD" is discouraged (0 uses).
 New usage of "expcomdg" is discouraged (0 uses).
 New usage of "f1cofveqaeqALT" is discouraged (0 uses).
+New usage of "f1dmOLD" is discouraged (0 uses).
+New usage of "f1eqcocnvOLD" is discouraged (0 uses).
 New usage of "f1oweALT" is discouraged (0 uses).
 New usage of "f1rhm0to0ALT" is discouraged (0 uses).
 New usage of "falnorfalOLD" is discouraged (0 uses).
+New usage of "fdmOLD" is discouraged (0 uses).
 New usage of "festinoALT" is discouraged (0 uses).
 New usage of "fh1" is discouraged (3 uses).
 New usage of "fh1i" is discouraged (2 uses).
@@ -19388,6 +19392,7 @@ Proof modification of "dih2dimbALTN" is discouraged (450 steps).
 Proof modification of "dju1p1e2" is discouraged (72 steps).
 Proof modification of "dju1p1e2ALT" is discouraged (34 steps).
 Proof modification of "djuexALT" is discouraged (51 steps).
+Proof modification of "dmmpogaOLD" is discouraged (31 steps).
 Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "domepOLD" is discouraged (51 steps).
 Proof modification of "dral1ALT" is discouraged (34 steps).
@@ -19650,11 +19655,14 @@ Proof modification of "exlimddOLD" is discouraged (19 steps).
 Proof modification of "exlimexi" is discouraged (15 steps).
 Proof modification of "exlimimddOLD" is discouraged (13 steps).
 Proof modification of "f1cofveqaeqALT" is discouraged (124 steps).
+Proof modification of "f1dmOLD" is discouraged (19 steps).
+Proof modification of "f1eqcocnvOLD" is discouraged (361 steps).
 Proof modification of "f1oweALT" is discouraged (805 steps).
 Proof modification of "f1rhm0to0ALT" is discouraged (161 steps).
 Proof modification of "falimfal" is discouraged (6 steps).
 Proof modification of "falimtru" is discouraged (6 steps).
 Proof modification of "falnorfalOLD" is discouraged (28 steps).
+Proof modification of "fdmOLD" is discouraged (19 steps).
 Proof modification of "festinoALT" is discouraged (24 steps).
 Proof modification of "fimadmfoALT" is discouraged (108 steps).
 Proof modification of "fimaxreOLD" is discouraged (172 steps).
