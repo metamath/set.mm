@@ -106,6 +106,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+31-May-24 ringgrpd  [same]      moved from SN's mathbox to main set.mm
+31-May-24 crnggrpd  [same]      moved from SN's mathbox to main set.mm
+31-May-24 crngringd [same]      moved from SN's mathbox to main set.mm
 25-May-24 suppcofnd ---         deleted; its sole usage now uses
                                 suppcoss
 23-May-24 syl5bbr   bitr3id     compare to bitr3i or bitr3d
