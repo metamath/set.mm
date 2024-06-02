@@ -15981,7 +15981,6 @@ New usage of "elbdop2" is discouraged (8 uses).
 New usage of "elch0" is discouraged (14 uses).
 New usage of "elcnfn" is discouraged (3 uses).
 New usage of "elcnop" is discouraged (4 uses).
-New usage of "eldifsnneqOLD" is discouraged (0 uses).
 New usage of "eleigvec" is discouraged (2 uses).
 New usage of "eleigvec2" is discouraged (2 uses).
 New usage of "eleigveccl" is discouraged (3 uses).
@@ -19568,7 +19567,6 @@ Proof modification of "el12" is discouraged (19 steps).
 Proof modification of "el123" is discouraged (26 steps).
 Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
-Proof modification of "eldifsnneqOLD" is discouraged (35 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
