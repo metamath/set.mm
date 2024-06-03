@@ -11316,16 +11316,19 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>dvmptcl</td>
   <td>~ dvmptclx</td>
+  <td>adds a ` X C_ S ` hypothesis</td>
 </tr>
 
 <tr>
   <td>dvmptadd</td>
   <td>~ dvmptaddx</td>
+  <td>adds a ` X C_ S ` hypothesis</td>
 </tr>
 
 <tr>
   <td>dvmptmul</td>
   <td>~ dvmptmulx</td>
+  <td>adds a ` X C_ S ` hypothesis</td>
 </tr>
 
 <tr>
@@ -11343,6 +11346,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>dvmptcmul</td>
   <td>~ dvmptcmulcn</td>
+  <td>~ dvmptcmulcn is the case where both ` X ` and ` S `
+  are ` CC ` itself rather than subsets.  The set.mm proof
+  of dvmptcmul uses dvmptres2 .</td>
 </tr>
 
 <tr>
@@ -11354,16 +11360,27 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>dvmptneg</td>
   <td>~ dvmptnegcn</td>
+  <td>~ dvmptnegcn is for ` CC ` rather than a subset thereof</td>
 </tr>
 
 <tr>
   <td>dvmptsub</td>
   <td>~ dvmptsubcn</td>
+  <td>~ dvmptsubcn is for ` CC ` rather than a subset thereof</td>
 </tr>
 
 <tr>
   <td>dvmptcj</td>
   <td>~ dvmptcjx</td>
+  <td>adds a ` X C_ S ` hypothesis</td>
+</tr>
+
+<tr>
+  <td>dvmptre</td>
+  <td><i>none</i></td>
+  <td>Presumably needs a ` X C_ RR ` condition added.
+  Also, the set.mm proof relies on dvmptcmul (with
+  ` S ` set to ` RR ` ).</td>
 </tr>
 
 <tr>
