@@ -17352,6 +17352,7 @@ New usage of "nfceqiOLD" is discouraged (0 uses).
 New usage of "nfcrALT" is discouraged (0 uses).
 New usage of "nfcriOLD" is discouraged (0 uses).
 New usage of "nfcriOLDOLD" is discouraged (0 uses).
+New usage of "nfcriOLDOLDOLD" is discouraged (0 uses).
 New usage of "nfcriiOLD" is discouraged (0 uses).
 New usage of "nfcsb" is discouraged (6 uses).
 New usage of "nfcsbd" is discouraged (1 uses).
@@ -20034,8 +20035,9 @@ Proof modification of "nf5rOLD" is discouraged (22 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfceqiOLD" is discouraged (21 steps).
 Proof modification of "nfcrALT" is discouraged (20 steps).
-Proof modification of "nfcriOLD" is discouraged (67 steps).
-Proof modification of "nfcriOLDOLD" is discouraged (11 steps).
+Proof modification of "nfcriOLD" is discouraged (101 steps).
+Proof modification of "nfcriOLDOLD" is discouraged (67 steps).
+Proof modification of "nfcriOLDOLDOLD" is discouraged (11 steps).
 Proof modification of "nfcriiOLD" is discouraged (40 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfeu1ALT" is discouraged (25 steps).
