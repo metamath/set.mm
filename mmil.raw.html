@@ -11124,6 +11124,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>limcco</td>
   <td>~ limccoap</td>
+  <td>~ limccoap is only usable in the case where ` x =//= X `
+  implies R(x) ` =//= C ` so it is less general than limcco</td>
 </tr>
 
 <tr>
@@ -11421,6 +11423,18 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>dvmptfsum</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses dvmptc and dvmptres</td>
+</tr>
+
+<tr>
+  <td>dvcnvlem , dvcnv</td>
+  <td><i>none</i></td>
+  <td>Not equal would need to change to apart and
+  notation for the topology on the complex numbers would
+  change. More serisouly, the set.mm proof uses limcco .
+  Changing to ~ limccoap may
+  be possible given a condition along the lines of
+  ` A. x e. X A. y e. X ( x =//= y <-> ( F `` x ) =//= ( F `` y ) ` .
+  </td>
 </tr>
 
 <tr>
