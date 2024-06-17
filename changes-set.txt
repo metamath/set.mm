@@ -99,19 +99,21 @@ proposed  syl6bbr   bitr4di     compare to bitr4i or bitr4d
 proposed  syl6rbbr  bitr4id     hypotheses would be switched
 proposed  syl6eq    eqtrdi      compare to eqtri or eqtrd
 proposed  syl6req   eqtr2di     compare to eqtr2i or eqtr2d
-proposed  syl6eqr   eqtr4di     compare to eqtr4i or eqtr4d
 proposed  syl6reqr  eqtr4id     hypotheses would be switched
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+16-Jun-24 syl6eqr   eqtr4di     compare to eqtr4i or eqtr4d
 16-Jun-24 elrnmptd  [same]      moved from GS's mathbox to main set.mm
 10-Jun-24 bj-intss  intss2      moved from BJ's mathbox to main set.mm
  3-Jun-24 nfcriv    nfcri       dv condition was removed
 31-May-24 ringgrpd  [same]      moved from SN's mathbox to main set.mm
 31-May-24 crnggrpd  [same]      moved from SN's mathbox to main set.mm
 31-May-24 crngringd [same]      moved from SN's mathbox to main set.mm
+25-May-24 suppcofnd ---         deleted; its sole usage now uses
+                                suppcoss
 23-May-24 syl5bbr   bitr3id     compare to bitr3i or bitr3d
 23-May-24 elfzd     [same]      moved from GS's mathbox to main set.mm
 23-May-24 elfelzd   [same]      moved from GS's mathbox to main set.mm
