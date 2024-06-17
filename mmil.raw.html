@@ -10984,6 +10984,13 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>cncfmpt2ss</td>
+  <td><i>none</i></td>
+  <td>would apparently only need a change to the notation for
+  the topology on the complex numbers</td>
+</tr>
+
+<tr>
   <td>cdivcncf</td>
   <td>~ cdivcncfap</td>
 </tr>
@@ -11124,6 +11131,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>limcco</td>
   <td>~ limccoap</td>
+  <td>~ limccoap is only usable in the case where ` x =//= X `
+  implies R(x) ` =//= C ` so it is less general than limcco</td>
 </tr>
 
 <tr>
@@ -11274,6 +11283,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>dvcobr</td>
   <td>~ dvcoapbr</td>
+  <td>~ dvcoapbr adds a ` u =//= C -> ( G `` u ) =//= ( G `` C ) `
+  condition</td>
 </tr>
 
 <tr>
@@ -11381,6 +11392,76 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>Presumably needs a ` X C_ RR ` condition added.
   Also, the set.mm proof relies on dvmptcmul (with
   ` S ` set to ` RR ` ).</td>
+</tr>
+
+<tr>
+  <td>dvmptim</td>
+  <td><i>none</i></td>
+  <td>Presumably needs a ` X C_ RR ` condition added.
+  Also, the set.mm proof relies on dvmptcmul (with
+  ` S ` set to ` RR ` ).</td>
+</tr>
+
+<tr>
+  <td>dvmptntr</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvres</td>
+</tr>
+
+<tr>
+  <td>dvmptco</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvcof</td>
+</tr>
+
+<tr>
+  <td>dvrecg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvmptco</td>
+</tr>
+
+<tr>
+  <td>dvmptdiv</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvrecg</td>
+</tr>
+
+<tr>
+  <td>dvmptfsum</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvmptc and dvmptres</td>
+</tr>
+
+<tr>
+  <td>dvcnvlem , dvcnv</td>
+  <td><i>none</i></td>
+  <td>Not equal would need to change to apart and
+  notation for the topology on the complex numbers would
+  change. More seriously, the set.mm proof uses limcco .
+  Changing to ~ limccoap may
+  be possible given a condition along the lines of
+  ` A. x e. X A. y e. X ( x =//= y <-> ( F `` x ) =//= ( F `` y ) ` .
+  </td>
+</tr>
+
+<tr>
+  <td>dvexp3</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvmptres and dvmptco</td>
+</tr>
+
+<tr>
+  <td>dvle</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses iccntr , dvmptntr , dvmptsub ,
+  and dvge0</td>
+</tr>
+
+<tr>
+  <td>dvcnvre</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on compactness ( icccmp and cncfcnvcn ),
+  restntr , evthicc2 , dvres , iccntr , and dvne0</td>
 </tr>
 
 <tr>
@@ -11642,6 +11723,96 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>logdivle</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses logdivlt</td>
+</tr>
+
+<tr>
+  <td>dvrelog</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvres3 and dvcnvre</td>
+</tr>
+
+<tr>
+  <td>relogcn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvrelog</td>
+</tr>
+
+<tr>
+  <td>ellogdm , logdmn0 , logdmnrp , logdmss , logcnlem2 , logcnlem3 ,
+  logcnlem4 , logcnlem5 , logcn , dvloglem , logdmopn , logf1o2 ,
+  dvlog , dvlog2lem , dvlog2</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>advlog</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvmptid , dvmptres , dvrelog , dvmptc ,
+  and dvmptsub</td>
+</tr>
+
+<tr>
+  <td>advlogexp</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses various derivative theorems not present
+  in iset.mm</td>
+</tr>
+
+<tr>
+  <td>efopn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof makes use of the complex logarithm</td>
+</tr>
+
+<tr>
+  <td>logtayl , logtaylsum , logtayl2</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logccv</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvrelog , dvmptneg , dvmptres2 ,
+  dvcvx , and soisoi</td>
+</tr>
+
+<tr>
+  <td>dvsqrt</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof is in terms of the complex exponential,
+  but the only part being used is a positive real raised to a
+  positive real exponent, so if this can be sorted out a
+  version of the set.mm proof should work</td>
+</tr>
+
+<tr>
+  <td>resqrtcn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof is in terms of the complex exponential,
+  but this theorem should be provable one way or another</td>
+</tr>
+
+<tr>
+  <td>cxpaddle</td>
+  <td><i>none</i></td>
+  <td>although the comment calls this complex exponentiation, it
+  is really about a nonnegative real to a positive real power,
+  and therefore should be provable</td>
+</tr>
+
+<tr>
+  <td>loglesqrt</td>
+  <td><i>none</i></td>
+  <td>presumably provable, but the set.mm proof relies on
+  dvmptc , dvmptres , dvrelog , dvmptco , dvle , and relogcn</td>
+</tr>
+
+<tr>
+  <td>logrec</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
 </tr>
 
 <tr>
