@@ -11604,9 +11604,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>df-cxp</td>
-  <td><i>none yet</i></td>
-  <td>the set.mm definition works best if complex number
-  equality is decidable</td>
+  <td>~ df-rpcxp</td>
+  <td>we only define the power function for a positive real base
+  for reasons described in the ~ df-relog comment</td>
 </tr>
 
 <tr>
@@ -11776,6 +11776,123 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>the set.mm proof uses dvrelog , dvmptneg , dvmptres2 ,
   dvcvx , and soisoi</td>
+</tr>
+
+<tr>
+  <td>cxpval , cxpef</td>
+  <td>~ rpcxpef</td>
+  <td>as described at ~ df-rpcxp we only support positive real bases</td>
+</tr>
+
+<tr>
+  <td>0cxp</td>
+  <td><i>none</i></td>
+  <td>as described at ~ df-rpcxp we only support positive real bases</td>
+</tr>
+
+<tr>
+  <td>cxpexpz , cxpexp</td>
+  <td>~ cxpexpnn , ~ cxpexprp</td>
+  <td>as described at ~ df-rpcxp we only support positive real bases</td>
+</tr>
+
+<tr>
+  <td>cxp0</td>
+  <td>~ rpcxp0</td>
+  <td>as described at ~ df-rpcxp we only support positive real bases</td>
+</tr>
+
+<tr>
+  <td>cxp1</td>
+  <td>~ rpcxp1</td>
+  <td>as described at ~ df-rpcxp we only support positive real bases</td>
+</tr>
+
+<tr>
+  <td>cxpcl</td>
+  <td>~ rpcncxpcl</td>
+  <td>as described at ~ df-rpcxp we only support positive real bases</td>
+</tr>
+
+<tr>
+  <td>recxpcl</td>
+  <td>~ rpcxpcl</td>
+  <td>as described at ~ df-rpcxp we only support positive real bases</td>
+</tr>
+
+<tr>
+  <td>cxpne0</td>
+  <td>~ cxpap0</td>
+  <td>the base must be a positive real and the result changes not equal
+  to apart</td>
+</tr>
+
+<tr>
+  <td>cxpeq0</td>
+  <td><i>none</i></td>
+  <td>since we do not support a mantissa of zero, does not apply</td>
+</tr>
+
+<tr>
+  <td>cxpadd</td>
+  <td>~ rpcxpadd</td>
+</tr>
+
+<tr>
+  <td>cxpp1</td>
+  <td>~ rpcxpp1</td>
+</tr>
+
+<tr>
+  <td>cxpneg</td>
+  <td>~ rpcxpneg</td>
+</tr>
+
+<tr>
+  <td>cxpsub</td>
+  <td>~ rpcxpsub</td>
+</tr>
+
+<tr>
+  <td>cxpge0</td>
+  <td>~ rpcxpcl</td>
+  <td>we only support positive real bases</td>
+</tr>
+
+<tr>
+  <td>mulcxp</td>
+  <td>~ rpmulcxp</td>
+</tr>
+
+<tr>
+  <td>divcxp</td>
+  <td>~ rpdivcxp</td>
+</tr>
+
+<tr>
+  <td>cxpmul2</td>
+  <td>~ cxpmul plus ~ cxpexprp</td>
+</tr>
+
+<tr>
+  <td>cxproot</td>
+  <td>~ rpcxproot</td>
+</tr>
+
+<tr>
+  <td>cxpmul2z</td>
+  <td>~ cxpmul plus ~ cxpexprp</td>
+</tr>
+
+<tr>
+  <td>abscxp2</td>
+  <td>~ abscxp</td>
+</tr>
+
+<tr>
+  <td>cxplea</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses leloe</td>
 </tr>
 
 <tr>
