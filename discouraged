@@ -5001,7 +5001,6 @@
 "dfpjop" is used by "pjhmopidm".
 "dfsb1" is used by "bj-dfsb2".
 "dfsb1" is used by "drsb1".
-"dfsb1" is used by "equsb1vOLDOLD".
 "dfsb1" is used by "frege55b".
 "dfsb1" is used by "sb2vOLDOLD".
 "dfsb1" is used by "sbequ1OLD".
@@ -15566,7 +15565,7 @@ New usage of "dfiop2" is discouraged (3 uses).
 New usage of "dfiun2gOLD" is discouraged (0 uses).
 New usage of "dfmo" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
-New usage of "dfsb1" is discouraged (13 uses).
+New usage of "dfsb1" is discouraged (12 uses).
 New usage of "dfsb2" is discouraged (1 uses).
 New usage of "dfsb2ALT" is discouraged (1 uses).
 New usage of "dfsb3" is discouraged (1 uses).
@@ -16091,7 +16090,6 @@ New usage of "equsalh" is discouraged (1 uses).
 New usage of "equsb1" is discouraged (5 uses).
 New usage of "equsb1ALT" is discouraged (1 uses).
 New usage of "equsb1vOLD" is discouraged (0 uses).
-New usage of "equsb1vOLDOLD" is discouraged (0 uses).
 New usage of "equsb2" is discouraged (1 uses).
 New usage of "equsb3rOLD" is discouraged (0 uses).
 New usage of "equsex" is discouraged (2 uses).
@@ -16142,7 +16140,6 @@ New usage of "ex-natded9.20" is discouraged (0 uses).
 New usage of "ex-natded9.20-2" is discouraged (0 uses).
 New usage of "ex-natded9.26" is discouraged (0 uses).
 New usage of "ex-natded9.26-2" is discouraged (0 uses).
-New usage of "exanOLD" is discouraged (0 uses).
 New usage of "exatleN" is discouraged (1 uses).
 New usage of "exbirVD" is discouraged (0 uses).
 New usage of "exbiriVD" is discouraged (0 uses).
@@ -17344,7 +17341,6 @@ New usage of "nfae" is discouraged (22 uses).
 New usage of "nfald2" is discouraged (6 uses).
 New usage of "nfccdeq" is discouraged (0 uses).
 New usage of "nfcdeq" is discouraged (1 uses).
-New usage of "nfceqiOLD" is discouraged (0 uses).
 New usage of "nfcrALT" is discouraged (0 uses).
 New usage of "nfcriOLD" is discouraged (0 uses).
 New usage of "nfcriOLDOLD" is discouraged (0 uses).
@@ -19604,7 +19600,6 @@ Proof modification of "equs5aALT" is discouraged (25 steps).
 Proof modification of "equs5eALT" is discouraged (39 steps).
 Proof modification of "equsb1ALT" is discouraged (16 steps).
 Proof modification of "equsb1vOLD" is discouraged (17 steps).
-Proof modification of "equsb1vOLDOLD" is discouraged (32 steps).
 Proof modification of "equsb3rOLD" is discouraged (34 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
 Proof modification of "equsexvwOLD" is discouraged (36 steps).
@@ -19631,7 +19626,6 @@ Proof modification of "ex-natded9.20" is discouraged (58 steps).
 Proof modification of "ex-natded9.20-2" is discouraged (44 steps).
 Proof modification of "ex-natded9.26" is discouraged (65 steps).
 Proof modification of "ex-natded9.26-2" is discouraged (22 steps).
-Proof modification of "exanOLD" is discouraged (19 steps).
 Proof modification of "exbirVD" is discouraged (65 steps).
 Proof modification of "exbiriVD" is discouraged (70 steps).
 Proof modification of "exgenOLD" is discouraged (13 steps).
@@ -20018,7 +20012,6 @@ Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nelbOLD" is discouraged (81 steps).
 Proof modification of "nf5rOLD" is discouraged (22 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
-Proof modification of "nfceqiOLD" is discouraged (21 steps).
 Proof modification of "nfcrALT" is discouraged (20 steps).
 Proof modification of "nfcriOLD" is discouraged (101 steps).
 Proof modification of "nfcriOLDOLD" is discouraged (67 steps).
