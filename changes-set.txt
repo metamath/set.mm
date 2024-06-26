@@ -106,7 +106,12 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 16-Jun-24 syl6eqr   eqtr4di     compare to eqtr4i or eqtr4d
+16-Jun-24 fnun2d    [same]      moved from MKU's mathbox to main set.mm
+16-Jun-24 fnun1d    [same]      moved from MKU's mathbox to main set.mm
+16-Jun-24 fnund     [same]      moved from MKU's mathbox to main set.mm
+16-Jun-24 partfun   [same]      moved from TA's mathbox to main set.mm
 16-Jun-24 elrnmptd  [same]      moved from GS's mathbox to main set.mm
+15-Jun-24 resexd    [same]      moved from GS's mathbox to main set.mm
 10-Jun-24 bj-intss  intss2      moved from BJ's mathbox to main set.mm
  3-Jun-24 nfcriv    nfcri       dv condition was removed
 31-May-24 ringgrpd  [same]      moved from SN's mathbox to main set.mm
