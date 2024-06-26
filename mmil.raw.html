@@ -11779,49 +11779,49 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>cxpval , cxpef</td>
+  <td>cxpval , cxpef , cxpefd</td>
   <td>~ rpcxpef</td>
   <td>as described at ~ df-rpcxp we only support positive real bases</td>
 </tr>
 
 <tr>
-  <td>0cxp</td>
+  <td>0cxp , 0cxpd</td>
   <td><i>none</i></td>
   <td>as described at ~ df-rpcxp we only support positive real bases</td>
 </tr>
 
 <tr>
-  <td>cxpexpz , cxpexp</td>
+  <td>cxpexpz , cxpexp , cxpexpzd</td>
   <td>~ cxpexpnn , ~ cxpexprp</td>
   <td>as described at ~ df-rpcxp we only support positive real bases</td>
 </tr>
 
 <tr>
-  <td>cxp0</td>
-  <td>~ rpcxp0</td>
+  <td>cxp0 , cxp0d</td>
+  <td>~ rpcxp0 , ~ rpcxp0d</td>
   <td>as described at ~ df-rpcxp we only support positive real bases</td>
 </tr>
 
 <tr>
-  <td>cxp1</td>
-  <td>~ rpcxp1</td>
+  <td>cxp1 , cxp1d</td>
+  <td>~ rpcxp1 , ~ rpcxp1d</td>
   <td>as described at ~ df-rpcxp we only support positive real bases</td>
 </tr>
 
 <tr>
-  <td>cxpcl</td>
-  <td>~ rpcncxpcl</td>
+  <td>cxpcl , cxpcld</td>
+  <td>~ rpcncxpcl , ~ rpcncxpcld</td>
   <td>as described at ~ df-rpcxp we only support positive real bases</td>
 </tr>
 
 <tr>
-  <td>recxpcl</td>
+  <td>recxpcl , recxpcld</td>
   <td>~ rpcxpcl</td>
   <td>as described at ~ df-rpcxp we only support positive real bases</td>
 </tr>
 
 <tr>
-  <td>cxpne0</td>
+  <td>cxpne0 , cxpne0d</td>
   <td>~ cxpap0</td>
   <td>the base must be a positive real and the result changes not equal
   to apart</td>
@@ -11834,43 +11834,43 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>cxpadd</td>
+  <td>cxpadd , cxpaddd</td>
   <td>~ rpcxpadd</td>
 </tr>
 
 <tr>
-  <td>cxpp1</td>
+  <td>cxpp1 , cxpp1d</td>
   <td>~ rpcxpp1</td>
 </tr>
 
 <tr>
-  <td>cxpneg</td>
+  <td>cxpneg , cxpnegd</td>
   <td>~ rpcxpneg</td>
 </tr>
 
 <tr>
-  <td>cxpsub</td>
+  <td>cxpsub , cxpsubd</td>
   <td>~ rpcxpsub</td>
 </tr>
 
 <tr>
-  <td>cxpge0</td>
+  <td>cxpge0 , cxpge0d</td>
   <td>~ rpcxpcl</td>
   <td>we only support positive real bases</td>
 </tr>
 
 <tr>
-  <td>mulcxp</td>
+  <td>mulcxp , mulcxpd</td>
   <td>~ rpmulcxp</td>
 </tr>
 
 <tr>
-  <td>divcxp</td>
+  <td>divcxp , divcxpd</td>
   <td>~ rpdivcxp</td>
 </tr>
 
 <tr>
-  <td>cxpmul2</td>
+  <td>cxpmul2 , cxpmul2d</td>
   <td>~ cxpmul plus ~ cxpexprp</td>
 </tr>
 
@@ -11880,7 +11880,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>cxpmul2z</td>
+  <td>cxpmul2z , cxpmul2zd</td>
   <td>~ cxpmul plus ~ cxpexprp</td>
 </tr>
 
@@ -11890,18 +11890,90 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>cxplea</td>
+  <td>cxplea , cxplead</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses leloe</td>
 </tr>
 
 <tr>
+  <td>cxple2 , cxple2d</td>
+  <td>~ rpcxple2</td>
+</tr>
+
+<tr>
+  <td>cxplt2 , cxplt2d</td>
+  <td>~ rpcxplt2</td>
+</tr>
+
+<tr>
+  <td>cxple2a , cxple2ad</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses leloe</td>
+</tr>
+
+<tr>
+  <td>cxpsqrt</td>
+  <td>~ rpcxpsqrt</td>
+</tr>
+
+<tr>
+  <td>cxpsqrtth</td>
+  <td>~ rpcxpsqrtth</td>
+</tr>
+
+<tr>
+  <td>2irrexpq</td>
+  <td><i>none</i></td>
+  <td>at some point 2irrexpqALT should be intuitionizable</td>
+</tr>
+
+<tr>
+  <td>dvcxp1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvrelog , dvmptco , and dvmptres3</td>
+</tr>
+
+<tr>
+  <td>dvcxp2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dvmptco</td>
+</tr>
+
+<tr>
   <td>dvsqrt</td>
   <td><i>none</i></td>
-  <td>the set.mm proof is in terms of the complex exponential,
-  but the only part being used is a positive real raised to a
-  positive real exponent, so if this can be sorted out a
-  version of the set.mm proof should work</td>
+  <td>the set.mm proof uses dvcxp1</td>
+</tr>
+
+<tr>
+  <td>dvcncxp1</td>
+  <td><i>none</i></td>
+  <td>this is for complex bases, see dvcxp1 entry
+  concerning a positive real base</td>
+</tr>
+
+<tr>
+  <td>dvcnsqrt</td>
+  <td><i>none</i></td>
+  <td>see ~ df-rsqrt comment for discussion of complex square roots</td>
+</tr>
+
+<tr>
+  <td>cxpcn</td>
+  <td><i>none</i></td>
+  <td>as described at ~ df-rpcxp we only support positive real bases</td>
+</tr>
+
+<tr>
+  <td>cxpcn2</td>
+  <td><i>none</i></td>
+  <td>presumably provable; the obvious proof would be via relogcn</td>
+</tr>
+
+<tr>
+  <td>cxpcn3</td>
+  <td><i>none</i></td>
+  <td>as described at ~ df-rpcxp we only support positive real bases</td>
 </tr>
 
 <tr>
@@ -11912,11 +11984,27 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>sqrtcn</td>
+  <td><i>none</i></td>
+  <td>see ~ df-rsqrt comment for discussion of complex square roots</td>
+</tr>
+
+<tr>
   <td>cxpaddle</td>
   <td><i>none</i></td>
-  <td>although the comment calls this complex exponentiation, it
-  is really about a nonnegative real to a positive real power,
-  and therefore should be provable</td>
+  <td>the set.mm proof relies on leloe and other theorems we do not
+  have</td>
+</tr>
+
+<tr>
+  <td>abscxpbnd</td>
+  <td>~ rpabscxpbnd</td>
+</tr>
+
+<tr>
+  <td>root1id , root1eq1 , root1cj , cxpeq</td>
+  <td><i>none</i></td>
+  <td>as described at ~ df-rpcxp we only support positive real bases</td>
 </tr>
 
 <tr>
