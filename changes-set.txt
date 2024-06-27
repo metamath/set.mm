@@ -98,7 +98,6 @@ proposed  syl6rbb   bitr2di     compare to bitr2i or bitr2d
 proposed  syl6bbr   bitr4di     compare to bitr4i or bitr4d
 proposed  syl6rbbr  bitr4id     hypotheses would be switched
 proposed  syl6eq    eqtrdi      compare to eqtri or eqtrd
-proposed  syl6req   eqtr2di     compare to eqtr2i or eqtr2d
 proposed  syl6reqr  eqtr4id     hypotheses would be switched
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
@@ -112,9 +111,15 @@ Date      Old       New         Notes
 26-Jun-24 sscon34b  [same]      moved from RP's mathbox to main set.mm
 26-Jun-24 rcompleq  [same]      moved from RP's mathbox to main set.mm
 26-Jun-24 funresd   [same]      moved from GS's mathbox to main set.mm
-25-Jun-24 cmnmndd   [same]      moved from SN's mathbox to main set.mm
+26-Jun-24 cmnmndd   [same]      moved from SN's mathbox to main set.mm
+26-Jun-24 syl6req   eqtr2di     compare to eqtr2i or eqtr2d
 16-Jun-24 syl6eqr   eqtr4di     compare to eqtr4i or eqtr4d
+16-Jun-24 fnun2d    [same]      moved from MKU's mathbox to main set.mm
+16-Jun-24 fnun1d    [same]      moved from MKU's mathbox to main set.mm
+16-Jun-24 fnund     [same]      moved from MKU's mathbox to main set.mm
+16-Jun-24 partfun   [same]      moved from TA's mathbox to main set.mm
 16-Jun-24 elrnmptd  [same]      moved from GS's mathbox to main set.mm
+15-Jun-24 resexd    [same]      moved from GS's mathbox to main set.mm
 10-Jun-24 bj-intss  intss2      moved from BJ's mathbox to main set.mm
  3-Jun-24 nfcriv    nfcri       dv condition was removed
 31-May-24 ringgrpd  [same]      moved from SN's mathbox to main set.mm
