@@ -18556,6 +18556,7 @@ New usage of "srhmsubcALTV" is discouraged (4 uses).
 New usage of "srhmsubcALTVlem1" is discouraged (2 uses).
 New usage of "srhmsubcALTVlem2" is discouraged (1 uses).
 New usage of "sringcatALTV" is discouraged (2 uses).
+New usage of "ss2abdvALT" is discouraged (0 uses).
 New usage of "ss2abdvOLD" is discouraged (0 uses).
 New usage of "ss2abiOLD" is discouraged (0 uses).
 New usage of "ssdmd1" is discouraged (1 uses).
@@ -20360,6 +20361,7 @@ Proof modification of "spsbeOLD" is discouraged (75 steps).
 Proof modification of "spsbeOLDOLD" is discouraged (23 steps).
 Proof modification of "spsbimvOLD" is discouraged (16 steps).
 Proof modification of "spvwOLD" is discouraged (8 steps).
+Proof modification of "ss2abdvALT" is discouraged (41 steps).
 Proof modification of "ss2abdvOLD" is discouraged (23 steps).
 Proof modification of "ss2abiOLD" is discouraged (17 steps).
 Proof modification of "sselOLD" is discouraged (60 steps).
