@@ -104,6 +104,15 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 2-Jul-24 snn0d     [same]      moved from GS's mathbox to main set.mm
+26-Jun-24 rnresss   [same]      moved from GS's mathbox to main set.mm
+26-Jun-24 fndmexd   [same]      moved from RR's mathbox to main set.mm
+26-Jun-24 iunssf    [same]      moved from GS's mathbox to main set.mm
+26-Jun-24 rp-imass  resssxp     moved from RP's mathbox to main set.mm
+26-Jun-24 sscon34b  [same]      moved from RP's mathbox to main set.mm
+26-Jun-24 rcompleq  [same]      moved from RP's mathbox to main set.mm
+26-Jun-24 funresd   [same]      moved from GS's mathbox to main set.mm
+26-Jun-24 cmnmndd   [same]      moved from SN's mathbox to main set.mm
 26-Jun-24 syl6req   eqtr2di     compare to eqtr2i or eqtr2d
 16-Jun-24 syl6eqr   eqtr4di     compare to eqtr4i or eqtr4d
 16-Jun-24 fnun2d    [same]      moved from MKU's mathbox to main set.mm
