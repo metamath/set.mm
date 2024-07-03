@@ -17529,6 +17529,7 @@ New usage of "nmounbseqiALT" is discouraged (0 uses).
 New usage of "nmoxr" is discouraged (7 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nn0indALT" is discouraged (3 uses).
+New usage of "nnadjuALT" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnne0ALT" is discouraged (0 uses).
@@ -20080,6 +20081,7 @@ Proof modification of "nmopub2tALT" is discouraged (240 steps).
 Proof modification of "nmounbseqiALT" is discouraged (146 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nn0indALT" is discouraged (15 steps).
+Proof modification of "nnadjuALT" is discouraged (62 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnne0ALT" is discouraged (19 steps).
