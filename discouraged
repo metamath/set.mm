@@ -14943,6 +14943,7 @@ New usage of "ccat2s1fvwOLD" is discouraged (1 uses).
 New usage of "ccat2s1lenOLD" is discouraged (0 uses).
 New usage of "ccat2s1p1OLD" is discouraged (0 uses).
 New usage of "ccat2s1p2OLD" is discouraged (0 uses).
+New usage of "ccatfvalOLD" is discouraged (0 uses).
 New usage of "ccatlenOLD" is discouraged (2 uses).
 New usage of "ccats1val1OLD" is discouraged (0 uses).
 New usage of "ccatval1OLD" is discouraged (2 uses).
@@ -19261,6 +19262,7 @@ Proof modification of "ccat2s1fvwOLD" is discouraged (203 steps).
 Proof modification of "ccat2s1lenOLD" is discouraged (66 steps).
 Proof modification of "ccat2s1p1OLD" is discouraged (93 steps).
 Proof modification of "ccat2s1p2OLD" is discouraged (162 steps).
+Proof modification of "ccatfvalOLD" is discouraged (199 steps).
 Proof modification of "ccatlenOLD" is discouraged (119 steps).
 Proof modification of "ccats1val1OLD" is discouraged (38 steps).
 Proof modification of "ccatval1OLD" is discouraged (145 steps).
