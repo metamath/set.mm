@@ -101,6 +101,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+24-Jul-24 grpmndd   [same]      moved from SN's mathbox to main set.mm
+24-Jul-24 zringsubgval [same]   moved from AV's mathbox to main set.mm
 21-Jul-24 syl6rbbr  bitr4id     order of hypotheses is switched
  6-Jul-24 syl6eq    eqtrdi      compare to eqtri or eqtrd
  6-Jul-24 syl6reqr  eqtr4id     order of hypotheses is switched
