@@ -325,6 +325,7 @@ New usage of "cnm" is discouraged (2 uses).
 New usage of "condcOLD" is discouraged (0 uses).
 New usage of "conventions" is discouraged (0 uses).
 New usage of "csbco" is discouraged (6 uses).
+New usage of "dcapnconstALT" is discouraged (0 uses).
 New usage of "dcnnOLD" is discouraged (0 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-div" is discouraged (2 uses).
@@ -476,6 +477,7 @@ Proof modification of "bj-vprc" is discouraged (53 steps).
 Proof modification of "bj-zfpair2" is discouraged (80 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "condcOLD" is discouraged (39 steps).
+Proof modification of "dcapnconstALT" is discouraged (83 steps).
 Proof modification of "dcnnOLD" is discouraged (33 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
