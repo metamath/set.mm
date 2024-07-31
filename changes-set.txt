@@ -95,13 +95,15 @@ proposed  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
 proposed  syl6bb    bitrdi      compare to bitri or bitrd
 proposed  syl6rbb   bitr2di     compare to bitr2i or bitr2d
-proposed  syl6bbr   bitr4di     compare to bitr4i or bitr4d
-proposed  syl6rbbr  bitr4id     hypotheses would be switched
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+28-Jul-24 syl6bbr   bitr4di     compare to bitr4i or bitr4d
+24-Jul-24 grpmndd   [same]      moved from SN's mathbox to main set.mm
+24-Jul-24 zringsubgval [same]   moved from AV's mathbox to main set.mm
+21-Jul-24 syl6rbbr  bitr4id     order of hypotheses is switched
  6-Jul-24 syl6eq    eqtrdi      compare to eqtri or eqtrd
  6-Jul-24 syl6reqr  eqtr4id     order of hypotheses is switched
  2-Jul-24 snn0d     [same]      moved from GS's mathbox to main set.mm
