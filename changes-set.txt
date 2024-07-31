@@ -101,6 +101,7 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 28-Jul-24 syl6bbr   bitr4di     compare to bitr4i or bitr4d
+26-Jul-24 ascl1     [same]      moved from AV's mathbox to main set.mm
 24-Jul-24 grpmndd   [same]      moved from SN's mathbox to main set.mm
 24-Jul-24 zringsubgval [same]   moved from AV's mathbox to main set.mm
 21-Jul-24 syl6rbbr  bitr4id     order of hypotheses is switched
