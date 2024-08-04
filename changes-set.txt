@@ -95,7 +95,6 @@ proposed  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
 proposed  syl6bb    bitrdi      compare to bitri or bitrd
 proposed  syl6rbb   bitr2di     compare to bitr2i or bitr2d
-proposed  syl6bbr   bitr4di     compare to bitr4i or bitr4d
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
@@ -104,6 +103,7 @@ Date      Old       New         Notes
  4-Aug-24 rnmpt0    rnmpt0f     moved from GS's mathbox to main set.mm
  4-Aug-24 rnmptn0   [same]      moved from GS's mathbox to main set.mm
 31-Jul-24 f1oeq1d   [same]      moved from GS's mathbox to main set.mm
+28-Jul-24 syl6bbr   bitr4di     compare to bitr4i or bitr4d
 24-Jul-24 grpmndd   [same]      moved from SN's mathbox to main set.mm
 24-Jul-24 zringsubgval [same]   moved from AV's mathbox to main set.mm
 21-Jul-24 syl6rbbr  bitr4id     order of hypotheses is switched
