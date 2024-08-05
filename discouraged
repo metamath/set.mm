@@ -6300,6 +6300,27 @@
 "funop" is used by "funsndifnop".
 "funopsn" is used by "funop".
 "funopsn" is used by "funop1".
+"fvprcALT" is used by "1stval".
+"fvprcALT" is used by "2idlval".
+"fvprcALT" is used by "2ndval".
+"fvprcALT" is used by "bafval".
+"fvprcALT" is used by "brfvopab".
+"fvprcALT" is used by "brfvopabrbr".
+"fvprcALT" is used by "dffv3".
+"fvprcALT" is used by "edgval".
+"fvprcALT" is used by "fvmptopab".
+"fvprcALT" is used by "fvmptrabfv".
+"fvprcALT" is used by "fvrn0".
+"fvprcALT" is used by "fvunsn".
+"fvprcALT" is used by "grpidval".
+"fvprcALT" is used by "iedgval".
+"fvprcALT" is used by "indislem".
+"fvprcALT" is used by "rnfvprc".
+"fvprcALT" is used by "rrgval".
+"fvprcALT" is used by "s1prc".
+"fvprcALT" is used by "smfval".
+"fvprcALT" is used by "vafval".
+"fvprcALT" is used by "vtxval".
 "gen11" is used by "ax6e2eqVD".
 "gen11" is used by "ax6e2ndeqVD".
 "gen11" is used by "csbfv12gALTVD".
@@ -16195,7 +16216,7 @@ New usage of "funop" is discouraged (2 uses).
 New usage of "funopg" is discouraged (0 uses).
 New usage of "funopsn" is discouraged (2 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
-New usage of "fvprcALT" is discouraged (0 uses).
+New usage of "fvprcALT" is discouraged (21 uses).
 New usage of "gcdmultipleOLD" is discouraged (0 uses).
 New usage of "gcdmultiplezOLD" is discouraged (0 uses).
 New usage of "gen11" is discouraged (19 uses).
