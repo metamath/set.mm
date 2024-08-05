@@ -15550,6 +15550,7 @@ New usage of "dfid3" is discouraged (1 uses).
 New usage of "dfiop2" is discouraged (3 uses).
 New usage of "dfiun2gOLD" is discouraged (0 uses).
 New usage of "dfmo" is discouraged (0 uses).
+New usage of "dfopifOLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfsb1" is discouraged (4 uses).
 New usage of "dfsb2" is discouraged (1 uses).
@@ -19323,6 +19324,7 @@ Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dfiun2gOLD" is discouraged (134 steps).
 Proof modification of "dfmo" is discouraged (44 steps).
+Proof modification of "dfopifOLD" is discouraged (102 steps).
 Proof modification of "dfsb2ALT" is discouraged (79 steps).
 Proof modification of "dfsb3ALT" is discouraged (39 steps).
 Proof modification of "dfsb7ALT" is discouraged (10 steps).
