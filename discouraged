@@ -18602,6 +18602,7 @@ New usage of "sspwtr" is discouraged (0 uses).
 New usage of "sspwtrALT" is discouraged (0 uses).
 New usage of "sspwtrALT2" is discouraged (0 uses).
 New usage of "sspz" is discouraged (1 uses).
+New usage of "ssrab2OLD" is discouraged (0 uses).
 New usage of "ssralv2" is discouraged (2 uses).
 New usage of "ssralv2VD" is discouraged (0 uses).
 New usage of "sstrALT2" is discouraged (0 uses).
@@ -20376,6 +20377,7 @@ Proof modification of "sspwimpcfVD" is discouraged (84 steps).
 Proof modification of "sspwtr" is discouraged (100 steps).
 Proof modification of "sspwtrALT" is discouraged (84 steps).
 Proof modification of "sspwtrALT2" is discouraged (72 steps).
+Proof modification of "ssrab2OLD" is discouraged (22 steps).
 Proof modification of "ssralv2" is discouraged (83 steps).
 Proof modification of "ssralv2VD" is discouraged (147 steps).
 Proof modification of "sstrALT2" is discouraged (81 steps).
