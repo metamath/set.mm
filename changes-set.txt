@@ -103,8 +103,8 @@ Date      Old       New         Notes
  7-Aug-24 tdeglem4  [same]      revised - eliminated unnecessary antecedent
  7-Aug-24 tdeglem3  [same]      revised - eliminated unnecessary antecedent
  7-Aug-24 tdeglem1  [same]      revised - eliminated unnecessary antecedent
- 7-Aug-24 psrbagev2 [same]      revised - eliminated unnecessary antecedent
- 7-Aug-24 psrbagev1 [same]      revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbagev2 [same]      revised - eliminated unnecessary hypothesis
+ 7-Aug-24 psrbagev1 [same]      revised - eliminated unnecessary hypothesis
  7-Aug-24 psrbagfsupp [same]    revised - eliminated unnecessary antecedent
  7-Aug-24 psrbagaddcl [same]    revised - eliminated unnecessary antecedent
  7-Aug-24 psrass1lem [same]     revised - eliminated unnecessary antecedent
