@@ -374,7 +374,6 @@
 "4syl" is used by "lssatle".
 "4syl" is used by "lukshef-ax2".
 "4syl" is used by "mblfinlem2".
-"4syl" is used by "mdeglt".
 "4syl" is used by "meran1".
 "4syl" is used by "metuel2".
 "4syl" is used by "metustfbas".
@@ -6597,6 +6596,9 @@
 "grpplusgx" is used by "cnaddablx".
 "grpplusgx" is used by "isgrpix".
 "grpplusgx" is used by "zaddablx".
+"gsumbagdiagOLD" is used by "psrass1lemOLD".
+"gsumbagdiaglemOLD" is used by "gsumbagdiagOLD".
+"gsumbagdiaglemOLD" is used by "psrass1lemOLD".
 "gt-lth" is used by "ex-gt".
 "gt0srpr" is used by "mulgt0sr".
 "gt0srpr" is used by "recexsrlem".
@@ -12054,6 +12056,32 @@
 "prub" is used by "prlem936".
 "prub" is used by "psslinpr".
 "prub" is used by "reclem4pr".
+"psrbagaddclOLD" is used by "tdeglem3OLD".
+"psrbagconOLD" is used by "gsumbagdiaglemOLD".
+"psrbagconOLD" is used by "psrbagconclOLD".
+"psrbagconOLD" is used by "psrbagconf1oOLD".
+"psrbagconf1oOLD" is used by "psrass1lemOLD".
+"psrbagev1OLD" is used by "psrbagev2OLD".
+"psrbagfOLD" is used by "gsumbagdiaglemOLD".
+"psrbagfOLD" is used by "psrass1lemOLD".
+"psrbagfOLD" is used by "psrbagconclOLD".
+"psrbagfOLD" is used by "psrbagconf1oOLD".
+"psrbagfOLD" is used by "psrbagev1OLD".
+"psrbagfOLD" is used by "psrbagfsuppOLD".
+"psrbagfOLD" is used by "psrbaglefiOLD".
+"psrbagfOLD" is used by "psrbaglesuppOLD".
+"psrbagfOLD" is used by "tdeglem1OLD".
+"psrbagfOLD" is used by "tdeglem3OLD".
+"psrbagfOLD" is used by "tdeglem4OLD".
+"psrbagfsuppOLD" is used by "psrbagev1OLD".
+"psrbagfsuppOLD" is used by "tdeglem1OLD".
+"psrbagfsuppOLD" is used by "tdeglem3OLD".
+"psrbagfsuppOLD" is used by "tdeglem4OLD".
+"psrbagleclOLD" is used by "psrbaglefiOLD".
+"psrbaglefiOLD" is used by "gsumbagdiagOLD".
+"psrbaglefiOLD" is used by "psrass1lemOLD".
+"psrbaglesuppOLD" is used by "psrbagconOLD".
+"psrbaglesuppOLD" is used by "psrbagleclOLD".
 "psslinpr" is used by "ltsopr".
 "psubcli2N" is used by "osumclN".
 "psubcli2N" is used by "osumcllem3N".
@@ -13967,7 +13995,7 @@ New usage of "4atex2-0aOLDN" is discouraged (1 uses).
 New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
-New usage of "4syl" is discouraged (192 uses).
+New usage of "4syl" is discouraged (191 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
@@ -16023,7 +16051,6 @@ New usage of "elrabiOLD" is discouraged (0 uses).
 New usage of "elreal" is discouraged (7 uses).
 New usage of "elreal2" is discouraged (3 uses).
 New usage of "elringchomALTV" is discouraged (1 uses).
-New usage of "elrn2OLD" is discouraged (0 uses).
 New usage of "elrngchomALTV" is discouraged (1 uses).
 New usage of "elsetrecslem" is discouraged (1 uses).
 New usage of "elspancl" is discouraged (1 uses).
@@ -16282,6 +16309,8 @@ New usage of "grporndm" is discouraged (4 uses).
 New usage of "grposnOLD" is discouraged (1 uses).
 New usage of "grpplusgx" is discouraged (3 uses).
 New usage of "grpsubfvalALT" is discouraged (0 uses).
+New usage of "gsumbagdiagOLD" is discouraged (1 uses).
+New usage of "gsumbagdiaglemOLD" is discouraged (2 uses).
 New usage of "gsumccatOLD" is discouraged (0 uses).
 New usage of "gt-lt" is discouraged (0 uses).
 New usage of "gt-lth" is discouraged (1 uses).
@@ -18028,6 +18057,17 @@ New usage of "prnmax" is discouraged (7 uses).
 New usage of "probfinmeasbALTV" is discouraged (0 uses).
 New usage of "prpssnq" is discouraged (8 uses).
 New usage of "prub" is discouraged (6 uses).
+New usage of "psrass1lemOLD" is discouraged (0 uses).
+New usage of "psrbagaddclOLD" is discouraged (1 uses).
+New usage of "psrbagconOLD" is discouraged (3 uses).
+New usage of "psrbagconf1oOLD" is discouraged (1 uses).
+New usage of "psrbagev1OLD" is discouraged (1 uses).
+New usage of "psrbagev2OLD" is discouraged (0 uses).
+New usage of "psrbagfOLD" is discouraged (11 uses).
+New usage of "psrbagfsuppOLD" is discouraged (4 uses).
+New usage of "psrbagleclOLD" is discouraged (1 uses).
+New usage of "psrbaglefiOLD" is discouraged (2 uses).
+New usage of "psrbaglesuppOLD" is discouraged (2 uses).
 New usage of "psslinpr" is discouraged (1 uses).
 New usage of "psubatN" is discouraged (0 uses).
 New usage of "psubcli2N" is discouraged (8 uses).
@@ -18644,6 +18684,9 @@ New usage of "tbwlem3" is discouraged (1 uses).
 New usage of "tbwlem4" is discouraged (2 uses).
 New usage of "tbwlem5" is discouraged (1 uses).
 New usage of "tbwsyl" is discouraged (6 uses).
+New usage of "tdeglem1OLD" is discouraged (0 uses).
+New usage of "tdeglem3OLD" is discouraged (0 uses).
+New usage of "tdeglem4OLD" is discouraged (0 uses).
 New usage of "tendospcanN" is discouraged (1 uses).
 New usage of "tfr1ALT" is discouraged (0 uses).
 New usage of "tfr2ALT" is discouraged (0 uses).
@@ -19559,7 +19602,6 @@ Proof modification of "elpwgdedVD" is discouraged (23 steps).
 Proof modification of "elpwi2OLD" is discouraged (21 steps).
 Proof modification of "elrabiOLD" is discouraged (55 steps).
 Proof modification of "elrefsymrels3" is discouraged (65 steps).
-Proof modification of "elrn2OLD" is discouraged (42 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
@@ -19821,6 +19863,8 @@ Proof modification of "ghomlinOLD" is discouraged (161 steps).
 Proof modification of "grpinvfvalALT" is discouraged (161 steps).
 Proof modification of "grposnOLD" is discouraged (291 steps).
 Proof modification of "grpsubfvalALT" is discouraged (176 steps).
+Proof modification of "gsumbagdiagOLD" is discouraged (209 steps).
+Proof modification of "gsumbagdiaglemOLD" is discouraged (571 steps).
 Proof modification of "gsumccatOLD" is discouraged (996 steps).
 Proof modification of "hadcomaOLD" is discouraged (37 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
@@ -20114,6 +20158,17 @@ Proof modification of "problem2" is discouraged (104 steps).
 Proof modification of "problem3" is discouraged (56 steps).
 Proof modification of "problem4" is discouraged (310 steps).
 Proof modification of "problem5" is discouraged (133 steps).
+Proof modification of "psrass1lemOLD" is discouraged (1513 steps).
+Proof modification of "psrbagaddclOLD" is discouraged (392 steps).
+Proof modification of "psrbagconOLD" is discouraged (365 steps).
+Proof modification of "psrbagconf1oOLD" is discouraged (538 steps).
+Proof modification of "psrbagev1OLD" is discouraged (222 steps).
+Proof modification of "psrbagev2OLD" is discouraged (54 steps).
+Proof modification of "psrbagfOLD" is discouraged (24 steps).
+Proof modification of "psrbagfsuppOLD" is discouraged (63 steps).
+Proof modification of "psrbagleclOLD" is discouraged (96 steps).
+Proof modification of "psrbaglefiOLD" is discouraged (464 steps).
+Proof modification of "psrbaglesuppOLD" is discouraged (254 steps).
 Proof modification of "pweqALT" is discouraged (34 steps).
 Proof modification of "pwm1geoserOLD" is discouraged (371 steps).
 Proof modification of "pwsnOLD" is discouraged (164 steps).
@@ -20354,6 +20409,9 @@ Proof modification of "tbwlem3" is discouraged (49 steps).
 Proof modification of "tbwlem4" is discouraged (91 steps).
 Proof modification of "tbwlem5" is discouraged (42 steps).
 Proof modification of "tbwsyl" is discouraged (20 steps).
+Proof modification of "tdeglem1OLD" is discouraged (70 steps).
+Proof modification of "tdeglem3OLD" is discouraged (256 steps).
+Proof modification of "tdeglem4OLD" is discouraged (703 steps).
 Proof modification of "tfr1ALT" is discouraged (19 steps).
 Proof modification of "tfr2ALT" is discouraged (52 steps).
 Proof modification of "tfr3ALT" is discouraged (84 steps).
