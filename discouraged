@@ -5424,6 +5424,7 @@
 "drsb1" is used by "iotaeq".
 "drsb1" is used by "sb2ae".
 "drsb1" is used by "sbco3".
+"dtruALT2" is used by "fvprc".
 "dvadiaN" is used by "diarnN".
 "dveel1" is used by "distel".
 "dveel2" is used by "axc14".
@@ -15780,7 +15781,7 @@ New usage of "drngcatALTV" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
 New usage of "drsb1" is discouraged (3 uses).
 New usage of "dtruALT" is discouraged (0 uses).
-New usage of "dtruALT2" is discouraged (0 uses).
+New usage of "dtruALT2" is discouraged (1 uses).
 New usage of "dtrucor2" is discouraged (0 uses).
 New usage of "dummylink" is discouraged (0 uses).
 New usage of "dvadiaN" is discouraged (1 uses).
@@ -16225,6 +16226,7 @@ New usage of "funop" is discouraged (2 uses).
 New usage of "funopg" is discouraged (0 uses).
 New usage of "funopsn" is discouraged (2 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
+New usage of "fvprcALT" is discouraged (0 uses).
 New usage of "gcdmultipleOLD" is discouraged (0 uses).
 New usage of "gcdmultiplezOLD" is discouraged (0 uses).
 New usage of "gen11" is discouraged (19 uses).
@@ -19851,6 +19853,7 @@ Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "fundcmpsurinjALT" is discouraged (221 steps).
 Proof modification of "fvilbdRP" is discouraged (27 steps).
 Proof modification of "fvimacnvALT" is discouraged (102 steps).
+Proof modification of "fvprcALT" is discouraged (26 steps).
 Proof modification of "gcdmultipleOLD" is discouraged (348 steps).
 Proof modification of "gcdmultiplezOLD" is discouraged (230 steps).
 Proof modification of "gen11" is discouraged (27 steps).
