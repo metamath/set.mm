@@ -107,9 +107,9 @@ Date      Old       New         Notes
  7-Aug-24 psrbagev1 [same]      revised - eliminated unnecessary hypothesis
  7-Aug-24 psrbagfsupp [same]    revised - eliminated unnecessary antecedent
  7-Aug-24 psrbagaddcl [same]    revised - eliminated unnecessary antecedent
- 7-Aug-24 psrass1lem [same]     revised - eliminated unnecessary antecedent
- 7-Aug-24 gsumbagdiag [same]    revised - eliminated unnecessary antecedent
- 7-Aug-24 gsumbagdiaglem [same] revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrass1lem [same]     revised - eliminated unnecessary hypothesis
+ 7-Aug-24 gsumbagdiag [same]    revised - eliminated unnecessary hypothesis
+ 7-Aug-24 gsumbagdiaglem [same] revised - eliminated unnecessary hypothesis
  7-Aug-24 psrbagconf1o [same]   revised - eliminated unnecessary antecedent
  7-Aug-24 psrbagconcl [same]    revised - eliminated unnecessary antecedent
  7-Aug-24 psrbaglefi [same]     revised - eliminated unnecessary antecedent
