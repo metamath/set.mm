@@ -100,6 +100,23 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 7-Aug-24 tdeglem4  [same]      revised - eliminated unnecessary antecedent
+ 7-Aug-24 tdeglem3  [same]      revised - eliminated unnecessary antecedent
+ 7-Aug-24 tdeglem1  [same]      revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbagev2 [same]      revised - eliminated unnecessary hypothesis
+ 7-Aug-24 psrbagev1 [same]      revised - eliminated unnecessary hypothesis
+ 7-Aug-24 psrbagfsupp [same]    revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbagaddcl [same]    revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrass1lem [same]     revised - eliminated unnecessary hypothesis
+ 7-Aug-24 gsumbagdiag [same]    revised - eliminated unnecessary hypothesis
+ 7-Aug-24 gsumbagdiaglem [same] revised - eliminated unnecessary hypothesis
+ 7-Aug-24 psrbagconf1o [same]   revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbagconcl [same]    revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbaglefi [same]     revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbagcon [same]      revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbagcl  [same]      revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbaglesupp [same]   revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbag    [same]      revised - eliminated unnecessary antecedent
  4-Aug-24 rnmpt0    rnmpt0f     moved from GS's mathbox to main set.mm
  4-Aug-24 rnmptn0   [same]      moved from GS's mathbox to main set.mm
 31-Jul-24 f1oeq1d   [same]      moved from GS's mathbox to main set.mm
