@@ -95,15 +95,47 @@ proposed  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
 proposed  syl6bb    bitrdi      compare to bitri or bitrd
 proposed  syl6rbb   bitr2di     compare to bitr2i or bitr2d
-proposed  syl6bbr   bitr4di     compare to bitr4i or bitr4d
-proposed  syl6rbbr  bitr4id     hypotheses would be switched
-proposed  syl6eq    eqtrdi      compare to eqtri or eqtrd
-proposed  syl6reqr  eqtr4id     hypotheses would be switched
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 7-Aug-24 tdeglem4  [same]      revised - eliminated unnecessary antecedent
+ 7-Aug-24 tdeglem3  [same]      revised - eliminated unnecessary antecedent
+ 7-Aug-24 tdeglem1  [same]      revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbagev2 [same]      revised - eliminated unnecessary hypothesis
+ 7-Aug-24 psrbagev1 [same]      revised - eliminated unnecessary hypothesis
+ 7-Aug-24 psrbagfsupp [same]    revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbagaddcl [same]    revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrass1lem [same]     revised - eliminated unnecessary hypothesis
+ 7-Aug-24 gsumbagdiag [same]    revised - eliminated unnecessary hypothesis
+ 7-Aug-24 gsumbagdiaglem [same] revised - eliminated unnecessary hypothesis
+ 7-Aug-24 psrbagconf1o [same]   revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbagconcl [same]    revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbaglefi [same]     revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbagcon [same]      revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbagcl  [same]      revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbaglesupp [same]   revised - eliminated unnecessary antecedent
+ 7-Aug-24 psrbag    [same]      revised - eliminated unnecessary antecedent
+ 4-Aug-24 rnmpt0    rnmpt0f     moved from GS's mathbox to main set.mm
+ 4-Aug-24 rnmptn0   [same]      moved from GS's mathbox to main set.mm
+31-Jul-24 f1oeq1d   [same]      moved from GS's mathbox to main set.mm
+28-Jul-24 syl6bbr   bitr4di     compare to bitr4i or bitr4d
+26-Jul-24 ascl1     [same]      moved from AV's mathbox to main set.mm
+24-Jul-24 grpmndd   [same]      moved from SN's mathbox to main set.mm
+24-Jul-24 zringsubgval [same]   moved from AV's mathbox to main set.mm
+21-Jul-24 syl6rbbr  bitr4id     order of hypotheses is switched
+ 6-Jul-24 syl6eq    eqtrdi      compare to eqtri or eqtrd
+ 6-Jul-24 syl6reqr  eqtr4id     order of hypotheses is switched
+ 2-Jul-24 snn0d     [same]      moved from GS's mathbox to main set.mm
+26-Jun-24 rnresss   [same]      moved from GS's mathbox to main set.mm
+26-Jun-24 fndmexd   [same]      moved from RR's mathbox to main set.mm
+26-Jun-24 iunssf    [same]      moved from GS's mathbox to main set.mm
+26-Jun-24 rp-imass  resssxp     moved from RP's mathbox to main set.mm
+26-Jun-24 sscon34b  [same]      moved from RP's mathbox to main set.mm
+26-Jun-24 rcompleq  [same]      moved from RP's mathbox to main set.mm
+26-Jun-24 funresd   [same]      moved from GS's mathbox to main set.mm
+26-Jun-24 cmnmndd   [same]      moved from SN's mathbox to main set.mm
 26-Jun-24 syl6req   eqtr2di     compare to eqtr2i or eqtr2d
 16-Jun-24 syl6eqr   eqtr4di     compare to eqtr4i or eqtr4d
 16-Jun-24 fnun2d    [same]      moved from MKU's mathbox to main set.mm

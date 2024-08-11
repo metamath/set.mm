@@ -3350,6 +3350,11 @@ the definition of limit ordinal or is it unrelated?).</TD>
 using case elimination.</TD>
 </TR>
 
+<tr>
+  <td>df-om</td>
+  <td>~ df-iom</td>
+</tr>
+
 <TR>
 <TD>findsg</TD>
 <TD>~ uzind4 </TD>
@@ -4609,11 +4614,57 @@ this implies excluded middle</TD>
 </TR>
 
 <tr>
+  <td>ax-inf , zfinf , axinf2 , axinf</td>
+  <td>~ ax-iinf , ~ zfinf2</td>
+  <td>probably most of the variations of the axiom of infinity
+  in set.mm could be shown to be equivalent to each other in
+  iset.mm as well</td>
+</tr>
+
+<tr>
+  <td>inf5</td>
+  <td><i>none</i></td>
+  <td>as this is in terms of proper subset it is unlikely
+  to work well in iset.mm</td>
+</tr>
+
+<tr>
+  <td>elom3 , dfom4 , dfom5</td>
+  <td><i>none</i></td>
+  <td>the set.mm theorems depend on theorems we do not have</td>
+</tr>
+
+<tr>
+  <td>oancom</td>
+  <td><i>none</i></td>
+  <td>presumably provable but the set.mm proof does not work as-is</td>
+</tr>
+
+<tr>
+  <td>isfinite</td>
+  <td>~ fict</td>
+</tr>
+
+<tr>
+  <td>omenps , omensuc</td>
+  <td><i>none</i></td>
+  <td>presumably provable but the set.mm proofs do not work as-is</td>
+</tr>
+
+<tr>
   <td>infdifsn</td>
   <td><i>none</i></td>
-  <td>would likely need a ` B e. A ` condition but even with
-  that, the set.mm proof relies on limenpsi , difsnen ,
-  and undif</td>
+  <td>possibly provable with added ` A. x e. A A. y e. A DECID x = y `
+  and ` B e. A ` conditions, for example via a technique analogous
+  to ~ difinfsn</td>
+</tr>
+
+<tr>
+  <td>infdiffi</td>
+  <td><i>none</i></td>
+  <td>if we can prove a version of infdifsn it should carry over
+  from singletons to finite sets, much the way ~ difinfinf follows
+  from ~ difinfsn</td>
 </tr>
 
 <tr>
@@ -4621,6 +4672,12 @@ this implies excluded middle</TD>
   <td><i>none</i></td>
   <td>the impossibility proof at ~ exmidunben should apply
   here as well</td>
+</tr>
+
+<tr>
+  <td>noinfep</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fri</td>
 </tr>
 
 <TR>
@@ -6611,11 +6668,6 @@ as in set.mm using that definition.</TD>
 
 <TR>
 <TD>ixxub , ixxlb</TD>
-<TD><I>none</I></TD>
-</TR>
-
-<TR>
-<TD>iccen</TD>
 <TD><I>none</I></TD>
 </TR>
 
@@ -9208,6 +9260,56 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>~ prodmodc</td>
 </tr>
 
+<tr>
+  <td>zprod</td>
+  <td>~ zproddc</td>
+</tr>
+
+<tr>
+  <td>iprod</td>
+  <td>~ iprodap</td>
+</tr>
+
+<tr>
+  <td>zprodn0</td>
+  <td>~ zprodap0</td>
+</tr>
+
+<tr>
+  <td>iprodn0</td>
+  <td>~ iprodap0</td>
+</tr>
+
+<tr>
+  <td>fprod</td>
+  <td>~ fprodseq</td>
+</tr>
+
+<tr>
+  <td>fprodntriv</td>
+  <td>~ fprodntrivap</td>
+</tr>
+
+<tr>
+  <td>prod1</td>
+  <td>~ prod1dc</td>
+</tr>
+
+<tr>
+  <td>prodfc</td>
+  <td>~ prodfct</td>
+</tr>
+
+<tr>
+  <td>prodss</td>
+  <td>~ prodssdc</td>
+</tr>
+
+<tr>
+  <td>fprodss</td>
+  <td>~ fprodssdc</td>
+</tr>
+
 <TR>
   <TD>eftval</TD>
   <TD>~ eftvalcn</TD>
@@ -11631,24 +11733,54 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>logrncl , logcl , logimcl , logcld , logimcld , logimclad ,
-  abslogimle , logrnaddcl</td>
+  <td>logrncl</td>
   <td><i>none</i></td>
   <td>see ~ df-relog comment for discussion of complex logarithms</td>
 </tr>
 
 <tr>
-  <td>eflog , logeq0im1 , logccne0</td>
+  <td>logcl</td>
+  <td>~ relogcl</td>
+</tr>
+
+<tr>
+  <td>logimcl</td>
   <td><i>none</i></td>
   <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logcld</td>
+  <td>~ relogcld</td>
+</tr>
+
+<tr>
+  <td>logimcld , logimclad , abslogimle , logrnaddcl</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>eflog</td>
+  <td>~ reeflog</td>
+</tr>
+
+<tr>
+  <td>logeq0im1</td>
+  <td><i>none</i></td>
+  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logccne0</td>
+  <td>~ logrpap0</td>
 </tr>
 
 <tr>
   <td>logne0</td>
-  <td><i>none</i></td>
-  <td>probably provable (the version with not equal changed to apart
-  would probably be more helpful), but may need theorems such as
-  logltb</td>
+  <td>~ logrpap0</td>
+  <td>would be provable but ~ logrpap0 changes not equal to apart
+  and will generally be more helpful)</td>
 </tr>
 
 <tr>
@@ -11658,8 +11790,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>logeftb</td>
-  <td><i>none</i></td>
-  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+  <td>~ relogeftb</td>
 </tr>
 
 <tr>
@@ -11672,8 +11803,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>explog</td>
-  <td><i>none</i></td>
-  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+  <td>~ reexplog</td>
 </tr>
 
 <tr>
@@ -11922,12 +12052,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>2irrexpq</td>
-  <td><i>none</i></td>
-  <td>at some point 2irrexpqALT should be intuitionizable</td>
-</tr>
-
-<tr>
   <td>dvcxp1</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses dvrelog , dvmptco , and dvmptres3</td>
@@ -12018,6 +12142,93 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>logrec</td>
   <td><i>none</i></td>
   <td>see ~ df-relog comment for discussion of complex logarithms</td>
+</tr>
+
+<tr>
+  <td>logbval</td>
+  <td>~ rplogbval</td>
+</tr>
+
+<tr>
+  <td>logbcl</td>
+  <td>~ rplogbcl</td>
+</tr>
+
+<tr>
+  <td>logbid1</td>
+  <td>~ rplogbid1</td>
+</tr>
+
+<tr>
+  <td>logb1</td>
+  <td>~ rplogb1</td>
+</tr>
+
+<tr>
+  <td>elogb</td>
+  <td>~ rpelogb</td>
+</tr>
+
+<tr>
+  <td>logbchbase</td>
+  <td>~ rplogbchbase</td>
+</tr>
+
+<tr>
+  <td>relogbcl</td>
+  <td>~ rplogbcl</td>
+</tr>
+
+<tr>
+  <td>relogbreexp</td>
+  <td>~ rplogbreexp</td>
+</tr>
+
+<tr>
+  <td>relogbzexp</td>
+  <td>~ rplogbzexp</td>
+</tr>
+
+<tr>
+  <td>relogbmul</td>
+  <td>~ rprelogbmul</td>
+</tr>
+
+<tr>
+  <td>relogbmulexp</td>
+  <td>~ rprelogbmulexp</td>
+</tr>
+
+<tr>
+  <td>relogbdiv</td>
+  <td>~ rprelogbdiv</td>
+</tr>
+
+<tr>
+  <td>relogbexp</td>
+  <td>~ relogbexpap</td>
+</tr>
+
+<tr>
+  <td>relogbcxp</td>
+  <td>~ rplogbcxp</td>
+</tr>
+
+<tr>
+  <td>cxplogb</td>
+  <td>~ rpcxplogb</td>
+</tr>
+
+<tr>
+  <td>relogbcxpb</td>
+  <td>~ relogbcxpbap</td>
+</tr>
+
+<tr>
+  <td>logbmpt , logbf , logbfval , relogbf , logblog</td>
+  <td><i>none</i></td>
+  <td>we could add a version of these if iset.mm
+  gets the curry syntax</td>
 </tr>
 
 <tr>
@@ -12216,7 +12427,7 @@ June 25, 2020,
 <A HREF="https://www.cs.ru.nl/bachelors-theses/2020/Ceel_Pierik___4806182___Infinite_Omniscient_Sets_in_Constructive_Mathematics.pdf"
 >https://www.cs.ru.nl/bachelors-theses/2020/Ceel_Pierik___4806182___Infinite_Omniscient_Sets_in_Constructive_Mathematics.pdf</A></LI>
 
-<LI><A NAME="PradicBrown2022"></A> [PradicBrown2022] Pradic, Pierre, and
+<LI><A NAME="PradicBrown2022"></A> [PradicBrown2022] Pradic, C&#xE9;cilia, and
 Brown, Chad E. (August 15, 2022), &quot;Cantor-Bernstein implies
 Excluded Middle&quot;,
 <A HREF="https://arxiv.org/abs/1904.09193">https://arxiv.org/abs/1904.09193</A>

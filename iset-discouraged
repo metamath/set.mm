@@ -113,6 +113,12 @@
 "bj-axemptylem" is used by "bj-axempty2".
 "cnm" is used by "axaddf".
 "cnm" is used by "axmulf".
+"csbco" is used by "csbcow".
+"csbco" is used by "csbnest1g".
+"csbco" is used by "csbvarg".
+"csbco" is used by "fsum3".
+"csbco" is used by "fsumsplitf".
+"csbco" is used by "zsumdc".
 "df-div" is used by "divfnzn".
 "df-div" is used by "divvalap".
 "df-ilim" is used by "dflim2".
@@ -229,6 +235,7 @@ New usage of "19.21ht" is discouraged (2 uses).
 New usage of "19.41h" is discouraged (5 uses).
 New usage of "19.42h" is discouraged (1 uses).
 New usage of "19.9hd" is discouraged (2 uses).
+New usage of "2logb9irrALT" is discouraged (0 uses).
 New usage of "4syl" is discouraged (16 uses).
 New usage of "a1ii" is discouraged (0 uses).
 New usage of "a9evsep" is discouraged (1 uses).
@@ -317,6 +324,8 @@ New usage of "bocardo" is discouraged (0 uses).
 New usage of "cnm" is discouraged (2 uses).
 New usage of "condcOLD" is discouraged (0 uses).
 New usage of "conventions" is discouraged (0 uses).
+New usage of "csbco" is discouraged (6 uses).
+New usage of "dcapnconstALT" is discouraged (0 uses).
 New usage of "dcnnOLD" is discouraged (0 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-div" is discouraged (2 uses).
@@ -375,6 +384,7 @@ New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
+Proof modification of "2logb9irrALT" is discouraged (118 steps).
 Proof modification of "a1ii" is discouraged (1 steps).
 Proof modification of "a9evsep" is discouraged (63 steps).
 Proof modification of "addmodlteqALT" is discouraged (237 steps).
@@ -467,6 +477,7 @@ Proof modification of "bj-vprc" is discouraged (53 steps).
 Proof modification of "bj-zfpair2" is discouraged (80 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "condcOLD" is discouraged (39 steps).
+Proof modification of "dcapnconstALT" is discouraged (83 steps).
 Proof modification of "dcnnOLD" is discouraged (33 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
@@ -492,7 +503,7 @@ Proof modification of "sbc8g" is discouraged (55 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "speano5" is discouraged (50 steps).
 Proof modification of "stdcndcOLD" is discouraged (62 steps).
-Proof modification of "strcollnfALT" is discouraged (79 steps).
+Proof modification of "strcollnfALT" is discouraged (120 steps).
 Proof modification of "tfri1dALT" is discouraged (247 steps).
 Proof modification of "uzind4ALT" is discouraged (16 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
