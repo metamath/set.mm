@@ -100,6 +100,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+12-Aug-24 disjdifr  [same]      moved from TA's mathbox to main set.mm
 28-Jul-24 syl6bbr   bitr4di     compare to bitr4i or bitr4d
 24-Jul-24 grpmndd   [same]      moved from SN's mathbox to main set.mm
 24-Jul-24 zringsubgval [same]   moved from AV's mathbox to main set.mm
