@@ -9135,7 +9135,7 @@ Date      Old       New         Notes
 24-Feb-13 sbceq1dig sbceq1g
 24-Feb-13 sbceqdig  sbceqg
 24-Feb-13 sbcbidig  sbcbig
-21-Feb-13 ---       ---         See http://us.metamath.org/mpeuni/mmnotes.txt
+21-Feb-13 ---       ---         See https://us.metamath.org/mpeuni/mmnotes.txt
 21-Feb-13 ---       ---         entry of 21-Feb-13 for instructions for
 21-Feb-13 ---       ---         the changes below.
 21-Feb-13 sylan     [--same--]  reordered hypotheses for better logical flow
