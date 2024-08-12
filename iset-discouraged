@@ -162,6 +162,7 @@
 "hbs1" is used by "mopick".
 "hbs1" is used by "nfs1v".
 "hbs1" is used by "sb9v".
+"infnninfOLD" is used by "fxnn0nninf".
 "mo3h" is used by "mo2dc".
 "mo3h" is used by "mo3".
 "mo3h" is used by "mo4f".
@@ -350,6 +351,7 @@ New usage of "fnexALT" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
 New usage of "idi" is discouraged (0 uses).
+New usage of "infnninfOLD" is discouraged (1 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
@@ -490,6 +492,7 @@ Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "idi" is discouraged (1 steps).
 Proof modification of "idref" is discouraged (94 steps).
+Proof modification of "infnninfOLD" is discouraged (127 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
