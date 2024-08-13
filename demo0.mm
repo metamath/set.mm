@@ -18,7 +18,7 @@ $( !
 
                            ~~ PUBLIC DOMAIN ~~
 This work is waived of all rights, including copyright, according to the CC0
-Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
+Public Domain Dedication.  https://creativecommons.org/publicdomain/zero/1.0/
 
 Norman Megill - https://us.metamath.org
 

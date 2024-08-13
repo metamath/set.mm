@@ -2114,8 +2114,8 @@ $c ../node_modules/mathjax-node-page/bin/mjpage --format MathML --output SVG --s
 
 $( Container: this is what needs to be included around each formula. 
    The ### is replaced with the formula. It comes in two flavors, one diplay (block), and one for text (inline). $)
-$d <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> ### </math> $.
-$t <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"> ### </math> $.
+$d <math xmlns="https://www.w3.org/1998/Math/MathML" display="block"> ### </math> $.
+$t <math xmlns="https://www.w3.org/1998/Math/MathML" display="inline"> ### </math> $.
 $( Header: this is what needs to be included in the HTML header $)
 $h 
   <!-- Include the mm-web-ui javascript and stylesheet. -->
