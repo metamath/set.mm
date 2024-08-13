@@ -67,6 +67,7 @@
 "ax-cnex" is used by "cnex".
 "ax-cnre" is used by "cnre".
 "ax-distr" is used by "adddi".
+"ax-i12" is used by "ax12or".
 "ax-ia1" is used by "simpl".
 "ax-ia2" is used by "simpr".
 "ax-in1" is used by "pm2.01".
@@ -258,6 +259,7 @@ New usage of "ax-caucvg" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
 New usage of "ax-distr" is discouraged (1 uses).
+New usage of "ax-i12" is discouraged (1 uses).
 New usage of "ax-ia1" is discouraged (1 uses).
 New usage of "ax-ia2" is discouraged (1 uses).
 New usage of "ax-in1" is discouraged (1 uses).
