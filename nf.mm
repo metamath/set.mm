@@ -27,7 +27,7 @@ $( !
 
                            ~~ PUBLIC DOMAIN ~~
 This work is waived of all rights, including copyright, according to the CC0
-Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
+Public Domain Dedication.  https://creativecommons.org/publicdomain/zero/1.0/
 
 Currently active maintainers: See the list in the CONTRIBUTING.md file of
 https://github.com/metamath/set.mm.
@@ -437,7 +437,7 @@ $(
   All 194 axioms, definitions, and theorems for propositional calculus in
   _Principia Mathematica_ (specifically *1.2 through *5.75) are axioms or
   formally proven.  See the Bibliographic Cross-References at
-  ~ http://us.metamath.org/nfeuni/mmbiblio.html for a complete
+  ~ https://us.metamath.org/nfeuni/mmbiblio.html for a complete
   cross-reference from sources used to its formalization in the New Foundations
   Explorer.
 
@@ -11748,7 +11748,7 @@ $(
 
   Our axioms are really axiom _schemes_, and our wff and setvar variables are
   metavariables ranging over expressions in an underlying "object language."
-  This is explained here:  ~ http://us.metamath.org/mpeuni/mmset.html#axiomnote
+  This is explained here:  ~ https://us.metamath.org/mpeuni/mmset.html#axiomnote
 
   Our axiom system starts with the predicate calculus axiom schemes system S2
   of Tarski defined in his 1965 paper, "A Simplified Formalization of Predicate
@@ -12689,7 +12689,7 @@ $)
      syntax such as ~ cab , ~ cun , or ~ c0 .
 
      For a general discussion of the theory of classes and the role of ~ cv ,
-     see ~ http://us.metamath.org/mpeuni/mmset.html#class .
+     see ~ https://us.metamath.org/mpeuni/mmset.html#class .
 
      (The description above applies to set theory, not predicate calculus.  The
      purpose of introducing ` class x ` here, and not in set theory where it
@@ -12716,7 +12716,7 @@ $)
     $( Extend wff definition to include class equality.
 
        For a general discussion of the theory of classes, see
-       ~ http://us.metamath.org/mpeuni/mmset.html#class .
+       ~ https://us.metamath.org/mpeuni/mmset.html#class .
 
        (The purpose of introducing ` wff A = B ` here, and not in set theory
        where it belongs, is to allow us to express i.e.  "prove" the ~ weq of
@@ -12889,7 +12889,7 @@ $)
 
      Raph Levien proved the independence of this axiom from the other logical
      axioms on 12-Apr-2005.  See item 16 at
-     ~ http://us.metamath.org/award2003.html .
+     ~ https://us.metamath.org/award2003.html .
 
      ~ ax-9 can be proved from the weaker version ~ ax9v requiring that the
      variables be distinct; see theorem ~ ax9 .
@@ -13431,7 +13431,7 @@ $)
        classes.
 
        For a general discussion of the theory of classes, see
-       ~ http://us.metamath.org/mpeuni/mmset.html#class .
+       ~ https://us.metamath.org/mpeuni/mmset.html#class .
 
        (The purpose of introducing ` wff A e. B ` here is to allow us to
        express i.e.  "prove" the ~ wel of predicate calculus in terms of the
@@ -13557,7 +13557,7 @@ $(
 
   The orginal axiom schemes of Tarski's predicate calculus are ~ ax-5 ,
   ~ ax-17 , ~ ax9v , ~ ax-8 , ~ ax-13 , and ~ ax-14 , together with rule
-  ~ ax-gen .  See ~ http://us.metamath.org/mpeuni/mmset.html#compare .  They
+  ~ ax-gen .  See ~ https://us.metamath.org/mpeuni/mmset.html#compare .  They
   are given as axiom schemes B4 through B8 in [KalishMontague] p. 81.  These
   are shown to be logically complete by Theorem 1 of [KalishMontague] p. 85.
 
@@ -13567,7 +13567,7 @@ $(
   "metalogically complete" i.e. able to prove directly all possible schemes
   with wff and setvar metavariables, bundled or not, whose object-language
   instances are valid.  ( ~ ax-11 has been proved to be required; see
-  ~ http://us.metamath.org/award2003.html#9a .  Metalogical independence of the
+  ~ https://us.metamath.org/award2003.html#9a .  Metalogical independence of the
   other three are open problems.)
 
   (There are additional predicate calculus axiom schemes included in set.mm
@@ -13923,7 +13923,7 @@ $)
 
      Juha Arpiainen proved the metalogical independence of this axiom (in the
      form of the older axiom ~ ax-11o ) from the others on 19-Jan-2006.  See
-     item 9a at ~ http://us.metamath.org/award2003.html .
+     item 9a at ~ https://us.metamath.org/award2003.html .
 
      See ~ ax11v and ~ ax11v2 for other equivalents of this axiom that (unlike
      this axiom) have distinct variable restrictions.
@@ -20262,7 +20262,7 @@ $)
      term".
 
      For a general discussion of the theory of classes, see
-     ~ http://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
+     ~ https://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
      5-Aug-1993.) $)
   df-clab $a |- ( x e. { y | ph } <-> [ x / y ] ph ) $.
 
@@ -20341,7 +20341,7 @@ $)
        extension to our logic and set theory axioms.
 
        For a general discussion of the theory of classes, see
-       ~ http://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
+       ~ https://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
        15-Sep-1993.) $)
     df-cleq $a |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $.
   $}
@@ -20391,7 +20391,7 @@ $)
        theory axioms.
 
        For a general discussion of the theory of classes, see
-       ~ http://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
+       ~ https://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
        5-Aug-1993.) $)
     df-clel $a |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) $.
   $}
@@ -32289,7 +32289,7 @@ $)
        inference's hypothesis eliminated with ~ elimhyp .  If the inference has
        other hypotheses with class variable ` A ` , these can be kept by
        assigning ~ keephyp to them.  For more information, see the Deduction
-       Theorem ~ http://us.metamath.org/mpeuni/mmdeduction.html .  (Contributed
+       Theorem ~ https://us.metamath.org/mpeuni/mmdeduction.html .  (Contributed
        by NM, 15-May-1999.) $)
     dedth $p |- ( ph -> ps ) $=
       ( cif wceq wb iftrue eqcomd syl mpbiri ) ABCGADADEHZIBCJAODADEKLFMN $.

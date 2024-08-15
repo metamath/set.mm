@@ -72,7 +72,7 @@ command -v metamath > /dev/null || die 'Metamath program not on path'
 
 # We once downloaded jobs if not already downloaded.  However, jobs change.
 # test -f min2020-jobs.zip || \
-# wget http://us2.metamath.org/downloads/min2020-jobs.zip
+# wget https://us.metamath.org/downloads/min2020-jobs.zip
 
 test -d "$jobsdir" || die "Missing required directory: ${jobsdir}"
 
