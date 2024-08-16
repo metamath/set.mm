@@ -16730,6 +16730,7 @@ New usage of "in2an" is discouraged (1 uses).
 New usage of "in3" is discouraged (13 uses).
 New usage of "in3an" is discouraged (1 uses).
 New usage of "incomOLD" is discouraged (0 uses).
+New usage of "indifdirOLD" is discouraged (0 uses).
 New usage of "indistps2ALT" is discouraged (0 uses).
 New usage of "indistpsALT" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
@@ -19816,6 +19817,7 @@ Proof modification of "in2an" is discouraged (18 steps).
 Proof modification of "in3" is discouraged (12 steps).
 Proof modification of "in3an" is discouraged (21 steps).
 Proof modification of "incomOLD" is discouraged (37 steps).
+Proof modification of "indifdirOLD" is discouraged (147 steps).
 Proof modification of "indistps2ALT" is discouraged (43 steps).
 Proof modification of "indistpsALT" is discouraged (64 steps).
 Proof modification of "ineq1OLD" is discouraged (49 steps).
