@@ -99,6 +99,20 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Aug-24 prdsco    [same]      revised - compatibility with new df-prds
+18-Aug-24 prdshom   [same]      revised - compatibility with new df-prds
+18-Aug-24 prdstset  [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsds    [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsle    [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsip    [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsvsca  [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsmulr  [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsplusg [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsbas   [same]      revised - compatibility with new df-prds
+18-Aug-24 prdssca   [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsval   [same]      revised - compatibility with new df-prds
+18-Aug-24 reldmprds [same]      revised - compatibility with new df-prds
+18-Aug-24 df-prds   [same]      revised - fixed the comp part
 13-Aug-24 syl6rbb   bitr2di     compare to bitr2i or bitr2d
 12-Aug-24 disjdifr  [same]      moved from TA's mathbox to main set.mm
  7-Aug-24 tdeglem4  [same]      revised - eliminated unnecessary antecedent
