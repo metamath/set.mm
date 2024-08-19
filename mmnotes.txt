@@ -932,7 +932,7 @@ To update your mathbox etc.,
 1. Make sure your mathbox is compatible with the the set.mm just prior
 to this change, temporarily available here:
 
-  http://us2.metamath.org:88/metamath/set.mm.2015-01-08.bz2
+  https://us.metamath.org/metamath/set.mm.2015-01-08.bz2
 
 1. In a text editor, suffix all references to mpbi*an* in your proofs
 with OLD (e.g. mpbiran to mpbiranOLD).  This will make your proofs
@@ -2600,8 +2600,8 @@ Example - proof of theorem divdivdiv
 ------------------------------------
 
 Compare:
-http://us2.metamath.org:88/mpegif/divdivdiv.html - new
-http://us2.metamath.org:88/mpegif/divdivdivOLD.html - old
+https://us.metamath.org/mpegif/divdivdiv.html - new
+https://us.metamath.org/mpegif/divdivdivOLD.html - old
 
 As an example, I re-proved the existing divdivdiv (which I remember as
 being somewhat tedious to achieve a short proof for using the traditional
@@ -3536,7 +3536,7 @@ longer makes sense to subdivide the axioms into separate groups on the
 MPE Home Page, and I combined them into one big table.  I moved the
 description of the "pure" predicate calculus subsystem to the last entry
 of the subsystem table
-http://us2.metamath.org:8888/mpeuni/mmset.html#subsys
+https://us.metamath.org/mpeuni/mmset.html#subsys
 
 -----
 
@@ -3634,7 +3634,7 @@ as follows:
 logical OR expanded into negation and implication.  pm3.26OLD, pm3.27OLD,
 and pm3.28OLD, which will eventually be deleted, are the erroneous
 versions of these.  This error also found its way into pmproofs.txt
-http://us2.metamath.org:8888/mmsolitaire/pmproofs.txt which has also
+https://us.metamath.org/mmsolitaire/pmproofs.txt which has also
 been corrected.  Going through my backups, I found that this error dates
 back to pre-Metamath in the early 90's when I converted my manually
 typed list of 193 Principia Mathematica theorems into the condensed
@@ -3892,7 +3892,7 @@ Space Explorer axiomatization will then allow us to convert all theorems
 to pure ZFC theorems, with no changes to the theorems themselves,
 whenever we are dealing with a fixed Hilbert space (such as complex
 numbers).  This axiomatization change is described in the comment of
-ax-hilex http://us2.metamath.org:8888/mpegif/ax-hilex.html .
+ax-hilex https://us.metamath.org/mpegif/ax-hilex.html .
 
 I probably will not actually make this change in axiomatization but will
 only describe it.  It is very simple to do for anyone interested.  I
@@ -3901,7 +3901,7 @@ Hilbert Space Explorer Home Page easier to describe and it also allows
 us to see what axioms are used to prove specific theorems.
 
 The Hilbert Space Explorer Home Page
-http://us2.metamath.org:8888/mpegif/mmhil.html was updated to mention
+https://us.metamath.org/mpegif/mmhil.html was updated to mention
 this alternate approach (the first 3 paragraphs of "The Axioms"
 section).
 
@@ -4038,7 +4038,7 @@ discussion at http://planetx.cc.vt.edu/AsteroidMeta/closed_and_closure
 (24-May-2007) axnegex and axrecex are now no longer used by any proof,
 and were renamed to axnegexOLD and axrecexOLD for eventual deletion.
 The axiom list at
-http://us2.metamath.org:8888/mpegif/mmcomplex.html#axioms was updated.
+https://us.metamath.org/mpegif/mmcomplex.html#axioms was updated.
 
 A note on theorem names like msqgt0:  a theorem name such as "msqgt0"
 with "msq" (m=multiplication) means "A x. A", while a name such as
@@ -4090,7 +4090,7 @@ it may take a couple of days to formalize.  These kinds of proofs tend
 to be somewhat long, because we can't make use of future theorems that
 depend on the axioms we are trying to prove.  Eventually axnegex and
 axrecex will be eliminated from the official set of complex number
-axioms at http://us2.metamath.org:8888/mpegif/mmcomplex.html, reducing
+axioms at https://us.metamath.org/mpegif/mmcomplex.html, reducing
 the number of axioms from 27 to 25.
 
 
@@ -4352,7 +4352,7 @@ of proof.
 Even if we can't prove ax-11 from ax11a without ax-16 and ax-17, the
 axiom set ax-1 through ax-15 would still be logically complete in the
 sense described at
-http://us2.metamath.org:8888/mpegif/mmzfcnd.html#distinctors .  The
+https://us.metamath.org/mpegif/mmzfcnd.html#distinctors .  The
 deficiency would be that more theorems would have dummy variables in
 their distinctor antecedents, in particular the old ax-11 proved as a
 theorem.  However, in a way this is only of cosmetic importance, since
@@ -4471,7 +4471,7 @@ related to ax-11.
   about ax-11:
 
     ( -. A. x x = y -> ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) )
-    http://us2.metamath.org:8888/mpegif/ax-11.html
+    https://us.metamath.org/mpegif/ax-11.html
 
   (You may already know some of this.)  Before Juha proved its
   _metalogical_ independence, I spent some time in the other direction,
@@ -4479,7 +4479,7 @@ related to ax-11.
   ax-11, the "distinct variable elimination theorem" dvelimf2 (which
   pleased me at the time):
 
-    http://us2.metamath.org:8888/mpegif/dvelimf2.html
+    https://us.metamath.org/mpegif/dvelimf2.html
 
   that provides a method for converting "$d x y" to the antecedent
   "-. A. x x = y ->" in some cases.  This theorem can be used to derive,
@@ -4499,22 +4499,22 @@ related to ax-11.
   the basis, we have for atomic formulas with equality and membership
   predicates:
 
-    http://us2.metamath.org:8888/mpegif/ax11eq.html
-    http://us2.metamath.org:8888/mpegif/ax11el.html
+    https://us.metamath.org/mpegif/ax11eq.html
+    https://us.metamath.org/mpegif/ax11el.html
 
   (These were tedious to prove.  ax11el is the general case that replaces
   older, more restricted demo example also called ax11el, now obsolete and
   temporarily renamed ax11elOLD.)  As a bonus, we also have the
   special-case basis for any wff in which x is not free:
 
-    http://us2.metamath.org:8888/mpegif/ax11f.html
+    https://us.metamath.org/mpegif/ax11f.html
 
   For the induction steps, we have for negation, implication, and
   quantification
 
-    http://us2.metamath.org:8888/mpegif/ax11indn.html
-    http://us2.metamath.org:8888/mpegif/ax11indi.html
-    http://us2.metamath.org:8888/mpegif/ax11inda.html
+    https://us.metamath.org/mpegif/ax11indn.html
+    https://us.metamath.org/mpegif/ax11indi.html
+    https://us.metamath.org/mpegif/ax11inda.html
 
   respectively.  I wanted the last one to be prettier (without the implied
   substitution and dummy variable) but wasn't successful in proving it
@@ -4525,14 +4525,14 @@ related to ax-11.
   assume x and y are distinct:
 
     ( x = y -> ( ph -> A. x ( x = y -> ph ) ) )  where $d x y
-    http://us2.metamath.org:8888/mpegif/ax11v.html
+    https://us.metamath.org/mpegif/ax11v.html
 
   I didn't try to recover ax-11 from this, but my guess is that we can.
 
   We can also eliminate the "distinctor" antecedent like this:
 
     ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) )
-    http://us2.metamath.org:8888/mpegif/ax11a.html
+    https://us.metamath.org/mpegif/ax11a.html
 
   which has no distinct variable restriction.  This is a curious
   theorem; I don't know if ax-11 can be recovered from it (that would
@@ -4773,7 +4773,7 @@ called "Dirac bra-ket notation deciphered."
 
 kbass6t completes the associative law series kbass1t-kbass6t.  I moved
 them to one place in the database for easier comparison:
-http://us2.metamath.org:8888/mpegif/mmtheorems80.html#kbass1t
+https://us.metamath.org/mpegif/mmtheorems80.html#kbass1t
 
 
 (19-Oct-2006) The mmnotes.txt entry of (4-Sep-2006) describes the
@@ -4860,7 +4860,7 @@ argument.
 
 (29-Sep-2006) eluniima allows us to reduce alephfp from 72 steps to 62
 steps.  Compare the older version still at
-http://us.metamath.org/mpegif/alephfp.html .  (I revisited alephfp
+https://us.metamath.org/mpegif/alephfp.html .  (I revisited alephfp
 after the discussion on http://planetx.cc.vt.edu/AsteroidMeta/metamath ).
 eluniima is interesting because there aren't any restrictions on A,
 which can be completely unrelated to the domain of F.
@@ -4890,7 +4890,7 @@ http://planetx.cc.vt.edu/AsteroidMeta/metamath ).  It has actually been
 modernized slightly, to remove the requirement that the empty set exist.
 This eliminates the need for the Axiom of Replacement, from which
 empty set existence is derived.  The original can be seen at
-http://de2.metamath.org/metamath/set.mm .
+https://de.metamath.org/metamath/set.mm .
 
 rankuni improves rankuniOLD of 17-Sep by eliminating the unnecessary
 hypothesis A e. V.  Although this will shorten future proofs, I
@@ -4952,7 +4952,7 @@ ax-rep description.)
 
 (7-Sep-2006) The set.mm database was reorganized so that the ZFC axioms
 are introduced more or less as required, as you can see in the new Table
-of Contents http://us2.metamath.org:8888/mpegif/mmtheorems.html#mmtc .
+of Contents https://us.metamath.org/mpegif/mmtheorems.html#mmtc .
 This lets you see what it is possible to prove by omitting certain
 axioms.  For example, we prove almost all of elementary set theory (that
 covered by Venn diagrams, etc.) using only the Axiom of Extensionality,
@@ -5020,7 +5020,7 @@ welcome.
 
 (3-Sep-2006) Although ax16b is utterly trivial, its purpose is simply to
 support the statement made in the 7th paragraph of
-http://us2.metamath.org:8888/mpegif/mmzfcnd.html
+https://us.metamath.org/mpegif/mmzfcnd.html
 
 
 (29-Aug-2006) The value of the ball function is a two-place function,
@@ -5138,7 +5138,7 @@ undistinguishable blue-greens.  Now, as experimentally determined, the
 transition from green to blue represents only 21% of the color values.
 
 You can see the new color spectrum at the top of a theorem list page
-such as http://us2.metamath.org:8888/mpegif/mmtheorems.html.
+such as https://us.metamath.org/mpegif/mmtheorems.html.
 
 The spectrum position to RGB conversion is done by the function
 spectrumToRGB in mmwtex.c of Metamath version 0.07.21 (20-Aug-2006).
@@ -5303,8 +5303,8 @@ of hypothesis.
 
 (17-Jul-2006) It is interesting that Munkres' definition of "a basis for
 a topology" can be shortened considerably.  Compare
-http://us2.metamath.org:8888/mpegif/isbasis3g.html (Munkres' version)
-with http://us2.metamath.org:8888/mpegif/isbasisg.html (abbreviated
+https://us.metamath.org/mpegif/isbasis3g.html (Munkres' version)
+with https://us.metamath.org/mpegif/isbasisg.html (abbreviated
 version).  Munkres' English-language definition is (p. 78):
 
   "Definition.  If X is a set, a _basis_ for a topology on X is a
@@ -5690,7 +5690,7 @@ working with.)
 
 
 (11-May-06) The Description for today's sumeqfv
-http://us2.metamath.org:8888/mpegif/sumeqfv.html mentions that A
+https://us.metamath.org/mpegif/sumeqfv.html mentions that A
 represents A(k) for those used to the standard way is would be written
 in a textbook, meaning that the class substituted for A would normally
 have a free variable k in it.  How do we know that A(k) is intended?  It
@@ -5721,7 +5721,7 @@ familiar to mathematically experienced readers.
 So why don't we just adopt the textbook-style notation as the underlying
 standard that Metamath is based on?  The answer is that the proof
 checker would be much more complicated.  Also, see the 2nd paragraph on
-http://us2.metamath.org:8888/mpegif/df-sb.html for a problem related to
+https://us.metamath.org/mpegif/df-sb.html for a problem related to
 using this notation to represent substitution, although this could be
 avoided (but with associated algorithmic complexity) if we were strict
 about assumptions (1) and (2) above.
@@ -5743,7 +5743,7 @@ philosophical goal to make the math as transparent as possible by using
 the simplest possible algorithm, and the $d method accomplished that (to
 my mind).  Or even better, in principle (although awkward in practice),
 the simplest algorithm would use only axioms that avoid $d's entirely:
-http://us2.metamath.org:8888/mpegif/mmzfcnd.html
+https://us.metamath.org/mpegif/mmzfcnd.html
 
 A problem with the explicit-free-variable approach is that it cannot
 represent set variables that don't have to be distinct, such as in
@@ -5791,7 +5791,7 @@ http://en.wikipedia.org/wiki/Riesz_representation_theorem
 
 (13-Apr-06) One thing to watch out for in the literature is how the
 author defines "operator".  I put some notes at
-http://us2.metamath.org:8888/mpegif/df-lnop.html on the various
+https://us.metamath.org/mpegif/df-lnop.html on the various
 definitions:  for some they are arbitrary mappings from H to H, for
 others they are linear, for still others they are linear and bounded.
 In set.mm, "operator" means an arbitrary mapping.
@@ -5855,7 +5855,7 @@ Both iunctb and iunfi are intended ultimately to be used by a Metamath
 development of topology, which Stefan Allan has started to look at.
 
 
-(1-Apr-06) Today's avril1 http://us2.metamath.org:8888/mpegif/avril1.html
+(1-Apr-06) Today's avril1 https://us.metamath.org/mpegif/avril1.html
 is a repeat of last year's, except for a small change in the
 description.  But I bring it up again in order to reply to last year's
 skeptics.
@@ -5916,8 +5916,8 @@ Therefore ( i ` 1 ) is also a legal class expression, and in fact it can
 be shown to be equal the empty set, which is the value of "meaningless"
 instances of df-fv, as shown for example by theorem ndmfv.
 
-http://us2.metamath.org:8888/mpegif/df-fv.html
-http://us2.metamath.org:8888/mpegif/ndmfv.html
+https://us.metamath.org/mpegif/df-fv.html
+https://us.metamath.org/mpegif/ndmfv.html
 
 Now that the technique has been revealed, I hope that next year someone
 else will make a contribution.  You have a year to work on it.
@@ -6517,7 +6517,7 @@ iuniin is the same as before but has an expanded comment, and also
 illustrates the new notation.
 
 (18-Oct-05) Today we show a shorter proof of the venerable theorem id.
-Compare the previous version at http://de2.metamath.org/mpegif/id.html .
+Compare the previous version at https://de.metamath.org/mpegif/id.html .
 
 fzvalt is the same as before but has an expanded comment.
 
@@ -6773,12 +6773,12 @@ was also simplified.
 (28-Jun-05) pm4.83 finally completes the entire collection of the 193
 propositional calculus theorems in Principia Mathematica.  This had been
 done before for the Metamath Solitaire applet in
-http://us2.metamath.org:8888/mmsolitaire/pmproofs.txt - but the set.mm
+https://us.metamath.org/mmsolitaire/pmproofs.txt - but the set.mm
 proofs are hierarchically structured to be short, indeed as short as I
 (or Roy Longton for some of them) could find.
 
 An ordered index of these can be found on the xref file
-http://us2.metamath.org:8888/mpegif/mmbiblio.html in the
+https://us.metamath.org/mpegif/mmbiblio.html in the
 [WhiteheadRussell] entries.
 
 (26-Jun-05) Yesterday's reuunixfr probably ranks among the most cryptic
@@ -6886,7 +6886,7 @@ that the argument is a complex number, making it trivial, for example,
 to eliminate the hypothesis "A e. V" of yesterday's cvgcmp3cet.
 
 (26-May-05) cvgcmp3cet is a pretty massive application of the Weak
-Deduction Theorem http://us.metamath.org/mpegif/mmdeduction.html that
+Deduction Theorem https://us.metamath.org/mpegif/mmdeduction.html that
 converts 8 hypotheses into antecedents.  A number of tricks were
 employed to make the proof sizes manageable.  I didn't bother with the
 final hypothesis, "A e. V", because it's trivial to eliminate with
@@ -7055,16 +7055,16 @@ p. 294.
 I added what I thought was a close approximation to P6 (without the
 redundant quantifier) here:
 
-  http://us2.metamath.org:8888/mpegif/sb10f.html
+  https://us.metamath.org/mpegif/sb10f.html
 
 The hypothesis specifies that x must not occur free in phi, and x and y
 must be distinct, as must necessarily be the case.
 
 Three other variants that are similar to P6 are:
 
-  http://us2.metamath.org:8888/mpegif/sb5.html
-  http://us2.metamath.org:8888/mpegif/sb5rf.html
-  http://us2.metamath.org:8888/mpegif/equsex.html ,
+  https://us.metamath.org/mpegif/sb5.html
+  https://us.metamath.org/mpegif/sb5rf.html
+  https://us.metamath.org/mpegif/equsex.html ,
 
 the last one implicitly substituting y for x in phi to result in psi.
 
@@ -7081,8 +7081,8 @@ formalization "hides" this by moving substitution outside of the axioms.
 
 You might want to re-read these that explain this in more detail:
 
-  http://us.metamath.org/mpegif/mmset.html#axiomnote
-  http://us.metamath.org/mpegif/mmset.html#traditional
+  https://us.metamath.org/mpegif/mmset.html#axiomnote
+  https://us.metamath.org/mpegif/mmset.html#traditional
 
 
 (8-May-05) While Euclid's classic proof that there are infinitely many
@@ -7247,7 +7247,7 @@ identical to Tarski's.  Still, I think the no-dummy-variable equid
 proof is neat and unexpected.
 
 (1-Apr-05) The Usenet announcement of Poisson d'Avril's theorem is here:
-http://groups-beta.google.com/group/sci.logic/browse_frm/thread/7aa9265da2819705/ee8862dd6adb3fad#ee8862dd6adb3fad
+http://groups.google.com/group/sci.logic/browse_frm/thread/7aa9265da2819705/ee8862dd6adb3fad#ee8862dd6adb3fad
 
 (26-Mar-05) geosum1, which you may be familiar with from high-school
 algebra, is the culmination of our initial development of infinite
@@ -7359,7 +7359,7 @@ to prove formally.
 (20-Feb-05) Well, I proved that ax0re is redundant as a complex number
 axiom, the first redundancy that anyone has found in 8 years.  0re
 replaces the old ax0re, and ax0re was removed from
-http://us2.metamath.org:8888/mpegif/mmcomplex.html .  0cn is a completely
+https://us.metamath.org/mpegif/mmcomplex.html .  0cn is a completely
 new proof of the old 0cn that doesn't depend on the old ax0re, and it
 provides the key to eventually proving 0re.  The table row on the
 mmcomplex.html page, after the grayed-out ax0re axiom label, shows the
@@ -7380,7 +7380,7 @@ redundancy of ax-11, but I haven't made any progress since.
 
 (17-Feb-05) I was somewhat surprised hbequid could be proved without
 ax-9.  (I found the proof while toying with the open problem of item #16
-at http://us2.metamath.org:8888/award2003.html .  That problem is still
+at https://us.metamath.org/award2003.html .  That problem is still
 unsolved, though.)
 
 (16-Feb-05) dfrdg2 (which uses yesterday's eqif) allows us to introduce
@@ -7391,7 +7391,7 @@ understand, but I think the use of the "if" operation improves its
 understandability a little.
 
 I cleaned up the list of traditional predicate calculus with equality
-axioms at http://us2.metamath.org:8888/mpegif/mmset.html#traditional and
+axioms at https://us.metamath.org/mpegif/mmset.html#traditional and
 added stdpc6 to match Mendelson's system exactly.
 
 What is very strange is why stdpc6 is quantified.  It is possible this
@@ -7407,7 +7407,7 @@ description.
 (15-Feb-05) eqif shows an example of what elimif is intended for.
 
 stdpc7 is a faithful emulation of the 5th traditional axiom
-at http://us2.metamath.org:8888/mpegif/mmset.html#traditional and
+at https://us.metamath.org/mpegif/mmset.html#traditional and
 replaces sbequ2, which wasn't quite right for that purpose.
 
 (13-Feb-05) 2eu6 is nice in that it, unlike 2eu4, only has one mention
@@ -7420,7 +7420,7 @@ As you can see 2eu6 was somewhat tedious to prove.
 
 (9-Feb-05) axaddopr and axmulopr can't be proved directly from the
 axioms for complex numbers shown at
-http://us.metamath.org/mpegif/mmcomplex.html , so I had to dig back into
+https://us.metamath.org/mpegif/mmcomplex.html , so I had to dig back into
 their construction.  Brings back memories - I haven't looked at it
 in years.
 
@@ -7436,7 +7436,7 @@ be "plugged in" trivially for anyone who prefers a different approach
 axaddopr and axmulopr will be used for some infinite sequence stuff
 because it will make some things slightly simpler.  However, I decided
 not to replace the "official" axioms at
-http://us.metamath.org/mpegif/mmcomplex.html with these because I think
+https://us.metamath.org/mpegif/mmcomplex.html with these because I think
 the official ones look nicer, and in principle they are sufficient.
 
 
@@ -7505,8 +7505,8 @@ tfinds.  By applying it to the 5 theorems in its referenced-by list, I
 reduced the net size of the set.mm database file (vs. before I added
 tfinds3).  In some cases I shortened them more:  compare (until the
 mirror site gets refreshed)
-http://us2.metamath.org:8888/mpegif/oacl.html (29 steps) vs.
-http://us.metamath.org/mpegif/oacl.html (41 steps)
+https://us.metamath.org/mpegif/oacl.html (29 steps) vs.
+https://us.metamath.org/mpegif/oacl.html (41 steps)
 
 (5-Jan-05) Again, compare oesuc to omsuc to see the additional
 complexity caused by the awkward traditional definition.
@@ -7520,7 +7520,7 @@ It uses the somewhat awkward traditional definition.  Compare it to omv
 for example; an alternate, but nontraditional, definition for
 exponentiation would be exactly as simple.  I decided on the current
 definition after a discussion here:
-http://groups-beta.google.com/group/sci.logic/browse_frm/thread/fac0ce315e8ea855
+http://groups.google.com/group/sci.logic/browse_frm/thread/fac0ce315e8ea855
 However it will be making a number of proofs, such as this one, more
 complex.
 
@@ -7646,7 +7646,7 @@ proof attempts).
 
 (3-Dec-04) Look at how easy the definition of factorial df-fac becomes
 using our new seq operation.  I'm very pleased.  (See
-http://us2.metamath.org:8888/mpegif/mmset.html#function for why the
+https://us.metamath.org/mpegif/mmset.html#function for why the
 notation is (!`n) instead of n!.)
 
 (2-Dec-04) I am torn whether to add a definition for the class of all
@@ -7669,7 +7669,7 @@ hypotheses.
 
 I added a new "feature" for those people who check the most
 recent proofs page every day.  You can go directly to the new theorems
-via http://us2.metamath.org:8888/mpegif/mmrecent.html#table without
+via https://us.metamath.org/mpegif/mmrecent.html#table without
 having to scroll down.
 
 (30-Nov-04) It is surprisingly difficult to generalize the integer B in
@@ -7773,7 +7773,7 @@ involves 39 lemmas, ruclem1 through ruclem39.
 (I artificially backdated the lemmas ruclem1 through ruclem39 so they
 won't clutter up the "most recent proofs" page.)
 
-See us2.metamath.org:8888/mpegif/mmcomplex.html#uncountable for a
+See https://us.metamath.org/mpegif/mmcomplex.html#uncountable for a
 detailed description.
 
 (17-Oct-04) I think df-seq is going to be extremely useful in the
@@ -8170,7 +8170,7 @@ of orthomodular lattices, which was proved and published independently
 by Foulis and Holland at almost exactly the same time.  I'm not sure who
 really came first but both are always credited.  This proof is identical
 in structure to the Quantum Logic Explorer version
-http://us2.metamath.org:8888/qlegif/fh1.html which you may wish to
+https://us.metamath.org/qlegif/fh1.html which you may wish to
 compare it to, and in fact I "borrowed" it from there.  You can see why
 the Quantum Logic Explorer is simpler to work with for these kinds of
 things:  we don't need "member of CH" hypotheses, and we don't have to
@@ -9163,4 +9163,4 @@ indexed unions out of the way for future use.
 
 
 Copyright terms for this file:  Public domain (see
-http://us.metamath.org/copyright.html#pd).
+https://us.metamath.org/copyright.html#pd).

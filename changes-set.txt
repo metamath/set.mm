@@ -94,12 +94,14 @@ proposed  syl6ibr   imbitrrdi
 proposed  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
 proposed  syl6bb    bitrdi      compare to bitri or bitrd
-proposed  syl6rbb   bitr2di     compare to bitr2i or bitr2d
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Aug-24 difexd    [same]      moved from SN's mathbox to main set.mm
+13-Aug-24 syl6rbb   bitr2di     compare to bitr2i or bitr2d
+12-Aug-24 disjdifr  [same]      moved from TA's mathbox to main set.mm
  7-Aug-24 tdeglem4  [same]      revised - eliminated unnecessary antecedent
  7-Aug-24 tdeglem3  [same]      revised - eliminated unnecessary antecedent
  7-Aug-24 tdeglem1  [same]      revised - eliminated unnecessary antecedent
@@ -9135,7 +9137,7 @@ Date      Old       New         Notes
 24-Feb-13 sbceq1dig sbceq1g
 24-Feb-13 sbceqdig  sbceqg
 24-Feb-13 sbcbidig  sbcbig
-21-Feb-13 ---       ---         See http://us.metamath.org/mpeuni/mmnotes.txt
+21-Feb-13 ---       ---         See https://us.metamath.org/mpeuni/mmnotes.txt
 21-Feb-13 ---       ---         entry of 21-Feb-13 for instructions for
 21-Feb-13 ---       ---         the changes below.
 21-Feb-13 sylan     [--same--]  reordered hypotheses for better logical flow
