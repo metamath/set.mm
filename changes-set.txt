@@ -100,6 +100,7 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
  4-Aug-24 dfrp2     [same]      moved from TA's mathbox to main set.mm
+18-Aug-24 difexd    [same]      moved from SN's mathbox to main set.mm
 13-Aug-24 syl6rbb   bitr2di     compare to bitr2i or bitr2d
 12-Aug-24 disjdifr  [same]      moved from TA's mathbox to main set.mm
  7-Aug-24 tdeglem4  [same]      revised - eliminated unnecessary antecedent
