@@ -112,6 +112,13 @@
 "basendx" is used by "topgrpstrd".
 "bj-axemptylem" is used by "bj-axempty".
 "bj-axemptylem" is used by "bj-axempty2".
+"cbv3" is used by "bdsetindis".
+"cbv3" is used by "cbv1".
+"cbv3" is used by "cbv3h".
+"cbv3" is used by "cbv3v".
+"cbv3" is used by "mo23".
+"cbv3" is used by "mo2n".
+"cbv3" is used by "setindis".
 "cnm" is used by "axaddf".
 "cnm" is used by "axmulf".
 "csbco" is used by "csbcow".
@@ -368,6 +375,7 @@ New usage of "bj-nndcALT" is discouraged (0 uses).
 New usage of "bj-omex2" is discouraged (0 uses).
 New usage of "bj-omssonALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
+New usage of "cbv3" is discouraged (7 uses).
 New usage of "cnm" is discouraged (2 uses).
 New usage of "condcOLD" is discouraged (0 uses).
 New usage of "conventions" is discouraged (0 uses).
