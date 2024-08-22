@@ -13314,6 +13314,7 @@
 "syl6bb" is used by "acsfn1".
 "syl6bb" is used by "addcmpblnr".
 "syl6bb" is used by "addltmul".
+"syl6bb" is used by "addsid1".
 "syl6bb" is used by "adjeu".
 "syl6bb" is used by "adjsym".
 "syl6bb" is used by "adjval2".
@@ -13659,6 +13660,7 @@
 "syl6bb" is used by "fneval".
 "syl6bb" is used by "fnopafv2b".
 "syl6bb" is used by "fnopafvb".
+"syl6bb" is used by "fnssintima".
 "syl6bb" is used by "fnwelem".
 "syl6bb" is used by "fodomr".
 "syl6bb" is used by "fourierdlem105".
@@ -13687,6 +13689,7 @@
 "syl6bb" is used by "frgrwopreglem2".
 "syl6bb" is used by "frlmelbas".
 "syl6bb" is used by "frrlem1".
+"syl6bb" is used by "frxp2".
 "syl6bb" is used by "fseqenlem1".
 "syl6bb" is used by "fsovrfovd".
 "syl6bb" is used by "fsumcvg4".
@@ -13989,7 +13992,6 @@
 "syl6bb" is used by "lineunray".
 "syl6bb" is used by "llnexatN".
 "syl6bb" is used by "llnexchb2".
-"syl6bb" is used by "llt".
 "syl6bb" is used by "lly1stc".
 "syl6bb" is used by "llyi".
 "syl6bb" is used by "lmbr".
@@ -14038,7 +14040,9 @@
 "syl6bb" is used by "lvecinv".
 "syl6bb" is used by "lvecvscan2".
 "syl6bb" is used by "m1lgs".
+"syl6bb" is used by "madebday".
 "syl6bb" is used by "madebdayim".
+"syl6bb" is used by "madebdaylemlrcut".
 "syl6bb" is used by "maducoeval2".
 "syl6bb" is used by "mapdm0".
 "syl6bb" is used by "mapen".
@@ -14096,6 +14100,7 @@
 "syl6bb" is used by "negcon2".
 "syl6bb" is used by "neificl".
 "syl6bb" is used by "nelun".
+"syl6bb" is used by "newbday".
 "syl6bb" is used by "nfpconfp".
 "syl6bb" is used by "nllyi".
 "syl6bb" is used by "nmfnleub".
@@ -14114,17 +14119,20 @@
 "syl6bb" is used by "nnolog2flm1".
 "syl6bb" is used by "nnsum3primesgbe".
 "syl6bb" is used by "nnwof".
+"syl6bb" is used by "no2indslem".
 "syl6bb" is used by "noextenddif".
 "syl6bb" is used by "noinfbnd1lem1".
 "syl6bb" is used by "noinfcbv".
 "syl6bb" is used by "noinfdm".
 "syl6bb" is used by "noinfno".
+"syl6bb" is used by "noinfprefixmo".
 "syl6bb" is used by "noinfres".
 "syl6bb" is used by "nosepssdm".
 "syl6bb" is used by "nosupbnd1lem1".
 "syl6bb" is used by "nosupcbv".
 "syl6bb" is used by "nosupno".
 "syl6bb" is used by "nosupprefixmo".
+"syl6bb" is used by "noxpordpred".
 "syl6bb" is used by "nrmmetd".
 "syl6bb" is used by "ntrclsiso".
 "syl6bb" is used by "ntrclsk13".
@@ -14221,6 +14229,7 @@
 "syl6bb" is used by "poimirlem32".
 "syl6bb" is used by "poimirlem8".
 "syl6bb" is used by "poxp".
+"syl6bb" is used by "poxp2".
 "syl6bb" is used by "pridl".
 "syl6bb" is used by "pridlidl".
 "syl6bb" is used by "pridlnr".
@@ -14283,7 +14292,6 @@
 "syl6bb" is used by "rexsupp".
 "syl6bb" is used by "rexuz".
 "syl6bb" is used by "rfovcnvf1od".
-"syl6bb" is used by "rgt".
 "syl6bb" is used by "rhmpreimacnlem".
 "syl6bb" is used by "ringcinv".
 "syl6bb" is used by "ringcinvALTV".
@@ -14471,6 +14479,8 @@
 "syl6bb" is used by "xnn01gt".
 "syl6bb" is used by "xpdom2".
 "syl6bb" is used by "xpf1o".
+"syl6bb" is used by "xpord2lem".
+"syl6bb" is used by "xpord2pred".
 "syl6bb" is used by "xporderlem".
 "syl6bb" is used by "xpwdomg".
 "syl6bb" is used by "xrltlen".
@@ -19757,7 +19767,7 @@ New usage of "supsrlem" is discouraged (1 uses).
 New usage of "swrdnznd" is discouraged (1 uses).
 New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
-New usage of "syl6bb" is discouraged (1201 uses).
+New usage of "syl6bb" is discouraged (1211 uses).
 New usage of "symgsubmefmndALT" is discouraged (0 uses).
 New usage of "tarski-bernays-ax2" is discouraged (0 uses).
 New usage of "tb-ax1" is discouraged (3 uses).
