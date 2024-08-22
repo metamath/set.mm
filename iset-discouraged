@@ -165,6 +165,11 @@
 "eu3h" is used by "2eu4".
 "eu3h" is used by "eu3".
 "eu3h" is used by "mo2r".
+"fprodsplitdc" is used by "fprod1p".
+"fprodsplitdc" is used by "fprodeq0".
+"fprodsplitdc" is used by "fprodm1".
+"fprodsplitdc" is used by "fprodsplit".
+"fprodsplitdc" is used by "fprodunsn".
 "hbs1" is used by "eu1".
 "hbs1" is used by "hbab1".
 "hbs1" is used by "mopick".
@@ -402,6 +407,7 @@ New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
+New usage of "fprodsplitdc" is discouraged (5 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
 New usage of "idi" is discouraged (0 uses).
