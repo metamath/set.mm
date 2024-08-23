@@ -11436,6 +11436,7 @@
 "pclvalN" is used by "pclidN".
 "pclvalN" is used by "pclssN".
 "pclvalN" is used by "pclssidN".
+"permsetexOLD" is used by "symgbasexOLD".
 "pexmidlem1N" is used by "pexmidlem3N".
 "pexmidlem2N" is used by "pexmidlem3N".
 "pexmidlem3N" is used by "pexmidlem4N".
@@ -18946,6 +18947,7 @@ New usage of "pclssidN" is discouraged (3 uses).
 New usage of "pclun2N" is discouraged (0 uses).
 New usage of "pclunN" is discouraged (1 uses).
 New usage of "pclvalN" is discouraged (6 uses).
+New usage of "permsetexOLD" is discouraged (1 uses).
 New usage of "perpdragALT" is discouraged (0 uses).
 New usage of "pexmidALTN" is discouraged (0 uses).
 New usage of "pexmidN" is discouraged (0 uses).
@@ -19771,6 +19773,7 @@ New usage of "swrdnznd" is discouraged (1 uses).
 New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
 New usage of "syl6bb" is discouraged (1212 uses).
+New usage of "symgbasexOLD" is discouraged (0 uses).
 New usage of "symgsubmefmndALT" is discouraged (0 uses).
 New usage of "tarski-bernays-ax2" is discouraged (0 uses).
 New usage of "tb-ax1" is discouraged (3 uses).
@@ -21244,6 +21247,7 @@ Proof modification of "ordelordALTVD" is discouraged (202 steps).
 Proof modification of "orim12dALT" is discouraged (34 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
+Proof modification of "permsetexOLD" is discouraged (42 steps).
 Proof modification of "perpdragALT" is discouraged (241 steps).
 Proof modification of "pige3ALT" is discouraged (1082 steps).
 Proof modification of "pm2.18OLD" is discouraged (18 steps).
@@ -21462,6 +21466,7 @@ Proof modification of "supp0cosupp0OLD" is discouraged (176 steps).
 Proof modification of "suppssOLD" is discouraged (180 steps).
 Proof modification of "syl5imp" is discouraged (23 steps).
 Proof modification of "syl5impVD" is discouraged (57 steps).
+Proof modification of "symgbasexOLD" is discouraged (24 steps).
 Proof modification of "symgsubmefmndALT" is discouraged (129 steps).
 Proof modification of "symrefref3" is discouraged (75 steps).
 Proof modification of "tarski-bernays-ax2" is discouraged (557 steps).
