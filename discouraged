@@ -5937,6 +5937,7 @@
 "eleigveccl" is used by "eighmorth".
 "eleigveccl" is used by "eighmre".
 "eleigveccl" is used by "eigvalcl".
+"eleq2w2" is used by "nfceqdf".
 "elghomOLD" is used by "ghomco".
 "elghomOLD" is used by "ghomf".
 "elghomOLD" is used by "ghomidOLD".
@@ -17130,6 +17131,7 @@ New usage of "eleigvec" is discouraged (2 uses).
 New usage of "eleigvec2" is discouraged (2 uses).
 New usage of "eleigveccl" is discouraged (3 uses).
 New usage of "eleq2dALT" is discouraged (0 uses).
+New usage of "eleq2w2" is discouraged (1 uses).
 New usage of "elex22VD" is discouraged (0 uses).
 New usage of "elex2VD" is discouraged (0 uses).
 New usage of "elfvmptrab1" is discouraged (0 uses).
@@ -18498,6 +18500,7 @@ New usage of "nfae" is discouraged (22 uses).
 New usage of "nfald2" is discouraged (6 uses).
 New usage of "nfccdeq" is discouraged (0 uses).
 New usage of "nfcdeq" is discouraged (1 uses).
+New usage of "nfceqdfOLD" is discouraged (0 uses).
 New usage of "nfcrALT" is discouraged (0 uses).
 New usage of "nfcriOLD" is discouraged (0 uses).
 New usage of "nfcriOLDOLD" is discouraged (0 uses).
@@ -20675,6 +20678,7 @@ Proof modification of "el123" is discouraged (26 steps).
 Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
+Proof modification of "eleq2w2" is discouraged (22 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
 Proof modification of "elghomOLD" is discouraged (117 steps).
@@ -21143,6 +21147,7 @@ Proof modification of "nelbOLD" is discouraged (81 steps).
 Proof modification of "neq0OLD" is discouraged (6 steps).
 Proof modification of "nf5rOLD" is discouraged (22 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
+Proof modification of "nfceqdfOLD" is discouraged (48 steps).
 Proof modification of "nfcrALT" is discouraged (20 steps).
 Proof modification of "nfcriOLD" is discouraged (101 steps).
 Proof modification of "nfcriOLDOLD" is discouraged (67 steps).
