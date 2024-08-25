@@ -15577,7 +15577,6 @@ New usage of "bj-1" is discouraged (0 uses).
 New usage of "bj-aleximiALT" is discouraged (0 uses).
 New usage of "bj-ax12v3ALT" is discouraged (0 uses).
 New usage of "bj-ax6e" is discouraged (0 uses).
-New usage of "bj-ax9" is discouraged (0 uses).
 New usage of "bj-axc11nv" is discouraged (0 uses).
 New usage of "bj-axc4" is discouraged (0 uses).
 New usage of "bj-axd2d" is discouraged (0 uses).
@@ -18498,6 +18497,7 @@ New usage of "nfae" is discouraged (22 uses).
 New usage of "nfald2" is discouraged (6 uses).
 New usage of "nfccdeq" is discouraged (0 uses).
 New usage of "nfcdeq" is discouraged (1 uses).
+New usage of "nfceqdfOLD" is discouraged (0 uses).
 New usage of "nfcrALT" is discouraged (0 uses).
 New usage of "nfcriOLD" is discouraged (0 uses).
 New usage of "nfcriOLDOLD" is discouraged (0 uses).
@@ -20196,7 +20196,6 @@ Proof modification of "bj-ax12v3ALT" is discouraged (44 steps).
 Proof modification of "bj-ax6e" is discouraged (43 steps).
 Proof modification of "bj-ax6elem1" is discouraged (27 steps).
 Proof modification of "bj-ax6elem2" is discouraged (23 steps).
-Proof modification of "bj-ax9" is discouraged (29 steps).
 Proof modification of "bj-axc10" is discouraged (30 steps).
 Proof modification of "bj-axc10v" is discouraged (37 steps).
 Proof modification of "bj-axc11nv" is discouraged (5 steps).
@@ -21143,6 +21142,7 @@ Proof modification of "nelbOLD" is discouraged (81 steps).
 Proof modification of "neq0OLD" is discouraged (6 steps).
 Proof modification of "nf5rOLD" is discouraged (22 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
+Proof modification of "nfceqdfOLD" is discouraged (48 steps).
 Proof modification of "nfcrALT" is discouraged (20 steps).
 Proof modification of "nfcriOLD" is discouraged (101 steps).
 Proof modification of "nfcriOLDOLD" is discouraged (67 steps).
