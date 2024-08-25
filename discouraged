@@ -14196,7 +14196,6 @@
 "syl6bb" is used by "pc11".
 "syl6bb" is used by "pceu".
 "syl6bb" is used by "pclcmpatN".
-"syl6bb" is used by "pdivsq".
 "syl6bb" is used by "pell1234qrmulcl".
 "syl6bb" is used by "pfxsuffeqwrdeq".
 "syl6bb" is used by "pgpfac1lem3".
@@ -14237,6 +14236,7 @@
 "syl6bb" is used by "prlem934".
 "syl6bb" is used by "prlem936".
 "syl6bb" is used by "prmdvdsexp".
+"syl6bb" is used by "prmdvdssqOLD".
 "syl6bb" is used by "prmind2".
 "syl6bb" is used by "prmirredlem".
 "syl6bb" is used by "prmlem0".
@@ -18943,7 +18943,6 @@ New usage of "pclssidN" is discouraged (3 uses).
 New usage of "pclun2N" is discouraged (0 uses).
 New usage of "pclunN" is discouraged (1 uses).
 New usage of "pclvalN" is discouraged (6 uses).
-New usage of "pdivsqOLD" is discouraged (0 uses).
 New usage of "perpdragALT" is discouraged (0 uses).
 New usage of "pexmidALTN" is discouraged (0 uses).
 New usage of "pexmidN" is discouraged (0 uses).
@@ -19181,6 +19180,7 @@ New usage of "prclisacycgr" is discouraged (0 uses).
 New usage of "preleqALT" is discouraged (0 uses).
 New usage of "prlem934" is discouraged (3 uses).
 New usage of "prlem936" is discouraged (1 uses).
+New usage of "prmdvdssqOLD" is discouraged (0 uses).
 New usage of "prmgaplcm" is discouraged (0 uses).
 New usage of "prmgapprmo" is discouraged (0 uses).
 New usage of "prn0" is discouraged (8 uses).
@@ -21239,7 +21239,6 @@ Proof modification of "ordelordALT" is discouraged (128 steps).
 Proof modification of "ordelordALTVD" is discouraged (202 steps).
 Proof modification of "orim12dALT" is discouraged (34 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
-Proof modification of "pdivsqOLD" is discouraged (62 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
 Proof modification of "perpdragALT" is discouraged (241 steps).
 Proof modification of "pige3ALT" is discouraged (1082 steps).
@@ -21250,6 +21249,7 @@ Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
 Proof modification of "pm2.61iOLD" is discouraged (13 steps).
 Proof modification of "preleqALT" is discouraged (115 steps).
+Proof modification of "prmdvdssqOLD" is discouraged (62 steps).
 Proof modification of "prmgaplcm" is discouraged (247 steps).
 Proof modification of "prmgapprmo" is discouraged (387 steps).
 Proof modification of "problem1" is discouraged (20 steps).
