@@ -93,7 +93,7 @@ proposed  syl6ib    imbitrdi
 proposed  syl6ibr   imbitrrdi
 proposed  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
-proposed  syl6bb    bitrdi      compare to bitri or bitrd
+underway  syl6bb    bitrdi      compare to bitri or bitrd
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
@@ -103,6 +103,7 @@ Date      Old       New         Notes
 24-Aug-24 pdivsq    prmdvdssq   moved from SF's mathbox to main set.mm
 24-Aug-24 dvdstrd   [same]      moved from MKU's mathbox to main set.mm
 23-Aug-24 qred      [same]      moved from GS's mathbox to main set.mm
+21-Aug-24 2exp11    [same]      moved from AV's mathbox to main set.mm
 20-Aug-24 uzssre    [same]      moved from GS's mathbox to main set.mm
 20-Aug-24 brsnop    [same]      moved from TA's mathbox to main set.mm
 19-Aug-24 dfrp2     [same]      moved from TA's mathbox to main set.mm
@@ -122,6 +123,7 @@ Date      Old       New         Notes
 18-Aug-24 reldmprds [same]      revised - compatibility with new df-prds
 18-Aug-24 df-prds   [same]      revised - fixed the comp part
 18-Aug-24 difexd    [same]      moved from SN's mathbox to main set.mm
+18-Aug-24 ifexd     [same]      moved from SN's mathbox to main set.mm
 13-Aug-24 syl6rbb   bitr2di     compare to bitr2i or bitr2d
 12-Aug-24 disjdifr  [same]      moved from TA's mathbox to main set.mm
  7-Aug-24 tdeglem4  [same]      revised - eliminated unnecessary antecedent
