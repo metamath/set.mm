@@ -17192,12 +17192,12 @@ $)
     $d x z $.  $d y z $.
     sb7f.1 $e |- F/ z ph $.
     $( This version of ~ dfsb7 does not require that ` ph ` and ` z ` be
-       distinct.  This permits it to be used as a definition for substitution
-       in a formalization that omits the logically redundant axiom ~ ax-17 i.e.
-       that doesn't have the concept of a variable not occurring in a wff.
-       ( ~ df-sb is also suitable, but its mixing of free and bound variables
-       is distasteful to some logicians.)  (Contributed by NM, 26-Jul-2006.)
-       (Revised by Mario Carneiro, 6-Oct-2016.) $)
+       disjoint.  This permits it to be used as a definition for substitution
+       in a formalization that omits the logically redundant axiom ~ ax-17 ,
+       i.e., that does not have the concept of a variable not occurring in a
+       formula.  (Definition ~ df-sb is also suitable, but its mixing of free
+       and bound variables is distasteful to some logicians.)  (Contributed by
+       NM, 26-Jul-2006.)  (Revised by Mario Carneiro, 6-Oct-2016.) $)
     sb7f $p |- ( [ y / x ] ph <->
                E. z ( z = y /\ E. x ( x = z /\ ph ) ) ) $=
       ( wsb weq wa wex sb5 sbbii sbco2 3bitr3i ) ABDFZDCFBDGAHBIZDCFABCFDCGOHDI
@@ -17208,12 +17208,12 @@ $)
     $d x z $.  $d y z $.
     sb7h.1 $e |- ( ph -> A. z ph ) $.
     $( This version of ~ dfsb7 does not require that ` ph ` and ` z ` be
-       distinct.  This permits it to be used as a definition for substitution
-       in a formalization that omits the logically redundant axiom ~ ax-17 i.e.
-       that doesn't have the concept of a variable not occurring in a wff.
-       ( ~ df-sb is also suitable, but its mixing of free and bound variables
-       is distasteful to some logicians.)  (Contributed by NM, 26-Jul-2006.)
-       (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+       disjoint.  This permits it to be used as a definition for substitution
+       in a formalization that omits the logically redundant axiom ~ ax-17 ,
+       i.e., that does not have the concept of a variable not occurring in a
+       formula.  (Definition ~ df-sb is also suitable, but its mixing of free
+       and bound variables is distasteful to some logicians.)  (Contributed by
+       NM, 26-Jul-2006.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
     sb7h $p |- ( [ y / x ] ph <->
                E. z ( z = y /\ E. x ( x = z /\ ph ) ) ) $=
       ( nfi sb7f ) ABCDADEFG $.
@@ -32289,8 +32289,8 @@ $)
        inference's hypothesis eliminated with ~ elimhyp .  If the inference has
        other hypotheses with class variable ` A ` , these can be kept by
        assigning ~ keephyp to them.  For more information, see the Deduction
-       Theorem ~ https://us.metamath.org/mpeuni/mmdeduction.html .  (Contributed
-       by NM, 15-May-1999.) $)
+       Theorem ~ https://us.metamath.org/mpeuni/mmdeduction.html .
+       (Contributed by NM, 15-May-1999.) $)
     dedth $p |- ( ph -> ps ) $=
       ( cif wceq wb iftrue eqcomd syl mpbiri ) ABCGADADEHZIBCJAODADEKLFMN $.
   $}
@@ -41430,7 +41430,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
               ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i
                 Ins2_k _S_k ) "_k ~P1 ~P1 1c )
         i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k
-      ~P1 ~P1 1c ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1  ~P1 1c ) )
+      ~P1 ~P1 1c ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1 ~P1 1c ) )
                                                      <-> _S[fin] ( A , B ) ) $=
       ( vx vt vy vz copk cnnc wcel cssetk wa wex wceq exbii 3bitr4i snex 3bitri
       csn cxpk c1c cpw cvv cins3k csik cins2k csymdif cpw1 cimak cdif ccompl cv
