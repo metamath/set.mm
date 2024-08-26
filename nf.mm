@@ -17195,9 +17195,8 @@ $)
        disjoint.  This permits it to be used as a definition for substitution
        in a formalization that omits the logically redundant axiom ~ ax-17 ,
        i.e., that does not have the concept of a variable not occurring in a
-       formula.  (Definition ~ df-sb is also suitable, but its mixing of free
-       and bound variables is distasteful to some logicians.)  (Contributed by
-       NM, 26-Jul-2006.)  (Revised by Mario Carneiro, 6-Oct-2016.) $)
+       formula.  (Contributed by NM, 26-Jul-2006.)  (Revised by Mario Carneiro,
+       6-Oct-2016.) $)
     sb7f $p |- ( [ y / x ] ph <->
                E. z ( z = y /\ E. x ( x = z /\ ph ) ) ) $=
       ( wsb weq wa wex sb5 sbbii sbco2 3bitr3i ) ABDFZDCFBDGAHBIZDCFABCFDCGOHDI
@@ -17211,9 +17210,8 @@ $)
        disjoint.  This permits it to be used as a definition for substitution
        in a formalization that omits the logically redundant axiom ~ ax-17 ,
        i.e., that does not have the concept of a variable not occurring in a
-       formula.  (Definition ~ df-sb is also suitable, but its mixing of free
-       and bound variables is distasteful to some logicians.)  (Contributed by
-       NM, 26-Jul-2006.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+       formula.  (Contributed by NM, 26-Jul-2006.)  (Proof shortened by Andrew
+       Salmon, 25-May-2011.) $)
     sb7h $p |- ( [ y / x ] ph <->
                E. z ( z = y /\ E. x ( x = z /\ ph ) ) ) $=
       ( nfi sb7f ) ABCDADEFG $.
