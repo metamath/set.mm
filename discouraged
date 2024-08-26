@@ -11436,6 +11436,7 @@
 "pclvalN" is used by "pclidN".
 "pclvalN" is used by "pclssN".
 "pclvalN" is used by "pclssidN".
+"permsetexOLD" is used by "symgbasexOLD".
 "pexmidlem1N" is used by "pexmidlem3N".
 "pexmidlem2N" is used by "pexmidlem3N".
 "pexmidlem3N" is used by "pexmidlem4N".
@@ -13739,6 +13740,7 @@
 "syl6bb" is used by "hasheqf1o".
 "syl6bb" is used by "hashf1".
 "syl6bb" is used by "hashfacen".
+"syl6bb" is used by "hashfacenOLD".
 "syl6bb" is used by "hashge2el2difr".
 "syl6bb" is used by "hashtpg".
 "syl6bb" is used by "hausdiag".
@@ -15579,7 +15581,6 @@ New usage of "bj-1" is discouraged (0 uses).
 New usage of "bj-aleximiALT" is discouraged (0 uses).
 New usage of "bj-ax12v3ALT" is discouraged (0 uses).
 New usage of "bj-ax6e" is discouraged (0 uses).
-New usage of "bj-ax9" is discouraged (0 uses).
 New usage of "bj-axc11nv" is discouraged (0 uses).
 New usage of "bj-axc4" is discouraged (0 uses).
 New usage of "bj-axd2d" is discouraged (0 uses).
@@ -16879,6 +16880,7 @@ New usage of "dmdoc1i" is discouraged (1 uses).
 New usage of "dmdoc2i" is discouraged (2 uses).
 New usage of "dmdsl3" is discouraged (4 uses).
 New usage of "dmdsym" is discouraged (1 uses).
+New usage of "dmfexALT" is discouraged (0 uses).
 New usage of "dmmp" is discouraged (3 uses).
 New usage of "dmmpogaOLD" is discouraged (0 uses).
 New usage of "dmmulpi" is discouraged (6 uses).
@@ -17475,6 +17477,8 @@ New usage of "h2hva" is discouraged (9 uses).
 New usage of "h2hvs" is discouraged (2 uses).
 New usage of "hadcomaOLD" is discouraged (0 uses).
 New usage of "halfnq" is discouraged (1 uses).
+New usage of "hashf1lem1OLD" is discouraged (0 uses).
+New usage of "hashfacenOLD" is discouraged (0 uses).
 New usage of "hatomic" is discouraged (1 uses).
 New usage of "hatomici" is discouraged (6 uses).
 New usage of "hatomistici" is discouraged (1 uses).
@@ -18500,6 +18504,7 @@ New usage of "nfae" is discouraged (22 uses).
 New usage of "nfald2" is discouraged (6 uses).
 New usage of "nfccdeq" is discouraged (0 uses).
 New usage of "nfcdeq" is discouraged (1 uses).
+New usage of "nfceqdfOLD" is discouraged (0 uses).
 New usage of "nfcrALT" is discouraged (0 uses).
 New usage of "nfcriOLD" is discouraged (0 uses).
 New usage of "nfcriOLDOLD" is discouraged (0 uses).
@@ -18945,6 +18950,7 @@ New usage of "pclssidN" is discouraged (3 uses).
 New usage of "pclun2N" is discouraged (0 uses).
 New usage of "pclunN" is discouraged (1 uses).
 New usage of "pclvalN" is discouraged (6 uses).
+New usage of "permsetexOLD" is discouraged (1 uses).
 New usage of "perpdragALT" is discouraged (0 uses).
 New usage of "pexmidALTN" is discouraged (0 uses).
 New usage of "pexmidN" is discouraged (0 uses).
@@ -19769,7 +19775,8 @@ New usage of "supsrlem" is discouraged (1 uses).
 New usage of "swrdnznd" is discouraged (1 uses).
 New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
-New usage of "syl6bb" is discouraged (1213 uses).
+New usage of "syl6bb" is discouraged (1214 uses).
+New usage of "symgbasexOLD" is discouraged (0 uses).
 New usage of "symgsubmefmndALT" is discouraged (0 uses).
 New usage of "tarski-bernays-ax2" is discouraged (0 uses).
 New usage of "tb-ax1" is discouraged (3 uses).
@@ -20198,7 +20205,6 @@ Proof modification of "bj-ax12v3ALT" is discouraged (44 steps).
 Proof modification of "bj-ax6e" is discouraged (43 steps).
 Proof modification of "bj-ax6elem1" is discouraged (27 steps).
 Proof modification of "bj-ax6elem2" is discouraged (23 steps).
-Proof modification of "bj-ax9" is discouraged (29 steps).
 Proof modification of "bj-axc10" is discouraged (30 steps).
 Proof modification of "bj-axc10v" is discouraged (37 steps).
 Proof modification of "bj-axc11nv" is discouraged (5 steps).
@@ -20500,6 +20506,7 @@ Proof modification of "disjOLD" is discouraged (71 steps).
 Proof modification of "dju1p1e2" is discouraged (72 steps).
 Proof modification of "dju1p1e2ALT" is discouraged (34 steps).
 Proof modification of "djuexALT" is discouraged (51 steps).
+Proof modification of "dmfexALT" is discouraged (25 steps).
 Proof modification of "dmmpogaOLD" is discouraged (31 steps).
 Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "domepOLD" is discouraged (51 steps).
@@ -20969,6 +20976,8 @@ Proof modification of "gsumbagdiagOLD" is discouraged (209 steps).
 Proof modification of "gsumbagdiaglemOLD" is discouraged (571 steps).
 Proof modification of "gsumccatOLD" is discouraged (996 steps).
 Proof modification of "hadcomaOLD" is discouraged (37 steps).
+Proof modification of "hashf1lem1OLD" is discouraged (886 steps).
+Proof modification of "hashfacenOLD" is discouraged (753 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
 Proof modification of "hba1-o" is discouraged (34 steps).
 Proof modification of "hbae-o" is discouraged (85 steps).
@@ -21145,6 +21154,7 @@ Proof modification of "nelbOLD" is discouraged (81 steps).
 Proof modification of "neq0OLD" is discouraged (6 steps).
 Proof modification of "nf5rOLD" is discouraged (22 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
+Proof modification of "nfceqdfOLD" is discouraged (48 steps).
 Proof modification of "nfcrALT" is discouraged (20 steps).
 Proof modification of "nfcriOLD" is discouraged (101 steps).
 Proof modification of "nfcriOLDOLD" is discouraged (67 steps).
@@ -21241,6 +21251,7 @@ Proof modification of "ordelordALTVD" is discouraged (202 steps).
 Proof modification of "orim12dALT" is discouraged (34 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
+Proof modification of "permsetexOLD" is discouraged (42 steps).
 Proof modification of "perpdragALT" is discouraged (241 steps).
 Proof modification of "pige3ALT" is discouraged (1082 steps).
 Proof modification of "pm2.18OLD" is discouraged (18 steps).
@@ -21459,6 +21470,7 @@ Proof modification of "supp0cosupp0OLD" is discouraged (176 steps).
 Proof modification of "suppssOLD" is discouraged (180 steps).
 Proof modification of "syl5imp" is discouraged (23 steps).
 Proof modification of "syl5impVD" is discouraged (57 steps).
+Proof modification of "symgbasexOLD" is discouraged (24 steps).
 Proof modification of "symgsubmefmndALT" is discouraged (129 steps).
 Proof modification of "symrefref3" is discouraged (75 steps).
 Proof modification of "tarski-bernays-ax2" is discouraged (557 steps).

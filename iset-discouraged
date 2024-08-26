@@ -112,6 +112,13 @@
 "basendx" is used by "topgrpstrd".
 "bj-axemptylem" is used by "bj-axempty".
 "bj-axemptylem" is used by "bj-axempty2".
+"cbv3" is used by "bdsetindis".
+"cbv3" is used by "cbv1".
+"cbv3" is used by "cbv3h".
+"cbv3" is used by "cbv3v".
+"cbv3" is used by "mo23".
+"cbv3" is used by "mo2n".
+"cbv3" is used by "setindis".
 "cnm" is used by "axaddf".
 "cnm" is used by "axmulf".
 "csbco" is used by "csbcow".
@@ -158,6 +165,11 @@
 "eu3h" is used by "2eu4".
 "eu3h" is used by "eu3".
 "eu3h" is used by "mo2r".
+"fprodsplitdc" is used by "fprod1p".
+"fprodsplitdc" is used by "fprodeq0".
+"fprodsplitdc" is used by "fprodm1".
+"fprodsplitdc" is used by "fprodsplit".
+"fprodsplitdc" is used by "fprodunsn".
 "hbs1" is used by "eu1".
 "hbs1" is used by "hbab1".
 "hbs1" is used by "mopick".
@@ -171,6 +183,49 @@
 "mo3h" is used by "moim".
 "mo3h" is used by "moimv".
 "mo3h" is used by "mopick".
+"nfraldxy" is used by "nfraldya".
+"nfraldxy" is used by "nfralxy".
+"nfraldxy" is used by "strcollnft".
+"nfralxy" is used by "ac6sfi".
+"nfralxy" is used by "bdsetindis".
+"nfralxy" is used by "bezoutlemmain".
+"nfralxy" is used by "cnmpt21".
+"nfralxy" is used by "dff13f".
+"nfralxy" is used by "fisumcom2".
+"nfralxy" is used by "fmpox".
+"nfralxy" is used by "fsum2dlemstep".
+"nfralxy" is used by "fun11iun".
+"nfralxy" is used by "funimaexglem".
+"nfralxy" is used by "fzrevral".
+"nfralxy" is used by "ismkvnex".
+"nfralxy" is used by "ismkvnnlem".
+"nfralxy" is used by "isomninnlem".
+"nfralxy" is used by "iswomninnlem".
+"nfralxy" is used by "lble".
+"nfralxy" is used by "mpoeq123".
+"nfralxy" is used by "nfcprod".
+"nfralxy" is used by "nfcprod1".
+"nfralxy" is used by "nffrfor".
+"nfralxy" is used by "nfiinxy".
+"nfralxy" is used by "nfint".
+"nfralxy" is used by "nfiso".
+"nfralxy" is used by "nfofr".
+"nfralxy" is used by "nfpo".
+"nfralxy" is used by "nfra2xy".
+"nfralxy" is used by "nfrecs".
+"nfralxy" is used by "nfse".
+"nfralxy" is used by "nfso".
+"nfralxy" is used by "nfsum".
+"nfralxy" is used by "nfsum1".
+"nfralxy" is used by "nfwe".
+"nfralxy" is used by "raaanlem".
+"nfralxy" is used by "ralxpf".
+"nfralxy" is used by "rspc2".
+"nfralxy" is used by "sbcralg".
+"nfralxy" is used by "sbcralt".
+"nfralxy" is used by "setindis".
+"nfralxy" is used by "strcollnfALT".
+"nfralxy" is used by "xpf1o".
 "nnindnn" is used by "nntopi".
 "opelopabsbALT" is used by "cnvopab".
 "opelopabsbALT" is used by "inopab".
@@ -325,6 +380,7 @@ New usage of "bj-nndcALT" is discouraged (0 uses).
 New usage of "bj-omex2" is discouraged (0 uses).
 New usage of "bj-omssonALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
+New usage of "cbv3" is discouraged (7 uses).
 New usage of "cnm" is discouraged (2 uses).
 New usage of "condcOLD" is discouraged (0 uses).
 New usage of "conventions" is discouraged (0 uses).
@@ -351,12 +407,15 @@ New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
+New usage of "fprodsplitdc" is discouraged (5 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "idALT" is discouraged (0 uses).
 New usage of "idi" is discouraged (0 uses).
 New usage of "infnninfOLD" is discouraged (1 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
+New usage of "nfraldxy" is discouraged (3 uses).
+New usage of "nfralxy" is discouraged (40 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnindnn" is discouraged (1 uses).
