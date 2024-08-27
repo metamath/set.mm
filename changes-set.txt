@@ -99,13 +99,13 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-21-Aug-24 ralimda   [same]	moved from GS's mathbox to main set.mm
-21-Aug-24 ralrimia  [same]	moved from GS's mathbox to main set.mm
-21-Aug-24 2exp11    [same]	    moved from AV's mathbox to main set.mm
-20-Aug-24 unexd	    [same]	moved from SN's mathbox to main set.mm
-20-Aug-24 brsnop    [same]	moved from TA's mathbox to main set.mm
+21-Aug-24 ralimda   [same]      moved from GS's mathbox to main set.mm
+21-Aug-24 ralrimia  [same]      moved from GS's mathbox to main set.mm
+21-Aug-24 2exp11    [same]      moved from AV's mathbox to main set.mm
+20-Aug-24 unexd     [same]      moved from SN's mathbox to main set.mm
+20-Aug-24 brsnop    [same]      moved from TA's mathbox to main set.mm
 19-Aug-24 dfrp2     [same]      moved from TA's mathbox to main set.mm
-19-Aug-24 rabeqcda  [same]	    moved from SN's mathbox to main set.mm
+19-Aug-24 rabeqcda  [same]      moved from SN's mathbox to main set.mm
 18-Aug-24 prdsco    [same]      revised - compatibility with new df-prds
 18-Aug-24 prdshom   [same]      revised - compatibility with new df-prds
 18-Aug-24 prdstset  [same]      revised - compatibility with new df-prds
