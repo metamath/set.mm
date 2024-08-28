@@ -418,7 +418,7 @@ $(
   (wffs) regardless of how they are constructed.  The simplest propositional
   truth is ` ( ph -> ph ) ` , which can be read "if something is true, then it
   is true" - rather trivial and obvious, but nonetheless it must be proved from
-  the axioms (see theorem ~ id ).
+  the axioms (see Theorem ~ id ).
 
   Our system of propositional calculus consists of three basic axioms and
   another axiom that defines the modus-ponens inference rule.  It is attributed
@@ -514,7 +514,7 @@ $(
 
   Postulate the three axioms of classical propositional calculus.
 
-  Propositional calculus (axioms ~ ax-1 through ~ ax-3 and rule ~ ax-mp ) can
+  Propositional calculus (Axioms ~ ax-1 through ~ ax-3 and rule ~ ax-mp ) can
   be thought of as asserting formulas that are universally "true" when their
   variables are replaced by any combination of "true" and "false."
   Propositional calculus was first formalized by Frege in 1879, using as his
@@ -622,7 +622,7 @@ $)
   ${
     $( Premise for ~ a1i . $)
     a1i.1 $e |- ph $.
-    $( Inference derived from axiom ~ ax-1 .  See ~ a1d for an explanation of
+    $( Inference derived from Axiom ~ ax-1 .  See ~ a1d for an explanation of
        our informal use of the terms "inference" and "deduction."  See also the
        comment in ~ syld .  (Contributed by NM, 5-Aug-1993.) $)
     a1i $p |- ( ps -> ph ) $=
@@ -641,7 +641,7 @@ $)
   ${
     $( Premise for ~ a2i . $)
     a2i.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( Inference derived from axiom ~ ax-2 .  (Contributed by NM,
+    $( Inference derived from Axiom ~ ax-2 .  (Contributed by NM,
        5-Aug-1993.) $)
     a2i $p |- ( ( ph -> ps ) -> ( ph -> ch ) ) $=
       ( wi ax-2 ax-mp ) ABCEEABEACEEDABCFG $.
@@ -751,7 +751,7 @@ $)
        Deduction Theorem would be used; here ` ph ` would be replaced with a
        conjunction ( ~ df-an ) of the hypotheses of the would-be deduction.  By
        contrast, we tend to call the simpler version with no common antecedent
-       an "inference" and suffix its label with "i"; compare theorem ~ a1i .
+       an "inference" and suffix its label with "i"; compare Theorem ~ a1i .
        Finally, a "theorem" would be the form with no hypotheses; in this case
        the "theorem" form would be the original axiom ~ ax-1 .  We usually show
        the theorem form without a suffix on its label (e.g. ~ pm2.43 vs.
@@ -1332,7 +1332,7 @@ $)
       ( wi ax-1 syl5 com23 ) ACBDCBCFABDFCBGEHI $.
   $}
 
-  $( Converse of axiom ~ ax-2 .  Theorem *2.86 of [WhiteheadRussell] p. 108.
+  $( Converse of Axiom ~ ax-2 .  Theorem *2.86 of [WhiteheadRussell] p. 108.
      (Contributed by NM, 25-Apr-1994.)  (Proof shortened by Wolf Lammen,
      3-Apr-2013.) $)
   pm2.86 $p |- ( ( ( ph -> ps )
@@ -1368,7 +1368,7 @@ $)
 
   ${
     con4d.1 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
-    $( Deduction derived from axiom ~ ax-3 .  (Contributed by NM,
+    $( Deduction derived from Axiom ~ ax-3 .  (Contributed by NM,
        26-Mar-1995.) $)
     con4d $p |- ( ph -> ( ch -> ps ) ) $=
       ( wn wi ax-3 syl ) ABECEFCBFDBCGH $.
@@ -1556,7 +1556,7 @@ $)
 
   ${
     con4i.1 $e |- ( -. ph -> -. ps ) $.
-    $( Inference rule derived from axiom ~ ax-3 .  (Contributed by NM,
+    $( Inference rule derived from Axiom ~ ax-3 .  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by Wolf Lammen, 21-Jun-2013.) $)
     con4i $p |- ( ps -> ph ) $=
       ( wn notnot1 nsyl2 ) BBDABECF $.
@@ -1978,7 +1978,7 @@ $(
   Logical equivalence
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-  The definition ~ df-bi in this section is our first definition, which
+  Definition ~ df-bi in this section is our first definition, which
   introduces and defines the biconditional connective ` <-> ` . We define a wff
   of the form ` ( ph <-> ps ) ` as an abbreviation for
   ` -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ` .
@@ -2001,7 +2001,7 @@ $)
 
   $( Define the biconditional (logical 'iff').
 
-     The definition ~ df-bi in this section is our first definition, which
+     Definition ~ df-bi in this section is our first definition, which
      introduces and defines the biconditional connective ` <-> ` .  We define a
      wff of the form ` ( ph <-> ps ) ` as an abbreviation for
      ` -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ` .
@@ -10912,9 +10912,9 @@ $)
       ( wi wnan nic-dfim nic-bi2 nic-mp ) ABBCABEZABBFFZKDKJABGHII $.
   $}
 
-  $( Proof of ~ luk-1 from ~ nic-ax and ~ nic-mp (and definitions ~ nic-dfim
+  $( Proof of ~ luk-1 from ~ nic-ax and ~ nic-mp (and Definitions ~ nic-dfim
      and ~ nic-dfneg ).  Note that the standard axioms ~ ax-1 , ~ ax-2 , and
-     ~ ax-3 are proved from the Lukasiewicz axioms by theorems ~ ax1 , ~ ax2 ,
+     ~ ax-3 are proved from the Lukasiewicz axioms by Theorems ~ ax1 , ~ ax2 ,
      and ~ ax3 .  (Contributed by Jeff Hoffman, 18-Nov-2007.)
      (Proof modification is discouraged.)  (New usage is discouraged.) $)
   nic-luk1 $p |- ( ( ph -> ps ) -> ( ( ps -> ch ) -> ( ph -> ch ) ) ) $=
@@ -11755,14 +11755,14 @@ $(
   Logic with Identity" [Tarski].  System S2 is defined in the last paragraph on
   p. 77, and repeated on p. 81 of [KalishMontague].  We do not include scheme
   B5 (our ~ sp ) since [KalishMontague] shows it to be logically redundant
-  (Lemma 9, p. 87, which we prove as theorem ~ spw below).
+  (Lemma 9, p. 87, which we prove as Theorem ~ spw below).
 
   Theorem ~ spw can be used to prove any instance of ~ sp having no wff
   metavariables and mutually distinct setvar variables.  However, it seems that
   ~ sp in its general form cannot be derived from only Tarski's schemes.  We
   do not include B5 i.e.  ~ sp as part of what we call "Tarski's system"
   because we want it to be the smallest set of axioms that is logically
-  complete with no redundancies.  We later prove ~ sp as theorem ~ ax4
+  complete with no redundancies.  We later prove ~ sp as Theorem ~ ax4
   using the auxiliary axioms that make our system metalogically complete.
 
   Our version of Tarski's system S2 consists of propositional calculus plus
@@ -12828,7 +12828,7 @@ $)
      variables in the wff.  Instead, we use a single formula that is exactly
      equivalent and gives us a direct definition.  We later prove that our
      definition has the properties we expect of proper substitution (see
-     theorems ~ sbequ , ~ sbcom2 and ~ sbid2v ).
+     Theorems ~ sbequ , ~ sbcom2 and ~ sbid2v ).
 
      Note that our definition is valid even when ` x ` and ` y ` are replaced
      with the same variable, as ~ sbid shows.  We achieve this by having ` x `
@@ -12892,23 +12892,23 @@ $)
      ~ https://us.metamath.org/award2003.html .
 
      ~ ax-9 can be proved from the weaker version ~ ax9v requiring that the
-     variables be distinct; see theorem ~ ax9 .
+     variables be distinct; see Theorem ~ ax9 .
 
      ~ ax-9 can also be proved from the Axiom of Separation (in the form that
      we use that axiom, where free variables are not universally quantified).
      See theorem ax9vsep in set.mm.
 
      Except by ~ ax9v , this axiom should not be referenced directly.  Instead,
-     use theorem ~ ax9 .  (Contributed by NM, 5-Aug-1993.)
+     use Theorem ~ ax9 .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-9 $a |- -. A. x -. x = y $.
 
   ${
     $d x y $.
     $( Axiom B7 of [Tarski] p. 75, which requires that ` x ` and ` y ` be
-       distinct.  This trivial proof is intended merely to weaken axiom ~ ax-9
+       distinct.  This trivial proof is intended merely to weaken Axiom ~ ax-9
        by adding a distinct variable restriction.  From here on, ~ ax-9 should
-       not be referenced directly by any other proof, so that theorem ~ ax9
+       not be referenced directly by any other proof, so that Theorem ~ ax9
        will show that we can recover ~ ax-9 from this weaker version if it were
        an axiom (as it is in the case of Tarski).
 
@@ -13918,8 +13918,8 @@ $)
 
      The original version of this axiom was ~ ax-11o ("o" for "old") and was
      replaced with this shorter ~ ax-11 in Jan. 2007.  The old axiom is proved
-     from this one as theorem ~ ax11o .  Conversely, this axiom is proved from
-     ~ ax-11o as theorem ~ ax11 .
+     from this one as Theorem ~ ax11o .  Conversely, this axiom is proved from
+     ~ ax-11o as Theorem ~ ax11 .
 
      Juha Arpiainen proved the metalogical independence of this axiom (in the
      form of the older axiom ~ ax-11o ) from the others on 19-Jan-2006.  See
@@ -13941,7 +13941,7 @@ $)
        C5' in [Megill] p. 448 (p. 16 of the preprint).
 
        For the axiom of specialization presented in many logic textbooks, see
-       theorem ~ stdpc4 .
+       Theorem ~ stdpc4 .
 
        This theorem shows that our obsolete axiom ~ ax-4 can be derived from
        the others.  The proof uses ideas from the proof of Lemma 21 of [Monk2]
@@ -15392,8 +15392,8 @@ $)
 
      The original version of this axiom was ~ ax-12o and was replaced with this
      shorter ~ ax-12 in December 2015.  The old axiom is proved from this one
-     as theorem ~ ax12o .  Conversely, this axiom is proved from ~ ax-12o as
-     theorem ~ ax12 .
+     as Theorem ~ ax12o .  Conversely, this axiom is proved from ~ ax-12o as
+     Theorem ~ ax12 .
 
      The primary purpose of this axiom is to provide a way to introduce the
      quantifier ` A. x ` on ` y = z ` even when ` x ` and ` y ` are substituted
@@ -15408,7 +15408,7 @@ $)
 
      This axiom can be weakened if desired by adding distinct variable
      restrictions on pairs ` x , z ` and ` y , z ` .  To show that, we add
-     these restrictions to theorem ~ ax12v and use only ~ ax12v for further
+     these restrictions to Theorem ~ ax12v and use only ~ ax12v for further
      derivations.  Thus, ~ ax12v should be the only theorem referencing this
      axiom.  Other theorems can reference either ~ ax12v or ~ ax12o .
 
@@ -16598,7 +16598,7 @@ $)
 
   ${
     $d x y $.
-    $( A generalization of axiom ~ ax-16 .  Alternate proof of ~ a16g that uses
+    $( A generalization of Axiom ~ ax-16 .  Alternate proof of ~ a16g that uses
        ~ df-sb .  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
        Salmon, 25-May-2011.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
@@ -16606,7 +16606,7 @@ $)
       ( weq wal aev ax16ALT2 biidd dral1 biimprd sylsyld ) BCEBFDBEDFZAABFZADFZ
       BCDDBGABCHMONAADBMAIJKL $.
 
-    $( A generalization of axiom ~ ax-16 .  (Contributed by NM, 5-Aug-1993.) $)
+    $( A generalization of Axiom ~ ax-16 .  (Contributed by NM, 5-Aug-1993.) $)
     a16gb $p |- ( A. x x = y -> ( ph <-> A. z ph ) ) $=
       ( weq wal a16g sp impbid1 ) BCEBFAADFABCDGADHI $.
 
@@ -16956,13 +16956,13 @@ $)
   ${
     $d x y $.  $d x z $.  $d y z $.  $d ph z $.
     $( This is a version of ~ ax-11o when the variables are distinct.  Axiom
-       (C8) of [Monk2] p. 105.  See theorem ~ ax11v2 for the rederivation of
+       (C8) of [Monk2] p. 105.  See Theorem ~ ax11v2 for the rederivation of
        ~ ax-11o from this theorem.  (Contributed by NM, 5-Aug-1993.) $)
     ax11v $p |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) $=
       ( weq wal wi ax-1 ax16 syl5 a1d ax11o pm2.61i ) BCDZBEZMAMAFZBEZFZFNQMAON
       PAMGOBCHIJABCKL $.
 
-    $( Alternate proof of ~ ax11v that avoids theorem ~ ax16 and is proved
+    $( Alternate proof of ~ ax11v that avoids Theorem ~ ax16 and is proved
        directly from ~ ax-11 rather than via ~ ax11o .  (Contributed by Jim
        Kingdon, 15-Dec-2017.)  (New usage is discouraged.)
        (Proof modification is discouraged.) $)
@@ -17397,9 +17397,9 @@ $(
   The following newer axioms may NOT be used in this section until we
   have proved them from the older axioms:  ~ ax-5 , ~ ax-6 , ~ ax-9 ,
   ~ ax-11 , and ~ ax-12 .  However, once we have rederived an axiom
-  (e.g. theorem ~ ax5 for axiom ~ ax-5 ), we may make use of theorems
+  (e.g. Theorem ~ ax5 for Axiom ~ ax-5 ), we may make use of theorems
   outside of this section that make use of the rederived axiom (e.g. we
-  may use theorem ~ alimi , which uses ~ ax-5 , after proving ~ ax5 ).
+  may use Theorem ~ alimi , which uses ~ ax-5 , after proving ~ ax5 ).
 
 $)
 
@@ -17440,7 +17440,7 @@ $)
      of ~ ax-4 , ~ ax-5 , ~ ax-6 , and ~ ax-7 .
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ sp .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ sp .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-4 $a |- ( A. x ph -> ph ) $.
 
@@ -17454,7 +17454,7 @@ $)
      of [Mendelson] p. 69.
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax5o .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax5o .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-5o $a |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) $.
 
@@ -17465,7 +17465,7 @@ $)
      and ~ ax-7 .
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax6o .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax6o .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-6o $a |- ( -. A. x -. A. x ph -> ph ) $.
 
@@ -17473,7 +17473,7 @@ $)
      preprint).
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax9o .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax9o .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-9o $a |- ( A. x ( x = y -> A. x ph ) -> ph ) $.
 
@@ -17483,7 +17483,7 @@ $)
      the preprint).
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax10o .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax10o .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-10o $a |- ( A. x x = y -> ( A. x ph -> A. y ph ) ) $.
 
@@ -17493,13 +17493,13 @@ $)
 
      The original version of this axiom was ~ ax-10o ("o" for "old") and was
      replaced with this shorter ~ ax-10 in May 2008.  The old axiom is proved
-     from this one as theorem ~ ax10o .  Conversely, this axiom is proved from
-     ~ ax-10o as theorem ~ ax10from10o .
+     from this one as Theorem ~ ax10o .  Conversely, this axiom is proved from
+     ~ ax-10o as Theorem ~ ax10from10o .
 
-     This axiom was proved redundant in July 2015.  See theorem ~ ax10 .
+     This axiom was proved redundant in July 2015.  See Theorem ~ ax10 .
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax10 .  (Contributed by NM, 16-May-2008.)
+     as Theorem ~ ax10 .  (Contributed by NM, 16-May-2008.)
      (New usage is discouraged.) $)
   ax-10 $a |- ( A. x x = y -> A. y y = x ) $.
 
@@ -17519,15 +17519,15 @@ $)
      wff variables, the resulting statement _can_ be proved without invoking
      this axiom.  This means that even though this axiom is _metalogically_
      independent from the others, it is not _logically_ independent.
-     Specifically, we can prove any wff-variable-free instance of axiom
-     ~ ax-11o (from which the ~ ax-11 instance follows by theorem ~ ax11 .)
+     Specifically, we can prove any wff-variable-free instance of Axiom
+     ~ ax-11o (from which the ~ ax-11 instance follows by Theorem ~ ax11 .)
      The proof is by induction on formula length, using ~ ax11eq and ~ ax11el
      for the basis steps and ~ ax11indn , ~ ax11indi , and ~ ax11inda for the
      induction steps.  (This paragraph is true provided we use ~ ax-10o in
      place of ~ ax-10 .)
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax11o .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax11o .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-11o $a |- ( -. A. x x = y ->
              ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $.
@@ -17542,7 +17542,7 @@ $)
      cases.
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax12o .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax12o .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-12o $a |- ( -. A. z z = x -> ( -. A. z z = y ->
               ( x = y -> A. z x = y ) ) ) $.
@@ -17550,7 +17550,7 @@ $)
   $( Axiom of Quantifier Introduction.  One of the equality and substitution
      axioms for a non-logical predicate in our predicate calculus with
      equality.  Axiom scheme C14' in [Megill] p. 448 (p. 16 of the preprint).
-     It is redundant if we include ~ ax-17 ; see theorem ~ ax15 .  Alternately,
+     It is redundant if we include ~ ax-17 ; see Theorem ~ ax15 .  Alternately,
      ~ ax-17 becomes unnecessary in principle with this axiom, but we lose the
      more powerful metalogic afforded by ~ ax-17 .  We retain ~ ax-15 here to
      provide completeness for systems with the simpler metalogic that results
@@ -17558,7 +17558,7 @@ $)
      theoretical purposes.
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax15 .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax15 .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-15 $a |- ( -. A. z z = x -> ( -. A. z z = y ->
               ( x e. y -> A. z x e. y ) ) ) $.
@@ -17574,7 +17574,7 @@ $)
        false in set theory (see dtru in set.mm), but nonetheless it is
        technically necessary as you can see from its uses.
 
-       This axiom is redundant if we include ~ ax-17 ; see theorem ~ ax16 .
+       This axiom is redundant if we include ~ ax-17 ; see Theorem ~ ax16 .
        Alternately, ~ ax-17 becomes logically redundant in the presence of this
        axiom, but without ~ ax-17 we lose the more powerful metalogic that
        results from being able to express the concept of a setvar variable not
@@ -17584,7 +17584,7 @@ $)
        which might be easier to study for some theoretical purposes.
 
        This axiom is obsolete and should no longer be used.  It is proved above
-       as theorem ~ ax16 .  (Contributed by NM, 5-Aug-1993.)
+       as Theorem ~ ax16 .  (Contributed by NM, 5-Aug-1993.)
        (New usage is discouraged.) $)
     ax-16 $a |- ( A. x x = y -> ( ph -> A. x ph ) ) $.
   $}
@@ -17607,7 +17607,7 @@ $)
   ax4 $p |- ( A. x ph -> ph ) $=
     ( sp ) ABC $.
 
-  $( Rederivation of axiom ~ ax-5 from ~ ax-5o and other older axioms.  See
+  $( Rederivation of Axiom ~ ax-5 from ~ ax-5o and other older axioms.  See
      ~ ax5o for the derivation of ~ ax-5o from ~ ax-5 .  (Contributed by NM,
      23-May-2008.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
@@ -17615,7 +17615,7 @@ $)
     ( wi wal ax-5o ax-4 syl5 mpg syl ) ABDZCEZACEZBDZCEZMBCEDLNDLODCKNCFMALBACG
     KCGHIABCFJ $.
 
-  $( Rederivation of axiom ~ ax-6 from ~ ax-6o and other older axioms.  See
+  $( Rederivation of Axiom ~ ax-6 from ~ ax-6o and other older axioms.  See
      ~ ax6o for the derivation of ~ ax-6o from ~ ax-6 .  (Contributed by NM,
      23-May-2008.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
@@ -17623,7 +17623,7 @@ $)
     ( wal wn wi ax-5o ax-4 id mpg nsyl ax-6o nsyl4 ) ABCZBCZDZBCZMDZBCZMPQEPREB
     OQBFPNMOBGMMEMNEBAMBFMHIJIMBKL $.
 
-  $( Rederivation of axiom ~ ax-9 from ~ ax-9o and other older axioms.  See
+  $( Rederivation of Axiom ~ ax-9 from ~ ax-9o and other older axioms.  See
      ~ ax9o for the derivation of ~ ax-9o from ~ ax-9 .  Lemma L18 in [Megill]
      p. 446 (p. 14 of the preprint).  (Contributed by NM, 5-Aug-1993.)
      (Proof modification is discouraged.)  (New usage is discouraged.) $)
@@ -17684,8 +17684,8 @@ $)
       $.
   $}
 
-  $( Rederivation of axiom ~ ax-11 from ~ ax-11o , ~ ax-10o , and other older
-     axioms.  The proof does not require ~ ax-16 or ~ ax-17 .  See theorem
+  $( Rederivation of Axiom ~ ax-11 from ~ ax-11o , ~ ax-10o , and other older
+     axioms.  The proof does not require ~ ax-16 or ~ ax-17 .  See Theorem
      ~ ax11o for the derivation of ~ ax-11o from ~ ax-11 .
 
      An open problem is whether we can prove this using ~ ax-10 instead of
@@ -17789,10 +17789,10 @@ $)
      ` x = x ` , even though ` x ` is technically free according to the
      traditional definition of free variable.  (The proof uses only ~ ax-5 ,
      ~ ax-8 , ~ ax-12o , and ~ ax-gen .  This shows that this can be proved
-     without ~ ax9 , even though the theorem ~ equid cannot be.  A shorter
-     proof using ~ ax9 is obtainable from ~ equid and ~ hbth .)  Remark added
-     2-Dec-2015 NM:  This proof does implicitly use ~ ax9v , which is used for
-     the derivation of ~ ax12o , unless we consider ~ ax-12o the starting axiom
+     without ~ ax9 , even though Theorem ~ equid cannot.  A shorter proof using
+     ~ ax9 is obtainable from ~ equid and ~ hbth .)  Remark added 2-Dec-2015
+     NM:  This proof does implicitly use ~ ax9v , which is used for the
+     derivation of ~ ax12o , unless we consider ~ ax-12o the starting axiom
      rather than ~ ax-12 .  (Contributed by NM, 13-Jan-2011.)  (Revised by
      Mario Carneiro, 12-Oct-2016.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
@@ -17907,7 +17907,7 @@ $)
     ( weq wal wn wi ax-12o pm2.43i alimi ax-9o syl ax-6o pm2.61i ) AABZACZDZACZ
     MPMNEZACMOQAOQAAAFGHMAAIJMAKL $.
 
-  $( Rederivation of ~ ax-10 from original version ~ ax-10o .  See theorem
+  $( Rederivation of ~ ax-10 from original version ~ ax-10o .  See Theorem
      ~ ax10o for the derivation of ~ ax-10o from ~ ax-10 .
 
      This theorem should not be referenced in any proof.  Instead, use ~ ax-10
@@ -18005,7 +18005,7 @@ $)
 
   ${
     $d x y $.
-    $( A generalization of axiom ~ ax-16 .  Version of ~ a16g using ~ ax-10o .
+    $( A generalization of Axiom ~ ax-16 .  Version of ~ a16g using ~ ax-10o .
        (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
        25-May-2011.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
@@ -18254,7 +18254,7 @@ $)
        ~ ax-11 or ~ ax-11o .  The hypothesis is even weaker than ~ ax-11 , with
        ` z ` both distinct from ` x ` and not occurring in ` ph ` .  Thus, the
        hypothesis provides an alternate axiom that can be used in place of
-       ~ ax-11 , if we also hvae ~ ax-10o which this proof uses .  As theorem
+       ~ ax-11 , if we also hvae ~ ax-10o which this proof uses .  As Theorem
        ~ ax11 shows, the distinct variable conditions are optional.  An open
        problem is whether we can derive this with ~ ax-10 instead of ~ ax-10o .
        (Contributed by NM, 2-Feb-2007.)  (Proof modification is discouraged.)
@@ -18266,7 +18266,7 @@ $)
 
   $( Show that ~ ax-10o can be derived from ~ ax-10 .  An open problem is
      whether this theorem can be derived from ~ ax-10 and the others when
-     ~ ax-11 is replaced with ~ ax-11o .  See theorem ~ ax10from10o for the
+     ~ ax-11 is replaced with ~ ax-11o .  See Theorem ~ ax10from10o for the
      rederivation of ~ ax-10 from ~ ax10o .
 
      Normally, ~ ax10o should be used rather than ~ ax-10o or ~ ax10o-o ,
@@ -19986,7 +19986,7 @@ $)
      sets ` x ` such that ` ph ` is true").  Our class variables ` A ` ,
      ` B ` , etc. range over class builders (implicitly in the case of defined
      class terms such as ~ df-nul ).  Note that a setvar variable can be
-     expressed as a class builder per theorem ~ cvjust , justifying the
+     expressed as a class builder per Theorem ~ cvjust , justifying the
      assignment of setvar variables to class variables via the use of ~ cv . $)
   cab $a class { x | ph } $.
 
@@ -20315,7 +20315,7 @@ $)
        than introducing a new symbol.  This allows us to make statements that
        may not hold for the original symbol.  For example, it permits us to
        deduce ` y = z <-> A. x ( x e. y <-> x e. z ) ` , which is not a theorem
-       of logic but rather presupposes the Axiom of Extensionality (see theorem
+       of logic but rather presupposes the Axiom of Extensionality (see Theorem
        ~ axext4 ).  We therefore include this axiom as a hypothesis, so that
        the use of Extensionality is properly indicated.
 
@@ -26859,7 +26859,7 @@ $)
      to express it with a single closed formula.
 
      If we did not want to commit to any specific proper class behavior, we
-     could use this definition _only_ to prove theorem ~ dfsbcq , which holds
+     could use this definition _only_ to prove Theorem ~ dfsbcq , which holds
      for both our definition and Quine's, and from which we can derive a weaker
      version of ~ df-sbc in the form of ~ sbc8g .  However, the behavior of
      Quine's definition at proper classes is similarly arbitrary, and for
@@ -26867,8 +26867,8 @@ $)
      of this definition) we allow direct reference to ~ df-sbc and assert that
      ` [. A / x ]. ph ` is always false when ` A ` is a proper class.
 
-     The theorem ~ sbc2or shows the apparently "strongest" statement we can
-     make regarding behavior at proper classes if we start from ~ dfsbcq .
+     Theorem ~ sbc2or shows the apparently "strongest" statement we can make
+     regarding behavior at proper classes if we start from ~ dfsbcq .
 
      The related definition ~ df-csb defines proper substitution into a class
      variable (as opposed to a wff variable).  (Contributed by NM,
@@ -26898,7 +26898,7 @@ $)
      ~ df-sbc that leaves substitution undefined when ` A ` is a proper class.
 
      However, it is often a nuisance to have to prove the sethood hypothesis of
-     ~ sbc8g , so we will allow direct use of ~ df-sbc after theorem ~ sbc2or
+     ~ sbc8g , so we will allow direct use of ~ df-sbc after Theorem ~ sbc2or
      below.  Proper substiution with a proper class is rarely needed, and when
      it is, we can simply use the expansion of Quine's definition.
      (Contributed by NM, 14-Apr-1995.) $)

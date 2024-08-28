@@ -114,7 +114,7 @@ STYLE="margin-bottom:0px">Metamath<BR>Home</A></FONT></TD>
 <FONT SIZE=-1>
 <FONT COLOR="#006633">
 The aleph null above is the symbol for the first infinite cardinal number,
-discovered by Georg Cantor in 1873 (see theorem ~ aleph0 ).
+discovered by Georg Cantor in 1873 (see Theorem ~ aleph0 ).
 </FONT>
 </FONT>
 
@@ -927,7 +927,7 @@ only, never into the variables of any proof step referenced
 in the Hyp column (of the theorem being proved).  <I>In other words you
 should pretend that all variables in the theorem being proved are
 constants for the purpose of figuring out the substitutions.</I> You can
-see this by looking at examples such as theorem ~ idALT .  To follow the proof
+see this by looking at examples such as Theorem ~ idALT .  To follow the proof
 of ~ idALT , you should treat the symbol ` ph ` as if it were a
 constant symbol, when you are figuring out the substitutions to make
 into the variables of the referenced theorems (or axioms).
@@ -1387,7 +1387,7 @@ introduces three new symbols, ` = ` ("equals"), ` e. ` ("is
 a member of"), and ` A. ` ("for all").  The first two are called "predicates."
 A predicate specifies a true or false relationship between its two arguments.
 As an example, ` x = x ` always evaluates to true regardless of what ` x ` is,
-as the theorem ~ equid demonstrates.  The "for all" symbol, also called the
+as Theorem ~ equid demonstrates.  The "for all" symbol, also called the
 "universal quantifier," ranges over or "scans" all possible values of its first
 (setvar variable) argument, applying them to the second (wff expression)
 argument, and returns true if and only if the second argument is true for every
@@ -1550,7 +1550,7 @@ numbers in older papers, slide presentations, and websites.  See
 <P>
 If we are willing to live without the concept of "a setvar variable not
 occurring in a wff" (or wish to do so to simplify the metalogic), we can
-omit axiom ~ ax-5 and still have a complete
+omit Axiom ~ ax-5 and still have a complete
 system of logic.  However, ~ ax-5 provides us
 with more general theorem <I>schemes</I> and can make proofs
 considerably shorter.  Interestingly, if we include ~ ax-5 , then ~ ax-c14 and
@@ -1756,13 +1756,13 @@ are very long when expanded to set theory primitives.  Below we show it
 compacted with definitions.  Theorem ~ grothprim shows you what it looks like
 when the definitions are expanded into the primitives used by the other axioms.
 The Tarski-Grothendieck axiom can be viewed as a very strong replacement of
-the Axiom of Infinity and implies that axiom (theorem ~ grothomex ) as well as
-the Axiom of Choice (theorem ~ grothac ) and the Axiom of Power Sets (theorem
+the Axiom of Infinity and implies that axiom (Theorem ~ grothomex ) as well as
+the Axiom of Choice (Theorem ~ grothac ) and the Axiom of Power Sets (Theorem
 ~ grothpw ).
 </P>
 
 <!--
-and the Axiom of Choice (as show by theorem ~ grothac ; see also Tarski,
+and the Axiom of Choice (as show by Theorem ~ grothac ; see also Tarski,
 "<A HREF="http://matwbn.icm.edu.pl/ksiazki/fm/fm32/fm32115.pdf">On
 well-ordered subsets of any set</A> [external]", <I>Fundamenta
 Mathematicae</I> 32:176-183 (1939) and Bob Solovay's 29-Mar-2008 note on
@@ -1771,7 +1771,7 @@ strongly inaccessible cardinals</A> [external] - he points out that the
 mere existence of strongly inaccessible cardinals doesn't imply AC, but
 rather the particular form of the Tarski&ndash;Grothendieck axiom stating their
 existence).  It also implies the Axiom of Power Sets, as mentioned in
-Solovay's note (see  theorem ~ grothpw ).
+Solovay's note (see Theorem ~ grothpw ).
 -->
 
 <P>
@@ -1840,7 +1840,7 @@ comprehension</B> by different authors.  We call an object that can be
 represented in this form a <B>class</B> and read ` { x | ph } ` as "the class
 of all ` x ` such that ` ph ` holds".  Every class is a (possibly empty)
 collection of sets, although not every such collection is itself a set (see the
-discussion for theorem ~ ru ).  For example, ` { x | ( x e. ZZ /\ 2 < x ) } `
+discussion for Theorem ~ ru ).  For example, ` { x | ( x e. ZZ /\ 2 < x ) } `
 is the class (and also set) of all integers greater than 2.
 </P>
 
@@ -1849,7 +1849,7 @@ We use upper-case variables ` A ` , ` B ` ,... to range over class builders and
 call them <B>class variables</B>.  More generally, we let them range over any
 object representing a class, such as other class variables.  (A class variable
 ` A `  itself can be represented with the class builder ` { x | x e. A } ` and
-thus qualifies as a class; see theorem ~ abid2 .)  Our language will now have
+thus qualifies as a class; see Theorem ~ abid2 .)  Our language will now have
 three kinds of variables: ` ph ` , ` ps ` ,... ranging over wffs, ` x ` ,
 ` y ` ,... ranging over setvars, and ` A ` , ` B ` ,... ranging over classes.
 </P>
@@ -1877,7 +1877,7 @@ we use class variables and ~ df-un .
 -->
 Here the defined expression on the left of the "=" abbreviates the expression
 on the right.  When eliminating the defined expression, we can choose for ` x `
-any variable not occurring in ` A ` or ` B ` (theorem ~ unjust ); it is a
+any variable not occurring in ` A ` or ` B ` (Theorem ~ unjust ); it is a
 bound or dummy variable similar to the <I>x</I> in the integral from 0 to 1 of
 <I>x</I>&nbsp;d<I>x</I>.  By introducing this definition, we effectively extend
 the syntax with new class expressions of the form ` ( A u. B ) ` that can be
@@ -1970,19 +1970,19 @@ definitionally extends set theory rather than just predicate calculus, the
 hypothesis is unnecessary and merely provides us with a somewhat nitpicking
 isolation from set theory.  Most authors do not include this hypothesis.  An
 advantage of the hypothesis for us is that we must explicitly use ~ ax-ext to
-satisfy it as in theorem ~ dfcleq , meaning we can more easily determine
+satisfy it as in Theorem ~ dfcleq , meaning we can more easily determine
 exactly where ~ ax-ext was used by a proof.
 </P>
 
 <P>
 Definition ~ df-clel similarly extends the ` e. ` connective to allow classes
 on both sides.  We do not need a hypothesis as we did for ~ df-cleq because its
-instances are theorems of predicate calculus (see theorem ~ cleljust ).
+instances are theorems of predicate calculus (see Theorem ~ cleljust ).
 </P>
 
 <P>
 As an important special case, a setvar variable ` x ` can be considered a class
-because it equals the class builder ` { y | y e. x } ` (theorem ~ cvjust ).
+because it equals the class builder ` { y | y e. x } ` (Theorem ~ cvjust ).
 This is the justification for syntax builder ~ cv , which for convenience
 allows us to substitute a setvar variable directly for a class variable.  (On
 the other hand, we may not substitute a class variable for a setvar variable
@@ -2233,7 +2233,7 @@ variables ~ abeq2</LI>
 
 <LI>Two ways of saying &quot;is a set&quot; ~ isset</LI>
 
-<LI>Kuratowski's ordered pair definition and theorem ~ df-op</LI>
+<LI>Kuratowski's ordered pair definition and Theorem ~ df-op</LI>
 
 <LI>Russell's paradox ~ ru</LI>
 
@@ -2585,7 +2585,7 @@ show their descriptions.)
 &lt;- <A HREF="a1d.html" TITLE="Deduction introducing an embedded antecedent....">a1d</A>
 &lt;- <A HREF="syl.html" TITLE="An inference version of the transitive laws for implication ~~ imim2 and...">syl</A>
 &lt;- <A HREF="mpd.html" TITLE="A modus ponens deduction.  A translation of natural deduction rule...">mpd</A>
-&lt;- <A HREF="a2i.html" TITLE="Inference derived from axiom ~~ ax-2 .">a2i</A>
+&lt;- <A HREF="a2i.html" TITLE="Inference derived from Axiom ~~ ax-2 .">a2i</A>
 &lt;- <A HREF="ax-2.html" TITLE="Axiom _Frege_.  Axiom A2 of [Margaris] p. 49.  One of the 3 axioms of...">ax-2</A>
 </FONT>
 
@@ -2651,7 +2651,7 @@ In <I>Principia Mathematica</I>, 1 and 2 are <I>cardinal</I>
 numbers, so its proof of 1 + 1 = 2 is different:  see
 
 <!--
-theorems ~ pm54.43 and
+Theorems ~ pm54.43 and
 -->
 
 ~ dju1p1e2 for a translation into modern
@@ -3087,7 +3087,7 @@ only rules of inference are the (infinite) specific instances of the
 <I>v</I><FONT SIZE=-1><SUB>2</SUB></FONT>" we can infer
 "` A. ` <I>v</I><FONT SIZE=-1><SUB>6</SUB></FONT>` E. `
 <I>v</I><FONT SIZE=-1><SUB>3</SUB></FONT>
-<I>v</I><FONT SIZE=-1><SUB>3</SUB></FONT> ` = `
+<I>v</I><FONT SIZE=-1><SUB>3</SUB></FONT> ` =ï¿½`
 <I>v</I><FONT SIZE=-1><SUB>2</SUB></FONT>"
 by generalization&mdash;and there is no substitution rule built in as a
 primitive notion.
@@ -3173,7 +3173,7 @@ not allowed to use different instances of intermediate theorem schemes but had
 to show a direct object-language proof, where each step is an actual axiom or a
 rule applied to previous steps, the complete formal proof would have
 73,983,127,856,077,147,925,897,127,298 (about 7.4 x 10^28 or 74 octillion)
-proof steps.  See also the remarks for theorem ~ 1kp2ke3k . Note:  this
+proof steps.  See also the remarks for Theorem ~ 1kp2ke3k .  Note:  this
 calculation ignores the expansion of statements that use class notation, which
 would require extra steps.]
 
@@ -3259,12 +3259,12 @@ but merely a proof verifier.
 <B>1.</B> For anyone interested, here are some technical notes on the [<A
 HREF="#bibmegill">Megill</A>] paper.  The claim in Remark 9.6, "C14' is
 omitted from S3' because it can be proved from the others using only
-simple metalogic," is proved in theorem ~ axc14 .
-Axiom C16' is also redundant&mdash;see theorem ~ axc16 , whose proof was
+simple metalogic," is proved in Theorem ~ axc14 .
+Axiom C16' is also redundant&mdash;see Theorem ~ axc16 , whose proof was
 discovered in 2006 and not
 known at the time of the paper.  The somewhat strange-looking axiom C10'
 ( ~ ax-c10 ) was found to be equivalent to the simpler ~ ax-6 after
-the paper was submitted; see theorem ~ ax6fromc10 .  In the
+the paper was submitted; see Theorem ~ ax6fromc10 .  In the
 proof of the scheme (or "metalogical") completeness theorem,
 Theorem 9.7, some details
 that are stated without proof as "provable in S3' with simple
@@ -3497,12 +3497,12 @@ To say that "` x ` is effectively not free in ` ph ` ," we can use the
 hypothesis ` ph -> A. x ph ` .  This hypothesis holds in all cases where ` x `
 is not free in ` ph ` in the traditional system (and in a few other cases as
 well, which is why we say "effectively"&mdash;for example, the wff ` x = x `
-will satisfy the hypothesis, as shown by theorem ~ hbequid , even though ` x `
+will satisfy the hypothesis, as shown by Theorem ~ hbequid , even though ` x `
 is technically free in it).
 
 Because the idiom for "effectively not free in" is so frequently used, we
 define a special logical connective, ` F/ x ph ` , that stands for
-` A. x ( ph -> A. x ph ) ` .  See definition ~ df-nf .
+` A. x ( ph -> A. x ph ) ` .  See Definition ~ df-nf .
 </P>
 
 <P>
@@ -3681,8 +3681,8 @@ Otherwise, we could further substitute ` x ` for ` y ` to
 arrive at (` x = z -> A. x x = z `); this violates the distinct variable
 condition of ~ ax-5 since ` x ` <I>does</I> appear in ` x = z ` .
 In fact, from ~ ax-5 we can conclude only the
-very restricted theorem ~ ax13w , which because of
-its distinct variable conditions is much weaker than axiom ~ ax-13 .
+very restricted Theorem ~ ax13w , which because of
+its distinct variable conditions is much weaker than Axiom ~ ax-13 .
 (If we omit them, the Metamath proof verifier will give an error message.)
 We say that the distinct variable conditions in ~ ax13w are inherited
 from ~ ax-5 .
@@ -3697,7 +3697,7 @@ distinct variable conditions implicitly attached the proof steps.
 
 <P>
 To get a concrete feel for distinct variable conditions, you can temporarily
-comment out the "$d x z $." condition for theorem ~ cleljustALT in the database
+comment out the "$d x z $." condition for Theorem ~ cleljustALT in the database
 file set.mm.   When you try to verify the proof with the
 <A HREF="../index.html#mmprog">Metamath program</A>, the resulting error
 message will read as follows.  (Note that the "normal" proof format is used,
@@ -4397,7 +4397,7 @@ the axioms needed to prove the theorem from scratch, if all definitions
 were eliminated.  (You can also do this from within the <A
 HREF="../index.html#mmprog">Metamath program</A>:  after "read set.mm",
 type "show trace_back tfr2 /essential /axioms" to get the list for
-Transfinite Recursion theorem ~ tfr2 .)
+Transfinite Recursion Theorem ~ tfr2 .)
 <!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
@@ -4442,7 +4442,7 @@ to avoid it if possible.
 
 <P>
 Sometimes a proof becomes much longer if we want to avoid a certain
-axiom.  For example, theorems ~ ondomon and ~ hartogs are the same except
+axiom.  For example, Theorems ~ ondomon and ~ hartogs are the same except
 for their proofs.  Compare the relatively short proof of ~ ondomon ,
 which uses ~ ax-ac2 , with the much longer proof
 of ~ hartogs and its lemmas needed to avoid ~ ax-ac2 .
@@ -4495,7 +4495,7 @@ to the domain of the function, and &quot;` ( F `` A ) `&quot; is the class that
 results when the function is evaluated at the argument.  (The result, however,
 is well-defined for any classes whatsoever substituted for the class variables,
 and our definition ends up evaluating to the empty set when it is not
-meaningful&mdash;see for example theorem ~ ndmfv .)
+meaningful&mdash;see for example Theorem ~ ndmfv .)
 <!--- 4-Aug-2021 nm </P> here causes http://validator.w3.org failure -->
 
 <P>
@@ -4521,7 +4521,7 @@ number <I><FONT COLOR="#CC33CC">A</FONT></I >, where we use &quot;` ( Re `` A )
 `&quot; instead of &quot;` Re A `", and the conjugate of a complex number,
 where we use &quot;` ( * `` A ) `&quot; instead of
 &quot;` A `<sup>*</sup>&quot; (or sometimes with an overbar), both of which you
-can see in theorem ~ cjval .  Another example is the factorial function, which
+can see in Theorem ~ cjval .  Another example is the factorial function, which
 we express as &quot;` ( ! `` A ) `&quot; instead of &quot;` A ! `&quot; in
 ~ facnn2 .  In the conventional textbook notation, these four examples use four
 different positional relationships to indicate one concept (the value of a
@@ -4615,14 +4615,14 @@ redundancies and simplifications were found.  We have kept them in a deprecated
 section of set.mm for historical purposes, and they are not used outside of
 that section.  Each of these obsolete axioms is proved as a theorem whose name
 is the same with the "-" omitted.  For example, obsolete axiom ~ ax-c5 is
-proved as theorem ~ axc5 from using axioms ~ ax-4 through ~ ax-13 .
+proved as Theorem ~ axc5 from using Axioms ~ ax-4 through ~ ax-13 .
 </P>
 
 <P>
 Axioms with names starting "ax-c" are part of system S3' in Remark 9.6 of
 [<A HREF="#bibmegill">Megill</A>]; for example, ~ ax-c4 is axiom C4' there.
 Axiom ~ ax-c11n was a newer alternative to ~ ax-c11 , although eventually we
-proved it redundant (theorem ~ axc11n ).
+proved it redundant (Theorem ~ axc11n ).
 </P>
 
 <P>
@@ -4652,7 +4652,7 @@ SUMMARY="Variations of axiom system">
 <TD>
 <P>
 As mentioned above, these 10 omitted axioms can be derived from the others (see
-theorems ~ axc5 , ~ axc4 , ~ axc7 , ~ axc10 , ~ axc11 , ~ axc11n , ~ axc15 ,
+Theorems ~ axc5 , ~ axc4 , ~ axc7 , ~ axc10 , ~ axc11 , ~ axc11n , ~ axc15 ,
 ~ axc9 , ~ axc14 , ~ axc16 ).  This system is
 <A HREF="#axiomnote">scheme-complete</A> and is the one we ordinarily
 use.  It is equivalent to system S3' in Remark 9.6 of
@@ -4743,7 +4743,7 @@ subsystem.  See Item 9b on the
 <TD>
 <P>
 It is known that ~ ax-12 can be derived from the axioms of this subsystem (see
-theorem ~ ax12fromc15 ).
+Theorem ~ ax12fromc15 ).
 </P>
 </TD>
 </TR>
@@ -4820,7 +4820,7 @@ Group discussion</A> [retrieved 27-Dec-2018] and this
 Axioms with names starting "ax-c" are now obsolete, but they were part of
 system S3' in Remark 9.6 of [<A HREF="#bibmegill">Megill</A>]; for example,
 ~ ax-c4 is axiom C4' there.  Axiom ~ ax-c11n was a newer alternative to
-~ ax-c11 , although eventually we proved it redundant (theorem ~ axc11n ).
+~ ax-c11 , although eventually we proved it redundant (Theorem ~ axc11n ).
 Axiom C5 (not primed) is taken from system S3 but is included in S3' as stated
 in the paper.  The obsolete axioms ~ ax-c4 through ~ ax-c16 are kept for
 historical reasons in a deprecated section of set.mm and shouldn't be used
