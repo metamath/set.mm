@@ -60,10 +60,10 @@ $( Specify properties of the metavariables. $)
   $( Define "wff" (part 2 of 2). $)
   wim $a wff ( P -> Q ) $.
 
-  $( State axiom ~ a1 . $)
+  $( State Axiom ~ a1 . $)
   a1 $a |- ( t = r -> ( t = s -> r = s ) ) $.
 
-  $( State axiom ~ a2 . $)
+  $( State Axiom ~ a2 . $)
   a2 $a |- ( t + 0 ) = t $.
 
   ${
