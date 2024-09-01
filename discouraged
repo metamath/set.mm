@@ -19301,6 +19301,7 @@ New usage of "vd13" is discouraged (3 uses).
 New usage of "vd23" is discouraged (3 uses).
 New usage of "vexOLD" is discouraged (0 uses).
 New usage of "vfermltlALT" is discouraged (0 uses).
+New usage of "vjustOLD" is discouraged (0 uses).
 New usage of "vk15.4j" is discouraged (0 uses).
 New usage of "vk15.4jVD" is discouraged (0 uses).
 New usage of "vmcn" is discouraged (1 uses).
@@ -19649,7 +19650,6 @@ Proof modification of "bj-currypeirce" is discouraged (16 steps).
 Proof modification of "bj-denotes" is discouraged (26 steps).
 Proof modification of "bj-df-ifc" is discouraged (60 steps).
 Proof modification of "bj-df-nul" is discouraged (11 steps).
-Proof modification of "bj-df-v" is discouraged (29 steps).
 Proof modification of "bj-dfif" is discouraged (39 steps).
 Proof modification of "bj-dfnnf3" is discouraged (34 steps).
 Proof modification of "bj-disj2r" is discouraged (88 steps).
@@ -19772,7 +19772,6 @@ Proof modification of "bj-subst" is discouraged (89 steps).
 Proof modification of "bj-substw" is discouraged (49 steps).
 Proof modification of "bj-vecssmod" is discouraged (18 steps).
 Proof modification of "bj-vecssmodel" is discouraged (5 steps).
-Proof modification of "bj-vjust" is discouraged (44 steps).
 Proof modification of "bj-vtocl" is discouraged (12 steps).
 Proof modification of "bj-vtoclf" is discouraged (29 steps).
 Proof modification of "bj-vtoclg" is discouraged (22 steps).
@@ -20970,8 +20969,9 @@ Proof modification of "vd03" is discouraged (19 steps).
 Proof modification of "vd12" is discouraged (12 steps).
 Proof modification of "vd13" is discouraged (18 steps).
 Proof modification of "vd23" is discouraged (15 steps).
-Proof modification of "vexOLD" is discouraged (16 steps).
+Proof modification of "vexOLD" is discouraged (17 steps).
 Proof modification of "vfermltlALT" is discouraged (279 steps).
+Proof modification of "vjustOLD" is discouraged (51 steps).
 Proof modification of "vk15.4j" is discouraged (217 steps).
 Proof modification of "vk15.4jVD" is discouraged (268 steps).
 Proof modification of "vtocl2OLD" is discouraged (84 steps).
