@@ -11328,9 +11328,6 @@
 "opabid" is used by "ssopab2b".
 "opabresidOLD" is used by "mptresidOLD".
 "opelcn" is used by "axicn".
-"opelopabsbALT" is used by "brabsb2".
-"opelopabsbALT" is used by "cnvopab".
-"opelopabsbALT" is used by "inopab".
 "opelreal" is used by "ax1cn".
 "opelreal" is used by "axaddrcl".
 "opelreal" is used by "axcnre".
@@ -15877,6 +15874,7 @@ New usage of "con5i" is discouraged (2 uses).
 New usage of "conventions" is discouraged (0 uses).
 New usage of "conventions-comments" is discouraged (0 uses).
 New usage of "conventions-labels" is discouraged (0 uses).
+New usage of "copsex2gOLD" is discouraged (0 uses).
 New usage of "copsexg" is discouraged (1 uses).
 New usage of "counop" is discouraged (0 uses).
 New usage of "crhmsubcALTV" is discouraged (1 uses).
@@ -18269,7 +18267,6 @@ New usage of "opabid" is discouraged (2 uses).
 New usage of "opabresidOLD" is discouraged (1 uses).
 New usage of "opelcn" is discouraged (1 uses).
 New usage of "opelopab4" is discouraged (0 uses).
-New usage of "opelopabsbALT" is discouraged (3 uses).
 New usage of "opelreal" is discouraged (8 uses).
 New usage of "opeq1OLD" is discouraged (0 uses).
 New usage of "opeq2OLD" is discouraged (0 uses).
@@ -19843,6 +19840,7 @@ Proof modification of "con5i" is discouraged (13 steps).
 Proof modification of "conventions" is discouraged (1 steps).
 Proof modification of "conventions-comments" is discouraged (1 steps).
 Proof modification of "conventions-labels" is discouraged (1 steps).
+Proof modification of "copsex2gOLD" is discouraged (119 steps).
 Proof modification of "csb0OLD" is discouraged (19 steps).
 Proof modification of "csbcnvgALT" is discouraged (112 steps).
 Proof modification of "csbeq2gVD" is discouraged (61 steps).
@@ -20626,7 +20624,6 @@ Proof modification of "onfrALTlem5VD" is discouraged (320 steps).
 Proof modification of "onnevOLD" is discouraged (26 steps).
 Proof modification of "opabresidOLD" is discouraged (50 steps).
 Proof modification of "opelopab4" is discouraged (69 steps).
-Proof modification of "opelopabsbALT" is discouraged (106 steps).
 Proof modification of "opeq1OLD" is discouraged (73 steps).
 Proof modification of "opeq2OLD" is discouraged (68 steps).
 Proof modification of "opidon2OLD" is discouraged (80 steps).
