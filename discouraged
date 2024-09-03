@@ -13286,7 +13286,6 @@
 "syl6bb" is used by "2clwwlkel".
 "syl6bb" is used by "2ffzoeq".
 "syl6bb" is used by "3dim0".
-"syl6bb" is used by "addsid1".
 "syl6bb" is used by "adjeu".
 "syl6bb" is used by "adjsym".
 "syl6bb" is used by "adjval2".
@@ -13485,10 +13484,6 @@
 "syl6bb" is used by "frrlem1".
 "syl6bb" is used by "frxp2".
 "syl6bb" is used by "frxp3".
-<<<<<<< HEAD
-"syl6bb" is used by "fseqenlem1".
-=======
->>>>>>> origin/develop
 "syl6bb" is used by "fsovrfovd".
 "syl6bb" is used by "fsumcvg4".
 "syl6bb" is used by "ftc1anclem6".
@@ -13680,10 +13675,6 @@
 "syl6bb" is used by "nndiffz1".
 "syl6bb" is used by "nnolog2flm1".
 "syl6bb" is used by "nnsum3primesgbe".
-<<<<<<< HEAD
-"syl6bb" is used by "nnwof".
-=======
->>>>>>> origin/develop
 "syl6bb" is used by "no3indslem".
 "syl6bb" is used by "noextenddif".
 "syl6bb" is used by "noinfbnd1lem1".
@@ -13697,10 +13688,6 @@
 "syl6bb" is used by "nosupcbv".
 "syl6bb" is used by "nosupno".
 "syl6bb" is used by "nosupprefixmo".
-<<<<<<< HEAD
-"syl6bb" is used by "nrmmetd".
-=======
->>>>>>> origin/develop
 "syl6bb" is used by "ntrclsiso".
 "syl6bb" is used by "ntrclsk13".
 "syl6bb" is used by "ntrclsk3".
@@ -13882,22 +13869,9 @@
 "syl6bb" is used by "xlimpnfxnegmnf".
 "syl6bb" is used by "xlimpnfxnegmnf2".
 "syl6bb" is used by "xnn01gt".
-<<<<<<< HEAD
-"syl6bb" is used by "xpdom2".
-"syl6bb" is used by "xpf1o".
 "syl6bb" is used by "xpord2ind".
 "syl6bb" is used by "xpord2lem".
 "syl6bb" is used by "xpord3pred".
-"syl6bb" is used by "xporderlem".
-"syl6bb" is used by "xpwdomg".
-"syl6bb" is used by "xrltlen".
-"syl6bb" is used by "xrrebnd".
-"syl6bb" is used by "xrsxmet".
-=======
-"syl6bb" is used by "xpord2ind".
-"syl6bb" is used by "xpord2lem".
-"syl6bb" is used by "xpord3pred".
->>>>>>> origin/develop
 "syl6bb" is used by "zarcls".
 "tb-ax1" is used by "re1ax2".
 "tb-ax1" is used by "re1ax2lem".
@@ -19183,11 +19157,7 @@ New usage of "supsrlem" is discouraged (1 uses).
 New usage of "swrdnznd" is discouraged (1 uses).
 New usage of "syl5imp" is discouraged (0 uses).
 New usage of "syl5impVD" is discouraged (0 uses).
-<<<<<<< HEAD
-New usage of "syl6bb" is discouraged (1214 uses).
-=======
-New usage of "syl6bb" is discouraged (594 uses).
->>>>>>> origin/develop
+New usage of "syl6bb" is discouraged (593 uses).
 New usage of "symgbasexOLD" is discouraged (0 uses).
 New usage of "symgsubmefmndALT" is discouraged (0 uses).
 New usage of "tarski-bernays-ax2" is discouraged (0 uses).
