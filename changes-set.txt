@@ -99,6 +99,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 1-Sep-24 brabsb2   [same]      removed unnecessary commutation
+ 1-Sep-24 opelopabsbALT vopelopabsb removed unnecessary commutation
 24-Aug-24 dvdspw    dvdsexp2im  moved from SF's mathbox to main set.mm
 24-Aug-24 pdivsq    prmdvdssq   moved from SF's mathbox to main set.mm
 24-Aug-24 dvdstrd   [same]      moved from MKU's mathbox to main set.mm
