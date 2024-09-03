@@ -401,7 +401,7 @@ $)
   id $p |- a = a $=
     ( wn ax-a1 ax-r1 ax-r2 ) AABBZAACZAFGDE $.
 
-  $( Justification of definition ~ df-t of true ( ` 1 ` ).  This shows that the
+  $( Justification of Definition ~ df-t of true ( ` 1 ` ).  This shows that the
      definition is independent of the variable used to define it.  (Contributed
      by NM, 9-Aug-1997.) $)
   tt $p |- ( a v a ' ) = ( b v b ' ) $=
@@ -8752,7 +8752,7 @@ $)
                =< ( b ->1 c ) $.
     $( Derivation of an equivalent of the second "universal" 3-OA U2 from an
        equivalent of the first "universal" 3-OA U1.  This shows that U2 is
-       redundant in a system containg U1.  The hypothesis is theorem ~ oal1 .
+       redundant in a system containg U1.  The hypothesis is Theorem ~ oal1 .
        (Contributed by NM, 1-Jan-1999.) $)
     oa3-1to5 $p |- ( c ^ ( ( b ->1 c ) v ( ( a ->1 c ) ^
               ( ( a ^ b ) v ( ( a ->1 c ) ^ ( b ->1 c ) ) ) ) ) )
@@ -8788,7 +8788,7 @@ $)
     oad.6 $e |- ( h ^ ( b ->1 d ) ) =< k $.
     $( OA Distributive law.  In this section, we postulate this temporary axiom
        (intended not to be used outside of this section) for the OA
-       distributive law, and derive from it the 6-OA, in theorem ~ d6oa .  This
+       distributive law, and derive from it the 6-OA, in Theorem ~ d6oa .  This
        together with the derivation of the distributive law in theorem
        ~ 4oadist shows that the OA distributive law is equivalent to the 6-OA.
        (Contributed by NM, 30-Dec-1998.) $)
@@ -9359,7 +9359,7 @@ $)
       4oadist.3 $e |- k =< f $.
       4oadist.4 $e |- ( h ^ ( b ->1 d ) ) =< k $.
       $( OA Distributive law.  This is equivalent to the 6-variable OA law, as
-         shown by theorem ~ d6oa .  (Contributed by NM, 29-Dec-1998.) $)
+         shown by Theorem ~ d6oa .  (Contributed by NM, 29-Dec-1998.) $)
       4oadist $p |- ( h ^ ( j v k ) ) = ( ( h ^ j ) v ( h ^ k ) ) $=
         ( wo wa wi1 ax-r1 ax-r2 le2or oridm lbtr lelan df2le2 or32 lan 4oagen1b
         leo lear an32 lea bltr letr leor ledi lebi ) GHIPZQZGHQZGIQZPZUSVAVBUSU

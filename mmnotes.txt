@@ -3518,7 +3518,7 @@ mentioned in the comment of ax4:
   are redundant.  Immediately before their introduction, we prove them
   from earlier axioms to demonstrate their redundancy.  Specifically,
   redundant axioms ~ ax-4 , ~ ax-5o , ~ ax-6o , ~ ax-9o , ~ ax-10o ,
-  ~ ax-11o , ~ ax-15 , and ~ ax-16 are proved by theorems ~ ax4 , ~ ax5o ,
+  ~ ax-11o , ~ ax-15 , and ~ ax-16 are proved by Theorems ~ ax4 , ~ ax5o ,
   ~ ax6o , ~ ax9o , ~ ax10o , ~ ax11o , ~ ax15 , and ~ ax16 .
 
 so that the proof of theorem ax4 can't have an accidental circular
