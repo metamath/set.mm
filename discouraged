@@ -16605,6 +16605,8 @@ New usage of "enrer" is discouraged (8 uses).
 New usage of "enrex" is discouraged (9 uses).
 New usage of "ensucne0OLD" is discouraged (0 uses).
 New usage of "eq0OLD" is discouraged (0 uses).
+New usage of "eq0OLDOLD" is discouraged (0 uses).
+New usage of "eq0rdvOLD" is discouraged (0 uses).
 New usage of "eqeq1dALT" is discouraged (0 uses).
 New usage of "eqeqan12dALT" is discouraged (0 uses).
 New usage of "eqid1" is discouraged (0 uses).
@@ -19318,6 +19320,7 @@ New usage of "vfermltlALT" is discouraged (0 uses).
 New usage of "vk15.4j" is discouraged (0 uses).
 New usage of "vk15.4jVD" is discouraged (0 uses).
 New usage of "vmcn" is discouraged (1 uses).
+New usage of "vn0OLD" is discouraged (0 uses).
 New usage of "vsfval" is discouraged (4 uses).
 New usage of "vtocl2OLD" is discouraged (0 uses).
 New usage of "vtocl2dOLD" is discouraged (0 uses).
@@ -19908,7 +19911,7 @@ Proof modification of "dfvd3anir" is discouraged (19 steps).
 Proof modification of "dfvd3i" is discouraged (19 steps).
 Proof modification of "dfvd3ir" is discouraged (19 steps).
 Proof modification of "dif1enOLD" is discouraged (335 steps).
-Proof modification of "difidALT" is discouraged (20 steps).
+Proof modification of "difidALT" is discouraged (14 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
 Proof modification of "disjOLD" is discouraged (71 steps).
 Proof modification of "dju1p1e2" is discouraged (72 steps).
@@ -20125,7 +20128,9 @@ Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
 Proof modification of "ensucne0OLD" is discouraged (82 steps).
-Proof modification of "eq0OLD" is discouraged (6 steps).
+Proof modification of "eq0OLD" is discouraged (31 steps).
+Proof modification of "eq0OLDOLD" is discouraged (6 steps).
+Proof modification of "eq0rdvOLD" is discouraged (25 steps).
 Proof modification of "eqeq1dALT" is discouraged (62 steps).
 Proof modification of "eqeqan12dALT" is discouraged (23 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
@@ -21003,6 +21008,7 @@ Proof modification of "vexOLD" is discouraged (17 steps).
 Proof modification of "vfermltlALT" is discouraged (279 steps).
 Proof modification of "vk15.4j" is discouraged (217 steps).
 Proof modification of "vk15.4jVD" is discouraged (268 steps).
+Proof modification of "vn0OLD" is discouraged (6 steps).
 Proof modification of "vtocl2OLD" is discouraged (84 steps).
 Proof modification of "vtocl2dOLD" is discouraged (118 steps).
 Proof modification of "vtoclALT" is discouraged (11 steps).
