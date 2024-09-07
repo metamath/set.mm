@@ -15781,6 +15781,7 @@ New usage of "chvar" is discouraged (2 uses).
 New usage of "chvarv" is discouraged (0 uses).
 New usage of "clel2gOLD" is discouraged (0 uses).
 New usage of "clel4OLD" is discouraged (0 uses).
+New usage of "clelabOLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
 New usage of "clelsb3f" is discouraged (0 uses).
@@ -18851,6 +18852,7 @@ New usage of "sbc2rexgOLD" is discouraged (1 uses).
 New usage of "sbc3or" is discouraged (1 uses).
 New usage of "sbc3orgVD" is discouraged (0 uses).
 New usage of "sbc4rexgOLD" is discouraged (0 uses).
+New usage of "sbc5ALT" is discouraged (0 uses).
 New usage of "sbcbi" is discouraged (2 uses).
 New usage of "sbcbi2OLD" is discouraged (0 uses).
 New usage of "sbcbiVD" is discouraged (0 uses).
@@ -19322,6 +19324,7 @@ New usage of "vsfval" is discouraged (4 uses).
 New usage of "vtocl2OLD" is discouraged (0 uses).
 New usage of "vtocl2dOLD" is discouraged (0 uses).
 New usage of "vtoclALT" is discouraged (0 uses).
+New usage of "vtocldOLD" is discouraged (0 uses).
 New usage of "vtoclgOLD" is discouraged (0 uses).
 New usage of "vtoclgftOLD" is discouraged (0 uses).
 New usage of "vtxdusgr0edgnelALT" is discouraged (0 uses).
@@ -19835,6 +19838,7 @@ Proof modification of "cgsex4gOLD" is discouraged (218 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
 Proof modification of "clel2gOLD" is discouraged (30 steps).
 Proof modification of "clel4OLD" is discouraged (24 steps).
+Proof modification of "clelabOLD" is discouraged (75 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleljustALT2" is discouraged (25 steps).
 Proof modification of "clelsb3vOLD" is discouraged (54 steps).
@@ -20812,6 +20816,7 @@ Proof modification of "sbc2rexgOLD" is discouraged (62 steps).
 Proof modification of "sbc3or" is discouraged (73 steps).
 Proof modification of "sbc3orgVD" is discouraged (180 steps).
 Proof modification of "sbc4rexgOLD" is discouraged (83 steps).
+Proof modification of "sbc5ALT" is discouraged (76 steps).
 Proof modification of "sbc8g" is discouraged (55 steps).
 Proof modification of "sbcbi" is discouraged (33 steps).
 Proof modification of "sbcbi2OLD" is discouraged (16 steps).
@@ -21006,6 +21011,7 @@ Proof modification of "vk15.4jVD" is discouraged (268 steps).
 Proof modification of "vtocl2OLD" is discouraged (84 steps).
 Proof modification of "vtocl2dOLD" is discouraged (118 steps).
 Proof modification of "vtoclALT" is discouraged (11 steps).
+Proof modification of "vtocldOLD" is discouraged (21 steps).
 Proof modification of "vtoclgOLD" is discouraged (11 steps).
 Proof modification of "vtoclgftOLD" is discouraged (142 steps).
 Proof modification of "vtxdusgr0edgnelALT" is discouraged (94 steps).
