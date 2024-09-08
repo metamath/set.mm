@@ -18340,7 +18340,7 @@ New usage of "reglogmul" is discouraged (1 uses).
 New usage of "reldisjOLD" is discouraged (0 uses).
 New usage of "relop" is discouraged (1 uses).
 New usage of "relopabVD" is discouraged (0 uses).
-New usage of "relopabiOLD" is discouraged (0 uses).
+New usage of "relopabiALT" is discouraged (0 uses).
 New usage of "relrngo" is discouraged (6 uses).
 New usage of "renegclALT" is discouraged (0 uses).
 New usage of "renicax" is discouraged (0 uses).
@@ -20401,7 +20401,7 @@ Proof modification of "reexALT" is discouraged (19 steps).
 Proof modification of "refsymrels3" is discouraged (56 steps).
 Proof modification of "reldisjOLD" is discouraged (86 steps).
 Proof modification of "relopabVD" is discouraged (354 steps).
-Proof modification of "relopabiOLD" is discouraged (224 steps).
+Proof modification of "relopabiALT" is discouraged (74 steps).
 Proof modification of "renegcl" is discouraged (34 steps).
 Proof modification of "renegclALT" is discouraged (149 steps).
 Proof modification of "renicax" is discouraged (76 steps).
