@@ -93,13 +93,14 @@ proposed  syl6ib    imbitrdi
 proposed  syl6ibr   imbitrrdi
 proposed  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
-underway  syl6bb    bitrdi      compare to bitri or bitrd
+proposed  sseldi    sselid      compare to sselii or sseldd
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
 10-Sep-24 sspreima  [same]      moved from TA's mathbox to main set.mm
+ 9-Sep-24 syl6bb    bitrdi      compare to bitri or bitrd
  4-Sep-24 bj-df-v   dfv2        moved from BJ's mathbox to main set.mm
  1-Sep-24 brabsb2   [same]      removed unnecessary commutation
  1-Sep-24 opelopabsbALT vopelopabsb removed unnecessary commutation
