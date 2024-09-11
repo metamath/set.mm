@@ -94,6 +94,7 @@ proposed  syl6ibr   imbitrrdi
 proposed  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
 underway  syl6bb    bitrdi      compare to bitri or bitrd
+proposed  sseldi    sselid      compare to sselii or sseldd
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
