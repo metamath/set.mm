@@ -84,7 +84,6 @@ proposed  syl5bb    bitrid      compare to bitri or bitrd
 proposed  syl5rbb   bitr2id     compare to bitr2i or bitr2d
 proposed  syl5eq    eqtrid      compare to eqtri or eqtrd
 proposed  syl5req   eqtr2id     compare to eqtr2i or eqtr2d
-proposed  syl5eqr   eqtr3id     compare to eqtr3i or eqtr3d
 proposed  syl5reqr  eqtr3di     hypotheses would be switched
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
@@ -99,6 +98,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+16-Sep-24 syl5eqr   eqtr3id     compare to eqtr3i or eqtr3d
 14-Sep-24 iunsn     [same]      moved from SN's mathbox to main set.mm
 10-Sep-24 sspreima  [same]      moved from TA's mathbox to main set.mm
  9-Sep-24 syl6bb    bitrdi      compare to bitri or bitrd
