@@ -16135,6 +16135,7 @@ New usage of "fnresiOLD" is discouraged (0 uses).
 New usage of "fnsnfvOLD" is discouraged (0 uses).
 New usage of "footexALT" is discouraged (0 uses).
 New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
+New usage of "fsetprcnexALT" is discouraged (0 uses).
 New usage of "fsplitOLD" is discouraged (0 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
@@ -19790,6 +19791,7 @@ Proof modification of "frege96" is discouraged (39 steps).
 Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
 Proof modification of "frgrwopreglem5ALT" is discouraged (519 steps).
+Proof modification of "fsetprcnexALT" is discouraged (190 steps).
 Proof modification of "fsplitOLD" is discouraged (234 steps).
 Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "fundcmpsurinjALT" is discouraged (221 steps).
