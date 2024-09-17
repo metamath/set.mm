@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# Verify mmfile $1 (default "set.mm") and discouraged file $2 (default
+# "discouraged") using metamath-knife.
+# Usage:
+# verify-knife [--check-newlines] [source=set.mm] [discouraged_file=discouraged]
+
+check_newlines='false'
+
+if [ "$1" = '--check-newlines' ] ; then
+  check_newlines='true'
+  shift
+fi
+
+source="${1:-set.mm}"
+discouraged_file="${2:-discouraged}"
+
+metamath-knife ${source} --verify \
+                         --verify-parse-stmt \
+                         --verify-usage \
+                         --verify-markup
+
+if [ $? != 0 ]; then
+  exit 1
+fi
+
+metamath-knife ${source} -D discouraged.new >/dev/null
+
+if [ "$check_newlines" = 'true' ]; then
+  diff ${discouraged_file} discouraged.new >/dev/null
+else
+  diff -Z ${discouraged_file} discouraged.new >/dev/null
+fi
+
+if [ $? != 0 ]; then
+  echo "The file '${discouraged_file}' needs regenerated."
+  rm discouraged.new
+  exit 1
+fi
+
+rm discouraged.new
+exit 0
