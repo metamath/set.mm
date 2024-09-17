@@ -12302,6 +12302,418 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 </TABLE>
 
+<h2 style="border-top: 1px solid black; color: #006633; font-weight: bold; margin-top: 20px; padding-top: 10px; font-size: 100%">
+  Metamath 100 status
+</h2>
+
+<p>The <a href="../mm_100.html" >Metamath 100</a> theorems, especially
+those already proved in set.mm, provide one indication of how complete
+iset.mm is.  For each theorem it should be possible to prove it from
+our axioms or show that it cannot be proved (for example, showing that
+it implies excluded middle).  In some cases the natural statement of
+the theorem may need to be chosen (for example, "irrational" as
+used in ~ sqrt2irrap is defined in terms of apartness).</p>
+
+<p>The Metamath 100 page lists those theorems which have been
+proved, but here are some notes on those which have been
+proved in set.mm but not iset.mm:</p>
+
+<table BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+  <tr>
+    <th>Theorem</th>
+    <th>notes</th>
+  </tr>
+
+  <tr>
+    <td>2.  The Fundamental Theorem of Algebra</td>
+    <td>The [Geuvers] reference describes a proof
+    without excluded middle, and presumably
+    could be used as our guide.</td>
+  </tr>
+
+  <tr>
+    <td>4.  Pythagorean Theorem</td>
+    <td>There are a variety of theorems
+    which might plausibly deserve the label of
+    "Pythagorean Theorem" but assuming we stick
+    with pythi from set.mm, there are a number of
+    prerequisites.</td>
+  </tr>
+
+  <tr>
+    <td>5.  The Prime Number Theorem</td>
+    <td>The set.mm proof uses df-rlim .</td>
+  </tr>
+
+  <tr>
+    <td>7.  Law of Quadratic Reciprocity</td>
+    <td>Needs more development of number theory (for one
+    thing, the Legendre symbol, df-lgs , itself).</td>
+  </tr>
+
+  <tr>
+    <td>9.  The Area of a Circle</td>
+    <td>At first glance defining Lebesgue measure would
+    not proceed quite as in set.mm, as it is in terms of
+    an infimum.</td>
+  </tr>
+
+  <tr>
+    <td>11.  The Infinitude of Primes</td>
+    <td>Apparently would not be difficult. Note that
+    set.mm has infpn , infpn2 , prminf , and perhaps other
+    forms. Some of them are connected by unben , which
+    won't work as-is (see ~ exmidunben ), but since
+    primality is decidable it should be possible to
+    define something like unben for decidable subsets.</td>
+  </tr>
+
+  <tr>
+    <td>14.  Summation of ` sum_ k e. NN ( k ^ -u 2 ) `</td>
+    <td>Needs a closer look at the set.mm proof but we
+    do have ~ climsqz for whatever that is worth</td>
+  </tr>
+
+  <tr>
+    <td>15.  The Fundamental Theorem of Integral Calculus</td>
+    <td>Although iset.mm has at least a start on developing
+    derivatives, it has nothing on integrals yet</td>
+  </tr>
+
+  <tr>
+    <td>18.  Liouville's Theorem and the Construction
+of Transcendental Numbers</td>
+    <td>Need to develop polynomials (and figure out how to
+    appropriately state the theorem, as the set.mm statement
+    seems to rely on real number equality in a way which
+    may not apply).</td>
+  </tr>
+
+  <tr>
+    <td>19.  Four Squares Theorem</td>
+    <td>The proof is long and needs, at least,
+    Gaussian integers ( df-gz ).</td>
+  </tr>
+
+  <tr>
+    <td>20.  All Primes (1 mod 4) Equal the Sum of Two Squares</td>
+    <td>At first glance it would appear this would intuitionize
+    without much trouble.</td>
+  </tr>
+
+  <tr>
+    <td>22.  The Non-Denumerability of the Continuum</td>
+    <td>See the ruc entry above.  We should be able to prove
+    this given ` CCHOICE ` .  As for showing that it cannot
+    be done given just the iset.mm axioms, that is harder,
+    and the proof in [BauerHanson] uses something called
+    parameterized realizability which is a different technique
+    than proving constructive taboos as we have done elsewhere
+    in iset.mm.</td>
+  </tr>
+
+  <tr>
+    <td>23.  Formula for Pythagorean Triples</td>
+    <td>This is a long proof but at first glance should
+    work in iset.mm.</td>
+  </tr>
+
+  <tr>
+    <td>26.  Leibniz' Series for Pi</td>
+    <td>The first place to look if intuitionizing the set.mm
+    proof is Abel's theorem and the second is arctangent
+    (in particular, does this proof need arctangent for
+    complex numbers or just for real numbers?).  We do
+    have climsqz2 .</td>
+  </tr>
+
+  <tr>
+    <td>27.  Sum of the Angles of a Triangle</td>
+    <td>There's a lot to figure out in terms of defining
+    angle and triangle (see angval above).</td>
+  </tr>
+
+  <tr>
+    <td>30.  The Ballot Problem</td>
+    <td>This is a long proof but at first glance should
+    work in iset.mm.</td>
+  </tr>
+
+  <tr>
+    <td>31.  Ramsey's Theorem</td>
+    <td>A quick glance at wikipedia makes it look like
+    Ramsey's Theorem involves some choice and/or
+    excluded middle.</td>
+  </tr>
+
+  <tr>
+    <td>34.  Divergence of the Harmonic Series</td>
+    <td>The set.mm proof depends on climcnds .
+    Seems like this should be provable one way or
+    another.</td>
+  </tr>
+
+  <tr>
+    <td>35.  Taylor's Theorem</td>
+    <td>There are a number of things to develop before
+    this is ready to formalize but it seems like it might
+    be within reach.</td>
+  </tr>
+
+  <tr>
+    <td>37.  The Solution of a Cubic</td>
+    <td>See entry for theorem cubic above.</td>
+  </tr>
+
+  <tr>
+    <td>38.  Arithmetic Mean/Geometric Mean</td>
+    <td>We have ~ amgm2 but assuming we want the version
+    for finite sets seen in set.mm, we can probably just
+    use ` sum_ ` ( ~ df-sumdc ) and ` prod_ ` ( ~ df-proddc )
+    notation rather than navigating constructive fields.
+    In set.mm the numbers being added/multiplied are
+    nonnegative reals and we probably have to restrict
+    to positive reals because the set.mm proof assumes
+    that real numbers are equal to or apart from zero.</td>
+  </tr>
+
+  <tr>
+    <td>39. Solutions to Pell's Equation</td>
+    <td>There's a lot of development of Pell equations
+    in many lemmas and definitions which would be needed.</td>
+  </tr>
+
+  <tr>
+    <td>45.  The Partition Theorem</td>
+    <td>The set.mm proof uses df-bits and df-ind .</td>
+  </tr>
+
+  <tr>
+    <td>46.  The Solution of the General Quartic Equation</td>
+    <td>See entry for theorem quart above.</td>
+  </tr>
+
+  <tr>
+    <td>48.  Dirichlet's Theorem</td>
+    <td>Whether this is a copy-paste from set.mm or something
+    which needs a lot of intuitionizing is not immediately
+    clear.  There are several additional notations or concepts
+    which would need to be developed.</td>
+  </tr>
+
+  <tr>
+    <td>49.  The Cayley-Hamilton Theorem</td>
+    <td>It would appear there is a lot to develop in terms
+    of matrices, rings, etc.</td>
+  </tr>
+
+  <tr>
+    <td>51.  Wilson's Theorem</td>
+    <td>Seems like this would not be hard to intuitionize.</td>
+  </tr>
+
+  <tr>
+    <td>52.  The Number of Subsets of a Set</td>
+    <td>Shouldn't be hard to resolve this in the negative,
+    by showing that it is equivalent to excluded middle
+    (see ~ exmidpw ).</td>
+  </tr>
+
+  <tr>
+    <td>54. The Konigsberg Bridge Problem</td>
+    <td>Depends on graph theory definitions and theorems,
+    and words over a set, but nothing that looks difficult.</td>
+  </tr>
+
+  <tr>
+    <td>55.  Product of Segments of Chords</td>
+    <td>There's a lot to figure out in terms of whether we
+    can use complex numbers to represent the plane, and
+    the complex logarithm in particular.</td>
+  </tr>
+
+  <tr>
+    <td>57.  Heron's Formula</td>
+    <td>There's a lot to figure out in terms of whether we
+    can use complex numbers to represent the plane, and
+    the complex logarithm in particular.</td>
+  </tr>
+
+  <tr>
+    <td>58.  Formula for the Number of Combinations</td>
+    <td>The set.mm proof is not especially long proof.
+    It may require a bit of a closer look given the uses
+    of subsets, but it seems like it might intuitionize
+    without much trouble.</td>
+  </tr>
+
+  <tr>
+    <td>61.  Theorem of Ceva</td>
+    <td>There's a lot to figure out in terms of whether we
+    can use complex numbers to represent the plane, but
+    the show-stoppers if present are not obvious.</td>
+  </tr>
+
+  <tr>
+    <td>63.  Cantor's Theorem</td>
+    <td>Although we have ~ canth , current plan is to add
+    df-sdom (using the set.mm definition, we think) and
+    then treat this one as complete once we can prove
+    canth2 .</td>
+  </tr>
+
+  <tr>
+    <td>64.  L'H&ocirc;pital's Rule</td>
+    <td>There are enough theorems involving convergence,
+    limits, and derivatives which are different, that
+    significant work may be needed before this is
+    possible.</td>
+  </tr>
+
+  <tr>
+    <td>65.  Isosceles Triangle Theorem</td>
+    <td>There's a lot to figure out in terms of whether we
+    can use complex numbers to represent the plane, and
+    the complex logarithm in particular.</td>
+  </tr>
+
+  <tr>
+    <td>67.  <i>e</i> is Transcendental</td>
+    <td>There's a lot to develop in terms of polynomials
+    and algebraic numbers.  Also see <a href="">transcendental
+    number</a> at ncatlab concerning how we should
+    define transcendental.</td>
+  </tr>
+
+  <tr>
+    <td>70.  The Perfect Number Theorem</td>
+    <td>Depends on the prime count function pCnt .</td>
+  </tr>
+
+  <tr>
+    <td>71.  Order of a Subgroup</td>
+    <td>There's a lot of group theory to develop
+    to get to this point.</td>
+  </tr>
+
+  <tr>
+    <td>72.  Sylow's Theorem</td>
+    <td>There's a lot of group theory to develop
+    to get to this point.</td>
+  </tr>
+
+  <tr>
+    <td>73.  Ascending or Descending Sequences</td>
+    <td>Seems unlikely to be provable without significant
+    changes.</td>
+  </tr>
+
+  <tr>
+    <td>75. The Mean Value Theorem</td>
+    <td>As with the Intermediate Value Theorem, this is
+    likely to need significant changes of some kind.</td>
+  </tr>
+
+  <tr>
+    <td>76. Fourier Series</td>
+    <td>This is a very large proof which depends on a lot
+    of theorems involving derivatives and integrals.</td>
+  </tr>
+
+  <tr>
+    <td>77.  Sum of kth powers</td>
+    <td>Will require development of Bernoulli polynomials
+    which at least in set.mm are defined using the
+    well-founded recursive function generator wrecs .</td>
+  </tr>
+
+  <tr>
+    <td>78.  The Cauchy-Schwarz Inequality</td>
+    <td>Will require development of inner products and
+    norms.</td>
+  </tr>
+
+  <tr>
+    <td>80.  Fundamental Theorem of Arithmetic</td>
+    <td>Depends on the prime count function pCnt .</td>
+  </tr>
+
+  <tr>
+    <td>81.  Erd&#337;s's proof of the divergence
+of the inverse prime series</td>
+    <td>The set.mm proof uses isumsup</td>
+  </tr>
+
+  <tr>
+    <td>83.  The Friendship Theorem</td>
+    <td>Requires development of graph theory.</td>
+  </tr>
+
+  <tr>
+    <td>85.  Divisibility by 3 Rule</td>
+    <td>The set.mm proof would appear to be intuitionizable
+    without much trouble.</td>
+  </tr>
+
+  <tr>
+    <td>86.  Lebesgue Measure and Integration</td>
+    <td>Requires developing integrals and Lebesgue Measure</td>
+  </tr>
+
+  <tr>
+    <td>87.  Desargues's Theorem</td>
+    <td>This is a long proof with unmet prerequisites.  Also,
+    it may be using ` <_ ` in ways which won't work in iset.mm.</td>
+  </tr>
+
+  <tr>
+    <td>88. Derangements Formula</td>
+    <td>Presumably the biggest need here is further developing
+    the floor function for irrational numbers (as seen in
+    ~ flapcl and presumably similar theorems which could be
+    proved).</td>
+  </tr>
+
+  <tr>
+    <td>89.  The Factor and Remainder Theorems</td>
+    <td>Requires further development of polynomials.</td>
+  </tr>
+
+  <tr>
+    <td>90.  Stirling's Formula</td>
+    <td>This is a long proof and would require a look at
+    how convergence is handled.</td>
+  </tr>
+
+  <tr>
+    <td>93.  The Birthday Problem</td>
+    <td>Would appear to be intuitionizable.</td>
+  </tr>
+
+  <tr>
+    <td>94.  The Law of Cosines</td>
+    <td>There's a lot to figure out in terms of defining
+    angle and triangle (see angval above).</td>
+  </tr>
+
+  <tr>
+    <td>96.  Principle of Inclusion/Exclusion</td>
+    <td>In light of theorems like ~ unfiexmid this would
+    presumably need additional conditions, if it is possible
+    even then.</td>
+  </tr>
+
+  <tr>
+    <td>97.  Cramer's Rule</td>
+    <td>Requires more development of matrices and determinants.</td>
+  </tr>
+
+  <tr>
+    <td>98.  Bertrand's Postulate</td>
+    <td>This is a long proof.  It uses logdivlt .</td>
+  </tr>
+</table>
+
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
 COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
 
