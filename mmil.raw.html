@@ -7889,10 +7889,7 @@ or not.</TD>
 
 <TR>
 <TD>modexp</TD>
-<TD><I>none</I></TD>
-<TD>Depends on modulus. Presumably it, or something similar,
-can be made to work as it is mostly about integers rather
-than reals.</TD>
+<TD>~ modqexp</TD>
 </TR>
 
 <TR>
@@ -9547,36 +9544,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD><I>none</I></TD>
   <TD>Presumably could be defined, but would require changes to
   how we show the infimum exists. Lightly used in set.mm.</TD>
-</TR>
-
-<TR>
-  <TD>fermltl</TD>
-  <TD><I>none</I></TD>
-  <TD>may be provable now that we have eulerth</TD>
-</TR>
-
-<TR>
-  <TD>prmdiv</TD>
-  <TD><I>none</I></TD>
-  <TD>may be provable now that we have eulerth</TD>
-</TR>
-
-<TR>
-  <TD>prmdiveq</TD>
-  <TD><I>none</I></TD>
-  <TD>Relies on prmdiv</TD>
-</TR>
-
-<TR>
-  <TD>prmdivdiv</TD>
-  <TD><I>none</I></TD>
-  <TD>Relies on prmdiveq</TD>
-</TR>
-
-<TR>
-  <TD>phisum</TD>
-  <TD><I>none</I></TD>
-  <TD>May be provable once summation is better developed</TD>
 </TR>
 
 <tr>
@@ -12276,6 +12243,56 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>we could add a version of these if iset.mm
   gets the curry syntax</td>
+</tr>
+
+<tr>
+  <td>angval and all other theorems expressing angle
+  as the complex logarithm of a complex division</td>
+  <td><i>none</i></td>
+  <td>depends on complex logarithms and has all the usual
+  problems with selecting which branch to operate on
+  (which set.mm uses excluded middle for)</td>
+</tr>
+
+<tr>
+  <td>quad2</td>
+  <td><i>none</i></td>
+  <td>Since there is a hypothesis that ` D ` exists,
+  and there is no explicit selection of a principal
+  square root, this one avoids the most obvious problems
+  (once ` A =/= 0 ` is changed to ` A =//= 0 ` of course).
+  However, the set.mm proof still relies on sqeqor .</td>
+</tr>
+
+<tr>
+  <td>quad</td>
+  <td><i>none</i></td>
+  <td>Has all the issues of quad2 plus the usual problems
+  around selection of a primary square root of a complex
+  number.</td>
+</tr>
+
+<tr>
+  <td>1cubr</td>
+  <td><i>none</i></td>
+  <td>possibly provable, but the set.mm proof is in terms
+  of 1cubrlem which uses ` ^c ` with a base which is not
+  a positive real.</td>
+</tr>
+
+<tr>
+  <td>dcubic1lem , dcubic2 , dcubic1 , dcubic , mcubic ,
+  cubic2 , cubic</td>
+  <td><i>none</i></td>
+  <td>depends on 1cubr</td>
+</tr>
+
+<tr>
+  <td>dquartlem1 , dquartlem2 , dquart , quart1cl ,
+  quart1lem , quart1 , quartlem1 , quartlem2 ,
+  quartlem3 , quartlem4 , quart</td>
+  <td><i>none</i></td>
+  <td>depends on quad2 and cubic</td>
 </tr>
 
 <tr>
