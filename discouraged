@@ -1448,7 +1448,6 @@
 "ax12indn" is used by "ax12indi".
 "ax12v2-o" is used by "ax12a2-o".
 "ax13" is used by "equvini".
-"ax13" is used by "equviniOLD".
 "ax13lem1" is used by "ax13".
 "ax13lem1" is used by "ax13lem2".
 "ax13lem1" is used by "ax6e".
@@ -1480,7 +1479,6 @@
 "ax6e" is used by "equsexALT".
 "ax6e" is used by "equvel".
 "ax6e" is used by "equvini".
-"ax6e" is used by "equviniOLD".
 "ax6e" is used by "exlimiieq1".
 "ax6e" is used by "spd".
 "ax6e" is used by "spei".
@@ -14166,7 +14164,7 @@ New usage of "ax12indi" is discouraged (0 uses).
 New usage of "ax12indn" is discouraged (1 uses).
 New usage of "ax12v2-o" is discouraged (1 uses).
 New usage of "ax12vALT" is discouraged (0 uses).
-New usage of "ax13" is discouraged (2 uses).
+New usage of "ax13" is discouraged (1 uses).
 New usage of "ax13ALT" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
 New usage of "ax13lem1" is discouraged (6 uses).
@@ -14183,7 +14181,7 @@ New usage of "ax5ALT" is discouraged (0 uses).
 New usage of "ax5el" is discouraged (1 uses).
 New usage of "ax5eq" is discouraged (1 uses).
 New usage of "ax6" is discouraged (1 uses).
-New usage of "ax6e" is discouraged (27 uses).
+New usage of "ax6e" is discouraged (26 uses).
 New usage of "ax6e2eq" is discouraged (3 uses).
 New usage of "ax6e2eqVD" is discouraged (0 uses).
 New usage of "ax6e2nd" is discouraged (3 uses).
@@ -16025,7 +16023,6 @@ New usage of "equsexh" is discouraged (0 uses).
 New usage of "equsexvwOLD" is discouraged (0 uses).
 New usage of "equvel" is discouraged (0 uses).
 New usage of "equvini" is discouraged (1 uses).
-New usage of "equviniOLD" is discouraged (0 uses).
 New usage of "erngbase-rN" is discouraged (4 uses).
 New usage of "erngdv-rN" is discouraged (0 uses).
 New usage of "erngdvlem1-rN" is discouraged (3 uses).
@@ -19513,7 +19510,6 @@ Proof modification of "equs5aALT" is discouraged (25 steps).
 Proof modification of "equs5eALT" is discouraged (39 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
 Proof modification of "equsexvwOLD" is discouraged (36 steps).
-Proof modification of "equviniOLD" is discouraged (68 steps).
 Proof modification of "eubiOLD" is discouraged (15 steps).
 Proof modification of "eubiiOLD" is discouraged (17 steps).
 Proof modification of "euimOLD" is discouraged (37 steps).
