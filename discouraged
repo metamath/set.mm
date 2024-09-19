@@ -465,6 +465,16 @@
 "5oalem5" is used by "5oalem6".
 "5oalem6" is used by "5oalem7".
 "5oalem7" is used by "5oai".
+"abeq2" is used by "abeq1".
+"abeq2" is used by "bj-ru1".
+"abeq2" is used by "clabel".
+"abeq2" is used by "dfss2OLD".
+"abeq2" is used by "dmopab3".
+"abeq2" is used by "funimaexg".
+"abeq2" is used by "rabid2".
+"abeq2" is used by "ru".
+"abeq2" is used by "sbcabel".
+"abeq2" is used by "zfrep4".
 "ablo32" is used by "ablo4".
 "ablo32" is used by "ip0i".
 "ablo32" is used by "nvadd32".
@@ -13914,6 +13924,7 @@ New usage of "ab0ALT" is discouraged (0 uses).
 New usage of "ab0OLD" is discouraged (0 uses).
 New usage of "ab0orvALT" is discouraged (0 uses).
 New usage of "abbiOLD" is discouraged (0 uses).
+New usage of "abeq2" is discouraged (10 uses).
 New usage of "abfOLD" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (4 uses).
 New usage of "ablo4" is discouraged (3 uses).
@@ -18686,7 +18697,6 @@ New usage of "vk15.4j" is discouraged (0 uses).
 New usage of "vk15.4jVD" is discouraged (0 uses).
 New usage of "vmcn" is discouraged (1 uses).
 New usage of "vn0ALT" is discouraged (0 uses).
-New usage of "vpwexOLD" is discouraged (0 uses).
 New usage of "vsfval" is discouraged (4 uses).
 New usage of "vtocl2OLD" is discouraged (0 uses).
 New usage of "vtocl2dOLD" is discouraged (0 uses).
@@ -20354,7 +20364,6 @@ Proof modification of "vfermltlALT" is discouraged (279 steps).
 Proof modification of "vk15.4j" is discouraged (217 steps).
 Proof modification of "vk15.4jVD" is discouraged (268 steps).
 Proof modification of "vn0ALT" is discouraged (6 steps).
-Proof modification of "vpwexOLD" is discouraged (49 steps).
 Proof modification of "vtocl2OLD" is discouraged (84 steps).
 Proof modification of "vtocl2dOLD" is discouraged (118 steps).
 Proof modification of "vtoclALT" is discouraged (11 steps).
