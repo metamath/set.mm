@@ -470,6 +470,8 @@
 "abeq2" is used by "clabel".
 "abeq2" is used by "dfss2OLD".
 "abeq2" is used by "dmopab3".
+"abeq2" is used by "fineqvpow".
+"abeq2" is used by "fineqvrep".
 "abeq2" is used by "funimaexg".
 "abeq2" is used by "rabid2".
 "abeq2" is used by "ru".
@@ -13924,7 +13926,7 @@ New usage of "ab0ALT" is discouraged (0 uses).
 New usage of "ab0OLD" is discouraged (0 uses).
 New usage of "ab0orvALT" is discouraged (0 uses).
 New usage of "abbiOLD" is discouraged (0 uses).
-New usage of "abeq2" is discouraged (10 uses).
+New usage of "abeq2" is discouraged (12 uses).
 New usage of "abfOLD" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (4 uses).
 New usage of "ablo4" is discouraged (3 uses).
