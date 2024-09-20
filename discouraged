@@ -4916,6 +4916,7 @@
 "df-pnf" is used by "mnfnre".
 "df-pnf" is used by "pnfex".
 "df-pnf" is used by "pnfnre".
+"df-prstc" is used by "prstcval".
 "df-r" is used by "avril1".
 "df-r" is used by "ax1rid".
 "df-r" is used by "axresscn".
@@ -12033,6 +12034,12 @@
 "prpssnq" is used by "reclem2pr".
 "prpssnq" is used by "suplem1pr".
 "prpssnq" is used by "wuncn".
+"prstchomval" is used by "prstchom".
+"prstchomval" is used by "prstcthin".
+"prstcnidlem" is used by "prstchomval".
+"prstcnidlem" is used by "prstcnid".
+"prstcval" is used by "prstcnidlem".
+"prstcval" is used by "prstcthin".
 "prub" is used by "genpnnp".
 "prub" is used by "ltexprlem6".
 "prub" is used by "ltexprlem7".
