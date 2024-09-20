@@ -12035,6 +12035,7 @@
 "prpssnq" is used by "suplem1pr".
 "prpssnq" is used by "wuncn".
 "prstchomval" is used by "prstchom".
+"prstchomval" is used by "prstchom2ALT".
 "prstchomval" is used by "prstcthin".
 "prstcnidlem" is used by "prstchomval".
 "prstcnidlem" is used by "prstcnid".
@@ -15483,6 +15484,7 @@ New usage of "df-plpq" is discouraged (3 uses).
 New usage of "df-plq" is discouraged (2 uses).
 New usage of "df-plr" is discouraged (2 uses).
 New usage of "df-pnf" is discouraged (3 uses).
+New usage of "df-prstc" is discouraged (1 uses).
 New usage of "df-r" is discouraged (6 uses).
 New usage of "df-ringcALTV" is discouraged (1 uses).
 New usage of "df-rngcALTV" is discouraged (1 uses).
@@ -18009,6 +18011,10 @@ New usage of "prnmadd" is discouraged (2 uses).
 New usage of "prnmax" is discouraged (7 uses).
 New usage of "probfinmeasbALTV" is discouraged (0 uses).
 New usage of "prpssnq" is discouraged (8 uses).
+New usage of "prstchom2ALT" is discouraged (0 uses).
+New usage of "prstchomval" is discouraged (3 uses).
+New usage of "prstcnidlem" is discouraged (2 uses).
+New usage of "prstcval" is discouraged (2 uses).
 New usage of "prub" is discouraged (6 uses).
 New usage of "psrass1lemOLD" is discouraged (0 uses).
 New usage of "psrbagaddclOLD" is discouraged (1 uses).
@@ -20120,6 +20126,7 @@ Proof modification of "problem2" is discouraged (104 steps).
 Proof modification of "problem3" is discouraged (56 steps).
 Proof modification of "problem4" is discouraged (310 steps).
 Proof modification of "problem5" is discouraged (133 steps).
+Proof modification of "prstchom2ALT" is discouraged (121 steps).
 Proof modification of "psrass1lemOLD" is discouraged (1513 steps).
 Proof modification of "psrbagaddclOLD" is discouraged (392 steps).
 Proof modification of "psrbagconOLD" is discouraged (365 steps).
