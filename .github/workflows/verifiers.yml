@@ -250,9 +250,9 @@ jobs:
       - name : Update PATH
         run: echo "metamath-knife/target/release" >> "$GITHUB_PATH"
       - name: Verify set.mm
-        run: scripts/verify-knife --check-newlines ./set.mm ./discouraged
+        run: scripts/verify-knife ./set.mm ./discouraged
       - name: Verify iset.mm
-        run: scripts/verify-knife --check-newlines ./iset.mm ./iset-discouraged
+        run: scripts/verify-knife ./iset.mm ./iset-discouraged
 
   ###########################################################
   mmj2:
