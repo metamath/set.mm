@@ -18310,6 +18310,7 @@ New usage of "sbiedv" is discouraged (1 uses).
 New usage of "sbiedwOLD" is discouraged (0 uses).
 New usage of "sbimvOLD" is discouraged (2 uses).
 New usage of "sblbisvOLD" is discouraged (0 uses).
+New usage of "sbn1ALT" is discouraged (0 uses).
 New usage of "sbtALT" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "sbtr" is discouraged (0 uses).
@@ -20270,6 +20271,7 @@ Proof modification of "sbi1vOLD" is discouraged (58 steps).
 Proof modification of "sbiedwOLD" is discouraged (51 steps).
 Proof modification of "sbimvOLD" is discouraged (26 steps).
 Proof modification of "sblbisvOLD" is discouraged (29 steps).
+Proof modification of "sbn1ALT" is discouraged (41 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtALT" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
