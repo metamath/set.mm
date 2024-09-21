@@ -17474,6 +17474,7 @@ New usage of "nnadjuALT" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnne0ALT" is discouraged (0 uses).
+New usage of "noelOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
 New usage of "noranOLD" is discouraged (0 uses).
 New usage of "norassOLD" is discouraged (0 uses).
@@ -18273,6 +18274,7 @@ New usage of "sbie" is discouraged (19 uses).
 New usage of "sbied" is discouraged (3 uses).
 New usage of "sbiedv" is discouraged (1 uses).
 New usage of "sbiedwOLD" is discouraged (0 uses).
+New usage of "sbn1ALT" is discouraged (0 uses).
 New usage of "sbtALT" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "sbtr" is discouraged (0 uses).
@@ -18977,7 +18979,7 @@ Proof modification of "bj-19.12" is discouraged (35 steps).
 Proof modification of "bj-19.21t0" is discouraged (39 steps).
 Proof modification of "bj-19.41al" is discouraged (51 steps).
 Proof modification of "bj-a1k" is discouraged (10 steps).
-Proof modification of "bj-ab0" is discouraged (54 steps).
+Proof modification of "bj-ab0" is discouraged (39 steps).
 Proof modification of "bj-abf" is discouraged (13 steps).
 Proof modification of "bj-ablsscmn" is discouraged (10 steps).
 Proof modification of "bj-ablsscmnel" is discouraged (5 steps).
@@ -19997,6 +19999,7 @@ Proof modification of "nnadjuALT" is discouraged (62 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnne0ALT" is discouraged (19 steps).
+Proof modification of "noelOLD" is discouraged (77 steps).
 Proof modification of "noranOLD" is discouraged (63 steps).
 Proof modification of "norassOLD" is discouraged (276 steps).
 Proof modification of "norcomOLD" is discouraged (27 steps).
@@ -20198,6 +20201,7 @@ Proof modification of "sbcrexgOLD" is discouraged (77 steps).
 Proof modification of "sbcssgVD" is discouraged (229 steps).
 Proof modification of "sbequ2OLD" is discouraged (75 steps).
 Proof modification of "sbiedwOLD" is discouraged (51 steps).
+Proof modification of "sbn1ALT" is discouraged (41 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtALT" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
