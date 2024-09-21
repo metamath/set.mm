@@ -98,6 +98,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Sep-24 nanimn    dfnan2      mark as an alternative definition
 16-Sep-24 syl5eqr   eqtr3id     compare to eqtr3i or eqtr3d
 14-Sep-24 iunsn     [same]      moved from SN's mathbox to main set.mm
 10-Sep-24 sspreima  [same]      moved from TA's mathbox to main set.mm
