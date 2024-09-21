@@ -11,17 +11,14 @@ discouraged_file="${2:-discouraged}"
 metamath-knife ${source} --verify \
                          --verify-parse-stmt \
                          --verify-usage \
-                         --verify-markup
+                         --verify-markup \
+                         || exit 1
 
-if [ $? != 0 ]; then
-  exit 1
-fi
+metamath-knife ${source} -D discouraged.new >/dev/null \
+  && diff ${discouraged_file} discouraged.new >/dev/null
 
-metamath-knife ${source} -D discouraged.new >/dev/null
-diff ${discouraged_file} discouraged.new >/dev/null
-
-if [ $? != 0 ]; then
-  echo "The file '${discouraged_file}' needs regenerated."
+if [ $? -ne 0 ]; then
+  echo "The file '${discouraged_file}' needs to be regenerated."
   rm discouraged.new
   exit 1
 fi
