@@ -497,9 +497,9 @@ $( Proposition 2.3 has the following immediate consequence:
 
 Proposition 2.4: Neither of the variables x or y occurs in H(Psi_1).
 
-	    Also it is easy to check that [up to propositional logic]
-	    H(Chi_1) is either H(Psi_1) or the conjunction of H(Psi_1)
-	    with
+      Also it is easy to check that [up to propositional logic]
+      H(Chi_1) is either H(Psi_1) or the conjunction of H(Psi_1)
+      with
                     = x y
 
 It follows that from C(Chi_1) one can deduce [using propositonal
@@ -607,7 +607,7 @@ special case of this axiom. phi x and t satisfy the following three
 conditions:
 
 
-	(1) The variable x does not appear in the term t.
+        (1) The variable x does not appear in the term t.
 
         (2) No bound variable of phi appears in t.
 
