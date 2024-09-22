@@ -13833,6 +13833,7 @@ New usage of "1lt2pi" is discouraged (1 uses).
 New usage of "1ne0sr" is discouraged (1 uses).
 New usage of "1nq" is discouraged (9 uses).
 New usage of "1nqenq" is discouraged (1 uses).
+New usage of "1oexOLD" is discouraged (0 uses).
 New usage of "1p1e2apr1" is discouraged (0 uses).
 New usage of "1p2e3ALT" is discouraged (0 uses).
 New usage of "1pi" is discouraged (11 uses).
@@ -13871,6 +13872,7 @@ New usage of "2lplnm2N" is discouraged (0 uses).
 New usage of "2lplnmN" is discouraged (0 uses).
 New usage of "2moex" is discouraged (2 uses).
 New usage of "2moswap" is discouraged (1 uses).
+New usage of "2oexOLD" is discouraged (0 uses).
 New usage of "2pm13.193" is discouraged (3 uses).
 New usage of "2pm13.193VD" is discouraged (0 uses).
 New usage of "2pmaplubN" is discouraged (1 uses).
@@ -18815,6 +18817,7 @@ Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
 Proof modification of "19.43OLD" is discouraged (72 steps).
 Proof modification of "1div0apr" is discouraged (77 steps).
+Proof modification of "1oexOLD" is discouraged (4 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "1p2e3ALT" is discouraged (7 steps).
 Proof modification of "1t1e1ALT" is discouraged (13 steps).
@@ -18825,6 +18828,7 @@ Proof modification of "2eu5OLD" is discouraged (81 steps).
 Proof modification of "2falsedOLD" is discouraged (14 steps).
 Proof modification of "2irrexpqALT" is discouraged (90 steps).
 Proof modification of "2logb9irrALT" is discouraged (141 steps).
+Proof modification of "2oexOLD" is discouraged (9 steps).
 Proof modification of "2pm13.193" is discouraged (91 steps).
 Proof modification of "2pm13.193VD" is discouraged (223 steps).
 Proof modification of "2sb5nd" is discouraged (125 steps).
