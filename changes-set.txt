@@ -98,7 +98,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-21-Sep-24 sb56      subst
+21-Sep-24 sb56      sbalex      substitution expressed with 'al' or with 'ex'
 21-Sep-24 nanimn    dfnan2      mark as an alternative definition
 16-Sep-24 syl5eqr   eqtr3id     compare to eqtr3i or eqtr3d
 14-Sep-24 iunsn     [same]      moved from SN's mathbox to main set.mm
