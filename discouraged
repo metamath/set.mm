@@ -18035,8 +18035,10 @@ New usage of "ral0OLD" is discouraged (0 uses).
 New usage of "ralab2OLD" is discouraged (0 uses).
 New usage of "ralcom2" is discouraged (0 uses).
 New usage of "raleleqALT" is discouraged (0 uses).
+New usage of "raleqbi1dvALT" is discouraged (0 uses).
 New usage of "ralf0OLD" is discouraged (0 uses).
 New usage of "ralidmOLD" is discouraged (0 uses).
+New usage of "ralrab2OLD" is discouraged (0 uses).
 New usage of "ralrexbidOLD" is discouraged (0 uses).
 New usage of "ralrnmpt" is discouraged (1 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
@@ -20095,6 +20097,7 @@ Proof modification of "ralab2OLD" is discouraged (67 steps).
 Proof modification of "raleleqALT" is discouraged (26 steps).
 Proof modification of "ralf0OLD" is discouraged (41 steps).
 Proof modification of "ralidmOLD" is discouraged (68 steps).
+Proof modification of "ralrab2OLD" is discouraged (66 steps).
 Proof modification of "ralrexbidOLD" is discouraged (29 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
 Proof modification of "rb-ax1" is discouraged (32 steps).
