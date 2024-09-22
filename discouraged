@@ -14821,6 +14821,7 @@ New usage of "brfi1indALT" is discouraged (0 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (59 uses).
 New usage of "c0exALT" is discouraged (0 uses).
+New usage of "cad0OLD" is discouraged (0 uses).
 New usage of "cases2ALT" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
 New usage of "cba" is discouraged (85 uses).
@@ -17486,6 +17487,7 @@ New usage of "nnadjuALT" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnne0ALT" is discouraged (0 uses).
+New usage of "noelOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
 New usage of "noranOLD" is discouraged (0 uses).
 New usage of "norassOLD" is discouraged (0 uses).
@@ -18289,6 +18291,7 @@ New usage of "sbie" is discouraged (19 uses).
 New usage of "sbied" is discouraged (3 uses).
 New usage of "sbiedv" is discouraged (1 uses).
 New usage of "sbiedwOLD" is discouraged (0 uses).
+New usage of "sbn1ALT" is discouraged (0 uses).
 New usage of "sbtALT" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "sbtr" is discouraged (0 uses).
@@ -18996,7 +18999,7 @@ Proof modification of "bj-19.12" is discouraged (35 steps).
 Proof modification of "bj-19.21t0" is discouraged (39 steps).
 Proof modification of "bj-19.41al" is discouraged (51 steps).
 Proof modification of "bj-a1k" is discouraged (10 steps).
-Proof modification of "bj-ab0" is discouraged (54 steps).
+Proof modification of "bj-ab0" is discouraged (39 steps).
 Proof modification of "bj-abf" is discouraged (13 steps).
 Proof modification of "bj-ablsscmn" is discouraged (10 steps).
 Proof modification of "bj-ablsscmnel" is discouraged (5 steps).
@@ -19206,6 +19209,7 @@ Proof modification of "bj-zfauscl" is discouraged (65 steps).
 Proof modification of "brfi1indALT" is discouraged (741 steps).
 Proof modification of "brfvidRP" is discouraged (93 steps).
 Proof modification of "c0exALT" is discouraged (15 steps).
+Proof modification of "cad0OLD" is discouraged (44 steps).
 Proof modification of "cases2ALT" is discouraged (88 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbvabwOLD" is discouraged (60 steps).
@@ -20017,6 +20021,7 @@ Proof modification of "nnadjuALT" is discouraged (62 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnne0ALT" is discouraged (19 steps).
+Proof modification of "noelOLD" is discouraged (77 steps).
 Proof modification of "noranOLD" is discouraged (63 steps).
 Proof modification of "norassOLD" is discouraged (276 steps).
 Proof modification of "norcomOLD" is discouraged (27 steps).
@@ -20219,6 +20224,7 @@ Proof modification of "sbcrexgOLD" is discouraged (77 steps).
 Proof modification of "sbcssgVD" is discouraged (229 steps).
 Proof modification of "sbequ2OLD" is discouraged (75 steps).
 Proof modification of "sbiedwOLD" is discouraged (51 steps).
+Proof modification of "sbn1ALT" is discouraged (41 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtALT" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).

@@ -98,6 +98,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Sep-24 nanimn    dfnan2      mark as an alternative definition
 18-Sep-24 sylibda   sylbida     moved from SN's mathbox to main set.mm
 17-Sep-24 moel      [same]      moved from TA's mathbox to main set.mm
 16-Sep-24 syl5eqr   eqtr3id     compare to eqtr3i or eqtr3d
