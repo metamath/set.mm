@@ -5414,6 +5414,7 @@
 "drex2" is used by "e2ebind".
 "drhmsubcALTV" is used by "fldhmsubcALTV".
 "drnf1" is used by "drnfc1".
+"drnf1" is used by "drnfc1OLD".
 "drnf1" is used by "nfald2".
 "drnf1" is used by "wl-nfs1t".
 "drnf2" is used by "drnfc2".
@@ -15694,9 +15695,10 @@ New usage of "dral2-o" is discouraged (4 uses).
 New usage of "drex1" is discouraged (10 uses).
 New usage of "drex2" is discouraged (4 uses).
 New usage of "drhmsubcALTV" is discouraged (1 uses).
-New usage of "drnf1" is discouraged (3 uses).
+New usage of "drnf1" is discouraged (4 uses).
 New usage of "drnf2" is discouraged (2 uses).
 New usage of "drnfc1" is discouraged (4 uses).
+New usage of "drnfc1OLD" is discouraged (0 uses).
 New usage of "drnfc2" is discouraged (0 uses).
 New usage of "drngcatALTV" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
@@ -19307,6 +19309,7 @@ Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "domepOLD" is discouraged (51 steps).
 Proof modification of "dral1ALT" is discouraged (34 steps).
 Proof modification of "dral2-o" is discouraged (14 steps).
+Proof modification of "drnfc1OLD" is discouraged (51 steps).
 Proof modification of "drnfc2" is discouraged (52 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
 Proof modification of "dtruALT2" is discouraged (80 steps).
