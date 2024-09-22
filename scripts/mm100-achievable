@@ -30,8 +30,9 @@ except:
 import re
 proof_re = re.compile(r'<li id="([0-9]*)">(.*)')
 
-provers = ['HOL Light', 'Isabelle', 'Mizar', 'Coq', 'Metamath',
-           'ProofPower', 'nqthm', 'ACL2', 'PVS', 'NuPRL']
+provers = ['HOL Light', 'Isabelle', 'Mizar', 'Coq', 'Lean', 'Metamath',
+           'ProofPower', 'nqthm', 'ACL2', 'PVS', 'Megalodon', 'Naproche',
+           'NuPRL']
 
 name = ['' for x in xrange(101) ] # Name for given id#
 
