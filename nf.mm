@@ -19058,7 +19058,7 @@ $)
        definitions.  This theorem shows that the erroneous definition can be
        repaired by conjoining ` A. x E* y ph ` as an additional condition.  The
        correct definition apparently has never been published.  ( ` E* ` means
-       "there exists at most one".) (Contributed by NM, 26-Oct-2003.) $)
+       "there exists at most one".)  (Contributed by NM, 26-Oct-2003.) $)
     2eu5 $p |- ( ( E! x E! y ph /\ A. x E* y ph ) <->
       ( E. x E. y ph /\ E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) ) ) $=
       ( weu wmo wal wa wex weq 2eu1 pm5.32ri eumo adantl 2moex syl pm4.71i 2eu4
