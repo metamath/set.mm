@@ -73,7 +73,7 @@ $( Specify properties of the metavariables. $)
     mp $a |- Q $.
   $}
 
-  $( Prove a theorem. $)
+  $( Prove a theorem.  (Contributed by NM, 1-Jan-2004.) $)
   th1 $p |- t = t $=
   $( Here is its proof: $)
     tt tze tpl tt weq tt tt weq tt a2 tt tze tpl tt weq tt tze tpl tt weq tt tt
