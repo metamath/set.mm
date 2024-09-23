@@ -5393,7 +5393,6 @@
 "dral2" is used by "dral1ALT".
 "dral2" is used by "sbal1".
 "dral2" is used by "sbal2".
-"dral2" is used by "sbal2OLD".
 "dral2" is used by "wl-sbalnae".
 "dral2-o" is used by "ax12el".
 "dral2-o" is used by "ax12eq".
@@ -5415,9 +5414,11 @@
 "drex2" is used by "e2ebind".
 "drhmsubcALTV" is used by "fldhmsubcALTV".
 "drnf1" is used by "drnfc1".
+"drnf1" is used by "drnfc1OLD".
 "drnf1" is used by "nfald2".
 "drnf1" is used by "wl-nfs1t".
 "drnf2" is used by "drnfc2".
+"drnf2" is used by "drnfc2OLD".
 "drnf2" is used by "nfsb4t".
 "drnfc1" is used by "bj-nfcsym".
 "drnfc1" is used by "nfabd2".
@@ -10043,7 +10044,6 @@
 "nfeqf1" is used by "nfiotad".
 "nfeqf1" is used by "nfmod2".
 "nfeqf1" is used by "sbal2".
-"nfeqf1" is used by "sbal2OLD".
 "nfeqf1" is used by "wl-eudf".
 "nfeqf1" is used by "wl-mo2df".
 "nfeqf2" is used by "axpowndlem2".
@@ -10114,7 +10114,6 @@
 "nfnae" is used by "sb9".
 "nfnae" is used by "sbal1".
 "nfnae" is used by "sbal2".
-"nfnae" is used by "sbal2OLD".
 "nfnae" is used by "sbco2".
 "nfnae" is used by "sbco3".
 "nfnae" is used by "sbequ6".
@@ -12494,7 +12493,6 @@
 "sb4b" is used by "sb4a".
 "sb4b" is used by "sbal1".
 "sb4b" is used by "sbal2".
-"sb4b" is used by "sbal2OLD".
 "sb4b" is used by "sbcom3".
 "sb4b" is used by "wl-2sb6d".
 "sb4b" is used by "wl-sbalnae".
@@ -15704,15 +15702,17 @@ New usage of "domepOLD" is discouraged (0 uses).
 New usage of "dral1" is discouraged (10 uses).
 New usage of "dral1-o" is discouraged (4 uses).
 New usage of "dral1ALT" is discouraged (0 uses).
-New usage of "dral2" is discouraged (6 uses).
+New usage of "dral2" is discouraged (5 uses).
 New usage of "dral2-o" is discouraged (4 uses).
 New usage of "drex1" is discouraged (10 uses).
 New usage of "drex2" is discouraged (4 uses).
 New usage of "drhmsubcALTV" is discouraged (1 uses).
-New usage of "drnf1" is discouraged (3 uses).
-New usage of "drnf2" is discouraged (2 uses).
+New usage of "drnf1" is discouraged (4 uses).
+New usage of "drnf2" is discouraged (3 uses).
 New usage of "drnfc1" is discouraged (4 uses).
+New usage of "drnfc1OLD" is discouraged (0 uses).
 New usage of "drnfc2" is discouraged (0 uses).
+New usage of "drnfc2OLD" is discouraged (0 uses).
 New usage of "drngcatALTV" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
 New usage of "drsb1" is discouraged (3 uses).
@@ -17307,6 +17307,7 @@ New usage of "nfa1-o" is discouraged (4 uses).
 New usage of "nfaba1g" is discouraged (0 uses).
 New usage of "nfabd" is discouraged (5 uses).
 New usage of "nfabd2" is discouraged (2 uses).
+New usage of "nfabdwOLD" is discouraged (0 uses).
 New usage of "nfabg" is discouraged (3 uses).
 New usage of "nfae" is discouraged (21 uses).
 New usage of "nfald2" is discouraged (6 uses).
@@ -17325,7 +17326,7 @@ New usage of "nfcvf" is discouraged (26 uses).
 New usage of "nfcvf2" is discouraged (16 uses).
 New usage of "nfdisj" is discouraged (0 uses).
 New usage of "nfeqf" is discouraged (9 uses).
-New usage of "nfeqf1" is discouraged (7 uses).
+New usage of "nfeqf1" is discouraged (6 uses).
 New usage of "nfeqf2" is discouraged (16 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfeu" is discouraged (2 uses).
@@ -17342,7 +17343,7 @@ New usage of "nfixp" is discouraged (0 uses).
 New usage of "nfmo" is discouraged (3 uses).
 New usage of "nfmod" is discouraged (2 uses).
 New usage of "nfmod2" is discouraged (5 uses).
-New usage of "nfnae" is discouraged (44 uses).
+New usage of "nfnae" is discouraged (43 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
 New usage of "nfrab" is discouraged (2 uses).
@@ -18237,7 +18238,7 @@ New usage of "sb3b" is discouraged (2 uses).
 New usage of "sb3bOLD" is discouraged (0 uses).
 New usage of "sb4OLD" is discouraged (0 uses).
 New usage of "sb4a" is discouraged (2 uses).
-New usage of "sb4b" is discouraged (13 uses).
+New usage of "sb4b" is discouraged (12 uses).
 New usage of "sb4bOLD" is discouraged (0 uses).
 New usage of "sb4e" is discouraged (1 uses).
 New usage of "sb4vOLD" is discouraged (0 uses).
@@ -18261,7 +18262,6 @@ New usage of "sb9" is discouraged (1 uses).
 New usage of "sb9i" is discouraged (0 uses).
 New usage of "sbal1" is discouraged (0 uses).
 New usage of "sbal2" is discouraged (2 uses).
-New usage of "sbal2OLD" is discouraged (0 uses).
 New usage of "sbc2rexgOLD" is discouraged (1 uses).
 New usage of "sbc3or" is discouraged (1 uses).
 New usage of "sbc3orgVD" is discouraged (0 uses).
@@ -19338,7 +19338,9 @@ Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "domepOLD" is discouraged (51 steps).
 Proof modification of "dral1ALT" is discouraged (34 steps).
 Proof modification of "dral2-o" is discouraged (14 steps).
-Proof modification of "drnfc2" is discouraged (52 steps).
+Proof modification of "drnfc1OLD" is discouraged (51 steps).
+Proof modification of "drnfc2" is discouraged (59 steps).
+Proof modification of "drnfc2OLD" is discouraged (52 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
 Proof modification of "dtruALT2" is discouraged (80 steps).
 Proof modification of "dummylink" is discouraged (1 steps).
@@ -19987,6 +19989,7 @@ Proof modification of "nelbOLD" is discouraged (81 steps).
 Proof modification of "neq0OLD" is discouraged (6 steps).
 Proof modification of "nf5rOLD" is discouraged (22 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
+Proof modification of "nfabdwOLD" is discouraged (152 steps).
 Proof modification of "nfceqdfOLD" is discouraged (48 steps).
 Proof modification of "nfcrALT" is discouraged (20 steps).
 Proof modification of "nfcriOLD" is discouraged (101 steps).
@@ -20222,7 +20225,6 @@ Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
 Proof modification of "sb5OLD" is discouraged (25 steps).
 Proof modification of "sbal1" is discouraged (149 steps).
-Proof modification of "sbal2OLD" is discouraged (157 steps).
 Proof modification of "sbc2or" is discouraged (134 steps).
 Proof modification of "sbc2rexgOLD" is discouraged (62 steps).
 Proof modification of "sbc3or" is discouraged (73 steps).
