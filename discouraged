@@ -15515,6 +15515,9 @@ New usage of "dfid3" is discouraged (1 uses).
 New usage of "dfiop2" is discouraged (3 uses).
 New usage of "dfiun2gOLD" is discouraged (0 uses).
 New usage of "dfmo" is discouraged (0 uses).
+New usage of "dfnul2OLD" is discouraged (0 uses).
+New usage of "dfnul3OLD" is discouraged (0 uses).
+New usage of "dfnul4OLD" is discouraged (0 uses).
 New usage of "dfopifOLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfsb1" is discouraged (4 uses).
@@ -15934,6 +15937,7 @@ New usage of "eleigvec" is discouraged (2 uses).
 New usage of "eleigvec2" is discouraged (2 uses).
 New usage of "eleigveccl" is discouraged (3 uses).
 New usage of "eleq2dALT" is discouraged (0 uses).
+New usage of "eleq2w2ALT" is discouraged (0 uses).
 New usage of "elex22VD" is discouraged (0 uses).
 New usage of "elex2VD" is discouraged (0 uses).
 New usage of "elfvmptrab1" is discouraged (0 uses).
@@ -19298,6 +19302,9 @@ Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dfiun2gOLD" is discouraged (134 steps).
 Proof modification of "dfmo" is discouraged (44 steps).
+Proof modification of "dfnul2OLD" is discouraged (38 steps).
+Proof modification of "dfnul3OLD" is discouraged (42 steps).
+Proof modification of "dfnul4OLD" is discouraged (23 steps).
 Proof modification of "dfopifOLD" is discouraged (102 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
 Proof modification of "dfss2OLD" is discouraged (56 steps).
@@ -19505,6 +19512,7 @@ Proof modification of "el123" is discouraged (26 steps).
 Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
+Proof modification of "eleq2w2ALT" is discouraged (50 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
 Proof modification of "elghomOLD" is discouraged (117 steps).
