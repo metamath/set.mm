@@ -470,7 +470,6 @@
 "abeq2" is used by "clabel".
 "abeq2" is used by "dfss2OLD".
 "abeq2" is used by "dmopab3".
-"abeq2" is used by "fineqvpow".
 "abeq2" is used by "fineqvrep".
 "abeq2" is used by "funimaexg".
 "abeq2" is used by "rabid2".
@@ -13935,7 +13934,7 @@ New usage of "ab0ALT" is discouraged (0 uses).
 New usage of "ab0OLD" is discouraged (0 uses).
 New usage of "ab0orvALT" is discouraged (0 uses).
 New usage of "abbiOLD" is discouraged (0 uses).
-New usage of "abeq2" is discouraged (12 uses).
+New usage of "abeq2" is discouraged (11 uses).
 New usage of "abfOLD" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (4 uses).
 New usage of "ablo4" is discouraged (3 uses).
@@ -16127,6 +16126,7 @@ New usage of "ficardunOLD" is discouraged (0 uses).
 New usage of "fimadmfoALT" is discouraged (0 uses).
 New usage of "findOLD" is discouraged (0 uses).
 New usage of "findcard2OLD" is discouraged (0 uses).
+New usage of "fineqvacALT" is discouraged (0 uses).
 New usage of "fldcALTV" is discouraged (0 uses).
 New usage of "fldcatALTV" is discouraged (1 uses).
 New usage of "flddivrng" is discouraged (2 uses).
@@ -19611,6 +19611,7 @@ Proof modification of "ficardunOLD" is discouraged (127 steps).
 Proof modification of "fimadmfoALT" is discouraged (108 steps).
 Proof modification of "findOLD" is discouraged (70 steps).
 Proof modification of "findcard2OLD" is discouraged (535 steps).
+Proof modification of "fineqvacALT" is discouraged (40 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnresiOLD" is discouraged (25 steps).
 Proof modification of "fnsnfvOLD" is discouraged (74 steps).
