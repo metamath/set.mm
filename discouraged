@@ -14805,6 +14805,7 @@ New usage of "bralnfn" is discouraged (2 uses).
 New usage of "bramul" is discouraged (1 uses).
 New usage of "branmfn" is discouraged (1 uses).
 New usage of "braval" is discouraged (10 uses).
+New usage of "brenOLD" is discouraged (0 uses).
 New usage of "brfi1indALT" is discouraged (0 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (59 uses).
@@ -19231,6 +19232,7 @@ Proof modification of "bj-xpima1snALT" is discouraged (25 steps).
 Proof modification of "bj-xpima2sn" is discouraged (23 steps).
 Proof modification of "bj-xpnzex" is discouraged (71 steps).
 Proof modification of "bj-zfauscl" is discouraged (65 steps).
+Proof modification of "brenOLD" is discouraged (130 steps).
 Proof modification of "brfi1indALT" is discouraged (741 steps).
 Proof modification of "brfvidRP" is discouraged (93 steps).
 Proof modification of "c0exALT" is discouraged (15 steps).
