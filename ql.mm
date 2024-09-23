@@ -1476,12 +1476,14 @@ $)
     ( wn wo wa anorabs2 ax-a2 lan lor 3tr1 ) ACZBKBADZEZDZEMKBKABDZEZDZEPKBAFQN
     KPMBOLKABGHZIHRJ $.
 
-  $( Axiom KA2a in Pavicic and Megill, 1998 (Contributed by NM, 9-Nov-1998.) $)
+  $( Axiom KA2a in Pavicic and Megill, 1998.  (Contributed by NM,
+     9-Nov-1998.) $)
   ska2a $p |- ( ( ( a v c ) == ( b v c ) ) ==
               ( ( c v a ) == ( c v b ) ) ) = 1 $=
     ( wo tb ax-a2 2bi bi1 ) ACDZBCDZECADZCBDZEIKJLACFBCFGH $.
 
-  $( Axiom KA2b in Pavicic and Megill, 1998 (Contributed by NM, 9-Nov-1998.) $)
+  $( Axiom KA2b in Pavicic and Megill, 1998.  (Contributed by NM,
+     9-Nov-1998.) $)
   ska2b $p |- ( ( ( a v c ) == ( b v c ) ) ==
               ( ( a ' ^ c ' ) ' == ( b ' ^ c ' ) ' ) ) = 1 $=
     ( wo tb wn wa oran 2bi bi1 ) ACDZBCDZEAFCFZGFZBFMGFZEKNLOACHBCHIJ $.
@@ -1620,7 +1622,7 @@ $)
       EAUIHAABCOPAQNSUFUOABTUARUBNABUCUFUDR $.
   $}
 
-  $( E2 - OL theorem proved by EQP (Contributed by NM, 14-Nov-1998.) $)
+  $( E2 - OL theorem proved by EQP. (Contributed by NM, 14-Nov-1998.) $)
   mccune2 $p |- ( a v ( ( a ' ^ ( ( a v b ' ) ^ ( a v b ) ) ) v (
                 a ' ^ ( ( a ' ^ b ) v ( a ' ^ b ' ) ) ) ) ) = 1 $=
     ( wn wo wa wt ax-a3 ax-r1 anor2 lear lel2or id bile ler2an lebi anor3 oran3
@@ -1629,7 +1631,7 @@ $)
     SUOUSUQUOURUOBRUOUERKUSUSUSLMNOUSUFCZUGCZDUIUQVBURVCABIABPSUFUGQTTSUKUIUATU
     BUJUCUD $.
 
-  $( E3 - OL theorem proved by EQP (Contributed by NM, 14-Nov-1998.) $)
+  $( E3 - OL theorem proved by EQP. (Contributed by NM, 14-Nov-1998.) $)
   mccune3 $p |- ( ( ( ( a ' ^ b ) v ( a ' ^ b ' ) ) v ( a ^ ( a '
                 v b ) ) ) ' v ( a ' v b ) ) = 1 $=
     ( wn wa wo wi3 wt df-i3 ax-r1 ax-r4 ax-r5 ska15 ax-r2 ) ACZBDNBCDEANBEZDEZC
@@ -3018,7 +3020,7 @@ $)
       BGZCGZHZQGZRSTABDIACEIJUAUBUBUAQUABCKLMNOP $.
   $}
 
-  $( Negated biconditional (distributive form) (Contributed by NM,
+  $( Negated biconditional (distributive form).  (Contributed by NM,
      13-Oct-1997.) $)
   wnbdi $p |- ( ( a == b ) ' ==
              ( ( ( a v b ) ^ a ' ) v ( ( a v b ) ^ b ' ) ) ) = 1 $=
@@ -3477,7 +3479,7 @@ $)
     ( wa wn wo tb comanr1 comcom6 com2or dfb ax-r1 cbtr ) AABCZADZBDZCZEZABFZAM
     PABGAPNOGHIRQABJKL $.
 
-  $( Negated biconditional (distributive form) (Contributed by NM,
+  $( Negated biconditional (distributive form).  (Contributed by NM,
      30-Aug-1997.) $)
   nbdi $p |- ( a == b ) ' =
              ( ( ( a v b ) ^ a ' ) v ( ( a v b ) ^ b ' ) ) $=
@@ -7114,7 +7116,7 @@ $)
       ( comcom mh ) ACBDEDAHIBCFIGJ $.
   $}
 
-  $( Lemma for OML proof of Mladen's conjecture, (Contributed by NM,
+  $( Lemma for OML proof of Mladen's conjecture.  (Contributed by NM,
      10-Mar-2002.) $)
   mlaconjolem $p |- ( ( a == c ) v ( b == c ) ) =<
                    ( ( c ^ ( a v b ) ) v ( c ' ^ ( a ' v b ' ) ) ) $=
@@ -7338,7 +7340,7 @@ $)
                         a ->2 g ) ^ ( g ->2 e ) ) ) =< ( c ->2 e ) $.
       $( Proof of Mayet Example 4 from 4-variable Godowski equation.  R. Mayet,
          "Equational bases for some varieties of orthomodular lattices related
-         to states," Algebra Universalis 23 (1986), 167-195.  (Contributed by
+         to states", Algebra Universalis 23 (1986), 167-195.  (Contributed by
          NM, 19-Nov-1999.) $)
       gomaex4 $p |- ( ( ( ( a v b ) ^ ( c v d ) ) ^
  ( ( e v f ) ^ ( g v h ) ) ) ^ ( ( a v h ) ->1 ( d v e ) ' ) ) = 0 $=
@@ -7646,7 +7648,7 @@ $)
     gomaex3.22 $e |- y = ( e v f ) ' $.
     $( Proof of Mayet Example 3 from 6-variable Godowski equation.  R. Mayet,
        "Equational bases for some varieties of orthomodular lattices related to
-       states," Algebra Universalis 23 (1986), 167-195.  (Contributed by NM,
+       states", Algebra Universalis 23 (1986), 167-195.  (Contributed by NM,
        27-May-2000.) $)
     gomaex3 $p |- ( ( ( a v b ) ^ ( d v e ) ' ) ^
                   ( ( ( ( a v b ) ->1 ( d v e ) ' ) ->1
@@ -9055,7 +9057,7 @@ $)
       ( wa wi2 leran oagen2 letr ) DEHABIZEHACIDMEFJABCEGKL $.
   $}
 
-  $( Mladen's OA (Contributed by NM, 20-Nov-1998.) $)
+  $( Mladen's OA. (Contributed by NM, 20-Nov-1998.) $)
   mloa $p |- ( ( a == b ) ^ ( ( b == c ) v ( ( b v ( a == b ) )
          ^ ( c v ( a == c ) ) ) ) ) =< ( c v ( a == c ) ) $=
     ( wi2 wa wn wo tb lea ax-a3 or12 anor3 ax-r2 leo df-i2 ax-r1 lbtr le2an 2an
@@ -10581,14 +10583,14 @@ $)
   ml3 $p |- ( a v ( b ^ ( c v a ) ) ) = ( a v ( c ^ ( b v a ) ) ) $=
     ( wo wa ml3le lebi ) ABCADEDACBADEDABCFACBFG $.
 
-  $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by NM,
-     15-Mar-2010.)  (Revised by NM, 31-Mar-2011.) $)
+  $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
+     NM, 15-Mar-2010.)  (Revised by NM, 31-Mar-2011.) $)
   vneulem1 $p |- ( ( ( x v y ) v u ) ^ w )
       = ( ( ( x v y ) v u ) ^ ( ( u v w ) ^ w ) ) $=
     ( wo wa leor leid ler2an lear lebi lan ) BABEZBFZCDEAEBNBMBBAGBHIMBJKL $.
 
-  $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by NM,
-     15-Mar-2010.)  (Revised by NM, 31-Mar-2011.) $)
+  $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
+     NM, 15-Mar-2010.)  (Revised by NM, 31-Mar-2011.) $)
   vneulem2 $p |- ( ( ( x v y ) v u ) ^ ( ( u v w ) ^ w ) )
       = ( ( ( ( x v y ) ^ ( u v w ) ) v u ) ^ w ) $=
     ( wo wa anass cm ax-a2 ran ml orcom 3tr tr ) CDEZAEZABEZBFFZPQFZBFZOQFZAEZB
@@ -10596,20 +10598,20 @@ $)
 
   ${
     vneulem3.1 $e |- ( ( x v y ) ^ ( u v w ) ) = 0 $.
-    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
+    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
        NM, 15-Mar-2010.)  (Revised by NM, 31-Mar-2011.) $)
     vneulem3 $p |- ( ( ( ( x v y ) ^ ( u v w ) ) v u ) ^ w ) = ( u ^ w ) $=
       ( wo wa wf ror or0r tr ran ) CDFABFGZAFZABNHAFAMHAEIAJKL $.
 
-    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
+    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
        NM, 15-Mar-2010.)  (Revised by NM, 31-Mar-2011.) $)
     vneulem4 $p |- ( ( ( x v y ) v u ) ^ w ) = ( u ^ w ) $=
       ( wo wa vneulem1 vneulem2 vneulem3 3tr ) CDFZAFZBGMABFZBGGLNGAFBGABGABCDH
       ABCDIABCDEJK $.
   $}
 
-  $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by NM,
-     15-Mar-2010.)  (Revised by NM, 31-Mar-2011.) $)
+  $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
+     NM, 15-Mar-2010.)  (Revised by NM, 31-Mar-2011.) $)
   vneulem5 $p |- ( ( ( x v y ) v u ) ^ ( ( x v y ) v w ) )
         = ( ( x v y ) v ( ( ( x v y ) v u ) ^ w ) ) $=
     ( wo wa ancom ml cm lor 3tr ) CDEZAEZLBEZFNMFZLBMFZEZLMBFZEMNGQOLBAHIPRLBMG
@@ -10617,7 +10619,7 @@ $)
 
   ${
     vneulem6.1 $e |- ( ( a v b ) ^ ( c v d ) ) = 0 $.
-    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
+    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
        NM, 15-Mar-2010.)  (Revised by NM, 31-Mar-2011.) $)
     vneulem6 $p |- ( ( ( a v b ) v d ) ^ ( ( b v c ) v d ) )
          = ( ( c ^ a ) v ( b v d ) ) $=
@@ -10628,31 +10630,31 @@ $)
       FBAODCOLEKUDKVDUPUODCBPUEQRQUQUKUMUOUKUPUOUJDACBUFTBUJDBANSRUOUMUPUOULDCA
       BPTBULDBCUGSRUHUI $.
 
-    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
+    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
        NM, 31-Mar-2011.) $)
     vneulem7 $p |- ( ( c ^ a ) v ( b v d ) ) = ( b v d ) $=
       ( wa wo wf leao2 leao1 ler2an lbtr le0 lebi ror or0r tr ) CAFZBDGZGHSGSRH
       SRHRABGZCDGZFHRTUAACBICADJKELRMNOSPQ $.
 
-    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
+    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
        NM, 31-Mar-2011.) $)
     vneulem8 $p |- ( ( ( a v b ) v d ) ^ ( ( b v c ) v d ) ) = ( b v d ) $=
       ( wo wa vneulem6 vneulem7 tr ) ABFDFBCFDFGCAGBDFZFKABCDEHABCDEIJ $.
 
-    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
+    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
        NM, 31-Mar-2011.) $)
     vneulem9 $p |- ( ( ( a v b ) v d ) ^ ( ( a v b ) v c ) )
          = ( ( c ^ d ) v ( a v b ) ) $=
       ( wo wa ancom vneulem5 ax-r2 orcom vneulem4 ror 3tr ) ABFZDFZOCFZGZOQDGZF
       ZSOFCDGZOFRQPGTPQHCDABIJOSKSUAOCDABELMN $.
 
-    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
+    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
        NM, 31-Mar-2011.) $)
     vneulem10 $p |- ( ( ( a v b ) v c ) ^ ( ( a v c ) v d ) ) = ( a v c ) $=
       ( wo wa ax-a2 ax-r5 or32 2an wf orcom tr vneulem8 ) ABFZCFZACFZDFZGBAFZCF
       ZADFCFZGRQUASUBPTCABHIACDJKBADCTDCFZGPCDFZGLTPUCUDBAMDCMKENON $.
 
-    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
+    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
        NM, 31-Mar-2011.) $)
     vneulem11 $p |- ( ( ( b v c ) v d ) ^ ( ( a v c ) v d ) )
          = ( ( c v d ) v ( a ^ b ) ) $=
@@ -10661,8 +10663,8 @@ $)
       CADMJNCDABUBABFZGUGUBGOUBUGPEJQUEUBIR $.
   $}
 
-  $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by NM,
-     31-Mar-2011.) $)
+  $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
+     NM, 31-Mar-2011.) $)
   vneulem12 $p |- ( ( ( c ^ d ) v ( a v b ) ) ^ ( ( c v d ) v ( a ^ b ) ) )
           = ( ( c ^ d ) v ( ( a v b ) ^ ( ( c v d ) v ( a ^ b ) ) ) ) $=
     ( wa wo ml cm orass leao1 df-le2 ror tr lan lor 3tr2 ) CDEZABFZFZQCDFZABEZF
@@ -10671,7 +10673,7 @@ $)
 
   ${
     vneulem13.1 $e |- ( ( a v b ) ^ ( c v d ) ) = 0 $.
-    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
+    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
        NM, 31-Mar-2011.) $)
     vneulem13 $p |- ( ( c ^ d ) v ( ( a v b ) ^ ( ( c v d ) v ( a ^ b ) ) ) )
            = ( ( c ^ d ) v ( a ^ b ) ) $=
@@ -10679,14 +10681,14 @@ $)
       BFZCDFZABGZFZGZUCCDGUEUAUBUAUCGZFZGUAUBGZUFFZUCUDUGUAUCUFUBUCUFUCUAUCABBH
       UCIJZUAUCKZLMNUAUBUCOUIPUCFUCUHPUFUCEUFUCUKUJLQUCRSTM $.
 
-    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
+    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
        NM, 31-Mar-2011.) $)
     vneulem14 $p |- ( ( ( c ^ d ) v ( a v b ) ) ^ ( ( c v d ) v ( a ^ b ) ) )
            = ( ( c ^ d ) v ( a ^ b ) ) $=
       ( wa wo vneulem12 vneulem13 tr ) CDFZABGZGCDGABFZGZFKLNFGKMGABCDHABCDEIJ
       $.
 
-    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
+    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
        NM, 31-Mar-2011.) $)
     vneulem15 $p |- ( ( a v c ) ^ ( b v d ) )
         = ( ( ( ( a v b ) v c ) ^ ( ( a v c ) v d ) )
@@ -10694,7 +10696,7 @@ $)
       ( wo wa vneulem10 vneulem8 2an cm ) ABFZCFACFZDFGZLDFBCFDFGZGMBDFZGNMOPAB
       CDEHABCDEIJK $.
 
-    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96 (Contributed by
+    $( Part of von Neumann's lemma.  Lemma 9, Kalmbach p. 96.  (Contributed by
        NM, 31-Mar-2011.) $)
     vneulem16 $p |- ( ( ( ( a v b ) v c ) ^ ( ( a v c ) v d ) )
            ^ ( ( ( a v b ) v d ) ^ ( ( b v c ) v d ) ) )
@@ -10706,7 +10708,7 @@ $)
 
   ${
     vneulem.1 $e |- ( ( a v b ) ^ ( c v d ) ) = 0 $.
-    $( von Neumann's modular law lemma.  Lemma 9, Kalmbach p. 96 (Contributed
+    $( von Neumann's modular law lemma.  Lemma 9, Kalmbach p. 96.  (Contributed
        by NM, 31-Mar-2011.) $)
     vneulem $p |- ( ( a v c ) ^ ( b v d ) ) = ( ( a ^ b ) v ( c ^ d ) ) $=
       ( wo wa vneulem15 vneulem16 tr ) ACFZBDFGABFZCFKDFGLDFBCFDFGGABGCDGFABCDE
@@ -10749,14 +10751,14 @@ $)
       LPL $.
   $}
 
-  $( Lemma for ~ l42mod ..  (Contributed by NM, 8-Apr-2012.) $)
+  $( Lemma for ~ l42mod .  (Contributed by NM, 8-Apr-2012.) $)
   l42modlem1 $p |- ( ( ( a v b ) v d ) ^ ( ( a v b ) v e ) ) =
                               ( ( a v b ) v ( ( a v d ) ^ ( b v e ) ) ) $=
     ( wo wa leo ml2i ancom tr lor cm orass or12 2an lerr 3tr 3tr1 ) ABDEZBACEZE
     ZFZEZABTSFZEZEZABEZCEZUGDEZFZUGUDEUFUCUEUBAUEUASFUBSTBBDGHUASIJKLUJUAASEZFU
     KUAFZUCUHUAUIUKUHABCEEUAABCMABCNJABDMOUAUKIUCULUASAATBACGPHLQABUDMR $.
 
-  $( Lemma for ~ l42mod ..  (Contributed by NM, 8-Apr-2012.) $)
+  $( Lemma for ~ l42mod .  (Contributed by NM, 8-Apr-2012.) $)
   l42modlem2 $p |- ( ( ( ( a v b ) ^ c ) v d ) ^ e ) =<
          ( ( ( a v b ) v d ) ^ ( ( a v b ) v e ) ) $=
     ( wo wa lea leror leor le2an ) ABFZCGZDFLDFELEFMLDLCHIELJK $.
@@ -10773,7 +10775,7 @@ $)
     ( wo wa anass anabs ran ancom leor mlduali tr lan 3tr2 ) AABDZEZBCDZEAOQEZE
     AQEABCOEDZEAOQFPAQABGHRSARQOESOQIBCOBAJKLMN $.
 
-  $( Experimental expansion of l42mod.
+  $( Experimental expansion of ~ l42mod .
   l42modexp $p |- ( ( ( a v b ) v d ) ^ ( ( a v b ) v e ) ) =
                               ( ( a v b ) v ( ( a v d ) ^ ( b v e ) ) ) $=
     ( l42modlem1 modexp id tr lor lan cm ) ???????E???????????????FZ?????????L?
@@ -10889,8 +10891,8 @@ $)
     dp15.2 $e |- c1 = ( ( a0 v a2 ) ^ ( b0 v b2 ) ) $.
     dp15.3 $e |- p0 = ( ( a1 v b1 ) ^ ( a2 v b2 ) ) $.
     $( Part of theorem from Alan Day and Doug Pickering, "A note on the
-       Arguesian lattice identity," Studia Sci.  Math.  Hungar. 19:303-305
-       (1982).  (1)=>(5) (Contributed by NM, 1-Apr-2012.) $)
+       Arguesian lattice identity", Studia Sci.  Math.  Hungar. 19:303-305
+       (1982).  (1)=>(5).  (Contributed by NM, 1-Apr-2012.) $)
     dp15 $p |- ( ( a0 v a1 ) ^ ( ( b0 ^ ( a0 v p0 ) ) v b1 ) )
                   =< ( ( c0 v c1 ) v ( b1 ^ ( a0 v a1 ) ) ) $=
       ( wo wa id dp15lemh ) CABEMNMZDAIMNZABCDEFGHIQOLROJKP $.
@@ -10970,8 +10972,8 @@ $)
     dp53.3 $e |- c2 = ( ( a0 v a1 ) ^ ( b0 v b1 ) ) $.
     dp53.4 $e |- p = ( ( ( a0 v b0 ) ^ ( a1 v b1 ) ) ^ ( a2 v b2 ) ) $.
     $( Part of theorem from Alan Day and Doug Pickering, "A note on the
-       Arguesian lattice identity," Studia Sci.  Math.  Hungar. 19:303-305
-       (1982).  (5)=>(3) (Contributed by NM, 2-Apr-2012.) $)
+       Arguesian lattice identity", Studia Sci.  Math.  Hungar. 19:303-305
+       (1982).  (5)=>(3).  (Contributed by NM, 2-Apr-2012.) $)
     dp53 $p |- p =< ( a0 v ( b0 ^ ( b1 v ( c2 ^ ( c0 v c1 ) ) ) ) ) $=
       ( wo wa id dp53lemg ) ABCDEFGHIJCFODGOPZKLMSQNR $.
   $}
@@ -11058,8 +11060,8 @@ $)
     dp35.2 $e |- c1 = ( ( a0 v a2 ) ^ ( b0 v b2 ) ) $.
     dp35.3 $e |- p0 = ( ( a1 v b1 ) ^ ( a2 v b2 ) ) $.
     $( Part of theorem from Alan Day and Doug Pickering, "A note on the
-       Arguesian lattice identity," Studia Sci.  Math.  Hungar. 19:303-305
-       (1982).  (3)=>(5) (Contributed by NM, 12-Apr-2012.) $)
+       Arguesian lattice identity", Studia Sci.  Math.  Hungar. 19:303-305
+       (1982).  (3)=>(5).  (Contributed by NM, 12-Apr-2012.) $)
     dp35 $p |- ( ( a0 v a1 ) ^ ( ( b0 ^ ( a0 v p0 ) ) v b1 ) )
                   =< ( ( c0 v c1 ) v ( b1 ^ ( a0 v a1 ) ) ) $=
       ( wo wa id dp35lem0 ) ADMBEMNCFMNZABCDEFGHABMDEMNZIJKROLQOP $.
@@ -11071,8 +11073,8 @@ $)
     dp34.3 $e |- c2 = ( ( a0 v a1 ) ^ ( b0 v b1 ) ) $.
     dp34.4 $e |- p = ( ( ( a0 v b0 ) ^ ( a1 v b1 ) ) ^ ( a2 v b2 ) ) $.
     $( Part of theorem from Alan Day and Doug Pickering, "A note on the
-       Arguesian lattice identity," Studia Sci.  Math.  Hungar. 19:303-305
-       (1982).  (3)=>(4) (Contributed by NM, 3-Apr-2012.) $)
+       Arguesian lattice identity", Studia Sci.  Math.  Hungar. 19:303-305
+       (1982).  (3)=>(4).  (Contributed by NM, 3-Apr-2012.) $)
     dp34 $p |- p =< ( ( a0 v b1 ) v ( c2 ^ ( c0 v c1 ) ) ) $=
       ( wo wa dp53 lear lelor letr orass cm lbtr ) ABFJHIOPZOZOZBFOUDOZABEUEPZO
       UFABCDEFGHIJKLMNQUHUEBEUERSTUGUFBFUDUAUBUC $.
@@ -11218,8 +11220,8 @@ $)
     dp41.4 $e |- p2 = ( ( a0 v b0 ) ^ ( a1 v b1 ) ) $.
     dp41.5 $e |- p2 =< ( a2 v b2 ) $.
     $( Part of theorem from Alan Day and Doug Pickering, "A note on the
-       Arguesian lattice identity," Studia Sci.  Math.  Hungar. 19:303-305
-       (1982).  (4)=>(1) (Contributed by NM, 3-Apr-2012.) $)
+       Arguesian lattice identity", Studia Sci.  Math.  Hungar. 19:303-305
+       (1982).  (4)=>(1).  (Contributed by NM, 3-Apr-2012.) $)
     dp41 $p |- c2 =< ( c0 v c1 ) $=
       ( wo wa id dp41lemm ) ADPBEPQCFPQZABCDEFGHIJKLMTRNOS $.
   $}
@@ -11230,8 +11232,8 @@ $)
     dp32.3 $e |- c2 = ( ( a0 v a1 ) ^ ( b0 v b1 ) ) $.
     dp32.4 $e |- p = ( ( ( a0 v b0 ) ^ ( a1 v b1 ) ) ^ ( a2 v b2 ) ) $.
     $( Part of theorem from Alan Day and Doug Pickering, "A note on the
-       Arguesian lattice identity," Studia Sci.  Math.  Hungar. 19:303-305
-       (1982).  (3)=>(2) (Contributed by NM, 4-Apr-2012.) $)
+       Arguesian lattice identity", Studia Sci.  Math.  Hungar. 19:303-305
+       (1982).  (3)=>(2).  (Contributed by NM, 4-Apr-2012.) $)
     dp32 $p |- p =< ( ( a0 ^ ( a1 v ( c2 ^ ( c0 v c1 ) ) ) )
                     v ( b0 ^ ( b1 v ( c2 ^ ( c0 v c1 ) ) ) ) ) $=
       ( wo wa ancom tr orcom ler2an dp53 2an leao1 mldual2i mldual cm lbtr lerr
@@ -11249,8 +11251,8 @@ $)
     dp23.3 $e |- c2 = ( ( a0 v a1 ) ^ ( b0 v b1 ) ) $.
     dp23.4 $e |- p = ( ( ( a0 v b0 ) ^ ( a1 v b1 ) ) ^ ( a2 v b2 ) ) $.
     $( Part of theorem from Alan Day and Doug Pickering, "A note on the
-       Arguesian lattice identity," Studia Sci.  Math.  Hungar. 19:303-305
-       (1982).  (2)=>(3) (Contributed by NM, 4-Apr-2012.) $)
+       Arguesian lattice identity", Studia Sci.  Math.  Hungar. 19:303-305
+       (1982).  (2)=>(3).  (Contributed by NM, 4-Apr-2012.) $)
     dp23 $p |- p =< ( a0 v ( b0 ^ ( b1 v ( c2 ^ ( c0 v c1 ) ) ) ) ) $=
       ( wo wa dp32 lea leror letr ) ABCJHIOPZOZPZEFUAOPZOBUDOABCDEFGHIJKLMNQUCB
       UDBUBRST $.
@@ -11892,8 +11894,8 @@ $)
     oadp35.2 $e |- c1 = ( ( a0 v a2 ) ^ ( b0 v b2 ) ) $.
     oadp35.3 $e |- p0 = ( ( a1 v b1 ) ^ ( a2 v b2 ) ) $.
     $( Part of theorem from Alan Day and Doug Pickering, "A note on the
-       Arguesian lattice identity," Studia Sci.  Math.  Hungar. 19:303-305
-       (1982).  (3)=>(5) (Contributed by NM, 12-Apr-2012.) $)
+       Arguesian lattice identity", Studia Sci.  Math.  Hungar. 19:303-305
+       (1982).  (3)=>(5).  (Contributed by NM, 12-Apr-2012.) $)
     oadp35 $p |- ( ( a0 v a1 ) ^ ( ( b0 ^ ( a0 v p0 ) ) v b1 ) )
                   =< ( ( c0 v c1 ) v ( b1 ^ ( a0 v a1 ) ) ) $=
       ( wo wa id dp35lem0 ) ADMBEMNCFMNZABCDEFGHABMDEMNZIJKROLQOP $.

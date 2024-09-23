@@ -98,6 +98,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Sep-24 sb56      sbalex      substitution expressed with 'al' or with 'ex'
 21-Sep-24 nanimn    dfnan2      mark as an alternative definition
 20-Sep-24 fco3      funcofd     moved from GS's mathbox to main set.mm
 20-Sep-24 freld     [same]      moved from GS's mathbox to main set.mm
