@@ -2963,7 +2963,7 @@ Disadvantages:  Apparently not "natural" (rarely used in current
 
 Method #4:  Attempt at minimal nesting
 Advantages:  Appears to have minimum parentheses and minimum nesting.
-Disadvantages:  Not inuitive; somewhat complex algorithm.
+Disadvantages:  Not intuitive; somewhat complex algorithm.
 
 
 Method #1:  Same nesting level
@@ -5423,7 +5423,7 @@ overall proof size.  But for now my main goal is to replace the *OLDs.)
 
 (20-Jun-2006) As mentioned below, most of the recent convergence stuff
 like cvgcmp3ce is slowly replacing the *OLDs.  My goal is to be able to
-delete a big batch of *OLDs, used to develop the exponential funtion
+delete a big batch of *OLDs, used to develop the exponential function
 df-ef, within 2 weeks.  We can't get rid of them until the last piece in
 the chain of proofs is completed.
 
