@@ -16010,6 +16010,7 @@ New usage of "en2snOLD" is discouraged (0 uses).
 New usage of "en3lpVD" is discouraged (0 uses).
 New usage of "en3lplem1VD" is discouraged (1 uses).
 New usage of "en3lplem2VD" is discouraged (1 uses).
+New usage of "enfiOLD" is discouraged (0 uses).
 New usage of "enfiiOLD" is discouraged (0 uses).
 New usage of "enqbreq" is discouraged (5 uses).
 New usage of "enqbreq2" is discouraged (4 uses).
@@ -19557,6 +19558,7 @@ Proof modification of "en2snOLD" is discouraged (35 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
+Proof modification of "enfiOLD" is discouraged (42 steps).
 Proof modification of "enfiiOLD" is discouraged (14 steps).
 Proof modification of "ensucne0OLD" is discouraged (82 steps).
 Proof modification of "eq0ALT" is discouraged (31 steps).
