@@ -89,7 +89,7 @@ $)
 
   $( A three-step proof that applies ~ ax-mp to the two axioms.  The proof was
      saved in compressed format with "SAVE PROOF theorem1 / COMPRESSED" in the
-     Metamath program. $)
+     Metamath program.  (Contributed by NM, 30-Aug-2008.) $)
   theorem1 $p |- e ( e ( e ( x , e ( y , e ( e ( e ( y , z ) , e ( u , z ) )
     , u ) ) ) , v ) , e ( x , v ) ) $=
     ( wi ax-min ax-maj ax-mp ) ABBCFECFFEFFZFZKDFADFFZAFZFJMFFZKNJFFNFZFAOFFZMP
@@ -98,7 +98,7 @@ $)
   $( This is the same as ~ theorem1 , except that the proof is saved in
      uncompressed format with "SAVE PROOF theorem1u / NORMAL" in the Metamath
      program.  Note the size difference in the compressed versus uncompressed
-     proofs. $)
+     proofs.  (Contributed by NM, 30-Aug-2008.) $)
   theorem1u $p |- e ( e ( e ( x , e ( y , e ( e ( e ( y , z ) , e ( u , z ) )
     , u ) ) ) , v ) , e ( x , v ) ) $=
     wx wy wy wz wi wu wz wi wi wu wi wi wi wx wy wy wz wi wu wz wi wi wu wi wi
