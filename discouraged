@@ -16106,6 +16106,7 @@ New usage of "exinst01" is discouraged (1 uses).
 New usage of "exinst11" is discouraged (1 uses).
 New usage of "exlimexi" is discouraged (2 uses).
 New usage of "expcomdg" is discouraged (0 uses).
+New usage of "f1coOLD" is discouraged (0 uses).
 New usage of "f1cofveqaeqALT" is discouraged (0 uses).
 New usage of "f1dmOLD" is discouraged (0 uses).
 New usage of "f1eqcocnvOLD" is discouraged (0 uses).
@@ -16113,6 +16114,8 @@ New usage of "f1omoALT" is discouraged (0 uses).
 New usage of "f1oweALT" is discouraged (0 uses).
 New usage of "f1rhm0to0ALT" is discouraged (0 uses).
 New usage of "falnorfalOLD" is discouraged (0 uses).
+New usage of "fco3OLD" is discouraged (0 uses).
+New usage of "fcoOLD" is discouraged (0 uses).
 New usage of "fdmOLD" is discouraged (0 uses).
 New usage of "festinoALT" is discouraged (0 uses).
 New usage of "fh1" is discouraged (3 uses).
@@ -16123,6 +16126,7 @@ New usage of "fh3i" is discouraged (1 uses).
 New usage of "fh4i" is discouraged (0 uses).
 New usage of "ficardun2OLD" is discouraged (0 uses).
 New usage of "ficardunOLD" is discouraged (0 uses).
+New usage of "fimacnvOLD" is discouraged (0 uses).
 New usage of "fimadmfoALT" is discouraged (0 uses).
 New usage of "findOLD" is discouraged (0 uses).
 New usage of "findcard2OLD" is discouraged (0 uses).
@@ -16131,6 +16135,7 @@ New usage of "fldcALTV" is discouraged (0 uses).
 New usage of "fldcatALTV" is discouraged (1 uses).
 New usage of "flddivrng" is discouraged (2 uses).
 New usage of "fldhmsubcALTV" is discouraged (0 uses).
+New usage of "fncoOLD" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fnresiOLD" is discouraged (0 uses).
 New usage of "fnsnfvOLD" is discouraged (0 uses).
@@ -17247,7 +17252,6 @@ New usage of "mndoissmgrpOLD" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
 New usage of "mo4OLD" is discouraged (0 uses).
 New usage of "mobidvALT" is discouraged (0 uses).
-New usage of "mobiiOLD" is discouraged (0 uses).
 New usage of "moexex" is discouraged (2 uses).
 New usage of "moexexv" is discouraged (0 uses).
 New usage of "mof0ALT" is discouraged (0 uses).
@@ -17346,9 +17350,11 @@ New usage of "nfmod2" is discouraged (5 uses).
 New usage of "nfnae" is discouraged (43 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
+New usage of "nfra2wOLD" is discouraged (0 uses).
 New usage of "nfrab" is discouraged (2 uses).
 New usage of "nfral" is discouraged (5 uses).
 New usage of "nfrald" is discouraged (2 uses).
+New usage of "nfraldwOLD" is discouraged (0 uses).
 New usage of "nfreu" is discouraged (0 uses).
 New usage of "nfreud" is discouraged (1 uses).
 New usage of "nfrexdg" is discouraged (2 uses).
@@ -19595,6 +19601,7 @@ Proof modification of "exinst" is discouraged (12 steps).
 Proof modification of "exinst01" is discouraged (16 steps).
 Proof modification of "exinst11" is discouraged (21 steps).
 Proof modification of "exlimexi" is discouraged (15 steps).
+Proof modification of "f1coOLD" is discouraged (99 steps).
 Proof modification of "f1cofveqaeqALT" is discouraged (124 steps).
 Proof modification of "f1dmOLD" is discouraged (19 steps).
 Proof modification of "f1eqcocnvOLD" is discouraged (361 steps).
@@ -19604,14 +19611,18 @@ Proof modification of "f1rhm0to0ALT" is discouraged (161 steps).
 Proof modification of "falimfal" is discouraged (6 steps).
 Proof modification of "falimtru" is discouraged (6 steps).
 Proof modification of "falnorfalOLD" is discouraged (28 steps).
+Proof modification of "fco3OLD" is discouraged (60 steps).
+Proof modification of "fcoOLD" is discouraged (98 steps).
 Proof modification of "fdmOLD" is discouraged (19 steps).
 Proof modification of "festinoALT" is discouraged (24 steps).
 Proof modification of "ficardun2OLD" is discouraged (137 steps).
 Proof modification of "ficardunOLD" is discouraged (127 steps).
+Proof modification of "fimacnvOLD" is discouraged (78 steps).
 Proof modification of "fimadmfoALT" is discouraged (108 steps).
 Proof modification of "findOLD" is discouraged (70 steps).
 Proof modification of "findcard2OLD" is discouraged (535 steps).
 Proof modification of "fineqvacALT" is discouraged (40 steps).
+Proof modification of "fncoOLD" is discouraged (95 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnresiOLD" is discouraged (25 steps).
 Proof modification of "fnsnfvOLD" is discouraged (74 steps).
@@ -19975,7 +19986,6 @@ Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
 Proof modification of "mo4OLD" is discouraged (9 steps).
 Proof modification of "mobidvALT" is discouraged (48 steps).
-Proof modification of "mobiiOLD" is discouraged (17 steps).
 Proof modification of "mof0ALT" is discouraged (67 steps).
 Proof modification of "mpjao3danOLD" is discouraged (29 steps).
 Proof modification of "mpofunOLD" is discouraged (95 steps).
@@ -20000,6 +20010,8 @@ Proof modification of "nfcriiOLD" is discouraged (40 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfeu1ALT" is discouraged (25 steps).
 Proof modification of "nfopdALT" is discouraged (70 steps).
+Proof modification of "nfra2wOLD" is discouraged (15 steps).
+Proof modification of "nfraldwOLD" is discouraged (41 steps).
 Proof modification of "nfsbOLD" is discouraged (23 steps).
 Proof modification of "nfsumOLD" is discouraged (216 steps).
 Proof modification of "nfunidALT" is discouraged (33 steps).
@@ -20252,6 +20264,7 @@ Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "seqp1iOLD" is discouraged (20 steps).
 Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
+Proof modification of "sii" is discouraged (145 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comtVD" is discouraged (42 steps).
 Proof modification of "sineq0ALT" is discouraged (986 steps).
