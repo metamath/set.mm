@@ -247,20 +247,12 @@ jobs:
           git clone --depth 1 https://github.com/metamath/metamath-knife.git &&
           cd metamath-knife &&
           cargo build --release
+      - name : Update PATH
+        run: echo "metamath-knife/target/release" >> "$GITHUB_PATH"
       - name: Verify set.mm
-        run: |
-          metamath-knife/target/release/metamath-knife --verify \
-          --verify-markup --parse-typesetting ./set.mm
+        run: scripts/verify-knife ./set.mm ./discouraged
       - name: Verify iset.mm
-        run: |
-          metamath-knife/target/release/metamath-knife --verify \
-          --verify-markup --parse-typesetting ./iset.mm
-      - name: Check axiom usage for set.mm
-        run: |
-          metamath-knife/target/release/metamath-knife --verify-usage ./set.mm
-      - name: Check axiom usage for iset.mm
-        run: |
-          metamath-knife/target/release/metamath-knife --verify-usage ./iset.mm
+        run: scripts/verify-knife ./iset.mm ./iset-discouraged
 
   ###########################################################
   mmj2:
