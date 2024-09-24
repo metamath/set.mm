@@ -6910,6 +6910,7 @@ $)
     ( wo wb biort bicomd wn biorf nsyl4 con1i orri ) ABCZADZLBDZNMAMNAALABEFAGB
     LABHFIJK $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Miscellaneous theorems of propositional calculus
@@ -11106,6 +11107,7 @@ $)
     ZEZANBEZMBEONMEZDEEDEOAFOQGHNABEZEZAPEDBEZSBINTREETSEADBJNTRKHHNABKHMNBJL
     $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Derive the Tarski-Bernays-Wajsberg axioms from Meredith's First CO Axiom
@@ -11298,6 +11300,7 @@ $)
     DZTDZUIOUBQITADZUGJDZDZQDUJDZUKUIDQADZUGDZUMDUNDZUOUMJDULJDDUGDUQDURUGJJUPU
     LKUMJULUGUQLGQAUFUMUNLGTAUGQUJLGGUGTPHGUHUBDUFDZUFDZUHUFDUSUTDUTUFJUAUSSKUS
     UFMGUHUBUCUFNGGGG $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -11748,7 +11751,8 @@ $(
 
   Our axioms are really axiom _schemes_, and our wff and setvar variables are
   metavariables ranging over expressions in an underlying "object language."
-  This is explained here:  ~ https://us.metamath.org/mpeuni/mmset.html#axiomnote
+  This is explained here:
+  ~ https://us.metamath.org/mpeuni/mmset.html#axiomnote
 
   Our axiom system starts with the predicate calculus axiom schemes system S2
   of Tarski defined in his 1965 paper, "A Simplified Formalization of Predicate
@@ -12411,6 +12415,7 @@ $)
   alsyl $p |- ( ( A. x ( ph -> ps ) /\ A. x ( ps -> ch ) ) ->
         A. x ( ph -> ch ) ) $=
     ( wi pm3.33 alanimi ) ABEBCEACEDABCFG $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -13567,8 +13572,8 @@ $(
   "metalogically complete" i.e. able to prove directly all possible schemes
   with wff and setvar metavariables, bundled or not, whose object-language
   instances are valid.  ( ~ ax-11 has been proved to be required; see
-  ~ https://us.metamath.org/award2003.html#9a .  Metalogical independence of the
-  other three are open problems.)
+  ~ https://us.metamath.org/award2003.html#9a .  Metalogical independence of
+  the other three are open problems.)
 
   (There are additional predicate calculus axiom schemes included in set.mm
   such as ~ ax-4 , but they can all be proved as theorems from the above.)
@@ -13903,6 +13908,7 @@ $)
   $( Rotate existential quantifiers twice.  (Contributed by NM, 9-Mar-1995.) $)
   exrot4 $p |- ( E. x E. y E. z E. w ph <-> E. z E. w E. x E. y ph ) $=
     ( wex excom13 exbii bitri ) AEFDFCFZBFACFZDFEFZBFKBFEFDFJLBACDEGHKBEDGI $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -14260,7 +14266,7 @@ $)
     ( wn wex wal hbe1 hbn alex albii 3imtr4i ) ACZBDZCZMBEABEZNBELBKBFGABHZNMBO
     IJ $.
 
-  $( Obsolete proof of ~ hba1 as of 15-Dec-2017 (Contributed by NM,
+  $( Obsolete proof of ~ hba1 as of 15-Dec-2017.  (Contributed by NM,
      5-Aug-1993.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   hba1OLD $p |- ( A. x ph -> A. x A. x ph ) $=
@@ -16403,7 +16409,7 @@ $)
   stdpc4 $p |- ( A. x ph -> [ y / x ] ph ) $=
     ( wal weq wi wsb ax-1 alimi sb2 syl ) ABDBCEZAFZBDABCGAMBALHIABCJK $.
 
-  $( Substitution has no effect on a non-free variable.  (Contributed by NM,
+  $( Substitution has no effect on a nonfree variable.  (Contributed by NM,
      30-May-2009.)  (Revised by Mario Carneiro, 12-Oct-2016.) $)
   sbft $p |- ( F/ x ph -> ( [ y / x ] ph <-> ph ) ) $=
     ( wnf wsb weq wa wex sb1 wal simpr ax-gen 19.23t mpbii syl5 nfr stdpc4 syl6
@@ -17403,6 +17409,7 @@ $(
 
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
  Obsolete schemes ax-5o ax-4 ax-6o ax-9o ax-10o ax-10 ax-11o ax-12o ax-15 ax-16
@@ -17588,6 +17595,7 @@ $)
        (New usage is discouraged.) $)
     ax-16 $a |- ( A. x x = y -> ( ph -> A. x ph ) ) $.
   $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -19050,7 +19058,7 @@ $)
        definitions.  This theorem shows that the erroneous definition can be
        repaired by conjoining ` A. x E* y ph ` as an additional condition.  The
        correct definition apparently has never been published.  ( ` E* ` means
-       "exists at most one.") (Contributed by NM, 26-Oct-2003.) $)
+       "there exists at most one".)  (Contributed by NM, 26-Oct-2003.) $)
     2eu5 $p |- ( ( E! x E! y ph /\ A. x E* y ph ) <->
       ( E. x E. y ph /\ E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) ) ) $=
       ( weu wmo wal wa wex weq 2eu1 pm5.32ri eumo adantl 2moex syl pm4.71i 2eu4
@@ -34215,6 +34223,7 @@ $)
       BBGZBLUEULABCUDBBMNRUIDUFUHUFEUHCEUIUEUIAUHCUDUHBMOPQUGUJSBUKDBUFTUAUB $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   The intersection of a class
@@ -34615,6 +34624,7 @@ $)
           A. y e. B X e. y ) ) $=
       ( cint cin wcel cv wral elrint baib ) DBCEFGDBGDAHGACIABCDJK $.
   $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -36333,7 +36343,7 @@ $)
 
   ${
     $d A x y $.
-    $( Membership in ` ~P1 1c ` (Contributed by SF, 13-Jan-2015.) $)
+    $( Membership in ` ~P1 1c ` .  (Contributed by SF, 13-Jan-2015.) $)
     elpw11c $p |- ( A e. ~P1 1c <-> E. x A = { { x } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wrex wex elpw1 df-rex anbi1i 19.41v bitr4i
       wa el1c exbii bitri excom snex sneq eqeq2d ceqsexv 3bitri ) BDEFBCGZHZIZC
@@ -36341,7 +36351,7 @@ $)
       UTVBUIAUGRNUMUIAOPSTUPUNCKZAKUSUNCAUAVCURAUIURCULUKUBUMUHUQBUGULUCUDUESTU
       F $.
 
-    $( Membership in ` ~P1 ~P1 1c ` (Contributed by SF, 13-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 1c ` .  (Contributed by SF, 13-Jan-2015.) $)
     elpw121c $p |- ( A e. ~P1 ~P1 1c <-> E. x A = { { { x } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wrex elpw1 wa df-rex elpw11c anbi1i 19.41v
       wex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEZEFBCGZHZIZCUF
@@ -36349,7 +36359,7 @@ $)
       QZUILURUTVBUIAUGNOUPUIAPRSTUSUQCQZAQUOUQCAUAVCUNAUIUNCULUKUBUPUHUMBUGULUC
       UDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 1c ` (Contributed by SF, 14-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 1c ` .  (Contributed by SF, 14-Jan-2015.) $)
     elpw131c $p |- ( A e. ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { x } } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw121c anbi1i 19.41v
@@ -36358,7 +36368,7 @@ $)
       UPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUHUMBUGU
       LUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 1c ` .  (Contributed by SF,
        14-Jan-2015.) $)
     elpw141c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { x } } } } } ) $=
@@ -36368,7 +36378,7 @@ $)
       VAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUHUMBU
       GULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .  (Contributed by SF,
        14-Jan-2015.) $)
     elpw151c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { x } } } } } } ) $=
@@ -36378,7 +36388,7 @@ $)
       RCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUHUM
       BUGULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .  (Contributed by SF,
        14-Jan-2015.) $)
     elpw161c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { x } } } } } } } ) $=
@@ -36388,7 +36398,7 @@ $)
       AURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUH
       UMBUGULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .  (Contributed by SF,
        15-Jan-2015.) $)
     elpw171c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { x } } } } } } } } ) $=
@@ -36398,8 +36408,8 @@ $)
       MVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUP
       UHUMBUGULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
-       15-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .  (Contributed by
+       SF, 15-Jan-2015.) $)
     elpw181c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { { x } } } } } } } } } ) $=
@@ -36409,8 +36419,8 @@ $)
       UFMVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUB
       UPUHUMBUGULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by
-       SF, 24-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .  (Contributed
+       by SF, 24-Jan-2015.) $)
     elpw191c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { { { x } } } } } } } } } } ) $=
@@ -36420,7 +36430,7 @@ $)
       ICUFMVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUK
       UBUPUHUMBUGULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c `
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .
        (Contributed by SF, 24-Jan-2015.) $)
     elpw1101c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
@@ -36431,7 +36441,7 @@ $)
       SUICUFMVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCUL
       UKUBUPUHUMBUGULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c `
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .
        (Contributed by SF, 24-Jan-2015.) $)
     elpw1111c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
@@ -36461,7 +36471,7 @@ $)
     ( vx cv c0 wss cab wceq cpw csn ss0b abbii df-pw df-sn 3eqtr4i ) ABZCDZAENC
     FZAECGCHOPANIJACKACLM $.
 
-  $( Compute the unit power class of ` (/) ` (Contributed by SF,
+  $( Compute the unit power class of ` (/) ` .  (Contributed by SF,
      22-Jan-2015.) $)
   pw10 $p |- ~P1 (/) = (/) $=
     ( vx c0 cpw1 cpw c1c cin csn df-pw1 ineq1i wceq cv wcel wn disj 0nel1c elsn
@@ -36804,7 +36814,7 @@ $)
 
   ${
     $d A x y $.
-    $( Membership in ` ( _V X._k _V ) ` (Contributed by SF, 13-Jan-2015.) $)
+    $( Membership in ` ( _V X._k _V ) ` .  (Contributed by SF, 13-Jan-2015.) $)
     elvvk $p |- ( A e. ( _V X._k _V ) <-> E. x E. y A = << x , y >> ) $=
       ( cvv cxpk wcel cv copk wceq wex elxpk vex pm3.2i biantru 2exbii bitr4i
       wa ) CDDEFCAGZBGZHIZRDFZSDFZQZQZBJAJTBJAJABCDDKTUDABUCTUAUBALBLMNOP $.
@@ -42441,7 +42451,7 @@ $)
       MRUVGUVAXTMUUNWIYMXKUUKWJXTMUUNWJWOVBWKXTYAXKVQVBWLWMWPWLVCWLWPXCXQYTWQYH
       YDCWRYGCXBYBWSYDCWTVNT $.
 
-    $( Lemma for ~ dfop2 (Contributed by SF, 2-Jan-2015.) $)
+    $( Lemma for ~ dfop2 .  (Contributed by SF, 2-Jan-2015.) $)
     dfop2lem2 $p |- ( ~ ( ( Ins2_k _S_k (+)
      Ins3_k ( ( `'_k Image_k ( ( Image_k
       ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
@@ -50342,7 +50352,7 @@ $)
       FUCUDOABUCCPQRDUDSDBCTUA $.
   $}
 
-  $( The image of a pair under a funtion.  (Contributed by Jeff Madsen,
+  $( The image of a pair under a function.  (Contributed by Jeff Madsen,
      6-Jan-2011.) $)
   fnimapr $p |- ( ( F Fn A /\ B e. A /\ C e. A ) ->
                           ( F " { B , C } ) = { ( F ` B ) , ( F ` C ) } ) $=
@@ -55822,14 +55832,15 @@ $)
       AVSWBTWCWBETWDWCWEWF $.
   $}
 
-  $( Functionhood statement for ` Pw1Fn ` (Contributed by SF, 25-Feb-2015.) $)
+  $( Functionhood statement for ` Pw1Fn ` .  (Contributed by SF,
+     25-Feb-2015.) $)
   fnpw1fn $p |- Pw1Fn Fn 1c $=
     ( vx cv cuni cpw1 cvv wcel cpw1fn c1c wfn df-pw1fn fnmpt vex uniex a1i mprg
     pw1ex ) ABZCZDZEFZGHIAHAHSGEAJKTQHFRQALMPNO $.
 
   ${
     brpw1fn.1 $e |- A e. _V $.
-    $( Binary relationship form of ` Pw1Fn ` (Contributed by SF,
+    $( Binary relationship form of ` Pw1Fn ` .  (Contributed by SF,
        25-Feb-2015.) $)
     brpw1fn $p |- ( { A } Pw1Fn B <-> B = ~P1 A ) $=
       ( csn cpw1fn cfv wceq cpw1 wbr pw1fnval eqeq1i c1c wcel wb fnpw1fn snel1c
