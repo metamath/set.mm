@@ -98,6 +98,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+26-Sep-24 tltnle    [same]      moved from TA's mathbox to main set.mm
+26-Sep-24 tleile    [same]      moved from TA's mathbox to main set.mm
+26-Sep-24 tospos    [same]      moved from TA's mathbox to main set.mm
 25-Sep-24 biadanid  [same]      moved from TA's mathbox to main set.mm
 21-Sep-24 sb56      sbalex      substitution expressed with 'al' or with 'ex'
 21-Sep-24 nanimn    dfnan2      mark as an alternative definition
