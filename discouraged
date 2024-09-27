@@ -997,7 +997,7 @@
 "ax-addf" is used by "cnnvba".
 "ax-addf" is used by "itg1addlem4".
 "ax-addf" is used by "raddcn".
-"ax-addf" is used by "rlimadd".
+"ax-addf" is used by "rlimaddOLD".
 "ax-addrcl" is used by "readdcl".
 "ax-c10" is used by "ax6fromc10".
 "ax-c10" is used by "equid1".
@@ -1437,7 +1437,7 @@
 "ax-mulf" is used by "mulcn".
 "ax-mulf" is used by "mulex".
 "ax-mulf" is used by "mulnzcnopr".
-"ax-mulf" is used by "rlimmul".
+"ax-mulf" is used by "rlimmulOLD".
 "ax-mulf" is used by "rmulccn".
 "ax-mulf" is used by "xrge0pluscn".
 "ax-mulrcl" is used by "remulcl".
@@ -18159,6 +18159,8 @@ New usage of "ringcisoALTV" is discouraged (0 uses).
 New usage of "ringcsectALTV" is discouraged (1 uses).
 New usage of "ringcvalALTV" is discouraged (3 uses).
 New usage of "riotaocN" is discouraged (1 uses).
+New usage of "rlimaddOLD" is discouraged (0 uses).
+New usage of "rlimmulOLD" is discouraged (0 uses).
 New usage of "rmoanimALT" is discouraged (0 uses).
 New usage of "rnbra" is discouraged (2 uses).
 New usage of "rnelshi" is discouraged (1 uses).
@@ -20191,6 +20193,8 @@ Proof modification of "rexbidvALT" is discouraged (10 steps).
 Proof modification of "rexbidvaALT" is discouraged (10 steps).
 Proof modification of "rexn0OLD" is discouraged (17 steps).
 Proof modification of "rgen2a" is discouraged (81 steps).
+Proof modification of "rlimaddOLD" is discouraged (159 steps).
+Proof modification of "rlimmulOLD" is discouraged (159 steps).
 Proof modification of "rmoanimALT" is discouraged (93 steps).
 Proof modification of "rngopidOLD" is discouraged (27 steps).
 Proof modification of "rnmptcOLD" is discouraged (54 steps).
