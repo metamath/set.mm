@@ -99,8 +99,8 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 27-Sep-24 syldbl2   [same]      moved from SP's mathbox to main set.mm
-27-Sep-24 fiminre2  [same]      moved from SP's mathbox to main set.mm
-27-Sep-24 infrefilb [same]      moved from SP's mathbox to main set.mm
+27-Sep-24 fiminre2  [same]      moved from GS's mathbox to main set.mm
+27-Sep-24 infrefilb [same]      moved from GS's mathbox to main set.mm
 22-Sep-24 grpcld    [same]      moved from SN's mathbox to main set.mm
 21-Sep-24 sb56      sbalex      substitution expressed with 'al' or with 'ex'
 21-Sep-24 nanimn    dfnan2      mark as an alternative definition
