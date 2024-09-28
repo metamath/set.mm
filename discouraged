@@ -4824,6 +4824,7 @@
 "df-mndo" is used by "ismndo".
 "df-mndo" is used by "mndoisexid".
 "df-mndo" is used by "mndoissmgrpOLD".
+"df-mndtc" is used by "mndtcval".
 "df-mnf" is used by "mnfnre".
 "df-mnf" is used by "mnfxr".
 "df-mnf" is used by "pnfnemnf".
@@ -9699,6 +9700,13 @@
 "mndomgmid" is used by "isdrngo2".
 "mndomgmid" is used by "ismndo2".
 "mndomgmid" is used by "rngoidmlem".
+"mndtcbasval" is used by "mndtcbas".
+"mndtcbasval" is used by "mndtcob".
+"mndtcob" is used by "mndtcco".
+"mndtcob" is used by "mndtchom".
+"mndtcval" is used by "mndtcbasval".
+"mndtcval" is used by "mndtcco".
+"mndtcval" is used by "mndtchom".
 "moexex" is used by "2moswap".
 "moexex" is used by "moexexv".
 "mpv" is used by "mulcompr".
@@ -15447,6 +15455,7 @@ New usage of "df-md" is discouraged (1 uses).
 New usage of "df-mgmOLD" is discouraged (1 uses).
 New usage of "df-mi" is discouraged (2 uses).
 New usage of "df-mndo" is discouraged (3 uses).
+New usage of "df-mndtc" is discouraged (1 uses).
 New usage of "df-mnf" is discouraged (3 uses).
 New usage of "df-mp" is discouraged (11 uses).
 New usage of "df-mpq" is discouraged (3 uses).
@@ -17247,6 +17256,9 @@ New usage of "mndoisexid" is discouraged (2 uses).
 New usage of "mndoismgmOLD" is discouraged (3 uses).
 New usage of "mndoissmgrpOLD" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
+New usage of "mndtcbasval" is discouraged (2 uses).
+New usage of "mndtcob" is discouraged (2 uses).
+New usage of "mndtcval" is discouraged (3 uses).
 New usage of "mo4OLD" is discouraged (0 uses).
 New usage of "mobidvALT" is discouraged (0 uses).
 New usage of "moexex" is discouraged (2 uses).
