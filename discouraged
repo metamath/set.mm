@@ -17270,6 +17270,8 @@ New usage of "mpteq12dvOLD" is discouraged (0 uses).
 New usage of "mptresidOLD" is discouraged (0 uses).
 New usage of "mptssALT" is discouraged (0 uses).
 New usage of "mpv" is discouraged (1 uses).
+New usage of "mrelatglbALT" is discouraged (0 uses).
+New usage of "mrelatlubALT" is discouraged (0 uses).
 New usage of "mulassnq" is discouraged (10 uses).
 New usage of "mulasspi" is discouraged (12 uses).
 New usage of "mulasspr" is discouraged (1 uses).
@@ -19998,6 +20000,8 @@ Proof modification of "mpofunOLD" is discouraged (95 steps).
 Proof modification of "mpteq12dvOLD" is discouraged (18 steps).
 Proof modification of "mptresidOLD" is discouraged (28 steps).
 Proof modification of "mptssALT" is discouraged (57 steps).
+Proof modification of "mrelatglbALT" is discouraged (66 steps).
+Proof modification of "mrelatlubALT" is discouraged (76 steps).
 Proof modification of "mulgfvalALT" is discouraged (317 steps).
 Proof modification of "n0OLD" is discouraged (6 steps).
 Proof modification of "n0lpligALT" is discouraged (74 steps).
