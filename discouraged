@@ -999,7 +999,7 @@
 "ax-addf" is used by "cnnvba".
 "ax-addf" is used by "itg1addlem4".
 "ax-addf" is used by "raddcn".
-"ax-addf" is used by "rlimadd".
+"ax-addf" is used by "rlimaddOLD".
 "ax-addrcl" is used by "readdcl".
 "ax-c10" is used by "ax6fromc10".
 "ax-c10" is used by "equid1".
@@ -1439,7 +1439,7 @@
 "ax-mulf" is used by "mulcn".
 "ax-mulf" is used by "mulex".
 "ax-mulf" is used by "mulnzcnopr".
-"ax-mulf" is used by "rlimmul".
+"ax-mulf" is used by "rlimmulOLD".
 "ax-mulf" is used by "rmulccn".
 "ax-mulf" is used by "xrge0pluscn".
 "ax-mulrcl" is used by "remulcl".
@@ -4826,6 +4826,7 @@
 "df-mndo" is used by "ismndo".
 "df-mndo" is used by "mndoisexid".
 "df-mndo" is used by "mndoissmgrpOLD".
+"df-mndtc" is used by "mndtcval".
 "df-mnf" is used by "mnfnre".
 "df-mnf" is used by "mnfxr".
 "df-mnf" is used by "pnfnemnf".
@@ -9701,6 +9702,13 @@
 "mndomgmid" is used by "isdrngo2".
 "mndomgmid" is used by "ismndo2".
 "mndomgmid" is used by "rngoidmlem".
+"mndtcbasval" is used by "mndtcbas".
+"mndtcbasval" is used by "mndtcob".
+"mndtcob" is used by "mndtcco".
+"mndtcob" is used by "mndtchom".
+"mndtcval" is used by "mndtcbasval".
+"mndtcval" is used by "mndtcco".
+"mndtcval" is used by "mndtchom".
 "moexex" is used by "2moswap".
 "moexex" is used by "moexexv".
 "mpv" is used by "mulcompr".
@@ -15449,6 +15457,7 @@ New usage of "df-md" is discouraged (1 uses).
 New usage of "df-mgmOLD" is discouraged (1 uses).
 New usage of "df-mi" is discouraged (2 uses).
 New usage of "df-mndo" is discouraged (3 uses).
+New usage of "df-mndtc" is discouraged (1 uses).
 New usage of "df-mnf" is discouraged (3 uses).
 New usage of "df-mp" is discouraged (11 uses).
 New usage of "df-mpq" is discouraged (3 uses).
@@ -17249,6 +17258,9 @@ New usage of "mndoisexid" is discouraged (2 uses).
 New usage of "mndoismgmOLD" is discouraged (3 uses).
 New usage of "mndoissmgrpOLD" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
+New usage of "mndtcbasval" is discouraged (2 uses).
+New usage of "mndtcob" is discouraged (2 uses).
+New usage of "mndtcval" is discouraged (3 uses).
 New usage of "mo4OLD" is discouraged (0 uses).
 New usage of "mobidvALT" is discouraged (0 uses).
 New usage of "moexex" is discouraged (2 uses).
@@ -18161,6 +18173,8 @@ New usage of "ringcisoALTV" is discouraged (0 uses).
 New usage of "ringcsectALTV" is discouraged (1 uses).
 New usage of "ringcvalALTV" is discouraged (3 uses).
 New usage of "riotaocN" is discouraged (1 uses).
+New usage of "rlimaddOLD" is discouraged (0 uses).
+New usage of "rlimmulOLD" is discouraged (0 uses).
 New usage of "rmoanimALT" is discouraged (0 uses).
 New usage of "rnbra" is discouraged (2 uses).
 New usage of "rnelshi" is discouraged (1 uses).
@@ -20193,6 +20207,8 @@ Proof modification of "rexbidvALT" is discouraged (10 steps).
 Proof modification of "rexbidvaALT" is discouraged (10 steps).
 Proof modification of "rexn0OLD" is discouraged (17 steps).
 Proof modification of "rgen2a" is discouraged (81 steps).
+Proof modification of "rlimaddOLD" is discouraged (159 steps).
+Proof modification of "rlimmulOLD" is discouraged (159 steps).
 Proof modification of "rmoanimALT" is discouraged (93 steps).
 Proof modification of "rngopidOLD" is discouraged (27 steps).
 Proof modification of "rnmptcOLD" is discouraged (54 steps).
