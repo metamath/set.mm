@@ -16004,6 +16004,8 @@ New usage of "en2snOLD" is discouraged (0 uses).
 New usage of "en3lpVD" is discouraged (0 uses).
 New usage of "en3lplem1VD" is discouraged (1 uses).
 New usage of "en3lplem2VD" is discouraged (1 uses).
+New usage of "enfiOLD" is discouraged (0 uses).
+New usage of "enfiiOLD" is discouraged (0 uses).
 New usage of "enqbreq" is discouraged (5 uses).
 New usage of "enqbreq2" is discouraged (4 uses).
 New usage of "enqeq" is discouraged (2 uses).
@@ -17494,6 +17496,7 @@ New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nn0indALT" is discouraged (3 uses).
 New usage of "nnadjuALT" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
+New usage of "nnfiOLD" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnne0ALT" is discouraged (0 uses).
 New usage of "noelOLD" is discouraged (0 uses).
@@ -18495,6 +18498,7 @@ New usage of "sshjval3" is discouraged (0 uses).
 New usage of "ssjo" is discouraged (1 uses).
 New usage of "ssmd1" is discouraged (3 uses).
 New usage of "ssmd2" is discouraged (3 uses).
+New usage of "ssnnfiOLD" is discouraged (0 uses).
 New usage of "ssopab2b" is discouraged (1 uses).
 New usage of "ssoprab2b" is discouraged (1 uses).
 New usage of "sspba" is discouraged (15 uses).
@@ -19552,6 +19556,8 @@ Proof modification of "en2snOLD" is discouraged (35 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
+Proof modification of "enfiOLD" is discouraged (42 steps).
+Proof modification of "enfiiOLD" is discouraged (14 steps).
 Proof modification of "ensucne0OLD" is discouraged (82 steps).
 Proof modification of "eq0ALT" is discouraged (31 steps).
 Proof modification of "eq0OLDOLD" is discouraged (6 steps).
@@ -20048,6 +20054,7 @@ Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nn0indALT" is discouraged (15 steps).
 Proof modification of "nnadjuALT" is discouraged (62 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
+Proof modification of "nnfiOLD" is discouraged (14 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnne0ALT" is discouraged (19 steps).
 Proof modification of "noelOLD" is discouraged (77 steps).
@@ -20291,6 +20298,7 @@ Proof modification of "ss2abiOLD" is discouraged (17 steps).
 Proof modification of "sselOLD" is discouraged (60 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "ssfiOLD" is discouraged (222 steps).
+Proof modification of "ssnnfiOLD" is discouraged (116 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).
 Proof modification of "sspwimpALT" is discouraged (74 steps).
 Proof modification of "sspwimpALT2" is discouraged (50 steps).
