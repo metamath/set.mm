@@ -95,6 +95,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+27-Oct-24 bnj930    fnfund      moved from JB's mathbox to main set.mm
+27-Oct-24 predasetex predexg    predasetex is deprecated
+27-Oct-24 algrflem  opco1i
 26-Oct-24 fsumsplit1 fsumsplit1 moved from GS's mathbox to main set.mm
 26-Oct-24 fsumclf   fsumclf     moved from GS's mathbox to main set.mm
 24-Oct-24 ---       ---         well-founded recursion theorems moved

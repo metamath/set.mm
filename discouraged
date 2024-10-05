@@ -2736,16 +2736,6 @@
 "bnj93" is used by "bnj518".
 "bnj93" is used by "bnj96".
 "bnj93" is used by "bnj97".
-"bnj930" is used by "bnj1442".
-"bnj930" is used by "bnj1450".
-"bnj930" is used by "bnj1501".
-"bnj930" is used by "bnj545".
-"bnj930" is used by "bnj548".
-"bnj930" is used by "bnj553".
-"bnj930" is used by "bnj570".
-"bnj930" is used by "bnj929".
-"bnj930" is used by "bnj945".
-"bnj930" is used by "bnj966".
 "bnj931" is used by "bnj1136".
 "bnj931" is used by "bnj1408".
 "bnj931" is used by "bnj1442".
@@ -14780,7 +14770,6 @@ New usage of "bnj923" is discouraged (14 uses).
 New usage of "bnj927" is discouraged (2 uses).
 New usage of "bnj929" is discouraged (1 uses).
 New usage of "bnj93" is discouraged (6 uses).
-New usage of "bnj930" is discouraged (10 uses).
 New usage of "bnj931" is discouraged (8 uses).
 New usage of "bnj934" is discouraged (1 uses).
 New usage of "bnj937" is discouraged (13 uses).
@@ -18065,6 +18054,7 @@ New usage of "poml6N" is discouraged (1 uses).
 New usage of "postcposALT" is discouraged (0 uses).
 New usage of "prcdnq" is discouraged (14 uses).
 New usage of "prclisacycgr" is discouraged (0 uses).
+New usage of "predasetexOLD" is discouraged (0 uses).
 New usage of "predonOLD" is discouraged (0 uses).
 New usage of "preleqALT" is discouraged (0 uses).
 New usage of "prlem934" is discouraged (3 uses).
@@ -20236,6 +20226,7 @@ Proof modification of "pm2.43cbi" is discouraged (34 steps).
 Proof modification of "pm2.61iOLD" is discouraged (13 steps).
 Proof modification of "poclOLD" is discouraged (270 steps).
 Proof modification of "postcposALT" is discouraged (163 steps).
+Proof modification of "predasetexOLD" is discouraged (16 steps).
 Proof modification of "predonOLD" is discouraged (29 steps).
 Proof modification of "preleqALT" is discouraged (115 steps).
 Proof modification of "prmdvdssqOLD" is discouraged (62 steps).
