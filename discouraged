@@ -15920,6 +15920,8 @@ New usage of "el123" is discouraged (1 uses).
 New usage of "el2122old" is discouraged (1 uses).
 New usage of "elALT" is discouraged (0 uses).
 New usage of "ela" is discouraged (3 uses).
+New usage of "elabOLD" is discouraged (0 uses).
+New usage of "elabgOLD" is discouraged (0 uses).
 New usage of "elat2" is discouraged (4 uses).
 New usage of "elatcv0" is discouraged (0 uses).
 New usage of "elbdop" is discouraged (4 uses).
@@ -18224,7 +18226,6 @@ New usage of "rngosn4" is discouraged (1 uses).
 New usage of "rngosn6" is discouraged (1 uses).
 New usage of "rngoueqz" is discouraged (2 uses).
 New usage of "rnmptcOLD" is discouraged (0 uses).
-New usage of "rruOLD" is discouraged (0 uses).
 New usage of "rspcevOLD" is discouraged (0 uses).
 New usage of "rspcvOLD" is discouraged (0 uses).
 New usage of "rspn0OLD" is discouraged (0 uses).
@@ -18275,6 +18276,7 @@ New usage of "sbc3or" is discouraged (1 uses).
 New usage of "sbc3orgVD" is discouraged (0 uses).
 New usage of "sbc4rexgOLD" is discouraged (0 uses).
 New usage of "sbc5ALT" is discouraged (0 uses).
+New usage of "sbc6gOLD" is discouraged (0 uses).
 New usage of "sbcbi" is discouraged (2 uses).
 New usage of "sbcbi2OLD" is discouraged (0 uses).
 New usage of "sbcbiVD" is discouraged (0 uses).
@@ -19523,6 +19525,8 @@ Proof modification of "el12" is discouraged (19 steps).
 Proof modification of "el123" is discouraged (26 steps).
 Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
+Proof modification of "elabOLD" is discouraged (10 steps).
+Proof modification of "elabgOLD" is discouraged (47 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
 Proof modification of "eleq2w2ALT" is discouraged (50 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
@@ -20223,7 +20227,6 @@ Proof modification of "rpnnen1lem3" is discouraged (468 steps).
 Proof modification of "rpnnen1lem4" is discouraged (155 steps).
 Proof modification of "rpnnen1lem5" is discouraged (1023 steps).
 Proof modification of "rpnnen1lem6" is discouraged (128 steps).
-Proof modification of "rruOLD" is discouraged (72 steps).
 Proof modification of "rspcevOLD" is discouraged (10 steps).
 Proof modification of "rspcvOLD" is discouraged (10 steps).
 Proof modification of "rspn0OLD" is discouraged (42 steps).
@@ -20252,6 +20255,7 @@ Proof modification of "sbc3or" is discouraged (73 steps).
 Proof modification of "sbc3orgVD" is discouraged (180 steps).
 Proof modification of "sbc4rexgOLD" is discouraged (83 steps).
 Proof modification of "sbc5ALT" is discouraged (76 steps).
+Proof modification of "sbc6gOLD" is discouraged (30 steps).
 Proof modification of "sbc8g" is discouraged (55 steps).
 Proof modification of "sbcbi" is discouraged (33 steps).
 Proof modification of "sbcbi2OLD" is discouraged (16 steps).
