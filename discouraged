@@ -13793,6 +13793,7 @@ New usage of "0lno" is discouraged (3 uses).
 New usage of "0lnop" is discouraged (6 uses).
 New usage of "0lt1sr" is discouraged (2 uses).
 New usage of "0ncn" is discouraged (4 uses).
+New usage of "0nelopabOLD" is discouraged (0 uses).
 New usage of "0ngrp" is discouraged (2 uses).
 New usage of "0nnnALT" is discouraged (1 uses).
 New usage of "0nnq" is discouraged (22 uses).
@@ -15502,6 +15503,7 @@ New usage of "dfbi1ALT" is discouraged (0 uses).
 New usage of "dfch2" is discouraged (0 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfeu" is discouraged (0 uses).
+New usage of "dffr2ALT" is discouraged (0 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
 New usage of "dfid2" is discouraged (1 uses).
 New usage of "dfid3" is discouraged (1 uses).
@@ -17762,6 +17764,7 @@ New usage of "pclssidN" is discouraged (3 uses).
 New usage of "pclun2N" is discouraged (0 uses).
 New usage of "pclunN" is discouraged (1 uses).
 New usage of "pclvalN" is discouraged (6 uses).
+New usage of "peano5OLD" is discouraged (0 uses).
 New usage of "permsetexOLD" is discouraged (1 uses).
 New usage of "perpdragALT" is discouraged (0 uses).
 New usage of "pexmidALTN" is discouraged (0 uses).
@@ -17973,6 +17976,7 @@ New usage of "pmodN" is discouraged (0 uses).
 New usage of "pmodl42N" is discouraged (1 uses).
 New usage of "pn0sr" is discouraged (4 uses).
 New usage of "pnonsingN" is discouraged (3 uses).
+New usage of "poclOLD" is discouraged (0 uses).
 New usage of "pointpsubN" is discouraged (0 uses).
 New usage of "pointsetN" is discouraged (1 uses).
 New usage of "pol0N" is discouraged (6 uses).
@@ -18742,6 +18746,7 @@ New usage of "vmcn" is discouraged (1 uses).
 New usage of "vn0ALT" is discouraged (0 uses).
 New usage of "vsfval" is discouraged (4 uses).
 New usage of "vtocl2dOLD" is discouraged (0 uses).
+New usage of "vtocl3gaOLD" is discouraged (0 uses).
 New usage of "vtoclALT" is discouraged (0 uses).
 New usage of "vtocldOLD" is discouraged (0 uses).
 New usage of "vtoclgOLD" is discouraged (0 uses).
@@ -18828,6 +18833,7 @@ Proof modification of "0cnALT" is discouraged (82 steps).
 Proof modification of "0cnALT2" is discouraged (49 steps).
 Proof modification of "0cnALT3" is discouraged (3 steps).
 Proof modification of "0heALT" is discouraged (25 steps).
+Proof modification of "0nelopabOLD" is discouraged (91 steps).
 Proof modification of "0nnnALT" is discouraged (11 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "139prmALT" is discouraged (758 steps).
@@ -19311,6 +19317,7 @@ Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
+Proof modification of "dffr2ALT" is discouraged (64 steps).
 Proof modification of "dfmo" is discouraged (44 steps).
 Proof modification of "dfnul2OLD" is discouraged (38 steps).
 Proof modification of "dfnul3OLD" is discouraged (42 steps).
@@ -20102,6 +20109,7 @@ Proof modification of "ordelordALT" is discouraged (128 steps).
 Proof modification of "ordelordALTVD" is discouraged (202 steps).
 Proof modification of "orim12dALT" is discouraged (34 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
+Proof modification of "peano5OLD" is discouraged (304 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
 Proof modification of "permsetexOLD" is discouraged (42 steps).
 Proof modification of "perpdragALT" is discouraged (241 steps).
@@ -20112,6 +20120,7 @@ Proof modification of "pm2.21ddALT" is discouraged (10 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
 Proof modification of "pm2.61iOLD" is discouraged (13 steps).
+Proof modification of "poclOLD" is discouraged (270 steps).
 Proof modification of "preleqALT" is discouraged (115 steps).
 Proof modification of "prmdvdssqOLD" is discouraged (62 steps).
 Proof modification of "prmgaplcm" is discouraged (247 steps).
@@ -20444,6 +20453,7 @@ Proof modification of "vk15.4j" is discouraged (217 steps).
 Proof modification of "vk15.4jVD" is discouraged (268 steps).
 Proof modification of "vn0ALT" is discouraged (6 steps).
 Proof modification of "vtocl2dOLD" is discouraged (118 steps).
+Proof modification of "vtocl3gaOLD" is discouraged (45 steps).
 Proof modification of "vtoclALT" is discouraged (11 steps).
 Proof modification of "vtocldOLD" is discouraged (21 steps).
 Proof modification of "vtoclgOLD" is discouraged (11 steps).
