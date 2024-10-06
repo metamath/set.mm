@@ -195,7 +195,6 @@
 "2ax6e" is used by "2sb5rf".
 "2ax6e" is used by "2sb6rf".
 "2ax6elem" is used by "2ax6e".
-"2ax6elem" is used by "2ax6eOLD".
 "2eu1" is used by "2eu2".
 "2eu1" is used by "2eu3".
 "2eu2" is used by "2eu8".
@@ -3201,7 +3200,6 @@
 "cbvexd" is used by "axunnd".
 "cbvexd" is used by "cbvexdva".
 "cbvexd" is used by "dfid3".
-"cbvexd" is used by "vtoclgftOLD".
 "cbvexd" is used by "wl-eudf".
 "cbvexd" is used by "wl-mo2df".
 "cbvexdva" is used by "cbvex2vv".
@@ -13838,8 +13836,7 @@ New usage of "235t711" is discouraged (0 uses).
 New usage of "2atm2atN" is discouraged (0 uses).
 New usage of "2atnelvolN" is discouraged (0 uses).
 New usage of "2ax6e" is discouraged (2 uses).
-New usage of "2ax6eOLD" is discouraged (0 uses).
-New usage of "2ax6elem" is discouraged (2 uses).
+New usage of "2ax6elem" is discouraged (1 uses).
 New usage of "2bornot2b" is discouraged (0 uses).
 New usage of "2cnALT" is discouraged (0 uses).
 New usage of "2eu1" is discouraged (2 uses).
@@ -14840,7 +14837,7 @@ New usage of "cbvex" is discouraged (3 uses).
 New usage of "cbvex2" is discouraged (0 uses).
 New usage of "cbvex2vv" is discouraged (1 uses).
 New usage of "cbvex4v" is discouraged (0 uses).
-New usage of "cbvexd" is discouraged (12 uses).
+New usage of "cbvexd" is discouraged (11 uses).
 New usage of "cbvexdva" is discouraged (1 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
 New usage of "cbvexv" is discouraged (1 uses).
@@ -17352,6 +17349,7 @@ New usage of "nfmod" is discouraged (2 uses).
 New usage of "nfmod2" is discouraged (5 uses).
 New usage of "nfnae" is discouraged (43 uses).
 New usage of "nfnaewOLD" is discouraged (0 uses).
+New usage of "nfnbiOLD" is discouraged (0 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
 New usage of "nfra2wOLD" is discouraged (0 uses).
@@ -18755,7 +18753,6 @@ New usage of "vtocl3gaOLD" is discouraged (0 uses).
 New usage of "vtoclALT" is discouraged (0 uses).
 New usage of "vtocldOLD" is discouraged (0 uses).
 New usage of "vtoclgOLD" is discouraged (0 uses).
-New usage of "vtoclgftOLD" is discouraged (0 uses).
 New usage of "vtxdusgr0edgnelALT" is discouraged (0 uses).
 New usage of "w-bnj13" is discouraged (5 uses).
 New usage of "w-bnj15" is discouraged (92 uses).
@@ -18853,7 +18850,6 @@ Proof modification of "1oexOLD" is discouraged (4 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "1p2e3ALT" is discouraged (7 steps).
 Proof modification of "1t1e1ALT" is discouraged (13 steps).
-Proof modification of "2ax6eOLD" is discouraged (47 steps).
 Proof modification of "2bornot2b" is discouraged (26 steps).
 Proof modification of "2cnALT" is discouraged (3 steps).
 Proof modification of "2falsedOLD" is discouraged (14 steps).
@@ -20029,6 +20025,7 @@ Proof modification of "nfcriiOLD" is discouraged (40 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfeu1ALT" is discouraged (25 steps).
 Proof modification of "nfnaewOLD" is discouraged (14 steps).
+Proof modification of "nfnbiOLD" is discouraged (46 steps).
 Proof modification of "nfopdALT" is discouraged (70 steps).
 Proof modification of "nfra2wOLD" is discouraged (15 steps).
 Proof modification of "nfraldwOLD" is discouraged (41 steps).
@@ -20466,7 +20463,6 @@ Proof modification of "vtocl3gaOLD" is discouraged (45 steps).
 Proof modification of "vtoclALT" is discouraged (11 steps).
 Proof modification of "vtocldOLD" is discouraged (21 steps).
 Proof modification of "vtoclgOLD" is discouraged (11 steps).
-Proof modification of "vtoclgftOLD" is discouraged (142 steps).
 Proof modification of "vtxdusgr0edgnelALT" is discouraged (94 steps).
 Proof modification of "wl-cases2-dnf" is discouraged (85 steps).
 Proof modification of "wl-dfclab" is discouraged (73 steps).
