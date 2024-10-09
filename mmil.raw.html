@@ -2498,6 +2498,14 @@ there is less need for this convenience theorem.</TD>
   <td>~ xpcom</td>
 </tr>
 
+<tr>
+  <td>tz7.5</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof is not intuitionistic. At a minimum, a
+  change from non-empty to inhabited would be needed, but
+  that's probably not sufficient in light of ~ onintexmid .</td>
+</tr>
+
 <TR>
 <TD>tz7.7</TD>
 <TD><I>none</I></TD>
@@ -3173,7 +3181,7 @@ as meaning that the set difference is inhabited.)</TD>
 
 <TR>
 <TD>onint</TD>
-<TD>~ onintss</TD>
+<TD>~ onintss , ~ nnmindc</TD>
 <TD>onint implies excluded middle as shown in ~ onintexmid .</TD>
 </TR>
 
@@ -4191,14 +4199,14 @@ this implies excluded middle</TD>
 
 <tr>
   <td>unbnn</td>
-  <td><i>none</i></td>
+  <td>~ unbendc</td>
   <td>the impossibility proof at ~ exmidunben should apply
   here as well</td>
 </tr>
 
 <tr>
   <td>unbnn2</td>
-  <td><i>none</i></td>
+  <td>~ unbendc</td>
   <td>the impossibility proof at ~ exmidunben should apply
   here as well</td>
 </tr>
@@ -4423,8 +4431,8 @@ this implies excluded middle</TD>
 
 <TR>
   <TD>supexd , supex</TD>
-  <TD><I>none</I></TD>
-  <TD>The set.mm proof uses rmorabex</TD>
+  <TD>~ supex2g</TD>
+  <TD>The set.mm proof of supexd uses rmorabex</TD>
 </TR>
 
 <TR>
@@ -4515,8 +4523,7 @@ this implies excluded middle</TD>
 
 <TR>
   <TD>infexd , infex</TD>
-  <TD><I>none</I></TD>
-  <TD>See supexd</TD>
+  <TD>~ infex2g</TD>
 </TR>
 
 <TR>
@@ -4679,7 +4686,7 @@ this implies excluded middle</TD>
 
 <tr>
   <td>unbnn3</td>
-  <td><i>none</i></td>
+  <td>~ unbendc</td>
   <td>the impossibility proof at ~ exmidunben should apply
   here as well</td>
 </tr>
@@ -6293,8 +6300,7 @@ favor of theorems in deduction form.</TD>
 
 <TR>
   <TD>infregelb</TD>
-  <TD><I>none yet</I></TD>
-  <TD>Presumably could be handled in a way analogous to ~ suprleubex</TD>
+  <TD>~ infregelbex</TD>
 </TR>
 
 <TR>
@@ -6392,7 +6398,7 @@ which makes this different from ~ nnregexmid .</TD>
 
 <TR>
   <TD>infssuzle</TD>
-  <TD>~ infssuzledc</TD>
+  <TD>~ infssuzledc , ~ nnminle</TD>
 </TR>
 
 <TR>
@@ -9541,17 +9547,21 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>We don't yet have much on the square root of a negative number</TD>
 </TR>
 
-<TR>
-  <TD>df-odz and all theorems concerning the order function on the
-  class of integers mod N</TD>
-  <TD><I>none</I></TD>
-  <TD>Presumably could be defined, but would require changes to
-  how we show the infimum exists. Lightly used in set.mm.</TD>
-</TR>
+<tr>
+  <td>vfermltlALT</td>
+  <td>~ vfermltl</td>
+  <td>the set.mm proof of vfermltlALT should be intuitionizable</td>
+</tr>
+
+<tr>
+  <td>iserodd</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isercoll2</td>
+</tr>
 
 <tr>
   <td>unben</td>
-  <td><i>none</i></td>
+  <td>~ unbendc</td>
   <td>not possible as stated, as shown by ~ exmidunben</td>
 </tr>
 
@@ -12366,10 +12376,8 @@ proved in set.mm but not iset.mm:</p>
     <td>11.  The Infinitude of Primes</td>
     <td>Apparently would not be difficult. Note that
     set.mm has infpn , infpn2 , prminf , and perhaps other
-    forms. Some of them are connected by unben , which
-    won't work as-is (see ~ exmidunben ), but since
-    primality is decidable it should be possible to
-    define something like unben for decidable subsets.</td>
+    forms. Some of them are connected by unben - we should
+    be able to show primality is decidable and use ~ unbendc .</td>
   </tr>
 
   <tr>
@@ -12415,12 +12423,6 @@ of Transcendental Numbers</td>
     parameterized realizability which is a different technique
     than proving constructive taboos as we have done elsewhere
     in iset.mm.</td>
-  </tr>
-
-  <tr>
-    <td>23.  Formula for Pythagorean Triples</td>
-    <td>This is a long proof but at first glance should
-    work in iset.mm.</td>
   </tr>
 
   <tr>
