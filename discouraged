@@ -16167,6 +16167,9 @@ New usage of "funop" is discouraged (2 uses).
 New usage of "funopg" is discouraged (0 uses).
 New usage of "funopsn" is discouraged (2 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
+New usage of "fvpr1OLD" is discouraged (0 uses).
+New usage of "fvpr2OLD" is discouraged (0 uses).
+New usage of "fvpr2gOLD" is discouraged (0 uses).
 New usage of "fvprcALT" is discouraged (0 uses).
 New usage of "gcdabsOLD" is discouraged (0 uses).
 New usage of "gcdmultipleOLD" is discouraged (0 uses).
@@ -19813,6 +19816,9 @@ Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "fundcmpsurinjALT" is discouraged (221 steps).
 Proof modification of "fvilbdRP" is discouraged (27 steps).
 Proof modification of "fvimacnvALT" is discouraged (102 steps).
+Proof modification of "fvpr1OLD" is discouraged (56 steps).
+Proof modification of "fvpr2OLD" is discouraged (44 steps).
+Proof modification of "fvpr2gOLD" is discouraged (75 steps).
 Proof modification of "fvprcALT" is discouraged (26 steps).
 Proof modification of "gcdabsOLD" is discouraged (170 steps).
 Proof modification of "gcdmultipleOLD" is discouraged (348 steps).
