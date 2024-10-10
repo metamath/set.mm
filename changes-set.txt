@@ -83,7 +83,6 @@ proposed  syl5ibrcom imbitrridcom
 proposed  syl5bb    bitrid      compare to bitri or bitrd
 proposed  syl5rbb   bitr2id     compare to bitr2i or bitr2d
 proposed  syl5eq    eqtrid      compare to eqtri or eqtrd
-proposed  syl5reqr  eqtr3di     hypotheses would be switched
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
@@ -97,6 +96,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+10-Oct-24 syl5reqr  eqtr3di     order of hypotheses is switched
 30-Sep-24 syl5req   eqtr2id     compare to eqtr2i or eqtr2d
 27-Sep-24 syldbl2   [same]      moved from SP's mathbox to main set.mm
 27-Sep-24 fiminre2  [same]      moved from GS's mathbox to main set.mm
