@@ -5707,7 +5707,7 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-<TD>leloe , eqlelt , leloei , leloed , eqleltd</TD>
+<TD>leloe , leloei , leloed</TD>
 <TD><I>none</I></TD>
 </TR>
 
@@ -6144,6 +6144,11 @@ divdird, divsubdird, div11d</TD>
   <TD>~ divmuldivapd</TD>
 </TR>
 
+<tr>
+  <td>divmuleqd</td>
+  <td>~ divmuleqapd</td>
+</tr>
+
 <TR>
 <TD>rereccld , redivcld</TD>
 <TD>~ rerecclapd , ~ redivclapd </TD>
@@ -6359,7 +6364,7 @@ a fintely supported function.</TD>
 
 <TR>
 <TD>suprzcl</TD>
-<TD>~ suprzclex</TD>
+<TD>~ suprzclex , ~ suprzcl2dc</TD>
 </TR>
 
 <TR>
@@ -6412,16 +6417,18 @@ which makes this different from ~ nnregexmid .</TD>
 </TR>
 
 <TR>
-  <TD>zsupss , suprzcl2</TD>
-  <TD>~ zsupcl , ~ suprzclex</TD>
+  <TD>zsupss</TD>
+  <TD>~ zsupssdc</TD>
 </TR>
+
+<tr>
+  <td>suprzcl2</td>
+  <td>~ suprzclex , ~ suprzcl2dc</td>
+</tr>
 
 <TR>
 <TD>suprzub</TD>
-<TD><I>none</I></TD>
-<TD>Presumably could prove something like this with different conditions
-for the existence of the supremum (see ~ infssuzledc for something along
-these lines).</TD>
+<TD>~ suprzubdc</TD>
 </TR>
 
 <TR>
@@ -7810,16 +7817,22 @@ dividing by zero.</TD>
 <TD>~ expdivap</TD>
 </TR>
 
+<tr>
+  <td>leexp2</td>
+  <td>~ nn0leexp2</td>
+  <td>leexp2 is presumably provable using ~ ltexp2</td>
+</tr>
+
 <TR>
-<TD>ltexp2 , leexp2 , leexp2 , ltexp2d , leexp2d</TD>
+<TD>leexp2a , ltexp2d , leexp2d</TD>
 <TD><I>none</I></TD>
-<TD>Presumably provable, but the set.mm proof uses ltord1</TD>
+<TD>Presumably provable using ~ ltexp2</TD>
 </TR>
 
 <TR>
 <TD>ltexp2r , ltexp2rd</TD>
 <TD><I>none</I></TD>
-<TD>Presumably provable, but the set.mm proof uses ltexp2</TD>
+<TD>Presumably provable using ~ ltexp2</TD>
 </TR>
 
 <TR>
@@ -9557,6 +9570,11 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>iserodd</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses isercoll2</td>
+</tr>
+
+<tr>
+  <td>pclem</td>
+  <td>~ pclem0 , ~ pclemub , ~ pclemdc</td>
 </tr>
 
 <tr>
