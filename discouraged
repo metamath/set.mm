@@ -17274,6 +17274,8 @@ New usage of "mpteq12dvOLD" is discouraged (0 uses).
 New usage of "mptresidOLD" is discouraged (0 uses).
 New usage of "mptssALT" is discouraged (0 uses).
 New usage of "mpv" is discouraged (1 uses).
+New usage of "mrelatglbALT" is discouraged (0 uses).
+New usage of "mrelatlubALT" is discouraged (0 uses).
 New usage of "mulassnq" is discouraged (10 uses).
 New usage of "mulasspi" is discouraged (12 uses).
 New usage of "mulasspr" is discouraged (1 uses).
@@ -18013,6 +18015,7 @@ New usage of "polvalN" is discouraged (4 uses).
 New usage of "poml4N" is discouraged (3 uses).
 New usage of "poml5N" is discouraged (1 uses).
 New usage of "poml6N" is discouraged (1 uses).
+New usage of "postcposALT" is discouraged (0 uses).
 New usage of "prcdnq" is discouraged (14 uses).
 New usage of "prclisacycgr" is discouraged (0 uses).
 New usage of "predonOLD" is discouraged (0 uses).
@@ -20040,6 +20043,8 @@ Proof modification of "mpofunOLD" is discouraged (95 steps).
 Proof modification of "mpteq12dvOLD" is discouraged (18 steps).
 Proof modification of "mptresidOLD" is discouraged (28 steps).
 Proof modification of "mptssALT" is discouraged (57 steps).
+Proof modification of "mrelatglbALT" is discouraged (66 steps).
+Proof modification of "mrelatlubALT" is discouraged (76 steps).
 Proof modification of "mulgfvalALT" is discouraged (317 steps).
 Proof modification of "n0OLD" is discouraged (6 steps).
 Proof modification of "n0lpligALT" is discouraged (74 steps).
@@ -20159,6 +20164,7 @@ Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
 Proof modification of "pm2.61iOLD" is discouraged (13 steps).
 Proof modification of "poclOLD" is discouraged (270 steps).
+Proof modification of "postcposALT" is discouraged (163 steps).
 Proof modification of "predonOLD" is discouraged (29 steps).
 Proof modification of "preleqALT" is discouraged (115 steps).
 Proof modification of "prmdvdssqOLD" is discouraged (62 steps).
