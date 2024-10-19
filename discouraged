@@ -17263,7 +17263,6 @@ New usage of "mndomgmid" is discouraged (3 uses).
 New usage of "mndtcbasval" is discouraged (2 uses).
 New usage of "mndtcob" is discouraged (2 uses).
 New usage of "mndtcval" is discouraged (3 uses).
-New usage of "mo4OLD" is discouraged (0 uses).
 New usage of "mobidvALT" is discouraged (0 uses).
 New usage of "moexex" is discouraged (2 uses).
 New usage of "moexexv" is discouraged (0 uses).
@@ -18771,7 +18770,6 @@ New usage of "vk15.4jVD" is discouraged (0 uses).
 New usage of "vmcn" is discouraged (1 uses).
 New usage of "vn0ALT" is discouraged (0 uses).
 New usage of "vsfval" is discouraged (4 uses).
-New usage of "vtocl2dOLD" is discouraged (0 uses).
 New usage of "vtocl3gaOLD" is discouraged (0 uses).
 New usage of "vtoclALT" is discouraged (0 uses).
 New usage of "vtocldOLD" is discouraged (0 uses).
@@ -20035,7 +20033,6 @@ Proof modification of "minimp-pm2.43" is discouraged (40 steps).
 Proof modification of "minimp-syllsimp" is discouraged (261 steps).
 Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
-Proof modification of "mo4OLD" is discouraged (9 steps).
 Proof modification of "mobidvALT" is discouraged (48 steps).
 Proof modification of "mof0ALT" is discouraged (67 steps).
 Proof modification of "mpjao3danOLD" is discouraged (29 steps).
@@ -20504,7 +20501,6 @@ Proof modification of "vfermltlALT" is discouraged (279 steps).
 Proof modification of "vk15.4j" is discouraged (217 steps).
 Proof modification of "vk15.4jVD" is discouraged (268 steps).
 Proof modification of "vn0ALT" is discouraged (6 steps).
-Proof modification of "vtocl2dOLD" is discouraged (118 steps).
 Proof modification of "vtocl3gaOLD" is discouraged (45 steps).
 Proof modification of "vtoclALT" is discouraged (11 steps).
 Proof modification of "vtocldOLD" is discouraged (21 steps).
