@@ -95,6 +95,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+17-Oct-24 posglbd   posglbdg    compare to poslubdg
+16-Oct-24 2ralbiim  [same]      moved from AV's mathbox to main set.mm
 16-Oct-24 ---       ---         well-founded recursion theorems moved
                                 from SF's mathbox to main set.mm
 15-Oct-24 ---       ---         well-founded induction theorems moved
@@ -105,6 +107,10 @@ Date      Old       New         Notes
 27-Sep-24 syldbl2   [same]      moved from SP's mathbox to main set.mm
 27-Sep-24 fiminre2  [same]      moved from GS's mathbox to main set.mm
 27-Sep-24 infrefilb [same]      moved from GS's mathbox to main set.mm
+26-Sep-24 tltnle    [same]      moved from TA's mathbox to main set.mm
+26-Sep-24 tleile    [same]      moved from TA's mathbox to main set.mm
+26-Sep-24 tospos    [same]      moved from TA's mathbox to main set.mm
+25-Sep-24 biadanid  [same]      moved from TA's mathbox to main set.mm
 22-Sep-24 grpcld    [same]      moved from SN's mathbox to main set.mm
 21-Sep-24 sb56      sbalex      substitution expressed with 'al' or with 'ex'
 21-Sep-24 nanimn    dfnan2      mark as an alternative definition
