@@ -160805,6 +160805,22 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Propositional and predicate logic
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Double negation of double negation elimination.  Suggested by an online
+     post by Martin Escardo.  Although this statement resembles ~ nnexmid , it
+     can be proved with reference only to implication and negation (that is,
+     without use of disjunction).  (Contributed by Jim Kingdon,
+     21-Oct-2024.) $)
+  nnnotnotr $p |- -. -. ( -. -. ph -> ph ) $=
+    ( wn wi conax1 pm2.24 con3i pm2.65i ) ABZBZACZBHIADHJHAEFG $.
+  $( $j usage 'nnnotnotr' avoids 'ax-ia1' 'ax-ia2' 'ax-ia3' 'ax-io'; $)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Natural numbers
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
