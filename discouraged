@@ -1656,7 +1656,6 @@
 "basendx" is used by "1strstr".
 "basendx" is used by "2strstr".
 "basendx" is used by "2strstr1".
-"basendx" is used by "basendxltplusgndx".
 "basendx" is used by "basendxnn".
 "basendx" is used by "catstr".
 "basendx" is used by "cnfldfun".
@@ -14367,7 +14366,7 @@ New usage of "baerlem5bmN" is discouraged (0 uses).
 New usage of "bafval" is discouraged (38 uses).
 New usage of "barbariALT" is discouraged (0 uses).
 New usage of "barocoALT" is discouraged (0 uses).
-New usage of "basendx" is discouraged (34 uses).
+New usage of "basendx" is discouraged (33 uses).
 New usage of "basendxnnOLD" is discouraged (0 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bcs" is discouraged (6 uses).
