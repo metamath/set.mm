@@ -1656,28 +1656,37 @@
 "basendx" is used by "1strstr".
 "basendx" is used by "2strstr".
 "basendx" is used by "2strstr1".
+"basendx" is used by "basendxltplusgndx".
 "basendx" is used by "basendxnn".
 "basendx" is used by "catstr".
 "basendx" is used by "cnfldfun".
+"basendx" is used by "dsndxnbasendx".
 "basendx" is used by "eengstr".
 "basendx" is used by "grpbasex".
 "basendx" is used by "grpplusgx".
 "basendx" is used by "indistpsx".
+"basendx" is used by "ipndxnbasendx".
 "basendx" is used by "ipostr".
 "basendx" is used by "lmodstr".
 "basendx" is used by "mgpress".
 "basendx" is used by "odubas".
 "basendx" is used by "oppcbas".
 "basendx" is used by "otpsstr".
+"basendx" is used by "plendxnbasendx".
 "basendx" is used by "rescabs".
 "basendx" is used by "rescbas".
-"basendx" is used by "resslem".
+"basendx" is used by "resslemOLD".
 "basendx" is used by "rngstr".
+"basendx" is used by "scandxnbasendx".
 "basendx" is used by "setsmsbas".
+"basendx" is used by "starvndxnbasendx".
 "basendx" is used by "thlbas".
 "basendx" is used by "topgrpstr".
 "basendx" is used by "trkgstr".
+"basendx" is used by "tsetndxnbasendx".
 "basendx" is used by "tuslem".
+"basendx" is used by "unifndxnbasendx".
+"basendx" is used by "vscandxnbasendx".
 "bcs" is used by "bcs2".
 "bcs" is used by "cnlnadjlem2".
 "bcs" is used by "cnlnadjlem7".
@@ -4655,7 +4664,6 @@
 "df-cco" is used by "catcxpcclOLD".
 "df-cco" is used by "ccoid".
 "df-cco" is used by "ccondx".
-"df-cco" is used by "ressco".
 "df-ch" is used by "isch".
 "df-ch0" is used by "df0op2".
 "df-ch0" is used by "elch0".
@@ -4774,7 +4782,6 @@
 "df-hom" is used by "homid".
 "df-hom" is used by "homndx".
 "df-hom" is used by "oppchomfvalOLD".
-"df-hom" is used by "resshom".
 "df-hom" is used by "wunfuncOLD".
 "df-hom" is used by "wunnatOLD".
 "df-homul" is used by "hommval".
@@ -4955,7 +4962,6 @@
 "df-spec" is used by "specval".
 "df-ssp" is used by "sspval".
 "df-st" is used by "isst".
-"df-starv" is used by "ressstarv".
 "df-starv" is used by "starvid".
 "df-starv" is used by "starvndx".
 "df-trkg2d" is used by "istrkg2d".
@@ -14361,7 +14367,7 @@ New usage of "baerlem5bmN" is discouraged (0 uses).
 New usage of "bafval" is discouraged (38 uses).
 New usage of "barbariALT" is discouraged (0 uses).
 New usage of "barocoALT" is discouraged (0 uses).
-New usage of "basendx" is discouraged (25 uses).
+New usage of "basendx" is discouraged (34 uses).
 New usage of "basendxnnOLD" is discouraged (0 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bcs" is discouraged (6 uses).
@@ -15408,7 +15414,7 @@ New usage of "df-bnj19" is discouraged (5 uses).
 New usage of "df-bra" is discouraged (3 uses).
 New usage of "df-c" is discouraged (12 uses).
 New usage of "df-cbn" is discouraged (1 uses).
-New usage of "df-cco" is discouraged (6 uses).
+New usage of "df-cco" is discouraged (5 uses).
 New usage of "df-ch" is discouraged (1 uses).
 New usage of "df-ch0" is discouraged (8 uses).
 New usage of "df-chj" is discouraged (1 uses).
@@ -15450,7 +15456,7 @@ New usage of "df-hmo" is discouraged (1 uses).
 New usage of "df-hmop" is discouraged (1 uses).
 New usage of "df-hnorm" is discouraged (1 uses).
 New usage of "df-hodif" is discouraged (1 uses).
-New usage of "df-hom" is discouraged (10 uses).
+New usage of "df-hom" is discouraged (9 uses).
 New usage of "df-homul" is discouraged (1 uses).
 New usage of "df-hosum" is discouraged (1 uses).
 New usage of "df-hst" is discouraged (1 uses).
@@ -15518,7 +15524,7 @@ New usage of "df-span" is discouraged (1 uses).
 New usage of "df-spec" is discouraged (1 uses).
 New usage of "df-ssp" is discouraged (1 uses).
 New usage of "df-st" is discouraged (1 uses).
-New usage of "df-starv" is discouraged (3 uses).
+New usage of "df-starv" is discouraged (2 uses).
 New usage of "df-trkg2d" is discouraged (1 uses).
 New usage of "df-tru" is discouraged (1 uses).
 New usage of "df-unop" is discouraged (1 uses).
@@ -18181,6 +18187,7 @@ New usage of "renegclALT" is discouraged (0 uses).
 New usage of "renicax" is discouraged (0 uses).
 New usage of "resccoOLD" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
+New usage of "resslemOLD" is discouraged (0 uses).
 New usage of "retbwax1" is discouraged (0 uses).
 New usage of "retbwax2" is discouraged (3 uses).
 New usage of "retbwax3" is discouraged (0 uses).
@@ -20287,6 +20294,7 @@ Proof modification of "renegclALT" is discouraged (149 steps).
 Proof modification of "renicax" is discouraged (76 steps).
 Proof modification of "resccoOLD" is discouraged (115 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
+Proof modification of "resslemOLD" is discouraged (167 steps).
 Proof modification of "retbwax1" is discouraged (195 steps).
 Proof modification of "retbwax2" is discouraged (127 steps).
 Proof modification of "retbwax3" is discouraged (20 steps).
