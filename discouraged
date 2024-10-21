@@ -18551,7 +18551,7 @@ New usage of "ssdmd1" is discouraged (1 uses).
 New usage of "ssdmd2" is discouraged (0 uses).
 New usage of "sselOLD" is discouraged (0 uses).
 New usage of "sseliALT" is discouraged (0 uses).
-New usage of "ssfiOLD" is discouraged (0 uses).
+New usage of "ssfiALT" is discouraged (0 uses).
 New usage of "sshhococi" is discouraged (0 uses).
 New usage of "sshjcl" is discouraged (2 uses).
 New usage of "sshjval" is discouraged (6 uses).
@@ -20395,7 +20395,7 @@ Proof modification of "ss2abdvOLD" is discouraged (23 steps).
 Proof modification of "ss2abiOLD" is discouraged (17 steps).
 Proof modification of "sselOLD" is discouraged (60 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
-Proof modification of "ssfiOLD" is discouraged (222 steps).
+Proof modification of "ssfiALT" is discouraged (222 steps).
 Proof modification of "ssnnfiOLD" is discouraged (116 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).
 Proof modification of "sspwimpALT" is discouraged (74 steps).
