@@ -95,6 +95,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+20-Oct-24 ---       ---         transitive predecessor theorems moved
+                                from SF's mathbox to main set.mm
 17-Oct-24 posglbd   posglbdg    compare to poslubdg
 16-Oct-24 2ralbiim  [same]      moved from AV's mathbox to main set.mm
 16-Oct-24 ---       ---         well-founded recursion theorems moved
