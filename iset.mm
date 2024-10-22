@@ -138772,6 +138772,73 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Infinite primes theorem
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d j k N $.  $d j M $.  $d j k K $.
+    infpnlem.1 $e |- K = ( ( ! ` N ) + 1 ) $.
+    $( Lemma for ~ infpn .  The smallest divisor (greater than 1) ` M ` of
+       ` N ! + 1 ` is a prime greater than ` N ` .  (Contributed by NM,
+       5-May-2005.) $)
+    infpnlem1 $p |- ( ( N e. NN /\ M e. NN ) ->
+                        ( ( ( 1 < M /\ ( K / M ) e. NN ) /\
+                  A. j e. NN ( ( 1 < j /\ ( K / j ) e. NN ) -> M <_ j ) ) ->
+       ( N < M /\ A. j e. NN ( ( M / j ) e. NN -> ( j = 1 \/ j = M ) ) ) ) ) $=
+      ( cn wcel wa c1 clt wbr cdiv co cle wi wral cz nnz wb cr cv wceq ad2antrr
+      wo wdc ad2antlr zdclt syl2anc nnre lenlt syl2anr adantr cn0 nnnn0 cfa cfv
+      wn caddc facndiv oveq1i eqeltrrid nsyl sylanl1 expr sylbird condc expimpd
+      sylc adantrd cc faccld peano2nnd eqeltrid nncnd nndivtr ex 3com13 adantrl
+      3expa letri3 syl2an biimprd exp4b com3l imp32 adantll com23 sylan2d exp4d
+      imim2d com24 exp32 imp31 com14 3imp ralimdva adantld prime adantl sylibrd
+      w3a impd jcad ) DFGZCFGZHZICJKZBCLMZFGZHZIAUAZJKZBXKLMFGZHZCXKNKZOZAFPZHZ
+      DCJKZCXKLMFGZXKIUBXKCUBZUDOAFPZXFXJXSXQXFXGXIXSXFXGHZXSUEZXSUQZXIUQZOXIXS
+      OYCDQGZCQGZYDXDYGXEXGDRUCXEYHXDXGCRUFDCUGUHYCYECDNKZYFXFYIYESZXGXECTGZDTG
+      YJXDCUIZDUICDUJUKULXFXGYIYFXDDUMGZXEXGYIHZYFDUNZYMXEHYNHDUOUPZIURMZCLMZQG
+      XIDCUSXIYRXHQBYQCLEUTXHRVAVBVCVDVEXSXIVFVHVGVIXFXRXLXKCNKZXTXAZYAOZAFPZYB
+      XFXJXQUUBXFXIXQUUBOZXGXFXIUUCXFXIHZXPUUAAFYTUUDXKFGZHZXPYAXLYSXTUUFXPYAOZ
+      OUUFYSXTXLUUGXFXIUUEYSXTXLUUGOOZOXFYSUUEXIUUHXFYSUUEXIUUHOXFYSUUEHZHZXLXT
+      XIUUGUUJXLXTXIUUGUUJXTXIHZXMXLUUGXFUUEUUKXMOZYSXDBVJGZXEUUEUULXDBXDBYQFEX
+      DYPXDDYOVKVLVMVNUUMXEUUEUULUUEXEUUMUULUUEXEUUMXAUUKXMXKCBVOVPVQVSVCVRUUJX
+      PXNYAUUJXOYAXNXEUUIXOYAOZXDXEYSUUEUUNUUEXEYSUUNUUEXEYSXOYAUUEXEHYAYSXOHZU
+      UEXKTGYKYAUUOSXEXKUIYLXKCVTWAWBWCWDWEWFWJWGWHWIWKWLWKWMWNWOWDWPVPWQXBXEYB
+      UUBSXDACWRWSWTXC $.
+
+    $( Lemma for ~ infpn .  For any positive integer ` N ` , there exists a
+       prime number ` j ` greater than ` N ` .  (Contributed by NM,
+       5-May-2005.) $)
+    infpnlem2 $p |- ( N e. NN -> E. j e. NN ( N < j /\
+                    A. k e. NN ( ( j / k ) e. NN -> ( k = 1 \/ k = j ) ) ) ) $=
+      ( cn wcel c1 cv clt wbr cdiv co wa wral wrex wceq wdc cz syl2anc wi caddc
+      cle wo cfa cfv nnnn0 faccld peano2nnd eqeltrid nnge1d wb nnleltp1 sylancr
+      1nn mpbid breqtrrdi cc cc0 cap nncn nnap0 jca dividap 3syl eqeltrdi breq2
+      oveq2 eleq1d anbi12d rspcev syl12anc 1zzd adantl zdclt cdvds simpr adantr
+      nnz nnzd dvdsdc nndivdvds dcbid dcan ralrimiva nnwosdc infpnlem1 reximdva
+      sylan sylc mpd ) DFGZHAIZJKZCWMLMZFGZNZHBIZJKZCWRLMZFGZNZWMWRUCKUABFONZAF
+      PZDWMJKWMWRLMFGWRHQWRWMQUDUABFONZAFPWLWQAFPZWQRZAFOXDWLCFGZHCJKZCCLMZFGZX
+      FWLCDUEUFZHUBMZFEWLXLWLDDUGUHZUIUJZWLHXMCJWLHXLUCKZHXMJKZWLXLXNUKWLHFGXLF
+      GXPXQULUOXNHXLUMUNUPEUQWLXJHFWLXHCURGZCUSUTKZNXJHQXOXHXRXSCVACVBVCCVDVEUO
+      VFWQXIXKNACFWMCQZWNXIWPXKWMCHJVGXTWOXJFWMCCLVHVIVJVKVLWLXGAFWLWMFGZNZWNRZ
+      WPRZXGYBHSGWMSGZYCYBVMYAYEWLWMVSVNHWMVOTYBWMCVPKZRZYDYBYACSGYGWLYAVQYBCWL
+      XHYAXOVRVTWMCWATWLXHYAYGYDULXOXHYANYFWPCWMWBWCWIUPWNWPWDWJWEWQXBABWMWRQZW
+      NWSWPXAWMWRHJVGYHWOWTFWMWRCLVHVIVJWFTWLXCXEAFBCWMDEWGWHWK $.
+  $}
+
+  ${
+    $d j k N $.
+    $( There exist infinitely many prime numbers: for any positive integer
+       ` N ` , there exists a prime number ` j ` greater than ` N ` .  (See
+       ~ infpn2 for the equinumerosity version.)  (Contributed by NM,
+       1-Jun-2006.) $)
+    infpn $p |- ( N e. NN -> E. j e. NN ( N < j /\
+                    A. k e. NN ( ( j / k ) e. NN -> ( k = 1 \/ k = j ) ) ) ) $=
+      ( cfa cfv c1 caddc co eqid infpnlem2 ) ABCDEFGHZCKIJ $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Cardinality of real and complex number subsets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
