@@ -132168,6 +132168,44 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Decidable sets of integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A n x y $.
+    $( An inhabited decidable subset of the natural numbers has a minimum.
+       (Contributed by Jim Kingdon, 23-Sep-2024.) $)
+    nnmindc $p |- ( ( A C_ NN /\ A. x e. NN DECID x e. A /\ E. y y e. A )
+        -> inf ( A , RR , < ) e. A ) $=
+      ( vn cn wss cv wcel wdc wral wex cr clt cinf wa c1 cuz cfv wceq cin simpr
+      crab 1zzd eqid dfss5 biimpi nnuz ineq1i dfin5 eqtrdi ad2antrr eleqtrd cfz
+      eqtri co eleq1w simpllr elfznn adantl rspcdva infssuzcldc infeq1d 3eltr4d
+      dcbid ex exlimdv 3impia ) CEFZAGZCHZIZAEJZBGZCHZBKCLMNZCHZVHVLOZVNVPBVQVN
+      VPVQVNOZDGZCHZDPQRZUBZLMNWBVOCVRVTVMWBDPVRUCWBUDVRVMCWBVQVNUAVHCWBSVLVNVH
+      CECTZWBVHCWCSCEUEUFWCWACTWBEWACUGUHDWACUIUNUJUKZULVRVSPVMUMUOHZOVKVTIAEVS
+      VIVSSVJVTADCUPVDVHVLVNWEUQWEVSEHVRVSVMURUSUTVAVRLCWBMWDVBWDVCVEVFVG $.
+  $}
+
+  ${
+    $d A n x y $.  $d B n $.
+    $( The infimum of a decidable subset of the natural numbers is less than an
+       element of the set.  The infimum is also a minimum as shown at
+       ~ nnmindc .  (Contributed by Jim Kingdon, 26-Sep-2024.) $)
+    nnminle $p |- ( ( A C_ NN /\ A. x e. NN DECID x e. A /\ B e. A )
+        -> inf ( A , RR , < ) <_ B ) $=
+      ( vn cn wss cv wcel wdc wral w3a cr clt cinf c1 cuz cfv crab wceq cin cle
+      dfss5 biimpi nnuz ineq1i dfin5 eqtri eqtrdi 3ad2ant1 infeq1d 1zzd eleqtrd
+      eqid simp3 cfz co eleq1w simpl2 elfznn adantl rspcdva infssuzledc eqbrtrd
+      wa dcbid ) BEFZAGZBHZIZAEJZCBHZKZBLMNDGZBHZDOPQZRZLMNCUAVLLBVPMVFVJBVPSVK
+      VFBEBTZVPVFBVQSBEUBUCVQVOBTVPEVOBUDUEDVOBUFUGUHUIZUJVLVNCVPDOVLUKVPUMVLCB
+      VPVFVJVKUNVRULVLVMOCUOUPHZVDVIVNIAEVMVGVMSVHVNADBUQVEVFVJVKVSURVSVMEHVLVM
+      CUSUTVAVBVC $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Algorithms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -139972,37 +140010,6 @@ $)
     ssnnct $p |- ( ( A C_ NN /\ A. x e. NN DECID x e. A )
         -> E. f f : _om -onto-> ( A |_| 1o ) ) $=
       ( cz cv c1 caddc co cmpt cfrec eqid ssnnctlemct ) ABCADAEFGHIFJZMKL $.
-  $}
-
-  ${
-    $d A n x y $.
-    $( An inhabited decidable subset of the natural numbers has a minimum.
-       (Contributed by Jim Kingdon, 23-Sep-2024.) $)
-    nnmindc $p |- ( ( A C_ NN /\ A. x e. NN DECID x e. A /\ E. y y e. A )
-        -> inf ( A , RR , < ) e. A ) $=
-      ( vn cn wss cv wcel wdc wral wex cr clt cinf wa c1 cuz cfv wceq cin simpr
-      crab 1zzd eqid dfss5 biimpi nnuz ineq1i dfin5 eqtrdi ad2antrr eleqtrd cfz
-      eqtri co eleq1w simpllr elfznn adantl rspcdva infssuzcldc infeq1d 3eltr4d
-      dcbid ex exlimdv 3impia ) CEFZAGZCHZIZAEJZBGZCHZBKCLMNZCHZVHVLOZVNVPBVQVN
-      VPVQVNOZDGZCHZDPQRZUBZLMNWBVOCVRVTVMWBDPVRUCWBUDVRVMCWBVQVNUAVHCWBSVLVNVH
-      CECTZWBVHCWCSCEUEUFWCWACTWBEWACUGUHDWACUIUNUJUKZULVRVSPVMUMUOHZOVKVTIAEVS
-      VIVSSVJVTADCUPVDVHVLVNWEUQWEVSEHVRVSVMURUSUTVAVRLCWBMWDVBWDVCVEVFVG $.
-  $}
-
-  ${
-    $d A n x y $.  $d B n $.
-    $( The infimum of a decidable subset of the natural numbers is less than an
-       element of the set.  The infimum is also a minimum as shown at
-       ~ nnmindc .  (Contributed by Jim Kingdon, 26-Sep-2024.) $)
-    nnminle $p |- ( ( A C_ NN /\ A. x e. NN DECID x e. A /\ B e. A )
-        -> inf ( A , RR , < ) <_ B ) $=
-      ( vn cn wss cv wcel wdc wral w3a cr clt cinf c1 cuz cfv crab wceq cin cle
-      dfss5 biimpi nnuz ineq1i dfin5 eqtri eqtrdi 3ad2ant1 infeq1d 1zzd eleqtrd
-      eqid simp3 cfz co eleq1w simpl2 elfznn adantl rspcdva infssuzledc eqbrtrd
-      wa dcbid ) BEFZAGZBHZIZAEJZCBHZKZBLMNDGZBHZDOPQZRZLMNCUAVLLBVPMVFVJBVPSVK
-      VFBEBTZVPVFBVQSBEUBUCVQVOBTVPEVOBUDUEDVOBUFUGUHUIZUJVLVNCVPDOVLUKVPUMVLCB
-      VPVFVJVKUNVRULVLVMOCUOUPHZVDVIVNIAEVMVGVMSVHVNADBUQVEVFVJVKVSURVSVMEHVLVM
-      CUSUTVAVBVC $.
   $}
 
   ${
