@@ -15926,6 +15926,7 @@ New usage of "el2122old" is discouraged (1 uses).
 New usage of "elALT" is discouraged (0 uses).
 New usage of "ela" is discouraged (3 uses).
 New usage of "elabOLD" is discouraged (0 uses).
+New usage of "elabd2ALT" is discouraged (0 uses).
 New usage of "elabgOLD" is discouraged (0 uses).
 New usage of "elabgtOLD" is discouraged (0 uses).
 New usage of "elat2" is discouraged (4 uses).
@@ -15947,6 +15948,7 @@ New usage of "elghomOLD" is discouraged (5 uses).
 New usage of "elghomlem1OLD" is discouraged (1 uses).
 New usage of "elghomlem2OLD" is discouraged (1 uses).
 New usage of "elhmop" is discouraged (10 uses).
+New usage of "elimasngOLD" is discouraged (0 uses).
 New usage of "eliminable-abelab" is discouraged (0 uses).
 New usage of "eliminable-abelv" is discouraged (0 uses).
 New usage of "eliminable-abeqab" is discouraged (0 uses).
@@ -19131,7 +19133,6 @@ Proof modification of "bj-dvelimdv1" is discouraged (63 steps).
 Proof modification of "bj-dvelimv" is discouraged (25 steps).
 Proof modification of "bj-eeanvw" is discouraged (32 steps).
 Proof modification of "bj-elisset" is discouraged (24 steps).
-Proof modification of "bj-elissetv" is discouraged (25 steps).
 Proof modification of "bj-epelg" is discouraged (60 steps).
 Proof modification of "bj-equs45fv" is discouraged (43 steps).
 Proof modification of "bj-equsal" is discouraged (31 steps).
@@ -19561,6 +19562,7 @@ Proof modification of "el123" is discouraged (26 steps).
 Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
 Proof modification of "elabOLD" is discouraged (10 steps).
+Proof modification of "elabd2ALT" is discouraged (100 steps).
 Proof modification of "elabgOLD" is discouraged (47 steps).
 Proof modification of "elabgtOLD" is discouraged (83 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
@@ -19570,6 +19572,7 @@ Proof modification of "elex2VD" is discouraged (59 steps).
 Proof modification of "elghomOLD" is discouraged (117 steps).
 Proof modification of "elghomlem1OLD" is discouraged (232 steps).
 Proof modification of "elghomlem2OLD" is discouraged (195 steps).
+Proof modification of "elimasngOLD" is discouraged (101 steps).
 Proof modification of "eliminable-abelab" is discouraged (57 steps).
 Proof modification of "eliminable-abelv" is discouraged (48 steps).
 Proof modification of "eliminable-abeqab" is discouraged (50 steps).
