@@ -6180,6 +6180,8 @@
 "enrex" is used by "mulclsr".
 "enrex" is used by "mulsrpr".
 "enrex" is used by "recexsrlem".
+"eqeq12OLD" is used by "eqeq12dOLD".
+"eqeq12dOLD" is used by "eqeqan12dOLD".
 "eqopab2b" is used by "opabbi".
 "eqoprab2b" is used by "oprabbi".
 "eqresr" is used by "ax1ne0".
@@ -16066,8 +16068,11 @@ New usage of "ensucne0OLD" is discouraged (0 uses).
 New usage of "eq0ALT" is discouraged (0 uses).
 New usage of "eq0OLDOLD" is discouraged (0 uses).
 New usage of "eq0rdvALT" is discouraged (0 uses).
+New usage of "eqeq12OLD" is discouraged (1 uses).
+New usage of "eqeq12dOLD" is discouraged (1 uses).
 New usage of "eqeq1dALT" is discouraged (0 uses).
 New usage of "eqeqan12dALT" is discouraged (0 uses).
+New usage of "eqeqan12dOLD" is discouraged (0 uses).
 New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqopab2b" is discouraged (1 uses).
 New usage of "eqoprab2b" is discouraged (1 uses).
@@ -16094,7 +16099,6 @@ New usage of "equsb2" is discouraged (1 uses).
 New usage of "equsex" is discouraged (2 uses).
 New usage of "equsexALT" is discouraged (0 uses).
 New usage of "equsexh" is discouraged (0 uses).
-New usage of "equsexvwOLD" is discouraged (0 uses).
 New usage of "equvel" is discouraged (0 uses).
 New usage of "equvini" is discouraged (1 uses).
 New usage of "erngbase-rN" is discouraged (4 uses).
@@ -18532,7 +18536,6 @@ New usage of "speimfwALT" is discouraged (0 uses).
 New usage of "spim" is discouraged (3 uses).
 New usage of "spime" is discouraged (2 uses).
 New usage of "spimed" is discouraged (2 uses).
-New usage of "spimehOLD" is discouraged (0 uses).
 New usage of "spimev" is discouraged (0 uses).
 New usage of "spimt" is discouraged (0 uses).
 New usage of "spimv" is discouraged (1 uses).
@@ -19646,8 +19649,11 @@ Proof modification of "ensucne0OLD" is discouraged (82 steps).
 Proof modification of "eq0ALT" is discouraged (31 steps).
 Proof modification of "eq0OLDOLD" is discouraged (6 steps).
 Proof modification of "eq0rdvALT" is discouraged (25 steps).
+Proof modification of "eqeq12OLD" is discouraged (24 steps).
+Proof modification of "eqeq12dOLD" is discouraged (22 steps).
 Proof modification of "eqeq1dALT" is discouraged (62 steps).
 Proof modification of "eqeqan12dALT" is discouraged (23 steps).
+Proof modification of "eqeqan12dOLD" is discouraged (22 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqsbc3rVD" is discouraged (131 steps).
 Proof modification of "equcomi1" is discouraged (16 steps).
@@ -19660,7 +19666,6 @@ Proof modification of "equncomiVD" is discouraged (19 steps).
 Proof modification of "equs5aALT" is discouraged (25 steps).
 Proof modification of "equs5eALT" is discouraged (39 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
-Proof modification of "equsexvwOLD" is discouraged (36 steps).
 Proof modification of "eubiOLD" is discouraged (15 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
 Proof modification of "ex-decpmul" is discouraged (304 steps).
@@ -20387,7 +20392,6 @@ Proof modification of "snssl" is discouraged (18 steps).
 Proof modification of "snsslVD" is discouraged (24 steps).
 Proof modification of "spALT" is discouraged (23 steps).
 Proof modification of "speimfwALT" is discouraged (35 steps).
-Proof modification of "spimehOLD" is discouraged (25 steps).
 Proof modification of "spimvALT" is discouraged (16 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
 Proof modification of "ss2abdvALT" is discouraged (41 steps).
