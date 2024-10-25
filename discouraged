@@ -16343,6 +16343,7 @@ New usage of "hatomic" is discouraged (1 uses).
 New usage of "hatomici" is discouraged (6 uses).
 New usage of "hatomistici" is discouraged (1 uses).
 New usage of "hba1-o" is discouraged (8 uses).
+New usage of "hbab1OLD" is discouraged (0 uses).
 New usage of "hbabg" is discouraged (2 uses).
 New usage of "hbae" is discouraged (3 uses).
 New usage of "hbae-o" is discouraged (4 uses).
@@ -19924,6 +19925,7 @@ Proof modification of "hashf1lem1OLD" is discouraged (886 steps).
 Proof modification of "hashfacenOLD" is discouraged (753 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
 Proof modification of "hba1-o" is discouraged (34 steps).
+Proof modification of "hbab1OLD" is discouraged (20 steps).
 Proof modification of "hbae-o" is discouraged (85 steps).
 Proof modification of "hbalg" is discouraged (31 steps).
 Proof modification of "hbalgVD" is discouraged (53 steps).
