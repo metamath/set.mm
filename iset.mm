@@ -140398,6 +140398,35 @@ $)
       HBGVBVCVDWCEFBGVEVF $.
   $}
 
+  ${
+    $d n p $.
+    $( There are an infinite number of primes.  Theorem 1.7 in [ApostolNT]
+       p. 16.  (Contributed by Paul Chapman, 28-Nov-2012.) $)
+    prminf $p |- Prime ~~ NN $=
+      ( vj vn vp cprime cn wss cv wcel wdc wral clt wbr wrex prmssnn prmdc rgen
+      cen prmunb unbendc mp3an ) DEFAGZDHIZAEJBGZCGKLCDMZBEJDEQLNUBAEUAOPUDBEUC
+      CRPADBCST $.
+  $}
+
+  ${
+    $d j k n m r $.  $d j k r S $.
+    infpn2.1 $e |- S = { n e. NN | ( 1 < n /\
+                A. m e. NN ( ( n / m ) e. NN -> ( m = 1 \/ m = n ) ) ) } $.
+    $( There exist infinitely many prime numbers: the set of all primes ` S `
+       is unbounded by ~ infpn , so by ~ unbendc it is infinite.  This is
+       Metamath 100 proof #11.  (Contributed by NM, 5-May-2005.) $)
+    infpn2 $p |- S ~~ NN $=
+      ( vr cprime cn cv wcel wbr c1 weq wo wi wral wa clt cdiv co anbi12d cdvds
+      cen c2 cuz cfv wceq eluz2nn adantr simpll wb eluz2b2 a1i nndivdvds imbi1d
+      ralbidva pm5.21nii anass bitri isprm2 breq2 eleq1d equequ2 orbi2d imbi12d
+      oveq1 ralbidv elrab2 3bitr4i eqriv prminf eqbrtrri ) FAGUBEFAEHZUCUDUEIZB
+      HZVLUAJZVNKUFZBELZMZNZBGOZPZVLGIZKVLQJZVLVNRSZGIZVRNZBGOZPZPZVLFIVLAIWAWB
+      WCPZWGPZWIWAWBWKVMWBVTVLUGUHWBWCWGUIWBVMWJVTWGVMWJUJWBVLUKULWBVSWFBGWBVNG
+      IPVOWEVRVLVNUMUNUOTUPWBWCWGUQURBVLUSKCHZQJZWLVNRSZGIZVPBCLZMZNZBGOZPWHCVL
+      GACELZWMWCWSWGWLVLKQUTWTWRWFBGWTWOWEWQVRWTWNWDGWLVLVNRVEVAWTWPVQVPCEBVBVC
+      VDVFTDVGVHVIVJVK $.
+  $}
+
 
 $(
 ###############################################################################
