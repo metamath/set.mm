@@ -132283,6 +132283,45 @@ $)
       FUWJOYQUWJQZYSUXGBUXNYRUXFENYQUWJKLUNRUOYAXLXQVRWTUAUDUEUUAUFYBYCYE $.
   $}
 
+  ${
+    $d A j v z $.  $d A v w $.  $d v w x y $.
+    nnwof.1 $e |- F/_ x A $.
+    nnwof.2 $e |- F/_ y A $.
+    $( Well-ordering principle: any nonempty set of positive integers has a
+       least element.  This version allows ` x ` and ` y ` to be present in
+       ` A ` as long as they are effectively not free.  (Contributed by NM,
+       17-Aug-2001.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
+    nnwofdc $p |- ( ( A C_ NN /\ E. z z e. A /\ A. j e. NN DECID j e. A )
+        -> E. x e. A A. y e. A x <_ y ) $=
+      ( vw vv cn wss cv wcel wex wral cle wbr wrex nfcv nfv nnwodc nfralw breq1
+      wdc w3a weq ralbidv breq2 cbvralfw bitrdi cbvrexfw sylib ) DJKCLDMCNELDMU
+      DEJOUEHLZILZPQZIDOZHDRALZBLZPQZBDOZADRHICDEUAUPUTHADHDSFUOAIDFUOATUBUTHTH
+      AUFZUPUQUNPQZIDOUTVAUOVBIDUMUQUNPUCUGVBUSIBDIDSGVBBTUSITUNURUQPUHUIUJUKUL
+      $.
+  $}
+
+  ${
+    $d x y j w $.  $d y ph j w $.  $d x ps $.
+    nnwos.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Well-ordering principle: any inhabited decidable set of positive
+       integers has a least element (schema form).  (Contributed by NM,
+       17-Aug-2001.)  (Revised by Jim Kingdon, 25-Oct-2024.) $)
+    nnwosdc $p |- ( ( E. x e. NN ph /\ A. x e. NN DECID ph ) ->
+                  E. x e. NN ( ph /\ A. y e. NN ( ps -> x <_ y ) ) ) $=
+      ( vw vj cn wrex wdc wral wa cv wcel wex wi sylibr nfcv wal df-rex wss w3a
+      crab cle wbr rabn0m ssrab2 biantrur sylbb1 wsb wn wo animorrl df-dc nfs1v
+      nfdc sbequ12 dcbid rspc impcom dcan elrabf dcbii ralrimiva anim12i df-3an
+      nfrab1 nnwofdc rabid df-ral elrab imbi1i impexp bitri albii anbi12i exbii
+      weq sylc anbi2i anass bitr3i bitr4i 3bitri sylib syl ) ACHIZAJZCHKZLZACHU
+      CZHUAZFMWKNFOZGMZWKNZJZGHKZUBZABCMZDMZUDUEZPZDHKZLZCHIZWJWLWMLZWQLWRWGXFW
+      IWQWMWGXFACFHUFWLWMACHUGUHUIWIWPGHWIWNHNZLZXGACGUJZLZJZWPXHXGJZXIJZXKXHXG
+      XGUKZULXLWIXGXNUMXGUNQXGWIXMWHXMCWNHXICACGUOZUPCGVRAXIACGUQZURUSUTXGXIVAV
+      SWOXJAXICWNHCWNRCHRXOXPVBVCQVDVEWLWMWQVFQWRXADWKKZCWKIZXECDFWKGACHVGDWKRV
+      HXRWSWKNZXQLZCOWSHNZALZWTHNZXBPZDSZLZCOZXEXQCWKTXTYFCXSYBXQYEACHVIXQWTWKN
+      ZXAPZDSYEXADWKVJYIYDDYIYCBLZXAPYDYHYJXAABCWTHEVKVLYCBXAVMVNVOVNVPVQYGYAXD
+      LZCOXEYFYKCYFYBXCLYKXCYEYBXBDHVJVTYAAXCWAWBVQXDCHTWCWDWEWF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
