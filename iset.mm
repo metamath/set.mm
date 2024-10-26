@@ -13742,6 +13742,7 @@ $)
     cbvalv1 $p |- ( A. x ph <-> A. y ps ) $=
       ( wal weq biimpd cbv3v wi biimprd equcoms impbii ) ACHBDHABCDEFCDIZABGJKB
       ADCFEBALCDPABGMNKO $.
+    $( $j usage 'cbvalv1' avoids 'ax-io' 'ax-10' 'ax-i12' 'ax-bndl'; $)
 
     $( Rule used to change bound variables, using implicit substitution.
        Version of ~ cbvex with a disjoint variable condition.  See ~ cbvexvw
@@ -13752,6 +13753,7 @@ $)
       ( wex nfex weq wa nfri bicomd equcoms equsex exsimpr sylbir exlimi impbii
       wb ) ACHZBDHZAUBCBCDFIADCJZBKDHUBBADCADELBATCDCDJZABGMNOUCBDPQRBUADADCEIB
       UDAKCHUAABCDBCFLGOUDACPQRS $.
+    $( $j usage 'cbvexv1' avoids 'ax-io' 'ax-10' 'ax-i12' 'ax-bndl'; $)
   $}
 
   ${
@@ -19175,6 +19177,8 @@ $)
     eleq1w $p |- ( x = y -> ( x e. A <-> y e. A ) ) $=
       ( vz weq cv wcel wa wex equequ2 anbi1d exbidv df-clel 3bitr4g ) ABEZDAEZD
       FCGZHZDIDBEZQHZDIAFZCGBFZCGORTDOPSQABDJKLDUACMDUBCMN $.
+    $( $j usage 'eleq1w' avoids 'ax-io' 'ax-10' 'ax-i12' 'ax-bndl'
+      'ax-ext' 'df-cleq'; $)
 
     $( Weaker version of ~ eleq2 (but more general than ~ elequ2 ) not
        depending on ~ ax-ext nor ~ df-cleq .  (Contributed by BJ,
@@ -23000,6 +23004,23 @@ $)
        23-May-2024.) $)
     cbvralfw $p |- ( A. x e. A ph <-> A. y e. A ps ) $=
       ( cv wcel wi wal wral nfcri nfim weq eleq1w df-ral imbi12d cbvalv1
+      3bitr4i ) CKELZAMZCNDKELZBMZDNACEOBDEOUEUGCDUDADDCEGPHQUFBCCDEFPIQCDRUDUF
+      ABCDESJUAUBACETBDETUC $.
+  $}
+
+  ${
+    $d x y $.
+    cbvrexfw.1 $e |- F/_ x A $.
+    cbvrexfw.2 $e |- F/_ y A $.
+    cbvrexfw.3 $e |- F/ y ph $.
+    cbvrexfw.4 $e |- F/ x ps $.
+    cbvrexfw.5 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       Version of ~ cbvrexf with a disjoint variable condition, which does not
+       require ~ ax-13 .  (Contributed by FL, 27-Apr-2008.)  (Revised by Gino
+       Giotto, 10-Jan-2024.) $)
+    cbvrexfw $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
+      ( cv wcel wa wex wrex nfcri nfan weq eleq1w df-rex anbi12d cbvexv1
       3bitr4i ) CKELZAMZCNDKELZBMZDNACEOBDEOUEUGCDUDADDCEGPHQUFBCCDEFPIQCDRUDUF
       ABCDESJUAUBACETBDETUC $.
   $}
