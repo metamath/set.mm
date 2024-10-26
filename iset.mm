@@ -138837,6 +138837,24 @@ $)
       ( cfa cfv c1 caddc co eqid infpnlem2 ) ABCDEFGHZCKIJ $.
   $}
 
+  ${
+    $d N p $.
+    $( The primes are unbounded.  (Contributed by Paul Chapman,
+       28-Nov-2012.) $)
+    prmunb $p |- ( N e. NN -> E. p e. Prime N < p ) $=
+      ( cn wcel cn0 clt wbr cprime wrex cfv c1 caddc co cdvds c2 cuz 3syl wa wn
+      cz cv nnnn0 cfa faccl elnnuz eluzp1p1 fveq2i eleqtrrdi sylbi exprmfct cle
+      df-2 wi prmz nn0z eluz syl2an prmuz2 eluz2b2 adantr simpld nnnn0d eluznn0
+      sylib sylancom nnz simprd dvdsfac w3a ndvdsp1 imp syl31anc sylbird ancoms
+      wb ex con2d zltnle sylibrd reximdva mpd syl ) ACDAEDZABUAZFGZBHIZAUBWCWDA
+      UCJZKLMZNGZBHIZWFWCWGCDZWHOPJZDZWJAUDZWKWGKPJDZWMWGUEWOWHKKLMZPJWLKWGUFOW
+      PPULUGUHUIWHBUJQWCWIWEBHWCWDHDZRWIWDAUKGZSZWEWQWCWIWSUMWQWCRZWRWIWTWRAWDP
+      JDZWISZWQWDTDZATDZXAWRVOWCWDUNZAUOZWDAUPUQWQXAXBUMWCWQXAXBWQXARZWGTDZWDCD
+      ZKWDFGZWDWGNGZXBXGWCWKXHWQXAWDEDWCXGWDXGXIXJWQXIXJRZXAWQWDWLDXLWDURWDUSVD
+      UTZVAZVBAWDVCVEWNWGVFQXNXGXIXJXMVGWQXAXIXKXNWDAVHVEXHXIXJVIXKXBWDWGVJVKVL
+      VPUTVMVQVNWCXDXCWEWSVOWQXFXEAWDVRUQVSVTWAWB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
