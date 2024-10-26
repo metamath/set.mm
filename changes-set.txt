@@ -95,6 +95,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+26-Oct-24 fsumsplit1 fsumsplit1 moved from GS's mathbox to main set.mm
+26-Oct-24 fsumclf   fsumclf     moved from GS's mathbox to main set.mm
 24-Oct-24 ---       ---         well-founded recursion theorems moved
                                 from SF's mathbox to main set.mm
 22-Oct-24 ---       ---         well-founded induction theorems moved
