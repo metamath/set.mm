@@ -81,7 +81,7 @@ proposed  syl5ibcom imbitridcom
 proposed  syl5ibr   imbitrrid
 proposed  syl5ibrcom imbitrridcom
 proposed  syl5bb    bitrid      compare to bitri or bitrd
-proposed  syl5eq    eqtrid      compare to eqtri or eqtrd
+proposed  syl5eq    eqtrid      compare to eqtri or eqtrd (in progress)
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
