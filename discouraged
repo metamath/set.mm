@@ -1672,7 +1672,7 @@
 "basendx" is used by "ipndxnbasendx".
 "basendx" is used by "ipostr".
 "basendx" is used by "lmodstr".
-"basendx" is used by "mgpress".
+"basendx" is used by "mgpressOLD".
 "basendx" is used by "odubas".
 "basendx" is used by "oppcbas".
 "basendx" is used by "otpsstr".
@@ -9688,6 +9688,10 @@
 "merlem8" is used by "merlem9".
 "merlem9" is used by "merlem10".
 "mgmplusgiopALT" is used by "mgm2mgm".
+"mgplemOLD" is used by "mgpbasOLD".
+"mgplemOLD" is used by "mgpdsOLD".
+"mgplemOLD" is used by "mgpscaOLD".
+"mgplemOLD" is used by "mgptsetOLD".
 "minimp-ax1" is used by "minimp-pm2.43".
 "minimp-ax2" is used by "minimp-pm2.43".
 "minimp-ax2c" is used by "minimp-ax2".
@@ -17302,6 +17306,12 @@ New usage of "merlem7" is discouraged (1 uses).
 New usage of "merlem8" is discouraged (1 uses).
 New usage of "merlem9" is discouraged (1 uses).
 New usage of "mgmplusgiopALT" is discouraged (1 uses).
+New usage of "mgpbasOLD" is discouraged (0 uses).
+New usage of "mgpdsOLD" is discouraged (0 uses).
+New usage of "mgplemOLD" is discouraged (4 uses).
+New usage of "mgpressOLD" is discouraged (0 uses).
+New usage of "mgpscaOLD" is discouraged (0 uses).
+New usage of "mgptsetOLD" is discouraged (0 uses).
 New usage of "minimp-ax1" is discouraged (1 uses).
 New usage of "minimp-ax2" is discouraged (1 uses).
 New usage of "minimp-ax2c" is discouraged (1 uses).
@@ -20113,6 +20123,12 @@ Proof modification of "merlem7" is discouraged (66 steps).
 Proof modification of "merlem8" is discouraged (46 steps).
 Proof modification of "merlem9" is discouraged (73 steps).
 Proof modification of "mgmplusgiopALT" is discouraged (80 steps).
+Proof modification of "mgpbasOLD" is discouraged (18 steps).
+Proof modification of "mgpdsOLD" is discouraged (35 steps).
+Proof modification of "mgplemOLD" is discouraged (61 steps).
+Proof modification of "mgpressOLD" is discouraged (317 steps).
+Proof modification of "mgpscaOLD" is discouraged (22 steps).
+Proof modification of "mgptsetOLD" is discouraged (13 steps).
 Proof modification of "minimp-ax1" is discouraged (21 steps).
 Proof modification of "minimp-ax2" is discouraged (62 steps).
 Proof modification of "minimp-ax2c" is discouraged (272 steps).
