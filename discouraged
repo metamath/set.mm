@@ -12601,6 +12601,7 @@
 "setrec2fun" is used by "setrec2".
 "setrec2lem1" is used by "setrec2".
 "setrec2lem2" is used by "setrec2".
+"setsidvaldOLD" is used by "ressval3dOLD".
 "sh0" is used by "ch0".
 "sh0" is used by "hhssabloilem".
 "sh0" is used by "hhssnv".
@@ -18197,6 +18198,7 @@ New usage of "renicax" is discouraged (0 uses).
 New usage of "resccoOLD" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
 New usage of "resslemOLD" is discouraged (0 uses).
+New usage of "ressval3dOLD" is discouraged (0 uses).
 New usage of "retbwax1" is discouraged (0 uses).
 New usage of "retbwax2" is discouraged (3 uses).
 New usage of "retbwax3" is discouraged (0 uses).
@@ -18401,6 +18403,7 @@ New usage of "setrec1lem4" is discouraged (1 uses).
 New usage of "setrec2fun" is discouraged (1 uses).
 New usage of "setrec2lem1" is discouraged (1 uses).
 New usage of "setrec2lem2" is discouraged (1 uses).
+New usage of "setsidvaldOLD" is discouraged (1 uses).
 New usage of "sgrpplusgaopALT" is discouraged (0 uses).
 New usage of "sh0" is discouraged (13 uses).
 New usage of "sh0le" is discouraged (6 uses).
@@ -20310,6 +20313,7 @@ Proof modification of "renicax" is discouraged (76 steps).
 Proof modification of "resccoOLD" is discouraged (115 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
 Proof modification of "resslemOLD" is discouraged (167 steps).
+Proof modification of "ressval3dOLD" is discouraged (285 steps).
 Proof modification of "retbwax1" is discouraged (195 steps).
 Proof modification of "retbwax2" is discouraged (127 steps).
 Proof modification of "retbwax3" is discouraged (20 steps).
@@ -20393,6 +20397,7 @@ Proof modification of "sbtALT" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "seqp1iOLD" is discouraged (20 steps).
+Proof modification of "setsidvaldOLD" is discouraged (93 steps).
 Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
 Proof modification of "sii" is discouraged (145 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
