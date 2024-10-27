@@ -11373,6 +11373,9 @@
 "opidon2OLD" is used by "exidreslem".
 "opidonOLD" is used by "opidon2OLD".
 "opidonOLD" is used by "rngopidOLD".
+"oppglemOLD" is used by "oppgbasOLD".
+"oppglemOLD" is used by "oppgleOLD".
+"oppglemOLD" is used by "oppgtsetOLD".
 "oprabid" is used by "ssoprab2b".
 "opsqrlem2" is used by "opsqrlem6".
 "opsqrlem3" is used by "opsqrlem4".
@@ -17782,6 +17785,10 @@ New usage of "opidon2OLD" is discouraged (1 uses).
 New usage of "opidonOLD" is discouraged (2 uses).
 New usage of "opnmblALT" is discouraged (0 uses).
 New usage of "oppchomfvalOLD" is discouraged (0 uses).
+New usage of "oppgbasOLD" is discouraged (0 uses).
+New usage of "oppgleOLD" is discouraged (0 uses).
+New usage of "oppglemOLD" is discouraged (3 uses).
+New usage of "oppgtsetOLD" is discouraged (0 uses).
 New usage of "oprabid" is discouraged (1 uses).
 New usage of "opreu2reuALT" is discouraged (0 uses).
 New usage of "opsqrlem1" is discouraged (0 uses).
@@ -20223,6 +20230,10 @@ Proof modification of "opidon2OLD" is discouraged (80 steps).
 Proof modification of "opidonOLD" is discouraged (198 steps).
 Proof modification of "opnmblALT" is discouraged (332 steps).
 Proof modification of "oppchomfvalOLD" is discouraged (192 steps).
+Proof modification of "oppgbasOLD" is discouraged (18 steps).
+Proof modification of "oppgleOLD" is discouraged (24 steps).
+Proof modification of "oppglemOLD" is discouraged (62 steps).
+Proof modification of "oppgtsetOLD" is discouraged (22 steps).
 Proof modification of "opreu2reuALT" is discouraged (913 steps).
 Proof modification of "orbi1r" is discouraged (9 steps).
 Proof modification of "orbi1rVD" is discouraged (101 steps).
