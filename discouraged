@@ -241,6 +241,10 @@
 "2sb5nd" is used by "2uasbanh".
 "2sb5nd" is used by "2uasbanhVD".
 "2sb5rf" is used by "sbel2x".
+"2strstr" is used by "2strbas".
+"2strstr" is used by "2strop".
+"2strstr" is used by "2strstr1OLD".
+"2strstr" is used by "grpstr".
 "2uasbanh" is used by "2uasban".
 "3atnelvolN" is used by "2atnelvolN".
 "3atnelvolN" is used by "islvol2aN".
@@ -1655,7 +1659,8 @@
 "bafval" is used by "sspba".
 "basendx" is used by "1strstr".
 "basendx" is used by "2strstr".
-"basendx" is used by "2strstr1".
+"basendx" is used by "2strstr1OLD".
+"basendx" is used by "basendxltplusgndx".
 "basendx" is used by "basendxnn".
 "basendx" is used by "catstr".
 "basendx" is used by "cnfldfun".
@@ -13911,6 +13916,8 @@ New usage of "2sb6rf" is discouraged (0 uses).
 New usage of "2sb8e" is discouraged (0 uses).
 New usage of "2sbcrexOLD" is discouraged (0 uses).
 New usage of "2sbiev" is discouraged (0 uses).
+New usage of "2strstr" is discouraged (4 uses).
+New usage of "2strstr1OLD" is discouraged (0 uses).
 New usage of "2uasban" is discouraged (0 uses).
 New usage of "2uasbanh" is discouraged (1 uses).
 New usage of "2uasbanhVD" is discouraged (0 uses).
@@ -14370,8 +14377,9 @@ New usage of "baerlem5bmN" is discouraged (0 uses).
 New usage of "bafval" is discouraged (38 uses).
 New usage of "barbariALT" is discouraged (0 uses).
 New usage of "barocoALT" is discouraged (0 uses).
-New usage of "basendx" is discouraged (33 uses).
+New usage of "basendx" is discouraged (34 uses).
 New usage of "basendxnnOLD" is discouraged (0 uses).
+New usage of "basendxnplusgndxOLD" is discouraged (0 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bcs" is discouraged (6 uses).
 New usage of "bcs2" is discouraged (2 uses).
@@ -16265,6 +16273,7 @@ New usage of "grothac" is discouraged (1 uses).
 New usage of "grothomex" is discouraged (0 uses).
 New usage of "grothpw" is discouraged (0 uses).
 New usage of "grothpwex" is discouraged (0 uses).
+New usage of "grpbaseOLD" is discouraged (0 uses).
 New usage of "grpbasex" is discouraged (3 uses).
 New usage of "grpinvfvalALT" is discouraged (0 uses).
 New usage of "grpo2inv" is discouraged (4 uses).
@@ -16312,7 +16321,9 @@ New usage of "grporinv" is discouraged (8 uses).
 New usage of "grporn" is discouraged (11 uses).
 New usage of "grporndm" is discouraged (4 uses).
 New usage of "grposnOLD" is discouraged (1 uses).
+New usage of "grpplusgOLD" is discouraged (0 uses).
 New usage of "grpplusgx" is discouraged (3 uses).
+New usage of "grpstr" is discouraged (0 uses).
 New usage of "grpsubfvalALT" is discouraged (0 uses).
 New usage of "gsumbagdiagOLD" is discouraged (1 uses).
 New usage of "gsumbagdiaglemOLD" is discouraged (2 uses).
@@ -18939,6 +18950,7 @@ Proof modification of "2sb5ndALT" is discouraged (224 steps).
 Proof modification of "2sb5ndVD" is discouraged (230 steps).
 Proof modification of "2sbcrexOLD" is discouraged (63 steps).
 Proof modification of "2stdpc5" is discouraged (34 steps).
+Proof modification of "2strstr1OLD" is discouraged (66 steps).
 Proof modification of "2uasban" is discouraged (34 steps).
 Proof modification of "2uasbanh" is discouraged (214 steps).
 Proof modification of "2uasbanhVD" is discouraged (313 steps).
@@ -19089,6 +19101,7 @@ Proof modification of "axprALT" is discouraged (67 steps).
 Proof modification of "barbariALT" is discouraged (22 steps).
 Proof modification of "barocoALT" is discouraged (24 steps).
 Proof modification of "basendxnnOLD" is discouraged (12 steps).
+Proof modification of "basendxnplusgndxOLD" is discouraged (19 steps).
 Proof modification of "bcsiALT" is discouraged (444 steps).
 Proof modification of "bhmafibid1" is discouraged (429 steps).
 Proof modification of "biadaniALT" is discouraged (28 steps).
@@ -19926,8 +19939,10 @@ Proof modification of "ggen22" is discouraged (13 steps).
 Proof modification of "ggen31" is discouraged (22 steps).
 Proof modification of "ghomidOLD" is discouraged (178 steps).
 Proof modification of "ghomlinOLD" is discouraged (161 steps).
+Proof modification of "grpbaseOLD" is discouraged (11 steps).
 Proof modification of "grpinvfvalALT" is discouraged (161 steps).
 Proof modification of "grposnOLD" is discouraged (291 steps).
+Proof modification of "grpplusgOLD" is discouraged (11 steps).
 Proof modification of "grpsubfvalALT" is discouraged (176 steps).
 Proof modification of "gsumbagdiagOLD" is discouraged (209 steps).
 Proof modification of "gsumbagdiaglemOLD" is discouraged (571 steps).
