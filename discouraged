@@ -1674,11 +1674,11 @@
 "basendx" is used by "lmodstr".
 "basendx" is used by "mgpressOLD".
 "basendx" is used by "odubas".
-"basendx" is used by "oppcbas".
+"basendx" is used by "oppcbasOLD".
 "basendx" is used by "otpsstr".
 "basendx" is used by "plendxnbasendx".
 "basendx" is used by "rescabs".
-"basendx" is used by "rescbas".
+"basendx" is used by "rescbasOLD".
 "basendx" is used by "resslemOLD".
 "basendx" is used by "rngstr".
 "basendx" is used by "scandxnbasendx".
@@ -13298,6 +13298,10 @@
 "strlem4" is used by "strlem6".
 "strlem5" is used by "strlem6".
 "strlem6" is used by "stri".
+"strndxid" is used by "bj-endbase".
+"strndxid" is used by "bj-endcomp".
+"strndxid" is used by "edgfndxidOLD".
+"strndxid" is used by "estrreslem1OLD".
 "sumdmdi" is used by "dmdbr4ati".
 "sumdmdi" is used by "dmdbr5ati".
 "sumdmdii" is used by "cmmdi".
@@ -15888,6 +15892,7 @@ New usage of "e3bir" is discouraged (1 uses).
 New usage of "ecase2dOLD" is discouraged (0 uses).
 New usage of "ecase3adOLD" is discouraged (0 uses).
 New usage of "edgfndx" is discouraged (1 uses).
+New usage of "edgfndxidOLD" is discouraged (0 uses).
 New usage of "ee001" is discouraged (0 uses).
 New usage of "ee002" is discouraged (0 uses).
 New usage of "ee010" is discouraged (0 uses).
@@ -16142,6 +16147,7 @@ New usage of "erngplus-rN" is discouraged (1 uses).
 New usage of "erngplus2-rN" is discouraged (0 uses).
 New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
+New usage of "estrreslem1OLD" is discouraged (0 uses).
 New usage of "eubiOLD" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
 New usage of "euxfr" is discouraged (0 uses).
@@ -17794,6 +17800,7 @@ New usage of "opelreal" is discouraged (8 uses).
 New usage of "opidon2OLD" is discouraged (1 uses).
 New usage of "opidonOLD" is discouraged (2 uses).
 New usage of "opnmblALT" is discouraged (0 uses).
+New usage of "oppcbasOLD" is discouraged (0 uses).
 New usage of "oppchomfvalOLD" is discouraged (0 uses).
 New usage of "oppgbasOLD" is discouraged (0 uses).
 New usage of "oppgleOLD" is discouraged (0 uses).
@@ -18224,6 +18231,7 @@ New usage of "relopabiALT" is discouraged (0 uses).
 New usage of "relrngo" is discouraged (6 uses).
 New usage of "renegclALT" is discouraged (0 uses).
 New usage of "renicax" is discouraged (0 uses).
+New usage of "rescbasOLD" is discouraged (0 uses).
 New usage of "resccoOLD" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
 New usage of "resslemOLD" is discouraged (0 uses).
@@ -18270,6 +18278,7 @@ New usage of "riotaocN" is discouraged (1 uses).
 New usage of "rlimaddOLD" is discouraged (0 uses).
 New usage of "rlimmulOLD" is discouraged (0 uses).
 New usage of "rmoanimALT" is discouraged (0 uses).
+New usage of "rmodislmodOLD" is discouraged (0 uses).
 New usage of "rnbra" is discouraged (2 uses).
 New usage of "rnelshi" is discouraged (1 uses).
 New usage of "rngcbasALTV" is discouraged (6 uses).
@@ -18678,6 +18687,7 @@ New usage of "strlem3a" is discouraged (1 uses).
 New usage of "strlem4" is discouraged (1 uses).
 New usage of "strlem5" is discouraged (1 uses).
 New usage of "strlem6" is discouraged (1 uses).
+New usage of "strndxid" is discouraged (4 uses).
 New usage of "sucidALT" is discouraged (0 uses).
 New usage of "sucidALTVD" is discouraged (0 uses).
 New usage of "sucidVD" is discouraged (0 uses).
@@ -19566,6 +19576,7 @@ Proof modification of "e3bi" is discouraged (11 steps).
 Proof modification of "e3bir" is discouraged (11 steps).
 Proof modification of "ecase2dOLD" is discouraged (42 steps).
 Proof modification of "ecase3adOLD" is discouraged (26 steps).
+Proof modification of "edgfndxidOLD" is discouraged (28 steps).
 Proof modification of "ee001" is discouraged (16 steps).
 Proof modification of "ee002" is discouraged (27 steps).
 Proof modification of "ee010" is discouraged (16 steps).
@@ -19716,6 +19727,7 @@ Proof modification of "equncomiVD" is discouraged (19 steps).
 Proof modification of "equs5aALT" is discouraged (25 steps).
 Proof modification of "equs5eALT" is discouraged (39 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
+Proof modification of "estrreslem1OLD" is discouraged (96 steps).
 Proof modification of "eubiOLD" is discouraged (15 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
 Proof modification of "ex-decpmul" is discouraged (304 steps).
@@ -20245,6 +20257,7 @@ Proof modification of "opelopab4" is discouraged (69 steps).
 Proof modification of "opidon2OLD" is discouraged (80 steps).
 Proof modification of "opidonOLD" is discouraged (198 steps).
 Proof modification of "opnmblALT" is discouraged (332 steps).
+Proof modification of "oppcbasOLD" is discouraged (220 steps).
 Proof modification of "oppchomfvalOLD" is discouraged (192 steps).
 Proof modification of "oppgbasOLD" is discouraged (18 steps).
 Proof modification of "oppgleOLD" is discouraged (24 steps).
@@ -20354,6 +20367,7 @@ Proof modification of "relopabiALT" is discouraged (74 steps).
 Proof modification of "renegcl" is discouraged (34 steps).
 Proof modification of "renegclALT" is discouraged (149 steps).
 Proof modification of "renicax" is discouraged (76 steps).
+Proof modification of "rescbasOLD" is discouraged (106 steps).
 Proof modification of "resccoOLD" is discouraged (115 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
 Proof modification of "resslemOLD" is discouraged (167 steps).
@@ -20373,6 +20387,7 @@ Proof modification of "rgen2a" is discouraged (81 steps).
 Proof modification of "rlimaddOLD" is discouraged (159 steps).
 Proof modification of "rlimmulOLD" is discouraged (159 steps).
 Proof modification of "rmoanimALT" is discouraged (93 steps).
+Proof modification of "rmodislmodOLD" is discouraged (1641 steps).
 Proof modification of "rngopidOLD" is discouraged (27 steps).
 Proof modification of "rnmptcOLD" is discouraged (54 steps).
 Proof modification of "rntrclfv" is discouraged (46 steps).
