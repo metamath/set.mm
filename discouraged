@@ -18339,6 +18339,7 @@ New usage of "sb8iota" is discouraged (0 uses).
 New usage of "sb8mo" is discouraged (1 uses).
 New usage of "sb9" is discouraged (1 uses).
 New usage of "sb9i" is discouraged (0 uses).
+New usage of "sbabelOLD" is discouraged (0 uses).
 New usage of "sbal1" is discouraged (0 uses).
 New usage of "sbal2" is discouraged (2 uses).
 New usage of "sbc2ieOLD" is discouraged (0 uses).
@@ -20362,6 +20363,7 @@ Proof modification of "sb56OLD" is discouraged (25 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
 Proof modification of "sb5OLD" is discouraged (25 steps).
+Proof modification of "sbabelOLD" is discouraged (126 steps).
 Proof modification of "sbal1" is discouraged (149 steps).
 Proof modification of "sbc2ieOLD" is discouraged (38 steps).
 Proof modification of "sbc2or" is discouraged (134 steps).
