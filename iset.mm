@@ -138892,6 +138892,118 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Fundamental theorem of arithmetic
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d e f g k n p q x y z $.  $d q x y F $.  $d e f g q x y M $.  $d q y ph $.
+    $d n p q x G $.  $d n p q x N $.  $d p P $.  $d f g n q x y R $.
+    1arith.1 $e |- M = ( n e. NN |-> ( p e. Prime |-> ( p pCnt n ) ) ) $.
+    $( Lemma for ~ 1arith .  (Contributed by Mario Carneiro, 30-May-2014.) $)
+    1arithlem1 $p |- ( N e. NN ->
+                       ( M ` N ) = ( p e. Prime |-> ( p pCnt N ) ) ) $=
+      ( cprime cv cpc co cmpt cn wceq oveq2 mpteq2dv prmex mptex fvmpt ) ACDFDG
+      ZAGZHIZJDFRCHIZJKBSCLDFTUASCRHMNEDFUAOPQ $.
+
+    $( Lemma for ~ 1arith .  (Contributed by Mario Carneiro, 30-May-2014.) $)
+    1arithlem2 $p |- ( ( N e. NN /\ P e. Prime ) ->
+                       ( ( M ` N ) ` P ) = ( P pCnt N ) ) $=
+      ( cn wcel cprime wa cfv cv cpc co cmpt wceq 1arithlem1 fveq1d adantr cn0
+      eqid oveq1 simpr pccl ancoms fvmptd3 eqtrd ) DGHZAIHZJZADCKZKZAEIELZDMNZO
+      ZKZADMNZUHULUPPUIUHAUKUOBCDEFQRSUJEAUNUQIUOTUOUAUMADMUBUHUIUCUIUHUQTHADUD
+      UEUFUG $.
+
+    $( Lemma for ~ 1arith .  (Contributed by Mario Carneiro, 30-May-2014.) $)
+    1arithlem3 $p |- ( N e. NN -> ( M ` N ) : Prime --> NN0 ) $=
+      ( cn wcel cprime cv cpc co cn0 cfv 1arithlem1 pccl ancoms fmpt3d ) CFGZDH
+      DIZCJKZLCBMABCDENSHGRTLGSCOPQ $.
+
+    ${
+      1arithlem4.2 $e |- G = ( y e. NN |->
+                               if ( y e. Prime , ( y ^ ( F ` y ) ) , 1 ) ) $.
+      1arithlem4.3 $e |- ( ph -> F : Prime --> NN0 ) $.
+      1arithlem4.4 $e |- ( ph -> N e. NN ) $.
+      1arithlem4.5 $e |- ( ( ph /\ ( q e. Prime /\ N <_ q ) ) ->
+                           ( F ` q ) = 0 ) $.
+      $( Lemma for ~ 1arith .  (Contributed by Mario Carneiro, 30-May-2014.) $)
+      1arithlem4 $p |- ( ph -> E. x e. NN F = ( M ` x ) ) $=
+        ( cfv cn wcel wceq cprime cmul c1 cseq cv wrex wf cn0 ffvelrnda pcmptcl
+        ralrimiva simprd ffvelrnd wral wa cpc cle wbr cc0 cif 1arithlem2 adantr
+        co sylan simpr fveq2 pcmpt anassrs ifeq2d wdc cz prmz adantl nnzd zdcle
+        syl2anc ifiddc syl eqtr3d iftrue wo zletric mpjaodan 3eqtrrd 1arithlem3
+        wb wfn ffn eqfnfv syl2an mpbird rspceeqv ) AHUAFUBUCZPZQRZEWMGPZSZEBUDZ
+        GPZSBQUEAQQHWLAQQFUFQQWLUFACUDZEPZCFLAWTUGRZCTATUGWSEMUHUJZUIUKNULZAWPI
+        UDZEPZXDWOPZSZITUMZAXGITAXDTRZUNZXFXDWMUOVBZXDHUPUQZXEURUSZXEAWNXIXFXKS
+        XCXDDGWMJKUTVCXJWTXEXDCFHLAXACTUMXIXBVAAHQRXINVAZAXIVDWSXDEVEVFXJHXDUPU
+        QZXMXESZXLXJXOUNZXLXEXEUSZXMXEXQXLXEURXEAXIXOXEURSOVGVHXJXRXESZXOXJXLVI
+        ZXSXJXDVJRZHVJRZXTXIYAAXDVKVLZXJHXNVMZXDHVNVOXLXEVPVQVAVRXLXPXJXLXEURVS
+        VLXJYBYAXOXLVTYDYCHXDWAVOWBWCUJATUGEUFZTUGWOUFZWPXHWEZMAWNYFXCDGWMJKWDV
+        QYEETWFWOTWFYGYFTUGEWGTUGWOWGITEWOWHWIVOWJBWMQWRWOEWQWMGVEWKVO $.
+    $}
+
+    1arith.2 $e |- R = { e e. ( NN0 ^m Prime ) | ( `' e " NN ) e. Fin } $.
+
+    ${
+      $d M j $.  $d j x $.
+      $( Fundamental theorem of arithmetic, where a prime factorization is
+         represented as a sequence of prime exponents, for which only finitely
+         many primes have nonzero exponent.  The function ` M ` maps the set of
+         positive integers one-to-one onto the set of prime factorizations
+         ` R ` .  (Contributed by Paul Chapman, 17-Nov-2012.)  (Proof shortened
+         by Mario Carneiro, 30-May-2014.) $)
+      1arith $p |- M : NN -1-1-onto-> R $=
+        ( vx vy vq cn cv cfv wceq wral wcel cprime cn0 wa wb vj vf wf1o wf1 wfo
+        vk vg wf weq wi wfn cpc co cmpt prmex mptex fnmpti cmap ccnv 1arithlem3
+        cima cfn nn0ex elmap sylibr c1 cfz wss wdc 1zzd nnz fzfigd ffn elpreima
+        3syl 1arithlem2 eleq1d cdvds wbr cle cz id dvdsle syl2anr pcelnn ancoms
+        prmz cuz prmnn nnuz eleqtrdi elfz5 3imtr4d sylbid expimpd elfznn adantl
+        ssrdv wn prmdc adantr ad2antrr simpr ffvelrnd nn0zd elnndc dcan sylc wo
+        syl intnanrd olcd df-dc exmiddc mpjaodan dcbid mpbird ralrimiva syl3anc
+        ssfidc cnveq imaeq1d elrab2 sylanbrc rgen ffnfv adantlr adantll eqeq12d
+        mpbir2an ralbidva eqfnfv syl2an nnnn0 wrex sylib nnred ad2antrl syl2anc
+        cr pc11 3bitr4d biimpd rgen2 dff13 cexp cif caddc eqid simplr peano2nnd
+        simplbi cc0 peano2re ltp1d simprr ltletrd zltnle mpbid simprl biantrurd
+        clt nnzd ad3antrrr bitr4d breq1 rspccv ad2antlr mtod ord mpd 1arithlem4
+        elnn0 cdm cnvimass prmssnn eqsstrdi sstrid simprbi fiubnn r19.29a dffo3
+        fdmd df-f1o ) KADUCKADUDZKADUEZUWEKADUHZHLZDMZILZDMZNZHIUIZUJZIKOHKOUWG
+        DKUKUWIAPZHKOCKEQELCLULUMZUNDEQUWPUOUPFUQUWOHKUWHKPZUWIRQURUMZPZUWIUSZK
+        VAZVBPZUWOUWQQRUWIUHZUWSCDUWHEFUTZRQUWIVCUOVDVEUWQVFUWHVGUMZVBPUXAUXEVH
+        UALZUXAPZVIZUAUXEOUXBUWQVFUWHUWQVJUWHVKZVLUWQJUXAUXEUWQJLZUXAPZUXJQPZUX
+        JUWIMZKPZSZUXJUXEPZUWQUXCUWIQUKZUXKUXOTUXDQRUWIVMZQUXJKUWIVNVOUWQUXLUXN
+        UXPUWQUXLSZUXNUXJUWHULUMZKPZUXPUXSUXMUXTKUXJCDUWHEFVPZVQUXSUXJUWHVRVSZU
+        XJUWHVTVSZUYAUXPUXLUXJWAPZUWQUYCUYDUJUWQUXJWGZUWQWBUXJUWHWCWDUXLUWQUYAU
+        YCTUXJUWHWEWFUXLUXJVFWHMZPUWHWAPUXPUYDTUWQUXLUXJKUYGUXJWIZWJWKUXIUXJVFU
+        WHWLWDWMWNWOWNWRUWQUXHUAUXEUWQUXFUXEPZSZUXHUXFQPZUXFUWIMZKPZSZVIZUYJUYK
+        UYOUYKWSZUYJUYKSZUYKVIZUYMVIZUYOUYJUYRUYKUYJUXFKPZUYRUYIUYTUWQUXFUWHWPW
+        QUXFWTXJZXAUYQUYLWAPUYSUYQUYLUYQQRUXFUWIUWQUXCUYIUYKUXDXBUYJUYKXCXDXEUY
+        LXFXJUYKUYMXGXHUYJUYPSZUYNUYNWSZXIUYOVUBVUCUYNVUBUYKUYMUYJUYPXCXKXLUYNX
+        MVEUYJUYRUYKUYPXIVUAUYKXNXJXOUWQUXHUYOTUYIUWQUXGUYNUWQUXCUXQUXGUYNTUXDU
+        XRQUXFKUWIVNVOXPXAXQXRUAUXEUXAXTXSBLZUSZKVAZVBPZUXBBUWIUWRAVUDUWINZVUFU
+        XAVBVUHVUEUWTKVUDUWIYAYBVQGYCYDYEHKADYFYJZUWNHIKKUWQUWJKPZSZUWLUWMVUKUX
+        MUXJUWKMZNZJQOZUXTUXJUWJULUMZNZJQOZUWLUWMVUKVUMVUPJQVUKUXLSUXMUXTVULVUO
+        UWQUXLUXMUXTNVUJUYBYGVUJUXLVULVUONUWQUXJCDUWJEFVPYHYIYKUWQUXCQRUWKUHZUW
+        LVUNTZVUJUXDCDUWJEFUTUXCUXQUWKQUKVUSVURUXRQRUWKVMJQUWIUWKYLYMYMUWQUWHRP
+        UWJRPUWMVUQTVUJUWHYNUWJYNUWHUWJJUUAYMUUBUUCUUDHIKADUUEYJUWFUWGUBLZUWINH
+        KYOZUBAOVUIVVAUBAVUTAPZUFLZUWJVTVSZUFVUTUSZKVAZOZVVAIKVVBVUJSZVVGSZHUGC
+        VUTUGKUGLZQPVVJVVJVUTMUUFUMVFUUGUNZDUWJVFUUHUMZJEFVVKUUIVVBQRVUTUHZVUJV
+        VGVVBVUTUWRPZVVMVVBVVNVVFVBPZVUGVVOBVUTUWRABUBUIZVUFVVFVBVVPVUEVVEKVUDV
+        UTYAYBVQGYCZUULRQVUTVCUOVDYPZXBVVIUWJVVBVUJVVGUUJZUUKVVIUXLVVLUXJVTVSZS
+        ZSZUXJVUTMZKPZWSVWCUUMNZVWBVWDUXJUWJVTVSZVWBUWJUXJUVBVSZVWFWSZVWBUWJVVL
+        UXJVWBUWJVVIVUJVWAVVSXAZYQZVWBUWJYTPVVLYTPVWJUWJUUNXJVWBUXJUXLUXJKPVVIV
+        VTUYHYRYQVWBUWJVWJUUOVVIUXLVVTUUPUUQVWBUWJWAPUYEVWGVWHTVWBUWJVWIUVCUXLU
+        YEVVIVVTUYFYRUWJUXJUURYSUUSVWBVWDUXJVVFPZVWFVWBVWDUXLVWDSZVWKVWBUXLVWDV
+        VIUXLVVTUUTZUVAVWBVVMVUTQUKVWKVWLTVVBVVMVUJVVGVWAVVRUVDZQRVUTVMQUXJKVUT
+        VNVOUVEVVGVWKVWFUJVVHVWAVVDVWFUFUXJVVFVVCUXJUWJVTUVFUVGUVHWNUVIVWBVWDVW
+        EVWBVWCRPVWDVWEXIVWBQRUXJVUTVWNVWMXDVWCUVMYPUVJUVKUVLVVBVVFKVHVVOVVGIKY
+        OVVBVVFVUTUVNZKVUTKUVOVVBVWOQKVVBQRVUTVVRUWCUVPUVQUVRVVBVVNVVOVVQUVSIUF
+        VVFUVTYSUWAYEHUBKADUWBYJKADUWDYJ $.
+    $}
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Cardinality of real and complex number subsets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
