@@ -112124,6 +112124,41 @@ $)
   $}
 
   ${
+    $d A x y $.  $d A z $.  $d B x $.  $d C x y $.
+    fiubm.a $e |- ( ph -> A C_ B ) $.
+    fiubm.b $e |- ( ph -> B C_ QQ ) $.
+    fiubm.c $e |- ( ph -> C e. B ) $.
+    fiubm.f $e |- ( ph -> A e. Fin ) $.
+    $d A x y $.  $d A z $.
+    $( Lemma for ~ fiubz and ~ fiubnn .  A general form of those theorems.
+       (Contributed by Jim Kingdon, 29-Oct-2024.) $)
+    fiubm $p |- ( ph -> E. x e. B A. y e. A y <_ x ) $=
+      ( vz c0 cv cle wbr wral wrex wcel wss adantr wceq rzal brralrspcev syl2an
+      wne wa cq cfn sstrd simpr fimaxq syl3anc ssrexv sylc wex wo fin0or orim2i
+      n0r 3syl mpjaodan ) ADLUAZCMZBMNOCDPZBEQZDLUEZAFERVCFNOZCDPVEVBIVGCDUBBCV
+      CFNEDUCUDAVFUFZDESZVDBDQZVEAVIVFGTVHDUGSZDUHRZVFVJAVKVFADEUGGHUITAVLVFJTA
+      VFUJBCDUKULVDBDEUMUNAVLVBKMDRKUOZUPVBVFUPJKDUQVMVFVBKDUSURUTVA $.
+  $}
+
+  ${
+    $d A x y $.  $d A z $.
+    $( A finite set of integers has an upper bound which is an integer.
+       (Contributed by Jim Kingdon, 29-Oct-2024.) $)
+    fiubz $p |- ( ( A C_ ZZ /\ A e. Fin ) -> E. x e. ZZ A. y e. A y <_ x ) $=
+      ( cz wss cfn wcel wa cc0 simpl cq zssq a1i 0zd simpr fiubm ) CDEZCFGZHZAB
+      CDIQRJDKESLMSNQROP $.
+  $}
+
+  ${
+    $d A x y $.  $d A z $.
+    $( A finite set of natural numbers has an upper bound which is a a natural
+       number.  (Contributed by Jim Kingdon, 29-Oct-2024.) $)
+    fiubnn $p |- ( ( A C_ NN /\ A e. Fin ) -> E. x e. NN A. y e. A y <_ x ) $=
+      ( cn wss cfn wcel wa c1 simpl cq nnssq a1i 1nn simpr fiubm ) CDEZCFGZHZAB
+      CDIQRJDKESLMIDGSNMQROP $.
+  $}
+
+  ${
     resunimafz0.i $e |- ( ph -> Fun I ) $.
     resunimafz0.f $e |- ( ph -> F : ( 0 ..^ ( # ` F ) ) --> dom I ) $.
     resunimafz0.n $e |- ( ph -> N e. ( 0 ..^ ( # ` F ) ) ) $.
