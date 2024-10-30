@@ -1660,7 +1660,9 @@
 "basendx" is used by "1strstr".
 "basendx" is used by "2strstr".
 "basendx" is used by "2strstr1OLD".
+"basendx" is used by "baseltedgf".
 "basendx" is used by "basendxltdsndxn".
+"basendx" is used by "basendxltplendx".
 "basendx" is used by "basendxltplusgndx".
 "basendx" is used by "basendxltunifndx".
 "basendx" is used by "basendxnmulrndx".
@@ -1678,7 +1680,6 @@
 "basendx" is used by "odubas".
 "basendx" is used by "oppcbasOLD".
 "basendx" is used by "otpsstr".
-"basendx" is used by "plendxnbasendx".
 "basendx" is used by "rescabs".
 "basendx" is used by "rescbasOLD".
 "basendx" is used by "resslemOLD".
@@ -4720,6 +4721,10 @@
 "df-ds" is used by "tmslemOLD".
 "df-ds" is used by "tngdsOLD".
 "df-ds" is used by "ttgdsOLD".
+"df-edgf" is used by "baseltedgfOLD".
+"df-edgf" is used by "edgfid".
+"df-edgf" is used by "edgfndx".
+"df-edgf" is used by "edgfndxidOLD".
 "df-eigval" is used by "eigvalfval".
 "df-eigvec" is used by "eigvecval".
 "df-enq" is used by "enqbreq".
@@ -4818,9 +4823,13 @@
 "df-iop" is used by "pjclem1".
 "df-iop" is used by "pjclem3".
 "df-ipo" is used by "ipoval".
+"df-itv" is used by "itvid".
+"df-itv" is used by "itvndx".
 "df-kb" is used by "kbfval".
 "df-leop" is used by "leopg".
 "df-lnfn" is used by "ellnfn".
+"df-lng" is used by "lngid".
+"df-lng" is used by "lngndx".
 "df-lno" is used by "lnoval".
 "df-lnop" is used by "ellnop".
 "df-lnop" is used by "hhlnoi".
@@ -4927,6 +4936,11 @@
 "df-ph" is used by "phnv".
 "df-pjh" is used by "pjhfval".
 "df-pjh" is used by "pjmfn".
+"df-ple" is used by "0posOLD".
+"df-ple" is used by "isposixOLD".
+"df-ple" is used by "oppgleOLD".
+"df-ple" is used by "pleid".
+"df-ple" is used by "plendx".
 "df-pli" is used by "addpiord".
 "df-pli" is used by "dmaddpi".
 "df-plp" is used by "addasspr".
@@ -5848,6 +5862,7 @@
 "e333" is used by "e33".
 "e3bi" is used by "en3lplem2VD".
 "e3bir" is used by "en3lplem2VD".
+"edgfndx" is used by "baseltedgf".
 "edgfndx" is used by "edgfndxnn".
 "ee03" is used by "ee03an".
 "ee03" is used by "suctrALT2".
@@ -14412,7 +14427,8 @@ New usage of "baerlem5bmN" is discouraged (0 uses).
 New usage of "bafval" is discouraged (38 uses).
 New usage of "barbariALT" is discouraged (0 uses).
 New usage of "barocoALT" is discouraged (0 uses).
-New usage of "basendx" is discouraged (38 uses).
+New usage of "baseltedgfOLD" is discouraged (0 uses).
+New usage of "basendx" is discouraged (39 uses).
 New usage of "basendxnmulrndxOLD" is discouraged (0 uses).
 New usage of "basendxnnOLD" is discouraged (0 uses).
 New usage of "basendxnplusgndxOLD" is discouraged (0 uses).
@@ -15479,6 +15495,7 @@ New usage of "df-div" is discouraged (6 uses).
 New usage of "df-dmd" is discouraged (1 uses).
 New usage of "df-drngo" is discouraged (3 uses).
 New usage of "df-ds" is discouraged (7 uses).
+New usage of "df-edgf" is discouraged (4 uses).
 New usage of "df-eigval" is discouraged (1 uses).
 New usage of "df-eigvec" is discouraged (1 uses).
 New usage of "df-enq" is discouraged (3 uses).
@@ -15515,9 +15532,11 @@ New usage of "df-i" is discouraged (4 uses).
 New usage of "df-ims" is discouraged (1 uses).
 New usage of "df-iop" is discouraged (7 uses).
 New usage of "df-ipo" is discouraged (1 uses).
+New usage of "df-itv" is discouraged (2 uses).
 New usage of "df-kb" is discouraged (1 uses).
 New usage of "df-leop" is discouraged (1 uses).
 New usage of "df-lnfn" is discouraged (1 uses).
+New usage of "df-lng" is discouraged (2 uses).
 New usage of "df-lno" is discouraged (1 uses).
 New usage of "df-lnop" is discouraged (2 uses).
 New usage of "df-logbALT" is discouraged (0 uses).
@@ -15553,6 +15572,7 @@ New usage of "df-oc" is discouraged (1 uses).
 New usage of "df-ocomp" is discouraged (2 uses).
 New usage of "df-ph" is discouraged (2 uses).
 New usage of "df-pjh" is discouraged (2 uses).
+New usage of "df-ple" is discouraged (5 uses).
 New usage of "df-pli" is discouraged (2 uses).
 New usage of "df-plp" is discouraged (11 uses).
 New usage of "df-plpq" is discouraged (3 uses).
@@ -15919,7 +15939,7 @@ New usage of "e3bi" is discouraged (1 uses).
 New usage of "e3bir" is discouraged (1 uses).
 New usage of "ecase2dOLD" is discouraged (0 uses).
 New usage of "ecase3adOLD" is discouraged (0 uses).
-New usage of "edgfndx" is discouraged (1 uses).
+New usage of "edgfndx" is discouraged (2 uses).
 New usage of "edgfndxidOLD" is discouraged (0 uses).
 New usage of "ee001" is discouraged (0 uses).
 New usage of "ee002" is discouraged (0 uses).
@@ -16962,6 +16982,7 @@ New usage of "ispautN" is discouraged (0 uses).
 New usage of "isph" is discouraged (1 uses).
 New usage of "isphg" is discouraged (4 uses).
 New usage of "ispointN" is discouraged (2 uses).
+New usage of "isposixOLD" is discouraged (0 uses).
 New usage of "ispsubcl2N" is discouraged (0 uses).
 New usage of "ispsubclN" is discouraged (10 uses).
 New usage of "isrngo" is discouraged (2 uses).
@@ -19171,6 +19192,7 @@ Proof modification of "axnulALT" is discouraged (95 steps).
 Proof modification of "axprALT" is discouraged (67 steps).
 Proof modification of "barbariALT" is discouraged (22 steps).
 Proof modification of "barocoALT" is discouraged (24 steps).
+Proof modification of "baseltedgfOLD" is discouraged (34 steps).
 Proof modification of "basendxnmulrndxOLD" is discouraged (23 steps).
 Proof modification of "basendxnnOLD" is discouraged (12 steps).
 Proof modification of "basendxnplusgndxOLD" is discouraged (19 steps).
@@ -20104,6 +20126,7 @@ Proof modification of "iseriALT" is discouraged (54 steps).
 Proof modification of "ismgmALT" is discouraged (53 steps).
 Proof modification of "ismgmOLD" is discouraged (292 steps).
 Proof modification of "isosctrlem1ALT" is discouraged (363 steps).
+Proof modification of "isposixOLD" is discouraged (72 steps).
 Proof modification of "issgrpALT" is discouraged (53 steps).
 Proof modification of "issmgrpOLD" is discouraged (85 steps).
 Proof modification of "istrkg2d" is discouraged (439 steps).
