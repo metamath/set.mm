@@ -95,6 +95,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+31-Oct-24 ceilged   [same]      moved from GS's mathbox to main set.mm
 31-Oct-24 ceilcld   [same]      moved from GS's mathbox to main set.mm
 31-Oct-24 zexpcld   [same]      moved from SN's mathbox to main set.mm
 26-Oct-24 fsumsplit1 fsumsplit1 moved from GS's mathbox to main set.mm
