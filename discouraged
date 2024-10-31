@@ -4822,6 +4822,9 @@
 "df-iop" is used by "pjci".
 "df-iop" is used by "pjclem1".
 "df-iop" is used by "pjclem3".
+"df-ip" is used by "ipid".
+"df-ip" is used by "ipndx".
+"df-ip" is used by "tngipOLD".
 "df-ipo" is used by "ipoval".
 "df-itv" is used by "itvid".
 "df-itv" is used by "itvndx".
@@ -13399,6 +13402,12 @@
 "tbwsyl" is used by "tbwlem4".
 "tbwsyl" is used by "tbwlem5".
 "tendospcanN" is used by "dihmeetlem13N".
+"tnglemOLD" is used by "tngbasOLD".
+"tnglemOLD" is used by "tngipOLD".
+"tnglemOLD" is used by "tngmulrOLD".
+"tnglemOLD" is used by "tngplusgOLD".
+"tnglemOLD" is used by "tngscaOLD".
+"tnglemOLD" is used by "tngvscaOLD".
 "tratrb" is used by "ordelordALT".
 "tratrb" is used by "ordelordALTVD".
 "trelded" is used by "suctrALT3".
@@ -15531,6 +15540,7 @@ New usage of "df-hvsub" is discouraged (3 uses).
 New usage of "df-i" is discouraged (4 uses).
 New usage of "df-ims" is discouraged (1 uses).
 New usage of "df-iop" is discouraged (7 uses).
+New usage of "df-ip" is discouraged (3 uses).
 New usage of "df-ipo" is discouraged (1 uses).
 New usage of "df-itv" is discouraged (2 uses).
 New usage of "df-kb" is discouraged (1 uses).
@@ -18796,7 +18806,14 @@ New usage of "tfr2ALT" is discouraged (0 uses).
 New usage of "tfr3ALT" is discouraged (0 uses).
 New usage of "thincmoALT" is discouraged (0 uses).
 New usage of "tmslemOLD" is discouraged (0 uses).
+New usage of "tngbasOLD" is discouraged (0 uses).
 New usage of "tngdsOLD" is discouraged (0 uses).
+New usage of "tngipOLD" is discouraged (0 uses).
+New usage of "tnglemOLD" is discouraged (6 uses).
+New usage of "tngmulrOLD" is discouraged (0 uses).
+New usage of "tngplusgOLD" is discouraged (0 uses).
+New usage of "tngscaOLD" is discouraged (0 uses).
+New usage of "tngvscaOLD" is discouraged (0 uses).
 New usage of "topnfbey" is discouraged (0 uses).
 New usage of "tpid3gVD" is discouraged (0 uses).
 New usage of "tratrb" is discouraged (2 uses).
@@ -20614,7 +20631,14 @@ Proof modification of "tfr2ALT" is discouraged (52 steps).
 Proof modification of "tfr3ALT" is discouraged (84 steps).
 Proof modification of "thincmoALT" is discouraged (93 steps).
 Proof modification of "tmslemOLD" is discouraged (174 steps).
+Proof modification of "tngbasOLD" is discouraged (23 steps).
 Proof modification of "tngdsOLD" is discouraged (188 steps).
+Proof modification of "tngipOLD" is discouraged (23 steps).
+Proof modification of "tnglemOLD" is discouraged (210 steps).
+Proof modification of "tngmulrOLD" is discouraged (23 steps).
+Proof modification of "tngplusgOLD" is discouraged (23 steps).
+Proof modification of "tngscaOLD" is discouraged (23 steps).
+Proof modification of "tngvscaOLD" is discouraged (23 steps).
 Proof modification of "topnfbey" is discouraged (75 steps).
 Proof modification of "toycom" is discouraged (142 steps).
 Proof modification of "tpid3gVD" is discouraged (116 steps).
