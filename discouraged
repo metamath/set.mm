@@ -241,6 +241,18 @@
 "2sb5nd" is used by "2uasbanh".
 "2sb5nd" is used by "2uasbanhVD".
 "2sb5rf" is used by "sbel2x".
+"2strbas" is used by "eltpsgOLD".
+"2strbas" is used by "grpbaseOLD".
+"2strbas" is used by "indistpsALTOLD".
+"2strbas" is used by "isposixOLD".
+"2strbas" is used by "tmslemOLD".
+"2strbas" is used by "tuslemOLD".
+"2strop" is used by "eltpsgOLD".
+"2strop" is used by "grpplusgOLD".
+"2strop" is used by "indistpsALTOLD".
+"2strop" is used by "isposixOLD".
+"2strop" is used by "tmslemOLD".
+"2strop" is used by "tuslemOLD".
 "2strstr" is used by "2strbas".
 "2strstr" is used by "2strop".
 "2strstr" is used by "2strstr1OLD".
@@ -1664,6 +1676,7 @@
 "basendx" is used by "basendxltdsndxn".
 "basendx" is used by "basendxltplendx".
 "basendx" is used by "basendxltplusgndx".
+"basendx" is used by "basendxlttsetndx".
 "basendx" is used by "basendxltunifndx".
 "basendx" is used by "basendxnmulrndx".
 "basendx" is used by "basendxnn".
@@ -1693,7 +1706,6 @@
 "basendx" is used by "thlbas".
 "basendx" is used by "topgrpstr".
 "basendx" is used by "trkgstr".
-"basendx" is used by "tsetndxnbasendx".
 "basendx" is used by "tuslemOLD".
 "basendx" is used by "vscandxnbasendx".
 "bcs" is used by "bcs2".
@@ -4998,6 +5010,13 @@
 "df-starv" is used by "starvndx".
 "df-trkg2d" is used by "istrkg2d".
 "df-tru" is used by "tru".
+"df-tset" is used by "eltpsgOLD".
+"df-tset" is used by "indistpsALTOLD".
+"df-tset" is used by "mgptsetOLD".
+"df-tset" is used by "oppgtsetOLD".
+"df-tset" is used by "sratsetOLD".
+"df-tset" is used by "tsetid".
+"df-tset" is used by "tsetndx".
 "df-unif" is used by "tuslemOLD".
 "df-unif" is used by "unifid".
 "df-unif" is used by "unifndx".
@@ -13975,6 +13994,8 @@ New usage of "2sb6rf" is discouraged (0 uses).
 New usage of "2sb8e" is discouraged (0 uses).
 New usage of "2sbcrexOLD" is discouraged (0 uses).
 New usage of "2sbiev" is discouraged (0 uses).
+New usage of "2strbas" is discouraged (6 uses).
+New usage of "2strop" is discouraged (6 uses).
 New usage of "2strstr" is discouraged (4 uses).
 New usage of "2strstr1OLD" is discouraged (0 uses).
 New usage of "2uasban" is discouraged (0 uses).
@@ -15607,6 +15628,7 @@ New usage of "df-st" is discouraged (1 uses).
 New usage of "df-starv" is discouraged (2 uses).
 New usage of "df-trkg2d" is discouraged (1 uses).
 New usage of "df-tru" is discouraged (1 uses).
+New usage of "df-tset" is discouraged (7 uses).
 New usage of "df-unif" is discouraged (3 uses).
 New usage of "df-unop" is discouraged (1 uses).
 New usage of "df-va" is discouraged (3 uses).
@@ -16126,6 +16148,7 @@ New usage of "elspansn4" is discouraged (1 uses).
 New usage of "elspansn5" is discouraged (2 uses).
 New usage of "elspansncl" is discouraged (1 uses).
 New usage of "elspansni" is discouraged (2 uses).
+New usage of "eltpsgOLD" is discouraged (0 uses).
 New usage of "elunirnALT" is discouraged (0 uses).
 New usage of "elunop" is discouraged (7 uses).
 New usage of "elunop2" is discouraged (0 uses).
@@ -16900,6 +16923,7 @@ New usage of "incomOLD" is discouraged (0 uses).
 New usage of "indifdirOLD" is discouraged (0 uses).
 New usage of "indistps2ALT" is discouraged (0 uses).
 New usage of "indistpsALT" is discouraged (0 uses).
+New usage of "indistpsALTOLD" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
 New usage of "indthincALT" is discouraged (0 uses).
@@ -19775,6 +19799,7 @@ Proof modification of "elpwgdedVD" is discouraged (23 steps).
 Proof modification of "elpwi2OLD" is discouraged (21 steps).
 Proof modification of "elrabiOLD" is discouraged (55 steps).
 Proof modification of "elrefsymrels3" is discouraged (65 steps).
+Proof modification of "eltpsgOLD" is discouraged (73 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "en0ALT" is discouraged (62 steps).
 Proof modification of "en0OLD" is discouraged (86 steps).
@@ -20130,6 +20155,7 @@ Proof modification of "incomOLD" is discouraged (37 steps).
 Proof modification of "indifdirOLD" is discouraged (147 steps).
 Proof modification of "indistps2ALT" is discouraged (43 steps).
 Proof modification of "indistpsALT" is discouraged (64 steps).
+Proof modification of "indistpsALTOLD" is discouraged (64 steps).
 Proof modification of "indthincALT" is discouraged (202 steps).
 Proof modification of "infpssALT" is discouraged (52 steps).
 Proof modification of "infregelb" is discouraged (185 steps).
