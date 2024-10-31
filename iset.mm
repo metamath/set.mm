@@ -132287,10 +132287,10 @@ $)
     $d A j v z $.  $d A v w $.  $d v w x y $.
     nnwof.1 $e |- F/_ x A $.
     nnwof.2 $e |- F/_ y A $.
-    $( Well-ordering principle: any nonempty set of positive integers has a
-       least element.  This version allows ` x ` and ` y ` to be present in
-       ` A ` as long as they are effectively not free.  (Contributed by NM,
-       17-Aug-2001.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
+    $( Well-ordering principle: any inhabited decidable set of positive
+       integers has a least element.  This version allows ` x ` and ` y ` to be
+       present in ` A ` as long as they are effectively not free.  (Contributed
+       by NM, 17-Aug-2001.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
     nnwofdc $p |- ( ( A C_ NN /\ E. z z e. A /\ A. j e. NN DECID j e. A )
         -> E. x e. A A. y e. A x <_ y ) $=
       ( vw vv cn wss cv wcel wex wral cle wbr wrex nfcv nfv nnwodc nfralw breq1
