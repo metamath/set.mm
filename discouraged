@@ -18209,6 +18209,7 @@ New usage of "rexab2OLD" is discouraged (0 uses).
 New usage of "rexbiOLD" is discouraged (0 uses).
 New usage of "rexbidvALT" is discouraged (0 uses).
 New usage of "rexbidvaALT" is discouraged (0 uses).
+New usage of "reximiaOLD" is discouraged (0 uses).
 New usage of "rexlimddvcbv" is discouraged (0 uses).
 New usage of "rexn0OLD" is discouraged (0 uses).
 New usage of "rexprgOLD" is discouraged (0 uses).
@@ -20329,6 +20330,7 @@ Proof modification of "rexab2OLD" is discouraged (67 steps).
 Proof modification of "rexbiOLD" is discouraged (65 steps).
 Proof modification of "rexbidvALT" is discouraged (10 steps).
 Proof modification of "rexbidvaALT" is discouraged (10 steps).
+Proof modification of "reximiaOLD" is discouraged (21 steps).
 Proof modification of "rexn0OLD" is discouraged (17 steps).
 Proof modification of "rexprgOLD" is discouraged (17 steps).
 Proof modification of "rexsngOLD" is discouraged (10 steps).
