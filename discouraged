@@ -18206,6 +18206,7 @@ New usage of "retbwax3" is discouraged (0 uses).
 New usage of "retbwax4" is discouraged (0 uses).
 New usage of "reutruALT" is discouraged (0 uses).
 New usage of "rexab2OLD" is discouraged (0 uses).
+New usage of "rexbiOLD" is discouraged (0 uses).
 New usage of "rexbidvALT" is discouraged (0 uses).
 New usage of "rexbidvaALT" is discouraged (0 uses).
 New usage of "rexlimddvcbv" is discouraged (0 uses).
@@ -20325,6 +20326,7 @@ Proof modification of "retbwax3" is discouraged (20 steps).
 Proof modification of "retbwax4" is discouraged (13 steps).
 Proof modification of "reutruALT" is discouraged (45 steps).
 Proof modification of "rexab2OLD" is discouraged (67 steps).
+Proof modification of "rexbiOLD" is discouraged (65 steps).
 Proof modification of "rexbidvALT" is discouraged (10 steps).
 Proof modification of "rexbidvaALT" is discouraged (10 steps).
 Proof modification of "rexn0OLD" is discouraged (17 steps).
