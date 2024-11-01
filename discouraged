@@ -17414,6 +17414,7 @@ New usage of "nfnbiOLD" is discouraged (0 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
 New usage of "nfra2wOLD" is discouraged (0 uses).
+New usage of "nfra2wOLDOLD" is discouraged (0 uses).
 New usage of "nfrab" is discouraged (2 uses).
 New usage of "nfral" is discouraged (5 uses).
 New usage of "nfrald" is discouraged (2 uses).
@@ -18134,6 +18135,7 @@ New usage of "rabeqiOLD" is discouraged (0 uses).
 New usage of "rabrabiOLD" is discouraged (0 uses).
 New usage of "ral0OLD" is discouraged (0 uses).
 New usage of "ralab2OLD" is discouraged (0 uses).
+New usage of "ralbidaOLD" is discouraged (0 uses).
 New usage of "ralcom2" is discouraged (0 uses).
 New usage of "ralcom4OLD" is discouraged (0 uses).
 New usage of "raleleqALT" is discouraged (0 uses).
@@ -20131,7 +20133,8 @@ Proof modification of "nfeu1ALT" is discouraged (25 steps).
 Proof modification of "nfnaewOLD" is discouraged (14 steps).
 Proof modification of "nfnbiOLD" is discouraged (46 steps).
 Proof modification of "nfopdALT" is discouraged (70 steps).
-Proof modification of "nfra2wOLD" is discouraged (15 steps).
+Proof modification of "nfra2wOLD" is discouraged (88 steps).
+Proof modification of "nfra2wOLDOLD" is discouraged (15 steps).
 Proof modification of "nfraldwOLD" is discouraged (41 steps).
 Proof modification of "nfsbOLD" is discouraged (23 steps).
 Proof modification of "nfsbvOLD" is discouraged (47 steps).
@@ -20275,6 +20278,7 @@ Proof modification of "rabeqiOLD" is discouraged (59 steps).
 Proof modification of "rabrabiOLD" is discouraged (38 steps).
 Proof modification of "ral0OLD" is discouraged (12 steps).
 Proof modification of "ralab2OLD" is discouraged (67 steps).
+Proof modification of "ralbidaOLD" is discouraged (43 steps).
 Proof modification of "ralcom4OLD" is discouraged (63 steps).
 Proof modification of "raleleqALT" is discouraged (26 steps).
 Proof modification of "ralf0OLD" is discouraged (41 steps).

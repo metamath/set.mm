@@ -13742,6 +13742,7 @@ $)
     cbvalv1 $p |- ( A. x ph <-> A. y ps ) $=
       ( wal weq biimpd cbv3v wi biimprd equcoms impbii ) ACHBDHABCDEFCDIZABGJKB
       ADCFEBALCDPABGMNKO $.
+    $( $j usage 'cbvalv1' avoids 'ax-io' 'ax-10' 'ax-i12' 'ax-bndl'; $)
 
     $( Rule used to change bound variables, using implicit substitution.
        Version of ~ cbvex with a disjoint variable condition.  See ~ cbvexvw
@@ -13752,6 +13753,7 @@ $)
       ( wex nfex weq wa nfri bicomd equcoms equsex exsimpr sylbir exlimi impbii
       wb ) ACHZBDHZAUBCBCDFIADCJZBKDHUBBADCADELBATCDCDJZABGMNOUCBDPQRBUADADCEIB
       UDAKCHUAABCDBCFLGOUDACPQRS $.
+    $( $j usage 'cbvexv1' avoids 'ax-io' 'ax-10' 'ax-i12' 'ax-bndl'; $)
   $}
 
   ${
@@ -19175,6 +19177,8 @@ $)
     eleq1w $p |- ( x = y -> ( x e. A <-> y e. A ) ) $=
       ( vz weq cv wcel wa wex equequ2 anbi1d exbidv df-clel 3bitr4g ) ABEZDAEZD
       FCGZHZDIDBEZQHZDIAFZCGBFZCGORTDOPSQABDJKLDUACMDUBCMN $.
+    $( $j usage 'eleq1w' avoids 'ax-io' 'ax-10' 'ax-i12' 'ax-bndl'
+      'ax-ext' 'df-cleq'; $)
 
     $( Weaker version of ~ eleq2 (but more general than ~ elequ2 ) not
        depending on ~ ax-ext nor ~ df-cleq .  (Contributed by BJ,
@@ -23000,6 +23004,23 @@ $)
        23-May-2024.) $)
     cbvralfw $p |- ( A. x e. A ph <-> A. y e. A ps ) $=
       ( cv wcel wi wal wral nfcri nfim weq eleq1w df-ral imbi12d cbvalv1
+      3bitr4i ) CKELZAMZCNDKELZBMZDNACEOBDEOUEUGCDUDADDCEGPHQUFBCCDEFPIQCDRUDUF
+      ABCDESJUAUBACETBDETUC $.
+  $}
+
+  ${
+    $d x y $.
+    cbvrexfw.1 $e |- F/_ x A $.
+    cbvrexfw.2 $e |- F/_ y A $.
+    cbvrexfw.3 $e |- F/ y ph $.
+    cbvrexfw.4 $e |- F/ x ps $.
+    cbvrexfw.5 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       Version of ~ cbvrexf with a disjoint variable condition, which does not
+       require ~ ax-13 .  (Contributed by FL, 27-Apr-2008.)  (Revised by Gino
+       Giotto, 10-Jan-2024.) $)
+    cbvrexfw $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
+      ( cv wcel wa wex wrex nfcri nfan weq eleq1w df-rex anbi12d cbvexv1
       3bitr4i ) CKELZAMZCNDKELZBMZDNACEOBDEOUEUGCDUDADDCEGPHQUFBCCDEFPIQCDRUDUF
       ABCDESJUAUBACETBDETUC $.
   $}
@@ -132168,6 +132189,142 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Decidable sets of integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A n x y $.
+    $( An inhabited decidable subset of the natural numbers has a minimum.
+       (Contributed by Jim Kingdon, 23-Sep-2024.) $)
+    nnmindc $p |- ( ( A C_ NN /\ A. x e. NN DECID x e. A /\ E. y y e. A )
+        -> inf ( A , RR , < ) e. A ) $=
+      ( vn cn wss cv wcel wdc wral wex cr clt cinf wa c1 cuz cfv wceq cin simpr
+      crab 1zzd eqid dfss5 biimpi nnuz ineq1i dfin5 eqtrdi ad2antrr eleqtrd cfz
+      eqtri co eleq1w simpllr elfznn adantl rspcdva infssuzcldc infeq1d 3eltr4d
+      dcbid ex exlimdv 3impia ) CEFZAGZCHZIZAEJZBGZCHZBKCLMNZCHZVHVLOZVNVPBVQVN
+      VPVQVNOZDGZCHZDPQRZUBZLMNWBVOCVRVTVMWBDPVRUCWBUDVRVMCWBVQVNUAVHCWBSVLVNVH
+      CECTZWBVHCWCSCEUEUFWCWACTWBEWACUGUHDWACUIUNUJUKZULVRVSPVMUMUOHZOVKVTIAEVS
+      VIVSSVJVTADCUPVDVHVLVNWEUQWEVSEHVRVSVMURUSUTVAVRLCWBMWDVBWDVCVEVFVG $.
+  $}
+
+  ${
+    $d A n x y $.  $d B n $.
+    $( The infimum of a decidable subset of the natural numbers is less than an
+       element of the set.  The infimum is also a minimum as shown at
+       ~ nnmindc .  (Contributed by Jim Kingdon, 26-Sep-2024.) $)
+    nnminle $p |- ( ( A C_ NN /\ A. x e. NN DECID x e. A /\ B e. A )
+        -> inf ( A , RR , < ) <_ B ) $=
+      ( vn cn wss cv wcel wdc wral w3a cr clt cinf c1 cuz cfv crab wceq cin cle
+      dfss5 biimpi nnuz ineq1i dfin5 eqtri eqtrdi 3ad2ant1 infeq1d 1zzd eleqtrd
+      eqid simp3 cfz co eleq1w simpl2 elfznn adantl rspcdva infssuzledc eqbrtrd
+      wa dcbid ) BEFZAGZBHZIZAEJZCBHZKZBLMNDGZBHZDOPQZRZLMNCUAVLLBVPMVFVJBVPSVK
+      VFBEBTZVPVFBVQSBEUBUCVQVOBTVPEVOBUDUEDVOBUFUGUHUIZUJVLVNCVPDOVLUKVPUMVLCB
+      VPVFVJVKUNVRULVLVMOCUOUPHZVDVIVNIAEVMVGVMSVHVNADBUQVEVFVJVKVSURVSVMEHVLVM
+      CUSUTVAVBVC $.
+  $}
+
+  ${
+    $d A j w y $.  $d A x y $.
+    $( Well-ordering principle: any inhabited decidable set of positive
+       integers has a least element.  Theorem I.37 (well-ordering principle) of
+       [Apostol] p. 34.  (Contributed by NM, 17-Aug-2001.)  (Revised by Jim
+       Kingdon, 23-Oct-2024.) $)
+    nnwodc $p |- ( ( A C_ NN /\ E. w w e. A /\ A. j e. NN DECID j e. A )
+        -> E. x e. A A. y e. A x <_ y ) $=
+      ( cn wss cv wcel wex wdc wral w3a cr clt cinf cle wbr wrex nnmindc 3com23
+      simpl1 simpl3 simpr nnminle syl3anc ralrimiva wceq ralbidv rspcev syl2anc
+      wa breq1 ) DFGZCHDICJZEHDIKEFLZMZDNOPZDIZURBHZQRZBDLZAHZUTQRZBDLZADSUNUPU
+      OUSECDTUAUQVABDUQUTDIZULUNUPVFVAUNUOUPVFUBUNUOUPVFUCUQVFUDEDUTUEUFUGVEVBA
+      URDVCURUHVDVABDVCURUTQUMUIUJUK $.
+  $}
+
+  ${
+    $d M j k s $.  $d M k p s t $.  $d M p q r t $.  $d M k p s x $.
+    $d S j k s $.  $d S k p s t $.  $d S p q r t $.  $d S k p s x $.
+    $d q r x $.
+    $( Well-ordering principle: any inhabited decidable subset of an upper set
+       of integers has a least element.  (Contributed by NM, 8-Oct-2005.)
+       (Revised by Jim Kingdon, 22-Oct-2024.) $)
+    uzwodc $p |- ( ( S C_ ( ZZ>= ` M ) /\ E. x x e. S
+        /\ A. x e. ( ZZ>= ` M ) DECID x e. S ) ->
+        E. j e. S A. k e. S j <_ k ) $=
+      ( vp cv wcel cle wbr c1 cmin co caddc cn wa wceq oveq1d cz syl vs cuz cfv
+      vt vq vr wss wex wdc wral w3a crab simplr oveq1 eleq1d elrab sylib simprd
+      breq2 cn0 cc0 simp1 ad3antrrr simpr sseldd eluzelz simp2 ssel2 eluzel2 ex
+      wrex exlimdv sylc zsubcld eluzle zred subge0d mpbird elnn0z sylanbrc zcnd
+      nn0p1nn 1cnd pncand npcand eqtrd eqeltrd elrabd rspcdva elrabi nnred 1red
+      ad3antlr resubcld lesubaddd cr wb leaddsub syl3anc ralrimiva breq1 rspcev
+      ralbidv syl2anc ssrab2 1zzd zaddcld eleq1 spcegv imp 3adant3 dcbid simpl3
+      adantr nnzd nnm1ge0 adantl addge02d mpbid syl3anbrc elrab3 nnwodc mp3an2i
+      eluz2 r19.29a ) BEUBUCZUGZAGZBHZAUHZYIUIZAYFUJZUKZUAGZUDGZIJZUDFGZKLMZENM
+      ZBHZFOULZUJZCGZDGZIJZDBUJZCBVKZUAUUAYMYNUUAHZPZUUBPZYNKLMZENMZBHZUULUUDIJ
+      ZDBUJZUUGUUJYNOHZUUMUUJUUHUUPUUMPYMUUHUUBUMYTUUMFYNOYQYNQZYSUULBUUQYRUUKE
+      NYQYNKLUNRUOUPUQURUUJUUNDBUUJUUDBHZPZUUNUUKUUDELMZIJZUUSUVAYNUUTKNMZIJZUU
+      SYPUVCUDUUAUVBYOUVBYNIUSUUIUUBUURUMUUSYTUVBKLMZENMZBHFUVBOYQUVBQZYSUVEBUV
+      FYRUVDENYQUVBKLUNRUOUUSUUTUTHZUVBOHUUSUUTSHVAUUTIJZUVGUUSUUDEUUSUUDYFHZUU
+      DSHUUSBYFUUDYMYGUUHUUBUURYGYJYLVBZVCUUJUURVDZVEZEUUDVFTZYMESHZUUHUUBUURYM
+      YGYJUVNUVJYGYJYLVGYGYIUVNAYGYIUVNYGYIPZYHYFHZUVNBYFYHVHZEYHVITZVJVLZVMVCZ
+      VNZUUSUVHEUUDIJZUUSUVIUWBUVLEUUDVOTUUSUUDEUUSUUDUVMVPZUUSEUVTVPZVQVRUUTVS
+      VTUUTWBTUUSUVEUUDBUUSUVEUUTENMUUDUUSUVDUUTENUUSUUTKUUSUUTUWAWAUUSWCWDRUUS
+      UUDEUUSUUDUVMWAUUSEUVTWAWEWFUVKWGWHWIUUSYNKUUTUUSYNUUHUUPYMUUBUURYTFYNOWJ
+      WMWKZUUSWLZUUSUUDEUWCUWDWNWOVRUUSUUKWPHEWPHUUDWPHUUNUVAWQUUSYNKUWEUWFWNUW
+      DUWCUUKEUUDWRWSVRWTUUFUUOCUULBUUCUULQUUEUUNDBUUCUULUUDIXAXCXBXDUUAOUGYMUE
+      GZUUAHZUEUHZUFGZUUAHZUIZUFOUJUUBUAUUAVKYTFOXEYGYJUWIYLYGYJUWIYGYIUWIAYGYI
+      UWIUVOYHELMZKNMZSHUWNUUAHZUWIUVOUWMKUVOYHEUVOUVPYHSHUVQEYHVFTZUVRVNZUVOXF
+      XGUVOYTUWNKLMZENMZBHFUWNOYQUWNQZYSUWSBUWTYRUWRENYQUWNKLUNRUOUVOUWMUTHZUWN
+      OHUVOUWMSHVAUWMIJZUXAUWQUVOUXBEYHIJZUVOUVPUXCUVQEYHVOTUVOYHEUVOYHUWPVPUVO
+      EUVRVPVQVRUWMVSVTUWMWBTUVOUWSYHBUVOUWSUWMENMYHUVOUWRUWMENUVOUWMKUVOUWMUWQ
+      WAUVOWCWDRUVOYHEUVOYHUWPWAUVOEUVRWAWEWFYGYIVDWGWHUWHUWOUEUWNSUWGUWNUUAXHX
+      IVMVJVLXJXKYMUWLUFOYMUWJOHZPZUWLUWJKLMZENMZBHZUIZUXEYKUXIAYFUXGYHUXGQYIUX
+      HYHUXGBXHXLYGYJYLUXDXMUXEUVNUXGSHEUXGIJZUXGYFHYMUVNUXDYGYJUVNYLYGYJUVNUVS
+      XJXKXNZUXEUXFEUXEUWJKUXEUWJYMUXDVDXOUXEXFVNZUXKXGUXEVAUXFIJZUXJUXDUXMYMUW
+      JXPXQUXEEUXFUXEEUXKVPUXEUXFUXLVPXRXSEUXGYDXTWIUXDUWLUXIWQYMUXDUWKUXHYTUXH
+      FUWJOYQUWJQZYSUXGBUXNYRUXFENYQUWJKLUNRUOYAXLXQVRWTUAUDUEUUAUFYBYCYE $.
+  $}
+
+  ${
+    $d A j v z $.  $d A v w $.  $d v w x y $.
+    nnwof.1 $e |- F/_ x A $.
+    nnwof.2 $e |- F/_ y A $.
+    $( Well-ordering principle: any inhabited decidable set of positive
+       integers has a least element.  This version allows ` x ` and ` y ` to be
+       present in ` A ` as long as they are effectively not free.  (Contributed
+       by NM, 17-Aug-2001.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
+    nnwofdc $p |- ( ( A C_ NN /\ E. z z e. A /\ A. j e. NN DECID j e. A )
+        -> E. x e. A A. y e. A x <_ y ) $=
+      ( vw vv cn wss cv wcel wex wral cle wbr wrex nfcv nfv nnwodc nfralw breq1
+      wdc w3a weq ralbidv breq2 cbvralfw bitrdi cbvrexfw sylib ) DJKCLDMCNELDMU
+      DEJOUEHLZILZPQZIDOZHDRALZBLZPQZBDOZADRHICDEUAUPUTHADHDSFUOAIDFUOATUBUTHTH
+      AUFZUPUQUNPQZIDOUTVAUOVBIDUMUQUNPUCUGVBUSIBDIDSGVBBTUSITUNURUQPUHUIUJUKUL
+      $.
+  $}
+
+  ${
+    $d x y j w $.  $d y ph j w $.  $d x ps $.
+    nnwos.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Well-ordering principle: any inhabited decidable set of positive
+       integers has a least element (schema form).  (Contributed by NM,
+       17-Aug-2001.)  (Revised by Jim Kingdon, 25-Oct-2024.) $)
+    nnwosdc $p |- ( ( E. x e. NN ph /\ A. x e. NN DECID ph ) ->
+                  E. x e. NN ( ph /\ A. y e. NN ( ps -> x <_ y ) ) ) $=
+      ( vw vj cn wrex wdc wral wa cv wcel wex wi sylibr nfcv wal df-rex wss w3a
+      crab cle wbr rabn0m ssrab2 biantrur sylbb1 wsb wn wo animorrl df-dc nfs1v
+      nfdc sbequ12 dcbid rspc impcom dcan elrabf dcbii ralrimiva anim12i df-3an
+      nfrab1 nnwofdc rabid df-ral elrab imbi1i impexp bitri albii anbi12i exbii
+      weq sylc anbi2i anass bitr3i bitr4i 3bitri sylib syl ) ACHIZAJZCHKZLZACHU
+      CZHUAZFMWKNFOZGMZWKNZJZGHKZUBZABCMZDMZUDUEZPZDHKZLZCHIZWJWLWMLZWQLWRWGXFW
+      IWQWMWGXFACFHUFWLWMACHUGUHUIWIWPGHWIWNHNZLZXGACGUJZLZJZWPXHXGJZXIJZXKXHXG
+      XGUKZULXLWIXGXNUMXGUNQXGWIXMWHXMCWNHXICACGUOZUPCGVRAXIACGUQZURUSUTXGXIVAV
+      SWOXJAXICWNHCWNRCHRXOXPVBVCQVDVEWLWMWQVFQWRXADWKKZCWKIZXECDFWKGACHVGDWKRV
+      HXRWSWKNZXQLZCOWSHNZALZWTHNZXBPZDSZLZCOZXEXQCWKTXTYFCXSYBXQYEACHVIXQWTWKN
+      ZXAPZDSYEXADWKVJYIYDDYIYCBLZXAPYDYHYJXAABCWTHEVKVLYCBXAVMVNVOVNVPVQYGYAXD
+      LZCOXEYFYKCYFYBXCLYKXCYEYBXBDHVJVTYAAXCWAWBVQXDCHTWCWDWEWF $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Algorithms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -138615,6 +138772,91 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Infinite primes theorem
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d j k N $.  $d j M $.  $d j k K $.
+    infpnlem.1 $e |- K = ( ( ! ` N ) + 1 ) $.
+    $( Lemma for ~ infpn .  The smallest divisor (greater than 1) ` M ` of
+       ` N ! + 1 ` is a prime greater than ` N ` .  (Contributed by NM,
+       5-May-2005.) $)
+    infpnlem1 $p |- ( ( N e. NN /\ M e. NN ) ->
+                        ( ( ( 1 < M /\ ( K / M ) e. NN ) /\
+                  A. j e. NN ( ( 1 < j /\ ( K / j ) e. NN ) -> M <_ j ) ) ->
+       ( N < M /\ A. j e. NN ( ( M / j ) e. NN -> ( j = 1 \/ j = M ) ) ) ) ) $=
+      ( cn wcel wa c1 clt wbr cdiv co cle wi wral cz nnz wb cr cv wceq ad2antrr
+      wo wdc ad2antlr zdclt syl2anc nnre lenlt syl2anr adantr cn0 nnnn0 cfa cfv
+      wn caddc facndiv oveq1i eqeltrrid nsyl sylanl1 expr sylbird condc expimpd
+      sylc adantrd cc faccld peano2nnd eqeltrid nncnd nndivtr ex 3com13 adantrl
+      3expa letri3 syl2an biimprd exp4b com3l imp32 adantll com23 sylan2d exp4d
+      imim2d com24 exp32 imp31 com14 3imp ralimdva adantld prime adantl sylibrd
+      w3a impd jcad ) DFGZCFGZHZICJKZBCLMZFGZHZIAUAZJKZBXKLMFGZHZCXKNKZOZAFPZHZ
+      DCJKZCXKLMFGZXKIUBXKCUBZUDOAFPZXFXJXSXQXFXGXIXSXFXGHZXSUEZXSUQZXIUQZOXIXS
+      OYCDQGZCQGZYDXDYGXEXGDRUCXEYHXDXGCRUFDCUGUHYCYECDNKZYFXFYIYESZXGXECTGZDTG
+      YJXDCUIZDUICDUJUKULXFXGYIYFXDDUMGZXEXGYIHZYFDUNZYMXEHYNHDUOUPZIURMZCLMZQG
+      XIDCUSXIYRXHQBYQCLEUTXHRVAVBVCVDVEXSXIVFVHVGVIXFXRXLXKCNKZXTXAZYAOZAFPZYB
+      XFXJXQUUBXFXIXQUUBOZXGXFXIUUCXFXIHZXPUUAAFYTUUDXKFGZHZXPYAXLYSXTUUFXPYAOZ
+      OUUFYSXTXLUUGXFXIUUEYSXTXLUUGOOZOXFYSUUEXIUUHXFYSUUEXIUUHOXFYSUUEHZHZXLXT
+      XIUUGUUJXLXTXIUUGUUJXTXIHZXMXLUUGXFUUEUUKXMOZYSXDBVJGZXEUUEUULXDBXDBYQFEX
+      DYPXDDYOVKVLVMVNUUMXEUUEUULUUEXEUUMUULUUEXEUUMXAUUKXMXKCBVOVPVQVSVCVRUUJX
+      PXNYAUUJXOYAXNXEUUIXOYAOZXDXEYSUUEUUNUUEXEYSUUNUUEXEYSXOYAUUEXEHYAYSXOHZU
+      UEXKTGYKYAUUOSXEXKUIYLXKCVTWAWBWCWDWEWFWJWGWHWIWKWLWKWMWNWOWDWPVPWQXBXEYB
+      UUBSXDACWRWSWTXC $.
+
+    $( Lemma for ~ infpn .  For any positive integer ` N ` , there exists a
+       prime number ` j ` greater than ` N ` .  (Contributed by NM,
+       5-May-2005.) $)
+    infpnlem2 $p |- ( N e. NN -> E. j e. NN ( N < j /\
+                    A. k e. NN ( ( j / k ) e. NN -> ( k = 1 \/ k = j ) ) ) ) $=
+      ( cn wcel c1 cv clt wbr cdiv co wa wral wrex wceq wdc cz syl2anc wi caddc
+      cle wo cfa cfv nnnn0 faccld peano2nnd eqeltrid nnge1d wb nnleltp1 sylancr
+      1nn mpbid breqtrrdi cc cc0 cap nncn nnap0 jca dividap 3syl eqeltrdi breq2
+      oveq2 eleq1d anbi12d rspcev syl12anc 1zzd adantl zdclt cdvds simpr adantr
+      nnz nnzd dvdsdc nndivdvds dcbid dcan ralrimiva nnwosdc infpnlem1 reximdva
+      sylan sylc mpd ) DFGZHAIZJKZCWMLMZFGZNZHBIZJKZCWRLMZFGZNZWMWRUCKUABFONZAF
+      PZDWMJKWMWRLMFGWRHQWRWMQUDUABFONZAFPWLWQAFPZWQRZAFOXDWLCFGZHCJKZCCLMZFGZX
+      FWLCDUEUFZHUBMZFEWLXLWLDDUGUHZUIUJZWLHXMCJWLHXLUCKZHXMJKZWLXLXNUKWLHFGXLF
+      GXPXQULUOXNHXLUMUNUPEUQWLXJHFWLXHCURGZCUSUTKZNXJHQXOXHXRXSCVACVBVCCVDVEUO
+      VFWQXIXKNACFWMCQZWNXIWPXKWMCHJVGXTWOXJFWMCCLVHVIVJVKVLWLXGAFWLWMFGZNZWNRZ
+      WPRZXGYBHSGWMSGZYCYBVMYAYEWLWMVSVNHWMVOTYBWMCVPKZRZYDYBYACSGYGWLYAVQYBCWL
+      XHYAXOVRVTWMCWATWLXHYAYGYDULXOXHYANYFWPCWMWBWCWIUPWNWPWDWJWEWQXBABWMWRQZW
+      NWSWPXAWMWRHJVGYHWOWTFWMWRCLVHVIVJWFTWLXCXEAFBCWMDEWGWHWK $.
+  $}
+
+  ${
+    $d j k N $.
+    $( There exist infinitely many prime numbers: for any positive integer
+       ` N ` , there exists a prime number ` j ` greater than ` N ` .  (See
+       ~ infpn2 for the equinumerosity version.)  (Contributed by NM,
+       1-Jun-2006.) $)
+    infpn $p |- ( N e. NN -> E. j e. NN ( N < j /\
+                    A. k e. NN ( ( j / k ) e. NN -> ( k = 1 \/ k = j ) ) ) ) $=
+      ( cfa cfv c1 caddc co eqid infpnlem2 ) ABCDEFGHZCKIJ $.
+  $}
+
+  ${
+    $d N p $.
+    $( The primes are unbounded.  (Contributed by Paul Chapman,
+       28-Nov-2012.) $)
+    prmunb $p |- ( N e. NN -> E. p e. Prime N < p ) $=
+      ( cn wcel cn0 clt wbr cprime wrex cfv c1 caddc co cdvds c2 cuz 3syl wa wn
+      cz cv nnnn0 cfa faccl elnnuz eluzp1p1 fveq2i eleqtrrdi sylbi exprmfct cle
+      df-2 wi prmz nn0z eluz syl2an prmuz2 eluz2b2 adantr simpld nnnn0d eluznn0
+      sylib sylancom nnz simprd dvdsfac w3a ndvdsp1 imp syl31anc sylbird ancoms
+      wb ex con2d zltnle sylibrd reximdva mpd syl ) ACDAEDZABUAZFGZBHIZAUBWCWDA
+      UCJZKLMZNGZBHIZWFWCWGCDZWHOPJZDZWJAUDZWKWGKPJDZWMWGUEWOWHKKLMZPJWLKWGUFOW
+      PPULUGUHUIWHBUJQWCWIWEBHWCWDHDZRWIWDAUKGZSZWEWQWCWIWSUMWQWCRZWRWIWTWRAWDP
+      JDZWISZWQWDTDZATDZXAWRVOWCWDUNZAUOZWDAUPUQWQXAXBUMWCWQXAXBWQXARZWGTDZWDCD
+      ZKWDFGZWDWGNGZXBXGWCWKXHWQXAWDEDWCXGWDXGXIXJWQXIXJRZXAWQWDWLDXLWDURWDUSVD
+      UTZVAZVBAWDVCVEWNWGVFQXNXGXIXJXMVGWQXAXIXKXNWDAVHVEXHXIXJVIXKXBWDWGVJVKVL
+      VPUTVMVQVNWCXDXCWEWSVOWQXFXEAWDVRUQVSVTWAWB $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Cardinality of real and complex number subsets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -139975,37 +140217,6 @@ $)
   $}
 
   ${
-    $d A n x y $.
-    $( An inhabited decidable subset of the natural numbers has a minimum.
-       (Contributed by Jim Kingdon, 23-Sep-2024.) $)
-    nnmindc $p |- ( ( A C_ NN /\ A. x e. NN DECID x e. A /\ E. y y e. A )
-        -> inf ( A , RR , < ) e. A ) $=
-      ( vn cn wss cv wcel wdc wral wex cr clt cinf wa c1 cuz cfv wceq cin simpr
-      crab 1zzd eqid dfss5 biimpi nnuz ineq1i dfin5 eqtrdi ad2antrr eleqtrd cfz
-      eqtri co eleq1w simpllr elfznn adantl rspcdva infssuzcldc infeq1d 3eltr4d
-      dcbid ex exlimdv 3impia ) CEFZAGZCHZIZAEJZBGZCHZBKCLMNZCHZVHVLOZVNVPBVQVN
-      VPVQVNOZDGZCHZDPQRZUBZLMNWBVOCVRVTVMWBDPVRUCWBUDVRVMCWBVQVNUAVHCWBSVLVNVH
-      CECTZWBVHCWCSCEUEUFWCWACTWBEWACUGUHDWACUIUNUJUKZULVRVSPVMUMUOHZOVKVTIAEVS
-      VIVSSVJVTADCUPVDVHVLVNWEUQWEVSEHVRVSVMURUSUTVAVRLCWBMWDVBWDVCVEVFVG $.
-  $}
-
-  ${
-    $d A n x y $.  $d B n $.
-    $( The infimum of a decidable subset of the natural numbers is less than an
-       element of the set.  The infimum is also a minimum as shown at
-       ~ nnmindc .  (Contributed by Jim Kingdon, 26-Sep-2024.) $)
-    nnminle $p |- ( ( A C_ NN /\ A. x e. NN DECID x e. A /\ B e. A )
-        -> inf ( A , RR , < ) <_ B ) $=
-      ( vn cn wss cv wcel wdc wral w3a cr clt cinf c1 cuz cfv crab wceq cin cle
-      dfss5 biimpi nnuz ineq1i dfin5 eqtri eqtrdi 3ad2ant1 infeq1d 1zzd eleqtrd
-      eqid simp3 cfz co eleq1w simpl2 elfznn adantl rspcdva infssuzledc eqbrtrd
-      wa dcbid ) BEFZAGZBHZIZAEJZCBHZKZBLMNDGZBHZDOPQZRZLMNCUAVLLBVPMVFVJBVPSVK
-      VFBEBTZVPVFBVQSBEUBUCVQVOBTVPEVOBUDUEDVOBUFUGUHUIZUJVLVNCVPDOVLUKVPUMVLCB
-      VPVFVJVKUNVRULVLVMOCUOUPHZVDVIVNIAEVMVGVMSVHVNADBUQVEVFVJVKVSURVSVMEHVLVM
-      CUSUTVAVBVC $.
-  $}
-
-  ${
     nninfdclemf.a $e |- ( ph -> A C_ NN ) $.
     nninfdclemf.dc $e |- ( ph -> A. x e. NN DECID x e. A ) $.
     nninfdclemf.nb $e |- ( ph -> A. m e. NN E. n e. A m < n ) $.
@@ -140185,6 +140396,35 @@ $)
       BKZFJZBKZRZRZVOSKVQSKVKVTVOVTBIVOVGVHVIVSUBZVJVPVRUITUJVTVQVTBIVQWAVJVPVR
       UKTUJVOVQULUMUNVJOBUOUPVLPGQZVMVGVHWBVIABGUQURVJVNHJBKHQWBVMUSABCDUTZHBVA
       HBGVBVCVDWCEFBGVEVF $.
+  $}
+
+  ${
+    $d n p $.
+    $( There are an infinite number of primes.  Theorem 1.7 in [ApostolNT]
+       p. 16.  (Contributed by Paul Chapman, 28-Nov-2012.) $)
+    prminf $p |- Prime ~~ NN $=
+      ( vj vn vp cprime cn wss cv wcel wdc wral clt wbr wrex prmssnn prmdc rgen
+      cen prmunb unbendc mp3an ) DEFAGZDHIZAEJBGZCGKLCDMZBEJDEQLNUBAEUAOPUDBEUC
+      CRPADBCST $.
+  $}
+
+  ${
+    $d j k n m r $.  $d j k r S $.
+    infpn2.1 $e |- S = { n e. NN | ( 1 < n /\
+                A. m e. NN ( ( n / m ) e. NN -> ( m = 1 \/ m = n ) ) ) } $.
+    $( There exist infinitely many prime numbers: the set of all primes ` S `
+       is unbounded by ~ infpn , so by ~ unbendc it is infinite.  This is
+       Metamath 100 proof #11.  (Contributed by NM, 5-May-2005.) $)
+    infpn2 $p |- S ~~ NN $=
+      ( vr cprime cn cv wcel wbr c1 weq wo wi wral wa clt cdiv co anbi12d cdvds
+      cen c2 cuz cfv wceq eluz2nn adantr simpll wb eluz2b2 a1i nndivdvds imbi1d
+      ralbidva pm5.21nii anass bitri isprm2 breq2 eleq1d equequ2 orbi2d imbi12d
+      oveq1 ralbidv elrab2 3bitr4i eqriv prminf eqbrtrri ) FAGUBEFAEHZUCUDUEIZB
+      HZVLUAJZVNKUFZBELZMZNZBGOZPZVLGIZKVLQJZVLVNRSZGIZVRNZBGOZPZPZVLFIVLAIWAWB
+      WCPZWGPZWIWAWBWKVMWBVTVLUGUHWBWCWGUIWBVMWJVTWGVMWJUJWBVLUKULWBVSWFBGWBVNG
+      IPVOWEVRVLVNUMUNUOTUPWBWCWGUQURBVLUSKCHZQJZWLVNRSZGIZVPBCLZMZNZBGOZPWHCVL
+      GACELZWMWCWSWGWLVLKQUTWTWRWFBGWTWOWEWQVRWTWNWDGWLVLVNRVEVAWTWPVQVPCEBVBVC
+      VDVFTDVGVHVIVJVK $.
   $}
 
 
