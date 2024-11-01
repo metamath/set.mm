@@ -12309,6 +12309,10 @@
 "relrngo" is used by "rngoablo2".
 "relrngo" is used by "rngoi".
 "relrngo" is used by "rngosn3".
+"resvlemOLD" is used by "resvbasOLD".
+"resvlemOLD" is used by "resvmulrOLD".
+"resvlemOLD" is used by "resvplusgOLD".
+"resvlemOLD" is used by "resvvscaOLD".
 "retbwax2" is used by "merco1lem2".
 "retbwax2" is used by "merco1lem3".
 "retbwax2" is used by "retbwax3".
@@ -18319,6 +18323,11 @@ New usage of "resccoOLD" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
 New usage of "resslemOLD" is discouraged (0 uses).
 New usage of "ressval3dOLD" is discouraged (0 uses).
+New usage of "resvbasOLD" is discouraged (0 uses).
+New usage of "resvlemOLD" is discouraged (4 uses).
+New usage of "resvmulrOLD" is discouraged (0 uses).
+New usage of "resvplusgOLD" is discouraged (0 uses).
+New usage of "resvvscaOLD" is discouraged (0 uses).
 New usage of "retbwax1" is discouraged (0 uses).
 New usage of "retbwax2" is discouraged (3 uses).
 New usage of "retbwax3" is discouraged (0 uses).
@@ -20484,6 +20493,11 @@ Proof modification of "resccoOLD" is discouraged (115 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
 Proof modification of "resslemOLD" is discouraged (167 steps).
 Proof modification of "ressval3dOLD" is discouraged (285 steps).
+Proof modification of "resvbasOLD" is discouraged (17 steps).
+Proof modification of "resvlemOLD" is discouraged (171 steps).
+Proof modification of "resvmulrOLD" is discouraged (17 steps).
+Proof modification of "resvplusgOLD" is discouraged (17 steps).
+Proof modification of "resvvscaOLD" is discouraged (17 steps).
 Proof modification of "retbwax1" is discouraged (195 steps).
 Proof modification of "retbwax2" is discouraged (127 steps).
 Proof modification of "retbwax3" is discouraged (20 steps).
