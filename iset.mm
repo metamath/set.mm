@@ -139000,6 +139000,18 @@ $)
         OVVBVVFVUTUVNZKVUTKUVOVVBVWOQKVVBQRVUTVVRUWCUVPUVQUVRVVBVVNVVOVVQUVSIUF
         VVFUVTYSUWAYEHUBKADUWBYJKADUWDYJ $.
     $}
+
+    $( Fundamental theorem of arithmetic, where a prime factorization is
+       represented as a finite monotonic 1-based sequence of primes.  Every
+       positive integer has a unique prime factorization.  Theorem 1.10 in
+       [ApostolNT] p. 17.  This is Metamath 100 proof #80.  (Contributed by
+       Paul Chapman, 17-Nov-2012.)  (Revised by Mario Carneiro,
+       30-May-2014.) $)
+    1arith2 $p |- A. z e. NN E! g e. R ( M ` z ) = g $=
+      ( cv cfv wceq wreu cn wcel ccnv wf1o 1arith f1ocnv ax-mp f1ocnvfvb mp3an1
+      f1ofveu mpan wb reubidva mpbird rgen ) AJZFKDJZLZDBMZANUINOZULUJFPZKUILZD
+      BMZBNUNQZUMUPNBFQZUQBCEFGHIRZNBFSTDBNUIUNUCUDUMUKUODBURUMUJBOUKUOUEUSNBUI
+      UJFUAUBUFUGUH $.
   $}
 
 
