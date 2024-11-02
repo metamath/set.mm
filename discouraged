@@ -4462,7 +4462,6 @@
 "crngcALTV" is used by "rngccatidALTV".
 "crngcALTV" is used by "rngcrescrhmALTV".
 "crngcALTV" is used by "rngcvalALTV".
-"csbco" is used by "sbccom2".
 "csbnestg" is used by "csbco3g".
 "csbnestgf" is used by "csbnestg".
 "csbopabgALT" is used by "csbcnvgALT".
@@ -12543,8 +12542,6 @@
 "sbcbi" is used by "sbcssgVD".
 "sbcbi" is used by "trsbcVD".
 "sbcco" is used by "csbco".
-"sbcco" is used by "sbccom2".
-"sbcco" is used by "sbccom2f".
 "sbcim2g" is used by "trsbc".
 "sbcim2g" is used by "trsbcVD".
 "sbcnestg" is used by "sbcco3g".
@@ -15326,7 +15323,7 @@ New usage of "cringcALTV" is discouraged (9 uses).
 New usage of "cringcatALTV" is discouraged (0 uses).
 New usage of "crngcALTV" is discouraged (7 uses).
 New usage of "csbcnvgALT" is discouraged (0 uses).
-New usage of "csbco" is discouraged (1 uses).
+New usage of "csbco" is discouraged (0 uses).
 New usage of "csbco3g" is discouraged (0 uses).
 New usage of "csbconstgOLD" is discouraged (0 uses).
 New usage of "csbeq2gVD" is discouraged (0 uses).
@@ -18135,6 +18132,7 @@ New usage of "rabeqiOLD" is discouraged (0 uses).
 New usage of "rabrabiOLD" is discouraged (0 uses).
 New usage of "ral0OLD" is discouraged (0 uses).
 New usage of "ralab2OLD" is discouraged (0 uses).
+New usage of "ralabOLD" is discouraged (0 uses).
 New usage of "ralbidaOLD" is discouraged (0 uses).
 New usage of "ralcom2" is discouraged (0 uses).
 New usage of "ralcom4OLD" is discouraged (0 uses).
@@ -18208,6 +18206,7 @@ New usage of "retbwax3" is discouraged (0 uses).
 New usage of "retbwax4" is discouraged (0 uses).
 New usage of "reutruALT" is discouraged (0 uses).
 New usage of "rexab2OLD" is discouraged (0 uses).
+New usage of "rexabOLD" is discouraged (0 uses).
 New usage of "rexbiOLD" is discouraged (0 uses).
 New usage of "rexbidvALT" is discouraged (0 uses).
 New usage of "rexbidvaALT" is discouraged (0 uses).
@@ -18360,7 +18359,7 @@ New usage of "sbcbi" is discouraged (2 uses).
 New usage of "sbcbi2OLD" is discouraged (0 uses).
 New usage of "sbcbiVD" is discouraged (0 uses).
 New usage of "sbcbidvOLD" is discouraged (0 uses).
-New usage of "sbcco" is discouraged (3 uses).
+New usage of "sbcco" is discouraged (1 uses).
 New usage of "sbcco3g" is discouraged (0 uses).
 New usage of "sbceqalOLD" is discouraged (0 uses).
 New usage of "sbcgOLD" is discouraged (0 uses).
@@ -20278,6 +20277,7 @@ Proof modification of "rabeqiOLD" is discouraged (59 steps).
 Proof modification of "rabrabiOLD" is discouraged (38 steps).
 Proof modification of "ral0OLD" is discouraged (12 steps).
 Proof modification of "ralab2OLD" is discouraged (67 steps).
+Proof modification of "ralabOLD" is discouraged (40 steps).
 Proof modification of "ralbidaOLD" is discouraged (43 steps).
 Proof modification of "ralcom4OLD" is discouraged (63 steps).
 Proof modification of "raleleqALT" is discouraged (26 steps).
@@ -20331,6 +20331,7 @@ Proof modification of "retbwax3" is discouraged (20 steps).
 Proof modification of "retbwax4" is discouraged (13 steps).
 Proof modification of "reutruALT" is discouraged (45 steps).
 Proof modification of "rexab2OLD" is discouraged (67 steps).
+Proof modification of "rexabOLD" is discouraged (40 steps).
 Proof modification of "rexbiOLD" is discouraged (65 steps).
 Proof modification of "rexbidvALT" is discouraged (10 steps).
 Proof modification of "rexbidvaALT" is discouraged (10 steps).
