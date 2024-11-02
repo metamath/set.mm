@@ -139196,7 +139196,8 @@ $)
     4sqlem5.2 $e |- ( ph -> A e. ZZ ) $.
     4sqlem5.3 $e |- ( ph -> M e. NN ) $.
     4sqlem5.4 $e |- B = ( ( ( A + ( M / 2 ) ) mod M ) - ( M / 2 ) ) $.
-    $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 15-Jul-2014.) $)
+    $( Lemma for 4sq (not yet proved here).  (Contributed by Mario Carneiro,
+       15-Jul-2014.) $)
     4sqlem5 $p |- ( ph -> ( B e. ZZ /\ ( ( A - B ) / M ) e. ZZ ) ) $=
       ( cz wcel cmin co cdiv c2 cc cq syl cn recnd subcld eqeltrrd caddc cmo zq
       zcnd nnzd 2nn znq sylancl qaddcl syl2anc nnq nngt0d modqcld qcn rehalfcld
@@ -139208,7 +139209,8 @@ $)
       ZDLKZHAVOWNDLAVOBWAJKWNCWABJGVAABVTVRVQWJWLVBVCVDAWDWGVEDVGVHWOHIWFWHWIVS
       DVIVJVKZWEVLTVMTWPVN $.
 
-    $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 15-Jul-2014.) $)
+    $( Lemma for 4sq (not yet proved here) .  (Contributed by Mario Carneiro,
+       15-Jul-2014.) $)
     4sqlem6 $p |- ( ph -> ( -u ( M / 2 ) <_ B /\ B < ( M / 2 ) ) ) $=
       ( c2 co cle wbr clt cc0 cmin caddc cq wcel cz syl cn cdiv cneg 0red cr zq
       cmo 2nn znq sylancl qaddcl syl2anc nnq nngt0d modqcld qre nnred rehalfcld
@@ -139219,7 +139221,8 @@ $)
       URUSUTVLVAGVBACVPVLLGAVPVLLKVOVLVLOIZLKAVODWGLAVSWAWFVODLKVTWBWCVNDVHUSAD
       ADFVCVDVEAVOVLVLWDWEWEVFVIVJVK $.
 
-    $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 15-Jul-2014.) $)
+    $( Lemma for 4sq (not yet proved here) .  (Contributed by Mario Carneiro,
+       15-Jul-2014.) $)
     4sqlem7 $p |- ( ph -> ( B ^ 2 ) <_ ( ( ( M ^ 2 ) / 2 ) / 2 ) ) $=
       ( c2 cexp co cdiv cle wbr cneg cz wcel cmin simpld cr cc0 nnrpd rphalfcld
       4sqlem5 zred rpred clt 4sqlem6 simprd ltled lenegcon1d wa lenegsq syl3anc
@@ -139230,7 +139233,8 @@ $)
       AVMHHIJZKJVMHHUPJZKJVLVNAWDWEVMKAHAUQZURUSADHADFUTZWFHTVAMAVBVCZVDAVMHHAD
       WGVEWFWFWHWHVGVHVI $.
 
-    $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 15-Jul-2014.) $)
+    $( Lemma for 4sq (not yet proved here) .  (Contributed by Mario Carneiro,
+       15-Jul-2014.) $)
     4sqlem8 $p |- ( ph -> M || ( ( A ^ 2 ) - ( B ^ 2 ) ) ) $=
       ( cmin co c2 cexp cz wcel zsubcld zsqcl syl cdvds wbr syl2anc cc nnzd cc0
       4sqlem5 simpld simprd wne wb nnne0d dvdsval2 syl3anc mpbird caddc zaddcld
@@ -139241,7 +139245,8 @@ $)
 
     ${
       4sqlem9.5 $e |- ( ( ph /\ ps ) -> ( B ^ 2 ) = 0 ) $.
-      $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 15-Jul-2014.) $)
+      $( Lemma for 4sq (not yet proved here) .  (Contributed by Mario Carneiro,
+         15-Jul-2014.) $)
       4sqlem9 $p |- ( ( ph /\ ps ) -> ( M ^ 2 ) || ( A ^ 2 ) ) $=
         ( cdvds c2 cexp co cdiv cz wcel cmin cc0 wb adantr wa cc 4sqlem5 simpld
         wbr wceq zcnd sqeq0 biimpa syldan oveq2d subid1d oveq1d simprd eqeltrrd
@@ -139254,7 +139259,8 @@ $)
 
     4sqlem10.5 $e |- ( ( ph /\ ps ) ->
       ( ( ( ( M ^ 2 ) / 2 ) / 2 ) - ( B ^ 2 ) ) = 0 ) $.
-    $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 16-Jul-2014.) $)
+    $( Lemma for 4sq (not yet proved here) .  (Contributed by Mario Carneiro,
+       16-Jul-2014.) $)
     4sqlem10 $p |- ( ( ph /\ ps ) ->
       ( M ^ 2 ) || ( ( A ^ 2 ) - ( ( ( M ^ 2 ) / 2 ) / 2 ) ) ) $=
       ( c2 cexp co cdiv cmul cmin cz wcel syl wbr cq wa caddc cdvds adantr nnzd
@@ -139290,10 +139296,10 @@ $)
     $d i R $.
     4sq.1 $e |- S = { n | E. x e. ZZ E. y e. ZZ E. z e. ZZ E. w e. ZZ
       n = ( ( ( x ^ 2 ) + ( y ^ 2 ) ) + ( ( z ^ 2 ) + ( w ^ 2 ) ) ) } $.
-    $( Lemma for ~ 4sq .  The set ` S ` is the set of all numbers that are
-       expressible as a sum of four squares.  Our goal is to show that
-       ` S = NN0 ` ; here we show one subset direction.  (Contributed by Mario
-       Carneiro, 14-Jul-2014.) $)
+    $( Lemma for 4sq (not yet proved here) .  The set ` S ` is the set of all
+       numbers that are expressible as a sum of four squares.  Our goal is to
+       show that ` S = NN0 ` ; here we show one subset direction.  (Contributed
+       by Mario Carneiro, 14-Jul-2014.) $)
     4sqlem1 $p |- S C_ NN0 $=
       ( cv c2 cexp co caddc cz wrex cn0 wcel wa zsqcl2 nn0addcl syl2an wceq cab
       wi eleq1a syl rexlimdvva rexlimivv abssi eqsstri ) EFHZAHZIJKZBHZIJKZLKZC
@@ -139301,8 +139307,8 @@ $)
       DMMVHUPMPZURMPZQZQVAOPZVBVEUCVHUOOPZUTOPZVLVKVFULOPUNOPVMVGUKRUMRULUNSTVI
       UQOPUSOPVNVJUPRURRUQUSSTUOUTSTVAOUJUDUEUFUGUHUI $.
 
-    $( Lemma for ~ 4sq .  Change bound variables in ` S ` .  (Contributed by
-       Mario Carneiro, 14-Jul-2014.) $)
+    $( Lemma for 4sq (not yet proved here) .  Change bound variables in ` S ` .
+       (Contributed by Mario Carneiro, 14-Jul-2014.) $)
     4sqlem2 $p |- ( A e. S <-> E. a e. ZZ E. b e. ZZ E. c e. ZZ E. d e. ZZ
       A = ( ( ( a ^ 2 ) + ( b ^ 2 ) ) + ( ( c ^ 2 ) + ( d ^ 2 ) ) ) ) $=
       ( wcel cv c2 cexp co caddc cz wrex wceq cab eleq2i cvv wa zsqcl2 ad2antrr
@@ -139319,8 +139325,8 @@ $)
       XSWJRYAVQWLVSRVPWKOPUSUTVCVADKVGZXTWPVJYBXSWOWJRYBVSWNWLRVRWMOPUSVCVCVAVD
       XLXRWQJKSSVJEWPVEVBVFVBVFVHVI $.
 
-    $( Lemma for ~ 4sq .  Sufficient condition to be in ` S ` .  (Contributed
-       by Mario Carneiro, 14-Jul-2014.) $)
+    $( Lemma for 4sq (not yet proved here) .  Sufficient condition to be in
+       ` S ` .  (Contributed by Mario Carneiro, 14-Jul-2014.) $)
     4sqlem3 $p |- ( ( ( A e. ZZ /\ B e. ZZ ) /\ ( C e. ZZ /\ D e. ZZ ) ) ->
       ( ( ( A ^ 2 ) + ( B ^ 2 ) ) + ( ( C ^ 2 ) + ( D ^ 2 ) ) ) e. S ) $=
       ( vc vd cz c2 cexp co caddc wceq wrex va vb wcel wa cv eqid oveq1d oveq2d
@@ -139344,10 +139350,10 @@ $)
 
     ${
       $d u A $.
-      $( Lemma for ~ 4sq .  We can express the four-square property more
-         compactly in terms of gaussian integers, because the norms of gaussian
-         integers are exactly sums of two squares.  (Contributed by Mario
-         Carneiro, 14-Jul-2014.) $)
+      $( Lemma for 4sq (not yet proved here) .  We can express the four-square
+         property more compactly in terms of gaussian integers, because the
+         norms of gaussian integers are exactly sums of two squares.
+         (Contributed by Mario Carneiro, 14-Jul-2014.) $)
       4sqlem4 $p |- ( A e. S <-> E. u e. Z[i] E. v e. Z[i]
         A = ( ( ( abs ` u ) ^ 2 ) + ( ( abs ` v ) ^ 2 ) ) ) $=
         ( wcel cfv c2 cexp co caddc wceq cgz wrex cz va vb vc cabs 4sqlem2 cmul
@@ -139378,10 +139384,9 @@ $)
       mul4sq.9 $e |- ( ph -> ( ( B - D ) / M ) e. Z[i] ) $.
       mul4sq.10 $e |- ( ph -> ( X / M ) e. NN0 ) $.
       $( Lemma for ~ mul4sq : algebraic manipulations.  The extra assumptions
-         involving ` M ` are for a part of ~ 4sqlem17 which needs to know not
-         just that the product is a sum of squares, but also that it preserves
-         divisibility by ` M ` .  (Contributed by Mario Carneiro,
-         14-Jul-2014.) $)
+         involving ` M ` would let us know not just that the product is a sum
+         of squares, but also that it preserves divisibility by ` M ` .
+         (Contributed by Mario Carneiro, 14-Jul-2014.) $)
       mul4sqlem $p |- ( ph -> ( ( X / M ) x. ( Y / M ) ) e. S ) $=
         ( ccj cfv cmul co caddc cdiv cabs c2 cexp cmin cgz wcel gzcn syl mulcld
         absvalsqd cjcld eqeltrd addcld ppncand cjaddd cjmuld cjcjd oveq1d eqtrd
