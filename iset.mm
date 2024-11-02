@@ -139262,6 +139262,26 @@ $)
       SVRZUUAUUAXQXRVGYBCWOQYDWOQUVTUVSULUWBUUACYDXSWEYBUUJYKYIOUUSVGXTXTYA $.
   $}
 
+  ${
+    $d a b c d n w x y z $.  $d a b c d n B $.  $d n E $.  $d n G $.  $d n H $.
+    $d a b c d j k n v A $.  $d a b c d n C $.  $d a b c d n D $.  $d j n F $.
+    $d a b c d i k n u M $.  $d k m n u v N $.  $d a b c d i j k m n u v P $.
+    $d a b c d j k m n u v ph $.  $d a b c d i j k m n u v S $.  $d k u T $.
+    $d i R $.
+    4sq.1 $e |- S = { n | E. x e. ZZ E. y e. ZZ E. z e. ZZ E. w e. ZZ
+      n = ( ( ( x ^ 2 ) + ( y ^ 2 ) ) + ( ( z ^ 2 ) + ( w ^ 2 ) ) ) } $.
+    $( Lemma for ~ 4sq .  The set ` S ` is the set of all numbers that are
+       expressible as a sum of four squares.  Our goal is to show that
+       ` S = NN0 ` ; here we show one subset direction.  (Contributed by Mario
+       Carneiro, 14-Jul-2014.) $)
+    4sqlem1 $p |- S C_ NN0 $=
+      ( cv c2 cexp co caddc cz wrex cn0 wcel wa zsqcl2 nn0addcl syl2an wceq cab
+      wi eleq1a syl rexlimdvva rexlimivv abssi eqsstri ) EFHZAHZIJKZBHZIJKZLKZC
+      HZIJKZDHZIJKZLKZLKZUAZDMNCMNZBMNAMNZFUBOGVDFOVCUJOPZABMMUKMPZUMMPZQZVBVEC
+      DMMVHUPMPZURMPZQZQVAOPZVBVEUCVHUOOPZUTOPZVLVKVFULOPUNOPVMVGUKRUMRULUNSTVI
+      UQOPUSOPVNVJUPRURRUQUSSTUOUTSTVAOUJUDUEUFUGUHUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
