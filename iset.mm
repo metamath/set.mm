@@ -129156,6 +129156,18 @@ $)
   $}
 
   ${
+    dvds2addd.k $e |- ( ph -> K e. ZZ ) $.
+    dvds2addd.m $e |- ( ph -> M e. ZZ ) $.
+    dvds2addd.n $e |- ( ph -> N e. ZZ ) $.
+    dvds2addd.1 $e |- ( ph -> K || M ) $.
+    dvds2addd.2 $e |- ( ph -> K || N ) $.
+    $( Deduction form of ~ dvds2add .  (Contributed by SN, 21-Aug-2024.) $)
+    dvds2addd $p |- ( ph -> K || ( M + N ) ) $=
+      ( cdvds wbr caddc co cz wcel wa wi dvds2add syl3anc mp2and ) ABCJKZBDJKZB
+      CDLMJKZHIABNOCNODNOUAUBPUCQEFGBCDRST $.
+  $}
+
+  ${
     dvdstrd.1 $e |- ( ph -> K e. ZZ ) $.
     dvdstrd.2 $e |- ( ph -> M e. ZZ ) $.
     dvdstrd.3 $e |- ( ph -> N e. ZZ ) $.
