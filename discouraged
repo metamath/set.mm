@@ -5038,6 +5038,13 @@
 "df-vhc2" is used by "dfvd2an".
 "df-vhc3" is used by "dfvd3an".
 "df-vs" is used by "vsfval".
+"df-vsca" is used by "mnringvscadOLD".
+"df-vsca" is used by "opsrvscaOLD".
+"df-vsca" is used by "resvvscaOLD".
+"df-vsca" is used by "tngvscaOLD".
+"df-vsca" is used by "ttgvscaOLD".
+"df-vsca" is used by "vscaid".
+"df-vsca" is used by "vscandx".
 "df-wrecs" is used by "csbwrecsg".
 "df-wrecs" is used by "dfrecs3".
 "df-wrecs" is used by "nfwrecs".
@@ -9783,6 +9790,10 @@
 "mndtcval" is used by "mndtcbasval".
 "mndtcval" is used by "mndtcco".
 "mndtcval" is used by "mndtchom".
+"mnringnmulrdOLD" is used by "mnringaddgdOLD".
+"mnringnmulrdOLD" is used by "mnringbasedOLD".
+"mnringnmulrdOLD" is used by "mnringscadOLD".
+"mnringnmulrdOLD" is used by "mnringvscadOLD".
 "moexex" is used by "2moswap".
 "moexex" is used by "moexexv".
 "mpv" is used by "mulcompr".
@@ -11438,6 +11449,11 @@
 "opsqrlem4" is used by "opsqrlem5".
 "opsqrlem4" is used by "opsqrlem6".
 "opsqrlem5" is used by "opsqrlem6".
+"opsrbaslemOLD" is used by "opsrbasOLD".
+"opsrbaslemOLD" is used by "opsrmulrOLD".
+"opsrbaslemOLD" is used by "opsrplusgOLD".
+"opsrbaslemOLD" is used by "opsrscaOLD".
+"opsrbaslemOLD" is used by "opsrvscaOLD".
 "ordpinq" is used by "archnq".
 "ordpinq" is used by "ltanq".
 "ordpinq" is used by "lterpq".
@@ -15643,6 +15659,7 @@ New usage of "df-vd3" is discouraged (1 uses).
 New usage of "df-vhc2" is discouraged (1 uses).
 New usage of "df-vhc3" is discouraged (1 uses).
 New usage of "df-vs" is discouraged (1 uses).
+New usage of "df-vsca" is discouraged (7 uses).
 New usage of "df-wrecs" is discouraged (11 uses).
 New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfadj2" is discouraged (7 uses).
@@ -17428,6 +17445,11 @@ New usage of "mndomgmid" is discouraged (3 uses).
 New usage of "mndtcbasval" is discouraged (2 uses).
 New usage of "mndtcob" is discouraged (2 uses).
 New usage of "mndtcval" is discouraged (3 uses).
+New usage of "mnringaddgdOLD" is discouraged (0 uses).
+New usage of "mnringbasedOLD" is discouraged (0 uses).
+New usage of "mnringnmulrdOLD" is discouraged (4 uses).
+New usage of "mnringscadOLD" is discouraged (0 uses).
+New usage of "mnringvscadOLD" is discouraged (0 uses).
 New usage of "mobidvALT" is discouraged (0 uses).
 New usage of "moexex" is discouraged (2 uses).
 New usage of "moexexv" is discouraged (0 uses).
@@ -17901,6 +17923,12 @@ New usage of "opsqrlem3" is discouraged (2 uses).
 New usage of "opsqrlem4" is discouraged (2 uses).
 New usage of "opsqrlem5" is discouraged (1 uses).
 New usage of "opsqrlem6" is discouraged (0 uses).
+New usage of "opsrbasOLD" is discouraged (0 uses).
+New usage of "opsrbaslemOLD" is discouraged (5 uses).
+New usage of "opsrmulrOLD" is discouraged (0 uses).
+New usage of "opsrplusgOLD" is discouraged (0 uses).
+New usage of "opsrscaOLD" is discouraged (0 uses).
+New usage of "opsrvscaOLD" is discouraged (0 uses).
 New usage of "orbi1r" is discouraged (0 uses).
 New usage of "orbi1rVD" is discouraged (0 uses).
 New usage of "orcomdd" is discouraged (0 uses).
@@ -20269,6 +20297,11 @@ Proof modification of "minimp-pm2.43" is discouraged (40 steps).
 Proof modification of "minimp-syllsimp" is discouraged (261 steps).
 Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
+Proof modification of "mnringaddgdOLD" is discouraged (30 steps).
+Proof modification of "mnringbasedOLD" is discouraged (40 steps).
+Proof modification of "mnringnmulrdOLD" is discouraged (120 steps).
+Proof modification of "mnringscadOLD" is discouraged (68 steps).
+Proof modification of "mnringvscadOLD" is discouraged (30 steps).
 Proof modification of "mobidvALT" is discouraged (48 steps).
 Proof modification of "mof0ALT" is discouraged (67 steps).
 Proof modification of "mpjao3danOLD" is discouraged (29 steps).
@@ -20385,6 +20418,12 @@ Proof modification of "oppgleOLD" is discouraged (24 steps).
 Proof modification of "oppglemOLD" is discouraged (62 steps).
 Proof modification of "oppgtsetOLD" is discouraged (22 steps).
 Proof modification of "opreu2reuALT" is discouraged (913 steps).
+Proof modification of "opsrbasOLD" is discouraged (15 steps).
+Proof modification of "opsrbaslemOLD" is discouraged (167 steps).
+Proof modification of "opsrmulrOLD" is discouraged (15 steps).
+Proof modification of "opsrplusgOLD" is discouraged (15 steps).
+Proof modification of "opsrscaOLD" is discouraged (34 steps).
+Proof modification of "opsrvscaOLD" is discouraged (15 steps).
 Proof modification of "orbi1r" is discouraged (9 steps).
 Proof modification of "orbi1rVD" is discouraged (101 steps).
 Proof modification of "orcomdd" is discouraged (13 steps).
