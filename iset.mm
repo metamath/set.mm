@@ -139016,6 +139016,24 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Lagrange's four-square theorem
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Z[i] $.
+
+  $( Extend class notation with the set of gaussian integers. $)
+  cgz $a class Z[i] $.
+
+  $( Define the set of gaussian integers, which are complex numbers whose real
+     and imaginary parts are integers.  (Note that the ` [ _i ] ` is actually
+     part of the symbol token and has no independent meaning.)  (Contributed by
+     Mario Carneiro, 14-Jul-2014.) $)
+  df-gz $a |- Z[i] = { x e. CC | ( ( Re ` x ) e. ZZ /\ ( Im ` x ) e. ZZ ) } $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Cardinality of real and complex number subsets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -157890,6 +157908,14 @@ htmldef "pCnt" as
     " <IMG SRC='_pcnt.gif' WIDTH=32 HEIGHT=19 ALT=' pCnt' TITLE='pCnt'> ";
   althtmldef "pCnt" as " pCnt ";
   latexdef "pCnt" as "\mathbin{\operatorname{pCnt}}";
+htmldef "Z[i]" as
+    "<IMG SRC='bbz.gif' WIDTH=11 HEIGHT=19 ALT=' ZZ' TITLE='ZZ'>" +
+    "<IMG SRC='lbrack.gif' WIDTH=5 HEIGHT=19 ALT='[' TITLE='['>" +
+    "<IMG SRC='rmi.gif' WIDTH=4 HEIGHT=19 ALT='_i' TITLE='_i'>" +
+    "<IMG SRC='rbrack.gif' WIDTH=5 HEIGHT=19 ALT=']' TITLE=']'>";
+  althtmldef "Z[i]" as '&#8484;[i]';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "Z[i]" as "\mathbb{Z}[\mathrm{i}]";
 htmldef "Struct" as " Struct ";
   althtmldef "Struct" as " Struct ";
   latexdef "Struct" as "\mathrm{Struct}";
