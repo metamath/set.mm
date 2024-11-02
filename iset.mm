@@ -139218,6 +139218,19 @@ $)
       ZADFUAZABCEACLMZVBDUNILMZABCDEFGUCZUDZNZAVCVDABLMVCLMEBOPAVGVDLMVJCOPNADV
       BQRZVHAVGVHVIUEADLMDUBUFVBLMZVLVHUGVFADFUHVKDVBUIUJUKAVBBCULIZVBUOIZVEQAV
       NLMVMVBVOQRABCEVJUMVKVNVBUPSABTMCTMVEVOUQABEURACVJURBCUSSUTVA $.
+
+    ${
+      4sqlem9.5 $e |- ( ( ph /\ ps ) -> ( B ^ 2 ) = 0 ) $.
+      $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 15-Jul-2014.) $)
+      4sqlem9 $p |- ( ( ph /\ ps ) -> ( M ^ 2 ) || ( A ^ 2 ) ) $=
+        ( cdvds c2 cexp co cdiv cz wcel cmin cc0 wb adantr wa cc 4sqlem5 simpld
+        wbr wceq zcnd sqeq0 biimpa syldan oveq2d subid1d oveq1d simprd eqeltrrd
+        syl eqtrd wne nnzd nnne0d dvdsval2 syl3anc mpbird dvdssq syl2an2r mpbid
+        ) ABUAZECJUEZEKLMCKLMJUEZVGVHCENMZOPZVGCDQMZENMZVJOVGVLCENVGVLCRQMCVGDR
+        CQABDKLMRUFZDRUFZIAVNVOADUBPVNVOSADADOPZVMOPZACDEFGHUCZUDUGDUHUPUIUJUKV
+        GCVGCACOPZBFTZUGULUQUMAVQBAVPVQVRUNTUOAVHVKSZBAEOPZERURVSWAAEGUSZAEGUTF
+        ECVAVBTVCAWBBVSVHVISWCVTECVDVEVF $.
+    $}
   $}
 
 
