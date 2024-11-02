@@ -23199,6 +23199,38 @@ $)
   $}
 
   ${
+    $d x z $.  $d w y $.  $d x A $.  $d z A $.  $d x y B $.  $d z y B $.
+    $d w B $.  $d z ph $.  $d y ps $.  $d x ch $.  $d w ch $.
+    cbvral2vw.1 $e |- ( x = z -> ( ph <-> ch ) ) $.
+    cbvral2vw.2 $e |- ( y = w -> ( ch <-> ps ) ) $.
+    $( Change bound variables of double restricted universal quantification,
+       using implicit substitution.  Version of ~ cbvral2v with a disjoint
+       variable condition, which does not require ~ ax-13 .  (Contributed by
+       NM, 10-Aug-2004.)  (Revised by Gino Giotto, 10-Jan-2024.) $)
+    cbvral2vw $p |- ( A. x e. A A. y e. B ph <-> A. z e. A A. w e. B ps ) $=
+      ( wral weq ralbidv cbvralvw ralbii bitri ) AEILZDHLCEILZFHLBGILZFHLRSDFHD
+      FMACEIJNOSTFHCBEGIKOPQ $.
+    $( $j usage 'cbvral2vw' avoids 'ax-io' 'ax-7' 'ax-10' 'ax-11' 'ax-i12'
+       'ax-bndl' 'ax-i5r' 'ax-ext'; $)
+  $}
+
+  ${
+    $d x z $.  $d w y $.  $d A x $.  $d A z $.  $d B w $.  $d B x y $.
+    $d B z y $.  $d ch w $.  $d ch x $.  $d ph z $.  $d ps y $.
+    cbvrex2vw.1 $e |- ( x = z -> ( ph <-> ch ) ) $.
+    cbvrex2vw.2 $e |- ( y = w -> ( ch <-> ps ) ) $.
+    $( Change bound variables of double restricted universal quantification,
+       using implicit substitution.  Version of ~ cbvrex2v with a disjoint
+       variable condition, which does not require ~ ax-13 .  (Contributed by
+       FL, 2-Jul-2012.)  (Revised by Gino Giotto, 10-Jan-2024.) $)
+    cbvrex2vw $p |- ( E. x e. A E. y e. B ph <-> E. z e. A E. w e. B ps ) $=
+      ( wrex weq rexbidv cbvrexvw rexbii bitri ) AEILZDHLCEILZFHLBGILZFHLRSDFHD
+      FMACEIJNOSTFHCBEGIKOPQ $.
+    $( $j usage 'cbvrex2vw' avoids 'ax-io' 'ax-7' 'ax-10' 'ax-11' 'ax-i12'
+       'ax-bndl' 'ax-i5r' 'ax-ext'; $)
+  $}
+
+  ${
     $d x A $.  $d z A $.  $d x y B $.  $d z y B $.  $d w B $.  $d z ph $.
     $d y ps $.  $d x ch $.  $d w ch $.
     cbvral2v.1 $e |- ( x = z -> ( ph <-> ch ) ) $.
