@@ -139451,6 +139451,31 @@ $)
         HQAWUFWVJUCVXLXSUSGWUJXOWDAWUEWUIWVIWUGUDYBVXOXOWDWUKWULXQWDVCBCDEYGYNJ
         KOXTWDYA $.
     $}
+
+    $( Euler's four-square identity:  The product of two sums of four squares
+       is also a sum of four squares.  This is usually quoted as an explicit
+       formula involving eight real variables; we save some time by working
+       with complex numbers (gaussian integers) instead, so that we only have
+       to work with four variables, and also hiding the actual formula for the
+       product in the proof of ~ mul4sqlem .  (For the curious, the explicit
+       formula that is used is
+       ` ( | a | ^ 2 + | b | ^ 2 ) ( | c | ^ 2 + | d | ^ 2 ) = `
+       ` | a * x. c + b x. d * | ^ 2 + | a * x. d - b x. c * | ^ 2 ` .)
+       (Contributed by Mario Carneiro, 14-Jul-2014.) $)
+    mul4sq $p |- ( ( A e. S /\ B e. S ) -> ( A x. B ) e. S ) $=
+      ( va vb vc vd wcel co cgz wrex wa c1 syl cv cabs cfv cexp caddc wceq cmul
+      c2 4sqlem4 reeanv cdiv cn0 simpll gzabssqcl simprl nn0addcld nn0cnd div1d
+      simplr simprr oveq12d eqid cn 1nn a1i cmin cc gzsubcl adantr gzcn eqeltrd
+      adantl mul4sqlem eqeltrrd syl5ibrcom rexlimdvva syl5bir rexlimivv syl2anb
+      oveq12 eleq1d sylbir ) EGNEJUAZUBUCUHUDOZKUAZUBUCUHUDOZUEOZUFZKPQZJPQZFLU
+      AZUBUCUHUDOZMUAZUBUCUHUDOZUEOZUFZMPQZLPQZEFUGOZGNZFGNABCDKJEGHIUIABCDMLFG
+      HIUIWJWRRWIWQRZLPQJPQWTWIWQJLPPUJXAWTJLPPXAWHWPRZMPQKPQWCPNZWKPNZRZWTWHWP
+      KMPPUJXEXBWTKMPPXEWEPNZWMPNZRZRZWTXBWGWOUGOZGNXIWGSUKOZWOSUKOZUGOXJGXIXKW
+      GXLWOUGXIWGXIWGXIWDWFXIXCWDULNXCXDXHUMZWCUNTXIXFWFULNXEXFXGUOZWEUNTUPZUQU
+      RZXIWOXIWOXIWLWNXIXDWLULNXCXDXHUSZWKUNTXIXGWNULNXEXFXGUTZWMUNTUPUQURVAXIA
+      BCDWCWEWKWMGHSWGWOIXMXNXQXRWGVBWOVBSVCNXIVDVEXIWCWKVFOZSUKOXSPXIXSXIXSPNZ
+      XSVGNXEXTXHWCWKVHVIZXSVJTURYAVKXIWEWMVFOZSUKOYBPXIYBXIYBPNZYBVGNXHYCXEWEW
+      MVHVLZYBVJTURYDVKXIXKWGULXPXOVKVMVNXBWSXJGEWGFWOUGVTWAVOVPVQVRWBVS $.
   $}
 
 
