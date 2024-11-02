@@ -139032,6 +139032,89 @@ $)
      Mario Carneiro, 14-Jul-2014.) $)
   df-gz $a |- Z[i] = { x e. CC | ( ( Re ` x ) e. ZZ /\ ( Im ` x ) e. ZZ ) } $.
 
+  ${
+    $d x A $.
+    $( Elementhood in the gaussian integers.  (Contributed by Mario Carneiro,
+       14-Jul-2014.) $)
+    elgz $p |- ( A e. Z[i] <->
+      ( A e. CC /\ ( Re ` A ) e. ZZ /\ ( Im ` A ) e. ZZ ) ) $=
+      ( vx cgz wcel cc cre cfv cz cim wa w3a cv wceq fveq2 eleq1d anbi12d df-gz
+      elrab2 3anass bitr4i ) ACDAEDZAFGZHDZAIGZHDZJZJUAUCUEKBLZFGZHDZUGIGZHDZJU
+      FBAECUGAMZUIUCUKUEULUHUBHUGAFNOULUJUDHUGAINOPBQRUAUCUEST $.
+  $}
+
+  $( A gaussian integer is a complex number.  (Contributed by Mario Carneiro,
+     14-Jul-2014.) $)
+  gzcn $p |- ( A e. Z[i] -> A e. CC ) $=
+    ( cgz wcel cc cre cfv cz cim elgz simp1bi ) ABCADCAEFGCAHFGCAIJ $.
+
+  $( An integer is a gaussian integer.  (Contributed by Mario Carneiro,
+     14-Jul-2014.) $)
+  zgz $p |- ( A e. ZZ -> A e. Z[i] ) $=
+    ( cz wcel cc cre cfv cim cgz zcn zre rered eqeltrd cc0 reim0d eqeltrdi elgz
+    id 0z syl3anbrc ) ABCZADCAEFZBCAGFZBCAHCAITUAABTAAJZKTQLTUBMBTAUCNROAPS $.
+
+  $( ` _i ` is a gaussian integer.  (Contributed by Mario Carneiro,
+     14-Jul-2014.) $)
+  igz $p |- _i e. Z[i] $=
+    ( ci cgz wcel cc cre cfv cz cim ax-icn cc0 rei 0z eqeltri imi elgz mpbir3an
+    c1 1z ) ABCADCAEFZGCAHFZGCISJGKLMTQGNRMAOP $.
+
+  $( The gaussian integers are closed under negation.  (Contributed by Mario
+     Carneiro, 14-Jul-2014.) $)
+  gznegcl $p |- ( A e. Z[i] -> -u A e. Z[i] ) $=
+    ( cgz wcel cneg cre cfv cim gzcn negcld renegd elgz simp2bi znegcld eqeltrd
+    cc cz imnegd simp3bi syl3anbrc ) ABCZADZOCUAEFZPCUAGFZPCUABCTAAHZITUBAEFZDP
+    TAUDJTUETAOCZUEPCZAGFZPCZAKZLMNTUCUHDPTAUDQTUHTUFUGUIUJRMNUAKS $.
+
+  $( The gaussian integers are closed under conjugation.  (Contributed by Mario
+     Carneiro, 14-Jul-2014.) $)
+  gzcjcl $p |- ( A e. Z[i] -> ( * ` A ) e. Z[i] ) $=
+    ( cgz wcel ccj cfv cc cre cz cim gzcn cjcld recjd elgz simp2bi eqeltrd cneg
+    imcjd simp3bi znegcld syl3anbrc ) ABCZADEZFCUBGEZHCUBIEZHCUBBCUAAAJZKUAUCAG
+    EZHUAAUELUAAFCZUFHCZAIEZHCZAMZNOUAUDUIPHUAAUEQUAUIUAUGUHUJUKRSOUBMT $.
+
+  $( The gaussian integers are closed under addition.  (Contributed by Mario
+     Carneiro, 14-Jul-2014.) $)
+  gzaddcl $p |- ( ( A e. Z[i] /\ B e. Z[i] ) -> ( A + B ) e. Z[i] ) $=
+    ( cgz wcel wa caddc co cc cre cfv cim gzcn syl2an wceq elgz simp2bi eqeltrd
+    cz zaddcl simp3bi addcl readd imadd syl3anbrc ) ACDZBCDZEZABFGZHDZUHIJZRDUH
+    KJZRDUHCDUEAHDZBHDZUIUFALZBLZABUAMUGUJAIJZBIJZFGZRUEULUMUJURNUFUNUOABUBMUEU
+    PRDZUQRDZURRDUFUEULUSAKJZRDZAOZPUFUMUTBKJZRDZBOZPUPUQSMQUGUKVAVDFGZRUEULUMU
+    KVGNUFUNUOABUCMUEVBVEVGRDUFUEULUSVBVCTUFUMUTVEVFTVAVDSMQUHOUD $.
+
+  $( The gaussian integers are closed under multiplication.  (Contributed by
+     Mario Carneiro, 14-Jul-2014.) $)
+  gzmulcl $p |- ( ( A e. Z[i] /\ B e. Z[i] ) -> ( A x. B ) e. Z[i] ) $=
+    ( cgz wcel wa cmul co cc cre cfv cz gzcn syl2an wceq simp2bi zmulcl simp3bi
+    cim elgz eqeltrd mulcl cmin remul zsubcld caddc immul zaddcld syl3anbrc ) A
+    CDZBCDZEZABFGZHDZULIJZKDULRJZKDULCDUIAHDZBHDZUMUJALZBLZABUAMUKUNAIJZBIJZFGZ
+    ARJZBRJZFGZUBGZKUIUPUQUNVFNUJURUSABUCMUKVBVEUIUTKDZVAKDZVBKDUJUIUPVGVCKDZAS
+    ZOZUJUQVHVDKDZBSZOZUTVAPMUIVIVLVEKDUJUIUPVGVIVJQZUJUQVHVLVMQZVCVDPMUDTUKUOU
+    TVDFGZVCVAFGZUEGZKUIUPUQUOVSNUJURUSABUFMUKVQVRUIVGVLVQKDUJVKVPUTVDPMUIVIVHV
+    RKDUJVOVNVCVAPMUGTULSUH $.
+
+  $( Construct a gaussian integer from real and imaginary parts.  (Contributed
+     by Mario Carneiro, 16-Jul-2014.) $)
+  gzreim $p |- ( ( A e. ZZ /\ B e. ZZ ) -> ( A + ( _i x. B ) ) e. Z[i] ) $=
+    ( cz wcel cgz ci cmul co caddc zgz igz gzmulcl sylancr gzaddcl syl2an ) ACD
+    AEDFBGHZEDZAPIHEDBCDZAJRFEDBEDQKBJFBLMAPNO $.
+
+  $( The gaussian integers are closed under subtraction.  (Contributed by Mario
+     Carneiro, 14-Jul-2014.) $)
+  gzsubcl $p |- ( ( A e. Z[i] /\ B e. Z[i] ) -> ( A - B ) e. Z[i] ) $=
+    ( cgz wcel wa cneg caddc co cmin cc wceq gzcn negsub syl2an gznegcl gzaddcl
+    sylan2 eqeltrrd ) ACDZBCDZEABFZGHZABIHZCSAJDBJDUBUCKTALBLABMNTSUACDUBCDBOAU
+    APQR $.
+
+  $( The squared norm of a gaussian integer is an integer.  (Contributed by
+     Mario Carneiro, 16-Jul-2014.) $)
+  gzabssqcl $p |- ( A e. Z[i] -> ( ( abs ` A ) ^ 2 ) e. NN0 ) $=
+    ( cgz wcel cabs cfv c2 cexp co cre cim caddc cn0 gzcn absvalsq2d cz cc elgz
+    simp2bi zsqcl2 syl simp3bi nn0addcld eqeltrd ) ABCZADEFGHAIEZFGHZAJEZFGHZKH
+    LUDAAMNUDUFUHUDUEOCZUFLCUDAPCZUIUGOCZAQZRUESTUDUKUHLCUDUJUIUKULUAUGSTUBUC
+    $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
