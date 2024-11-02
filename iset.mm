@@ -101472,6 +101472,14 @@ $)
   elfzelz $p |- ( K e. ( M ... N ) -> K e. ZZ ) $=
     ( cfz co wcel cuz cfv cz elfzuz eluzelz syl ) ABCDEFABGHFAIFABCJBAKL $.
 
+  ${
+    elfzelzd.1 $e |- ( ph -> K e. ( M ... N ) ) $.
+    $( A member of a finite set of sequential integers is an integer.
+       (Contributed by Glauco Siliprandi, 5-Apr-2020.) $)
+    elfzelzd $p |- ( ph -> K e. ZZ ) $=
+      ( cfz co wcel cz elfzelz syl ) ABCDFGHBIHEBCDJK $.
+  $}
+
   $( A member of a finite set of sequential integer is greater than or equal to
      the lower bound.  (Contributed by NM, 6-Sep-2005.)  (Revised by Mario
      Carneiro, 28-Apr-2015.) $)
