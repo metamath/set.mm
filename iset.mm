@@ -139172,6 +139172,23 @@ $)
     LUDAAMNUDUFUHUDUEOCZUFLCUDAPCZUIUGOCZAQZRUESTUDUKUHLCUDUJUIUKULUAUGSTUBUC
     $.
 
+  ${
+    4sqlem5.2 $e |- ( ph -> A e. ZZ ) $.
+    4sqlem5.3 $e |- ( ph -> M e. NN ) $.
+    4sqlem5.4 $e |- B = ( ( ( A + ( M / 2 ) ) mod M ) - ( M / 2 ) ) $.
+    $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 15-Jul-2014.) $)
+    4sqlem5 $p |- ( ph -> ( B e. ZZ /\ ( ( A - B ) / M ) e. ZZ ) ) $=
+      ( cz wcel cmin co cdiv c2 cc cq syl cn recnd subcld eqeltrrd caddc cmo zq
+      zcnd nnzd 2nn znq sylancl qaddcl syl2anc nnq nngt0d modqcld qcn rehalfcld
+      nnred eqeltrid nncand nnap0d divcanap1d oveq2i subsub3d syl5eq oveq1d cc0
+      cmul clt wbr modqdifz syl3anc eqeltrd zmulcld zsubcld jca ) ACHIBCJKZDLKZ
+      HIABVOJKCHABCABEUDZACBDMLKZUAKZDUBKZVRJKZNGAVTVRAVTOIVTNIAVSDABOIZVROIZVS
+      OIZABHIWBEBUCPADHIMQIWCADFUEZUFDMUGUHBVRUIUJZADQIDOIZFDUKPZADFULZUMVTUNPZ
+      AVRADADFUPZUORZSUQZURABVOEAVPDVFKVOHAVODABCVQWMSADWKRADFUSUTAVPDAVPVSVTJK
+      ZDLKZHAVOWNDLAVOBWAJKWNCWABJGVAABVTVRVQWJWLVBVCVDAWDWGVEDVGVHWOHIWFWHWIVS
+      DVIVJVKZWEVLTVMTWPVN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
