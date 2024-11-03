@@ -158174,6 +158174,39 @@ $)
       PVGVHXHWJVJQZWKVJQZXQXMSXEYDXFWMWJVKVCXFYEXEWMWKVKVFYDXOXKYEXPXLWJVLWKVLV
       MVNVOVPXHWQTQZXIXJWAXGYFWMXEXRYAYFXFXSYBWOWPVQVRUNWQVSVTWBWNWQPWCWDWEWFWG
       WHWI $.
+
+    ${
+      2sqlem9.5 $e |- ( ph -> A. b e. ( 1 ... ( M - 1 ) )
+        A. a e. Y ( b || a -> b e. S ) ) $.
+      2sqlem9.7 $e |- ( ph -> M || N ) $.
+      ${
+        2sqlem8.n $e |- ( ph -> N e. NN ) $.
+        2sqlem8.m $e |- ( ph -> M e. ( ZZ>= ` 2 ) ) $.
+        2sqlem8.1 $e |- ( ph -> A e. ZZ ) $.
+        2sqlem8.2 $e |- ( ph -> B e. ZZ ) $.
+        2sqlem8.3 $e |- ( ph -> ( A gcd B ) = 1 ) $.
+        2sqlem8.4 $e |- ( ph -> N = ( ( A ^ 2 ) + ( B ^ 2 ) ) ) $.
+        2sqlem8.c $e |- C = ( ( ( A + ( M / 2 ) ) mod M ) - ( M / 2 ) ) $.
+        2sqlem8.d $e |- D = ( ( ( B + ( M / 2 ) ) mod M ) - ( M / 2 ) ) $.
+        $( Lemma for ~ 2sqlem8 .  (Contributed by Mario Carneiro,
+           4-Jun-2016.) $)
+        2sqlem8a $p |- ( ph -> ( C gcd D ) e. NN ) $=
+          ( cz wcel cc0 wceq wa wn cgcd co cn cmin cdiv c1 wne c2 cuz cfv sylib
+          eluz2b3 simpld 4sqlem5 cexp simprd cle cdvds simpr 4sqlem9 ex eluzelz
+          wbr wb syl dvdssq syl2anc sylibrd wi 1ne0 eqnetrd neneqd gcdeq0 mtbid
+          a1i dvdslegcd syl31anc syl2and breq2d nnle1eq1 sylibd necon3ad mpd cc
+          bitrd zcnd sqeq0 anbi12d gcdn0cl syl21anc ) AHUHUIZIUHUIZHUJUKZIUJUKZ
+          ULZUMHIUNUOUPUIAXDFHUQUOKURUOUHUIAFHKUBAKUPUIZKUSUTZAKVAVBVCUIZXIXJUL
+          UAKVEVDZVFZUFVGVFZAXEGIUQUOKURUOUHUIAGIKUCXMUGVGVFZAHVAVHUOUJUKZIVAVH
+          UOUJUKZULZXHAXJXRUMAXIXJXLVIAXRKUSAXRKFGUNUOZVJVPZKUSUKZAXPKFVKVPZXQK
+          GVKVPZXTAXPKVAVHUOZFVAVHUOVKVPZYBAXPYEAXPFHKUBXMUFAXPVLVMVNAKUHUIZFUH
+          UIZYBYEVQAXKYFUAVAKVOVRZUBKFVSVTWAAXQYDGVAVHUOVKVPZYCAXQYIAXQGIKUCXMU
+          GAXQVLVMVNAYFGUHUIZYCYIVQYHUCKGVSVTWAAYFYGYJFUJUKGUJUKULZUMYBYCULXTWB
+          YHUBUCAXSUJUKZYKAXSUJAXSUSUJUDUSUJUTAWCWHWDWEAYGYJYLYKVQUBUCFGWFVTWGK
+          FGWIWJWKAXTKUSVJVPZYAAXSUSKVJUDWLAXIYMYAVQXMKWMVRWRWNWOWPAXPXFXQXGAHW
+          QUIXPXFVQAHXNWSHWTVRAIWQUIXQXGVQAIXOWSIWTVRXAWGHIXBXC $.
+      $}
+    $}
   $}
 
 
