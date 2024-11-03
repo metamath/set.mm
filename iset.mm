@@ -158156,6 +158156,24 @@ $)
         CXIXJXKXLXMXNVPVOXOXQXPXIKYCYFYGPLCMXSCUIZYAYFYBYGUXTXTYEEXSCDOWQUNXSCE
         VBUOVCXR $.
     $}
+
+    2sqlem7.2 $e |- Y = { z | E. x e. ZZ E. y e. ZZ ( ( x gcd y ) = 1 /\
+      z = ( ( x ^ 2 ) + ( y ^ 2 ) ) ) } $.
+    $( Lemma for ~ 2sq .  (Contributed by Mario Carneiro, 19-Jun-2015.) $)
+    2sqlem7 $p |- Y C_ ( S i^i NN ) $=
+      ( cv co c1 wceq wa cz wrex cn wcel cc0 wb cn0 cgcd c2 caddc cab cin simpr
+      cexp reximi 2sqlem2 sylibr wn 1ne0 gcdeq0 adantr eqeq1d bitr3d necon3bbid
+      wne mpbiri cle wbr zsqcl2 ad2antrr nn0red nn0ge0d ad2antlr add20 syl22anc
+      cr cc zcn sqeq0 bi2anan9 syl2anc bitrd mtbird nn0addcl syl2an elnn0 sylib
+      wo ecased eleq1 syl5ibrcom expimpd rexlimivv elind abssi eqsstri ) FAIZBI
+      ZUAJZKLZCIZWJUBUGJZWKUBUGJZUCJZLZMZBNOZANOZCUDEPUEZHXACXBXAEPWNXAWRBNOZAN
+      OWNEQWTXCANWSWRBNWMWRUFUHUHABDWNEGUIUJWSWNPQZABNNWJNQZWKNQZMZWMWRXDXGWMMZ
+      XDWRWQPQZXHXIWQRLZXHXJWJRLZWKRLZMZXHXMUKKRURULXHXMKRXHWLRLZXMKRLXGXNXMSWM
+      WJWKUMUNXHWLKRXGWMUFUOUPUQUSXHXJWORLZWPRLZMZXMXHWOVIQRWOUTVAWPVIQRWPUTVAX
+      JXQSXHWOXEWOTQZXFWMWJVBZVCZVDXHWOXTVEXHWPXFWPTQZXEWMWKVBZVFZVDXHWPYCVEWOW
+      PVGVHXHWJVJQZWKVJQZXQXMSXEYDXFWMWJVKVCXFYEXEWMWKVKVFYDXOXKYEXPXLWJVLWKVLV
+      MVNVOVPXHWQTQZXIXJWAXGYFWMXEXRYAYFXFXSYBWOWPVQVRUNWQVSVTWBWNWQPWCWDWEWFWG
+      WHWI $.
   $}
 
 
