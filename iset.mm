@@ -158270,6 +158270,17 @@ $)
   bj-nnclavius $p |- ( ( -. ph -> ph ) -> -. -. ph ) $=
     ( wn wi con3 pm2.01d ) ABZACFFADE $.
 
+  ${
+    bj-imnimnn.1 $e |- ( ph -> ps ) $.
+    bj-imnimnn.2 $e |- ( -. ph -> ps ) $.
+    $( If a formula is implied by both a formula and its negation, then it is
+       not refutable.  There is another proof using the inference associated
+       with ~ bj-nnclavius as its last step.  (Contributed by BJ,
+       27-Oct-2024.) $)
+    bj-imnimnn $p |- -. -. ps $=
+      ( wn con3i pm2.65i ) BEAEZABCFHBDFG $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
@@ -158298,6 +158309,20 @@ $)
   bj-stfal $p |- STAB F. $=
     ( wfal wn wstab fal bj-fast ax-mp ) ABACDAEF $.
 
+  $( Double negation of stability of a formula.  Intuitionistic logic refutes
+     unstability (but does not prove stability) of any formula.  This theorem
+     can also be proved in classical refutability calculus (see
+     https://us.metamath.org/mpeuni/bj-peircestab.html) but not in minimal
+     calculus (see https://us.metamath.org/mpeuni/bj-stabpeirce.html).  See
+     ~ nnnotnotr for the version not using the definition of stability.
+     (Contributed by BJ, 9-Oct-2019.)  Prove it in ` ( -> , -. ) `
+     -intuitionistic calculus with definitions (uses of ~ ax-ia1 , ~ ax-ia2 ,
+     ~ ax-ia3 are via ~ sylibr , necessary for definition unpackaging), and in
+     ` ( -> , <-> , -. ) ` -intuitionistic calculus, following a discussion
+     with Jim Kingdon.  (Revised by BJ, 27-Oct-2024.) $)
+  bj-nnst $p |- -. -. STAB ph $=
+    ( wstab bj-trst bj-fast bj-imnimnn ) AABACADE $.
+
   $( If a formula is not refutable, then it is stable if and only if it is
      provable.  By double-negation translation, if ` ph ` is a classical
      tautology, then ` -. -. ph ` is an intuitionistic tautology.  Therefore,
@@ -158308,9 +158333,14 @@ $)
     ( wn wstab wi df-stab biimpi com12 bj-trst impbid1 ) ABBZACZAKJAKJADAEFGAHI
     $.
 
+  $( Stability of a proposition is stable if and only if that proposition is
+     stable. ` STAB ` is idempotent.  (Contributed by BJ, 9-Oct-2019.) $)
+  bj-stst $p |- ( STAB STAB ph <-> STAB ph ) $=
+    ( wstab wn wb bj-nnst bj-nnbist ax-mp ) ABZCCHBHDAEHFG $.
+
   $( A conjunction with a stable consequent is stable.  See ~ stabnot for
-     negation and ~ bj-stan for conjunction.  (Contributed by BJ,
-     24-Nov-2023.) $)
+     negation , ~ bj-stan for conjunction , and ~ bj-stal for universal
+     quantification.  (Contributed by BJ, 24-Nov-2023.) $)
   bj-stim $p |- ( STAB ps -> STAB ( ph -> ps ) ) $=
     ( wn wi wstab bj-nnim imim2 syl5 df-stab 3imtr4i ) BCCZBDZABDZCCZMDBEMENAKD
     LMABFKBAGHBIMIJ $.
@@ -158334,7 +158364,7 @@ $)
       QBGGZCGGZFAPBCJARBSCABIRBHDBKLACISCHECKLMNPKO $.
   $}
 
-  $( The universal quantification of stable formula is stable.  See ~ bj-stim
+  $( The universal quantification of a stable formula is stable.  See ~ bj-stim
      for implication, ~ stabnot for negation, and ~ bj-stan for conjunction.
      (Contributed by BJ, 24-Nov-2023.) $)
   bj-stal $p |- ( A. x STAB ph -> STAB A. x ph ) $=
@@ -158389,14 +158419,6 @@ $)
     ( wdc wn wo wi notnot bj-nnor mpbir df-dc notbii mtbir ) ABZCAACZDZCZOCMMCC
     EMFAMGHLNAIJK $.
 
-  $( Double negation of stability of a formula.  Intuitionistic logic refutes
-     unstability (but does not prove stability) of any formula.  This theorem
-     can also be proved in classical refutability calculus (see
-     set.mm/bj-peircestab) but not in minimal calculus (see
-     set.mm/bj-stabpeirce).  (Contributed by BJ, 9-Oct-2019.) $)
-  bj-nnst $p |- -. -. STAB ph $=
-    ( wstab wn wdc nndc dcstab con3i mto ) ABZCADZCAEJIAFGH $.
-
   $( Decidability of a proposition is decidable if and only if that proposition
      is decidable. ` DECID ` is idempotent.  (Contributed by BJ,
      9-Oct-2019.) $)
@@ -158414,11 +158436,6 @@ $)
      stable.  (Contributed by BJ, 24-Nov-2023.) $)
   bj-dcst $p |- ( DECID STAB ph <-> STAB ph ) $=
     ( wstab wn wdc wb bj-nnst bj-nnbidc ax-mp ) ABZCCIDIEAFIGH $.
-
-  $( Stability of a proposition is stable if and only if that proposition is
-     stable. ` STAB ` is idempotent.  (Contributed by BJ, 9-Oct-2019.) $)
-  bj-stst $p |- ( STAB STAB ph <-> STAB ph ) $=
-    ( wstab wn wb bj-nnst bj-nnbist ax-mp ) ABZCCHBHDAEHFG $.
 
 
 $(
