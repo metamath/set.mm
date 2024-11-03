@@ -158092,6 +158092,22 @@ $)
           UBYIUNYFYHWQWRWHVPWDWIAXDWSUJUDXAUJUDYJYKWJLAWQWRYEYGWKAWQWRYEYGVMGWS
           XAWLWMWNWP $.
       $}
+
+      2sqlem5.3 $e |- ( ph -> ( N x. P ) e. S ) $.
+      2sqlem5.4 $e |- ( ph -> P e. S ) $.
+      $( Lemma for ~ 2sq .  If a number that is a sum of two squares is
+         divisible by a prime that is a sum of two squares, then the quotient
+         is a sum of two squares.  (Contributed by Mario Carneiro,
+         20-Jun-2015.) $)
+      2sqlem5 $p |- ( ph -> N e. S ) $=
+        ( vp vq vx vy cv co cz wrex wcel wa cexp caddc wceq cmul 2sqlem2 reeanv
+        c2 sylib cprime simplrr simprlr simplrl simprll simprrr simprrl 2sqlem4
+        cn ad2antrr expr rexlimdvva syl5bir mp2and ) ACKOZUGUAPLOZUGUAPUBPUCZLQ
+        RZKQRZECUDPZMOZUGUAPNOZUGUAPUBPUCZNQRZMQRZEDSZACDSVGJKLBCDFUEUHAVHDSVMI
+        MNBVHDFUEUHVGVMTVFVLTZMQRKQRAVNVFVLKMQQUFAVOVNKMQQVOVEVKTZNQRLQRAVCQSZV
+        IQSZTZTZVNVEVKLNQQUFVTVPVNLNQQVTVDQSZVJQSZTZVPVNVTWCVPTZTBVIVJVCVDCDEFA
+        EUQSVSWDGURACUISVSWDHURAVQVRWDUJVTWAWBVPUKAVQVRWDULVTWAWBVPUMVTWCVEVKUN
+        VTWCVEVKUOUPUSUTVAUTVAVB $.
     $}
   $}
 
