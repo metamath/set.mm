@@ -17363,6 +17363,7 @@ New usage of "nd4" is discouraged (1 uses).
 New usage of "necon3aiOLD" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "nelbOLD" is discouraged (0 uses).
+New usage of "nelbOLDOLD" is discouraged (0 uses).
 New usage of "neq0OLD" is discouraged (0 uses).
 New usage of "nf5rOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
@@ -20116,7 +20117,8 @@ Proof modification of "n0OLD" is discouraged (6 steps).
 Proof modification of "n0lpligALT" is discouraged (74 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "necon3aiOLD" is discouraged (16 steps).
-Proof modification of "nelbOLD" is discouraged (81 steps).
+Proof modification of "nelbOLD" is discouraged (46 steps).
+Proof modification of "nelbOLDOLD" is discouraged (81 steps).
 Proof modification of "neq0OLD" is discouraged (6 steps).
 Proof modification of "nf5rOLD" is discouraged (22 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
