@@ -157959,6 +157959,27 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  All primes 4n+1 are the sum of two squares
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d a b n p q w x y z $.  $d a m x y z A $.  $d x C $.  $d p q u v x y ph $.
+    $d a b m p x y B $.  $d a b p u v x y z M $.  $d a b m n p q u v x y z S $.
+    $d x D $.  $d a p x y z E $.  $d p q u v x y z N $.  $d a b m n x y Y $.
+    $d a p x y z F $.  $d n p q x y P $.
+    2sq.1 $e |- S = ran ( w e. Z[i] |-> ( ( abs ` w ) ^ 2 ) ) $.
+    $( Lemma for ~ 2sq .  (Contributed by Mario Carneiro, 19-Jun-2015.) $)
+    2sqlem1 $p |- ( A e. S <-> E. x e. Z[i] A = ( ( abs ` x ) ^ 2 ) ) $=
+      ( wcel cgz cv cabs cfv c2 cexp co cmpt crn wceq wrex eleq2i cc wb cbvmptv
+      fveq2 oveq1d elrnmptg gzcn abscld recnd sqcld mprg bitri ) CDFCBGBHZIJZKL
+      MZNZOZFZCAHZIJZKLMZPAGQZDUOCERUSSFUPUTTAGAGUSCUNSBAGUMUSUKUQPULURKLUKUQIU
+      BUCUAUDUQGFZURVAURVAUQUQUEUFUGUHUIUJ $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
