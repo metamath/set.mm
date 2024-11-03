@@ -157993,6 +157993,21 @@ $)
       XQXKWDSHXPSHZXQSHXLWDVCXLVESHWFSHYDVDWFVCVEWFVFVGWDXPVHVIUIXMYAWEYCWGMXMX
       TWDJKXKWDVQHZWFVQHZXTWDNXLWDVJZWFVJZWDWFVKVITXMYBWFJKXKYEYFYBWFNXLYGYHWDW
       FVLVITVMVNGXQRWMXSWHWKXQNWLXRJKWKXQUAVOTVPVRGCWHEFUBVSDWHEVTUQWAWB $.
+
+    $( Fibonacci's identity (actually due to Diophantus).  The product of two
+       sums of two squares is also a sum of two squares.  We can take advantage
+       of Gaussian integers here to trivialize the proof.  (Contributed by
+       Mario Carneiro, 19-Jun-2015.) $)
+    mul2sq $p |- ( ( A e. S /\ B e. S ) -> ( A x. B ) e. S ) $=
+      ( vx vy vz wcel cv cabs cfv c2 cexp co wceq cgz wrex cmul cc 2sqlem1 gzcn
+      wa reeanv gzmulcl absmul syl2an oveq1d abscld recnd sqmul eqtr2d rspceeqv
+      fveq2 syl2anc sylibr oveq12 eleq1d syl5ibrcom rexlimivv sylbir syl2anb )
+      BDIBFJZKLZMNOZPZFQRZCGJZKLZMNOZPZGQRZBCSOZDIZCDIFABDEUAGACDEUAVGVLUCVFVKU
+      CZGQRFQRVNVFVKFGQQUDVOVNFGQQVCQIZVHQIZUCZVNVOVEVJSOZDIZVRVSHJZKLZMNOZPHQR
+      ZVTVRVCVHSOZQIVSWEKLZMNOZPWDVCVHUEVRWGVDVISOZMNOZVSVRWFWHMNVPVCTIVHTIWFWH
+      PVQVCUBZVHUBZVCVHUFUGUHVPVDTIVITIWIVSPVQVPVDVPVCWJUIUJVQVIVQVHWKUIUJVDVIU
+      KUGULHWEQWCWGVSWAWEPWBWFMNWAWEKUNUHUMUOHAVSDEUAUPVOVMVSDBVECVJSUQURUSUTVA
+      VB $.
   $}
 
 
