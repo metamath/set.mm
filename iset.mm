@@ -156673,6 +156673,63 @@ $)
 
 
 $(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Basic number theory
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Quadratic residues and the Legendre symbol
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  If the congruence ` ( ( x ^ 2 ) mod p ) = ( n mod p ) ` has a solution we say
+  that ` n ` is a _quadratic residue_ ` mod p `.  If the congruence has no
+  solution we say that ` n ` is a _quadratic nonresidue_ ` mod p `, see
+  definition in [ApostolNT] p. 178.  The _Legendre symbol_ ` ( n /L p ) ` is
+  defined in a way that its value is ` 1 ` if ` n ` is a quadratic residue
+  ` mod p ` and ` -u 1 ` if ` n ` is a quadratic nonresidue ` mod p ` (and
+  ` 0 ` if ` p ` divides ` n `), see ~ lgsqr .
+
+  Originally, the Legendre symbol ` ( N /L P ) ` was defined for odd primes
+  ` P ` only (and arbitrary integers ` N `) by Adrien-Marie Legendre in 1798,
+  see definition in [ApostolNT] p. 179.  It was generalized to be defined for
+  any positive odd integer by Carl Gustav Jacob Jacobi in 1837 (therefore
+  called "Jacobi symbol" since then), see definition in [ApostolNT] p. 188.
+  Finally, it was generalized to be defined for any integer by Leopold
+  Kronecker in 1885 (therefore called "Kronecker symbol" since then).  The
+  definition ~ df-lgs for the "Legendre symbol" ` /L ` is actually the
+  definition of the "Kronecker symbol".  Since only one definition (and one
+  class symbol) are provided in set.mm, the names "Legendre symbol", "Jacobi
+  symbol" and "Kronecker symbol" are used synonymously for ` /L `, but mostly
+  it is called "Legendre symbol", even if it is used in the context of a
+  "Jacobi symbol" or "Kronecker symbol".
+
+$)
+
+  $c /L $.
+
+  $( Extend class notation with the Legendre symbol function. $)
+  clgs $a class /L $.
+
+  ${
+    $d a m n $.
+    $( Define the Legendre symbol (actually the Kronecker symbol, which extends
+       the Legendre symbol to all integers, and also the Jacobi symbol, which
+       restricts the Kronecker symbol to positive odd integers).  See
+       definition in [ApostolNT] p. 179 resp. definition in [ApostolNT] p. 188.
+       (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    df-lgs $a |- /L = ( a e. ZZ , n e. ZZ |-> if ( n = 0 ,
+      if ( ( a ^ 2 ) = 1 , 1 , 0 ) , ( if ( ( n < 0 /\ a < 0 ) , -u 1 , 1 ) x.
+      ( seq 1 ( x. , ( m e. NN |-> if ( m e. Prime ,
+        ( if ( m = 2 , if ( 2 || a , 0 , if ( ( a mod 8 ) e. { 1 , 7 } ,
+          1 , -u 1 ) ) , ( ( ( ( a ^ ( ( m - 1 ) / 2 ) ) + 1 ) mod m ) - 1 ) )
+            ^ ( m pCnt n ) ) , 1 ) ) ) ` ( abs ` n ) ) ) ) ) $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -158626,6 +158683,11 @@ htmldef "^c" as
     "<IMG SRC='subc.gif' WIDTH=6 HEIGHT=19 ALT='c' TITLE='c'> ";
   althtmldef "^c" as "&uarr;<SUB>&#x1D450;</SUB>";
   latexdef "^c" as "\uparrow_c";
+htmldef "/L" as
+    " <IMG SRC='solidus.gif' WIDTH=6 HEIGHT=19 ALT=' /' TITLE='/'>" +
+    "<IMG SRC='subcl.gif' WIDTH=8 HEIGHT=19 ALT='L' TITLE='L'>";
+  althtmldef "/L" as " /<sub><i>L</i></sub> ";
+  latexdef "/L" as " /_L ";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
