@@ -156728,6 +156728,24 @@ $)
             ^ ( m pCnt n ) ) , 1 ) ) ) ` ( abs ` n ) ) ) ) ) $.
   $}
 
+  $( ` { -u 1 , 0 , 1 } ` is the set of all integers with absolute value at
+     most ` 1 ` .  (Contributed by AV, 13-Jul-2021.) $)
+  zabsle1 $p |- ( Z e. ZZ -> ( Z e. { -u 1 , 0 , 1 }
+                               <-> ( abs ` Z ) <_ 1 ) ) $=
+    ( cz wcel c1 cneg cc0 cabs cfv cle wbr wceq fveq2 eqbrtri eqbrtrdi wa cr wi
+    w3o adantl com12 ctp eltpi ax-1cn absnegi abs1 eqtri 1le1 abs0 0le1 syl zre
+    3jaoi 1red absled cn elz 3mix2 a1d nnle1eq1 biimpac 3mix3d elnnz1 lenegcon2
+    ex wb mpancom neg1rr a1i id letri3d 3mix1 eqcoms syl6bir adantr sylbid impd
+    com13 sylbi imp eltpg mpbird exp32 impcom impbid2 ) ABCZADEZFDUACZAGHZDIJZW
+    GAWFKZAFKZADKZRZWIAWFFDUBWJWIWKWLWJWHWFGHZDIAWFGLWNDDIWNDGHZDDUCUDUEUFUGMNW
+    KWHFGHZDIAFGLWPFDIUHUIMNWLWHWODIADGLWODDIUEUGMNULUJWEWIWFAIJZADIJZOZWGWEADA
+    UKWEUMUNWEAPCZWKAUOCZAEZUOCZRZOWSWGQZAUPXDWTXEXDWTWSWGXDWTWSOZOWGWMXDXFWMWK
+    XFWMQZXAXCWKWMXFWKWJWLUQURXFXAWMWSXAWMQZWTWRXHWQWRXAWMWRXAOWLWJWKXAWRWLAUSU
+    TVAVDSSTXCXBBCZDXBIJZOXGXBVBXJXGXIXJWTWSWMWTXJWSWMQZWTXJAWFIJZXKDPCWTXJXLVE
+    WTUMDAVCVFWSXLWTWMWQXLWTWMQZQWRWQXLXMWTWQXLOZWMWTXNWFAKWMWTWFAWFPCWTVGVHWTV
+    IVJWMAWFWJWKWLVKVLVMTVDVNVQVOTVPSVRULVSXFWGWMVEZXDWTXOWSAWFFDPVTVNSWAWBWCVR
+    VOWD $.
+
 
 $(
 ###############################################################################
