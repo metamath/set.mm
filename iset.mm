@@ -422,7 +422,7 @@ $(
   We then define predicate calculus, which adds additional symbols and rules
   useful for discussing objects (beyond simply true or false).  In particular,
   it introduces the symbols ` = ` ("equals"), ` e. ` ("is a member of"), and `
-  A. ` ("for all").  The first two are called "predicates."  A predicate
+  A. ` ("for all").  The first two are called "predicates".  A predicate
   specifies a true or false relationship between its two arguments.
 
 $)
@@ -615,7 +615,7 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( If ` ph ` is a wff, so is ` -. ph ` or "not ` ph ` ."  Part of the
+  $( If ` ph ` is a wff, so is ` -. ph ` or "not ` ph ` ".  Part of the
      recursive definition of a wff (well-formed formula).  Traditionally, Greek
      letters are used to represent wffs, and we follow this convention.  In
      propositional calculus, we define only wffs built up from other wffs,
@@ -629,7 +629,7 @@ $)
   $( $j primitive 'wn'; $)
 
   $( If ` ph ` and ` ps ` are wff's, so is ` ( ph -> ps ) ` or " ` ph ` implies
-     ` ps ` ."  Part of the recursive definition of a wff.  The left-hand wff
+     ` ps ` ".  Part of the recursive definition of a wff.  The left-hand wff
      is called the antecedent, and the right-hand wff is called the consequent.
      In the case of ` ( ph -> ( ps -> ch ) ) ` , the middle ` ps ` may be
      informally called either an antecedent or part of the consequent depending
@@ -655,7 +655,7 @@ $)
     $( Rule of Modus Ponens.  The postulated inference rule of propositional
        calculus.  See, e.g., Rule 1 of [Hamilton] p. 73.  The rule says, "if
        ` ph ` is true, and ` ph ` implies ` ps ` , then ` ps ` must also be
-       true."  This rule is sometimes called "detachment", since it detaches
+       true".  This rule is sometimes called "detachment", since it detaches
        the minor premise from the major premise.  "Modus ponens" is short for
        "modus ponendo ponens", a Latin phrase that means "the mode that by
        affirming affirms" - remark in [Sanford] p. 39.  This rule is similar to
@@ -664,7 +664,7 @@ $)
        Note:  In some web page displays such as the Statement List, the
        symbols " ` & ` " and " ` => ` " informally indicate the relationship
        between the hypotheses and the assertion (conclusion), abbreviating the
-       English words "and" and "implies."  They are not part of the formal
+       English words "and" and "implies".  They are not part of the formal
        language.  (Contributed by NM, 30-Sep-1992.) $)
     ax-mp $a |- ps $.
   $}
@@ -722,7 +722,7 @@ $)
     $( Premise for ~ a1i . $)
     a1i.1 $e |- ph $.
     $( Inference derived from Axiom ~ ax-1 .  See ~ a1d for an explanation of
-       our informal use of the terms "inference" and "deduction."  See also the
+       our informal use of the terms "inference" and "deduction".  See also the
        comment in ~ syld .  (Contributed by NM, 5-Aug-1993.) $)
     a1i $p |- ( ps -> ph ) $=
       ( wi ax-1 ax-mp ) ABADCABEF $.
@@ -771,7 +771,7 @@ $)
        ~ imim1 , which Russell and Whitehead call "the principle of the
        syllogism...because...the syllogism in Barbara is derived from them"
        (quote after Theorem *2.06 of [WhiteheadRussell] p. 101).  Some authors
-       call this law a "hypothetical syllogism."  (Contributed by NM,
+       call this law a "hypothetical syllogism".  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by O'Cat, 20-Oct-2011.)  (Proof shortened
        by Wolf Lammen, 26-Jul-2012.) $)
     syl $p |- ( ph -> ch ) $=
@@ -6897,7 +6897,7 @@ $)
      This theorem swaps or "transposes" the order of the consequents when
      negation is removed.  An informal example is that the statement "if there
      are no clouds in the sky, it is not raining" implies the statement "if it
-     is raining, there are clouds in the sky."  This theorem (without the
+     is raining, there are clouds in the sky".  This theorem (without the
      decidability condition, of course) is called _Transp_ or "the principle of
      transposition" in _Principia Mathematica_ (Theorem *2.17 of
      [WhiteheadRussell] p. 103) and is Axiom A3 of [Margaris] p. 49.  We will
@@ -10881,8 +10881,8 @@ $)
        while the name modus tollendo ponens often refers to a variant of the
        rule that uses inclusive-or instead.  The rule says, "if ` ph ` is not
        true, and ` ph ` or ` ps ` (or both) are true, then ` ps ` must be
-       true."  An alternate phrasing is, "Once you eliminate the impossible,
-       whatever remains, no matter how improbable, must be the truth." --
+       true".  An alternate phrasing is, "Once you eliminate the impossible,
+       whatever remains, no matter how improbable, must be the truth". --
        Sherlock Holmes (Sir Arthur Conan Doyle, 1890:  The Sign of the Four,
        ch. 6).  (Contributed by David A. Wheeler, 3-Jul-2016.)  (Proof
        shortened by Wolf Lammen, 11-Nov-2017.) $)
@@ -10900,7 +10900,7 @@ $)
     $( Modus tollendo ponens (original exclusive-or version), aka disjunctive
        syllogism, similar to ~ mtpor , one of the five "indemonstrables" in
        Stoic logic.  The rule says, "if ` ph ` is not true, and either ` ph `
-       or ` ps ` (exclusively) are true, then ` ps ` must be true."  Today the
+       or ` ps ` (exclusively) are true, then ` ps ` must be true".  Today the
        name "modus tollendo ponens" often refers to a variant, the inclusive-or
        version as defined in ~ mtpor .  See rule 3 on [Lopez-Astorga] p. 12
        (note that the "or" is the same as ~ mptxor , that is, it is
@@ -11304,7 +11304,7 @@ $)
        "hb...", allow us to construct proofs of formulas of the form
        ` |- ( ph -> A. x ph ) ` from smaller formulas of this form.  These are
        useful for constructing hypotheses that state " ` x ` is (effectively)
-       not free in ` ph ` ."  (Contributed by NM, 5-Aug-1993.) $)
+       not free in ` ph ` ".  (Contributed by NM, 5-Aug-1993.) $)
     hbth $p |- ( ph -> A. x ph ) $=
       ( wal ax-gen a1i ) ABDAABCEF $.
 
@@ -11525,7 +11525,7 @@ $)
   ax-ie1 $a |- ( E. x ph -> A. x E. x ph ) $.
 
   $( Define existential quantification. ` E. x ph ` means "there exists at
-     least one set ` x ` such that ` ph ` is true."  One of the axioms of
+     least one set ` x ` such that ` ph ` is true".  One of the axioms of
      predicate logic.  (Contributed by Mario Carneiro, 31-Jan-2015.) $)
   ax-ie2 $a |- ( A. x ( ps -> A. x ps ) ->
                ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) ) $.
@@ -12093,7 +12093,7 @@ $)
   ${
     19.21h.1 $e |- ( ph -> A. x ph ) $.
     $( Theorem 19.21 of [Margaris] p. 90.  The hypothesis can be thought of
-       as " ` x ` is not free in ` ph ` ."  New proofs should use ~ 19.21
+       as " ` x ` is not free in ` ph ` ".  New proofs should use ~ 19.21
        instead.  (Contributed by NM, 5-Aug-1993.)
        (New usage is discouraged.) $)
     19.21h $p |- ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) $=
@@ -12312,7 +12312,7 @@ $)
   ${
     19.21.1 $e |- F/ x ph $.
     $( Theorem 19.21 of [Margaris] p. 90.  The hypothesis can be thought of
-       as " ` x ` is not free in ` ph ` ."  (Contributed by NM, 5-Aug-1993.)
+       as " ` x ` is not free in ` ph ` ".  (Contributed by NM, 5-Aug-1993.)
        (Revised by Mario Carneiro, 24-Sep-2016.) $)
     19.21 $p |- ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) $=
       ( wnf wi wal wb 19.21t ax-mp ) ACEABFCGABCGFHDABCIJ $.
@@ -12322,7 +12322,7 @@ $)
     stdpc5.1 $e |- F/ x ph $.
     $( An axiom scheme of standard predicate calculus that emulates Axiom 5 of
        [Mendelson] p. 69.  The hypothesis ` F/ x ph ` can be thought of as
-       emulating " ` x ` is not free in ` ph ` ."  With this definition, the
+       emulating " ` x ` is not free in ` ph ` ".  With this definition, the
        meaning of "not free" is less restrictive than the usual textbook
        definition; for example ` x ` would not (for us) be free in ` x = x ` by
        ~ nfequid .  This theorem scheme can be proved as a metatheorem of
@@ -13877,7 +13877,7 @@ $)
   $( Define proper substitution.  Remark 9.1 in [Megill] p. 447 (p. 15 of the
      preprint).  For our notation, we use ` [ y / x ] ph ` to mean "the wff
      that results when ` y ` is properly substituted for ` x ` in the wff
-     ` ph ` ."  We can also use ` [ y / x ] ph ` in place of the "free for"
+     ` ph ` ".  We can also use ` [ y / x ] ph ` in place of the "free for"
      side condition used in traditional predicate calculus; see, for example,
      ~ stdpc4 .
 
@@ -13885,7 +13885,7 @@ $)
      Mathematical Logic_ (1977), p. 316 and is frequently used in textbooks of
      lambda calculus and combinatory logic.  This notation improves the common
      but ambiguous notation, " ` ph ( y ) ` is the wff that results when ` y `
-     is properly substituted for ` x ` in ` ph ( x ) ` ."  For example, if the
+     is properly substituted for ` x ` in ` ph ( x ) ` ".  For example, if the
      original ` ph ( x ) ` is ` x = y ` , then ` ph ( y ) ` is ` y = y ` , from
      which we obtain that ` ph ( x ) ` is ` x = x ` .  So what exactly does
      ` ph ( x ) ` mean?  Curry's notation solves this problem.
@@ -13959,7 +13959,7 @@ $)
      substitutivity of equality.  (The other one is ~ stdpc6 .)  Translated to
      traditional notation, it can be read:  " ` x = y -> ( ph ( x ` ,
      ` x ) -> ph ( x ` , ` y ) ) ` , provided that ` y ` is free for ` x ` in
-     ` ph ( x ` , ` y ) ` ."  Axiom 7 of [Mendelson] p. 95.  (Contributed by
+     ` ph ( x ` , ` y ) ` ".  Axiom 7 of [Mendelson] p. 95.  (Contributed by
      NM, 15-Feb-2005.) $)
   stdpc7 $p |- ( x = y -> ( [ x / y ] ph -> ph ) ) $=
     ( wsb wi sbequ2 equcoms ) ACBDAECBACBFG $.
@@ -13986,7 +13986,7 @@ $)
      if a statement ` ph ` holds for all ` x ` , then it also holds for the
      specific case of ` y ` (properly) substituted for ` x ` .  Translated to
      traditional notation, it can be read:  " ` A. x ph ( x ) -> ph ( y ) ` ,
-     provided that ` y ` is free for ` x ` in ` ph ( x ) ` ."  Axiom 4 of
+     provided that ` y ` is free for ` x ` in ` ph ( x ) ` ".  Axiom 4 of
      [Mendelson] p. 69.  (Contributed by NM, 5-Aug-1993.) $)
   stdpc4 $p |- ( A. x ph -> [ y / x ] ph ) $=
     ( wal weq wi wsb ax-1 alimi sb2 syl ) ABDBCEZAFZBDABCGAMBALHIABCJK $.
@@ -16485,8 +16485,8 @@ $)
 
   ${
     $d x y $.  $d y ph $.
-    $( Define existential uniqueness, i.e.  "there exists exactly one ` x `
-       such that ` ph ` ."  Definition 10.1 of [BellMachover] p. 97; also
+    $( Define existential uniqueness, i.e., "there exists exactly one ` x `
+       such that ` ph ` ".  Definition 10.1 of [BellMachover] p. 97; also
        Definition *14.02 of [WhiteheadRussell] p. 175.  Other possible
        definitions are given by ~ eu1 , ~ eu2 , ~ eu3 , and ~ eu5 (which in
        some cases we show with a hypothesis ` ph -> A. y ph ` in place of a
@@ -16496,7 +16496,7 @@ $)
     df-eu $a |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) $.
   $}
 
-  $( Define "there exists at most one ` x ` such that ` ph ` ."  Here we define
+  $( Define "there exists at most one ` x ` such that ` ph ` ".  Here we define
      it in terms of existential uniqueness.  Notation of [BellMachover] p. 460,
      whose definition we show as ~ mo3 .  For another possible definition see
      ~ mo4 .  (Contributed by NM, 5-Aug-1993.) $)
@@ -16572,7 +16572,7 @@ $)
       KL $.
   $}
 
-  $( Bound-variable hypothesis builder for "at most one."  (Contributed by NM,
+  $( Bound-variable hypothesis builder for "at most one".  (Contributed by NM,
      8-Mar-1995.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
   nfmo1 $p |- F/ x E* x ph $=
     ( wmo wex weu wi df-mo nfe1 nfeu1 nfim nfxfr ) ABCABDZABEZFBABGLMBABHABIJK
@@ -16590,7 +16590,7 @@ $)
       URCABFCDPURFEGZCBFEQUSCMRSRUPFMUIFCBUAUBUPUMCUHULABCBCEQUCUDUEUFABETUKCET
       UG $.
 
-    $( Variable substitution for "at most one."  (Contributed by Alexander van
+    $( Variable substitution for "at most one".  (Contributed by Alexander van
        der Vekens, 17-Jun-2017.) $)
     sb8mo $p |- ( E* x ph <-> E* y [ y / x ] ph ) $=
       ( wex weu wi wsb wmo sb8e sb8eu imbi12i df-mo 3bitr4i ) ABEZABFZGABCHZCEZ
@@ -16621,7 +16621,7 @@ $)
       ( vz weu wsb nfv sb8eu nfsbd nfeudv nfxfrd ) BDHBDGIZGHACBDGBGJKAOCGAGJAB
       DGCEFLMN $.
 
-    $( Bound-variable hypothesis builder for "at most one."  (Contributed by
+    $( Bound-variable hypothesis builder for "at most one".  (Contributed by
        Mario Carneiro, 14-Nov-2016.) $)
     nfmod $p |- ( ph -> F/ x E* y ps ) $=
       ( wmo wex weu wi df-mo nfexd nfeud nfimd nfxfrd ) BDGBDHZBDIZJACBDKAPQCAB
@@ -16650,7 +16650,7 @@ $)
       ( vz weu wsb nfv sb8eu nfsb nfeuv nfxfr ) ACFACEGZEFBACEAEHIMBEACEBDJKL
       $.
 
-    $( Bound-variable hypothesis builder for "at most one."  (Contributed by
+    $( Bound-variable hypothesis builder for "at most one".  (Contributed by
        NM, 9-Mar-1995.) $)
     nfmo $p |- F/ x E* y ph $=
       ( wmo wnf wtru nftru a1i nfmod mptru ) ACEBFGABCCHABFGDIJK $.
@@ -16757,14 +16757,14 @@ $)
   ${
     $d x y $.
     eumo0.1 $e |- ( ph -> A. y ph ) $.
-    $( Existential uniqueness implies "at most one."  (Contributed by NM,
+    $( Existential uniqueness implies "at most one".  (Contributed by NM,
        8-Jul-1994.) $)
     eumo0 $p |- ( E! x ph -> E. y A. x ( ph -> x = y ) ) $=
       ( weu weq wb wal wex wi euf biimp alimi eximi sylbi ) ABEABCFZGZBHZCIAPJZ
       BHZCIABCDKRTCQSBAPLMNO $.
   $}
 
-  $( Existential uniqueness implies "at most one."  (Contributed by NM,
+  $( Existential uniqueness implies "at most one".  (Contributed by NM,
      23-Mar-1995.)  (Proof rewritten by Jim Kingdon, 27-May-2018.) $)
   eumo $p |- ( E! x ph -> E* x ph ) $=
     ( weu wex wi wmo ax-1 df-mo sylibr ) ABCZABDZJEABFJKGABHI $.
@@ -16815,7 +16815,7 @@ $)
       ( wmo wb wtru a1i mobidv mptru ) ACEBCEFGABCABFGDHIJ $.
   $}
 
-  $( Bound-variable hypothesis builder for "at most one."  (Contributed by NM,
+  $( Bound-variable hypothesis builder for "at most one".  (Contributed by NM,
      8-Mar-1995.) $)
   hbmo1 $p |- ( E* x ph -> A. x E* x ph ) $=
     ( wmo wex weu wi df-mo hbe1 hbeu1 hbim hbxfrbi ) ABCABDZABEZFBABGLMBABHABIJ
@@ -16823,7 +16823,7 @@ $)
 
   ${
     hbmo.1 $e |- ( ph -> A. x ph ) $.
-    $( Bound-variable hypothesis builder for "at most one."  (Contributed by
+    $( Bound-variable hypothesis builder for "at most one".  (Contributed by
        NM, 9-Mar-1995.) $)
     hbmo $p |- ( E* y ph -> A. x E* y ph ) $=
       ( wmo wex weu wi df-mo hbex hbeu hbim hbxfrbi ) ACEACFZACGZHBACINOBABCDJA
@@ -16921,7 +16921,7 @@ $)
       ( nfri eu3h ) ABCACDEF $.
   $}
 
-  $( Uniqueness in terms of "at most one."  (Contributed by NM, 23-Mar-1995.)
+  $( Uniqueness in terms of "at most one".  (Contributed by NM, 23-Mar-1995.)
      (Proof rewritten by Jim Kingdon, 27-May-2018.) $)
   eu5 $p |- ( E! x ph <-> ( E. x ph /\ E* x ph ) ) $=
     ( weu wex wmo wa euex eumo jca wi df-mo biimpi imp ancoms impbii ) ABCZABDZ
@@ -16932,7 +16932,7 @@ $)
   exmoeu2 $p |- ( E. x ph -> ( E* x ph <-> E! x ph ) ) $=
     ( weu wex wmo eu5 baibr ) ABCABDABEABFG $.
 
-  $( Absorption of existence condition by "at most one."  (Contributed by NM,
+  $( Absorption of existence condition by "at most one".  (Contributed by NM,
      4-Nov-2002.) $)
   moabs $p |- ( E* x ph <-> ( E. x ph -> E* x ph ) ) $=
     ( wex weu wi wmo pm5.4 df-mo imbi2i 3bitr4ri ) ABCZKABDZEZEMKABFZENKLGNMKAB
@@ -16953,7 +16953,7 @@ $)
   ${
     $d x y $.
     mo2r.1 $e |- F/ y ph $.
-    $( A condition which implies "at most one."  (Contributed by Jim Kingdon,
+    $( A condition which implies "at most one".  (Contributed by Jim Kingdon,
        2-Jul-2018.) $)
     mo2r $p |- ( E. y A. x ( ph -> x = y ) -> E* x ph ) $=
       ( weq wi wal wex weu wmo nfri eu3h simplbi2com df-mo sylibr ) ABCEFBGCHZA
@@ -16963,7 +16963,7 @@ $)
   ${
     $d x y $.
     mo3h.1 $e |- ( ph -> A. y ph ) $.
-    $( Alternate definition of "at most one."  Definition of [BellMachover]
+    $( Alternate definition of "at most one".  Definition of [BellMachover]
        p. 460, except that definition has the side condition that ` y ` not
        occur in ` ph ` in place of our hypothesis.  (Contributed by NM,
        8-Mar-1995.)  (New usage is discouraged.) $)
@@ -16979,7 +16979,7 @@ $)
   ${
     $d x y $.
     mo3.1 $e |- F/ y ph $.
-    $( Alternate definition of "at most one."  Definition of [BellMachover]
+    $( Alternate definition of "at most one".  Definition of [BellMachover]
        p. 460, except that definition has the side condition that ` y ` not
        occur in ` ph ` in place of our hypothesis.  (Contributed by NM,
        8-Mar-1995.) $)
@@ -17094,7 +17094,7 @@ $)
 
   ${
     $d x y $.  $d x y ph $.  $d y ps $.
-    $( Move antecedent outside of "at most one."  (Contributed by NM,
+    $( Move antecedent outside of "at most one".  (Contributed by NM,
        28-Jul-1995.) $)
     moimv $p |- ( E* x ( ph -> ps ) -> ( ph -> E* x ps ) ) $=
       ( vy wi wmo wsb weq wal ax-1 a1i sbimi nfv sbf sbim 3imtr3i anim12d ax-17
@@ -17253,7 +17253,7 @@ $)
       ULABUOULABKABCRSUAUBURUIUMCULBDUCUDUEUFTUGT $.
   $}
 
-  $( Double quantification with "at most one."  (Contributed by NM,
+  $( Double quantification with "at most one".  (Contributed by NM,
      3-Dec-2001.) $)
   2moex $p |- ( E* x E. y ph -> A. y E* x ph ) $=
     ( wex wmo hbe1 hbmo 19.8a moimi alrimih ) ACDZBEABECKCBACFGAKBACHIJ $.
@@ -17339,7 +17339,7 @@ $)
 
   ${
     $d x y $.
-    $( Two ways to express "only one thing exists."  The left-hand side
+    $( Two ways to express "only one thing exists".  The left-hand side
        requires only one variable to express this.  Both sides are false in set
        theory.  (Contributed by NM, 5-Apr-2004.) $)
     exists1 $p |- ( E! x x = x <-> A. x x = y ) $=
@@ -18059,7 +18059,7 @@ $(
 ###############################################################################
 
   Set theory uses the formalism of propositional and predicate calculus to
-  assert properties of arbitrary mathematical objects called "sets."  A set can
+  assert properties of arbitrary mathematical objects called "sets".  A set can
   be an element of another set, and this relationship is indicated by the
   ` e. `
   symbol.  Starting with the simplest mathematical object, called the empty
@@ -18478,7 +18478,7 @@ $)
      "class builder" in the literature. ` x ` and ` y ` need not be distinct.
      Definition 2.1 of [Quine] p. 16.  Typically, ` ph ` will have ` y ` as a
      free variable, and " ` { y | ph } ` " is read "the class of all sets ` y `
-     such that ` ph ( y ) ` is true."  We do not define ` { y | ph } ` in
+     such that ` ph ( y ) ` is true".  We do not define ` { y | ph } ` in
      isolation but only as part of an expression that extends or "overloads"
      the ` e. ` relationship.
 
@@ -21024,7 +21024,7 @@ $)
   $( Extend wff notation to include restricted existential uniqueness. $)
   wreu $a wff E! x e. A ph $.
 
-  $( Extend wff notation to include restricted "at most one." $)
+  $( Extend wff notation to include restricted "at most one". $)
   wrmo $a wff E* x e. A ph $.
 
   $( Extend class notation to include the restricted class abstraction (class
@@ -21364,7 +21364,7 @@ $)
 
   ${
     $d x A $.  $d x B $.
-    $( Two ways to say " ` A ` belongs to ` B ` ."  (Contributed by NM,
+    $( Two ways to say " ` A ` belongs to ` B ` ".  (Contributed by NM,
        22-Nov-1994.) $)
     risset $p |- ( A e. B <-> E. x e. B x = A ) $=
       ( cv wcel wceq wa wex wrex exancom df-rex df-clel 3bitr4ri ) ADZCEZNBFZGA
@@ -22962,7 +22962,7 @@ $)
   mormo $p |- ( E* x ph -> E* x e. A ph ) $=
     ( wmo cv wcel wa wrmo moan df-rmo sylibr ) ABDBECFZAGBDABCHALBIABCJK $.
 
-  $( Restricted uniqueness in terms of "at most one."  (Contributed by NM,
+  $( Restricted uniqueness in terms of "at most one".  (Contributed by NM,
      23-May-1999.)  (Revised by NM, 16-Jun-2017.) $)
   reu5 $p |- ( E! x e. A ph <-> ( E. x e. A ph /\ E* x e. A ph ) ) $=
     ( cv wcel wa weu wex wmo wreu wrex eu5 df-reu df-rex df-rmo anbi12i 3bitr4i
@@ -25402,7 +25402,7 @@ $)
 
   ${
     $d x y A $.  $d y ph $.
-    $( Theorem for inferring "at most one."  (Contributed by NM,
+    $( Theorem for inferring "at most one".  (Contributed by NM,
        17-Oct-1996.) $)
     mo2icl $p |- ( A. x ( ph -> x = A ) -> E* x ph ) $=
       ( vy cv wceq wal wex wmo cvv wcel nfa1 vex eleq1 mpbii imim2i eximd 19.9v
@@ -25415,7 +25415,7 @@ $)
   ${
     $d x y A $.  $d y ph $.  $d x y ps $.
     moi2.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
-    $( Consequence of "at most one."  (Contributed by NM, 2-Jan-2015.) $)
+    $( Consequence of "at most one".  (Contributed by NM, 2-Jan-2015.) $)
     mob2 $p |- ( ( A e. B /\ E* x ph /\ ph ) -> ( x = A <-> ps ) ) $=
       ( vy wcel wmo w3a cv wceq simp3 syl5ibcom wi wa wsb wal nfs1v sbequ12 nfv
       mo4f sylbi sbhypf anbi2d eqeq2 imbi12d spcgv syl5 imp expd 3impia impbid
@@ -25423,7 +25423,7 @@ $)
       QZPZURGKZLZOZGRZUOVAUPVGCRVGAVBCGACGSACGTUBVGCUNUCVFVAGDEVDDLZVCUTVEUSVHV
       BBAABCGDBCUAFUDUEVDDURUFUGUHUIUJUKULUM $.
 
-    $( Consequence of "at most one."  (Contributed by NM, 29-Jun-2008.) $)
+    $( Consequence of "at most one".  (Contributed by NM, 29-Jun-2008.) $)
     moi2 $p |- ( ( ( A e. B /\ E* x ph ) /\ ( ph /\ ps ) ) -> x = A ) $=
       ( wcel wmo wa cv wceq wb mob2 3expa biimprd impr ) DEGZACHZIZABCJDKZSAITB
       QRATBLABCDEFMNOP $.
@@ -25433,7 +25433,7 @@ $)
     $d x A $.  $d x B $.  $d x ch $.  $d x ps $.
     moi.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     moi.2 $e |- ( x = B -> ( ph <-> ch ) ) $.
-    $( Equality implied by "at most one."  (Contributed by NM, 18-Feb-2006.) $)
+    $( Equality implied by "at most one".  (Contributed by NM, 18-Feb-2006.) $)
     mob $p |- ( ( ( A e. C /\ B e. D ) /\ E* x ph /\ ps ) ->
                 ( A = B <-> ch ) ) $=
       ( wcel wa wmo wceq wb wi cvv elex w3a nfv cv nfcv nfmo1 nf3an nfim bibi1d
@@ -25442,7 +25442,7 @@ $)
       VBVDUTASZDUAZFNZCOZPVFVBPDEGDEUBVFVBDVDUTBDVDDTADUCBDTUDVBDTUEVHENZVGVFVJ
       VBVKABVDUTIUGVKVIVACVHEFUHUFUIACDFQJUJUKULUMUNUOUPUQ $.
 
-    $( Equality implied by "at most one."  (Contributed by NM, 18-Feb-2006.) $)
+    $( Equality implied by "at most one".  (Contributed by NM, 18-Feb-2006.) $)
     moi $p |- ( ( ( A e. C /\ B e. D ) /\ E* x ph /\ ( ps /\ ch ) ) ->
               A = B ) $=
       ( wcel wa wmo wceq wi w3a mob biimprd 3expia impd 3impia ) EGKFHKLZADMZBC
@@ -25986,7 +25986,7 @@ $)
 
   $( Extend wff notation to include the proper substitution of a class for a
      set.  Read this notation as "the proper substitution of class ` A ` for
-     setvar variable ` x ` in wff ` ph ` ." $)
+     setvar variable ` x ` in wff ` ph ` ". $)
   wsbc $a wff [. A / x ]. ph $.
 
   $( Define the proper substitution of a class for a set.
@@ -27657,8 +27657,8 @@ $)
   cin $a class ( A i^i B ) $.
 
   $( Extend wff notation to include the subclass relation.  This is
-     read " ` A ` is a subclass of ` B ` " or " ` B ` includes ` A ` ."  When
-     ` A ` exists as a set, it is also read " ` A ` is a subset of ` B ` ." $)
+     read " ` A ` is a subclass of ` B ` " or " ` B ` includes ` A ` ".  When
+     ` A ` exists as a set, it is also read " ` A ` is a subset of ` B ` ". $)
   wss $a wff A C_ B $.
 
   ${
@@ -30924,7 +30924,7 @@ $)
   ${
     $d x ph $.  $d x A $.  $d x B $.
     $( Define the conditional operator.  Read ` if ( ph , A , B ) ` as "if
-       ` ph ` then ` A ` else ` B ` ."  See ~ iftrue and ~ iffalse for its
+       ` ph ` then ` A ` else ` B ` ".  See ~ iftrue and ~ iffalse for its
        values.  In mathematical literature, this operator is rarely defined
        formally but is implicit in informal definitions such as "let f(x)=0 if
        x=0 and 1/x otherwise."
@@ -32029,7 +32029,7 @@ $)
 
   ${
     $d x A $.
-    $( Two ways to express " ` A ` is a singleton."  (Contributed by NM,
+    $( Two ways to express " ` A ` is a singleton".  (Contributed by NM,
        30-Oct-2010.) $)
     eusn $p |- ( E! x x e. A <-> E. x A = { x } ) $=
       ( cv wcel weu cab csn wceq wex euabsn abid2 eqeq1i exbii bitri ) ACZBDZAE
@@ -35472,7 +35472,7 @@ $)
     $d x y $.  $d y A $.  $d y B $.
     $( Define maps-to notation for defining a function via a rule.  Read as
        "the function defined by the map from ` x ` (in ` A ` ) to
-       ` B ( x ) ` ."  The class expression ` B ` is the value of the function
+       ` B ( x ) ` ".  The class expression ` B ` is the value of the function
        at ` x ` and normally contains the variable ` x ` .  Similar to the
        definition of mapping in [ChoquetDD] p. 2.  (Contributed by NM,
        17-Feb-2008.) $)
@@ -37748,7 +37748,7 @@ $)
     opelopabaf.3 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
     $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  This version of
        ~ opelopab uses bound-variable hypotheses in place of distinct variable
-       conditions."  (Contributed by Mario Carneiro, 19-Dec-2013.)  (Proof
+       conditions.  (Contributed by Mario Carneiro, 19-Dec-2013.)  (Proof
        shortened by Mario Carneiro, 18-Nov-2016.) $)
     opelopabaf $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ps ) $=
       ( cop copab wcel wsbc opelopabsb cvv wb nfv sbc2iegf mp2an bitri ) EFLACD
@@ -37765,7 +37765,7 @@ $)
     opelopabf.4 $e |- ( y = B -> ( ps <-> ch ) ) $.
     $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  This version of
        ~ opelopab uses bound-variable hypotheses in place of distinct variable
-       conditions."  (Contributed by NM, 19-Dec-2008.) $)
+       conditions.  (Contributed by NM, 19-Dec-2008.) $)
     opelopabf $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) $=
       ( cop wcel wsbc cvv wb sbciegf ax-mp copab opelopabsb nfcv cv wceq 3bitri
       nfsbc sbcbidv ) FGNADEUAOAEGPZDFPZBEGPZCADEFGUBFQOUJUKRJUIUKDFQBDEGDGUCHU
@@ -45095,7 +45095,7 @@ $)
   ${
     $d x y A $.  $d x y B $.  $d x y R $.
     $( An upper bound for intersection with a domain.  Theorem 40 of [Suppes]
-       p. 66, who calls it "somewhat surprising."  (Contributed by NM,
+       p. 66, who calls it "somewhat surprising".  (Contributed by NM,
        11-Aug-2004.) $)
     dminss $p |- ( dom R i^i A ) C_ ( `' R " ( R " A ) ) $=
       ( vx vy cdm cin ccnv cima cv wbr wcel wa 19.8a ancoms elima2 sylibr simpl
@@ -46718,7 +46718,7 @@ $)
   ${
     $d x y A $.  $d x y B $.  $d x y R $.  $d x y S $.  $d x y H $.
     $( Define the isomorphism predicate.  We read this as " ` H ` is an ` R ` ,
-       ` S ` isomorphism of ` A ` onto ` B ` ."  Normally, ` R ` and ` S ` are
+       ` S ` isomorphism of ` A ` onto ` B ` ".  Normally, ` R ` and ` S ` are
        ordering relations on ` A ` and ` B ` respectively.  Definition 6.28 of
        [TakeutiZaring] p. 32, whose notation is the same as ours except that
        ` R ` and ` S ` are subscripts.  (Contributed by NM, 4-Mar-1997.) $)
@@ -46895,7 +46895,7 @@ $)
     $( Alternate definition of a function.  One possibility for the definition
        of a function in [Enderton] p. 42.  (Enderton's definition is ambiguous
        because "there is only one" could mean either "there is at most one" or
-       "there is exactly one."  However, ~ dffun8 shows that it doesn't matter
+       "there is exactly one".  However, ~ dffun8 shows that it does not matter
        which meaning we pick.)  (Contributed by NM, 4-Nov-2002.) $)
     dffun7 $p |- ( Fun A <-> ( Rel A /\ A. x e. dom A E* y x A y ) ) $=
       ( wfun wrel cv wbr wmo wal wa cdm wral dffun6 wcel wi wex vex eldm bitr4i
@@ -53473,7 +53473,7 @@ $)
     $d x z $.  $d y z $.  $d z A $.  $d z B $.  $d z C $.
     $( Define maps-to notation for defining an operation via a rule.  Read as
        "the operation defined by the map from ` x , y ` (in ` A X. B ` ) to
-       ` B ( x , y ) ` ."  An extension of ~ df-mpt for two arguments.
+       ` B ( x , y ) ` ".  An extension of ~ df-mpt for two arguments.
        (Contributed by NM, 17-Feb-2008.) $)
     df-mpo $a |- ( x e. A , y e. B |-> C ) =
              { <. <. x , y >. , z >. | ( ( x e. A /\ y e. B ) /\ z = C ) } $.
@@ -63785,7 +63785,7 @@ $)
 
   ${
     $d g A $.  $d g B $.  $d g C $.
-    $( The predicate "is a partial function."  (Contributed by Mario Carneiro,
+    $( The predicate "is a partial function".  (Contributed by Mario Carneiro,
        14-Nov-2013.) $)
     elpmg $p |- ( ( A e. V /\ B e. W ) ->
                   ( C e. ( A ^pm B ) <-> ( Fun C /\ C C_ ( B X. A ) ) ) ) $=
@@ -63797,7 +63797,7 @@ $)
       PUM $.
   $}
 
-  $( The predicate "is a partial function."  (Contributed by NM,
+  $( The predicate "is a partial function".  (Contributed by NM,
      31-Dec-2013.) $)
   elpm2g $p |- ( ( A e. V /\ B e. W ) ->
                 ( F e. ( A ^pm B ) <-> ( F : dom F --> A /\ dom F C_ B ) ) ) $=
@@ -63912,13 +63912,13 @@ $)
       BAFKZOZURULPZURBLZQZURUKRURUQRZUSVAUTQVBBAURSVAUTUATABURDEUBVCURUMRZURUPR
       ZQVBURUMUPUCVDUTVEVAFULUDUOVACURFUEBUNURUFUGUHTUIUJ $.
 
-    $( The predicate "is a partial function."  (Contributed by NM,
+    $( The predicate "is a partial function".  (Contributed by NM,
        15-Nov-2007.)  (Revised by Mario Carneiro, 14-Nov-2013.) $)
     elpm $p |- ( F e. ( A ^pm B ) <-> ( Fun F /\ F C_ ( B X. A ) ) ) $=
       ( cvv wcel cpm co wfun cxp wss wa wb elpmg mp2an ) AFGBFGCABHIGCJCBAKLMND
       EABCFFOP $.
 
-    $( The predicate "is a partial function."  (Contributed by NM,
+    $( The predicate "is a partial function".  (Contributed by NM,
        15-Nov-2007.)  (Revised by Mario Carneiro, 31-Dec-2013.) $)
     elpm2 $p |- ( F e. ( A ^pm B ) <-> ( F : dom F --> A /\ dom F C_ B ) ) $=
       ( cvv wcel cpm co cdm wf wss wa wb elpm2g mp2an ) AFGBFGCABHIGCJZACKQBLMN
@@ -64727,7 +64727,7 @@ $)
 
   ${
     $d x y f A $.
-    $( Express " ` A ` is finite."  Definition 10.29 of [TakeutiZaring] p. 91
+    $( Express " ` A ` is finite".  Definition 10.29 of [TakeutiZaring] p. 91
        (whose " ` Fin ` " is a predicate instead of a class).  (Contributed by
        NM, 22-Aug-2008.) $)
     isfi $p |- ( A e. Fin <-> E. x e. _om A ~~ x ) $=
@@ -95052,7 +95052,7 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
 
   ${
     $d x A $.
-    $( Two ways to express " ` A ` is a prime number (or 1)."  (Contributed by
+    $( Two ways to express " ` A ` is a prime number (or 1)".  (Contributed by
        NM, 4-May-2005.) $)
     prime $p |- ( A e. NN -> (
                  A. x e. NN ( ( A / x ) e. NN -> ( x = 1 \/ x = A ) ) <->
@@ -96713,7 +96713,7 @@ $)
 
   $( Extend class notation with the upper integer function.
      Read " ` ZZ>= `` M ` " as "the set of integers greater than or equal to
-     ` M ` ." $)
+     ` M ` ". $)
   cuz $a class ZZ>= $.
 
   ${
@@ -96721,7 +96721,7 @@ $)
     $( Define a function whose value at ` j ` is the semi-infinite set of
        contiguous integers starting at ` j ` , which we will also call the
        upper integers starting at ` j ` .  Read " ` ZZ>= `` M ` " as "the set
-       of integers greater than or equal to ` M ` ."  See ~ uzval for its
+       of integers greater than or equal to ` M ` ".  See ~ uzval for its
        value, ~ uzssz for its relationship to ` ZZ ` , ~ nnuz and ~ nn0uz for
        its relationships to ` NN ` and ` NN0 ` , and ~ eluz1 and ~ eluz2 for
        its membership relations.  (Contributed by NM, 5-Sep-2005.) $)
@@ -97474,7 +97474,7 @@ $)
   eluznn $p |- ( ( N e. NN /\ M e. ( ZZ>= ` N ) ) -> M e. NN ) $=
     ( c1 cn nnuz uztrn2 ) CABDEF $.
 
-  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
+  $( Two ways to say "an integer greater than or equal to 2".  (Contributed by
      Paul Chapman, 23-Nov-2012.) $)
   eluz2b1 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. ZZ /\ 1 < N ) ) $=
     ( c2 cuz cfv wcel cz cle wbr wa c1 clt 2z eluz1i caddc co zltp1le mpan df-2
@@ -97486,7 +97486,7 @@ $)
   eluz2gt1 $p |- ( N e. ( ZZ>= ` 2 ) -> 1 < N ) $=
     ( c2 cuz cfv wcel cz c1 clt wbr eluz2b1 simprbi ) ABCDEAFEGAHIAJK $.
 
-  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
+  $( Two ways to say "an integer greater than or equal to 2".  (Contributed by
      Paul Chapman, 23-Nov-2012.) $)
   eluz2b2 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. NN /\ 1 < N ) ) $=
     ( c2 cuz cfv wcel cz c1 clt wbr wa cn eluz2b1 cle cr 1re zre ltle imdistani
@@ -97494,7 +97494,7 @@ $)
     JZAKEZUJJZALUKUMUKULUJUKUIGAMIZJULUIUJUNUIGNEANEUJUNSOAPGAQTRAUAUBUIUJUCUDU
     LUIUJAUEUFUGUH $.
 
-  $( Two ways to say "an integer greater than or equal to 2."  (Contributed by
+  $( Two ways to say "an integer greater than or equal to 2".  (Contributed by
      Paul Chapman, 23-Nov-2012.) $)
   eluz2b3 $p |- ( N e. ( ZZ>= ` 2 ) <-> ( N e. NN /\ N =/= 1 ) ) $=
     ( c2 cuz cfv wcel cn c1 clt wbr wa wne eluz2b2 nngt1ne1 pm5.32i bitri ) ABC
@@ -97673,7 +97673,7 @@ $)
   cq $a class QQ $.
 
   $( Define the set of rational numbers.  Based on definition of rationals in
-     [Apostol] p. 22.  See ~ elq for the relation "is rational."  (Contributed
+     [Apostol] p. 22.  See ~ elq for the relation "is rational".  (Contributed
      by NM, 8-Jan-2002.) $)
   df-q $a |- QQ = ( / " ( ZZ X. NN ) ) $.
 
@@ -101303,7 +101303,7 @@ $)
     $d m n k $.
     $( Define an operation that produces a finite set of sequential integers.
        Read " ` M ... N ` " as "the set of integers from ` M ` to ` N `
-       inclusive."  See ~ fzval for its value and additional comments.
+       inclusive".  See ~ fzval for its value and additional comments.
        (Contributed by NM, 6-Sep-2005.) $)
     df-fz $a |- ... = ( m e. ZZ , n e. ZZ |->
                   { k e. ZZ | ( m <_ k /\ k <_ n ) } ) $.
@@ -106679,7 +106679,7 @@ $)
        ` ( seq 1 ( + , F ) `` 1 ) = 1 ` , ` ( seq 1 ( + , F ) `` 2 ) = ` 3/2,
        etc.  In other words, ` seq M ( + , F ) ` transforms a sequence ` F `
        into an infinite series. ` seq M ( + , F ) ~~> 2 ` means "the sum of
-       F(n) from n = M to infinity is 2."  Since limits are unique
+       F(n) from n = M to infinity is 2".  Since limits are unique
        ( ~ climuni ), by ~ climdm the "sum of F(n) from n = 1 to infinity" can
        be expressed as ` ( ~~> `` seq 1 ( + , F ) ) ` (provided the sequence
        converges) and evaluates to 2 in this example.
@@ -121391,7 +121391,7 @@ $)
                           k e. ( 0 ... ( N - j ) ) ) ) -> A e. CC ) $.
     fisum0diag.n $e |- ( ph -> N e. ZZ ) $.
     $( Two ways to express "the sum of ` A ( j , k ) ` over the triangular
-       region ` M <_ j ` , ` M <_ k ` , ` j + k <_ N ` ."  (Contributed by NM,
+       region ` M <_ j ` , ` M <_ k ` , ` j + k <_ N ` ".  (Contributed by NM,
        31-Dec-2005.)  (Proof shortened by Mario Carneiro, 28-Apr-2014.)
        (Revised by Mario Carneiro, 8-Apr-2016.) $)
     fisum0diag $p |- ( ph ->
@@ -121515,7 +121515,7 @@ $)
                           k e. ( 0 ... ( N - j ) ) ) ) -> A e. CC ) $.
     fisum0diag2.n $e |- ( ph -> N e. ZZ ) $.
     $( Two ways to express "the sum of ` A ( j , k ) ` over the triangular
-       region ` 0 <_ j ` , ` 0 <_ k ` , ` j + k <_ N ` ."  (Contributed by
+       region ` 0 <_ j ` , ` 0 <_ k ` , ` j + k <_ N ` ".  (Contributed by
        Mario Carneiro, 21-Jul-2014.) $)
     fisum0diag2 $p |- ( ph ->
                       sum_ j e. ( 0 ... N ) sum_ k e. ( 0 ... ( N - j ) ) A =
@@ -142932,7 +142932,7 @@ $)
     $d f A $.  $d f J $.  $d f K $.
     istps.a $e |- A = ( Base ` K ) $.
     istps.j $e |- J = ( TopOpen ` K ) $.
-    $( Express the predicate "is a topological space."  (Contributed by Mario
+    $( Express the predicate "is a topological space".  (Contributed by Mario
        Carneiro, 13-Aug-2015.) $)
     istps $p |- ( K e. TopSp <-> J e. ( TopOn ` A ) ) $=
       ( vf ctps wcel cv ctopn cfv cbs ctopon cab df-topsp eleq2i cvv c0 eqtr4di
@@ -142942,7 +142942,7 @@ $)
       GUHVHRBVKBUIEUJRCJULUKUMUNUTCUOZVABVCVFVLVAVKBUTCJTESVLVBAMVLVBCLKAUTCLTD
       SUPUQURUS $.
 
-    $( Express the predicate "is a topological space."  (Contributed by NM,
+    $( Express the predicate "is a topological space".  (Contributed by NM,
        20-Oct-2012.) $)
     istps2 $p |- ( K e. TopSp <-> ( J e. Top /\ A = U. J ) ) $=
       ( ctps wcel ctopon cfv ctop cuni wceq wa istps istopon bitri ) CFGBAHIGBJ
@@ -142977,7 +142977,7 @@ $)
   ${
     tsettps.a $e |- A = ( Base ` K ) $.
     tsettps.j $e |- J = ( TopSet ` K ) $.
-    $( Express the predicate "is a topological space."  (Contributed by Mario
+    $( Express the predicate "is a topological space".  (Contributed by Mario
        Carneiro, 13-Aug-2015.) $)
     topontopn $p |- ( J e. ( TopOn ` A ) -> J = ( TopOpen ` K ) ) $=
       ( ctopon cfv wcel cts cdm cpw wss ctopn wceq ctop topontop wrel cvv syl
@@ -147127,7 +147127,7 @@ $)
 
   ${
     $d d u x y z f X $.  $d d x y z D $.
-    $( Express the predicate " ` D ` is a pseudometric."  (Contributed by
+    $( Express the predicate " ` D ` is a pseudometric".  (Contributed by
        Thierry Arnoux, 7-Feb-2018.) $)
     ispsmet $p |- ( X e. V -> ( D e. ( PsMet ` X ) <->
       ( D : ( X X. X ) --> RR* /\ A. x e. X ( ( x D x ) = 0 /\ A. y e. X
@@ -147354,7 +147354,7 @@ $)
 
   ${
     $d d x y z D $.  $d d t x y z X $.
-    $( Express the predicate " ` D ` is a metric."  (Contributed by NM,
+    $( Express the predicate " ` D ` is a metric".  (Contributed by NM,
        25-Aug-2006.)  (Revised by Mario Carneiro, 14-Aug-2015.) $)
     ismet $p |- ( X e. A -> ( D e. ( Met ` X ) <-> ( D : ( X X. X ) --> RR /\
                  A. x e. X A. y e. X ( ( ( x D y ) = 0 <-> x = y ) /\
@@ -147373,7 +147373,7 @@ $)
       XIWPUCWNWHXDEVGWNWIXDEVGVKVLVMVNVOVPVQWBWGXCXAWBYAYBWGXCQUKFDULJWEETTVRVS
       VTWA $.
 
-    $( Express the predicate " ` D ` is an extended metric."  (Contributed by
+    $( Express the predicate " ` D ` is an extended metric".  (Contributed by
        Mario Carneiro, 20-Aug-2015.) $)
     isxmet $p |- ( X e. A -> ( D e. ( *Met ` X ) <->
                ( D : ( X X. X ) --> RR* /\
