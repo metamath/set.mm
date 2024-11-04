@@ -4974,6 +4974,7 @@
 "df-vs" is used by "vsfval".
 "df-wrecs" is used by "csbwrecsg".
 "df-wrecs" is used by "dfrecs3".
+"df-wrecs" is used by "dfwrecs2".
 "df-wrecs" is used by "nfwrecs".
 "df-wrecs" is used by "wfrdmcl".
 "df-wrecs" is used by "wfrdmss".
@@ -15524,7 +15525,7 @@ New usage of "df-vd3" is discouraged (1 uses).
 New usage of "df-vhc2" is discouraged (1 uses).
 New usage of "df-vhc3" is discouraged (1 uses).
 New usage of "df-vs" is discouraged (1 uses).
-New usage of "df-wrecs" is discouraged (11 uses).
+New usage of "df-wrecs" is discouraged (12 uses).
 New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfadj2" is discouraged (7 uses).
 New usage of "dfbi1ALT" is discouraged (0 uses).
@@ -19187,6 +19188,10 @@ Proof modification of "bj-dvelimv" is discouraged (25 steps).
 Proof modification of "bj-eeanvw" is discouraged (32 steps).
 Proof modification of "bj-elabd2ALT" is discouraged (100 steps).
 Proof modification of "bj-elisset" is discouraged (24 steps).
+Proof modification of "bj-endbase" is discouraged (81 steps).
+Proof modification of "bj-endcomp" is discouraged (81 steps).
+Proof modification of "bj-endmnd" is discouraged (234 steps).
+Proof modification of "bj-endval" is discouraged (208 steps).
 Proof modification of "bj-epelg" is discouraged (60 steps).
 Proof modification of "bj-equs45fv" is discouraged (43 steps).
 Proof modification of "bj-equsal" is discouraged (31 steps).
