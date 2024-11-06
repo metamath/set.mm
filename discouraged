@@ -4897,6 +4897,15 @@
 "df-mr" is used by "mulsrpr".
 "df-mul" is used by "axmulf".
 "df-mul" is used by "mulcnsr".
+"df-mulr" is used by "hlhilsmulOLD".
+"df-mulr" is used by "mulrid".
+"df-mulr" is used by "mulrndx".
+"df-mulr" is used by "opsrmulrOLD".
+"df-mulr" is used by "resvmulrOLD".
+"df-mulr" is used by "sramulrOLD".
+"df-mulr" is used by "tngmulrOLD".
+"df-mulr" is used by "zlmmulrOLD".
+"df-mulr" is used by "znmulOLD".
 "df-ni" is used by "dmaddpi".
 "df-ni" is used by "dmmulpi".
 "df-ni" is used by "elni".
@@ -7320,6 +7329,9 @@
 "hlex" is used by "axhilex-zf".
 "hlex" is used by "h2hcau".
 "hlex" is used by "h2hlm".
+"hlhilslemOLD" is used by "hlhilsbaseOLD".
+"hlhilslemOLD" is used by "hlhilsmulOLD".
+"hlhilslemOLD" is used by "hlhilsplusOLD".
 "hlim0" is used by "hsn0elch".
 "hlimadd" is used by "chscllem4".
 "hlimcaui" is used by "chscllem2".
@@ -13914,6 +13926,12 @@
 "zfinf" is used by "axinfndlem1".
 "zfpair" is used by "axprALT".
 "zfun" is used by "axunndlem1".
+"zlmlemOLD" is used by "zlmbasOLD".
+"zlmlemOLD" is used by "zlmmulrOLD".
+"zlmlemOLD" is used by "zlmplusgOLD".
+"znbaslemOLD" is used by "znaddOLD".
+"znbaslemOLD" is used by "znbas2OLD".
+"znbaslemOLD" is used by "znmulOLD".
 "zrdivrng" is used by "dvrunz".
 New usage of "00sr" is discouraged (4 uses).
 New usage of "0bdop" is discouraged (2 uses).
@@ -15616,6 +15634,7 @@ New usage of "df-mpq" is discouraged (3 uses).
 New usage of "df-mq" is discouraged (2 uses).
 New usage of "df-mr" is discouraged (2 uses).
 New usage of "df-mul" is discouraged (2 uses).
+New usage of "df-mulr" is discouraged (9 uses).
 New usage of "df-ni" is discouraged (7 uses).
 New usage of "df-nlfn" is discouraged (1 uses).
 New usage of "df-nmcv" is discouraged (1 uses).
@@ -16648,6 +16667,10 @@ New usage of "hldir" is discouraged (1 uses).
 New usage of "hlex" is discouraged (3 uses).
 New usage of "hlexch4N" is discouraged (0 uses).
 New usage of "hlhils1N" is discouraged (0 uses).
+New usage of "hlhilsbaseOLD" is discouraged (0 uses).
+New usage of "hlhilslemOLD" is discouraged (3 uses).
+New usage of "hlhilsmulOLD" is discouraged (0 uses).
+New usage of "hlhilsplusOLD" is discouraged (0 uses).
 New usage of "hlim0" is discouraged (1 uses).
 New usage of "hlim2" is discouraged (0 uses).
 New usage of "hlimadd" is discouraged (1 uses).
@@ -19094,6 +19117,14 @@ New usage of "zfinf" is discouraged (2 uses).
 New usage of "zfpair" is discouraged (1 uses).
 New usage of "zfregs2VD" is discouraged (0 uses).
 New usage of "zfun" is discouraged (1 uses).
+New usage of "zlmbasOLD" is discouraged (0 uses).
+New usage of "zlmlemOLD" is discouraged (3 uses).
+New usage of "zlmmulrOLD" is discouraged (0 uses).
+New usage of "zlmplusgOLD" is discouraged (0 uses).
+New usage of "znaddOLD" is discouraged (0 uses).
+New usage of "znbas2OLD" is discouraged (0 uses).
+New usage of "znbaslemOLD" is discouraged (3 uses).
+New usage of "znmulOLD" is discouraged (0 uses).
 New usage of "zrdivrng" is discouraged (1 uses).
 Proof modification of "0cnALT" is discouraged (82 steps).
 Proof modification of "0cnALT2" is discouraged (49 steps).
@@ -20152,6 +20183,10 @@ Proof modification of "hbsbwOLD" is discouraged (15 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hhssbnOLD" is discouraged (39 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
+Proof modification of "hlhilsbaseOLD" is discouraged (20 steps).
+Proof modification of "hlhilslemOLD" is discouraged (94 steps).
+Proof modification of "hlhilsmulOLD" is discouraged (20 steps).
+Proof modification of "hlhilsplusOLD" is discouraged (20 steps).
 Proof modification of "icccmpALT" is discouraged (71 steps).
 Proof modification of "id1" is discouraged (2 steps).
 Proof modification of "idALT" is discouraged (26 steps).
@@ -20891,3 +20926,11 @@ Proof modification of "zfcndreg" is discouraged (29 steps).
 Proof modification of "zfcndrep" is discouraged (258 steps).
 Proof modification of "zfcndun" is discouraged (72 steps).
 Proof modification of "zfregs2VD" is discouraged (128 steps).
+Proof modification of "zlmbasOLD" is discouraged (18 steps).
+Proof modification of "zlmlemOLD" is discouraged (161 steps).
+Proof modification of "zlmmulrOLD" is discouraged (18 steps).
+Proof modification of "zlmplusgOLD" is discouraged (18 steps).
+Proof modification of "znaddOLD" is discouraged (13 steps).
+Proof modification of "znbas2OLD" is discouraged (13 steps).
+Proof modification of "znbaslemOLD" is discouraged (77 steps).
+Proof modification of "znmulOLD" is discouraged (13 steps).
