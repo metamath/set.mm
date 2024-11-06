@@ -4985,6 +4985,22 @@
 "df-plq" is used by "addpqnq".
 "df-plr" is used by "addsrpr".
 "df-plr" is used by "dmaddsr".
+"df-plusg" is used by "bj-endcomp".
+"df-plusg" is used by "grpbaseOLD".
+"df-plusg" is used by "grpplusgOLD".
+"df-plusg" is used by "grpstr".
+"df-plusg" is used by "hlhilsplusOLD".
+"df-plusg" is used by "mnringaddgdOLD".
+"df-plusg" is used by "oppraddOLD".
+"df-plusg" is used by "opsrplusgOLD".
+"df-plusg" is used by "plusgid".
+"df-plusg" is used by "plusgndx".
+"df-plusg" is used by "resvplusgOLD".
+"df-plusg" is used by "sraaddgOLD".
+"df-plusg" is used by "tngplusgOLD".
+"df-plusg" is used by "ttgplusgOLD".
+"df-plusg" is used by "zlmplusgOLD".
+"df-plusg" is used by "znaddOLD".
 "df-pnf" is used by "mnfnre".
 "df-pnf" is used by "pnfex".
 "df-pnf" is used by "pnfnre".
@@ -11461,6 +11477,8 @@
 "oppglemOLD" is used by "oppgbasOLD".
 "oppglemOLD" is used by "oppgleOLD".
 "oppglemOLD" is used by "oppgtsetOLD".
+"opprlemOLD" is used by "oppraddOLD".
+"opprlemOLD" is used by "opprbasOLD".
 "oprabid" is used by "ssoprab2b".
 "opsqrlem2" is used by "opsqrlem6".
 "opsqrlem3" is used by "opsqrlem4".
@@ -15655,6 +15673,7 @@ New usage of "df-plp" is discouraged (11 uses).
 New usage of "df-plpq" is discouraged (3 uses).
 New usage of "df-plq" is discouraged (2 uses).
 New usage of "df-plr" is discouraged (2 uses).
+New usage of "df-plusg" is discouraged (16 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-prstc" is discouraged (1 uses).
 New usage of "df-r" is discouraged (6 uses).
@@ -17946,6 +17965,9 @@ New usage of "oppgbasOLD" is discouraged (0 uses).
 New usage of "oppgleOLD" is discouraged (0 uses).
 New usage of "oppglemOLD" is discouraged (3 uses).
 New usage of "oppgtsetOLD" is discouraged (0 uses).
+New usage of "oppraddOLD" is discouraged (0 uses).
+New usage of "opprbasOLD" is discouraged (0 uses).
+New usage of "opprlemOLD" is discouraged (2 uses).
 New usage of "oprabid" is discouraged (1 uses).
 New usage of "opreu2reuALT" is discouraged (0 uses).
 New usage of "opsqrlem1" is discouraged (0 uses).
@@ -20460,6 +20482,9 @@ Proof modification of "oppgbasOLD" is discouraged (18 steps).
 Proof modification of "oppgleOLD" is discouraged (24 steps).
 Proof modification of "oppglemOLD" is discouraged (62 steps).
 Proof modification of "oppgtsetOLD" is discouraged (22 steps).
+Proof modification of "oppraddOLD" is discouraged (18 steps).
+Proof modification of "opprbasOLD" is discouraged (18 steps).
+Proof modification of "opprlemOLD" is discouraged (73 steps).
 Proof modification of "opreu2reuALT" is discouraged (913 steps).
 Proof modification of "opsrbasOLD" is discouraged (15 steps).
 Proof modification of "opsrbaslemOLD" is discouraged (167 steps).
