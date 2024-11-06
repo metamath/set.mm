@@ -4974,6 +4974,7 @@
 "df-vs" is used by "vsfval".
 "df-wrecs" is used by "csbwrecsg".
 "df-wrecs" is used by "dfrecs3".
+"df-wrecs" is used by "dfwrecs2".
 "df-wrecs" is used by "nfwrecs".
 "df-wrecs" is used by "wfrdmcl".
 "df-wrecs" is used by "wfrdmss".
@@ -14061,7 +14062,6 @@ New usage of "ancomstVD" is discouraged (0 uses).
 New usage of "anmp" is discouraged (11 uses).
 New usage of "archnq" is discouraged (1 uses).
 New usage of "arglem1N" is discouraged (0 uses).
-New usage of "ascldimulOLD" is discouraged (0 uses).
 New usage of "atabs2i" is discouraged (1 uses).
 New usage of "atabsi" is discouraged (1 uses).
 New usage of "atbtwnexOLDN" is discouraged (0 uses).
@@ -15524,7 +15524,7 @@ New usage of "df-vd3" is discouraged (1 uses).
 New usage of "df-vhc2" is discouraged (1 uses).
 New usage of "df-vhc3" is discouraged (1 uses).
 New usage of "df-vs" is discouraged (1 uses).
-New usage of "df-wrecs" is discouraged (11 uses).
+New usage of "df-wrecs" is discouraged (12 uses).
 New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfadj2" is discouraged (7 uses).
 New usage of "dfbi1ALT" is discouraged (0 uses).
@@ -18120,6 +18120,7 @@ New usage of "quoremnn0ALT" is discouraged (0 uses).
 New usage of "r19.12OLD" is discouraged (0 uses).
 New usage of "r19.29d2rOLD" is discouraged (0 uses).
 New usage of "r19.29vvaOLD" is discouraged (0 uses).
+New usage of "r19.30OLD" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
 New usage of "r1pwALT" is discouraged (0 uses).
 New usage of "rabbidvaOLD" is discouraged (0 uses).
@@ -19009,7 +19010,6 @@ Proof modification of "an33reanOLD" is discouraged (209 steps).
 Proof modification of "anabss7p1" is discouraged (5 steps).
 Proof modification of "ancomstVD" is discouraged (22 steps).
 Proof modification of "anmp" is discouraged (8 steps).
-Proof modification of "ascldimulOLD" is discouraged (359 steps).
 Proof modification of "avril1" is discouraged (194 steps).
 Proof modification of "ax1" is discouraged (3 steps).
 Proof modification of "ax10fromc7" is discouraged (50 steps).
@@ -19187,6 +19187,10 @@ Proof modification of "bj-dvelimv" is discouraged (25 steps).
 Proof modification of "bj-eeanvw" is discouraged (32 steps).
 Proof modification of "bj-elabd2ALT" is discouraged (100 steps).
 Proof modification of "bj-elisset" is discouraged (24 steps).
+Proof modification of "bj-endbase" is discouraged (81 steps).
+Proof modification of "bj-endcomp" is discouraged (81 steps).
+Proof modification of "bj-endmnd" is discouraged (234 steps).
+Proof modification of "bj-endval" is discouraged (208 steps).
 Proof modification of "bj-epelg" is discouraged (60 steps).
 Proof modification of "bj-equs45fv" is discouraged (43 steps).
 Proof modification of "bj-equsal" is discouraged (31 steps).
@@ -20273,6 +20277,7 @@ Proof modification of "quoremnn0ALT" is discouraged (360 steps).
 Proof modification of "r19.12OLD" is discouraged (69 steps).
 Proof modification of "r19.29d2rOLD" is discouraged (51 steps).
 Proof modification of "r19.29vvaOLD" is discouraged (42 steps).
+Proof modification of "r19.30OLD" is discouraged (66 steps).
 Proof modification of "r1omALT" is discouraged (13 steps).
 Proof modification of "r1pwALT" is discouraged (151 steps).
 Proof modification of "rabbidvaOLD" is discouraged (28 steps).
