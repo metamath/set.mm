@@ -156947,6 +156947,22 @@ $)
         XQFJUBVLZFJKXQXTPLFJXPAXQXTFHVSVTWCXPWJXRXATJWIWJXJWAXPEMWKXJVEWDEWESWF
         AWTXCFHVSUTWKWJXMWLRXNXOEMURSWGWH $.
     $}
+
+    $( Closure of the function ` F ` which defines the Legendre symbol at the
+       primes.  (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    lgsfcl $p |- ( ( A e. ZZ /\ N e. ZZ /\ N =/= 0 ) -> F : NN --> ZZ ) $=
+      ( vx cz wcel cc0 wne w3a cn cv cabs cfv c1 cle wbr crab wf lgsfcl2 ssrab2
+      wss eqid fss sylancl ) AGHDGHDIJKLFMNOPQRZFGSZCTUHGUCLGCTFABCDUHEUHUDUAUG
+      FGUBLUHGCUEUF $.
+
+    $( The function ` F ` has magnitude less or equal to ` 1 ` .  (Contributed
+       by Mario Carneiro, 4-Feb-2015.) $)
+    lgsfle1 $p |- ( ( ( A e. ZZ /\ N e. ZZ /\ N =/= 0 ) /\ M e. NN ) ->
+      ( abs ` ( F ` M ) ) <_ 1 ) $=
+      ( vx cz wcel cc0 wne w3a cn wa cfv cv cabs c1 cle wbr crab eqid ffvelrnda
+      lgsfcl2 wceq fveq2 breq1d elrab simprbi syl ) AHIEHIEJKLZDMINDCOZGPZQOZRS
+      TZGHUAZIZULQOZRSTZUKMUPDCGABCEUPFUPUBUDUCUQULHIUSUOUSGULHUMULUEUNURRSUMUL
+      QUFUGUHUIUJ $.
   $}
 
 
