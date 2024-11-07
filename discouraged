@@ -13426,9 +13426,10 @@
 "strb" is used by "largei".
 "strfvn" is used by "baseval".
 "strfvn" is used by "ndxarg".
-"strfvn" is used by "ressbas".
+"strfvn" is used by "ressbasOLD".
 "strfvn" is used by "resvsca".
 "strfvn" is used by "setsnid".
+"strfvn" is used by "setsnidOLD".
 "strfvn" is used by "str0".
 "stri" is used by "goeqi".
 "stri" is used by "strb".
@@ -18435,6 +18436,7 @@ New usage of "renicax" is discouraged (0 uses).
 New usage of "rescbasOLD" is discouraged (0 uses).
 New usage of "resccoOLD" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
+New usage of "ressbasOLD" is discouraged (0 uses).
 New usage of "resslemOLD" is discouraged (0 uses).
 New usage of "ressval3dOLD" is discouraged (0 uses).
 New usage of "resvbasOLD" is discouraged (0 uses).
@@ -18648,6 +18650,7 @@ New usage of "setrec2fun" is discouraged (1 uses).
 New usage of "setrec2lem1" is discouraged (1 uses).
 New usage of "setrec2lem2" is discouraged (1 uses).
 New usage of "setsidvaldOLD" is discouraged (1 uses).
+New usage of "setsnidOLD" is discouraged (0 uses).
 New usage of "sgrpplusgaopALT" is discouraged (0 uses).
 New usage of "sh0" is discouraged (13 uses).
 New usage of "sh0le" is discouraged (6 uses).
@@ -18891,7 +18894,7 @@ New usage of "sto2i" is discouraged (1 uses).
 New usage of "stoic2a" is discouraged (0 uses).
 New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strb" is discouraged (1 uses).
-New usage of "strfvn" is discouraged (6 uses).
+New usage of "strfvn" is discouraged (7 uses).
 New usage of "stri" is discouraged (2 uses).
 New usage of "strlem1" is discouraged (2 uses).
 New usage of "strlem2" is discouraged (4 uses).
@@ -20632,6 +20635,7 @@ Proof modification of "renicax" is discouraged (76 steps).
 Proof modification of "rescbasOLD" is discouraged (106 steps).
 Proof modification of "resccoOLD" is discouraged (115 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
+Proof modification of "ressbasOLD" is discouraged (197 steps).
 Proof modification of "resslemOLD" is discouraged (167 steps).
 Proof modification of "ressval3dOLD" is discouraged (285 steps).
 Proof modification of "resvbasOLD" is discouraged (17 steps).
@@ -20724,6 +20728,7 @@ Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "seqp1iOLD" is discouraged (20 steps).
 Proof modification of "setsidvaldOLD" is discouraged (93 steps).
+Proof modification of "setsnidOLD" is discouraged (140 steps).
 Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
 Proof modification of "sii" is discouraged (145 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
