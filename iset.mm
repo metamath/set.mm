@@ -157028,6 +157028,17 @@ $)
       VJWBURUNUOUPUSVTVKUTVIVJVAVBVCVDVE $.
   $}
 
+  ${
+    $d n x A $.  $d n x N $.  $d n Z $.
+    lgscl2.z $e |- Z = { x e. ZZ | ( abs ` x ) <_ 1 } $.
+    $( The Legendre symbol is an integer with absolute value less than or equal
+       to 1.  (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    lgscl2 $p |- ( ( A e. ZZ /\ N e. ZZ ) -> ( A /L N ) e. Z ) $=
+      ( vn cn cv cprime wcel c2 wceq cdvds wbr cmo co c1 cif cmin cexp cc0 cneg
+      c8 c7 cpr cdiv caddc cpc cmpt eqid lgscllem ) ABFFGFHZIJULKLKBMNUABUCOPQU
+      DUEJQQUBRRBULQSPKUFPTPQUGPULOPQSPRULCUHPTPQRUIZCDUMUJEUK $.
+  $}
+
 
 $(
 ###############################################################################
