@@ -157331,6 +157331,21 @@ $)
         PQWHULWFLWIUNWJWKLAUFWLWMWNWPWOUUELDXLPLXQDPYIGVFUUEWQWRWSWTXAXBYSXNUGX
         KYSXNEBKIXLEBXCXDXEXAXBXF $.
     $}
+
+    $( Lemma for ~ lgsdir2 .  (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    lgsdir2lem3 $p |- ( ( A e. ZZ /\ -. 2 || A ) ->
+      ( A mod 8 ) e. ( { 1 , 7 } u. { 3 , 5 } ) ) $=
+      ( cz wcel c2 cdvds wbr c8 co cc0 c7 cfz c1 c3 c5 caddc sselii lgsdir2lem2
+      cn wi c0 wn wa cmo cpr cun simpl 8nn zmodfz sylancl 8m1e7 oveq2i eleqtrdi
+      cmin c6 c4 cneg z0even 1pneg1e0 ax-1cn neg1cn addcomi eqtr3i breqtri noel
+      neg1z pm2.21i clt wceq neg1lt0 wb fzn mp2an mpbi eleq2s a1i 3pm3.2i 1e0p1
+      0z ssun1 1ex prid1 df-2 df-3 ssun2 3ex df-4 df-5 5nn elexi prid2 df-6 7nn
+      df-7 simp3i mpd ) ABCZDAEFUAZUBZAGUCHZIJKHZCZWSLJUDZMNUDZUEZCZWRWSIGLUMHZ
+      KHZWTWRWPGRCWSXGCWPWQUFUGAGUHUIXFJIKUJUKULJBCDJLOHEFWRXAXESSAXDNUNJAXDMUO
+      NAXDLDMAXDLUPZILXHBCZDXHLOHZEFWRWSIXHKHZCXESZSVEDIXJEUQLXHOHIXJURLXHUSUTV
+      AVBZVCXLWRXEWSTXKWSTCXEWSVDVFXHIVGFZXKTVHZVIIBCXIXNXOVJVRVEIXHVKVLVMVNVOV
+      PXMVQXBXDLXBXCVSZLJVTWAPQWBWCXCXDMXCXBWDZMNWEWAPQWFWGXCXDNXQMNNRWHWIWJPQW
+      KWMXBXDJXPLJJRWLWIWJPQWNWO $.
   $}
 
 
