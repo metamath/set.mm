@@ -4576,7 +4576,6 @@
 "df-base" is used by "basendxnnOLD".
 "df-base" is used by "basendxnplusgndxOLD".
 "df-base" is used by "baseval".
-"df-base" is used by "bj-endbase".
 "df-base" is used by "catcfucclOLD".
 "df-base" is used by "catcoppcclOLD".
 "df-base" is used by "catcxpcclOLD".
@@ -5006,7 +5005,6 @@
 "df-plq" is used by "addpqnq".
 "df-plr" is used by "addsrpr".
 "df-plr" is used by "dmaddsr".
-"df-plusg" is used by "bj-endcomp".
 "df-plusg" is used by "grpbaseOLD".
 "df-plusg" is used by "grpplusgOLD".
 "df-plusg" is used by "grpstr".
@@ -13433,8 +13431,6 @@
 "strlem4" is used by "strlem6".
 "strlem5" is used by "strlem6".
 "strlem6" is used by "stri".
-"strndxid" is used by "bj-endbase".
-"strndxid" is used by "bj-endcomp".
 "strndxid" is used by "edgfndxidOLD".
 "strndxid" is used by "estrreslem1OLD".
 "sumdmdi" is used by "dmdbr4ati".
@@ -15566,7 +15562,7 @@ New usage of "df-aj" is discouraged (1 uses).
 New usage of "df-ass" is discouraged (1 uses).
 New usage of "df-at" is discouraged (2 uses).
 New usage of "df-ba" is discouraged (1 uses).
-New usage of "df-base" is discouraged (32 uses).
+New usage of "df-base" is discouraged (31 uses).
 New usage of "df-bdop" is discouraged (2 uses).
 New usage of "df-bj-1upl" is discouraged (6 uses).
 New usage of "df-bj-2upl" is discouraged (6 uses).
@@ -15693,7 +15689,7 @@ New usage of "df-plp" is discouraged (11 uses).
 New usage of "df-plpq" is discouraged (3 uses).
 New usage of "df-plq" is discouraged (2 uses).
 New usage of "df-plr" is discouraged (2 uses).
-New usage of "df-plusg" is discouraged (16 uses).
+New usage of "df-plusg" is discouraged (15 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-prstc" is discouraged (1 uses).
 New usage of "df-r" is discouraged (6 uses).
@@ -18910,7 +18906,7 @@ New usage of "strlem3a" is discouraged (1 uses).
 New usage of "strlem4" is discouraged (1 uses).
 New usage of "strlem5" is discouraged (1 uses).
 New usage of "strlem6" is discouraged (1 uses).
-New usage of "strndxid" is discouraged (4 uses).
+New usage of "strndxid" is discouraged (2 uses).
 New usage of "sucidALT" is discouraged (0 uses).
 New usage of "sucidALTVD" is discouraged (0 uses).
 New usage of "sucidVD" is discouraged (0 uses).
