@@ -157206,6 +157206,17 @@ $)
       DEHUXHUXJLNDEYTUXHUXJYDPYEYRYSUVBMEYQBYFYGYHYIYJWGYTYQUWOUUAFUCUVKUUQOUWT
       YRYQUWOYSUWPXLYTBUXEYQYRYSYKYMACUUNUUAUUNYAYNYOYTUVLUVIUURLACUVFBUXIYNVJY
       P $.
+
+    $( The Legendre symbol for nonnegative first parameter is unchanged by
+       negation of the second.  (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    lgsneg1 $p |- ( ( A e. NN0 /\ N e. ZZ ) -> ( A /L -u N ) = ( A /L N ) ) $=
+      ( cn0 wcel cz wa cc0 wceq cneg clgs co wne neg0 simpr negeqd 3eqtr4a cmul
+      c1 3ad2ant1 syl2anc oveq2d w3a clt wbr cif nn0z lgsneg syl3an1 wn nn0nlt0
+      iffalsed oveq1d simp2 lgscl zcnd mulid2d 3eqtrd 3expa wdc 0zd zdceq sylib
+      wo dcne mpjaodan ) ACDZBEDZFZBGHZABIZJKZABJKZHZBGLZVHVIFZVJBAJVOGIGVJBMVO
+      BGVHVINZOVPPUAVFVGVNVMVFVGVNUBZVKAGUCUDZRIZRUEZVLQKZRVLQKVLVFAEDZVGVNVKWA
+      HAUFZABUGUHVQVTRVLQVQVRVSRVFVGVRUIVNAUJSUKULVQVLVQVLVQWBVGVLEDVFVGWBVNWCS
+      VFVGVNUMABUNTUOUPUQURVHVIUSZVIVNVCVHVGGEDWDVFVGNVHUTBGVATBGVDVBVE $.
   $}
 
 
