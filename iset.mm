@@ -157112,6 +157112,24 @@ $)
       XJXISXCXGXHWNBVOVPVRVSWGWKWHBIWGWKWIGJFZWHWGWIPDGPDZWKXNSWGWIWGWHQDWIQDXL
       WHVTLNRWIGWATWGWHPDXOXNWHSXMRWHGWBTVROWGWOWMBIWGWOWNGJFZWMWGWNPDXOWOXPSWG
       WNWGWMQDWNQDWGWMXAVIZWMVTLNRWNGWATWGWMPDXOXPWMSWGWMXQNRWMGWBTVROWC $.
+
+    lgsval4.1 $e |- F = ( n e. NN |->
+      if ( n e. Prime , ( ( A /L n ) ^ ( n pCnt N ) ) , 1 ) ) $.
+    $( Restate ~ lgsval for nonzero ` N ` , where the function ` F ` has been
+       abbreviated into a self-referential expression taking the value of
+       ` /L ` on the primes as given.  (Contributed by Mario Carneiro,
+       4-Feb-2015.) $)
+    lgsval4 $p |- ( ( A e. ZZ /\ N e. ZZ /\ N =/= 0 ) -> ( A /L N ) =
+      ( if ( ( N < 0 /\ A < 0 ) , -u 1 , 1 ) x.
+        ( seq 1 ( x. , F ) ` ( abs ` N ) ) ) ) $=
+      ( cz wcel cc0 clgs co wceq c2 cexp c1 cif clt wbr cfv cmul cn wne wa cneg
+      w3a cabs cv cprime cdvds c8 cmo c7 cpr cmin cdiv caddc cpc cmpt cseq eqid
+      lgsval 3adant3 simp3 neneqd iffalsed eqtr4di seqeq3d fveq1d oveq2d 3eqtrd
+      lgsval4lem ) AFGZDFGZDHUAZUDZADIJZDHKZALMJNKNHOZDHPQAHPQUBNUCZNOZDUERZSBT
+      BUFZUGGZWALKLAUHQHAUIUJJNUKULGNVROOAWANUMJLUNJMJNUOJWAUJJNUMJOWADUPJZMJNO
+      UQZNURZRZSJZOZWGVSVTSCNURZRZSJVKVLVOWHKVMABWDDWDUSZUTVAVNVPVQWGVNDHVKVLVM
+      VBVCVDVNWFWJVSSVNVTWEWIVNWDCSNVNWDBTWBAWAIJWCMJNOUQCABWDDWKVJEVEVFVGVHVI
+      $.
   $}
 
 
