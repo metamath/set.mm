@@ -157139,6 +157139,20 @@ $)
       c7 feq1d mpbid ) AFGDFGDHIJZKFBKBUAZUDGZVALUBLAUCUEHAUFMNOUQUGGOOUHPPAVAO
       QNLUINRNOUJNVAMNOQNPVADUKNZRNOPSZTKFCTABVDDVDULZUMUTKFVDCUTVDBKVBAVAUNNVC
       RNOPSCABVDDVEUOEUPURUS $.
+
+    $( Same as ~ lgsval4 for positive ` N ` .  (Contributed by Mario Carneiro,
+       4-Feb-2015.) $)
+    lgsval4a $p |- ( ( A e. ZZ /\ N e. NN ) ->
+      ( A /L N ) = ( seq 1 ( x. , F ) ` N ) ) $=
+      ( vx vy cz wcel cn wa co cc0 clt wbr c1 cfv cmul adantl syl3anc clgs cneg
+      cif cabs cseq wne wceq simpl nnz nnne0 lgsval4 wn nngt0 cr wi nnre ltnsym
+      0re sylancr mpd intnanrd iffalsed cn0 nnnn0 nn0ge0d absidd fveq2d oveq12d
+      nnuz 1zzd cv wf lgsfcl3 ffvelrnda zmulcl seqf simpr ffvelrnd zcnd mulid2d
+      3eqtrd ) AHIZDJIZKZADUALZDMNOZAMNOZKZPUBZPUCZDUDQZRCPUEZQZRLZPDWLQZRLWOWD
+      WBDHIZDMUFZWEWNUGWBWCUHZWCWPWBDUISZWCWQWBDUJSZABCDEUKTWDWJPWMWORWDWHWIPWD
+      WFWGWDMDNOZWFULZWCXAWBDUMSWDMUNIDUNIZXAXBUOURWCXCWBDUPSZMDUQUSUTVAVBWDWKD
+      WLWDDXDWDDWCDVCIWBDVDSVEVFVGVHWDWOWDWOWDJHDWLWDFGRHCPJVIWDVJWDJHFVKZCWDWB
+      WPWQJHCVLWRWSWTABCDEVMTVNXEHIGVKZHIKXEXFRLHIWDXEXFVOSVPWBWCVQVRVSVTWA $.
   $}
 
 
