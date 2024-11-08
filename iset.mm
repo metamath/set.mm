@@ -157091,6 +157091,27 @@ $)
       c1 cif eldifsn cdvds wbr cc0 c8 c7 cneg lgsval2 ifnefalse sylan9eq anasss
       cpr sylan2b ) BCDEFGAHGZBCGZBDIZJABKLZABSMLDNLOLSPLBQLSMLZRZBCDUAUNUOUPUS
       UNUOJUPUQBDRDAUBUCUDAUEQLSUFULGSSUGTTZURTURABUHBDUTURUIUJUKUM $.
+
+    $( The Legendre symbol is equivalent to ` a ^ ( ( p - 1 ) / 2 ) ` ,
+       ` mod p ` .  This theorem is also called "Euler's criterion", see
+       theorem 9.2 in [ApostolNT] p. 180, or a representation of Euler's
+       criterion using the Legendre symbol, see also ~ lgsqr .  (Contributed by
+       Mario Carneiro, 4-Feb-2015.) $)
+    lgsvalmod $p |- ( ( A e. ZZ /\ P e. ( Prime \ { 2 } ) ) ->
+      ( ( A /L P ) mod P ) = ( ( A ^ ( ( P - 1 ) / 2 ) ) mod P ) ) $=
+      ( cz wcel cprime co c1 caddc cmo cmin cq syl zq recnd oveq1d cc cr ax-1cn
+      wceq sylancl c2 csn cdif wa clgs cneg cdiv cexp eldifi adantl prmz syldan
+      lgscl peano2zd cn0 cn oddprm nnnn0d zexpcl neg1z prmnn nnq nngt0d lgsval3
+      mp1i eqcomd zmodcld 1cnd zred subadd2d mpbid cc0 clt wbr modqabs2 syl3anc
+      nn0cnd eqtrd modqadd1 peano2re negsub pncan 3eqtr3d ) ACDZBEUAUBZUCDZUDZA
+      BUEFZGHFZGUFZHFZBIFABGJFUAUGFZUHFZGHFZWJHFZBIFWHBIFWMBIFWGWIWNWJBWGWICDWI
+      KDWGWHWDWFBCDZWHCDWGBEDZWPWFWQWDBEWEUIUJZBUKLABUMULZUNWIMLWGWNCDWNKDZWGWM
+      WDWFWLUODWMCDWGWLWFWLUPDWDBUQUJURAWLUSULZUNZWNMLZWJCDWJKDWGUTWJMVEWGBUPDZ
+      BKDZWGWQXDWRBVALZBVBLZWGBXFVCZWGWIBIFWNBIFZBIFZXIWGWIXIBIWGXIGJFZWHSWIXIS
+      WGWHXKABVDVFWGXIGWHWGXIWGWNBXBXFVGVQWGVHWGWHWGWHWSVIZNZVJVKOWGWTXEVLBVMVN
+      XJXISXCXGXHWNBVOVPVRVSWGWKWHBIWGWKWIGJFZWHWGWIPDGPDZWKXNSWGWIWGWHQDWIQDXL
+      WHVTLNRWIGWATWGWHPDXOXNWHSXMRWHGWBTVROWGWOWMBIWGWOWNGJFZWMWGWNPDXOWOXPSWG
+      WNWGWMQDWNQDWGWMXAVIZWMVTLNRWNGWATWGWMPDXOXPWMSWGWMXQNRWMGWBTVROWC $.
   $}
 
 
