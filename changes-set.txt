@@ -96,6 +96,9 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
  7-Nov-24 slotsbaseefdif basendxnedgfndx
+31-Oct-24 ceilged   [same]      moved from GS's mathbox to main set.mm
+31-Oct-24 ceilcld   [same]      moved from GS's mathbox to main set.mm
+31-Oct-24 zexpcld   [same]      moved from SN's mathbox to main set.mm
 28-Oct-24 dfpo2     ---         moved from SF's mathbox to main set.mm
 27-Oct-24 bnj930    fnfund      moved from JB's mathbox to main set.mm
 27-Oct-24 predasetex predexg    predasetex is deprecated
