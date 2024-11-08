@@ -157155,6 +157155,12 @@ $)
       WPWQJHCVLWRWSWTABCDEVMTVNXEHIGVKZHIKXEXFRLHIWDXEXFVOSVPWBWCVQVRVSVTWA $.
   $}
 
+  $( The value of the Legendre symbol is either -1 or 0 or 1.  (Contributed by
+     AV, 13-Jul-2021.) $)
+  lgscl1 $p |- ( ( A e. ZZ /\ N e. ZZ ) -> ( A /L N ) e. { -u 1 , 0 , 1 } ) $=
+    ( cz wcel wa clgs co c1 cneg cc0 ctp cabs cfv cle wbr lgsle1 wb zabsle1 syl
+    lgscl mpbird ) ACDBCDEZABFGZHIJHKDZUCLMHNOZABPUBUCCDUDUEQABTUCRSUA $.
+
 
 $(
 ###############################################################################
