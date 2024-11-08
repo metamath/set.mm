@@ -157073,6 +157073,24 @@ $)
       ( vn cn cv cprime wcel c2 wceq cdvds wbr cc0 c8 cmo co c1 cif cmin cexp
       c7 cpr cneg cdiv caddc cpc cmpt eqid lgsval2lem ) ACCDCEZFGUIHIHAJKLAMNOP
       TUAGPPUBQQAUIPROHUCOSOPUDOUINOPROQUIBUEOSOPQUFZBUJUGUH $.
+
+    $( The Legendre symbol at ` 2 ` .  (Contributed by Mario Carneiro,
+       4-Feb-2015.) $)
+    lgs2 $p |- ( A e. ZZ -> ( A /L 2 ) = if ( 2 || A , 0 ,
+      if ( ( A mod 8 ) e. { 1 , 7 } , 1 , -u 1 ) ) ) $=
+      ( cz wcel c2 clgs co wceq cdvds wbr cc0 c8 cmo c1 cpr cneg cmin cdiv cexp
+      c7 cif caddc cprime 2prm lgsval2 mpan2 eqid iftruei eqtrdi ) ABCZADEFZDDG
+      ZDAHIJAKLFMSNCMMOTTZADMPFDQFRFMUAFDLFMPFZTZULUIDUBCUJUNGUCADUDUEUKULUMDUF
+      UGUH $.
+
+    $( The Legendre symbol at an odd prime (this is the traditional domain of
+       the Legendre symbol).  (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    lgsval3 $p |- ( ( A e. ZZ /\ P e. ( Prime \ { 2 } ) ) -> ( A /L P ) =
+        ( ( ( ( A ^ ( ( P - 1 ) / 2 ) ) + 1 ) mod P ) - 1 ) ) $=
+      ( cprime c2 csn cdif wcel cz wne wa clgs co cmin cdiv cexp caddc cmo wceq
+      c1 cif eldifsn cdvds wbr cc0 c8 c7 cneg lgsval2 ifnefalse sylan9eq anasss
+      cpr sylan2b ) BCDEFGAHGZBCGZBDIZJABKLZABSMLDNLOLSPLBQLSMLZRZBCDUAUNUOUPUS
+      UNUOJUPUQBDRDAUBUCUDAUEQLSUFULGSSUGTTZURTURABUHBDUTURUIUJUKUM $.
   $}
 
 
