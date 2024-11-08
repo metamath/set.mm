@@ -157130,6 +157130,15 @@ $)
       UQZNURZRZSJZOZWGVSVTSCNURZRZSJVKVLVOWHKVMABWDDWDUSZUTVAVNVPVQWGVNDHVKVLVM
       VBVCVDVNWFWJVSSVNVTWEWIVNWDCSNVNWDBTWBAWAIJWCMJNOUQCABWDDWKVJEVEVFVGVHVI
       $.
+
+    $( Closure of the function ` F ` which defines the Legendre symbol at the
+       primes.  (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    lgsfcl3 $p |- ( ( A e. ZZ /\ N e. ZZ /\ N =/= 0 ) -> F : NN --> ZZ ) $=
+      ( cz wcel cc0 wne w3a cn c2 cmo co c1 cif cmin cexp cmpt wf cv wceq cdvds
+      cprime wbr c8 cpr cneg cdiv caddc cpc eqid lgsfcl clgs lgsval4lem eqtr4di
+      c7 feq1d mpbid ) AFGDFGDHIJZKFBKBUAZUDGZVALUBLAUCUEHAUFMNOUQUGGOOUHPPAVAO
+      QNLUINRNOUJNVAMNOQNPVADUKNZRNOPSZTKFCTABVDDVDULZUMUTKFVDCUTVDBKVBAVAUNNVC
+      RNOPSCABVDDVEUOEUPURUS $.
   $}
 
 
