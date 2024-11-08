@@ -157039,6 +157039,24 @@ $)
       DUEJQQUBRRBULQSPKUFPTPQUGPULOPQSPRULCUHPTPQRUIZCDUMUJEUK $.
   $}
 
+  ${
+    $d n x y A $.  $d x y F $.  $d n x y N $.  $d n P $.
+    $( The Legendre symbol when the second argument is zero.  (Contributed by
+       Mario Carneiro, 4-Feb-2015.) $)
+    lgs0 $p |- ( A e. ZZ -> ( A /L 0 ) = if ( ( A ^ 2 ) = 1 , 1 , 0 ) ) $=
+      ( vn cz wcel cc0 clgs co wceq c2 cexp c1 cif clt wbr wa cfv cmul cmo cmin
+      eqid cneg cabs cn cv cprime cdvds c8 c7 cpr cdiv caddc cpc cmpt 0z lgsval
+      cseq mpan2 iftruei eqtrdi ) ACDZAEFGZEEHZAIJGKHKELZEEMNAEMNOKUAZKLEUBPQBU
+      CBUDZUEDVEIHIAUFNEAUGRGKUHUIDKVDLLAVEKSGIUJGJGKUKGVERGKSGLVEEULGJGKLUMZKU
+      PPQGZLZVCUTECDVAVHHUNABVFEVFTUOUQVBVCVGETURUS $.
+
+    $( The Legendre symbol is an integer.  (Contributed by Mario Carneiro,
+       4-Feb-2015.) $)
+    lgscl $p |- ( ( A e. ZZ /\ N e. ZZ ) -> ( A /L N ) e. ZZ ) $=
+      ( vx cz wcel wa cv cabs cfv c1 cle crab clgs co ssrab2 eqid lgscl2 sselid
+      wbr ) ADEBDEFCGHIJKSZCDLZDABMNTCDOCABUAUAPQR $.
+  $}
+
 
 $(
 ###############################################################################
