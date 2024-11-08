@@ -157055,6 +157055,24 @@ $)
     lgscl $p |- ( ( A e. ZZ /\ N e. ZZ ) -> ( A /L N ) e. ZZ ) $=
       ( vx cz wcel wa cv cabs cfv c1 cle crab clgs co ssrab2 eqid lgscl2 sselid
       wbr ) ADEBDEFCGHIJKSZCDLZDABMNTCDOCABUAUAPQR $.
+
+    $( The Legendre symbol has absolute value less than or equal to 1.
+       Together with ~ lgscl this implies that it takes values in
+       ` { -u 1 , 0 , 1 } ` .  (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    lgsle1 $p |- ( ( A e. ZZ /\ N e. ZZ ) -> ( abs ` ( A /L N ) ) <_ 1 ) $=
+      ( vx cz wcel wa clgs co cv cabs cfv cle wbr crab eqid lgscl2 fveq2 breq1d
+      c1 wceq elrab simprbi syl ) ADEBDEFABGHZCIZJKZSLMZCDNZEZUDJKZSLMZCABUHUHO
+      PUIUDDEUKUGUKCUDDUEUDTUFUJSLUEUDJQRUAUBUC $.
+
+    $( The Legendre symbol at a prime (this is the traditional domain of the
+       Legendre symbol, except for the addition of prime ` 2 ` ).  (Contributed
+       by Mario Carneiro, 4-Feb-2015.) $)
+    lgsval2 $p |- ( ( A e. ZZ /\ P e. Prime ) -> ( A /L P ) = if ( P = 2 ,
+      if ( 2 || A , 0 , if ( ( A mod 8 ) e. { 1 , 7 } , 1 , -u 1 ) ) ,
+        ( ( ( ( A ^ ( ( P - 1 ) / 2 ) ) + 1 ) mod P ) - 1 ) ) ) $=
+      ( vn cn cv cprime wcel c2 wceq cdvds wbr cc0 c8 cmo co c1 cif cmin cexp
+      c7 cpr cneg cdiv caddc cpc cmpt eqid lgsval2lem ) ACCDCEZFGUIHIHAJKLAMNOP
+      TUAGPPUBQQAUIPROHUCOSOPUDOUINOPROQUIBUEOSOPQUFZBUJUGUH $.
   $}
 
 
