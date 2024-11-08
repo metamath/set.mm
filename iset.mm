@@ -157301,6 +157301,36 @@ $)
       CDZWJHXGHBCXGWIBRDHWPBWIRWTUHBWIHTGVPUJBWIRDBGUNDHBGTVPUKBGHTVPVQHGBVQVPV
       SUQVRUPUQUPURWIIJZXBWMXCXHWJEXEXJXFGUSPVFWOUTWIBAVAQHIJZWMKHLMHBNMXIHEHOJ
       XKVTHSPWOKHVCWAWBVHWCHBUFQVJVKVK $.
+
+    ${
+      lgsdir2lem2.1 $e |- ( K e. ZZ /\ 2 || ( K + 1 ) /\
+        ( ( A e. ZZ /\ -. 2 || A ) ->
+          ( ( A mod 8 ) e. ( 0 ... K ) -> ( A mod 8 ) e. S ) ) ) $.
+      lgsdir2lem2.2 $e |- M = ( K + 1 ) $.
+      lgsdir2lem2.3 $e |- N = ( M + 1 ) $.
+      lgsdir2lem2.4 $e |- N e. S $.
+      $( Lemma for ~ lgsdir2 .  (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+      lgsdir2lem2 $p |- ( N e. ZZ /\ 2 || ( N + 1 ) /\
+        ( ( A e. ZZ /\ -. 2 || A ) ->
+          ( ( A mod 8 ) e. ( 0 ... N ) -> ( A mod 8 ) e. S ) ) ) $=
+        ( cz wcel c2 c1 caddc co cdvds wbr cc0 cfz ax-1cn wn cmo simp1i peano2z
+        wa c8 wi ax-mp eqeltri simp2i wb 2z dvdsadd mp2an mpbi cc addcomi eqtri
+        zcn oveq1i df-2 add32i eqtr4i 2cn addassi breqtrri cmin wceq wo cuz cfv
+        elfzuz2 fzm1 syl ibi mvrraddi oveq2i eleq2s eleq2i simp3i syl5bi cn 2nn
+        8nn w3a c4 cmul 4z dvdsmul2 4t2e8 breqtri dvdsmod mpan2 mp3an12 biimpar
+        notbid id breqtrrid nsyl pm2.21d jaod syl5 eleq1 mpbiri a1i 3pm3.2i ) E
+        JKLEMNOZPQAJKZLAPQZUAZUEZAUFUBOZRESOKZXLBKZUGUGEDMNOZJHDJKZXOJKDCMNOZJG
+        CJKZXQJKZXRLXQPQZXKXLRCSOZKZXNUGUGZFUCZCUDUHZUIZDUDUHUILLXQNOZXGPXTLYGP
+        QZXRXTYCFUJZLJKZXSXTYHUKULYELXQUMUNUOXGLCNOZMNOYGEYKMNEMCNOZMNOZYKEXOYM
+        HDYLMNDXQYLGCMXRCUPKYDCUSUHZTUQURUTURYKMMNOZCNOYMLYOCNVAUTMCMTYNTVBVCVC
+        UTLCMVDYNTVEURVFXMXLREMVGOZSOZKZXLEVHZVIZXKXNXMYTXMERVJVKZKXMYTUKXLREVL
+        XLREVMVNVOXKYRXNYSYRXLRDMVGOZSOZKZXLDVHZVIZXKXNUUFXLRDSOZYQXLUUGKZUUFUU
+        HDUUAKUUHUUFUKXLRDVLXLRDVMVNVOYPDRSEDMXPDUPKYFDUSUHTHVPVQVRXKUUDXNUUEUU
+        DYBXKXNUUCYAXLUUBCRSDCMYNTGVPVQVSXRXTYCFVTWAXKUUEXNXKLXLPQZUUEXHUUIUAXJ
+        XHUUIXILWBKZUFWBKZXHUUIXIUKZWCWDUUJUUKXHWELUFPQUULLWFLWGOZUFPWFJKYJLUUM
+        PQWHULWFLWIUNWJWKLAUFWLWMWNWPWOUUELDXLPLXQDPYIGVFUUEWQWRWSWTXAXBYSXNUGX
+        KYSXNEBKIXLEBXCXDXEXAXBXF $.
+    $}
   $}
 
 
