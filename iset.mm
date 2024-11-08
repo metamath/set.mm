@@ -31281,6 +31281,12 @@ $)
       ROADEJUEGPQABSBUETHBUAUBUC $.
   $}
 
+  $( Negating the first argument swaps the last two arguments of a conditional
+     operator.  (Contributed by NM, 21-Jun-2007.) $)
+  ifnotdc $p |- ( DECID ph -> if ( -. ph , A , B ) = if ( ph , B , A ) ) $=
+    ( wdc wn wo cif wceq df-dc notnot iffalsed iftrue eqtr4d iffalse jaoi sylbi
+    ) ADAAEZFQBCGZACBGZHZAIATQARCSAQBCAJKACBLMQRBSQBCLACBNMOP $.
+
   $( Rewrite a conjunction in a conditional as two nested conditionals.
      (Contributed by Mario Carneiro, 28-Jul-2014.) $)
   ifandc $p |- ( DECID ph
