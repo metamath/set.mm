@@ -19549,9 +19549,9 @@ $)
   $}
 
   ${
-    $d x A $.  $d w x $.  $d w A $.  $d y w $.
-    $( Substitution applied to an atomic wff (class version of ~ equsb3 ).
-       (Contributed by Rodolfo Medina, 28-Apr-2010.) $)
+    $d w x A $.  $d w y $.
+    $( Substitution for the left-hand side in an equality.  Class version of
+       ~ equsb3 .  (Contributed by Rodolfo Medina, 28-Apr-2010.) $)
     eqsb1 $p |- ( [ y / x ] x = A <-> y = A ) $=
       ( vw cv wceq wsb eqsb1lem sbbii nfv sbco2 3bitr3i ) AECFZADGZDBGDECFZDBGM
       ABGBECFNODBADCHIMABDMDJKDBCHL $.
@@ -26421,8 +26421,8 @@ $)
 
   ${
     $d x y B $.  $d y A $.
-    $( Substitution applied to an atomic wff.  Set theory version of ~ eqsb1 .
-       (Contributed by Andrew Salmon, 29-Jun-2011.) $)
+    $( Substitution for the left-hand side in an equality.  Class version of
+       ~ eqsb1 .  (Contributed by Andrew Salmon, 29-Jun-2011.) $)
     eqsbc1 $p |- ( A e. V -> ( [. A / x ]. x = B <-> A = B ) ) $=
       ( vy cv wceq wsbc dfsbcq eqeq1 wsb sbsbc eqsb1 bitr3i vtoclbg ) AFCGZAEFZ
       HZQCGZPABHBCGEBDPAQBIQBCJRPAEKSPAELAECMNO $.
@@ -26590,10 +26590,9 @@ $)
 
   ${
     $d x B $.
-    $( ~ eqsbc1 with setvar variable on right side of equals sign.
-       (Contributed by Alan Sare, 24-Oct-2011.)  (Proof shortened by JJ,
-       7-Jul-2021.) $)
-    eqsbc1r $p |- ( A e. V -> ( [. A / x ]. B = x <-> B = A ) ) $=
+    $( Substitution for the right-hand side in an equality.  (Contributed by
+       Alan Sare, 24-Oct-2011.)  (Proof shortened by JJ, 7-Jul-2021.) $)
+    eqsbc2 $p |- ( A e. V -> ( [. A / x ]. B = x <-> B = A ) ) $=
       ( wcel cv wceq wsbc eqsbc1 eqcom sbcbii 3bitr4g ) BDEAFZCGZABHBCGCMGZABHC
       BGABCDIONABCMJKCBJL $.
   $}

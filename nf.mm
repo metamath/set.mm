@@ -21292,8 +21292,8 @@ $)
 
   ${
     $d w x A $.  $d w y $.
-    $( Substitution applied to an atomic wff (class version of ~ equsb3 ).
-       (Contributed by Rodolfo Medina, 28-Apr-2010.) $)
+    $( Substitution for the left-hand side in an equality.  Class version of
+       ~ equsb3 .  (Contributed by Rodolfo Medina, 28-Apr-2010.) $)
     eqsb1 $p |- ( [ y / x ] x = A <-> y = A ) $=
       ( vw cv wceq wsb eqsb1lem sbbii nfv sbco2 3bitr3i ) AECFZADGZDBGDECFZDBGM
       ABGBECFNODBADCHIMABDMDJKDBCHL $.
@@ -27290,8 +27290,8 @@ $)
 
   ${
     $d x y B $.  $d y A $.
-    $( Substitution applied to an atomic wff.  Set theory version of ~ eqsb1 .
-       (Contributed by Andrew Salmon, 29-Jun-2011.) $)
+    $( Substitution for the left-hand side in an equality.  Class version of
+       ~ eqsb1 .  (Contributed by Andrew Salmon, 29-Jun-2011.) $)
     eqsbc1 $p |- ( A e. V -> ( [. A / x ]. x = B <-> A = B ) ) $=
       ( vy cv wceq wsbc dfsbcq eqeq1 wsb sbsbc eqsb1 bitr3i vtoclbg ) AFCGZAEFZ
       HZQCGZPABHBCGEBDPAQBIQBCJRPAEKSPAELAECMNO $.
@@ -27436,11 +27436,11 @@ $)
 
   ${
     $d x C $.  $d x A $.
-    $( ~ eqsbc1 with setvar variable on right side of equals sign.  This proof
-       was automatically generated from the virtual deduction proof eqsbc1rVD
-       in set.mm using a translation program.  (Contributed by Alan Sare,
+    $( Substitution for the right-hand side in an equality.  This proof was
+       automatically generated from the virtual deduction proof eqsbc2VD in
+       set.mm using a translation program.  (Contributed by Alan Sare,
        24-Oct-2011.) $)
-    eqsbc1r $p |- ( A e. B -> ( [. A / x ]. C = x <-> C = A ) ) $=
+    eqsbc2 $p |- ( A e. B -> ( [. A / x ]. C = x <-> C = A ) ) $=
       ( wcel wceq wsbc eqcom sbcbii biimpi eqsbc1 syl5ib syl6ib syl6ibr sylibrd
       cv idd impbid ) BCEZDAPZFZABGZDBFZSUBBDFZUCUBTDFZABGZSUDUBUFUAUEABDTHIZJA
       BDCKZLBDHZMSUCUFUBSUCUDUFSUCUCUDSUCQUINUHOUGNR $.
