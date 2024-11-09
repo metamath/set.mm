@@ -15537,7 +15537,7 @@ New usage of "dfeu" is discouraged (0 uses).
 New usage of "dffr2ALT" is discouraged (0 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
 New usage of "dfid2" is discouraged (1 uses).
-New usage of "dfid2ALT" is discouraged (0 uses).
+New usage of "bj-dfid2ALT" is discouraged (0 uses).
 New usage of "dfid2OLD" is discouraged (0 uses).
 New usage of "dfid3" is discouraged (1 uses).
 New usage of "dfiop2" is discouraged (3 uses).
@@ -19418,7 +19418,7 @@ Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dffr2ALT" is discouraged (64 steps).
-Proof modification of "dfid2ALT" is discouraged (157 steps).
+Proof modification of "bj-dfid2ALT" is discouraged (157 steps).
 Proof modification of "dfid2OLD" is discouraged (3 steps).
 Proof modification of "dfmo" is discouraged (44 steps).
 Proof modification of "dfnul2OLD" is discouraged (38 steps).
