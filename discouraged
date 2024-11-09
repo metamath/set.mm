@@ -14397,6 +14397,7 @@ New usage of "bj-currypeirce" is discouraged (0 uses).
 New usage of "bj-denot" is discouraged (0 uses).
 New usage of "bj-dtru" is discouraged (0 uses).
 New usage of "bj-elabd2ALT" is discouraged (0 uses).
+New usage of "bj-elissetALT" is discouraged (0 uses).
 New usage of "bj-equsalhv" is discouraged (0 uses).
 New usage of "bj-eximALT" is discouraged (1 uses).
 New usage of "bj-gl4" is discouraged (0 uses).
@@ -19174,6 +19175,7 @@ Proof modification of "bj-consensusALT" is discouraged (30 steps).
 Proof modification of "bj-csbprc" is discouraged (47 steps).
 Proof modification of "bj-currypeirce" is discouraged (16 steps).
 Proof modification of "bj-denotes" is discouraged (26 steps).
+Proof modification of "bj-denoteslem" is discouraged (33 steps).
 Proof modification of "bj-df-ifc" is discouraged (60 steps).
 Proof modification of "bj-dfif" is discouraged (39 steps).
 Proof modification of "bj-dfnnf3" is discouraged (34 steps).
@@ -19187,7 +19189,8 @@ Proof modification of "bj-dvelimdv1" is discouraged (63 steps).
 Proof modification of "bj-dvelimv" is discouraged (25 steps).
 Proof modification of "bj-eeanvw" is discouraged (32 steps).
 Proof modification of "bj-elabd2ALT" is discouraged (100 steps).
-Proof modification of "bj-elisset" is discouraged (24 steps).
+Proof modification of "bj-elabtru" is discouraged (25 steps).
+Proof modification of "bj-elissetALT" is discouraged (24 steps).
 Proof modification of "bj-endbase" is discouraged (81 steps).
 Proof modification of "bj-endcomp" is discouraged (81 steps).
 Proof modification of "bj-endmnd" is discouraged (234 steps).
@@ -19229,6 +19232,7 @@ Proof modification of "bj-imn3ani" is discouraged (18 steps).
 Proof modification of "bj-inrab2" is discouraged (48 steps).
 Proof modification of "bj-isseti" is discouraged (15 steps).
 Proof modification of "bj-issetiv" is discouraged (15 steps).
+Proof modification of "bj-issettru" is discouraged (26 steps).
 Proof modification of "bj-issetw" is discouraged (21 steps).
 Proof modification of "bj-issetwt" is discouraged (63 steps).
 Proof modification of "bj-jarrii" is discouraged (10 steps).
