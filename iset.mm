@@ -18013,9 +18013,11 @@ $)
 
   ${
     $d w x z $.  $d w y $.
-    $( Substitution applied to an atomic membership wff.  (Contributed by NM,
-       7-Nov-2006.)  (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
-    elsb3 $p |- ( [ y / x ] x e. z <-> y e. z ) $=
+    $( Substitution for the first argument of the non-logical predicate in an
+       atomic formula.  See ~ elsb2 for substitution for the second argument.
+       (Contributed by NM, 7-Nov-2006.)  (Proof shortened by Andrew Salmon,
+       14-Jun-2011.) $)
+    elsb1 $p |- ( [ y / x ] x e. z <-> y e. z ) $=
       ( vw wel wsb ax-17 elequ1 sbieh sbbii sbco2h bitr3i wb equsb1 sbimi ax-mp
       weq sbbi mpbi sbh 3bitri ) ACEZABFZDCEZDBFZBCEZDBFZUFUCUDDAFZABFUEUHUBABU
       DUBDAUBDGDACHIJUDDBAUDAGKLUDUFMZDBFZUEUGMDBQZDBFUJDBNUKUIDBDBCHOPUDUFDBRS
@@ -18024,10 +18026,11 @@ $)
 
   ${
     $d w x z $.  $d w y $.
-    $( Substitution applied to an atomic membership wff.  (Contributed by
-       Rodolfo Medina, 3-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       14-Jun-2011.) $)
-    elsb4 $p |- ( [ y / x ] z e. x <-> z e. y ) $=
+    $( Substitution for the second argument of the non-logical predicate in an
+       atomic formula.  See ~ elsb1 for substitution for the first argument.
+       (Contributed by Rodolfo Medina, 3-Apr-2010.)  (Proof shortened by Andrew
+       Salmon, 14-Jun-2011.) $)
+    elsb2 $p |- ( [ y / x ] z e. x <-> z e. y ) $=
       ( vw wel wsb ax-17 elequ2 sbieh sbbii sbco2h bitr3i wb equsb1 sbimi ax-mp
       weq sbbi mpbi sbh 3bitri ) CAEZABFZCDEZDBFZCBEZDBFZUFUCUDDAFZABFUEUHUBABU
       DUBDAUBDGDACHIJUDDBAUDAGKLUDUFMZDBFZUEUGMDBQZDBFUJDBNUKUIDBDBCHOPUDUFDBRS
@@ -18611,7 +18614,7 @@ $)
        [Jech] p. 4 showing that "Every set can be considered to be a class."
        (Contributed by NM, 7-Nov-2006.) $)
     cvjust $p |- x = { y | y e. x } $=
-      ( vz cv wcel cab wceq wb dfcleq wsb df-clab elsb3 bitr2i mpgbir ) ADZBDOE
+      ( vz cv wcel cab wceq wb dfcleq wsb df-clab elsb1 bitr2i mpgbir ) ADZBDOE
       ZBFZGCDZOEZRQEZHCCOQITPBCJSPCBKBCALMN $.
   $}
 
@@ -19555,20 +19558,22 @@ $)
   $}
 
   ${
-    $d x A $.  $d w x $.  $d w A $.  $d w y $.
-    $( Substitution applied to an atomic wff (class version of ~ elsb3 ).
-       (Contributed by Rodolfo Medina, 28-Apr-2010.)  (Proof shortened by
-       Andrew Salmon, 14-Jun-2011.) $)
-    clelsb3 $p |- ( [ y / x ] x e. A <-> y e. A ) $=
+    $d w x A $.  $d w y $.
+    $( Substitution for the first argument of the membership predicate in an
+       atomic formula (class version of ~ elsb1 ).  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       14-Jun-2011.) $)
+    clelsb1 $p |- ( [ y / x ] x e. A <-> y e. A ) $=
       ( vw cv wcel wsb nfv sbco2 eleq1 sbie sbbii 3bitr3i ) DEZCFZDAGZABGODBGAE
       ZCFZABGBEZCFZODBAOAHIPRABORDARDHNQCJKLOTDBTDHNSCJKM $.
   $}
 
   ${
-    $d x A $.  $d w x $.  $d w A $.  $d w y $.
-    $( Substitution applied to an atomic wff (class version of ~ elsb4 ).
-       (Contributed by Jim Kingdon, 22-Nov-2018.) $)
-    clelsb4 $p |- ( [ y / x ] A e. x <-> A e. y ) $=
+    $d w x A $.  $d w y $.
+    $( Substitution for the second argument of the membership predicate in an
+       atomic formula (class version of ~ elsb2 ).  (Contributed by Jim
+       Kingdon, 22-Nov-2018.) $)
+    clelsb2 $p |- ( [ y / x ] A e. x <-> A e. y ) $=
       ( vw cv wcel wsb nfv sbco2 eleq2 sbie sbbii 3bitr3i ) CDEZFZDAGZABGODBGCA
       EZFZABGCBEZFZODBAOAHIPRABORDARDHNQCJKLOTDBTDHNSCJKM $.
   $}
@@ -19589,7 +19594,7 @@ $)
     $( Change the free variable of a hypothesis builder.  (Contributed by NM,
        5-Aug-1993.)  (Revised by Andrew Salmon, 11-Jul-2011.) $)
     hblem $p |- ( z e. A -> A. x z e. A ) $=
-      ( cv wcel wsb wal hbsb clelsb3 albii 3imtr3i ) BFDGZBCHZOAICFDGZPAINBCAEJ
+      ( cv wcel wsb wal hbsb clelsb1 albii 3imtr3i ) BFDGZBCHZOAICFDGZPAINBCAEJ
       BCDKZOPAQLM $.
   $}
 
@@ -19952,12 +19957,12 @@ $)
 
   ${
     $d w x $.  $d w A $.  $d w y $.
-    clelsb3f.1 $e |- F/_ x A $.
-    $( Substitution applied to an atomic wff (class version of ~ elsb3 ).
-       (Contributed by Rodolfo Medina, 28-Apr-2010.)  (Proof shortened by
-       Andrew Salmon, 14-Jun-2011.)  (Revised by Thierry Arnoux,
-       13-Mar-2017.) $)
-    clelsb3f $p |- ( [ y / x ] x e. A <-> y e. A ) $=
+    clelsb1f.1 $e |- F/_ x A $.
+    $( Substitution for the first argument of the membership predicate in an
+       atomic formula (class version of ~ elsb1 ).  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon, 14-Jun-2011.)
+       (Revised by Thierry Arnoux, 13-Mar-2017.) $)
+    clelsb1f $p |- ( [ y / x ] x e. A <-> y e. A ) $=
       ( vw cv wcel wsb nfcri sbco2 nfv eleq1w sbie sbbii 3bitr3i ) EFCGZEAHZABH
       PEBHAFCGZABHBFCGZPEBAAECDIJQRABPREAREKEACLMNPSEBSEKEBCLMO $.
   $}
@@ -21434,7 +21439,7 @@ $)
        are distinct.  See ~ nfraldxy for a version with ` x ` and ` y `
        distinct instead.  (Contributed by Jim Kingdon, 30-May-2018.) $)
     nfraldya $p |- ( ph -> F/ x A. y e. A ps ) $=
-      ( vz wral cv wcel wi wal df-ral wsb sbim clelsb3 nfv nfxfrd bitri 3bitr4i
+      ( vz wral cv wcel wi wal df-ral wsb sbim clelsb1 nfv nfxfrd bitri 3bitr4i
       imbi1i albii sb8 nfsbd nfraldxy ) BDEJDKELZBMZDNZACBDEOUJBDIPZIEJZACUIDIP
       ZINIKELZUKMZINUJULUMUOIUMUHDIPZUKMUOUHBDIQUPUNUKDIERUCUAUDUIDIUIISUEUKIEO
       UBAUKCIEAISGABDICFHUFUGTT $.
@@ -21443,7 +21448,7 @@ $)
        are distinct.  See ~ nfrexdxy for a version with ` x ` and ` y `
        distinct instead.  (Contributed by Jim Kingdon, 30-May-2018.) $)
     nfrexdya $p |- ( ph -> F/ x E. y e. A ps ) $=
-      ( vz wrex cv wcel wa wex df-rex wsb sban clelsb3 nfv nfxfrd bitri 3bitr4i
+      ( vz wrex cv wcel wa wex df-rex wsb sban clelsb1 nfv nfxfrd bitri 3bitr4i
       anbi1i exbii sb8e nfsbd nfrexdxy ) BDEJDKELZBMZDNZACBDEOUJBDIPZIEJZACUIDI
       PZINIKELZUKMZINUJULUMUOIUMUHDIPZUKMUOUHBDIQUPUNUKDIERUCUAUDUIDIUIISUEUKIE
       OUBAUKCIEAISGABDICFHUFUGTT $.
@@ -23089,7 +23094,7 @@ $)
        15-Oct-2016.) $)
     cbvreu $p |- ( E! x e. A ph <-> E! y e. A ps ) $=
       ( vz cv wcel wa weu wreu wsb nfv sb8eu sban eubii df-reu anbi1i nfsb nfan
-      clelsb3 weq eleq1 sbequ sbie bitrdi anbi12d cbveu bitri 3bitri 3bitr4i )
+      clelsb1 weq eleq1 sbequ sbie bitrdi anbi12d cbveu bitri 3bitri 3bitr4i )
       CJEKZALZCMZDJZEKZBLZDMZACENBDENUQUPCIOZIMUOCIOZACIOZLZIMZVAUPCIUPIPQVBVEI
       UOACIRSVFIJZEKZVDLZIMVAVEVIIVCVHVDCIEUDUASVIUTIDVHVDDVHDPACIDFUBUCUTIPIDU
       EZVHUSVDBVGUREUFVJVDACDOBAIDCUGABCDGHUHUIUJUKULUMACETBDETUN $.
@@ -25659,7 +25664,7 @@ $)
     rmo3f $p |- ( E* x e. A ph <->
                A. x e. A A. y e. A ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
       ( cv wcel wa wsb wi wral wal anbi1i bitri 3bitri impexp albii df-ral wrmo
-      wmo weq df-rmo sban clelsb3f anbi2i an4 ancom imbi1i nfcri r19.21 3bitr2i
+      wmo weq df-rmo sban clelsb1f anbi2i an4 ancom imbi1i nfcri r19.21 3bitr2i
       nfan mo3 3bitr4i ) ABDUABHDIZAJZBUBZAABCKZJZBCUCZLZCDMZBDMZABDUDURURBCKZJ
       ZVBLZCNZBNUQVDLZBNUSVEVIVJBVICHDIZUQVCLZLZCNVLCDMVJVHVMCVHVKUQJZVAJZVBLVN
       VCLVMVGVOVBVGURVKUTJZJUQVKJZVAJVOVFVPURVFUQBCKZUTJVPUQABCUEVRVKUTBCDEUFOP
@@ -26605,7 +26610,7 @@ $)
     $( Class substitution into a membership relation.  (Contributed by NM,
        17-Aug-2018.) $)
     sbcel1v $p |- ( [. A / x ]. x e. B <-> A e. B ) $=
-      ( vy wcel wsbc cvv sbcex elex wsb dfsbcq2 eleq1 clelsb3 vtoclbg pm5.21nii
+      ( vy wcel wsbc cvv sbcex elex wsb dfsbcq2 eleq1 clelsb1 vtoclbg pm5.21nii
       cv ) APCEZABFZBGEBCEZQABHBCIQADJDPZCERSDBGQADBKTBCLADCMNO $.
   $}
 
@@ -26893,7 +26898,7 @@ $)
     rmo3 $p |- ( E* x e. A ph <->
                A. x e. A A. y e. A ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
       ( wrmo cv wcel wa wmo wsb wi wral anbi1i bitri 3bitri impexp albii df-ral
-      wal weq df-rmo sban clelsb3 anbi2i an4 ancom r19.21v 3bitr2i nfv nfan mo3
+      wal weq df-rmo sban clelsb1 anbi2i an4 ancom r19.21v 3bitr2i nfv nfan mo3
       imbi1i 3bitr4i ) ABDFBGDHZAIZBJZAABCKZIZBCUAZLZCDMZBDMZABDUBUPUPBCKZIZUTL
       ZCTZBTUOVBLZBTUQVCVGVHBVGCGDHZUOVALZLZCTVJCDMVHVFVKCVFVIUOIZUSIZUTLVLVALV
       KVEVMUTVEUPVIURIZIUOVIIZUSIVMVDVNUPVDUOBCKZURIVNUOABCUCVPVIURBCDUDNOUEUOA
@@ -40395,7 +40400,7 @@ $)
        Mario Carneiro and Jim Kingdon, 22-Oct-2018.) $)
     setindel $p |- ( A. x ( A. y ( y e. x -> y e. S ) -> x e. S ) ->
         S = _V ) $=
-      ( cv wcel wi wal cvv wceq wsb wral clelsb3 ralbii df-ral imbi1i ax-setind
+      ( cv wcel wi wal cvv wceq wsb wral clelsb1 ralbii df-ral imbi1i ax-setind
       bitri albii sylbir eqv sylibr ) BDZADZEUBCEZFBGZUCCEZFZAGZUFAGZCHIUHUFABJ
       ZBUCKZUFFZAGUIULUGAUKUEUFUKUDBUCKUEUJUDBUCABCLMUDBUCNQORUFBAPSACTUA $.
   $}
@@ -40438,7 +40443,7 @@ $)
     elirr $p |- -. A e. A $=
       ( vx vy wcel cvv csn cdif cv wal wsb wral wi wn neldifsnd eleq1 spcgv mpd
       wceq sylibr albii wa w3a simp1 imbi12d pm2.43b 3ad2ant2 wb eleq2 3ad2ant3
-      imbi1d mpbid 3expia mtod vex eldif mpbiran xchbinx alrimiv df-ral clelsb3
+      imbi1d mpbid 3expia mtod vex eldif mpbiran xchbinx alrimiv df-ral clelsb1
       velsn ex imbi2i bitri imbi1i ax-setind syl pm2.65i ) AADZAEAFZGZDZVIBHZVK
       DZBIZVLVIVNBCJZCVMKZVNLZBIZVOVICHZVMDZVTVKDZLZCIZVNLZBIVSVIWEBVIWDVNVIWDU
       AZVMARZMVNWFWGVLWFAENVIWDWGVLVIWDWGUBZVIVLVIWDWGUCWHAVMDZVLLZVIVLLZWDVIWJ
@@ -40547,7 +40552,7 @@ $)
       ( vx vy wcel wa cvv cv wal wi wceq wn elex eldif pm3.4 eleq1 spcgv adantr
       syl mpd cpr cdif wsb wral wo prid2g sylbi com12 mt2d ad2antlr w3a imbi12d
       simp1r pm2.43b 3ad2ant2 wb eleq2 imbi1d 3ad2ant3 mpbid 3expia mtod prid1g
-      simp1l sylanbrc vex mpbiran elpr xchbinx sylibr ex alrimiv df-ral clelsb3
+      simp1l sylanbrc vex mpbiran elpr xchbinx sylibr ex alrimiv df-ral clelsb1
       ioran imbi2i albii bitri imbi1i ax-setind pm2.65i ) ABEZBAEZFZAGABUAZUBZE
       ZWDCHZWFEZCIZWGWDWICDUCZDWHUDZWIJZCIZWJWDDHZWHEZWOWFEZJZDIZWIJZCIWNWDWTCW
       DWSWIWDWSFZWHAKZWHBKZUEZLZWIXAXBLXCLXEXAXBBWFEZWCXFLZWBWSWCBGEZXGBAMXHXFB
@@ -40819,7 +40824,7 @@ $)
     $( The epsilon relation is well-founded on any class.  (Contributed by NM,
        26-Nov-1995.) $)
     zfregfr $p |- _E Fr A $=
-      ( vs vy vx cep wfr cv wfrfor df-frind wel wi wral wcel wsb bitr4i clelsb3
+      ( vs vy vx cep wfr cv wfrfor df-frind wel wi wral wcel wsb bitr4i clelsb1
       wal bitri ralbii imbi1i wbr bi2.04 albii df-ral sbim imbi12i ralcom3 epel
       wss ax-setind dfss2 sylibr sylbir df-frfor mpbir mpgbir ) AEFAEBGZHZBAEBI
       URCGZDGZEUAZCBJZKZCALZDBJZKZDALZAUQUIZKVGUTAMZVEKZDCNZCUTLZVJKZDQZVHVNVLV
@@ -40954,7 +40959,7 @@ $)
     tfi $p |- ( ( A C_ On /\ A. x e. On ( x C_ A -> x e. A ) ) -> A = On ) $=
       ( vy con0 wss cv wcel wi wral wa wal df-ral albii bitri imbi1i spi imim1i
       dfss2 impexp wsb wceq imdi imbi2i 19.21v bitr4i simpl wtr tron dftr2 mpbi
-      bi2.04 3imtr3i alimi sylbi adantl clelsb3 imbi12i ralbii ax-setind sylbir
+      bi2.04 3imtr3i alimi sylbi adantl clelsb1 imbi12i ralbii ax-setind sylbir
       jca sbim sylibr syl eqss biimpri syldan ) BDEZAFZBEZVIBGZHZADIZDBEZBDUAZV
       HVMJCFZVIGZVPDGZVPBGZHZHZCKZVIDGZVKHZHZAKZVNVMWFVHVMWCVQVSHZHZCKZWDHZAKZW
       FVMWCVJHZWDHZAKZWKVMWCVLHZAKWNVLADLWOWMAWCVJVKUBMNWMWJAWLWIWDWLWCWGCKZHWI
@@ -41145,7 +41150,7 @@ $)
        by NM, 15-May-1994.) $)
     peano1 $p |- (/) e. _om $=
       ( vy vx vz c0 cv wcel csuc wral wa cab com wi 0ex elint wsb df-clab simpl
-      cint sbimi clelsb4 sylib sylbi mpgbir dfom3 eleqtrri ) DDAEZFZBEGUFFBUFHZ
+      cint sbimi clelsb2 sylib sylbi mpgbir dfom3 eleqtrri ) DDAEZFZBEGUFFBUFHZ
       IZAJZRZKDUKFCEZUJFZDULFZLCCDUJMNUMUIACOZUNUICAPUOUGACOUNUIUGACUGUHQSACDTU
       AUBUCABUDUE $.
     $( $j usage 'peano1' avoids 'ax-iinf' 'ax-setind'; $)
@@ -41157,7 +41162,7 @@ $)
        five postulates for arithmetic.  Proposition 7.30(2) of [TakeutiZaring]
        p. 42.  (Contributed by NM, 3-Sep-2003.) $)
     peano2 $p |- ( A e. _om -> suc A e. _om ) $=
-      ( vy vx vz cvv wcel com csuc cv wral wa wi imbi12d adantl wsb wal clelsb4
+      ( vy vx vz cvv wcel com csuc cv wral wa wi imbi12d adantl wsb wal clelsb2
       wb sylib nfv elex c0 cab cint simpl wceq eleq1 suceq eleq1d df-clab simpr
       df-ral sbimi sbim imbi12i bitri sbalv sylbi 19.21bi nfra1 nfan nfsab nfvd
       nfcvd vtocldf ralrimiva ralim elintg sucexg syl syl5ibr mpd dfom3 3imtr4g
@@ -160291,7 +160296,7 @@ $)
        given hypotheses.  (Contributed by BJ, 24-Nov-2019.) $)
     bdcriota $p |- Bdd_ ( iota_ x e. y ph ) $=
       ( vz vt wel wa cio cv cab wi wal wsb bicomi albii bitri imbi1i bdceqir
-      crio cint wcel wral ax-bdsb ax-bdel ax-bdim ax-bdal df-ral impexp clelsb3
+      crio cint wcel wral ax-bdsb ax-bdel ax-bdim ax-bdal df-ral impexp clelsb1
       sban anbi1i df-clab bd0 df-int weu wceq wreu df-reu mpbi iotaint df-riota
       bdcab ax-mp ) BCHZAIZBJZABCKZUAVGBLZUBZVHFKVJUCZGFHZMZFNZGLVKVOGABFOZVMMZ
       FVIUDZVOVQFCVPVMABFDUEGFUFUGUHVRVGBFOZVMMZFNZVOVRFCHZVPIZVMMZFNZWAVRWBVQM
