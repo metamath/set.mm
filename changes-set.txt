@@ -95,6 +95,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 9-Nov-24 eqsb3     elsb1
+ 9-Nov-24 eqsbc3    eqsbc1
+ 9-Nov-24 eqsbc3r   eqsbc1r
  9-Nov-24 elsb3     elsb1
  9-Nov-24 elsb4     elsb2
  9-Nov-24 clelsb3   clelsb1

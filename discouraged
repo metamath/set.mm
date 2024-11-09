@@ -5568,7 +5568,7 @@
 "e11" is used by "e11an".
 "e11" is used by "elex22VD".
 "e11" is used by "elex2VD".
-"e11" is used by "eqsbc3rVD".
+"e11" is used by "eqsbc1rVD".
 "e11" is used by "hbimpgVD".
 "e11" is used by "notnotrALTVD".
 "e11" is used by "onfrALTVD".
@@ -5603,7 +5603,7 @@
 "e12" is used by "elex22VD".
 "e12" is used by "elex2VD".
 "e12" is used by "en3lplem1VD".
-"e12" is used by "eqsbc3rVD".
+"e12" is used by "eqsbc1rVD".
 "e12" is used by "exbirVD".
 "e12" is used by "orbi1rVD".
 "e12" is used by "pwtrVD".
@@ -5659,7 +5659,7 @@
 "e1a" is used by "elex2VD".
 "e1a" is used by "en3lpVD".
 "e1a" is used by "en3lplem1VD".
-"e1a" is used by "eqsbc3rVD".
+"e1a" is used by "eqsbc1rVD".
 "e1a" is used by "exbirVD".
 "e1a" is used by "hbalgVD".
 "e1a" is used by "hbexgVD".
@@ -5782,11 +5782,11 @@
 "e233" is used by "onfrALTlem2VD".
 "e233" is used by "truniALTVD".
 "e2bi" is used by "en3lplem2VD".
-"e2bi" is used by "eqsbc3rVD".
+"e2bi" is used by "eqsbc1rVD".
 "e2bi" is used by "onfrALTlem1VD".
 "e2bi" is used by "onfrALTlem3VD".
 "e2bi" is used by "snssiALTVD".
-"e2bir" is used by "eqsbc3rVD".
+"e2bir" is used by "eqsbc1rVD".
 "e2bir" is used by "onfrALTlem1VD".
 "e2bir" is used by "pwtrVD".
 "e2bir" is used by "tpid3gVD".
@@ -8299,7 +8299,7 @@
 "idn1" is used by "en3lpVD".
 "idn1" is used by "en3lplem1VD".
 "idn1" is used by "en3lplem2VD".
-"idn1" is used by "eqsbc3rVD".
+"idn1" is used by "eqsbc1rVD".
 "idn1" is used by "equncomVD".
 "idn1" is used by "exbirVD".
 "idn1" is used by "exbiriVD".
@@ -8355,7 +8355,7 @@
 "idn2" is used by "elex2VD".
 "idn2" is used by "en3lplem1VD".
 "idn2" is used by "en3lplem2VD".
-"idn2" is used by "eqsbc3rVD".
+"idn2" is used by "eqsbc1rVD".
 "idn2" is used by "exbirVD".
 "idn2" is used by "exbiriVD".
 "idn2" is used by "hbimpgVD".
@@ -8599,7 +8599,7 @@
 "in1" is used by "en3lpVD".
 "in1" is used by "en3lplem1VD".
 "in1" is used by "en3lplem2VD".
-"in1" is used by "eqsbc3rVD".
+"in1" is used by "eqsbc1rVD".
 "in1" is used by "equncomVD".
 "in1" is used by "exbirVD".
 "in1" is used by "exbiriVD".
@@ -8661,7 +8661,7 @@
 "in2" is used by "elex2VD".
 "in2" is used by "en3lplem1VD".
 "in2" is used by "en3lplem2VD".
-"in2" is used by "eqsbc3rVD".
+"in2" is used by "eqsbc1rVD".
 "in2" is used by "exbirVD".
 "in2" is used by "exbiriVD".
 "in2" is used by "hbimpgVD".
@@ -12542,6 +12542,7 @@
 "sbco" is used by "sbid2".
 "sbco2" is used by "cbvab".
 "sbco2" is used by "clelsb1f".
+"sbco2" is used by "clelsb2".
 "sbco2" is used by "sb7f".
 "sbco2" is used by "sbcco".
 "sbco2" is used by "sbco2d".
@@ -12570,6 +12571,7 @@
 "sbie" is used by "cbvreu".
 "sbie" is used by "cbvreucsf".
 "sbie" is used by "cbvriota".
+"sbie" is used by "clelsb2".
 "sbie" is used by "nd1".
 "sbie" is used by "nd2".
 "sbie" is used by "nfcdeq".
@@ -16073,7 +16075,7 @@ New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqopab2b" is discouraged (1 uses).
 New usage of "eqoprab2b" is discouraged (1 uses).
 New usage of "eqresr" is discouraged (4 uses).
-New usage of "eqsbc3rVD" is discouraged (0 uses).
+New usage of "eqsbc1rVD" is discouraged (0 uses).
 New usage of "eqtr2OLD" is discouraged (0 uses).
 New usage of "eqtr3OLD" is discouraged (0 uses).
 New usage of "equcomi1" is discouraged (1 uses).
@@ -18373,7 +18375,7 @@ New usage of "sbcimdvOLD" is discouraged (0 uses).
 New usage of "sbcnestg" is discouraged (1 uses).
 New usage of "sbcnestgf" is discouraged (2 uses).
 New usage of "sbco" is discouraged (2 uses).
-New usage of "sbco2" is discouraged (5 uses).
+New usage of "sbco2" is discouraged (6 uses).
 New usage of "sbco2d" is discouraged (1 uses).
 New usage of "sbco3" is discouraged (1 uses).
 New usage of "sbco4lemOLD" is discouraged (0 uses).
@@ -18392,7 +18394,7 @@ New usage of "sbhb" is discouraged (0 uses).
 New usage of "sbid2" is discouraged (2 uses).
 New usage of "sbid2v" is discouraged (0 uses).
 New usage of "sbidm" is discouraged (0 uses).
-New usage of "sbie" is discouraged (19 uses).
+New usage of "sbie" is discouraged (20 uses).
 New usage of "sbied" is discouraged (3 uses).
 New usage of "sbiedv" is discouraged (1 uses).
 New usage of "sbiedwOLD" is discouraged (0 uses).
@@ -19686,7 +19688,7 @@ Proof modification of "eqeq1dALT" is discouraged (62 steps).
 Proof modification of "eqeqan12dALT" is discouraged (23 steps).
 Proof modification of "eqeqan12dOLD" is discouraged (22 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
-Proof modification of "eqsbc3rVD" is discouraged (131 steps).
+Proof modification of "eqsbc1rVD" is discouraged (131 steps).
 Proof modification of "eqtr2OLD" is discouraged (20 steps).
 Proof modification of "eqtr3OLD" is discouraged (20 steps).
 Proof modification of "equcomi1" is discouraged (16 steps).

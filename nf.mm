@@ -21284,9 +21284,9 @@ $)
 
   ${
     $d x y $.  $d x A $.
-    $( Lemma for ~ eqsb3 .  (Contributed by Rodolfo Medina, 28-Apr-2010.)
+    $( Lemma for ~ eqsb1 .  (Contributed by Rodolfo Medina, 28-Apr-2010.)
        (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
-    eqsb3lem $p |- ( [ y / x ] x = A <-> y = A ) $=
+    eqsb1lem $p |- ( [ y / x ] x = A <-> y = A ) $=
       ( cv wceq nfv eqeq1 sbie ) ADZCEBDZCEZABKAFIJCGH $.
   $}
 
@@ -21294,8 +21294,8 @@ $)
     $d w x A $.  $d w y $.
     $( Substitution applied to an atomic wff (class version of ~ equsb3 ).
        (Contributed by Rodolfo Medina, 28-Apr-2010.) $)
-    eqsb3 $p |- ( [ y / x ] x = A <-> y = A ) $=
-      ( vw cv wceq wsb eqsb3lem sbbii nfv sbco2 3bitr3i ) AECFZADGZDBGDECFZDBGM
+    eqsb1 $p |- ( [ y / x ] x = A <-> y = A ) $=
+      ( vw cv wceq wsb eqsb1lem sbbii nfv sbco2 3bitr3i ) AECFZADGZDBGDECFZDBGM
       ABGBECFNODBADCHIMABDMDJKDBCHL $.
   $}
 
@@ -26038,7 +26038,7 @@ $)
        required to be a set.  (Contributed by Andrew Salmon, 3-Jun-2011.) $)
     pm13.183 $p |- ( A e. V -> ( A = B <-> A. z ( z = A <-> z = B ) ) ) $=
       ( vy cv wceq wal eqeq1 eqeq2 bibi1d albidv alrimiv wsb stdpc4 sbbi bibi2i
-      wb eqsb3 sylbi equsb1 bi1 mpi syl impbii vtoclbg ) EFZCGZAFZUGGZUICGZRZAH
+      wb eqsb1 sylbi equsb1 bi1 mpi syl impbii vtoclbg ) EFZCGZAFZUGGZUICGZRZAH
       ZBCGUIBGZUKRZAHEBDUGBCIUGBGZULUOAUPUJUNUKUGBUIJKLUHUMUHULAUGCUIJMUMULAENZ
       UHULAEOUQUJAENZUKAENZRZUHUJUKAEPUTURUHRZUHUSUHURAECSQVAURUHAEUAURUHUBUCTT
       UDUEUF $.
@@ -27290,10 +27290,10 @@ $)
 
   ${
     $d x y B $.  $d y A $.
-    $( Substitution applied to an atomic wff.  Set theory version of ~ eqsb3 .
+    $( Substitution applied to an atomic wff.  Set theory version of ~ eqsb1 .
        (Contributed by Andrew Salmon, 29-Jun-2011.) $)
-    eqsbc3 $p |- ( A e. V -> ( [. A / x ]. x = B <-> A = B ) ) $=
-      ( vy cv wceq wsbc dfsbcq eqeq1 wsb sbsbc eqsb3 bitr3i vtoclbg ) AFCGZAEFZ
+    eqsbc1 $p |- ( A e. V -> ( [. A / x ]. x = B <-> A = B ) ) $=
+      ( vy cv wceq wsbc dfsbcq eqeq1 wsb sbsbc eqsb1 bitr3i vtoclbg ) AFCGZAEFZ
       HZQCGZPABHBCGEBDPAQBIQBCJRPAEKSPAELAECMNO $.
   $}
 
@@ -27386,7 +27386,7 @@ $)
     $( Set theory version of sbeqal1 in set.mm.  (Contributed by Andrew Salmon,
        28-Jun-2011.) $)
     sbceqal $p |- ( A e. V -> ( A. x ( x = A -> x = B ) -> A = B ) ) $=
-      ( wcel cv wceq wi wal wsbc spsbc sbcimg wb eqsbc3 mpbiri pm5.5 syl 3bitrd
+      ( wcel cv wceq wi wal wsbc spsbc sbcimg wb eqsbc1 mpbiri pm5.5 syl 3bitrd
       eqid sylibd ) BDEZAFZBGZUBCGZHZAIUEABJZBCGZUEABDKUAUFUCABJZUDABJZHZUIUGUC
       UDABDLUAUHUJUIMUAUHBBGBSABBDNOUHUIPQABCDNRT $.
   $}
@@ -27436,12 +27436,12 @@ $)
 
   ${
     $d x C $.  $d x A $.
-    $( ~ eqsbc3 with setvar variable on right side of equals sign.  This proof
-       was automatically generated from the virtual deduction proof eqsbc3rVD
+    $( ~ eqsbc1 with setvar variable on right side of equals sign.  This proof
+       was automatically generated from the virtual deduction proof eqsbc1rVD
        in set.mm using a translation program.  (Contributed by Alan Sare,
        24-Oct-2011.) $)
-    eqsbc3r $p |- ( A e. B -> ( [. A / x ]. C = x <-> C = A ) ) $=
-      ( wcel wceq wsbc eqcom sbcbii biimpi eqsbc3 syl5ib syl6ib syl6ibr sylibrd
+    eqsbc1r $p |- ( A e. B -> ( [. A / x ]. C = x <-> C = A ) ) $=
+      ( wcel wceq wsbc eqcom sbcbii biimpi eqsbc1 syl5ib syl6ib syl6ibr sylibrd
       cv idd impbid ) BCEZDAPZFZABGZDBFZSUBBDFZUCUBTDFZABGZSUDUBUFUAUEABDTHIZJA
       BDCKZLBDHZMSUCUFUBSUCUDUFSUCUCUDSUCQUINUHOUGNR $.
   $}
