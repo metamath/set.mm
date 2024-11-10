@@ -39764,8 +39764,8 @@ $)
     ifelpwund.2 $e |- ( ph -> B e. W ) $.
     $( Existence of a conditional class, quantitative version (deduction form).
        (Contributed by BJ, 15-Aug-2024.) $)
-    ifelpwund $p |- ( ph -> if ( ph , A , B ) e. ~P ( A u. B ) ) $=
-      ( wcel cif cun cpw ifelpwung syl2anc ) ABDHCEHABCIBCJKHFGABCDELM $.
+    ifelpwund $p |- ( ph -> if ( ps , A , B ) e. ~P ( A u. B ) ) $=
+      ( wcel cif cun cpw ifelpwung syl2anc ) ACEIDFIBCDJCDKLIGHBCDEFMN $.
   $}
 
   ${
@@ -39782,8 +39782,8 @@ $)
     ifexd.2 $e |- ( ph -> B e. W ) $.
     $( Existence of a conditional class (deduction form).  (Contributed by BJ,
        15-Aug-2024.) $)
-    ifexd $p |- ( ph -> if ( ph , A , B ) e. _V ) $=
-      ( cif cun cpw ifelpwund elexd ) AABCHBCIJABCDEFGKL $.
+    ifexd $p |- ( ph -> if ( ps , A , B ) e. _V ) $=
+      ( cif cun cpw ifelpwund elexd ) ABCDICDJKABCDEFGHLM $.
   $}
 
 
