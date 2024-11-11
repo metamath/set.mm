@@ -17313,6 +17313,7 @@ New usage of "mpteq12dvaOLD" is discouraged (0 uses).
 New usage of "mpteq1OLD" is discouraged (0 uses).
 New usage of "mpteq1dfOLD" is discouraged (0 uses).
 New usage of "mpteq1iOLD" is discouraged (0 uses).
+New usage of "mpteq2daOLD" is discouraged (0 uses).
 New usage of "mpteq2dvaOLD" is discouraged (0 uses).
 New usage of "mpteq2iaOLD" is discouraged (0 uses).
 New usage of "mptresidOLD" is discouraged (0 uses).
@@ -20132,6 +20133,7 @@ Proof modification of "mpteq12dvaOLD" is discouraged (39 steps).
 Proof modification of "mpteq1OLD" is discouraged (35 steps).
 Proof modification of "mpteq1dfOLD" is discouraged (40 steps).
 Proof modification of "mpteq1iOLD" is discouraged (19 steps).
+Proof modification of "mpteq2daOLD" is discouraged (47 steps).
 Proof modification of "mpteq2dvaOLD" is discouraged (10 steps).
 Proof modification of "mpteq2iaOLD" is discouraged (37 steps).
 Proof modification of "mptresidOLD" is discouraged (28 steps).
