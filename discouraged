@@ -5126,7 +5126,7 @@
 "dfhnorm2" is used by "normf".
 "dfhnorm2" is used by "normval".
 "dfid2" is used by "fsplitOLD".
-"dfid3" is used by "dfid2".
+"dfid3" is used by "dfid2OLD".
 "dfiop2" is used by "hoico1".
 "dfiop2" is used by "hoico2".
 "dfiop2" is used by "hoif".
@@ -5692,7 +5692,7 @@
 "e11" is used by "e11an".
 "e11" is used by "elex22VD".
 "e11" is used by "elex2VD".
-"e11" is used by "eqsbc3rVD".
+"e11" is used by "eqsbc2VD".
 "e11" is used by "hbimpgVD".
 "e11" is used by "notnotrALTVD".
 "e11" is used by "onfrALTVD".
@@ -5727,7 +5727,7 @@
 "e12" is used by "elex22VD".
 "e12" is used by "elex2VD".
 "e12" is used by "en3lplem1VD".
-"e12" is used by "eqsbc3rVD".
+"e12" is used by "eqsbc2VD".
 "e12" is used by "exbirVD".
 "e12" is used by "orbi1rVD".
 "e12" is used by "pwtrVD".
@@ -5783,7 +5783,7 @@
 "e1a" is used by "elex2VD".
 "e1a" is used by "en3lpVD".
 "e1a" is used by "en3lplem1VD".
-"e1a" is used by "eqsbc3rVD".
+"e1a" is used by "eqsbc2VD".
 "e1a" is used by "exbirVD".
 "e1a" is used by "hbalgVD".
 "e1a" is used by "hbexgVD".
@@ -5906,11 +5906,11 @@
 "e233" is used by "onfrALTlem2VD".
 "e233" is used by "truniALTVD".
 "e2bi" is used by "en3lplem2VD".
-"e2bi" is used by "eqsbc3rVD".
+"e2bi" is used by "eqsbc2VD".
 "e2bi" is used by "onfrALTlem1VD".
 "e2bi" is used by "onfrALTlem3VD".
 "e2bi" is used by "snssiALTVD".
-"e2bir" is used by "eqsbc3rVD".
+"e2bir" is used by "eqsbc2VD".
 "e2bir" is used by "onfrALTlem1VD".
 "e2bir" is used by "pwtrVD".
 "e2bir" is used by "tpid3gVD".
@@ -8427,7 +8427,7 @@
 "idn1" is used by "en3lpVD".
 "idn1" is used by "en3lplem1VD".
 "idn1" is used by "en3lplem2VD".
-"idn1" is used by "eqsbc3rVD".
+"idn1" is used by "eqsbc2VD".
 "idn1" is used by "equncomVD".
 "idn1" is used by "exbirVD".
 "idn1" is used by "exbiriVD".
@@ -8483,7 +8483,7 @@
 "idn2" is used by "elex2VD".
 "idn2" is used by "en3lplem1VD".
 "idn2" is used by "en3lplem2VD".
-"idn2" is used by "eqsbc3rVD".
+"idn2" is used by "eqsbc2VD".
 "idn2" is used by "exbirVD".
 "idn2" is used by "exbiriVD".
 "idn2" is used by "hbimpgVD".
@@ -8727,7 +8727,7 @@
 "in1" is used by "en3lpVD".
 "in1" is used by "en3lplem1VD".
 "in1" is used by "en3lplem2VD".
-"in1" is used by "eqsbc3rVD".
+"in1" is used by "eqsbc2VD".
 "in1" is used by "equncomVD".
 "in1" is used by "exbirVD".
 "in1" is used by "exbiriVD".
@@ -8789,7 +8789,7 @@
 "in2" is used by "elex2VD".
 "in2" is used by "en3lplem1VD".
 "in2" is used by "en3lplem2VD".
-"in2" is used by "eqsbc3rVD".
+"in2" is used by "eqsbc2VD".
 "in2" is used by "exbirVD".
 "in2" is used by "exbiriVD".
 "in2" is used by "hbimpgVD".
@@ -12691,7 +12691,8 @@
 "sbco" is used by "sbco3".
 "sbco" is used by "sbid2".
 "sbco2" is used by "cbvab".
-"sbco2" is used by "clelsb3f".
+"sbco2" is used by "clelsb1f".
+"sbco2" is used by "clelsb2".
 "sbco2" is used by "sb7f".
 "sbco2" is used by "sbcco".
 "sbco2" is used by "sbco2d".
@@ -12720,6 +12721,7 @@
 "sbie" is used by "cbvreu".
 "sbie" is used by "cbvreucsf".
 "sbie" is used by "cbvriota".
+"sbie" is used by "clelsb2".
 "sbie" is used by "nd1".
 "sbie" is used by "nd2".
 "sbie" is used by "nfcdeq".
@@ -14579,8 +14581,10 @@ New usage of "bj-consensusALT" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
 New usage of "bj-currypeirce" is discouraged (0 uses).
 New usage of "bj-denot" is discouraged (0 uses).
+New usage of "bj-dfid2ALT" is discouraged (0 uses).
 New usage of "bj-dtru" is discouraged (0 uses).
 New usage of "bj-elabd2ALT" is discouraged (0 uses).
+New usage of "bj-elissetALT" is discouraged (0 uses).
 New usage of "bj-equsalhv" is discouraged (0 uses).
 New usage of "bj-eximALT" is discouraged (1 uses).
 New usage of "bj-gl4" is discouraged (0 uses).
@@ -15394,7 +15398,7 @@ New usage of "clel4OLD" is discouraged (0 uses).
 New usage of "clelabOLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
-New usage of "clelsb3f" is discouraged (0 uses).
+New usage of "clelsb1f" is discouraged (0 uses).
 New usage of "clmgmOLD" is discouraged (1 uses).
 New usage of "cm0" is discouraged (1 uses).
 New usage of "cm2j" is discouraged (1 uses).
@@ -15732,6 +15736,7 @@ New usage of "dfeu" is discouraged (0 uses).
 New usage of "dffr2ALT" is discouraged (0 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
 New usage of "dfid2" is discouraged (1 uses).
+New usage of "dfid2OLD" is discouraged (0 uses).
 New usage of "dfid3" is discouraged (1 uses).
 New usage of "dfiop2" is discouraged (3 uses).
 New usage of "dfmo" is discouraged (0 uses).
@@ -16270,7 +16275,7 @@ New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqopab2b" is discouraged (1 uses).
 New usage of "eqoprab2b" is discouraged (1 uses).
 New usage of "eqresr" is discouraged (4 uses).
-New usage of "eqsbc3rVD" is discouraged (0 uses).
+New usage of "eqsbc2VD" is discouraged (0 uses).
 New usage of "eqtr2OLD" is discouraged (0 uses).
 New usage of "eqtr3OLD" is discouraged (0 uses).
 New usage of "equcomi1" is discouraged (1 uses).
@@ -18614,7 +18619,7 @@ New usage of "sbcimdvOLD" is discouraged (0 uses).
 New usage of "sbcnestg" is discouraged (1 uses).
 New usage of "sbcnestgf" is discouraged (2 uses).
 New usage of "sbco" is discouraged (2 uses).
-New usage of "sbco2" is discouraged (5 uses).
+New usage of "sbco2" is discouraged (6 uses).
 New usage of "sbco2d" is discouraged (1 uses).
 New usage of "sbco3" is discouraged (1 uses).
 New usage of "sbco4lemOLD" is discouraged (0 uses).
@@ -18633,7 +18638,7 @@ New usage of "sbhb" is discouraged (0 uses).
 New usage of "sbid2" is discouraged (2 uses).
 New usage of "sbid2v" is discouraged (0 uses).
 New usage of "sbidm" is discouraged (0 uses).
-New usage of "sbie" is discouraged (19 uses).
+New usage of "sbie" is discouraged (20 uses).
 New usage of "sbied" is discouraged (3 uses).
 New usage of "sbiedv" is discouraged (1 uses).
 New usage of "sbiedwOLD" is discouraged (0 uses).
@@ -19457,7 +19462,9 @@ Proof modification of "bj-consensusALT" is discouraged (30 steps).
 Proof modification of "bj-csbprc" is discouraged (47 steps).
 Proof modification of "bj-currypeirce" is discouraged (16 steps).
 Proof modification of "bj-denotes" is discouraged (26 steps).
+Proof modification of "bj-denoteslem" is discouraged (33 steps).
 Proof modification of "bj-df-ifc" is discouraged (60 steps).
+Proof modification of "bj-dfid2ALT" is discouraged (157 steps).
 Proof modification of "bj-dfif" is discouraged (39 steps).
 Proof modification of "bj-dfnnf3" is discouraged (34 steps).
 Proof modification of "bj-disj2r" is discouraged (88 steps).
@@ -19470,7 +19477,8 @@ Proof modification of "bj-dvelimdv1" is discouraged (63 steps).
 Proof modification of "bj-dvelimv" is discouraged (25 steps).
 Proof modification of "bj-eeanvw" is discouraged (32 steps).
 Proof modification of "bj-elabd2ALT" is discouraged (100 steps).
-Proof modification of "bj-elisset" is discouraged (24 steps).
+Proof modification of "bj-elabtru" is discouraged (25 steps).
+Proof modification of "bj-elissetALT" is discouraged (24 steps).
 Proof modification of "bj-endbase" is discouraged (81 steps).
 Proof modification of "bj-endcomp" is discouraged (81 steps).
 Proof modification of "bj-endmnd" is discouraged (234 steps).
@@ -19512,6 +19520,7 @@ Proof modification of "bj-imn3ani" is discouraged (18 steps).
 Proof modification of "bj-inrab2" is discouraged (48 steps).
 Proof modification of "bj-isseti" is discouraged (15 steps).
 Proof modification of "bj-issetiv" is discouraged (15 steps).
+Proof modification of "bj-issettru" is discouraged (26 steps).
 Proof modification of "bj-issetw" is discouraged (21 steps).
 Proof modification of "bj-issetwt" is discouraged (63 steps).
 Proof modification of "bj-jarrii" is discouraged (10 steps).
@@ -19695,6 +19704,7 @@ Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dffr2ALT" is discouraged (64 steps).
+Proof modification of "dfid2OLD" is discouraged (3 steps).
 Proof modification of "dfmo" is discouraged (44 steps).
 Proof modification of "dfnul2OLD" is discouraged (38 steps).
 Proof modification of "dfnul3OLD" is discouraged (42 steps).
@@ -19965,7 +19975,7 @@ Proof modification of "eqeq1dALT" is discouraged (62 steps).
 Proof modification of "eqeqan12dALT" is discouraged (23 steps).
 Proof modification of "eqeqan12dOLD" is discouraged (22 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
-Proof modification of "eqsbc3rVD" is discouraged (131 steps).
+Proof modification of "eqsbc2VD" is discouraged (131 steps).
 Proof modification of "eqtr2OLD" is discouraged (20 steps).
 Proof modification of "eqtr3OLD" is discouraged (20 steps).
 Proof modification of "equcomi1" is discouraged (16 steps).

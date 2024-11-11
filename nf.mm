@@ -17018,19 +17018,22 @@ $)
 
   ${
     $d w x z $.  $d w y $.
-    $( Substitution applied to an atomic membership wff.  (Contributed by NM,
-       7-Nov-2006.)  (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
-    elsb3 $p |- ( [ y / x ] x e. z <-> y e. z ) $=
+    $( Substitution for the first argument of the non-logical predicate in an
+       atomic formula.  See ~ elsb2 for substitution for the second argument.
+       (Contributed by NM, 7-Nov-2006.)  (Proof shortened by Andrew Salmon,
+       14-Jun-2011.) $)
+    elsb1 $p |- ( [ y / x ] x e. z <-> y e. z ) $=
       ( vw wel wsb nfv sbco2 elequ1 sbie sbbii 3bitr3i ) DCEZDAFZABFMDBFACEZABF
       BCEZMDBAMAGHNOABMODAODGDACIJKMPDBPDGDBCIJL $.
   $}
 
   ${
     $d w x z $.  $d w y $.
-    $( Substitution applied to an atomic membership wff.  (Contributed by
-       Rodolfo Medina, 3-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       14-Jun-2011.) $)
-    elsb4 $p |- ( [ y / x ] z e. x <-> z e. y ) $=
+    $( Substitution for the second argument of the non-logical predicate in an
+       atomic formula.  See ~ elsb1 for substitution for the first argument.
+       (Contributed by Rodolfo Medina, 3-Apr-2010.)  (Proof shortened by Andrew
+       Salmon, 14-Jun-2011.) $)
+    elsb2 $p |- ( [ y / x ] z e. x <-> z e. y ) $=
       ( vw wel wsb nfv sbco2 elequ2 sbie sbbii 3bitr3i ) CDEZDAFZABFMDBFCAEZABF
       CBEZMDBAMAGHNOABMODAODGDACIJKMPDBPDGDBCIJL $.
   $}
@@ -20374,7 +20377,7 @@ $)
        [Jech] p. 4 showing that "Every set can be considered to be a class."
        (Contributed by NM, 7-Nov-2006.) $)
     cvjust $p |- x = { y | y e. x } $=
-      ( vz cv wcel cab wceq wb dfcleq wsb df-clab elsb3 bitr2i mpgbir ) ADZBDOE
+      ( vz cv wcel cab wceq wb dfcleq wsb df-clab elsb1 bitr2i mpgbir ) ADZBDOE
       ZBFZGCDZOEZRQEZHCCOQITPBCJSPCBKBCALMN $.
   $}
 
@@ -21281,29 +21284,40 @@ $)
 
   ${
     $d x y $.  $d x A $.
-    $( Lemma for ~ eqsb3 .  (Contributed by Rodolfo Medina, 28-Apr-2010.)
+    $( Lemma for ~ eqsb1 .  (Contributed by Rodolfo Medina, 28-Apr-2010.)
        (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
-    eqsb3lem $p |- ( [ y / x ] x = A <-> y = A ) $=
+    eqsb1lem $p |- ( [ y / x ] x = A <-> y = A ) $=
       ( cv wceq nfv eqeq1 sbie ) ADZCEBDZCEZABKAFIJCGH $.
   $}
 
   ${
-    $d x A $.  $d w x $.  $d w A $.  $d y w $.
-    $( Substitution applied to an atomic wff (class version of ~ equsb3 ).
-       (Contributed by Rodolfo Medina, 28-Apr-2010.) $)
-    eqsb3 $p |- ( [ y / x ] x = A <-> y = A ) $=
-      ( vw cv wceq wsb eqsb3lem sbbii nfv sbco2 3bitr3i ) AECFZADGZDBGDECFZDBGM
+    $d w x A $.  $d w y $.
+    $( Substitution for the left-hand side in an equality.  Class version of
+       ~ equsb3 .  (Contributed by Rodolfo Medina, 28-Apr-2010.) $)
+    eqsb1 $p |- ( [ y / x ] x = A <-> y = A ) $=
+      ( vw cv wceq wsb eqsb1lem sbbii nfv sbco2 3bitr3i ) AECFZADGZDBGDECFZDBGM
       ABGBECFNODBADCHIMABDMDJKDBCHL $.
   $}
 
   ${
-    $d x A $.  $d w x $.  $d w A $.  $d w y $.
-    $( Substitution applied to an atomic wff (class version of ~ elsb3 ).
-       (Contributed by Rodolfo Medina, 28-Apr-2010.)  (Proof shortened by
-       Andrew Salmon, 14-Jun-2011.) $)
-    clelsb3 $p |- ( [ y / x ] x e. A <-> y e. A ) $=
+    $d w x A $.  $d w y $.
+    $( Substitution for the first argument of the membership predicate in an
+       atomic formula (class version of ~ elsb1 ).  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       14-Jun-2011.) $)
+    clelsb1 $p |- ( [ y / x ] x e. A <-> y e. A ) $=
       ( vw cv wcel wsb nfv sbco2 eleq1 sbie sbbii 3bitr3i ) DEZCFZDAGZABGODBGAE
       ZCFZABGBEZCFZODBAOAHIPRABORDARDHNQCJKLOTDBTDHNSCJKM $.
+  $}
+
+  ${
+    $d w x A $.  $d w y $.
+    $( Substitution for the second argument of the membership predicate in an
+       atomic formula (class version of ~ elsb2 ).  (Contributed by Jim
+       Kingdon, 22-Nov-2018.) $)
+    clelsb2 $p |- ( [ y / x ] A e. x <-> A e. y ) $=
+      ( vw cv wcel wsb nfv sbco2 eleq2 sbie sbbii 3bitr3i ) CDEZFZDAGZABGODBGCA
+      EZFZABGCBEZFZODBAOAHIPRABORDARDHNQCJKLOTDBTDHNSCJKM $.
   $}
 
   ${
@@ -21323,7 +21337,7 @@ $)
        (Contributed by NM, 5-Aug-1993.)  (Revised by Andrew Salmon,
        11-Jul-2011.) $)
     hblem $p |- ( z e. A -> A. x z e. A ) $=
-      ( cv wcel wsb wal hbsb clelsb3 albii 3imtr3i ) BFDGZBCHZOAICFDGZPAINBCAEJ
+      ( cv wcel wsb wal hbsb clelsb1 albii 3imtr3i ) BFDGZBCHZOAICFDGZPAINBCAEJ
       BCDKZOPAQLM $.
   $}
 
@@ -24397,11 +24411,12 @@ $)
     cbvrex $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
       ( nfcv cbvrexf ) ABCDECEIDEIFGHJ $.
 
-    $( Change the bound variable of a restricted uniqueness quantifier using
-       implicit substitution.  (Contributed by Mario Carneiro, 15-Oct-2016.) $)
+    $( Change the bound variable of a restricted unique existential quantifier
+       using implicit substitution.  (Contributed by Mario Carneiro,
+       15-Oct-2016.) $)
     cbvreu $p |- ( E! x e. A ph <-> E! y e. A ps ) $=
       ( vz cv wcel wa weu wreu wsb nfv sb8eu sban eubii df-reu anbi1i nfsb nfan
-      clelsb3 wceq eleq1 sbequ sbie syl6bb anbi12d cbveu bitri 3bitri 3bitr4i )
+      clelsb1 wceq eleq1 sbequ sbie syl6bb anbi12d cbveu bitri 3bitri 3bitr4i )
       CJEKZALZCMZDJZEKZBLZDMZACENBDENUQUPCIOZIMUOCIOZACIOZLZIMZVAUPCIUPIPQVBVEI
       UOACIRSVFIJZEKZVDLZIMVAVEVIIVCVHVDCIEUDUASVIUTIDVHVDDVHDPACIDFUBUCUTIPVGU
       RUEZVHUSVDBVGUREUFVJVDACDOBAIDCUGABCDGHUHUIUJUKULUMACETBDETUN $.
@@ -24426,9 +24441,9 @@ $)
     cbvrexv $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
       ( nfv cbvrex ) ABCDEADGBCGFH $.
 
-    $( Change the bound variable of a restricted uniqueness quantifier using
-       implicit substitution.  (Contributed by NM, 5-Apr-2004.)  (Revised by
-       Mario Carneiro, 15-Oct-2016.) $)
+    $( Change the bound variable of a restricted unique existential quantifier
+       using implicit substitution.  (Contributed by NM, 5-Apr-2004.)  (Revised
+       by Mario Carneiro, 15-Oct-2016.) $)
     cbvreuv $p |- ( E! x e. A ph <-> E! y e. A ps ) $=
       ( nfv cbvreu ) ABCDEADGBCGFH $.
 
@@ -26023,7 +26038,7 @@ $)
        required to be a set.  (Contributed by Andrew Salmon, 3-Jun-2011.) $)
     pm13.183 $p |- ( A e. V -> ( A = B <-> A. z ( z = A <-> z = B ) ) ) $=
       ( vy cv wceq wal eqeq1 eqeq2 bibi1d albidv alrimiv wsb stdpc4 sbbi bibi2i
-      wb eqsb3 sylbi equsb1 bi1 mpi syl impbii vtoclbg ) EFZCGZAFZUGGZUICGZRZAH
+      wb eqsb1 sylbi equsb1 bi1 mpi syl impbii vtoclbg ) EFZCGZAFZUGGZUICGZRZAH
       ZBCGUIBGZUKRZAHEBDUGBCIUGBGZULUOAUPUJUNUKUGBUIJKLUHUMUHULAUGCUIJMUMULAENZ
       UHULAEOUQUJAENZUKAENZRZUHUJUKAEPUTURUHRZUHUSUHURAECSQVAURUHAEUAURUHUBUCTT
       UDUEUF $.
@@ -26594,8 +26609,8 @@ $)
       JUSFUOUJUNUIKUSUHUNUIPUNUIQRSUAUBVAUQGCEUIUHKZUTUPDEVBUSUOBUIUHUNPUCUDUET
       UFT $.
 
-    $( Restricted uniqueness using implicit substitution.  (Contributed by NM,
-       24-Oct-2006.) $)
+    $( Restricted unique existence using implicit substitution.  (Contributed
+       by NM, 24-Oct-2006.) $)
     reu8 $p |- ( E! x e. A ph <-> E. x e. A ( ph /\
                 A. y e. A ( ps -> x = y ) ) ) $=
       ( wreu cv wceq wb wral wrex wi wa cbvreuv reu6 wcel ralbii wal syl5bb a1i
@@ -27275,10 +27290,10 @@ $)
 
   ${
     $d x y B $.  $d y A $.
-    $( Substitution applied to an atomic wff.  Set theory version of ~ eqsb3 .
-       (Contributed by Andrew Salmon, 29-Jun-2011.) $)
-    eqsbc3 $p |- ( A e. V -> ( [. A / x ]. x = B <-> A = B ) ) $=
-      ( vy cv wceq wsbc dfsbcq eqeq1 wsb sbsbc eqsb3 bitr3i vtoclbg ) AFCGZAEFZ
+    $( Substitution for the left-hand side in an equality.  Class version of
+       ~ eqsb1 .  (Contributed by Andrew Salmon, 29-Jun-2011.) $)
+    eqsbc1 $p |- ( A e. V -> ( [. A / x ]. x = B <-> A = B ) ) $=
+      ( vy cv wceq wsbc dfsbcq eqeq1 wsb sbsbc eqsb1 bitr3i vtoclbg ) AFCGZAEFZ
       HZQCGZPABHBCGEBDPAQBIQBCJRPAEKSPAELAECMNO $.
   $}
 
@@ -27371,7 +27386,7 @@ $)
     $( Set theory version of sbeqal1 in set.mm.  (Contributed by Andrew Salmon,
        28-Jun-2011.) $)
     sbceqal $p |- ( A e. V -> ( A. x ( x = A -> x = B ) -> A = B ) ) $=
-      ( wcel cv wceq wi wal wsbc spsbc sbcimg wb eqsbc3 mpbiri pm5.5 syl 3bitrd
+      ( wcel cv wceq wi wal wsbc spsbc sbcimg wb eqsbc1 mpbiri pm5.5 syl 3bitrd
       eqid sylibd ) BDEZAFZBGZUBCGZHZAIUEABJZBCGZUEABDKUAUFUCABJZUDABJZHZUIUGUC
       UDABDLUAUHUJUIMUAUHBBGBSABBDNOUHUIPQABCDNRT $.
   $}
@@ -27421,12 +27436,12 @@ $)
 
   ${
     $d x C $.  $d x A $.
-    $( ~ eqsbc3 with setvar variable on right side of equals sign.  This proof
-       was automatically generated from the virtual deduction proof eqsbc3rVD
-       in set.mm using a translation program.  (Contributed by Alan Sare,
+    $( Substitution for the right-hand side in an equality.  This proof was
+       automatically generated from the virtual deduction proof eqsbc2VD in
+       set.mm using a translation program.  (Contributed by Alan Sare,
        24-Oct-2011.) $)
-    eqsbc3r $p |- ( A e. B -> ( [. A / x ]. C = x <-> C = A ) ) $=
-      ( wcel wceq wsbc eqcom sbcbii biimpi eqsbc3 syl5ib syl6ib syl6ibr sylibrd
+    eqsbc2 $p |- ( A e. B -> ( [. A / x ]. C = x <-> C = A ) ) $=
+      ( wcel wceq wsbc eqcom sbcbii biimpi eqsbc1 syl5ib syl6ib syl6ibr sylibrd
       cv idd impbid ) BCEZDAPZFZABGZDBFZSUBBDFZUCUBTDFZABGZSUDUBUFUAUEABDTHIZJA
       BDCKZLBDHZMSUCUFUBSUCUDUFSUCUCUDSUCQUINUHOUGNR $.
   $}
@@ -27448,7 +27463,7 @@ $)
     $( Class substitution into a membership relation.  (Contributed by NM,
        17-Nov-2006.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
     sbcel1gv $p |- ( A e. V -> ( [. A / x ]. x e. B <-> A e. B ) ) $=
-      ( vy cv wcel wsb wsbc dfsbcq2 eleq1 clelsb3 vtoclbg ) AFCGZAEHEFZCGNABIBC
+      ( vy cv wcel wsb wsbc dfsbcq2 eleq1 clelsb1 vtoclbg ) AFCGZAEHEFZCGNABIBC
       GEBDNAEBJOBCKAECLM $.
   $}
 
@@ -27734,7 +27749,7 @@ $)
     rmo3 $p |- ( E* x e. A ph <->
                A. x e. A A. y e. A ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
       ( wrmo cv wcel wa wmo wsb wi wral anbi1i bitri 3bitri impexp albii df-ral
-      wal weq df-rmo sban clelsb3 anbi2i an4 ancom r19.21v 3bitr2i nfv nfan mo3
+      wal weq df-rmo sban clelsb1 anbi2i an4 ancom r19.21v 3bitr2i nfv nfan mo3
       imbi1i 3bitr4i ) ABDFBGDHZAIZBJZAABCKZIZBCUAZLZCDMZBDMZABDUBUPUPBCKZIZUTL
       ZCTZBTUOVBLZBTUQVCVGVHBVGCGDHZUOVALZLZCTVJCDMVHVFVKCVFVIUOIZUSIZUTLVLVALV
       KVEVMUTVEUPVIURIZIUOVIIZUSIVMVDVNUPVDUOBCKZURIVNUOABCUCVPVIURBCDUDNOUEUOA
@@ -28433,7 +28448,7 @@ $)
       NZMBMZDFNZMACEOBDFOUEUGUDUFCDEFGHADIPBCJPKCQDQRABLSUAUBACETBDFTUC $.
 
     $( A more general version of ~ cbvreuv that has no distinct variable
-       rextrictions.  Changes bound variables using implicit substitution.
+       restrictions.  Changes bound variables using implicit substitution.
        (Contributed by Andrew Salmon, 13-Jul-2011.) $)
     cbvreucsf $p |- ( E! x e. A ph <-> E! y e. B ps ) $=
       ( vz vv cv wcel wa weu wsb nfcri wreu csb nfcsb1v nfs1v nfan wceq csbeq1a
