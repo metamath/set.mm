@@ -963,7 +963,7 @@ Mario Carneiro finished a major revision of set.mm. Here are his notes:
     fvunsn: eliminate D e. _V hypothesis
     caoprcld, caoprassg, caoprcomg: deduction form
     winafpi: dedth demonstration
-    avglt1, avglt2, avgle1, avgle2: average ordering theorem colleciton
+    avglt1, avglt2, avgle1, avgle2: average ordering theorem collection
     peano2fzr: recurring lemma
     fzfid: very common use due to deduction-form sum theorems
     seqcl2 thru seq1p: deduction form
