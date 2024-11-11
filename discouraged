@@ -5036,7 +5036,6 @@
 "df-rngo" is used by "relrngo".
 "df-rq" is used by "dmrecnq".
 "df-rq" is used by "recmulnq".
-"df-sca" is used by "bj-isrvec".
 "df-sca" is used by "mgpscaOLD".
 "df-sca" is used by "mnringscadOLD".
 "df-sca" is used by "opsrscaOLD".
@@ -15701,7 +15700,7 @@ New usage of "df-ringcALTV" is discouraged (1 uses).
 New usage of "df-rngcALTV" is discouraged (1 uses).
 New usage of "df-rngo" is discouraged (2 uses).
 New usage of "df-rq" is discouraged (2 uses).
-New usage of "df-sca" is discouraged (7 uses).
+New usage of "df-sca" is discouraged (6 uses).
 New usage of "df-setrecs" is discouraged (5 uses).
 New usage of "df-sgrOLD" is discouraged (2 uses).
 New usage of "df-sh" is discouraged (1 uses).
