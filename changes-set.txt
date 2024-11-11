@@ -95,6 +95,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+11-Nov-24 mpteq12da [same]      moved from GS's mathbox to main set.mm
  9-Nov-24 eqsb3     eqsb1
  9-Nov-24 eqsbc3    eqsbc1
  9-Nov-24 eqsbc3r   eqsbc2
