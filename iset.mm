@@ -6886,11 +6886,11 @@ $(
 
 $)
 
-  $( Contraposition of a stable proposition.  See comment of ~ condc .
-     (Contributed by BJ, 18-Nov-2023.) $)
+  $( Contraposition when the antecedent is a negated stable proposition.  See
+     comment of ~ condc .  (Contributed by BJ, 18-Nov-2023.)  (Proof shortened
+     by BJ, 11-Nov-2024.) $)
   const $p |- ( STAB ph -> ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) ) $=
-    ( wstab wn wi df-stab con3 notnot imim2 syl7 syl5 sylbi ) ACADZDZAEZMBDZEZB
-    AEZEAFQPDZNEZORMPGBSOTABHNASIJKL $.
+    ( wn wi wstab con2 df-stab biimpi syl9r ) ACZBCDBJCZAEZAJBFLKADAGHI $.
 
   $( Contraposition of a decidable proposition.
 
@@ -158857,8 +158857,9 @@ $)
     bj-stand.1 $e |- ( ph -> STAB ps ) $.
     bj-stand.2 $e |- ( ph -> STAB ch ) $.
     $( The conjunction of two stable formulas is stable.  Deduction form of
-       ~ bj-stan .  Its proof is shorter, so one could prove it first and then
-       ~ bj-stan from it, the usual way.  (Contributed by BJ, 24-Nov-2023.)
+       ~ bj-stan .  Its proof is shorter (when counting all steps, including
+       syntactic steps), so one could prove it first and then ~ bj-stan from
+       it, the usual way.  (Contributed by BJ, 24-Nov-2023.)
        (Proof modification is discouraged.) $)
     bj-stand $p |- ( ph -> STAB ( ps /\ ch ) ) $=
       ( wa wn wi wstab bj-nnan df-stab sylib anim12d syl5 sylibr ) ABCFZGGZPHPI
@@ -158877,6 +158878,11 @@ $)
   bj-pm2.18st $p |- ( STAB ph -> ( ( -. ph -> ph ) -> ph ) ) $=
     ( wstab wn wi df-stab bj-nnclavius imim1i sylbi ) ABACZCZADIADZADAEKJAAFGH
     $.
+
+  $( Contraposition when the antecedent is a negated stable proposition.  See
+     ~ con1dc .  (Contributed by BJ, 11-Nov-2024.) $)
+  bj-con1st $p |- ( STAB ph -> ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) ) $=
+    ( wn wi wstab con3 df-stab biimpi syl9r ) ACZBDBCJCZAEZAJBFLKADAGHI $.
 
 
 $(
