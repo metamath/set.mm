@@ -89,12 +89,12 @@ proposed  syl6ib    imbitrdi
 proposed  syl6ibr   imbitrrdi
 proposed  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
-underway  sseldi    sselid      compare to sselii or sseldd
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+12-Nov-24 sseldi    sselid      compare to sselii or sseldd
  9-Nov-24 eqsb3     eqsb1
  9-Nov-24 eqsbc3    eqsbc1
  9-Nov-24 eqsbc3r   eqsbc2
