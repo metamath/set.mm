@@ -157795,6 +157795,20 @@ $)
       WOYWJYWMYWPWVLYWEWMVWJWVLYWEVWLVWMVWNXVOYWKUCYWHWOWVOYWHFQYSYTVUGWHWIVYPW
       VQVXHWVSMWKXVQWUKWODWUNXVOWUNUCWUKWOWVOWUKFQYSYTVWONVWPVWQVWRVWSVWTVXCVXD
       UKZVXDVXIWBVXCVXBVYOYWRWVGVGBFUNUOBFYPYQWC $.
+
+    $( The Legendre symbol is nonzero (and hence equal to ` 1 ` or ` -u 1 ` )
+       precisely when the arguments are coprime.  (Contributed by Mario
+       Carneiro, 5-Feb-2015.) $)
+    lgsabs1 $p |- ( ( A e. ZZ /\ N e. ZZ ) ->
+      ( ( abs ` ( A /L N ) ) = 1 <-> ( A gcd N ) = 1 ) ) $=
+      ( cz wcel wa clgs co cabs cfv c1 wceq cle wbr cgcd cr lgscl cc0 wne syl
+      wb abscld 1re letri3 sylancl lgsle1 biantrurd cn nnne0 wn neneq adantl wo
+      zcnd nn0abscl elnn0 sylib adantr ecased ex impbid2 elnnnn0c baib cc abs00
+      cn0 necon3bid lgsne0 bitrd 3bitr3d 3bitr2d ) ACDBCDEZABFGZHIZJKZVMJLMZJVM
+      LMZEZVPABNGJKZVKVMODJODVNVQTVKVLVKVLABPZUMZUAUBVMJUCUDVKVOVPABUEUFVKVMUGD
+      ZVMQRZVPVRVKWAWBVMUHVKWBWAVKWBEWAVMQKZWBWCUIVKVMQUJUKVKWAWCULZWBVKVMVEDZW
+      DVKVLCDWEVSVLUNSZVMUOUPUQURUSUTVKWEWAVPTWFWAWEVPVMVAVBSVKWBVLQRZVRVKVLVCD
+      ZWBWGTVTWHVMQVLQVLVDVFSABVGVHVIVJ $.
   $}
 
 
