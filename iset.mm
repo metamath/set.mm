@@ -157852,6 +157852,13 @@ $)
     HVGWGWILBAUNTVIWHWDSVIVRVGFZWHWDJVHVGWJVHVRVGVSUOTBAUPVCUQURVIWFVNVHVGWFVNL
     ZVHVTVGWKWABAUSVDTUTVAVEVBVF $.
 
+  $( The Legendre symbol at ` 1 ` .  See example 1 in [ApostolNT] p. 180.
+     (Contributed by Mario Carneiro, 28-Apr-2016.) $)
+  1lgs $p |- ( N e. ZZ -> ( 1 /L N ) = 1 ) $=
+    ( cz wcel c1 clgs co c2 cexp sq1 oveq1i cgcd wceq 1gcd cc0 wne wa 1z pm3.2i
+    1ne0 lgssq mp3an1 mpdan eqtr3id ) ABCZDAEFDGHFZAEFZDUEDAEIJUDDAKFDLZUFDLZAM
+    DBCZDNOZPUDUGUHUIUJQSRDATUAUBUC $.
+
 
 $(
 ###############################################################################
