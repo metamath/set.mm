@@ -157859,6 +157859,12 @@ $)
     1ne0 lgssq mp3an1 mpdan eqtr3id ) ABCZDAEFDGHFZAEFZDUEDAEIJUDDAKFDLZUFDLZAM
     DBCZDNOZPUDUGUHUIUJQSRDATUAUBUC $.
 
+  $( The Legendre symbol at ` 1 ` .  See definition in [ApostolNT] p. 188.
+     (Contributed by Mario Carneiro, 28-Apr-2016.) $)
+  lgs1 $p |- ( A e. ZZ -> ( A /L 1 ) = 1 ) $=
+    ( cz wcel c1 clgs co c2 cexp sq1 oveq2i cgcd wceq gcd1 cn 1nn lgssq2 mp3an2
+    mpdan eqtr3id ) ABCZADEFADGHFZEFZDUADAEIJTADKFDLZUBDLZAMTDNCUCUDOADPQRS $.
+
 
 $(
 ###############################################################################
