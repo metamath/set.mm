@@ -157809,6 +157809,21 @@ $)
       ZVMQRZVPVRVKWAWBVMUHVKWBWAVKWBEWAVMQKZWBWCUIVKVMQUJUKVKWAWCULZWBVKVMVEDZW
       DVKVLCDWEVSVLUNSZVMUOUPUQURUSUTVKWEWAVPTWFWAWEVPVMVAVBSVKWBVLQRZVRVKVLVCD
       ZWBWGTVTWHVMQVLQVLVDVFSABVGVHVIVJ $.
+
+    $( The Legendre symbol at a square is equal to ` 1 ` .  Together with
+       ~ lgsmod this implies that the Legendre symbol takes value ` 1 ` at
+       every quadratic residue.  (Contributed by Mario Carneiro, 5-Feb-2015.)
+       (Revised by AV, 20-Jul-2021.) $)
+    lgssq $p |- ( ( ( A e. ZZ /\ A =/= 0 ) /\ N e. ZZ /\ ( A gcd N ) = 1 )
+                   -> ( ( A ^ 2 ) /L N ) = 1 ) $=
+      ( cz wcel cc0 wne wa cgcd co c1 wceq w3a cmul clgs c2 simp1l simp2 sqvald
+      cexp oveq1d simp1r lgsdir syl32anc cc zcn adantr 3ad2ant1 cabs cr syl2anc
+      cfv lgscl zred absresq syl wb lgsabs1 adantlr biimp3ar sq1 eqtrdi 3eqtr3d
+      zcnd 3eqtr4d ) ACDZAEFZGZBCDZABHIJKZLZAAMIZBNIZABNIZVMMIZAOSIZBNIJVJVEVEV
+      HVFVFVLVNKVEVFVHVIPZVPVGVHVIQZVEVFVHVIUAZVRAABUBUCVJVOVKBNVJAVGVHAUDDZVIV
+      EVSVFAUEUFUGRTVJVMUHUKZOSIZVMOSIZJVNVJVMUIDWAWBKVJVMVJVEVHVMCDVPVQABULUJZ
+      UMVMUNUOVJWAJOSIJVJVTJOSVGVHVTJKZVIVEVHWDVIUPVFABUQURUSTUTVAVJVMVJVMWCVCR
+      VBVD $.
   $}
 
 
