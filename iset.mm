@@ -157824,6 +157824,18 @@ $)
       EVSVFAUEUFUGRTVJVMUHUKZOSIZVMOSIZJVNVJVMUIDWAWBKVJVMVJVEVHVMCDVPVQABULUJZ
       UMVMUNUOVJWAJOSIJVJVTJOSVGVHVTJKZVIVEVHWDVIUPVFABUQURUSTUTVAVJVMVJVMWCVCR
       VBVD $.
+
+    $( The Legendre symbol at a square is equal to ` 1 ` .  (Contributed by
+       Mario Carneiro, 5-Feb-2015.) $)
+    lgssq2 $p |- ( ( A e. ZZ /\ N e. NN /\ ( A gcd N ) = 1 ) ->
+                   ( A /L ( N ^ 2 ) ) = 1 ) $=
+      ( cz wcel cn cgcd co c1 wceq w3a cmul clgs c2 cexp cc0 wne simp1 3ad2ant2
+      nnz sqvald nnne0 lgsdi syl32anc cc nncn oveq2d cabs cr lgscl syl2anc zred
+      cfv absresq syl wb lgsabs1 sylan2 biimp3ar oveq1d sq1 eqtrdi zcnd 3eqtr3d
+      3eqtr4d ) ACDZBEDZABFGHIZJZABBKGZLGZABLGZVKKGZABMNGZLGHVHVEBCDZVNBOPZVOVJ
+      VLIVEVFVGQZVFVEVNVGBSZRZVRVFVEVOVGBUARZVSABBUBUCVHVMVIALVHBVFVEBUDDVGBUER
+      TUFVHVKUGULZMNGZVKMNGZHVLVHVKUHDWAWBIVHVKVHVEVNVKCDVPVRABUIUJZUKVKUMUNVHW
+      AHMNGHVHVTHMNVEVFVTHIZVGVFVEVNWDVGUOVQABUPUQURUSUTVAVHVKVHVKWCVBTVCVD $.
   $}
 
 
