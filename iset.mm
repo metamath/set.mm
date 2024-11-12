@@ -157876,6 +157876,21 @@ $)
     VAUHULKUHUJUKPQUAACRSUNUOCOUBUCUMUSURNZUPUMUIUJUKLZVBUIULVCUHVCUIULKUIUJUKP
     QUDBCRSUEUFUG $.
 
+  $( The Legendre (Jacobi) symbol is preserved under multiplication with a
+     square of an integer coprime to the second argument.  Theorem 9.9(d) in
+     [ApostolNT] p. 188.  (Contributed by AV, 20-Jul-2021.) $)
+  lgsmulsqcoprm $p |- ( ( ( A e. ZZ /\ A =/= 0 ) /\ ( B e. ZZ /\ B =/= 0 )
+                          /\ ( N e. ZZ /\ ( A gcd N ) = 1 ) )
+                        -> ( ( ( A ^ 2 ) x. B ) /L N ) = ( B /L N ) ) $=
+    ( cz wcel cc0 wne wa cgcd co c1 wceq w3a cexp cmul clgs simpl syl anim12i
+    c2 zsqcl adantr 3anim123i cc zcn sqne0 biimpar simpr 3adant3 lgsdir syl2anc
+    wb 3anass biimpri 3adant2 lgssq oveq1d 3adant1 lgscl zcnd mulid2d 3eqtrd )
+    ADEZAFGZHZBDEZBFGZHZCDEZACIJKLZHZMZATNJZBOJCPJZVMCPJZBCPJZOJZKVPOJVPVLVMDEZ
+    VFVIMVMFGZVGHZVNVQLVEVRVHVFVKVIVCVRVDAUAUBVFVGQZVIVJQZUCVEVHVTVKVEVSVHVGVCV
+    SVDVCAUDEVSVDULAUEAUFRUGVFVGUHSUIVMBCUJUKVLVOKVPOVLVEVIVJMZVOKLVEVKWCVHWCVE
+    VKHVEVIVJUMUNUOACUPRUQVLVPVLVPVLVFVIHZVPDEVHVKWDVEVHVFVKVIWAWBSURBCUSRUTVAV
+    B $.
+
 
 $(
 ###############################################################################
