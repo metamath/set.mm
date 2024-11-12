@@ -156696,7 +156696,7 @@ $(
   definition in [ApostolNT] p. 178.  The _Legendre symbol_ ` ( n /L p ) ` is
   defined in a way that its value is ` 1 ` if ` n ` is a quadratic residue
   ` mod p ` and ` -u 1 ` if ` n ` is a quadratic nonresidue ` mod p ` (and
-  ` 0 ` if ` p ` divides ` n `), see ~ lgsqr .
+  ` 0 ` if ` p ` divides ` n `).
 
   Originally, the Legendre symbol ` ( N /L P ) ` was defined for odd primes
   ` P ` only (and arbitrary integers ` N `) by Adrien-Marie Legendre in 1798,
@@ -157101,8 +157101,8 @@ $)
     $( The Legendre symbol is equivalent to ` a ^ ( ( p - 1 ) / 2 ) ` ,
        ` mod p ` .  This theorem is also called "Euler's criterion", see
        theorem 9.2 in [ApostolNT] p. 180, or a representation of Euler's
-       criterion using the Legendre symbol, see also ~ lgsqr .  (Contributed by
-       Mario Carneiro, 4-Feb-2015.) $)
+       criterion using the Legendre symbol, (Contributed by Mario Carneiro,
+       4-Feb-2015.) $)
     lgsvalmod $p |- ( ( A e. ZZ /\ P e. ( Prime \ { 2 } ) ) ->
       ( ( A /L P ) mod P ) = ( ( A ^ ( ( P - 1 ) / 2 ) ) mod P ) ) $=
       ( cz wcel cprime co c1 caddc cmo cmin cq syl zq recnd oveq1d cc cr ax-1cn
@@ -157493,11 +157493,8 @@ $)
       $d A v $.  $d B v $.  $d N v $.  $d n v $.  $d k v $.
       $( The Legendre symbol is completely multiplicative in its left argument.
          Generalization of theorem 9.9(a) in [ApostolNT] p. 188 (which assumes
-         that ` A ` and ` B ` are odd positive integers).  Together with
-         ~ lgsqr this implies that the product of two quadratic residues or
-         nonresidues is a residue, and the product of a residue and a
-         nonresidue is a nonresidue.  (Contributed by Mario Carneiro,
-         4-Feb-2015.) $)
+         that ` A ` and ` B ` are odd positive integers).  (Contributed by
+         Mario Carneiro, 4-Feb-2015.) $)
       lgsdir $p |- ( ( ( A e. ZZ /\ B e. ZZ /\ N e. ZZ ) /\
                        ( A =/= 0 /\ B =/= 0 ) ) ->
         ( ( A x. B ) /L N ) = ( ( A /L N ) x. ( B /L N ) ) ) $=
