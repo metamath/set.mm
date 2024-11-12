@@ -157838,6 +157838,20 @@ $)
       AHMNGHVHVTHMNVEVFVTHIZVGVFVEVNWDVGUOVQABUPUQURUSUTVAVHVKVHVKWCVBTVCVD $.
   $}
 
+  $( The Legendre symbol at any prime (even at 2) is ` 0 ` iff the prime does
+     not divide the first argument.  See definition in [ApostolNT] p. 179.
+     (Contributed by AV, 20-Jul-2021.) $)
+  lgsprme0 $p |- ( ( A e. ZZ /\ P e. Prime )
+                -> ( ( A /L P ) = 0 <-> ( A mod P ) = 0 ) ) $=
+    ( cz wcel cprime wa clgs co cc0 wceq wdc wb sylan2 0z zdceq sylancl wn cgcd
+    c1 ancoms cmo prmz lgscl simpl cn prmnn adantl zmodcld nn0zd wne wbr lgsne0
+    cdvds coprm anim1i gcdcom eqeq1d bitr2d dvdsval3 notbid 3bitrd necon4abiddc
+    syl sylan 2a1d mp2d ) ACDZBEDZFZABGHZIJZKZABUAHZIJZKZVKVNLVIVJCDZICDZVLVHVG
+    BCDZVPBUBZABUCMNVJIOPVIVMCDVQVOVIVMVIABVGVHUDVHBUEDZVGBUFZUGUHUINVMIOPVIVNV
+    JIVIVJIUJZVNQZLVLVOVIWBABRHZSJZBAUMUKZQZWCVHVGVRWBWELVSABULMVIWGBARHZSJZWEV
+    HVGWGWILBAUNTVIWHWDSVIVRVGFZWHWDJVHVGWJVHVRVGVSUOTBAUPVCUQURVIWFVNVHVGWFVNL
+    ZVHVTVGWKWABAUSVDTUTVAVEVBVF $.
+
 
 $(
 ###############################################################################
