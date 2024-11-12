@@ -157865,6 +157865,17 @@ $)
     ( cz wcel c1 clgs co c2 cexp sq1 oveq2i cgcd wceq gcd1 cn 1nn lgssq2 mp3an2
     mpdan eqtr3id ) ABCZADEFADGHFZEFZDUADAEIJTADKFDLZUBDLZAMTDNCUCUDOADPQRS $.
 
+  $( The Legendre (Jacobi) symbol is preserved under reduction ` mod n ` when
+     ` n ` is odd.  Theorem 9.9(c) in [ApostolNT] p. 188.  (Contributed by AV,
+     20-Jul-2021.) $)
+  lgsmodeq $p |- ( ( A e. ZZ /\ B e. ZZ /\ ( N e. NN /\ -. 2 || N ) )
+               -> ( ( A mod N ) = ( B mod N ) -> ( A /L N ) = ( B /L N ) ) ) $=
+    ( cz wcel cn c2 cdvds wbr wn wa w3a cmo wceq clgs 3anass biimpri lgsmod syl
+    co 3adant2 oveq1 sylan9req 3adant1 adantr eqtrd ex ) ADEZBDEZCFEZGCHIJZKZLZ
+    ACMTZBCMTZNZACOTZBCOTZNUMUPKUQUOCOTZURUMUPUQUNCOTZUSUMUHUJUKLZUTUQNUHULVAUI
+    VAUHULKUHUJUKPQUAACRSUNUOCOUBUCUMUSURNZUPUMUIUJUKLZVBUIULVCUHVCUIULKUIUJUKP
+    QUDBCRSUEUFUG $.
+
 
 $(
 ###############################################################################
