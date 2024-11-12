@@ -157970,14 +157970,14 @@ $)
     $d x D $.  $d a p x y z E $.  $d p q u v x y z N $.  $d a b m n x y Y $.
     $d a p x y z F $.  $d n p q x y P $.
     2sq.1 $e |- S = ran ( w e. Z[i] |-> ( ( abs ` w ) ^ 2 ) ) $.
-    $( Lemma for ~ 2sq .  (Contributed by Mario Carneiro, 19-Jun-2015.) $)
+    $( Lemma for 2sq .  (Contributed by Mario Carneiro, 19-Jun-2015.) $)
     2sqlem1 $p |- ( A e. S <-> E. x e. Z[i] A = ( ( abs ` x ) ^ 2 ) ) $=
       ( wcel cgz cv cabs cfv c2 cexp co cmpt crn wceq wrex eleq2i cc wb cbvmptv
       fveq2 oveq1d elrnmptg gzcn abscld recnd sqcld mprg bitri ) CDFCBGBHZIJZKL
       MZNZOZFZCAHZIJZKLMZPAGQZDUOCERUSSFUPUTTAGAGUSCUNSBAGUMUSUKUQPULURKLUKUQIU
       BUCUAUDUQGFZURVAURVAUQUQUEUFUGUHUIUJ $.
 
-    $( Lemma for ~ 2sq .  (Contributed by Mario Carneiro, 19-Jun-2015.) $)
+    $( Lemma for 2sq .  (Contributed by Mario Carneiro, 19-Jun-2015.) $)
     2sqlem2 $p |- ( A e. S <-> E. x e. ZZ E. y e. ZZ
       A = ( ( x ^ 2 ) + ( y ^ 2 ) ) ) $=
       ( vz wcel cv c2 cexp co caddc wceq cz wrex cfv cgz cc oveq1d cabs 2sqlem1
@@ -158095,10 +158095,9 @@ $)
 
       2sqlem5.3 $e |- ( ph -> ( N x. P ) e. S ) $.
       2sqlem5.4 $e |- ( ph -> P e. S ) $.
-      $( Lemma for ~ 2sq .  If a number that is a sum of two squares is
-         divisible by a prime that is a sum of two squares, then the quotient
-         is a sum of two squares.  (Contributed by Mario Carneiro,
-         20-Jun-2015.) $)
+      $( Lemma for 2sq .  If a number that is a sum of two squares is divisible
+         by a prime that is a sum of two squares, then the quotient is a sum of
+         two squares.  (Contributed by Mario Carneiro, 20-Jun-2015.) $)
       2sqlem5 $p |- ( ph -> N e. S ) $=
         ( vp vq vx vy cv co cz wrex wcel wa cexp caddc wceq cmul 2sqlem2 reeanv
         c2 sylib cprime simplrr simprlr simplrl simprll simprrr simprrl 2sqlem4
@@ -158115,10 +158114,10 @@ $)
       2sqlem6.2 $e |- ( ph -> B e. NN ) $.
       2sqlem6.3 $e |- ( ph -> A. p e. Prime ( p || B -> p e. S ) ) $.
       2sqlem6.4 $e |- ( ph -> ( A x. B ) e. S ) $.
-      $( Lemma for ~ 2sq .  If a number that is a sum of two squares is
-         divisible by a number whose prime divisors are all sums of two
-         squares, then the quotient is a sum of two squares.  (Contributed by
-         Mario Carneiro, 20-Jun-2015.) $)
+      $( Lemma for 2sq .  If a number that is a sum of two squares is divisible
+         by a number whose prime divisors are all sums of two squares, then the
+         quotient is a sum of two squares.  (Contributed by Mario Carneiro,
+         20-Jun-2015.) $)
       2sqlem6 $p |- ( ph -> A e. S ) $=
         ( vm cn wcel cmul wi wral cdvds cprime wa vx vy vz vn cv co wbr c1 wceq
         breq2 imbi1d ralbidv oveq2 eleq1d imbi12d nncn mulid1d biimpd a1i breq1
@@ -158159,7 +158158,7 @@ $)
 
     2sqlem7.2 $e |- Y = { z | E. x e. ZZ E. y e. ZZ ( ( x gcd y ) = 1 /\
       z = ( ( x ^ 2 ) + ( y ^ 2 ) ) ) } $.
-    $( Lemma for ~ 2sq .  (Contributed by Mario Carneiro, 19-Jun-2015.) $)
+    $( Lemma for 2sq .  (Contributed by Mario Carneiro, 19-Jun-2015.) $)
     2sqlem7 $p |- Y C_ ( S i^i NN ) $=
       ( cv co c1 wceq wa cz wrex cn wcel cc0 wb cn0 cgcd c2 caddc cab cin simpr
       cexp reximi 2sqlem2 sylibr wn 1ne0 gcdeq0 adantr eqeq1d bitr3d necon3bbid
@@ -158208,7 +158207,7 @@ $)
 
         2sqlem8.e $e |- E = ( C / ( C gcd D ) ) $.
         2sqlem8.f $e |- F = ( D / ( C gcd D ) ) $.
-        $( Lemma for ~ 2sq .  (Contributed by Mario Carneiro, 20-Jun-2015.) $)
+        $( Lemma for 2sq .  (Contributed by Mario Carneiro, 20-Jun-2015.) $)
         2sqlem8 $p |- ( ph -> M e. S ) $=
           ( vp c2 cexp co caddc cdiv cn c1 wne cuz cfv wa eluz2b3 simpld cz cc0
           wcel clt wbr cdvds cgcd cmul wceq cmin syl nnzd 4sqlem5 zsqcl zsubcld
@@ -158292,7 +158291,7 @@ $)
 
       2sqlem9.6 $e |- ( ph -> M e. NN ) $.
       2sqlem9.4 $e |- ( ph -> N e. Y ) $.
-      $( Lemma for ~ 2sq .  (Contributed by Mario Carneiro, 19-Jun-2015.) $)
+      $( Lemma for 2sq .  (Contributed by Mario Carneiro, 19-Jun-2015.) $)
       2sqlem9 $p |- ( ph -> M e. S ) $=
         ( co c1 cz vu vv cv cgcd wceq c2 cexp caddc wa wrex wcel eqeq1 2rexbidv
         anbi2d oveq1 eqeq1d oveq1d eqeq2d anbi12d oveq2 oveq2d cbvrex2vw bitrdi
@@ -158318,7 +158317,7 @@ $)
         RXSXTYA $.
     $}
 
-    $( Lemma for ~ 2sq .  Every factor of a "proper" sum of two squares (where
+    $( Lemma for 2sq .  Every factor of a "proper" sum of two squares (where
        the summands are coprime) is a sum of two squares.  (Contributed by
        Mario Carneiro, 19-Jun-2015.) $)
     2sqlem10 $p |- ( ( A e. Y /\ B e. NN /\ B || A ) -> B e. S ) $=
