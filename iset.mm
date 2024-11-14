@@ -53676,6 +53676,37 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d x y F $.  $d x y ph $.  $d y Y $.
+    $d x y G $.  $d x y X $.
+    $( If an operation value is element of a class for all operands of two
+       classes, then the operation value is an element of the class for
+       specific operands of the two classes.  (Contributed by Mario Carneiro,
+       6-Dec-2014.) $)
+    ovrspc2v $p |- ( ( ( X e. A /\ Y e. B ) /\
+      A. x e. A A. y e. B ( x F y ) e. C ) -> ( X F Y ) e. C ) $=
+      ( cv co wcel wceq oveq1 eleq1d oveq2 rspc2va ) AIZBIZFJZEKGHFJZEKGRFJZEKA
+      BGHCDQGLSUAEQGRFMNRHLUATERHGFONP $.
+
+    oveqrspc2v.1 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) ->
+                         ( x F y ) = ( x G y ) ) $.
+    $( Restricted specialization of operands, using implicit substitution.
+       (Contributed by Mario Carneiro, 6-Dec-2014.) $)
+    oveqrspc2v $p |- ( ( ph /\ ( X e. A /\ Y e. B ) ) ->
+                         ( X F Y ) = ( X G Y ) ) $=
+      ( cv co wceq wral wcel wa ralrimivva oveq1 eqeq12d oveq2 rspc2v mpan9 ) A
+      BKZCKZFLZUCUDGLZMZCENBDNHDOIEOPHIFLZHIGLZMZAUGBCDEJQUGUJHUDFLZHUDGLZMBCHI
+      DEUCHMUEUKUFULUCHUDFRUCHUDGRSUDIMUKUHULUIUDIHFTUDIHGTSUAUB $.
+  $}
+
+  ${
+    oveqdr.1 $e |- ( ph -> F = G ) $.
+    $( Equality of two operations for any two operands.  Useful in proofs using
+       *propd theorems.  (Contributed by Mario Carneiro, 29-Jun-2015.) $)
+    oveqdr $p |- ( ( ph /\ ps ) -> ( x F y ) = ( x G y ) ) $=
+      ( cv co wceq oveqd adantr ) ACHZDHZEIMNFIJBAEFMNGKL $.
+  $}
+
+  ${
     nfovd.2 $e |- ( ph -> F/_ x A ) $.
     nfovd.3 $e |- ( ph -> F/_ x F ) $.
     nfovd.4 $e |- ( ph -> F/_ x B ) $.
