@@ -7501,7 +7501,7 @@ $)
   $}
 
   $( A conjunction of two decidable propositions is decidable.  (Contributed by
-     Jim Kingdon, 12-Apr-2018.)  (Revised by David A. Wheeler, 12-Nov-2023.) $)
+     Jim Kingdon, 12-Apr-2018.) $)
   dcan $p |- ( ( DECID ph /\ DECID ps ) -> DECID ( ph /\ ps ) ) $=
     ( wa wn wo simpl intnanrd orim2i simpr intnand olcd jaoi df-dc anbi12i andi
     wdc andir orbi1i 3bitri 3imtr4i ) ABCZADZBCZEZAUBEZBDZCZEZUAUADZEZAPZBPZCZU
@@ -7510,7 +7510,7 @@ $)
 
   $( A conjunction of two decidable propositions is decidable, expressed in a
      curried form as compared to ~ dcan .  (Contributed by Jim Kingdon,
-     12-Apr-2018.)  (Revised by David A. Wheeler, 12-Nov-2024.) $)
+     12-Apr-2018.) $)
   dcan2 $p |- ( DECID ph -> ( DECID ps -> DECID ( ph /\ ps ) ) ) $=
     ( wdc wa dcan ex ) ACBCABDCABEF $.
 
