@@ -143144,6 +143144,12 @@ $)
       ( vx vy cmgm wcel co cv wral wa wi ismgm ibi ovrspc2v expcom syl 3impib )
       BJKZCAKZDAKZCDELAKZUCHMIMELAKIANHANZUDUEOZUFPUCUGHIABJEFGQRUHUGUFHIAAAECD
       STUAUB $.
+
+    $( A condition for a structure not to be a magma.  (Contributed by AV,
+       30-Jan-2020.)  (Proof shortened by NM, 5-Feb-2020.) $)
+    isnmgm $p |- ( ( X e. B /\ Y e. B /\ ( X .o. Y ) e/ B ) -> M e/ Mgm ) $=
+      ( wcel co wnel cmgm wa mgmcl 3expib com12 nelcon3d 3impia ) CAHZDAHZCDEIZ
+      AJBKJRSLZBKTABKHZUATAHZUBRSUCABCDEFGMNOPQ $.
   $}
 
 
