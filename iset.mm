@@ -143134,6 +143134,18 @@ $)
       PRZDPSZCUMIULPJTUNUAJPUBUCCEPUEUDGUFUGABDEJFGHUHUI $.
   $}
 
+  ${
+    $d B x y $.  $d M x y $.  $d .o. x y $.  $d X x y $.  $d Y y $.
+    mgmcl.b $e |- B = ( Base ` M ) $.
+    mgmcl.o $e |- .o. = ( +g ` M ) $.
+    $( Closure of the operation of a magma.  (Contributed by FL, 14-Sep-2010.)
+       (Revised by AV, 13-Jan-2020.) $)
+    mgmcl $p |- ( ( M e. Mgm /\ X e. B /\ Y e. B ) -> ( X .o. Y ) e. B ) $=
+      ( vx vy cmgm wcel co cv wral wa wi ismgm ibi ovrspc2v expcom syl 3impib )
+      BJKZCAKZDAKZCDELAKZUCHMIMELAKIANHANZUDUEOZUFPUCUGHIABJEFGQRUHUGUFHIAAAECD
+      STUAUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
