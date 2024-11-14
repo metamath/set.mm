@@ -142983,6 +142983,96 @@ $)
 
 
 $(
+###############################################################################
+  BASIC ALGEBRAIC STRUCTURES
+###############################################################################
+$)
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Monoids
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Magmas
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ("Magma (algebra)", 08-Jan-2020,
+  ~ https://en.wikipedia.org/wiki/magma_(algebra) ) "In abstract algebra, a
+  _magma_ [[...] is a basic kind of algebraic structure.  Specifically, a magma
+  consists of a set equipped with a single binary operation.  The binary
+  operation must be closed by definition but no other properties are imposed.".
+
+  Since the concept of a "binary operation" is used in different variants,
+  these differences are explained in more detail in the following:
+
+  With ~ df-mpo , binary operations are defined by a rule, and with ~ df-ov ,
+  the value of a binary operation applied to two operands can be expressed.
+  In both cases, the two operands can belong to different sets, and the result
+  can be an element of a third set.  However, according to Wikipedia "Binary
+  operation", see ~ https://en.wikipedia.org/wiki/Binary_operation
+  (19-Jan-2020), "... a binary operation on a set ` S ` is a mapping of the
+  elements of the Cartesian product ` S X. S ` to S: ` f : S X. S --> S `.
+  Because the result of performing the operation on a pair of elements of S is
+  again an element of S, the operation is called a _closed_ binary operation on
+  S (or sometimes expressed as having the property of closure).".  To
+  distinguish this more restrictive definition (in Wikipedia and most of the
+  literature) from the general case, binary operations mapping the elements of
+  the Cartesian product ` S X. S ` are more precisely called _internal binary
+  operations_.  If, in addition, the result is also contained in the set ` S `,
+  the operation should be called _closed internal binary operation_.
+  Therefore, a "binary operation on a set ` S `" according to Wikipedia is a
+  "closed internal binary operation" in a more precise terminology.  If the
+  sets are different, the operation is explicitly called _external binary
+  operation_ (see Wikipedia ~
+  https://en.wikipedia.org/wiki/Binary_operation#External_binary_operations ).
+
+  The definition of magmas (` Mgm `, see ~ df-mgm ) concentrates on the closure
+  property of the associated operation, and poses no additional restrictions on
+  it.  In this way, it is most general and flexible.
+
+$)
+
+  $c +f $.
+  $c Mgm $.
+
+  $( Extend class notation with group addition as a function. $)
+  cplusf $a class +f $.
+
+  $( Extend class notation with class of all magmas. $)
+  cmgm $a class Mgm $.
+
+  ${
+    $d g x y $.
+    $( Define group addition function.  Usually we will use ` +g ` directly
+       instead of ` +f ` , and they have the same behavior in most cases.  The
+       main advantage of ` +f ` for any magma is that it is a guaranteed
+       function ( ~ mgmplusf ), while ` +g ` only has closure ( ~ mgmcl ).
+       (Contributed by Mario Carneiro, 14-Aug-2015.) $)
+    df-plusf $a |- +f = ( g e. _V |->
+      ( x e. ( Base ` g ) , y e. ( Base ` g ) |-> ( x ( +g ` g ) y ) ) ) $.
+  $}
+
+  ${
+    $d b g o x y $.
+    $( A _magma_ is a set equipped with an everywhere defined internal
+       operation.  Definition 1 in [BourbakiAlg1] p. 1, or definition of a
+       groupoid in section I.1 of [Bruck] p. 1.  Note:  The term "groupoid" is
+       now widely used to refer to other objects:  (small) categories all of
+       whose morphisms are invertible, or groups with a partial function
+       replacing the binary operation.  Therefore, we will only use the term
+       "magma" for the present notion in set.mm.  (Contributed by FL,
+       2-Nov-2009.)  (Revised by AV, 6-Jan-2020.) $)
+    df-mgm $a |- Mgm = { g | [. ( Base ` g ) / b ]. [. ( +g ` g ) / o ].
+                                A. x e. b A. y e. b ( x o y ) e. b } $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -160163,6 +160253,13 @@ htmldef "gsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
     "ALT=' gsum' TITLE='gsum'><sub><i>g</i></sub> ";
   althtmldef "gsum" as " &Sigma;<sub><i>g</i></sub> ";
   latexdef "gsum" as "\sum_g";
+htmldef "Mgm" as 'Mgm';
+  althtmldef "Mgm" as 'Mgm';
+  latexdef "Mgm" as "\mathrm{Mgm}";
+htmldef "+f" as "<IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'>" +
+    "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT='f' TITLE='f'>";
+  althtmldef "+f" as '+<SUB>&#x1D453;</SUB>';
+  latexdef "+f" as "+_f";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
