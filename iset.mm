@@ -143152,6 +143152,25 @@ $)
       AJBKJRSLZBKTABKHZUATAHZUBRSUCABCDEFGMNOPQ $.
   $}
 
+  ${
+    mgmsscl.b $e |- B = ( Base ` G ) $.
+    mgmsscl.s $e |- S = ( Base ` H ) $.
+    $( If the base set of a magma is contained in the base set of another
+       magma, and the group operation of the magma is the restriction of the
+       group operation of the other magma to its base set, then the base set of
+       the magma is closed under the group operation of the other magma.
+       (Contributed by AV, 17-Feb-2024.) $)
+    mgmsscl $p |- ( ( ( G e. Mgm /\ H e. Mgm )
+                     /\ ( S C_ B /\ ( +g ` H ) = ( ( +g ` G ) |` ( S X. S ) ) )
+                     /\ ( X e. S /\ Y e. S ) ) -> ( X ( +g ` G ) Y ) e. S ) $=
+      ( cmgm wcel wa wss cplusg cfv cxp cres wceq w3a co ovres simp3 eqid mgmcl
+      3ad2ant3 simp1r 3anass sylanbrc syl wb oveq eleq1d eqcoms adantl 3ad2ant2
+      mpbird eqeltrrd ) CIJZDIJZKZBALZDMNZCMNZBBOPZQZKZEBJZFBJZKZRZEFVCSZEFVBSZ
+      BVHUSVJVKQVEEFBBVBTUDVIVJBJZEFVASZBJZVIURVFVGRZVNVIURVHVOUQURVEVHUEUSVEVH
+      UAURVFVGUFUGBDEFVAHVAUBUCUHVEUSVLVNUIZVHVDVPUTVPVCVAVCVAQVJVMBEFVCVAUJUKU
+      LUMUNUOUP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
