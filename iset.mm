@@ -143214,6 +143214,22 @@ $)
       LUMUNUOUP $.
   $}
 
+  ${
+    $d g x y B $.  $d g x y G $.  $d g x y .+ $.  $d x y X $.  $d x y Y $.
+    plusffval.1 $e |- B = ( Base ` G ) $.
+    plusffval.2 $e |- .+ = ( +g ` G ) $.
+    plusffval.3 $e |- .+^ = ( +f ` G ) $.
+    $( The group addition operation as a function.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.)  (Proof shortened by AV, 2-Mar-2024.) $)
+    plusffvalg $p |- ( G e. V -> .+^ = ( x e. B , y e. B |-> ( x .+ y ) ) ) $=
+      ( vg wcel cplusf cfv cv co cmpo cbs cplusg cvv df-plusf wceq eqtr4di elex
+      fveq2 oveqd mpoeq123dv wfn basfn funfvex sylancr eqeltrid mpoexga syl2anc
+      funfni fvmptd3 syl5eq ) FGLZEFMNABCCAOZBOZDPZQZJURKFABKOZRNZVDUSUTVCSNZPZ
+      QVBTMTABKUAVCFUBZABVDVDVFCCVAVGVDFRNZCVCFRUEHUCZVIVGVEDUSUTVGVEFSNDVCFSUE
+      IUCUFUGFGUDZURCTLZVKVBTLURCVHTHURRTUHFTLVHTLZUIVJVLTFRFRUJUOUKULZVMABCCVA
+      TTUMUNUPUQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
