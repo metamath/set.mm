@@ -143090,6 +143090,19 @@ $)
       WHVJVRBVICWIWHVHVQVICWGVHVQSWDVEVFVGFURUSWIUTVAVAVBVBABKIJVCVD $.
   $}
 
+  ${
+    $d B x y $.  $d M x y $.  $d .o. x y $.
+    ismgmn0.b $e |- B = ( Base ` M ) $.
+    ismgmn0.o $e |- .o. = ( +g ` M ) $.
+    $( The predicate "is a magma" for a structure with a nonempty base set.
+       (Contributed by AV, 29-Jan-2020.) $)
+    ismgmn0 $p |- ( A e. B -> ( M e. Mgm
+                                <-> A. x e. B A. y e. B ( x .o. y ) e. B ) ) $=
+      ( wcel cvv cmgm cv co wral wb cbs cdm cfv wrel wfn basfn fnrel ax-mp mpan
+      relelfvdm eleq2s elexd ismgm syl ) CDIZEJIEKIALBLFMDIBDNADNOUJEPQZEUKIZCE
+      PRZDPSZCUMIULPJTUNUAJPUBUCCEPUEUDGUFUGABDEJFGHUHUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
