@@ -18219,6 +18219,7 @@ $)
   $v .xb $.
   $v ., $.
   $v .(x) $.
+  $v .o. $.
   $v .0b $.
 
   $( Declare variable symbols that will be used to represent classes.  Note
@@ -18443,9 +18444,10 @@ $)
 
   $( Define a connective symbol for use as a class variable. $)
   c.0 $f class .0. $.
-
   $( Define a connective symbol for use as a class variable. $)
   c.0b $f class .0b $.
+  $( Define a connective symbol for use as a class variable. $)
+  c.op $f class .o. $.
 
   $( Let ` Z ` be a class variable. $)
   cZ $f class Z $.
@@ -143071,6 +143073,23 @@ $)
                                 A. x e. b A. y e. b ( x o y ) e. b } $.
   $}
 
+  ${
+    $d B b m o x y $.  $d M b m o x y $.  $d .o. b m o x y $.
+    ismgm.b $e |- B = ( Base ` M ) $.
+    ismgm.o $e |- .o. = ( +g ` M ) $.
+    $( The predicate "is a magma".  (Contributed by FL, 2-Nov-2009.)  (Revised
+       by AV, 6-Jan-2020.) $)
+    ismgm $p |- ( M e. V -> ( M e. Mgm
+                                <-> A. x e. B A. y e. B ( x .o. y ) e. B ) ) $=
+      ( vo vb vm cv co wcel wral cplusg cfv cbs wceq cvv wsbc wfn basfn funfvex
+      cmgm vex funfni mp2an a1i fveq2 eqtr4di wa plusgslid slotex adantr simplr
+      elv oveq adantl eleq12d raleqbidv sbcied2 df-mgm elab2g ) ALZBLZILZMZJLZN
+      ZBVIOZAVIOZIKLZPQZUAZJVMRQZUAVEVFFMZCNZBCOZACOZKDUEEVMDSZVOVTJVPCTVPTNZWA
+      RTUBVMTNWBUCKUFWBTVMRVMRUDUGUHUIWAVPDRQCVMDRUJGUKWAVICSZULZVLVTIVNFTVNTNZ
+      WDWEKVMPTUMUNUQUIWDVNDPQZFWAVNWFSWCVMDPUJUOHUKWDVGFSZULZVKVSAVICWAWCWGUPZ
+      WHVJVRBVICWIWHVHVQVICWGVHVQSWDVEVFVGFURUSWIUTVAVAVBVBABKIJVCVD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -159159,6 +159178,12 @@ htmldef ".*" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&lowast;</SPAN> ';
   latexdef ".*" as "\ast";
+htmldef ".o." as
+    " <IMG SRC='circ.gif' WIDTH=4 HEIGHT=19 ALT=' .o.' TITLE='.o.'> ";
+  althtmldef ".o." as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&#x26AC;</SPAN> ';
+  latexdef ".o." as "\circ";
 htmldef ".x." as
     " <IMG SRC='_.cdot.gif' WIDTH=4 HEIGHT=19 ALT=' .x.' TITLE='.x.'> ";
   althtmldef ".x." as
