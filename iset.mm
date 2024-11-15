@@ -56429,6 +56429,30 @@ $)
     PKEZUSULUTUMULUOABACUAZPQULUMCASZKEZVAULCUIUMVDACUBCABUCUDULVAVDULUPVCKULUP
     CUOSVCCUEULUOACVBUFUGPQUHUOUPBKUJTCUQKUKT $.
 
+  $( Weak version of ~ funex that holds without ~ ax-coll .  If the domain and
+     codomain of a function exist, so does the function.  (Contributed by Rohan
+     Ridenour, 13-Aug-2023.) $)
+  funexw $p |- ( ( Fun F /\ dom F e. B /\ ran F e. C ) -> F e. _V ) $=
+    ( wfun cdm wcel crn w3a cxp cvv xpexg 3adant1 wss wrel funrel relssdmrn syl
+    3ad2ant1 ssexd ) CDZCEZAFZCGZBFZHCUAUCIZJUBUDUEJFTUAUCABKLTUBCUEMZUDTCNUFCO
+    CPQRS $.
+  $( $j usage 'funexw' avoids 'ax-coll' ; $)
+
+  ${
+    $d x A $.  $d x C $.
+    mptexw.1 $e |- A e. _V $.
+    mptexw.2 $e |- C e. _V $.
+    mptexw.3 $e |- A. x e. A B e. C $.
+    $( Weak version of ~ mptex that holds without ~ ax-coll .  If the domain
+       and codomain of a function given by maps-to notation are sets, the
+       function is a set.  (Contributed by Rohan Ridenour, 13-Aug-2023.) $)
+    mptexw $p |- ( x e. A |-> B ) e. _V $=
+      ( cmpt wfun cdm cvv wcel crn funmpt eqid dmmptss ssexi wral wss rnmptss
+      ax-mp funexw mp3an ) ABCHZIUDJZKLUDMZKLUDKLABCNUEBEABCUDUDOZPQUFDFCDLABRU
+      FDSGABCDUDUGTUAQKKUDUBUC $.
+    $( $j usage 'mptexw' avoids 'ax-coll' ; $)
+  $}
+
   $( If the domain of a function exists, so does its range.  Part of Theorem
      4.15(v) of [Monk1] p. 46.  This theorem is derived using the Axiom of
      Replacement in the form of ~ funex .  (Contributed by NM, 11-Nov-1995.) $)
@@ -57517,6 +57541,25 @@ $)
     mpoexga $p |- ( ( A e. V /\ B e. W )
                        -> ( x e. A , y e. B |-> C ) e. _V ) $=
       ( cmpo eqid mpoexg ) ABCDEFGABCDEHZKIJ $.
+  $}
+
+  ${
+    $d z C $.  $d x y z A $.  $d x y z B $.  $d x y z D $.
+    mpoexw.1 $e |- A e. _V $.
+    mpoexw.2 $e |- B e. _V $.
+    mpoexw.3 $e |- D e. _V $.
+    mpoexw.4 $e |- A. x e. A A. y e. B C e. D $.
+    $( Weak version of ~ mpoex that holds without ~ ax-coll .  If the domain
+       and codomain of an operation given by maps-to notation are sets, the
+       operation is a set.  (Contributed by Rohan Ridenour, 14-Aug-2023.) $)
+    mpoexw $p |- ( x e. A , y e. B |-> C ) e. _V $=
+      ( vz cmpo wfun cvv wcel wral wceq eqeltri cv wrex cdm crn eqid mpofun cxp
+      dmmpoga ax-mp xpex cab rnmpo wa wi r19.21bi eleq1a syl rexlimdva rexlimiv
+      rspec abssi ssexi funexw mp3an ) ABCDELZMVCUAZNOVCUBZNOVCNOABCDEVCVCUCZUD
+      VDCDUEZNEFOZBDPZACPVDVGQJABCDEVCFVFUFUGCDGHUHRVEKSZEQZBDTZACTZKUIZNABKCDE
+      VCVFUJVNFIVMKFVLVJFOZACASCOZVKVOBDVPBSDOUKVHVKVOULVPVHBDVIACJURUMEFVJUNUO
+      UPUQUSUTRNNVCVAVB $.
+    $( $j usage 'mpoexw' avoids 'ax-coll' ; $)
   $}
 
   ${
