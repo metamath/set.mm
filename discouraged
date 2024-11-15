@@ -189,6 +189,7 @@
 "1sr" is used by "axi2m1".
 "1sr" is used by "axicn".
 "1sr" is used by "supsr".
+"1strstr" is used by "1strbasOLD".
 "1t1e1ALT" is used by "nnmul1com".
 "1t1e1ALT" is used by "remulinvcom".
 "1t1e1ALT" is used by "sn-0tie0".
@@ -1672,8 +1673,8 @@
 "basendx" is used by "1strstr".
 "basendx" is used by "2strstr".
 "basendx" is used by "2strstr1OLD".
-"basendx" is used by "baseltedgf".
 "basendx" is used by "basendxltdsndx".
+"basendx" is used by "basendxltedgfndx".
 "basendx" is used by "basendxltplendx".
 "basendx" is used by "basendxltplusgndx".
 "basendx" is used by "basendxlttsetndx".
@@ -5975,7 +5976,7 @@
 "e333" is used by "e33".
 "e3bi" is used by "en3lplem2VD".
 "e3bir" is used by "en3lplem2VD".
-"edgfndx" is used by "baseltedgf".
+"edgfndx" is used by "basendxltedgfndx".
 "edgfndx" is used by "edgfndxnn".
 "ee03" is used by "ee03an".
 "ee03" is used by "suctrALT2".
@@ -14254,6 +14255,8 @@ New usage of "1pi" is discouraged (11 uses).
 New usage of "1pr" is discouraged (16 uses).
 New usage of "1psubclN" is discouraged (0 uses).
 New usage of "1sr" is discouraged (8 uses).
+New usage of "1strbasOLD" is discouraged (0 uses).
+New usage of "1strstr" is discouraged (1 uses).
 New usage of "1strwunOLD" is discouraged (0 uses).
 New usage of "1t1e1ALT" is discouraged (3 uses).
 New usage of "235t711" is discouraged (0 uses).
@@ -19469,6 +19472,7 @@ Proof modification of "1div0apr" is discouraged (77 steps).
 Proof modification of "1oexOLD" is discouraged (4 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "1p2e3ALT" is discouraged (7 steps).
+Proof modification of "1strbasOLD" is discouraged (22 steps).
 Proof modification of "1strwunOLD" is discouraged (20 steps).
 Proof modification of "1t1e1ALT" is discouraged (13 steps).
 Proof modification of "2bornot2b" is discouraged (26 steps).

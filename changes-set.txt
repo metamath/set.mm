@@ -94,6 +94,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+15-Nov-24 baseltedgf basendxltedgfndx 
 12-Nov-24 sseldi    sselid      compare to sselii or sseldd
  9-Nov-24 eqsb3     eqsb1
  9-Nov-24 eqsbc3    eqsbc1
