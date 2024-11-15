@@ -1698,7 +1698,7 @@
 "basendx" is used by "resslemOLD".
 "basendx" is used by "rngstr".
 "basendx" is used by "scandxnbasendx".
-"basendx" is used by "setsmsbas".
+"basendx" is used by "setsmsbasOLD".
 "basendx" is used by "slotsbhcdif".
 "basendx" is used by "slotsinbpsd".
 "basendx" is used by "slotslnbpsd".
@@ -18660,6 +18660,8 @@ New usage of "setrec2fun" is discouraged (1 uses).
 New usage of "setrec2lem1" is discouraged (1 uses).
 New usage of "setrec2lem2" is discouraged (1 uses).
 New usage of "setsidvaldOLD" is discouraged (1 uses).
+New usage of "setsmsbasOLD" is discouraged (0 uses).
+New usage of "setsmsdsOLD" is discouraged (0 uses).
 New usage of "setsnidOLD" is discouraged (0 uses).
 New usage of "sgrpplusgaopALT" is discouraged (0 uses).
 New usage of "sh0" is discouraged (13 uses).
@@ -19188,9 +19190,11 @@ New usage of "zfpair" is discouraged (1 uses).
 New usage of "zfregs2VD" is discouraged (0 uses).
 New usage of "zfun" is discouraged (1 uses).
 New usage of "zlmbasOLD" is discouraged (0 uses).
+New usage of "zlmdsOLD" is discouraged (0 uses).
 New usage of "zlmlemOLD" is discouraged (3 uses).
 New usage of "zlmmulrOLD" is discouraged (0 uses).
 New usage of "zlmplusgOLD" is discouraged (0 uses).
+New usage of "zlmtsetOLD" is discouraged (0 uses).
 New usage of "znaddOLD" is discouraged (0 uses).
 New usage of "znbas2OLD" is discouraged (0 uses).
 New usage of "znbaslemOLD" is discouraged (3 uses).
@@ -20770,6 +20774,8 @@ Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "seqp1iOLD" is discouraged (20 steps).
 Proof modification of "setsidvaldOLD" is discouraged (93 steps).
+Proof modification of "setsmsbasOLD" is discouraged (55 steps).
+Proof modification of "setsmsdsOLD" is discouraged (62 steps).
 Proof modification of "setsnidOLD" is discouraged (140 steps).
 Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
 Proof modification of "sii" is discouraged (145 steps).
@@ -21035,9 +21041,11 @@ Proof modification of "zfcndrep" is discouraged (258 steps).
 Proof modification of "zfcndun" is discouraged (72 steps).
 Proof modification of "zfregs2VD" is discouraged (128 steps).
 Proof modification of "zlmbasOLD" is discouraged (18 steps).
+Proof modification of "zlmdsOLD" is discouraged (122 steps).
 Proof modification of "zlmlemOLD" is discouraged (161 steps).
 Proof modification of "zlmmulrOLD" is discouraged (18 steps).
 Proof modification of "zlmplusgOLD" is discouraged (18 steps).
+Proof modification of "zlmtsetOLD" is discouraged (102 steps).
 Proof modification of "znaddOLD" is discouraged (13 steps).
 Proof modification of "znbas2OLD" is discouraged (13 steps).
 Proof modification of "znbaslemOLD" is discouraged (77 steps).
