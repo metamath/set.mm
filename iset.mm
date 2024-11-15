@@ -143239,6 +143239,14 @@ $)
       EMZFAMZGAMZNZKLFGAAKOZLOZBPZFGBPZCQUOUPCKLAAVAUARUQKLABCDEHIJUBSUSFRUTGRU
       CVAVBRURUSFUTGBUDUEUOUPUQUFZUOUPUQUGZURUPBQMZUQVBQMVCUOUPVEUQUOBDTUHQIDTE
       UIUJUKSVDFGBAQAULUMUN $.
+
+    $( If the addition operation is already a function, the functionalization
+       of it is equal to the original operation.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.) $)
+    plusfeqg $p |- ( ( G e. V /\ .+ Fn ( B X. B ) ) -> .+^ = .+ ) $=
+      ( vx vy wcel cxp wfn wa cv co cmpo wceq plusffvalg adantr fnovim adantl
+      eqtr4d ) DEKZBAALMZNCIJAAIOJOBPQZBUDCUFRUEIJABCDEFGHSTUEBUFRUDIJAABUAUBUC
+      $.
   $}
 
 
