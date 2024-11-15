@@ -7590,12 +7590,11 @@ $)
     dcand.1 $e |- ( ph -> DECID ps ) $.
     dcand.2 $e |- ( ph -> DECID ch ) $.
     $( A conjunction of two decidable propositions is decidable.  (Contributed
-       by Jim Kingdon, 12-Apr-2018.) $)
+       by Jim Kingdon, 12-Apr-2018.)  (Revised by BJ, 14-Nov-2024.) $)
     dcand $p |- ( ph -> DECID ( ps /\ ch ) ) $=
-      ( wdc wa wn wo simpl intnanrd orim2i simpr intnand olcd jaoi anbi12i andi
-      df-dc andir orbi1i 3bitri 3imtr4i syl2anc ) ABFZCFZBCGZFZDEUGBHZCGZIZBUII
-      ZCHZGZIZUGUGHZIZUEUFGZUHUKUQUNUJUPUGUJBCUICJKLUNUPUGUNCBULUMMNOPURULCUMIZ
-      GULCGZUNIUOUEULUFUSBSCSQULCUMRUTUKUNBUICTUAUBUGSUCUD $.
+      ( wa wn wo wdc df-dc id intnanrd orim2i sylbi syl intnand sylanbrc sylibr
+      ordir ) ABCFZTGZHZTIABUAHZCUAHZUBABIZUCDUEBBGZHUCBJUFUABUFBCUFKLMNOACIZUD
+      EUGCCGZHUDCJUHUACUHCBUHKPMNOBCUASQTJR $.
   $}
 
   $( A conjunction of two decidable propositions is decidable.  (Contributed by
