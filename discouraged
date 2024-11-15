@@ -1691,7 +1691,7 @@
 "basendx" is used by "ipostr".
 "basendx" is used by "lmodstr".
 "basendx" is used by "mgpressOLD".
-"basendx" is used by "odubas".
+"basendx" is used by "odubasOLD".
 "basendx" is used by "oppcbasOLD".
 "basendx" is used by "otpsstr".
 "basendx" is used by "rescabsOLD".
@@ -3272,6 +3272,17 @@
 "ccatw2s1assOLD" is used by "ccat2s1fvwOLD".
 "ccatw2s1assOLD" is used by "ccatw2s1ccatws2OLD".
 "ccatw2s1ccatws2OLD" is used by "ccat2s1fvwALTOLD".
+"ccondx" is used by "catstr".
+"ccondx" is used by "oppcbasOLD".
+"ccondx" is used by "oppchomfvalOLD".
+"ccondx" is used by "prdsvalstr".
+"ccondx" is used by "prstclevalOLD".
+"ccondx" is used by "prstcocvalOLD".
+"ccondx" is used by "resccoOLD".
+"ccondx" is used by "slotsbhcdif".
+"ccondx" is used by "slotsbhcdifOLD".
+"ccondx" is used by "slotsdifocndx".
+"ccondx" is used by "slotsdifplendx2".
 "cdj3lem1" is used by "cdj3i".
 "cdj3lem1" is used by "cdj3lem2b".
 "cdj3lem2" is used by "cdj3i".
@@ -5557,6 +5568,26 @@
 "drsb1" is used by "iotaeq".
 "drsb1" is used by "sb2ae".
 "drsb1" is used by "sbco3".
+"dsndx" is used by "basendxltdsndx".
+"dsndx" is used by "cnfldfunOLD".
+"dsndx" is used by "cnfldstr".
+"dsndx" is used by "dsndxnmulrndx".
+"dsndx" is used by "dsndxnn".
+"dsndx" is used by "dsndxnplusgndx".
+"dsndx" is used by "dsndxntsetndx".
+"dsndx" is used by "eengstr".
+"dsndx" is used by "imasvalstr".
+"dsndx" is used by "odrngstr".
+"dsndx" is used by "setsmsdsOLD".
+"dsndx" is used by "slotsdifdsndx".
+"dsndx" is used by "slotsdifunifndx".
+"dsndx" is used by "slotsdnscsi".
+"dsndx" is used by "slotsinbpsd".
+"dsndx" is used by "slotslnbpsd".
+"dsndx" is used by "tngdsOLD".
+"dsndx" is used by "tnglemOLD".
+"dsndx" is used by "trkgstr".
+"dsndx" is used by "zlmdsOLD".
 "dtruALT2" is used by "fvprc".
 "dvadiaN" is used by "diarnN".
 "dveel1" is used by "distel".
@@ -7784,6 +7815,19 @@
 "homco2" is used by "opsqrlem1".
 "hommval" is used by "homulcl".
 "hommval" is used by "homval".
+"homndx" is used by "catstr".
+"homndx" is used by "oppcbasOLD".
+"homndx" is used by "oppchomfvalOLD".
+"homndx" is used by "prdsvalstr".
+"homndx" is used by "prstclevalOLD".
+"homndx" is used by "prstcocvalOLD".
+"homndx" is used by "rescabsOLD".
+"homndx" is used by "rescbasOLD".
+"homndx" is used by "resccoOLD".
+"homndx" is used by "slotsbhcdif".
+"homndx" is used by "slotsbhcdifOLD".
+"homndx" is used by "slotsdifocndx".
+"homndx" is used by "slotsdifplendx2".
 "homul12" is used by "hosubdi".
 "homulass" is used by "homul12".
 "homulass" is used by "honegneg".
@@ -8873,6 +8917,18 @@
 "ipidsq" is used by "pythi".
 "ipidsq" is used by "siilem1".
 "ipipcj" is used by "siii".
+"ipndx" is used by "cchhllemOLD".
+"ipndx" is used by "ipndxnbasendx".
+"ipndx" is used by "ipndxnmulrndx".
+"ipndx" is used by "ipndxnplusgndx".
+"ipndx" is used by "ipsstr".
+"ipndx" is used by "phlstr".
+"ipndx" is used by "slotsdifipndx".
+"ipndx" is used by "slotsdnscsi".
+"ipndx" is used by "slotstnscsi".
+"ipndx" is used by "sralemOLD".
+"ipndx" is used by "srascaOLD".
+"ipndx" is used by "sravscaOLD".
 "ipnm" is used by "hilnormi".
 "ipval" is used by "dipcl".
 "ipval" is used by "ipf".
@@ -9041,6 +9097,12 @@
 "isvciOLD" is used by "hhssnv".
 "isvciOLD" is used by "hilvc".
 "isvclem" is used by "isvcOLD".
+"itvndx" is used by "eengstr".
+"itvndx" is used by "lngndxnitvndx".
+"itvndx" is used by "slotsinbpsd".
+"itvndx" is used by "trkgstr".
+"itvndx" is used by "ttglemOLD".
+"itvndx" is used by "ttgvalOLD".
 "iunconnlem2" is used by "iunconnALT".
 "jaoded" is used by "suctrALT3".
 "joincomALT" is used by "joincom".
@@ -9187,6 +9249,11 @@
 "lnfnmuli" is used by "riesz3i".
 "lnfnsubi" is used by "lnfnconi".
 "lnfnsubi" is used by "riesz3i".
+"lngndx" is used by "eengstr".
+"lngndx" is used by "lngndxnitvndx".
+"lngndx" is used by "slotslnbpsd".
+"lngndx" is used by "ttglemOLD".
+"lngndx" is used by "ttgvalOLD".
 "lno0" is used by "blocnilem".
 "lno0" is used by "lnomul".
 "lno0" is used by "lnon0".
@@ -10063,6 +10130,26 @@
 "mulresr" is used by "axmulrcl".
 "mulresr" is used by "axpre-mulgt0".
 "mulresr" is used by "axrrecex".
+"mulrndx" is used by "basendxnmulrndx".
+"mulrndx" is used by "basendxnmulrndxOLD".
+"mulrndx" is used by "cnfldfunOLD".
+"mulrndx" is used by "dsndxnmulrndx".
+"mulrndx" is used by "ipndxnmulrndx".
+"mulrndx" is used by "matscaOLD".
+"mulrndx" is used by "matvscaOLD".
+"mulrndx" is used by "mnringaddgdOLD".
+"mulrndx" is used by "mnringbasedOLD".
+"mulrndx" is used by "mnringscadOLD".
+"mulrndx" is used by "mnringvscadOLD".
+"mulrndx" is used by "opprlemOLD".
+"mulrndx" is used by "plendxnmulrndx".
+"mulrndx" is used by "plusgndxnmulrndx".
+"mulrndx" is used by "rngstr".
+"mulrndx" is used by "scandxnmulrndx".
+"mulrndx" is used by "slotsdifunifndx".
+"mulrndx" is used by "starvndxnmulrndx".
+"mulrndx" is used by "tsetndxnmulrndx".
+"mulrndx" is used by "vscandxnmulrndx".
 "mulsrpr" is used by "00sr".
 "mulsrpr" is used by "1idsr".
 "mulsrpr" is used by "distrsr".
@@ -11383,6 +11470,13 @@
 "ocin" is used by "pjoc1i".
 "ocin" is used by "pjpreeq".
 "ocin" is used by "ssjo".
+"ocndx" is used by "basendxnocndx".
+"ocndx" is used by "ipostr".
+"ocndx" is used by "plendxnocndx".
+"ocndx" is used by "prstcocvalOLD".
+"ocndx" is used by "slotsdifocndx".
+"ocndx" is used by "thlbasOLD".
+"ocndx" is used by "thlleOLD".
 "ococ" is used by "chdmj1".
 "ococ" is used by "chdmj2".
 "ococ" is used by "chdmj3".
@@ -12056,7 +12150,54 @@
 "pl42lem2N" is used by "pl42lem4N".
 "pl42lem3N" is used by "pl42lem4N".
 "pl42lem4N" is used by "pl42N".
+"plendx" is used by "basendxltplendx".
+"plendx" is used by "cnfldfunOLD".
+"plendx" is used by "cnfldstr".
+"plendx" is used by "idlsrgstr".
+"plendx" is used by "imasvalstr".
+"plendx" is used by "ipostr".
+"plendx" is used by "odrngstr".
+"plendx" is used by "odubasOLD".
+"plendx" is used by "opsrbaslemOLD".
+"plendx" is used by "otpsstr".
+"plendx" is used by "plendxnmulrndx".
+"plendx" is used by "plendxnn".
+"plendx" is used by "plendxnocndx".
+"plendx" is used by "plendxnplusgndx".
+"plendx" is used by "plendxnscandx".
+"plendx" is used by "plendxnvscandx".
+"plendx" is used by "prstclevalOLD".
+"plendx" is used by "slotsdifdsndx".
+"plendx" is used by "slotsdifplendx".
+"plendx" is used by "slotsdifplendx2".
+"plendx" is used by "slotsdifunifndx".
+"plendx" is used by "thlleOLD".
+"plendx" is used by "znbaslemOLD".
 "plpv" is used by "addcompr".
+"plusgndx" is used by "basendxltplusgndx".
+"plusgndx" is used by "basendxnplusgndxOLD".
+"plusgndx" is used by "cnfldfunOLD".
+"plusgndx" is used by "dsndxnplusgndx".
+"plusgndx" is used by "grpbasex".
+"plusgndx" is used by "grpplusgx".
+"plusgndx" is used by "ipndxnplusgndx".
+"plusgndx" is used by "lmodstr".
+"plusgndx" is used by "mgplemOLD".
+"plusgndx" is used by "mgpressOLD".
+"plusgndx" is used by "oppglemOLD".
+"plusgndx" is used by "plendxnplusgndx".
+"plusgndx" is used by "plusgndxnmulrndx".
+"plusgndx" is used by "plusgndxnn".
+"plusgndx" is used by "rmodislmodOLD".
+"plusgndx" is used by "rngstr".
+"plusgndx" is used by "scandxnplusgndx".
+"plusgndx" is used by "slotsdifunifndx".
+"plusgndx" is used by "slotsinbpsd".
+"plusgndx" is used by "slotslnbpsd".
+"plusgndx" is used by "starvndxnplusgndx".
+"plusgndx" is used by "topgrpstr".
+"plusgndx" is used by "tsetndxnplusgndx".
+"plusgndx" is used by "vscandxnplusgndx".
 "pm2.18OLD" is used by "pm2.18dOLD".
 "pm2.43cbi" is used by "ee233".
 "pm2.43cbi" is used by "ee33VD".
@@ -12733,6 +12874,26 @@
 "sbied" is used by "wl-equsb3".
 "sbiedv" is used by "2sbiev".
 "sbtrt" is used by "sbtr".
+"scandx" is used by "algstr".
+"scandx" is used by "ipsstr".
+"scandx" is used by "lmodstr".
+"scandx" is used by "matscaOLD".
+"scandx" is used by "plendxnscandx".
+"scandx" is used by "psrvalstr".
+"scandx" is used by "resvlemOLD".
+"scandx" is used by "rmodislmodOLD".
+"scandx" is used by "scandxnbasendx".
+"scandx" is used by "scandxnmulrndx".
+"scandx" is used by "scandxnplusgndx".
+"scandx" is used by "slotsdifipndx".
+"scandx" is used by "slotsdnscsi".
+"scandx" is used by "slotstnscsi".
+"scandx" is used by "sralemOLD".
+"scandx" is used by "srascaOLD".
+"scandx" is used by "vscandxnscandx".
+"scandx" is used by "zlmdsOLD".
+"scandx" is used by "zlmlemOLD".
+"scandx" is used by "zlmtsetOLD".
 "setrec1lem1" is used by "setrec1lem2".
 "setrec1lem1" is used by "setrec1lem4".
 "setrec1lem1" is used by "setrec2fun".
@@ -13366,6 +13527,16 @@
 "ssralv2" is used by "ordelordALTVD".
 "st0" is used by "largei".
 "stadd3i" is used by "golem2".
+"starvndx" is used by "cnfldfunOLD".
+"starvndx" is used by "hlhilslemOLD".
+"starvndx" is used by "slotsdifdsndx".
+"starvndx" is used by "slotsdifplendx".
+"starvndx" is used by "slotsdifunifndx".
+"starvndx" is used by "srngstr".
+"starvndx" is used by "starvndxnbasendx".
+"starvndx" is used by "starvndxnmulrndx".
+"starvndx" is used by "starvndxnplusgndx".
+"starvndx" is used by "tsetndxnstarvndx".
 "stcl" is used by "golem1".
 "stcl" is used by "stadd3i".
 "stcl" is used by "staddi".
@@ -13514,6 +13685,32 @@
 "trsbc" is used by "trintALTVD".
 "trsbc" is used by "truniALT".
 "trsbc" is used by "truniALTVD".
+"tsetndx" is used by "basendxlttsetndx".
+"tsetndx" is used by "cnfldfunOLD".
+"tsetndx" is used by "cnfldstr".
+"tsetndx" is used by "dsndxntsetndx".
+"tsetndx" is used by "idlsrgstr".
+"tsetndx" is used by "imasvalstr".
+"tsetndx" is used by "indistpsx".
+"tsetndx" is used by "ipostr".
+"tsetndx" is used by "odrngstr".
+"tsetndx" is used by "otpsstr".
+"tsetndx" is used by "psrvalstr".
+"tsetndx" is used by "setsmsbasOLD".
+"tsetndx" is used by "setsmsdsOLD".
+"tsetndx" is used by "slotsdifplendx".
+"tsetndx" is used by "slotstnscsi".
+"tsetndx" is used by "symgvalstructOLD".
+"tsetndx" is used by "tngdsOLD".
+"tsetndx" is used by "tnglemOLD".
+"tsetndx" is used by "topgrpstr".
+"tsetndx" is used by "tsetndxnmulrndx".
+"tsetndx" is used by "tsetndxnn".
+"tsetndx" is used by "tsetndxnplusgndx".
+"tsetndx" is used by "tsetndxnstarvndx".
+"tsetndx" is used by "tuslemOLD".
+"tsetndx" is used by "unifndxntsetndx".
+"tsetndx" is used by "zlmtsetOLD".
 "ttglemOLD" is used by "ttgbasOLD".
 "ttglemOLD" is used by "ttgdsOLD".
 "ttglemOLD" is used by "ttgplusgOLD".
@@ -13524,6 +13721,13 @@
 "ubthlem3" is used by "ubth".
 "un0.1" is used by "sspwimpVD".
 "un2122" is used by "suctrALT3".
+"unifndx" is used by "basendxltunifndx".
+"unifndx" is used by "cnfldfunOLD".
+"unifndx" is used by "cnfldstr".
+"unifndx" is used by "slotsdifunifndx".
+"unifndx" is used by "tuslemOLD".
+"unifndx" is used by "unifndxnn".
+"unifndx" is used by "unifndxntsetndx".
 "unop" is used by "cnvunop".
 "unop" is used by "counop".
 "unop" is used by "unopadj".
@@ -13658,6 +13862,28 @@
 "vd23" is used by "e23".
 "vd23" is used by "e32".
 "vmcn" is used by "hmopidmchi".
+"vscandx" is used by "algstr".
+"vscandx" is used by "ipsstr".
+"vscandx" is used by "lmodstr".
+"vscandx" is used by "matvscaOLD".
+"vscandx" is used by "plendxnvscandx".
+"vscandx" is used by "psrvalstr".
+"vscandx" is used by "rmodislmodOLD".
+"vscandx" is used by "slotsdifipndx".
+"vscandx" is used by "slotsdnscsi".
+"vscandx" is used by "slotsinbpsd".
+"vscandx" is used by "slotslnbpsd".
+"vscandx" is used by "slotstnscsi".
+"vscandx" is used by "sralemOLD".
+"vscandx" is used by "srascaOLD".
+"vscandx" is used by "sravscaOLD".
+"vscandx" is used by "vscandxnbasendx".
+"vscandx" is used by "vscandxnmulrndx".
+"vscandx" is used by "vscandxnplusgndx".
+"vscandx" is used by "vscandxnscandx".
+"vscandx" is used by "zlmdsOLD".
+"vscandx" is used by "zlmlemOLD".
+"vscandx" is used by "zlmtsetOLD".
 "vsfval" is used by "nvaddsub".
 "vsfval" is used by "nvm".
 "vsfval" is used by "nvmfval".
@@ -15111,6 +15337,7 @@ New usage of "ccatw2s1assOLD" is discouraged (2 uses).
 New usage of "ccatw2s1ccatws2OLD" is discouraged (1 uses).
 New usage of "ccatw2s1p1OLD" is discouraged (0 uses).
 New usage of "cchhllemOLD" is discouraged (0 uses).
+New usage of "ccondx" is discouraged (11 uses).
 New usage of "cdeqab1" is discouraged (0 uses).
 New usage of "cdeqal1" is discouraged (0 uses).
 New usage of "cdj1i" is discouraged (0 uses).
@@ -15945,6 +16172,7 @@ New usage of "drnfc2OLD" is discouraged (0 uses).
 New usage of "drngcatALTV" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
 New usage of "drsb1" is discouraged (3 uses).
+New usage of "dsndx" is discouraged (20 uses).
 New usage of "dtruALT" is discouraged (0 uses).
 New usage of "dtruALT2" is discouraged (1 uses).
 New usage of "dtrucor2" is discouraged (0 uses).
@@ -16823,6 +17051,7 @@ New usage of "homcl" is discouraged (0 uses).
 New usage of "homco1" is discouraged (1 uses).
 New usage of "homco2" is discouraged (1 uses).
 New usage of "hommval" is discouraged (2 uses).
+New usage of "homndx" is discouraged (13 uses).
 New usage of "homul12" is discouraged (1 uses).
 New usage of "homulass" is discouraged (6 uses).
 New usage of "homulcl" is discouraged (21 uses).
@@ -17053,6 +17282,7 @@ New usage of "ipdirilem" is discouraged (1 uses).
 New usage of "ipf" is discouraged (2 uses).
 New usage of "ipidsq" is discouraged (6 uses).
 New usage of "ipipcj" is discouraged (1 uses).
+New usage of "ipndx" is discouraged (12 uses).
 New usage of "ipnm" is discouraged (1 uses).
 New usage of "ipval" is discouraged (3 uses).
 New usage of "ipval2" is discouraged (5 uses).
@@ -17131,6 +17361,7 @@ New usage of "isvciOLD" is discouraged (3 uses).
 New usage of "isvclem" is discouraged (1 uses).
 New usage of "iswatN" is discouraged (0 uses).
 New usage of "itg1addlem4OLD" is discouraged (0 uses).
+New usage of "itvndx" is discouraged (6 uses).
 New usage of "iunconnALT" is discouraged (0 uses).
 New usage of "iunconnlem2" is discouraged (1 uses).
 New usage of "ivthALT" is discouraged (0 uses).
@@ -17229,6 +17460,7 @@ New usage of "lnfnli" is discouraged (3 uses).
 New usage of "lnfnmul" is discouraged (1 uses).
 New usage of "lnfnmuli" is discouraged (7 uses).
 New usage of "lnfnsubi" is discouraged (2 uses).
+New usage of "lngndx" is discouraged (5 uses).
 New usage of "lnjatN" is discouraged (0 uses).
 New usage of "lno0" is discouraged (6 uses).
 New usage of "lnoadd" is discouraged (0 uses).
@@ -17403,6 +17635,8 @@ New usage of "mapdval4N" is discouraged (2 uses).
 New usage of "mapdval5N" is discouraged (0 uses).
 New usage of "mappsrpr" is discouraged (2 uses).
 New usage of "mathbox" is discouraged (0 uses).
+New usage of "matscaOLD" is discouraged (0 uses).
+New usage of "matvscaOLD" is discouraged (0 uses).
 New usage of "max1ALT" is discouraged (0 uses).
 New usage of "mayete3i" is discouraged (1 uses).
 New usage of "mayetes3i" is discouraged (0 uses).
@@ -17569,6 +17803,7 @@ New usage of "mulpipq2" is discouraged (6 uses).
 New usage of "mulpqf" is discouraged (5 uses).
 New usage of "mulpqnq" is discouraged (7 uses).
 New usage of "mulresr" is discouraged (4 uses).
+New usage of "mulrndx" is discouraged (20 uses).
 New usage of "mulsrpr" is discouraged (9 uses).
 New usage of "n0OLD" is discouraged (0 uses).
 New usage of "n0lpligALT" is discouraged (0 uses).
@@ -17938,6 +18173,7 @@ New usage of "occon2i" is discouraged (3 uses).
 New usage of "occon3" is discouraged (2 uses).
 New usage of "ocel" is discouraged (10 uses).
 New usage of "ocin" is discouraged (11 uses).
+New usage of "ocndx" is discouraged (7 uses).
 New usage of "ocnel" is discouraged (0 uses).
 New usage of "ococ" is discouraged (19 uses).
 New usage of "ococi" is discouraged (12 uses).
@@ -17948,6 +18184,7 @@ New usage of "ocsh" is discouraged (6 uses).
 New usage of "ocss" is discouraged (11 uses).
 New usage of "ocval" is discouraged (4 uses).
 New usage of "odfvalALT" is discouraged (0 uses).
+New usage of "odubasOLD" is discouraged (0 uses).
 New usage of "oldmm3N" is discouraged (2 uses).
 New usage of "olposN" is discouraged (0 uses).
 New usage of "om0x" is discouraged (0 uses).
@@ -18247,7 +18484,9 @@ New usage of "pl42lem1N" is discouraged (1 uses).
 New usage of "pl42lem2N" is discouraged (1 uses).
 New usage of "pl42lem3N" is discouraged (1 uses).
 New usage of "pl42lem4N" is discouraged (1 uses).
+New usage of "plendx" is discouraged (23 uses).
 New usage of "plpv" is discouraged (1 uses).
+New usage of "plusgndx" is discouraged (24 uses).
 New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
 New usage of "pm13.181OLD" is discouraged (0 uses).
@@ -18652,6 +18891,7 @@ New usage of "sbtALT" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "sbtr" is discouraged (0 uses).
 New usage of "sbtrt" is discouraged (1 uses).
+New usage of "scandx" is discouraged (20 uses).
 New usage of "scmateALT" is discouraged (0 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
 New usage of "seqp1iOLD" is discouraged (0 uses).
@@ -18886,6 +19126,7 @@ New usage of "sstrALT2VD" is discouraged (0 uses).
 New usage of "st0" is discouraged (1 uses).
 New usage of "stadd3i" is discouraged (1 uses).
 New usage of "staddi" is discouraged (0 uses).
+New usage of "starvndx" is discouraged (10 uses).
 New usage of "stcl" is discouraged (10 uses).
 New usage of "stcltr1i" is discouraged (2 uses).
 New usage of "stcltr2i" is discouraged (1 uses).
@@ -19003,6 +19244,7 @@ New usage of "truniALT" is discouraged (0 uses).
 New usage of "truniALTVD" is discouraged (0 uses).
 New usage of "trunorfalOLD" is discouraged (0 uses).
 New usage of "trunortruOLD" is discouraged (0 uses).
+New usage of "tsetndx" is discouraged (26 uses).
 New usage of "ttgbasOLD" is discouraged (0 uses).
 New usage of "ttgdsOLD" is discouraged (0 uses).
 New usage of "ttglemOLD" is discouraged (4 uses).
@@ -19023,6 +19265,7 @@ New usage of "undif3VD" is discouraged (0 uses).
 New usage of "unfiOLD" is discouraged (0 uses).
 New usage of "unieqOLD" is discouraged (0 uses).
 New usage of "unierri" is discouraged (0 uses).
+New usage of "unifndx" is discouraged (7 uses).
 New usage of "uniprOLD" is discouraged (0 uses).
 New usage of "uniprgOLD" is discouraged (0 uses).
 New usage of "unipwr" is discouraged (0 uses).
@@ -19111,6 +19354,7 @@ New usage of "vk15.4j" is discouraged (0 uses).
 New usage of "vk15.4jVD" is discouraged (0 uses).
 New usage of "vmcn" is discouraged (1 uses).
 New usage of "vn0ALT" is discouraged (0 uses).
+New usage of "vscandx" is discouraged (22 uses).
 New usage of "vsfval" is discouraged (4 uses).
 New usage of "vtocl3gaOLD" is discouraged (0 uses).
 New usage of "vtoclALT" is discouraged (0 uses).
@@ -20374,6 +20618,8 @@ Proof modification of "lukshef-ax1" is discouraged (6 steps).
 Proof modification of "lukshefth1" is discouraged (88 steps).
 Proof modification of "lukshefth2" is discouraged (129 steps).
 Proof modification of "mathbox" is discouraged (1 steps).
+Proof modification of "matscaOLD" is discouraged (73 steps).
+Proof modification of "matvscaOLD" is discouraged (69 steps).
 Proof modification of "max1ALT" is discouraged (48 steps).
 Proof modification of "meetcomALT" is discouraged (83 steps).
 Proof modification of "merco1" is discouraged (57 steps).
@@ -20528,6 +20774,7 @@ Proof modification of "nsnlpligALT" is discouraged (110 steps).
 Proof modification of "nsyl2OLD" is discouraged (12 steps).
 Proof modification of "o2p2e4OLD" is discouraged (67 steps).
 Proof modification of "odfvalALT" is discouraged (181 steps).
+Proof modification of "odubasOLD" is discouraged (62 steps).
 Proof modification of "omsindsOLD" is discouraged (89 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
 Proof modification of "onfrALT" is discouraged (88 steps).
