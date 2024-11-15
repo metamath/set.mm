@@ -18313,7 +18313,9 @@ New usage of "probfinmeasbALTV" is discouraged (0 uses).
 New usage of "prpssnq" is discouraged (8 uses).
 New usage of "prstchom2ALT" is discouraged (0 uses).
 New usage of "prstchomval" is discouraged (3 uses).
+New usage of "prstclevalOLD" is discouraged (0 uses).
 New usage of "prstcnidlem" is discouraged (2 uses).
+New usage of "prstcocvalOLD" is discouraged (0 uses).
 New usage of "prstcval" is discouraged (2 uses).
 New usage of "prub" is discouraged (6 uses).
 New usage of "psrass1lemOLD" is discouraged (0 uses).
@@ -18824,7 +18826,9 @@ New usage of "srabaseOLD" is discouraged (0 uses).
 New usage of "sradsOLD" is discouraged (0 uses).
 New usage of "sralemOLD" is discouraged (6 uses).
 New usage of "sramulrOLD" is discouraged (0 uses).
+New usage of "srascaOLD" is discouraged (0 uses).
 New usage of "sratsetOLD" is discouraged (0 uses).
+New usage of "sravscaOLD" is discouraged (0 uses).
 New usage of "srhmsubcALTV" is discouraged (4 uses).
 New usage of "srhmsubcALTVlem1" is discouraged (2 uses).
 New usage of "srhmsubcALTVlem2" is discouraged (1 uses).
@@ -20593,6 +20597,8 @@ Proof modification of "problem3" is discouraged (56 steps).
 Proof modification of "problem4" is discouraged (310 steps).
 Proof modification of "problem5" is discouraged (133 steps).
 Proof modification of "prstchom2ALT" is discouraged (121 steps).
+Proof modification of "prstclevalOLD" is discouraged (86 steps).
+Proof modification of "prstcocvalOLD" is discouraged (88 steps).
 Proof modification of "psrass1lemOLD" is discouraged (1513 steps).
 Proof modification of "psrbagaddclOLD" is discouraged (392 steps).
 Proof modification of "psrbagconOLD" is discouraged (365 steps).
@@ -20805,7 +20811,9 @@ Proof modification of "srabaseOLD" is discouraged (21 steps).
 Proof modification of "sradsOLD" is discouraged (34 steps).
 Proof modification of "sralemOLD" is discouraged (368 steps).
 Proof modification of "sramulrOLD" is discouraged (21 steps).
+Proof modification of "srascaOLD" is discouraged (204 steps).
 Proof modification of "sratsetOLD" is discouraged (21 steps).
+Proof modification of "sravscaOLD" is discouraged (177 steps).
 Proof modification of "ss2abdvALT" is discouraged (41 steps).
 Proof modification of "ss2abdvOLD" is discouraged (23 steps).
 Proof modification of "ss2abiOLD" is discouraged (17 steps).
