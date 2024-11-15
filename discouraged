@@ -1681,7 +1681,7 @@
 "basendx" is used by "basendxnmulrndx".
 "basendx" is used by "basendxnn".
 "basendx" is used by "catstr".
-"basendx" is used by "cnfldfun".
+"basendx" is used by "cnfldfunOLD".
 "basendx" is used by "eengstr".
 "basendx" is used by "grpbasex".
 "basendx" is used by "grpplusgx".
@@ -1693,7 +1693,7 @@
 "basendx" is used by "odubas".
 "basendx" is used by "oppcbasOLD".
 "basendx" is used by "otpsstr".
-"basendx" is used by "rescabs".
+"basendx" is used by "rescabsOLD".
 "basendx" is used by "rescbasOLD".
 "basendx" is used by "resslemOLD".
 "basendx" is used by "rngstr".
@@ -4724,6 +4724,7 @@
 "df-cnfld" is used by "cnfldds".
 "df-cnfld" is used by "cnfldfun".
 "df-cnfld" is used by "cnfldfunALT".
+"df-cnfld" is used by "cnfldfunOLD".
 "df-cnfld" is used by "cnfldle".
 "df-cnfld" is used by "cnfldmul".
 "df-cnfld" is used by "cnfldstr".
@@ -15450,6 +15451,7 @@ New usage of "cncph" is discouraged (2 uses).
 New usage of "cncvcOLD" is discouraged (1 uses).
 New usage of "cnexALT" is discouraged (0 uses).
 New usage of "cnfldfunALT" is discouraged (0 uses).
+New usage of "cnfldfunOLD" is discouraged (0 uses).
 New usage of "cnfnc" is discouraged (1 uses).
 New usage of "cnidOLD" is discouraged (1 uses).
 New usage of "cnims" is discouraged (1 uses).
@@ -15597,7 +15599,7 @@ New usage of "df-ch0" is discouraged (8 uses).
 New usage of "df-chj" is discouraged (1 uses).
 New usage of "df-chsup" is discouraged (1 uses).
 New usage of "df-cm" is discouraged (1 uses).
-New usage of "df-cnfld" is discouraged (12 uses).
+New usage of "df-cnfld" is discouraged (13 uses).
 New usage of "df-cnfn" is discouraged (2 uses).
 New usage of "df-cnop" is discouraged (2 uses).
 New usage of "df-com2" is discouraged (1 uses).
@@ -18433,6 +18435,7 @@ New usage of "relopabiALT" is discouraged (0 uses).
 New usage of "relrngo" is discouraged (6 uses).
 New usage of "renegclALT" is discouraged (0 uses).
 New usage of "renicax" is discouraged (0 uses).
+New usage of "rescabsOLD" is discouraged (0 uses).
 New usage of "rescbasOLD" is discouraged (0 uses).
 New usage of "resccoOLD" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
@@ -18995,6 +18998,7 @@ New usage of "ttgbasOLD" is discouraged (0 uses).
 New usage of "ttgdsOLD" is discouraged (0 uses).
 New usage of "ttglemOLD" is discouraged (4 uses).
 New usage of "ttgplusgOLD" is discouraged (0 uses).
+New usage of "ttgvalOLD" is discouraged (0 uses).
 New usage of "ttgvscaOLD" is discouraged (0 uses).
 New usage of "tuslemOLD" is discouraged (0 uses).
 New usage of "ubth" is discouraged (1 uses).
@@ -19659,6 +19663,7 @@ Proof modification of "cnaddcom" is discouraged (71 steps).
 Proof modification of "cncvcOLD" is discouraged (38 steps).
 Proof modification of "cnexALT" is discouraged (52 steps).
 Proof modification of "cnfldfunALT" is discouraged (423 steps).
+Proof modification of "cnfldfunOLD" is discouraged (1101 steps).
 Proof modification of "cnidOLD" is discouraged (118 steps).
 Proof modification of "cnncvsabsnegdemo" is discouraged (74 steps).
 Proof modification of "cnncvsaddassdemo" is discouraged (46 steps).
@@ -20661,6 +20666,7 @@ Proof modification of "relopabiALT" is discouraged (74 steps).
 Proof modification of "renegcl" is discouraged (34 steps).
 Proof modification of "renegclALT" is discouraged (149 steps).
 Proof modification of "renicax" is discouraged (76 steps).
+Proof modification of "rescabsOLD" is discouraged (602 steps).
 Proof modification of "rescbasOLD" is discouraged (106 steps).
 Proof modification of "resccoOLD" is discouraged (115 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
@@ -20885,6 +20891,7 @@ Proof modification of "ttgbasOLD" is discouraged (25 steps).
 Proof modification of "ttgdsOLD" is discouraged (31 steps).
 Proof modification of "ttglemOLD" is discouraged (273 steps).
 Proof modification of "ttgplusgOLD" is discouraged (25 steps).
+Proof modification of "ttgvalOLD" is discouraged (845 steps).
 Proof modification of "ttgvscaOLD" is discouraged (25 steps).
 Proof modification of "tuslemOLD" is discouraged (304 steps).
 Proof modification of "umgr2adedgwlkonALT" is discouraged (294 steps).
