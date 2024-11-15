@@ -143216,6 +143216,7 @@ $)
 
   ${
     $d g x y B $.  $d g x y G $.  $d g x y .+ $.  $d x y X $.  $d x y Y $.
+    $d x y V $.
     plusffval.1 $e |- B = ( Base ` G ) $.
     plusffval.2 $e |- .+ = ( +g ` G ) $.
     plusffval.3 $e |- .+^ = ( +f ` G ) $.
@@ -143228,6 +143229,16 @@ $)
       QVBTMTABKUAVCFUBZABVDVDVFCCVAVGVDFRNZCVCFRUEHUCZVIVGVEDUSUTVGVEFSNDVCFSUE
       IUCUFUGFGUDZURCTLZVKVBTLURCVHTHURRTUHFTLVHTLZUIVJVLTFRFRUJUOUKULZVMABCCVA
       TTUMUNUPUQ $.
+
+    $( The group addition operation as a function.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.) $)
+    plusfvalg $p |- ( ( G e. V /\ X e. B /\ Y e. B )
+        -> ( X .+^ Y ) = ( X .+ Y ) ) $=
+      ( vx vy wcel w3a cv co cvv wceq 3ad2ant1 cplusg cmpo plusffvalg wa oveq12
+      adantl simp2 simp3 cfv plusgslid slotex eqeltrid ovexg syl3anc ovmpod ) D
+      EMZFAMZGAMZNZKLFGAAKOZLOZBPZFGBPZCQUOUPCKLAAVAUARUQKLABCDEHIJUBSUSFRUTGRU
+      CVAVBRURUSFUTGBUDUEUOUPUQUFZUOUPUQUGZURUPBQMZUQVBQMVCUOUPVEUQUOBDTUHQIDTE
+      UIUJUKSVDFGBAQAULUMUN $.
   $}
 
 
