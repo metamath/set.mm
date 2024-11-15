@@ -143249,6 +143249,20 @@ $)
       $.
   $}
 
+  ${
+    $d x y B $.  $d x y G $.  $d x y V $.
+    plusffn.1 $e |- B = ( Base ` G ) $.
+    plusffn.2 $e |- .+^ = ( +f ` G ) $.
+    $( The group addition operation is a function.  (Contributed by Mario
+       Carneiro, 20-Sep-2015.) $)
+    plusffng $p |- ( G e. V -> .+^ Fn ( B X. B ) ) $=
+      ( vx vy wcel cxp wfn cv cplusg cfv co cvv wral wa vex eqid cmpo plusgslid
+      slotex a1i ovexg mp3an2ani ralrimivva fnmpo syl plusffvalg fneq1d mpbird
+      ) CDIZBAAJZKGHAAGLZHLZCMNZOZUAZUNKZUMURPIZHAQGAQUTUMVAGHAAUOPIUMUQPIUOAIU
+      PAIRZUPPIZVAGSCMDUBUCVCUMVBRHSUDUOUPUQPPPUEUFUGGHAAURUSPUSTUHUIUMUNBUSGHA
+      UQBCDEUQTFUJUKUL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
