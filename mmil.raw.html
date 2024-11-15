@@ -940,6 +940,14 @@ If a function value is inhabited, we know we are evaluating it within
 its domain by ~ relelfvdm .
 </LI>
 
+<li>
+  It may be necessary to add conditions, such as ` A e. CC ` or ` A e. NN ` ,
+  on classes used in a theorem. For example, the original proof
+  may have been using case elimination on whether a class is a proper
+  class, or using ovex or fvex in a way which you are replacing
+  with closure theorems.
+</li>
+
 <LI>
 With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
 ` A ` is an ordinal). In such theorems, ` (/) e. A ` is generally the more
@@ -1847,7 +1855,7 @@ is double negation elimination.</TD>
 
 <TR>
 <TD>ifnot</TD>
-<TD><I>none</I></TD>
+<TD>~ ifnotdc</TD>
 </TR>
 
 <TR>
@@ -12427,6 +12435,24 @@ intuitionistic and it is lightly used in set.mm</TD>
   quartlem3 , quartlem4 , quart</td>
   <td><i>none</i></td>
   <td>depends on quad2 and cubic</td>
+</tr>
+
+<tr>
+  <td>lgsfval</td>
+  <td>~ lgsfvalg</td>
+  <td>adds ` A e. ZZ ` and ` N e. NN ` conditions</td>
+</tr>
+
+<tr>
+  <td>2sqlem11</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses lgsqr and m1lgs</td>
+</tr>
+
+<tr>
+  <td>2sq</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses 2sqlem11</td>
 </tr>
 
 <tr>

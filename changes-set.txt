@@ -104,6 +104,7 @@ Date      Old       New         Notes
  9-Nov-24 clelsb3   clelsb1
  9-Nov-24 clelsb3fw clelsb1fw
  9-Nov-24 clelsb3f  clelsb1f
+ 7-Nov-24 slotsbaseefdif basendxnedgfndx
 31-Oct-24 ceilged   [same]      moved from GS's mathbox to main set.mm
 31-Oct-24 ceilcld   [same]      moved from GS's mathbox to main set.mm
 31-Oct-24 zexpcld   [same]      moved from SN's mathbox to main set.mm
