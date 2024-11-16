@@ -143303,6 +143303,16 @@ $)
       ABUPCGEFURUEUAUBUFUJUKUMUGABDUHUI $.
   $}
 
+  ${
+    $d M x y $.
+    $( Any set with an empty base set and any group operation is a magma.
+       (Contributed by AV, 28-Aug-2021.) $)
+    mgm0 $p |- ( ( M e. V /\ ( Base ` M ) = (/) ) -> M e. Mgm ) $=
+      ( vx vy wcel cbs c0 wceq wa cmgm cv cplusg co wral rzal adantl eqid ismgm
+      cfv wb adantr mpbird ) ABEZAFSZGHZIAJEZCKDKALSZMUDEDUDNZCUDNZUEUIUCUHCUDO
+      PUCUFUITUECDUDABUGUDQUGQRUAUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
