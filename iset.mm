@@ -143277,6 +143277,18 @@ $)
       GUHABUMFGAUKBCHDUPEUDUEUF $.
   $}
 
+  $( The internal operation for a set is the trivial operation iff the set is a
+     singleton.  (Contributed by FL, 13-Feb-2010.)  (Revised by AV,
+     23-Jan-2020.) $)
+  intopsn $p |- ( ( .o. : ( B X. B ) --> B /\ Z e. B )
+                  -> ( B = { Z } <-> .o. = { <. <. Z , Z >. , Z >. } ) ) $=
+    ( cxp wf wcel wa csn wceq cop simpl sqxpeqd feq23d syl5ibcom cdm fdm eqcomd
+    id adantr cvv eqeq2d xpid11 syl6ib impbid simpr xpsng sylancom feq2d anidms
+    wb opexg fsng mpancom adantl 3bitrd ) AADZABEZCAFZGZACHZIZUTUTDZUTBEZCCJZHZ
+    UTBEZBVDCJHIZUSVAVCUSUQVAVCUQURKVAUPAVBUTBVAAUTVARZLVHMNUSVCUPVBIZVAUSUPBOZ
+    IZVCVIUQVKURUQVJUPUPABPQSVCVJVBUPVBUTBPUANAUTUBUCUDUSVBVEUTBUQURURVBVEIUQUR
+    UECCAAUFUGUHURVFVGUJZUQVDTFZURVLURVMCCAAUKUIVDCTABULUMUNUO $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
