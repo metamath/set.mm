@@ -143263,6 +143263,20 @@ $)
       UQBCDEUQTFUJUKUL $.
   $}
 
+  ${
+    $d B x y $.  $d M x y $.
+    mgmplusf.1 $e |- B = ( Base ` M ) $.
+    mgmplusf.2 $e |- .+^ = ( +f ` M ) $.
+    $( The group addition function of a magma is a function into its base set.
+       (Contributed by Mario Carneiro, 14-Aug-2015.)  (Revisd by AV,
+       28-Jan-2020.) $)
+    mgmplusf $p |- ( M e. Mgm -> .+^ : ( B X. B ) --> B ) $=
+      ( vx vy cmgm wcel cxp wf cv cplusg cfv co cmpo wral eqid mgmcl 3expb fmpo
+      ralrimivva sylib plusffvalg feq1d mpbird ) CHIZAAJZABKUHAFGAAFLZGLZCMNZOZ
+      PZKZUGULAIZGAQFAQUNUGUOFGAAUGUIAIUJAIUOACUIUJUKDUKRZSTUBFGAAULAUMUMRUAUCU
+      GUHABUMFGAUKBCHDUPEUDUEUF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
