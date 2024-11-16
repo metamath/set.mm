@@ -19036,9 +19036,15 @@ $)
   $}
 
   ${
-    syl5eq.1 $e |- A = B $.
-    syl5eq.2 $e |- ( ph -> B = C ) $.
-    $( An equality transitivity deduction.  (Contributed by NM, 5-Aug-1993.) $)
+    eqtrid.1 $e |- A = B $.
+    eqtrid.2 $e |- ( ph -> B = C ) $.
+    $( An equality transitivity deduction.  (Contributed by NM,
+       21-Jun-1993.) $)
+    eqtrid $p |- ( ph -> A = C ) $=
+      ( wceq a1i eqtrd ) ABCDBCGAEHFI $.
+
+    $( Renamed to ~ eqtrid .  Kept during a transition period.  DO NOT USE.
+       (Contributed by NM, 21-Jun-1993.) $)
     syl5eq $p |- ( ph -> A = C ) $=
       ( wceq a1i eqtrd ) ABCDBCGAEHFI $.
   $}
