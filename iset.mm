@@ -143289,6 +143289,20 @@ $)
     IZVCVIUQVKURUQVJUPUPABPQSVCVJVBUPVBUTBPUANAUTUBUCUDUSVBVEUTBUQURURVBVEIUQUR
     UECCAAUFUGUHURVFVGUJZUQVDTFZURVLURVMCCAAUKUIVDCTABULUMUNUO $.
 
+  ${
+    mgmb1mgm1.b $e |- B = ( Base ` M ) $.
+    mgmb1mgm1.p $e |- .+ = ( +g ` M ) $.
+    $( The only magma with a base set consisting of one element is the trivial
+       magma (at least if its operation is an internal binary operation).
+       (Contributed by AV, 23-Jan-2020.)  (Revised by AV, 7-Feb-2020.) $)
+    mgmb1mgm1 $p |- ( ( M e. Mgm /\ Z e. B /\ .+ Fn ( B X. B ) )
+                      -> ( B = { Z } <-> .+ = { <. <. Z , Z >. , Z >. } ) ) $=
+      ( cmgm wcel cxp wfn w3a wf csn wceq cop wb wa cplusf cfv eqid feq1d mpbid
+      mgmplusf adantr plusfeqg 3adant2 simp2 intopsn syl2anc ) CGHZDAHZBAAIZJZK
+      ULABLZUKADMNBDDODOMNPUJUMUNUKUJUMQZULACRSZLZUNUJUQUMAUPCEUPTZUCUDUOULAUPB
+      ABUPCGEFURUEUAUBUFUJUKUMUGABDUHUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
