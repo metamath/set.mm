@@ -14598,6 +14598,7 @@ New usage of "bj-peircecurry" is discouraged (0 uses).
 New usage of "bj-pw0ALT" is discouraged (0 uses).
 New usage of "bj-rabtrALT" is discouraged (0 uses).
 New usage of "bj-rabtrAUTO" is discouraged (0 uses).
+New usage of "bj-rdg0gALT" is discouraged (0 uses).
 New usage of "bj-sbceqgALT" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
 New usage of "bj-sbidmOLD" is discouraged (0 uses).
@@ -16386,6 +16387,7 @@ New usage of "fnresiOLD" is discouraged (0 uses).
 New usage of "fnsnfvOLD" is discouraged (0 uses).
 New usage of "footexALT" is discouraged (0 uses).
 New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
+New usage of "friOLD" is discouraged (0 uses).
 New usage of "fsetprcnexALT" is discouraged (0 uses).
 New usage of "fsplitOLD" is discouraged (0 uses).
 New usage of "fuchomOLD" is discouraged (0 uses).
@@ -19576,6 +19578,7 @@ Proof modification of "bj-rababw" is discouraged (34 steps).
 Proof modification of "bj-rabtrALT" is discouraged (36 steps).
 Proof modification of "bj-rabtrAUTO" is discouraged (33 steps).
 Proof modification of "bj-ralvw" is discouraged (34 steps).
+Proof modification of "bj-rdg0gALT" is discouraged (107 steps).
 Proof modification of "bj-rexcom4b" is discouraged (43 steps).
 Proof modification of "bj-rexcom4bv" is discouraged (43 steps).
 Proof modification of "bj-rexvw" is discouraged (34 steps).
@@ -20219,6 +20222,7 @@ Proof modification of "frege96" is discouraged (39 steps).
 Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
 Proof modification of "frgrwopreglem5ALT" is discouraged (519 steps).
+Proof modification of "friOLD" is discouraged (96 steps).
 Proof modification of "fsetprcnexALT" is discouraged (190 steps).
 Proof modification of "fsplitOLD" is discouraged (234 steps).
 Proof modification of "fuchomOLD" is discouraged (229 steps).

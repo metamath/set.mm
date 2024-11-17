@@ -94,6 +94,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+16-Nov-24 rspcdvinvd rspcdv2    moved from SP's mathbox to main set.mm
 12-Nov-24 sseldi    sselid      compare to sselii or sseldd
 11-Nov-24 mpteq12da [same]      moved from GS's mathbox to main set.mm
  9-Nov-24 eqsb3     eqsb1
