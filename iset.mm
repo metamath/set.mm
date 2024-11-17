@@ -143360,6 +143360,50 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Identity elements
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ("Identity element", 7-Feb-2020,
+  ~ https://en.wikipedia.org/wiki/Identity_element ): "In mathematics, an
+  _identity element_, or _neutral element_, is a special type of element of a
+  set with respect to a binary operation on that set, which leaves any element
+  of the set unchanged when combined with it.". Or in more detail "... an
+  element e of S is called a _left identity_ if e * a = a for all a in S, and a
+  _right identity_ if a * e = a for all a in S.  If e is both a left identity
+  and a right identity, then it is called a _two-sided identity_, or simply an
+  _identity_."  We concentrate on two-sided identities in the following.  The
+  existence of an identity (an identity is unique if it exists, see ~ mgmidmo )
+  is an important property of monoids, and therefore also for
+  groups, but also for magmas not required to be associative.
+  Magmas with an identity element are called "unital magmas" (see Definition 2
+  in [BourbakiAlg1] p. 12) or, if the magmas are cancellative, "loops" (see
+  definition in [Bruck] p. 15).
+
+  In the context of extensible structures, the identity element (of any magma
+  ` M `) is defined as "group identity element" ` ( 0g `` M ) `, see ~ df-0g .
+  Related theorems which are already valid for magmas are provided in the
+  following.
+
+$)
+
+  ${
+    $d u w x B $.  $d u w x .+ $.
+    $( A two-sided identity element is unique (if it exists) in any magma.
+       (Contributed by Mario Carneiro, 7-Dec-2014.)  (Revised by NM,
+       17-Jun-2017.) $)
+    mgmidmo $p |- E* u e. B A. x e. B ( ( u .+ x ) = x /\ ( x .+ u ) = x ) $=
+      ( vw cv co wceq wa wral wrmo wi wcel simpl ralimi oveq1 id eqeq12d rspcva
+      weq simpr oveq2 sylan9req an42s ex syl2ani rgen2 eqeq1d ovanraleqv mpbir
+      rmo4 ) BFZAFZDGZUMHZUMULDGUMHZIZACJZBCKUREFZUMDGZUMHZUMUSDGZUMHZIZACJZIBE
+      TZLZECJBCJVGBECCURULCMZUSCMZIZUOACJZVCACJZVFVEUQUOACUOUPNOVDVCACVAVCUAOVJ
+      VKVLIVFVHVLVIVKVFVHVLIVIVKIULULUSDGZUSVCVMULHAULCABTZVBVMUMULUMULUSDPVNQR
+      SUOVMUSHAUSCAETZUNVMUMUSUMUSULDUBVOQRSUCUDUEUFUGURVEBECUOVAAUMULUMDCUSVFU
+      NUTUMULUSUMDPUHUIUKUJ $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
