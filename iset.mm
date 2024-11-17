@@ -143338,6 +143338,26 @@ $)
       VGAWAVMWJWTVDEFAVMBVKVMVEVKVEVFVBS $.
   $}
 
+  ${
+    $d B x y $.  $d B a b $.  $d M x a b $.  $d ph a b $.  $d ph x y $.
+    opifismgm.b $e |- B = ( Base ` M ) $.
+    opifismgm.p $e |- ( +g ` M ) = ( x e. B , y e. B
+                                     |-> if ( ps , C , D ) ) $.
+    opifismgmdc.dc $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) -> DECID ps ) $.
+    opifismgm.m $e |- ( ph -> E. x x e. B ) $.
+    opifismgm.c $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) -> C e. B ) $.
+    opifismgm.d $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) -> D e. B ) $.
+    $( A structure with a group addition operation expressed by a conditional
+       operator is a magma if both values of the conditional operator are
+       contained in the base set.  (Contributed by AV, 9-Feb-2020.) $)
+    opifismgmdc $p |- ( ph -> M e. Mgm ) $=
+      ( va vb wcel cv wral wa cplusg cfv co cif ralrimivva adantr simprl simprr
+      cmgm ifcldcd ovmpoelrn syl3anc wex wb eqid ismgmn0 exlimiv syl mpbird ) A
+      HUIQZORZPRZHUAUBZUCEQZPESOESZAVDOPEEAVAEQZVBEQZTZTBFGUDZEQZDESCESZVFVGVDA
+      VKVHAVJCDEEACRZEQZDREQTTBFGEMNKUJUEUFAVFVGUGAVFVGUHCDEEVIEVCVAVBJUKULUEAV
+      MCUMUTVEUNZLVMVNCOPVLEHVCIVCUOUPUQURUS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
