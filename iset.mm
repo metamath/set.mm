@@ -143319,6 +143319,25 @@ $)
       PUCUFUITUECDUDABUGUDQUGQRUAUB $.
   $}
 
+  ${
+    $d I x y $.  $d M x y $.  $d V x y $.
+    mgm1.m $e |- M = { <. ( Base ` ndx ) , { I } >. ,
+                       <. ( +g ` ndx ) , { <. <. I , I >. , I >. } >. } $.
+    $( The structure with one element and the only closed internal operation
+       for a singleton is a magma.  (Contributed by AV, 10-Feb-2020.) $)
+    mgm1 $p |- ( I e. V -> M e. Mgm ) $=
+      ( vx vy wcel cv cfv co wral cop csn cvv wceq mpancom eleq1d ralsng mpbird
+      opexg cmgm cplusg cbs df-ov anidms fvsng eqtrid snidg eqeltrd oveq1 oveq2
+      ralbidv bitrd snexg grpbaseg syl2anc grpplusgg oveqd eleq12d raleqbidv wb
+      syl mpbid eleqtrd eqid ismgmn0 ) ACGZBUAGZEHZFHZBUBIZJZBUCIZGZFVMKZEVMKZV
+      GVIVJAALZALZMZJZAMZGZFWAKZEWAKZVPVGWDAAVSJZWAGZVGWEAWAVGWEVQVSIZAAAVSUDVQ
+      NGZVGWGAOVGWHAACCTUEZVQANCUFPUGACUHZUIVGWDAVJVSJZWAGZFWAKZWFWCWMEACVIAOZW
+      BWLFWAWNVTWKWAVIAVJVSUJQULRWLWFFACVJAOWKWEWAVJAAVSUKQRUMSVGWCVOEWAVMVGWAN
+      GZVSNGZWAVMOACUNZVGVRNGZWPWHVGWRWIVQANCTPVRNUNVBZWAVSBNNDUOUPZVGWBVNFWAVM
+      WTVGVTVLWAVMVGVSVKVIVJVGWOWPVSVKOWQWSWAVSBNNDUQUPURWTUSUTUTVCVGAVMGVHVPVA
+      VGAWAVMWJWTVDEFAVMBVKVMVEVKVEVFVBS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
