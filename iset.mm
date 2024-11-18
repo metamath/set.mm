@@ -143402,6 +143402,25 @@ $)
       NUTUMULUSUMDPUHUIUKUJ $.
   $}
 
+  ${
+    $d e g x B $.  $d e g x G $.  $d g .+ $.
+    grpidval.b $e |- B = ( Base ` G ) $.
+    grpidval.p $e |- .+ = ( +g ` G ) $.
+    grpidval.o $e |- .0. = ( 0g ` G ) $.
+    $( The value of the identity element of a group.  (Contributed by NM,
+       20-Aug-2011.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+    grpidvalg $p |- ( G e. V -> .0. = ( iota e ( e e. B
+        /\ A. x e. B ( ( e .+ x ) = x /\ ( x .+ e ) = x ) ) ) ) $=
+      ( vg wcel cfv cv co wceq wa cbs cplusg cvv c0g df-0g fveq2 eqtr4di eleq2d
+      wral cio oveqd eqeq1d anbi12d raleqbidv iotabidv elex crio df-riota basfn
+      wfn funfvex funfni sylancr eqeltrid riotaexg syl eqeltrrid fvmptd3 eqtrid
+      ) EFLZGEUAMDNZBLZVHANZCOZVJPZVJVHCOZVJPZQZABUFZQZDUGZJVGKEVHKNZRMZLZVHVJV
+      SSMZOZVJPZVJVHWBOZVJPZQZAVTUFZQZDUGVRTUATADKUBVSEPZWIVQDWJWAVIWHVPWJVTBVH
+      WJVTERMZBVSERUCHUDZUEWJWGVOAVTBWLWJWDVLWFVNWJWCVKVJWJWBCVHVJWJWBESMCVSESU
+      CIUDZUHUIWJWEVMVJWJWBCVJVHWMUHUIUJUKUJULEFUMZVGVRVPDBUNZTVPDBUOVGBTLWOTLV
+      GBWKTHVGRTUQETLWKTLZUPWNWPTERERURUSUTVAVPDBTVBVCVDVEVF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
