@@ -461,7 +461,7 @@
 "4syl" is used by "unveldomd".
 "4syl" is used by "vdwmc".
 "4syl" is used by "vieta1lem2".
-"4syl" is used by "wfrlem5".
+"4syl" is used by "wfrlem5OLD".
 "4syl" is used by "wl-nfeqfb".
 "4syl" is used by "xnn0lem1lt".
 "4syl" is used by "znf1o".
@@ -5095,18 +5095,6 @@
 "df-vsca" is used by "ttgvscaOLD".
 "df-vsca" is used by "vscaid".
 "df-vsca" is used by "vscandx".
-"df-wrecs" is used by "csbwrecsg".
-"df-wrecs" is used by "dfrecs3".
-"df-wrecs" is used by "dfwrecs2".
-"df-wrecs" is used by "nfwrecsOLD".
-"df-wrecs" is used by "wfrdmclOLD".
-"df-wrecs" is used by "wfrdmssOLD".
-"df-wrecs" is used by "wfrfunOLD".
-"df-wrecs" is used by "wfrlem12".
-"df-wrecs" is used by "wfrlem16".
-"df-wrecs" is used by "wfrlem17".
-"df-wrecs" is used by "wfrrelOLD".
-"df-wrecs" is used by "wrecseq123OLD".
 "df0op2" is used by "hh0oi".
 "df0op2" is used by "ho01i".
 "df0op2" is used by "nmop0h".
@@ -5221,6 +5209,17 @@
 "dfvd3ir" is used by "vd03".
 "dfvd3ir" is used by "vd13".
 "dfvd3ir" is used by "vd23".
+"dfwrecsOLD" is used by "csbwrecsg".
+"dfwrecsOLD" is used by "dfrecs3".
+"dfwrecsOLD" is used by "nfwrecsOLD".
+"dfwrecsOLD" is used by "wfrdmclOLD".
+"dfwrecsOLD" is used by "wfrdmssOLD".
+"dfwrecsOLD" is used by "wfrfunOLD".
+"dfwrecsOLD" is used by "wfrlem12OLD".
+"dfwrecsOLD" is used by "wfrlem16OLD".
+"dfwrecsOLD" is used by "wfrlem17OLD".
+"dfwrecsOLD" is used by "wfrrelOLD".
+"dfwrecsOLD" is used by "wrecseq123OLD".
 "dia11N" is used by "diaf11N".
 "dia1N" is used by "dia1elN".
 "dia1elN" is used by "docaclN".
@@ -13870,17 +13869,41 @@
 "w-bnj19" is used by "bnj978".
 "watfvalN" is used by "watvalN".
 "watvalN" is used by "iswatN".
-"wfrdmclOLD" is used by "wfrlem10".
-"wfrdmclOLD" is used by "wfrlem14".
-"wfrdmclOLD" is used by "wfrlem15".
-"wfrdmssOLD" is used by "wfrlem10".
-"wfrdmssOLD" is used by "wfrlem15".
-"wfrdmssOLD" is used by "wfrlem16".
-"wfrdmssOLD" is used by "wfrlem8".
-"wfrfunOLD" is used by "wfr1".
-"wfrfunOLD" is used by "wfrlem12".
-"wfrfunOLD" is used by "wfrlem13".
-"wfrfunOLD" is used by "wfrlem17".
+"wfr2aOLD" is used by "wfr2OLD".
+"wfrdmclOLD" is used by "wfrlem10OLD".
+"wfrdmclOLD" is used by "wfrlem14OLD".
+"wfrdmclOLD" is used by "wfrlem15OLD".
+"wfrdmssOLD" is used by "wfrlem10OLD".
+"wfrdmssOLD" is used by "wfrlem15OLD".
+"wfrdmssOLD" is used by "wfrlem16OLD".
+"wfrdmssOLD" is used by "wfrlem8OLD".
+"wfrfunOLD" is used by "wfr1OLD".
+"wfrfunOLD" is used by "wfrlem12OLD".
+"wfrfunOLD" is used by "wfrlem13OLD".
+"wfrfunOLD" is used by "wfrlem17OLD".
+"wfrlem10OLD" is used by "wfrlem15OLD".
+"wfrlem12OLD" is used by "wfr2aOLD".
+"wfrlem12OLD" is used by "wfrlem14OLD".
+"wfrlem13OLD" is used by "wfrlem14OLD".
+"wfrlem13OLD" is used by "wfrlem15OLD".
+"wfrlem14OLD" is used by "wfrlem15OLD".
+"wfrlem15OLD" is used by "wfrlem16OLD".
+"wfrlem16OLD" is used by "wfr1OLD".
+"wfrlem16OLD" is used by "wfr2OLD".
+"wfrlem1OLD" is used by "wfrdmclOLD".
+"wfrlem1OLD" is used by "wfrlem2OLD".
+"wfrlem1OLD" is used by "wfrlem3OLD".
+"wfrlem1OLD" is used by "wfrlem3OLDa".
+"wfrlem1OLD" is used by "wfrlem4OLD".
+"wfrlem2OLD" is used by "wfrlem4OLD".
+"wfrlem2OLD" is used by "wfrlem5OLD".
+"wfrlem2OLD" is used by "wfrrelOLD".
+"wfrlem3OLD" is used by "wfrdmssOLD".
+"wfrlem3OLD" is used by "wfrlem5OLD".
+"wfrlem3OLDa" is used by "wfrlem17OLD".
+"wfrlem4OLD" is used by "wfrlem5OLD".
+"wfrlem5OLD" is used by "wfrfunOLD".
+"wfrlem8OLD" is used by "wfrlem10OLD".
 "wfrrelOLD" is used by "wfrfunOLD".
 "wl-impchain-a1-1" is used by "wl-impchain-a1-2".
 "wl-impchain-a1-2" is used by "wl-impchain-a1-3".
@@ -15737,7 +15760,6 @@ New usage of "df-vhc2" is discouraged (1 uses).
 New usage of "df-vhc3" is discouraged (1 uses).
 New usage of "df-vs" is discouraged (1 uses).
 New usage of "df-vsca" is discouraged (7 uses).
-New usage of "df-wrecs" is discouraged (12 uses).
 New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfadj2" is discouraged (7 uses).
 New usage of "dfbi1ALT" is discouraged (0 uses).
@@ -15779,6 +15801,7 @@ New usage of "dfvd3ani" is discouraged (2 uses).
 New usage of "dfvd3anir" is discouraged (2 uses).
 New usage of "dfvd3i" is discouraged (6 uses).
 New usage of "dfvd3ir" is discouraged (10 uses).
+New usage of "dfwrecsOLD" is discouraged (11 uses).
 New usage of "dia0eldmN" is discouraged (0 uses).
 New usage of "dia11N" is discouraged (1 uses).
 New usage of "dia1N" is discouraged (1 uses).
@@ -19140,9 +19163,26 @@ New usage of "watvalN" is discouraged (1 uses).
 New usage of "wfiOLD" is discouraged (0 uses).
 New usage of "wfis2fgOLD" is discouraged (0 uses).
 New usage of "wfisgOLD" is discouraged (0 uses).
+New usage of "wfr1OLD" is discouraged (0 uses).
+New usage of "wfr2OLD" is discouraged (0 uses).
+New usage of "wfr2aOLD" is discouraged (1 uses).
 New usage of "wfrdmclOLD" is discouraged (3 uses).
 New usage of "wfrdmssOLD" is discouraged (4 uses).
 New usage of "wfrfunOLD" is discouraged (4 uses).
+New usage of "wfrlem10OLD" is discouraged (1 uses).
+New usage of "wfrlem12OLD" is discouraged (2 uses).
+New usage of "wfrlem13OLD" is discouraged (2 uses).
+New usage of "wfrlem14OLD" is discouraged (1 uses).
+New usage of "wfrlem15OLD" is discouraged (1 uses).
+New usage of "wfrlem16OLD" is discouraged (2 uses).
+New usage of "wfrlem17OLD" is discouraged (0 uses).
+New usage of "wfrlem1OLD" is discouraged (5 uses).
+New usage of "wfrlem2OLD" is discouraged (3 uses).
+New usage of "wfrlem3OLD" is discouraged (2 uses).
+New usage of "wfrlem3OLDa" is discouraged (1 uses).
+New usage of "wfrlem4OLD" is discouraged (1 uses).
+New usage of "wfrlem5OLD" is discouraged (1 uses).
+New usage of "wfrlem8OLD" is discouraged (1 uses).
 New usage of "wfrrelOLD" is discouraged (1 uses).
 New usage of "wl-embant" is discouraged (0 uses).
 New usage of "wl-impchain-a1-1" is discouraged (1 uses).
@@ -19764,6 +19804,7 @@ Proof modification of "dfvd3ani" is discouraged (19 steps).
 Proof modification of "dfvd3anir" is discouraged (19 steps).
 Proof modification of "dfvd3i" is discouraged (19 steps).
 Proof modification of "dfvd3ir" is discouraged (19 steps).
+Proof modification of "dfwrecsOLD" is discouraged (619 steps).
 Proof modification of "dif1enALT" is discouraged (335 steps).
 Proof modification of "difidALT" is discouraged (14 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
@@ -21017,9 +21058,26 @@ Proof modification of "vtxdusgr0edgnelALT" is discouraged (94 steps).
 Proof modification of "wfiOLD" is discouraged (227 steps).
 Proof modification of "wfis2fgOLD" is discouraged (51 steps).
 Proof modification of "wfisgOLD" is discouraged (204 steps).
+Proof modification of "wfr1OLD" is discouraged (46 steps).
+Proof modification of "wfr2OLD" is discouraged (58 steps).
+Proof modification of "wfr2aOLD" is discouraged (66 steps).
 Proof modification of "wfrdmclOLD" is discouraged (255 steps).
 Proof modification of "wfrdmssOLD" is discouraged (97 steps).
 Proof modification of "wfrfunOLD" is discouraged (267 steps).
+Proof modification of "wfrlem10OLD" is discouraged (227 steps).
+Proof modification of "wfrlem12OLD" is discouraged (365 steps).
+Proof modification of "wfrlem13OLD" is discouraged (129 steps).
+Proof modification of "wfrlem14OLD" is discouraged (353 steps).
+Proof modification of "wfrlem15OLD" is discouraged (430 steps).
+Proof modification of "wfrlem16OLD" is discouraged (236 steps).
+Proof modification of "wfrlem17OLD" is discouraged (337 steps).
+Proof modification of "wfrlem1OLD" is discouraged (253 steps).
+Proof modification of "wfrlem2OLD" is discouraged (68 steps).
+Proof modification of "wfrlem3OLD" is discouraged (84 steps).
+Proof modification of "wfrlem3OLDa" is discouraged (113 steps).
+Proof modification of "wfrlem4OLD" is discouraged (526 steps).
+Proof modification of "wfrlem5OLD" is discouraged (416 steps).
+Proof modification of "wfrlem8OLD" is discouraged (69 steps).
 Proof modification of "wfrrelOLD" is discouraged (89 steps).
 Proof modification of "wl-cases2-dnf" is discouraged (85 steps).
 Proof modification of "wl-dfclab" is discouraged (73 steps).
