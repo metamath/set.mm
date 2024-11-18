@@ -5098,15 +5098,15 @@
 "df-wrecs" is used by "csbwrecsg".
 "df-wrecs" is used by "dfrecs3".
 "df-wrecs" is used by "dfwrecs2".
-"df-wrecs" is used by "nfwrecs".
-"df-wrecs" is used by "wfrdmcl".
-"df-wrecs" is used by "wfrdmss".
-"df-wrecs" is used by "wfrfun".
+"df-wrecs" is used by "nfwrecsOLD".
+"df-wrecs" is used by "wfrdmclOLD".
+"df-wrecs" is used by "wfrdmssOLD".
+"df-wrecs" is used by "wfrfunOLD".
 "df-wrecs" is used by "wfrlem12".
 "df-wrecs" is used by "wfrlem16".
 "df-wrecs" is used by "wfrlem17".
-"df-wrecs" is used by "wfrrel".
-"df-wrecs" is used by "wrecseq123".
+"df-wrecs" is used by "wfrrelOLD".
+"df-wrecs" is used by "wrecseq123OLD".
 "df0op2" is used by "hh0oi".
 "df0op2" is used by "ho01i".
 "df0op2" is used by "nmop0h".
@@ -13870,6 +13870,18 @@
 "w-bnj19" is used by "bnj978".
 "watfvalN" is used by "watvalN".
 "watvalN" is used by "iswatN".
+"wfrdmclOLD" is used by "wfrlem10".
+"wfrdmclOLD" is used by "wfrlem14".
+"wfrdmclOLD" is used by "wfrlem15".
+"wfrdmssOLD" is used by "wfrlem10".
+"wfrdmssOLD" is used by "wfrlem15".
+"wfrdmssOLD" is used by "wfrlem16".
+"wfrdmssOLD" is used by "wfrlem8".
+"wfrfunOLD" is used by "wfr1".
+"wfrfunOLD" is used by "wfrlem12".
+"wfrfunOLD" is used by "wfrlem13".
+"wfrfunOLD" is used by "wfrlem17".
+"wfrrelOLD" is used by "wfrfunOLD".
 "wl-impchain-a1-1" is used by "wl-impchain-a1-2".
 "wl-impchain-a1-2" is used by "wl-impchain-a1-3".
 "wl-impchain-com-1.1" is used by "wl-impchain-com-1.2".
@@ -17666,6 +17678,7 @@ New usage of "nfsbvOLD" is discouraged (0 uses).
 New usage of "nfsumOLD" is discouraged (0 uses).
 New usage of "nfunidALT" is discouraged (0 uses).
 New usage of "nfunidALT2" is discouraged (0 uses).
+New usage of "nfwrecsOLD" is discouraged (0 uses).
 New usage of "nic-ax" is discouraged (7 uses).
 New usage of "nic-axALT" is discouraged (0 uses).
 New usage of "nic-bi1" is discouraged (3 uses).
@@ -19127,6 +19140,10 @@ New usage of "watvalN" is discouraged (1 uses).
 New usage of "wfiOLD" is discouraged (0 uses).
 New usage of "wfis2fgOLD" is discouraged (0 uses).
 New usage of "wfisgOLD" is discouraged (0 uses).
+New usage of "wfrdmclOLD" is discouraged (3 uses).
+New usage of "wfrdmssOLD" is discouraged (4 uses).
+New usage of "wfrfunOLD" is discouraged (4 uses).
+New usage of "wfrrelOLD" is discouraged (1 uses).
 New usage of "wl-embant" is discouraged (0 uses).
 New usage of "wl-impchain-a1-1" is discouraged (1 uses).
 New usage of "wl-impchain-a1-2" is discouraged (1 uses).
@@ -19174,6 +19191,7 @@ New usage of "wl-section-prop" is discouraged (0 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
 New usage of "wlklenvclwlkOLD" is discouraged (0 uses).
+New usage of "wrecseq123OLD" is discouraged (0 uses).
 New usage of "wunfuncOLD" is discouraged (0 uses).
 New usage of "wunnatOLD" is discouraged (0 uses).
 New usage of "wunressOLD" is discouraged (0 uses).
@@ -20490,6 +20508,7 @@ Proof modification of "nfsbvOLD" is discouraged (47 steps).
 Proof modification of "nfsumOLD" is discouraged (216 steps).
 Proof modification of "nfunidALT" is discouraged (33 steps).
 Proof modification of "nfunidALT2" is discouraged (49 steps).
+Proof modification of "nfwrecsOLD" is discouraged (125 steps).
 Proof modification of "nic-ax" is discouraged (142 steps).
 Proof modification of "nic-axALT" is discouraged (245 steps).
 Proof modification of "nic-bi1" is discouraged (22 steps).
@@ -20998,6 +21017,10 @@ Proof modification of "vtxdusgr0edgnelALT" is discouraged (94 steps).
 Proof modification of "wfiOLD" is discouraged (227 steps).
 Proof modification of "wfis2fgOLD" is discouraged (51 steps).
 Proof modification of "wfisgOLD" is discouraged (204 steps).
+Proof modification of "wfrdmclOLD" is discouraged (255 steps).
+Proof modification of "wfrdmssOLD" is discouraged (97 steps).
+Proof modification of "wfrfunOLD" is discouraged (267 steps).
+Proof modification of "wfrrelOLD" is discouraged (89 steps).
 Proof modification of "wl-cases2-dnf" is discouraged (85 steps).
 Proof modification of "wl-dfclab" is discouraged (73 steps).
 Proof modification of "wl-embant" is discouraged (12 steps).
@@ -21046,6 +21069,7 @@ Proof modification of "wl-section-prop" is discouraged (1 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
 Proof modification of "wlklenvclwlkOLD" is discouraged (197 steps).
+Proof modification of "wrecseq123OLD" is discouraged (211 steps).
 Proof modification of "wunfuncOLD" is discouraged (338 steps).
 Proof modification of "wunnatOLD" is discouraged (341 steps).
 Proof modification of "wunressOLD" is discouraged (145 steps).
