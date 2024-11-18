@@ -5210,7 +5210,7 @@
 "dfvd3ir" is used by "vd13".
 "dfvd3ir" is used by "vd23".
 "dfwrecsOLD" is used by "csbwrecsg".
-"dfwrecsOLD" is used by "dfrecs3".
+"dfwrecsOLD" is used by "dfrecs3OLD".
 "dfwrecsOLD" is used by "nfwrecsOLD".
 "dfwrecsOLD" is used by "wfrdmclOLD".
 "dfwrecsOLD" is used by "wfrdmssOLD".
@@ -15778,6 +15778,7 @@ New usage of "dfnul3OLD" is discouraged (0 uses).
 New usage of "dfnul4OLD" is discouraged (0 uses).
 New usage of "dfopifOLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
+New usage of "dfrecs3OLD" is discouraged (0 uses).
 New usage of "dfsb1" is discouraged (4 uses).
 New usage of "dfsb2" is discouraged (1 uses).
 New usage of "dfsb3" is discouraged (0 uses).
@@ -19785,6 +19786,7 @@ Proof modification of "dfnul2OLD" is discouraged (38 steps).
 Proof modification of "dfnul3OLD" is discouraged (42 steps).
 Proof modification of "dfnul4OLD" is discouraged (23 steps).
 Proof modification of "dfopifOLD" is discouraged (102 steps).
+Proof modification of "dfrecs3OLD" is discouraged (263 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
 Proof modification of "dfss2OLD" is discouraged (56 steps).
 Proof modification of "dfvd1imp" is discouraged (10 steps).
