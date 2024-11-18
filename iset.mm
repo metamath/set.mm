@@ -143421,6 +143421,29 @@ $)
       GBWKTHVGRTUQETLWKTLZUPWNWPTERERURUSUTVAVPDBTVBVCVDVEVF $.
   $}
 
+  ${
+    $d w x y z B $.  $d w x y z K $.  $d w x y z ph $.  $d w x y z L $.
+    grpidpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    grpidpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    grpidproddg.k $e |- ( ph -> K e. V ) $.
+    grpidproddg.l $e |- ( ph -> L e. W ) $.
+    grpidpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    $( If two structures have the same base set, and the values of their group
+       (addition) operations are equal for all pairs of elements of the base
+       set, they have the same identity element.  (Contributed by Mario
+       Carneiro, 27-Nov-2014.) $)
+    grpidpropdg $p |- ( ph -> ( 0g ` K ) = ( 0g ` L ) ) $=
+      ( cv cfv wcel co wceq wa eqid vz vw cbs cplusg wral cio c0g wb oveqrspc2v
+      eqeq1d ancom2s anbi12d anassrs ralbidva pm5.32da raleqdv 3bitr3d iotabidv
+      eleq2d grpidvalg syl 3eqtr4d ) ABNZEUCOZPZVCCNZEUDOZQZVFRZVFVCVGQZVFRZSZC
+      VDUEZSZBUFZVCFUCOZPZVCVFFUDOZQZVFRZVFVCVRQZVFRZSZCVPUEZSZBUFZEUGOZFUGOZAV
+      NWEBAVCDPZVLCDUEZSWIWCCDUEZSVNWEAWIWJWKAWISVLWCCDAWIVFDPZVLWCUHAWIWLSSZVI
+      VTVKWBWMVHVSVFMUJWMVJWAVFAWLWIVJWARAUAUBDDVGVRVFVCABCDDVGVRUANUBNMUIUIUKU
+      JULUMUNUOAWIVEWJVMADVDVCIUSAVLCDVDIUPULAWIVQWKWDADVPVCJUSAWCCDVPJUPULUQUR
+      AEGPWGVORKCVDVGBEGWGVDTVGTWGTUTVAAFHPWHWFRLCVPVRBFHWHVPTVRTWHTUTVAVB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
