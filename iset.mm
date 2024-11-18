@@ -143453,6 +143453,14 @@ $)
       co wa basfn vex funfvex funfni mp2an riotaexg ax-mp eqeltrri df-0g fnmpti
       ) ADBEZAEZFGZHUICEZUJIGZQULJULUIUMQULJRCUKKZRBLZMUNBUKNZUODUNBUKOUKDHZUPD
       HFDPUJDHUQSATUQDUJFUJFUAUBUCUNBUKDUDUEUFCBAUGUH $.
+
+    $( The identity element function evaluates to the empty set on an empty
+       structure.  (Contributed by Stefan O'Rear, 2-Oct-2015.) $)
+    0g0 $p |- (/) = ( 0g ` (/) ) $=
+      ( ve vx c0 c0g cfv cv wcel cplusg co wceq wa wral cio cvv base0 grpidvalg
+      0ex eqid ax-mp weu wn wex noel intnanr nex euex mto iotanul eqtr2i ) CDEZ
+      AFZCGZUKBFZCHEZIUMJUMUKUNIUMJKBCLZKZAMZCCNGUJUQJQBCUNACNUJOUNRUJRPSUPATZU
+      AUQCJURUPAUBUPAULUOUKUCUDUEUPAUFUGUPAUHSUI $.
   $}
 
 
