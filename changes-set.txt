@@ -94,6 +94,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Nov-24 csbcog    [same]      moved from RP's mathbox to main set.mm
+18-Nov-24 csbwrecsg [same]      moved from ML's mathbox to main set.mm
 18-Nov-24 csbpredg  [same]      moved from ML's mathbox to main set.mm
 18-Nov-24 csbdif    [same]      moved from ML's mathbox to main set.mm
 18-Nov-24 df-wrecs  dfwrecsOLD  obsoleted
