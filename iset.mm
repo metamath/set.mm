@@ -143444,6 +143444,17 @@ $)
       AEGPWGVORKCVDVGBEGWGVDTVGTWGTUTVAAFHPWHWFRLCVPVRBFHWHVPTVRTWHTUTVAVB $.
   $}
 
+  ${
+    $d e g x $.
+    $( The group zero extractor is a function.  (Contributed by Stefan O'Rear,
+       10-Jan-2015.) $)
+    fn0g $p |- 0g Fn _V $=
+      ( vg ve vx cvv cv cbs cfv wcel cplusg wceq wral cio c0g crio df-riota wfn
+      co wa basfn vex funfvex funfni mp2an riotaexg ax-mp eqeltrri df-0g fnmpti
+      ) ADBEZAEZFGZHUICEZUJIGZQULJULUIUMQULJRCUKKZRBLZMUNBUKNZUODUNBUKOUKDHZUPD
+      HFDPUJDHUQSATUQDUJFUJFUAUBUCUNBUKDUDUEUFCBAUGUH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
