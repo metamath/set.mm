@@ -19166,6 +19166,7 @@ New usage of "wfisgOLD" is discouraged (0 uses).
 New usage of "wfr1OLD" is discouraged (0 uses).
 New usage of "wfr2OLD" is discouraged (0 uses).
 New usage of "wfr2aOLD" is discouraged (1 uses).
+New usage of "wfr3OLD" is discouraged (0 uses).
 New usage of "wfrdmclOLD" is discouraged (3 uses).
 New usage of "wfrdmssOLD" is discouraged (4 uses).
 New usage of "wfrfunOLD" is discouraged (4 uses).
@@ -20941,9 +20942,9 @@ Proof modification of "tbwsyl" is discouraged (20 steps).
 Proof modification of "tdeglem1OLD" is discouraged (70 steps).
 Proof modification of "tdeglem3OLD" is discouraged (256 steps).
 Proof modification of "tdeglem4OLD" is discouraged (703 steps).
-Proof modification of "tfr1ALT" is discouraged (19 steps).
-Proof modification of "tfr2ALT" is discouraged (52 steps).
-Proof modification of "tfr3ALT" is discouraged (84 steps).
+Proof modification of "tfr1ALT" is discouraged (29 steps).
+Proof modification of "tfr2ALT" is discouraged (63 steps).
+Proof modification of "tfr3ALT" is discouraged (95 steps).
 Proof modification of "thincmoALT" is discouraged (93 steps).
 Proof modification of "tmslemOLD" is discouraged (174 steps).
 Proof modification of "tngbasOLD" is discouraged (23 steps).
@@ -21062,6 +21063,7 @@ Proof modification of "wfisgOLD" is discouraged (204 steps).
 Proof modification of "wfr1OLD" is discouraged (46 steps).
 Proof modification of "wfr2OLD" is discouraged (58 steps).
 Proof modification of "wfr2aOLD" is discouraged (66 steps).
+Proof modification of "wfr3OLD" is discouraged (94 steps).
 Proof modification of "wfrdmclOLD" is discouraged (255 steps).
 Proof modification of "wfrdmssOLD" is discouraged (97 steps).
 Proof modification of "wfrfunOLD" is discouraged (267 steps).
