@@ -5209,7 +5209,6 @@
 "dfvd3ir" is used by "vd03".
 "dfvd3ir" is used by "vd13".
 "dfvd3ir" is used by "vd23".
-"dfwrecsOLD" is used by "csbwrecsg".
 "dfwrecsOLD" is used by "dfrecs3OLD".
 "dfwrecsOLD" is used by "nfwrecsOLD".
 "dfwrecsOLD" is used by "wfrdmclOLD".
@@ -15802,7 +15801,7 @@ New usage of "dfvd3ani" is discouraged (2 uses).
 New usage of "dfvd3anir" is discouraged (2 uses).
 New usage of "dfvd3i" is discouraged (6 uses).
 New usage of "dfvd3ir" is discouraged (10 uses).
-New usage of "dfwrecsOLD" is discouraged (11 uses).
+New usage of "dfwrecsOLD" is discouraged (10 uses).
 New usage of "dia0eldmN" is discouraged (0 uses).
 New usage of "dia11N" is discouraged (1 uses).
 New usage of "dia1N" is discouraged (1 uses).
