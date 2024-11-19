@@ -143509,6 +143509,18 @@ $)
         ZGOZPZAHCRZUPAVBUPPHHOHSABCDHEFHIJKLUAUBUCUOVABGCUJGOZULURUNUTVCUKUQUJG
         UJGHDUFVCUDZTVCUMUSUJGUJGHDUGVDTUEUHUI $.
     $}
+
+    $d x ph $.
+    ismgmid2.u $e |- ( ph -> U e. B ) $.
+    ismgmid2.l $e |- ( ( ph /\ x e. B ) -> ( U .+ x ) = x ) $.
+    ismgmid2.r $e |- ( ( ph /\ x e. B ) -> ( x .+ U ) = x ) $.
+    $( Show that a given element is the identity element of a magma.
+       (Contributed by Mario Carneiro, 27-Dec-2014.) $)
+    ismgmid2 $p |- ( ph -> U = .0. ) $=
+      ( ve wcel cv co wceq wa wral jca ralrimiva oveq1 eqeq1d ovanraleqv rspcev
+      wrex syl2anc ismgmid mpbi2and eqcomd ) AGEAECOZEBPZDQZUMRZUMEDQUMRZSZBCTZ
+      GERKAUQBCAUMCOSUOUPLMUAUBZABCDENFGHIJAULURNPZUMDQZUMRZUMUTDQUMRSBCTZNCUGK
+      USVCURNECVBUOBUMUTUMDCEUTERVAUNUMUTEUMDUCUDUEUFUHUIUJUK $.
   $}
 
 
