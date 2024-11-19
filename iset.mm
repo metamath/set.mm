@@ -55739,66 +55739,6 @@ $)
       NVKVLVMVN $.
   $}
 
-  ${
-    $d n u v w x y z B $.  $d n u v w x y z O $.  $d n u v w x y z ph $.
-    $d u v w y z N $.  $d n u v w x y z .+ $.  $d u v w y z X $.
-    $d u v w y ps $.
-    grprinvlem.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
-    grprinvlem.o $e |- ( ph -> O e. B ) $.
-    grprinvlem.i $e |- ( ( ph /\ x e. B ) -> ( O .+ x ) = x ) $.
-    grprinvlem.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) )
-          -> ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
-    grprinvlem.n $e |- ( ( ph /\ x e. B ) -> E. y e. B ( y .+ x ) = O ) $.
-    ${
-      grprinvlem.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
-      grprinvlem.e $e |- ( ( ph /\ ps ) -> ( X .+ X ) = X ) $.
-      $( Lemma for ~ grprinvd .  (Contributed by NM, 9-Aug-2013.) $)
-      grprinvlem $p |- ( ( ph /\ ps ) -> X = O ) $=
-        ( cv co wceq wcel vu vv vw wa wrex wral ralrimiva oveq2 rexbidv cbvralv
-        eqeq1d sylib rspccva syldan oveq2d adantr simprr oveq1d simpll caovassg
-        sylan w3a simprl caovassd id eqeq12d rspcdva 3eqtr3d rexlimddv ) ABUDZD
-        QZIGRZHSZIHSDFABIFTZVMDFUEZOAVKEQZGRZHSZDFUEZEFUFZVNVOAVKCQZGRZHSZDFUEZ
-        CFUFVTAWDCFNUGWDVSCEFWAVPSZWCVRDFWEWBVQHWAVPVKGUHUKUIUJULVSVOEIFVPISZVR
-        VMDFWFVQVLHVPIVKGUHUKUIUMVAUNVJVKFTZVMUDZUDZVKIIGRZGRZVLIHVJWKVLSWHVJWJ
-        IVKGPUOUPWIVLIGRHIGRZWKIWIVLHIGVJWGVMUQZURWIUAUBUCVKIIFGWIAUAQZFTUBQZFT
-        UCQZFTVBWNWOGRWPGRWNWOWPGRGRSABWHUSACDEWNWOWPFGMUTVAVJWGVMVCVJVNWHOUPZW
-        QVDVJWLISZWHVJHVKGRZVKSZWRDFIVKISZWSWLVKIVKIHGUHXAVEVFAWTDFUFZBAHWAGRZW
-        ASZCFUFXBAXDCFLUGXDWTCDFWAVKSZXCWSWAVKWAVKHGUHXEVEVFUJULUPOVGUPVHWMVHVI
-        $.
-    $}
-
-    ${
-      grprinvd.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
-      grprinvd.n $e |- ( ( ph /\ ps ) -> N e. B ) $.
-      grprinvd.e $e |- ( ( ph /\ ps ) -> ( N .+ X ) = O ) $.
-      $( Deduce right inverse from left inverse and left identity in an
-         associative structure (such as a group).  (Contributed by NM,
-         10-Aug-2013.)  (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
-      grprinvd $p |- ( ( ph /\ ps ) -> ( X .+ N ) = O ) $=
-        ( co wcel vu vv vw wa cv caovclg adantlr caovcld wceq caovassg caovassd
-        3expb w3a oveq1d oveq2 id eqeq12d wral ralrimiva cbvralv adantr rspcdva
-        sylib 3eqtr3d oveq2d eqtrd grprinvlem ) ABCDEFGIJHGSZKLMNOABUDZUAUBJHFF
-        FGAUAUEZFTZUBUEZFTZUDVJVLGSZFTBACDVJVLFFFGACUEZFTDUEZFTVOVPGSFTKULUFUGP
-        QUHZVIVHVHGSJHVHGSZGSVHVIUAUBUCJHVHFGAVKVMUCUEZFTUMVNVSGSVJVLVSGSGSUIBA
-        CDEVJVLVSFGNUJUGZPQVQUKVIVRHJGVIHJGSZHGSIHGSZVRHVIWAIHGRUNVIUAUBUCHJHFG
-        VTQPQUKVIIVPGSZVPUIZWBHUIDFHVPHUIZWCWBVPHVPHIGUOWEUPUQAWDDFURZBAIVOGSZV
-        OUIZCFURWFAWHCFMUSWHWDCDFVOVPUIZWGWCVOVPVOVPIGUOWIUPUQUTVCVAQVBVDVEVFVG
-        $.
-    $}
-
-    $( Deduce right identity from left inverse and left identity in an
-       associative structure (such as a group).  (Contributed by NM,
-       10-Aug-2013.)  (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
-    grpridd $p |- ( ( ph /\ x e. B ) -> ( x .+ O ) = x ) $=
-      ( vn vu vv cv wcel wa co wceq vw wrex oveq1 eqeq1d cbvrexv sylib caovassg
-      w3a adantlr simprl simprrl caovassd simprrr oveq1d oveq2d 3eqtr3d anassrs
-      grprinvd rexlimddv eqtr3d ) ABPZEQZRZGVAFSZVAGFSZVAVCMPZVAFSZGTZVDVETZMEV
-      CCPZVAFSZGTZCEUBVHMEUBLVLVHCMEVJVFTVKVGGVJVFVAFUCUDUEUFAVBVFEQZVHRZVIAVBV
-      NRZRZVAVFFSZVAFSVAVGFSVDVEVPNOUAVAVFVAEFANPZEQOPZEQUAPZEQUHVRVSFSVTFSVRVS
-      VTFSFSTVOABCDVRVSVTEFKUGUIAVBVNUJZAVBVMVHUKZWAULVPVQGVAFAVOBCDEFVFGVAHIJK
-      LWAWBAVBVMVHUMZURUNVPVGGVAFWCUOUPUQUSJUT $.
-  $}
-
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -143591,6 +143531,66 @@ $)
       GUDUTVIACUTVACNZVEVHUTVJVERZRZVAHQVHVLHVAVLVKHVAQUTVKUEVLBCDVAMEHIJKVKMOZ
       VBDPZVBQZVBVMDPVBQRBCSZMCUFUTVPVEMVACVOVDBVBVMVBDCVAVMVAQVNVCVBVMVAVBDUHU
       IUGUJUKULUMUNAHUOTUPUSVEACVGUQTUR $.
+  $}
+
+
+  ${
+    $d n u v w x y z B $.  $d n u v w x y z O $.  $d n u v w x y z ph $.
+    $d u v w y z N $.  $d n u v w x y z .+ $.  $d u v w y z X $.
+    $d u v w y ps $.
+    grprinvlem.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
+    grprinvlem.o $e |- ( ph -> O e. B ) $.
+    grprinvlem.i $e |- ( ( ph /\ x e. B ) -> ( O .+ x ) = x ) $.
+    grprinvlem.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) )
+          -> ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+    grprinvlem.n $e |- ( ( ph /\ x e. B ) -> E. y e. B ( y .+ x ) = O ) $.
+    ${
+      grprinvlem.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
+      grprinvlem.e $e |- ( ( ph /\ ps ) -> ( X .+ X ) = X ) $.
+      $( Lemma for ~ grprinvd .  (Contributed by NM, 9-Aug-2013.) $)
+      grprinvlem $p |- ( ( ph /\ ps ) -> X = O ) $=
+        ( cv co wceq wcel vu vv vw wa wrex wral ralrimiva oveq2 eqeq1d cbvralvw
+        rexbidv sylib rspccva syl2an2r oveq2d adantr simprr oveq1d w3a caovassg
+        ad4ant14 simprl caovassd id eqeq12d rspcdva 3eqtr3d rexlimddv ) ABUDZDQ
+        ZIGRZHSZIHSDFAVJEQZGRZHSZDFUEZEFUFZBIFTZVLDFUEZAVJCQZGRZHSZDFUEZCFUFVQA
+        WCCFNUGWCVPCEFVTVMSZWBVODFWDWAVNHVTVMVJGUHUIUKUJULOVPVSEIFVMISZVOVLDFWE
+        VNVKHVMIVJGUHUIUKUMUNVIVJFTZVLUDZUDZVJIIGRZGRZVKIHVIWJVKSWGVIWIIVJGPUOU
+        PWHVKIGRHIGRZWJIWHVKHIGVIWFVLUQZURWHUAUBUCVJIIFGAUAQZFTUBQZFTUCQZFTUSWM
+        WNGRWOGRWMWNWOGRGRSBWGACDEWMWNWOFGMUTVAVIWFVLVBVIVRWGOUPZWPVCVIWKISZWGV
+        IHVJGRZVJSZWQDFIVJISZWRWKVJIVJIHGUHWTVDVEAWSDFUFZBAHVTGRZVTSZCFUFXAAXCC
+        FLUGXCWSCDFVTVJSZXBWRVTVJVTVJHGUHXDVDVEUJULUPOVFUPVGWLVGVH $.
+    $}
+
+    ${
+      grprinvd.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
+      grprinvd.n $e |- ( ( ph /\ ps ) -> N e. B ) $.
+      grprinvd.e $e |- ( ( ph /\ ps ) -> ( N .+ X ) = O ) $.
+      $( Deduce right inverse from left inverse and left identity in an
+         associative structure (such as a group).  (Contributed by NM,
+         10-Aug-2013.)  (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
+      grprinvd $p |- ( ( ph /\ ps ) -> ( X .+ N ) = O ) $=
+        ( co wcel vu vv vw wa cv caovclg adantlr caovcld wceq caovassg caovassd
+        3expb w3a oveq1d oveq2 id eqeq12d wral ralrimiva cbvralvw sylib rspcdva
+        adantr 3eqtr3d oveq2d eqtrd grprinvlem ) ABCDEFGIJHGSZKLMNOABUDZUAUBJHF
+        FFGAUAUEZFTZUBUEZFTZUDVJVLGSZFTBACDVJVLFFFGACUEZFTDUEZFTVOVPGSFTKULUFUG
+        PQUHZVIVHVHGSJHVHGSZGSVHVIUAUBUCJHVHFGAVKVMUCUEZFTUMVNVSGSVJVLVSGSGSUIB
+        ACDEVJVLVSFGNUJUGZPQVQUKVIVRHJGVIHJGSZHGSIHGSZVRHVIWAIHGRUNVIUAUBUCHJHF
+        GVTQPQUKVIIVPGSZVPUIZWBHUIDFHVPHUIZWCWBVPHVPHIGUOWEUPUQAWDDFURZBAIVOGSZ
+        VOUIZCFURWFAWHCFMUSWHWDCDFVOVPUIZWGWCVOVPVOVPIGUOWIUPUQUTVAVCQVBVDVEVFV
+        G $.
+    $}
+
+    $( Deduce right identity from left inverse and left identity in an
+       associative structure (such as a group).  (Contributed by NM,
+       10-Aug-2013.)  (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
+    grpridd $p |- ( ( ph /\ x e. B ) -> ( x .+ O ) = x ) $=
+      ( vn vu vv cv wcel wa co wceq vw oveq1 eqeq1d cbvrexvw sylib w3a caovassg
+      adantlr simprl simprrl caovassd simprrr grprinvd oveq1d 3eqtr3d rexlimddv
+      wrex oveq2d anassrs eqtr3d ) ABPZEQZRZGVAFSZVAGFSZVAVCMPZVAFSZGTZVDVETZME
+      VCCPZVAFSZGTZCEUQVHMEUQLVLVHCMEVJVFTVKVGGVJVFVAFUBUCUDUEAVBVFEQZVHRZVIAVB
+      VNRZRZVAVFFSZVAFSVAVGFSVDVEVPNOUAVAVFVAEFANPZEQOPZEQUAPZEQUFVRVSFSVTFSVRV
+      SVTFSFSTVOABCDVRVSVTEFKUGUHAVBVNUIZAVBVMVHUJZWAUKVPVQGVAFAVOBCDEFVFGVAHIJ
+      KLWAWBAVBVMVHULZUMUNVPVGGVAFWCURUOUSUPJUT $.
   $}
 
 
