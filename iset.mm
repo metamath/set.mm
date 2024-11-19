@@ -141979,6 +141979,15 @@ $)
     ( cbs baseslid slotslfn ) ABC $.
 
   ${
+    basmex.b $e |- B = ( Base ` G ) $.
+    $( A structure whose base is inhabited is a set.  (Contributed by Jim
+       Kingdon, 18-Nov-2024.) $)
+    basmex $p |- ( A e. B -> G e. _V ) $=
+      ( wcel cbs cdm wrel cfv cvv wfn basfn fnrel ax-mp eleq2i biimpi relelfvdm
+      sylancr elexd ) ABEZCFGZTFHZACFIZEZCUAEFJKUBLJFMNTUDBUCADOPACFQRS $.
+  $}
+
+  ${
     $d a w $.
     $( The structure restriction is a proper operator, so it can be used with
        ~ ovprc1 .  (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
