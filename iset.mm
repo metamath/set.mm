@@ -143472,6 +143472,30 @@ $)
       AUQCJURUPAUBUPAULUOUKUCUDUEUPAUFUGUPAUHSUI $.
   $}
 
+  ${
+    $d e x .+ $.  $d e x .0. $.  $d e x B $.  $d e x G $.  $d x X $.
+    $d e x U $.
+    ismgmid.b $e |- B = ( Base ` G ) $.
+    ismgmid.o $e |- .0. = ( 0g ` G ) $.
+    ismgmid.p $e |- .+ = ( +g ` G ) $.
+    ${
+      mgmidcl.e $e |- ( ph ->
+        E. e e. B A. x e. B ( ( e .+ x ) = x /\ ( x .+ e ) = x ) ) $.
+      $( The identity element of a magma, if it exists, belongs to the base
+         set.  (Contributed by Mario Carneiro, 27-Dec-2014.) $)
+      ismgmid $p |- ( ph -> ( ( U e. B /\
+        A. x e. B ( ( U .+ x ) = x /\ ( x .+ U ) = x ) ) <-> .0. = U ) ) $=
+        ( wcel cv co wceq wa wral eqeq1d syl crio wreu wrex wrmo reu5 sylanblrc
+        wb id mgmidmo oveq1 ovanraleqv syl2anr pm5.32da riotacl eleq1 syl5ibcom
+        riota2 pm4.71rd cio df-riota cvv rexm exlimiv grpidvalg eqtr4id 3bitr2d
+        wex basmex ) AECMZEBNZDOZVJPZVJEDOVJPQBCRZQVIFNZVJDOZVJPZVJVNDOVJPQBCRZ
+        FCUAZEPZQVSHEPAVIVMVSVIVIVQFCUBZVMVSUGAVIUHAVQFCUCZVQFCUDVTLBFCDUIVQFCU
+        EUFZVQVMFCEVPVLBVJVNVJDCEVNEPVOVKVJVNEVJDUJSUKUQULUMAVSVIAVRCMZVSVIAVTW
+        CWBVQFCUNTVRECUOUPURAVRHEAVRVNCMZVQQFUSZHVQFCUTAGVAMZHWEPAWDFVGZWFAWAWG
+        LVQFCVBTWDWFFVNCGIVHVCTBCDFGVAHIKJVDTVESVF $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
