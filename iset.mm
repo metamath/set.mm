@@ -143538,6 +143538,23 @@ $)
     lidrideqd $p |- ( ph -> L = R ) $=
       ( co cv wceq oveq1 id eqeq12d rspcdva oveq2 eqtr3d ) AFEDKZFEABLZEDKZUAMT
       FMBCFUAFMZUBTUAFUAFEDNUCOPJGQAFUADKZUAMTEMBCEUAEMZUDTUAEUAEFDRUEOPIHQS $.
+
+    $d B x y $.  $d L y $.  $d R y $.  $d G y $.  $d .+ y $.  $d .0. y $.
+    $d ph y $.
+    lidrideqd.b $e |- B = ( Base ` G ) $.
+    lidrideqd.p $e |- .+ = ( +g ` G ) $.
+    lidrididd.o $e |- .0. = ( 0g ` G ) $.
+    $( If there is a left and right identity element for any binary operation
+       (group operation) ` .+ ` , the left identity element (and therefore also
+       the right identity element according to ~ lidrideqd ) is equal to the
+       two-sided identity element.  (Contributed by AV, 26-Dec-2023.) $)
+    lidrididd $p |- ( ph -> L = .0. ) $=
+      ( vy cv co wceq wral wcel oveq2 id eqeq12d rspcv mpan9 wi lidrideqd oveq1
+      weq wa adantl simpl eqtrd ex syl6com com23 sylc imp ismgmid2 ) APCDGFHMON
+      IAGBQZDRZVASZBCTPQZCUAZGVDDRZVDSZKVCVGBVDCBPUJZVBVFVAVDVAVDGDUBVHUCZUDUEU
+      FAVEVDGDRZVDSZAVAEDRZVASZBCTZGESZVEVKUGLABCDEGIJKLUHVNVEVOVKVEVNVDEDRZVDS
+      ZVOVKUGVMVQBVDCVHVLVPVAVDVAVDEDUIVIUDUEVQVOVKVQVOUKVJVPVDVOVJVPSVQGEVDDUB
+      ULVQVOUMUNUOUPUQURUSUT $.
   $}
 
 
