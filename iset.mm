@@ -143557,6 +143557,42 @@ $)
       ULVQVOUMUNUOUPUQURUSUT $.
   $}
 
+  ${
+    $d x G $.  $d x ph $.  $d x .0. $.
+    grpidd.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    grpidd.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    grpidd.z $e |- ( ph -> .0. e. B ) $.
+    grpidd.i $e |- ( ( ph /\ x e. B ) -> ( .0. .+ x ) = x ) $.
+    grpidd.j $e |- ( ( ph /\ x e. B ) -> ( x .+ .0. ) = x ) $.
+    $( Deduce the identity element of a magma from its properties.
+       (Contributed by Mario Carneiro, 6-Jan-2015.) $)
+    grpidd $p |- ( ph -> .0. = ( 0g ` G ) ) $=
+      ( cbs cfv eqid wcel co wceq oveqd eqtr3d syldan cplusg c0g eleqtrd eleq2d
+      cv biimpar wa adantr ismgmid2 ) ABELMZEUAMZFEEUBMZUJNULNUKNAFCUJIGUCABUEZ
+      UJOZUMCOZFUMUKPZUMQAUOUNACUJUMGUDUFZAUOUGZFUMDPUPUMURDUKFUMADUKQUOHUHZRJS
+      TAUNUOUMFUKPZUMQUQURUMFDPUTUMURDUKUMFUSRKSTUI $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y z G $.  $d x y z .+ $.  $d x V $.  $d x y z .0. $.
+    mgmidsssn0.b $e |- B = ( Base ` G ) $.
+    mgmidsssn0.z $e |- .0. = ( 0g ` G ) $.
+    mgmidsssn0.p $e |- .+ = ( +g ` G ) $.
+    mgmidsssn0.o $e |- O = { x e. B |
+      A. y e. B ( ( x .+ y ) = y /\ ( y .+ x ) = y ) } $.
+    $( Property of the set of identities of ` G ` .  Either ` G ` has no
+       identities, and ` O = (/) ` , or it has one and this identity is unique
+       and identified by the ` 0g ` function.  (Contributed by Mario Carneiro,
+       7-Dec-2014.) $)
+    mgmidsssn0 $p |- ( G e. V -> O C_ { .0. } ) $=
+      ( vz wcel cv co wceq wa wral sylibr crab csn wi wss simpr wrex ovanraleqv
+      oveq1 eqeq1d rspcev adantl ismgmid mpbid eqcomd velsn expr rabss eqsstrid
+      ralrimiva ) EGNZFAOZBOZDPZVBQZVBVADPVBQRBCSZACUAZHUBZLUTVEVAVGNZUCZACSVFV
+      GUDUTVIACUTVACNZVEVHUTVJVERZRZVAHQVHVLHVAVLVKHVAQUTVKUEVLBCDVAMEHIJKVKMOZ
+      VBDPZVBQZVBVMDPVBQRBCSZMCUFUTVPVEMVACVOVDBVBVMVBDCVAVMVAQVNVCVBVMVAVBDUHU
+      IUGUJUKULUMUNAHUOTUPUSVEACVGUQTUR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
