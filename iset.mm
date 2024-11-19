@@ -143523,6 +143523,23 @@ $)
       USVCURNECVBUOBUMUTUMDCEUTERVAUNUMUTEUMDUCUDUEUFUHUIUJUK $.
   $}
 
+  ${
+    $d B x $.  $d L x $.  $d R x $.  $d .+ x $.
+    lidrideqd.l $e |- ( ph -> L e. B ) $.
+    lidrideqd.r $e |- ( ph -> R e. B ) $.
+    lidrideqd.li $e |- ( ph -> A. x e. B ( L .+ x ) = x ) $.
+    lidrideqd.ri $e |- ( ph -> A. x e. B ( x .+ R ) = x ) $.
+    $( If there is a left and right identity element for any binary operation
+       (group operation) ` .+ ` , both identity elements are equal.
+       Generalization of statement in [Lang] p. 3: it is sufficient that "e" is
+       a left identity element and "e``" is a right identity element instead of
+       both being (two-sided) identity elements.  (Contributed by AV,
+       26-Dec-2023.) $)
+    lidrideqd $p |- ( ph -> L = R ) $=
+      ( co cv wceq oveq1 id eqeq12d rspcdva oveq2 eqtr3d ) AFEDKZFEABLZEDKZUAMT
+      FMBCFUAFMZUBTUAFUAFEDNUCOPJGQAFUADKZUAMTEMBCEUAEMZUDTUAEUAEFDRUEOPIHQS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
