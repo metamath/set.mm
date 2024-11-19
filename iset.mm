@@ -143499,6 +143499,15 @@ $)
       mgmidcl $p |- ( ph -> .0. e. B ) $=
         ( wcel cv co wceq wa wral eqid ismgmid mpbiri simpld ) AGCLZGBMZDNUCOUC
         GDNUCOPBCQZAUBUDPGGOGRABCDGEFGHIJKSTUA $.
+
+      $( The identity element of a magma, if it exists, is a left and right
+         identity.  (Contributed by Mario Carneiro, 27-Dec-2014.) $)
+      mgmlrid $p |- ( ( ph /\ X e. B ) ->
+        ( ( .0. .+ X ) = X /\ ( X .+ .0. ) = X ) ) $=
+        ( cv co wceq wa wral wcel eqid eqeq12d ismgmid mpbiri simprd id anbi12d
+        oveq2 oveq1 rspccva sylan ) AHBMZDNZUJOZUJHDNZUJOZPZBCQZGCRHGDNZGOZGHDN
+        ZGOZPZAHCRZUPAVBUPPHHOHSABCDHEFHIJKLUAUBUCUOVABGCUJGOZULURUNUTVCUKUQUJG
+        UJGHDUFVCUDZTVCUMUSUJGUJGHDUGVDTUEUHUI $.
     $}
   $}
 
