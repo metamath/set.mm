@@ -143493,6 +143493,12 @@ $)
         EUFZVQVMFCEVPVLBVJVNVJDCEVNEPVOVKVJVNEVJDUJSUKUQULUMAVSVIAVRCMZVSVIAVTW
         CWBVQFCUNTVRECUOUPURAVRHEAVRVNCMZVQQFUSZHVQFCUTAGVAMZHWEPAWDFVGZWFAWAWG
         LVQFCVBTWDWFFVNCGIVHVCTBCDFGVAHIKJVDTVESVF $.
+
+      $( The identity element of a magma, if it exists, belongs to the base
+         set.  (Contributed by Mario Carneiro, 27-Dec-2014.) $)
+      mgmidcl $p |- ( ph -> .0. e. B ) $=
+        ( wcel cv co wceq wa wral eqid ismgmid mpbiri simpld ) AGCLZGBMZDNUCOUC
+        GDNUCOPBCQZAUBUDPGGOGRABCDGEFGHIJKSTUA $.
     $}
   $}
 
