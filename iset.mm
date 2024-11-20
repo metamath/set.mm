@@ -143696,6 +143696,23 @@ $)
       cbs ) AEFAGFBHZCHZAIJZKDHZTKRSUATKTKLDAQJZMCUBMBUBMBCDUBATUBNTNOP $.
   $}
 
+  ${
+    $d B x y z $.  $d G x y z $.  $d X x y z $.  $d Y x y z $.  $d Z x y z $.
+    $d .o. x y z $.
+    sgrpass.b $e |- B = ( Base ` G ) $.
+    sgrpass.o $e |- .o. = ( +g ` G ) $.
+    $( A semigroup operation is associative.  (Contributed by FL, 2-Nov-2009.)
+       (Revised by AV, 30-Jan-2020.) $)
+    sgrpass $p |- ( ( G e. Smgrp /\ ( X e. B /\ Y e. B /\ Z e. B ) )
+                    -> ( ( X .o. Y ) .o. Z ) = ( X .o. ( Y .o. Z ) ) ) $=
+      ( vx vy vz wcel co wceq cv wral oveq1 oveq1d eqeq12d oveq2 csgrp w3a cmgm
+      wi issgrp oveq2d rspc3v com12 simplbiim imp ) BUALZCALDALFALUBZCDEMZFEMZC
+      DFEMZEMZNZUKBUCLIOZJOZEMZKOZEMZURUSVAEMZEMZNZKAPJAPIAPZULUQUDIJKABEGHUEUL
+      VFUQVEUQCUSEMZVAEMZCVCEMZNUMVAEMZCDVAEMZEMZNIJKCDFAAAURCNZVBVHVDVIVMUTVGV
+      AEURCUSEQRURCVCEQSUSDNZVHVJVIVLVNVGUMVAEUSDCETRVNVCVKCEUSDVAEQUFSVAFNZVJU
+      NVLUPVAFUMETVOVKUOCEVAFDETUFSUGUHUIUJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
