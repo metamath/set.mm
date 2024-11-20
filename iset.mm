@@ -143687,6 +143687,15 @@ $)
       JPZJASWPWNXNJAWIKAUSUTWJJAUSVAUTWKIAUSVHVBIJKABEGHVCVDBNVEVFVG $.
   $}
 
+  ${
+    $d M x y z $.
+    $( A semigroup is a magma.  (Contributed by FL, 2-Nov-2009.)  (Revised by
+       AV, 6-Jan-2020.) $)
+    sgrpmgm $p |- ( M e. Smgrp -> M e. Mgm ) $=
+      ( vx vy vz csgrp wcel cmgm cv cplusg cfv co wceq wral eqid issgrp simplbi
+      cbs ) AEFAGFBHZCHZAIJZKDHZTKRSUATKTKLDAQJZMCUBMBUBMBCDUBATUBNTNOP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
