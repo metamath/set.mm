@@ -143595,6 +143595,38 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Semigroups
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  A semigroup (` Smgrp `, see ~ df-sgrp ) is a set together with an associative
+  binary operation (see Wikipedia, Semigroup, 8-Jan-2020,
+  ~ https://en.wikipedia.org/wiki/Semigroup ).  In other words, a semigroup is
+  an associative magma.  The notion of semigroup is a generalization of that of
+  group where the existence of an identity or inverses is not required.
+
+$)
+
+  $c Smgrp $.
+
+  $( Extend class notation with class of all semigroups. $)
+  csgrp $a class Smgrp $.
+
+  ${
+    $d b g o x y z $.
+    $( A _semigroup_ is a set equipped with an everywhere defined internal
+       operation (so, a magma, see ~ df-mgm ), whose operation is associative.
+       Definition in section II.1 of [Bruck] p. 23, or of an "associative
+       magma" in definition 5 of [BourbakiAlg1] p. 4 .  (Contributed by FL,
+       2-Nov-2009.)  (Revised by AV, 6-Jan-2020.) $)
+    df-sgrp $a |- Smgrp = { g e. Mgm |
+                            [. ( Base ` g ) / b ]. [. ( +g ` g ) / o ].
+                            A. x e. b A. y e. b A. z e. b
+                            ( ( x o y ) o z ) = ( x o ( y o z ) ) } $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -160784,6 +160816,9 @@ htmldef "gsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
 htmldef "Mgm" as 'Mgm';
   althtmldef "Mgm" as 'Mgm';
   latexdef "Mgm" as "\mathrm{Mgm}";
+htmldef "Smgrp" as 'Smgrp';
+  althtmldef "Smgrp" as 'Smgrp';
+  latexdef "Smgrp" as "\mathrm{Smgrp}";
 htmldef "+f" as "<IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'>" +
     "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT='f' TITLE='f'>";
   althtmldef "+f" as '+<SUB>&#x1D453;</SUB>';
