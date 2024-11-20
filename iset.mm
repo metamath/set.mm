@@ -143713,6 +143713,16 @@ $)
       NVLUPVAFUMETVOVKUOCEVAFDETUFSUGUHUIUJ $.
   $}
 
+  ${
+    $d M x y z $.
+    $( Any set with an empty base set and any group operation is a semigroup.
+       (Contributed by AV, 28-Aug-2021.) $)
+    sgrp0 $p |- ( ( M e. V /\ ( Base ` M ) = (/) ) -> M e. Smgrp ) $=
+      ( vx vy vz wcel cbs cfv c0 wceq wa cmgm cv cplusg co wral csgrp mgm0 rzal
+      eqid adantl issgrp sylanbrc ) ABFZAGHZIJZKALFCMZDMZANHZOEMZUIOUGUHUJUIOUI
+      OJEUEPDUEPZCUEPZAQFABRUFULUDUKCUESUACDEUEAUIUETUITUBUC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
