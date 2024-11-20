@@ -143625,6 +143625,25 @@ $)
                             ( ( x o y ) o z ) = ( x o ( y o z ) ) } $.
   $}
 
+  ${
+    $d B b g o x y z $.  $d M b g o x y z $.  $d .o. b g o x y z $.
+    issgrp.b $e |- B = ( Base ` M ) $.
+    issgrp.o $e |- .o. = ( +g ` M ) $.
+    $( The predicate "is a semigroup".  (Contributed by FL, 2-Nov-2009.)
+       (Revised by AV, 6-Jan-2020.) $)
+    issgrp $p |- ( M e. Smgrp <-> ( M e. Mgm /\ A. x e. B A. y e. B A. z e. B
+                           ( ( x .o. y ) .o. z ) = ( x .o. ( y .o. z ) ) ) ) $=
+      ( vo vb vg cv co wceq wral cplusg cfv cbs cvv wcel wsbc csgrp wfn funfvex
+      cmgm basfn vex funfni mp2an a1i fveq2 eqtr4di plusgslid slotex elv adantr
+      wa simplr wb oveq eqidd oveq123d eqeq12d adantl raleqbidv sbcied2 df-sgrp
+      id elrab2 ) ALZBLZILZMZCLZVLMZVJVKVNVLMZVLMZNZCJLZOZBVSOZAVSOZIKLZPQZUAZJ
+      WCRQZUAVJVKFMZVNFMZVJVKVNFMZFMZNZCDOZBDOZADOZKEUEUBWCENZWEWNJWFDSWFSTZWOR
+      SUCWCSTWPUFKUGWPSWCRWCRUDUHUIUJWOWFERQDWCERUKGULWOVSDNZUQZWBWNIWDFSWDSTZW
+      RWSKWCPSUMUNUOUJWRWDEPQZFWOWDWTNWQWCEPUKUPHULWRVLFNZUQZWAWMAVSDWOWQXAURZX
+      BVTWLBVSDXCXBVRWKCVSDXCXAVRWKUSWRXAVOWHVQWJXAVMWGVNVNVLFXAVHZVJVKVLFUTXAV
+      NVAVBXAVJVJVPWIVLFXDXAVJVAVKVNVLFUTVBVCVDVEVEVEVFVFABCKIJVGVI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
