@@ -143657,6 +143657,16 @@ $)
       ( wcel cmgm cv co wceq wral wa csgrp ismgm anbi1d issgrp r19.26-2 3bitr4g
       ) EFJZEKJZALZBLZGMZCLZGMUEUFUHGMGMNCDOZBDOADOZPUGDJZBDOADOZUJPEQJUKUIPBDO
       ADOUCUDULUJABDEFGHIRSABCDEGHITUKUIABDDUAUB $.
+
+    $( The predicate "is a semigroup" for a structure with a nonempty base set.
+       (Contributed by AV, 1-Feb-2020.) $)
+    issgrpn0 $p |- ( A e. B -> ( M e. Smgrp
+                                <-> A. x e. B A. y e. B ( ( x .o. y ) e. B
+                                    /\ A. z e. B ( ( x .o. y ) .o. z )
+                                               = ( x .o. ( y .o. z ) ) ) ) ) $=
+      ( wcel cmgm cv co wceq wral wa csgrp ismgmn0 anbi1d issgrp r19.26-2
+      3bitr4g ) DEJZFKJZALZBLZGMZCLZGMUEUFUHGMGMNCEOZBEOAEOZPUGEJZBEOAEOZUJPFQJ
+      UKUIPBEOAEOUCUDULUJABDEFGHIRSABCEFGHITUKUIABEEUAUB $.
   $}
 
 
