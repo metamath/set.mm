@@ -143723,6 +143723,30 @@ $)
       OJEUEPDUEPZCUEPZAQFABRUFULUDUKCUESUACDEUEAUIUETUITUBUC $.
   $}
 
+  ${
+    $d I x y z $.  $d M x y z $.  $d V x y z $.
+    sgrp1.m $e |- M = { <. ( Base ` ndx ) , { I } >. ,
+                        <. ( +g ` ndx ) , { <. <. I , I >. , I >. } >. } $.
+    $( The structure with one element and the only closed internal operation
+       for a singleton is a semigroup.  (Contributed by AV, 10-Feb-2020.) $)
+    sgrp1 $p |- ( I e. V -> M e. Smgrp ) $=
+      ( vx vy vz wcel cv cfv co wceq wral cvv oveq1d oveq2d oveq1 eqeq12d oveq2
+      ralsng cmgm cplusg cbs csgrp mgm1 cop csn df-ov opexg anidms fvsng eqtrid
+      mpancom eqtr4d 2ralbidv ralbidv 3bitrd mpbird snexg elex syl2anc grpbaseg
+      syl grpplusgg oveqd eqidd oveq123d raleqbidv mpbid eqid issgrp sylanbrc )
+      ACHZBUAHEIZFIZBUBJZKZGIZVPKZVNVOVRVPKZVPKZLZGBUCJZMZFWCMZEWCMZBUDHABCDUEV
+      MVNVOAAUFZAUFZUGZKZVRWIKZVNVOVRWIKZWIKZLZGAUGZMZFWOMZEWOMZWFVMWRAAWIKZAWI
+      KZAWSWIKZLZVMWTWSXAVMWSAAWIVMWSWGWIJZAAAWIUHWGNHZVMXCALVMXDAACCUIUJZWGANC
+      UKUMULZOVMWSAAWIXFPUNVMWRAVOWIKZVRWIKZAWLWIKZLZGWOMZFWOMZWSVRWIKZAAVRWIKZ
+      WIKZLZGWOMZXBWQXLEACVNALZWNXJFGWOWOXRWKXHWMXIXRWJXGVRWIVNAVOWIQOVNAWLWIQR
+      UOTXKXQFACVOALZXJXPGWOXSXHXMXIXOXSXGWSVRWIVOAAWISOXSWLXNAWIVOAVRWIQPRUPTX
+      PXBGACVRALZXMWTXOXAVRAWSWISXTXNWSAWIVRAAWISPRTUQURVMWQWEEWOWCVMWONHZWINHZ
+      WOWCLACUSZVMWHNHZYBVMXDANHYDXEACUTWGANNUIVAWHNUSVCZWOWIBNNDVBVAZVMWPWDFWO
+      WCYFVMWNWBGWOWCYFVMWKVSWMWAVMWJVQVRVRWIVPVMYAYBWIVPLYCYEWOWIBNNDVDVAZVMWI
+      VPVNVOYGVEVMVRVFVGVMVNVNWLVTWIVPYGVMVNVFVMWIVPVOVRYGVEVGRVHVHVHVIEFGWCBVP
+      WCVJVPVJVKVL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
