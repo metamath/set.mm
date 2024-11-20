@@ -143644,6 +143644,21 @@ $)
       NVAVBXAVJVJVPWIVLFXDXAVJVAVKVNVLFUTVBVCVDVEVEVEVFVFABCKIJVGVI $.
   $}
 
+  ${
+    $d B x y z $.  $d M x y z $.  $d .o. x y z $.
+    issgrpn0.b $e |- B = ( Base ` M ) $.
+    issgrpn0.o $e |- .o. = ( +g ` M ) $.
+    $( The predicate "is a semigroup" for a structure which is a set.
+       (Contributed by AV, 1-Feb-2020.) $)
+    issgrpv $p |- ( M e. V -> ( M e. Smgrp
+                                <-> A. x e. B A. y e. B ( ( x .o. y ) e. B
+                                    /\ A. z e. B ( ( x .o. y ) .o. z )
+                                               = ( x .o. ( y .o. z ) ) ) ) ) $=
+      ( wcel cmgm cv co wceq wral wa csgrp ismgm anbi1d issgrp r19.26-2 3bitr4g
+      ) EFJZEKJZALZBLZGMZCLZGMUEUFUHGMGMNCDOZBDOADOZPUGDJZBDOADOZUJPEQJUKUIPBDO
+      ADOUCUDULUJABDEFGHIRSABCDEGHITUKUIABDDUAUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
