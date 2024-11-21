@@ -143744,6 +143744,44 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties of monoids
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ("Monoid", ~ https://en.wikipedia.org/wiki/Monoid ,
+  6-Feb-2020,) "In abstract algebra [[...] a _monoid_ is an algebraic structure
+  with a single associative binary operation and an identity element.  Monoids
+  are semigroups with identity.".  In the following, monoids are defined in the
+  second way (as semigroups with identity), see ~ df-mnd , whereas many authors
+  define magmas in the first way (as algebraic structure with a single
+  associative binary operation and an identity element, i.e. without the need
+  of a definition for/knowledge about semigroups), see ~ ismnd .  See, for
+  example, the definition in [Lang] p. 3: "A _monoid_ is a set G, with a law of
+  composition which is associative, and having a unit element".
+
+$)
+
+  $c Mnd $.
+
+  $( Extend class notation with class of all monoids. $)
+  cmnd $a class Mnd $.
+
+  ${
+    $d b e g p x $.
+    $( A _monoid_ is a semigroup, which has a two-sided neutral element.
+       Definition 2 in [BourbakiAlg1] p. 12.  In other words (according to the
+       definition in [Lang] p. 3), a monoid is a set equipped with an
+       everywhere defined internal operation (see ~ mndcl ), whose operation is
+       associative (see ~ mndass ) and has a two-sided neutral element (see
+       ~ mndid ), see also ~ ismnd .  (Contributed by Mario Carneiro,
+       6-Jan-2015.)  (Revised by AV, 1-Feb-2020.) $)
+    df-mnd $a |- Mnd = { g e. Smgrp |
+                    [. ( Base ` g ) / b ]. [. ( +g ` g ) / p ].
+                    E. e e. b A. x e. b ( ( e p x ) = x /\ ( x p e ) = x ) } $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -160936,6 +160974,10 @@ htmldef "Mgm" as 'Mgm';
 htmldef "Smgrp" as 'Smgrp';
   althtmldef "Smgrp" as 'Smgrp';
   latexdef "Smgrp" as "\mathrm{Smgrp}";
+htmldef "Mnd" as
+    "<IMG SRC='_mnd.gif' WIDTH=28 HEIGHT=19 ALT=' Mnd' TITLE='Mnd'>";
+  althtmldef "Mnd" as "Mnd";
+  latexdef "Mnd" as "\mathrm{Mnd}";
 htmldef "+f" as "<IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'>" +
     "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT='f' TITLE='f'>";
   althtmldef "+f" as '+<SUB>&#x1D453;</SUB>';
