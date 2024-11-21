@@ -143780,6 +143780,25 @@ $)
                     E. e e. b A. x e. b ( ( e p x ) = x /\ ( x p e ) = x ) } $.
   $}
 
+  ${
+    $d B a b e g p $.  $d G b g p $.  $d .+ a b e g p $.
+    ismnddef.b $e |- B = ( Base ` G ) $.
+    ismnddef.p $e |- .+ = ( +g ` G ) $.
+    $( The predicate "is a monoid", corresponding 1-to-1 to the definition.
+       (Contributed by FL, 2-Nov-2009.)  (Revised by AV, 1-Feb-2020.) $)
+    ismnddef $p |- ( G e. Mnd <-> ( G e. Smgrp /\ E. e e. B A. a e. B
+                                    ( ( e .+ a ) = a /\ ( a .+ e ) = a ) ) ) $=
+      ( vp vb vg cv co wceq wa wral cplusg cfv cbs cvv wcel wrex wsbc csgrp wfn
+      cmnd basfn vex funfvex funfni mp2an plusgslid slotex elv wb fveq2 eqtr4di
+      eqeq2d anbi12d simpl oveq eqeq1d adantl raleqbidv rexeqbidv syl6bi df-mnd
+      sbc2iedv elrab2 ) CKZEKZHKZLZVJMZVJVIVKLZVJMZNZEIKZOZCVQUAZHJKZPQZUBIVTRQ
+      ZUBVIVJBLZVJMZVJVIBLZVJMZNZEAOZCAUAZJDUCUEVTDMZVSWIIHWBWARSUDVTSTWBSTZUFJ
+      UGWKSVTRVTRUHUIUJWASTJVTPSUKULUMWJVQWBMZVKWAMZNVQAMZVKBMZNZVSWIUNWJWLWNWM
+      WOWJWBAVQWJWBDRQAVTDRUOFUPUQWJWABVKWJWADPQBVTDPUOGUPUQURWPVRWHCVQAWNWOUSZ
+      WPVPWGEVQAWQWOVPWGUNWNWOVMWDVOWFWOVLWCVJVIVJVKBUTVAWOVNWEVJVJVIVKBUTVAURV
+      BVCVDVEVGECJHIVFVH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
