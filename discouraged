@@ -17692,6 +17692,7 @@ New usage of "nfrexg" is discouraged (1 uses).
 New usage of "nfriotad" is discouraged (0 uses).
 New usage of "nfrmo" is discouraged (0 uses).
 New usage of "nfrmod" is discouraged (0 uses).
+New usage of "nfrmowOLD" is discouraged (0 uses).
 New usage of "nfs1" is discouraged (2 uses).
 New usage of "nfsabg" is discouraged (1 uses).
 New usage of "nfsb" is discouraged (17 uses).
@@ -20551,6 +20552,7 @@ Proof modification of "nfopdALT" is discouraged (70 steps).
 Proof modification of "nfra2wOLD" is discouraged (88 steps).
 Proof modification of "nfra2wOLDOLD" is discouraged (15 steps).
 Proof modification of "nfraldwOLD" is discouraged (41 steps).
+Proof modification of "nfrmowOLD" is discouraged (55 steps).
 Proof modification of "nfsbOLD" is discouraged (23 steps).
 Proof modification of "nfsbvOLD" is discouraged (47 steps).
 Proof modification of "nfsumOLD" is discouraged (216 steps).
