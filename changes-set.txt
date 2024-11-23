@@ -94,7 +94,6 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-23-Nov-24 bj-issetiv issetiv    moved from BJ's mathbox to main set.mm
 23-Nov-24 leltletr  [same]      moved from AV's mathbox to main set.mm
 23-Nov-24 fzindd    [same]      moved from metakunt's mathbox to main set.mm
 23-Nov-24 elfzop1le2 [same]     moved from GS's mathbox to main set.mm
