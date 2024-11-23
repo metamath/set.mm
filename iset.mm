@@ -46635,6 +46635,15 @@ $)
   $}
 
   ${
+    $d A y $.  $d ph y $.  $d x y $.
+    $( An inhabited iota expression has a unique value.  (Contributed by Jim
+       Kingdon, 22-Nov-2024.) $)
+    eliotaeu $p |- ( A e. ( iota x ph ) -> E! x ph ) $=
+      ( vy cv wcel weq wb wal wa wex cio weu exsimpr eliota df-eu 3imtr4i ) CDE
+      FZABDGHBIZJDKSDKCABLFABMRSDNABDCOABDPQ $.
+  $}
+
+  ${
     $d A x $.  $d ps x $.
     iota2.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     $( The unique element such that ` ph ` .  (Contributed by Jeff Madsen,
