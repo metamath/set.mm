@@ -46625,6 +46625,16 @@ $)
   $}
 
   ${
+    $d ph y $.  $d A y $.  $d x y $.
+    $( An element of an iota expression.  (Contributed by Jim Kingdon,
+       22-Nov-2024.) $)
+    eliota $p |- ( A e. ( iota x ph ) <-> E. y ( A e. y /\
+        A. x ( ph <-> x = y ) ) ) $=
+      ( cio wcel weq wb wal cab cuni cv wa wex dfiota2 eleq2i eluniab bitri ) D
+      ABEZFDABCGHBIZCJKZFDCLFTMCNSUADABCOPTCDQR $.
+  $}
+
+  ${
     $d A x $.  $d ps x $.
     iota2.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     $( The unique element such that ` ph ` .  (Contributed by Jeff Madsen,
