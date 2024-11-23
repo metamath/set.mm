@@ -502,7 +502,7 @@ Proposition 2.4: Neither of the variables x or y occurs in H(Psi_1).
       with
                     = x y
 
-It follows that from C(Chi_1) one can deduce [using propositonal
+It follows that from C(Chi_1) one can deduce [using propositional
 logic] the following:
 
 (A) implies H(Psi_1)

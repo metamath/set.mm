@@ -56813,7 +56813,7 @@ $)
     refrd.1 $e |- ( ph -> R e. V ) $.
     refrd.2 $e |- ( ph -> A e. W ) $.
     refrd.3 $e |- ( ( ph /\ x e. A ) -> x R x ) $.
-    $( Deduce reflexitiviy from its properties.  (Contributed by SF,
+    $( Deduce reflexivity from its properties.  (Contributed by SF,
        12-Mar-2015.) $)
     refrd $p |- ( ph -> R Ref A ) $=
       ( vr va cref wbr cv wral ralrimiva wcel wb wceq breq ralbidv raleq df-ref
@@ -56826,7 +56826,7 @@ $)
     $d r x $.  $d R x $.  $d X x $.
     refd.1 $e |- ( ph -> R Ref A ) $.
     refd.2 $e |- ( ph -> X e. A ) $.
-    $( Natural deduction form of reflexitivity.  (Contributed by SF,
+    $( Natural deduction form of reflexivity.  (Contributed by SF,
        20-Mar-2015.) $)
     refd $p |- ( ph -> X R X ) $=
       ( vx vr va cv wbr wral wcel cref cvv wa wb brex wceq syl breq raleq brabg

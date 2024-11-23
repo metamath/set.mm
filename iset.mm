@@ -6886,11 +6886,11 @@ $(
 
 $)
 
-  $( Contraposition of a stable proposition.  See comment of ~ condc .
-     (Contributed by BJ, 18-Nov-2023.) $)
+  $( Contraposition when the antecedent is a negated stable proposition.  See
+     comment of ~ condc .  (Contributed by BJ, 18-Nov-2023.)  (Proof shortened
+     by BJ, 11-Nov-2024.) $)
   const $p |- ( STAB ph -> ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) ) $=
-    ( wstab wn wi df-stab con3 notnot imim2 syl7 syl5 sylbi ) ACADZDZAEZMBDZEZB
-    AEZEAFQPDZNEZORMPGBSOTABHNASIJKL $.
+    ( wn wi wstab con2 df-stab biimpi syl9r ) ACZBCDBJCZAEZAJBFLKADAGHI $.
 
   $( Contraposition of a decidable proposition.
 
@@ -18219,6 +18219,7 @@ $)
   $v .xb $.
   $v ., $.
   $v .(x) $.
+  $v .o. $.
   $v .0b $.
 
   $( Declare variable symbols that will be used to represent classes.  Note
@@ -18443,9 +18444,10 @@ $)
 
   $( Define a connective symbol for use as a class variable. $)
   c.0 $f class .0. $.
-
   $( Define a connective symbol for use as a class variable. $)
   c.0b $f class .0b $.
+  $( Define a connective symbol for use as a class variable. $)
+  c.op $f class .o. $.
 
   $( Let ` Z ` be a class variable. $)
   cZ $f class Z $.
@@ -19034,9 +19036,15 @@ $)
   $}
 
   ${
-    syl5eq.1 $e |- A = B $.
-    syl5eq.2 $e |- ( ph -> B = C ) $.
-    $( An equality transitivity deduction.  (Contributed by NM, 5-Aug-1993.) $)
+    eqtrid.1 $e |- A = B $.
+    eqtrid.2 $e |- ( ph -> B = C ) $.
+    $( An equality transitivity deduction.  (Contributed by NM,
+       21-Jun-1993.) $)
+    eqtrid $p |- ( ph -> A = C ) $=
+      ( wceq a1i eqtrd ) ABCDBCGAEHFI $.
+
+    $( Renamed to ~ eqtrid .  Kept during a transition period.  DO NOT USE.
+       (Contributed by NM, 21-Jun-1993.) $)
     syl5eq $p |- ( ph -> A = C ) $=
       ( wceq a1i eqtrd ) ABCDBCGAEHFI $.
   $}
@@ -53674,6 +53682,37 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d x y F $.  $d x y ph $.  $d y Y $.
+    $d x y G $.  $d x y X $.
+    $( If an operation value is element of a class for all operands of two
+       classes, then the operation value is an element of the class for
+       specific operands of the two classes.  (Contributed by Mario Carneiro,
+       6-Dec-2014.) $)
+    ovrspc2v $p |- ( ( ( X e. A /\ Y e. B ) /\
+      A. x e. A A. y e. B ( x F y ) e. C ) -> ( X F Y ) e. C ) $=
+      ( cv co wcel wceq oveq1 eleq1d oveq2 rspc2va ) AIZBIZFJZEKGHFJZEKGRFJZEKA
+      BGHCDQGLSUAEQGRFMNRHLUATERHGFONP $.
+
+    oveqrspc2v.1 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) ->
+                         ( x F y ) = ( x G y ) ) $.
+    $( Restricted specialization of operands, using implicit substitution.
+       (Contributed by Mario Carneiro, 6-Dec-2014.) $)
+    oveqrspc2v $p |- ( ( ph /\ ( X e. A /\ Y e. B ) ) ->
+                         ( X F Y ) = ( X G Y ) ) $=
+      ( cv co wceq wral wcel wa ralrimivva oveq1 eqeq12d oveq2 rspc2v mpan9 ) A
+      BKZCKZFLZUCUDGLZMZCENBDNHDOIEOPHIFLZHIGLZMZAUGBCDEJQUGUJHUDFLZHUDGLZMBCHI
+      DEUCHMUEUKUFULUCHUDFRUCHUDGRSUDIMUKUHULUIUDIHFTUDIHGTSUAUB $.
+  $}
+
+  ${
+    oveqdr.1 $e |- ( ph -> F = G ) $.
+    $( Equality of two operations for any two operands.  Useful in proofs using
+       *propd theorems.  (Contributed by Mario Carneiro, 29-Jun-2015.) $)
+    oveqdr $p |- ( ( ph /\ ps ) -> ( x F y ) = ( x G y ) ) $=
+      ( cv co wceq oveqd adantr ) ACHZDHZEIMNFIJBAEFMNGKL $.
+  $}
+
+  ${
     nfovd.2 $e |- ( ph -> F/_ x A ) $.
     nfovd.3 $e |- ( ph -> F/_ x F ) $.
     nfovd.4 $e |- ( ph -> F/_ x B ) $.
@@ -55700,66 +55739,6 @@ $)
       NVKVLVMVN $.
   $}
 
-  ${
-    $d n u v w x y z B $.  $d n u v w x y z O $.  $d n u v w x y z ph $.
-    $d u v w y z N $.  $d n u v w x y z .+ $.  $d u v w y z X $.
-    $d u v w y ps $.
-    grprinvlem.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
-    grprinvlem.o $e |- ( ph -> O e. B ) $.
-    grprinvlem.i $e |- ( ( ph /\ x e. B ) -> ( O .+ x ) = x ) $.
-    grprinvlem.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) )
-          -> ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
-    grprinvlem.n $e |- ( ( ph /\ x e. B ) -> E. y e. B ( y .+ x ) = O ) $.
-    ${
-      grprinvlem.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
-      grprinvlem.e $e |- ( ( ph /\ ps ) -> ( X .+ X ) = X ) $.
-      $( Lemma for ~ grprinvd .  (Contributed by NM, 9-Aug-2013.) $)
-      grprinvlem $p |- ( ( ph /\ ps ) -> X = O ) $=
-        ( cv co wceq wcel vu vv vw wa wrex wral ralrimiva oveq2 rexbidv cbvralv
-        eqeq1d sylib rspccva syldan oveq2d adantr simprr oveq1d simpll caovassg
-        sylan w3a simprl caovassd id eqeq12d rspcdva 3eqtr3d rexlimddv ) ABUDZD
-        QZIGRZHSZIHSDFABIFTZVMDFUEZOAVKEQZGRZHSZDFUEZEFUFZVNVOAVKCQZGRZHSZDFUEZ
-        CFUFVTAWDCFNUGWDVSCEFWAVPSZWCVRDFWEWBVQHWAVPVKGUHUKUIUJULVSVOEIFVPISZVR
-        VMDFWFVQVLHVPIVKGUHUKUIUMVAUNVJVKFTZVMUDZUDZVKIIGRZGRZVLIHVJWKVLSWHVJWJ
-        IVKGPUOUPWIVLIGRHIGRZWKIWIVLHIGVJWGVMUQZURWIUAUBUCVKIIFGWIAUAQZFTUBQZFT
-        UCQZFTVBWNWOGRWPGRWNWOWPGRGRSABWHUSACDEWNWOWPFGMUTVAVJWGVMVCVJVNWHOUPZW
-        QVDVJWLISZWHVJHVKGRZVKSZWRDFIVKISZWSWLVKIVKIHGUHXAVEVFAWTDFUFZBAHWAGRZW
-        ASZCFUFXBAXDCFLUGXDWTCDFWAVKSZXCWSWAVKWAVKHGUHXEVEVFUJULUPOVGUPVHWMVHVI
-        $.
-    $}
-
-    ${
-      grprinvd.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
-      grprinvd.n $e |- ( ( ph /\ ps ) -> N e. B ) $.
-      grprinvd.e $e |- ( ( ph /\ ps ) -> ( N .+ X ) = O ) $.
-      $( Deduce right inverse from left inverse and left identity in an
-         associative structure (such as a group).  (Contributed by NM,
-         10-Aug-2013.)  (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
-      grprinvd $p |- ( ( ph /\ ps ) -> ( X .+ N ) = O ) $=
-        ( co wcel vu vv vw wa cv caovclg adantlr caovcld wceq caovassg caovassd
-        3expb w3a oveq1d oveq2 id eqeq12d wral ralrimiva cbvralv adantr rspcdva
-        sylib 3eqtr3d oveq2d eqtrd grprinvlem ) ABCDEFGIJHGSZKLMNOABUDZUAUBJHFF
-        FGAUAUEZFTZUBUEZFTZUDVJVLGSZFTBACDVJVLFFFGACUEZFTDUEZFTVOVPGSFTKULUFUGP
-        QUHZVIVHVHGSJHVHGSZGSVHVIUAUBUCJHVHFGAVKVMUCUEZFTUMVNVSGSVJVLVSGSGSUIBA
-        CDEVJVLVSFGNUJUGZPQVQUKVIVRHJGVIHJGSZHGSIHGSZVRHVIWAIHGRUNVIUAUBUCHJHFG
-        VTQPQUKVIIVPGSZVPUIZWBHUIDFHVPHUIZWCWBVPHVPHIGUOWEUPUQAWDDFURZBAIVOGSZV
-        OUIZCFURWFAWHCFMUSWHWDCDFVOVPUIZWGWCVOVPVOVPIGUOWIUPUQUTVCVAQVBVDVEVFVG
-        $.
-    $}
-
-    $( Deduce right identity from left inverse and left identity in an
-       associative structure (such as a group).  (Contributed by NM,
-       10-Aug-2013.)  (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
-    grpridd $p |- ( ( ph /\ x e. B ) -> ( x .+ O ) = x ) $=
-      ( vn vu vv cv wcel wa co wceq vw wrex oveq1 eqeq1d cbvrexv sylib caovassg
-      w3a adantlr simprl simprrl caovassd simprrr oveq1d oveq2d 3eqtr3d anassrs
-      grprinvd rexlimddv eqtr3d ) ABPZEQZRZGVAFSZVAGFSZVAVCMPZVAFSZGTZVDVETZMEV
-      CCPZVAFSZGTZCEUBVHMEUBLVLVHCMEVJVFTVKVGGVJVFVAFUCUDUEUFAVBVFEQZVHRZVIAVBV
-      NRZRZVAVFFSZVAFSVAVGFSVDVEVPNOUAVAVFVAEFANPZEQOPZEQUAPZEQUHVRVSFSVTFSVRVS
-      VTFSFSTVOABCDVRVSVTEFKUGUIAVBVNUJZAVBVMVHUKZWAULVPVQGVAFAVOBCDEFVFGVAHIJK
-      LWAWBAVBVMVHUMZURUNVPVGGVAFWCUOUPUQUSJUT $.
-  $}
-
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -56395,6 +56374,30 @@ $)
     wfun xpexg ssexg ) CADZABEZFZCCGZCHZIZJZUQKEZCKEULURUMULCRURACLCMNOUNUOBEZU
     PKEZUSULUTUMULUOABACUAZPQULUMCASZKEZVAULCUIUMVDACUBCABUCUDULVAVDULUPVCKULUP
     CUOSVCCUEULUOACVBUFUGPQUHUOUPBKUJTCUQKUKT $.
+
+  $( Weak version of ~ funex that holds without ~ ax-coll .  If the domain and
+     codomain of a function exist, so does the function.  (Contributed by Rohan
+     Ridenour, 13-Aug-2023.) $)
+  funexw $p |- ( ( Fun F /\ dom F e. B /\ ran F e. C ) -> F e. _V ) $=
+    ( wfun cdm wcel crn w3a cxp cvv xpexg 3adant1 wss wrel funrel relssdmrn syl
+    3ad2ant1 ssexd ) CDZCEZAFZCGZBFZHCUAUCIZJUBUDUEJFTUAUCABKLTUBCUEMZUDTCNUFCO
+    CPQRS $.
+  $( $j usage 'funexw' avoids 'ax-coll' ; $)
+
+  ${
+    $d x A $.  $d x C $.
+    mptexw.1 $e |- A e. _V $.
+    mptexw.2 $e |- C e. _V $.
+    mptexw.3 $e |- A. x e. A B e. C $.
+    $( Weak version of ~ mptex that holds without ~ ax-coll .  If the domain
+       and codomain of a function given by maps-to notation are sets, the
+       function is a set.  (Contributed by Rohan Ridenour, 13-Aug-2023.) $)
+    mptexw $p |- ( x e. A |-> B ) e. _V $=
+      ( cmpt wfun cdm cvv wcel crn funmpt eqid dmmptss ssexi wral wss rnmptss
+      ax-mp funexw mp3an ) ABCHZIUDJZKLUDMZKLUDKLABCNUEBEABCUDUDOZPQUFDFCDLABRU
+      FDSGABCDUDUGTUAQKKUDUBUC $.
+    $( $j usage 'mptexw' avoids 'ax-coll' ; $)
+  $}
 
   $( If the domain of a function exists, so does its range.  Part of Theorem
      4.15(v) of [Monk1] p. 46.  This theorem is derived using the Axiom of
@@ -57484,6 +57487,25 @@ $)
     mpoexga $p |- ( ( A e. V /\ B e. W )
                        -> ( x e. A , y e. B |-> C ) e. _V ) $=
       ( cmpo eqid mpoexg ) ABCDEFGABCDEHZKIJ $.
+  $}
+
+  ${
+    $d z C $.  $d x y z A $.  $d x y z B $.  $d x y z D $.
+    mpoexw.1 $e |- A e. _V $.
+    mpoexw.2 $e |- B e. _V $.
+    mpoexw.3 $e |- D e. _V $.
+    mpoexw.4 $e |- A. x e. A A. y e. B C e. D $.
+    $( Weak version of ~ mpoex that holds without ~ ax-coll .  If the domain
+       and codomain of an operation given by maps-to notation are sets, the
+       operation is a set.  (Contributed by Rohan Ridenour, 14-Aug-2023.) $)
+    mpoexw $p |- ( x e. A , y e. B |-> C ) e. _V $=
+      ( vz cmpo wfun cvv wcel wral wceq eqeltri cv wrex cdm crn eqid mpofun cxp
+      dmmpoga ax-mp xpex cab rnmpo wa wi r19.21bi eleq1a syl rexlimdva rexlimiv
+      rspec abssi ssexi funexw mp3an ) ABCDELZMVCUAZNOVCUBZNOVCNOABCDEVCVCUCZUD
+      VDCDUEZNEFOZBDPZACPVDVGQJABCDEVCFVFUFUGCDGHUHRVEKSZEQZBDTZACTZKUIZNABKCDE
+      VCVFUJVNFIVMKFVLVJFOZACASCOZVKVOBDVPBSDOUKVHVKVOULVPVHBDVIACJURUMEFVJUNUO
+      UPUQUSUTRNNVCVAVB $.
+    $( $j usage 'mpoexw' avoids 'ax-coll' ; $)
   $}
 
   ${
@@ -141897,6 +141919,15 @@ $)
     ( cbs baseslid slotslfn ) ABC $.
 
   ${
+    basmex.b $e |- B = ( Base ` G ) $.
+    $( A structure whose base is inhabited is a set.  (Contributed by Jim
+       Kingdon, 18-Nov-2024.) $)
+    basmex $p |- ( A e. B -> G e. _V ) $=
+      ( wcel cbs cdm wrel cfv cvv wfn basfn fnrel ax-mp eleq2i biimpi relelfvdm
+      sylancr elexd ) ABEZCFGZTFHZACFIZEZCUAEFJKUBLJFMNTUDBUCADOPACFQRS $.
+  $}
+
+  ${
     $d a w $.
     $( The structure restriction is a proper operator, so it can be used with
        ~ ovprc1 .  (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
@@ -142979,6 +143010,741 @@ $)
        11-Jan-2015.) $)
     df-pws $a |-
         ^s = ( r e. _V , i e. _V |-> ( ( Scalar ` r ) Xs_ ( i X. { r } ) ) ) $.
+  $}
+
+
+$(
+###############################################################################
+  BASIC ALGEBRAIC STRUCTURES
+###############################################################################
+$)
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Monoids
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Magmas
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ("Magma (algebra)", 08-Jan-2020,
+  ~ https://en.wikipedia.org/wiki/magma_(algebra) ) "In abstract algebra, a
+  _magma_ [[...] is a basic kind of algebraic structure.  Specifically, a magma
+  consists of a set equipped with a single binary operation.  The binary
+  operation must be closed by definition but no other properties are imposed.".
+
+  Since the concept of a "binary operation" is used in different variants,
+  these differences are explained in more detail in the following:
+
+  With ~ df-mpo , binary operations are defined by a rule, and with ~ df-ov ,
+  the value of a binary operation applied to two operands can be expressed.
+  In both cases, the two operands can belong to different sets, and the result
+  can be an element of a third set.  However, according to Wikipedia "Binary
+  operation", see ~ https://en.wikipedia.org/wiki/Binary_operation
+  (19-Jan-2020), "... a binary operation on a set ` S ` is a mapping of the
+  elements of the Cartesian product ` S X. S ` to S: ` f : S X. S --> S `.
+  Because the result of performing the operation on a pair of elements of S is
+  again an element of S, the operation is called a _closed_ binary operation on
+  S (or sometimes expressed as having the property of closure).".  To
+  distinguish this more restrictive definition (in Wikipedia and most of the
+  literature) from the general case, binary operations mapping the elements of
+  the Cartesian product ` S X. S ` are more precisely called _internal binary
+  operations_.  If, in addition, the result is also contained in the set ` S `,
+  the operation should be called _closed internal binary operation_.
+  Therefore, a "binary operation on a set ` S `" according to Wikipedia is a
+  "closed internal binary operation" in a more precise terminology.  If the
+  sets are different, the operation is explicitly called _external binary
+  operation_ (see Wikipedia ~
+  https://en.wikipedia.org/wiki/Binary_operation#External_binary_operations ).
+
+  The definition of magmas (` Mgm `, see ~ df-mgm ) concentrates on the closure
+  property of the associated operation, and poses no additional restrictions on
+  it.  In this way, it is most general and flexible.
+
+$)
+
+  $c +f $.
+  $c Mgm $.
+
+  $( Extend class notation with group addition as a function. $)
+  cplusf $a class +f $.
+
+  $( Extend class notation with class of all magmas. $)
+  cmgm $a class Mgm $.
+
+  ${
+    $d g x y $.
+    $( Define group addition function.  Usually we will use ` +g ` directly
+       instead of ` +f ` , and they have the same behavior in most cases.  The
+       main advantage of ` +f ` for any magma is that it is a guaranteed
+       function ( ~ mgmplusf ), while ` +g ` only has closure ( ~ mgmcl ).
+       (Contributed by Mario Carneiro, 14-Aug-2015.) $)
+    df-plusf $a |- +f = ( g e. _V |->
+      ( x e. ( Base ` g ) , y e. ( Base ` g ) |-> ( x ( +g ` g ) y ) ) ) $.
+  $}
+
+  ${
+    $d b g o x y $.
+    $( A _magma_ is a set equipped with an everywhere defined internal
+       operation.  Definition 1 in [BourbakiAlg1] p. 1, or definition of a
+       groupoid in section I.1 of [Bruck] p. 1.  Note:  The term "groupoid" is
+       now widely used to refer to other objects:  (small) categories all of
+       whose morphisms are invertible, or groups with a partial function
+       replacing the binary operation.  Therefore, we will only use the term
+       "magma" for the present notion in set.mm.  (Contributed by FL,
+       2-Nov-2009.)  (Revised by AV, 6-Jan-2020.) $)
+    df-mgm $a |- Mgm = { g | [. ( Base ` g ) / b ]. [. ( +g ` g ) / o ].
+                                A. x e. b A. y e. b ( x o y ) e. b } $.
+  $}
+
+  ${
+    $d B b m o x y $.  $d M b m o x y $.  $d .o. b m o x y $.
+    ismgm.b $e |- B = ( Base ` M ) $.
+    ismgm.o $e |- .o. = ( +g ` M ) $.
+    $( The predicate "is a magma".  (Contributed by FL, 2-Nov-2009.)  (Revised
+       by AV, 6-Jan-2020.) $)
+    ismgm $p |- ( M e. V -> ( M e. Mgm
+                                <-> A. x e. B A. y e. B ( x .o. y ) e. B ) ) $=
+      ( vo vb vm cv co wcel wral cplusg cfv cbs wceq cvv wsbc wfn basfn funfvex
+      cmgm vex funfni mp2an a1i fveq2 eqtr4di wa plusgslid slotex adantr simplr
+      elv oveq adantl eleq12d raleqbidv sbcied2 df-mgm elab2g ) ALZBLZILZMZJLZN
+      ZBVIOZAVIOZIKLZPQZUAZJVMRQZUAVEVFFMZCNZBCOZACOZKDUEEVMDSZVOVTJVPCTVPTNZWA
+      RTUBVMTNWBUCKUFWBTVMRVMRUDUGUHUIWAVPDRQCVMDRUJGUKWAVICSZULZVLVTIVNFTVNTNZ
+      WDWEKVMPTUMUNUQUIWDVNDPQZFWAVNWFSWCVMDPUJUOHUKWDVGFSZULZVKVSAVICWAWCWGUPZ
+      WHVJVRBVICWIWHVHVQVICWGVHVQSWDVEVFVGFURUSWIUTVAVAVBVBABKIJVCVD $.
+  $}
+
+  ${
+    $d B x y $.  $d M x y $.  $d .o. x y $.
+    ismgmn0.b $e |- B = ( Base ` M ) $.
+    ismgmn0.o $e |- .o. = ( +g ` M ) $.
+    $( The predicate "is a magma" for a structure with a nonempty base set.
+       (Contributed by AV, 29-Jan-2020.) $)
+    ismgmn0 $p |- ( A e. B -> ( M e. Mgm
+                                <-> A. x e. B A. y e. B ( x .o. y ) e. B ) ) $=
+      ( wcel cvv cmgm cv co wral wb cbs cdm cfv wrel wfn basfn fnrel ax-mp mpan
+      relelfvdm eleq2s elexd ismgm syl ) CDIZEJIEKIALBLFMDIBDNADNOUJEPQZEUKIZCE
+      PRZDPSZCUMIULPJTUNUAJPUBUCCEPUEUDGUFUGABDEJFGHUHUI $.
+  $}
+
+  ${
+    $d B x y $.  $d M x y $.  $d .o. x y $.  $d X x y $.  $d Y y $.
+    mgmcl.b $e |- B = ( Base ` M ) $.
+    mgmcl.o $e |- .o. = ( +g ` M ) $.
+    $( Closure of the operation of a magma.  (Contributed by FL, 14-Sep-2010.)
+       (Revised by AV, 13-Jan-2020.) $)
+    mgmcl $p |- ( ( M e. Mgm /\ X e. B /\ Y e. B ) -> ( X .o. Y ) e. B ) $=
+      ( vx vy cmgm wcel co cv wral wa wi ismgm ibi ovrspc2v expcom syl 3impib )
+      BJKZCAKZDAKZCDELAKZUCHMIMELAKIANHANZUDUEOZUFPUCUGHIABJEFGQRUHUGUFHIAAAECD
+      STUAUB $.
+
+    $( A condition for a structure not to be a magma.  (Contributed by AV,
+       30-Jan-2020.)  (Proof shortened by NM, 5-Feb-2020.) $)
+    isnmgm $p |- ( ( X e. B /\ Y e. B /\ ( X .o. Y ) e/ B ) -> M e/ Mgm ) $=
+      ( wcel co wnel cmgm wa mgmcl 3expib com12 nelcon3d 3impia ) CAHZDAHZCDEIZ
+      AJBKJRSLZBKTABKHZUATAHZUBRSUCABCDEFGMNOPQ $.
+  $}
+
+  ${
+    mgmsscl.b $e |- B = ( Base ` G ) $.
+    mgmsscl.s $e |- S = ( Base ` H ) $.
+    $( If the base set of a magma is contained in the base set of another
+       magma, and the group operation of the magma is the restriction of the
+       group operation of the other magma to its base set, then the base set of
+       the magma is closed under the group operation of the other magma.
+       (Contributed by AV, 17-Feb-2024.) $)
+    mgmsscl $p |- ( ( ( G e. Mgm /\ H e. Mgm )
+                     /\ ( S C_ B /\ ( +g ` H ) = ( ( +g ` G ) |` ( S X. S ) ) )
+                     /\ ( X e. S /\ Y e. S ) ) -> ( X ( +g ` G ) Y ) e. S ) $=
+      ( cmgm wcel wa wss cplusg cfv cxp cres wceq w3a co ovres simp3 eqid mgmcl
+      3ad2ant3 simp1r 3anass sylanbrc syl wb oveq eleq1d eqcoms adantl 3ad2ant2
+      mpbird eqeltrrd ) CIJZDIJZKZBALZDMNZCMNZBBOPZQZKZEBJZFBJZKZRZEFVCSZEFVBSZ
+      BVHUSVJVKQVEEFBBVBTUDVIVJBJZEFVASZBJZVIURVFVGRZVNVIURVHVOUQURVEVHUEUSVEVH
+      UAURVFVGUFUGBDEFVAHVAUBUCUHVEUSVLVNUIZVHVDVPUTVPVCVAVCVAQVJVMBEFVCVAUJUKU
+      LUMUNUOUP $.
+  $}
+
+  ${
+    $d g x y B $.  $d g x y G $.  $d g x y .+ $.  $d x y X $.  $d x y Y $.
+    $d x y V $.
+    plusffval.1 $e |- B = ( Base ` G ) $.
+    plusffval.2 $e |- .+ = ( +g ` G ) $.
+    plusffval.3 $e |- .+^ = ( +f ` G ) $.
+    $( The group addition operation as a function.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.)  (Proof shortened by AV, 2-Mar-2024.) $)
+    plusffvalg $p |- ( G e. V -> .+^ = ( x e. B , y e. B |-> ( x .+ y ) ) ) $=
+      ( vg wcel cplusf cfv cv co cmpo cbs cplusg cvv df-plusf wceq eqtr4di elex
+      fveq2 oveqd mpoeq123dv wfn basfn funfvex sylancr eqeltrid mpoexga syl2anc
+      funfni fvmptd3 syl5eq ) FGLZEFMNABCCAOZBOZDPZQZJURKFABKOZRNZVDUSUTVCSNZPZ
+      QVBTMTABKUAVCFUBZABVDVDVFCCVAVGVDFRNZCVCFRUEHUCZVIVGVEDUSUTVGVEFSNDVCFSUE
+      IUCUFUGFGUDZURCTLZVKVBTLURCVHTHURRTUHFTLVHTLZUIVJVLTFRFRUJUOUKULZVMABCCVA
+      TTUMUNUPUQ $.
+
+    $( The group addition operation as a function.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.) $)
+    plusfvalg $p |- ( ( G e. V /\ X e. B /\ Y e. B )
+        -> ( X .+^ Y ) = ( X .+ Y ) ) $=
+      ( vx vy wcel w3a cv co cvv wceq 3ad2ant1 cplusg cmpo plusffvalg wa oveq12
+      adantl simp2 simp3 cfv plusgslid slotex eqeltrid ovexg syl3anc ovmpod ) D
+      EMZFAMZGAMZNZKLFGAAKOZLOZBPZFGBPZCQUOUPCKLAAVAUARUQKLABCDEHIJUBSUSFRUTGRU
+      CVAVBRURUSFUTGBUDUEUOUPUQUFZUOUPUQUGZURUPBQMZUQVBQMVCUOUPVEUQUOBDTUHQIDTE
+      UIUJUKSVDFGBAQAULUMUN $.
+
+    $( If the addition operation is already a function, the functionalization
+       of it is equal to the original operation.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.) $)
+    plusfeqg $p |- ( ( G e. V /\ .+ Fn ( B X. B ) ) -> .+^ = .+ ) $=
+      ( vx vy wcel cxp wfn wa cv co cmpo wceq plusffvalg adantr fnovim adantl
+      eqtr4d ) DEKZBAALMZNCIJAAIOJOBPQZBUDCUFRUEIJABCDEFGHSTUEBUFRUDIJAABUAUBUC
+      $.
+  $}
+
+  ${
+    $d x y B $.  $d x y G $.  $d x y V $.
+    plusffn.1 $e |- B = ( Base ` G ) $.
+    plusffn.2 $e |- .+^ = ( +f ` G ) $.
+    $( The group addition operation is a function.  (Contributed by Mario
+       Carneiro, 20-Sep-2015.) $)
+    plusffng $p |- ( G e. V -> .+^ Fn ( B X. B ) ) $=
+      ( vx vy wcel cxp wfn cv cplusg cfv co cvv wral wa vex eqid cmpo plusgslid
+      slotex a1i ovexg mp3an2ani ralrimivva fnmpo syl plusffvalg fneq1d mpbird
+      ) CDIZBAAJZKGHAAGLZHLZCMNZOZUAZUNKZUMURPIZHAQGAQUTUMVAGHAAUOPIUMUQPIUOAIU
+      PAIRZUPPIZVAGSCMDUBUCVCUMVBRHSUDUOUPUQPPPUEUFUGGHAAURUSPUSTUHUIUMUNBUSGHA
+      UQBCDEUQTFUJUKUL $.
+  $}
+
+  ${
+    $d B x y $.  $d M x y $.
+    mgmplusf.1 $e |- B = ( Base ` M ) $.
+    mgmplusf.2 $e |- .+^ = ( +f ` M ) $.
+    $( The group addition function of a magma is a function into its base set.
+       (Contributed by Mario Carneiro, 14-Aug-2015.)  (Revisd by AV,
+       28-Jan-2020.) $)
+    mgmplusf $p |- ( M e. Mgm -> .+^ : ( B X. B ) --> B ) $=
+      ( vx vy cmgm wcel cxp wf cv cplusg cfv co cmpo wral eqid mgmcl 3expb fmpo
+      ralrimivva sylib plusffvalg feq1d mpbird ) CHIZAAJZABKUHAFGAAFLZGLZCMNZOZ
+      PZKZUGULAIZGAQFAQUNUGUOFGAAUGUIAIUJAIUOACUIUJUKDUKRZSTUBFGAAULAUMUMRUAUCU
+      GUHABUMFGAUKBCHDUPEUDUEUF $.
+  $}
+
+  $( The internal operation for a set is the trivial operation iff the set is a
+     singleton.  (Contributed by FL, 13-Feb-2010.)  (Revised by AV,
+     23-Jan-2020.) $)
+  intopsn $p |- ( ( .o. : ( B X. B ) --> B /\ Z e. B )
+                  -> ( B = { Z } <-> .o. = { <. <. Z , Z >. , Z >. } ) ) $=
+    ( cxp wf wcel wa csn wceq cop simpl sqxpeqd feq23d syl5ibcom cdm fdm eqcomd
+    id adantr cvv eqeq2d xpid11 syl6ib impbid simpr xpsng sylancom feq2d anidms
+    wb opexg fsng mpancom adantl 3bitrd ) AADZABEZCAFZGZACHZIZUTUTDZUTBEZCCJZHZ
+    UTBEZBVDCJHIZUSVAVCUSUQVAVCUQURKVAUPAVBUTBVAAUTVARZLVHMNUSVCUPVBIZVAUSUPBOZ
+    IZVCVIUQVKURUQVJUPUPABPQSVCVJVBUPVBUTBPUANAUTUBUCUDUSVBVEUTBUQURURVBVEIUQUR
+    UECCAAUFUGUHURVFVGUJZUQVDTFZURVLURVMCCAAUKUIVDCTABULUMUNUO $.
+
+  ${
+    mgmb1mgm1.b $e |- B = ( Base ` M ) $.
+    mgmb1mgm1.p $e |- .+ = ( +g ` M ) $.
+    $( The only magma with a base set consisting of one element is the trivial
+       magma (at least if its operation is an internal binary operation).
+       (Contributed by AV, 23-Jan-2020.)  (Revised by AV, 7-Feb-2020.) $)
+    mgmb1mgm1 $p |- ( ( M e. Mgm /\ Z e. B /\ .+ Fn ( B X. B ) )
+                      -> ( B = { Z } <-> .+ = { <. <. Z , Z >. , Z >. } ) ) $=
+      ( cmgm wcel cxp wfn w3a wf csn wceq cop wb wa cplusf cfv eqid feq1d mpbid
+      mgmplusf adantr plusfeqg 3adant2 simp2 intopsn syl2anc ) CGHZDAHZBAAIZJZK
+      ULABLZUKADMNBDDODOMNPUJUMUNUKUJUMQZULACRSZLZUNUJUQUMAUPCEUPTZUCUDUOULAUPB
+      ABUPCGEFURUEUAUBUFUJUKUMUGABDUHUI $.
+  $}
+
+  ${
+    $d M x y $.
+    $( Any set with an empty base set and any group operation is a magma.
+       (Contributed by AV, 28-Aug-2021.) $)
+    mgm0 $p |- ( ( M e. V /\ ( Base ` M ) = (/) ) -> M e. Mgm ) $=
+      ( vx vy wcel cbs c0 wceq wa cmgm cv cplusg co wral rzal adantl eqid ismgm
+      cfv wb adantr mpbird ) ABEZAFSZGHZIAJEZCKDKALSZMUDEDUDNZCUDNZUEUIUCUHCUDO
+      PUCUFUITUECDUDABUGUDQUGQRUAUB $.
+  $}
+
+  ${
+    $d I x y $.  $d M x y $.  $d V x y $.
+    mgm1.m $e |- M = { <. ( Base ` ndx ) , { I } >. ,
+                       <. ( +g ` ndx ) , { <. <. I , I >. , I >. } >. } $.
+    $( The structure with one element and the only closed internal operation
+       for a singleton is a magma.  (Contributed by AV, 10-Feb-2020.) $)
+    mgm1 $p |- ( I e. V -> M e. Mgm ) $=
+      ( vx vy wcel cv cfv co wral cop csn cvv wceq mpancom eleq1d ralsng mpbird
+      opexg cmgm cplusg cbs df-ov anidms fvsng eqtrid snidg eqeltrd oveq1 oveq2
+      ralbidv bitrd snexg grpbaseg syl2anc grpplusgg oveqd eleq12d raleqbidv wb
+      syl mpbid eleqtrd eqid ismgmn0 ) ACGZBUAGZEHZFHZBUBIZJZBUCIZGZFVMKZEVMKZV
+      GVIVJAALZALZMZJZAMZGZFWAKZEWAKZVPVGWDAAVSJZWAGZVGWEAWAVGWEVQVSIZAAAVSUDVQ
+      NGZVGWGAOVGWHAACCTUEZVQANCUFPUGACUHZUIVGWDAVJVSJZWAGZFWAKZWFWCWMEACVIAOZW
+      BWLFWAWNVTWKWAVIAVJVSUJQULRWLWFFACVJAOWKWEWAVJAAVSUKQRUMSVGWCVOEWAVMVGWAN
+      GZVSNGZWAVMOACUNZVGVRNGZWPWHVGWRWIVQANCTPVRNUNVBZWAVSBNNDUOUPZVGWBVNFWAVM
+      WTVGVTVLWAVMVGVSVKVIVJVGWOWPVSVKOWQWSWAVSBNNDUQUPURWTUSUTUTVCVGAVMGVHVPVA
+      VGAWAVMWJWTVDEFAVMBVKVMVEVKVEVFVBS $.
+  $}
+
+  ${
+    $d B x y $.  $d B a b $.  $d M x a b $.  $d ph a b $.  $d ph x y $.
+    opifismgm.b $e |- B = ( Base ` M ) $.
+    opifismgm.p $e |- ( +g ` M ) = ( x e. B , y e. B
+                                     |-> if ( ps , C , D ) ) $.
+    opifismgmdc.dc $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) -> DECID ps ) $.
+    opifismgm.m $e |- ( ph -> E. x x e. B ) $.
+    opifismgm.c $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) -> C e. B ) $.
+    opifismgm.d $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) -> D e. B ) $.
+    $( A structure with a group addition operation expressed by a conditional
+       operator is a magma if both values of the conditional operator are
+       contained in the base set.  (Contributed by AV, 9-Feb-2020.) $)
+    opifismgmdc $p |- ( ph -> M e. Mgm ) $=
+      ( va vb wcel cv wral wa cplusg cfv co cif ralrimivva adantr simprl simprr
+      cmgm ifcldcd ovmpoelrn syl3anc wex wb eqid ismgmn0 exlimiv syl mpbird ) A
+      HUIQZORZPRZHUAUBZUCEQZPESOESZAVDOPEEAVAEQZVBEQZTZTBFGUDZEQZDESCESZVFVGVDA
+      VKVHAVJCDEEACRZEQZDREQTTBFGEMNKUJUEUFAVFVGUGAVFVGUHCDEEVIEVCVAVBJUKULUEAV
+      MCUMUTVEUNZLVMVNCOPVLEHVCIVCUOUPUQURUS $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Identity elements
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ("Identity element", 7-Feb-2020,
+  ~ https://en.wikipedia.org/wiki/Identity_element ): "In mathematics, an
+  _identity element_, or _neutral element_, is a special type of element of a
+  set with respect to a binary operation on that set, which leaves any element
+  of the set unchanged when combined with it.". Or in more detail "... an
+  element e of S is called a _left identity_ if e * a = a for all a in S, and a
+  _right identity_ if a * e = a for all a in S.  If e is both a left identity
+  and a right identity, then it is called a _two-sided identity_, or simply an
+  _identity_."  We concentrate on two-sided identities in the following.  The
+  existence of an identity (an identity is unique if it exists, see ~ mgmidmo )
+  is an important property of monoids, and therefore also for
+  groups, but also for magmas not required to be associative.
+  Magmas with an identity element are called "unital magmas" (see Definition 2
+  in [BourbakiAlg1] p. 12) or, if the magmas are cancellative, "loops" (see
+  definition in [Bruck] p. 15).
+
+  In the context of extensible structures, the identity element (of any magma
+  ` M `) is defined as "group identity element" ` ( 0g `` M ) `, see ~ df-0g .
+  Related theorems which are already valid for magmas are provided in the
+  following.
+
+$)
+
+  ${
+    $d u w x B $.  $d u w x .+ $.
+    $( A two-sided identity element is unique (if it exists) in any magma.
+       (Contributed by Mario Carneiro, 7-Dec-2014.)  (Revised by NM,
+       17-Jun-2017.) $)
+    mgmidmo $p |- E* u e. B A. x e. B ( ( u .+ x ) = x /\ ( x .+ u ) = x ) $=
+      ( vw cv co wceq wa wral wrmo wi wcel simpl ralimi oveq1 id eqeq12d rspcva
+      weq simpr oveq2 sylan9req an42s ex syl2ani rgen2 eqeq1d ovanraleqv mpbir
+      rmo4 ) BFZAFZDGZUMHZUMULDGUMHZIZACJZBCKUREFZUMDGZUMHZUMUSDGZUMHZIZACJZIBE
+      TZLZECJBCJVGBECCURULCMZUSCMZIZUOACJZVCACJZVFVEUQUOACUOUPNOVDVCACVAVCUAOVJ
+      VKVLIVFVHVLVIVKVFVHVLIVIVKIULULUSDGZUSVCVMULHAULCABTZVBVMUMULUMULUSDPVNQR
+      SUOVMUSHAUSCAETZUNVMUMUSUMUSULDUBVOQRSUCUDUEUFUGURVEBECUOVAAUMULUMDCUSVFU
+      NUTUMULUSUMDPUHUIUKUJ $.
+  $}
+
+  ${
+    $d e g x B $.  $d e g x G $.  $d g .+ $.
+    grpidval.b $e |- B = ( Base ` G ) $.
+    grpidval.p $e |- .+ = ( +g ` G ) $.
+    grpidval.o $e |- .0. = ( 0g ` G ) $.
+    $( The value of the identity element of a group.  (Contributed by NM,
+       20-Aug-2011.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+    grpidvalg $p |- ( G e. V -> .0. = ( iota e ( e e. B
+        /\ A. x e. B ( ( e .+ x ) = x /\ ( x .+ e ) = x ) ) ) ) $=
+      ( vg wcel cfv cv co wceq wa cbs cplusg cvv c0g df-0g fveq2 eqtr4di eleq2d
+      wral cio oveqd eqeq1d anbi12d raleqbidv iotabidv elex crio df-riota basfn
+      wfn funfvex funfni sylancr eqeltrid riotaexg syl eqeltrrid fvmptd3 eqtrid
+      ) EFLZGEUAMDNZBLZVHANZCOZVJPZVJVHCOZVJPZQZABUFZQZDUGZJVGKEVHKNZRMZLZVHVJV
+      SSMZOZVJPZVJVHWBOZVJPZQZAVTUFZQZDUGVRTUATADKUBVSEPZWIVQDWJWAVIWHVPWJVTBVH
+      WJVTERMZBVSERUCHUDZUEWJWGVOAVTBWLWJWDVLWFVNWJWCVKVJWJWBCVHVJWJWBESMCVSESU
+      CIUDZUHUIWJWEVMVJWJWBCVJVHWMUHUIUJUKUJULEFUMZVGVRVPDBUNZTVPDBUOVGBTLWOTLV
+      GBWKTHVGRTUQETLWKTLZUPWNWPTERERURUSUTVAVPDBTVBVCVDVEVF $.
+  $}
+
+  ${
+    $d w x y z B $.  $d w x y z K $.  $d w x y z ph $.  $d w x y z L $.
+    grpidpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    grpidpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    grpidproddg.k $e |- ( ph -> K e. V ) $.
+    grpidproddg.l $e |- ( ph -> L e. W ) $.
+    grpidpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    $( If two structures have the same base set, and the values of their group
+       (addition) operations are equal for all pairs of elements of the base
+       set, they have the same identity element.  (Contributed by Mario
+       Carneiro, 27-Nov-2014.) $)
+    grpidpropdg $p |- ( ph -> ( 0g ` K ) = ( 0g ` L ) ) $=
+      ( cv cfv wcel co wceq wa eqid vz vw cbs cplusg wral cio c0g wb oveqrspc2v
+      eqeq1d ancom2s anbi12d anassrs ralbidva pm5.32da raleqdv 3bitr3d iotabidv
+      eleq2d grpidvalg syl 3eqtr4d ) ABNZEUCOZPZVCCNZEUDOZQZVFRZVFVCVGQZVFRZSZC
+      VDUEZSZBUFZVCFUCOZPZVCVFFUDOZQZVFRZVFVCVRQZVFRZSZCVPUEZSZBUFZEUGOZFUGOZAV
+      NWEBAVCDPZVLCDUEZSWIWCCDUEZSVNWEAWIWJWKAWISVLWCCDAWIVFDPZVLWCUHAWIWLSSZVI
+      VTVKWBWMVHVSVFMUJWMVJWAVFAWLWIVJWARAUAUBDDVGVRVFVCABCDDVGVRUANUBNMUIUIUKU
+      JULUMUNUOAWIVEWJVMADVDVCIUSAVLCDVDIUPULAWIVQWKWDADVPVCJUSAWCCDVPJUPULUQUR
+      AEGPWGVORKCVDVGBEGWGVDTVGTWGTUTVAAFHPWHWFRLCVPVRBFHWHVPTVRTWHTUTVAVB $.
+  $}
+
+  ${
+    $d e g x $.
+    $( The group zero extractor is a function.  (Contributed by Stefan O'Rear,
+       10-Jan-2015.) $)
+    fn0g $p |- 0g Fn _V $=
+      ( vg ve vx cvv cv cbs cfv wcel cplusg wceq wral cio c0g crio df-riota wfn
+      co wa basfn vex funfvex funfni mp2an riotaexg ax-mp eqeltrri df-0g fnmpti
+      ) ADBEZAEZFGZHUICEZUJIGZQULJULUIUMQULJRCUKKZRBLZMUNBUKNZUODUNBUKOUKDHZUPD
+      HFDPUJDHUQSATUQDUJFUJFUAUBUCUNBUKDUDUEUFCBAUGUH $.
+
+    $( The identity element function evaluates to the empty set on an empty
+       structure.  (Contributed by Stefan O'Rear, 2-Oct-2015.) $)
+    0g0 $p |- (/) = ( 0g ` (/) ) $=
+      ( ve vx c0 c0g cfv cv wcel cplusg co wceq wa wral cio cvv base0 grpidvalg
+      0ex eqid ax-mp weu wn wex noel intnanr nex euex mto iotanul eqtr2i ) CDEZ
+      AFZCGZUKBFZCHEZIUMJUMUKUNIUMJKBCLZKZAMZCCNGUJUQJQBCUNACNUJOUNRUJRPSUPATZU
+      AUQCJURUPAUBUPAULUOUKUCUDUEUPAUFUGUPAUHSUI $.
+  $}
+
+  ${
+    $d e x .+ $.  $d e x .0. $.  $d e x B $.  $d e x G $.  $d x X $.
+    $d e x U $.
+    ismgmid.b $e |- B = ( Base ` G ) $.
+    ismgmid.o $e |- .0. = ( 0g ` G ) $.
+    ismgmid.p $e |- .+ = ( +g ` G ) $.
+    ${
+      mgmidcl.e $e |- ( ph ->
+        E. e e. B A. x e. B ( ( e .+ x ) = x /\ ( x .+ e ) = x ) ) $.
+      $( The identity element of a magma, if it exists, belongs to the base
+         set.  (Contributed by Mario Carneiro, 27-Dec-2014.) $)
+      ismgmid $p |- ( ph -> ( ( U e. B /\
+        A. x e. B ( ( U .+ x ) = x /\ ( x .+ U ) = x ) ) <-> .0. = U ) ) $=
+        ( wcel cv co wceq wa wral eqeq1d syl crio wreu wrex wrmo reu5 sylanblrc
+        wb id mgmidmo oveq1 ovanraleqv syl2anr pm5.32da riotacl eleq1 syl5ibcom
+        riota2 pm4.71rd cio df-riota cvv rexm exlimiv grpidvalg eqtr4id 3bitr2d
+        wex basmex ) AECMZEBNZDOZVJPZVJEDOVJPQBCRZQVIFNZVJDOZVJPZVJVNDOVJPQBCRZ
+        FCUAZEPZQVSHEPAVIVMVSVIVIVQFCUBZVMVSUGAVIUHAVQFCUCZVQFCUDVTLBFCDUIVQFCU
+        EUFZVQVMFCEVPVLBVJVNVJDCEVNEPVOVKVJVNEVJDUJSUKUQULUMAVSVIAVRCMZVSVIAVTW
+        CWBVQFCUNTVRECUOUPURAVRHEAVRVNCMZVQQFUSZHVQFCUTAGVAMZHWEPAWDFVGZWFAWAWG
+        LVQFCVBTWDWFFVNCGIVHVCTBCDFGVAHIKJVDTVESVF $.
+
+      $( The identity element of a magma, if it exists, belongs to the base
+         set.  (Contributed by Mario Carneiro, 27-Dec-2014.) $)
+      mgmidcl $p |- ( ph -> .0. e. B ) $=
+        ( wcel cv co wceq wa wral eqid ismgmid mpbiri simpld ) AGCLZGBMZDNUCOUC
+        GDNUCOPBCQZAUBUDPGGOGRABCDGEFGHIJKSTUA $.
+
+      $( The identity element of a magma, if it exists, is a left and right
+         identity.  (Contributed by Mario Carneiro, 27-Dec-2014.) $)
+      mgmlrid $p |- ( ( ph /\ X e. B ) ->
+        ( ( .0. .+ X ) = X /\ ( X .+ .0. ) = X ) ) $=
+        ( cv co wceq wa wral wcel eqid eqeq12d ismgmid mpbiri simprd id anbi12d
+        oveq2 oveq1 rspccva sylan ) AHBMZDNZUJOZUJHDNZUJOZPZBCQZGCRHGDNZGOZGHDN
+        ZGOZPZAHCRZUPAVBUPPHHOHSABCDHEFHIJKLUAUBUCUOVABGCUJGOZULURUNUTVCUKUQUJG
+        UJGHDUFVCUDZTVCUMUSUJGUJGHDUGVDTUEUHUI $.
+    $}
+
+    $d x ph $.
+    ismgmid2.u $e |- ( ph -> U e. B ) $.
+    ismgmid2.l $e |- ( ( ph /\ x e. B ) -> ( U .+ x ) = x ) $.
+    ismgmid2.r $e |- ( ( ph /\ x e. B ) -> ( x .+ U ) = x ) $.
+    $( Show that a given element is the identity element of a magma.
+       (Contributed by Mario Carneiro, 27-Dec-2014.) $)
+    ismgmid2 $p |- ( ph -> U = .0. ) $=
+      ( ve wcel cv co wceq wa wral jca ralrimiva oveq1 eqeq1d ovanraleqv rspcev
+      wrex syl2anc ismgmid mpbi2and eqcomd ) AGEAECOZEBPZDQZUMRZUMEDQUMRZSZBCTZ
+      GERKAUQBCAUMCOSUOUPLMUAUBZABCDENFGHIJAULURNPZUMDQZUMRZUMUTDQUMRSBCTZNCUGK
+      USVCURNECVBUOBUMUTUMDCEUTERVAUNUMUTEUMDUCUDUEUFUHUIUJUK $.
+  $}
+
+  ${
+    $d B x $.  $d L x $.  $d R x $.  $d .+ x $.
+    lidrideqd.l $e |- ( ph -> L e. B ) $.
+    lidrideqd.r $e |- ( ph -> R e. B ) $.
+    lidrideqd.li $e |- ( ph -> A. x e. B ( L .+ x ) = x ) $.
+    lidrideqd.ri $e |- ( ph -> A. x e. B ( x .+ R ) = x ) $.
+    $( If there is a left and right identity element for any binary operation
+       (group operation) ` .+ ` , both identity elements are equal.
+       Generalization of statement in [Lang] p. 3: it is sufficient that "e" is
+       a left identity element and "e``" is a right identity element instead of
+       both being (two-sided) identity elements.  (Contributed by AV,
+       26-Dec-2023.) $)
+    lidrideqd $p |- ( ph -> L = R ) $=
+      ( co cv wceq oveq1 id eqeq12d rspcdva oveq2 eqtr3d ) AFEDKZFEABLZEDKZUAMT
+      FMBCFUAFMZUBTUAFUAFEDNUCOPJGQAFUADKZUAMTEMBCEUAEMZUDTUAEUAEFDRUEOPIHQS $.
+
+    $d B x y $.  $d L y $.  $d R y $.  $d G y $.  $d .+ y $.  $d .0. y $.
+    $d ph y $.
+    lidrideqd.b $e |- B = ( Base ` G ) $.
+    lidrideqd.p $e |- .+ = ( +g ` G ) $.
+    lidrididd.o $e |- .0. = ( 0g ` G ) $.
+    $( If there is a left and right identity element for any binary operation
+       (group operation) ` .+ ` , the left identity element (and therefore also
+       the right identity element according to ~ lidrideqd ) is equal to the
+       two-sided identity element.  (Contributed by AV, 26-Dec-2023.) $)
+    lidrididd $p |- ( ph -> L = .0. ) $=
+      ( vy cv co wceq wral wcel oveq2 id eqeq12d rspcv mpan9 wi lidrideqd oveq1
+      weq wa adantl simpl eqtrd ex syl6com com23 sylc imp ismgmid2 ) APCDGFHMON
+      IAGBQZDRZVASZBCTPQZCUAZGVDDRZVDSZKVCVGBVDCBPUJZVBVFVAVDVAVDGDUBVHUCZUDUEU
+      FAVEVDGDRZVDSZAVAEDRZVASZBCTZGESZVEVKUGLABCDEGIJKLUHVNVEVOVKVEVNVDEDRZVDS
+      ZVOVKUGVMVQBVDCVHVLVPVAVDVAVDEDUIVIUDUEVQVOVKVQVOUKVJVPVDVOVJVPSVQGEVDDUB
+      ULVQVOUMUNUOUPUQURUSUT $.
+  $}
+
+  ${
+    $d x G $.  $d x ph $.  $d x .0. $.
+    grpidd.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    grpidd.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    grpidd.z $e |- ( ph -> .0. e. B ) $.
+    grpidd.i $e |- ( ( ph /\ x e. B ) -> ( .0. .+ x ) = x ) $.
+    grpidd.j $e |- ( ( ph /\ x e. B ) -> ( x .+ .0. ) = x ) $.
+    $( Deduce the identity element of a magma from its properties.
+       (Contributed by Mario Carneiro, 6-Jan-2015.) $)
+    grpidd $p |- ( ph -> .0. = ( 0g ` G ) ) $=
+      ( cbs cfv eqid wcel co wceq oveqd eqtr3d syldan cplusg c0g eleqtrd eleq2d
+      cv biimpar wa adantr ismgmid2 ) ABELMZEUAMZFEEUBMZUJNULNUKNAFCUJIGUCABUEZ
+      UJOZUMCOZFUMUKPZUMQAUOUNACUJUMGUDUFZAUOUGZFUMDPUPUMURDUKFUMADUKQUOHUHZRJS
+      TAUNUOUMFUKPZUMQUQURUMFDPUTUMURDUKUMFUSRKSTUI $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y z G $.  $d x y z .+ $.  $d x V $.  $d x y z .0. $.
+    mgmidsssn0.b $e |- B = ( Base ` G ) $.
+    mgmidsssn0.z $e |- .0. = ( 0g ` G ) $.
+    mgmidsssn0.p $e |- .+ = ( +g ` G ) $.
+    mgmidsssn0.o $e |- O = { x e. B |
+      A. y e. B ( ( x .+ y ) = y /\ ( y .+ x ) = y ) } $.
+    $( Property of the set of identities of ` G ` .  Either ` G ` has no
+       identities, and ` O = (/) ` , or it has one and this identity is unique
+       and identified by the ` 0g ` function.  (Contributed by Mario Carneiro,
+       7-Dec-2014.) $)
+    mgmidsssn0 $p |- ( G e. V -> O C_ { .0. } ) $=
+      ( vz wcel cv co wceq wa wral sylibr crab csn wi wss simpr wrex ovanraleqv
+      oveq1 eqeq1d rspcev adantl ismgmid mpbid eqcomd velsn expr rabss eqsstrid
+      ralrimiva ) EGNZFAOZBOZDPZVBQZVBVADPVBQRBCSZACUAZHUBZLUTVEVAVGNZUCZACSVFV
+      GUDUTVIACUTVACNZVEVHUTVJVERZRZVAHQVHVLHVAVLVKHVAQUTVKUEVLBCDVAMEHIJKVKMOZ
+      VBDPZVBQZVBVMDPVBQRBCSZMCUFUTVPVEMVACVOVDBVBVMVBDCVAVMVAQVNVCVBVMVAVBDUHU
+      IUGUJUKULUMUNAHUOTUPUSVEACVGUQTUR $.
+  $}
+
+
+  ${
+    $d n u v w x y z B $.  $d n u v w x y z O $.  $d n u v w x y z ph $.
+    $d u v w y z N $.  $d n u v w x y z .+ $.  $d u v w y z X $.
+    $d u v w y ps $.
+    grprinvlem.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
+    grprinvlem.o $e |- ( ph -> O e. B ) $.
+    grprinvlem.i $e |- ( ( ph /\ x e. B ) -> ( O .+ x ) = x ) $.
+    grprinvlem.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) )
+          -> ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+    grprinvlem.n $e |- ( ( ph /\ x e. B ) -> E. y e. B ( y .+ x ) = O ) $.
+    ${
+      grprinvlem.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
+      grprinvlem.e $e |- ( ( ph /\ ps ) -> ( X .+ X ) = X ) $.
+      $( Lemma for ~ grprinvd .  (Contributed by NM, 9-Aug-2013.) $)
+      grprinvlem $p |- ( ( ph /\ ps ) -> X = O ) $=
+        ( cv co wceq wcel vu vv vw wa wrex wral ralrimiva oveq2 eqeq1d cbvralvw
+        rexbidv sylib rspccva syl2an2r oveq2d adantr simprr oveq1d w3a caovassg
+        ad4ant14 simprl caovassd id eqeq12d rspcdva 3eqtr3d rexlimddv ) ABUDZDQ
+        ZIGRZHSZIHSDFAVJEQZGRZHSZDFUEZEFUFZBIFTZVLDFUEZAVJCQZGRZHSZDFUEZCFUFVQA
+        WCCFNUGWCVPCEFVTVMSZWBVODFWDWAVNHVTVMVJGUHUIUKUJULOVPVSEIFVMISZVOVLDFWE
+        VNVKHVMIVJGUHUIUKUMUNVIVJFTZVLUDZUDZVJIIGRZGRZVKIHVIWJVKSWGVIWIIVJGPUOU
+        PWHVKIGRHIGRZWJIWHVKHIGVIWFVLUQZURWHUAUBUCVJIIFGAUAQZFTUBQZFTUCQZFTUSWM
+        WNGRWOGRWMWNWOGRGRSBWGACDEWMWNWOFGMUTVAVIWFVLVBVIVRWGOUPZWPVCVIWKISZWGV
+        IHVJGRZVJSZWQDFIVJISZWRWKVJIVJIHGUHWTVDVEAWSDFUFZBAHVTGRZVTSZCFUFXAAXCC
+        FLUGXCWSCDFVTVJSZXBWRVTVJVTVJHGUHXDVDVEUJULUPOVFUPVGWLVGVH $.
+    $}
+
+    ${
+      grprinvd.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
+      grprinvd.n $e |- ( ( ph /\ ps ) -> N e. B ) $.
+      grprinvd.e $e |- ( ( ph /\ ps ) -> ( N .+ X ) = O ) $.
+      $( Deduce right inverse from left inverse and left identity in an
+         associative structure (such as a group).  (Contributed by NM,
+         10-Aug-2013.)  (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
+      grprinvd $p |- ( ( ph /\ ps ) -> ( X .+ N ) = O ) $=
+        ( co wcel vu vv vw wa cv caovclg adantlr caovcld wceq caovassg caovassd
+        3expb w3a oveq1d oveq2 id eqeq12d wral ralrimiva cbvralvw sylib rspcdva
+        adantr 3eqtr3d oveq2d eqtrd grprinvlem ) ABCDEFGIJHGSZKLMNOABUDZUAUBJHF
+        FFGAUAUEZFTZUBUEZFTZUDVJVLGSZFTBACDVJVLFFFGACUEZFTDUEZFTVOVPGSFTKULUFUG
+        PQUHZVIVHVHGSJHVHGSZGSVHVIUAUBUCJHVHFGAVKVMUCUEZFTUMVNVSGSVJVLVSGSGSUIB
+        ACDEVJVLVSFGNUJUGZPQVQUKVIVRHJGVIHJGSZHGSIHGSZVRHVIWAIHGRUNVIUAUBUCHJHF
+        GVTQPQUKVIIVPGSZVPUIZWBHUIDFHVPHUIZWCWBVPHVPHIGUOWEUPUQAWDDFURZBAIVOGSZ
+        VOUIZCFURWFAWHCFMUSWHWDCDFVOVPUIZWGWCVOVPVOVPIGUOWIUPUQUTVAVCQVBVDVEVFV
+        G $.
+    $}
+
+    $( Deduce right identity from left inverse and left identity in an
+       associative structure (such as a group).  (Contributed by NM,
+       10-Aug-2013.)  (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
+    grpridd $p |- ( ( ph /\ x e. B ) -> ( x .+ O ) = x ) $=
+      ( vn vu vv cv wcel wa co wceq vw oveq1 eqeq1d cbvrexvw sylib w3a caovassg
+      adantlr simprl simprrl caovassd simprrr grprinvd oveq1d 3eqtr3d rexlimddv
+      wrex oveq2d anassrs eqtr3d ) ABPZEQZRZGVAFSZVAGFSZVAVCMPZVAFSZGTZVDVETZME
+      VCCPZVAFSZGTZCEUQVHMEUQLVLVHCMEVJVFTVKVGGVJVFVAFUBUCUDUEAVBVFEQZVHRZVIAVB
+      VNRZRZVAVFFSZVAFSVAVGFSVDVEVPNOUAVAVFVAEFANPZEQOPZEQUAPZEQUFVRVSFSVTFSVRV
+      SVTFSFSTVOABCDVRVSVTEFKUGUHAVBVNUIZAVBVMVHUJZWAUKVPVQGVAFAVOBCDEFVFGVAHIJ
+      KLWAWBAVBVMVHULZUMUNVPVGGVAFWCURUOUSUPJUT $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Semigroups
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  A semigroup (` Smgrp `, see ~ df-sgrp ) is a set together with an associative
+  binary operation (see Wikipedia, Semigroup, 8-Jan-2020,
+  ~ https://en.wikipedia.org/wiki/Semigroup ).  In other words, a semigroup is
+  an associative magma.  The notion of semigroup is a generalization of that of
+  group where the existence of an identity or inverses is not required.
+
+$)
+
+  $c Smgrp $.
+
+  $( Extend class notation with class of all semigroups. $)
+  csgrp $a class Smgrp $.
+
+  ${
+    $d b g o x y z $.
+    $( A _semigroup_ is a set equipped with an everywhere defined internal
+       operation (so, a magma, see ~ df-mgm ), whose operation is associative.
+       Definition in section II.1 of [Bruck] p. 23, or of an "associative
+       magma" in definition 5 of [BourbakiAlg1] p. 4 .  (Contributed by FL,
+       2-Nov-2009.)  (Revised by AV, 6-Jan-2020.) $)
+    df-sgrp $a |- Smgrp = { g e. Mgm |
+                            [. ( Base ` g ) / b ]. [. ( +g ` g ) / o ].
+                            A. x e. b A. y e. b A. z e. b
+                            ( ( x o y ) o z ) = ( x o ( y o z ) ) } $.
+  $}
+
+  ${
+    $d B b g o x y z $.  $d M b g o x y z $.  $d .o. b g o x y z $.
+    issgrp.b $e |- B = ( Base ` M ) $.
+    issgrp.o $e |- .o. = ( +g ` M ) $.
+    $( The predicate "is a semigroup".  (Contributed by FL, 2-Nov-2009.)
+       (Revised by AV, 6-Jan-2020.) $)
+    issgrp $p |- ( M e. Smgrp <-> ( M e. Mgm /\ A. x e. B A. y e. B A. z e. B
+                           ( ( x .o. y ) .o. z ) = ( x .o. ( y .o. z ) ) ) ) $=
+      ( vo vb vg cv co wceq wral cplusg cfv cbs cvv wcel wsbc csgrp wfn funfvex
+      cmgm basfn vex funfni mp2an a1i fveq2 eqtr4di plusgslid slotex elv adantr
+      wa simplr wb oveq eqidd oveq123d eqeq12d adantl raleqbidv sbcied2 df-sgrp
+      id elrab2 ) ALZBLZILZMZCLZVLMZVJVKVNVLMZVLMZNZCJLZOZBVSOZAVSOZIKLZPQZUAZJ
+      WCRQZUAVJVKFMZVNFMZVJVKVNFMZFMZNZCDOZBDOZADOZKEUEUBWCENZWEWNJWFDSWFSTZWOR
+      SUCWCSTWPUFKUGWPSWCRWCRUDUHUIUJWOWFERQDWCERUKGULWOVSDNZUQZWBWNIWDFSWDSTZW
+      RWSKWCPSUMUNUOUJWRWDEPQZFWOWDWTNWQWCEPUKUPHULWRVLFNZUQZWAWMAVSDWOWQXAURZX
+      BVTWLBVSDXCXBVRWKCVSDXCXAVRWKUSWRXAVOWHVQWJXAVMWGVNVNVLFXAVHZVJVKVLFUTXAV
+      NVAVBXAVJVJVPWIVLFXDXAVJVAVKVNVLFUTVBVCVDVEVEVEVFVFABCKIJVGVI $.
+  $}
+
+  ${
+    $d B x y z $.  $d M x y z $.  $d .o. x y z $.
+    issgrpn0.b $e |- B = ( Base ` M ) $.
+    issgrpn0.o $e |- .o. = ( +g ` M ) $.
+    $( The predicate "is a semigroup" for a structure which is a set.
+       (Contributed by AV, 1-Feb-2020.) $)
+    issgrpv $p |- ( M e. V -> ( M e. Smgrp
+                                <-> A. x e. B A. y e. B ( ( x .o. y ) e. B
+                                    /\ A. z e. B ( ( x .o. y ) .o. z )
+                                               = ( x .o. ( y .o. z ) ) ) ) ) $=
+      ( wcel cmgm cv co wceq wral wa csgrp ismgm anbi1d issgrp r19.26-2 3bitr4g
+      ) EFJZEKJZALZBLZGMZCLZGMUEUFUHGMGMNCDOZBDOADOZPUGDJZBDOADOZUJPEQJUKUIPBDO
+      ADOUCUDULUJABDEFGHIRSABCDEGHITUKUIABDDUAUB $.
+
+    $( The predicate "is a semigroup" for a structure with a nonempty base set.
+       (Contributed by AV, 1-Feb-2020.) $)
+    issgrpn0 $p |- ( A e. B -> ( M e. Smgrp
+                                <-> A. x e. B A. y e. B ( ( x .o. y ) e. B
+                                    /\ A. z e. B ( ( x .o. y ) .o. z )
+                                               = ( x .o. ( y .o. z ) ) ) ) ) $=
+      ( wcel cmgm cv co wceq wral wa csgrp ismgmn0 anbi1d issgrp r19.26-2
+      3bitr4g ) DEJZFKJZALZBLZGMZCLZGMUEUFUHGMGMNCEOZBEOAEOZPUGEJZBEOAEOZUJPFQJ
+      UKUIPBEOAEOUCUDULUJABDEFGHIRSABCEFGHITUKUIABEEUAUB $.
+
+    $d X x y z $.  $d Y x y z $.  $d Z x y z $.
+    $( A condition for a structure not to be a semigroup.  (Contributed by AV,
+       30-Jan-2020.) $)
+    isnsgrp $p |- ( ( X e. B /\ Y e. B /\ Z e. B )
+                    -> ( ( ( X .o. Y ) .o. Z ) =/= ( X .o. ( Y .o. Z ) )
+                         -> M e/ Smgrp ) ) $=
+      ( vx vy vz wcel co csgrp wa wn cv wceq wrex adantl w3a wne wnel cmgm wral
+      simpl1 wb oveq1 oveq1d eqeq12d notbid simpl2 oveq2 oveq2d simpl3 rspcedvd
+      rexbidv neneq rexnalim reximi syl intnand issgrp sylnibr df-nel sylibr ex
+      3syl ) CALZDALZFALZUAZCDEMZFEMZCDFEMZEMZUBZBNUCZVLVQOZBNLZPVRVSBUDLZIQZJQ
+      ZEMZKQZEMZWBWCWEEMZEMZRZKAUEZJAUEZIAUEZOVTVSWLWAVSWIPZKASZJASZIASWKPZIASW
+      LPVSWOCWCEMZWEEMZCWGEMZRZPZKASZJASZICAVIVJVKVQUFWBCRZWOXCUGVSXDWNXBJAXDWM
+      XAKAXDWIWTXDWFWRWHWSXDWDWQWEEWBCWCEUHUIWBCWGEUHUJUKUQUQTVSXBVMWEEMZCDWEEM
+      ZEMZRZPZKASJDAVIVJVKVQULVSWCDRZOXAXIKAXJXAXIUGVSXJWTXHXJWRXEWSXGXJWQVMWEE
+      WCDCEUMUIXJWGXFCEWCDWEEUHUNUJUKTUQVSXIVNVPRZPZKFAVIVJVKVQUOWEFRZXIXLUGVSX
+      MXHXKXMXEVNXGVPWEFVMEUMXMXFVOCEWEFDEUMUNUJUKTVQXLVLVNVPURTUPUPUPWOWPIAWOW
+      JPZJASWPWNXNJAWIKAUSUTWJJAUSVAUTWKIAUSVHVBIJKABEGHVCVDBNVEVFVG $.
+  $}
+
+  ${
+    $d M x y z $.
+    $( A semigroup is a magma.  (Contributed by FL, 2-Nov-2009.)  (Revised by
+       AV, 6-Jan-2020.) $)
+    sgrpmgm $p |- ( M e. Smgrp -> M e. Mgm ) $=
+      ( vx vy vz csgrp wcel cmgm cv cplusg cfv co wceq wral eqid issgrp simplbi
+      cbs ) AEFAGFBHZCHZAIJZKDHZTKRSUATKTKLDAQJZMCUBMBUBMBCDUBATUBNTNOP $.
+  $}
+
+  ${
+    $d B x y z $.  $d G x y z $.  $d X x y z $.  $d Y x y z $.  $d Z x y z $.
+    $d .o. x y z $.
+    sgrpass.b $e |- B = ( Base ` G ) $.
+    sgrpass.o $e |- .o. = ( +g ` G ) $.
+    $( A semigroup operation is associative.  (Contributed by FL, 2-Nov-2009.)
+       (Revised by AV, 30-Jan-2020.) $)
+    sgrpass $p |- ( ( G e. Smgrp /\ ( X e. B /\ Y e. B /\ Z e. B ) )
+                    -> ( ( X .o. Y ) .o. Z ) = ( X .o. ( Y .o. Z ) ) ) $=
+      ( vx vy vz wcel co wceq cv wral oveq1 oveq1d eqeq12d oveq2 csgrp w3a cmgm
+      wi issgrp oveq2d rspc3v com12 simplbiim imp ) BUALZCALDALFALUBZCDEMZFEMZC
+      DFEMZEMZNZUKBUCLIOZJOZEMZKOZEMZURUSVAEMZEMZNZKAPJAPIAPZULUQUDIJKABEGHUEUL
+      VFUQVEUQCUSEMZVAEMZCVCEMZNUMVAEMZCDVAEMZEMZNIJKCDFAAAURCNZVBVHVDVIVMUTVGV
+      AEURCUSEQRURCVCEQSUSDNZVHVJVIVLVNVGUMVAEUSDCETRVNVCVKCEUSDVAEQUFSVAFNZVJU
+      NVLUPVAFUMETVOVKUOCEVAFDETUFSUGUHUIUJ $.
+  $}
+
+  ${
+    $d M x y z $.
+    $( Any set with an empty base set and any group operation is a semigroup.
+       (Contributed by AV, 28-Aug-2021.) $)
+    sgrp0 $p |- ( ( M e. V /\ ( Base ` M ) = (/) ) -> M e. Smgrp ) $=
+      ( vx vy vz wcel cbs cfv c0 wceq wa cmgm cv cplusg co wral csgrp mgm0 rzal
+      eqid adantl issgrp sylanbrc ) ABFZAGHZIJZKALFCMZDMZANHZOEMZUIOUGUHUJUIOUI
+      OJEUEPDUEPZCUEPZAQFABRUFULUDUKCUESUACDEUEAUIUETUITUBUC $.
+  $}
+
+  ${
+    $d I x y z $.  $d M x y z $.  $d V x y z $.
+    sgrp1.m $e |- M = { <. ( Base ` ndx ) , { I } >. ,
+                        <. ( +g ` ndx ) , { <. <. I , I >. , I >. } >. } $.
+    $( The structure with one element and the only closed internal operation
+       for a singleton is a semigroup.  (Contributed by AV, 10-Feb-2020.) $)
+    sgrp1 $p |- ( I e. V -> M e. Smgrp ) $=
+      ( vx vy vz wcel cv cfv co wceq wral cvv oveq1d oveq2d oveq1 eqeq12d oveq2
+      ralsng cmgm cplusg cbs csgrp mgm1 cop csn df-ov opexg anidms fvsng eqtrid
+      mpancom eqtr4d 2ralbidv ralbidv 3bitrd mpbird snexg elex syl2anc grpbaseg
+      syl grpplusgg oveqd eqidd oveq123d raleqbidv mpbid eqid issgrp sylanbrc )
+      ACHZBUAHEIZFIZBUBJZKZGIZVPKZVNVOVRVPKZVPKZLZGBUCJZMZFWCMZEWCMZBUDHABCDUEV
+      MVNVOAAUFZAUFZUGZKZVRWIKZVNVOVRWIKZWIKZLZGAUGZMZFWOMZEWOMZWFVMWRAAWIKZAWI
+      KZAWSWIKZLZVMWTWSXAVMWSAAWIVMWSWGWIJZAAAWIUHWGNHZVMXCALVMXDAACCUIUJZWGANC
+      UKUMULZOVMWSAAWIXFPUNVMWRAVOWIKZVRWIKZAWLWIKZLZGWOMZFWOMZWSVRWIKZAAVRWIKZ
+      WIKZLZGWOMZXBWQXLEACVNALZWNXJFGWOWOXRWKXHWMXIXRWJXGVRWIVNAVOWIQOVNAWLWIQR
+      UOTXKXQFACVOALZXJXPGWOXSXHXMXIXOXSXGWSVRWIVOAAWISOXSWLXNAWIVOAVRWIQPRUPTX
+      PXBGACVRALZXMWTXOXAVRAWSWISXTXNWSAWIVRAAWISPRTUQURVMWQWEEWOWCVMWONHZWINHZ
+      WOWCLACUSZVMWHNHZYBVMXDANHYDXEACUTWGANNUIVAWHNUSVCZWOWIBNNDVBVAZVMWPWDFWO
+      WCYFVMWNWBGWOWCYFVMWKVSWMWAVMWJVQVRVRWIVPVMYAYBWIVPLYCYEWOWIBNNDVDVAZVMWI
+      VPVNVOYGVEVMVRVFVGVMVNVNWLVTWIVPYGVMVNVFVMWIVPVOVRYGVEVGRVHVHVHVIEFGWCBVP
+      WCVJVPVJVKVL $.
   $}
 
 
@@ -159069,6 +159835,12 @@ htmldef ".*" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&lowast;</SPAN> ';
   latexdef ".*" as "\ast";
+htmldef ".o." as
+    " <IMG SRC='circ.gif' WIDTH=4 HEIGHT=19 ALT=' .o.' TITLE='.o.'> ";
+  althtmldef ".o." as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&#x26AC;</SPAN> ';
+  latexdef ".o." as "\circ";
 htmldef ".x." as
     " <IMG SRC='_.cdot.gif' WIDTH=4 HEIGHT=19 ALT=' .x.' TITLE='.x.'> ";
   althtmldef ".x." as
@@ -160163,6 +160935,16 @@ htmldef "gsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
     "ALT=' gsum' TITLE='gsum'><sub><i>g</i></sub> ";
   althtmldef "gsum" as " &Sigma;<sub><i>g</i></sub> ";
   latexdef "gsum" as "\sum_g";
+htmldef "Mgm" as 'Mgm';
+  althtmldef "Mgm" as 'Mgm';
+  latexdef "Mgm" as "\mathrm{Mgm}";
+htmldef "Smgrp" as 'Smgrp';
+  althtmldef "Smgrp" as 'Smgrp';
+  latexdef "Smgrp" as "\mathrm{Smgrp}";
+htmldef "+f" as "<IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'>" +
+    "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT='f' TITLE='f'>";
+  althtmldef "+f" as '+<SUB>&#x1D453;</SUB>';
+  latexdef "+f" as "+_f";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
@@ -160535,8 +161317,9 @@ $)
     bj-stand.1 $e |- ( ph -> STAB ps ) $.
     bj-stand.2 $e |- ( ph -> STAB ch ) $.
     $( The conjunction of two stable formulas is stable.  Deduction form of
-       ~ bj-stan .  Its proof is shorter, so one could prove it first and then
-       ~ bj-stan from it, the usual way.  (Contributed by BJ, 24-Nov-2023.)
+       ~ bj-stan .  Its proof is shorter (when counting all steps, including
+       syntactic steps), so one could prove it first and then ~ bj-stan from
+       it, the usual way.  (Contributed by BJ, 24-Nov-2023.)
        (Proof modification is discouraged.) $)
     bj-stand $p |- ( ph -> STAB ( ps /\ ch ) ) $=
       ( wa wn wi wstab bj-nnan df-stab sylib anim12d syl5 sylibr ) ABCFZGGZPHPI
@@ -160555,6 +161338,11 @@ $)
   bj-pm2.18st $p |- ( STAB ph -> ( ( -. ph -> ph ) -> ph ) ) $=
     ( wstab wn wi df-stab bj-nnclavius imim1i sylbi ) ABACZCZADIADZADAEKJAAFGH
     $.
+
+  $( Contraposition when the antecedent is a negated stable proposition.  See
+     ~ con1dc .  (Contributed by BJ, 11-Nov-2024.) $)
+  bj-con1st $p |- ( STAB ph -> ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) ) $=
+    ( wn wi wstab con3 df-stab biimpi syl9r ) ACZBDBCJCZAEZAJBFLKADAGHI $.
 
 
 $(

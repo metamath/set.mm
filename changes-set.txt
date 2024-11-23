@@ -94,8 +94,17 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Nov-24 csbcog    [same]      moved from RP's mathbox to main set.mm
+18-Nov-24 csbwrecsg [same]      moved from ML's mathbox to main set.mm
+18-Nov-24 csbpredg  [same]      moved from ML's mathbox to main set.mm
+18-Nov-24 csbdif    [same]      moved from ML's mathbox to main set.mm
+18-Nov-24 df-wrecs  dfwrecsOLD  obsoleted
+18-Nov-24 dfwrecs2  df-wrecs    moved from BJ's mathbox to main set.mm and
+                                made the main definition
+16-Nov-24 rspcdvinvd rspcdv2    moved from SP's mathbox to main set.mm
 15-Nov-24 baseltedgf basendxltedgfndx 
 12-Nov-24 sseldi    sselid      compare to sselii or sseldd
+11-Nov-24 mpteq12da [same]      moved from GS's mathbox to main set.mm
  9-Nov-24 eqsb3     eqsb1
  9-Nov-24 eqsbc3    eqsbc1
  9-Nov-24 eqsbc3r   eqsbc2
