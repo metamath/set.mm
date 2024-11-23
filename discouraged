@@ -17882,7 +17882,6 @@ New usage of "negexsr" is discouraged (0 uses).
 New usage of "nelbOLD" is discouraged (0 uses).
 New usage of "nelbOLDOLD" is discouraged (0 uses).
 New usage of "neq0OLD" is discouraged (0 uses).
-New usage of "nf5rOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
 New usage of "nfaba1g" is discouraged (0 uses).
 New usage of "nfabd" is discouraged (5 uses).
@@ -17931,6 +17930,7 @@ New usage of "nfra2" is discouraged (1 uses).
 New usage of "nfra2wOLD" is discouraged (0 uses).
 New usage of "nfra2wOLDOLD" is discouraged (0 uses).
 New usage of "nfrab" is discouraged (2 uses).
+New usage of "nfrabwOLD" is discouraged (0 uses).
 New usage of "nfral" is discouraged (5 uses).
 New usage of "nfrald" is discouraged (2 uses).
 New usage of "nfraldwOLD" is discouraged (0 uses).
@@ -20818,7 +20818,6 @@ Proof modification of "necon3aiOLD" is discouraged (16 steps).
 Proof modification of "nelbOLD" is discouraged (46 steps).
 Proof modification of "nelbOLDOLD" is discouraged (81 steps).
 Proof modification of "neq0OLD" is discouraged (6 steps).
-Proof modification of "nf5rOLD" is discouraged (22 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfabdwOLD" is discouraged (152 steps).
 Proof modification of "nfceqdfOLD" is discouraged (48 steps).
@@ -20834,6 +20833,7 @@ Proof modification of "nfnbiOLD" is discouraged (46 steps).
 Proof modification of "nfopdALT" is discouraged (70 steps).
 Proof modification of "nfra2wOLD" is discouraged (88 steps).
 Proof modification of "nfra2wOLDOLD" is discouraged (15 steps).
+Proof modification of "nfrabwOLD" is discouraged (50 steps).
 Proof modification of "nfraldwOLD" is discouraged (41 steps).
 Proof modification of "nfreuwOLD" is discouraged (56 steps).
 Proof modification of "nfrmowOLD" is discouraged (55 steps).
