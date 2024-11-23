@@ -18731,6 +18731,7 @@ New usage of "reclem3pr" is discouraged (1 uses).
 New usage of "reclem4pr" is discouraged (1 uses).
 New usage of "recmulnq" is discouraged (3 uses).
 New usage of "recrecnq" is discouraged (1 uses).
+New usage of "recvsOLD" is discouraged (0 uses).
 New usage of "reexALT" is discouraged (1 uses).
 New usage of "reglog1" is discouraged (1 uses).
 New usage of "reglogbas" is discouraged (2 uses).
@@ -21047,6 +21048,7 @@ Proof modification of "re1tbw4" is discouraged (88 steps).
 Proof modification of "re2luk1" is discouraged (198 steps).
 Proof modification of "re2luk2" is discouraged (88 steps).
 Proof modification of "re2luk3" is discouraged (59 steps).
+Proof modification of "recvsOLD" is discouraged (111 steps).
 Proof modification of "reexALT" is discouraged (19 steps).
 Proof modification of "refsymrels3" is discouraged (56 steps).
 Proof modification of "reldisjOLD" is discouraged (86 steps).
