@@ -46663,6 +46663,20 @@ $)
     UCUDUE $.
 
   ${
+    $d A x z $.  $d A w $.  $d V z $.  $d ph z $.  $d ps x z $.  $d w z $.
+    iotam.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Representation of "the unique element such that ` ph ` " with a class
+       expression ` A ` which is inhabited (that means that "the unique element
+       such that ` ph ` " exists).  (Contributed by AV, 30-Jan-2024.) $)
+    iotam $p |- ( ( A e. V /\ E. w w e. A /\ A = ( iota x ph ) ) -> ps ) $=
+      ( vz cv wcel wex cio wceq wa wi eleq1w cbvexv simprr eqcomd weu wb simprl
+      simpl eleqtrd eliotaeu syl iota2 syl2anc mpbird ex exlimiv 3impib 3com12
+      sylbi ) DIEJZDKZEFJZEACLZMZBUPUQUSBUPHIZEJZHKUQUSNZBOZUOVADHDHEPQVAVCHVAV
+      BBVAVBNZBUREMZVDEURVAUQUSRZSVDUQACTZBVEUAVAUQUSUBVDUTURJVGVDUTEURVAVBUCVF
+      UDACUTUEUFABCEFGUGUHUIUJUKUNULUM $.
+  $}
+
+  ${
     $d A y z $.  $d x y z $.  $d ph z $.
     $( Class substitution within a description binder.  (Contributed by Scott
        Fenton, 6-Oct-2017.) $)
