@@ -144065,6 +144065,23 @@ $)
       VLVMVNVOWCWAUAGBCDWCVPWAVPVQVR $.
   $}
 
+  ${
+    $d x y z B $.  $d x y z G $.  $d x y z .+^ $.
+    mndpf.b $e |- B = ( Base ` G ) $.
+    mndpf.p $e |- .+^ = ( +f ` G ) $.
+    $( The addition operation of a monoid as a function is an onto function.
+       (Contributed by FL, 2-Nov-2009.)  (Revised by Mario Carneiro,
+       11-Oct-2013.)  (Revised by AV, 23-Jan-2020.) $)
+    mndpfo $p |- ( G e. Mnd -> .+^ : ( B X. B ) -onto-> B ) $=
+      ( vx vy vz cmnd wcel cv co wceq wrex wa cfv eqid adantr wb rexbidva simpr
+      cxp wf wral wfo mndplusf cplusg c0g mndidcl mndrid eqcomd rspceov syl3anc
+      w3a plusfvalg eqeq2d 3expa mpbird ralrimiva foov sylanbrc ) CIJZAAUBZABUC
+      FKZGKZHKZBLZMZHANZGANZFAUDVCABUEABCDEUFVBVJFAVBVDAJZOZVJVDVEVFCUGPZLZMZHA
+      NZGANZVLVKCUHPZAJZVDVDVRVMLZMVQVBVKUAVBVSVKACVRDVRQZUIRVLVTVDAVMCVDVRDVMQ
+      ZWAUJUKGHAAVDVRVDVMULUMVBVJVQSVKVBVIVPGAVBVEAJZOVHVOHAVBWCVFAJZVHVOSVBWCW
+      DUNVGVNVDAVMBCIVEVFDWBEUOUPUQTTRURUSGHFAAABUTVA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
