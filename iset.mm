@@ -144095,6 +144095,60 @@ $)
       BUIQUHUJRUGUIBABUICFDEUKSTUEABUIUAUBUC $.
   $}
 
+  ${
+    $d s u v w x y B $.  $d s u v w x y K $.  $d s u v w x y ph $.
+    $d s u v w x y L $.
+    mndpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    mndpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    mndpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    $( If two structures have the same base set, and the values of their group
+       (addition) operations are equal for all pairs of elements of the base
+       set, one is a monoid iff the other one is.  (Contributed by Mario
+       Carneiro, 6-Jan-2015.) $)
+    mndpropd $p |- ( ph -> ( K e. Mnd <-> L e. Mnd ) ) $=
+      ( vu vv vw vs cv co wcel wral wa wceq oveqrspc2v cplusg cfv simplr simprl
+      cmnd cbs ad2antrr eleqtrd simprr eqid syl3anc eleqtrrd ralrimivva adantlr
+      mndcl ex 3eltr4d wb wrex eleq1d simplll simplrl simplrr ovrspc2v syl21anc
+      simpllr simpr syl12anc oveq1d eqtrd oveq2d eqeq12d ralbidva adantr eleq2d
+      anbi12d 2ralbidva raleqdv raleqbidv 3bitr3d eqeq1d rexbidva ismnd 3bitr4g
+      rexeqbidv pm5.21ndd ) ABNZCNZEUAUBZOZDPZCDQBDQZEUEPZFUEPZAWMWLAWMRZWKBCDD
+      WOWGDPZWHDPZRZRZWJEUFUBZDWSWMWGWTPWHWTPWJWTPAWMWRUCWSWGDWTWOWPWQUDADWTSZW
+      MWRGUGZUHWSWHDWTWOWPWQUIXBUHWTWIEWGWHWTUJZWIUJZUOUKXBULUMUPAWNWLAWNRZWKBC
+      DDXEWRRZWGWHFUAUBZOZFUFUBZWJDXFWNWGXIPWHXIPXHXIPAWNWRUCXFWGDXIXEWPWQUDADX
+      ISZWNWRHUGZUHXFWHDXIXEWPWQUIXKUHXIXGFWGWHXIUJZXGUJZUOUKAWRWJXHSWNIUNXKUQU
+      MUPAWLWMWNURAWLRZJNZKNZWIOZWTPZXQLNZWIOZXOXPXSWIOZWIOZSZLWTQZRZKWTQZJWTQZ
+      MNZXOWIOZXOSZXOYHWIOZXOSZRZJWTQZMWTUSZRXOXPXGOZXIPZYPXSXGOZXOXPXSXGOZXGOZ
+      SZLXIQZRZKXIQZJXIQZYHXOXGOZXOSZXOYHXGOZXOSZRZJXIQZMXIUSZRWMWNXNYGUUEYOUUL
+      XNXQDPZYCLDQZRZKDQZJDQYPDPZUUALDQZRZKDQZJDQYGUUEXNUUOUUSJKDDXNXODPZXPDPZR
+      ZRZUUMUUQUUNUURUVDXQYPDAUVCXQYPSZWLABCDDWIXGXOXPITZUNUTUVDYCUUALDUVDXSDPZ
+      RZXTYRYBYTUVHXTXQXSXGOZYRUVHAUUMUVGXTUVISAWLUVCUVGVAZUVHUVAUVBWLUUMXNUVAU
+      VBUVGVBZXNUVAUVBUVGVCZAWLUVCUVGVFZBCDDDWIXOXPVDVEUVDUVGVGZABCDDWIXGXQXSIT
+      VHUVHXQYPXSXGUVHAUVAUVBUVEUVJUVKUVLUVFVHVIVJUVHYBXOYAXGOZYTUVHAUVAYADPZYB
+      UVOSUVJUVKUVHUVBUVGWLUVPUVLUVNUVMBCDDDWIXPXSVDVEABCDDWIXGXOYAITVHUVHYAYSX
+      OXGUVHAUVBUVGYAYSSUVJUVLUVNABCDDWIXGXPXSITVHVKVJVLVMVPVQXNUUPYFJDWTAXAWLG
+      VNZXNUUOYEKDWTUVQXNUUMXRUUNYDXNDWTXQUVQVOXNYCLDWTUVQVRVPVSVSXNUUTUUDJDXIA
+      XJWLHVNZXNUUSUUCKDXIUVRXNUUQYQUURUUBXNDXIYPUVRVOXNUUALDXIUVRVRVPVSVSVTXNY
+      MJDQZMDUSUUJJDQZMDUSYOUULXNUVSUVTMDXNYHDPZRZYMUUJJDUWBUVARZYJUUGYLUUIUWCY
+      IUUFXOUWCAUWAUVAYIUUFSAWLUWAUVAVAZXNUWAUVAUCZUWBUVAVGZABCDDWIXGYHXOITVHWA
+      UWCYKUUHXOUWCAUVAUWAYKUUHSUWDUWFUWEABCDDWIXGXOYHITVHWAVPVMWBXNUVSYNMDWTUV
+      QXNYMJDWTUVQVRWEXNUVTUUKMDXIUVRXNUUJJDXIUVRVRWEVTVPWTWIMEJKLXCXDWCXIXGMFJ
+      KLXLXMWCWDUPWF $.
+  $}
+
+  ${
+    $d x y K $.  $d x y L $.
+    mndprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    mndprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    $( If two structures have the same group components (properties), one is a
+       monoid iff the other one is.  (Contributed by Mario Carneiro,
+       11-Oct-2013.) $)
+    mndprop $p |- ( K e. Mnd <-> L e. Mnd ) $=
+      ( vx vy cmnd wcel wb wtru cbs cfv eqidd wceq a1i cv cplusg co wa oveqi
+      mndpropd mptru ) AGHBGHIJEFAKLZABJUCMUCBKLNJCOEPZFPZAQLZRUDUEBQLZRNJUDUCH
+      UEUCHSSUFUGUDUEDTOUAUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
