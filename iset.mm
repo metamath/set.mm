@@ -144037,6 +144037,34 @@ $)
       ( cmnd wcel wa co wceq mndlrid simprd ) CIJDAJKEDBLDMDEBLDMABCDEFGHNO $.
   $}
 
+  ${
+    $d x y z B $.  $d u x y z G $.  $d x y z ph $.  $d u x .0. $.
+    ismndd.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    ismndd.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    ismndd.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
+    ismndd.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                   ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+    ismndd.z $e |- ( ph -> .0. e. B ) $.
+    ismndd.i $e |- ( ( ph /\ x e. B ) -> ( .0. .+ x ) = x ) $.
+    ismndd.j $e |- ( ( ph /\ x e. B ) -> ( x .+ .0. ) = x ) $.
+    $( Deduce a monoid from its properties.  (Contributed by Mario Carneiro,
+       6-Jan-2015.) $)
+    ismndd $p |- ( ph -> G e. Mnd ) $=
+      ( co wcel wceq wral wa vu cplusg cfv cbs wrex cmnd simpll simplrl simplrr
+      cv 3expb simpr syl13anc ralrimiva ralrimivva oveqd eleq12d eqidd oveq123d
+      jca eqeq12d raleqbidv anbi12d eleqtrd eleq2d biimpar adantr eqtr3d syldan
+      mpbid oveq1 eqeq1d ovanraleqv rspcev syl2anc eqid ismnd sylanbrc ) ABUJZC
+      UJZGUBUCZPZGUDUCZQZWBDUJZWAPZVSVTWEWAPZWAPZRZDWCSZTZCWCSZBWCSZUAUJZVSWAPZ
+      VSRZVSWNWAPVSRTBWCSZUAWCUEZGUFQAVSVTFPZEQZWSWEFPZVSVTWEFPZFPZRZDESZTZCESZ
+      BESWMAXFBCEEAVSEQZVTEQZTZTZWTXEAXHXIWTKUKXKXDDEXKWEEQZTAXHXIXLXDAXJXLUGAX
+      HXIXLUHAXHXIXLUIXKXLULLUMUNUTUOAXGWLBEWCIAXFWKCEWCIAWTWDXEWJAWSWBEWCAFWAV
+      SVTJUPZIUQAXDWIDEWCIAXAWFXCWHAWSWBWEWEFWAJXMAWEURUSAVSVSXBWGFWAJAVSURAFWA
+      VTWEJUPUSVAVBVCVBVBVJAHWCQHVSWAPZVSRZVSHWAPZVSRZTZBWCSZWRAHEWCMIVDAXRBWCA
+      VSWCQZXHXRAXHXTAEWCVSIVEVFAXHTZXOXQYAHVSFPXNVSYAFWAHVSAFWARXHJVGZUPNVHYAV
+      SHFPXPVSYAFWAVSHYBUPOVHUTVIUNWQXSUAHWCWPXOBVSWNVSWAWCHWNHRWOXNVSWNHVSWAVK
+      VLVMVNVOWCWAUAGBCDWCVPWAVPVQVR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
