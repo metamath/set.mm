@@ -143994,6 +143994,18 @@ $)
       ( cmnd wcel c0g cfv eqid mndidcl ne0d ) BDEABFGZABKCKHIJ $.
   $}
 
+  ${
+    hashfinmndnn.1 $e |- B = ( Base ` G ) $.
+    hashfinmndnn.2 $e |- ( ph -> G e. Mnd ) $.
+    hashfinmndnn.3 $e |- ( ph -> B e. Fin ) $.
+    $( A finite monoid has positive integer size.  (Contributed by Rohan
+       Ridenour, 3-Aug-2023.) $)
+    hashfinmndnn $p |- ( ph -> ( # ` B ) e. NN ) $=
+      ( chash cfv cn0 wcel cc0 wne cn cfn hashcl syl c0g cmnd eqid mndidcl
+      fihashelne0d neqned elnnne0 sylanbrc ) ABGHZIJZUEKLUEMJABNJUFFBOPAUEKABCQ
+      HZACRJUGBJEBCUGDUGSTPFUAUBUEUCUD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
