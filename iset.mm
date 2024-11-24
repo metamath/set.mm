@@ -143924,6 +143924,32 @@ $)
       ( cmnd wcel cv co wceq wa wral wrex wrmo wreu mndid mgmidmo reu5
       sylanblrc ) EHIBJZAJZDKUCLUCUBDKUCLMACNZBCOUDBCPUDBCQABCDEFGRABCDSUDBCTUA
       $.
+
+    mnd4g.1 $e |- ( ph -> G e. Mnd ) $.
+    mnd4g.2 $e |- ( ph -> X e. B ) $.
+    mnd4g.3 $e |- ( ph -> Y e. B ) $.
+    mnd4g.4 $e |- ( ph -> Z e. B ) $.
+    ${
+      mnd32g.5 $e |- ( ph -> ( Y .+ Z ) = ( Z .+ Y ) ) $.
+      $( Commutative/associative law for monoids, with an explicit
+         commutativity hypothesis.  (Contributed by Mario Carneiro,
+         21-Apr-2016.) $)
+      mnd32g $p |- ( ph -> ( ( X .+ Y ) .+ Z ) = ( ( X .+ Z ) .+ Y ) ) $=
+        ( co oveq2d wcel wceq mndass syl13anc cmnd 3eqtr4d ) AEFGCOZCOZEGFCOZCO
+        ZEFCOGCOZEGCOFCOZAUCUEECNPADUAQZEBQZFBQZGBQZUGUDRJKLMBCDEFGHISTAUIUJULU
+        KUHUFRJKMLBCDEGFHISTUB $.
+    $}
+
+    ${
+      mnd12g.5 $e |- ( ph -> ( X .+ Y ) = ( Y .+ X ) ) $.
+      $( Commutative/associative law for monoids, with an explicit
+         commutativity hypothesis.  (Contributed by Mario Carneiro,
+         21-Apr-2016.) $)
+      mnd12g $p |- ( ph -> ( X .+ ( Y .+ Z ) ) = ( Y .+ ( X .+ Z ) ) ) $=
+        ( co oveq1d wcel wceq mndass syl13anc cmnd 3eqtr3d ) AEFCOZGCOZFECOZGCO
+        ZEFGCOCOZFEGCOCOZAUCUEGCNPADUAQZEBQZFBQZGBQZUDUGRJKLMBCDEFGHISTAUIUKUJU
+        LUFUHRJLKMBCDFEGHISTUB $.
+    $}
   $}
 
 
