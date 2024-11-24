@@ -144015,6 +144015,28 @@ $)
       ( cmnd wcel cmgm cxp wf mndmgm mgmplusf syl ) CFGCHGAAIABJCKABCDELM $.
   $}
 
+  ${
+    $d x y B $.  $d x y G $.  $d x y .0. $.  $d x y .+ $.  $d x X $.
+    mndlrid.b $e |- B = ( Base ` G ) $.
+    mndlrid.p $e |- .+ = ( +g ` G ) $.
+    mndlrid.o $e |- .0. = ( 0g ` G ) $.
+    $( A monoid's identity element is a two-sided identity.  (Contributed by
+       NM, 18-Aug-2011.) $)
+    mndlrid $p |- ( ( G e. Mnd /\ X e. B ) -> ( ( .0. .+ X ) = X /\
+         ( X .+ .0. ) = X ) ) $=
+      ( vx vy cmnd wcel mndid mgmlrid ) CKLIABJCDEFHGIJABCFGMN $.
+
+    $( The identity element of a monoid is a left identity.  (Contributed by
+       NM, 18-Aug-2011.) $)
+    mndlid $p |- ( ( G e. Mnd /\ X e. B ) -> ( .0. .+ X ) = X ) $=
+      ( cmnd wcel wa co wceq mndlrid simpld ) CIJDAJKEDBLDMDEBLDMABCDEFGHNO $.
+
+    $( The identity element of a monoid is a right identity.  (Contributed by
+       NM, 18-Aug-2011.) $)
+    mndrid $p |- ( ( G e. Mnd /\ X e. B ) -> ( X .+ .0. ) = X ) $=
+      ( cmnd wcel wa co wceq mndlrid simprd ) CIJDAJKEDBLDMDEBLDMABCDEFGHNO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
