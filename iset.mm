@@ -143890,6 +143890,26 @@ $)
   mndmgm $p |- ( M e. Mnd -> M e. Mgm ) $=
     ( cmnd wcel csgrp cmgm mndsgrp sgrpmgm syl ) ABCADCAECAFAGH $.
 
+  ${
+    $d x y z B $.  $d x y z G $.  $d x y z X $.  $d y z Y $.  $d z Z $.
+    $d x y z .+ $.
+    mndcl.b $e |- B = ( Base ` G ) $.
+    mndcl.p $e |- .+ = ( +g ` G ) $.
+    $( Closure of the operation of a monoid.  (Contributed by NM, 14-Aug-2011.)
+       (Revised by Mario Carneiro, 6-Jan-2015.)  (Proof shortened by AV,
+       8-Feb-2020.) $)
+    mndcl $p |- ( ( G e. Mnd /\ X e. B /\ Y e. B ) -> ( X .+ Y ) e. B ) $=
+      ( cmnd wcel cmgm co mndmgm mgmcl syl3an1 ) CHICJIDAIEAIDEBKAICLACDEBFGMN
+      $.
+
+    $( A monoid operation is associative.  (Contributed by NM, 14-Aug-2011.)
+       (Proof shortened by AV, 8-Feb-2020.) $)
+    mndass $p |- ( ( G e. Mnd /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+              ( ( X .+ Y ) .+ Z ) = ( X .+ ( Y .+ Z ) ) ) $=
+      ( cmnd wcel csgrp w3a co wceq mndsgrp sgrpass sylan ) CIJCKJDAJEAJFAJLDEB
+      MFBMDEFBMBMNCOACDEBFGHPQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
