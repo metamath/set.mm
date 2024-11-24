@@ -143853,6 +143853,29 @@ $)
       UHUIEFGADTBHIUJUKULUM $.
   $}
 
+  ${
+    $d B e x y $.  $d B w $.  $d G e x y $.  $d G w $.  $d .0. x y $.
+    $d .0. w $.  $d w e x $.
+    sgrpidmnd.b $e |- B = ( Base ` G ) $.
+    sgrpidmnd.0 $e |- .0. = ( 0g ` G ) $.
+    $( A semigroup with an identity element which is inhabited is a monoid.  Of
+       course there could be monoids with the empty set as identity element,
+       but these cannot be proven to be monoids with this theorem.
+       (Contributed by AV, 29-Jan-2024.) $)
+    sgrpidmndm $p |- ( ( G e. Smgrp /\ E. e e. B ( E. w w e. e /\ e = .0. ) )
+                       -> G e. Mnd ) $=
+      ( vx vy csgrp wcel cv wex wceq wa wrex cplusg co wral wi cfv cmnd cio w3a
+      simp-4r simpllr 19.8ad simplr wb eqid grpidvalg eqeq2d ad4antr mpbid 3jca
+      simpr eleq1w oveq1 eqeq1d ovanraleqv anbi12d iotam rsp simpl2im ralrimiva
+      sylc exp31 exlimdv impd reximdva imdistani ismnddef sylibr ) DJKZALCLZKZA
+      MZVOENZOZCBPZOVNVOHLZDQUAZRZWANZWAVOWBRWANOZHBSZCBPZODUBKVNVTWGVNVSWFCBVN
+      VOBKZOZVQVRWFWIVPVRWFTAWIVPVRWFWIVPOZVROZWEHBWKWABKZOZWHVQVOILZBKZWNWAWBR
+      ZWANZWAWNWBRWANOHBSZOZIUCZNZUDZWLWEWMWHVQXAVNWHVPVRWLUEWMVPAWIVPVRWLUFUGW
+      MVRXAWJVRWLUHVNVRXAUIWHVPVRWLVNEWTVOHBWBIDJEFWBUJZGUKULUMUNUOWKWLUPXBWHWF
+      WLWETWSWHWFOIAVOBWNVONZWOWHWRWFICBUQWQWDHWAWNWAWBBVOXDWPWCWAWNVOWAWBURUSU
+      TVAVBWEHBVCVDVFVEVGVHVIVJVKBWBCDHFXCVLVM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
