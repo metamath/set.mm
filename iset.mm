@@ -144006,6 +144006,15 @@ $)
       HZACRJUGBJEBCUGDUGSTPFUAUBUEUCUD $.
   $}
 
+  ${
+    mndplusf.1 $e |- B = ( Base ` G ) $.
+    mndplusf.2 $e |- .+^ = ( +f ` G ) $.
+    $( The group addition operation is a function.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.)  (Proof shortened by AV, 3-Feb-2020.) $)
+    mndplusf $p |- ( G e. Mnd -> .+^ : ( B X. B ) --> B ) $=
+      ( cmnd wcel cmgm cxp wf mndmgm mgmplusf syl ) CFGCHGAAIABJCKABCDELM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
