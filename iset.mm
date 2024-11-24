@@ -111876,6 +111876,16 @@ $)
     ( c0 chash cfv cc0 wceq eqid cfn wcel wb 0fin fihasheq0 ax-mp mpbir ) ABCDE
     ZAAEZAFAGHNOIJAKLM $.
 
+  ${
+    hashelne0d.1 $e |- ( ph -> B e. A ) $.
+    hashelne0d.2 $e |- ( ph -> A e. Fin ) $.
+    $( A finite set with an element has nonzero size.  (Contributed by Rohan
+       Ridenour, 3-Aug-2023.) $)
+    fihashelne0d $p |- ( ph -> -. ( # ` A ) = 0 ) $=
+      ( chash cfv cc0 wceq c0 ne0d neneqd cfn wcel wb fihasheq0 syl mtbird ) AB
+      FGHIZBJIZABJABCDKLABMNSTOEBPQR $.
+  $}
+
   $( The size of a singleton.  (Contributed by Paul Chapman, 26-Oct-2012.)
      (Proof shortened by Mario Carneiro, 13-Feb-2013.) $)
   hashsng $p |- ( A e. V -> ( # ` { A } ) = 1 ) $=
