@@ -144149,6 +144149,28 @@ $)
       UEUCHSSUFUGUDUEDTOUAUB $.
   $}
 
+  ${
+    $d A v w $.  $d B v w $.  $d .0. v w $.  $d .+ v w $.  $d ph v w $.
+    mndinvmod.b $e |- B = ( Base ` G ) $.
+    mndinvmod.0 $e |- .0. = ( 0g ` G ) $.
+    mndinvmod.p $e |- .+ = ( +g ` G ) $.
+    mndinvmod.m $e |- ( ph -> G e. Mnd ) $.
+    mndinvmod.a $e |- ( ph -> A e. B ) $.
+    $( Uniqueness of an inverse element in a monoid, if it exists.
+       (Contributed by AV, 20-Jan-2024.) $)
+    mndinvmod $p |- ( ph -> E* w e. B
+                         ( ( w .+ A ) = .0. /\ ( A .+ w ) = .0. ) ) $=
+      ( vv cv co wceq wa wcel adantr adantl weq wi wral wrmo cmnd mndrid syl2an
+      simpl eqcomd oveq2 eqcoms simpr w3a mndass oveq1 mndlid 3eqtrd ralrimivva
+      syl13anc ex eqeq1d anbi12d rmo4 sylibr ) ABNZCEOZGPZCVEEOZGPZQZMNZCEOZGPZ
+      CVKEOZGPZQZQZBMUAZUBZMDUCBDUCVJBDUDAVSBMDDAVEDRZVKDRZQZQZVQVRWCVQQZVEVEGE
+      OZVEVNEOZVKWCVEWEPVQWCWEVEAFUERZVTWEVEPWBKVTWAUHZDEFVEGHJIUFUGUISVQWEWFPZ
+      WCVPWIVJVOWIVMWIGVNGVNVEEUJUKTTTWDWFVFVKEOZGVKEOZVKWCWFWJPZVQWCWGVTCDRZWA
+      WLAWGWBKSWBVTAWHTAWMWBLSWBWAAVTWAULZTWGVTWMWAUMQWJWFDEFVECVKHJUNUIUSSVQWJ
+      WKPZWCVJWOVPVGWOVIVFGVKEUOSSTWCWKVKPZVQAWGWAWPWBKWNDEFVKGHJIUPUGSUQUQUTUR
+      VJVPBMDVRVGVMVIVOVRVFVLGVEVKCEUOVAVRVHVNGVEVKCEUJVAVBVCVD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
