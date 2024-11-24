@@ -143908,6 +143908,22 @@ $)
               ( ( X .+ Y ) .+ Z ) = ( X .+ ( Y .+ Z ) ) ) $=
       ( cmnd wcel csgrp w3a co wceq mndsgrp sgrpass sylan ) CIJCKJDAJEAJFAJLDEB
       MFBMDEFBMBMNCOACDEBFGHPQ $.
+
+    $d u x y z B $.  $d u G $.  $d u .+ $.
+    $( A monoid has a two-sided identity element.  (Contributed by NM,
+       16-Aug-2011.) $)
+    mndid $p |- ( G e. Mnd ->
+         E. u e. B A. x e. B ( ( u .+ x ) = x /\ ( x .+ u ) = x ) ) $=
+      ( vy vz cmnd wcel cv co wceq wral wa wrex ismnd simprbi ) EJKALZHLZDMZCKU
+      BILZDMTUAUCDMDMNICOPHCOACOBLZTDMTNTUDDMTNPACOBCQCDBEAHIFGRS $.
+
+    $( The two-sided identity element of a monoid is unique.  Lemma 2.2.1(a) of
+       [Herstein] p. 55.  (Contributed by Mario Carneiro, 8-Dec-2014.) $)
+    mndideu $p |- ( G e. Mnd ->
+      E! u e. B A. x e. B ( ( u .+ x ) = x /\ ( x .+ u ) = x ) ) $=
+      ( cmnd wcel cv co wceq wa wral wrex wrmo wreu mndid mgmidmo reu5
+      sylanblrc ) EHIBJZAJZDKUCLUCUBDKUCLMACNZBCOUDBCPUDBCQABCDEFGRABCDSUDBCTUA
+      $.
   $}
 
 
