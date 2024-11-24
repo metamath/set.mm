@@ -143876,6 +143876,20 @@ $)
       TVAVBWEHBVCVDVFVEVGVHVIVJVKBWBCDHFXCVLVM $.
   $}
 
+  ${
+    $d G e x $.
+    $( A monoid is a semigroup.  (Contributed by FL, 2-Nov-2009.)  (Revised by
+       AV, 6-Jan-2020.)  (Proof shortened by AV, 6-Feb-2020.) $)
+    mndsgrp $p |- ( G e. Mnd -> G e. Smgrp ) $=
+      ( ve vx cmnd wcel csgrp cv cplusg cfv co wceq cbs wral wrex eqid ismnddef
+      wa simplbi ) ADEAFEBGZCGZAHIZJTKTSUAJTKQCALIZMBUBNUBUABACUBOUAOPR $.
+  $}
+
+  $( A monoid is a magma.  (Contributed by FL, 2-Nov-2009.)  (Revised by AV,
+     6-Jan-2020.)  (Proof shortened by AV, 6-Feb-2020.) $)
+  mndmgm $p |- ( M e. Mnd -> M e. Mgm ) $=
+    ( cmnd wcel csgrp cmgm mndsgrp sgrpmgm syl ) ABCADCAECAFAGH $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
