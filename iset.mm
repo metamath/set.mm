@@ -143950,6 +143950,18 @@ $)
         ZEFGCOCOZFEGCOCOZAUCUEGCNPADUAQZEBQZFBQZGBQZUDUGRJKLMBCDEFGHISTAUIUKUJU
         LUFUHRJLKMBCDFEGHISTUB $.
     $}
+
+    mnd4g.5 $e |- ( ph -> W e. B ) $.
+    mnd4g.6 $e |- ( ph -> ( Y .+ Z ) = ( Z .+ Y ) ) $.
+    $( Commutative/associative law for commutative monoids, with an explicit
+       commutativity hypothesis.  (Contributed by Mario Carneiro,
+       21-Apr-2016.) $)
+    mnd4g $p |- ( ph ->
+      ( ( X .+ Y ) .+ ( Z .+ W ) ) = ( ( X .+ Z ) .+ ( Y .+ W ) ) ) $=
+      ( co wcel wceq mndcl mnd12g oveq2d cmnd syl3anc mndass syl13anc 3eqtr4d )
+      AFGHECQZCQZCQZFHGECQZCQZCQZFGCQUHCQZFHCQUKCQZAUIULFCABCDGHEIJKMNOPUAUBADU
+      CRZFBRZGBRZUHBRZUNUJSKLMAUPHBRZEBRZUSKNOBCDHEIJTUDBCDFGUHIJUEUFAUPUQUTUKB
+      RZUOUMSKLNAUPURVAVBKMOBCDGEIJTUDBCDFHUKIJUEUFUG $.
   $}
 
 
