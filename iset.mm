@@ -144082,6 +144082,19 @@ $)
       DUNVGVNVDAVMBCIVEVFDWBEUOUPUQTTRURUSGHFAAABUTVA $.
   $}
 
+  ${
+    mndfo.b $e |- B = ( Base ` G ) $.
+    mndfo.p $e |- .+ = ( +g ` G ) $.
+    $( The addition operation of a monoid is an onto function (assuming it is a
+       function).  (Contributed by Mario Carneiro, 11-Oct-2013.)  (Proof
+       shortened by AV, 23-Jan-2020.) $)
+    mndfo $p |- ( ( G e. Mnd /\ .+ Fn ( B X. B ) ) ->
+      .+ : ( B X. B ) -onto-> B ) $=
+      ( cmnd wcel cxp wfn wa wfo cplusf cfv eqid mndpfo adantr wceq wb plusfeqg
+      eqcomd foeq1 syl mpbird ) CFGZBAAHZIZJZUEABKZUEACLMZKZUDUJUFAUICDUINZOPUG
+      BUIQUHUJRUGUIBABUICFDEUKSTUEABUIUAUBUC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
