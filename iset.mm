@@ -143964,6 +143964,26 @@ $)
       RZUOUMSKLNAUPURVAVBKMOBCDGEIJTUDBCDFHUKIJUEUFUG $.
   $}
 
+  ${
+    $d x y B $.  $d x y G $.  $d x y .0. $.
+    mndidcl.b $e |- B = ( Base ` G ) $.
+    mndidcl.o $e |- .0. = ( 0g ` G ) $.
+    $( The identity element of a monoid belongs to the monoid.  (Contributed by
+       NM, 27-Aug-2011.)  (Revised by Mario Carneiro, 27-Dec-2014.) $)
+    mndidcl $p |- ( G e. Mnd -> .0. e. B ) $=
+      ( vy vx cmnd wcel cplusg cfv eqid mndid mgmidcl ) BHIFABJKZGBCDEOLZFGAOBD
+      PMN $.
+  $}
+
+  ${
+    mndbn0.b $e |- B = ( Base ` G ) $.
+    $( The base set of a monoid is not empty.  (It is also inhabited, as seen
+       at ~ mndidcl ).  Statement in [Lang] p. 3.  (Contributed by AV,
+       29-Dec-2023.) $)
+    mndbn0 $p |- ( G e. Mnd -> B =/= (/) ) $=
+      ( cmnd wcel c0g cfv eqid mndidcl ne0d ) BDEABFGZABKCKHIJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
