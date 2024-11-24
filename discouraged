@@ -12837,7 +12837,7 @@
 "sbco" is used by "sbid2".
 "sbco2" is used by "cbvab".
 "sbco2" is used by "clelsb1f".
-"sbco2" is used by "clelsb2".
+"sbco2" is used by "clelsb2OLD".
 "sbco2" is used by "sb7f".
 "sbco2" is used by "sbcco".
 "sbco2" is used by "sbco2d".
@@ -12866,7 +12866,7 @@
 "sbie" is used by "cbvreu".
 "sbie" is used by "cbvreucsf".
 "sbie" is used by "cbvriota".
-"sbie" is used by "clelsb2".
+"sbie" is used by "clelsb2OLD".
 "sbie" is used by "nd1".
 "sbie" is used by "nd2".
 "sbie" is used by "nfcdeq".
@@ -15673,6 +15673,7 @@ New usage of "clelabOLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
 New usage of "clelsb1f" is discouraged (0 uses).
+New usage of "clelsb2OLD" is discouraged (0 uses).
 New usage of "clmgmOLD" is discouraged (1 uses).
 New usage of "cm0" is discouraged (1 uses).
 New usage of "cm2j" is discouraged (1 uses).
@@ -20014,6 +20015,7 @@ Proof modification of "clel4OLD" is discouraged (24 steps).
 Proof modification of "clelabOLD" is discouraged (75 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleljustALT2" is discouraged (25 steps).
+Proof modification of "clelsb2OLD" is discouraged (63 steps).
 Proof modification of "clmgmOLD" is discouraged (50 steps).
 Proof modification of "cnaddabloOLD" is discouraged (65 steps).
 Proof modification of "cnaddcom" is discouraged (71 steps).
