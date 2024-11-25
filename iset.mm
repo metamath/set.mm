@@ -144171,6 +144171,28 @@ $)
       VJVPBMDVRVGVMVIVOVRVFVLGVEVKCEUOVAVRVHVNGVEVKCEUJVAVBVCVD $.
   $}
 
+  ${
+    $d I x y $.  $d M x y $.  $d V x y $.
+    mnd1.m $e |- M = { <. ( Base ` ndx ) , { I } >. ,
+                       <. ( +g ` ndx ) , { <. <. I , I >. , I >. } >. } $.
+    $( The (smallest) structure representing a _trivial monoid_ consists of one
+       element.  (Contributed by AV, 28-Apr-2019.)  (Proof shortened by AV,
+       11-Feb-2020.) $)
+    mnd1 $p |- ( I e. V -> M e. Mnd ) $=
+      ( vx vy wcel cv cfv co wceq wa wral wrex cop csn cvv opexg mpancom eqeq1d
+      csgrp cplusg cbs cmnd sgrp1 df-ov anidms fvsng eqtrid oveq2 eqeq12d oveq1
+      id anbi12d ralsng mpbir2and ovanraleqv rexsng mpbird syl grpbaseg syl2anc
+      snexg grpplusgg oveqd raleqbidv rexeqbidv anbi2d mpbi2and ismnddef sylibr
+      eqid ) ACGZBUAGZEHZFHZBUBIZJZVPKZVPVOVQJZVPKZLZFBUCIZMZEWCNZLZBUDGVMVNVOV
+      PAAOZAOZPZJZVPKZVPVOWIJZVPKZLZFAPZMZEWONZWFABCDUEVMWQAVPWIJZVPKZVPAWIJZVP
+      KZLZFWOMZVMXCAAWIJZAKZXEVMXDWGWIIZAAAWIUFWGQGZVMXFAKVMXGAACCRUGZWGAQCUHSU
+      IZXIXBXEXELFACVPAKZWSXEXAXEXJWRXDVPAVPAAWIUJXJUMZUKXJWTXDVPAVPAAWIULXKUKU
+      NUOUPWPXCEACWKWSFVPVOVPWIWOAVOAKWJWRVPVOAVPWIULTUQURUSVMWQWEVNVMWPWDEWOWC
+      VMWOQGZWIQGZWOWCKACVCZVMWHQGZXMXGVMXOXHWGAQCRSWHQVCUTZWOWIBQQDVAVBZVMWNWB
+      FWOWCXQVMWKVSWMWAVMWJVRVPVMWIVQVOVPVMXLXMWIVQKXNXPWOWIBQQDVDVBZVETVMWLVTV
+      PVMWIVQVPVOXRVETUNVFVGVHVIWCVQEBFWCVLVQVLVJVK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
