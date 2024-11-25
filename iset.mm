@@ -19055,7 +19055,7 @@ $)
     $( An equality transitivity deduction.  (Contributed by NM,
        29-Mar-1998.) $)
     eqtr2id $p |- ( ph -> C = A ) $=
-      ( syl5eq eqcomd ) ABDABCDEFGH $.
+      ( eqtrid eqcomd ) ABDABCDEFGH $.
   $}
 
   ${
@@ -19063,7 +19063,7 @@ $)
     eqtr3id.2 $e |- ( ph -> B = C ) $.
     $( An equality transitivity deduction.  (Contributed by NM, 5-Aug-1993.) $)
     eqtr3id $p |- ( ph -> A = C ) $=
-      ( eqcomi syl5eq ) ABCDCBEGFH $.
+      ( eqcomi eqtrid ) ABCDCBEGFH $.
   $}
 
   ${
@@ -19152,7 +19152,7 @@ $)
     $( A chained equality inference, useful for converting from definitions.
        (Contributed by Mario Carneiro, 6-Nov-2015.) $)
     3eqtr3a $p |- ( ph -> C = D ) $=
-      ( syl5eq eqtr3d ) ABDEGABCEFHIJ $.
+      ( eqtrid eqtr3d ) ABDEGABCEFHIJ $.
   $}
 
   ${
@@ -19162,7 +19162,7 @@ $)
     $( A chained equality inference, useful for converting to definitions.
        (Contributed by NM, 5-Aug-1993.) $)
     3eqtr4g $p |- ( ph -> C = D ) $=
-      ( syl5eq eqtr4di ) ADCEADBCGFIHJ $.
+      ( eqtrid eqtr4di ) ADCEADBCGFIHJ $.
   $}
 
   ${
@@ -27079,7 +27079,7 @@ $)
        free).  (Contributed by Mario Carneiro, 14-Oct-2016.) $)
     csbtt $p |- ( ( A e. V /\ F/_ x B ) -> [_ A / x ]_ B = B ) $=
       ( vy wcel wnfc wa csb cv wsbc cab df-csb wnf wb nfcr sbctt sylan2 abbi1dv
-      syl5eq ) BDFZACGZHZABCIEJCFZABKZELCAEBCMUCUEECUBUAUDANUEUDOAECPUDABDQRST
+      eqtrid ) BDFZACGZHZABCIEJCFZABKZELCAEBCMUCUEECUBUAUDANUEUDOAECPUDABDQRST
       $.
   $}
 
@@ -27233,7 +27233,7 @@ $)
     $( The proper substitution of a class for setvar variable results in the
        class (if the class exists).  (Contributed by NM, 10-Nov-2005.) $)
     csbvarg $p |- ( A e. V -> [_ A / x ]_ x = A ) $=
-      ( vz vy wcel cvv cv csb wceq elex wsbc cab df-csb sbcel2gv abbi1dv syl5eq
+      ( vz vy wcel cvv cv csb wceq elex wsbc cab df-csb sbcel2gv abbi1dv eqtrid
       vex ax-mp csbeq2i csbco 3eqtr3i syl ) BCFBGFZABAHZIZBJBCKUDUFDHZEHZFEBLZD
       MZBEBAUHUEIZIEBUHIUFUJEBUKUHUHGFZUKUHJERULUKUGUEFAUHLZDMUHADUHUENULUMDUHA
       UGUHGOPQSTAEBUEUAEDBUHNUBUDUIDBEUGBGOPQUC $.
@@ -27482,7 +27482,7 @@ $)
        ` A ` by substituting twice.  (Contributed by Mario Carneiro,
        11-Nov-2016.) $)
     csbie2g $p |- ( A e. V -> [_ A / x ]_ B = D ) $=
-      ( vz wcel csb cv wsbc cab df-csb wceq eleq2d sbcie2g abbi1dv syl5eq ) CGK
+      ( vz wcel csb cv wsbc cab df-csb wceq eleq2d sbcie2g abbi1dv eqtrid ) CGK
       ZACDLJMZDKZACNZJOFAJCDPUBUEJFUDUCEKUCFKABCGAMBMZQDEUCHRUFCQEFUCIRSTUA $.
   $}
 
@@ -29439,7 +29439,7 @@ $)
     $( Deduction from a wff to a restricted class abstraction.  (Contributed by
        NM, 14-Jan-2014.) $)
     rabbi2dva $p |- ( ph -> ( A i^i B ) = { x e. A | ps } ) $=
-      ( cin cv wcel crab dfin5 rabbidva syl5eq ) ADEGCHEIZCDJBCDJCDEKANBCDFLM
+      ( cin cv wcel crab dfin5 rabbidva eqtrid ) ADEGCHEIZCDJBCDJCDEKANBCDFLM
       $.
   $}
 
@@ -30414,7 +30414,7 @@ $)
        in the empty set.  (Contributed by NM, 17-Aug-2018.) $)
     csbprc $p |- ( -. A e. _V -> [_ A / x ]_ B = (/) ) $=
       ( vy cvv wcel wn csb cv wsbc cab c0 df-csb wfal sbcex con3i pm2.21d falim
-      impbid1 abbidv fal abf eqtrdi syl5eq ) BEFZGZABCHDICFZABJZDKZLADBCMUFUIND
+      impbid1 abbidv fal abf eqtrdi eqtrid ) BEFZGZABCHDICFZABJZDKZLADBCMUFUIND
       KLUFUHNDUFUHNUFUHNUHUEUGABOPQUHRSTNDUAUBUCUD $.
   $}
 
@@ -30541,7 +30541,7 @@ $)
     $( Subset relation for disjoint classes.  (Contributed by NM, 25-Oct-2005.)
        (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
     disjssun $p |- ( ( A i^i B ) = (/) -> ( A C_ ( B u. C ) <-> A C_ C ) ) $=
-      ( cin c0 wceq cun wss indi equncomi uneq2 un0 eqtrdi syl5eq df-ss 3bitr4g
+      ( cin c0 wceq cun wss indi equncomi uneq2 un0 eqtrdi eqtrid df-ss 3bitr4g
       eqeq1d ) ABDZEFZABCGZDZAFACDZAFATHACHSUAUBASUAUBRGZUBUARUBABCIJSUCUBEGUBR
       EUBKUBLMNQATOACOP $.
   $}
@@ -31991,7 +31991,7 @@ $)
   disjpr2 $p |- ( ( ( A =/= C /\ B =/= C ) /\ ( A =/= D /\ B =/= D ) )
                   -> ( { A , B } i^i { C , D } ) = (/) ) $=
     ( wne wa cpr cin csn c0 wceq df-pr ineq1i indir eqtri disjsn2 adantr adantl
-    cun syl5eq a1i ineq2d indi jca un00 sylib uneq12d un0 eqtrdi eqtrd ) ACEZBC
+    cun eqtrid a1i ineq2d indi jca un00 sylib uneq12d un0 eqtrdi eqtrd ) ACEZBC
     EZFZADEZBDEZFZFZABGZCDGZHURCIZDIZSZHZJUQUSVBURUSVBKUQCDLUAUBUQVCURUTHZURVAH
     ZSZJURUTVAUCUQVFJJSJUQVDJVEJUQVDAIZUTHZBIZUTHZSZJVDVGVISZUTHVKURVLUTABLZMVG
     VIUTNOUQVHJKZVJJKZFVKJKUQVNVOUMVNUPUKVNULACPQQUMVOUPULVOUKBCPRQUDVHVJUEUFTU
@@ -32308,7 +32308,7 @@ $)
   $( A proper class vanishes in an unordered pair.  (Contributed by NM,
      22-Mar-2006.) $)
   prprc2 $p |- ( -. B e. _V -> { A , B } = { A } ) $=
-    ( cvv wcel wn cpr csn prcom prprc1 syl5eq ) BCDEABFBAFAGABHBAIJ $.
+    ( cvv wcel wn cpr csn prcom prprc1 eqtrid ) BCDEABFBAFAGABHBAIJ $.
 
   $( An unordered pair containing two proper classes is the empty set.
      (Contributed by NM, 22-Mar-2006.) $)
@@ -32511,7 +32511,7 @@ $)
   $( Removal of a singleton from an unordered pair.  (Contributed by Alexander
      van der Vekens, 5-Oct-2017.) $)
   difprsn2 $p |- ( A =/= B -> ( { A , B } \ { B } ) = { A } ) $=
-    ( wne cpr csn cdif prcom difeq1i wceq necom difprsn1 sylbi syl5eq ) ABCZABD
+    ( wne cpr csn cdif prcom difeq1i wceq necom difprsn1 sylbi eqtrid ) ABCZABD
     ZBEZFBADZPFZAEZOQPABGHNBACRSIABJBAKLM $.
 
   $( Removal of a singleton from an unordered triple.  (Contributed by
@@ -33078,7 +33078,7 @@ $)
        (Contributed by Mario Carneiro, 26-Apr-2015.) $)
     opprc $p |- ( -. ( A e. _V /\ B e. _V ) -> <. A , B >. = (/) ) $=
       ( vx cvv wcel wa wn cop cv csn cpr w3a cab c0 df-op wal wceq 3simpa con3i
-      alrimiv abeq0 sylibr syl5eq ) ADEZBDEZFZGZABHUDUECIAJABKKEZLZCMZNCABOUGUI
+      alrimiv abeq0 sylibr eqtrid ) ADEZBDEZFZGZABHUDUECIAJABKKEZLZCMZNCABOUGUI
       GZCPUJNQUGUKCUIUFUDUEUHRSTUICUAUBUC $.
   $}
 
@@ -33816,7 +33816,7 @@ $)
   $( Intersection of a singleton.  (Contributed by Stefan O'Rear,
      22-Feb-2015.) $)
   intsng $p |- ( A e. V -> |^| { A } = A ) $=
-    ( wcel csn cint cpr dfsn2 inteqi cin wceq intprg anidms inidm eqtrdi syl5eq
+    ( wcel csn cint cpr dfsn2 inteqi cin wceq intprg anidms inidm eqtrdi eqtrid
     ) ABCZADZEAAFZEZAQRAGHPSAAIZAPSTJAABBKLAMNO $.
 
   ${
@@ -34543,7 +34543,7 @@ $)
     riinm $p |- ( ( A. x e. X S C_ A /\ E. x x e. X ) ->
         ( A i^i |^|_ x e. X S ) = |^|_ x e. X S ) $=
       ( wss wral cv wcel wex ciin cin incom wceq wrex r19.2m ancoms iinss df-ss
-      wa syl sylib syl5eq ) CBEZADFZAGDHAIZSZBADCJZKUGBKZUGBUGLUFUGBEZUHUGMUFUC
+      wa syl sylib eqtrid ) CBEZADFZAGDHAIZSZBADCJZKUGBKZUGBUGLUFUGBEZUHUGMUFUC
       ADNZUIUEUDUJUCAADOPADCBQTUGBRUAUB $.
   $}
 
@@ -34554,7 +34554,7 @@ $)
        argument.  (Contributed by NM, 15-Jan-2012.)  (Proof shortened by Mario
        Carneiro, 17-Nov-2016.) $)
     iinxsng $p |- ( A e. V -> |^|_ x e. { A } B = C ) $=
-      ( vy wcel csn ciin cv wral cab df-iin wceq eleq2d ralsng abbi1dv syl5eq )
+      ( vy wcel csn ciin cv wral cab df-iin wceq eleq2d ralsng abbi1dv eqtrid )
       BEHZABIZCJGKZCHZAUALZGMDAGUACNTUDGDUCUBDHABEAKBOCDUBFPQRS $.
   $}
 
@@ -34633,7 +34633,7 @@ $)
     iunxprg $p |- ( ( A e. V /\ B e. W )
                     -> U_ x e. { A , B } C = ( D u. E ) ) $=
       ( wcel wa cpr ciun csn cun wceq df-pr iuneq1 iunxsng iunxun adantr adantl
-      ax-mp eqtri uneq12d syl5eq ) BGKZCHKZLZABCMZDNZABOZDNZACOZDNZPZEFPULAUMUO
+      ax-mp eqtri uneq12d eqtrid ) BGKZCHKZLZABCMZDNZABOZDNZACOZDNZPZEFPULAUMUO
       PZDNZUQUKURQULUSQBCRAUKURDSUDAUMUODUAUEUJUNEUPFUHUNEQUIABDEGITUBUIUPFQUHA
       CDFHJTUCUFUG $.
   $}
@@ -34744,7 +34744,7 @@ $)
        Kingdon, 19-Aug-2018.) $)
     rintm $p |- ( ( X C_ ~P A /\ E. x x e. X ) -> ( A i^i |^| X ) = |^| X ) $=
       ( cpw wss cv wcel wex wa cint cin incom wceq cuni intssuni2m ssid sspwuni
-      mpbi sstrdi df-ss sylib syl5eq ) CBDZEAFCGAHIZBCJZKUEBKZUEBUELUDUEBEUFUEM
+      mpbi sstrdi df-ss sylib eqtrid ) CBDZEAFCGAHIZBCJZKUEBKZUEBUELUDUEBEUFUEM
       UDUEUCNZBACUCOUCUCEUGBEUCPUCBQRSUEBTUAUB $.
   $}
 
@@ -39073,7 +39073,7 @@ $)
 
   $( A proper class is its own successor.  (Contributed by NM, 3-Apr-1995.) $)
   sucprc $p |- ( -. A e. _V -> suc A = A ) $=
-    ( cvv wcel wn csuc cun csn df-suc wceq snprc uneq2 sylbi syl5eq un0 eqtrdi
+    ( cvv wcel wn csuc cun csn df-suc wceq snprc uneq2 sylbi eqtrid un0 eqtrdi
     c0 ) ABCDZAEZAPFZAQRAAGZFZSAHQTPIUASIAJTPAKLMANO $.
 
   ${
@@ -39092,7 +39092,7 @@ $)
      (Contributed by Jim Kingdon, 18-Aug-2019.) $)
   unisucg $p |- ( A e. V -> ( Tr A <-> U. suc A = A ) ) $=
     ( wcel wtr cuni cun wceq csuc df-tr ssequn1 bitri df-suc unieqi uniun eqtri
-    wss csn unisng uneq2d syl5eq eqeq1d bitr4id ) ABCZADZAEZAFZAGZAHZEZAGUDUEAP
+    wss csn unisng uneq2d eqtrid eqeq1d bitr4id ) ABCZADZAEZAFZAGZAHZEZAGUDUEAP
     UGAIUEAJKUCUIUFAUCUIUEAQZEZFZUFUIAUJFZEULUHUMALMAUJNOUCUKAUEABRSTUAUB $.
 
   $( A class is included in its own successor.  Part of Proposition 7.23 of
@@ -42823,7 +42823,7 @@ $)
     xpriindim $p |- ( E. y y e. A ->
         ( C X. ( D i^i |^|_ x e. A B ) ) =
         ( ( C X. D ) i^i |^|_ x e. A ( C X. B ) ) ) $=
-      ( cv wcel wex ciin cin cxp xpindi xpiindim ineq2d syl5eq ) BGCHBIZEFACDJZ
+      ( cv wcel wex ciin cin cxp xpindi xpiindim ineq2d eqtrid ) BGCHBIZEFACDJZ
       KLEFLZERLZKSACEDLJZKEFRMQTUASABCDENOP $.
   $}
 
@@ -42979,7 +42979,7 @@ $)
       wrel csn cpr wal dfss2 vex elop elvv imbi12i jaob albii 19.26 eqeq1 eqcom
       wo snex opeqsn bitrdi 2exbidv imbi12d spcv sneq cbvexv a9ev equcom 19.41v
       exbii mpbi mpbiran eqid a1bi 3bitr2ri sylib prexg mp2an mpi opeqpr preqsn
-      idd eqtr2 simplbi syl dfsn2 preq2 eqtr2id syl5eq biimpd expd com12 adantr
+      idd eqtr2 simplbi syl dfsn2 preq2 eqtr2id eqtrid biimpd expd com12 adantr
       anbi12d mpd expcom impd jaod syl5bi 2eximdv exlimiv imp sylbi simpr equid
       syl2an jctl sylibr eqtr4d opeq12 spc2ev adantlr preq12 biimpa dfop jaodan
       eqtr4di ex 3imtr4g ssrdv exlimivv impbii ) CDJZUDYCKKUAZUBZCALZUEZMZDYFBL
@@ -43603,7 +43603,7 @@ $)
        Salmon, 27-Aug-2011.) $)
     dmxpm $p |- ( E. x x e. B -> dom ( A X. B ) = A ) $=
       ( vz vy cv wcel wex cxp cdm wceq eleq1 cbvexv copab df-xp dmeqi ralrimivw
-      wa wral id dmopab3 sylib syl5eq sylbi ) AFZCGZAHDFZCGZDHZBCIZJZBKUFUHADUE
+      wa wral id dmopab3 sylib eqtrid sylbi ) AFZCGZAHDFZCGZDHZBCIZJZBKUFUHADUE
       UGCLMUIUKEFBGUHREDNZJZBUJULEDBCOPUIUIEBSUMBKUIUIEBUITQUHEDBUAUBUCUD $.
   $}
 
@@ -43919,7 +43919,7 @@ $)
     riinint $p |- ( ( X e. V /\ A. k e. I S C_ X ) ->
         ( X i^i |^|_ k e. I S ) = |^| ( { X } u. ran ( k e. I |-> S ) ) ) $=
       ( wcel wss wral wa ciin cin cmpt crn cint csn cun cvv wceq ssexg expcom
-      ralimdv imp dfiin3g syl ineq2d intun intsng adantr ineq1d syl5eq eqtr4d )
+      ralimdv imp dfiin3g syl ineq2d intun intsng adantr ineq1d eqtrid eqtr4d )
       EDFZAEGZBCHZIZEBCAJZKEBCALMZNZKZEOZUQPNZUOUPUREUOAQFZBCHZUPURRULUNVCULUMV
       BBCUMULVBAEDSTUAUBBCAQUCUDUEUOVAUTNZURKUSUTUQUFUOVDEURULVDERUNEDUGUHUIUJU
       K $.
@@ -44263,7 +44263,7 @@ $)
   $( Absorption law for restriction.  Exercise 17 of [TakeutiZaring] p. 25.
      (Contributed by NM, 9-Aug-1994.) $)
   resabs1 $p |- ( B C_ C -> ( ( A |` C ) |` B ) = ( A |` B ) ) $=
-    ( wss cres cin resres wceq sseqin2 reseq2 sylbi syl5eq ) BCDZACEBEACBFZEZAB
+    ( wss cres cin resres wceq sseqin2 reseq2 sylbi eqtrid ) BCDZACEBEACBFZEZAB
     EZACBGMNBHOPHBCINBAJKL $.
 
   ${
@@ -44276,7 +44276,7 @@ $)
 
   $( Absorption law for restriction.  (Contributed by NM, 27-Mar-1998.) $)
   resabs2 $p |- ( B C_ C -> ( ( A |` B ) |` C ) = ( A |` B ) ) $=
-    ( wss cres rescom resabs1 syl5eq ) BCDABEZCEACEBEIABCFABCGH $.
+    ( wss cres rescom resabs1 eqtrid ) BCDABEZCEACEBEIABCFABCGH $.
 
   $( Idempotent law for restriction.  (Contributed by NM, 27-Mar-1998.) $)
   residm $p |- ( ( A |` B ) |` B ) = ( A |` B ) $=
@@ -44290,7 +44290,7 @@ $)
   $( Image under a restricted class.  (Contributed by FL, 31-Aug-2009.) $)
   resima2 $p |- ( B C_ C -> ( ( A |` C ) " B ) = ( A " B ) ) $=
     ( wss cres cima crn df-ima cin resres rneqi wceq df-ss incom reseq2d reseq2
-    a1i rneqd eqtr4di syl5eq eqtrd sylbi ) BCDZACEZBFUDBEZGZABFZUDBHUCUFACBIZEZ
+    a1i rneqd eqtr4di eqtrid eqtrd sylbi ) BCDZACEZBFUDBEZGZABFZUDBHUCUFACBIZEZ
     GZUGUEUIACBJKUCBCIZBLZUJUGLBCMULUJAUKEZGZUGULUIUMULUHUKAUHUKLULCBNQORULUNAB
     EZGUGULUMUOUKBAPRABHSUAUBTT $.
 
@@ -44298,7 +44298,7 @@ $)
      by Stefan O'Rear, 24-Jan-2015.) $)
   xpssres $p |- ( C C_ A -> ( ( A X. B ) |` C ) = ( C X. B ) ) $=
     ( wss cxp cres cin df-res inxp incom inv1 xpeq12i 3eqtri wceq biimpi xpeq1d
-    cvv df-ss syl5eq ) CADZABEZCFZCAGZBEZCBEUBUACQEGACGZBQGZEUDUACHABCQIUEUCUFB
+    cvv df-ss eqtrid ) CADZABEZCFZCAGZBEZCBEUBUACQEGACGZBQGZEUDUACHABCQIUEUCUFB
     ACJBKLMTUCCBTUCCNCAROPS $.
 
   ${
@@ -44411,7 +44411,7 @@ $)
     resopab2 $p |- ( A C_ B -> ( { <. x , y >. | ( x e. B /\ ph ) } |` A ) =
                   { <. x , y >. | ( x e. A /\ ph ) } ) $=
       ( wss cv wcel wa copab cres resopab pm4.71d anbi1d anass bitr2di opabbidv
-      ssel syl5eq ) DEFZBGZEHZAIZBCJDKUADHZUCIZBCJUDAIZBCJUCBCDLTUEUFBCTUFUDUBI
+      ssel eqtrid ) DEFZBGZEHZAIZBCJDKUADHZUCIZBCJUDAIZBCJUCBCDLTUEUFBCTUFUDUBI
       ZAIUETUDUGATUDUBDEUARMNUDUBAOPQS $.
 
     $( Restriction of the mapping operation.  (Contributed by Mario Carneiro,
@@ -44697,7 +44697,7 @@ $)
     $d x y A $.  $d x B $.  $d x y R $.
     $( The image of a singleton.  (Contributed by NM, 8-May-2005.) $)
     imasng $p |- ( A e. B -> ( R " { A } ) = { y | A R y } ) $=
-      ( vx wcel cvv csn cima wbr cab wceq elex wrex dfima2 rexsng abbidv syl5eq
+      ( vx wcel cvv csn cima wbr cab wceq elex wrex dfima2 rexsng abbidv eqtrid
       cv breq1 syl ) BCFBGFZDBHZIZBASZDJZAKZLBCMUBUDESZUEDJZEUCNZAKUGEADUCOUBUJ
       UFAUIUFEBGUHBUEDTPQRUA $.
 
@@ -44812,7 +44812,7 @@ $)
      22-May-1998.) $)
   ndmima $p |- ( -. A e. dom B -> ( B " { A } ) = (/) ) $=
     ( cdm wcel wn csn cima cres crn c0 df-ima wceq cin dmres incom eqtri disjsn
-    biimpri syl5eq dm0rn0 sylib ) ABCZDEZBAFZGBUDHZIZJBUDKUCUECZJLUFJLUCUGUBUDM
+    biimpri eqtrid dm0rn0 sylib ) ABCZDEZBAFZGBUDHZIZJBUDKUCUECZJLUFJLUCUGUBUDM
     ZJUGUDUBMUHBUDNUDUBOPUHJLUCUBAQRSUETUAS $.
 
   ${
@@ -45244,13 +45244,13 @@ $)
   $( Cross products with disjoint sets are disjoint.  (Contributed by NM,
      13-Sep-2004.) $)
   xpdisj1 $p |- ( ( A i^i B ) = (/) -> ( ( A X. C ) i^i ( B X. D ) ) = (/) ) $=
-    ( cin c0 wceq cxp inxp xpeq1 0xp eqtrdi syl5eq ) ABEZFGZACHBDHENCDEZHZFACBD
+    ( cin c0 wceq cxp inxp xpeq1 0xp eqtrdi eqtrid ) ABEZFGZACHBDHENCDEZHZFACBD
     IOQFPHFNFPJPKLM $.
 
   $( Cross products with disjoint sets are disjoint.  (Contributed by NM,
      13-Sep-2004.) $)
   xpdisj2 $p |- ( ( A i^i B ) = (/) -> ( ( C X. A ) i^i ( D X. B ) ) = (/) ) $=
-    ( cin c0 wceq cxp inxp xpeq2 xp0 eqtrdi syl5eq ) ABEZFGZCAHDBHECDEZNHZFCADB
+    ( cin c0 wceq cxp inxp xpeq2 xp0 eqtrdi eqtrid ) ABEZFGZCAHDBHECDEZNHZFCADB
     IOQPFHFNFPJPKLM $.
 
   $( Cross products with two different singletons are disjoint.  (Contributed
@@ -45265,7 +45265,7 @@ $)
        Stefan O'Rear, 21-Nov-2014.) $)
     djudisj $p |- ( ( A i^i B ) = (/) -> ( U_ x e. A ( { x } X. C ) i^i
             U_ y e. B ( { y } X. D ) ) = (/) ) $=
-      ( cin c0 wceq cv csn cxp ciun cvv wss djussxp incom syl5eq ssdisj sylancr
+      ( cin c0 wceq cv csn cxp ciun cvv wss djussxp incom eqtrid ssdisj sylancr
       xpdisj1 ) CDGHIZACAJKELMZCNLZOUDBDBJKFLMZGZHIUCUEGHIACEPUBUFUEUDGZHUDUEQU
       BUEDNLZOUHUDGZHIUGHIBDFPUBUIUDUHGHUHUDQCDNNUARUEUHUDSTRUCUDUEST $.
   $}
@@ -45273,7 +45273,7 @@ $)
   $( A double restriction to disjoint classes is the empty set.  (Contributed
      by NM, 7-Oct-2004.)  (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
   resdisj $p |- ( ( A i^i B ) = (/) -> ( ( C |` A ) |` B ) = (/) ) $=
-    ( cin c0 wceq cres resres reseq2 res0 eqtrdi syl5eq ) ABDZEFZCAGBGCMGZECABH
+    ( cin c0 wceq cres resres reseq2 res0 eqtrdi eqtrid ) ABDZEFZCAGBGCMGZECABH
     NOCEGEMECICJKL $.
 
   ${
@@ -45282,7 +45282,7 @@ $)
        with nonempty changed to inhabited.  (Contributed by Jim Kingdon,
        12-Dec-2018.) $)
     rnxpm $p |- ( E. x x e. A -> ran ( A X. B ) = B ) $=
-      ( cv wcel wex cxp crn cdm ccnv df-rn cnvxp dmeqi eqtri dmxpm syl5eq ) ADB
+      ( cv wcel wex cxp crn cdm ccnv df-rn cnvxp dmeqi eqtri dmxpm eqtrid ) ADB
       EAFBCGZHZCBGZIZCRQJZITQKUASBCLMNACBOP $.
   $}
 
@@ -45457,7 +45457,7 @@ $)
      16-Dec-2017.) $)
   xpima1 $p |- ( ( A i^i C ) = (/) -> ( ( A X. B ) " C ) = (/) ) $=
     ( cin c0 wceq cxp cima cvv crn cres df-ima df-res rneqi 3eqtri xpeq1 eqtrdi
-    inxp 0xp rneq rn0 syl syl5eq ) ACDZEFZABGZCHZUDBIDZGZJZEUGUFCKZJUFCIGDZJUJU
+    inxp 0xp rneq rn0 syl eqtrid ) ACDZEFZABGZCHZUDBIDZGZJZEUGUFCKZJUFCIGDZJUJU
     FCLUKULUFCMNULUIABCIRNOUEUIEFZUJEFUEUIEUHGEUDEUHPUHSQUMUJEJEUIETUAQUBUC $.
 
   ${
@@ -45466,7 +45466,7 @@ $)
        16-Dec-2017.) $)
     xpima2m $p |- ( E. x x e. ( A i^i C ) -> ( ( A X. B ) " C ) = B ) $=
       ( cv cin wcel wex cxp cima cvv cres df-ima df-res rneqi inxp 3eqtri rnxpm
-      crn syl5eq inv1 eqtrdi ) AEBDFZGAHZBCIZDJZCKFZCUDUFUCUGIZSZUGUFUEDLZSUEDK
+      crn eqtrid inv1 eqtrdi ) AEBDFZGAHZBCIZDJZCKFZCUDUFUCUGIZSZUGUFUEDLZSUEDK
       IFZSUIUEDMUJUKUEDNOUKUHBCDKPOQAUCUGRTCUAUB $.
   $}
 
@@ -45694,7 +45694,7 @@ $)
     $( The domain of the singleton of the singleton of a singleton.
        (Contributed by Jim Kingdon, 16-Dec-2018.) $)
     dmsnsnsng $p |- ( A e. _V -> dom { { { A } } } = { A } ) $=
-      ( vx cop csn cdm wceq cvv vex opid sneq sneqd syl5eq dmeqd eqeq12d dmsnop
+      ( vx cop csn cdm wceq cvv vex opid sneq sneqd eqtrid dmeqd eqeq12d dmsnop
       cv vtoclg ) BPZRCZDZEZRDZFADZDZDZEZUCFBAGRAFZUAUFUBUCUGTUEUGSUDUGSUBDUDRB
       HZIUGUBUCRAJZKLKMUINRRUHOQ $.
   $}
@@ -45703,7 +45703,7 @@ $)
      member.  (Contributed by NM, 24-Jul-2004.)  (Revised by Mario Carneiro,
      30-Apr-2015.) $)
   rnsnopg $p |- ( A e. V -> ran { <. A , B >. } = { B } ) $=
-    ( wcel cop csn crn cdm ccnv df-rn dfdm4 cnvcnvsn dmeqi 3eqtri eqtr4i syl5eq
+    ( wcel cop csn crn cdm ccnv df-rn dfdm4 cnvcnvsn dmeqi 3eqtri eqtr4i eqtrid
     dmsnopg ) ACDABEFZGZBAEFZHZBFSRIZHZUARJUATIZGUDIZHUCTKUDJUEUBBALMNOBACQP $.
 
   $( The range of a pair of ordered pairs is the pair of second members.
@@ -45711,7 +45711,7 @@ $)
   rnpropg $p |- ( ( A e. V /\ B e. W )
     -> ran { <. A , C >. , <. B , D >. } = { C , D } ) $=
     ( wcel cop cpr crn csn cun df-pr rneqi wceq rnsnopg adantr adantl uneq12d
-    wa rnun 3eqtr4g syl5eq ) AEGZBFGZTZACHZBDHZIZJUGKZUHKZLZJZCDIZUIULUGUHMNUFU
+    wa rnun 3eqtr4g eqtrid ) AEGZBFGZTZACHZBDHZIZJUGKZUHKZLZJZCDIZUIULUGUHMNUFU
     JJZUKJZLCKZDKZLUMUNUFUOUQUPURUDUOUQOUEACEPQUEUPUROUDBDFPRSUJUKUACDMUBUC $.
 
   ${
@@ -45863,7 +45863,7 @@ $)
     $( Converse singleton image of a function defined by maps-to.  (Contributed
        by Stefan O'Rear, 25-Jan-2015.) $)
     mptiniseg $p |- ( C e. V -> ( `' F " { C } ) = { x e. A | B = C } ) $=
-      ( wcel ccnv csn cima crab wceq mptpreima elsn2g rabbidv syl5eq ) DFHZEIDJ
+      ( wcel ccnv csn cima crab wceq mptpreima elsn2g rabbidv eqtrid ) DFHZEIDJ
       ZKCSHZABLCDMZABLABCSEGNRTUAABCDFOPQ $.
 
     $( The domain of the mapping operation in general.  (Contributed by NM,
@@ -45917,7 +45917,7 @@ $)
       ( vy vz vw cvv cv cima ciun wcel wrex wex wa cop vex sylbi 3bitr4g eliun
       cdm crn cin wss ccom ccnv csn cxp dfco2 wceq wbr wb eliniseg ax-mp brelrn
       elimasn opeldm anim12ci adantl exlimivv elxp elin 3imtr4i pm4.71rd exbidv
-      ssel syl5 rexv df-rex eqrdv syl5eq ) BUAZCUBZUCZDUDZBCUEAHCUFAIZUGZJZBVQJ
+      ssel syl5 rexv df-rex eqrdv eqtrid ) BUAZCUBZUCZDUDZBCUEAHCUFAIZUGZJZBVQJ
       ZUHZKZADVTKZABCUIVOEWAWBVOEIZVTLZAHMZWDADMZWCWALWCWBLVOWDANVPDLZWDOZANWEW
       FVOWDWHAVOWDWGWDVPVNLZVOWGWCFIZGIZPUJZWJVRLZWKVSLZOZOZGNFNVPVLLZVPVMLZOZW
       DWIWPWSFGWOWSWLWMWRWNWQWMWJVPCUKZWRVPHLWMWTULAQZCVPWJHFQZUMUNWJVPCXBXAUOR
@@ -46186,7 +46186,7 @@ $)
   relcoi1 $p |- ( Rel R -> ( R o. ( _I |` U. U. R ) ) = R ) $=
     ( wrel cid cuni cres ccom cun wceq wi resco reseq1 wa eqtr eqeq1 syl5ibr ex
     syl com3l eqcoms mpcom cdm crn relfld resundi coeq2 coundi coi1 resdm uneq1
-    uneq2d wss resss ssequn2 mpbi eqtr4id syl5com mpi syl5eq mp2b reseq2 coeq2d
+    uneq2d wss resss ssequn2 mpbi eqtr4id syl5com mpi eqtrid mp2b reseq2 coeq2d
     mpsyl eqeq1d eqtrd ) ABZACADDZEZFZACFZAVFAUAZAUBZGZHZVEVHVIHZAUCVEVNVMACVLE
     ZFZVIHZVOCVJEZCVKEZGZHVPAVTFZHZVEVQICVJVKUDVOVTAUEVEVQWBWAVIHVEWAAVRFZAVSFZ
     GZVIAVRVSUFVEVIVJEZWCHZWEVIHZACVJJVIAHZVEWGWHIZAUGZWIWFAVJEZHZVEWJVIAVJKWLA
@@ -46223,7 +46223,7 @@ $)
        members.  (Contributed by Jim Kingdon, 18-Dec-2018.) $)
     unixpm $p |- ( E. x x e. ( A X. B ) -> U. U. ( A X. B ) = ( A u. B ) ) $=
       ( vb va cv cxp wcel wex cuni cdm crn cun wrel relxp relfld ax-mp wa ancom
-      wceq xpm bitri dmxpm rnxpm uneq12 syl2an sylbir syl5eq ) AFBCGZHAIZUIJJZU
+      wceq xpm bitri dmxpm rnxpm uneq12 syl2an sylbir eqtrid ) AFBCGZHAIZUIJJZU
       IKZUILZMZBCMZUINUKUNTBCOUIPQUJDFCHDIZEFBHEIZRZUNUOTZURUQUPRUJUPUQSEDABCUA
       UBUPULBTUMCTUSUQDBCUCEBCUDULBUMCUEUFUGUH $.
   $}
@@ -46490,7 +46490,7 @@ $)
     iotaval $p |- ( A. x ( ph <-> x = y ) -> ( iota x ph ) = y ) $=
       ( vz weq wb wal cio cab cuni cv dfiota2 wceq cvv wcel vex sbeqalb equcomi
       wa wi ax-mp ex equequ2 equcoms bibi2d biimpd alimdv com12 alrimiv uniabio
-      syl6 impbid syl syl5eq ) ABCEZFZBGZABHABDEZFZBGZDIJZCKZABDLUQUTDCEZFZDGVA
+      syl6 impbid syl eqtrid ) ABCEZFZBGZABHABDEZFZBGZDIJZCKZABDLUQUTDCEZFZDGVA
       VBMUQVDDUQUTVCUQUTVCVBNOZUQUTSZVCTCPVEVFCDEVCABVBDKNQCDRUKUAUBVCUQUTVCUPU
       SBVCUPUSVCUOURAUOURFCDCDBUCUDUEUFUGUHULUIUTDCUJUMUN $.
 
@@ -47235,7 +47235,7 @@ $)
     funtp $p |- ( ( A =/= B /\ A =/= C /\ B =/= C )
                     -> Fun { <. A , D >. , <. B , E >. , <. C , F >. } ) $=
       ( wne cop csn wfun wa cin c0 wceq w3a cpr cun ctp funpr funsn jctir df-pr
-      cdm dmprop eqtri dmsnop ineq12i disjsn2 anim12i sylib syl5eq funun syl2an
+      cdm dmprop eqtri dmsnop ineq12i disjsn2 anim12i sylib eqtrid funun syl2an
       undisj1 3impb df-tp funeqi sylibr ) ABMZACMZBCMZUAADNZBENZUBZCFNZOZUCZPZV
       HVIVKUDZPVEVFVGVNVEVJPZVLPZQVJUIZVLUIZRZSTVNVFVGQZVEVPVQABDEGHJKUECFILUFU
       GWAVTAOZBOZUCZCOZRZSVRWDVSWEVRABUBWDADBEJKUJABUHUKCFLULUMWAWBWERSTZWCWERS
@@ -47780,7 +47780,7 @@ $)
   fnun $p |- ( ( ( F Fn A /\ G Fn B ) /\ ( A i^i B ) = (/) ) ->
              ( F u. G ) Fn ( A u. B ) ) $=
     ( wfn wa cin c0 wceq cun wfun cdm wi df-fn ineq12 eqeq1d funun syl6bir dmun
-    anbi2d uneq12 syl5eq jctird syl6ibr expd impcom an4s syl2anb imp ) CAEZDBEZ
+    anbi2d uneq12 eqtrid jctird syl6ibr expd impcom an4s syl2anb imp ) CAEZDBEZ
     FABGZHIZCDJZABJZEZUJCKZCLZAIZFDKZDLZBIZFUMUPMZUKCANDBNUQUTUSVBVCUSVBFZUQUTF
     ZVCVDVEUMUPVDVEUMFZUNKZUNLZUOIZFUPVDVFVGVIVDVFVEURVAGZHIZFVGVDVKUMVEVDVJULH
     URAVABOPTCDQRVDVHURVAJUOCDSURAVABUAUBUCUNUONUDUEUFUGUHUI $.
@@ -47818,7 +47818,7 @@ $)
      (Contributed by NM, 23-Sep-2004.) $)
   fnresdisj $p |- ( F Fn A -> ( ( A i^i B ) = (/) <-> ( F |` B ) = (/) ) ) $=
     ( cres c0 wceq cdm wfn wrel wb relres reldm0 ax-mp dmres incom eqtri ineq1d
-    cin fndm syl5eq eqeq1d bitr2id ) CBDZEFZUCGZEFZCAHZABRZEFUCIUDUFJCBKUCLMUGU
+    cin fndm eqtrid eqeq1d bitr2id ) CBDZEFZUCGZEFZCAHZABRZEFUCIUDUFJCBKUCLMUGU
     EUHEUGUECGZBRZUHUEBUIRUJCBNBUIOPUGUIABACSQTUAUB $.
 
   $( Membership in two functions restricted by each other's domain.
@@ -47880,7 +47880,7 @@ $)
   $( The image of a function's domain is its range.  (Contributed by NM,
      4-Nov-2004.)  (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
   fnima $p |- ( F Fn A -> ( F " A ) = ran F ) $=
-    ( wfn cima cres crn df-ima fnresdm rneqd syl5eq ) BACZBADBAEZFBFBAGKLBABHIJ
+    ( wfn cima cres crn df-ima fnresdm rneqd eqtrid ) BACZBADBAEZFBFBAGKLBABHIJ
     $.
 
   $( A function with empty domain is empty.  (Contributed by NM, 15-Apr-1998.)
@@ -47901,7 +47901,7 @@ $)
   fnimaeq0 $p |- ( ( F Fn A /\ B C_ A ) ->
       ( ( F " B ) = (/) <-> B = (/) ) ) $=
     ( cima c0 wceq cdm cin wfn wa imadisj incom fndm sseq2d biimpar df-ss sylib
-    wss syl5eq eqeq1d syl5bb ) CBDEFCGZBHZEFCAIZBARZJZBEFCBKUFUCBEUFUCBUBHZBUBB
+    wss eqtrid eqeq1d syl5bb ) CBDEFCGZBHZEFCAIZBARZJZBEFCBKUFUCBEUFUCBUBHZBUBB
     LUFBUBRZUGBFUDUHUEUDUBABACMNOBUBPQSTUA $.
 
   ${
@@ -48360,7 +48360,7 @@ $)
      13-Dec-2003.)  (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
   fcoi1 $p |- ( F : A --> B -> ( F o. ( _I |` A ) ) = F ) $=
     ( wf wfn cid cres ccom wceq ffn wfun cdm df-fn wss eqimss ccnv cnvi reseq1i
-    wa syl cnveqi eqtr2i coeq2i cores2 syl5eq wrel funrel coi1 sylan9eqr sylbi
+    wa syl cnveqi eqtr2i coeq2i cores2 eqtrid wrel funrel coi1 sylan9eqr sylbi
     cnvresid ) ABCDCAEZCFAGZHZCIZABCJULCKZCLZAIZSUOCAMURUPUNCFHZCURUQANZUNUSIUQ
     AOUTUNCFPZAGZPZHUSUMVCCVCUMPUMVBUMVAFAQRUAAUKUBUCCFAUDUETUPCUFUSCICUGCUHTUI
     UJT $.
@@ -48928,7 +48928,7 @@ $)
   f1orescnv $p |- ( ( Fun `' F /\ ( F |` R ) : R -1-1-onto-> P ) ->
                     ( `' F |` P ) : P -1-1-onto-> R ) $=
     ( ccnv wfun cres wf1o wa f1ocnv adantl wceq wb cima funcnvres df-ima dff1o5
-    crn wf1 simprbi syl5eq reseq2d sylan9eq f1oeq1 syl mpbid ) CDZEZBACBFZGZHZA
+    crn wf1 simprbi eqtrid reseq2d sylan9eq f1oeq1 syl mpbid ) CDZEZBACBFZGZHZA
     BUHDZGZABUFAFZGZUIULUGBAUHIJUJUKUMKULUNLUGUIUKUFCBMZFUMBCNUIUOAUFUIUOUHQZAC
     BOUIBAUHRUPAKBAUHPSTUAUBABUKUMUCUDUE $.
 
@@ -48961,7 +48961,7 @@ $)
             /\ ( A i^i C ) = (/) )
            -> ( F u. G ) : ( A u. C ) -onto-> ( B u. D ) ) $=
     ( wfo wa cin c0 wceq cun wfn crn fofn anim12i fnun sylan rnun forn ad2antrr
-    ad2antlr uneq12d syl5eq df-fo sylanbrc ) ABEGZCDFGZHZACIJKZHZEFLZACLZMZULNZ
+    ad2antlr uneq12d eqtrid df-fo sylanbrc ) ABEGZCDFGZHZACIJKZHZEFLZACLZMZULNZ
     BDLZKUMUPULGUIEAMZFCMZHUJUNUGUQUHURABEOCDFOPACEFQRUKUOENZFNZLUPEFSUKUSBUTDU
     GUSBKUHUJABETUAUHUTDKUGUJCDFTUBUCUDUMUPULUEUF $.
 
@@ -49021,7 +49021,7 @@ $)
     ( ccnv wfun cres wfo cdif cima wf1o wceq syl wb ax-mp crn df-ima wa forn wf
     w3a cdm wss fofun difss fof fdm sseqtrrid fores syl2anc indif reseq2i eqtri
     cin resres foeq1 rneqi 3eqtr4i foeq3 bitri funres11 biimpri syl2anr 3adant3
-    sylib dff1o3 syl5eq anim12i imadif difeq12 sylan9eq sylan2 3impb f1oeq3
+    sylib dff1o3 eqtrid anim12i imadif difeq12 sylan9eq sylan2 3impb f1oeq3
     mpbid ) EFGZACEAHZIZBDEBHZIZUBZABJZEWCKZEWCHZLZWCCDJZWELZVQVSWFWAVSWCWDWEIZ
     WEFGZWFVQVSWCVRWCKZVRWCHZIZWIVSVRGWCVRUCZUDWMACVRUEVSAWCWNABUFVSACVRUAWNAMA
     CVRUGACVRUHNUIWCVRUJUKWMWCWKWEIZWIWLWEMWMWOOWLEAWCUOZHWEEAWCUPWPWCEABULUMUN
@@ -49211,13 +49211,13 @@ $)
        [TakeutiZaring] p. 27.  (Contributed by NM, 30-Apr-2004.)  (Proof
        shortened by Mario Carneiro, 31-Aug-2015.) $)
     tz6.12-2 $p |- ( -. E! x A F x -> ( F ` A ) = (/) ) $=
-      ( cv wbr weu wn cfv cio c0 df-fv iotanul syl5eq ) BADCEZAFGBCHNAIJABCKNAL
+      ( cv wbr weu wn cfv cio c0 df-fv iotanul eqtrid ) BADCEZAFGBCHNAIJABCKNAL
       M $.
 
     $( The value of a function at a unique point.  (Contributed by Scott
        Fenton, 6-Oct-2017.) $)
     fveu $p |- ( E! x A F x -> ( F ` A ) = U. { x | A F x } ) $=
-      ( cv wbr weu cfv cio cab cuni df-fv iotauni syl5eq ) BADCEZAFBCGNAHNAIJAB
+      ( cv wbr weu cfv cio cab cuni df-fv iotauni eqtrid ) BADCEZAFBCGNAHNAIJAB
       CKNALM $.
   $}
 
@@ -49536,7 +49536,7 @@ $)
     $( Function value.  Theorem 6.12(1) of [TakeutiZaring] p. 27.  (Contributed
        by NM, 30-Apr-2004.) $)
     tz6.12-1 $p |- ( ( A F y /\ E! y A F y ) -> ( F ` A ) = y ) $=
-      ( cv wbr weu wa cfv cio df-fv wceq iota1 biimpac syl5eq ) BADZCEZPAFZGBCH
+      ( cv wbr weu wa cfv cio df-fv wceq iota1 biimpac eqtrid ) BADZCEZPAFZGBCH
       PAIZOABCJQPROKPALMN $.
 
     $( Function value.  Theorem 6.12(1) of [TakeutiZaring] p. 27.  (Contributed
@@ -49955,7 +49955,7 @@ $)
   fvun2 $p |- ( ( F Fn A /\ G Fn B /\ ( ( A i^i B ) = (/) /\ X e. B ) ) ->
     ( ( F u. G ) ` X ) = ( G ` X ) ) $=
     ( wfn cin c0 wceq wcel w3a cun cfv uncom fveq1i incom eqeq1i anbi1i fvun1
-    wa syl3an3b 3com12 syl5eq ) CAFZDBFZABGZHIZEBJZTZKECDLZMEDCLZMZEDMZEUJUKCDN
+    wa syl3an3b 3com12 eqtrid ) CAFZDBFZABGZHIZEBJZTZKECDLZMEDCLZMZEDMZEUJUKCDN
     OUEUDUIULUMIZUIUEUDBAGZHIZUHTUNUGUPUHUFUOHABPQRBADCESUAUBUC $.
 
   ${
@@ -50032,7 +50032,7 @@ $)
        (Contributed by NM, 23-Oct-1999.) $)
     fvopab3ig $p |- ( ( A e. C /\ B e. D ) -> ( ch -> ( F ` A ) = B ) ) $=
       ( wcel wa cv cfv wceq wi cop copab eleq1 anbi12d anbi2d opelopabg biimpar
-      exp43 pm2.43a imp fveq1i wfun funopab moanimv mpbir mpgbir funopfv syl5eq
+      exp43 pm2.43a imp fveq1i wfun funopab moanimv mpbir mpgbir funopfv eqtrid
       wmo ax-mp syl6 ) FHOZGIOZPZCFGUADQZHOZAPZDEUBZOZFJRZGSVBVCCVITZVCVBVKVBVC
       VBCVIVDVIVBCPZVGVBBPVLDEFGHIVEFSVFVBABVEFHUCKUDEQGSBCVBLUEUFUGUHUIUJVIVJF
       VHRZGFJVHNUKVHULZVIVMGSTVNVGEUSZDVGDEUMVOVFAEUSTMVFAEUNUOUPFGVHUQUTURVA
