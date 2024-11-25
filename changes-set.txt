@@ -81,7 +81,6 @@ proposed  syl5ibcom imbitridcom
 proposed  syl5ibr   imbitrrid
 proposed  syl5ibrcom imbitrridcom
 proposed  syl5bb    bitrid      compare to bitri or bitrd
-proposed  syl5eq    eqtrid      compare to eqtri or eqtrd (in progress)
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
@@ -94,6 +93,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+25-Nov-24 syl5eq    eqtrid
 18-Nov-24 csbcog    [same]      moved from RP's mathbox to main set.mm
 18-Nov-24 csbwrecsg [same]      moved from ML's mathbox to main set.mm
 18-Nov-24 csbpredg  [same]      moved from ML's mathbox to main set.mm
