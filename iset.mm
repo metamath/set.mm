@@ -144293,6 +144293,15 @@ $)
       ( vs vt vx vy vf cmnd cv cplusg cfv co wceq cbs wral c0g wa cmap crab
       cmhm df-mhm elmpocl2 ) DEIIFJZGJZDJZKLMHJZLUDUGLUEUGLEJZKLMNGUFOLZPFUIPUF
       QLUGLUHQLNRHUHOLUISMTABUACFGEHDUBUC $.
+
+    mhmf.b $e |- B = ( Base ` S ) $.
+    mhmf.c $e |- C = ( Base ` T ) $.
+    $( A monoid homomorphism is a function.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    mhmf $p |- ( F e. ( S MndHom T ) -> F : B --> C ) $=
+      ( vx vy cmhm co wcel cv cplusg cfv wceq wral c0g cmnd eqid wf w3a simprbi
+      wa ismhm simp1d ) ECDJKLZABEUAZHMZIMZCNOZKEOUIEOUJEODNOZKPIAQHAQZCROZEODR
+      OZPZUGCSLDSLUDUHUMUPUBHIABUKULCDEUOUNFGUKTULTUNTUOTUEUCUF $.
   $}
 
 
