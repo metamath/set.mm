@@ -144364,6 +144364,18 @@ $)
       UQUR $.
   $}
 
+  ${
+    $d F x y $.  $d S x y $.  $d T x y $.
+    mhm0.z $e |- .0. = ( 0g ` S ) $.
+    mhm0.y $e |- Y = ( 0g ` T ) $.
+    $( A monoid homomorphism preserves zero.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    mhm0 $p |- ( F e. ( S MndHom T ) -> ( F ` .0. ) = Y ) $=
+      ( vx vy cmhm co wcel cbs cfv cv cplusg wceq wral cmnd eqid wf w3a simprbi
+      wa ismhm simp3d ) CABJKLZAMNZBMNZCUAZHOZIOZAPNZKCNUKCNULCNBPNZKQIUHRHUHRZ
+      ECNDQZUGASLBSLUDUJUOUPUBHIUHUIUMUNABCDEUHTUITUMTUNTFGUEUCUF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
