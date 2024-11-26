@@ -144208,6 +144208,42 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Monoid homomorphisms and submonoids
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c MndHom $.
+  $c SubMnd $.
+
+  $( Hom-set generator class for monoids. $)
+  cmhm $a class MndHom $.
+
+  $( Class function taking a monoid to its lattice of submonoids. $)
+  csubmnd $a class SubMnd $.
+
+  ${
+    $d s t f x y $.
+    $( A monoid homomorphism is a function on the base sets which preserves the
+       binary operation and the identity.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    df-mhm $a |- MndHom = ( s e. Mnd , t e. Mnd |->
+          { f e. ( ( Base ` t ) ^m ( Base ` s ) ) |
+            ( A. x e. ( Base ` s ) A. y e. ( Base ` s )
+                  ( f ` ( x ( +g ` s ) y ) ) =
+                    ( ( f ` x ) ( +g ` t ) ( f ` y ) ) /\
+              ( f ` ( 0g ` s ) ) = ( 0g ` t ) ) } ) $.
+
+    $( A submonoid is a subset of a monoid which contains the identity and is
+       closed under the operation.  Such subsets are themselves monoids with
+       the same identity.  (Contributed by Mario Carneiro, 7-Mar-2015.) $)
+    df-submnd $a |- SubMnd = ( s e. Mnd |-> { t e. ~P ( Base ` s ) |
+            ( ( 0g ` s ) e. t /\
+              A. x e. t A. y e. t ( x ( +g ` s ) y ) e. t ) } ) $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -161408,6 +161444,12 @@ htmldef "+f" as "<IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'>" +
     "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT='f' TITLE='f'>";
   althtmldef "+f" as '+<SUB>&#x1D453;</SUB>';
   latexdef "+f" as "+_f";
+htmldef "MndHom" as " MndHom ";
+  althtmldef "MndHom" as " MndHom ";
+  latexdef "MndHom" as " \mathrm{MndHom} ";
+htmldef "SubMnd" as "SubMnd";
+  althtmldef "SubMnd" as "SubMnd";
+  latexdef "SubMnd" as "\mathrm{SubMnd}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
