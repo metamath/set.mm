@@ -144242,6 +144242,42 @@ $)
               A. x e. t A. y e. t ( x ( +g ` s ) y ) e. t ) } ) $.
   $}
 
+  ${
+    $d f s t .+^ $.  $d f s t x y B $.  $d f s t x y S $.  $d f s t x y T $.
+    $d f s t .+ $.  $d f s t .0. $.  $d f s t C $.  $d f x y F $.
+    $d f s t Y $.
+    ismhm.b $e |- B = ( Base ` S ) $.
+    ismhm.c $e |- C = ( Base ` T ) $.
+    ismhm.p $e |- .+ = ( +g ` S ) $.
+    ismhm.q $e |- .+^ = ( +g ` T ) $.
+    ismhm.z $e |- .0. = ( 0g ` S ) $.
+    ismhm.y $e |- Y = ( 0g ` T ) $.
+    $( Property of a monoid homomorphism.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    ismhm $p |- ( F e. ( S MndHom T ) <-> ( ( S e. Mnd /\ T e. Mnd ) /\
+          ( F : B --> C /\ A. x e. B A. y e. B ( F ` ( x .+ y ) ) =
+                  ( ( F ` x ) .+^ ( F ` y ) ) /\ ( F ` .0. ) = Y ) ) ) $=
+      ( wcel cfv cvv vs vt vf cmhm co cmnd wa wceq wral w3a cplusg cbs c0g cmap
+      wf cv crab df-mhm elmpocl cxp wfn fnmap basfn simpr elexd funfvex sylancr
+      funfni eqeltrid simpl fnovex mp3an2i rabexg syl eqtr4di oveqan12rd adantr
+      fveq2 fveq2d eqeqan12d raleqbidv anbi12d rabeqbidv ovmpoga mpd3an3 eleq2d
+      oveqd elmapd anbi1d fveq1 oveq12d eqeq12d 2ralbidv eqeq1d 3anass biadanii
+      elrab 3bitr4g bitrd ) IGHUDUEZRZGUFRZHUFRZUGZCDIUOZAUPZBUPZEUEZISZXFISZXG
+      ISZFUEZUHZBCUIACUIZKISZJUHZUJZUAUBUFUFXFXGUAUPZUKSZUEZUCUPZSZXFYASZXGYASZ
+      UBUPZUKSZUEZUHZBXRULSZUIZAYIUIZXRUMSZYASZYEUMSZUHZUGZUCYEULSZYIUNUEZUQZGH
+      UDIABUBUCUAURZUSXDXAIXHYASZYCYDFUEZUHZBCUIZACUIZKYASZJUHZUGZUCDCUNUEZUQZR
+      ZXQXDWTUUJIXBXCUUJTRZWTUUJUHXDUUITRZUULUNTTUTVAXDDTRCTRUUMVBXDDHULSZTMXDU
+      LTVAZHTRUUNTRZVCXDHUFXBXCVDVEUUPTHULHULVFVHVGVIZXDCGULSZTLXDUUOGTRUURTRZV
+      CXDGUFXBXCVJVEUUSTGULGULVFVHVGVIZDCTTUNVKVLUUHUCUUITVMVNUAUBGHUFUFYSUUJUD
+      TXRGUHZYEHUHZUGZYPUUHUCYRUUIUVBUVAYQDYICUNUVBYQUUNDYEHULVRMVOUVAYIUURCXRG
+      ULVRLVOZVPUVCYKUUEYOUUGUVCYJUUDAYICUVAYICUHUVBUVDVQZUVCYHUUCBYICUVEUVAUVB
+      YBUUAYGUUBUVAXTXHYAUVAXSEXFXGUVAXSGUKSEXRGUKVRNVOWGVSUVBYFFYCYDUVBYFHUKSF
+      YEHUKVROVOWGVTWAWAUVAUVBYMUUFYNJUVAYLKYAUVAYLGUMSKXRGUMVRPVOVSUVBYNHUMSJY
+      EHUMVRQVOVTWBWCYTWDWEWFXDIUUIRZXNXPUGZUGXEUVGUGUUKXQXDUVFXEUVGXDDCITTUUQU
+      UTWHWIUUHUVGUCIUUIYAIUHZUUEXNUUGXPUVHUUCXMABCCUVHUUAXIUUBXLXHYAIWJUVHYCXJ
+      YDXKFXFYAIWJXGYAIWJWKWLWMUVHUUFXOJKYAIWJWNWBWQXEXNXPWOWRWSWP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
