@@ -144278,6 +144278,23 @@ $)
       YDXKFXFYAIWJXGYAIWJWKWLWMUVHUUFXOJKYAIWJWNWBWQXEXNXPWOWRWSWP $.
   $}
 
+  ${
+    $d f s t x y B $.  $d x y F $.  $d x y S $.  $d x y T $.
+    $( Reverse closure of a monoid homomorphism.  (Contributed by Mario
+       Carneiro, 7-Mar-2015.) $)
+    mhmrcl1 $p |- ( F e. ( S MndHom T ) -> S e. Mnd ) $=
+      ( vs vt vx vy vf cmnd cv cplusg cfv co wceq cbs wral c0g wa cmap crab
+      cmhm df-mhm elmpocl1 ) DEIIFJZGJZDJZKLMHJZLUDUGLUEUGLEJZKLMNGUFOLZPFUIPUF
+      QLUGLUHQLNRHUHOLUISMTABUACFGEHDUBUC $.
+
+    $( Reverse closure of a monoid homomorphism.  (Contributed by Mario
+       Carneiro, 7-Mar-2015.) $)
+    mhmrcl2 $p |- ( F e. ( S MndHom T ) -> T e. Mnd ) $=
+      ( vs vt vx vy vf cmnd cv cplusg cfv co wceq cbs wral c0g wa cmap crab
+      cmhm df-mhm elmpocl2 ) DEIIFJZGJZDJZKLMHJZLUDUGLUEUGLEJZKLMNGUFOLZPFUIPUF
+      QLUGLUHQLNRHUHOLUISMTABUACFGEHDUBUC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
