@@ -144376,6 +144376,21 @@ $)
       ECNDQZUGASLBSLUDUJUOUPUBHIUHUIUMUNABCDEUHTUITUMTUNTFGUEUCUF $.
   $}
 
+  ${
+    $d B a b $.  $d M a b $.
+    idmhm.b $e |- B = ( Base ` M ) $.
+    $( The identity homomorphism on a monoid.  (Contributed by AV,
+       14-Feb-2020.) $)
+    idmhm $p |- ( M e. Mnd -> ( _I |` B ) e. ( M MndHom M ) ) $=
+      ( va vb cmnd wcel cid cres wf cv cplusg cfv co wceq wral eqid fvresi syl
+      wa c0g w3a cmhm id wf1o f1oi f1of mndcl 3expb oveqan12d adantl ralrimivva
+      mp1i eqtr4d mndidcl 3jca ismhm syl21anbrc ) BFGZUSUSAAHAIZJZDKZEKZBLMZNZU
+      TMZVBUTMZVCUTMZVDNZOZEAPDAPZBUAMZUTMVLOZUBUTBBUCNGUSUDZVNUSVAVKVMAAUTUEVA
+      USAUFAAUTUGUMUSVJDEAAUSVBAGZVCAGZTZTZVFVEVIVRVEAGZVFVEOUSVOVPVSAVDBVBVCCV
+      DQZUHUIAVERSVQVIVEOUSVOVPVGVBVHVCVDAVBRAVCRUJUKUNULUSVLAGVMABVLCVLQZUOAVL
+      RSUPDEAAVDVDBBUTVLVLCCVTVTWAWAUQUR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
