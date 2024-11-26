@@ -144345,6 +144345,25 @@ $)
       YJXSWFXTWFYBWFYEWFYJWFYLWFWGWDWH $.
   $}
 
+  ${
+    $d B x y $.  $d F x y $.  $d .+ x y $.  $d .+^ x y $.  $d S x y $.
+    $d T x y $.  $d X x y $.  $d Y x y $.
+    mhmlin.b $e |- B = ( Base ` S ) $.
+    mhmlin.p $e |- .+ = ( +g ` S ) $.
+    mhmlin.q $e |- .+^ = ( +g ` T ) $.
+    $( A monoid homomorphism commutes with composition.  (Contributed by Mario
+       Carneiro, 7-Mar-2015.) $)
+    mhmlin $p |- ( ( F e. ( S MndHom T ) /\ X e. B /\ Y e. B ) ->
+        ( F ` ( X .+ Y ) ) = ( ( F ` X ) .+^ ( F ` Y ) ) ) $=
+      ( vx vy co wcel cfv wceq cv wral eqid cmhm wa cbs wf c0g cmnd w3a simprbi
+      ismhm simp2d fvoveq1 oveq1d eqeq12d fveq2d oveq2d rspc2v syl5com 3impib
+      fveq2 oveq2 ) FDEUANOZGAOZHAOZGHBNZFPZGFPZHFPZCNZQZVALRZMRZBNFPZVJFPZVKFP
+      ZCNZQZMASLASZVBVCUBVIVAAEUCPZFUDZVQDUEPZFPEUEPZQZVADUFOEUFOUBVSVQWBUGLMAV
+      RBCDEFWAVTIVRTJKVTTWATUIUHUJVPVIGVKBNZFPZVFVNCNZQLMGHAAVJGQZVLWDVOWEVJGVK
+      FBUKWFVMVFVNCVJGFUSULUMVKHQZWDVEWEVHWGWCVDFVKHGBUTUNWGVNVGVFCVKHFUSUOUMUP
+      UQUR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
