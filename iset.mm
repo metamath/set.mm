@@ -144416,6 +144416,36 @@ $)
       EGFVSULVTABEWAVPWB $.
   $}
 
+  ${
+    $d M m t x y $.  $d S t x y $.  $d s t x y $.
+    $( Reverse closure for submonoids.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    submrcl $p |- ( S e. ( SubMnd ` M ) -> M e. Mnd ) $=
+      ( vs vt vx vy cmnd cv c0g cfv wcel cplusg co wral wa cbs cpw crab csubmnd
+      df-submnd mptrcl ) CGCHZIJDHZKEHFHUBLJMUCKFUCNEUCNODUBPJQRSABEFDCTUA $.
+
+    issubm.b $e |- B = ( Base ` M ) $.
+    issubm.z $e |- .0. = ( 0g ` M ) $.
+    issubm.p $e |- .+ = ( +g ` M ) $.
+    $( Expand definition of a submonoid.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    issubm $p |- ( M e. Mnd -> ( S e. ( SubMnd ` M ) <->
+          ( S C_ B /\ .0. e. S /\ A. x e. S A. y e. S ( x .+ y ) e. S ) ) ) $=
+      ( vt vm cmnd wcel cfv cv wral wa cbs cvv csubmnd c0g cplusg cpw df-submnd
+      crab wss w3a wceq fveq2 pweqd eleq1d oveqd 2ralbidv anbi12d rabeqbidv wfn
+      co id basfn elex funfvex funfni sylancr pwexd rabexg fvmptd3 eleq2d eleq2
+      syl raleqbi1dv elrab wb sseq2i eleq1i oveqi 2ralbii anbi12i 3anass elpw2g
+      a1i anbi1d 3bitr4rd syl5bb bitrd ) FMNZEFUAOZNEFUBOZKPZNZAPZBPZFUCOZURZWI
+      NZBWIQZAWIQZRZKFSOZUDZUFZNZECUGZGENZWKWLDURZENZBEQAEQZUHZWFWGXAEWFLFLPZUB
+      OZWINZWKWLXIUCOZURZWINZBWIQAWIQZRZKXISOZUDZUFXAMUATABKLUEXIFUIZXPWRKXRWTX
+      SXQWSXIFSUJUKXSXKWJXOWQXSXJWHWIXIFUBUJULXSXNWOABWIWIXSXMWNWIXSXLWMWKWLXIF
+      UCUJUMULUNUOUPWFUSWFWTTNXATNWFWSTWFSTUQFTNWSTNZUTFMVAXTTFSFSVBVCVDZVEWRKW
+      TTVFVJVGVHXBEWTNZWHENZWNENZBEQZAEQZRZRZWFXHWRYGKEWTWIEUIWJYCWQYFWIEWHVIWP
+      YEAWIEWOYDBWIEWIEWNVIVKVKUOVLWFXCXDXGRZRZEWSUGZYGRZXHYHYJYLVMWFXCYKYIYGCW
+      SEHVNXDYCXGYFGWHEIVOXFYDABEEXEWNEDWMWKWLJVPVOVQVRVRWAXHYJVMWFXCXDXGVSWAWF
+      YBYKYGWFXTYBYKVMYAEWSTVTVJWBWCWDWE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
