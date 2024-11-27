@@ -144522,7 +144522,7 @@ $)
   $}
 
   ${
-    $d M x y $.  $d S x y $.
+    $d B x y $.  $d M x y $.  $d S x y $.
     submss.b $e |- B = ( Base ` M ) $.
     $( Submonoids are subsets of the base set.  (Contributed by Mario Carneiro,
        7-Mar-2015.) $)
@@ -144530,6 +144530,14 @@ $)
       ( vx vy csubmnd cfv wcel wss c0g cv cplusg co wral w3a cmnd submrcl eqid
       wb issubm syl ibi simp1d ) BCGHIZBAJZCKHZBIZELFLCMHZNBIFBOEBOZUEUFUHUJPZU
       ECQIUEUKTBCREFAUIBCUGDUGSUISUAUBUCUD $.
+
+    $( Every monoid is trivially a submonoid of itself.  (Contributed by Stefan
+       O'Rear, 15-Aug-2015.) $)
+    submid $p |- ( M e. Mnd -> B e. ( SubMnd ` M ) ) $=
+      ( vx vy cmnd wcel csubmnd cfv wss cv cplusg wral ssidd eqid mndidcl mndcl
+      c0g co 3expb ralrimivva issubm mpbir3and ) BFGZABHIGAAJBRIZAGDKZEKZBLIZSA
+      GZEAMDAMUDANABUECUEOZPUDUIDEAAUDUFAGUGAGUIAUHBUFUGCUHOZQTUADEAUHABUECUJUK
+      UBUC $.
   $}
 
 
