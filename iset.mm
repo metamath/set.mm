@@ -144629,6 +144629,27 @@ $)
       CWAVHZWCVHZWGVHZVIDEWAWGBCWCYFYGYHVIVJFGWAWGVRCWCYFYGYHVIVKVLVMR $.
   $}
 
+  ${
+    $d x y B $.  $d x y M $.  $d x y N $.  $d x y .0. $.
+    0mhm.z $e |- .0. = ( 0g ` N ) $.
+    0mhm.b $e |- B = ( Base ` M ) $.
+    $( The constant zero linear function between two monoids.  (Contributed by
+       Stefan O'Rear, 5-Sep-2015.) $)
+    0mhm $p |- ( ( M e. Mnd /\ N e. Mnd ) ->
+        ( B X. { .0. } ) e. ( M MndHom N ) ) $=
+      ( vx vy cmnd wcel wa cfv co wceq c0g eqid adantr cvv fvconst2g syl2anc wf
+      cbs csn cxp cv cplusg wral w3a cmhm id mndidcl adantl fconst6g syl mndlid
+      simpr eqcomd syl2anc2 wfn fn0g elexd funfvex sylancr eqeltrid mndcl 3expb
+      funfni adantlr simprl simprr oveq12d 3eqtr4d ralrimivva ismhm sylanbrc
+      3jca ) BIJZCIJZKZVSACUBLZADUCUDZUAZGUEZHUEZBUFLZMZWALZWCWALZWDWALZCUFLZMZ
+      NZHAUGGAUGZBOLZWALDNZUHWABCUIMJVSUJVSWBWMWOVSDVTJZWBVRWPVQVTCDVTPZEUKZULA
+      DVTUMUNVSWLGHAAVSWCAJZWDAJZKZKZDDDWJMZWGWKVSDXCNZXAVSVRWPXDVQVRUPZWRVRWPK
+      XCDVTWJCDDWQWJPZEUOUQURQXBDRJZWFAJZWGDNVSXGXAVSDCOLZREVSORUSCRJXIRJZUTVSC
+      IXEVAXJRCOCOVBVGVCVDZQZVQXAXHVRVQWSWTXHAWEBWCWDFWEPZVEVFVHADWFRSTXBWHDWID
+      WJXBXGWSWHDNXLVSWSWTVIADWCRSTXBXGWTWIDNXLVSWSWTVJADWDRSTVKVLVMVSXGWNAJZWO
+      XKVQXNVRABWNFWNPZUKQADWNRSTVPGHAVTWEWJBCWADWNFWQXMXFXOEVNVO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
