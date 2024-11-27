@@ -144521,6 +144521,17 @@ $)
       FVHUKULVKVPUOABCDVLVMFGUMUNUPVBVJVEVFVOPUQVCVIIJAVGBCEFHVGURUSUJUTVA $.
   $}
 
+  ${
+    $d M x y $.  $d S x y $.
+    submss.b $e |- B = ( Base ` M ) $.
+    $( Submonoids are subsets of the base set.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    submss $p |- ( S e. ( SubMnd ` M ) -> S C_ B ) $=
+      ( vx vy csubmnd cfv wcel wss c0g cv cplusg co wral w3a cmnd submrcl eqid
+      wb issubm syl ibi simp1d ) BCGHIZBAJZCKHZBIZELFLCMHZNBIFBOEBOZUEUFUHUJPZU
+      ECQIUEUKTBCREFAUIBCUGDUGSUISUAUBUCUD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
