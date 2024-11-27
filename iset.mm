@@ -144472,6 +144472,29 @@ $)
       VESVFUQVFVGAWBVNVOVPWAVIVJQGHJKVMLMNPOVKUPVL $.
   $}
 
+  ${
+    $d B a b $.  $d G a b $.  $d H a b $.  $d S a b $.  $d .0. a b $.
+    mndissubm.b $e |- B = ( Base ` G ) $.
+    mndissubm.s $e |- S = ( Base ` H ) $.
+    mndissubm.z $e |- .0. = ( 0g ` G ) $.
+    $( If the base set of a monoid is contained in the base set of another
+       monoid, and the group operation of the monoid is the restriction of the
+       group operation of the other monoid to its base set, and the identity
+       element of the the other monoid is contained in the base set of the
+       monoid, then the (base set of the) monoid is a submonoid of the other
+       monoid.  (Contributed by AV, 17-Feb-2024.) $)
+    mndissubm $p |- ( ( G e. Mnd /\ H e. Mnd )
+                     -> ( ( S C_ B /\ .0. e. S
+                            /\ ( +g ` H ) = ( ( +g ` G ) |` ( S X. S ) ) )
+                          -> S e. ( SubMnd ` G ) ) ) $=
+      ( va vb cmnd wcel wa cplusg cfv w3a cv wral cmgm mndmgm wss cxp cres wceq
+      csubmnd co simpr1 simpr2 anim12i ad2antrr 3simpb ad2antlr mgmsscl syl3anc
+      simpr ralrimivva wb eqid issubm mpbir3and ex ) CKLZDKLZMZBAUAZEBLZDNOCNOZ
+      BBUBUCUDZPZBCUEOLZVDVIMZVJVEVFIQZJQZVGUFBLZJBRIBRZVDVEVFVHUGVDVEVFVHUHVKV
+      NIJBBVKVLBLVMBLMZMCSLZDSLZMZVEVHMZVPVNVDVSVIVPVBVQVCVRCTDTUIUJVIVTVDVPVEV
+      FVHUKULVKVPUOABCDVLVMFGUMUNUPVBVJVEVFVOPUQVCVIIJAVGBCEFHVGURUSUJUTVA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
