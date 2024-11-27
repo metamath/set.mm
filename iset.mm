@@ -144673,6 +144673,29 @@ $)
       NWSPVRBCDWSYMYQWSRZVKVLVMVNFGWBWCWHWMACWDWSWQXFXEYCYHYPYRVOVP $.
   $}
 
+  ${
+    $d F x y z $.  $d M x y z $.  $d N x y z $.  $d X x y z $.
+    $( The homomorphic image of a submonoid is a submonoid.  (Contributed by
+       Mario Carneiro, 10-Mar-2015.) $)
+    mhmima $p |- ( ( F e. ( M MndHom N ) /\ X e. ( SubMnd ` M ) ) ->
+      ( F " X ) e. ( SubMnd ` N ) ) $=
+      ( vx vy vz co wcel csubmnd cfv wa cbs cv wral eqid adantr wceq syl3anc wb
+      cmhm cima wss c0g cplusg crn imassrn wf mhmf frnd sstrid mhm0 ffnd submss
+      adantl subm0cl fnfvima eqeltrrd simpll simprl sseldd simprr mhmlin submcl
+      3expb adantll anassrs ralrimiva oveq2 eleq1d ralima syl2anc oveq1 ralbidv
+      wfn mpbird cmnd w3a mhmrcl2 issubm syl mpbir3and ) ABCUAHIZDBJKIZLZADUBZC
+      JKIZWFCMKZUCZCUDKZWFIZENZFNZCUEKZHZWFIZFWFOZEWFOZWEWFAUFWHADUGWEBMKZWHAWC
+      WSWHAUHWDWSWHBCAWSPZWHPZUIQZUJUKWEBUDKZAKZWJWFWCXDWJRWDBCAWJXCXCPZWJPZULQ
+      WEAWSVOZDWSUCZXCDIZXDWFIWEWSWHAXBUMZWDXHWCWSDBWTUNUOZWDXIWCDBXCXEUPUOWSDA
+      XCUQSURWEWRGNZAKZWMWNHZWFIZFWFOZGDOZWEXPGDWEXLDIZLZXPXMWLAKZWNHZWFIZEDOZX
+      SYBEDWEXRWLDIZYBWEXRYDLZLZXLWLBUEKZHZAKZYAWFYFWCXLWSIWLWSIYIYARWCWDYEUSYF
+      DWSXLWEXHYEXKQZWEXRYDUTVAYFDWSWLYJWEXRYDVBVAWSYGWNBCAXLWLWTYGPZWNPZVCSYFX
+      GXHYHDIZYIWFIWEXGYEXJQYJWDYEYMWCWDXRYDYMYGDBXLWLYKVDVEVFWSDAYHUQSURVGVHWE
+      XPYCTZXRWEXGXHYNXJXKXOYBFEWSDAWMXTRXNYAWFWMXTXMWNVIVJVKVLQVPVHWEXGXHWRXQT
+      XJXKWQXPEGWSDAWLXMRZWPXOFWFYOWOXNWFWLXMWMWNVMVJVNVKVLVPWECVQIZWGWIWKWRVRT
+      WCYPWDBCAVSQEFWHWNWFCWJXAXFYLVTWAWB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
