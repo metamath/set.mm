@@ -144551,6 +144551,19 @@ $)
       EBQIUEUKTABREFUFUIABCUFSDUISUAUBUCUD $.
   $}
 
+  ${
+    $d M x y $.  $d .+ x y $.  $d S x y $.  $d X x y $.  $d Y y $.
+    submcl.p $e |- .+ = ( +g ` M ) $.
+    $( Submonoids are closed under the monoid operation.  (Contributed by Mario
+       Carneiro, 10-Mar-2015.) $)
+    submcl $p |- ( ( S e. ( SubMnd ` M ) /\ X e. S /\ Y e. S ) ->
+        ( X .+ Y ) e. S ) $=
+      ( vx vy csubmnd cfv wcel co wa cv wral cbs wss c0g w3a eqid wb issubm syl
+      cmnd submrcl ibi simp3d ovrspc2v sylan2 ancoms 3impb ) BCIJKZDBKZEBKZDEAL
+      BKZUMUNMZULUOULUPGNHNALBKHBOGBOZUOULBCPJZQZCRJZBKZUQULUSVAUQSZULCUDKULVBU
+      ABCUEGHURABCUTURTUTTFUBUCUFUGGHBBBADEUHUIUJUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
