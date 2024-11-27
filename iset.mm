@@ -144564,6 +144564,21 @@ $)
       ABCUEGHURABCUTURTUTTFUBUCUFUGGHBBBADEUHUIUJUK $.
   $}
 
+  ${
+    $d G a b $.  $d .0. a b $.
+    0subm.z $e |- .0. = ( 0g ` G ) $.
+    $( The zero submonoid of an arbitrary monoid.  (Contributed by AV,
+       17-Feb-2024.) $)
+    0subm $p |- ( G e. Mnd -> { .0. } e. ( SubMnd ` G ) ) $=
+      ( va vb cmnd wcel csn csubmnd cfv cbs wss cv co wral eqid syl wceq velsn
+      wa cplusg mndidcl snssd snidg anbi12i mndlid mpdan wb elsng mpbird oveq12
+      eqeltrd eleq1d syl5ibrcom syl5bi ralrimivv issubm mpbir3and ) AFGZBHZAIJG
+      UTAKJZLBUTGZDMZEMZAUAJZNZUTGZEUTODUTOUSBVAVAABVAPZCUBZUCUSBVAGZVBVIBVAUDQ
+      USVGDEUTUTVCUTGZVDUTGZTVCBRZVDBRZTZUSVGVKVMVLVNDBSEBSUEUSVGVOBBVENZUTGZUS
+      VQVPBRZUSVJVRVIVAVEABBVHVEPZCUFUGZUSVPVAGVQVRUHUSVPBVAVTVIULVPBVAUIQUJVOV
+      FVPUTVCBVDBVEUKUMUNUOUPDEVAVEUTABVHCVSUQUR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
