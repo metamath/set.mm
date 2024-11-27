@@ -144446,6 +144446,32 @@ $)
       YBYKYGWFXTYBYKVMYAEWSTVTVJWBWCWDWE $.
   $}
 
+  ${
+    $d x y z B $.  $d x y M $.  $d x y ph $.  $d x y ps $.  $d z .+ $.
+    $d z .0. $.  $d z ch $.  $d z et $.  $d z ta $.  $d z th $.
+    issubmd.b $e |- B = ( Base ` M ) $.
+    issubmd.p $e |- .+ = ( +g ` M ) $.
+    issubmd.z $e |- .0. = ( 0g ` M ) $.
+    issubmd.m $e |- ( ph -> M e. Mnd ) $.
+    issubmd.cz $e |- ( ph -> ch ) $.
+    issubmd.cp $e |- ( ( ph /\ ( ( x e. B /\ y e. B ) /\
+          ( th /\ ta ) ) ) -> et ) $.
+    issubmd.ch $e |- ( z = .0. -> ( ps <-> ch ) ) $.
+    issubmd.th $e |- ( z = x -> ( ps <-> th ) ) $.
+    issubmd.ta $e |- ( z = y -> ( ps <-> ta ) ) $.
+    issubmd.et $e |- ( z = ( x .+ y ) -> ( ps <-> et ) ) $.
+    $( Deduction for proving a submonoid.  (Contributed by Stefan O'Rear,
+       23-Aug-2015.)  (Revised by Stefan O'Rear, 5-Sep-2015.) $)
+    issubmd $p |- ( ph -> { z e. B | ps } e. ( SubMnd ` M ) ) $=
+      ( crab csubmnd cfv wcel wss cv co wral ssrab2 a1i cmnd mndidcl syl elrabd
+      elrab anbi12i adantr simprll simprrl mndcl syl3anc an4 sylan2b ralrimivva
+      wa w3a wb issubm mpbir3and ) ABIJUDZLUEUFUGZVMJUHZMVMUGZGUIZHUIZKUJZVMUGZ
+      HVMUKGVMUKZVOABIJULUMABCIMJTALUNUGZMJUGQJLMNPUOUPRUQAVTGHVMVMVQVMUGZVRVMU
+      GZVHAVQJUGZDVHZVRJUGZEVHZVHZVTWCWFWDWHBDIVQJUAURBEIVRJUBURUSAWIVHZBFIVSJU
+      CWJWBWEWGVSJUGAWBWIQUTAWEDWHVAAWFWGEVBJKLVQVRNOVCVDWIAWEWGVHDEVHVHFWEDWGE
+      VESVFUQVFVGAWBVNVOVPWAVIVJQGHJKVMLMNPOVKUPVL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
