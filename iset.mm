@@ -4279,6 +4279,32 @@ $)
   anbi2 $p |- ( ( ph <-> ps ) -> ( ( ch /\ ph ) <-> ( ch /\ ps ) ) ) $=
     ( wb id anbi2d ) ABDZABCGEF $.
 
+  ${
+    anbi1cd.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Introduce a proposition as left conjunct on the left-hand side and right
+       conjunct on the right-hand side of an equivalence.  Deduction form.
+       (Contributed by Peter Mazsa, 22-May-2021.) $)
+    anbi1cd $p |- ( ph -> ( ( th /\ ps ) <-> ( ch /\ th ) ) ) $=
+      ( wa anbi2d biancomd ) ADBFCDABCDEGH $.
+  $}
+
+  ${
+    bianass.1 $e |- ( ph <-> ( ps /\ ch ) ) $.
+    $( An inference to merge two lists of conjuncts.  (Contributed by Giovanni
+       Mascellani, 23-May-2019.) $)
+    bianass $p |- ( ( et /\ ph ) <-> ( ( et /\ ps ) /\ ch ) ) $=
+      ( wa anbi2i anass bitr4i ) DAFDBCFZFDBFCFAJDEGDBCHI $.
+
+    $( An inference to merge two lists of conjuncts.  (Contributed by Peter
+       Mazsa, 24-Sep-2022.) $)
+    bianassc $p |- ( ( et /\ ph ) <-> ( ( ps /\ et ) /\ ch ) ) $=
+      ( wa bianass ancom anbi1i bitri ) DAFDBFZCFBDFZCFABCDEGKLCDBHIJ $.
+  $}
+
+  $( Swap two conjuncts.  (Contributed by Peter Mazsa, 18-Sep-2022.) $)
+  an21 $p |- ( ( ( ph /\ ps ) /\ ch ) <-> ( ps /\ ( ph /\ ch ) ) ) $=
+    ( wa biid bianassc bicomi ) BACDZDABDCDHACBHEFG $.
+
   $( Theorem *4.22 of [WhiteheadRussell] p. 117.  (Contributed by NM,
      3-Jan-2005.) $)
   bitr $p |- ( ( ( ph <-> ps ) /\ ( ps <-> ch ) ) -> ( ph <-> ch ) ) $=
