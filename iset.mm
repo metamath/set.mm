@@ -3819,6 +3819,16 @@ $)
   $}
 
   ${
+    syl2anc2.1 $e |- ( ph -> ps ) $.
+    syl2anc2.2 $e |- ( ps -> ch ) $.
+    syl2anc2.3 $e |- ( ( ps /\ ch ) -> th ) $.
+    $( Double syllogism inference combined with contraction.  (Contributed by
+       BTernaryTau, 29-Sep-2023.) $)
+    syl2anc2 $p |- ( ph -> th ) $=
+      ( syl syl2anc ) ABCDEABCEFHGI $.
+  $}
+
+  ${
     sylancl.1 $e |- ( ph -> ps ) $.
     sylancl.2 $e |- ch $.
     sylancl.3 $e |- ( ( ps /\ ch ) -> th ) $.
