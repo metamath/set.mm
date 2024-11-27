@@ -144391,6 +144391,31 @@ $)
       RSUPDEAAVDVDBBUTVLVLCCVTVTWAWAUQUR $.
   $}
 
+  ${
+    $d B x y $.  $d C x y $.  $d F x y $.  $d R x y $.  $d S x y $.
+    mhmf1o.b $e |- B = ( Base ` R ) $.
+    mhmf1o.c $e |- C = ( Base ` S ) $.
+    $( A monoid homomorphism is bijective iff its converse is also a monoid
+       homomorphism.  (Contributed by AV, 22-Oct-2019.) $)
+    mhmf1o $p |- ( F e. ( R MndHom S )
+                   -> ( F : B -1-1-onto-> C <-> `' F e. ( S MndHom R ) ) ) $=
+      ( vx vy cmhm co wcel wf1o wa cmnd cfv wceq adantr eqid syl2anc ccnv wf cv
+      cplusg wral c0g w3a mhmrcl2 mhmrcl1 jca f1ocnv adantl syl simpll ffvelrnd
+      simprl simprr mhmlin syl3anc simpr f1ocnvfv2 oveq12d eqtrd mndcl f1ocnvfv
+      f1of wi mpd ralrimivva mhm0 eqcomd fveq2d mndidcl f1ocnvfv1 3jca sylanbrc
+      ismhm wfn mhmf ffnd dff1o4 impbida ) ECDJKLZABEMZEUAZDCJKLZWCWDNZDOLZCOLZ
+      NZBAWEUBZHUCZIUCZDUDPZKZWEPWLWEPZWMWEPZCUDPZKZQZIBUEHBUEZDUFPZWEPZCUFPZQZ
+      UGWFWCWJWDWCWHWICDEUHCDEUIZUJRWGWKXAXEWGBAWEMZWKWDXGWCABEUKULBAWEVFUMZWGW
+      THIBBWGWLBLZWMBLZNZNZWSEPZWOQZWTXLXMWPEPZWQEPZWNKZWOXLWCWPALZWQALZXMXQQWC
+      WDXKUNXLBAWLWEWGWKXKXHRZWGXIXJUPZUOZXLBAWMWEXTWGXIXJUQZUOZAWRWNCDEWPWQFWR
+      SZWNSZURUSXLXOWLXPWMWNXLWDXIXOWLQWGWDXKWCWDUTZRZYAABWLEVATXLWDXJXPWMQYHYC
+      ABWMEVATVBVCXLWDWSALZXNWTVGYHXLWIXRXSYIWGWIXKWCWIWDXFRRYBYDAWRCWPWQFYEVDU
+      SABWSWOEVETVHVIWGXCXDEPZWEPZXDWGXBYJWEWGYJXBWCYJXBQWDCDEXBXDXDSZXBSZVJRVK
+      VLWGWDXDALZYKXDQYGWCYNWDWCWIYNXFACXDFYLVMUMRABXDEVNTVCVOHIBAWNWRDCWEXDXBG
+      FYFYEYMYLVQVPWCWFNZEAVRWEBVRWDYOABEWCABEUBWFABCDEFGVSRVTYOBAWEWFWKWCBADCW
+      EGFVSULVTABEWAVPWB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
