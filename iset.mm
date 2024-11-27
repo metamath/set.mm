@@ -144540,6 +144540,17 @@ $)
       UBUC $.
   $}
 
+  ${
+    $d M x y $.  $d S x y $.
+    subm0cl.z $e |- .0. = ( 0g ` M ) $.
+    $( Submonoids contain zero.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    subm0cl $p |- ( S e. ( SubMnd ` M ) -> .0. e. S ) $=
+      ( vx vy csubmnd cfv wcel cbs wss cv cplusg co wral w3a cmnd submrcl eqid
+      wb issubm syl ibi simp2d ) ABGHIZABJHZKZCAIZELFLBMHZNAIFAOEAOZUEUGUHUJPZU
+      EBQIUEUKTABREFUFUIABCUFSDUISUAUBUCUD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
