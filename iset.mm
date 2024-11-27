@@ -27702,6 +27702,24 @@ $)
       ( nfcv nfv cbvrexcsf ) ABCDEFDEICFIADJBCJHGK $.
   $}
 
+  ${
+    $d A x y $.  $d B y $.  $d C x $.  $d D y $.  $d E x $.  $d ph x $.
+    $d ch x $.  $d ps y $.
+    rspc2vd.a $e |- ( x = A -> ( th <-> ch ) ) $.
+    rspc2vd.b $e |- ( y = B -> ( ch <-> ps ) ) $.
+    rspc2vd.c $e |- ( ph -> A e. C ) $.
+    rspc2vd.d $e |- ( ( ph /\ x = A ) -> D = E ) $.
+    rspc2vd.e $e |- ( ph -> B e. E ) $.
+    $( Deduction version of 2-variable restricted specialization, using
+       implicit substitution.  Notice that the class ` D ` for the second set
+       variable ` y ` may depend on the first set variable ` x ` .
+       (Contributed by AV, 29-Mar-2021.) $)
+    rspc2vd $p |- ( ph -> ( A. x e. C A. y e. D th -> ps ) ) $=
+      ( csb wcel wral csbied eleqtrrd nfcsb1v nfv nfralw wceq csbeq1a raleqbidv
+      wi cv rspc syl rspcv sylsyld ) AHEGJQZRDFJSZEISZCFUNSZBAHKUNPAEGJKINOTUAA
+      GIRUPUQUHNUOUQEGICEFUNEGJUBCEUCUDEUIGUEDCFJUNEGJUFLUGUJUKCBFHUNMULUM $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
