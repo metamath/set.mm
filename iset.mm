@@ -144725,6 +144725,70 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Groups
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Grp $.
+  $c invg $.
+  $c -g $.
+
+  $( Extend class notation with class of all groups. $)
+  cgrp $a class Grp $.
+
+  $( Extend class notation with inverse of group element. $)
+  cminusg $a class invg $.
+
+  $( Extend class notation with group subtraction (or division) operation. $)
+  csg $a class -g $.
+
+  ${
+    $d a g m w x y $.
+    $( Define class of all groups.  A group is a monoid ( ~ df-mnd ) whose
+       internal operation is such that every element admits a left inverse
+       (which can be proven to be a two-sided inverse).  Thus, a group ` G ` is
+       an algebraic structure formed from a base set of elements (notated
+       ` ( Base `` G ) ` per ~ df-base ) and an internal group operation
+       (notated ` ( +g `` G ) ` per ~ df-plusg ).  The operation combines any
+       two elements of the group base set and must satisfy the 4 group axioms:
+       closure (the result of the group operation must always be a member of
+       the base set, see ~ grpcl ), associativity (so
+       ` ( ( a +g b ) +g c ) = ( a +g ( b +g c ) ) ` for any a, b, c, see
+       ~ grpass ), identity (there must be an element ` e = ( 0g `` G ) ` such
+       that ` e +g a = a +g e = a ` for any a), and inverse (for each element a
+       in the base set, there must be an element ` b = invg a ` in the base set
+       such that ` a +g b = b +g a = e ` ).  It can be proven that the identity
+       element is unique ( ~ grpideu ).  Groups need not be commutative; a
+       commutative group is an Abelian group (see ~ df-abl ).  Subgroups can
+       often be formed from groups, see ~ df-subg .  An example of an (Abelian)
+       group is the set of complex numbers ` CC ` over the group operation
+       ` + ` (addition), as proven in ~ cnaddablx ; an Abelian group is a group
+       as proven in ~ ablgrp .  Other structures include groups, including
+       unital rings ( ~ df-ring ) and fields ( ~ df-field ).  (Contributed by
+       NM, 17-Oct-2012.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    df-grp $a |- Grp = { g e. Mnd | A. a e. ( Base ` g ) E. m e. ( Base ` g )
+      ( m ( +g ` g ) a ) = ( 0g ` g ) } $.
+
+    $( Define inverse of group element.  (Contributed by NM, 24-Aug-2011.) $)
+    df-minusg $a |- invg = ( g e. _V |-> ( x e. ( Base ` g )
+  |-> ( iota_ w e. ( Base ` g ) ( w ( +g ` g ) x ) = ( 0g ` g ) ) ) ) $.
+
+    $( Define group subtraction (also called division for multiplicative
+       groups).  (Contributed by NM, 31-Mar-2014.) $)
+    df-sbg $a |- -g = ( g e. _V |-> ( x e. ( Base ` g ) , y e. ( Base ` g )
+  |-> ( x ( +g ` g ) ( ( invg ` g ) ` y ) ) ) ) $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
@@ -161920,10 +161984,22 @@ htmldef "Mnd" as
     "<IMG SRC='_mnd.gif' WIDTH=28 HEIGHT=19 ALT=' Mnd' TITLE='Mnd'>";
   althtmldef "Mnd" as "Mnd";
   latexdef "Mnd" as "\mathrm{Mnd}";
+htmldef "Grp" as
+    "<IMG SRC='_grp.gif' WIDTH=25 HEIGHT=19 ALT=' Grp' TITLE='Grp'>";
+  althtmldef "Grp" as "Grp";
+  latexdef "Grp" as "\mathrm{Grp}";
+htmldef "invg" as "<IMG SRC='_inv.gif' WIDTH=19 HEIGHT=19 ALT=' inv' " +
+    "TITLE='inv'><IMG SRC='subg.gif' WIDTH=7 HEIGHT=19 ALT='g' TITLE='g'>";
+  althtmldef "invg" as "inv<SUB>g</SUB>";
+  latexdef "invg" as "\operatorname{\mathrm{inv}_\mathrm{g}}";
 htmldef "+f" as "<IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'>" +
     "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT='f' TITLE='f'>";
   althtmldef "+f" as '+<SUB>&#x1D453;</SUB>';
   latexdef "+f" as "+_f";
+htmldef "-g" as
+    "<IMG SRC='_minusg.gif' WIDTH=17 HEIGHT=19 ALT=' -g' TITLE='-g'>";
+  althtmldef "-g" as "-<SUB>g</SUB>";
+  latexdef "-g" as "-_\mathrm{g}";
 htmldef "MndHom" as " MndHom ";
   althtmldef "MndHom" as " MndHom ";
   latexdef "MndHom" as " \mathrm{MndHom} ";
