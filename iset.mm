@@ -144840,6 +144840,25 @@ $)
       ZDNUCOUCUBDNUCOPACQBCRESABCDEGHTUA $.
   $}
 
+  ${
+    grpmndd.1 $e |- ( ph -> G e. Grp ) $.
+    $( A group is a monoid.  (Contributed by SN, 1-Jun-2024.) $)
+    grpmndd $p |- ( ph -> G e. Mnd ) $=
+      ( cgrp wcel cmnd grpmnd syl ) ABDEBFECBGH $.
+  $}
+
+  ${
+    grpcld.b $e |- B = ( Base ` G ) $.
+    grpcld.p $e |- .+ = ( +g ` G ) $.
+    grpcld.r $e |- ( ph -> G e. Grp ) $.
+    grpcld.x $e |- ( ph -> X e. B ) $.
+    grpcld.y $e |- ( ph -> Y e. B ) $.
+    $( Closure of the operation of a group.  (Contributed by SN,
+       29-Jul-2024.) $)
+    grpcld $p |- ( ph -> ( X .+ Y ) e. B ) $=
+      ( cgrp wcel co grpcl syl3anc ) ADLMEBMFBMEFCNBMIJKBCDEFGHOP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
