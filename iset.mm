@@ -144859,6 +144859,21 @@ $)
       ( cgrp wcel co grpcl syl3anc ) ADLMEBMFBMEFCNBMIJKBCDEFGHOP $.
   $}
 
+  ${
+    grpplusf.1 $e |- B = ( Base ` G ) $.
+    grpplusf.2 $e |- F = ( +f ` G ) $.
+    $( The group addition operation is a function.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.) $)
+    grpplusf $p |- ( G e. Grp -> F : ( B X. B ) --> B ) $=
+      ( cgrp wcel cmnd cxp wf grpmnd mndplusf syl ) CFGCHGAAIABJCKABCDELM $.
+
+    $( The group addition operation is a function onto the base set/set of
+       group elements.  (Contributed by NM, 30-Oct-2006.)  (Revised by AV,
+       30-Aug-2021.) $)
+    grpplusfo $p |- ( G e. Grp -> F : ( B X. B ) -onto-> B ) $=
+      ( cgrp wcel cmnd cxp wfo grpmnd mndpfo syl ) CFGCHGAAIABJCKABCDELM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
