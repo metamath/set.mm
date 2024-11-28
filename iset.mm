@@ -144786,6 +144786,22 @@ $)
   |-> ( x ( +g ` g ) ( ( invg ` g ) ` y ) ) ) ) $.
   $}
 
+  ${
+    $d a g m B $.  $d a g m G $.  $d g .+ $.  $d g .0. $.
+    isgrp.b $e |- B = ( Base ` G ) $.
+    isgrp.p $e |- .+ = ( +g ` G ) $.
+    isgrp.z $e |- .0. = ( 0g ` G ) $.
+    $( The predicate "is a group".  (This theorem demonstrates the use of
+       symbols as variable names, first proposed by FL in 2010.)  (Contributed
+       by NM, 17-Oct-2012.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    isgrp $p |- ( G e. Grp <->
+      ( G e. Mnd /\ A. a e. B E. m e. B ( m .+ a ) = .0. ) ) $=
+      ( vg cv cplusg cfv co c0g wceq cbs wrex fveq2 eqtr4di wral cmnd rexeqbidv
+      cgrp oveqd eqeq12d raleqbidv df-grp elrab2 ) CKZFKZJKZLMZNZULOMZPZCULQMZR
+      ZFUQUAUJUKBNZEPZCARZFAUAJDUBUDULDPZURVAFUQAVBUQDQMAULDQSGTZVBUPUTCUQAVCVB
+      UNUSUOEVBUMBUJUKVBUMDLMBULDLSHTUEVBUODOMEULDOSITUFUCUGJCFUHUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
