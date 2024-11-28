@@ -144802,6 +144802,28 @@ $)
       UNUSUOEVBUMBUJUKVBUMDLMBULDLSHTUEVBUODOMEULDOSITUFUCUGJCFUHUI $.
   $}
 
+  ${
+    $d u x y B $.  $d a m u x y G $.  $d u x .+ $.  $d x y X $.  $d x .0. $.
+    $( A group is a monoid.  (Contributed by Mario Carneiro, 6-Jan-2015.) $)
+    grpmnd $p |- ( G e. Grp -> G e. Mnd ) $=
+      ( vm va cgrp wcel cmnd cv cplusg cfv co c0g wceq cbs wrex wral eqid isgrp
+      simplbi ) ADEAFEBGCGAHIZJAKIZLBAMIZNCUAOUASBATCUAPSPTPQR $.
+
+    grpcl.b $e |- B = ( Base ` G ) $.
+    grpcl.p $e |- .+ = ( +g ` G ) $.
+    $( Closure of the operation of a group.  (Contributed by NM,
+       14-Aug-2011.) $)
+    grpcl $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) -> ( X .+ Y ) e. B ) $=
+      ( cgrp wcel cmnd co grpmnd mndcl syl3an1 ) CHICJIDAIEAIDEBKAICLABCDEFGMN
+      $.
+
+    $( A group operation is associative.  (Contributed by NM, 14-Aug-2011.) $)
+    grpass $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+              ( ( X .+ Y ) .+ Z ) = ( X .+ ( Y .+ Z ) ) ) $=
+      ( cgrp wcel cmnd w3a co wceq grpmnd mndass sylan ) CIJCKJDAJEAJFAJLDEBMFB
+      MDEFBMBMNCOABCDEFGHPQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
