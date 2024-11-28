@@ -144822,6 +144822,22 @@ $)
               ( ( X .+ Y ) .+ Z ) = ( X .+ ( Y .+ Z ) ) ) $=
       ( cgrp wcel cmnd w3a co wceq grpmnd mndass sylan ) CIJCKJDAJEAJFAJLDEBMFB
       MDEFBMBMNCOABCDEFGHPQ $.
+
+    grpinvex.p $e |- .0. = ( 0g ` G ) $.
+    $( Every member of a group has a left inverse.  (Contributed by NM,
+       16-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    grpinvex $p |- ( ( G e. Grp /\ X e. B ) -> E. y e. B ( y .+ X ) = .0. ) $=
+      ( vx cgrp wcel cv co wceq wrex wral cmnd isgrp simprbi oveq2 eqeq1d sylan
+      rexbidv rspccva ) DKLZAMZJMZCNZFOZABPZJBQZEBLUGECNZFOZABPZUFDRLULBCADFJGH
+      ISTUKUOJEBUHEOZUJUNABUPUIUMFUHEUGCUAUBUDUEUC $.
+
+    $( The two-sided identity element of a group is unique.  Lemma 2.2.1(a) of
+       [Herstein] p. 55.  (Contributed by NM, 16-Aug-2011.)  (Revised by Mario
+       Carneiro, 8-Dec-2014.) $)
+    grpideu $p |- ( G e. Grp ->
+      E! u e. B A. x e. B ( ( u .+ x ) = x /\ ( x .+ u ) = x ) ) $=
+      ( cgrp wcel cmnd cv co wceq wa wral wreu grpmnd mndideu syl ) EJKELKBMZAM
+      ZDNUCOUCUBDNUCOPACQBCRESABCDEGHTUA $.
   $}
 
 
