@@ -18388,6 +18388,7 @@ New usage of "php3OLD" is discouraged (0 uses).
 New usage of "phpOLD" is discouraged (0 uses).
 New usage of "phpar" is discouraged (2 uses).
 New usage of "phpar2" is discouraged (2 uses).
+New usage of "phpeqdOLD" is discouraged (0 uses).
 New usage of "phplem1OLD" is discouraged (1 uses).
 New usage of "phplem2OLD" is discouraged (1 uses).
 New usage of "phplem3OLD" is discouraged (2 uses).
@@ -20954,6 +20955,7 @@ Proof modification of "perpdragALT" is discouraged (241 steps).
 Proof modification of "php2OLD" is discouraged (110 steps).
 Proof modification of "php3OLD" is discouraged (463 steps).
 Proof modification of "phpOLD" is discouraged (378 steps).
+Proof modification of "phpeqdOLD" is discouraged (77 steps).
 Proof modification of "phplem1OLD" is discouraged (70 steps).
 Proof modification of "phplem2OLD" is discouraged (173 steps).
 Proof modification of "phplem3OLD" is discouraged (82 steps).
