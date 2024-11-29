@@ -144907,6 +144907,18 @@ $)
       CDWEHAWDBDWEHVBVCVDVGVQVMBEVOCVQTVMTVOTVHWEWABFWCCWETWATWCTVHVI $.
   $}
 
+  ${
+    $d x y K $.  $d x y L $.
+    grpprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    grpprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    $( If two structures have the same group components (properties), one is a
+       group iff the other one is.  (Contributed by NM, 11-Oct-2013.) $)
+    grpprop $p |- ( K e. Grp <-> L e. Grp ) $=
+      ( vx vy cgrp wcel wb wtru cbs cfv eqidd wceq a1i cv cplusg co wa oveqi
+      grppropd mptru ) AGHBGHIJEFAKLZABJUCMUCBKLNJCOEPZFPZAQLZRUDUEBQLZRNJUDUCH
+      UEUCHSSUFUGUDUEDTOUAUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
