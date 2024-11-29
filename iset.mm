@@ -144884,6 +144884,29 @@ $)
       ( cgrp wcel cmnd cxp wfo grpmnd mndpfo syl ) CFGCHGAAIABJCKABCDELM $.
   $}
 
+  ${
+    $d x y z w B $.  $d x y z w K $.  $d x y z w L $.  $d x y z w ph $.
+    grppropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    grppropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    grppropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    $( If two structures have the same group components (properties), one is a
+       group iff the other one is.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+    grppropd $p |- ( ph -> ( K e. Grp <-> L e. Grp ) ) $=
+      ( vz vw wcel cv cfv co wceq wrex wral wa eqid cmnd cplusg c0g cbs cgrp wb
+      mndpropd cvv adantr basmexd ralrimivva oveq1 eqeq12d oveq2 cbvral2v sylib
+      r19.21bi grpidpropdg anass1rs rexbidva ralbidva rexeqdv raleqbidv 3bitr3d
+      simprl anasss anbi12d isgrp 3bitr4g ) AEUALZBMZCMZEUBNZOZEUCNZPZBEUDNZQZC
+      VQRZSFUALZVKVLFUBNZOZFUCNZPZBFUDNZQZCWERZSEUELFUELAVJVTVSWGABCDEFGHIUGAVP
+      BDQZCDRWDBDQZCDRVSWGAWHWICDAVLDLZSVPWDBDAVKDLZWJVPWDUFAWKWJSZSZVNWBVOWCIW
+      MJKDEFUHUHADVQPWLGUIZADWEPWLHUIZWMVKDEWNAWKWJVEZUJWMVKDFWOWPUJWMJMZDLZKMZ
+      DLWQWSVMOZWQWSWAOZPZWMWRSXBKDWMXBKDRZJDAXCJDRZWLAVNWBPZCDRBDRXDAXEBCDDIUK
+      XEXBWQVLVMOZWQVLWAOZPBCJKDDVKWQPVNXFWBXGVKWQVLVMULVKWQVLWAULUMVLWSPXFWTXG
+      XAVLWSWQVMUNVLWSWQWAUNUMUOUPUIUQUQVFURUMUSUTVAAWHVRCDVQGAVPBDVQGVBVCAWIWF
+      CDWEHAWDBDWEHVBVCVDVGVQVMBEVOCVQTVMTVOTVHWEWABFWCCWETWATWCTVHVI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
