@@ -144919,6 +144919,40 @@ $)
       UEUCHSSUFUGUDUEDTOUAUB $.
   $}
 
+  ${
+    $d x y .+ $.  $d y .0. $.  $d x y B $.  $d x y G $.  $d x y ph $.
+    $d y N $.
+    isgrpd2.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    isgrpd2.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    isgrpd2.z $e |- ( ph -> .0. = ( 0g ` G ) ) $.
+    isgrpd2.g $e |- ( ph -> G e. Mnd ) $.
+    ${
+      isgrpd2e.n $e |- ( ( ph /\ x e. B ) -> E. y e. B ( y .+ x ) = .0. ) $.
+      $( Deduce a group from its properties.  In this version of ~ isgrpd2 , we
+         don't assume there is an expression for the inverse of ` x ` .
+         (Contributed by NM, 10-Aug-2013.) $)
+      isgrpd2e $p |- ( ph -> G e. Grp ) $=
+        ( wcel cv cfv co wceq wrex wral eqid cmnd cplusg c0g cbs cgrp ralrimiva
+        oveqd eqeq12d rexeqbidv raleqbidv mpbid isgrp sylanbrc ) AFUAMCNZBNZFUB
+        OZPZFUCOZQZCFUDOZRZBUTSZFUEMKAUNUOEPZGQZCDRZBDSVBAVEBDLUFAVEVABDUTHAVDU
+        SCDUTHAVCUQGURAEUPUNUOIUGJUHUIUJUKUTUPCFURBUTTUPTURTULUM $.
+    $}
+
+    isgrpd2.n $e |- ( ( ph /\ x e. B ) -> N e. B ) $.
+    isgrpd2.j $e |- ( ( ph /\ x e. B ) -> ( N .+ x ) = .0. ) $.
+    $( Deduce a group from its properties. ` N ` (negative) is normally
+       dependent on ` x ` i.e. read it as ` N ( x ) ` .  Note: normally we
+       don't use a ` ph ` antecedent on hypotheses that name structure
+       components, since they can be eliminated with ~ eqid , but we make an
+       exception for theorems such as ~ isgrpd2 , ~ ismndd , and ~ islmodd
+       since theorems using them often rewrite the structure components.
+       (Contributed by NM, 10-Aug-2013.) $)
+    isgrpd2 $p |- ( ph -> G e. Grp ) $=
+      ( vy cv wcel wa co wceq wrex oveq1 eqeq1d rspcev syl2anc isgrpd2e ) ABNCD
+      EGHIJKABOZCPQFCPFUFDRZGSZNOZUFDRZGSZNCTLMUKUHNFCUIFSUJUGGUIFUFDUAUBUCUDUE
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
