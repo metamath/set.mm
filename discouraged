@@ -14244,6 +14244,7 @@ New usage of "0cnALT2" is discouraged (0 uses).
 New usage of "0cnALT3" is discouraged (0 uses).
 New usage of "0cnfn" is discouraged (4 uses).
 New usage of "0cnop" is discouraged (1 uses).
+New usage of "0domgOLD" is discouraged (0 uses).
 New usage of "0heALT" is discouraged (0 uses).
 New usage of "0hmop" is discouraged (9 uses).
 New usage of "0idsr" is discouraged (8 uses).
@@ -19560,6 +19561,7 @@ New usage of "zrdivrng" is discouraged (1 uses).
 Proof modification of "0cnALT" is discouraged (82 steps).
 Proof modification of "0cnALT2" is discouraged (49 steps).
 Proof modification of "0cnALT3" is discouraged (3 steps).
+Proof modification of "0domgOLD" is discouraged (17 steps).
 Proof modification of "0heALT" is discouraged (25 steps).
 Proof modification of "0nelopabOLD" is discouraged (91 steps).
 Proof modification of "0nnnALT" is discouraged (11 steps).
