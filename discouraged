@@ -16205,6 +16205,7 @@ New usage of "dochord2N" is discouraged (0 uses).
 New usage of "dochpolN" is discouraged (0 uses).
 New usage of "dochsordN" is discouraged (0 uses).
 New usage of "dochspocN" is discouraged (0 uses).
+New usage of "dom0OLD" is discouraged (0 uses).
 New usage of "domepOLD" is discouraged (0 uses).
 New usage of "dral1" is discouraged (10 uses).
 New usage of "dral1-o" is discouraged (4 uses).
@@ -20118,6 +20119,7 @@ Proof modification of "djuexALT" is discouraged (51 steps).
 Proof modification of "dmfexALT" is discouraged (25 steps).
 Proof modification of "dmmpogaOLD" is discouraged (31 steps).
 Proof modification of "dmtrclfvRP" is discouraged (46 steps).
+Proof modification of "dom0OLD" is discouraged (40 steps).
 Proof modification of "domepOLD" is discouraged (51 steps).
 Proof modification of "dral1ALT" is discouraged (34 steps).
 Proof modification of "dral1vOLD" is discouraged (36 steps).
