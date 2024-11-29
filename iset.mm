@@ -144953,6 +144953,39 @@ $)
       $.
   $}
 
+  ${
+    $d x y z .+ $.  $d x y z .0. $.  $d x y z B $.  $d y N $.  $d x y z ph $.
+    $d x y z G $.
+    isgrpd.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    isgrpd.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    isgrpd.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
+    isgrpd.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                   ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+    isgrpd.z $e |- ( ph -> .0. e. B ) $.
+    isgrpd.i $e |- ( ( ph /\ x e. B ) -> ( .0. .+ x ) = x ) $.
+    ${
+      isgrpde.n $e |- ( ( ph /\ x e. B ) -> E. y e. B ( y .+ x ) = .0. ) $.
+      $( Deduce a group from its properties.  In this version of ~ isgrpd , we
+         don't assume there is an expression for the inverse of ` x ` .
+         (Contributed by NM, 6-Jan-2015.) $)
+      isgrpde $p |- ( ph -> G e. Grp ) $=
+        ( grpridd grpidd ismndd isgrpd2e ) ABCEFGHIJABEFGHIJMNABCDEFHKMNLOPZQAB
+        CDEFGHIJKLMNTROS $.
+    $}
+
+    isgrpd.n $e |- ( ( ph /\ x e. B ) -> N e. B ) $.
+    isgrpd.j $e |- ( ( ph /\ x e. B ) -> ( N .+ x ) = .0. ) $.
+    $( Deduce a group from its properties.  Unlike ~ isgrpd2 , this one goes
+       straight from the base properties rather than going through ` Mnd ` .
+       ` N ` (negative) is normally dependent on ` x ` i.e. read it as
+       ` N ( x ) ` .  (Contributed by NM, 6-Jun-2013.)  (Revised by Mario
+       Carneiro, 6-Jan-2015.) $)
+    isgrpd $p |- ( ph -> G e. Grp ) $=
+      ( cv wcel wceq wa co wrex oveq1 eqeq1d rspcev syl2anc isgrpde ) ABCDEFGIJ
+      KLMNOABRZESUAHESHUIFUBZITZCRZUIFUBZITZCEUCPQUNUKCHEULHTUMUJIULHUIFUDUEUFU
+      GUH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
