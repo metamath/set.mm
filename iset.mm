@@ -143910,9 +143910,9 @@ $)
     $d B a b c $.  $d B a e w $.  $d G a b c w $.  $d .+ a e $.  $d .+ b c $.
     ismnd.b $e |- B = ( Base ` G ) $.
     ismnd.p $e |- .+ = ( +g ` G ) $.
-    $( The predicate "is a monoid".  This is the definig theorem of a monoid by
-       showing that a set is a monoid if and only if it is a set equipped with
-       a closed, everywhere defined internal operation (so, a magma, see
+    $( The predicate "is a monoid".  This is the defining theorem of a monoid
+       by showing that a set is a monoid if and only if it is a set equipped
+       with a closed, everywhere defined internal operation (so, a magma, see
        ~ mndcl ), whose operation is associative (so, a semigroup, see also
        ~ mndass ) and has a two-sided neutral element (see ~ mndid ).
        (Contributed by Mario Carneiro, 6-Jan-2015.)  (Revised by AV,
