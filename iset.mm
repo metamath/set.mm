@@ -142020,6 +142020,16 @@ $)
   $}
 
   ${
+    basmexd.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    basmexd.m $e |- ( ph -> A e. B ) $.
+    $( A structure whose base is inhabited is a set.  (Contributed by Jim
+       Kingdon, 28-Nov-2024.) $)
+    basmexd $p |- ( ph -> G e. _V ) $=
+      ( cbs cdm wrel cfv wcel cvv wfn basfn fnrel ax-mp eleqtrd relelfvdm elexd
+      sylancr ) ADGHZAGIZBDGJZKDUAKGLMUBNLGOPABCUCFEQBDGRTS $.
+  $}
+
+  ${
     $d a w $.
     $( The structure restriction is a proper operator, so it can be used with
        ~ ovprc1 .  (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
