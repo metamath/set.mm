@@ -93,7 +93,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-27-Nov-24 eldifsucnn[same]      moved from SF's mathbox to main set.mm
+27-Nov-24 eldifsucnn [same]     moved from SF's mathbox to main set.mm
 27-Nov-24 nnasmo    [same]      moved from SF's mathbox to main set.mm
 27-Nov-24 rdg0n     [same]      moved from SF's mathbox to main set.mm
 27-Nov-24 dfse3     [same]      moved from SF's mathbox to main set.mm
