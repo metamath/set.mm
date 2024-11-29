@@ -145011,6 +145011,33 @@ $)
   grpsgrp $p |- ( G e. Grp -> G e. Smgrp ) $=
     ( cgrp wcel cmnd csgrp grpmnd mndsgrp syl ) ABCADCAECAFAGH $.
 
+  ${
+    $d B a b c i n x $.  $d G a b c i n x $.  $d .+ a b c i n x $.
+    dfgrp2.b $e |- B = ( Base ` G ) $.
+    dfgrp2.p $e |- .+ = ( +g ` G ) $.
+    $( Alternate definition of a group as semigroup with a left identity and a
+       left inverse for each element.  This "definition" is weaker than
+       ~ df-grp , based on the definition of a monoid which provides a left and
+       a right identity.  (Contributed by AV, 28-Aug-2021.) $)
+    dfgrp2 $p |- ( G e. Grp <-> ( G e. Smgrp /\ E. n e. B A. x e. B
+                          ( ( n .+ x ) = x /\ E. i e. B ( i .+ x ) = n ) ) ) $=
+      ( va vb wcel cv co wceq wrex wa cfv eqeq1d adantl wi vc cgrp wral grpsgrp
+      csgrp c0g cmnd grpmnd eqid mndidcl wb oveq1 eqeq2 rexbidv anbi12d ralbidv
+      syl mndlid sylan grpinvex jca ralrimiva rspcedvd cbs cplusg sgrpmgm mgmcl
+      a1i cmgm syl3an1 sgrpass adantll simpll oveq2 eqeq12d rspcv simpl syl6com
+      w3a id ad2antlr imp cbvrexvw biimpi isgrpde ex rexlimiva impcom impbii )
+      FUBKZFUEKZELZALZCMZWMNZDLZWMCMZWLNZDBOZPZABUCZEBOZPWJWKXBFUDWJXAFUFQZWMCM
+      ZWMNZWQXCNZDBOZPZABUCZEXCBWJFUGKZXCBKFUHZBFXCGXCUIZUJUQWLXCNZXAXIUKWJXMWT
+      XHABXMWOXEWSXGXMWNXDWMWLXCWMCULRXMWRXFDBWLXCWQUMUNUOUPSWJXHABWJWMBKZPXEXG
+      WJXJXNXEXKBCFWMXCGHXLURUSDBCFWMXCGHXLUTVAVBVCVAXBWKWJXAWKWJTEBWLBKZXAPZWK
+      WJXPWKPZIJUABCFWLBFVDQNXQGVHCFVEQNXQHVHXQFVIKZILZBKZJLZBKZXSYACMZBKWKXRXP
+      FVFSBFXSYACGHVGVJWKXTYBUALZBKVSYCYDCMXSYAYDCMCMNXPBFXSYACYDGHVKVLXOXAWKVM
+      XQXTWLXSCMZXSNZXAXTYFTXOWKXTXAYFWPXSCMZWLNZDBOZPZYFWTYJAXSBWMXSNZWOYFWSYI
+      YKWNYEWMXSWMXSWLCVNYKVTVOYKWRYHDBYKWQYGWLWMXSWPCVNRUNUOVPZYFYIVQVRWAWBXQX
+      TYAXSCMZWLNZJBOZXAXTYOTXOWKXTXAYJYOYLYIYOYFYIYOYHYNDJBWPYANYGYMWLWPYAXSCU
+      LRWCWDSVRWAWBWEWFWGWHWI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
