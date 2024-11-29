@@ -144986,6 +144986,31 @@ $)
       GUH $.
   $}
 
+  ${
+    $d x y z B $.  $d x y z G $.  $d y N $.  $d x y z .+ $.  $d x y z .0. $.
+    isgrpi.b $e |- B = ( Base ` G ) $.
+    isgrpi.p $e |- .+ = ( +g ` G ) $.
+    isgrpi.c $e |- ( ( x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
+    isgrpi.a $e |- ( ( x e. B /\ y e. B /\ z e. B ) ->
+                   ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+    isgrpi.z $e |- .0. e. B $.
+    isgrpi.i $e |- ( x e. B -> ( .0. .+ x ) = x ) $.
+    isgrpi.n $e |- ( x e. B -> N e. B ) $.
+    isgrpi.j $e |- ( x e. B -> ( N .+ x ) = .0. ) $.
+    $( Properties that determine a group. ` N ` (negative) is normally
+       dependent on ` x ` i.e. read it as ` N ( x ) ` .  (Contributed by NM,
+       3-Sep-2011.) $)
+    isgrpi $p |- G e. Grp $=
+      ( wcel wtru wceq co cbs cfv a1i cplusg cv 3adant1 w3a adantl isgrpd mptru
+      cgrp ) FUKQRABCDEFGHDFUAUBSRIUCEFUDUBSRJUCAUEZDQZBUEZDQZULUNETZDQRKUFUMUO
+      CUEZDQUGUPUQETULUNUQETETSRLUHHDQRMUCUMHULETULSRNUHUMGDQROUHUMGULETHSRPUHU
+      IUJ $.
+  $}
+
+  $( A group is a semigroup.  (Contributed by AV, 28-Aug-2021.) $)
+  grpsgrp $p |- ( G e. Grp -> G e. Smgrp ) $=
+    ( cgrp wcel cmnd csgrp grpmnd mndsgrp syl ) ABCADCAECAFAGH $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
