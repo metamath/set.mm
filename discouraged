@@ -18372,6 +18372,7 @@ New usage of "pclssidN" is discouraged (3 uses).
 New usage of "pclun2N" is discouraged (0 uses).
 New usage of "pclunN" is discouraged (1 uses).
 New usage of "pclvalN" is discouraged (6 uses).
+New usage of "peano1OLD" is discouraged (0 uses).
 New usage of "peano5OLD" is discouraged (0 uses).
 New usage of "permsetexOLD" is discouraged (1 uses).
 New usage of "perpdragALT" is discouraged (0 uses).
@@ -20966,6 +20967,7 @@ Proof modification of "ordelordALT" is discouraged (128 steps).
 Proof modification of "ordelordALTVD" is discouraged (202 steps).
 Proof modification of "orim12dALT" is discouraged (34 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
+Proof modification of "peano1OLD" is discouraged (9 steps).
 Proof modification of "peano5OLD" is discouraged (304 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
 Proof modification of "permsetexOLD" is discouraged (42 steps).
