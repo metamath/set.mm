@@ -81,11 +81,6 @@ proposed  syl5ibcom imbitridcom
 proposed  syl5ibr   imbitrrid
 proposed  syl5ibrcom imbitrridcom
 proposed  syl5bb    bitrid      compare to bitri or bitrd
-proposed  syl5rbb   bitr2id     compare to bitr2i or bitr2d
-proposed  syl5eq    eqtrid      compare to eqtri or eqtrd
-proposed  syl5req   eqtr2id     compare to eqtr2i or eqtr2d
-proposed  syl5eqr   eqtr3id     compare to eqtr3i or eqtr3d
-proposed  syl5reqr  eqtr3di     hypotheses would be switched
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
@@ -93,13 +88,109 @@ proposed  syl6ib    imbitrdi
 proposed  syl6ibr   imbitrrdi
 proposed  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
-proposed  syl6bb    bitrdi      compare to bitri or bitrd
-proposed  syl6rbb   bitr2di     compare to bitr2i or bitr2d
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+25-Nov-24 syl5eq    eqtrid
+18-Nov-24 csbcog    [same]      moved from RP's mathbox to main set.mm
+18-Nov-24 csbwrecsg [same]      moved from ML's mathbox to main set.mm
+18-Nov-24 csbpredg  [same]      moved from ML's mathbox to main set.mm
+18-Nov-24 csbdif    [same]      moved from ML's mathbox to main set.mm
+18-Nov-24 df-wrecs  dfwrecsOLD  obsoleted
+18-Nov-24 dfwrecs2  df-wrecs    moved from BJ's mathbox to main set.mm and
+                                made the main definition
+16-Nov-24 rspcdvinvd rspcdv2    moved from SP's mathbox to main set.mm
+15-Nov-24 baseltedgf basendxltedgfndx 
+12-Nov-24 sseldi    sselid      compare to sselii or sseldd
+11-Nov-24 mpteq12da [same]      moved from GS's mathbox to main set.mm
+ 9-Nov-24 eqsb3     eqsb1
+ 9-Nov-24 eqsbc3    eqsbc1
+ 9-Nov-24 eqsbc3r   eqsbc2
+ 9-Nov-24 elsb3     elsb1
+ 9-Nov-24 elsb4     elsb2
+ 9-Nov-24 clelsb3   clelsb1
+ 9-Nov-24 clelsb3fw clelsb1fw
+ 9-Nov-24 clelsb3f  clelsb1f
+ 7-Nov-24 slotsbaseefdif basendxnedgfndx
+31-Oct-24 ceilged   [same]      moved from GS's mathbox to main set.mm
+31-Oct-24 ceilcld   [same]      moved from GS's mathbox to main set.mm
+31-Oct-24 zexpcld   [same]      moved from SN's mathbox to main set.mm
+28-Oct-24 dfpo2     ---         moved from SF's mathbox to main set.mm
+27-Oct-24 bnj930    fnfund      moved from JB's mathbox to main set.mm
+27-Oct-24 predasetex predexg    predasetex is deprecated
+27-Oct-24 algrflem  opco1i
+26-Oct-24 fsumsplit1 fsumsplit1 moved from GS's mathbox to main set.mm
+26-Oct-24 fsumclf   fsumclf     moved from GS's mathbox to main set.mm
+24-Oct-24 ---       ---         well-founded recursion theorems moved
+                                from SF's mathbox to main set.mm
+22-Oct-24 ---       ---         well-founded induction theorems moved
+                                from SF's mathbox to main set.mm
+20-Oct-24 ---       ---         transitive predecessor theorems moved
+                                from SF's mathbox to main set.mm
+17-Oct-24 posglbd   posglbdg    compare to poslubdg
+16-Oct-24 2ralbiim  [same]      moved from AV's mathbox to main set.mm
+16-Oct-24 ---       ---         well-founded recursion theorems moved
+                                from SF's mathbox to main set.mm
+15-Oct-24 ---       ---         well-founded induction theorems moved
+                                from SF's mathbox to main set.mm
+12-Oct-24 syl5rbb   bitr2id     compare to bitr2i or bitr2d
+10-Oct-24 syl5reqr  eqtr3di     order of hypotheses is switched
+30-Sep-24 syl5req   eqtr2id     compare to eqtr2i or eqtr2d
+27-Sep-24 syldbl2   [same]      moved from SP's mathbox to main set.mm
+27-Sep-24 fiminre2  [same]      moved from GS's mathbox to main set.mm
+27-Sep-24 infrefilb [same]      moved from GS's mathbox to main set.mm
+26-Sep-24 tltnle    [same]      moved from TA's mathbox to main set.mm
+26-Sep-24 tleile    [same]      moved from TA's mathbox to main set.mm
+26-Sep-24 tospos    [same]      moved from TA's mathbox to main set.mm
+25-Sep-24 biadanid  [same]      moved from TA's mathbox to main set.mm
+22-Sep-24 grpcld    [same]      moved from SN's mathbox to main set.mm
+21-Sep-24 sb56      sbalex      substitution expressed with 'al' or with 'ex'
+21-Sep-24 nanimn    dfnan2      mark as an alternative definition
+20-Sep-24 fco3      funcofd     moved from GS's mathbox to main set.mm
+20-Sep-24 freld     [same]      moved from GS's mathbox to main set.mm
+20-Sep-24 ineqcomi  [same]      moved from PM's mathbox to main set.mm
+20-Sep-24 ineqcom   [same]      moved from PM's mathbox to main set.mm
+18-Sep-24 sylibda   sylbida     moved from SN's mathbox to main set.mm
+17-Sep-24 moel      [same]      moved from TA's mathbox to main set.mm
+16-Sep-24 syl5eqr   eqtr3id     compare to eqtr3i or eqtr3d
+14-Sep-24 iunsn     [same]      moved from SN's mathbox to main set.mm
+10-Sep-24 sspreima  [same]      moved from TA's mathbox to main set.mm
+ 9-Sep-24 syl6bb    bitrdi      compare to bitri or bitrd
+ 4-Sep-24 bj-df-v   dfv2        moved from BJ's mathbox to main set.mm
+ 1-Sep-24 brabsb2   [same]      removed unnecessary commutation
+ 1-Sep-24 opelopabsbALT vopelopabsb removed unnecessary commutation
+24-Aug-24 dvdspw    dvdsexp2im  moved from SF's mathbox to main set.mm
+24-Aug-24 pdivsq    prmdvdssq   moved from SF's mathbox to main set.mm
+24-Aug-24 dvdstrd   [same]      moved from MKU's mathbox to main set.mm
+23-Aug-24 qred      [same]      moved from GS's mathbox to main set.mm
+21-Aug-24 ralimda   [same]      moved from GS's mathbox to main set.mm
+21-Aug-24 ralrimia  [same]      moved from GS's mathbox to main set.mm
+21-Aug-24 2exp11    [same]      moved from AV's mathbox to main set.mm
+20-Aug-24 uzssre    [same]      moved from GS's mathbox to main set.mm
+20-Aug-24 unexd     [same]      moved from SN's mathbox to main set.mm
+20-Aug-24 brsnop    [same]      moved from TA's mathbox to main set.mm
+19-Aug-24 dfrp2     [same]      moved from TA's mathbox to main set.mm
+19-Aug-24 rabeqcda  [same]      moved from SN's mathbox to main set.mm
+18-Aug-24 prdsco    [same]      revised - compatibility with new df-prds
+18-Aug-24 prdshom   [same]      revised - compatibility with new df-prds
+18-Aug-24 prdstset  [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsds    [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsle    [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsip    [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsvsca  [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsmulr  [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsplusg [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsbas   [same]      revised - compatibility with new df-prds
+18-Aug-24 prdssca   [same]      revised - compatibility with new df-prds
+18-Aug-24 prdsval   [same]      revised - compatibility with new df-prds
+18-Aug-24 reldmprds [same]      revised - compatibility with new df-prds
+18-Aug-24 df-prds   [same]      revised - fixed the comp part
+18-Aug-24 difexd    [same]      moved from SN's mathbox to main set.mm
+18-Aug-24 ifexd     [same]      moved from SN's mathbox to main set.mm
+13-Aug-24 syl6rbb   bitr2di     compare to bitr2i or bitr2d
+12-Aug-24 disjdifr  [same]      moved from TA's mathbox to main set.mm
  7-Aug-24 tdeglem4  [same]      revised - eliminated unnecessary antecedent
  7-Aug-24 tdeglem3  [same]      revised - eliminated unnecessary antecedent
  7-Aug-24 tdeglem1  [same]      revised - eliminated unnecessary antecedent
@@ -9135,7 +9226,7 @@ Date      Old       New         Notes
 24-Feb-13 sbceq1dig sbceq1g
 24-Feb-13 sbceqdig  sbceqg
 24-Feb-13 sbcbidig  sbcbig
-21-Feb-13 ---       ---         See http://us.metamath.org/mpeuni/mmnotes.txt
+21-Feb-13 ---       ---         See https://us.metamath.org/mpeuni/mmnotes.txt
 21-Feb-13 ---       ---         entry of 21-Feb-13 for instructions for
 21-Feb-13 ---       ---         the changes below.
 21-Feb-13 sylan     [--same--]  reordered hypotheses for better logical flow

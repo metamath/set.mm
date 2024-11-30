@@ -2,7 +2,7 @@
 
 # Metamath set.mm repository
 
-This is a collection of rigorously verified [Metamath](http://us.metamath.org/)
+This is a collection of rigorously verified [Metamath](https://us.metamath.org/)
 databases that specify mathematical axioms and
 formal proofs of theorems derived from those axioms.
 
@@ -29,9 +29,9 @@ Metamath verification is incredibly fast; the largest database available
 can be re-verified within seconds by some verifiers.
 
 For more information see
-the [Metamath Home Page](http://us.metamath.org/), the
-[Metamath Proof Explorer Home Page](http://us.metamath.org/mpeuni/mmset.html),
-the [Metamath book](http://us.metamath.org#book), or the
+the [Metamath Home Page](https://us.metamath.org/), the
+[Metamath Proof Explorer Home Page](https://us.metamath.org/mpeuni/mmset.html),
+the [Metamath book](https://us.metamath.org#book), or the
 [video "Metamath Proof Explorer: A Modern Principia Mathematica"](https://www.youtube.com/watch?v=8WH4Rd4UKGE).
 
 ## What databases are included in this collection?
@@ -46,26 +46,26 @@ in (approximate) decreasing size, are:
   in the world (e.g., it has completed many challenge theorems in the
   [Formalizing-100 Theorems](https://www.cs.ru.nl/~freek/100/) challenge list);
   [this video visualizes set.mm's growth through 2020-04-29](https://www.youtube.com/watch?v=LVGSeDjWzUo).
-  [[Generated display](http://us.metamath.org/mpeuni/mmset.html)]
+  [[Generated display](https://us.metamath.org/mpeuni/mmset.html)]
 * "[iset.mm](./iset.mm)" aka "Intuitionistic Logic Explorer" -
   uses intuitionistic set theory.
   In particular, it does not presume that the law of excluded middle is
   necessarily true in all cases.
-  [[Generated display](http://us.metamath.org/ileuni/mmil.html)]
+  [[Generated display](https://us.metamath.org/ileuni/mmil.html)]
 * "[nf.mm](./nf.mm)" aka "New Foundations Explorer" -
   constructs mathematics using
   Quine's New Foundations (NF) set theory axioms, a direct derivative
   of the "hierarchy of types" set theory originally presented in
   Whitehead and Russell's *Principia Mathematica*.
-  [[Generated display](http://us.metamath.org/nfeuni/mmnf.html)]
+  [[Generated display](https://us.metamath.org/nfeuni/mmnf.html)]
 * "[ql.mm](./ql.mm)" aka "Quantum Logic Explorer" - Starts from the
   orthomodular lattice properties proved in the Hilbert Space Explorer and
   takes you into quantum logic.
-  [[Generated display](http://us.metamath.org/qleuni/mmql.html)]
+  [[Generated display](https://us.metamath.org/qleuni/mmql.html)]
 * "[hol.mm](./hol.mm)" aka "Higher-Order Logic Explorer" - Starts with
   higher-order logic (HOL, also called simple type theory) and derives
   equivalents to ZFC axioms, connecting the two approaches.
-  [[Generated display](http://us.metamath.org/holuni/mmhol.html)]
+  [[Generated display](https://us.metamath.org/holuni/mmhol.html)]
 * "[peano.mm](./peano.mm)" - Peano arithmetic.
 * "[big-unifier.mm](./big-unifier.mm)" - a unification and substitution test for
   Metamath verifiers, where small input expressions blow up to thousands

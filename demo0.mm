@@ -18,7 +18,7 @@ $( !
 
                            ~~ PUBLIC DOMAIN ~~
 This work is waived of all rights, including copyright, according to the CC0
-Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
+Public Domain Dedication.  https://creativecommons.org/publicdomain/zero/1.0/
 
 Norman Megill - https://us.metamath.org
 
@@ -60,10 +60,10 @@ $( Specify properties of the metavariables. $)
   $( Define "wff" (part 2 of 2). $)
   wim $a wff ( P -> Q ) $.
 
-  $( State axiom ~ a1 . $)
+  $( State Axiom ~ a1 . $)
   a1 $a |- ( t = r -> ( t = s -> r = s ) ) $.
 
-  $( State axiom ~ a2 . $)
+  $( State Axiom ~ a2 . $)
   a2 $a |- ( t + 0 ) = t $.
 
   ${
@@ -73,7 +73,7 @@ $( Specify properties of the metavariables. $)
     mp $a |- Q $.
   $}
 
-  $( Prove a theorem. $)
+  $( Prove a theorem.  (Contributed by NM, 1-Jan-2004.) $)
   th1 $p |- t = t $=
   $( Here is its proof: $)
     tt tze tpl tt weq tt tt weq tt a2 tt tze tpl tt weq tt tze tpl tt weq tt tt

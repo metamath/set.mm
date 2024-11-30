@@ -63,7 +63,7 @@ if ! [ -f "$MUSIC" ] ; then
 fi
 
 if ! [ -f 'mmlogo-small.png' ] ; then
-    wget http://us.metamath.org/mmlogo.svg
+    wget https://us.metamath.org/mmlogo.svg
     convert -transparent white -scale 25%x25% mmlogo.svg mmlog-small.png
 fi
 
