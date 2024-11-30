@@ -145051,6 +145051,15 @@ $)
       LZUKUSUFUNGDUBUTVAGULDHIUGUCABCDHTEIJUDUHUIUJ $.
   $}
 
+  ${
+    grpidcl.b $e |- B = ( Base ` G ) $.
+    grpidcl.o $e |- .0. = ( 0g ` G ) $.
+    $( The identity element of a group belongs to the group.  (Contributed by
+       NM, 27-Aug-2011.)  (Revised by Mario Carneiro, 27-Dec-2014.) $)
+    grpidcl $p |- ( G e. Grp -> .0. e. B ) $=
+      ( cgrp wcel cmnd grpmnd mndidcl syl ) BFGBHGCAGBIABCDEJK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
