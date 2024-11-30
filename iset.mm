@@ -145158,6 +145158,23 @@ $)
       HRSTUMUNUIUPUKDEAUBUMUOUJDEUMDEDEBUMUAZURUCURUDUEUFUG $.
   $}
 
+  ${
+    $d x B $.  $d x .+ $.  $d x ph $.  $d x .0. $.
+    grpidd2.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    grpidd2.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    grpidd2.z $e |- ( ph -> .0. e. B ) $.
+    grpidd2.i $e |- ( ( ph /\ x e. B ) -> ( .0. .+ x ) = x ) $.
+    grpidd2.j $e |- ( ph -> G e. Grp ) $.
+    $( Deduce the identity element of a group from its properties.  Useful in
+       conjunction with ~ isgrpd .  (Contributed by Mario Carneiro,
+       14-Jun-2015.) $)
+    grpidd2 $p |- ( ph -> .0. = ( 0g ` G ) ) $=
+      ( c0g cfv cplusg co wceq oveqd cv wcel eqid oveq2 id eqeq12d rspcdva cgrp
+      ralrimiva eqtr3d cbs wb eleqtrd grpid syl2anc mpbid eqcomd ) AELMZFAFFENM
+      ZOZFPZUOFPZAFFDOZUQFADUPFFHQAFBRZDOZVAPZUTFPBCFVAFPZVBUTVAFVAFFDUAVDUBUCA
+      VCBCJUFIUDUGAEUESFEUHMZSURUSUIKAFCVEIGUJVEUPEFUOVETUPTUOTUKULUMUN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
