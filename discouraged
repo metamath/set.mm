@@ -16452,6 +16452,7 @@ New usage of "eleigveccl" is discouraged (3 uses).
 New usage of "eleq2dALT" is discouraged (0 uses).
 New usage of "eleq2w2ALT" is discouraged (0 uses).
 New usage of "elex22VD" is discouraged (0 uses).
+New usage of "elex2OLD" is discouraged (0 uses).
 New usage of "elex2VD" is discouraged (0 uses).
 New usage of "elfvmptrab1" is discouraged (0 uses).
 New usage of "elghomOLD" is discouraged (5 uses).
@@ -20293,6 +20294,7 @@ Proof modification of "elabgtOLD" is discouraged (83 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
 Proof modification of "eleq2w2ALT" is discouraged (50 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
+Proof modification of "elex2OLD" is discouraged (36 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
 Proof modification of "elghomOLD" is discouraged (117 steps).
 Proof modification of "elghomlem1OLD" is discouraged (232 steps).
