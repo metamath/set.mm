@@ -145122,6 +145122,23 @@ $)
       WFGHWHVIVJTVKVLDEFBVMVN $.
   $}
 
+  ${
+    $d y z B $.  $d y z G $.  $d y z .+ $.  $d y z .0. $.  $d y z X $.
+    grpinveu.b $e |- B = ( Base ` G ) $.
+    grpinveu.p $e |- .+ = ( +g ` G ) $.
+    grpinveu.o $e |- .0. = ( 0g ` G ) $.
+    $( The left inverse element of a group is unique.  Lemma 2.2.1(b) of
+       [Herstein] p. 55.  (Contributed by NM, 24-Aug-2011.) $)
+    grpinveu $p |- ( ( G e. Grp /\ X e. B )
+           -> E! y e. B ( y .+ X ) = .0. ) $=
+      ( vz cgrp wcel wa cv co wceq wi wral wrex wreu grpinvex w3a eqtr3 grprcan
+      syl5ib 3exp2 com24 imp41 an32s expd ralrimdva ancld reximdva oveq1 eqeq1d
+      mpd reu8 sylibr ) DKLZEBLZMZANZECOZFPZJNZECOZFPZVBVEPZQZJBRZMZABSZVDABTVA
+      VDABSVLABCDEFGHIUAVAVDVKABVAVBBLZMZVDVJVNVDVIJBVNVEBLZMVDVGVHVAVOVMVDVGMZ
+      VHQZUSUTVOVMVQUSVMVOUTVQUSVMVOUTVQVPVCVFPUSVMVOUTUBMVHVCVFFUCBCDVBVEEGHUD
+      UEUFUGUHUIUJUKULUMUPVDVGAJBVHVCVFFVBVEECUNUOUQUR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
