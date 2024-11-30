@@ -144776,13 +144776,12 @@ $)
        in the base set, there must be an element ` b = invg a ` in the base set
        such that ` a +g b = b +g a = e ` ).  It can be proven that the identity
        element is unique ( ~ grpideu ).  Groups need not be commutative; a
-       commutative group is an Abelian group (see ~ df-abl ).  Subgroups can
-       often be formed from groups, see ~ df-subg .  An example of an (Abelian)
-       group is the set of complex numbers ` CC ` over the group operation
-       ` + ` (addition), as proven in ~ cnaddablx ; an Abelian group is a group
-       as proven in ~ ablgrp .  Other structures include groups, including
-       unital rings ( ~ df-ring ) and fields ( ~ df-field ).  (Contributed by
-       NM, 17-Oct-2012.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+       commutative group is an Abelian group.  Subgroups can often be formed
+       from groups.  An example of an (Abelian) group is the set of complex
+       numbers ` CC ` over the group operation ` + ` (addition).  Other
+       structures include groups, including unital rings and fields.
+       (Contributed by NM, 17-Oct-2012.)  (Revised by Mario Carneiro,
+       6-Jan-2015.) $)
     df-grp $a |- Grp = { g e. Mnd | A. a e. ( Base ` g ) E. m e. ( Base ` g )
       ( m ( +g ` g ) a ) = ( 0g ` g ) } $.
 
@@ -144944,9 +144943,9 @@ $)
        dependent on ` x ` i.e. read it as ` N ( x ) ` .  Note: normally we
        don't use a ` ph ` antecedent on hypotheses that name structure
        components, since they can be eliminated with ~ eqid , but we make an
-       exception for theorems such as ~ isgrpd2 , ~ ismndd , and ~ islmodd
-       since theorems using them often rewrite the structure components.
-       (Contributed by NM, 10-Aug-2013.) $)
+       exception for theorems such as ~ isgrpd2 and ~ ismndd since theorems
+       using them often rewrite the structure components.  (Contributed by NM,
+       10-Aug-2013.) $)
     isgrpd2 $p |- ( ph -> G e. Grp ) $=
       ( vy cv wcel wa co wceq wrex oveq1 eqeq1d rspcev syl2anc isgrpd2e ) ABNCD
       EGHIJKABOZCPQFCPFUFDRZGSZNOZUFDRZGSZNCTLMUKUHNFCUIFSUJUGGUIFUFDUAUBUCUDUE
