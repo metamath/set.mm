@@ -145082,6 +145082,22 @@ $)
       P $.
   $}
 
+  $( A group is not empty.  (Contributed by Szymon Jaroszewicz, 3-Apr-2007.)
+     (Revised by Mario Carneiro, 2-Dec-2014.) $)
+  grpn0 $p |- ( G e. Grp -> G =/= (/) ) $=
+    ( cgrp wcel cbs cfv c0 wne eqid grpbn0 wceq fveq2 base0 eqtr4di necon3i syl
+    ) ABCADEZFGAFGPAPHIAFPFAFJPFDEFAFDKLMNO $.
+
+  ${
+    hashfingrpnn.1 $e |- B = ( Base ` G ) $.
+    hashfingrpnn.2 $e |- ( ph -> G e. Grp ) $.
+    hashfingrpnn.3 $e |- ( ph -> B e. Fin ) $.
+    $( A finite group has positive integer size.  (Contributed by Rohan
+       Ridenour, 3-Aug-2023.) $)
+    hashfingrpnn $p |- ( ph -> ( # ` B ) e. NN ) $=
+      ( grpmndd hashfinmndnn ) ABCDACEGFH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
