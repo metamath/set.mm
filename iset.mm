@@ -145060,6 +145060,28 @@ $)
       ( cgrp wcel cmnd grpmnd mndidcl syl ) BFGBHGCAGBIABCDEJK $.
   $}
 
+  ${
+    grpbn0.b $e |- B = ( Base ` G ) $.
+    $( The base set of a group is not empty.  It is also inhabited (see
+       ~ grpidcl ).  (Contributed by Szymon Jaroszewicz, 3-Apr-2007.) $)
+    grpbn0 $p |- ( G e. Grp -> B =/= (/) ) $=
+      ( cgrp wcel c0g cfv eqid grpidcl ne0d ) BDEABFGZABKCKHIJ $.
+
+    grplid.p $e |- .+ = ( +g ` G ) $.
+    grplid.o $e |- .0. = ( 0g ` G ) $.
+    $( The identity element of a group is a left identity.  (Contributed by NM,
+       18-Aug-2011.) $)
+    grplid $p |- ( ( G e. Grp /\ X e. B ) -> ( .0. .+ X ) = X ) $=
+      ( cgrp wcel cmnd co wceq grpmnd mndlid sylan ) CIJCKJDAJEDBLDMCNABCDEFGHO
+      P $.
+
+    $( The identity element of a group is a right identity.  (Contributed by
+       NM, 18-Aug-2011.) $)
+    grprid $p |- ( ( G e. Grp /\ X e. B ) -> ( X .+ .0. ) = X ) $=
+      ( cgrp wcel cmnd co wceq grpmnd mndrid sylan ) CIJCKJDAJDEBLDMCNABCDEFGHO
+      P $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
