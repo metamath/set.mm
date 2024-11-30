@@ -145035,6 +145035,20 @@ $)
       YKWNYEWMXSWMXSWLCVNYKVTVOYKWRYHDBYKWQYGWLWMXSWPCVNRUNUOVPZYFYIVQVRWAWBXQX
       TYAXSCMZWLNZJBOZXAXTYOTXOWKXTXAYJYOYLYIYOYFYIYOYHYNDJBWPYANYGYMWLWPYAXSCU
       LRWCWDSVRWAWBWEWFWGWHWI $.
+
+    $d B x y z $.  $d G y z $.  $d .+ y z $.
+    $( Alternate definition of a group as a set with a closed, associative
+       operation, a left identity and a left inverse for each element.
+       Alternate definition in [Lang] p. 7.  (Contributed by NM, 10-Oct-2006.)
+       (Revised by AV, 28-Aug-2021.) $)
+    dfgrp2e $p |- ( G e. Grp <-> ( A. x e. B A. y e. B ( ( x .+ y ) e. B
+                /\ A. z e. B ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) )
+                       /\ E. n e. B A. x e. B
+                          ( ( n .+ x ) = x /\ E. i e. B ( i .+ x ) = n ) ) ) $=
+      ( cgrp wcel csgrp cv co wceq wrex wa wral cvv dfgrp2 rexm exlimiv issgrpv
+      wex wb basmex 3syl pm5.32ri bitri ) HKLHMLZGNZANZEOUMPFNUMEOULPFDQRADSZGD
+      QZRUMBNZEOZDLUQCNZEOUMUPUREOEOPCDSRBDSADSZUORADEFGHIJUAUOUKUSUOULDLZGUEHT
+      LZUKUSUFUNGDUBUTVAGULDHIUGUCABCDHTEIJUDUHUIUJ $.
   $}
 
 
