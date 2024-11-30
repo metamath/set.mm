@@ -145137,6 +145137,25 @@ $)
       VDABSVLABCDEFGHIUAVAVDVKABVAVBBLZMZVDVJVNVDVIJBVNVEBLZMVDVGVHVAVOVMVDVGMZ
       VHQZUSUTVOVMVQUSVMVOUTVQUSVMVOUTVQVPVCVFPUSVMVOUTUBMVHVCVFFUCBCDVBVEEGHUD
       UEUFUGUHUIUJUKULUMUPVDVGAJBVHVCVFFVBVEECUNUOUQUR $.
+
+    $( Two ways of saying that an element of a group is the identity element.
+       Provides a convenient way to compute the value of the identity element.
+       (Contributed by NM, 24-Aug-2011.) $)
+    grpid $p |- ( ( G e. Grp /\ X e. B ) ->
+                  ( ( X .+ X ) = X <-> .0. = X ) ) $=
+      ( wceq cgrp wcel wa co eqcom wb wi grpidcl grprcan 3exp2 mpid pm2.43d imp
+      grplid eqeq2d bitr3d bitr2id ) EDIDEIZCJKZDAKZLZDDBMZDIZEDNUJUKEDBMZIZUGU
+      LUHUIUNUGOZUHUIUOUHUIEAKZUIUOPACEFHQUHUIUPUIUOABCDEDFGRSTUAUBUJUMDUKABCDE
+      FGHUCUDUEUF $.
+
+    $( Properties showing that an element ` Z ` is the identity element of a
+       group.  (Contributed by NM, 7-Aug-2013.) $)
+    isgrpid2 $p |- ( G e. Grp
+  -> ( ( Z e. B /\ ( Z .+ Z ) = Z ) <-> .0. = Z ) ) $=
+      ( cgrp wcel co wceq wa grpid biimpd expimpd grpidcl grplid mpdan jca id
+      eleq1 oveq12d eqeq12d anbi12d syl5ibcom impbid ) CIJZEAJZEEBKZELZMZDELZUH
+      UIUKUMUHUIMUKUMABCEDFGHNOPUHDAJZDDBKZDLZMUMULUHUNUPACDFHQZUHUNUPUQABCDDFG
+      HRSTUMUNUIUPUKDEAUBUMUOUJDEUMDEDEBUMUAZURUCURUDUEUFUG $.
   $}
 
 
