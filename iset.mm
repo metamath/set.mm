@@ -145098,6 +145098,30 @@ $)
       ( grpmndd hashfinmndnn ) ABCDACEGFH $.
   $}
 
+  ${
+    $d u v w y B $.  $d u v w y G $.  $d u v w y .+ $.  $d u v w y X $.
+    $d u v w y Y $.  $d u v w y Z $.
+    grprcan.b $e |- B = ( Base ` G ) $.
+    grprcan.p $e |- .+ = ( +g ` G ) $.
+    $( Right cancellation law for groups.  (Contributed by NM, 24-Aug-2011.)
+       (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
+    grprcan $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                  ( ( X .+ Z ) = ( Y .+ Z ) <-> X = Y ) ) $=
+      ( vy vu vv vw wcel w3a wa co wceq cv sylan 3eqtr3d cgrp c0g cfv wrex eqid
+      wi grpinvex 3ad2antr3 simprr oveq1d simpll grpass simplr1 simplr3 simprll
+      caovassd simplr2 grpcl syl3an1 grpidcl syl grplid adantr simprlr grprinvd
+      simpr mpdan oveq2d grprid syl2anc expr rexlimddv oveq1 impbid1 ) CUAMZDAM
+      ZEAMZFAMZNZOZDFBPZEFBPZQZDEQZVTIRZFBPCUBUCZQZWCWDUFIAVOVPVRWGIAUDVQIABCFW
+      FGHWFUEZUGUHVTWEAMZWGOZWCWDVTWJWCOZOZDWFBPZEWFBPZDEWLDFWEBPZBPZEWOBPZWMWN
+      WLWAWEBPWBWEBPWPWQWLWAWBWEBVTWJWCUIUJWLJKLDFWEABWLVOJRZAMZKRZAMZLRZAMNWRW
+      TBPZXBBPWRWTXBBPBPQVOVSWKUKZABCWRWTXBGHULSZVPVQVRVOWKUMZVPVQVRVOWKUNZVTWI
+      WGWCUOZUPWLJKLEFWEABXEVPVQVRVOWKUQZXGXHUPTWLWOWFDBWLVRWOWFQXGWLVRJKLABWEW
+      FFWLVOWSXAXCAMXDABCWRWTGHURUSWLVOWFAMXDACWFGWHUTVAWLVOWSWFWRBPWRQXDABCWRW
+      FGHWHVBSXEWLVOWSWTWRBPWFQKAUDXDKABCWRWFGHWHUGSWLVRVFWLWIVRXHVCWLWGVRVTWIW
+      GWCVDVCVEVGZVHWLWOWFEBXJVHTWLVOVPWMDQXDXFABCDWFGHWHVIVJWLVOVQWNEQXDXIABCE
+      WFGHWHVIVJTVKVLDEFBVMVN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
