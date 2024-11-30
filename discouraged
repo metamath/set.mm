@@ -14330,6 +14330,7 @@ New usage of "2lplnmN" is discouraged (0 uses).
 New usage of "2moex" is discouraged (1 uses).
 New usage of "2moswap" is discouraged (1 uses).
 New usage of "2oexOLD" is discouraged (0 uses).
+New usage of "2onOLD" is discouraged (0 uses).
 New usage of "2pm13.193" is discouraged (3 uses).
 New usage of "2pm13.193VD" is discouraged (0 uses).
 New usage of "2pmaplubN" is discouraged (1 uses).
@@ -19596,6 +19597,7 @@ Proof modification of "2falsedOLD" is discouraged (14 steps).
 Proof modification of "2irrexpqALT" is discouraged (90 steps).
 Proof modification of "2logb9irrALT" is discouraged (141 steps).
 Proof modification of "2oexOLD" is discouraged (9 steps).
+Proof modification of "2onOLD" is discouraged (9 steps).
 Proof modification of "2pm13.193" is discouraged (91 steps).
 Proof modification of "2pm13.193VD" is discouraged (223 steps).
 Proof modification of "2ralorOLD" is discouraged (109 steps).
