@@ -3819,6 +3819,16 @@ $)
   $}
 
   ${
+    syl2anc2.1 $e |- ( ph -> ps ) $.
+    syl2anc2.2 $e |- ( ps -> ch ) $.
+    syl2anc2.3 $e |- ( ( ps /\ ch ) -> th ) $.
+    $( Double syllogism inference combined with contraction.  (Contributed by
+       BTernaryTau, 29-Sep-2023.) $)
+    syl2anc2 $p |- ( ph -> th ) $=
+      ( syl syl2anc ) ABCDEABCEFHGI $.
+  $}
+
+  ${
     sylancl.1 $e |- ( ph -> ps ) $.
     sylancl.2 $e |- ch $.
     sylancl.3 $e |- ( ( ps /\ ch ) -> th ) $.
@@ -4278,6 +4288,32 @@ $)
      (Contributed by NM, 16-Nov-2013.) $)
   anbi2 $p |- ( ( ph <-> ps ) -> ( ( ch /\ ph ) <-> ( ch /\ ps ) ) ) $=
     ( wb id anbi2d ) ABDZABCGEF $.
+
+  ${
+    anbi1cd.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Introduce a proposition as left conjunct on the left-hand side and right
+       conjunct on the right-hand side of an equivalence.  Deduction form.
+       (Contributed by Peter Mazsa, 22-May-2021.) $)
+    anbi1cd $p |- ( ph -> ( ( th /\ ps ) <-> ( ch /\ th ) ) ) $=
+      ( wa anbi2d biancomd ) ADBFCDABCDEGH $.
+  $}
+
+  ${
+    bianass.1 $e |- ( ph <-> ( ps /\ ch ) ) $.
+    $( An inference to merge two lists of conjuncts.  (Contributed by Giovanni
+       Mascellani, 23-May-2019.) $)
+    bianass $p |- ( ( et /\ ph ) <-> ( ( et /\ ps ) /\ ch ) ) $=
+      ( wa anbi2i anass bitr4i ) DAFDBCFZFDBFCFAJDEGDBCHI $.
+
+    $( An inference to merge two lists of conjuncts.  (Contributed by Peter
+       Mazsa, 24-Sep-2022.) $)
+    bianassc $p |- ( ( et /\ ph ) <-> ( ( ps /\ et ) /\ ch ) ) $=
+      ( wa bianass ancom anbi1i bitri ) DAFDBFZCFBDFZCFABCDEGKLCDBHIJ $.
+  $}
+
+  $( Swap two conjuncts.  (Contributed by Peter Mazsa, 18-Sep-2022.) $)
+  an21 $p |- ( ( ( ph /\ ps ) /\ ch ) <-> ( ps /\ ( ph /\ ch ) ) ) $=
+    ( wa biid bianassc bicomi ) BACDZDABDCDHACBHEFG $.
 
   $( Theorem *4.22 of [WhiteheadRussell] p. 117.  (Contributed by NM,
      3-Jan-2005.) $)
@@ -27676,6 +27712,24 @@ $)
       ( nfcv nfv cbvrexcsf ) ABCDEFDEICFIADJBCJHGK $.
   $}
 
+  ${
+    $d A x y $.  $d B y $.  $d C x $.  $d D y $.  $d E x $.  $d ph x $.
+    $d ch x $.  $d ps y $.
+    rspc2vd.a $e |- ( x = A -> ( th <-> ch ) ) $.
+    rspc2vd.b $e |- ( y = B -> ( ch <-> ps ) ) $.
+    rspc2vd.c $e |- ( ph -> A e. C ) $.
+    rspc2vd.d $e |- ( ( ph /\ x = A ) -> D = E ) $.
+    rspc2vd.e $e |- ( ph -> B e. E ) $.
+    $( Deduction version of 2-variable restricted specialization, using
+       implicit substitution.  Notice that the class ` D ` for the second set
+       variable ` y ` may depend on the first set variable ` x ` .
+       (Contributed by AV, 29-Mar-2021.) $)
+    rspc2vd $p |- ( ph -> ( A. x e. C A. y e. D th -> ps ) ) $=
+      ( csb wcel wral csbied eleqtrrd nfcsb1v nfv nfralw wceq csbeq1a raleqbidv
+      wi cv rspc syl rspcv sylsyld ) AHEGJQZRDFJSZEISZCFUNSZBAHKUNPAEGJKINOTUAA
+      GIRUPUQUHNUOUQEGICEFUNEGJUBCEUCUDEUIGUEDCFJUNEGJUFLUGUJUKCBFHUNMULUM $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -46625,6 +46679,25 @@ $)
   $}
 
   ${
+    $d ph y $.  $d A y $.  $d x y $.
+    $( An element of an iota expression.  (Contributed by Jim Kingdon,
+       22-Nov-2024.) $)
+    eliota $p |- ( A e. ( iota x ph ) <-> E. y ( A e. y /\
+        A. x ( ph <-> x = y ) ) ) $=
+      ( cio wcel weq wb wal cab cuni cv wa wex dfiota2 eleq2i eluniab bitri ) D
+      ABEZFDABCGHBIZCJKZFDCLFTMCNSUADABCOPTCDQR $.
+  $}
+
+  ${
+    $d A y $.  $d ph y $.  $d x y $.
+    $( An inhabited iota expression has a unique value.  (Contributed by Jim
+       Kingdon, 22-Nov-2024.) $)
+    eliotaeu $p |- ( A e. ( iota x ph ) -> E! x ph ) $=
+      ( vy cv wcel weq wb wal wa wex cio weu exsimpr eliota df-eu 3imtr4i ) CDE
+      FZABDGHBIZJDKSDKCABLFABMRSDNABDCOABDPQ $.
+  $}
+
+  ${
     $d A x $.  $d ps x $.
     iota2.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     $( The unique element such that ` ph ` .  (Contributed by Jeff Madsen,
@@ -46642,6 +46715,20 @@ $)
     vex elsn alrimi nfab1 nfiota1 nfsn cleqf sylibr ) ABCZBDZABEZFZUGABGZHZFZIZ
     BJUHUKKUFUMBABLUFAUGUJKZUIULUFAUJUGKUNABMUJUGNOABPUGUJBRSQTBUHUKABUABUJABUB
     UCUDUE $.
+
+  ${
+    $d A x z $.  $d A w $.  $d V z $.  $d ph z $.  $d ps x z $.  $d w z $.
+    iotam.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Representation of "the unique element such that ` ph ` " with a class
+       expression ` A ` which is inhabited (that means that "the unique element
+       such that ` ph ` " exists).  (Contributed by AV, 30-Jan-2024.) $)
+    iotam $p |- ( ( A e. V /\ E. w w e. A /\ A = ( iota x ph ) ) -> ps ) $=
+      ( vz cv wcel wex cio wceq wa wi eleq1w cbvexv simprr eqcomd weu wb simprl
+      simpl eleqtrd eliotaeu syl iota2 syl2anc mpbird ex exlimiv 3impib 3com12
+      sylbi ) DIEJZDKZEFJZEACLZMZBUPUQUSBUPHIZEJZHKUQUSNZBOZUOVADHDHEPQVAVCHVAV
+      BBVAVBNZBUREMZVDEURVAUQUSRZSVDUQACTZBVEUAVAUQUSUBVDUTURJVGVDUTEURVAVBUCVF
+      UDACUTUEUFABCEFGUGUHUIUJUKUNULUM $.
+  $}
 
   ${
     $d A y z $.  $d x y z $.  $d ph z $.
@@ -111843,6 +111930,16 @@ $)
     ( c0 chash cfv cc0 wceq eqid cfn wcel wb 0fin fihasheq0 ax-mp mpbir ) ABCDE
     ZAAEZAFAGHNOIJAKLM $.
 
+  ${
+    hashelne0d.1 $e |- ( ph -> B e. A ) $.
+    hashelne0d.2 $e |- ( ph -> A e. Fin ) $.
+    $( A finite set with an element has nonzero size.  (Contributed by Rohan
+       Ridenour, 3-Aug-2023.) $)
+    fihashelne0d $p |- ( ph -> -. ( # ` A ) = 0 ) $=
+      ( chash cfv cc0 wceq c0 ne0d neneqd cfn wcel wb fihasheq0 syl mtbird ) AB
+      FGHIZBJIZABJABCDKLABMNSTOEBPQR $.
+  $}
+
   $( The size of a singleton.  (Contributed by Paul Chapman, 26-Oct-2012.)
      (Proof shortened by Mario Carneiro, 13-Feb-2013.) $)
   hashsng $p |- ( A e. V -> ( # ` { A } ) = 1 ) $=
@@ -143744,6 +143841,889 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties of monoids
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ("Monoid", ~ https://en.wikipedia.org/wiki/Monoid ,
+  6-Feb-2020,) "In abstract algebra [[...] a _monoid_ is an algebraic structure
+  with a single associative binary operation and an identity element.  Monoids
+  are semigroups with identity.".  In the following, monoids are defined in the
+  second way (as semigroups with identity), see ~ df-mnd , whereas many authors
+  define magmas in the first way (as algebraic structure with a single
+  associative binary operation and an identity element, i.e. without the need
+  of a definition for/knowledge about semigroups), see ~ ismnd .  See, for
+  example, the definition in [Lang] p. 3: "A _monoid_ is a set G, with a law of
+  composition which is associative, and having a unit element".
+
+$)
+
+  $c Mnd $.
+
+  $( Extend class notation with class of all monoids. $)
+  cmnd $a class Mnd $.
+
+  ${
+    $d b e g p x $.
+    $( A _monoid_ is a semigroup, which has a two-sided neutral element.
+       Definition 2 in [BourbakiAlg1] p. 12.  In other words (according to the
+       definition in [Lang] p. 3), a monoid is a set equipped with an
+       everywhere defined internal operation (see ~ mndcl ), whose operation is
+       associative (see ~ mndass ) and has a two-sided neutral element (see
+       ~ mndid ), see also ~ ismnd .  (Contributed by Mario Carneiro,
+       6-Jan-2015.)  (Revised by AV, 1-Feb-2020.) $)
+    df-mnd $a |- Mnd = { g e. Smgrp |
+                    [. ( Base ` g ) / b ]. [. ( +g ` g ) / p ].
+                    E. e e. b A. x e. b ( ( e p x ) = x /\ ( x p e ) = x ) } $.
+  $}
+
+  ${
+    $d B a b e g p $.  $d G b g p $.  $d .+ a b e g p $.
+    ismnddef.b $e |- B = ( Base ` G ) $.
+    ismnddef.p $e |- .+ = ( +g ` G ) $.
+    $( The predicate "is a monoid", corresponding 1-to-1 to the definition.
+       (Contributed by FL, 2-Nov-2009.)  (Revised by AV, 1-Feb-2020.) $)
+    ismnddef $p |- ( G e. Mnd <-> ( G e. Smgrp /\ E. e e. B A. a e. B
+                                    ( ( e .+ a ) = a /\ ( a .+ e ) = a ) ) ) $=
+      ( vp vb vg cv co wceq wa wral cplusg cfv cbs cvv wcel wrex wsbc csgrp wfn
+      cmnd basfn vex funfvex funfni mp2an plusgslid slotex elv wb fveq2 eqtr4di
+      eqeq2d anbi12d simpl oveq eqeq1d adantl raleqbidv rexeqbidv syl6bi df-mnd
+      sbc2iedv elrab2 ) CKZEKZHKZLZVJMZVJVIVKLZVJMZNZEIKZOZCVQUAZHJKZPQZUBIVTRQ
+      ZUBVIVJBLZVJMZVJVIBLZVJMZNZEAOZCAUAZJDUCUEVTDMZVSWIIHWBWARSUDVTSTWBSTZUFJ
+      UGWKSVTRVTRUHUIUJWASTJVTPSUKULUMWJVQWBMZVKWAMZNVQAMZVKBMZNZVSWIUNWJWLWNWM
+      WOWJWBAVQWJWBDRQAVTDRUOFUPUQWJWABVKWJWADPQBVTDPUOGUPUQURWPVRWHCVQAWNWOUSZ
+      WPVPWGEVQAWQWOVPWGUNWNWOVMWDVOWFWOVLWCVJVIVJVKBUTVAWOVNWEVJVJVIVKBUTVAURV
+      BVCVDVEVGECJHIVFVH $.
+  $}
+
+  ${
+    $d B a b c $.  $d B a e w $.  $d G a b c w $.  $d .+ a e $.  $d .+ b c $.
+    ismnd.b $e |- B = ( Base ` G ) $.
+    ismnd.p $e |- .+ = ( +g ` G ) $.
+    $( The predicate "is a monoid".  This is the definig theorem of a monoid by
+       showing that a set is a monoid if and only if it is a set equipped with
+       a closed, everywhere defined internal operation (so, a magma, see
+       ~ mndcl ), whose operation is associative (so, a semigroup, see also
+       ~ mndass ) and has a two-sided neutral element (see ~ mndid ).
+       (Contributed by Mario Carneiro, 6-Jan-2015.)  (Revised by AV,
+       1-Feb-2020.) $)
+    ismnd $p |- ( G e. Mnd <-> ( A. a e. B A. b e. B ( ( a .+ b ) e. B
+                       /\ A. c e. B ( ( a .+ b ) .+ c ) = ( a .+ ( b .+ c ) ) )
+             /\ E. e e. B A. a e. B ( ( e .+ a ) = a /\ ( a .+ e ) = a ) ) ) $=
+      ( vw cmnd wcel csgrp cv co wceq wa wral wex cvv wrex ismnddef rexm eleq1w
+      wb cbvexv sylib basmex exlimiv issgrpv 3syl pm5.32ri bitri ) DKLDMLZCNZEN
+      ZBOUPPUPUOBOUPPQEARZCAUAZQUPFNZBOZALUTGNZBOUPUSVABOBOPGARQFAREARZURQABCDE
+      HIUBURUNVBURJNZALZJSZDTLZUNVBUEURUOALZCSVEUQCAUCVGVDCJCJAUDUFUGVDVFJVCADH
+      UHUIEFGADTBHIUJUKULUM $.
+  $}
+
+  ${
+    $d B e x y $.  $d B w $.  $d G e x y $.  $d G w $.  $d .0. x y $.
+    $d .0. w $.  $d w e x $.
+    sgrpidmnd.b $e |- B = ( Base ` G ) $.
+    sgrpidmnd.0 $e |- .0. = ( 0g ` G ) $.
+    $( A semigroup with an identity element which is inhabited is a monoid.  Of
+       course there could be monoids with the empty set as identity element,
+       but these cannot be proven to be monoids with this theorem.
+       (Contributed by AV, 29-Jan-2024.) $)
+    sgrpidmndm $p |- ( ( G e. Smgrp /\ E. e e. B ( E. w w e. e /\ e = .0. ) )
+                       -> G e. Mnd ) $=
+      ( vx vy csgrp wcel cv wex wceq wa wrex cplusg co wral wi cfv cmnd cio w3a
+      simp-4r simpllr 19.8ad simplr wb eqid grpidvalg eqeq2d ad4antr mpbid 3jca
+      simpr eleq1w oveq1 eqeq1d ovanraleqv anbi12d iotam rsp simpl2im ralrimiva
+      sylc exp31 exlimdv impd reximdva imdistani ismnddef sylibr ) DJKZALCLZKZA
+      MZVOENZOZCBPZOVNVOHLZDQUAZRZWANZWAVOWBRWANOZHBSZCBPZODUBKVNVTWGVNVSWFCBVN
+      VOBKZOZVQVRWFWIVPVRWFTAWIVPVRWFWIVPOZVROZWEHBWKWABKZOZWHVQVOILZBKZWNWAWBR
+      ZWANZWAWNWBRWANOHBSZOZIUCZNZUDZWLWEWMWHVQXAVNWHVPVRWLUEWMVPAWIVPVRWLUFUGW
+      MVRXAWJVRWLUHVNVRXAUIWHVPVRWLVNEWTVOHBWBIDJEFWBUJZGUKULUMUNUOWKWLUPXBWHWF
+      WLWETWSWHWFOIAVOBWNVONZWOWHWRWFICBUQWQWDHWAWNWAWBBVOXDWPWCWAWNVOWAWBURUSU
+      TVAVBWEHBVCVDVFVEVGVHVIVJVKBWBCDHFXCVLVM $.
+  $}
+
+  ${
+    $d G e x $.
+    $( A monoid is a semigroup.  (Contributed by FL, 2-Nov-2009.)  (Revised by
+       AV, 6-Jan-2020.)  (Proof shortened by AV, 6-Feb-2020.) $)
+    mndsgrp $p |- ( G e. Mnd -> G e. Smgrp ) $=
+      ( ve vx cmnd wcel csgrp cv cplusg cfv co wceq cbs wral wrex eqid ismnddef
+      wa simplbi ) ADEAFEBGZCGZAHIZJTKTSUAJTKQCALIZMBUBNUBUABACUBOUAOPR $.
+  $}
+
+  $( A monoid is a magma.  (Contributed by FL, 2-Nov-2009.)  (Revised by AV,
+     6-Jan-2020.)  (Proof shortened by AV, 6-Feb-2020.) $)
+  mndmgm $p |- ( M e. Mnd -> M e. Mgm ) $=
+    ( cmnd wcel csgrp cmgm mndsgrp sgrpmgm syl ) ABCADCAECAFAGH $.
+
+  ${
+    $d x y z B $.  $d x y z G $.  $d x y z X $.  $d y z Y $.  $d z Z $.
+    $d x y z .+ $.
+    mndcl.b $e |- B = ( Base ` G ) $.
+    mndcl.p $e |- .+ = ( +g ` G ) $.
+    $( Closure of the operation of a monoid.  (Contributed by NM, 14-Aug-2011.)
+       (Revised by Mario Carneiro, 6-Jan-2015.)  (Proof shortened by AV,
+       8-Feb-2020.) $)
+    mndcl $p |- ( ( G e. Mnd /\ X e. B /\ Y e. B ) -> ( X .+ Y ) e. B ) $=
+      ( cmnd wcel cmgm co mndmgm mgmcl syl3an1 ) CHICJIDAIEAIDEBKAICLACDEBFGMN
+      $.
+
+    $( A monoid operation is associative.  (Contributed by NM, 14-Aug-2011.)
+       (Proof shortened by AV, 8-Feb-2020.) $)
+    mndass $p |- ( ( G e. Mnd /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+              ( ( X .+ Y ) .+ Z ) = ( X .+ ( Y .+ Z ) ) ) $=
+      ( cmnd wcel csgrp w3a co wceq mndsgrp sgrpass sylan ) CIJCKJDAJEAJFAJLDEB
+      MFBMDEFBMBMNCOACDEBFGHPQ $.
+
+    $d u x y z B $.  $d u G $.  $d u .+ $.
+    $( A monoid has a two-sided identity element.  (Contributed by NM,
+       16-Aug-2011.) $)
+    mndid $p |- ( G e. Mnd ->
+         E. u e. B A. x e. B ( ( u .+ x ) = x /\ ( x .+ u ) = x ) ) $=
+      ( vy vz cmnd wcel cv co wceq wral wa wrex ismnd simprbi ) EJKALZHLZDMZCKU
+      BILZDMTUAUCDMDMNICOPHCOACOBLZTDMTNTUDDMTNPACOBCQCDBEAHIFGRS $.
+
+    $( The two-sided identity element of a monoid is unique.  Lemma 2.2.1(a) of
+       [Herstein] p. 55.  (Contributed by Mario Carneiro, 8-Dec-2014.) $)
+    mndideu $p |- ( G e. Mnd ->
+      E! u e. B A. x e. B ( ( u .+ x ) = x /\ ( x .+ u ) = x ) ) $=
+      ( cmnd wcel cv co wceq wa wral wrex wrmo wreu mndid mgmidmo reu5
+      sylanblrc ) EHIBJZAJZDKUCLUCUBDKUCLMACNZBCOUDBCPUDBCQABCDEFGRABCDSUDBCTUA
+      $.
+
+    mnd4g.1 $e |- ( ph -> G e. Mnd ) $.
+    mnd4g.2 $e |- ( ph -> X e. B ) $.
+    mnd4g.3 $e |- ( ph -> Y e. B ) $.
+    mnd4g.4 $e |- ( ph -> Z e. B ) $.
+    ${
+      mnd32g.5 $e |- ( ph -> ( Y .+ Z ) = ( Z .+ Y ) ) $.
+      $( Commutative/associative law for monoids, with an explicit
+         commutativity hypothesis.  (Contributed by Mario Carneiro,
+         21-Apr-2016.) $)
+      mnd32g $p |- ( ph -> ( ( X .+ Y ) .+ Z ) = ( ( X .+ Z ) .+ Y ) ) $=
+        ( co oveq2d wcel wceq mndass syl13anc cmnd 3eqtr4d ) AEFGCOZCOZEGFCOZCO
+        ZEFCOGCOZEGCOFCOZAUCUEECNPADUAQZEBQZFBQZGBQZUGUDRJKLMBCDEFGHISTAUIUJULU
+        KUHUFRJKMLBCDEGFHISTUB $.
+    $}
+
+    ${
+      mnd12g.5 $e |- ( ph -> ( X .+ Y ) = ( Y .+ X ) ) $.
+      $( Commutative/associative law for monoids, with an explicit
+         commutativity hypothesis.  (Contributed by Mario Carneiro,
+         21-Apr-2016.) $)
+      mnd12g $p |- ( ph -> ( X .+ ( Y .+ Z ) ) = ( Y .+ ( X .+ Z ) ) ) $=
+        ( co oveq1d wcel wceq mndass syl13anc cmnd 3eqtr3d ) AEFCOZGCOZFECOZGCO
+        ZEFGCOCOZFEGCOCOZAUCUEGCNPADUAQZEBQZFBQZGBQZUDUGRJKLMBCDEFGHISTAUIUKUJU
+        LUFUHRJLKMBCDFEGHISTUB $.
+    $}
+
+    mnd4g.5 $e |- ( ph -> W e. B ) $.
+    mnd4g.6 $e |- ( ph -> ( Y .+ Z ) = ( Z .+ Y ) ) $.
+    $( Commutative/associative law for commutative monoids, with an explicit
+       commutativity hypothesis.  (Contributed by Mario Carneiro,
+       21-Apr-2016.) $)
+    mnd4g $p |- ( ph ->
+      ( ( X .+ Y ) .+ ( Z .+ W ) ) = ( ( X .+ Z ) .+ ( Y .+ W ) ) ) $=
+      ( co wcel wceq mndcl mnd12g oveq2d cmnd syl3anc mndass syl13anc 3eqtr4d )
+      AFGHECQZCQZCQZFHGECQZCQZCQZFGCQUHCQZFHCQUKCQZAUIULFCABCDGHEIJKMNOPUAUBADU
+      CRZFBRZGBRZUHBRZUNUJSKLMAUPHBRZEBRZUSKNOBCDHEIJTUDBCDFGUHIJUEUFAUPUQUTUKB
+      RZUOUMSKLNAUPURVAVBKMOBCDGEIJTUDBCDFHUKIJUEUFUG $.
+  $}
+
+  ${
+    $d x y B $.  $d x y G $.  $d x y .0. $.
+    mndidcl.b $e |- B = ( Base ` G ) $.
+    mndidcl.o $e |- .0. = ( 0g ` G ) $.
+    $( The identity element of a monoid belongs to the monoid.  (Contributed by
+       NM, 27-Aug-2011.)  (Revised by Mario Carneiro, 27-Dec-2014.) $)
+    mndidcl $p |- ( G e. Mnd -> .0. e. B ) $=
+      ( vy vx cmnd wcel cplusg cfv eqid mndid mgmidcl ) BHIFABJKZGBCDEOLZFGAOBD
+      PMN $.
+  $}
+
+  ${
+    mndbn0.b $e |- B = ( Base ` G ) $.
+    $( The base set of a monoid is not empty.  (It is also inhabited, as seen
+       at ~ mndidcl ).  Statement in [Lang] p. 3.  (Contributed by AV,
+       29-Dec-2023.) $)
+    mndbn0 $p |- ( G e. Mnd -> B =/= (/) ) $=
+      ( cmnd wcel c0g cfv eqid mndidcl ne0d ) BDEABFGZABKCKHIJ $.
+  $}
+
+  ${
+    hashfinmndnn.1 $e |- B = ( Base ` G ) $.
+    hashfinmndnn.2 $e |- ( ph -> G e. Mnd ) $.
+    hashfinmndnn.3 $e |- ( ph -> B e. Fin ) $.
+    $( A finite monoid has positive integer size.  (Contributed by Rohan
+       Ridenour, 3-Aug-2023.) $)
+    hashfinmndnn $p |- ( ph -> ( # ` B ) e. NN ) $=
+      ( chash cfv cn0 wcel cc0 wne cn cfn hashcl syl c0g cmnd eqid mndidcl
+      fihashelne0d neqned elnnne0 sylanbrc ) ABGHZIJZUEKLUEMJABNJUFFBOPAUEKABCQ
+      HZACRJUGBJEBCUGDUGSTPFUAUBUEUCUD $.
+  $}
+
+  ${
+    mndplusf.1 $e |- B = ( Base ` G ) $.
+    mndplusf.2 $e |- .+^ = ( +f ` G ) $.
+    $( The group addition operation is a function.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.)  (Proof shortened by AV, 3-Feb-2020.) $)
+    mndplusf $p |- ( G e. Mnd -> .+^ : ( B X. B ) --> B ) $=
+      ( cmnd wcel cmgm cxp wf mndmgm mgmplusf syl ) CFGCHGAAIABJCKABCDELM $.
+  $}
+
+  ${
+    $d x y B $.  $d x y G $.  $d x y .0. $.  $d x y .+ $.  $d x X $.
+    mndlrid.b $e |- B = ( Base ` G ) $.
+    mndlrid.p $e |- .+ = ( +g ` G ) $.
+    mndlrid.o $e |- .0. = ( 0g ` G ) $.
+    $( A monoid's identity element is a two-sided identity.  (Contributed by
+       NM, 18-Aug-2011.) $)
+    mndlrid $p |- ( ( G e. Mnd /\ X e. B ) -> ( ( .0. .+ X ) = X /\
+         ( X .+ .0. ) = X ) ) $=
+      ( vx vy cmnd wcel mndid mgmlrid ) CKLIABJCDEFHGIJABCFGMN $.
+
+    $( The identity element of a monoid is a left identity.  (Contributed by
+       NM, 18-Aug-2011.) $)
+    mndlid $p |- ( ( G e. Mnd /\ X e. B ) -> ( .0. .+ X ) = X ) $=
+      ( cmnd wcel wa co wceq mndlrid simpld ) CIJDAJKEDBLDMDEBLDMABCDEFGHNO $.
+
+    $( The identity element of a monoid is a right identity.  (Contributed by
+       NM, 18-Aug-2011.) $)
+    mndrid $p |- ( ( G e. Mnd /\ X e. B ) -> ( X .+ .0. ) = X ) $=
+      ( cmnd wcel wa co wceq mndlrid simprd ) CIJDAJKEDBLDMDEBLDMABCDEFGHNO $.
+  $}
+
+  ${
+    $d x y z B $.  $d u x y z G $.  $d x y z ph $.  $d u x .0. $.
+    ismndd.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    ismndd.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    ismndd.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
+    ismndd.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                   ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+    ismndd.z $e |- ( ph -> .0. e. B ) $.
+    ismndd.i $e |- ( ( ph /\ x e. B ) -> ( .0. .+ x ) = x ) $.
+    ismndd.j $e |- ( ( ph /\ x e. B ) -> ( x .+ .0. ) = x ) $.
+    $( Deduce a monoid from its properties.  (Contributed by Mario Carneiro,
+       6-Jan-2015.) $)
+    ismndd $p |- ( ph -> G e. Mnd ) $=
+      ( co wcel wceq wral wa vu cplusg cfv cbs wrex cmnd simpll simplrl simplrr
+      cv 3expb simpr syl13anc ralrimiva ralrimivva oveqd eleq12d eqidd oveq123d
+      jca eqeq12d raleqbidv anbi12d eleqtrd eleq2d biimpar adantr eqtr3d syldan
+      mpbid oveq1 eqeq1d ovanraleqv rspcev syl2anc eqid ismnd sylanbrc ) ABUJZC
+      UJZGUBUCZPZGUDUCZQZWBDUJZWAPZVSVTWEWAPZWAPZRZDWCSZTZCWCSZBWCSZUAUJZVSWAPZ
+      VSRZVSWNWAPVSRTBWCSZUAWCUEZGUFQAVSVTFPZEQZWSWEFPZVSVTWEFPZFPZRZDESZTZCESZ
+      BESWMAXFBCEEAVSEQZVTEQZTZTZWTXEAXHXIWTKUKXKXDDEXKWEEQZTAXHXIXLXDAXJXLUGAX
+      HXIXLUHAXHXIXLUIXKXLULLUMUNUTUOAXGWLBEWCIAXFWKCEWCIAWTWDXEWJAWSWBEWCAFWAV
+      SVTJUPZIUQAXDWIDEWCIAXAWFXCWHAWSWBWEWEFWAJXMAWEURUSAVSVSXBWGFWAJAVSURAFWA
+      VTWEJUPUSVAVBVCVBVBVJAHWCQHVSWAPZVSRZVSHWAPZVSRZTZBWCSZWRAHEWCMIVDAXRBWCA
+      VSWCQZXHXRAXHXTAEWCVSIVEVFAXHTZXOXQYAHVSFPXNVSYAFWAHVSAFWARXHJVGZUPNVHYAV
+      SHFPXPVSYAFWAVSHYBUPOVHUTVIUNWQXSUAHWCWPXOBVSWNVSWAWCHWNHRWOXNVSWNHVSWAVK
+      VLVMVNVOWCWAUAGBCDWCVPWAVPVQVR $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y z G $.  $d x y z .+^ $.
+    mndpf.b $e |- B = ( Base ` G ) $.
+    mndpf.p $e |- .+^ = ( +f ` G ) $.
+    $( The addition operation of a monoid as a function is an onto function.
+       (Contributed by FL, 2-Nov-2009.)  (Revised by Mario Carneiro,
+       11-Oct-2013.)  (Revised by AV, 23-Jan-2020.) $)
+    mndpfo $p |- ( G e. Mnd -> .+^ : ( B X. B ) -onto-> B ) $=
+      ( vx vy vz cmnd wcel cv co wceq wrex wa cfv eqid adantr wb rexbidva simpr
+      cxp wf wral wfo mndplusf cplusg c0g mndidcl mndrid eqcomd rspceov syl3anc
+      w3a plusfvalg eqeq2d 3expa mpbird ralrimiva foov sylanbrc ) CIJZAAUBZABUC
+      FKZGKZHKZBLZMZHANZGANZFAUDVCABUEABCDEUFVBVJFAVBVDAJZOZVJVDVEVFCUGPZLZMZHA
+      NZGANZVLVKCUHPZAJZVDVDVRVMLZMVQVBVKUAVBVSVKACVRDVRQZUIRVLVTVDAVMCVDVRDVMQ
+      ZWAUJUKGHAAVDVRVDVMULUMVBVJVQSVKVBVIVPGAVBVEAJZOVHVOHAVBWCVFAJZVHVOSVBWCW
+      DUNVGVNVDAVMBCIVEVFDWBEUOUPUQTTRURUSGHFAAABUTVA $.
+  $}
+
+  ${
+    mndfo.b $e |- B = ( Base ` G ) $.
+    mndfo.p $e |- .+ = ( +g ` G ) $.
+    $( The addition operation of a monoid is an onto function (assuming it is a
+       function).  (Contributed by Mario Carneiro, 11-Oct-2013.)  (Proof
+       shortened by AV, 23-Jan-2020.) $)
+    mndfo $p |- ( ( G e. Mnd /\ .+ Fn ( B X. B ) ) ->
+      .+ : ( B X. B ) -onto-> B ) $=
+      ( cmnd wcel cxp wfn wa wfo cplusf cfv eqid mndpfo adantr wceq wb plusfeqg
+      eqcomd foeq1 syl mpbird ) CFGZBAAHZIZJZUEABKZUEACLMZKZUDUJUFAUICDUINZOPUG
+      BUIQUHUJRUGUIBABUICFDEUKSTUEABUIUAUBUC $.
+  $}
+
+  ${
+    $d s u v w x y B $.  $d s u v w x y K $.  $d s u v w x y ph $.
+    $d s u v w x y L $.
+    mndpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    mndpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    mndpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    $( If two structures have the same base set, and the values of their group
+       (addition) operations are equal for all pairs of elements of the base
+       set, one is a monoid iff the other one is.  (Contributed by Mario
+       Carneiro, 6-Jan-2015.) $)
+    mndpropd $p |- ( ph -> ( K e. Mnd <-> L e. Mnd ) ) $=
+      ( vu vv vw vs cv co wcel wral wa wceq oveqrspc2v cplusg cfv simplr simprl
+      cmnd cbs ad2antrr eleqtrd simprr eqid syl3anc eleqtrrd ralrimivva adantlr
+      mndcl ex 3eltr4d wb wrex eleq1d simplll simplrl simplrr ovrspc2v syl21anc
+      simpllr simpr syl12anc oveq1d eqtrd oveq2d eqeq12d ralbidva adantr eleq2d
+      anbi12d 2ralbidva raleqdv raleqbidv 3bitr3d eqeq1d rexbidva ismnd 3bitr4g
+      rexeqbidv pm5.21ndd ) ABNZCNZEUAUBZOZDPZCDQBDQZEUEPZFUEPZAWMWLAWMRZWKBCDD
+      WOWGDPZWHDPZRZRZWJEUFUBZDWSWMWGWTPWHWTPWJWTPAWMWRUCWSWGDWTWOWPWQUDADWTSZW
+      MWRGUGZUHWSWHDWTWOWPWQUIXBUHWTWIEWGWHWTUJZWIUJZUOUKXBULUMUPAWNWLAWNRZWKBC
+      DDXEWRRZWGWHFUAUBZOZFUFUBZWJDXFWNWGXIPWHXIPXHXIPAWNWRUCXFWGDXIXEWPWQUDADX
+      ISZWNWRHUGZUHXFWHDXIXEWPWQUIXKUHXIXGFWGWHXIUJZXGUJZUOUKAWRWJXHSWNIUNXKUQU
+      MUPAWLWMWNURAWLRZJNZKNZWIOZWTPZXQLNZWIOZXOXPXSWIOZWIOZSZLWTQZRZKWTQZJWTQZ
+      MNZXOWIOZXOSZXOYHWIOZXOSZRZJWTQZMWTUSZRXOXPXGOZXIPZYPXSXGOZXOXPXSXGOZXGOZ
+      SZLXIQZRZKXIQZJXIQZYHXOXGOZXOSZXOYHXGOZXOSZRZJXIQZMXIUSZRWMWNXNYGUUEYOUUL
+      XNXQDPZYCLDQZRZKDQZJDQYPDPZUUALDQZRZKDQZJDQYGUUEXNUUOUUSJKDDXNXODPZXPDPZR
+      ZRZUUMUUQUUNUURUVDXQYPDAUVCXQYPSZWLABCDDWIXGXOXPITZUNUTUVDYCUUALDUVDXSDPZ
+      RZXTYRYBYTUVHXTXQXSXGOZYRUVHAUUMUVGXTUVISAWLUVCUVGVAZUVHUVAUVBWLUUMXNUVAU
+      VBUVGVBZXNUVAUVBUVGVCZAWLUVCUVGVFZBCDDDWIXOXPVDVEUVDUVGVGZABCDDWIXGXQXSIT
+      VHUVHXQYPXSXGUVHAUVAUVBUVEUVJUVKUVLUVFVHVIVJUVHYBXOYAXGOZYTUVHAUVAYADPZYB
+      UVOSUVJUVKUVHUVBUVGWLUVPUVLUVNUVMBCDDDWIXPXSVDVEABCDDWIXGXOYAITVHUVHYAYSX
+      OXGUVHAUVBUVGYAYSSUVJUVLUVNABCDDWIXGXPXSITVHVKVJVLVMVPVQXNUUPYFJDWTAXAWLG
+      VNZXNUUOYEKDWTUVQXNUUMXRUUNYDXNDWTXQUVQVOXNYCLDWTUVQVRVPVSVSXNUUTUUDJDXIA
+      XJWLHVNZXNUUSUUCKDXIUVRXNUUQYQUURUUBXNDXIYPUVRVOXNUUALDXIUVRVRVPVSVSVTXNY
+      MJDQZMDUSUUJJDQZMDUSYOUULXNUVSUVTMDXNYHDPZRZYMUUJJDUWBUVARZYJUUGYLUUIUWCY
+      IUUFXOUWCAUWAUVAYIUUFSAWLUWAUVAVAZXNUWAUVAUCZUWBUVAVGZABCDDWIXGYHXOITVHWA
+      UWCYKUUHXOUWCAUVAUWAYKUUHSUWDUWFUWEABCDDWIXGXOYHITVHWAVPVMWBXNUVSYNMDWTUV
+      QXNYMJDWTUVQVRWEXNUVTUUKMDXIUVRXNUUJJDXIUVRVRWEVTVPWTWIMEJKLXCXDWCXIXGMFJ
+      KLXLXMWCWDUPWF $.
+  $}
+
+  ${
+    $d x y K $.  $d x y L $.
+    mndprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    mndprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    $( If two structures have the same group components (properties), one is a
+       monoid iff the other one is.  (Contributed by Mario Carneiro,
+       11-Oct-2013.) $)
+    mndprop $p |- ( K e. Mnd <-> L e. Mnd ) $=
+      ( vx vy cmnd wcel wb wtru cbs cfv eqidd wceq a1i cv cplusg co wa oveqi
+      mndpropd mptru ) AGHBGHIJEFAKLZABJUCMUCBKLNJCOEPZFPZAQLZRUDUEBQLZRNJUDUCH
+      UEUCHSSUFUGUDUEDTOUAUB $.
+  $}
+
+  ${
+    $d A v w $.  $d B v w $.  $d .0. v w $.  $d .+ v w $.  $d ph v w $.
+    mndinvmod.b $e |- B = ( Base ` G ) $.
+    mndinvmod.0 $e |- .0. = ( 0g ` G ) $.
+    mndinvmod.p $e |- .+ = ( +g ` G ) $.
+    mndinvmod.m $e |- ( ph -> G e. Mnd ) $.
+    mndinvmod.a $e |- ( ph -> A e. B ) $.
+    $( Uniqueness of an inverse element in a monoid, if it exists.
+       (Contributed by AV, 20-Jan-2024.) $)
+    mndinvmod $p |- ( ph -> E* w e. B
+                         ( ( w .+ A ) = .0. /\ ( A .+ w ) = .0. ) ) $=
+      ( vv cv co wceq wa wcel adantr adantl weq wi wral wrmo cmnd mndrid syl2an
+      simpl eqcomd oveq2 eqcoms simpr w3a mndass oveq1 mndlid 3eqtrd ralrimivva
+      syl13anc ex eqeq1d anbi12d rmo4 sylibr ) ABNZCEOZGPZCVEEOZGPZQZMNZCEOZGPZ
+      CVKEOZGPZQZQZBMUAZUBZMDUCBDUCVJBDUDAVSBMDDAVEDRZVKDRZQZQZVQVRWCVQQZVEVEGE
+      OZVEVNEOZVKWCVEWEPVQWCWEVEAFUERZVTWEVEPWBKVTWAUHZDEFVEGHJIUFUGUISVQWEWFPZ
+      WCVPWIVJVOWIVMWIGVNGVNVEEUJUKTTTWDWFVFVKEOZGVKEOZVKWCWFWJPZVQWCWGVTCDRZWA
+      WLAWGWBKSWBVTAWHTAWMWBLSWBWAAVTWAULZTWGVTWMWAUMQWJWFDEFVECVKHJUNUIUSSVQWJ
+      WKPZWCVJWOVPVGWOVIVFGVKEUOSSTWCWKVKPZVQAWGWAWPWBKWNDEFVKGHJIUPUGSUQUQUTUR
+      VJVPBMDVRVGVMVIVOVRVFVLGVEVKCEUOVAVRVHVNGVEVKCEUJVAVBVCVD $.
+  $}
+
+  ${
+    $d I x y $.  $d M x y $.  $d V x y $.
+    mnd1.m $e |- M = { <. ( Base ` ndx ) , { I } >. ,
+                       <. ( +g ` ndx ) , { <. <. I , I >. , I >. } >. } $.
+    $( The (smallest) structure representing a _trivial monoid_ consists of one
+       element.  (Contributed by AV, 28-Apr-2019.)  (Proof shortened by AV,
+       11-Feb-2020.) $)
+    mnd1 $p |- ( I e. V -> M e. Mnd ) $=
+      ( vx vy wcel cv cfv co wceq wa wral wrex cop csn cvv opexg mpancom eqeq1d
+      csgrp cplusg cbs cmnd sgrp1 df-ov anidms fvsng eqtrid oveq2 eqeq12d oveq1
+      id anbi12d ralsng mpbir2and ovanraleqv rexsng mpbird syl grpbaseg syl2anc
+      snexg grpplusgg oveqd raleqbidv rexeqbidv anbi2d mpbi2and ismnddef sylibr
+      eqid ) ACGZBUAGZEHZFHZBUBIZJZVPKZVPVOVQJZVPKZLZFBUCIZMZEWCNZLZBUDGVMVNVOV
+      PAAOZAOZPZJZVPKZVPVOWIJZVPKZLZFAPZMZEWONZWFABCDUEVMWQAVPWIJZVPKZVPAWIJZVP
+      KZLZFWOMZVMXCAAWIJZAKZXEVMXDWGWIIZAAAWIUFWGQGZVMXFAKVMXGAACCRUGZWGAQCUHSU
+      IZXIXBXEXELFACVPAKZWSXEXAXEXJWRXDVPAVPAAWIUJXJUMZUKXJWTXDVPAVPAAWIULXKUKU
+      NUOUPWPXCEACWKWSFVPVOVPWIWOAVOAKWJWRVPVOAVPWIULTUQURUSVMWQWEVNVMWPWDEWOWC
+      VMWOQGZWIQGZWOWCKACVCZVMWHQGZXMXGVMXOXHWGAQCRSWHQVCUTZWOWIBQQDVAVBZVMWNWB
+      FWOWCXQVMWKVSWMWAVMWJVRVPVMWIVQVOVPVMXLXMWIVQKXNXPWOWIBQQDVDVBZVETVMWLVTV
+      PVMWIVQVPVOXRVETUNVFVGVHVIWCVQEBFWCVLVQVLVJVK $.
+
+    $d I a $.  $d M a $.  $d V a $.
+    $( The singleton element of a _trivial monoid_ is its identity element.
+       (Contributed by AV, 23-Jan-2020.) $)
+    mnd1id $p |- ( I e. V -> ( 0g ` M ) = I ) $=
+      ( va wcel cfv csn cop wceq snexg opexg mpancom syl2anc eqeq12d syl5ibrcom
+      cvv co syl5bi imp c0g cbs anidms grpbaseg cplusg grpplusgg snidg cv velsn
+      syl df-ov fvsng eqtrid oveq2 id oveq1 grpidd eqcomd ) ACFZABUAGUSEAHZAAIZ
+      AIZHZBAUSUTQFZVCQFZUTBUBGJACKZUSVBQFZVEVAQFZUSVGUSVHAACCLUCZVAAQCLMVBQKUJ
+      ZUTVCBQQDUDNUSVDVEVCBUEGJVFVJUTVCBQQDUFNACUGUSEUHZUTFZAVKVCRZVKJZVLVKAJZU
+      SVNEAUIZUSVNVOAAVCRZAJZUSVQVAVCGZAAAVCUKVHUSVSAJVIVAAQCULMUMZVOVMVQVKAVKA
+      AVCUNVOUOZOPSTUSVLVKAVCRZVKJZVLVOUSWCVPUSWCVOVRVTVOWBVQVKAVKAAVCUPWAOPSTU
+      QUR $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Monoid homomorphisms and submonoids
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c MndHom $.
+  $c SubMnd $.
+
+  $( Hom-set generator class for monoids. $)
+  cmhm $a class MndHom $.
+
+  $( Class function taking a monoid to its lattice of submonoids. $)
+  csubmnd $a class SubMnd $.
+
+  ${
+    $d s t f x y $.
+    $( A monoid homomorphism is a function on the base sets which preserves the
+       binary operation and the identity.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    df-mhm $a |- MndHom = ( s e. Mnd , t e. Mnd |->
+          { f e. ( ( Base ` t ) ^m ( Base ` s ) ) |
+            ( A. x e. ( Base ` s ) A. y e. ( Base ` s )
+                  ( f ` ( x ( +g ` s ) y ) ) =
+                    ( ( f ` x ) ( +g ` t ) ( f ` y ) ) /\
+              ( f ` ( 0g ` s ) ) = ( 0g ` t ) ) } ) $.
+
+    $( A submonoid is a subset of a monoid which contains the identity and is
+       closed under the operation.  Such subsets are themselves monoids with
+       the same identity.  (Contributed by Mario Carneiro, 7-Mar-2015.) $)
+    df-submnd $a |- SubMnd = ( s e. Mnd |-> { t e. ~P ( Base ` s ) |
+            ( ( 0g ` s ) e. t /\
+              A. x e. t A. y e. t ( x ( +g ` s ) y ) e. t ) } ) $.
+  $}
+
+  ${
+    $d f s t .+^ $.  $d f s t x y B $.  $d f s t x y S $.  $d f s t x y T $.
+    $d f s t .+ $.  $d f s t .0. $.  $d f s t C $.  $d f x y F $.
+    $d f s t Y $.
+    ismhm.b $e |- B = ( Base ` S ) $.
+    ismhm.c $e |- C = ( Base ` T ) $.
+    ismhm.p $e |- .+ = ( +g ` S ) $.
+    ismhm.q $e |- .+^ = ( +g ` T ) $.
+    ismhm.z $e |- .0. = ( 0g ` S ) $.
+    ismhm.y $e |- Y = ( 0g ` T ) $.
+    $( Property of a monoid homomorphism.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    ismhm $p |- ( F e. ( S MndHom T ) <-> ( ( S e. Mnd /\ T e. Mnd ) /\
+          ( F : B --> C /\ A. x e. B A. y e. B ( F ` ( x .+ y ) ) =
+                  ( ( F ` x ) .+^ ( F ` y ) ) /\ ( F ` .0. ) = Y ) ) ) $=
+      ( wcel cfv cvv vs vt vf cmhm co cmnd wa wceq wral w3a cplusg cbs c0g cmap
+      wf cv crab df-mhm elmpocl cxp wfn fnmap basfn simpr elexd funfvex sylancr
+      funfni eqeltrid simpl fnovex mp3an2i rabexg syl eqtr4di oveqan12rd adantr
+      fveq2 fveq2d eqeqan12d raleqbidv anbi12d rabeqbidv ovmpoga mpd3an3 eleq2d
+      oveqd elmapd anbi1d fveq1 oveq12d eqeq12d 2ralbidv eqeq1d 3anass biadanii
+      elrab 3bitr4g bitrd ) IGHUDUEZRZGUFRZHUFRZUGZCDIUOZAUPZBUPZEUEZISZXFISZXG
+      ISZFUEZUHZBCUIACUIZKISZJUHZUJZUAUBUFUFXFXGUAUPZUKSZUEZUCUPZSZXFYASZXGYASZ
+      UBUPZUKSZUEZUHZBXRULSZUIZAYIUIZXRUMSZYASZYEUMSZUHZUGZUCYEULSZYIUNUEZUQZGH
+      UDIABUBUCUAURZUSXDXAIXHYASZYCYDFUEZUHZBCUIZACUIZKYASZJUHZUGZUCDCUNUEZUQZR
+      ZXQXDWTUUJIXBXCUUJTRZWTUUJUHXDUUITRZUULUNTTUTVAXDDTRCTRUUMVBXDDHULSZTMXDU
+      LTVAZHTRUUNTRZVCXDHUFXBXCVDVEUUPTHULHULVFVHVGVIZXDCGULSZTLXDUUOGTRUURTRZV
+      CXDGUFXBXCVJVEUUSTGULGULVFVHVGVIZDCTTUNVKVLUUHUCUUITVMVNUAUBGHUFUFYSUUJUD
+      TXRGUHZYEHUHZUGZYPUUHUCYRUUIUVBUVAYQDYICUNUVBYQUUNDYEHULVRMVOUVAYIUURCXRG
+      ULVRLVOZVPUVCYKUUEYOUUGUVCYJUUDAYICUVAYICUHUVBUVDVQZUVCYHUUCBYICUVEUVAUVB
+      YBUUAYGUUBUVAXTXHYAUVAXSEXFXGUVAXSGUKSEXRGUKVRNVOWGVSUVBYFFYCYDUVBYFHUKSF
+      YEHUKVROVOWGVTWAWAUVAUVBYMUUFYNJUVAYLKYAUVAYLGUMSKXRGUMVRPVOVSUVBYNHUMSJY
+      EHUMVRQVOVTWBWCYTWDWEWFXDIUUIRZXNXPUGZUGXEUVGUGUUKXQXDUVFXEUVGXDDCITTUUQU
+      UTWHWIUUHUVGUCIUUIYAIUHZUUEXNUUGXPUVHUUCXMABCCUVHUUAXIUUBXLXHYAIWJUVHYCXJ
+      YDXKFXFYAIWJXGYAIWJWKWLWMUVHUUFXOJKYAIWJWNWBWQXEXNXPWOWRWSWP $.
+  $}
+
+  ${
+    $d f s t x y B $.  $d x y F $.  $d x y S $.  $d x y T $.
+    $( Reverse closure of a monoid homomorphism.  (Contributed by Mario
+       Carneiro, 7-Mar-2015.) $)
+    mhmrcl1 $p |- ( F e. ( S MndHom T ) -> S e. Mnd ) $=
+      ( vs vt vx vy vf cmnd cv cplusg cfv co wceq cbs wral c0g wa cmap crab
+      cmhm df-mhm elmpocl1 ) DEIIFJZGJZDJZKLMHJZLUDUGLUEUGLEJZKLMNGUFOLZPFUIPUF
+      QLUGLUHQLNRHUHOLUISMTABUACFGEHDUBUC $.
+
+    $( Reverse closure of a monoid homomorphism.  (Contributed by Mario
+       Carneiro, 7-Mar-2015.) $)
+    mhmrcl2 $p |- ( F e. ( S MndHom T ) -> T e. Mnd ) $=
+      ( vs vt vx vy vf cmnd cv cplusg cfv co wceq cbs wral c0g wa cmap crab
+      cmhm df-mhm elmpocl2 ) DEIIFJZGJZDJZKLMHJZLUDUGLUEUGLEJZKLMNGUFOLZPFUIPUF
+      QLUGLUHQLNRHUHOLUISMTABUACFGEHDUBUC $.
+
+    mhmf.b $e |- B = ( Base ` S ) $.
+    mhmf.c $e |- C = ( Base ` T ) $.
+    $( A monoid homomorphism is a function.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    mhmf $p |- ( F e. ( S MndHom T ) -> F : B --> C ) $=
+      ( vx vy cmhm co wcel cv cplusg cfv wceq wral c0g cmnd eqid wf w3a simprbi
+      wa ismhm simp1d ) ECDJKLZABEUAZHMZIMZCNOZKEOUIEOUJEODNOZKPIAQHAQZCROZEODR
+      OZPZUGCSLDSLUDUHUMUPUBHIABUKULCDEUOUNFGUKTULTUNTUOTUEUCUF $.
+  $}
+
+  ${
+    $d x y B $.  $d w x y z C $.  $d f x y J $.  $d f x y L $.  $d f x y ph $.
+    $d f w x y z K $.  $d f w x y z M $.
+    mhmpropd.a $e |- ( ph -> B = ( Base ` J ) ) $.
+    mhmpropd.b $e |- ( ph -> C = ( Base ` K ) ) $.
+    mhmpropd.c $e |- ( ph -> B = ( Base ` L ) ) $.
+    mhmpropd.d $e |- ( ph -> C = ( Base ` M ) ) $.
+    mhmpropd.e $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( x ( +g ` J ) y ) = ( x ( +g ` L ) y ) ) $.
+    mhmpropd.f $e |- ( ( ph /\ ( x e. C /\ y e. C ) ) ->
+        ( x ( +g ` K ) y ) = ( x ( +g ` M ) y ) ) $.
+    $( Monoid homomorphism depends only on the monoidal attributes of
+       structures.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       Mario Carneiro, 7-Nov-2015.) $)
+    mhmpropd $p |- ( ph -> ( J MndHom K ) = ( L MndHom M ) ) $=
+      ( co wcel wa cfv wceq vf vw vz cmhm cmnd cbs cv wf cplusg wral c0g w3a wb
+      fveq2d adantlr ffvelrn anim12dan ralrimivva oveq1 eqeq12d oveq2 cbvral2vw
+      sylib rspc2va syl2anr anassrs 2ralbidva adantrl raleqbi1dv adantr 3bitr3d
+      raleq simprll mndpropd grpidpropdg simprlr anbi12d pm5.32da feq23d anbi1d
+      syl mpbid 3anass 3bitr4g bitrd eqid ismhm eqrdv ) AUAFGUDPZHIUDPZAFUEQZGU
+      EQZRZFUFSZGUFSZUAUGZUHZBUGZCUGZFUISZPZWPSZWRWPSZWSWPSZGUISZPZTZCWNUJZBWNU
+      JZFUKSZWPSZGUKSZTZULZRZHUEQZIUEQZRZHUFSZIUFSZWPUHZWRWSHUISZPZWPSZXCXDIUIS
+      ZPZTZCXSUJZBXSUJZHUKSZWPSZIUKSZTZULZRZWPWIQWPWJQAXOWMYNRYOAWMXNYNAWMRZWQX
+      IXMRZRZYAYIYMRZRZXNYNYPDEWPUHZYQRUUAYSRYRYTYPUUAYQYSAWMUUAYQYSUMAWMUUARZR
+      ZXIYIXMYMUUCXGCDUJZBDUJZYGCDUJZBDUJZXIYIAUUAUUEUUGUMWMAUUARZXGYGBCDDUUHWR
+      DQZWSDQZRZRXBYDXFYFAUUKXBYDTUUAAUUKRXAYCWPNUNUOAUUAUUKXFYFTZUUAUUKRXCEQZX
+      DEQZRUBUGZUCUGZXEPZUUOUUPYEPZTZUCEUJUBEUJZUULAUUAUUIUUMUUJUUNDEWRWPUPDEWS
+      WPUPUQAWRWSXEPZWRWSYEPZTZCEUJBEUJUUTAUVCBCEEOURUVCUUSUUOWSXEPZUUOWSYEPZTB
+      CUBUCEEWRUUOTUVAUVDUVBUVEWRUUOWSXEUSWRUUOWSYEUSUTWSUUPTUVDUUQUVEUURWSUUPU
+      UOXEVAWSUUPUUOYEVAUTVBVCUUSUULXCUUPXEPZXCUUPYEPZTUBUCXCXDEEUUOXCTUUQUVFUU
+      RUVGUUOXCUUPXEUSUUOXCUUPYEUSUTUUPXDTUVFXFUVGYFUUPXDXCXEVAUUPXDXCYEVAUTVDV
+      EVFUTVGVHAUUEXIUMZUUBADWNTZUVHJUUDXHBDWNXGCDWNVLVIWAVJAUUGYIUMZUUBADXSTZU
+      VJLUUFYHBDXSYGCDXSVLVIWAVJVKUUCXKYKXLYLUUCXJYJWPUUCBCDFHUEUEAUVIUUBJVJAUV
+      KUUBLVJAWKWLUUAVMZUUCWKXPUVLAWKXPUMUUBABCDFHJLNVNZVJWBAUUKXAYCTUUBNUOVOUN
+      UUCBCEGIUEUEAEWOTUUBKVJAEXTTUUBMVJAWKWLUUAVPZUUCWLXQUVNAWLXQUMUUBABCEGIKM
+      OVNZVJWBAWREQWSEQRUVCUUBOUOVOUTVQVFVRYPUUAWQYQAUUAWQUMWMADEWNWOWPJKVSVJVT
+      YPUUAYAYSAUUAYAUMWMADEXSXTWPLMVSVJVTVKWQXIXMWCYAYIYMWCWDVRAWMXRYNAWKXPWLX
+      QUVMUVOVQVTWEBCWNWOWTXEFGWPXLXJWNWFWOWFWTWFXEWFXJWFXLWFWGBCXSXTYBYEHIWPYL
+      YJXSWFXTWFYBWFYEWFYJWFYLWFWGWDWH $.
+  $}
+
+  ${
+    $d B x y $.  $d F x y $.  $d .+ x y $.  $d .+^ x y $.  $d S x y $.
+    $d T x y $.  $d X x y $.  $d Y x y $.
+    mhmlin.b $e |- B = ( Base ` S ) $.
+    mhmlin.p $e |- .+ = ( +g ` S ) $.
+    mhmlin.q $e |- .+^ = ( +g ` T ) $.
+    $( A monoid homomorphism commutes with composition.  (Contributed by Mario
+       Carneiro, 7-Mar-2015.) $)
+    mhmlin $p |- ( ( F e. ( S MndHom T ) /\ X e. B /\ Y e. B ) ->
+        ( F ` ( X .+ Y ) ) = ( ( F ` X ) .+^ ( F ` Y ) ) ) $=
+      ( vx vy co wcel cfv wceq cv wral eqid cmhm wa cbs wf c0g cmnd w3a simprbi
+      ismhm simp2d fvoveq1 oveq1d eqeq12d fveq2d oveq2d rspc2v syl5com 3impib
+      fveq2 oveq2 ) FDEUANOZGAOZHAOZGHBNZFPZGFPZHFPZCNZQZVALRZMRZBNFPZVJFPZVKFP
+      ZCNZQZMASLASZVBVCUBVIVAAEUCPZFUDZVQDUEPZFPEUEPZQZVADUFOEUFOUBVSVQWBUGLMAV
+      RBCDEFWAVTIVRTJKVTTWATUIUHUJVPVIGVKBNZFPZVFVNCNZQLMGHAAVJGQZVLWDVOWEVJGVK
+      FBUKWFVMVFVNCVJGFUSULUMVKHQZWDVEWEVHWGWCVDFVKHGBUTUNWGVNVGVFCVKHFUSUOUMUP
+      UQUR $.
+  $}
+
+  ${
+    $d F x y $.  $d S x y $.  $d T x y $.
+    mhm0.z $e |- .0. = ( 0g ` S ) $.
+    mhm0.y $e |- Y = ( 0g ` T ) $.
+    $( A monoid homomorphism preserves zero.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    mhm0 $p |- ( F e. ( S MndHom T ) -> ( F ` .0. ) = Y ) $=
+      ( vx vy cmhm co wcel cbs cfv cv cplusg wceq wral cmnd eqid wf w3a simprbi
+      wa ismhm simp3d ) CABJKLZAMNZBMNZCUAZHOZIOZAPNZKCNUKCNULCNBPNZKQIUHRHUHRZ
+      ECNDQZUGASLBSLUDUJUOUPUBHIUHUIUMUNABCDEUHTUITUMTUNTFGUEUCUF $.
+  $}
+
+  ${
+    $d B a b $.  $d M a b $.
+    idmhm.b $e |- B = ( Base ` M ) $.
+    $( The identity homomorphism on a monoid.  (Contributed by AV,
+       14-Feb-2020.) $)
+    idmhm $p |- ( M e. Mnd -> ( _I |` B ) e. ( M MndHom M ) ) $=
+      ( va vb cmnd wcel cid cres wf cv cplusg cfv co wceq wral eqid fvresi syl
+      wa c0g w3a cmhm id wf1o f1oi f1of mndcl 3expb oveqan12d adantl ralrimivva
+      mp1i eqtr4d mndidcl 3jca ismhm syl21anbrc ) BFGZUSUSAAHAIZJZDKZEKZBLMZNZU
+      TMZVBUTMZVCUTMZVDNZOZEAPDAPZBUAMZUTMVLOZUBUTBBUCNGUSUDZVNUSVAVKVMAAUTUEVA
+      USAUFAAUTUGUMUSVJDEAAUSVBAGZVCAGZTZTZVFVEVIVRVEAGZVFVEOUSVOVPVSAVDBVBVCCV
+      DQZUHUIAVERSVQVIVEOUSVOVPVGVBVHVCVDAVBRAVCRUJUKUNULUSVLAGVMABVLCVLQZUOAVL
+      RSUPDEAAVDVDBBUTVLVLCCVTVTWAWAUQUR $.
+  $}
+
+  ${
+    $d B x y $.  $d C x y $.  $d F x y $.  $d R x y $.  $d S x y $.
+    mhmf1o.b $e |- B = ( Base ` R ) $.
+    mhmf1o.c $e |- C = ( Base ` S ) $.
+    $( A monoid homomorphism is bijective iff its converse is also a monoid
+       homomorphism.  (Contributed by AV, 22-Oct-2019.) $)
+    mhmf1o $p |- ( F e. ( R MndHom S )
+                   -> ( F : B -1-1-onto-> C <-> `' F e. ( S MndHom R ) ) ) $=
+      ( vx vy cmhm co wcel wf1o wa cmnd cfv wceq adantr eqid syl2anc ccnv wf cv
+      cplusg wral c0g w3a mhmrcl2 mhmrcl1 jca f1ocnv adantl syl simpll ffvelrnd
+      simprl simprr mhmlin syl3anc simpr f1ocnvfv2 oveq12d eqtrd mndcl f1ocnvfv
+      f1of wi mpd ralrimivva mhm0 eqcomd fveq2d mndidcl f1ocnvfv1 3jca sylanbrc
+      ismhm wfn mhmf ffnd dff1o4 impbida ) ECDJKLZABEMZEUAZDCJKLZWCWDNZDOLZCOLZ
+      NZBAWEUBZHUCZIUCZDUDPZKZWEPWLWEPZWMWEPZCUDPZKZQZIBUEHBUEZDUFPZWEPZCUFPZQZ
+      UGWFWCWJWDWCWHWICDEUHCDEUIZUJRWGWKXAXEWGBAWEMZWKWDXGWCABEUKULBAWEVFUMZWGW
+      THIBBWGWLBLZWMBLZNZNZWSEPZWOQZWTXLXMWPEPZWQEPZWNKZWOXLWCWPALZWQALZXMXQQWC
+      WDXKUNXLBAWLWEWGWKXKXHRZWGXIXJUPZUOZXLBAWMWEXTWGXIXJUQZUOZAWRWNCDEWPWQFWR
+      SZWNSZURUSXLXOWLXPWMWNXLWDXIXOWLQWGWDXKWCWDUTZRZYAABWLEVATXLWDXJXPWMQYHYC
+      ABWMEVATVBVCXLWDWSALZXNWTVGYHXLWIXRXSYIWGWIXKWCWIWDXFRRYBYDAWRCWPWQFYEVDU
+      SABWSWOEVETVHVIWGXCXDEPZWEPZXDWGXBYJWEWGYJXBWCYJXBQWDCDEXBXDXDSZXBSZVJRVK
+      VLWGWDXDALZYKXDQYGWCYNWDWCWIYNXFACXDFYLVMUMRABXDEVNTVCVOHIBAWNWRDCWEXDXBG
+      FYFYEYMYLVQVPWCWFNZEAVRWEBVRWDYOABEWCABEUBWFABCDEFGVSRVTYOBAWEWFWKWCBADCW
+      EGFVSULVTABEWAVPWB $.
+  $}
+
+  ${
+    $d M m t x y $.  $d S t x y $.  $d s t x y $.
+    $( Reverse closure for submonoids.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    submrcl $p |- ( S e. ( SubMnd ` M ) -> M e. Mnd ) $=
+      ( vs vt vx vy cmnd cv c0g cfv wcel cplusg co wral wa cbs cpw crab csubmnd
+      df-submnd mptrcl ) CGCHZIJDHZKEHFHUBLJMUCKFUCNEUCNODUBPJQRSABEFDCTUA $.
+
+    issubm.b $e |- B = ( Base ` M ) $.
+    issubm.z $e |- .0. = ( 0g ` M ) $.
+    issubm.p $e |- .+ = ( +g ` M ) $.
+    $( Expand definition of a submonoid.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    issubm $p |- ( M e. Mnd -> ( S e. ( SubMnd ` M ) <->
+          ( S C_ B /\ .0. e. S /\ A. x e. S A. y e. S ( x .+ y ) e. S ) ) ) $=
+      ( vt vm cmnd wcel cfv cv wral wa cbs cvv csubmnd c0g cplusg cpw df-submnd
+      crab wss w3a wceq fveq2 pweqd eleq1d oveqd 2ralbidv anbi12d rabeqbidv wfn
+      co id basfn elex funfvex funfni sylancr pwexd rabexg fvmptd3 eleq2d eleq2
+      syl raleqbi1dv elrab wb sseq2i eleq1i oveqi 2ralbii anbi12i 3anass elpw2g
+      a1i anbi1d 3bitr4rd syl5bb bitrd ) FMNZEFUAOZNEFUBOZKPZNZAPZBPZFUCOZURZWI
+      NZBWIQZAWIQZRZKFSOZUDZUFZNZECUGZGENZWKWLDURZENZBEQAEQZUHZWFWGXAEWFLFLPZUB
+      OZWINZWKWLXIUCOZURZWINZBWIQAWIQZRZKXISOZUDZUFXAMUATABKLUEXIFUIZXPWRKXRWTX
+      SXQWSXIFSUJUKXSXKWJXOWQXSXJWHWIXIFUBUJULXSXNWOABWIWIXSXMWNWIXSXLWMWKWLXIF
+      UCUJUMULUNUOUPWFUSWFWTTNXATNWFWSTWFSTUQFTNWSTNZUTFMVAXTTFSFSVBVCVDZVEWRKW
+      TTVFVJVGVHXBEWTNZWHENZWNENZBEQZAEQZRZRZWFXHWRYGKEWTWIEUIWJYCWQYFWIEWHVIWP
+      YEAWIEWOYDBWIEWIEWNVIVKVKUOVLWFXCXDXGRZRZEWSUGZYGRZXHYHYJYLVMWFXCYKYIYGCW
+      SEHVNXDYCXGYFGWHEIVOXFYDABEEXEWNEDWMWKWLJVPVOVQVRVRWAXHYJVMWFXCXDXGVSWAWF
+      YBYKYGWFXTYBYKVMYAEWSTVTVJWBWCWDWE $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y M $.  $d x y ph $.  $d x y ps $.  $d z .+ $.
+    $d z .0. $.  $d z ch $.  $d z et $.  $d z ta $.  $d z th $.
+    issubmd.b $e |- B = ( Base ` M ) $.
+    issubmd.p $e |- .+ = ( +g ` M ) $.
+    issubmd.z $e |- .0. = ( 0g ` M ) $.
+    issubmd.m $e |- ( ph -> M e. Mnd ) $.
+    issubmd.cz $e |- ( ph -> ch ) $.
+    issubmd.cp $e |- ( ( ph /\ ( ( x e. B /\ y e. B ) /\
+          ( th /\ ta ) ) ) -> et ) $.
+    issubmd.ch $e |- ( z = .0. -> ( ps <-> ch ) ) $.
+    issubmd.th $e |- ( z = x -> ( ps <-> th ) ) $.
+    issubmd.ta $e |- ( z = y -> ( ps <-> ta ) ) $.
+    issubmd.et $e |- ( z = ( x .+ y ) -> ( ps <-> et ) ) $.
+    $( Deduction for proving a submonoid.  (Contributed by Stefan O'Rear,
+       23-Aug-2015.)  (Revised by Stefan O'Rear, 5-Sep-2015.) $)
+    issubmd $p |- ( ph -> { z e. B | ps } e. ( SubMnd ` M ) ) $=
+      ( crab csubmnd cfv wcel wss cv co wral ssrab2 a1i cmnd mndidcl syl elrabd
+      elrab anbi12i adantr simprll simprrl mndcl syl3anc an4 sylan2b ralrimivva
+      wa w3a wb issubm mpbir3and ) ABIJUDZLUEUFUGZVMJUHZMVMUGZGUIZHUIZKUJZVMUGZ
+      HVMUKGVMUKZVOABIJULUMABCIMJTALUNUGZMJUGQJLMNPUOUPRUQAVTGHVMVMVQVMUGZVRVMU
+      GZVHAVQJUGZDVHZVRJUGZEVHZVHZVTWCWFWDWHBDIVQJUAURBEIVRJUBURUSAWIVHZBFIVSJU
+      CWJWBWEWGVSJUGAWBWIQUTAWEDWHVAAWFWGEVBJKLVQVRNOVCVDWIAWEWGVHDEVHVHFWEDWGE
+      VESVFUQVFVGAWBVNVOVPWAVIVJQGHJKVMLMNPOVKUPVL $.
+  $}
+
+  ${
+    $d B a b $.  $d G a b $.  $d H a b $.  $d S a b $.  $d .0. a b $.
+    mndissubm.b $e |- B = ( Base ` G ) $.
+    mndissubm.s $e |- S = ( Base ` H ) $.
+    mndissubm.z $e |- .0. = ( 0g ` G ) $.
+    $( If the base set of a monoid is contained in the base set of another
+       monoid, and the group operation of the monoid is the restriction of the
+       group operation of the other monoid to its base set, and the identity
+       element of the the other monoid is contained in the base set of the
+       monoid, then the (base set of the) monoid is a submonoid of the other
+       monoid.  (Contributed by AV, 17-Feb-2024.) $)
+    mndissubm $p |- ( ( G e. Mnd /\ H e. Mnd )
+                     -> ( ( S C_ B /\ .0. e. S
+                            /\ ( +g ` H ) = ( ( +g ` G ) |` ( S X. S ) ) )
+                          -> S e. ( SubMnd ` G ) ) ) $=
+      ( va vb cmnd wcel wa cplusg cfv w3a cv wral cmgm mndmgm wss cxp cres wceq
+      csubmnd co simpr1 simpr2 anim12i ad2antrr 3simpb ad2antlr mgmsscl syl3anc
+      simpr ralrimivva wb eqid issubm mpbir3and ex ) CKLZDKLZMZBAUAZEBLZDNOCNOZ
+      BBUBUCUDZPZBCUEOLZVDVIMZVJVEVFIQZJQZVGUFBLZJBRIBRZVDVEVFVHUGVDVEVFVHUHVKV
+      NIJBBVKVLBLVMBLMZMCSLZDSLZMZVEVHMZVPVNVDVSVIVPVBVQVCVRCTDTUIUJVIVTVDVPVEV
+      FVHUKULVKVPUOABCDVLVMFGUMUNUPVBVJVEVFVOPUQVCVIIJAVGBCEFHVGURUSUJUTVA $.
+  $}
+
+  ${
+    $d B x y $.  $d M x y $.  $d S x y $.
+    submss.b $e |- B = ( Base ` M ) $.
+    $( Submonoids are subsets of the base set.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    submss $p |- ( S e. ( SubMnd ` M ) -> S C_ B ) $=
+      ( vx vy csubmnd cfv wcel wss c0g cv cplusg co wral w3a cmnd submrcl eqid
+      wb issubm syl ibi simp1d ) BCGHIZBAJZCKHZBIZELFLCMHZNBIFBOEBOZUEUFUHUJPZU
+      ECQIUEUKTBCREFAUIBCUGDUGSUISUAUBUCUD $.
+
+    $( Every monoid is trivially a submonoid of itself.  (Contributed by Stefan
+       O'Rear, 15-Aug-2015.) $)
+    submid $p |- ( M e. Mnd -> B e. ( SubMnd ` M ) ) $=
+      ( vx vy cmnd wcel csubmnd cfv wss cv cplusg wral ssidd eqid mndidcl mndcl
+      c0g co 3expb ralrimivva issubm mpbir3and ) BFGZABHIGAAJBRIZAGDKZEKZBLIZSA
+      GZEAMDAMUDANABUECUEOZPUDUIDEAAUDUFAGUGAGUIAUHBUFUGCUHOZQTUADEAUHABUECUJUK
+      UBUC $.
+  $}
+
+  ${
+    $d M x y $.  $d S x y $.
+    subm0cl.z $e |- .0. = ( 0g ` M ) $.
+    $( Submonoids contain zero.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    subm0cl $p |- ( S e. ( SubMnd ` M ) -> .0. e. S ) $=
+      ( vx vy csubmnd cfv wcel cbs wss cv cplusg co wral w3a cmnd submrcl eqid
+      wb issubm syl ibi simp2d ) ABGHIZABJHZKZCAIZELFLBMHZNAIFAOEAOZUEUGUHUJPZU
+      EBQIUEUKTABREFUFUIABCUFSDUISUAUBUCUD $.
+  $}
+
+  ${
+    $d M x y $.  $d .+ x y $.  $d S x y $.  $d X x y $.  $d Y y $.
+    submcl.p $e |- .+ = ( +g ` M ) $.
+    $( Submonoids are closed under the monoid operation.  (Contributed by Mario
+       Carneiro, 10-Mar-2015.) $)
+    submcl $p |- ( ( S e. ( SubMnd ` M ) /\ X e. S /\ Y e. S ) ->
+        ( X .+ Y ) e. S ) $=
+      ( vx vy csubmnd cfv wcel co wa cv wral cbs wss c0g w3a eqid wb issubm syl
+      cmnd submrcl ibi simp3d ovrspc2v sylan2 ancoms 3impb ) BCIJKZDBKZEBKZDEAL
+      BKZUMUNMZULUOULUPGNHNALBKHBOGBOZUOULBCPJZQZCRJZBKZUQULUSVAUQSZULCUDKULVBU
+      ABCUEGHURABCUTURTUTTFUBUCUFUGGHBBBADEUHUIUJUK $.
+  $}
+
+  ${
+    $d G a b $.  $d .0. a b $.
+    0subm.z $e |- .0. = ( 0g ` G ) $.
+    $( The zero submonoid of an arbitrary monoid.  (Contributed by AV,
+       17-Feb-2024.) $)
+    0subm $p |- ( G e. Mnd -> { .0. } e. ( SubMnd ` G ) ) $=
+      ( va vb cmnd wcel csn csubmnd cfv cbs wss cv co wral eqid syl wceq velsn
+      wa cplusg mndidcl snssd snidg anbi12i mndlid mpdan wb elsng mpbird oveq12
+      eqeltrd eleq1d syl5ibrcom syl5bi ralrimivv issubm mpbir3and ) AFGZBHZAIJG
+      UTAKJZLBUTGZDMZEMZAUAJZNZUTGZEUTODUTOUSBVAVAABVAPZCUBZUCUSBVAGZVBVIBVAUDQ
+      USVGDEUTUTVCUTGZVDUTGZTVCBRZVDBRZTZUSVGVKVMVLVNDBSEBSUEUSVGVOBBVENZUTGZUS
+      VQVPBRZUSVJVRVIVAVEABBVHVEPZCUFUGZUSVPVAGVQVRUHUSVPBVAVTVIULVPBVAUIQUJVOV
+      FVPUTVCBVDBVEUKUMUNUOUPDEVAVEUTABVHCVSUQUR $.
+  $}
+
+  ${
+    $d A a b x y $.  $d B a b x y $.  $d M a b x y $.
+    $( The intersection of two submonoids is a submonoid.  (Contributed by AV,
+       25-Feb-2024.) $)
+    insubm $p |- ( ( A e. ( SubMnd ` M ) /\ B e. ( SubMnd ` M ) )
+                   -> ( A i^i B ) e. ( SubMnd ` M ) ) $=
+      ( va vb vx vy cfv wcel wi wss cv co wral w3a wa elin imp adantl eleq1d ex
+      csubmnd cin cmnd submrcl cbs cplusg ssinss1 3ad2ant1 ad2antrl simplbi2com
+      c0g 3ad2ant2 com12 anbi12i oveq1 oveq2 simpl eqidd rspc2vd 3ad2ant3 simpr
+      adantr elind syl5bi ralrimivv 3jca eqid issubm anbi12d 3imtr4d expd mpcom
+      weq ) ACUBHZIZBVOIZABUCZVOIZCUDIZVPVQVSJACUEVTVPVQVSVTACUFHZKZCULHZAIZDLZ
+      ELZCUGHZMZAIZEANDANZOZBWAKZWCBIZWHBIZEBNDBNZOZPZVRWAKZWCVRIZFLZGLZWGMZVRI
+      ZGVRNFVRNZOZVPVQPVSVTWQXEVTWQPZWRWSXDWKWRVTWPWBWDWRWJABWAUHUIUJWQWSVTWKWP
+      WSWDWBWPWSJWJWPWDWSWMWLWDWSJWOWSWDWMWCABQUKUMUNUMRSXFXCFGVRVRWTVRIZXAVRIZ
+      PWTAIZWTBIZPZXAAIZXABIZPZPZXFXCXGXKXHXNWTABQXAABQUOXFXOXCXFXOPABXBXFXOXBA
+      IZWKXOXPJZVTWPWJWBXQWDXOWJXPXOXPWTWFWGMZAIWIDEWTXAAAADFVNZWHXRAWEWTWFWGUP
+      ZTEGVNZXRXBAWFXAWTWGUQZTXKXIXNXIXJURVCXOXSPZAUSXNXLXKXLXMURSUTUNVAUJRXFXO
+      XBBIZWQXOYDJZVTWPYEWKWOWLYEWMXOWOYDXOYDXRBIWNDEWTXABBBXSWHXRBXTTYAXRXBBYB
+      TXKXJXNXIXJVBVCYCBUSXNXMXKXLXMVBSUTUNVASSRVDUAVEVFVGUAVTVPWKVQWPDEWAWGACW
+      CWAVHZWCVHZWGVHZVIDEWAWGBCWCYFYGYHVIVJFGWAWGVRCWCYFYGYHVIVKVLVMR $.
+  $}
+
+  ${
+    $d x y B $.  $d x y M $.  $d x y N $.  $d x y .0. $.
+    0mhm.z $e |- .0. = ( 0g ` N ) $.
+    0mhm.b $e |- B = ( Base ` M ) $.
+    $( The constant zero linear function between two monoids.  (Contributed by
+       Stefan O'Rear, 5-Sep-2015.) $)
+    0mhm $p |- ( ( M e. Mnd /\ N e. Mnd ) ->
+        ( B X. { .0. } ) e. ( M MndHom N ) ) $=
+      ( vx vy cmnd wcel wa cfv co wceq c0g eqid adantr cvv fvconst2g syl2anc wf
+      cbs csn cxp cv cplusg wral w3a cmhm id mndidcl adantl fconst6g syl mndlid
+      simpr eqcomd syl2anc2 wfn fn0g elexd funfvex sylancr eqeltrid mndcl 3expb
+      funfni adantlr simprl simprr oveq12d 3eqtr4d ralrimivva ismhm sylanbrc
+      3jca ) BIJZCIJZKZVSACUBLZADUCUDZUAZGUEZHUEZBUFLZMZWALZWCWALZWDWALZCUFLZMZ
+      NZHAUGGAUGZBOLZWALDNZUHWABCUIMJVSUJVSWBWMWOVSDVTJZWBVRWPVQVTCDVTPZEUKZULA
+      DVTUMUNVSWLGHAAVSWCAJZWDAJZKZKZDDDWJMZWGWKVSDXCNZXAVSVRWPXDVQVRUPZWRVRWPK
+      XCDVTWJCDDWQWJPZEUOUQURQXBDRJZWFAJZWGDNVSXGXAVSDCOLZREVSORUSCRJXIRJZUTVSC
+      IXEVAXJRCOCOVBVGVCVDZQZVQXAXHVRVQWSWTXHAWEBWCWDFWEPZVEVFVHADWFRSTXBWHDWID
+      WJXBXGWSWHDNXLVSWSWTVIADWCRSTXBXGWTWIDNXLVSWSWTVJADWDRSTVKVLVMVSXGWNAJZWO
+      XKVQXNVRABWNFWNPZUKQADWNRSTVPGHAVTWEWJBCWADWNFWQXMXFXOEVNVO $.
+  $}
+
+  ${
+    $d x y F $.  $d x y G $.  $d x y S $.  $d x y T $.  $d x y U $.
+    $( The composition of monoid homomorphisms is a homomorphism.  (Contributed
+       by Mario Carneiro, 12-Jun-2015.) $)
+    mhmco $p |- ( ( F e. ( T MndHom U ) /\ G e. ( S MndHom T ) ) ->
+        ( F o. G ) e. ( S MndHom U ) ) $=
+      ( vx vy cmhm co wcel wa cbs cfv wf cplusg wceq c0g eqid fvco3 syl2anc w3a
+      cmnd ccom cv wral mhmrcl2 mhmrcl1 anim12ci mhmf fco syl2an mhmlin adantll
+      3expb fveq2d simpll ad2antlr simprl ffvelrnd simprr syl3anc eqtrd oveq12d
+      adantl mndcl sylan 3eqtr4d ralrimivva mndidcl syl mhm0 adantr 3eqtrd 3jca
+      ismhm sylanbrc ) DBCHIJZEABHIJZKZAUBJZCUBJZKALMZCLMZDEUCZNZFUDZGUDZAOMZIZ
+      WDMZWFWDMZWGWDMZCOMZIZPZGWBUEFWBUEZAQMZWDMZCQMZPZUAWDACHIJVQWAVRVTBCDUFAB
+      EUGZUHVSWEWPWTVQBLMZWCDNWBXBENZWEVRXBWCBCDXBRZWCRZUIWBXBABEWBRZXDUIZWBXBW
+      CDEUJUKVSWOFGWBWBVSWFWBJZWGWBJZKZKZWIEMZDMZWFEMZDMZWGEMZDMZWMIZWJWNXKXMXN
+      XPBOMZIZDMZXRXKXLXTDVRXJXLXTPZVQVRXHXIYBWBWHXSABEWFWGXFWHRZXSRZULUNUMUOXK
+      VQXNXBJXPXBJYAXRPVQVRXJUPXKWBXBWFEVRXCVQXJXGUQZVSXHXIURZUSXKWBXBWGEYEVSXH
+      XIUTZUSXBXSWMBCDXNXPXDYDWMRZULVAVBXKXCWIWBJZWJXMPYEVSVTXJYIVRVTVQXAVDZVTX
+      HXIYIWBWHAWFWGXFYCVEUNVFWBXBWIDESTXKWKXOWLXQWMXKXCXHWKXOPYEYFWBXBWFDESTXK
+      XCXIWLXQPYEYGWBXBWGDESTVCVGVHVSWRWQEMZDMZBQMZDMZWSVSXCWQWBJZWRYLPVRXCVQXG
+      VDVSVTYOYJWBAWQXFWQRZVIVJWBXBWQDESTVSYKYMDVRYKYMPVQABEYMWQYPYMRZVKVDUOVQY
+      NWSPVRBCDWSYMYQWSRZVKVLVMVNFGWBWCWHWMACWDWSWQXFXEYCYHYPYRVOVP $.
+  $}
+
+  ${
+    $d F x y z $.  $d M x y z $.  $d N x y z $.  $d X x y z $.
+    $( The homomorphic image of a submonoid is a submonoid.  (Contributed by
+       Mario Carneiro, 10-Mar-2015.) $)
+    mhmima $p |- ( ( F e. ( M MndHom N ) /\ X e. ( SubMnd ` M ) ) ->
+      ( F " X ) e. ( SubMnd ` N ) ) $=
+      ( vx vy vz co wcel csubmnd cfv wa cbs cv wral eqid adantr wceq syl3anc wb
+      cmhm cima wss c0g cplusg crn imassrn wf mhmf frnd sstrid mhm0 ffnd submss
+      adantl subm0cl fnfvima eqeltrrd simpll simprl sseldd simprr mhmlin submcl
+      3expb adantll anassrs ralrimiva oveq2 eleq1d ralima syl2anc oveq1 ralbidv
+      wfn mpbird cmnd w3a mhmrcl2 issubm syl mpbir3and ) ABCUAHIZDBJKIZLZADUBZC
+      JKIZWFCMKZUCZCUDKZWFIZENZFNZCUEKZHZWFIZFWFOZEWFOZWEWFAUFWHADUGWEBMKZWHAWC
+      WSWHAUHWDWSWHBCAWSPZWHPZUIQZUJUKWEBUDKZAKZWJWFWCXDWJRWDBCAWJXCXCPZWJPZULQ
+      WEAWSVOZDWSUCZXCDIZXDWFIWEWSWHAXBUMZWDXHWCWSDBWTUNUOZWDXIWCDBXCXEUPUOWSDA
+      XCUQSURWEWRGNZAKZWMWNHZWFIZFWFOZGDOZWEXPGDWEXLDIZLZXPXMWLAKZWNHZWFIZEDOZX
+      SYBEDWEXRWLDIZYBWEXRYDLZLZXLWLBUEKZHZAKZYAWFYFWCXLWSIWLWSIYIYARWCWDYEUSYF
+      DWSXLWEXHYEXKQZWEXRYDUTVAYFDWSWLYJWEXRYDVBVAWSYGWNBCAXLWLWTYGPZWNPZVCSYFX
+      GXHYHDIZYIWFIWEXGYEXJQYJWDYEYMWCWDXRYDYMYGDBXLWLYKVDVEVFWSDAYHUQSURVGVHWE
+      XPYCTZXRWEXGXHYNXJXKXOYBFEWSDAWMXTRXNYAWFWMXTXMWNVIVJVKVLQVPVHWEXGXHWRXQT
+      XJXKWQXPEGWSDAWLXMRZWPXOFWFYOWOXNWFWLXMWMWNVMVJVNVKVLVPWECVQIZWGWIWKWRVRT
+      WCYPWDBCAVSQEFWHWNWFCWJXAXFYLVTWAWB $.
+  $}
+
+  ${
+    $d F x y z $.  $d G x y z $.  $d S x y z $.  $d T x y $.
+    $( The equalizer of two monoid homomorphisms is a submonoid.  (Contributed
+       by Stefan O'Rear, 7-Mar-2015.)  (Revised by Mario Carneiro,
+       6-May-2015.) $)
+    mhmeql $p |- ( ( F e. ( S MndHom T ) /\ G e. ( S MndHom T ) ) ->
+        dom ( F i^i G ) e. ( SubMnd ` S ) ) $=
+      ( vz vx vy co wcel wa cv cfv wceq eqid adantr wral eqeq12d eqtr4d syl3anc
+      fveq2 cmhm cin cdm cbs crab csubmnd wfn wf mhmf adantl fndmin syl2anc wss
+      ffnd c0g cplusg ssrab2 a1i cmnd mhmrcl1 mndidcl syl mhm0 ad2antrr simplrl
+      elrabd wi simprl mndcl simplll mhmlin simpllr simplrr simprr oveq12d expr
+      ralrimiva ralrab sylibr w3a wb issubm mpbir3and eqeltrd ) CABUAHZIZDWEIZJ
+      ZCDUBUCZEKZCLZWJDLZMZEAUDLZUEZAUFLZWHCWNUGDWNUGWIWOMWHWNBUDLZCWFWNWQCUHWG
+      WNWQABCWNNZWQNZUIOUNWHWNWQDWGWNWQDUHWFWNWQABDWRWSUIUJUNEWNCDUKULWHWOWPIZW
+      OWNUMZAUOLZWOIZFKZGKZAUPLZHZWOIZGWOPZFWOPZXAWHWMEWNUQURWHWMXBCLZXBDLZMEXB
+      WNWJXBMWKXKWLXLWJXBCTWJXBDTQWHAUSIZXBWNIWFXMWGABCUTOZWNAXBWRXBNZVAVBWHXKB
+      UOLZXLWFXKXPMWGABCXPXBXOXPNZVCOWGXLXPMWFABDXPXBXOXQVCUJRVFWHXDCLZXDDLZMZX
+      IVGZFWNPXJWHYAFWNWHXDWNIZXTXIWHYBXTJZJZXECLZXEDLZMZXHVGZGWNPXIYDYHGWNYDXE
+      WNIZYGXHYDYIYGJZJZWMXGCLZXGDLZMEXGWNWJXGMWKYLWLYMWJXGCTWJXGDTQYKXMYBYIXGW
+      NIWHXMYCYJXNVDWHYBXTYJVEZYDYIYGVHZWNXFAXDXEWRXFNZVISYKYLXRYEBUPLZHZYMYKWF
+      YBYIYLYRMWFWGYCYJVJYNYOWNXFYQABCXDXEWRYPYQNZVKSYKYMXSYFYQHZYRYKWGYBYIYMYT
+      MWFWGYCYJVLYNYOWNXFYQABDXDXEWRYPYSVKSYKXRXSYEYFYQWHYBXTYJVMYDYIYGVNVORRVF
+      VPVQWMYGXHGEWNWJXEMWKYEWLYFWJXECTWJXEDTQVRVSVPVQWMXTXIFEWNWJXDMWKXRWLXSWJ
+      XDCTWJXDDTQVRVSWHXMWTXAXCXJVTWAXNFGWNXFWOAXBWRXOYPWBVBWCWD $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -160936,10 +161916,20 @@ htmldef "Mgm" as 'Mgm';
 htmldef "Smgrp" as 'Smgrp';
   althtmldef "Smgrp" as 'Smgrp';
   latexdef "Smgrp" as "\mathrm{Smgrp}";
+htmldef "Mnd" as
+    "<IMG SRC='_mnd.gif' WIDTH=28 HEIGHT=19 ALT=' Mnd' TITLE='Mnd'>";
+  althtmldef "Mnd" as "Mnd";
+  latexdef "Mnd" as "\mathrm{Mnd}";
 htmldef "+f" as "<IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'>" +
     "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT='f' TITLE='f'>";
   althtmldef "+f" as '+<SUB>&#x1D453;</SUB>';
   latexdef "+f" as "+_f";
+htmldef "MndHom" as " MndHom ";
+  althtmldef "MndHom" as " MndHom ";
+  latexdef "MndHom" as " \mathrm{MndHom} ";
+htmldef "SubMnd" as "SubMnd";
+  althtmldef "SubMnd" as "SubMnd";
+  latexdef "SubMnd" as "\mathrm{SubMnd}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
