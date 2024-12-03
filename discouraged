@@ -5587,7 +5587,12 @@
 "dsndx" is used by "tnglemOLD".
 "dsndx" is used by "trkgstr".
 "dsndx" is used by "zlmdsOLD".
-"dtruALT2" is used by "fvprc".
+"dtruALT2" is used by "axc16b".
+"dtruALT2" is used by "brprcneu".
+"dtruALT2" is used by "dtrucor".
+"dtruALT2" is used by "dvdemo1".
+"dtruALT2" is used by "eunex".
+"dtruALT2" is used by "nfnid".
 "dvadiaN" is used by "diarnN".
 "dveel1" is used by "distel".
 "dveel2" is used by "axc14".
@@ -6059,7 +6064,7 @@
 "el12" is used by "suctrALTcfVD".
 "el123" is used by "suctrALTcfVD".
 "el2122old" is used by "suctrALTcfVD".
-"elALT2" is used by "dtru".
+"elALT2" is used by "dtruALT2".
 "elALT2" is used by "dvdemo2".
 "ela" is used by "atcv0".
 "ela" is used by "elat2".
@@ -16226,7 +16231,7 @@ New usage of "drngoi" is discouraged (2 uses).
 New usage of "drsb1" is discouraged (3 uses).
 New usage of "dsndx" is discouraged (20 uses).
 New usage of "dtruALT" is discouraged (0 uses).
-New usage of "dtruALT2" is discouraged (1 uses).
+New usage of "dtruALT2" is discouraged (6 uses).
 New usage of "dtrucor2" is discouraged (0 uses).
 New usage of "dummylink" is discouraged (0 uses).
 New usage of "dvadiaN" is discouraged (1 uses).
@@ -20124,7 +20129,7 @@ Proof modification of "drnfc1OLD" is discouraged (51 steps).
 Proof modification of "drnfc2" is discouraged (59 steps).
 Proof modification of "drnfc2OLD" is discouraged (52 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
-Proof modification of "dtruALT2" is discouraged (80 steps).
+Proof modification of "dtruALT2" is discouraged (161 steps).
 Proof modification of "dummylink" is discouraged (1 steps).
 Proof modification of "dveel2ALT" is discouraged (22 steps).
 Proof modification of "dveeq1-o" is discouraged (20 steps).
