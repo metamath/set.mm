@@ -2887,6 +2887,7 @@
 "braval" is used by "kbass2".
 "braval" is used by "kbass6".
 "braval" is used by "rnbra".
+"brprcneuALT" is used by "fvprcALT".
 "c-bnj14" is used by "bnj1000".
 "c-bnj14" is used by "bnj1006".
 "c-bnj14" is used by "bnj1020".
@@ -5588,7 +5589,7 @@
 "dsndx" is used by "trkgstr".
 "dsndx" is used by "zlmdsOLD".
 "dtruALT2" is used by "axc16b".
-"dtruALT2" is used by "brprcneu".
+"dtruALT2" is used by "brprcneuALT".
 "dtruALT2" is used by "dtrucor".
 "dtruALT2" is used by "dvdemo1".
 "dtruALT2" is used by "eunex".
@@ -15291,6 +15292,7 @@ New usage of "branmfn" is discouraged (1 uses).
 New usage of "braval" is discouraged (10 uses).
 New usage of "brenOLD" is discouraged (0 uses).
 New usage of "brfi1indALT" is discouraged (0 uses).
+New usage of "brprcneuALT" is discouraged (1 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (59 uses).
 New usage of "c0exALT" is discouraged (0 uses).
@@ -19984,6 +19986,7 @@ Proof modification of "bj-zfauscl" is discouraged (65 steps).
 Proof modification of "brenOLD" is discouraged (130 steps).
 Proof modification of "brfi1indALT" is discouraged (741 steps).
 Proof modification of "brfvidRP" is discouraged (93 steps).
+Proof modification of "brprcneuALT" is discouraged (247 steps).
 Proof modification of "c0exALT" is discouraged (15 steps).
 Proof modification of "cad0OLD" is discouraged (44 steps).
 Proof modification of "cases2ALT" is discouraged (88 steps).
