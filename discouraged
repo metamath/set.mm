@@ -6059,6 +6059,8 @@
 "el12" is used by "suctrALTcfVD".
 "el123" is used by "suctrALTcfVD".
 "el2122old" is used by "suctrALTcfVD".
+"elALT2" is used by "dtru".
+"elALT2" is used by "dvdemo2".
 "ela" is used by "atcv0".
 "ela" is used by "elat2".
 "ela" is used by "elatcv0".
@@ -16435,6 +16437,7 @@ New usage of "el12" is discouraged (4 uses).
 New usage of "el123" is discouraged (1 uses).
 New usage of "el2122old" is discouraged (1 uses).
 New usage of "elALT" is discouraged (0 uses).
+New usage of "elALT2" is discouraged (2 uses).
 New usage of "ela" is discouraged (3 uses).
 New usage of "elabOLD" is discouraged (0 uses).
 New usage of "elabgOLD" is discouraged (0 uses).
@@ -20294,6 +20297,7 @@ Proof modification of "el12" is discouraged (19 steps).
 Proof modification of "el123" is discouraged (26 steps).
 Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
+Proof modification of "elALT2" is discouraged (48 steps).
 Proof modification of "elabOLD" is discouraged (10 steps).
 Proof modification of "elabgOLD" is discouraged (47 steps).
 Proof modification of "elabgtOLD" is discouraged (83 steps).
