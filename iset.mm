@@ -71033,6 +71033,23 @@ $)
     ( cen wbr cwomni wcel enwomnilem wi ensym syl impbid ) ABCDZAEFZBEFZABGLBAC
     DNMHABIBAGJK $.
 
+  ${
+    $d N f x $.  $d N i x $.  $d i ph x $.
+    nninfdcinf.w $e |- ( ph -> _om e. WOmni ) $.
+    nninfdcinf.n $e |- ( ph -> N e. NN+oo ) $.
+    $( The Weak Limited Principle of Omniscience (WLPO) implies that it is
+       decidable whether an element of ` NN+oo ` equals the point at infinity.
+       (Contributed by Jim Kingdon, 3-Dec-2024.) $)
+    nninfdcinf $p |- ( ph -> DECID N = ( i e. _om |-> 1o ) ) $=
+      ( vx vf com c1o wceq wdc cv cfv wral c2o dcbid cwomni wcel cvv syl eqeq1d
+      cmpt cmap co fveq1 ralbidv wb elexd iswomnimap mpbid wf xnninf 2onn elexi
+      nninff omex elmap sylibr rspcdva ffnd eqidd wa 1onn a1i fnmptfvd mpbird )
+      ACBHIUBJZKFLZCMZIJZFHNZKZAVHGLZMZIJZFHNZKZVLGOHUCUDZCVMCJZVPVKVSVOVJFHVSV
+      NVIIVHVMCUEUAUFPAHQRZVQGVRNZDAHSRVTWAUGAHQDUHFHGSUITUJAHOCUKZCVRRACULRWBE
+      CUOTZOHCOHUMUNUPUQURUSAVGVKAHIIHFCHBAHOCWCUTVHBLZJIVAIHRZAVHHRVBVCVDWEAWD
+      HRVBVCVDVEPVF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
