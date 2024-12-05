@@ -18929,6 +18929,7 @@ New usage of "sb7h" is discouraged (0 uses).
 New usage of "sb8" is discouraged (3 uses).
 New usage of "sb8e" is discouraged (5 uses).
 New usage of "sb8eu" is discouraged (3 uses).
+New usage of "sb8fOLD" is discouraged (0 uses).
 New usage of "sb8iota" is discouraged (0 uses).
 New usage of "sb8mo" is discouraged (1 uses).
 New usage of "sb9" is discouraged (1 uses).
@@ -19645,7 +19646,7 @@ Proof modification of "abbiOLD" is discouraged (51 steps).
 Proof modification of "abfOLD" is discouraged (13 steps).
 Proof modification of "abn0OLD" is discouraged (28 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
-Proof modification of "abvALT" is discouraged (39 steps).
+Proof modification of "abvALT" is discouraged (36 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
 Proof modification of "addmodlteqALT" is discouraged (237 steps).
@@ -21169,6 +21170,7 @@ Proof modification of "sb56OLD" is discouraged (25 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
 Proof modification of "sb5OLD" is discouraged (25 steps).
+Proof modification of "sb8fOLD" is discouraged (17 steps).
 Proof modification of "sbabelOLD" is discouraged (126 steps).
 Proof modification of "sbal1" is discouraged (149 steps).
 Proof modification of "sbc2ieOLD" is discouraged (38 steps).
