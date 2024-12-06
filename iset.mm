@@ -50497,6 +50497,25 @@ $)
   $}
 
   ${
+    $d A a i $.  $d C i $.  $d D a $.  $d M a i $.  $d U a i $.  $d V a i $.
+    $d ph a i $.
+    fnmptfvd.m $e |- ( ph -> M Fn A ) $.
+    fnmptfvd.s $e |- ( i = a -> D = C ) $.
+    fnmptfvd.d $e |- ( ( ph /\ i e. A ) -> D e. U ) $.
+    fnmptfvd.c $e |- ( ( ph /\ a e. A ) -> C e. V ) $.
+    $( A function with a given domain is a mapping defined by its function
+       values.  (Contributed by AV, 1-Mar-2019.) $)
+    fnmptfvd $p |- ( ph -> ( M = ( a e. A |-> C )
+                              <-> A. i e. A ( M ` i ) = D ) ) $=
+      ( cmpt wceq cfv wral wfn wcel eqid cv ralrimiva fnmpt syl syl2anc cbvmptv
+      wb eqfnfv eqcomi a1i fveq1d eqeq2d ralbidv simpr fvmpt2 ralbidva 3bitrd
+      wa ) AGIBCNZOZFUAZGPZVAUSPZOZFBQZVBVAFBDNZPZOZFBQVBDOZFBQAGBRUSBRZUTVEUGJ
+      ACHSZIBQVJAVKIBMUBIBCUSHUSTUCUDFBGUSUHUEAVDVHFBAVCVGVBAVAUSVFUSVFOAVFUSFI
+      BDCKUFUIUJUKULUMAVHVIFBAVABSZURZVGDVBVMVLDESVGDOAVLUNLFBDEVFVFTUOUEULUPUQ
+      $.
+  $}
+
+  ${
     $d F x y $.  $d G x y $.  $d A x y $.
     $( Two ways to express the locus of differences between two functions.
        (Contributed by Stefan O'Rear, 17-Jan-2015.) $)
