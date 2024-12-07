@@ -14290,7 +14290,7 @@ New usage of "1nq" is discouraged (9 uses).
 New usage of "1nqenq" is discouraged (1 uses).
 New usage of "1oexOLD" is discouraged (0 uses).
 New usage of "1onOLD" is discouraged (0 uses).
-New usage of "1onnOLD" is discouraged (0 uses).
+New usage of "1onnALT" is discouraged (0 uses).
 New usage of "1p1e2apr1" is discouraged (0 uses).
 New usage of "1p2e3ALT" is discouraged (0 uses).
 New usage of "1pi" is discouraged (11 uses).
@@ -14332,7 +14332,7 @@ New usage of "2moex" is discouraged (1 uses).
 New usage of "2moswap" is discouraged (1 uses).
 New usage of "2oexOLD" is discouraged (0 uses).
 New usage of "2onOLD" is discouraged (0 uses).
-New usage of "2onnOLD" is discouraged (0 uses).
+New usage of "2onnALT" is discouraged (0 uses).
 New usage of "2pm13.193" is discouraged (3 uses).
 New usage of "2pm13.193VD" is discouraged (0 uses).
 New usage of "2pmaplubN" is discouraged (1 uses).
@@ -19589,7 +19589,7 @@ Proof modification of "19.43OLD" is discouraged (72 steps).
 Proof modification of "1div0apr" is discouraged (77 steps).
 Proof modification of "1oexOLD" is discouraged (4 steps).
 Proof modification of "1onOLD" is discouraged (9 steps).
-Proof modification of "1onnOLD" is discouraged (16 steps).
+Proof modification of "1onnALT" is discouraged (16 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "1p2e3ALT" is discouraged (7 steps).
 Proof modification of "1strbasOLD" is discouraged (22 steps).
@@ -19602,7 +19602,7 @@ Proof modification of "2irrexpqALT" is discouraged (90 steps).
 Proof modification of "2logb9irrALT" is discouraged (141 steps).
 Proof modification of "2oexOLD" is discouraged (9 steps).
 Proof modification of "2onOLD" is discouraged (9 steps).
-Proof modification of "2onnOLD" is discouraged (16 steps).
+Proof modification of "2onnALT" is discouraged (16 steps).
 Proof modification of "2pm13.193" is discouraged (91 steps).
 Proof modification of "2pm13.193VD" is discouraged (223 steps).
 Proof modification of "2ralorOLD" is discouraged (109 steps).
