@@ -19176,6 +19176,7 @@ New usage of "sringcatALTV" is discouraged (2 uses).
 New usage of "ss2abdvALT" is discouraged (0 uses).
 New usage of "ss2abdvOLD" is discouraged (0 uses).
 New usage of "ss2abiOLD" is discouraged (0 uses).
+New usage of "ssctOLD" is discouraged (0 uses).
 New usage of "ssdmd1" is discouraged (1 uses).
 New usage of "ssdmd2" is discouraged (0 uses).
 New usage of "sselOLD" is discouraged (0 uses).
@@ -21245,6 +21246,7 @@ Proof modification of "sravscaOLD" is discouraged (177 steps).
 Proof modification of "ss2abdvALT" is discouraged (41 steps).
 Proof modification of "ss2abdvOLD" is discouraged (23 steps).
 Proof modification of "ss2abiOLD" is discouraged (17 steps).
+Proof modification of "ssctOLD" is discouraged (38 steps).
 Proof modification of "sselOLD" is discouraged (60 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "ssfiALT" is discouraged (222 steps).
