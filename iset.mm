@@ -62063,6 +62063,11 @@ $)
     ( c4o c3o csuc com df-4o wcel 3onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
     $.
 
+  $( The ordinal 2 is included in the set of natural number ordinals.
+     (Contributed by BJ, 5-Aug-2024.) $)
+  2ssom $p |- 2o C_ _om $=
+    ( c2o com wcel wss 2onn elomssom ax-mp ) ABCABDEAFG $.
+
   $( Multiply an element of ` _om ` by ` 1o ` .  (Contributed by Mario
      Carneiro, 17-Nov-2014.) $)
   nnm1 $p |- ( A e. _om -> ( A .o 1o ) = A ) $=
@@ -163348,11 +163353,6 @@ $(
   Miscellaneous
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
-
-  $( The ordinal 2 is included in the set of natural number ordinals.
-     (Contributed by BJ, 5-Aug-2024.) $)
-  2ssom $p |- 2o C_ _om $=
-    ( c2o com wcel wss 2onn elomssom ax-mp ) ABCABDEAFG $.
 
   ${
     funmptd.def $e |- ( ph -> F = ( x e. A |-> B ) ) $.
