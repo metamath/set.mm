@@ -71055,6 +71055,67 @@ $)
       HRVBVCVDVEPVF $.
   $}
 
+  ${
+    nninfwlporlem.x $e |- ( ph -> X : _om --> 2o ) $.
+    nninfwlporlem.y $e |- ( ph -> Y : _om --> 2o ) $.
+    nninfwlporlem.d $e |- D = ( i e. _om |->
+      if ( ( X ` i ) = ( Y ` i ) , 1o , (/) ) ) $.
+
+    ${
+      $d D i j $.  $d X i j $.  $d Y i j $.  $d i j ph $.
+      $( Given two countably infinite sequences of zeroes and ones, they are
+         equal if and only if a sequence formed by pointwise comparing them is
+         all ones.  (Contributed by Jim Kingdon, 6-Dec-2024.) $)
+      nninfwlporlemd $p |- ( ph -> ( X = Y <-> D = ( i e. _om |-> 1o ) ) ) $=
+        ( vj cfv wceq com wral c1o wcel wa c0 c2o fveq2 a1i cv cmpt wn 1n0 neii
+        intnan biorfi eqid biantru orbi1i bitri eqcom cif eqeq12d ifbid cbvmptv
+        wo eqtri simpr 1lt2o 0lt2o wdc ffvelrnda sselid syl2anc ifcldcd fvmptd3
+        2ssom nndceq eqeq2d wb eqifdc syl bitrd bitr3id bitr4id fveqeq2 cbvralv
+        ralbidva bitrdi ffnd eqfnfv ralrimiva fnmpt eqidd 1onn fnmptfvd 3bitr4d
+        wfn ) ACUAZDJZWJEJZKZCLMZIUAZBJNKZILMZDEKZBCLNUBKAWNWJBJZNKZCLMWQAWMWTC
+        LAWJLOZPZWMWMNNKZPZWMUCZNQKZPZUQZWTWMWMXGUQXHXGWMXFXENQUDUEUFUGWMXDXGXC
+        WMNUHUIUJUKWTNWSKZXBXHNWSULXBXINWMNQUMZKZXHXBWSXJNXBIWJWODJZWOEJZKZNQUM
+        ZXJLBRBCLXJUBILXOUBHCILXJXOWJWOKZWMXNNQXPWKXLWLXMWJWODSWJWOESUNUOUPURWO
+        WJKZXNWMNQXQXLWKXMWLWOWJDSWOWJESUNUOAXAUSXBWMNQRNROXBUTTQROXBVATXBWKLOW
+        LLOWMVBZXBRLWKVHALRWJDFVCVDXBRLWLVHALRWJEGVCVDWKWLVIVEZVFZVGVJXBXRXKXHV
+        KXSWMNNQVLVMVNVOVPVSWTWPCILWJWONBVQVRVTADLWIELWIWRWNVKALRDFWAALREGWACLD
+        EWBVEALNNLIBLCAXJROZCLMBLWIAYACLXTWCCLXJBRHWDVMXQNWENLOZAWOLOPWFTYBXBWF
+        TWGWH $.
+    $}
+
+    ${
+      $d D f x $.  $d D i x $.  $d i ph x $.  $d X i $.  $d Y i $.
+      nninfwlporlem.w $e |- ( ph -> _om e. WOmni ) $.
+      $( Lemma for ~ nninfwlpor .  The result.  (Contributed by Jim Kingdon,
+         7-Dec-2024.) $)
+      nninfwlporlem $p |- ( ph -> DECID X = Y ) $=
+        ( vx vf wceq wdc com c1o cv cfv c2o wcel a1i cmpt wral co fveq1 ralbidv
+        cmap eqeq1d dcbid cwomni cvv wb omex iswomnimap ax-mp sylib wf c0 1lt2o
+        wa 0lt2o 2ssom ffvelrnda sselid nndceq syl2anc ifcldcd fmptd 2onn elexi
+        cif elmap sylibr rspcdva ffnd eqidd 1onn fnmptfvd mpbird nninfwlporlemd
+        ) ADELZMBCNOUALZMZAWBJPZBQZOLZJNUBZMZAWCKPZQZOLZJNUBZMZWGKRNUFUCZBWHBLZ
+        WKWFWNWJWEJNWNWIWDOWCWHBUDUGUEUHANUISZWLKWMUBZINUJSWOWPUKULJNKUJUMUNUOA
+        NRBUPBWMSACNCPZDQZWQEQZLZOUQVJRBAWQNSUSZWTOUQRORSXAURTUQRSXAUTTXAWRNSWS
+        NSWTMXARNWRVAANRWQDFVBVCXARNWSVAANRWQEGVBVCWRWSVDVEVFHVGZRNBRNVHVIULVKV
+        LVMAWAWFANOONJBNCANRBXBVNWCWQLOVOONSZAWCNSUSVPTXCXAVPTVQUHVRAVTWAABCDEF
+        GHVSUHVR $.
+    $}
+  $}
+
+  ${
+    $d i j x y $.
+    $( The Weak Limited Principle of Omniscience (WLPO) implies that equality
+       for ` NN+oo ` is decidable.  (Contributed by Jim Kingdon,
+       7-Dec-2024.) $)
+    nninfwlpor $p |- ( _om e. WOmni
+        -> A. x e. NN+oo A. y e. NN+oo DECID x = y ) $=
+      ( vj vi com cwomni wcel cv wceq wdc xnninf wa cfv c1o c0 cif c2o wf fveq2
+      nninff cmpt ad2antrl eqeq12d ifbid cbvmptv simpl nninfwlporlem ralrimivva
+      ad2antll ) EFGZAHZBHZIJABKKUJUKKGZULKGZLZLCECHZUKMZUPULMZIZNOPZUADUKULUME
+      QUKRUJUNUKTUBUNEQULRUJUMULTUICDEUTDHZUKMZVAULMZIZNOPUPVAIZUSVDNOVEUQVBURV
+      CUPVAUKSUPVAULSUCUDUEUJUOUFUGUH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
