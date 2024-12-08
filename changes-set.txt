@@ -102,6 +102,9 @@ Date      Old       New         Notes
 27-Nov-24 ---       ---         transitive closure theorems moved
                                 from SF's mathbox to main set.mm
 25-Nov-24 syl5eq    eqtrid
+23-Nov-24 leltletr  [same]      moved from AV's mathbox to main set.mm
+23-Nov-24 fzindd    [same]      moved from metakunt's mathbox to main set.mm
+23-Nov-24 elfzop1le2 [same]     moved from GS's mathbox to main set.mm
 23-Nov-24 elunirn2  [same]      moved from TA's mathbox to main set.mm
 18-Nov-24 csbcog    [same]      moved from RP's mathbox to main set.mm
 18-Nov-24 csbwrecsg [same]      moved from ML's mathbox to main set.mm
