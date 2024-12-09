@@ -71220,6 +71220,17 @@ $)
       VLVM $.
   $}
 
+  ${
+    $d x y $.
+    $( Decidability of equality for ` NN+oo ` is equivalent to the Weak Limited
+       Principle of Omniscience (WLPO).  (Contributed by Jim Kingdon,
+       3-Dec-2024.) $)
+    nninfwlpo $p |- ( A. x e. NN+oo A. y e. NN+oo DECID x = y
+        <-> _om e. WOmni ) $=
+      ( weq wdc xnninf wral com cwomni wcel nninfwlpoim nninfwlpor impbii ) ABC
+      DBEFAEFGHIABJABKL $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
