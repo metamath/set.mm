@@ -31358,6 +31358,14 @@ $)
     iffalse eqtr4d jaoi sylbi ) AEAAFZGABHZCDIZABCDIZDIZJZAKAUHUCAUGUFUEAUFDLAB
     UDCDABMNOUCUEDUGUCUDCDUDAABPQRAUFDSTUAUB $.
 
+  $( Rewrite a disjunction in a conditional as two nested conditionals.
+     (Contributed by Mario Carneiro, 28-Jul-2014.) $)
+  ifordc $p |- ( DECID ph
+      -> if ( ( ph \/ ps ) , A , B ) = if ( ph , A , if ( ps , A , B ) ) ) $=
+    ( wdc wn wo wceq exmiddc iftrue orcs eqtr4d iffalse biorf ifbid eqtr2d jaoi
+    cif syl ) AEAAFZGABGZCDRZACBCDRZRZHZAIAUETAUBCUDABUBCHUACDJKACUCJLTUDUCUBAC
+    UCMTBUACDABNOPQS $.
+
   ${
     $d x A $.  $d x B $.  $d x C $.  $d x ph $.
     $( If a conditional class is inhabited, then the condition is decidable.
