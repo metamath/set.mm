@@ -6428,7 +6428,6 @@
 "fldcatALTV" is used by "fldcALTV".
 "flddivrng" is used by "isfld2".
 "flddivrng" is used by "isfldidl".
-"frrlem16OLD" is used by "frr1OLD".
 "funadj" is used by "adj1".
 "funadj" is used by "adj1o".
 "funadj" is used by "adjeq".
@@ -16695,9 +16694,6 @@ New usage of "fnsnfvOLD" is discouraged (0 uses).
 New usage of "footexALT" is discouraged (0 uses).
 New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
 New usage of "friOLD" is discouraged (0 uses).
-New usage of "frminOLD" is discouraged (0 uses).
-New usage of "frr1OLD" is discouraged (0 uses).
-New usage of "frrlem16OLD" is discouraged (1 uses).
 New usage of "fsetprcnexALT" is discouraged (0 uses).
 New usage of "fsplitOLD" is discouraged (0 uses).
 New usage of "fuchomOLD" is discouraged (0 uses).
@@ -20627,9 +20623,6 @@ Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
 Proof modification of "frgrwopreglem5ALT" is discouraged (519 steps).
 Proof modification of "friOLD" is discouraged (96 steps).
-Proof modification of "frminOLD" is discouraged (356 steps).
-Proof modification of "frr1OLD" is discouraged (227 steps).
-Proof modification of "frrlem16OLD" is discouraged (57 steps).
 Proof modification of "fsetprcnexALT" is discouraged (190 steps).
 Proof modification of "fsplitOLD" is discouraged (234 steps).
 Proof modification of "fuchomOLD" is discouraged (229 steps).
