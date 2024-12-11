@@ -50497,6 +50497,25 @@ $)
   $}
 
   ${
+    $d A a i $.  $d C i $.  $d D a $.  $d M a i $.  $d U a i $.  $d V a i $.
+    $d ph a i $.
+    fnmptfvd.m $e |- ( ph -> M Fn A ) $.
+    fnmptfvd.s $e |- ( i = a -> D = C ) $.
+    fnmptfvd.d $e |- ( ( ph /\ i e. A ) -> D e. U ) $.
+    fnmptfvd.c $e |- ( ( ph /\ a e. A ) -> C e. V ) $.
+    $( A function with a given domain is a mapping defined by its function
+       values.  (Contributed by AV, 1-Mar-2019.) $)
+    fnmptfvd $p |- ( ph -> ( M = ( a e. A |-> C )
+                              <-> A. i e. A ( M ` i ) = D ) ) $=
+      ( cmpt wceq cfv wral wfn wcel eqid cv ralrimiva fnmpt syl syl2anc cbvmptv
+      wb eqfnfv eqcomi a1i fveq1d eqeq2d ralbidv simpr fvmpt2 ralbidva 3bitrd
+      wa ) AGIBCNZOZFUAZGPZVAUSPZOZFBQZVBVAFBDNZPZOZFBQVBDOZFBQAGBRUSBRZUTVEUGJ
+      ACHSZIBQVJAVKIBMUBIBCUSHUSTUCUDFBGUSUHUEAVDVHFBAVCVGVBAVAUSVFUSVFOAVFUSFI
+      BDCKUFUIUJUKULUMAVHVIFBAVABSZURZVGDVBVMVLDESVGDOAVLUNLFBDEVFVFTUOUEULUPUQ
+      $.
+  $}
+
+  ${
     $d F x y $.  $d G x y $.  $d A x y $.
     $( Two ways to express the locus of differences between two functions.
        (Contributed by Stefan O'Rear, 17-Jan-2015.) $)
@@ -62044,6 +62063,11 @@ $)
     ( c4o c3o csuc com df-4o wcel 3onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
     $.
 
+  $( The ordinal 2 is included in the set of natural number ordinals.
+     (Contributed by BJ, 5-Aug-2024.) $)
+  2ssom $p |- 2o C_ _om $=
+    ( c2o com wcel wss 2onn elomssom ax-mp ) ABCABDEAFG $.
+
   $( Multiply an element of ` _om ` by ` 1o ` .  (Contributed by Mario
      Carneiro, 17-Nov-2014.) $)
   nnm1 $p |- ( A e. _om -> ( A .o 1o ) = A ) $=
@@ -71013,6 +71037,84 @@ $)
   enwomni $p |- ( A ~~ B -> ( A e. WOmni <-> B e. WOmni ) ) $=
     ( cen wbr cwomni wcel enwomnilem wi ensym syl impbid ) ABCDZAEFZBEFZABGLBAC
     DNMHABIBAGJK $.
+
+  ${
+    $d N f x $.  $d N i x $.  $d i ph x $.
+    nninfdcinf.w $e |- ( ph -> _om e. WOmni ) $.
+    nninfdcinf.n $e |- ( ph -> N e. NN+oo ) $.
+    $( The Weak Limited Principle of Omniscience (WLPO) implies that it is
+       decidable whether an element of ` NN+oo ` equals the point at infinity.
+       (Contributed by Jim Kingdon, 3-Dec-2024.) $)
+    nninfdcinf $p |- ( ph -> DECID N = ( i e. _om |-> 1o ) ) $=
+      ( vx vf com c1o wceq wdc cv cfv wral c2o dcbid cwomni wcel cvv syl eqeq1d
+      cmpt cmap co fveq1 ralbidv wb elexd iswomnimap mpbid wf xnninf 2onn elexi
+      nninff omex elmap sylibr rspcdva ffnd eqidd wa 1onn a1i fnmptfvd mpbird )
+      ACBHIUBJZKFLZCMZIJZFHNZKZAVHGLZMZIJZFHNZKZVLGOHUCUDZCVMCJZVPVKVSVOVJFHVSV
+      NVIIVHVMCUEUAUFPAHQRZVQGVRNZDAHSRVTWAUGAHQDUHFHGSUITUJAHOCUKZCVRRACULRWBE
+      CUOTZOHCOHUMUNUPUQURUSAVGVKAHIIHFCHBAHOCWCUTVHBLZJIVAIHRZAVHHRVBVCVDWEAWD
+      HRVBVCVDVEPVF $.
+  $}
+
+  ${
+    nninfwlporlem.x $e |- ( ph -> X : _om --> 2o ) $.
+    nninfwlporlem.y $e |- ( ph -> Y : _om --> 2o ) $.
+    nninfwlporlem.d $e |- D = ( i e. _om |->
+      if ( ( X ` i ) = ( Y ` i ) , 1o , (/) ) ) $.
+
+    ${
+      $d D i j $.  $d X i j $.  $d Y i j $.  $d i j ph $.
+      $( Given two countably infinite sequences of zeroes and ones, they are
+         equal if and only if a sequence formed by pointwise comparing them is
+         all ones.  (Contributed by Jim Kingdon, 6-Dec-2024.) $)
+      nninfwlporlemd $p |- ( ph -> ( X = Y <-> D = ( i e. _om |-> 1o ) ) ) $=
+        ( vj cfv wceq com wral c1o wcel wa c0 c2o fveq2 a1i cv cmpt wn 1n0 neii
+        intnan biorfi eqid biantru orbi1i bitri eqcom cif eqeq12d ifbid cbvmptv
+        wo eqtri simpr 1lt2o 0lt2o wdc ffvelrnda sselid syl2anc ifcldcd fvmptd3
+        2ssom nndceq eqeq2d wb eqifdc syl bitrd bitr3id bitr4id fveqeq2 cbvralv
+        ralbidva bitrdi ffnd eqfnfv ralrimiva fnmpt eqidd 1onn fnmptfvd 3bitr4d
+        wfn ) ACUAZDJZWJEJZKZCLMZIUAZBJNKZILMZDEKZBCLNUBKAWNWJBJZNKZCLMWQAWMWTC
+        LAWJLOZPZWMWMNNKZPZWMUCZNQKZPZUQZWTWMWMXGUQXHXGWMXFXENQUDUEUFUGWMXDXGXC
+        WMNUHUIUJUKWTNWSKZXBXHNWSULXBXINWMNQUMZKZXHXBWSXJNXBIWJWODJZWOEJZKZNQUM
+        ZXJLBRBCLXJUBILXOUBHCILXJXOWJWOKZWMXNNQXPWKXLWLXMWJWODSWJWOESUNUOUPURWO
+        WJKZXNWMNQXQXLWKXMWLWOWJDSWOWJESUNUOAXAUSXBWMNQRNROXBUTTQROXBVATXBWKLOW
+        LLOWMVBZXBRLWKVHALRWJDFVCVDXBRLWLVHALRWJEGVCVDWKWLVIVEZVFZVGVJXBXRXKXHV
+        KXSWMNNQVLVMVNVOVPVSWTWPCILWJWONBVQVRVTADLWIELWIWRWNVKALRDFWAALREGWACLD
+        EWBVEALNNLIBLCAXJROZCLMBLWIAYACLXTWCCLXJBRHWDVMXQNWENLOZAWOLOPWFTYBXBWF
+        TWGWH $.
+    $}
+
+    ${
+      $d D f x $.  $d D i x $.  $d i ph x $.  $d X i $.  $d Y i $.
+      nninfwlporlem.w $e |- ( ph -> _om e. WOmni ) $.
+      $( Lemma for ~ nninfwlpor .  The result.  (Contributed by Jim Kingdon,
+         7-Dec-2024.) $)
+      nninfwlporlem $p |- ( ph -> DECID X = Y ) $=
+        ( vx vf wceq wdc com c1o cv cfv c2o wcel a1i cmpt wral co fveq1 ralbidv
+        cmap eqeq1d dcbid cwomni cvv wb omex iswomnimap ax-mp sylib wf c0 1lt2o
+        wa 0lt2o 2ssom ffvelrnda sselid nndceq syl2anc ifcldcd fmptd 2onn elexi
+        cif elmap sylibr rspcdva ffnd eqidd 1onn fnmptfvd mpbird nninfwlporlemd
+        ) ADELZMBCNOUALZMZAWBJPZBQZOLZJNUBZMZAWCKPZQZOLZJNUBZMZWGKRNUFUCZBWHBLZ
+        WKWFWNWJWEJNWNWIWDOWCWHBUDUGUEUHANUISZWLKWMUBZINUJSWOWPUKULJNKUJUMUNUOA
+        NRBUPBWMSACNCPZDQZWQEQZLZOUQVJRBAWQNSUSZWTOUQRORSXAURTUQRSXAUTTXAWRNSWS
+        NSWTMXARNWRVAANRWQDFVBVCXARNWSVAANRWQEGVBVCWRWSVDVEVFHVGZRNBRNVHVIULVKV
+        LVMAWAWFANOONJBNCANRBXBVNWCWQLOVOONSZAWCNSUSVPTXCXAVPTVQUHVRAVTWAABCDEF
+        GHVSUHVR $.
+    $}
+  $}
+
+  ${
+    $d i j x y $.
+    $( The Weak Limited Principle of Omniscience (WLPO) implies that equality
+       for ` NN+oo ` is decidable.  (Contributed by Jim Kingdon,
+       7-Dec-2024.) $)
+    nninfwlpor $p |- ( _om e. WOmni
+        -> A. x e. NN+oo A. y e. NN+oo DECID x = y ) $=
+      ( vj vi com cwomni wcel cv wceq wdc xnninf wa cfv c1o c0 cif c2o wf fveq2
+      nninff cmpt ad2antrl eqeq12d ifbid cbvmptv simpl nninfwlporlem ralrimivva
+      ad2antll ) EFGZAHZBHZIJABKKUJUKKGZULKGZLZLCECHZUKMZUPULMZIZNOPZUADUKULUME
+      QUKRUJUNUKTUBUNEQULRUJUMULTUICDEUTDHZUKMZVAULMZIZNOPUPVAIZUSVDNOVEUQVBURV
+      CUPVAUKSUPVAULSUCUDUEUJUOUFUGUH $.
+  $}
 
 
 $(
@@ -142020,6 +142122,16 @@ $)
   $}
 
   ${
+    basmexd.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    basmexd.m $e |- ( ph -> A e. B ) $.
+    $( A structure whose base is inhabited is a set.  (Contributed by Jim
+       Kingdon, 28-Nov-2024.) $)
+    basmexd $p |- ( ph -> G e. _V ) $=
+      ( cbs cdm wrel cfv wcel cvv wfn basfn fnrel ax-mp eleqtrd relelfvdm elexd
+      sylancr ) ADGHZAGIZBDGJZKDUAKGLMUBNLGOPABCUCFEQBDGRTS $.
+  $}
+
+  ${
     $d a w $.
     $( The structure restriction is a proper operator, so it can be used with
        ~ ovprc1 .  (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
@@ -143900,9 +144012,9 @@ $)
     $d B a b c $.  $d B a e w $.  $d G a b c w $.  $d .+ a e $.  $d .+ b c $.
     ismnd.b $e |- B = ( Base ` G ) $.
     ismnd.p $e |- .+ = ( +g ` G ) $.
-    $( The predicate "is a monoid".  This is the definig theorem of a monoid by
-       showing that a set is a monoid if and only if it is a set equipped with
-       a closed, everywhere defined internal operation (so, a magma, see
+    $( The predicate "is a monoid".  This is the defining theorem of a monoid
+       by showing that a set is a monoid if and only if it is a set equipped
+       with a closed, everywhere defined internal operation (so, a magma, see
        ~ mndcl ), whose operation is associative (so, a semigroup, see also
        ~ mndass ) and has a two-sided neutral element (see ~ mndid ).
        (Contributed by Mario Carneiro, 6-Jan-2015.)  (Revised by AV,
@@ -144720,6 +144832,449 @@ $)
       MWFWGYCYJVLYNYOWNXFYQABDXDXEWRYPYSVKSYKXRXSYEYFYQWHYBXTYJVMYDYIYGVNVORRVF
       VPVQWMYGXHGEWNWJXEMWKYEWLYFWJXECTWJXEDTQVRVSVPVQWMXTXIFEWNWJXDMWKXRWLXSWJ
       XDCTWJXDDTQVRVSWHXMWTXAXCXJVTWAXNFGWNXFWOAXBWRXOYPWBVBWCWD $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Groups
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Grp $.
+  $c invg $.
+  $c -g $.
+
+  $( Extend class notation with class of all groups. $)
+  cgrp $a class Grp $.
+
+  $( Extend class notation with inverse of group element. $)
+  cminusg $a class invg $.
+
+  $( Extend class notation with group subtraction (or division) operation. $)
+  csg $a class -g $.
+
+  ${
+    $d a g m w x y $.
+    $( Define class of all groups.  A group is a monoid ( ~ df-mnd ) whose
+       internal operation is such that every element admits a left inverse
+       (which can be proven to be a two-sided inverse).  Thus, a group ` G ` is
+       an algebraic structure formed from a base set of elements (notated
+       ` ( Base `` G ) ` per ~ df-base ) and an internal group operation
+       (notated ` ( +g `` G ) ` per ~ df-plusg ).  The operation combines any
+       two elements of the group base set and must satisfy the 4 group axioms:
+       closure (the result of the group operation must always be a member of
+       the base set, see ~ grpcl ), associativity (so
+       ` ( ( a +g b ) +g c ) = ( a +g ( b +g c ) ) ` for any a, b, c, see
+       ~ grpass ), identity (there must be an element ` e = ( 0g `` G ) ` such
+       that ` e +g a = a +g e = a ` for any a), and inverse (for each element a
+       in the base set, there must be an element ` b = invg a ` in the base set
+       such that ` a +g b = b +g a = e ` ).  It can be proven that the identity
+       element is unique ( ~ grpideu ).  Groups need not be commutative; a
+       commutative group is an Abelian group.  Subgroups can often be formed
+       from groups.  An example of an (Abelian) group is the set of complex
+       numbers ` CC ` over the group operation ` + ` (addition).  Other
+       structures include groups, including unital rings and fields.
+       (Contributed by NM, 17-Oct-2012.)  (Revised by Mario Carneiro,
+       6-Jan-2015.) $)
+    df-grp $a |- Grp = { g e. Mnd | A. a e. ( Base ` g ) E. m e. ( Base ` g )
+      ( m ( +g ` g ) a ) = ( 0g ` g ) } $.
+
+    $( Define inverse of group element.  (Contributed by NM, 24-Aug-2011.) $)
+    df-minusg $a |- invg = ( g e. _V |-> ( x e. ( Base ` g )
+  |-> ( iota_ w e. ( Base ` g ) ( w ( +g ` g ) x ) = ( 0g ` g ) ) ) ) $.
+
+    $( Define group subtraction (also called division for multiplicative
+       groups).  (Contributed by NM, 31-Mar-2014.) $)
+    df-sbg $a |- -g = ( g e. _V |-> ( x e. ( Base ` g ) , y e. ( Base ` g )
+  |-> ( x ( +g ` g ) ( ( invg ` g ) ` y ) ) ) ) $.
+  $}
+
+  ${
+    $d a g m B $.  $d a g m G $.  $d g .+ $.  $d g .0. $.
+    isgrp.b $e |- B = ( Base ` G ) $.
+    isgrp.p $e |- .+ = ( +g ` G ) $.
+    isgrp.z $e |- .0. = ( 0g ` G ) $.
+    $( The predicate "is a group".  (This theorem demonstrates the use of
+       symbols as variable names, first proposed by FL in 2010.)  (Contributed
+       by NM, 17-Oct-2012.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    isgrp $p |- ( G e. Grp <->
+      ( G e. Mnd /\ A. a e. B E. m e. B ( m .+ a ) = .0. ) ) $=
+      ( vg cv cplusg cfv co c0g wceq cbs wrex fveq2 eqtr4di wral cmnd rexeqbidv
+      cgrp oveqd eqeq12d raleqbidv df-grp elrab2 ) CKZFKZJKZLMZNZULOMZPZCULQMZR
+      ZFUQUAUJUKBNZEPZCARZFAUAJDUBUDULDPZURVAFUQAVBUQDQMAULDQSGTZVBUPUTCUQAVCVB
+      UNUSUOEVBUMBUJUKVBUMDLMBULDLSHTUEVBUODOMEULDOSITUFUCUGJCFUHUI $.
+  $}
+
+  ${
+    $d u x y B $.  $d a m u x y G $.  $d u x .+ $.  $d x y X $.  $d x .0. $.
+    $( A group is a monoid.  (Contributed by Mario Carneiro, 6-Jan-2015.) $)
+    grpmnd $p |- ( G e. Grp -> G e. Mnd ) $=
+      ( vm va cgrp wcel cmnd cv cplusg cfv co c0g wceq cbs wrex wral eqid isgrp
+      simplbi ) ADEAFEBGCGAHIZJAKIZLBAMIZNCUAOUASBATCUAPSPTPQR $.
+
+    grpcl.b $e |- B = ( Base ` G ) $.
+    grpcl.p $e |- .+ = ( +g ` G ) $.
+    $( Closure of the operation of a group.  (Contributed by NM,
+       14-Aug-2011.) $)
+    grpcl $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) -> ( X .+ Y ) e. B ) $=
+      ( cgrp wcel cmnd co grpmnd mndcl syl3an1 ) CHICJIDAIEAIDEBKAICLABCDEFGMN
+      $.
+
+    $( A group operation is associative.  (Contributed by NM, 14-Aug-2011.) $)
+    grpass $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+              ( ( X .+ Y ) .+ Z ) = ( X .+ ( Y .+ Z ) ) ) $=
+      ( cgrp wcel cmnd w3a co wceq grpmnd mndass sylan ) CIJCKJDAJEAJFAJLDEBMFB
+      MDEFBMBMNCOABCDEFGHPQ $.
+
+    grpinvex.p $e |- .0. = ( 0g ` G ) $.
+    $( Every member of a group has a left inverse.  (Contributed by NM,
+       16-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    grpinvex $p |- ( ( G e. Grp /\ X e. B ) -> E. y e. B ( y .+ X ) = .0. ) $=
+      ( vx cgrp wcel cv co wceq wrex wral cmnd isgrp simprbi oveq2 eqeq1d sylan
+      rexbidv rspccva ) DKLZAMZJMZCNZFOZABPZJBQZEBLUGECNZFOZABPZUFDRLULBCADFJGH
+      ISTUKUOJEBUHEOZUJUNABUPUIUMFUHEUGCUAUBUDUEUC $.
+
+    $( The two-sided identity element of a group is unique.  Lemma 2.2.1(a) of
+       [Herstein] p. 55.  (Contributed by NM, 16-Aug-2011.)  (Revised by Mario
+       Carneiro, 8-Dec-2014.) $)
+    grpideu $p |- ( G e. Grp ->
+      E! u e. B A. x e. B ( ( u .+ x ) = x /\ ( x .+ u ) = x ) ) $=
+      ( cgrp wcel cmnd cv co wceq wa wral wreu grpmnd mndideu syl ) EJKELKBMZAM
+      ZDNUCOUCUBDNUCOPACQBCRESABCDEGHTUA $.
+  $}
+
+  ${
+    grpmndd.1 $e |- ( ph -> G e. Grp ) $.
+    $( A group is a monoid.  (Contributed by SN, 1-Jun-2024.) $)
+    grpmndd $p |- ( ph -> G e. Mnd ) $=
+      ( cgrp wcel cmnd grpmnd syl ) ABDEBFECBGH $.
+  $}
+
+  ${
+    grpcld.b $e |- B = ( Base ` G ) $.
+    grpcld.p $e |- .+ = ( +g ` G ) $.
+    grpcld.r $e |- ( ph -> G e. Grp ) $.
+    grpcld.x $e |- ( ph -> X e. B ) $.
+    grpcld.y $e |- ( ph -> Y e. B ) $.
+    $( Closure of the operation of a group.  (Contributed by SN,
+       29-Jul-2024.) $)
+    grpcld $p |- ( ph -> ( X .+ Y ) e. B ) $=
+      ( cgrp wcel co grpcl syl3anc ) ADLMEBMFBMEFCNBMIJKBCDEFGHOP $.
+  $}
+
+  ${
+    grpplusf.1 $e |- B = ( Base ` G ) $.
+    grpplusf.2 $e |- F = ( +f ` G ) $.
+    $( The group addition operation is a function.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.) $)
+    grpplusf $p |- ( G e. Grp -> F : ( B X. B ) --> B ) $=
+      ( cgrp wcel cmnd cxp wf grpmnd mndplusf syl ) CFGCHGAAIABJCKABCDELM $.
+
+    $( The group addition operation is a function onto the base set/set of
+       group elements.  (Contributed by NM, 30-Oct-2006.)  (Revised by AV,
+       30-Aug-2021.) $)
+    grpplusfo $p |- ( G e. Grp -> F : ( B X. B ) -onto-> B ) $=
+      ( cgrp wcel cmnd cxp wfo grpmnd mndpfo syl ) CFGCHGAAIABJCKABCDELM $.
+  $}
+
+  ${
+    $d x y z w B $.  $d x y z w K $.  $d x y z w L $.  $d x y z w ph $.
+    grppropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    grppropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    grppropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    $( If two structures have the same group components (properties), one is a
+       group iff the other one is.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+    grppropd $p |- ( ph -> ( K e. Grp <-> L e. Grp ) ) $=
+      ( vz vw wcel cv cfv co wceq wrex wral wa eqid cmnd cplusg c0g cbs cgrp wb
+      mndpropd cvv adantr basmexd ralrimivva oveq1 eqeq12d oveq2 cbvral2v sylib
+      r19.21bi grpidpropdg anass1rs rexbidva ralbidva rexeqdv raleqbidv 3bitr3d
+      simprl anasss anbi12d isgrp 3bitr4g ) AEUALZBMZCMZEUBNZOZEUCNZPZBEUDNZQZC
+      VQRZSFUALZVKVLFUBNZOZFUCNZPZBFUDNZQZCWERZSEUELFUELAVJVTVSWGABCDEFGHIUGAVP
+      BDQZCDRWDBDQZCDRVSWGAWHWICDAVLDLZSVPWDBDAVKDLZWJVPWDUFAWKWJSZSZVNWBVOWCIW
+      MJKDEFUHUHADVQPWLGUIZADWEPWLHUIZWMVKDEWNAWKWJVEZUJWMVKDFWOWPUJWMJMZDLZKMZ
+      DLWQWSVMOZWQWSWAOZPZWMWRSXBKDWMXBKDRZJDAXCJDRZWLAVNWBPZCDRBDRXDAXEBCDDIUK
+      XEXBWQVLVMOZWQVLWAOZPBCJKDDVKWQPVNXFWBXGVKWQVLVMULVKWQVLWAULUMVLWSPXFWTXG
+      XAVLWSWQVMUNVLWSWQWAUNUMUOUPUIUQUQVFURUMUSUTVAAWHVRCDVQGAVPBDVQGVBVCAWIWF
+      CDWEHAWDBDWEHVBVCVDVGVQVMBEVOCVQTVMTVOTVHWEWABFWCCWETWATWCTVHVI $.
+  $}
+
+  ${
+    $d x y K $.  $d x y L $.
+    grpprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    grpprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    $( If two structures have the same group components (properties), one is a
+       group iff the other one is.  (Contributed by NM, 11-Oct-2013.) $)
+    grpprop $p |- ( K e. Grp <-> L e. Grp ) $=
+      ( vx vy cgrp wcel wb wtru cbs cfv eqidd wceq a1i cv cplusg co wa oveqi
+      grppropd mptru ) AGHBGHIJEFAKLZABJUCMUCBKLNJCOEPZFPZAQLZRUDUEBQLZRNJUDUCH
+      UEUCHSSUFUGUDUEDTOUAUB $.
+  $}
+
+  ${
+    $d x y .+ $.  $d y .0. $.  $d x y B $.  $d x y G $.  $d x y ph $.
+    $d y N $.
+    isgrpd2.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    isgrpd2.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    isgrpd2.z $e |- ( ph -> .0. = ( 0g ` G ) ) $.
+    isgrpd2.g $e |- ( ph -> G e. Mnd ) $.
+    ${
+      isgrpd2e.n $e |- ( ( ph /\ x e. B ) -> E. y e. B ( y .+ x ) = .0. ) $.
+      $( Deduce a group from its properties.  In this version of ~ isgrpd2 , we
+         don't assume there is an expression for the inverse of ` x ` .
+         (Contributed by NM, 10-Aug-2013.) $)
+      isgrpd2e $p |- ( ph -> G e. Grp ) $=
+        ( wcel cv cfv co wceq wrex wral eqid cmnd cplusg c0g cbs cgrp ralrimiva
+        oveqd eqeq12d rexeqbidv raleqbidv mpbid isgrp sylanbrc ) AFUAMCNZBNZFUB
+        OZPZFUCOZQZCFUDOZRZBUTSZFUEMKAUNUOEPZGQZCDRZBDSVBAVEBDLUFAVEVABDUTHAVDU
+        SCDUTHAVCUQGURAEUPUNUOIUGJUHUIUJUKUTUPCFURBUTTUPTURTULUM $.
+    $}
+
+    isgrpd2.n $e |- ( ( ph /\ x e. B ) -> N e. B ) $.
+    isgrpd2.j $e |- ( ( ph /\ x e. B ) -> ( N .+ x ) = .0. ) $.
+    $( Deduce a group from its properties. ` N ` (negative) is normally
+       dependent on ` x ` i.e. read it as ` N ( x ) ` .  Note: normally we
+       don't use a ` ph ` antecedent on hypotheses that name structure
+       components, since they can be eliminated with ~ eqid , but we make an
+       exception for theorems such as ~ isgrpd2 and ~ ismndd since theorems
+       using them often rewrite the structure components.  (Contributed by NM,
+       10-Aug-2013.) $)
+    isgrpd2 $p |- ( ph -> G e. Grp ) $=
+      ( vy cv wcel wa co wceq wrex oveq1 eqeq1d rspcev syl2anc isgrpd2e ) ABNCD
+      EGHIJKABOZCPQFCPFUFDRZGSZNOZUFDRZGSZNCTLMUKUHNFCUIFSUJUGGUIFUFDUAUBUCUDUE
+      $.
+  $}
+
+  ${
+    $d x y z .+ $.  $d x y z .0. $.  $d x y z B $.  $d y N $.  $d x y z ph $.
+    $d x y z G $.
+    isgrpd.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    isgrpd.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    isgrpd.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
+    isgrpd.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                   ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+    isgrpd.z $e |- ( ph -> .0. e. B ) $.
+    isgrpd.i $e |- ( ( ph /\ x e. B ) -> ( .0. .+ x ) = x ) $.
+    ${
+      isgrpde.n $e |- ( ( ph /\ x e. B ) -> E. y e. B ( y .+ x ) = .0. ) $.
+      $( Deduce a group from its properties.  In this version of ~ isgrpd , we
+         don't assume there is an expression for the inverse of ` x ` .
+         (Contributed by NM, 6-Jan-2015.) $)
+      isgrpde $p |- ( ph -> G e. Grp ) $=
+        ( grpridd grpidd ismndd isgrpd2e ) ABCEFGHIJABEFGHIJMNABCDEFHKMNLOPZQAB
+        CDEFGHIJKLMNTROS $.
+    $}
+
+    isgrpd.n $e |- ( ( ph /\ x e. B ) -> N e. B ) $.
+    isgrpd.j $e |- ( ( ph /\ x e. B ) -> ( N .+ x ) = .0. ) $.
+    $( Deduce a group from its properties.  Unlike ~ isgrpd2 , this one goes
+       straight from the base properties rather than going through ` Mnd ` .
+       ` N ` (negative) is normally dependent on ` x ` i.e. read it as
+       ` N ( x ) ` .  (Contributed by NM, 6-Jun-2013.)  (Revised by Mario
+       Carneiro, 6-Jan-2015.) $)
+    isgrpd $p |- ( ph -> G e. Grp ) $=
+      ( cv wcel wceq wa co wrex oveq1 eqeq1d rspcev syl2anc isgrpde ) ABCDEFGIJ
+      KLMNOABRZESUAHESHUIFUBZITZCRZUIFUBZITZCEUCPQUNUKCHEULHTUMUJIULHUIFUDUEUFU
+      GUH $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y z G $.  $d y N $.  $d x y z .+ $.  $d x y z .0. $.
+    isgrpi.b $e |- B = ( Base ` G ) $.
+    isgrpi.p $e |- .+ = ( +g ` G ) $.
+    isgrpi.c $e |- ( ( x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
+    isgrpi.a $e |- ( ( x e. B /\ y e. B /\ z e. B ) ->
+                   ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+    isgrpi.z $e |- .0. e. B $.
+    isgrpi.i $e |- ( x e. B -> ( .0. .+ x ) = x ) $.
+    isgrpi.n $e |- ( x e. B -> N e. B ) $.
+    isgrpi.j $e |- ( x e. B -> ( N .+ x ) = .0. ) $.
+    $( Properties that determine a group. ` N ` (negative) is normally
+       dependent on ` x ` i.e. read it as ` N ( x ) ` .  (Contributed by NM,
+       3-Sep-2011.) $)
+    isgrpi $p |- G e. Grp $=
+      ( wcel wtru wceq co cbs cfv a1i cplusg cv 3adant1 w3a adantl isgrpd mptru
+      cgrp ) FUKQRABCDEFGHDFUAUBSRIUCEFUDUBSRJUCAUEZDQZBUEZDQZULUNETZDQRKUFUMUO
+      CUEZDQUGUPUQETULUNUQETETSRLUHHDQRMUCUMHULETULSRNUHUMGDQROUHUMGULETHSRPUHU
+      IUJ $.
+  $}
+
+  $( A group is a semigroup.  (Contributed by AV, 28-Aug-2021.) $)
+  grpsgrp $p |- ( G e. Grp -> G e. Smgrp ) $=
+    ( cgrp wcel cmnd csgrp grpmnd mndsgrp syl ) ABCADCAECAFAGH $.
+
+  ${
+    $d B a b c i n x $.  $d G a b c i n x $.  $d .+ a b c i n x $.
+    dfgrp2.b $e |- B = ( Base ` G ) $.
+    dfgrp2.p $e |- .+ = ( +g ` G ) $.
+    $( Alternate definition of a group as semigroup with a left identity and a
+       left inverse for each element.  This "definition" is weaker than
+       ~ df-grp , based on the definition of a monoid which provides a left and
+       a right identity.  (Contributed by AV, 28-Aug-2021.) $)
+    dfgrp2 $p |- ( G e. Grp <-> ( G e. Smgrp /\ E. n e. B A. x e. B
+                          ( ( n .+ x ) = x /\ E. i e. B ( i .+ x ) = n ) ) ) $=
+      ( va vb wcel cv co wceq wrex wa cfv eqeq1d adantl wi vc cgrp wral grpsgrp
+      csgrp c0g cmnd grpmnd eqid mndidcl wb oveq1 eqeq2 rexbidv anbi12d ralbidv
+      syl mndlid sylan grpinvex jca ralrimiva rspcedvd cbs cplusg sgrpmgm mgmcl
+      a1i cmgm syl3an1 sgrpass adantll simpll oveq2 eqeq12d rspcv simpl syl6com
+      w3a id ad2antlr imp cbvrexvw biimpi isgrpde ex rexlimiva impcom impbii )
+      FUBKZFUEKZELZALZCMZWMNZDLZWMCMZWLNZDBOZPZABUCZEBOZPWJWKXBFUDWJXAFUFQZWMCM
+      ZWMNZWQXCNZDBOZPZABUCZEXCBWJFUGKZXCBKFUHZBFXCGXCUIZUJUQWLXCNZXAXIUKWJXMWT
+      XHABXMWOXEWSXGXMWNXDWMWLXCWMCULRXMWRXFDBWLXCWQUMUNUOUPSWJXHABWJWMBKZPXEXG
+      WJXJXNXEXKBCFWMXCGHXLURUSDBCFWMXCGHXLUTVAVBVCVAXBWKWJXAWKWJTEBWLBKZXAPZWK
+      WJXPWKPZIJUABCFWLBFVDQNXQGVHCFVEQNXQHVHXQFVIKZILZBKZJLZBKZXSYACMZBKWKXRXP
+      FVFSBFXSYACGHVGVJWKXTYBUALZBKVSYCYDCMXSYAYDCMCMNXPBFXSYACYDGHVKVLXOXAWKVM
+      XQXTWLXSCMZXSNZXAXTYFTXOWKXTXAYFWPXSCMZWLNZDBOZPZYFWTYJAXSBWMXSNZWOYFWSYI
+      YKWNYEWMXSWMXSWLCVNYKVTVOYKWRYHDBYKWQYGWLWMXSWPCVNRUNUOVPZYFYIVQVRWAWBXQX
+      TYAXSCMZWLNZJBOZXAXTYOTXOWKXTXAYJYOYLYIYOYFYIYOYHYNDJBWPYANYGYMWLWPYAXSCU
+      LRWCWDSVRWAWBWEWFWGWHWI $.
+
+    $d B x y z $.  $d G y z $.  $d .+ y z $.
+    $( Alternate definition of a group as a set with a closed, associative
+       operation, a left identity and a left inverse for each element.
+       Alternate definition in [Lang] p. 7.  (Contributed by NM, 10-Oct-2006.)
+       (Revised by AV, 28-Aug-2021.) $)
+    dfgrp2e $p |- ( G e. Grp <-> ( A. x e. B A. y e. B ( ( x .+ y ) e. B
+                /\ A. z e. B ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) )
+                       /\ E. n e. B A. x e. B
+                          ( ( n .+ x ) = x /\ E. i e. B ( i .+ x ) = n ) ) ) $=
+      ( cgrp wcel csgrp cv co wceq wrex wa wral cvv dfgrp2 rexm exlimiv issgrpv
+      wex wb basmex 3syl pm5.32ri bitri ) HKLHMLZGNZANZEOUMPFNUMEOULPFDQRADSZGD
+      QZRUMBNZEOZDLUQCNZEOUMUPUREOEOPCDSRBDSADSZUORADEFGHIJUAUOUKUSUOULDLZGUEHT
+      LZUKUSUFUNGDUBUTVAGULDHIUGUCABCDHTEIJUDUHUIUJ $.
+  $}
+
+  ${
+    grpidcl.b $e |- B = ( Base ` G ) $.
+    grpidcl.o $e |- .0. = ( 0g ` G ) $.
+    $( The identity element of a group belongs to the group.  (Contributed by
+       NM, 27-Aug-2011.)  (Revised by Mario Carneiro, 27-Dec-2014.) $)
+    grpidcl $p |- ( G e. Grp -> .0. e. B ) $=
+      ( cgrp wcel cmnd grpmnd mndidcl syl ) BFGBHGCAGBIABCDEJK $.
+  $}
+
+  ${
+    grpbn0.b $e |- B = ( Base ` G ) $.
+    $( The base set of a group is not empty.  It is also inhabited (see
+       ~ grpidcl ).  (Contributed by Szymon Jaroszewicz, 3-Apr-2007.) $)
+    grpbn0 $p |- ( G e. Grp -> B =/= (/) ) $=
+      ( cgrp wcel c0g cfv eqid grpidcl ne0d ) BDEABFGZABKCKHIJ $.
+
+    grplid.p $e |- .+ = ( +g ` G ) $.
+    grplid.o $e |- .0. = ( 0g ` G ) $.
+    $( The identity element of a group is a left identity.  (Contributed by NM,
+       18-Aug-2011.) $)
+    grplid $p |- ( ( G e. Grp /\ X e. B ) -> ( .0. .+ X ) = X ) $=
+      ( cgrp wcel cmnd co wceq grpmnd mndlid sylan ) CIJCKJDAJEDBLDMCNABCDEFGHO
+      P $.
+
+    $( The identity element of a group is a right identity.  (Contributed by
+       NM, 18-Aug-2011.) $)
+    grprid $p |- ( ( G e. Grp /\ X e. B ) -> ( X .+ .0. ) = X ) $=
+      ( cgrp wcel cmnd co wceq grpmnd mndrid sylan ) CIJCKJDAJDEBLDMCNABCDEFGHO
+      P $.
+  $}
+
+  $( A group is not empty.  (Contributed by Szymon Jaroszewicz, 3-Apr-2007.)
+     (Revised by Mario Carneiro, 2-Dec-2014.) $)
+  grpn0 $p |- ( G e. Grp -> G =/= (/) ) $=
+    ( cgrp wcel cbs cfv c0 wne eqid grpbn0 wceq fveq2 base0 eqtr4di necon3i syl
+    ) ABCADEZFGAFGPAPHIAFPFAFJPFDEFAFDKLMNO $.
+
+  ${
+    hashfingrpnn.1 $e |- B = ( Base ` G ) $.
+    hashfingrpnn.2 $e |- ( ph -> G e. Grp ) $.
+    hashfingrpnn.3 $e |- ( ph -> B e. Fin ) $.
+    $( A finite group has positive integer size.  (Contributed by Rohan
+       Ridenour, 3-Aug-2023.) $)
+    hashfingrpnn $p |- ( ph -> ( # ` B ) e. NN ) $=
+      ( grpmndd hashfinmndnn ) ABCDACEGFH $.
+  $}
+
+  ${
+    $d u v w y B $.  $d u v w y G $.  $d u v w y .+ $.  $d u v w y X $.
+    $d u v w y Y $.  $d u v w y Z $.
+    grprcan.b $e |- B = ( Base ` G ) $.
+    grprcan.p $e |- .+ = ( +g ` G ) $.
+    $( Right cancellation law for groups.  (Contributed by NM, 24-Aug-2011.)
+       (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
+    grprcan $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                  ( ( X .+ Z ) = ( Y .+ Z ) <-> X = Y ) ) $=
+      ( vy vu vv vw wcel w3a wa co wceq cv sylan 3eqtr3d cgrp c0g cfv wrex eqid
+      wi grpinvex 3ad2antr3 simprr oveq1d simpll grpass simplr1 simplr3 simprll
+      caovassd simplr2 grpcl syl3an1 grpidcl syl grplid adantr simprlr grprinvd
+      simpr mpdan oveq2d grprid syl2anc expr rexlimddv oveq1 impbid1 ) CUAMZDAM
+      ZEAMZFAMZNZOZDFBPZEFBPZQZDEQZVTIRZFBPCUBUCZQZWCWDUFIAVOVPVRWGIAUDVQIABCFW
+      FGHWFUEZUGUHVTWEAMZWGOZWCWDVTWJWCOZOZDWFBPZEWFBPZDEWLDFWEBPZBPZEWOBPZWMWN
+      WLWAWEBPWBWEBPWPWQWLWAWBWEBVTWJWCUIUJWLJKLDFWEABWLVOJRZAMZKRZAMZLRZAMNWRW
+      TBPZXBBPWRWTXBBPBPQVOVSWKUKZABCWRWTXBGHULSZVPVQVRVOWKUMZVPVQVRVOWKUNZVTWI
+      WGWCUOZUPWLJKLEFWEABXEVPVQVRVOWKUQZXGXHUPTWLWOWFDBWLVRWOWFQXGWLVRJKLABWEW
+      FFWLVOWSXAXCAMXDABCWRWTGHURUSWLVOWFAMXDACWFGWHUTVAWLVOWSWFWRBPWRQXDABCWRW
+      FGHWHVBSXEWLVOWSWTWRBPWFQKAUDXDKABCWRWFGHWHUGSWLVRVFWLWIVRXHVCWLWGVRVTWIW
+      GWCVDVCVEVGZVHWLWOWFEBXJVHTWLVOVPWMDQXDXFABCDWFGHWHVIVJWLVOVQWNEQXDXIABCE
+      WFGHWHVIVJTVKVLDEFBVMVN $.
+  $}
+
+  ${
+    $d y z B $.  $d y z G $.  $d y z .+ $.  $d y z .0. $.  $d y z X $.
+    grpinveu.b $e |- B = ( Base ` G ) $.
+    grpinveu.p $e |- .+ = ( +g ` G ) $.
+    grpinveu.o $e |- .0. = ( 0g ` G ) $.
+    $( The left inverse element of a group is unique.  Lemma 2.2.1(b) of
+       [Herstein] p. 55.  (Contributed by NM, 24-Aug-2011.) $)
+    grpinveu $p |- ( ( G e. Grp /\ X e. B )
+           -> E! y e. B ( y .+ X ) = .0. ) $=
+      ( vz cgrp wcel wa cv co wceq wi wral wrex wreu grpinvex w3a eqtr3 grprcan
+      syl5ib 3exp2 com24 imp41 an32s expd ralrimdva ancld reximdva oveq1 eqeq1d
+      mpd reu8 sylibr ) DKLZEBLZMZANZECOZFPZJNZECOZFPZVBVEPZQZJBRZMZABSZVDABTVA
+      VDABSVLABCDEFGHIUAVAVDVKABVAVBBLZMZVDVJVNVDVIJBVNVEBLZMVDVGVHVAVOVMVDVGMZ
+      VHQZUSUTVOVMVQUSVMVOUTVQUSVMVOUTVQVPVCVFPUSVMVOUTUBMVHVCVFFUCBCDVBVEEGHUD
+      UEUFUGUHUIUJUKULUMUPVDVGAJBVHVCVFFVBVEECUNUOUQUR $.
+
+    $( Two ways of saying that an element of a group is the identity element.
+       Provides a convenient way to compute the value of the identity element.
+       (Contributed by NM, 24-Aug-2011.) $)
+    grpid $p |- ( ( G e. Grp /\ X e. B ) ->
+                  ( ( X .+ X ) = X <-> .0. = X ) ) $=
+      ( wceq cgrp wcel wa co eqcom wb wi grpidcl grprcan 3exp2 mpid pm2.43d imp
+      grplid eqeq2d bitr3d bitr2id ) EDIDEIZCJKZDAKZLZDDBMZDIZEDNUJUKEDBMZIZUGU
+      LUHUIUNUGOZUHUIUOUHUIEAKZUIUOPACEFHQUHUIUPUIUOABCDEDFGRSTUAUBUJUMDUKABCDE
+      FGHUCUDUEUF $.
+
+    $( Properties showing that an element ` Z ` is the identity element of a
+       group.  (Contributed by NM, 7-Aug-2013.) $)
+    isgrpid2 $p |- ( G e. Grp
+  -> ( ( Z e. B /\ ( Z .+ Z ) = Z ) <-> .0. = Z ) ) $=
+      ( cgrp wcel co wceq wa grpid biimpd expimpd grpidcl grplid mpdan jca id
+      eleq1 oveq12d eqeq12d anbi12d syl5ibcom impbid ) CIJZEAJZEEBKZELZMZDELZUH
+      UIUKUMUHUIMUKUMABCEDFGHNOPUHDAJZDDBKZDLZMUMULUHUNUPACDFHQZUHUNUPUQABCDDFG
+      HRSTUMUNUIUPUKDEAUBUMUOUJDEUMDEDEBUMUAZURUCURUDUEUFUG $.
+  $}
+
+  ${
+    $d x B $.  $d x .+ $.  $d x ph $.  $d x .0. $.
+    grpidd2.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    grpidd2.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    grpidd2.z $e |- ( ph -> .0. e. B ) $.
+    grpidd2.i $e |- ( ( ph /\ x e. B ) -> ( .0. .+ x ) = x ) $.
+    grpidd2.j $e |- ( ph -> G e. Grp ) $.
+    $( Deduce the identity element of a group from its properties.  Useful in
+       conjunction with ~ isgrpd .  (Contributed by Mario Carneiro,
+       14-Jun-2015.) $)
+    grpidd2 $p |- ( ph -> .0. = ( 0g ` G ) ) $=
+      ( c0g cfv cplusg co wceq oveqd cv wcel eqid oveq2 id eqeq12d rspcdva cgrp
+      ralrimiva eqtr3d cbs wb eleqtrd grpid syl2anc mpbid eqcomd ) AELMZFAFFENM
+      ZOZFPZUOFPZAFFDOZUQFADUPFFHQAFBRZDOZVAPZUTFPBCFVAFPZVBUTVAFVAFFDUAVDUBUCA
+      VCBCJUFIUDUGAEUESFEUHMZSURUSUIKAFCVEIGUJVEUPEFUOVETUPTUOTUKULUMUN $.
   $}
 
 
@@ -161920,10 +162475,22 @@ htmldef "Mnd" as
     "<IMG SRC='_mnd.gif' WIDTH=28 HEIGHT=19 ALT=' Mnd' TITLE='Mnd'>";
   althtmldef "Mnd" as "Mnd";
   latexdef "Mnd" as "\mathrm{Mnd}";
+htmldef "Grp" as
+    "<IMG SRC='_grp.gif' WIDTH=25 HEIGHT=19 ALT=' Grp' TITLE='Grp'>";
+  althtmldef "Grp" as "Grp";
+  latexdef "Grp" as "\mathrm{Grp}";
+htmldef "invg" as "<IMG SRC='_inv.gif' WIDTH=19 HEIGHT=19 ALT=' inv' " +
+    "TITLE='inv'><IMG SRC='subg.gif' WIDTH=7 HEIGHT=19 ALT='g' TITLE='g'>";
+  althtmldef "invg" as "inv<SUB>g</SUB>";
+  latexdef "invg" as "\operatorname{\mathrm{inv}_\mathrm{g}}";
 htmldef "+f" as "<IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'>" +
     "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT='f' TITLE='f'>";
   althtmldef "+f" as '+<SUB>&#x1D453;</SUB>';
   latexdef "+f" as "+_f";
+htmldef "-g" as
+    "<IMG SRC='_minusg.gif' WIDTH=17 HEIGHT=19 ALT=' -g' TITLE='-g'>";
+  althtmldef "-g" as "-<SUB>g</SUB>";
+  latexdef "-g" as "-_\mathrm{g}";
 htmldef "MndHom" as " MndHom ";
   althtmldef "MndHom" as " MndHom ";
   latexdef "MndHom" as " \mathrm{MndHom} ";
@@ -162847,11 +163414,6 @@ $(
   Miscellaneous
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
-
-  $( The ordinal 2 is included in the set of natural number ordinals.
-     (Contributed by BJ, 5-Aug-2024.) $)
-  2ssom $p |- 2o C_ _om $=
-    ( c2o com wcel wss 2onn elomssom ax-mp ) ABCABDEAFG $.
 
   ${
     funmptd.def $e |- ( ph -> F = ( x e. A |-> B ) ) $.
