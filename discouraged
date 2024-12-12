@@ -14423,6 +14423,7 @@ New usage of "ablomuldiv" is discouraged (3 uses).
 New usage of "ablonncan" is discouraged (1 uses).
 New usage of "ablonnncan1" is discouraged (1 uses).
 New usage of "abn0OLD" is discouraged (0 uses).
+New usage of "abrexexgOLD" is discouraged (0 uses).
 New usage of "abscncfALT" is discouraged (0 uses).
 New usage of "abshicom" is discouraged (1 uses).
 New usage of "abvALT" is discouraged (0 uses).
@@ -16033,6 +16034,7 @@ New usage of "dfid2" is discouraged (1 uses).
 New usage of "dfid2OLD" is discouraged (0 uses).
 New usage of "dfid3" is discouraged (1 uses).
 New usage of "dfiop2" is discouraged (3 uses).
+New usage of "dfiun2gOLD" is discouraged (0 uses).
 New usage of "dfmo" is discouraged (0 uses).
 New usage of "dfnul2OLD" is discouraged (0 uses).
 New usage of "dfnul3OLD" is discouraged (0 uses).
@@ -19655,6 +19657,7 @@ Proof modification of "ab0orvALT" is discouraged (19 steps).
 Proof modification of "abbiOLD" is discouraged (51 steps).
 Proof modification of "abfOLD" is discouraged (13 steps).
 Proof modification of "abn0OLD" is discouraged (28 steps).
+Proof modification of "abrexexgOLD" is discouraged (43 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "abvALT" is discouraged (36 steps).
 Proof modification of "ackm" is discouraged (71 steps).
@@ -20116,6 +20119,7 @@ Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dffr2ALT" is discouraged (64 steps).
 Proof modification of "dffun2OLD" is discouraged (157 steps).
 Proof modification of "dfid2OLD" is discouraged (3 steps).
+Proof modification of "dfiun2gOLD" is discouraged (131 steps).
 Proof modification of "dfmo" is discouraged (44 steps).
 Proof modification of "dfnul2OLD" is discouraged (38 steps).
 Proof modification of "dfnul3OLD" is discouraged (42 steps).
