@@ -2924,6 +2924,13 @@ and is evaluated at a set</TD>
   <TD>For a function on a set with decidable equality.</TD>
 </TR>
 
+<tr>
+  <td>mptfvmpt</td>
+  <td>~ fvmptd3</td>
+  <td>the set.mm proof relies, in an apparently essential
+  way, on fvexi</td>
+</tr>
+
 <TR>
 <TD>funiunfv</TD>
 <TD>~ fniunfv , ~ funiunfvdm </TD>
@@ -10494,6 +10501,32 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>resgrpplusfrn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ressbas2</td>
+</tr>
+
+<tr>
+  <td>grppropstr</td>
+  <td><i>none</i></td>
+  <td>The forward direction seems provable; the reverse
+  direction might need a ` K e. _V ` condition.</td>
+</tr>
+
+<tr>
+  <td>grpss</td>
+  <td><i>none</i></td>
+  <td>may be provable (perhaps with slight changes),
+  but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>isgrpix</td>
+  <td>~ isgrpi</td>
+  <td>Marked as discouraged even in set.mm.</td>
+</tr>
+
+<tr>
   <td id="missing-df-cnfld">df-cnfld and all theorems using CCfld</td>
   <td><i>none</i></td>
   <td>Could presumably be defined in some form, but we'd have to look
@@ -12776,8 +12809,13 @@ proved in set.mm but not iset.mm:</p>
 
   <tr>
     <td>7.  Law of Quadratic Reciprocity</td>
-    <td>Needs more development of number theory (for one
-    thing, the Legendre symbol, df-lgs , itself).</td>
+    <td>Although this is a long proof it would seem like
+    many of the needed prerequisites are present.  Some
+    parts do need intuitionizing. For example we should
+    be able to show that ` { <. x , y >. | ( ( x e. ( 1 ... M )
+    /\ y e. ( 1 ... N ) ) /\ ( y x. P ) < ( x x. Q ) ) } `
+    is finite but it may be most conveniently done by
+    proving a few helper theorems beyond ~ ssfidc .</td>
   </tr>
 
   <tr>
