@@ -145392,6 +145392,26 @@ $)
       VCBCJUFIUDUGAEUESFEUHMZSURUSUIKAFCVEIGUJVEUPEFUOVETUPTUOTUKULUMUN $.
   $}
 
+  ${
+    $d g x y B $.  $d g x y G $.  $d g x .0. $.  $d g x .+ $.  $d x y X $.
+    grpinvval.b $e |- B = ( Base ` G ) $.
+    grpinvval.p $e |- .+ = ( +g ` G ) $.
+    grpinvval.o $e |- .0. = ( 0g ` G ) $.
+    grpinvval.n $e |- N = ( invg ` G ) $.
+    $( The inverse function of a group.  (Contributed by NM, 24-Aug-2011.)
+       (Revised by Mario Carneiro, 7-Aug-2013.)  (Revised by Rohan Ridenour,
+       13-Aug-2023.) $)
+    grpinvfvalg $p |- ( G e. V
+        -> N = ( x e. B |-> ( iota_ y e. B ( y .+ x ) = .0. ) ) ) $=
+      ( vg wcel cfv cv wceq cbs cplusg cvv cminusg co crio cmpt df-minusg fveq2
+      c0g eqtr4di oveqd eqeq12d riotaeqbidv mpteq12dv elex basfn funfvex funfni
+      wfn sylancr eqeltrid mptexd fvmptd3 eqtrid ) EGNZFEUAOACBPZAPZDUBZHQZBCUC
+      ZUDZLVCMEAMPZROZVDVEVJSOZUBZVJUGOZQZBVKUCZUDVITUATABMUEVJEQZAVKVPCVHVQVKE
+      ROZCVJERUFIUHZVQVOVGBVKCVSVQVMVFVNHVQVLDVDVEVQVLESODVJESUFJUHUIVQVNEUGOHV
+      JEUGUFKUHUJUKULEGUMZVCACVHTVCCVRTIVCRTUQETNVRTNZUNVTWATERERUOUPURUSUTVAVB
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
