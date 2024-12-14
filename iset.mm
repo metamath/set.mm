@@ -145423,6 +145423,20 @@ $)
       S $.
   $}
 
+  ${
+    $d B x y $.  $d G x y $.  $d V x $.
+    grpinvfn.b $e |- B = ( Base ` G ) $.
+    grpinvfn.n $e |- N = ( invg ` G ) $.
+    $( Functionality of the group inverse function.  (Contributed by Stefan
+       O'Rear, 21-Mar-2015.) $)
+    grpinvfng $p |- ( G e. V -> N Fn B ) $=
+      ( vx vy wcel wfn cv cplusg cfv co c0g wceq cvv cbs syl eqid basfn funfvex
+      crio cmpt wral elex sylancr eqeltrid riotaexg ralrimivw fnmpt grpinvfvalg
+      funfni fneq1d mpbird ) BDIZCAJGAHKGKBLMZNBOMZPZHAUCZUDZAJZUPUTQIZGAUEVBUP
+      VCGAUPAQIVCUPABRMZQEUPRQJBQIVDQIZUABDUFVEQBRBRUBUMUGUHUSHAQUISUJGAUTVAQVA
+      TUKSUPACVAGHAUQBCDUREUQTURTFULUNUO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
