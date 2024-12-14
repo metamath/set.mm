@@ -31358,6 +31358,14 @@ $)
     iffalse eqtr4d jaoi sylbi ) AEAAFZGABHZCDIZABCDIZDIZJZAKAUHUCAUGUFUEAUFDLAB
     UDCDABMNOUCUEDUGUCUDCDUDAABPQRAUFDSTUAUB $.
 
+  $( Rewrite a disjunction in a conditional as two nested conditionals.
+     (Contributed by Mario Carneiro, 28-Jul-2014.) $)
+  ifordc $p |- ( DECID ph
+      -> if ( ( ph \/ ps ) , A , B ) = if ( ph , A , if ( ps , A , B ) ) ) $=
+    ( wdc wn wo wceq exmiddc iftrue orcs eqtr4d iffalse biorf ifbid eqtr2d jaoi
+    cif syl ) AEAAFZGABGZCDRZACBCDRZRZHZAIAUETAUBCUDABUBCHUACDJKACUCJLTUDUCUBAC
+    UCMTBUACDABNOPQS $.
+
   ${
     $d x A $.  $d x B $.  $d x C $.  $d x ph $.
     $( If a conditional class is inhabited, then the condition is decidable.
@@ -71114,6 +71122,113 @@ $)
       ad2antll ) EFGZAHZBHZIJABKKUJUKKGZULKGZLZLCECHZUKMZUPULMZIZNOPZUADUKULUME
       QUKRUJUNUKTUBUNEQULRUJUMULTUICDEUTDHZUKMZVAULMZIZNOPUPVAIZUSVDNOVEUQVBURV
       CUPVAUKSUPVAULSUCUDUEUJUOUFUGUH $.
+  $}
+
+  ${
+    nninfwlpoimlemg.f $e |- ( ph -> F : _om --> 2o ) $.
+    nninfwlpoimlemg.g $e |- G = ( i e. _om |->
+      if ( E. x e. suc i ( F ` x ) = (/) , (/) , 1o ) ) $.
+    ${
+      $d F i $.  $d G f j $.  $d i j ph x $.
+      $( Lemma for ~ nninfwlpoim .  (Contributed by Jim Kingdon,
+         8-Dec-2024.) $)
+      nninfwlpoimlemg $p |- ( ph -> G e. NN+oo ) $=
+        ( vj c2o com wcel c0 wceq c1o cif wa a1i syl adantr syl2anc vf cmap cfv
+        co cv csuc wss wral xnninf wrex 0lt2o 1lt2o cfn wdc peano2 adantl 2ssom
+        wf nnfi ad2antrr simpr ffvelrnd sselid peano1 ralrimiva finexdc ifcldcd
+        elnn nndceq fmptd 2onn elexi omex elmap sylibr wn iftrued suceq rexeqdv
+        csn wo ifbid fvmptd3 wb cun df-suc rexeqi rexun bitri ifbi ax-mp eqtrdi
+        ifordc eqtrd 3eqtr4d eqimss eqeltrd el2oss1o iffalsed sseqtrrd mpjaodan
+        exmiddc fveq1 sseq12d ralbidv df-nninf elrab2 sylanbrc ) AEIJUBUDZKZHUE
+        ZUFZEUCZXKEUCZUGZHJUHZEUIKAJIEURXJACJBUEZDUCZLMZBCUEZUFZUJZLNOZIEAXTJKZ
+        PZYBLNILIKZYEUKQNIKZYEULQYEYAUMKZXSUNZBYAUHYBUNYEYAJKZYHYDYJAXTUOUPZYAU
+        SRYEYIBYAYEXQYAKZPZXRJKZLJKZYIYMIJXRUQYMJIXQDAJIDURZYDYLFUTYMYLYJXQJKZY
+        EYLVAYEYJYLYKSXQYAVHTVBVCYOYMVDQXRLVIZTVEXSBYAVFTVGGVJIJEIJVKVLVMVNVOAX
+        OHJAXKJKZPZXSBXLUJZXOUUAVPZYTUUAPZXMXNMXOUUCUUALXSBXLVTZUJZLNOZOZLXMXNU
+        UCUUALUUFYTUUAVAZVQYTXMUUGMUUAYTXMUUAUUEWAZLNOZUUGYTXMXSBXLUFZUJZLNOZUU
+        JYTCXLYCUUMJEIGXTXLMZYBUULLNUUNXSBYAUUKXTXLVRVSWBYSXLJKZAXKUOUPZYTUULLN
+        IYFYTUKQZYGYTULQZYTUUKUMKZYIBUUKUHUULUNYTUUKJKZUUSYTUUOUUTUUPXLUORZUUKU
+        SRYTYIBUUKYTXQUUKKZPZYNYOYIUVCIJXRUQUVCJIXQDAYPYSUVBFUTUVCUVBUUTYQYTUVB
+        VAYTUUTUVBUVASXQUUKVHTVBVCYOUVCVDQYRTVEXSBUUKVFTVGZWCZUULUUIWDUUMUUJMUU
+        LXSBXLUUDWEZUJUUIXSBUUKUVFXLWFWGXSBXLUUDWHWIUULUUILNWJWKWLYTUUAUNZUUJUU
+        GMYTXLUMKZYIBXLUHUVGYTUUOUVHUUPXLUSRYTYIBXLYTXQXLKZPZYNYOYIUVJIJXRUQUVJ
+        JIXQDAYPYSUVIFUTUVJUVIUUOYQYTUVIVAYTUUOUVIUUPSXQXLVHTVBVCYOUVJVDQYRTVEX
+        SBXLVFTZUUAUUELNWMRWNSUUCXNUUALNOZLYTXNUVLMZUUAYTCXKYCUVLJEIGXTXKMZYBUU
+        ALNUVNXSBYAXLXTXKVRVSWBAYSVAYTUUALNIUUQUURUVKVGWCZSUUCUUALNUUHVQWNWOXMX
+        NWPRYTUUBPZXMNXNYTXMNUGZUUBYTXMIKUVQYTXMUUMIUVEUVDWQXMWRRSUVPXNUVLNYTUV
+        MUUBUVOSUVPUUALNYTUUBVAWSWNWTYTUVGUUAUUBWAUVKUUAXBRXAVEXLUAUEZUCZXKUVRU
+        CZUGZHJUHXPUAEXIUIUVREMZUWAXOHJUWBUVSXMUVTXNXLUVREXCXKUVREXCXDXEUAHXFXG
+        XH $.
+    $}
+
+    ${
+      $d F i n x $.  $d G f j $.  $d G n x $.  $d i j ph x $.  $d n ph x $.
+      $( Lemma for ~ nninfwlpoim .  (Contributed by Jim Kingdon,
+         8-Dec-2024.) $)
+      nninfwlpoimlemginf $p |- ( ph -> (
+          G = ( i e. _om |-> 1o ) <-> A. n e. _om ( F ` n ) = 1o ) ) $=
+        ( com c1o wceq cfv wa wcel c0 wrex c2o a1i adantr syl2anc cmpt wral cif
+        cv csuc suceq rexeqdv ifbid simpr 0lt2o 1lt2o cfn wdc peano2 adantl syl
+        nnfi 2ssom wf ad3antrrr ffvelrnd sselid peano1 nndceq ralrimiva finexdc
+        elnn ifcldcd fvmptd3 vex sucid fveqeq2 rspcev iftrued eqtrd 1n0 simpllr
+        neii fveq1d eqid eqidd eqeq1d mtbiri pm2.65da ffvelrnda cpr elpri df2o3
+        wo eleq2s orcomd ecased wn eqeq1 ralimi ralnex sylib cbvrexv sylnib wss
+        ad2antlr wi elomssom ssrexv 3syl mtod iffalsed mpteq2dva eqtrid impbida
+        ) AFCIJUAZKZDUDZELZJKZDIUBZAXLMZXODIXQXMINZMZXOXNOKZXSXTXMFLZOKZXSXTMZY
+        ABUDZELZOKZBXMUEZPZOJUCZOXSYAYIKXTXSCXMYFBCUDZUEZPZOJUCZYIIFQHYJXMKZYLY
+        HOJYNYFBYKYGYJXMUFUGUHXQXRUIZXSYHOJQOQNXSUJRJQNZXSUKRXSYGULNZYFUMZBYGUB
+        YHUMXSYGINZYQXRYSXQXMUNUOZYGUQUPXSYRBYGXSYDYGNZMZYEINOINZYRUUBQIYEURUUB
+        IQYDEAIQEUSZXLXRUUAGUTUUBUUAYSYDINXSUUAUIXSYSUUAYTSYDYGVGTVAVBUUCUUBVCR
+        YEOVDTVEYFBYGVFTVHVISYCYHOJYCXMYGNZXTYHUUEYCXMDVJVKRXSXTUIYFXTBXMYGYDXM
+        OEVLVMTVNVOYCYBJOKZJOVPVRZYCYAJOYCYAXMXKLJYCXMFXKAXLXRXTVQVSYCCXMJJIXKQ
+        XKVTYNJWAXSXRXTYOSYPYCUKRVIVOWBWCWDXSXTXOXSXNQNXTXOWIZXQIQXMEAUUDXLGSWE
+        UUHXNOJWFQXNOJWGWHWJUPWKWLVEAXPMZFCIYMUAXKHUUICIYMJUUIYJINZMZYLOJUUKYLY
+        FBIPZXPUULWMAUUJXPXTDIPZUULXPXTWMZDIUBUUMWMXOUUNDIXOXTUUFUUGXNJOWNWCWOX
+        TDIWPWQXTYFDBIXMYDOEVLWRWSXAUUKYKINZYKIWTYLUULXBUUJUUOUUIYJUNUOYKXCYFBY
+        KIXDXEXFXGXHXIXJ $.
+    $}
+
+    ${
+      $d ph n x i $.  $d ph i $.  $d G n x i $.  $d G x y i $.  $d F n x i $.
+      nninfwlpoilemdc.eq $e |- ( ph
+        -> A. x e. NN+oo A. y e. NN+oo DECID x = y ) $.
+      $( Lemma for ~ nninfwlpoim .  (Contributed by Jim Kingdon,
+         8-Dec-2024.) $)
+      nninfwlpoimlemdc $p |- ( ph ->
+          DECID A. n e. _om ( F ` n ) = 1o ) $=
+        ( com c1o cmpt wceq wdc cv wral xnninf dcbid rspcdva eqeq2 ralbidv wcel
+        cfv eqeq1 nninfwlpoimlemg infnninf a1i nninfwlpoimlemginf mpbid ) AGDKL
+        MZNZOZEPFUDLNEKQZOAGCPZNZOZUMCRUKUOUKNUPULUOUKGUASABPZUONZOZCRQUQCRQBRG
+        URGNZUTUQCRVAUSUPURGUOUESUBJABDFGHIUFTUKRUCADUGUHTAULUNABDEFGHIUISUJ $.
+    $}
+  $}
+
+  ${
+    $d f i j n q z $.  $d f i j q w z $.  $d f i n x y z $.  $d w y z $.
+    $( Decidable equality for ` NN+oo ` implies the Weak Limited Principle of
+       Omniscience (WLPO).  (Contributed by Jim Kingdon, 9-Dec-2024.) $)
+    nninfwlpoim $p |- ( A. x e. NN+oo A. y e. NN+oo DECID x = y
+        -> _om e. WOmni ) $=
+      ( vn vf vz vw vi vj vq weq wdc xnninf wral cv cfv c1o wceq com c2o c0 cif
+      cmap co cwomni wcel wa csuc wrex cmpt elmapi adantl fveqeq2 cbvrexv suceq
+      rexeqdv syl5bb ifbid cbvmptv simpl equequ1 dcbid equequ2 nninfwlpoimlemdc
+      wf cbvral2v sylib ralrimiva cvv wb omex iswomnimap ax-mp sylibr ) ABJZKZB
+      LMALMZCNDNZOPQCRMKZDSRUBUCZMZRUDUEZVPVRDVSVPVQVSUEZUFZEFGCVQHRINZVQOTQZIH
+      NZUGZUHZTPUAZUIWBRSVQVDVPVQSRUJUKHGRWIENZVQOTQZEGNZUGZUHZTPUAHGJZWHWNTPWH
+      WKEWGUHWOWNWEWKIEWGWDWJTVQULUMWOWKEWGWMWFWLUNUOUPUQURWCVPEFJZKZFLMELMVPWB
+      USVOWQEBJZKABEFLLAEJVNWRAEBUTVABFJWRWPBFEVBVAVEVFVCVGRVHUEWAVTVIVJCRDVHVK
+      VLVM $.
+  $}
+
+  ${
+    $d x y $.
+    $( Decidability of equality for ` NN+oo ` is equivalent to the Weak Limited
+       Principle of Omniscience (WLPO).  (Contributed by Jim Kingdon,
+       3-Dec-2024.) $)
+    nninfwlpo $p |- ( A. x e. NN+oo A. y e. NN+oo DECID x = y
+        <-> _om e. WOmni ) $=
+      ( weq wdc xnninf wral com cwomni wcel nninfwlpoim nninfwlpor impbii ) ABC
+      DBEFAEFGHIABJABKL $.
   $}
 
 
