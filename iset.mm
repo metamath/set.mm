@@ -145410,6 +145410,17 @@ $)
       ROZCVJERUFIUHZVQVOVGBVKCVSVQVMVFVNHVQVLDVDVEVQVLESODVJESUFJUHUIVQVNEUGOHV
       JEUGUFKUHUJUKULEGUMZVCACVHTVCCVRTIVCRTUQETNVRTNZUNVTWATERERUOUPURUSUTVAVB
       $.
+
+    $( The inverse of a group element.  (Contributed by NM, 24-Aug-2011.)
+       (Revised by Mario Carneiro, 7-Aug-2013.) $)
+    grpinvval $p |- ( X e. B ->
+                    ( N ` X ) = ( iota_ y e. B ( y .+ X ) = .0. ) ) $=
+      ( vx wcel cfv cv co wceq crio cvv cbs cmpt basmex grpinvfvalg fveq1d eqid
+      syl oveq2 eqeq1d riotabidv id wfn basfn funfvex sylancr eqeltrid riotaexg
+      funfni fvmptd3 eqtrd ) FBMZFENFLBAOZLOZCPZGQZABRZUAZNVAFCPZGQZABRZUTFEVFU
+      TDSMZEVFQFBDHUBZLABCDESGHIJKUCUFUDUTLFVEVIBVFSVFUEVBFQZVDVHABVLVCVGGVBFVA
+      CUGUHUIUTUJUTBSMVISMUTBDTNZSHUTTSUKVJVMSMZULVKVNSDTDTUMUQUNUOVHABSUPUFURU
+      S $.
   $}
 
 
