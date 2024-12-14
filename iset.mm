@@ -145442,6 +145442,27 @@ $)
       TUKSUPACVAGHAUQBCDUREUQTURTFULUNUO $.
   $}
 
+  ${
+    $d g x y B $.  $d g x y G $.  $d g x y I $.  $d g x y .+ $.  $d x y X $.
+    $d x y Y $.
+    grpsubval.b $e |- B = ( Base ` G ) $.
+    grpsubval.p $e |- .+ = ( +g ` G ) $.
+    grpsubval.i $e |- I = ( invg ` G ) $.
+    grpsubval.m $e |- .- = ( -g ` G ) $.
+    $( Group subtraction (division) operation.  (Contributed by NM,
+       31-Mar-2014.)  (Revised by Stefan O'Rear, 27-Mar-2015.)  (Proof
+       shortened by AV, 19-Feb-2024.) $)
+    grpsubfvalg $p |- ( G e. V
+        -> .- = ( x e. B , y e. B |-> ( x .+ ( I ` y ) ) ) ) $=
+      ( vg wcel cfv cv cbs cminusg cplusg cvv co cmpo df-sbg wceq fveq2 eqtr4di
+      csg eqidd fveq1d oveq123d mpoeq123dv elex funfvex funfni sylancr eqeltrid
+      wfn basfn mpoexga syl2anc fvmptd3 eqtrid ) EHNZGEUGOABCCAPZBPZFOZDUAZUBZL
+      VCMEABMPZQOZVJVDVEVIROZOZVISOZUAZUBVHTUGTABMUCVIEUDZABVJVJVNCCVGVOVJEQOZC
+      VIEQUEIUFZVQVOVDVDVLVFVMDVOVMESODVIESUEJUFVOVDUHVOVEVKFVOVKEROFVIERUEKUFU
+      IUJUKEHULZVCCTNZVSVHTNVCCVPTIVCQTUQETNVPTNZURVRVTTEQEQUMUNUOUPZWAABCCVGTT
+      USUTVAVB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
