@@ -93,6 +93,13 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+13-Dec-24 fvmptopab [same]      revised - eliminated hypothesis
+                                and deduction form antecedent
+13-Dec-24 wksonproplem [same]   revised - eliminated hypothesis
+13-Dec-24 mptmpoopabovd [same]  revised - eliminated hypotheses
+13-Dec-24 mptmpoopabbrd [same]  revised - eliminated hypotheses
+13-Dec-24 wlkRes     ---        obsolete - use obapresex2 instead
+13-Dec-24 opabresex2d ---       obsolete - use opabresex2 instead
 27-Nov-24 eldifsucnn [same]     moved from SF's mathbox to main set.mm
 27-Nov-24 nnasmo    [same]      moved from SF's mathbox to main set.mm
 27-Nov-24 rdg0n     [same]      moved from SF's mathbox to main set.mm
