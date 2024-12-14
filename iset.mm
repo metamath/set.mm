@@ -30165,6 +30165,11 @@ $)
     ( c0 wcel cvv cdif eldifi eldifn pm2.65i df-nul eleq2i mtbir ) ABCADDEZCZMA
     DCADDFADDGHBLAIJK $.
 
+  $( The empty set has no elements.  (Contributed by Peter Mazsa,
+     4-Jan-2018.) $)
+  nel02 $p |- ( A = (/) -> -. B e. A ) $=
+    ( c0 wceq wcel noel eleq2 mtbiri ) ACDBAEBCEBFACBGH $.
+
   $( If a set has elements, it is not empty.  A set with elements is also
      inhabited, see ~ elex2 .  (Contributed by NM, 31-Dec-1993.) $)
   n0i $p |- ( B e. A -> -. A = (/) ) $=
