@@ -19509,6 +19509,7 @@ New usage of "wfrlem4OLD" is discouraged (1 uses).
 New usage of "wfrlem5OLD" is discouraged (1 uses).
 New usage of "wfrlem8OLD" is discouraged (1 uses).
 New usage of "wfrrelOLD" is discouraged (1 uses).
+New usage of "wksonproplemOLD" is discouraged (0 uses).
 New usage of "wksvOLD" is discouraged (0 uses).
 New usage of "wl-embant" is discouraged (0 uses).
 New usage of "wl-impchain-a1-1" is discouraged (1 uses).
@@ -19556,6 +19557,7 @@ New usage of "wl-section-impchain" is discouraged (0 uses).
 New usage of "wl-section-prop" is discouraged (0 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
+New usage of "wlkResOLD" is discouraged (0 uses).
 New usage of "wlklenvclwlkOLD" is discouraged (0 uses).
 New usage of "wrecseq123OLD" is discouraged (0 uses).
 New usage of "wunfuncOLD" is discouraged (0 uses).
@@ -21470,6 +21472,7 @@ Proof modification of "wfrlem4OLD" is discouraged (526 steps).
 Proof modification of "wfrlem5OLD" is discouraged (416 steps).
 Proof modification of "wfrlem8OLD" is discouraged (69 steps).
 Proof modification of "wfrrelOLD" is discouraged (89 steps).
+Proof modification of "wksonproplemOLD" is discouraged (278 steps).
 Proof modification of "wksvOLD" is discouraged (81 steps).
 Proof modification of "wl-cases2-dnf" is discouraged (85 steps).
 Proof modification of "wl-dfclab" is discouraged (73 steps).
@@ -21518,6 +21521,7 @@ Proof modification of "wl-section-impchain" is discouraged (1 steps).
 Proof modification of "wl-section-prop" is discouraged (1 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
+Proof modification of "wlkResOLD" is discouraged (50 steps).
 Proof modification of "wlklenvclwlkOLD" is discouraged (197 steps).
 Proof modification of "wrecseq123OLD" is discouraged (211 steps).
 Proof modification of "wunfuncOLD" is discouraged (338 steps).
