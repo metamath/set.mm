@@ -145660,6 +145660,21 @@ $)
       URGHVAUGUHUI $.
   $}
 
+  ${
+    grpidrcan.b $e |- B = ( Base ` G ) $.
+    grpidrcan.p $e |- .+ = ( +g ` G ) $.
+    grpidrcan.o $e |- .0. = ( 0g ` G ) $.
+    $( If right adding an element of a group to an arbitrary element of the
+       group results in this element, the added element is the identity element
+       and vice versa.  (Contributed by AV, 15-Mar-2019.) $)
+    grpidrcan $p |- ( ( G e. Grp /\ X e. B /\ Z e. B ) ->
+                  ( ( X .+ Z ) = X <-> Z = .0. ) ) $=
+      ( cgrp wcel w3a co wceq grprid 3adant3 eqeq2d wb simp1 simp3 simp2 bitr3d
+      grpidcl 3ad2ant1 grplcan syl13anc ) CJKZDAKZFAKZLZDFBMZDEBMZNZUKDNFENZUJU
+      LDUKUGUHULDNUIABCDEGHIOPQUJUGUIEAKZUHUMUNRUGUHUISUGUHUITUGUHUOUIACEGIUCUD
+      UGUHUIUAABCFEDGHUEUFUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
