@@ -145519,6 +145519,32 @@ $)
       ( vx vy vz cgrp wcel cfv cv grpcl grpidcl grplid grpass grpinvex grpinvcl
       simpr grplinv grprinvd ) CNOZEAOZKLMABEDPFEABCKQZLQZGHRACFGISABCUIFGHITAB
       CUIUJMQGHUALABCUIFGHIUBUGUHUDACDEGJUCABCDEFGHIJUEUF $.
+
+    $( The inverse of a group element expressed in terms of the identity
+       element.  (Contributed by NM, 24-Aug-2011.) $)
+    grpinvid1 $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) ->
+                    ( ( N ` X ) = Y <-> ( X .+ Y ) = .0. ) ) $=
+      ( wcel w3a wceq co wa oveq2 3adant3 adantr eqtr3d cgrp cfv adantl grprinv
+      grplinv oveq1d grpinvcl adantrr simprl simprr grpass syldan 3impb 3adant2
+      3jca grplid grprid 3eqtr3rd impbida ) CUALZEALZFALZMZEDUBZFNZEFBOZGNZVCVE
+      PEVDBOZVFGVEVHVFNVCVDFEBQUCVCVHGNZVEUTVAVIVBABCDEGHIJKUDRSTVCVGPVDVFBOZVD
+      GBOZFVDVGVJVKNVCVFGVDBQUCVCVJFNVGVCGFBOZVJFVCVDEBOZFBOZVLVJUTVAVNVLNVBUTV
+      APVMGFBABCDEGHIJKUEUFRUTVAVBVNVJNZUTVAVBPZVDALZVAVBMVOUTVPPVQVAVBUTVAVQVB
+      ACDEHKUGZUHUTVAVBUIUTVAVBUJUOABCVDEFHIUKULUMTUTVBVLFNVAABCFGHIJUPUNTSVCVK
+      VDNZVGUTVAVSVBUTVAVQVSVRABCVDGHIJUQULRSURUS $.
+
+    $( The inverse of a group element expressed in terms of the identity
+       element.  (Contributed by NM, 24-Aug-2011.) $)
+    grpinvid2 $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) ->
+                    ( ( N ` X ) = Y <-> ( Y .+ X ) = .0. ) ) $=
+      ( wcel w3a wceq co wa oveq1 adantl 3adant3 adantr cgrp cfv grplinv eqtr3d
+      grpinvcl grplid syldan eqcomd simprr simprl adantrr grpass grprinv oveq2d
+      3jca 3impb grprid 3adant2 3eqtrd 3eqtr2d impbida ) CUALZEALZFALZMZEDUBZFN
+      ZFEBOZGNZVEVGPVFEBOZVHGVGVJVHNVEVFFEBQRVEVJGNZVGVBVCVKVDABCDEGHIJKUCSTUDV
+      EVIPVFGVFBOZVHVFBOZFVEVFVLNVIVEVLVFVBVCVLVFNZVDVBVCVFALZVNACDEHKUEZABCVFG
+      HIJUFUGSUHTVIVMVLNVEVHGVFBQRVEVMFNVIVEVMFEVFBOZBOZFGBOZFVBVCVDVMVRNZVBVCV
+      DPZVDVCVOMVTVBWAPVDVCVOVBVCVDUIVBVCVDUJVBVCVOVDVPUKUOABCFEVFHIULUGUPVBVCV
+      RVSNVDVBVCPVQGFBABCDEGHIJKUMUNSVBVDVSFNVCABCFGHIJUQURUSTUTVA $.
   $}
 
 
