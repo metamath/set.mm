@@ -145481,6 +145481,18 @@ $)
     $}
   $}
 
+  ${
+    $d x y B $.  $d x y G $.
+    grpinvcl.b $e |- B = ( Base ` G ) $.
+    grpinvcl.n $e |- N = ( invg ` G ) $.
+    $( The group inversion operation is a function on the base set.
+       (Contributed by Mario Carneiro, 4-May-2015.) $)
+    grpinvf $p |- ( G e. Grp -> N : B --> B ) $=
+      ( vx vy cgrp wcel cv cplusg cfv co c0g wceq crio eqid grpinvfvalg wa wreu
+      grpinveu riotacl syl fmpt3d ) BHIZFAGJFJZBKLZMBNLZOZGAPZACFGAUGBCHUHDUGQZ
+      UHQZERUEUFAISUIGATUJAIGAUGBUFUHDUKULUAUIGAUBUCUD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
