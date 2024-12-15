@@ -145498,6 +145498,22 @@ $)
       ( cgrp wcel grpinvf ffvelrnda ) BGHAADCABCEFIJ $.
   $}
 
+  ${
+    $d e x y z B $.  $d e x y z G $.  $d e x y z .0. $.  $d e x y z .+ $.
+    $d e x M $.  $d x y z N $.  $d y z X $.
+    grpinv.b $e |- B = ( Base ` G ) $.
+    grpinv.p $e |- .+ = ( +g ` G ) $.
+    grpinv.u $e |- .0. = ( 0g ` G ) $.
+    grpinv.n $e |- N = ( invg ` G ) $.
+    $( The left inverse of a group element.  (Contributed by NM, 24-Aug-2011.)
+       (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    grplinv $p |- ( ( G e. Grp /\ X e. B ) -> ( ( N ` X ) .+ X ) = .0. ) $=
+      ( vy cgrp wcel wa cfv cv co wceq crab syl crio grpinvval grpinveu eqeltrd
+      adantl wreu riotacl2 oveq1 eqeq1d elrab simprbi ) CLMZEAMZNZEDOZKPZEBQZFR
+      ZKASZMZUOEBQZFRZUNUOURKAUAZUSUMUOVCRULKABCDEFGHIJUBUEUNURKAUFVCUSMKABCEFG
+      HIUCURKAUGTUDUTUOAMVBURVBKUOAUPUORUQVAFUPUOEBUHUIUJUKT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
