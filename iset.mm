@@ -145637,6 +145637,27 @@ $)
       VSGHWBUPSTRSVJVNEMZVFUTVIWIVAUTVIKZVQEBLZVSEBLZVNEWJVQVSEBUTVCWAVBWDRUGUT
       VIWGVCVBJWKVNMWJWGVCVBUTVCWGVBWHRUTVBVCUIUTVBVCUJUKABCVLFEGHULUNUTVBWLEMV
       CABCEVSGHWBUPUQTQSTUAURDEFBOUS $.
+
+    grpasscan1.n $e |- N = ( invg ` G ) $.
+    $( An associative cancellation law for groups.  (Contributed by Paul
+       Chapman, 25-Feb-2008.)  (Revised by AV, 30-Aug-2021.) $)
+    grpasscan1 $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) ->
+                          ( X .+ ( ( N ` X ) .+ Y ) ) = Y ) $=
+      ( cgrp wcel w3a cfv co c0g wceq eqid grprinv 3adant3 wi wa grpinvcl 3exp2
+      oveq1d grpass imp mpd 3impia grplid 3adant2 3eqtr3d ) CJKZEAKZFAKZLZEEDMZ
+      BNZFBNZCOMZFBNZEUPFBNBNZFUOUQUSFBULUMUQUSPUNABCDEUSGHUSQZIRSUDULUMUNURVAP
+      ZULUMUAUPAKZUNVCTZACDEGIUBULUMVDVETULUMVDUNVCABCEUPFGHUEUCUFUGUHULUNUTFPU
+      MABCFUSGHVBUIUJUK $.
+
+    $( An associative cancellation law for groups.  (Contributed by Paul
+       Chapman, 17-Apr-2009.)  (Revised by AV, 30-Aug-2021.) $)
+    grpasscan2 $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) ->
+                       ( ( X .+ ( N ` Y ) ) .+ Y ) = X ) $=
+      ( cgrp wcel w3a cfv co c0g wceq simp1 simp2 grpinvcl 3adant2 simp3 grpass
+      syl13anc eqid grplinv oveq2d grprid 3adant3 3eqtrd ) CJKZEAKZFAKZLZEFDMZB
+      NFBNZEUNFBNZBNZECOMZBNZEUMUJUKUNAKZULUOUQPUJUKULQUJUKULRUJULUTUKACDFGISTU
+      JUKULUAABCEUNFGHUBUCUMUPUREBUJULUPURPUKABCDFURGHURUDZIUETUFUJUKUSEPULABCE
+      URGHVAUGUHUI $.
   $}
 
 
