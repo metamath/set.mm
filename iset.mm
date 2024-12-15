@@ -145610,6 +145610,17 @@ $)
       WCVCVPVEVQUNVJVBTUNVJVDTSUGSUHUIUMVTADBUODEFVJGHWBUJUKUL $.
   $}
 
+  ${
+    grpinvid.u $e |- .0. = ( 0g ` G ) $.
+    grpinvid.n $e |- N = ( invg ` G ) $.
+    $( The inverse of the identity element of a group.  (Contributed by NM,
+       24-Aug-2011.) $)
+    grpinvid $p |- ( G e. Grp -> ( N ` .0. ) = .0. ) $=
+      ( cgrp wcel cfv wceq cplusg co cbs eqid grpidcl grplid mpdan wb grpinvid1
+      mpd3an23 mpbird ) AFGZCBHCIZCCAJHZKCIZUACALHZGZUDUEACUEMZDNZUEUCACCUGUCMZ
+      DOPUAUFUFUBUDQUHUHUEUCABCCCUGUIDERST $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
