@@ -145685,6 +145685,31 @@ $)
       UGUHUIUAABCFEDGHUEUFUB $.
   $}
 
+  ${
+    $d x y B $.  $d x y G $.  $d x y N $.
+    grpinvinv.b $e |- B = ( Base ` G ) $.
+    grpinvinv.n $e |- N = ( invg ` G ) $.
+    $( Double inverse law for groups.  Lemma 2.2.1(c) of [Herstein] p. 55.
+       (Contributed by NM, 31-Mar-2014.) $)
+    grpinvinv $p |- ( ( G e. Grp /\ X e. B ) -> ( N ` ( N ` X ) ) = X ) $=
+      ( cgrp wcel wa cfv cplusg co wceq c0g grpinvcl eqid grprinv syldan eqtr4d
+      grplinv wb simpl simpr grplcan syl13anc mpbid ) BGHZDAHZIZDCJZUJCJZBKJZLZ
+      UJDULLZMZUKDMZUIUMBNJZUNUGUHUJAHZUMUQMABCDEFOZAULBCUJUQEULPZUQPZFQRAULBCD
+      UQEUTVAFTSUIUGUKAHZUHURUOUPUAUGUHUBUGUHURVBUSABCUJEFORUGUHUCUSAULBUKDUJEU
+      TUDUEUF $.
+
+    $( The group inverse is its own inverse function.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.) $)
+    grpinvcnv $p |- ( G e. Grp -> `' N = N ) $=
+      ( vx vy cgrp wcel cv cfv cmpt ccnv wceq eqid grpinvcl wa wb eqcom feqmptd
+      wf1o w3a cplusg co c0g grpinvid1 3com23 grpinvid2 bitr4d 3bitr4g f1ocnv2d
+      3expb simprd grpinvf cnveqd 3eqtr4d ) BHIZFAFJZCKZLZMZGAGJZCKZLZCMCUQAAUT
+      UAVAVDNUQFGAAUSVCUTUTOABCURDEPABCVBDEPUQURAIZVBAIZQQVCURNZUSVBNZURVCNVBUS
+      NUQVEVFVGVHRUQVEVFUBVGVBURBUCKZUDBUEKZNZVHUQVFVEVGVKRAVIBCVBURVJDVIOZVJOZ
+      EUFUGAVIBCURVBVJDVLVMEUHUIULURVCSVBUSSUJUKUMUQCUTUQFAACABCDEUNZTUOUQGAACV
+      NTUP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
