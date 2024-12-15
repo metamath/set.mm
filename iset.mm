@@ -145708,6 +145708,24 @@ $)
       NUQVEVFVGVHRUQVEVFUBVGVBURBUCKZUDBUEKZNZVHUQVFVEVGVKRAVIBCVBURVJDVIOZVJOZ
       EUFUGAVIBCURVBVJDVLVMEUHUIULURVCSVBUSSUJUKUMUQCUTUQFAACABCDEUNZTUOUQGAACV
       NTUP $.
+
+    grpinv11.g $e |- ( ph -> G e. Grp ) $.
+    ${
+      grpinv11.x $e |- ( ph -> X e. B ) $.
+      grpinv11.y $e |- ( ph -> Y e. B ) $.
+      $( The group inverse is one-to-one.  (Contributed by NM, 22-Mar-2015.) $)
+      grpinv11 $p |- ( ph -> ( ( N ` X ) = ( N ` Y ) <-> X = Y ) ) $=
+        ( cfv wceq wa fveq2 adantl wcel grpinvinv syl2anc adantr cgrp 3eqtr3d
+        ex impbid1 ) AEDLZFDLZMZEFMZAUGUHAUGNUEDLZUFDLZEFUGUIUJMAUEUFDOPAUIEMZU
+        GACUAQZEBQUKIJBCDEGHRSTAUJFMZUGAULFBQUMIKBCDFGHRSTUBUCEFDOUD $.
+    $}
+
+    $( The group inverse is a one-to-one onto function.  (Contributed by NM,
+       22-Oct-2014.)  (Proof shortened by Mario Carneiro, 14-Aug-2015.) $)
+    grpinvf1o $p |- ( ph -> N : B -1-1-onto-> B ) $=
+      ( wfn ccnv wf1o cgrp wcel grpinvf syl ffnd wceq grpinvcnv fneq1d mpbird
+      wf dff1o4 sylanbrc ) ADBHZDIZBHZBBDJABBDACKLZBBDTGBCDEFMNOZAUEUCUGABUDDAU
+      FUDDPGBCDEFQNRSBBDUAUB $.
   $}
 
 
