@@ -145461,6 +145461,24 @@ $)
       VIEQUEIUFZVQVOVDVDVLVFVMDVOVMESODVIESUEJUFVOVDUHVOVEVKFVOVKEROFVIERUEKUFU
       IUJUKEHULZVCCTNZVSVHTNVCCVPTIVCQTUQETNVPTNZURVRVTTEQEQUMUNUOUPZWAABCCVGTT
       USUTVAVB $.
+
+    ${
+      $d .+ z $.  $d B w z $.  $d G w z $.  $d Y z $.
+
+      $( Group subtraction (division) operation.  (Contributed by NM,
+         31-Mar-2014.)  (Revised by Mario Carneiro, 13-Dec-2014.) $)
+      grpsubval $p |- ( ( X e. B /\ Y e. B ) ->
+                      ( X .- Y ) = ( X .+ ( I ` Y ) ) ) $=
+        ( vx vy vz wcel cv cfv co cvv wceq vw wa cmpo cbs a1i simpl grpsubfvalg
+        basmexd syl oveq1 fveq2 oveq2d sylan9eq adantl simpr plusgslid eqeltrid
+        cplusg slotex c0g crio cmpt eqid grpinvfvalg wfn funfvex funfni sylancr
+        basfn mptexd eqeltrd fvexg sylancom ovexg syl3anc ovmpod ) FAOZGAOZUBZL
+        MFGAALPZMPZDQZBRZFGDQZBRZESVSCSOZELMAAWCUCTVSFACACUDQZTVSHUEVQVRUFZUHZL
+        MABCDESHIJKUGUIVTFTZWAGTZUBWCWETVSWJWKWCFWBBRWEVTFWBBUJWKWBWDFBWAGDUKUL
+        UMUNWHVQVRUOVSVQBSOWDSOZWESOWHVSBCURQZSIVSWFWMSOWICURSUPUSUIUQVQVRDSOWL
+        VSDNAUAPNPBRCUTQZTUAAVAZVBZSVSWFDWPTWINUAABCDSWNHIWNVCJVDUIVSNAWOSVSAWG
+        SHVSUDSVEWFWGSOZVIWIWQSCUDCUDVFVGVHUQVJVKGDSAVLVMFWDBASSVNVOVP $.
+    $}
   $}
 
 
