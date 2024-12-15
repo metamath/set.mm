@@ -145512,6 +145512,13 @@ $)
       adantl wreu riotacl2 oveq1 eqeq1d elrab simprbi ) CLMZEAMZNZEDOZKPZEBQZFR
       ZKASZMZUOEBQZFRZUNUOURKAUAZUSUMUOVCRULKABCDEFGHIJUBUEUNURKAUFVCUSMKABCEFG
       HIUCURKAUGTUDUTUOAMVBURVBKUOAUPUORUQVAFUPUOEBUHUIUJUKT $.
+
+    $( The right inverse of a group element.  (Contributed by NM, 24-Aug-2011.)
+       (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    grprinv $p |- ( ( G e. Grp /\ X e. B ) -> ( X .+ ( N ` X ) ) = .0. ) $=
+      ( vx vy vz cgrp wcel cfv cv grpcl grpidcl grplid grpass grpinvex grpinvcl
+      simpr grplinv grprinvd ) CNOZEAOZKLMABEDPFEABCKQZLQZGHRACFGISABCUIFGHITAB
+      CUIUJMQGHUALABCUIFGHIUBUGUHUDACDEGJUCABCDEFGHIJUEUF $.
   $}
 
 
