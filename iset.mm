@@ -145491,6 +145491,11 @@ $)
       ( vx vy cgrp wcel cv cplusg cfv co c0g wceq crio eqid grpinvfvalg wa wreu
       grpinveu riotacl syl fmpt3d ) BHIZFAGJFJZBKLZMBNLZOZGAPZACFGAUGBCHUHDUGQZ
       UHQZERUEUFAISUIGATUJAIGAUGBUFUHDUKULUAUIGAUBUCUD $.
+
+    $( A group element's inverse is a group element.  (Contributed by NM,
+       24-Aug-2011.)  (Revised by Mario Carneiro, 4-May-2015.) $)
+    grpinvcl $p |- ( ( G e. Grp /\ X e. B ) -> ( N ` X ) e. B ) $=
+      ( cgrp wcel grpinvf ffvelrnda ) BGHAADCABCEFIJ $.
   $}
 
 
