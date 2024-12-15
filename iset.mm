@@ -145621,6 +145621,24 @@ $)
       DOPUAUFUFUBUDQUHUHUEUCABCCCUGUIDERST $.
   $}
 
+  ${
+    grplcan.b $e |- B = ( Base ` G ) $.
+    grplcan.p $e |- .+ = ( +g ` G ) $.
+    $( Left cancellation law for groups.  (Contributed by NM, 25-Aug-2011.) $)
+    grplcan $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                  ( ( Z .+ X ) = ( Z .+ Y ) <-> X = Y ) ) $=
+      ( wcel w3a wa co wceq cfv oveq2 eqid adantlr adantrl adantr 3eqtr3d exp53
+      cgrp cminusg adantl c0g grplinv oveq1d grpinvcl simprr simprl 3jca grpass
+      wi syldan anassrs grplid adantrr 3imp2 impbid1 ) CUBIZDAIZEAIZFAIZJKFDBLZ
+      FEBLZMZDEMZUTVAVBVCVFVGUMUTVAVBVCVFVGUTVAKZVBVCKZKZVFKFCUCNZNZVDBLZVLVEBL
+      ZDEVFVMVNMVJVDVEVLBOUDVJVMDMZVFVHVCVOVBVHVCKZVLFBLZDBLZCUENZDBLZVMDVPVQVS
+      DBUTVCVQVSMZVAABCVKFVSGHVSPZVKPZUFZQUGUTVAVCVRVMMZUTVAVCKZVLAIZVCVAJWEUTW
+      FKWGVCVAUTVCWGVAACVKFGWCUHZRUTVAVCUIUTVAVCUJUKABCVLFDGHULUNUOVHVTDMVCABCD
+      VSGHWBUPSTRSVJVNEMZVFUTVIWIVAUTVIKZVQEBLZVSEBLZVNEWJVQVSEBUTVCWAVBWDRUGUT
+      VIWGVCVBJWKVNMWJWGVCVBUTVCWGVBWHRUTVBVCUIUTVBVCUJUKABCVLFEGHULUNUTVBWLEMV
+      CABCEVSGHWBUPUQTQSTUAURDEFBOUS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
