@@ -145592,6 +145592,24 @@ $)
       UGUHUI $.
   $}
 
+  ${
+    $d G u x y $.  $d B u y $.  $d .+ u y $.
+    grpidinv.b $e |- B = ( Base ` G ) $.
+    grpidinv.p $e |- .+ = ( +g ` G ) $.
+    $( A group has a left and right identity element, and every member has a
+       left and right inverse.  (Contributed by NM, 14-Oct-2006.)  (Revised by
+       AV, 1-Sep-2021.) $)
+    grpidinv $p |- ( G e. Grp -> E. u e. B A. x e. B
+                     ( ( ( u .+ x ) = x /\ ( x .+ u ) = x )
+                       /\ E. y e. B ( ( y .+ x ) = u /\ ( x .+ y ) = u ) ) ) $=
+      ( cgrp wcel cv co wceq wa wrex wral c0g eqeq1d anbi12d eqeq2 eqid grpidcl
+      cfv wb oveq1 oveq2 rexbidv ralbidv adantl grpidinv2 ralrimiva rspcedvd )
+      FIJZCKZAKZELZUOMZUOUNELZUOMZNZBKZUOELZUNMZUOVAELZUNMZNZBDOZNZADPZFQUCZUOE
+      LZUOMZUOVJELZUOMZNZVBVJMZVDVJMZNZBDOZNZADPZCVJDDFVJGVJUAZUBUNVJMZVIWAUDUM
+      WCVHVTADWCUTVOVGVSWCUQVLUSVNWCUPVKUOUNVJUOEUERWCURVMUOUNVJUOEUFRSWCVFVRBD
+      WCVCVPVEVQUNVJVBTUNVJVDTSUGSUHUIUMVTADBUODEFVJGHWBUJUKUL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
