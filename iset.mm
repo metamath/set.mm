@@ -145564,6 +145564,22 @@ $)
       WHWIWCWBCWBFEVRVNUNVOVPVQVS $.
   $}
 
+  ${
+    $d B y $.  $d G x y $.  $d .+ y $.  $d .0. y $.
+    grplrinv.b $e |- B = ( Base ` G ) $.
+    grplrinv.p $e |- .+ = ( +g ` G ) $.
+    grplrinv.i $e |- .0. = ( 0g ` G ) $.
+    $( In a group, every member has a left and right inverse.  (Contributed by
+       AV, 1-Sep-2021.) $)
+    grplrinv $p |- ( G e. Grp
+           -> A. x e. B E. y e. B ( ( y .+ x ) = .0. /\ ( x .+ y ) = .0. ) ) $=
+      ( cgrp wcel cv co wceq wa wrex cminusg cfv eqid eqeq1d grpinvcl wb adantl
+      oveq1 oveq2 anbi12d grplinv grprinv jca rspcedvd ralrimiva ) EJKZBLZALZDM
+      ZFNZUNUMDMZFNZOZBCPACULUNCKOZUSUNEQRZRZUNDMZFNZUNVBDMZFNZOZBVBCCEVAUNGVAS
+      ZUAUMVBNZUSVGUBUTVIUPVDURVFVIUOVCFUMVBUNDUDTVIUQVEFUMVBUNDUETUFUCUTVDVFCD
+      EVAUNFGHIVHUGCDEVAUNFGHIVHUHUIUJUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
