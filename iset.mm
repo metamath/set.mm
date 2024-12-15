@@ -145728,6 +145728,27 @@ $)
       FUDDPGBCDEFQNRSBBDUAUB $.
   $}
 
+  ${
+    grpinvnzcl.b $e |- B = ( Base ` G ) $.
+    grpinvnzcl.z $e |- .0. = ( 0g ` G ) $.
+    grpinvnzcl.n $e |- N = ( invg ` G ) $.
+    $( The inverse of a nonzero group element is not zero.  (Contributed by
+       Stefan O'Rear, 27-Feb-2015.) $)
+    grpinvnz $p |- ( ( G e. Grp /\ X e. B /\ X =/= .0. ) ->
+        ( N ` X ) =/= .0. ) $=
+      ( cgrp wcel wne cfv wceq fveq2 adantl grpinvinv adantr grpinvid ad2antrr
+      wa 3eqtr3d ex necon3d 3impia ) BIJZDAJZDEKDCLZEKUEUFTZUGEDEUHUGEMZDEMUHUI
+      TUGCLZECLZDEUIUJUKMUHUGECNOUHUJDMUIABCDFHPQUEUKEMUFUIBCEGHRSUAUBUCUD $.
+
+    $( The inverse of a nonzero group element is a nonzero group element.
+       (Contributed by Stefan O'Rear, 27-Feb-2015.) $)
+    grpinvnzcl $p |- ( ( G e. Grp /\ X e. ( B \ { .0. } ) ) ->
+        ( N ` X ) e. ( B \ { .0. } ) ) $=
+      ( cgrp wcel csn cdif wa cfv wne eldifi grpinvcl sylan2 eldifsn grpinvnz
+      3expb sylan2b sylanbrc ) BIJZDAEKZLZJZMDCNZAJZUHEOZUHUFJUGUDDAJZUIDAUEPAB
+      CDFHQRUGUDUKDEOZMUJDAESUDUKULUJABCDEFGHTUAUBUHAESUC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
