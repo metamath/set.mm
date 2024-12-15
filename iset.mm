@@ -145749,6 +145749,21 @@ $)
       CDFHQRUGUDUKDEOZMUJDAESUDUKULUJABCDEFGHTUAUBUHAESUC $.
   $}
 
+  ${
+    grpsubinv.b $e |- B = ( Base ` G ) $.
+    grpsubinv.p $e |- .+ = ( +g ` G ) $.
+    grpsubinv.m $e |- .- = ( -g ` G ) $.
+    grpsubinv.n $e |- N = ( invg ` G ) $.
+    grpsubinv.g $e |- ( ph -> G e. Grp ) $.
+    grpsubinv.x $e |- ( ph -> X e. B ) $.
+    grpsubinv.y $e |- ( ph -> Y e. B ) $.
+    $( Subtraction of an inverse.  (Contributed by NM, 7-Apr-2015.) $)
+    grpsubinv $p |- ( ph -> ( X .- ( N ` Y ) ) = ( X .+ Y ) ) $=
+      ( cfv co wcel wceq syl2anc cgrp grpinvcl grpsubval grpinvinv oveq2d eqtrd
+      ) AGHFPZEQZGUGFPZCQZGHCQAGBRUGBRZUHUJSNADUARZHBRZUKMOBDFHILUBTBCDFEGUGIJL
+      KUCTAUIHGCAULUMUIHSMOBDFHILUDTUEUF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
