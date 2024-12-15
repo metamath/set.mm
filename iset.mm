@@ -145578,6 +145578,18 @@ $)
       ZFNZUNUMDMZFNZOZBCPACULUNCKOZUSUNEQRZRZUNDMZFNZUNVBDMZFNZOZBVBCCEVAUNGVAS
       ZUAUMVBNZUSVGUBUTVIUPVDURVFVIUOVCFUMVBUNDUDTVIUQVEFUMVBUNDUETUFUCUTVDVFCD
       EVAUNFGHIVHUGCDEVAUNFGHIVHUHUIUJUK $.
+
+    $d A y z $.  $d B z $.  $d G z $.  $d .+ z $.  $d .0. z $.
+    $( A group's properties using the explicit identity element.  (Contributed
+       by NM, 5-Feb-2010.)  (Revised by AV, 1-Sep-2021.) $)
+    grpidinv2 $p |- ( ( G e. Grp /\ A e. B )
+              -> ( ( ( .0. .+ A ) = A /\ ( A .+ .0. ) = A )
+                   /\ E. y e. B ( ( y .+ A ) = .0. /\ ( A .+ y ) = .0. ) ) ) $=
+      ( vz cgrp wcel wa co wceq cv wrex grplid grprid eqeq1d wral oveq2 anbi12d
+      grplrinv oveq1 rexbidv rspcv mpan9 jca31 ) EKLZBCLZMFBDNBOBFDNBOAPZBDNZFO
+      ZBULDNZFOZMZACQZCDEBFGHIRCDEBFGHISUJULJPZDNZFOZUSULDNZFOZMZACQZJCUAUKURJA
+      CDEFGHIUDVEURJBCUSBOZVDUQACVFVAUNVCUPVFUTUMFUSBULDUBTVFVBUOFUSBULDUETUCUF
+      UGUHUI $.
   $}
 
 
