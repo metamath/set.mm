@@ -4169,6 +4169,15 @@ $)
   $}
 
   ${
+    syldanl.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    syldanl.2 $e |- ( ( ( ph /\ ch ) /\ th ) -> ta ) $.
+    $( A syllogism deduction with conjoined antecedents.  (Contributed by Jeff
+       Madsen, 20-Jun-2011.) $)
+    syldanl $p |- ( ( ( ph /\ ps ) /\ th ) -> ta ) $=
+      ( wa ex imdistani sylan ) ABHACHDEABCABCFIJGK $.
+  $}
+
+  ${
     pm5.32d.1 $e |- ( ph -> ( ps -> ( ch <-> th ) ) ) $.
     $( Distribution of implication over biconditional (deduction form).
        (Contributed by NM, 29-Oct-1996.)  (Revised by NM, 31-Jan-2015.) $)
