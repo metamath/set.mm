@@ -2250,10 +2250,20 @@ $)
   $}
 
   ${
+    bitrid.1 $e |- ( ph <-> ps ) $.
+    bitrid.2 $e |- ( ch -> ( ps <-> th ) ) $.
+    $( A syllogism inference from two biconditionals.  (Contributed by NM,
+       12-Mar-1993.) $)
+    bitrid $p |- ( ch -> ( ph <-> th ) ) $=
+      ( wb a1i bitrd ) CABDABGCEHFI $.
+  $}
+
+  ${
     syl5bb.1 $e |- ( ph <-> ps ) $.
     syl5bb.2 $e |- ( ch -> ( ps <-> th ) ) $.
-    $( A syllogism inference from two biconditionals.  (Contributed by NM,
-       5-Aug-1993.) $)
+    $( A syllogism inference from two biconditionals.  This is in the process
+       of being renamed to ~ bitrid (New usages should use ~ bitrid ).
+       (Contributed by NM, 12-Mar-1993.) $)
     syl5bb $p |- ( ch -> ( ph <-> th ) ) $=
       ( wb a1i bitrd ) CABDABGCEHFI $.
   $}
