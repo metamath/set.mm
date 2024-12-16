@@ -145783,6 +145783,25 @@ $)
       KUCTAUIHGCAULUMUIHSMOBDFHILUDTUEUF $.
   $}
 
+  ${
+    $d x y B $.  $d x y G $.  $d x y .+ $.  $d x y X $.
+    grplmulf1o.b $e |- B = ( Base ` G ) $.
+    grplmulf1o.p $e |- .+ = ( +g ` G ) $.
+    grplmulf1o.n $e |- F = ( x e. B |-> ( X .+ x ) ) $.
+    $( Left multiplication by a group element is a bijection on any group.
+       (Contributed by Mario Carneiro, 17-Jan-2015.) $)
+    grplmulf1o $p |- ( ( G e. Grp /\ X e. B ) -> F : B -1-1-onto-> B ) $=
+      ( vy wcel wa cv co cfv grpcl 3expa eqid wceq syl13anc cgrp grpinvcl eqcom
+      cminusg syldanl wb simpll adantrl simprl simplr grplcan c0g adantr oveq1d
+      grprinv simprr grpass grplid ad2ant2rl 3eqtr3d eqeq1d bitr3d bitrid f1o2d
+      ) EUAKZFBKZLZAJBBFAMZCNZFEUDOZOZJMZCNZDIVEVFVHBKZVIBKBCEFVHGHPQVEVFVKBKZV
+      LBKZVMBKZBEVJFGVJRZUBZVEVOVPVQBCEVKVLGHPQUEZVHVMSVMVHSZVGVNVPLZLZVLVISZVH
+      VMUCWCFVMCNZVISZWAWDWCVEVQVNVFWFWAUFVEVFWBUGZVGVPVQVNVTUHVGVNVPUIVEVFWBUJ
+      ZBCEVMVHFGHUKTWCWEVLVIWCFVKCNZVLCNZEULOZVLCNZWEVLWCWIWKVLCVGWIWKSWBBCEVJF
+      WKGHWKRZVRUOUMUNWCVEVFVOVPWJWESWGWHVGVOWBVSUMVGVNVPUPBCEFVKVLGHUQTVEVPWLV
+      LSVFVNBCEVLWKGHWMURUSUTVAVBVCVD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
