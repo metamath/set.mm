@@ -145911,6 +145911,17 @@ $)
       AVGRUMUQUSVEUTVFUNUPUSVENUOAVDBVBCDFGVDSZVBSZHTUBUOUPUTVFNUNAVDBVBCEFGVIV
       JHTUCUDUEURUMUNUOVCAJZVGVHRUMUQUFUMUNUOUPUGUMUNUOUPUHUMUNUPVKUOABVBFGVJUI
       UAAVDBDEVCGVIUJULUK $.
+
+    grpinvsub.n $e |- N = ( invg ` G ) $.
+    $( Inverse of a group subtraction.  (Contributed by NM, 9-Sep-2014.) $)
+    grpinvsub $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) ->
+                      ( N ` ( X .- Y ) ) = ( Y .- X ) ) $=
+      ( cgrp wcel w3a cfv cplusg co wceq grpinvcl 3adant2 grpsubval 3adant1
+      eqid grpinvadd syld3an3 grpinvinv oveq1d eqtrd fveq2d ancoms 3eqtr4d ) BJ
+      KZEAKZFAKZLZEFDMZBNMZOZDMZFEDMZUOOZEFCOZDMFECOZUMUQUNDMZURUOOZUSUJUKULUNA
+      KZUQVCPUJULVDUKABDFGIQRAUOBDEUNGUOUAZIUBUCUMVBFURUOUJULVBFPUKABDFGIUDRUEU
+      FUMUTUPDUKULUTUPPUJAUOBDCEFGVEIHSTUGUKULVAUSPZUJULUKVFAUOBDCFEGVEIHSUHTUI
+      $.
   $}
 
 
