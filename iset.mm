@@ -145999,6 +145999,17 @@ $)
       grpsubcl eqid grpinvsub oveq2d eqtrd ) CKLZEALZFALZGALZMNZEFGDOZDOZEUMCPQ
       ZQZBOZEGFDOZBOULUIUMALZUNUQRUHUIUJUKSUHUJUKUSUIACDFGHJUCTABCUODEUMHIUOUDZ
       JUAUBULUPUREBUHUJUKUPURRUIACDUOFGHJUTUETUFUG $.
+
+    $( Associative-type law for group subtraction and addition.  (Contributed
+       by NM, 16-Apr-2014.) $)
+    grpaddsubass $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+         ( ( X .+ Y ) .- Z ) = ( X .+ ( Y .- Z ) ) ) $=
+      ( cgrp wcel w3a wa co cminusg cfv wceq grpsubval syl2anc simpr1 3ad2antr3
+      simpl simpr2 eqid grpinvcl grpass syl13anc grpcl 3adant3r3 simpr3 3eqtr4d
+      oveq2d ) CKLZEALZFALZGALZMZNZEFBOZGCPQZQZBOZEFVBBOZBOZUTGDOZEFGDOZBOUSUNU
+      OUPVBALZVCVERUNURUCUNUOUPUQUAUNUOUPUQUDZUNUOUQVHUPACVAGHVAUEZUFUBABCEFVBH
+      IUGUHUSUTALZUQVFVCRUNUOUPVKUQABCEFHIUIUJUNUOUPUQUKZABCVADUTGHIVJJSTUSVGVD
+      EBUSUPUQVGVDRVIVLABCVADFGHIVJJSTUMUL $.
   $}
 
 
