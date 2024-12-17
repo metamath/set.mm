@@ -145933,6 +145933,18 @@ $)
       FEGUJSZIHTUCUFUGUIALUKUIQABDEGIUAAUJBUIFGULJUBUDUE $.
   $}
 
+  ${
+    grpsubid.b $e |- B = ( Base ` G ) $.
+    grpsubid.o $e |- .0. = ( 0g ` G ) $.
+    grpsubid.m $e |- .- = ( -g ` G ) $.
+    $( Subtraction of a group element from itself.  (Contributed by NM,
+       31-Mar-2014.) $)
+    grpsubid $p |- ( ( G e. Grp /\ X e. B ) -> ( X .- X ) = .0. ) $=
+      ( cgrp wcel wa co cminusg cfv cplusg wceq eqid grpsubval anidms adantl
+      grprinv eqtrd ) BIJZDAJZKDDCLZDDBMNZNBONZLZEUDUEUHPZUCUDUIAUGBUFCDDFUGQZU
+      FQZHRSTAUGBUFDEFUJGUKUAUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
