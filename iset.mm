@@ -145973,6 +145973,25 @@ $)
       DEFHKUKSZJTUAUIULUNEBUFUHULUNRUGACDUKFGHJUOIUDUBUCUE $.
   $}
 
+  ${
+    grpsubadd.b $e |- B = ( Base ` G ) $.
+    grpsubadd.p $e |- .+ = ( +g ` G ) $.
+    grpsubadd.m $e |- .- = ( -g ` G ) $.
+    $( Relationship between group subtraction and addition.  (Contributed by
+       NM, 31-Mar-2014.) $)
+    grpsubadd $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) )
+          -> ( ( X .- Y ) = Z <-> ( Z .+ Y ) = X ) ) $=
+      ( cgrp wcel w3a co wceq cfv eqid eqeq1d 3ad2antr2 syl13anc cminusg adantl
+      wa grpsubval 3adant3 wb simpl simpr1 grpinvcl grpcl syl3anc simpr3 simpr2
+      grprcan c0g grpass grplinv oveq2d grprid 3ad2antr1 3eqtrd 3bitr2d bitrdi
+      eqcom ) CKLZEALZFALZGALZMZUCZEFDNZGOZEGFBNZOZVMEOVJVLEFCUAPZPZBNZGOZVQFBN
+      ZVMOZVNVJVKVQGVIVKVQOZVEVFVGWAVHABCVODEFHIVOQZJUDUEUBRVJVEVQALZVHVGVTVRUF
+      VEVIUGZVJVEVFVPALZWCWDVEVFVGVHUHZVEVFVGWEVHACVOFHWBUISZABCEVPHIUJUKVEVFVG
+      VHULVEVFVGVHUMZABCVQGFHIUNTVJVSEVMVJVSEVPFBNZBNZECUOPZBNZEVJVEVFWEVGVSWJO
+      WDWFWGWHABCEVPFHIUPTVJWIWKEBVEVFVGWIWKOVHABCVOFWKHIWKQZWBUQSURVEVGVFWLEOV
+      HABCEWKHIWMUSUTVARVBEVMVDVC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
