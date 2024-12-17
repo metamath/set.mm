@@ -145990,6 +145990,15 @@ $)
       VHULVEVFVGVHUMZABCVQGFHIUNTVJVSEVMVJVSEVPFBNZBNZECUOPZBNZEVJVEVFWEVGVSWJO
       WDWFWGWHABCEVPFHIUPTVJWIWKEBVEVFVGWIWKOVHABCVOFWKHIWKQZWBUQSURVEVGVFWLEOV
       HABCEWKHIWMUSUTVARVBEVMVDVC $.
+
+    $( Double group subtraction.  (Contributed by NM, 24-Feb-2008.)  (Revised
+       by Mario Carneiro, 2-Dec-2014.) $)
+    grpsubsub $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+         ( X .- ( Y .- Z ) ) = ( X .+ ( Z .- Y ) ) ) $=
+      ( cgrp wcel w3a wa co cminusg cfv wceq simpr1 3adant3r1 grpsubval syl2anc
+      grpsubcl eqid grpinvsub oveq2d eqtrd ) CKLZEALZFALZGALZMNZEFGDOZDOZEUMCPQ
+      ZQZBOZEGFDOZBOULUIUMALZUNUQRUHUIUJUKSUHUJUKUSUIACDFGHJUCTABCUODEUMHIUOUDZ
+      JUAUBULUPUREBUHUJUKUPURRUIACDUOFGHJUTUETUFUG $.
   $}
 
 
