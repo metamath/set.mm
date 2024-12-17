@@ -145823,6 +145823,28 @@ $)
       VPTUOURAFHRVQVOOLCBVIVJFVQHVLVITVJTVLTVQTUOURUS $.
   $}
 
+  ${
+    $d B x y $.  $d M x y $.  $d S x y $.
+    grpidssd.m $e |- ( ph -> M e. Grp ) $.
+    grpidssd.s $e |- ( ph -> S e. Grp ) $.
+    grpidssd.b $e |- B = ( Base ` S ) $.
+    grpidssd.c $e |- ( ph -> B C_ ( Base ` M ) ) $.
+    grpidssd.o $e |- ( ph -> A. x e. B A. y e. B
+                             ( x ( +g ` M ) y ) = ( x ( +g ` S ) y ) ) $.
+    $( If the base set of a group is contained in the base set of another
+       group, and the group operation of the group is the restriction of the
+       group operation of the other group to its base set, then both groups
+       have the same identity element.  (Contributed by AV, 15-Mar-2019.) $)
+    grpidssd $p |- ( ph -> ( 0g ` M ) = ( 0g ` S ) ) $=
+      ( c0g cfv cplusg co wceq wcel cv wral eqid cgrp grpidcl syl oveq1 eqeq12d
+      oveq2 rspc2va syl21anc grplid syl2anc2 eqtrd cbs sseldd grpidlcan syl3anc
+      wb mpbid eqcomd ) AELMZFLMZAUSUSFNMZOZUSPZUSUTPZAVBUSUSENMZOZUSAUSDQZVGBR
+      ZCRZVAOZVHVIVEOZPZCDSBDSVBVFPZAEUAQZVGHDEUSIUSTZUBZUCZVQKVLVMUSVIVAOZUSVI
+      VEOZPBCUSUSDDVHUSPVJVRVKVSVHUSVIVAUDVHUSVIVEUDUEVIUSPVRVBVSVFVIUSUSVAUFVI
+      USUSVEUFUEUGUHAVNVGVFUSPHVPDVEEUSUSIVETVOUIUJUKAFUAQUSFULMZQZWAVCVDUPGADV
+      TUSJVQUMZWBVTVAFUSUTUSVTTVATUTTUNUOUQUR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
