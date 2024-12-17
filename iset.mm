@@ -145864,6 +145864,25 @@ $)
       SWQFVKGWTXBUDUPWSWQVOFVJVLGWTXAVDVEVFVG $.
   $}
 
+  ${
+    grpinvadd.b $e |- B = ( Base ` G ) $.
+    grpinvadd.p $e |- .+ = ( +g ` G ) $.
+    grpinvadd.n $e |- N = ( invg ` G ) $.
+    $( The inverse of the group operation reverses the arguments.  Lemma
+       2.2.1(d) of [Herstein] p. 55.  (Contributed by NM, 27-Oct-2006.) $)
+    grpinvadd $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) ->
+                   ( N ` ( X .+ Y ) ) = ( ( N ` Y ) .+ ( N ` X ) ) ) $=
+      ( wcel co cfv wceq grpinvcl 3adant2 3adant3 grpcl syl3anc grpass syl13anc
+      cgrp w3a c0g simp1 simp2 simp3 eqid grprinv oveq1d grplid syl2anc 3eqtr3d
+      oveq2d 3eqtrd wb grpinvid1 mpbird ) CUAJZEAJZFAJZUBZEFBKZDLFDLZEDLZBKZMZV
+      BVEBKZCUCLZMZVAVGEFVEBKZBKZEVDBKZVHVAURUSUTVEAJZVGVKMURUSUTUDZURUSUTUEURU
+      SUTUFZVAURVCAJZVDAJZVMVNURUTVPUSACDFGINOZURUSVQUTACDEGINPZABCVCVDGHQRZABC
+      EFVEGHSTVAVJVDEBVAFVCBKZVDBKZVHVDBKZVJVDVAWAVHVDBURUTWAVHMUSABCDFVHGHVHUG
+      ZIUHOUIVAURUTVPVQWBVJMVNVOVRVSABCFVCVDGHSTVAURVQWCVDMVNVSABCVDVHGHWDUJUKU
+      LUMURUSVLVHMUTABCDEVHGHWDIUHPUNVAURVBAJVMVFVIUOVNABCEFGHQVTABCDVBVEVHGHWD
+      IUPRUQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
