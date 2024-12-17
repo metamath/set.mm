@@ -145951,6 +145951,17 @@ $)
       syl2anr grpinvid adantr oveq2d grprid 3eqtrd ) BIJZDAJZKZDECLZDEBMNZNZBON
       ZLZDEUMLDUHUHEAJUJUNPUGUHQABEFGRAUMBUKCDEFUMSZUKSZHTUAUIULEDUMUGULEPUHBUK
       EGUPUBUCUDAUMBDEFUOGUEUF $.
+
+    $( If the difference between two group elements is zero, they are equal.
+       ( ~ subeq0 analog.)  (Contributed by NM, 31-Mar-2014.) $)
+    grpsubeq0 $p |- ( ( G e. Grp /\ X e. B /\ Y e. B )
+                  -> ( ( X .- Y ) = .0. <-> X = Y ) ) $=
+      ( cgrp wcel w3a co wceq cminusg cfv cplusg eqid eqeq1d 3adant2 3adant1 wb
+      grpsubval simp1 grpinvcl simp2 grpinvid2 syl3anc grpinvinv bitrdi 3bitr2d
+      eqcom ) BJKZDAKZEAKZLZDECMZFNDEBOPZPZBQPZMZFNZUSURPZDNZDENZUPUQVAFUNUOUQV
+      ANUMAUTBURCDEGUTRZURRZIUCUASUPUMUSAKZUNVDVBUBUMUNUOUDUMUOVHUNABUREGVGUETU
+      MUNUOUFAUTBURUSDFGVFHVGUGUHUPVDEDNVEUPVCEDUMUOVCENUNABUREGVGUITSEDULUJUK
+      $.
   $}
 
 
