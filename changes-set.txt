@@ -93,6 +93,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+17-Dec-24 ffelrnd   ffelcdmd
+17-Dec-24 ffelrnda  ffelcdmda
+17-Dec-24 ffelrni   ffelcdmi
+17-Dec-24 ffelrn    ffelcdm
 13-Dec-24 fvmptopab [same]      revised - eliminated hypothesis
                                 and deduction form antecedent
 13-Dec-24 wksonproplem [same]   revised - eliminated hypothesis
