@@ -145922,6 +145922,15 @@ $)
       KZUQVCPUJULVDUKABDFGIQRAUOBDEUNGUOUAZIUBUCUMVBFURUOUJULVBFPUKABDFGIUDRUEU
       FUMUTUPDUKULUTUPPUJAUOBDCEFGVEIHSTUGUKULVAUSPZUJULUKVFAUOBDCFEGVEIHSUHTUI
       $.
+
+    grpinvval2.z $e |- .0. = ( 0g ` G ) $.
+    $( A ~ df-neg -like equation for inverse in terms of group subtraction.
+       (Contributed by Mario Carneiro, 4-Oct-2015.) $)
+    grpinvval2 $p |- ( ( G e. Grp /\ X e. B ) ->
+                      ( N ` X ) = ( .0. .- X ) ) $=
+      ( cgrp wcel wa co cfv cplusg wceq grpidcl eqid grpsubval grpinvcl grplid
+      sylan syldan eqtr2d ) BKLZEALZMFECNZFEDOZBPOZNZUIUFFALUGUHUKQABFGJRAUJBDC
+      FEGUJSZIHTUCUFUGUIALUKUIQABDEGIUAAUJBUIFGULJUBUDUE $.
   $}
 
 
