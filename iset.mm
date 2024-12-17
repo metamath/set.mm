@@ -146052,6 +146052,16 @@ $)
       syl13anc grppncan oveq1d eqtr3d ) CKLZEALZFALZGALZMZNZEGBOZGDOZFDOZUMFGBO
       DOZEFDOULUGUMALZUJUIUOUPPUGUKQUGUHUJUQUIABCEGHIRSUGUHUIUJTUGUHUIUJUAABCDU
       MGFHIJUBUCULUNEFDUGUHUJUNEPUIABCDEGHIJUDSUEUF $.
+
+    $( Cancellation law for group subtraction.  ( ~ npncan analog.)
+       (Contributed by NM, 15-Feb-2008.)  (Revised by Mario Carneiro,
+       2-Dec-2014.) $)
+    grpnpncan $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+         ( ( X .- Y ) .+ ( Y .- Z ) ) = ( X .- Z ) ) $=
+      ( cgrp wcel w3a wa co wceq simpl grpsubcl 3adant3r3 simpr2 simpr3 oveq1d
+      grpaddsubass syl13anc grpnpcan eqtr3d ) CKLZEALZFALZGALZMZNZEFDOZFBOZGDOZ
+      UMFGDOBOZEGDOULUGUMALZUIUJUOUPPUGUKQUGUHUIUQUJACDEFHJRSUGUHUIUJTUGUHUIUJU
+      AABCDUMFGHIJUCUDULUNEGDUGUHUIUNEPUJABCDEFHIJUESUBUF $.
   $}
 
 
