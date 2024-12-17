@@ -145802,6 +145802,27 @@ $)
       LSVFVNBCEVLWKGHWMURUSUTVAVBVCVD $.
   $}
 
+  ${
+    $d x y B $.  $d x y K $.  $d x y L $.  $d x y ph $.
+    grpinvpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    grpinvpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    grpinvpropdg.k $e |- ( ph -> K e. V ) $.
+    grpinvpropdg.l $e |- ( ph -> L e. W ) $.
+    grpinvpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    $( If two structures have the same group components (properties), they have
+       the same group inversion function.  (Contributed by Mario Carneiro,
+       27-Nov-2014.)  (Revised by Stefan O'Rear, 21-Mar-2015.) $)
+    grpinvpropdg $p |- ( ph -> ( invg ` K ) = ( invg ` L ) ) $=
+      ( cfv wceq crio cmpt wcel wa eqid cbs cv cplusg co cminusg wb grpidpropdg
+      c0g eqeq12d anass1rs riotabidva mpteq2dva riotaeqdv mpteq12dv grpinvfvalg
+      adantr 3eqtr3d syl 3eqtr4d ) ACEUANZBUBZCUBZEUCNZUDZEUHNZOZBUTPZQZCFUANZV
+      AVBFUCNZUDZFUHNZOZBVIPZQZEUENZFUENZACDVFBDPZQCDVMBDPZQVHVOACDVRVSAVBDRZSV
+      FVMBDAVADRZVTVFVMUFAWAVTSZSVDVKVEVLMAVEVLOWBABCDEFGHIJKLMUGUPUIUJUKULACDV
+      RUTVGIAVFBDUTIUMUNACDVSVIVNJAVMBDVIJUMUNUQAEGRVPVHOKCBUTVCEVPGVEUTTVCTVET
+      VPTUOURAFHRVQVOOLCBVIVJFVQHVLVITVJTVLTVQTUOURUS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
