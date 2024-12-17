@@ -145900,6 +145900,17 @@ $)
     grpsubcl $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) -> ( X .- Y ) e. B ) $=
       ( cgrp wcel cxp wf co grpsubf fovrn syl3an1 ) BHIAAJACKDAIEAIDECLAIABCFGM
       DEAAACNO $.
+
+    $( Right cancellation law for group subtraction.  (Contributed by NM,
+       31-Mar-2014.) $)
+    grpsubrcan $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                  ( ( X .- Z ) = ( Y .- Z ) <-> X = Y ) ) $=
+      ( cgrp wcel w3a wa co wceq cminusg cfv cplusg wb eqid grpsubval 3ad2antr3
+      3adant2 3adant1 eqeq12d adantl simpl simpr1 simpr2 grpinvcl grprcan bitrd
+      syl13anc ) BIJZDAJZEAJZFAJZKZLZDFCMZEFCMZNZDFBOPZPZBQPZMZEVCVDMZNZDENZUQV
+      AVGRUMUQUSVEUTVFUNUPUSVENUOAVDBVBCDFGVDSZVBSZHTUBUOUPUTVFNUNAVDBVBCEFGVIV
+      JHTUCUDUEURUMUNUOVCAJZVGVHRUMUQUFUMUNUOUPUGUMUNUOUPUHUMUNUPVKUOABVBFGVJUI
+      UAAVDBDEVCGVIUJULUK $.
   $}
 
 
