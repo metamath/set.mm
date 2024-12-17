@@ -146019,6 +146019,17 @@ $)
       syl13anc eqid grpsubid oveq2d grprid 3adant3 3eqtrd ) CJKZEAKZFAKZLZEFBMF
       DMZEFFDMZBMZECNOZBMZEUMUJUKULULUNUPPUJUKULQUJUKULRUJUKULSZUSABCDEFFGHITUC
       UJULUPURPUKUJULUAUOUQEBACDFUQGUQUDZIUEUFUBUJUKUREPULABCEUQGHUTUGUHUI $.
+
+    $( Cancellation law for subtraction ( ~ npcan analog).  (Contributed by NM,
+       19-Apr-2014.) $)
+    grpnpcan $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) ->
+        ( ( X .- Y ) .+ Y ) = X ) $=
+      ( cgrp wcel w3a cminusg cfv co wceq eqid 3adant2 syld3an3 grpsubval grpcl
+      grpinvcl syl2anc grppncan 3adant1 eqcomd grpinvinv oveq12d 3eqtr3rd ) CJK
+      ZEAKZFAKZLZEFCMNZNZBOZUODOZUPUOUNNZBOZEEFDOZFBOUMUPAKZUOAKZUQUSPUJUKULVBV
+      AUJULVBUKACUNFGUNQZUBRZABCEUOGHUASVDABCUNDUPUOGHVCITUCUJUKULVBUQEPVDABCDE
+      UOGHIUDSUMUPUTURFBUMUTUPUKULUTUPPUJABCUNDEFGHVCITUEUFUJULURFPUKACUNFGVCUG
+      RUHUI $.
   $}
 
 
