@@ -145943,6 +145943,14 @@ $)
       ( cgrp wcel wa co cminusg cfv cplusg wceq eqid grpsubval anidms adantl
       grprinv eqtrd ) BIJZDAJZKDDCLZDDBMNZNBONZLZEUDUEUHPZUCUDUIAUGBUFCDDFUGQZU
       FQZHRSTAUGBUFDEFUJGUKUAUB $.
+
+    $( Subtraction of the identity from a group element.  (Contributed by Mario
+       Carneiro, 14-Jan-2015.) $)
+    grpsubid1 $p |- ( ( G e. Grp /\ X e. B ) -> ( X .- .0. ) = X ) $=
+      ( cgrp wcel wa co cminusg cfv cplusg wceq id grpidcl eqid grpsubval
+      syl2anr grpinvid adantr oveq2d grprid 3eqtrd ) BIJZDAJZKZDECLZDEBMNZNZBON
+      ZLZDEUMLDUHUHEAJUJUNPUGUHQABEFGRAUMBUKCDEFUMSZUKSZHTUAUIULEDUMUGULEPUHBUK
+      EGUPUBUCUDAUMBDEFUOGUEUF $.
   $}
 
 
