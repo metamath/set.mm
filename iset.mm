@@ -145883,6 +145883,20 @@ $)
       IUPRUQ $.
   $}
 
+  ${
+    $d x y B $.  $d x y G $.
+    grpsubcl.b $e |- B = ( Base ` G ) $.
+    grpsubcl.m $e |- .- = ( -g ` G ) $.
+    $( Functionality of group subtraction.  (Contributed by Mario Carneiro,
+       9-Sep-2014.) $)
+    grpsubf $p |- ( G e. Grp -> .- : ( B X. B ) --> B ) $=
+      ( vx vy cgrp wcel cxp wf cv cminusg cfv cplusg co cmpo wral eqid grpinvcl
+      3adant2 grpcl syld3an3 3expb ralrimivva sylib grpsubfvalg feq1d mpbird
+      fmpo ) BHIZAAJZACKULAFGAAFLZGLZBMNZNZBONZPZQZKZUKURAIZGARFARUTUKVAFGAAUKU
+      MAIZUNAIZVAUKVBVCUPAIZVAUKVCVDVBABUOUNDUOSZTUAAUQBUMUPDUQSZUBUCUDUEFGAAUR
+      AUSUSSUJUFUKULACUSFGAUQBUOCHDVFVEEUGUHUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
