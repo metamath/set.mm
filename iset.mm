@@ -146042,6 +146042,16 @@ $)
       QUCZABCDVBGHIJRSUDUSUNVCALZUQUPVHVEOVKUSUNVJUQVNVKVLVMACDVBGHJPSZVMUNUOUP
       UQUEZABCVCGFHIUFTUNUOUPVIEOUQABCDEFHIJRQUMUSUNUOUTALZVNVDVFUGVKUNUOUPUQUH
       USUNUQUPVQVKVMVPABCGFHIUISVOABCDEUTVCHIJUJTUKUL $.
+
+    $( Cancellation law for mixed addition and subtraction.  ( ~ pnpcan2
+       analog.)  (Contributed by NM, 15-Feb-2008.)  (Revised by Mario Carneiro,
+       2-Dec-2014.) $)
+    grppnpcan2 $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+         ( ( X .+ Z ) .- ( Y .+ Z ) ) = ( X .- Y ) ) $=
+      ( cgrp wcel w3a wa co wceq simpl grpcl 3adant3r2 simpr3 simpr2 grpsubsub4
+      syl13anc grppncan oveq1d eqtr3d ) CKLZEALZFALZGALZMZNZEGBOZGDOZFDOZUMFGBO
+      DOZEFDOULUGUMALZUJUIUOUPPUGUKQUGUHUJUQUIABCEGHIRSUGUHUIUJTUGUHUIUJUAABCDU
+      MGFHIJUBUCULUNEFDUGUHUJUNEPUIABCDEGHIJUDSUEUF $.
   $}
 
 
