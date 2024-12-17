@@ -146170,6 +146170,21 @@ $)
       VMUOVNVO $.
   $}
 
+  ${
+    $d a b g A $.  $d a b g G $.  $d a b g I $.  $d a b g .+ $.  $d a b g X $.
+    $d a B $.
+    grplact.1 $e |- F = ( g e. X |-> ( a e. X |-> ( g .+ a ) ) ) $.
+    grplact.2 $e |- X = ( Base ` G ) $.
+    $( The left group action of element ` A ` of group ` G ` .  (Contributed by
+       Paul Chapman, 18-Mar-2008.) $)
+    grplactfval $p |- ( A e. X ->
+                ( F ` A ) = ( a e. X |-> ( A .+ a ) ) ) $=
+      ( wcel cv co cmpt cvv wceq oveq1 mpteq2dv id cbs cfv basfn basmex funfvex
+      wfn funfni sylancr eqeltrid mptexd fvmptd3 ) AFJZCAGFCKZGKZBLZMGFAULBLZMF
+      DNHUKAOGFUMUNUKAULBPQUJRUJGFUNNUJFESTZNIUJSNUDENJUONJZUAAFEIUBUPNESESUCUE
+      UFUGUHUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
