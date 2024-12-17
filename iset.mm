@@ -145962,6 +145962,15 @@ $)
       ANUMAUTBURCDEGUTRZURRZIUCUASUPUMUSAKZUNVDVBUBUMUNUOUDUMUOVHUNABUREGVGUETU
       MUNUOUFAUTBURUSDFGVFHVGUGUHUPVDEDNVEUPVCEDUMUOVCENUNABUREGVGUITSEDULUJUK
       $.
+
+    grpsubadd0sub.p $e |- .+ = ( +g ` G ) $.
+    $( Subtraction expressed as addition of the difference of the identity
+       element and the subtrahend.  (Contributed by AV, 9-Nov-2019.) $)
+    grpsubadd0sub $p |- ( ( G e. Grp /\ X e. B /\ Y e. B )
+                          -> ( X .- Y ) = ( X .+ ( .0. .- Y ) ) ) $=
+      ( cgrp wcel w3a co cminusg cfv wceq eqid grpsubval 3adant1 3adant2 oveq2d
+      grpinvval2 eqtrd ) CLMZEAMZFAMZNZEFDOZEFCPQZQZBOZEGFDOZBOUGUHUJUMRUFABCUK
+      DEFHKUKSZJTUAUIULUNEBUFUHULUNRUGACDUKFGHJUOIUDUBUCUE $.
   $}
 
 
