@@ -145843,6 +145843,25 @@ $)
       VEOZPBCUSUSDDVHUSPVJVRVKVSVHUSVIVAUDVHUSVIVEUDUEVIUSPVRVBVSVFVIUSUSVAUFVI
       USUSVEUFUEUGUHAVNVGVFUSPHVPDVEEUSUSIVETVOUIUJUKAFUAQUSFULMZQZWAVCVDUPGADV
       TUSJVQUMZWBVTVAFUSUTUSVTTVATUTTUNUOUQUR $.
+
+    $d X x y $.
+    $( If the base set of a group is contained in the base set of another
+       group, and the group operation of the group is the restriction of the
+       group operation of the other group to its base set, then the elements of
+       the first group have the same inverses in both groups.  (Contributed by
+       AV, 15-Mar-2019.) $)
+    grpinvssd $p |- ( ph -> ( X e. B
+                     -> ( ( invg ` S ) ` X ) = ( ( invg ` M ) ` X ) ) ) $=
+      ( wcel cminusg cfv wceq cplusg co eqid adantr wa wral cgrp grpinvcl sylan
+      c0g cv simpr oveq1 eqeq12d oveq2 rspc2va syl21anc grplinv sselda syl2an2r
+      cbs grpidssd eqtr2d 3eqtrd wb wss sseldd grprcan syl13anc mpbid ex ) AGDM
+      ZGENOZOZGFNOZOZPZAVHUAZVJGFQOZRZVLGVORZPZVMVNVPVJGEQOZRZEUFOZVQVNVJDMZVHB
+      UGZCUGZVORZWCWDVSRZPZCDUBBDUBZVPVTPZAEUCMZVHWBIDEVIGJVISZUDUEZAVHUHAWHVHL
+      TWGWIVJWDVORZVJWDVSRZPBCVJGDDWCVJPWEWMWFWNWCVJWDVOUIWCVJWDVSUIUJWDGPWMVPW
+      NVTWDGVJVOUKWDGVJVSUKUJULUMAWJVHVTWAPIDVSEVIGWAJVSSWASWKUNUEVNVQFUFOZWAAF
+      UCMZVHGFUQOZMZVQWOPHADWQGKUOZWQVOFVKGWOWQSZVOSZWOSVKSZUNUPAWOWAPVHABCDEFH
+      IJKLURTUSUTVNWPVJWQMVLWQMZWRVRVMVAAWPVHHTVNDWQVJADWQVBVHKTWLVCAWPVHWRXCHW
+      SWQFVKGWTXBUDUPWSWQVOFVJVLGWTXAVDVEVFVG $.
   $}
 
 
