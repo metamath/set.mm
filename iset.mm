@@ -145895,6 +145895,11 @@ $)
       fmpo ) BHIZAAJZACKULAFGAAFLZGLZBMNZNZBONZPZQZKZUKURAIZGARFARUTUKVAFGAAUKU
       MAIZUNAIZVAUKVBVCUPAIZVAUKVCVDVBABUOUNDUOSZTUAAUQBUMUPDUQSZUBUCUDUEFGAAUR
       AUSUSSUJUFUKULACUSFGAUQBUOCHDVFVEEUGUHUI $.
+
+    $( Closure of group subtraction.  (Contributed by NM, 31-Mar-2014.) $)
+    grpsubcl $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) -> ( X .- Y ) e. B ) $=
+      ( cgrp wcel cxp wf co grpsubf fovrn syl3an1 ) BHIAAJACKDAIEAIDECLAIABCFGM
+      DEAAACNO $.
   $}
 
 
