@@ -146073,6 +146073,21 @@ $)
       UGRZUEUFUGSULABCDEFEHIJTUAUEUFUKGPUGACDEGHKJUBUCUD $.
   $}
 
+  ${
+    grpnnncan2.b $e |- B = ( Base ` G ) $.
+    grpnnncan2.m $e |- .- = ( -g ` G ) $.
+    $( Cancellation law for group subtraction.  ( ~ nnncan2 analog.)
+       (Contributed by NM, 15-Feb-2008.)  (Revised by Mario Carneiro,
+       2-Dec-2014.) $)
+    grpnnncan2 $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+         ( ( X .- Z ) .- ( Y .- Z ) ) = ( X .- Y ) ) $=
+      ( cgrp wcel w3a wa co cplusg cfv wceq simpl simpr1 simpr3 3adant3r1 eqtrd
+      grpsubcl eqid grpsubsub4 syl13anc grpnpcan oveq2d ) BIJZDAJZEAJZFAJZKZLZD
+      FCMEFCMZCMZDUNFBNOZMZCMZDECMUMUHUIUKUNAJZUOURPUHULQUHUIUJUKRUHUIUJUKSUHUJ
+      UKUSUIABCEFGHUBTAUPBCDFUNGUPUCZHUDUEUMUQEDCUHUJUKUQEPUIAUPBCEFGUTHUFTUGUA
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
