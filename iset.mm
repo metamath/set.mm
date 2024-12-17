@@ -146146,6 +146146,28 @@ $)
       BYCVFVDVGXFWEXCYBXDYGXTQXKXNYDXMDEFWIXRWKIJVKVHWEFVLNXDYHWKQXEFVMXLDEFWKX
       AIJXBVNVOVPVAVQVRVTWTWFKOZLOZEPYJQMOYJEPYIQMDRSLDUCKDRWEWFWGWSVSABCKDEMFG
       LHIJWALDEMKFIJWBWCWD $.
+
+    $( Alternate definition of a group as a set with a closed, associative
+       operation, for which solutions ` x ` and ` y ` of the equations
+       ` ( a .+ x ) = b ` and ` ( x .+ a ) = b ` exist.  Exercise 1 of
+       [Herstein] p. 57.  (Contributed by NM, 5-Dec-2006.)  (Revised by AV,
+       28-Aug-2021.) $)
+    dfgrp3me $p |- ( G e. Grp <-> ( E. w w e. B
+                      /\ A. x e. B A. y e. B ( ( x .+ y ) e. B
+                         /\ A. z e. B ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) )
+                         /\ ( E. l e. B ( l .+ x ) = y
+                              /\ E. r e. B ( x .+ r ) = y ) ) ) ) $=
+      ( va wcel cv co wceq wa wral adantr simpr cgrp csgrp wex wrex w3a dfgrp3m
+      simp2 cmgm sgrpmgm mgmcl syl3anc sgrpass 3anassrs ralrimiva 3jca ralimdva
+      wi ex a1d jca eleq1w cbvexv 3simpa 2ralimi issgrpn0 syl5ibr exlimiv sylbi
+      3imp imp simpl simp3 adantl impbii bitri ) GUAMGUBMZDNEMZDUCZINANZFOBNZPI
+      EUDVSHNFOVTPHEUDQZBERZAERZUEZVRVSVTFOZEMZWECNZFOVSVTWGFOFOPZCERZWAUEZBERZ
+      AERZQZABDEFGHIJKUFWDWMWDVRWLVPVRWCUGVPVRWCWLVPWCWLUQVRVPWBWKAEVPVSEMZQZWA
+      WJBEWOVTEMZQZWAWJWQWAQWFWIWAWQWFWAWQGUHMZWNWPWFWOWRWPVPWRWNGUISSWOWNWPVPW
+      NTSWOWPTEGVSVTFJKUJUKSWQWIWAWQWHCEVPWNWPWGEMWHEGVSVTFWGJKULUMUNSWQWATUOUR
+      UPUPUSVIUTWMVPVRWCVRWLVPVRLNZEMZLUCWLVPUQZVQWTDLDLEVAVBWTXALWLVPWTWFWIQZB
+      ERAERWJXBABEEWFWIWAVCVDABCWSEGFJKVEVFVGVHVJVRWLVKWLWCVRWJWAABEEWFWIWAVLVD
+      VMUOVNVO $.
   $}
 
 
