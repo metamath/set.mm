@@ -48900,6 +48900,14 @@ $)
   $}
 
   ${
+    f1oeq1d.1 $e |- ( ph -> F = G ) $.
+    $( Equality deduction for one-to-one onto functions.  (Contributed by
+       Glauco Siliprandi, 17-Aug-2020.) $)
+    f1oeq1d $p |- ( ph -> ( F : A -1-1-onto-> B <-> G : A -1-1-onto-> B ) ) $=
+      ( wceq wf1o wb f1oeq1 syl ) ADEGBCDHBCEHIFBCDEJK $.
+  $}
+
+  ${
     f1oeq2d.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for one-to-one onto functions.  (Contributed by
        Glauco Siliprandi, 17-Aug-2020.) $)
