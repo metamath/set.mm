@@ -146303,6 +146303,17 @@ $)
       FXAVOVMWEWTFWDWSVMWDOGZVTOGZWDWSLACVBZVMVSOGZXCWJVMXEWKVRAOCPQVSOVBVCZWDV
       TBOODVDVEZVMWCWREWDWSXGVMWAWQWBVMVTWPVPVQVMXBXCVTWPLXDXFWDVTBOODVFVEVGRVH
       VIVJVKVL $.
+
+    $( The inverse function of the trivial group.  (Contributed by FL,
+       21-Jun-2010.)  (Revised by AV, 26-Aug-2021.) $)
+    grp1inv $p |- ( I e. V -> ( invg ` M ) = ( _I |` { I } ) ) $=
+      ( wcel csn cminusg cfv wf cid cres wceq cbs eqid syl cvv cop snexg anidms
+      opexg cgrp grp1 grpinvf mpancom grpbaseg syl2anc feq23d mpbird wb fsng wa
+      simpr cxp restidsing xpsng eqtr2id adantr eqtrd ex sylbid mpd ) ACEZAFZVC
+      BGHZIZVDJVCKZLZVBVEBMHZVHVDIZVBBUAEVIABCDUBVHBVDVHNVDNUCOVBVCVCVHVHVDVBVC
+      PEAAQZAQZFZPEZVCVHLACRVBVKPEZVMVJPEZVBVNVBVOAACCTSVJAPCTUDVKPROVCVLBPPDUE
+      UFZVPUGUHVBVEVDVJFZLZVGVBVEVRUIAACCVDUJSVBVRVGVBVRUKVDVQVFVBVRULVBVQVFLVR
+      VBVFVCVCUMZVQAUNVBVSVQLAACCUOSUPUQURUSUTVA $.
   $}
 
 
