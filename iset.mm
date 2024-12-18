@@ -146244,6 +146244,28 @@ $)
       DVJEVCTVFTVDTVJTULUMUN $.
   $}
 
+  ${
+    $d x y B $.  $d a b x y G $.  $d a b x y H $.  $d a b x y ph $.
+    grpsubpropd2.1 $e |- ( ph -> B = ( Base ` G ) ) $.
+    grpsubpropd2.2 $e |- ( ph -> B = ( Base ` H ) ) $.
+    grpsubpropd2.3 $e |- ( ph -> G e. Grp ) $.
+    grpsubpropd2.4 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` G ) y ) = ( x ( +g ` H ) y ) ) $.
+    $( Strong property deduction for the group subtraction operation.
+       (Contributed by Mario Carneiro, 4-Oct-2015.) $)
+    grpsubpropd2 $p |- ( ph -> ( -g ` G ) = ( -g ` H ) ) $=
+      ( va vb cfv co cmpo wcel wceq 3ad2ant1 eleqtrrd eqid cbs cv cminusg simp1
+      csg w3a simp2 cgrp simp3 grpinvcl syl2anc oveqrspc2v syl12anc cvv grpidcl
+      cplusg c0g syl basmexd grpinvpropdg fveq1d oveq2d eqtrd mpoeq3dva mpoeq12
+      eqtr3d grpsubfvalg 3eqtr4d ) AKLEUAMZVIKUBZLUBZEUCMZMZEUPMZNZOZKLFUAMZVQV
+      JVKFUCMZMZFUPMZNZOZEUEMZFUEMZAVPKLVIVIWAOZWBAKLVIVIVOWAAVJVIPZVKVIPZUFZVO
+      VJVMVTNZWAWHAVJDPVMDPVOWIQAWFWGUDWHVJVIDAWFWGUGAWFDVIQWGGRZSWHVMVIDWHEUHP
+      ZWGVMVIPAWFWKWGIRAWFWGUIVIEVLVKVITZVLTZUJUKWJSABCDDVNVTVJVMJULUMAWFWIWAQW
+      GAVMVSVJVTAVKVLVRABCDEFUHUNGHIAEUQMZDFHAWNVIDAWKWNVIPIVIEWNWLWNTUOURGSUSZ
+      JUTVAVBRVCVDAVIVQQZWPWEWBQADVIVQGHVFZWQKLVIVIVQVQWAVEUKVCAWKWCVPQIKLVIVNE
+      VLWCUHWLVNTWMWCTVGURAFUNPWDWBQWOKLVQVTFVRWDUNVQTVTTVRTWDTVGURVH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
