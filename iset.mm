@@ -44566,6 +44566,20 @@ $)
     ( cid cdm wss cres wceq cvv ssv dmi sseqtrri ssdmres mpbi ) ABCZDBAECAFAGMA
     HIJABKL $.
 
+  ${
+    $d A x y $.
+    $( Restriction of the identity to a singleton.  (Contributed by FL,
+       2-Aug-2009.)  (Proof shortened by JJ, 25-Aug-2021.)  (Proof shortened by
+       Peter Mazsa, 6-Oct-2022.) $)
+    restidsing $p |- ( _I |` { A } ) = ( { A } X. { A } ) $=
+      ( vx vy cid csn cres cxp relres relxp cv wcel cop wa wceq wbr anbi12i vex
+      velsn ideq eqeq1 eqcom bitrdi pm5.32i bitri df-br anbi2i 3bitr2ri opelres
+      biancomi opelxp 3bitr4i eqrelriiv ) BCDAEZFZUMUMGZDUMHUMUMIBJZUMKZUPCJZLZ
+      DKZMZUQURUMKZMZUSUNKZUSUOKVCUPANZURANZMZUQUPURDOZMZVAUQVEVBVFBARZCARPVIVE
+      UPURNZMVGUQVEVHVKVJUPURCQZSPVEVKVFVEVKAURNVFUPAURTAURUAUBUCUDVHUTUQUPURDU
+      EUFUGVDUQUTUPURDUMVLUHUIUPURUMUMUJUKUL $.
+  $}
+
   $( TODO : replace uses of ~ resid with set.mm/dfrel3 and delete ~ resid $)
   $( Any relation restricted to the universe is itself.  (Contributed by NM,
      16-Mar-2004.) $)
