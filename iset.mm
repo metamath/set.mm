@@ -146191,6 +146191,30 @@ $)
       wfn funfni sylancr eqeltrid mptexd fvmptd3 ) AFJZCAGFCKZGKZBLZMGFAULBLZMF
       DNHUKAOGFUMUNUKAULBPQUJRUJGFUNNUJFESTZNIUJSNUDENJUONJZUAAFEIUBUPNESESUCUE
       UFUGUHUI $.
+
+    grplact.3 $e |- .+ = ( +g ` G ) $.
+    ${
+      grplactcnv.4 $e |- I = ( invg ` G ) $.
+      $( The left group action of element ` A ` of group ` G ` maps the
+         underlying set ` X ` of ` G ` one-to-one onto itself.  (Contributed by
+         Paul Chapman, 18-Mar-2008.)  (Proof shortened by Mario Carneiro,
+         14-Aug-2015.) $)
+      grplactcnv $p |- ( ( G e. Grp /\ A e. X ) ->
+       ( ( F ` A ) : X -1-1-onto-> X /\ `' ( F ` A ) = ( F ` ( I ` A ) ) ) ) $=
+        ( vb wcel wa cfv wf1o wceq co cmpt cgrp cv grpcl 3expa grpinvcl syldanl
+        ccnv eqid eqcom c0g grplinv adantr oveq1d simpll simplr simprl syl13anc
+        grpass grplid ad2ant2r 3eqtr3rd eqeq2d bitrid wb simprr adantrr grplcan
+        bitrd f1ocnv2d grplactfval adantl f1oeq1d cnveqd cbvmptv eqtrdi eqeq12d
+        oveq2 syl anbi12d mpbird ) EUANZAGNZOZGGADPZQZWDUGZAFPZDPZRZOGGHGAHUBZB
+        SZTZQZWLUGZMGWGMUBZBSZTZRZOWCHMGGWKWPWLWLUHWAWBWJGNZWKGNZGBEAWJJKUCUDZW
+        AWBWGGNZWOGNZWPGNZGEFAJLUEZWAXBXCXDGBEWGWOJKUCUDUFWCWSXCOZOZWJWPRZWPWGW
+        KBSZRZWOWKRZXHWPWJRXGXJWJWPUIXGWJXIWPXGWGABSZWJBSZEUJPZWJBSZXIWJXGXLXNW
+        JBWCXLXNRXFGBEFAXNJKXNUHZLUKULUMXGWAXBWBWSXMXIRWAWBXFUNZWCXBXFXEULZWAWB
+        XFUOWCWSXCUPGBEWGAWJJKURUQWAWSXOWJRWBXCGBEWJXNJKXPUSUTVAVBVCXGWAXCWTXBX
+        JXKVDXQWCWSXCVEWCWSWTXCXAVFXRGBEWOWKWGJKVGUQVHVIWCWEWMWIWRWCGGWDWLWBWDW
+        LRWAABCDEGHIJVJVKZVLWCWFWNWHWQWCWDWLXSVMWCXBWHWQRXEXBWHHGWGWJBSZTWQWGBC
+        DEGHIJVJHMGXTWPWJWOWGBVQVNVOVRVPVSVT $.
+    $}
   $}
 
 
