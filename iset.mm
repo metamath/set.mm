@@ -146215,6 +146215,15 @@ $)
         LRWAABCDEGHIJVJVKZVLWCWFWNWHWQWCWDWLXSVMWCXBWHWQRXEXBWHHGWGWJBSZTWQWGBC
         DEGHIJVJHMGXTWPWJWOWGBVQVNVOVRVPVSVT $.
     $}
+
+    $( The left group action of element ` A ` of group ` G ` maps the
+       underlying set ` X ` of ` G ` one-to-one onto itself.  (Contributed by
+       Paul Chapman, 18-Mar-2008.)  (Proof shortened by Mario Carneiro,
+       14-Aug-2015.) $)
+    grplactf1o $p |- ( ( G e. Grp /\ A e. X ) ->
+                       ( F ` A ) : X -1-1-onto-> X ) $=
+      ( cgrp wcel wa cfv wf1o ccnv cminusg wceq eqid grplactcnv simpld ) EKLAFL
+      MFFADNZOUBPAEQNZNDNRABCDEUCFGHIJUCSTUA $.
   $}
 
 
