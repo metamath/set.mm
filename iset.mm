@@ -146226,6 +146226,24 @@ $)
       MFFADNZOUBPAEQNZNDNRABCDEUCFGHIJUCSTUA $.
   $}
 
+  ${
+    $d ph a b $.  $d ph x y $.  $d G a b $.  $d G x y $.  $d H a b $.
+    $d H x y $.
+    grpsubpropd.b $e |- ( ph -> ( Base ` G ) = ( Base ` H ) ) $.
+    grpsubpropd.p $e |- ( ph -> ( +g ` G ) = ( +g ` H ) ) $.
+    grpsubpropdg.g $e |- ( ph -> G e. V ) $.
+    grpsubpropdg.h $e |- ( ph -> H e. W ) $.
+    $( Weak property deduction for the group subtraction operation.
+       (Contributed by Mario Carneiro, 27-Mar-2015.) $)
+    grpsubpropdg $p |- ( ph -> ( -g ` G ) = ( -g ` H ) ) $=
+      ( va vb vx vy cbs cfv cv cminusg cplusg wcel eqid co cmpo eqidd wa oveqdr
+      csg grpinvpropdg fveq1d oveq123d mpoeq123dv wceq grpsubfvalg syl 3eqtr4d
+      ) AJKBNOZUOJPZKPZBQOZOZBROZUAZUBZJKCNOZVCUPUQCQOZOZCROZUAZUBZBUFOZCUFOZAJ
+      KUOUOVAVCVCVGFFAUPUPUSVEUTVFGAUPUCAUQURVDALMUOBCDEAUOUCFHIALPUOSMPUOSUDLM
+      UTVFGUEUGUHUIUJABDSVIVBUKHJKUOUTBURVIDUOTUTTURTVITULUMACESVJVHUKIJKVCVFCV
+      DVJEVCTVFTVDTVJTULUMUN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
