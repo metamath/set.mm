@@ -146266,6 +146266,31 @@ $)
       VLWCUHWLVNTWMWCTVGURAFUNPWDWBQWOKLVQVTFVRWDUNVQTVTTVRTWDTVGURVH $.
   $}
 
+  ${
+    $d I e i $.  $d M e i $.  $d V e i $.
+    grp1.m $e |- M = { <. ( Base ` ndx ) , { I } >. ,
+                       <. ( +g ` ndx ) , { <. <. I , I >. , I >. } >. } $.
+    $( The (smallest) structure representing a _trivial group_.  According to
+       Wikipedia ("Trivial group", 28-Apr-2019,
+       ~ https://en.wikipedia.org/wiki/Trivial_group ) "In mathematics, a
+       _trivial group_ is a group consisting of a single element.  All such
+       groups are isomorphic, so one often speaks of _the_ trivial group.  The
+       single element of the trivial group is the identity element".
+       (Contributed by AV, 28-Apr-2019.) $)
+    grp1 $p |- ( I e. V -> M e. Grp ) $=
+      ( ve vi wcel cv cop csn cfv wceq wrex wral cvv opexg mpancom eqeq1d eqid
+      co cgrp cmnd df-ov anidms fvsng eqtrid mnd1id eqtr4d oveq2 rexbidv ralsng
+      c0g mnd1 oveq1 rexsng bitrd mpbird cplusg cbs wa isgrp snexg syl grpbaseg
+      syl2anc grpplusgg oveqd rexeqbidv raleqbidv anbi2d bitr4id mpbir2and ) AC
+      GZBUAGZBUBGZEHZFHZAAIZAIZJZTZBULKZLZEAJZMZFWDNZABCDUMVMWFAAVTTZWBLZVMWGAW
+      BVMWGVRVTKZAAAVTUCVROGZVMWIALVMWJAACCPUDZVRAOCUEQUFABCDUGUHVMWFVPAVTTZWBL
+      ZEWDMZWHWEWNFACVQALZWCWMEWDWOWAWLWBVQAVPVTUIRUJUKWMWHEACVPALWLWGWBVPAAVTU
+      NRUOUPUQVMVNVOVPVQBURKZTZWBLZEBUSKZMZFWSNZUTVOWFUTWSWPEBWBFWSSWPSWBSVAVMW
+      FXAVOVMWEWTFWDWSVMWDOGZVTOGZWDWSLACVBZVMVSOGZXCWJVMXEWKVRAOCPQVSOVBVCZWDV
+      TBOODVDVEZVMWCWREWDWSXGVMWAWQWBVMVTWPVPVQVMXBXCVTWPLXDXFWDVTBOODVFVEVGRVH
+      VIVJVKVL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
