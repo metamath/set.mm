@@ -93,6 +93,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+19-Dec-24 3albii    [same]      moved from PM's mathbox to main set.mm
+19-Dec-24 ssrel3    [same]      moved from PM's mathbox to main set.mm
 13-Dec-24 fvmptopab [same]      revised - eliminated hypothesis
                                 and deduction form antecedent
 13-Dec-24 wksonproplem [same]   revised - eliminated hypothesis
