@@ -146350,6 +146350,33 @@ $)
         HVEDITUAVTVJVQVMVRVEDVGHFUBVTVKUSVLGVEDHUCUDUEUGVGEPZVOVCVSVBWAVHUPAUOV
         GEITUHWAVQURVRVAWAVPUQHVGEDFUIUJWAVLUTUSGVGEHUCUKUEUGJULUMUN $.
     $}
+
+    ghmgrp.x $e |- X = ( Base ` G ) $.
+    ghmgrp.y $e |- Y = ( Base ` H ) $.
+    ghmgrp.p $e |- .+ = ( +g ` G ) $.
+    ghmgrp.q $e |- .+^ = ( +g ` H ) $.
+    ghmgrp.1 $e |- ( ph -> F : X -onto-> Y ) $.
+    ${
+      mhmmnd.3 $e |- ( ph -> G e. Mnd ) $.
+      ${
+        $d .0. a i x y $.
+        mhmid.0 $e |- .0. = ( 0g ` G ) $.
+        $( A surjective monoid morphism preserves identity element.
+           (Contributed by Thierry Arnoux, 25-Jan-2020.) $)
+        mhmid $p |- ( ph -> ( F ` .0. ) = ( 0g ` H ) ) $=
+          ( cfv va vi c0g eqid wfo wf fof cmnd wcel mndidcl ffvelrnd cv wa wceq
+          co simplll syl3an1 ad3antrrr simplr mhmlem mndlid fveq2d eqtr3d simpr
+          syl syl2anc oveq2d 3eqtr3d wrex foelrni sylan r19.29a mndrid ismgmid2
+          oveq1d ) AUAJEKFTZHHUCTZNVQUDPAIJKFAIJFUEZIJFUFQIJFUGVEAGUHUIZKIUIZRI
+          GKMSUJZVEUKAUAULZJUIZUMZUBULZFTZWBUNZVPWBEUOZWBUNUBIWDWEIUIZUMZWGUMZV
+          PWFEUOZWFWHWBWKKWEDUOZFTWLWFWKBCKWEDEFIWKABULZIUICULZIUIWNWODUOFTWNFT
+          WOFTEUOUNAWCWIWGUPLUQZWKVSVTAVSWCWIWGRURZWAVEZWDWIWGUSZUTWKWMWEFWKVSW
+          IWMWEUNWQWSIDGWEKMOSVAVFVBVCWKWFWBVPEWJWGVDZVGWTVHAVRWCWGUBIVIQUBIJFW
+          BVJVKZVLWDWGWBVPEUOZWBUNUBIWKWFVPEUOZWFXBWBWKWEKDUOZFTXCWFWKBCWEKDEFI
+          WPWSWRUTWKXDWEFWKVSWIXDWEUNWQWSIDGWEKMOSVMVFVBVCWKWFWBVPEWTVOWTVHXAVL
+          VN $.
+      $}
+    $}
   $}
 
 
