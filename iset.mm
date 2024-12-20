@@ -146445,6 +146445,39 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Group multiple operation
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  The "group multiple" operation (if the group is multiplicative, also called
+  "group power" or "group exponentiation" operation), can be defined for
+  arbitrary magmas, if the multiplier/exponent is a nonnegative integer.  See
+  also the definition in [Lang] p. 6, where an element ` x `(of a monoid) to
+  the power of a nonnegative integer ` n ` is defined and denoted by ` x ^ n `.
+  Definition ~ df-mulg , however, defines the group multiple for arbitrary
+  (i.e. also negative) integers.  This is meaningful for groups only, and
+  requires Definition ~ df-minusg of the inverse operation ` invg ` .
+
+$)
+
+  $c .g $.
+
+  $( Extend class notation with a function mapping a group operation to the
+     multiple/power operation for the magma/group. $)
+  cmg $a class .g $.
+
+  ${
+    $d g n s x $.
+    $( Define the group multiple function, also known as group exponentiation
+       when viewed multiplicatively.  (Contributed by Mario Carneiro,
+       11-Dec-2014.) $)
+    df-mulg $a |- .g = ( g e. _V |-> ( n e. ZZ , x e. ( Base ` g ) |->
+    if ( n = 0 , ( 0g ` g ) , [_ seq 1 ( ( +g ` g ) , ( NN X. { x } ) ) / s ]_
+      if ( 0 < n , ( s ` n ) , ( ( invg ` g ) ` ( s ` -u n ) ) ) ) ) ) $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -163657,6 +163690,9 @@ htmldef "-g" as
     "<IMG SRC='_minusg.gif' WIDTH=17 HEIGHT=19 ALT=' -g' TITLE='-g'>";
   althtmldef "-g" as "-<SUB>g</SUB>";
   latexdef "-g" as "-_\mathrm{g}";
+htmldef ".g" as ".<SUB>g</SUB>";
+  althtmldef ".g" as ".<SUB>g</SUB>";
+  latexdef ".g" as "\cdot_\mathrm{g}";
 htmldef "MndHom" as " MndHom ";
   althtmldef "MndHom" as " MndHom ";
   latexdef "MndHom" as " \mathrm{MndHom} ";
