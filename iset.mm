@@ -146416,6 +146416,15 @@ $)
         XSUXRVAUXMUYBYNFUXMUUSYQUYBYNUHUXQUXSIDGYNUWTLNUXIXGXDWCXFUXMYOXNUXAEUX
         TWIUXTWEWOAUUQYJUVDPUVEWPVNWNYHUXGUDUXAJYGUXCUAXNYEXNEJUXAYEUXAUHYFUXBX
         NYEUXAXNEXHXIXJXKXDJEUDHUAUBUCMOXLXM $.
+
+      $( The function fulfilling the conditions of ~ mhmmnd is a monoid
+         homomorphism.  (Contributed by Thierry Arnoux, 26-Jan-2020.) $)
+      mhmfmhm $p |- ( ph -> F e. ( G MndHom H ) ) $=
+        ( wcel co cfv cmnd wceq wral c0g w3a cmhm mhmmnd wfo fof syl ralrimivva
+        wf cv 3expb eqid mhmid 3jca ismhm syl21anbrc ) AGUARHUARIJFULZBUMZCUMZD
+        SFTVAFTVBFTESUBZCIUCBIUCZGUDTZFTHUDTZUBZUEFGHUFSRQABCDEFGHIJKLMNOPQUGAU
+        TVDVGAIJFUHUTPIJFUIUJAVCBCIIAVAIRVBIRVCKUNUKABCDEFGHIJVEKLMNOPQVEUOZUPU
+        QBCIJDEGHFVFVELMNOVHVFUOURUS $.
     $}
   $}
 
