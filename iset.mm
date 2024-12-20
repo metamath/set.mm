@@ -146476,6 +146476,33 @@ $)
       if ( 0 < n , ( s ` n ) , ( ( invg ` g ) ` ( s ` -u n ) ) ) ) ) ) $.
   $}
 
+  ${
+    $d x w .0. n $.  $d x w B n $.  $d x w .+ n s $.  $d x w n G s $.
+    $d x w n I s $.  $d n x N $.  $d n x S $.  $d n x X $.
+    mulgval.b $e |- B = ( Base ` G ) $.
+    mulgval.p $e |- .+ = ( +g ` G ) $.
+    mulgval.o $e |- .0. = ( 0g ` G ) $.
+    mulgval.i $e |- I = ( invg ` G ) $.
+    mulgval.t $e |- .x. = ( .g ` G ) $.
+    $( Group multiple (exponentiation) operation.  (Contributed by Mario
+       Carneiro, 11-Dec-2014.) $)
+    mulgfvalg $p |- ( G e. V -> .x. = ( n e. ZZ , x e. B |->
+      if ( n = 0 , .0. , if ( 0 < n ,
+        ( seq 1 ( .+ , ( NN X. { x } ) ) ` n ) ,
+        ( I ` ( seq 1 ( .+ , ( NN X. { x } ) ) ` -u n ) ) ) ) ) ) $=
+      ( vs wcel cfv cz cbs cvv vw cmg cv cc0 wceq clt wbr csn cxp cseq cneg cif
+      cn c1 cmpo c0g cplusg cminusg csb df-mulg eqidd fveq2 eqtr4di seqex wa id
+      a1i seqeq2d sylan9eqr fveq1d simpl fveq2d fveq12d ifeq12d mpoeq123dv elex
+      csbied zex basfn funfvex funfni sylancr eqeltrid mpoexga fvmptd3 eqtrid
+      wfn ) FHPZDFUBQEARBEUCZUDUEZIUDWIUFUGZWICUMAUCUHUIZUNUJZQZWIUKZWMQZGQZULZ
+      ULZUOZNWHUAFEARUAUCZSQZWJXAUPQZOXAUQQZWLUNUJZWKWIOUCZQZWOXFQZXAURQZQZULZU
+      SZULZUOWTTUBTAUAEOUTXAFUEZEARXBXMRBWSXNRVAXNXBFSQZBXAFSVBJVCXNWJXCIXLWRXN
+      XCFUPQIXAFUPVBLVCXNOXEXKWRTXETPXNXDWLUNVDVGXNXFXEUEZVEZWKXGWNXJWQXQWIXFWM
+      XPXNXFXEWMXPVFXNXDCWLUNXNXDFUQQCXAFUQVBKVCVHVIZVJXQXHWPXIGXQXIFURQGXQXAFU
+      RXNXPVKVLMVCXQWOXFWMXRVJVMVNVQVNVOFHVPZWHRTPBTPWTTPVRWHBXOTJWHSTWGFTPXOTP
+      ZVSXSXTTFSFSVTWAWBWCEARBWSTTWDWBWEWF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
