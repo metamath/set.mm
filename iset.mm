@@ -146316,6 +146316,30 @@ $)
       VBVFVCVCUMZVQAUNVBVSVQLAACCUOSUPUQURUSUTVA $.
   $}
 
+  ${
+    $d F a d f i j k x y $.  $d G a d f i j k x y $.  $d .+ i j k x y $.
+    $d H a b c d f i x y $.  $d X i j k x y $.  $d Y a b c d f i j k x y $.
+    $d .+^ a b c d f i j k x y $.  $d a b c i j k x y ph $.
+    ghmgrp.f $e |- ( ( ph /\ x e. X /\ y e. X )
+      -> ( F ` ( x .+ y ) ) = ( ( F ` x ) .+^ ( F ` y ) ) ) $.
+    ${
+      $d A x y $.  $d B y $.
+      mhmlem.a $e |- ( ph -> A e. X ) $.
+      mhmlem.b $e |- ( ph -> B e. X ) $.
+      $( Lemma for ~ mhmmnd and ~ ghmgrp .  (Contributed by Paul Chapman,
+         25-Apr-2008.)  (Revised by Mario Carneiro, 12-May-2014.)  (Revised by
+         Thierry Arnoux, 25-Jan-2020.) $)
+      mhmlem $p |- ( ph -> ( F ` ( A .+ B ) ) = ( ( F ` A ) .+^ ( F ` B ) ) )
+        $=
+        ( wcel co cfv wceq w3a wi cv eleq1 3anbi2d fvoveq1 fveq2 oveq1d eqeq12d
+        id imbi12d 3anbi3d oveq2 fveq2d oveq2d vtocl2g syl2anc mp3and ) AADIMZE
+        IMZDEFNZHOZDHOZEHOZGNZPZAUFKLAUOUPAUOUPQZVBRZKLABSZIMZCSZIMZQZVEVGFNHOZ
+        VEHOZVGHOZGNZPZRAUOVHQZDVGFNZHOZUSVLGNZPZRVDBCDEIIVEDPZVIVOVNVSVTVFUOAV
+        HVEDITUAVTVJVQVMVRVEDVGHFUBVTVKUSVLGVEDHUCUDUEUGVGEPZVOVCVSVBWAVHUPAUOV
+        GEITUHWAVQURVRVAWAVPUQHVGEDFUIUJWAVLUTUSGVGEHUCUKUEUGJULUMUN $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
