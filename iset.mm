@@ -146426,6 +146426,27 @@ $)
         TVDVGAIJFUHUTPIJFUIUJAVCBCIIAVAIRVBIRVCKUNUKABCDEFGHIJVEKLMNOPQVEUOZUPU
         QBCIJDEGHFVFVELMNOVHVFUOURUS $.
     $}
+
+    ghmgrp.3 $e |- ( ph -> G e. Grp ) $.
+    $( The image of a group ` G ` under a group homomorphism ` F ` is a group.
+       This is a stronger result than that usually found in the literature,
+       since the target of the homomorphism (operator ` O ` in our model) need
+       not have any of the properties of a group as a prerequisite.
+       (Contributed by Paul Chapman, 25-Apr-2008.)  (Revised by Mario Carneiro,
+       12-May-2014.)  (Revised by Thierry Arnoux, 25-Jan-2020.) $)
+    ghmgrp $p |- ( ph -> H e. Grp ) $=
+      ( wcel cfv wceq vf va vi cmnd cv co wrex wral cgrp grpmndd mhmmnd cminusg
+      c0g wa wf wfo fof syl ad3antrrr simplr grpinvcl syl2anc ffvelrnd 3adant1r
+      eqid sylan simpr mhmlem ad4ant13 fveq2d mhmid eqtrd oveq2d 3eqtr3rd oveq1
+      grplinv eqeq1d rspcev foelrni r19.29a ralrimiva isgrp sylanbrc ) AHUDRUAU
+      EZUBUEZEUFZHUMSZTZUAJUGZUBJUHHUIRABCDEFGHIJKLMNOPAGQUJZUKAWIUBJAWEJRZUNZU
+      CUEZFSZWETZWIUCIWLWMIRZUNZWOUNZWMGULSZSZFSZJRXAWEEUFZWGTZWIWRIJWTFAIJFUOZ
+      WKWPWOAIJFUPZXDPIJFUQURUSWRGUIRZWPWTIRZAXFWKWPWOQUSZWLWPWOUTZIGWSWMLWSVEZ
+      VAZVBVCWRWTWMDUFZFSZXAWNEUFZWGXBAWPXMXNTWKWOAWPUNBCWTWMDEFIABUEZIRCUEZIRX
+      OXPDUFFSXOFSXPFSEUFTWPKVDAXFWPXGQXKVFAWPVGVHVIWRXMGUMSZFSZWGWRXFWPXMXRTXH
+      XIXFWPUNXLXQFIDGWSWMXQLNXQVEZXJVPVJVBAXRWGTWKWPWOABCDEFGHIJXQKLMNOPWJXSVK
+      USVLWRWNWEXAEWQWOVGVMVNWHXCUAXAJWDXATWFXBWGWDXAWEEVOVQVRVBAXEWKWOUCIUGPUC
+      IJFWEVSVFVTWAJEUAHWGUBMOWGVEWBWC $.
   $}
 
 
