@@ -49929,6 +49929,18 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d F x $.  $d Y x $.
+
+    $( A member of a surjective function's codomain is a value of the function.
+       (Contributed by Thierry Arnoux, 23-Jan-2020.) $)
+    foelrni $p |- ( ( F : A -onto-> B /\ Y e. B ) -> E. x e. A ( F ` x ) = Y )
+      $=
+      ( wfo wcel cv cfv wceq wrex crn forn eleq2d wfn fofn fvelrnb syl bitr3d
+      wb biimpa ) BCDFZECGZAHDIEJABKZUBEDLZGZUCUDUBUECEBCDMNUBDBOUFUDTBCDPABEDQ
+      RSUA $.
+  $}
+
+  ${
     $d x A $.  $d x C $.  $d x F $.
     feqmptd.1 $e |- ( ph -> F : A --> B ) $.
     $( Deduction form of ~ dffn5im .  (Contributed by Mario Carneiro,
