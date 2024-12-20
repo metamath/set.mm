@@ -30165,6 +30165,11 @@ $)
     ( c0 wcel cvv cdif eldifi eldifn pm2.65i df-nul eleq2i mtbir ) ABCADDEZCZMA
     DCADDFADDGHBLAIJK $.
 
+  $( The empty set has no elements.  (Contributed by Peter Mazsa,
+     4-Jan-2018.) $)
+  nel02 $p |- ( A = (/) -> -. B e. A ) $=
+    ( c0 wceq wcel noel eleq2 mtbiri ) ACDBAEBCEBFACBGH $.
+
   $( If a set has elements, it is not empty.  A set with elements is also
      inhabited, see ~ elex2 .  (Contributed by NM, 31-Dec-1993.) $)
   n0i $p |- ( B e. A -> -. A = (/) ) $=
@@ -145390,6 +145395,373 @@ $)
       ralrimiva eqtr3d cbs wb eleqtrd grpid syl2anc mpbid eqcomd ) AELMZFAFFENM
       ZOZFPZUOFPZAFFDOZUQFADUPFFHQAFBRZDOZVAPZUTFPBCFVAFPZVBUTVAFVAFFDUAVDUBUCA
       VCBCJUFIUDUGAEUESFEUHMZSURUSUIKAFCVEIGUJVEUPEFUOVETUPTUOTUKULUMUN $.
+  $}
+
+  ${
+    $d g x y B $.  $d g x y G $.  $d g x .0. $.  $d g x .+ $.  $d x y X $.
+    grpinvval.b $e |- B = ( Base ` G ) $.
+    grpinvval.p $e |- .+ = ( +g ` G ) $.
+    grpinvval.o $e |- .0. = ( 0g ` G ) $.
+    grpinvval.n $e |- N = ( invg ` G ) $.
+    $( The inverse function of a group.  (Contributed by NM, 24-Aug-2011.)
+       (Revised by Mario Carneiro, 7-Aug-2013.)  (Revised by Rohan Ridenour,
+       13-Aug-2023.) $)
+    grpinvfvalg $p |- ( G e. V
+        -> N = ( x e. B |-> ( iota_ y e. B ( y .+ x ) = .0. ) ) ) $=
+      ( vg wcel cfv cv wceq cbs cplusg cvv cminusg co crio cmpt df-minusg fveq2
+      c0g eqtr4di oveqd eqeq12d riotaeqbidv mpteq12dv elex basfn funfvex funfni
+      wfn sylancr eqeltrid mptexd fvmptd3 eqtrid ) EGNZFEUAOACBPZAPZDUBZHQZBCUC
+      ZUDZLVCMEAMPZROZVDVEVJSOZUBZVJUGOZQZBVKUCZUDVITUATABMUEVJEQZAVKVPCVHVQVKE
+      ROZCVJERUFIUHZVQVOVGBVKCVSVQVMVFVNHVQVLDVDVEVQVLESODVJESUFJUHUIVQVNEUGOHV
+      JEUGUFKUHUJUKULEGUMZVCACVHTVCCVRTIVCRTUQETNVRTNZUNVTWATERERUOUPURUSUTVAVB
+      $.
+
+    $( The inverse of a group element.  (Contributed by NM, 24-Aug-2011.)
+       (Revised by Mario Carneiro, 7-Aug-2013.) $)
+    grpinvval $p |- ( X e. B ->
+                    ( N ` X ) = ( iota_ y e. B ( y .+ X ) = .0. ) ) $=
+      ( vx wcel cfv cv co wceq crio cvv cbs cmpt basmex grpinvfvalg fveq1d eqid
+      syl oveq2 eqeq1d riotabidv id wfn basfn funfvex sylancr eqeltrid riotaexg
+      funfni fvmptd3 eqtrd ) FBMZFENFLBAOZLOZCPZGQZABRZUAZNVAFCPZGQZABRZUTFEVFU
+      TDSMZEVFQFBDHUBZLABCDESGHIJKUCUFUDUTLFVEVIBVFSVFUEVBFQZVDVHABVLVCVGGVBFVA
+      CUGUHUIUTUJUTBSMVISMUTBDTNZSHUTTSUKVJVMSMZULVKVNSDTDTUMUQUNUOVHABSUPUFURU
+      S $.
+  $}
+
+  ${
+    $d B x y $.  $d G x y $.  $d V x $.
+    grpinvfn.b $e |- B = ( Base ` G ) $.
+    grpinvfn.n $e |- N = ( invg ` G ) $.
+    $( Functionality of the group inverse function.  (Contributed by Stefan
+       O'Rear, 21-Mar-2015.) $)
+    grpinvfng $p |- ( G e. V -> N Fn B ) $=
+      ( vx vy wcel wfn cv cplusg cfv co c0g wceq cvv cbs syl eqid basfn funfvex
+      crio cmpt wral elex sylancr eqeltrid riotaexg ralrimivw fnmpt grpinvfvalg
+      funfni fneq1d mpbird ) BDIZCAJGAHKGKBLMZNBOMZPZHAUCZUDZAJZUPUTQIZGAUEVBUP
+      VCGAUPAQIVCUPABRMZQEUPRQJBQIVDQIZUABDUFVEQBRBRUBUMUGUHUSHAQUISUJGAUTVAQVA
+      TUKSUPACVAGHAUQBCDUREUQTURTFULUNUO $.
+  $}
+
+  ${
+    $d g x y B $.  $d g x y G $.  $d g x y I $.  $d g x y .+ $.  $d x y X $.
+    $d x y Y $.
+    grpsubval.b $e |- B = ( Base ` G ) $.
+    grpsubval.p $e |- .+ = ( +g ` G ) $.
+    grpsubval.i $e |- I = ( invg ` G ) $.
+    grpsubval.m $e |- .- = ( -g ` G ) $.
+    $( Group subtraction (division) operation.  (Contributed by NM,
+       31-Mar-2014.)  (Revised by Stefan O'Rear, 27-Mar-2015.)  (Proof
+       shortened by AV, 19-Feb-2024.) $)
+    grpsubfvalg $p |- ( G e. V
+        -> .- = ( x e. B , y e. B |-> ( x .+ ( I ` y ) ) ) ) $=
+      ( vg wcel cfv cv cbs cminusg cplusg cvv co cmpo df-sbg wceq fveq2 eqtr4di
+      csg eqidd fveq1d oveq123d mpoeq123dv elex funfvex funfni sylancr eqeltrid
+      wfn basfn mpoexga syl2anc fvmptd3 eqtrid ) EHNZGEUGOABCCAPZBPZFOZDUAZUBZL
+      VCMEABMPZQOZVJVDVEVIROZOZVISOZUAZUBVHTUGTABMUCVIEUDZABVJVJVNCCVGVOVJEQOZC
+      VIEQUEIUFZVQVOVDVDVLVFVMDVOVMESODVIESUEJUFVOVDUHVOVEVKFVOVKEROFVIERUEKUFU
+      IUJUKEHULZVCCTNZVSVHTNVCCVPTIVCQTUQETNVPTNZURVRVTTEQEQUMUNUOUPZWAABCCVGTT
+      USUTVAVB $.
+
+    ${
+      $d .+ z $.  $d B w z $.  $d G w z $.  $d Y z $.
+
+      $( Group subtraction (division) operation.  (Contributed by NM,
+         31-Mar-2014.)  (Revised by Mario Carneiro, 13-Dec-2014.) $)
+      grpsubval $p |- ( ( X e. B /\ Y e. B ) ->
+                      ( X .- Y ) = ( X .+ ( I ` Y ) ) ) $=
+        ( vx vy vz wcel cv cfv co cvv wceq vw wa cmpo cbs a1i simpl grpsubfvalg
+        basmexd syl oveq1 fveq2 oveq2d sylan9eq adantl simpr plusgslid eqeltrid
+        cplusg slotex c0g crio cmpt eqid grpinvfvalg wfn funfvex funfni sylancr
+        basfn mptexd eqeltrd fvexg sylancom ovexg syl3anc ovmpod ) FAOZGAOZUBZL
+        MFGAALPZMPZDQZBRZFGDQZBRZESVSCSOZELMAAWCUCTVSFACACUDQZTVSHUEVQVRUFZUHZL
+        MABCDESHIJKUGUIVTFTZWAGTZUBWCWETVSWJWKWCFWBBRWEVTFWBBUJWKWBWDFBWAGDUKUL
+        UMUNWHVQVRUOVSVQBSOWDSOZWESOWHVSBCURQZSIVSWFWMSOWICURSUPUSUIUQVQVRDSOWL
+        VSDNAUAPNPBRCUTQZTUAAVAZVBZSVSWFDWPTWINUAABCDSWNHIWNVCJVDUIVSNAWOSVSAWG
+        SHVSUDSVEWFWGSOZVIWIWQSCUDCUDVFVGVHUQVJVKGDSAVLVMFWDBASSVNVOVP $.
+    $}
+  $}
+
+  ${
+    $d x y B $.  $d x y G $.
+    grpinvcl.b $e |- B = ( Base ` G ) $.
+    grpinvcl.n $e |- N = ( invg ` G ) $.
+    $( The group inversion operation is a function on the base set.
+       (Contributed by Mario Carneiro, 4-May-2015.) $)
+    grpinvf $p |- ( G e. Grp -> N : B --> B ) $=
+      ( vx vy cgrp wcel cv cplusg cfv co c0g wceq crio eqid grpinvfvalg wa wreu
+      grpinveu riotacl syl fmpt3d ) BHIZFAGJFJZBKLZMBNLZOZGAPZACFGAUGBCHUHDUGQZ
+      UHQZERUEUFAISUIGATUJAIGAUGBUFUHDUKULUAUIGAUBUCUD $.
+
+    $( A group element's inverse is a group element.  (Contributed by NM,
+       24-Aug-2011.)  (Revised by Mario Carneiro, 4-May-2015.) $)
+    grpinvcl $p |- ( ( G e. Grp /\ X e. B ) -> ( N ` X ) e. B ) $=
+      ( cgrp wcel grpinvf ffvelrnda ) BGHAADCABCEFIJ $.
+  $}
+
+  ${
+    $d e x y z B $.  $d e x y z G $.  $d e x y z .0. $.  $d e x y z .+ $.
+    $d e x M $.  $d x y z N $.  $d y z X $.
+    grpinv.b $e |- B = ( Base ` G ) $.
+    grpinv.p $e |- .+ = ( +g ` G ) $.
+    grpinv.u $e |- .0. = ( 0g ` G ) $.
+    grpinv.n $e |- N = ( invg ` G ) $.
+    $( The left inverse of a group element.  (Contributed by NM, 24-Aug-2011.)
+       (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    grplinv $p |- ( ( G e. Grp /\ X e. B ) -> ( ( N ` X ) .+ X ) = .0. ) $=
+      ( vy cgrp wcel wa cfv cv co wceq crab syl crio grpinvval grpinveu eqeltrd
+      adantl wreu riotacl2 oveq1 eqeq1d elrab simprbi ) CLMZEAMZNZEDOZKPZEBQZFR
+      ZKASZMZUOEBQZFRZUNUOURKAUAZUSUMUOVCRULKABCDEFGHIJUBUEUNURKAUFVCUSMKABCEFG
+      HIUCURKAUGTUDUTUOAMVBURVBKUOAUPUORUQVAFUPUOEBUHUIUJUKT $.
+
+    $( The right inverse of a group element.  (Contributed by NM, 24-Aug-2011.)
+       (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    grprinv $p |- ( ( G e. Grp /\ X e. B ) -> ( X .+ ( N ` X ) ) = .0. ) $=
+      ( vx vy vz cgrp wcel cfv cv grpcl grpidcl grplid grpass grpinvex grpinvcl
+      simpr grplinv grprinvd ) CNOZEAOZKLMABEDPFEABCKQZLQZGHRACFGISABCUIFGHITAB
+      CUIUJMQGHUALABCUIFGHIUBUGUHUDACDEGJUCABCDEFGHIJUEUF $.
+
+    $( The inverse of a group element expressed in terms of the identity
+       element.  (Contributed by NM, 24-Aug-2011.) $)
+    grpinvid1 $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) ->
+                    ( ( N ` X ) = Y <-> ( X .+ Y ) = .0. ) ) $=
+      ( wcel w3a wceq co wa oveq2 3adant3 adantr eqtr3d cgrp cfv adantl grprinv
+      grplinv oveq1d grpinvcl adantrr simprl simprr grpass syldan 3impb 3adant2
+      3jca grplid grprid 3eqtr3rd impbida ) CUALZEALZFALZMZEDUBZFNZEFBOZGNZVCVE
+      PEVDBOZVFGVEVHVFNVCVDFEBQUCVCVHGNZVEUTVAVIVBABCDEGHIJKUDRSTVCVGPVDVFBOZVD
+      GBOZFVDVGVJVKNVCVFGVDBQUCVCVJFNVGVCGFBOZVJFVCVDEBOZFBOZVLVJUTVAVNVLNVBUTV
+      APVMGFBABCDEGHIJKUEUFRUTVAVBVNVJNZUTVAVBPZVDALZVAVBMVOUTVPPVQVAVBUTVAVQVB
+      ACDEHKUGZUHUTVAVBUIUTVAVBUJUOABCVDEFHIUKULUMTUTVBVLFNVAABCFGHIJUPUNTSVCVK
+      VDNZVGUTVAVSVBUTVAVQVSVRABCVDGHIJUQULRSURUS $.
+
+    $( The inverse of a group element expressed in terms of the identity
+       element.  (Contributed by NM, 24-Aug-2011.) $)
+    grpinvid2 $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) ->
+                    ( ( N ` X ) = Y <-> ( Y .+ X ) = .0. ) ) $=
+      ( wcel w3a wceq co wa oveq1 adantl 3adant3 adantr cgrp cfv grplinv eqtr3d
+      grpinvcl grplid syldan eqcomd simprr simprl adantrr grpass grprinv oveq2d
+      3jca 3impb grprid 3adant2 3eqtrd 3eqtr2d impbida ) CUALZEALZFALZMZEDUBZFN
+      ZFEBOZGNZVEVGPVFEBOZVHGVGVJVHNVEVFFEBQRVEVJGNZVGVBVCVKVDABCDEGHIJKUCSTUDV
+      EVIPVFGVFBOZVHVFBOZFVEVFVLNVIVEVLVFVBVCVLVFNZVDVBVCVFALZVNACDEHKUEZABCVFG
+      HIJUFUGSUHTVIVMVLNVEVHGVFBQRVEVMFNVIVEVMFEVFBOZBOZFGBOZFVBVCVDVMVRNZVBVCV
+      DPZVDVCVOMVTVBWAPVDVCVOVBVCVDUIVBVCVDUJVBVCVOVDVPUKUOABCFEVFHIULUGUPVBVCV
+      RVSNVDVBVCPVQGFBABCDEGHIJKUMUNSVBVDVSFNVCABCFGHIJUQURUSTUTVA $.
+
+    $( Properties showing that a function ` M ` is the inverse function of a
+       group.  (Contributed by NM, 7-Aug-2013.)  (Revised by Mario Carneiro,
+       2-Oct-2015.) $)
+    isgrpinv $p |- ( G e. Grp
+  -> ( ( M : B --> B /\ A. x e. B ( ( M ` x ) .+ x ) = .0. ) <-> N = M ) ) $=
+      ( ve cgrp wcel wf cv co wceq wral wa cfv crio grpinvval ad2antlr simpr wb
+      wreu simpllr simplr ffvelrnd grpinveu ad4ant13 oveq1 eqeq1d syl2anc mpbid
+      riota2 ex ralimdva impr wfn grpinvfng ffn ad2antrl eqfnfv syl2an2r mpbird
+      eqtrd grpinvf grplinv ralrimiva jca feq1 oveq1d ralbidv anbi12d syl5ibcom
+      fveq1 impbid ) DMNZBBEOZAPZEUAZWBCQZGRZABSZTZFERZVTWGWHVTWGTWHWBFUAZWCRZA
+      BSZVTWAWFWKVTWATZWEWJABWLWBBNZTZWEWJWNWETZWILPZWBCQZGRZLBUBZWCWMWIWSRWLWE
+      LBCDFWBGHIJKUCUDWOWEWSWCRZWNWEUEWOWCBNWRLBUGZWEWTUFWOBBWBEVTWAWMWEUHWLWMW
+      EUIUJVTWMXAWAWELBCDWBGHIJUKULWRWELBWCWPWCRWQWDGWPWCWBCUMUNUQUOUPVHURUSUTV
+      TFBVAWGEBVAZWHWKUFBDFMHKVBWAXBVTWFBBEVCVDABFEVEVFVGURVTBBFOZWIWBCQZGRZABS
+      ZTWHWGVTXCXFBDFHKVIVTXEABBCDFWBGHIJKVJVKVLWHXCWAXFWFBBFEVMWHXEWEABWHXDWDG
+      WHWIWCWBCWBFEVRVNUNVOVPVQVS $.
+  $}
+
+  ${
+    $d B y $.  $d G x y $.  $d .+ y $.  $d .0. y $.
+    grplrinv.b $e |- B = ( Base ` G ) $.
+    grplrinv.p $e |- .+ = ( +g ` G ) $.
+    grplrinv.i $e |- .0. = ( 0g ` G ) $.
+    $( In a group, every member has a left and right inverse.  (Contributed by
+       AV, 1-Sep-2021.) $)
+    grplrinv $p |- ( G e. Grp
+           -> A. x e. B E. y e. B ( ( y .+ x ) = .0. /\ ( x .+ y ) = .0. ) ) $=
+      ( cgrp wcel cv co wceq wa wrex cminusg cfv eqid eqeq1d grpinvcl wb adantl
+      oveq1 oveq2 anbi12d grplinv grprinv jca rspcedvd ralrimiva ) EJKZBLZALZDM
+      ZFNZUNUMDMZFNZOZBCPACULUNCKOZUSUNEQRZRZUNDMZFNZUNVBDMZFNZOZBVBCCEVAUNGVAS
+      ZUAUMVBNZUSVGUBUTVIUPVDURVFVIUOVCFUMVBUNDUDTVIUQVEFUMVBUNDUETUFUCUTVDVFCD
+      EVAUNFGHIVHUGCDEVAUNFGHIVHUHUIUJUK $.
+
+    $d A y z $.  $d B z $.  $d G z $.  $d .+ z $.  $d .0. z $.
+    $( A group's properties using the explicit identity element.  (Contributed
+       by NM, 5-Feb-2010.)  (Revised by AV, 1-Sep-2021.) $)
+    grpidinv2 $p |- ( ( G e. Grp /\ A e. B )
+              -> ( ( ( .0. .+ A ) = A /\ ( A .+ .0. ) = A )
+                   /\ E. y e. B ( ( y .+ A ) = .0. /\ ( A .+ y ) = .0. ) ) ) $=
+      ( vz cgrp wcel wa co wceq cv wrex grplid grprid eqeq1d wral oveq2 anbi12d
+      grplrinv oveq1 rexbidv rspcv mpan9 jca31 ) EKLZBCLZMFBDNBOBFDNBOAPZBDNZFO
+      ZBULDNZFOZMZACQZCDEBFGHIRCDEBFGHISUJULJPZDNZFOZUSULDNZFOZMZACQZJCUAUKURJA
+      CDEFGHIUDVEURJBCUSBOZVDUQACVFVAUNVCUPVFUTUMFUSBULDUBTVFVBUOFUSBULDUETUCUF
+      UGUHUI $.
+  $}
+
+  ${
+    $d G u x y $.  $d B u y $.  $d .+ u y $.
+    grpidinv.b $e |- B = ( Base ` G ) $.
+    grpidinv.p $e |- .+ = ( +g ` G ) $.
+    $( A group has a left and right identity element, and every member has a
+       left and right inverse.  (Contributed by NM, 14-Oct-2006.)  (Revised by
+       AV, 1-Sep-2021.) $)
+    grpidinv $p |- ( G e. Grp -> E. u e. B A. x e. B
+                     ( ( ( u .+ x ) = x /\ ( x .+ u ) = x )
+                       /\ E. y e. B ( ( y .+ x ) = u /\ ( x .+ y ) = u ) ) ) $=
+      ( cgrp wcel cv co wceq wa wrex wral c0g eqeq1d anbi12d eqeq2 eqid grpidcl
+      cfv wb oveq1 oveq2 rexbidv ralbidv adantl grpidinv2 ralrimiva rspcedvd )
+      FIJZCKZAKZELZUOMZUOUNELZUOMZNZBKZUOELZUNMZUOVAELZUNMZNZBDOZNZADPZFQUCZUOE
+      LZUOMZUOVJELZUOMZNZVBVJMZVDVJMZNZBDOZNZADPZCVJDDFVJGVJUAZUBUNVJMZVIWAUDUM
+      WCVHVTADWCUTVOVGVSWCUQVLUSVNWCUPVKUOUNVJUOEUERWCURVMUOUNVJUOEUFRSWCVFVRBD
+      WCVCVPVEVQUNVJVBTUNVJVDTSUGSUHUIUMVTADBUODEFVJGHWBUJUKUL $.
+  $}
+
+  ${
+    grpinvid.u $e |- .0. = ( 0g ` G ) $.
+    grpinvid.n $e |- N = ( invg ` G ) $.
+    $( The inverse of the identity element of a group.  (Contributed by NM,
+       24-Aug-2011.) $)
+    grpinvid $p |- ( G e. Grp -> ( N ` .0. ) = .0. ) $=
+      ( cgrp wcel cfv wceq cplusg co cbs eqid grpidcl grplid mpdan wb grpinvid1
+      mpd3an23 mpbird ) AFGZCBHCIZCCAJHZKCIZUACALHZGZUDUEACUEMZDNZUEUCACCUGUCMZ
+      DOPUAUFUFUBUDQUHUHUEUCABCCCUGUIDERST $.
+  $}
+
+  ${
+    grplcan.b $e |- B = ( Base ` G ) $.
+    grplcan.p $e |- .+ = ( +g ` G ) $.
+    $( Left cancellation law for groups.  (Contributed by NM, 25-Aug-2011.) $)
+    grplcan $p |- ( ( G e. Grp /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                  ( ( Z .+ X ) = ( Z .+ Y ) <-> X = Y ) ) $=
+      ( wcel w3a wa co wceq cfv oveq2 eqid adantlr adantrl adantr 3eqtr3d exp53
+      cgrp cminusg adantl c0g grplinv oveq1d grpinvcl simprr simprl 3jca grpass
+      wi syldan anassrs grplid adantrr 3imp2 impbid1 ) CUBIZDAIZEAIZFAIZJKFDBLZ
+      FEBLZMZDEMZUTVAVBVCVFVGUMUTVAVBVCVFVGUTVAKZVBVCKZKZVFKFCUCNZNZVDBLZVLVEBL
+      ZDEVFVMVNMVJVDVEVLBOUDVJVMDMZVFVHVCVOVBVHVCKZVLFBLZDBLZCUENZDBLZVMDVPVQVS
+      DBUTVCVQVSMZVAABCVKFVSGHVSPZVKPZUFZQUGUTVAVCVRVMMZUTVAVCKZVLAIZVCVAJWEUTW
+      FKWGVCVAUTVCWGVAACVKFGWCUHZRUTVAVCUIUTVAVCUJUKABCVLFDGHULUNUOVHVTDMVCABCD
+      VSGHWBUPSTRSVJVNEMZVFUTVIWIVAUTVIKZVQEBLZVSEBLZVNEWJVQVSEBUTVCWAVBWDRUGUT
+      VIWGVCVBJWKVNMWJWGVCVBUTVCWGVBWHRUTVBVCUIUTVBVCUJUKABCVLFEGHULUNUTVBWLEMV
+      CABCEVSGHWBUPUQTQSTUAURDEFBOUS $.
+
+    grpasscan1.n $e |- N = ( invg ` G ) $.
+    $( An associative cancellation law for groups.  (Contributed by Paul
+       Chapman, 25-Feb-2008.)  (Revised by AV, 30-Aug-2021.) $)
+    grpasscan1 $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) ->
+                          ( X .+ ( ( N ` X ) .+ Y ) ) = Y ) $=
+      ( cgrp wcel w3a cfv co c0g wceq eqid grprinv 3adant3 wi wa grpinvcl 3exp2
+      oveq1d grpass imp mpd 3impia grplid 3adant2 3eqtr3d ) CJKZEAKZFAKZLZEEDMZ
+      BNZFBNZCOMZFBNZEUPFBNBNZFUOUQUSFBULUMUQUSPUNABCDEUSGHUSQZIRSUDULUMUNURVAP
+      ZULUMUAUPAKZUNVCTZACDEGIUBULUMVDVETULUMVDUNVCABCEUPFGHUEUCUFUGUHULUNUTFPU
+      MABCFUSGHVBUIUJUK $.
+
+    $( An associative cancellation law for groups.  (Contributed by Paul
+       Chapman, 17-Apr-2009.)  (Revised by AV, 30-Aug-2021.) $)
+    grpasscan2 $p |- ( ( G e. Grp /\ X e. B /\ Y e. B ) ->
+                       ( ( X .+ ( N ` Y ) ) .+ Y ) = X ) $=
+      ( cgrp wcel w3a cfv co c0g wceq simp1 simp2 grpinvcl 3adant2 simp3 grpass
+      syl13anc eqid grplinv oveq2d grprid 3adant3 3eqtrd ) CJKZEAKZFAKZLZEFDMZB
+      NFBNZEUNFBNZBNZECOMZBNZEUMUJUKUNAKZULUOUQPUJUKULQUJUKULRUJULUTUKACDFGISTU
+      JUKULUAABCEUNFGHUBUCUMUPUREBUJULUPURPUKABCDFURGHURUDZIUETUFUJUKUSEPULABCE
+      URGHVAUGUHUI $.
+  $}
+
+  ${
+    grpidrcan.b $e |- B = ( Base ` G ) $.
+    grpidrcan.p $e |- .+ = ( +g ` G ) $.
+    grpidrcan.o $e |- .0. = ( 0g ` G ) $.
+    $( If right adding an element of a group to an arbitrary element of the
+       group results in this element, the added element is the identity element
+       and vice versa.  (Contributed by AV, 15-Mar-2019.) $)
+    grpidrcan $p |- ( ( G e. Grp /\ X e. B /\ Z e. B ) ->
+                  ( ( X .+ Z ) = X <-> Z = .0. ) ) $=
+      ( cgrp wcel w3a co wceq grprid 3adant3 eqeq2d wb simp1 simp3 simp2 bitr3d
+      grpidcl 3ad2ant1 grplcan syl13anc ) CJKZDAKZFAKZLZDFBMZDEBMZNZUKDNFENZUJU
+      LDUKUGUHULDNUIABCDEGHIOPQUJUGUIEAKZUHUMUNRUGUHUISUGUHUITUGUHUOUIACEGIUCUD
+      UGUHUIUAABCFEDGHUEUFUB $.
+
+    $( If left adding an element of a group to an arbitrary element of the
+       group results in this element, the added element is the identity element
+       and vice versa.  (Contributed by AV, 15-Mar-2019.) $)
+    grpidlcan $p |- ( ( G e. Grp /\ X e. B /\ Z e. B ) ->
+                  ( ( Z .+ X ) = X <-> Z = .0. ) ) $=
+      ( cgrp wcel w3a co wceq grplid 3adant3 eqeq2d wb simp1 simp3 simp2 bitr3d
+      grpidcl 3ad2ant1 grprcan syl13anc ) CJKZDAKZFAKZLZFDBMZEDBMZNZUKDNFENZUJU
+      LDUKUGUHULDNUIABCDEGHIOPQUJUGUIEAKZUHUMUNRUGUHUISUGUHUITUGUHUOUIACEGIUCUD
+      UGUHUIUAABCFEDGHUEUFUB $.
+  $}
+
+  ${
+    $d x y B $.  $d x y G $.  $d x y N $.
+    grpinvinv.b $e |- B = ( Base ` G ) $.
+    grpinvinv.n $e |- N = ( invg ` G ) $.
+    $( Double inverse law for groups.  Lemma 2.2.1(c) of [Herstein] p. 55.
+       (Contributed by NM, 31-Mar-2014.) $)
+    grpinvinv $p |- ( ( G e. Grp /\ X e. B ) -> ( N ` ( N ` X ) ) = X ) $=
+      ( cgrp wcel wa cfv cplusg co wceq c0g grpinvcl eqid grprinv syldan eqtr4d
+      grplinv wb simpl simpr grplcan syl13anc mpbid ) BGHZDAHZIZDCJZUJCJZBKJZLZ
+      UJDULLZMZUKDMZUIUMBNJZUNUGUHUJAHZUMUQMABCDEFOZAULBCUJUQEULPZUQPZFQRAULBCD
+      UQEUTVAFTSUIUGUKAHZUHURUOUPUAUGUHUBUGUHURVBUSABCUJEFORUGUHUCUSAULBUKDUJEU
+      TUDUEUF $.
+
+    $( The group inverse is its own inverse function.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.) $)
+    grpinvcnv $p |- ( G e. Grp -> `' N = N ) $=
+      ( vx vy cgrp wcel cv cfv cmpt ccnv wceq eqid grpinvcl wa wb eqcom feqmptd
+      wf1o w3a cplusg co c0g grpinvid1 3com23 grpinvid2 bitr4d 3bitr4g f1ocnv2d
+      3expb simprd grpinvf cnveqd 3eqtr4d ) BHIZFAFJZCKZLZMZGAGJZCKZLZCMCUQAAUT
+      UAVAVDNUQFGAAUSVCUTUTOABCURDEPABCVBDEPUQURAIZVBAIZQQVCURNZUSVBNZURVCNVBUS
+      NUQVEVFVGVHRUQVEVFUBVGVBURBUCKZUDBUEKZNZVHUQVFVEVGVKRAVIBCVBURVJDVIOZVJOZ
+      EUFUGAVIBCURVBVJDVLVMEUHUIULURVCSVBUSSUJUKUMUQCUTUQFAACABCDEUNZTUOUQGAACV
+      NTUP $.
+
+    grpinv11.g $e |- ( ph -> G e. Grp ) $.
+    ${
+      grpinv11.x $e |- ( ph -> X e. B ) $.
+      grpinv11.y $e |- ( ph -> Y e. B ) $.
+      $( The group inverse is one-to-one.  (Contributed by NM, 22-Mar-2015.) $)
+      grpinv11 $p |- ( ph -> ( ( N ` X ) = ( N ` Y ) <-> X = Y ) ) $=
+        ( cfv wceq wa fveq2 adantl wcel grpinvinv syl2anc adantr cgrp 3eqtr3d
+        ex impbid1 ) AEDLZFDLZMZEFMZAUGUHAUGNUEDLZUFDLZEFUGUIUJMAUEUFDOPAUIEMZU
+        GACUAQZEBQUKIJBCDEGHRSTAUJFMZUGAULFBQUMIKBCDFGHRSTUBUCEFDOUD $.
+    $}
+
+    $( The group inverse is a one-to-one onto function.  (Contributed by NM,
+       22-Oct-2014.)  (Proof shortened by Mario Carneiro, 14-Aug-2015.) $)
+    grpinvf1o $p |- ( ph -> N : B -1-1-onto-> B ) $=
+      ( wfn ccnv wf1o cgrp wcel grpinvf syl ffnd wceq grpinvcnv fneq1d mpbird
+      wf dff1o4 sylanbrc ) ADBHZDIZBHZBBDJABBDACKLZBBDTGBCDEFMNOZAUEUCUGABUDDAU
+      FUDDPGBCDEFQNRSBBDUAUB $.
+  $}
+
+  ${
+    grpinvnzcl.b $e |- B = ( Base ` G ) $.
+    grpinvnzcl.z $e |- .0. = ( 0g ` G ) $.
+    grpinvnzcl.n $e |- N = ( invg ` G ) $.
+    $( The inverse of a nonzero group element is not zero.  (Contributed by
+       Stefan O'Rear, 27-Feb-2015.) $)
+    grpinvnz $p |- ( ( G e. Grp /\ X e. B /\ X =/= .0. ) ->
+        ( N ` X ) =/= .0. ) $=
+      ( cgrp wcel wne cfv wceq fveq2 adantl grpinvinv adantr grpinvid ad2antrr
+      wa 3eqtr3d ex necon3d 3impia ) BIJZDAJZDEKDCLZEKUEUFTZUGEDEUHUGEMZDEMUHUI
+      TUGCLZECLZDEUIUJUKMUHUGECNOUHUJDMUIABCDFHPQUEUKEMUFUIBCEGHRSUAUBUCUD $.
+
+    $( The inverse of a nonzero group element is a nonzero group element.
+       (Contributed by Stefan O'Rear, 27-Feb-2015.) $)
+    grpinvnzcl $p |- ( ( G e. Grp /\ X e. ( B \ { .0. } ) ) ->
+        ( N ` X ) e. ( B \ { .0. } ) ) $=
+      ( cgrp wcel csn cdif wa cfv wne eldifi grpinvcl sylan2 eldifsn grpinvnz
+      3expb sylan2b sylanbrc ) BIJZDAEKZLZJZMDCNZAJZUHEOZUHUFJUGUDDAJZUIDAUEPAB
+      CDFHQRUGUDUKDEOZMUJDAESUDUKULUJABCDEFGHTUAUBUHAESUC $.
+  $}
+
+  ${
+    grpsubinv.b $e |- B = ( Base ` G ) $.
+    grpsubinv.p $e |- .+ = ( +g ` G ) $.
+    grpsubinv.m $e |- .- = ( -g ` G ) $.
+    grpsubinv.n $e |- N = ( invg ` G ) $.
+    grpsubinv.g $e |- ( ph -> G e. Grp ) $.
+    grpsubinv.x $e |- ( ph -> X e. B ) $.
+    grpsubinv.y $e |- ( ph -> Y e. B ) $.
+    $( Subtraction of an inverse.  (Contributed by NM, 7-Apr-2015.) $)
+    grpsubinv $p |- ( ph -> ( X .- ( N ` Y ) ) = ( X .+ Y ) ) $=
+      ( cfv co wcel wceq syl2anc cgrp grpinvcl grpsubval grpinvinv oveq2d eqtrd
+      ) AGHFPZEQZGUGFPZCQZGHCQAGBRUGBRZUHUJSNADUARZHBRZUKMOBDFHILUBTBCDFEGUGIJL
+      KUCTAUIHGCAULUMUIHSMOBDFHILUDTUEUF $.
   $}
 
 
