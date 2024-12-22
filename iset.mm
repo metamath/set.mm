@@ -146567,6 +146567,19 @@ $)
       IXJXK $.
   $}
 
+  ${
+    mulg0.b $e |- B = ( Base ` G ) $.
+    mulg0.o $e |- .0. = ( 0g ` G ) $.
+    mulg0.t $e |- .x. = ( .g ` G ) $.
+    $( Group multiple (exponentiation) operation at zero.  (Contributed by
+       Mario Carneiro, 11-Dec-2014.) $)
+    mulg0 $p |- ( X e. B -> ( 0 .x. X ) = .0. ) $=
+      ( cc0 cz wcel co wceq 0z wa clt wbr cfv cif eqid cplusg csn cxp cseq cneg
+      cn c1 cminusg mulgval iftruei eqtrdi mpan ) IJKZDAKZIDBLZEMNUMUNOUOIIMZEI
+      IPQICUARZUFDUBUCUGUDZRIUEURRCUHRZRSZSEAUQURBCUSIDEFUQTGUSTHURTUIUPEUTITUJ
+      UKUL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
