@@ -18718,6 +18718,7 @@ New usage of "r19.21vOLD" is discouraged (0 uses).
 New usage of "r19.29d2rOLD" is discouraged (0 uses).
 New usage of "r19.29vvaOLD" is discouraged (0 uses).
 New usage of "r19.30OLD" is discouraged (0 uses).
+New usage of "r19.35OLD" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
 New usage of "r1pwALT" is discouraged (0 uses).
 New usage of "rabeqiOLD" is discouraged (0 uses).
@@ -21091,7 +21092,6 @@ Proof modification of "rabrabiOLD" is discouraged (38 steps).
 Proof modification of "ral0OLD" is discouraged (12 steps).
 Proof modification of "ralabOLD" is discouraged (40 steps).
 Proof modification of "ralbidaOLD" is discouraged (43 steps).
-Proof modification of "ralcom3OLD" is discouraged (38 steps).
 Proof modification of "ralcom4OLD" is discouraged (63 steps).
 Proof modification of "raleleqALT" is discouraged (26 steps).
 Proof modification of "ralf0OLD" is discouraged (41 steps).
