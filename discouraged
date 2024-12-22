@@ -18727,6 +18727,7 @@ New usage of "ral0OLD" is discouraged (0 uses).
 New usage of "ralabOLD" is discouraged (0 uses).
 New usage of "ralbidaOLD" is discouraged (0 uses).
 New usage of "ralcom2" is discouraged (0 uses).
+New usage of "ralcom3OLD" is discouraged (0 uses).
 New usage of "ralcom4OLD" is discouraged (0 uses).
 New usage of "raleleqALT" is discouraged (0 uses).
 New usage of "ralf0OLD" is discouraged (0 uses).
@@ -18815,6 +18816,9 @@ New usage of "rexcomOLD" is discouraged (0 uses).
 New usage of "reximdvaiOLD" is discouraged (0 uses).
 New usage of "reximiaOLD" is discouraged (0 uses).
 New usage of "rexlimddvcbv" is discouraged (0 uses).
+New usage of "rexlimivOLD" is discouraged (0 uses).
+New usage of "rexlimivaOLD" is discouraged (0 uses).
+New usage of "rexlimivwOLD" is discouraged (0 uses).
 New usage of "rexn0OLD" is discouraged (0 uses).
 New usage of "rexprgOLD" is discouraged (0 uses).
 New usage of "rexrnmpt" is discouraged (0 uses).
@@ -21158,6 +21162,9 @@ Proof modification of "rexbidvaALT" is discouraged (10 steps).
 Proof modification of "rexcomOLD" is discouraged (67 steps).
 Proof modification of "reximdvaiOLD" is discouraged (28 steps).
 Proof modification of "reximiaOLD" is discouraged (21 steps).
+Proof modification of "rexlimivOLD" is discouraged (23 steps).
+Proof modification of "rexlimivaOLD" is discouraged (13 steps).
+Proof modification of "rexlimivwOLD" is discouraged (14 steps).
 Proof modification of "rexn0OLD" is discouraged (17 steps).
 Proof modification of "rexprgOLD" is discouraged (17 steps).
 Proof modification of "rexsngOLD" is discouraged (10 steps).
