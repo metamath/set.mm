@@ -93,6 +93,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-Dec-24 frnsuppeq fsuppeq
+22-Dec-24 frnsuppeqg fsuppeqg
+22-Dec-24 frnfsuppbi ffsuppbi
 22-Dec-24 fvmptelrn fvmptelcdm 
 22-Dec-24 frnssb    fcdmssb
 19-Dec-24 3albii    [same]      moved from PM's mathbox to main set.mm
