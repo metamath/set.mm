@@ -146538,6 +146538,35 @@ $)
     $}
   $}
 
+  ${
+    $d B u v n x $.  $d G u v n x $.  $d V u v n x $.
+    mulgfn.b $e |- B = ( Base ` G ) $.
+    mulgfn.t $e |- .x. = ( .g ` G ) $.
+    $( Functionality of the group multiple operation.  (Contributed by Mario
+       Carneiro, 21-Mar-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+    mulgfng $p |- ( G e. V -> .x. Fn ( ZZ X. B ) ) $=
+      ( vn vx wcel cz wfn cv cc0 c0g cfv cn cvv wa syl ad2antrr vu cxp wceq clt
+      vv wbr cplusg csn c1 cseq cneg cminusg cmpo wral elex fn0g funfvex funfni
+      cif mpan wn wf nnuz 1zzd fvconst2g simpl eqeltrd adantll simprl plusgslid
+      elexd co slotex simprr ovexg syl3anc seqf adantrl simpr sylanbrc ffvelrnd
+      elnnz eqid grpinvfng basfn eqeltrid fnex syl2anc ad3antrrr znegcld simplr
+      cbs w3o ztri3or0 ecase23d zred lt0neg1d mpbid fvexg wdc 0zd simplrl zdclt
+      cr ifcldadc zdceq ralrimivva fnmpo mulgfvalg fneq1d mpbird ) CDIZBJAUBZKG
+      HJAGLZMUCZCNOZMXNUDUFZXNCUGOZPHLZUHUBZUIUJZOZXNUKZYAOZCULOZOZUSZUSZUMZXMK
+      ZXLYHQIZHAUNGJUNYJXLYKGHJAXLXNJIZXSAIZRZRZXOXPYGQXLXPQIZYNXOXLCQIZYPCDUOZ
+      NQKYQYPUPYPQCNCNUQURUTSTYOXOVAZRZXQYBYFQYTXQRZPQXNYAYOPQYAVBZYSXQXLYMUUBY
+      LXLYMRZUAUEXRQXTUIPVCUUCVDYMUALZPIZUUDXTOZQIXLYMUUERZUUFAUUGUUFXSAPXSUUDA
+      VEYMUUEVFVGVKVHUUCUUDQIZUELZQIZRZRUUHXRQIZUUJUUDUUIXRVLQIUUCUUHUUJVIXLUUL
+      YMUUKCUGDVJVMTUUCUUHUUJVNUUDUUIXRQQQVOVPVQVRZTUUAYLXQXNPIYOYLYSXQXLYLYMVI
+      ZTYTXQVSXNWBVTWAYTXQVAZRZYEQIZYDQIYFQIXLUUQYNYSUUOXLYEAKAQIZUUQACYEDEYEWC
+      ZWDXLYQUURYRYQACWLOZQEWLQKYQUUTQIZWEUVAQCWLCWLUQURUTWFSAQYEWGWHWIUUPPQYCY
+      AYOUUBYSUUOUUMTUUPYCJIZMYCUDUFZYCPIYOUVBYSUUOYOXNUUNWJTUUPXNMUDUFZUVCUUPU
+      VDXOXQYOYSUUOWKYTUUOVSYOUVDXOXQWMZYSUUOYOYLUVEUUNXNWNSTWOUUPXNYOXNXDIYSUU
+      OYOXNUUNWPTWQWRYCWBVTWAYDYEQQWSWHYTMJIZYLXQWTYTXAXLYLYMYSXBMXNXCWHXEYOYLU
+      VFXOWTUUNYOXAXNMXFWHXEXGGHJAYHYIQYIWCXHSXLXMBYIHAXRBGCYEDXPEXRWCXPWCUUSFX
+      IXJXK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
