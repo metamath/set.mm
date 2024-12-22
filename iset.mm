@@ -146580,6 +146580,20 @@ $)
       UKUL $.
   $}
 
+  ${
+    mulgnn.b $e |- B = ( Base ` G ) $.
+    mulgnn.p $e |- .+ = ( +g ` G ) $.
+    mulgnn.t $e |- .x. = ( .g ` G ) $.
+    mulgnn.s $e |- S = seq 1 ( .+ , ( NN X. { X } ) ) $.
+    $( Group multiple (exponentiation) operation at a positive integer.
+       (Contributed by Mario Carneiro, 11-Dec-2014.) $)
+    mulgnn $p |- ( ( N e. NN /\ X e. B ) -> ( N .x. X ) = ( S ` N ) ) $=
+      ( cn wcel wa cc0 wceq cfv cif eqid eqtrd c0g clt wbr cneg cminusg mulgval
+      co cz nnz sylan nnne0 neneqd iffalsed nngt0 iftrued adantr ) FLMZGAMZNFGD
+      UGZFOPZEUAQZOFUBUCZFCQZFUDCQEUEQZQZRZRZVCUQFUHMURUSVGPFUIABCDEVDFGVAHIVAS
+      VDSJKUFUJUQVGVCPURUQVGVFVCUQUTVAVFUQFOFUKULUMUQVBVCVEFUNUOTUPT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
