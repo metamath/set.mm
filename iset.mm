@@ -146736,6 +146736,13 @@ $)
       ( vx vy cmnd wcel cplusg cfv c0g eqid id ssidd cv mndcl mndidcl
       mulgnn0subcl ) CJKZHIACLMZABCDJECNMZFGUCOZUBPUBAQAUCCHRIRFUESUDOZACUDFUFT
       UA $.
+
+    $( Closure of the group multiple (exponentiation) operation.  (Contributed
+       by Mario Carneiro, 11-Dec-2014.) $)
+    mulgcl $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B ) -> ( N .x. X ) e. B ) $=
+      ( vx vy cgrp wcel cplusg cfv cminusg c0g eqid id ssidd cv grpcl mulgsubcl
+      grpidcl grpinvcl ) CJKZHIACLMZABCCNMZDJECOMZFGUEPZUDQUDARAUECHSZISFUHTUGP
+      ZACUGFUJUBUFPZACUFUIFUKUCUA $.
   $}
 
 
