@@ -146780,6 +146780,18 @@ $)
       UIEQUEABCEFGUCUAUBUD $.
   $}
 
+  ${
+    mulgcld.1 $e |- B = ( Base ` G ) $.
+    mulgcld.2 $e |- .x. = ( .g ` G ) $.
+    mulgcld.3 $e |- ( ph -> G e. Grp ) $.
+    mulgcld.4 $e |- ( ph -> N e. ZZ ) $.
+    mulgcld.5 $e |- ( ph -> X e. B ) $.
+    $( Deduction associated with ~ mulgcl .  (Contributed by Rohan Ridenour,
+       3-Aug-2023.) $)
+    mulgcld $p |- ( ph -> ( N .x. X ) e. B ) $=
+      ( cgrp wcel cz co mulgcl syl3anc ) ADLMENMFBMEFCOBMIJKBCDEFGHPQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
