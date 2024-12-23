@@ -146770,6 +146770,14 @@ $)
       ( cgrp wcel cz w3a cneg co cfv mulgneg fveq2d wceq simp1 mulgcl grpinvinv
       syl2anc eqtrd ) CJKZELKZFAKZMZENFBOZDPEFBOZDPZDPZUJUHUIUKDABCDEFGHIQRUHUE
       UJAKULUJSUEUFUGTABCEFGHUAACDUJGIUBUCUD $.
+
+    $( Group multiple (exponentiation) operation at negative one.  (Contributed
+       by Paul Chapman, 17-Apr-2009.)  (Revised by Mario Carneiro,
+       20-Dec-2014.) $)
+    mulgm1 $p |- ( ( G e. Grp /\ X e. B ) -> ( -u 1 .x. X ) = ( I ` X ) ) $=
+      ( cgrp wcel wa c1 cneg co cfv cz wceq 1z mulgneg mp3an2 adantl fveq2d
+      mulg1 eqtrd ) CIJZEAJZKZLMEBNZLEBNZDOZEDOUELPJUFUHUJQRABCDLEFGHSTUGUIEDUF
+      UIEQUEABCEFGUCUAUBUD $.
   $}
 
 
