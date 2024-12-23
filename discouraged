@@ -14431,6 +14431,7 @@ New usage of "abn0OLD" is discouraged (0 uses).
 New usage of "abrexexgOLD" is discouraged (0 uses).
 New usage of "abscncfALT" is discouraged (0 uses).
 New usage of "abshicom" is discouraged (1 uses).
+New usage of "abssdvOLD" is discouraged (0 uses).
 New usage of "abvALT" is discouraged (0 uses).
 New usage of "ac2" is discouraged (1 uses).
 New usage of "ac3" is discouraged (1 uses).
@@ -18859,6 +18860,7 @@ New usage of "rlimmulOLD" is discouraged (0 uses).
 New usage of "rmoanimALT" is discouraged (0 uses).
 New usage of "rmobidvaOLD" is discouraged (0 uses).
 New usage of "rmodislmodOLD" is discouraged (0 uses).
+New usage of "rmxyelqirrOLD" is discouraged (0 uses).
 New usage of "rnbra" is discouraged (2 uses).
 New usage of "rnelshi" is discouraged (1 uses).
 New usage of "rngcbasALTV" is discouraged (6 uses).
@@ -19682,6 +19684,7 @@ Proof modification of "abfOLD" is discouraged (13 steps).
 Proof modification of "abn0OLD" is discouraged (28 steps).
 Proof modification of "abrexexgOLD" is discouraged (43 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
+Proof modification of "abssdvOLD" is discouraged (24 steps).
 Proof modification of "abvALT" is discouraged (36 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
@@ -21187,6 +21190,7 @@ Proof modification of "rlimmulOLD" is discouraged (159 steps).
 Proof modification of "rmoanimALT" is discouraged (93 steps).
 Proof modification of "rmobidvaOLD" is discouraged (10 steps).
 Proof modification of "rmodislmodOLD" is discouraged (1641 steps).
+Proof modification of "rmxyelqirrOLD" is discouraged (238 steps).
 Proof modification of "rngopidOLD" is discouraged (27 steps).
 Proof modification of "rnmptcOLD" is discouraged (54 steps).
 Proof modification of "rntrclfv" is discouraged (46 steps).
