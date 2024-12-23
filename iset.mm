@@ -146653,6 +146653,23 @@ $)
       KVNVOVEVPUIVPWAWJWHDAWDWEBCEFGWRHWSVQPVR $.
   $}
 
+  ${
+    mulgnn0p1.b $e |- B = ( Base ` G ) $.
+    mulgnn0p1.t $e |- .x. = ( .g ` G ) $.
+    mulgnn0p1.p $e |- .+ = ( +g ` G ) $.
+    $( Group multiple (exponentiation) operation at a successor, extended to
+       ` NN0 ` .  (Contributed by Mario Carneiro, 11-Dec-2014.) $)
+    mulgnn0p1 $p |- ( ( G e. Mnd /\ N e. NN0 /\ X e. B ) ->
+      ( ( N + 1 ) .x. X ) = ( ( N .x. X ) .+ X ) ) $=
+      ( cmnd wcel c1 caddc co wceq cc0 wa adantl oveq1d oveq1 cn0 w3a cn simpl3
+      simpr mulgnnp1 syl2anc c0g eqid mndlid mulg0 mulg1 3eqtr4rd 3adant2 1e0p1
+      cfv eqtr4di eqeq12d syl5ibrcom imp wo simp2 elnn0 sylib mpjaodan ) DJKZEU
+      AKZFAKZUBZEUCKZELMNZFCNZEFCNZFBNZOZEPOZVIVJQVJVHVOVIVJUEVFVGVHVJUDABCDEFG
+      HIUFUGVIVPVOVIVOVPLFCNZPFCNZFBNZOZVFVHVTVGVFVHQZDUHUPZFBNFVSVQABDFWBGIWBU
+      IZUJWAVRWBFBVHVRWBOVFACDFWBGWCHUKRSVHVQFOVFACDFGHULRUMUNVPVLVQVNVSVPVKLFC
+      VPVKPLMNLEPLMTUOUQSVPVMVRFBEPFCTSURUSUTVIVGVJVPVAVFVGVHVBEVCVDVE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
