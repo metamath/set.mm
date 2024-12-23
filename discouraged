@@ -15783,6 +15783,7 @@ New usage of "cnvbramul" is discouraged (1 uses).
 New usage of "cnvbraval" is discouraged (1 uses).
 New usage of "cnvfiALT" is discouraged (0 uses).
 New usage of "cnvoprabOLD" is discouraged (0 uses).
+New usage of "cnvsymOLD" is discouraged (0 uses).
 New usage of "cnvunop" is discouraged (2 uses).
 New usage of "com3rgbi" is discouraged (1 uses).
 New usage of "con3ALT" is discouraged (0 uses).
@@ -16048,7 +16049,6 @@ New usage of "dfmo" is discouraged (0 uses).
 New usage of "dfnul2OLD" is discouraged (0 uses).
 New usage of "dfnul3OLD" is discouraged (0 uses).
 New usage of "dfnul4OLD" is discouraged (0 uses).
-New usage of "dfopifOLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfrecs3OLD" is discouraged (0 uses).
 New usage of "dfsb1" is discouraged (4 uses).
@@ -18795,6 +18795,7 @@ New usage of "relop" is discouraged (1 uses).
 New usage of "relopabVD" is discouraged (0 uses).
 New usage of "relopabiALT" is discouraged (0 uses).
 New usage of "relrngo" is discouraged (6 uses).
+New usage of "relssdmrnOLD" is discouraged (0 uses).
 New usage of "renegclALT" is discouraged (0 uses).
 New usage of "renicax" is discouraged (0 uses).
 New usage of "rescabsOLD" is discouraged (0 uses).
@@ -19381,6 +19382,8 @@ New usage of "ttgplusgOLD" is discouraged (0 uses).
 New usage of "ttgvalOLD" is discouraged (0 uses).
 New usage of "ttgvscaOLD" is discouraged (0 uses).
 New usage of "tuslemOLD" is discouraged (0 uses).
+New usage of "tz6.12-1OLD" is discouraged (0 uses).
+New usage of "tz6.12cOLD" is discouraged (0 uses).
 New usage of "tz6.26OLD" is discouraged (0 uses).
 New usage of "ubth" is discouraged (1 uses).
 New usage of "ubthlem1" is discouraged (1 uses).
@@ -20105,6 +20108,7 @@ Proof modification of "cnncvsaddassdemo" is discouraged (46 steps).
 Proof modification of "cnncvsmulassdemo" is discouraged (95 steps).
 Proof modification of "cnvfiALT" is discouraged (46 steps).
 Proof modification of "cnvoprabOLD" is discouraged (262 steps).
+Proof modification of "cnvsymOLD" is discouraged (88 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
 Proof modification of "con3ALT" is discouraged (54 steps).
 Proof modification of "con3ALT2" is discouraged (14 steps).
@@ -20153,7 +20157,6 @@ Proof modification of "dfmo" is discouraged (44 steps).
 Proof modification of "dfnul2OLD" is discouraged (38 steps).
 Proof modification of "dfnul3OLD" is discouraged (42 steps).
 Proof modification of "dfnul4OLD" is discouraged (23 steps).
-Proof modification of "dfopifOLD" is discouraged (102 steps).
 Proof modification of "dfrecs3OLD" is discouraged (263 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
 Proof modification of "dfss2OLD" is discouraged (56 steps).
@@ -21151,6 +21154,7 @@ Proof modification of "refsymrels3" is discouraged (56 steps).
 Proof modification of "reldisjOLD" is discouraged (86 steps).
 Proof modification of "relopabVD" is discouraged (354 steps).
 Proof modification of "relopabiALT" is discouraged (74 steps).
+Proof modification of "relssdmrnOLD" is discouraged (75 steps).
 Proof modification of "renegcl" is discouraged (34 steps).
 Proof modification of "renegclALT" is discouraged (149 steps).
 Proof modification of "renicax" is discouraged (76 steps).
@@ -21397,6 +21401,8 @@ Proof modification of "ttgplusgOLD" is discouraged (25 steps).
 Proof modification of "ttgvalOLD" is discouraged (845 steps).
 Proof modification of "ttgvscaOLD" is discouraged (25 steps).
 Proof modification of "tuslemOLD" is discouraged (304 steps).
+Proof modification of "tz6.12-1OLD" is discouraged (30 steps).
+Proof modification of "tz6.12cOLD" is discouraged (60 steps).
 Proof modification of "tz6.26OLD" is discouraged (96 steps).
 Proof modification of "umgr2adedgwlkonALT" is discouraged (294 steps).
 Proof modification of "un0.1" is discouraged (21 steps).
