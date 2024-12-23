@@ -17354,6 +17354,9 @@ New usage of "intprOLD" is discouraged (0 uses).
 New usage of "intprgOLD" is discouraged (0 uses).
 New usage of "iorlid" is discouraged (2 uses).
 New usage of "iotaeq" is discouraged (0 uses).
+New usage of "iotaexOLD" is discouraged (0 uses).
+New usage of "iotassuniOLD" is discouraged (0 uses).
+New usage of "iotavalOLD" is discouraged (0 uses).
 New usage of "ip0i" is discouraged (1 uses).
 New usage of "ip1i" is discouraged (2 uses).
 New usage of "ip1ilem" is discouraged (1 uses).
@@ -20784,6 +20787,9 @@ Proof modification of "int2" is discouraged (14 steps).
 Proof modification of "int3" is discouraged (17 steps).
 Proof modification of "intprOLD" is discouraged (112 steps).
 Proof modification of "intprgOLD" is discouraged (80 steps).
+Proof modification of "iotaexOLD" is discouraged (57 steps).
+Proof modification of "iotassuniOLD" is discouraged (35 steps).
+Proof modification of "iotavalOLD" is discouraged (101 steps).
 Proof modification of "isarep1OLD" is discouraged (106 steps).
 Proof modification of "iscmgmALT" is discouraged (57 steps).
 Proof modification of "iscsgrpALT" is discouraged (57 steps).
