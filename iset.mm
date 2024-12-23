@@ -146743,6 +146743,24 @@ $)
       ( vx vy cgrp wcel cplusg cfv cminusg c0g eqid id ssidd cv grpcl mulgsubcl
       grpidcl grpinvcl ) CJKZHIACLMZABCCNMZDJECOMZFGUEPZUDQUDARAUECHSZISFUHTUGP
       ZACUGFUJUBUFPZACUFUIFUKUCUA $.
+
+    mulgneg.i $e |- I = ( invg ` G ) $.
+    $( Group multiple (exponentiation) operation at a negative integer.
+       (Contributed by Paul Chapman, 17-Apr-2009.)  (Revised by Mario Carneiro,
+       11-Dec-2014.) $)
+    mulgneg $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B ) ->
+      ( -u N .x. X ) = ( I ` ( N .x. X ) ) ) $=
+      ( wcel cz cneg co cfv wceq wa cc0 simpl3 syl2anc oveq1d cgrp w3a cr cn wo
+      cn0 elnn0 simpr mulgnegnn c0g simpl1 eqid grpinvid syl mulg0 eqtrd fveq2d
+      negeqd neg0 eqtrdi 3eqtr4rd jaodan sylan2b simprr mulgcl grpinvinv simprl
+      nnzd syl3anc recnd negnegd eqtr3d simp2 elznn0nn sylib mpjaodan ) CUAJZEK
+      JZFAJZUBZEUFJZELZFBMZEFBMZDNZOZEUCJZWBUDJZPZWAVTEUDJZEQOZUEWFEUGVTWJWFWKV
+      TWJPWJVSWFVTWJUHVQVRVSWJRABCDEFGHIUISVTWKPZCUJNZDNZWMWEWCWLVQWNWMOVQVRVSW
+      KUKCDWMWMULZIUMUNWLWDWMDWLWDQFBMZWMWLEQFBVTWKUHZTWLVSWPWMOVQVRVSWKRABCFWM
+      GWOHUOUNZUPUQWLWCWPWMWLWBQFBWLWBQLQWLEQWQURUSUTTWRUPVAVBVCVTWIPZWCDNZDNZW
+      CWEWSVQWCAJZXAWCOVQVRVSWIUKZWSVQWBKJVSXBXCWSWBVTWGWHVDZVHVQVRVSWIRZABCWBF
+      GHVEVIACDWCGIVFSWSWTWDDWSWBLZFBMZWTWDWSWHVSXGWTOXDXEABCDWBFGHIUISWSXFEFBW
+      SEWSEVTWGWHVGVJVKTVLUQVLVTVRWAWIUEVQVRVSVMEVNVOVP $.
   $}
 
 
