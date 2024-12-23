@@ -146868,6 +146868,15 @@ $)
       RIVRVTVOTURWAWBWCXGWDKYSYBXKXPOZXGWEWNWPYSUUDOWNYSWPUUDWNYSWPXKXPWNYSWPUT
       ZXKVIZXMXHDLZXOUUEXMUUGNZXKWNYSWPYFUUHWNWPYFYSYGVGABCDXGWQGHIWFWGTUUFXNXH
       DUUFXNXJXHUUEXNXJNXKABCDXGFGHIWFTUUEXKWHWIUQWIWAWBWCWJWKWLWBWM $.
+
+    $( The group multiple operator commutes with the group inverse function.
+       (Contributed by Paul Chapman, 17-Apr-2009.)  (Revised by AV,
+       31-Aug-2021.) $)
+    mulginvinv $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B )
+                              -> ( I ` ( N .x. ( I ` X ) ) ) = ( N .x. X ) ) $=
+      ( cgrp wcel cz w3a cfv co wceq grpinvcl 3adant2 mulginvcom syld3an3
+      grpinvinv oveq2d eqtr3d ) CJKZELKZFAKZMZEFDNZDNZBOZEUHBODNZEFBOUDUEUFUHAK
+      ZUJUKPUDUFULUEACDFGIQRABCDEUHGHISTUGUIFEBUDUFUIFPUEACDFGIUARUBUC $.
   $}
 
 
