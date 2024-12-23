@@ -146700,6 +146700,21 @@ $)
       VIVMABCDEFGHIJKMNOPQRUGUHUIUJVJVNUNVLLFVNVJVLUMKGUEZLIUMKGUKVJKDUBVOLUFVJ
       FDKAVHFDUOVIQULAVHVIUPUQDGHKLMSNURUSUTVJLFUBZVNAVHVPVITULVAVBVJVHVKVNVCAV
       HVIVDIVEVFVG $.
+
+    mulgsubcl.i $e |- I = ( invg ` G ) $.
+    mulgsubcl.c $e |- ( ( ph /\ x e. S ) -> ( I ` x ) e. S ) $.
+    $( Closure of the group multiple (exponentiation) operation in a subgroup.
+       (Contributed by Mario Carneiro, 10-Jan-2015.) $)
+    mulgsubcl $p |- ( ( ph /\ N e. ZZ /\ X e. S ) -> ( N .x. X ) e. S ) $=
+      ( cz wcel w3a cn0 co cr cn wa mulgnn0subcl 3expa an32s 3adantl2 cfv simp2
+      cneg adantr zcnd negnegd oveq1d wceq id wss 3ad2ant1 simp3 sseldd syl2anr
+      mulgnegnn eqtr3d cv fveq2 eleq1d wral mulgnnsubcl rspcdva eqeltrd adantrl
+      ralrimiva wo elznn0nn sylib mpjaodan ) AJUDUEZLFUEZUFZJUGUEZJLGUHZFUEZJUI
+      UEZJURZUJUEZUKZAWFWHWJWEAWHWFWJAWHWFWJABCDEFGHJKLMNOPQRSTUAULUMUNUOWGWMWJ
+      WKWGWMUKZWIWLLGUHZIUPZFWOWLURZLGUHZWIWQWOWRJLGWOJWOJWGWEWMAWEWFUQZUSUTVAV
+      BWMWMLDUEWSWQVCWGWMVDWGFDLAWEFDVEWFRVFAWEWFVGVHDGHIWLLNOUBVJVIVKWOBVLZIUP
+      ZFUEZWQFUEBFWPXAWPVCXBWQFXAWPIVMVNWGXCBFVOZWMAWEXDWFAXCBFUCVTVFUSAWFWMWPF
+      UEZWEAWMWFXEAWMWFXEABCDEFGHWLKLNOPQRSVPUMUNUOVQVRVSWGWEWHWNWAWTJWBWCWD $.
   $}
 
 
