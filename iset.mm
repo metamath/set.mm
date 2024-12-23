@@ -146628,6 +146628,13 @@ $)
         KWRBPRMVTWQWSUNVSXAVRWTVSDRMZXAFADGUOXBBDUQQRIDUQRURUSUTVAVBVTWQWSVCWKW
         RBRRRVFVDVEVTWIFWEBVSVSWALMZWIFVGVRVSVHEVIZLFWAAUJVJVKVLVRXCVSWGWDVGXDA
         BWCCDWAFGIHWCVQZVMVNVTWHWEFBABWCCDEFGIHXEVMVOVP $.
+
+      $( Group multiple (exponentiation) operation at two.  (Contributed by
+         Mario Carneiro, 15-Oct-2015.) $)
+      mulg2 $p |- ( X e. B -> ( 2 .x. X ) = ( X .+ X ) ) $=
+        ( wcel c2 co c1 caddc df-2 oveq1i cn wceq 1nn mulgnnp1 mpan mulg1 eqtrd
+        eqtrid oveq1d ) EAIZJECKZLECKZEBKZEEBKUEUFLLMKZECKZUHJUIECNOLPIUEUJUHQR
+        ABCDLEFGHSTUCUEUGEEBACDEFGUAUDUB $.
     $}
   $}
 
