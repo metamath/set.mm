@@ -146727,6 +146727,15 @@ $)
     mulgnncl $p |- ( ( G e. Mgm /\ N e. NN /\ X e. B ) -> ( N .x. X ) e. B ) $=
       ( vx vy cmgm wcel cplusg cfv eqid id ssidd cv mgmcl mulgnnsubcl ) CJKZHIA
       CLMZABCDJEFGUANZTOTAPACHQIQUAFUBRS $.
+
+    $( Closure of the group multiple (exponentiation) operation for a
+       nonnegative multiplier in a monoid.  (Contributed by Mario Carneiro,
+       11-Dec-2014.) $)
+    mulgnn0cl $p |- ( ( G e. Mnd /\ N e. NN0 /\ X e. B ) ->
+      ( N .x. X ) e. B ) $=
+      ( vx vy cmnd wcel cplusg cfv c0g eqid id ssidd cv mndcl mndidcl
+      mulgnn0subcl ) CJKZHIACLMZABCDJECNMZFGUCOZUBPUBAQAUCCHRIRFUESUDOZACUDFUFT
+      UA $.
   $}
 
 
