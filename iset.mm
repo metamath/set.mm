@@ -146717,6 +146717,18 @@ $)
       UEZWEAWMWFXEAWMWFXEABCDEFGHWLKLNOPQRSVPUMUNUOVQVRVSWGWEWHWNWAWTJWBWCWD $.
   $}
 
+  ${
+    $d x y B $.  $d x y G $.  $d x y N $.  $d x .x. $.  $d x y X $.
+    mulgnncl.b $e |- B = ( Base ` G ) $.
+    mulgnncl.t $e |- .x. = ( .g ` G ) $.
+    $( Closure of the group multiple (exponentiation) operation for a positive
+       multiplier in a magma.  (Contributed by Mario Carneiro, 11-Dec-2014.)
+       (Revised by AV, 29-Aug-2021.) $)
+    mulgnncl $p |- ( ( G e. Mgm /\ N e. NN /\ X e. B ) -> ( N .x. X ) e. B ) $=
+      ( vx vy cmgm wcel cplusg cfv eqid id ssidd cv mgmcl mulgnnsubcl ) CJKZHIA
+      CLMZABCDJEFGUANZTOTAPACHQIQUAFUBRS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
