@@ -146688,6 +146688,18 @@ $)
       AVHVIUHZVJFDKAVHFDUIVIPUJAVHVIUKZULDEVMGHIKLNMVMUMUNUOVJRFIVMVJBCEFVLUDRU
       PVJUQVJBURZRSZVDVQVLUFZKFVJVIVRVSKUGVPRKVQFUSUTAVHVIVRVAVBAVHVQFSZCURZFSZ
       VDVQWAETFSZVIAVTWBWCQVEVCVFVOVGVB $.
+
+    mulgnn0subcl.z $e |- .0. = ( 0g ` G ) $.
+    mulgnn0subcl.c $e |- ( ph -> .0. e. S ) $.
+    $( Closure of the group multiple (exponentiation) operation in a submonoid.
+       (Contributed by Mario Carneiro, 10-Jan-2015.) $)
+    mulgnn0subcl $p |- ( ( ph /\ N e. NN0 /\ X e. S ) -> ( N .x. X ) e. S ) $=
+      ( cn0 wcel w3a cn co wceq mulgnnsubcl 3expa an32s 3adantl2 oveq1 3ad2ant1
+      cc0 wa wss simp3 sseldd mulg0 syl sylan9eqr adantr eqeltrd wo simp2 elnn0
+      sylib mpjaodan ) AIUAUBZKFUBZUCZIUDUBZIKGUEZFUBZIUMUFZAVIVKVMVHAVKVIVMAVK
+      VIVMABCDEFGHIJKMNOPQRUGUHUIUJVJVNUNVLLFVNVJVLUMKGUEZLIUMKGUKVJKDUBVOLUFVJ
+      FDKAVHFDUOVIQULAVHVIUPUQDGHKLMSNURUSUTVJLFUBZVNAVHVPVITULVAVBVJVHVKVNVCAV
+      HVIVDIVEVFVG $.
   $}
 
 
