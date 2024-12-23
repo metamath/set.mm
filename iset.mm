@@ -146761,6 +146761,15 @@ $)
       CWEWSVQWCAJZXAWCOVQVRVSWIUKZWSVQWBKJVSXBXCWSWBVTWGWHVDZVHVQVRVSWIRZABCWBF
       GHVEVIACDWCGIVFSWSWTWDDWSWBLZFBMZWTWDWSWHVSXGWTOXDXEABCDWBFGHIUISWSXFEFBW
       SEWSEVTWGWHVGVJVKTVLUQVLVTVRWAWIUEVQVRVSVMEVNVOVP $.
+
+    $( The inverse of a negative group multiple is the positive group multiple.
+       (Contributed by Paul Chapman, 17-Apr-2009.)  (Revised by AV,
+       30-Aug-2021.) $)
+    mulgnegneg $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B )
+                       -> ( I ` ( -u N .x. X ) ) = ( N .x. X ) ) $=
+      ( cgrp wcel cz w3a cneg co cfv mulgneg fveq2d wceq simp1 mulgcl grpinvinv
+      syl2anc eqtrd ) CJKZELKZFAKZMZENFBOZDPEFBOZDPZDPZUJUHUIUKDABCDEFGHIQRUHUE
+      UJAKULUJSUEUFUGTABCEFGHUAACDUJGIUBUCUD $.
   $}
 
 
