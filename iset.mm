@@ -146594,6 +146594,24 @@ $)
       VDSJKUFUJUQVGVCPURUQVGVFVCUQUTVAVFUQFOFUKULUMUQVBVCVEFUNUOTUPT $.
   $}
 
+  ${
+    mulg1.b $e |- B = ( Base ` G ) $.
+    mulg1.m $e |- .x. = ( .g ` G ) $.
+    ${
+      $d B u v $.  $d G u v $.  $d X u v $.
+      $( Group multiple (exponentiation) operation at one.  (Contributed by
+         Mario Carneiro, 11-Dec-2014.) $)
+      mulg1 $p |- ( X e. B -> ( 1 .x. X ) = X ) $=
+        ( vu vv wcel c1 co cplusg cfv cn wceq 1nn eqid cvv cv wa csn cxp mulgnn
+        cseq mpan 1zzd cuz elnnuz fvconst2g simpl eqeltrd elexd sylan2br simprl
+        basmex plusgslid slotex adantr simprr ovexg syl3anc seq3-1 mpan2 3eqtrd
+        syl ) DAIZJDBKZJCLMZNDUAUBZJUDZMZJVIMZDJNIZVFVGVKOPAVHVJBCJDEVHQFVJQUCU
+        EVFGHVHRVIJVFUFGSZJUGMIVFVNNIZVNVIMZRIVNUHVFVOTZVPAVQVPDANDVNAUIVFVOUJU
+        KULUMVFVNRIZHSZRIZTZTVRVHRIZVTVNVSVHKRIVFVRVTUNVFWBWAVFCRIWBDACEUOCLRUP
+        UQVEURVFVRVTUSVNVSVHRRRUTVAVBVFVMVLDOPNDJAUIVCVD $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
