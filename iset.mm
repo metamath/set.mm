@@ -146896,6 +146896,18 @@ $)
       NQVPVQUOUPUQWAWFIUSZLKWJWCQENWJRDUTOKVPWFVQWGTZWJDVALEWJAVBVCWKWAIEARLUPW
       KVDVPWJAKZJUSZAKZPWJWMWBOAKZVQVPWLWNWOAWBCWJWMFWHVEVFVGVIVHVRVPVSMEBOZEDM
       EBVJVPWFWPENWGABCEEFHGVKVLVMVNVO $.
+
+    $( A group multiple of the identity, for integer multiple.  (Contributed by
+       Mario Carneiro, 13-Dec-2014.) $)
+    mulgz $p |- ( ( G e. Grp /\ N e. ZZ ) -> ( N .x. .0. ) = .0. ) $=
+      ( wcel cz wa cn0 co wceq cneg mulgnn0z sylan cfv adantl ad2antrr cgrp zcn
+      cmnd grpmnd adantr cminusg simpll nn0z grpidcl mulgneg syl3anc cc negnegd
+      eqid ad2antlr oveq1d fveq2d grpinvid eqtrd 3eqtr3d wo cr simprbi mpjaodan
+      elznn0 ) CUAIZDJIZKZDLIZDEBMZENZDOZLIZVHCUCIZVIVKVFVNVGCUDUEZABCDEFGHPQVH
+      VMKZVLOZEBMZVLEBMZCUFRZRZVJEVPVFVLJIZEAIZVRWANVFVGVMUGVMWBVHVLUHSVFWCVGVM
+      ACEFHUITABCVTVLEFGVTUNZUJUKVPVQDEBVPDVGDULIVFVMDUBUOUMUPVPWAEVTRZEVPVSEVT
+      VHVNVMVSENVOABCVLEFGHPQUQVFWEENVGVMCVTEHWDURTUSUTVGVIVMVAZVFVGDVBIWFDVEVC
+      SVD $.
   $}
 
 
