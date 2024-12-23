@@ -146670,6 +146670,26 @@ $)
       VPVKPLMNLEPLMTUOUQSVPVMVRFBEPFCTSURUSUTVIVGVJVPVAVFVGVHVBEVCVDVE $.
   $}
 
+  ${
+    $d x y .+ $.  $d x y B $.  $d x y G $.  $d x I $.  $d x y N $.  $d x y S $.
+    $d x y ph $.  $d x .x. $.  $d x y X $.
+    mulgnnsubcl.b $e |- B = ( Base ` G ) $.
+    mulgnnsubcl.t $e |- .x. = ( .g ` G ) $.
+    mulgnnsubcl.p $e |- .+ = ( +g ` G ) $.
+    mulgnnsubcl.g $e |- ( ph -> G e. V ) $.
+    mulgnnsubcl.s $e |- ( ph -> S C_ B ) $.
+    mulgnnsubcl.c $e |- ( ( ph /\ x e. S /\ y e. S ) -> ( x .+ y ) e. S ) $.
+    $( Closure of the group multiple (exponentiation) operation in a
+       subsemigroup.  (Contributed by Mario Carneiro, 10-Jan-2015.) $)
+    mulgnnsubcl $p |- ( ( ph /\ N e. NN /\ X e. S ) -> ( N .x. X ) e. S ) $=
+      ( cn wcel co w3a csn cxp c1 cseq cfv wceq simp2 wss 3ad2ant1 simp3 sseldd
+      eqid mulgnn syl2anc nnuz 1zzd cv fvconst2g sylan simpl3 eqeltrd 3ad2antl1
+      wa 3expb seqf ffvelrnd ) AIRSZKFSZUAZIKGTZIERKUBUCZUDUEZUFZFVJVHKDSVKVNUG
+      AVHVIUHZVJFDKAVHFDUIVIPUJAVHVIUKZULDEVMGHIKLNMVMUMUNUOVJRFIVMVJBCEFVLUDRU
+      PVJUQVJBURZRSZVDVQVLUFZKFVJVIVRVSKUGVPRKVQFUSUTAVHVIVRVAVBAVHVQFSZCURZFSZ
+      VDVQWAETFSZVIAVTWBWCQVEVCVFVOVGVB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
