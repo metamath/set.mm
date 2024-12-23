@@ -146610,6 +146610,25 @@ $)
         KULUMVFVNRIZHSZRIZTZTVRVHRIZVTVNVSVHKRIVFVRVTUNVFWBWAVFCRIWBDACEUOCLRUP
         UQVEURVFVRVTUSVNVSVHRRRUTVAVBVFVMVLDOPNDJAUIVCVD $.
     $}
+
+    ${
+      $d .+ u v $.  $d B u v $.  $d N u v $.  $d X u v $.
+      mulgnnp1.p $e |- .+ = ( +g ` G ) $.
+      $( Group multiple (exponentiation) operation at a successor.
+         (Contributed by Mario Carneiro, 11-Dec-2014.) $)
+      mulgnnp1 $p |- ( ( N e. NN /\ X e. B ) ->
+          ( ( N + 1 ) .x. X ) = ( ( N .x. X ) .+ X ) ) $=
+        ( vu vv cn wcel wa c1 co cfv cvv simpl nnuz caddc csn cxp cseq eleqtrdi
+        cv simplr simpr eleqtrrdi fvconst2g eqeltrd elexd syl2anc simprl basmex
+        cuz cplusg plusgslid slotex eqeltrid syl ad2antlr simprr syl3anc seq3p1
+        ovexg wceq id peano2nn syl2anr oveq2d eqtrd mulgnn sylan oveq1d 3eqtr4d
+        eqid ) ELMZFAMZNZEOUAPZBLFUBUCZOUDZQZEWCQZFBPZWAFCPZEFCPZFBPVTWDWEWAWBQ
+        ZBPWFVTJKBRWBOEVTELOUPQZVRVSSTUEVTJUFZWJMZNZVSWKLMZWKWBQZRMVRVSWLUGWMWK
+        WJLVTWLUHTUIVSWNNZWOAWPWOFALFWKAUJVSWNSUKULUMVTWKRMZKUFZRMZNZNWQBRMZWSW
+        KWRBPRMVTWQWSUNVSXAVRWTVSDRMZXAFADGUOXBBDUQQRIDUQRURUSUTVAVBVTWQWSVCWKW
+        RBRRRVFVDVEVTWIFWEBVSVSWALMZWIFVGVRVSVHEVIZLFWAAUJVJVKVLVRXCVSWGWDVGXDA
+        BWCCDWAFGIHWCVQZVMVNVTWHWEFBABWCCDEFGIHXEVMVOVP $.
+    $}
   $}
 
 
