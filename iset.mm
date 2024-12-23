@@ -146792,6 +146792,28 @@ $)
       ( cgrp wcel cz co mulgcl syl3anc ) ADLMENMFBMEFCOBMIJKBCDEFGHPQ $.
   $}
 
+  ${
+    mulgaddcom.b $e |- B = ( Base ` G ) $.
+    mulgaddcom.t $e |- .x. = ( .g ` G ) $.
+    mulgaddcom.p $e |- .+ = ( +g ` G ) $.
+    $( Lemma for ~ mulgaddcom .  (Contributed by Paul Chapman, 17-Apr-2009.)
+       (Revised by AV, 31-Aug-2021.) $)
+    mulgaddcomlem $p |- ( ( ( G e. Grp /\ y e. ZZ /\ X e. B )
+                            /\ ( ( y .x. X ) .+ X ) = ( X .+ ( y .x. X ) ) )
+                      -> ( ( -u y .x. X ) .+ X ) = ( X .+ ( -u y .x. X ) ) ) $=
+      ( wcel cz co wceq cfv adantr mulgcl oveq1d grpinvadd syl3anc oveq2d cv wa
+      cgrp cneg cminusg simp1 simp3 znegcl syl3an2 eqid grpinvcl 3adant2 grpass
+      w3a syl13anc mulgneg adantl 3eqtr2rd 3eqtr2d grpasscan1 3eqtrd grpasscan2
+      fveq2 grpcl eqtr3d ) EUCJZAUAZKJZFBJZUNZVGFDLZFCLZFVKCLZMZUBZFVGUDZFDLZCL
+      ZFEUENZNZCLZFCLZVQFCLVRVOWAVQFCVOWAFVQVTCLZCLZFVTVQCLZCLZVQVOVFVIVQBJZVTB
+      JZWAWDMVJVFVNVFVHVIUFZOZVJVIVNVFVHVIUGZOZVJWGVNVHVFVPKJVIWGVGUHBDEVPFGHPU
+      IZOZVJWHVNVFVIWHVHBEVSFGVSUJZUKULOBCEFVQVTGIUMUOVOWCWEFCVOWCVKVSNZVTCLZVM
+      VSNZWEVOVQWPVTCVJVQWPMVNBDEVSVGFGHWOUPOZQVOVFVIVKBJZWRWQMWJWLVJWTVNBDEVGF
+      GHPOZBCEVSFVKGIWORSVOWEVTWPCLZVLVSNZWRVOVQWPVTCWSTVOVFWTVIXCXBMWJXAWLBCEV
+      SVKFGIWORSVNXCWRMVJVLVMVSVCUQURUSTVOVFVIWGWFVQMWJWLWNBCEVSFVQGIWOUTSVAQVO
+      VFVRBJZVIWBVRMWJVJXDVNVJVFVIWGXDWIWKWMBCEFVQGIVDSOWLBCEVSVRFGIWOVBSVE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
