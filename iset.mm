@@ -146879,6 +146879,25 @@ $)
       ZUJUKPUDUFULUEACDFGIQRABCDEUHGHISTUGUIFEBUDUFUIFPUEACDFGIUARUBUC $.
   $}
 
+  ${
+    $d .0. x y $.  $d B x y $.  $d G x y $.  $d N x y $.
+    mulgnn0z.b $e |- B = ( Base ` G ) $.
+    mulgnn0z.t $e |- .x. = ( .g ` G ) $.
+    mulgnn0z.o $e |- .0. = ( 0g ` G ) $.
+    $( A group multiple of the identity, for nonnegative multiple.
+       (Contributed by Mario Carneiro, 13-Dec-2014.) $)
+    mulgnn0z $p |- ( ( G e. Mnd /\ N e. NN0 ) -> ( N .x. .0. ) = .0. ) $=
+      ( vx vy wcel cn cc0 wceq co wa cfv c1 eqid adantr cn0 wo elnn0 cplusg csn
+      cmnd cxp cseq mndidcl mulgnn syl2anr mndlid mpdan cuz simpr nnuz eleqtrdi
+      id cv cfz elfznn fvconst2g syl2an ialgrlemconst mndcl 3expb adantlr eqtrd
+      seq3id3 oveq1 mulg0 syl sylan9eqr jaodan sylan2b ) DUAKCUFKZDLKZDMNZUBDEB
+      OZENZDUCVPVQVTVRVPVQPZVSDCUDQZLEUEUGZRUHZQZEVQVQEAKZVSWENVPVQURACEFHUIZAW
+      BWDBCDEFWBSZGWDSUJUKWAIJWBAWCRDEVPEEWBOENZVQVPWFWIWGAWBCEEFWHHULUMTWADLRU
+      NQVPVQUOUPUQWAWFIUSZLKWJWCQENWJRDUTOKVPWFVQWGTZWJDVALEWJAVBVCWKWAIEARLUPW
+      KVDVPWJAKZJUSZAKZPWJWMWBOAKZVQVPWLWNWOAWBCWJWMFWHVEVFVGVIVHVRVPVSMEBOZEDM
+      EBVJVPWFWPENWGABCEEFHGVKVLVMVNVO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
