@@ -18715,7 +18715,9 @@ New usage of "qlaxr5i" is discouraged (0 uses).
 New usage of "quoremnn0ALT" is discouraged (0 uses).
 New usage of "r19.12OLD" is discouraged (0 uses).
 New usage of "r19.21vOLD" is discouraged (0 uses).
+New usage of "r19.29OLD" is discouraged (0 uses).
 New usage of "r19.29d2rOLD" is discouraged (0 uses).
+New usage of "r19.29rOLD" is discouraged (0 uses).
 New usage of "r19.29vvaOLD" is discouraged (0 uses).
 New usage of "r19.30OLD" is discouraged (0 uses).
 New usage of "r19.35OLD" is discouraged (0 uses).
@@ -18817,6 +18819,9 @@ New usage of "rexcomOLD" is discouraged (0 uses).
 New usage of "reximdvaiOLD" is discouraged (0 uses).
 New usage of "reximiaOLD" is discouraged (0 uses).
 New usage of "rexlimddvcbv" is discouraged (0 uses).
+New usage of "rexlimivOLD" is discouraged (0 uses).
+New usage of "rexlimivaOLD" is discouraged (0 uses).
+New usage of "rexlimivwOLD" is discouraged (0 uses).
 New usage of "rexn0OLD" is discouraged (0 uses).
 New usage of "rexprgOLD" is discouraged (0 uses).
 New usage of "rexrnmpt" is discouraged (0 uses).
@@ -21081,7 +21086,9 @@ Proof modification of "qexALT" is discouraged (64 steps).
 Proof modification of "quoremnn0ALT" is discouraged (360 steps).
 Proof modification of "r19.12OLD" is discouraged (69 steps).
 Proof modification of "r19.21vOLD" is discouraged (60 steps).
+Proof modification of "r19.29OLD" is discouraged (39 steps).
 Proof modification of "r19.29d2rOLD" is discouraged (51 steps).
+Proof modification of "r19.29rOLD" is discouraged (39 steps).
 Proof modification of "r19.29vvaOLD" is discouraged (42 steps).
 Proof modification of "r19.30OLD" is discouraged (66 steps).
 Proof modification of "r19.35OLD" is discouraged (72 steps).
@@ -21162,6 +21169,9 @@ Proof modification of "rexbidvaALT" is discouraged (10 steps).
 Proof modification of "rexcomOLD" is discouraged (67 steps).
 Proof modification of "reximdvaiOLD" is discouraged (28 steps).
 Proof modification of "reximiaOLD" is discouraged (21 steps).
+Proof modification of "rexlimivOLD" is discouraged (23 steps).
+Proof modification of "rexlimivaOLD" is discouraged (13 steps).
+Proof modification of "rexlimivwOLD" is discouraged (14 steps).
 Proof modification of "rexn0OLD" is discouraged (17 steps).
 Proof modification of "rexprgOLD" is discouraged (17 steps).
 Proof modification of "rexsngOLD" is discouraged (10 steps).
