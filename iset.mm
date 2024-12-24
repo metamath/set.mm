@@ -147122,6 +147122,14 @@ $)
       UUQWMWPWSWCWDZUULABCWSFGHVJTABCYCDUUCGHYKVSTUUHUUMXDDBUUHWSMZFBOZUUMXDUUH
       WHUUQWKUUTUUMPUUPUURUULABCYCWSFGHYKVHTUUHUUSEFBWMUUSEPUUGWMEYAWFRUSVAVRVM
       WAVEWEWG $.
+
+    $( Reversed product of group multiples.  (Contributed by Paul Chapman,
+       17-Apr-2009.)  (Revised by AV, 30-Aug-2021.) $)
+    mulgassr $p |- ( ( G e. Grp /\ ( M e. ZZ /\ N e. ZZ /\ X e. B ) ) ->
+                              ( ( N x. M ) .x. X ) = ( M .x. ( N .x. X ) ) ) $=
+      ( cgrp wcel cz w3a wa cmul co wceq cc zcn 3ad2ant2 3ad2ant1 adantl oveq1d
+      mulcomd mulgass eqtrd ) CIJZDKJZEKJZFAJZLZMZEDNOZFBODENOZFBODEFBOBOUKULUM
+      FBUJULUMPUFUJEDUHUGEQJUIERSUGUHDQJUIDRTUCUAUBABCDEFGHUDUE $.
   $}
 
 
