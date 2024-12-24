@@ -146910,6 +146910,39 @@ $)
       SVD $.
   $}
 
+  ${
+    $d x y z u v B $.  $d x y z u v G $.  $d x y z u v M $.  $d x y z u v N $.
+    $d x y z u v .+ $.  $d x y z u v X $.
+    mulgnndir.b $e |- B = ( Base ` G ) $.
+    mulgnndir.t $e |- .x. = ( .g ` G ) $.
+    mulgnndir.p $e |- .+ = ( +g ` G ) $.
+    $( Sum of group multiples, for positive multiples.  (Contributed by Mario
+       Carneiro, 11-Dec-2014.)  (Revised by AV, 29-Aug-2021.) $)
+    mulgnndir $p |- ( ( G e. Smgrp /\ ( M e. NN /\ N e. NN /\ X e. B ) ) ->
+                      ( ( M + N ) .x. X ) = ( ( M .x. X ) .+ ( N .x. X ) ) ) $=
+      ( wcel cn wa caddc co c1 cfv cv wceq cvv vx vy vz vu vv csgrp w3a csn cxp
+      cseq cmgm sgrpmgm mgmcl syl3an1 3expb adantlr sgrpass cuz simpr2 eleqtrdi
+      cz nnuz simpr1 nnzd eluzadd syl2anc nncnd addcomd cc ax-1cn addcom fveq2d
+      sylancl 3eltr4d simpr3 ialgrlemconst seq3split nnaddcld mulgnn cfz elfznn
+      eqid fvconst2g syl2an nnaddcl syl2anr eqtr4d elnnuz biimpri simpl eqeltrd
+      syl2an2r elexd 1nn adantr eluznn sylancom simprl cplusg eqeltrid ad2antrr
+      a1i plusgslid slotex simprr ovexg syl3anc seqeq1d fveq12d 3eqtr4d oveq12d
+      seq3shft2 ) DUFKZELKZFLKZGAKZUGZMZEFNOZBLGUHUIZPUJZQZEYAQZXSBXTEPNOZUJZQZ
+      BOXSGCOZEGCOZFGCOZBOXRUAUBUCBAXTPEXSXMUARZAKZUBRZAKZMYJYLBOZAKZXQXMYKYMYO
+      XMDUKKYKYMYODULADYJYLBHJUMUNUOUPXMYKYMUCRZAKUGYNYPBOYJYLYPBOBOSXQADYJYLBY
+      PHJUQUPXRFENOZPENOZURQZXSYDURQXRFPURQZKEVAKYQYSKXRFLYTXMXNXOXPUSZVBUTZXRE
+      XMXNXOXPVCZVDZEPFVEVFXREFXREUUCVGZXRFUUAVGVHZXRYDYRURXREVIKPVIKYDYRSUUEVJ
+      EPVKVMZVLVNXRELYTUUCVBUTXRUAGAPLVBXMXNXOXPVOZVPVQXRXSLKXPYGYBSXREFUUCUUAV
+      RUUHABYACDXSGHJIYAWBZVSVFXRYHYCYIYFBXRXNXPYHYCSUUCUUHABYACDEGHJIUUIVSVFXR
+      FYAQZYQBXTYRUJZQYIYFXRUDUEBTUAXTXTEPFUUBUUDXRYJPFVTOKZMYJXTQZGYJENOZXTQZX
+      RXPYJLKZUUMGSUULUUHYJFWAZLGYJAWCWDXRXPUULUUNLKZUUOGSUUHUULUUPXNUURXRUUQUU
+      CYJEWEWFLGUUNAWCWLWGXRXPUDRZLKZUUSXTQZTKZUUSYTKZUUHUUTUVCUUSWHWIXPUUTMZUV
+      AAUVDUVAGALGUUSAWCXPUUTWJWKWMZWDXRXPUUSYSKZUUTUVBUUHXRUVFYRLKUUTXRUVFMZPE
+      PLKUVGWNXBXRXNUVFUUCWOVRUUSYRWPWQUVEWLXRUUSTKZUERZTKZMZMUVHBTKZUVJUUSUVIB
+      OTKXRUVHUVJWRXMUVLXQUVKXMBDWSQTJDWSUFXCXDWTXAXRUVHUVJXEUUSUVIBTTTXFXGXLXR
+      XOXPYIUUJSUUAUUHABYACDFGHJIUUIVSVFXRXSYQYEUUKXRYDYRBXTUUGXHUUFXIXJXKXJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
