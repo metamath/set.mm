@@ -147010,6 +147010,14 @@ $)
       NVSWAWBYEXGXIXLACDFGHIVETZABDWOWHWIHJXTVFTVGVHVIWNVSWGAKZWQWGOXGWNVSXQWBY
       HXGXSXLACDWEGHIVETADWOWGHXTVJVKWNVSWJAKZWSWJOXGWNVSYDYEYIXGYFYGABDWHWIHJV
       LTADWOWJHXTVJVKVHWDXQWFWMVMZXRXQWEVOKYJWEVPVNVQVR $.
+
+    $( Group multiple (exponentiation) operation at a successor, extended to
+       ` ZZ ` .  (Contributed by Mario Carneiro, 11-Dec-2014.) $)
+    mulgp1 $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B ) ->
+                                ( ( N + 1 ) .x. X ) = ( ( N .x. X ) .+ X ) ) $=
+      ( cgrp wcel cz w3a c1 caddc co wceq 1z mulgdir mp3anr2 3impb mulg1 oveq2d
+      3ad2ant3 eqtrd ) DJKZELKZFAKZMZENOPFCPZEFCPZNFCPZBPZUKFBPUFUGUHUJUMQZUFUG
+      NLKUHUNRABCDENFGHISTUAUIULFUKBUHUFULFQUGACDFGHUBUDUCUE $.
   $}
 
 
