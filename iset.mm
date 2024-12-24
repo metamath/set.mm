@@ -147020,6 +147020,36 @@ $)
       NLKUHUNRABCDENFGHISTUAUIULFUKBUHUFULFQUGACDFGHUBUDUCUE $.
   $}
 
+  ${
+    $d n x B $.  $d n x G $.  $d n x I $.  $d n x .x. $.  $d n x X $.
+    $d x N $.
+    mulgneg2.b $e |- B = ( Base ` G ) $.
+    mulgneg2.m $e |- .x. = ( .g ` G ) $.
+    mulgneg2.i $e |- I = ( invg ` G ) $.
+    $( Group multiple (exponentiation) operation at a negative integer.
+       (Contributed by Mario Carneiro, 13-Dec-2014.) $)
+    mulgneg2 $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B ) ->
+                                      ( -u N .x. X ) = ( N .x. ( I ` X ) ) ) $=
+      ( wcel cneg co cfv wceq cc0 c1 negeq oveq1d oveq1 eqeq12d vx vn cgrp neg0
+      cz cv caddc wa eqtrdi c0g eqid mulg0 adantl grpinvcl syl eqtr4d wi cplusg
+      cn0 cc nn0cn ax-1cn negdi sylancl simpll nn0negz 1z znegcl simplr mulgdir
+      mp1i syl13anc mulgm1 adantr oveq2d 3eqtrd grpmnd ad2antrr simpr mulgnn0p1
+      cmnd syl3anc syl5ibr ex cn fveq2 nnnegz mulgneg id mulgnegnn zindd 3impia
+      syl2anr 3com23 ) CUCJZFAJZEUEJZEKZFBLZEFDMZBLZNZWOWPWQXBUAUFZKZFBLZXCWTBL
+      ZNOFBLZOWTBLZNUBUFZKZFBLZXIWTBLZNZXJKZFBLZXJWTBLZNZXIPUGLZKZFBLZXRWTBLZNZ
+      XBWOWPUHZUAUBEXCONZXEXGXFXHYDXDOFBYDXDOKOXCOQUDUIRXCOWTBSTXCXINZXEXKXFXLY
+      EXDXJFBXCXIQRXCXIWTBSTXCXRNZXEXTXFYAYFXDXSFBXCXRQRXCXRWTBSTXCXJNZXEXOXFXP
+      YGXDXNFBXCXJQRXCXJWTBSTXCENZXEWSXFXAYHXDWRFBXCEQRXCEWTBSTYCXGCUJMZXHWPXGY
+      INWOABCFYIGYIUKZHULUMYCWTAJZXHYINACDFGIUNZABCWTYIGYJHULUOUPYCXIUSJZXMYBUQ
+      XMYBYCYMUHZXKWTCURMZLZXLWTYOLZNXKXLWTYOSYNXTYPYAYQYNXTXJPKZUGLZFBLZXKYRFB
+      LZYOLZYPYNXSYSFBYNXIUTJZPUTJXSYSNYMUUCYCXIVAUMVBXIPVCVDRYNWOXJUEJZYRUEJZW
+      PYTUUBNWOWPYMVEYMUUDYCXIVFUMPUEJUUEYNVGPVHVKWOWPYMVIAYOBCXJYRFGHYOUKZVJVL
+      YNUUAWTXKYOYCUUAWTNYMABCDFGHIVMVNVOVPYNCWAJZYMYKYAYQNWOUUGWPYMCVQVRYCYMVS
+      YCYKYMYLVNAYOBCXIWTGHUUFVTWBTWCWDYCXIWEJZXMXQUQXMXQYCUUHUHZXKDMZXLDMZNXKX
+      LDWFUUIXOUUJXPUUKUUIWOUUDWPXOUUJNWOWPUUHVEUUHUUDYCXIWGUMWOWPUUHVIABCDXJFG
+      HIWHWBUUHUUHYKXPUUKNYCUUHWIYLABCDXIWTGHIWJWMTWCWDWKWLWN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
