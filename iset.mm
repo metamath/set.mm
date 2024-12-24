@@ -147175,6 +147175,34 @@ $)
       VCVEWBVDABCDGHITUQVBVDVEWCVCABCFGHITSAVLCVREVJVOHVQWAJURUSUTVA $.
   $}
 
+  ${
+    $d m n B $.  $d m n F $.  $d m n G $.  $d m n H $.  $d n N $.  $d m n X $.
+    $d m n .x. $.  $d m n .X. $.
+    mhmmulg.b $e |- B = ( Base ` G ) $.
+    mhmmulg.s $e |- .x. = ( .g ` G ) $.
+    mhmmulg.t $e |- .X. = ( .g ` H ) $.
+    $( A homomorphism of monoids preserves group multiples.  (Contributed by
+       Mario Carneiro, 14-Jun-2015.) $)
+    mhmmulg $p |- ( ( F e. ( G MndHom H ) /\ N e. NN0 /\ X e. B ) ->
+        ( F ` ( N .x. X ) ) = ( N .X. ( F ` X ) ) ) $=
+      ( wcel co cfv wceq wi cc0 oveq1 eqeq12d eqid vn vm cn0 cmhm wa cv fvoveq1
+      c1 caddc imbi2d c0g mhm0 adantr adantl fveq2d cbs mhmf ffvelcdmda 3eqtr4d
+      mulg0 syl cplusg cmnd mhmrcl1 ad2antrr simplr mulgnn0p1 syl3anc mulgnn0cl
+      simpr simpll an32s mhmlin mhmrcl2 syl5ibr expcom a2d nn0ind 3impib 3com12
+      eqtrd ) GUCLZDEFUDMLZHALZGHBMDNZGHDNZCMZOZWBWCWDWHWCWDUEZUAUFZHBMDNZWJWFC
+      MZOZPWIQHBMZDNZQWFCMZOZPWIUBUFZHBMZDNZWRWFCMZOZPWIWRUHUIMZHBMZDNZXCWFCMZO
+      ZPWIWHPUAUBGWJQOZWMWQWIXHWKWOWLWPWJQHDBUGWJQWFCRSUJWJWROZWMXBWIXIWKWTWLXA
+      WJWRHDBUGWJWRWFCRSUJWJXCOZWMXGWIXJWKXEWLXFWJXCHDBUGWJXCWFCRSUJWJGOZWMWHWI
+      XKWKWEWLWGWJGHDBUGWJGWFCRSUJWIEUKNZDNZFUKNZWOWPWCXMXNOWDEFDXNXLXLTZXNTZUL
+      UMWIWNXLDWDWNXLOWCABEHXLIXOJUTUNUOWIWFFUPNZLZWPXNOWCAXQHDAXQEFDIXQTZUQURZ
+      XQCFWFXNXSXPKUTVAUSWRUCLZWIXBXGWIYAXBXGPXBXGWIYAUEZWTWFFVBNZMZXAWFYCMZOWT
+      XAWFYCRYBXEYDXFYEYBXEWSHEVBNZMZDNZYDYBXDYGDYBEVCLZYAWDXDYGOWCYIWDYAEFDVDZ
+      VEWIYAVJZWCWDYAVFZAYFBEWRHIJYFTZVGVHUOYBWCWSALZWDYHYDOWCWDYAVKWCYAWDYNWCY
+      AUEZWDUEYIYAWDYNWCYIYAWDYJVEWCYAWDVFYOWDVJABEWRHIJVIVHVLYLAYFYCEFDWSHIYMY
+      CTZVMVHWAYBFVCLZYAXRXFYEOWCYQWDYAEFDVNVEYKWIXRYAXTUMXQYCCFWRWFXSKYPVGVHSV
+      OVPVQVRVSVT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
