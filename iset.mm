@@ -147158,6 +147158,23 @@ $)
       EWRWJXAAKZXIXAOYAWJWJWMWKWQWNYOWJWFYBYDABCEFHJWGWHAXGCXAGHYFIWIWCWB $.
   $}
 
+  ${
+    mulgsubdir.b $e |- B = ( Base ` G ) $.
+    mulgsubdir.t $e |- .x. = ( .g ` G ) $.
+    mulgsubdir.d $e |- .- = ( -g ` G ) $.
+    $( Subtraction of a group element from itself.  (Contributed by Mario
+       Carneiro, 13-Dec-2014.) $)
+    mulgsubdir $p |- ( ( G e. Grp /\ ( M e. ZZ /\ N e. ZZ /\ X e. B ) ) ->
+      ( ( M - N ) .x. X ) = ( ( M .x. X ) .- ( N .x. X ) ) ) $=
+      ( cgrp wcel cz co cfv wceq eqid zcnd 3adant3r1 mulgcl w3a wa caddc cplusg
+      cneg znegcl mulgdir syl3anr2 simpr1 simpr2 negsubd oveq1d cminusg mulgneg
+      cmin oveq2d 3adant3r2 grpsubval syl2anc eqtr4d 3eqtr3d ) CKLZDMLZFMLZGALZ
+      UAUBZDFUEZUCNZGBNZDGBNZVGGBNZCUDOZNZDFUONZGBNVJFGBNZENZVDVCVBVGMLVEVIVMPF
+      UFAVLBCDVGGHIVLQZUGUHVFVHVNGBVFDFVFDVBVCVDVEUIRVFFVBVCVDVEUJRUKULVFVMVJVO
+      CUMOZOZVLNZVPVFVKVSVJVLVBVDVEVKVSPVCABCVRFGHIVRQZUNSUPVFVJALZVOALZVPVTPVB
+      VCVEWBVDABCDGHITUQVBVDVEWCVCABCFGHITSAVLCVREVJVOHVQWAJURUSUTVA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
