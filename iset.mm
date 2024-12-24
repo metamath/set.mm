@@ -147050,6 +147050,33 @@ $)
       HIWHWBUUHUUHYKXPUUKNYCUUHWIYLABCDXIWTGHIWJWMTWCWDWKWLWN $.
   $}
 
+  ${
+    $d m n B $.  $d m n G $.  $d m n N $.  $d m n .x. $.  $d m n X $.
+    $d n M $.
+    mulgass.b $e |- B = ( Base ` G ) $.
+    mulgass.t $e |- .x. = ( .g ` G ) $.
+    $( Product of group multiples, for positive multiples in a semigroup.
+       (Contributed by Mario Carneiro, 13-Dec-2014.)  (Revised by AV,
+       29-Aug-2021.) $)
+    mulgnnass $p |- ( ( G e. Smgrp /\ ( M e. NN /\ N e. NN /\ X e. B ) ) ->
+                              ( ( M x. N ) .x. X ) = ( M .x. ( N .x. X ) ) ) $=
+      ( vn wcel cn cmul co wceq wi c1 oveq1 oveq1d eqeq12d imbi2d vm csgrp nncn
+      w3a cv caddc mulid2d 3ad2ant1 sgrpmgm mulgnncl syl3an1 3coml mulg1 eqtr4d
+      cmgm syl wa cplusg cfv cc adantr simpr1 nncnd adddirp1d nnmulcl 3ad2antr1
+      simpr3 simpr2 eqid mulgnndir syl13anc eqtrd mulgnnp1 sylan2 syl5ibr nnind
+      ex a2d 3expd com4r 3imp2 ) CUBJZDKJZEKJZFAJZDELMZFBMZDEFBMZBMZNZWCWDWEWBW
+      JWCWDWEWBWJWDWEWBUDZIUEZELMZFBMZWLWHBMZNZOWKPELMZFBMZPWHBMZNZOWKUAUEZELMZ
+      FBMZXAWHBMZNZOWKXAPUFMZELMZFBMZXFWHBMZNZOWKWJOIUADWLPNZWPWTWKXKWNWRWOWSXK
+      WMWQFBWLPELQRWLPWHBQSTWLXANZWPXEWKXLWNXCWOXDXLWMXBFBWLXAELQRWLXAWHBQSTWLX
+      FNZWPXJWKXMWNXHWOXIXMWMXGFBWLXFELQRWLXFWHBQSTWLDNZWPWJWKXNWNWGWOWIXNWMWFF
+      BWLDELQRWLDWHBQSTWKWRWHWSWKWQEFBWDWEWQENWBWDEEUCUGUHRWKWHAJZWSWHNWBWDWEXO
+      WBCUOJWDWEXOCUIABCEFGHUJUKULZABCWHGHUMUPUNXAKJZWKXEXJXQWKXEXJOXEXJXQWKUQZ
+      XCWHCURUSZMZXDWHXSMZNXCXDWHXSQXRXHXTXIYAXRXHXBEUFMZFBMZXTXRXGYBFBXRXAEXQX
+      AUTJWKXAUCVAXREXQWDWEWBVBZVCVDRXRWBXBKJZWDWEYCXTNXQWDWEWBVGXQWEWDYEWBXAEV
+      EVFYDXQWDWEWBVHAXSBCXBEFGHXSVIZVJVKVLWKXQXOXIYANXPAXSBCXAWHGHYFVMVNSVOVQV
+      RVPVSVTWA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
