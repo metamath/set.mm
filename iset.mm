@@ -147132,6 +147132,32 @@ $)
       FBUJULUMPUFUJEDUHUGEQJUIERSUGUHDQJUIDRTUCUAUBABCDEFGHUDUE $.
   $}
 
+  ${
+    mulgmodid.b $e |- B = ( Base ` G ) $.
+    mulgmodid.o $e |- .0. = ( 0g ` G ) $.
+    mulgmodid.t $e |- .x. = ( .g ` G ) $.
+    $( Casting out multiples of the identity element leaves the group multiple
+       unchanged.  (Contributed by Paul Chapman, 17-Apr-2009.)  (Revised by AV,
+       30-Aug-2021.) $)
+    mulgmodid $p |- ( ( G e. Grp /\ ( N e. ZZ /\ M e. NN )
+                        /\ ( X e. B /\ ( M .x. X ) = .0. ) )
+                      -> ( ( N mod M ) .x. X ) = ( N .x. X ) ) $=
+      ( wcel cz wa co wceq cfv cq adantl 3ad2ant2 oveq1d cgrp w3a cmo cdiv cmul
+      cn cfl cneg cplusg cmin caddc cc0 clt wbr zq adantr nngt0 modqval syl3anc
+      nnq cc zcn nnz znq zmulcld zcnd negsubd simp1 simpl znegcld 3ad2ant3 eqid
+      flqcld mulgdir syl13anc 3eqtr2d nncn mulneg2d mulgassr oveq2 mulgz 3eqtrd
+      syl2anc eqtr3d oveq2d id mulgcl syl3an grprid ) CUAKZELKZDUFKZMZFAKZDFBNZ
+      GOZMZUBZEDUCNZFBNZEFBNZDEDUDNZUGPZUENZUHZFBNZCUIPZNZXAGXGNZXAWRWTEXDUJNZF
+      BNEXEUKNZFBNZXHWRWSXJFBWMWJWSXJOZWQWMEQKZDQKZULDUMUNZXMWKXNWLEUOUPWLXOWKD
+      UTRWLXPWKDUQREDURUSSTWRXKXJFBWMWJXKXJOWQWMEXDWKEVAKWLEVBUPWMXDWMDXCWLDLKZ
+      WKDVCRZWMXBEDVDZVMZVEVFVGSTWRWJWKXELKWNXLXHOWJWMWQVHZWMWJWKWQWKWLVIZSWRXD
+      WRDXCWMWJXQWQXRSZWMWJXCLKWQXTSVEVJWQWJWNWMWNWPVIZVKZAXGBCEXEFHJXGVLZVNVOV
+      PWRXFGXAXGWRDXCUHZUENZFBNZXFGWRYHXEFBWMWJYHXEOWQWMDXCWLDVAKWKDVQRWMXCXTVF
+      VRSTWRYIYGWOBNZYGGBNZGWRWJYGLKZXQWNYIYJOYAWRXCWRXBWMWJXBQKWQXSSVMVJZYCYEA
+      BCYGDFHJVSVOWQWJYJYKOZWMWPYNWNWOGYGBVTRVKWRWJYLYKGOYAYMABCYGGHJIWAWCWBWDW
+      EWRWJXAAKZXIXAOYAWJWJWMWKWQWNYOWJWFYBYDABCEFHJWGWHAXGCXAGHYFIWIWCWB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
