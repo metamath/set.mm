@@ -147203,6 +147203,18 @@ $)
       OVPVQVRVSVT $.
   $}
 
+  ${
+    $d x y G $.  $d x y N $.  $d x y S $.  $d x .xb $.  $d x y X $.
+    submmulgcl.t $e |- .xb = ( .g ` G ) $.
+    $( Closure of the group multiple (exponentiation) operation in a submonoid.
+       (Contributed by Mario Carneiro, 13-Jan-2015.) $)
+    submmulgcl $p |- ( ( S e. ( SubMnd ` G ) /\ N e. NN0 /\ X e. S ) ->
+      ( N .xb X ) e. S ) $=
+      ( vx vy csubmnd cfv wcel cbs cplusg cmnd c0g eqid submrcl submss submcl
+      cv subm0cl mulgnn0subcl ) ACIJKGHCLJZCMJZABCDNECOJZUCPZFUDPZACQUCACUFRUDA
+      CGTHTUGSUEPZACUEUHUAUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
