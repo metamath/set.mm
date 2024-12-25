@@ -10662,12 +10662,32 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>df-drng</td>
+  <td><i>none</i></td>
+  <td>The set.mm definition is in terms of having an inverse
+  if not equal to zero.  We may want a new slot for apartness
+  (the approach taken in [Guevers]), or perhaps we can define
+  a division ring as a ring for which ` A. x e. ( Base `` R )
+  ( -. x e. ( ` Unit ` `` R ) -> x = ( 0g `` R ) ) ` (that is,
+  that apartness with zero is tight, although presumably we'd
+  want to show that the relation generated in this fashion
+  can be shown to be an apartness relation, assuming that can
+  be done).</td>
+</tr>
+
+<tr>
+  <td>df-field</td>
+  <td><i>none</i></td>
+  <td>once we define division rings this should follow</td>
+</tr>
+
+<tr>
   <td id="missing-df-cnfld">df-cnfld and all theorems using CCfld</td>
   <td><i>none</i></td>
-  <td>Could presumably be defined in some form, but we'd have to look
-  at the literature definitions of a constructive field and see how
-  we'd need to define this.  Plus questions about whether
-  to define order in terms of ` < ` or ` <_ ` .</td>
+  <td>See df-drng and df-field concerning how we want to handle
+  apartness.  Plus questions about whether to define order in terms
+  of ` < ` or ` <_ ` (presumably the former, unlike set.mm which
+  uses the latter).</td>
 </tr>
 
 <TR>
