@@ -147218,6 +147218,36 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Rings
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Multiplicative Group
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c mulGrp $. $( Multiplicative group $)
+
+  $( Multiplicative group. $)
+  cmgp $a class mulGrp $.
+
+  $( Define a structure that puts the multiplication operation of a ring in the
+     addition slot.  Note that this will not actually be a group for the
+     average ring, or even for a field, but it will be a monoid, and we get a
+     group if we restrict to the elements that have inverses.  This allows us
+     to formalize such notions as "the multiplication operation of a ring is a
+     monoid" or "the multiplicative identity" in terms of the identity of a
+     monoid ( ~ df-ur ).  (Contributed by Mario Carneiro, 21-Dec-2014.) $)
+  df-mgp $a |- mulGrp = ( w e. _V |->
+    ( w sSet <. ( +g ` ndx ) , ( .r ` w ) >. ) ) $.
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
@@ -164438,6 +164468,9 @@ htmldef "MndHom" as " MndHom ";
 htmldef "SubMnd" as "SubMnd";
   althtmldef "SubMnd" as "SubMnd";
   latexdef "SubMnd" as "\mathrm{SubMnd}";
+htmldef "mulGrp" as "mulGrp";
+  althtmldef "mulGrp" as "mulGrp";
+  latexdef "mulGrp" as "\mathrm{mulGrp}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
