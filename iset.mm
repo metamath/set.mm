@@ -147245,6 +147245,13 @@ $)
   df-mgp $a |- mulGrp = ( w e. _V |->
     ( w sSet <. ( +g ` ndx ) , ( .r ` w ) >. ) ) $.
 
+  $( The multiplicative group operator is a function.  (Contributed by Mario
+     Carneiro, 11-Mar-2015.) $)
+  fnmgp $p |- mulGrp Fn _V $=
+    ( vx cvv cv cnx cplusg cfv cmulr cop csts co cmgp wcel cslot wceq plusgslid
+    cn vex simpri mulrslid slotex elv setsex mp3an df-mgp fnmpti ) ABACZDEFZUFG
+    FZHIJZKUFBLUGPLZUHBLZUIBLAQEUGMNUJORUKAUFGBSTUAUGUHUFBBPUBUCAUDUE $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
