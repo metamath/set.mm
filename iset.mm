@@ -147371,6 +147371,18 @@ $)
       cvv tsetndxnplusgndx cslot plusgslid simpri setsslnid eqid mgpvalg fveq2d
       cn mpdan eqtr4d ) ACEZAFGZAHIGZAJGZKLMZFGZBFGUJUMREUKUONAJCOPCUMULFRAQSIU
       LTNULUGEUAUBUCUHUJBUNFAUMBCDUMUDUEUFUI $.
+
+    ${
+      mgptopn.2 $e |- J = ( TopOpen ` R ) $.
+      $( Topology of the multiplication group.  (Contributed by Mario Carneiro,
+         5-Oct-2015.) $)
+      mgptopng $p |- ( R e. V -> J = ( TopOpen ` M ) ) $=
+        ( wcel cts cfv cbs crest co ctopn topnvalg mgptsetg mgpbasg oveq12d cvv
+        eqid cmgp eqtr3d eqtrid wceq fnmgp elex funfvex funfni sylancr eqeltrid
+        wfn syl eqtrd ) ADGZBCHIZCJIZKLZCMIZUMBAMIZUPFUMAHIZAJIZKLURUPUTUSDAUTS
+        ZUSSNUMUSUNUTUOKACDEOUTACDEVAPQUAUBUMCRGUPUQUCUMCATIZREUMTRUJARGVBRGZUD
+        ADUEVCRATATUFUGUHUIUOUNRCUOSUNSNUKUL $.
+    $}
   $}
 
 
