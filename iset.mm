@@ -147264,6 +147264,13 @@ $)
       a1i slotex setsex mpd3an23 fvmptd3 eqtrid ) ADHZCAIJAKLJZBMZNOZEUSGAGPZUT
       VCQJZMZNOVBRIRGUCVCASZVCAVEVANVFUAVFVDBUTVFVDAQJZBVCAQUDFUBUEUFADUGUSUTTH
       ZBRHVBRHVHUSLUTUHSVHUIUJUMUSBVGRFAQDUKUNULUTBADRTUOUPUQUR $.
+
+    $( Value of the group operation of the multiplication group.  (Contributed
+       by Mario Carneiro, 21-Dec-2014.) $)
+    mgpplusgg $p |- ( R e. V -> .x. = ( +g ` M ) ) $=
+      ( wcel cnx cplusg cfv cop csts co cvv wceq cmulr mulrslid slotex eqeltrid
+      plusgslid setsslid mpdan mgpvalg fveq2d eqtr4d ) ADGZBAHIJBKLMZIJZCIJUFBN
+      GBUHOUFBAPJNFAPDQRSDBINATUAUBUFCUGIABCDEFUCUDUE $.
   $}
 
 
