@@ -143162,6 +143162,64 @@ $)
   dsslid $p |- ( dist = Slot ( dist ` ndx ) /\ ( dist ` ndx ) e. NN ) $=
     ( cds c1 c2 cdc df-ds 1nn0 2nn decnncl ndxslid ) ABCDEBCFGHI $.
 
+  $( The index of the slot for the distance in an extensible structure is a
+     positive integer.  (Contributed by AV, 28-Oct-2024.) $)
+  dsndxnn $p |- ( dist ` ndx ) e. NN $=
+    ( cnx cds cfv c1 c2 cdc cn dsndx 1nn0 2nn decnncl eqeltri ) ABCDEFGHDEIJKL
+    $.
+
+  $( The index of the slot for the base set is less then the index of the slot
+     for the distance in an extensible structure.  (Contributed by AV,
+     28-Oct-2024.) $)
+  basendxltdsndx $p |- ( Base ` ndx ) < ( dist ` ndx ) $=
+    ( c1 c2 cdc cnx cbs cfv cds clt 1nn 2nn0 1lt10 declti basendx dsndx 3brtr4i
+    1nn0 ) AABCDEFDGFHABAIJPKLMNO $.
+
+  $( The slot for the distance is not the slot for the base set in an
+     extensible structure.  (Contributed by AV, 21-Oct-2024.)  (Proof shortened
+     by AV, 28-Oct-2024.) $)
+  dsndxnbasendx $p |- ( dist ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx cbs cfv cds basendxnn nnrei basendxltdsndx gtneii ) ABCZADCIEFGH $.
+
+  $( The slot for the distance function is not the slot for the group operation
+     in an extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
+  dsndxnplusgndx $p |- ( dist ` ndx ) =/= ( +g ` ndx ) $=
+    ( cnx cds cfv cplusg wne c1 c2 cdc 2re 1nn 2nn0 2lt10 declti dsndx plusgndx
+    gtneii neeq12i mpbir ) ABCZADCZEFGHZGEGUAIFGGJKKLMPSUATGNOQR $.
+
+  $( The slot for the distance function is not the slot for the ring
+     multiplication operation in an extensible structure.  (Contributed by AV,
+     31-Oct-2024.) $)
+  dsndxnmulrndx $p |- ( dist ` ndx ) =/= ( .r ` ndx ) $=
+    ( cnx cds cfv cmulr wne c1 c2 cdc c3 3re 1nn 2nn0 3lt10 declti gtneii dsndx
+    3nn0 mulrndx neeq12i mpbir ) ABCZADCZEFGHZIEIUCJFGIKLQMNOUAUCUBIPRST $.
+
+  $( The slots ` Scalar ` , ` .s ` and ` .i ` are different from the slot
+     ` dist ` .  (Contributed by AV, 29-Oct-2024.) $)
+  slotsdnscsi $p |- ( ( dist ` ndx ) =/= ( Scalar ` ndx )
+                   /\ ( dist ` ndx ) =/= ( .s ` ndx )
+                   /\ ( dist ` ndx ) =/= ( .i ` ndx ) ) $=
+    ( cnx cds cfv csca wne cvsca cip c1 c2 cdc c5 1nn 2nn0 declti dsndx neeq12i
+    gtneii mpbir c6 c8 5re 5nn0 5lt10 scandx 6re 6nn0 6lt10 vscandx 8lt10 ipndx
+    8re 8nn0 3pm3.2i ) ABCZADCZEZUNAFCZEZUNAGCZEZUPHIJZKEKVAUAHIKLMUBUCNQUNVAUO
+    KOUDPRURVASESVAUEHISLMUFUGNQUNVAUQSOUHPRUTVATETVAUKHITLMULUINQUNVAUSTOUJPRU
+    M $.
+
+  $( The slot for the distance function is not the slot for the topology in an
+     extensible structure.  (Contributed by AV, 29-Oct-2024.) $)
+  dsndxntsetndx $p |- ( dist ` ndx ) =/= ( TopSet ` ndx ) $=
+    ( cnx cds cfv cts wne c1 c2 cdc 9re 1nn 2nn0 9nn0 9lt10 declti gtneii dsndx
+    c9 tsetndx neeq12i mpbir ) ABCZADCZEFGHZQEQUCIFGQJKLMNOUAUCUBQPRST $.
+
+  $( The index of the slot for the distance is not the index of other slots.
+     (Contributed by AV, 11-Nov-2024.) $)
+  slotsdifdsndx $p |- ( ( *r ` ndx ) =/= ( dist ` ndx )
+                        /\ ( le ` ndx ) =/= ( dist ` ndx ) ) $=
+    ( cnx cstv cfv cds wne cple c4 c1 c2 cdc 4re 2nn0 4nn0 4lt10 ltneii neeq12i
+    1nn dsndx mpbir cc0 declti starvndx 10re 1nn0 0nn0 2pos declt plendx pm3.2i
+    2nn ) ABCZADCZEZAFCZULEZUMGHIJZEGUPKHIGQLMNUAOUKGULUPUBRPSUOHTJZUPEUQUPUCHT
+    IUDUEUJUFUGOUNUQULUPUHRPSUI $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
