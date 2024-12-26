@@ -142848,6 +142848,25 @@ $)
   scaslid $p |- ( Scalar = Slot ( Scalar ` ndx ) /\ ( Scalar ` ndx ) e. NN ) $=
     ( csca c5 df-sca 5nn ndxslid ) ABCDE $.
 
+  $( The slot for the scalar is not the slot for the base set in an extensible
+     structure.  (Contributed by AV, 21-Oct-2024.) $)
+  scandxnbasendx $p |- ( Scalar ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx csca cfv cbs wne c5 c1 1re 1lt5 gtneii scandx basendx neeq12i mpbir )
+    ABCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slot for the scalar field is not the slot for the group operation in
+     an extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
+  scandxnplusgndx $p |- ( Scalar ` ndx ) =/= ( +g ` ndx ) $=
+    ( cnx csca cfv cplusg wne c5 2re 2lt5 gtneii scandx plusgndx neeq12i mpbir
+    c2 ) ABCZADCZEFNENFGHIOFPNJKLM $.
+
+  $( The slot for the scalar field is not the slot for the ring
+     (multiplication) operation in an extensible structure.  (Contributed by
+     AV, 29-Oct-2024.) $)
+  scandxnmulrndx $p |- ( Scalar ` ndx ) =/= ( .r ` ndx ) $=
+    ( cnx csca cfv cmulr wne c5 c3 3re 3lt5 gtneii scandx mulrndx neeq12i mpbir
+    ) ABCZADCZEFGEGFHIJOFPGKLMN $.
+
   $( Index value of the ~ df-vsca slot.  (Contributed by Mario Carneiro,
      14-Aug-2015.) $)
   vscandx $p |- ( .s ` ndx ) = 6 $=
