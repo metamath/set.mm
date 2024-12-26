@@ -143048,6 +143048,52 @@ $)
       /\ ( TopSet ` ndx ) e. NN ) $=
     ( cts c9 df-tset 9nn ndxslid ) ABCDE $.
 
+  $( The index of the slot for the group operation in an extensible structure
+     is a positive integer.  (Contributed by AV, 31-Oct-2024.) $)
+  tsetndxnn $p |- ( TopSet ` ndx ) e. NN $=
+    ( cnx cts cfv c9 cn tsetndx 9nn eqeltri ) ABCDEFGH $.
+
+  $( The index of the slot for the base set is less then the index of the slot
+     for the topology in an extensible structure.  (Contributed by AV,
+     31-Oct-2024.) $)
+  basendxlttsetndx $p |- ( Base ` ndx ) < ( TopSet ` ndx ) $=
+    ( c1 c9 cnx cbs cfv cts clt 1lt9 basendx tsetndx 3brtr4i ) ABCDECFEGHIJK $.
+
+  $( The slot for the topology is not the slot for the base set in an
+     extensible structure.  (Contributed by AV, 21-Oct-2024.)  (Proof shortened
+     by AV, 31-Oct-2024.) $)
+  tsetndxnbasendx $p |- ( TopSet ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx cbs cfv cts basendxnn nnrei basendxlttsetndx gtneii ) ABCZADCIEFGH $.
+
+  $( The slot for the topology is not the slot for the group operation in an
+     extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
+  tsetndxnplusgndx $p |- ( TopSet ` ndx ) =/= ( +g ` ndx ) $=
+    ( cnx cts cfv cplusg wne c9 2re 2lt9 gtneii tsetndx plusgndx neeq12i mpbir
+    c2 ) ABCZADCZEFNENFGHIOFPNJKLM $.
+
+  $( The slot for the topology is not the slot for the ring multiplication
+     operation in an extensible structure.  (Contributed by AV,
+     31-Oct-2024.) $)
+  tsetndxnmulrndx $p |- ( TopSet ` ndx ) =/= ( .r ` ndx ) $=
+    ( cnx cts cfv cmulr wne c9 c3 3re 3lt9 gtneii tsetndx mulrndx neeq12i mpbir
+    ) ABCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slot for the topology is not the slot for the involution in an
+     extensible structure.  (Contributed by AV, 11-Nov-2024.) $)
+  tsetndxnstarvndx $p |- ( TopSet ` ndx ) =/= ( *r ` ndx ) $=
+    ( cnx cts cfv cstv wne c9 c4 4re 4lt9 gtneii tsetndx starvndx neeq12i mpbir
+    ) ABCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slots ` Scalar ` , ` .s ` and ` .i ` are different from the slot
+     ` TopSet ` .  (Contributed by AV, 29-Oct-2024.) $)
+  slotstnscsi $p |- ( ( TopSet ` ndx ) =/= ( Scalar ` ndx )
+                   /\ ( TopSet ` ndx ) =/= ( .s ` ndx )
+                   /\ ( TopSet ` ndx ) =/= ( .i ` ndx ) ) $=
+    ( cnx cts cfv csca wne cvsca cip c9 c5 5re 5lt9 gtneii tsetndx scandx mpbir
+    neeq12i c6 6re 6lt9 c8 vscandx 8re 8lt9 ipndx 3pm3.2i ) ABCZADCZEZUFAFCZEZU
+    FAGCZEZUHHIEIHJKLUFHUGIMNPOUJHQEQHRSLUFHUIQMUAPOULHTETHUBUCLUFHUKTMUDPOUE
+    $.
+
   ${
     topgrpfn.w $e |- W = { <. ( Base ` ndx ) , B >. ,
        <. ( +g ` ndx ) , .+ >. , <. ( TopSet ` ndx ) , J >. } $.
