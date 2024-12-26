@@ -147305,6 +147305,18 @@ $)
         mpdan fveq2d eqtr4d eqtrid ) BDGZABHIZCHIZFUMUNBJKIZBTIZLMNZHIZUOUMUQOG
         UNUSPBTDQRDUQUPHOBSUAKUPUBPUPUCGUDUEUFUIUMCURHBUQCDEUQUGUHUJUKUL $.
     $}
+
+    ${
+      mgpsca.s $e |- S = ( Scalar ` R ) $.
+      $( The multiplication monoid has the same (if any) scalars as the
+         original ring.  (Contributed by Mario Carneiro, 12-Mar-2015.)
+         (Revised by Mario Carneiro, 5-May-2015.) $)
+      mgpscag $p |- ( R e. V -> S = ( Scalar ` M ) ) $=
+        ( wcel csca cfv cnx cplusg cop csts co cvv wceq mulrslid slotex scaslid
+        cmulr scandxnplusgndx cslot cn plusgslid simpri setsslnid mpdan mgpvalg
+        eqid fveq2d eqtr4d eqtrid ) ADGZBAHIZCHIZFUMUNAJKIZATIZLMNZHIZUOUMUQOGU
+        NUSPATDQRDUQUPHOASUAKUPUBPUPUCGUDUEUFUGUMCURHAUQCDEUQUIUHUJUKUL $.
+    $}
   $}
 
 
