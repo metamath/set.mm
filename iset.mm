@@ -147273,6 +147273,21 @@ $)
       GBUHOUFBAPJNFAPDQRSDBINATUAUBUFCUGIABCDEFUCUDUE $.
   $}
 
+  ${
+    mgpbas.1 $e |- M = ( mulGrp ` R ) $.
+
+    ${
+      mgpbas.2 $e |- B = ( Base ` R ) $.
+      $( Base set of the multiplication group.  (Contributed by Mario Carneiro,
+         21-Dec-2014.)  (Revised by Mario Carneiro, 5-Oct-2015.) $)
+      mgpbasg $p |- ( R e. V -> B = ( Base ` M ) ) $=
+        ( wcel cbs cfv cnx cplusg cop csts co cvv wceq mulrslid slotex baseslid
+        cmulr basendxnplusgndx cslot cn plusgslid simpri setsslnid eqid mgpvalg
+        mpdan fveq2d eqtr4d eqtrid ) BDGZABHIZCHIZFUMUNBJKIZBTIZLMNZHIZUOUMUQOG
+        UNUSPBTDQRDUQUPHOBSUAKUPUBPUPUCGUDUEUFUIUMCURHBUQCDEUQUGUHUJUKUL $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
