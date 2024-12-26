@@ -147252,6 +147252,20 @@ $)
     cn vex simpri mulrslid slotex elv setsex mp3an df-mgp fnmpti ) ABACZDEFZUFG
     FZHIJZKUFBLUGPLZUHBLZUIBLAQEUGMNUJORUKAUFGBSTUAUGUHUFBBPUBUCAUDUE $.
 
+  ${
+    $d r R $.  $d r .x. $.
+    mgpval.1 $e |- M = ( mulGrp ` R ) $.
+    mgpval.2 $e |- .x. = ( .r ` R ) $.
+    $( Value of the multiplication group operation.  (Contributed by Mario
+       Carneiro, 21-Dec-2014.) $)
+    mgpvalg $p |- ( R e. V -> M = ( R sSet <. ( +g ` ndx ) , .x. >. ) ) $=
+      ( vr wcel cmgp cfv cnx cplusg cop csts co cv cmulr cvv wceq cn id eqtr4di
+      df-mgp fveq2 opeq2d oveq12d elex cslot plusgslid simpri mulrslid eqeltrid
+      a1i slotex setsex mpd3an23 fvmptd3 eqtrid ) ADHZCAIJAKLJZBMZNOZEUSGAGPZUT
+      VCQJZMZNOVBRIRGUCVCASZVCAVEVANVFUAVFVDBUTVFVDAQJZBVCAQUDFUBUEUFADUGUSUTTH
+      ZBRHVBRHVHUSLUTUHSVHUIUJUMUSBVGRFAQDUKUNULUTBADRTUOUPUQUR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
