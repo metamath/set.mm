@@ -80,7 +80,6 @@ proposed  syl5ib    imbitrid
 proposed  syl5ibcom imbitridcom
 proposed  syl5ibr   imbitrrid
 proposed  syl5ibrcom imbitrridcom
-underway  syl5bb    bitrid      compare to bitri or bitrd
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
@@ -93,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+26-Dec-24 syl5bb    bitrid      compare to bitri or bitrd
 19-Dec-24 3albii    [same]      moved from PM's mathbox to main set.mm
 19-Dec-24 ssrel3    [same]      moved from PM's mathbox to main set.mm
 17-Dec-24 ffvelrnd  ffvelcdmd

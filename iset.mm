@@ -1794,7 +1794,7 @@ $)
        biconditional from two biconditionals: ~ bitri , ~ bitr2i , ~ bitr3i ,
        ~ bitr4i (and more for chaining more biconditionals).  There are also
        closed forms and deduction versions of these, like, among many others,
-       ~ syld , ~ syl5 , ~ syl6 , ~ mpbid , ~ bitrd , ~ syl5bb , ~ bitrdi and
+       ~ syld , ~ syl5 , ~ syl6 , ~ mpbid , ~ bitrd , ~ bitrid , ~ bitrdi and
        variants.  (Contributed by BJ, 21-Apr-2019.) $)
     sylbbr $p |- ( ch -> ph ) $=
       ( biimpri sylibr ) CBABCEFDG $.
@@ -2259,22 +2259,12 @@ $)
   $}
 
   ${
-    syl5bb.1 $e |- ( ph <-> ps ) $.
-    syl5bb.2 $e |- ( ch -> ( ps <-> th ) ) $.
-    $( A syllogism inference from two biconditionals.  This is in the process
-       of being renamed to ~ bitrid (New usages should use ~ bitrid ).
-       (Contributed by NM, 12-Mar-1993.) $)
-    syl5bb $p |- ( ch -> ( ph <-> th ) ) $=
-      ( wb a1i bitrd ) CABDABGCEHFI $.
-  $}
-
-  ${
     bitr2id.1 $e |- ( ph <-> ps ) $.
     bitr2id.2 $e |- ( ch -> ( ps <-> th ) ) $.
     $( A syllogism inference from two biconditionals.  (Contributed by NM,
        5-Aug-1993.) $)
     bitr2id $p |- ( ch -> ( th <-> ph ) ) $=
-      ( syl5bb bicomd ) CADABCDEFGH $.
+      ( bitrid bicomd ) CADABCDEFGH $.
   $}
 
   ${
@@ -2283,7 +2273,7 @@ $)
     $( A syllogism inference from two biconditionals.  (Contributed by NM,
        5-Aug-1993.) $)
     bitr3id $p |- ( ch -> ( ph <-> th ) ) $=
-      ( bicomi syl5bb ) ABCDBAEGFH $.
+      ( bicomi bitrid ) ABCDBAEGFH $.
   $}
 
   ${
@@ -2533,7 +2523,7 @@ $)
     $( More general version of ~ 3bitr4i .  Useful for converting definitions
        in a formula.  (Contributed by NM, 5-Aug-1993.) $)
     3bitr4g $p |- ( ph -> ( th <-> ta ) ) $=
-      ( syl5bb bitr4di ) ADCEDBACGFIHJ $.
+      ( bitrid bitr4di ) ADCEDBACGFIHJ $.
   $}
 
   ${
@@ -2728,7 +2718,7 @@ $)
      Lammen, 14-Sep-2013.) $)
   imim21b $p |- ( ( ps -> ph ) -> ( ( ( ph -> ch ) -> ( ps -> th ) ) <->
                                     ( ps -> ( ch -> th ) ) ) ) $=
-    ( wi bi2.04 wb pm5.5 imbi1d imim2i pm5.74d syl5bb ) ACEZBDEEBMDEZEBAEZBCDEZ
+    ( wi bi2.04 wb pm5.5 imbi1d imim2i pm5.74d bitrid ) ACEZBDEEBMDEZEBAEZBCDEZ
     EMBDFOBNPANPGBAMCDACHIJKL $.
 
   ${
@@ -7345,7 +7335,7 @@ $)
      (Contributed by Jim Kingdon, 16-Apr-2018.) $)
   pm5.17dc $p |- ( DECID ps ->
       ( ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) <-> ( ph <-> -. ps ) ) ) $=
-    ( wn wb wdc wo wa bicom dfbi2 orcom dfordc bitr2id imnan a1i anbi12d syl5bb
+    ( wn wb wdc wo wa bicom dfbi2 orcom dfordc bitr2id imnan a1i anbi12d bitrid
     wi ) ABCZDRADZBEZABFZABGCZGZARHSRAQZARQZGTUCRAITUDUAUEUBUABAFTUDABJBAKLUEUB
     DTABMNOPL $.
 
@@ -7780,7 +7770,7 @@ $)
       ( -. ( -. ( -. ( ph \/ ps ) \/ ch ) \/
             -. ( ph \/ -. ( -. ch \/ -. ( ch \/ th ) ) ) ) <-> ch ) ) $=
     ( wo wn wa wdc wi pm2.45 imnan mpbi biorfi wb dcor imp anordc sylc dcn syl
-    orcom ordir 3bitri pm4.45 simprrl ad2antll syl5bb orbi2d anbi2d syl6 syldan
+    orcom ordir 3bitri pm4.45 simprrl ad2antll bitrid orbi2d anbi2d syl6 syldan
     adantrr bitrd bitr2id ) CABEZFZCEZACEZGZAHZBHZCHZDHZGZGZGZUQFACFZCDEZFZEZFZ
     EZFEFZCCUPAGZEVNCEUSVNCUPAFIVNFABJUPAKLMCVNUAUPACUBUCVFUSUQVLGZVMVFURVLUQVF
     CVKACCVHGZVFVKCDUDVFVBVHHZVPVKNUTVAVBVCUEZVDVQUTVAVBVCVQCDOPUFZCVHQRUGUHUIV
@@ -10696,7 +10686,7 @@ $)
      5-May-2018.) $)
   bilukdc $p |- ( ( ( DECID ph /\ DECID ps ) /\ DECID ch ) ->
       ( ( ph <-> ps ) <-> ( ( ch <-> ps ) <-> ( ph <-> ch ) ) ) ) $=
-    ( wdc wa wb bicom bibi1i biassdc imp31 syl5bb ancom1s dcbi imp adantr simpr
+    ( wdc wa wb bicom bibi1i biassdc imp31 bitrid ancom1s dcbi imp adantr simpr
     syl9 syl3c mpbid simplr adantlr bitr4d ) ADZBDZEZCDZEZABFZCBACFZFZFZCBFUIFZ
     UGUHCFZUJFZUHUKFZUDUCUFUNUMBAFZCFZUDUCEUFEUJUHUPCABGHUDUCUFUQUJFBACIJKLUGUH
     DZUFUJDZUNUOFUEURUFUCUDURABMNOUEUFPZUCUDUFUSUCUFUIDZUDUSACMZBUIMQJUHCUJIRSU
@@ -13064,7 +13054,7 @@ $)
      ~ nf4r , holds for all propositions.  (Contributed by Jim Kingdon,
      21-Jul-2018.) $)
   nf4dc $p |- ( DECID E. x ph -> ( F/ x ph <-> ( A. x ph \/ A. x -. ph ) ) ) $=
-    ( wex wdc wnf wn wal wo nf2 imordc syl5bb orcom alnex orbi2i bitr4i bitrdi
+    ( wex wdc wnf wn wal wo nf2 imordc bitrid orcom alnex orbi2i bitr4i bitrdi
     wi ) ABCZDZABEZRFZABGZHZUBAFBGZHZTRUBQSUCABIRUBJKUCUBUAHUEUAUBLUDUAUBABMNOP
     $.
 
@@ -16244,7 +16234,7 @@ $( The theorems in this section make use of the $d statement. $)
        24-Feb-2018.) $)
     sbal1 $p |- ( -. A. x x = z ->
              ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
-      ( vw weq wal wn wsb sbal sbbii sbal1yz syl5bb ax-17 sbco2vh albii 3bitr3g
+      ( vw weq wal wn wsb sbal sbbii sbal1yz bitrid ax-17 sbco2vh albii 3bitr3g
       ) BDFBGHZABGZCEIZEDIZACEIZEDIZBGZSCDIACDIZBGUAUBBGZEDIRUDTUFEDABCEJKUBBED
       LMSCDESENOUCUEBACDEAENOPQ $.
   $}
@@ -19726,7 +19716,7 @@ $)
     $( Equivalent wff's correspond to equal class abstractions.  (Contributed
        by NM, 25-Nov-2013.)  (Revised by Mario Carneiro, 11-Aug-2016.) $)
     abbi $p |- ( A. x ( ph <-> ps ) <-> { x | ph } = { x | ps } ) $=
-      ( vy cab wceq wcel wal dfcleq nfsab1 nfbi nfv wsb df-clab sbequ12r syl5bb
+      ( vy cab wceq wcel wal dfcleq nfsab1 nfbi nfv wsb df-clab sbequ12r bitrid
       cv wb bibi12d cbval bitr2i ) ACEZBCEZFDQZUBGZUDUCGZRZDHABRZCHDUBUCIUGUHDC
       UEUFCACDJBCDJKUHDLUDCQFZUEAUFBUEACDMUIAADCNADCOPUFBCDMUIBBDCNBDCOPSTUA $.
   $}
@@ -20536,7 +20526,7 @@ $)
     $( Deduction from equality to inequality.  (Contributed by NM,
        21-Mar-2007.) $)
     necon3abid $p |- ( ph -> ( A =/= B <-> -. ps ) ) $=
-      ( wne wceq wn df-ne notbid syl5bb ) CDFCDGZHABHCDIALBEJK $.
+      ( wne wceq wn df-ne notbid bitrid ) CDFCDGZHABHCDIALBEJK $.
   $}
 
   ${
@@ -20552,7 +20542,7 @@ $)
     $( Deduction from equality to inequality.  (Contributed by NM,
        23-Feb-2005.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
     necon3bid $p |- ( ph -> ( A =/= B <-> C =/= D ) ) $=
-      ( wne wceq wn df-ne necon3bbid syl5bb ) BCGBCHZIADEGBCJAMDEFKL $.
+      ( wne wceq wn df-ne necon3bbid bitrid ) BCGBCHZIADEGBCJAMDEFKL $.
   $}
 
   ${
@@ -20702,7 +20692,7 @@ $)
     $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
        16-May-2018.) $)
     necon1abiidc $p |- ( DECID ph -> ( A =/= B <-> ph ) ) $=
-      ( wne wceq wn wdc df-ne con1biidc syl5bb ) BCEBCFZGAHABCIALDJK $.
+      ( wne wceq wn wdc df-ne con1biidc bitrid ) BCEBCFZGAHABCIALDJK $.
   $}
 
   ${
@@ -21832,7 +21822,7 @@ $)
      theorem version).  (Contributed by NM, 1-Mar-2008.) $)
   r19.21t $p |- ( F/ x ph ->
            ( A. x e. A ( ph -> ps ) <-> ( ph -> A. x e. A ps ) ) ) $=
-    ( wnf cv wcel wi wal wral bi2.04 albii 19.21t syl5bb df-ral imbi2i 3bitr4g
+    ( wnf cv wcel wi wal wral bi2.04 albii 19.21t bitrid df-ral imbi2i 3bitr4g
     ) ACEZCFDGZABHZHZCIZASBHZCIZHZTCDJABCDJZHUBAUCHZCIRUEUAUGCSABKLAUCCMNTCDOUF
     UDABCDOPQ $.
 
@@ -23760,7 +23750,7 @@ $)
               /\ A. x ( x = A -> ( ph <-> ps ) ) /\ A e. B )
          -> ( A. x e. B ( x = A -> ph ) <-> ps ) ) $=
       ( wnf cv wceq wb wi wal wcel w3a wral df-ral eleq1 pm5.32ri imbi1i impexp
-      wa 3bitr3i albii a1i syl5bb 19.21v bitrdi biimt 3ad2ant3 ceqsalt 3bitr2d
+      wa 3bitr3i albii a1i bitrid 19.21v bitrdi biimt 3ad2ant3 ceqsalt 3bitr2d
       ) BCFZCGZDHZABIJCKZDELZMZUMAJZCENZUOUQCKZJZUSBUPURUOUQJZCKZUTURULELZUQJZC
       KZUPVBUQCEOVEVBIUPVDVACVCUMTZAJUOUMTZAJVDVAVFVGAUMVCUOULDEPQRVCUMASUOUMAS
       UAUBUCUDUOUQCUEUFUOUKUSUTIUNUOUSUGUHABCDEUIUJ $.
@@ -24994,7 +24984,7 @@ $)
        substitution.  (Contributed by NM, 30-Apr-2004.) $)
     ceqsrexv $p |- ( A e. B -> ( E. x e. B ( x = A /\ ph ) <-> ps ) ) $=
       ( cv wceq wa wrex wcel wex df-rex an12 exbii bitr4i eleq1 anbi12d bianabs
-      ceqsexgv syl5bb ) CGZDHZAIZCEJZUCUBEKZAIZIZCLZDEKZBUEUFUDIZCLUIUDCEMUHUKC
+      ceqsexgv bitrid ) CGZDHZAIZCEJZUCUBEKZAIZIZCLZDEKZBUEUFUDIZCLUIUDCEMUHUKC
       UCUFANOPUJUIBUGUJBICDEUCUFUJABUBDEQFRTSUA $.
 
     $( Elimination of a restricted existential quantifier, using implicit
@@ -25014,7 +25004,7 @@ $)
     ceqsrex2v $p |- ( ( A e. C /\ B e. D ) ->
       ( E. x e. C E. y e. D ( ( x = A /\ y = B ) /\ ph ) <-> ch ) ) $=
       ( wcel cv wceq wa wrex anass rexbii r19.42v ceqsrexv bitri anbi2d rexbidv
-      syl5bb sylan9bb ) FHLZDMFNZEMGNZOAOZEIPZDHPZUHBOZEIPZGILCUKUGUHAOZEIPZOZD
+      bitrid sylan9bb ) FHLZDMFNZEMGNZOAOZEIPZDHPZUHBOZEIPZGILCUKUGUHAOZEIPZOZD
       HPUFUMUJUPDHUJUGUNOZEIPUPUIUQEIUGUHAQRUGUNEISUARUOUMDFHUGUNULEIUGABUHJUBU
       CTUDBCEGIKTUE $.
   $}
@@ -25172,7 +25162,7 @@ $)
     $( Membership in a class abstraction, using implicit substitution.
        (Contributed by NM, 13-Sep-1995.) $)
     elab2g $p |- ( A e. V -> ( A e. B <-> ps ) ) $=
-      ( wcel cab eleq2i elabg syl5bb ) DEIDACJZIDFIBENDHKABCDFGLM $.
+      ( wcel cab eleq2i elabg bitrid ) DEIDACJZIDFIBENDHKABCDFGLM $.
   $}
 
   ${
@@ -25246,7 +25236,7 @@ $)
        distinct variable restrictions.  (Contributed by NM, 21-Sep-2003.) $)
     elrabf $p |- ( A e. { x e. B | ph } <-> ( A e. B /\ ps ) ) $=
       ( crab wcel cvv wa elex adantr cv cab df-rab eleq2i nfel nfan wceq elabgf
-      eleq1 anbi12d syl5bb pm5.21nii ) DACEJZKZDLKZDEKZBMZDUHNUKUJBDENOUIDCPZEK
+      eleq1 anbi12d bitrid pm5.21nii ) DACEJZKZDLKZDEKZBMZDUHNUKUJBDENOUIDCPZEK
       ZAMZCQZKUJULUHUPDACERSUOULCDLFUKBCCDEFGTHUAUMDUBUNUKABUMDEUDIUEUCUFUG $.
   $}
 
@@ -25426,7 +25416,7 @@ $)
     eueq2dc $p |- ( DECID ph ->
         E! x ( ( ph /\ x = A ) \/ ( -. ph /\ x = B ) ) ) $=
       ( wdc wn wo wceq weu eueq1 euanv biimpri mpan2 euorv bianfd eubidv mpbid
-      wa cv df-dc notnot syl2anc orcom orbi2d syl5bb mpdan id orbi1d jaoi sylbi
+      wa cv df-dc notnot syl2anc orcom orbi2d bitrid mpdan id orbi1d jaoi sylbi
       ) AGAAHZIABUAZCJZTZUMUNDJZTZIZBKZAUBAUTUMAUMUPIZBKZUTAUMHUPBKZVBAUCZAUOBK
       ZVCBCELVCAVETAUOBMNOUMUPBPUDAVAUSBVAUPUMIAUSUMUPUEAUMURUPAUMUQVDQUFUGRSUM
       AURIZBKZUTUMURBKZVGUMUQBKZVHBDFLVHUMVITUMUQBMNOAURBPUHUMVFUSBUMAUPURUMAUO
@@ -25590,7 +25580,7 @@ $)
     euxfrdc $p |- ( DECID E. y E. x ( x = A /\ ps ) ->
         ( E! x ph <-> E! y ps ) ) $=
       ( weu cv wceq wa wex wdc euex ax-mp biantrur 19.41v pm5.32i exbii 3bitr2i
-      eubii eumoi euxfr2dc syl5bb ) ACICJEKZBLZDMZCIUGCMDMNBDIAUHCAUFDMZALUFALZ
+      eubii eumoi euxfr2dc bitrid ) ACICJEKZBLZDMZCIUGCMDMNBDIAUHCAUFDMZALUFALZ
       DMUHUIAUFDIUIGUFDOPQUFADRUJUGDUFABHSTUAUBBCDEFUFDGUCUDUE $.
   $}
 
@@ -25668,7 +25658,7 @@ $)
        Carneiro, 2-Oct-2015.) $)
     eqreu $p |- ( ( B e. A /\ ps /\ A. x e. A ( ph -> x = B ) ) ->
       E! x e. A ph ) $=
-      ( wcel cv wceq wi wral wreu wa wb ralbiim ceqsralv anbi2d syl5bb reu6i ex
+      ( wcel cv wceq wi wral wreu wa wb ralbiim ceqsralv anbi2d bitrid reu6i ex
       sylbird 3impib 3com23 ) EDGZACHEIZJCDKZBACDLZUDUFBUGUDUFBMZAUENCDKZUGUIUF
       UEAJCDKZMUDUHAUECDOUDUJBUFABCEDFPQRUDUIUGACDESTUAUBUC $.
   $}
@@ -25707,7 +25697,7 @@ $)
        24-Oct-2006.) $)
     reu8 $p |- ( E! x e. A ph <-> E. x e. A ( ph /\
                 A. y e. A ( ps -> x = y ) ) ) $=
-      ( wreu weq wb wral wrex wi wa cbvreuv reu6 cv wcel ralbii wal syl5bb a1i
+      ( wreu weq wb wral wrex wi wa cbvreuv reu6 cv wcel ralbii wal bitrid a1i
       dfbi2 r19.26 ancom equcom imbi2i biimt df-ral bi2.04 albii imbi12d bicomd
       vex eleq1 equcoms ceqsalv 3bitrri bitrdi anbi12d bitr4id rexbiia 3bitri )
       ACEGBDEGBDCHZIZDEJZCEKABCDHZLZDEJZMZCEKABCDEFNBDCEOVEVICEVEBVCLZVCBLZMZDE
@@ -26068,7 +26058,7 @@ $)
        (Contributed by NM, 7-Aug-1994.) $)
     ru $p |- { x | x e/ x } e/ _V $=
       ( vy cv wnel cab cvv wcel wn wceq wex wel wal pm5.19 eleq1 df-nel eleq12d
-      wb id notbid mtbir syl5bb bibi12d spv mto abeq2 nex isset mpbir ) ACZUIDZ
+      wb id notbid mtbir bitrid bibi12d spv mto abeq2 nex isset mpbir ) ACZUIDZ
       AEZFDUKFGZHULBCZUKIZBJUNBUNABKZUJQZALZUQBBKZURHZQZURMUPUTABUIUMIZUOURUJUS
       UIUMUMNUJAAKZHVAUSUIUIOVAVBURVAUIUMUIUMVARZVCPSUAUBUCUDUJAUMUETUFBUKUGTUK
       FOUH $.
@@ -26824,7 +26814,7 @@ $)
            ( [. A / x ]. A. y e. B ph <-> A. y e. B [. A / x ]. ph ) ) $=
       ( vz wral wsbc cv wcel wnfc wa sbcco simpl wsb wceq sbsbc nfcv wb nfralxy
       nfs1v weq sbequ12 ralbidv sbie bitr3i nfnfc1 nfcvd id nfeqd nfan1 dfsbcq2
-      adantl ralbid adantll syl5bb sbcied bitr3id ) ACEHZBDIUTBGJZIZGDIDFKZCDLZ
+      adantl ralbid adantll bitrid sbcied bitr3id ) ACEHZBDIUTBGJZIZGDIDFKZCDLZ
       MZABDIZCEHZUTBGDNVEVBVGGDFVCVDOVBABGPZCEHZVEVADQZMVGVBUTBGPVIUTBGRUTVIBGV
       HBCEBESABGUBUABGUCAVHCEABGUDUEUFUGVDVJVIVGTVCVDVJMVHVFCEVDVJCCDUHVDCVADVD
       CVAUIVDUJUKULVJVHVFTVDABGDUMUNUOUPUQURUS $.
@@ -26836,7 +26826,7 @@ $)
         ( [. A / x ]. E. y e. B ph <-> E. y e. B [. A / x ]. ph ) ) $=
       ( vz wnfc cvv wcel wrex wsbc wi sbcex a1i nfcvd cv wb wa wsb wceq id 2a1i
       nfnfc1 nfeld rexlimd2 sbcco simpl sbsbc nfcv nfrexxy sbequ12 rexbidv sbie
-      nfs1v bitr3i nfeqd dfsbcq2 adantl rexbid adantll syl5bb bitr3id pm5.21ndd
+      nfs1v bitr3i nfeqd dfsbcq2 adantl rexbid adantll bitrid bitr3id pm5.21ndd
       nfan1 sbcied expcom ) CDGZDHIZACEJZBDKZABDKZCEJZVJVHLVGVIBDMNVGVKVHCECDUC
       ZVGCDHVGUAZVGCHOUDVGCPEIVKVHLABDMUBUEVHVGVJVLQVJVIBFPZKZFDKVHVGRZVLVIBFDU
       FVQVPVLFDHVHVGUGVPABFSZCEJZVQVODTZRVLVPVIBFSVSVIBFUHVIVSBFVRBCEBEUIABFUNU
@@ -27187,7 +27177,7 @@ $)
      Andrew Salmon, 18-Jun-2011.) $)
   sbcne12g $p |- ( A e. V -> ( [. A / x ]. B =/= C <-> [_ A / x ]_ B =/=
                    [_ A / x ]_ C ) ) $=
-    ( wcel wne wsbc csb wb wceq sbceqg notbid df-ne sbcbii sbcng syl5bb bibi12d
+    ( wcel wne wsbc csb wb wceq sbceqg notbid df-ne sbcbii sbcng bitrid bibi12d
     wn a1i mpbird ) BEFZCDGZABHZABCIZABDIZGZJCDKZABHZSZUEUFKZSZJUBUIUKABCDELMUB
     UDUJUGULUDUHSZABHUBUJUCUMABCDNOUHABEPQUGULJUBUEUFNTRUA $.
 
@@ -27554,7 +27544,7 @@ $)
     csbnestgf $p |- ( ( A e. V /\ A. y F/_ x C ) ->
          [_ A / x ]_ [_ B / y ]_ C = [_ [_ A / x ]_ B / y ]_ C ) $=
       ( vz wcel wnfc wal wa cv csb wsbc cab cvv wceq elex df-csb abeq2i wb nfcr
-      sbcbii wnf alimi sbcnestgf sylan2 syl5bb abbidv sylan 3eqtr4g ) CFHZAEIZB
+      sbcbii wnf alimi sbcnestgf sylan2 bitrid abbidv sylan 3eqtr4g ) CFHZAEIZB
       JZKGLZBDEMZHZACNZGOZUOEHZBACDMZNZGOZACUPMBVAEMULCPHZUNUSVCQCFRVDUNKZURVBG
       URUTBDNZACNZVEVBUQVFACVFGUPBGDESTUCUNVDUTAUDZBJVGVBUAUMVHBAGEUBUEUTABCDPU
       FUGUHUIUJAGCUPSBGVAESUK $.
@@ -29675,7 +29665,7 @@ $)
        22-Mar-1998.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
     dfss4st $p |- ( A. x STAB x e. A
         -> ( A C_ B <-> ( B \ ( B \ A ) ) = A ) ) $=
-      ( vy cv wcel wstab wal wss cdif wceq wb eleq1w stbid nfcv wn eldif syl5bb
+      ( vy cv wcel wstab wal wss cdif wceq wb eleq1w stbid nfcv wn eldif bitrid
       wa bitr4id cbvalv cin sseqin2 nfa1 notbii anbi2i elin bitri imanst anbi2d
       wi abai sps eqrd eqeq1d sylbi ) AEZBFZGZAHDEZBFZGZDHZBCIZCCBJZJZBKZLUSVBA
       DUQUTKURVAADBMNUAVCVDCBUBZBKVGBCUCVCVFVHBVCDVFVHVBDUDDVFODVHOVBUTVFFZUTVH
@@ -31863,7 +31853,7 @@ $)
     $( Restricted existential quantification over a singleton.  (Contributed by
        NM, 29-Jan-2012.) $)
     rexsng $p |- ( A e. V -> ( E. x e. { A } ph <-> ps ) ) $=
-      ( csn wrex wsbc wcel rexsns sbcieg syl5bb ) ACDGHACDIDEJBACDKABCDEFLM $.
+      ( csn wrex wsbc wcel rexsns sbcieg bitrid ) ACDGHACDIDEJBACDKABCDEFLM $.
   $}
 
   $( There is a set being the element of a singleton if and only if there is an
@@ -31946,7 +31936,7 @@ $)
        NM, 17-Sep-2011.)  (Revised by Mario Carneiro, 23-Apr-2015.) $)
     ralprg $p |- ( ( A e. V /\ B e. W ) ->
       ( A. x e. { A , B } ph <-> ( ps /\ ch ) ) ) $=
-      ( cpr wral csn wa wcel cun df-pr raleqi ralunb ralsng bi2anan9 syl5bb
+      ( cpr wral csn wa wcel cun df-pr raleqi ralunb ralsng bi2anan9 bitrid
       bitri ) ADEFKZLZADEMZLZADFMZLZNZEGOZFHOZNBCNUEADUFUHPZLUJADUDUMEFQRADUFUH
       SUCUKUGBULUICABDEGITACDFHJTUAUB $.
 
@@ -31955,7 +31945,7 @@ $)
     rexprg $p |- ( ( A e. V /\ B e. W ) ->
       ( E. x e. { A , B } ph <-> ( ps \/ ch ) ) ) $=
       ( cpr wrex csn wo wcel wa cun df-pr rexeqi rexsng orbi1d orbi2d sylan9bb
-      rexun bitri syl5bb ) ADEFKZLZADEMZLZADFMZLZNZEGOZFHOZPBCNZUHADUIUKQZLUMAD
+      rexun bitri bitrid ) ADEFKZLZADEMZLZADFMZLZNZEGOZFHOZPBCNZUHADUIUKQZLUMAD
       UGUQEFRSADUIUKUDUEUNUMBULNUOUPUNUJBULABDEGITUAUOULCBACDFHJTUBUCUF $.
 
     raltpg.3 $e |- ( x = C -> ( ph <-> th ) ) $.
@@ -32571,7 +32561,7 @@ $)
        29-Jun-2011.) $)
     difsn $p |- ( -. A e. B -> ( B \ { A } ) = B ) $=
       ( vx wcel wn csn cdif cv wne wa eldifsn simpl wceq eleq1 biimpcd necon3bd
-      com12 ancld impbid2 syl5bb eqrdv ) ABDZEZCBAFGZBCHZUDDUEBDZUEAIZJZUCUFUEB
+      com12 ancld impbid2 bitrid eqrdv ) ABDZEZCBAFGZBCHZUDDUEBDZUEAIZJZUCUFUEB
       AKUCUHUFUFUGLUCUFUGUFUCUGUFUBUEAUEAMUFUBUEABNOPQRSTUA $.
 
     $( Removal of a singleton from an unordered pair.  (Contributed by NM,
@@ -32909,7 +32899,7 @@ $)
        members.  (Contributed by NM, 27-Mar-2007.) $)
     opthpr $p |- ( A =/= D ->
                  ( { A , B } = { C , D } <-> ( A = C /\ B = D ) ) ) $=
-      ( cpr wceq wa wo wne preq12b idd wn wi df-ne pm2.21 sylbi impd orc syl5bb
+      ( cpr wceq wa wo wne preq12b idd wn wi df-ne pm2.21 sylbi impd orc bitrid
       jaod impbid1 ) ABICDIJACJBDJKZADJZBCJZKZLZADMZUFABCDEFGHNUKUJUFUKUFUFUIUK
       UFOUKUGUHUFUKUGPUGUHUFQZQADRUGULSTUAUDUFUIUBUEUC $.
   $}
@@ -33131,7 +33121,7 @@ $)
        (Revised by Mario Carneiro, 23-Apr-2015.) $)
     ralunsn $p |- ( B e. C -> ( A. x e. ( A u. { B } ) ph <->
                                 ( A. x e. A ph /\ ps ) ) ) $=
-      ( csn cun wral wa wcel ralunb ralsng anbi2d syl5bb ) ACDEHZIJACDJZACQJZKE
+      ( csn cun wral wa wcel ralunb ralsng anbi2d bitrid ) ACDEHZIJACDJZACQJZKE
       FLZRBKACDQMTSBRABCEFGNOP $.
   $}
 
@@ -34263,7 +34253,7 @@ $)
       ( vw vz wcel wral cv cab wceq wrex wi wal df-ral wb eqeq1 albii bitr4i
       ciin cint eleq2 biimprcd alrimiv eqid imbi12d mpii impbid2 imim2i pm5.74d
       spcgv alimi albi syl sylbi alcom r19.23v vex rexbidv elab imbi1i 3bitr3ri
-      19.21v bitrdi syl5bb abbidv df-iin df-int 3eqtr4g ) DEHZACIZFJZDHZACIZFKG
+      19.21v bitrdi bitrid abbidv df-iin df-int 3eqtr4g ) DEHZACIZFJZDHZACIZFKG
       JZBJZDLZACMZBKZHZVMVPHZNZGOZFKACDUAVTUBVLVOWDFVOAJCHZVNNZAOZVLWDVNACPVLWG
       WEVPDLZWBNZGOZNZAOZWDVLWEVKNZAOZWGWLQZVKACPWNWFWKQZAOWOWMWPAWMWEVNWJVKVNW
       JQWEVKVNWJVNWIGWHWBVNVPDVMUCZUDUEVKWJDDLZVNDUFWIWRVNNGDEWHWHWRWBVNVPDDRWQ
@@ -34659,7 +34649,7 @@ $)
     $( A singleton index picks out an instance of an indexed union's argument.
        (Contributed by Mario Carneiro, 25-Jun-2016.) $)
     iunxsng $p |- ( A e. V -> U_ x e. { A } B = C ) $=
-      ( vy wcel csn ciun cv wrex eliun wceq eleq2d rexsng syl5bb eqrdv ) BEHZGA
+      ( vy wcel csn ciun cv wrex eliun wceq eleq2d rexsng bitrid eqrdv ) BEHZGA
       BIZCJZDGKZUAHUBCHZATLSUBDHZAUBTCMUCUDABEAKBNCDUBFOPQR $.
   $}
 
@@ -34682,7 +34672,7 @@ $)
        (Contributed by Mario Carneiro, 25-Jun-2016.)  (Revised by Thierry
        Arnoux, 2-May-2020.) $)
     iunxsngf $p |- ( A e. V -> U_ x e. { A } B = C ) $=
-      ( vy wcel csn ciun cv wrex eliun wsbc rexsns nfcri wceq eleq2d syl5bb
+      ( vy wcel csn ciun cv wrex eliun wsbc rexsns nfcri wceq eleq2d bitrid
       sbciegf eqrdv ) BEIZHABJZCKZDHLZUEIUFCIZAUDMZUCUFDIZAUFUDCNUHUGABOUCUIUGA
       BPUGUIABEAHDFQALBRCDUFGSUATTUB $.
   $}
@@ -34796,7 +34786,7 @@ $)
   $( Relationship for power class and union.  (Contributed by NM,
      18-Jul-2006.) $)
   elpwuni $p |- ( B e. A -> ( A C_ ~P B <-> U. A = B ) ) $=
-    ( cpw wss cuni wcel wceq sspwuni unissel expcom eqimss impbid1 syl5bb ) ABC
+    ( cpw wss cuni wcel wceq sspwuni unissel expcom eqimss impbid1 bitrid ) ABC
     DAEZBDZBAFZNBGZABHPOQOPQABIJNBKLM $.
 
   ${
@@ -36572,7 +36562,7 @@ $)
     $( The power set of a set is never a subset.  (Contributed by Stefan
        O'Rear, 22-Feb-2015.) $)
     pwnss $p |- ( A e. V -> -. ~P A C_ A ) $=
-      ( vx vy cpw cv wnel crab wcel wn wa wb eleq12 anidms notbid df-nel syl5bb
+      ( vx vy cpw cv wnel crab wcel wn wa wb eleq12 anidms notbid df-nel bitrid
       wss wceq cbvrabv elrab2 pclem6 ax-mp ssel mtoi ssrab2 elpw2g mpbiri nsyl3
       ) AEZARZCFZULGZCAHZUJIZABIZUKUOUNAIZUNUNIZUQURJZKLUQJDFZUTIZJZUSDUNAUNUTU
       NSZVAURVCVAURLUTUNUTUNMNOUMVBCDAUMULULIZJULUTSZVBULULPVEVDVAVEVDVALULUTUL
@@ -37008,7 +36998,7 @@ $)
     exmid01 $p |- ( EXMID <-> A. x ( x C_ { (/) }
         -> ( x = (/) \/ x = { (/) } ) ) ) $=
       ( vy wem cv c0 csn wss wcel wdc wi wal wceq wo df-exmid wn df-dc orcom wa
-      simpll syl5bb simpr sseldd velsn sylib eqeltrrd simplr pm2.65da eq0rdv ex
+      simpll bitrid simpr sseldd velsn sylib eqeltrrd simplr pm2.65da eq0rdv ex
       noel eleq2 mtbiri impbid1 ss1o0el1 orbi12d pm5.74i albii bitri ) CADZEFZG
       ZEUSHZIZJZAKVAUSELZUSUTLZMZJZAKANVDVHAVAVCVGVCVBVBOZMZVAVGVBPVJVIVBMVAVGV
       BVIQVAVIVEVBVFVAVIVEVAVIVEVAVIRZBUSVKBDZUSHZVBVKVMRZVLEUSVNVLUTHVLELVNUSU
@@ -37769,7 +37759,7 @@ $)
                      /\ ( A e. V /\ B e. W ) ) ->
                     ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) ) $=
       ( cop copab wcel cv wceq wa wex wb wi wal w3a elopab anim12 2alimi sylbir
-      19.26-2 bitr syl6 copsex2t sylan 3impa syl5bb ) FGJZADEKLULDMZEMZJNAOEPDP
+      19.26-2 bitr syl6 copsex2t sylan 3impa bitrid ) FGJZADEKLULDMZEMZJNAOEPDP
       ZUMFNZABQZRZESDSZUNGNZBCQZRZESDSZFHLGILOZTCADEULUAUSVCVDUOCQZUSVCOZUPUTOZ
       ACQZRZESDSZVDVEVFURVBOZESDSVJURVBDEUEVKVIDEVKVGUQVAOVHUPUQUTVAUBABCUFUGUC
       UDACDEFGHIUHUIUJUK $.
@@ -37782,7 +37772,7 @@ $)
        Mario Carneiro, 19-Dec-2013.) $)
     opelopabga $p |- ( ( A e. V /\ B e. W ) ->
                     ( <. A , B >. e. { <. x , y >. | ph } <-> ps ) ) $=
-      ( cop copab wcel cv wceq wa wex elopab copsex2g syl5bb ) EFJZACDKLTCMDMJN
+      ( cop copab wcel cv wceq wa wex elopab copsex2g bitrid ) EFJZACDKLTCMDMJN
       AODPCPEGLFHLOBACDTQABCDEFGHIRS $.
 
     ${
@@ -37790,7 +37780,7 @@ $)
       $( The law of concretion for a binary relation.  (Contributed by Mario
          Carneiro, 19-Dec-2013.) $)
       brabga $p |- ( ( A e. V /\ B e. W ) -> ( A R B <-> ps ) ) $=
-        ( wbr cop copab wcel wa df-br eleq2i bitri opelopabga syl5bb ) EFGLZEFM
+        ( wbr cop copab wcel wa df-br eleq2i bitri opelopabga bitrid ) EFGLZEFM
         ZACDNZOZEHOFIOPBUBUCGOUEEFGQGUDUCKRSABCDEFHIJTUA $.
     $}
 
@@ -39104,13 +39094,13 @@ $)
   $( Membership in a successor.  Exercise 5 of [TakeutiZaring] p. 17.
      (Contributed by NM, 15-Sep-1995.) $)
   elsucg $p |- ( A e. V -> ( A e. suc B <-> ( A e. B \/ A = B ) ) ) $=
-    ( csuc wcel csn wo wceq cun df-suc eleq2i elun bitri elsng orbi2d syl5bb )
+    ( csuc wcel csn wo wceq cun df-suc eleq2i elun bitri elsng orbi2d bitrid )
     ABDZEZABEZABFZEZGZACEZSABHZGRABTIZEUBQUEABJKABTLMUCUAUDSABCNOP $.
 
   $( Variant of membership in a successor, requiring that ` B ` rather than
      ` A ` be a set.  (Contributed by NM, 28-Oct-2003.) $)
   elsuc2g $p |- ( B e. V -> ( A e. suc B <-> ( A e. B \/ A = B ) ) ) $=
-    ( csuc wcel csn cun wceq wo df-suc eleq2i elun elsn2g orbi2d syl5bb ) ABDZE
+    ( csuc wcel csn cun wceq wo df-suc eleq2i elun elsn2g orbi2d bitrid ) ABDZE
     ABBFZGZEZBCEZABEZABHZIZPRABJKSUAAQEZITUCABQLTUDUBUAABCMNOO $.
 
   ${
@@ -42081,7 +42071,7 @@ $)
        (Contributed by Mario Carneiro, 9-Nov-2015.) $)
     brab2a $p |- ( A R B <-> ( ( A e. C /\ B e. D ) /\ ps ) ) $=
       ( wbr wcel wa cv copab cxp simpl ssopab2i df-xp 3sstr4i brel df-br eleq2i
-      cop bitri opelopab2a syl5bb biadan2 ) EFILZEGMFHMNZBEFGHICOGMDOHMNZANZCDP
+      cop bitri opelopab2a bitrid biadan2 ) EFILZEGMFHMNZBEFGHICOGMDOHMNZANZCDP
       ZULCDPIGHQUMULCDULARSKCDGHTUAUBUJEFUEZUNMZUKBUJUOIMUPEFIUCIUNUOKUDUFABCDE
       FGHJUGUHUI $.
   $}
@@ -42104,7 +42094,7 @@ $)
                      ( x e. A /\ C e. B ) ) $=
       ( vz vy cv cop csn cxp ciun wcel cvv elex wex wceq eleq2d anbi12d bitri
       wa opexg wsb csb wrex nfv nfs1v nfcv nfcsb1v nfxp nfcri nfan sbequ12 sneq
-      df-rex csbeq1a cbvex eleq1 anbi2d exbidv syl5bb df-iun elab2g opelxp an12
+      df-rex csbeq1a cbvex eleq1 anbi2d exbidv bitrid df-iun elab2g opelxp an12
       xpeq12d anbi2i velsn equcom anbi1i 3bitri sbequ12r equcoms eqcomd ceqsexv
       exbii vex bitrdi pm5.21nii ) AGZDHZABVSIZCJZKZLZVTMLZVSBLZDCLZTZVTWCNVSDB
       CUAWEWDWFAEUBZVTEGZIZAWJCUCZJZLZTZEOZWHFGZWBLZABUDZWPFVTWCMWSWIWQWMLZTZEO
@@ -42276,7 +42266,7 @@ $)
     posng $p |- ( ( Rel R /\ A e. _V ) -> ( R Po { A } <-> -. A R A ) ) $=
       ( vz vy vx csn cv wbr wn wa wi wral cvv wb wceq breq2 anbi2d ralsng bitrd
       ralbidv wpo wrel df-po imbi12d simpl syl5ib biantrud bicomd breq12 anidms
-      wcel notbid adantl syl5bb ) AFZBUACGZUPBHZIZUPDGZBHZUSEGZBHZJZUPVABHZKZJZ
+      wcel notbid adantl bitrid ) AFZBUACGZUPBHZIZUPDGZBHZUSEGZBHZJZUPVABHZKZJZ
       EUOLZDUOLZCUOLZBUBZAMUKZJAABHZIZCDEUOBUCVKVIVMNVJVKVIURCUOLVMVKVHURCUOVKV
       HURUTUSABHZJZUPABHZKZJZDUOLURVKVGVRDUOVFVREAMVAAOZVEVQURVSVCVOVDVPVSVBVNU
       TVAAUSBPQVAAUPBPUDQRTVRURDAMUSAOZURVRVTVQURVOUTVTVPUTVNUEUSAUPBPUFUGUHRST
@@ -42311,7 +42301,7 @@ $)
        proof.  TODO: should one of them be deleted?  (Contributed by Mario
        Carneiro, 28-Apr-2015.)  (Proof modification is discouraged.) $)
     brab2ga $p |- ( A R B <-> ( ( A e. C /\ B e. D ) /\ ps ) ) $=
-      ( wbr wcel wa cv copab cxp opabssxp eqsstri brel eleq2i opelopab2a syl5bb
+      ( wbr wcel wa cv copab cxp opabssxp eqsstri brel eleq2i opelopab2a bitrid
       cop df-br bitri biadan2 ) EFILZEGMFHMNZBEFGHIICOGMDOHMNANCDPZGHQKACDGHRST
       UHEFUDZUJMZUIBUHUKIMULEFIUEIUJUKKUAUFABCDEFGHJUBUCUG $.
   $}
@@ -43454,7 +43444,7 @@ $)
     $( Distribute proper substitution through the domain of a class.
        (Contributed by Jim Kingdon, 8-Dec-2018.) $)
     csbdmg $p |- ( A e. V -> [_ A / x ]_ dom B = dom [_ A / x ]_ B ) $=
-      ( vy vw wcel cop wex cab csb cdm wsbc csbabg sbcex2 sbcel2g exbidv syl5bb
+      ( vy vw wcel cop wex cab csb cdm wsbc csbabg sbcex2 sbcel2g exbidv bitrid
       cv dfdm3 abbidv eqtrd csbeq2i 3eqtr4g ) BDGZABESFSHZCGZFIZEJZKZUFABCKZGZF
       IZEJZABCLZKUKLUEUJUHABMZEJUNUHAEBDNUEUPUMEUPUGABMZFIUEUMUGFABOUEUQULFABUF
       CDPQRUAUBABUOUIEFCTUCEFUKTUD $.
@@ -43909,7 +43899,7 @@ $)
     elrnmpt1 $p |- ( ( x e. A /\ B e. V ) -> B e. ran F ) $=
       ( vz vy wcel cv crn csb wceq wa wex vex wb id csbeq1a nfcsb1v bitr2d wrex
       eleq12d biantrud equcoms spcev df-rex nfv nfcri nfeq2 nfan eqeq2d anbi12d
-      cbvex bitri eqeq1 anbi2d exbidv syl5bb rnmpt elab2g syl5ibr impcom ) CEIZ
+      cbvex bitri eqeq1 anbi2d exbidv bitrid rnmpt elab2g syl5ibr impcom ) CEIZ
       AJZBIZCDKZIZVFVHVDGJZAVIBLZIZCAVICLZMZNZGOZVNVFGVEAPVNVFQAGVEVIMZVFVKVNVP
       VEVIBVJVPRAVIBSUCZVPVMVKAVICSZUDUAUEUFHJZCMZABUBZVOHCVGEWAVKVSVLMZNZGOZVT
       VOWAVFVTNZAOWDVTABUGWEWCAGWEGUHVKWBAAGVJAVIBTUIAVSVLAVICTUJUKVPVFVKVTWBVQ
@@ -43920,7 +43910,7 @@ $)
     elrnmptg $p |- ( A. x e. A B e. V ->
       ( C e. ran F <-> E. x e. A C = B ) ) $=
       ( vy crn wcel cv wceq wrex cab wral rnmpt eleq2i cvv wa syl wi eleq1 elex
-      wb r19.29 biimparc rexlimivw ex eqeq1 rexbidv elab3g syl5bb ) DEIZJDHKZCL
+      wb r19.29 biimparc rexlimivw ex eqeq1 rexbidv elab3g bitrid ) DEIZJDHKZCL
       ZABMZHNZJZCFJZABOZDCLZABMZUMUQDAHBCEGPQUTVBDRJZUAURVBUDUTVBVCUTVBSUSVASZA
       BMVCUSVAABUEVDVCABVDDFJZVCVAVEUSDCFUBUFDFUCTUGTUHUPVBHDRUNDLUOVAABUNDCUIU
       JUKTUL $.
@@ -45125,7 +45115,7 @@ $)
   $( Express "less than or equals" for general strict orders.  (Contributed by
      Stefan O'Rear, 17-Jan-2015.) $)
   poleloe $p |- ( B e. V -> ( A ( R u. _I ) B <-> ( A R B \/ A = B ) ) ) $=
-    ( cid cun wbr wo wcel wceq brun ideqg orbi2d syl5bb ) ABCEFGABCGZABEGZHBDIZ
+    ( cid cun wbr wo wcel wceq brun ideqg orbi2d bitrid ) ABCEFGABCGZABEGZHBDIZ
     OABJZHABCEKQPROABDLMN $.
 
   $( Transitive law for general strict orders.  (Contributed by Stefan O'Rear,
@@ -45872,7 +45862,7 @@ $)
       ( vx vy wcel cvv csn cdm cuni crn cop wceq wa elex eleq1 wex unieqd syl
       wb cxp anim12i opexg adantl adantr mpbird sylan2 cv elxp a1i rneqd op2nda
       sneq vex eqtr2di anbi1i anass bitri exbii snexg rnexg uniexg opeq2 eqeq2d
-      pm4.71ri anbi2d anbi12d ceqsexgv syl5bb dmeqd dmsnopg unisn eqtrdi eqtr2d
+      pm4.71ri anbi2d anbi12d ceqsexgv bitrid dmeqd dmsnopg unisn eqtrdi eqtr2d
       ex pm4.71rd anbi1d 3bitrd exbidv dmexg opeq1 pm5.21nii ) ABCUAZFZAGFZAAHZ
       IZJZWFKZJZLZMZWHBFZWJCFZNZNZAWCOWOWLWHGFZWJGFZNZWEWMWQWNWRWHBOWJCOUBWLWSN
       WEWKGFZWSWTWLWHWJGGUCUDWLWEWTTWSAWKGPUEUFUGWEWDADUHZEUHZLZMZXABFZXBCFZNZN
@@ -45894,7 +45884,7 @@ $)
       ( vx vy wcel cvv cint csn crn cuni cop wceq wa elex eleq1 adantr wex syl
       wb cxp anim12i opexg adantl mpbird sylan2 cv elxp rneqd unieqd vex op2nda
       eqtr2di pm4.71ri anbi1i anass bitri exbii snexg rnexg uniexg opeq2 eqeq2d
-      sneq anbi2d anbi12d ceqsexgv syl5bb inteq inteqd op1stbg sylancr pm4.71rd
+      sneq anbi2d anbi12d ceqsexgv bitrid inteq inteqd op1stbg sylancr pm4.71rd
       eqtr2d anbi1d a1i 3bitrd exbidv eqvisset exlimiv ad2antrl opeq1 pm5.21nii
       ex bitrdi ) ABCUAZFZAGFZAAHZHZAIZJZKZLZMZWJBFZWMCFZNZNZAWFOWRWOWJGFZWMGFZ
       NZWHWPWTWQXAWJBOZWMCOUBWOXBNWHWNGFZXBXDWOWJWMGGUCUDWOWHXDTXBAWNGPQUEUFWHW
@@ -46382,7 +46372,7 @@ $)
        (Contributed by NM, 15-Jun-2005.) $)
     cnvpom $p |- ( E. x x e. A -> ( R Po A <-> `' R Po A ) ) $=
       ( vw vy vz cv wbr wn wa wral wpo r19.26 ralbidv ralbii 3bitr4g vex ralcom
-      wi brcnv wcel wex ralidm r19.3rmv bitr2id anbi1d syl5bb id breq12d notbid
+      wi brcnv wcel wex ralidm r19.3rmv bitr2id anbi1d bitrid id breq12d notbid
       ccnv weq cbvralv anbi12ci imbi12i anbi12i bitr2i bitri bitrdi df-po ) AGB
       UAAUBZDGZVBCHZIZVBEGZCHZVEFGZCHZJZVBVGCHZSZJFBKZEBKDBKZVGVGCUKZHZIZVGVEVN
       HZVEVBVNHZJZVGVBVNHZSZJZDBKZEBKFBKZBCLBVNLVAVLDBKZEBKWCFBKZEBKVMWDVAWEWFE
@@ -47047,7 +47037,7 @@ $)
     $( Distribute proper substitution through the function predicate.
        (Contributed by Alexander van der Vekens, 23-Jul-2017.) $)
     sbcfung $p |- ( A e. V -> ( [. A / x ]. Fun F <-> Fun [_ A / x ]_ F ) ) $=
-      ( vw vy vz wrel cv wbr wa wi wal wsbc sbcal csbconstg bitrd syl5bb albidv
+      ( vw vy vz wrel cv wbr wa wi wal wsbc sbcal csbconstg bitrd bitrid albidv
       csb wcel weq wfun sbcan sbcrel sbcimg sbcbrg breq12d anbi12d sbcg imbi12d
       dffun2 sbcbii 3bitr4g ) BDUAZCHZEIZFIZCJZUQGIZCJZKZFGUBZLZGMZFMZEMZKZABNZ
       ABCTZHZUQURVJJZUQUTVJJZKZVCLZGMZFMZEMZKZCUCZABNVJUCVIUPABNZVGABNZKUOVSUPV
@@ -47092,7 +47082,7 @@ $)
        NM, 4-Nov-2002.)  (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
     dffun8 $p |- ( Fun A <-> ( Rel A /\ A. x e. dom A E! y x A y ) ) $=
       ( wfun wrel cv wbr wmo cdm wral wa weu dffun7 wex wi wcel df-mo vex eldm
-      wb pm5.5 sylbi syl5bb ralbiia anbi2i bitri ) CDCEZAFZBFCGZBHZACIZJZKUGUIB
+      wb pm5.5 sylbi bitrid ralbiia anbi2i bitri ) CDCEZAFZBFCGZBHZACIZJZKUGUIB
       LZAUKJZKABCMULUNUGUJUMAUKUJUIBNZUMOZUHUKPZUMUIBQUQUOUPUMTBUHCARSUOUMUAUBU
       CUDUEUF $.
 
@@ -47493,7 +47483,7 @@ $)
                   A. y e. B E! x e. A x R y ) $=
       ( cxp cin ccnv wfn wfun cdm wceq wa cv wbr wral wmo wcel wi 3bitr4i df-fn
       crn wreu df-rn eqeq1i anbi2i wrex wrmo rninxp anbi1i funcnv raleq moanimv
-      w3a brinxp2 3anan12 bitri mobii df-rmo imbi2i biimt bitr4id bitrdi syl5bb
+      w3a brinxp2 3anan12 bitri mobii df-rmo imbi2i biimt bitr4id bitrdi bitrid
       ralbiia pm5.32i r19.26 ancom reu5 ralbii 3bitr2i ) ECDFGZHZDIVMJZVMKZDLZM
       VNVLUBZDLZMZANZBNZEOZACUCZBDPZVMDUAVRVPVNVQVODVLUDUEUFVRVNMZWBACUGZWBACUH
       ZMZBDPZVSWDVRWGBDPZMWFBDPZWJMWEWIVRWKWJABCDEUIUJVRVNWJVNVTWAVLOZAQZBVQPZV
@@ -47526,7 +47516,7 @@ $)
       ( vx vy vz vw vv cv wfun wss wo wral wa wrel wcel weq wi wal wex cuni cop
       funrel adantr ralimi reluni sylibr r19.28av anim1d dffun4 simprbi 19.21bi
       ssel 19.21bbi syl9r adantl anim2d jaod funeq sseq1 orbi12d anbi12d anbi2d
-      sseq2 cbvral2v ralcom orcom syl5bb bitri anbi12i anandir 2ralbii r19.26-2
+      sseq2 cbvral2v ralcom orcom bitrid bitri anbi12i anandir 2ralbii r19.26-2
       imp anidm bitr2i 3bitr3i eluni eeanv an4 ancom 2exbii 3bitr2i imbi1i r2al
       19.23v impexp 2albii albii 3bitr2ri 3imtr4i alrimiv alrimivv syl sylanbrc
       ) BIZJZWPCIZKZWRWPKZLZCAMZNZBAMZAUAZOZDIZEIUBZXEPZXGFIUBZXEPZNZEFQZRZFSZE
@@ -47965,7 +47955,7 @@ $)
      NM, 10-Oct-2007.) $)
   fnssresb $p |- ( F Fn A -> ( ( F |` B ) Fn B <-> B C_ A ) ) $=
     ( cres wfn wfun cdm wceq wa wss df-fn fnfun funres biantrurd ssdmres sseq2d
-    syl fndm bitr3id bitr3d syl5bb ) CBDZBEUBFZUBGBHZIZCAEZBAJZUBBKUFUDUEUGUFUC
+    syl fndm bitr3id bitr3d bitrid ) CBDZBEUBFZUBGBHZIZCAEZBAJZUBBKUFUDUEUGUFUC
     UDUFCFUCACLBCMQNUDBCGZJUFUGBCOUFUHABACRPSTUA $.
 
   $( Restriction of a function with a subclass of its domain.  (Contributed by
@@ -48029,7 +48019,7 @@ $)
   fnimaeq0 $p |- ( ( F Fn A /\ B C_ A ) ->
       ( ( F " B ) = (/) <-> B = (/) ) ) $=
     ( cima c0 wceq cdm cin wfn wa imadisj incom fndm sseq2d biimpar df-ss sylib
-    wss eqtrid eqeq1d syl5bb ) CBDEFCGZBHZEFCAIZBARZJZBEFCBKUFUCBEUFUCBUBHZBUBB
+    wss eqtrid eqeq1d bitrid ) CBDEFCGZBHZEFCAIZBARZJZBEFCBKUFUCBEUFUCBUBHZBUBB
     LUFBUBRZUGBFUDUHUEUDUBABACMNOBUBPQSTUA $.
 
   ${
@@ -49183,7 +49173,7 @@ $)
      2-Sep-2009.) $)
   funcocnv2 $p |- ( Fun F -> ( F o. `' F ) = ( _I |` ran F ) ) $=
     ( wfun ccnv ccom cid wss crn cres wceq wrel df-fun simprbi cdm dfdm4 dmcoeq
-    iss ax-mp df-rn eqtr4i a1i reseq2d eqeq2d syl5bb mpbid ) ABZAACZDZEFZUGEAGZ
+    iss ax-mp df-rn eqtr4i a1i reseq2d eqeq2d bitrid mpbid ) ABZAACZDZEFZUGEAGZ
     HZIZUEAJUHAKLUHUGEUGMZHZIUEUKUGPUEUMUJUGUEULUIEULUIIUEULUFMZUIAMUFGIULUNIAN
     AUFOQARSTUAUBUCUD $.
 
@@ -49863,7 +49853,7 @@ $)
        31-Dec-2018.) $)
     dffn5im $p |- ( F Fn A -> F = ( x e. A |-> ( F ` x ) ) ) $=
       ( vy wfn cv wcel cfv wceq wa copab cmpt wbr wrel fnrel dfrel4v sylib fnbr
-      ex pm4.71rd eqcom fnbrfvb syl5bb pm5.32da bitr4d opabbidv df-mpt eqtr4di
+      ex pm4.71rd eqcom fnbrfvb bitrid pm5.32da bitr4d opabbidv df-mpt eqtr4di
       eqtrd ) CBEZCAFZBGZDFZUKCHZIZJZADKZABUNLUJCUKUMCMZADKZUQUJCNCUSIBCOADCPQU
       JURUPADUJURULURJUPUJURULUJURULBUKUMCRSTUJULUOURUOUNUMIUJULJURUMUNUABUKUMC
       UBUCUDUEUFUIADBUNUGUH $.
@@ -49909,7 +49899,7 @@ $)
        subclass.  (Contributed by Raph Levien, 20-Nov-2006.) $)
     funimass4 $p |- ( ( Fun F /\ A C_ dom F ) ->
                     ( ( F " A ) C_ B <-> A. x e. A ( F ` x ) e. B ) ) $=
-      ( vy cima wss cv wcel wi wal wfun cdm wa wral wceq wb wrex syl5bb cvv cfv
+      ( vy cima wss cv wcel wi wal wfun cdm wa wral wceq wb wrex bitrid cvv cfv
       dfss2 wbr elima eqcom ssel funbrfvb ex syl9 imp31 rexbidva bitr4id imbi1d
       vex r19.23v bitr4di albidv ancoms ralcom4 w3a ssel2 3impb funfvex ceqsalg
       anim2i nfv eleq1 3syl 3expa ralbidva bitr3id bitrd ) DBFZCGEHZVMIZVNCIZJZ
@@ -50002,7 +49992,7 @@ $)
 
     $( Singleton of function value.  (Contributed by NM, 22-May-1998.) $)
     fnsnfv $p |- ( ( F Fn A /\ B e. A ) -> { ( F ` B ) } = ( F " { B } ) ) $=
-      ( vy wfn wcel wa cv cfv wceq cab wbr csn cima eqcom fnbrfvb syl5bb abbidv
+      ( vy wfn wcel wa cv cfv wceq cab wbr csn cima eqcom fnbrfvb bitrid abbidv
       df-sn a1i imasng adantl 3eqtr4d ) CAEZBAFZGZDHZBCIZJZDKZBUGCLZDKZUHMZCBMN
       ZUFUIUKDUIUHUGJUFUKUGUHOABUGCPQRUMUJJUFDUHSTUEUNULJUDDBACUAUBUC $.
   $}
@@ -50112,7 +50102,7 @@ $)
     dmfco $p |- ( ( Fun G /\ A e. dom G ) ->
                ( A e. dom ( F o. G ) <-> ( G ` A ) e. dom F ) ) $=
       ( vy vx wfun cdm wcel wa cfv cv cop wex ccom wceq cvv syl exbidv eldm2g
-      wb opeq1 eleq1d ceqsexgv eqcom funopfvb syl5bb anbi1d bitr3d vex opelco2g
+      wb opeq1 eleq1d ceqsexgv eqcom funopfvb bitrid anbi1d bitr3d vex opelco2g
       funfvex mpan2 bitrd adantl 3bitr4rd ) CFZACGZHZIZACJZDKZLZBHZDMZAEKZLCHZV
       EVALZBHZIZEMZDMZUTBGHZABCNZGHZUSVCVJDUSVEUTOZVHIZEMZVCVJUSUTPHZVQVCTACUKZ
       VHVCEUTPVOVGVBBVEUTVAUAUBUCQUSVPVIEUSVOVFVHVOUTVEOUSVFVEUTUDAVECUEUFUGRUH
@@ -50587,7 +50577,7 @@ $)
        (Contributed by Stefan O'Rear, 17-Jan-2015.) $)
     fndmdif $p |- ( ( F Fn A /\ G Fn A ) -> dom ( F \ G ) =
           { x e. A | ( F ` x ) =/= ( G ` x ) } ) $=
-      ( vy wfn wa cdm cv cfv wss wceq wcel wbr wex wn wb eqcom fnbrfvb syl5bb
+      ( vy wfn wa cdm cv cfv wss wceq wcel wbr wex wn wb eqcom fnbrfvb bitrid
       cdif cin wne crab difss dmss ax-mp fndm adantr sseqtrid dfss1 vex adantll
       sylib eldm necon3abid funfvex funfni adantlr breq2 notbid ceqsexgv anbi1d
       cvv syl brdif bitr4di exbidv 3bitr2rd rabbi2dva eqtr3d ) CBFZDBFZGZBCDUAZ
@@ -50612,7 +50602,7 @@ $)
           { x e. A | ( F ` x ) = ( G ` x ) } ) $=
       ( vy wfn wa cin cdm cv wcel cfv wceq copab cmpt dffn5im df-mpt eqtrdi wex
       cab crab ineqan12d inopab dmeqd anandi exbii 19.42v bitr3i wb cvv funfvex
-      wfun eqeq1 ceqsexgv syl funfni syl5bb abbidv dmopab df-rab 3eqtr4g adantr
+      wfun eqeq1 ceqsexgv syl funfni bitrid abbidv dmopab df-rab 3eqtr4g adantr
       pm5.32da eqtrd ) CBFZDBFZGZCDHZIAJZBKZEJZVICLZMZGZVJVKVIDLZMZGZGZAENZIZVL
       VOMZABUAZVGVHVSVGVHVNAENZVQAENZHVSVEVFCWCDWDVECABVLOWCABCPAEBVLQRVFDABVOO
       WDABDPAEBVOQRUBVNVQAEUCRUDVEVTWBMVFVEVRESZATVJWAGZATVTWBVEWEWFAWEVJVMVPGZ
@@ -50789,7 +50779,7 @@ $)
     unpreima $p |- ( Fun F -> ( `' F " ( A u. B ) )
                                   = ( ( `' F " A ) u. ( `' F " B ) ) ) $=
       ( vx wfun cdm wfn ccnv cun cima wceq funfn cv wcel cfv wa elpreima anbi2i
-      wo elun andi bitri orbi12d syl5bb bitr4id bitrd eqrdv sylbi ) CECCFZGZCHZ
+      wo elun andi bitri orbi12d bitrid bitr4id bitrd eqrdv sylbi ) CECCFZGZCHZ
       ABIZJZUKAJZUKBJZIZKCLUJDUMUPUJDMZUMNUQUINZUQCOZULNZPZUQUPNZUIUQULCQUJVAUR
       USANZPZURUSBNZPZSZVBVAURVCVESZPVGUTVHURUSABTRURVCVEUAUBVBUQUNNZUQUONZSUJV
       GUQUNUOTUJVIVDVJVFUIUQACQUIUQBCQUCUDUEUFUGUH $.
@@ -50814,7 +50804,7 @@ $)
                                     = ( ( `' F " A ) i^i B ) ) $=
       ( vx wfun cres ccnv cima cin cdm wfn cv wcel wb cfv wa bitri syl elpreima
       elin funfn ancom anbi1i fvres eleq1d adantl pm5.32i a1i an32 bitrdi fnfun
-      wceq funres dmres jctir df-fn sylibr anbi1d syl5bb 3bitr4d sylbi eqrdv )
+      wceq funres dmres jctir df-fn sylibr anbi1d bitrid 3bitr4d sylbi eqrdv )
       CEZDCBFZGAHZCGAHZBIZVCCCJZKZDLZVEMZVJVGMZNCUAVIVJBVHIZMZVJVDOZAMZPZVJVHMZ
       VJCOZAMZPZVJBMZPZVKVLVIVQVRWBPZVTPZWCVQWENVIVQWDVPPWEVNWDVPVNWBVRPWDVJBVH
       TWBVRUBQUCWDVPVTWBVPVTNVRWBVOVSAVJBCUDUEUFUGQUHVRWBVTUIUJVIVDVMKZVKVQNVIV
@@ -51379,7 +51369,7 @@ $)
       ( csn wf cfv cvv wcel cop wceq wa wfn ffn snid funfvex mpan2 syl wb cima
       funfni elex adantr ffvelcdm crn dffn3 biimpi imadmrn fndm imaeq2d eqtr3id
       cdm fnsnfv eqtr4d feq3 mpbid jca wss snssi fss ancoms sylan impbii anbi2d
-      fsng mpan syl5bb pm5.21nii ) AEZBCFZACGZHIZVKBIZCAVKJEKZLZVJCVIMZVLVIBCNZ
+      fsng mpan bitrid pm5.21nii ) AEZBCFZACGZHIZVKBIZCAVKJEKZLZVJCVIMZVLVIBCNZ
       VPAVIIZVLADOZVLVIACACPUAQRVMVLVNVKBUBUCVJVMVIVKEZCFZLZVLVOVJWBVJVMWAVJVRV
       MVSVIBACUDQVJVPWAVQVPVICUEZCFZWAVPWDVICUFUGVPWCVTKWDWASVPWCCVITZVTVPWCCCU
       LZTWECUHVPWFVICVICUIUJUKVPVRVTWEKVSVIACUMQUNWCVTVICUORUPRUQVMVTBURZWAVJVK
@@ -51523,7 +51513,7 @@ $)
       ( vx wcel wfn csn cres cfv cop wceq cv wi sneq reseq2d fveq2 opeq12 mpdan
       wa cvv sneqd eqeq12d imbi2d wss vex snss fnssres sylan2b dffn2 fsn2 bitri
       wf snssi sylan2 vsnid funfvex funfni sylancl biantrurd fvres ax-mp opeq2i
-      sneqi eqeq2i bitr3di syl5bb mpbid expcom vtoclga impcom ) BAECAFZCBGZHZBB
+      sneqi eqeq2i bitr3di bitrid mpbid expcom vtoclga impcom ) BAECAFZCBGZHZBB
       CIZJZGZKZVKCDLZGZHZVRVRCIZJZGZKZMVKVQMDBAVRBKZWDVQVKWEVTVMWCVPWEVSVLCVRBN
       OWEWBVOWEWAVNKWBVOKVRBCPVRWABVNQRUAUBUCVKVRAEZWDVKWFSZVTVSFZWDWFVKVSAUDZW
       HVRADUEZUFAVSCUGZUHWHVRVTIZTEZVTVRWLJZGZKZSZWGWDWHVSTVTULWQVSVTUIVRTVTWJU
@@ -51536,7 +51526,7 @@ $)
                  ( ( F |` { B } ) : { B } --> C <-> ( F ` B ) e. C ) ) $=
       ( vx wcel wfn csn cres wf cfv wb cv wi wceq sneq reseq2 syl wa cop eleq1d
       feq1d feq2 bitrd fveq2 bibi12d imbi2d fnressn vsnid fvres ax-mp sneqi vex
-      opeq2i eqeq2i fsn2 iba eleq1i bitr3di syl5bb sylbir expcom vtoclga impcom
+      opeq2i eqeq2i fsn2 iba eleq1i bitr3di bitrid sylbir expcom vtoclga impcom
       ) BAFDAGZBHZCDVFIZJZBDKZCFZLZVEEMZHZCDVMIZJZVLDKZCFZLZNVEVKNEBAVLBOZVRVKV
       EVSVOVHVQVJVSVMVFOZVOVHLVLBPVTVOVMCVGJVHVTVMCVNVGVMVFDQUBVMVFCVGUCUDRVSVP
       VICVLBDUEUAUFUGVEVLAFZVRVEWASVNVLVPTZHZOZVRAVLDUHWDVNVLVLVNKZTZHZOZVRWGWC
@@ -52214,7 +52204,7 @@ $)
                 E. x e. dom F A e. ( F ` x ) ) ) $=
       ( vy crn cuni wcel cv wa wex wfun cfv cdm wrex eluni wceq wfn eleq2 cvv
       wb funfn fvelrnb anbi2d r19.42v bitr4di biimparc reximi syl6bi exlimdv wi
-      sylbi fvelrn funfvex eleq1 anbi12d spcegv mpan2d rexlimdva impbid syl5bb
+      sylbi fvelrn funfvex eleq1 anbi12d spcegv mpan2d rexlimdva impbid bitrid
       syl ) BCEZFGBDHZGZVCVBGZIZDJZCKZBAHZCLZGZACMZNZDBVBOVHVGVMVHVFVMDVHVFVDVJ
       VCPZIZAVLNZVMVHVFVDVNAVLNZIVPVHVEVQVDVHCVLQVEVQTCUAAVLVCCUBUKUCVDVNAVLUDU
       EVOVKAVLVNVKVDVJVCBRUFUGUHUIVHVKVGAVLVHVIVLGIZVKVJVBGZVGVICULVRVJSGVKVSIZ
@@ -52237,7 +52227,7 @@ $)
        4.8(iv) of [Monk1] p. 43.  (Contributed by NM, 29-Oct-1996.) $)
     dff13 $p |- ( F : A -1-1-> B <-> ( F : A --> B /\
              A. x e. A A. y e. A ( ( F ` x ) = ( F ` y ) -> x = y ) ) ) $=
-      ( vz cv wbr wal wa cfv wceq wi wral wb wcel vex breldm eleq2d syl5bb fndm
+      ( vz cv wbr wal wa cfv wceq wi wral wb wcel vex breldm eleq2d bitrid fndm
       wf1 wf wmo dff12 wfn ffn syl5ib anim12d pm4.71rd fnbrfvb bi2anan9 anandis
       cdm pm5.32da bitr4d imbi1d impexp bitrdi albidv 19.21v wex 19.23v funfvex
       eqcom cvv funfni eqvincg syl bitr4id adantrr pm5.74da bitrd 2albidv breq1
@@ -52565,7 +52555,7 @@ $)
        23-Dec-2016.) $)
     fliftel $p |- ( ph -> ( C F D <-> E. x e. X ( C = A /\ D = B ) ) ) $=
       ( cop wceq wrex wa wcel cvv wb wbr cmpt crn df-br eleq2i bitri wral opexg
-      cv syl2anc ralrimiva eqid elrnmptg syl syl5bb opthg2 rexbidva bitrd ) AEF
+      cv syl2anc ralrimiva eqid elrnmptg syl bitrid opthg2 rexbidva bitrd ) AEF
       IUAZEFNZCDNZOZBJPZECOFDOQZBJPUSUTBJVAUBZUCZRZAVCUSUTIRVGEFIUDIVFUTKUEUFAV
       ASRZBJUGVGVCTAVHBJABUIJRQZCGRZDHRZVHLMCDGHUHUJUKBJVAUTVESVEULUMUNUOAVBVDB
       JVIVJVKVBVDTLMEFCDGHUPUJUQUR $.
@@ -52882,7 +52872,7 @@ $)
                ( B i^i ( `' S " { ( H ` D ) } ) ) ) $=
       ( vx vy wcel wa ccnv csn cima cin cv wbr wrex wb 3syl bitrdi wiso cab cfv
       dfima2 elin wceq crn wf1o wfo isof1o f1ofo forn eleq2d wfn fvelrnb bitr3d
-      f1ofn adantr cvv syl anim1i funfvex funfni eliniseg anbi12d anbi2d syl5bb
+      f1ofn adantr cvv syl anim1i funfvex funfni eliniseg anbi12d anbi2d bitrid
       vex anbi1d anass adantl isorel fnbrfvb bicomd sylan adantrr ancom pm5.32i
       breq1 bitri exp32 com23 imp pm5.32d bitrd rexbidv2 r19.41v bitr4d abbi2dv
       wi eqtr4id ) ABDEFUAZCAIZJZFADKCLMZNZMGOZHOZFPZGWPQZHUBBEKCFUCZLMZNZGHFWP
@@ -53015,7 +53005,7 @@ $)
                   H Isom R , S ( A , B ) ) $=
       ( vv vu cv cfv wceq wa wbr wrex wb wcel anbi1d wf1o copab wral wiso simpl
       wf1 f1of1 cop df-br eleq2 wfn cvv funfvex funfni anim12dan eqeq1 2rexbidv
-      f1fn anbi2d opelopabg syl sylan anass f1fveq equcom bitrdi anassrs syl5bb
+      f1fn anbi2d opelopabg syl sylan anass f1fveq equcom bitrdi anassrs bitrid
       rexbidv r19.42v rexbidva breq1 ceqsrexv adantl sylan9bb anandis sylan9bbr
       bitrd breq2 an32s bitr2id ralrimivva df-isom sylanbrc ) EFIUAZHCLZALZIMZN
       ZDLZBLZIMZNZOZWGWKGPZOZBEQAEQZCDUBZNZOWEJLZKLZGPZWTIMZXAIMZHPZRZKEUCJEUCZ
@@ -53629,7 +53619,7 @@ $)
     acexmid $p |- ( ph \/ -. ph ) $=
       ( va vb vc vd vf ve wel wa cv wral weq wb wrex wreu wex wal weu wsb sb8eu
       nfv w3a eleq12 ancoms 3adant3 3ad2antl1 3ad2antl2 simpl3 cbvrexdva2 3expa
-      anbi12d 3com23 sbiedv eubidv syl5bb df-reu 3bitr4g adantr simpll cbvexdva
+      anbi12d 3com23 sbiedv eubidv bitrid df-reu 3bitr4g adantr simpll cbvexdva
       cbvraldva2 adantll cbvalv mpgbir spi acexmidlemv ) AIJKLMNKNOZMNOZPZNJQZU
       AZMKQZUBZLVSRZKIQZRZJUCZIWDIUDDGOZFGOZPZGCQZUAZFDQZUBZEWJRZDBQZRZCUCZBWDW
       OIBIBSZWCWNJCWPJCSZPWAWLKDWBWMWQKDSZWAWLTZWPWRWQWSWRWQPZVTWKLEVSWJWTVTWKT
@@ -54571,7 +54561,7 @@ $)
        ( <. <. A , B >. , C >. e. { <. <. x , y >. , z >. | ph } <-> ps ) ) $=
       ( vw wcel cvv cop wa cv wceq wex coprab wb w3a opexg sylan 3impa wi simpr
       elex eqeq1d eqcom vex otth2 bitrdi anbi1d pm5.32i 3exbidv df-oprab eleq2i
-      bitri cab abid bitr2i eleq1 syl5bb adantl elisset 3anim123i eeeanv sylibr
+      bitri cab abid bitr2i eleq1 bitrid adantl elisset 3anim123i eeeanv sylibr
       19.41vvv biantrurd bitr4id adantr 3bitr3d expcom vtocleg mpcom syl3an ) F
       INFONZGJNGONZHKNHONZFGPZHPZACDEUAZNZBUBZFIUIGJUIHKUIWDONZVTWAWBUCZWGVTWAW
       BWHVTWAQWCONWBWHFGOOUDWCHOOUDUEUFWIWGUGMWDOWIMRZWDSZWGWIWKQZWJCRZDRZPERZP
@@ -54689,7 +54679,7 @@ $)
                   ( ( x e. A /\ y e. B ) /\ ph ) } |` ( C X. D ) ) =
               { <. <. x , y >. , z >. | ( ( x e. C /\ y e. D ) /\ ph ) } ) $=
       ( wss wa cv wcel coprab cxp cres resoprab anass ssel pm4.71d bicomd an4
-      bi2anan9 syl5bb anbi1d bitr3id oprabbidv eqtrid ) GEIZHFIZJZBKZELZCKZFLZJ
+      bi2anan9 bitrid anbi1d bitr3id oprabbidv eqtrid ) GEIZHFIZJZBKZELZCKZFLZJ
       ZAJZBCDMGHNOUKGLZUMHLZJZUPJZBCDMUSAJZBCDMUPBCDGHPUJUTVABCDUTUSUOJZAJUJVAU
       SUOAQUJVBUSAVBUQULJZURUNJZJUJUSUQURULUNUAUHVCUQUIVDURUHUQVCUHUQULGEUKRSTU
       IURVDUIURUNHFUMRSTUBUCUDUEUFUG $.
@@ -54877,7 +54867,7 @@ $)
       ( A. z e. ran F ph <-> A. x e. A A. y e. B ps ) ) $=
       ( vw wral cv wceq wrex wi wal wb crn wcel cab rnmpo raleqi eqeq1 2rexbidv
       ralab ralcom4 r19.23v albii bitr2i 3bitri bitri nfv ceqsalg ralbi bitr3id
-      ralimi syl syl5bb ) AEIUAZNZEOZHPZDGQZARZESZCFNZHJUBZDGNZCFNZBDGNZCFNZVCA
+      ralimi syl bitrid ) AEIUAZNZEOZHPZDGQZARZESZCFNZHJUBZDGNZCFNZBDGNZCFNZVCA
       EMOZHPZDGQCFQZMUCZNVFCFQZARZESZVIAEVBVRCDMFGHIKUDUEVQVSAEMVOVDPVPVECDFGVO
       VDHUFUGUHVIVGCFNZESWAVGCEFUIWBVTEVFACFUJUKULUMVLVHVMTZCFNVIVNTVKWCCFVHVEA
       RZESZDGNZVKVMWFWDDGNZESVHWDDEGUIWGVGEVEADGUJUKUNVKWEBTZDGNWFVMTVJWHDGABEH
@@ -54889,7 +54879,7 @@ $)
       ( E. z e. ran F ph <-> E. x e. A E. y e. B ps ) ) $=
       ( vw wrex cv wceq wa wex wral wb crn wcel cab rnmpo rexeqi eqeq1 2rexbidv
       rexab rexcom4 r19.41v exbii bitr2i 3bitri bitri ceqsexgv ralimi rexbi syl
-      bitr3id syl5bb ) AEIUAZNZEOZHPZDGNZAQZERZCFNZHJUBZDGSZCFSZBDGNZCFNZVBAEMO
+      bitr3id bitrid ) AEIUAZNZEOZHPZDGNZAQZERZCFNZHJUBZDGSZCFSZBDGNZCFNZVBAEMO
       ZHPZDGNCFNZMUCZNVECFNZAQZERZVHAEVAVQCDMFGHIKUDUEVPVRAEMVNVCPVOVDCDFGVNVCH
       UFUGUHVHVFCFNZERVTVFCEFUIWAVSEVEACFUJUKULUMVKVGVLTZCFSVHVMTVJWBCFVGVDAQZE
       RZDGNZVJVLWEWCDGNZERVGWCDEGUIWFVFEVDADGUJUKUNVJWDBTZDGSWEVLTVIWGDGABEHJLU
@@ -54905,7 +54895,7 @@ $)
        16-May-1995.)  (Revised by David Abernethy, 19-Jun-2012.) $)
     ovid $p |- ( ( x e. R /\ y e. S ) -> ( ( x F y ) = z <-> ph ) ) $=
       ( cv co wceq cop cfv wcel wa df-ov eqeq1i copab wfn coprab fnoprab fneq1i
-      wb mpbir opabid biimpri fnopfvb sylancr eleq2i oprabid bitri bitrd syl5bb
+      wb mpbir opabid biimpri fnopfvb sylancr eleq2i oprabid bitri bitrd bitrid
       baib ) BJZCJZGKZDJZLUPUQMZGNZUSLZUPEOUQFOPZAURVAUSUPUQGQRVCVBUTUSMZGOZAVC
       GVCBCSZTZUTVFOZVBVEUDVGVCAPZBCDUAZVFTVCABCDHUBVFGVJIUCUEVHVCVCBCUFUGVFUTU
       SGUHUIVEVCAVEVDVJOVIGVJVDIUJVIBCDUKULUOUMUN $.
@@ -54951,7 +54941,7 @@ $)
     ov $p |- ( ( A e. R /\ B e. S ) -> ( ( A F B ) = C <-> th ) ) $=
       ( wcel wa co wceq cop cv coprab cfv df-ov fveq1i eqtri eqeq1i wfn fnoprab
       copab eleq1 anbi1d anbi2d opelopabg ibir fnopfvb sylancr anbi12d eloprabg
-      wb cvv mp3an3 bitrd syl5bb bianabs ) HKTZILTZUAZHIMUBZJUCZDVNHIUDZEUEZKTZ
+      wb cvv mp3an3 bitrd bitrid bianabs ) HKTZILTZUAZHIMUBZJUCZDVNHIUDZEUEZKTZ
       FUEZLTZUAZAUAZEFGUFZUGZJUCZVLVLDUAZVMWCJVMVOMUGWCHIMUHVOMWBSUIUJUKVLWDVOJ
       UDWBTZWEVLWBVTEFUNZULVOWGTZWDWFVDVTAEFGRUMVLWHVTVJVSUAZVLEFHIKLVPHUCZVQVJ
       VSVPHKUOUPZVRIUCZVSVKVJVRILUOUQZURUSWGVOJWBUTVAVJVKJVETWFWEVDNWAWIBUAVLCU
@@ -55271,7 +55261,7 @@ $)
       ( vc wcel w3a wa co wceq cop cv coprab df-ov fveq1i eqtri eqeq1i wb eqeq2
       cfv wi opeq2 eleq1d bibi12d imbi2d copab wfn weu wal ex alrimivv fnoprabg
       syl eleq1 anbi1d anbi2d opelopabg fnopfvb syl2an vtoclg com12 exp32 3imp2
-      ibir anbi12d eloprabg adantl bitrd syl5bb biidd bianabs 3adant3 ) EIMUBZJ
+      ibir anbi12d eloprabg adantl bitrd bitrid biidd bianabs 3adant3 ) EIMUBZJ
       NUBZKLUBZUCZUDZIJOUEZKUFZWIWJUDZDUDZDWOIJUGZFUHZMUBZGUHZNUBZUDZAUDZFGHUIZ
       UPZKUFZWMWQWNXFKWNWROUPXFIJOUJWROXETUKULUMWMXGWRKUGZXEUBZWQEWIWJWKXGXIUNZ
       EWIWJWKXJUQWKEWPUDZXJXKXFUAUHZUFZWRXLUGZXEUBZUNZUQXKXJUQUAKLXLKUFZXPXJXKX
@@ -56313,7 +56303,7 @@ $)
     ofrfval2 $p |- ( ph -> ( F oR R G <-> A. x e. A B R C ) ) $=
       ( vy wbr wral wceq cofr cmpt cfv wfn wcel ralrimiva eqid fnmpt syl fneq1d
       cv mpbird inidm wa adantr fveq1d ofrfval nffvmpt1 nfcv nfbr fveq2 breq12d
-      nfv cbvral simpr fvmpt2 syl2anc ralbidva syl5bb bitrd ) AGHFUARQUKZBCDUBZ
+      nfv cbvral simpr fvmpt2 syl2anc ralbidva bitrid bitrd ) AGHFUARQUKZBCDUBZ
       UCZVKBCEUBZUCZFRZQCSZDEFRZBCSZAQCCVMVOFCGHIIAGCUDVLCUDZADJUEZBCSVTAWABCMU
       FBCDVLJVLUGZUHUIACGVLOUJULAHCUDVNCUDZAEKUEZBCSWCAWDBCNUFBCEVNKVNUGZUHUIAC
       HVNPUJULLLCUMAVKCUEZUNZVKGVLAGVLTWFOUOUPWGVKHVNAHVNTWFPUOUPUQVQBUKZVLUCZW
@@ -57533,7 +57523,7 @@ $)
       cxp cfv cop vex op1std csbeq1d op2ndd csbeq2dv eqtrd raliunxp cmpo coprab
       wf cmpt nfcri nfan nfeq2 nfcv nfcsb eleq1 adantr csbeq1a eleq2d sylan9bbr
       wb anbi12d sylan9eqr eqeq2d cbvoprab12 df-mpo 3eqtr4i mpomptx fmpt bitr3i
-      nfel1 nfralxy cbvral raleqbidv syl5bb nfxp xpeq12d cbviun feq2i 3bitr4i
+      nfel1 nfralxy cbvral raleqbidv bitrid nfxp xpeq12d cbviun feq2i 3bitr4i
       sneq ) AILZBJLZEMZMZFNZJAWJDMZOZICOZICWJUAZWOUEZUBZFGUQZEFNZBDOZACOACALZU
       AZDUEZUBZFGUQWQAKLZUCUFZBXHUDUFZEMZMZFNZKWTOXAXMWNKIJCWOXHWJWKUGPZXLWMFXN
       XLAWJXKMWMXNAXIWJXKWJWKXHIUHZJUHZUIUJXNAWJXKWLXNBXJWKEWJWKXHXOXPUKUJULUMZ
@@ -57791,7 +57781,7 @@ $)
       cres ccnv wfun wf1o wex snmg fo1stresm syl wal cop moeq moani brres fo1st
       wfn wb fofn ax-mp fnbrfvb mp2an anbi1i elxp7 eleq1 biimpa adantrr adantrl
       c2nd elsni eqopi an12s sylanr2 adantrrl adantl simprr fveq2d simprl simpl
-      sylan2b op1stg eqtrd adantr opelxpi eqeltrd impbida bitr3id syl5bb mobidv
+      sylan2b op1stg eqtrd adantr opelxpi eqeltrd impbida bitr3id bitrid mobidv
       snidg mpbiri alrimiv funcnv2 sylibr dff1o3 sylanbrc ) BCFZABGZHZAIWQUAZJZ
       WRUBUCZWQAWRUDWODKZWPFDUEWSDBCUFDAWPUGUHWOXAEKZWRLZDMZEUIWTWOXDEWOXDXBAFZ
       XAXBBUJZNZOZDMXGXEDDXFUKULWOXCXHDXCXAXBILZXAWQFZOZWOXHXAXBIWQEPUMXKXAIQZX
@@ -57810,7 +57800,7 @@ $)
       cres ccnv wfun wf1o wex snmg fo2ndresm syl wal cop moeq moani brres fo2nd
       wfn fofn ax-mp fnbrfvb mp2an anbi1i c1st elxp7 eleq1 biimpa elsni ancom2s
       eqopi an12s sylanr2 adantrrr sylan2b adantl fveq2 op2ndg sylan9eqr simprr
-      mpan2 adantr simprl opelxpi syl2anc eqeltrd impbida bitr3id syl5bb mobidv
+      mpan2 adantr simprl opelxpi syl2anc eqeltrd impbida bitr3id bitrid mobidv
       wb snidg mpbiri alrimiv funcnv2 sylibr dff1o3 sylanbrc ) ACFZAGZBHZBIWQUA
       ZJZWRUBUCZWQBWRUDWODKZWPFDUEWSDACUFDWPBUGUHWOXAEKZWRLZDMZEUIWTWOXDEWOXDXB
       BFZXAAXBUJZNZOZDMXGXEDDXFUKULWOXCXHDXCXAXBILZXAWQFZOZWOXHXAXBIWQEPZUMXKXA
@@ -58065,7 +58055,7 @@ $)
       ( wa wsbc va cxp wfn ccnv wf1o wcel wral ralrimivva fnmpo syl cop cmpt cv
       opelxpi ralrimiva eqid fnmpt c1st cfv c2nd csb wceq copab cvv elxp7 anass
       anbi1i sbcbidv sbcan vex 2ndexg ax-mp sbcg sbcel1v anbi12i sbceq2g sbcbii
-      wb 1stexg 3bitri sbceq1g csbvarg eqeq1i 3bitr3g anbi2d syl5bb xpss simprr
+      wb 1stexg 3bitri sbceq1g csbvarg eqeq1i 3bitr3g anbi2d bitrid xpss simprr
       bitri adantrr eqeltrd sselid pm4.71rd eqop pm5.32i bitr2di bitrd opabbidv
       coprab cmpo df-mpo eqtri cnveqi nfv nfcsb1v nfeq2 nfan nfcsb eleq1 opelxp
       nfcv bitrdi csbopeq1a eqeq2d anbi12d sseli adantr cnvoprab df-mpt 3eqtr4g
@@ -58221,7 +58211,7 @@ $)
        Alexander van der Vekens, 30-Oct-2017.) $)
     rbropapd $p |- ( ph -> ( ( F e. X /\ P e. Y )
                      -> ( F M P <-> ( F W P /\ ch ) ) ) ) $=
-      ( wcel wa wbr wb cop cv wceq copab df-br eleq2d syl5bb anbi12d opelopabga
+      ( wcel wa wbr wb cop cv wceq copab df-br eleq2d bitrid anbi12d opelopabga
       breq12 sylan9bb ex ) AFINDJNOZFDGPZFDHPZCOZQAUKFDRZESZKSZHPZBOZEKUAZNZUJU
       MUKUNGNAUTFDGUBAGUSUNLUCUDURUMEKFDIJUOFTUPDTOUQULBCUOFUPDHUGMUEUFUHUI $.
 
@@ -58298,7 +58288,7 @@ $)
     brtpos2 $p |- ( B e. V -> ( A tpos F B <->
       ( A e. ( `' dom F u. { (/) } ) /\ U. `' { A } F B ) ) ) $=
       ( vy vx wcel cvv wbr cdm ccnv csn cuni wa wi wb wex wceq syl bitri c0 cun
-      ctpos reltpos brrelex1i a1i elex adantr cv cmpt ccom df-tpos breqi syl5bb
+      ctpos reltpos brrelex1i a1i elex adantr cv cmpt ccom df-tpos breqi bitrid
       brcog cfv wfun funmpt funbrfv2b ax-mp vex snexg cnvex uniex dmmpti eleq2i
       eqid eqcom anbi12i cnvexg uniexg sneq cnveqd unieqd fvmptg eqeq2d pm5.32i
       mpdan ancom anbi1i anass exbii exsimpr exsimpl 19.9v sylib simpl ceqsexgv
@@ -58692,7 +58682,7 @@ $)
        A. y e. x ( F ` y ) e. ( F ` x ) ) ) $=
       ( wsmo cdm con0 wf word wel cfv wcel wral w3a df-smo ralcom impexp 3anass
       cv wi wa simpr ordtr1 3impib 3com23 simp3 3expia impbid2 bitr3id ralbidv2
-      jca imbi1d ralbidva syl5bb pm5.32i anbi2i 3bitr4i bitri ) CDCEZFCGZURHZBA
+      jca imbi1d ralbidva bitrid pm5.32i anbi2i 3bitr4i bitri ) CDCEZFCGZURHZBA
       IZBRZCJARZCJKZSZAURLBURLZMZUSUTVDBVCLZAURLZMZBACNUSUTVFTZTUSUTVITZTVGVJVK
       VLUSUTVFVIVFVEBURLZAURLUTVIVEBAURUROUTVMVHAURUTVCURKZTZVEVDBURVCVBURKZVES
       VPVATZVDSVOVEVPVAVDPVOVQVAVDVOVQVAVPVAUAUTVNVAVQUTVNVAMVPVAUTVAVNVPUTVAVN
@@ -60810,7 +60800,7 @@ $)
         ( dom G = (/) /\ x e. A ) ) } e. S ) $=
       ( cv wcel wceq wa com c0 wb vz vk va cdm csuc cfv wrex wal wex cab adantr
       wo peano1 elex2 r19.9rmv mp2b wf fdm syl eqeq2 adantl mpbid biantrurd wne
-      peano3 neeqtrrd necomd neneqd intnanrd biorf bitrd rexbidva syl5bb bitrdi
+      peano3 neeqtrrd necomd neneqd intnanrd biorf bitrd rexbidva bitrid bitrdi
       r19.44mv alrimiv jca eleq1 eleq2 bibi1d albidv anbi12d spcegv sylc eleq1d
       wn fveq2 wral ad2antrr sucid mpbiri ffvelrnd rspcdva simpllr simplr eqtrd
       simpr suceq eqeq2d fveq2d eleq2d rspcev syl2anc ex simprl 3eqtr3rd peano4
@@ -62477,7 +62467,7 @@ $)
     brdifun $p |- ( ( A e. X /\ B e. X ) ->
       ( A R B <-> -. ( A .< B \/ B .< A ) ) ) $=
       ( wcel wa wbr ccnv cun wn wo cxp wb cop opelxpi df-br sylibr cdif brcnvg
-      breqi brdif bitri baib syl brun orbi2d syl5bb notbid bitrd ) AEGBEGHZABCI
+      breqi brdif bitri baib syl brun orbi2d bitrid notbid bitrd ) AEGBEGHZABCI
       ZABDDJZKZIZLZABDIZBADIZMZLULABEENZIZUMUQOULABPVAGVBABEEQABVARSUMVBUQUMABV
       AUOTZIVBUQHABCVCFUBABVAUOUCUDUEUFULUPUTUPURABUNIZMULUTABDUNUGULVDUSURABEE
       DUAUHUIUJUK $.
@@ -62545,7 +62535,7 @@ $)
        by Mario Carneiro, 6-Dec-2016.) $)
     eqerlem $p |- ( z R w <-> [_ z / x ]_ A = [_ w / x ]_ A ) $=
       ( cv wceq wsbc csb cvv wcel wb vex nfcsb1v weq sbciegf brabsb nfeq csbief
-      wbr nfv nfcv csbeq1 eqtr3id eqeq2d ax-mp csbeq1a eqeq1d syl5bb bitri ) CJ
+      wbr nfv nfcv csbeq1 eqtr3id eqeq2d ax-mp csbeq1a eqeq1d bitrid bitri ) CJ
       ZDJZGUDEFKZBUPLZAUOLZAUOEMZAUPEMZKZUQABUOUPGIUAUONOUSVBPCQURVBAUONAUTVAAU
       OERAUPERUBUREVAKZACSZVBUPNOURVCPDQUQVCBUPNVCBUEBDSZFVAEVEFABJZEMVAAVFEFBQ
       AFUFHUCAVFUPEUGUHUITUJVDEUTVAAUOEUKULUMTUJUN $.
@@ -63165,7 +63155,7 @@ $)
     brecop $p |- ( ( ( A e. G /\ B e. G ) /\ ( C e. G /\ D e. G ) ) ->
                 ( [ <. A , B >. ] .~ .<_ [ <. C , D >. ] .~ <-> ps ) ) $=
       ( wcel wa cop cec wbr cv wceq wex ecopqsi copab df-br eleq2i bitri anbi1d
-      wb eqeq1 4exbidv anbi2d opelopab2 syl5bb syl2an opeq12 eceq1d anim12i cxp
+      wb eqeq1 4exbidv anbi2d opelopab2 bitrid syl2an opeq12 eceq1d anim12i cxp
       wi opelxpi opelxp wer a1i id ereldm bitr3id syl5ibr im2anan9 an4s ex mpdd
       com13 pm5.74d cgsex4g eqcom anbi12i biimt anbi12d 3bitr4d bitrd ) INUBJNU
       BUCZKNUBLNUBUCZUCZIJUDZMUEZKLUDZMUEZPUFZWMEUGZFUGZUDZMUEZUHZWOGUGZHUGZUDZ
@@ -63245,7 +63235,7 @@ $)
         ( ( x = [ p ] R /\ y = [ q ] S ) /\ z = [ ( p .+ q ) ] T ) ) ) ) $=
       ( vw cv cec wceq wa wrex coprab wcel cio cmpo simpl reximi cqs eleq2i vex
       co elqs bitri anbi12i reeanv bitr4i sylibr pm4.71ri wb eroveu iota1 eqcom
-      weu syl bitrdi pm5.32da syl5bb oprabbidv df-mpo nfiota1 nfeq2 nfan anbi2d
+      weu syl bitrdi pm5.32da bitrid oprabbidv df-mpo nfiota1 nfeq2 nfan anbi2d
       nfv eqeq1 cbvoprab3 eqtr4i 3eqtr4g ) ABURZUDURZLUSUTZCURZUCURZMUSUTZVAZDU
       RZXAXDJVLNUSUTZVAZUCHVBZUDGVBZBCDVCWTPVDZXCQVDZVAZXGXKDVEZUTZVAZBCDVCZKBC
       PQXOVFZAXKXQBCDXKXNXKVAAXQXKXNXKXFUCHVBZUDGVBZXNXJXTUDGXIXFUCHXFXHVGVHVHX
@@ -64257,7 +64247,7 @@ $)
     mapsn $p |- ( A ^m { B } ) = { f | E. y e. A f = { <. B , y >. } } $=
       ( cv cop csn wceq wrex wcel wf wex snid cima cvv mpbiri syl wf1o co elmap
       cmap snex wa crn wbr weu wfn ffn fneu sylancl cab euabsn imasng ax-mp cdm
-      fdm imaeq2d imadmrn eqtr3di eqtr3id eqeq1d exbidv syl5bb mpbid eleq2 syl5
+      fdm imaeq2d imadmrn eqtr3di eqtr3id eqeq1d exbidv bitrid mpbid eleq2 syl5
       vex frn sseld wfo dffn4 sylib fof feq3 syl5ibcom fsn syl6ib eximdv df-rex
       jcad mpd sylibr wss f1osn f1oeq1 f1of snssi syl2an expcom rexlimiv impbii
       fss bitri abbi2i ) DGZCAGZHIZJZABKZDBCIZUCUAZWQXCLXBBWQMZXABXBWQECFUDUBXD
@@ -64727,7 +64717,7 @@ $)
       csb w3a nfcv nfcsb1v csbeq1a cbvixp eleq2i elixp2 3anass eqid fnmpt simpr
       3bitri eqeltrd jca dffn2 fmpt eleq1d biimpd ralim sylbir sylbi imp impbii
       wf nfv nffvmpt1 nfel weq fveq2 eleq12d cbvral anbi2i bitri mptexg bitr2id
-      biantrurd syl5bb ) BEGBHGZABCIZABDJZGZCDGZABKZLBEMWCWAHGZWABUAZFNZWAOZAWH
+      biantrurd bitrid ) BEGBHGZABCIZABDJZGZCDGZABKZLBEMWCWAHGZWABUAZFNZWAOZAWH
       DUBZGZFBKZPZPZVTWEWCWAFBWJJZGWFWGWLUCWNWBWOWAAFBDWJFDUDAWHDUEZAWHDUFZUGUH
       FBWJWAUIWFWGWLUJUNWEWMVTWNWEWGANZWAOZDGZABKZPZWMWEXBWEWGXAABCWADWAUKZULWD
       WTABWRBGZWDPWSCDABCDWAXCQXDWDUMUORUPWGXAWEWGBHWAVFZXAWESZBWAUQXECHGZABKZX
@@ -65465,7 +65455,7 @@ $)
     map1 $p |- ( A e. V -> ( 1o ^m A ) ~~ 1o ) $=
       ( vx vy wcel c1o cmap co c0 cxp cvv 1oex a1i cv 0ex p0ex wceq wa bitr2di
       wb csn wfn fnmap elex fnovex mp3an12i 2a1i xpexg mpan2 a1d el1o wf oveq1i
-      df1o2 eleq2i elmapg mpan syl5bb fconst2 anbi12d ancom en2d ) ABEZCDFAGHZF
+      df1o2 eleq2i elmapg mpan bitrid fconst2 anbi12d ancom en2d ) ABEZCDFAGHZF
       IAIUAZJZGKKJUBFKEZVCAKEVDKEUCLABUDFAKKGUEUFVGVCLMVCCNZVDEZIKEOUGVCVFKEZDN
       ZFEZVCVEKEZVJPAVEBKUHUIUJVCVLVHVFQZRVKIQZVIRVIVORVCVLVOVNVIVLVOTVCVKUKMVC
       VIAVEVHULZVNVIVHVEAGHZEZVCVPVDVQVHFVEAGUNUMUOVMVCVRVPTPVEAVHKBUPUQURAIVHO
@@ -65557,7 +65547,7 @@ $)
       ( vy vx vz cv cint cop wcel wceq wex cvv inteq inteqd vex op1stb adantr
       wa csn cxp snex xpex elxp eqtrdi eqeltrdi exlimivv sylbi opex wb eqvisset
       a1i ancom anass velsn anbi1i 3bitr3i exbii eqeq2d anbi1d ceqsexv pm4.71ri
-      opeq2 eqtr2di bitri 3bitri opeq1 anbi12d ceqsexgv syl5bb pm5.32ri pm4.71i
+      opeq2 eqtr2di bitri 3bitri opeq1 anbi12d ceqsexgv bitrid pm5.32ri pm4.71i
       eleq1 syl bitr2i en2i ) EFABUAZUBZAEHZIZIZFHZBJZAVRCBDUCUDCVTVSKZVTWCGHZJ
       ZLZWCAKZWFVRKZTZTZGMZFMZWBNKZFGVTAVRUEZWLWOFGWHWOWKWHWBWCNWHWBWGIZIWCWHWA
       WQVTWGOPWCWFFQZGQRUFWRUGSUHUIWDNKWIWCBWRDUJUMWEWCWBLZTVTWBBJZLZWBAKZTZWST
@@ -65720,7 +65710,7 @@ $)
       ( vf vz vw vv vu cdom cv wa cuni cop cvv wcel wi wceq wb vex vx vy brdomi
       wbr wf1 cxp csn cdm crn cfv wf f1f ffvelcdm ex syl anim2d adantld 3imtr4g
       elxp4 opelxp adantl wrex elxp2 fvex f1fveq ancoms anbi2d ad2ant2l adantlr
-      opth syl5bb sneq dmeqd unieqd op1sta eqtrdi rneqd op2nda fveq2d eqeqan12d
+      opth bitrid sneq dmeqd unieqd op1sta eqtrdi rneqd op2nda fveq2d eqeqan12d
       imp opeq12d eqeq12 bitrdi 3bitr4d exp53 com23 rexlimivv rexlimdvv syl2anb
       ad2antlr com12 reldom brrelex1i xpexg sylancr adantr brrelex2i exlimddv
       dom3d ) ABJUDZABEKZUEZCAUFZCBUFZJUDEABEUCXAXCLUAUBXDXEUAKZUGZUHZMZXGUIZMZ
@@ -65868,7 +65858,7 @@ $)
       r19.21bi reu6 anim12dan reeanv pm4.38 ex ralimdv impcom reximi sylbir syl
       com12 op1std csbeq1d eqeq2d op2ndd anbi12d eqeq1 bibi12d ralxp nfcv nfeq2
       vex nfv nfan nfbi nfralxy anbi2d opeq2 eqeq1d cbvral anbi1d opeq1 ralbidv
-      syl5bb bitr4i eqeq2 opth bitrdi bibi2d 2ralbidv sylibr ralrimivva reubidv
+      bitrid bitr4i eqeq2 opth bitrdi bibi2d 2ralbidv sylibr ralrimivva reubidv
       rexxp nfop opeq12 syl2an cbvmpo opeq12d mpompt eqtr4i sylanbrc ) ABLUJZUB
       UCZHUDZCYGUEUCZIUDZUFZEGUGZQZLDFUGZRUAUJZYLSZLYOUHZUAYMRZYOYMBCDFHIUFZUIZ
       UKAYNLYOAYGYOQZTZYIEQZYKGQZYNUUCYHDQZHEQZBDRZUUDUUBUUFAYGDFULUMAUUHUUBAUU
@@ -68406,7 +68396,7 @@ $)
       supubti $p |- ( ph -> ( C e. B -> -. sup ( B , A , R ) R C ) ) $=
         ( vw cv wbr wn wral wcel wi wceq csup crab wrex simpl ss2rabi supval2ti
         wa a1i crio wreu supeuti riotacl2 syl eqeltrd sselid breq2 notbid breq1
-        cbvralv ralbidv syl5bb elrab simprbi rspccv 3syl ) AHGJUAZBNZCNZJOZPZCH
+        cbvralv ralbidv bitrid elrab simprbi rspccv 3syl ) AHGJUAZBNZCNZJOZPZCH
         QZBGUBZRZVFMNZJOZPZMHQZIHRVFIJOZPZSAVKVHVGJOVHDNJODHUCSCGQZUGZBGUBZVLVF
         WAVKBGWAVKSVGGRVKVTUDUHUEAVFWABGUIZWBABCDEFGHJKLUFAWABGUJWCWBRABCDEFGHJ
         KLUKWABGULUMUNUOVMVFGRVQVKVQBVFGVKVGVNJOZPZMHQVGVFTZVQVJWECMHVHVNTVIWDV
@@ -68763,7 +68753,7 @@ $)
     infglbti $p |- ( ph -> ( ( C e. A /\ inf ( B , A , R ) R C ) ->
                     E. z e. B z R C ) ) $=
       ( wcel cinf wbr wrex wa wb brcnvg cvv ccnv csup df-inf breq1i simpr cnvti
-      cv cnvinfex supclti adantr bicomd syl2anc syl5bb suplubti expdimp sylancl
+      cv cnvinfex supclti adantr bicomd syl2anc bitrid suplubti expdimp sylancl
       vex rexbidv sylibd sylbid expimpd ) AIGMZHGJNZIJOZDUGZIJOZDHPZAVBQZVDIHGJ
       UAZUBZVIOZVGVDVJIJOZVHVKVCVJIJHGJUCUDVHVBVJGMZVLVKRAVBUEZAVMVBABCDEFGHVIA
       EFGJKUFZABCDGHJLUHZUIUJVBVMQVKVLIVJGGJSUKULUMVHVKIVEVIOZDHPZVGAVBVKVRABCD
@@ -70010,7 +70000,7 @@ $)
       ( vm vy com wcel cfv cinl wceq cvv c1o wa vz wss wfo wdc wral cima ssrab2
       cv crab eqsstri a1i wf wrex wfn wfun cdm ccnv csn cxp wf1o djulf1o f1ocnv
       c0 f1ofun mp2b cdju fofun syl ccom funco funeqi sylibr sylancr fof eleq2d
-      fdmd anbi1d wb dmcoss sseli pm4.71ri dmfco pm5.32da syl5bb cinr simpr crn
+      fdmd anbi1d wb dmcoss sseli pm4.71ri dmfco pm5.32da bitrid cinr simpr crn
       imassrn adantl df-rn eleq2i sylib 2thd cin djuin disjel mpan con2i eleq2s
       wn dfrn4 sylnib 2falsed cun wo ffvelrnda djuun mpjaodan 3bitr4d dmeqi weq
       elun fveq2 eleq1d elrab2 eqrdv df-fn sylanbrc fveq1i adantr biimpi simpld
@@ -71269,7 +71259,7 @@ $)
         -> _om e. WOmni ) $=
       ( vn vf vz vw vi vj vq weq wdc xnninf wral cv cfv c1o wceq com c2o c0 cif
       cmap co cwomni wcel wa csuc wrex cmpt elmapi adantl fveqeq2 cbvrexv suceq
-      rexeqdv syl5bb ifbid cbvmptv simpl equequ1 dcbid equequ2 nninfwlpoimlemdc
+      rexeqdv bitrid ifbid cbvmptv simpl equequ1 dcbid equequ2 nninfwlpoimlemdc
       wf cbvral2v sylib ralrimiva cvv wb omex iswomnimap ax-mp sylibr ) ABJZKZB
       LMALMZCNDNZOPQCRMKZDSRUBUCZMZRUDUEZVPVRDVSVPVQVSUEZUFZEFGCVQHRINZVQOTQZIH
       NZUGZUHZTPUAZUIWBRSVQVDVPVQSRUJUKHGRWIENZVQOTQZEGNZUGZUHZTPUAHGJZWHWNTPWH
@@ -72751,7 +72741,7 @@ $)
      by NM, 6-Feb-1996.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
   ltpiord $p |- ( ( A e. N. /\ B e. N. ) -> ( A <N B <-> A e. B ) ) $=
     ( clti wbr cep cnpi cxp cin wcel wa df-lti breqi brinxp epelg adantl bitr3d
-    wb syl5bb ) ABCDABEFFGHZDZAFIZBFIZJZABIZABCSKLUCABEDZTUDABFFEMUBUEUDQUAABFN
+    wb bitrid ) ABCDABEFFGHZDZAFIZBFIZJZABIZABCSKLUCABEDZTUDABFFEMUBUEUDQUAABFN
     OPR $.
 
   ${
@@ -72955,7 +72945,7 @@ $)
      31-Aug-2019.) $)
   nlt1pig $p |- ( A e. N. -> -. A <N 1o ) $=
     ( cnpi wcel c0 wne c1o clti wbr wn com elni simprbi wceq wa noel wo ltpiord
-    wb 1pi mpan2 csuc df-1o eleq2i elsucg syl5bb biimpa ord mpi ex necon3ad mpd
+    wb 1pi mpan2 csuc df-1o eleq2i elsucg bitrid biimpa ord mpi ex necon3ad mpd
     bitrd ) ABCZADEZAFGHZIUMAJCUNAKLUMUOADUMUOADMZUMUONZADCZIUPAOUQURUPUMUOURUP
     PZUMUOAFCZUSUMFBCUOUTRSAFQTUTADUAZCUMUSFVAAUBUCADBUDUEULUFUGUHUIUJUK $.
 
@@ -75129,7 +75119,7 @@ $)
       ( vl vu wcel cvv wa cnq wss cv wrex wb wral anbi1d rexbidv anbi12d anbi2d
       eleq2 cop cnp cltq wbr wn wo wi w3a cpw npsspw sseli opelxp sylib anim12i
       cxp elex syl nqex ssex ad2antrr copab df-inp eleq2i sseq1 bibi12d ralbidv
-      notbid orbi1d imbi2d 2ralbidv 3anbi123d orbi2d opelopabg syl5bb pm5.21nii
+      notbid orbi1d imbi2d 2ralbidv 3anbi123d orbi2d opelopabg bitrid pm5.21nii
       wceq ) BAUAZUBGZBHGZAHGZIZBJKZAJKZIZDLZBGZDJMZCLZAGZCJMZIZIZWFWEWHUCUDZWH
       BGZIZCJMZNZDJOZWIWMWEAGZIZDJMZNZCJOZIZWFWSIZUEZDJOZWMWFWIUFZUGZCJODJOZUHZ
       IZVRBJUIZGZAXMGZIZWAVRVQXMXMUOZGXPUBXQVQUJUKBAXMXMULUMXNVSXOVTBXMUPAXMUPU
@@ -75686,7 +75676,7 @@ $)
     ltdfpr $p |- ( ( A e. P. /\ B e. P. ) -> ( A <P B <->
         E. q e. Q. ( q e. ( 2nd ` A ) /\ q e. ( 1st ` B ) ) ) ) $=
       ( vx vy cltp wbr cop cv cnp wcel wa c2nd cfv c1st wrex wceq fveq2d eleq2d
-      cnq copab df-br df-iltp eleq2i bitri simpl simpr anbi12d rexbidv syl5bb
+      cnq copab df-br df-iltp eleq2i bitri simpl simpr anbi12d rexbidv bitrid
       opelopab2a ) ABFGZABHZDIZJKEIZJKLCIZUNMNZKZUPUOONZKZLZCTPZLDEUAZKZAJKBJKL
       UPAMNZKZUPBONZKZLZCTPZULUMFKVDABFUBFVCUMDECUCUDUEVBVJDEABJJUNAQZUOBQZLZVA
       VICTVMURVFUTVHVMUQVEUPVMUNAMVKVLUFRSVMUSVGUPVMUOBOVKVLUGRSUHUIUKUJ $.
@@ -76055,7 +76045,7 @@ $)
         sylan wex oveq2 adantr adantl eqtr4d eqeq2d expcom pm5.32d 3expa sylan2
         anassrs rexbidva r19.41v bitr3di an32s bitrdi exbidv caovcl elisset syl
         wb an31s biantrurd 19.41v bitr4di rexcom4 ancoms df-rex genpelvl anbi1d
-        syl5bb 3bitr4rd 3impb 3adant3 3impa oveq1 rexbidv pm5.32i exbii 3bitr4d
+        bitrid 3bitr4rd 3impb 3adant3 3impa oveq1 rexbidv pm5.32i exbii 3bitr4d
         bitri rexbii eqrdv ) FUAUBZGUAUBZHUAUBZUCZAFGLUDZHLUDUEUFZFGHLUDZLUDUEU
         FZXBAUGZIUGZSUGZMUDZUHZSXEUEUFZUIZIFUEUFZUIZXGXHJUGZMUDZKUGZMUDZUHZKHUE
         UFZUIZJGUEUFZUIZIXNUIZXGXFUBZXGXDUBZWSWTXAXOYEVPZWTXATZWSYHYIWSTXMYDIXN
@@ -76091,7 +76081,7 @@ $)
         sylan wex oveq2 adantr adantl eqtr4d eqeq2d expcom pm5.32d 3expa sylan2
         anassrs rexbidva r19.41v bitr3di an32s bitrdi exbidv caovcl elisset syl
         wb an31s biantrurd 19.41v bitr4di rexcom4 ancoms df-rex genpelvu anbi1d
-        syl5bb 3bitr4rd 3impb 3adant3 3impa oveq1 rexbidv pm5.32i exbii 3bitr4d
+        bitrid 3bitr4rd 3impb 3adant3 3impa oveq1 rexbidv pm5.32i exbii 3bitr4d
         bitri rexbii eqrdv ) FUAUBZGUAUBZHUAUBZUCZAFGLUDZHLUDUEUFZFGHLUDZLUDUEU
         FZXBAUGZIUGZSUGZMUDZUHZSXEUEUFZUIZIFUEUFZUIZXGXHJUGZMUDZKUGZMUDZUHZKHUE
         UFZUIZJGUEUFZUIZIXNUIZXGXFUBZXGXDUBZWSWTXAXOYEVPZWTXATZWSYHYIWSTXMYDIXN
@@ -77213,7 +77203,7 @@ $)
       wb vx vu vv cnp cmp c1st wss ssid rexss ax-mp 1pr c2nd prop elprnql sylan
       vz cop mpan w3a breq1 3ad2ant3 abeq2i ltmnqg mp3an2 ancoms mulidnq breq2d
       1nq adantr bitrd bitr2id 3adant3 syl3an1 syl3an2 3expia pm5.32rd rexbidva
-      1prl r19.42v bitr3di syl5bb df-imp mulclnq genpelvl mpan2 prnmaxl ltrelnq
+      1prl r19.42v bitr3di bitrid df-imp mulclnq genpelvl mpan2 prnmaxl ltrelnq
       wi crq brel simpl simpr recclnq mulcomnqg caovord2d recidnq biimpd sylan2
       mpcom elab2g mpbird mulassnqg caov12d oveq2d 3eqtrrd oveq2 eqeq2d syl2anc
       syl rspcev a1i ancld reximia ex prcdnql adantrd rexlimdva impbid 3bitr4d
@@ -77242,7 +77232,7 @@ $)
       wb vx vu vv cnp cmp c2nd wss ssid rexss ax-mp 1pr c1st prop elprnqu sylan
       vz cop mpan w3a breq2 3ad2ant3 abeq2i ltmnqg mp3an1 ancoms mulidnq breq1d
       1nq adantr bitrd bitr2id 3adant3 syl3an1 syl3an2 3expia pm5.32rd rexbidva
-      1pru r19.42v bitr3di syl5bb df-imp mulclnq genpelvu mpan2 prnminu ltrelnq
+      1pru r19.42v bitr3di bitrid df-imp mulclnq genpelvu mpan2 prnminu ltrelnq
       wi crq brel ancomd simpr simpl recclnq mulcomnqg caovord2d recidnq biimpd
       mpcom sylan2 elab2g 3syl mpbird mulassnqg caov12d oveq2d syl oveq2 eqeq2d
       3eqtrrd rspcev syl2anc a1i ancld reximia prcunqu adantrd rexlimdva impbid
@@ -81111,7 +81101,7 @@ $)
   gt0srpr $p |- ( 0R <R [ <. A , B >. ] ~R <-> B <P A ) $=
     ( c0r cop cer cec cltr wbr cnp wcel wa cltp cxp cnr brel c1p cpp co wb 1pr
     cdm wceq cqs wer enrer ax-mp ltrelsr simprd df-nr eleqtrdi ecelqsdm sylancr
-    erdm opelxp sylib ltrelpr ancomd df-0r breq1i ltsrprg mpanl12 syl5bb ltaprg
+    erdm opelxp sylib ltrelpr ancomd df-0r breq1i ltsrprg mpanl12 bitrid ltaprg
     mp3an3 ancoms bitr4d pm5.21nii ) CABDZEFZGHZAIJZBIJZKZBALHZVJVHIIMZJZVMVJEU
     AVOUBZVIVOEUCZJVPVOEUDVQUEVOEUMUFVJVINVRVJCNJVINJCVINNGUGOUHUIUJVOVHEUKULAB
     IIUNUOVNVLVKBAIILUPOUQVMVJPBQRPAQRLHZVNVJPPDEFZVIGHZVMVSCVTVIGURUSPIJZWBVMW
@@ -82232,7 +82222,7 @@ $)
     mappsrprg $p |- ( ( A e. P. /\ C e. R. )
         -> ( C +R -1R ) <R ( C +R [ <. A , 1P >. ] ~R ) ) $=
       ( cnp wcel cnr wa c1p cpp co wbr cm1r cplr cop cer cec cltr 1pr adantr wb
-      a1i cltp addclpr mp2an ltaddpr mpan df-m1r breq1i ltsrprg syl22anc syl5bb
+      a1i cltp addclpr mp2an ltaddpr mpan df-m1r breq1i ltsrprg syl22anc bitrid
       id m1r cxp cqs opelxpi enrex ecelqsi syl mpan2 eleqtrrdi ltasrg mp3an2ani
       df-nr simpr bitr3d mpbid ) ACDZBEDZFZGGHIZVJAHIUAJZBKLIBAGMZNOZLIPJZVGVKV
       HVJCDZVGVKGCDZVPVOQQGGUBUCZVJAUDUERVIKVMPJZVKVNVGVRVKSVHVRGVJMNOZVMPJZVGV
@@ -82252,7 +82242,7 @@ $)
       a1i simpl addclsr ltasrg syl3anc pn0sr oveq1d adantr addasssrg 0r 3eqtr3d
       addcomsrg 0idsr adantl eqtrd breq2d bitrd mpan2 sylan df-nr breq2 rexbidv
       wi eqeq2 imbi12d cltp df-m1r breq1i mp3an12 addclpr mp2an ltsrprg mpanl12
-      addassprg ltaprg 3bitr4d syl5bb ltexpri syl6bi enreceq addcomprg rexbidva
+      addassprg ltaprg 3bitr4d bitrid ltexpri syl6bi enreceq addcomprg rexbidva
       mpanl2 eqeq1d bitr4d ancoms sylibrd ecoptocl oveq2 sylan9eqr reximdv syld
       syl ex sylbird sylc mappsrprg syl5ibcom rexlimdva impbid ) CDEZCFGHZBIJZC
       AUCZKUDLUEZGHZBMZANUFZXOXQYBXOXQOXOBDEZOZXQYBXQYCXOXQXPDEYCXPBDDIUGUHUIUJ
@@ -82861,7 +82851,7 @@ $)
          involve to natural numbers (notably, ~ axcaucvg ).  (Contributed by
          Jim Kingdon, 14-Jul-2021.)  (New usage is discouraged.) $)
       peano2nnnn $p |- ( A e. N -> ( A + 1 ) e. N ) $=
-        ( vz wcel c1 caddc co cv wral wa eleq2i elintg syl5bb cvv c1r c0r cnr
+        ( vz wcel c1 caddc co cv wral wa eleq2i elintg bitrid cvv c1r c0r cnr
         cab cint ibi vex wceq eleq2 raleqbi1dv anbi12d elab oveq1 eleq1d rspcva
         simprbi sylan2 expcom ralimia syl wb cop df-1 0r opexg eqeltri addvalex
         1sr mp2an mpan2 mpbird ) CDGZCHIJZDGZVJFKZGZFHAKZGZBKZHIJZVNGZBVNLZMZAU
@@ -82958,7 +82948,7 @@ $)
       ( wcel cop cec cltq wbr cab c1p cpp cer c0r wceq cnp syl2anc c1r addclpr
       co cmp cnpi cv c1o ceq crq cfv cmul cmr cnr nnprlu prsrcl recnnpr mulresr
       c1 syl 1pr a1i mulsrpr syl22anc recidpipr recidpirqlemcalc eqeq2i mulclpr
-      df-1r wb wa pm3.2i mp1i enreceq syl5bb mpbird eqtrd opeq1d df-1 eqtr4di )
+      df-1r wb wa pm3.2i mp1i enreceq bitrid mpbird eqtrd opeq1d df-1 eqtr4di )
       BUADZCUBZBUCEUDFZGHCIVRAUBZGHAIEZJKSZJELFZMEVQVRUEUFZGHCIWCVSGHAIEZJKSZJE
       LFZMEUGSZWBWFUHSZMEZUNVPWBUIDZWFUIDZWGWINVPVTODZWJABCUJZVTUKUOVPWDODZWKAB
       CULZWDUKUOWBWFUMPVPWIQMEUNVPWHQMVPWHWAWETSZJJTSZKSZWAJTSZJWETSZKSZELFZQVP
@@ -83359,7 +83349,7 @@ $)
       ( vy vz cr wcel cc0 cltrr wbr cmul co c1 wceq wrex c0r cop cnr bitri c1r
       wa cv wi wex elreal df-rex breq2 oveq1 eqeq1d anbi2d rexbidv imbi12d cltr
       df-0 breq1i ltresr cmr recexgt0sr opelreal anbi1i a1i mulresr df-1 eqeq2i
-      wb eqid 1sr 0r opthg2 mp2an mpbiran2 bitrdi anbi12d pm5.32da syl5bb oveq2
+      wb eqid 1sr 0r opthg2 mp2an mpbiran2 bitrdi anbi12d pm5.32da bitrid oveq2
       rspcev syl6bir expd rexlimdv syl5 syl5bi gencl imp ) BEFZGBHIZGAUAZHIZBWF
       JKZLMZTZAENZGCUAZOPZHIZWGWMWFJKZLMZTZAENZUBWEWKUBWLQFZWDCWMBWDWMBMZCQNWSW
       TTCUCCBUDWTCQUERWTWNWEWRWKWMBGHUFWTWQWJAEWTWPWIWGWTWOWHLWMBWFJUGUHUIUJUKW
@@ -84841,7 +84831,7 @@ $)
      reals.  (Contributed by NM, 14-Oct-2005.) $)
   xrlenlt $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A <_ B <-> -. B < A ) ) $=
     ( cxr wcel wa cle wbr cop clt ccnv wn df-br cxp wb opelxpi cdif df-le eldif
-    eleq2i bitri baib syl syl5bb opelcnvg bitr4id notbid bitr4d ) ACDBCDEZABFGZ
+    eleq2i bitri baib syl bitrid opelcnvg bitr4id notbid bitr4d ) ACDBCDEZABFGZ
     ABHZIJZDZKZBAIGZKUIUJFDZUHUMABFLUHUJCCMZDZUOUMNABCCOUOUQUMUOUJUPUKPZDUQUMEF
     URUJQSUJUPUKRTUAUBUCUHUNULUHUNBAHIDULBAILABCCIUDUEUFUG $.
 
@@ -86104,7 +86094,7 @@ $)
      17-Jun-2010.) $)
   addsubeq4 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
                     ( ( A + B ) = ( C + D ) <-> ( C - A ) = ( B - D ) ) ) $=
-    ( cc wcel wa cmin co wceq caddc eqcom subcl ancoms subadd 3expa an4s syl5bb
+    ( cc wcel wa cmin co wceq caddc eqcom subcl ancoms subadd 3expa an4s bitrid
     wb sylan addcom adantl oveq1d addsubass 3com12 eqtrd adantlr addcl 3bitr2rd
     eqeq1d 3expb sylan2 ) AEFZBEFZGZCEFZDEFZGZGZCAHIZBDHIZJZDUTKIZBJZCDKIZAHIZB
     JZABKIVEJZVBVAUTJZUSVDUTVALUMUPUNUQVIVDSZUMUPGUTEFZUNUQGZVJUPUMVKCAMNVLVKVJ
@@ -86449,7 +86439,7 @@ $)
     $( Closure law for negative of reals.  (Contributed by NM, 20-Jan-1997.) $)
     renegcl $p |- ( A e. RR -> -u A e. RR ) $=
       ( vx cr wcel cv caddc co cc0 wceq wrex cneg ax-rnegex wa recn cmin df-neg
-      cc wb eqeq1i 0cn subadd mp3an1 syl5bb sylan2 wi eleq1a adantl sylbird mpd
+      cc wb eqeq1i 0cn subadd mp3an1 bitrid sylan2 wi eleq1a adantl sylbird mpd
       sylan rexlimdva ) ACDZABEZFGHIZBCJAKZCDZBALULUNUPBCULUMCDZMUNUOUMIZUPUQUL
       UMQDZURUNRUMNURHAOGZUMIZULUSMUNUOUTUMAPSULAQDZUSVAUNRZANHQDVBUSVCTHAUMUAU
       BUJUCUDUQURUPUEULUMCUOUFUGUHUKUI $.
@@ -88059,7 +88049,7 @@ $)
   lesub0 $p |- ( ( A e. RR /\ B e. RR ) ->
                 ( ( 0 <_ A /\ B <_ ( B - A ) ) <-> A = 0 ) ) $=
     ( cr wcel wa cc0 wceq cle wbr cmin co 0red letri3 sylan2 ancom simpr lesub2
-    wb simpl syl3anc recnd subid1d breq1d bitrd ancoms anbi2d syl5bb bitr2d ) A
+    wb simpl syl3anc recnd subid1d breq1d bitrd ancoms anbi2d bitrid bitr2d ) A
     CDZBCDZEZAFGZAFHIZFAHIZEZUNBBAJKZHIZEZUJUIFCDZULUORUJLAFMNUOUNUMEUKURUMUNOU
     KUMUQUNUJUIUMUQRUJUIEZUMBFJKZUPHIZUQUTUIUSUJUMVBRUJUIPUTLUJUISZAFBQTUTVABUP
     HUTBUTBVCUAUBUCUDUEUFUGUH $.
@@ -89696,7 +89686,7 @@ $)
   recexaplem2 $p |- ( ( A e. RR /\ B e. RR /\ ( A + ( _i x. B ) ) =//= 0 ) ->
       ( ( A x. A ) + ( B x. B ) ) =//= 0 ) $=
     ( cr wcel ci cmul co caddc cc0 cap wbr clt wo wa wb 0re cle remulcl anim12i
-    anidms w3a ax-icn mul01i oveq2i eqtr2i breq2i apreim mpanr12 syl5bb pm5.32i
+    anidms w3a ax-icn mul01i oveq2i eqtr2i breq2i apreim mpanr12 bitrid pm5.32i
     00id adantr apsqgt0 msqge0 an32s addgtge0 syl2anc anassrs jaodan sylbi olcd
     addgegt0 3impa simp1 remulcld simp2 readdcld reaplt sylancl mpbird ) ACDZBC
     DZAEBFGHGZIJKZUAZAAFGZBBFGZHGZIJKZVRILKZIVRLKZMZVOWAVTVKVLVNWAVKVLNZVNNWCAI
@@ -90447,7 +90437,7 @@ $)
     ( cc wcel cc0 cap wa cmul co c1 cdiv caddc wceq cmin recclap adantr recidap
     wbr 3eqtrd ad2ant2r simpll simprl mul32d oveq1d mulid2 adantl oveq2d mulid1
     ad2antrl mulassd ad2antrr oveq12d mulcl adddid addcom 3eqtr4d mulid1d addcl
-    eqeq12d syl2an mulap0 ax-1cn mulcanap mp3an2 syl12anc eqcom muleqadd syl5bb
+    eqeq12d syl2an mulap0 ax-1cn mulcanap mp3an2 syl12anc eqcom muleqadd bitrid
     wb 3bitr3d ) ACDZAEFRZGZBCDZBEFRZGZGZABHIZJAKIZJBKIZLIZHIZVRJHIZMZABLIZVRMZ
     WAJMZAJNIBJNIHIJMZVQWBWEWCVRVQVRVSHIZVRVTHIZLIBALIZWBWEVQWIBWJALVQWIAVSHIZB
     HIZJBHIZBVQABVSVKVLVPUAZVMVNVOUBZVMVSCDZVPAOZPZUCVMWMWNMVPVMWLJBHAQUDPVNWNB
@@ -90463,7 +90453,7 @@ $)
     rerecclap $p |- ( ( A e. RR /\ A =//= 0 ) -> ( 1 / A ) e. RR ) $=
       ( vx cr wcel cc0 cap wbr wa cv c1 cdiv co wceq wrex creap wb 0re cc recnd
       cmul apreap mpan2 pm5.32i recexre sylbi eqcom 1cnd simpll simplr divmulap
-      simpr syl112anc syl5bb rexbidva mpbird risset sylibr ) ACDZAEFGZHZBIZJAKL
+      simpr syl112anc bitrid rexbidva mpbird risset sylibr ) ACDZAEFGZHZBIZJAKL
       ZMZBCNZVBCDUTVDAVATLJMZBCNZUTURAEOGZHVFURUSVGURECDUSVGPQAEUAUBUCBAUDUEUTV
       CVEBCVCVBVAMZUTVACDZHZVEVAVBUFVJJRDVARDARDUSVHVEPVJUGVJVAUTVIUKSVJAURUSVI
       UHSURUSVIUIJVAAUJULUMUNUOBVBCUPUQ $.
@@ -92449,7 +92439,7 @@ $)
        Mario Carneiro, 27-May-2016.) $)
     creui $p |- ( A e. CC -> E! y e. RR E. x e. RR A = ( x + ( _i x. y ) ) ) $=
       ( vz vw cc wcel cv ci cmul co caddc wceq cr wrex wreu cnre wa wb wral cru
-      simpr eqcom ancoms syl5bb anass1rs rexbidva biidd ceqsrexv ad2antrr bitrd
+      simpr eqcom ancoms bitrid anass1rs rexbidva biidd ceqsrexv ad2antrr bitrd
       ralrimiva reu6i syl2anc eqeq1 rexbidv reubidv syl5ibrcom rexlimivv syl )
       CFGCDHZIEHZJKLKZMZENODNOCAHZIBHZJKLKZMZANOZBNPZDECQVDVJDENNVANGZVBNGZRZVJ
       VDVCVGMZANOZBNPZVMVLVOVFVBMZSZBNTVPVKVLUBVMVRBNVMVFNGZRZVOVEVAMZVQRZANOZV
@@ -92593,7 +92583,7 @@ $)
        integer.  (Contributed by NM, 11-Jan-1997.)  (Revised by Mario Carneiro,
        17-Nov-2014.) $)
     peano2nn $p |- ( A e. NN -> ( A + 1 ) e. NN ) $=
-      ( vz vx vy cn wcel c1 caddc co cv wral wa eleq2i elintg syl5bb wceq eleq2
+      ( vz vx vy cn wcel c1 caddc co cv wral wa eleq2i elintg bitrid wceq eleq2
       cab syl cr cint dfnn2 ibi vex raleqbi1dv anbi12d elab oveq1 eleq1d rspcva
       simprbi sylan2 expcom ralimia wb nnre 1red readdcld mpbird ) AEFZAGHIZEFZ
       VABJZFZBGCJZFZDJZGHIZVEFZDVEKZLZCRZKZUTAVCFZBVLKZVMUTVOUTAVLUAZFUTVOEVPAC
@@ -92908,7 +92898,7 @@ $)
     nndiv $p |- ( ( A e. NN /\ B e. NN ) ->
                 ( E. x e. NN ( A x. x ) = B <-> ( B / A ) e. NN ) ) $=
       ( cdiv co cn wcel cv wceq wrex cmul risset eqcom ad2antlr ad2antrr adantl
-      wa cc nncn cc0 cap wbr nnap0 divmulapd syl5bb rexbidva bitr2id ) CBDEZFGA
+      wa cc nncn cc0 cap wbr nnap0 divmulapd bitrid rexbidva bitr2id ) CBDEZFGA
       HZUHIZAFJBFGZCFGZQZBUIKECIZAFJAUHFLUMUJUNAFUJUHUIIUMUIFGZQZUNUIUHMUPCBUIU
       LCRGUKUOCSNUKBRGULUOBSOUOUIRGUMUISPUKBTUAUBULUOBUCOUDUEUFUG $.
   $}
@@ -94768,7 +94758,7 @@ $)
      by NM, 9-May-2004.) $)
   elznn0 $p |- ( N e. ZZ <-> ( N e. RR /\ ( N e. NN0 \/ -u N e. NN0 ) ) ) $=
     ( cz wcel cr cc0 wceq cn cneg w3o wa cn0 wo elz wb elnn0 a1i recn 0cn bitri
-    cc negcon1 sylancl eqeq1i eqcom bitrdi orbi2d syl5bb orbi12d 3orass orordir
+    cc negcon1 sylancl eqeq1i eqcom bitrdi orbi2d bitrid orbi12d 3orass orordir
     neg0 orcom 3bitrri bitr2di pm5.32i ) ABCADCZAEFZAGCZAHZGCZIZJUPAKCZUSKCZLZJ
     AMUPVAVDUPVDURUQLZUTUQLZLZVAUPVBVEVCVFVBVENUPAOPVCUTUSEFZLUPVFUSOUPVHUQUTUP
     VHEHZAFZUQUPATCETCVHVJNAQRAEUAUBVJEAFUQVIEAUKUCEAUDSUEUFUGUHVAUQURUTLZLVKUQ
@@ -98022,7 +98012,7 @@ $)
     eqreznegel $p |- ( A C_ ZZ ->
                        { z e. RR | -u z e. A } = { z e. ZZ | -u z e. A } ) $=
       ( vw cz wss cv cneg wcel cr crab wa wi ssel cc recn caddc cc0 negid elrab
-      co 0z eqeltrdi pm4.71i zrevaddcl syl5bb syl5ib syl6 com23 impd simpr jcad
+      co 0z eqeltrdi pm4.71i zrevaddcl bitrid syl5ib syl6 com23 impd simpr jcad
       a1i zre anim1i impbid1 weq negeq eleq1d 3bitr4g eqrdv ) BDEZCAFZGZBHZAIJZ
       VDADJZVACFZIHZVGGZBHZKZVGDHZVJKZVGVEHVGVFHVAVKVMVAVKVLVJVAVHVJVLVAVJVHVLV
       AVJVIDHZVHVLLBDVIMVHVGNHZVNVLVGOVOVOVGVIPTZDHZKVNVLVOVQVOVPQDVGRUAUBUCVGV
@@ -98663,7 +98653,7 @@ $)
   $( Elementhood of a negation in the positive real numbers.  (Contributed by
      Thierry Arnoux, 19-Sep-2018.) $)
   negelrp $p |- ( A e. RR -> ( -u A e. RR+ <-> A < 0 ) ) $=
-    ( cneg crp wcel cr cc0 clt wbr elrp lt0neg1 renegcl biantrurd bitr2d syl5bb
+    ( cneg crp wcel cr cc0 clt wbr elrp lt0neg1 renegcl biantrurd bitr2d bitrid
     wa ) ABZCDPEDZFPGHZOZAEDZAFGHZPITUARSAJTQRAKLMN $.
 
   ${
@@ -99310,7 +99300,7 @@ $)
               ( ( ( ( A e. RR /\ B e. RR ) /\ A <RR B ) \/
                    ( A = -oo /\ B = +oo ) ) \/ ( ( A e. RR /\ B = +oo )
                   \/ ( A = -oo /\ B e. RR ) ) ) ) ) $=
-      ( vx vy cxr wcel wa cv cr cltrr wbr cmnf csn cun cpnf cxp wceq clt syl5bb
+      ( vx vy cxr wcel wa cv cr cltrr wbr cmnf csn cun cpnf cxp wceq clt bitrid
       wo w3a copab breq12 df-3an opabbii brab2ga a1i brun brxp elun orcom bitri
       wb elsng orbi1d bi2anan9 andir bitrdi anbi1d adantr orbi12d orass df-ltxr
       breqi 3bitr4g ) AEFZBEFZGZABCHZIFZDHZIFZVIVKJKZUAZCDUBZKZABILMZNZOMZPZVQI
@@ -101617,7 +101607,7 @@ $)
       ( ( A / B ) e. ( 0 [,] 1 ) <-> A <_ B ) ) $=
     ( cdiv co cc0 c1 cicc wcel cr cle wbr wa clt w3a 0re 1re elicc2i bitri cmul
     df-3an wb ledivmul mp3an2 simpll simprl cap gt0ap0 adantl redivclapd divge0
-    adantlr jca biantrurd cc recn ad2antrl mulid1d breq2d 3bitr3d syl5bb ) ABCD
+    adantlr jca biantrurd cc recn ad2antrl mulid1d breq2d 3bitr3d bitrid ) ABCD
     ZEFGDHZVAIHZEVAJKZLZVAFJKZLZAIHZEAJKZLZBIHZEBMKZLZLZABJKZVBVCVDVFNVGEFVAOPQ
     VCVDVFTRVNVFABFSDZJKZVGVOVHVMVFVQUAZVIVHFIHVMVRPAFBUBUCUKVNVEVFVNVCVDVNABVH
     VIVMUDVJVKVLUEVMBEUFKVJBUGUHUIABUJULUMVNVPBAJVNBVKBUNHVJVLBUOUPUQURUSUT $.
@@ -101656,7 +101646,7 @@ $)
       sylancr simpl1 addcomd lincmb01cmp eqeltrd simpr wb elicc2 3adant3 biimpa
       simp1d eqid iccshftl syl22anc mpbid resubcld crp difrp biimp3a adantr cap
       rpcnd rpap0 syl divcanap1d mul02d subidd eqtr4d mulid2d oveq12d 0red 1red
-      3eltr4d rerpdivcld iccdil mpbird eqcom adantrr divmulap3d syl5bb remulcld
+      3eltr4d rerpdivcld iccdil mpbird eqcom adantrr divmulap3d bitrid remulcld
       subadd2d bitrdi subadd23d subdid oveq1d 1cnd subdird eqtrd oveq2d 3eqtr4d
       eqeq2d 3bitrd f1ocnv2d ) CGHZDGHZCDUAIZUCZABJKLMZCDLMZAUBZDNMZKXPOMZCNMZP
       MZBUBZCOMZDCOMZUDMZEFXMXPXNHZUEZXTXSXQPMXOYFXQXSYFXPDYFXPYEXPGHZXMYEYGJXP
@@ -101799,7 +101789,7 @@ $)
     elfz2 $p |- ( K e. ( M ... N ) <->
            ( ( M e. ZZ /\ N e. ZZ /\ K e. ZZ ) /\ ( M <_ K /\ K <_ N ) ) ) $=
       ( vx vy vz cz wcel wa cle wbr w3a cfz co anass df-3an anbi1i crab df-fz
-      cv elmpocl simpl elfz1 3anass ibar syl5bb bitrd pm5.21nii 3bitr4ri ) BGHZ
+      cv elmpocl simpl elfz1 3anass ibar bitrid bitrd pm5.21nii 3bitr4ri ) BGHZ
       CGHZIZAGHZIZBAJKZACJKZIZIULUMUQIZIZUJUKUMLZUQIABCMNHZULUMUQOUTUNUQUJUKUMP
       QVAULUSDEGGDTFTZJKVBETJKIFGRBCMAFDESUAULURUBULVAUMUOUPLZUSABCUCVCURULUSUM
       UOUPUDULURUEUFUGUHUI $.
@@ -102321,7 +102311,7 @@ $)
   elfzp1 $p |- ( N e. ( ZZ>= ` M ) ->
     ( K e. ( M ... ( N + 1 ) ) <-> ( K e. ( M ... N ) \/ K = ( N + 1 ) ) ) ) $=
     ( cuz cfv wcel c1 caddc co cfz csn cun wceq wo fzsuc eleq2d elun cz eluzelz
-    wb peano2zd elsn2g syl orbi2d syl5bb bitrd ) CBDEFZABCGHIZJIZFABCJIZUHKZLZF
+    wb peano2zd elsn2g syl orbi2d bitrid bitrd ) CBDEFZABCGHIZJIZFABCJIZUHKZLZF
     ZAUJFZAUHMZNZUGUIULABCOPUMUNAUKFZNUGUPAUJUKQUGUQUOUNUGUHRFUQUOTUGCBCSUAAUHR
     UBUCUDUEUF $.
 
@@ -102411,7 +102401,7 @@ $)
       ( vk wcel cfz co cz elfzelz adantl wa cle wbr adantr elfz syl3anc syl2anc
       wb wn anbi2d bitr4d cuz cfv c1 caddc csn cdif cv eldifi syl simpr eluzel2
       eluzelz clt wne eldif peano2zd wceq velsn notbii nesym bitr4i a1i anbi12d
-      syl5bb anass bitrdi zltlen zleltp1 eqrdav ) BAUAUBDZCABEFZABUCUDFZEFZVLUE
+      bitrid anass bitrdi zltlen zleltp1 eqrdav ) BAUAUBDZCABEFZABUCUDFZEFZVLUE
       ZUFZGCUGZVKDZVPGDZVJVPABHIVPVODZVRVJVSVPVMDZVRVPVMVNUHVPAVLHUIIVJVRJZVQAV
       PKLZVPBKLZJZVSWAVRAGDZBGDZVQWDQVJVRUJZVJWEVRABUKMZVJWFVRABULMZVPABNOWAVSW
       BVPVLUMLZJZWDWAVSWBVPVLKLZVLVPUNZJZJZWKWAVSWBWLJZWMJZWOVSVTVPVNDZRZJWAWQV
@@ -102506,7 +102496,7 @@ $)
   fznn $p |- ( N e. ZZ
               -> ( K e. ( 1 ... N ) <-> ( K e. NN /\ K <_ N ) ) ) $=
     ( c1 cfz co wcel cn cuz cfv wa cz cle wbr elfzuzb elnnuz anbi1i bitr4i eluz
-    wb nnz sylan ancoms pm5.32da syl5bb ) ACBDEFZAGFZBAHIFZJZBKFZUFABLMZJUEACHI
+    wb nnz sylan ancoms pm5.32da bitrid ) ACBDEFZAGFZBAHIFZJZBKFZUFABLMZJUEACHI
     FZUGJUHACBNUFUKUGAOPQUIUFUGUJUFUIUGUJSZUFAKFUIULATABRUAUBUCUD $.
 
   $( Membership in a 1 based finite set of sequential integers.  (Contributed
@@ -104044,7 +104034,7 @@ $)
   fzosplitsni $p |- ( B e. ( ZZ>= ` A ) -> ( C e. ( A ..^ ( B + 1 ) ) <->
         ( C e. ( A ..^ B ) \/ C = B ) ) ) $=
     ( cuz cfv wcel c1 caddc co cfzo csn wceq wo fzosplitsn eleq2d elsn2g orbi2d
-    cun elun syl5bb bitrd ) BADEZFZCABGHIJIZFCABJIZBKZRZFZCUEFZCBLZMZUCUDUGCABN
+    cun elun bitrid bitrd ) BADEZFZCABGHIJIZFCABJIZBKZRZFZCUEFZCBLZMZUCUDUGCABN
     OUHUICUFFZMUCUKCUEUFSUCULUJUICBUBPQTUA $.
 
   $( A finite interval of integers as union of a half-open integer range and a
@@ -104148,7 +104138,7 @@ $)
       ( vv cc0 co cn0 wcel wa cpr cima cin c0 wceq cfv wnel cle wbr adantl wn
       cfz wf c1 cfzo wfn ffn adantr 0nn0 a1i simpr nn0ge0 elfz2nn0 syl3anbrc id
       nn0re leidd fnimapr syl3anc ineq1d eqeq1d cv wral wb simpl ffvelrnd eleq1
-      disj notbid df-nel bitr4di ralprg syl2anc syl5bb bitrd ) EBUAFZCAUBZBGHZI
+      disj notbid df-nel bitr4di ralprg syl2anc bitrid bitrd ) EBUAFZCAUBZBGHZI
       ZAEBJKZAUCBUDFKZLZMNEAOZBAOZJZVTLZMNZWBVTPZWCVTPZIZVRWAWEMVRVSWDVTVRAVOUE
       ZEVOHZBVOHZVSWDNVPWJVQVOCAUFUGVREGHZVQEBQRZWKWMVRUHUIVPVQUJVQWNVPBUKSEBUL
       UMZVQWLVPVQVQVQBBQRWLVQUNZWPVQBBUOUPBBULUMSZVOEBAUQURUSUTWFDVAZVTHZTZDWDV
@@ -106315,7 +106305,7 @@ $)
          upper integers.  (Contributed by Jim Kingdon, 17-May-2020.) $)
       frec2uzisod $p |- ( ph -> G Isom _E , < ( _om , ( ZZ>= ` C ) ) ) $=
         ( vy vz com cuz cfv wf1o cv cep wbr clt wb wral wcel wa wiso ralrimivva
-        frec2uzf1od cz adantr simprl simprr frec2uzlt2d syl5bb df-isom sylanbrc
+        frec2uzf1od cz adantr simprl simprr frec2uzlt2d bitrid df-isom sylanbrc
         epel ) AICJKZDLGMZHMZNOZUNDKUODKPOZQZHIRGIRIUMNPDUAABCDEFUCAURGHIIUPUNU
         OSAUNISZUOISZTZTZUQGHULVBBUNUOCDACUDSVAEUEFAUSUTUFAUSUTUGUHUIUBGHIUMNPD
         UJUK $.
@@ -110156,7 +110146,7 @@ $)
        by NM, 27-Oct-1999.) $)
     sq11i $p |- ( ( 0 <_ A /\ 0 <_ B ) ->
               ( ( A ^ 2 ) = ( B ^ 2 ) <-> A = B ) ) $=
-      ( c2 cexp co wceq cmul cc0 cle wbr wa recni sqvali eqeq12i msq11i syl5bb
+      ( c2 cexp co wceq cmul cc0 cle wbr wa recni sqvali eqeq12i msq11i bitrid
       ) AEFGZBEFGZHAAIGZBBIGZHJAKLJBKLMABHSUATUBAACNOBBDNOPABCDQR $.
   $}
 
@@ -113581,7 +113571,7 @@ $)
   cjreb $p |- ( A e. CC -> ( A e. RR <-> ( * ` A ) = A ) ) $=
     ( cc wcel ccj cfv wceq cre ci cneg cmul co caddc cr cmin recnd ax-icn mulcl
     cim sylancr cc0 negsubd mulneg2 oveq2d remim 3eqtr4rd replim eqeq12d negcld
-    recl imcl addcand eqcom eqnegd syl5bb cap wbr wa wb iap0 pm3.2i a1i syl3anc
+    recl imcl addcand eqcom eqnegd bitrid cap wbr wa wb iap0 pm3.2i a1i syl3anc
     mulcanap reim0b 3bitr4d 3bitrrd ) ABCZADEZAFAGEZHAREZIZJKZLKZVIHVJJKZLKZFVL
     VNFZAMCZVGVHVMAVOVGVIVNIZLKVIVNNKVMVHVGVIVNVGVIAUIOZVGHBCZVJBCZVNBCPVGVJAUJ
     OZHVJQSZUAVGVLVRVILVGVTWAVLVRFPWBHVJUBSUCAUDUEAUFUGVGVIVLVNVSVGVTVKBCZVLBCP
@@ -114771,7 +114761,7 @@ $)
       ( vx vz cv wral cz wrex wb c0 wceq raleq rexralbidv bibi12d wcel wa cvv
       vy cuz cfv csn cun wex cc0 0z elex2 ax-mp ral0 rgen2w r19.2m mp2an 2th wi
       cfn anbi1 rexanuz ralunb ralbii rexbii wsbc ralsnsg sbcrex ralcom rexbidv
-      syl5bb bitr4id bitrd elv anbi2i 3bitr4i 3bitr4g a1i findcard2 ) AEFHZIZDC
+      bitrid bitr4id bitrd elv anbi2i 3bitr4i 3bitr4g a1i findcard2 ) AEFHZIZDC
       HZUBUCZICJKZADVTIZCJKZEVQIZLAEMIZDVTIZCJKZWCEMIZLAEUAHZIZDVTICJKZWCEWIIZL
       ZAEWIGHZUDZUEZIZDVTIZCJKZWCEWPIZLZAEBIZDVTICJKZWCEBIZLFUAGBVQMNZWAWGWDWHX
       EVRWECDJVTAEVQMOPWCEVQMOQVQWINZWAWKWDWLXFVRWJCDJVTAEVQWIOPWCEVQWIOQVQWPNZ
@@ -116471,7 +116461,7 @@ $)
       jctild syl122anc sylbid expd impr an32s anassrs expimpd ralimdv expr uzss
       wss ssralv sylan9 ralimdva ex com23 adantr mpdd sylan2 imdistanda 3imtr4g
       reximdva syld ralrimdva syl5bi raleqbidv ad2antlr oveq2d anim2i w3a ralbi
-      3expia sylc syl5bb sylibd impbid ) AEIUBZKUCZHUBZKUCZGUDZLUCZFUBZUEUFZUGZ
+      3expia sylc bitrid sylibd impbid ) AEIUBZKUCZHUBZKUCZGUDZLUCZFUBZUEUFZUGZ
       IYKUHUCZUIZHMUJZFUKUIZEYJJUBZKUCZGUDZLUCZYOUEUFZJYIUHUCZUIZUGIYRUIZHMUJZF
       UKUIZUUAEYNUAUBZUEUFZUGZIYRUIHMUJZUAUKUIZAUUKYTUUOFUAUKFUAULZYQUUNHIMYRUU
       QYPUUMEYOUULYNUEUPUMUNUOAUUPUUJFUKAYOUKUQZUGZUUPEYNYOURUSUDZUEUFZUGZIYRUI
@@ -123446,7 +123436,7 @@ $)
       ( cc0 c1 cmin co cexp cdiv wceq expcld cap wbr cc wcel syl cfz cmul eqcom
       cv csu geoserap wb apsym syl2anc mpbid div2subapd eqeq1d peano2cnm 0zd cz
       1cnd nn0zd peano2zm fzfigd wa adantr cn0 elfznn0 adantl fsumcl divmulap2d
-      subap0d bitrd syl5bb ) AHDIJKZUAKZBCUDZLKZCUEZIBDLKZJKIBJKMKZNZVOIJKZBIJK
+      subap0d bitrd bitrid ) AHDIJKZUAKZBCUDZLKZCUEZIBDLKZJKIBJKMKZNZVOIJKZBIJK
       ZVNUBKNZABCDEGFUFVQVPVNNZAVTVNVPUCAWAVRVSMKZVNNVTAVPWBVNAIVOIBAUPZABDEFOZ
       WCEABIPQZIBPQZGABRSZIRSWEWFUGEWCBIUHUIUJUKULAVRVNVSAVORSVRRSWDVOUMTAVKVMC
       AHVJAUNADUOSVJUOSADFUQDURTUSAVLVKSZUTBVLAWGWHEVAWHVLVBSAVLVJVCVDOVEAWGVSR
@@ -124438,7 +124428,7 @@ $)
       cfz syl2an wceq fveq2 eleq1d eqeltrd ralrimiva weq cbvralv sylib ad2antrr
       wral fznn0sub rspcdva mulcld fsumcl serf ffvelrnda cabs clt wbr cuz c1 cn
       wrex crp c2 cdiv cab adantlr cli cdm adantr simpr cbvsumv fvoveq1 sumeq1d
-      eqtrid fveq2d eqeq2d cbvrexv eqeq1 rexbidv syl5bb cbvabv breq1d wb simpll
+      eqtrid fveq2d eqeq2d cbvrexv eqeq1 rexbidv bitrid cbvabv breq1d wb simpll
       eluznn0 isumcl syl2anc nn0zd simplll sylan oveq2d sumeq2dv eqtr4d mulcomd
       eqid oveq1d eqtrd oveq12d 3eqtr3rd elnn0uz biimpri sylan2 fvmptg fsum3ser
       oveq1i oveq2i breq2i anbi2i mertenslem2 zsubcld ad2antlr subdid peano2nn0
@@ -129094,7 +129084,7 @@ $)
     divides $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
                     ( M || N <-> E. n e. ZZ ( n x. M ) = N ) ) $=
       ( vx vy cdvds wbr cop cv cz wcel wa cmul co wceq wrex copab df-br df-dvds
-      rexbidv eleq2i bitri oveq2 eqeq1d eqeq2 opelopab2 syl5bb ) BCFGZBCHZDIZJK
+      rexbidv eleq2i bitri oveq2 eqeq1d eqeq2 opelopab2 bitrid ) BCFGZBCHZDIZJK
       EIZJKLAIZUJMNZUKOZAJPZLDEQZKZBJKCJKLULBMNZCOZAJPZUHUIFKUQBCFRFUPUIDEASUAU
       BUOURUKOZAJPUTDEBCJJUJBOZUNVAAJVBUMURUKUJBULMUCUDTUKCOVAUSAJUKCURUETUFUG
       $.
@@ -129734,7 +129724,7 @@ $)
     ( cdvds wbr cabs cfv wceq cz wcel wa wi cc0 wn simpr breq1 wb adantr expcom
     0dvds adantl dvdszrcl zcn abs00ad bicomd bitrd sylan9bb fveq2 eqtrdi eqeq2d
     abs0 bitr4d syl5ib cle simprl neqne dvdsleabs2 syl3anc eqcom bitr3di eqeq1d
-    expd wne a1dd expcomd cr abscld letri3 syl2anr syl5bb biimprd a1d wo wdc 0z
+    expd wne a1dd expcomd cr abscld letri3 syl2anr bitrid biimprd a1d wo wdc 0z
     syld zdceq mpan2 exmiddc syl mpjaod com34 mpdd mpcom imp ) ABCDZBACDZAEFZBE
     FZGZAHIZBHIZJZWEWFWIKZABUAWLBLGZWEWMKZWNMZWNWLWOWNWLJZWEWFWIWEWFJWFWQWIWEWF
     NWQWFWGLGZWIWNWFLACDZWLWRBLACOWLWSALGZWRWJWSWTPWKASQWJWTWRPWKWJWRWTWJAAUBZU
@@ -130103,7 +130093,7 @@ $)
       mpan cn0 peano2z znegcl ad2antlr zcn mulcl peano2cn simpl negcon2 syl2anc
       recnd eqcom sylancr mulcli mp3an23 2t1e2 oveq1i 2m1e1 eqtri eqtr2di adddi
       addsubass oveq2i mp3an13 oveq1d eqtr4d negeqd zcnd mulneg2 sylancl eqeq1d
-      negsubdi syl5bb bitrd biimpa oveq2 rspcev ex recn syl2anr mulneg1 bitr4id
+      negsubdi bitrid bitrd biimpa oveq2 rspcev ex recn syl2anr mulneg1 bitr4id
       rexlimdva oveq1 orim12d syl5 jaodan sylbi cdiv halfnz reeanv eqtr3 mulcom
       imp eqeq2d subadd mp3an3 subcl cc0 cap 2ap0 pm3.2i divmulap ancoms mp3an1
       w3a subdi syl2an zsubcl syl5ibcom sylbird sylbid rexlimivv sylbir mto wxo
@@ -130148,7 +130138,7 @@ $)
        Carneiro, 5-Sep-2016.) $)
     oddm1even $p |- ( N e. ZZ -> ( -. 2 || N <-> 2 || ( N - 1 ) ) ) $=
       ( vn cz wcel c2 cv cmul co c1 caddc wceq wrex cmin cdvds wn wa simpl zcnd
-      wbr 1cnd 2cnd simpr mulcld subadd2d mulcomd eqeq1d syl5bb bitr3d rexbidva
+      wbr 1cnd 2cnd simpr mulcld subadd2d mulcomd eqeq1d bitrid bitr3d rexbidva
       eqcom odd2np1 wb 2z peano2zm divides sylancr 3bitr4d ) ACDZEBFZGHZIJHAKZB
       CLUSEGHZAIMHZKZBCLZEANSOEVCNSZURVAVDBCURUSCDZPZVCUTKZVAVDVHAIUTVHAURVGQRV
       HTVHEUSVHUAZVHUSURVGUBRZUCUDVIUTVCKVHVDVCUTUJVHUTVBVCVHEUSVJVKUEUFUGUHUIB
@@ -130877,7 +130867,7 @@ $)
     modremain $p |- ( ( N e. ZZ /\ D e. NN /\ ( R e. NN0 /\ R < D ) )
                       -> ( ( N mod D ) = R
                            <-> E. z e. ZZ ( ( z x. D ) + R ) = N ) ) $=
-      ( cmo co wceq cz wcel cn cn0 wbr wa wrex eqcom wb 3ad2ant3 adantr syl5bb
+      ( cmo co wceq cz wcel cn cn0 wbr wa wrex eqcom wb 3ad2ant3 adantr bitrid
       cc clt cv cmul caddc cmin cdvds divalgmodcl 3adant3r ibar adantl 3ad2ant2
       w3a nnz simp1 zsubcld divides syl2anc zcn 3ad2ant1 nn0cn zmulcld subadd2d
       nn0z simpr zcnd rexbidva bitrd 3bitr2d ) DBEFZCGCVIGZDHIZBJIZCKIZCBUALZMZ
@@ -131183,7 +131173,7 @@ $)
       clt wss cuz eleq2i sylib elrabi eluzelz znegcld wceq negeq eleq1d negnegd
       cfv zcnd eqeltrd cle wdc wsbc cfz co adantr zred adantl eluzle lenegcon1d
       simpr jca wb ad2antrr elfz syl3anc mpbird ralrimiva nfsbc1v sbceq1a dcbid
-      nfdc rspc sylc nfcv elrabsf elfzuz biantrurd bitr4id syl5bb wo nsyl df-dc
+      nfdc rspc sylc nfcv elrabsf elfzuz biantrurd bitr4id bitrid wo nsyl df-dc
       eleq2s olcd sylibr zdcle syl2anc exmiddc mpjaodan caddc lenegd mpbid eluz
       c1 peano2uz renegcld peano2re ad2antlr adantlr letrd ltnrd pm2.65da fveq2
       lenegcon2d zltp1le raleqdv rspcev zsupcllemex zre anim1i recn znegclb weq
@@ -131313,7 +131303,7 @@ $)
     zsupssdc $p |- ( ph -> E. x e. A ( A. y e. A -. x < y /\
         A. y e. B ( y < x -> E. z e. A y < z ) ) ) $=
       ( vn vw va cv cle wbr wral clt cz wcel vm vb wn wrex wi wa breq1 cbvralvw
-      weq breq2 ralbidv syl5bb cbvrexvw sylib cneg crab cr eleq1w cbvexv adantr
+      weq breq2 ralbidv bitrid cbvrexvw sylib cneg crab cr eleq1w cbvexv adantr
       cinf wex cuz cfv wss uzssz rabss2 ax-mp wceq negeq eleq1d simp1rl znegcld
       w3a simp2 simp1rr simp3 rspcdva lenegcon1d eluz2 syl3anbrc elrabd rabssdv
       zred cbvrabv sseqtrdi a1i eqssd infeq1d simprl eqid ad2antrr simpr sseldd
@@ -131856,7 +131846,7 @@ $)
          ` ( y mod W ) ` .  (Contributed by Jim Kingdon, 6-Jan-2022.) $)
       bezoutlemnewy $p |- ( th -> [. ( y mod W ) / r ]. ph ) $=
         ( cmul co wceq cz vu vv vq vj vk cv caddc wrex cmo wsbc sbcbii cn eqeq1
-        wcel wb 2rexbidv sbcieg syl syl5bb mpbid wsb oveq2 oveq1d eqeq2d oveq2d
+        wcel wb 2rexbidv sbcieg syl bitrid mpbid wsb oveq2 oveq1d eqeq2d oveq2d
         wa cbvrex2v bitri sbbii nfv sbie sylib ad2antrr cn0 clt ad4antr zmodcld
         wbr nn0zd cq cc0 zq nnzd nngt0d modqlt syl3anc w3a eqid modremain mpbii
         syl112anc simprl simplrl ad3antrrr zmulcld zsubcld simprr simplrr simpr
@@ -131911,7 +131901,7 @@ $)
         ( vq wsbc cv cmo co wa wrex bezoutlemnewy mpdan wcel cmul caddc wceq cz
         cn0 eqidd cn clt wbr wb nn0zd ad2antrr zmodcld cq cc0 syl nngt0d modqlt
         zq nnzd syl3anc modremain syl112anc mpbid cdvds wi simplrl sbcbii breq2
-        wral anbi2d imbi2d sbcieg syl5bb sbcbid anbi1d bitrd ad3antrrr r19.21bi
+        wral anbi2d imbi2d sbcieg bitrid sbcbid anbi1d bitrd ad3antrrr r19.21bi
         ralbidv imp simprd simplr simprl dvdsmultr2 mpd simpld zmulcld dvds2add
         mp2and simprr breqtrd jca ex ralrimiva simplrr rexlimddv exp31 reximdai
         mpbird ) CBEJUEZDEUFZJUGUHZUEZAUIZLURUJZBDJUEZAUIZLURUJCALXPUEXSACEGHIJ
@@ -131955,7 +131945,7 @@ $)
       dvds0 biimpd mprgbir wsbc dfsbcq2 sbcbii c0ex sbcie bitri bitrdi ad3antlr
       sbbid simpr nfs1v sbequ12 anbi12d rspce syl12anc ralrimi simplrl ad2antrr
       mpbiri exp31 cn simplll elnnnn0b sylanbrc simplrr sbsbc sylib cbvralv cmo
-      breq1 ad3antrrr anbi1i dfsbcq syl5bb simpll nfsbxy nfrexxy imim2d ralimdv
+      breq1 ad3antrrr anbi1i dfsbcq bitrid simpll nfsbxy nfrexxy imim2d ralimdv
       jca rspc ad4antr sylan simpllr nn0zd zmodfz syl2anc rspcdva bezoutlemstep
       mpd mp2d nfre1 rexbii imbi2i ralbii sylibr wo nn0nlt0 w3o ztri3or0 3orass
       orcomd ecased mpjaodan nn0sinds expd impcom ralrimiva ) CAKDUBZAKEUBZBAQZ
@@ -132008,7 +131998,7 @@ $)
     bezoutlema $p |- ( th -> [. A / r ]. ph ) $=
       ( cv cmul co caddc wceq cz wrex c1 wcel cc0 wsbc 1z 0z nn0cnd mul01d 1cnd
       oveq2d mulcld addid1d mulid1d 3eqtrrd oveq2 oveq1d eqeq2d mp3an12i cn0 wb
-      rspc2ev eqeq1 2rexbidv syl5bb sbcieg syl mpbird ) BAGDUAZDDFKZLMZECKZLMZN
+      rspc2ev eqeq1 2rexbidv bitrid sbcieg syl mpbird ) BAGDUAZDDFKZLMZECKZLMZN
       MZOZCPQFPQZRPSTPSBDDRLMZETLMZNMZOZVLUBUCBVOVMTNMVMDBVNTVMNBEBEJUDUEUGBVMB
       DRBDIUDZBUFUHUIBDVQUJUKVKVPDVMVINMZOFCRTPPVFROZVJVRDVSVGVMVINVFRDLULUMUNV
       HTOZVRVODVTVIVNVMNVHTELULUGUNURUOBDUPSVEVLUQIAVLGDUPAGKZVJOZCPQFPQWADOZVL
@@ -132019,7 +132009,7 @@ $)
     bezoutlemb $p |- ( th -> [. B / r ]. ph ) $=
       ( cv cmul co caddc wceq cz wrex cc0 wcel c1 wsbc 0z 1z nn0cnd mul01d 1cnd
       oveq1d mulcld addid2d mulid1d 3eqtrrd oveq2 eqeq2d oveq2d mp3an12i cn0 wb
-      rspc2ev eqeq1 2rexbidv syl5bb sbcieg syl mpbird ) BAGEUAZEDFKZLMZECKZLMZN
+      rspc2ev eqeq1 2rexbidv bitrid sbcieg syl mpbird ) BAGEUAZEDFKZLMZECKZLMZN
       MZOZCPQFPQZRPSTPSBEDRLMZETLMZNMZOZVLUBUCBVORVNNMVNEBVMRVNNBDBDIUDUEUGBVNB
       ETBEJUDZBUFUHUIBEVQUJUKVKVPEVMVINMZOFCRTPPVFROZVJVREVSVGVMVINVFRDLULUGUMV
       HTOZVRVOEVTVIVNVMNVHTELULUNUMURUOBEUPSVEVLUQJAVLGEUPAGKZVJOZCPQFPQWAEOZVL
@@ -134336,7 +134326,7 @@ $)
       ( vn cprime wcel c1 wa cn cv cdvds wbr wss wceq wi bitri ancom bitr4i wal
       wb 3bitri wne crab cpr c2 cuz cfv wo wral 1nprm eleq1 biimpcd mtoi neqned
       pm4.71i c2o cen isprm isprm2lem eqss imbi2i 1idssfct jcab mpbiran2 adantr
-      pm5.74ri bitrd expcom pm5.32d syl5bb anass eluz2b3 anbi1i dfss2 breq1 vex
+      pm5.74ri bitrd expcom pm5.32d bitrid anass eluz2b3 anbi1i dfss2 breq1 vex
       pm5.32ri elrab elpr imbi12i impexp albii df-ral anbi2i ) BDEZWDBFUAZGBHEZ
       CIZBJKZCHUBZFBUCZLZGZWEGZBUDUEUFEZAIZBJKZWOFMWOBMUGZNZAHUHZGZWDWEWDBFWDBF
       MZFDEZUIXAWDXBBFDUJUKULUMUNWEWDWLWDWFWIUOUPKZGWEWLBCUQWEWFXCWKWFWEXCWKSWF
@@ -134385,7 +134375,7 @@ $)
     isprm4 $p |- ( P e. Prime <-> ( P e. ( ZZ>= ` 2 ) /\
                       A. z e. ( ZZ>= ` 2 ) ( z || P -> z = P ) ) ) $=
       ( cprime wcel c2 cuz cfv cv cdvds c1 wceq wi cn wral imbi1i impexp imbi2d
-      wa cz syl5bb wbr wo isprm2 eluz2nn pm4.71ri bitri eluz2b3 bi2.04 wn df-ne
+      wa cz bitrid wbr wo isprm2 eluz2nn pm4.71ri bitri eluz2b3 bi2.04 wn df-ne
       wne wdc wb nnz 1zzd zdceq syl2anc dfordc syl bitr4id pm5.74i pm5.4 3bitri
       ralbii2 anbi2i bitr4i ) BCDBEFGZDZAHZBIUAZVIJKZVIBKZUBZLZAMNZRVHVJVLLZAVG
       NZRABUCVQVOVHVPVNAVGMVIVGDZVPLZVIMDZVSLZVTVTVNLZLWBVSVTVRRZVPLWAVRWCVPVRV
@@ -134532,7 +134522,7 @@ $)
       cprime wceq wrex dvdszrcl divides 3syl cuz cfv 2z a1i simplr breq2 adantl
       mpbird w3a zre 3ad2ant1 3ad2ant3 0lt1 0red 1red syl3anc mpani imp 3adant3
       lttr 3jca 3exp mpd ltmulgt12 syl caddc df-2 breq1i zltp1le mpancom bicomd
-      1zzd syl5bb eluz2 syl3anbrc simpl biimpa sylibr nprm syl2anc eleq1 notbid
+      1zzd bitrid eluz2 syl3anbrc simpl biimpa sylibr nprm syl2anc eleq1 notbid
       ex mpbid rexlimdva sylbid ) ABCUAHZCUFIZUBZFAWRGUCZBUDUEZCUGZGJUHZWTAWRBJ
       IZCJIZKZWRXDLFBCUIZGBCUJUKAXCWTGJAXAJIZKZXCWTXJXCKZXBUFIZUBZWTXKXAMULUMZI
       ZBXNIZXMXKMJIZXIMXANHZXOXQXKUNUOAXIXCUPXKXROXAPHZXKXSBXBPHZXKXTBCPHZXJYAX
@@ -139033,7 +139023,7 @@ $)
       id nnexpcld nndivdvds mpdan c1 cuz cfv wo elnn1uz2 cc0 cap w3a nncn nncnd
       nnap0d 3jca diveqap1 syl oveq2 eqeq2d simpr rspcedvd ex pm2.24 syl6 com12
       sylbid exprmfct breq1 biimpcd necon3bd cmul prmnn mpbid nndivides syl2anr
-      wne ad2antrr ad2antlr nnmulcld jca divmulap syl3anc syl5bb anim1i eldifsn
+      wne ad2antrr ad2antlr nnmulcld jca divmulap syl3anc bitrid anim1i eldifsn
       eqcom sylibr nnzd dvdsmul2 2nn0 nn0expcld nn0cnd mulass breqtrd breq2 a1d
       cz exp31 com23 rexlimdva syldd impd jaoi sylbi mp2d imp ) BFGZBHAUAZUBIZJ
       ZAKUCZUDZCUAZBLMZCNHUEUFZUCZYCHBHHBUGIZUBIZUHIZLMZUDZYNBLMZYHYLOZHNGZYCYQ
@@ -139718,7 +139708,7 @@ $)
       A = ( ( ( a ^ 2 ) + ( b ^ 2 ) ) + ( ( c ^ 2 ) + ( d ^ 2 ) ) ) ) $=
       ( wcel cv c2 cexp co caddc cz wrex wceq cab eleq2i cvv wa zsqcl2 ad2antrr
       cn0 ad2antlr nn0addcld ad2antrl ad2antll eleq1 syl5ibrcom elex rexlimdvva
-      syl6 rexlimivv oveq1 oveq1d eqeq2d 2rexbidv oveq2d cbvrex2vw eqeq1 syl5bb
+      syl6 rexlimivv oveq1 oveq1d eqeq2d 2rexbidv oveq2d cbvrex2vw eqeq1 bitrid
       weq elab3 bitri ) EFMEGNZANZOPQZBNZOPQZRQZCNZOPQZDNZOPQZRQZRQZUAZDSTCSTZB
       STASTZGUBZMEHNZOPQZINZOPQZRQZJNZOPQZKNZOPQZRQZRQZUAZKSTJSTZISTHSTZFWEELUC
       WDWSGEWREUDMZHISSWFSMZWHSMZUEZWQWTJKSSXCWKSMZWMSMZUEZUEZWQEUHMZWTXGXHWQWP
@@ -144774,7 +144764,7 @@ $)
       crab wss w3a wceq fveq2 pweqd eleq1d oveqd 2ralbidv anbi12d rabeqbidv wfn
       co id basfn elex funfvex funfni sylancr pwexd rabexg fvmptd3 eleq2d eleq2
       syl raleqbi1dv elrab wb sseq2i eleq1i oveqi 2ralbii anbi12i 3anass elpw2g
-      a1i anbi1d 3bitr4rd syl5bb bitrd ) FMNZEFUAOZNEFUBOZKPZNZAPZBPZFUCOZURZWI
+      a1i anbi1d 3bitr4rd bitrid bitrd ) FMNZEFUAOZNEFUBOZKPZNZAPZBPZFUCOZURZWI
       NZBWIQZAWIQZRZKFSOZUDZUFZNZECUGZGENZWKWLDURZENZBEQAEQZUHZWFWGXAEWFLFLPZUB
       OZWINZWKWLXIUCOZURZWINZBWIQAWIQZRZKXISOZUDZUFXAMUATABKLUEXIFUIZXPWRKXRWTX
       SXQWSXIFSUJUKXSXKWJXOWQXSXJWHWIXIFUBUJULXSXNWOABWIWIXSXMWNWIXSXLWMWKWLXIF
@@ -146633,7 +146623,7 @@ $)
     istopg $p |- ( J e. A -> ( J e. Top <-> ( A. x ( x C_ J -> U. x e. J )
                   /\ A. x e. J A. y e. J ( x i^i y ) e. J ) ) ) $=
       ( vz wcel ctop cv cuni cpw wral cin wa wss wal wceq pweq eleq2 raleqbi1dv
-      wi anbi12d df-top elab2g df-ral elpw2g imbi1d albidv syl5bb anbi1d bitrd
+      wi anbi12d df-top elab2g df-ral elpw2g imbi1d albidv bitrid anbi1d bitrd
       raleqbidv ) DCFZDGFAHZIZDFZADJZKZUMBHLZDFZBDKZADKZMZUMDNZUOTZAOZVAMUNEHZF
       ZAVFJZKZURVFFZBVFKZAVFKZMVBEDGCVFDPZVIUQVLVAVMVGUOAVHUPVFDQVFDUNRUKVKUTAV
       FDVJUSBVFDVFDURRSSUAEABUBUCULUQVEVAUQUMUPFZUOTZAOULVEUOAUPUDULVOVDAULVNVC
@@ -147435,7 +147425,7 @@ $)
     basgen2 $p |- ( ( J e. Top /\ B C_ J /\ A. x e. J A. y e. x E. z e. B
             ( y e. z /\ z C_ x ) ) -> ( topGen ` B ) = J ) $=
       ( ctop wcel wss cv wa wrex wral ctg cfv wceq dfss3 cvv wb ssexg ancoms
-      eltg2b syl ralbidv syl5bb biimp3ar basgen syld3an3 ) EFGZDEHZBICIZGUJAIZH
+      eltg2b syl ralbidv bitrid biimp3ar basgen syld3an3 ) EFGZDEHZBICIZGUJAIZH
       JCDKBUKLZAELZEDMNZHZUNEOUHUIUOUMUOUKUNGZAELUHUIJZUMAEUNPUQUPULAEUQDQGZUPU
       LRUIUHURDEFSTBCUKDQUAUBUCUDUEDEUFUG $.
 
@@ -148033,7 +148023,7 @@ $)
     isnei $p |- ( ( J e. Top /\ S C_ X ) -> ( N e. ( ( nei ` J ) ` S ) <->
                  ( N C_ X /\ E. g e. J ( S C_ g /\ g C_ N ) ) ) ) $=
       ( vv ctop wcel wss wa cnei cfv cv wrex cpw crab neival eleq2d wb wceq syl
-      sseq2 anbi2d rexbidv elrab topopn elpw2g anbi1d syl5bb adantr bitrd ) CHI
+      sseq2 anbi2d rexbidv elrab topopn elpw2g anbi1d bitrid adantr bitrd ) CHI
       ZAEJZKZDACLMMZIDABNZJZUQGNZJZKZBCOZGEPZQZIZDEJZURUQDJZKZBCOZKZUOUPVDDGABC
       EFRSUMVEVJTUNVEDVCIZVIKUMVJVBVIGDVCUSDUAZVAVHBCVLUTVGURUSDUQUCUDUEUFUMVKV
       FVIUMECIVKVFTCEFUGDECUHUBUIUJUKUL $.
@@ -148512,7 +148502,7 @@ $)
        Carneiro, 19-Mar-2015.) $)
     restdis $p |- ( ( A e. V /\ B C_ A ) -> ( ~P A |`t B ) = ~P B ) $=
       ( vx wcel wss wa cpw crest co cv wb distop adantr elpw2g biimpar restopn2
-      ctop syl2anc velpw wi expcom adantl syl6ibr pm4.71rd syl5bb bitr4d eqrdv
+      ctop syl2anc velpw wi expcom adantl syl6ibr pm4.71rd bitrid bitr4d eqrdv
       sstr ) ACEZBAFZGZDAHZBIJZBHZULDKZUNEZUPUMEZUPBFZGZUPUOEZULUMREZBUMEZUQUTL
       UJVBUKACMNUJVCUKBACOPBUPUMQSVAUSULUTDBTULUSURULUSUPAFZURUKUSVDUAUJUSUKVDU
       PBAUIUBUCDATUDUEUFUGUH $.
@@ -148673,7 +148663,7 @@ $)
     iscn $p |- ( ( J e. ( TopOn ` X ) /\ K e. ( TopOn ` Y ) ) ->
     ( F e. ( J Cn K ) <-> ( F : X --> Y /\ A. y e. K ( `' F " y ) e. J ) ) ) $=
       ( vf ctopon cfv wcel wa ccn co cv ccnv cima wral cmap crab toponmax cnveq
-      wf cnfval eleq2d wceq imaeq1d eleq1d ralbidv elmapg syl2anr anbi1d syl5bb
+      wf cnfval eleq2d wceq imaeq1d eleq1d ralbidv elmapg syl2anr anbi1d bitrid
       elrab wb bitrd ) CEHIJZDFHIJZKZBCDLMZJBGNZOZANZPZCJZADQZGFERMZSZJZEFBUBZB
       OZVBPZCJZADQZKZURUSVGBAGCDEFUCUDVHBVFJZVMKURVNVEVMGBVFUTBUEZVDVLADVPVCVKC
       VPVAVJVBUTBUAUFUGUHUMURVOVIVMUQFDJECJVOVIUNUPFDTECTFEBDCUIUJUKULUO $.
@@ -148703,7 +148693,7 @@ $)
           ( ( F ` P ) e. y -> E. x e. J ( P e. x /\ ( F " x ) C_ y ) ) ) ) ) $=
       ( vf ctopon cfv wcel co cv cima wss wa wrex wi wral w3a ccnp cmap crab wf
       cnpval eleq2d wb wceq eleq1d imaeq1 sseq1d anbi2d rexbidv imbi12d ralbidv
-      fveq1 elrab toponmax elmapg syl2anr anbi1d syl5bb 3adant3 bitrd ) EGJKLZF
+      fveq1 elrab toponmax elmapg syl2anr anbi1d bitrid 3adant3 bitrd ) EGJKLZF
       HJKLZCGLZUAZDCEFUBMKZLDCINZKZBNZLZCANZLZVKVOOZVMPZQZAERZSZBFTZIHGUCMZUDZL
       ZGHDUEZCDKZVMLZVPDVOOZVMPZQZAERZSZBFTZQZVIVJWDDABCIEFGHUFUGVFVGWEWOUHVHWE
       DWCLZWNQVFVGQZWOWBWNIDWCVKDUIZWAWMBFWRVNWHVTWLWRVLWGVMCVKDUQUJWRVSWKAEWRV
@@ -148915,7 +148905,7 @@ $)
               A. k e. ( ZZ>= ` j ) ( k e. dom F /\ ( F ` k ) e. u ) ) ) ) ) $=
       ( vz wcel cv cuz wrex wa cz clm cfv wbr cc cpm co cres wf crn wi wral w3a
       cdm lmbr cpw wfn wb uzf ffn wceq reseq2 id rexrn mp2b wfun pmfun ad2antrl
-      feq12d ffvresb rexbidv adantr rexuz3 bitr4d syl5bb imbi2d pm5.32da df-3an
+      feq12d ffvresb rexbidv adantr rexuz3 bitr4d bitrid imbi2d pm5.32da df-3an
       syl ralbidv 3bitr4g bitrd ) AFCGUAUBUCFIUDUEUFOZCIOZCBPZOZNPZWDFWFUGZUHZN
       QUIRZUJZBGUKZULZWBWCWEEPZFUMOWMFUBWDOSZEDPQUBZUKZDJRZUJZBGUKZULZANBCFGIKU
       NAWBWCSZWKSXAWSSWLWTAXAWKWSAXASZWJWRBGXBWIWQWEWIWOWDFWOUGZUHZDTRZXBWQTTUO
@@ -148934,7 +148924,7 @@ $)
       ( cfv cc wcel wa clm wbr cpm co cv cdm cuz wral wrex wi w3a 3anass uztrn2
       lmbr2 eleq1d fdmd eleq2d biimpar biantrurd bitr3d sylan2 anassrs ralbidva
       wb rexbidva imbi2d ralbidv anbi2d cvv wf wss ctopon toponmax syl jctir cz
-      cnex uzssz zsscn sstri eqsstri elpm2r syl2anc bitr2d syl5bb bitrd ) AGDHU
+      cnex uzssz zsscn sstri eqsstri elpm2r syl2anc bitr2d bitrid bitrd ) AGDHU
       AQUBGJRUCUDSZDJSZDBUEZSZFUEZGUFZSZWKGQZWISZTZFEUEZUGQZUHZEKUIZUJZBHUHZUKZ
       WHWJCWISZFWRUHZEKUIZUJZBHUHZTZABDEFGHIJKLMNUNXCWGWHXBTZTZAXIWGWHXBULAXIXJ
       XKAXHXBWHAXGXABHAXFWTWJAXEWSEKAWQKSZTXDWPFWRAXLWKWRSZXDWPVDZXLXMTAWKKSZXN
@@ -150223,7 +150213,7 @@ $)
       syl2anb 3adant3 wceq weu wex cntop1 ad2antrl topopn syl cnf ad2antll upxp
       cv wb feq3 ax-mp 3anbi1i eubii sylibr syl3anc euex cvv wmo simpll3 adantr
       xpexg syl2an ad2antrr fex2 eumo simpr 3anass coeq2 eqcoms biantrud bitr3d
-      feq1 syl5bb moi2 syl22anc wreu eqid uptx adantl df-reu sylbi txuni eqtrid
+      feq1 bitrid moi2 syl22anc wreu eqid uptx adantl df-reu sylbi txuni eqtrid
       jca cuni feq3d syl5ibr anim1d syl6ibr simpl jca2 eximdv syl5 mpd eqeltrrd
       eupick imp exlimddv ex impbid ) CUARZDUARZGJFSZUBZFECDUCUDZUEUDZRZAFUFZEC
       UEUDRZBFUFZEDUEUDRZTZYIYJYOYTUGZYKYICHUHUIRZDIUHUIRZUUAYJCHKUJDILUJUUBUUC
@@ -150615,7 +150605,7 @@ $)
         fmpo rsp2 syl ovmpt4g eqtr3id fveq2d cuni eleq1d cntop2 toptopon2 sylib
         imp ctop fmpt adantr rspcdva fvmptd3 eqtrd opelxpi fvco3 syl2an 3eqtr4d
         ralrimivva nfv nfcv nfmpo1 nfco nffv nfeq nfralxy nfmpo2 eqeq12d cbvral
-        opeq2 opeq1 ralbidv syl5bb fveq2 wfn wb fco ffnd eqfnfv mpbird eqeltrrd
+        opeq2 opeq1 ralbidv bitrid fveq2 wfn wb fco ffnd eqfnfv mpbird eqeltrrd
         ralxp cnco ) ADNFUDZBCLMEUEZUFZBCLMGUEZHIUGUHZKUIUHZAXSXTUJZUAUKZXSULZY
         DXTULZUJZUALMUMZUNZAUBUKZUCUKZURZXSULZYLXTULZUJZUCMUNZUBLUNZYIABUKZCUKZ
         URZXSULZYTXTULZUJZCMUNZBLUNYQAUUCBCLMAYRLUOZYSMUOZUPZUPZYTXRULZXQULZGUU
@@ -152441,7 +152431,7 @@ $)
       ( vx cxmet cfv wcel cin cbl co clt wbr wa wb elin ancom cxr w3a wceq cres
       cv elinel2 oveqi ovres eqtrid sylan breq1d anbi2d pm5.32da 3ad2ant2 bitri
       anbi1i anass 3bitr4g xmetres eqeltrid elbl syl3an1 elinel1 syl3an2 anbi1d
-      cxp syl5bb 3bitr4d eqrdv ) BEIJKZCEFLZKZDUAKZUBZHCDAMJNZCDBMJNZFLZVNHUEZV
+      cxp bitrid 3bitr4d eqrdv ) BEIJKZCEFLZKZDUAKZUBZHCDAMJNZCDBMJNZFLZVNHUEZV
       KKZCVRANZDOPZQZVREKZCVRBNZDOPZQZVRFKZQZVRVOKZVRVQKZVNWGWCWAQZQZWGWFQZWBWH
       VLVJWLWMRVMVLWGWKWFVLWGQZWAWEWCWNVTWDDOVLCFKZWGVTWDUCCEFUFWOWGQVTCVRBFFVF
       UDZNWDAWPCVRGUGCVRFFBUHUIUJUKULUMUNWBWGWCQZWAQWLVSWQWAVSWCWGQWQVREFSWCWGT
@@ -152656,7 +152646,7 @@ $)
       ( vx wcel cmopn cfv wceq wa cxmet ctopon cdm crn cuni adantl eleqtrd cxms
       ctps isxms istps cv cbl ctg df-mopn dmmptss wrel toponmax simpl relelfvdm
       mopnrel sylancr sselid xmetunirn sylib eqid mopntopon syl toponuni eqtr4d
-      eqeltrd fveq2d ex eleq1 syl5ibr impbid syl5bb pm5.32ri bitri ) CUAICUBIZB
+      eqeltrd fveq2d ex eleq1 syl5ibr impbid bitrid pm5.32ri bitri ) CUAICUBIZB
       AJKZLZMADNKZIZVOMABCDEFGUCVOVMVQVMBDOKZIZVOVQDBCFEUDVOVSVQVOVSVQVOVSMZAAP
       PZNKZVPVTANQRZIAWBIZVTJPZWCAHWCHUEUFKQUGKJHUHUIVTJUJDVNIAWEIUNVTDBVNVSDBI
       VODBUKSVOVSULZTDAJUMUOUPAUQURZVTWADNVTWABRZDVTBWAOKZIWAWHLVTBVNWIWFVTWDVN
@@ -153322,7 +153312,7 @@ $)
       syl2anc ad2antll ssel blcntr ancld reximdva ex sylan9r mpdd eleq2d rspcev
       a1d sylcom simprl sseld jcad elin sylan2br expr rexlimivw imp impbid1 wex
       eluniab ancom anass r19.41v rexbii bitr2i 3bitri exbii bitri vex blex a1i
-      ovexg mp3an2ani ineq1 eleq2 ceqsexgv rexcom4 bitr3di syl5bb anbi1d adantr
+      ovexg mp3an2ani ineq1 eleq2 ceqsexgv rexcom4 bitr3di bitrid anbi1d adantr
       wb bitr2di eqrdv bitr2id bitrd rspceeqv impbid simpr elind blres rexbidva
       ralbidva pm5.32da bitr4d mopnm ssexg syl2anr elrest cxp xmetres2 eqeltrid
       id cres 3bitr4d ) AEUBUCNZFEOZPZUACFUDUHZDUVDUAUIZJUIZFUEZUFZJCQZUVFFOZKU
@@ -153607,7 +153597,7 @@ $)
       wf cv wbr wb wfun cdm ffun ad2antlr simpll1 simpll3 rpxr ad2antll syl3anc
       cxr blssm wceq fdm sseqtrrd funimass4 syl2anc elbl imbi1d impexp ad2antrr
       simpl2 simplrl rpxrd simpllr adantr ffvelrnd simplr elbl2 syl22anc imbi2d
-      ffvelrnda pm5.74da syl5bb ralbidv2 anassrs rexbidva ralbidva pm5.32da
+      ffvelrnda pm5.74da bitrid ralbidv2 anassrs rexbidva ralbidva pm5.32da
       bitrd ) DJUANOZEKUANOZFJOZUBZGFHIUCPNOJKGUJZGFBUKZDUDNPZUEFGNZAUKZEUDNPZU
       FZBQUGZAQRZSWQFCUKZDPWRUHULZWTXFGNZEPXAUHULZTZCJRZBQUGZAQRZSABDEFGHIJKLMU
       IWPWQXEXMWPWQSZXDXLAQXNXAQOZSXCXKBQXNXOWRQOZXCXKUMXNXOXPSZSZXCXHXBOZCWSRZ
@@ -153722,7 +153712,7 @@ $)
       eleq2d oveq2 breq1d fveq2 oveq2d imbi12d ralxp ad4antr simplr simpr xmetf
       ad5antr syl op1stg syl2anc eqeltrd adantll fovrnd xrmaxcl preq12d supeq1d
       op2ndg oveqan12d ovmpoga oveq12d eqtrd xmetcl rpxr xrmaxltsup bitrd df-ov
-      ad3antlr oveq12i breq1i bicomi ralbidva syl5bb rexbidva anbi2d 3bitr3d
+      ad3antlr oveq12i breq1i bicomi ralbidva bitrid rexbidva anbi2d 3bitr3d
       a1i ) GNUDUETZHOUDUETZIPUDUETZUFZENTZFOTZUGZUGZJEFUHZUAUBNOUIZYNUAUJZUKUE
       ZUBUJZUKUEZGULZYOUMUEZYQUMUEZHULZUNZUOUPUQZURZUSUEZMUTULZUEZTZYNPJVAZYMUC
       UJZUUEULZBUJZUPVBZYMJUEZUUKJUEZIULZAUJZUPVBZVCZUCYNVDZBVEVFZAVEVDZUGZJYMK
@@ -153758,7 +153748,7 @@ $)
         ( ( x F y ) E ( u F v ) ) < z ) ) ) ) $=
       ( wcel vt cxmet cfv w3a ctx co ccn cxp wf cv ccnp wral wa clt wbr wi wrex
       crp ctopon wb mopntopon txtopon syl2an 3adant3 3ad2ant3 cncnp syl2anc cop
-      wceq fveq2 eleq2d ralxp simplr txmetcnp adantlr mpbirand 2ralbidva syl5bb
+      wceq fveq2 eleq2d ralxp simplr txmetcnp adantlr mpbirand 2ralbidva bitrid
       pm5.32da bitrd ) GNUBUCTZHOUBUCTZIPUBUCTZUDZJKLUEUFZMUGUFTZNOUHZPJUIZJUAU
       JZWEMUKUFZUCZTZUAWGULZUMZWHAUJZFUJZGUFDUJZUNUOBUJZEUJZHUFWQUNUOUMWOWRJUFW
       PWSJUFIUFCUJUNUOUPEOULFNULDURUQCURULZBOULANULZUMWDWEWGUSUCTZMPUSUCTZWFWNU
@@ -153964,7 +153954,7 @@ $)
       ( cxr wcel cabs cc0 co cc cle wbr wa cfv cr wb adantl wceq cmin eqtrd cab
       ccnv cicc cima cv crab wfn absf ffn elpreima mp2b w3a df-3an abscl absge0
       rexrd jca biantrurd bitr4id 0xr simpl elicc1 sylancr 0cn cnmetdval abssub
-      mpan subid1 fveq2d breq1d 3bitr4d pm5.32da syl5bb abbi2dv df-rab eqtr4di
+      mpan subid1 fveq2d breq1d 3bitr4d pm5.32da bitrid abbi2dv df-rab eqtr4di
       wf ) CEFZGUBHCUCIZUDZAUEZJFZHWABIZCKLZMZAUAWDAJUFVRWEAVTWAVTFZWBWAGNZVSFZ
       MZVRWEJOGVQGJUGWFWIPUHJOGUIJWAVSGUJUKVRWBWHWDVRWBMZWGEFZHWGKLZWGCKLZULZWM
       WHWDWJWNWKWLMZWMMWMWKWLWMUMWJWOWMWBWOVRWBWKWLWBWGWAUNUPWAUOUQQURUSWJHEFVR
@@ -153993,7 +153983,7 @@ $)
         -> { w e. RR | w =//= A } e. ( topGen ` ran (,) ) ) $=
       ( vx cr wcel cv cap wbr cmnf cioo co cpnf wo clt wa cxr syl simpl syl6bi
       wb crab cun crn ctg cfv wi elrabi elun rexr elioomnf elioopnf jaod syl5bi
-      a1i reaplt ancoms breq1 elrab adantl bitr4id baibd orbi12d syl5bb 3bitr4d
+      a1i reaplt ancoms breq1 elrab adantl bitr4id baibd orbi12d bitrid 3bitr4d
       ibar ex pm5.21ndd eqrdv retop mnfxr iooretopg sylancr pnfxr sylancl unopn
       ctop mp3an2i eqeltrd ) BDEZAFZBGHZADUAZIBJKZBLJKZUBZJUCUDUEZVSCWBWEVSCFZD
       EZWGWBEZWGWEEZWIWHUFVSWAAWGDUGUNWJWGWCEZWGWDEZMZVSWHWGWCWDUHZVSWKWHWLVSWK
@@ -158798,7 +158788,7 @@ $)
       eqeltrd ioossicc sseli cos11 biimprd syl2an rgen2 dff13 wrex 0red elioore
       sylbid pipos 0re iccssre ccncf coscn recoscld adantl cospi cxr w3a neg1rr
       pire wb rexri 1re elioo2 simp2bi eqbrtrid simp3bi breqtrrdi simplr simprl
-      cos0 jca simprr cosordlem ivthdec eqcom eqeq1d syl5bb sylibr dffo3 df-f1o
+      cos0 jca simprr cosordlem ivthdec eqcom eqeq1d bitrid sylibr dffo3 df-f1o
       rexbiia ) CDUCEZFUDZFUCEZGXLUEZUFXLXNXOUGZXLXNXOUHZXPXLXNXOUIZAHZXOIZBHZX
       OIZJZXSYAJZUJZBXLKAXLKXRXOXLUKZXTXNSZAXLKGLUKZXLLMYFLLGUIYHULLLGUOUMXLNLC
       DUPUNUQLXLGURUSYGAXLXSXLSZXTXSGIZXNXSXLGUTZXSVAVFVBAXLXNXOVCOZYEABXLXLYIY
@@ -166656,7 +166646,7 @@ $)
     bj-nn0sucALT $p |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
       ( va vy vz com wcel c0 wceq cv csuc wrex wo wb wal wi ax-mp bibi12d eleq1
       cvv wex ax-inf2 bdcv bj-inf2vn eleq2 rexeq orbi2d albidv nfcv eqeq1 suceq
-      vex nfv eqeq2d cbvrexv rexbidv syl5bb orbi12d biimp syl6bi spcimgf peano1
+      vex nfv eqeq2d cbvrexv rexbidv bitrid orbi12d biimp syl6bi spcimgf peano1
       pm2.43b mpbiri bj-peano2 eleq1a sylan rexlimiva jaoi impbid1 mpcom eximii
       imp bj-ex ) BFGZBHIZBAJZKZIZAFLZMZNZCUAWBDJZCJZGZWCHIZWCEJZKZIZEWDLZMZNZD
       OZWBCDECUBWDFIZWMWBWDTGWMWNPCULDEWDTCUCUDQWNWMWCFGZWFWIEFLZMZNZDOZWBWNWLW
@@ -168361,7 +168351,7 @@ $)
       abscld wo ralrimivva simpll cneg simplr neg1rr neg1lt0 0lt1 0re 1re lttri
       ex mp2an ltneii neg1z 1z wceq simpl neeq12d oveq2d fveq2d breq12d imbi12d
       rspc2gv mp2d cmul 2cnd 2ap0 0z qapne mpbird mulap0d qmulcl 0cnd ralrimiva
-      apdifflemr impbida syl5bb ) ACUBZDEZCFUCAUAUBZDEZUAFUCZAUDGZXQBUBZUEZAXQH
+      apdifflemr impbida bitrid ) ACUBZDEZCFUCAUAUBZDEZUAFUCZAUDGZXQBUBZUEZAXQH
       IZJKZAYCHIZJKZDEZUNZBFUCCFUCZXRXTCUAFXQXSADUFUGYBYAYKYBYALZYJCBFFYLXQFGZY
       CFGZLZLZYDYIYPYDLZXQYCUHEZYIYCXQUHEZYQYRLAXQYCYQYBYRYBYAYOYDUIZMYQYMYRYLY
       MYNYDUJZMYQYNYRYLYMYNYDUKZMYQYRNYQXQYCULIZOUMIZADEZYRYQAUUDDEZUUEYQXTUUFU
