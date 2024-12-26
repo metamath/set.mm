@@ -147363,6 +147363,14 @@ $)
         eqid fveq2d eqtr4d eqtrid ) ADGZBAHIZCHIZFUMUNAJKIZATIZLMNZHIZUOUMUQOGU
         NUSPATDQRDUQUPHOASUAKUPUBPUPUCGUDUEUFUGUMCURHAUQCDEUQUIUHUJUKUL $.
     $}
+
+    $( Topology component of the multiplication group.  (Contributed by Mario
+       Carneiro, 5-Oct-2015.) $)
+    mgptsetg $p |- ( R e. V -> ( TopSet ` R ) = ( TopSet ` M ) ) $=
+      ( wcel cts cfv cnx cplusg cmulr cop csts co wceq mulrslid slotex tsetslid
+      cvv tsetndxnplusgndx cslot plusgslid simpri setsslnid eqid mgpvalg fveq2d
+      cn mpdan eqtr4d ) ACEZAFGZAHIGZAJGZKLMZFGZBFGUJUMREUKUONAJCOPCUMULFRAQSIU
+      LTNULUGEUAUBUCUHUJBUNFAUMBCDUMUDUEUFUI $.
   $}
 
 
