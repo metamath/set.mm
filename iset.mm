@@ -147441,6 +147441,17 @@ $)
         ZUSSNUMUSUNUTUOKACDEOUTACDEVAPQUAUBUMCRGUPUQUCUMCATIZREUMTRUJARGVBRGZUD
         ADUEVCRATATUFUGUHUIUOUNRCUOSUNSNUKUL $.
     $}
+
+    ${
+      mgpds.2 $e |- B = ( dist ` R ) $.
+      $( Distance function of the multiplication group.  (Contributed by Mario
+         Carneiro, 5-Oct-2015.) $)
+      mgpdsg $p |- ( R e. V -> B = ( dist ` M ) ) $=
+        ( wcel cds cfv cnx cplusg cmulr cop csts co wceq mulrslid slotex dsslid
+        cvv dsndxnplusgndx cslot plusgslid simpri setsslnid eqid mgpvalg fveq2d
+        cn mpdan eqtr4d eqtrid ) BDGZABHIZCHIZFUMUNBJKIZBLIZMNOZHIZUOUMUQTGUNUS
+        PBLDQRDUQUPHTBSUAKUPUBPUPUIGUCUDUEUJUMCURHBUQCDEUQUFUGUHUKUL $.
+    $}
   $}
 
 
