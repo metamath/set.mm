@@ -147469,7 +147469,7 @@ $)
   $( Define the multiplicative neutral element of a ring.  This definition
      works by extracting the ` 0g ` element, i.e. the neutral element in a
      group or monoid, and transferring it to the multiplicative monoid via the
-     ` mulGrp ` function ( ~ df-mgp ).  See also ~ dfur2 , which derives the
+     ` mulGrp ` function ( ~ df-mgp ).  See also ~ dfur2g , which derives the
      "traditional" definition as the unique element of a ring which is left-
      and right-neutral under multiplication.  (Contributed by NM, 27-Aug-2011.)
      (Revised by Mario Carneiro, 27-Dec-2014.) $)
@@ -147484,6 +147484,25 @@ $)
       ( wcel cur cfv cmgp c0g cvv wceq elex ccom df-ur fveq1i wfn fnmgp fvco2
       mpan eqtrid syl fveq2i 3eqtr4g ) ADGZAHIZAJIZKIZBCKIUFALGZUGUIMADNUJUGAKJ
       OZIZUIAHUKPQJLRUJULUIMSLKJATUAUBUCFCUHKEUDUE $.
+  $}
+
+  ${
+    $d e x B $.  $d e x R $.  $d e x V $.
+    dfur2.b $e |- B = ( Base ` R ) $.
+    dfur2.t $e |- .x. = ( .r ` R ) $.
+    dfur2.u $e |- .1. = ( 1r ` R ) $.
+    $( The multiplicative identity is the unique element of the ring that is
+       left- and right-neutral on all elements under multiplication.
+       (Contributed by Mario Carneiro, 10-Jan-2015.) $)
+    dfur2g $p |- ( R e. V -> .1. = ( iota e ( e e. B /\
+      A. x e. B ( ( e .x. x ) = x /\ ( x .x. e ) = x ) ) ) ) $=
+      ( wcel cmgp cfv cv co wceq wa wral cvv eqid c0g cbs cplusg cio fnmgp elex
+      wfn funfvex funfni sylancr grpidvalg syl ringidvalg mgpbasg eleq2d eqeq1d
+      mgpplusgg oveqd anbi12d raleqbidv iotabidv 3eqtr4d ) CGKZCLMZUAMZFNZVDUBM
+      ZKZVFANZVDUCMZOZVIPZVIVFVJOZVIPZQZAVGRZQZFUDZEVFBKZVFVIDOZVIPZVIVFDOZVIPZ
+      QZABRZQZFUDVCVDSKZVEVRPVCLSUGCSKWGUECGUFWGSCLCLUHUIUJAVGVJFVDSVEVGTVJTVET
+      UKULCEVDGVDTZJUMVCWFVQFVCVSVHWEVPVCBVGVFBCVDGWHHUNZUOVCWDVOABVGWIVCWAVLWC
+      VNVCVTVKVIVCDVJVFVICDVDGWHIUQZURUPVCWBVMVIVCDVJVIVFWJURUPUSUTUSVAVB $.
   $}
 
 
