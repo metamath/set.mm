@@ -147456,6 +147456,27 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Ring unit
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c 1r $.
+
+  $( Extend class notation with ring unit. $)
+  cur $a class 1r $.
+
+  $( Define the multiplicative neutral element of a ring.  This definition
+     works by extracting the ` 0g ` element, i.e. the neutral element in a
+     group or monoid, and transferring it to the multiplicative monoid via the
+     ` mulGrp ` function ( ~ df-mgp ).  See also ~ dfur2 , which derives the
+     "traditional" definition as the unique element of a ring which is left-
+     and right-neutral under multiplication.  (Contributed by NM, 27-Aug-2011.)
+     (Revised by Mario Carneiro, 27-Dec-2014.) $)
+  df-ur $a |- 1r = ( 0g o. mulGrp ) $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -164680,6 +164701,9 @@ htmldef "SubMnd" as "SubMnd";
 htmldef "mulGrp" as "mulGrp";
   althtmldef "mulGrp" as "mulGrp";
   latexdef "mulGrp" as "\mathrm{mulGrp}";
+htmldef "1r" as "<IMG SRC='_1r.gif' WIDTH=13 HEIGHT=19 ALT=' 1r' TITLE='1r'>";
+  althtmldef "1r" as "1<SUB>r</SUB>";
+  latexdef "1r" as "1_\mathrm{r}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
