@@ -147475,6 +147475,17 @@ $)
      (Revised by Mario Carneiro, 27-Dec-2014.) $)
   df-ur $a |- 1r = ( 0g o. mulGrp ) $.
 
+  ${
+    ringidval.g $e |- G = ( mulGrp ` R ) $.
+    ringidval.u $e |- .1. = ( 1r ` R ) $.
+    $( The value of the unity element of a ring.  (Contributed by NM,
+       27-Aug-2011.)  (Revised by Mario Carneiro, 27-Dec-2014.) $)
+    ringidvalg $p |- ( R e. V -> .1. = ( 0g ` G ) ) $=
+      ( wcel cur cfv cmgp c0g cvv wceq elex ccom df-ur fveq1i wfn fnmgp fvco2
+      mpan eqtrid syl fveq2i 3eqtr4g ) ADGZAHIZAJIZKIZBCKIUFALGZUGUIMADNUJUGAKJ
+      OZIZUIAHUKPQJLRUJULUIMSLKJATUAUBUCFCUHKEUDUE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
