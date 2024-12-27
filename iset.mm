@@ -147340,6 +147340,41 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Abelian groups
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Definition and basic properties
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c CMnd $.
+  $c Abel $.
+
+  $( Extend class notation with class of all commutative monoids. $)
+  ccmn $a class CMnd $.
+
+  $( Extend class notation with class of all Abelian groups. $)
+  cabl $a class Abel $.
+
+  ${
+    $d a b g $.
+    $( Define class of all commutative monoids.  (Contributed by Mario
+       Carneiro, 6-Jan-2015.) $)
+    df-cmn $a |- CMnd = { g e. Mnd | A. a e. ( Base ` g )
+      A. b e. ( Base ` g ) ( a ( +g ` g ) b ) = ( b ( +g ` g ) a ) } $.
+  $}
+
+  $( Define class of all Abelian groups.  (Contributed by NM, 17-Oct-2011.)
+     (Revised by Mario Carneiro, 6-Jan-2015.) $)
+  df-abl $a |- Abel = ( Grp i^i CMnd ) $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Rings
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -164732,6 +164767,13 @@ htmldef "MndHom" as " MndHom ";
 htmldef "SubMnd" as "SubMnd";
   althtmldef "SubMnd" as "SubMnd";
   latexdef "SubMnd" as "\mathrm{SubMnd}";
+htmldef "CMnd" as "CMnd";
+  althtmldef "CMnd" as "CMnd";
+  latexdef "CMnd" as "\mathrm{CMnd}";
+htmldef "Abel" as
+    "<IMG SRC='_abel.gif' WIDTH=28 HEIGHT=19 ALT=' Abel' TITLE='Abel'>";
+  althtmldef "Abel" as "Abel";
+  latexdef "Abel" as "\mathrm{Abel}";
 htmldef "mulGrp" as "mulGrp";
   althtmldef "mulGrp" as "mulGrp";
   latexdef "mulGrp" as "\mathrm{mulGrp}";
