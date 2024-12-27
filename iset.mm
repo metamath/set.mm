@@ -147373,6 +147373,28 @@ $)
      (Revised by Mario Carneiro, 6-Jan-2015.) $)
   df-abl $a |- Abel = ( Grp i^i CMnd ) $.
 
+  $( The predicate "is an Abelian (commutative) group".  (Contributed by NM,
+     17-Oct-2011.) $)
+  isabl $p |- ( G e. Abel <-> ( G e. Grp /\ G e. CMnd ) ) $=
+    ( cgrp ccmn cabl df-abl elin2 ) ABCDEF $.
+
+  $( An Abelian group is a group.  (Contributed by NM, 26-Aug-2011.) $)
+  ablgrp $p |- ( G e. Abel -> G e. Grp ) $=
+    ( cabl wcel cgrp ccmn isabl simplbi ) ABCADCAECAFG $.
+
+  ${
+    ablgrpd.1 $e |- ( ph -> G e. Abel ) $.
+    $( An Abelian group is a group, deduction form of ~ ablgrp .  (Contributed
+       by Rohan Ridenour, 3-Aug-2023.) $)
+    ablgrpd $p |- ( ph -> G e. Grp ) $=
+      ( cabl wcel cgrp ablgrp syl ) ABDEBFECBGH $.
+  $}
+
+  $( An Abelian group is a commutative monoid.  (Contributed by Mario Carneiro,
+     6-Jan-2015.) $)
+  ablcmn $p |- ( G e. Abel -> G e. CMnd ) $=
+    ( cabl wcel cgrp ccmn isabl simprbi ) ABCADCAECAFG $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
