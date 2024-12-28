@@ -93,6 +93,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+28-Dec-24 foelrni   foelcdmi
+28-Dec-24 fornex    focdmex
 28-Dec-24 fafvelrn  fafvelcdm
 28-Dec-24 fafv2elrn fafv2elcdm
 28-Dec-24 frnvafv2v fcdmafv2v
