@@ -147408,6 +147408,14 @@ $)
       UMLZMZBULNKZOZAUQOZUJUKDLZUKUJDLZMZBCOACOZHEPQULEMZUSUPBCOZACOZVCVDUQCMUS
       VFUBVDUQENKCULENRFSURVEAUQCUPBUQCUCUDUEVDUPVBABCCVDUNUTUOVAVDUMDUJUKVDUME
       JKDULEJRGSZTVDUMDUKUJVGTUAUFUGHABUHUI $.
+
+    $( The predicate "is an Abelian (commutative) group".  (Contributed by NM,
+       17-Oct-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    isabl2 $p |- ( G e. Abel <-> ( G e. Grp /\
+             A. x e. B A. y e. B ( x .+ y ) = ( y .+ x ) ) ) $=
+      ( cabl wcel cgrp ccmn wa cv co wceq wral isabl cmnd wb grpmnd syl pm5.32i
+      iscmn baib bitri ) EHIEJIZEKIZLUFAMZBMZDNUIUHDNOBCPACPZLEQUFUGUJUFERIZUGU
+      JSETUGUKUJABCDEFGUCUDUAUBUE $.
   $}
 
 
