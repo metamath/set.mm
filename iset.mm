@@ -147472,6 +147472,19 @@ $)
       BCUSUOFUSTUOTUJUK $.
   $}
 
+  ${
+    $d x y B $.  $d x y G $.  $d x y ph $.
+    isabld.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    isabld.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    isabld.g $e |- ( ph -> G e. Grp ) $.
+    isabld.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) = ( y .+ x ) ) $.
+    $( Properties that determine an Abelian group.  (Contributed by NM,
+       6-Aug-2013.) $)
+    isabld $p |- ( ph -> G e. Abel ) $=
+      ( cgrp wcel ccmn cabl grpmndd iscmnd isabl sylanbrc ) AFKLFMLFNLIABCDEFGH
+      AFIOJPFQR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
