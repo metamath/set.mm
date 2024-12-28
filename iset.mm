@@ -147600,6 +147600,25 @@ $)
       HUAUGUH $.
   $}
 
+  ${
+    ablsub2inv.b $e |- B = ( Base ` G ) $.
+    ablsub2inv.m $e |- .- = ( -g ` G ) $.
+    ablsub2inv.n $e |- N = ( invg ` G ) $.
+    ablsub2inv.g $e |- ( ph -> G e. Abel ) $.
+    ablsub2inv.x $e |- ( ph -> X e. B ) $.
+    ablsub2inv.y $e |- ( ph -> Y e. B ) $.
+    $( Abelian group subtraction of two inverses.  (Contributed by Stefan
+       O'Rear, 24-May-2015.) $)
+    ablsub2inv $p |- ( ph -> ( ( N ` X ) .- ( N ` Y ) ) = ( Y .- X ) ) $=
+      ( cfv co wcel syl2anc wceq syl3anc eqtr4d cplusg eqid ablgrp syl grpinvcl
+      cabl cgrp grpsubinv ablcom grpinvinv oveq1d grpinvadd grpsubval grpinvsub
+      fveq2d 3eqtrd ) AFENZGENZDOUQGCUANZOZFGDOZENZGFDOZABUSCDEUQGHUSUBZIJACUFP
+      ZCUGPZKCUCUDZAVFFBPZUQBPZVGLBCEFHJUEQZMUHAUTFURUSOZENZVBAUTURENZUQUSOZVLA
+      UTGUQUSOZVNAVEVIGBPZUTVORKVJMBUSCUQGHVDUISAVMGUQUSAVFVPVMGRVGMBCEGHJUJQUK
+      TAVFVHURBPZVLVNRVGLAVFVPVQVGMBCEGHJUEQBUSCEFURHVDJULSTAVAVKEAVHVPVAVKRLMB
+      USCEDFGHVDJIUMQUOTAVFVHVPVBVCRVGLMBCDEFGHIJUNSUP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
