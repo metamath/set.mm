@@ -147683,6 +147683,15 @@ $)
       MEDMZEEDMZFBMZCNOZFBMZFUNUKULUMULUOUQPUKULUMQZUKULUMRZUKULUMSZVAABCDEFEGH
       IUCUAUNUPURFBUNCUDKZULUPURPUNUKVCUTCUBUEZVAACDEURGURUFZIUGTUHUNVCUMUSFPVD
       VBABCFURGHVEUITUJ $.
+
+    $( A cancellation law for commutative groups.  (Contributed by NM,
+       23-Mar-2015.) $)
+    ablpncan3 $p |- ( ( G e. Abel /\ ( X e. B /\ Y e. B ) ) ->
+        ( X .+ ( Y .- X ) ) = Y ) $=
+      ( cabl wcel wa co wceq simpl simprl cgrp ablgrp adantr syl3anc grpsubcl
+      simprr ablcom grpnpcan eqtrd ) CJKZEAKZFAKZLZLZEFEDMZBMZUKEBMZFUJUFUGUKAK
+      ZULUMNUFUIOUFUGUHPZUJCQKZUHUGUNUFUPUICRSZUFUGUHUBZUOACDFEGIUATABCEUKGHUCT
+      UJUPUHUGUMFNUQURUOABCDFEGHIUDTUE $.
   $}
 
 
