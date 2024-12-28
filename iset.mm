@@ -147516,6 +147516,13 @@ $)
       ( vx vy ccmn wcel co wceq cv wral wa cmnd iscmn simprbi rsp2 imp caovcomg
       sylan 3impb ) CJKZDAKEAKDEBLEDBLMUEHIDEABUEHNZINZBLUGUFBLMZIAOHAOZUFAKUGA
       KPZUHUECQKUIHIABCFGRSUIUJUHUHHIAATUAUCUBUD $.
+
+    $( An Abelian group operation is commutative.  (Contributed by NM,
+       26-Aug-2011.) $)
+    ablcom $p |- ( ( G e. Abel /\ X e. B /\ Y e. B ) ->
+                 ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( cabl wcel ccmn co wceq ablcmn cmncom syl3an1 ) CHICJIDAIEAIDEBKEDBKLCMA
+      BCDEFGNO $.
   $}
 
 
