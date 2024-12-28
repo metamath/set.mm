@@ -147619,6 +147619,19 @@ $)
       USCEDFGHVDJIUMQUOTAVFVHVPVBVCRVGLMBCDEFGHIJUNSUP $.
   $}
 
+  ${
+    ablsubadd.b $e |- B = ( Base ` G ) $.
+    ablsubadd.p $e |- .+ = ( +g ` G ) $.
+    ablsubadd.m $e |- .- = ( -g ` G ) $.
+    $( Relationship between Abelian group subtraction and addition.
+       (Contributed by NM, 31-Mar-2014.) $)
+    ablsubadd $p |- ( ( G e. Abel /\ ( X e. B /\ Y e. B /\ Z e. B ) )
+          -> ( ( X .- Y ) = Z <-> ( Y .+ Z ) = X ) ) $=
+      ( cabl wcel w3a wa co wceq cgrp wb ablgrp grpsubadd ablcom eqeq1d bitr4d
+      sylan 3adant3r1 ) CKLZEALZFALZGALZMZNZEFDOGPZGFBOZEPZFGBOZEPUFCQLUJULUNRC
+      SABCDEFGHIJTUDUKUOUMEUFUHUIUOUMPUGABCFGHIUAUEUBUC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
