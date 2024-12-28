@@ -147560,6 +147560,13 @@ $)
       PEGCPFCPQADROUCJDSTKLMBCDEFGHIUAUB $.
   $}
 
+  ${
+    cmnmndd.1 $e |- ( ph -> G e. CMnd ) $.
+    $( A commutative monoid is a monoid.  (Contributed by SN, 1-Jun-2024.) $)
+    cmnmndd $p |- ( ph -> G e. Mnd ) $=
+      ( ccmn wcel cmnd cmnmnd syl ) ABDEBFECBGH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
