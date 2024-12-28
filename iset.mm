@@ -147711,6 +147711,19 @@ $)
       DQRZRZCPZFGUREPZEPFGHCPZEPAUOBSZHBSZUPUSUAADUBSZFBSGBSVBADUCSVDLDUDUHZMNB
       DEFGIKUEUFOBCDUQEUOHIJUQUGZKUITABCDEFGURIJKLMNAVDVCURBSVEOBDUQHIVFUJTUKAU
       TVAFEABCDEUQGHIJKVFVENOULUMUN $.
+
+    ablpnpcan.g $e |- ( ph -> G e. Abel ) $.
+    ablpnpcan.x $e |- ( ph -> X e. B ) $.
+    ablpnpcan.y $e |- ( ph -> Y e. B ) $.
+    ablpnpcan.z $e |- ( ph -> Z e. B ) $.
+    $( Cancellation law for mixed addition and subtraction.  ( ~ pnpcan
+       analog.)  (Contributed by NM, 29-May-2015.) $)
+    ablpnpcan $p |- ( ph -> ( ( X .+ Y ) .- ( X .+ Z ) ) = ( Y .- Z ) ) $=
+      ( co c0g cfv cabl wcel wceq ablsub4 syl122anc ablgrp syl grpsubid syl2anc
+      cgrp eqid oveq1d grpsubcl syl3anc grplid 3eqtrd ) AFGCTFHCTETZFFETZGHETZC
+      TZDUAUBZVACTZVAADUCUDZFBUDZGBUDZVFHBUDZUSVBUELMNMOBCDEHFGFIJKUFUGAUTVCVAC
+      ADULUDZVFUTVCUEAVEVILDUHUIZMBDEFVCIVCUMZKUJUKUNAVIVABUDZVDVAUEVJAVIVGVHVL
+      VJNOBDEGHIKUOUPBCDVAVCIJVKUQUKUR $.
   $}
 
 
