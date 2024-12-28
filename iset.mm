@@ -147548,6 +147548,16 @@ $)
       ( ccmn wcel w3a wa cmnd cmnmnd adantr simpr1 simpr2 simpr3 co wceq cmncom
       3adant3r3 mnd12g ) CIJZDAJZEAJZFAJZKZLABCDEFGHUDCMJUHCNOUDUEUFUGPUDUEUFUG
       QUDUEUFUGRUDUEUFDEBSEDBSTUGABCDEGHUAUBUC $.
+
+    abl32.g $e |- ( ph -> G e. Abel ) $.
+    abl32.x $e |- ( ph -> X e. B ) $.
+    abl32.y $e |- ( ph -> Y e. B ) $.
+    abl32.z $e |- ( ph -> Z e. B ) $.
+    $( Commutative/associative law for Abelian groups.  (Contributed by Stefan
+       O'Rear, 10-Apr-2015.)  (Revised by Mario Carneiro, 21-Apr-2016.) $)
+    abl32 $p |- ( ph -> ( ( X .+ Y ) .+ Z ) = ( ( X .+ Z ) .+ Y ) ) $=
+      ( ccmn wcel co wceq cabl ablcmn syl cmn32 syl13anc ) ADNOZEBOFBOGBOEFCPGC
+      PEGCPFCPQADROUCJDSTKLMBCDEFGHIUAUB $.
   $}
 
 
