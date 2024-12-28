@@ -147395,6 +147395,21 @@ $)
   ablcmn $p |- ( G e. Abel -> G e. CMnd ) $=
     ( cabl wcel cgrp ccmn isabl simprbi ) ABCADCAECAFG $.
 
+  ${
+    $d g x y B $.  $d g x y G $.  $d g .+ $.
+    iscmn.b $e |- B = ( Base ` G ) $.
+    iscmn.p $e |- .+ = ( +g ` G ) $.
+    $( The predicate "is a commutative monoid".  (Contributed by Mario
+       Carneiro, 6-Jan-2015.) $)
+    iscmn $p |- ( G e. CMnd <-> ( G e. Mnd /\
+             A. x e. B A. y e. B ( x .+ y ) = ( y .+ x ) ) ) $=
+      ( vg cv cplusg cfv co wceq cbs wral cmnd ccmn fveq2 eqtr4di oveqd eqeq12d
+      wb raleq raleqbi1dv syl 2ralbidv bitrd df-cmn elrab2 ) AIZBIZHIZJKZLZUKUJ
+      UMLZMZBULNKZOZAUQOZUJUKDLZUKUJDLZMZBCOACOZHEPQULEMZUSUPBCOZACOZVCVDUQCMUS
+      VFUBVDUQENKCULENRFSURVEAUQCUPBUQCUCUDUEVDUPVBABCCVDUNUTUOVAVDUMDUJUKVDUME
+      JKDULEJRGSZTVDUMDUKUJVGTUAUFUGHABUHUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
