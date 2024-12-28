@@ -147523,6 +147523,14 @@ $)
                  ( X .+ Y ) = ( Y .+ X ) ) $=
       ( cabl wcel ccmn co wceq ablcmn cmncom syl3an1 ) CHICJIDAIEAIDEBKEDBKLCMA
       BCDEFGNO $.
+
+    $( Commutative/associative law for Abelian groups.  (Contributed by NM,
+       4-Feb-2014.)  (Revised by Mario Carneiro, 21-Apr-2016.) $)
+    cmn32 $p |- ( ( G e. CMnd /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                 ( ( X .+ Y ) .+ Z ) = ( ( X .+ Z ) .+ Y ) ) $=
+      ( ccmn wcel w3a wa cmnd cmnmnd adantr simpr1 simpr2 simpr3 co wceq cmncom
+      3adant3r1 mnd32g ) CIJZDAJZEAJZFAJZKZLABCDEFGHUDCMJUHCNOUDUEUFUGPUDUEUFUG
+      QUDUEUFUGRUDUFUGEFBSFEBSTUEABCEFGHUAUBUC $.
   $}
 
 
