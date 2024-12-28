@@ -147162,8 +147162,8 @@ $)
     mulgsubdir.b $e |- B = ( Base ` G ) $.
     mulgsubdir.t $e |- .x. = ( .g ` G ) $.
     mulgsubdir.d $e |- .- = ( -g ` G ) $.
-    $( Subtraction of a group element from itself.  (Contributed by Mario
-       Carneiro, 13-Dec-2014.) $)
+    $( Distribution of group multiples over subtraction for group elements,
+       ~ subdir analog.  (Contributed by Mario Carneiro, 13-Dec-2014.) $)
     mulgsubdir $p |- ( ( G e. Grp /\ ( M e. ZZ /\ N e. ZZ /\ X e. B ) ) ->
       ( ( M - N ) .x. X ) = ( ( M .x. X ) .- ( N .x. X ) ) ) $=
       ( cgrp wcel cz co cfv wceq eqid zcnd 3adant3r1 mulgcl w3a wa caddc cplusg
