@@ -147567,6 +147567,24 @@ $)
       ( ccmn wcel cmnd cmnmnd syl ) ABDEBFECBGH $.
   $}
 
+  ${
+    $d A w $.  $d B w $.  $d .0. w $.  $d .+ w $.  $d ph w $.
+    rinvmod.b $e |- B = ( Base ` G ) $.
+    rinvmod.0 $e |- .0. = ( 0g ` G ) $.
+    rinvmod.p $e |- .+ = ( +g ` G ) $.
+    rinvmod.m $e |- ( ph -> G e. CMnd ) $.
+    rinvmod.a $e |- ( ph -> A e. B ) $.
+    $( Uniqueness of a right inverse element in a commutative monoid, if it
+       exists.  Corresponds to ~ caovimo .  (Contributed by AV,
+       31-Dec-2023.) $)
+    rinvmod $p |- ( ph -> E* w e. B ( A .+ w ) = .0. ) $=
+      ( cv co wceq wa wrmo wcel adantr simpr wral ccmn cmncom syl3anc eqtrd jca
+      wi ex ralrimiva cmnd cmnmnd syl mndinvmod rmoim sylc ) ACBMZENZGOZUPCENZG
+      OZURPZUGZBDUAVABDQURBDQAVBBDAUPDRZPZURVAVDURPZUTURVEUSUQGVDUSUQOZURVDFUBR
+      ZVCCDRZVFAVGVCKSAVCTAVHVCLSDEFUPCHJUCUDSVDURTZUEVIUFUHUIABCDEFGHIJAVGFUJR
+      KFUKULLUMURVABDUNUO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
