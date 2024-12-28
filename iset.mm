@@ -147757,6 +147757,13 @@ $)
       DNABUMCDEULGHUMUAZIJKACUBQZFBQZGBQZULBQZACUFQZUPJCUGUCLMBCDFGHIUDRZMUEAUN
       FEDAUNGULUMNZFAUTUSURUNVBSJVAMBUMCULGHUOUHRAUTURUQVBFSJMLBUMCDGFHUOIUIUJT
       UKT $.
+
+    $( Cancellation law for group subtraction.  ( ~ nnncan1 analog.)
+       (Contributed by NM, 7-Apr-2015.) $)
+    ablnnncan1 $p |- ( ph -> ( ( X .- Y ) .- ( X .- Z ) ) = ( Z .- Y ) ) $=
+      ( co cgrp wcel cabl ablgrp syl grpsubcl syl3anc ablsub32 ablnncan oveq1d
+      eqtrd ) AEFDNEGDNZDNEUFDNZFDNGFDNABCDEFUFHIJKLACOPZEBPGBPUFBPACQPUHJCRSKM
+      BCDEGHITUAUBAUGGFDABCDEGHIJKMUCUDUE $.
   $}
 
 
