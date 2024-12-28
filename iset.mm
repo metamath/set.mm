@@ -147418,6 +147418,25 @@ $)
       JSETUGUKUJABCDEFGUCUDUAUBUE $.
   $}
 
+  ${
+    $d u v x y B $.  $d u v x y K $.  $d u v x y L $.  $d u v x y ph $.
+    ablpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    ablpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    ablpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    $( If two structures have the same group components (properties), one is a
+       commutative monoid iff the other one is.  (Contributed by Mario
+       Carneiro, 6-Jan-2015.) $)
+    cmnpropd $p |- ( ph -> ( K e. CMnd <-> L e. CMnd ) ) $=
+      ( vu vv cmnd wcel cv cfv co wceq wral wa eqid cplusg cbs mndpropd ancom2s
+      ccmn oveqrspc2v eqeq12d 2ralbidva raleqdv raleqbidv 3bitr3d anbi12d iscmn
+      3bitr4g ) AELMZJNZKNZEUAOZPZUQUPURPZQZKEUBOZRZJVBRZSFLMZUPUQFUAOZPZUQUPVF
+      PZQZKFUBOZRZJVJRZSEUEMFUEMAUOVEVDVLABCDEFGHIUCAVAKDRZJDRVIKDRZJDRVDVLAVAV
+      IJKDDAUPDMZUQDMZSSUSVGUTVHABCDDURVFUPUQIUFAVPVOUTVHQABCDDURVFUQUPIUFUDUGU
+      HAVMVCJDVBGAVAKDVBGUIUJAVNVKJDVJHAVIKDVJHUIUJUKULJKVBUREVBTURTUMJKVJVFFVJ
+      TVFTUMUN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
