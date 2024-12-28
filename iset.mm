@@ -147498,6 +147498,16 @@ $)
       TDNOZBCPACPFUBABCCIQABCDEGHRS $.
   $}
 
+  ${
+    $d x y B $.  $d x y G $.  $d x y .+ $.  $d x y W $.  $d x y X $.
+    $d x y Y $.  $d x y Z $.
+    $( A commutative monoid is a monoid.  (Contributed by Mario Carneiro,
+       6-Jan-2015.) $)
+    cmnmnd $p |- ( G e. CMnd -> G e. Mnd ) $=
+      ( vx vy ccmn wcel cmnd cv cplusg cfv co wceq cbs wral eqid iscmn simplbi
+      ) ADEAFEBGZCGZAHIZJRQSJKCALIZMBTMBCTSATNSNOP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
