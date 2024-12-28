@@ -80,7 +80,6 @@ proposed  syl5ib    imbitrid
 proposed  syl5ibcom imbitridcom
 proposed  syl5ibr   imbitrrid
 proposed  syl5ibrcom imbitrridcom
-underway  syl5bb    bitrid      compare to bitri or bitrd
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
@@ -102,6 +101,7 @@ Date      Old       New         Notes
 28-Dec-24 fafv2elrn fafv2elcdm
 28-Dec-24 frnvafv2v fcdmafv2v
 28-Dec-24 cncffvrn  cncfcdm
+26-Dec-24 syl5bb    bitrid      compare to bitri or bitrd
 22-Dec-24 frnsuppeq fsuppeq
 22-Dec-24 frnsuppeqg fsuppeqg
 22-Dec-24 frnfsuppbi ffsuppbi
