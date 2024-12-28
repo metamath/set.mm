@@ -93,6 +93,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+28-Dec-24 cncffvrn  cncfcdm
 22-Dec-24 frnsuppeq fsuppeq
 22-Dec-24 frnsuppeqg fsuppeqg
 22-Dec-24 frnfsuppbi ffsuppbi
