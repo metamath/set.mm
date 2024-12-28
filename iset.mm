@@ -147506,6 +147506,16 @@ $)
     cmnmnd $p |- ( G e. CMnd -> G e. Mnd ) $=
       ( vx vy ccmn wcel cmnd cv cplusg cfv co wceq cbs wral eqid iscmn simplbi
       ) ADEAFEBGZCGZAHIZJRQSJKCALIZMBTMBCTSATNSNOP $.
+
+    ablcom.b $e |- B = ( Base ` G ) $.
+    ablcom.p $e |- .+ = ( +g ` G ) $.
+    $( A commutative monoid is commutative.  (Contributed by Mario Carneiro,
+       6-Jan-2015.) $)
+    cmncom $p |- ( ( G e. CMnd /\ X e. B /\ Y e. B ) ->
+                 ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( vx vy ccmn wcel co wceq cv wral wa cmnd iscmn simprbi rsp2 imp caovcomg
+      sylan 3impb ) CJKZDAKEAKDEBLEDBLMUEHIDEABUEHNZINZBLUGUFBLMZIAOHAOZUFAKUGA
+      KPZUHUECQKUIHIABCFGRSUIUJUHUHHIAATUAUCUBUD $.
   $}
 
 
