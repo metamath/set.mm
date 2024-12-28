@@ -147748,6 +147748,15 @@ $)
       ( cplusg cfv co cabl wcel wceq ablsubsub4 ablcom syl3anc oveq2d 3eqtr4d
       eqid ) AEFGCNOZPZDPEGFUFPZDPEFDPGDPEGDPFDPAUGUHEDACQRFBRGBRUGUHSJLMBUFCFG
       HUFUEZUAUBUCABUFCDEFGHUIIJKLMTABUFCDEGFHUIIJKMLTUD $.
+
+    $( Cancellation law for group subtraction.  ( ~ nnncan analog.)
+       (Contributed by NM, 29-Feb-2008.)  (Revised by AV, 27-Aug-2021.) $)
+    ablnnncan $p |- ( ph -> ( ( X .- ( Y .- Z ) ) .- Z ) = ( X .- Y ) ) $=
+      ( co cplusg cfv wcel syl3anc wceq eqtrd eqid cgrp syl grpsubcl ablsubsub4
+      cabl ablgrp ablcom ablpncan3 syl12anc oveq2d ) AEFGDNZDNGDNEULGCOPZNZDNEF
+      DNABUMCDEULGHUMUAZIJKACUBQZFBQZGBQZULBQZACUFQZUPJCUGUCLMBCDFGHIUDRZMUEAUN
+      FEDAUNGULUMNZFAUTUSURUNVBSJVAMBUMCULGHUOUHRAUTURUQVBFSJMLBUMCDGFHUOIUIUJT
+      UKT $.
   $}
 
 
