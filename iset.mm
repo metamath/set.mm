@@ -147585,6 +147585,21 @@ $)
       KFUKULLUMURVABDUNUO $.
   $}
 
+  ${
+    ablinvadd.b $e |- B = ( Base ` G ) $.
+    ablinvadd.p $e |- .+ = ( +g ` G ) $.
+    ablinvadd.n $e |- N = ( invg ` G ) $.
+    $( The inverse of an Abelian group operation.  (Contributed by NM,
+       31-Mar-2014.) $)
+    ablinvadd $p |- ( ( G e. Abel /\ X e. B /\ Y e. B ) ->
+                   ( N ` ( X .+ Y ) ) = ( ( N ` X ) .+ ( N ` Y ) ) ) $=
+      ( cabl wcel w3a co cfv cgrp wceq ablgrp grpinvadd grpinvcl syl2anc ablcom
+      syl3an1 simp1 3ad2ant1 simp2 simp3 syl3anc eqtr4d ) CJKZEAKZFAKZLZEFBMDNZ
+      FDNZEDNZBMZUOUNBMZUICOKZUJUKUMUPPCQZABCDEFGHIRUBULUIUOAKZUNAKZUQUPPUIUJUK
+      UCULURUJUTUIUJURUKUSUDZUIUJUKUEACDEGISTULURUKVAVBUIUJUKUFACDFGISTABCUOUNG
+      HUAUGUH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
