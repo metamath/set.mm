@@ -147726,6 +147726,22 @@ $)
       VJNOBDEGHIKUOUPBCDVAVCIJVKUQUKUR $.
   $}
 
+  ${
+    ablnncan.b $e |- B = ( Base ` G ) $.
+    ablnncan.m $e |- .- = ( -g ` G ) $.
+    ablnncan.g $e |- ( ph -> G e. Abel ) $.
+    ablnncan.x $e |- ( ph -> X e. B ) $.
+    ablnncan.y $e |- ( ph -> Y e. B ) $.
+    $( Cancellation law for group subtraction.  ( ~ nncan analog.)
+       (Contributed by NM, 7-Apr-2015.) $)
+    ablnncan $p |- ( ph ->
+             ( X .- ( X .- Y ) ) = Y ) $=
+      ( co cplusg cfv c0g eqid ablsubsub wcel wceq syl2anc cgrp cabl ablgrp syl
+      grpsubid oveq1d grplid 3eqtrd ) AEEFDLDLEEDLZFCMNZLCONZFUJLZFABUJCDEEFGUJ
+      PZHIJJKQAUIUKFUJACUARZEBRUIUKSACUBRUNICUCUDZJBCDEUKGUKPZHUETUFAUNFBRULFSU
+      OKBUJCFUKGUMUPUGTUH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
