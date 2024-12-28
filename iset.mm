@@ -147443,6 +147443,19 @@ $)
       LKZMFJKZFLKZMENKFNKATUBUAUCABCDEFGHIOABCDEFGHIPQERFRS $.
   $}
 
+  ${
+    $d x y K $.  $d x y L $.
+    ablprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    ablprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    $( If two structures have the same group components (properties), one is an
+       Abelian group iff the other one is.  (Contributed by NM,
+       11-Oct-2013.) $)
+    ablprop $p |- ( K e. Abel <-> L e. Abel ) $=
+      ( vx vy cabl wcel wb wtru cbs cfv eqidd wceq a1i cv cplusg co wa oveqi
+      ablpropd mptru ) AGHBGHIJEFAKLZABJUCMUCBKLNJCOEPZFPZAQLZRUDUEBQLZRNJUDUCH
+      UEUCHSSUFUGUDUEDTOUAUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
