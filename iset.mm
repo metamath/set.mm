@@ -147540,6 +147540,14 @@ $)
       simp3r wceq cmncom mnd4g ) CJKZEAKZFAKZLZGAKZDAKZLZMZABCDEFGHIUNUGCNKUGUJ
       UMOZCPQUGUHUIUMRUGUHUIUMSZUGUJUKULUAZUGUJUKULUCUNUGUIUKFGBTGFBTUDUOUPUQAB
       CFGHIUEUBUF $.
+
+    $( Commutative/associative law for Abelian monoids.  (Contributed by Stefan
+       O'Rear, 5-Sep-2015.)  (Revised by Mario Carneiro, 21-Apr-2016.) $)
+    cmn12 $p |- ( ( G e. CMnd /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+        ( X .+ ( Y .+ Z ) ) = ( Y .+ ( X .+ Z ) ) ) $=
+      ( ccmn wcel w3a wa cmnd cmnmnd adantr simpr1 simpr2 simpr3 co wceq cmncom
+      3adant3r3 mnd12g ) CIJZDAJZEAJZFAJZKZLABCDEFGHUDCMJUHCNOUDUEUFUGPUDUEUFUG
+      QUDUEUFUGRUDUEUFDEBSEDBSTUGABCDEGHUAUBUC $.
   $}
 
 
