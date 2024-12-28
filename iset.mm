@@ -147692,6 +147692,17 @@ $)
       simprr ablcom grpnpcan eqtrd ) CJKZEAKZFAKZLZLZEFEDMZBMZUKEBMZFUJUFUGUKAK
       ZULUMNUFUIOUFUGUHPZUJCQKZUHUGUNUFUPUICRSZUFUGUHUBZUOACDFEGIUATABCEUKGHUCT
       UJUPUHUGUMFNUQURUOABCDFEGHIUDTUE $.
+
+    ablsubsub.g $e |- ( ph -> G e. Abel ) $.
+    ablsubsub.x $e |- ( ph -> X e. B ) $.
+    ablsubsub.y $e |- ( ph -> Y e. B ) $.
+    ablsubsub.z $e |- ( ph -> Z e. B ) $.
+    $( Law for double subtraction.  (Contributed by NM, 7-Apr-2015.) $)
+    ablsubsub $p |- ( ph -> ( X .- ( Y .- Z ) ) = ( ( X .- Y ) .+ Z ) ) $=
+      ( co cgrp wcel wceq syl13anc cabl ablgrp grpsubsub grpaddsubass abladdsub
+      syl 3eqtr2d ) AFGHEPEPZFHGEPCPZFHCPGEPZFGEPHCPZADQRZFBRZGBRZHBRZUHUISADUA
+      RZULLDUBUFZMNOBCDEFGHIJKUCTAULUMUOUNUJUISUQMONBCDEFHGIJKUDTAUPUMUOUNUJUKS
+      LMONBCDEFHGIJKUETUG $.
   $}
 
 
