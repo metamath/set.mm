@@ -147435,6 +147435,12 @@ $)
       IJKDDAUPDMZUQDMZSSUSVGUTVHABCDDURVFUPUQIUFAVPVOUTVHQABCDDURVFUQUPIUFUDUGU
       HAVMVCJDVBGAVAKDVBGUIUJAVNVKJDVJHAVIKDVJHUIUJUKULJKVBUREVBTURTUMJKVJVFFVJ
       TVFTUMUN $.
+
+    $( If two structures have the same group components (properties), one is an
+       Abelian group iff the other one is.  (Contributed by NM, 6-Dec-2014.) $)
+    ablpropd $p |- ( ph -> ( K e. Abel <-> L e. Abel ) ) $=
+      ( cgrp wcel ccmn wa cabl grppropd cmnpropd anbi12d isabl 3bitr4g ) AEJKZE
+      LKZMFJKZFLKZMENKFNKATUBUAUCABCDEFGHIOABCDEFGHIPQERFRS $.
   $}
 
 
