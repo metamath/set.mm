@@ -147740,6 +147740,14 @@ $)
       grpsubid oveq1d grplid 3eqtrd ) AEEFDLDLEEDLZFCMNZLCONZFUJLZFABUJCDEEFGUJ
       PZHIJJKQAUIUKFUJACUARZEBRUIUKSACUBRUNICUCUDZJBCDEUKGUKPZHUETUFAUNFBRULFSU
       OKBUJCFUKGUMUPUGTUH $.
+
+    ablsub32.z $e |- ( ph -> Z e. B ) $.
+    $( Swap the second and third terms in a double group subtraction.
+       (Contributed by NM, 7-Apr-2015.) $)
+    ablsub32 $p |- ( ph -> ( ( X .- Y ) .- Z ) = ( ( X .- Z ) .- Y ) ) $=
+      ( cplusg cfv co cabl wcel wceq ablsubsub4 ablcom syl3anc oveq2d 3eqtr4d
+      eqid ) AEFGCNOZPZDPEGFUFPZDPEFDPGDPEGDPFDPAUGUHEDACQRFBRGBRUGUHSJLMBUFCFG
+      HUFUEZUAUBUCABUFCDEFGHUIIJKLMTABUFCDEGFHUIIJKMLTUD $.
   $}
 
 
