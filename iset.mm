@@ -147456,6 +147456,22 @@ $)
       UEUCHSSUFUGUDUEDTOUAUB $.
   $}
 
+  ${
+    $d x y B $.  $d x y G $.  $d x y ph $.
+    iscmnd.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    iscmnd.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    iscmnd.g $e |- ( ph -> G e. Mnd ) $.
+    iscmnd.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) = ( y .+ x ) ) $.
+    $( Properties that determine a commutative monoid.  (Contributed by Mario
+       Carneiro, 7-Jan-2015.) $)
+    iscmnd $p |- ( ph -> G e. CMnd ) $=
+      ( cmnd wcel cv cfv co wceq wral oveqd raleqbidv eqid cplusg cbs wa 3expib
+      ccmn ralrimivv eqeq12d anbi2d mpbi2and iscmn sylibr ) AFKLZBMZCMZFUANZOZU
+      NUMUOOZPZCFUBNZQZBUSQZUCZFUELAULUMUNEOZUNUMEOZPZCDQZBDQZVBIAVEBCDDAUMDLUN
+      DLVEJUDUFAVGVAULAVFUTBDUSGAVEURCDUSGAVCUPVDUQAEUOUMUNHRAEUOUNUMHRUGSSUHUI
+      BCUSUOFUSTUOTUJUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
