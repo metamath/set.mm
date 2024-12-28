@@ -147485,6 +147485,19 @@ $)
       AFIOJPFQR $.
   $}
 
+  ${
+    $d x y B $.  $d x y G $.
+    isabli.g $e |- G e. Grp $.
+    isabli.b $e |- B = ( Base ` G ) $.
+    isabli.p $e |- .+ = ( +g ` G ) $.
+    isabli.c $e |- ( ( x e. B /\ y e. B ) -> ( x .+ y ) = ( y .+ x ) ) $.
+    $( Properties that determine an Abelian group.  (Contributed by NM,
+       4-Sep-2011.) $)
+    isabli $p |- G e. Abel $=
+      ( cabl wcel cgrp cv co wceq wral rgen2 isabl2 mpbir2an ) EJKELKAMZBMZDNUA
+      TDNOZBCPACPFUBABCCIQABCDEGHRS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
