@@ -147663,6 +147663,17 @@ $)
       WBBNZWNWBBNZWBVMVFVJVKVJVHVRWTOWPWJWKWJWIABCDGHEHIJKRSVMWSWNWBBVMWCVJWSWN
       OWGWJACDHWNIWQKUPTVAVMWCWBALZXAWBOWGVMWCVKVHXBWGWKWIACDEGIKURQABCWBWNIJWQ
       VBTUTVCVD $.
+
+    $( Associative-type law for group subtraction and addition.  (Contributed
+       by NM, 19-Apr-2014.) $)
+    abladdsub $p |- ( ( G e. Abel /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+         ( ( X .+ Y ) .- Z ) = ( ( X .- Z ) .+ Y ) ) $=
+      ( cabl wcel w3a wa co wceq ablcom 3adant3r3 oveq1d syl3anc syl13anc simpl
+      cgrp ablgrp adantr simpr2 simpr1 simpr3 grpaddsubass grpsubcl 3eqtrd ) CK
+      LZEALZFALZGALZMZNZEFBOZGDOFEBOZGDOZFEGDOZBOZVAFBOZUQURUSGDULUMUNURUSPUOAB
+      CEFHIQRSUQCUCLZUNUMUOUTVBPULVDUPCUDUEZULUMUNUOUFZULUMUNUOUGZULUMUNUOUHZAB
+      CDFEGHIJUIUAUQULUNVAALZVBVCPULUPUBVFUQVDUMUOVIVEVGVHACDEGHJUJTABCFVAHIQTU
+      K $.
   $}
 
 
