@@ -26171,6 +26171,17 @@ $)
   $}
 
   ${
+    $d x ph $.
+    sbceqbid.1 $e |- ( ph -> A = B ) $.
+    sbceqbid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equality theorem for class substitution.  (Contributed by Thierry
+       Arnoux, 4-Sep-2018.) $)
+    sbceqbid $p |- ( ph -> ( [. A / x ]. ps <-> [. B / x ]. ch ) ) $=
+      ( cab wcel wsbc abbidv eleq12d df-sbc 3bitr4g ) AEBDIZJFCDIZJBDEKCDFKAEFP
+      QGABCDHLMBDENCDFNO $.
+  $}
+
+  ${
     $d y A $.  $d y ph $.  $d x y $.
     $( This is the closest we can get to ~ df-sbc if we start from ~ dfsbcq
        (see its comments) and ~ dfsbcq2 .  (Contributed by NM, 18-Nov-2008.)
