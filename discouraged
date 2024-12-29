@@ -16037,6 +16037,7 @@ New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfeu" is discouraged (0 uses).
 New usage of "dffr2ALT" is discouraged (0 uses).
 New usage of "dffun2OLD" is discouraged (0 uses).
+New usage of "dffun2OLDOLD" is discouraged (0 uses).
 New usage of "dffun3OLD" is discouraged (0 uses).
 New usage of "dffun6OLD" is discouraged (0 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
@@ -20147,7 +20148,8 @@ Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dffr2ALT" is discouraged (64 steps).
-Proof modification of "dffun2OLD" is discouraged (157 steps).
+Proof modification of "dffun2OLD" is discouraged (109 steps).
+Proof modification of "dffun2OLDOLD" is discouraged (157 steps).
 Proof modification of "dffun3OLD" is discouraged (72 steps).
 Proof modification of "dffun6OLD" is discouraged (10 steps).
 Proof modification of "dfid2OLD" is discouraged (3 steps).
