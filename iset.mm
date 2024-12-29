@@ -148041,6 +148041,47 @@ $)
             /\ ( ( n t x ) = n /\ ( x t n ) = n ) ) ) } $.
   $}
 
+  ${
+    $d b n p r t x y z .+ $.  $d b n p r t x y z .0. $.  $d r G $.
+    $d b n p r t x y z .x. $.  $d b n p r t x y z B $.  $d b n p r t x y z R $.
+    issrg.b $e |- B = ( Base ` R ) $.
+    issrg.g $e |- G = ( mulGrp ` R ) $.
+    issrg.p $e |- .+ = ( +g ` R ) $.
+    issrg.t $e |- .x. = ( .r ` R ) $.
+    issrg.0 $e |- .0. = ( 0g ` R ) $.
+    $( The predicate "is a semiring".  (Contributed by Thierry Arnoux,
+       21-Mar-2018.) $)
+    issrg $p |- ( R e. SRing <-> ( R e. CMnd /\ G e. Mnd
+      /\ A. x e. B ( A. y e. B A. z e. B
+       ( ( x .x. ( y .+ z ) ) = ( ( x .x. y ) .+ ( x .x. z ) )
+      /\ ( ( x .+ y ) .x. z ) = ( ( x .x. z ) .+ ( y .x. z ) ) )
+      /\ ( ( .0. .x. x ) = .0. /\ ( x .x. .0. ) = .0. ) ) ) ) $=
+      ( wcel cvv co wceq wa cfv vp vt vb vn vr csrg ccmn cmnd cv wral w3a simp1
+      elex elexd cmgp wsbc wb eleq1i bicomi a1i cbs wfn funfvex funfni eqeltrid
+      basfn mpan cplusg plusgslid slotex adantr mulrslid ad2antrr c0g ad3antrrr
+      cmulr fn0g simp-4r eqidd simpllr oveqd oveq123d eqeq12d anbi12d raleqbidv
+      simplr sbcied anbi2d eleq1d eqtr4di sbceq1d sbceqbid df-srg elrab2 3anass
+      simpr fveq2 3bitr4g pm5.21nii ) FUFOZFPOZFUGOZHUHOZAUIZBUIZCUIZEQZGQZXDXE
+      GQZXDXFGQZEQZRZXDXEEQZXFGQZXJXEXFGQZEQZRZSZCDUJZBDUJZIXDGQZIRZXDIGQZIRZSZ
+      SZADUJZUKZFUFUMYHFUGXBXCYGULUNXAXBFUOTZUHOZXDXEXFUAUIZQZUBUIZQZXDXEYMQZXD
+      XFYMQZYKQZRZXDXEYKQZXFYMQZYPXEXFYMQZYKQZRZSZCUCUIZUJZBUUEUJZUDUIZXDYMQZUU
+      HRZXDUUHYMQZUUHRZSZSZAUUEUJZUDIUPZUBGUPZUAEUPZUCDUPZSZSXBXCYGSZSWTYHXAUUT
+      UVAXBXAYJXCUUSYGYJXCUQXAXCYJHYIUHKURUSUTXAUURYGUCDPXADFVATZPJVAPVBXAUVBPO
+      ZVFUVCPFVAFVAVCVDVGVEXAUUEDRZSZUUQYGUAEPXAEPOUVDXAEFVHTZPLFVHPVIVJVEVKUVE
+      YKERZSZUUPYGUBGPXAGPOUVDUVGXAGFVPTZPMFVPPVLVJVEVMUVHYMGRZSZUUOYGUDIPXAIPO
+      UVDUVGUVJXAIFVNTZPNVNPVBXAUVLPOZVQUVMPFVNFVNVCVDVGVEVOUVKUUHIRZSZUUNYFAUU
+      EDXAUVDUVGUVJUVNVRZUVOUUGXTUUMYEUVOUUFXSBUUEDUVPUVOUUDXRCUUEDUVPUVOYRXLUU
+      CXQUVOYNXHYQXKUVOXDXDYLXGYMGUVHUVJUVNWFZUVOXDVSZUVOYKEXEXFUVEUVGUVJUVNVTZ
+      WAWBUVOYOXIYPXJYKEUVSUVOYMGXDXEUVQWAUVOYMGXDXFUVQWAZWBWCUVOYTXNUUBXPUVOYS
+      XMXFXFYMGUVQUVOYKEXDXEUVSWAUVOXFVSWBUVOYPXJUUAXOYKEUVSUVTUVOYMGXEXFUVQWAW
+      BWCWDWEWEUVOUUJYBUULYDUVOUUIYAUUHIUVOUUHIXDXDYMGUVQUVKUVNWPZUVRWBUWAWCUVO
+      UUKYCUUHIUVOXDXDUUHIYMGUVQUVRUWAWBUWAWCWDWDWEWGWGWGWGWDWHUEUIZUOTZUHOZUUO
+      UDUWBVNTZUPZUBUWBVPTZUPZUAUWBVHTZUPZUCUWBVATZUPZSUUTUEFUGUFUWBFRZUWDYJUWL
+      UUSUWMUWCYIUHUWBFUOWQWIUWMUWJUURUCUWKDUWMUWKUVBDUWBFVAWQJWJUWMUWHUUQUAUWI
+      EUWMUWIUVFEUWBFVHWQLWJUWMUWFUUPUBUWGGUWMUWGUVIGUWBFVPWQMWJUWMUUOUDUWEIUWM
+      UWEUVLIUWBFVNWQNWJWKWLWLWLWDABCUBUEUDUCUAWMWNXBXCYGWOWRWS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
