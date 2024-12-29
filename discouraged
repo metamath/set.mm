@@ -19401,6 +19401,7 @@ New usage of "uniprgOLD" is discouraged (0 uses).
 New usage of "unipwr" is discouraged (0 uses).
 New usage of "unipwrVD" is discouraged (0 uses).
 New usage of "unisnALT" is discouraged (0 uses).
+New usage of "unissbOLD" is discouraged (0 uses).
 New usage of "unitreslOLD" is discouraged (0 uses).
 New usage of "unop" is discouraged (5 uses).
 New usage of "unopadj" is discouraged (2 uses).
@@ -21410,6 +21411,7 @@ Proof modification of "uniprgOLD" is discouraged (80 steps).
 Proof modification of "unipwr" is discouraged (32 steps).
 Proof modification of "unipwrVD" is discouraged (41 steps).
 Proof modification of "unisnALT" is discouraged (146 steps).
+Proof modification of "unissbOLD" is discouraged (138 steps).
 Proof modification of "unitreslOLD" is discouraged (24 steps).
 Proof modification of "upgr0eopALT" is discouraged (55 steps).
 Proof modification of "upgr1eopALT" is discouraged (126 steps).
