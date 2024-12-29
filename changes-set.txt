@@ -93,6 +93,12 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 26-Dec-24 syl5bb    bitrid      compare to bitri or bitrd
+23-Dec-24 sn-iotaex iotaex      moved from SN's mathbox to main set.mm
+23-Dec-24 sn-iotassuni iotassuni moved from SN's mathbox to main set.mm
+23-Dec-24 sn-iotaval iotaval    moved from SN's mathbox to main set.mm
+23-Dec-24 sn-iotanul iotanul2   moved from SN's mathbox to main set.mm
+23-Dec-24 sn-iotauni iotauni2   moved from SN's mathbox to main set.mm
+23-Dec-24 iotavallem iotaval2   moved from SN's mathbox to main set.mm
 19-Dec-24 3albii    [same]      moved from PM's mathbox to main set.mm
 19-Dec-24 ssrel3    [same]      moved from PM's mathbox to main set.mm
 17-Dec-24 ffvelrnd  ffvelcdmd
