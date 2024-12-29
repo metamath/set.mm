@@ -147766,6 +147766,20 @@ $)
       BCDEGHITUAUBAUGGFDABCDEGHIJKMUCUDUE $.
   $}
 
+  ${
+    ablsubsub23.v $e |- V = ( Base ` G ) $.
+    ablsubsub23.m $e |- .- = ( -g ` G ) $.
+    $( Swap subtrahend and result of group subtraction.  (Contributed by NM,
+       14-Dec-2007.)  (Revised by AV, 7-Oct-2021.) $)
+    ablsubsub23 $p |- ( ( G e. Abel /\ ( A e. V /\ B e. V /\ C e. V ) ) ->
+                ( ( A .- B ) = C <-> ( A .- C ) = B ) ) $=
+      ( cabl wcel w3a wa cplusg cfv co wceq simpl simpr3 wb grpsubadd eqid cgrp
+      simpr2 ablcom syl3anc eqeq1d ablgrp sylan 3ancomb biimpi syl2an 3bitr4d )
+      DIJZAFJZBFJZCFJZKZLZCBDMNZOZAPZBCUSOZAPZABEOCPZACEOBPZURUTVBAURUMUPUOUTVB
+      PUMUQQUMUNUOUPRUMUNUOUPUCFUSDCBGUSUAZUDUEUFUMDUBJZUQVDVASDUGZFUSDEABCGVFH
+      TUHUMVGUNUPUOKZVEVCSUQVHUQVIUNUOUPUIUJFUSDEACBGVFHTUKUL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
