@@ -148107,6 +148107,27 @@ $)
       UKUJSCUGSUHSUKSUBUC $.
   $}
 
+  ${
+    $d x y z B $.  $d x y z R $.  $d x y z .x. $.  $d x y z X $.  $d x y z Y $.
+    $d x y z .+ $.  $d x y z Z $.
+    srgi.b $e |- B = ( Base ` R ) $.
+    srgi.p $e |- .+ = ( +g ` R ) $.
+    srgi.t $e |- .x. = ( .r ` R ) $.
+    $( Properties of a semiring.  (Contributed by NM, 26-Aug-2011.)  (Revised
+       by Mario Carneiro, 6-Jan-2015.)  (Revised by Thierry Arnoux,
+       1-Apr-2018.) $)
+    srgi $p |- ( ( R e. SRing /\ ( X e. B /\ Y e. B /\ Z e. B ) )
+           -> ( ( X .x. ( Y .+ Z ) ) = ( ( X .x. Y ) .+ ( X .x. Z ) )
+                /\ ( ( X .+ Y ) .x. Z ) = ( ( X .x. Z ) .+ ( Y .x. Z ) ) ) ) $=
+      ( vx vy vz wcel w3a wa co wceq cv wral csrg c0g ccmn cmgp cmnd eqid issrg
+      cfv simp3bi r19.21bi simpld 3ad2antr1 simpr2 sylc simpr3 caovdig caovdirg
+      rsp simprd jca ) CUANZEANFANGANOPEFGBQDQEFDQEGDQZBQREFBQGDQVBFGDQBQRVAKLM
+      EFGABDBAVAKSZANZLSZANZMSZANZOPZVCVEVGBQDQVCVEDQVCVGDQZBQRZVCVEBQVGDQVJVEV
+      GDQBQRZVIVKVLPZMATZVHVMVIVNLATZVFVNVAVFVDVOVHVAVDPVOCUBUHZVCDQVPRVCVPDQVP
+      RPZVAVOVQPZKAVACUCNCUDUHZUENVRKATKLMABCDVSVPHVSUFIJVPUFUGUIUJUKULVAVDVFVH
+      UMVNLAURUNVAVDVFVHUOVMMAURUNZUKUPVAKLMEFGABDBAVIVKVLVTUSUQUT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
