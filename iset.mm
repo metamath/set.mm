@@ -148000,6 +148000,38 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Semirings
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c SRing $.
+
+  $( Extend class notation with the class of all semirings. $)
+  csrg $a class SRing $.
+
+  ${
+    $d f n p r t x y z $.
+    $( Define class of all semirings.  A semiring is a set equipped with two
+       everywhere-defined internal operations, whose first one is an additive
+       commutative monoid structure and the second one is a multiplicative
+       monoid structure, and where multiplication is (left- and right-)
+       distributive over addition.  Compared to the definition of a ring, this
+       definition also adds that the additive identity is an absorbing element
+       of the multiplicative law, as this cannot be deduced from distributivity
+       alone.  Definition of [Golan] p. 1.  Note that our semirings are unital.
+       Such semirings are sometimes called "rigs", being "rings without
+       negatives".  (Contributed by Thierry Arnoux, 21-Mar-2018.) $)
+    df-srg $a |- SRing = { f e. CMnd | ( ( mulGrp ` f ) e. Mnd /\
+        [. ( Base ` f ) / r ]. [. ( +g ` f ) / p ]. [. ( .r ` f ) / t ].
+        [. ( 0g ` f ) / n ]. A. x e. r ( A. y e. r A. z e. r
+           ( ( x t ( y p z ) ) = ( ( x t y ) p ( x t z ) )
+            /\ ( ( x p y ) t z ) = ( ( x t z ) p ( y t z ) ) )
+            /\ ( ( n t x ) = n /\ ( x t n ) = n ) ) ) } $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -165231,6 +165263,9 @@ htmldef "Abel" as
 htmldef "mulGrp" as "mulGrp";
   althtmldef "mulGrp" as "mulGrp";
   latexdef "mulGrp" as "\mathrm{mulGrp}";
+htmldef "SRing" as "SRing";
+  althtmldef "SRing" as "SRing";
+  latexdef "SRing" as "\mathrm{SRing}";
 htmldef "1r" as "<IMG SRC='_1r.gif' WIDTH=13 HEIGHT=19 ALT=' 1r' TITLE='1r'>";
   althtmldef "1r" as "1<SUB>r</SUB>";
   latexdef "1r" as "1_\mathrm{r}";
