@@ -148140,6 +148140,19 @@ $)
       IZEAIZJZDEBKLZMLZNZUNOLZDECNAUMUNPIZDUQIEUQIUPUQIUJUKURULBUNUNQZUARUMDAUQ
       UJUKULUBUJUKAUQSULABUNHUSFUCRZTUMEAUQUJUKULUDUTTUQUOUNDEUQQUOQUEUFUMCUODE
       UJUKCUOSULBCUNHUSGUGRUHUTUI $.
+
+    $( Associative law for the multiplication operation of a semiring.
+       (Contributed by NM, 27-Aug-2011.)  (Revised by Mario Carneiro,
+       6-Jan-2015.)  (Revised by Thierry Arnoux, 1-Apr-2018.) $)
+    srgass $p |- ( ( R e. SRing /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                      ( ( X .x. Y ) .x. Z ) = ( X .x. ( Y .x. Z ) ) ) $=
+      ( csrg wcel w3a wa cfv co wceq eqid adantr eleqtrd oveqd eqtrd cplusg cbs
+      cmgp srgmgp simpr1 mgpbasg simpr2 simpr3 mndass syl13anc mgpplusgg oveq1d
+      cmnd oveq2d 3eqtr4d ) BIJZDAJZEAJZFAJZKZLZDEBUCMZUAMZNZFVCNZDEFVCNZVCNZDE
+      CNZFCNZDEFCNZCNZVAVBUMJZDVBUBMZJEVMJFVMJVEVGOUPVLUTBVBVBPZUDQVADAVMUPUQUR
+      USUEUPAVMOUTABVBIVNGUFQZRVAEAVMUPUQURUSUGVORVAFAVMUPUQURUSUHVORVMVCVBDEFV
+      MPVCPUIUJVAVIVHFVCNVEVACVCVHFUPCVCOUTBCVBIVNHUKQZSVAVHVDFVCVACVCDEVPSULTV
+      AVKDVJVCNVGVACVCDVJVPSVAVJVFDVCVACVCEFVPSUNTUO $.
   $}
 
 
