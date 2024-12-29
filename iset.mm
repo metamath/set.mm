@@ -148128,6 +148128,20 @@ $)
       UMVNLAURUNVAVDVFVHUOVMMAURUNZUKUPVAKLMEFGABDBAVIVKVLVTUSUQUT $.
   $}
 
+  ${
+    srgcl.b $e |- B = ( Base ` R ) $.
+    srgcl.t $e |- .x. = ( .r ` R ) $.
+    $( Closure of the multiplication operation of a semiring.  (Contributed by
+       NM, 26-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.)  (Revised by
+       Thierry Arnoux, 1-Apr-2018.) $)
+    srgcl $p |- ( ( R e. SRing /\ X e. B /\ Y e. B ) -> ( X .x. Y ) e. B ) $=
+      ( csrg wcel w3a cmgp cfv cplusg co cbs cmnd eqid 3ad2ant1 wceq eleqtrd
+      srgmgp simp2 mgpbasg simp3 mndcl syl3anc mgpplusgg oveqd 3eltr4d ) BHIZDA
+      IZEAIZJZDEBKLZMLZNZUNOLZDECNAUMUNPIZDUQIEUQIUPUQIUJUKURULBUNUNQZUARUMDAUQ
+      UJUKULUBUJUKAUQSULABUNHUSFUCRZTUMEAUQUJUKULUDUTTUQUOUNDEUQQUOQUEUFUMCUODE
+      UJUKCUOSULBCUNHUSGUGRUHUTUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
