@@ -148096,6 +148096,15 @@ $)
        21-Mar-2018.) $)
     srgmnd $p |- ( R e. SRing -> R e. Mnd ) $=
       ( csrg wcel ccmn cmnd srgcmn cmnmnd syl ) ABCADCAECAFAGH $.
+
+    srgmgp.g $e |- G = ( mulGrp ` R ) $.
+    $( A semiring is a monoid under multiplication.  (Contributed by Thierry
+       Arnoux, 21-Mar-2018.) $)
+    srgmgp $p |- ( R e. SRing -> G e. Mnd ) $=
+      ( vx vy vz csrg wcel ccmn cmnd cv cplusg cfv co cmulr wceq cbs wral eqid
+      wa c0g issrg simp2bi ) AGHAIHBJHDKZEKZFKZALMZNAOMZNUDUEUHNUDUFUHNZUGNPUDU
+      EUGNUFUHNUIUEUFUHNUGNPTFAQMZREUJRAUAMZUDUHNUKPUDUKUHNUKPTTDUJRDEFUJUGAUHB
+      UKUJSCUGSUHSUKSUBUC $.
   $}
 
 
