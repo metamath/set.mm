@@ -148082,6 +148082,22 @@ $)
       UWEUVLIUWBFVNWQNWJWKWLWLWLWDABCUBUEUDUCUAWMWNXBXCYGWOWRWS $.
   $}
 
+  ${
+    $d x y z R $.
+    $( A semiring is a commutative monoid.  (Contributed by Thierry Arnoux,
+       21-Mar-2018.) $)
+    srgcmn $p |- ( R e. SRing -> R e. CMnd ) $=
+      ( vx vy vz csrg wcel ccmn cmgp cfv cmnd cv cplusg cmulr wceq cbs wral c0g
+      co wa eqid issrg simp1bi ) AEFAGFAHIZJFBKZCKZDKZALIZRAMIZRUDUEUHRUDUFUHRZ
+      UGRNUDUEUGRUFUHRUIUEUFUHRUGRNSDAOIZPCUJPAQIZUDUHRUKNUDUKUHRUKNSSBUJPBCDUJ
+      UGAUHUCUKUJTUCTUGTUHTUKTUAUB $.
+
+    $( A semiring is a monoid.  (Contributed by Thierry Arnoux,
+       21-Mar-2018.) $)
+    srgmnd $p |- ( R e. SRing -> R e. Mnd ) $=
+      ( csrg wcel ccmn cmnd srgcmn cmnmnd syl ) ABCADCAECAFAGH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
