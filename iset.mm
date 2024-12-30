@@ -146445,6 +146445,778 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Group multiple operation
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  The "group multiple" operation (if the group is multiplicative, also called
+  "group power" or "group exponentiation" operation), can be defined for
+  arbitrary magmas, if the multiplier/exponent is a nonnegative integer.  See
+  also the definition in [Lang] p. 6, where an element ` x `(of a monoid) to
+  the power of a nonnegative integer ` n ` is defined and denoted by ` x ^ n `.
+  Definition ~ df-mulg , however, defines the group multiple for arbitrary
+  (i.e. also negative) integers.  This is meaningful for groups only, and
+  requires Definition ~ df-minusg of the inverse operation ` invg ` .
+
+$)
+
+  $c .g $.
+
+  $( Extend class notation with a function mapping a group operation to the
+     multiple/power operation for the magma/group. $)
+  cmg $a class .g $.
+
+  ${
+    $d g n s x $.
+    $( Define the group multiple function, also known as group exponentiation
+       when viewed multiplicatively.  (Contributed by Mario Carneiro,
+       11-Dec-2014.) $)
+    df-mulg $a |- .g = ( g e. _V |-> ( n e. ZZ , x e. ( Base ` g ) |->
+    if ( n = 0 , ( 0g ` g ) , [_ seq 1 ( ( +g ` g ) , ( NN X. { x } ) ) / s ]_
+      if ( 0 < n , ( s ` n ) , ( ( invg ` g ) ` ( s ` -u n ) ) ) ) ) ) $.
+  $}
+
+  ${
+    $d x w .0. n $.  $d x w B n $.  $d x w .+ n s $.  $d x w n G s $.
+    $d x w n I s $.  $d n x N $.  $d n x S $.  $d n x X $.
+    mulgval.b $e |- B = ( Base ` G ) $.
+    mulgval.p $e |- .+ = ( +g ` G ) $.
+    mulgval.o $e |- .0. = ( 0g ` G ) $.
+    mulgval.i $e |- I = ( invg ` G ) $.
+    mulgval.t $e |- .x. = ( .g ` G ) $.
+    $( Group multiple (exponentiation) operation.  (Contributed by Mario
+       Carneiro, 11-Dec-2014.) $)
+    mulgfvalg $p |- ( G e. V -> .x. = ( n e. ZZ , x e. B |->
+      if ( n = 0 , .0. , if ( 0 < n ,
+        ( seq 1 ( .+ , ( NN X. { x } ) ) ` n ) ,
+        ( I ` ( seq 1 ( .+ , ( NN X. { x } ) ) ` -u n ) ) ) ) ) ) $=
+      ( vs wcel cfv cz cbs cvv vw cmg cv cc0 wceq clt wbr csn cxp cseq cneg cif
+      cn c1 cmpo c0g cplusg cminusg csb df-mulg eqidd fveq2 eqtr4di seqex wa id
+      a1i seqeq2d sylan9eqr fveq1d simpl fveq2d fveq12d ifeq12d mpoeq123dv elex
+      csbied zex basfn funfvex funfni sylancr eqeltrid mpoexga fvmptd3 eqtrid
+      wfn ) FHPZDFUBQEARBEUCZUDUEZIUDWIUFUGZWICUMAUCUHUIZUNUJZQZWIUKZWMQZGQZULZ
+      ULZUOZNWHUAFEARUAUCZSQZWJXAUPQZOXAUQQZWLUNUJZWKWIOUCZQZWOXFQZXAURQZQZULZU
+      SZULZUOWTTUBTAUAEOUTXAFUEZEARXBXMRBWSXNRVAXNXBFSQZBXAFSVBJVCXNWJXCIXLWRXN
+      XCFUPQIXAFUPVBLVCXNOXEXKWRTXETPXNXDWLUNVDVGXNXFXEUEZVEZWKXGWNXJWQXQWIXFWM
+      XPXNXFXEWMXPVFXNXDCWLUNXNXDFUQQCXAFUQVBKVCVHVIZVJXQXHWPXIGXQXIFURQGXQXAFU
+      RXNXPVKVLMVCXQWOXFWMXRVJVMVNVQVNVOFHVPZWHRTPBTPWTTPVRWHBXOTJWHSTWGFTPXOTP
+      ZVSXSXTTFSFSVTWAWBWCEARBWSTTWDWBWEWF $.
+
+    mulgval.s $e |- S = seq 1 ( .+ , ( NN X. { X } ) ) $.
+
+    ${
+      $d .+ u v $.  $d B u v $.  $d G u v $.  $d X u v $.
+      $( Value of the group multiple (exponentiation) operation.  (Contributed
+         by Mario Carneiro, 11-Dec-2014.) $)
+      mulgval $p |- ( ( N e. ZZ /\ X e. B ) -> ( N .x. X ) = if ( N = 0 , .0. ,
+          if ( 0 < N , ( S ` N ) , ( I ` ( S ` -u N ) ) ) ) ) $=
+        ( wcel wa cvv cc0 cn vn vx vu vv cz co wceq clt wbr cfv cneg cif basmex
+        adantl cv csn cxp cseq mulgfvalg simpl eqeq1d breq2d simpr sneqd xpeq2d
+        c1 cmpo seqeq3d eqtr4di fveq12d negeqd fveq2d ifbieq12d ifbieq2d simpll
+        simplr c0g fn0g funfvex funfni mpan eqeltrid ad2antlr wn nnuz fvconst2g
+        wfn wf 1zzd eqeltrd elexd adantlr simprl cplusg plusgslid slotex simprr
+        ovexg syl3anc feq1i sylibr ad5ant23 simp-4l sylanbrc ffvelrnd grpinvfng
+        seqf elnnz basfn fnex syl2anc ad3antlr znegcl ad4antr ztri3or0 ecase23d
+        cbs w3o cr zre lt0neg1d mpbid fvexg wdc 0zd zdclt ifcldadc zdceq ovmpod
+        simplll mpdan ) GUEPZHAPZQZERPZGHDUFGSUGZISGUHUIZGCUJZGUKZCUJZFUJZULZUL
+        ZUGYMYOYLHAEJUMUNYNYOQZUAUBGHUEAUAUOZSUGZISUUEUHUIZUUEBTUBUOZUPZUQZVFUR
+        ZUJZUUEUKZUUKUJZFUJZULZULZUUCDRYODUAUBUEAUUQVGUGYNUBABDUAEFRIJKLMNUSUNU
+        UEGUGZUUHHUGZQZUUQUUCUGUUDUUTUUFYPUUPUUBIUUTUUEGSUURUUSUTZVAUUTUUGYQUUL
+        UUOYRUUAUUTUUEGSUHUVAVBUUTUUEGUUKCUUTUUKBTHUPZUQZVFURZCUUTUUJUVCBVFUUTU
+        UIUVBTUUTUUHHUURUUSVCVDVEVHOVIZUVAVJUUTUUNYTFUUTUUMYSUUKCUVEUUTUUEGUVAV
+        KVJVLVMVNUNYLYMYOVOZYLYMYOVPUUDYPIUUBRYOIRPYNYPYOIEVQUJZRLVQRWGYOUVGRPZ
+        VRUVHREVQEVQVSVTWAWBWCUUDYPWDZQZYQYRUUARUVJYQQZTRGCYMYOTRCWHZYLUVIYQYMY
+        OQZTRUVDWHUVLUVMUCUDBRUVCVFTWEUVMWIYMUCUOZTPZUVNUVCUJZRPYOYMUVOQZUVPAUV
+        QUVPHATHUVNAWFYMUVOUTWJWKWLUVMUVNRPZUDUOZRPZQZQUVRBRPZUVTUVNUVSBUFRPUVM
+        UVRUVTWMYOUWBYMUWAYOBEWNUJRKEWNRWOWPWBWCUVMUVRUVTWQUVNUVSBRRRWRWSXGTRCU
+        VDOWTXAZXBUVKYLYQGTPYLYMYOUVIYQXCUVJYQVCGXHXDXEUVJYQWDZQZFRPZYTRPUUARPY
+        OUWFYNUVIUWDYOFAWGARPUWFAEFRJMXFYOAEXQUJZRJXQRWGYOUWGRPZXIUWHREXQEXQVSV
+        TWAWBARFXJXKXLUWETRYSCYMYOUVLYLUVIUWDUWCXBUWEYSUEPZSYSUHUIZYSTPYLUWIYMY
+        OUVIUWDGXMXNUWEGSUHUIZUWJUWEUWKYPYQUUDUVIUWDVPUVJUWDVCYLUWKYPYQXRYMYOUV
+        IUWDGXOXNXPUWEGYLGXSPYMYOUVIUWDGXTXNYAYBYSXHXDXEYTFRRYCXKUVJSUEPZYLYQYD
+        UVJYEYLYMYOUVIYJSGYFXKYGUUDYLUWLYPYDUVFUUDYEGSYHXKYGYIYK $.
+    $}
+  $}
+
+  ${
+    $d B u v n x $.  $d G u v n x $.  $d V u v n x $.
+    mulgfn.b $e |- B = ( Base ` G ) $.
+    mulgfn.t $e |- .x. = ( .g ` G ) $.
+    $( Functionality of the group multiple operation.  (Contributed by Mario
+       Carneiro, 21-Mar-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+    mulgfng $p |- ( G e. V -> .x. Fn ( ZZ X. B ) ) $=
+      ( vn vx wcel cz wfn cv cc0 c0g cfv cn cvv wa syl ad2antrr vu cxp wceq clt
+      vv wbr cplusg csn c1 cseq cneg cminusg cmpo wral elex fn0g funfvex funfni
+      cif mpan wn wf nnuz 1zzd fvconst2g simpl eqeltrd adantll simprl plusgslid
+      elexd co slotex simprr ovexg syl3anc seqf adantrl simpr sylanbrc ffvelrnd
+      elnnz eqid grpinvfng basfn eqeltrid fnex syl2anc ad3antrrr znegcld simplr
+      cbs w3o ztri3or0 ecase23d zred lt0neg1d mpbid fvexg wdc 0zd simplrl zdclt
+      cr ifcldadc zdceq ralrimivva fnmpo mulgfvalg fneq1d mpbird ) CDIZBJAUBZKG
+      HJAGLZMUCZCNOZMXNUDUFZXNCUGOZPHLZUHUBZUIUJZOZXNUKZYAOZCULOZOZUSZUSZUMZXMK
+      ZXLYHQIZHAUNGJUNYJXLYKGHJAXLXNJIZXSAIZRZRZXOXPYGQXLXPQIZYNXOXLCQIZYPCDUOZ
+      NQKYQYPUPYPQCNCNUQURUTSTYOXOVAZRZXQYBYFQYTXQRZPQXNYAYOPQYAVBZYSXQXLYMUUBY
+      LXLYMRZUAUEXRQXTUIPVCUUCVDYMUALZPIZUUDXTOZQIXLYMUUERZUUFAUUGUUFXSAPXSUUDA
+      VEYMUUEVFVGVKVHUUCUUDQIZUELZQIZRZRUUHXRQIZUUJUUDUUIXRVLQIUUCUUHUUJVIXLUUL
+      YMUUKCUGDVJVMTUUCUUHUUJVNUUDUUIXRQQQVOVPVQVRZTUUAYLXQXNPIYOYLYSXQXLYLYMVI
+      ZTYTXQVSXNWBVTWAYTXQVAZRZYEQIZYDQIYFQIXLUUQYNYSUUOXLYEAKAQIZUUQACYEDEYEWC
+      ZWDXLYQUURYRYQACWLOZQEWLQKYQUUTQIZWEUVAQCWLCWLUQURUTWFSAQYEWGWHWIUUPPQYCY
+      AYOUUBYSUUOUUMTUUPYCJIZMYCUDUFZYCPIYOUVBYSUUOYOXNUUNWJTUUPXNMUDUFZUVCUUPU
+      VDXOXQYOYSUUOWKYTUUOVSYOUVDXOXQWMZYSUUOYOYLUVEUUNXNWNSTWOUUPXNYOXNXDIYSUU
+      OYOXNUUNWPTWQWRYCWBVTWAYDYEQQWSWHYTMJIZYLXQWTYTXAXLYLYMYSXBMXNXCWHXEYOYLU
+      VFXOWTUUNYOXAXNMXFWHXEXGGHJAYHYIQYIWCXHSXLXMBYIHAXRBGCYEDXPEXRWCXPWCUUSFX
+      IXJXK $.
+  $}
+
+  ${
+    mulg0.b $e |- B = ( Base ` G ) $.
+    mulg0.o $e |- .0. = ( 0g ` G ) $.
+    mulg0.t $e |- .x. = ( .g ` G ) $.
+    $( Group multiple (exponentiation) operation at zero.  (Contributed by
+       Mario Carneiro, 11-Dec-2014.) $)
+    mulg0 $p |- ( X e. B -> ( 0 .x. X ) = .0. ) $=
+      ( cc0 cz wcel co wceq 0z wa clt wbr cfv cif eqid cplusg csn cxp cseq cneg
+      cn c1 cminusg mulgval iftruei eqtrdi mpan ) IJKZDAKZIDBLZEMNUMUNOUOIIMZEI
+      IPQICUARZUFDUBUCUGUDZRIUEURRCUHRZRSZSEAUQURBCUSIDEFUQTGUSTHURTUIUPEUTITUJ
+      UKUL $.
+  $}
+
+  ${
+    mulgnn.b $e |- B = ( Base ` G ) $.
+    mulgnn.p $e |- .+ = ( +g ` G ) $.
+    mulgnn.t $e |- .x. = ( .g ` G ) $.
+    mulgnn.s $e |- S = seq 1 ( .+ , ( NN X. { X } ) ) $.
+    $( Group multiple (exponentiation) operation at a positive integer.
+       (Contributed by Mario Carneiro, 11-Dec-2014.) $)
+    mulgnn $p |- ( ( N e. NN /\ X e. B ) -> ( N .x. X ) = ( S ` N ) ) $=
+      ( cn wcel wa cc0 wceq cfv cif eqid eqtrd c0g clt wbr cneg cminusg mulgval
+      co cz nnz sylan nnne0 neneqd iffalsed nngt0 iftrued adantr ) FLMZGAMZNFGD
+      UGZFOPZEUAQZOFUBUCZFCQZFUDCQEUEQZQZRZRZVCUQFUHMURUSVGPFUIABCDEVDFGVAHIVAS
+      VDSJKUFUJUQVGVCPURUQVGVFVCUQUTVAVFUQFOFUKULUMUQVBVCVEFUNUOTUPT $.
+  $}
+
+  ${
+    mulg1.b $e |- B = ( Base ` G ) $.
+    mulg1.m $e |- .x. = ( .g ` G ) $.
+    ${
+      $d B u v $.  $d G u v $.  $d X u v $.
+      $( Group multiple (exponentiation) operation at one.  (Contributed by
+         Mario Carneiro, 11-Dec-2014.) $)
+      mulg1 $p |- ( X e. B -> ( 1 .x. X ) = X ) $=
+        ( vu vv wcel c1 co cplusg cfv cn wceq 1nn eqid cvv cv wa csn cxp mulgnn
+        cseq mpan 1zzd cuz elnnuz fvconst2g simpl eqeltrd elexd sylan2br simprl
+        basmex plusgslid slotex adantr simprr ovexg syl3anc seq3-1 mpan2 3eqtrd
+        syl ) DAIZJDBKZJCLMZNDUAUBZJUDZMZJVIMZDJNIZVFVGVKOPAVHVJBCJDEVHQFVJQUCU
+        EVFGHVHRVIJVFUFGSZJUGMIVFVNNIZVNVIMZRIVNUHVFVOTZVPAVQVPDANDVNAUIVFVOUJU
+        KULUMVFVNRIZHSZRIZTZTVRVHRIZVTVNVSVHKRIVFVRVTUNVFWBWAVFCRIWBDACEUOCLRUP
+        UQVEURVFVRVTUSVNVSVHRRRUTVAVBVFVMVLDOPNDJAUIVCVD $.
+    $}
+
+    ${
+      $d .+ u v $.  $d B u v $.  $d N u v $.  $d X u v $.
+      mulgnnp1.p $e |- .+ = ( +g ` G ) $.
+      $( Group multiple (exponentiation) operation at a successor.
+         (Contributed by Mario Carneiro, 11-Dec-2014.) $)
+      mulgnnp1 $p |- ( ( N e. NN /\ X e. B ) ->
+          ( ( N + 1 ) .x. X ) = ( ( N .x. X ) .+ X ) ) $=
+        ( vu vv cn wcel wa c1 co cfv cvv simpl nnuz caddc csn cxp cseq eleqtrdi
+        cv simplr simpr eleqtrrdi fvconst2g eqeltrd elexd syl2anc simprl basmex
+        cuz cplusg plusgslid slotex eqeltrid syl ad2antlr simprr syl3anc seq3p1
+        ovexg wceq id peano2nn syl2anr oveq2d eqtrd mulgnn sylan oveq1d 3eqtr4d
+        eqid ) ELMZFAMZNZEOUAPZBLFUBUCZOUDZQZEWCQZFBPZWAFCPZEFCPZFBPVTWDWEWAWBQ
+        ZBPWFVTJKBRWBOEVTELOUPQZVRVSSTUEVTJUFZWJMZNZVSWKLMZWKWBQZRMVRVSWLUGWMWK
+        WJLVTWLUHTUIVSWNNZWOAWPWOFALFWKAUJVSWNSUKULUMVTWKRMZKUFZRMZNZNWQBRMZWSW
+        KWRBPRMVTWQWSUNVSXAVRWTVSDRMZXAFADGUOXBBDUQQRIDUQRURUSUTVAVBVTWQWSVCWKW
+        RBRRRVFVDVEVTWIFWEBVSVSWALMZWIFVGVRVSVHEVIZLFWAAUJVJVKVLVRXCVSWGWDVGXDA
+        BWCCDWAFGIHWCVQZVMVNVTWHWEFBABWCCDEFGIHXEVMVOVP $.
+
+      $( Group multiple (exponentiation) operation at two.  (Contributed by
+         Mario Carneiro, 15-Oct-2015.) $)
+      mulg2 $p |- ( X e. B -> ( 2 .x. X ) = ( X .+ X ) ) $=
+        ( wcel c2 co c1 caddc df-2 oveq1i cn wceq 1nn mulgnnp1 mpan mulg1 eqtrd
+        eqtrid oveq1d ) EAIZJECKZLECKZEBKZEEBKUEUFLLMKZECKZUHJUIECNOLPIUEUJUHQR
+        ABCDLEFGHSTUCUEUGEEBACDEFGUAUDUB $.
+    $}
+
+    mulgnegnn.i $e |- I = ( invg ` G ) $.
+    $( Group multiple (exponentiation) operation at a negative integer.
+       (Contributed by Mario Carneiro, 11-Dec-2014.) $)
+    mulgnegnn $p |- ( ( N e. NN /\ X e. B ) ->
+      ( -u N .x. X ) = ( I ` ( N .x. X ) ) ) $=
+      ( cn wcel cneg cfv co wceq fveq2d cc0 clt wbr eqid wa cplusg csn cxp cseq
+      c1 nncn negnegd adantr c0g cif cz nnnegz mulgval sylan wne wn nnne0 cc wb
+      negeq0 necon3abid syl mpbid iffalsed cr renegcld nngt0 lt0neg2d wi ltnsym
+      nnre 0re mpan2 sylc eqtrd mulgnn 3eqtr4d ) EJKZFAKZUAZELZLZCUBMZJFUCUDUFU
+      EZMZDMZEWEMZDMWBFBNZEFBNZDMWAWFWHDWAWCEWEVSWCEOVTVSEEUGZUHUIPPWAWIWBQOZCU
+      JMZQWBRSZWBWEMZWGUKZUKZWGVSWBULKVTWIWQOEUMAWDWEBCDWBFWMGWDTZWMTIHWETZUNUO
+      VSWQWGOVTVSWQWPWGVSWLWMWPVSEQUPZWLUQZEURVSEUSKZWTXAUTWKXBWLEQEVAVBVCVDVEV
+      SWNWOWGVSWBVFKZWBQRSZWNUQZVSEEVLZVGVSQERSXDEVHVSEXFVIVDXCQVFKXDXEVJVMWBQV
+      KVNVOVEVPUIVPWAWJWHDAWDWEBCEFGWRHWSVQPVR $.
+  $}
+
+  ${
+    mulgnn0p1.b $e |- B = ( Base ` G ) $.
+    mulgnn0p1.t $e |- .x. = ( .g ` G ) $.
+    mulgnn0p1.p $e |- .+ = ( +g ` G ) $.
+    $( Group multiple (exponentiation) operation at a successor, extended to
+       ` NN0 ` .  (Contributed by Mario Carneiro, 11-Dec-2014.) $)
+    mulgnn0p1 $p |- ( ( G e. Mnd /\ N e. NN0 /\ X e. B ) ->
+      ( ( N + 1 ) .x. X ) = ( ( N .x. X ) .+ X ) ) $=
+      ( cmnd wcel c1 caddc co wceq cc0 wa adantl oveq1d oveq1 cn0 w3a cn simpl3
+      simpr mulgnnp1 syl2anc c0g eqid mndlid mulg0 mulg1 3eqtr4rd 3adant2 1e0p1
+      cfv eqtr4di eqeq12d syl5ibrcom imp wo simp2 elnn0 sylib mpjaodan ) DJKZEU
+      AKZFAKZUBZEUCKZELMNZFCNZEFCNZFBNZOZEPOZVIVJQVJVHVOVIVJUEVFVGVHVJUDABCDEFG
+      HIUFUGVIVPVOVIVOVPLFCNZPFCNZFBNZOZVFVHVTVGVFVHQZDUHUPZFBNFVSVQABDFWBGIWBU
+      IZUJWAVRWBFBVHVRWBOVFACDFWBGWCHUKRSVHVQFOVFACDFGHULRUMUNVPVLVQVNVSVPVKLFC
+      VPVKPLMNLEPLMTUOUQSVPVMVRFBEPFCTSURUSUTVIVGVJVPVAVFVGVHVBEVCVDVE $.
+  $}
+
+  ${
+    $d x y .+ $.  $d x y B $.  $d x y G $.  $d x I $.  $d x y N $.  $d x y S $.
+    $d x y ph $.  $d x .x. $.  $d x y X $.
+    mulgnnsubcl.b $e |- B = ( Base ` G ) $.
+    mulgnnsubcl.t $e |- .x. = ( .g ` G ) $.
+    mulgnnsubcl.p $e |- .+ = ( +g ` G ) $.
+    mulgnnsubcl.g $e |- ( ph -> G e. V ) $.
+    mulgnnsubcl.s $e |- ( ph -> S C_ B ) $.
+    mulgnnsubcl.c $e |- ( ( ph /\ x e. S /\ y e. S ) -> ( x .+ y ) e. S ) $.
+    $( Closure of the group multiple (exponentiation) operation in a
+       subsemigroup.  (Contributed by Mario Carneiro, 10-Jan-2015.) $)
+    mulgnnsubcl $p |- ( ( ph /\ N e. NN /\ X e. S ) -> ( N .x. X ) e. S ) $=
+      ( cn wcel co w3a csn cxp c1 cseq cfv wceq simp2 wss 3ad2ant1 simp3 sseldd
+      eqid mulgnn syl2anc nnuz 1zzd cv fvconst2g sylan simpl3 eqeltrd 3ad2antl1
+      wa 3expb seqf ffvelrnd ) AIRSZKFSZUAZIKGTZIERKUBUCZUDUEZUFZFVJVHKDSVKVNUG
+      AVHVIUHZVJFDKAVHFDUIVIPUJAVHVIUKZULDEVMGHIKLNMVMUMUNUOVJRFIVMVJBCEFVLUDRU
+      PVJUQVJBURZRSZVDVQVLUFZKFVJVIVRVSKUGVPRKVQFUSUTAVHVIVRVAVBAVHVQFSZCURZFSZ
+      VDVQWAETFSZVIAVTWBWCQVEVCVFVOVGVB $.
+
+    mulgnn0subcl.z $e |- .0. = ( 0g ` G ) $.
+    mulgnn0subcl.c $e |- ( ph -> .0. e. S ) $.
+    $( Closure of the group multiple (exponentiation) operation in a submonoid.
+       (Contributed by Mario Carneiro, 10-Jan-2015.) $)
+    mulgnn0subcl $p |- ( ( ph /\ N e. NN0 /\ X e. S ) -> ( N .x. X ) e. S ) $=
+      ( cn0 wcel w3a cn co wceq mulgnnsubcl 3expa an32s 3adantl2 oveq1 3ad2ant1
+      cc0 wa wss simp3 sseldd mulg0 syl sylan9eqr adantr eqeltrd wo simp2 elnn0
+      sylib mpjaodan ) AIUAUBZKFUBZUCZIUDUBZIKGUEZFUBZIUMUFZAVIVKVMVHAVKVIVMAVK
+      VIVMABCDEFGHIJKMNOPQRUGUHUIUJVJVNUNVLLFVNVJVLUMKGUEZLIUMKGUKVJKDUBVOLUFVJ
+      FDKAVHFDUOVIQULAVHVIUPUQDGHKLMSNURUSUTVJLFUBZVNAVHVPVITULVAVBVJVHVKVNVCAV
+      HVIVDIVEVFVG $.
+
+    mulgsubcl.i $e |- I = ( invg ` G ) $.
+    mulgsubcl.c $e |- ( ( ph /\ x e. S ) -> ( I ` x ) e. S ) $.
+    $( Closure of the group multiple (exponentiation) operation in a subgroup.
+       (Contributed by Mario Carneiro, 10-Jan-2015.) $)
+    mulgsubcl $p |- ( ( ph /\ N e. ZZ /\ X e. S ) -> ( N .x. X ) e. S ) $=
+      ( cz wcel w3a cn0 co cr cn wa mulgnn0subcl 3expa an32s 3adantl2 cfv simp2
+      cneg adantr zcnd negnegd oveq1d wceq id wss 3ad2ant1 simp3 sseldd syl2anr
+      mulgnegnn eqtr3d cv fveq2 eleq1d wral mulgnnsubcl rspcdva eqeltrd adantrl
+      ralrimiva wo elznn0nn sylib mpjaodan ) AJUDUEZLFUEZUFZJUGUEZJLGUHZFUEZJUI
+      UEZJURZUJUEZUKZAWFWHWJWEAWHWFWJAWHWFWJABCDEFGHJKLMNOPQRSTUAULUMUNUOWGWMWJ
+      WKWGWMUKZWIWLLGUHZIUPZFWOWLURZLGUHZWIWQWOWRJLGWOJWOJWGWEWMAWEWFUQZUSUTVAV
+      BWMWMLDUEWSWQVCWGWMVDWGFDLAWEFDVEWFRVFAWEWFVGVHDGHIWLLNOUBVJVIVKWOBVLZIUP
+      ZFUEZWQFUEBFWPXAWPVCXBWQFXAWPIVMVNWGXCBFVOZWMAWEXDWFAXCBFUCVTVFUSAWFWMWPF
+      UEZWEAWMWFXEAWMWFXEABCDEFGHWLKLNOPQRSVPUMUNUOVQVRVSWGWEWHWNWAWTJWBWCWD $.
+  $}
+
+  ${
+    $d x y B $.  $d x y G $.  $d x y N $.  $d x .x. $.  $d x y X $.
+    mulgnncl.b $e |- B = ( Base ` G ) $.
+    mulgnncl.t $e |- .x. = ( .g ` G ) $.
+    $( Closure of the group multiple (exponentiation) operation for a positive
+       multiplier in a magma.  (Contributed by Mario Carneiro, 11-Dec-2014.)
+       (Revised by AV, 29-Aug-2021.) $)
+    mulgnncl $p |- ( ( G e. Mgm /\ N e. NN /\ X e. B ) -> ( N .x. X ) e. B ) $=
+      ( vx vy cmgm wcel cplusg cfv eqid id ssidd cv mgmcl mulgnnsubcl ) CJKZHIA
+      CLMZABCDJEFGUANZTOTAPACHQIQUAFUBRS $.
+
+    $( Closure of the group multiple (exponentiation) operation for a
+       nonnegative multiplier in a monoid.  (Contributed by Mario Carneiro,
+       11-Dec-2014.) $)
+    mulgnn0cl $p |- ( ( G e. Mnd /\ N e. NN0 /\ X e. B ) ->
+      ( N .x. X ) e. B ) $=
+      ( vx vy cmnd wcel cplusg cfv c0g eqid id ssidd cv mndcl mndidcl
+      mulgnn0subcl ) CJKZHIACLMZABCDJECNMZFGUCOZUBPUBAQAUCCHRIRFUESUDOZACUDFUFT
+      UA $.
+
+    $( Closure of the group multiple (exponentiation) operation.  (Contributed
+       by Mario Carneiro, 11-Dec-2014.) $)
+    mulgcl $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B ) -> ( N .x. X ) e. B ) $=
+      ( vx vy cgrp wcel cplusg cfv cminusg c0g eqid id ssidd cv grpcl mulgsubcl
+      grpidcl grpinvcl ) CJKZHIACLMZABCCNMZDJECOMZFGUEPZUDQUDARAUECHSZISFUHTUGP
+      ZACUGFUJUBUFPZACUFUIFUKUCUA $.
+
+    mulgneg.i $e |- I = ( invg ` G ) $.
+    $( Group multiple (exponentiation) operation at a negative integer.
+       (Contributed by Paul Chapman, 17-Apr-2009.)  (Revised by Mario Carneiro,
+       11-Dec-2014.) $)
+    mulgneg $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B ) ->
+      ( -u N .x. X ) = ( I ` ( N .x. X ) ) ) $=
+      ( wcel cz cneg co cfv wceq wa cc0 simpl3 syl2anc oveq1d cgrp w3a cr cn wo
+      cn0 elnn0 simpr mulgnegnn c0g simpl1 eqid grpinvid syl mulg0 eqtrd fveq2d
+      negeqd neg0 eqtrdi 3eqtr4rd jaodan sylan2b simprr mulgcl grpinvinv simprl
+      nnzd syl3anc recnd negnegd eqtr3d simp2 elznn0nn sylib mpjaodan ) CUAJZEK
+      JZFAJZUBZEUFJZELZFBMZEFBMZDNZOZEUCJZWBUDJZPZWAVTEUDJZEQOZUEWFEUGVTWJWFWKV
+      TWJPWJVSWFVTWJUHVQVRVSWJRABCDEFGHIUISVTWKPZCUJNZDNZWMWEWCWLVQWNWMOVQVRVSW
+      KUKCDWMWMULZIUMUNWLWDWMDWLWDQFBMZWMWLEQFBVTWKUHZTWLVSWPWMOVQVRVSWKRABCFWM
+      GWOHUOUNZUPUQWLWCWPWMWLWBQFBWLWBQLQWLEQWQURUSUTTWRUPVAVBVCVTWIPZWCDNZDNZW
+      CWEWSVQWCAJZXAWCOVQVRVSWIUKZWSVQWBKJVSXBXCWSWBVTWGWHVDZVHVQVRVSWIRZABCWBF
+      GHVEVIACDWCGIVFSWSWTWDDWSWBLZFBMZWTWDWSWHVSXGWTOXDXEABCDWBFGHIUISWSXFEFBW
+      SEWSEVTWGWHVGVJVKTVLUQVLVTVRWAWIUEVQVRVSVMEVNVOVP $.
+
+    $( The inverse of a negative group multiple is the positive group multiple.
+       (Contributed by Paul Chapman, 17-Apr-2009.)  (Revised by AV,
+       30-Aug-2021.) $)
+    mulgnegneg $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B )
+                       -> ( I ` ( -u N .x. X ) ) = ( N .x. X ) ) $=
+      ( cgrp wcel cz w3a cneg co cfv mulgneg fveq2d wceq simp1 mulgcl grpinvinv
+      syl2anc eqtrd ) CJKZELKZFAKZMZENFBOZDPEFBOZDPZDPZUJUHUIUKDABCDEFGHIQRUHUE
+      UJAKULUJSUEUFUGTABCEFGHUAACDUJGIUBUCUD $.
+
+    $( Group multiple (exponentiation) operation at negative one.  (Contributed
+       by Paul Chapman, 17-Apr-2009.)  (Revised by Mario Carneiro,
+       20-Dec-2014.) $)
+    mulgm1 $p |- ( ( G e. Grp /\ X e. B ) -> ( -u 1 .x. X ) = ( I ` X ) ) $=
+      ( cgrp wcel wa c1 cneg co cfv cz wceq 1z mulgneg mp3an2 adantl fveq2d
+      mulg1 eqtrd ) CIJZEAJZKZLMEBNZLEBNZDOZEDOUELPJUFUHUJQRABCDLEFGHSTUGUIEDUF
+      UIEQUEABCEFGUCUAUBUD $.
+  $}
+
+  ${
+    mulgcld.1 $e |- B = ( Base ` G ) $.
+    mulgcld.2 $e |- .x. = ( .g ` G ) $.
+    mulgcld.3 $e |- ( ph -> G e. Grp ) $.
+    mulgcld.4 $e |- ( ph -> N e. ZZ ) $.
+    mulgcld.5 $e |- ( ph -> X e. B ) $.
+    $( Deduction associated with ~ mulgcl .  (Contributed by Rohan Ridenour,
+       3-Aug-2023.) $)
+    mulgcld $p |- ( ph -> ( N .x. X ) e. B ) $=
+      ( cgrp wcel cz co mulgcl syl3anc ) ADLMENMFBMEFCOBMIJKBCDEFGHPQ $.
+  $}
+
+  ${
+    mulgaddcom.b $e |- B = ( Base ` G ) $.
+    mulgaddcom.t $e |- .x. = ( .g ` G ) $.
+    mulgaddcom.p $e |- .+ = ( +g ` G ) $.
+    $( Lemma for ~ mulgaddcom .  (Contributed by Paul Chapman, 17-Apr-2009.)
+       (Revised by AV, 31-Aug-2021.) $)
+    mulgaddcomlem $p |- ( ( ( G e. Grp /\ y e. ZZ /\ X e. B )
+                            /\ ( ( y .x. X ) .+ X ) = ( X .+ ( y .x. X ) ) )
+                      -> ( ( -u y .x. X ) .+ X ) = ( X .+ ( -u y .x. X ) ) ) $=
+      ( wcel cz co wceq cfv adantr mulgcl oveq1d grpinvadd syl3anc oveq2d cv wa
+      cgrp cneg cminusg simp1 simp3 znegcl syl3an2 eqid grpinvcl 3adant2 grpass
+      w3a syl13anc mulgneg adantl 3eqtr2rd 3eqtr2d grpasscan1 3eqtrd grpasscan2
+      fveq2 grpcl eqtr3d ) EUCJZAUAZKJZFBJZUNZVGFDLZFCLZFVKCLZMZUBZFVGUDZFDLZCL
+      ZFEUENZNZCLZFCLZVQFCLVRVOWAVQFCVOWAFVQVTCLZCLZFVTVQCLZCLZVQVOVFVIVQBJZVTB
+      JZWAWDMVJVFVNVFVHVIUFZOZVJVIVNVFVHVIUGZOZVJWGVNVHVFVPKJVIWGVGUHBDEVPFGHPU
+      IZOZVJWHVNVFVIWHVHBEVSFGVSUJZUKULOBCEFVQVTGIUMUOVOWCWEFCVOWCVKVSNZVTCLZVM
+      VSNZWEVOVQWPVTCVJVQWPMVNBDEVSVGFGHWOUPOZQVOVFVIVKBJZWRWQMWJWLVJWTVNBDEVGF
+      GHPOZBCEVSFVKGIWORSVOWEVTWPCLZVLVSNZWRVOVQWPVTCWSTVOVFWTVIXCXBMWJXAWLBCEV
+      SVKFGIWORSVNXCWRMVJVLVMVSVCUQURUSTVOVFVIWGWFVQMWJWLWNBCEVSFVQGIWOUTSVAQVO
+      VFVRBJZVIWBVRMWJVJXDVNVJVFVIWGXDWIWKWMBCEFVQGIVDSOWLBCEVSVRFGIWOVBSVE $.
+
+    $d B x y $.  $d G x y $.  $d N x $.  $d X x y $.  $d .x. x y $.
+    $d .+ x y $.
+    $( The group multiple operator commutes with the group operation.
+       (Contributed by Paul Chapman, 17-Apr-2009.)  (Revised by AV,
+       31-Aug-2021.) $)
+    mulgaddcom $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B )
+                            -> ( ( N .x. X ) .+ X ) = ( X .+ ( N .x. X ) ) ) $=
+      ( vx vy wcel co wceq wi cc0 oveq1 oveq1d oveq2d eqeq12d cz cv c1 caddc wa
+      cgrp cneg weq c0g cfv eqid grplid mulg0 adantl eqtrd 3eqtr4d cn0 w3a nn0z
+      grprid simp1 mulgcl 3com23 grpass syl13anc syl3an3 adantr grpmnd 3ad2ant1
+      simp2 cmnd simp3 mulgnn0p1 syl3anc eqeq1d biimpar ex 3expia mulgaddcomlem
+      cn nnz 3exp1 com23 imp syl5 zindd 3imp ) DUFLZEUALZFALZEFCMZFBMZFWKBMZNZW
+      HWJWIWNWHWJWIWNOJUBZFCMZFBMZFWPBMZNPFCMZFBMZFWSBMZNKUBZFCMZFBMZFXCBMZNZXB
+      UGZFCMZFBMZFXHBMZNZXBUCUDMZFCMZFBMZFXMBMZNZWNWHWJUEZJKEWOPNZWQWTWRXAXRWPW
+      SFBWOPFCQZRXRWPWSFBXSSTJKUHZWQXDWRXEXTWPXCFBWOXBFCQZRXTWPXCFBYASTWOXLNZWQ
+      XNWRXOYBWPXMFBWOXLFCQZRYBWPXMFBYCSTWOXGNZWQXIWRXJYDWPXHFBWOXGFCQZRYDWPXHF
+      BYESTWOENZWQWLWRWMYFWPWKFBWOEFCQZRYFWPWKFBYGSTXQDUIUJZFBMFWTXAABDFYHGIYHU
+      KZULXQWSYHFBWJWSYHNWHACDFYHGYIHUMUNZRXQXAFYHBMFXQWSYHFBYJSABDFYHGIYIUTUOU
+      PWHWJXBUQLZXFXPOWHWJYKURZXFXPYLXFUEZXEFBMZFXDBMZXNXOYLYNYONZXFYKWHWJXBUAL
+      ZYPXBUSWHWJYQURWHWJXCALZWJYPWHWJYQVAWHWJYQVJZWHYQWJYRACDXBFGHVBVCYSABDFXC
+      FGIVDVEVFVGYMXMXEFBYLXMXENXFYLXMXDXEYLDVKLZYKWJXMXDNWHWJYTYKDVHVIWHWJYKVL
+      WHWJYKVJABCDXBFGHIVMVNZVOVPRYLXOYONXFYLXMXDFBUUASVGUPVQVRXBVTLYQXQXFXKOZX
+      BWAWHWJYQUUBOWHYQWJUUBWHYQWJXFXKKABCDFGHIVSWBWCWDWEWFVQWCWG $.
+  $}
+
+  ${
+    $d B x y $.  $d G x y $.  $d I x y $.  $d N x $.  $d X x y $.
+    $d .x. x y $.
+    mulginvcom.b $e |- B = ( Base ` G ) $.
+    mulginvcom.t $e |- .x. = ( .g ` G ) $.
+    mulginvcom.i $e |- I = ( invg ` G ) $.
+    $( The group multiple operator commutes with the group inverse function.
+       (Contributed by Paul Chapman, 17-Apr-2009.)  (Revised by AV,
+       31-Aug-2021.) $)
+    mulginvcom $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B )
+                              -> ( N .x. ( I ` X ) ) = ( I ` ( N .x. X ) ) ) $=
+      ( vx wcel cfv co wceq wi cc0 oveq1 fvoveq1 eqeq12d adantr vy cgrp cz cneg
+      cv c1 caddc weq c0g eqid grpinvid eqcomd grpinvcl mulg0 syl adantl fveq2d
+      3eqtr4d cn0 w3a cplusg oveq2 cmnd grpmnd 3ad2ant1 simp2 3adant2 mulgnn0p1
+      wa syl3anc simp1 nn0z 3ad2ant2 mulgaddcom eqtrd syl3an1 syl3an2 grpinvadd
+      mulgcl syld3an2 3exp1 com23 imp cn nnz mulgneg syld3an3 simpr eqtr4d syl5
+      zindd ex 3imp ) CUBKZEUCKZFAKZEFDLZBMZEFBMDLZNZWNWPWOWTWNWPWOWTOJUEZWQBMZ
+      XAFBMDLZNPWQBMZPFBMZDLZNUAUEZWQBMZXGFBMZDLZNZXGUDZWQBMZXLFBMZDLZNZXGUFUGM
+      ZWQBMZXQFBMZDLZNZWTWNWPVIZJUAEXAPNXBXDXCXFXAPWQBQXAPFDBRSJUAUHXBXHXCXJXAX
+      GWQBQXAXGFDBRSXAXQNXBXRXCXTXAXQWQBQXAXQFDBRSXAXLNXBXMXCXOXAXLWQBQXAXLFDBR
+      SXAENXBWRXCWSXAEWQBQXAEFDBRSYBCUILZYCDLZXDXFWNYCYDNWPWNYDYCCDYCYCUJZIUKUL
+      TYBWQAKZXDYCNACDFGIUMZABCWQYCGYEHUNUOYBXEYCDWPXEYCNWNABCFYCGYEHUNUPUQURWN
+      WPXGUSKZXKYAOZOWNYHWPYIWNYHWPXKYAWNYHWPUTZXKVIWQXHCVALZMZWQXJYKMZXRXTXKYL
+      YMNYJXHXJWQYKVBUPYJXRYLNXKYJXRXHWQYKMZYLYJCVCKZYHYFXRYNNWNYHYOWPCVDZVEWNY
+      HWPVFWNWPYFYHYGVGZAYKBCXGWQGHYKUJZVHVJYJWNXGUCKZYFYNYLNWNYHWPVKYHWNYSWPXG
+      VLZVMYQAYKBCXGWQGHYRVNVJVOTYJXTYMNXKYJXTXIFYKMZDLZYMYJXSUUADWNYOYHWPXSUUA
+      NYPAYKBCXGFGHYRVHVPUQWNXIAKZYHWPUUBYMNYHWNYSWPUUCYTABCXGFGHVSVQAYKCDXIFGY
+      RIVRVTVOTURWAWBWCXGWDKYSYBXKXPOZXGWEWNWPYSUUDOWNYSWPUUDWNYSWPXKXPWNYSWPUT
+      ZXKVIZXMXHDLZXOUUEXMUUGNZXKWNYSWPYFUUHWNWPYFYSYGVGABCDXGWQGHIWFWGTUUFXNXH
+      DUUFXNXJXHUUEXNXJNXKABCDXGFGHIWFTUUEXKWHWIUQWIWAWBWCWJWKWLWBWM $.
+
+    $( The group multiple operator commutes with the group inverse function.
+       (Contributed by Paul Chapman, 17-Apr-2009.)  (Revised by AV,
+       31-Aug-2021.) $)
+    mulginvinv $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B )
+                              -> ( I ` ( N .x. ( I ` X ) ) ) = ( N .x. X ) ) $=
+      ( cgrp wcel cz w3a cfv co wceq grpinvcl 3adant2 mulginvcom syld3an3
+      grpinvinv oveq2d eqtr3d ) CJKZELKZFAKZMZEFDNZDNZBOZEUHBODNZEFBOUDUEUFUHAK
+      ZUJUKPUDUFULUEACDFGIQRABCDEUHGHISTUGUIFEBUDUFUIFPUEACDFGIUARUBUC $.
+  $}
+
+  ${
+    $d .0. x y $.  $d B x y $.  $d G x y $.  $d N x y $.
+    mulgnn0z.b $e |- B = ( Base ` G ) $.
+    mulgnn0z.t $e |- .x. = ( .g ` G ) $.
+    mulgnn0z.o $e |- .0. = ( 0g ` G ) $.
+    $( A group multiple of the identity, for nonnegative multiple.
+       (Contributed by Mario Carneiro, 13-Dec-2014.) $)
+    mulgnn0z $p |- ( ( G e. Mnd /\ N e. NN0 ) -> ( N .x. .0. ) = .0. ) $=
+      ( vx vy wcel cn cc0 wceq co wa cfv c1 eqid adantr cn0 wo elnn0 cplusg csn
+      cmnd cxp cseq mndidcl mulgnn syl2anr mndlid mpdan cuz simpr nnuz eleqtrdi
+      id cv cfz elfznn fvconst2g syl2an ialgrlemconst mndcl 3expb adantlr eqtrd
+      seq3id3 oveq1 mulg0 syl sylan9eqr jaodan sylan2b ) DUAKCUFKZDLKZDMNZUBDEB
+      OZENZDUCVPVQVTVRVPVQPZVSDCUDQZLEUEUGZRUHZQZEVQVQEAKZVSWENVPVQURACEFHUIZAW
+      BWDBCDEFWBSZGWDSUJUKWAIJWBAWCRDEVPEEWBOENZVQVPWFWIWGAWBCEEFWHHULUMTWADLRU
+      NQVPVQUOUPUQWAWFIUSZLKWJWCQENWJRDUTOKVPWFVQWGTZWJDVALEWJAVBVCWKWAIEARLUPW
+      KVDVPWJAKZJUSZAKZPWJWMWBOAKZVQVPWLWNWOAWBCWJWMFWHVEVFVGVIVHVRVPVSMEBOZEDM
+      EBVJVPWFWPENWGABCEEFHGVKVLVMVNVO $.
+
+    $( A group multiple of the identity, for integer multiple.  (Contributed by
+       Mario Carneiro, 13-Dec-2014.) $)
+    mulgz $p |- ( ( G e. Grp /\ N e. ZZ ) -> ( N .x. .0. ) = .0. ) $=
+      ( wcel cz wa cn0 co wceq cneg mulgnn0z sylan cfv adantl ad2antrr cgrp zcn
+      cmnd grpmnd adantr cminusg simpll nn0z grpidcl mulgneg syl3anc cc negnegd
+      eqid ad2antlr oveq1d fveq2d grpinvid eqtrd 3eqtr3d wo cr simprbi mpjaodan
+      elznn0 ) CUAIZDJIZKZDLIZDEBMZENZDOZLIZVHCUCIZVIVKVFVNVGCUDUEZABCDEFGHPQVH
+      VMKZVLOZEBMZVLEBMZCUFRZRZVJEVPVFVLJIZEAIZVRWANVFVGVMUGVMWBVHVLUHSVFWCVGVM
+      ACEFHUITABCVTVLEFGVTUNZUJUKVPVQDEBVPDVGDULIVFVMDUBUOUMUPVPWAEVTRZEVPVSEVT
+      VHVNVMVSENVOABCVLEFGHPQUQVFWEENVGVMCVTEHWDURTUSUTVGVIVMVAZVFVGDVBIWFDVEVC
+      SVD $.
+  $}
+
+  ${
+    $d x y z u v B $.  $d x y z u v G $.  $d x y z u v M $.  $d x y z u v N $.
+    $d x y z u v .+ $.  $d x y z u v X $.
+    mulgnndir.b $e |- B = ( Base ` G ) $.
+    mulgnndir.t $e |- .x. = ( .g ` G ) $.
+    mulgnndir.p $e |- .+ = ( +g ` G ) $.
+    $( Sum of group multiples, for positive multiples.  (Contributed by Mario
+       Carneiro, 11-Dec-2014.)  (Revised by AV, 29-Aug-2021.) $)
+    mulgnndir $p |- ( ( G e. Smgrp /\ ( M e. NN /\ N e. NN /\ X e. B ) ) ->
+                      ( ( M + N ) .x. X ) = ( ( M .x. X ) .+ ( N .x. X ) ) ) $=
+      ( wcel cn wa caddc co c1 cfv cv wceq cvv vx vy vz vu vv csgrp w3a csn cxp
+      cseq cmgm sgrpmgm mgmcl syl3an1 3expb adantlr sgrpass cuz simpr2 eleqtrdi
+      cz nnuz simpr1 nnzd eluzadd syl2anc nncnd addcomd cc ax-1cn addcom fveq2d
+      sylancl 3eltr4d simpr3 ialgrlemconst seq3split nnaddcld mulgnn cfz elfznn
+      eqid fvconst2g syl2an nnaddcl syl2anr eqtr4d elnnuz biimpri simpl eqeltrd
+      syl2an2r elexd 1nn adantr eluznn sylancom simprl cplusg eqeltrid ad2antrr
+      a1i plusgslid slotex simprr ovexg syl3anc seqeq1d fveq12d 3eqtr4d oveq12d
+      seq3shft2 ) DUFKZELKZFLKZGAKZUGZMZEFNOZBLGUHUIZPUJZQZEYAQZXSBXTEPNOZUJZQZ
+      BOXSGCOZEGCOZFGCOZBOXRUAUBUCBAXTPEXSXMUARZAKZUBRZAKZMYJYLBOZAKZXQXMYKYMYO
+      XMDUKKYKYMYODULADYJYLBHJUMUNUOUPXMYKYMUCRZAKUGYNYPBOYJYLYPBOBOSXQADYJYLBY
+      PHJUQUPXRFENOZPENOZURQZXSYDURQXRFPURQZKEVAKYQYSKXRFLYTXMXNXOXPUSZVBUTZXRE
+      XMXNXOXPVCZVDZEPFVEVFXREFXREUUCVGZXRFUUAVGVHZXRYDYRURXREVIKPVIKYDYRSUUEVJ
+      EPVKVMZVLVNXRELYTUUCVBUTXRUAGAPLVBXMXNXOXPVOZVPVQXRXSLKXPYGYBSXREFUUCUUAV
+      RUUHABYACDXSGHJIYAWBZVSVFXRYHYCYIYFBXRXNXPYHYCSUUCUUHABYACDEGHJIUUIVSVFXR
+      FYAQZYQBXTYRUJZQYIYFXRUDUEBTUAXTXTEPFUUBUUDXRYJPFVTOKZMYJXTQZGYJENOZXTQZX
+      RXPYJLKZUUMGSUULUUHYJFWAZLGYJAWCWDXRXPUULUUNLKZUUOGSUUHUULUUPXNUURXRUUQUU
+      CYJEWEWFLGUUNAWCWLWGXRXPUDRZLKZUUSXTQZTKZUUSYTKZUUHUUTUVCUUSWHWIXPUUTMZUV
+      AAUVDUVAGALGUUSAWCXPUUTWJWKWMZWDXRXPUUSYSKZUUTUVBUUHXRUVFYRLKUUTXRUVFMZPE
+      PLKUVGWNXBXRXNUVFUUCWOVRUUSYRWPWQUVEWLXRUUSTKZUERZTKZMZMUVHBTKZUVJUUSUVIB
+      OTKXRUVHUVJWRXMUVLXQUVKXMBDWSQTJDWSUFXCXDWTXAXRUVHUVJXEUUSUVIBTTTXFXGXLXR
+      XOXPYIUUJSUUAUUHABYACDFGHJIUUIVSVFXRXSYQYEUUKXRYDYRBXTUUGXHUUFXIXJXKXJ $.
+
+    $( Sum of group multiples, generalized to ` NN0 ` .  (Contributed by Mario
+       Carneiro, 11-Dec-2014.) $)
+    mulgnn0dir $p |- ( ( G e. Mnd /\ ( M e. NN0 /\ N e. NN0 /\ X e. B ) ) ->
+                      ( ( M + N ) .x. X ) = ( ( M .x. X ) .+ ( N .x. X ) ) ) $=
+      ( wcel wa caddc co wceq cc0 adantr simpr oveq1d eqtrd cmnd cn0 cn mndsgrp
+      w3a csgrp ad2antrr simplr simpr3 mulgnndir syl13anc c0g cfv simpll simpr1
+      simplr3 mulgnn0cl syl3anc eqid mndrid syl2anc mulg0 oveq2d nn0cnd addid1d
+      syl 3eqtr4rd adantlr simpr2 elnn0 sylib mpjaodan simplr2 mndlid addid2d
+      wo ) DUAKZEUBKZFUBKZGAKZUEZLZEUCKZEFMNZGCNZEGCNZFGCNZBNZOZEPOZWBWCLZFUCKZ
+      WIFPOZWKWLLDUFKZWCWLVTWIWBWNWCWLVQWNWADUDQUGWBWCWLUHWKWLRWBVTWCWLVQVRVSVT
+      UIUGABCDEFGHIJUJUKWBWMWIWCWBWMLZWFDULUMZBNZWFWHWEWOVQWFAKZWQWFOVQWAWMUNZW
+      OVQVRVTWRWSWBVRWMVQVRVSVTUOZQZVRVSVTVQWMUPZACDEGHIUQURABDWFWPHJWPUSZUTVAW
+      OWGWPWFBWOWGPGCNZWPWOFPGCWBWMRZSWOVTXDWPOZXBACDGWPHXCIVBZVFTVCWOWDEGCWOWD
+      EPMNEWOFPEMXEVCWOEWOEXAVDVETSVGVHWBWLWMVPZWCWBVSXHVQVRVSVTVIFVJVKQVLWBWJL
+      ZWPWGBNZWGWHWEXIVQWGAKZXJWGOVQWAWJUNZXIVQVSVTXKXLVRVSVTVQWJVMZVRVSVTVQWJU
+      PZACDFGHIUQURABDWGWPHJXCVNVAXIWFWPWGBXIWFXDWPXIEPGCWBWJRZSXIVTXFXNXGVFTSX
+      IWDFGCXIWDPFMNFXIEPFMXOSXIFXIFXMVDVOTSVGWBVRWCWJVPWTEVJVKVL $.
+
+    $( Lemma for ~ mulgdir .  (Contributed by Mario Carneiro, 13-Dec-2014.) $)
+    mulgdirlem $p |- ( ( G e. Grp /\
+        ( M e. ZZ /\ N e. ZZ /\ X e. B ) /\ ( M + N ) e. NN0 ) ->
+                      ( ( M + N ) .x. X ) = ( ( M .x. X ) .+ ( N .x. X ) ) ) $=
+      ( wcel cz co cn0 wceq wa syl13anc adantr syl3anc oveq1d cgrp caddc simpl1
+      w3a cneg grpmndd simprl simprr simpl23 mulgnn0dir anassrs c0g cfv cminusg
+      cmnd simp22 eqid mulgneg mulgcl grplinv syl2anc oveq2d simpl3 nn0z grprid
+      eqtrd ad2antll grpass cmin cc simp21 zcnd addcld negsubd pncand eqtr3d wo
+      syl elznn0 simprbi mpjaodan znegcld 3ad2ant3 grprinv grplid simpr addcomd
+      cr negcld pncan2d 3eqtrd 3eqtr3d ) DUAKZELKZFLKZGAKZUDZEFUBMZNKZUDZENKZWR
+      GCMZEGCMZFGCMZBMZOZEUEZNKZWTXAPFNKZXFFUEZNKZWTXAXIXFWTXAXIPZPZDUOKZXAXIWP
+      XFXMDWMWQWSXLUCUFWTXAXIUGWTXAXIUHWNWOWPWMWSXLUIABCDEFGHIJUJQUKWTXAXKXFWTX
+      AXKPZPZXBXJGCMZXDBMZBMZXBXEXPXSXBDULUMZBMZXBXPXRXTXBBXPXRXDDUNUMZUMZXDBMZ
+      XTXPXQYCXDBXPWMWOWPXQYCOWMWQWSXOUCZWTWOXOWMWNWOWPWSUPZRZWNWOWPWMWSXOUIZAC
+      DYBFGHIYBUQZURSTXPWMXDAKZYDXTOYEXPWMWOWPYJYEYGYHACDFGHIUSSZABDYBXDXTHJXTU
+      QZYIUTVAVFVBXPWMXBAKZYAXBOYEXPWMWRLKZWPYMYEXPWSYNWMWQWSXOVCZWRVDZVRYHACDW
+      RGHIUSZSZABDXBXTHJYLVEVAVFXPXBXQBMZXDBMZXSXEXPWMYMXQAKZYJYTXSOYEYRXPWMXJL
+      KZWPUUAYEXKUUBWTXAXJVDVGYHACDXJGHIUSSYKABDXBXQXDHJVHQXPYSXCXDBXPWRXJUBMZG
+      CMZYSXCXPXNWSXKWPUUDYSOXPDYEUFYOWTXAXKUHYHABCDWRXJGHIJUJQXPUUCEGCXPUUCWRF
+      VIMEXPWRFWTWRVJKZXOWTEFWTEWMWNWOWPWSVKZVLZWTFYFVLZVMZRWTFVJKZXOUUHRZVNXPE
+      FWTEVJKZXOUUGRUUKVOVFTVPTVPVPUKWTXIXKVQZXAWTWOUUMYFWOFWHKUUMFVSVTVRRWAWTX
+      HPZXCXGGCMZBMZXBBMZXCUUOXBBMZBMZXBXEUUNWMXCAKZUUOAKZYMUUQUUSOWMWQWSXHUCZU
+      UNWMWNWPUUTUVBWTWNXHUUFRZWNWOWPWMWSXHUIZACDEGHIUSSZUUNWMXGLKWPUVAUVBUUNEU
+      VCWBUVDACDXGGHIUSSUUNWMYNWPYMUVBWTYNXHWSWMYNWQYPWCRUVDYQSZABDXCUUOXBHJVHQ
+      UUNUUQXTXBBMZXBUUNUUPXTXBBUUNUUPXCXCYBUMZBMZXTUUNUUOUVHXCBUUNWMWNWPUUOUVH
+      OUVBUVCUVDACDYBEGHIYIURSVBUUNWMUUTUVIXTOUVBUVEABDYBXCXTHJYLYIWDVAVFTUUNWM
+      YMUVGXBOUVBUVFABDXBXTHJYLWEVAVFUUNUURXDXCBUUNXGWRUBMZGCMZUURXDUUNXNXHWSWP
+      UVKUUROUUNDUVBUFWTXHWFWMWQWSXHVCUVDABCDXGWRGHIJUJQUUNUVJFGCUUNUVJWRXGUBMW
+      REVIMFUUNXGWRUUNEWTUULXHUUGRZWIWTUUEXHUUIRZWGUUNWREUVMUVLVNUUNEFUVLWTUUJX
+      HUUHRWJWKTVPVBWLWTWNXAXHVQZUUFWNEWHKUVNEVSVTVRWA $.
+
+    $( Sum of group multiples, generalized to ` ZZ ` .  (Contributed by Mario
+       Carneiro, 13-Dec-2014.) $)
+    mulgdir $p |- ( ( G e. Grp /\ ( M e. ZZ /\ N e. ZZ /\ X e. B ) ) ->
+                      ( ( M + N ) .x. X ) = ( ( M .x. X ) .+ ( N .x. X ) ) ) $=
+      ( wcel cz co cn0 wceq cneg cfv adantr mulgneg syl3anc cgrp w3a mulgdirlem
+      wa caddc 3expa cminusg simpll simpr2 znegcld simpr1 simplr3 negcld negdid
+      zcnd comraddd simpr eqeltrrd syl131anc oveq1d zaddcld eqid eqtr3d oveq12d
+      mulgcl grpinvadd eqtr4d 3eqtr3d fveq2d grpinvinv syl2anc grpcl wo simprbi
+      cr elznn0 syl mpjaodan ) DUAKZELKZFLKZGAKZUBZUDZEFUEMZNKZWEGCMZEGCMZFGCMZ
+      BMZOZWEPZNKZVSWCWFWKABCDEFGHIJUCUFWDWMUDZWGDUGQZQZWOQZWJWOQZWOQZWGWJWNWPW
+      RWOWNFPZEPZUEMZGCMZWTGCMZXAGCMZBMZWPWRWNVSWTLKXALKWBXBNKXCXFOVSWCWMUHZWNF
+      WDWAWMVSVTWAWBUIZRZUJWNEWDVTWMVSVTWAWBUKZRZUJVTWAWBVSWMULZWNWLXBNWNWLXAWT
+      WNEWNEXKUOZUMWNFWNFXIUOZUMWNEFXMXNUNUPZWDWMUQURABCDWTXAGHIJUCUSWNWLGCMZXC
+      WPWNWLXBGCXOUTWNVSWELKZWBXPWPOXGWDXQWMWDEFXJXHVAZRZXLACDWOWEGHIWOVBZSTVCW
+      NXFWIWOQZWHWOQZBMZWRWNXDYAXEYBBWNVSWAWBXDYAOXGXIXLACDWOFGHIXTSTWNVSVTWBXE
+      YBOXGXKXLACDWOEGHIXTSTVDWNVSWHAKZWIAKZWRYCOXGWNVSVTWBYDXGXKXLACDEGHIVETZW
+      NVSWAWBYEXGXIXLACDFGHIVETZABDWOWHWIHJXTVFTVGVHVIWNVSWGAKZWQWGOXGWNVSXQWBY
+      HXGXSXLACDWEGHIVETADWOWGHXTVJVKWNVSWJAKZWSWJOXGWNVSYDYEYIXGYFYGABDWHWIHJV
+      LTADWOWJHXTVJVKVHWDXQWFWMVMZXRXQWEVOKYJWEVPVNVQVR $.
+
+    $( Group multiple (exponentiation) operation at a successor, extended to
+       ` ZZ ` .  (Contributed by Mario Carneiro, 11-Dec-2014.) $)
+    mulgp1 $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B ) ->
+                                ( ( N + 1 ) .x. X ) = ( ( N .x. X ) .+ X ) ) $=
+      ( cgrp wcel cz w3a c1 caddc co wceq 1z mulgdir mp3anr2 3impb mulg1 oveq2d
+      3ad2ant3 eqtrd ) DJKZELKZFAKZMZENOPFCPZEFCPZNFCPZBPZUKFBPUFUGUHUJUMQZUFUG
+      NLKUHUNRABCDENFGHISTUAUIULFUKBUHUFULFQUGACDFGHUBUDUCUE $.
+  $}
+
+  ${
+    $d n x B $.  $d n x G $.  $d n x I $.  $d n x .x. $.  $d n x X $.
+    $d x N $.
+    mulgneg2.b $e |- B = ( Base ` G ) $.
+    mulgneg2.m $e |- .x. = ( .g ` G ) $.
+    mulgneg2.i $e |- I = ( invg ` G ) $.
+    $( Group multiple (exponentiation) operation at a negative integer.
+       (Contributed by Mario Carneiro, 13-Dec-2014.) $)
+    mulgneg2 $p |- ( ( G e. Grp /\ N e. ZZ /\ X e. B ) ->
+                                      ( -u N .x. X ) = ( N .x. ( I ` X ) ) ) $=
+      ( wcel cneg co cfv wceq cc0 c1 negeq oveq1d oveq1 eqeq12d vx vn cgrp neg0
+      cz cv caddc wa eqtrdi c0g eqid mulg0 adantl grpinvcl syl eqtr4d wi cplusg
+      cn0 cc nn0cn ax-1cn negdi sylancl simpll nn0negz 1z znegcl simplr mulgdir
+      mp1i syl13anc mulgm1 adantr oveq2d 3eqtrd grpmnd ad2antrr simpr mulgnn0p1
+      cmnd syl3anc syl5ibr ex cn fveq2 nnnegz mulgneg id mulgnegnn zindd 3impia
+      syl2anr 3com23 ) CUCJZFAJZEUEJZEKZFBLZEFDMZBLZNZWOWPWQXBUAUFZKZFBLZXCWTBL
+      ZNOFBLZOWTBLZNUBUFZKZFBLZXIWTBLZNZXJKZFBLZXJWTBLZNZXIPUGLZKZFBLZXRWTBLZNZ
+      XBWOWPUHZUAUBEXCONZXEXGXFXHYDXDOFBYDXDOKOXCOQUDUIRXCOWTBSTXCXINZXEXKXFXLY
+      EXDXJFBXCXIQRXCXIWTBSTXCXRNZXEXTXFYAYFXDXSFBXCXRQRXCXRWTBSTXCXJNZXEXOXFXP
+      YGXDXNFBXCXJQRXCXJWTBSTXCENZXEWSXFXAYHXDWRFBXCEQRXCEWTBSTYCXGCUJMZXHWPXGY
+      INWOABCFYIGYIUKZHULUMYCWTAJZXHYINACDFGIUNZABCWTYIGYJHULUOUPYCXIUSJZXMYBUQ
+      XMYBYCYMUHZXKWTCURMZLZXLWTYOLZNXKXLWTYOSYNXTYPYAYQYNXTXJPKZUGLZFBLZXKYRFB
+      LZYOLZYPYNXSYSFBYNXIUTJZPUTJXSYSNYMUUCYCXIVAUMVBXIPVCVDRYNWOXJUEJZYRUEJZW
+      PYTUUBNWOWPYMVEYMUUDYCXIVFUMPUEJUUEYNVGPVHVKWOWPYMVIAYOBCXJYRFGHYOUKZVJVL
+      YNUUAWTXKYOYCUUAWTNYMABCDFGHIVMVNVOVPYNCWAJZYMYKYAYQNWOUUGWPYMCVQVRYCYMVS
+      YCYKYMYLVNAYOBCXIWTGHUUFVTWBTWCWDYCXIWEJZXMXQUQXMXQYCUUHUHZXKDMZXLDMZNXKX
+      LDWFUUIXOUUJXPUUKUUIWOUUDWPXOUUJNWOWPUUHVEUUHUUDYCXIWGUMWOWPUUHVIABCDXJFG
+      HIWHWBUUHUUHYKXPUUKNYCUUHWIYLABCDXIWTGHIWJWMTWCWDWKWLWN $.
+  $}
+
+  ${
+    $d m n B $.  $d m n G $.  $d m n N $.  $d m n .x. $.  $d m n X $.
+    $d n M $.
+    mulgass.b $e |- B = ( Base ` G ) $.
+    mulgass.t $e |- .x. = ( .g ` G ) $.
+    $( Product of group multiples, for positive multiples in a semigroup.
+       (Contributed by Mario Carneiro, 13-Dec-2014.)  (Revised by AV,
+       29-Aug-2021.) $)
+    mulgnnass $p |- ( ( G e. Smgrp /\ ( M e. NN /\ N e. NN /\ X e. B ) ) ->
+                              ( ( M x. N ) .x. X ) = ( M .x. ( N .x. X ) ) ) $=
+      ( vn wcel cn cmul co wceq wi c1 oveq1 oveq1d eqeq12d imbi2d vm csgrp nncn
+      w3a cv caddc mulid2d 3ad2ant1 sgrpmgm mulgnncl syl3an1 3coml mulg1 eqtr4d
+      cmgm syl wa cplusg cfv cc adantr simpr1 nncnd adddirp1d nnmulcl 3ad2antr1
+      simpr3 simpr2 eqid mulgnndir syl13anc eqtrd mulgnnp1 sylan2 syl5ibr nnind
+      ex a2d 3expd com4r 3imp2 ) CUBJZDKJZEKJZFAJZDELMZFBMZDEFBMZBMZNZWCWDWEWBW
+      JWCWDWEWBWJWDWEWBUDZIUEZELMZFBMZWLWHBMZNZOWKPELMZFBMZPWHBMZNZOWKUAUEZELMZ
+      FBMZXAWHBMZNZOWKXAPUFMZELMZFBMZXFWHBMZNZOWKWJOIUADWLPNZWPWTWKXKWNWRWOWSXK
+      WMWQFBWLPELQRWLPWHBQSTWLXANZWPXEWKXLWNXCWOXDXLWMXBFBWLXAELQRWLXAWHBQSTWLX
+      FNZWPXJWKXMWNXHWOXIXMWMXGFBWLXFELQRWLXFWHBQSTWLDNZWPWJWKXNWNWGWOWIXNWMWFF
+      BWLDELQRWLDWHBQSTWKWRWHWSWKWQEFBWDWEWQENWBWDEEUCUGUHRWKWHAJZWSWHNWBWDWEXO
+      WBCUOJWDWEXOCUIABCEFGHUJUKULZABCWHGHUMUPUNXAKJZWKXEXJXQWKXEXJOXEXJXQWKUQZ
+      XCWHCURUSZMZXDWHXSMZNXCXDWHXSQXRXHXTXIYAXRXHXBEUFMZFBMZXTXRXGYBFBXRXAEXQX
+      AUTJWKXAUCVAXREXQWDWEWBVBZVCVDRXRWBXBKJZWDWEYCXTNXQWDWEWBVGXQWEWDYEWBXAEV
+      EVFYDXQWDWEWBVHAXSBCXBEFGHXSVIZVJVKVLWKXQXOXIYANXPAXSBCXAWHGHYFVMVNSVOVQV
+      RVPVSVTWA $.
+
+    $( Product of group multiples, generalized to ` NN0 ` .  (Contributed by
+       Mario Carneiro, 13-Dec-2014.) $)
+    mulgnn0ass $p |- ( ( G e. Mnd /\ ( M e. NN0 /\ N e. NN0 /\ X e. B ) ) ->
+                              ( ( M x. N ) .x. X ) = ( M .x. ( N .x. X ) ) ) $=
+      ( wcel cn0 wa cn cmul co wceq cc0 adantr mulg0 oveq1d oveq1 csgrp mndsgrp
+      cmnd w3a simprl simprr simpr3 mulgnnass syl13anc expr c0g cfv eqid simpr1
+      syl nn0cnd mul01d oveq2d 3ad2antr1 eqtrd 3eqtr4d oveq2 eqeq12d syl5ibrcom
+      mulgnn0z wo simpr2 elnn0 sylib mpjaod ex mul02d mulgnn0cl 3adant3r1 ) CUC
+      IZDJIZEJIZFAIZUDZKZDLIZDEMNZFBNZDEFBNZBNZOZDPOZVTWAWFVTWAKZELIZWFEPOZVTWA
+      WIWFVTWAWIKZKCUAIZWAWIVRWFVTWLWKVOWLVSCUBQQVTWAWIUEVTWAWIUFVTVRWKVOVPVQVR
+      UGZQABCDEFGHUHUIUJWHWFWJDPMNZFBNZDPFBNZBNZOZVTWRWAVTWPCUKULZWOWQVTVRWPWSO
+      WMABCFWSGWSUMZHRUOZVTWNPFBVTDVTDVOVPVQVRUNZUPUQSVTWQDWSBNZWSVTWPWSDBXAURV
+      OVQVPXCWSOVRABCDWSGHWTVEUSUTVAQWJWCWOWEWQWJWBWNFBEPDMVBSWJWDWPDBEPFBTURVC
+      VDVTWIWJVFZWAVTVQXDVOVPVQVRVGZEVHVIQVJVKVTWFWGPEMNZFBNZPWDBNZOVTWPWSXGXHX
+      AVTXFPFBVTEVTEXEUPVLSVTWDAIZXHWSOVOVQVRXIVPABCEFGHVMVNABCWDWSGWTHRUOVAWGW
+      CXGWEXHWGWBXFFBDPEMTSDPWDBTVCVDVTVPWAWGVFXBDVHVIVJ $.
+
+    $( Product of group multiples, generalized to ` ZZ ` .  (Contributed by
+       Mario Carneiro, 13-Dec-2014.) $)
+    mulgass $p |- ( ( G e. Grp /\ ( M e. ZZ /\ N e. ZZ /\ X e. B ) ) ->
+                              ( ( M x. N ) .x. X ) = ( M .x. ( N .x. X ) ) ) $=
+      ( wcel cz wa cn0 cneg cmul co wceq ad2antrr adantr cfv syl3anc w3a simpr1
+      cgrp wo cr elznn0 simprbi syl simpr2 cmnd grpmnd simprl simprr mulgnn0ass
+      simplr3 syl13anc zcnd mulneg1d oveq1d simpr3 eqtr3d cminusg fveq2 zmulcld
+      ex simpl eqid mulgneg fveq2d mulgcl grpinvinv syldan eqtrd eqeq12d syl5ib
+      imp mulneg2d oveq2d mulgneg2 eqtr4d 3eqtr3d mul2negd nn0z ad2antll ccased
+      negnegd mp2and ) CUCIZDJIZEJIZFAIZUAZKZDLIZDMZLIZUDZELIZEMZLIZUDZDENOZFBO
+      ZDEFBOZBOZPZWMWIWQWHWIWJWKUBZWIDUEIWQDUFUGUHWMWJXAWHWIWJWKUIZWJEUEIXAEUFU
+      GUHWMWNWRWPWTXFWMWNWRKZXFWMXIKCUJIZWNWRWKXFWHXJWLXICUKZQWMWNWRULWMWNWRUMW
+      IWJWKWHXIUOABCDEFGHUNUPVEWMWPWRKZXFWMXLXBMZFBOZWOXDBOZPZXFWMXLKZWOENOZFBO
+      ZXNXOXQXRXMFBWMXRXMPXLWMDEWMDXGUQZWMEXHUQZURRUSXQXJWPWRWKXSXOPWHXJWLXLXKQ
+      WMWPWRULWMWPWRUMWMWKXLWHWIWJWKUTZRABCWOEFGHUNUPVAWMXPXFXPXNCVBSZSZXOYCSZP
+      WMXFXNXOYCVCWMYDXCYEXEWMYDXCYCSZYCSZXCWMXNYFYCWMWHXBJIZWKXNYFPWHWLVFZWMDE
+      XGXHVDZYBABCYCXBFGHYCVGZVHTVIWHWLXCAIZYGXCPWMWHYHWKYLYIYJYBABCXBFGHVJTACY
+      CXCGYKVKVLVMWMYEXEYCSZYCSZXEWMXOYMYCWMWHWIXDAIZXOYMPYIXGWMWHWJWKYOYIXHYBA
+      BCEFGHVJTZABCYCDXDGHYKVHTVIWHWLXEAIZYNXEPWMWHWIYOYQYIXGYPABCDXDGHVJTACYCX
+      EGYKVKVLVMVNVOVPZVLVEWMWNWTKZXFWMYSXPXFWMYSKZDWSNOZFBOZDWSFBOZBOZXNXOYTXJ
+      WNWTWKUUBUUDPWHXJWLYSXKQWMWNWTULWMWNWTUMWMWKYSYBRABCDWSFGHUNUPYTUUAXMFBWM
+      UUAXMPYSWMDEXTYAVQRUSWMUUDXOPYSWMUUDDXDYCSZBOZXOWMUUCUUEDBWMWHWJWKUUCUUEP
+      YIXHYBABCYCEFGHYKVHTVRWMWHWIYOXOUUFPYIXGYPABCYCDXDGHYKVSTVTRWAYRVLVEWMWPW
+      TKZXFWMUUGKZWOWSNOZFBOZWOUUCBOZXCXEUUHXJWPWTWKUUJUUKPWHXJWLUUGXKQWMWPWTUL
+      WMWPWTUMWMWKUUGYBRZABCWOWSFGHUNUPWMUUJXCPUUGWMUUIXBFBWMDEXTYAWBUSRUUHUUKD
+      UUCYCSZBOZXEUUHWHWIUUCAIZUUKUUNPWMWHUUGYIRZWMWIUUGXGRUUHWHWSJIZWKUUOUUPWT
+      UUQWMWPWSWCWDZUULABCWSFGHVJTABCYCDUUCGHYKVSTUUHUUMXDDBUUHWSMZFBOZUUMXDUUH
+      WHUUQWKUUTUUMPUUPUURUULABCYCWSFGHYKVHTUUHUUSEFBWMUUSEPUUGWMEYAWFRUSVAVRVM
+      WAVEWEWG $.
+
+    $( Reversed product of group multiples.  (Contributed by Paul Chapman,
+       17-Apr-2009.)  (Revised by AV, 30-Aug-2021.) $)
+    mulgassr $p |- ( ( G e. Grp /\ ( M e. ZZ /\ N e. ZZ /\ X e. B ) ) ->
+                              ( ( N x. M ) .x. X ) = ( M .x. ( N .x. X ) ) ) $=
+      ( cgrp wcel cz w3a wa cmul co wceq cc zcn 3ad2ant2 3ad2ant1 adantl oveq1d
+      mulcomd mulgass eqtrd ) CIJZDKJZEKJZFAJZLZMZEDNOZFBODENOZFBODEFBOBOUKULUM
+      FBUJULUMPUFUJEDUHUGEQJUIERSUGUHDQJUIDRTUCUAUBABCDEFGHUDUE $.
+  $}
+
+  ${
+    mulgmodid.b $e |- B = ( Base ` G ) $.
+    mulgmodid.o $e |- .0. = ( 0g ` G ) $.
+    mulgmodid.t $e |- .x. = ( .g ` G ) $.
+    $( Casting out multiples of the identity element leaves the group multiple
+       unchanged.  (Contributed by Paul Chapman, 17-Apr-2009.)  (Revised by AV,
+       30-Aug-2021.) $)
+    mulgmodid $p |- ( ( G e. Grp /\ ( N e. ZZ /\ M e. NN )
+                        /\ ( X e. B /\ ( M .x. X ) = .0. ) )
+                      -> ( ( N mod M ) .x. X ) = ( N .x. X ) ) $=
+      ( wcel cz wa co wceq cfv cq adantl 3ad2ant2 oveq1d cgrp w3a cmo cdiv cmul
+      cn cfl cneg cplusg cmin caddc cc0 clt wbr zq adantr nngt0 modqval syl3anc
+      nnq cc zcn nnz znq zmulcld zcnd negsubd simp1 simpl znegcld 3ad2ant3 eqid
+      flqcld mulgdir syl13anc 3eqtr2d nncn mulneg2d mulgassr oveq2 mulgz 3eqtrd
+      syl2anc eqtr3d oveq2d id mulgcl syl3an grprid ) CUAKZELKZDUFKZMZFAKZDFBNZ
+      GOZMZUBZEDUCNZFBNZEFBNZDEDUDNZUGPZUENZUHZFBNZCUIPZNZXAGXGNZXAWRWTEXDUJNZF
+      BNEXEUKNZFBNZXHWRWSXJFBWMWJWSXJOZWQWMEQKZDQKZULDUMUNZXMWKXNWLEUOUPWLXOWKD
+      UTRWLXPWKDUQREDURUSSTWRXKXJFBWMWJXKXJOWQWMEXDWKEVAKWLEVBUPWMXDWMDXCWLDLKZ
+      WKDVCRZWMXBEDVDZVMZVEVFVGSTWRWJWKXELKWNXLXHOWJWMWQVHZWMWJWKWQWKWLVIZSWRXD
+      WRDXCWMWJXQWQXRSZWMWJXCLKWQXTSVEVJWQWJWNWMWNWPVIZVKZAXGBCEXEFHJXGVLZVNVOV
+      PWRXFGXAXGWRDXCUHZUENZFBNZXFGWRYHXEFBWMWJYHXEOWQWMDXCWLDVAKWKDVQRWMXCXTVF
+      VRSTWRYIYGWOBNZYGGBNZGWRWJYGLKZXQWNYIYJOYAWRXCWRXBWMWJXBQKWQXSSVMVJZYCYEA
+      BCYGDFHJVSVOWQWJYJYKOZWMWPYNWNWOGYGBVTRVKWRWJYLYKGOYAYMABCYGGHJIWAWCWBWDW
+      EWRWJXAAKZXIXAOYAWJWJWMWKWQWNYOWJWFYBYDABCEFHJWGWHAXGCXAGHYFIWIWCWB $.
+  $}
+
+  ${
+    mulgsubdir.b $e |- B = ( Base ` G ) $.
+    mulgsubdir.t $e |- .x. = ( .g ` G ) $.
+    mulgsubdir.d $e |- .- = ( -g ` G ) $.
+    $( Distribution of group multiples over subtraction for group elements,
+       ~ subdir analog.  (Contributed by Mario Carneiro, 13-Dec-2014.) $)
+    mulgsubdir $p |- ( ( G e. Grp /\ ( M e. ZZ /\ N e. ZZ /\ X e. B ) ) ->
+      ( ( M - N ) .x. X ) = ( ( M .x. X ) .- ( N .x. X ) ) ) $=
+      ( cgrp wcel cz co cfv wceq eqid zcnd 3adant3r1 mulgcl w3a wa caddc cplusg
+      cneg znegcl mulgdir syl3anr2 simpr1 simpr2 negsubd oveq1d cminusg mulgneg
+      cmin oveq2d 3adant3r2 grpsubval syl2anc eqtr4d 3eqtr3d ) CKLZDMLZFMLZGALZ
+      UAUBZDFUEZUCNZGBNZDGBNZVGGBNZCUDOZNZDFUONZGBNVJFGBNZENZVDVCVBVGMLVEVIVMPF
+      UFAVLBCDVGGHIVLQZUGUHVFVHVNGBVFDFVFDVBVCVDVEUIRVFFVBVCVDVEUJRUKULVFVMVJVO
+      CUMOZOZVLNZVPVFVKVSVJVLVBVDVEVKVSPVCABCVRFGHIVRQZUNSUPVFVJALZVOALZVPVTPVB
+      VCVEWBVDABCDGHITUQVBVDVEWCVCABCFGHITSAVLCVREVJVOHVQWAJURUSUTVA $.
+  $}
+
+  ${
+    $d m n B $.  $d m n F $.  $d m n G $.  $d m n H $.  $d n N $.  $d m n X $.
+    $d m n .x. $.  $d m n .X. $.
+    mhmmulg.b $e |- B = ( Base ` G ) $.
+    mhmmulg.s $e |- .x. = ( .g ` G ) $.
+    mhmmulg.t $e |- .X. = ( .g ` H ) $.
+    $( A homomorphism of monoids preserves group multiples.  (Contributed by
+       Mario Carneiro, 14-Jun-2015.) $)
+    mhmmulg $p |- ( ( F e. ( G MndHom H ) /\ N e. NN0 /\ X e. B ) ->
+        ( F ` ( N .x. X ) ) = ( N .X. ( F ` X ) ) ) $=
+      ( wcel co cfv wceq wi cc0 oveq1 eqeq12d eqid vn vm cn0 cmhm wa cv fvoveq1
+      c1 caddc imbi2d c0g mhm0 adantr adantl fveq2d cbs mhmf ffvelcdmda 3eqtr4d
+      mulg0 syl cplusg cmnd mhmrcl1 ad2antrr simplr mulgnn0p1 syl3anc mulgnn0cl
+      simpr simpll an32s mhmlin mhmrcl2 syl5ibr expcom a2d nn0ind 3impib 3com12
+      eqtrd ) GUCLZDEFUDMLZHALZGHBMDNZGHDNZCMZOZWBWCWDWHWCWDUEZUAUFZHBMDNZWJWFC
+      MZOZPWIQHBMZDNZQWFCMZOZPWIUBUFZHBMZDNZWRWFCMZOZPWIWRUHUIMZHBMZDNZXCWFCMZO
+      ZPWIWHPUAUBGWJQOZWMWQWIXHWKWOWLWPWJQHDBUGWJQWFCRSUJWJWROZWMXBWIXIWKWTWLXA
+      WJWRHDBUGWJWRWFCRSUJWJXCOZWMXGWIXJWKXEWLXFWJXCHDBUGWJXCWFCRSUJWJGOZWMWHWI
+      XKWKWEWLWGWJGHDBUGWJGWFCRSUJWIEUKNZDNZFUKNZWOWPWCXMXNOWDEFDXNXLXLTZXNTZUL
+      UMWIWNXLDWDWNXLOWCABEHXLIXOJUTUNUOWIWFFUPNZLZWPXNOWCAXQHDAXQEFDIXQTZUQURZ
+      XQCFWFXNXSXPKUTVAUSWRUCLZWIXBXGWIYAXBXGPXBXGWIYAUEZWTWFFVBNZMZXAWFYCMZOWT
+      XAWFYCRYBXEYDXFYEYBXEWSHEVBNZMZDNZYDYBXDYGDYBEVCLZYAWDXDYGOWCYIWDYAEFDVDZ
+      VEWIYAVJZWCWDYAVFZAYFBEWRHIJYFTZVGVHUOYBWCWSALZWDYHYDOWCWDYAVKWCYAWDYNWCY
+      AUEZWDUEYIYAWDYNWCYIYAWDYJVEWCYAWDVFYOWDVJABEWRHIJVIVHVLYLAYFYCEFDWSHIYMY
+      CTZVMVHWAYBFVCLZYAXRXFYEOWCYQWDYAEFDVNVEYKWIXRYAXTUMXQYCCFWRWFXSKYPVGVHSV
+      OVPVQVRVSVT $.
+  $}
+
+  ${
+    $d x y G $.  $d x y N $.  $d x y S $.  $d x .xb $.  $d x y X $.
+    submmulgcl.t $e |- .xb = ( .g ` G ) $.
+    $( Closure of the group multiple (exponentiation) operation in a submonoid.
+       (Contributed by Mario Carneiro, 13-Jan-2015.) $)
+    submmulgcl $p |- ( ( S e. ( SubMnd ` G ) /\ N e. NN0 /\ X e. S ) ->
+      ( N .xb X ) e. S ) $=
+      ( vx vy csubmnd cfv wcel cbs cplusg cmnd c0g eqid submrcl submss submcl
+      cv subm0cl mulgnn0subcl ) ACIJKGHCLJZCMJZABCDNECOJZUCPZFUDPZACQUCACUFRUDA
+      CGTHTUGSUEPZACUEUHUAUB $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -163657,6 +164429,9 @@ htmldef "-g" as
     "<IMG SRC='_minusg.gif' WIDTH=17 HEIGHT=19 ALT=' -g' TITLE='-g'>";
   althtmldef "-g" as "-<SUB>g</SUB>";
   latexdef "-g" as "-_\mathrm{g}";
+htmldef ".g" as ".<SUB>g</SUB>";
+  althtmldef ".g" as ".<SUB>g</SUB>";
+  latexdef ".g" as "\cdot_\mathrm{g}";
 htmldef "MndHom" as " MndHom ";
   althtmldef "MndHom" as " MndHom ";
   latexdef "MndHom" as " \mathrm{MndHom} ";
