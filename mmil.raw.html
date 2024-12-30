@@ -1911,7 +1911,7 @@ csbifgOLD</TD>
 </TR>
 
 <TR>
-  <TD>ifcl , ifcld</TD>
+  <TD>ifcl , ifcld , ifcli , ifex</TD>
   <TD>~ ifcldcd , ~ ifcldadc</TD>
 </TR>
 
@@ -10559,12 +10559,192 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>grpinvpropd</td>
+  <td>~ grpinvpropdg</td>
+</tr>
+
+<tr>
+  <td>dfgrp3</td>
+  <td>~ dfgrp3m</td>
+</tr>
+
+<tr>
+  <td>dfgrp3e</td>
+  <td>~ dfgrp3me</td>
+</tr>
+
+<tr>
+  <td>grplactval</td>
+  <td><i>none</i></td>
+  <td>would seem to need a ` .+ = ( +g `` G ) ` hypothesis</td>
+</tr>
+
+<tr>
+  <td>grpsubpropd</td>
+  <td>~ grpsubpropdg</td>
+</tr>
+
+<tr>
+  <td>prdsinvlem , prdsgrpd , prdsinvgd</td>
+  <td><i>none</i></td>
+  <td>depend on structure product theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>pwsgrp , pwsinvg , pwssub</td>
+  <td><i>none</i></td>
+  <td>depend on structure power theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>imasgrp2 , imasgrp , imasgrpf1</td>
+  <td><i>none</i></td>
+  <td>depend on structure image</td>
+</tr>
+
+<tr>
+  <td>qusgrp2</td>
+  <td><i>none</i></td>
+  <td>depends on quotient structure</td>
+</tr>
+
+<tr>
+  <td>xpsgrp</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on prdsgrpd</td>
+</tr>
+
+<tr>
+  <td>mulgfval , mulgfvalALT</td>
+  <td>~ mulgfvalg</td>
+</tr>
+
+<tr>
+  <td>mulgfn</td>
+  <td>~ mulgfng</td>
+</tr>
+
+<tr>
+  <td>mulgfvi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses case elimination on ` G e. _V `</td>
+</tr>
+
+<tr>
+  <td>mulgnngsum</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses gsumval2</td>
+</tr>
+
+<tr>
+  <td>mulgnn0gsum</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mulgnngsum and gsum0</td>
+</tr>
+
+<tr>
+  <td>mulgpropd</td>
+  <td><i>none</i></td>
+  <td>presumably would be provable with ` G e. _V ` and ` H e. _V `
+  hypotheses added</td>
+</tr>
+
+<tr>
+  <td>submmulg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ressplusg</td>
+</tr>
+
+<tr>
+  <td>pwsmulg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses pwspjmhm and pwsmnd</td>
+</tr>
+
+<tr>
+  <td>setsplusg</td>
+  <td>~ setsslnid</td>
+</tr>
+
+<tr>
+  <td>mgpval</td>
+  <td>~ mgpvalg</td>
+</tr>
+
+<tr>
+  <td>mgpplusg</td>
+  <td>~ mgpplusgg</td>
+</tr>
+
+<tr>
+  <td>mgpbas</td>
+  <td>~ mgpbasg</td>
+</tr>
+
+<tr>
+  <td>mgpsca</td>
+  <td>~ mgpscag</td>
+</tr>
+
+<tr>
+  <td>mgptset</td>
+  <td>~ mgptsetg</td>
+</tr>
+
+<tr>
+  <td>mgptopn</td>
+  <td>~ mgptopng</td>
+</tr>
+
+<tr>
+  <td>mgpds</td>
+  <td>~ mgpdsg</td>
+</tr>
+
+<tr>
+  <td>mgpress</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ressmulr and also uses case elimination
+  on ` ( Base `` R ) C_ A `</td>
+</tr>
+
+<tr>
+  <td>ringidval</td>
+  <td>~ ringidvalg</td>
+</tr>
+
+<tr>
+  <td>dfur2</td>
+  <td>~ dfur2g</td>
+</tr>
+
+<tr>
+  <td>df-drng</td>
+  <td><i>none</i></td>
+  <td>The set.mm definition is in terms of having an inverse
+  if not equal to zero.  We may want a new slot for apartness
+  (the approach taken in [Guevers]), or perhaps we can define
+  a division ring as a ring for which ` A. x e. ( Base `` R )
+  ( -. x e. ( ` Unit ` `` R ) -> x = ( 0g `` R ) ) ` (that is,
+  that apartness with zero is tight, although presumably we'd
+  want to show that the relation generated in this fashion
+  can be shown to be an apartness relation, assuming that can
+  be done).</td>
+</tr>
+
+<tr>
+  <td>df-field</td>
+  <td><i>none</i></td>
+  <td>once we define division rings this should follow</td>
+</tr>
+
+<tr>
   <td id="missing-df-cnfld">df-cnfld and all theorems using CCfld</td>
   <td><i>none</i></td>
-  <td>Could presumably be defined in some form, but we'd have to look
-  at the literature definitions of a constructive field and see how
-  we'd need to define this.  Plus questions about whether
-  to define order in terms of ` < ` or ` <_ ` .</td>
+  <td>See df-drng and df-field concerning how we want to handle
+  apartness.  Plus questions about whether to define order in terms
+  of ` < ` or ` <_ ` (presumably the former, unlike set.mm which
+  uses the latter).</td>
 </tr>
 
 <TR>
@@ -12775,6 +12955,13 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>lgsfval</td>
   <td>~ lgsfvalg</td>
   <td>adds ` A e. ZZ ` and ` N e. NN ` conditions</td>
+</tr>
+
+<tr>
+  <td>lgsqr</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses df-zn , df-ply1 , df-zrh , df-deg1 ,
+  and possibly other things not yet defined in iset.mm</td>
 </tr>
 
 <tr>
