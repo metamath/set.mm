@@ -148205,6 +148205,18 @@ $)
       PEFBOGDOSFGDOBOPABCDEFGHIJQR $.
   $}
 
+  ${
+    srgidcl.b $e |- B = ( Base ` R ) $.
+    srgidcl.u $e |- .1. = ( 1r ` R ) $.
+    $( The unit element of a semiring belongs to the base set of the semiring.
+       (Contributed by NM, 27-Aug-2011.)  (Revised by Mario Carneiro,
+       27-Dec-2014.)  (Revised by Thierry Arnoux, 1-Apr-2018.) $)
+    srgidcl $p |- ( R e. SRing -> .1. e. B ) $=
+      ( csrg wcel cmgp cfv c0g cbs cmnd eqid srgmgp mndidcl syl mgpbasg 3eltr4d
+      ringidvalg ) BFGZBHIZJIZUAKIZCATUALGUBUCGBUAUAMZNUCUAUBUCMUBMOPBCUAFUDESA
+      BUAFUDDQR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
