@@ -148243,6 +148243,20 @@ $)
       VELZEMZKZUPVCUCJUQEVCUDOZJZVJBVCVCRZUAUPUQVLUPAVKEABVCIVMFUEUFUGVKVEVCEVD
       VKRVERVDRUHUMUPVBVJUBUQUPUSVGVAVIUPURVFEUPDVDEECVEBCVCIVMGUIZBDVCIVMHUJZU
       PEUKZSTUPUTVHEUPEEDVDCVEVNVPVOSTULUNUO $.
+
+    $( The unit element of a semiring is a left multiplicative identity.
+       (Contributed by NM, 15-Sep-2011.)  (Revised by Thierry Arnoux,
+       1-Apr-2018.) $)
+    srglidm $p |- ( ( R e. SRing /\ X e. B ) -> ( .1. .x. X ) = X ) $=
+      ( csrg wcel wa co wceq srgidmlem simpld ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
+      $.
+
+    $( The unit element of a semiring is a right multiplicative identity.
+       (Contributed by NM, 15-Sep-2011.)  (Revised by Thierry Arnoux,
+       1-Apr-2018.) $)
+    srgridm $p |- ( ( R e. SRing /\ X e. B ) -> ( X .x. .1. ) = X ) $=
+      ( csrg wcel wa co wceq srgidmlem simprd ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
+      $.
   $}
 
 
