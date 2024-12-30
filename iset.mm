@@ -148168,6 +148168,22 @@ $)
       UPEVJURUQVSSTUHUIUJUKUPCVGLVEVIULCDVFHVRFUNVDVHBCVGVCACVGUMUORUK $.
   $}
 
+  ${
+    $d B a b c $.  $d R a b $.  $d .x. a b c $.
+    srgfcl.b $e |- B = ( Base ` R ) $.
+    srgfcl.t $e |- .x. = ( .r ` R ) $.
+    $( Functionality of the multiplication operation of a ring.  (Contributed
+       by Steve Rodriguez, 9-Sep-2007.)  (Revised by AV, 24-Aug-2021.) $)
+    srgfcl $p |- ( ( R e. SRing /\ .x. Fn ( B X. B ) )
+                   -> .x. : ( B X. B ) --> B ) $=
+      ( vc va vb csrg wcel cxp wfn wa crn wss wf simpr cv cfv wral co srgcl cop
+      3expb ralrimivva fveq2 eleq1d eqcomi eleq1i bitrdi sylibr adantr fnfvrnss
+      wceq df-ov ralxp syl2anc df-f sylanbrc ) BIJZCAAKZLZMZVBCNAOZVAACPUTVBQZV
+      CVBFRZCSZAJZFVATZVDVEUTVIVBUTGRZHRZCUAZAJZHATGATVIUTVMGHAAUTVJAJVKAJVMABC
+      VJVKDEUBUDUEVHVMFGHAAVFVJVKUCZUNZVHVNCSZAJVMVOVGVPAVFVNCUFUGVPVLAVLVPVJVK
+      CUOUHUIUJUPUKULFVAACUMUQVAACURUS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
