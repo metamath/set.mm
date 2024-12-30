@@ -148257,6 +148257,22 @@ $)
     srgridm $p |- ( ( R e. SRing /\ X e. B ) -> ( X .x. .1. ) = X ) $=
       ( csrg wcel wa co wceq srgidmlem simprd ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
       $.
+
+    $( Properties showing that an element ` I ` is the unity element of a
+       semiring.  (Contributed by NM, 7-Aug-2013.)  (Revised by Thierry Arnoux,
+       1-Apr-2018.) $)
+    issrgid $p |- ( R e. SRing
+      -> ( ( I e. B /\ A. x e. B ( ( I .x. x ) = x /\ ( x .x. I ) = x ) )
+        <-> .1. = I ) ) $=
+      ( vy csrg wcel cfv co wceq wa wral eqid oveqd eqeq1d cmgp cbs cplusg wrex
+      c0g wreu srgideu reurex syl mgpbasg mgpplusgg anbi12d raleqbidv rexeqbidv
+      cv mpbid ismgmid eleq2d ringidvalg 3bitr4d ) CKLZFCUAMZUBMZLZFAUOZVBUCMZN
+      ZVEOZVEFVFNZVEOZPZAVCQZPVBUEMZFOFBLZFVEDNZVEOZVEFDNZVEOZPZABQZPEFOVAAVCVF
+      FJVBVMVCRVMRVFRVAJUOZVEDNZVEOZVEWADNZVEOZPZABQZJBUDZWAVEVFNZVEOZVEWAVFNZV
+      EOZPZAVCQZJVCUDVAWGJBUFWHAJBCDGHUGWGJBUHUIVAWGWNJBVCBCVBKVBRZGUJZVAWFWMAB
+      VCWPVAWCWJWEWLVAWBWIVEVADVFWAVECDVBKWOHUKZSTVAWDWKVEVADVFVEWAWQSTULUMUNUP
+      UQVAVNVDVTVLVABVCFWPURVAVSVKABVCWPVAVPVHVRVJVAVOVGVEVADVFFVEWQSTVAVQVIVEV
+      ADVFVEFWQSTULUMULVAEVMFCEVBKWOIUSTUT $.
   $}
 
 
