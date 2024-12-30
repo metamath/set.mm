@@ -147466,13 +147466,17 @@ $)
   $( Extend class notation with ring unit. $)
   cur $a class 1r $.
 
-  $( Define the multiplicative neutral element of a ring.  This definition
-     works by extracting the ` 0g ` element, i.e. the neutral element in a
-     group or monoid, and transferring it to the multiplicative monoid via the
-     ` mulGrp ` function ( ~ df-mgp ).  See also ~ dfur2g , which derives the
-     "traditional" definition as the unique element of a ring which is left-
-     and right-neutral under multiplication.  (Contributed by NM, 27-Aug-2011.)
-     (Revised by Mario Carneiro, 27-Dec-2014.) $)
+  $( Define the multiplicative identity, i.e., the monoid identity ( ~ df-0g )
+     of the multiplicative monoid ( ~ df-mgp ) of a ring-like structure.  This
+     definition works by transferring the multiplicative operation from the
+     ` .r ` slot to the ` +g ` slot and then looking at the element which is
+     then the ` 0g ` element, that is an identity with respect to the operation
+     which started out in the ` .r ` slot.
+
+     See also ~ dfur2g , which derives the "traditional" definition as the
+     unique element of a ring which is left- and right-neutral under
+     multiplication.  (Contributed by NM, 27-Aug-2011.)  (Revised by Mario
+     Carneiro, 27-Dec-2014.) $)
   df-ur $a |- 1r = ( 0g o. mulGrp ) $.
 
   ${
