@@ -148153,6 +148153,19 @@ $)
       USUEUPAVMOUTABVBIVNGUFQZRVAEAVMUPUQURUSUGVORVAFAVMUPUQURUSUHVORVMVCVBDEFV
       MPVCPUIUJVAVIVHFVCNVEVACVCVHFUPCVCOUTBCVBIVNHUKQZSVAVHVDFVCVACVCDEVPSULTV
       AVKDVJVCNVGVACVCDVJVPSVAVJVFDVCVACVCEFVPSUNTUO $.
+
+    $d u x B $.  $d u x R $.  $d u x .x. $.
+    $( The unit element of a semiring is unique.  (Contributed by NM,
+       27-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.)  (Revised by
+       Thierry Arnoux, 1-Apr-2018.) $)
+    srgideu $p |- ( R e. SRing ->
+                E! u e. B A. x e. B ( ( u .x. x ) = x /\ ( x .x. u ) = x ) ) $=
+      ( csrg wcel cv co wceq wa wral wreu cfv eqid syl oveqd eqeq1d cmgp cplusg
+      cbs cmnd srgmgp mndideu mgpplusgg anbi12d ralbidv reubidv mpbird wb raleq
+      mgpbasg reueqd ) DHIZBJZAJZEKZURLZURUQEKZURLZMZACNZBCOZVCADUAPZUCPZNZBVGO
+      ZUPVIUQURVFUBPZKZURLZURUQVJKZURLZMZAVGNZBVGOZUPVFUDIVQDVFVFQZUEABVGVJVFVG
+      QVJQUFRUPVHVPBVGUPVCVOAVGUPUTVLVBVNUPUSVKURUPEVJUQURDEVFHVRGUGZSTUPVAVMUR
+      UPEVJURUQVSSTUHUIUJUKUPCVGLVEVIULCDVFHVRFUNVDVHBCVGVCACVGUMUORUK $.
   $}
 
 
