@@ -148217,6 +148217,16 @@ $)
       BUAFUDDQR $.
   $}
 
+  ${
+    srg0cl.b $e |- B = ( Base ` R ) $.
+    srg0cl.z $e |- .0. = ( 0g ` R ) $.
+    $( The zero element of a semiring belongs to its base set.  (Contributed by
+       Mario Carneiro, 12-Jan-2014.)  (Revised by Thierry Arnoux,
+       1-Apr-2018.) $)
+    srg0cl $p |- ( R e. SRing -> .0. e. B ) $=
+      ( csrg wcel cmnd srgmnd mndidcl syl ) BFGBHGCAGBIABCDEJK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
