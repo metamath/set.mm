@@ -148184,6 +148184,27 @@ $)
       CUOUHUIUJUPUKULFVAACUMUQVAACURUS $.
   $}
 
+  ${
+    srgdi.b $e |- B = ( Base ` R ) $.
+    srgdi.p $e |- .+ = ( +g ` R ) $.
+    srgdi.t $e |- .x. = ( .r ` R ) $.
+    $( Distributive law for the multiplication operation of a semiring.
+       (Contributed by Steve Rodriguez, 9-Sep-2007.)  (Revised by Thierry
+       Arnoux, 1-Apr-2018.) $)
+    srgdi $p |- ( ( R e. SRing /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                     ( X .x. ( Y .+ Z ) ) = ( ( X .x. Y ) .+ ( X .x. Z ) ) ) $=
+      ( csrg wcel w3a wa co wceq srgi simpld ) CKLEALFALGALMNEFGBODOEFDOEGDOZBO
+      PEFBOGDOSFGDOBOPABCDEFGHIJQR $.
+
+    $( Distributive law for the multiplication operation of a semiring.
+       (Contributed by Steve Rodriguez, 9-Sep-2007.)  (Revised by Thierry
+       Arnoux, 1-Apr-2018.) $)
+    srgdir $p |- ( ( R e. SRing /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                     ( ( X .+ Y ) .x. Z ) = ( ( X .x. Z ) .+ ( Y .x. Z ) ) ) $=
+      ( csrg wcel w3a wa co wceq srgi simprd ) CKLEALFALGALMNEFGBODOEFDOEGDOZBO
+      PEFBOGDOSFGDOBOPABCDEFGHIJQR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
