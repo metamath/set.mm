@@ -148227,6 +148227,24 @@ $)
       ( csrg wcel cmnd srgmnd mndidcl syl ) BFGBHGCAGBIABCDEJK $.
   $}
 
+  ${
+    $d x y B $.  $d x y I $.  $d x y R $.  $d x y .x. $.  $d x y .1. $.
+    srgidm.b $e |- B = ( Base ` R ) $.
+    srgidm.t $e |- .x. = ( .r ` R ) $.
+    srgidm.u $e |- .1. = ( 1r ` R ) $.
+    $( Lemma for ~ srglidm and ~ srgridm .  (Contributed by NM, 15-Sep-2011.)
+       (Revised by Mario Carneiro, 27-Dec-2014.)  (Revised by Thierry Arnoux,
+       1-Apr-2018.) $)
+    srgidmlem $p |- ( ( R e. SRing /\ X e. B )
+           -> ( ( .1. .x. X ) = X /\ ( X .x. .1. ) = X ) ) $=
+      ( csrg wcel wa co wceq cmgp cfv c0g cplusg eqid oveq123d eqeq1d srgmgp wb
+      cmnd cbs mgpbasg eleq2d biimpa mndlrid mgpplusgg ringidvalg eqidd anbi12d
+      syl2an2r adantr mpbird ) BIJZEAJZKDECLZEMZEDCLZEMZKZBNOZPOZEVCQOZLZEMZEVD
+      VELZEMZKZUPVCUCJUQEVCUDOZJZVJBVCVCRZUAUPUQVLUPAVKEABVCIVMFUEUFUGVKVEVCEVD
+      VKRVERVDRUHUMUPVBVJUBUQUPUSVGVAVIUPURVFEUPDVDEECVEBCVCIVMGUIZBDVCIVMHUJZU
+      PEUKZSTUPUTVHEUPEEDVDCVEVNVPVOSTULUNUO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
