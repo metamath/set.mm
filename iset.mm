@@ -148343,6 +148343,28 @@ $)
       GKCDFHJUAUNUPBFCULFPUMUKGULFGEUBUCUDUHUEAUQGCTUKFPKLCDEGFHIJUFUIUJ $.
   $}
 
+  ${
+    srg1zr.b $e |- B = ( Base ` R ) $.
+    srg1zr.p $e |- .+ = ( +g ` R ) $.
+    srg1zr.t $e |- .* = ( .r ` R ) $.
+    $( The only semiring with a base set consisting of one element is the zero
+       ring (at least if its operations are internal binary operations).
+       (Contributed by FL, 13-Feb-2010.)  (Revised by AV, 25-Jan-2020.) $)
+    srg1zr $p |- ( ( ( R e. SRing /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+           /\ Z e. B ) -> ( B = { Z } <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( csn wceq wa csrg wcel cxp wfn cop cmgm adantr cfv eqid pm4.24 wb srgmnd
+      w3a cmnd 3ad2ant1 mndmgm syl simpl2 mgmb1mgm1 syl3anc cmgp cplusg mgpbasg
+      simpr cbs eqeq1d simpl1 srgmgp 3syl eleqtrd fneq1d biimpa 3adant2 sqxpeqd
+      mgpplusgg fneq2d mpbid eqcomd 3bitrd anbi12d bitrid ) AEIZJZVNVNKCLMZBAAN
+      ZOZDVPOZUDZEAMZKZBEEPEPIZJZDWBJZKVNUAWAVNWCVNWDWACQMZVTVQVNWCUBWACUEMZWEV
+      SWFVTVOVQWFVRCUCUFRCUGUHVSVTUOZVOVQVRVTUIABCEFGUJUKWAVNCULSZUPSZVMJZWHUMS
+      ZWBJZWDWAAWIVMVSAWIJZVTVOVQWMVRACWHLWHTZFUNUFRZUQWAWHQMZEWIMWKWIWINZOZWJW
+      LUBWAVOWHUEMWPVOVQVRVTURZCWHWNUSWHUGUTWAEAWIWGWOVAWAWKVPOZWRVSWTVTVOVRWTV
+      QVOVRWTVOVPDWKCDWHLWNHVFZVBVCVDRWAVPWQWKWAAWIWOVEVGVHWIWKWHEWITWKTUJUKWAW
+      KDWBWAVOWKDJWSVODWKXAVIUHUQVJVKVL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
