@@ -148405,6 +148405,46 @@ $)
       OVIVPWAVQVRVSVT $.
   $}
 
+  ${
+    $d A x y $.  $d B x y $.  $d K x $.  $d ph x y $.  $d .^ x y $.
+    $d .X. x y $.
+    srgpcomp.s $e |- S = ( Base ` R ) $.
+    srgpcomp.m $e |- .X. = ( .r ` R ) $.
+    srgpcomp.g $e |- G = ( mulGrp ` R ) $.
+    srgpcomp.e $e |- .^ = ( .g ` G ) $.
+    srgpcomp.r $e |- ( ph -> R e. SRing ) $.
+    srgpcomp.a $e |- ( ph -> A e. S ) $.
+    srgpcomp.b $e |- ( ph -> B e. S ) $.
+    srgpcomp.k $e |- ( ph -> K e. NN0 ) $.
+    srgpcomp.c $e |- ( ph -> ( A .X. B ) = ( B .X. A ) ) $.
+    $( If two elements of a semiring commute, they also commute if one of the
+       elements is raised to a higher power.  (Contributed by AV,
+       23-Aug-2019.) $)
+    srgpcomp $p |- ( ph -> ( ( K .^ B ) .X. A ) = ( A .X. ( K .^ B ) ) ) $=
+      ( co wceq vx vy cn0 cv wi cc0 c1 caddc oveq1 oveq1d oveq2d eqeq12d imbi2d
+      wcel cur cfv c0g cbs csrg mgpbasg eleqtrd mulg0 ringidvalg eqtr4d srgridm
+      syl eqid syl2anc srglidm 3eqtr4rd eqtrd wa cplusg srgmgp adantr mulgnn0p1
+      simpr syl3anc wb mgpplusgg eqeq2d mpbird eqcomd mulgnn0cl eleqtrrd srgass
+      cmnd oveqd syl13anc 3eqtr4d sylan9eqr ex expcom a2d nn0ind mpcom ) IUCUNA
+      ICGSZBFSZBWQFSZTZQAUAUDZCGSZBFSZBXBFSZTZUEAUFCGSZBFSZBXFFSZTZUEAUBUDZCGSZ
+      BFSZBXKFSZTZUEAXJUGUHSZCGSZBFSZBXPFSZTZUEAWTUEUAUBIXAUFTZXEXIAXTXCXGXDXHX
+      TXBXFBFXAUFCGUIZUJXTXBXFBFYAUKULUMXAXJTZXEXNAYBXCXLXDXMYBXBXKBFXAXJCGUIZU
+      JYBXBXKBFYCUKULUMXAXOTZXEXSAYDXCXQXDXRYDXBXPBFXAXOCGUIZUJYDXBXPBFYEUKULUM
+      XAITZXEWTAYFXCWRXDWSYFXBWQBFXAICGUIZUJYFXBWQBFYGUKULUMAXGDUOUPZBFSZXHAXFY
+      HBFAXFHUQUPZYHACHURUPZUNZXFYJTACEYKPADUSUNZEYKTZNEDHUSLJUTVFZVAYKGHCYJYKV
+      GZYJVGMVBVFAYMYHYJTNDYHHUSLYHVGZVCVFVDZUJABYHFSZBXHYIAYMBEUNZYSBTNOEDFYHB
+      JKYQVEVHAXFYHBFYRUKAYMYTYIBTNOEDFYHBJKYQVIVHVJVKXJUCUNZAXNXSAUUAXNXSUEAUU
+      AVLZXNXSUUBXNVLXQXLCFSZXRUUBXQUUCTXNUUBXQXKCFSZBFSZUUCUUBXPUUDBFUUBXPUUDT
+      ZXPXKCHVMUPZSZTZUUBHWGUNZUUAYLUUIAUUJUUAAYMUUJNDHLVNVFVOZAUUAVQZUUBCEYKAC
+      EUNZUUAPVOZAYNUUAYOVOZVAZYKUUGGHXJCYPMUUGVGVPVRAUUFUUIVSUUAAUUDUUHXPAFUUG
+      XKCAYMFUUGTNDFHUSLKVTVFWHWAVOWBZUJUUBXKCBFSZFSZXKBCFSZFSZUUEUUCUUBUURUUTX
+      KFAUURUUTTUUAAUUTUURRWCVOUKUUBYMXKEUNZUUMYTUUEUUSTAYMUUANVOZUUBXKYKEUUBUU
+      JUUAYLXKYKUNUUKUULUUPYKGHXJCYPMWDVRUUOWEZUUNAYTUUAOVOZEDFXKCBJKWFWIUUBYMU
+      VBYTUUMUUCUVATUVCUVDUVEUUNEDFXKBCJKWFWIWJVKVOXNUUBUUCXMCFSZXRXLXMCFUIUUBU
+      VFBUUDFSZXRUUBYMYTUVBUUMUVFUVGTUVCUVEUVDUUNEDFBXKCJKWFWIUUBUUDXPBFUUBXPUU
+      DUUQWCUKVKWKVKWLWMWNWOWP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
