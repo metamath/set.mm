@@ -148308,6 +148308,30 @@ $)
       BCDEFGNO $.
   $}
 
+  ${
+    $d x y z B $.  $d x y z R $.  $d x X $.  $d x y z .x. $.  $d x y z .0. $.
+    srgz.b $e |- B = ( Base ` R ) $.
+    srgz.t $e |- .x. = ( .r ` R ) $.
+    srgz.z $e |- .0. = ( 0g ` R ) $.
+    $( The zero of a semiring is a right-absorbing element.  (Contributed by
+       Thierry Arnoux, 1-Apr-2018.) $)
+    srgrz $p |- ( ( R e. SRing /\ X e. B ) -> ( X .x. .0. ) = .0. ) $=
+      ( vx vy vz csrg wcel cv co wceq wral wa cfv eqid cplusg ccmn cmgp simp3bi
+      cmnd issrg r19.21bi simprrd ralrimiva oveq1 eqeq1d rspcv mpan9 ) BLMZINZE
+      COZEPZIAQDAMDECOZEPZUNUQIAUNUOAMRUOJNZKNZBUASZOCOUOUTCOUOVACOZVBOPUOUTVBO
+      VACOVCUTVACOVBOPRKAQJAQZEUOCOEPZUQUNVDVEUQRRZIAUNBUBMBUCSZUEMVFIAQIJKAVBB
+      CVGEFVGTVBTGHUFUDUGUHUIUQUSIDAUODPUPUREUODECUJUKULUM $.
+
+    $( The zero of a semiring is a left-absorbing element.  (Contributed by AV,
+       23-Aug-2019.) $)
+    srglz $p |- ( ( R e. SRing /\ X e. B ) -> ( .0. .x. X ) = .0. ) $=
+      ( vx vy vz csrg wcel cv co wceq wral wa cfv eqid cplusg ccmn cmgp simp3bi
+      cmnd issrg r19.21bi simprld ralrimiva oveq2 eqeq1d rspcv mpan9 ) BLMZEINZ
+      COZEPZIAQDAMEDCOZEPZUNUQIAUNUOAMRUOJNZKNZBUASZOCOUOUTCOUOVACOZVBOPUOUTVBO
+      VACOVCUTVACOVBOPRKAQJAQZUQUOECOEPZUNVDUQVERRZIAUNBUBMBUCSZUEMVFIAQIJKAVBB
+      CVGEFVGTVBTGHUFUDUGUHUIUQUSIDAUODPUPUREUODECUJUKULUM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
