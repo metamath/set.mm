@@ -148275,6 +148275,23 @@ $)
       ADVFVEFWQSTULUMULVAEVMFCEVBKWOIUSTUT $.
   $}
 
+  ${
+    srgacl.b $e |- B = ( Base ` R ) $.
+    srgacl.p $e |- .+ = ( +g ` R ) $.
+    $( Closure of the addition operation of a semiring.  (Contributed by Mario
+       Carneiro, 14-Jan-2014.)  (Revised by Thierry Arnoux, 1-Apr-2018.) $)
+    srgacl $p |- ( ( R e. SRing /\ X e. B /\ Y e. B ) -> ( X .+ Y ) e. B ) $=
+      ( csrg wcel cmnd co srgmnd mndcl syl3an1 ) CHICJIDAIEAIDEBKAICLABCDEFGMN
+      $.
+
+    $( Commutativity of the additive group of a semiring.  (Contributed by
+       Thierry Arnoux, 1-Apr-2018.) $)
+    srgcom $p |- ( ( R e. SRing /\ X e. B /\ Y e. B ) ->
+      ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( csrg wcel ccmn co wceq srgcmn cmncom syl3an1 ) CHICJIDAIEAIDEBKEDBKLCMA
+      BCDEFGNO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
