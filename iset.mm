@@ -148330,6 +148330,17 @@ $)
       COZEPZIAQDAMEDCOZEPZUNUQIAUNUOAMRUOJNZKNZBUASZOCOUOUTCOUOVACOZVBOPUOUTVBO
       VACOVCUTVACOVBOPRKAQJAQZUQUOECOEPZUNVDUQVERRZIAUNBUBMBUCSZUEMVFIAQIJKAVBB
       CVGEFVGTVBTGHUFUDUGUHUIUQUSIDAUODPUPUREUODECUJUKULUM $.
+
+    $d x Z $.  $d x ph $.
+    srgisid.1 $e |- ( ph -> R e. SRing ) $.
+    srgisid.2 $e |- ( ph -> Z e. B ) $.
+    srgisid.3 $e |- ( ( ph /\ x e. B ) -> ( Z .x. x ) = Z ) $.
+    $( In a semiring, the only left-absorbing element is the additive identity.
+       Remark in [Golan] p. 1.  (Contributed by Thierry Arnoux, 1-May-2018.) $)
+    srgisid $p |- ( ph -> Z = .0. ) $=
+      ( co cv wceq wral ralrimiva csrg wcel srg0cl oveq2 eqeq1d rspcv mpd srgrz
+      wi 3syl syl2anc eqtr3d ) AGFENZGFAGBOZENZGPZBCQZUKGPZAUNBCMRADSTZFCTUOUPU
+      GKCDFHJUAUNUPBFCULFPUMUKGULFGEUBUCUDUHUEAUQGCTUKFPKLCDEGFHIJUFUIUJ $.
   $}
 
 
