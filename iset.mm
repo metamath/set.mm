@@ -148479,6 +148479,29 @@ $)
       VQBMNVHVJVEVMVKAWDWFDGABCEFHIJKLMNOPQRSTUAUBVNVMVO $.
   $}
 
+  ${
+    $d a b x B $.  $d a b x R $.  $d a b x X $.  $d a b x .x. $.
+    srglmhm.b $e |- B = ( Base ` R ) $.
+    srglmhm.t $e |- .x. = ( .r ` R ) $.
+    $( Left-multiplication in a semiring by a fixed element of the ring is a
+       monoid homomorphism.  (Contributed by AV, 23-Aug-2019.) $)
+    srglmhm $p |- ( ( R e. SRing /\ X e. B ) ->
+      ( x e. B |-> ( X .x. x ) ) e. ( R MndHom R ) ) $=
+      ( va vb wcel wa cv co cfv wceq srgcl eqid oveq2 syl3anc fvmptd3 csrg cmnd
+      cmpt cplusg wral c0g w3a cmhm srgmnd jca adantr 3expa fmpttd 3anass srgdi
+      sylan2br anassrs srgacl 3expb adantlr simpll simplr simprl simprr oveq12d
+      wf 3eqtr4d ralrimivva srg0cl mpd3an3 srgrz eqtrd 3jca ismhm sylanbrc ) CU
+      AJZEBJZKZCUBJZVSKZBBABEALZDMZUCZVFZHLZILZCUDNZMZWCNZWEWCNZWFWCNZWGMZOZIBU
+      EHBUEZCUFNZWCNZWOOZUGWCCCUHMJVPVTVQVPVSVSCUIZWRUJUKVRWDWNWQVRABWBBVPVQWAB
+      JWBBJBCDEWAFGPULUMVRWMHIBBVRWEBJZWFBJZKZKZEWHDMZEWEDMZEWFDMZWGMZWIWLVPVQX
+      AXCXFOZVQXAKVPVQWSWTUGXGVQWSWTUNBWGCDEWEWFFWGQZGUOUPUQXBAWHWBXCBWCBWCQZWA
+      WHEDRVPXAWHBJZVQVPWSWTXJBWGCWEWFFXHURUSUTZXBVPVQXJXCBJVPVQXAVAZVPVQXAVBZX
+      KBCDEWHFGPSTXBWJXDWKXEWGXBAWEWBXDBWCBXIWAWEEDRVRWSWTVCZXBVPVQWSXDBJXLXMXN
+      BCDEWEFGPSTXBAWFWBXEBWCBXIWAWFEDRVRWSWTVDZXBVPVQWTXEBJXLXMXOBCDEWFFGPSTVE
+      VGVHVRWPEWODMZWOVRAWOWBXPBWCBXIWAWOEDRVPWOBJZVQBCWOFWOQZVIUKZVPVQXQXPBJXS
+      BCDEWOFGPVJTBCDEWOFGXRVKVLVMHIBBWGWGCCWCWOWOFFXHXHXRXRVNVO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
