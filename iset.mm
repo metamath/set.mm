@@ -148363,6 +148363,17 @@ $)
       LUBWAVOWHUEMWPVOVQVRVTURZCWHWNUSWHUGUTWAEAWIWGWOVAWAWKVPOZWRVSWTVTVOVRWTV
       QVOVRWTVOVPDWKCDWHLWNHVFZVBVCVDRWAVPWQWKWAAWIWOVEVGVHWIWKWHEWITWKTUJUKWAW
       KDWBWAVOWKDJWSVODWKXAVIUHUQVJVKVL $.
+
+    srgen1zr.p $e |- Z = ( 0g ` R ) $.
+    $( The only semiring with one element is the zero ring (at least if its
+       operations are internal binary operations).  (Contributed by FL,
+       14-Feb-2010.)  (Revised by AV, 25-Jan-2020.) $)
+    srgen1zr $p |- ( ( R e. SRing /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+                     -> ( B ~~ 1o <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( csrg wcel cxp wfn w3a c1o cop csn wceq wa wb cen wbr 3ad2ant1 en1eqsnbi
+      srg0cl adantl srg1zr bitrd mpdan ) CJKZBAALZMZDUKMZNZEAKZAOUAUBZBEEPEPQZR
+      DUQRSZTUJULUOUMACEFIUEUCUNUOSUPAEQRZURUOUPUSTUNEAUDUFABCDEFGHUGUHUI $.
   $}
 
 
