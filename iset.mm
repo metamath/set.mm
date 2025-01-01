@@ -148521,6 +148521,20 @@ $)
       VNBCDWSEFGQSTBCDEWSFGYFVOVQVPHIBBWKWKCCWGWSWSFFXPXPYFYFVRVS $.
   $}
 
+  ${
+    srg1expzeq1.g $e |- G = ( mulGrp ` R ) $.
+    srg1expzeq1.t $e |- .x. = ( .g ` G ) $.
+    srg1expzeq1.1 $e |- .1. = ( 1r ` R ) $.
+    $( The exponentiation (by a nonnegative integer) of the multiplicative
+       identity of a semiring, analogous to ~ mulgnn0z .  (Contributed by AV,
+       25-Nov-2019.) $)
+    srg1expzeq1 $p |- ( ( R e. SRing /\ N e. NN0 ) -> ( N .x. .1. ) = .1. ) $=
+      ( csrg wcel cn0 wa co wceq c0g cfv cmnd srgmgp cbs eqid mulgnn0z sylan wb
+      ringidvalg oveq2d eqeq12d adantr mpbird ) AIJZEKJZLECBMZCNZEDOPZBMZUMNZUI
+      DQJUJUOADFRDSPZBDEUMUPTGUMTUAUBUIULUOUCUJUIUKUNCUMUICUMEBACDIFHUDZUEUQUFU
+      GUH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
