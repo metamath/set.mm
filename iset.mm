@@ -1463,6 +1463,14 @@ $)
     ( wi ax-1 imim1i ) BABDCBAEF $.
 
   ${
+    jarri.1 $e |- ( ( ph -> ps ) -> ch ) $.
+    $( Inference associated with ~ jarr .  (Contributed by Wolf Lammen,
+       20-Sep-2013.) $)
+    jarri $p |- ( ps -> ch ) $=
+      ( wi ax-1 syl ) BABECBAFDG $.
+  $}
+
+  ${
     pm2.86i.1 $e |- ( ( ph -> ps ) -> ( ph -> ch ) ) $.
     $( Inference based on ~ pm2.86 .  (Contributed by NM, 5-Aug-1993.)  (Proof
        shortened by Wolf Lammen, 3-Apr-2013.) $)
@@ -1863,6 +1871,13 @@ $)
     biimpd $p |- ( ph -> ( ps -> ch ) ) $=
       ( wb wi biimp syl ) ABCEBCFDBCGH $.
   $}
+
+  $( The antecedent of one side of a biconditional can be moved out of the
+     biconditional to become the antecedent of the remaining biconditional.
+     (Contributed by BJ, 1-Jan-2025.) $)
+  imbibi $p |- ( ( ( ph -> ps ) <-> ch ) -> ( ph -> ( ps <-> ch ) ) ) $=
+    ( wi wb biimp jarr a1d syl biimpr com23 impbidd ) ABDZCEZABCNMCDZABCDZDMCFO
+    PAABCGHINCABMCJKL $.
 
   ${
     mpbi.min $e |- ph $.
@@ -32505,10 +32520,11 @@ $)
 
   ${
     $d A x $.  $d B x $.
-    snss.1 $e |- A e. _V $.
-    $( The singleton of an element of a class is a subset of the class.
-       Theorem 7.4 of [Quine] p. 49.  (Contributed by NM, 5-Aug-1993.) $)
-    snss $p |- ( A e. B <-> { A } C_ B ) $=
+    snssOLD.1 $e |- A e. _V $.
+    $( Obsolete version of ~ snss as of 1-Jan-2025.  (Contributed by NM,
+       5-Aug-1993.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    snssOLD $p |- ( A e. B <-> { A } C_ B ) $=
       ( vx cv csn wcel wi wal wceq wss velsn imbi1i albii dfss2 clel2 3bitr4ri
       ) DEZAFZGZRBGZHZDIRAJZUAHZDISBKABGUBUDDTUCUADALMNDSBODABCPQ $.
   $}
@@ -32549,10 +32565,39 @@ $)
     DHIZCPSJZAGPCJZQGZAGUARGTUBAPCDKLUAQAMNO $.
 
   ${
+    $d x A $.  $d x B $.
+    $( Characterization of the inclusion of a singleton in a class.
+       (Contributed by BJ, 1-Jan-2025.) $)
+    snssb $p |- ( { A } C_ B <-> ( A e. _V -> A e. B ) ) $=
+      ( vx csn wss cv wcel wi wal wceq cvv dfss2 velsn imbi1i albii wex pm5.74i
+      eleq1 19.23v 3bitri isset bicomi ) ADZBECFZUCGZUDBGZHZCIUDAJZUFHZCIZAKGZA
+      BGZHZCUCBLUGUICUEUHUFCAMNOUJUHULHZCIUHCPZULHUMUIUNCUHUFULUDABRQOUHULCSUOU
+      KULUKUOCAUAUBNTT $.
+  $}
+
+  $( The singleton formed on a set is included in a class if and only if the
+     set is an element of that class.  Theorem 7.4 of [Quine] p. 49.
+     (Contributed by NM, 22-Jul-2001.)  (Proof shortened by BJ, 1-Jan-2025.) $)
+  snssg $p |- ( A e. V -> ( A e. B <-> { A } C_ B ) ) $=
+    ( cvv wcel wi csn wss wb snssb bicomi elex imbibi mpsyl ) ADEZABEZFZAGBHZIA
+    CEOPRIRQABJKACLOPRMN $.
+
+  ${
+    snss.1 $e |- A e. _V $.
+    $( The singleton of an element of a class is a subset of the class
+       (inference form of ~ snssg ).  Theorem 7.4 of [Quine] p. 49.
+       (Contributed by NM, 21-Jun-1993.)  (Proof shortened by BJ,
+       1-Jan-2025.) $)
+    snss $p |- ( A e. B <-> { A } C_ B ) $=
+      ( cvv wcel csn wss wb snssg ax-mp ) ADEABEAFBGHCABDIJ $.
+  $}
+
+  ${
     $d A x $.  $d B x $.
-    $( The singleton of an element of a class is a subset of the class.
-       Theorem 7.4 of [Quine] p. 49.  (Contributed by NM, 22-Jul-2001.) $)
-    snssg $p |- ( A e. V -> ( A e. B <-> { A } C_ B ) ) $=
+    $( Obsolete version of ~ snssgOLD as of 1-Jan-2025.  (Contributed by NM,
+       22-Jul-2001.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    snssgOLD $p |- ( A e. V -> ( A e. B <-> { A } C_ B ) ) $=
       ( vx cv wcel csn wss eleq1 wceq sneq sseq1d vex snss vtoclbg ) DEZBFPGZBH
       ABFAGZBHDACPABIPAJQRBPAKLPBDMNO $.
 
