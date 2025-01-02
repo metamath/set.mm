@@ -438,6 +438,8 @@ New usage of "ruALT" is discouraged (0 uses).
 New usage of "sbbidh" is discouraged (1 uses).
 New usage of "sbiedh" is discouraged (3 uses).
 New usage of "sbieh" is discouraged (7 uses).
+New usage of "snssOLD" is discouraged (0 uses).
+New usage of "snssgOLD" is discouraged (0 uses).
 New usage of "spimeh" is discouraged (0 uses).
 New usage of "spimh" is discouraged (1 uses).
 New usage of "spimth" is discouraged (1 uses).
@@ -570,6 +572,8 @@ Proof modification of "resfunexgALT" is discouraged (76 steps).
 Proof modification of "ruALT" is discouraged (35 steps).
 Proof modification of "sbc8g" is discouraged (55 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
+Proof modification of "snssOLD" is discouraged (45 steps).
+Proof modification of "snssgOLD" is discouraged (38 steps).
 Proof modification of "speano5" is discouraged (50 steps).
 Proof modification of "stdcndcOLD" is discouraged (62 steps).
 Proof modification of "strcollnfALT" is discouraged (120 steps).

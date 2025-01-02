@@ -1463,6 +1463,14 @@ $)
     ( wi ax-1 imim1i ) BABDCBAEF $.
 
   ${
+    jarri.1 $e |- ( ( ph -> ps ) -> ch ) $.
+    $( Inference associated with ~ jarr .  (Contributed by Wolf Lammen,
+       20-Sep-2013.) $)
+    jarri $p |- ( ps -> ch ) $=
+      ( wi ax-1 syl ) BABECBAFDG $.
+  $}
+
+  ${
     pm2.86i.1 $e |- ( ( ph -> ps ) -> ( ph -> ch ) ) $.
     $( Inference based on ~ pm2.86 .  (Contributed by NM, 5-Aug-1993.)  (Proof
        shortened by Wolf Lammen, 3-Apr-2013.) $)
@@ -1863,6 +1871,13 @@ $)
     biimpd $p |- ( ph -> ( ps -> ch ) ) $=
       ( wb wi biimp syl ) ABCEBCFDBCGH $.
   $}
+
+  $( The antecedent of one side of a biconditional can be moved out of the
+     biconditional to become the antecedent of the remaining biconditional.
+     (Contributed by BJ, 1-Jan-2025.) $)
+  imbibi $p |- ( ( ( ph -> ps ) <-> ch ) -> ( ph -> ( ps <-> ch ) ) ) $=
+    ( wi wb biimp jarr a1d syl biimpr com23 impbidd ) ABDZCEZABCNMCDZABCDZDMCFO
+    PAABCGHINCABMCJKL $.
 
   ${
     mpbi.min $e |- ph $.
@@ -32505,10 +32520,11 @@ $)
 
   ${
     $d A x $.  $d B x $.
-    snss.1 $e |- A e. _V $.
-    $( The singleton of an element of a class is a subset of the class.
-       Theorem 7.4 of [Quine] p. 49.  (Contributed by NM, 5-Aug-1993.) $)
-    snss $p |- ( A e. B <-> { A } C_ B ) $=
+    snssOLD.1 $e |- A e. _V $.
+    $( Obsolete version of ~ snss as of 1-Jan-2025.  (Contributed by NM,
+       5-Aug-1993.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    snssOLD $p |- ( A e. B <-> { A } C_ B ) $=
       ( vx cv csn wcel wi wal wceq wss velsn imbi1i albii dfss2 clel2 3bitr4ri
       ) DEZAFZGZRBGZHZDIRAJZUAHZDISBKABGUBUDDTUCUADALMNDSBODABCPQ $.
   $}
@@ -32549,10 +32565,39 @@ $)
     DHIZCPSJZAGPCJZQGZAGUARGTUBAPCDKLUAQAMNO $.
 
   ${
+    $d x A $.  $d x B $.
+    $( Characterization of the inclusion of a singleton in a class.
+       (Contributed by BJ, 1-Jan-2025.) $)
+    snssb $p |- ( { A } C_ B <-> ( A e. _V -> A e. B ) ) $=
+      ( vx csn wss cv wcel wi wal wceq cvv dfss2 velsn imbi1i albii wex pm5.74i
+      eleq1 19.23v 3bitri isset bicomi ) ADZBECFZUCGZUDBGZHZCIUDAJZUFHZCIZAKGZA
+      BGZHZCUCBLUGUICUEUHUFCAMNOUJUHULHZCIUHCPZULHUMUIUNCUHUFULUDABRQOUHULCSUOU
+      KULUKUOCAUAUBNTT $.
+  $}
+
+  $( The singleton formed on a set is included in a class if and only if the
+     set is an element of that class.  Theorem 7.4 of [Quine] p. 49.
+     (Contributed by NM, 22-Jul-2001.)  (Proof shortened by BJ, 1-Jan-2025.) $)
+  snssg $p |- ( A e. V -> ( A e. B <-> { A } C_ B ) ) $=
+    ( cvv wcel wi csn wss wb snssb bicomi elex imbibi mpsyl ) ADEZABEZFZAGBHZIA
+    CEOPRIRQABJKACLOPRMN $.
+
+  ${
+    snss.1 $e |- A e. _V $.
+    $( The singleton of an element of a class is a subset of the class
+       (inference form of ~ snssg ).  Theorem 7.4 of [Quine] p. 49.
+       (Contributed by NM, 21-Jun-1993.)  (Proof shortened by BJ,
+       1-Jan-2025.) $)
+    snss $p |- ( A e. B <-> { A } C_ B ) $=
+      ( cvv wcel csn wss wb snssg ax-mp ) ADEABEAFBGHCABDIJ $.
+  $}
+
+  ${
     $d A x $.  $d B x $.
-    $( The singleton of an element of a class is a subset of the class.
-       Theorem 7.4 of [Quine] p. 49.  (Contributed by NM, 22-Jul-2001.) $)
-    snssg $p |- ( A e. V -> ( A e. B <-> { A } C_ B ) ) $=
+    $( Obsolete version of ~ snssgOLD as of 1-Jan-2025.  (Contributed by NM,
+       22-Jul-2001.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    snssgOLD $p |- ( A e. V -> ( A e. B <-> { A } C_ B ) ) $=
       ( vx cv wcel csn wss eleq1 wceq sneq sseq1d vex snss vtoclbg ) DEZBFPGZBH
       ABFAGZBHDACPABIPAJQRBPAKLPBDMNO $.
 
@@ -147340,6 +147385,450 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Abelian groups
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Definition and basic properties
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c CMnd $.
+  $c Abel $.
+
+  $( Extend class notation with class of all commutative monoids. $)
+  ccmn $a class CMnd $.
+
+  $( Extend class notation with class of all Abelian groups. $)
+  cabl $a class Abel $.
+
+  ${
+    $d a b g $.
+    $( Define class of all commutative monoids.  (Contributed by Mario
+       Carneiro, 6-Jan-2015.) $)
+    df-cmn $a |- CMnd = { g e. Mnd | A. a e. ( Base ` g )
+      A. b e. ( Base ` g ) ( a ( +g ` g ) b ) = ( b ( +g ` g ) a ) } $.
+  $}
+
+  $( Define class of all Abelian groups.  (Contributed by NM, 17-Oct-2011.)
+     (Revised by Mario Carneiro, 6-Jan-2015.) $)
+  df-abl $a |- Abel = ( Grp i^i CMnd ) $.
+
+  $( The predicate "is an Abelian (commutative) group".  (Contributed by NM,
+     17-Oct-2011.) $)
+  isabl $p |- ( G e. Abel <-> ( G e. Grp /\ G e. CMnd ) ) $=
+    ( cgrp ccmn cabl df-abl elin2 ) ABCDEF $.
+
+  $( An Abelian group is a group.  (Contributed by NM, 26-Aug-2011.) $)
+  ablgrp $p |- ( G e. Abel -> G e. Grp ) $=
+    ( cabl wcel cgrp ccmn isabl simplbi ) ABCADCAECAFG $.
+
+  ${
+    ablgrpd.1 $e |- ( ph -> G e. Abel ) $.
+    $( An Abelian group is a group, deduction form of ~ ablgrp .  (Contributed
+       by Rohan Ridenour, 3-Aug-2023.) $)
+    ablgrpd $p |- ( ph -> G e. Grp ) $=
+      ( cabl wcel cgrp ablgrp syl ) ABDEBFECBGH $.
+  $}
+
+  $( An Abelian group is a commutative monoid.  (Contributed by Mario Carneiro,
+     6-Jan-2015.) $)
+  ablcmn $p |- ( G e. Abel -> G e. CMnd ) $=
+    ( cabl wcel cgrp ccmn isabl simprbi ) ABCADCAECAFG $.
+
+  ${
+    $d g x y B $.  $d g x y G $.  $d g .+ $.
+    iscmn.b $e |- B = ( Base ` G ) $.
+    iscmn.p $e |- .+ = ( +g ` G ) $.
+    $( The predicate "is a commutative monoid".  (Contributed by Mario
+       Carneiro, 6-Jan-2015.) $)
+    iscmn $p |- ( G e. CMnd <-> ( G e. Mnd /\
+             A. x e. B A. y e. B ( x .+ y ) = ( y .+ x ) ) ) $=
+      ( vg cv cplusg cfv co wceq cbs wral cmnd ccmn fveq2 eqtr4di oveqd eqeq12d
+      wb raleq raleqbi1dv syl 2ralbidv bitrd df-cmn elrab2 ) AIZBIZHIZJKZLZUKUJ
+      UMLZMZBULNKZOZAUQOZUJUKDLZUKUJDLZMZBCOACOZHEPQULEMZUSUPBCOZACOZVCVDUQCMUS
+      VFUBVDUQENKCULENRFSURVEAUQCUPBUQCUCUDUEVDUPVBABCCVDUNUTUOVAVDUMDUJUKVDUME
+      JKDULEJRGSZTVDUMDUKUJVGTUAUFUGHABUHUI $.
+
+    $( The predicate "is an Abelian (commutative) group".  (Contributed by NM,
+       17-Oct-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    isabl2 $p |- ( G e. Abel <-> ( G e. Grp /\
+             A. x e. B A. y e. B ( x .+ y ) = ( y .+ x ) ) ) $=
+      ( cabl wcel cgrp ccmn wa cv co wceq wral isabl cmnd wb grpmnd syl pm5.32i
+      iscmn baib bitri ) EHIEJIZEKIZLUFAMZBMZDNUIUHDNOBCPACPZLEQUFUGUJUFERIZUGU
+      JSETUGUKUJABCDEFGUCUDUAUBUE $.
+  $}
+
+  ${
+    $d u v x y B $.  $d u v x y K $.  $d u v x y L $.  $d u v x y ph $.
+    ablpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    ablpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    ablpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    $( If two structures have the same group components (properties), one is a
+       commutative monoid iff the other one is.  (Contributed by Mario
+       Carneiro, 6-Jan-2015.) $)
+    cmnpropd $p |- ( ph -> ( K e. CMnd <-> L e. CMnd ) ) $=
+      ( vu vv cmnd wcel cv cfv co wceq wral wa eqid cplusg cbs mndpropd ancom2s
+      ccmn oveqrspc2v eqeq12d 2ralbidva raleqdv raleqbidv 3bitr3d anbi12d iscmn
+      3bitr4g ) AELMZJNZKNZEUAOZPZUQUPURPZQZKEUBOZRZJVBRZSFLMZUPUQFUAOZPZUQUPVF
+      PZQZKFUBOZRZJVJRZSEUEMFUEMAUOVEVDVLABCDEFGHIUCAVAKDRZJDRVIKDRZJDRVDVLAVAV
+      IJKDDAUPDMZUQDMZSSUSVGUTVHABCDDURVFUPUQIUFAVPVOUTVHQABCDDURVFUQUPIUFUDUGU
+      HAVMVCJDVBGAVAKDVBGUIUJAVNVKJDVJHAVIKDVJHUIUJUKULJKVBUREVBTURTUMJKVJVFFVJ
+      TVFTUMUN $.
+
+    $( If two structures have the same group components (properties), one is an
+       Abelian group iff the other one is.  (Contributed by NM, 6-Dec-2014.) $)
+    ablpropd $p |- ( ph -> ( K e. Abel <-> L e. Abel ) ) $=
+      ( cgrp wcel ccmn wa cabl grppropd cmnpropd anbi12d isabl 3bitr4g ) AEJKZE
+      LKZMFJKZFLKZMENKFNKATUBUAUCABCDEFGHIOABCDEFGHIPQERFRS $.
+  $}
+
+  ${
+    $d x y K $.  $d x y L $.
+    ablprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    ablprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    $( If two structures have the same group components (properties), one is an
+       Abelian group iff the other one is.  (Contributed by NM,
+       11-Oct-2013.) $)
+    ablprop $p |- ( K e. Abel <-> L e. Abel ) $=
+      ( vx vy cabl wcel wb wtru cbs cfv eqidd wceq a1i cv cplusg co wa oveqi
+      ablpropd mptru ) AGHBGHIJEFAKLZABJUCMUCBKLNJCOEPZFPZAQLZRUDUEBQLZRNJUDUCH
+      UEUCHSSUFUGUDUEDTOUAUB $.
+  $}
+
+  ${
+    $d x y B $.  $d x y G $.  $d x y ph $.
+    iscmnd.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    iscmnd.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    iscmnd.g $e |- ( ph -> G e. Mnd ) $.
+    iscmnd.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) = ( y .+ x ) ) $.
+    $( Properties that determine a commutative monoid.  (Contributed by Mario
+       Carneiro, 7-Jan-2015.) $)
+    iscmnd $p |- ( ph -> G e. CMnd ) $=
+      ( cmnd wcel cv cfv co wceq wral oveqd raleqbidv eqid cplusg cbs wa 3expib
+      ccmn ralrimivv eqeq12d anbi2d mpbi2and iscmn sylibr ) AFKLZBMZCMZFUANZOZU
+      NUMUOOZPZCFUBNZQZBUSQZUCZFUELAULUMUNEOZUNUMEOZPZCDQZBDQZVBIAVEBCDDAUMDLUN
+      DLVEJUDUFAVGVAULAVFUTBDUSGAVEURCDUSGAVCUPVDUQAEUOUMUNHRAEUOUNUMHRUGSSUHUI
+      BCUSUOFUSTUOTUJUK $.
+  $}
+
+  ${
+    $d x y B $.  $d x y G $.  $d x y ph $.
+    isabld.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    isabld.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    isabld.g $e |- ( ph -> G e. Grp ) $.
+    isabld.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) = ( y .+ x ) ) $.
+    $( Properties that determine an Abelian group.  (Contributed by NM,
+       6-Aug-2013.) $)
+    isabld $p |- ( ph -> G e. Abel ) $=
+      ( cgrp wcel ccmn cabl grpmndd iscmnd isabl sylanbrc ) AFKLFMLFNLIABCDEFGH
+      AFIOJPFQR $.
+  $}
+
+  ${
+    $d x y B $.  $d x y G $.
+    isabli.g $e |- G e. Grp $.
+    isabli.b $e |- B = ( Base ` G ) $.
+    isabli.p $e |- .+ = ( +g ` G ) $.
+    isabli.c $e |- ( ( x e. B /\ y e. B ) -> ( x .+ y ) = ( y .+ x ) ) $.
+    $( Properties that determine an Abelian group.  (Contributed by NM,
+       4-Sep-2011.) $)
+    isabli $p |- G e. Abel $=
+      ( cabl wcel cgrp cv co wceq wral rgen2 isabl2 mpbir2an ) EJKELKAMZBMZDNUA
+      TDNOZBCPACPFUBABCCIQABCDEGHRS $.
+  $}
+
+  ${
+    $d x y B $.  $d x y G $.  $d x y .+ $.  $d x y W $.  $d x y X $.
+    $d x y Y $.  $d x y Z $.
+    $( A commutative monoid is a monoid.  (Contributed by Mario Carneiro,
+       6-Jan-2015.) $)
+    cmnmnd $p |- ( G e. CMnd -> G e. Mnd ) $=
+      ( vx vy ccmn wcel cmnd cv cplusg cfv co wceq cbs wral eqid iscmn simplbi
+      ) ADEAFEBGZCGZAHIZJRQSJKCALIZMBTMBCTSATNSNOP $.
+
+    ablcom.b $e |- B = ( Base ` G ) $.
+    ablcom.p $e |- .+ = ( +g ` G ) $.
+    $( A commutative monoid is commutative.  (Contributed by Mario Carneiro,
+       6-Jan-2015.) $)
+    cmncom $p |- ( ( G e. CMnd /\ X e. B /\ Y e. B ) ->
+                 ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( vx vy ccmn wcel co wceq cv wral wa cmnd iscmn simprbi rsp2 imp caovcomg
+      sylan 3impb ) CJKZDAKEAKDEBLEDBLMUEHIDEABUEHNZINZBLUGUFBLMZIAOHAOZUFAKUGA
+      KPZUHUECQKUIHIABCFGRSUIUJUHUHHIAATUAUCUBUD $.
+
+    $( An Abelian group operation is commutative.  (Contributed by NM,
+       26-Aug-2011.) $)
+    ablcom $p |- ( ( G e. Abel /\ X e. B /\ Y e. B ) ->
+                 ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( cabl wcel ccmn co wceq ablcmn cmncom syl3an1 ) CHICJIDAIEAIDEBKEDBKLCMA
+      BCDEFGNO $.
+
+    $( Commutative/associative law for commutative monoids.  (Contributed by
+       NM, 4-Feb-2014.)  (Revised by Mario Carneiro, 21-Apr-2016.) $)
+    cmn32 $p |- ( ( G e. CMnd /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                 ( ( X .+ Y ) .+ Z ) = ( ( X .+ Z ) .+ Y ) ) $=
+      ( ccmn wcel w3a wa cmnd cmnmnd adantr simpr1 simpr2 simpr3 co wceq cmncom
+      3adant3r1 mnd32g ) CIJZDAJZEAJZFAJZKZLABCDEFGHUDCMJUHCNOUDUEUFUGPUDUEUFUG
+      QUDUEUFUGRUDUFUGEFBSFEBSTUEABCEFGHUAUBUC $.
+
+    $( Commutative/associative law for commutative monoids.  (Contributed by
+       NM, 4-Feb-2014.)  (Revised by Mario Carneiro, 21-Apr-2016.) $)
+    cmn4 $p |- ( ( G e. CMnd /\ ( X e. B /\ Y e. B ) /\ ( Z e. B /\ W e. B ) )
+       -> ( ( X .+ Y ) .+ ( Z .+ W ) ) = ( ( X .+ Z ) .+ ( Y .+ W ) ) ) $=
+      ( ccmn wcel wa w3a cmnd simp1 cmnmnd syl simp2l simp2r co simp3l syl3anc
+      simp3r wceq cmncom mnd4g ) CJKZEAKZFAKZLZGAKZDAKZLZMZABCDEFGHIUNUGCNKUGUJ
+      UMOZCPQUGUHUIUMRUGUHUIUMSZUGUJUKULUAZUGUJUKULUCUNUGUIUKFGBTGFBTUDUOUPUQAB
+      CFGHIUEUBUF $.
+
+    $( Commutative/associative law for commutative monoids.  (Contributed by
+       Stefan O'Rear, 5-Sep-2015.)  (Revised by Mario Carneiro,
+       21-Apr-2016.) $)
+    cmn12 $p |- ( ( G e. CMnd /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+        ( X .+ ( Y .+ Z ) ) = ( Y .+ ( X .+ Z ) ) ) $=
+      ( ccmn wcel w3a wa cmnd cmnmnd adantr simpr1 simpr2 simpr3 co wceq cmncom
+      3adant3r3 mnd12g ) CIJZDAJZEAJZFAJZKZLABCDEFGHUDCMJUHCNOUDUEUFUGPUDUEUFUG
+      QUDUEUFUGRUDUEUFDEBSEDBSTUGABCDEGHUAUBUC $.
+
+    abl32.g $e |- ( ph -> G e. Abel ) $.
+    abl32.x $e |- ( ph -> X e. B ) $.
+    abl32.y $e |- ( ph -> Y e. B ) $.
+    abl32.z $e |- ( ph -> Z e. B ) $.
+    $( Commutative/associative law for Abelian groups.  (Contributed by Stefan
+       O'Rear, 10-Apr-2015.)  (Revised by Mario Carneiro, 21-Apr-2016.) $)
+    abl32 $p |- ( ph -> ( ( X .+ Y ) .+ Z ) = ( ( X .+ Z ) .+ Y ) ) $=
+      ( ccmn wcel co wceq cabl ablcmn syl cmn32 syl13anc ) ADNOZEBOFBOGBOEFCPGC
+      PEGCPFCPQADROUCJDSTKLMBCDEFGHIUAUB $.
+  $}
+
+  ${
+    cmnmndd.1 $e |- ( ph -> G e. CMnd ) $.
+    $( A commutative monoid is a monoid.  (Contributed by SN, 1-Jun-2024.) $)
+    cmnmndd $p |- ( ph -> G e. Mnd ) $=
+      ( ccmn wcel cmnd cmnmnd syl ) ABDEBFECBGH $.
+  $}
+
+  ${
+    $d A w $.  $d B w $.  $d .0. w $.  $d .+ w $.  $d ph w $.
+    rinvmod.b $e |- B = ( Base ` G ) $.
+    rinvmod.0 $e |- .0. = ( 0g ` G ) $.
+    rinvmod.p $e |- .+ = ( +g ` G ) $.
+    rinvmod.m $e |- ( ph -> G e. CMnd ) $.
+    rinvmod.a $e |- ( ph -> A e. B ) $.
+    $( Uniqueness of a right inverse element in a commutative monoid, if it
+       exists.  Corresponds to ~ caovimo .  (Contributed by AV,
+       31-Dec-2023.) $)
+    rinvmod $p |- ( ph -> E* w e. B ( A .+ w ) = .0. ) $=
+      ( cv co wceq wa wrmo wcel adantr simpr wral ccmn cmncom syl3anc eqtrd jca
+      wi ex ralrimiva cmnd cmnmnd syl mndinvmod rmoim sylc ) ACBMZENZGOZUPCENZG
+      OZURPZUGZBDUAVABDQURBDQAVBBDAUPDRZPZURVAVDURPZUTURVEUSUQGVDUSUQOZURVDFUBR
+      ZVCCDRZVFAVGVCKSAVCTAVHVCLSDEFUPCHJUCUDSVDURTZUEVIUFUHUIABCDEFGHIJAVGFUJR
+      KFUKULLUMURVABDUNUO $.
+  $}
+
+  ${
+    ablinvadd.b $e |- B = ( Base ` G ) $.
+    ablinvadd.p $e |- .+ = ( +g ` G ) $.
+    ablinvadd.n $e |- N = ( invg ` G ) $.
+    $( The inverse of an Abelian group operation.  (Contributed by NM,
+       31-Mar-2014.) $)
+    ablinvadd $p |- ( ( G e. Abel /\ X e. B /\ Y e. B ) ->
+                   ( N ` ( X .+ Y ) ) = ( ( N ` X ) .+ ( N ` Y ) ) ) $=
+      ( cabl wcel w3a co cfv cgrp wceq ablgrp grpinvadd grpinvcl syl2anc ablcom
+      syl3an1 simp1 3ad2ant1 simp2 simp3 syl3anc eqtr4d ) CJKZEAKZFAKZLZEFBMDNZ
+      FDNZEDNZBMZUOUNBMZUICOKZUJUKUMUPPCQZABCDEFGHIRUBULUIUOAKZUNAKZUQUPPUIUJUK
+      UCULURUJUTUIUJURUKUSUDZUIUJUKUEACDEGISTULURUKVAVBUIUJUKUFACDFGISTABCUOUNG
+      HUAUGUH $.
+  $}
+
+  ${
+    ablsub2inv.b $e |- B = ( Base ` G ) $.
+    ablsub2inv.m $e |- .- = ( -g ` G ) $.
+    ablsub2inv.n $e |- N = ( invg ` G ) $.
+    ablsub2inv.g $e |- ( ph -> G e. Abel ) $.
+    ablsub2inv.x $e |- ( ph -> X e. B ) $.
+    ablsub2inv.y $e |- ( ph -> Y e. B ) $.
+    $( Abelian group subtraction of two inverses.  (Contributed by Stefan
+       O'Rear, 24-May-2015.) $)
+    ablsub2inv $p |- ( ph -> ( ( N ` X ) .- ( N ` Y ) ) = ( Y .- X ) ) $=
+      ( cfv co wcel syl2anc wceq syl3anc eqtr4d cplusg eqid ablgrp syl grpinvcl
+      cabl cgrp grpsubinv ablcom grpinvinv oveq1d grpinvadd grpsubval grpinvsub
+      fveq2d 3eqtrd ) AFENZGENZDOUQGCUANZOZFGDOZENZGFDOZABUSCDEUQGHUSUBZIJACUFP
+      ZCUGPZKCUCUDZAVFFBPZUQBPZVGLBCEFHJUEQZMUHAUTFURUSOZENZVBAUTURENZUQUSOZVLA
+      UTGUQUSOZVNAVEVIGBPZUTVORKVJMBUSCUQGHVDUISAVMGUQUSAVFVPVMGRVGMBCEGHJUJQUK
+      TAVFVHURBPZVLVNRVGLAVFVPVQVGMBCEGHJUEQBUSCEFURHVDJULSTAVAVKEAVHVPVAVKRLMB
+      USCEDFGHVDJIUMQUOTAVFVHVPVBVCRVGLMBCDEFGHIJUNSUP $.
+  $}
+
+  ${
+    ablsubadd.b $e |- B = ( Base ` G ) $.
+    ablsubadd.p $e |- .+ = ( +g ` G ) $.
+    ablsubadd.m $e |- .- = ( -g ` G ) $.
+    $( Relationship between Abelian group subtraction and addition.
+       (Contributed by NM, 31-Mar-2014.) $)
+    ablsubadd $p |- ( ( G e. Abel /\ ( X e. B /\ Y e. B /\ Z e. B ) )
+          -> ( ( X .- Y ) = Z <-> ( Y .+ Z ) = X ) ) $=
+      ( cabl wcel w3a wa co wceq cgrp wb ablgrp grpsubadd ablcom eqeq1d bitr4d
+      sylan 3adant3r1 ) CKLZEALZFALZGALZMZNZEFDOGPZGFBOZEPZFGBOZEPUFCQLUJULUNRC
+      SABCDEFGHIJTUDUKUOUMEUFUHUIUOUMPUGABCFGHIUAUEUBUC $.
+
+    $( Commutative/associative subtraction law for Abelian groups.
+       (Contributed by NM, 31-Mar-2014.) $)
+    ablsub4 $p |- ( ( G e. Abel /\ ( X e. B /\ Y e. B ) /\ ( Z e. B /\ W e. B )
+        ) -> ( ( X .+ Y ) .- ( Z .+ W ) ) = ( ( X .- Z ) .+ ( Y .- W ) ) ) $=
+      ( wcel wa co cfv wceq 3ad2ant1 syl3anc grpsubval syl2anc cabl w3a cminusg
+      cgrp ablgrp simp2l simp2r grpcl simp3l simp3r eqid ccmn ablcmn simp2 cmn4
+      grpinvcl syl112anc simp1 ablinvadd oveq2d oveq12d 3eqtr4d eqtrd ) CUALZFA
+      LZGALZMZHALZEALZMZUBZFGBNZHEBNZDNZVLVMCUCOZOZBNZFHDNZGEDNZBNZVKVLALZVMALZ
+      VNVQPVKCUDLZVEVFWAVDVGWCVJCUEQZVDVEVFVJUFZVDVEVFVJUGZABCFGIJUHRVKWCVHVIWB
+      WDVDVGVHVIUIZVDVGVHVIUJZABCHEIJUHRABCVODVLVMIJVOUKZKSTVKVLHVOOZEVOOZBNZBN
+      ZFWJBNZGWKBNZBNZVQVTVKCULLZVGWJALZWKALZWMWPPVDVGWQVJCUMQVDVGVJUNVKWCVHWRW
+      DWGACVOHIWIUPTVKWCVIWSWDWHACVOEIWIUPTABCWKFGWJIJUOUQVKVPWLVLBVKVDVHVIVPWL
+      PVDVGVJURWGWHABCVOHEIJWIUSRUTVKVRWNVSWOBVKVEVHVRWNPWEWGABCVODFHIJWIKSTVKV
+      FVIVSWOPWFWHABCVODGEIJWIKSTVAVBVC $.
+
+    $( Abelian group addition/subtraction law.  (Contributed by NM,
+       31-Mar-2014.) $)
+    abladdsub4 $p |- ( ( G e. Abel
+       /\ ( X e. B /\ Y e. B ) /\ ( Z e. B /\ W e. B ) )
+   -> ( ( X .+ Y ) = ( Z .+ W ) <-> ( X .- Z ) = ( W .- Y ) ) ) $=
+      ( wcel wa co wceq grpcl syl3anc ablsub4 syl122anc syl2anc cabl w3a ablgrp
+      wb 3ad2ant1 simp2l simp2r simp3l simp3r grpsubrcan syl13anc c0g cfv simp1
+      cgrp grpsubid oveq2d grpsubcl grprid 3eqtrd oveq1d grplid eqeq12d bitr3d
+      eqid ) CUALZFALZGALZMZHALZEALZMZUBZFGBNZHGBNZDNZHEBNZVODNZOZVNVQOZFHDNZEG
+      DNZOVMCUOLZVNALZVQALZVOALZVSVTUDVFVIWCVLCUCUEZVMWCVGVHWDWGVFVGVHVLUFZVFVG
+      VHVLUGZABCFGIJPQVMWCVJVKWEWGVFVIVJVKUHZVFVIVJVKUIZABCHEIJPQVMWCVJVHWFWGWJ
+      WIABCHGIJPQACDVNVQVOIKUJUKVMVPWAVRWBVMVPWAGGDNZBNZWACULUMZBNZWAVMVFVGVHVJ
+      VHVPWMOVFVIVLUNZWHWIWJWIABCDGFGHIJKRSVMWLWNWABVMWCVHWLWNOWGWIACDGWNIWNVEZ
+      KUPTUQVMWCWAALZWOWAOWGVMWCVGVJWRWGWHWJACDFHIKURQABCWAWNIJWQUSTUTVMVRHHDNZ
+      WBBNZWNWBBNZWBVMVFVJVKVJVHVRWTOWPWJWKWJWIABCDGHEHIJKRSVMWSWNWBBVMWCVJWSWN
+      OWGWJACDHWNIWQKUPTVAVMWCWBALZXAWBOWGVMWCVKVHXBWGWKWIACDEGIKURQABCWBWNIJWQ
+      VBTUTVCVD $.
+
+    $( Associative-type law for group subtraction and addition.  (Contributed
+       by NM, 19-Apr-2014.) $)
+    abladdsub $p |- ( ( G e. Abel /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+         ( ( X .+ Y ) .- Z ) = ( ( X .- Z ) .+ Y ) ) $=
+      ( cabl wcel w3a wa co wceq ablcom 3adant3r3 oveq1d syl3anc syl13anc simpl
+      cgrp ablgrp adantr simpr2 simpr1 simpr3 grpaddsubass grpsubcl 3eqtrd ) CK
+      LZEALZFALZGALZMZNZEFBOZGDOFEBOZGDOZFEGDOZBOZVAFBOZUQURUSGDULUMUNURUSPUOAB
+      CEFHIQRSUQCUCLZUNUMUOUTVBPULVDUPCUDUEZULUMUNUOUFZULUMUNUOUGZULUMUNUOUHZAB
+      CDFEGHIJUIUAUQULUNVAALZVBVCPULUPUBVFUQVDUMUOVIVEVGVHACDEGHJUJTABCFVAHIQTU
+      K $.
+
+    $( Cancellation law for subtraction in an Abelian group.  (Contributed by
+       NM, 2-Oct-2014.) $)
+    ablpncan2 $p |- ( ( G e. Abel /\ X e. B /\ Y e. B )
+       -> ( ( X .+ Y ) .- X ) = Y ) $=
+      ( cabl wcel w3a co c0g cfv wceq simp1 simp2 simp3 syl2anc syl13anc ablgrp
+      abladdsub cgrp syl eqid grpsubid oveq1d grplid 3eqtrd ) CJKZEAKZFAKZLZEFB
+      MEDMZEEDMZFBMZCNOZFBMZFUNUKULUMULUOUQPUKULUMQZUKULUMRZUKULUMSZVAABCDEFEGH
+      IUCUAUNUPURFBUNCUDKZULUPURPUNUKVCUTCUBUEZVAACDEURGURUFZIUGTUHUNVCUMUSFPVD
+      VBABCFURGHVEUITUJ $.
+
+    $( A cancellation law for Abelian groups.  (Contributed by NM,
+       23-Mar-2015.) $)
+    ablpncan3 $p |- ( ( G e. Abel /\ ( X e. B /\ Y e. B ) ) ->
+        ( X .+ ( Y .- X ) ) = Y ) $=
+      ( cabl wcel wa co wceq simpl simprl cgrp ablgrp adantr syl3anc grpsubcl
+      simprr ablcom grpnpcan eqtrd ) CJKZEAKZFAKZLZLZEFEDMZBMZUKEBMZFUJUFUGUKAK
+      ZULUMNUFUIOUFUGUHPZUJCQKZUHUGUNUFUPUICRSZUFUGUHUBZUOACDFEGIUATABCEUKGHUCT
+      UJUPUHUGUMFNUQURUOABCDFEGHIUDTUE $.
+
+    ablsubsub.g $e |- ( ph -> G e. Abel ) $.
+    ablsubsub.x $e |- ( ph -> X e. B ) $.
+    ablsubsub.y $e |- ( ph -> Y e. B ) $.
+    ablsubsub.z $e |- ( ph -> Z e. B ) $.
+    $( Law for double subtraction.  (Contributed by NM, 7-Apr-2015.) $)
+    ablsubsub $p |- ( ph -> ( X .- ( Y .- Z ) ) = ( ( X .- Y ) .+ Z ) ) $=
+      ( co cgrp wcel wceq syl13anc cabl ablgrp grpsubsub grpaddsubass abladdsub
+      syl 3eqtr2d ) AFGHEPEPZFHGEPCPZFHCPGEPZFGEPHCPZADQRZFBRZGBRZHBRZUHUISADUA
+      RZULLDUBUFZMNOBCDEFGHIJKUCTAULUMUOUNUJUISUQMONBCDEFHGIJKUDTAUPUMUOUNUJUKS
+      LMONBCDEFHGIJKUETUG $.
+
+    $( Law for double subtraction.  (Contributed by NM, 7-Apr-2015.) $)
+    ablsubsub4 $p |- ( ph -> ( ( X .- Y ) .- Z ) = ( X .- ( Y .+ Z ) ) ) $=
+      ( co cminusg cfv wcel syl2anc wceq cgrp cabl ablgrp grpsubcl syl3anc eqid
+      syl grpsubval grpinvcl ablsubsub grpsubinv oveq2d 3eqtr2d ) AFGEPZHEPZUOH
+      DQRZRZCPZFGUREPZEPFGHCPZEPAUOBSZHBSZUPUSUAADUBSZFBSGBSVBADUCSVDLDUDUHZMNB
+      DEFGIKUEUFOBCDUQEUOHIJUQUGZKUITABCDEFGURIJKLMNAVDVCURBSVEOBDUQHIVFUJTUKAU
+      TVAFEABCDEUQGHIJKVFVENOULUMUN $.
+
+    ablpnpcan.g $e |- ( ph -> G e. Abel ) $.
+    ablpnpcan.x $e |- ( ph -> X e. B ) $.
+    ablpnpcan.y $e |- ( ph -> Y e. B ) $.
+    ablpnpcan.z $e |- ( ph -> Z e. B ) $.
+    $( Cancellation law for mixed addition and subtraction.  ( ~ pnpcan
+       analog.)  (Contributed by NM, 29-May-2015.) $)
+    ablpnpcan $p |- ( ph -> ( ( X .+ Y ) .- ( X .+ Z ) ) = ( Y .- Z ) ) $=
+      ( co c0g cfv cabl wcel wceq ablsub4 syl122anc ablgrp syl grpsubid syl2anc
+      cgrp eqid oveq1d grpsubcl syl3anc grplid 3eqtrd ) AFGCTFHCTETZFFETZGHETZC
+      TZDUAUBZVACTZVAADUCUDZFBUDZGBUDZVFHBUDZUSVBUELMNMOBCDEHFGFIJKUFUGAUTVCVAC
+      ADULUDZVFUTVCUEAVEVILDUHUIZMBDEFVCIVCUMZKUJUKUNAVIVABUDZVDVAUEVJAVIVGVHVL
+      VJNOBDEGHIKUOUPBCDVAVCIJVKUQUKUR $.
+  $}
+
+  ${
+    ablnncan.b $e |- B = ( Base ` G ) $.
+    ablnncan.m $e |- .- = ( -g ` G ) $.
+    ablnncan.g $e |- ( ph -> G e. Abel ) $.
+    ablnncan.x $e |- ( ph -> X e. B ) $.
+    ablnncan.y $e |- ( ph -> Y e. B ) $.
+    $( Cancellation law for group subtraction.  ( ~ nncan analog.)
+       (Contributed by NM, 7-Apr-2015.) $)
+    ablnncan $p |- ( ph ->
+             ( X .- ( X .- Y ) ) = Y ) $=
+      ( co cplusg cfv c0g eqid ablsubsub wcel wceq syl2anc cgrp cabl ablgrp syl
+      grpsubid oveq1d grplid 3eqtrd ) AEEFDLDLEEDLZFCMNZLCONZFUJLZFABUJCDEEFGUJ
+      PZHIJJKQAUIUKFUJACUARZEBRUIUKSACUBRUNICUCUDZJBCDEUKGUKPZHUETUFAUNFBRULFSU
+      OKBUJCFUKGUMUPUGTUH $.
+
+    ablsub32.z $e |- ( ph -> Z e. B ) $.
+    $( Swap the second and third terms in a double group subtraction.
+       (Contributed by NM, 7-Apr-2015.) $)
+    ablsub32 $p |- ( ph -> ( ( X .- Y ) .- Z ) = ( ( X .- Z ) .- Y ) ) $=
+      ( cplusg cfv co cabl wcel wceq ablsubsub4 ablcom syl3anc oveq2d 3eqtr4d
+      eqid ) AEFGCNOZPZDPEGFUFPZDPEFDPGDPEGDPFDPAUGUHEDACQRFBRGBRUGUHSJLMBUFCFG
+      HUFUEZUAUBUCABUFCDEFGHUIIJKLMTABUFCDEGFHUIIJKMLTUD $.
+
+    $( Cancellation law for group subtraction.  ( ~ nnncan analog.)
+       (Contributed by NM, 29-Feb-2008.)  (Revised by AV, 27-Aug-2021.) $)
+    ablnnncan $p |- ( ph -> ( ( X .- ( Y .- Z ) ) .- Z ) = ( X .- Y ) ) $=
+      ( co cplusg cfv wcel syl3anc wceq eqtrd eqid cgrp syl grpsubcl ablsubsub4
+      cabl ablgrp ablcom ablpncan3 syl12anc oveq2d ) AEFGDNZDNGDNEULGCOPZNZDNEF
+      DNABUMCDEULGHUMUAZIJKACUBQZFBQZGBQZULBQZACUFQZUPJCUGUCLMBCDFGHIUDRZMUEAUN
+      FEDAUNGULUMNZFAUTUSURUNVBSJVAMBUMCULGHUOUHRAUTURUQVBFSJMLBUMCDGFHUOIUIUJT
+      UKT $.
+
+    $( Cancellation law for group subtraction.  ( ~ nnncan1 analog.)
+       (Contributed by NM, 7-Apr-2015.) $)
+    ablnnncan1 $p |- ( ph -> ( ( X .- Y ) .- ( X .- Z ) ) = ( Z .- Y ) ) $=
+      ( co cgrp wcel cabl ablgrp syl grpsubcl syl3anc ablsub32 ablnncan oveq1d
+      eqtrd ) AEFDNEGDNZDNEUFDNZFDNGFDNABCDEFUFHIJKLACOPZEBPGBPUFBPACQPUHJCRSKM
+      BCDEGHITUAUBAUGGFDABCDEGHIJKMUCUDUE $.
+  $}
+
+  ${
+    ablsubsub23.v $e |- V = ( Base ` G ) $.
+    ablsubsub23.m $e |- .- = ( -g ` G ) $.
+    $( Swap subtrahend and result of group subtraction.  (Contributed by NM,
+       14-Dec-2007.)  (Revised by AV, 7-Oct-2021.) $)
+    ablsubsub23 $p |- ( ( G e. Abel /\ ( A e. V /\ B e. V /\ C e. V ) ) ->
+                ( ( A .- B ) = C <-> ( A .- C ) = B ) ) $=
+      ( cabl wcel w3a wa cplusg cfv co wceq simpl simpr3 wb grpsubadd eqid cgrp
+      simpr2 ablcom syl3anc eqeq1d ablgrp sylan 3ancomb biimpi syl2an 3bitr4d )
+      DIJZAFJZBFJZCFJZKZLZCBDMNZOZAPZBCUSOZAPZABEOCPZACEOBPZURUTVBAURUMUPUOUTVB
+      PUMUQQUMUNUOUPRUMUNUOUPUCFUSDCBGUSUAZUDUEUFUMDUBJZUQVDVASDUGZFUSDEABCGVFH
+      TUHUMVGUNUPUOKZVEVCSUQVHUQVIUNUOUPUIUJFUSDEACBGVFHTUKUL $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Rings
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -164732,6 +165221,13 @@ htmldef "MndHom" as " MndHom ";
 htmldef "SubMnd" as "SubMnd";
   althtmldef "SubMnd" as "SubMnd";
   latexdef "SubMnd" as "\mathrm{SubMnd}";
+htmldef "CMnd" as "CMnd";
+  althtmldef "CMnd" as "CMnd";
+  latexdef "CMnd" as "\mathrm{CMnd}";
+htmldef "Abel" as
+    "<IMG SRC='_abel.gif' WIDTH=28 HEIGHT=19 ALT=' Abel' TITLE='Abel'>";
+  althtmldef "Abel" as "Abel";
+  latexdef "Abel" as "\mathrm{Abel}";
 htmldef "mulGrp" as "mulGrp";
   althtmldef "mulGrp" as "mulGrp";
   latexdef "mulGrp" as "\mathrm{mulGrp}";

@@ -74,7 +74,7 @@ proposed  syl5com   imtridcom
 proposed  syl5      imtrid      alternate proposal: sylid
 proposed  syl56     imtridi
 proposed  syl5d     imtridd
-proposed  syl5bi    biimtrid
+underway  syl5bi    biimtrid
 proposed  syl5bir   biimtrrid
 proposed  syl5ib    imbitrid
 proposed  syl5ibcom imbitridcom
@@ -92,6 +92,16 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 2-Jan-25 pr2nelem  enpr2
+28-Dec-24 fovrnd    fovcdmd
+28-Dec-24 fovrnda   fovcdmda
+28-Dec-24 fovrn     fovcdm
+28-Dec-24 foelrni   foelcdmi
+28-Dec-24 fornex    focdmex
+28-Dec-24 fafvelrn  fafvelcdm
+28-Dec-24 fafv2elrn fafv2elcdm
+28-Dec-24 frnvafv2v fcdmafv2v
+28-Dec-24 cncffvrn  cncfcdm
 26-Dec-24 syl5bb    bitrid      compare to bitri or bitrd
 23-Dec-24 sn-iotaex iotaex      moved from SN's mathbox to main set.mm
 23-Dec-24 sn-iotassuni iotassuni moved from SN's mathbox to main set.mm
@@ -99,6 +109,11 @@ Date      Old       New         Notes
 23-Dec-24 sn-iotanul iotanul2   moved from SN's mathbox to main set.mm
 23-Dec-24 sn-iotauni iotauni2   moved from SN's mathbox to main set.mm
 23-Dec-24 iotavallem iotaval2   moved from SN's mathbox to main set.mm
+22-Dec-24 frnsuppeq fsuppeq
+22-Dec-24 frnsuppeqg fsuppeqg
+22-Dec-24 frnfsuppbi ffsuppbi
+22-Dec-24 fvmptelrn fvmptelcdm 
+22-Dec-24 frnssb    fcdmssb
 19-Dec-24 3albii    [same]      moved from PM's mathbox to main set.mm
 19-Dec-24 ssrel3    [same]      moved from PM's mathbox to main set.mm
 17-Dec-24 ffvelrnd  ffvelcdmd
