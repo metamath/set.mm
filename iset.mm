@@ -148538,6 +148538,46 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties of unital rings
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Ring $.
+  $c CRing $.
+
+  $( Extend class notation with class of all (unital) rings. $)
+  crg $a class Ring $.
+
+  $( Extend class notation with class of all (unital) commutative rings. $)
+  ccrg $a class CRing $.
+
+  ${
+    $d f p r t x y z $.
+    $( Define class of all (unital) rings.  A unital ring is a set equipped
+       with two everywhere-defined internal operations, whose first one is an
+       additive group structure and the second one is a multiplicative monoid
+       structure, and where the addition is left- and right-distributive for
+       the multiplication.  Definition 1 in [BourbakiAlg1] p. 92 or definition
+       of a ring with identity in part Preliminaries of [Roman] p. 19.  So that
+       the additive structure must be abelian (see ~ ringcom ), care must be
+       taken that in the case of a non-unital ring, the commutativity of
+       addition must be postulated and cannot be proved from the other
+       conditions.  (Contributed by NM, 18-Oct-2012.)  (Revised by Mario
+       Carneiro, 27-Dec-2014.) $)
+    df-ring $a |- Ring = { f e. Grp | ( ( mulGrp ` f ) e. Mnd /\
+        [. ( Base ` f ) / r ]. [. ( +g ` f ) / p ]. [. ( .r ` f ) / t ].
+        A. x e. r A. y e. r A. z e. r
+           ( ( x t ( y p z ) ) = ( ( x t y ) p ( x t z ) )
+            /\ ( ( x p y ) t z ) = ( ( x t z ) p ( y t z ) ) ) ) } $.
+
+    $( Define class of all commutative rings.  (Contributed by Mario Carneiro,
+       7-Jan-2015.) $)
+    df-cring $a |- CRing = { f e. Ring | ( mulGrp ` f ) e. CMnd } $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -165772,6 +165812,14 @@ htmldef "mulGrp" as "mulGrp";
 htmldef "SRing" as "SRing";
   althtmldef "SRing" as "SRing";
   latexdef "SRing" as "\mathrm{SRing}";
+htmldef "Ring" as
+    "<IMG SRC='_ring.gif' WIDTH=30 HEIGHT=19 ALT=' Ring' TITLE='Ring'>";
+  althtmldef "Ring" as "Ring";
+  latexdef "Ring" as "\mathrm{Ring}";
+htmldef "CRing" as
+    "<IMG SRC='_cring.gif' WIDTH=40 HEIGHT=19 ALT=' CRing' TITLE='CRing'>";
+  althtmldef "CRing" as "CRing";
+  latexdef "CRing" as "\mathrm{CRing}";
 htmldef "1r" as "<IMG SRC='_1r.gif' WIDTH=13 HEIGHT=19 ALT=' 1r' TITLE='1r'>";
   althtmldef "1r" as "1<SUB>r</SUB>";
   latexdef "1r" as "1_\mathrm{r}";
