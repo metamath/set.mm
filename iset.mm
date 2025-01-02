@@ -147686,7 +147686,7 @@ $)
       IUCUAUNUPURFBUNCUDKZULUPURPUNUKVCUTCUBUEZVAACDEURGURUFZIUGTUHUNVCUMUSFPVD
       VBABCFURGHVEUITUJ $.
 
-    $( A cancellation law for commutative groups.  (Contributed by NM,
+    $( A cancellation law for Abelian groups.  (Contributed by NM,
        23-Mar-2015.) $)
     ablpncan3 $p |- ( ( G e. Abel /\ ( X e. B /\ Y e. B ) ) ->
         ( X .+ ( Y .- X ) ) = Y ) $=
