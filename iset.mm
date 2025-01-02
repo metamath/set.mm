@@ -147676,7 +147676,8 @@ $)
       CDFEGHIJUIUAUQULUNVAALZVBVCPULUPUBVFUQVDUMUOVIVEVGVHACDEGHJUJTABCFVAHIQTU
       K $.
 
-    $( Cancellation law for subtraction.  (Contributed by NM, 2-Oct-2014.) $)
+    $( Cancellation law for subtraction in an Abelian group.  (Contributed by
+       NM, 2-Oct-2014.) $)
     ablpncan2 $p |- ( ( G e. Abel /\ X e. B /\ Y e. B )
        -> ( ( X .+ Y ) .- X ) = Y ) $=
       ( cabl wcel w3a co c0g cfv wceq simp1 simp2 simp3 syl2anc syl13anc ablgrp
