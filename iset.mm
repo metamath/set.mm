@@ -148668,6 +148668,13 @@ $)
       ( crngringd ringgrpd ) ABABCDE $.
   $}
 
+  $( Restricted functionality of the multiplicative group on rings.
+     (Contributed by Mario Carneiro, 11-Mar-2015.) $)
+  mgpf $p |- ( mulGrp |` Ring ) : Ring --> Mnd $=
+    ( va crg cmnd cmgp cres wf wfn cv cfv wcel wral cvv wss fnmgp fnssres mp2an
+    ssv fvres eqid ringmgp eqeltrd rgen ffnfv mpbir2an ) BCDBEZFUEBGZAHZUEIZCJZ
+    ABKDLGBLMUFNBQLBDOPUIABUGBJUHUGDIZCUGBDRUGUJUJSTUAUBABCUEUCUD $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
