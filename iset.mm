@@ -148675,6 +148675,20 @@ $)
     ssv fvres eqid ringmgp eqeltrd rgen ffnfv mpbir2an ) BCDBEZFUEBGZAHZUEIZCJZ
     ABKDLGBLMUFNBQLBDOPUIABUGBJUHUGDIZCUGBDRUGUJUJSTUAUBABCUEUCUD $.
 
+  ${
+    ringcl.b $e |- B = ( Base ` R ) $.
+    ringcl.t $e |- .x. = ( .r ` R ) $.
+    $( Closure of the multiplication operation of a ring.  (Contributed by NM,
+       26-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    ringcl $p |- ( ( R e. Ring /\ X e. B /\ Y e. B ) -> ( X .x. Y ) e. B ) $=
+      ( crg wcel w3a co cmgp cfv cplusg cbs eqid 3ad2ant1 wb eleq2d mpbid simp2
+      cmnd ringmgp mgpbasg simp3 mndcl syl3anc mgpplusgg oveqd eleq12d mpbird )
+      BHIZDAIZEAIZJZDECKZAIZDEBLMZNMZKZUROMZIZUOURUBIZDVAIZEVAIZVBULUMVCUNBURUR
+      PZUCQUOUMVDULUMUNUAULUMUMVDRUNULAVADABURHVFFUDZSQTUOUNVEULUMUNUEULUMUNVER
+      UNULAVAEVGSQTVAUSURDEVAPUSPUFUGULUMUQVBRUNULUPUTAVAULCUSDEBCURHVFGUHUIVGU
+      JQUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
