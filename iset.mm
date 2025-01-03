@@ -148648,6 +148648,15 @@ $)
   ringmnd $p |- ( R e. Ring -> R e. Mnd ) $=
     ( crg wcel ringgrp grpmndd ) ABCAADE $.
 
+  $( A ring is a magma.  (Contributed by AV, 31-Jan-2020.) $)
+  ringmgm $p |- ( R e. Ring -> R e. Mgm ) $=
+    ( crg wcel cmnd cmgm ringmnd mndmgm syl ) ABCADCAECAFAGH $.
+
+  $( A commutative ring is a ring.  (Contributed by Mario Carneiro,
+     7-Jan-2015.) $)
+  crngring $p |- ( R e. CRing -> R e. Ring ) $=
+    ( ccrg wcel crg cmgp cfv ccmn eqid iscrng simplbi ) ABCADCAEFZGCAKKHIJ $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
