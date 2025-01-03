@@ -148623,6 +148623,17 @@ $)
       ( vx vy vz crg wcel cgrp cmnd cv cplusg cfv co cmulr wceq cbs wral eqid
       wa isring simp2bi ) AGHAIHBJHDKZEKZFKZALMZNAOMZNUCUDUGNUCUEUGNZUFNPUCUDUF
       NUEUGNUHUDUEUGNUFNPTFAQMZREUIRDUIRDEFUIUFAUGBUISCUFSUGSUAUB $.
+
+    $( A commutative ring is a ring whose multiplication is a commutative
+       monoid.  (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    iscrng $p |- ( R e. CRing <-> ( R e. Ring /\ G e. CMnd ) ) $=
+      ( vr cv cmgp cfv ccmn wcel ccrg wceq fveq2 eqtr4di eleq1d df-cring elrab2
+      crg ) DEZFGZHIBHIDAQJRAKZSBHTSAFGBRAFLCMNDOP $.
+
+    $( A commutative ring's multiplication operation is commutative.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    crngmgp $p |- ( R e. CRing -> G e. CMnd ) $=
+      ( ccrg wcel crg ccmn iscrng simprbi ) ADEAFEBGEABCHI $.
   $}
 
 
