@@ -148576,6 +148576,38 @@ $)
     df-cring $a |- CRing = { f e. Ring | ( mulGrp ` f ) e. CMnd } $.
   $}
 
+  ${
+    $d b p r t x y z B $.  $d b p r t x y z .+ $.  $d b p r t x y z R $.
+    $d r G $.  $d b p r t x y z .x. $.
+    isring.b $e |- B = ( Base ` R ) $.
+    isring.g $e |- G = ( mulGrp ` R ) $.
+    isring.p $e |- .+ = ( +g ` R ) $.
+    isring.t $e |- .x. = ( .r ` R ) $.
+    $( The predicate "is a (unital) ring".  Definition of ring with unit in
+       [Schechter] p. 187.  (Contributed by NM, 18-Oct-2012.)  (Revised by
+       Mario Carneiro, 6-Jan-2015.) $)
+    isring $p |- ( R e. Ring <-> ( R e. Grp /\ G e. Mnd
+      /\ A. x e. B A. y e. B A. z e. B
+       ( ( x .x. ( y .+ z ) ) = ( ( x .x. y ) .+ ( x .x. z ) )
+      /\ ( ( x .+ y ) .x. z ) = ( ( x .x. z ) .+ ( y .x. z ) ) ) ) ) $=
+      ( vr wcel cv co wceq wa cfv cvv vp vt vb crg cgrp cmnd wral w3a cmgp wsbc
+      cmulr cplusg cbs fveq2 eqtr4di eleq1d wfn basfn vex funfvex a1i plusgslid
+      funfni mp2an slotex elv simpl fveq2d mulrslid simpll simpllr simpr simplr
+      eqidd oveqd oveq123d eqeq12d anbi12d sbcied2 df-ring elrab2 3anass bitr4i
+      raleqbidv ) FUDNFUENZHUFNZAOZBOZCOZEPZGPZWGWHGPZWGWIGPZEPZQZWGWHEPZWIGPZW
+      MWHWIGPZEPZQZRZCDUGZBDUGZADUGZRZRWEWFXDUHMOZUISZUFNZWGWHWIUAOZPZUBOZPZWGW
+      HXKPZWGWIXKPZXIPZQZWGWHXIPZWIXKPZXNWHWIXKPZXIPZQZRZCUCOZUGZBYCUGZAYCUGZUB
+      XFUKSZUJZUAXFULSZUJZUCXFUMSZUJZRXEMFUEUDXFFQZXHWFYLXDYMXGHUFYMXGFUISHXFFU
+      IUNJUOUPYMYJXDUCYKDTYKTNZYMUMTUQXFTNYNURMUSYNTXFUMXFUMUTVCVDVAYMYKFUMSDXF
+      FUMUNIUOYMYCDQZRZYHXDUAYIETYITNZYPYQMXFULTVBVEVFVAYPYIFULSEYPXFFULYMYOVGV
+      HKUOYPXIEQZRZYFXDUBYGGTYGTNZYSYTMXFUKTVIVEVFVAYSYGFUKSGYSXFFUKYMYOYRVJVHL
+      UOYSXKGQZRZYEXCAYCDYMYOYRUUAVKZUUBYDXBBYCDUUCUUBYBXACYCDUUCUUBXPWOYAWTUUB
+      XLWKXOWNUUBWGWGXJWJXKGYSUUAVLZUUBWGVNUUBXIEWHWIYPYRUUAVMZVOVPUUBXMWLXNWMX
+      IEUUEUUBXKGWGWHUUDVOUUBXKGWGWIUUDVOZVPVQUUBXRWQXTWSUUBXQWPWIWIXKGUUDUUBXI
+      EWGWHUUEVOUUBWIVNVPUUBXNWMXSWRXIEUUEUUFUUBXKGWHWIUUDVOVPVQVRWDWDWDVSVSVSV
+      RABCUBMUCUAVTWAWEWFXDWBWC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
