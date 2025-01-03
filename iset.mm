@@ -148697,6 +148697,19 @@ $)
       IZEAIZJZDEBKLZMLZNZEDUONZDECNEDCNUMUNOIZDUNUALZIEUSIUPUQPUJUKURULBUNUNQZU
       BRUMDAUSUJUKULUCUJUKAUSPULABUNHUTFUDRZSUMEAUSUJUKULUEVASUSUOUNDEUSQUOQUFU
       GUMCUODEUJUKCUOPULBCUNHUTGUHRZTUMCUOEDVBTUI $.
+
+    $d x y B $.  $d x y R $.
+    $( A commutative ring is a ring whose multiplication is a commutative
+       monoid.  (Contributed by Mario Carneiro, 15-Jun-2015.) $)
+    iscrng2 $p |- ( R e. CRing <-> ( R e. Ring /\
+        A. x e. B A. y e. B ( x .x. y ) = ( y .x. x ) ) ) $=
+      ( ccrg wcel cvv crg cv co wceq wral wa elex cfv eqid oveqd cmgp ccmn cmnd
+      adantr iscrng wb ringmgp cplusg iscmn mgpbasg mgpplusgg eqeq12d raleqbidv
+      cbs anbi2d bitr4id baibd sylan2 pm5.32da bitrid pm5.21nii ) DHIZDJIZDKIZA
+      LZBLZEMZVFVEEMZNZBCOZACOZPZDHQVDVCVKDKQUDVBVDDUARZUBIZPVCVLDVMVMSZUEVCVDV
+      NVKVDVCVMUCIZVNVKUFDVMVOUGVCVNVPVKVCVNVPVEVFVMUHRZMZVFVEVQMZNZBVMUNRZOZAW
+      AOZPVPVKPABWAVQVMWASVQSUIVCVKWCVPVCVJWBACWACDVMJVOFUJZVCVIVTBCWAWDVCVGVRV
+      HVSVCEVQVEVFDEVMJVOGUKZTVCEVQVFVEWETULUMUMUOUPUQURUSUTVA $.
   $}
 
 
