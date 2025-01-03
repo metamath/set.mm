@@ -17416,6 +17416,7 @@ New usage of "ishlatiN" is discouraged (0 uses).
 New usage of "ishlo" is discouraged (4 uses).
 New usage of "ishmo" is discouraged (0 uses).
 New usage of "ishst" is discouraged (4 uses).
+New usage of "isinfOLD" is discouraged (0 uses).
 New usage of "isline4N" is discouraged (0 uses).
 New usage of "islno" is discouraged (5 uses).
 New usage of "islpolN" is discouraged (6 uses).
@@ -20794,6 +20795,7 @@ Proof modification of "isarep1OLD" is discouraged (106 steps).
 Proof modification of "iscmgmALT" is discouraged (57 steps).
 Proof modification of "iscsgrpALT" is discouraged (57 steps).
 Proof modification of "iseriALT" is discouraged (54 steps).
+Proof modification of "isinfOLD" is discouraged (588 steps).
 Proof modification of "ismgmALT" is discouraged (53 steps).
 Proof modification of "ismgmOLD" is discouraged (292 steps).
 Proof modification of "isosctrlem1ALT" is discouraged (363 steps).
