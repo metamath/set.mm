@@ -1450,6 +1450,7 @@
 "ax-pre-lttrn" is used by "axlttrn".
 "ax-pre-mulgt0" is used by "axmulgt0".
 "ax-pre-sup" is used by "axsup".
+"ax-riotaBAD" is used by "riotaclbgBAD".
 "ax10fromc7" is used by "axc5c711".
 "ax10fromc7" is used by "equidq".
 "ax10fromc7" is used by "hba1-o".
@@ -5138,7 +5139,6 @@
 "dfsb1" is used by "bj-dfsb2".
 "dfsb1" is used by "drsb1".
 "dfsb1" is used by "frege55b".
-"dfsb1" is used by "subsym1".
 "dfsb2" is used by "dfsb3".
 "dfvd1imp" is used by "gen11".
 "dfvd1impr" is used by "gen11".
@@ -12596,7 +12596,31 @@
 "ringcvalALTV" is used by "ringcbasALTV".
 "ringcvalALTV" is used by "ringccofvalALTV".
 "ringcvalALTV" is used by "ringchomfvalALTV".
+"riotaclbBAD" is used by "cdlemk36".
+"riotaclbBAD" is used by "glbconNOLD".
+"riotaclbgBAD" is used by "riotaclbBAD".
+"riotaclbgBAD" is used by "riotasvd".
 "riotaocN" is used by "glbconN".
+"riotaocN" is used by "glbconNOLD".
+"riotasv" is used by "cdleme26e".
+"riotasv" is used by "cdleme26eALTN".
+"riotasv" is used by "cdleme26f".
+"riotasv" is used by "cdleme26f2".
+"riotasv" is used by "cdleme26f2ALTN".
+"riotasv" is used by "cdleme26fALTN".
+"riotasv2d" is used by "cdleme42b".
+"riotasv2d" is used by "riotasv2s".
+"riotasv3d" is used by "cdleme40m".
+"riotasv3d" is used by "cdleme40n".
+"riotasv3d" is used by "cdleme41sn3a".
+"riotasv3d" is used by "cdleme43fsv1snlem".
+"riotasv3d" is used by "cdlemefs32sn1aw".
+"riotasv3d" is used by "cdlemkid".
+"riotasv3d" is used by "dihvalcqpre".
+"riotasvd" is used by "cdleme32a".
+"riotasvd" is used by "riotasv".
+"riotasvd" is used by "riotasv2d".
+"riotasvd" is used by "riotasv3d".
 "rnbra" is used by "bra11".
 "rnbra" is used by "cnvbraval".
 "rnelshi" is used by "hmopidmchi".
@@ -14646,6 +14670,7 @@ New usage of "ax-pre-lttri" is discouraged (1 uses).
 New usage of "ax-pre-lttrn" is discouraged (1 uses).
 New usage of "ax-pre-mulgt0" is discouraged (1 uses).
 New usage of "ax-pre-sup" is discouraged (1 uses).
+New usage of "ax-riotaBAD" is discouraged (1 uses).
 New usage of "ax1" is discouraged (0 uses).
 New usage of "ax10fromc7" is discouraged (3 uses).
 New usage of "ax10w" is discouraged (0 uses).
@@ -16052,7 +16077,7 @@ New usage of "dfnul3OLD" is discouraged (0 uses).
 New usage of "dfnul4OLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfrecs3OLD" is discouraged (0 uses).
-New usage of "dfsb1" is discouraged (4 uses).
+New usage of "dfsb1" is discouraged (3 uses).
 New usage of "dfsb2" is discouraged (1 uses).
 New usage of "dfsb3" is discouraged (0 uses).
 New usage of "dfsn2ALT" is discouraged (0 uses).
@@ -16773,6 +16798,7 @@ New usage of "gidsn" is discouraged (1 uses).
 New usage of "gidval" is discouraged (3 uses).
 New usage of "glb0N" is discouraged (2 uses).
 New usage of "glbconN" is discouraged (1 uses).
+New usage of "glbconNOLD" is discouraged (0 uses).
 New usage of "glbconxN" is discouraged (1 uses).
 New usage of "goeqi" is discouraged (0 uses).
 New usage of "golem1" is discouraged (1 uses).
@@ -18855,7 +18881,14 @@ New usage of "ringcinvALTV" is discouraged (1 uses).
 New usage of "ringcisoALTV" is discouraged (0 uses).
 New usage of "ringcsectALTV" is discouraged (1 uses).
 New usage of "ringcvalALTV" is discouraged (3 uses).
-New usage of "riotaocN" is discouraged (1 uses).
+New usage of "riotaclbBAD" is discouraged (2 uses).
+New usage of "riotaclbgBAD" is discouraged (2 uses).
+New usage of "riotaocN" is discouraged (2 uses).
+New usage of "riotasv" is discouraged (6 uses).
+New usage of "riotasv2d" is discouraged (2 uses).
+New usage of "riotasv2s" is discouraged (0 uses).
+New usage of "riotasv3d" is discouraged (7 uses).
+New usage of "riotasvd" is discouraged (4 uses).
 New usage of "rlimaddOLD" is discouraged (0 uses).
 New usage of "rlimmulOLD" is discouraged (0 uses).
 New usage of "rmoanimALT" is discouraged (0 uses).
@@ -20700,6 +20733,7 @@ Proof modification of "ggen22" is discouraged (13 steps).
 Proof modification of "ggen31" is discouraged (22 steps).
 Proof modification of "ghomidOLD" is discouraged (178 steps).
 Proof modification of "ghomlinOLD" is discouraged (161 steps).
+Proof modification of "glbconNOLD" is discouraged (904 steps).
 Proof modification of "grpbaseOLD" is discouraged (11 steps).
 Proof modification of "grpinvfvalALT" is discouraged (161 steps).
 Proof modification of "grposnOLD" is discouraged (291 steps).
