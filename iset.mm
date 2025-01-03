@@ -148127,13 +148127,13 @@ $)
   ${
     $d x y z B $.  $d x y z R $.  $d x y z .x. $.  $d x y z X $.  $d x y z Y $.
     $d x y z .+ $.  $d x y z Z $.
-    srgi.b $e |- B = ( Base ` R ) $.
-    srgi.p $e |- .+ = ( +g ` R ) $.
-    srgi.t $e |- .x. = ( .r ` R ) $.
-    $( Properties of a semiring.  (Contributed by NM, 26-Aug-2011.)  (Revised
-       by Mario Carneiro, 6-Jan-2015.)  (Revised by Thierry Arnoux,
+    srgdilem.b $e |- B = ( Base ` R ) $.
+    srgdilem.p $e |- .+ = ( +g ` R ) $.
+    srgdilem.t $e |- .x. = ( .r ` R ) $.
+    $( Lemma for ~ srgdi and ~ srgdir .  (Contributed by NM, 26-Aug-2011.)
+       (Revised by Mario Carneiro, 6-Jan-2015.)  (Revised by Thierry Arnoux,
        1-Apr-2018.) $)
-    srgi $p |- ( ( R e. SRing /\ ( X e. B /\ Y e. B /\ Z e. B ) )
+    srgdilem $p |- ( ( R e. SRing /\ ( X e. B /\ Y e. B /\ Z e. B ) )
            -> ( ( X .x. ( Y .+ Z ) ) = ( ( X .x. Y ) .+ ( X .x. Z ) )
                 /\ ( ( X .+ Y ) .x. Z ) = ( ( X .x. Z ) .+ ( Y .x. Z ) ) ) ) $=
       ( vx vy vz wcel w3a wa co wceq cv wral csrg c0g ccmn cmgp cmnd eqid issrg
@@ -148210,16 +148210,16 @@ $)
        Arnoux, 1-Apr-2018.) $)
     srgdi $p |- ( ( R e. SRing /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
                      ( X .x. ( Y .+ Z ) ) = ( ( X .x. Y ) .+ ( X .x. Z ) ) ) $=
-      ( csrg wcel w3a wa co wceq srgi simpld ) CKLEALFALGALMNEFGBODOEFDOEGDOZBO
-      PEFBOGDOSFGDOBOPABCDEFGHIJQR $.
+      ( csrg wcel w3a wa co wceq srgdilem simpld ) CKLEALFALGALMNEFGBODOEFDOEGD
+      OZBOPEFBOGDOSFGDOBOPABCDEFGHIJQR $.
 
     $( Distributive law for the multiplication operation of a semiring.
        (Contributed by Steve Rodriguez, 9-Sep-2007.)  (Revised by Thierry
        Arnoux, 1-Apr-2018.) $)
     srgdir $p |- ( ( R e. SRing /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
                      ( ( X .+ Y ) .x. Z ) = ( ( X .x. Z ) .+ ( Y .x. Z ) ) ) $=
-      ( csrg wcel w3a wa co wceq srgi simprd ) CKLEALFALGALMNEFGBODOEFDOEGDOZBO
-      PEFBOGDOSFGDOBOPABCDEFGHIJQR $.
+      ( csrg wcel w3a wa co wceq srgdilem simprd ) CKLEALFALGALMNEFGBODOEFDOEGD
+      OZBOPEFBOGDOSFGDOBOPABCDEFGHIJQR $.
   $}
 
   ${

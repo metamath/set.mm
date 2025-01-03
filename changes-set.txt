@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 3-Jan-25 srgi      srgdilem
  2-Jan-25 pr2nelem  enpr2
 28-Dec-24 fovrnd    fovcdmd
 28-Dec-24 fovrnda   fovcdmda
