@@ -148636,6 +148636,18 @@ $)
       ( ccrg wcel crg ccmn iscrng simprbi ) ADEAFEBGEABCHI $.
   $}
 
+  ${
+    ringgrpd.1 $e |- ( ph -> R e. Ring ) $.
+    $( A ring is a group.  (Contributed by SN, 16-May-2024.) $)
+    ringgrpd $p |- ( ph -> R e. Grp ) $=
+      ( crg wcel cgrp ringgrp syl ) ABDEBFECBGH $.
+  $}
+
+  $( A ring is a monoid under addition.  (Contributed by Mario Carneiro,
+     7-Jan-2015.) $)
+  ringmnd $p |- ( R e. Ring -> R e. Mnd ) $=
+    ( crg wcel ringgrp grpmndd ) ABCAADE $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
