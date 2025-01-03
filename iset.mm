@@ -148687,6 +148687,16 @@ $)
       PZUCQUOUMVDULUMUNUAULUMUMVDRUNULAVADABURHVFFUDZSQTUOUNVEULUMUNUEULUMUNVER
       UNULAVAEVGSQTVAUSURDEVAPUSPUFUGULUMUQVBRUNULUPUTAVAULCUSDEBCURHVFGUHUIVGU
       JQUK $.
+
+    $( A commutative ring's multiplication operation is commutative.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    crngcom $p |- ( ( R e. CRing /\ X e. B /\ Y e. B ) ->
+      ( X .x. Y ) = ( Y .x. X ) ) $=
+      ( ccrg wcel w3a cmgp cfv cplusg co ccmn wceq eqid 3ad2ant1 eleqtrd oveqd
+      cbs crngmgp simp2 mgpbasg simp3 cmncom syl3anc mgpplusgg 3eqtr4d ) BHIZDA
+      IZEAIZJZDEBKLZMLZNZEDUONZDECNEDCNUMUNOIZDUNUALZIEUSIUPUQPUJUKURULBUNUNQZU
+      BRUMDAUSUJUKULUCUJUKAUSPULABUNHUTFUDRZSUMEAUSUJUKULUEVASUSUOUNDEUSQUOQUFU
+      GUMCUODEUJUKCUOPULBCUNHUTGUHRZTUMCUOEDVBTUI $.
   $}
 
 
