@@ -148608,6 +148608,23 @@ $)
       RABCUBMUCUAVTWAWEWFXDWBWC $.
   $}
 
+  ${
+    $d r G $.  $d r x y z R $.
+    $( A ring is a group.  (Contributed by NM, 15-Sep-2011.) $)
+    ringgrp $p |- ( R e. Ring -> R e. Grp ) $=
+      ( vx vy vz crg wcel cgrp cmgp cfv cmnd cv cplusg cmulr wceq cbs wral eqid
+      co wa isring simp1bi ) AEFAGFAHIZJFBKZCKZDKZALIZRAMIZRUCUDUGRUCUEUGRZUFRN
+      UCUDUFRUEUGRUHUDUEUGRUFRNSDAOIZPCUIPBUIPBCDUIUFAUGUBUIQUBQUFQUGQTUA $.
+
+    ringmgp.g $e |- G = ( mulGrp ` R ) $.
+    $( A ring is a monoid under multiplication.  (Contributed by Mario
+       Carneiro, 6-Jan-2015.) $)
+    ringmgp $p |- ( R e. Ring -> G e. Mnd ) $=
+      ( vx vy vz crg wcel cgrp cmnd cv cplusg cfv co cmulr wceq cbs wral eqid
+      wa isring simp2bi ) AGHAIHBJHDKZEKZFKZALMZNAOMZNUCUDUGNUCUEUGNZUFNPUCUDUF
+      NUEUGNUHUDUEUGNUFNPTFAQMZREUIRDUIRDEFUIUFAUGBUISCUFSUGSUAUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
