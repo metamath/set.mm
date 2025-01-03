@@ -148043,12 +148043,13 @@ $)
        everywhere-defined internal operations, whose first one is an additive
        commutative monoid structure and the second one is a multiplicative
        monoid structure, and where multiplication is (left- and right-)
-       distributive over addition.  Compared to the definition of a ring, this
-       definition also adds that the additive identity is an absorbing element
-       of the multiplicative law, as this cannot be deduced from distributivity
-       alone.  Definition of [Golan] p. 1.  Note that our semirings are unital.
-       Such semirings are sometimes called "rigs", being "rings without
-       negatives".  (Contributed by Thierry Arnoux, 21-Mar-2018.) $)
+       distributive over addition.  Like with rings, the additive identity is
+       an absorbing element of the multiplicative law, but in the case of
+       semirings, this has to be part of the definition, as it cannot be
+       deduced from distributivity alone.  Definition of [Golan] p. 1.  Note
+       that our semirings are unital.  Such semirings are sometimes called
+       "rigs", being "rings without negatives".  (Contributed by Thierry
+       Arnoux, 21-Mar-2018.) $)
     df-srg $a |- SRing = { f e. CMnd | ( ( mulGrp ` f ) e. Mnd /\
         [. ( Base ` f ) / r ]. [. ( +g ` f ) / p ]. [. ( .r ` f ) / t ].
         [. ( 0g ` f ) / n ]. A. x e. r ( A. y e. r A. z e. r
