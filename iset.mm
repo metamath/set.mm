@@ -148657,6 +148657,17 @@ $)
   crngring $p |- ( R e. CRing -> R e. Ring ) $=
     ( ccrg wcel crg cmgp cfv ccmn eqid iscrng simplbi ) ABCADCAEFZGCAKKHIJ $.
 
+  ${
+    crngringd.1 $e |- ( ph -> R e. CRing ) $.
+    $( A commutative ring is a ring.  (Contributed by SN, 16-May-2024.) $)
+    crngringd $p |- ( ph -> R e. Ring ) $=
+      ( ccrg wcel crg crngring syl ) ABDEBFECBGH $.
+
+    $( A commutative ring is a group.  (Contributed by SN, 16-May-2024.) $)
+    crnggrpd $p |- ( ph -> R e. Grp ) $=
+      ( crngringd ringgrpd ) ABABCDE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
