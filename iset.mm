@@ -148722,6 +148722,18 @@ $)
       OAVJNUSABVAIVKGUMPZQUTEAVJUOUPUQURUHVLQUTFAVJUOUPUQURUIVLQVJVBVADEFVJOVBO
       UJUKUTVGVCFFCVBUOCVBNUSBCVAIVKHULPZUTCVBDEVMRUTFSTUTDDVHVECVBVMUTDSUTCVBE
       FVMRTUN $.
+
+    $d u x B $.  $d u x R $.  $d u x .x. $.
+    $( The unit element of a ring is unique.  (Contributed by NM, 27-Aug-2011.)
+       (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    ringideu $p |- ( R e. Ring ->
+                E! u e. B A. x e. B ( ( u .x. x ) = x /\ ( x .x. u ) = x ) ) $=
+      ( crg wcel cv co wceq wa wral wreu cfv eqid syl oveqd eqeq1d cmgp ringmgp
+      cplusg cmnd mndideu mgpbasg mgpplusgg anbi12d raleqbidv reubidv wb reueq1
+      cbs bitrd mpbird ) DHIZBJZAJZEKZURLZURUQEKZURLZMZACNZBCOZUQURDUAPZUCPZKZU
+      RLZURUQVGKZURLZMZAVFUMPZNZBVMOZUPVFUDIVODVFVFQZUBABVMVGVFVMQVGQUERUPVEVNB
+      COZVOUPVDVNBCUPVCVLACVMCDVFHVPFUFZUPUTVIVBVKUPUSVHURUPEVGUQURDEVFHVPGUGZS
+      TUPVAVJURUPEVGURUQVSSTUHUIUJUPCVMLVQVOUKVRVNBCVMULRUNUO $.
   $}
 
 
