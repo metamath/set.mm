@@ -16560,6 +16560,7 @@ New usage of "en0ALT" is discouraged (0 uses).
 New usage of "en0OLD" is discouraged (0 uses).
 New usage of "en1OLD" is discouraged (0 uses).
 New usage of "en1bOLD" is discouraged (0 uses).
+New usage of "en1eqsnOLD" is discouraged (0 uses).
 New usage of "en1unielOLD" is discouraged (0 uses).
 New usage of "en2snOLD" is discouraged (0 uses).
 New usage of "en2snOLDOLD" is discouraged (0 uses).
@@ -20420,6 +20421,7 @@ Proof modification of "en0ALT" is discouraged (62 steps).
 Proof modification of "en0OLD" is discouraged (86 steps).
 Proof modification of "en1OLD" is discouraged (164 steps).
 Proof modification of "en1bOLD" is discouraged (83 steps).
+Proof modification of "en1eqsnOLD" is discouraged (86 steps).
 Proof modification of "en1unielOLD" is discouraged (39 steps).
 Proof modification of "en2snOLD" is discouraged (56 steps).
 Proof modification of "en2snOLDOLD" is discouraged (35 steps).
