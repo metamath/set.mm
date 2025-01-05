@@ -148776,6 +148776,18 @@ $)
       OZBOPEFBOGDOSFGDOBOPABCDEFGHIJQR $.
   $}
 
+  ${
+    ringidcl.b $e |- B = ( Base ` R ) $.
+    ringidcl.u $e |- .1. = ( 1r ` R ) $.
+    $( The unit element of a ring belongs to the base set of the ring.
+       (Contributed by NM, 27-Aug-2011.)  (Revised by Mario Carneiro,
+       27-Dec-2014.) $)
+    ringidcl $p |- ( R e. Ring -> .1. e. B ) $=
+      ( crg wcel cmgp cfv c0g cbs cmnd eqid ringmgp mndidcl syl mgpbasg 3eltr4d
+      ringidvalg ) BFGZBHIZJIZUAKIZCATUALGUBUCGBUAUAMZNUCUAUBUCMUBMOPBCUAFUDESA
+      BUAFUDDQR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
