@@ -148915,6 +148915,19 @@ $)
       ZVCVJVKUQXJWTVBVDVCXNABCEDFGMUTWPABCVFVHDFGVAOUS $.
   $}
 
+  ${
+    $d x y R $.
+    $( A ring is an Abelian group.  (Contributed by NM, 26-Aug-2011.) $)
+    ringabl $p |- ( R e. Ring -> R e. Abel ) $=
+      ( vx vy crg wcel cbs cfv cplusg eqidd ringgrp cv eqid ringcom isabld ) AD
+      EZBCAFGZAHGZAOPIOQIAJPQABKCKPLQLMN $.
+  $}
+
+  $( A ring is a commutative monoid.  (Contributed by Mario Carneiro,
+     7-Jan-2015.) $)
+  ringcmn $p |- ( R e. Ring -> R e. CMnd ) $=
+    ( crg wcel cabl ccmn ringabl ablcmn syl ) ABCADCAECAFAGH $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
