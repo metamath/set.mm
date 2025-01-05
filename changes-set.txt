@@ -92,7 +92,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
- 5-Jan-26 nfrexd    nfrexdw     consistent with nfraldw
+ 5-Jan-26 nfrexd    nfrexdw     consistency with nfraldw
+ 5-Jan-26 nfrex     nfrexw      consistency with nfralw
  4-Jan-25 ralimda   ---         obsolete - use ralimdaa instead
  3-Jan-25 srgi      srgdilem
  2-Jan-25 pr2nelem  enpr2
