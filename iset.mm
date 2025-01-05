@@ -1872,13 +1872,6 @@ $)
       ( wb wi biimp syl ) ABCEBCFDBCGH $.
   $}
 
-  $( The antecedent of one side of a biconditional can be moved out of the
-     biconditional to become the antecedent of the remaining biconditional.
-     (Contributed by BJ, 1-Jan-2025.) $)
-  imbibi $p |- ( ( ( ph -> ps ) <-> ch ) -> ( ph -> ( ps <-> ch ) ) ) $=
-    ( wi wb biimp jarr a1d syl biimpr com23 impbidd ) ABDZCEZABCNMCDZABCDZDMCFO
-    PAABCGHINCABMCJKL $.
-
   ${
     mpbi.min $e |- ph $.
     mpbi.maj $e |- ( ph <-> ps ) $.
@@ -2725,6 +2718,13 @@ $)
   pm5.41 $p |- ( ( ( ph -> ps ) -> ( ph -> ch ) ) <->
                 ( ph -> ( ps -> ch ) ) ) $=
     ( wi imdi bicomi ) ABCDDABDACDDABCEF $.
+
+  $( The antecedent of one side of a biconditional can be moved out of the
+     biconditional to become the antecedent of the remaining biconditional.
+     (Contributed by BJ, 1-Jan-2025.)  (Proof shortened by Wolf Lammen,
+     5-Jan-2025.) $)
+  imbibi $p |- ( ( ( ph -> ps ) <-> ch ) -> ( ph -> ( ps <-> ch ) ) ) $=
+    ( wi wb pm5.4 imbi2 bitr3id pm5.74rd ) ABDZCEZABCJAJDKACDABFJCAGHI $.
 
   $( Simplify an implication between two implications when the antecedent of
      the first is a consequence of the antecedent of the second.  The reverse
