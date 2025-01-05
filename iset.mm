@@ -148788,6 +148788,15 @@ $)
       BUAFUDDQR $.
   $}
 
+  ${
+    ring0cl.b $e |- B = ( Base ` R ) $.
+    ring0cl.z $e |- .0. = ( 0g ` R ) $.
+    $( The zero element of a ring belongs to its base set.  (Contributed by
+       Mario Carneiro, 12-Jan-2014.) $)
+    ring0cl $p |- ( R e. Ring -> .0. e. B ) $=
+      ( crg wcel cgrp ringgrp grpidcl syl ) BFGBHGCAGBIABCDEJK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
