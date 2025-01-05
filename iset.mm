@@ -148824,6 +148824,21 @@ $)
     ringridm $p |- ( ( R e. Ring /\ X e. B ) -> ( X .x. .1. ) = X ) $=
       ( crg wcel wa co wceq ringidmlem simprd ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
       $.
+
+    $( Properties showing that an element ` I ` is the unity element of a ring.
+       (Contributed by NM, 7-Aug-2013.) $)
+    isringid $p |- ( R e. Ring
+      -> ( ( I e. B /\ A. x e. B ( ( I .x. x ) = x /\ ( x .x. I ) = x ) )
+        <-> .1. = I ) ) $=
+      ( vy crg wcel cfv co wceq wa wral eqid oveqd eqeq1d cmgp cbs cv wrex wreu
+      cplusg c0g reurex syl mgpbasg mgpplusgg anbi12d raleqbidv rexeqbidv mpbid
+      ringideu ismgmid eleq2d ringidvalg 3bitr4d ) CKLZFCUAMZUBMZLZFAUCZVBUFMZN
+      ZVEOZVEFVFNZVEOZPZAVCQZPVBUGMZFOFBLZFVEDNZVEOZVEFDNZVEOZPZABQZPEFOVAAVCVF
+      FJVBVMVCRVMRVFRVAJUCZVEDNZVEOZVEWADNZVEOZPZABQZJBUDZWAVEVFNZVEOZVEWAVFNZV
+      EOZPZAVCQZJVCUDVAWGJBUEWHAJBCDGHUPWGJBUHUIVAWGWNJBVCBCVBKVBRZGUJZVAWFWMAB
+      VCWPVAWCWJWEWLVAWBWIVEVADVFWAVECDVBKWOHUKZSTVAWDWKVEVADVFVEWAWQSTULUMUNUO
+      UQVAVNVDVTVLVABVCFWPURVAVSVKABVCWPVAVPVHVRVJVAVOVGVEVADVFFVEWQSTVAVQVIVEV
+      ADVFVEFWQSTULUMULVAEVMFCEVBKWOIUSTUT $.
   $}
 
 
