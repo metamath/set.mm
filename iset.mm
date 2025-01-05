@@ -148841,6 +148841,21 @@ $)
       ADVFVEFWQSTULUMULVAEVMFCEVBKWOIUSTUT $.
   $}
 
+  ${
+    $d B u $.  $d R u $.  $d X u $.  $d .x. u $.
+    ringid.b $e |- B = ( Base ` R ) $.
+    ringid.t $e |- .x. = ( .r ` R ) $.
+    $( The multiplication operation of a unital ring has (one or more) identity
+       elements.  (Contributed by Steve Rodriguez, 9-Sep-2007.)  (Revised by
+       Mario Carneiro, 22-Dec-2013.)  (Revised by AV, 24-Aug-2021.) $)
+    ringid $p |- ( ( R e. Ring /\ X e. B ) ->
+                 E. u e. B ( ( u .x. X ) = X /\ ( X .x. u ) = X ) ) $=
+      ( crg wcel wa cv co wceq cur cfv eqid ringidcl adantr wb eqeq1d rspcedvd
+      oveq1 oveq2 anbi12d adantl ringidmlem ) CHIZEBIZJZAKZEDLZEMZEUJDLZEMZJZCN
+      OZEDLZEMZEUPDLZEMZJZAUPBUGUPBIUHBCUPFUPPZQRUJUPMZUOVASUIVCULURUNUTVCUKUQE
+      UJUPEDUBTVCUMUSEUJUPEDUCTUDUEBCDUPEFGVBUFUA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
