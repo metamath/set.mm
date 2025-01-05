@@ -148797,6 +148797,35 @@ $)
       ( crg wcel cgrp ringgrp grpidcl syl ) BFGBHGCAGBIABCDEJK $.
   $}
 
+  ${
+    $d x y B $.  $d x y I $.  $d x y R $.  $d x y .x. $.  $d x y .1. $.
+    rngidm.b $e |- B = ( Base ` R ) $.
+    rngidm.t $e |- .x. = ( .r ` R ) $.
+    rngidm.u $e |- .1. = ( 1r ` R ) $.
+    $( Lemma for ~ ringlidm and ~ ringridm .  (Contributed by NM, 15-Sep-2011.)
+       (Revised by Mario Carneiro, 27-Dec-2014.) $)
+    ringidmlem $p |- ( ( R e. Ring /\ X e. B )
+           -> ( ( .1. .x. X ) = X /\ ( X .x. .1. ) = X ) ) $=
+      ( crg wcel wa co wceq cmgp cfv c0g eqid adantr oveq123d eqeq1d cplusg cbs
+      ringmgp simpr mgpbasg eleqtrd mndlrid syl2an2r mgpplusgg ringidvalg eqidd
+      cmnd anbi12d mpbird ) BIJZEAJZKZDECLZEMZEDCLZEMZKBNOZPOZEVBUAOZLZEMZEVCVD
+      LZEMZKZUOVBULJUPEVBUBOZJVIBVBVBQZUCUQEAVJUOUPUDUOAVJMUPABVBIVKFUERUFVJVDV
+      BEVCVJQVDQVCQUGUHUQUSVFVAVHUQURVEEUQDVCEECVDUOCVDMUPBCVBIVKGUIRZUODVCMUPB
+      DVBIVKHUJRZUQEUKZSTUQUTVGEUQEEDVCCVDVLVNVMSTUMUN $.
+
+    $( The unit element of a ring is a left multiplicative identity.
+       (Contributed by NM, 15-Sep-2011.) $)
+    ringlidm $p |- ( ( R e. Ring /\ X e. B ) -> ( .1. .x. X ) = X ) $=
+      ( crg wcel wa co wceq ringidmlem simpld ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
+      $.
+
+    $( The unit element of a ring is a right multiplicative identity.
+       (Contributed by NM, 15-Sep-2011.) $)
+    ringridm $p |- ( ( R e. Ring /\ X e. B ) -> ( X .x. .1. ) = X ) $=
+      ( crg wcel wa co wceq ringidmlem simprd ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
