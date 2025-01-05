@@ -148856,6 +148856,23 @@ $)
       UJUPEDUBTVCUMUSEUJUPEDUCTUDUEBCDUPEFGVBUFUA $.
   $}
 
+  ${
+    $d B x $.  $d R x $.  $d X x $.  $d .x. x $.
+    ringadd2.b $e |- B = ( Base ` R ) $.
+    ringadd2.p $e |- .+ = ( +g ` R ) $.
+    ringadd2.t $e |- .x. = ( .r ` R ) $.
+    $( A ring element plus itself is two times the element.  (Contributed by
+       Steve Rodriguez, 9-Sep-2007.)  (Revised by Mario Carneiro, 22-Dec-2013.)
+       (Revised by AV, 24-Aug-2021.) $)
+    ringadd2 $p |- ( ( R e. Ring /\ X e. B )
+                     -> E. x e. B ( X .+ X ) = ( ( x .+ x ) .x. X ) ) $=
+      ( crg wcel wa cv co wceq wrex ringid oveq12 anidms eqcomd simpll syl13anc
+      simpr simplr ringdir eqeq2d syl5ibr adantrd reximdva mpd ) DJKZFBKZLZAMZF
+      ENZFOZFUNENFOZLZABPFFCNZUNUNCNFENZOZABPABDEFGIQUMURVAABUMUNBKZLZUPVAUQUPV
+      AVCUSUOUOCNZOUPVDUSUPVDUSOUOFUOFCRSTVCUTVDUSVCUKVBVBULUTVDOUKULVBUAUMVBUC
+      ZVEUKULVBUDBCDEUNUNFGHIUEUBUFUGUHUIUJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
