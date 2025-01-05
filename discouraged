@@ -5293,7 +5293,7 @@
 "dicelvalN" is used by "dicelval2N".
 "dicfnN" is used by "dicdmN".
 "dif1enlemOLD" is used by "dif1en".
-"dif1enlemOLD" is used by "rexdif1en".
+"dif1enlemOLD" is used by "rexdif1enOLD".
 "dihglbcN" is used by "dihmeetcN".
 "dihglbcpreN" is used by "dihglbcN".
 "dihglblem2N" is used by "dihglblem3N".
@@ -12546,6 +12546,7 @@
 "retbwax2" is used by "merco1lem2".
 "retbwax2" is used by "merco1lem3".
 "retbwax2" is used by "retbwax3".
+"rexdif1enOLD" is used by "findcard2".
 "rhmsubcALTV" is used by "rhmsubcALTVcat".
 "rhmsubcALTVlem1" is used by "rhmsubcALTV".
 "rhmsubcALTVlem2" is used by "rhmsubcALTVlem3".
@@ -18823,6 +18824,7 @@ New usage of "rexbiOLD" is discouraged (0 uses).
 New usage of "rexbidvALT" is discouraged (0 uses).
 New usage of "rexbidvaALT" is discouraged (0 uses).
 New usage of "rexcomOLD" is discouraged (0 uses).
+New usage of "rexdif1enOLD" is discouraged (1 uses).
 New usage of "reximdvaiOLD" is discouraged (0 uses).
 New usage of "reximiaOLD" is discouraged (0 uses).
 New usage of "rexlimddvcbv" is discouraged (0 uses).
@@ -21189,6 +21191,7 @@ Proof modification of "rexbiOLD" is discouraged (65 steps).
 Proof modification of "rexbidvALT" is discouraged (10 steps).
 Proof modification of "rexbidvaALT" is discouraged (10 steps).
 Proof modification of "rexcomOLD" is discouraged (67 steps).
+Proof modification of "rexdif1enOLD" is discouraged (120 steps).
 Proof modification of "reximdvaiOLD" is discouraged (28 steps).
 Proof modification of "reximiaOLD" is discouraged (21 steps).
 Proof modification of "rexlimivOLD" is discouraged (23 steps).
