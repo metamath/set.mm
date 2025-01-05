@@ -5292,6 +5292,8 @@
 "dicdmN" is used by "dicvalrelN".
 "dicelvalN" is used by "dicelval2N".
 "dicfnN" is used by "dicdmN".
+"dif1enlemOLD" is used by "dif1en".
+"dif1enlemOLD" is used by "rexdif1en".
 "dihglbcN" is used by "dihmeetcN".
 "dihglbcpreN" is used by "dihglbcN".
 "dihglblem2N" is used by "dihglblem3N".
@@ -16114,6 +16116,7 @@ New usage of "dicelvalN" is discouraged (1 uses).
 New usage of "dicfnN" is discouraged (1 uses).
 New usage of "dicvalrelN" is discouraged (0 uses).
 New usage of "dif1enALT" is discouraged (0 uses).
+New usage of "dif1enlemOLD" is discouraged (2 uses).
 New usage of "difidALT" is discouraged (0 uses).
 New usage of "difopabOLD" is discouraged (0 uses).
 New usage of "dih0bN" is discouraged (0 uses).
@@ -20185,6 +20188,7 @@ Proof modification of "dfvd3i" is discouraged (19 steps).
 Proof modification of "dfvd3ir" is discouraged (19 steps).
 Proof modification of "dfwrecsOLD" is discouraged (619 steps).
 Proof modification of "dif1enALT" is discouraged (335 steps).
+Proof modification of "dif1enlemOLD" is discouraged (285 steps).
 Proof modification of "difidALT" is discouraged (14 steps).
 Proof modification of "difopabOLD" is discouraged (171 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
