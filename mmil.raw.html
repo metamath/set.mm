@@ -1858,9 +1858,14 @@ is double negation elimination.</TD>
 <TD>~ ifnotdc</TD>
 </TR>
 
+<tr>
+  <td>ifan</td>
+  <td>~ ifandc</td>
+</tr>
+
 <TR>
 <TD>ifor</TD>
-<TD><I>none</I></TD>
+<TD>~ ifordc</TD>
 </TR>
 
 <TR>
@@ -1906,7 +1911,7 @@ csbifgOLD</TD>
 </TR>
 
 <TR>
-  <TD>ifcl , ifcld</TD>
+  <TD>ifcl , ifcld , ifcli , ifex</TD>
   <TD>~ ifcldcd , ~ ifcldadc</TD>
 </TR>
 
@@ -2871,7 +2876,7 @@ and is evaluated at a set</TD>
 
 <TR>
 <TD>f0cli</TD>
-<TD>~ ffvelrn </TD>
+<TD>~ ffvelcdm </TD>
 </TR>
 
 <TR>
@@ -2923,6 +2928,13 @@ and is evaluated at a set</TD>
   <TD>~ funresdfunsndc</TD>
   <TD>For a function on a set with decidable equality.</TD>
 </TR>
+
+<tr>
+  <td>mptfvmpt</td>
+  <td>~ fvmptd3</td>
+  <td>the set.mm proof relies, in an apparently essential
+  way, on fvexi</td>
+</tr>
 
 <TR>
 <TD>funiunfv</TD>
@@ -3036,6 +3048,12 @@ operation, as these are just a few examples).</TD>
   <td><i>none</i></td>
   <td>it should be possible to update iset.mm to reflect
   set.mm in this area and related theorems</td>
+</tr>
+
+<tr>
+  <td>0mpo0</td>
+  <td>~ mpo0</td>
+  <td>should be provable</td>
 </tr>
 
 <tr>
@@ -3479,6 +3497,14 @@ hasn't been a need for it.</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on ovmptss</TD>
 </TR>
+
+<tr>
+  <td>df-supp</td>
+  <td><i>none</i></td>
+  <td>Because the definition is in terms of whether values map to
+  values not equal to zero, it is not clear that it would work
+  well unless the range of the function has decidable equality.</td>
+</tr>
 
 <tr>
   <td>mpoxeldm</td>
@@ -4355,6 +4381,12 @@ this implies excluded middle</TD>
   <TD>At first glance it would appear that the mapping would need to
   be one to one or some other condition.</TD>
 </TR>
+
+<tr>
+  <td>df-fsupp</td>
+  <td><i>none</i></td>
+  <td>the definition is in terms of df-supp</td>
+</tr>
 
 <TR>
   <TD>fisuppfi</TD>
@@ -10494,12 +10526,265 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>resgrpplusfrn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ressbas2</td>
+</tr>
+
+<tr>
+  <td>grppropstr</td>
+  <td><i>none</i></td>
+  <td>The forward direction seems provable; the reverse
+  direction might need a ` K e. _V ` condition.</td>
+</tr>
+
+<tr>
+  <td>grpss</td>
+  <td><i>none</i></td>
+  <td>may be provable (perhaps with slight changes),
+  but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>isgrpix</td>
+  <td>~ isgrpi</td>
+  <td>Marked as discouraged even in set.mm.</td>
+</tr>
+
+<tr>
+  <td>grpinvfval</td>
+  <td>~ grpinvfvalg</td>
+</tr>
+
+<tr>
+  <td>grpinvfn</td>
+  <td>~ grpinvfng</td>
+</tr>
+
+<tr>
+  <td>grpinvfvi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses case elimination on ` G e. _V `</td>
+</tr>
+
+<tr>
+  <td>grpsubfval</td>
+  <td>~ grpsubfvalg</td>
+</tr>
+
+<tr>
+  <td>grpinvpropd</td>
+  <td>~ grpinvpropdg</td>
+</tr>
+
+<tr>
+  <td>dfgrp3</td>
+  <td>~ dfgrp3m</td>
+</tr>
+
+<tr>
+  <td>dfgrp3e</td>
+  <td>~ dfgrp3me</td>
+</tr>
+
+<tr>
+  <td>grplactval</td>
+  <td><i>none</i></td>
+  <td>would seem to need a ` .+ = ( +g `` G ) ` hypothesis</td>
+</tr>
+
+<tr>
+  <td>grpsubpropd</td>
+  <td>~ grpsubpropdg</td>
+</tr>
+
+<tr>
+  <td>prdsinvlem , prdsgrpd , prdsinvgd</td>
+  <td><i>none</i></td>
+  <td>depend on structure product theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>pwsgrp , pwsinvg , pwssub</td>
+  <td><i>none</i></td>
+  <td>depend on structure power theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>imasgrp2 , imasgrp , imasgrpf1</td>
+  <td><i>none</i></td>
+  <td>depend on structure image</td>
+</tr>
+
+<tr>
+  <td>qusgrp2</td>
+  <td><i>none</i></td>
+  <td>depends on quotient structure</td>
+</tr>
+
+<tr>
+  <td>xpsgrp</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on prdsgrpd</td>
+</tr>
+
+<tr>
+  <td>mulgfval , mulgfvalALT</td>
+  <td>~ mulgfvalg</td>
+</tr>
+
+<tr>
+  <td>mulgfn</td>
+  <td>~ mulgfng</td>
+</tr>
+
+<tr>
+  <td>mulgfvi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses case elimination on ` G e. _V `</td>
+</tr>
+
+<tr>
+  <td>mulgnngsum</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses gsumval2</td>
+</tr>
+
+<tr>
+  <td>mulgnn0gsum</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mulgnngsum and gsum0</td>
+</tr>
+
+<tr>
+  <td>mulgpropd</td>
+  <td><i>none</i></td>
+  <td>presumably would be provable with ` G e. _V ` and ` H e. _V `
+  hypotheses added</td>
+</tr>
+
+<tr>
+  <td>submmulg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ressplusg</td>
+</tr>
+
+<tr>
+  <td>pwsmulg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses pwspjmhm and pwsmnd</td>
+</tr>
+
+<tr>
+  <td>setsplusg</td>
+  <td>~ setsslnid</td>
+</tr>
+
+<tr>
+  <td>mulgnn0di</td>
+  <td><i>none</i></td>
+  <td>should be provable, using the set.mm proof with
+  minor changes to use of ` seq ` theorems</td>
+</tr>
+
+<tr>
+  <td>mulgdi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would seem to work once we
+  have mulgnn0di</td>
+</tr>
+
+<tr>
+  <td>mgpval</td>
+  <td>~ mgpvalg</td>
+</tr>
+
+<tr>
+  <td>mgpplusg</td>
+  <td>~ mgpplusgg</td>
+</tr>
+
+<tr>
+  <td>mgpbas</td>
+  <td>~ mgpbasg</td>
+</tr>
+
+<tr>
+  <td>mgpsca</td>
+  <td>~ mgpscag</td>
+</tr>
+
+<tr>
+  <td>mgptset</td>
+  <td>~ mgptsetg</td>
+</tr>
+
+<tr>
+  <td>mgptopn</td>
+  <td>~ mgptopng</td>
+</tr>
+
+<tr>
+  <td>mgpds</td>
+  <td>~ mgpdsg</td>
+</tr>
+
+<tr>
+  <td>mgpress</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ressmulr and also uses case elimination
+  on ` ( Base `` R ) C_ A `</td>
+</tr>
+
+<tr>
+  <td>ringidval</td>
+  <td>~ ringidvalg</td>
+</tr>
+
+<tr>
+  <td>dfur2</td>
+  <td>~ dfur2g</td>
+</tr>
+
+<tr>
+  <td>srgsummulcr , sgsummulcl</td>
+  <td><i>none</i></td>
+  <td>depend on finSupp (df-fsupp)</td>
+</tr>
+
+<tr>
+  <td>srgbinom , csrgbinom</td>
+  <td><i>none</i></td>
+  <td>may be possible once ` gsum ` is more fully developed</td>
+</tr>
+
+<tr>
+  <td>df-drng</td>
+  <td><i>none</i></td>
+  <td>The set.mm definition is in terms of having an inverse
+  if not equal to zero.  We may want a new slot for apartness
+  (the approach taken in [Guevers]), or perhaps we can define
+  a division ring as a ring for which ` A. x e. ( Base `` R )
+  ( -. x e. ( ` Unit ` `` R ) -> x = ( 0g `` R ) ) ` (that is,
+  that apartness with zero is tight, although presumably we'd
+  want to show that the relation generated in this fashion
+  can be shown to be an apartness relation, assuming that can
+  be done).</td>
+</tr>
+
+<tr>
+  <td>df-field</td>
+  <td><i>none</i></td>
+  <td>once we define division rings this should follow</td>
+</tr>
+
+<tr>
   <td id="missing-df-cnfld">df-cnfld and all theorems using CCfld</td>
   <td><i>none</i></td>
-  <td>Could presumably be defined in some form, but we'd have to look
-  at the literature definitions of a constructive field and see how
-  we'd need to define this.  Plus questions about whether
-  to define order in terms of ` < ` or ` <_ ` .</td>
+  <td>See df-drng and df-field concerning how we want to handle
+  apartness.  Plus questions about whether to define order in terms
+  of ` < ` or ` <_ ` (presumably the former, unlike set.mm which
+  uses the latter).</td>
 </tr>
 
 <TR>
@@ -12713,6 +12998,13 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>lgsqr</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses df-zn , df-ply1 , df-zrh , df-deg1 ,
+  and possibly other things not yet defined in iset.mm</td>
+</tr>
+
+<tr>
   <td>2sqlem11</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses lgsqr and m1lgs</td>
@@ -12776,8 +13068,13 @@ proved in set.mm but not iset.mm:</p>
 
   <tr>
     <td>7.  Law of Quadratic Reciprocity</td>
-    <td>Needs more development of number theory (for one
-    thing, the Legendre symbol, df-lgs , itself).</td>
+    <td>Although this is a long proof it would seem like
+    many of the needed prerequisites are present.  Some
+    parts do need intuitionizing. For example we should
+    be able to show that ` { <. x , y >. | ( ( x e. ( 1 ... M )
+    /\ y e. ( 1 ... N ) ) /\ ( y x. P ) < ( x x. Q ) ) } `
+    is finite but it may be most conveniently done by
+    proving a few helper theorems beyond ~ ssfidc .</td>
   </tr>
 
   <tr>
