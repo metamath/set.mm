@@ -148884,6 +148884,16 @@ $)
       E $.
   $}
 
+  ${
+    ringacl.b $e |- B = ( Base ` R ) $.
+    ringacl.p $e |- .+ = ( +g ` R ) $.
+    $( Closure of the addition operation of a ring.  (Contributed by Mario
+       Carneiro, 14-Jan-2014.) $)
+    ringacl $p |- ( ( R e. Ring /\ X e. B /\ Y e. B ) -> ( X .+ Y ) e. B ) $=
+      ( crg wcel cgrp co ringgrp grpcl syl3an1 ) CHICJIDAIEAIDEBKAICLABCDEFGMN
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
