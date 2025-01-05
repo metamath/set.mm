@@ -148871,6 +148871,17 @@ $)
       ENZFOZFUNENFOZLZABPFFCNZUNUNCNFENZOZABPABDEFGIQUMURVAABUMUNBKZLZUPVAUQUPV
       AVCUSUOUOCNZOUPVDUSUPVDUSOUOFUOFCRSTVCUTVDUSVCUKVBVBULUTVDOUKULVBUAUMVBUC
       ZVEUKULVBUDBCDEUNUNFGHIUEUBUFUGUHUIUJ $.
+
+    rngo2times.u $e |- .1. = ( 1r ` R ) $.
+    $( A ring element plus itself is two times the element.  "Two" in an
+       arbitrary unital ring is the sum of the unit with itself.  (Contributed
+       by AV, 24-Aug-2021.) $)
+    rngo2times $p |- ( ( R e. Ring /\ A e. B )
+                       -> ( A .+ A ) = ( ( .1. .+ .1. ) .x. A ) ) $=
+      ( crg wcel wa co ringlidm eqcomd oveq12d wceq simpl ringidcl adantr simpr
+      ringdir syl13anc eqtr4d ) DKLZABLZMZAACNFAENZUICNZFFCNAENZUHAUIAUICUHUIAB
+      DEFAGIJOPZULQUHUFFBLZUMUGUKUJRUFUGSUFUMUGBDFGJTUAZUNUFUGUBBCDEFFAGHIUCUDU
+      E $.
   $}
 
 
