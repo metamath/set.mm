@@ -4682,9 +4682,25 @@ $)
   simprl $p |- ( ( ph /\ ( ps /\ ch ) ) -> ps ) $=
     ( id ad2antrl ) BBACBDE $.
 
+  ${
+    simprld.1 $e |- ( ph -> ( ps /\ ( ch /\ th ) ) ) $.
+    $( Deduction eliminating a double conjunct.  (Contributed by Glauco
+       Siliprandi, 11-Dec-2019.) $)
+    simprld $p |- ( ph -> ch ) $=
+      ( wa simprd simpld ) ACDABCDFEGH $.
+  $}
+
   $( Simplification of a conjunction.  (Contributed by NM, 21-Mar-2007.) $)
   simprr $p |- ( ( ph /\ ( ps /\ ch ) ) -> ch ) $=
     ( id ad2antll ) CCABCDE $.
+
+  ${
+    simprrd.1 $e |- ( ph -> ( ps /\ ( ch /\ th ) ) ) $.
+    $( Deduction form of ~ simprr , eliminating a double conjunct.
+       (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+    simprrd $p |- ( ph -> th ) $=
+      ( wa simprd ) ACDABCDFEGG $.
+  $}
 
   $( Simplification of a conjunction.  (Contributed by Jeff Hankins,
      28-Jul-2009.) $)
@@ -26168,6 +26184,17 @@ $)
        Carneiro, 9-Feb-2017.)  (Revised by NM, 30-Jun-2018.) $)
     sbceq1dd $p |- ( ph -> [. B / x ]. ps ) $=
       ( wsbc sbceq1d mpbid ) ABCDHBCEHGABCDEFIJ $.
+  $}
+
+  ${
+    $d x ph $.
+    sbceqbid.1 $e |- ( ph -> A = B ) $.
+    sbceqbid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equality theorem for class substitution.  (Contributed by Thierry
+       Arnoux, 4-Sep-2018.) $)
+    sbceqbid $p |- ( ph -> ( [. A / x ]. ps <-> [. B / x ]. ch ) ) $=
+      ( cab wcel wsbc abbidv eleq12d df-sbc 3bitr4g ) AEBDIZJFCDIZJBDEKCDFKAEFP
+      QGABCDHLMBDENCDFNO $.
   $}
 
   ${
@@ -148000,6 +148027,517 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Semirings
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c SRing $.
+
+  $( Extend class notation with the class of all semirings. $)
+  csrg $a class SRing $.
+
+  ${
+    $d f n p r t x y z $.
+    $( Define class of all semirings.  A semiring is a set equipped with two
+       everywhere-defined internal operations, whose first one is an additive
+       commutative monoid structure and the second one is a multiplicative
+       monoid structure, and where multiplication is (left- and right-)
+       distributive over addition.  Like with rings, the additive identity is
+       an absorbing element of the multiplicative law, but in the case of
+       semirings, this has to be part of the definition, as it cannot be
+       deduced from distributivity alone.  Definition of [Golan] p. 1.  Note
+       that our semirings are unital.  Such semirings are sometimes called
+       "rigs", being "rings without negatives".  (Contributed by Thierry
+       Arnoux, 21-Mar-2018.) $)
+    df-srg $a |- SRing = { f e. CMnd | ( ( mulGrp ` f ) e. Mnd /\
+        [. ( Base ` f ) / r ]. [. ( +g ` f ) / p ]. [. ( .r ` f ) / t ].
+        [. ( 0g ` f ) / n ]. A. x e. r ( A. y e. r A. z e. r
+           ( ( x t ( y p z ) ) = ( ( x t y ) p ( x t z ) )
+            /\ ( ( x p y ) t z ) = ( ( x t z ) p ( y t z ) ) )
+            /\ ( ( n t x ) = n /\ ( x t n ) = n ) ) ) } $.
+  $}
+
+  ${
+    $d b n p r t x y z .+ $.  $d b n p r t x y z .0. $.  $d r G $.
+    $d b n p r t x y z .x. $.  $d b n p r t x y z B $.  $d b n p r t x y z R $.
+    issrg.b $e |- B = ( Base ` R ) $.
+    issrg.g $e |- G = ( mulGrp ` R ) $.
+    issrg.p $e |- .+ = ( +g ` R ) $.
+    issrg.t $e |- .x. = ( .r ` R ) $.
+    issrg.0 $e |- .0. = ( 0g ` R ) $.
+    $( The predicate "is a semiring".  (Contributed by Thierry Arnoux,
+       21-Mar-2018.) $)
+    issrg $p |- ( R e. SRing <-> ( R e. CMnd /\ G e. Mnd
+      /\ A. x e. B ( A. y e. B A. z e. B
+       ( ( x .x. ( y .+ z ) ) = ( ( x .x. y ) .+ ( x .x. z ) )
+      /\ ( ( x .+ y ) .x. z ) = ( ( x .x. z ) .+ ( y .x. z ) ) )
+      /\ ( ( .0. .x. x ) = .0. /\ ( x .x. .0. ) = .0. ) ) ) ) $=
+      ( wcel cvv co wceq wa cfv vp vt vb vn vr csrg ccmn cmnd cv wral w3a simp1
+      elex elexd cmgp wsbc wb eleq1i bicomi a1i cbs wfn funfvex funfni eqeltrid
+      basfn mpan cplusg plusgslid slotex adantr mulrslid ad2antrr c0g ad3antrrr
+      cmulr fn0g simp-4r eqidd simpllr oveqd oveq123d eqeq12d anbi12d raleqbidv
+      simplr sbcied anbi2d eleq1d eqtr4di sbceq1d sbceqbid df-srg elrab2 3anass
+      simpr fveq2 3bitr4g pm5.21nii ) FUFOZFPOZFUGOZHUHOZAUIZBUIZCUIZEQZGQZXDXE
+      GQZXDXFGQZEQZRZXDXEEQZXFGQZXJXEXFGQZEQZRZSZCDUJZBDUJZIXDGQZIRZXDIGQZIRZSZ
+      SZADUJZUKZFUFUMYHFUGXBXCYGULUNXAXBFUOTZUHOZXDXEXFUAUIZQZUBUIZQZXDXEYMQZXD
+      XFYMQZYKQZRZXDXEYKQZXFYMQZYPXEXFYMQZYKQZRZSZCUCUIZUJZBUUEUJZUDUIZXDYMQZUU
+      HRZXDUUHYMQZUUHRZSZSZAUUEUJZUDIUPZUBGUPZUAEUPZUCDUPZSZSXBXCYGSZSWTYHXAUUT
+      UVAXBXAYJXCUUSYGYJXCUQXAXCYJHYIUHKURUSUTXAUURYGUCDPXADFVATZPJVAPVBXAUVBPO
+      ZVFUVCPFVAFVAVCVDVGVEXAUUEDRZSZUUQYGUAEPXAEPOUVDXAEFVHTZPLFVHPVIVJVEVKUVE
+      YKERZSZUUPYGUBGPXAGPOUVDUVGXAGFVPTZPMFVPPVLVJVEVMUVHYMGRZSZUUOYGUDIPXAIPO
+      UVDUVGUVJXAIFVNTZPNVNPVBXAUVLPOZVQUVMPFVNFVNVCVDVGVEVOUVKUUHIRZSZUUNYFAUU
+      EDXAUVDUVGUVJUVNVRZUVOUUGXTUUMYEUVOUUFXSBUUEDUVPUVOUUDXRCUUEDUVPUVOYRXLUU
+      CXQUVOYNXHYQXKUVOXDXDYLXGYMGUVHUVJUVNWFZUVOXDVSZUVOYKEXEXFUVEUVGUVJUVNVTZ
+      WAWBUVOYOXIYPXJYKEUVSUVOYMGXDXEUVQWAUVOYMGXDXFUVQWAZWBWCUVOYTXNUUBXPUVOYS
+      XMXFXFYMGUVQUVOYKEXDXEUVSWAUVOXFVSWBUVOYPXJUUAXOYKEUVSUVTUVOYMGXEXFUVQWAW
+      BWCWDWEWEUVOUUJYBUULYDUVOUUIYAUUHIUVOUUHIXDXDYMGUVQUVKUVNWPZUVRWBUWAWCUVO
+      UUKYCUUHIUVOXDXDUUHIYMGUVQUVRUWAWBUWAWCWDWDWEWGWGWGWGWDWHUEUIZUOTZUHOZUUO
+      UDUWBVNTZUPZUBUWBVPTZUPZUAUWBVHTZUPZUCUWBVATZUPZSUUTUEFUGUFUWBFRZUWDYJUWL
+      UUSUWMUWCYIUHUWBFUOWQWIUWMUWJUURUCUWKDUWMUWKUVBDUWBFVAWQJWJUWMUWHUUQUAUWI
+      EUWMUWIUVFEUWBFVHWQLWJUWMUWFUUPUBUWGGUWMUWGUVIGUWBFVPWQMWJUWMUUOUDUWEIUWM
+      UWEUVLIUWBFVNWQNWJWKWLWLWLWDABCUBUEUDUCUAWMWNXBXCYGWOWRWS $.
+  $}
+
+  ${
+    $d x y z R $.
+    $( A semiring is a commutative monoid.  (Contributed by Thierry Arnoux,
+       21-Mar-2018.) $)
+    srgcmn $p |- ( R e. SRing -> R e. CMnd ) $=
+      ( vx vy vz csrg wcel ccmn cmgp cfv cmnd cv cplusg cmulr wceq cbs wral c0g
+      co wa eqid issrg simp1bi ) AEFAGFAHIZJFBKZCKZDKZALIZRAMIZRUDUEUHRUDUFUHRZ
+      UGRNUDUEUGRUFUHRUIUEUFUHRUGRNSDAOIZPCUJPAQIZUDUHRUKNUDUKUHRUKNSSBUJPBCDUJ
+      UGAUHUCUKUJTUCTUGTUHTUKTUAUB $.
+
+    $( A semiring is a monoid.  (Contributed by Thierry Arnoux,
+       21-Mar-2018.) $)
+    srgmnd $p |- ( R e. SRing -> R e. Mnd ) $=
+      ( csrg wcel ccmn cmnd srgcmn cmnmnd syl ) ABCADCAECAFAGH $.
+
+    srgmgp.g $e |- G = ( mulGrp ` R ) $.
+    $( A semiring is a monoid under multiplication.  (Contributed by Thierry
+       Arnoux, 21-Mar-2018.) $)
+    srgmgp $p |- ( R e. SRing -> G e. Mnd ) $=
+      ( vx vy vz csrg wcel ccmn cmnd cv cplusg cfv co cmulr wceq cbs wral eqid
+      wa c0g issrg simp2bi ) AGHAIHBJHDKZEKZFKZALMZNAOMZNUDUEUHNUDUFUHNZUGNPUDU
+      EUGNUFUHNUIUEUFUHNUGNPTFAQMZREUJRAUAMZUDUHNUKPUDUKUHNUKPTTDUJRDEFUJUGAUHB
+      UKUJSCUGSUHSUKSUBUC $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y z R $.  $d x y z .x. $.  $d x y z X $.  $d x y z Y $.
+    $d x y z .+ $.  $d x y z Z $.
+    srgdilem.b $e |- B = ( Base ` R ) $.
+    srgdilem.p $e |- .+ = ( +g ` R ) $.
+    srgdilem.t $e |- .x. = ( .r ` R ) $.
+    $( Lemma for ~ srgdi and ~ srgdir .  (Contributed by NM, 26-Aug-2011.)
+       (Revised by Mario Carneiro, 6-Jan-2015.)  (Revised by Thierry Arnoux,
+       1-Apr-2018.) $)
+    srgdilem $p |- ( ( R e. SRing /\ ( X e. B /\ Y e. B /\ Z e. B ) )
+           -> ( ( X .x. ( Y .+ Z ) ) = ( ( X .x. Y ) .+ ( X .x. Z ) )
+                /\ ( ( X .+ Y ) .x. Z ) = ( ( X .x. Z ) .+ ( Y .x. Z ) ) ) ) $=
+      ( vx vy vz wcel w3a wa co wceq cv wral csrg c0g ccmn cmgp cmnd eqid issrg
+      cfv simp3bi r19.21bi simpld 3ad2antr1 simpr2 sylc simpr3 caovdig caovdirg
+      rsp simprd jca ) CUANZEANFANGANOPEFGBQDQEFDQEGDQZBQREFBQGDQVBFGDQBQRVAKLM
+      EFGABDBAVAKSZANZLSZANZMSZANZOPZVCVEVGBQDQVCVEDQVCVGDQZBQRZVCVEBQVGDQVJVEV
+      GDQBQRZVIVKVLPZMATZVHVMVIVNLATZVFVNVAVFVDVOVHVAVDPVOCUBUHZVCDQVPRVCVPDQVP
+      RPZVAVOVQPZKAVACUCNCUDUHZUENVRKATKLMABCDVSVPHVSUFIJVPUFUGUIUJUKULVAVDVFVH
+      UMVNLAURUNVAVDVFVHUOVMMAURUNZUKUPVAKLMEFGABDBAVIVKVLVTUSUQUT $.
+  $}
+
+  ${
+    srgcl.b $e |- B = ( Base ` R ) $.
+    srgcl.t $e |- .x. = ( .r ` R ) $.
+    $( Closure of the multiplication operation of a semiring.  (Contributed by
+       NM, 26-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.)  (Revised by
+       Thierry Arnoux, 1-Apr-2018.) $)
+    srgcl $p |- ( ( R e. SRing /\ X e. B /\ Y e. B ) -> ( X .x. Y ) e. B ) $=
+      ( csrg wcel w3a cmgp cfv cplusg co cbs cmnd eqid 3ad2ant1 wceq eleqtrd
+      srgmgp simp2 mgpbasg simp3 mndcl syl3anc mgpplusgg oveqd 3eltr4d ) BHIZDA
+      IZEAIZJZDEBKLZMLZNZUNOLZDECNAUMUNPIZDUQIEUQIUPUQIUJUKURULBUNUNQZUARUMDAUQ
+      UJUKULUBUJUKAUQSULABUNHUSFUCRZTUMEAUQUJUKULUDUTTUQUOUNDEUQQUOQUEUFUMCUODE
+      UJUKCUOSULBCUNHUSGUGRUHUTUI $.
+
+    $( Associative law for the multiplication operation of a semiring.
+       (Contributed by NM, 27-Aug-2011.)  (Revised by Mario Carneiro,
+       6-Jan-2015.)  (Revised by Thierry Arnoux, 1-Apr-2018.) $)
+    srgass $p |- ( ( R e. SRing /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                      ( ( X .x. Y ) .x. Z ) = ( X .x. ( Y .x. Z ) ) ) $=
+      ( csrg wcel w3a wa cfv co wceq eqid adantr eleqtrd oveqd eqtrd cplusg cbs
+      cmgp srgmgp simpr1 mgpbasg simpr2 simpr3 mndass syl13anc mgpplusgg oveq1d
+      cmnd oveq2d 3eqtr4d ) BIJZDAJZEAJZFAJZKZLZDEBUCMZUAMZNZFVCNZDEFVCNZVCNZDE
+      CNZFCNZDEFCNZCNZVAVBUMJZDVBUBMZJEVMJFVMJVEVGOUPVLUTBVBVBPZUDQVADAVMUPUQUR
+      USUEUPAVMOUTABVBIVNGUFQZRVAEAVMUPUQURUSUGVORVAFAVMUPUQURUSUHVORVMVCVBDEFV
+      MPVCPUIUJVAVIVHFVCNVEVACVCVHFUPCVCOUTBCVBIVNHUKQZSVAVHVDFVCVACVCDEVPSULTV
+      AVKDVJVCNVGVACVCDVJVPSVAVJVFDVCVACVCEFVPSUNTUO $.
+
+    $d u x B $.  $d u x R $.  $d u x .x. $.
+    $( The unit element of a semiring is unique.  (Contributed by NM,
+       27-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.)  (Revised by
+       Thierry Arnoux, 1-Apr-2018.) $)
+    srgideu $p |- ( R e. SRing ->
+                E! u e. B A. x e. B ( ( u .x. x ) = x /\ ( x .x. u ) = x ) ) $=
+      ( csrg wcel cv co wceq wa wral wreu cfv eqid syl oveqd eqeq1d cmgp cplusg
+      cbs cmnd srgmgp mndideu mgpplusgg anbi12d ralbidv reubidv mpbird wb raleq
+      mgpbasg reueqd ) DHIZBJZAJZEKZURLZURUQEKZURLZMZACNZBCOZVCADUAPZUCPZNZBVGO
+      ZUPVIUQURVFUBPZKZURLZURUQVJKZURLZMZAVGNZBVGOZUPVFUDIVQDVFVFQZUEABVGVJVFVG
+      QVJQUFRUPVHVPBVGUPVCVOAVGUPUTVLVBVNUPUSVKURUPEVJUQURDEVFHVRGUGZSTUPVAVMUR
+      UPEVJURUQVSSTUHUIUJUKUPCVGLVEVIULCDVFHVRFUNVDVHBCVGVCACVGUMUORUK $.
+  $}
+
+  ${
+    $d B a b c $.  $d R a b $.  $d .x. a b c $.
+    srgfcl.b $e |- B = ( Base ` R ) $.
+    srgfcl.t $e |- .x. = ( .r ` R ) $.
+    $( Functionality of the multiplication operation of a ring.  (Contributed
+       by Steve Rodriguez, 9-Sep-2007.)  (Revised by AV, 24-Aug-2021.) $)
+    srgfcl $p |- ( ( R e. SRing /\ .x. Fn ( B X. B ) )
+                   -> .x. : ( B X. B ) --> B ) $=
+      ( vc va vb csrg wcel cxp wfn wa crn wss wf simpr cv cfv wral co srgcl cop
+      3expb ralrimivva fveq2 eleq1d eqcomi eleq1i bitrdi sylibr adantr fnfvrnss
+      wceq df-ov ralxp syl2anc df-f sylanbrc ) BIJZCAAKZLZMZVBCNAOZVAACPUTVBQZV
+      CVBFRZCSZAJZFVATZVDVEUTVIVBUTGRZHRZCUAZAJZHATGATVIUTVMGHAAUTVJAJVKAJVMABC
+      VJVKDEUBUDUEVHVMFGHAAVFVJVKUCZUNZVHVNCSZAJVMVOVGVPAVFVNCUFUGVPVLAVLVPVJVK
+      CUOUHUIUJUPUKULFVAACUMUQVAACURUS $.
+  $}
+
+  ${
+    srgdi.b $e |- B = ( Base ` R ) $.
+    srgdi.p $e |- .+ = ( +g ` R ) $.
+    srgdi.t $e |- .x. = ( .r ` R ) $.
+    $( Distributive law for the multiplication operation of a semiring.
+       (Contributed by Steve Rodriguez, 9-Sep-2007.)  (Revised by Thierry
+       Arnoux, 1-Apr-2018.) $)
+    srgdi $p |- ( ( R e. SRing /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                     ( X .x. ( Y .+ Z ) ) = ( ( X .x. Y ) .+ ( X .x. Z ) ) ) $=
+      ( csrg wcel w3a wa co wceq srgdilem simpld ) CKLEALFALGALMNEFGBODOEFDOEGD
+      OZBOPEFBOGDOSFGDOBOPABCDEFGHIJQR $.
+
+    $( Distributive law for the multiplication operation of a semiring.
+       (Contributed by Steve Rodriguez, 9-Sep-2007.)  (Revised by Thierry
+       Arnoux, 1-Apr-2018.) $)
+    srgdir $p |- ( ( R e. SRing /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                     ( ( X .+ Y ) .x. Z ) = ( ( X .x. Z ) .+ ( Y .x. Z ) ) ) $=
+      ( csrg wcel w3a wa co wceq srgdilem simprd ) CKLEALFALGALMNEFGBODOEFDOEGD
+      OZBOPEFBOGDOSFGDOBOPABCDEFGHIJQR $.
+  $}
+
+  ${
+    srgidcl.b $e |- B = ( Base ` R ) $.
+    srgidcl.u $e |- .1. = ( 1r ` R ) $.
+    $( The unit element of a semiring belongs to the base set of the semiring.
+       (Contributed by NM, 27-Aug-2011.)  (Revised by Mario Carneiro,
+       27-Dec-2014.)  (Revised by Thierry Arnoux, 1-Apr-2018.) $)
+    srgidcl $p |- ( R e. SRing -> .1. e. B ) $=
+      ( csrg wcel cmgp cfv c0g cbs cmnd eqid srgmgp mndidcl syl mgpbasg 3eltr4d
+      ringidvalg ) BFGZBHIZJIZUAKIZCATUALGUBUCGBUAUAMZNUCUAUBUCMUBMOPBCUAFUDESA
+      BUAFUDDQR $.
+  $}
+
+  ${
+    srg0cl.b $e |- B = ( Base ` R ) $.
+    srg0cl.z $e |- .0. = ( 0g ` R ) $.
+    $( The zero element of a semiring belongs to its base set.  (Contributed by
+       Mario Carneiro, 12-Jan-2014.)  (Revised by Thierry Arnoux,
+       1-Apr-2018.) $)
+    srg0cl $p |- ( R e. SRing -> .0. e. B ) $=
+      ( csrg wcel cmnd srgmnd mndidcl syl ) BFGBHGCAGBIABCDEJK $.
+  $}
+
+  ${
+    $d x y B $.  $d x y I $.  $d x y R $.  $d x y .x. $.  $d x y .1. $.
+    srgidm.b $e |- B = ( Base ` R ) $.
+    srgidm.t $e |- .x. = ( .r ` R ) $.
+    srgidm.u $e |- .1. = ( 1r ` R ) $.
+    $( Lemma for ~ srglidm and ~ srgridm .  (Contributed by NM, 15-Sep-2011.)
+       (Revised by Mario Carneiro, 27-Dec-2014.)  (Revised by Thierry Arnoux,
+       1-Apr-2018.) $)
+    srgidmlem $p |- ( ( R e. SRing /\ X e. B )
+           -> ( ( .1. .x. X ) = X /\ ( X .x. .1. ) = X ) ) $=
+      ( csrg wcel wa co wceq cmgp cfv c0g cplusg eqid oveq123d eqeq1d srgmgp wb
+      cmnd cbs mgpbasg eleq2d biimpa mndlrid mgpplusgg ringidvalg eqidd anbi12d
+      syl2an2r adantr mpbird ) BIJZEAJZKDECLZEMZEDCLZEMZKZBNOZPOZEVCQOZLZEMZEVD
+      VELZEMZKZUPVCUCJUQEVCUDOZJZVJBVCVCRZUAUPUQVLUPAVKEABVCIVMFUEUFUGVKVEVCEVD
+      VKRVERVDRUHUMUPVBVJUBUQUPUSVGVAVIUPURVFEUPDVDEECVEBCVCIVMGUIZBDVCIVMHUJZU
+      PEUKZSTUPUTVHEUPEEDVDCVEVNVPVOSTULUNUO $.
+
+    $( The unit element of a semiring is a left multiplicative identity.
+       (Contributed by NM, 15-Sep-2011.)  (Revised by Thierry Arnoux,
+       1-Apr-2018.) $)
+    srglidm $p |- ( ( R e. SRing /\ X e. B ) -> ( .1. .x. X ) = X ) $=
+      ( csrg wcel wa co wceq srgidmlem simpld ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
+      $.
+
+    $( The unit element of a semiring is a right multiplicative identity.
+       (Contributed by NM, 15-Sep-2011.)  (Revised by Thierry Arnoux,
+       1-Apr-2018.) $)
+    srgridm $p |- ( ( R e. SRing /\ X e. B ) -> ( X .x. .1. ) = X ) $=
+      ( csrg wcel wa co wceq srgidmlem simprd ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
+      $.
+
+    $( Properties showing that an element ` I ` is the unity element of a
+       semiring.  (Contributed by NM, 7-Aug-2013.)  (Revised by Thierry Arnoux,
+       1-Apr-2018.) $)
+    issrgid $p |- ( R e. SRing
+      -> ( ( I e. B /\ A. x e. B ( ( I .x. x ) = x /\ ( x .x. I ) = x ) )
+        <-> .1. = I ) ) $=
+      ( vy csrg wcel cfv co wceq wa wral eqid oveqd eqeq1d cmgp cbs cplusg wrex
+      c0g wreu srgideu reurex syl mgpbasg mgpplusgg anbi12d raleqbidv rexeqbidv
+      cv mpbid ismgmid eleq2d ringidvalg 3bitr4d ) CKLZFCUAMZUBMZLZFAUOZVBUCMZN
+      ZVEOZVEFVFNZVEOZPZAVCQZPVBUEMZFOFBLZFVEDNZVEOZVEFDNZVEOZPZABQZPEFOVAAVCVF
+      FJVBVMVCRVMRVFRVAJUOZVEDNZVEOZVEWADNZVEOZPZABQZJBUDZWAVEVFNZVEOZVEWAVFNZV
+      EOZPZAVCQZJVCUDVAWGJBUFWHAJBCDGHUGWGJBUHUIVAWGWNJBVCBCVBKVBRZGUJZVAWFWMAB
+      VCWPVAWCWJWEWLVAWBWIVEVADVFWAVECDVBKWOHUKZSTVAWDWKVEVADVFVEWAWQSTULUMUNUP
+      UQVAVNVDVTVLVABVCFWPURVAVSVKABVCWPVAVPVHVRVJVAVOVGVEVADVFFVEWQSTVAVQVIVEV
+      ADVFVEFWQSTULUMULVAEVMFCEVBKWOIUSTUT $.
+  $}
+
+  ${
+    srgacl.b $e |- B = ( Base ` R ) $.
+    srgacl.p $e |- .+ = ( +g ` R ) $.
+    $( Closure of the addition operation of a semiring.  (Contributed by Mario
+       Carneiro, 14-Jan-2014.)  (Revised by Thierry Arnoux, 1-Apr-2018.) $)
+    srgacl $p |- ( ( R e. SRing /\ X e. B /\ Y e. B ) -> ( X .+ Y ) e. B ) $=
+      ( csrg wcel cmnd co srgmnd mndcl syl3an1 ) CHICJIDAIEAIDEBKAICLABCDEFGMN
+      $.
+
+    $( Commutativity of the additive group of a semiring.  (Contributed by
+       Thierry Arnoux, 1-Apr-2018.) $)
+    srgcom $p |- ( ( R e. SRing /\ X e. B /\ Y e. B ) ->
+      ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( csrg wcel ccmn co wceq srgcmn cmncom syl3an1 ) CHICJIDAIEAIDEBKEDBKLCMA
+      BCDEFGNO $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y z R $.  $d x X $.  $d x y z .x. $.  $d x y z .0. $.
+    srgz.b $e |- B = ( Base ` R ) $.
+    srgz.t $e |- .x. = ( .r ` R ) $.
+    srgz.z $e |- .0. = ( 0g ` R ) $.
+    $( The zero of a semiring is a right-absorbing element.  (Contributed by
+       Thierry Arnoux, 1-Apr-2018.) $)
+    srgrz $p |- ( ( R e. SRing /\ X e. B ) -> ( X .x. .0. ) = .0. ) $=
+      ( vx vy vz csrg wcel cv co wceq wral wa cfv eqid cplusg ccmn cmgp simp3bi
+      cmnd issrg r19.21bi simprrd ralrimiva oveq1 eqeq1d rspcv mpan9 ) BLMZINZE
+      COZEPZIAQDAMDECOZEPZUNUQIAUNUOAMRUOJNZKNZBUASZOCOUOUTCOUOVACOZVBOPUOUTVBO
+      VACOVCUTVACOVBOPRKAQJAQZEUOCOEPZUQUNVDVEUQRRZIAUNBUBMBUCSZUEMVFIAQIJKAVBB
+      CVGEFVGTVBTGHUFUDUGUHUIUQUSIDAUODPUPUREUODECUJUKULUM $.
+
+    $( The zero of a semiring is a left-absorbing element.  (Contributed by AV,
+       23-Aug-2019.) $)
+    srglz $p |- ( ( R e. SRing /\ X e. B ) -> ( .0. .x. X ) = .0. ) $=
+      ( vx vy vz csrg wcel cv co wceq wral wa cfv eqid cplusg ccmn cmgp simp3bi
+      cmnd issrg r19.21bi simprld ralrimiva oveq2 eqeq1d rspcv mpan9 ) BLMZEINZ
+      COZEPZIAQDAMEDCOZEPZUNUQIAUNUOAMRUOJNZKNZBUASZOCOUOUTCOUOVACOZVBOPUOUTVBO
+      VACOVCUTVACOVBOPRKAQJAQZUQUOECOEPZUNVDUQVERRZIAUNBUBMBUCSZUEMVFIAQIJKAVBB
+      CVGEFVGTVBTGHUFUDUGUHUIUQUSIDAUODPUPUREUODECUJUKULUM $.
+
+    $d x Z $.  $d x ph $.
+    srgisid.1 $e |- ( ph -> R e. SRing ) $.
+    srgisid.2 $e |- ( ph -> Z e. B ) $.
+    srgisid.3 $e |- ( ( ph /\ x e. B ) -> ( Z .x. x ) = Z ) $.
+    $( In a semiring, the only left-absorbing element is the additive identity.
+       Remark in [Golan] p. 1.  (Contributed by Thierry Arnoux, 1-May-2018.) $)
+    srgisid $p |- ( ph -> Z = .0. ) $=
+      ( co cv wceq wral ralrimiva csrg wcel srg0cl oveq2 eqeq1d rspcv mpd srgrz
+      wi 3syl syl2anc eqtr3d ) AGFENZGFAGBOZENZGPZBCQZUKGPZAUNBCMRADSTZFCTUOUPU
+      GKCDFHJUAUNUPBFCULFPUMUKGULFGEUBUCUDUHUEAUQGCTUKFPKLCDEGFHIJUFUIUJ $.
+  $}
+
+  ${
+    srg1zr.b $e |- B = ( Base ` R ) $.
+    srg1zr.p $e |- .+ = ( +g ` R ) $.
+    srg1zr.t $e |- .* = ( .r ` R ) $.
+    $( The only semiring with a base set consisting of one element is the zero
+       ring (at least if its operations are internal binary operations).
+       (Contributed by FL, 13-Feb-2010.)  (Revised by AV, 25-Jan-2020.) $)
+    srg1zr $p |- ( ( ( R e. SRing /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+           /\ Z e. B ) -> ( B = { Z } <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( csn wceq wa csrg wcel cxp wfn cop cmgm adantr cfv eqid pm4.24 wb srgmnd
+      w3a cmnd 3ad2ant1 mndmgm syl simpl2 mgmb1mgm1 syl3anc cmgp cplusg mgpbasg
+      simpr cbs eqeq1d simpl1 srgmgp 3syl eleqtrd fneq1d biimpa 3adant2 sqxpeqd
+      mgpplusgg fneq2d mpbid eqcomd 3bitrd anbi12d bitrid ) AEIZJZVNVNKCLMZBAAN
+      ZOZDVPOZUDZEAMZKZBEEPEPIZJZDWBJZKVNUAWAVNWCVNWDWACQMZVTVQVNWCUBWACUEMZWEV
+      SWFVTVOVQWFVRCUCUFRCUGUHVSVTUOZVOVQVRVTUIABCEFGUJUKWAVNCULSZUPSZVMJZWHUMS
+      ZWBJZWDWAAWIVMVSAWIJZVTVOVQWMVRACWHLWHTZFUNUFRZUQWAWHQMZEWIMWKWIWINZOZWJW
+      LUBWAVOWHUEMWPVOVQVRVTURZCWHWNUSWHUGUTWAEAWIWGWOVAWAWKVPOZWRVSWTVTVOVRWTV
+      QVOVRWTVOVPDWKCDWHLWNHVFZVBVCVDRWAVPWQWKWAAWIWOVEVGVHWIWKWHEWITWKTUJUKWAW
+      KDWBWAVOWKDJWSVODWKXAVIUHUQVJVKVL $.
+
+    srgen1zr.p $e |- Z = ( 0g ` R ) $.
+    $( The only semiring with one element is the zero ring (at least if its
+       operations are internal binary operations).  (Contributed by FL,
+       14-Feb-2010.)  (Revised by AV, 25-Jan-2020.) $)
+    srgen1zr $p |- ( ( R e. SRing /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+                     -> ( B ~~ 1o <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( csrg wcel cxp wfn w3a c1o cop csn wceq wa wb cen wbr 3ad2ant1 en1eqsnbi
+      srg0cl adantl srg1zr bitrd mpdan ) CJKZBAALZMZDUKMZNZEAKZAOUAUBZBEEPEPQZR
+      DUQRSZTUJULUOUMACEFIUEUCUNUOSUPAEQRZURUOUPUSTUNEAUDUFABCDEFGHUGUHUI $.
+  $}
+
+  ${
+    $d x y B $.  $d x y R $.  $d x y .x. $.  $d x y .X. $.  $d x y X $.
+    $d x N $.  $d x y Y $.
+    srgmulgass.b $e |- B = ( Base ` R ) $.
+    srgmulgass.m $e |- .x. = ( .g ` R ) $.
+    srgmulgass.t $e |- .X. = ( .r ` R ) $.
+    $( An associative property between group multiple and ring multiplication
+       for semirings.  (Contributed by AV, 23-Aug-2019.) $)
+    srgmulgass $p |- ( ( R e. SRing /\ ( N e. NN0 /\ X e. B /\ Y e. B ) ) ->
+      ( ( N .x. X ) .X. Y ) = ( N .x. ( X .X. Y ) ) ) $=
+      ( wcel co wceq wi wa cc0 oveq1 oveq1d eqeq12d adantl vx vy cn0 csrg cv c1
+      w3a caddc imbi2d weq c0g cfv simpr adantr srglz syl2anc simpl mulg0 srgcl
+      eqid syl syl3anc 3eqtr4d cplusg srgmnd mulgnn0p1 mulgnn0cl syl13anc eqtrd
+      cmnd srgdir 3expb ancoms eqcomd sylan9eqr exp31 nn0ind expd 3impib impcom
+      a2d ) EUCKZFAKZGAKZUGBUDKZEFCLZGDLZEFGDLZCLZMZWBWCWDWEWJNWBWCWDOZWEWJWKWE
+      OZUAUEZFCLZGDLZWMWHCLZMZNWLPFCLZGDLZPWHCLZMZNWLUBUEZFCLZGDLZXBWHCLZMZNWLX
+      BUFUHLZFCLZGDLZXGWHCLZMZNWLWJNUAUBEWMPMZWQXAWLXLWOWSWPWTXLWNWRGDWMPFCQRWM
+      PWHCQSUIUAUBUJZWQXFWLXMWOXDWPXEXMWNXCGDWMXBFCQRWMXBWHCQSUIWMXGMZWQXKWLXNW
+      OXIWPXJXNWNXHGDWMXGFCQRWMXGWHCQSUIWMEMZWQWJWLXOWOWGWPWIXOWNWFGDWMEFCQRWME
+      WHCQSUIWLBUKULZGDLZXPWSWTWLWEWDXQXPMWKWEUMZWKWDWEWCWDUMUNZABDGXPHJXPUTZUO
+      UPWLWRXPGDWLWCWRXPMWKWCWEWCWDUQUNZACBFXPHXTIURVARWLWHAKZWTXPMWLWEWCWDYBXR
+      YAXSABDFGHJUSZVBACBWHXPHXTIURVAVCXBUCKZWLXFXKYDWLXFXKYDWLOZXFOXIXDWHBVDUL
+      ZLZXJYEXIYGMXFYEXIXCFYFLZGDLZYGYEXHYHGDYEBVJKZYDWCXHYHMWLYJYDWEYJWKBVETTZ
+      YDWLUQZWLWCYDYATZAYFCBXBFHIYFUTZVFVBRYEWEXCAKZWCWDYIYGMWLWEYDXRTYEYJYDWCY
+      OYKYLYMACBXBFHIVGVBYMWLWDYDXSTAYFBDXCFGHYNJVKVHVIUNXFYEYGXEWHYFLZXJXDXEWH
+      YFQYEXJYPYEYJYDYBXJYPMYKYLWLYBYDWEWKYBWEWCWDYBYCVLVMTAYFCBXBWHHIYNVFVBVNV
+      OVIVPWAVQVRVSVT $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d K x $.  $d ph x y $.  $d .^ x y $.
+    $d .X. x y $.
+    srgpcomp.s $e |- S = ( Base ` R ) $.
+    srgpcomp.m $e |- .X. = ( .r ` R ) $.
+    srgpcomp.g $e |- G = ( mulGrp ` R ) $.
+    srgpcomp.e $e |- .^ = ( .g ` G ) $.
+    srgpcomp.r $e |- ( ph -> R e. SRing ) $.
+    srgpcomp.a $e |- ( ph -> A e. S ) $.
+    srgpcomp.b $e |- ( ph -> B e. S ) $.
+    srgpcomp.k $e |- ( ph -> K e. NN0 ) $.
+    srgpcomp.c $e |- ( ph -> ( A .X. B ) = ( B .X. A ) ) $.
+    $( If two elements of a semiring commute, they also commute if one of the
+       elements is raised to a higher power.  (Contributed by AV,
+       23-Aug-2019.) $)
+    srgpcomp $p |- ( ph -> ( ( K .^ B ) .X. A ) = ( A .X. ( K .^ B ) ) ) $=
+      ( co wceq vx vy cn0 cv wi cc0 c1 caddc oveq1 oveq1d oveq2d eqeq12d imbi2d
+      wcel cur cfv c0g cbs csrg mgpbasg eleqtrd mulg0 ringidvalg eqtr4d srgridm
+      syl eqid syl2anc srglidm 3eqtr4rd eqtrd wa cplusg srgmgp adantr mulgnn0p1
+      simpr syl3anc wb mgpplusgg eqeq2d mpbird eqcomd mulgnn0cl eleqtrrd srgass
+      cmnd oveqd syl13anc 3eqtr4d sylan9eqr ex expcom a2d nn0ind mpcom ) IUCUNA
+      ICGSZBFSZBWQFSZTZQAUAUDZCGSZBFSZBXBFSZTZUEAUFCGSZBFSZBXFFSZTZUEAUBUDZCGSZ
+      BFSZBXKFSZTZUEAXJUGUHSZCGSZBFSZBXPFSZTZUEAWTUEUAUBIXAUFTZXEXIAXTXCXGXDXHX
+      TXBXFBFXAUFCGUIZUJXTXBXFBFYAUKULUMXAXJTZXEXNAYBXCXLXDXMYBXBXKBFXAXJCGUIZU
+      JYBXBXKBFYCUKULUMXAXOTZXEXSAYDXCXQXDXRYDXBXPBFXAXOCGUIZUJYDXBXPBFYEUKULUM
+      XAITZXEWTAYFXCWRXDWSYFXBWQBFXAICGUIZUJYFXBWQBFYGUKULUMAXGDUOUPZBFSZXHAXFY
+      HBFAXFHUQUPZYHACHURUPZUNZXFYJTACEYKPADUSUNZEYKTZNEDHUSLJUTVFZVAYKGHCYJYKV
+      GZYJVGMVBVFAYMYHYJTNDYHHUSLYHVGZVCVFVDZUJABYHFSZBXHYIAYMBEUNZYSBTNOEDFYHB
+      JKYQVEVHAXFYHBFYRUKAYMYTYIBTNOEDFYHBJKYQVIVHVJVKXJUCUNZAXNXSAUUAXNXSUEAUU
+      AVLZXNXSUUBXNVLXQXLCFSZXRUUBXQUUCTXNUUBXQXKCFSZBFSZUUCUUBXPUUDBFUUBXPUUDT
+      ZXPXKCHVMUPZSZTZUUBHWGUNZUUAYLUUIAUUJUUAAYMUUJNDHLVNVFVOZAUUAVQZUUBCEYKAC
+      EUNZUUAPVOZAYNUUAYOVOZVAZYKUUGGHXJCYPMUUGVGVPVRAUUFUUIVSUUAAUUDUUHXPAFUUG
+      XKCAYMFUUGTNDFHUSLKVTVFWHWAVOWBZUJUUBXKCBFSZFSZXKBCFSZFSZUUEUUCUUBUURUUTX
+      KFAUURUUTTUUAAUUTUURRWCVOUKUUBYMXKEUNZUUMYTUUEUUSTAYMUUANVOZUUBXKYKEUUBUU
+      JUUAYLXKYKUNUUKUULUUPYKGHXJCYPMWDVRUUOWEZUUNAYTUUAOVOZEDFXKCBJKWFWIUUBYMU
+      VBYTUUMUUCUVATUVCUVDUVEUUNEDFXKBCJKWFWIWJVKVOXNUUBUUCXMCFSZXRXLXMCFUIUUBU
+      VFBUUDFSZXRUUBYMYTUVBUUMUVFUVGTUVCUVEUVDUUNEDFBXKCJKWFWIUUBUUDXPBFUUBXPUU
+      DUUQWCUKVKWKVKWLWMWNWOWP $.
+
+    srgpcompp.n $e |- ( ph -> N e. NN0 ) $.
+    $( If two elements of a semiring commute, they also commute if the elements
+       are raised to a higher power.  (Contributed by AV, 23-Aug-2019.) $)
+    srgpcompp $p |- ( ph -> ( ( ( N .^ A ) .X. ( K .^ B ) ) .X. A )
+                            = ( ( ( N + 1 ) .^ A ) .X. ( K .^ B ) ) ) $=
+      ( co c1 caddc csrg wcel wceq cbs cfv cmnd cn0 srgmgp mgpbasg eleqtrd eqid
+      mulgnn0cl syl3anc eleqtrrd srgass syl13anc oveq2d eqtr4d cplusg mgpplusgg
+      syl srgpcomp oveqd mulgnn0p1 oveq1d 3eqtrd ) AJBGUAZICGUAZFUABFUAZVJVKBFU
+      AZFUAZVJBFUAZVKFUAZJUBUCUABGUAZVKFUAADUDUEZVJEUEZVKEUEZBEUEZVLVNUFOAVJHUG
+      UHZEAHUIUEZJUJUEZBWBUEZVJWBUEAVRWCODHMUKVDZTABEWBPAVREWBUFOEDHUDMKULVDZUM
+      ZWBGHJBWBUNZNUOUPWGUQZAVKWBEAWCIUJUECWBUEVKWBUEWFRACEWBQWGUMWBGHICWINUOUP
+      WGUQZPEDFVJVKBKLURUSAVNVJBVKFUAZFUAZVPAVMWLVJFABCDEFGHIKLMNOPQRSVEUTAVRVS
+      WAVTVPWMUFOWJPWKEDFVJBVKKLURUSVAAVOVQVKFAVOVJBHVBUHZUAZVQAFWNVJBAVRFWNUFO
+      DFHUDMLVCVDVFAWCWDWEVQWOUFWFTWHWBWNGHJBWINWNUNVGUPVAVHVI $.
+
+    srgpcomppsc.t $e |- .x. = ( .g ` R ) $.
+    srgpcomppsc.c $e |- ( ph -> C e. NN0 ) $.
+    $( If two elements of a semiring commute, they also commute if the elements
+       are raised to a higher power and a scalar multiplication is involved.
+       (Contributed by AV, 23-Aug-2019.) $)
+    srgpcomppsc $p |- ( ph -> ( ( C .x. ( ( N .^ A ) .X. ( K .^ B ) ) ) .X. A )
+                         = ( C .x. ( ( ( N + 1 ) .^ A ) .X. ( K .^ B ) ) ) ) $=
+      ( co c1 caddc csrg wcel cn0 wceq cbs cfv cmnd srgmgp mgpbasg eleqtrd eqid
+      syl mulgnn0cl syl3anc eleqtrrd w3a srgmulgass eqcomd oveq1d srgmnd srgass
+      wa syl13anc eqtrd srgcl oveq2d srgpcompp 3eqtrd ) ADLBIUEZKCIUEZHUEZGUEZB
+      HUEZDVPGUEZVQBHUEZHUEZDVRBHUEZGUEZDLUFUGUEBIUEVQHUEZGUEAVTWAVQHUEZBHUEZWC
+      AVSWGBHAEUHUIZDUJUIZVPFUIZVQFUIZVSWGUKQUDAVPJULUMZFAJUNUIZLUJUIBWMUIVPWMU
+      IAWIWNQEJOUOUSZUBABFWMRAWIFWMUKQFEJUHOMUPUSZUQWMIJLBWMURZPUTVAWPVBZAVQWMF
+      AWNKUJUICWMUIVQWMUIWOTACFWMSWPUQWMIJKCWQPUTVAWPVBZWIWJWKWLVCVIWGVSFEGHDVP
+      VQMUCNVDVEVJVFAWIWAFUIZWLBFUIZWHWCUKQAEUNUIZWJWKWTAWIXBQEVGUSUDWRFGEDVPMU
+      CUTVAWSRFEHWAVQBMNVHVJVKAWCDVPWBHUEZGUEZWEAWIWJWKWBFUIZWCXDUKQUDWRAWIWLXA
+      XEQWSRFEHVQBMNVLVAFEGHDVPWBMUCNVDVJAXCWDDGAWDXCAWIWKWLXAWDXCUKQWRWSRFEHVP
+      VQBMNVHVJVEVMVKAWDWFDGABCEFHIJKLMNOPQRSTUAUBVNVMVO $.
+  $}
+
+  ${
+    $d a b x B $.  $d a b x R $.  $d a b x X $.  $d a b x .x. $.
+    srglmhm.b $e |- B = ( Base ` R ) $.
+    srglmhm.t $e |- .x. = ( .r ` R ) $.
+    $( Left-multiplication in a semiring by a fixed element of the ring is a
+       monoid homomorphism.  (Contributed by AV, 23-Aug-2019.) $)
+    srglmhm $p |- ( ( R e. SRing /\ X e. B ) ->
+      ( x e. B |-> ( X .x. x ) ) e. ( R MndHom R ) ) $=
+      ( va vb wcel wa cv co cfv wceq srgcl eqid oveq2 syl3anc fvmptd3 csrg cmnd
+      cmpt cplusg wral c0g w3a cmhm srgmnd jca adantr 3expa fmpttd 3anass srgdi
+      sylan2br anassrs srgacl 3expb adantlr simpll simplr simprl simprr oveq12d
+      wf 3eqtr4d ralrimivva srg0cl mpd3an3 srgrz eqtrd 3jca ismhm sylanbrc ) CU
+      AJZEBJZKZCUBJZVSKZBBABEALZDMZUCZVFZHLZILZCUDNZMZWCNZWEWCNZWFWCNZWGMZOZIBU
+      EHBUEZCUFNZWCNZWOOZUGWCCCUHMJVPVTVQVPVSVSCUIZWRUJUKVRWDWNWQVRABWBBVPVQWAB
+      JWBBJBCDEWAFGPULUMVRWMHIBBVRWEBJZWFBJZKZKZEWHDMZEWEDMZEWFDMZWGMZWIWLVPVQX
+      AXCXFOZVQXAKVPVQWSWTUGXGVQWSWTUNBWGCDEWEWFFWGQZGUOUPUQXBAWHWBXCBWCBWCQZWA
+      WHEDRVPXAWHBJZVQVPWSWTXJBWGCWEWFFXHURUSUTZXBVPVQXJXCBJVPVQXAVAZVPVQXAVBZX
+      KBCDEWHFGPSTXBWJXDWKXEWGXBAWEWBXDBWCBXIWAWEEDRVRWSWTVCZXBVPVQWSXDBJXLXMXN
+      BCDEWEFGPSTXBAWFWBXEBWCBXIWAWFEDRVRWSWTVDZXBVPVQWTXEBJXLXMXOBCDEWFFGPSTVE
+      VGVHVRWPEWODMZWOVRAWOWBXPBWCBXIWAWOEDRVPWOBJZVQBCWOFWOQZVIUKZVPVQXQXPBJXS
+      BCDEWOFGPVJTBCDEWOFGXRVKVLVMHIBBWGWGCCWCWOWOFFXHXHXRXRVNVO $.
+
+    $( Right-multiplication in a semiring by a fixed element of the ring is a
+       monoid homomorphism.  (Contributed by AV, 23-Aug-2019.) $)
+    srgrmhm $p |- ( ( R e. SRing /\ X e. B )
+                    -> ( x e. B |-> ( x .x. X ) ) e. ( R MndHom R ) ) $=
+      ( va vb wcel wa cv co cfv wceq w3a srgcl oveq1 syl3anc fvmptd3 cplusg c0g
+      csrg cmnd cmpt wf wral cmhm srgmnd jca adantr 3com23 fmpttd 3anrot 3anass
+      3expa bitr3i eqid srgdir anassrs srgacl 3expb simpll simplr simprl simprr
+      sylan2br adantlr oveq12d 3eqtr4d ralrimivva srg0cl simpl simpr srglz 3jca
+      eqtrd ismhm sylanbrc ) CUCJZEBJZKZCUDJZWCKZBBABALZEDMZUEZUFZHLZILZCUANZMZ
+      WGNZWIWGNZWJWGNZWKMZOZIBUGHBUGZCUBNZWGNZWSOZPWGCCUHMJVTWDWAVTWCWCCUIZXBUJ
+      UKWBWHWRXAWBABWFBVTWAWEBJZWFBJZVTXCWAXDBCDWEEFGQULUPUMWBWQHIBBWBWIBJZWJBJ
+      ZKZKZWLEDMZWIEDMZWJEDMZWKMZWMWPVTWAXGXIXLOZWAXGKZVTXEXFWAPZXMXOWAXEXFPXNW
+      AXEXFUNWAXEXFUOUQBWKCDWIWJEFWKURZGUSVGUTXHAWLWFXIBWGBWGURZWEWLEDRVTXGWLBJ
+      ZWAVTXEXFXRBWKCWIWJFXPVAVBVHZXHVTXRWAXIBJVTWAXGVCZXSVTWAXGVDZBCDWLEFGQSTX
+      HWNXJWOXKWKXHAWIWFXJBWGBXQWEWIEDRWBXEXFVEZXHVTXEWAXJBJXTYBYABCDWIEFGQSTXH
+      AWJWFXKBWGBXQWEWJEDRWBXEXFVFZXHVTXFWAXKBJXTYCYABCDWJEFGQSTVIVJVKWBWTWSEDM
+      ZWSWBAWSWFYDBWGBXQWEWSEDRVTWSBJZWABCWSFWSURZVLUKZWBVTYEWAYDBJVTWAVMYGVTWA
+      VNBCDWSEFGQSTBCDEWSFGYFVOVQVPHIBBWKWKCCWGWSWSFFXPXPYFYFVRVS $.
+  $}
+
+  ${
+    srg1expzeq1.g $e |- G = ( mulGrp ` R ) $.
+    srg1expzeq1.t $e |- .x. = ( .g ` G ) $.
+    srg1expzeq1.1 $e |- .1. = ( 1r ` R ) $.
+    $( The exponentiation (by a nonnegative integer) of the multiplicative
+       identity of a semiring, analogous to ~ mulgnn0z .  (Contributed by AV,
+       25-Nov-2019.) $)
+    srg1expzeq1 $p |- ( ( R e. SRing /\ N e. NN0 ) -> ( N .x. .1. ) = .1. ) $=
+      ( csrg wcel cn0 wa co wceq c0g cfv cmnd srgmgp cbs eqid mulgnn0z sylan wb
+      ringidvalg oveq2d eqeq12d adantr mpbird ) AIJZEKJZLECBMZCNZEDOPZBMZUMNZUI
+      DQJUJUOADFRDSPZBDEUMUPTGUMTUAUBUIULUOUCUJUIUKUNCUMUICUMEBACDIFHUDZUEUQUFU
+      GUH $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -165231,6 +165769,9 @@ htmldef "Abel" as
 htmldef "mulGrp" as "mulGrp";
   althtmldef "mulGrp" as "mulGrp";
   latexdef "mulGrp" as "\mathrm{mulGrp}";
+htmldef "SRing" as "SRing";
+  althtmldef "SRing" as "SRing";
+  latexdef "SRing" as "\mathrm{SRing}";
 htmldef "1r" as "<IMG SRC='_1r.gif' WIDTH=13 HEIGHT=19 ALT=' 1r' TITLE='1r'>";
   althtmldef "1r" as "1<SUB>r</SUB>";
   latexdef "1r" as "1_\mathrm{r}";
