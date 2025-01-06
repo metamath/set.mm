@@ -5292,17 +5292,7 @@
 "dicdmN" is used by "dicvalrelN".
 "dicelvalN" is used by "dicelval2N".
 "dicfnN" is used by "dicdmN".
-"dif1enOLD" is used by "en2eleq".
-"dif1enOLD" is used by "en2other2".
-"dif1enOLD" is used by "enp1i".
-"dif1enOLD" is used by "f1otrspeq".
-"dif1enOLD" is used by "findcard".
 "dif1enOLD" is used by "findcard2OLD".
-"dif1enOLD" is used by "mreexexlem4d".
-"dif1enOLD" is used by "phplem1".
-"dif1enOLD" is used by "pmtrf".
-"dif1enOLD" is used by "pmtrfinv".
-"dif1enOLD" is used by "pmtrmvd".
 "dif1enlemOLD" is used by "dif1enOLD".
 "dif1enlemOLD" is used by "rexdif1enOLD".
 "dihglbcN" is used by "dihmeetcN".
@@ -16127,7 +16117,7 @@ New usage of "dicelvalN" is discouraged (1 uses).
 New usage of "dicfnN" is discouraged (1 uses).
 New usage of "dicvalrelN" is discouraged (0 uses).
 New usage of "dif1enALT" is discouraged (0 uses).
-New usage of "dif1enOLD" is discouraged (11 uses).
+New usage of "dif1enOLD" is discouraged (1 uses).
 New usage of "dif1enlemOLD" is discouraged (2 uses).
 New usage of "difidALT" is discouraged (0 uses).
 New usage of "difopabOLD" is discouraged (0 uses).
