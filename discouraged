@@ -18373,6 +18373,7 @@ New usage of "ordelordALT" is discouraged (0 uses).
 New usage of "ordelordALTVD" is discouraged (0 uses).
 New usage of "ordpinq" is discouraged (6 uses).
 New usage of "ordpipq" is discouraged (5 uses).
+New usage of "ordsucOLD" is discouraged (0 uses).
 New usage of "orim12dALT" is discouraged (0 uses).
 New usage of "orthcom" is discouraged (6 uses).
 New usage of "orthin" is discouraged (2 uses).
@@ -21062,6 +21063,7 @@ Proof modification of "orbi1rVD" is discouraged (101 steps).
 Proof modification of "orcomdd" is discouraged (13 steps).
 Proof modification of "ordelordALT" is discouraged (128 steps).
 Proof modification of "ordelordALTVD" is discouraged (202 steps).
+Proof modification of "ordsucOLD" is discouraged (67 steps).
 Proof modification of "orim12dALT" is discouraged (34 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
 Proof modification of "peano1OLD" is discouraged (9 steps).
