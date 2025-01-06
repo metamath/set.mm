@@ -149036,6 +149036,17 @@ $)
       WDXKWEFVTAFVTUJXGKVEZAXGBCHWBLVGAXGBDHWBLVGZVHVIXHVQVRFUHZVSHUHXKVRVSHUHZ
       FUHWIWKQXHXOWHVSVSHWBXLAXGBCFVTKVGXHVSVFVHXHXKWEXPWJFVTXMXNAXGCDHWBLVGVHV
       IVJVKVLBCDWNVTGWBVPWQWPVTUPWSVMVN $.
+
+    iscrngd.c $e |- ( ( ph /\ x e. B /\ y e. B ) ->
+      ( x .x. y ) = ( y .x. x ) ) $.
+    $( Properties that determine a commutative ring.  (Contributed by Mario
+       Carneiro, 7-Jan-2015.) $)
+    iscrngd $p |- ( ph -> R e. CRing ) $=
+      ( crg wcel cmgp cfv ccmn ccrg isringd cbs wceq mgpbasg eqtrd cmulr cplusg
+      eqid syl mgpplusgg ismndd iscmnd iscrng sylanbrc ) AGUBUCZGUDUEZUFUCGUGUC
+      ABCDEFGHIJKLMNOPQRSTUHZABCEHVCAEGUIUEZVCUIUEZJAVBVEVFUJVDVEGVCUBVCUOZVEUO
+      UKUPULZAHGUMUEZVCUNUEZLAVBVIVJUJVDGVIVCUBVGVIUOUQUPULZABCDEHVCIVHVKNORSTU
+      RUAUSGVCVGUTVA $.
   $}
 
 
