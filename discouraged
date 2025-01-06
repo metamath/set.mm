@@ -19308,6 +19308,7 @@ New usage of "strndxid" is discouraged (2 uses).
 New usage of "sucdom2OLD" is discouraged (0 uses).
 New usage of "sucdomOLD" is discouraged (0 uses).
 New usage of "suceloniOLD" is discouraged (0 uses).
+New usage of "sucexeloniOLD" is discouraged (0 uses).
 New usage of "sucidALT" is discouraged (0 uses).
 New usage of "sucidALTVD" is discouraged (0 uses).
 New usage of "sucidVD" is discouraged (0 uses).
@@ -21354,6 +21355,7 @@ Proof modification of "stdpc5t" is discouraged (23 steps).
 Proof modification of "sucdom2OLD" is discouraged (343 steps).
 Proof modification of "sucdomOLD" is discouraged (35 steps).
 Proof modification of "suceloniOLD" is discouraged (160 steps).
+Proof modification of "sucexeloniOLD" is discouraged (163 steps).
 Proof modification of "sucidALT" is discouraged (28 steps).
 Proof modification of "sucidALTVD" is discouraged (28 steps).
 Proof modification of "sucidVD" is discouraged (24 steps).
