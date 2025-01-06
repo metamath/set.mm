@@ -94,8 +94,13 @@ DONE:
 Date      Old       New         Notes
  5-Jan-26 nfrexd    nfrexdw     consistent with nfraldw
  5-Jan-26 nfrex     nfrexw      consistent with nfralw
+ 4-Jan-25 smorndom  smocdmdom
  4-Jan-25 ralimda   ---         obsolete - use ralimdaa instead
  3-Jan-25 srgi      srgdilem
+ 2-Jan-25 frnnn0fsuppg fcdmnn0fsuppg
+ 2-Jan-25 frnnn0suppg fcdmnn0suppg
+ 2-Jan-25 frnnn0fsupp fcdmnn0fsupp
+ 2-Jan-25 frnnn0supp fcdmnn0supp
  2-Jan-25 pr2nelem  enpr2
 28-Dec-24 fovrnd    fovcdmd
 28-Dec-24 fovrnda   fovcdmda
