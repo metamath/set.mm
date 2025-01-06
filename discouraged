@@ -14872,7 +14872,6 @@ New usage of "bj-csbsnlem" is discouraged (1 uses).
 New usage of "bj-currypeirce" is discouraged (0 uses).
 New usage of "bj-denot" is discouraged (0 uses).
 New usage of "bj-dfid2ALT" is discouraged (0 uses).
-New usage of "bj-dtru" is discouraged (0 uses).
 New usage of "bj-elabd2ALT" is discouraged (0 uses).
 New usage of "bj-elissetALT" is discouraged (0 uses).
 New usage of "bj-equsalhv" is discouraged (0 uses).
@@ -16258,6 +16257,7 @@ New usage of "drsb1" is discouraged (3 uses).
 New usage of "dsndx" is discouraged (20 uses).
 New usage of "dtruALT" is discouraged (0 uses).
 New usage of "dtruALT2" is discouraged (6 uses).
+New usage of "dtruOLD" is discouraged (0 uses).
 New usage of "dtrucor2" is discouraged (0 uses).
 New usage of "dummylink" is discouraged (0 uses).
 New usage of "dvadiaN" is discouraged (1 uses).
@@ -19131,7 +19131,7 @@ New usage of "smfval" is discouraged (17 uses).
 New usage of "smgrpassOLD" is discouraged (1 uses).
 New usage of "smgrpismgmOLD" is discouraged (1 uses).
 New usage of "smgrpmgm" is discouraged (1 uses).
-New usage of "sn-elALT2" is discouraged (0 uses).
+New usage of "sn-exelALT" is discouraged (0 uses).
 New usage of "sn-wcdeq" is discouraged (0 uses).
 New usage of "snatpsubN" is discouraged (3 uses).
 New usage of "snelpwrVD" is discouraged (0 uses).
@@ -19907,7 +19907,6 @@ Proof modification of "bj-dfnnf3" is discouraged (34 steps).
 Proof modification of "bj-disj2r" is discouraged (88 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
 Proof modification of "bj-drnf2v" is discouraged (10 steps).
-Proof modification of "bj-dtru" is discouraged (146 steps).
 Proof modification of "bj-dtrucor2v" is discouraged (31 steps).
 Proof modification of "bj-dvelimdv" is discouraged (64 steps).
 Proof modification of "bj-dvelimdv1" is discouraged (63 steps).
@@ -20206,6 +20205,7 @@ Proof modification of "drnfc2" is discouraged (59 steps).
 Proof modification of "drnfc2OLD" is discouraged (52 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
 Proof modification of "dtruALT2" is discouraged (161 steps).
+Proof modification of "dtruOLD" is discouraged (157 steps).
 Proof modification of "dummylink" is discouraged (1 steps).
 Proof modification of "dveel2ALT" is discouraged (22 steps).
 Proof modification of "dveeq1-o" is discouraged (20 steps).
@@ -21284,7 +21284,7 @@ Proof modification of "slotsbhcdifOLD" is discouraged (96 steps).
 Proof modification of "smgrpassOLD" is discouraged (54 steps).
 Proof modification of "smgrpismgmOLD" is discouraged (22 steps).
 Proof modification of "sn-00id" is discouraged (50 steps).
-Proof modification of "sn-elALT2" is discouraged (52 steps).
+Proof modification of "sn-exelALT" is discouraged (52 steps).
 Proof modification of "snelpwrVD" is discouraged (37 steps).
 Proof modification of "snex" is discouraged (64 steps).
 Proof modification of "snexALT" is discouraged (48 steps).
