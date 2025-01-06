@@ -12546,7 +12546,6 @@
 "retbwax2" is used by "merco1lem2".
 "retbwax2" is used by "merco1lem3".
 "retbwax2" is used by "retbwax3".
-"rexdif1enOLD" is used by "findcard2".
 "rhmsubcALTV" is used by "rhmsubcALTVcat".
 "rhmsubcALTVlem1" is used by "rhmsubcALTV".
 "rhmsubcALTVlem2" is used by "rhmsubcALTVlem3".
@@ -18824,7 +18823,7 @@ New usage of "rexbiOLD" is discouraged (0 uses).
 New usage of "rexbidvALT" is discouraged (0 uses).
 New usage of "rexbidvaALT" is discouraged (0 uses).
 New usage of "rexcomOLD" is discouraged (0 uses).
-New usage of "rexdif1enOLD" is discouraged (1 uses).
+New usage of "rexdif1enOLD" is discouraged (0 uses).
 New usage of "reximdvaiOLD" is discouraged (0 uses).
 New usage of "reximiaOLD" is discouraged (0 uses).
 New usage of "rexlimddvcbv" is discouraged (0 uses).
