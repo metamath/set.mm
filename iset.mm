@@ -149006,6 +149006,38 @@ $)
       JUFUEIUGUEIRRZUHUIUFUGDSNUFUGATLZQUFUGBTLZQMUJUKULUFUGESNUCUD $.
   $}
 
+  ${
+    $d x .1. $.  $d x y z B $.  $d x y z ph $.  $d x y z R $.
+    isringd.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    isringd.p $e |- ( ph -> .+ = ( +g ` R ) ) $.
+    isringd.t $e |- ( ph -> .x. = ( .r ` R ) ) $.
+    isringd.g $e |- ( ph -> R e. Grp ) $.
+    isringd.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .x. y ) e. B ) $.
+    isringd.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                  ( ( x .x. y ) .x. z ) = ( x .x. ( y .x. z ) ) ) $.
+    isringd.d $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                  ( x .x. ( y .+ z ) ) = ( ( x .x. y ) .+ ( x .x. z ) ) ) $.
+    isringd.e $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                  ( ( x .+ y ) .x. z ) = ( ( x .x. z ) .+ ( y .x. z ) ) ) $.
+    isringd.u $e |- ( ph -> .1. e. B ) $.
+    isringd.i $e |- ( ( ph /\ x e. B ) -> ( .1. .x. x ) = x ) $.
+    isringd.h $e |- ( ( ph /\ x e. B ) -> ( x .x. .1. ) = x ) $.
+    $( Properties that determine a ring.  (Contributed by NM, 2-Aug-2013.) $)
+    isringd $p |- ( ph -> R e. Ring ) $=
+      ( cgrp wcel cmgp cfv cmnd cv cplusg co cmulr wceq wa cbs wral crg mgpbasg
+      eqid syl eqtrd mgpplusgg ismndd w3a eleq2d 3anbi123d biimpar adantr eqidd
+      oveqdr oveq123d 3eqtr3d jca syldan ralrimivvva isring syl3anbrc ) AGUAUBZ
+      GUCUDZUEUBBUFZCUFZDUFZGUGUDZUHZGUIUDZUHZVQVRWBUHZVQVSWBUHZVTUHZUJZVQVRVTU
+      HZVSWBUHZWEVRVSWBUHZVTUHZUJZUKZDGULUDZUMCWNUMBWNUMGUNUBMABCDEHVPIAEWNVPUL
+      UDZJAVOWNWOUJMWNGVPUAVPUPZWNUPZUOUQURAHWBVPUGUDZLAVOWBWRUJMGWBVPUAWPWBUPZ
+      USUQURNORSTUTAWMBCDWNWNWNAVQWNUBZVRWNUBZVSWNUBZVAZVQEUBZVREUBZVSEUBZVAZWM
+      AXGXCAXDWTXEXAXFXBAEWNVQJVBAEWNVRJVBAEWNVSJVBVCVDAXGUKZWGWLXHVQVRVSFUHZHU
+      HVQVRHUHZVQVSHUHZFUHWCWFPXHVQVQXIWAHWBAHWBUJXGLVEZXHVQVFAXGCDFVTKVGVHXHXJ
+      WDXKWEFVTAFVTUJXGKVEZAXGBCHWBLVGAXGBDHWBLVGZVHVIXHVQVRFUHZVSHUHXKVRVSHUHZ
+      FUHWIWKQXHXOWHVSVSHWBXLAXGBCFVTKVGXHVSVFVHXHXKWEXPWJFVTXMXNAXGCDHWBLVGVHV
+      IVJVKVLBCDWNVTGWBVPWQWPVTUPWSVMVN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
