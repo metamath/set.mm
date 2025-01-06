@@ -148992,6 +148992,20 @@ $)
       UGUMUNUQURAVCVGVIVPUSUTEVDVMVAFVHVRVAVB $.
   $}
 
+  ${
+    $d x y K $.  $d x y L $.
+    ringprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    ringprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    ringprop.m $e |- ( .r ` K ) = ( .r ` L ) $.
+    $( If two structures have the same ring components (properties), one is a
+       ring iff the other one is.  (Contributed by Mario Carneiro,
+       11-Oct-2013.) $)
+    ringprop $p |- ( K e. Ring <-> L e. Ring ) $=
+      ( vx vy crg wcel wtru cbs cfv wceq a1i cv cplusg co wa oveqi cmulr eqidd
+      wb ringpropd mptru ) AHIBHIUBJFGAKLZABJUEUAUEBKLMJCNFOZGOZAPLZQUFUGBPLZQM
+      JUFUEIUGUEIRRZUHUIUFUGDSNUFUGATLZQUFUGBTLZQMUJUKULUFUGESNUCUD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
