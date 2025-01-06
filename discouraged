@@ -6293,6 +6293,9 @@
 "elunop" is used by "unopf1o".
 "en3lplem1VD" is used by "en3lplem2VD".
 "en3lplem2VD" is used by "en3lpVD".
+"enp1iOLD" is used by "en2".
+"enp1iOLD" is used by "en3".
+"enp1iOLD" is used by "en4".
 "enqbreq" is used by "adderpqlem".
 "enqbreq" is used by "enqbreq2".
 "enqbreq" is used by "mulcanenq".
@@ -16574,6 +16577,7 @@ New usage of "en3lplem1VD" is discouraged (1 uses).
 New usage of "en3lplem2VD" is discouraged (1 uses).
 New usage of "enfiALT" is discouraged (0 uses).
 New usage of "enfiiOLD" is discouraged (0 uses).
+New usage of "enp1iOLD" is discouraged (3 uses).
 New usage of "enpr2dOLD" is discouraged (0 uses).
 New usage of "enqbreq" is discouraged (5 uses).
 New usage of "enqbreq2" is discouraged (4 uses).
@@ -20439,6 +20443,7 @@ Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
 Proof modification of "enfiALT" is discouraged (42 steps).
 Proof modification of "enfiiOLD" is discouraged (14 steps).
+Proof modification of "enp1iOLD" is discouraged (132 steps).
 Proof modification of "enpr2dOLD" is discouraged (114 steps).
 Proof modification of "ensn1OLD" is discouraged (47 steps).
 Proof modification of "ensucne0OLD" is discouraged (82 steps).
