@@ -149091,6 +149091,23 @@ $)
       VEVIBVDUKULBCDVDVAAVBUPVFVMVKVNVOVPUMUN $.
   $}
 
+  ${
+    ring1eq0.b $e |- B = ( Base ` R ) $.
+    ring1eq0.u $e |- .1. = ( 1r ` R ) $.
+    ring1eq0.z $e |- .0. = ( 0g ` R ) $.
+    $( If one and zero are equal, then any two elements of a ring are equal.
+       Alternately, every ring has one distinct from zero except the zero ring
+       containing the single element ` { 0 } ` .  (Contributed by Mario
+       Carneiro, 10-Sep-2014.) $)
+    ring1eq0 $p |- ( ( R e. Ring /\ X e. B /\ Y e. B ) ->
+      ( .1. = .0. -> X = Y ) ) $=
+      ( crg wcel w3a wceq wa co oveq1d ringlz syl2anc eqtr4d ringlidm cmulr cfv
+      simpr simpl1 simpl2 eqid simpl3 3eqtr3d ex ) BJKZDAKZEAKZLZCFMZDEMUMUNNZC
+      DBUAUBZOZCEUPOZDEUOUQFDUPOZURUOCFDUPUMUNUCZPUOURFEUPOZUSUOCFEUPUTPUOUSFVA
+      UOUJUKUSFMUJUKULUNUDZUJUKULUNUEZABUPDFGUPUFZIQRUOUJULVAFMVBUJUKULUNUGZABU
+      PEFGVDIQRSSSUOUJUKUQDMVBVCABUPCDGVDHTRUOUJULUREMVBVEABUPCEGVDHTRUHUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
