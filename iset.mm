@@ -149344,6 +149344,12 @@ $)
       GEFGYRUUAAUVOXMUVHUVLUVIUVQXHXIXJ $.
   $}
 
+  $( The class of rings is not empty (it is also inhabited, as shown at
+     ~ ring1 ).  (Contributed by AV, 29-Apr-2019.) $)
+  ringn0 $p |- Ring =/= (/) $=
+    ( vz cv cvv wcel cnx cbs cfv csn cop cplusg cmulr ctp crg c0 wne eqid ring1
+    vex ne0i mp2b ) ABZCDEFGUAHIEJGUAUAIUAIHZIEKGUBILZMDMNOARUCCUAUCPQMUCST $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
