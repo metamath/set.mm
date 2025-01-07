@@ -16116,9 +16116,9 @@ New usage of "dicelval2N" is discouraged (0 uses).
 New usage of "dicelvalN" is discouraged (1 uses).
 New usage of "dicfnN" is discouraged (1 uses).
 New usage of "dicvalrelN" is discouraged (0 uses).
-New usage of "dif1enALT" is discouraged (0 uses).
 New usage of "dif1enOLD" is discouraged (1 uses).
 New usage of "dif1enlemOLD" is discouraged (2 uses).
+New usage of "dif1ennnALT" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
 New usage of "difopabOLD" is discouraged (0 uses).
 New usage of "dih0bN" is discouraged (0 uses).
@@ -20190,9 +20190,9 @@ Proof modification of "dfvd3anir" is discouraged (19 steps).
 Proof modification of "dfvd3i" is discouraged (19 steps).
 Proof modification of "dfvd3ir" is discouraged (19 steps).
 Proof modification of "dfwrecsOLD" is discouraged (619 steps).
-Proof modification of "dif1enALT" is discouraged (335 steps).
 Proof modification of "dif1enOLD" is discouraged (313 steps).
 Proof modification of "dif1enlemOLD" is discouraged (285 steps).
+Proof modification of "dif1ennnALT" is discouraged (335 steps).
 Proof modification of "difidALT" is discouraged (14 steps).
 Proof modification of "difopabOLD" is discouraged (171 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
