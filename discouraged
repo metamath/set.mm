@@ -6293,7 +6293,6 @@
 "elunop" is used by "unopf1o".
 "en3lplem1VD" is used by "en3lplem2VD".
 "en3lplem2VD" is used by "en3lpVD".
-"enp1iOLD" is used by "en4".
 "enqbreq" is used by "adderpqlem".
 "enqbreq" is used by "enqbreq2".
 "enqbreq" is used by "mulcanenq".
@@ -16575,7 +16574,7 @@ New usage of "en3lplem1VD" is discouraged (1 uses).
 New usage of "en3lplem2VD" is discouraged (1 uses).
 New usage of "enfiALT" is discouraged (0 uses).
 New usage of "enfiiOLD" is discouraged (0 uses).
-New usage of "enp1iOLD" is discouraged (1 uses).
+New usage of "enp1iOLD" is discouraged (0 uses).
 New usage of "enpr2dOLD" is discouraged (0 uses).
 New usage of "enqbreq" is discouraged (5 uses).
 New usage of "enqbreq2" is discouraged (4 uses).
