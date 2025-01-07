@@ -145383,6 +145383,23 @@ $)
   $}
 
   ${
+    $d B x y $.  $d K x y $.  $d L x y $.  $d V x y $.
+    grppropstr.b $e |- ( Base ` K ) = B $.
+    grppropstr.p $e |- ( +g ` K ) = .+ $.
+    grppropstr.l $e |- L
+          = { <. ( Base ` ndx ) , B >. , <. ( +g ` ndx ) , .+ >. } $.
+    $( Generalize a specific 2-element group ` L ` to show that any set ` K `
+       with the same (relevant) properties is also a group.  (Contributed by
+       NM, 28-Oct-2012.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    grppropstrg $p |- ( K e. V -> ( K e. Grp <-> L e. Grp ) ) $=
+      ( vx vy wcel cbs cfv cvv wceq eqeltrrid cplusg syl2anc eqtrid cv wfn elex
+      basfn funfvex funfni plusgslid slotex grpbaseg eqtr4d wa grpplusgg oveqdr
+      sylancr grppropd ) CEKZIJACDUOADLMZCLMZUOANKZBNKZAUPOUOAUQNFUOLNUACNKUQNK
+      ZUCCEUBUTNCLCLUDUEUMPZUOBCQMZNGCQEUFUGPZABDNNHUHRZUOUQAUPFVDSUIVDUOITAKJT
+      AKUJIJVBDQMZUOVBBVEGUOURUSBVEOVAVCABDNNHUKRSULUN $.
+  $}
+
+  ${
     $d x y .+ $.  $d y .0. $.  $d x y B $.  $d x y G $.  $d x y ph $.
     $d y N $.
     isgrpd2.b $e |- ( ph -> B = ( Base ` G ) ) $.
