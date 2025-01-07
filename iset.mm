@@ -149179,6 +149179,23 @@ $)
       HWBWDKUSURUTVA $.
   $}
 
+  ${
+    ringneglmul.b $e |- B = ( Base ` R ) $.
+    ringneglmul.t $e |- .x. = ( .r ` R ) $.
+    ringneglmul.n $e |- N = ( invg ` R ) $.
+    ringneglmul.r $e |- ( ph -> R e. Ring ) $.
+    ringneglmul.x $e |- ( ph -> X e. B ) $.
+    ringneglmul.y $e |- ( ph -> Y e. B ) $.
+    $( Negation of a product in a ring.  ( ~ mulneg1 analog.)  (Contributed by
+       Jeff Madsen, 19-Jun-2010.)  (Revised by Mario Carneiro, 2-Jul-2014.) $)
+    ringmneg1 $p |- ( ph -> ( ( N ` X ) .x. Y ) = ( N ` ( X .x. Y ) ) ) $=
+      ( cur cfv co crg wcel syl ringnegl wceq ringgrp ringidcl grpinvcl syl2anc
+      cgrp eqid ringass syl13anc oveq1d ringcl syl3anc 3eqtr3d ) ACNOZEOZFDPZGD
+      PZUOFGDPZDPZFEOZGDPUREOACQRZUOBRZFBRZGBRZUQUSUAKACUFRZUNBRZVBAVAVEKCUBSAV
+      AVFKBCUNHUNUGZUCSBCEUNHJUDUELMBCDUOFGHIUHUIAUPUTGDABCDUNEFHIVGJKLTUJABCDU
+      NEURHIVGJKAVAVCVDURBRKLMBCDFGHIUKULTUM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
