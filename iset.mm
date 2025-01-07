@@ -149077,6 +149077,20 @@ $)
       ULUNVAVKVQVLVQVFVGUOVRVSVPVSAVCBVBEVBFVOUPUQUR $.
   $}
 
+  ${
+    $d x y z R $.
+    $( Any ring is also a semiring.  (Contributed by Thierry Arnoux,
+       1-Apr-2018.) $)
+    ringsrg $p |- ( R e. Ring -> R e. SRing ) $=
+      ( vx vy vz crg wcel ccmn cmgp cfv cmnd cv cplusg co cmulr wceq wa cbs c0g
+      wral eqid csrg ringcmn ringmgp isring simp3bi ringlz ringrz jca ralrimiva
+      cgrp r19.26 sylanbrc issrg syl3anbrc ) AEFZAGFAHIZJFZBKZCKZDKZALIZMANIZMU
+      RUSVBMURUTVBMZVAMOURUSVAMUTVBMVCUSUTVBMVAMOPDAQIZSCVDSZARIZURVBMVFOZURVFV
+      BMVFOZPZPBVDSZAUAFAUBAUPUPTZUCUOVEBVDSZVIBVDSVJUOAUJFUQVLBCDVDVAAVBUPVDTZ
+      VKVATZVBTZUDUEUOVIBVDUOURVDFPVGVHVDAVBURVFVMVOVFTZUFVDAVBURVFVMVOVPUGUHUI
+      VEVIBVDUKULBCDVDVAAVBUPVFVMVKVNVOVPUMUN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
