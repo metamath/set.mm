@@ -149203,6 +149203,14 @@ $)
       NZFGUPDNZDNZUNEPFGEPZDNACQRZFBRZGBRZUPBRZUQUSUAKLMACUBRZUOBRZVDAVAVEKCUCS
       AVAVFKBCUOHUOUDZUESBCEUOHJUGUFBCDFGUPHIUHUIABCDUOEUNHIVGJKAVAVBVCUNBRKLMB
       CDFGHIUJUKTAURUTFDABCDUOEGHIVGJKMTULUM $.
+
+    $( Double negation of a product in a ring.  ( ~ mul2neg analog.)
+       (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+    ringm2neg $p |- ( ph -> ( ( N ` X ) .x. ( N ` Y ) ) = ( X .x. Y ) ) $=
+      ( cfv co cgrp wcel crg ringgrp syl2anc syl grpinvcl ringmneg1 fveq2d wceq
+      ringmneg2 ringcl syl3anc grpinvinv 3eqtrd ) AFENGENZDOFUKDOZENFGDOZENZENZ
+      UMABCDEFUKHIJKLACPQZGBQZUKBQACRQZUPKCSUAZMBCEGHJUBTUCAULUNEABCDEFGHIJKLMU
+      FUDAUPUMBQZUOUMUEUSAURFBQUQUTKLMBCDFGHIUGUHBCEUMHJUITUJ $.
   $}
 
 
