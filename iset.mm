@@ -149049,6 +149049,34 @@ $)
       RUAUSGVCVGUTVA $.
   $}
 
+  ${
+    rngz.b $e |- B = ( Base ` R ) $.
+    rngz.t $e |- .x. = ( .r ` R ) $.
+    rngz.z $e |- .0. = ( 0g ` R ) $.
+    $( The zero of a unital ring is a left-absorbing element.  (Contributed by
+       FL, 31-Aug-2009.) $)
+    ringlz $p |- ( ( R e. Ring /\ X e. B ) -> ( .0. .x. X ) = .0. ) $=
+      ( crg wcel wa co cplusg cfv wceq cgrp ringgrp grpidcl eqid adantr w3a syl
+      grplid syl2anc2 oveq1d simpr ringdir syldan ringcl syl3anc grprid syl2anc
+      3jca simpl eqcomd 3eqtr3d wb grplcan syl13anc mpbid ) BIJZDAJZKZEDCLZVDBM
+      NZLZVDEVELZOZVDEOZVCEEVELZDCLZVDVFVGVCVJEDCVAVJEOZVBVABPJZEAJZVLBQZABEFHR
+      ZAVEBEEFVESZHUCUDTUEVAVBVNVNVBUAVKVFOVCVNVNVBVAVNVBVAVMVNVOVPUBTZVRVAVBUF
+      ZUMAVEBCEEDFVQGUGUHVCVMVDAJZVDVGOVAVMVBVOTZVCVAVNVBVTVAVBUNVRVSABCEDFGUIU
+      JZVMVTKVGVDAVEBVDEFVQHUKUOULUPVCVMVTVNVTVHVIUQWAWBVRWBAVEBVDEVDFVQURUSUT
+      $.
+
+    $( The zero of a unital ring is a right-absorbing element.  (Contributed by
+       FL, 31-Aug-2009.) $)
+    ringrz $p |- ( ( R e. Ring /\ X e. B ) -> ( X .x. .0. ) = .0. ) $=
+      ( crg wcel wa co cplusg cfv wceq cgrp ringgrp grpidcl grplid adantr simpr
+      eqid syl2anc2 oveq2d w3a 3jca ringdi syldan ringcl mpd3an3 eqcomd syl2anc
+      syl 3eqtr3d wb grprcan syl13anc mpbid ) BIJZDAJZKZDECLZVBBMNZLZEVBVCLZOZV
+      BEOZVADEEVCLZCLZVBVDVEVAVHEDCUSVHEOZUTUSBPJZEAJZVJBQZABEFHRZAVCBEEFVCUBZH
+      SUCTUDUSUTUTVLVLUEVIVDOVAUTVLVLUSUTUAUSVLUTUSVKVLVMVNUMTZVPUFAVCBCDEEFVOG
+      UGUHVAVKVBAJZVBVEOUSVKUTVMTZUSUTVLVQVPABCDEFGUIUJZVKVQKVEVBAVCBVBEFVOHSUK
+      ULUNVAVKVQVLVQVFVGUOVRVSVPVSAVCBVBEVBFVOUPUQUR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
