@@ -92,8 +92,12 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
- 5-Jan-26 nfrexd    nfrexdw     consistent with nfraldw
- 5-Jan-26 nfrex     nfrexw      consistent with nfralw
+ 7-Jan-25 rhmdvdsr  [same]      Moved from TA's mathbox to main set.mm
+ 7-Jan-25 rhmopp    [same]      Moved from TA's mathbox to main set.mm
+ 7-Jan-25 elrhmunit [same]      Moved from TA's mathbox to main set.mm
+ 7-Jan-25 rhmunitinv  [same]    Moved from TA's mathbox to main set.mm
+ 5-Jan-25 nfrexd    nfrexdw     consistent with nfraldw
+ 5-Jan-25 nfrex     nfrexw      consistent with nfralw
  4-Jan-25 smorndom  smocdmdom
  4-Jan-25 ralimda   ---         obsolete - use ralimdaa instead
  3-Jan-25 srgi      srgdilem
