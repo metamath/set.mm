@@ -149108,6 +149108,27 @@ $)
       PEFGVDIQRSSSUOUJUKUQDMVBVCABUPCDGVDHTRUOUJULUREMVBVEABUPCEGVDHTRUHUI $.
   $}
 
+  ${
+    $d X a $.  $d .0. a $.  $d .1. a $.  $d .x. a $.  $d ph a $.
+    ringinvnzdiv.b $e |- B = ( Base ` R ) $.
+    ringinvnzdiv.t $e |- .x. = ( .r ` R ) $.
+    ringinvnzdiv.u $e |- .1. = ( 1r ` R ) $.
+    ringinvnzdiv.z $e |- .0. = ( 0g ` R ) $.
+    ringinvnzdiv.r $e |- ( ph -> R e. Ring ) $.
+    ringinvnzdiv.x $e |- ( ph -> X e. B ) $.
+    ringinvnzdiv.a $e |- ( ph -> E. a e. B ( a .x. X ) = .1. ) $.
+    $( In a unitary ring, a left invertible element is different from zero iff
+       ` .1. =/= .0. ` .  (Contributed by FL, 18-Apr-2010.)  (Revised by AV,
+       24-Aug-2021.) $)
+    ringinvnz1ne0 $p |- ( ph -> ( X =/= .0. <-> .1. =/= .0. ) ) $=
+      ( co wceq wcel wa oveq2 cv wb wi ringrz sylan eqeq12 biimpd ex mpan9 syl5
+      crg ringridm eqeq12d syl2anc ad2antrr impbid r19.29a necon3bid ) AFGEGAHU
+      AZFDPZEQZFGQZEGQZUBHBAUSBRZSZVASZVBVCVBUTUSGDPZQZVFVCFGUSDTVEVGGQZVAVHVCU
+      CZACUKRZVDVIMBCDUSGIJLUDUEVAVIVJVAVISVHVCUTEVGGUFUGUHUIUJVCFEDPZFGDPZQZVF
+      VBEGFDTAVNVBUCZVDVAAVKFBRZVOMNVKVPSZVNVBVQVLFVMGBCDEFIJKULBCDFGIJLUDUMUGU
+      NUOUJUPOUQUR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
