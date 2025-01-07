@@ -149145,6 +149145,40 @@ $)
       $.
   $}
 
+  ${
+    ringnegl.b $e |- B = ( Base ` R ) $.
+    ringnegl.t $e |- .x. = ( .r ` R ) $.
+    ringnegl.u $e |- .1. = ( 1r ` R ) $.
+    ringnegl.n $e |- N = ( invg ` R ) $.
+    ringnegl.r $e |- ( ph -> R e. Ring ) $.
+    ringnegl.x $e |- ( ph -> X e. B ) $.
+    $( Negation in a ring is the same as left multiplication by -1.
+       (Contributed by Jeff Madsen, 19-Jun-2010.)  (Revised by Mario Carneiro,
+       2-Jul-2014.) $)
+    ringnegl $p |- ( ph -> ( ( N ` .1. ) .x. X ) = ( N ` X ) ) $=
+      ( cfv co wceq wcel syl syl2anc eqid cplusg c0g crg ringidcl cgrp grpinvcl
+      ringgrp ringdir syl13anc grprinv oveq1d ringlz eqtrd ringlidm 3eqtr3rd wb
+      ringcl syl3anc grpinvid1 mpbird eqcomd ) AGFNZEFNZGDOZAVBVDPZGVDCUANZOZCU
+      BNZPZAEVCVFOZGDOZEGDOZVDVFOZVHVGACUCQZEBQZVCBQZGBQZVKVMPLAVNVOLBCEHJUDRZA
+      CUEQZVOVPAVNVSLCUGRZVRBCFEHKUFSZMBVFCDEVCGHVFTZIUHUIAVKVHGDOZVHAVJVHGDAVS
+      VOVJVHPVTVRBVFCFEVHHWBVHTZKUJSUKAVNVQWCVHPLMBCDGVHHIWDULSUMAVLGVDVFAVNVQV
+      LGPLMBCDEGHIJUNSUKUOAVSVQVDBQZVEVIUPVTMAVNVPVQWELWAMBCDVCGHIUQURBVFCFGVDV
+      HHWBWDKUSURUTVA $.
+
+    $( Negation in a ring is the same as right multiplication by -1.
+       (Contributed by Jeff Madsen, 19-Jun-2010.)  (Revised by Mario Carneiro,
+       2-Jul-2014.) $)
+    rngnegr $p |- ( ph -> ( X .x. ( N ` .1. ) ) = ( N ` X ) ) $=
+      ( cfv co wceq wcel syl syl2anc eqid cplusg c0g crg cgrp ringidcl grpinvcl
+      ringgrp ringdi syl13anc grplinv oveq2d ringrz ringridm 3eqtr3rd wb ringcl
+      eqtrd syl3anc grpinvid2 mpbird eqcomd ) AGFNZGEFNZDOZAVBVDPZVDGCUANZOZCUB
+      NZPZAGVCEVFOZDOZVDGEDOZVFOZVHVGACUCQZGBQZVCBQZEBQZVKVMPLMACUDQZVQVPAVNVRL
+      CUGRZAVNVQLBCEHJUERZBCFEHKUFSZVTBVFCDGVCEHVFTZIUHUIAVKGVHDOZVHAVJVHGDAVRV
+      QVJVHPVSVTBVFCFEVHHWBVHTZKUJSUKAVNVOWCVHPLMBCDGVHHIWDULSUQAVLGVDVFAVNVOVL
+      GPLMBCDEGHIJUMSUKUNAVRVOVDBQZVEVIUOVSMAVNVOVPWELMWABCDGVCHIUPURBVFCFGVDVH
+      HWBWDKUSURUTVA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
