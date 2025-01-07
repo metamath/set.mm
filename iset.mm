@@ -149127,6 +149127,22 @@ $)
       CZACUKRZVDVIMBCDUSGIJLUDUEVAVIVJVAVISVHVCUTEVGGUFUGUHUIUJVCFEDPZFGDPZQZVF
       VBEGFDTAVNVBUCZVDVAAVKFBRZVOMNVKVPSZVNVBVQVLFVMGBCDEFIJKULBCDFGIJLUDUMUGU
       NUOUJUPOUQUR $.
+
+    $d Y a $.
+    ringinvnzdiv.y $e |- ( ph -> Y e. B ) $.
+    $( In a unitary ring, a left invertible element is not a zero divisor.
+       (Contributed by FL, 18-Apr-2010.)  (Revised by Jeff Madsen,
+       18-Apr-2010.)  (Revised by AV, 24-Aug-2021.) $)
+    ringinvnzdiv $p |- ( ph -> ( ( X .x. Y ) = .0. <-> Y = .0. ) ) $=
+      ( co wceq adantr cv wrex wi wcel wa crg ringlidm syl2anc eqcomd ad3antrrr
+      oveq1 eqcoms adantl w3a simpr 3jca jca ringass syl eqtrd ringrz sylan9eqr
+      oveq2 sylan 3eqtrd exp31 rexlimdva mpd ex impbid ) AFGDRZHSZGHSZAIUAZFDRZ
+      ESZIBUBVLVMUCZPAVPVQIBAVNBUDZUEZVPVLVMVSVPUEZVLUEGEGDRZVNVKDRZHAGWASVRVPV
+      LAWAGACUFUDZGBUDZWAGSNQBCDEGJKLUGUHUIUJVTWAWBSVLVTWAVOGDRZWBVPWAWESZVSWFE
+      VOEVOGDUKULUMVTWCVRFBUDZWDUNZUEZWEWBSVSWIVPVSWCWHAWCVRNTVSVRWGWDAVRUOAWGV
+      ROTAWDVRQTUPUQTBCDVNFGJKURUSUTTVLVTWBVNHDRZHVKHVNDVCVSWJHSZVPAWCVRWKNBCDV
+      NHJKMVAVDTVBVEVFVGVHAVMVLVMAVKFHDRZHGHFDVCAWCWGWLHSNOBCDFHJKMVAUHVBVIVJ
+      $.
   $}
 
 
