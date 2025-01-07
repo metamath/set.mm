@@ -16703,6 +16703,7 @@ New usage of "fimacnvOLD" is discouraged (0 uses).
 New usage of "fimadmfoALT" is discouraged (0 uses).
 New usage of "findOLD" is discouraged (0 uses).
 New usage of "findcard2OLD" is discouraged (0 uses).
+New usage of "findcard3OLD" is discouraged (0 uses).
 New usage of "fineqvacALT" is discouraged (0 uses).
 New usage of "fldcALTV" is discouraged (0 uses).
 New usage of "fldcatALTV" is discouraged (1 uses).
@@ -20521,6 +20522,7 @@ Proof modification of "fimacnvOLD" is discouraged (78 steps).
 Proof modification of "fimadmfoALT" is discouraged (108 steps).
 Proof modification of "findOLD" is discouraged (70 steps).
 Proof modification of "findcard2OLD" is discouraged (535 steps).
+Proof modification of "findcard3OLD" is discouraged (488 steps).
 Proof modification of "fineqvacALT" is discouraged (40 steps).
 Proof modification of "fldidomOLD" is discouraged (34 steps).
 Proof modification of "fncoOLD" is discouraged (95 steps).
