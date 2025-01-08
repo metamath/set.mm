@@ -15379,6 +15379,7 @@ New usage of "cbvreuwOLD" is discouraged (0 uses).
 New usage of "cbvrex" is discouraged (4 uses).
 New usage of "cbvrex2v" is discouraged (0 uses).
 New usage of "cbvrexcsf" is discouraged (1 uses).
+New usage of "cbvrexdva2OLD" is discouraged (0 uses).
 New usage of "cbvrexf" is discouraged (1 uses).
 New usage of "cbvrexsv" is discouraged (1 uses).
 New usage of "cbvrexv" is discouraged (3 uses).
@@ -20071,6 +20072,7 @@ Proof modification of "cbvopabvOLD" is discouraged (20 steps).
 Proof modification of "cbvralfwOLD" is discouraged (139 steps).
 Proof modification of "cbvreuvwOLD" is discouraged (13 steps).
 Proof modification of "cbvreuwOLD" is discouraged (145 steps).
+Proof modification of "cbvrexdva2OLD" is discouraged (109 steps).
 Proof modification of "cbvriotavwOLD" is discouraged (13 steps).
 Proof modification of "cbvrmowOLD" is discouraged (58 steps).
 Proof modification of "ccat2s1fstOLD" is discouraged (43 steps).
