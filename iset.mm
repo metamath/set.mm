@@ -149379,6 +149379,15 @@ $)
       PQZHVCIBIUBZVDVHMLZNZOZPQVGRKRIUCVHBSZVHBVKVFPVLUDVLVJVEVDVLVICVLVIBMLZCV
       HBMUEGUFUGUHUIBEUJZVCBRJVDTJZVERJZVGRJVNVOVCMVDUOSVOUKULUPVCCRJVPVCCVMRGB
       MEUKUMUNCRUQURVDVEBRRTUSUTVAVB $.
+
+    opprmulfval.4 $e |- .xb = ( .r ` O ) $.
+    $( Value of the multiplication operation of an opposite ring.  (Contributed
+       by Mario Carneiro, 1-Dec-2014.) $)
+    opprmulfvalg $p |- ( R e. V -> .xb = tpos .x. ) $=
+      ( wcel cmulr cfv ctpos cnx cop csts co cvv mulrslid opprvalg wceq tposexg
+      fveq2d slotex eqeltrid syl setsslid mpdan eqtr4d eqtrid ) BFKZCELMZDNZJUL
+      UMBOLMUNPQRZLMZUNULEUOLABDEFGHIUAUDULUNSKZUNUPUBULDSKUQULDBLMSHBLFTUEUFDS
+      UCUGFUNLSBTUHUIUJUK $.
   $}
 
 
