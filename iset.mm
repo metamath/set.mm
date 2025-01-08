@@ -149347,6 +149347,25 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Opposite ring
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c oppR $. $( Opposite ring $)
+
+  $( The opposite ring operation. $)
+  coppr $a class oppR $.
+
+  $( Define an opposite ring, which is the same as the original ring but with
+     multiplication written the other way around.  (Contributed by Mario
+     Carneiro, 1-Dec-2014.) $)
+  df-oppr $a |- oppR = ( f e. _V |-> ( f sSet
+    <. ( .r ` ndx ) , tpos ( .r ` f ) >. ) ) $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -166595,6 +166614,9 @@ htmldef "CRing" as
 htmldef "1r" as "<IMG SRC='_1r.gif' WIDTH=13 HEIGHT=19 ALT=' 1r' TITLE='1r'>";
   althtmldef "1r" as "1<SUB>r</SUB>";
   latexdef "1r" as "1_\mathrm{r}";
+htmldef "oppR" as "opp<sub><i>r</i></sub>";
+  althtmldef "oppR" as "opp<sub><i>r</i></sub>";
+  latexdef "oppR" as "\mathrm{opp}_r";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
