@@ -149364,6 +149364,23 @@ $)
   df-oppr $a |- oppR = ( f e. _V |-> ( f sSet
     <. ( .r ` ndx ) , tpos ( .r ` f ) >. ) ) $.
 
+  ${
+    $d x R $.  $d x B $.  $d x .x. $.  $d x X $.  $d x Y $.
+    opprval.1 $e |- B = ( Base ` R ) $.
+    opprval.2 $e |- .x. = ( .r ` R ) $.
+    opprval.3 $e |- O = ( oppR ` R ) $.
+    $( Value of the opposite ring.  (Contributed by Mario Carneiro,
+       1-Dec-2014.) $)
+    opprvalg $p |- ( R e. V
+        -> O = ( R sSet <. ( .r ` ndx ) , tpos .x. >. ) ) $=
+      ( vx wcel coppr cfv cmulr ctpos cop csts co cvv wceq cn cnx cv df-oppr id
+      fveq2 eqtr4di tposeqd opeq2d oveq12d elex mulrslid simpri slotex eqeltrid
+      cslot a1i tposexg syl setsex syl3anc fvmptd3 eqtrid ) BEJZDBKLBUAMLZCNZOZ
+      PQZHVCIBIUBZVDVHMLZNZOZPQVGRKRIUCVHBSZVHBVKVFPVLUDVLVJVEVDVLVICVLVIBMLZCV
+      HBMUEGUFUGUHUIBEUJZVCBRJVDTJZVERJZVGRJVNVOVCMVDUOSVOUKULUPVCCRJVPVCCVMRGB
+      MEUKUMUNCRUQURVDVEBRRTUSUTVAVB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
