@@ -48444,8 +48444,8 @@ $)
     frn sstrd ) ABCDZCCEZCFZGZABGZTCHCUCIABCJCKLTUAAIZUBBIUCUDITUAAMUEABCNUAAOL
     ABCRUAAUBBPQS $.
 
-  $( A function with bounded domain and range is a set.  This version is proven
-     without the Axiom of Replacement.  (Contributed by Mario Carneiro,
+  $( A function with bounded domain and codomain is a set.  This version is
+     proven without the Axiom of Replacement.  (Contributed by Mario Carneiro,
      24-Jun-2015.) $)
   fex2 $p |- ( ( F : A --> B /\ A e. V /\ B e. W ) -> F e. _V ) $=
     ( wf wcel w3a cxp cvv xpexg 3adant1 wss fssxp 3ad2ant1 ssexd ) ABCFZADGZBEG
@@ -49106,8 +49106,8 @@ $)
     EACIUGUDCJZUAUEQCKUHUEUAAUDCLMNROPABCSBAUBST $.
 
   $( A relation is a one-to-one onto function iff its converse is a one-to-one
-     onto function with domain and range interchanged.  (Contributed by NM,
-     8-Dec-2003.) $)
+     onto function with domain and codomain/range interchanged.  (Contributed
+     by NM, 8-Dec-2003.) $)
   f1ocnvb $p |- ( Rel F ->
                 ( F : A -1-1-onto-> B <-> `' F : B -1-1-onto-> A ) ) $=
     ( wrel wf1o ccnv f1ocnv wceq wb dfrel2 f1oeq1 sylbi syl5ib impbid2 ) CDZABC
@@ -58576,7 +58576,7 @@ $)
       HZCIZAJZEZUKFZBGZHABCKULBUKKUFUJUMUOUFUGUMUIACLMUFUGUIUOUFUGHZUOUIUPUNUHB
       UPCNZDZUNUHGUGURUFUGUQAACQOPCRSUAUBUCUDABCTULBUKTUE $.
 
-    $( The domain and range of a transposition.  (Contributed by NM,
+    $( The domain and codomain of a transposition.  (Contributed by NM,
        10-Sep-2015.) $)
     tposf2 $p |- ( Rel A -> ( F : A --> B -> tpos F : `' A --> B ) ) $=
       ( wrel wf ccnv ctpos crn wss wfo wfn ffn dffn4 sylib tposfo2 syl5 imp fof
@@ -58602,14 +58602,14 @@ $)
       ( wrel wf1 wfo wa ccnv ctpos wf1o tposf12 tposfo2 anim12d df-f1o 3imtr4g
       ) ADZABCEZABCFZGAHZBCIZEZSBTFZGABCJSBTJPQUARUBABCKABCLMABCNSBTNO $.
 
-    $( The domain and range of a transposition.  (Contributed by NM,
+    $( The domain and codomain/range of a transposition.  (Contributed by NM,
        10-Sep-2015.) $)
     tposfo $p |- ( F : ( A X. B ) -onto-> C ->
               tpos F : ( B X. A ) -onto-> C ) $=
       ( cxp wfo ccnv ctpos wrel wi relxp tposfo2 ax-mp wceq cnvxp foeq2 sylib
       wb ) ABEZCDFZSGZCDHZFZBAEZCUBFZSITUCJABKSCDLMUAUDNUCUERABOUAUDCUBPMQ $.
 
-    $( The domain and range of a transposition.  (Contributed by NM,
+    $( The domain and codomain of a transposition.  (Contributed by NM,
        10-Sep-2015.) $)
     tposf $p |- ( F : ( A X. B ) --> C -> tpos F : ( B X. A ) --> C ) $=
       ( cxp wf ccnv ctpos wrel wi relxp tposf2 ax-mp cnvxp feq2i sylib ) ABEZCD
@@ -63145,7 +63145,7 @@ $)
       BVFUTBVFUABUSEUBZUCBCUDZVCVFEUTVBUSFUEBUSEUFZUHUGUIUJAEITZBHUKUSHTUTITZAV
       LBHKULVLVMBUSHBUTIVIUMVJEUTIVKUNURUOLMBUSVAEUPUQ $.
 
-    $( The domain and range of the function ` F ` .  (Contributed by Mario
+    $( The domain and codomain of the function ` F ` .  (Contributed by Mario
        Carneiro, 23-Dec-2016.) $)
     qliftf $p |- ( ph -> ( Fun F <-> F : ( X /. R ) --> Y ) ) $=
       ( vy wfun cv cec cmpt crn wf cqs wceq qliftlem fliftf wrex cab df-qs eqid
@@ -97225,7 +97225,7 @@ $)
       ( vj cv cle wbr cz crab cuz wceq breq1 rabbidv df-uz zex rabex fvmpt ) CB
       CDZADZEFZAGHBREFZAGHGIQBJSTAGQBREKLCAMTAGNOP $.
 
-    $( The domain and range of the upper integers function.  (Contributed by
+    $( The domain and codomain of the upper integers function.  (Contributed by
        Scott Fenton, 8-Aug-2013.)  (Revised by Mario Carneiro, 3-Nov-2013.) $)
     uzf $p |- ZZ>= : ZZ --> ~P ZZ $=
       ( vj vk cv cle wbr cz crab cpw wcel wral cuz wss ssrab2 elpw2 mpbir rgenw
@@ -118714,8 +118714,8 @@ $)
 
   ${
     $d x y z $.
-    $( The limit relation is function-like, and with range the complex numbers.
-       (Contributed by Mario Carneiro, 31-Jan-2014.) $)
+    $( The limit relation is function-like, and with codomian the complex
+       numbers.  (Contributed by Mario Carneiro, 31-Jan-2014.) $)
     fclim $p |- ~~> : dom ~~> --> CC $=
       ( vx vy vz cli cdm cc wf wfn crn wss wfun wrel cv wbr wa weq wal mpbir2an
       ax-gen wcel climrel climuni dffun2 funfn mpbi wex vex elrn climcl exlimiv
@@ -156598,8 +156598,8 @@ $)
       UBUDUCEASGTUEZHTSFASZNZVAUSAIJZUQUTVGUFURVHUQABDUGUOUQURUHFHGEACDUIUJUSVF
       VAURVFUQURVEFHATURVCAMVDTMVEGEABVCVDDUKULUMUOUNUP $.
 
-    $( The set of continuous functions is expanded when the range is expanded.
-       (Contributed by Mario Carneiro, 30-Aug-2014.) $)
+    $( The set of continuous functions is expanded when the codomain is
+       expanded.  (Contributed by Mario Carneiro, 30-Aug-2014.) $)
     cncfss $p |- ( ( B C_ C /\ C C_ CC ) -> ( A -cn-> B ) C_ ( A -cn-> C ) ) $=
       ( vf wss cc wa ccncf co cv wcel wf cncff adantl simpll wb cncfcdm adantll
       fssd mpbird ex ssrdv ) BCEZCFEZGZDABHIZACHIZUEDJZUFKZUHUGKZUEUIGZUJACUHLZ
