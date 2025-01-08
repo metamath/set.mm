@@ -148538,6 +148538,519 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties of unital rings
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Ring $.
+  $c CRing $.
+
+  $( Extend class notation with class of all (unital) rings. $)
+  crg $a class Ring $.
+
+  $( Extend class notation with class of all (unital) commutative rings. $)
+  ccrg $a class CRing $.
+
+  ${
+    $d f p r t x y z $.
+    $( Define class of all (unital) rings.  A unital ring is a set equipped
+       with two everywhere-defined internal operations, whose first one is an
+       additive group structure and the second one is a multiplicative monoid
+       structure, and where the addition is left- and right-distributive for
+       the multiplication.  Definition 1 in [BourbakiAlg1] p. 92 or definition
+       of a ring with identity in part Preliminaries of [Roman] p. 19.  So that
+       the additive structure must be abelian (see ~ ringcom ), care must be
+       taken that in the case of a non-unital ring, the commutativity of
+       addition must be postulated and cannot be proved from the other
+       conditions.  (Contributed by NM, 18-Oct-2012.)  (Revised by Mario
+       Carneiro, 27-Dec-2014.) $)
+    df-ring $a |- Ring = { f e. Grp | ( ( mulGrp ` f ) e. Mnd /\
+        [. ( Base ` f ) / r ]. [. ( +g ` f ) / p ]. [. ( .r ` f ) / t ].
+        A. x e. r A. y e. r A. z e. r
+           ( ( x t ( y p z ) ) = ( ( x t y ) p ( x t z ) )
+            /\ ( ( x p y ) t z ) = ( ( x t z ) p ( y t z ) ) ) ) } $.
+
+    $( Define class of all commutative rings.  (Contributed by Mario Carneiro,
+       7-Jan-2015.) $)
+    df-cring $a |- CRing = { f e. Ring | ( mulGrp ` f ) e. CMnd } $.
+  $}
+
+  ${
+    $d b p r t x y z B $.  $d b p r t x y z .+ $.  $d b p r t x y z R $.
+    $d r G $.  $d b p r t x y z .x. $.
+    isring.b $e |- B = ( Base ` R ) $.
+    isring.g $e |- G = ( mulGrp ` R ) $.
+    isring.p $e |- .+ = ( +g ` R ) $.
+    isring.t $e |- .x. = ( .r ` R ) $.
+    $( The predicate "is a (unital) ring".  Definition of ring with unit in
+       [Schechter] p. 187.  (Contributed by NM, 18-Oct-2012.)  (Revised by
+       Mario Carneiro, 6-Jan-2015.) $)
+    isring $p |- ( R e. Ring <-> ( R e. Grp /\ G e. Mnd
+      /\ A. x e. B A. y e. B A. z e. B
+       ( ( x .x. ( y .+ z ) ) = ( ( x .x. y ) .+ ( x .x. z ) )
+      /\ ( ( x .+ y ) .x. z ) = ( ( x .x. z ) .+ ( y .x. z ) ) ) ) ) $=
+      ( vr wcel cv co wceq wa cfv cvv vp vt vb crg cgrp cmnd wral w3a cmgp wsbc
+      cmulr cplusg cbs fveq2 eqtr4di eleq1d wfn basfn vex funfvex a1i plusgslid
+      funfni mp2an slotex elv simpl fveq2d mulrslid simpll simpllr simpr simplr
+      eqidd oveqd oveq123d eqeq12d anbi12d sbcied2 df-ring elrab2 3anass bitr4i
+      raleqbidv ) FUDNFUENZHUFNZAOZBOZCOZEPZGPZWGWHGPZWGWIGPZEPZQZWGWHEPZWIGPZW
+      MWHWIGPZEPZQZRZCDUGZBDUGZADUGZRZRWEWFXDUHMOZUISZUFNZWGWHWIUAOZPZUBOZPZWGW
+      HXKPZWGWIXKPZXIPZQZWGWHXIPZWIXKPZXNWHWIXKPZXIPZQZRZCUCOZUGZBYCUGZAYCUGZUB
+      XFUKSZUJZUAXFULSZUJZUCXFUMSZUJZRXEMFUEUDXFFQZXHWFYLXDYMXGHUFYMXGFUISHXFFU
+      IUNJUOUPYMYJXDUCYKDTYKTNZYMUMTUQXFTNYNURMUSYNTXFUMXFUMUTVCVDVAYMYKFUMSDXF
+      FUMUNIUOYMYCDQZRZYHXDUAYIETYITNZYPYQMXFULTVBVEVFVAYPYIFULSEYPXFFULYMYOVGV
+      HKUOYPXIEQZRZYFXDUBYGGTYGTNZYSYTMXFUKTVIVEVFVAYSYGFUKSGYSXFFUKYMYOYRVJVHL
+      UOYSXKGQZRZYEXCAYCDYMYOYRUUAVKZUUBYDXBBYCDUUCUUBYBXACYCDUUCUUBXPWOYAWTUUB
+      XLWKXOWNUUBWGWGXJWJXKGYSUUAVLZUUBWGVNUUBXIEWHWIYPYRUUAVMZVOVPUUBXMWLXNWMX
+      IEUUEUUBXKGWGWHUUDVOUUBXKGWGWIUUDVOZVPVQUUBXRWQXTWSUUBXQWPWIWIXKGUUDUUBXI
+      EWGWHUUEVOUUBWIVNVPUUBXNWMXSWRXIEUUEUUFUUBXKGWHWIUUDVOVPVQVRWDWDWDVSVSVSV
+      RABCUBMUCUAVTWAWEWFXDWBWC $.
+  $}
+
+  ${
+    $d r G $.  $d r x y z R $.
+    $( A ring is a group.  (Contributed by NM, 15-Sep-2011.) $)
+    ringgrp $p |- ( R e. Ring -> R e. Grp ) $=
+      ( vx vy vz crg wcel cgrp cmgp cfv cmnd cv cplusg cmulr wceq cbs wral eqid
+      co wa isring simp1bi ) AEFAGFAHIZJFBKZCKZDKZALIZRAMIZRUCUDUGRUCUEUGRZUFRN
+      UCUDUFRUEUGRUHUDUEUGRUFRNSDAOIZPCUIPBUIPBCDUIUFAUGUBUIQUBQUFQUGQTUA $.
+
+    ringmgp.g $e |- G = ( mulGrp ` R ) $.
+    $( A ring is a monoid under multiplication.  (Contributed by Mario
+       Carneiro, 6-Jan-2015.) $)
+    ringmgp $p |- ( R e. Ring -> G e. Mnd ) $=
+      ( vx vy vz crg wcel cgrp cmnd cv cplusg cfv co cmulr wceq cbs wral eqid
+      wa isring simp2bi ) AGHAIHBJHDKZEKZFKZALMZNAOMZNUCUDUGNUCUEUGNZUFNPUCUDUF
+      NUEUGNUHUDUEUGNUFNPTFAQMZREUIRDUIRDEFUIUFAUGBUISCUFSUGSUAUB $.
+
+    $( A commutative ring is a ring whose multiplication is a commutative
+       monoid.  (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    iscrng $p |- ( R e. CRing <-> ( R e. Ring /\ G e. CMnd ) ) $=
+      ( vr cv cmgp cfv ccmn wcel ccrg wceq fveq2 eqtr4di eleq1d df-cring elrab2
+      crg ) DEZFGZHIBHIDAQJRAKZSBHTSAFGBRAFLCMNDOP $.
+
+    $( A commutative ring's multiplication operation is commutative.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    crngmgp $p |- ( R e. CRing -> G e. CMnd ) $=
+      ( ccrg wcel crg ccmn iscrng simprbi ) ADEAFEBGEABCHI $.
+  $}
+
+  ${
+    ringgrpd.1 $e |- ( ph -> R e. Ring ) $.
+    $( A ring is a group.  (Contributed by SN, 16-May-2024.) $)
+    ringgrpd $p |- ( ph -> R e. Grp ) $=
+      ( crg wcel cgrp ringgrp syl ) ABDEBFECBGH $.
+  $}
+
+  $( A ring is a monoid under addition.  (Contributed by Mario Carneiro,
+     7-Jan-2015.) $)
+  ringmnd $p |- ( R e. Ring -> R e. Mnd ) $=
+    ( crg wcel ringgrp grpmndd ) ABCAADE $.
+
+  $( A ring is a magma.  (Contributed by AV, 31-Jan-2020.) $)
+  ringmgm $p |- ( R e. Ring -> R e. Mgm ) $=
+    ( crg wcel cmnd cmgm ringmnd mndmgm syl ) ABCADCAECAFAGH $.
+
+  $( A commutative ring is a ring.  (Contributed by Mario Carneiro,
+     7-Jan-2015.) $)
+  crngring $p |- ( R e. CRing -> R e. Ring ) $=
+    ( ccrg wcel crg cmgp cfv ccmn eqid iscrng simplbi ) ABCADCAEFZGCAKKHIJ $.
+
+  ${
+    crngringd.1 $e |- ( ph -> R e. CRing ) $.
+    $( A commutative ring is a ring.  (Contributed by SN, 16-May-2024.) $)
+    crngringd $p |- ( ph -> R e. Ring ) $=
+      ( ccrg wcel crg crngring syl ) ABDEBFECBGH $.
+
+    $( A commutative ring is a group.  (Contributed by SN, 16-May-2024.) $)
+    crnggrpd $p |- ( ph -> R e. Grp ) $=
+      ( crngringd ringgrpd ) ABABCDE $.
+  $}
+
+  $( Restricted functionality of the multiplicative group on rings.
+     (Contributed by Mario Carneiro, 11-Mar-2015.) $)
+  mgpf $p |- ( mulGrp |` Ring ) : Ring --> Mnd $=
+    ( va crg cmnd cmgp cres wf wfn cv cfv wcel wral cvv wss fnmgp fnssres mp2an
+    ssv fvres eqid ringmgp eqeltrd rgen ffnfv mpbir2an ) BCDBEZFUEBGZAHZUEIZCJZ
+    ABKDLGBLMUFNBQLBDOPUIABUGBJUHUGDIZCUGBDRUGUJUJSTUAUBABCUEUCUD $.
+
+  ${
+    $d x y z B $.  $d x y z R $.  $d x y z .x. $.  $d x y z X $.  $d x y z Y $.
+    $d x y z .+ $.  $d x y z Z $.
+    ringdilem.b $e |- B = ( Base ` R ) $.
+    ringdilem.p $e |- .+ = ( +g ` R ) $.
+    ringdilem.t $e |- .x. = ( .r ` R ) $.
+    $( Properties of a unital ring.  (Contributed by NM, 26-Aug-2011.)
+       (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    ringdilem $p |- ( ( R e. Ring /\ ( X e. B /\ Y e. B /\ Z e. B ) )
+           -> ( ( X .x. ( Y .+ Z ) ) = ( ( X .x. Y ) .+ ( X .x. Z ) )
+                /\ ( ( X .+ Y ) .x. Z ) = ( ( X .x. Z ) .+ ( Y .x. Z ) ) ) ) $=
+      ( vx vy vz wcel wa co wceq cv wral rsp crg w3a cgrp cmgp cmnd eqid isring
+      cfv simp3bi adantr simpr1 sylc simpr2 simpr3 simpld caovdig caovdirg jca
+      simprd ) CUANZEANFANGANUBOEFGBPDPEFDPEGDPZBPQEFBPGDPVAFGDPBPQUTKLMEFGABDB
+      AUTKRZANZLRZANZMRZANZUBZOZVBVDVFBPDPVBVDDPVBVFDPZBPQZVBVDBPVFDPVJVDVFDPBP
+      QZVIVKVLOZMASZVGVMVIVNLASZVEVNVIVOKASZVCVOUTVPVHUTCUCNCUDUHZUENVPKLMABCDV
+      QHVQUFIJUGUIUJUTVCVEVGUKVOKATULUTVCVEVGUMVNLATULUTVCVEVGUNVMMATULZUOUPUTK
+      LMEFGABDBAVIVKVLVRUSUQUR $.
+  $}
+
+  ${
+    ringcl.b $e |- B = ( Base ` R ) $.
+    ringcl.t $e |- .x. = ( .r ` R ) $.
+    $( Closure of the multiplication operation of a ring.  (Contributed by NM,
+       26-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    ringcl $p |- ( ( R e. Ring /\ X e. B /\ Y e. B ) -> ( X .x. Y ) e. B ) $=
+      ( crg wcel w3a co cmgp cfv cplusg cbs eqid 3ad2ant1 wb eleq2d mpbid simp2
+      cmnd ringmgp mgpbasg simp3 mndcl syl3anc mgpplusgg oveqd eleq12d mpbird )
+      BHIZDAIZEAIZJZDECKZAIZDEBLMZNMZKZUROMZIZUOURUBIZDVAIZEVAIZVBULUMVCUNBURUR
+      PZUCQUOUMVDULUMUNUAULUMUMVDRUNULAVADABURHVFFUDZSQTUOUNVEULUMUNUEULUMUNVER
+      UNULAVAEVGSQTVAUSURDEVAPUSPUFUGULUMUQVBRUNULUPUTAVAULCUSDEBCURHVFGUHUIVGU
+      JQUK $.
+
+    $( A commutative ring's multiplication operation is commutative.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    crngcom $p |- ( ( R e. CRing /\ X e. B /\ Y e. B ) ->
+      ( X .x. Y ) = ( Y .x. X ) ) $=
+      ( ccrg wcel w3a cmgp cfv cplusg co ccmn wceq eqid 3ad2ant1 eleqtrd oveqd
+      cbs crngmgp simp2 mgpbasg simp3 cmncom syl3anc mgpplusgg 3eqtr4d ) BHIZDA
+      IZEAIZJZDEBKLZMLZNZEDUONZDECNEDCNUMUNOIZDUNUALZIEUSIUPUQPUJUKURULBUNUNQZU
+      BRUMDAUSUJUKULUCUJUKAUSPULABUNHUTFUDRZSUMEAUSUJUKULUEVASUSUOUNDEUSQUOQUFU
+      GUMCUODEUJUKCUOPULBCUNHUTGUHRZTUMCUOEDVBTUI $.
+
+    $d x y B $.  $d x y R $.
+    $( A commutative ring is a ring whose multiplication is a commutative
+       monoid.  (Contributed by Mario Carneiro, 15-Jun-2015.) $)
+    iscrng2 $p |- ( R e. CRing <-> ( R e. Ring /\
+        A. x e. B A. y e. B ( x .x. y ) = ( y .x. x ) ) ) $=
+      ( ccrg wcel cvv crg cv co wceq wral wa elex cfv eqid oveqd cmgp ccmn cmnd
+      adantr iscrng wb ringmgp cplusg iscmn mgpbasg mgpplusgg eqeq12d raleqbidv
+      cbs anbi2d bitr4id baibd sylan2 pm5.32da bitrid pm5.21nii ) DHIZDJIZDKIZA
+      LZBLZEMZVFVEEMZNZBCOZACOZPZDHQVDVCVKDKQUDVBVDDUARZUBIZPVCVLDVMVMSZUEVCVDV
+      NVKVDVCVMUCIZVNVKUFDVMVOUGVCVNVPVKVCVNVPVEVFVMUHRZMZVFVEVQMZNZBVMUNRZOZAW
+      AOZPVPVKPABWAVQVMWASVQSUIVCVKWCVPVCVJWBACWACDVMJVOFUJZVCVIVTBCWAWDVCVGVRV
+      HVSVCEVQVEVFDEVMJVOGUKZTVCEVQVFVEWETULUMUMUOUPUQURUSUTVA $.
+
+    $( Associative law for multiplication in a ring.  (Contributed by NM,
+       27-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    ringass $p |- ( ( R e. Ring /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                      ( ( X .x. Y ) .x. Z ) = ( X .x. ( Y .x. Z ) ) ) $=
+      ( crg wcel w3a cfv co wceq eqid adantr eleqtrd oveqd eqidd oveq123d cmgp
+      wa cplusg cmnd cbs ringmgp simpr1 simpr2 simpr3 mndass syl13anc mgpplusgg
+      mgpbasg 3eqtr4d ) BIJZDAJZEAJZFAJZKZUBZDEBUALZUCLZMZFVBMZDEFVBMZVBMZDECMZ
+      FCMDEFCMZCMUTVAUDJZDVAUELZJEVJJFVJJVDVFNUOVIUSBVAVAOZUFPUTDAVJUOUPUQURUGU
+      OAVJNUSABVAIVKGUMPZQUTEAVJUOUPUQURUHVLQUTFAVJUOUPUQURUIVLQVJVBVADEFVJOVBO
+      UJUKUTVGVCFFCVBUOCVBNUSBCVAIVKHULPZUTCVBDEVMRUTFSTUTDDVHVECVBVMUTDSUTCVBE
+      FVMRTUN $.
+
+    $d u x B $.  $d u x R $.  $d u x .x. $.
+    $( The unit element of a ring is unique.  (Contributed by NM, 27-Aug-2011.)
+       (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    ringideu $p |- ( R e. Ring ->
+                E! u e. B A. x e. B ( ( u .x. x ) = x /\ ( x .x. u ) = x ) ) $=
+      ( crg wcel cv co wceq wa wral wreu cfv eqid syl oveqd eqeq1d cmgp ringmgp
+      cplusg cmnd mndideu mgpbasg mgpplusgg anbi12d raleqbidv reubidv wb reueq1
+      cbs bitrd mpbird ) DHIZBJZAJZEKZURLZURUQEKZURLZMZACNZBCOZUQURDUAPZUCPZKZU
+      RLZURUQVGKZURLZMZAVFUMPZNZBVMOZUPVFUDIVODVFVFQZUBABVMVGVFVMQVGQUERUPVEVNB
+      COZVOUPVDVNBCUPVCVLACVMCDVFHVPFUFZUPUTVIVBVKUPUSVHURUPEVGUQURDEVFHVPGUGZS
+      TUPVAVJURUPEVGURUQVSSTUHUIUJUPCVMLVQVOUKVRVNBCVMULRUNUO $.
+  $}
+
+  ${
+    ringdi.b $e |- B = ( Base ` R ) $.
+    ringdi.p $e |- .+ = ( +g ` R ) $.
+    ringdi.t $e |- .x. = ( .r ` R ) $.
+    $( Distributive law for the multiplication operation of a ring
+       (left-distributivity).  (Contributed by Steve Rodriguez, 9-Sep-2007.) $)
+    ringdi $p |- ( ( R e. Ring /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                     ( X .x. ( Y .+ Z ) ) = ( ( X .x. Y ) .+ ( X .x. Z ) ) ) $=
+      ( crg wcel w3a wa co wceq ringdilem simpld ) CKLEALFALGALMNEFGBODOEFDOEGD
+      OZBOPEFBOGDOSFGDOBOPABCDEFGHIJQR $.
+
+    $( Distributive law for the multiplication operation of a ring
+       (right-distributivity).  (Contributed by Steve Rodriguez,
+       9-Sep-2007.) $)
+    ringdir $p |- ( ( R e. Ring /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                     ( ( X .+ Y ) .x. Z ) = ( ( X .x. Z ) .+ ( Y .x. Z ) ) ) $=
+      ( crg wcel w3a wa co wceq ringdilem simprd ) CKLEALFALGALMNEFGBODOEFDOEGD
+      OZBOPEFBOGDOSFGDOBOPABCDEFGHIJQR $.
+  $}
+
+  ${
+    ringidcl.b $e |- B = ( Base ` R ) $.
+    ringidcl.u $e |- .1. = ( 1r ` R ) $.
+    $( The unit element of a ring belongs to the base set of the ring.
+       (Contributed by NM, 27-Aug-2011.)  (Revised by Mario Carneiro,
+       27-Dec-2014.) $)
+    ringidcl $p |- ( R e. Ring -> .1. e. B ) $=
+      ( crg wcel cmgp cfv c0g cbs cmnd eqid ringmgp mndidcl syl mgpbasg 3eltr4d
+      ringidvalg ) BFGZBHIZJIZUAKIZCATUALGUBUCGBUAUAMZNUCUAUBUCMUBMOPBCUAFUDESA
+      BUAFUDDQR $.
+  $}
+
+  ${
+    ring0cl.b $e |- B = ( Base ` R ) $.
+    ring0cl.z $e |- .0. = ( 0g ` R ) $.
+    $( The zero element of a ring belongs to its base set.  (Contributed by
+       Mario Carneiro, 12-Jan-2014.) $)
+    ring0cl $p |- ( R e. Ring -> .0. e. B ) $=
+      ( crg wcel cgrp ringgrp grpidcl syl ) BFGBHGCAGBIABCDEJK $.
+  $}
+
+  ${
+    $d x y B $.  $d x y I $.  $d x y R $.  $d x y .x. $.  $d x y .1. $.
+    rngidm.b $e |- B = ( Base ` R ) $.
+    rngidm.t $e |- .x. = ( .r ` R ) $.
+    rngidm.u $e |- .1. = ( 1r ` R ) $.
+    $( Lemma for ~ ringlidm and ~ ringridm .  (Contributed by NM, 15-Sep-2011.)
+       (Revised by Mario Carneiro, 27-Dec-2014.) $)
+    ringidmlem $p |- ( ( R e. Ring /\ X e. B )
+           -> ( ( .1. .x. X ) = X /\ ( X .x. .1. ) = X ) ) $=
+      ( crg wcel wa co wceq cmgp cfv c0g eqid adantr oveq123d eqeq1d cplusg cbs
+      ringmgp simpr mgpbasg eleqtrd mndlrid syl2an2r mgpplusgg ringidvalg eqidd
+      cmnd anbi12d mpbird ) BIJZEAJZKZDECLZEMZEDCLZEMZKBNOZPOZEVBUAOZLZEMZEVCVD
+      LZEMZKZUOVBULJUPEVBUBOZJVIBVBVBQZUCUQEAVJUOUPUDUOAVJMUPABVBIVKFUERUFVJVDV
+      BEVCVJQVDQVCQUGUHUQUSVFVAVHUQURVEEUQDVCEECVDUOCVDMUPBCVBIVKGUIRZUODVCMUPB
+      DVBIVKHUJRZUQEUKZSTUQUTVGEUQEEDVCCVDVLVNVMSTUMUN $.
+
+    $( The unit element of a ring is a left multiplicative identity.
+       (Contributed by NM, 15-Sep-2011.) $)
+    ringlidm $p |- ( ( R e. Ring /\ X e. B ) -> ( .1. .x. X ) = X ) $=
+      ( crg wcel wa co wceq ringidmlem simpld ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
+      $.
+
+    $( The unit element of a ring is a right multiplicative identity.
+       (Contributed by NM, 15-Sep-2011.) $)
+    ringridm $p |- ( ( R e. Ring /\ X e. B ) -> ( X .x. .1. ) = X ) $=
+      ( crg wcel wa co wceq ringidmlem simprd ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
+      $.
+
+    $( Properties showing that an element ` I ` is the unity element of a ring.
+       (Contributed by NM, 7-Aug-2013.) $)
+    isringid $p |- ( R e. Ring
+      -> ( ( I e. B /\ A. x e. B ( ( I .x. x ) = x /\ ( x .x. I ) = x ) )
+        <-> .1. = I ) ) $=
+      ( vy crg wcel cfv co wceq wa wral eqid oveqd eqeq1d cmgp cbs cv wrex wreu
+      cplusg c0g reurex syl mgpbasg mgpplusgg anbi12d raleqbidv rexeqbidv mpbid
+      ringideu ismgmid eleq2d ringidvalg 3bitr4d ) CKLZFCUAMZUBMZLZFAUCZVBUFMZN
+      ZVEOZVEFVFNZVEOZPZAVCQZPVBUGMZFOFBLZFVEDNZVEOZVEFDNZVEOZPZABQZPEFOVAAVCVF
+      FJVBVMVCRVMRVFRVAJUCZVEDNZVEOZVEWADNZVEOZPZABQZJBUDZWAVEVFNZVEOZVEWAVFNZV
+      EOZPZAVCQZJVCUDVAWGJBUEWHAJBCDGHUPWGJBUHUIVAWGWNJBVCBCVBKVBRZGUJZVAWFWMAB
+      VCWPVAWCWJWEWLVAWBWIVEVADVFWAVECDVBKWOHUKZSTVAWDWKVEVADVFVEWAWQSTULUMUNUO
+      UQVAVNVDVTVLVABVCFWPURVAVSVKABVCWPVAVPVHVRVJVAVOVGVEVADVFFVEWQSTVAVQVIVEV
+      ADVFVEFWQSTULUMULVAEVMFCEVBKWOIUSTUT $.
+  $}
+
+  ${
+    $d B u $.  $d R u $.  $d X u $.  $d .x. u $.
+    ringid.b $e |- B = ( Base ` R ) $.
+    ringid.t $e |- .x. = ( .r ` R ) $.
+    $( The multiplication operation of a unital ring has (one or more) identity
+       elements.  (Contributed by Steve Rodriguez, 9-Sep-2007.)  (Revised by
+       Mario Carneiro, 22-Dec-2013.)  (Revised by AV, 24-Aug-2021.) $)
+    ringid $p |- ( ( R e. Ring /\ X e. B ) ->
+                 E. u e. B ( ( u .x. X ) = X /\ ( X .x. u ) = X ) ) $=
+      ( crg wcel wa cv co wceq cur cfv eqid ringidcl adantr wb eqeq1d rspcedvd
+      oveq1 oveq2 anbi12d adantl ringidmlem ) CHIZEBIZJZAKZEDLZEMZEUJDLZEMZJZCN
+      OZEDLZEMZEUPDLZEMZJZAUPBUGUPBIUHBCUPFUPPZQRUJUPMZUOVASUIVCULURUNUTVCUKUQE
+      UJUPEDUBTVCUMUSEUJUPEDUCTUDUEBCDUPEFGVBUFUA $.
+  $}
+
+  ${
+    $d B x $.  $d R x $.  $d X x $.  $d .x. x $.
+    ringadd2.b $e |- B = ( Base ` R ) $.
+    ringadd2.p $e |- .+ = ( +g ` R ) $.
+    ringadd2.t $e |- .x. = ( .r ` R ) $.
+    $( A ring element plus itself is two times the element.  (Contributed by
+       Steve Rodriguez, 9-Sep-2007.)  (Revised by Mario Carneiro, 22-Dec-2013.)
+       (Revised by AV, 24-Aug-2021.) $)
+    ringadd2 $p |- ( ( R e. Ring /\ X e. B )
+                     -> E. x e. B ( X .+ X ) = ( ( x .+ x ) .x. X ) ) $=
+      ( crg wcel wa cv co wceq wrex ringid oveq12 anidms eqcomd simpll syl13anc
+      simpr simplr ringdir eqeq2d syl5ibr adantrd reximdva mpd ) DJKZFBKZLZAMZF
+      ENZFOZFUNENFOZLZABPFFCNZUNUNCNFENZOZABPABDEFGIQUMURVAABUMUNBKZLZUPVAUQUPV
+      AVCUSUOUOCNZOUPVDUSUPVDUSOUOFUOFCRSTVCUTVDUSVCUKVBVBULUTVDOUKULVBUAUMVBUC
+      ZVEUKULVBUDBCDEUNUNFGHIUEUBUFUGUHUIUJ $.
+
+    rngo2times.u $e |- .1. = ( 1r ` R ) $.
+    $( A ring element plus itself is two times the element.  "Two" in an
+       arbitrary unital ring is the sum of the unit with itself.  (Contributed
+       by AV, 24-Aug-2021.) $)
+    rngo2times $p |- ( ( R e. Ring /\ A e. B )
+                       -> ( A .+ A ) = ( ( .1. .+ .1. ) .x. A ) ) $=
+      ( crg wcel wa co ringlidm eqcomd oveq12d wceq simpl ringidcl adantr simpr
+      ringdir syl13anc eqtr4d ) DKLZABLZMZAACNFAENZUICNZFFCNAENZUHAUIAUICUHUIAB
+      DEFAGIJOPZULQUHUFFBLZUMUGUKUJRUFUGSUFUMUGBDFGJTUAZUNUFUGUBBCDEFFAGHIUCUDU
+      E $.
+  $}
+
+  ${
+    ringacl.b $e |- B = ( Base ` R ) $.
+    ringacl.p $e |- .+ = ( +g ` R ) $.
+    $( Closure of the addition operation of a ring.  (Contributed by Mario
+       Carneiro, 14-Jan-2014.) $)
+    ringacl $p |- ( ( R e. Ring /\ X e. B /\ Y e. B ) -> ( X .+ Y ) e. B ) $=
+      ( crg wcel cgrp co ringgrp grpcl syl3an1 ) CHICJIDAIEAIDEBKAICLABCDEFGMN
+      $.
+
+    $( Commutativity of the additive group of a ring.  (Contributed by
+       G&eacute;rard Lang, 4-Dec-2014.) $)
+    ringcom $p |- ( ( R e. Ring /\ X e. B /\ Y e. B ) ->
+      ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( wcel co wceq cfv eqid ringacl syl3anc syl13anc ringdir ringlidm syl2anc
+      oveq12d grpass crg w3a cur cmulr simp1 ringidcl simp2 simp3 ringdi eqtr3d
+      syl eqtrd 3eqtr3d cgrp ringgrp 3eqtr4d wb grprcan mpbid 3com23 grplcan )
+      CUAHZDAHZEAHZUBZDDEBIZBIZDEDBIZBIZJZVFVHJZVEDDBIZEBIZVFDBIZVGVIVEVMEBIZVN
+      EBIZJZVMVNJZVEVLEEBIZBIZVFVFBIZVOVPVECUCKZWBBIZDCUDKZIZWCEWDIZBIZWBVFWDIZ
+      WHBIZVTWAVEWCVFWDIZWGWIVEVBWCAHZVCVDWJWGJVBVCVDUEZVEVBWBAHZWMWKWLVEVBWMWL
+      ACWBFWBLZUFUKZWOABCWBWBFGMNVBVCVDUGZVBVCVDUHZABCWDWCDEFGWDLZUIOVEVBWMWMVF
+      AHZWJWIJWLWOWOABCDEFGMZABCWDWBWBVFFGWRPOUJVEWEVLWFVSBVEWEWBDWDIZXABIZVLVE
+      VBWMWMVCWEXBJWLWOWOWPABCWDWBWBDFGWRPOVEXADXADBVEVBVCXADJWLWPACWDWBDFWRWNQ
+      RZXCSULVEWFWBEWDIZXDBIZVSVEVBWMWMVDWFXEJWLWOWOWQABCWDWBWBEFGWRPOVEXDEXDEB
+      VEVBVDXDEJWLWQACWDWBEFWRWNQRZXFSULSVEWHVFWHVFBVEVBWSWHVFJWLWTACWDWBVFFWRW
+      NQRZXGSUMVECUNHZVLAHZVDVDVOVTJVEVBXHWLCUOUKZVEVBVCVCXIWLWPWPABCDDFGMNZWQW
+      QABCVLEEFGTOVEXHWSVCVDVPWAJXJWTWPWQABCVFDEFGTOUPVEXHVMAHZVNAHZVDVQVRUQXJV
+      EVBXIVDXLWLXKWQABCVLEFGMNVEVBWSVCXMWLWTWPABCVFDFGMNWQABCVMVNEFGUROUSVEXHV
+      CVCVDVMVGJXJWPWPWQABCDDEFGTOVEXHVCVDVCVNVIJXJWPWQWPABCDEDFGTOUMVEXHWSVHAH
+      ZVCVJVKUQXJWTVBVDVCXNABCEDFGMUTWPABCVFVHDFGVAOUS $.
+  $}
+
+  ${
+    $d x y R $.
+    $( A ring is an Abelian group.  (Contributed by NM, 26-Aug-2011.) $)
+    ringabl $p |- ( R e. Ring -> R e. Abel ) $=
+      ( vx vy crg wcel cbs cfv cplusg eqidd ringgrp cv eqid ringcom isabld ) AD
+      EZBCAFGZAHGZAOPIOQIAJPQABKCKPLQLMN $.
+  $}
+
+  $( A ring is a commutative monoid.  (Contributed by Mario Carneiro,
+     7-Jan-2015.) $)
+  ringcmn $p |- ( R e. Ring -> R e. CMnd ) $=
+    ( crg wcel cabl ccmn ringabl ablcmn syl ) ABCADCAECAFAGH $.
+
+  ${
+    $d u v w x y B $.  $d u v w x y K $.  $d u v w x y ph $.  $d u v w x y L $.
+    ringpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    ringpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    ringpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    ringpropd.4 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    $( If two structures have the same group components (properties), one is a
+       ring iff the other one is.  (Contributed by Mario Carneiro, 6-Dec-2014.)
+       (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    ringpropd $p |- ( ph -> ( K e. Ring <-> L e. Ring ) ) $=
+      ( vu vv vw wcel cfv co wceq wa wral eqid cgrp cmgp cmnd cv cplusg cbs w3a
+      cmulr crg simpll simprll simplrl simprlr ad2antrr eleqtrd simprr eleqtrrd
+      grpcld oveqrspc2v syl12anc oveq2d eqtrd simplrr adantr cvv simprl mgpbasg
+      wb elexd syl mndcl syl3anc mgpplusgg oveqd 3eltr4d oveq12d eqeq12d oveq1d
+      anbi12d anassrs ralbidva 2ralbidva raleqdv raleqbidv 3bitr3d df-3an simpr
+      pm5.32da 3bitr4g grppropd biimpa adantlr mpbid mndpropd anbi1d isring
+      bitrd ) AEUANZEUBOZUCNZKUDZLUDZMUDZEUEOZPZEUHOZPZXAXBXFPZXAXCXFPZXDPZQZXA
+      XBXDPZXCXFPZXIXBXCXFPZXDPZQZRZMEUFOZSZLXRSZKXRSZUGZFUANZFUBOZUCNZXAXBXCFU
+      EOZPZFUHOZPZXAXBYHPZXAXCYHPZYFPZQZXAXBYFPZXCYHPZYKXBXCYHPZYFPZQZRZMFUFOZS
+      ZLYTSZKYTSZUGZEUINFUINAYBWRWTUUCUGZUUDAWRWTRZYARUUFUUCRZYBUUEAUUFYAUUCAUU
+      FRZXQMDSZLDSZKDSYSMDSZLDSZKDSYAUUCUUHUUIUUKKLDDUUHXADNZXBDNZRZRXQYSMDUUHU
+      UOXCDNZXQYSVHUUHUUOUUPRZRZXKYMXPYRUURXGYIXJYLUURXGXAXEYHPZYIUURAUUMXEDNXG
+      UUSQAUUFUUQUJZUUHUUMUUNUUPUKZUURXEXRDUURXRXDEXBXCXRTZXDTZAWRWTUUQULZUURXB
+      DXRUUHUUMUUNUUPUMZADXRQZUUFUUQGUNZUOZUURXCDXRUUHUUOUUPUPZUVGUOURUVGUQABCD
+      DXFYHXAXEJUSUTUURXEYGXAYHUURAUUNUUPXEYGQUUTUVEUVIABCDDXDYFXBXCIUSUTVAVBUU
+      RXJXHXIYFPZYLUURAXHDNXIDNZXJUVJQUUTUURXAXBWSUEOZPZWSUFOZXHDUURWTXAUVNNZXB
+      UVNNZUVMUVNNAWRWTUUQVCZUURXADUVNUVAUUHDUVNQUUQUUHDXRUVNAUVFUUFGVDZUUHEVEN
+      ZXRUVNQZUUHEUAAWRWTVFVIZXREWSVEWSTZUVBVGZVJVBVDZUOZUURXBDUVNUVEUWDUOZUVNU
+      VLWSXAXBUVNTZUVLTZVKVLUURXFUVLXAXBUUHXFUVLQZUUQUUHUVSUWIUWAEXFWSVEUWBXFTZ
+      VMZVJVDZVNUWDVOUURXAXCUVLPZUVNXIDUURWTUVOXCUVNNZUWMUVNNUVQUWEUURXCDUVNUVI
+      UWDUOZUVNUVLWSXAXCUWGUWHVKVLUURXFUVLXAXCUWLVNUWDVOZABCDDXDYFXHXIIUSUTUURX
+      HYJXIYKYFUURAUUMUUNXHYJQUUTUVAUVEABCDDXFYHXAXBJUSUTUURAUUMUUPXIYKQUUTUVAU
+      VIABCDDXFYHXAXCJUSUTZVPVBVQUURXMYOXOYQUURXMXLXCYHPZYOUURAXLDNUUPXMUWRQUUT
+      UURXLXRDUURXRXDEXAXBUVBUVCUVDUURXADXRUVAUVGUOUVHURUVGUQUVIABCDDXFYHXLXCJU
+      SUTUURXLYNXCYHUURAUUMUUNXLYNQUUTUVAUVEABCDDXDYFXAXBIUSUTVRVBUURXOXIXNYFPZ
+      YQUURAUVKXNDNXOUWSQUUTUWPUURXBXCUVLPZUVNXNDUURWTUVPUWNUWTUVNNUVQUWFUWOUVN
+      UVLWSXBXCUWGUWHVKVLUURXFUVLXBXCUWLVNUWDVOABCDDXDYFXIXNIUSUTUURXIYKXNYPYFU
+      WQUURAUUNUUPXNYPQUUTUVEUVIABCDDXFYHXBXCJUSUTVPVBVQVSVTWAWBUUHUUJXTKDXRUVR
+      UUHUUIXSLDXRUVRUUHXQMDXRUVRWCWDWDUUHUULUUBKDYTADYTQZUUFHVDZUUHUUKUUALDYTU
+      XBUUHYSMDYTUXBWCWDWDWEWHWRWTYAWFWRWTUUCWFZWIAUUGYCYERZUUCRUUEUUDAUUFUXDUU
+      CAUUFWRYERUXDAWRWTYEAWRRZBCDWSYDUXEDXRUVNAUVFWRGVDUXEUVSUVTUXEEUAAWRWGVIZ
+      UWCVJVBUXEDYTYDUFOZAUXAWRHVDUXEFVENZYTUXGQUXEFUAAWRYCABCDEFGHIWJZWKVIZYTF
+      YDVEYDTZYTTZVGVJVBUXEBUDZDNCUDZDNRZRUXMUXNXFPZUXMUXNYHPZQZUXMUXNUVLPZUXMU
+      XNYDUEOZPZQZAUXOUXRWRJWLUXEUXRUYBVHUXOUXEUXPUXSUXQUYAUXEUVSUXPUXSQUXFUVSX
+      FUVLUXMUXNUWKVNVJUXEUXHUXQUYAQUXJUXHYHUXTUXMUXNFYHYDVEUXKYHTZVMVNVJVQVDWM
+      WNWHAWRYCYEUXIWOWQWOUXCYCYEUUCWFWIWQKLMXRXDEXFWSUVBUWBUVCUWJWPKLMYTYFFYHY
+      DUXLUXKYFTUYCWPWI $.
+
+    $( If two structures have the same group components (properties), one is a
+       commutative ring iff the other one is.  (Contributed by Mario Carneiro,
+       8-Feb-2015.) $)
+    crngpropd $p |- ( ph -> ( K e. CRing <-> L e. CRing ) ) $=
+      ( crg wcel cmgp cfv ccmn wa cbs eqid wceq co ccrg mgpbasg sylan9eq adantr
+      ringpropd biimpa syl eqtrd cplusg adantlr mgpplusgg adantl oveqdr 3eqtr3d
+      cv cmulr cmnpropd pm5.32da anbi1d bitrd iscrng 3bitr4g ) AEKLZEMNZOLZPZFK
+      LZFMNZOLZPZEUALFUALAVFVCVIPVJAVCVEVIAVCPZBCDVDVHAVCDEQNZVDQNGVLEVDKVDRZVL
+      RUBUCVKDFQNZVHQNZADVNSVCHUDVKVGVNVOSAVCVGABCDEFGHIJUEZUFZVNFVHKVHRZVNRUBU
+      GUHVKBUOZDLCUOZDLPZPVSVTEUPNZTZVSVTFUPNZTZVSVTVDUINZTVSVTVHUINZTAWAWCWESV
+      CJUJVKWABCWBWFVCWBWFSAEWBVDKVMWBRUKULUMVKWABCWDWGVKVGWDWGSVQFWDVHKVRWDRUK
+      UGUMUNUQURAVCVGVIVPUSUTEVDVMVAFVHVRVAVB $.
+  $}
+
+  ${
+    $d x y K $.  $d x y L $.
+    ringprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    ringprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    ringprop.m $e |- ( .r ` K ) = ( .r ` L ) $.
+    $( If two structures have the same ring components (properties), one is a
+       ring iff the other one is.  (Contributed by Mario Carneiro,
+       11-Oct-2013.) $)
+    ringprop $p |- ( K e. Ring <-> L e. Ring ) $=
+      ( vx vy crg wcel wtru cbs cfv wceq a1i cv cplusg co wa oveqi cmulr eqidd
+      wb ringpropd mptru ) AHIBHIUBJFGAKLZABJUEUAUEBKLMJCNFOZGOZAPLZQUFUGBPLZQM
+      JUFUEIUGUEIRRZUHUIUFUGDSNUFUGATLZQUFUGBTLZQMUJUKULUFUGESNUCUD $.
+  $}
+
+  ${
+    $d x .1. $.  $d x y z B $.  $d x y z ph $.  $d x y z R $.
+    isringd.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    isringd.p $e |- ( ph -> .+ = ( +g ` R ) ) $.
+    isringd.t $e |- ( ph -> .x. = ( .r ` R ) ) $.
+    isringd.g $e |- ( ph -> R e. Grp ) $.
+    isringd.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .x. y ) e. B ) $.
+    isringd.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                  ( ( x .x. y ) .x. z ) = ( x .x. ( y .x. z ) ) ) $.
+    isringd.d $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                  ( x .x. ( y .+ z ) ) = ( ( x .x. y ) .+ ( x .x. z ) ) ) $.
+    isringd.e $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                  ( ( x .+ y ) .x. z ) = ( ( x .x. z ) .+ ( y .x. z ) ) ) $.
+    isringd.u $e |- ( ph -> .1. e. B ) $.
+    isringd.i $e |- ( ( ph /\ x e. B ) -> ( .1. .x. x ) = x ) $.
+    isringd.h $e |- ( ( ph /\ x e. B ) -> ( x .x. .1. ) = x ) $.
+    $( Properties that determine a ring.  (Contributed by NM, 2-Aug-2013.) $)
+    isringd $p |- ( ph -> R e. Ring ) $=
+      ( cgrp wcel cmgp cfv cmnd cv cplusg co cmulr wceq wa cbs wral crg mgpbasg
+      eqid syl eqtrd mgpplusgg ismndd w3a eleq2d 3anbi123d biimpar adantr eqidd
+      oveqdr oveq123d 3eqtr3d jca syldan ralrimivvva isring syl3anbrc ) AGUAUBZ
+      GUCUDZUEUBBUFZCUFZDUFZGUGUDZUHZGUIUDZUHZVQVRWBUHZVQVSWBUHZVTUHZUJZVQVRVTU
+      HZVSWBUHZWEVRVSWBUHZVTUHZUJZUKZDGULUDZUMCWNUMBWNUMGUNUBMABCDEHVPIAEWNVPUL
+      UDZJAVOWNWOUJMWNGVPUAVPUPZWNUPZUOUQURAHWBVPUGUDZLAVOWBWRUJMGWBVPUAWPWBUPZ
+      USUQURNORSTUTAWMBCDWNWNWNAVQWNUBZVRWNUBZVSWNUBZVAZVQEUBZVREUBZVSEUBZVAZWM
+      AXGXCAXDWTXEXAXFXBAEWNVQJVBAEWNVRJVBAEWNVSJVBVCVDAXGUKZWGWLXHVQVRVSFUHZHU
+      HVQVRHUHZVQVSHUHZFUHWCWFPXHVQVQXIWAHWBAHWBUJXGLVEZXHVQVFAXGCDFVTKVGVHXHXJ
+      WDXKWEFVTAFVTUJXGKVEZAXGBCHWBLVGAXGBDHWBLVGZVHVIXHVQVRFUHZVSHUHXKVRVSHUHZ
+      FUHWIWKQXHXOWHVSVSHWBXLAXGBCFVTKVGXHVSVFVHXHXKWEXPWJFVTXMXNAXGCDHWBLVGVHV
+      IVJVKVLBCDWNVTGWBVPWQWPVTUPWSVMVN $.
+
+    iscrngd.c $e |- ( ( ph /\ x e. B /\ y e. B ) ->
+      ( x .x. y ) = ( y .x. x ) ) $.
+    $( Properties that determine a commutative ring.  (Contributed by Mario
+       Carneiro, 7-Jan-2015.) $)
+    iscrngd $p |- ( ph -> R e. CRing ) $=
+      ( crg wcel cmgp cfv ccmn ccrg isringd cbs wceq mgpbasg eqtrd cmulr cplusg
+      eqid syl mgpplusgg ismndd iscmnd iscrng sylanbrc ) AGUBUCZGUDUEZUFUCGUGUC
+      ABCDEFGHIJKLMNOPQRSTUHZABCEHVCAEGUIUEZVCUIUEZJAVBVEVFUJVDVEGVCUBVCUOZVEUO
+      UKUPULZAHGUMUEZVCUNUEZLAVBVIVJUJVDGVIVCUBVGVIUOUQUPULZABCDEHVCIVHVKNORSTU
+      RUAUSGVCVGUTVA $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -165772,6 +166285,14 @@ htmldef "mulGrp" as "mulGrp";
 htmldef "SRing" as "SRing";
   althtmldef "SRing" as "SRing";
   latexdef "SRing" as "\mathrm{SRing}";
+htmldef "Ring" as
+    "<IMG SRC='_ring.gif' WIDTH=30 HEIGHT=19 ALT=' Ring' TITLE='Ring'>";
+  althtmldef "Ring" as "Ring";
+  latexdef "Ring" as "\mathrm{Ring}";
+htmldef "CRing" as
+    "<IMG SRC='_cring.gif' WIDTH=40 HEIGHT=19 ALT=' CRing' TITLE='CRing'>";
+  althtmldef "CRing" as "CRing";
+  latexdef "CRing" as "\mathrm{CRing}";
 htmldef "1r" as "<IMG SRC='_1r.gif' WIDTH=13 HEIGHT=19 ALT=' 1r' TITLE='1r'>";
   althtmldef "1r" as "1<SUB>r</SUB>";
   latexdef "1r" as "1_\mathrm{r}";
