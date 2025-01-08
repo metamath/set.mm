@@ -148676,6 +148676,26 @@ $)
     ABKDLGBLMUFNBQLBDOPUIABUGBJUHUGDIZCUGBDRUGUJUJSTUAUBABCUEUCUD $.
 
   ${
+    $d x y z B $.  $d x y z R $.  $d x y z .x. $.  $d x y z X $.  $d x y z Y $.
+    $d x y z .+ $.  $d x y z Z $.
+    ringdilem.b $e |- B = ( Base ` R ) $.
+    ringdilem.p $e |- .+ = ( +g ` R ) $.
+    ringdilem.t $e |- .x. = ( .r ` R ) $.
+    $( Properties of a unital ring.  (Contributed by NM, 26-Aug-2011.)
+       (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    ringdilem $p |- ( ( R e. Ring /\ ( X e. B /\ Y e. B /\ Z e. B ) )
+           -> ( ( X .x. ( Y .+ Z ) ) = ( ( X .x. Y ) .+ ( X .x. Z ) )
+                /\ ( ( X .+ Y ) .x. Z ) = ( ( X .x. Z ) .+ ( Y .x. Z ) ) ) ) $=
+      ( vx vy vz wcel wa co wceq cv wral rsp crg w3a cgrp cmgp cmnd eqid isring
+      cfv simp3bi adantr simpr1 sylc simpr2 simpr3 simpld caovdig caovdirg jca
+      simprd ) CUANZEANFANGANUBOEFGBPDPEFDPEGDPZBPQEFBPGDPVAFGDPBPQUTKLMEFGABDB
+      AUTKRZANZLRZANZMRZANZUBZOZVBVDVFBPDPVBVDDPVBVFDPZBPQZVBVDBPVFDPVJVDVFDPBP
+      QZVIVKVLOZMASZVGVMVIVNLASZVEVNVIVOKASZVCVOUTVPVHUTCUCNCUDUHZUENVPKLMABCDV
+      QHVQUFIJUGUIUJUTVCVEVGUKVOKATULUTVCVEVGUMVNLATULUTVCVEVGUNVMMATULZUOUPUTK
+      LMEFGABDBAVIVKVLVRUSUQUR $.
+  $}
+
+  ${
     ringcl.b $e |- B = ( Base ` R ) $.
     ringcl.t $e |- .x. = ( .r ` R ) $.
     $( Closure of the multiplication operation of a ring.  (Contributed by NM,
@@ -148734,6 +148754,26 @@ $)
       RLZURUQVGKZURLZMZAVFUMPZNZBVMOZUPVFUDIVODVFVFQZUBABVMVGVFVMQVGQUERUPVEVNB
       COZVOUPVDVNBCUPVCVLACVMCDVFHVPFUFZUPUTVIVBVKUPUSVHURUPEVGUQURDEVFHVPGUGZS
       TUPVAVJURUPEVGURUQVSSTUHUIUJUPCVMLVQVOUKVRVNBCVMULRUNUO $.
+  $}
+
+  ${
+    ringdi.b $e |- B = ( Base ` R ) $.
+    ringdi.p $e |- .+ = ( +g ` R ) $.
+    ringdi.t $e |- .x. = ( .r ` R ) $.
+    $( Distributive law for the multiplication operation of a ring
+       (left-distributivity).  (Contributed by Steve Rodriguez, 9-Sep-2007.) $)
+    ringdi $p |- ( ( R e. Ring /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                     ( X .x. ( Y .+ Z ) ) = ( ( X .x. Y ) .+ ( X .x. Z ) ) ) $=
+      ( crg wcel w3a wa co wceq ringdilem simpld ) CKLEALFALGALMNEFGBODOEFDOEGD
+      OZBOPEFBOGDOSFGDOBOPABCDEFGHIJQR $.
+
+    $( Distributive law for the multiplication operation of a ring
+       (right-distributivity).  (Contributed by Steve Rodriguez,
+       9-Sep-2007.) $)
+    ringdir $p |- ( ( R e. Ring /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                     ( ( X .+ Y ) .x. Z ) = ( ( X .x. Z ) .+ ( Y .x. Z ) ) ) $=
+      ( crg wcel w3a wa co wceq ringdilem simprd ) CKLEALFALGALMNEFGBODOEFDOEGD
+      OZBOPEFBOGDOSFGDOBOPABCDEFGHIJQR $.
   $}
 
 
