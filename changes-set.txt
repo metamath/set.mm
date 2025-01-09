@@ -92,6 +92,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 9-Jan-25 fvresval  [same]      Moved from SF's mathbox to main set.mm
+ 9-Jan-25 brtp      [same]      Moved from SF's mathbox to main set.mm
+ 9-Jan-25 ---       ---         Moved initial surreal definitions from
+                                SF's mathbox to main set.mm
  7-Jan-25 rhmdvdsr  [same]      Moved from TA's mathbox to main set.mm
  7-Jan-25 rhmopp    [same]      Moved from TA's mathbox to main set.mm
  7-Jan-25 elrhmunit [same]      Moved from TA's mathbox to main set.mm
