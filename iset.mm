@@ -149388,6 +149388,16 @@ $)
       fveq2d slotex eqeltrid syl setsslid mpdan eqtr4d eqtrid ) BFKZCELMZDNZJUL
       UMBOLMUNPQRZLMZUNULEUOLABDEFGHIUAUDULUNSKZUNUPUBULDSKUQULDBLMSHBLFTUEUFDS
       UCUGFUNLSBTUHUIUJUK $.
+
+    $( Value of the multiplication operation of an opposite ring.  Hypotheses
+       eliminated by a suggestion of Stefan O'Rear, 30-Aug-2015.  (Contributed
+       by Mario Carneiro, 1-Dec-2014.)  (Revised by Mario Carneiro,
+       30-Aug-2015.) $)
+    opprmulg $p |- ( ( R e. V /\ X e. W /\ Y e. U )
+        -> ( X .xb Y ) = ( Y .x. X ) ) $=
+      ( wcel w3a co ctpos wceq opprmulfvalg oveqd 3ad2ant1 ovtposg 3adant1
+      eqtrd ) BGOZIHOZJEOZPIJCQZIJDRZQZJIDQZUFUGUIUKSUHUFCUJIJABCDFGKLMNTUAUBUG
+      UHUKULSUFIJDHEUCUDUE $.
   $}
 
 
