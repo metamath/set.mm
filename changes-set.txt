@@ -22,8 +22,6 @@ proposed  cbviing   cbviin
 proposed  cbviung   cbviun
 proposed  nfiing    nfiin
 proposed  nfiung    nfiun
-proposed  nfrexg    nfrex
-proposed  nfrexdg   nfrexd
 proposed  nfaba1g   nfaba1
 proposed  nfabg     nfab
 proposed  hblemg    hblem
@@ -41,8 +39,6 @@ proposed  cbviin    cbviinv
 proposed  cbviun    cbviunv
 proposed  nfiin     nfiinv
 proposed  nfiun     nfiunv
-proposed  nfrex     nfrexv
-proposed  nfrexd    nfrexdv
 proposed  nfaba1    nfaba1v
 proposed  nfab      nfabv
 proposed  hblem     hblemv
