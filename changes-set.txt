@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 9-Jan-25 nfrexdg   nfrex       consistent with nfrald
  7-Jan-25 rhmdvdsr  [same]      Moved from TA's mathbox to main set.mm
  7-Jan-25 rhmopp    [same]      Moved from TA's mathbox to main set.mm
  7-Jan-25 elrhmunit [same]      Moved from TA's mathbox to main set.mm
