@@ -149398,6 +149398,13 @@ $)
       ( wcel w3a co ctpos wceq opprmulfvalg oveqd 3ad2ant1 ovtposg 3adant1
       eqtrd ) BGOZIHOZJEOZPIJCQZIJDRZQZJIDQZUFUGUIUKSUHUFCUJIJABCDFGKLMNTUAUBUG
       UHUKULSUFIJDHEUCUDUE $.
+
+    $( In a commutative ring, the opposite ring is equivalent to the original
+       ring.  (Contributed by Mario Carneiro, 14-Jun-2015.) $)
+    crngoppr $p |- ( ( R e. CRing /\ X e. B /\ Y e. B ) ->
+        ( X .x. Y ) = ( X .xb Y ) ) $=
+      ( ccrg wcel w3a co crngcom opprmulg eqtr4d ) BLMFAMGAMNFGDOGFDOFGCOABDFGH
+      IPABCDAELAFGHIJKQR $.
   $}
 
 
