@@ -10381,11 +10381,11 @@
 "nfral" is used by "nfra2".
 "nfral" is used by "opreu2reuALT".
 "nfrald" is used by "nfral".
-"nfrald" is used by "nfrexdg".
+"nfrald" is used by "nfrexd".
 "nfreud" is used by "nfreu".
-"nfrexdg" is used by "nfiundg".
-"nfrexdg" is used by "nfrexg".
-"nfrexg" is used by "nfiung".
+"nfrex" is used by "nfiung".
+"nfrexd" is used by "nfiundg".
+"nfrexd" is used by "nfrex".
 "nfs1" is used by "sb8".
 "nfs1" is used by "sb8e".
 "nfsabg" is used by "nfabg".
@@ -17990,8 +17990,8 @@ New usage of "nfralwOLD" is discouraged (0 uses).
 New usage of "nfreu" is discouraged (0 uses).
 New usage of "nfreud" is discouraged (1 uses).
 New usage of "nfreuwOLD" is discouraged (0 uses).
-New usage of "nfrexdg" is discouraged (2 uses).
-New usage of "nfrexg" is discouraged (1 uses).
+New usage of "nfrex" is discouraged (1 uses).
+New usage of "nfrexd" is discouraged (2 uses).
 New usage of "nfriotad" is discouraged (0 uses).
 New usage of "nfrmo" is discouraged (0 uses).
 New usage of "nfrmod" is discouraged (0 uses).
