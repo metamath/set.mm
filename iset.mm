@@ -149407,6 +149407,40 @@ $)
       IPABCDAELAFGHIJKQR $.
   $}
 
+  ${
+    $d x y z R $.  $d x y z O $.
+    opprbas.1 $e |- O = ( oppR ` R ) $.
+    ${
+      opprsllem.2 $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
+      opprlem.3 $e |- ( E ` ndx ) =/= ( .r ` ndx ) $.
+      $( Lemma for ~ opprbasg and ~ oppraddg .  (Contributed by Mario Carneiro,
+         1-Dec-2014.)  (Revised by AV, 6-Nov-2024.) $)
+      opprsllem $p |- ( R e. V -> ( E ` R ) = ( E ` O ) ) $=
+        ( wcel cfv cnx cmulr ctpos cop csts co cvv wceq mulrslid slotex eqid cn
+        tposexg syl cslot simpri setsslnid mpdan cbs opprvalg fveq2d eqtr4d ) A
+        DHZABIZAJKIZAKIZLZMNOZBIZCBIULUPPHZUMURQULUOPHUSAKDRSUOPUBUCDUPUNBPAFGK
+        UNUDQUNUAHRUEUFUGULCUQBAUHIZAUOCDUTTUOTEUIUJUK $.
+    $}
+
+    ${
+      opprbas.2 $e |- B = ( Base ` R ) $.
+      $( Base set of an opposite ring.  (Contributed by Mario Carneiro,
+         1-Dec-2014.)  (Proof shortened by AV, 6-Nov-2024.) $)
+      opprbasg $p |- ( R e. V -> B = ( Base ` O ) ) $=
+        ( wcel cbs cfv baseslid basendxnmulrndx opprsllem eqtrid ) BDGABHICHIFB
+        HCDEJKLM $.
+    $}
+
+    ${
+      oppradd.2 $e |- .+ = ( +g ` R ) $.
+      $( Addition operation of an opposite ring.  (Contributed by Mario
+         Carneiro, 1-Dec-2014.)  (Proof shortened by AV, 6-Nov-2024.) $)
+      oppraddg $p |- ( R e. V -> .+ = ( +g ` O ) ) $=
+        ( wcel cplusg cfv plusgslid plusgndxnmulrndx opprsllem eqtrid ) BDGABHI
+        CHIFBHCDEJKLM $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
