@@ -14283,7 +14283,7 @@ New usage of "0psubN" is discouraged (0 uses).
 New usage of "0psubclN" is discouraged (1 uses).
 New usage of "0r" is discouraged (11 uses).
 New usage of "0reALT" is discouraged (0 uses).
-New usage of "0sdom1domOLD" is discouraged (0 uses).
+New usage of "0sdom1domALT" is discouraged (0 uses).
 New usage of "0sdomgOLD" is discouraged (0 uses).
 New usage of "0vfval" is discouraged (9 uses).
 New usage of "139prmALT" is discouraged (0 uses).
@@ -14310,7 +14310,7 @@ New usage of "1p2e3ALT" is discouraged (0 uses).
 New usage of "1pi" is discouraged (11 uses).
 New usage of "1pr" is discouraged (16 uses).
 New usage of "1psubclN" is discouraged (0 uses).
-New usage of "1sdom2OLD" is discouraged (0 uses).
+New usage of "1sdom2ALT" is discouraged (0 uses).
 New usage of "1sdomOLD" is discouraged (0 uses).
 New usage of "1sr" is discouraged (8 uses).
 New usage of "1strbasOLD" is discouraged (0 uses).
@@ -19641,7 +19641,7 @@ Proof modification of "0nelopabOLD" is discouraged (91 steps).
 Proof modification of "0nnnALT" is discouraged (11 steps).
 Proof modification of "0posOLD" is discouraged (66 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
-Proof modification of "0sdom1domOLD" is discouraged (31 steps).
+Proof modification of "0sdom1domALT" is discouraged (31 steps).
 Proof modification of "0sdomgOLD" is discouraged (53 steps).
 Proof modification of "139prmALT" is discouraged (758 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
@@ -19655,7 +19655,7 @@ Proof modification of "1onOLD" is discouraged (9 steps).
 Proof modification of "1onnALT" is discouraged (16 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "1p2e3ALT" is discouraged (7 steps).
-Proof modification of "1sdom2OLD" is discouraged (18 steps).
+Proof modification of "1sdom2ALT" is discouraged (18 steps).
 Proof modification of "1sdomOLD" is discouraged (294 steps).
 Proof modification of "1strbasOLD" is discouraged (22 steps).
 Proof modification of "1strwunOLD" is discouraged (20 steps).
