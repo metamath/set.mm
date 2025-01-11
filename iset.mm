@@ -149408,6 +149408,17 @@ $)
   $}
 
   ${
+    opprex.o $e |- O = ( oppR ` R ) $.
+    $( Existence of the opposite ring.  If you know that ` R ` is a ring, see
+       ~ opprring .  (Contributed by Jim Kingdon, 10-Jan-2025.) $)
+    opprex $p |- ( R e. V -> O e. _V ) $=
+      ( wcel cnx cmulr cfv ctpos cop csts co cvv cbs opprvalg cn cslot mulrslid
+      eqid wceq simpri a1i slotex tposexg syl setsex mpd3an23 eqeltrd ) ACEZBAF
+      GHZAGHZIZJKLZMANHZAUKBCUNSUKSDOUIUJPEZULMEZUMMEUOUIGUJQTUORUAUBUIUKMEUPAG
+      CRUCUKMUDUEUJULACMPUFUGUH $.
+  $}
+
+  ${
     $d x y z R $.  $d x y z O $.
     opprbas.1 $e |- O = ( oppR ` R ) $.
     ${
