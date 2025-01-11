@@ -18334,6 +18334,8 @@ New usage of "onomeneqOLD" is discouraged (0 uses).
 New usage of "onsetreclem1" is discouraged (2 uses).
 New usage of "onsetreclem2" is discouraged (1 uses).
 New usage of "onsetreclem3" is discouraged (1 uses).
+New usage of "ontrciOLD" is discouraged (0 uses).
+New usage of "onuniorsuciOLD" is discouraged (0 uses).
 New usage of "opabid" is discouraged (2 uses).
 New usage of "opabresex2d" is discouraged (1 uses).
 New usage of "opelcn" is discouraged (1 uses).
@@ -21036,6 +21038,8 @@ Proof modification of "onfrALTlem5" is discouraged (320 steps).
 Proof modification of "onfrALTlem5VD" is discouraged (320 steps).
 Proof modification of "onnevOLD" is discouraged (26 steps).
 Proof modification of "onomeneqOLD" is discouraged (251 steps).
+Proof modification of "ontrciOLD" is discouraged (9 steps).
+Proof modification of "onuniorsuciOLD" is discouraged (16 steps).
 Proof modification of "opabresex2d" is discouraged (48 steps).
 Proof modification of "opelopab4" is discouraged (69 steps).
 Proof modification of "opidon2OLD" is discouraged (80 steps).
