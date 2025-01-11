@@ -147928,6 +147928,17 @@ $)
     mgpbas.1 $e |- M = ( mulGrp ` R ) $.
 
     ${
+      $( Existence of the multiplication group.  If ` R ` is known to be a
+         semiring, see ~ srgmgp .  (Contributed by Jim Kingdon,
+         10-Jan-2025.) $)
+      mgpex $p |- ( R e. V -> M e. _V ) $=
+        ( wcel cnx cplusg cfv cmulr cop csts co eqid mgpvalg cn cslot plusgslid
+        cvv wceq simpri a1i mulrslid slotex setsex mpd3an23 eqeltrd ) ACEZBAFGH
+        ZAIHZJKLZRAUIBCDUIMNUGUHOEZUIREUJREUKUGGUHPSUKQTUAAICUBUCUHUIACROUDUEUF
+        $.
+    $}
+
+    ${
       mgpbas.2 $e |- B = ( Base ` R ) $.
       $( Base set of the multiplication group.  (Contributed by Mario Carneiro,
          21-Dec-2014.)  (Revised by Mario Carneiro, 5-Oct-2015.) $)
