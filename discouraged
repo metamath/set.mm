@@ -14283,7 +14283,7 @@ New usage of "0psubN" is discouraged (0 uses).
 New usage of "0psubclN" is discouraged (1 uses).
 New usage of "0r" is discouraged (11 uses).
 New usage of "0reALT" is discouraged (0 uses).
-New usage of "0sdom1domOLD" is discouraged (0 uses).
+New usage of "0sdom1domALT" is discouraged (0 uses).
 New usage of "0sdomgOLD" is discouraged (0 uses).
 New usage of "0vfval" is discouraged (9 uses).
 New usage of "139prmALT" is discouraged (0 uses).
@@ -14310,7 +14310,7 @@ New usage of "1p2e3ALT" is discouraged (0 uses).
 New usage of "1pi" is discouraged (11 uses).
 New usage of "1pr" is discouraged (16 uses).
 New usage of "1psubclN" is discouraged (0 uses).
-New usage of "1sdom2OLD" is discouraged (0 uses).
+New usage of "1sdom2ALT" is discouraged (0 uses).
 New usage of "1sdomOLD" is discouraged (0 uses).
 New usage of "1sr" is discouraged (8 uses).
 New usage of "1strbasOLD" is discouraged (0 uses).
@@ -16587,7 +16587,7 @@ New usage of "enrer" is discouraged (8 uses).
 New usage of "enrex" is discouraged (9 uses).
 New usage of "ensn1OLD" is discouraged (0 uses).
 New usage of "ensucne0OLD" is discouraged (0 uses).
-New usage of "epweonOLD" is discouraged (0 uses).
+New usage of "epweonALT" is discouraged (0 uses).
 New usage of "eq0ALT" is discouraged (0 uses).
 New usage of "eq0OLDOLD" is discouraged (0 uses).
 New usage of "eq0rdvALT" is discouraged (0 uses).
@@ -18334,6 +18334,8 @@ New usage of "onomeneqOLD" is discouraged (0 uses).
 New usage of "onsetreclem1" is discouraged (2 uses).
 New usage of "onsetreclem2" is discouraged (1 uses).
 New usage of "onsetreclem3" is discouraged (1 uses).
+New usage of "ontrciOLD" is discouraged (0 uses).
+New usage of "onuniorsuciOLD" is discouraged (0 uses).
 New usage of "opabid" is discouraged (2 uses).
 New usage of "opabresex2d" is discouraged (1 uses).
 New usage of "opelcn" is discouraged (1 uses).
@@ -19639,7 +19641,7 @@ Proof modification of "0nelopabOLD" is discouraged (91 steps).
 Proof modification of "0nnnALT" is discouraged (11 steps).
 Proof modification of "0posOLD" is discouraged (66 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
-Proof modification of "0sdom1domOLD" is discouraged (31 steps).
+Proof modification of "0sdom1domALT" is discouraged (31 steps).
 Proof modification of "0sdomgOLD" is discouraged (53 steps).
 Proof modification of "139prmALT" is discouraged (758 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
@@ -19653,7 +19655,7 @@ Proof modification of "1onOLD" is discouraged (9 steps).
 Proof modification of "1onnALT" is discouraged (16 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "1p2e3ALT" is discouraged (7 steps).
-Proof modification of "1sdom2OLD" is discouraged (18 steps).
+Proof modification of "1sdom2ALT" is discouraged (18 steps).
 Proof modification of "1sdomOLD" is discouraged (294 steps).
 Proof modification of "1strbasOLD" is discouraged (22 steps).
 Proof modification of "1strwunOLD" is discouraged (20 steps).
@@ -20446,7 +20448,7 @@ Proof modification of "enp1iOLD" is discouraged (132 steps).
 Proof modification of "enpr2dOLD" is discouraged (114 steps).
 Proof modification of "ensn1OLD" is discouraged (47 steps).
 Proof modification of "ensucne0OLD" is discouraged (82 steps).
-Proof modification of "epweonOLD" is discouraged (86 steps).
+Proof modification of "epweonALT" is discouraged (86 steps).
 Proof modification of "eq0ALT" is discouraged (31 steps).
 Proof modification of "eq0OLDOLD" is discouraged (6 steps).
 Proof modification of "eq0rdvALT" is discouraged (25 steps).
@@ -21036,6 +21038,8 @@ Proof modification of "onfrALTlem5" is discouraged (320 steps).
 Proof modification of "onfrALTlem5VD" is discouraged (320 steps).
 Proof modification of "onnevOLD" is discouraged (26 steps).
 Proof modification of "onomeneqOLD" is discouraged (251 steps).
+Proof modification of "ontrciOLD" is discouraged (9 steps).
+Proof modification of "onuniorsuciOLD" is discouraged (16 steps).
 Proof modification of "opabresex2d" is discouraged (48 steps).
 Proof modification of "opelopab4" is discouraged (69 steps).
 Proof modification of "opidon2OLD" is discouraged (80 steps).
