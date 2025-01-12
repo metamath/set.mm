@@ -88,6 +88,13 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+11-Jan-25 ---       ---         Moved surreal ordering theorems from
+                                SF's mathbox to main set.mm
+11-Jan-25 ---       ---         Moved ordinal sequence theorems from
+                                SF's mathbox to main set.mm
+11-Jan-25 tfisg     [same]      Moved from SF's mathbox to main set.mm
+11-Jan-25 3orel13   [same]      Moved from SF's mathbox to main set.mm
+11-Jan-25 3pm3.2ni  [same]      Moved from SF's mathbox to main set.mm
  9-Jan-25 fvresval  [same]      Moved from SF's mathbox to main set.mm
  9-Jan-25 brtp      [same]      Moved from SF's mathbox to main set.mm
  9-Jan-25 ---       ---         Moved initial surreal definitions from
