@@ -18666,6 +18666,7 @@ New usage of "prclisacycgr" is discouraged (0 uses).
 New usage of "predasetexOLD" is discouraged (0 uses).
 New usage of "predonOLD" is discouraged (0 uses).
 New usage of "preleqALT" is discouraged (0 uses).
+New usage of "prfiALT" is discouraged (0 uses).
 New usage of "prlem934" is discouraged (3 uses).
 New usage of "prlem936" is discouraged (1 uses).
 New usage of "prmdvdssqOLD" is discouraged (0 uses).
@@ -21092,6 +21093,7 @@ Proof modification of "pr2nelemOLD" is discouraged (82 steps).
 Proof modification of "predasetexOLD" is discouraged (16 steps).
 Proof modification of "predonOLD" is discouraged (29 steps).
 Proof modification of "preleqALT" is discouraged (115 steps).
+Proof modification of "prfiALT" is discouraged (30 steps).
 Proof modification of "prmdvdssqOLD" is discouraged (62 steps).
 Proof modification of "prmgaplcm" is discouraged (247 steps).
 Proof modification of "prmgapprmo" is discouraged (387 steps).
