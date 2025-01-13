@@ -149543,6 +149543,20 @@ $)
         YRXHVGZVHRVPWRYLWEVPWOYIWEWBYTVHRSVISVJVKVMVPYAWAVRMYBCWAVQTYCWAQVNVLAB
         VSDYRFVNVO $.
     $}
+
+    ${
+      $d V x y $.
+      opprneg.2 $e |- N = ( invg ` R ) $.
+      $( The negative function in an opposite ring.  (Contributed by Mario
+         Carneiro, 5-Dec-2014.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+      opprnegg $p |- ( R e. V -> N = ( invg ` O ) ) $=
+        ( vx vy wcel cbs cfv cv cplusg co c0g wceq crio cmpt eqid grpinvfvalg
+        cminusg opprbasg oppraddg oveqd oppr0g riotaeqbidv mpteq12dv cvv opprex
+        eqeq12d syl 3eqtr4d ) ADIZGAJKZHLZGLZAMKZNZAOKZPZHUNQZRGCJKZUOUPCMKZNZC
+        OKZPZHVBQZRZBCUAKZUMGUNVAVBVGUNACDEUNSZUBZUMUTVFHUNVBVKUMURVDUSVEUMUQVC
+        UOUPUQACDEUQSZUCUDACDUSEUSSZUEUJUFUGGHUNUQABDUSVJVLVMFTUMCUHIVIVHPACDEU
+        IGHVBVCCVIUHVEVBSVCSVESVISTUKUL $.
+    $}
   $}
 
 
