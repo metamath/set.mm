@@ -16839,7 +16839,6 @@ New usage of "grpstr" is discouraged (0 uses).
 New usage of "grpsubfvalALT" is discouraged (0 uses).
 New usage of "gsumbagdiagOLD" is discouraged (1 uses).
 New usage of "gsumbagdiaglemOLD" is discouraged (2 uses).
-New usage of "gsumccatOLD" is discouraged (0 uses).
 New usage of "gt-lt" is discouraged (0 uses).
 New usage of "gt-lth" is discouraged (1 uses).
 New usage of "gt0srpr" is discouraged (2 uses).
@@ -17628,7 +17627,6 @@ New usage of "lsatfixedN" is discouraged (1 uses).
 New usage of "lshpinN" is discouraged (0 uses).
 New usage of "lshpnel2N" is discouraged (0 uses).
 New usage of "lshpset2N" is discouraged (1 uses).
-New usage of "lsmidmOLD" is discouraged (0 uses).
 New usage of "ltaddnq" is discouraged (7 uses).
 New usage of "ltaddpr" is discouraged (5 uses).
 New usage of "ltaddpr2" is discouraged (1 uses).
@@ -20725,7 +20723,6 @@ Proof modification of "grpplusgOLD" is discouraged (11 steps).
 Proof modification of "grpsubfvalALT" is discouraged (176 steps).
 Proof modification of "gsumbagdiagOLD" is discouraged (209 steps).
 Proof modification of "gsumbagdiaglemOLD" is discouraged (571 steps).
-Proof modification of "gsumccatOLD" is discouraged (996 steps).
 Proof modification of "hashf1lem1OLD" is discouraged (886 steps).
 Proof modification of "hashfacenOLD" is discouraged (753 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
@@ -20835,7 +20832,6 @@ Proof modification of "joincomALT" is discouraged (83 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
 Proof modification of "lediv2aALT" is discouraged (264 steps).
-Proof modification of "lsmidmOLD" is discouraged (116 steps).
 Proof modification of "luk-1" is discouraged (73 steps).
 Proof modification of "luk-2" is discouraged (52 steps).
 Proof modification of "luk-3" is discouraged (20 steps).
