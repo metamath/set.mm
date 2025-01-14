@@ -149595,6 +149595,29 @@ $)
     $}
   $}
 
+  ${
+    $d x y B $.  $d x y N $.  $d x y R $.  $d x y X $.  $d x y Y $.
+    mulgass3.b $e |- B = ( Base ` R ) $.
+    mulgass3.m $e |- .x. = ( .g ` R ) $.
+    mulgass3.t $e |- .X. = ( .r ` R ) $.
+    $( An associative property between group multiple and ring multiplication.
+       (Contributed by Mario Carneiro, 14-Jun-2015.) $)
+    mulgass3 $p |- ( ( R e. Ring /\ ( N e. ZZ /\ X e. B /\ Y e. B ) ) ->
+        ( X .X. ( N .x. Y ) ) = ( N .x. ( X .X. Y ) ) ) $=
+      ( vx vy crg wcel wa cfv co wceq eqid adantr cz w3a coppr cmg cbs opprring
+      simpr1 simpr3 opprbasg eleqtrd simpr2 mulgass2 syl13anc ringgrpd eleqtrrd
+      cmulr simpl mulgcld opprmulg syl3anc oveq2d 3eqtr3d eqidd ssidd cv cplusg
+      a1i ringacl 3expb adantlr oppraddg oveqdr mulgpropdg oveqd 3eqtr4d ) BMNZ
+      EUANZFANZGANZUBZOZFEGBUCPZUDPZQZDQZEFGDQZWCQZFEGCQZDQEWFCQWAWDFWBUPPZQZEG
+      FWIQZWCQZWEWGWAWBMNZVQGWBUEPZNFWNNWJWLRVPWMVTBWBWBSZUFTZVPVQVRVSUGZWAGAWN
+      VPVQVRVSUHZVPAWNRVTABWBMWOHUITZUJZWAFAWNVPVQVRVSUKZWSUJWNWBWCWIEGFWNSZWCS
+      ZWISZULUMWAVPWDANVRWJWERVPVTUQZWAWDWNAWAWNWCWBEGXBXCWAWBWPUNWQWTURWSUOXAA
+      BWIDAWBMAWDFHJWOXDUSUTWAWKWFEWCWAVPVSVRWKWFRXEWRXAABWIDAWBMAGFHJWOXDUSUTV
+      AVBWAWHWDFDWACWCEGWAKLACWCBWBAMMCBUDPRWAIVGWAWCVCXEWPABUEPRWAHVGWSWAAVDVP
+      KVEZANZLVEZANZOZXFXHBVFPZQZANZVTVPXGXIXMAXKBXFXHHXKSZVHVIVJWAXLXFXHWBVFPZ
+      QRXJVPVTKLXKXOXKBWBMWOXNVKVLTVMZVNVAWACWCEWFXPVNVO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
