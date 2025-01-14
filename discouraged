@@ -6424,7 +6424,6 @@
 "fh2" is used by "fh2i".
 "fh2i" is used by "fh4i".
 "fh3i" is used by "mayetes3i".
-"fiintOLD" is used by "neificl".
 "fldcatALTV" is used by "fldcALTV".
 "flddivrng" is used by "isfld2".
 "flddivrng" is used by "isfldidl".
@@ -16698,7 +16697,7 @@ New usage of "fh3i" is discouraged (1 uses).
 New usage of "fh4i" is discouraged (0 uses).
 New usage of "ficardun2OLD" is discouraged (0 uses).
 New usage of "ficardunOLD" is discouraged (0 uses).
-New usage of "fiintOLD" is discouraged (1 uses).
+New usage of "fiintOLD" is discouraged (0 uses).
 New usage of "fimacnvOLD" is discouraged (0 uses).
 New usage of "fimadmfoALT" is discouraged (0 uses).
 New usage of "findOLD" is discouraged (0 uses).
