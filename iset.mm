@@ -147411,6 +147411,42 @@ $)
   $}
 
   ${
+    $d ph a b x y $.  $d B x y $.  $d G a b x y $.  $d H a b x y $.
+    $d K x y $.
+    mulgpropdg.m $e |- ( ph -> .x. = ( .g ` G ) ) $.
+    mulgpropdg.n $e |- ( ph -> .X. = ( .g ` H ) ) $.
+    mulgpropdg.g $e |- ( ph -> G e. V ) $.
+    mulgpropdg.h $e |- ( ph -> H e. W ) $.
+    mulgpropd.b1 $e |- ( ph -> B = ( Base ` G ) ) $.
+    mulgpropd.b2 $e |- ( ph -> B = ( Base ` H ) ) $.
+    mulgpropd.i $e |- ( ph -> B C_ K ) $.
+    mulgpropd.k $e |- ( ( ph /\ ( x e. K /\ y e. K ) ) ->
+        ( x ( +g ` G ) y ) e. K ) $.
+    mulgpropd.e $e |- ( ( ph /\ ( x e. K /\ y e. K ) ) ->
+        ( x ( +g ` G ) y ) = ( x ( +g ` H ) y ) ) $.
+    $( Two structures with the same group-nature have the same group multiple
+       function. ` K ` is expected to either be ` _V ` (when strong equality is
+       available) or ` B ` (when closure is available).  (Contributed by Stefan
+       O'Rear, 21-Mar-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+    mulgpropdg $p |- ( ph -> .x. = .X. ) $=
+      ( va vb cz cbs cfv cv cc0 wceq c0g clt wbr cplusg cn csn cxp c1 cseq cneg
+      cminusg cif cmpo wcel w3a wa co wss wi anim12d syl imp syldan grpidpropdg
+      ssel 3ad2ant1 1zzd nnuz simp3 sseldd ialgrlemconst 3ad2antl1 grpinvpropdg
+      seqfeq3 fveq1d fveq12d ifeq12d mpoeq3dva mpoeq123dv 3eqtr3d cmg mulgfvalg
+      eqidd eqid eqtrd 3eqtr4d ) AUAUBUCGUDUEZUAUFZUGUHZGUIUEZUGWPUJUKZWPGULUEZ
+      UMUBUFZUNUOZUPUQZUEZWPURZXCUEZGUSUEZUEZUTZUTZVAZUAUBUCHUDUEZWQHUIUEZWSWPH
+      ULUEZXBUPUQZUEZXEXOUEZHUSUEZUEZUTZUTZVAZEFAUAUBUCDXJVAUAUBUCDYAVAXKYBAUAU
+      BUCDXJYAAWPUCVBZXADVBZVCZWQWRXMXIXTAYCWRXMUHYDABCDGHJKPQNOABUFZDVBZCUFZDV
+      BZVDZYFIVBZYHIVBZVDZYFYHWTVEZYFYHXNVEUHZAYJYMADIVFZYJYMVGRYPYGYKYIYLDIYFV
+      MDIYHVMVHVIVJTVKZVLVNYEWSXDXPXHXSYEWPXCXOYEBCWTXNIXBUPYEVOYEBXAIUPUMVPYED
+      IXAAYCYPYDRVNAYCYDVQVRVSAYCYMYNIVBYDSVTAYCYMYOYDTVTWBZWCYEXFXQXGXRAYCXGXR
+      UHYDABCDGHJKPQNOYQWAVNYEXEXCXOYRWCWDWEWEWFAUAUBUCDXJUCWOXJAUCWKZPAXJWKWGA
+      UAUBUCDYAUCXLYAYSQAYAWKWGWHAEGWIUEZXKLAGJVBYTXKUHNUBWOWTYTUAGXGJWRWOWLWTW
+      LWRWLXGWLYTWLWJVIWMAFHWIUEZYBMAHKVBUUAYBUHOUBXLXNUUAUAHXRKXMXLWLXNWLXMWLX
+      RWLUUAWLWJVIWMWN $.
+  $}
+
+  ${
     $d x y G $.  $d x y N $.  $d x y S $.  $d x .xb $.  $d x y X $.
     submmulgcl.t $e |- .xb = ( .g ` G ) $.
     $( Closure of the group multiple (exponentiation) operation in a submonoid.
