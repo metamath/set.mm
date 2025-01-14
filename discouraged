@@ -2441,8 +2441,6 @@
 "bnj518" is used by "bnj546".
 "bnj519" is used by "bnj535".
 "bnj519" is used by "bnj97".
-"bnj521" is used by "bnj535".
-"bnj521" is used by "bnj927".
 "bnj523" is used by "bnj600".
 "bnj523" is used by "bnj908".
 "bnj523" is used by "bnj934".
@@ -4785,7 +4783,7 @@
 "df-erq" is used by "nqerid".
 "df-erq" is used by "nqerrel".
 "df-exid" is used by "isexid".
-"df-fld" is used by "fldcrng".
+"df-fld" is used by "fldcrngo".
 "df-fld" is used by "flddivrng".
 "df-fld" is used by "isfld2".
 "df-gcdOLD" is used by "ee7.2aOLD".
@@ -5138,7 +5136,6 @@
 "dfsb1" is used by "bj-dfsb2".
 "dfsb1" is used by "drsb1".
 "dfsb1" is used by "frege55b".
-"dfsb1" is used by "subsym1".
 "dfsb2" is used by "dfsb3".
 "dfvd1imp" is used by "gen11".
 "dfvd1impr" is used by "gen11".
@@ -5566,7 +5563,7 @@
 "drnfc1" is used by "nfcvb".
 "drnfc1" is used by "nfriotad".
 "drngoi" is used by "dvrunz".
-"drngoi" is used by "fldcrng".
+"drngoi" is used by "fldcrngo".
 "drsb1" is used by "iotaeq".
 "drsb1" is used by "sb2ae".
 "drsb1" is used by "sbco3".
@@ -12600,6 +12597,7 @@
 "ringcvalALTV" is used by "ringccofvalALTV".
 "ringcvalALTV" is used by "ringchomfvalALTV".
 "riotaocN" is used by "glbconN".
+"riotaocN" is used by "glbconNOLD".
 "rnbra" is used by "bra11".
 "rnbra" is used by "cnvbraval".
 "rnelshi" is used by "hmopidmchi".
@@ -15157,7 +15155,6 @@ New usage of "bnj446" is discouraged (3 uses).
 New usage of "bnj517" is discouraged (1 uses).
 New usage of "bnj518" is discouraged (2 uses).
 New usage of "bnj519" is discouraged (2 uses).
-New usage of "bnj521" is discouraged (2 uses).
 New usage of "bnj523" is discouraged (3 uses).
 New usage of "bnj524" is discouraged (0 uses).
 New usage of "bnj525" is discouraged (7 uses).
@@ -16054,7 +16051,7 @@ New usage of "dfnul3OLD" is discouraged (0 uses).
 New usage of "dfnul4OLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfrecs3OLD" is discouraged (0 uses).
-New usage of "dfsb1" is discouraged (4 uses).
+New usage of "dfsb1" is discouraged (3 uses).
 New usage of "dfsb2" is discouraged (1 uses).
 New usage of "dfsb3" is discouraged (0 uses).
 New usage of "dfsn2ALT" is discouraged (0 uses).
@@ -16703,6 +16700,7 @@ New usage of "fimacnvOLD" is discouraged (0 uses).
 New usage of "fimadmfoALT" is discouraged (0 uses).
 New usage of "findOLD" is discouraged (0 uses).
 New usage of "findcard2OLD" is discouraged (0 uses).
+New usage of "findcard3OLD" is discouraged (0 uses).
 New usage of "fineqvacALT" is discouraged (0 uses).
 New usage of "fldcALTV" is discouraged (0 uses).
 New usage of "fldcatALTV" is discouraged (1 uses).
@@ -16779,6 +16777,7 @@ New usage of "gidsn" is discouraged (1 uses).
 New usage of "gidval" is discouraged (3 uses).
 New usage of "glb0N" is discouraged (2 uses).
 New usage of "glbconN" is discouraged (1 uses).
+New usage of "glbconNOLD" is discouraged (0 uses).
 New usage of "glbconxN" is discouraged (1 uses).
 New usage of "goeqi" is discouraged (0 uses).
 New usage of "golem1" is discouraged (1 uses).
@@ -16841,7 +16840,6 @@ New usage of "grpstr" is discouraged (0 uses).
 New usage of "grpsubfvalALT" is discouraged (0 uses).
 New usage of "gsumbagdiagOLD" is discouraged (1 uses).
 New usage of "gsumbagdiaglemOLD" is discouraged (2 uses).
-New usage of "gsumccatOLD" is discouraged (0 uses).
 New usage of "gt-lt" is discouraged (0 uses).
 New usage of "gt-lth" is discouraged (1 uses).
 New usage of "gt0srpr" is discouraged (2 uses).
@@ -17350,7 +17348,9 @@ New usage of "indistpsALTOLD" is discouraged (0 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
 New usage of "indthincALT" is discouraged (0 uses).
+New usage of "infn0ALT" is discouraged (0 uses).
 New usage of "infpssALT" is discouraged (0 uses).
+New usage of "infsdomnnOLD" is discouraged (0 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
 New usage of "intnatN" is discouraged (0 uses).
@@ -17630,7 +17630,6 @@ New usage of "lsatfixedN" is discouraged (1 uses).
 New usage of "lshpinN" is discouraged (0 uses).
 New usage of "lshpnel2N" is discouraged (0 uses).
 New usage of "lshpset2N" is discouraged (1 uses).
-New usage of "lsmidmOLD" is discouraged (0 uses).
 New usage of "ltaddnq" is discouraged (7 uses).
 New usage of "ltaddpr" is discouraged (5 uses).
 New usage of "ltaddpr2" is discouraged (1 uses).
@@ -18138,6 +18137,7 @@ New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnfiOLD" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnne0ALT" is discouraged (0 uses).
+New usage of "nnsdomgOLD" is discouraged (0 uses).
 New usage of "noelOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
 New usage of "norcomOLD" is discouraged (0 uses).
@@ -18869,7 +18869,7 @@ New usage of "ringcinvALTV" is discouraged (1 uses).
 New usage of "ringcisoALTV" is discouraged (0 uses).
 New usage of "ringcsectALTV" is discouraged (1 uses).
 New usage of "ringcvalALTV" is discouraged (3 uses).
-New usage of "riotaocN" is discouraged (1 uses).
+New usage of "riotaocN" is discouraged (2 uses).
 New usage of "rlimaddOLD" is discouraged (0 uses).
 New usage of "rlimmulOLD" is discouraged (0 uses).
 New usage of "rmoanidOLD" is discouraged (0 uses).
@@ -19607,6 +19607,7 @@ New usage of "xihopellsmN" is discouraged (0 uses).
 New usage of "xorbi12iOLD" is discouraged (0 uses).
 New usage of "xorcomOLD" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
+New usage of "xpfiOLD" is discouraged (0 uses).
 New usage of "xrge0tmdALT" is discouraged (0 uses).
 New usage of "zaddablx" is discouraged (0 uses).
 New usage of "zexALT" is discouraged (1 uses).
@@ -20521,6 +20522,7 @@ Proof modification of "fimacnvOLD" is discouraged (78 steps).
 Proof modification of "fimadmfoALT" is discouraged (108 steps).
 Proof modification of "findOLD" is discouraged (70 steps).
 Proof modification of "findcard2OLD" is discouraged (535 steps).
+Proof modification of "findcard3OLD" is discouraged (488 steps).
 Proof modification of "fineqvacALT" is discouraged (40 steps).
 Proof modification of "fldidomOLD" is discouraged (34 steps).
 Proof modification of "fncoOLD" is discouraged (95 steps).
@@ -20719,6 +20721,7 @@ Proof modification of "ggen22" is discouraged (13 steps).
 Proof modification of "ggen31" is discouraged (22 steps).
 Proof modification of "ghomidOLD" is discouraged (178 steps).
 Proof modification of "ghomlinOLD" is discouraged (161 steps).
+Proof modification of "glbconNOLD" is discouraged (904 steps).
 Proof modification of "grpbaseOLD" is discouraged (11 steps).
 Proof modification of "grpinvfvalALT" is discouraged (161 steps).
 Proof modification of "grposnOLD" is discouraged (291 steps).
@@ -20726,7 +20729,6 @@ Proof modification of "grpplusgOLD" is discouraged (11 steps).
 Proof modification of "grpsubfvalALT" is discouraged (176 steps).
 Proof modification of "gsumbagdiagOLD" is discouraged (209 steps).
 Proof modification of "gsumbagdiaglemOLD" is discouraged (571 steps).
-Proof modification of "gsumccatOLD" is discouraged (996 steps).
 Proof modification of "hashf1lem1OLD" is discouraged (886 steps).
 Proof modification of "hashfacenOLD" is discouraged (753 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
@@ -20800,8 +20802,10 @@ Proof modification of "indistps2ALT" is discouraged (43 steps).
 Proof modification of "indistpsALT" is discouraged (64 steps).
 Proof modification of "indistpsALTOLD" is discouraged (64 steps).
 Proof modification of "indthincALT" is discouraged (202 steps).
+Proof modification of "infn0ALT" is discouraged (38 steps).
 Proof modification of "infpssALT" is discouraged (52 steps).
 Proof modification of "infregelb" is discouraged (185 steps).
+Proof modification of "infsdomnnOLD" is discouraged (39 steps).
 Proof modification of "int2" is discouraged (14 steps).
 Proof modification of "int3" is discouraged (17 steps).
 Proof modification of "intprOLD" is discouraged (112 steps).
@@ -20836,7 +20840,6 @@ Proof modification of "joincomALT" is discouraged (83 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
 Proof modification of "lediv2aALT" is discouraged (264 steps).
-Proof modification of "lsmidmOLD" is discouraged (116 steps).
 Proof modification of "luk-1" is discouraged (73 steps).
 Proof modification of "luk-2" is discouraged (52 steps).
 Proof modification of "luk-3" is discouraged (20 steps).
@@ -21009,6 +21012,7 @@ Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "nnfiOLD" is discouraged (14 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnne0ALT" is discouraged (19 steps).
+Proof modification of "nnsdomgOLD" is discouraged (97 steps).
 Proof modification of "noelOLD" is discouraged (77 steps).
 Proof modification of "norcomOLD" is discouraged (27 steps).
 Proof modification of "normlem7tALT" is discouraged (177 steps).
@@ -21602,6 +21606,7 @@ Proof modification of "wunressOLD" is discouraged (145 steps).
 Proof modification of "xorbi12iOLD" is discouraged (31 steps).
 Proof modification of "xorcomOLD" is discouraged (27 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
+Proof modification of "xpfiOLD" is discouraged (373 steps).
 Proof modification of "xrge0tmdALT" is discouraged (166 steps).
 Proof modification of "zexALT" is discouraged (34 steps).
 Proof modification of "zfcndac" is discouraged (256 steps).
