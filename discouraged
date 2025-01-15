@@ -12908,6 +12908,7 @@
 "scandx" is used by "zlmdsOLD".
 "scandx" is used by "zlmlemOLD".
 "scandx" is used by "zlmtsetOLD".
+"selsALT" is used by "elALT".
 "setrec1lem1" is used by "setrec1lem2".
 "setrec1lem1" is used by "setrec1lem4".
 "setrec1lem1" is used by "setrec2fun".
@@ -19034,6 +19035,7 @@ New usage of "scandx" is discouraged (20 uses).
 New usage of "scmateALT" is discouraged (0 uses).
 New usage of "sdom0OLD" is discouraged (0 uses).
 New usage of "sdom1OLD" is discouraged (0 uses).
+New usage of "selsALT" is discouraged (1 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
 New usage of "seqp1iOLD" is discouraged (0 uses).
 New usage of "setrec1lem1" is discouraged (3 uses).
@@ -21303,6 +21305,7 @@ Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "sdom0OLD" is discouraged (29 steps).
 Proof modification of "sdom1OLD" is discouraged (73 steps).
+Proof modification of "selsALT" is discouraged (34 steps).
 Proof modification of "seqp1iOLD" is discouraged (20 steps).
 Proof modification of "setsidvaldOLD" is discouraged (93 steps).
 Proof modification of "setsmsbasOLD" is discouraged (55 steps).
@@ -21319,7 +21322,6 @@ Proof modification of "smgrpismgmOLD" is discouraged (22 steps).
 Proof modification of "sn-00id" is discouraged (50 steps).
 Proof modification of "sn-exelALT" is discouraged (52 steps).
 Proof modification of "snelpwrVD" is discouraged (37 steps).
-Proof modification of "snex" is discouraged (64 steps).
 Proof modification of "snexALT" is discouraged (48 steps).
 Proof modification of "snnen2oOLD" is discouraged (116 steps).
 Proof modification of "snssgOLD" is discouraged (58 steps).
