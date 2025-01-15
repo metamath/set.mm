@@ -3265,8 +3265,6 @@
 "cbvsbc" is used by "cbvcsb".
 "cbvsbc" is used by "cbvsbcv".
 "ccat2s1fvwOLD" is used by "ccat2s1fstOLD".
-"ccatlenOLD" is used by "ccat2s1lenOLD".
-"ccatlenOLD" is used by "wlklenvclwlkOLD".
 "ccatval1OLD" is used by "ccat2s1p1OLD".
 "ccatval1OLD" is used by "ccats1val1OLD".
 "ccatw2s1assOLD" is used by "ccat2s1fvwOLD".
@@ -15326,7 +15324,6 @@ New usage of "cbvab" is discouraged (4 uses).
 New usage of "cbvabwOLD" is discouraged (0 uses).
 New usage of "cbval" is discouraged (4 uses).
 New usage of "cbval2" is discouraged (1 uses).
-New usage of "cbval2vOLD" is discouraged (0 uses).
 New usage of "cbval2vv" is discouraged (0 uses).
 New usage of "cbvald" is discouraged (16 uses).
 New usage of "cbvaldva" is discouraged (1 uses).
@@ -15396,10 +15393,8 @@ New usage of "ccat2s1fstOLD" is discouraged (0 uses).
 New usage of "ccat2s1fvwALT" is discouraged (0 uses).
 New usage of "ccat2s1fvwALTOLD" is discouraged (0 uses).
 New usage of "ccat2s1fvwOLD" is discouraged (1 uses).
-New usage of "ccat2s1lenOLD" is discouraged (0 uses).
 New usage of "ccat2s1p1OLD" is discouraged (0 uses).
 New usage of "ccat2s1p2OLD" is discouraged (0 uses).
-New usage of "ccatlenOLD" is discouraged (2 uses).
 New usage of "ccats1val1OLD" is discouraged (0 uses).
 New usage of "ccatval1OLD" is discouraged (2 uses).
 New usage of "ccatw2s1assOLD" is discouraged (2 uses).
@@ -19594,7 +19589,6 @@ New usage of "wl-section-prop" is discouraged (0 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
 New usage of "wlkResOLD" is discouraged (0 uses).
-New usage of "wlklenvclwlkOLD" is discouraged (0 uses).
 New usage of "wrecseq123OLD" is discouraged (0 uses).
 New usage of "wunfuncOLD" is discouraged (0 uses).
 New usage of "wunnatOLD" is discouraged (0 uses).
@@ -20073,7 +20067,6 @@ Proof modification of "catcoppcclOLD" is discouraged (402 steps).
 Proof modification of "catcxpcclOLD" is discouraged (864 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbvabwOLD" is discouraged (60 steps).
-Proof modification of "cbval2vOLD" is discouraged (85 steps).
 Proof modification of "cbveuALT" is discouraged (48 steps).
 Proof modification of "cbveuwOLD" is discouraged (29 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
@@ -20092,10 +20085,8 @@ Proof modification of "ccat2s1fstOLD" is discouraged (43 steps).
 Proof modification of "ccat2s1fvwALT" is discouraged (116 steps).
 Proof modification of "ccat2s1fvwALTOLD" is discouraged (150 steps).
 Proof modification of "ccat2s1fvwOLD" is discouraged (203 steps).
-Proof modification of "ccat2s1lenOLD" is discouraged (66 steps).
 Proof modification of "ccat2s1p1OLD" is discouraged (93 steps).
 Proof modification of "ccat2s1p2OLD" is discouraged (162 steps).
-Proof modification of "ccatlenOLD" is discouraged (119 steps).
 Proof modification of "ccats1val1OLD" is discouraged (38 steps).
 Proof modification of "ccatval1OLD" is discouraged (145 steps).
 Proof modification of "ccatw2s1assOLD" is discouraged (48 steps).
@@ -21598,7 +21589,6 @@ Proof modification of "wl-section-prop" is discouraged (1 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
 Proof modification of "wlkResOLD" is discouraged (50 steps).
-Proof modification of "wlklenvclwlkOLD" is discouraged (197 steps).
 Proof modification of "wrecseq123OLD" is discouraged (211 steps).
 Proof modification of "wunfuncOLD" is discouraged (338 steps).
 Proof modification of "wunnatOLD" is discouraged (341 steps).
