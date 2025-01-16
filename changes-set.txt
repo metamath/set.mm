@@ -87,6 +87,16 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+13-Jan-25 elunnel2  [same]      moved from GS's mathbox to main set.mm
+12-Jan-25 rimrhm    [same]      revised - eliminated unnecessary hypotheses
+12-Jan-25 isrim     [same]      revised - eliminated unnecessary antecedent
+12-Jan-25 isrim0    [same]      revised - eliminated unnecessary antecedent
+12-Jan-25 elrnust   ---         obsolete - use elfvunirn instead
+12-Jan-25 elunirn2  ---         obsolete - use elfvunirn instead
+12-Jan-25 ---       ---         Moved surreal birthday and density theorems
+                                from SF's mathbox to main set.mm
+12-Jan-25 sotrine   [same]      Moved from SF's mathbox to main set.mm
+12-Jan-25 funeldmb  [same]      Moved from SF's mathbox to main set.mm
 11-Jan-25 fldcrng   fldcrngo
 11-Jan-25 recrng    resrng
 11-Jan-25 ---       ---         Moved surreal ordering theorems from
@@ -153,7 +163,7 @@ Date      Old       New         Notes
 13-Dec-24 wksonproplem [same]   revised - eliminated hypothesis
 13-Dec-24 mptmpoopabovd [same]  revised - eliminated hypotheses
 13-Dec-24 mptmpoopabbrd [same]  revised - eliminated hypotheses
-13-Dec-24 wlkRes     ---        obsolete - use obapresex2 instead
+13-Dec-24 wlkRes     ---        obsolete - use opabresex2 instead
 13-Dec-24 opabresex2d ---       obsolete - use opabresex2 instead
 27-Nov-24 eldifsucnn [same]     moved from SF's mathbox to main set.mm
 27-Nov-24 nnasmo    [same]      moved from SF's mathbox to main set.mm
