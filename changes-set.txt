@@ -87,6 +87,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+12-Jan-25 ---       ---         Moved surreal full-eta theorems
+                                from SF's mathbox to main set.mm
+16-Jan-25 snres0    [same]      Moved from SF's mathbox to main set.mm
 15-Jan-25 eqfunressuc [same]    Moved from SF's mathbox to main set.mm
 15-Jan-25 eqfunresadj [same]    Moved from SF's mathbox to main set.mm
 15-Jan-25 sotr3     [same]      Moved from SF's mathbox to main set.mm
