@@ -136,4 +136,4 @@ $)
   $( Impossibility of trisecting angles.  This is expressed by stating that the
      cosine of an angle of ` ( _pi / 9 ) ` which would be the third of the
      constructible angle ` ( _pi / 3 ) ` , is not constructible. $)
-     imp3ang $p |- -. ( cos ` ( _pi / 9 ) ) e. Constr $= ? $.
+  imp3ang $p |- -. ( cos ` ( _pi / 9 ) ) e. Constr $= ? $.
