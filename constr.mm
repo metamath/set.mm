@@ -2,7 +2,7 @@ $[ set.mm $]
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-  Contructible numbers
+  Constructible numbers
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   This section defines the set of constructible points as complex numbers which
   can be drawn starting from two points (we take ` 0 ` and ` 1 ` ), and taking
