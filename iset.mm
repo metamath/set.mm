@@ -142436,6 +142436,32 @@ $)
   $}
 
   ${
+    ressbasd.r $e |- ( ph -> R = ( W |`s A ) ) $.
+    ressbasd.b $e |- ( ph -> B = ( Base ` W ) ) $.
+    ressbasd.w $e |- ( ph -> W e. X ) $.
+    ${
+      ressbasd.a $e |- ( ph -> A e. V ) $.
+      $( Base set of a structure restriction.  (Contributed by Stefan O'Rear,
+         26-Nov-2014.)  (Proof shortened by AV, 7-Nov-2024.) $)
+      ressbasd $p |- ( ph -> ( A i^i B ) = ( Base ` R ) ) $=
+        ( cbs cfv cin cnx co wcel cvv wceq syl2anc cop csts inex1g syl baseslid
+        setsslid ineq2d cress ressvalsets eqtrd fveq2d 3eqtr4d ) ABFLMZNZFOLMUN
+        UAUBPZLMZBCNDLMAFGQZUNRQZUNUPSJABEQZURKBUMEUCUDGUNLRFUEUFTACUMBIUGADUOL
+        ADFBUHPZUOHAUQUSUTUOSJKBFGEUITUJUKUL $.
+    $}
+
+    ${
+      ressbas2d.ss $e |- ( ph -> A C_ B ) $.
+      $( Base set of a structure restriction.  (Contributed by Mario Carneiro,
+         2-Dec-2014.) $)
+      ressbas2d $p |- ( ph -> A = ( Base ` R ) ) $=
+        ( cin cbs cfv wss wceq df-ss sylib cvv wfn wcel funfvex sylancr eqeltrd
+        basfn elexd funfni ssexd ressbasd eqtr3d ) ABCKZBDLMABCNUJBOJBCPQABCDRE
+        FGHIABCRACELMZRHALRSERTUKRTZUDAEFIUEULRELELUAUFUBUCJUGUHUI $.
+    $}
+  $}
+
+  ${
     strressid.b $e |- ( ph -> B = ( Base ` W ) ) $.
     strressid.s $e |- ( ph -> W Struct <. M , N >. ) $.
     strressid.f $e |- ( ph -> Fun W ) $.
