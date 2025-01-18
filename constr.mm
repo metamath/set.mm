@@ -32,7 +32,7 @@ $)
     fldextdgirred.b $e |- B = ( Base ` F ) $.
     fldextdgirred.0 $e |- .0. = ( 0g ` F ) $.
     fldextdgirred.d $e |- D = ( deg1 ` F ) $.
-    fldextdgirred.o $e |- O = ( eval1 ` F ) $.
+    fldextdgirred.o $e |- O = ( F evalSub1 E ) $.
     fldextdgirred.m $e |- M = ( Poly1 ` F ) $.
     fldextdgirred.k $e |- K = ( F |`s E ) $.
     fldextdgirred.l $e |- L = ( F |`s ( F fldGen ( E u. { Z } ) ) ) $.
