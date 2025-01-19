@@ -91372,6 +91372,19 @@ $)
       DBKABCIJPDABCEFMHNON $.
   $}
 
+  ${
+    $d A x $.
+    $( A real number has a multiplicative inverse if and only if it is apart
+       from zero.  Theorem 11.2.4 of [HoTT], p.  (varies).  (Contributed by Jim
+       Kingdon, 18-Jan-2025.) $)
+    rerecapb $p |- ( A e. RR -> ( A =//= 0 <-> E. x e. RR ( A x. x ) = 1 ) ) $=
+      ( cr wcel cc0 cap wbr cv cmul co c1 wceq wrex cdiv rerecclap recn recidap
+      wa cc sylan oveq2 eqeq1d rspcev syl2anc ex wss wi ax-resscn ssrexv recapb
+      ax-mp biimprd syl2im impbid ) BCDZBEFGZBAHZIJZKLZACMZUOUPUTUOUPRKBNJZCDBV
+      AIJZKLZUTBOUOBSDZUPVCBPZBQTUSVCAVACUQVALURVBKUQVABIUAUBUCUDUEUOVDUTUSASMZ
+      UPVECSUFUTVFUGUHUSACSUIUKVDUPVFABUJULUMUN $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
