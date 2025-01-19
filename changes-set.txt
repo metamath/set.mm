@@ -87,6 +87,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+19-Jan-25 ---       ---         Moved surreal zero and one theorems
+                                from SF's mathbox to main set.mm
+19-Jan-25 fnssintima [same]     Moved from SF's mathbox to main set.mm
 18-Jan-25 elintabg  [same]      Moved from RP's mathbox to main set.mm
 17-Jan-25 ---       ---         Moved Conway cut theorems
                                 from SF's mathbox to main set.mm
