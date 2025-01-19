@@ -38,7 +38,7 @@ $)
     fldextdgirred.l $e |- L = ( F |`s ( F fldGen ( E u. { Z } ) ) ) $.
     fldextdgirred.f $e |- ( ph -> F e. Field ) $.
     fldextdgirred.e $e |- ( ph -> E e. ( SubDRing ` F ) ) $.
-    fldextdgirred.p $e |- ( ph -> P e. ( Base ` M ) ) $.
+    fldextdgirred.p $e |- ( ph -> P e. dom O ) $.
     fldextdgirred.1 $e |- ( ph -> P e. ( Irred ` M ) ) $.
     fldextdgirred.z $e |- ( ph -> Z e. ( B \ E ) ) $.
     fldextdgirred.2 $e |- ( ph -> ( ( O ` P ) ` Z ) = .0. ) $.
