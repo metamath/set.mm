@@ -1768,6 +1768,7 @@
 "bj-inftyexpidisj" is used by "bj-minftynrr".
 "bj-inftyexpidisj" is used by "bj-pinftynrr".
 "bj-inftyexpiinv" is used by "bj-inftyexpiinj".
+"bj-velpwALT" is used by "bj-elpwgALT".
 "blo3i" is used by "ipblnfi".
 "blocn" is used by "blocn2".
 "blocn2" is used by "ubthlem1".
@@ -14874,6 +14875,7 @@ New usage of "bj-denot" is discouraged (0 uses).
 New usage of "bj-dfid2ALT" is discouraged (0 uses).
 New usage of "bj-elabd2ALT" is discouraged (0 uses).
 New usage of "bj-elissetALT" is discouraged (0 uses).
+New usage of "bj-elpwgALT" is discouraged (0 uses).
 New usage of "bj-equsalhv" is discouraged (0 uses).
 New usage of "bj-eximALT" is discouraged (1 uses).
 New usage of "bj-gl4" is discouraged (0 uses).
@@ -14895,6 +14897,7 @@ New usage of "bj-sbeqALT" is discouraged (0 uses).
 New usage of "bj-sbidmOLD" is discouraged (0 uses).
 New usage of "bj-ssbid1ALT" is discouraged (0 uses).
 New usage of "bj-ssbid2ALT" is discouraged (0 uses).
+New usage of "bj-velpwALT" is discouraged (1 uses).
 New usage of "bj-vtoclgfALT" is discouraged (0 uses).
 New usage of "bj-xpima1snALT" is discouraged (0 uses).
 New usage of "blo3i" is discouraged (1 uses).
@@ -16510,6 +16513,7 @@ New usage of "elimnv" is discouraged (1 uses).
 New usage of "elimnvu" is discouraged (5 uses).
 New usage of "elimph" is discouraged (3 uses).
 New usage of "elimphu" is discouraged (3 uses).
+New usage of "elintabOLD" is discouraged (0 uses).
 New usage of "ellnfn" is discouraged (5 uses).
 New usage of "ellnop" is discouraged (9 uses).
 New usage of "elnanel" is discouraged (1 uses).
@@ -17355,6 +17359,7 @@ New usage of "infpssALT" is discouraged (0 uses).
 New usage of "infsdomnnOLD" is discouraged (0 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
+New usage of "intidOLD" is discouraged (0 uses).
 New usage of "intnatN" is discouraged (0 uses).
 New usage of "intprOLD" is discouraged (0 uses).
 New usage of "intprgOLD" is discouraged (0 uses).
@@ -19159,6 +19164,7 @@ New usage of "smgrpmgm" is discouraged (1 uses).
 New usage of "sn-exelALT" is discouraged (0 uses).
 New usage of "sn-wcdeq" is discouraged (0 uses).
 New usage of "snatpsubN" is discouraged (3 uses).
+New usage of "snelpwiOLD" is discouraged (0 uses).
 New usage of "snelpwrVD" is discouraged (0 uses).
 New usage of "snexALT" is discouraged (1 uses).
 New usage of "snnen2oOLD" is discouraged (0 uses).
@@ -19942,6 +19948,7 @@ Proof modification of "bj-eeanvw" is discouraged (32 steps).
 Proof modification of "bj-elabd2ALT" is discouraged (100 steps).
 Proof modification of "bj-elabtru" is discouraged (25 steps).
 Proof modification of "bj-elissetALT" is discouraged (24 steps).
+Proof modification of "bj-elpwgALT" is discouraged (29 steps).
 Proof modification of "bj-endbase" is discouraged (81 steps).
 Proof modification of "bj-endcomp" is discouraged (81 steps).
 Proof modification of "bj-endmnd" is discouraged (234 steps).
@@ -20063,6 +20070,7 @@ Proof modification of "bj-substw" is discouraged (49 steps).
 Proof modification of "bj-unexg" is discouraged (106 steps).
 Proof modification of "bj-vecssmod" is discouraged (18 steps).
 Proof modification of "bj-vecssmodel" is discouraged (5 steps).
+Proof modification of "bj-velpwALT" is discouraged (24 steps).
 Proof modification of "bj-vjust" is discouraged (22 steps).
 Proof modification of "bj-vtocl" is discouraged (12 steps).
 Proof modification of "bj-vtoclf" is discouraged (29 steps).
@@ -20436,6 +20444,7 @@ Proof modification of "eliminable2b" is discouraged (7 steps).
 Proof modification of "eliminable2c" is discouraged (8 steps).
 Proof modification of "eliminable3a" is discouraged (7 steps).
 Proof modification of "eliminable3b" is discouraged (8 steps).
+Proof modification of "elintabOLD" is discouraged (75 steps).
 Proof modification of "elopabrOLD" is discouraged (58 steps).
 Proof modification of "elopaelxpOLD" is discouraged (47 steps).
 Proof modification of "eloprabgaOLD" is discouraged (269 steps).
@@ -20826,6 +20835,7 @@ Proof modification of "infregelb" is discouraged (185 steps).
 Proof modification of "infsdomnnOLD" is discouraged (39 steps).
 Proof modification of "int2" is discouraged (14 steps).
 Proof modification of "int3" is discouraged (17 steps).
+Proof modification of "intidOLD" is discouraged (57 steps).
 Proof modification of "intprOLD" is discouraged (112 steps).
 Proof modification of "intprgOLD" is discouraged (80 steps).
 Proof modification of "iotaexOLD" is discouraged (57 steps).
@@ -21344,6 +21354,7 @@ Proof modification of "smgrpassOLD" is discouraged (54 steps).
 Proof modification of "smgrpismgmOLD" is discouraged (22 steps).
 Proof modification of "sn-00id" is discouraged (50 steps).
 Proof modification of "sn-exelALT" is discouraged (52 steps).
+Proof modification of "snelpwiOLD" is discouraged (20 steps).
 Proof modification of "snelpwrVD" is discouraged (37 steps).
 Proof modification of "snexALT" is discouraged (48 steps).
 Proof modification of "snnen2oOLD" is discouraged (116 steps).
