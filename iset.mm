@@ -89988,6 +89988,17 @@ $)
       FUQVGRVLUQUPVHAVIUQUPUKVJSTUIUJULPUM $.
   $}
 
+  ${
+    $d A x $.
+    $( A complex number has a multiplicative inverse if and only if it is apart
+       from zero.  Theorem 11.2.4 of [HoTT], p.  (varies), generalized from
+       real to complex numbers.  (Contributed by Jim Kingdon, 18-Jan-2025.) $)
+    recapb $p |- ( A e. CC -> ( A =//= 0 <-> E. x e. CC ( A x. x ) = 1 ) ) $=
+      ( cc wcel cc0 cap wbr cv cmul co c1 wceq wrex recexap ex wa simprl simprr
+      simpl 1ap0 eqbrtrdi mulap0bad rexlimdvaa impbid ) BCDZBEFGZBAHZIJZKLZACMZ
+      UEUFUJABNOUEUIUFACUEUGCDZUIPZPZBUGUEULSUEUKUIQUMUHKEFUEUKUIRTUAUBUCUD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
