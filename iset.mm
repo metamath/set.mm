@@ -142504,6 +142504,24 @@ $)
       $.
   $}
 
+  ${
+    resseqnbas.r $e |- R = ( W |`s A ) $.
+    resseqnbas.e $e |- C = ( E ` W ) $.
+    resseqnbasd.f $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
+    resseqnbas.n $e |- ( E ` ndx ) =/= ( Base ` ndx ) $.
+    resseqnbasd.w $e |- ( ph -> W e. X ) $.
+    resseqnbasd.a $e |- ( ph -> A e. V ) $.
+    $( The components of an extensible structure except the base set remain
+       unchanged on a structure restriction.  (Contributed by Mario Carneiro,
+       26-Nov-2014.)  (Revised by Mario Carneiro, 2-Dec-2014.)  (Revised by AV,
+       19-Oct-2024.) $)
+    resseqnbasd $p |- ( ph -> C = ( E ` R ) ) $=
+      ( cfv cbs co wcel wceq syl2anc cnx cin cop csts ressvalsets eqtrid fveq2d
+      cress cvv inex1g syl basendxnn setsslnid eqtr4d eqtr4id ) ACGEOZDEOZJAUQG
+      UAPOZBGPOZUBZUCUDQZEOZUPADVAEADGBUHQZVAIAGHRZBFRZVCVASMNBGHFUETUFUGAVDUTU
+      IRZUPVBSMAVEVFNBUSFUJUKHUTUREUIGKLULUMTUNUO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
