@@ -142459,6 +142459,15 @@ $)
         basfn elexd funfni ssexd ressbasd eqtr3d ) ABCKZBDLMABCNUJBOJBCPQABCDRE
         FGHIABCRACELMZRHALRSERTUKRTZUDAEFIUEULRELELUAUFUBUCJUGUHUI $.
     $}
+
+    ${
+      ressbasssd.a $e |- ( ph -> A e. V ) $.
+      $( The base set of a restriction is a subset of the base set of the
+         original structure.  (Contributed by Stefan O'Rear, 27-Nov-2014.)
+         (Revised by Mario Carneiro, 30-Apr-2015.) $)
+      ressbasssd $p |- ( ph -> ( Base ` R ) C_ B ) $=
+        ( cbs cfv cin ressbasd inss2 eqsstrrdi ) ADLMBCNCABCDEFGHIJKOBCPQ $.
+    $}
   $}
 
   ${
