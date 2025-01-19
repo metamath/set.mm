@@ -2,7 +2,7 @@ $[ set.mm $]
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-  Contructible numbers
+  Constructible numbers
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   This section defines the set of constructible points as complex numbers which
   can be drawn starting from two points (we take ` 0 ` and ` 1 ` ), and taking
@@ -32,13 +32,13 @@ $)
     fldextdgirred.b $e |- B = ( Base ` F ) $.
     fldextdgirred.0 $e |- .0. = ( 0g ` F ) $.
     fldextdgirred.d $e |- D = ( deg1 ` F ) $.
-    fldextdgirred.o $e |- O = ( eval1 ` F ) $.
+    fldextdgirred.o $e |- O = ( F evalSub1 E ) $.
     fldextdgirred.m $e |- M = ( Poly1 ` F ) $.
     fldextdgirred.k $e |- K = ( F |`s E ) $.
     fldextdgirred.l $e |- L = ( F |`s ( F fldGen ( E u. { Z } ) ) ) $.
     fldextdgirred.f $e |- ( ph -> F e. Field ) $.
     fldextdgirred.e $e |- ( ph -> E e. ( SubDRing ` F ) ) $.
-    fldextdgirred.p $e |- ( ph -> P e. ( Base ` M ) ) $.
+    fldextdgirred.p $e |- ( ph -> P e. dom O ) $.
     fldextdgirred.1 $e |- ( ph -> P e. ( Irred ` M ) ) $.
     fldextdgirred.z $e |- ( ph -> Z e. ( B \ E ) ) $.
     fldextdgirred.2 $e |- ( ph -> ( ( O ` P ) ` Z ) = .0. ) $.
@@ -104,8 +104,8 @@ $)
      the line-line, line-circle and circle-circle intersections constructions
      using points in a previous iteration. $)
   df-constr $a |- Constr = ( rec ( ( s e. _V |-> { x e. CC |
-    ( ( E. a e. s E. b e. s E. c e. s E. d e. s E. t e. RR E. r e. RR ( x = ( a + ( t x. ( b - a ) ) ) /\ x = ( c + ( r x. ( d - c ) ) ) /\ -. ( Im ` ( ( * ` ( b - a ) ) x. ( d - c ) ) ) = 0 )
-     \/ E. a e. s E. b e. s E. c e. s E. d e. s E. e e. s E. f e. s E. t e. RR ( x = ( a + ( t x. ( b - a ) ) ) /\ ( abs ` ( x - c ) ) = ( abs ` ( e - f ) ) ) )
+    ( E. a e. s E. b e. s E. c e. s E. d e. s E. t e. RR E. r e. RR ( x = ( a + ( t x. ( b - a ) ) ) /\ x = ( c + ( r x. ( d - c ) ) ) /\ -. ( Im ` ( ( * ` ( b - a ) ) x. ( d - c ) ) ) = 0 )
+     \/ E. a e. s E. b e. s E. c e. s E. e e. s E. f e. s E. t e. RR ( x = ( a + ( t x. ( b - a ) ) ) /\ ( abs ` ( x - c ) ) = ( abs ` ( e - f ) ) )
      \/ E. a e. s E. b e. s E. c e. s E. d e. s E. e e. s E. f e. s E. t e. RR ( -. a = d /\ ( abs ` ( x - a ) ) = ( abs ` ( b - c ) ) /\ ( abs ` ( x - d ) ) = ( abs ` ( e - f ) ) ) )
       } ) , { 0 , 1 } ) " _om ) $.
 
@@ -124,7 +124,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Impossible constuctions
+  Impossible constructions
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
