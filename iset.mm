@@ -142522,6 +142522,20 @@ $)
       IRZUPVBSMAVEVFNBUSFUJUKHUTUREUIGKLULUMTUNUO $.
   $}
 
+  ${
+    ressidbasd.1 $e |- ( ph -> B = ( Base ` W ) ) $.
+    ressidbasd.a $e |- ( ph -> A e. X ) $.
+    ressidbasd.w $e |- ( ph -> W e. V ) $.
+    $( Restriction only cares about the part of the second set which intersects
+       the base of the first.  (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
+    ressinbasd $p |- ( ph -> ( W |`s A ) = ( W |`s ( A i^i B ) ) ) $=
+      ( cbs cfv cin cop csts co cress ineq2d wcel wceq ressvalsets inidm eqtr3d
+      cnx eqtr3id inass eqtr4di opeq2d oveq2d syl2anc cvv inex1g syl 3eqtr4d )
+      AEUCJKZBEJKZLZMZNOZEUNBCLZUOLZMZNOZEBPOZEUSPOZAUQVAENAUPUTUNAUPBCUOLZLUTA
+      UOVEBACUOVEGACCCLVECUAACUOCGQUDUBQBCUOUEUFUGUHAEDRZBFRZVCURSIHBEDFTUIAVFU
+      SUJRZVDVBSIAVGVHHBCFUKULUSEDUJTUIUM $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
