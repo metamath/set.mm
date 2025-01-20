@@ -9940,7 +9940,11 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>ress0</TD>
   <TD><I>none</I></TD>
-  <TD>The set.mm proof relies on excluded middle.</TD>
+  <TD>Given ~ df-iress , ` ( (/) |``s A ) ` produces not ` (/) `
+  but a structure with a base slot whose value is the empty
+  set.  Not having ress0 appears to be no loss, because set.mm
+  seems to use it in conjunction with case elimination which is
+  not available in iset.mm.</TD>
 </TR>
 
 <tr>
