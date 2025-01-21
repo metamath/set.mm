@@ -142540,7 +142540,15 @@ $)
      (Proof shortened by Mario Carneiro, 2-Dec-2014.) $)
   ressressg $p |- ( ( A e. X /\ B e. Y /\ W e. Z ) ->
     ( ( W |`s A ) |`s B ) = ( W |`s ( A i^i B ) ) ) $=
-    ? $.
+    ( wcel cbs cfv cress cin cop csts cvv wceq syl2anc ressvalsets inex1g syl
+    co w3a eqidd simp3 simp1 ressbasd ineq2d inass ineq1i eqtr3i eqtr3di opeq2d
+    cnx incom oveq2d ressex simp2 oveq1d basendxnn a1i setsabsd 3eqtrd 3eqtr4d
+    cn ) ADGZBEGZCFGZUAZCULHIZBCAJTZHIZKZLZMTZCVHABKZCHIZKZLZMTZVIBJTZCVNJTZVGV
+    LVQCMVGVKVPVHVGBAVOKZKZVKVPVGWAVJBVGAVOVIDCFVGVIUBVGVOUBVDVEVFUCZVDVEVFUDZU
+    EUFBAKZVOKWBVPBAVOUGWEVNVOBAUMUHUIUJUKUNVGVSVIVLMTZCVHWALMTZVLMTVMVGVINGZVE
+    VSWFOVGVFVDWHWCWDACFDUOPVDVEVFUPZBVINEQPVGVIWGVLMVGVFVDVIWGOWCWDACFDQPUQVGV
+    HWAVKCNFVCNWCVHVCGVGURUSVGVDWANGWDAVODRSVGVEVKNGWIBVJERSUTVAVGVFVNNGZVTVROW
+    CVGVDWJWDABDRSVNCFNQPVB $.
 
 
 $(
