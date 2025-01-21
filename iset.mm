@@ -142550,6 +142550,14 @@ $)
     HWAVKCNFVCNWCVHVCGVGURUSVGVDWANGWDAVODRSVGVEVKNGWIBVJERSUTVAVGVFVNNGZVTVROW
     CVGVDWJWDABDRSVNCFNQPVB $.
 
+  $( Restriction absorption law.  (Contributed by Mario Carneiro,
+     12-Jun-2015.) $)
+  ressabsg $p |- ( ( A e. X /\ B C_ A /\ W e. Y ) ->
+    ( ( W |`s A ) |`s B ) = ( W |`s B ) ) $=
+    ( wcel wss w3a cress co cin cvv wceq simp1 simp2 ressressg syld3an2 sseqin2
+    ssexd sylib oveq2d eqtrd ) ADFZBAGZCEFZHZCAIJBIJZCABKZIJZCBIJUCBLFUDUEUGUIM
+    UFBADUCUDUENUCUDUEOZSABCDLEPQUFUHBCIUFUDUHBMUJBARTUAUB $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
