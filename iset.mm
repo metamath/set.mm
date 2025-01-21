@@ -142536,6 +142536,12 @@ $)
       SUJRZVDVBSIAVGVHHBCFUKULUSEDUJTUIUM $.
   $}
 
+  $( Restriction composition law.  (Contributed by Stefan O'Rear, 29-Nov-2014.)
+     (Proof shortened by Mario Carneiro, 2-Dec-2014.) $)
+  ressressg $p |- ( ( A e. X /\ B e. Y /\ W e. Z ) ->
+    ( ( W |`s A ) |`s B ) = ( W |`s ( A i^i B ) ) ) $=
+    ? $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
