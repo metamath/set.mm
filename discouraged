@@ -3259,15 +3259,12 @@
 "cbvrexf" is used by "cbvrex".
 "cbvrexsv" is used by "cbvexsv".
 "cbvrexv" is used by "cbvrex2v".
-"cbvrexv" is used by "cygablOLD".
 "cbvrexv" is used by "rexlimdvaacbv".
 "cbvriota" is used by "cbvriotav".
 "cbvrmo" is used by "cbvrmov".
 "cbvsbc" is used by "cbvcsb".
 "cbvsbc" is used by "cbvsbcv".
 "ccat2s1fvwOLD" is used by "ccat2s1fstOLD".
-"ccatval1OLD" is used by "ccat2s1p1OLD".
-"ccatval1OLD" is used by "ccats1val1OLD".
 "ccatw2s1assOLD" is used by "ccat2s1fvwOLD".
 "ccatw2s1assOLD" is used by "ccatw2s1ccatws2OLD".
 "ccatw2s1ccatws2OLD" is used by "ccat2s1fvwALTOLD".
@@ -15384,7 +15381,7 @@ New usage of "cbvrexcsf" is discouraged (1 uses).
 New usage of "cbvrexdva2OLD" is discouraged (0 uses).
 New usage of "cbvrexf" is discouraged (1 uses).
 New usage of "cbvrexsv" is discouraged (1 uses).
-New usage of "cbvrexv" is discouraged (3 uses).
+New usage of "cbvrexv" is discouraged (2 uses).
 New usage of "cbvrexv2" is discouraged (0 uses).
 New usage of "cbvriota" is discouraged (1 uses).
 New usage of "cbvriotav" is discouraged (0 uses).
@@ -15398,10 +15395,6 @@ New usage of "ccat2s1fstOLD" is discouraged (0 uses).
 New usage of "ccat2s1fvwALT" is discouraged (0 uses).
 New usage of "ccat2s1fvwALTOLD" is discouraged (0 uses).
 New usage of "ccat2s1fvwOLD" is discouraged (1 uses).
-New usage of "ccat2s1p1OLD" is discouraged (0 uses).
-New usage of "ccat2s1p2OLD" is discouraged (0 uses).
-New usage of "ccats1val1OLD" is discouraged (0 uses).
-New usage of "ccatval1OLD" is discouraged (2 uses).
 New usage of "ccatw2s1assOLD" is discouraged (2 uses).
 New usage of "ccatw2s1ccatws2OLD" is discouraged (1 uses).
 New usage of "ccatw2s1p1OLD" is discouraged (0 uses).
@@ -15849,7 +15842,6 @@ New usage of "cvr2N" is discouraged (1 uses).
 New usage of "cvrletrN" is discouraged (0 uses).
 New usage of "cvrnrefN" is discouraged (0 uses).
 New usage of "cvrval4N" is discouraged (0 uses).
-New usage of "cygablOLD" is discouraged (0 uses).
 New usage of "dalem31N" is discouraged (0 uses).
 New usage of "daraptiALT" is discouraged (0 uses).
 New usage of "dariiALT" is discouraged (0 uses).
@@ -20122,10 +20114,6 @@ Proof modification of "ccat2s1fstOLD" is discouraged (43 steps).
 Proof modification of "ccat2s1fvwALT" is discouraged (116 steps).
 Proof modification of "ccat2s1fvwALTOLD" is discouraged (150 steps).
 Proof modification of "ccat2s1fvwOLD" is discouraged (203 steps).
-Proof modification of "ccat2s1p1OLD" is discouraged (93 steps).
-Proof modification of "ccat2s1p2OLD" is discouraged (162 steps).
-Proof modification of "ccats1val1OLD" is discouraged (38 steps).
-Proof modification of "ccatval1OLD" is discouraged (145 steps).
 Proof modification of "ccatw2s1assOLD" is discouraged (48 steps).
 Proof modification of "ccatw2s1ccatws2OLD" is discouraged (57 steps).
 Proof modification of "ccatw2s1p1OLD" is discouraged (155 steps).
@@ -20191,7 +20179,6 @@ Proof modification of "currysetlem" is discouraged (49 steps).
 Proof modification of "currysetlem1" is discouraged (71 steps).
 Proof modification of "currysetlem2" is discouraged (20 steps).
 Proof modification of "currysetlem3" is discouraged (82 steps).
-Proof modification of "cygablOLD" is discouraged (379 steps).
 Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
