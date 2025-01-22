@@ -70,7 +70,6 @@ proposed  syl5com   imtridcom
 proposed  syl5      imtrid      alternate proposal: sylid
 proposed  syl56     imtridi
 proposed  syl5d     imtridd
-proposed  syl5bir   biimtrrid
 proposed  syl5ib    imbitrid
 proposed  syl5ibcom imbitridcom
 proposed  syl5ibr   imbitrrid
@@ -87,6 +86,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+21-Jan-25 syl5bir   biimtrrid
 19-Jan-25 ---       ---         Moved surreal zero and one theorems
                                 from SF's mathbox to main set.mm
 19-Jan-25 fnssintima [same]     Moved from SF's mathbox to main set.mm
