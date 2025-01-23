@@ -149762,6 +149762,49 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Divisibility
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c ||r $. $( Ring divisibility relation $)
+  $c Unit $. $( Units in a ring $)
+  $c Irred $. $( Ring irreducibles $)
+
+  $( Ring divisibility relation. $)
+  cdsr $a class ||r $.
+
+  $( Units in a ring. $)
+  cui $a class Unit $.
+
+  $( Ring irreducibles. $)
+  cir $a class Irred $.
+
+  ${
+    $d b w x y z $.
+    $( Define the (right) divisibility relation in a ring.  Access to the left
+       divisibility relation is available through
+       ` ( ||r `` ( oppR `` R ) ) ` .  (Contributed by Mario Carneiro,
+       1-Dec-2014.) $)
+    df-dvdsr $a |- ||r = ( w e. _V |-> { <. x , y >. | ( x e. ( Base ` w ) /\
+      E. z e. ( Base ` w ) ( z ( .r ` w ) x ) = y ) } ) $.
+
+    $( Define the set of units in a ring, that is, all elements with a left and
+       right multiplicative inverse.  (Contributed by Mario Carneiro,
+       1-Dec-2014.) $)
+    df-unit $a |- Unit = ( w e. _V |->
+      ( `' ( ( ||r ` w ) i^i ( ||r ` ( oppR ` w ) ) ) " { ( 1r ` w ) } ) ) $.
+
+    $( Define the set of irreducible elements in a ring.  (Contributed by Mario
+       Carneiro, 4-Dec-2014.) $)
+    df-irred $a |- Irred = ( w e. _V |->
+      [_ ( ( Base ` w ) \ ( Unit ` w ) ) / b ]_
+        { z e. b | A. x e. b A. y e. b ( x ( .r ` w ) y ) =/= z } ) $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -167013,6 +167056,16 @@ htmldef "1r" as "<IMG SRC='_1r.gif' WIDTH=13 HEIGHT=19 ALT=' 1r' TITLE='1r'>";
 htmldef "oppR" as "opp<sub><i>r</i></sub>";
   althtmldef "oppR" as "opp<sub><i>r</i></sub>";
   latexdef "oppR" as "\mathrm{opp}_r";
+htmldef "||r" as "<IMG SRC='parallel.gif' WIDTH=5 HEIGHT=19 ALT=' ||' " +
+    "TITLE='||'><sub><i>r</i></sub>";
+  althtmldef "||r" as "&#8741;<sub>r</sub>";
+  latexdef "||r" as "\mathrel{\parallel_\mathrm{r}}";
+htmldef "Unit" as "Unit";
+  althtmldef "Unit" as "Unit";
+  latexdef "Unit" as "\mathrm{Unit}";
+htmldef "Irred" as "Irred";
+  althtmldef "Irred" as "Irred";
+  latexdef "Irred" as "\mathrm{Irred}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
