@@ -148174,21 +148174,60 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Ring unit
+  Ring unity (multiplicative identity)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  In Wikipedia "Identity element", see
+  ~ https://en.wikipedia.org/wiki/Identity_element (18-Jan-2025):
+  "... an identity with respect to multiplication is called a multiplicative
+  identity (often denoted as 1). ... The distinction between additive and
+  multiplicative identity is used most often for sets that support both binary
+  operations, such as rings, integral domains, and fields.  The multiplicative
+  identity is often called unity in the latter context (a ring with unity).
+  This should not be confused with a unit in ring theory, which is any element
+  having a multiplicative inverse. By its own definition, unity itself is
+  necessarily a unit."
+
+  Calling the multiplicative identity of a ring a unity is taken from the
+  definition of a ring with unity in section 17.3 of [BeauregardFraleigh]
+  p. 135, "A ring ( R , + , . ) is a ring with unity if R is not the zero ring
+  and ( R , . ) is a monoid.  In this case, the identity element of ( R , . )
+  is denoted by 1 and is called the unity of R."  This definition of a "ring
+  with unity" corresponds to our definition of a unital ring (see ~ df-ring ).
+
+  Some authors call the multiplicative identity "unit" or "unit element" (for
+  example in section I, 2.2 of [BourbakiAlg1] p. 14, definition in section 1.3
+  of [Hall] p. 4, or in section I, 1 of [Lang] p. 3), whereas other authors use
+  the term "unit" for an element having a multiplicative inverse (for example
+  in section 17.3 of [BeauregardFraleigh] p. 135, in definition in [Roman]
+  p. 26, or even in section II, 1 of [Lang] p. 84). Sometimes, the
+  multiplicative identity is simply called "one" (see, for example, chapter 8
+  in [Schechter] p. 180).
+
+  To avoid this ambiguity of the term "unit", also mentioned in Wikipedia, we
+  call the multiplicative identity of a structure with a multiplication
+  (usually a ring) a "ring unity", or straightly "multiplicative identity".
+
+  The term "unit" will be used for an element having a multiplicative inverse
+  (see ~ https://us.metamath.org/mpeuni/df-unit.html in set.mm), and we have
+  "the ring unity is a unit", see ~ https://us.metamath.org/mpeuni/1unit.html .
+
 $)
+
 
   $c 1r $.
 
-  $( Extend class notation with ring unit. $)
+  $( Extend class notation with ring unity. $)
   cur $a class 1r $.
 
   $( Define the multiplicative identity, i.e., the monoid identity ( ~ df-0g )
      of the multiplicative monoid ( ~ df-mgp ) of a ring-like structure.  This
-     definition works by transferring the multiplicative operation from the
-     ` .r ` slot to the ` +g ` slot and then looking at the element which is
-     then the ` 0g ` element, that is an identity with respect to the operation
-     which started out in the ` .r ` slot.
+     multiplicative identity is also called "ring unity" or "unity element".
+
+     This definition works by transferring the multiplicative operation from
+     the ` .r ` slot to the ` +g ` slot and then looking at the element which
+     is then the ` 0g ` element, that is an identity with respect to the
+     operation which started out in the ` .r ` slot.
 
      See also ~ dfur2g , which derives the "traditional" definition as the
      unique element of a ring which is left- and right-neutral under
@@ -148228,9 +148267,9 @@ $)
 
 
 $(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Semirings
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
   $c SRing $.
@@ -148373,7 +148412,7 @@ $)
       AVKDVJVCNVGVACVCDVJVPSVAVJVFDVCVACVCEFVPSUNTUO $.
 
     $d u x B $.  $d u x R $.  $d u x .x. $.
-    $( The unit element of a semiring is unique.  (Contributed by NM,
+    $( The unity element of a semiring is unique.  (Contributed by NM,
        27-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.)  (Revised by
        Thierry Arnoux, 1-Apr-2018.) $)
     srgideu $p |- ( R e. SRing ->
@@ -148426,7 +148465,7 @@ $)
   ${
     srgidcl.b $e |- B = ( Base ` R ) $.
     srgidcl.u $e |- .1. = ( 1r ` R ) $.
-    $( The unit element of a semiring belongs to the base set of the semiring.
+    $( The unity element of a semiring belongs to the base set of the semiring.
        (Contributed by NM, 27-Aug-2011.)  (Revised by Mario Carneiro,
        27-Dec-2014.)  (Revised by Thierry Arnoux, 1-Apr-2018.) $)
     srgidcl $p |- ( R e. SRing -> .1. e. B ) $=
@@ -148462,14 +148501,14 @@ $)
       VKRVERVDRUHUMUPVBVJUBUQUPUSVGVAVIUPURVFEUPDVDEECVEBCVCIVMGUIZBDVCIVMHUJZU
       PEUKZSTUPUTVHEUPEEDVDCVEVNVPVOSTULUNUO $.
 
-    $( The unit element of a semiring is a left multiplicative identity.
+    $( The unity element of a semiring is a left multiplicative identity.
        (Contributed by NM, 15-Sep-2011.)  (Revised by Thierry Arnoux,
        1-Apr-2018.) $)
     srglidm $p |- ( ( R e. SRing /\ X e. B ) -> ( .1. .x. X ) = X ) $=
       ( csrg wcel wa co wceq srgidmlem simpld ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
       $.
 
-    $( The unit element of a semiring is a right multiplicative identity.
+    $( The unity element of a semiring is a right multiplicative identity.
        (Contributed by NM, 15-Sep-2011.)  (Revised by Thierry Arnoux,
        1-Apr-2018.) $)
     srgridm $p |- ( ( R e. SRing /\ X e. B ) -> ( X .x. .1. ) = X ) $=
@@ -148784,7 +148823,7 @@ $)
     isring.g $e |- G = ( mulGrp ` R ) $.
     isring.p $e |- .+ = ( +g ` R ) $.
     isring.t $e |- .x. = ( .r ` R ) $.
-    $( The predicate "is a (unital) ring".  Definition of ring with unit in
+    $( The predicate "is a (unital) ring".  Definition of "ring with unit" in
        [Schechter] p. 187.  (Contributed by NM, 18-Oct-2012.)  (Revised by
        Mario Carneiro, 6-Jan-2015.) $)
     isring $p |- ( R e. Ring <-> ( R e. Grp /\ G e. Mnd
@@ -148945,8 +148984,8 @@ $)
       FVMRTUN $.
 
     $d u x B $.  $d u x R $.  $d u x .x. $.
-    $( The unit element of a ring is unique.  (Contributed by NM, 27-Aug-2011.)
-       (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    $( The unity element of a ring is unique.  (Contributed by NM,
+       27-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
     ringideu $p |- ( R e. Ring ->
                 E! u e. B A. x e. B ( ( u .x. x ) = x /\ ( x .x. u ) = x ) ) $=
       ( crg wcel cv co wceq wa wral wreu cfv eqid syl oveqd eqeq1d cmgp ringmgp
@@ -148980,7 +149019,7 @@ $)
   ${
     ringidcl.b $e |- B = ( Base ` R ) $.
     ringidcl.u $e |- .1. = ( 1r ` R ) $.
-    $( The unit element of a ring belongs to the base set of the ring.
+    $( The unity element of a ring belongs to the base set of the ring.
        (Contributed by NM, 27-Aug-2011.)  (Revised by Mario Carneiro,
        27-Dec-2014.) $)
     ringidcl $p |- ( R e. Ring -> .1. e. B ) $=
@@ -149014,13 +149053,13 @@ $)
       BEVCVJQVDQVCQUGUHUQUSVFVAVHUQURVEEUQDVCEECVDUOCVDMUPBCVBIVKGUIRZUODVCMUPB
       DVBIVKHUJRZUQEUKZSTUQUTVGEUQEEDVCCVDVLVNVMSTUMUN $.
 
-    $( The unit element of a ring is a left multiplicative identity.
+    $( The unity element of a ring is a left multiplicative identity.
        (Contributed by NM, 15-Sep-2011.) $)
     ringlidm $p |- ( ( R e. Ring /\ X e. B ) -> ( .1. .x. X ) = X ) $=
       ( crg wcel wa co wceq ringidmlem simpld ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
       $.
 
-    $( The unit element of a ring is a right multiplicative identity.
+    $( The unity element of a ring is a right multiplicative identity.
        (Contributed by NM, 15-Sep-2011.) $)
     ringridm $p |- ( ( R e. Ring /\ X e. B ) -> ( X .x. .1. ) = X ) $=
       ( crg wcel wa co wceq ringidmlem simprd ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
@@ -149075,8 +149114,8 @@ $)
 
     rngo2times.u $e |- .1. = ( 1r ` R ) $.
     $( A ring element plus itself is two times the element.  "Two" in an
-       arbitrary unital ring is the sum of the unit with itself.  (Contributed
-       by AV, 24-Aug-2021.) $)
+       arbitrary unital ring is the sum of the unity element with itself.
+       (Contributed by AV, 24-Aug-2021.) $)
     rngo2times $p |- ( ( R e. Ring /\ A e. B )
                        -> ( A .+ A ) = ( ( .1. .+ .1. ) .x. A ) ) $=
       ( crg wcel wa co ringlidm eqcomd oveq12d wceq simpl ringidcl adantr simpr
@@ -149318,7 +149357,7 @@ $)
     ringinvnzdiv.r $e |- ( ph -> R e. Ring ) $.
     ringinvnzdiv.x $e |- ( ph -> X e. B ) $.
     ringinvnzdiv.a $e |- ( ph -> E. a e. B ( a .x. X ) = .1. ) $.
-    $( In a unitary ring, a left invertible element is different from zero iff
+    $( In a unital ring, a left invertible element is different from zero iff
        ` .1. =/= .0. ` .  (Contributed by FL, 18-Apr-2010.)  (Revised by AV,
        24-Aug-2021.) $)
     ringinvnz1ne0 $p |- ( ph -> ( X =/= .0. <-> .1. =/= .0. ) ) $=
@@ -149331,7 +149370,7 @@ $)
 
     $d Y a $.
     ringinvnzdiv.y $e |- ( ph -> Y e. B ) $.
-    $( In a unitary ring, a left invertible element is not a zero divisor.
+    $( In a unital ring, a left invertible element is not a zero divisor.
        (Contributed by FL, 18-Apr-2010.)  (Revised by Jeff Madsen,
        18-Apr-2010.)  (Revised by AV, 24-Aug-2021.) $)
     ringinvnzdiv $p |- ( ph -> ( ( X .x. Y ) = .0. <-> Y = .0. ) ) $=
