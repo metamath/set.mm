@@ -149821,6 +149821,33 @@ $)
       XIWIUTWAAWFWEWCWAVBWFVBVCVJVDVEVFVGBDWAWAVHVIZVKVLXLVMWAWAVNVOVSVPVQ $.
   $}
 
+  ${
+    $d x y .|| $.  $d r x y z B $.  $d x y z X $.  $d x y z Y $.  $d x y Z $.
+    $d r x y z R $.  $d r x y z .x. $.  $d x y z ph $.
+    dvdsrvald.1 $e |- ( ph -> B = ( Base ` R ) ) $.
+    dvdsrvald.2 $e |- ( ph -> .|| = ( ||r ` R ) ) $.
+    dvdsrvald.r $e |- ( ph -> R e. SRing ) $.
+    ${
+      dvdsrvald.3 $e |- ( ph -> .x. = ( .r ` R ) ) $.
+      $( Value of the divides relation.  (Contributed by Mario Carneiro,
+         1-Dec-2014.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+      dvdsrvald $p |- ( ph -> .|| = { <. x , y >. |
+          ( x e. B /\ E. z e. B ( z .x. x ) = y ) } ) $=
+        ( cfv cv cbs wcel wceq wa copab cvv vr cdsr cmulr df-dvdsr fveq2 eleq2d
+        wrex oveqd eqeq1d rexeqbidv anbi12d opabbidv csrg elexd cxp wfn funfvex
+        co basfn funfni sylancr xpexg syl2anc simprr ad2antrr simprl eqid srgcl
+        simplr syl3anc eqeltrrd rexlimdvaa imdistanda ssopab2dv df-xp sseqtrrdi
+        ssexd fvmptd3 3eqtr4d ) AGUBMBNZGOMZPZDNZVTGUCMZURZCNZQZDWAUGZRZBCSZFVT
+        EPZWCVTHURZWFQZDEUGZRZBCSAUAGVTUANZOMZPZWCVTWPUCMZURZWFQZDWQUGZRZBCSWJT
+        UBTBCDUAUDWPGQZXCWIBCXDWRWBXBWHXDWQWAVTWPGOUEZUFXDXAWGDWQWAXEXDWTWEWFXD
+        WSWDWCVTWPGUCUEUHUIUJUKULAGUMKUNZAWJWAWAUOZTAWATPZXHXGTPAOTUPGTPXHUSXFX
+        HTGOGOUQUTVAZXIWAWATTVBVCAWJWBWFWAPZRZBCSXGAWIXKBCAWBWHXJAWBRZWGXJDWAXL
+        WCWAPZWGRZRZWEWFWAXLXMWGVDXOGUMPZXMWBWEWAPAXPWBXNKVEXLXMWGVFAWBXNVIWAGW
+        DWCVTWAVGWDVGVHVJVKVLVMVNBCWAWAVOVPVQVRJAWOWIBCAWKWBWNWHAEWAVTIUFAWMWGD
+        EWAIAWLWEWFAHWDWCVTLUHUIUJUKULVS $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
