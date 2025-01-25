@@ -19026,6 +19026,7 @@ New usage of "sbequ5" is discouraged (0 uses).
 New usage of "sbequ6" is discouraged (0 uses).
 New usage of "sbequ8" is discouraged (0 uses).
 New usage of "sbhb" is discouraged (0 uses).
+New usage of "sbhypfOLD" is discouraged (0 uses).
 New usage of "sbid2" is discouraged (2 uses).
 New usage of "sbid2v" is discouraged (0 uses).
 New usage of "sbidm" is discouraged (0 uses).
@@ -21328,6 +21329,7 @@ Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
 Proof modification of "sbcrexgOLD" is discouraged (77 steps).
 Proof modification of "sbcssgVD" is discouraged (229 steps).
 Proof modification of "sbequ2OLD" is discouraged (75 steps).
+Proof modification of "sbhypfOLD" is discouraged (58 steps).
 Proof modification of "sbn1ALT" is discouraged (41 steps).
 Proof modification of "sbrimOLD" is discouraged (33 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
