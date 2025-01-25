@@ -149803,6 +149803,24 @@ $)
         { z e. b | A. x e. b A. y e. b ( x ( .r ` w ) y ) =/= z } ) $.
   $}
 
+  ${
+    $d w x y z R $.
+    $( The divides relation is a relation.  (Contributed by Mario Carneiro,
+       1-Dec-2014.)  (Revised by Jim Kingdon, 24-Jan-2025.) $)
+    reldvdsrsrg $p |- ( R e. SRing -> Rel ( ||r ` R ) ) $=
+      ( vx vz vy vw csrg wcel cdsr cfv cvv cxp cbs cv cmulr co wceq copab fveq2
+      wrex wa wrel df-dvdsr eleq2d oveqd eqeq1d rexeqbidv anbi12d opabbidv elex
+      wss wfn basfn funfvex funfni sylancr xpexg syl2anc simplll simplr simpllr
+      simpr eqid srgcl eqeltrrd rexlimdva2 imdistanda ssopab2dv df-xp sseqtrrdi
+      syl3anc ssexd fvmptd3 eqsstrd xpss sstrdi df-rel sylibr ) AFGZAHIZJJKZUJV
+      SUAVRVSALIZWAKZVTVRVSBMZWAGZCMZWCANIZOZDMZPZCWASZTZBDQZWBVREAWCEMZLIZGZWE
+      WCWMNIZOZWHPZCWNSZTZBDQWLJHJBDCEUBWMAPZWTWKBDXAWOWDWSWJXAWNWAWCWMALRZUCXA
+      WRWICWNWAXBXAWQWGWHXAWPWFWEWCWMANRUDUEUFUGUHAFUIZVRWLWBJVRWAJGZXDWBJGVRLJ
+      UKAJGXDULXCXDJALALUMUNUOZXEWAWAJJUPUQVRWLWDWHWAGZTZBDQWBVRWKXGBDVRWDWJXFV
+      RWDTZWIXFCWAXHWEWAGZTZWITZWGWHWAXJWIVAXKVRXIWDWGWAGVRWDXIWIURXHXIWIUSVRWD
+      XIWIUTWAAWFWEWCWAVBWFVBVCVJVDVEVFVGBDWAWAVHVIZVKVLXLVMWAWAVNVOVSVPVQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
