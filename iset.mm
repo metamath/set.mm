@@ -149862,6 +149862,15 @@ $)
         FUNVGVHVJAWIWJWPVKAWIQZWJGHMRZCPZWLXKFSZNRZTZBCUBZQZMNVLZUAZWPXJDXRGHAD
         XRTWIAMNBCDEFIJKLVMVNVOWIXSWPVKAXQWPMNGHXROOXKGTZXNHTZQZXLWKXPWOYBXKGCX
         TYAVPZVQYBXOWNBCYBXMWMXNHYBXKGWLFYCVTXTYAWAVRVSWBXRVAWCWDWEVIWF $.
+
+      ${
+        dvdsr2d.x $e |- ( ph -> X e. B ) $.
+        $( Value of the divides relation.  (Contributed by Mario Carneiro,
+           1-Dec-2014.) $)
+        dvdsr2d $p |- ( ph -> ( X .|| Y <-> E. z e. B ( z .x. X ) = Y ) ) $=
+          ( wbr wcel cv co wceq wrex dvdsrd mpbirand ) AGHDNGCOBPGFQHRBCSMABCDE
+          FGHIJKLTUA $.
+      $}
     $}
   $}
 
