@@ -149870,6 +149870,14 @@ $)
         dvdsr2d $p |- ( ph -> ( X .|| Y <-> E. z e. B ( z .x. X ) = Y ) ) $=
           ( wbr wcel cv co wceq wrex dvdsrd mpbirand ) AGHDNGCOBPGFQHRBCSMABCDE
           FGHIJKLTUA $.
+
+        dvdsrmuld.y $e |- ( ph -> Y e. B ) $.
+        $( A left-multiple of ` X ` is divisible by ` X ` .  (Contributed by
+           Mario Carneiro, 1-Dec-2014.) $)
+        dvdsrmuld $p |- ( ph -> X .|| ( Y .x. X ) ) $=
+          ( vz co wbr wcel cv wceq wrex eqid oveq1 eqeq1d rspcev sylancl dvdsrd
+          mpbir2and ) AFGFEOZCPFBQNRZFEOZUHSZNBTZLAGBQUHUHSZULMUHUAUKUMNGBUIGSU
+          JUHUHUIGFEUBUCUDUEANBCDEFUHHIJKUFUG $.
       $}
     $}
   $}
