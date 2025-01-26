@@ -149880,6 +149880,15 @@ $)
           JUHUHUIGFEUBUCUDUEANBCDEFUHHIJKUFUG $.
       $}
     $}
+
+    ${
+      dvdsrcld.d $e |- ( ph -> X .|| Y ) $.
+      $( Closure of a dividing element.  (Contributed by Mario Carneiro,
+         5-Dec-2014.) $)
+      dvdsrcld $p |- ( ph -> X e. B ) $=
+        ( vz wcel cv cmulr cfv co wceq wrex wbr wa eqidd dvdsrd mpbid simpld )
+        AEBLZKMEDNOZPFQKBRZAEFCSUEUGTJAKBCDUFEFGHIAUFUAUBUCUD $.
+    $}
   $}
 
 
