@@ -21,6 +21,11 @@ $(
   cube ( ~ imp2cube ), and of angle trisection ( ~ imp3ang )
 $)
 
+  $( All algebraic numbers admit a minimal polynomial.  $)
+  $( minplyeu $p |- ( ph -> E! p e. ( Monic1p ` E ) A. q e. ( Monic1p ` E ) (  -> p = q ) ) $)
+
+  $( Use infval $)
+  $( minplyf $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
