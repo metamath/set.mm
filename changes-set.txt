@@ -70,7 +70,7 @@ proposed  syl5com   imtridcom
 proposed  syl5      imtrid      alternate proposal: sylid
 proposed  syl56     imtridi
 proposed  syl5d     imtridd
-proposed  syl5bir   biimtrrid
+underway  syl5bir   biimtrrid
 proposed  syl5ib    imbitrid
 proposed  syl5ibcom imbitridcom
 proposed  syl5ibr   imbitrrid
@@ -96,6 +96,24 @@ Date      Old       New         Notes
 26-Jan-25 pwsexpg   [same]      Moved from SN's mathbox to main set.mm
 26-Jan-25 drnginvrcld [same]    Moved from SN's mathbox to main set.mm
 26-Jan-25 pwspjmhmmgpd [same]   Moved from SN's mathbox to main set.mm
+24-Jan-25 rextru    [same]      Moved from ZW's mathbox to main set.mm
+19-Jan-25 ---       ---         Moved surreal cut and option theorems
+                                from SF's mathbox to main set.mm
+19-Jan-25 imaindm   [same]      Moved from SF's mathbox to main set.mm
+19-Jan-25 onsselex  [same]      Moved from SF's mathbox to main set.mm
+19-Jan-25 ---       ---         Moved surreal zero and one theorems
+                                from SF's mathbox to main set.mm
+19-Jan-25 fnssintima [same]     Moved from SF's mathbox to main set.mm
+18-Jan-25 elintabg  [same]      Moved from RP's mathbox to main set.mm
+17-Jan-25 ---       ---         Moved Conway cut theorems
+                                from SF's mathbox to main set.mm
+17-Jan-25 rexrab    [same]      Moved from SF's mathbox to main set.mm
+17-Jan-25 riotarab  [same]      Moved from SF's mathbox to main set.mm
+16-Jan-25 ---       ---         Moved surreal ordering and birthday theorems
+                                from SF's mathbox to main set.mm
+16-Jan-25 ---       ---         Moved surreal full-eta theorems
+                                from SF's mathbox to main set.mm
+16-Jan-25 snres0    [same]      Moved from SF's mathbox to main set.mm
 15-Jan-25 eqfunressuc [same]    Moved from SF's mathbox to main set.mm
 15-Jan-25 eqfunresadj [same]    Moved from SF's mathbox to main set.mm
 15-Jan-25 sotr3     [same]      Moved from SF's mathbox to main set.mm
@@ -136,6 +154,7 @@ Date      Old       New         Notes
  7-Jan-25 ringi     ringdilem
  5-Jan-25 nfrexd    nfrexdw     consistent with nfraldw
  5-Jan-25 nfrex     nfrexw      consistent with nfralw
+ 5-Jan-25 rabss3d   [same]      moved from TA's mathbox to main set.mm
  4-Jan-25 smorndom  smocdmdom
  4-Jan-25 ralimda   ---         obsolete - use ralimdaa instead
  3-Jan-25 srgi      srgdilem

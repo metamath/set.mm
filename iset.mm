@@ -89988,6 +89988,17 @@ $)
       FUQVGRVLUQUPVHAVIUQUPUKVJSTUIUJULPUM $.
   $}
 
+  ${
+    $d A x $.
+    $( A complex number has a multiplicative inverse if and only if it is apart
+       from zero.  Theorem 11.2.4 of [HoTT], p.  (varies), generalized from
+       real to complex numbers.  (Contributed by Jim Kingdon, 18-Jan-2025.) $)
+    recapb $p |- ( A e. CC -> ( A =//= 0 <-> E. x e. CC ( A x. x ) = 1 ) ) $=
+      ( cc wcel cc0 cap wbr cv cmul co c1 wceq wrex recexap ex wa simprl simprr
+      simpl 1ap0 eqbrtrdi mulap0bad rexlimdvaa impbid ) BCDZBEFGZBAHZIJZKLZACMZ
+      UEUFUJABNOUEUIUFACUEUGCDZUIPZPZBUGUEULSUEUKUIQUMUHKEFUEUKUIRTUAUBUCUD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -91359,6 +91370,19 @@ $)
     mvllmulapd $p |- ( ph -> B = ( C / A ) ) $=
       ( cmul co cdiv divcanap4d mulcomd eqtr3d oveq1d ) ACBIJZBKJCDBKJACBFEGLAP
       DBKABCIJPDABCEFMHNON $.
+  $}
+
+  ${
+    $d A x $.
+    $( A real number has a multiplicative inverse if and only if it is apart
+       from zero.  Theorem 11.2.4 of [HoTT], p.  (varies).  (Contributed by Jim
+       Kingdon, 18-Jan-2025.) $)
+    rerecapb $p |- ( A e. RR -> ( A =//= 0 <-> E. x e. RR ( A x. x ) = 1 ) ) $=
+      ( cr wcel cc0 cap wbr cv cmul co c1 wceq wrex cdiv rerecclap recn recidap
+      wa cc sylan oveq2 eqeq1d rspcev syl2anc ex wss wi ax-resscn ssrexv recapb
+      ax-mp biimprd syl2im impbid ) BCDZBEFGZBAHZIJZKLZACMZUOUPUTUOUPRKBNJZCDBV
+      AIJZKLZUTBOUOBSDZUPVCBPZBQTUSVCAVACUQVALURVBKUQVABIUAUBUCUDUEUOVDUTUSASMZ
+      UPVECSUFUTVFUGUHUSACSUIUKVDUPVFABUJULUMUN $.
   $}
 
 
@@ -141601,7 +141625,7 @@ $(
 
   To create a substructure of a given extensible structure, you can simply use
   the multifunction restriction operator for extensible structures ` |``s ` as
-  defined in ~ df-ress .  This can be used to turn statements about rings into
+  defined in ~ df-iress .  This can be used to turn statements about rings into
   statements about subrings, modules into submodules, etc.  This definition
   knows nothing about individual structures and merely truncates the ` Base `
   set while leaving operators alone.  Individual kinds of structures will need
@@ -141728,7 +141752,7 @@ $)
     $d e s w x $.
     $( Set a component of an extensible structure.  This function is useful for
        taking an existing structure and "overriding" one of its components.
-       For example, ~ df-ress adjusts the base set to match its second
+       For example, ~ df-iress adjusts the base set to match its second
        argument, which has the effect of making subgroups, subspaces, subrings
        etc. from the original structures.  (Contributed by Mario Carneiro,
        1-Dec-2014.) $)
@@ -141744,11 +141768,13 @@ $)
        defining a function using the base set and applying that, or explicitly
        truncating the slot before use.
 
-       (Credit for this operator goes to Mario Carneiro.)
+       (Credit for this operator, as well as the 2023 modification for iset.mm,
+       goes to Mario Carneiro.)
 
-       (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
-    df-ress $a |- |`s = ( w e. _V , x e. _V |-> if ( ( Base ` w ) C_ x , w ,
-        ( w sSet <. ( Base ` ndx ) , ( x i^i ( Base ` w ) ) >. ) ) ) $.
+       (Contributed by Stefan O'Rear, 29-Nov-2014.)  (Revised by Jim Kingdon,
+       7-Oct-2023.) $)
+    df-iress $a |- |`s = ( w e. _V , x e. _V |->
+      ( w sSet <. ( Base ` ndx ) , ( x i^i ( Base ` w ) ) >. ) ) $.
   $}
 
   ${
@@ -142366,55 +142392,171 @@ $)
   $}
 
   ${
-    $d a w $.
+    $d x y $.
     $( The structure restriction is a proper operator, so it can be used with
        ~ ovprc1 .  (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
     reldmress $p |- Rel dom |`s $=
-      ( vw va cvv cv cbs cfv wss cnx cin cop csts co cif cress df-ress reldmmpo
-      ) ABCCADZEFZBDZGQQHEFSRIJKLMNBAOP $.
+      ( vy vx cvv cv cnx cbs cfv cin cop csts co cress df-iress reldmmpo ) ABCC
+      ADZEFGBDOFGHIJKLBAMN $.
   $}
+
+  ${
+    $d A w x $.  $d W w x $.
+    $( Value of structure restriction.  (Contributed by Jim Kingdon,
+       16-Jan-2025.) $)
+    ressvalsets $p |- ( ( W e. X /\ A e. Y ) -> ( W |`s A ) = ( W sSet
+        <. ( Base ` ndx ) , ( A i^i ( Base ` W ) ) >. ) ) $=
+      ( vw vx wcel cvv cbs cfv cin cop csts co cress wceq elex adantl syl3anc
+      cn wa cnx adantr simpl basendxnn a1i inex1g setsex cv fveq2 ineq2d opeq2d
+      id oveq12d ineq1 oveq2d df-iress ovmpog ) BCGZADGZUAZBHGZAHGZBUBIJZABIJZK
+      ZLZMNZHGZBAONVHPUSVBUTBCQUCUTVCUSADQRVAUSVDTGZVFHGZVIUSUTUDVJVAUEUFUTVKUS
+      AVEDUGRVDVFBCHTUHSEFBAHHEUIZVDFUIZVLIJZKZLZMNVHOBVDVMVEKZLZMNHVLBPZVLBVPV
+      RMVSUMVSVOVQVDVSVNVEVMVLBIUJUKULUNVMAPZVRVGBMVTVQVFVDVMAVEUOULUPFEUQURS
+      $.
+  $}
+
+  $( Existence of structure restriction.  (Contributed by Jim Kingdon,
+     16-Jan-2025.) $)
+  ressex $p |- ( ( W e. X /\ A e. Y ) -> ( W |`s A ) e. _V ) $=
+    ( wcel wa cress co cnx cbs cfv cin cop csts cvv ressvalsets simpl basendxnn
+    cn a1i inex1g adantl setsex syl3anc eqeltrd ) BCEZADEZFZBAGHBIJKZABJKZLZMNH
+    ZOABCDPUHUFUISEZUKOEZULOEUFUGQUMUHRTUGUNUFAUJDUAUBUIUKBCOSUCUDUE $.
 
   ${
     $d a w A $.  $d a w B $.  $d a w W $.
     ressbas.r $e |- R = ( W |`s A ) $.
     ressbas.b $e |- B = ( Base ` W ) $.
-    $( General behavior of trivial restriction.  (Contributed by Stefan O'Rear,
-       29-Nov-2014.)  (Revised by Jim Kingdon, 26-Jan-2023.) $)
-    ressid2 $p |- ( ( B C_ A /\ W e. X /\ A e. Y ) -> R = W ) $=
-      ( vw va wss wcel cress co cbs cfv cin csts cvv wceq w3a cnx cop cif simp2
-      elexd simp3 simp1 iftrued eqeltrd cv simpl fveq2d eqtr4di sseq12d ineq12d
-      wa simpr opeq2d oveq12d ifbieq12d df-ress ovmpoga syl3anc eqtrd eqtrid )
-      BAKZDELZAFLZUAZCDAMNZDGVJVKVGDDUBOPZABQZUCZRNZUDZDVJDSLASLVPSLVKVPTVJDEVG
-      VHVIUEUFZVJAFVGVHVIUGUFVJVPDSVJVGDVOVGVHVIUHUIZVQUJIJDASSIUKZOPZJUKZKZVSV
-      SVLWAVTQZUCZRNZUDVPMSVSDTZWAATZUQZWBVGVSWEDVOWHVTBWAAWHVTDOPBWHVSDOWFWGUL
-      ZUMHUNZWFWGURZUOWIWHVSDWDVNRWIWHWCVMVLWHWAAVTBWKWJUPUSUTVAJIVBVCVDVRVEVF
-      $.
-
     $( Value of nontrivial structure restriction.  (Contributed by Stefan
        O'Rear, 29-Nov-2014.) $)
     ressval2 $p |- ( ( -. B C_ A /\ W e. X /\ A e. Y ) -> R = ( W sSet
         <. ( Base ` ndx ) , ( A i^i B ) >. ) ) $=
-      ( vw va wss wcel cress co cbs cfv cin csts cvv wceq w3a cnx cop cif simp2
-      wn elexd simp3 simp1 iffalsed cn basendxnn a1i inex1g syl syl3anc eqeltrd
-      setsex cv wa simpl fveq2d eqtr4di simpr sseq12d ineq12d oveq12d ifbieq12d
-      opeq2d df-ress ovmpoga eqtrd eqtrid ) BAKZUFZDELZAFLZUAZCDAMNZDUBOPZABQZU
-      CZRNZGVRVSVNDWCUDZWCVRDSLASLWDSLVSWDTVRDEVOVPVQUEZUGVRAFVOVPVQUHZUGVRWDWC
-      SVRVNDWCVOVPVQUIUJZVRVPVTUKLZWASLZWCSLWEWHVRULUMVRVQWIWFABFUNUOVTWADESUKU
-      RUPUQIJDASSIUSZOPZJUSZKZWJWJVTWLWKQZUCZRNZUDWDMSWJDTZWLATZUTZWMVNWJWPDWCW
-      SWKBWLAWSWKDOPBWSWJDOWQWRVAZVBHVCZWQWRVDZVEWTWSWJDWOWBRWTWSWNWAVTWSWLAWKB
-      XBXAVFVIVGVHJIVJVKUPWGVLVM $.
+      ( wcel cnx cbs cfv cin cop csts co wceq wss wn wa ineq2i 3eqtr4g 3adant1
+      cress ressvalsets opeq2i oveq2i ) DEIZAFIZCDJKLZABMZNZOPZQBARSUHUITDAUDPD
+      UJADKLZMZNZOPCUMADEFUEGULUPDOUKUOUJBUNAHUAUFUGUBUC $.
   $}
 
   ${
-    ressid.1 $e |- B = ( Base ` W ) $.
-    $( Behavior of trivial restriction.  (Contributed by Stefan O'Rear,
-       29-Nov-2014.) $)
-    ressid $p |- ( W e. X -> ( W |`s B ) = W ) $=
-      ( wss wcel cvv cress co wceq ssid id cbs cfv baseid cn basendxnn strnfvnd
-      cnx a1i fvexg mpan2 eqeltrd eqeltrid eqid ressid2 mp3an2i ) AAEBCFZUHAGFB
-      AHIZBJAKUHLZUHABMNZGDUHUKSMNZBNZGUHBMULCOUJULPFZUHQTRUHUNUMGFQULBCPUAUBUC
-      UDAAUIBCGUIUEDUFUG $.
+    ressbasd.r $e |- ( ph -> R = ( W |`s A ) ) $.
+    ressbasd.b $e |- ( ph -> B = ( Base ` W ) ) $.
+    ressbasd.w $e |- ( ph -> W e. X ) $.
+    ${
+      ressbasd.a $e |- ( ph -> A e. V ) $.
+      $( Base set of a structure restriction.  (Contributed by Stefan O'Rear,
+         26-Nov-2014.)  (Proof shortened by AV, 7-Nov-2024.) $)
+      ressbasd $p |- ( ph -> ( A i^i B ) = ( Base ` R ) ) $=
+        ( cbs cfv cin cnx co wcel cvv wceq syl2anc cop csts inex1g syl baseslid
+        setsslid ineq2d cress ressvalsets eqtrd fveq2d 3eqtr4d ) ABFLMZNZFOLMUN
+        UAUBPZLMZBCNDLMAFGQZUNRQZUNUPSJABEQZURKBUMEUCUDGUNLRFUEUFTACUMBIUGADUOL
+        ADFBUHPZUOHAUQUSUTUOSJKBFGEUITUJUKUL $.
+    $}
+
+    ${
+      ressbas2d.ss $e |- ( ph -> A C_ B ) $.
+      $( Base set of a structure restriction.  (Contributed by Mario Carneiro,
+         2-Dec-2014.) $)
+      ressbas2d $p |- ( ph -> A = ( Base ` R ) ) $=
+        ( cin cbs cfv wss wceq df-ss sylib cvv wfn wcel funfvex sylancr eqeltrd
+        basfn elexd funfni ssexd ressbasd eqtr3d ) ABCKZBDLMABCNUJBOJBCPQABCDRE
+        FGHIABCRACELMZRHALRSERTUKRTZUDAEFIUEULRELELUAUFUBUCJUGUHUI $.
+    $}
+
+    ${
+      ressbasssd.a $e |- ( ph -> A e. V ) $.
+      $( The base set of a restriction is a subset of the base set of the
+         original structure.  (Contributed by Stefan O'Rear, 27-Nov-2014.)
+         (Revised by Mario Carneiro, 30-Apr-2015.) $)
+      ressbasssd $p |- ( ph -> ( Base ` R ) C_ B ) $=
+        ( cbs cfv cin ressbasd inss2 eqsstrrdi ) ADLMBCNCABCDEFGHIJKOBCPQ $.
+    $}
   $}
+
+  ${
+    strressid.b $e |- ( ph -> B = ( Base ` W ) ) $.
+    strressid.s $e |- ( ph -> W Struct <. M , N >. ) $.
+    strressid.f $e |- ( ph -> Fun W ) $.
+    strressid.bw $e |- ( ph -> ( Base ` ndx ) e. dom W ) $.
+    $( Behavior of trivial restriction.  (Contributed by Stefan O'Rear,
+       29-Nov-2014.)  (Revised by Jim Kingdon, 17-Jan-2025.) $)
+    strressid $p |- ( ph -> ( W |`s B ) = W ) $=
+      ( cnx cbs cfv cin cop csts co cress ineq1d cvv wcel inidm eqtrdi wceq wbr
+      opeq2d oveq2d cstr structex syl basfn funfvex sylancr eqeltrd ressvalsets
+      wfn funfni syl2anc baseid strsetsid 3eqtr4d ) AEJKLZBEKLZMZNZOPZEVAVBNZOP
+      EBQPZEAVDVFEOAVCVBVAAVCVBVBMVBABVBVBFRVBUAUBUEUFAESTZBSTVGVEUCAECDNZUGUDV
+      HGEVIUHUIZABVBSFAKSUOVHVBSTZUJVJVKSEKEKUKUPULUMBESSUNUQAEKCDURGHIUSUT $.
+  $}
+
+  ${
+    ressval3d.r $e |- R = ( S |`s A ) $.
+    ressval3d.b $e |- B = ( Base ` S ) $.
+    ressval3d.e $e |- E = ( Base ` ndx ) $.
+    ressval3d.s $e |- ( ph -> S e. V ) $.
+    ressval3d.f $e |- ( ph -> Fun S ) $.
+    ressval3d.d $e |- ( ph -> E e. dom S ) $.
+    ressval3d.u $e |- ( ph -> A C_ B ) $.
+    $( Value of structure restriction, deduction version.  (Contributed by AV,
+       14-Mar-2020.)  (Revised by Jim Kingdon, 17-Jan-2025.) $)
+    ressval3d $p |- ( ph -> R = ( S sSet <. E , A >. ) ) $=
+      ( cbs csts co wcel cvv wceq cnx cfv cin cop cress wfn basfn elexd funfvex
+      funfni sylancr eqeltrid ssexd ressvalsets syl2anc eqtrid a1i df-ss ineq2i
+      wss sylib eqtr3di opeq12d oveq2d eqtr4d ) ADEUAOUBZBEOUBZUCZUDZPQZEFBUDZP
+      QADEBUEQZVJHAEGRBSRVLVJTKABCSACVGSIAOSUFESRVGSRZUGAEGKUHVMSEOEOUIUJUKULNU
+      MBEGSUNUOUPAVKVIEPAFVFBVHFVFTAJUQABCUCZBVHABCUTVNBTNBCURVACVGBIUSVBVCVDVE
+      $.
+  $}
+
+  ${
+    resseqnbas.r $e |- R = ( W |`s A ) $.
+    resseqnbas.e $e |- C = ( E ` W ) $.
+    resseqnbasd.f $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
+    resseqnbas.n $e |- ( E ` ndx ) =/= ( Base ` ndx ) $.
+    resseqnbasd.w $e |- ( ph -> W e. X ) $.
+    resseqnbasd.a $e |- ( ph -> A e. V ) $.
+    $( The components of an extensible structure except the base set remain
+       unchanged on a structure restriction.  (Contributed by Mario Carneiro,
+       26-Nov-2014.)  (Revised by Mario Carneiro, 2-Dec-2014.)  (Revised by AV,
+       19-Oct-2024.) $)
+    resseqnbasd $p |- ( ph -> C = ( E ` R ) ) $=
+      ( cfv cbs co wcel wceq syl2anc cnx cin cop csts ressvalsets eqtrid fveq2d
+      cress cvv inex1g syl basendxnn setsslnid eqtr4d eqtr4id ) ACGEOZDEOZJAUQG
+      UAPOZBGPOZUBZUCUDQZEOZUPADVAEADGBUHQZVAIAGHRZBFRZVCVASMNBGHFUETUFUGAVDUTU
+      IRZUPVBSMAVEVFNBUSFUJUKHUTUREUIGKLULUMTUNUO $.
+  $}
+
+  ${
+    ressidbasd.1 $e |- ( ph -> B = ( Base ` W ) ) $.
+    ressidbasd.a $e |- ( ph -> A e. X ) $.
+    ressidbasd.w $e |- ( ph -> W e. V ) $.
+    $( Restriction only cares about the part of the second set which intersects
+       the base of the first.  (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
+    ressinbasd $p |- ( ph -> ( W |`s A ) = ( W |`s ( A i^i B ) ) ) $=
+      ( cbs cfv cin cop csts co cress ineq2d wcel wceq ressvalsets inidm eqtr3d
+      cnx eqtr3id inass eqtr4di opeq2d oveq2d syl2anc cvv inex1g syl 3eqtr4d )
+      AEUCJKZBEJKZLZMZNOZEUNBCLZUOLZMZNOZEBPOZEUSPOZAUQVAENAUPUTUNAUPBCUOLZLUTA
+      UOVEBACUOVEGACCCLVECUAACUOCGQUDUBQBCUOUEUFUGUHAEDRZBFRZVCURSIHBEDFTUIAVFU
+      SUJRZVDVBSIAVGVHHBCFUKULUSEDUJTUIUM $.
+  $}
+
+  $( Restriction composition law.  (Contributed by Stefan O'Rear, 29-Nov-2014.)
+     (Proof shortened by Mario Carneiro, 2-Dec-2014.) $)
+  ressressg $p |- ( ( A e. X /\ B e. Y /\ W e. Z ) ->
+    ( ( W |`s A ) |`s B ) = ( W |`s ( A i^i B ) ) ) $=
+    ( wcel cbs cfv cress cin cop csts cvv wceq syl2anc ressvalsets inex1g syl
+    co w3a eqidd simp3 simp1 ressbasd ineq2d inass ineq1i eqtr3i eqtr3di opeq2d
+    cnx incom oveq2d ressex simp2 oveq1d basendxnn a1i setsabsd 3eqtrd 3eqtr4d
+    cn ) ADGZBEGZCFGZUAZCULHIZBCAJTZHIZKZLZMTZCVHABKZCHIZKZLZMTZVIBJTZCVNJTZVGV
+    LVQCMVGVKVPVHVGBAVOKZKZVKVPVGWAVJBVGAVOVIDCFVGVIUBVGVOUBVDVEVFUCZVDVEVFUDZU
+    EUFBAKZVOKWBVPBAVOUGWEVNVOBAUMUHUIUJUKUNVGVSVIVLMTZCVHWALMTZVLMTVMVGVINGZVE
+    VSWFOVGVFVDWHWCWDACFDUOPVDVEVFUPZBVINEQPVGVIWGVLMVGVFVDVIWGOWCWDACFDQPUQVGV
+    HWAVKCNFVCNWCVHVCGVGURUSVGVDWANGWDAVODRSVGVEVKNGWIBVJERSUTVAVGVFVNNGZVTVROW
+    CVGVDWJWDABDRSVNCFNQPVB $.
+
+  $( Restriction absorption law.  (Contributed by Mario Carneiro,
+     12-Jun-2015.) $)
+  ressabsg $p |- ( ( A e. X /\ B C_ A /\ W e. Y ) ->
+    ( ( W |`s A ) |`s B ) = ( W |`s B ) ) $=
+    ( wcel wss w3a cress co cin cvv wceq simp1 simp2 ressressg syld3an2 sseqin2
+    ssexd sylib oveq2d eqtrd ) ADFZBAGZCEFZHZCAIJBIJZCABKZIJZCBIJUCBLFUDUEUGUIM
+    UFBADUCUDUENUCUDUEOZSABCDLEPQUFUHBCIUFUDUHBMUJBARTUAUB $.
 
 
 $(
@@ -143312,7 +143454,7 @@ $)
       ran ( y e. j |-> ( y i^i x ) ) ) $.
 
     $( Define the topology extractor function.  This differs from ~ df-tset
-       when a structure has been restricted using ~ df-ress ; in this case the
+       when a structure has been restricted using ~ df-iress ; in this case the
        ` TopSet ` component will still have a topology over the larger set, and
        this function fixes this by restricting the topology as well.
        (Contributed by Mario Carneiro, 13-Aug-2015.) $)
