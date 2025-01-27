@@ -149927,6 +149927,23 @@ $)
       SWQXFHSVNCUPKWAXEWSUKXFWCTVNVSVTXEULZXFVNXDXCXHAKVNWAXEUMZXBXCXDUNZXBXCXD
       UOZACWCWGWBGWCUQZURUSUTXFVNXDXCVSXIXGQXKXLXMXJACWCWGWBEGXNVAVBVFXAXGDEBWE
       WIXGWHDWDFWGWCVCWIVGVDVEVHVIVJVKVLVM $.
+
+    ${
+      dvdsrmul1.3 $e |- .x. = ( .r ` R ) $.
+      $( The divisibility relation is preserved under right-multiplication.
+         (Contributed by Mario Carneiro, 1-Dec-2014.) $)
+      dvdsrmul1 $p |- ( ( R e. Ring /\ Z e. B /\ X .|| Y ) ->
+        ( X .x. Z ) .|| ( Y .x. Z ) ) $=
+        ( vx crg wcel wbr co wa cv wceq cfv a1i wrex cbs cdsr csrg adantr cmulr
+        ringsrg dvdsrd simplll syl simplr simpllr ringcl syl3anc simpr syl13anc
+        dvdsrmuld ringass breqtrrd oveq1 breq2d syl5ibcom expimpd sylbid 3impia
+        rexlimdva ) CLMZGAMZEFBNZEGDOZFGDOZBNZVGVHPZVIEAMZKQZEDOZFRZKAUAZPVLVMK
+        ABCDEFACUBSRZVMHTBCUCSRZVMITVGCUDMZVHCUGZUEDCUFSRZVMJTUHVMVNVRVLVMVNPZV
+        QVLKAWDVOAMZPZVJVPGDOZBNVQVLWFVJVOVJDOZWGBWFABCDVJVOVSWFHTVTWFITWFVGWAV
+        GVHVNWEUIZWBUJWCWFJTWFVGVNVHVJAMWIVMVNWEUKZVGVHVNWEULZACDEGHJUMUNWDWEUO
+        ZUQWFVGWEVNVHWGWHRWIWLWJWKACDVOEGHJURUPUSVQWGVKVJBVPFGDUTVAVBVFVCVDVE
+        $.
+    $}
   $}
 
 
