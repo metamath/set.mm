@@ -11070,6 +11070,8 @@
 "pexmidlem6N" is used by "pexmidlem8N".
 "pexmidlem7N" is used by "pexmidlem8N".
 "pexmidlem8N" is used by "pexmidALTN".
+"pgindlem" is used by "pgindnf".
+"pgindnf" is used by "pgind".
 "phnv" is used by "ajval".
 "phnv" is used by "dipassr".
 "phnv" is used by "dipdi".
@@ -17220,6 +17222,8 @@ New usage of "pexmidlem5N" is discouraged (1 uses).
 New usage of "pexmidlem6N" is discouraged (1 uses).
 New usage of "pexmidlem7N" is discouraged (1 uses).
 New usage of "pexmidlem8N" is discouraged (1 uses).
+New usage of "pgindlem" is discouraged (1 uses).
+New usage of "pgindnf" is discouraged (1 uses).
 New usage of "phnv" is discouraged (19 uses).
 New usage of "phnvi" is discouraged (22 uses).
 New usage of "phoeqi" is discouraged (1 uses).
