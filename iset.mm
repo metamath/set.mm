@@ -149956,6 +149956,22 @@ $)
       CUTURDEFUTTVCHUOUPUKVAULUM $.
   $}
 
+  ${
+    $d B x $.  $d R x $.  $d X x $.  $d .0. x $.
+    dvdsr0.b $e |- B = ( Base ` R ) $.
+    dvdsr0.d $e |- .|| = ( ||r ` R ) $.
+    dvdsr0.z $e |- .0. = ( 0g ` R ) $.
+    $( In a ring, zero is divisible by all elements.  ("Zero divisor" as a term
+       has a somewhat different meaning.)  (Contributed by Stefan O'Rear,
+       29-Mar-2015.) $)
+    dvdsr01 $p |- ( ( R e. Ring /\ X e. B ) -> X .|| .0. ) $=
+      ( vx crg wcel wa wbr cv cmulr cfv co wceq wrex a1i ring0cl oveq1 syl2an2r
+      eqid ringlz eqeq1d rspcev cbs cdsr csrg ringsrg adantr eqidd simpr mpbird
+      dvdsr2d ) CJKZDAKZLZDEBMINZDCOPZQZERZIASZUQEAKUREDVAQZERZVDACEFHUAACVADEF
+      VAUDHUEVCVFIEAUTERVBVEEUTEDVAUBUFUGUCUSIABCVADEACUHPRUSFTBCUIPRUSGTUQCUJK
+      URCUKULUSVAUMUQURUNUPUO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
