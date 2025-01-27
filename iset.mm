@@ -149970,6 +149970,17 @@ $)
       dvdsr2d ) CJKZDAKZLZDEBMINZDCOPZQZERZIASZUQEAKUREDVAQZERZVDACEFHUAACVADEF
       VAUDHUEVCVFIEAUTERVBVEEUTEDVAUBUFUGUCUSIABCVADEACUHPRUSFTBCUIPRUSGTUQCUJK
       URCUKULUSVAUMUQURUNUPUO $.
+
+    $d B w $.  $d .0. w $.
+    $( Only zero is divisible by zero.  (Contributed by Stefan O'Rear,
+       29-Mar-2015.) $)
+    dvdsr02 $p |- ( ( R e. Ring /\ X e. B ) -> ( .0. .|| X <-> X = .0. ) ) $=
+      ( vx vw crg wcel wa cv cfv wceq wrex a1i adantr wb wbr cmulr co cdsr csrg
+      cbs ringsrg ring0cl dvdsr2d ringrz eqeq1d eqcom bitrdi rexbidva wex elex2
+      eqid r19.9rmv 3syl bitr4d bitrd ) CKLZDALZMZEDBUAINZECUBOZUCZDPZIAQZDEPZV
+      DIABCVFEDACUFOPVDFRBCUDOPVDGRVBCUELVCCUGSVFVFPVDVFUQZRVBEALZVCACEFHUHZSUI
+      VBVIVJTVCVBVIVJIAQZVJVBVHVJIAVBVEALMZVHEDPVJVOVGEDACVFVEEFVKHUJUKEDULUMUN
+      VBVLJNALJUOVJVNTVMJEAUPVJIJAURUSUTSVA $.
   $}
 
 
