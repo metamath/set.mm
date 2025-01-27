@@ -149944,6 +149944,16 @@ $)
         ZUQWFVGWEVNVHWGWHRWIWLWJWKACDVOEGHJURUPUSVQWGVKVJBVPFGDUTVAVBVFVCVDVE
         $.
     $}
+
+    dvdsrneg.5 $e |- N = ( invg ` R ) $.
+    $( An element divides its negative.  (Contributed by Mario Carneiro,
+       1-Dec-2014.) $)
+    dvdsrneg $p |- ( ( R e. Ring /\ X e. B ) -> X .|| ( N ` X ) ) $=
+      ( crg wcel wa cur cfv cmulr co cbs wceq a1i adantr eqid cdsr csrg ringsrg
+      eqidd simpr cgrp ringgrp ringidcl grpinvcl syl2anc simpl ringnegl breqtrd
+      dvdsrmuld ) CIJZEAJZKZECLMZDMZECNMZOEDMBUQABCUTEUSACPMQUQFRBCUAMQUQGRUOCU
+      BJUPCUCSUQUTUDUOUPUEZUOUSAJZUPUOCUFJURAJVBCUGACURFURTZUHACDURFHUIUJSUNUQA
+      CUTURDEFUTTVCHUOUPUKVAULUM $.
   $}
 
 
