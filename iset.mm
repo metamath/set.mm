@@ -149904,6 +149904,14 @@ $)
       impr ) CIJZDEBKZLUODAJZHMZDCNOZPZEQZHARZLZLEAJZUOUPVCUOHABCUSDEACSOQUOFTB
       CUAOQUOGTCUBUOUSUCUDUEUOUQVBVDUOUQLZVAVDHAVEURAJZLUTAJZVAVDUOVFUQVGUOVFUQ
       VGACUSURDFUSUFUGUHUIUTEAUJUKULUNUM $.
+
+    $( An element in a (unital) ring divides itself.  (Contributed by Mario
+       Carneiro, 1-Dec-2014.)  (Revised by Mario Carneiro, 30-Apr-2015.) $)
+    dvdsrid $p |- ( ( R e. Ring /\ X e. B ) -> X .|| X ) $=
+      ( crg wcel wa cur cfv cmulr co cbs wceq a1i cdsr csrg adantr eqid ringsrg
+      eqidd simpr ringidcl dvdsrmuld ringlidm breqtrd ) CGHZDAHZIZDCJKZDCLKZMDB
+      UJABCULDUKACNKOUJEPBCQKOUJFPUHCRHUICUASUJULUBUHUIUCUHUKAHUIACUKEUKTZUDSUE
+      ACULUKDEULTUMUFUG $.
   $}
 
 
