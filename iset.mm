@@ -149891,6 +149891,21 @@ $)
     $}
   $}
 
+  ${
+    $d x y .|| $.  $d r x y z B $.  $d x y z X $.  $d x y z Y $.  $d x y Z $.
+    $d r x y z R $.  $d r x y z .x. $.
+    dvdsr.1 $e |- B = ( Base ` R ) $.
+    dvdsr.2 $e |- .|| = ( ||r ` R ) $.
+    $( Closure of a dividing element.  (Contributed by Mario Carneiro,
+       5-Dec-2014.) $)
+    dvdsrcl2 $p |- ( ( R e. Ring /\ X .|| Y ) -> Y e. B ) $=
+      ( vx crg wcel wbr wa cv cmulr cfv co wceq wrex cbs a1i cdsr ringsrg eqidd
+      dvdsrd pm5.32i eqid ringcl 3expa an32s eleq1 syl5ibcom rexlimdva sylbi
+      impr ) CIJZDEBKZLUODAJZHMZDCNOZPZEQZHARZLZLEAJZUOUPVCUOHABCUSDEACSOQUOFTB
+      CUAOQUOGTCUBUOUSUCUDUEUOUQVBVDUOUQLZVAVDHAVEURAJZLUTAJZVAVDUOVFUQVGUOVFUQ
+      VGACUSURDFUSUFUGUHUIUTEAUJUKULUNUM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
