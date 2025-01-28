@@ -61188,7 +61188,17 @@ $)
        This definition is similar to a conventional definition of
        exponentiation except that it defines ` (/) ^oi A ` to be ` 1o ` for all
        ` A e. On ` , in order to avoid having different cases for whether the
-       base is ` (/) ` or not.  (Contributed by Mario Carneiro, 4-Jul-2019.) $)
+       base is ` (/) ` or not.
+
+       We do not yet have an extensive development of ordinal exponentiation.
+       For background on ordinal exponentiation without excluded middle, see
+       Tom de Jong, Nicolai Kraus, Fredrik Nordvall Forsberg, and Chuangjie Xu
+       (2025), "Ordinal Exponentiation in Homotopy Type Theory",
+       arXiv:2501.14542 , ~ https://arxiv.org/abs/2501.14542 which is
+       formalized in the TypeTopology proof library at
+       ~ https://ordinal-exponentiation-hott.github.io/ .
+
+       (Contributed by Mario Carneiro, 4-Jul-2019.) $)
     df-oexpi $a |- ^oi = ( x e. On , y e. On |->
                  ( rec ( ( z e. _V |-> ( z .o x ) ) , 1o ) ` y ) ) $.
   $}
