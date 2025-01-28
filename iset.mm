@@ -150084,6 +150084,32 @@ $)
       VBVLJNALJUOVJVNTVMJEAUPVJIJAURUSUTSVA $.
   $}
 
+  ${
+    $d r .|| $.  $d r E $.  $d r .1. $.  $d r R $.
+    isunitd.1 $e |- ( ph -> U = ( Unit ` R ) ) $.
+    isunitd.2 $e |- ( ph -> .1. = ( 1r ` R ) ) $.
+    ${
+      isunitd.3 $e |- ( ph -> .|| = ( ||r ` R ) ) $.
+      isunitd.4 $e |- ( ph -> S = ( oppR ` R ) ) $.
+      isunitd.5 $e |- ( ph -> E = ( ||r ` S ) ) $.
+      isunitd.r $e |- ( ph -> R e. SRing ) $.
+      $( Property of being a unit of a ring.  A unit is an element that left-
+         and right-divides one.  (Contributed by Mario Carneiro, 1-Dec-2014.)
+         (Revised by Mario Carneiro, 8-Dec-2015.) $)
+      isunitd $p |- ( ph -> ( X e. U <-> ( X .|| .1. /\ X E .1. ) ) ) $=
+        ( vr wcel cdsr cfv coppr cvv cin ccnv cur csn cima wbr cui df-unit wceq
+        wa fveq2 2fveq3 ineq12d cnveqd sneqd imaeq12d csrg elexd dvdsrex inex1g
+        cv 3syl cnvexg imaexg fvmptd3 eqtrd eleq2d fveq2d wb reldvdsrsrg releqd
+        wrel syl mpbird relin1 eliniseg2 brin bitrdi 3bitr2d ) AHEPHCQRZCSRZQRZ
+        UAZUBZCUCRZUDZUEZPHBGUAZUBZFUDZUEZPZHFBUFHFGUFUJZAEWGHAECUGRWGIAOCOVAZQ
+        RZWNSRQRZUAZUBZWNUCRZUDZUEWGTUGTOUHWNCUIZWRWDWTWFXAWQWCXAWOVTWPWBWNCQUK
+        WNCQSULUMUNXAWSWEWNCUCUKUOUPACUQNURAWCTPZWDTPWGTPACUQPZVTTPXBNCUSVTWBTU
+        TVBWCTVCWDWFTVDVBVEVFVGAWKWGHAWIWDWJWFAWHWCABVTGWBKAGDQRWBMADWAQLVHVFUM
+        UNAFWEJUOUPVGAWLHFWHUFZWMABVLZWHVLWLXDVIAXEVTVLZAXCXFNCVJVMABVTKVKVNBGV
+        OWHFHVPVBHFBGVQVRVS $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
