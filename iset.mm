@@ -44902,17 +44902,6 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x B $.  $d x y R $.
-    $( Elementhood in the image of a singleton.  (Contributed by Jim Kingdon,
-       10-Dec-2018.) $)
-    elreimasng $p |- ( ( Rel R /\ A e. V ) -> ( B e. ( R " { A } ) <->
-        A R B ) ) $=
-      ( vx wcel csn cima cv wbr cab wrel imasng eleq2d cvv wi wb brrelex2 breq2
-      ex elab3g syl sylan9bbr ) ADFZBCAGHZFBAEIZCJZEKZFZCLZABCJZUDUEUHBEADCMNUJ
-      UKBOFZPUIUKQUJUKULABCRTUGUKEBOUFBACSUAUBUC $.
-  $}
-
-  ${
     $d x A $.  $d x B $.  $d x C $.
     elimasn.1 $e |- B e. _V $.
     elimasn.2 $e |- C e. _V $.
