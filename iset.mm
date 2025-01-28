@@ -10997,6 +10997,30 @@ $)
   $}
 
   ${
+    $( Premise for Stoic logic thema 1. $)
+    stoic1.1 $e |- ( ( ph /\ ps ) -> th ) $.
+    $( Stoic logic Thema 1 (part a).
+
+       The first thema of the four Stoic logic themata, in its basic form, was:
+
+       "When from two (assertibles) a third follows, then from either of them
+       together with the contradictory of the conclusion the contradictory of
+       the other follows."  (Apuleius Int. 209.9-14), see [Bobzien] p. 117 and
+       ~ https://plato.stanford.edu/entries/logic-ancient/
+
+       We will represent thema 1 as two very similar rules ~ stoic1a and
+       ~ stoic1b to represent each side.  (Contributed by David A. Wheeler,
+       16-Feb-2019.)  (Proof shortened by Wolf Lammen, 21-May-2020.) $)
+    stoic1a $p |- ( ( ph /\ -. th ) -> -. ps ) $=
+      ( ex con3dimp ) ABCABCDEF $.
+
+    $( Stoic logic Thema 1 (part b).  The other part of thema 1 of Stoic logic;
+       see ~ stoic1a .  (Contributed by David A. Wheeler, 16-Feb-2019.) $)
+    stoic1b $p |- ( ( ps /\ -. th ) -> -. ph ) $=
+      ( ancoms stoic1a ) BACABCDEF $.
+  $}
+
+  ${
     $( Premise 1 for Stoic logic thema 2 version a. $)
     stoic2a.1 $e |- ( ( ph /\ ps ) -> ch ) $.
     $( Premise 2 for Stoic logic thema 2 version a. $)
