@@ -89988,6 +89988,17 @@ $)
       FUQVGRVLUQUPVHAVIUQUPUKVJSTUIUJULPUM $.
   $}
 
+  ${
+    $d A x $.
+    $( A complex number has a multiplicative inverse if and only if it is apart
+       from zero.  Theorem 11.2.4 of [HoTT], p.  (varies), generalized from
+       real to complex numbers.  (Contributed by Jim Kingdon, 18-Jan-2025.) $)
+    recapb $p |- ( A e. CC -> ( A =//= 0 <-> E. x e. CC ( A x. x ) = 1 ) ) $=
+      ( cc wcel cc0 cap wbr cv cmul co c1 wceq wrex recexap ex wa simprl simprr
+      simpl 1ap0 eqbrtrdi mulap0bad rexlimdvaa impbid ) BCDZBEFGZBAHZIJZKLZACMZ
+      UEUFUJABNOUEUIUFACUEUGCDZUIPZPZBUGUEULSUEUKUIQUMUHKEFUEUKUIRTUAUBUCUD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -91359,6 +91370,19 @@ $)
     mvllmulapd $p |- ( ph -> B = ( C / A ) ) $=
       ( cmul co cdiv divcanap4d mulcomd eqtr3d oveq1d ) ACBIJZBKJCDBKJACBFEGLAP
       DBKABCIJPDABCEFMHNON $.
+  $}
+
+  ${
+    $d A x $.
+    $( A real number has a multiplicative inverse if and only if it is apart
+       from zero.  Theorem 11.2.4 of [HoTT], p.  (varies).  (Contributed by Jim
+       Kingdon, 18-Jan-2025.) $)
+    rerecapb $p |- ( A e. RR -> ( A =//= 0 <-> E. x e. RR ( A x. x ) = 1 ) ) $=
+      ( cr wcel cc0 cap wbr cv cmul co c1 wceq wrex cdiv rerecclap recn recidap
+      wa cc sylan oveq2 eqeq1d rspcev syl2anc ex wss wi ax-resscn ssrexv recapb
+      ax-mp biimprd syl2im impbid ) BCDZBEFGZBAHZIJZKLZACMZUOUPUTUOUPRKBNJZCDBV
+      AIJZKLZUTBOUOBSDZUPVCBPZBQTUSVCAVACUQVALURVBKUQVABIUAUBUCUDUEUOVDUTUSASMZ
+      UPVECSUFUTVFUGUHUSACSUIUKVDUPVFABUJULUMUN $.
   $}
 
 
@@ -141601,7 +141625,7 @@ $(
 
   To create a substructure of a given extensible structure, you can simply use
   the multifunction restriction operator for extensible structures ` |``s ` as
-  defined in ~ df-ress .  This can be used to turn statements about rings into
+  defined in ~ df-iress .  This can be used to turn statements about rings into
   statements about subrings, modules into submodules, etc.  This definition
   knows nothing about individual structures and merely truncates the ` Base `
   set while leaving operators alone.  Individual kinds of structures will need
@@ -141728,7 +141752,7 @@ $)
     $d e s w x $.
     $( Set a component of an extensible structure.  This function is useful for
        taking an existing structure and "overriding" one of its components.
-       For example, ~ df-ress adjusts the base set to match its second
+       For example, ~ df-iress adjusts the base set to match its second
        argument, which has the effect of making subgroups, subspaces, subrings
        etc. from the original structures.  (Contributed by Mario Carneiro,
        1-Dec-2014.) $)
@@ -141744,11 +141768,13 @@ $)
        defining a function using the base set and applying that, or explicitly
        truncating the slot before use.
 
-       (Credit for this operator goes to Mario Carneiro.)
+       (Credit for this operator, as well as the 2023 modification for iset.mm,
+       goes to Mario Carneiro.)
 
-       (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
-    df-ress $a |- |`s = ( w e. _V , x e. _V |-> if ( ( Base ` w ) C_ x , w ,
-        ( w sSet <. ( Base ` ndx ) , ( x i^i ( Base ` w ) ) >. ) ) ) $.
+       (Contributed by Stefan O'Rear, 29-Nov-2014.)  (Revised by Jim Kingdon,
+       7-Oct-2023.) $)
+    df-iress $a |- |`s = ( w e. _V , x e. _V |->
+      ( w sSet <. ( Base ` ndx ) , ( x i^i ( Base ` w ) ) >. ) ) $.
   $}
 
   ${
@@ -142366,55 +142392,171 @@ $)
   $}
 
   ${
-    $d a w $.
+    $d x y $.
     $( The structure restriction is a proper operator, so it can be used with
        ~ ovprc1 .  (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
     reldmress $p |- Rel dom |`s $=
-      ( vw va cvv cv cbs cfv wss cnx cin cop csts co cif cress df-ress reldmmpo
-      ) ABCCADZEFZBDZGQQHEFSRIJKLMNBAOP $.
+      ( vy vx cvv cv cnx cbs cfv cin cop csts co cress df-iress reldmmpo ) ABCC
+      ADZEFGBDOFGHIJKLBAMN $.
   $}
+
+  ${
+    $d A w x $.  $d W w x $.
+    $( Value of structure restriction.  (Contributed by Jim Kingdon,
+       16-Jan-2025.) $)
+    ressvalsets $p |- ( ( W e. X /\ A e. Y ) -> ( W |`s A ) = ( W sSet
+        <. ( Base ` ndx ) , ( A i^i ( Base ` W ) ) >. ) ) $=
+      ( vw vx wcel cvv cbs cfv cin cop csts co cress wceq elex adantl syl3anc
+      cn wa cnx adantr simpl basendxnn a1i inex1g setsex cv fveq2 ineq2d opeq2d
+      id oveq12d ineq1 oveq2d df-iress ovmpog ) BCGZADGZUAZBHGZAHGZBUBIJZABIJZK
+      ZLZMNZHGZBAONVHPUSVBUTBCQUCUTVCUSADQRVAUSVDTGZVFHGZVIUSUTUDVJVAUEUFUTVKUS
+      AVEDUGRVDVFBCHTUHSEFBAHHEUIZVDFUIZVLIJZKZLZMNVHOBVDVMVEKZLZMNHVLBPZVLBVPV
+      RMVSUMVSVOVQVDVSVNVEVMVLBIUJUKULUNVMAPZVRVGBMVTVQVFVDVMAVEUOULUPFEUQURS
+      $.
+  $}
+
+  $( Existence of structure restriction.  (Contributed by Jim Kingdon,
+     16-Jan-2025.) $)
+  ressex $p |- ( ( W e. X /\ A e. Y ) -> ( W |`s A ) e. _V ) $=
+    ( wcel wa cress co cnx cbs cfv cin cop csts cvv ressvalsets simpl basendxnn
+    cn a1i inex1g adantl setsex syl3anc eqeltrd ) BCEZADEZFZBAGHBIJKZABJKZLZMNH
+    ZOABCDPUHUFUISEZUKOEZULOEUFUGQUMUHRTUGUNUFAUJDUAUBUIUKBCOSUCUDUE $.
 
   ${
     $d a w A $.  $d a w B $.  $d a w W $.
     ressbas.r $e |- R = ( W |`s A ) $.
     ressbas.b $e |- B = ( Base ` W ) $.
-    $( General behavior of trivial restriction.  (Contributed by Stefan O'Rear,
-       29-Nov-2014.)  (Revised by Jim Kingdon, 26-Jan-2023.) $)
-    ressid2 $p |- ( ( B C_ A /\ W e. X /\ A e. Y ) -> R = W ) $=
-      ( vw va wss wcel cress co cbs cfv cin csts cvv wceq w3a cnx cop cif simp2
-      elexd simp3 simp1 iftrued eqeltrd cv simpl fveq2d eqtr4di sseq12d ineq12d
-      wa simpr opeq2d oveq12d ifbieq12d df-ress ovmpoga syl3anc eqtrd eqtrid )
-      BAKZDELZAFLZUAZCDAMNZDGVJVKVGDDUBOPZABQZUCZRNZUDZDVJDSLASLVPSLVKVPTVJDEVG
-      VHVIUEUFZVJAFVGVHVIUGUFVJVPDSVJVGDVOVGVHVIUHUIZVQUJIJDASSIUKZOPZJUKZKZVSV
-      SVLWAVTQZUCZRNZUDVPMSVSDTZWAATZUQZWBVGVSWEDVOWHVTBWAAWHVTDOPBWHVSDOWFWGUL
-      ZUMHUNZWFWGURZUOWIWHVSDWDVNRWIWHWCVMVLWHWAAVTBWKWJUPUSUTVAJIVBVCVDVRVEVF
-      $.
-
     $( Value of nontrivial structure restriction.  (Contributed by Stefan
        O'Rear, 29-Nov-2014.) $)
     ressval2 $p |- ( ( -. B C_ A /\ W e. X /\ A e. Y ) -> R = ( W sSet
         <. ( Base ` ndx ) , ( A i^i B ) >. ) ) $=
-      ( vw va wss wcel cress co cbs cfv cin csts cvv wceq w3a cnx cop cif simp2
-      wn elexd simp3 simp1 iffalsed cn basendxnn a1i inex1g syl syl3anc eqeltrd
-      setsex cv wa simpl fveq2d eqtr4di simpr sseq12d ineq12d oveq12d ifbieq12d
-      opeq2d df-ress ovmpoga eqtrd eqtrid ) BAKZUFZDELZAFLZUAZCDAMNZDUBOPZABQZU
-      CZRNZGVRVSVNDWCUDZWCVRDSLASLWDSLVSWDTVRDEVOVPVQUEZUGVRAFVOVPVQUHZUGVRWDWC
-      SVRVNDWCVOVPVQUIUJZVRVPVTUKLZWASLZWCSLWEWHVRULUMVRVQWIWFABFUNUOVTWADESUKU
-      RUPUQIJDASSIUSZOPZJUSZKZWJWJVTWLWKQZUCZRNZUDWDMSWJDTZWLATZUTZWMVNWJWPDWCW
-      SWKBWLAWSWKDOPBWSWJDOWQWRVAZVBHVCZWQWRVDZVEWTWSWJDWOWBRWTWSWNWAVTWSWLAWKB
-      XBXAVFVIVGVHJIVJVKUPWGVLVM $.
+      ( wcel cnx cbs cfv cin cop csts co wceq wss wn wa ineq2i 3eqtr4g 3adant1
+      cress ressvalsets opeq2i oveq2i ) DEIZAFIZCDJKLZABMZNZOPZQBARSUHUITDAUDPD
+      UJADKLZMZNZOPCUMADEFUEGULUPDOUKUOUJBUNAHUAUFUGUBUC $.
   $}
 
   ${
-    ressid.1 $e |- B = ( Base ` W ) $.
-    $( Behavior of trivial restriction.  (Contributed by Stefan O'Rear,
-       29-Nov-2014.) $)
-    ressid $p |- ( W e. X -> ( W |`s B ) = W ) $=
-      ( wss wcel cvv cress co wceq ssid id cbs cfv baseid cn basendxnn strnfvnd
-      cnx a1i fvexg mpan2 eqeltrd eqeltrid eqid ressid2 mp3an2i ) AAEBCFZUHAGFB
-      AHIZBJAKUHLZUHABMNZGDUHUKSMNZBNZGUHBMULCOUJULPFZUHQTRUHUNUMGFQULBCPUAUBUC
-      UDAAUIBCGUIUEDUFUG $.
+    ressbasd.r $e |- ( ph -> R = ( W |`s A ) ) $.
+    ressbasd.b $e |- ( ph -> B = ( Base ` W ) ) $.
+    ressbasd.w $e |- ( ph -> W e. X ) $.
+    ${
+      ressbasd.a $e |- ( ph -> A e. V ) $.
+      $( Base set of a structure restriction.  (Contributed by Stefan O'Rear,
+         26-Nov-2014.)  (Proof shortened by AV, 7-Nov-2024.) $)
+      ressbasd $p |- ( ph -> ( A i^i B ) = ( Base ` R ) ) $=
+        ( cbs cfv cin cnx co wcel cvv wceq syl2anc cop csts inex1g syl baseslid
+        setsslid ineq2d cress ressvalsets eqtrd fveq2d 3eqtr4d ) ABFLMZNZFOLMUN
+        UAUBPZLMZBCNDLMAFGQZUNRQZUNUPSJABEQZURKBUMEUCUDGUNLRFUEUFTACUMBIUGADUOL
+        ADFBUHPZUOHAUQUSUTUOSJKBFGEUITUJUKUL $.
+    $}
+
+    ${
+      ressbas2d.ss $e |- ( ph -> A C_ B ) $.
+      $( Base set of a structure restriction.  (Contributed by Mario Carneiro,
+         2-Dec-2014.) $)
+      ressbas2d $p |- ( ph -> A = ( Base ` R ) ) $=
+        ( cin cbs cfv wss wceq df-ss sylib cvv wfn wcel funfvex sylancr eqeltrd
+        basfn elexd funfni ssexd ressbasd eqtr3d ) ABCKZBDLMABCNUJBOJBCPQABCDRE
+        FGHIABCRACELMZRHALRSERTUKRTZUDAEFIUEULRELELUAUFUBUCJUGUHUI $.
+    $}
+
+    ${
+      ressbasssd.a $e |- ( ph -> A e. V ) $.
+      $( The base set of a restriction is a subset of the base set of the
+         original structure.  (Contributed by Stefan O'Rear, 27-Nov-2014.)
+         (Revised by Mario Carneiro, 30-Apr-2015.) $)
+      ressbasssd $p |- ( ph -> ( Base ` R ) C_ B ) $=
+        ( cbs cfv cin ressbasd inss2 eqsstrrdi ) ADLMBCNCABCDEFGHIJKOBCPQ $.
+    $}
   $}
+
+  ${
+    strressid.b $e |- ( ph -> B = ( Base ` W ) ) $.
+    strressid.s $e |- ( ph -> W Struct <. M , N >. ) $.
+    strressid.f $e |- ( ph -> Fun W ) $.
+    strressid.bw $e |- ( ph -> ( Base ` ndx ) e. dom W ) $.
+    $( Behavior of trivial restriction.  (Contributed by Stefan O'Rear,
+       29-Nov-2014.)  (Revised by Jim Kingdon, 17-Jan-2025.) $)
+    strressid $p |- ( ph -> ( W |`s B ) = W ) $=
+      ( cnx cbs cfv cin cop csts co cress ineq1d cvv wcel inidm eqtrdi wceq wbr
+      opeq2d oveq2d cstr structex syl basfn funfvex sylancr eqeltrd ressvalsets
+      wfn funfni syl2anc baseid strsetsid 3eqtr4d ) AEJKLZBEKLZMZNZOPZEVAVBNZOP
+      EBQPZEAVDVFEOAVCVBVAAVCVBVBMVBABVBVBFRVBUAUBUEUFAESTZBSTVGVEUCAECDNZUGUDV
+      HGEVIUHUIZABVBSFAKSUOVHVBSTZUJVJVKSEKEKUKUPULUMBESSUNUQAEKCDURGHIUSUT $.
+  $}
+
+  ${
+    ressval3d.r $e |- R = ( S |`s A ) $.
+    ressval3d.b $e |- B = ( Base ` S ) $.
+    ressval3d.e $e |- E = ( Base ` ndx ) $.
+    ressval3d.s $e |- ( ph -> S e. V ) $.
+    ressval3d.f $e |- ( ph -> Fun S ) $.
+    ressval3d.d $e |- ( ph -> E e. dom S ) $.
+    ressval3d.u $e |- ( ph -> A C_ B ) $.
+    $( Value of structure restriction, deduction version.  (Contributed by AV,
+       14-Mar-2020.)  (Revised by Jim Kingdon, 17-Jan-2025.) $)
+    ressval3d $p |- ( ph -> R = ( S sSet <. E , A >. ) ) $=
+      ( cbs csts co wcel cvv wceq cnx cfv cin cop cress wfn basfn elexd funfvex
+      funfni sylancr eqeltrid ssexd ressvalsets syl2anc eqtrid a1i df-ss ineq2i
+      wss sylib eqtr3di opeq12d oveq2d eqtr4d ) ADEUAOUBZBEOUBZUCZUDZPQZEFBUDZP
+      QADEBUEQZVJHAEGRBSRVLVJTKABCSACVGSIAOSUFESRVGSRZUGAEGKUHVMSEOEOUIUJUKULNU
+      MBEGSUNUOUPAVKVIEPAFVFBVHFVFTAJUQABCUCZBVHABCUTVNBTNBCURVACVGBIUSVBVCVDVE
+      $.
+  $}
+
+  ${
+    resseqnbas.r $e |- R = ( W |`s A ) $.
+    resseqnbas.e $e |- C = ( E ` W ) $.
+    resseqnbasd.f $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
+    resseqnbas.n $e |- ( E ` ndx ) =/= ( Base ` ndx ) $.
+    resseqnbasd.w $e |- ( ph -> W e. X ) $.
+    resseqnbasd.a $e |- ( ph -> A e. V ) $.
+    $( The components of an extensible structure except the base set remain
+       unchanged on a structure restriction.  (Contributed by Mario Carneiro,
+       26-Nov-2014.)  (Revised by Mario Carneiro, 2-Dec-2014.)  (Revised by AV,
+       19-Oct-2024.) $)
+    resseqnbasd $p |- ( ph -> C = ( E ` R ) ) $=
+      ( cfv cbs co wcel wceq syl2anc cnx cin cop csts ressvalsets eqtrid fveq2d
+      cress cvv inex1g syl basendxnn setsslnid eqtr4d eqtr4id ) ACGEOZDEOZJAUQG
+      UAPOZBGPOZUBZUCUDQZEOZUPADVAEADGBUHQZVAIAGHRZBFRZVCVASMNBGHFUETUFUGAVDUTU
+      IRZUPVBSMAVEVFNBUSFUJUKHUTUREUIGKLULUMTUNUO $.
+  $}
+
+  ${
+    ressidbasd.1 $e |- ( ph -> B = ( Base ` W ) ) $.
+    ressidbasd.a $e |- ( ph -> A e. X ) $.
+    ressidbasd.w $e |- ( ph -> W e. V ) $.
+    $( Restriction only cares about the part of the second set which intersects
+       the base of the first.  (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
+    ressinbasd $p |- ( ph -> ( W |`s A ) = ( W |`s ( A i^i B ) ) ) $=
+      ( cbs cfv cin cop csts co cress ineq2d wcel wceq ressvalsets inidm eqtr3d
+      cnx eqtr3id inass eqtr4di opeq2d oveq2d syl2anc cvv inex1g syl 3eqtr4d )
+      AEUCJKZBEJKZLZMZNOZEUNBCLZUOLZMZNOZEBPOZEUSPOZAUQVAENAUPUTUNAUPBCUOLZLUTA
+      UOVEBACUOVEGACCCLVECUAACUOCGQUDUBQBCUOUEUFUGUHAEDRZBFRZVCURSIHBEDFTUIAVFU
+      SUJRZVDVBSIAVGVHHBCFUKULUSEDUJTUIUM $.
+  $}
+
+  $( Restriction composition law.  (Contributed by Stefan O'Rear, 29-Nov-2014.)
+     (Proof shortened by Mario Carneiro, 2-Dec-2014.) $)
+  ressressg $p |- ( ( A e. X /\ B e. Y /\ W e. Z ) ->
+    ( ( W |`s A ) |`s B ) = ( W |`s ( A i^i B ) ) ) $=
+    ( wcel cbs cfv cress cin cop csts cvv wceq syl2anc ressvalsets inex1g syl
+    co w3a eqidd simp3 simp1 ressbasd ineq2d inass ineq1i eqtr3i eqtr3di opeq2d
+    cnx incom oveq2d ressex simp2 oveq1d basendxnn a1i setsabsd 3eqtrd 3eqtr4d
+    cn ) ADGZBEGZCFGZUAZCULHIZBCAJTZHIZKZLZMTZCVHABKZCHIZKZLZMTZVIBJTZCVNJTZVGV
+    LVQCMVGVKVPVHVGBAVOKZKZVKVPVGWAVJBVGAVOVIDCFVGVIUBVGVOUBVDVEVFUCZVDVEVFUDZU
+    EUFBAKZVOKWBVPBAVOUGWEVNVOBAUMUHUIUJUKUNVGVSVIVLMTZCVHWALMTZVLMTVMVGVINGZVE
+    VSWFOVGVFVDWHWCWDACFDUOPVDVEVFUPZBVINEQPVGVIWGVLMVGVFVDVIWGOWCWDACFDQPUQVGV
+    HWAVKCNFVCNWCVHVCGVGURUSVGVDWANGWDAVODRSVGVEVKNGWIBVJERSUTVAVGVFVNNGZVTVROW
+    CVGVDWJWDABDRSVNCFNQPVB $.
+
+  $( Restriction absorption law.  (Contributed by Mario Carneiro,
+     12-Jun-2015.) $)
+  ressabsg $p |- ( ( A e. X /\ B C_ A /\ W e. Y ) ->
+    ( ( W |`s A ) |`s B ) = ( W |`s B ) ) $=
+    ( wcel wss w3a cress co cin cvv wceq simp1 simp2 ressressg syld3an2 sseqin2
+    ssexd sylib oveq2d eqtrd ) ADFZBAGZCEFZHZCAIJBIJZCABKZIJZCBIJUCBLFUDUEUGUIM
+    UFBADUCUDUENUCUDUEOZSABCDLEPQUFUHBCIUFUDUHBMUJBARTUAUB $.
 
 
 $(
@@ -143312,7 +143454,7 @@ $)
       ran ( y e. j |-> ( y i^i x ) ) ) $.
 
     $( Define the topology extractor function.  This differs from ~ df-tset
-       when a structure has been restricted using ~ df-ress ; in this case the
+       when a structure has been restricted using ~ df-iress ; in this case the
        ` TopSet ` component will still have a topology over the larger set, and
        this function fixes this by restricting the topology as well.
        (Contributed by Mario Carneiro, 13-Aug-2015.) $)
@@ -147411,6 +147553,42 @@ $)
   $}
 
   ${
+    $d ph a b x y $.  $d B x y $.  $d G a b x y $.  $d H a b x y $.
+    $d K x y $.
+    mulgpropdg.m $e |- ( ph -> .x. = ( .g ` G ) ) $.
+    mulgpropdg.n $e |- ( ph -> .X. = ( .g ` H ) ) $.
+    mulgpropdg.g $e |- ( ph -> G e. V ) $.
+    mulgpropdg.h $e |- ( ph -> H e. W ) $.
+    mulgpropd.b1 $e |- ( ph -> B = ( Base ` G ) ) $.
+    mulgpropd.b2 $e |- ( ph -> B = ( Base ` H ) ) $.
+    mulgpropd.i $e |- ( ph -> B C_ K ) $.
+    mulgpropd.k $e |- ( ( ph /\ ( x e. K /\ y e. K ) ) ->
+        ( x ( +g ` G ) y ) e. K ) $.
+    mulgpropd.e $e |- ( ( ph /\ ( x e. K /\ y e. K ) ) ->
+        ( x ( +g ` G ) y ) = ( x ( +g ` H ) y ) ) $.
+    $( Two structures with the same group-nature have the same group multiple
+       function. ` K ` is expected to either be ` _V ` (when strong equality is
+       available) or ` B ` (when closure is available).  (Contributed by Stefan
+       O'Rear, 21-Mar-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+    mulgpropdg $p |- ( ph -> .x. = .X. ) $=
+      ( va vb cz cbs cfv cv cc0 wceq c0g clt wbr cplusg cn csn cxp c1 cseq cneg
+      cminusg cif cmpo wcel w3a wa co wss wi anim12d syl imp syldan grpidpropdg
+      ssel 3ad2ant1 1zzd nnuz simp3 sseldd ialgrlemconst 3ad2antl1 grpinvpropdg
+      seqfeq3 fveq1d fveq12d ifeq12d mpoeq3dva mpoeq123dv 3eqtr3d cmg mulgfvalg
+      eqidd eqid eqtrd 3eqtr4d ) AUAUBUCGUDUEZUAUFZUGUHZGUIUEZUGWPUJUKZWPGULUEZ
+      UMUBUFZUNUOZUPUQZUEZWPURZXCUEZGUSUEZUEZUTZUTZVAZUAUBUCHUDUEZWQHUIUEZWSWPH
+      ULUEZXBUPUQZUEZXEXOUEZHUSUEZUEZUTZUTZVAZEFAUAUBUCDXJVAUAUBUCDYAVAXKYBAUAU
+      BUCDXJYAAWPUCVBZXADVBZVCZWQWRXMXIXTAYCWRXMUHYDABCDGHJKPQNOABUFZDVBZCUFZDV
+      BZVDZYFIVBZYHIVBZVDZYFYHWTVEZYFYHXNVEUHZAYJYMADIVFZYJYMVGRYPYGYKYIYLDIYFV
+      MDIYHVMVHVIVJTVKZVLVNYEWSXDXPXHXSYEWPXCXOYEBCWTXNIXBUPYEVOYEBXAIUPUMVPYED
+      IXAAYCYPYDRVNAYCYDVQVRVSAYCYMYNIVBYDSVTAYCYMYOYDTVTWBZWCYEXFXQXGXRAYCXGXR
+      UHYDABCDGHJKPQNOYQWAVNYEXEXCXOYRWCWDWEWEWFAUAUBUCDXJUCWOXJAUCWKZPAXJWKWGA
+      UAUBUCDYAUCXLYAYSQAYAWKWGWHAEGWIUEZXKLAGJVBYTXKUHNUBWOWTYTUAGXGJWRWOWLWTW
+      LWRWLXGWLYTWLWJVIWMAFHWIUEZYBMAHKVBUUAYBUHOUBXLXNUUAUAHXRKXMXLWLXNWLXMWLX
+      RWLUUAWLWJVIWMWN $.
+  $}
+
+  ${
     $d x y G $.  $d x y N $.  $d x y S $.  $d x .xb $.  $d x y X $.
     submmulgcl.t $e |- .xb = ( .g ` G ) $.
     $( Closure of the group multiple (exponentiation) operation in a submonoid.
@@ -147928,6 +148106,17 @@ $)
     mgpbas.1 $e |- M = ( mulGrp ` R ) $.
 
     ${
+      $( Existence of the multiplication group.  If ` R ` is known to be a
+         semiring, see ~ srgmgp .  (Contributed by Jim Kingdon,
+         10-Jan-2025.) $)
+      mgpex $p |- ( R e. V -> M e. _V ) $=
+        ( wcel cnx cplusg cfv cmulr cop csts co eqid mgpvalg cn cslot plusgslid
+        cvv wceq simpri a1i mulrslid slotex setsex mpd3an23 eqeltrd ) ACEZBAFGH
+        ZAIHZJKLZRAUIBCDUIMNUGUHOEZUIREUJREUKUGGUHPSUKQTUAAICUBUCUHUIACROUDUEUF
+        $.
+    $}
+
+    ${
       mgpbas.2 $e |- B = ( Base ` R ) $.
       $( Base set of the multiplication group.  (Contributed by Mario Carneiro,
          21-Dec-2014.)  (Revised by Mario Carneiro, 5-Oct-2015.) $)
@@ -147985,21 +148174,60 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Ring unit
+  Ring unity (multiplicative identity)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  In Wikipedia "Identity element", see
+  ~ https://en.wikipedia.org/wiki/Identity_element (18-Jan-2025):
+  "... an identity with respect to multiplication is called a multiplicative
+  identity (often denoted as 1). ... The distinction between additive and
+  multiplicative identity is used most often for sets that support both binary
+  operations, such as rings, integral domains, and fields.  The multiplicative
+  identity is often called unity in the latter context (a ring with unity).
+  This should not be confused with a unit in ring theory, which is any element
+  having a multiplicative inverse. By its own definition, unity itself is
+  necessarily a unit."
+
+  Calling the multiplicative identity of a ring a unity is taken from the
+  definition of a ring with unity in section 17.3 of [BeauregardFraleigh]
+  p. 135, "A ring ( R , + , . ) is a ring with unity if R is not the zero ring
+  and ( R , . ) is a monoid.  In this case, the identity element of ( R , . )
+  is denoted by 1 and is called the unity of R."  This definition of a "ring
+  with unity" corresponds to our definition of a unital ring (see ~ df-ring ).
+
+  Some authors call the multiplicative identity "unit" or "unit element" (for
+  example in section I, 2.2 of [BourbakiAlg1] p. 14, definition in section 1.3
+  of [Hall] p. 4, or in section I, 1 of [Lang] p. 3), whereas other authors use
+  the term "unit" for an element having a multiplicative inverse (for example
+  in section 17.3 of [BeauregardFraleigh] p. 135, in definition in [Roman]
+  p. 26, or even in section II, 1 of [Lang] p. 84). Sometimes, the
+  multiplicative identity is simply called "one" (see, for example, chapter 8
+  in [Schechter] p. 180).
+
+  To avoid this ambiguity of the term "unit", also mentioned in Wikipedia, we
+  call the multiplicative identity of a structure with a multiplication
+  (usually a ring) a "ring unity", or straightly "multiplicative identity".
+
+  The term "unit" will be used for an element having a multiplicative inverse
+  (see ~ https://us.metamath.org/mpeuni/df-unit.html in set.mm), and we have
+  "the ring unity is a unit", see ~ https://us.metamath.org/mpeuni/1unit.html .
+
 $)
+
 
   $c 1r $.
 
-  $( Extend class notation with ring unit. $)
+  $( Extend class notation with ring unity. $)
   cur $a class 1r $.
 
   $( Define the multiplicative identity, i.e., the monoid identity ( ~ df-0g )
      of the multiplicative monoid ( ~ df-mgp ) of a ring-like structure.  This
-     definition works by transferring the multiplicative operation from the
-     ` .r ` slot to the ` +g ` slot and then looking at the element which is
-     then the ` 0g ` element, that is an identity with respect to the operation
-     which started out in the ` .r ` slot.
+     multiplicative identity is also called "ring unity" or "unity element".
+
+     This definition works by transferring the multiplicative operation from
+     the ` .r ` slot to the ` +g ` slot and then looking at the element which
+     is then the ` 0g ` element, that is an identity with respect to the
+     operation which started out in the ` .r ` slot.
 
      See also ~ dfur2g , which derives the "traditional" definition as the
      unique element of a ring which is left- and right-neutral under
@@ -148039,9 +148267,9 @@ $)
 
 
 $(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Semirings
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
   $c SRing $.
@@ -148184,7 +148412,7 @@ $)
       AVKDVJVCNVGVACVCDVJVPSVAVJVFDVCVACVCEFVPSUNTUO $.
 
     $d u x B $.  $d u x R $.  $d u x .x. $.
-    $( The unit element of a semiring is unique.  (Contributed by NM,
+    $( The unity element of a semiring is unique.  (Contributed by NM,
        27-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.)  (Revised by
        Thierry Arnoux, 1-Apr-2018.) $)
     srgideu $p |- ( R e. SRing ->
@@ -148237,7 +148465,7 @@ $)
   ${
     srgidcl.b $e |- B = ( Base ` R ) $.
     srgidcl.u $e |- .1. = ( 1r ` R ) $.
-    $( The unit element of a semiring belongs to the base set of the semiring.
+    $( The unity element of a semiring belongs to the base set of the semiring.
        (Contributed by NM, 27-Aug-2011.)  (Revised by Mario Carneiro,
        27-Dec-2014.)  (Revised by Thierry Arnoux, 1-Apr-2018.) $)
     srgidcl $p |- ( R e. SRing -> .1. e. B ) $=
@@ -148273,14 +148501,14 @@ $)
       VKRVERVDRUHUMUPVBVJUBUQUPUSVGVAVIUPURVFEUPDVDEECVEBCVCIVMGUIZBDVCIVMHUJZU
       PEUKZSTUPUTVHEUPEEDVDCVEVNVPVOSTULUNUO $.
 
-    $( The unit element of a semiring is a left multiplicative identity.
+    $( The unity element of a semiring is a left multiplicative identity.
        (Contributed by NM, 15-Sep-2011.)  (Revised by Thierry Arnoux,
        1-Apr-2018.) $)
     srglidm $p |- ( ( R e. SRing /\ X e. B ) -> ( .1. .x. X ) = X ) $=
       ( csrg wcel wa co wceq srgidmlem simpld ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
       $.
 
-    $( The unit element of a semiring is a right multiplicative identity.
+    $( The unity element of a semiring is a right multiplicative identity.
        (Contributed by NM, 15-Sep-2011.)  (Revised by Thierry Arnoux,
        1-Apr-2018.) $)
     srgridm $p |- ( ( R e. SRing /\ X e. B ) -> ( X .x. .1. ) = X ) $=
@@ -148595,7 +148823,7 @@ $)
     isring.g $e |- G = ( mulGrp ` R ) $.
     isring.p $e |- .+ = ( +g ` R ) $.
     isring.t $e |- .x. = ( .r ` R ) $.
-    $( The predicate "is a (unital) ring".  Definition of ring with unit in
+    $( The predicate "is a (unital) ring".  Definition of "ring with unit" in
        [Schechter] p. 187.  (Contributed by NM, 18-Oct-2012.)  (Revised by
        Mario Carneiro, 6-Jan-2015.) $)
     isring $p |- ( R e. Ring <-> ( R e. Grp /\ G e. Mnd
@@ -148756,8 +148984,8 @@ $)
       FVMRTUN $.
 
     $d u x B $.  $d u x R $.  $d u x .x. $.
-    $( The unit element of a ring is unique.  (Contributed by NM, 27-Aug-2011.)
-       (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    $( The unity element of a ring is unique.  (Contributed by NM,
+       27-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
     ringideu $p |- ( R e. Ring ->
                 E! u e. B A. x e. B ( ( u .x. x ) = x /\ ( x .x. u ) = x ) ) $=
       ( crg wcel cv co wceq wa wral wreu cfv eqid syl oveqd eqeq1d cmgp ringmgp
@@ -148791,7 +149019,7 @@ $)
   ${
     ringidcl.b $e |- B = ( Base ` R ) $.
     ringidcl.u $e |- .1. = ( 1r ` R ) $.
-    $( The unit element of a ring belongs to the base set of the ring.
+    $( The unity element of a ring belongs to the base set of the ring.
        (Contributed by NM, 27-Aug-2011.)  (Revised by Mario Carneiro,
        27-Dec-2014.) $)
     ringidcl $p |- ( R e. Ring -> .1. e. B ) $=
@@ -148825,13 +149053,13 @@ $)
       BEVCVJQVDQVCQUGUHUQUSVFVAVHUQURVEEUQDVCEECVDUOCVDMUPBCVBIVKGUIRZUODVCMUPB
       DVBIVKHUJRZUQEUKZSTUQUTVGEUQEEDVCCVDVLVNVMSTUMUN $.
 
-    $( The unit element of a ring is a left multiplicative identity.
+    $( The unity element of a ring is a left multiplicative identity.
        (Contributed by NM, 15-Sep-2011.) $)
     ringlidm $p |- ( ( R e. Ring /\ X e. B ) -> ( .1. .x. X ) = X ) $=
       ( crg wcel wa co wceq ringidmlem simpld ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
       $.
 
-    $( The unit element of a ring is a right multiplicative identity.
+    $( The unity element of a ring is a right multiplicative identity.
        (Contributed by NM, 15-Sep-2011.) $)
     ringridm $p |- ( ( R e. Ring /\ X e. B ) -> ( X .x. .1. ) = X ) $=
       ( crg wcel wa co wceq ringidmlem simprd ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
@@ -148886,8 +149114,8 @@ $)
 
     rngo2times.u $e |- .1. = ( 1r ` R ) $.
     $( A ring element plus itself is two times the element.  "Two" in an
-       arbitrary unital ring is the sum of the unit with itself.  (Contributed
-       by AV, 24-Aug-2021.) $)
+       arbitrary unital ring is the sum of the unity element with itself.
+       (Contributed by AV, 24-Aug-2021.) $)
     rngo2times $p |- ( ( R e. Ring /\ A e. B )
                        -> ( A .+ A ) = ( ( .1. .+ .1. ) .x. A ) ) $=
       ( crg wcel wa co ringlidm eqcomd oveq12d wceq simpl ringidcl adantr simpr
@@ -149129,7 +149357,7 @@ $)
     ringinvnzdiv.r $e |- ( ph -> R e. Ring ) $.
     ringinvnzdiv.x $e |- ( ph -> X e. B ) $.
     ringinvnzdiv.a $e |- ( ph -> E. a e. B ( a .x. X ) = .1. ) $.
-    $( In a unitary ring, a left invertible element is different from zero iff
+    $( In a unital ring, a left invertible element is different from zero iff
        ` .1. =/= .0. ` .  (Contributed by FL, 18-Apr-2010.)  (Revised by AV,
        24-Aug-2021.) $)
     ringinvnz1ne0 $p |- ( ph -> ( X =/= .0. <-> .1. =/= .0. ) ) $=
@@ -149142,7 +149370,7 @@ $)
 
     $d Y a $.
     ringinvnzdiv.y $e |- ( ph -> Y e. B ) $.
-    $( In a unitary ring, a left invertible element is not a zero divisor.
+    $( In a unital ring, a left invertible element is not a zero divisor.
        (Contributed by FL, 18-Apr-2010.)  (Revised by Jeff Madsen,
        18-Apr-2010.)  (Revised by AV, 24-Aug-2021.) $)
     ringinvnzdiv $p |- ( ph -> ( ( X .x. Y ) = .0. <-> Y = .0. ) ) $=
@@ -149344,6 +149572,232 @@ $)
   ringn0 $p |- Ring =/= (/) $=
     ( vz cv cvv wcel cnx cbs cfv csn cop cplusg cmulr ctp crg c0 wne eqid ring1
     vex ne0i mp2b ) ABZCDEFGUAHIEJGUAUAIUAIHZIEKGUBILZMDMNOARUCCUAUCPQMUCST $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Opposite ring
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c oppR $. $( Opposite ring $)
+
+  $( The opposite ring operation. $)
+  coppr $a class oppR $.
+
+  $( Define an opposite ring, which is the same as the original ring but with
+     multiplication written the other way around.  (Contributed by Mario
+     Carneiro, 1-Dec-2014.) $)
+  df-oppr $a |- oppR = ( f e. _V |-> ( f sSet
+    <. ( .r ` ndx ) , tpos ( .r ` f ) >. ) ) $.
+
+  ${
+    $d x R $.  $d x B $.  $d x .x. $.  $d x X $.  $d x Y $.
+    opprval.1 $e |- B = ( Base ` R ) $.
+    opprval.2 $e |- .x. = ( .r ` R ) $.
+    opprval.3 $e |- O = ( oppR ` R ) $.
+    $( Value of the opposite ring.  (Contributed by Mario Carneiro,
+       1-Dec-2014.) $)
+    opprvalg $p |- ( R e. V
+        -> O = ( R sSet <. ( .r ` ndx ) , tpos .x. >. ) ) $=
+      ( vx wcel coppr cfv cmulr ctpos cop csts co cvv wceq cn cnx cv df-oppr id
+      fveq2 eqtr4di tposeqd opeq2d oveq12d elex mulrslid simpri slotex eqeltrid
+      cslot a1i tposexg syl setsex syl3anc fvmptd3 eqtrid ) BEJZDBKLBUAMLZCNZOZ
+      PQZHVCIBIUBZVDVHMLZNZOZPQVGRKRIUCVHBSZVHBVKVFPVLUDVLVJVEVDVLVICVLVIBMLZCV
+      HBMUEGUFUGUHUIBEUJZVCBRJVDTJZVERJZVGRJVNVOVCMVDUOSVOUKULUPVCCRJVPVCCVMRGB
+      MEUKUMUNCRUQURVDVEBRRTUSUTVAVB $.
+
+    opprmulfval.4 $e |- .xb = ( .r ` O ) $.
+    $( Value of the multiplication operation of an opposite ring.  (Contributed
+       by Mario Carneiro, 1-Dec-2014.) $)
+    opprmulfvalg $p |- ( R e. V -> .xb = tpos .x. ) $=
+      ( wcel cmulr cfv ctpos cnx cop csts co cvv mulrslid opprvalg wceq tposexg
+      fveq2d slotex eqeltrid syl setsslid mpdan eqtr4d eqtrid ) BFKZCELMZDNZJUL
+      UMBOLMUNPQRZLMZUNULEUOLABDEFGHIUAUDULUNSKZUNUPUBULDSKUQULDBLMSHBLFTUEUFDS
+      UCUGFUNLSBTUHUIUJUK $.
+
+    $( Value of the multiplication operation of an opposite ring.  Hypotheses
+       eliminated by a suggestion of Stefan O'Rear, 30-Aug-2015.  (Contributed
+       by Mario Carneiro, 1-Dec-2014.)  (Revised by Mario Carneiro,
+       30-Aug-2015.) $)
+    opprmulg $p |- ( ( R e. V /\ X e. W /\ Y e. U )
+        -> ( X .xb Y ) = ( Y .x. X ) ) $=
+      ( wcel w3a co ctpos wceq opprmulfvalg oveqd 3ad2ant1 ovtposg 3adant1
+      eqtrd ) BGOZIHOZJEOZPIJCQZIJDRZQZJIDQZUFUGUIUKSUHUFCUJIJABCDFGKLMNTUAUBUG
+      UHUKULSUFIJDHEUCUDUE $.
+
+    $( In a commutative ring, the opposite ring is equivalent to the original
+       ring.  (Contributed by Mario Carneiro, 14-Jun-2015.) $)
+    crngoppr $p |- ( ( R e. CRing /\ X e. B /\ Y e. B ) ->
+        ( X .x. Y ) = ( X .xb Y ) ) $=
+      ( ccrg wcel w3a co crngcom opprmulg eqtr4d ) BLMFAMGAMNFGDOGFDOFGCOABDFGH
+      IPABCDAELAFGHIJKQR $.
+  $}
+
+  ${
+    opprex.o $e |- O = ( oppR ` R ) $.
+    $( Existence of the opposite ring.  If you know that ` R ` is a ring, see
+       ~ opprring .  (Contributed by Jim Kingdon, 10-Jan-2025.) $)
+    opprex $p |- ( R e. V -> O e. _V ) $=
+      ( wcel cnx cmulr cfv ctpos cop csts co cvv cbs opprvalg cn cslot mulrslid
+      eqid wceq simpri a1i slotex tposexg syl setsex mpd3an23 eqeltrd ) ACEZBAF
+      GHZAGHZIZJKLZMANHZAUKBCUNSUKSDOUIUJPEZULMEZUMMEUOUIGUJQTUORUAUBUIUKMEUPAG
+      CRUCUKMUDUEUJULACMPUFUGUH $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z O $.
+    opprbas.1 $e |- O = ( oppR ` R ) $.
+    ${
+      opprsllem.2 $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
+      opprlem.3 $e |- ( E ` ndx ) =/= ( .r ` ndx ) $.
+      $( Lemma for ~ opprbasg and ~ oppraddg .  (Contributed by Mario Carneiro,
+         1-Dec-2014.)  (Revised by AV, 6-Nov-2024.) $)
+      opprsllem $p |- ( R e. V -> ( E ` R ) = ( E ` O ) ) $=
+        ( wcel cfv cnx cmulr ctpos cop csts co cvv wceq mulrslid slotex eqid cn
+        tposexg syl cslot simpri setsslnid mpdan cbs opprvalg fveq2d eqtr4d ) A
+        DHZABIZAJKIZAKIZLZMNOZBIZCBIULUPPHZUMURQULUOPHUSAKDRSUOPUBUCDUPUNBPAFGK
+        UNUDQUNUAHRUEUFUGULCUQBAUHIZAUOCDUTTUOTEUIUJUK $.
+    $}
+
+    ${
+      opprbas.2 $e |- B = ( Base ` R ) $.
+      $( Base set of an opposite ring.  (Contributed by Mario Carneiro,
+         1-Dec-2014.)  (Proof shortened by AV, 6-Nov-2024.) $)
+      opprbasg $p |- ( R e. V -> B = ( Base ` O ) ) $=
+        ( wcel cbs cfv baseslid basendxnmulrndx opprsllem eqtrid ) BDGABHICHIFB
+        HCDEJKLM $.
+    $}
+
+    ${
+      oppradd.2 $e |- .+ = ( +g ` R ) $.
+      $( Addition operation of an opposite ring.  (Contributed by Mario
+         Carneiro, 1-Dec-2014.)  (Proof shortened by AV, 6-Nov-2024.) $)
+      oppraddg $p |- ( R e. V -> .+ = ( +g ` O ) ) $=
+        ( wcel cplusg cfv plusgslid plusgndxnmulrndx opprsllem eqtrid ) BDGABHI
+        CHIFBHCDEJKLM $.
+    $}
+
+    $( An opposite ring is a ring.  (Contributed by Mario Carneiro,
+       1-Dec-2014.)  (Revised by Mario Carneiro, 30-Aug-2015.) $)
+    opprring $p |- ( R e. Ring -> O e. Ring ) $=
+      ( vx vy vz crg wcel cfv cplusg eqid cv wa co opprmulg wceq syl13anc eqtrd
+      syl3anc 3adant3r3 cbs cmulr opprbasg oppraddg eqidd cgrp ringgrp grppropd
+      cur oveqdr mpbid ringcl 3com23 eqeltrd simpl simpr3 simpr2 simpr1 ringass
+      3adant3r1 oveq2d oveq1d 3eqtr4rd ringdir ringacl 3adant3r2 oveq12d ringdi
+      w3a 3eqtr4d ringidcl syl simpr ringridm ringlidm isringd ) AGHZDEFAUAIZAJ
+      IZBBUBIZAUIIZVRABGCVRKZUCZVSABGCVSKZUDZVQVTUEVQAUFHBUFHAUGVQDEVRABVQVRUEW
+      CVQDLZVRHZELZVRHZMDEVSBJIWEUJUHUKVQWGWIVIZWFWHVTNZWHWFAUBIZNZVRVRAVTWLVRB
+      GVRWFWHWBWLKZCVTKZOZVQWIWGWMVRHZVRAWLWHWFWBWNULUMZUNVQWGWIFLZVRHZVIZMZWSW
+      HWLNZWFWLNZWSWMWLNZWFWHWSVTNZVTNZWKWSVTNZXBVQWTWIWGXDXEPVQXAUOZVQWGWIWTUP
+      ZVQWGWIWTUQZVQWGWIWTURZVRAWLWSWHWFWBWNUSQXBXGWFXCVTNZXDXBXFXCWFVTVQWIWTXF
+      XCPWGVRAVTWLVRBGVRWHWSWBWNCWOOUTZVAXBVQWGXCVRHZXMXDPXIXLXBVQWTWIXOXIXJXKV
+      RAWLWSWHWBWNULSVRAVTWLVRBGVRWFXCWBWNCWOOSRXBXHWMWSVTNZXEVQWGWIXHXPPWTWJWK
+      WMWSVTWPVBTXBVQWQWTXPXEPXIVQWGWIWQWTWRTXJVRAVTWLVRBGVRWMWSWBWNCWOOSRVCXBW
+      HWSVSNZWFWLNZWMWSWFWLNZVSNZWFXQVTNZWKWFWSVTNZVSNXBVQWIWTWGXRXTPXIXKXJXLVR
+      VSAWLWHWSWFWBWDWNVDQXBVQWGXQVRHZYAXRPXIXLVQWIWTYCWGVRVSAWHWSWBWDVEUTVRAVT
+      WLVRBGVRWFXQWBWNCWOOSXBWKWMYBXSVSVQWGWIWKWMPWTWPTVQWGWTYBXSPWIVRAVTWLVRBG
+      VRWFWSWBWNCWOOVFZVGVJXBWSWFWHVSNZWLNZXSXCVSNZYEWSVTNZYBXFVSNXBVQWTWGWIYFY
+      GPXIXJXLXKVRVSAWLWSWFWHWBWDWNVHQXBVQYEVRHZWTYHYFPXIVQWGWIYIWTVRVSAWFWHWBW
+      DVETXJVRAVTWLVRBGVRYEWSWBWNCWOOSXBYBXSXFXCVSYDXNVGVJVRAWAWBWAKZVKZVQWGMZW
+      AWFVTNZWFWAWLNZWFYLVQWAVRHZWGYMYNPVQWGUOZYLVQYOYPYKVLZVQWGVMZVRAVTWLVRBGV
+      RWAWFWBWNCWOOSVRAWLWAWFWBWNYJVNRYLWFWAVTNZWAWFWLNZWFYLVQWGYOYSYTPYPYRYQVR
+      AVTWLVRBGVRWFWAWBWNCWOOSVRAWLWAWFWBWNYJVORVP $.
+
+    ${
+      $d V x y $.
+      $( Bidirectional form of ~ opprring .  (Contributed by Mario Carneiro,
+         6-Dec-2014.) $)
+      opprringbg $p |- ( R e. V -> ( R e. Ring <-> O e. Ring ) ) $=
+        ( vx vy wcel crg opprring wa cfv eqid opprbasg sylan9eq cv cplusg cmulr
+        cbs co wceq coppr adantl eqidd oppraddg oveqdr opprmulg 3adant1l simp1l
+        w3a simp3 simp2 syl3anc eqtr2d 3expb ringpropd mpbird ex impbid2 ) ACGZ
+        AHGZBHGZABDIUSVAUTUSVAJZUTBUAKZHGZVAVDUSBVCVCLZIUBVBEFARKZAVCVBVFUCUSVA
+        VFBRKZVCRKVFABCDVFLZMVGBVCHVEVGLZMNVBEOZVFGZFOZVFGZJEFAPKZVCPKZUSVAVNBP
+        KZVOVNABCDVNLUDVPBVCHVEVPLUDNUEVBVKVMVJVLAQKZSZVJVLVCQKZSZTVBVKVMUIZVTV
+        LVJBQKZSZVRVAVKVMVTWCTUSVGBVSWBVFVCHVFVJVLVIWBLZVEVSLUFUGWAUSVMVKWCVRTU
+        SVAVKVMUHVBVKVMUJVBVKVMUKVFAWBVQVFBCVFVLVJVHVQLDWDUFULUMUNUOUPUQUR $.
+    $}
+
+    ${
+      $d V x y $.
+      oppr0.2 $e |- .0. = ( 0g ` R ) $.
+      $( Additive identity of an opposite ring.  (Contributed by Mario
+         Carneiro, 1-Dec-2014.) $)
+      oppr0g $p |- ( R e. V -> .0. = ( 0g ` O ) ) $=
+        ( vy vx wcel cv cbs cfv cplusg co wceq wa wral cio eqid oveqd raleqbidv
+        c0g opprbasg eleq2d oppraddg eqeq1d anbi12d iotabidv cvv opprex 3eqtr4d
+        grpidvalg syl ) ACIZGJZAKLZIZUOHJZAMLZNZUROZURUOUSNZUROZPZHUPQZPZGRUOBK
+        LZIZUOURBMLZNZUROZURUOVINZUROZPZHVGQZPZGRZDBUBLZUNVFVPGUNUQVHVEVOUNUPVG
+        UOUPABCEUPSZUCZUDUNVDVNHUPVGVTUNVAVKVCVMUNUTVJURUNUSVIUOURUSABCEUSSZUEZ
+        TUFUNVBVLURUNUSVIURUOWBTUFUGUAUGUHHUPUSGACDVSWAFULUNBUIIVRVQOABCEUJHVGV
+        IGBUIVRVGSVISVRSULUMUK $.
+    $}
+
+    ${
+      $d V x y $.
+      oppr1.2 $e |- .1. = ( 1r ` R ) $.
+      $( Multiplicative identity of an opposite ring.  (Contributed by Mario
+         Carneiro, 1-Dec-2014.) $)
+      oppr1g $p |- ( R e. V -> .1. = ( 1r ` O ) ) $=
+        ( vx vy wcel cfv cbs co wceq wa wral cio eqid eqeq1d anbi12d cvv c0g cv
+        cmgp cur cmulr crio opprmulg 3expa simpll simpr simplr syl3anc biancomd
+        ralbidva riotabidva df-riota 3eqtr3g cplusg opprex mgpex grpidvalg 3syl
+        opprbasg mgpbasg eqtrd eleq2d mgpplusgg oveqd raleqbidv iotabidv eqtr4d
+        syl 3eqtr4d ringidvalg 3eqtr4rd ) ADIZCUCJZUAJZAUCJZUAJZCUDJZBVPGUBZAKJ
+        ZIZWBHUBZCUEJZLZWEMZWEWBWFLZWEMZNZHWCOZNZGPZWDWBWEAUEJZLZWEMZWEWBWOLZWE
+        MZNZHWCOZNZGPZVRVTVPWLGWCUFXAGWCUFWNXCVPWLXAGWCVPWDNZWKWTHWCXDWEWCIZNZW
+        KWQWSXFWHWSWJWQXFWGWRWEVPWDXEWGWRMWCAWFWOWCCDWCWBWEWCQZWOQZEWFQZUGUHRXF
+        WIWPWEXFVPXEWDWIWPMVPWDXEUIXDXEUJVPWDXEUKWCAWFWOWCCDWCWEWBXGXHEXIUGULRS
+        UMUNUOWLGWCUPXAGWCUPUQVPVRWBVQKJZIZWBWEVQURJZLZWEMZWEWBXLLZWEMZNZHXJOZN
+        ZGPZWNVPCTIZVQTIVRXTMACDEUSZCVQTVQQZUTHXJXLGVQTVRXJQXLQVRQVAVBVPWMXSGVP
+        WDXKWLXRVPWCXJWBVPWCCKJZXJWCACDEXGVCVPYAYDXJMYBYDCVQTYCYDQVDVLVEZVFVPWK
+        XQHWCXJYEVPWHXNWJXPVPWGXMWEVPWFXLWBWEVPYAWFXLMYBCWFVQTYCXIVGVLZVHRVPWIX
+        OWEVPWFXLWEWBYFVHRSVISVJVKVPVTWBVSKJZIZWBWEVSURJZLZWEMZWEWBYILZWEMZNZHY
+        GOZNZGPZXCVPVSTIVTYQMAVSDVSQZUTHYGYIGVSTVTYGQYIQVTQVAVLVPXBYPGVPWDYHXAY
+        OVPWCYGWBWCAVSDYRXGVDZVFVPWTYNHWCYGYSVPWQYKWSYMVPWPYJWEVPWOYIWBWEAWOVSD
+        YRXHVGZVHRVPWRYLWEVPWOYIWEWBYTVHRSVISVJVKVMVPYAWAVRMYBCWAVQTYCWAQVNVLAB
+        VSDYRFVNVO $.
+    $}
+
+    ${
+      $d V x y $.
+      opprneg.2 $e |- N = ( invg ` R ) $.
+      $( The negative function in an opposite ring.  (Contributed by Mario
+         Carneiro, 5-Dec-2014.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+      opprnegg $p |- ( R e. V -> N = ( invg ` O ) ) $=
+        ( vx vy wcel cbs cfv cv cplusg co c0g wceq crio cmpt eqid grpinvfvalg
+        cminusg opprbasg oppraddg oveqd oppr0g riotaeqbidv mpteq12dv cvv opprex
+        eqeq12d syl 3eqtr4d ) ADIZGAJKZHLZGLZAMKZNZAOKZPZHUNQZRGCJKZUOUPCMKZNZC
+        OKZPZHVBQZRZBCUAKZUMGUNVAVBVGUNACDEUNSZUBZUMUTVFHUNVBVKUMURVDUSVEUMUQVC
+        UOUPUQACDEUQSZUCUDACDUSEUSSZUEUJUFUGGHUNUQABDUSVJVLVMFTUMCUHIVIVHPACDEU
+        IGHVBVCCVIUHVEVBSVCSVESVISTUKUL $.
+    $}
+  $}
+
+  ${
+    $d x y B $.  $d x y N $.  $d x y R $.  $d x y X $.  $d x y Y $.
+    mulgass3.b $e |- B = ( Base ` R ) $.
+    mulgass3.m $e |- .x. = ( .g ` R ) $.
+    mulgass3.t $e |- .X. = ( .r ` R ) $.
+    $( An associative property between group multiple and ring multiplication.
+       (Contributed by Mario Carneiro, 14-Jun-2015.) $)
+    mulgass3 $p |- ( ( R e. Ring /\ ( N e. ZZ /\ X e. B /\ Y e. B ) ) ->
+        ( X .X. ( N .x. Y ) ) = ( N .x. ( X .X. Y ) ) ) $=
+      ( vx vy crg wcel wa cfv co wceq eqid adantr cz w3a coppr cmg cbs opprring
+      simpr1 simpr3 opprbasg eleqtrd simpr2 mulgass2 syl13anc ringgrpd eleqtrrd
+      cmulr simpl mulgcld opprmulg syl3anc oveq2d 3eqtr3d eqidd ssidd cv cplusg
+      a1i ringacl 3expb adantlr oppraddg oveqdr mulgpropdg oveqd 3eqtr4d ) BMNZ
+      EUANZFANZGANZUBZOZFEGBUCPZUDPZQZDQZEFGDQZWCQZFEGCQZDQEWFCQWAWDFWBUPPZQZEG
+      FWIQZWCQZWEWGWAWBMNZVQGWBUEPZNFWNNWJWLRVPWMVTBWBWBSZUFTZVPVQVRVSUGZWAGAWN
+      VPVQVRVSUHZVPAWNRVTABWBMWOHUITZUJZWAFAWNVPVQVRVSUKZWSUJWNWBWCWIEGFWNSZWCS
+      ZWISZULUMWAVPWDANVRWJWERVPVTUQZWAWDWNAWAWNWCWBEGXBXCWAWBWPUNWQWTURWSUOXAA
+      BWIDAWBMAWDFHJWOXDUSUTWAWKWFEWCWAVPVSVRWKWFRXEWRXAABWIDAWBMAGFHJWOXDUSUTV
+      AVBWAWHWDFDWACWCEGWAKLACWCBWBAMMCBUDPRWAIVGWAWCVCXEWPABUEPRWAHVGWSWAAVDVP
+      KVEZANZLVEZANZOZXFXHBVFPZQZANZVTVPXGXIXMAXKBXFXHHXKSZVHVIVJWAXLXFXHWBVFPZ
+      QRXJVPVTKLXKXOXKBWBMWOXNVKVLTVMZVNVAWACWCEWFXPVNVO $.
+  $}
 
 
 $(
@@ -166595,6 +167049,9 @@ htmldef "CRing" as
 htmldef "1r" as "<IMG SRC='_1r.gif' WIDTH=13 HEIGHT=19 ALT=' 1r' TITLE='1r'>";
   althtmldef "1r" as "1<SUB>r</SUB>";
   latexdef "1r" as "1_\mathrm{r}";
+htmldef "oppR" as "opp<sub><i>r</i></sub>";
+  althtmldef "oppR" as "opp<sub><i>r</i></sub>";
+  latexdef "oppR" as "\mathrm{opp}_r";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
