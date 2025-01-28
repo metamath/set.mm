@@ -44886,7 +44886,23 @@ $)
       ( vx wcel cvv csn cima wbr cab wceq elex wrex dfima2 rexsng abbidv eqtrid
       cv breq1 syl ) BCFBGFZDBHZIZBASZDJZAKZLBCMUBUDESZUEDJZEUCNZAKUGEADUCOUBUJ
       UFAUIUFEBGUHBUEDTPQRUA $.
+  $}
 
+  ${
+    $d x y A $.  $d x y B $.  $d x y R $.
+    $( Elementhood in the image of a singleton.  (Contributed by Mario
+       Carneiro, 3-Nov-2015.) $)
+    elrelimasn $p |- ( Rel R -> ( B e. ( R " { A } ) <-> A R B ) ) $=
+      ( vy vx wrel cvv wcel csn cima wbr wi cv wceq wex wrex elimag ibi ex wb
+      rexm elsni eximi 3syl isset sylibr a1i brrelex1 cab imasng brrelex2 breq2
+      eleq2d elab3g syl sylan9bbr pm5.21ndd ) CFZAGHZBCAIZJZHZABCKZVBUSLURVBDMZ
+      ANZDOZUSVBVDBCKZDUTPZVDUTHZDOVFVBVHDBCUTVAQRVGDUTUAVIVEDVDAUBUCUDDAUEUFUG
+      URVCUSABCUHSURUSVBVCTUSVBBAEMZCKZEUIZHZURVCUSVAVLBEAGCUJUMURVCBGHZLVMVCTU
+      RVCVNABCUKSVKVCEBGVJBACULUNUOUPSUQ $.
+  $}
+
+  ${
+    $d x y A $.  $d x B $.  $d x y R $.
     $( Elementhood in the image of a singleton.  (Contributed by Jim Kingdon,
        10-Dec-2018.) $)
     elreimasng $p |- ( ( Rel R /\ A e. V ) -> ( B e. ( R " { A } ) <->
