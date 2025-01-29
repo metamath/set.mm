@@ -89,6 +89,15 @@ DONE:
 Date      Old       New         Notes
 27-Jan-25 ---       ---         Moved surreal cofinality theorems
                                 from SF's mathbox to main set.mm
+26-Jan-25 an2anr    [same]      Moved from PM's mathbox to main set.mm
+26-Jan-25 ismhmd    [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 ringcld   [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 ablcmnd   [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 ringabld  [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 ringcmnd  [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 pwsexpg   [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 drnginvrcld [same]    Moved from SN's mathbox to main set.mm
+26-Jan-25 pwspjmhmmgpd [same]   Moved from SN's mathbox to main set.mm
 24-Jan-25 rextru    [same]      Moved from ZW's mathbox to main set.mm
 19-Jan-25 ---       ---         Moved surreal cut and option theorems
                                 from SF's mathbox to main set.mm

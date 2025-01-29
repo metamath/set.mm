@@ -148174,21 +148174,60 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Ring unit
+  Ring unity (multiplicative identity)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  In Wikipedia "Identity element", see
+  ~ https://en.wikipedia.org/wiki/Identity_element (18-Jan-2025):
+  "... an identity with respect to multiplication is called a multiplicative
+  identity (often denoted as 1). ... The distinction between additive and
+  multiplicative identity is used most often for sets that support both binary
+  operations, such as rings, integral domains, and fields.  The multiplicative
+  identity is often called unity in the latter context (a ring with unity).
+  This should not be confused with a unit in ring theory, which is any element
+  having a multiplicative inverse. By its own definition, unity itself is
+  necessarily a unit."
+
+  Calling the multiplicative identity of a ring a unity is taken from the
+  definition of a ring with unity in section 17.3 of [BeauregardFraleigh]
+  p. 135, "A ring ( R , + , . ) is a ring with unity if R is not the zero ring
+  and ( R , . ) is a monoid.  In this case, the identity element of ( R , . )
+  is denoted by 1 and is called the unity of R."  This definition of a "ring
+  with unity" corresponds to our definition of a unital ring (see ~ df-ring ).
+
+  Some authors call the multiplicative identity "unit" or "unit element" (for
+  example in section I, 2.2 of [BourbakiAlg1] p. 14, definition in section 1.3
+  of [Hall] p. 4, or in section I, 1 of [Lang] p. 3), whereas other authors use
+  the term "unit" for an element having a multiplicative inverse (for example
+  in section 17.3 of [BeauregardFraleigh] p. 135, in definition in [Roman]
+  p. 26, or even in section II, 1 of [Lang] p. 84). Sometimes, the
+  multiplicative identity is simply called "one" (see, for example, chapter 8
+  in [Schechter] p. 180).
+
+  To avoid this ambiguity of the term "unit", also mentioned in Wikipedia, we
+  call the multiplicative identity of a structure with a multiplication
+  (usually a ring) a "ring unity", or straightly "multiplicative identity".
+
+  The term "unit" will be used for an element having a multiplicative inverse
+  (see ~ https://us.metamath.org/mpeuni/df-unit.html in set.mm), and we have
+  "the ring unity is a unit", see ~ https://us.metamath.org/mpeuni/1unit.html .
+
 $)
+
 
   $c 1r $.
 
-  $( Extend class notation with ring unit. $)
+  $( Extend class notation with ring unity. $)
   cur $a class 1r $.
 
   $( Define the multiplicative identity, i.e., the monoid identity ( ~ df-0g )
      of the multiplicative monoid ( ~ df-mgp ) of a ring-like structure.  This
-     definition works by transferring the multiplicative operation from the
-     ` .r ` slot to the ` +g ` slot and then looking at the element which is
-     then the ` 0g ` element, that is an identity with respect to the operation
-     which started out in the ` .r ` slot.
+     multiplicative identity is also called "ring unity" or "unity element".
+
+     This definition works by transferring the multiplicative operation from
+     the ` .r ` slot to the ` +g ` slot and then looking at the element which
+     is then the ` 0g ` element, that is an identity with respect to the
+     operation which started out in the ` .r ` slot.
 
      See also ~ dfur2g , which derives the "traditional" definition as the
      unique element of a ring which is left- and right-neutral under
@@ -148228,9 +148267,9 @@ $)
 
 
 $(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Semirings
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
   $c SRing $.
@@ -148373,7 +148412,7 @@ $)
       AVKDVJVCNVGVACVCDVJVPSVAVJVFDVCVACVCEFVPSUNTUO $.
 
     $d u x B $.  $d u x R $.  $d u x .x. $.
-    $( The unit element of a semiring is unique.  (Contributed by NM,
+    $( The unity element of a semiring is unique.  (Contributed by NM,
        27-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.)  (Revised by
        Thierry Arnoux, 1-Apr-2018.) $)
     srgideu $p |- ( R e. SRing ->
@@ -148426,7 +148465,7 @@ $)
   ${
     srgidcl.b $e |- B = ( Base ` R ) $.
     srgidcl.u $e |- .1. = ( 1r ` R ) $.
-    $( The unit element of a semiring belongs to the base set of the semiring.
+    $( The unity element of a semiring belongs to the base set of the semiring.
        (Contributed by NM, 27-Aug-2011.)  (Revised by Mario Carneiro,
        27-Dec-2014.)  (Revised by Thierry Arnoux, 1-Apr-2018.) $)
     srgidcl $p |- ( R e. SRing -> .1. e. B ) $=
@@ -148462,14 +148501,14 @@ $)
       VKRVERVDRUHUMUPVBVJUBUQUPUSVGVAVIUPURVFEUPDVDEECVEBCVCIVMGUIZBDVCIVMHUJZU
       PEUKZSTUPUTVHEUPEEDVDCVEVNVPVOSTULUNUO $.
 
-    $( The unit element of a semiring is a left multiplicative identity.
+    $( The unity element of a semiring is a left multiplicative identity.
        (Contributed by NM, 15-Sep-2011.)  (Revised by Thierry Arnoux,
        1-Apr-2018.) $)
     srglidm $p |- ( ( R e. SRing /\ X e. B ) -> ( .1. .x. X ) = X ) $=
       ( csrg wcel wa co wceq srgidmlem simpld ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
       $.
 
-    $( The unit element of a semiring is a right multiplicative identity.
+    $( The unity element of a semiring is a right multiplicative identity.
        (Contributed by NM, 15-Sep-2011.)  (Revised by Thierry Arnoux,
        1-Apr-2018.) $)
     srgridm $p |- ( ( R e. SRing /\ X e. B ) -> ( X .x. .1. ) = X ) $=
@@ -148784,7 +148823,7 @@ $)
     isring.g $e |- G = ( mulGrp ` R ) $.
     isring.p $e |- .+ = ( +g ` R ) $.
     isring.t $e |- .x. = ( .r ` R ) $.
-    $( The predicate "is a (unital) ring".  Definition of ring with unit in
+    $( The predicate "is a (unital) ring".  Definition of "ring with unit" in
        [Schechter] p. 187.  (Contributed by NM, 18-Oct-2012.)  (Revised by
        Mario Carneiro, 6-Jan-2015.) $)
     isring $p |- ( R e. Ring <-> ( R e. Grp /\ G e. Mnd
@@ -148945,8 +148984,8 @@ $)
       FVMRTUN $.
 
     $d u x B $.  $d u x R $.  $d u x .x. $.
-    $( The unit element of a ring is unique.  (Contributed by NM, 27-Aug-2011.)
-       (Revised by Mario Carneiro, 6-Jan-2015.) $)
+    $( The unity element of a ring is unique.  (Contributed by NM,
+       27-Aug-2011.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
     ringideu $p |- ( R e. Ring ->
                 E! u e. B A. x e. B ( ( u .x. x ) = x /\ ( x .x. u ) = x ) ) $=
       ( crg wcel cv co wceq wa wral wreu cfv eqid syl oveqd eqeq1d cmgp ringmgp
@@ -148980,7 +149019,7 @@ $)
   ${
     ringidcl.b $e |- B = ( Base ` R ) $.
     ringidcl.u $e |- .1. = ( 1r ` R ) $.
-    $( The unit element of a ring belongs to the base set of the ring.
+    $( The unity element of a ring belongs to the base set of the ring.
        (Contributed by NM, 27-Aug-2011.)  (Revised by Mario Carneiro,
        27-Dec-2014.) $)
     ringidcl $p |- ( R e. Ring -> .1. e. B ) $=
@@ -149014,13 +149053,13 @@ $)
       BEVCVJQVDQVCQUGUHUQUSVFVAVHUQURVEEUQDVCEECVDUOCVDMUPBCVBIVKGUIRZUODVCMUPB
       DVBIVKHUJRZUQEUKZSTUQUTVGEUQEEDVCCVDVLVNVMSTUMUN $.
 
-    $( The unit element of a ring is a left multiplicative identity.
+    $( The unity element of a ring is a left multiplicative identity.
        (Contributed by NM, 15-Sep-2011.) $)
     ringlidm $p |- ( ( R e. Ring /\ X e. B ) -> ( .1. .x. X ) = X ) $=
       ( crg wcel wa co wceq ringidmlem simpld ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
       $.
 
-    $( The unit element of a ring is a right multiplicative identity.
+    $( The unity element of a ring is a right multiplicative identity.
        (Contributed by NM, 15-Sep-2011.) $)
     ringridm $p |- ( ( R e. Ring /\ X e. B ) -> ( X .x. .1. ) = X ) $=
       ( crg wcel wa co wceq ringidmlem simprd ) BIJEAJKDECLEMEDCLEMABCDEFGHNO
@@ -149075,8 +149114,8 @@ $)
 
     rngo2times.u $e |- .1. = ( 1r ` R ) $.
     $( A ring element plus itself is two times the element.  "Two" in an
-       arbitrary unital ring is the sum of the unit with itself.  (Contributed
-       by AV, 24-Aug-2021.) $)
+       arbitrary unital ring is the sum of the unity element with itself.
+       (Contributed by AV, 24-Aug-2021.) $)
     rngo2times $p |- ( ( R e. Ring /\ A e. B )
                        -> ( A .+ A ) = ( ( .1. .+ .1. ) .x. A ) ) $=
       ( crg wcel wa co ringlidm eqcomd oveq12d wceq simpl ringidcl adantr simpr
@@ -149318,7 +149357,7 @@ $)
     ringinvnzdiv.r $e |- ( ph -> R e. Ring ) $.
     ringinvnzdiv.x $e |- ( ph -> X e. B ) $.
     ringinvnzdiv.a $e |- ( ph -> E. a e. B ( a .x. X ) = .1. ) $.
-    $( In a unitary ring, a left invertible element is different from zero iff
+    $( In a unital ring, a left invertible element is different from zero iff
        ` .1. =/= .0. ` .  (Contributed by FL, 18-Apr-2010.)  (Revised by AV,
        24-Aug-2021.) $)
     ringinvnz1ne0 $p |- ( ph -> ( X =/= .0. <-> .1. =/= .0. ) ) $=
@@ -149331,7 +149370,7 @@ $)
 
     $d Y a $.
     ringinvnzdiv.y $e |- ( ph -> Y e. B ) $.
-    $( In a unitary ring, a left invertible element is not a zero divisor.
+    $( In a unital ring, a left invertible element is not a zero divisor.
        (Contributed by FL, 18-Apr-2010.)  (Revised by Jeff Madsen,
        18-Apr-2010.)  (Revised by AV, 24-Aug-2021.) $)
     ringinvnzdiv $p |- ( ph -> ( ( X .x. Y ) = .0. <-> Y = .0. ) ) $=
@@ -149758,6 +149797,229 @@ $)
       AVBWAWHWDFDWACWCEGWAKLACWCBWBAMMCBUDPRWAIVGWAWCVCXEWPABUEPRWAHVGWSWAAVDVP
       KVEZANZLVEZANZOZXFXHBVFPZQZANZVTVPXGXIXMAXKBXFXHHXKSZVHVIVJWAXLXFXHWBVFPZ
       QRXJVPVTKLXKXOXKBWBMWOXNVKVLTVMZVNVAWACWCEWFXPVNVO $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Divisibility
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c ||r $. $( Ring divisibility relation $)
+  $c Unit $. $( Units in a ring $)
+  $c Irred $. $( Ring irreducibles $)
+
+  $( Ring divisibility relation. $)
+  cdsr $a class ||r $.
+
+  $( Units in a ring. $)
+  cui $a class Unit $.
+
+  $( Ring irreducibles. $)
+  cir $a class Irred $.
+
+  ${
+    $d b w x y z $.
+    $( Define the (right) divisibility relation in a ring.  Access to the left
+       divisibility relation is available through
+       ` ( ||r `` ( oppR `` R ) ) ` .  (Contributed by Mario Carneiro,
+       1-Dec-2014.) $)
+    df-dvdsr $a |- ||r = ( w e. _V |-> { <. x , y >. | ( x e. ( Base ` w ) /\
+      E. z e. ( Base ` w ) ( z ( .r ` w ) x ) = y ) } ) $.
+
+    $( Define the set of units in a ring, that is, all elements with a left and
+       right multiplicative inverse.  (Contributed by Mario Carneiro,
+       1-Dec-2014.) $)
+    df-unit $a |- Unit = ( w e. _V |->
+      ( `' ( ( ||r ` w ) i^i ( ||r ` ( oppR ` w ) ) ) " { ( 1r ` w ) } ) ) $.
+
+    $( Define the set of irreducible elements in a ring.  (Contributed by Mario
+       Carneiro, 4-Dec-2014.) $)
+    df-irred $a |- Irred = ( w e. _V |->
+      [_ ( ( Base ` w ) \ ( Unit ` w ) ) / b ]_
+        { z e. b | A. x e. b A. y e. b ( x ( .r ` w ) y ) =/= z } ) $.
+  $}
+
+  ${
+    $d w x y z R $.
+    $( The divides relation is a relation.  (Contributed by Mario Carneiro,
+       1-Dec-2014.)  (Revised by Jim Kingdon, 24-Jan-2025.) $)
+    reldvdsrsrg $p |- ( R e. SRing -> Rel ( ||r ` R ) ) $=
+      ( vx vz vy vw csrg wcel cdsr cfv cvv cxp cbs cv cmulr co wceq copab fveq2
+      wrex wa wrel df-dvdsr eleq2d oveqd eqeq1d rexeqbidv anbi12d opabbidv elex
+      wss wfn basfn funfvex funfni sylancr xpexg syl2anc simplll simplr simpllr
+      simpr eqid srgcl eqeltrrd rexlimdva2 imdistanda ssopab2dv df-xp sseqtrrdi
+      syl3anc ssexd fvmptd3 eqsstrd xpss sstrdi df-rel sylibr ) AFGZAHIZJJKZUJV
+      SUAVRVSALIZWAKZVTVRVSBMZWAGZCMZWCANIZOZDMZPZCWASZTZBDQZWBVREAWCEMZLIZGZWE
+      WCWMNIZOZWHPZCWNSZTZBDQWLJHJBDCEUBWMAPZWTWKBDXAWOWDWSWJXAWNWAWCWMALRZUCXA
+      WRWICWNWAXBXAWQWGWHXAWPWFWEWCWMANRUDUEUFUGUHAFUIZVRWLWBJVRWAJGZXDWBJGVRLJ
+      UKAJGXDULXCXDJALALUMUNUOZXEWAWAJJUPUQVRWLWDWHWAGZTZBDQWBVRWKXGBDVRWDWJXFV
+      RWDTZWIXFCWAXHWEWAGZTZWITZWGWHWAXJWIVAXKVRXIWDWGWAGVRWDXIWIURXHXIWIUSVRWD
+      XIWIUTWAAWFWEWCWAVBWFVBVCVJVDVEVFVGBDWAWAVHVIZVKVLXLVMWAWAVNVOVSVPVQ $.
+  $}
+
+  ${
+    $d x y .|| $.  $d r x y z B $.  $d x y z X $.  $d x y z Y $.  $d x y Z $.
+    $d r x y z R $.  $d r x y z .x. $.  $d x y z ph $.
+    dvdsrvald.1 $e |- ( ph -> B = ( Base ` R ) ) $.
+    dvdsrvald.2 $e |- ( ph -> .|| = ( ||r ` R ) ) $.
+    dvdsrvald.r $e |- ( ph -> R e. SRing ) $.
+    ${
+      dvdsrvald.3 $e |- ( ph -> .x. = ( .r ` R ) ) $.
+      $( Value of the divides relation.  (Contributed by Mario Carneiro,
+         1-Dec-2014.)  (Revised by Mario Carneiro, 6-Jan-2015.) $)
+      dvdsrvald $p |- ( ph -> .|| = { <. x , y >. |
+          ( x e. B /\ E. z e. B ( z .x. x ) = y ) } ) $=
+        ( cfv cv cbs wcel wceq wa copab cvv vr cdsr cmulr df-dvdsr fveq2 eleq2d
+        wrex oveqd eqeq1d rexeqbidv anbi12d opabbidv csrg elexd cxp wfn funfvex
+        co basfn funfni sylancr xpexg syl2anc simprr ad2antrr simprl eqid srgcl
+        simplr syl3anc eqeltrrd rexlimdvaa imdistanda ssopab2dv df-xp sseqtrrdi
+        ssexd fvmptd3 3eqtr4d ) AGUBMBNZGOMZPZDNZVTGUCMZURZCNZQZDWAUGZRZBCSZFVT
+        EPZWCVTHURZWFQZDEUGZRZBCSAUAGVTUANZOMZPZWCVTWPUCMZURZWFQZDWQUGZRZBCSWJT
+        UBTBCDUAUDWPGQZXCWIBCXDWRWBXBWHXDWQWAVTWPGOUEZUFXDXAWGDWQWAXEXDWTWEWFXD
+        WSWDWCVTWPGUCUEUHUIUJUKULAGUMKUNZAWJWAWAUOZTAWATPZXHXGTPAOTUPGTPXHUSXFX
+        HTGOGOUQUTVAZXIWAWATTVBVCAWJWBWFWAPZRZBCSXGAWIXKBCAWBWHXJAWBRZWGXJDWAXL
+        WCWAPZWGRZRZWEWFWAXLXMWGVDXOGUMPZXMWBWEWAPAXPWBXNKVEXLXMWGVFAWBXNVIWAGW
+        DWCVTWAVGWDVGVHVJVKVLVMVNBCWAWAVOVPVQVRJAWOWIBCAWKWBWNWHAEWAVTIUFAWMWGD
+        EWAIAWLWEWFAHWDWCVTLUHUIUJUKULVS $.
+
+      $( Value of the divides relation.  (Contributed by Mario Carneiro,
+         1-Dec-2014.) $)
+      dvdsrd $p |- ( ph
+          -> ( X .|| Y <-> ( X e. B /\ E. z e. B ( z .x. X ) = Y ) ) ) $=
+        ( vx vy cvv wcel wa cv co wceq wbr wrex wrel cfv reldvdsrsrg syl releqd
+        cdsr csrg mpbird brrelex12 sylan simplr elexd simprr cmulr cbs ad2antrr
+        simprl eleqtrd eqid srgcl syl3anc oveqd 3eltr4d eqeltrrd jca rexlimdvaa
+        ex expimpd wb copab dvdsrvald adantr breqd simpl eleq1d eqeq12d rexbidv
+        oveq2d simpr anbi12d brabga adantl bitrd pm5.21ndd ) AGOPZHOPZQZGHDUAZG
+        CPZBRZGFSZHTZBCUBZQZAWJWIADUCZWJWIAWQEUHUDZUCZAEUIPZWSKEUEUFADWRJUGUJGH
+        DUKULVIAWKWOWIAWKQZWNWIBCXAWLCPZWNQZQZWGWHXDGCAWKXCUMZUNXDHCXDWMHCXAXBW
+        NUOXDWLGEUPUDZSZEUQUDZWMCXDWTWLXHPGXHPXGXHPAWTWKXCKURXDWLCXHXAXBWNUSACX
+        HTWKXCIURZUTXDGCXHXEXIUTXHEXFWLGXHVAXFVAVBVCXDFXFWLGAFXFTWKXCLURVDXIVEV
+        FUNVGVHVJAWIWJWPVKAWIQZWJGHMRZCPZWLXKFSZNRZTZBCUBZQZMNVLZUAZWPXJDXRGHAD
+        XRTWIAMNBCDEFIJKLVMVNVOWIXSWPVKAXQWPMNGHXROOXKGTZXNHTZQZXLWKXPWOYBXKGCX
+        TYAVPZVQYBXOWNBCYBXMWMXNHYBXKGWLFYCVTXTYAWAVRVSWBXRVAWCWDWEVIWF $.
+
+      ${
+        dvdsr2d.x $e |- ( ph -> X e. B ) $.
+        $( Value of the divides relation.  (Contributed by Mario Carneiro,
+           1-Dec-2014.) $)
+        dvdsr2d $p |- ( ph -> ( X .|| Y <-> E. z e. B ( z .x. X ) = Y ) ) $=
+          ( wbr wcel cv co wceq wrex dvdsrd mpbirand ) AGHDNGCOBPGFQHRBCSMABCDE
+          FGHIJKLTUA $.
+
+        dvdsrmuld.y $e |- ( ph -> Y e. B ) $.
+        $( A left-multiple of ` X ` is divisible by ` X ` .  (Contributed by
+           Mario Carneiro, 1-Dec-2014.) $)
+        dvdsrmuld $p |- ( ph -> X .|| ( Y .x. X ) ) $=
+          ( vz co wbr wcel cv wceq wrex eqid oveq1 eqeq1d rspcev sylancl dvdsrd
+          mpbir2and ) AFGFEOZCPFBQNRZFEOZUHSZNBTZLAGBQUHUHSZULMUHUAUKUMNGBUIGSU
+          JUHUHUIGFEUBUCUDUEANBCDEFUHHIJKUFUG $.
+      $}
+    $}
+
+    ${
+      dvdsrcld.d $e |- ( ph -> X .|| Y ) $.
+      $( Closure of a dividing element.  (Contributed by Mario Carneiro,
+         5-Dec-2014.) $)
+      dvdsrcld $p |- ( ph -> X e. B ) $=
+        ( vz wcel cv cmulr cfv co wceq wrex wbr wa eqidd dvdsrd mpbid simpld )
+        AEBLZKMEDNOZPFQKBRZAEFCSUEUGTJAKBCDUFEFGHIAUFUAUBUCUD $.
+    $}
+  $}
+
+  ${
+    $d x y .|| $.  $d r x y z B $.  $d x y z X $.  $d x y z Y $.  $d x y Z $.
+    $d r x y z R $.  $d r x y z .x. $.
+    dvdsr.1 $e |- B = ( Base ` R ) $.
+    dvdsr.2 $e |- .|| = ( ||r ` R ) $.
+    $( Closure of a dividing element.  (Contributed by Mario Carneiro,
+       5-Dec-2014.) $)
+    dvdsrcl2 $p |- ( ( R e. Ring /\ X .|| Y ) -> Y e. B ) $=
+      ( vx crg wcel wbr wa cv cmulr cfv co wceq wrex cbs a1i cdsr ringsrg eqidd
+      dvdsrd pm5.32i eqid ringcl 3expa an32s eleq1 syl5ibcom rexlimdva sylbi
+      impr ) CIJZDEBKZLUODAJZHMZDCNOZPZEQZHARZLZLEAJZUOUPVCUOHABCUSDEACSOQUOFTB
+      CUAOQUOGTCUBUOUSUCUDUEUOUQVBVDUOUQLZVAVDHAVEURAJZLUTAJZVAVDUOVFUQVGUOVFUQ
+      VGACUSURDFUSUFUGUHUIUTEAUJUKULUNUM $.
+
+    $( An element in a (unital) ring divides itself.  (Contributed by Mario
+       Carneiro, 1-Dec-2014.)  (Revised by Mario Carneiro, 30-Apr-2015.) $)
+    dvdsrid $p |- ( ( R e. Ring /\ X e. B ) -> X .|| X ) $=
+      ( crg wcel wa cur cfv cmulr co cbs wceq a1i cdsr csrg adantr eqid ringsrg
+      eqidd simpr ringidcl dvdsrmuld ringlidm breqtrd ) CGHZDAHZIZDCJKZDCLKZMDB
+      UJABCULDUKACNKOUJEPBCQKOUJFPUHCRHUICUASUJULUBUHUIUCUHUKAHUIACUKEUKTZUDSUE
+      ACULUKDEULTUMUFUG $.
+
+    $( Divisibility is transitive.  (Contributed by Mario Carneiro,
+       1-Dec-2014.) $)
+    dvdsrtr $p |- ( ( R e. Ring /\ Y .|| Z /\ Z .|| X ) -> Y .|| X ) $=
+      ( vy vx wcel wbr wa cv cfv co wceq wrex a1i eqidd crg cdsr ringsrg dvdsrd
+      cmulr cbs anbi12d an4 bitrdi reeanv ad2antrr simplrl simpll simprr simprl
+      csrg eqid ringcl syl3anc dvdsrmuld ringass syl13anc oveq2 sylan9eq breq2d
+      breqtrd id syl5ibcom rexlimdvva syl5bir expimpd sylbid 3impib ) CUAKZEFBL
+      ZFDBLZEDBLZVNVOVPMZEAKZFAKZMZINZECUEOZPZFQZIARZJNZFWCPZDQZJARZMZMZVQVNVRV
+      SWFMZVTWJMZMWLVNVOWMVPWNVNIABCWCEFACUFOQZVNGSZBCUBOQZVNHSZCUCZVNWCTZUDVNJ
+      ABCWCFDWPWRWSWTUDUGVSWFVTWJUHUIVNWAWKVQWKWEWIMZJARIARVNWAMZVQWEWIIJAAUJXB
+      XAVQIJAAXBWBAKZWGAKZMZMZEWGWDWCPZBLXAVQXFEWGWBWCPZEWCPZXGBXFABCWCEXHWOXFG
+      SWQXFHSVNCUPKWAXEWSUKXFWCTVNVSVTXEULZXFVNXDXCXHAKVNWAXEUMZXBXCXDUNZXBXCXD
+      UOZACWCWGWBGWCUQZURUSUTXFVNXDXCVSXIXGQXKXLXMXJACWCWGWBEGXNVAVBVFXAXGDEBWE
+      WIXGWHDWDFWGWCVCWIVGVDVEVHVIVJVKVLVM $.
+
+    ${
+      dvdsrmul1.3 $e |- .x. = ( .r ` R ) $.
+      $( The divisibility relation is preserved under right-multiplication.
+         (Contributed by Mario Carneiro, 1-Dec-2014.) $)
+      dvdsrmul1 $p |- ( ( R e. Ring /\ Z e. B /\ X .|| Y ) ->
+        ( X .x. Z ) .|| ( Y .x. Z ) ) $=
+        ( vx crg wcel wbr co wa cv wceq cfv a1i wrex cbs cdsr csrg adantr cmulr
+        ringsrg dvdsrd simplll syl simplr simpllr ringcl syl3anc simpr syl13anc
+        dvdsrmuld ringass breqtrrd oveq1 breq2d syl5ibcom expimpd sylbid 3impia
+        rexlimdva ) CLMZGAMZEFBNZEGDOZFGDOZBNZVGVHPZVIEAMZKQZEDOZFRZKAUAZPVLVMK
+        ABCDEFACUBSRZVMHTBCUCSRZVMITVGCUDMZVHCUGZUEDCUFSRZVMJTUHVMVNVRVLVMVNPZV
+        QVLKAWDVOAMZPZVJVPGDOZBNVQVLWFVJVOVJDOZWGBWFABCDVJVOVSWFHTVTWFITWFVGWAV
+        GVHVNWEUIZWBUJWCWFJTWFVGVNVHVJAMWIVMVNWEUKZVGVHVNWEULZACDEGHJUMUNWDWEUO
+        ZUQWFVGWEVNVHWGWHRWIWLWJWKACDVOEGHJURUPUSVQWGVKVJBVPFGDUTVAVBVFVCVDVE
+        $.
+    $}
+
+    dvdsrneg.5 $e |- N = ( invg ` R ) $.
+    $( An element divides its negative.  (Contributed by Mario Carneiro,
+       1-Dec-2014.) $)
+    dvdsrneg $p |- ( ( R e. Ring /\ X e. B ) -> X .|| ( N ` X ) ) $=
+      ( crg wcel wa cur cfv cmulr co cbs wceq a1i adantr eqid cdsr csrg ringsrg
+      eqidd simpr cgrp ringgrp ringidcl grpinvcl syl2anc simpl ringnegl breqtrd
+      dvdsrmuld ) CIJZEAJZKZECLMZDMZECNMZOEDMBUQABCUTEUSACPMQUQFRBCUAMQUQGRUOCU
+      BJUPCUCSUQUTUDUOUPUEZUOUSAJZUPUOCUFJURAJVBCUGACURFURTZUHACDURFHUIUJSUNUQA
+      CUTURDEFUTTVCHUOUPUKVAULUM $.
+  $}
+
+  ${
+    $d B x $.  $d R x $.  $d X x $.  $d .0. x $.
+    dvdsr0.b $e |- B = ( Base ` R ) $.
+    dvdsr0.d $e |- .|| = ( ||r ` R ) $.
+    dvdsr0.z $e |- .0. = ( 0g ` R ) $.
+    $( In a ring, zero is divisible by all elements.  ("Zero divisor" as a term
+       has a somewhat different meaning.)  (Contributed by Stefan O'Rear,
+       29-Mar-2015.) $)
+    dvdsr01 $p |- ( ( R e. Ring /\ X e. B ) -> X .|| .0. ) $=
+      ( vx crg wcel wa wbr cv cmulr cfv co wceq wrex a1i ring0cl oveq1 syl2an2r
+      eqid ringlz eqeq1d rspcev cbs cdsr csrg ringsrg adantr eqidd simpr mpbird
+      dvdsr2d ) CJKZDAKZLZDEBMINZDCOPZQZERZIASZUQEAKUREDVAQZERZVDACEFHUAACVADEF
+      VAUDHUEVCVFIEAUTERVBVEEUTEDVAUBUFUGUCUSIABCVADEACUHPRUSFTBCUIPRUSGTUQCUJK
+      URCUKULUSVAUMUQURUNUPUO $.
+
+    $d B w $.  $d .0. w $.
+    $( Only zero is divisible by zero.  (Contributed by Stefan O'Rear,
+       29-Mar-2015.) $)
+    dvdsr02 $p |- ( ( R e. Ring /\ X e. B ) -> ( .0. .|| X <-> X = .0. ) ) $=
+      ( vx vw crg wcel wa cv cfv wceq wrex a1i adantr wb wbr cmulr co cdsr csrg
+      cbs ringsrg ring0cl dvdsr2d ringrz eqeq1d eqcom bitrdi rexbidva wex elex2
+      eqid r19.9rmv 3syl bitr4d bitrd ) CKLZDALZMZEDBUAINZECUBOZUCZDPZIAQZDEPZV
+      DIABCVFEDACUFOPVDFRBCUDOPVDGRVBCUELVCCUGSVFVFPVDVFUQZRVBEALZVCACEFHUHZSUI
+      VBVIVJTVCVBVIVJIAQZVJVBVHVJIAVBVEALMZVHEDPVJVOVGEDACVFVEEFVKHUJUKEDULUMUN
+      VBVLJNALJUOVJVNTVMJEAUPVJIJAURUSUTSVA $.
   $}
 
 
@@ -167013,6 +167275,16 @@ htmldef "1r" as "<IMG SRC='_1r.gif' WIDTH=13 HEIGHT=19 ALT=' 1r' TITLE='1r'>";
 htmldef "oppR" as "opp<sub><i>r</i></sub>";
   althtmldef "oppR" as "opp<sub><i>r</i></sub>";
   latexdef "oppR" as "\mathrm{opp}_r";
+htmldef "||r" as "<IMG SRC='parallel.gif' WIDTH=5 HEIGHT=19 ALT=' ||' " +
+    "TITLE='||'><sub><i>r</i></sub>";
+  althtmldef "||r" as "&#8741;<sub>r</sub>";
+  latexdef "||r" as "\mathrel{\parallel_\mathrm{r}}";
+htmldef "Unit" as "Unit";
+  althtmldef "Unit" as "Unit";
+  latexdef "Unit" as "\mathrm{Unit}";
+htmldef "Irred" as "Irred";
+  althtmldef "Irred" as "Irred";
+  latexdef "Irred" as "\mathrm{Irred}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
