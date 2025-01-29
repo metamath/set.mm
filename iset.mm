@@ -150110,6 +150110,20 @@ $)
     $}
   $}
 
+  ${
+    $d r .|| $.  $d r E $.  $d r .1. $.  $d r R $.
+    unit.1 $e |- U = ( Unit ` R ) $.
+    unit.2 $e |- .1. = ( 1r ` R ) $.
+    $( The multiplicative identity is a unit.  (Contributed by Mario Carneiro,
+       1-Dec-2014.) $)
+    1unit $p |- ( R e. Ring -> .1. e. U ) $=
+      ( crg wcel cdsr cfv wbr coppr cbs eqid ringidcl dvdsrid opprring wceq a1i
+      mpdan eqidd opprbasg eleqtrd syl2anc cui cur ringsrg isunitd mpbir2and )
+      AFGZCBGCCAHIZJZCCAKIZHIZJZUICALIZGUKUOACUOMZENZUOUJACUPUJMOSUIULFGCULLIZG
+      UNAULULMZPUICUOURUQUOAULFUSUPUAUBURUMULCURMUMMOUCUIUJAULBCUMCBAUDIQUIDRCA
+      UEIQUIERUIUJTUIULTUIUMTAUFUGUH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
