@@ -150125,7 +150125,6 @@ $)
   $}
 
   ${
-    $d x B $.  $d x R $.  $d x U $.  $d x X $.
     unitcld.1 $e |- ( ph -> B = ( Base ` R ) ) $.
     unitcld.2 $e |- ( ph -> U = ( Unit ` R ) ) $.
     unitcld.r $e |- ( ph -> R e. SRing ) $.
@@ -150139,6 +150138,13 @@ $)
         ABCJKZCECLKZFAUBMZHAEUCUBNZEUCCOKZJKZNZAEDPUEUHQIAUBCUFDUCUGEGAUCMUDAUF
         MAUGMHRSTUA $.
     $}
+
+    $d x B $.  $d x R $.  $d x U $.  $d x X $.  $d x ph $.
+    $( The set of units is contained in the base set.  (Contributed by Mario
+       Carneiro, 5-Oct-2015.) $)
+    unitssd $p |- ( ph -> U C_ B ) $=
+      ( vx cv wcel wa cbs cfv wceq adantr cui csrg simpr unitcld ex ssrdv ) AHD
+      BAHIZDJZUBBJAUCKBCDUBABCLMNUCEOADCPMNUCFOACQJUCGOAUCRSTUA $.
   $}
 
 
