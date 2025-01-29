@@ -150147,6 +150147,30 @@ $)
       BAHIZDJZUBBJAUCKBCDUBABCLMNUCEOADCPMNUCFOACQJUCGOAUCRSTUA $.
   $}
 
+  ${
+    $d y R $.  $d x y S $.  $d x U $.  $d ph x y $.
+    opprunitd.1 $e |- ( ph -> U = ( Unit ` R ) ) $.
+    opprunitd.2 $e |- ( ph -> S = ( oppR ` R ) ) $.
+    opprunitd.r $e |- ( ph -> R e. Ring ) $.
+    $( Being a unit is a symmetric property, so it transfers to the opposite
+       ring.  (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+    opprunitd $p |- ( ph -> U = ( Unit ` S ) ) $=
+      ( vy cfv wcel cur wa eqidd crg syl cbs cmulr wceq cvv eqid vx cui cv cdsr
+      wbr coppr csrg ringsrg isunitd wrex opprring eqeltrd vex opprmulg syl3anc
+      co a1i fveq2d oveqd 3eqtrrd eqeq1d rexbidv anbi2d dvdsrd opprbasg 3eqtr2d
+      3bitr4d anbi1d bitrd biancomd oppr1g eqtr4d bitr4d eqrdv ) AUADCUBIZAUAUC
+      ZDJZVPBKIZCUDIZUEZVPVRCUFIZUDIZUEZLVPVOJAVQVTWCAVQVPVRBUDIZUEZVTLWCVTLAWD
+      BCDVRVSVPEAVRMAWDMZFAVSMZABNJZBUGJZGBUHOZUIAWEWCVTAVPBPIZJZHUCZVPBQIZUPZV
+      RRZHWKUJZLWLWMVPWAQIZUPZVRRZHWKUJZLWEWCAWQXAWLAWPWTHWKAWOWSVRAWSVPWMCQIZU
+      PZVPWMBUFIZQIZUPZWOACNJZWMSJZVPSJZWSXCRACXDNFAWHXDNJGBXDXDTZUKOULZXHAHUMU
+      QZXIAUAUMUQZCPIZCWRXBSWANSWMVPXNTZXBTWATZWRTUNUOAXBXEVPWMACXDQFURUSAWHXIX
+      HXFWORGXMXLWKBXEWNSXDNSVPWMWKTZWNTXJXETUNUOUTVAVBVCAHWKWDBWNVPVRAWKMWFWJA
+      WNMVDAHWKWBWAWRVPVRAWKXDPIZXNWAPIZAWIWKXRRWJWKBXDUGXJXQVEOACXDPFURAXGXNXS
+      RXKXNCWANXPXOVEOVFAWBMZAWANJZWAUGJAXGYAXKCWAXPUKOWAUHOAWRMVDVGVHVIVJAVSCW
+      AVOVRWBVPAVOMAVRXDKIZCKIAWHVRYBRGBVRXDNXJVRTVKOACXDKFURVLWGAWAMXTAXGCUGJX
+      KCUHOUIVMVN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
