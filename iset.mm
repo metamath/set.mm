@@ -150124,6 +150124,23 @@ $)
       UEIQUIERUIUJTUIULTUIUMTAUFUGUH $.
   $}
 
+  ${
+    $d x B $.  $d x R $.  $d x U $.  $d x X $.
+    unitcld.1 $e |- ( ph -> B = ( Base ` R ) ) $.
+    unitcld.2 $e |- ( ph -> U = ( Unit ` R ) ) $.
+    unitcld.r $e |- ( ph -> R e. SRing ) $.
+
+    ${
+      unitcld.x $e |- ( ph -> X e. U ) $.
+      $( A unit is an element of the base set.  (Contributed by Mario Carneiro,
+         1-Dec-2014.) $)
+      unitcld $p |- ( ph -> X e. B ) $=
+        ( cdsr cfv cur eqidd wbr coppr wcel wa isunitd mpbid simpld dvdsrcld )
+        ABCJKZCECLKZFAUBMZHAEUCUBNZEUCCOKZJKZNZAEDPUEUHQIAUBCUFDUCUGEGAUCMUDAUF
+        MAUGMHRSTUA $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
