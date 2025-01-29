@@ -149978,6 +149978,21 @@ $)
   $}
 
   ${
+    $d R x y z $.
+    $( Existence of the divisibility relation.  (Contributed by Jim Kingdon,
+       28-Jan-2025.) $)
+    dvdsrex $p |- ( R e. SRing -> ( ||r ` R ) e. _V ) $=
+      ( vx vz vy csrg wcel cdsr cfv cv cbs cmulr co wceq wrex wa copab eqidd id
+      cvv eqid dvdsrvald cxp wfn basfn elex funfvex funfni sylancr xpexg simprr
+      syl2anc simpll simprl simplr srgcl syl3anc eqeltrrd rexlimdvaa imdistanda
+      ssopab2dv df-xp sseqtrrdi ssexd eqeltrd ) AEFZAGHZBIZAJHZFZCIZVGAKHZLZDIZ
+      MZCVHNZOZBDPZSVEBDCVHVFAVKVEVHQVEVFQVERVEVKQUAVEVQVHVHUBZSVEVHSFZVSVRSFVE
+      JSUCASFVSUDAEUEVSSAJAJUFUGUHZVTVHVHSSUIUKVEVQVIVMVHFZOZBDPVRVEVPWBBDVEVIV
+      OWAVEVIOZVNWACVHWCVJVHFZVNOZOZVLVMVHWCWDVNUJWFVEWDVIVLVHFVEVIWEULWCWDVNUM
+      VEVIWEUNVHAVKVJVGVHTVKTUOUPUQURUSUTBDVHVHVAVBVCVD $.
+  $}
+
+  ${
     $d x y .|| $.  $d r x y z B $.  $d x y z X $.  $d x y z Y $.  $d x y Z $.
     $d r x y z R $.  $d r x y z .x. $.
     dvdsr.1 $e |- B = ( Base ` R ) $.
