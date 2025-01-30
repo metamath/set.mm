@@ -150225,6 +150225,20 @@ $)
         GXHXQVEVFVOXLDVQBJZDVOVLVQWFIZVMXLXRPWDVOWKXSWLWFAVQXBXDVGQWPWFAXJBCVTH
         WFVQDXBGXHXQVETVOVLDWFIXRDPWDXNWFABVQDXBGXDVHUPVIVJVOWHWOXAVCXMWAVTVQVP
         DXOXPURTVOVRAVTCVQWAVPWJWQWRWSWTWLRVK $.
+
+      unitmulclb.1 $e |- B = ( Base ` R ) $.
+      $( Reversal of ~ unitmulcl in a commutative ring.  (Contributed by Mario
+         Carneiro, 18-Apr-2016.) $)
+      unitmulclb $p |- ( ( R e. CRing /\ X e. B /\ Y e. B ) ->
+        ( ( X .x. Y ) e. U <-> ( X e. U /\ Y e. U ) ) ) $=
+        ( wcel co cfv wbr wi wceq a1i syl dvdsrmuld dvdsunit 3expia ccrg w3a wa
+        cdsr simp1 cbs eqid csrg crngringd ringsrg cmulr simp2 crngcom breqtrrd
+        crg simp3 syl2anc jcad crngring 3ad2ant1 unitmulcl 3expib impbid ) BUAJ
+        ZEAJZFAJZUBZEFCKZDJZEDJZFDJZUCZVGVIVJVKVGVDEVHBUDLZMZVIVJNVDVEVFUEZVGEF
+        ECKVHVMVGAVMBCEFABUFLOVGIPZVMVMOVGVMUGZPZVGBUOJZBUHJVGBVOUIBUJQZCBUKLOV
+        GHPZVDVEVFULZVDVEVFUPZRABCEFIHUMUNVDVNVIVJVMBDVHEGVQSTUQVGVDFVHVMMZVIVK
+        NVOVGAVMBCFEVPVRVTWAWCWBRVDWDVIVKVMBDVHFGVQSTUQURVGVSVLVINVDVEVSVFBUSUT
+        VSVJVKVIBCDEFGHVAVBQVC $.
     $}
   $}
 
