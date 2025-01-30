@@ -150242,6 +150242,18 @@ $)
     $}
   $}
 
+  ${
+    unitgrpbasd.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    unitgrpbasd.g $e |- ( ph -> G = ( ( mulGrp ` R ) |`s U ) ) $.
+    unitgrpbasd.r $e |- ( ph -> R e. SRing ) $.
+    $( The base set of the group of units.  (Contributed by Mario Carneiro,
+       25-Dec-2014.) $)
+    unitgrpbasd $p |- ( ph -> U = ( Base ` G ) ) $=
+      ( cbs cfv cmgp cvv csrg wcel wceq eqid mgpbasg syl mgpex eqidd unitssd
+      ressbas2d ) ACBHIZDBJIZKFABLMZUBUCHINGUBBUCLUCOZUBOPQAUDUCKMGBUCLUERQAUBB
+      CAUBSEGTUA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
