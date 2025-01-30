@@ -70,7 +70,6 @@ proposed  syl5com   imtridcom
 proposed  syl5      imtrid      alternate proposal: sylid
 proposed  syl56     imtridi
 proposed  syl5d     imtridd
-underway  syl5bir   biimtrrid
 proposed  syl5ib    imbitrid
 proposed  syl5ibcom imbitridcom
 proposed  syl5ibr   imbitrrid
@@ -87,6 +86,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+30-Jan-25 syl5bir   biimtrrid
 26-Jan-25 an2anr    [same]      Moved from PM's mathbox to main set.mm
 26-Jan-25 ismhmd    [same]      Moved from SN's mathbox to main set.mm
 26-Jan-25 ringcld   [same]      Moved from SN's mathbox to main set.mm
