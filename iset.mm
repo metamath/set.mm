@@ -150190,6 +150190,18 @@ $)
       NUFVCVJWERVDVJIWBABWIEDVJWBRVQWAVJWIRVDVEVFVGVLVHVI $.
   $}
 
+  ${
+    dvdsunit.1 $e |- U = ( Unit ` R ) $.
+    dvdsunit.3 $e |- .|| = ( ||r ` R ) $.
+    $( A divisor of a unit is a unit.  (Contributed by Mario Carneiro,
+       18-Apr-2016.) $)
+    dvdsunit $p |- ( ( R e. CRing /\ Y .|| X /\ X e. U ) -> Y e. U ) $=
+      ( ccrg wcel wbr wa cur cfv crg wi crngring eqid wb crngunit adantr 3expia
+      cbs dvdsrtr sylan 3imtr4d 3impia ) BHIZEDAJZDCIZECIZUGUHKDBLMZAJZEUKAJZUI
+      UJUGBNIZUHULUMOBPUNUHULUMBUBMZABUKEDUOQGUCUAUDUGUIULRUHABCUKDFUKQZGSTUGUJ
+      UMRUHABCUKEFUPGSTUEUF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
