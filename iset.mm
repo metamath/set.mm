@@ -150202,6 +150202,32 @@ $)
       UMRUHABCUKEFUPGSTUEUF $.
   $}
 
+  ${
+    unitmulcl.1 $e |- U = ( Unit ` R ) $.
+    ${
+      unitmulcl.2 $e |- .x. = ( .r ` R ) $.
+      $( The product of units is a unit.  (Contributed by Mario Carneiro,
+         2-Dec-2014.) $)
+      unitmulcl $p |- ( ( R e. Ring /\ X e. U /\ Y e. U ) ->
+        ( X .x. Y ) e. U ) $=
+        ( crg wcel co cfv cdsr wbr cbs eqidd wceq syl isunitd eqid syl3anc csrg
+        w3a cur coppr simp1 cui a1i ringsrg simp3 unitcld wa simp2 mpbid simpld
+        ringlidm syl2anc breqtrd dvdsrtr opprring cmulr opprbasg eleqtrd simprd
+        dvdsrmul1 opprmulg 3com23 srgidcl ringridm eqtrd 3brtr3d mpbir2and ) AH
+        IZDCIZECIZUBZDEBJZCIVPAUCKZALKZMZVPVQAUDKZLKZMZVOVLVPEVRMEVQVRMZVSVLVMV
+        NUEZVOVPVQEBJZEVRVOVLEANKZIZDVQVRMZVPWEVRMWDVOWFACEVOWFOZCAUFKPVOFUGZVO
+        VLAUAIZWDAUHQZVLVMVNUIZUJZVOWHDVQWAMZVOVMWHWOUKVLVMVNULZVOVRAVTCVQWADWJ
+        VOVQOZVOVROZVOVTOZVOWAOZWLRUMZUNWFVRABDVQEWFSZVRSZGVDTVOVLWGWEEPWDWNWFA
+        BVQEXBGVQSZUOUPUQVOWCEVQWAMZVOVNWCXEUKWMVOVRAVTCVQWAEWJWQWRWSWTWLRUMZUN
+        WFVRAVQVPEXBXCURTVOVTHIZVPDWAMWOWBVOVLXGWDAVTVTSZUSQZVOEDVTUTKZJZVQDXJJ
+        ZVPDWAVOXGDVTNKZIXEXKXLWAMXIVODWFXMVOWFACDWIWJWLWPUJZVOVLWFXMPWDWFAVTHX
+        HXBVAQVBVOWCXEXFVCXMWAVTXJEVQDXMSZWASZXJSZVDTVLVNVMXKVPPWFAXJBCVTHCEDXB
+        GXHXQVEVFVOXLDVQBJZDVOVLVQWFIZVMXLXRPWDVOWKXSWLWFAVQXBXDVGQWPWFAXJBCVTH
+        WFVQDXBGXHXQVETVOVLDWFIXRDPWDXNWFABVQDXBGXDVHUPVIVJVOWHWOXAVCXMWAVTVQVP
+        DXOXPURTVOVRAVTCVQWAVPWJWQWRWSWTWLRVK $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
