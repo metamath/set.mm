@@ -150171,6 +150171,25 @@ $)
       KCUHOUIVMVN $.
   $}
 
+  ${
+    $d y .1. $.  $d y R $.  $d y X $.
+    crngunit.1 $e |- U = ( Unit ` R ) $.
+    crngunit.2 $e |- .1. = ( 1r ` R ) $.
+    crngunit.3 $e |- .|| = ( ||r ` R ) $.
+    $( Property of being a unit in a commutative ring.  (Contributed by Mario
+       Carneiro, 18-Apr-2016.) $)
+    crngunit $p |- ( R e. CRing -> ( X e. U <-> X .|| .1. ) ) $=
+      ( vy ccrg wcel wbr wa cfv cdsr wceq a1i eqidd crg eqid coppr cui cur csrg
+      crngring ringsrg syl isunitd cv cmulr co wrex crngoppr 3expa eqcomd an32s
+      cbs eqeq1d rexbidva pm5.32da opprbasg opprring 3syl dvdsrd 3bitr4d anbi2d
+      bitrd pm4.24 bitr4di ) BJKZECKZEDALZVLMZVLVJVKVLEDBUANZONZLZMVMVJABVNCDVO
+      ECBUBNPVJFQDBUCNPVJGQABONPVJHQZVJVNRVJVORZVJBSKZBUDKBUEZBUFUGZUHVJVPVLVLV
+      JEBUQNZKZIUIZEVNUJNZUKZDPZIWBULZMWCWDEBUJNZUKZDPZIWBULZMVPVLVJWCWHWLVJWCM
+      ZWGWKIWBWMWDWBKZMWFWJDVJWNWCWFWJPVJWNMWCMWJWFVJWNWCWJWFPWBBWEWIVNWDEWBTZW
+      ITVNTZWETUMUNUOUPURUSUTVJIWBVOVNWEEDWBBVNJWPWOVAVRVJVSVNSKVNUDKVTBVNWPVBV
+      NUFVCVJWERVDVJIWBABWIEDVJWBRVQWAVJWIRVDVEVFVGVLVHVI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
