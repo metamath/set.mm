@@ -142957,6 +142957,19 @@ $)
       ( cplusg c2 df-plusg 1lt2 2nn 2stropg ) ABGCHDEFIJKL $.
   $}
 
+  ${
+    ressplusgd.1 $e |- ( ph -> H = ( G |`s A ) ) $.
+    ressplusgd.2 $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    ressplusgd.a $e |- ( ph -> A e. V ) $.
+    ressplusgd.g $e |- ( ph -> G e. W ) $.
+    $( ` +g ` is unaffected by restriction.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.) $)
+    ressplusgd $p |- ( ph -> .+ = ( +g ` H ) ) $=
+      ( cplusg cfv cress co eqid plusgslid cnx cbs basendxnplusgndx resseqnbasd
+      necomi fveq2d 3eqtr4d ) ADLMZDBNOZLMCELMABUEUFLFDGUFPUEPQRSMRLMTUBKJUAIAE
+      UFLHUCUD $.
+  $}
+
   $( Index value of the ~ df-mulr slot.  (Contributed by Mario Carneiro,
      14-Aug-2015.) $)
   mulrndx $p |- ( .r ` ndx ) = 3 $=
