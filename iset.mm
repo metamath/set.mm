@@ -149201,6 +149201,29 @@ $)
   $}
 
   ${
+    $d y A $.  $d y B $.  $d y M $.  $d y .1. $.  $d y R $.
+    ringidss.g $e |- M = ( ( mulGrp ` R ) |`s A ) $.
+    ringidss.b $e |- B = ( Base ` R ) $.
+    ringidss.u $e |- .1. = ( 1r ` R ) $.
+    $( A subset of the multiplicative group has the multiplicative identity as
+       its identity if the identity is in the subset.  (Contributed by Mario
+       Carneiro, 27-Dec-2014.)  (Revised by Mario Carneiro, 30-Apr-2015.) $)
+    ringidss $p |- ( ( R e. Ring /\ A C_ B /\ .1. e. A ) ->
+      .1. = ( 0g ` M ) ) $=
+      ( vy crg wcel cbs cfv cplusg eqid cvv co wceq 3ad2ant1 oveqd wss w3a cmgp
+      c0g simp3 cress a1i mgpbasg mgpex simp2 ressbas2d eleqtrd eqsstrrd sselda
+      cv wa cmulr mgpplusgg wfn basfn simp1 elexd funfvex funfni eqeltrid ssexd
+      sylancr ressplusgd adantr ringlidm 3ad2antl1 eqtr3d ringridm ismgmid2
+      syldan ) CJKZABUAZDAKZUBZIELMZENMZDEEUDMZVTOWBOWAOVSDAVTVPVQVRUEVSABECUCM
+      ZPEWCAUFQRVSFUGZVPVQBWCLMRVRBCWCJWCOZGUHSVPVQWCPKVRCWCJWEUISZVPVQVRUJZUKZ
+      ULVSIUOZVTKZWIBKZDWIWAQZWIRVSVTBWIVSVTABWHWGUMUNZVSWKUPZDWICUQMZQZWLWIWNW
+      OWADWIVSWOWARWKVSAWOWCEPPWDVPVQWOWCNMRVRCWOWCJWEWOOZURSVSABPVSBCLMZPGVSLP
+      USCPKWRPKZUTVSCJVPVQVRVAVBWSPCLCLVCVDVGVEWGVFWFVHVIZTVPVQWKWPWIRVRBCWODWI
+      GWQHVJVKVLVOVSWJWKWIDWAQZWIRWMWNWIDWOQZXAWIWNWOWAWIDWTTVPVQWKXBWIRVRBCWOD
+      WIGWQHVMVKVLVOVN $.
+  $}
+
+  ${
     ringacl.b $e |- B = ( Base ` R ) $.
     ringacl.p $e |- .+ = ( +g ` R ) $.
     $( Closure of the addition operation of a ring.  (Contributed by Mario
