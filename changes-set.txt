@@ -86,6 +86,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+01-Feb-25 sucelon   onsucb      biconditional form of onsuc
+01-Feb-25 suceloni  onsuc       closed form of onsuci
 31-Jan-25 ---       ---         Moved surreal cofinality theorems
                                 from SF's mathbox to main set.mm
 30-Jan-25 syl5bir   biimtrrid
