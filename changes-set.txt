@@ -70,7 +70,7 @@ proposed  syl5com   imtridcom
 proposed  syl5      imtrid      alternate proposal: sylid
 proposed  syl56     imtridi
 proposed  syl5d     imtridd
-proposed  syl5ib    imbitrid
+underway  syl5ib    imbitrid
 proposed  syl5ibcom imbitridcom
 proposed  syl5ibr   imbitrrid
 proposed  syl5ibrcom imbitrridcom
