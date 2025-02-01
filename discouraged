@@ -14281,6 +14281,7 @@ New usage of "0r" is discouraged (11 uses).
 New usage of "0reALT" is discouraged (0 uses).
 New usage of "0sdom1domALT" is discouraged (0 uses).
 New usage of "0sdomgOLD" is discouraged (0 uses).
+New usage of "0subgOLD" is discouraged (0 uses).
 New usage of "0vfval" is discouraged (9 uses).
 New usage of "139prmALT" is discouraged (0 uses).
 New usage of "19.21a3con13vVD" is discouraged (0 uses).
@@ -19658,6 +19659,7 @@ Proof modification of "0posOLD" is discouraged (66 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "0sdom1domALT" is discouraged (31 steps).
 Proof modification of "0sdomgOLD" is discouraged (53 steps).
+Proof modification of "0subgOLD" is discouraged (209 steps).
 Proof modification of "139prmALT" is discouraged (758 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
 Proof modification of "19.36imvOLD" is discouraged (25 steps).
