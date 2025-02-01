@@ -148104,6 +148104,22 @@ $)
       TUHUMVGUNUPUOKZVEVCSUQVHUQVIUNUOUPUIUJFUSDEACBGVFHTUKUL $.
   $}
 
+  ${
+    $d x y G $.  $d x y H $.  $d x y S $.  $d ph x y $.
+    subcmnd.h $e |- ( ph -> H = ( G |`s S ) ) $.
+    subcmnd.g $e |- ( ph -> G e. CMnd ) $.
+    subcmnd.m $e |- ( ph -> H e. Mnd ) $.
+    subcmnd.s $e |- ( ph -> S e. V ) $.
+    $( A submonoid of a commutative monoid is also commutative.  (Contributed
+       by Mario Carneiro, 10-Jan-2015.) $)
+    subcmnd $p |- ( ph -> H e. CMnd ) $=
+      ( vx vy cbs cfv eqidd ccmn cv wcel co sselda eqid ressplusgd w3a 3ad2ant1
+      cplusg wceq ressbasssd 3adant3 3adant2 cmncom syl3anc iscmnd ) AJKDLMZCUD
+      MZDAULNABUMCDEOFAUMNIGUAHAJPZULQZKPZULQZUBCOQZUNCLMZQZUPUSQZUNUPUMRUPUNUM
+      RUEAUOURUQGUCAUOUTUQAULUSUNABUSDECOFAUSNGIUFZSUGAUQVAUOAULUSUPVBSUHUSUMCU
+      NUPUSTUMTUIUJUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
