@@ -150321,6 +150321,16 @@ $)
       RUVBQUWIUWCWHUVRUWNUUOXPUVRXNYHYNUWNUUOKUWHUWKUWIYDAUVBXOYDUUKHBYFYGUUAYC
       UVHUWLWPWNUWJXEXCUVRUUIAUUKBXPUULYGXQUVRDLUVRXPQUVTUVRUUKQUWOUWAVRXDUWJXF
       XGXHXIXJXKXLXM $.
+
+    $( The group of units of a commutative ring is abelian.  (Contributed by
+       Mario Carneiro, 19-Apr-2016.) $)
+    unitabl $p |- ( R e. CRing -> G e. Abel ) $=
+      ( ccrg wcel cgrp ccmn cabl crg crngring unitgrp syl cmgp cfv cvv wceq a1i
+      cbs cress co eqid crngmgp grpmndd basfn elex funfvex funfni sylancr eqidd
+      wfn cui csrg ringsrg unitssd ssexd subcmnd isabl sylanbrc ) AFGZCHGZCIGCJ
+      GVAAKGZVBALZABCDEMNZVABAOPZCQCVFBUAUBRVAESAVFVFUCUDVACVEUEVABATPZQVATQULA
+      QGVGQGZUFAFUGVHQATATUHUIUJVAVGABVAVGUKBAUMPRVADSVAVCAUNGVDAUONUPUQURCUSUT
+      $.
   $}
 
 
