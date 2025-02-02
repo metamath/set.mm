@@ -1,21 +1,230 @@
-$( nf.mm - Version of 22-Feb-2021. $)
+$( This is the Metamath database nf.mm. $)
 
-$(
+$( Metamath is a formal language and associated computer program for
+   archiving, verifying, and studying mathematical proofs, created by Norman
+   Dwight Megill (1950--2021).  For more information, visit
+   https://us.metamath.org and
+   https://github.com/metamath/set.mm, and feel free to ask questions at
+   https://groups.google.com/g/metamath. $)
+
+$( New users may want to read https://us.metamath.org/nfeuni/conventions.html
+   to understand the label naming conventions used in nf.mm.  See also the
+   Metamath program command "MM> HELP VERIFY MARKUP" for markup conventions. $)
+
+$( To break this file into smaller modules, in the Metamath program type
+   "MM> READ nf.mm" followed by "MM> WRITE SOURCE nf.mm / SPLIT".  To
+   recombine, omit "/ SPLIT". $)
+
+$( The database nf.mm was created by Scott Fenton on 12-Sep-2005 from a fork of
+   the database set.mm and has been continuously enriched since then (list of
+   contributors below). $)
+
+
+$( !
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Metamath source file for New Foundations set theory
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
                            ~~ PUBLIC DOMAIN ~~
 This work is waived of all rights, including copyright, according to the CC0
-Public Domain Dedication.  http://creativecommons.org/publicdomain/zero/1.0/
+Public Domain Dedication.  https://creativecommons.org/publicdomain/zero/1.0/
 
-Principal curator:  Scott Fenton
+Currently active maintainers: See the list in the CONTRIBUTING.md file of
+https://github.com/metamath/set.mm.
 
-Partly based on the set.mm database, itself dedicated to public domain
-by mean of the CC0 Public Domain Dedication.
+Contributor list (partial):
+
+MC  Mario Carneiro
+SF  Scott Fenton
+NM  Norman Megill
+
 $)
 
-$( Begin $[ set-pred.mm $] $)
+
+$( See "MM> HELP VERIFY MARKUP" for help with modularization tags. $)
+$( Begin $[ nf-header.mm $] $)
+$( !
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Contents of this header
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+* Quick "How To"
+* Bibliography
+* Metamath syntax summary
+* Other notes
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Quick "How To"
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+How to use this file under Windows 95/98/NT/2K/XP/Vista/7/10:
+
+1. Download the Metamath program metamath.exe following the instructions on the
+   Metamath home page (https://us.metamath.org) and put it in the same
+   directory as this file.
+2. In Windows Explorer, double-click on metamath.exe.
+3. Type "read nf.mm" and press Enter.
+4. Type "help" for a list of help topics, and "help demo" for some
+   command examples.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Bibliography
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Bibliographical references are made by bracketing an identifier in a theorem's
+comment, such as [RussellWhitehead].  These refer to HTML tags on the following
+web pages:
+
+  Logic and set theory - see https://us.metamath.org/mpeuni/mmset.html#bib
+  Hilbert space - see https://us.metamath.org/mpeuni/mmhil.html#ref
+
+A bracketed reference must be preceded by a theorem number, etc. and followed
+by a page number.  See "MM> HELP WRITE BIBLIOGRAPHY" for details.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Metamath syntax summary
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The HELP LANGUAGE command in the Metamath program will give you a quick
+overview of Metamath.  The specification is found on pp. 92--95 of the
+Metamath book.  The following syntax summary is provided for convenience
+but may omit some details.
+
+A Metamath database (set of one or more ASCII source files) is a sequence of
+_tokens_, which are normally separated by spaces or line breaks.  The only
+tokens that are built into the Metamath language are those (two-character
+sequences) beginning with $, shown in the following. These tokens are called
+_keywords_:
+
+          $c ... $. - Constant declaration
+          $v ... $. - Variable declaration
+          $d ... $. - Disjoint (distinct) variable restriction
+  <label> $f ... $. - "Floating" hypothesis (i.e. variable type declaration)
+  <label> $e ... $. - "Essential" hypothesis (i.e. a logical assumption for a
+                      theorem or axiom)
+  <label> $a ... $. - Axiom or definition or syntax construction
+  <label> $p ... $= ... $. - Theorem and its proof
+          ${ ... $} - Block for defining the scope of the above statements
+                      (except $a, $p which are forever active)
+$)        $( ... $)
+$(                  - Comments (may not be nested); see HELP LANGUAGE
+                      for markup features.
+          $[ ... $] - Include a file
+
+The above two-character sequences beginning with "$" are the only primitives
+built into the Metamath language.  The only "logic" Metamath uses in its proof
+verification algorithm is the substitution of expressions for variables while
+checking for distinct variable violations.  Everything else, including the
+axioms for logic, is defined in this database file.
+
+All other tokens are user-defined, and their names are arbitrary.  There are
+two kinds of user-defined tokens, called math symbols (or just symbols) and
+labels.  A _symbol_ may contain any non-whitespace printable character except
+"$".  A _label_ may contain only alphanumeric characters and the characters "."
+(period), "-" (hyphen), and "_" (underscore).  Symbols and labels are
+case-sensitive.  All labels (except in proofs) must be distinct.  A label may
+not have the same name as a symbol (to simplify the coding of certain parsers
+and translators).
+
+Here is some more detail about the syntax:
+
+  $c <symbollist> $.
+      <symbollist> is a (whitespace-separated) list of distinct symbols that
+      haven't been used before.
+  $v <symbollist> $.
+      <symbollist> is a list of distinct symbols that haven't been used yet
+      in the current scope (see ${ ... $} below).
+  $d <symbollist> $.
+      <symbollist> is a (whitespace-separated) list of distinct symbols
+      previously declared with $v in current scope.  It means that
+      substitutions into these symbols may not have variables in common.
+  <label> $f <symbollist> $.
+      <symbollist> is a list of 2 symbols, the first of which must be
+      previously declared with $c in the current scope.
+  <label> $e <symbollist> $.
+      <symbollist> is a list of 2 or more symbols, the first of which must be
+      previously declared with $c in the current scope.
+  <label> $a <symbollist> $.
+      <symbollist> is a list of 2 or more symbols, the first of which must be
+      previously declared with $c in the current scope.
+  <label> $p <symbollist> $= <proof> $.
+      <symbollist> is a list of 2 or more symbols, the first of which must be
+      previously declared with $c in the current scope.  <proof> is either a
+      whitespace-delimited sequence of previous labels (created by
+      SAVE PROOF <label> /NORMAL) or a compressed proof (created by
+      SAVE PROOF <label> /COMPRESSED).  After using SAVE PROOF, use
+      WRITE SOURCE to save the database file to disk.
+  ${ ... $}
+      Block for scoping the above statements (except $a, $p which are forever
+      active).  Currently, $c may not occur inside of a block.
+$)
+  $( <any text> $)
+$(    Comment.  Note: <any text> may not contain adjacent "$" and ")"
+      characters.  The comment opening and closing delimiters must be
+      surrounded by whitespace (space, tab, CR, LF, or FF).
+  $[ <filename> $]
+      Insert contents of <filename> at this point.  If <filename> is current
+      file or has been already been inserted, it will not be inserted again.
+
+Inside of comments, it is recommended that labels be preceded with a tilde (~)
+and math symbol tokens be enclosed in grave accents, also known as backticks
+(` `). These tildes, tokens, math symbols and backticks should be surrounded by
+spaces.  This way the LaTeX and HTML rendition of comments will be accurate,
+and tools to globally change labels and math symbols will also change them in
+comments.  Note that inside of backticks a pair of backticks is interpreted as
+a single backtick.  A special comment containing $ t (with no space after the
+dollar sign) defines LaTeX and HTML symbols.  See HELP LANGUAGE and HELP HTML
+for other markup features in comments.
+
+The proofs in this file are in "compressed" format for storage efficiency.  The
+Metamath program reads the compressed format directly.  This format is
+described in Appendix B of the Metamath book.  It is not intended to be read by
+humans.  For viewing proofs you should use the various SHOW PROOF commands
+described in the Metamath book (or the online HELP).
+
+The Metamath program does not normally affect any content of this file other
+than proofs, i.e., the text between "$=" and "$." (and some rewrapping).  All
+other content is user-created.  Proofs are created or modified with the PROVE
+command.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Other notes
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+1.  It is recommended that you be familiar with Chapters 2 and 4 of the
+Metamath book to understand the Metamath language.  Chapters 2, 3 and 5 explain
+how to use the Metamath program.  Chapter 3 gives an informal overview of what
+this source file is all about.  Appendix A gives the standard mathematical
+symbols corresponding to some of the ASCII tokens used in this file.
+
+The ASCII tokens may seem cryptic at first, even if you are familiar with set
+theory, but a review of the definition summary in Chapter 3 should quickly
+enable you to see the correspondence to standard mathematical notation.  To
+easily find the definition of a token, search for the first occurrences of the
+token surrounded by spaces.  Some odd-looking ones include "-." for "not", and
+"C_" for "is a subset of".  The Metamath program "MM> HELP TEX" command
+explains how to obtain a LaTeX output to see the real mathematical symbols.
+Let us know if you have better suggestions for naming ASCII tokens.
+
+$)
+
+$( End $[ nf-header.mm $] $)
+
+
+$( Begin $[ nf-pred.mm $] $)
+
+$( The following header is the first to appear in the Theorem List contents,
+   because higher-level headers suppress all previous same-level or
+   lower-level headers in the same comment area between $a and $p statements.
+   See "MM> HELP WRITE THEOREM_LIST" for information about headers. $)
 
 $(
 ###############################################################################
-            CLASSICAL FIRST ORDER LOGIC WITH EQUALITY
+  CLASSICAL FIRST-ORDER LOGIC WITH EQUALITY
 ###############################################################################
 
   Logic can be defined as the "study of the principles of correct reasoning"
@@ -27,7 +236,7 @@ $(
   This section formally defines the logic system we will use.  In particular,
   it defines symbols for declaring truthful statements, along with rules for
   deriving truthful statements from other truthful statements.  The system
-  defined here is classical first order logic with equality (the most common
+  defined here is classical first-order logic with equality (the most common
   logic system used by mathematicians).
 
   We begin with a few housekeeping items in pre-logic, and then introduce
@@ -48,7 +257,7 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                           Pre-logic
+  Pre-logic
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
   This section includes a few "housekeeping" mechanisms before we begin
@@ -59,12 +268,12 @@ $)
   $( Declare the primitive constant symbols for propositional calculus. $)
   $c ( $.  $( Left parenthesis $)
   $c ) $.  $( Right parenthesis $)
-  $c -> $. $( Right arrow (read:  "implies") $)
-  $c -. $. $( Right handle (read:  "not") $)
-  $c wff $. $( Well-formed formula symbol (read:  "the following symbol
-               sequence is a wff") $)
-  $c |- $. $( Turnstile (read:  "the following symbol sequence is provable" or
-              'a proof exists for") $)
+  $c -> $.  $( Right arrow (read:  "implies") $)
+  $c -. $.  $( Right handle (read:  "not") $)
+  $c wff $.  $( Well-formed formula symbol (read:  "the following symbol
+                sequence is a wff") $)
+  $c |- $.  $( Turnstile (read:  "the following symbol sequence is provable" or
+               'a proof exists for") $)
 
   $( Define the syntax and logical typecodes, and declare that our grammar is
      unambiguous (verifiable using the KLR parser, with compositing depth 5).
@@ -75,6 +284,12 @@ $)
     syntax '|-' as 'wff';
     unambiguous 'klr 5';
   $)
+
+  $( Declare typographical constant symbols that are not directly used in the
+     formalism but are useful to explain it in comments. $)
+
+  $c & $.  $( Ampersand (read: "and"). $)
+  $c => $.  $( Double right arrow (read: "implies"). $)
 
   $( wff variable sequence:  ph ps ch th ta et ze si rh mu la ka $)
   $( Introduce some variable names we will use to represent well-formed
@@ -124,7 +339,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Inferences for assisting proof development
+  Inferences for assisting proof development
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   The inference rules in this section will normally never appear in a completed
@@ -134,66 +349,76 @@ $(
 $)
 
   ${
+    idi.1 $e |- ph $.
+    $( (_Note_:  This inference rule and the next one, ~ a1ii , will normally
+       never appear in a completed proof.  They can be ignored if you are using
+       this database to assist learning logic; please start with the statement
+       ~ wn instead.)
+
+       This inference says "if ` ph ` is true then ` ph ` is true".  This
+       inference requires no axioms for its proof, and is useful as a
+       copy-paste mechanism during proof development in mmj2.  It is normally
+       not referenced in the final version of a proof, since it is always
+       redundant.  You can remove this using the metamath-exe (Metamath
+       program) Proof Assistant using the "MM-PA> MINIMIZE_WITH *" command.
+       This is the inference associated with ~ id , hence its name.
+       (Contributed by Alan Sare, 31-Dec-2011.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    idi $p |- ph $=
+      (  ) B $.
+  $}
+
+  ${
     a1ii.1 $e |- ph $.
     a1ii.2 $e |- ps $.
-    $( (_Note_:  This inference rule and the next one, ~ idi , will normally
-       never appear in a completed proof.  It can be ignored if you are using
-       this database to assist learning logic - please start with the statement
-       ~ wn instead.)
+    $( (_Note_:  This inference rule and the previous one, ~ idi , will
+       normally never appear in a completed proof.)
 
        This is a technical inference to assist proof development.  It provides
        a temporary way to add an independent subproof to a proof under
        development, for later assignment to a normal proof step.
 
-       The metamath program's Proof Assistant requires proofs to be developed
-       backwards from the conclusion with no gaps, and it has no mechanism that
-       lets the user to work on isolated subproofs.  This inference provides a
-       workaround for this limitation.  It can be inserted at any point in a
-       proof to allow an independent subproof to be developed on the side, for
-       later use as part of the final proof.
+       The Metamath (Metamath-exe) program Proof Assistant requires proofs to
+       be developed backwards from the conclusion with no gaps, and it has no
+       mechanism that lets the user work on isolated subproofs.  This inference
+       provides a workaround for this limitation.  It can be inserted at any
+       point in a proof to allow an independent subproof to be developed on the
+       side, for later use as part of the final proof.
 
        _Instructions_:  (1) Assign this inference to any unknown step in the
        proof.  Typically, the last unknown step is the most convenient, since
-       'assign last' can be used.  This step will be replicated in hypothesis
-       a1ii.1, from where the development of the main proof can continue.  (2)
-       Develop the independent subproof backwards from hypothesis a1ii.2.  If
-       desired, use a 'let' command to pre-assign the conclusion of the
-       independent subproof to a1ii.2.  (3) After the independent subproof is
-       complete, use 'improve all' to assign it automatically to an unknown
-       step in the main proof that matches it.  (4) After the entire proof is
-       complete, use 'minimize *' to clean up (discard) all ~ a1ii references
+       "MM-PA> ASSIGN LAST" can be used.  This step will be replicated in
+       hypothesis a1ii.1, from where the development of the main proof can
+       continue.  (2) Develop the independent subproof backwards from
+       hypothesis a1ii.2.  If desired, use a "MM-PA> LET STEP" command to
+       pre-assign the conclusion of the independent subproof to a1ii.2.  (3)
+       After the independent subproof is complete, use "MM-PA> IMPROVE ALL" to
+       assign it automatically to an unknown step in the main proof that
+       matches it.  (4) After the entire proof is complete, use "MM-PA>
+       MINIMIZE_WITH *" to clean up (discard) all ~ a1ii references
        automatically.
 
        This inference was originally designed to assist importing partially
        completed Proof Worksheets from the mmj2 Proof Assistant GUI, but it can
        also be useful on its own.  Interestingly, no axioms are required for
-       its proof.  (Contributed by NM, 7-Feb-2006.) $)
+       its proof.  It is the inference associated with ~ a1i .  (Contributed by
+       NM, 7-Feb-2006.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     a1ii $p |- ph $=
       (  ) C $.
   $}
 
-  ${
-    idi.1 $e |- ph $.
-    $( Inference form of ~ id .  This inference rule, which requires no axioms
-       for its proof, is useful as a copy-paste mechanism during proof
-       development in mmj2.  It is normally not referenced in the final version
-       of a proof, since it is always redundant and can be removed using the
-       'minimize *' command in the metamath program's Proof Assistant.
-       (Contributed by Alan Sare, 31-Dec-2011.) $)
-    idi $p |- ph $=
-      (  ) B $.
-  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                           Propositional calculus
+  Propositional calculus
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
   Propositional calculus deals with general truths about well-formed formulas
   (wffs) regardless of how they are constructed.  The simplest propositional
   truth is ` ( ph -> ph ) ` , which can be read "if something is true, then it
   is true" - rather trivial and obvious, but nonetheless it must be proved from
-  the axioms (see theorem ~ id ).
+  the axioms (see Theorem ~ id ).
 
   Our system of propositional calculus consists of three basic axioms and
   another axiom that defines the modus-ponens inference rule.  It is attributed
@@ -212,15 +437,16 @@ $(
   All 194 axioms, definitions, and theorems for propositional calculus in
   _Principia Mathematica_ (specifically *1.2 through *5.75) are axioms or
   formally proven.  See the Bibliographic Cross-References at
-  ~ http://us.metamath.org/mpeuni/mmbiblio.html for a complete
-  cross-reference from sources used to its formalization in the Metamath
-  Proof Explorer.
+  ~ https://us.metamath.org/nfeuni/mmbiblio.html for a complete
+  cross-reference from sources used to its formalization in the New Foundations
+  Explorer.
 
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Recursively define primitive wffs for propositional calculus
+  Recursively define primitive wffs for propositional calculus
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -234,6 +460,10 @@ $)
      wff.  Later, in predicate calculus, we will extend the basic wff
      definition by including atomic wffs ( ~ weq and ~ wel ). $)
   wn $a wff -. ph $.
+
+  $( Register negation '-.' as a primitive expression (lacking a
+     definition). $)
+  $( $j primitive 'wn'; $)
 
   $( If ` ph ` and ` ps ` are wff's, so is ` ( ph -> ps ) ` or " ` ph ` implies
      ` ps ` ."  Part of the recursive definition of a wff.  The resulting wff
@@ -272,17 +502,19 @@ $)
      implication." $)
   wi $a wff ( ph -> ps ) $.
 
-  $( Register '-.' and '->' as primitive expressions (lacking definitions). $)
-  $( $j primitive 'wn' 'wi'; $)
+  $( Register implication '->' as a primitive expression (lacking a
+     definition). $)
+  $( $j primitive 'wi'; $)
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The axioms of propositional calculus
+  The axioms of propositional calculus
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   Postulate the three axioms of classical propositional calculus.
 
-  Propositional calculus (axioms ~ ax-1 through ~ ax-3 and rule ~ ax-mp ) can
+  Propositional calculus (Axioms ~ ax-1 through ~ ax-3 and rule ~ ax-mp ) can
   be thought of as asserting formulas that are universally "true" when their
   variables are replaced by any combination of "true" and "false."
   Propositional calculus was first formalized by Frege in 1879, using as his
@@ -307,6 +539,28 @@ $(
   found manually.
 
 $)
+
+  ${
+    $( Minor premise for modus ponens. $)
+    min $e |- ph $.
+    $( Major premise for modus ponens. $)
+    maj $e |- ( ph -> ps ) $.
+    $( Rule of Modus Ponens.  The postulated inference rule of propositional
+       calculus.  See e.g.  Rule 1 of [Hamilton] p. 73.  The rule says, "if
+       ` ph ` is true, and ` ph ` implies ` ps ` , then ` ps ` must also be
+       true".  This rule is sometimes called "detachment", since it detaches
+       the minor premise from the major premise.  "Modus ponens" is short for
+       "modus ponendo ponens", a Latin phrase that means "the mode that by
+       affirming affirms" - remark in [Sanford] p. 39.  This rule is similar to
+       the rule of modus tollens ~ mto .
+
+       Note:  In some web page displays such as the Statement List, the
+       symbols " ` & ` " and " ` => ` " informally indicate the relationship
+       between the hypotheses and the assertion (conclusion), abbreviating the
+       English words "and" and "implies".  They are not part of the formal
+       language.  (Contributed by NM, 30-Sep-1992.) $)
+    ax-mp $a |- ps $.
+  $}
 
   $( Axiom _Simp_.  Axiom A1 of [Margaris] p. 49.  One of the 3 axioms of
      propositional calculus.  The 3 axioms are also given as Definition 2.1 of
@@ -338,40 +592,15 @@ $)
      different technical meaning.  (Contributed by NM, 5-Aug-1993.) $)
   ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
 
-  $(
-     Postulate the modus ponens rule of inference.
-  $)
-
-  ${
-    $( Minor premise for modus ponens. $)
-    min $e |- ph $.
-    $( Major premise for modus ponens. $)
-    maj $e |- ( ph -> ps ) $.
-    $( Rule of Modus Ponens.  The postulated inference rule of propositional
-       calculus.  See e.g.  Rule 1 of [Hamilton] p. 73.  The rule says, "if
-       ` ph ` is true, and ` ph ` implies ` ps ` , then ` ps ` must also be
-       true."  This rule is sometimes called "detachment," since it detaches
-       the minor premise from the major premise.  "Modus ponens" is short for
-       "modus ponendo ponens," a Latin phrase that means "the mood that by
-       affirming affirms" [Sanford] p. 39.  This rule is similar to the rule of
-       modus tollens ~ mto .
-
-       Note:  In some web page displays such as the Statement List, the symbols
-       "&" and "=>" informally indicate the relationship between the hypotheses
-       and the assertion (conclusion), abbreviating the English words "and" and
-       "implies."  They are not part of the formal language.  (Contributed by
-       NM, 5-Aug-1993.) $)
-    ax-mp $a |- ps $.
-  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Logical implication
+  Logical implication
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   The results in this section are based on implication only, and avoid ax-3.
   In an implication, the wff before the arrow is called the "antecedent" and
-  the wff after the arrow is called the "consequent."
+  the wff after the arrow is called the "consequent".
 
   We will use the following descriptive terms very loosely:  A "closed form" or
   "tautology" has no $e hypotheses.  An "inference" has one or more $e
@@ -393,7 +622,7 @@ $)
   ${
     $( Premise for ~ a1i . $)
     a1i.1 $e |- ph $.
-    $( Inference derived from axiom ~ ax-1 .  See ~ a1d for an explanation of
+    $( Inference derived from Axiom ~ ax-1 .  See ~ a1d for an explanation of
        our informal use of the terms "inference" and "deduction."  See also the
        comment in ~ syld .  (Contributed by NM, 5-Aug-1993.) $)
     a1i $p |- ( ps -> ph ) $=
@@ -412,7 +641,7 @@ $)
   ${
     $( Premise for ~ a2i . $)
     a2i.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( Inference derived from axiom ~ ax-2 .  (Contributed by NM,
+    $( Inference derived from Axiom ~ ax-2 .  (Contributed by NM,
        5-Aug-1993.) $)
     a2i $p |- ( ( ph -> ps ) -> ( ph -> ch ) ) $=
       ( wi ax-2 ax-mp ) ABCEEABEACEEDABCFG $.
@@ -522,7 +751,7 @@ $)
        Deduction Theorem would be used; here ` ph ` would be replaced with a
        conjunction ( ~ df-an ) of the hypotheses of the would-be deduction.  By
        contrast, we tend to call the simpler version with no common antecedent
-       an "inference" and suffix its label with "i"; compare theorem ~ a1i .
+       an "inference" and suffix its label with "i"; compare Theorem ~ a1i .
        Finally, a "theorem" would be the form with no hypotheses; in this case
        the "theorem" form would be the original axiom ~ ax-1 .  We usually show
        the theorem form without a suffix on its label (e.g. ~ pm2.43 vs.
@@ -854,8 +1083,8 @@ $)
     syl6mpi.1 $e |- ( ph -> ( ps -> ch ) ) $.
     syl6mpi.2 $e |- th $.
     syl6mpi.3 $e |- ( ch -> ( th -> ta ) ) $.
-    $( e20 without virtual deductions.  (Contributed by Alan Sare,
-       8-Jul-2011.)  (Proof shortened by Wolf Lammen, 13-Sep-2012.) $)
+    $( e20 without virtual deductions.  (Contributed by Alan Sare, 8-Jul-2011.)
+       (Proof shortened by Wolf Lammen, 13-Sep-2012.) $)
     syl6mpi $p |- ( ph -> ( ps -> ta ) ) $=
       ( mpi syl6 ) ABCEFCDEGHIJ $.
   $}
@@ -1103,7 +1332,7 @@ $)
       ( wi ax-1 syl5 com23 ) ACBDCBCFABDFCBGEHI $.
   $}
 
-  $( Converse of axiom ~ ax-2 .  Theorem *2.86 of [WhiteheadRussell] p. 108.
+  $( Converse of Axiom ~ ax-2 .  Theorem *2.86 of [WhiteheadRussell] p. 108.
      (Contributed by NM, 25-Apr-1994.)  (Proof shortened by Wolf Lammen,
      3-Apr-2013.) $)
   pm2.86 $p |- ( ( ( ph -> ps )
@@ -1126,9 +1355,10 @@ $)
       -> ( ( ps -> ph ) -> ( ps -> ch ) ) ) $=
     ( wi jarr a2d ) ABDACDZDBACABGEF $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Logical negation
+  Logical negation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   This section makes our first use of the third axiom of propositional
@@ -1138,7 +1368,7 @@ $)
 
   ${
     con4d.1 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
-    $( Deduction derived from axiom ~ ax-3 .  (Contributed by NM,
+    $( Deduction derived from Axiom ~ ax-3 .  (Contributed by NM,
        26-Mar-1995.) $)
     con4d $p |- ( ph -> ( ch -> ps ) ) $=
       ( wn wi ax-3 syl ) ABECEFCBFDBCGH $.
@@ -1326,7 +1556,7 @@ $)
 
   ${
     con4i.1 $e |- ( -. ph -> -. ps ) $.
-    $( Inference rule derived from axiom ~ ax-3 .  (Contributed by NM,
+    $( Inference rule derived from Axiom ~ ax-3 .  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by Wolf Lammen, 21-Jun-2013.) $)
     con4i $p |- ( ps -> ph ) $=
       ( wn notnot1 nsyl2 ) BBDABECF $.
@@ -1581,8 +1811,8 @@ $)
     pm2.61ii.1 $e |- ( -. ph -> ( -. ps -> ch ) ) $.
     pm2.61ii.2 $e |- ( ph -> ch ) $.
     pm2.61ii.3 $e |- ( ps -> ch ) $.
-    $( Inference eliminating two antecedents.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
+    $( Inference eliminating two antecedents.  (Contributed by NM, 5-Aug-1993.)
+       (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
     pm2.61ii $p |- ch $=
       ( wn pm2.61d2 pm2.61i ) ACEAGBCDFHI $.
   $}
@@ -1591,9 +1821,9 @@ $)
     pm2.61nii.1 $e |- ( ph -> ( ps -> ch ) ) $.
     pm2.61nii.2 $e |- ( -. ph -> ch ) $.
     pm2.61nii.3 $e |- ( -. ps -> ch ) $.
-    $( Inference eliminating two antecedents.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by Andrew Salmon, 25-May-2011.)  (Proof
-       shortened by Wolf Lammen, 13-Nov-2012.) $)
+    $( Inference eliminating two antecedents.  (Contributed by NM, 5-Aug-1993.)
+       (Proof shortened by Andrew Salmon, 25-May-2011.)  (Proof shortened by
+       Wolf Lammen, 13-Nov-2012.) $)
     pm2.61nii $p |- ch $=
       ( pm2.61d1 pm2.61i ) ACABCDFGEH $.
   $}
@@ -1742,12 +1972,13 @@ $)
                       -> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) ) $=
     ( wi wn id pm2.01 mt2 ) ABCBACDCDZHCZIDCIHEIFG $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Logical equivalence
+  Logical equivalence
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-  The definition ~ df-bi in this section is our first definition, which
+  Definition ~ df-bi in this section is our first definition, which
   introduces and defines the biconditional connective ` <-> ` . We define a wff
   of the form ` ( ph <-> ps ) ` as an abbreviation for
   ` -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ` .
@@ -1758,6 +1989,7 @@ $(
   allows us to use logic to manipulate definitions directly.  This greatly
   simplifies many proofs since it eliminates the need for a separate mechanism
   for introducing and eliminating definitions.
+
 $)
 
   $( Declare the biconditional connective. $)
@@ -1769,7 +2001,7 @@ $)
 
   $( Define the biconditional (logical 'iff').
 
-     The definition ~ df-bi in this section is our first definition, which
+     Definition ~ df-bi in this section is our first definition, which
      introduces and defines the biconditional connective ` <-> ` .  We define a
      wff of the form ` ( ph <-> ps ) ` as an abbreviation for
      ` -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ` .
@@ -1779,10 +2011,10 @@ $)
      later use the biconditional connective for this purpose ( ~ df-or is its
      first use), as it allows us to use logic to manipulate definitions
      directly.  This greatly simplifies many proofs since it eliminates the
-     need for a separate mechanism for introducing and eliminating
-     definitions.  Of course, we cannot use this mechanism to define the
-     biconditional itself, since it hasn't been introduced yet.  Instead, we
-     use a more general form of definition, described as follows.
+     need for a separate mechanism for introducing and eliminating definitions.
+     Of course, we cannot use this mechanism to define the biconditional
+     itself, since it hasn't been introduced yet.  Instead, we use a more
+     general form of definition, described as follows.
 
      In its most general form, a definition is simply an assertion that
      introduces a new symbol (or a new combination of existing symbols, as in
@@ -2258,9 +2490,8 @@ $)
   $( Two propositions are equivalent if they are both true.  Closed form of
      ~ 2th .  Equivalent to a ~ bi1 -like version of the xor-connective.  This
      theorem stays true, no matter how you permute its operands.  This is
-     evident from its sharper version
-     ` ( ph <-> ( ps <-> ( ph <-> ps ) ) ) ` .  (Contributed by Wolf Lammen,
-     12-May-2013.) $)
+     evident from its sharper version ` ( ph <-> ( ps <-> ( ph <-> ps ) ) ) ` .
+     (Contributed by Wolf Lammen, 12-May-2013.) $)
   pm5.1im $p |- ( ph -> ( ps -> ( ph <-> ps ) ) ) $=
     ( ax-1 impbid21d ) ABABBACABCD $.
 
@@ -2323,8 +2554,8 @@ $)
 
   ${
     pm5.74ri.1 $e |- ( ( ph -> ps ) <-> ( ph -> ch ) ) $.
-    $( Distribution of implication over biconditional (reverse inference
-       rule).  (Contributed by NM, 1-Aug-1994.) $)
+    $( Distribution of implication over biconditional (reverse inference rule).
+       (Contributed by NM, 1-Aug-1994.) $)
     pm5.74ri $p |- ( ph -> ( ps <-> ch ) ) $=
       ( wb wi pm5.74 mpbir ) ABCEFABFACFEDABCGH $.
   $}
@@ -3100,9 +3331,9 @@ $)
       ( wb ibibr pm5.74ri ax-mp ) ABBADZDCABHABEFG $.
   $}
 
-  $( The negation of a wff is equivalent to the wff's equivalence to
-     falsehood.  (Contributed by Juha Arpiainen, 19-Jan-2006.)  (Proof
-     shortened by Wolf Lammen, 28-Jan-2013.) $)
+  $( The negation of a wff is equivalent to the wff's equivalence to falsehood.
+     (Contributed by Juha Arpiainen, 19-Jan-2006.)  (Proof shortened by Wolf
+     Lammen, 28-Jan-2013.) $)
   nbn2 $p |- ( -. ph -> ( -. ps <-> ( ph <-> ps ) ) ) $=
     ( wn wb pm5.501 notbi syl6bbr ) ACZBCZHIDABDHIEABFG $.
 
@@ -3271,7 +3502,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Logical disjunction and conjunction
+  Logical disjunction and conjunction
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   Here we define disjunction (logical 'or') ` \/ ` ( ~ df-or ) and conjunction
@@ -4199,13 +4430,13 @@ $)
   ${
     jaao.1 $e |- ( ph -> ( ps -> ch ) ) $.
     jaao.2 $e |- ( th -> ( ta -> ch ) ) $.
-    $( Inference conjoining and disjoining the antecedents of two
-       implications.  (Contributed by NM, 30-Sep-1999.) $)
+    $( Inference conjoining and disjoining the antecedents of two implications.
+       (Contributed by NM, 30-Sep-1999.) $)
     jaao $p |- ( ( ph /\ th ) -> ( ( ps \/ ta ) -> ch ) ) $=
       ( wa wi adantr adantl jaod ) ADHBCEABCIDFJDECIAGKL $.
 
-    $( Inference disjoining and conjoining the antecedents of two
-       implications.  (Contributed by Stefan Allan, 1-Nov-2008.) $)
+    $( Inference disjoining and conjoining the antecedents of two implications.
+       (Contributed by Stefan Allan, 1-Nov-2008.) $)
     jaoa $p |- ( ( ph \/ th ) -> ( ( ps /\ ta ) -> ch ) ) $=
       ( wa wi adantrd adantld jaoi ) ABEHCIDABCEFJDECBGKL $.
   $}
@@ -4262,9 +4493,9 @@ $)
 
   ${
     orbi2i.1 $e |- ( ph <-> ps ) $.
-    $( Inference adding a left disjunct to both sides of a logical
-       equivalence.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-       Lammen, 12-Dec-2012.) $)
+    $( Inference adding a left disjunct to both sides of a logical equivalence.
+       (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen,
+       12-Dec-2012.) $)
     orbi2i $p |- ( ( ch \/ ph ) <-> ( ch \/ ps ) ) $=
       ( wo biimpi orim2i biimpri impbii ) CAECBEABCABDFGBACABDHGI $.
 
@@ -4387,8 +4618,8 @@ $)
     jctil $p |- ( ph -> ( ch /\ ps ) ) $=
       ( a1i jca ) ACBCAEFDG $.
 
-    $( Inference conjoining a theorem to right of consequent in an
-       implication.  (Contributed by NM, 31-Dec-1993.) $)
+    $( Inference conjoining a theorem to right of consequent in an implication.
+       (Contributed by NM, 31-Dec-1993.) $)
     jctir $p |- ( ph -> ( ps /\ ch ) ) $=
       ( a1i jca ) ABCDCAEFG $.
   $}
@@ -4420,8 +4651,8 @@ $)
   ${
     jctird.1 $e |- ( ph -> ( ps -> ch ) ) $.
     jctird.2 $e |- ( ph -> th ) $.
-    $( Deduction conjoining a theorem to right of consequent in an
-       implication.  (Contributed by NM, 21-Apr-2005.) $)
+    $( Deduction conjoining a theorem to right of consequent in an implication.
+       (Contributed by NM, 21-Apr-2005.) $)
     jctird $p |- ( ph -> ( ps -> ( ch /\ th ) ) ) $=
       ( a1d jcad ) ABCDEADBFGH $.
   $}
@@ -4961,33 +5192,33 @@ $)
 
   ${
     pm4.71i.1 $e |- ( ph -> ps ) $.
-    $( Inference converting an implication to a biconditional with
-       conjunction.  Inference from Theorem *4.71 of [WhiteheadRussell]
-       p. 120.  (Contributed by NM, 4-Jan-2004.) $)
+    $( Inference converting an implication to a biconditional with conjunction.
+       Inference from Theorem *4.71 of [WhiteheadRussell] p. 120.  (Contributed
+       by NM, 4-Jan-2004.) $)
     pm4.71i $p |- ( ph <-> ( ph /\ ps ) ) $=
       ( wi wa wb pm4.71 mpbi ) ABDAABEFCABGH $.
   $}
 
   ${
     pm4.71ri.1 $e |- ( ph -> ps ) $.
-    $( Inference converting an implication to a biconditional with
-       conjunction.  Inference from Theorem *4.71 of [WhiteheadRussell] p. 120
-       (with conjunct reversed).  (Contributed by NM, 1-Dec-2003.) $)
+    $( Inference converting an implication to a biconditional with conjunction.
+       Inference from Theorem *4.71 of [WhiteheadRussell] p. 120 (with conjunct
+       reversed).  (Contributed by NM, 1-Dec-2003.) $)
     pm4.71ri $p |- ( ph <-> ( ps /\ ph ) ) $=
       ( wi wa wb pm4.71r mpbi ) ABDABAEFCABGH $.
   $}
 
   ${
     pm4.71rd.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( Deduction converting an implication to a biconditional with
-       conjunction.  Deduction from Theorem *4.71 of [WhiteheadRussell]
-       p. 120.  (Contributed by Mario Carneiro, 25-Dec-2016.) $)
+    $( Deduction converting an implication to a biconditional with conjunction.
+       Deduction from Theorem *4.71 of [WhiteheadRussell] p. 120.  (Contributed
+       by Mario Carneiro, 25-Dec-2016.) $)
     pm4.71d $p |- ( ph -> ( ps <-> ( ps /\ ch ) ) ) $=
       ( wi wa wb pm4.71 sylib ) ABCEBBCFGDBCHI $.
 
-    $( Deduction converting an implication to a biconditional with
-       conjunction.  Deduction from Theorem *4.71 of [WhiteheadRussell]
-       p. 120.  (Contributed by NM, 10-Feb-2005.) $)
+    $( Deduction converting an implication to a biconditional with conjunction.
+       Deduction from Theorem *4.71 of [WhiteheadRussell] p. 120.  (Contributed
+       by NM, 10-Feb-2005.) $)
     pm4.71rd $p |- ( ph -> ( ps <-> ( ch /\ ps ) ) ) $=
       ( wi wa wb pm4.71r sylib ) ABCEBCBFGDBCHI $.
   $}
@@ -5535,8 +5766,8 @@ $)
 
   ${
     bid.1 $e |- ( ph -> ( ps <-> ch ) ) $.
-    $( Deduction adding a left disjunct to both sides of a logical
-       equivalence.  (Contributed by NM, 5-Aug-1993.) $)
+    $( Deduction adding a left disjunct to both sides of a logical equivalence.
+       (Contributed by NM, 5-Aug-1993.) $)
     orbi2d $p |- ( ph -> ( ( th \/ ps ) <-> ( th \/ ch ) ) ) $=
       ( wn wi wo imbi2d df-or 3bitr4g ) ADFZBGLCGDBHDCHABCLEIDBJDCJK $.
 
@@ -5545,9 +5776,9 @@ $)
     orbi1d $p |- ( ph -> ( ( ps \/ th ) <-> ( ch \/ th ) ) ) $=
       ( wo orbi2d orcom 3bitr4g ) ADBFDCFBDFCDFABCDEGBDHCDHI $.
 
-    $( Deduction adding a left conjunct to both sides of a logical
-       equivalence.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-       Lammen, 16-Nov-2013.) $)
+    $( Deduction adding a left conjunct to both sides of a logical equivalence.
+       (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen,
+       16-Nov-2013.) $)
     anbi2d $p |- ( ph -> ( ( th /\ ps ) <-> ( th /\ ch ) ) ) $=
       ( wb a1d pm5.32d ) ADBCABCFDEGH $.
 
@@ -6053,8 +6284,8 @@ $)
   $}
 
   $( Introduce one conjunct as an antecedent to the other.  "abai" stands for
-     "and, biconditional, and, implication".  (Contributed by NM,
-     12-Aug-1993.)  (Proof shortened by Wolf Lammen, 7-Dec-2012.) $)
+     "and, biconditional, and, implication".  (Contributed by NM, 12-Aug-1993.)
+     (Proof shortened by Wolf Lammen, 7-Dec-2012.) $)
   abai $p |- ( ( ph /\ ps ) <-> ( ph /\ ( ph -> ps ) ) ) $=
     ( wi biimt pm5.32i ) ABABCABDE $.
 
@@ -6679,9 +6910,10 @@ $)
     ( wo wb biort bicomd wn biorf nsyl4 con1i orri ) ABCZADZLBDZNMAMNAALABEFAGB
     LABHFIJK $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Miscellaneous theorems of propositional calculus
+  Miscellaneous theorems of propositional calculus
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -7105,8 +7337,8 @@ $)
                      -> ( th <-> ta ) ) $.
     elimh.3 $e |- th $.
     $( Hypothesis builder for weak deduction theorem.  For more information,
-       see the Deduction Theorem link on the Metamath Proof Explorer home
-       page.  (Contributed by NM, 26-Jun-2002.) $)
+       see the Deduction Theorem link on the Metamath Proof Explorer home page.
+       (Contributed by NM, 26-Jun-2002.) $)
     elimh $p |- ta $=
       ( wa wn wo wb dedlema syl ibi dedlemb mpbii pm2.61i ) CECECAACIBCJZIKZLCE
       LCABMFNOSDEHSBTLDELCABPGNQR $.
@@ -7203,9 +7435,10 @@ $)
     anbi2i 3bitrri ) CABEFZCEZACEZGZUBACFCDEZFEFZEZGUBFUGFEFCCUAAGZEZUDUHCUAAFH
     UHFABIUAAJKLUIUHCEUDCUHMUAACNOOUCUGUBCUFACCUEGUFCDPCUEQORSUBUGQT $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Abbreviated conjunction and disjunction of three wff's
+  Abbreviated conjunction and disjunction of three wff's
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9359,9 +9592,10 @@ $)
       ( wi 3exp wn a1d pm2.61i pm2.61nii ) BCDABCDIZIABCDHJAKZOBPDCELLMFGN $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Logical 'nand' (Sheffer stroke)
+  Logical 'nand' (Sheffer stroke)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9480,9 +9714,10 @@ $)
 
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Logical 'xor'
+  Logical 'xor'
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9567,9 +9802,10 @@ $)
       BDMCEMN $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                True and false constants
+  True and false constants
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9690,9 +9926,10 @@ $)
       ( wfal pm2.21dd ) ABECDF $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Truth tables
+  Truth tables
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   Some sources define operations on true/false values using truth tables.
@@ -9829,9 +10066,10 @@ $)
     ( wfal wxo wtru wn wb df-xor falbifal xchbinx nottru bitri ) AABZCDAKAAECAA
     FGHIJ $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-       Auxiliary theorems for Alan Sare's virtual deduction tool, part 1
+  Auxiliary theorems for Alan Sare's virtual deduction tool, part 1
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9981,9 +10219,10 @@ $)
 
 $( End of auxiliary theorems for Alan Sare's virtual deduction tool, part 1 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-       Half-adders and full adders in propositional calculus
+  Half-adders and full adders in propositional calculus
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   Propositional calculus deals with truth values, which can be interpreted as
@@ -10168,15 +10407,17 @@ $)
     ( wn whad wxo wb had1 hadnot df-xor xorneg bitr3i con1bii 3bitr4g con4bid )
     ADZABCEZBCFZPPBDZCDZESTGZQDRDPSTHABCIUARUADSTFRSTJBCKLMNO $.
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-      Other axiomatizations of classical propositional calculus
+  Other axiomatizations of classical propositional calculus
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-      Derive the Lukasiewicz axioms from Meredith's sole axiom
+  Derive the Lukasiewicz axioms from Meredith's sole axiom
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10207,9 +10448,8 @@ $)
     ( wi wn pm2.21 ax-3 imim12i com13 con1d com12 a1d ax-1 imim1d ja ) ABFZCGDG
     FZFZCFZEEAFZDAFZFUAGZUCUBDUDADAUATAGZDCUERSDCFABHCDIJKLMNEDEAEDOPQ $.
 
-  $( Alias for ~ meredith which "verify markup *" will match to
-     ~ ax-meredith .  (Contributed by NM, 21-Aug-2017.)
-     (New usage is discouraged.) $)
+  $( Alias for ~ meredith which "verify markup *" will match to ~ ax-meredith .
+     (Contributed by NM, 21-Aug-2017.)  (New usage is discouraged.) $)
   axmeredith $p |- ( ( ( ( ( ph -> ps ) -> ( -. ch -> -. th ) ) -> ch ) ->
        ta ) -> ( ( ta -> ph ) -> ( th -> ph ) ) ) $=
     ( meredith ) ABCDEF $.
@@ -10339,9 +10579,10 @@ $)
   luk-3 $p |- ( ph -> ( -. ph -> ps ) ) $=
     ( wn wi merlem11 merlem1 ax-mp ) ACZHBDZDIDAIDHBEABHIFG $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-      Derive the standard axioms from the Lukasiewicz axioms
+  Derive the standard axioms from the Lukasiewicz axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10421,9 +10662,10 @@ $)
   ax3 $p |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $=
     ( wn wi luklem2 luklem4 luklem1 ) ACZBCDHADADBADZDIHBAAEAIFG $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-           Derive Nicod's axiom from the standard axioms
+  Derive Nicod's axiom from the standard axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 Prove Nicod's axiom and implication and negation definitions.
@@ -10456,13 +10698,12 @@ $)
     nic-jmin $e |- ph $.
     $( Major premise. $)
     nic-jmaj $e |- ( ph -/\ ( ch -/\ ps ) ) $.
-    $( Derive Nicod's rule of modus ponens using 'nand', from the standard
-       one.  Although the major and minor premise together also imply ` ch ` ,
-       this form is necessary for useful derivations from ~ nic-ax .  In a pure
+    $( Derive Nicod's rule of modus ponens using 'nand', from the standard one.
+       Although the major and minor premise together also imply ` ch ` , this
+       form is necessary for useful derivations from ~ nic-ax .  In a pure
        (standalone) treatment of Nicod's axiom, this theorem would be changed
-       to an axiom ($a statement).  (Contributed by Jeff Hoffman,
-       19-Nov-2007.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
+       to an axiom ($a statement).  (Contributed by Jeff Hoffman, 19-Nov-2007.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     nic-mp $p |- ps $=
       ( wnan wa wi nannan mpbi simprd ax-mp ) ABDACBACBFFACBGHEABCIJKL $.
 
@@ -10474,7 +10715,7 @@ $)
   $}
 
   $( Nicod's axiom derived from the standard ones.  See _Intro. to Math.
-     Phil._ by B. Russell, p. 152.  Like ~ meredith , the usual axioms can be
+     Phil_. by B. Russell, p. 152.  Like ~ meredith , the usual axioms can be
      derived from this and vice versa.  Unlike ~ meredith , Nicod uses a
      different connective ('nand'), so another form of modus ponens must be
      used in proofs, e.g. ` { ` ~ nic-ax , ~ nic-mp ` } ` is equivalent to
@@ -10508,7 +10749,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-          Derive the Lukasiewicz axioms from Nicod's axiom
+  Derive the Lukasiewicz axioms from Nicod's axiom
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10619,7 +10860,7 @@ $)
 
 $( (not in Table of Contents)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Biconditional justification from Nicod's axiom
+  Biconditional justification from Nicod's axiom
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10647,16 +10888,16 @@ $)
     nic-bi2.1 $e |- ( ( ph -/\ ps ) -/\ ( ( ph -/\ ph )
          -/\ ( ps -/\ ps ) ) ) $.
     $( Inference to extract the other side of an implication from a
-       'biconditional' definition.  (Contributed by Jeff Hoffman,
-       18-Nov-2007.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
+       'biconditional' definition.  (Contributed by Jeff Hoffman, 18-Nov-2007.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     nic-bi2 $p |- ( ps -/\ ( ph -/\ ph ) ) $=
       ( wnan nic-isw2 nic-id nic-iimp1 nic-idel ) BBAABDZAADZBBDZBKIJCEBFGH $.
   $}
 
+
 $( (not in Table of Contents)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-             Prove the Lukasiewicz axioms from Nicod's axiom
+  Prove the Lukasiewicz axioms from Nicod's axiom
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10672,9 +10913,9 @@ $)
       ( wi wnan nic-dfim nic-bi2 nic-mp ) ABBCABEZABBFFZKDKJABGHII $.
   $}
 
-  $( Proof of ~ luk-1 from ~ nic-ax and ~ nic-mp (and definitions ~ nic-dfim
+  $( Proof of ~ luk-1 from ~ nic-ax and ~ nic-mp (and Definitions ~ nic-dfim
      and ~ nic-dfneg ).  Note that the standard axioms ~ ax-1 , ~ ax-2 , and
-     ~ ax-3 are proved from the Lukasiewicz axioms by theorems ~ ax1 , ~ ax2 ,
+     ~ ax-3 are proved from the Lukasiewicz axioms by Theorems ~ ax1 , ~ ax2 ,
      and ~ ax3 .  (Contributed by Jeff Hoffman, 18-Nov-2007.)
      (Proof modification is discouraged.)  (New usage is discouraged.) $)
   nic-luk1 $p |- ( ( ph -> ps ) -> ( ( ps -> ch ) -> ( ph -> ch ) ) ) $=
@@ -10698,9 +10939,10 @@ $)
     ( wnan nic-dfim nic-bi1 nic-dfneg nic-bi2 nic-id nic-iimp1 nic-iimp2 nic-mp
     wn wi ) AALZBMZOCCZAOMZQNBBCZOANRCONBDENAACZSASNAFGAHIJPQAODEK $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Derive Nicod's Axiom from Lukasiewicz's First Sheffer Stroke Axiom
+  Derive Nicod's Axiom from Lukasiewicz's First Sheffer Stroke Axiom
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10742,9 +10984,10 @@ $)
     ( wnan lukshefth1 lukshefth2 nic-mp lukshef-ax1 ) EEEFFZDCFADFZLFFZFZACBFFZ
     FZONFZQOMKFZFZPPROFSSACBEDGORHINRRFFSPPFFOOOFFMKHNRROJIIONHI $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-      Derive the Lukasiewicz Axioms from the Tarski-Bernays-Wajsberg Axioms
+  Derive the Lukasiewicz Axioms from the Tarski-Bernays-Wajsberg Axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10863,6 +11106,7 @@ $)
     ( wn wfal wi tbw-negdf tbwlem5 ax-mp tbw-ax4 tbw-ax1 tbwlem1 mpsyl ) ACZADE
     ZEZANBEZMBEONMEZDEEDEOAFOQGHNABEZEZAPEDBEZSBINTREETSEADBJNTRKHHNABKHMNBJL
     $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -11057,6 +11301,7 @@ $)
     LKUMJULUGUQLGQAUFUMUNLGTAUGQUJLGGUGTPHGUHUBDUFDZUFDZUHUFDUSUTDUTUFJUAUSSKUS
     UFMGUHUBUCUFNGGGG $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Derive the Tarski-Bernays-Wajsberg axioms from Meredith's Second CO Axiom
@@ -11175,15 +11420,15 @@ $)
     AADALBMJBAJEALAFGGZJJKBZNKKBZJOBZKABZKBZKBZPKADKSBTPBKREKSKFGGRPBPQBCKAHKAA
     KJJIGGGG $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-       Derive the Lukasiewicz axioms from the The Russell-Bernays Axioms
+  Derive the Lukasiewicz axioms from the The Russell-Bernays Axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Justification for ~ rb-imdf .  (Contributed by Anthony Hart,
-     17-Aug-2011.)  (Proof modification is discouraged.)
-     (New usage is discouraged.) $)
+  $( Justification for ~ rb-imdf .  (Contributed by Anthony Hart, 17-Aug-2011.)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
   rb-bijust $p |- ( ( ph <-> ps ) <-> -. ( -. ( -. ph \/ ps )
     \/ -. ( -. ps \/ ph ) ) ) $=
     ( wb wi wn wo dfbi1 imor notbii imbi12i pm4.62 3bitri ) ABCABDZBADZEZDZEAEB
@@ -11345,9 +11590,10 @@ $)
     ( wn wi wo rb-imdf rblem7 rb-ax4 rb-ax3 rbsyl rb-ax2 anmp rblem2 ) ACZNBDZE
     ZAODZNNCZBEZOOSNBFGNREZNSERNETRNNENNHNNIJRNKLRBNMLJQPAOFGL $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Stoic logic indemonstrables (Chrysippus of Soli)
+  Stoic logic indemonstrables (Chrysippus of Soli)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   The Greek Stoics developed a system of logic.
@@ -11466,8 +11712,8 @@ $)
     mtp-or.1 $e |- -. ph $.
     $( Major premise for modus tollendo ponens (inclusive-or version). $)
     mtp-or.2 $e |- ( ph \/ ps ) $.
-    $( Modus tollendo ponens (inclusive-or version), aka disjunctive
-       syllogism.  This is similar to ~ mtp-xor , one of the five original
+    $( Modus tollendo ponens (inclusive-or version), aka disjunctive syllogism.
+       This is similar to ~ mtp-xor , one of the five original
        "indemonstrables" in Stoic logic.  However, in Stoic logic this rule
        used exclusive-or, while the name modus tollendo ponens often refers to
        a variant of the rule that uses inclusive-or instead.  The rule says,
@@ -11490,7 +11736,7 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-    Predicate calculus with equality:  Tarski's system S2 (1 rule, 6 schemes)
+  Predicate calculus with equality:  Tarski's system S2 (1 rule, 6 schemes)
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
   Here we extend the language of wffs with predicate calculus, which allows us
@@ -11505,21 +11751,22 @@ $(
 
   Our axioms are really axiom _schemes_, and our wff and setvar variables are
   metavariables ranging over expressions in an underlying "object language."
-  This is explained here:  ~ http://us.metamath.org/mpeuni/mmset.html#axiomnote
+  This is explained here:
+  ~ https://us.metamath.org/mpeuni/mmset.html#axiomnote
 
   Our axiom system starts with the predicate calculus axiom schemes system S2
   of Tarski defined in his 1965 paper, "A Simplified Formalization of Predicate
   Logic with Identity" [Tarski].  System S2 is defined in the last paragraph on
   p. 77, and repeated on p. 81 of [KalishMontague].  We do not include scheme
   B5 (our ~ sp ) since [KalishMontague] shows it to be logically redundant
-  (Lemma 9, p. 87, which we prove as theorem ~ spw below).
+  (Lemma 9, p. 87, which we prove as Theorem ~ spw below).
 
   Theorem ~ spw can be used to prove any instance of ~ sp having no wff
   metavariables and mutually distinct setvar variables.  However, it seems that
   ~ sp in its general form cannot be derived from only Tarski's schemes.  We
   do not include B5 i.e.  ~ sp as part of what we call "Tarski's system"
   because we want it to be the smallest set of axioms that is logically
-  complete with no redundancies.  We later prove ~ sp as theorem ~ ax4
+  complete with no redundancies.  We later prove ~ sp as Theorem ~ ax4
   using the auxiliary axioms that make our system metalogically complete.
 
   Our version of Tarski's system S2 consists of propositional calculus plus
@@ -11552,9 +11799,10 @@ $(
 
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    Universal quantifier; define "exists" and "not free"
+  Universal quantifier; define "exists" and "not free"
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -11652,9 +11900,10 @@ $)
      11-Aug-2016.) $)
   df-nf $a |- ( F/ x ph <-> A. x ( ph -> A. x ph ) ) $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-       Rule scheme ax-gen (Generalization)
+  Rule scheme ax-gen (Generalization)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -11756,9 +12005,10 @@ $)
       ( wal pm2.21i nfi ) ABAABDCEF $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-         Axiom scheme ax-5 (Quantified Implication)
+  Axiom scheme ax-5 (Quantified Implication)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -11929,8 +12179,8 @@ $)
 
   ${
     exbii.1 $e |- ( ph <-> ps ) $.
-    $( Inference adding existential quantifier to both sides of an
-       equivalence.  (Contributed by NM, 24-May-1994.) $)
+    $( Inference adding existential quantifier to both sides of an equivalence.
+       (Contributed by NM, 24-May-1994.) $)
     exbii $p |- ( E. x ph <-> E. x ps ) $=
       ( wb wex exbi mpg ) ABEACFBCFECABCGDH $.
   $}
@@ -12046,8 +12296,8 @@ $)
     ( wex wal wa 19.29 ancoms exancom sylibr ) ACDZBCEZFBAFCDZABFCDLKMBACGHABCI
     J $.
 
-  $( Variation of Theorem 19.29 of [Margaris] p. 90 with double
-     quantification.  (Contributed by NM, 3-Feb-2005.) $)
+  $( Variation of Theorem 19.29 of [Margaris] p. 90 with double quantification.
+     (Contributed by NM, 3-Feb-2005.) $)
   19.29r2 $p |- ( ( E. x E. y ph /\ A. x A. y ps ) ->
              E. x E. y ( ph /\ ps ) ) $=
     ( wex wal wa 19.29r eximi syl ) ADEZCEBDFZCFGKLGZCEABGDEZCEKLCHMNCABDHIJ $.
@@ -12165,6 +12415,7 @@ $)
   alsyl $p |- ( ( A. x ( ph -> ps ) /\ A. x ( ps -> ch ) ) ->
         A. x ( ph -> ch ) ) $=
     ( wi pm3.33 alanimi ) ABEBCEACEDABCFG $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -12414,9 +12665,10 @@ $)
       ( id alrimivv ) AABCADE $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Equality predicate; define substitution
+  Equality predicate; define substitution
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -12442,7 +12694,7 @@ $)
      syntax such as ~ cab , ~ cun , or ~ c0 .
 
      For a general discussion of the theory of classes and the role of ~ cv ,
-     see ~ http://us.metamath.org/mpeuni/mmset.html#class .
+     see ~ https://us.metamath.org/mpeuni/mmset.html#class .
 
      (The description above applies to set theory, not predicate calculus.  The
      purpose of introducing ` class x ` here, and not in set theory where it
@@ -12469,7 +12721,7 @@ $)
     $( Extend wff definition to include class equality.
 
        For a general discussion of the theory of classes, see
-       ~ http://us.metamath.org/mpeuni/mmset.html#class .
+       ~ https://us.metamath.org/mpeuni/mmset.html#class .
 
        (The purpose of introducing ` wff A = B ` here, and not in set theory
        where it belongs, is to allow us to express i.e.  "prove" the ~ weq of
@@ -12478,11 +12730,11 @@ $)
        is done to prevent ambiguity that would complicate some Metamath
        parsers.  For example, some parsers - although not the Metamath program
        - stumble on the fact that the ` = ` in ` x = y ` could be the ` = ` of
-       either ~ weq or ~ wceq , although mathematically it makes no
-       difference.  The class variables ` A ` and ` B ` are introduced
-       temporarily for the purpose of this definition but otherwise not used in
-       predicate calculus.  See ~ df-cleq for more information on the set
-       theory usage of ~ wceq .) $)
+       either ~ weq or ~ wceq , although mathematically it makes no difference.
+       The class variables ` A ` and ` B ` are introduced temporarily for the
+       purpose of this definition but otherwise not used in predicate calculus.
+       See ~ df-cleq for more information on the set theory usage of
+       ~ wceq .) $)
     wceq $a wff A = B $.
   $}
 
@@ -12534,7 +12786,7 @@ $)
     spimfw.2 $e |- ( x = y -> ( ph -> ps ) ) $.
     $( Specialization, with additional weakening to allow bundling of ` x ` and
        ` y ` .  Uses only Tarski's FOL axiom schemes.  (Contributed by NM,
-       23-Apr-1017.)  (Proof shortened by Wolf Lammen, 7-Aug-2017.) $)
+       23-Apr-2017.)  (Proof shortened by Wolf Lammen, 7-Aug-2017.) $)
     spimfw $p |- ( -. A. x -. x = y -> ( A. x ph -> ps ) ) $=
       ( weq wn wal wex speimfw df-ex con1i sylbi syl6 ) CDGHCIHACIBCJZBABCDFKPB
       HCIZHBBCLBQEMNO $.
@@ -12581,7 +12833,7 @@ $)
      variables in the wff.  Instead, we use a single formula that is exactly
      equivalent and gives us a direct definition.  We later prove that our
      definition has the properties we expect of proper substitution (see
-     theorems ~ sbequ , ~ sbcom2 and ~ sbid2v ).
+     Theorems ~ sbequ , ~ sbcom2 and ~ sbid2v ).
 
      Note that our definition is valid even when ` x ` and ` y ` are replaced
      with the same variable, as ~ sbid shows.  We achieve this by having ` x `
@@ -12624,9 +12876,10 @@ $)
       ( wsb biimpi sbimi biimpri impbii ) ACDFBCDFABCDABEGHBACDABEIHJ $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Axiom scheme ax-9 (Existence)
+  Axiom scheme ax-9 (Existence)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -12641,26 +12894,26 @@ $)
 
      Raph Levien proved the independence of this axiom from the other logical
      axioms on 12-Apr-2005.  See item 16 at
-     ~ http://us.metamath.org/award2003.html .
+     ~ https://us.metamath.org/award2003.html .
 
      ~ ax-9 can be proved from the weaker version ~ ax9v requiring that the
-     variables be distinct; see theorem ~ ax9 .
+     variables be distinct; see Theorem ~ ax9 .
 
      ~ ax-9 can also be proved from the Axiom of Separation (in the form that
      we use that axiom, where free variables are not universally quantified).
      See theorem ax9vsep in set.mm.
 
      Except by ~ ax9v , this axiom should not be referenced directly.  Instead,
-     use theorem ~ ax9 .  (Contributed by NM, 5-Aug-1993.)
+     use Theorem ~ ax9 .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-9 $a |- -. A. x -. x = y $.
 
   ${
     $d x y $.
     $( Axiom B7 of [Tarski] p. 75, which requires that ` x ` and ` y ` be
-       distinct.  This trivial proof is intended merely to weaken axiom ~ ax-9
+       distinct.  This trivial proof is intended merely to weaken Axiom ~ ax-9
        by adding a distinct variable restriction.  From here on, ~ ax-9 should
-       not be referenced directly by any other proof, so that theorem ~ ax9
+       not be referenced directly by any other proof, so that Theorem ~ ax9
        will show that we can recover ~ ax-9 from this weaker version if it were
        an axiom (as it is in the case of Tarski).
 
@@ -12708,7 +12961,8 @@ $)
     $d x y $.
     exiftruOLD.1 $e |- ph $.
     $( Obsolete proof of ~ exiftru as of 9-Dec-2017.  (Contributed by Wolf
-       Lammen, 12-Nov-2017.)  (New usage is discouraged.) $)
+       Lammen, 12-Nov-2017.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     exiftruOLD $p |- E. x ph $=
       ( vy wex weq wi wal a9ev a1i 19.35ri id 2th exbii mpbir ) ABEBDFZPGZBEPPB
       PBEPBHBDIJKAQBAQCPLMNO $.
@@ -12810,7 +13064,7 @@ $)
   ${
     sptruw.1 $e |- ph $.
     $( Version of ~ sp when ` ph ` is true.  Uses only Tarski's FOL axiom
-       schemes.  (Contributed by NM, 23-Apr-1017.) $)
+       schemes.  (Contributed by NM, 23-Apr-2017.) $)
     sptruw $p |- ( A. x ph -> ph ) $=
       ( wal a1i ) AABDCE $.
   $}
@@ -12818,7 +13072,7 @@ $)
   ${
     spfalw.1 $e |- -. ph $.
     $( Version of ~ sp when ` ph ` is false.  Uses only Tarski's FOL axiom
-       schemes.  (Contributed by NM, 23-Apr-1017.)  (Proof shortened by Wolf
+       schemes.  (Contributed by NM, 23-Apr-2017.)  (Proof shortened by Wolf
        Lammen, 25-Dec-2017.) $)
     spfalw $p |- ( A. x ph -> ph ) $=
       ( wn hbth spnfw ) ABADBCEF $.
@@ -12847,7 +13101,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                   Axiom scheme ax-8 (Equality)
+  Axiom scheme ax-8 (Equality)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -12883,7 +13137,8 @@ $)
   ${
     $d x y $.
     $( Obsolete proof of ~ equid as of 9-Dec-2017.  (Contributed by NM,
-       1-Apr-2005.)  (New usage is discouraged.) $)
+       1-Apr-2005.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     equidOLD $p |- x = x $=
       ( vy weq wn wal ax9v ax-8 pm2.43i con3i alimi mto ax-17 mt3 ) AACZNDZBEZP
       BACZDZBEBAFORBQNQNBAAGHIJKOBLM $.
@@ -12953,9 +13208,9 @@ $)
   equtr2 $p |- ( ( x = z /\ y = z ) -> x = y ) $=
     ( weq wi equtrr equcoms impcom ) BCDACDZABDZIJECBCBAFGH $.
 
-  $( Two equivalent ways of expressing ~ ax-12 .  See the comment for
-     ~ ax-12 .  (Contributed by NM, 2-May-2017.)  (Proof shortened by Wolf
-     Lammen, 12-Aug-2017.) $)
+  $( Two equivalent ways of expressing ~ ax-12 .  See the comment for ~ ax-12 .
+     (Contributed by NM, 2-May-2017.)  (Proof shortened by Wolf Lammen,
+     12-Aug-2017.) $)
   ax12b $p |- ( ( -. x = y -> ( y = z -> A. x y = z ) )
      <-> ( -. x = y -> ( -. x = z -> ( y = z -> A. x y = z ) ) ) ) $=
     ( weq wn wal wi a1dd equtrr equcoms con3rr3 com4l com23 mpdd com3r impbii
@@ -12963,7 +13218,8 @@ $)
     IJKSUETUGUFSUETUAUFQLMNOP $.
 
   $( Obsolete version of ~ ax12b as of 12-Aug-2017.  (Contributed by NM,
-     2-May-2017.)  (New usage is discouraged.) $)
+     2-May-2017.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
   ax12bOLD $p |- ( ( -. x = y -> ( y = z -> A. x y = z ) )
      <-> ( -. x = y -> ( -. x = z -> ( y = z -> A. x y = z ) ) ) ) $=
     ( weq wn wal wi wa bi2.04 equtrr equcoms con3d pm4.71d imbi1d pm5.74i bitri
@@ -12990,7 +13246,7 @@ $)
     spnfw.3 $e |- ( -. ph -> A. x -. ph ) $.
     $( Weak version of ~ sp .  Uses only Tarski's FOL axiom schemes.  Obsolete
        version of ~ spnfw as of 13-Aug-2017.  (Contributed by NM, 1-Aug-2017.)
-       (New usage is discouraged.) $)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     spnfwOLD $p |- ( A. x ph -> ph ) $=
       ( vy wal ax-17 wn weq biidd spfw ) AABDCABEDFAGDFBDHAIJ $.
   $}
@@ -13038,8 +13294,8 @@ $)
       ( wal spvw ax-17 impbii ) ABCAABDABEF $.
 
     $( Obsolete version of ~ 19.9v as of 4-Dec-2017.  (Contributed by NM,
-       28-May-1995.)  (Revised by NM, 1-Aug-2017.)
-       (New usage is discouraged.)  (Proof modification is discouraged.) $)
+       28-May-1995.)  (Revised by NM, 1-Aug-2017.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
     19.9vOLD $p |- ( E. x ph <-> ph ) $=
       ( wex wn wal df-ex 19.3v con2bii bitr4i ) ABCADZBEZDAABFKAJBGHI $.
   $}
@@ -13058,14 +13314,15 @@ $)
     $d x y $.  $d y ph $.
     spfalwOLD.1 $e |- -. ph $.
     $( Obsolete proof of ~ spfalw as of 25-Dec-2017.  (Contributed by NM,
-       23-Apr-1017.)  (New usage is discouraged.) $)
+       23-Apr-2017.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     spfalwOLD $p |- ( A. x ph -> ph ) $=
       ( vy wfal wb weq bifal a1i spw ) AEBDAEFBDGACHIJ $.
   $}
 
   $( Obsolete version of ~ 19.2 as of 4-Dec-2017.  (Contributed by NM,
-     2-Aug-2017.)  (New usage is discouraged.)
-     (Proof modification is discouraged.) $)
+     2-Aug-2017.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
   19.2OLD $p |- ( A. x ph -> E. x ph ) $=
     ( weq wn wal wex wi equid notnoti spfalw mt2 idd speimfw ax-mp ) BBCZDZBEZD
     ABEABFGQOBHZPBORIJKAABBOALMN $.
@@ -13159,9 +13416,10 @@ $)
       ( wal alimi alcomiw syl ) ADHZACHZDHLCHAMDGIABDCEFJK $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                  Membership predicate
+  Membership predicate
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -13178,7 +13436,7 @@ $)
        classes.
 
        For a general discussion of the theory of classes, see
-       ~ http://us.metamath.org/mpeuni/mmset.html#class .
+       ~ https://us.metamath.org/mpeuni/mmset.html#class .
 
        (The purpose of introducing ` wff A e. B ` here is to allow us to
        express i.e.  "prove" the ~ wel of predicate calculus in terms of the
@@ -13248,7 +13506,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Axiom schemes ax-13 (Left Equality for Binary Predicate)
+  Axiom schemes ax-13 (Left Equality for Binary Predicate)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -13276,7 +13534,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Axiom schemes ax-14 (Right Equality for Binary Predicate)
+  Axiom schemes ax-14 (Right Equality for Binary Predicate)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -13299,12 +13557,12 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-      Logical redundancy of ax-6 , ax-7 , ax-11 , ax-12
+  Logical redundancy of ax-6 , ax-7 , ax-11 , ax-12
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   The orginal axiom schemes of Tarski's predicate calculus are ~ ax-5 ,
   ~ ax-17 , ~ ax9v , ~ ax-8 , ~ ax-13 , and ~ ax-14 , together with rule
-  ~ ax-gen .  See ~ http://us.metamath.org/mpeuni/mmset.html#compare .  They
+  ~ ax-gen .  See ~ https://us.metamath.org/mpeuni/mmset.html#compare .  They
   are given as axiom schemes B4 through B8 in [KalishMontague] p. 81.  These
   are shown to be logically complete by Theorem 1 of [KalishMontague] p. 85.
 
@@ -13314,8 +13572,8 @@ $(
   "metalogically complete" i.e. able to prove directly all possible schemes
   with wff and setvar metavariables, bundled or not, whose object-language
   instances are valid.  ( ~ ax-11 has been proved to be required; see
-  ~ http://us.metamath.org/award2003.html#9a .  Metalogical independence of the
-  other three are open problems.)
+  ~ https://us.metamath.org/award2003.html#9a .  Metalogical independence of
+  the other three are open problems.)
 
   (There are additional predicate calculus axiom schemes included in set.mm
   such as ~ ax-4 , but they can all be proved as theorems from the above.)
@@ -13461,10 +13719,10 @@ $)
     $d x y z w v $.
     $( Example of an application of ~ ax11w that results in an instance of
        ~ ax-11 for a contrived formula with mixed free and bound variables,
-       ` ( x e. y /\ A. x z e. x /\ A. y A. z y e. x ) ` , in place of
-       ` ph ` .  The proof illustrates bound variable renaming with ~ cbvalvw
-       to obtain fresh variables to avoid distinct variable clashes.  Uses only
-       Tarski's FOL axiom schemes.  (Contributed by NM, 14-Apr-2017.) $)
+       ` ( x e. y /\ A. x z e. x /\ A. y A. z y e. x ) ` , in place of ` ph ` .
+       The proof illustrates bound variable renaming with ~ cbvalvw to obtain
+       fresh variables to avoid distinct variable clashes.  Uses only Tarski's
+       FOL axiom schemes.  (Contributed by NM, 14-Apr-2017.) $)
     ax11wdemo $p |- ( x = y
               -> ( A. y ( x e. y /\ A. x z e. x /\ A. y A. z y e. x )
      -> A. x ( x = y -> ( x e. y /\ A. x z e. x /\ A. y A. z y e. x ) ) ) ) $=
@@ -13513,7 +13771,7 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-   Predicate calculus with equality:  Auxiliary axiom schemes (4 schemes)
+  Predicate calculus with equality:  Auxiliary axiom schemes (4 schemes)
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
   In this section we introduce four additional schemes ~ ax-6 , ~ ax-7 ,
@@ -13538,9 +13796,10 @@ $(
 
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-              Axiom scheme ax-6 (Quantified Negation)
+  Axiom scheme ax-6 (Quantified Negation)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -13569,9 +13828,10 @@ $)
   modal-5 $p |- ( -. A. x -. ph -> A. x -. A. x -. ph ) $=
     ( wn hbn1 ) ACBD $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-            Axiom scheme ax-7 (Quantifier Commutation)
+  Axiom scheme ax-7 (Quantifier Commutation)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -13649,9 +13909,10 @@ $)
   exrot4 $p |- ( E. x E. y E. z E. w ph <-> E. z E. w E. x E. y ph ) $=
     ( wex excom13 exbii bitri ) AEFDFCFZBFACFZDFEFZBFKBFEFDFJLBACDEGHKBEDGI $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-           Axiom scheme ax-11 (Substitution)
+  Axiom scheme ax-11 (Substitution)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -13663,12 +13924,12 @@ $)
 
      The original version of this axiom was ~ ax-11o ("o" for "old") and was
      replaced with this shorter ~ ax-11 in Jan. 2007.  The old axiom is proved
-     from this one as theorem ~ ax11o .  Conversely, this axiom is proved from
-     ~ ax-11o as theorem ~ ax11 .
+     from this one as Theorem ~ ax11o .  Conversely, this axiom is proved from
+     ~ ax-11o as Theorem ~ ax11 .
 
      Juha Arpiainen proved the metalogical independence of this axiom (in the
      form of the older axiom ~ ax-11o ) from the others on 19-Jan-2006.  See
-     item 9a at ~ http://us.metamath.org/award2003.html .
+     item 9a at ~ https://us.metamath.org/award2003.html .
 
      See ~ ax11v and ~ ax11v2 for other equivalents of this axiom that (unlike
      this axiom) have distinct variable restrictions.
@@ -13686,7 +13947,7 @@ $)
        C5' in [Megill] p. 448 (p. 16 of the preprint).
 
        For the axiom of specialization presented in many logic textbooks, see
-       theorem ~ stdpc4 .
+       Theorem ~ stdpc4 .
 
        This theorem shows that our obsolete axiom ~ ax-4 can be derived from
        the others.  The proof uses ideas from the proof of Lemma 21 of [Monk2]
@@ -13707,7 +13968,7 @@ $)
     $d x w $.  $d w ph $.
     $( Obsolete proof of ~ sp as of 23-Dec-2017.  (Contributed by NM,
        21-May-2008.)  (Proof shortened by Scott Fenton, 24-Jan-2011.)
-       (New usage is discouraged.) $)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     spOLD $p |- ( A. x ph -> ph ) $=
       ( vw wal wi weq wn ax9v equcomi ax-17 ax-11 syl2im con2 al2imi mtoi con4d
       syl6 con3i alrimiv mt3 ) ABDZAEZCBFZGZCDCBHUBGUDCUCUBUCAUAUCAGZBCFZUEEZBD
@@ -13768,8 +14029,8 @@ $)
   19.8a $p |- ( ph -> E. x ph ) $=
     ( wn wal wex sp con2i df-ex sylibr ) AACZBDZCABEKAJBFGABHI $.
 
-  $( Theorem 19.2 of [Margaris] p. 89, generalized to use two setvar
-     variables.  (Contributed by O'Cat, 31-Mar-2008.) $)
+  $( Theorem 19.2 of [Margaris] p. 89, generalized to use two setvar variables.
+     (Contributed by O'Cat, 31-Mar-2008.) $)
   19.2g $p |- ( A. x ph -> E. y ph ) $=
     ( wex 19.8a sps ) AACDBACEF $.
 
@@ -13934,7 +14195,8 @@ $)
       ( wal wi wn hbnt mpg ) AABDEAFZIBDEBABGCH $.
 
     $( Obsolete proof of ~ hbn as of 16-Dec-2017.  (Contributed by NM,
-       5-Aug-1993.)  (New usage is discouraged.) $)
+       5-Aug-1993.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     hbnOLD $p |- ( -. ph -> A. x -. ph ) $=
       ( wn wal sp con3i hbn1 alrimih syl ) ADZABEZDZKBELAABFGMKBABHALCGIJ $.
   $}
@@ -13958,7 +14220,8 @@ $)
     19.9h $p |- ( E. x ph <-> ph ) $=
       ( wnf wex wb nfi 19.9t ax-mp ) ABDABEAFABCGABHI $.
     $( Obsolete proof of ~ 19.9h as of 5-Jan-2018.  (Contributed by FL,
-       24-Mar-2007.)  (New usage is discouraged.) $)
+       24-Mar-2007.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     19.9hOLD $p |- ( E. x ph <-> ph ) $=
       ( wex wal wi 19.9ht mpg 19.8a impbii ) ABDZAAABEFKAFBABGCHABIJ $.
   $}
@@ -13982,7 +14245,7 @@ $)
 
     $( Obsolete proof of ~ 19.9 as of 30-Dec-2017.  (Contributed by FL,
        24-Mar-2007.)  (Revised by Mario Carneiro, 24-Sep-2016.)
-       (New usage is discouraged.) $)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     19.9OLD $p |- ( E. x ph <-> ph ) $=
       ( wnf wex wb 19.9t ax-mp ) ABDABEAFCABGH $.
   $}
@@ -14003,8 +14266,9 @@ $)
     ( wn wex wal hbe1 hbn alex albii 3imtr4i ) ACZBDZCZMBEABEZNBELBKBFGABHZNMBO
     IJ $.
 
-  $( Obsolete proof of ~ hba1 as of 15-Dec-2017 (Contributed by NM,
-     5-Aug-1993.)  (New usage is discouraged.) $)
+  $( Obsolete proof of ~ hba1 as of 15-Dec-2017.  (Contributed by NM,
+     5-Aug-1993.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
   hba1OLD $p |- ( A. x ph -> A. x A. x ph ) $=
     ( wal wn sp con2i hbn1 con1i alimi 3syl ) ABCZKDZBCZDZNBCKBCMKLBEFLBGNKBKMA
     BGHIJ $.
@@ -14036,7 +14300,8 @@ $)
       HPPCHIBCJBCKLMN $.
 
     $( Obsolete proof of ~ nfnd as of 28-Dec-2017.  (Contributed by Mario
-       Carneiro, 24-Sep-2016.)  (New usage is discouraged.) $)
+       Carneiro, 24-Sep-2016.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     nfndOLD $p |- ( ph -> F/ x -. ps ) $=
       ( wnf wn nfnf1 wal ax6o con1i wi df-nf con3 al2imi sylbi syl5 nfd syl ) A
       BCEZBFZCEDSTCBCGTBCHZFZCHZSTCHZUCBBCIJSBUAKZCHUCUDKBCLUEUBTCBUAMNOPQR $.
@@ -14098,7 +14363,7 @@ $)
 
     $( Obsolete proof of ~ stdpc5 as of 1-Jan-2018.  (Contributed by NM,
        22-Sep-1993.)  (Revised by Mario Carneiro, 12-Oct-2016.)
-       (New usage is discouraged.) $)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     stdpc5OLD $p |- ( A. x ( ph -> ps ) -> ( ph -> A. x ps ) ) $=
       ( wal wi nfri alim syl5 ) AACEABFCEBCEACDGABCHI $.
   $}
@@ -14146,7 +14411,7 @@ $)
 
     $( Obsolete proof of ~ exlimih as of 1-Jan-2018.  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by Andrew Salmon, 13-May-2011.)
-       (New usage is discouraged.) $)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     exlimihOLD $p |- ( E. x ph -> ps ) $=
       ( wi wex 19.23h mpgbi ) ABFACGBFCABCDHEI $.
   $}
@@ -14183,7 +14448,8 @@ $)
       JKTUDUGBCDLMNOUBDPQR $.
 
     $( Obsolete proof of ~ nfimd as of 29-Dec-2017.  (Contributed by Mario
-       Carneiro, 24-Sep-2016.)  (New usage is discouraged.) $)
+       Carneiro, 24-Sep-2016.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     nfimdOLD $p |- ( ph -> F/ x ( ps -> ch ) ) $=
       ( wnf wi wal wa nfa1 wn hbnt pm2.21 alimi imim2i adantr ax-1 adantl df-nf
       jad ex syl alimd imp anbi12i 3imtr4i syl2anc ) ABDGZCDGZBCHZDGZEFBBDIHZDI
@@ -14210,7 +14476,8 @@ $)
       ( wi nfri nfrd hbim1 nfi ) ABFCABCACDGABCEHIJ $.
 
     $( A closed form of ~ nfim .  (Contributed by NM, 5-Aug-1993.)  (Revised by
-       Mario Carneiro, 24-Sep-2016.)  (New usage is discouraged.) $)
+       Mario Carneiro, 24-Sep-2016.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     nfim1OLD $p |- F/ x ( ph -> ps ) $=
       ( wi wal nfrd a2i 19.21 sylibr nfi ) ABFZCMABCGZFMCGABNABCEHIABCDJKL $.
   $}
@@ -14226,7 +14493,7 @@ $)
 
     $( If ` x ` is not free in ` ph ` and ` ps ` , it is not free in
        ` ( ph -> ps ) ` .  (Contributed by Mario Carneiro, 11-Aug-2016.)
-       (New usage is discouraged.) $)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     nfimOLD $p |- F/ x ( ph -> ps ) $=
       ( wi wnf wtru a1i nfimd trud ) ABFCGHABCACGHDIBCGHEIJK $.
   $}
@@ -14242,7 +14509,8 @@ $)
       ( wi nfdh nfimd nfrd ) ABCHDABCDABDEFIACDEGIJK $.
 
     $( Obsolete proof of ~ hbimd as of 16-Dec-2017.  (Contributed by NM,
-       1-Jan-2002.)  (New usage is discouraged.) $)
+       1-Jan-2002.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     hbimdOLD $p |- ( ph -> ( ( ps -> ch ) -> A. x ( ps -> ch ) ) ) $=
       ( wi wal wn alrimih sp hbn1 nsyl4 con1i con3 al2imi syl2im alimi syl6 jad
       pm2.21 ax-1 ) ABCBCHZDIZABJZUFDIZUEABBDIZHZDIUFUHJZDIZUGAUIDEFKUKBUHBUKBD
@@ -14260,13 +14528,14 @@ $)
 
     $( Obsolete proof of ~ hbim as of 1-Jan-2018.  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by O'Cat, 3-Mar-2008.)
-       (New usage is discouraged.) $)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     hbimOLD $p |- ( ( ph -> ps ) -> A. x ( ph -> ps ) ) $=
       ( wi wal wn hbn pm2.21 alrimih ax-1 ja ) ABABFZCGAHNCACDIABJKBNCEBALKM $.
   $}
 
   $( Obsolete proof of ~ 19.23t as of 1-Jan-2018.  (Contributed by NM,
-     7-Nov-2005.)  (New usage is discouraged.) $)
+     7-Nov-2005.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
   19.23tOLD $p |- ( F/ x ps -> ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) ) $=
     ( wnf wi wal wex exim 19.9t imbi2d syl5ib nfnf1 nfe1 a1i nfimd 19.8a imim1d
     id alrimdd impbid ) BCDZABEZCFZACGZBEZUCUDBCGZEUAUEABCHUAUFBUDBCIJKUAUEUBCB
@@ -14276,7 +14545,7 @@ $)
     19.23hOLD.1 $e |- ( ps -> A. x ps ) $.
     $( Obsolete proof of ~ 19.23h as of 1-Jan-2018.  (Contributed by NM,
        5-Aug-1993.)  (Revised by Mario Carneiro, 24-Sep-2016.)
-       (New usage is discouraged.) $)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     19.23hOLD $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
       ( wi wal wex exim 19.9h syl6ib hbe1 hbim 19.8a imim1i alrimih impbii ) AB
       EZCFZACGZBEZRSBCGBABCHBCDIJTQCSBCACKDLASBACMNOP $.
@@ -14287,7 +14556,8 @@ $)
     spimehOLD.1 $e |- ( ph -> A. x ph ) $.
     spimehOLD.2 $e |- ( x = z -> ( ph -> ps ) ) $.
     $( Obsolete proof of ~ spimeh as of 10-Dec-2017.  (Contributed by NM,
-       7-Aug-1994.)  (New usage is discouraged.) $)
+       7-Aug-1994.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     spimehOLD $p |- ( ph -> E. x ps ) $=
       ( wn wal wex wi weq ax9v id hbth hba1 a1i hbn hbimd ax-mp sp nsyli sylibr
       con3i alrimih mt3 con2i df-ex ) ABGZCHZGBCIUIAUIAGZJZCDKZGZCHCDLUKGUMCUKC
@@ -14326,7 +14596,8 @@ $)
       ( wnan wa wn df-nan nfan nfn nfxfr ) ABFABGZHCABIMCABCDEJKL $.
 
     $( Obsolete proof of ~ nfan as of 2-Jan-2018.  (Contributed by Mario
-       Carneiro, 11-Aug-2016.)  (New usage is discouraged.) $)
+       Carneiro, 11-Aug-2016.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     nfanOLD $p |- F/ x ( ph /\ ps ) $=
       ( wa wn wi df-an nfn nfim nfxfr ) ABFABGZHZGCABINCAMCDBCEJKJL $.
 
@@ -14347,7 +14618,8 @@ $)
     hban $p |- ( ( ph /\ ps ) -> A. x ( ph /\ ps ) ) $=
       ( wa nfi nfan nfri ) ABFCABCACDGBCEGHI $.
     $( Obsolete proof of ~ hban as of 2-Jan-2018.  (Contributed by NM,
-       5-Aug-1993.)  (New usage is discouraged.) $)
+       5-Aug-1993.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     hbanOLD $p |- ( ( ph /\ ps ) -> A. x ( ph /\ ps ) ) $=
       ( wa wn wi df-an hbn hbim hbxfrbi ) ABFABGZHZGCABINCAMCDBCEJKJL $.
     hb.3 $e |- ( ch -> A. x ch ) $.
@@ -14358,7 +14630,8 @@ $)
       ( w3a nfi nf3an nfri ) ABCHDABCDADEIBDFICDGIJK $.
 
     $( Obsolete proof of ~ hb3an as of 2-Jan-2018.  (Contributed by NM,
-       14-Sep-2003.)  (New usage is discouraged.) $)
+       14-Sep-2003.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     hb3anOLD $p |- ( ( ph /\ ps /\ ch ) -> A. x ( ph /\ ps /\ ch ) ) $=
       ( w3a wa df-3an hban hbxfrbi ) ABCHABIZCIDABCJMCDABDEFKGKL $.
   $}
@@ -14374,7 +14647,8 @@ $)
       LM $.
 
     $( Obsolete proof of ~ nfbid as of 29-Dec-2017.  (Contributed by Mario
-       Carneiro, 24-Sep-2016.)  (New usage is discouraged.) $)
+       Carneiro, 24-Sep-2016.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     nfbidOLD $p |- ( ph -> F/ x ( ps <-> ch ) ) $=
       ( wb wi wn dfbi1 nfimd nfnd nfxfrd ) BCGBCHZCBHZIZHZIADBCJAQDANPDABCDEFKA
       ODACBDFEKLKLM $.
@@ -14391,7 +14665,7 @@ $)
 
     $( If ` x ` is not free in ` ph ` and ` ps ` , it is not free in
        ` ( ph <-> ps ) ` .  (Contributed by Mario Carneiro, 11-Aug-2016.)
-       (New usage is discouraged.) $)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     nfbiOLD $p |- F/ x ( ph <-> ps ) $=
       ( wb wi wa dfbi2 nfim nfan nfxfr ) ABFABGZBAGZHCABIMNCABCDEJBACEDJKL $.
 
@@ -14425,7 +14699,8 @@ $)
     equsalhwOLD.1 $e |- ( ps -> A. x ps ) $.
     equsalhwOLD.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Obsolete proof of ~ equsalhw as of 28-Dec-2017.  (Contributed by NM,
-       29-Nov-2015.)  (New usage is discouraged.) $)
+       29-Nov-2015.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     equsalhwOLD $p |- ( A. x ( x = y -> ph ) <-> ps ) $=
       ( weq wi wal sp impbii syl6bbr pm5.74i albii a1d alrimih ax9v con3 al2imi
       wn mtoi ax6o syl bitr4i ) CDGZAHZCIUEBCIZHZCIZBUFUHCUEAUGUEABUGFUGBBCJEKL
@@ -14435,7 +14710,8 @@ $)
   ${
     19.21hOLD.1 $e |- ( ph -> A. x ph ) $.
     $( Obsolete proof of ~ 19.21h as of 1-Jan-2018.  (Contributed by NM,
-       1-Aug-2017.)  (New usage is discouraged.) $)
+       1-Aug-2017.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     19.21hOLD $p |- ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) $=
       ( wi wal alim syl5 hba1 hbim sp imim2i alrimih impbii ) ABEZCFZABCFZEZAAC
       FPQDABCGHROCAQCDBCIJQBABCKLMN $.
@@ -14463,7 +14739,8 @@ $)
       ( wex nfri hbex nfi ) ACEBABCABDFGH $.
 
     $( Obsolete proof of ~ nfex as of 30-Dec-2017.  (Contributed by Mario
-       Carneiro, 11-Aug-2016.)  (New usage is discouraged.) $)
+       Carneiro, 11-Aug-2016.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     nfexOLD $p |- F/ x E. y ph $=
       ( wex wn wal df-ex nfn nfal nfxfr ) ACEAFZCGZFBACHMBLBCABDIJIK $.
 
@@ -14474,7 +14751,8 @@ $)
       ( wnf wal wi df-nf nfal nfim nfxfr ) ACEAACFZGZCFBACHMBCALBDABCDIJIK $.
 
     $( Obsolete proof of ~ nfnf as of 30-Dec-2017.  (Contributed by Mario
-       Carneiro, 11-Aug-2016.)  (New usage is discouraged.) $)
+       Carneiro, 11-Aug-2016.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     nfnfOLD $p |- F/ x F/ y ph $=
       ( wnf wal wi df-nf wtru a1i nfal nfimd trud nfxfr ) ACEAACFZGZCFBACHPBCPB
       EIAOBABEIDJOBEIABCDKJLMKN $.
@@ -14488,7 +14766,8 @@ $)
     ( wal wex nfa1 nfex sp eximi alrimi ) ACDZBEABECKCBACFGKABACHIJ $.
 
   $( Obsolete proof of ~ 19.12 as of 3-Jan-2018.  (Contributed by NM,
-     5-Aug-1993.)  (New usage is discouraged.) $)
+     5-Aug-1993.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
   19.12OLD $p |- ( E. x A. y ph -> A. y E. x ph ) $=
     ( wal wex hba1 hbex sp eximi alrimih ) ACDZBEABECKCBACFGKABACHIJ $.
 
@@ -14521,7 +14800,8 @@ $)
       ADHZCHBDHZAUBCEIAUCDCUABDUABCJBABCCDKZCJABLZCJCDMUDUECGNOPBCFQRIST $.
 
     $( Obsolete proof of ~ cbv3hv as of 29-Dec-2017.  (Contributed by NM,
-       25-Jul-2015.)  (New usage is discouraged.) $)
+       25-Jul-2015.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     cbv3hvOLD $p |- ( A. x ph -> A. y ps ) $=
       ( wal alimi wi weq wn ax9v hba1 hbim hbn sp syl5 con3i alrimih mt3 a7s
       syl ) ACHZADHZCHBDHZAUECEIAUFDCUDBDUDBJZCDKZLZCHCDMUGLUICUGCUDBCACNFOPUHU
@@ -14539,7 +14819,8 @@ $)
       DEFISTCRCDBCJKSBCDRDLSBCRDMNOPQ $.
 
     $( Obsolete proof of ~ nfald as of 6-Jan-2018.  (Contributed by Mario
-       Carneiro, 24-Sep-2016.)  (New usage is discouraged.) $)
+       Carneiro, 24-Sep-2016.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     nfaldOLD $p |- ( ph -> F/ x A. y ps ) $=
       ( wnf wal alrimi nfnf1 nfal nfr al2imi ax-7 syl6 nfd syl ) ABCGZDHZBDHZCG
       ARDEFISTCRCDBCJKSTBCHZDHTCHRBUADBCLMBDCNOPQ $.
@@ -14562,20 +14843,21 @@ $)
 
   $( Obsolete proof of ~ 19.9t as of 30-Dec-2017.  (Contributed by NM,
      5-Aug-1993.)  (Revised by Mario Carneiro, 24-Sep-2016.)
-     (New usage is discouraged.) $)
+     (Proof modification is discouraged.)(New usage is discouraged.) $)
   19.9tOLD $p |- ( F/ x ph -> ( E. x ph <-> ph ) ) $=
     ( wnf wex wn wal df-ex id nfnd nfrd con1d syl5bi 19.8a impbid1 ) ABCZABDZAP
     AEZBFZEOAABGOAROQBOABOHIJKLABMN $.
 
   $( Obsolete proof of ~ excomim as of 8-Jan-2018.  (Contributed by NM,
      5-Aug-1993.)  (Revised by Mario Carneiro, 24-Sep-2016.)
-     (New usage is discouraged.) $)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
   excomimOLD $p |- ( E. x E. y ph -> E. y E. x ph ) $=
     ( wex 19.8a 2eximi nfe1 nfex 19.9 sylib ) ACDBDABDZCDZBDLAKBCABEFLBKBCABGHI
     J $.
 
   $( Obsolete proof of ~ excom as of 8-Jan-2018.  (Contributed by NM,
-     5-Aug-1993.)  (New usage is discouraged.) $)
+     5-Aug-1993.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
   excomOLD $p |- ( E. x E. y ph <-> E. y E. x ph ) $=
     ( wex excomim impbii ) ACDBDABDCDABCEACBEF $.
 
@@ -14602,7 +14884,7 @@ $)
 
   $( Obsolete proof of ~ 19.21t as of 30-Dec-2017.  (Contributed by NM,
      27-May-1997.)  (Revised by Mario Carneiro, 24-Sep-2016.)
-     (New usage is discouraged.) $)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
   19.21tOLD $p |- ( F/ x ph -> ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) ) $=
     ( wnf wi wal id nfrd alim syl9 nfa1 a1i nfimd sp imim2i alimi syl6 impbid )
     ACDZABEZCFZABCFZEZSAACFUAUBSACSGZHABCIJSUCUCCFUASUCCSAUBCUDUBCDSBCKLMHUCTCU
@@ -14677,7 +14959,8 @@ $)
   $}
 
   $( Obsolete proof of 19.38 as of 2-Jan-2018.  (Contributed by NM,
-     5-Aug-1993.)  (New usage is discouraged.) $)
+     5-Aug-1993.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
   19.38OLD $p |- ( ( E. x ph -> A. x ps ) -> A. x ( ph -> ps ) ) $=
     ( wex wal wi nfe1 nfa1 nfim 19.8a sp imim12i alrimi ) ACDZBCEZFABFCNOCACGBC
     HIANOBACJBCKLM $.
@@ -15051,10 +15334,10 @@ $)
 
   $( One of the two equality axioms of standard predicate calculus, called
      substitutivity of equality.  (The other one is ~ stdpc6 .)  Translated to
-     traditional notation, it can be
-     read:  " ` x = y -> ( ph ( x , x ) -> ph ( x , y ) ) ` , provided that
-     ` y ` is free for ` x ` in ` ph ( x , x ) ` ."  Axiom 7 of [Mendelson]
-     p. 95.  (Contributed by NM, 15-Feb-2005.) $)
+     traditional notation, it can be read:
+      " ` x = y -> ( ph ( x , x ) -> ph ( x , y ) ) ` , provided that ` y ` is
+     free for ` x ` in ` ph ( x , x ) ` ."  Axiom 7 of [Mendelson] p. 95.
+     (Contributed by NM, 15-Feb-2005.) $)
   stdpc7 $p |- ( x = y -> ( [ x / y ] ph -> ph ) ) $=
     ( wsb wi sbequ2 equcoms ) ACBDAECBACBFG $.
 
@@ -15092,9 +15375,10 @@ $)
   sb4e $p |- ( [ y / x ] ph -> A. x ( x = y -> E. y ph ) ) $=
     ( wsb weq wa wex wi wal sb1 equs5e syl ) ABCDBCEZAFBGMACGHBIABCJABCKL $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-          Axiom scheme ax-12 (Quantified Equality)
+  Axiom scheme ax-12 (Quantified Equality)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -15114,8 +15398,8 @@ $)
 
      The original version of this axiom was ~ ax-12o and was replaced with this
      shorter ~ ax-12 in December 2015.  The old axiom is proved from this one
-     as theorem ~ ax12o .  Conversely, this axiom is proved from ~ ax-12o as
-     theorem ~ ax12 .
+     as Theorem ~ ax12o .  Conversely, this axiom is proved from ~ ax-12o as
+     Theorem ~ ax12 .
 
      The primary purpose of this axiom is to provide a way to introduce the
      quantifier ` A. x ` on ` y = z ` even when ` x ` and ` y ` are substituted
@@ -15130,7 +15414,7 @@ $)
 
      This axiom can be weakened if desired by adding distinct variable
      restrictions on pairs ` x , z ` and ` y , z ` .  To show that, we add
-     these restrictions to theorem ~ ax12v and use only ~ ax12v for further
+     these restrictions to Theorem ~ ax12v and use only ~ ax12v for further
      derivations.  Thus, ~ ax12v should be the only theorem referencing this
      axiom.  Other theorems can reference either ~ ax12v or ~ ax12o .
 
@@ -15385,8 +15669,8 @@ $)
       NUDUMUKUNUDMUKAGCBANOPQRSTUAUBUC $.
   $}
 
-  $( Show that the original axiom ~ ax-9o can be derived from ~ ax9 and
-     others.  See ~ ax9from9o for the rederivation of ~ ax9 from ~ ax-9o .
+  $( Show that the original axiom ~ ax-9o can be derived from ~ ax9 and others.
+     See ~ ax9from9o for the rederivation of ~ ax9 from ~ ax-9o .
 
      Normally, ~ ax9o should be used rather than ~ ax-9o , except by theorems
      specifically studying the latter's properties.  (Contributed by NM,
@@ -16025,6 +16309,7 @@ $)
        This theorem provides part of the justification for the consistency of
        that definition, which "overloads" the setvar variables in ~ wel with
        the class variables in ~ wcel .  (Contributed by NM, 28-Jan-2004.)
+       (Proof modification is discouraged.)  (New usage is discouraged.)
        (Revised by Mario Carneiro, 21-Dec-2016.) $)
     cleljustALT $p |- ( x e. y <-> E. z ( z = x /\ z e. y ) ) $=
       ( weq wel wa wex nfv elequ1 equsex bicomi ) CADCBEZFCGABEZLMCAMCHCABIJK
@@ -16124,7 +16409,7 @@ $)
   stdpc4 $p |- ( A. x ph -> [ y / x ] ph ) $=
     ( wal weq wi wsb ax-1 alimi sb2 syl ) ABDBCEZAFZBDABCGAMBALHIABCJK $.
 
-  $( Substitution has no effect on a non-free variable.  (Contributed by NM,
+  $( Substitution has no effect on a nonfree variable.  (Contributed by NM,
      30-May-2009.)  (Revised by Mario Carneiro, 12-Oct-2016.) $)
   sbft $p |- ( F/ x ph -> ( [ y / x ] ph <-> ph ) ) $=
     ( wnf wsb weq wa wex sb1 wal simpr ax-gen 19.23t mpbii syl5 nfr stdpc4 syl6
@@ -16264,16 +16549,16 @@ $)
 
   ${
     hbsb3.1 $e |- ( ph -> A. y ph ) $.
-    $( If ` y ` is not free in ` ph ` , ` x ` is not free in
-       ` [ y / x ] ph ` .  (Contributed by NM, 5-Aug-1993.) $)
+    $( If ` y ` is not free in ` ph ` , ` x ` is not free in ` [ y / x ] ph ` .
+       (Contributed by NM, 5-Aug-1993.) $)
     hbsb3 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
       ( wsb wal sbimi hbsb2a syl ) ABCEZACFZBCEJBFAKBCDGABCHI $.
   $}
 
   ${
     nfs1.1 $e |- F/ y ph $.
-    $( If ` y ` is not free in ` ph ` , ` x ` is not free in
-       ` [ y / x ] ph ` .  (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    $( If ` y ` is not free in ` ph ` , ` x ` is not free in ` [ y / x ] ph ` .
+       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
     nfs1 $p |- F/ x [ y / x ] ph $=
       ( wsb nfri hbsb3 nfi ) ABCEBABCACDFGH $.
   $}
@@ -16319,7 +16604,7 @@ $)
 
   ${
     $d x y $.
-    $( A generalization of axiom ~ ax-16 .  Alternate proof of ~ a16g that uses
+    $( A generalization of Axiom ~ ax-16 .  Alternate proof of ~ a16g that uses
        ~ df-sb .  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
        Salmon, 25-May-2011.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
@@ -16327,7 +16612,7 @@ $)
       ( weq wal aev ax16ALT2 biidd dral1 biimprd sylsyld ) BCEBFDBEDFZAABFZADFZ
       BCDDBGABCHMONAADBMAIJKL $.
 
-    $( A generalization of axiom ~ ax-16 .  (Contributed by NM, 5-Aug-1993.) $)
+    $( A generalization of Axiom ~ ax-16 .  (Contributed by NM, 5-Aug-1993.) $)
     a16gb $p |- ( A. x x = y -> ( ph <-> A. z ph ) ) $=
       ( weq wal a16g sp impbid1 ) BCEBFAADFABCDGADHI $.
 
@@ -16561,8 +16846,8 @@ $)
     dvelimdf.4 $e |- ( ph -> F/ z ch ) $.
     dvelimdf.5 $e |- ( ph -> ( z = y -> ( ps <-> ch ) ) ) $.
     $( Deduction form of ~ dvelimf .  This version may be useful if we want to
-       avoid ~ ax-17 and use ~ ax-16 instead.  (Contributed by NM,
-       7-Apr-2004.)  (Revised by Mario Carneiro, 6-Oct-2016.) $)
+       avoid ~ ax-17 and use ~ ax-16 instead.  (Contributed by NM, 7-Apr-2004.)
+       (Revised by Mario Carneiro, 6-Oct-2016.) $)
     dvelimdf $p |- ( ph -> ( -. A. x x = y -> F/ x ch ) ) $=
       ( weq wal wn wnf wa wsb wi alrimi nfsb4t syl imp nfnae nfan adantr nfbidf
       wb sbied mpbid ex ) ADELDMNZCDOZAUKPZBFEQZDOZULAUKUOABDOZFMUKUORAUPFHISBF
@@ -16677,13 +16962,13 @@ $)
   ${
     $d x y $.  $d x z $.  $d y z $.  $d ph z $.
     $( This is a version of ~ ax-11o when the variables are distinct.  Axiom
-       (C8) of [Monk2] p. 105.  See theorem ~ ax11v2 for the rederivation of
+       (C8) of [Monk2] p. 105.  See Theorem ~ ax11v2 for the rederivation of
        ~ ax-11o from this theorem.  (Contributed by NM, 5-Aug-1993.) $)
     ax11v $p |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) $=
       ( weq wal wi ax-1 ax16 syl5 a1d ax11o pm2.61i ) BCDZBEZMAMAFZBEZFZFNQMAON
       PAMGOBCHIJABCKL $.
 
-    $( Alternate proof of ~ ax11v that avoids theorem ~ ax16 and is proved
+    $( Alternate proof of ~ ax11v that avoids Theorem ~ ax16 and is proved
        directly from ~ ax-11 rather than via ~ ax11o .  (Contributed by Jim
        Kingdon, 15-Dec-2017.)  (New usage is discouraged.)
        (Proof modification is discouraged.) $)
@@ -16715,50 +17000,53 @@ $)
   $}
 
   ${
-    $d y z $.  $d x y $.
+    $d x z $.  $d x y $.
     $( Lemma for ~ equsb3 .  (Contributed by Raph Levien and FL, 4-Dec-2005.)
        (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
-    equsb3lem $p |- ( [ x / y ] y = z <-> x = z ) $=
-      ( weq nfv equequ1 sbie ) BCDACDZBAHBEBACFG $.
+    equsb3lem $p |- ( [ y / x ] x = z <-> y = z ) $=
+      ( weq nfv equequ1 sbie ) ACDBCDZABHAEABCFG $.
   $}
 
   ${
-    $d w y z $.  $d w x $.
+    $d w x z $.  $d w y $.
     $( Substitution applied to an atomic wff.  (Contributed by Raph Levien and
        FL, 4-Dec-2005.) $)
-    equsb3 $p |- ( [ x / y ] y = z <-> x = z ) $=
-      ( vw weq wsb equsb3lem sbbii nfv sbco2 3bitr3i ) BCEZBDFZDAFDCEZDAFLBAFAC
-      EMNDADBCGHLBADLDIJADCGK $.
+    equsb3 $p |- ( [ y / x ] x = z <-> y = z ) $=
+      ( vw weq wsb equsb3lem sbbii nfv sbco2 3bitr3i ) ACEZADFZDBFDCEZDBFLABFBC
+      EMNDBADCGHLABDLDIJDBCGK $.
   $}
 
   ${
-    $d w y z $.  $d w x $.
-    $( Substitution applied to an atomic membership wff.  (Contributed by NM,
-       7-Nov-2006.)  (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
-    elsb3 $p |- ( [ x / y ] y e. z <-> x e. z ) $=
-      ( vw wel wsb nfv sbco2 elequ1 sbie sbbii 3bitr3i ) DCEZDBFZBAFMDAFBCEZBAF
-      ACEZMDABMBGHNOBAMODBODGDBCIJKMPDAPDGDACIJL $.
-  $}
-
-  ${
-    $d w y z $.  $d w x $.
-    $( Substitution applied to an atomic membership wff.  (Contributed by
-       Rodolfo Medina, 3-Apr-2010.)  (Proof shortened by Andrew Salmon,
+    $d w x z $.  $d w y $.
+    $( Substitution for the first argument of the non-logical predicate in an
+       atomic formula.  See ~ elsb2 for substitution for the second argument.
+       (Contributed by NM, 7-Nov-2006.)  (Proof shortened by Andrew Salmon,
        14-Jun-2011.) $)
-    elsb4 $p |- ( [ x / y ] z e. y <-> z e. x ) $=
-      ( vw wel wsb nfv sbco2 elequ2 sbie sbbii 3bitr3i ) CDEZDBFZBAFMDAFCBEZBAF
-      CAEZMDABMBGHNOBAMODBODGDBCIJKMPDAPDGDACIJL $.
+    elsb1 $p |- ( [ y / x ] x e. z <-> y e. z ) $=
+      ( vw wel wsb nfv sbco2 elequ1 sbie sbbii 3bitr3i ) DCEZDAFZABFMDBFACEZABF
+      BCEZMDBAMAGHNOABMODAODGDACIJKMPDBPDGDBCIJL $.
+  $}
+
+  ${
+    $d w x z $.  $d w y $.
+    $( Substitution for the second argument of the non-logical predicate in an
+       atomic formula.  See ~ elsb1 for substitution for the first argument.
+       (Contributed by Rodolfo Medina, 3-Apr-2010.)  (Proof shortened by Andrew
+       Salmon, 14-Jun-2011.) $)
+    elsb2 $p |- ( [ y / x ] z e. x <-> z e. y ) $=
+      ( vw wel wsb nfv sbco2 elequ2 sbie sbbii 3bitr3i ) CDEZDAFZABFMDBFCAEZABF
+      CBEZMDBAMAGHNOABMODAODGDACIJKMPDBPDGDBCIJL $.
   $}
 
   ${
     $d x y $.
-    $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
-       distinct.  (Contributed by NM, 5-Aug-1993.) $)
+    $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are distinct.
+       (Contributed by NM, 5-Aug-1993.) $)
     hbs1 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
       ( weq wal wsb wi ax16 hbsb2 pm2.61i ) BCDBEABCFZKBEGKBCHABCIJ $.
 
-    $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
-       distinct.  (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are distinct.
+       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
     nfs1v $p |- F/ x [ y / x ] ph $=
       ( wsb hbs1 nfi ) ABCDBABCEF $.
   $}
@@ -16913,12 +17201,11 @@ $)
     $d x z $.  $d y z $.
     sb7f.1 $e |- F/ z ph $.
     $( This version of ~ dfsb7 does not require that ` ph ` and ` z ` be
-       distinct.  This permits it to be used as a definition for substitution
-       in a formalization that omits the logically redundant axiom ~ ax-17 i.e.
-       that doesn't have the concept of a variable not occurring in a wff.
-       ( ~ df-sb is also suitable, but its mixing of free and bound variables
-       is distasteful to some logicians.)  (Contributed by NM, 26-Jul-2006.)
-       (Revised by Mario Carneiro, 6-Oct-2016.) $)
+       disjoint.  This permits it to be used as a definition for substitution
+       in a formalization that omits the logically redundant axiom ~ ax-17 ,
+       i.e., that does not have the concept of a variable not occurring in a
+       formula.  (Contributed by NM, 26-Jul-2006.)  (Revised by Mario Carneiro,
+       6-Oct-2016.) $)
     sb7f $p |- ( [ y / x ] ph <->
                E. z ( z = y /\ E. x ( x = z /\ ph ) ) ) $=
       ( wsb weq wa wex sb5 sbbii sbco2 3bitr3i ) ABDFZDCFBDGAHBIZDCFABCFDCGOHDI
@@ -16929,12 +17216,11 @@ $)
     $d x z $.  $d y z $.
     sb7h.1 $e |- ( ph -> A. z ph ) $.
     $( This version of ~ dfsb7 does not require that ` ph ` and ` z ` be
-       distinct.  This permits it to be used as a definition for substitution
-       in a formalization that omits the logically redundant axiom ~ ax-17 i.e.
-       that doesn't have the concept of a variable not occurring in a wff.
-       ( ~ df-sb is also suitable, but its mixing of free and bound variables
-       is distasteful to some logicians.)  (Contributed by NM, 26-Jul-2006.)
-       (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+       disjoint.  This permits it to be used as a definition for substitution
+       in a formalization that omits the logically redundant axiom ~ ax-17 ,
+       i.e., that does not have the concept of a variable not occurring in a
+       formula.  (Contributed by NM, 26-Jul-2006.)  (Proof shortened by Andrew
+       Salmon, 25-May-2011.) $)
     sb7h $p |- ( [ y / x ] ph <->
                E. z ( z = y /\ E. x ( x = z /\ ph ) ) ) $=
       ( nfi sb7f ) ABCDADEFG $.
@@ -17035,7 +17321,8 @@ $)
       PABCIPNAOBJKLM $.
 
     $( An equivalent expression for existence.  Obsolete as of 19-Jun-2017.
-       (Contributed by NM, 2-Feb-2005.)  (New usage is discouraged.) $)
+       (Contributed by NM, 2-Feb-2005.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     exsbOLD $p |- ( E. x ph <-> E. y A. x ( x = y -> ph ) ) $=
       ( wex wsb cv wceq wi wal nfv sb8e sb6 exbii bitri ) ABDABCEZCDBFCFGAHBIZC
       DABCACJKOPCABCLMN $.
@@ -17119,11 +17406,12 @@ $(
   The following newer axioms may NOT be used in this section until we
   have proved them from the older axioms:  ~ ax-5 , ~ ax-6 , ~ ax-9 ,
   ~ ax-11 , and ~ ax-12 .  However, once we have rederived an axiom
-  (e.g. theorem ~ ax5 for axiom ~ ax-5 ), we may make use of theorems
+  (e.g. Theorem ~ ax5 for Axiom ~ ax-5 ), we may make use of theorems
   outside of this section that make use of the rederived axiom (e.g. we
-  may use theorem ~ alimi , which uses ~ ax-5 , after proving ~ ax5 ).
+  may use Theorem ~ alimi , which uses ~ ax-5 , after proving ~ ax5 ).
 
 $)
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -17162,7 +17450,7 @@ $)
      of ~ ax-4 , ~ ax-5 , ~ ax-6 , and ~ ax-7 .
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ sp .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ sp .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-4 $a |- ( A. x ph -> ph ) $.
 
@@ -17176,7 +17464,7 @@ $)
      of [Mendelson] p. 69.
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax5o .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax5o .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-5o $a |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) $.
 
@@ -17187,7 +17475,7 @@ $)
      and ~ ax-7 .
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax6o .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax6o .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-6o $a |- ( -. A. x -. A. x ph -> ph ) $.
 
@@ -17195,7 +17483,7 @@ $)
      preprint).
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax9o .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax9o .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-9o $a |- ( A. x ( x = y -> A. x ph ) -> ph ) $.
 
@@ -17205,7 +17493,7 @@ $)
      the preprint).
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax10o .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax10o .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-10o $a |- ( A. x x = y -> ( A. x ph -> A. y ph ) ) $.
 
@@ -17215,13 +17503,13 @@ $)
 
      The original version of this axiom was ~ ax-10o ("o" for "old") and was
      replaced with this shorter ~ ax-10 in May 2008.  The old axiom is proved
-     from this one as theorem ~ ax10o .  Conversely, this axiom is proved from
-     ~ ax-10o as theorem ~ ax10from10o .
+     from this one as Theorem ~ ax10o .  Conversely, this axiom is proved from
+     ~ ax-10o as Theorem ~ ax10from10o .
 
-     This axiom was proved redundant in July 2015.  See theorem ~ ax10 .
+     This axiom was proved redundant in July 2015.  See Theorem ~ ax10 .
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax10 .  (Contributed by NM, 16-May-2008.)
+     as Theorem ~ ax10 .  (Contributed by NM, 16-May-2008.)
      (New usage is discouraged.) $)
   ax-10 $a |- ( A. x x = y -> A. y y = x ) $.
 
@@ -17241,15 +17529,15 @@ $)
      wff variables, the resulting statement _can_ be proved without invoking
      this axiom.  This means that even though this axiom is _metalogically_
      independent from the others, it is not _logically_ independent.
-     Specifically, we can prove any wff-variable-free instance of axiom
-     ~ ax-11o (from which the ~ ax-11 instance follows by theorem ~ ax11 .)
+     Specifically, we can prove any wff-variable-free instance of Axiom
+     ~ ax-11o (from which the ~ ax-11 instance follows by Theorem ~ ax11 .)
      The proof is by induction on formula length, using ~ ax11eq and ~ ax11el
      for the basis steps and ~ ax11indn , ~ ax11indi , and ~ ax11inda for the
      induction steps.  (This paragraph is true provided we use ~ ax-10o in
      place of ~ ax-10 .)
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax11o .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax11o .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-11o $a |- ( -. A. x x = y ->
              ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $.
@@ -17264,7 +17552,7 @@ $)
      cases.
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax12o .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax12o .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-12o $a |- ( -. A. z z = x -> ( -. A. z z = y ->
               ( x = y -> A. z x = y ) ) ) $.
@@ -17272,7 +17560,7 @@ $)
   $( Axiom of Quantifier Introduction.  One of the equality and substitution
      axioms for a non-logical predicate in our predicate calculus with
      equality.  Axiom scheme C14' in [Megill] p. 448 (p. 16 of the preprint).
-     It is redundant if we include ~ ax-17 ; see theorem ~ ax15 .  Alternately,
+     It is redundant if we include ~ ax-17 ; see Theorem ~ ax15 .  Alternately,
      ~ ax-17 becomes unnecessary in principle with this axiom, but we lose the
      more powerful metalogic afforded by ~ ax-17 .  We retain ~ ax-15 here to
      provide completeness for systems with the simpler metalogic that results
@@ -17280,7 +17568,7 @@ $)
      theoretical purposes.
 
      This axiom is obsolete and should no longer be used.  It is proved above
-     as theorem ~ ax15 .  (Contributed by NM, 5-Aug-1993.)
+     as Theorem ~ ax15 .  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-15 $a |- ( -. A. z z = x -> ( -. A. z z = y ->
               ( x e. y -> A. z x e. y ) ) ) $.
@@ -17296,7 +17584,7 @@ $)
        false in set theory (see dtru in set.mm), but nonetheless it is
        technically necessary as you can see from its uses.
 
-       This axiom is redundant if we include ~ ax-17 ; see theorem ~ ax16 .
+       This axiom is redundant if we include ~ ax-17 ; see Theorem ~ ax16 .
        Alternately, ~ ax-17 becomes logically redundant in the presence of this
        axiom, but without ~ ax-17 we lose the more powerful metalogic that
        results from being able to express the concept of a setvar variable not
@@ -17306,10 +17594,11 @@ $)
        which might be easier to study for some theoretical purposes.
 
        This axiom is obsolete and should no longer be used.  It is proved above
-       as theorem ~ ax16 .  (Contributed by NM, 5-Aug-1993.)
+       as Theorem ~ ax16 .  (Contributed by NM, 5-Aug-1993.)
        (New usage is discouraged.) $)
     ax-16 $a |- ( A. x x = y -> ( ph -> A. x ph ) ) $.
   $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -17329,7 +17618,7 @@ $)
   ax4 $p |- ( A. x ph -> ph ) $=
     ( sp ) ABC $.
 
-  $( Rederivation of axiom ~ ax-5 from ~ ax-5o and other older axioms.  See
+  $( Rederivation of Axiom ~ ax-5 from ~ ax-5o and other older axioms.  See
      ~ ax5o for the derivation of ~ ax-5o from ~ ax-5 .  (Contributed by NM,
      23-May-2008.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
@@ -17337,7 +17626,7 @@ $)
     ( wi wal ax-5o ax-4 syl5 mpg syl ) ABDZCEZACEZBDZCEZMBCEDLNDLODCKNCFMALBACG
     KCGHIABCFJ $.
 
-  $( Rederivation of axiom ~ ax-6 from ~ ax-6o and other older axioms.  See
+  $( Rederivation of Axiom ~ ax-6 from ~ ax-6o and other older axioms.  See
      ~ ax6o for the derivation of ~ ax-6o from ~ ax-6 .  (Contributed by NM,
      23-May-2008.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
@@ -17345,7 +17634,7 @@ $)
     ( wal wn wi ax-5o ax-4 id mpg nsyl ax-6o nsyl4 ) ABCZBCZDZBCZMDZBCZMPQEPREB
     OQBFPNMOBGMMEMNEBAMBFMHIJIMBKL $.
 
-  $( Rederivation of axiom ~ ax-9 from ~ ax-9o and other older axioms.  See
+  $( Rederivation of Axiom ~ ax-9 from ~ ax-9o and other older axioms.  See
      ~ ax9o for the derivation of ~ ax-9o from ~ ax-9 .  Lemma L18 in [Megill]
      p. 446 (p. 14 of the preprint).  (Contributed by NM, 5-Aug-1993.)
      (Proof modification is discouraged.)  (New usage is discouraged.) $)
@@ -17406,8 +17695,8 @@ $)
       $.
   $}
 
-  $( Rederivation of axiom ~ ax-11 from ~ ax-11o , ~ ax-10o , and other older
-     axioms.  The proof does not require ~ ax-16 or ~ ax-17 .  See theorem
+  $( Rederivation of Axiom ~ ax-11 from ~ ax-11o , ~ ax-10o , and other older
+     axioms.  The proof does not require ~ ax-16 or ~ ax-17 .  See Theorem
      ~ ax11o for the derivation of ~ ax-11o from ~ ax-11 .
 
      An open problem is whether we can prove this using ~ ax-10 instead of
@@ -17437,7 +17726,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-               Legacy theorems using obsolete axioms
+  Legacy theorems using obsolete axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   These theorems were mostly intended to study properties of the older axiom
@@ -17511,10 +17800,10 @@ $)
      ` x = x ` , even though ` x ` is technically free according to the
      traditional definition of free variable.  (The proof uses only ~ ax-5 ,
      ~ ax-8 , ~ ax-12o , and ~ ax-gen .  This shows that this can be proved
-     without ~ ax9 , even though the theorem ~ equid cannot be.  A shorter
-     proof using ~ ax9 is obtainable from ~ equid and ~ hbth .)  Remark added
-     2-Dec-2015 NM:  This proof does implicitly use ~ ax9v , which is used for
-     the derivation of ~ ax12o , unless we consider ~ ax-12o the starting axiom
+     without ~ ax9 , even though Theorem ~ equid cannot.  A shorter proof using
+     ~ ax9 is obtainable from ~ equid and ~ hbth .)  Remark added 2-Dec-2015
+     NM:  This proof does implicitly use ~ ax9v , which is used for the
+     derivation of ~ ax12o , unless we consider ~ ax-12o the starting axiom
      rather than ~ ax-12 .  (Contributed by NM, 13-Jan-2011.)  (Revised by
      Mario Carneiro, 12-Oct-2016.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
@@ -17629,7 +17918,7 @@ $)
     ( weq wal wn wi ax-12o pm2.43i alimi ax-9o syl ax-6o pm2.61i ) AABZACZDZACZ
     MPMNEZACMOQAOQAAAFGHMAAIJMAKL $.
 
-  $( Rederivation of ~ ax-10 from original version ~ ax-10o .  See theorem
+  $( Rederivation of ~ ax-10 from original version ~ ax-10o .  See Theorem
      ~ ax10o for the derivation of ~ ax-10o from ~ ax-10 .
 
      This theorem should not be referenced in any proof.  Instead, use ~ ax-10
@@ -17727,7 +18016,7 @@ $)
 
   ${
     $d x y $.
-    $( A generalization of axiom ~ ax-16 .  Version of ~ a16g using ~ ax-10o .
+    $( A generalization of Axiom ~ ax-16 .  Version of ~ a16g using ~ ax-10o .
        (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
        25-May-2011.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
@@ -17976,11 +18265,11 @@ $)
        ~ ax-11 or ~ ax-11o .  The hypothesis is even weaker than ~ ax-11 , with
        ` z ` both distinct from ` x ` and not occurring in ` ph ` .  Thus, the
        hypothesis provides an alternate axiom that can be used in place of
-       ~ ax-11 , if we also hvae ~ ax-10o which this proof uses .  As theorem
+       ~ ax-11 , if we also hvae ~ ax-10o which this proof uses .  As Theorem
        ~ ax11 shows, the distinct variable conditions are optional.  An open
-       problem is whether we can derive this with ~ ax-10 instead of
-       ~ ax-10o .  (Contributed by NM, 2-Feb-2007.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+       problem is whether we can derive this with ~ ax-10 instead of ~ ax-10o .
+       (Contributed by NM, 2-Feb-2007.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     ax11a2-o $p |- ( -. A. x x = y ->
                  ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $=
       ( wal weq wi ax-17 syl5 ax11v2-o ) ABCDAADFBDGZLAHBFADIEJK $.
@@ -17988,7 +18277,7 @@ $)
 
   $( Show that ~ ax-10o can be derived from ~ ax-10 .  An open problem is
      whether this theorem can be derived from ~ ax-10 and the others when
-     ~ ax-11 is replaced with ~ ax-11o .  See theorem ~ ax10from10o for the
+     ~ ax-11 is replaced with ~ ax-11o .  See Theorem ~ ax10from10o for the
      rederivation of ~ ax-10 from ~ ax10o .
 
      Normally, ~ ax10o should be used rather than ~ ax-10o or ~ ax10o-o ,
@@ -17999,9 +18288,10 @@ $)
     ( weq wal wi ax-10 ax11 equcoms sps-o pm2.27 al2imi sylsyld ) BCDZBECBDZCEA
     BEZOAFZCEZACEBCGNPRFZBSCBACBHIJOQACOAKLM $.
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-               Existential uniqueness
+  Existential uniqueness
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -18180,7 +18470,7 @@ $)
       ( vz vw cv wceq wb wal wex wsb weu nfv sb8 sbbi nfsb equsb3 nfxfr df-eu
       nfbi sbequ cbval sblbis albii 3bitri exbii 3bitr4i ) ABGEGZHZIZBJZEKABCLZ
       CGUIHZIZCJZEKABMUMCMULUPEULUKBFLZFJUKBCLZCJUPUKBFUKFNOUQURFCUQABFLZUJBFLZ
-      ICAUJBFPUSUTCABFCDQUTFGUIHZCFBERVACNSUASURFNUKFCBUBUCURUOCUJUNABCCBERUDUE
+      ICAUJBFPUSUTCABFCDQUTFGUIHZCBFERVACNSUASURFNUKFCBUBUCURUOCUJUNABCBCERUDUE
       UFUGABETUMCETUH $.
 
     $( Variable substitution in uniqueness quantifier.  (Contributed by
@@ -18476,8 +18766,8 @@ $)
     ( weu wmo wi wal eumo moim syl5 ) BCDBCEABFCGACEBCHABCIJ $.
 
   $( Add existential uniqueness quantifiers to an implication.  Note the
-     reversed implication in the antecedent.  (Contributed by NM,
-     19-Oct-2005.)  (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
+     reversed implication in the antecedent.  (Contributed by NM, 19-Oct-2005.)
+     (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
   euim $p |- ( ( E. x ph /\ A. x ( ph -> ps ) ) -> ( E! x ps -> E! x ph ) ) $=
     ( wex wi wal wa weu wmo ax-1 euimmo anim12ii eu5 syl6ibr ) ACDZABECFZGBCHZO
     ACIZGACHOQOPROQJABCKLACMN $.
@@ -18746,10 +19036,10 @@ $)
     $d x y z w $.  $d z w ph $.
     $( This theorem provides us with a definition of double existential
        uniqueness ("exactly one ` x ` and exactly one ` y ` ").  Naively one
-       might think (incorrectly) that it could be defined by
-       ` E! x E! y ph ` .  See ~ 2eu1 for a condition under which the naive
-       definition holds and ~ 2exeu for a one-way implication.  See ~ 2eu5 and
-       ~ 2eu8 for alternate definitions.  (Contributed by NM, 3-Dec-2001.) $)
+       might think (incorrectly) that it could be defined by ` E! x E! y ph ` .
+       See ~ 2eu1 for a condition under which the naive definition holds and
+       ~ 2exeu for a one-way implication.  See ~ 2eu5 and ~ 2eu8 for alternate
+       definitions.  (Contributed by NM, 3-Dec-2001.) $)
     2eu4 $p |- ( ( E! x E. y ph /\ E! y E. x ph ) <->
       ( E. x E. y ph /\ E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) ) ) $=
       ( wex weu wa cv wceq wi wal nfv eu3 anbi12i anbi2i bitri 19.26 nfa1 albii
@@ -18771,7 +19061,7 @@ $)
        definitions.  This theorem shows that the erroneous definition can be
        repaired by conjoining ` A. x E* y ph ` as an additional condition.  The
        correct definition apparently has never been published.  ( ` E* ` means
-       "exists at most one.") (Contributed by NM, 26-Oct-2003.) $)
+       "there exists at most one".)  (Contributed by NM, 26-Oct-2003.) $)
     2eu5 $p |- ( ( E! x E! y ph /\ A. x E* y ph ) <->
       ( E. x E. y ph /\ E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) ) ) $=
       ( weu wmo wal wa wex weq 2eu1 pm5.32ri eumo adantl 2moex syl pm4.71i 2eu4
@@ -18853,15 +19143,17 @@ $)
       UEBJABKUFUDCFGBIAUGLBCMABCNOPQABRSTUA $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-             Other axiomatizations related to classical predicate calculus
+  Other axiomatizations related to classical predicate calculus
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Predicate calculus with all distinct variables
+  Predicate calculus with all distinct variables
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -18892,9 +19184,10 @@ $)
     ax-11d $a |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-               Aristotelian logic: Assertic syllogisms
+  Aristotelian logic: Assertic syllogisms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   Model the Aristotelian assertic syllogisms using modern notation.
@@ -19436,19 +19729,20 @@ $)
       O $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-               Intuitionistic logic
+  Intuitionistic logic
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-Intuitionistic (constructive) logic is similar to classical logic
-with the notable omission of ~ ax-3 and theorems such as ~ exmid or
-~ peirce . We mostly treat intuitionistic logic in a separate file, iset.mm,
-which is known as the Intuitionistic Logic Explorer on the web site. However,
-iset.mm has a number of additional axioms (mainly to replace definitions like
-~ df-or and ~ df-ex which are not valid in intitionistic logic) and we want
-to prove those axioms here to demonstrate that adding those axioms in iset.mm
-does not make iset.mm any less consistent than set.mm.
+  Intuitionistic (constructive) logic is similar to classical logic with the
+  notable omission of ~ ax-3 and theorems such as ~ exmid or ~ peirce .  We
+  mostly treat intuitionistic logic in a separate file, iset.mm, which is known
+  as the Intuitionistic Logic Explorer on the web site.  However, iset.mm has a
+  number of additional axioms (mainly to replace definitions like ~ df-or and
+  ~ df-ex which are not valid in intitionistic logic) and we want to prove
+  those axioms here to demonstrate that adding those axioms in iset.mm does not
+  make iset.mm any less consistent than set.mm.
 
 $)
 
@@ -19514,39 +19808,39 @@ $)
     IGZGZUNUCIZUMHZUPUOUFIUIHZHABCJUMUQUOUFUIKLMUCUMKMUCUFUINMOUGUICUCUFCUBCPUE
     CPQSRUCUFUJNR $.
 
-$( End $[ set-pred.mm $] $)
+$( End $[ nf-pred.mm $] $)
 
 
 $(
 ###############################################################################
-                NEW FOUNDATIONS (NF) SET THEORY
+  NEW FOUNDATIONS (NF) SET THEORY
 ###############################################################################
 
-Here we introduce New Foundations set theory.
-We first introduce the axiom of extensionality in ~ ax-ext .
-We later add set construction axioms from
-Hailperin, such as ~ ax-nin ,
-that are designed to implement the
-Stratification Axiom from Quine.
+  Here we introduce New Foundations set theory.  We first introduce the axiom
+  of extensionality in ~ ax-ext .  We later add set construction axioms from
+  Hailperin, such as ~ ax-nin , that are designed to implement the
+  Stratification Axiom from Quine.
 
-We then introduce ordered pairs, relationships, and functions.
-Note that the definition of an ordered pair (in ~ df-op ) is different
-than the Kuratowski ordered pair definition (in ~ df-opk )
-typically used in ZFC, because the Kuratowski definition is not type-level.
+  We then introduce ordered pairs, relationships, and functions.  Note that the
+  definition of an ordered pair (in ~ df-op ) is different than the Kuratowski
+  ordered pair definition (in ~ df-opk ) typically used in ZFC, because the
+  Kuratowski definition is not type-level.
 
-We conclude with orderings.
+  We conclude with orderings.
+
 $)
 
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-             NF Set Theory - start with the Axiom of Extensionality
+  NF Set Theory - start with the Axiom of Extensionality
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Introduce the Axiom of Extensionality
+  Introduce the Axiom of Extensionality
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -19645,7 +19939,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                   Class abstractions (a.k.a. class builders)
+  Class abstractions (a.k.a. class builders)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -19703,7 +19997,7 @@ $)
      sets ` x ` such that ` ph ` is true").  Our class variables ` A ` ,
      ` B ` , etc. range over class builders (implicitly in the case of defined
      class terms such as ~ df-nul ).  Note that a setvar variable can be
-     expressed as a class builder per theorem ~ cvjust , justifying the
+     expressed as a class builder per Theorem ~ cvjust , justifying the
      assignment of setvar variables to class variables via the use of ~ cv . $)
   cab $a class { x | ph } $.
 
@@ -19977,7 +20271,7 @@ $)
      term".
 
      For a general discussion of the theory of classes, see
-     ~ http://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
+     ~ https://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
      5-Aug-1993.) $)
   df-clab $a |- ( x e. { y | ph } <-> [ x / y ] ph ) $.
 
@@ -20032,7 +20326,7 @@ $)
        than introducing a new symbol.  This allows us to make statements that
        may not hold for the original symbol.  For example, it permits us to
        deduce ` y = z <-> A. x ( x e. y <-> x e. z ) ` , which is not a theorem
-       of logic but rather presupposes the Axiom of Extensionality (see theorem
+       of logic but rather presupposes the Axiom of Extensionality (see Theorem
        ~ axext4 ).  We therefore include this axiom as a hypothesis, so that
        the use of Extensionality is properly indicated.
 
@@ -20056,7 +20350,7 @@ $)
        extension to our logic and set theory axioms.
 
        For a general discussion of the theory of classes, see
-       ~ http://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
+       ~ https://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
        15-Sep-1993.) $)
     df-cleq $a |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $.
   $}
@@ -20083,8 +20377,8 @@ $)
        [Jech] p. 4 showing that "Every set can be considered to be a class."
        (Contributed by NM, 7-Nov-2006.) $)
     cvjust $p |- x = { y | y e. x } $=
-      ( vz cv wcel cab wceq wb dfcleq wsb df-clab elsb3 bitr2i mpgbir ) ADZBDOE
-      ZBFZGCDZOEZRQEZHCCOQITPBCJSPCBKCBALMN $.
+      ( vz cv wcel cab wceq wb dfcleq wsb df-clab elsb1 bitr2i mpgbir ) ADZBDOE
+      ZBFZGCDZOEZRQEZHCCOQITPBCJSPCBKBCALMN $.
   $}
 
   ${
@@ -20106,7 +20400,7 @@ $)
        theory axioms.
 
        For a general discussion of the theory of classes, see
-       ~ http://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
+       ~ https://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
        5-Aug-1993.) $)
     df-clel $a |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) $.
   $}
@@ -20989,30 +21283,41 @@ $)
     ( wcel wceq eleq2 biimpcd con3and ) ABDZBCEZACDZJIKBCAFGH $.
 
   ${
-    $d x y $.  $d y A $.
-    $( Lemma for ~ eqsb3 .  (Contributed by Rodolfo Medina, 28-Apr-2010.)
+    $d x y $.  $d x A $.
+    $( Lemma for ~ eqsb1 .  (Contributed by Rodolfo Medina, 28-Apr-2010.)
        (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
-    eqsb3lem $p |- ( [ x / y ] y = A <-> x = A ) $=
-      ( cv wceq nfv eqeq1 sbie ) BDZCEADZCEZBAKBFIJCGH $.
+    eqsb1lem $p |- ( [ y / x ] x = A <-> y = A ) $=
+      ( cv wceq nfv eqeq1 sbie ) ADZCEBDZCEZABKAFIJCGH $.
   $}
 
   ${
-    $d y A $.  $d w y $.  $d w A $.  $d x w $.
-    $( Substitution applied to an atomic wff (class version of ~ equsb3 ).
-       (Contributed by Rodolfo Medina, 28-Apr-2010.) $)
-    eqsb3 $p |- ( [ x / y ] y = A <-> x = A ) $=
-      ( vw cv wceq wsb eqsb3lem sbbii nfv sbco2 3bitr3i ) BECFZBDGZDAGDECFZDAGM
-      BAGAECFNODADBCHIMBADMDJKADCHL $.
+    $d w x A $.  $d w y $.
+    $( Substitution for the left-hand side in an equality.  Class version of
+       ~ equsb3 .  (Contributed by Rodolfo Medina, 28-Apr-2010.) $)
+    eqsb1 $p |- ( [ y / x ] x = A <-> y = A ) $=
+      ( vw cv wceq wsb eqsb1lem sbbii nfv sbco2 3bitr3i ) AECFZADGZDBGDECFZDBGM
+      ABGBECFNODBADCHIMABDMDJKDBCHL $.
   $}
 
   ${
-    $d y A $.  $d w y $.  $d w A $.  $d w x $.
-    $( Substitution applied to an atomic wff (class version of ~ elsb3 ).
-       (Contributed by Rodolfo Medina, 28-Apr-2010.)  (Proof shortened by
-       Andrew Salmon, 14-Jun-2011.) $)
-    clelsb3 $p |- ( [ x / y ] y e. A <-> x e. A ) $=
-      ( vw cv wcel wsb nfv sbco2 eleq1 sbie sbbii 3bitr3i ) DEZCFZDBGZBAGODAGBE
-      ZCFZBAGAEZCFZODABOBHIPRBAORDBRDHNQCJKLOTDATDHNSCJKM $.
+    $d w x A $.  $d w y $.
+    $( Substitution for the first argument of the membership predicate in an
+       atomic formula (class version of ~ elsb1 ).  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       14-Jun-2011.) $)
+    clelsb1 $p |- ( [ y / x ] x e. A <-> y e. A ) $=
+      ( vw cv wcel wsb nfv sbco2 eleq1 sbie sbbii 3bitr3i ) DEZCFZDAGZABGODBGAE
+      ZCFZABGBEZCFZODBAOAHIPRABORDARDHNQCJKLOTDBTDHNSCJKM $.
+  $}
+
+  ${
+    $d w x A $.  $d w y $.
+    $( Substitution for the second argument of the membership predicate in an
+       atomic formula (class version of ~ elsb2 ).  (Contributed by Jim
+       Kingdon, 22-Nov-2018.) $)
+    clelsb2 $p |- ( [ y / x ] A e. x <-> A e. y ) $=
+      ( vw cv wcel wsb nfv sbco2 eleq2 sbie sbbii 3bitr3i ) CDEZFZDAGZABGODBGCA
+      EZFZABGCBEZFZODBAOAHIPRABORDARDHNQCJKLOTDBTDHNSCJKM $.
   $}
 
   ${
@@ -21032,8 +21337,8 @@ $)
        (Contributed by NM, 5-Aug-1993.)  (Revised by Andrew Salmon,
        11-Jul-2011.) $)
     hblem $p |- ( z e. A -> A. x z e. A ) $=
-      ( cv wcel wsb wal hbsb clelsb3 albii 3imtr3i ) BFDGZBCHZOAICFDGZPAINBCAEJ
-      CBDKZOPAQLM $.
+      ( cv wcel wsb wal hbsb clelsb1 albii 3imtr3i ) BFDGZBCHZOAICFDGZPAINBCAEJ
+      BCDKZOPAQLM $.
   $}
 
   ${
@@ -21229,9 +21534,10 @@ $)
       ( cv wceq wcel wsb sbequ12 abbi2dv ) AEBEFCEDGZABHCDKABIJ $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Class form not-free predicate
+  Class form not-free predicate
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -21574,9 +21880,10 @@ $)
       UMVIBCADUKRSURDUKRTUNBCBGEFUFQUGUHUIUHVCUPBCGULEUJSGUSEUJT $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Negated equality and membership
+  Negated equality and membership
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -22325,7 +22632,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Restricted quantification
+  Restricted quantification
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -22671,8 +22978,8 @@ $)
   hbra1 $p |- ( A. x e. A ph -> A. x A. x e. A ph ) $=
     ( wral cv wcel wi wal df-ral hba1 hbxfrbi ) ABCDBECFAGZBHBABCILBJK $.
 
-  $( ` x ` is not free in ` A. x e. A ph ` .  (Contributed by NM,
-     18-Oct-1996.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
+  $( ` x ` is not free in ` A. x e. A ph ` .  (Contributed by NM, 18-Oct-1996.)
+     (Revised by Mario Carneiro, 7-Oct-2016.) $)
   nfra1 $p |- F/ x A. x e. A ph $=
     ( wral cv wcel wi wal df-ral nfa1 nfxfr ) ABCDBECFAGZBHBABCILBJK $.
 
@@ -22708,8 +23015,8 @@ $)
   ${
     $d A y $.
     $( Similar to Lemma 24 of [Monk2] p. 114, except the quantification of the
-       antecedent is restricted.  Derived automatically from hbra2VD in
-       set.mm.  Contributed by Alan Sare 31-Dec-2011.  (Contributed by NM,
+       antecedent is restricted.  Derived automatically from hbra2VD in set.mm.
+       Contributed by Alan Sare 31-Dec-2011.  (Contributed by NM,
        31-Dec-2011.) $)
     nfra2 $p |- F/ y A. x e. A A. y e. B ph $=
       ( wral nfcv nfra1 nfral ) ACEFCBDCDGACEHI $.
@@ -22726,8 +23033,8 @@ $)
       $.
   $}
 
-  $( ` x ` is not free in ` E. x e. A ph ` .  (Contributed by NM,
-     19-Mar-1997.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
+  $( ` x ` is not free in ` E. x e. A ph ` .  (Contributed by NM, 19-Mar-1997.)
+     (Revised by Mario Carneiro, 7-Oct-2016.) $)
   nfre1 $p |- F/ x E. x e. A ph $=
     ( wrex cv wcel wa wex df-rex nfe1 nfxfr ) ABCDBECFAGZBHBABCILBJK $.
 
@@ -23498,8 +23805,8 @@ $)
   ${
     $d x ps $.
     $( One direction of a restricted quantifier version of Theorem 19.36 of
-       [Margaris] p. 90.  The other direction doesn't hold when ` A ` is
-       empty.  (Contributed by NM, 22-Oct-2003.) $)
+       [Margaris] p. 90.  The other direction doesn't hold when ` A ` is empty.
+       (Contributed by NM, 22-Oct-2003.) $)
     r19.36av $p |- ( E. x e. A ( ph -> ps ) -> ( A. x e. A ph -> ps ) ) $=
       ( wi wrex wral r19.35 cv wcel idd rexlimiv imim2i sylbi ) ABECDFACDGZBCDF
       ZEOBEABCDHPBOBBCDCIDJBKLMN $.
@@ -23568,8 +23875,8 @@ $)
   ${
     $d x ps $.
     $( One direction of a restricted quantifier version of Theorem 19.44 of
-       [Margaris] p. 90.  The other direction doesn't hold when ` A ` is
-       empty.  (Contributed by NM, 2-Apr-2004.) $)
+       [Margaris] p. 90.  The other direction doesn't hold when ` A ` is empty.
+       (Contributed by NM, 2-Apr-2004.) $)
     r19.44av $p |- ( E. x e. A ( ph \/ ps ) -> ( E. x e. A ph \/ ps ) ) $=
       ( wo wrex r19.43 cv wcel idd rexlimiv orim2i sylbi ) ABECDFACDFZBCDFZENBE
       ABCDGOBNBBCDCHDIBJKLM $.
@@ -24104,13 +24411,14 @@ $)
     cbvrex $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
       ( nfcv cbvrexf ) ABCDECEIDEIFGHJ $.
 
-    $( Change the bound variable of a restricted uniqueness quantifier using
-       implicit substitution.  (Contributed by Mario Carneiro, 15-Oct-2016.) $)
+    $( Change the bound variable of a restricted unique existential quantifier
+       using implicit substitution.  (Contributed by Mario Carneiro,
+       15-Oct-2016.) $)
     cbvreu $p |- ( E! x e. A ph <-> E! y e. A ps ) $=
       ( vz cv wcel wa weu wreu wsb nfv sb8eu sban eubii df-reu anbi1i nfsb nfan
-      clelsb3 wceq eleq1 sbequ sbie syl6bb anbi12d cbveu bitri 3bitri 3bitr4i )
+      clelsb1 wceq eleq1 sbequ sbie syl6bb anbi12d cbveu bitri 3bitri 3bitr4i )
       CJEKZALZCMZDJZEKZBLZDMZACENBDENUQUPCIOZIMUOCIOZACIOZLZIMZVAUPCIUPIPQVBVEI
-      UOACIRSVFIJZEKZVDLZIMVAVEVIIVCVHVDICEUDUASVIUTIDVHVDDVHDPACIDFUBUCUTIPVGU
+      UOACIRSVFIJZEKZVDLZIMVAVEVIIVCVHVDCIEUDUASVIUTIDVHVDDVHDPACIDFUBUCUTIPVGU
       RUEZVHUSVDBVGUREUFVJVDACDOBAIDCUGABCDGHUHUIUJUKULUMACETBDETUN $.
 
     $( Change the bound variable of restricted "at most one" using implicit
@@ -24133,9 +24441,9 @@ $)
     cbvrexv $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
       ( nfv cbvrex ) ABCDEADGBCGFH $.
 
-    $( Change the bound variable of a restricted uniqueness quantifier using
-       implicit substitution.  (Contributed by NM, 5-Apr-2004.)  (Revised by
-       Mario Carneiro, 15-Oct-2016.) $)
+    $( Change the bound variable of a restricted unique existential quantifier
+       using implicit substitution.  (Contributed by NM, 5-Apr-2004.)  (Revised
+       by Mario Carneiro, 15-Oct-2016.) $)
     cbvreuv $p |- ( E! x e. A ph <-> E! y e. A ps ) $=
       ( nfv cbvreu ) ABCDEADGBCGFH $.
 
@@ -24241,14 +24549,15 @@ $)
   $}
 
   ${
-    $d x y z $.  $d y z ph $.  $d x z ps $.
+    $d x y z $.  $d x z ps $.  $d y z ph $.
     sbralie.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Implicit to explicit substitution that swaps variables in a quantified
        expression.  (Contributed by NM, 5-Sep-2004.) $)
-    sbralie $p |- ( [ x / y ] A. x e. y ph <-> A. y e. x ps ) $=
-      ( vz cv wral wsb cbvralsv sbbii nfv raleq sbie bitri sbco2 ralbii ) ACDGZ
-      HZDCIZACFIZFCGZHZBDUBHZTUAFRHZDCIUCSUEDCACFRJKUEUCDCUCDLUAFRUBMNOUCUAFDIZ
-      DUBHUDUAFDUBJUFBDUBUFACDIBACDFAFLPABCDBCLENOQOO $.
+    sbralie $p |- ( A. x e. y ph <-> [ y / x ] A. y e. x ps ) $=
+      ( vz cv wral wsb cbvralsv sbbii nfv raleq sbie sbco2 wb weq equcoms bitri
+      bicomd ralbii 3bitrri ) BDCGZHZCDIBDFIZFUCHZCDIUEFDGZHZACUGHZUDUFCDBDFUCJ
+      KUFUHCDUHCLUEFUCUGMNUHUEFCIZCUGHUIUEFCUGJUJACUGUJBDCIABDCFBFLOBADCADLBAPC
+      DCDQABETRNSUASUB $.
   $}
 
   ${
@@ -24356,9 +24665,10 @@ $)
       ( nfcv nfv cbvrab ) ABCDECEGDEGADHBCHFI $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The universal class
+  The universal class
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -24550,8 +24860,8 @@ $)
 
   ${
     $d x A $.
-    $( Closed theorem version of ~ ceqsalg .  (Contributed by NM,
-       28-Feb-2013.)  (Revised by Mario Carneiro, 10-Oct-2016.) $)
+    $( Closed theorem version of ~ ceqsalg .  (Contributed by NM, 28-Feb-2013.)
+       (Revised by Mario Carneiro, 10-Oct-2016.) $)
     ceqsalt $p |- ( ( F/ x ps /\ A. x ( x = A -> ( ph <-> ps ) ) /\ A e. V )
          -> ( A. x ( x = A -> ph ) <-> ps ) ) $=
       ( wnf cv wceq wb wi wal wcel w3a wex elisset 3ad2ant3 bi1 imim3i 3ad2ant2
@@ -24743,8 +25053,8 @@ $)
     ceqsex2.4 $e |- B e. _V $.
     ceqsex2.5 $e |- ( x = A -> ( ph <-> ps ) ) $.
     ceqsex2.6 $e |- ( y = B -> ( ps <-> ch ) ) $.
-    $( Elimination of two existential quantifiers, using implicit
-       substitution.  (Contributed by Scott Fenton, 7-Jun-2006.) $)
+    $( Elimination of two existential quantifiers, using implicit substitution.
+       (Contributed by Scott Fenton, 7-Jun-2006.) $)
     ceqsex2 $p |- ( E. x E. y ( x = A /\ y = B /\ ph ) <-> ch ) $=
       ( cv wceq w3a wex wa exbii ceqsex 3anass 19.42v nfan anbi2d exbidv 3bitri
       bitri nfv nfex ) DNFOZENGOZAPZEQZDQUJUKARZEQZRZDQUKBRZEQZCUMUPDUMUJUNRZEQ
@@ -24758,8 +25068,8 @@ $)
     ceqsex2v.2 $e |- B e. _V $.
     ceqsex2v.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
     ceqsex2v.4 $e |- ( y = B -> ( ps <-> ch ) ) $.
-    $( Elimination of two existential quantifiers, using implicit
-       substitution.  (Contributed by Scott Fenton, 7-Jun-2006.) $)
+    $( Elimination of two existential quantifiers, using implicit substitution.
+       (Contributed by Scott Fenton, 7-Jun-2006.) $)
     ceqsex2v $p |- ( E. x E. y ( x = A /\ y = B /\ ph ) <-> ch ) $=
       ( nfv ceqsex2 ) ABCDEFGBDLCELHIJKM $.
   $}
@@ -24823,8 +25133,8 @@ $)
     ceqsex6v.10 $e |- ( w = D -> ( th <-> ta ) ) $.
     ceqsex6v.11 $e |- ( v = E -> ( ta <-> et ) ) $.
     ceqsex6v.12 $e |- ( u = F -> ( et <-> ze ) ) $.
-    $( Elimination of six existential quantifiers, using implicit
-       substitution.  (Contributed by NM, 21-Sep-2011.) $)
+    $( Elimination of six existential quantifiers, using implicit substitution.
+       (Contributed by NM, 21-Sep-2011.) $)
     ceqsex6v $p |- ( E. x E. y E. z E. w E. v E. u
           ( ( x = A /\ y = B /\ z = C ) /\ ( w = D /\ v = E /\ u = F ) /\ ph )
                  <-> ze ) $=
@@ -25728,23 +26038,23 @@ $)
        required to be a set.  (Contributed by Andrew Salmon, 3-Jun-2011.) $)
     pm13.183 $p |- ( A e. V -> ( A = B <-> A. z ( z = A <-> z = B ) ) ) $=
       ( vy cv wceq wal eqeq1 eqeq2 bibi1d albidv alrimiv wsb stdpc4 sbbi bibi2i
-      wb eqsb3 sylbi equsb1 bi1 mpi syl impbii vtoclbg ) EFZCGZAFZUGGZUICGZRZAH
+      wb eqsb1 sylbi equsb1 bi1 mpi syl impbii vtoclbg ) EFZCGZAFZUGGZUICGZRZAH
       ZBCGUIBGZUKRZAHEBDUGBCIUGBGZULUOAUPUJUNUKUGBUIJKLUHUMUHULAUGCUIJMUMULAENZ
-      UHULAEOUQUJAENZUKAENZRZUHUJUKAEPUTURUHRZUHUSUHUREACSQVAURUHAEUAURUHUBUCTT
+      UHULAEOUQUJAENZUKAENZRZUHUJUKAEPUTURUHRZUHUSUHURAECSQVAURUHAEUAURUHUBUCTT
       UDUEUF $.
   $}
 
   ${
     $d y A $.  $d x y $.  $d y ph $.
     $( Restricted quantifier version of Theorem 19.3 of [Margaris] p. 89.  We
-       don't need the non-empty class condition of ~ r19.3rzv when there is an
+       don't need the nonempty class condition of ~ r19.3rzv when there is an
        outer quantifier.  (Contributed by NM, 25-Oct-2012.) $)
     rr19.3v $p |- ( A. x e. A A. y e. A ph <-> A. x e. A ph ) $=
       ( wral cv wceq biidd rspcv ralimia wcel ax-1 ralrimiv ralimi impbii ) ACD
       EZBDEABDEPABDAACBFZDCFZQGAHIJAPBDAACDARDKLMNO $.
 
     $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  We
-       don't need the non-empty class condition of ~ r19.28zv when there is an
+       don't need the nonempty class condition of ~ r19.28zv when there is an
        outer quantifier.  (Contributed by NM, 29-Oct-2012.) $)
     rr19.28v $p |- ( A. x e. A A. y e. A ( ph /\ ps )
                       <-> A. x e. A ( ph /\ A. y e. A ps ) ) $=
@@ -25987,8 +26297,8 @@ $)
     $( A deduction theorem for converting the inference ` |- F/_ x A ` =>
        ` |- ph ` into a closed theorem.  Use ~ nfa1 and ~ nfab to eliminate the
        hypothesis of the substitution instance ` ps ` of the inference.  For
-       converting the inference form into a deduction form, ~ abidnf is
-       useful.  (Contributed by NM, 8-Dec-2006.) $)
+       converting the inference form into a deduction form, ~ abidnf is useful.
+       (Contributed by NM, 8-Dec-2006.) $)
     dedhb $p |- ( F/_ x A -> ph ) $=
       ( wnfc cv wcel wal cab wceq wb abidnf eqcomd syl mpbiri ) CEHZABGSEDIEJCK
       DLZMABNSTECDEOPFQR $.
@@ -26299,8 +26609,8 @@ $)
       JUSFUOUJUNUIKUSUHUNUIPUNUIQRSUAUBVAUQGCEUIUHKZUTUPDEVBUSUOBUIUHUNPUCUDUET
       UFT $.
 
-    $( Restricted uniqueness using implicit substitution.  (Contributed by NM,
-       24-Oct-2006.) $)
+    $( Restricted unique existence using implicit substitution.  (Contributed
+       by NM, 24-Oct-2006.) $)
     reu8 $p |- ( E! x e. A ph <-> E. x e. A ( ph /\
                 A. y e. A ( ps -> x = y ) ) ) $=
       ( wreu cv wceq wb wral wrex wi wa cbvreuv reu6 wcel ralbii wal syl5bb a1i
@@ -26464,9 +26774,10 @@ $)
       EGTUQURUSUTVA $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                    Russell's Paradox
+  Russell's Paradox
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -26538,9 +26849,10 @@ $)
       JFNUG $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Proper substitution of classes for sets
+  Proper substitution of classes for sets
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -26570,7 +26882,7 @@ $)
      to express it with a single closed formula.
 
      If we did not want to commit to any specific proper class behavior, we
-     could use this definition _only_ to prove theorem ~ dfsbcq , which holds
+     could use this definition _only_ to prove Theorem ~ dfsbcq , which holds
      for both our definition and Quine's, and from which we can derive a weaker
      version of ~ df-sbc in the form of ~ sbc8g .  However, the behavior of
      Quine's definition at proper classes is similarly arbitrary, and for
@@ -26578,8 +26890,8 @@ $)
      of this definition) we allow direct reference to ~ df-sbc and assert that
      ` [. A / x ]. ph ` is always false when ` A ` is a proper class.
 
-     The theorem ~ sbc2or shows the apparently "strongest" statement we can
-     make regarding behavior at proper classes if we start from ~ dfsbcq .
+     Theorem ~ sbc2or shows the apparently "strongest" statement we can make
+     regarding behavior at proper classes if we start from ~ dfsbcq .
 
      The related definition ~ df-csb defines proper substitution into a class
      variable (as opposed to a wff variable).  (Contributed by NM,
@@ -26609,7 +26921,7 @@ $)
      ~ df-sbc that leaves substitution undefined when ` A ` is a proper class.
 
      However, it is often a nuisance to have to prove the sethood hypothesis of
-     ~ sbc8g , so we will allow direct use of ~ df-sbc after theorem ~ sbc2or
+     ~ sbc8g , so we will allow direct use of ~ df-sbc after Theorem ~ sbc2or
      below.  Proper substiution with a proper class is rarely needed, and when
      it is, we can simply use the expansion of Quine's definition.
      (Contributed by NM, 14-Apr-1995.) $)
@@ -26966,10 +27278,10 @@ $)
     $d y A $.  $d y B $.  $d y ph $.  $d x y $.
     elrabsf.1 $e |- F/_ x B $.
     $( Membership in a restricted class abstraction, expressed with explicit
-       class substitution.  (The variation ~ elrabf has implicit
-       substitution).  The hypothesis specifies that ` x ` must not be a free
-       variable in ` B ` .  (Contributed by NM, 30-Sep-2003.)  (Proof shortened
-       by Mario Carneiro, 13-Oct-2016.) $)
+       class substitution.  (The variation ~ elrabf has implicit substitution).
+       The hypothesis specifies that ` x ` must not be a free variable in
+       ` B ` .  (Contributed by NM, 30-Sep-2003.)  (Proof shortened by Mario
+       Carneiro, 13-Oct-2016.) $)
     elrabsf $p |- ( A e. { x e. B | ph }
           <-> ( A e. B /\ [. A / x ]. ph ) ) $=
       ( vy cv wsbc crab dfsbcq nfcv nfv nfsbc1v sbceq1a cbvrab elrab2 ) ABFGZHZ
@@ -26978,11 +27290,11 @@ $)
 
   ${
     $d x y B $.  $d y A $.
-    $( Substitution applied to an atomic wff.  Set theory version of ~ eqsb3 .
-       (Contributed by Andrew Salmon, 29-Jun-2011.) $)
-    eqsbc3 $p |- ( A e. V -> ( [. A / x ]. x = B <-> A = B ) ) $=
-      ( vy cv wceq wsbc dfsbcq eqeq1 wsb sbsbc eqsb3 bitr3i vtoclbg ) AFCGZAEFZ
-      HZQCGZPABHBCGEBDPAQBIQBCJRPAEKSPAELEACMNO $.
+    $( Substitution for the left-hand side in an equality.  Class version of
+       ~ eqsb1 .  (Contributed by Andrew Salmon, 29-Jun-2011.) $)
+    eqsbc1 $p |- ( A e. V -> ( [. A / x ]. x = B <-> A = B ) ) $=
+      ( vy cv wceq wsbc dfsbcq eqeq1 wsb sbsbc eqsb1 bitr3i vtoclbg ) AFCGZAEFZ
+      HZQCGZPABHBCGEBDPAQBIQBCJRPAEKSPAELAECMNO $.
   $}
 
   ${
@@ -27074,7 +27386,7 @@ $)
     $( Set theory version of sbeqal1 in set.mm.  (Contributed by Andrew Salmon,
        28-Jun-2011.) $)
     sbceqal $p |- ( A e. V -> ( A. x ( x = A -> x = B ) -> A = B ) ) $=
-      ( wcel cv wceq wi wal wsbc spsbc sbcimg wb eqsbc3 mpbiri pm5.5 syl 3bitrd
+      ( wcel cv wceq wi wal wsbc spsbc sbcimg wb eqsbc1 mpbiri pm5.5 syl 3bitrd
       eqid sylibd ) BDEZAFZBGZUBCGZHZAIUEABJZBCGZUEABDKUAUFUCABJZUDABJZHZUIUGUC
       UDABDLUAUHUJUIMUAUHBBGBSABBDNOUHUIPQABCDNRT $.
   $}
@@ -27116,19 +27428,20 @@ $)
       ( wsbc wb wtru a1i sbcbidv trud ) ACDFBCDFGHABCDABGHEIJK $.
 
     $( Formula-building inference rule for class substitution.  (Contributed by
-       NM, 11-Nov-2005.)  (New usage is discouraged.) $)
+       NM, 11-Nov-2005.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     sbcbiiOLD $p |- ( A e. V -> ( [. A / x ]. ph <-> [. A / x ]. ps ) ) $=
       ( wsbc wb wcel sbcbii a1i ) ACDGBCDGHDEIABCDFJK $.
   $}
 
   ${
     $d x C $.  $d x A $.
-    $( ~ eqsbc3 with setvar variable on right side of equals sign.  This proof
-       was automatically generated from the virtual deduction proof eqsbc3rVD
-       in set.mm using a translation program.  (Contributed by Alan Sare,
+    $( Substitution for the right-hand side in an equality.  This proof was
+       automatically generated from the virtual deduction proof eqsbc2VD in
+       set.mm using a translation program.  (Contributed by Alan Sare,
        24-Oct-2011.) $)
-    eqsbc3r $p |- ( A e. B -> ( [. A / x ]. C = x <-> C = A ) ) $=
-      ( wcel wceq wsbc eqcom sbcbii biimpi eqsbc3 syl5ib syl6ib syl6ibr sylibrd
+    eqsbc2 $p |- ( A e. B -> ( [. A / x ]. C = x <-> C = A ) ) $=
+      ( wcel wceq wsbc eqcom sbcbii biimpi eqsbc1 syl5ib syl6ib syl6ibr sylibrd
       cv idd impbid ) BCEZDAPZFZABGZDBFZSUBBDFZUCUBTDFZABGZSUDUBUFUAUEABDTHIZJA
       BDCKZLBDHZMSUCUFUBSUCUDUFSUCUCUDSUCQUINUHOUGNR $.
   $}
@@ -27150,8 +27463,8 @@ $)
     $( Class substitution into a membership relation.  (Contributed by NM,
        17-Nov-2006.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
     sbcel1gv $p |- ( A e. V -> ( [. A / x ]. x e. B <-> A e. B ) ) $=
-      ( vy cv wcel wsb wsbc dfsbcq2 eleq1 clelsb3 vtoclbg ) AFCGZAEHEFZCGNABIBC
-      GEBDNAEBJOBCKEACLM $.
+      ( vy cv wcel wsb wsbc dfsbcq2 eleq1 clelsb1 vtoclbg ) AFCGZAEHEFZCGNABIBC
+      GEBDNAEBJOBCKAECLM $.
   $}
 
   ${
@@ -27436,10 +27749,10 @@ $)
     rmo3 $p |- ( E* x e. A ph <->
                A. x e. A A. y e. A ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
       ( wrmo cv wcel wa wmo wsb wi wral anbi1i bitri 3bitri impexp albii df-ral
-      wal weq df-rmo sban clelsb3 anbi2i an4 ancom r19.21v 3bitr2i nfv nfan mo3
+      wal weq df-rmo sban clelsb1 anbi2i an4 ancom r19.21v 3bitr2i nfv nfan mo3
       imbi1i 3bitr4i ) ABDFBGDHZAIZBJZAABCKZIZBCUAZLZCDMZBDMZABDUBUPUPBCKZIZUTL
       ZCTZBTUOVBLZBTUQVCVGVHBVGCGDHZUOVALZLZCTVJCDMVHVFVKCVFVIUOIZUSIZUTLVLVALV
-      KVEVMUTVEUPVIURIZIUOVIIZUSIVMVDVNUPVDUOBCKZURIVNUOABCUCVPVIURCBDUDNOUEUOA
+      KVEVMUTVEUPVIURIZIUOVIIZUSIVMVDVNUPVDUOBCKZURIVNUOABCUCVPVIURBCDUDNOUEUOA
       VIURUFVOVLUSUOVIUGNPUMVLUSUTQVIUOVAQPRVJCDSUOVACDUHUIRUPBCUOACUOCUJEUKULV
       BBDSUNO $.
   $}
@@ -27465,9 +27778,10 @@ $)
       ( wrmo wcel wa wceq rmob biimp3ar ) ADEJFEKBLFGMGEKCLABCDEFGHINO $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Proper substitution of classes for sets into classes
+  Proper substitution of classes for sets into classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -27743,8 +28057,8 @@ $)
 
   ${
     $d x y $.
-    $( Substitution into a wff expressed in terms of substitution into a
-       class.  (Contributed by NM, 15-Aug-2007.) $)
+    $( Substitution into a wff expressed in terms of substitution into a class.
+       (Contributed by NM, 15-Aug-2007.) $)
     sbccsbg $p |- ( A e. V ->
                  ( [. A / x ]. ph <-> y e. [_ A / x ]_ { y | ph } ) ) $=
       ( wsbc cv cab wcel csb abid sbcbii sbcel2g syl5bbr ) ABDFCGZACHZIZBDFDEIO
@@ -27995,7 +28309,8 @@ $)
   ${
     $d x C $.
     $( Nest the composition of two substitutions.  (New usage is discouraged.)
-       (Contributed by NM, 23-Nov-2005.) $)
+       (Proof modification is discouraged.)  (Contributed by NM,
+       23-Nov-2005.) $)
     csbnestgOLD $p |- ( ( A e. V /\ A. x B e. W ) ->
                   [_ A / x ]_ [_ B / y ]_ C = [_ [_ A / x ]_ B / y ]_ C ) $=
       ( wcel csb wceq wal csbnestg adantr ) CFHACBDEIIBACDIEIJDGHAKABCDEFLM $.
@@ -28015,7 +28330,8 @@ $)
   ${
     $d x A $.
     $( Nest the composition of two substitutions.  Obsolete as of 11-Nov-2016.
-       (Contributed by NM, 23-May-2006.)  (New usage is discouraged.) $)
+       (Contributed by NM, 23-May-2006.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     csbnest1gOLD $p |- ( ( A e. V /\ A. x B e. W ) ->
                   [_ A / x ]_ [_ B / x ]_ C = [_ [_ A / x ]_ B / x ]_ C ) $=
       ( wcel csb wceq wal csbnest1g adantr ) BEGABACDHHAABCHDHICFGAJABCDEKL $.
@@ -28042,7 +28358,7 @@ $)
       $.
 
     $( Composition of two substitutions.  (Contributed by NM, 27-Nov-2005.)
-       (New usage is discouraged.) $)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     sbcco3gOLD $p |- ( ( A e. V /\ A. x B e. W ) ->
                 ( [. A / x ]. [. B / y ]. ph <-> [. C / y ]. ph ) ) $=
       ( wcel wsbc wb wal sbcco3g adantr ) DGJACEKBDKACFKLEHJBMABCDEFGINO $.
@@ -28059,7 +28375,8 @@ $)
     $d x A $.  $d x C $.  $d x D $.  $d x y $.
     csbco3g.1 $e |- ( x = A -> B = D ) $.
     $( Composition of two class substitutions.  Obsolete as of 11-Nov-2016.
-       (Contributed by NM, 27-Nov-2005.)  (New usage is discouraged.) $)
+       (Contributed by NM, 27-Nov-2005.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     csbco3gOLD $p |- ( ( A e. V /\ A. x B e. W ) ->
                  [_ A / x ]_ [_ B / y ]_ C = [_ D / y ]_ C ) $=
       ( wcel csb wceq wal csbco3g adantr ) CGJACBDEKKBFEKLDHJAMABCDFEGINO $.
@@ -28131,7 +28448,7 @@ $)
       NZMBMZDFNZMACEOBDFOUEUGUDUFCDEFGHADIPBCJPKCQDQRABLSUAUBACETBDFTUC $.
 
     $( A more general version of ~ cbvreuv that has no distinct variable
-       rextrictions.  Changes bound variables using implicit substitution.
+       restrictions.  Changes bound variables using implicit substitution.
        (Contributed by Andrew Salmon, 13-Jul-2011.) $)
     cbvreucsf $p |- ( E! x e. A ph <-> E! y e. B ps ) $=
       ( vz vv cv wcel wa weu wsb nfcri wreu csb nfcsb1v nfs1v nfan wceq csbeq1a
@@ -28177,7 +28494,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Define boolean set operations
+  Define boolean set operations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -28205,8 +28522,8 @@ $)
      union ` B ` "). $)
   cun $a class ( A u. B ) $.
 
-  $( Extend class notation to include the intersection of two classes
-     (read:  " ` A ` intersect ` B ` "). $)
+  $( Extend class notation to include the intersection of two classes (read:
+      " ` A ` intersect ` B ` "). $)
   cin $a class ( A i^i B ) $.
 
   $( Extend class notation to include the symmetric difference of two
@@ -28511,7 +28828,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Subclasses and subsets
+  Subclasses and subsets
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -28585,8 +28902,8 @@ $)
       ( wss cv wcel wi wal wral dfss2f df-ral bitr4i ) BCFAGZBHOCHZIAJPABKABCDE
       LPABMN $.
 
-    $( If ` x ` is not free in ` A ` and ` B ` , it is not free in
-       ` A C_ B ` .  (Contributed by NM, 27-Dec-1996.) $)
+    $( If ` x ` is not free in ` A ` and ` B ` , it is not free in ` A C_ B ` .
+       (Contributed by NM, 27-Dec-1996.) $)
     nfss $p |- F/ x A C_ B $=
       ( wss cv wcel wral dfss3f nfra1 nfxfr ) BCFAGCHZABIAABCDEJMABKL $.
   $}
@@ -29310,8 +29627,8 @@ $)
     ( wpss wss wne wa wceq wn df-pss df-ne anbi2i bitri ) ABCABDZABEZFMABGHZFAB
     INOMABJKL $.
 
-  $( Alternate definition of proper subclass.  (Contributed by NM,
-     7-Feb-1996.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+  $( Alternate definition of proper subclass.  (Contributed by NM, 7-Feb-1996.)
+     (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
   dfpss3 $p |- ( A C. B <-> ( A C_ B /\ -. B C_ A ) ) $=
     ( wpss wss wceq wn wa dfpss2 eqss baib notbid pm5.32i bitri ) ABCABDZABEZFZ
     GNBADZFZGABHNPRNOQONQABIJKLM $.
@@ -29476,9 +29793,10 @@ $)
     ( wss wceq wi wpss wn wa pm4.61 dfpss2 bitr4i con1bii ) ABCZABDZEZABFZOGMNG
     HPMNIABJKL $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The difference, union, and intersection of two classes
+  The difference, union, and intersection of two classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -29585,8 +29903,8 @@ $)
 
   ${
     difss2d.1 $e |- ( ph -> A C_ ( B \ C ) ) $.
-    $( If a class is contained in a difference, it is contained in the
-       minuend.  Deduction form of ~ difss2 .  (Contributed by David Moews,
+    $( If a class is contained in a difference, it is contained in the minuend.
+       Deduction form of ~ difss2 .  (Contributed by David Moews,
        1-May-2017.) $)
     difss2d $p |- ( ph -> A C_ B ) $=
       ( cdif wss difss2 syl ) ABCDFGBCGEBCDHI $.
@@ -29686,7 +30004,7 @@ $)
   $( If a class equals the union of two other classes, then it equals the union
      of those two classes commuted. ~ equncom was automatically derived from
      equncomVD in set.mm using the tools program
-     translate_without_overwriting.cmd and minimizing.  (Contributed by Alan
+     translate__without__overwriting.cmd and minimizing.  (Contributed by Alan
      Sare, 18-Feb-2012.) $)
   equncom $p |- ( A = ( B u. C ) <-> A = ( C u. B ) ) $=
     ( cun uncom eqeq2i ) BCDCBDABCEF $.
@@ -29695,8 +30013,8 @@ $)
     equncomi.1 $e |- A = ( B u. C ) $.
     $( Inference form of ~ equncom . ~ equncomi was automatically derived from
        equncomiVD in set.mm using the tools program
-       translate_without_overwriting.cmd and minimizing.  (Contributed by Alan
-       Sare, 18-Feb-2012.) $)
+       translate__without__overwriting.cmd and minimizing.  (Contributed by
+       Alan Sare, 18-Feb-2012.) $)
     equncomi $p |- A = ( C u. B ) $=
       ( cun wceq equncom mpbi ) ABCEFACBEFDABCGH $.
   $}
@@ -30484,8 +30802,8 @@ $)
       ( vy cab wa wsb cv wcel sban df-clab anbi12i 3bitr4ri ineqri ) DACEZBCEZA
       BFZCEZQCDGACDGZBCDGZFDHZRIUAOIZUAPIZFABCDJQDCKUBSUCTADCKBDCKLMN $.
 
-    $( Difference of two class abstractions.  (Contributed by NM,
-       23-Oct-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    $( Difference of two class abstractions.  (Contributed by NM, 23-Oct-2004.)
+       (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
     difab $p |- ( { x | ph } \ { x | ps } ) = { x | ( ph /\ -. ps ) } $=
       ( vy cab wn wcel wsb df-clab sban bicomi xchbinxr anbi12i 3bitrri difeqri
       wa cv sbn ) DACEZBCEZABFZPZCEZDQZUCGUBCDHACDHZUACDHZPUDSGZUDTGZFZPUBDCIAU
@@ -30701,7 +31019,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-           The empty set
+  The empty set
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -30779,7 +31097,7 @@ $)
   ${
     $d x A $.  $d x ph $.
     reximdva0.1 $e |- ( ( ph /\ x e. A ) -> ps ) $.
-    $( Restricted existence deduced from non-empty class.  (Contributed by NM,
+    $( Restricted existence deduced from nonempty class.  (Contributed by NM,
        1-Feb-2012.) $)
     reximdva0 $p |- ( ( ph /\ A =/= (/) ) -> E. x e. A ps ) $=
       ( c0 wne wa cv wcel wex wrex n0 ex ancld eximdv imp sylan2b df-rex sylibr
@@ -30845,7 +31163,7 @@ $)
     ( cab c0 wceq wn wal wne wex abn0 df-ne df-ex 3bitr3i con4bii ) ABCZDEZAFBG
     ZODHABIPFQFABJODKABLMN $.
 
-  $( Non-empty restricted class abstraction.  (Contributed by NM,
+  $( Nonempty restricted class abstraction.  (Contributed by NM,
      29-Aug-1999.) $)
   rabn0 $p |- ( { x e. A | ph } =/= (/) <-> E. x e. A ph ) $=
     ( cv wcel wa cab c0 wne wex crab wrex abn0 df-rab neeq1i df-rex 3bitr4i ) B
@@ -30964,7 +31282,7 @@ $)
   vss $p |- ( _V C_ A <-> A = _V ) $=
     ( cvv wss wa wceq ssv biantrur eqss bitr4i ) BACZABCZJDABEKJAFGABHI $.
 
-  $( The null set is a proper subset of any non-empty set.  (Contributed by NM,
+  $( The null set is a proper subset of any nonempty set.  (Contributed by NM,
      27-Feb-1996.) $)
   0pss $p |- ( (/) C. A <-> A =/= (/) ) $=
     ( c0 wpss wne wss 0ss df-pss mpbiran necom bitri ) BACZBADZABDKBAELAFBAGHBA
@@ -31101,8 +31419,8 @@ $)
       UDVEUNVHUOQZPVKVDVLUNUMBCRUEUNVHUOULUFVFVIUOUMABSUGTUMAUQSUMUTCRTUHDACUID
       URVAUJUK $.
 
-    $( Subset relation for disjoint classes.  (Contributed by NM,
-       25-Oct-2005.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    $( Subset relation for disjoint classes.  (Contributed by NM, 25-Oct-2005.)
+       (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
     disjssun $p |- ( ( A i^i B ) = (/) -> ( A C_ ( B u. C ) <-> A C_ C ) ) $=
       ( cin c0 wceq cun wss indi equncomi uneq2 un0 syl6eq syl5eq df-ss 3bitr4g
       eqeq1d ) ABDZEFZABCGZDZAFACDZAFATHACHSUAUBASUAUBRGZUBUARUBABCIJSUCUBEGUBR
@@ -31475,7 +31793,7 @@ $)
   ${
     $d x A $.
     rgenz.1 $e |- ( ( A =/= (/) /\ x e. A ) -> ph ) $.
-    $( Generalization rule that eliminates a non-zero class requirement.
+    $( Generalization rule that eliminates a nonzero class requirement.
        (Contributed by NM, 8-Dec-2012.) $)
     rgenz $p |- A. x e. A ph $=
       ( wral c0 rzal wne ralrimiva pm2.61ine ) ABCECFABCGCFHABCDIJ $.
@@ -31550,7 +31868,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-           "Weak deduction theorem" for set theory
+  "Weak deduction theorem" for set theory
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   In a Hilbert system of logic (which consists of a set of axioms, modus
@@ -31992,8 +32310,8 @@ $)
        inference's hypothesis eliminated with ~ elimhyp .  If the inference has
        other hypotheses with class variable ` A ` , these can be kept by
        assigning ~ keephyp to them.  For more information, see the Deduction
-       Theorem ~ http://us.metamath.org/mpeuni/mmdeduction.html .  (Contributed
-       by NM, 15-May-1999.) $)
+       Theorem ~ https://us.metamath.org/mpeuni/mmdeduction.html .
+       (Contributed by NM, 15-May-1999.) $)
     dedth $p |- ( ph -> ps ) $=
       ( cif wceq wb iftrue eqcomd syl mpbiri ) ABCGADADEHZIBCJAODADEKLFMN $.
   $}
@@ -32228,9 +32546,10 @@ $)
       ZIZJKABTIZJKABCIZJKFGBCDESBLUAUBJASBTMNTCLUBUCJATCBONASTFPGPQR $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                          Power classes
+  Power classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -32362,7 +32681,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-          Unordered and ordered pairs
+  Unordered and ordered pairs
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -32394,10 +32713,10 @@ $)
   $}
 
   $( Define unordered pair of classes.  Definition 7.1 of [Quine] p. 48.  For
-     example, ` A e. { ` 1 , -u 1 ` } -> ( A ` ^ 2 ` ) = ` 1 (ex-pr in
-     set.mm).  They are unordered, so ` { A , B } = { B , A } ` as proven by
-     ~ prcom .  For a more traditional definition, but requiring a dummy
-     variable, see ~ dfpr2 .  (Contributed by NM, 5-Aug-1993.) $)
+     example, ` A e. { ` 1 , -u 1 ` } -> ( A ` ^ 2 ` ) = ` 1 (ex-pr in set.mm).
+     They are unordered, so ` { A , B } = { B , A } ` as proven by ~ prcom .
+     For a more traditional definition, but requiring a dummy variable, see
+     ~ dfpr2 .  (Contributed by NM, 5-Aug-1993.) $)
   df-pr $a |- { A , B } = ( { A } u. { B } ) $.
 
   $( Define unordered triple of classes.  Definition of [Enderton] p. 19.
@@ -32518,8 +32837,8 @@ $)
   elsni $p |- ( A e. { B } -> A = B ) $=
     ( csn wcel wceq elsncg ibi ) ABCZDABEABHFG $.
 
-  $( A set is a member of its singleton.  Part of Theorem 7.6 of [Quine]
-     p. 49.  (Contributed by NM, 28-Oct-2003.) $)
+  $( A set is a member of its singleton.  Part of Theorem 7.6 of [Quine] p. 49.
+     (Contributed by NM, 28-Oct-2003.) $)
   snidg $p |- ( A e. V -> A e. { A } ) $=
     ( wcel csn wceq eqid elsncg mpbiri ) ABCAADCAAEAFAABGH $.
 
@@ -32748,8 +33067,8 @@ $)
   ${
     $d A y $.  $d B y $.  $d V y $.  $d x y $.
     $( Distribute proper substitution through the singleton of a class.
-       ~ csbsng is derived from the virtual deduction proof csbsngVD in
-       set.mm.  (Contributed by Alan Sare, 10-Nov-2012.) $)
+       ~ csbsng is derived from the virtual deduction proof csbsngVD in set.mm.
+       (Contributed by Alan Sare, 10-Nov-2012.) $)
     csbsng $p |- ( A e. V -> [_ A / x ]_ { B } = { [_ A / x ]_ B } ) $=
       ( vy wcel wceq cab csb csn wsbc csbabg sbceq2g abbidv eqtrd df-sn csbeq2i
       cv 3eqtr4g ) BDFZABERZCGZEHZIZUAABCIZGZEHZABCJZIUEJTUDUBABKZEHUGUBAEBDLTU
@@ -33590,7 +33909,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                       The union of a class
+  The union of a class
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -33677,9 +33996,9 @@ $)
 
   ${
     $d x y A $.  $d x y B $.
-    $( Equality theorem for class union.  Exercise 15 of [TakeutiZaring]
-       p. 18.  (Contributed by NM, 10-Aug-1993.)  (Proof shortened by Andrew
-       Salmon, 29-Jun-2011.) $)
+    $( Equality theorem for class union.  Exercise 15 of [TakeutiZaring] p. 18.
+       (Contributed by NM, 10-Aug-1993.)  (Proof shortened by Andrew Salmon,
+       29-Jun-2011.) $)
     unieq $p |- ( A = B -> U. A = U. B ) $=
       ( vy vx wceq cv wcel wrex cab cuni rexeq abbidv dfuni2 3eqtr4g ) ABEZCFDF
       GZDAHZCIPDBHZCIAJBJOQRCPDABKLCDAMCDBMN $.
@@ -33919,9 +34238,10 @@ $)
       BBGZBLUEULABCUDBBMNRUIDUFUHUFEUHCEUIUEUIAUHCUDUHBMOPQUGUJSBUKDBUFTUAUB $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The intersection of a class
+  The intersection of a class
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -34320,9 +34640,10 @@ $)
       ( cint cin wcel cv wral elrint baib ) DBCEFGDBGDAHGACIABCDJK $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Indexed union and intersection
+  Indexed union and intersection
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -34845,8 +35166,8 @@ $)
 
   ${
     $d x y A $.  $d y B $.
-    $( There is a non-empty class in an indexed collection ` B ( x ) ` iff the
-       indexed union of them is non-empty.  (Contributed by NM, 15-Oct-2003.)
+    $( There is a nonempty class in an indexed collection ` B ( x ) ` iff the
+       indexed union of them is nonempty.  (Contributed by NM, 15-Oct-2003.)
        (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
     iunn0 $p |- ( E. x e. A B =/= (/) <-> U_ x e. A B =/= (/) ) $=
       ( vy cv wcel wex wrex c0 wne rexcom4 eliun exbii bitr4i n0 rexbii 3bitr4i
@@ -35045,8 +35366,8 @@ $)
 
   ${
     $d x y $.  $d y A $.  $d y B $.  $d y C $.
-    $( Separate a union in an indexed union.  (Contributed by NM,
-       27-Dec-2004.)  (Proof shortened by Mario Carneiro, 17-Nov-2016.) $)
+    $( Separate a union in an indexed union.  (Contributed by NM, 27-Dec-2004.)
+       (Proof shortened by Mario Carneiro, 17-Nov-2016.) $)
     iunun $p |- U_ x e. A ( B u. C ) = ( U_ x e. A B u. U_ x e. A C ) $=
       ( vy cun ciun cv wcel wrex r19.43 elun rexbii eliun orbi12i 3bitr4i eqriv
       wo ) EABCDFZGZABCGZABDGZFZEHZSIZABJZUDUAIZUDUBIZRZUDTIUDUCIUDCIZUDDIZRZAB
@@ -35147,7 +35468,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The Kuratowski ordered pair
+  The Kuratowski ordered pair
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35231,9 +35552,10 @@ $)
       $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        More Boolean set operations
+  More Boolean set operations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35301,13 +35623,14 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-             NF Set Theory - add the Set Construction Axioms
+  NF Set Theory - add the Set Construction Axioms
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Introduce the set construction axioms
+  Introduce the set construction axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35415,9 +35738,11 @@ $)
        (Contributed by SF, 12-Jan-2015.) $)
     ax-sn $a |- E. y A. z ( z e. y <-> z = x ) $.
   $}
+
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Primitive forms for some axioms
+  Primitive forms for some axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35599,7 +35924,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Initial existence theorems
+  Initial existence theorems
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35777,7 +36102,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Singletons and pairs (continued)
+  Singletons and pairs (continued)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35874,9 +36199,10 @@ $)
       RVTXHIUMJUMKUMLUMUNUOURUPUSUT $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Kuratowski ordered pairs (continued)
+  Kuratowski ordered pairs (continued)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -35921,7 +36247,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Cardinal one, unit unions, and unit power classes
+  Cardinal one, unit unions, and unit power classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -36032,7 +36358,7 @@ $)
 
   ${
     $d A x y $.
-    $( Membership in ` ~P1 1c ` (Contributed by SF, 13-Jan-2015.) $)
+    $( Membership in ` ~P1 1c ` .  (Contributed by SF, 13-Jan-2015.) $)
     elpw11c $p |- ( A e. ~P1 1c <-> E. x A = { { x } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wrex wex elpw1 df-rex anbi1i 19.41v bitr4i
       wa el1c exbii bitri excom snex sneq eqeq2d ceqsexv 3bitri ) BDEFBCGZHZIZC
@@ -36040,7 +36366,7 @@ $)
       UTVBUIAUGRNUMUIAOPSTUPUNCKZAKUSUNCAUAVCURAUIURCULUKUBUMUHUQBUGULUCUDUESTU
       F $.
 
-    $( Membership in ` ~P1 ~P1 1c ` (Contributed by SF, 13-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 1c ` .  (Contributed by SF, 13-Jan-2015.) $)
     elpw121c $p |- ( A e. ~P1 ~P1 1c <-> E. x A = { { { x } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wrex elpw1 wa df-rex elpw11c anbi1i 19.41v
       wex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEZEFBCGZHZIZCUF
@@ -36048,7 +36374,7 @@ $)
       QZUILURUTVBUIAUGNOUPUIAPRSTUSUQCQZAQUOUQCAUAVCUNAUIUNCULUKUBUPUHUMBUGULUC
       UDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 1c ` (Contributed by SF, 14-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 1c ` .  (Contributed by SF, 14-Jan-2015.) $)
     elpw131c $p |- ( A e. ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { x } } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw121c anbi1i 19.41v
@@ -36057,7 +36383,7 @@ $)
       UPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUHUMBUGU
       LUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 1c ` .  (Contributed by SF,
        14-Jan-2015.) $)
     elpw141c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { x } } } } } ) $=
@@ -36067,7 +36393,7 @@ $)
       VAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUHUMBU
       GULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .  (Contributed by SF,
        14-Jan-2015.) $)
     elpw151c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { x } } } } } } ) $=
@@ -36077,7 +36403,7 @@ $)
       RCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUHUM
       BUGULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .  (Contributed by SF,
        14-Jan-2015.) $)
     elpw161c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { x } } } } } } } ) $=
@@ -36087,7 +36413,7 @@ $)
       AURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUH
       UMBUGULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .  (Contributed by SF,
        15-Jan-2015.) $)
     elpw171c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { x } } } } } } } } ) $=
@@ -36097,8 +36423,8 @@ $)
       MVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUP
       UHUMBUGULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
-       15-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .  (Contributed by
+       SF, 15-Jan-2015.) $)
     elpw181c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { { x } } } } } } } } } ) $=
@@ -36108,8 +36434,8 @@ $)
       UFMVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUB
       UPUHUMBUGULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by
-       SF, 24-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .  (Contributed
+       by SF, 24-Jan-2015.) $)
     elpw191c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { { { x } } } } } } } } } } ) $=
@@ -36119,7 +36445,7 @@ $)
       ICUFMVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUK
       UBUPUHUMBUGULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c `
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .
        (Contributed by SF, 24-Jan-2015.) $)
     elpw1101c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
@@ -36130,7 +36456,7 @@ $)
       SUICUFMVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCUL
       UKUBUPUHUMBUGULUCUDUESTTT $.
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c `
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` .
        (Contributed by SF, 24-Jan-2015.) $)
     elpw1111c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
@@ -36160,7 +36486,7 @@ $)
     ( vx cv c0 wss cab wceq cpw csn ss0b abbii df-pw df-sn 3eqtr4i ) ABZCDZAENC
     FZAECGCHOPANIJACKACLM $.
 
-  $( Compute the unit power class of ` (/) ` (Contributed by SF,
+  $( Compute the unit power class of ` (/) ` .  (Contributed by SF,
      22-Jan-2015.) $)
   pw10 $p |- ~P1 (/) = (/) $=
     ( vx c0 cpw1 cpw c1c cin csn df-pw1 ineq1i wceq cv wcel wn disj 0nel1c elsn
@@ -36298,7 +36624,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Kuratowski relationships
+  Kuratowski relationships
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -36409,8 +36735,8 @@ $)
        12-Jan-2015.) $)
     df-ssetk $a |- _S_k = { x | E. y E. z ( x = << y , z >> /\ y C_ z ) } $.
 
-    $( Define the Kuratowski image function.  See ~ opkelimagek for
-       membership.  (Contributed by SF, 12-Jan-2015.) $)
+    $( Define the Kuratowski image function.  See ~ opkelimagek for membership.
+       (Contributed by SF, 12-Jan-2015.) $)
     df-imagek $a |- Image_k A =
        ( ( _V X._k _V ) \
          ( ( Ins2_k _S_k (+) Ins3_k ( _S_k o._k `'_k SI_k A ) ) "_k
@@ -36503,7 +36829,7 @@ $)
 
   ${
     $d A x y $.
-    $( Membership in ` ( _V X._k _V ) ` (Contributed by SF, 13-Jan-2015.) $)
+    $( Membership in ` ( _V X._k _V ) ` .  (Contributed by SF, 13-Jan-2015.) $)
     elvvk $p |- ( A e. ( _V X._k _V ) <-> E. x E. y A = << x , y >> ) $=
       ( cvv cxpk wcel cv copk wceq wex elxpk vex pm3.2i biantru 2exbii bitr4i
       wa ) CDDEFCAGZBGZHIZRDFZSDFZQZQZBJAJTBJAJABCDDKTUDABUCTUAUBALBLMNOP $.
@@ -37315,7 +37641,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Kuratowski existence theorems
+  Kuratowski existence theorems
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -37913,7 +38239,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Definite description binder (inverted iota)
+  Definite description binder (inverted iota)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -38014,11 +38340,11 @@ $)
     $( Variable substitution in description binder.  Compare ~ sb8eu .
        (Contributed by NM, 18-Mar-2013.) $)
     sb8iota $p |- ( iota x ph ) = ( iota y [ y / x ] ph ) $=
-      ( vz vw cv wceq wb wal cab cuni wsb cio nfv sb8 sbbi nfsb nfxfr dfiota2
-      eqsb3 nfbi sbequ cbval equsb3 sblbis albii 3bitri abbii unieqi 3eqtr4i )
-      ABGEGZHZIZBJZEKZLABCMZCGULHZIZCJZEKZLABNUQCNUPVAUOUTEUOUNBFMZFJUNBCMZCJUT
-      UNBFUNFOPVBVCFCVBABFMZUMBFMZICAUMBFQVDVECABFCDRVEFGULHZCFBULUAVFCOSUBSVCF
-      OUNFCBUCUDVCUSCUMURABCCBEUEUFUGUHUIUJABETUQCETUK $.
+      ( vz vw weq wal cab cuni wsb cio nfv sb8 sbbi nfsb equsb3 nfxfr dfiota2
+      wb nfbi sbequ cbval sblbis albii 3bitri abbii unieqi 3eqtr4i ) ABEGZTZBHZ
+      EIZJABCKZCEGZTZCHZEIZJABLUNCLUMURULUQEULUKBFKZFHUKBCKZCHUQUKBFUKFMNUSUTFC
+      USABFKZUJBFKZTCAUJBFOVAVBCABFCDPVBFEGZCBFEQVCCMRUARUTFMUKFCBUBUCUTUPCUJUO
+      ABCBCEQUDUEUFUGUHABESUNCESUI $.
   $}
 
   ${
@@ -38260,7 +38586,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Finite cardinals
+  Finite cardinals
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -39066,7 +39392,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Deriving infinity
+  Deriving infinity
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -39241,60 +39567,59 @@ $)
       AIUGDOPTUCAECDQRUA $.
   $}
 
-  $( If cardinal addition is non-empty, then both addends are non-empty.
-     Theorem X.1.20 of [Rosser] p. 526.  (Contributed by SF, 18-Jan-2015.) $)
+  $( If cardinal addition is nonempty, then both addends are nonempty.  Theorem
+     X.1.20 of [Rosser] p. 526.  (Contributed by SF, 18-Jan-2015.) $)
   addcnnul $p |- ( ( A +c B ) =/= (/) -> ( A =/= (/) /\ B =/= (/) ) ) $=
     ( cplc wne wceq addceq1 addccom addcnul1 eqtri syl6eq necon3i addceq2 jca
     c0 ) ABCZNDANDBNDANONANEONBCZNANBFPBNCNNBGBHIJKBNONBNEOANCNBNALAHJKM $.
 
   ${
-     $d M m n p k t $. $d N m n p k t $. $d P m n p k t $.
-     $( Lemma for ~ preaddccan2 . Establish stratification for the induction
-        step.  (Contributed by SF, 30-Mar-2021.) $)
-     preaddccan2lem1 $p |- ( ( N e. Nn /\ P e. Nn ) ->
+    $d M m n p k t $.  $d N m n p k t $.  $d P m n p k t $.
+    $( Lemma for ~ preaddccan2 .  Establish stratification for the induction
+       step.  (Contributed by SF, 30-Mar-2021.) $)
+    preaddccan2lem1 $p |- ( ( N e. Nn /\ P e. Nn ) ->
      { m | ( ( ( m +c N ) =/= (/) /\ ( m +c N ) = ( m +c P ) ) -> N = P ) }
      e. _V ) $=
-       ( vt cv cplc c0 wceq wa cab cvv wcel cpw1 cimak copk 3bitr4i bitri pw1ex
-       wn vex vn vp wne cnnc addceq2 neeq1d eqeq1d anbi12d imbi1d abbidv eleq1d
-       wi eqeq2d anbi2d cun imor abbii unab eqtr4i cssetk cins3k cins2k cin c1c
-       wo ccompl csik csymdif cdif cimagek ccnvk csn elcompl elin 0ex opkelcnvk
-       elimaksn dfaddc2 eqeq2i eqcom opkelimagek notbii df-ne wrex rexv anbi12i
-       wex bitr4i exbii elimak addcex eqvinc abbi2i imakex imagekex cnvkex snex
-       addcexlem complex inex vvex eqeltrri abexv unex eqeltri vtocl2g ) BEZUAE
-       ZFZGUCZXIXGUBEZFZHZIZCAHZULZBJZKLXGCFZGUCZXRXLHZIZXOULZBJZKLXSXRXGAFZHZI
-       ZXOULZBJZKLUAUBCAUDUDXHCHZXQYCKYIXPYBBYIXNYAXOYIXJXSXMXTYIXIXRGXHCXGUEZU
-       FYIXIXRXLYJUGUHUIUJUKXKAHZYCYHKYKYBYGBYKYAYFXOYKXTYEXSYKXLYDXRXKAXGUEUMU
-       NUIUJUKXQXNSZBJZXOBJZUOZKXQYLXOVEZBJYOXPYPBXNXOUPUQYLXOBURUSYMYNUTVAZUTV
-       BZVCVDMMZNVFVAYRVBYQVBUTVGVGVAUOVHYSMMNVIZXHMZMZNZVJZVKZGVLZNZVFZUUDYTXK
-       MZMZNZVJZVCZVKZKNZVCZVFZYMKYLBUUQXGUUQLXGUUPLZSYLXGUUPBTZVMUURXNUURXGUUH
-       LZXGUUOLZIXNXGUUHUUOVNUUTXJUVAXMXGUUGLZSXIGHZSUUTXJUVBUVCGXGOUUELXGGOUUD
-       LZUVBUVCGXGUUDVOUUSVPUUEGXGVOUUSVQGXIHGUUCXGNZHUVCUVDXIUVEGXGXHVRZVSXIGV
-       TXGGUUCUUSVOWAPPWBXGUUGUUSVMXIGWCPDEZXGOUUNLZDKWDZUVGXIHZUVGXLHZIZDWGZUV
-       AXMUVIUVHDWGUVMUVHDWEUVHUVLDUVHXGUVGOZUUMLZUVLUVGXGUUMDTZUUSVPUVOUVNUUDL
-       ZUVNUULLZIUVLUVNUUDUULVNUVQUVJUVRUVKUVQUVGUVEHUVJXGUVGUUCUUSUVPWAXIUVEUV
-       GUVFVSWHUVRUVGUUKXGNZHUVKXGUVGUUKUUSUVPWAXLUVSUVGXGXKVRVSWHWFQQWIQDUUNKX
-       GUUSWJDXIXLXGXHUUSUATZWKWLPWFQWBQWMUUPUUHUUOUUGUUEUUFUUDUUCYTUUBWRUUAXHU
-       VTRRWNWOZWPGWQWNWSUUNKUUMUUDUULUWAUUKYTUUJWRUUIXKUBTRRWNWOWTWPXAWNWTWSXB
-       XOBXCXDXEXF $.
+      ( vt cv cplc c0 wceq wa cab cvv wcel wn cpw1 cimak vex copk 3bitr4i bitri
+      pw1ex vn vp wne wi cnnc addceq2 neeq1d eqeq1d imbi1d abbidv eleq1d eqeq2d
+      anbi12d anbi2d cun wo imor abbii unab eqtr4i cssetk cins3k cins2k cin c1c
+      ccompl csik csymdif cdif cimagek ccnvk csn elcompl 0ex opkelcnvk elimaksn
+      elin dfaddc2 eqeq2i eqcom opkelimagek notbii wrex wex rexv bitr4i anbi12i
+      df-ne exbii elimak addcex eqvinc abbi2i addcexlem imakex imagekex complex
+      cnvkex snex inex vvex eqeltrri abexv unex eqeltri vtocl2g ) BEZUAEZFZGUCZ
+      XIXGUBEZFZHZIZCAHZUDZBJZKLXGCFZGUCZXRXLHZIZXOUDZBJZKLXSXRXGAFZHZIZXOUDZBJ
+      ZKLUAUBCAUEUEXHCHZXQYCKYIXPYBBYIXNYAXOYIXJXSXMXTYIXIXRGXHCXGUFZUGYIXIXRXL
+      YJUHUMUIUJUKXKAHZYCYHKYKYBYGBYKYAYFXOYKXTYEXSYKXLYDXRXKAXGUFULUNUIUJUKXQX
+      NMZBJZXOBJZUOZKXQYLXOUPZBJYOXPYPBXNXOUQURYLXOBUSUTYMYNVAVBZVAVCZVDVENNZOV
+      FVBYRVCYQVCVAVGVGVBUOVHYSNNOVIZXHNZNZOZVJZVKZGVLZOZVFZUUDYTXKNZNZOZVJZVDZ
+      VKZKOZVDZVFZYMKYLBUUQXGUUQLXGUUPLZMYLXGUUPBPZVMUURXNUURXGUUHLZXGUUOLZIXNX
+      GUUHUUOVQUUTXJUVAXMXGUUGLZMXIGHZMUUTXJUVBUVCGXGQUUELXGGQUUDLZUVBUVCGXGUUD
+      VNUUSVOUUEGXGVNUUSVPGXIHGUUCXGOZHUVCUVDXIUVEGXGXHVRZVSXIGVTXGGUUCUUSVNWAR
+      RWBXGUUGUUSVMXIGWHRDEZXGQUUNLZDKWCZUVGXIHZUVGXLHZIZDWDZUVAXMUVIUVHDWDUVMU
+      VHDWEUVHUVLDUVHXGUVGQZUUMLZUVLUVGXGUUMDPZUUSVOUVOUVNUUDLZUVNUULLZIUVLUVNU
+      UDUULVQUVQUVJUVRUVKUVQUVGUVEHUVJXGUVGUUCUUSUVPWAXIUVEUVGUVFVSWFUVRUVGUUKX
+      GOZHUVKXGUVGUUKUUSUVPWAXLUVSUVGXGXKVRVSWFWGSSWISDUUNKXGUUSWJDXIXLXGXHUUSU
+      APZWKWLRWGSWBSWMUUPUUHUUOUUGUUEUUFUUDUUCYTUUBWNUUAXHUVTTTWOWPZWRGWSWOWQUU
+      NKUUMUUDUULUWAUUKYTUUJWNUUIXKUBPTTWOWPWTWRXAWOWTWQXBXOBXCXDXEXF $.
 
-     $( Cancellation law for natural addition with a non-null condition.
-     	(Contributed by SF, 29-Jan-2015.) $)
-     preaddccan2 $p |- ( ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) /\
+    $( Cancellation law for natural addition with a non-null condition.
+       (Contributed by SF, 29-Jan-2015.) $)
+    preaddccan2 $p |- ( ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) /\
      ( M +c N ) =/= (/) ) -> ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
-       ( vm vk cnnc wcel cplc c0 wne wa wceq wi c0c c1c addceq1 eqeq12d anbi12d
-       neeq1d imbi1d w3a cv cvv preaddccan2lem1 weq addc32 syl6eq biimpi adantl
-       addcid2 eqeq12i addcnnul simpld simpll simplrl nncaddccl syl2anc simplrr
-       a1i ad2antrl simprr simprl prepeano4 syl22anc jca ex imim1d findsd 3impb
-       expdimp addceq2 impbid1 ) BFGZCFGZAFGZUAZBCHZIJZKVQBAHZLZCALZVPVRVTWAVMV
-       NVOVRVTKZWAMZDUBZCHZIJZWEWDAHZLZKZWAMNCHZIJZWJNAHZLZKZWAMZEUBZCHZIJZWQWP
-       AHZLZKZWAMWQOHZIJZXBWSOHZLZKZWAMWCVNVOKZDEBUCADCUDWDNLZWIWNWAXHWFWKWHWMX
-       HWEWJIWDNCPZSXHWEWJWGWLXIWDNAPQRTDEUEZWIXAWAXJWFWRWHWTXJWEWQIWDWPCPZSXJW
-       EWQWGWSXKWDWPAPQRTWDWPOHZLZWIXFWAXMWFXCWHXEXMWEXBIXMWEXLCHXBWDXLCPWPOCUF
-       UGZSXMWEXBWGXDXNXMWGXLAHXDWDXLAPWPOAUFUGQRTWDBLZWIWBWAXOWFVRWHVTXOWEVQIW
-       DBCPZSXOWEVQWGVSXPWDBAPQRTWOXGWMWAWKWMWAWJCWLACUJAUJUKUHUIUSWPFGZXGKZXFX
-       AWAXRXFXAXRXFKZWRWTXCWRXRXEXCWROIJWQOULUMUTXSWQFGZWSFGZXEXCWTXSXQVNXTXQX
-       GXFUNZXQVNVOXFUOWPCUPUQXSXQVOYAYBXQVNVOXFURWPAUPUQXRXCXEVAXRXCXEVBWQWSVC
-       VDVEVFVGVHVIVJCABVKVL $.
+      ( vm vk cnnc wcel cplc c0 wne wceq c0c c1c addceq1 neeq1d eqeq12d anbi12d
+      wa wi imbi1d w3a cv cvv preaddccan2lem1 weq addc32 syl6eq addcid2 eqeq12i
+      biimpi adantl a1i addcnnul simpld ad2antrl simpll simplrl syl2anc simplrr
+      nncaddccl simprr simprl prepeano4 syl22anc ex imim1d findsd 3impb expdimp
+      jca addceq2 impbid1 ) BFGZCFGZAFGZUAZBCHZIJZRVQBAHZKZCAKZVPVRVTWAVMVNVOVR
+      VTRZWASZDUBZCHZIJZWEWDAHZKZRZWASLCHZIJZWJLAHZKZRZWASZEUBZCHZIJZWQWPAHZKZR
+      ZWASWQMHZIJZXBWSMHZKZRZWASWCVNVORZDEBUCADCUDWDLKZWIWNWAXHWFWKWHWMXHWEWJIW
+      DLCNZOXHWEWJWGWLXIWDLANPQTDEUEZWIXAWAXJWFWRWHWTXJWEWQIWDWPCNZOXJWEWQWGWSX
+      KWDWPANPQTWDWPMHZKZWIXFWAXMWFXCWHXEXMWEXBIXMWEXLCHXBWDXLCNWPMCUFUGZOXMWEX
+      BWGXDXNXMWGXLAHXDWDXLANWPMAUFUGPQTWDBKZWIWBWAXOWFVRWHVTXOWEVQIWDBCNZOXOWE
+      VQWGVSXPWDBANPQTWOXGWMWAWKWMWAWJCWLACUHAUHUIUJUKULWPFGZXGRZXFXAWAXRXFXAXR
+      XFRZWRWTXCWRXRXEXCWRMIJWQMUMUNUOXSWQFGZWSFGZXEXCWTXSXQVNXTXQXGXFUPZXQVNVO
+      XFUQWPCUTURXSXQVOYAYBXQVNVOXFUSWPAUTURXRXCXEVAXRXCXEVBWQWSVCVDVJVEVFVGVHV
+      ICABVKVL $.
   $}
 
   ${
@@ -40013,8 +40338,8 @@ $)
     $d a b $.  $d a n $.  $d a p $.  $d b n $.  $d b p $.  $d M a $.  $d M b $.
     $d M n $.  $d M p $.  $d n p $.  $d a q $.  $d b q $.  $d M q $.  $d n q $.
     $d p q $.
-    $( For any non-empty finite cardinal, there is a unique natural containing
-       a unit power class of one of its elements.  Theorem X.1.27 of [Rosser]
+    $( For any nonempty finite cardinal, there is a unique natural containing a
+       unit power class of one of its elements.  Theorem X.1.27 of [Rosser]
        p. 528.  (Contributed by SF, 22-Jan-2015.) $)
     nnpw1ex $p |- ( ( M e. Nn /\ M =/= (/) ) ->
       E! n e. Nn E. a e. M ~P1 a e. n ) $=
@@ -40164,7 +40489,7 @@ $)
   ${
     $d a n $.  $d M a $.  $d M n $.
 
-    $( Properties of the finite T operator for a non-empty natural.  Theorem
+    $( Properties of the finite T operator for a nonempty natural.  Theorem
        X.1.28 of [Rosser] p. 528.  (Contributed by SF, 22-Jan-2015.) $)
     tfinprop $p |- ( ( M e. Nn /\ M =/= (/) ) ->
       ( _T[fin] M e. Nn /\ E. a e. M ~P1 a e. _T[fin] M ) ) $=
@@ -40178,7 +40503,7 @@ $)
 
   ${
     $d M x $.
-    $( If ` M ` is a non-empty natural, then ` _T[fin] M ` is also non-empty.
+    $( If ` M ` is a nonempty natural, then ` _T[fin] M ` is also nonempty.
        Corollary 1 of Theorem X.1.28 of [Rosser] p. 528.  (Contributed by SF,
        23-Jan-2015.) $)
     tfinnnul $p |- ( ( M e. Nn /\ M =/= (/) ) -> _T[fin] M =/= (/) ) $=
@@ -40258,7 +40583,7 @@ $)
 
   ${
     $d M a b c $.  $d N a b c $.
-    $( The finite T operation distributes over non-empty cardinal sum.  Theorem
+    $( The finite T operation distributes over nonempty cardinal sum.  Theorem
        X.1.32 of [Rosser] p. 529.  (Contributed by SF, 26-Jan-2015.) $)
     tfindi $p |- ( ( M e. Nn /\ N e. Nn /\ ( M +c N ) =/= (/) ) ->
        _T[fin] ( M +c N ) = ( _T[fin] M +c _T[fin] N ) ) $=
@@ -40562,13 +40887,13 @@ $)
 
   ${
     $d A n x $.
-    $( An even number is non-empty.  (Contributed by SF, 22-Jan-2015.) $)
+    $( An even number is nonempty.  (Contributed by SF, 22-Jan-2015.) $)
     evennnul $p |- ( A e. Even[fin] -> A =/= (/) ) $=
       ( vn vx cevenfin wcel cv cplc wceq cnnc wrex c0 wne eqeq1 rexbidv anbi12d
       wa neeq1 df-evenfin elab2g ibi simprd ) ADEZABFZUCGZHZBIJZAKLZUBUFUGPZCFZ
       UDHZBIJZUIKLZPUHCADDUIAHZUKUFULUGUMUJUEBIUIAUDMNUIAKQOCBRSTUA $.
 
-    $( An odd number is non-empty.  (Contributed by SF, 22-Jan-2015.) $)
+    $( An odd number is nonempty.  (Contributed by SF, 22-Jan-2015.) $)
     oddnnul $p |- ( A e. Odd[fin] -> A =/= (/) ) $=
       ( vn vx coddfin wcel cv cplc c1c wceq cnnc wrex c0 wa eqeq1 rexbidv neeq1
       wne anbi12d df-oddfin elab2g ibi simprd ) ADEZABFZUDGHGZIZBJKZALQZUCUGUHM
@@ -40631,8 +40956,8 @@ $)
 
   ${
     $d x k n m $.
-    $( Every non-empty finite cardinal is either even or odd.  Theorem X.1.35
-       of [Rosser] p. 529.  (Contributed by SF, 20-Jan-2015.) $)
+    $( Every nonempty finite cardinal is either even or odd.  Theorem X.1.35 of
+       [Rosser] p. 529.  (Contributed by SF, 20-Jan-2015.) $)
     evenoddnnnul $p |- ( Even[fin] u. Odd[fin] ) = ( Nn \ { (/) } ) $=
       ( vx vn vm vk cevenfin coddfin cnnc c0 wss cv wcel wne ssriv wi c0c neeq1
       c1c wo eleq1 imbi12d cun cdif wa evennn evennnul eldifsn sylanbrc oddnnul
@@ -41123,13 +41448,13 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     srelk.2 $e |- B e. _V $.
     $( Binary relationship form of the ` _S[fin] ` relationship.  (Contributed
        by SF, 23-Jan-2015.) $)
-    srelk $p |- ( << A , B >> e. ( ( Nn X._k Nn ) i^i ( (
- Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k _S_k (+) Ins2_k SI_k
- _S_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c )
-    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k
-    ~P1 ~P1 1c ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
-                                                             ~P1 1c ) ) <->
-        _S[fin] ( A , B ) ) $=
+    srelk $p |- ( << A , B >> e. ( ( Nn X._k Nn ) i^i ( ( Ins3_k ( (
+                Ins3_k SI_k ( ( ~P 1c X._k _V ) \
+              ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i
+                Ins2_k _S_k ) "_k ~P1 ~P1 1c )
+        i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k
+      ~P1 ~P1 1c ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1 ~P1 1c ) )
+                                                     <-> _S[fin] ( A , B ) ) $=
       ( vx vt vy vz copk cnnc wcel cssetk wa wex wceq exbii 3bitr4i snex 3bitri
       csn cxpk c1c cpw cvv cins3k csik cins2k csymdif cpw1 cimak cdif ccompl cv
       cin wsfin opkelxpk wrex opkex elimak elpw131c anbi1i 19.41v bitr4i df-rex
@@ -41655,7 +41980,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d x y z $.
-    $( If the universe is finite, then ` Sp[fin] ` is a subset of the non-empty
+    $( If the universe is finite, then ` Sp[fin] ` is a subset of the nonempty
        naturals.  Theorem X.1.53 of [Rosser] p. 534.  (Contributed by SF,
        27-Jan-2015.) $)
     vfinspnn $p |- ( _V e. Fin -> Sp[fin] C_ ( Nn \ { (/) } ) ) $=
@@ -41704,7 +42029,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d N a $.
-    $( If the universe is finite, then the T-raising of all non-empty naturals
+    $( If the universe is finite, then the T-raising of all nonempty naturals
        are no greater than the size of ` 1c ` .  Theorem X.1.56 of [Rosser]
        p. 534.  (Contributed by SF, 30-Jan-2015.) $)
     vfintle $p |- ( ( _V e. Fin /\ N e. Nn /\ N =/= (/) ) ->
@@ -41896,8 +42221,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d a x $.
     $( If the universe is finite, then ` Sp[fin] ` is equal to its T raisings
-       and the cardinality of the universe.  Theorem X.1.61 of [Rosser]
-       p. 536.  (Contributed by SF, 29-Jan-2015.) $)
+       and the cardinality of the universe.  Theorem X.1.61 of [Rosser] p. 536.
+       (Contributed by SF, 29-Jan-2015.) $)
     vfinspeqtncv $p |- ( _V e. Fin ->
                   Sp[fin] = ( { a | E. x e. Sp[fin] a = _T[fin] x } u.
                   { Nc[fin] _V } ) ) $=
@@ -41999,16 +42324,17 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     ( cplc wceq cnnc wcel w3a addccom eqeq12i wb addccan2 3coml syl5bb ) BADZCA
     DZEABDZACDZEZBFGZCFGZAFGZHBCEZOQPRBAICAIJUBTUASUCKCABLMN $.
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                Ordered Pairs, Relationships, and Functions
+  Ordered Pairs, Relationships, and Functions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Ordered Pairs
+  Ordered Pairs
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -42140,7 +42466,7 @@ $)
       MRUVGUVAXTMUUNWIYMXKUUKWJXTMUUNWJWOVBWKXTYAXKVQVBWLWMWPWLVCWLWPXCXQYTWQYH
       YDCWRYGCXBYBWSYDCWTVNT $.
 
-    $( Lemma for ~ dfop2 (Contributed by SF, 2-Jan-2015.) $)
+    $( Lemma for ~ dfop2 .  (Contributed by SF, 2-Jan-2015.) $)
     dfop2lem2 $p |- ( ~ ( ( Ins2_k _S_k (+)
      Ins3_k ( ( `'_k Image_k ( ( Image_k
       ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
@@ -42193,8 +42519,8 @@ $)
 
   ${
     $d x y A $.
-    $( Express the first projection operator via the set construction
-       functors.  (Contributed by SF, 2-Jan-2015.) $)
+    $( Express the first projection operator via the set construction functors.
+       (Contributed by SF, 2-Jan-2015.) $)
     dfproj12 $p |- Proj1 A =
      ( `'_k Image_k ( ( Image_k
       ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
@@ -42355,19 +42681,17 @@ $)
     SVAWNAQBVFVGVH $.
 
   ${
-     projex.1 $e |- A e. _V $.
+    projex.1 $e |- A e. _V $.
+    $( The first projection of a set is a set.  (Contributed by Scott Fenton,
+       16-Apr-2021.) $)
+    proj1ex $p |- Proj1 A e. _V $=
+      ( cvv wcel cproj1 proj1exg ax-mp ) ACDAECDBACFG $.
 
-     $( The first projection of a set is a set.  (Contributed by Scott Fenton,
-        16-Apr-2021.) $)
-     proj1ex $p |- Proj1 A e. _V $=
-       ( cvv wcel cproj1 proj1exg ax-mp ) ACDAECDBACFG $.
-
-     $( The second projection of a set is a set.  (Contributed by Scott Fenton,
-        16-Apr-2021.) $)
-     proj2ex $p |- Proj2 A e. _V $=
-       ( cvv wcel cproj2 proj2exg ax-mp ) ACDAECDBACFG $.
+    $( The second projection of a set is a set.  (Contributed by Scott Fenton,
+       16-Apr-2021.) $)
+    proj2ex $p |- Proj2 A e. _V $=
+      ( cvv wcel cproj2 proj2exg ax-mp ) ACDAECDBACFG $.
   $}
-
 
   ${
     $d A x y z $.  $d B x y z $.
@@ -42646,9 +42970,8 @@ $)
   ${
     $d A x y z w $.
     phiall.1 $e |- A e. _V $.
-
-    $( Lemma for ~ phiall .  Any set of numbers without zero is the
-       Phi of a set.  (Contributed by Scott Fenton, 14-Apr-2021.) $)
+    $( Lemma for ~ phiall .  Any set of numbers without zero is the Phi of a
+       set.  (Contributed by Scott Fenton, 14-Apr-2021.) $)
     phialllem1 $p |- ( ( A C_ Nn /\ -. 0c e. A ) -> E. x A = Phi x ) $=
       ( vz vy vw cnnc c0c wcel wa cv c1c wceq wrex cab eqeq2d cssetk cpw1 cimak
       cins3k wss wn cplc crab cphi wex weq wo eleq1 biimpcd con3d adantll ssel2
@@ -42671,9 +42994,8 @@ $)
       YEYDUVEUVJDXFZWSYDYEUVFUVLUVJWTYFUVKYDYELXAXBXCXDWAXGUVGBUVFUVEUVDUVCXEUV
       BLXHXIXIXJXKXLCXJXMXNXQXOYLYIMYMYJBYLYIXPPXRXS $.
 
-
-    $( Lemma for ~ phiall .  Any set without ` 0c ` is equal to the ` Phi `
-       of a set.  (Contributed by Scott Fenton, 8-Apr-2021.) $)
+    $( Lemma for ~ phiall .  Any set without ` 0c ` is equal to the ` Phi ` of
+       a set.  (Contributed by Scott Fenton, 8-Apr-2021.) $)
     phialllem2 $p |- ( -. 0c e. A -> E. x A = Phi x ) $=
       ( vy c0c wcel wn cnnc cin cv cphi wceq wex wss inss2 nncex cun eqtri syl
       c0 inss1 sseli con3i phialllem1 sylancr uncom inundif uneq2 syl5eqr phiun
@@ -42696,21 +43018,21 @@ $)
   $}
 
   ${
-     $d A x y z $.
-     $( Any class is equal to an ordered pair.  (Contributed by Scott Fenton,
-        8-Apr-2021.) $)
-     opeq $p |- A = <. Proj1 A , Proj2 A >. $=
-       ( vx vy vz cv cphi wceq wrex cab cun wex crab wcel wa rexeqi rexab ancom
-       eleq1d 3bitri eqtr4i cproj1 cop c0c csn df-op df-proj1 weq phieq pm5.32i
-       cproj2 eleq1 bitr4i exbii 19.41v abbii df-rab df-proj2 uneq1d uneq12i wo
-       unrab rabid2 vex phiall 19.43 mpbi a1i mprgbir 3eqtrri ) AUAZAUJZUBBEZCE
-       ZFZGZCVJHZBIZVLVNUCUDZJZGZCVKHZBIZJVOCKZBALZVTCKZBALZJZABCVJVKUEVQWDWBWF
-       VQVLAMZWCNZBIWDVPWIBVPVOCDEZFZAMZDIZHVNAMZVONZCKZWIVOCVJWMDAUFOWLWNVOCDD
-       CUGZWKVNAWJVMUHZRPWPVOWHNZCKWCWHNWIWOWSCWOVOWNNWSWNVOQVOWHWNVLVNAUKUIULU
-       MVOWHCUNWCWHQSSUOWCBAUPTWBWHWENZBIWFWAWTBWAVTCWKVRJZAMZDIZHVSAMZVTNZCKZW
-       TVTCVKXCDAUQOXBXDVTCDWQXAVSAWQWKVNVRWRURRPXFVTWHNZCKWEWHNWTXEXGCXEVTXDNX
-       GXDVTQVTWHXDVLVSAUKUIULUMVTWHCUNWEWHQSSUOWEBAUPTUSWGWCWEUTZBALZAWCWEBAVA
-       AXIGXHBAXHBAVBXHWHVOVTUTCKXHCVLBVCVDVOVTCVEVFVGVHTVI $.
+    $d A x y z $.
+    $( Any class is equal to an ordered pair.  (Contributed by Scott Fenton,
+       8-Apr-2021.) $)
+    opeq $p |- A = <. Proj1 A , Proj2 A >. $=
+      ( vx vy vz cv cphi wceq wrex cab cun wex crab wcel wa rexeqi eleq1d rexab
+      ancom 3bitri eqtr4i cproj1 cop c0c csn df-op df-proj1 phieq eleq1 pm5.32i
+      cproj2 weq bitr4i exbii 19.41v abbii df-rab df-proj2 uneq1d uneq12i unrab
+      wo rabid2 vex phiall 19.43 mpbi a1i mprgbir 3eqtrri ) AUAZAUJZUBBEZCEZFZG
+      ZCVJHZBIZVLVNUCUDZJZGZCVKHZBIZJVOCKZBALZVTCKZBALZJZABCVJVKUEVQWDWBWFVQVLA
+      MZWCNZBIWDVPWIBVPVOCDEZFZAMZDIZHVNAMZVONZCKZWIVOCVJWMDAUFOWLWNVOCDDCUKZWK
+      VNAWJVMUGZPQWPVOWHNZCKWCWHNWIWOWSCWOVOWNNWSWNVORVOWHWNVLVNAUHUIULUMVOWHCU
+      NWCWHRSSUOWCBAUPTWBWHWENZBIWFWAWTBWAVTCWKVRJZAMZDIZHVSAMZVTNZCKZWTVTCVKXC
+      DAUQOXBXDVTCDWQXAVSAWQWKVNVRWRURPQXFVTWHNZCKWEWHNWTXEXGCXEVTXDNXGXDVTRVTW
+      HXDVLVSAUHUIULUMVTWHCUNWEWHRSSUOWEBAUPTUSWGWCWEVAZBALZAWCWEBAUTAXIGXHBAXH
+      BAVBXHWHVOVTVACKXHCVLBVCVDVOVTCVEVFVGVHTVI $.
 
     $( A class is a set iff it is equal to an ordered pair.  (Contributed by
        Scott Fenton, 19-Apr-2021.) $)
@@ -42725,13 +43047,12 @@ $)
     opeqex $p |- ( A e. V -> E. x E. y A = <. x , y >. ) $=
       ( wcel cvv cv cop wceq wex elex opeqexb sylib ) CDECFECAGBGHIBJAJCDKABCLM
       $.
-
   $}
 
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Ordered-pair class abstractions (class builders)
+  Ordered-pair class abstractions (class builders)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -42929,9 +43250,10 @@ $)
       SUE $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                     Binary relations
+  Binary relations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -43393,7 +43715,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Ordered-pair class abstractions (cont.)
+  Ordered-pair class abstractions (cont.)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -43634,7 +43956,7 @@ $)
 
   ${
     $d z ph $.  $d z x $.  $d z y $.
-    $( Non-empty ordered pair class abstraction.  (Contributed by NM,
+    $( Nonempty ordered pair class abstraction.  (Contributed by NM,
        10-Oct-2007.) $)
     opabn0 $p |- ( { <. x , y >. | ph } =/= (/) <-> E. x E. y ph ) $=
       ( vz copab c0 wne cv wcel wex cop wceq wa n0 elopab exbii exrot3 vex opex
@@ -43646,7 +43968,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Set construction functions
+  Set construction functions
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -44708,7 +45030,7 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Epsilon and identity relations
+  Epsilon and identity relations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -44783,7 +45105,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Functions and relations
+  Functions and relations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -44889,8 +45211,8 @@ $)
 
     $( Define a function.  Definition 10.1 of [Quine] p. 65.  For alternate
        definitions, see ~ dffun2 , ~ dffun3 , ~ dffun4 , ~ dffun5 , ~ dffun6 ,
-       ~ dffun7 , ~ dffun8 , and ~ dffun9 .  (Contributed by SF,
-       5-Jan-2015.) (Revised by Scott Fenton, 14-Apr-2021.) $)
+       ~ dffun7 , ~ dffun8 , and ~ dffun9 .  (Contributed by SF, 5-Jan-2015.)
+       (Revised by Scott Fenton, 14-Apr-2021.) $)
     df-fun $a |- ( Fun A <-> ( A o. `' A ) C_ _I ) $.
 
     $( Define a function with domain.  Definition 6.15(1) of [TakeutiZaring]
@@ -45057,8 +45379,8 @@ $)
 
   ${
     $d A w y z $.  $d B w y z $.  $d C w y z $.  $d D w y z $.  $d w x y z $.
-    $( Distribute proper substitution through the cross product of two
-       classes.  (Contributed by Alan Sare, 10-Nov-2012.) $)
+    $( Distribute proper substitution through the cross product of two classes.
+       (Contributed by Alan Sare, 10-Nov-2012.) $)
     csbxpg $p |- ( A e. D -> [_ A / x ]_ ( B X. C ) =
                 ( [_ A / x ]_ B X. [_ A / x ]_ C ) ) $=
       ( vz vw vy wcel cv wa wex cab csb cxp wsbc sbcexg sbcang sbcel2g bitrd
@@ -45107,7 +45429,6 @@ $)
       USDFGQRSUTEPZVHURUMVJVGUPUQVJVFUNVBUOUTEDGTUTEFGQUEUFSVAUTCOZGLZKZUSVKGLZ
       NVECFIVKFPZVMVCVNVDVOVLVBVAVKFUTGTUGVKFUSGTRHUHUIUJUB $.
   $}
-
 
   ${
     $d w y z A $.  $d w y z B $.  $d w x y z C $.
@@ -45161,6 +45482,7 @@ $)
       RWFWTJZXRLZLYAXSLXTXCYBWRWFDWTXAVLVMWRYAXRVNYAXQXSYAXOXQAWSVRAEVOTVPVSVQX
       SWOEWFXFXQWRWMXRWNWMEAVTXQXACDXQCXACXAPAEXPWAWBRSWCTWDWE $.
   $}
+
   ${
     $d y A $.  $d y B $.  $d x y C $.  $d x y D $.  $d x E $.
     $( Membership in a union of Cartesian products.  Analogue of ~ elxp for
@@ -45187,7 +45509,6 @@ $)
       EAUNUEURDUFZVHVAVKVEVLVGUQUTURDEUGUHVLVIVCVJVDURDBUIVLCFEGUOUJUKABCEULUMU
       P $.
   $}
-
 
   ${
     $d x y z A $.  $d x z B $.  $d y z ph $.  $d x ps $.
@@ -45424,10 +45745,10 @@ $)
 
   $( The cross product of the universe with itself is the universe.
      (Contributed by Scott Fenton, 14-Apr-2021.) $)
-   xpvv $p |- ( _V X. _V ) = _V $=
-     ( vx cvv cxp wceq cv wcel eqv cproj1 cproj2 cop vex proj1ex proj2ex opelxp
-     opeq mpbir2an eqeltri mpgbir ) BBCZBDAEZSFAASGTTHZTIZJZSTOUCSFUABFUBBFTAKZ
-     LTUDMUAUBBBNPQR $.
+  xpvv $p |- ( _V X. _V ) = _V $=
+    ( vx cvv cxp wceq cv wcel eqv cproj1 cproj2 cop opeq proj1ex proj2ex opelxp
+    vex mpbir2an eqeltri mpgbir ) BBCZBDAEZSFAASGTTHZTIZJZSTKUCSFUABFUBBFTAOZLT
+    UDMUAUBBBNPQR $.
 
   ${
     $d x y z w A $.  $d x y z w B $.
@@ -45445,7 +45766,7 @@ $)
       UFZSVPVGVDDVQSQRUJVAVDCVAUKZTVAVDDVRTUGUHUI $.
 
     $( Extensionality principle for relations.  Theorem 3.2(ii) of [Monk1]
-       p. 33.  (Contributed by NM, 2-Aug-1994.) (Revised by Scott Fenton,
+       p. 33.  (Contributed by NM, 2-Aug-1994.)  (Revised by Scott Fenton,
        14-Apr-2021.) $)
     eqrel $p |- ( A = B <->
                 A. x A. y ( <. x , y >. e. A <-> <. x , y >. e. B ) ) $=
@@ -45457,7 +45778,7 @@ $)
        19-Apr-2021.) $)
     ssopr $p |- ( A C_ B <->
                 A. x A. y A. z ( <. <. x , y >. , z >. e. A ->
-		<. <. x , y >. , z >. e. B ) ) $=
+                <. <. x , y >. , z >. e. B ) ) $=
       ( vw wss cv cop wcel wi wal ssrel wex cvv vex albii alrot3 eleq1d 3bitri
       alcom bitri wceq opeqex ax-mp 19.23vv bitr4i opeq1 imbi12d ceqsalv 2albii
       a1bi opex ) DEGZFHZCHZIZDJZUQEJZKZFLZCLZAHZBHZIZUPIZDJZVFEJZKZBLALZCLVICL
@@ -45469,30 +45790,28 @@ $)
        19-Apr-2021.) $)
     eqopr $p |- ( A = B <->
                 A. x A. y A. z ( <. <. x , y >. , z >. e. A <->
-		<. <. x , y >. , z >. e. B ) ) $=
+                <. <. x , y >. , z >. e. B ) ) $=
       ( wss wa cv cop wcel wi wal wceq ssopr anbi12i eqss 2albiim albii 19.26
       wb bitri 3bitr4i ) DEFZEDFZGAHBHICHIZDJZUEEJZKCLBLZALZUGUFKCLBLZALZGZDEMU
       FUGTCLBLZALZUCUIUDUKABCDENABCEDNODEPUNUHUJGZALULUMUOAUFUGBCQRUHUJASUAUB
       $.
   $}
 
-
   ${
-    $d x y A $. $d x y B $. 
+    $d x y A $.  $d x y B $.
     relssi.1 $e |- ( <. x , y >. e. A -> <. x , y >. e. B ) $.
     $( Inference from subclass principle for relations.  (Contributed by NM,
-       31-Mar-1998.) (Revised by Scott Fenton, 15-Apr-2021.) $)
+       31-Mar-1998.)  (Revised by Scott Fenton, 15-Apr-2021.) $)
     relssi $p |- A C_ B $=
       ( wss cv cop wcel wi wal ssrel ax-gen mpgbir ) CDFAGBGHZCIODIJZBKAABCDLPB
       EMN $.
   $}
 
   ${
-    $d x y A $. $d x y B $. $d x y ph $.
+    $d x y A $.  $d x y B $.  $d x y ph $.
     relssdv.1 $e |- ( ph -> ( <. x , y >. e. A -> <. x , y >. e. B ) ) $.
-    
     $( Deduction from subclass principle for relations.  (Contributed by set.mm
-       contributors, 11-Sep-2004.) (Revised by Scott Fenton, 16-Apr-2021.) $)
+       contributors, 11-Sep-2004.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
     relssdv $p |- ( ph -> A C_ B ) $=
       ( cv cop wcel wi wal wss alrimivv ssrel sylibr ) ABGCGHZDIPEIJZCKBKDELAQB
       CFMBCDENO $.
@@ -45502,7 +45821,7 @@ $)
     $d x y A $.  $d x y B $.
     eqrelriv.1 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
     $( Inference from extensionality principle for relations.  (Contributed by
-       FL, 15-Oct-2012.) (Revised by Scott Fenton, 16-Apr-2021.) $)
+       FL, 15-Oct-2012.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
     eqrelriv $p |- A = B $=
       ( wceq cv cop wcel wb wal eqrel ax-gen mpgbir ) CDFAGBGHZCIODIJZBKAABCDLP
       BEMN $.
@@ -45512,7 +45831,7 @@ $)
     $d x y A $.  $d x y B $.
     eqbrriv.1 $e |- ( x A y <-> x B y ) $.
     $( Inference from extensionality principle for relations.  (Contributed by
-       NM, 12-Dec-2006.) (Revised by Scott Fenton, 16-Apr-2021.) $)
+       NM, 12-Dec-2006.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
     eqbrriv $p |- A = B $=
       ( cv wbr cop wcel df-br 3bitr3i eqrelriv ) ABCDAFZBFZCGMNDGMNHZCIODIEMNCJ
       MNDJKL $.
@@ -45522,7 +45841,7 @@ $)
     $d x y A $.  $d x y B $.  $d ph x $.  $d ph y $.
     eqrelrdv.1 $e |- ( ph -> ( <. x , y >. e. A <-> <. x , y >. e. B ) ) $.
     $( Deduce equality of relations from equivalence of membership.
-       (Contributed by Rodolfo Medina, 10-Oct-2010.) (Revised by Scott Fenton,
+       (Contributed by Rodolfo Medina, 10-Oct-2010.)  (Revised by Scott Fenton,
        16-Apr-2021.) $)
     eqrelrdv $p |- ( ph -> A = B ) $=
       ( cv cop wcel wb wal wceq alrimivv eqrel sylibr ) ABGCGHZDIPEIJZCKBKDELAQ
@@ -45530,10 +45849,9 @@ $)
   $}
 
   ${
-    $d x y z A $. $d x y z B $.
+    $d x y z A $.  $d x y z B $.
     eqoprriv.1 $e |- ( <. <. x , y >. , z >. e. A <->
     <. <. x , y >. , z >. e. B ) $.
-
     $( Equality inference for operators.  (Contributed by Scott Fenton,
        19-Apr-2021.) $)
     eqoprriv $p |- A = B $=
@@ -45541,12 +45859,10 @@ $)
       DEMQBCFNO $.
   $}
 
-
   ${
-    $d x y z A $. $d x y z B $. $d x y z ph $.
+    $d x y z A $.  $d x y z B $.  $d x y z ph $.
     eqoprrdv.1 $e |- ( ph -> ( <. <. x , y >. , z >. e. A <->
     <. <. x , y >. , z >. e. B ) ) $.
-
     $( Equality deduction for operators.  (Contributed by Scott Fenton,
        19-Apr-2021.) $)
     eqoprrdv $p |- ( ph -> A = B ) $=
@@ -45657,16 +45973,15 @@ $)
       ( cxp cin inxp inidm xpeq2i eqtr2i ) ACDBCDEABEZCCEZDJCDACBCFKCJCGHI $.
   $}
 
-
   ${
-     $d x y A $.
-     opabbi2i.1 $e |- ( <. x , y >. e. A <-> ph ) $.
-     $( Equality of a class variable and an ordered pair abstractions
-     	(inference rule). Compare ~ abbi2i .  (Contributed by Scott Fenton,
-	18-Apr-2021.) $)
-     opabbi2i $p |- A = { <. x , y >. | ph } $=
-       ( cv cop wcel copab opabid2 opabbii eqtr3i ) BFCFGDHZBCIDABCIBCDJMABCEKL
-       $.
+    $d x y A $.
+    opabbi2i.1 $e |- ( <. x , y >. e. A <-> ph ) $.
+    $( Equality of a class variable and an ordered pair abstractions (inference
+       rule).  Compare ~ abbi2i .  (Contributed by Scott Fenton,
+       18-Apr-2021.) $)
+    opabbi2i $p |- A = { <. x , y >. | ph } $=
+      ( cv cop wcel copab opabid2 opabbii eqtr3i ) BFCFGDHZBCIDABCIBCDJMABCEKL
+      $.
   $}
 
   ${
@@ -46141,7 +46456,7 @@ $)
       LBHPUOCHPQURUMHBCAUGTUSUPHBCAUHTQ $.
 
     $( A class is empty iff its domain is empty.  (Contributed by set.mm
-       contributors, 15-Sep-2004.) (Revised by Scott Fenton, 17-Apr-2021.) $)
+       contributors, 15-Sep-2004.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
     dmeq0 $p |- ( A = (/) <-> dom A = (/) ) $=
       ( vx vy cv cdm wcel wn wal cop c0 wb wceq wex eldm2 notbii alnex noel nbn
       albii 3bitr2i eq0 eqrel 3bitr4ri ) BDZAEZFZGZBHUDCDIZAFZUHJFZKZCHZBHUEJLA
@@ -46180,12 +46495,12 @@ $)
     ( cxp wceq cdm dmeq dmxpid 3eqtr3g xpeq12 anidms impbii ) AACZBBCZDZABDZNLE
     MEABLMFAGBGHONABABIJK $.
 
-  $( The first member of an ordered pair in a class belongs to the domain
-     of the class.  (Contributed by set.mm contributors, 28-Jul-2004.)
-     (Revised by Scott Fenton, 18-Apr-2021.) $)
+  $( The first member of an ordered pair in a class belongs to the domain of
+     the class.  (Contributed by set.mm contributors, 28-Jul-2004.)  (Revised
+     by Scott Fenton, 18-Apr-2021.) $)
   proj1eldm $p |- ( B e. A -> Proj1 B e. dom A ) $=
-    ( wcel cproj1 cproj2 cop cdm opeq eleq1i opeldm sylbi ) BACBDZBEZFZACLAGC
-    BNABHILMAJK $.
+    ( wcel cproj1 cproj2 cop cdm opeq eleq1i opeldm sylbi ) BACBDZBEZFZACLAGCBN
+    ABHILMAJK $.
 
   $( Equality theorem for restrictions.  (Contributed by set.mm contributors,
      7-Aug-1994.) $)
@@ -46522,7 +46837,7 @@ $)
     ( c0 cdm wceq crn dm0 dm0rn0 mpbi ) ABACADACEAFG $.
 
   $( A relation is empty iff its range is empty.  (Contributed by set.mm
-     contributors, 15-Sep-2004.) (Revised by Scott Fenton, 17-Apr-2021.) $)
+     contributors, 15-Sep-2004.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
   rneq0 $p |- ( A = (/) <-> ran A = (/) ) $=
     ( c0 wceq cdm crn dmeq0 dm0rn0 bitri ) ABCADBCAEBCAFAGH $.
 
@@ -46573,8 +46888,8 @@ $)
     IBJKUASLMUJUDUKUEUJUICZDUDUIJULUCABNOPAJKQ $.
 
   $( Distribute proper substitution through the restriction of a class.
-     ~ csbresg is derived from the virtual deduction proof csbresgVD in
-     set.mm.  (Contributed by Alan Sare, 10-Nov-2012.) $)
+     ~ csbresg is derived from the virtual deduction proof csbresgVD in set.mm.
+     (Contributed by Alan Sare, 10-Nov-2012.) $)
   csbresg $p |- ( A e. V -> [_ A / x ]_ ( B |` C ) =
                  ( [_ A / x ]_ B |` [_ A / x ]_ C ) ) $=
     ( wcel cvv cxp cin cres csbing csbxpg csbconstg xpeq2d eqtrd ineq2d csbeq2i
@@ -46723,7 +47038,7 @@ $)
 
     $( Simplification law for restriction.  (Contributed by set.mm
        contributors, 16-Aug-1994.)  (Revised by set.mm contributors,
-       15-Mar-2004.) (Revised by Scott Fenton, 18-Apr-2021.) $)
+       15-Mar-2004.)  (Revised by Scott Fenton, 18-Apr-2021.) $)
     ssreseq $p |- ( dom A C_ B -> ( A |` B ) = A ) $=
       ( vx vy cdm wss cres resss a1i cv cop wcel opeldm ssel syl5 ancld opelres
       wa syl6ibr relssdv eqssd ) AEZBFZABGZAUDAFUCABHIUCCDAUDUCCJZDJZKZALZUHUEB
@@ -46731,7 +47046,7 @@ $)
   $}
 
   $( A class restricted to its domain equals itself.  (Contributed by set.mm
-     contributors, 12-Dec-2006.) (Revised by Scott Fenton, 18-Apr-2021.) $)
+     contributors, 12-Dec-2006.)  (Revised by Scott Fenton, 18-Apr-2021.) $)
   resdm $p |- ( A |` dom A ) = A $=
     ( cdm wss cres wceq ssid ssreseq ax-mp ) ABZICAIDAEIFAIGH $.
 
@@ -46747,9 +47062,9 @@ $)
       $.
 
     $( A subclass of the identity function is the identity function restricted
-       to its domain.  (The proof was shortened by Andrew Salmon,
-       27-Aug-2011.)  (Contributed by set.mm contributors, 13-Dec-2003.)
-       (Revised by set.mm contributors, 27-Aug-2011.) $)
+       to its domain.  (The proof was shortened by Andrew Salmon, 27-Aug-2011.)
+       (Contributed by set.mm contributors, 13-Dec-2003.)  (Revised by set.mm
+       contributors, 27-Aug-2011.) $)
     iss $p |- ( A C_ _I <-> A = ( _I |` dom A ) ) $=
       ( vx vy cid wss cdm cres wceq cv cop wcel wa ssel opeldm a1i jcad weq wbr
       wi syl5bi df-br vex ideq bitr3i anbi1i wex eldm2 syl6ib opeq2 eleq1d syli
@@ -46800,7 +47115,7 @@ $)
     HIJABKL $.
 
   $( Any class restricted to the universe is itself.  (Contributed by set.mm
-     contributors, 16-Mar-2004.) (Revised by Scott Fenton, 18-Apr-2021.) $)
+     contributors, 16-Mar-2004.)  (Revised by Scott Fenton, 18-Apr-2021.) $)
   resid $p |- ( A |` _V ) = A $=
     ( cdm cvv wss cres wceq ssv ssreseq ax-mp ) ABZCDACEAFJGACHI $.
 
@@ -46834,8 +47149,8 @@ $)
 
   ${
     $d x y A $.
-    $( Image under the identity relation.  Theorem 3.16(viii) of [Monk1]
-       p. 38.  (Contributed by set.mm contributors, 30-Apr-1998.) $)
+    $( Image under the identity relation.  Theorem 3.16(viii) of [Monk1] p. 38.
+       (Contributed by set.mm contributors, 30-Apr-1998.) $)
     imai $p |- ( _I " A ) = A $=
       ( vx vy cid cima cv wcel cop wa wex cab dfima4 wceq wbr df-br ideq bitr3i
       vex anbi2i bitri ancom exbii eleq1 ceqsexv abbii abid2 3eqtri ) DAEBFZAGZ
@@ -46981,8 +47296,8 @@ $)
 
     $( Two ways of saying a relation is antisymmetric.  Definition of
        antisymmetry in [Schechter] p. 51.  (The proof was shortened by Andrew
-       Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
-       9-Sep-2004.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
+       Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors, 9-Sep-2004.)
+       (Revised by set.mm contributors, 27-Aug-2011.) $)
     intasym $p |- ( ( R i^i `' R ) C_ _I <->
                   A. x A. y ( ( x R y /\ y R x ) -> x = y ) ) $=
       ( ccnv cin cid wss cv cop wcel wi wal wbr wa weq ssrel df-br bitri bitr3i
@@ -47219,7 +47534,7 @@ $)
     MNOPULURUQHUJUIUKSNQCDUARUPBUKTZDUPBUITZVDUJVEBKZULUJVBVFVCUTVFVAABUBPOPULV
     EVDHUJUIUKUCNQCDUDRUEUFACBDUGUH $.
 
-  $( The cross product of non-empty classes is one-to-one.  (Contributed by
+  $( The cross product of nonempty classes is one-to-one.  (Contributed by
      set.mm contributors, 31-May-2008.) $)
   xp11 $p |- ( ( A =/= (/) /\ B =/= (/) )
       -> ( ( A X. B ) = ( C X. D ) <-> ( A = C /\ B = D ) ) ) $=
@@ -47309,17 +47624,17 @@ $)
   ${
     $d x y A $.
     $( The domain of a singleton is nonzero iff the singleton argument is a
-       set.  (Contributed by NM, 14-Dec-2008.)  (Proof shortened by
-       Andrew Salmon, 27-Aug-2011.)  (Revised by Scott Fenton, 19-Apr-2021.) $)
+       set.  (Contributed by NM, 14-Dec-2008.)  (Proof shortened by Andrew
+       Salmon, 27-Aug-2011.)  (Revised by Scott Fenton, 19-Apr-2021.) $)
     dmsnn0 $p |- ( A e. _V <-> dom { A } =/= (/) ) $=
       ( vx vy cv csn cdm wcel wex cop wceq wne cvv eldm2 opex elsnc eqcom bitri
       c0 vex exbii n0 opeqexb 3bitr4ri ) BDZAEZFZGZBHAUDCDZIZJZCHZBHUFRKALGUGUK
       BUGUIUEGZCHUKCUDUEMULUJCULUIAJUJUIAUDUHBSCSNOUIAPQTQTBUFUABCAUBUC $.
   $}
 
-  $( The range of a singleton is nonzero iff the singleton argument is a
-     set.  (Contributed by set.mm contributors, 14-Dec-2008.)
-     (Revised by Scott Fenton, 19-Apr-2021.) $)
+  $( The range of a singleton is nonzero iff the singleton argument is a set.
+     (Contributed by set.mm contributors, 14-Dec-2008.)  (Revised by Scott
+     Fenton, 19-Apr-2021.) $)
   rnsnn0 $p |- ( A e. _V <-> ran { A } =/= (/) ) $=
     ( cvv wcel csn cdm c0 wne crn dmsnn0 dm0rn0 necon3bii bitri ) ABCADZEZFGMHZ
     FGAINFOFMJKL $.
@@ -47610,7 +47925,7 @@ $)
   $}
 
   $( Composition with a restricted identity relation.  (Contributed by FL,
-     19-Jun-2011.) (Revised by Scott Fenton, 17-Apr-2021.) $)
+     19-Jun-2011.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
   coires1 $p |- ( A o. ( _I |` B ) ) = ( A |` B ) $=
     ( cid ccom cres resco coi1 reseq1i eqtr3i ) ACDZBEACBEDABEACBFJABAGHI $.
 
@@ -47629,22 +47944,22 @@ $)
       MAUHPTUE $.
   $}
 
-  $( A class is transitive iff its converse is transitive.  (Contributed by
-     FL, 19-Sep-2011.) (Revised by Scott Fenton, 18-Apr-2021.) $)
+  $( A class is transitive iff its converse is transitive.  (Contributed by FL,
+     19-Sep-2011.)  (Revised by Scott Fenton, 18-Apr-2021.) $)
   cnvtr $p |- ( ( R o. R ) C_ R <-> ( `' R o. `' R ) C_ `' R ) $=
     ( ccom wss ccnv cnvco cnvss syl5eqssr cnveqi cnvcnv eqtr3i 3sstr3g impbii )
     AABZACZADZOBZOCZNPMDZOAAEZMAFGQPDZODMAPOFRDTMRPSHMIJAIKL $.
 
   ${
     $d x y A $.
-     $( A class is included in the cross product of its domain and range.
+    $( A class is included in the cross product of its domain and range.
        Exercise 4.12(t) of [Mendelson] p. 235.  (Contributed by set.mm
-       contributors, 3-Aug-1994.) (Revised by Scott Fenton, 15-Apr-2021.) $)
+       contributors, 3-Aug-1994.)  (Revised by Scott Fenton, 15-Apr-2021.) $)
     ssdmrn $p |- A C_ ( dom A X. ran A ) $=
       ( vx vy cdm crn cxp wss cv cop wi wal ssrel opeldm opelrn opelxp sylanbrc
       wcel ax-gen mpgbir ) AADZAEZFZGBHZCHZIZAQZUEUBQZJZCKBBCAUBLUHCUFUCTQUDUAQ
       UGUCUDAMUCUDANUCUDTUAOPRS $.
-      
+
   $}
 
   ${
@@ -47673,8 +47988,8 @@ $)
       ( cvv wcel ccnv cnvexg ax-mp ) ACDAECDBACFG $.
   $}
 
-  $( A class is a set iff its converse is a set.   (Contributed by FL,
-     3-Mar-2007.) (Revised by Scott Fenton, 18-Apr-2021.) $)
+  $( A class is a set iff its converse is a set.  (Contributed by FL,
+     3-Mar-2007.)  (Revised by Scott Fenton, 18-Apr-2021.) $)
   cnvexb $p |- ( R e. _V <-> `' R e. _V ) $=
     ( cvv wcel ccnv cnvexg cnvcnv syl5eqelr impbii ) ABCADZBCZABEJAIDBAFIBEGH
     $.
@@ -47699,8 +48014,8 @@ $)
     dmex $p |- dom A e. _V $=
       ( cvv wcel cdm dmexg ax-mp ) ACDAECDBACFG $.
 
-    $( The range of a set is a set.  Corollary 6.8(3) of [TakeutiZaring]
-       p. 26.  Similar to Lemma 3D of [Enderton] p. 41.  (Contributed by set.mm
+    $( The range of a set is a set.  Corollary 6.8(3) of [TakeutiZaring] p. 26.
+       Similar to Lemma 3D of [Enderton] p. 41.  (Contributed by set.mm
        contributors, 7-Jul-2008.) $)
     rnex $p |- ran A e. _V $=
       ( cvv wcel crn rnexg ax-mp ) ACDAECDBACFG $.
@@ -47812,7 +48127,7 @@ $)
   ${
     $d A a b x $.  $d B a b $.
     $( The converse of an intersection is the intersection of the converse.
-       (Contributed by FL, 15-Oct-2012.) (Revised by Scott Fenton,
+       (Contributed by FL, 15-Oct-2012.)  (Revised by Scott Fenton,
        18-Apr-2021.) $)
     cnviin $p |- `' |^|_ x e. A B = |^|_ x e. A `' B $=
       ( va vb ciin ccnv cv cop wcel wral cvv wb opex eliin ax-mp opelcnv ralbii
@@ -47825,8 +48140,8 @@ $)
     $d x y z A $.
     $( Alternate definition of a function.  (Contributed by set.mm
        contributors, 29-Dec-1996.)  (Revised by set.mm contributors,
-       23-Apr-2004.) (Revised by Scott Fenton, 16-Apr-2021.) $)
-    dffun2 $p |- ( Fun A <-> 
+       23-Apr-2004.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
+    dffun2 $p |- ( Fun A <->
                  A. x A. y A. z ( ( x A y /\ x A z ) -> y = z ) ) $=
       ( wfun ccnv ccom cid wss cv cop wcel wi wal wbr wa weq df-fun wex bitr4i
       ssrel opelco brcnv anbi1i exbii bitri df-br vex ideq bitr3i 19.23v 2albii
@@ -47844,8 +48159,8 @@ $)
 
     $( Alternate definition of a function.  Definition 6.4(4) of
        [TakeutiZaring] p. 24.  (Contributed by set.mm contributors,
-       29-Dec-1996.) (Revised by Scott Fenton, 16-Apr-2021.) $)
-    dffun4 $p |- ( Fun A <-> 
+       29-Dec-1996.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
+    dffun4 $p |- ( Fun A <->
                  A. x A. y A. z ( ( <. x , y >. e. A /\ <. x , z >. e. A )
                  -> y = z ) ) $=
       ( wfun cv wbr wa weq wi wal wcel dffun2 df-br anbi12i imbi1i albii 2albii
@@ -47853,7 +48168,7 @@ $)
       AKABCDMUIUNABUHUMCUFULUGUCUJUEUKUAUBDNUAUDDNOPQRT $.
 
     $( Alternate definition of function.  (Contributed by set.mm contributors,
-       29-Dec-1996.) (Revised by Scott Fenton, 16-Apr-2021.) $)
+       29-Dec-1996.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun5 $p |- ( Fun A <-> A. x E. z A. y ( <. x , y >. e. A -> y = z ) ) $=
       ( wfun cv wbr weq wal wex cop wcel dffun3 df-br imbi1i albii exbii bitri
       wi ) DEAFZBFZDGZBCHZSZBIZCJZAITUAKDLZUCSZBIZCJZAIABCDMUFUJAUEUICUDUHBUBUG
@@ -47866,7 +48181,7 @@ $)
     dffun6f.2 $e |- F/_ y A $.
     $( Definition of function, using bound-variable hypotheses instead of
        distinct variable conditions.  (Contributed by NM, 9-Mar-1995.)
-       (Revised by Mario Carneiro, 15-Oct-2016.) (Revised by Scott Fenton,
+       (Revised by Mario Carneiro, 15-Oct-2016.)  (Revised by Scott Fenton,
        16-Apr-2021.) $)
     dffun6f $p |- ( Fun A <-> A. x E* y x A y ) $=
       ( vw vv vu wfun cv wbr weq wi wal wex wmo nfcv nfbr nfv albii breq2 cbvmo
@@ -47879,7 +48194,7 @@ $)
   ${
     $d x y A $.  $d x y F $.
     $( Alternate definition of a function using "at most one" notation.
-       (Contributed by NM, 9-Mar-1995.) (Revised by Scott Fenton,
+       (Contributed by NM, 9-Mar-1995.)  (Revised by Scott Fenton,
        16-Apr-2021.) $)
     dffun6 $p |- ( Fun F <-> A. x E* y x F y ) $=
       ( nfcv dffun6f ) ABCACDBCDE $.
@@ -47955,7 +48270,7 @@ $)
        because "there is only one" could mean either "there is at most one" or
        "there is exactly one."  However, ~ dffun8 shows that it doesn't matter
        which meaning we pick.)  (Contributed by set.mm contributors,
-       4-Nov-2002.) (Revised by Scott Fenton, 16-Apr-2021.) $)
+       4-Nov-2002.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun7 $p |- ( Fun A <-> A. x e. dom A E* y x A y ) $=
       ( cv wbr wmo wal cdm wcel wi wfun wral wex moabs eldm imbi1i bitr4i albii
       dffun6 df-ral 3bitr4i ) ADZBDCEZBFZAGUBCHZIZUDJZAGCKUDAUELUDUGAUDUCBMZUDJ
@@ -47965,14 +48280,14 @@ $)
        of a function in [Enderton] p. 42.  Compare ~ dffun7 .  (The proof was
        shortened by Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm
        contributors, 4-Nov-2002.)  (Revised by set.mm contributors,
-       18-Sep-2011.) (Revised by Scott Fenton, 16-Apr-2021.) $)
+       18-Sep-2011.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun8 $p |- ( Fun A <-> A. x e. dom A E! y x A y ) $=
       ( wfun cv wbr wmo cdm wral weu dffun7 wcel wex eldm exmoeu2 sylbi ralbiia
       wb bitri ) CDAEZBECFZBGZACHZIUABJZAUCIABCKUBUDAUCTUCLUABMUBUDRBTCNUABOPQS
       $.
 
     $( Alternate definition of a function.  (Contributed by set.mm
-       contributors, 28-Mar-2007.) (Revised by Scott Fenton, 16-Apr-2021.) $)
+       contributors, 28-Mar-2007.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
     dffun9 $p |- ( Fun A <-> A. x e. dom A E* y ( y e. ran A /\ x A y ) ) $=
       ( wfun cv wbr wmo cdm wral crn wcel wa dffun7 brelrn pm4.71ri mobii bitri
       ralbii ) CDAEZBEZCFZBGZACHZITCJKZUALZBGZAUCIABCMUBUFAUCUAUEBUAUDSTCNOPRQ
@@ -48089,10 +48404,10 @@ $)
       BVJWNWFOZDEVJXOEPDPZCVJXPCPCDEBTUTVAVBVEVCVFVGCDEVTTVH $.
   $}
 
- ${
+  ${
     $d A x y $.  $d B x y $.
     $( A singleton of an ordered pair is a function.  Theorem 10.5 of [Quine]
-       p. 65.  (Contributed by NM, 12-Aug-1994.) (Revised by Scott Fenton,
+       p. 65.  (Contributed by NM, 12-Aug-1994.)  (Revised by Scott Fenton,
        16-Apr-2021.) $)
     funsn $p |- Fun { <. A , B >. } $=
       ( vx vy cop csn wfun cv wbr wmo dffun6 wceq wi moeq a1i wa wcel df-br vex
@@ -48103,14 +48418,14 @@ $)
 
   $( A singleton of an ordered pair is a function.  Theorem 10.5 of [Quine]
      p. 65.  (Contributed by set.mm contributors, 28-Jun-2011.)  (Revised by
-     set.mm contributors, 1-Oct-2013.) $)
+     set.mm contributors, 1-Oct-2013.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
   funsngOLD $p |- ( ( A e. V /\ B e. W ) -> Fun { <. A , B >. } ) $=
     ( cop csn wfun wcel wa funsn a1i ) ABEFGACHBDHIABJK $.
 
-
   $( A set of two pairs is a function if their first members are different.
-     (Contributed by FL, 26-Jun-2011.) (Revised by Scott Fenton,
-       16-Apr-2021.) $)
+     (Contributed by FL, 26-Jun-2011.)  (Revised by Scott Fenton,
+     16-Apr-2021.) $)
   funprg $p |- ( ( A =/= B /\ C e. V /\ D e. W )
      -> Fun { <. A , C >. , <. B , D >. } ) $=
     ( wne wcel w3a cop csn cun wfun cpr cdm cin c0 wceq dmsnopg funsn eqtrd syl
@@ -48119,17 +48434,17 @@ $)
     UPVDVHVEVIUNUMVDVHRUOACESUCUOUMVEVIRUNBDFSUDUEUMUNVJQRUOABUFUGUAURMUTMVGVBA
     CTBDTURUTUHUIUBVCVAUQUSULUJUK $.
 
-
   $( A set of two pairs is a function if their first members are different.
-     (Contributed by FL, 26-Jun-2011.) $)
+     (Contributed by FL, 26-Jun-2011.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
   funprgOLD $p |- ( ( A =/= B /\ ( A e. V /\ B e. W ) /\ ( C e. T /\ D e. U ) )
      -> Fun { <. A , C >. , <. B , D >. } ) $=
-    ( wcel wa cop csn wfun cdm cin c0 wceq funsngOLD syl2anc dmsnopg simp2l simp3l
-    wne w3a cun cpr simp2r simp3r ineq12d disjsn2 3ad2ant1 eqtrd funun syl21anc
-    syl df-pr funeqi sylibr ) ABUCZAGIZBHIZJZCEIZDFIZJZUDZACKZLZBDKZLZUEZMZVGVI
-    UFZMVFVHMZVJMZVHNZVJNZOZPQVLVFUTVCVNUSUTVAVEUAUSVBVCVDUBZACGERSVFVAVDVOUSUT
-    VAVEUGUSVBVCVDUHZBDHFRSVFVRALZBLZOZPVFVPWAVQWBVFVCVPWAQVSACETUOVFVDVQWBQVTB
-    DFTUOUIUSVBWCPQVEABUJUKULVHVJUMUNVMVKVGVIUPUQUR $.
+    ( wcel wa cop csn wfun cdm cin c0 wceq funsngOLD syl2anc dmsnopg wne simp2l
+    w3a cun cpr simp3l simp2r syl ineq12d disjsn2 3ad2ant1 eqtrd funun syl21anc
+    simp3r df-pr funeqi sylibr ) ABUAZAGIZBHIZJZCEIZDFIZJZUCZACKZLZBDKZLZUDZMZV
+    GVIUEZMVFVHMZVJMZVHNZVJNZOZPQVLVFUTVCVNUSUTVAVEUBUSVBVCVDUFZACGERSVFVAVDVOU
+    SUTVAVEUGUSVBVCVDUOZBDHFRSVFVRALZBLZOZPVFVPWAVQWBVFVCVPWAQVSACETUHVFVDVQWBQ
+    VTBDFTUHUIUSVBWCPQVEABUJUKULVHVJUMUNVMVKVGVIUPUQUR $.
 
   ${
     funpr.1 $e |- C e. _V $.
@@ -48207,11 +48522,10 @@ $)
       WCXBWRWPJXDWAWBCDUQWRWPRSNWCXDRSWPWRWCURSSUSWHXAWPWCACUTVATVBVCVDVFVGWGWH
       BDVHTVOVSRWDWIBDWCACVIVJTVK $.
 
-    $( Two ways of stating that ` A ` is one-to-one.
-       Each side is equivalent to Definition 6.4(3) of
-       [TakeutiZaring] p. 24, who use the notation "Un_2 (A)" for one-to-one.
-       (Contributed by NM, 17-Jan-2006.) (Revised by Scott Fenton,
-       18-Apr-2021.) $)
+    $( Two ways of stating that ` A ` is one-to-one.  Each side is equivalent
+       to Definition 6.4(3) of [TakeutiZaring] p. 24, who use the notation
+       "Un_2 (A)" for one-to-one.  (Contributed by NM, 17-Jan-2006.)  (Revised
+       by Scott Fenton, 18-Apr-2021.) $)
     fun11 $p |- ( ( Fun A /\ Fun `' A ) <->
          A. x A. y A. z A. w ( ( x A y /\ z A w ) -> ( x = z <-> y = w ) ) ) $=
       ( cv wbr wa weq wi wal wfun bi2.04 anbi12i 2albii 19.26-2 alcom nfv albii
@@ -48980,8 +49294,8 @@ $)
     ( c0 wfn crn wss wfun cdm wceq fun0 dm0 df-fn mpbir2an rn0 0ss eqsstri df-f
     wf ) BABQBBCZBDZAERBFBGBHIJBBKLSBAMANOBABPL $.
 
-  $( A class is a function with empty codomain iff it and its domain are
-     empty.  (Contributed by set.mm contributors, 10-Dec-2003.) $)
+  $( A class is a function with empty codomain iff it and its domain are empty.
+     (Contributed by set.mm contributors, 10-Dec-2003.) $)
   f00 $p |- ( F : A --> (/) <-> ( F = (/) /\ A = (/) ) ) $=
     ( c0 wf wceq wa wfn wfun cdm ffun crn wss frn ss0 syl dm0rn0 df-fn sylanbrc
     sylibr fn0 sylib fdm eqtr3d jca f0 feq1 feq2 sylan9bb mpbiri impbii ) ACBDZ
@@ -49079,11 +49393,11 @@ $)
     ( wf1 wss wa wf ccnv wfun f1f fss sylan df-f1 simprbi adantr sylanbrc ) ABD
     EZBCFZGACDHZDIJZACDERABDHZSTABDKABCDLMRUASRUBUAABDNOPACDNQ $.
 
-  $( Two ways to express that a set ` A ` is one-to-one.  Each side is equivalent
-     to Definition 6.4(3) of [TakeutiZaring] p. 24, who use the notation
-     "Un_2 (A)" for one-to-one.  We do not introduce a separate notation since we
-     rarely use it.  (Contributed by set.mm contributors, 13-Aug-2004.) (Revised
-     by Scott Fenton, 18-Apr-2021.) $)
+  $( Two ways to express that a set ` A ` is one-to-one.  Each side is
+     equivalent to Definition 6.4(3) of [TakeutiZaring] p. 24, who use the
+     notation "Un_2 (A)" for one-to-one.  We do not introduce a separate
+     notation since we rarely use it.  (Contributed by set.mm contributors,
+     13-Aug-2004.)  (Revised by Scott Fenton, 18-Apr-2021.) $)
   f1funfun $p |- ( A : dom A -1-1-> _V <-> ( Fun `' A /\ Fun A ) ) $=
     ( cdm cvv wf1 wf ccnv wfun df-f1 ancom wfn crn wss ssv df-f mpbiran2 bitr4i
     wa funfn anbi2i 3bitri ) ABZCADUACAEZAFGZQUCUBQUCAGZQUACAHUBUCIUBUDUCUBAUAJ
@@ -49322,7 +49636,7 @@ $)
 
   $( A class is a one-to-one onto function iff its converse is a one-to-one
      onto function with domain and range interchanged.  (Contributed by set.mm
-     contributors, 8-Dec-2003.) (Modified by Scott Fenton, 17-Apr-2021.) $)
+     contributors, 8-Dec-2003.)  (Modified by Scott Fenton, 17-Apr-2021.) $)
   f1ocnvb $p |- ( F : A -1-1-onto-> B <-> `' F : B -1-1-onto-> A ) $=
     ( ccnv wfn wa wf1o cnvcnv fneq1i anbi2i ancom bitri dff1o4 3bitr4ri ) CDZBE
     ZODZAEZFZCAEZPFZBAOGABCGSPTFUARTPAQCCHIJPTKLBAOMABCMN $.
@@ -49393,8 +49707,8 @@ $)
     fun11iun.1 $e |- ( x = y -> B = C ) $.
     fun11iun.2 $e |- B e. _V $.
     $( The union of a chain (with respect to inclusion) of one-to-one functions
-       is a one-to-one function.  (Contributed by Mario Carneiro,
-       20-May-2013.)  (Revised by Mario Carneiro, 24-Jun-2015.) $)
+       is a one-to-one function.  (Contributed by Mario Carneiro, 20-May-2013.)
+       (Revised by Mario Carneiro, 24-Jun-2015.) $)
     fun11iun $p |- ( A. x e. A ( B : D -1-1-> S /\
                        A. y e. A ( B C_ C \/ C C_ B ) ) ->
                      U_ x e. A B : U_ x e. A D -1-1-> S ) $=
@@ -50053,7 +50367,7 @@ $)
       FUCUDOABUCCPQRDUDSDBCTUA $.
   $}
 
-  $( The image of a pair under a funtion.  (Contributed by Jeff Madsen,
+  $( The image of a pair under a function.  (Contributed by Jeff Madsen,
      6-Jan-2011.) $)
   fnimapr $p |- ( ( F Fn A /\ B e. A /\ C e. A ) ->
                           ( F " { B , C } ) = { ( F ` B ) , ( F ` C ) } ) $=
@@ -50380,10 +50694,9 @@ $)
     ZUQUOQZUIURACBSTUHCURUAUSUTCUBURACUCUDMUEUFUG $.
 
   $( The argument of a function value belongs to the preimage of any class
-     containing the function value.  (Contributed by Raph Levien,
-     20-Nov-2006.)  He remarks:  "This proof is unsatisfying, because it seems
-     to me that ~ funimass2 could probably be strengthened to a
-     biconditional." $)
+     containing the function value.  (Contributed by Raph Levien, 20-Nov-2006.)
+     He remarks:  "This proof is unsatisfying, because it seems to me that
+     ~ funimass2 could probably be strengthened to a biconditional." $)
   fvimacnv $p |- ( ( Fun F /\ A e. dom F ) ->
                  ( ( F ` A ) e. B <-> A e. ( `' F " B ) ) ) $=
     ( wfun cdm wcel wa cfv ccnv cima csn cop funfvop opelcnv sylibr elimasn wss
@@ -51597,9 +51910,8 @@ $)
 
   ${
     $d x y z w t $.
-    $( ` 1st ` is a mapping from the universe onto the universe.
-       (Contributed by SF, 12-Feb-2015.) (Revised by Scott Fenton,
-       17-Apr-2021.) $)
+    $( ` 1st ` is a mapping from the universe onto the universe.  (Contributed
+       by SF, 12-Feb-2015.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
     1stfo $p |- 1st : _V -onto-> _V $=
       ( vx vy vz vw vt cvv c1st wceq cv wbr wa weq wal cop wex vex br1st mpgbir
       wcel eqv wfo wfn crn wfun cdm wi dffun2 anbi12i eeanv bitr4i opth simplbi
@@ -51611,9 +51923,8 @@ $)
       RZNZVQVSUSWTWRGJZWTVQSXAWRWRHWRUTWRWSWRVSAPZVAVSXBVBVCVEWTWRGVFVGVHRGFVIV
       JVOVSVNSZAAVNTVSVSNZVSGJZXCXEAALVSUTVSVSVSXBXBVCVEXDVSGVKVGRFFGVLVJ $.
 
-    $( ` 2nd ` is a mapping from the universe onto the universe.
-       (Contributed by SF, 12-Feb-2015.) (Revised by Scott Fenton,
-       17-Apr-2021.) $)
+    $( ` 2nd ` is a mapping from the universe onto the universe.  (Contributed
+       by SF, 12-Feb-2015.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
     2ndfo $p |- 2nd : _V -onto-> _V $=
       ( vx vy vz vw vt cvv c2nd wceq cv wbr wa weq wal cop wex vex br2nd mpgbir
       wcel eqv wfo wfn crn wfun cdm wi dffun2 anbi12i eeanv bitr4i opth simprbi
@@ -51673,7 +51984,7 @@ $)
   ${
     $d x y z $.
     $( ` Swap ` is a bijection over the universe.  (Contributed by SF,
-       23-Feb-2015.) (Revised by Scott Fenton, 17-Apr-2021.) $)
+       23-Feb-2015.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
     swapf1o $p |- Swap : _V -1-1-onto-> _V $=
       ( vx vy vz cvv cswap wfn wceq cv wbr wa wal cproj2 cproj1 cop vex proj1ex
       opeq proj2ex brswap2 bitri wf1o ccnv cdm weq wi dffun2 breq2i eqtr2 ancom
@@ -51689,7 +52000,7 @@ $)
   $}
 
   $( Bijection law for restrictions of ` Swap ` .  (Contributed by SF,
-     23-Feb-2015.) (Modified by Scott Fenton, 17-Apr-2021.) $)
+     23-Feb-2015.)  (Modified by Scott Fenton, 17-Apr-2021.) $)
   swapres $p |- ( Swap |` A ) : A -1-1-onto-> `' A $=
     ( ccnv cswap cres wf1o cima cvv wf1 wss swapf1o f1of1 ax-mp ssv f1ores wceq
     mp2an wb dfcnv2 f1oeq3 mpbir ) AABZCADZEZACAFZUBEZGGCHZAGIUEGGCEUFJGGCKLAMG
@@ -51825,9 +52136,10 @@ $)
     ( vx cep cdm cvv wceq cv wcel eqv csn wbr vex snid epelc mpbir breldm ax-mp
     snex mpgbir ) BCZDEAFZSGZAASHTTIZBJZUAUCTUBGTAKLTUBTQMNTUBBOPR $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Operations
+  Operations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -52380,14 +52692,14 @@ $)
       ( cv wcel wa coprab crn wex cab wrex rnoprab r2ex abbii eqtr4i ) BGEHCGFH
       IAIZBCDJKSCLBLZDMACFNBENZDMSBCDOUATDABCEFPQR $.
   $}
- 
+
   ${
     $d x y z w A $.  $d x y z w B $.  $d x y z w C $.  $d w ph $.
     $d x y z w ps $.
     eloprabga.1 $e |- ( ( x = A /\ y = B /\ z = C ) -> ( ph <-> ps ) ) $.
     $( The law of concretion for operation class abstraction.  Compare
-       ~ elopab .  (Contributed by set.mm contributors, 17-Dec-2013.)  (Revised
-       by David Abernethy, 18-Jun-2012.)  Removed unnecessary distinct variable
+       ~ elopab .  (Contributed by NM, 14-Sep-1999.)  (Revised by David
+       Abernethy, 18-Jun-2012.)  Removed unnecessary distinct variable
        requirements.  (Revised by Mario Carneiro, 19-Dec-2013.) $)
     eloprabga $p |- ( ( A e. V /\ B e. W /\ C e. X ) ->
        ( <. <. A , B >. , C >. e. { <. <. x , y >. , z >. | ph } <-> ps ) ) $=
@@ -52497,7 +52809,6 @@ $)
       UJUKVBAABESZIVLVBAVNVAVNABEUMRULABEUNUOUPTTUQURVFVIUSUT $.
   $}
 
-
   ${
     $d x y z $.  $d z ph $.
     fnoprab.1 $e |- ( ph -> E! z ps ) $.
@@ -52558,8 +52869,8 @@ $)
 
   ${
     $d x y z w A $.  $d x y z w B $.  $d x y z w F $.
-    $( Representation of an operation class abstraction in terms of its
-       values.  (Contributed by set.mm contributors, 7-Feb-2004.) $)
+    $( Representation of an operation class abstraction in terms of its values.
+       (Contributed by set.mm contributors, 7-Feb-2004.) $)
     fnov $p |- ( F Fn ( A X. B ) <-> F = { <. <. x , y >. , z >. |
                     ( ( x e. A /\ y e. B ) /\ z = ( x F y ) ) } ) $=
       ( vw cxp wfn cv wcel cfv wceq wa copab co coprab dffn5 wex bitri cop elxp
@@ -52573,8 +52884,8 @@ $)
 
   ${
     $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z F $.
-    $( Representation of an operation class abstraction in terms of its
-       values.  (Contributed by set.mm contributors, 7-Feb-2004.) $)
+    $( Representation of an operation class abstraction in terms of its values.
+       (Contributed by set.mm contributors, 7-Feb-2004.) $)
     fov $p |- ( F : ( A X. B ) --> C <-> ( F = { <. <. x , y >. , z >. |
                   ( ( x e. A /\ y e. B ) /\ z = ( x F y ) ) }
                 /\ A. x e. A A. y e. B ( x F y ) e. C ) ) $=
@@ -53279,15 +53590,15 @@ $)
   $}
 
   ${
-     $d x y z w t u A $.
-     $( Identity law for operator abstractions.  (Contributed by Scott Fenton,
-        19-Apr-2021.) $)
-     oprabid2 $p |- { <. <. x , y >. , z >. | <. <. x , y >. , z >. e. A }
-     	      	 = A $=
-       ( vw vt vu cv cop wcel coprab cvv wb vex weq opeq1 opeq1d opeq2 eloprabg
-       eleq1d mp3an eqoprriv ) EFGAHZBHZIZCHZIZDJZABCKZDEHZLJFHZLJGHZLJUJUKIZUL
-       IZUIJUNDJZMENFNGNUHUJUDIZUFIZDJUMUFIZDJUOABCUJUKULLLLAEOZUGUQDUSUEUPUFUC
-       UJUDPQTBFOZUQURDUTUPUMUFUDUKUJRQTCGOURUNDUFULUMRTSUAUB $.
+    $d x y z w t u A $.
+    $( Identity law for operator abstractions.  (Contributed by Scott Fenton,
+       19-Apr-2021.) $)
+    oprabid2 $p |- { <. <. x , y >. , z >. | <. <. x , y >. , z >. e. A }
+                    = A $=
+      ( vw vt vu cv cop wcel coprab cvv wb vex weq opeq1 opeq1d eleq1d eloprabg
+      opeq2 mp3an eqoprriv ) EFGAHZBHZIZCHZIZDJZABCKZDEHZLJFHZLJGHZLJUJUKIZULIZ
+      UIJUNDJZMENFNGNUHUJUDIZUFIZDJUMUFIZDJUOABCUJUKULLLLAEOZUGUQDUSUEUPUFUCUJU
+      DPQRBFOZUQURDUTUPUMUFUDUKUJTQRCGOURUNDUFULUMTRSUAUB $.
   $}
 
   ${
@@ -53300,7 +53611,6 @@ $)
       KNABCDFLM $.
   $}
 
-
   $( Eliminate antecedent for operator values: domain and range can be taken to
      be a set.  (Contributed by set.mm contributors, 25-Feb-2015.) $)
   elovex12 $p |- ( A e. ( B F C ) -> ( B e. _V /\ C e. _V ) ) $=
@@ -53308,8 +53618,8 @@ $)
     wn necon1ai syl ) ABCDEZFUCGHBIFCIFJZUCAKUDUCGUDBCLZIFZUCGMBCNUFTUCUEDOGBCD
     PUEDQRSUAUB $.
 
-  $( Eliminate antecedent for operator values: domain can be taken to be a
-     set.  (Contributed by set.mm contributors, 25-Feb-2015.) $)
+  $( Eliminate antecedent for operator values: domain can be taken to be a set.
+     (Contributed by set.mm contributors, 25-Feb-2015.) $)
   elovex1 $p |- ( A e. ( B F C ) -> B e. _V ) $=
     ( co wcel cvv elovex12 simpld ) ABCDEFBGFCGFABCDHI $.
 
@@ -53321,7 +53631,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        "Maps to" notation
+  "Maps to" notation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -53927,6 +54237,7 @@ $)
       ECDGHEAIZCJBIZDJKFITUAELZMKABFNZMEABCDUBOZMABFCDEPUDUCEABFCDUBQRS $.
 
   $}
+
   ${
     $d w x y z A $.  $d w y z B $.  $d w x y C $.  $d w z D $.
     mpt2mpt.1 $e |- ( z = <. x , y >. -> C = D ) $.
@@ -54261,10 +54572,11 @@ $)
     dmmpt2 $p |- dom F = ( A X. B ) $=
       ( cxp wfn cdm wceq fnmpt2i fndm ax-mp ) FCDIZJFKPLABCDEFGHMPFNO $.
   $}
-  
+
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Set construction lemmas
+  Set construction lemmas
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -54348,7 +54660,7 @@ $)
     $( Define the composition function.  (Contributed by Scott Fenton,
        19-Apr-2021.) $)
     df-compose $a |- Compose = ( x e. _V , y e. _V |-> ( x o. y ) ) $.
- $}
+  $}
 
   $( Extend the definition of a class to include the second insertion
      operation. $)
@@ -54968,9 +55280,8 @@ $)
 
   ${
     $d x y $.
-    $( The cup function is a function over the universe.
-       (Contributed by SF, 11-Feb-2015.) (Revised by Scott Fenton,
-       19-Apr-2021.) $)
+    $( The cup function is a function over the universe.  (Contributed by SF,
+       11-Feb-2015.)  (Revised by Scott Fenton, 19-Apr-2021.) $)
     fncup $p |- Cup Fn _V $=
       ( vx vy ccup cvv cxp wfn cv cun df-cup vex unex fnmpt2i xpvv fneq2i mpbi
       ) CDDEZFCDFABDDAGZBGZHCABIQRAJBJKLPDCMNO $.
@@ -55009,26 +55320,26 @@ $)
   $}
 
   ${
-     $d x y A $. $d x y B $.
-     $( The value of the composition function.  (Contributed by Scott Fenton,
-        19-Apr-2021.) $)
-     composevalg $p |- ( ( A e. V /\ B e. W ) ->
+    $d x y A $.  $d x y B $.
+    $( The value of the composition function.  (Contributed by Scott Fenton,
+       19-Apr-2021.) $)
+    composevalg $p |- ( ( A e. V /\ B e. W ) ->
      ( A Compose B ) = ( A o. B ) ) $=
-       ( vx vy wcel wa cvv ccom ccompose co wceq elex adantr adantl coexg coeq1
-       cv coeq2 df-compose ovmpt2g syl3anc ) ACGZBDGZHAIGZBIGZABJZIGABKLUHMUDUF
-       UEACNOUEUGUDBDNPABCDQEFABIIESZFSZJUHKAUJJIUIAUJRUJBATEFUAUBUC $.     
+      ( vx vy wcel wa cvv ccom ccompose co wceq adantr adantl coexg coeq1 coeq2
+      elex cv df-compose ovmpt2g syl3anc ) ACGZBDGZHAIGZBIGZABJZIGABKLUHMUDUFUE
+      ACSNUEUGUDBDSOABCDPEFABIIETZFTZJUHKAUJJIUIAUJQUJBAREFUAUBUC $.
   $}
 
   ${
-     $d x y z $.
-     $( The compose function is a function over the universe.  (Contributed
-        by Scott Fenton, 19-Apr-2021.) $)
-     composefn $p |- Compose Fn _V $=
-       ( vx vy vz ccompose cvv wfn cv wcel ccom wceq coprab copab weu vex eueq1
-       wa coex a1i fnoprab wb cmpt2 df-compose df-mpt2 eqtri df-xp eqtr3i fneq1
-       cxp xpvv fneq2 sylan9bb mp2an mpbir ) DEFZAGZEHBGZEHPZCGUOUPIZJZPABCKZUQ
-       ABLZFZUQUSABCUSCMUQCURUOUPANBNQORSDUTJZEVAJZUNVBTDABEEURUAUTABUBABCEEURU
-       CUDEEUHEVAUIABEEUEUFVCUNUTEFVDVBEDUTUGEVAUTUJUKULUM $.
+    $d x y z $.
+    $( The compose function is a function over the universe.  (Contributed by
+       Scott Fenton, 19-Apr-2021.) $)
+    composefn $p |- Compose Fn _V $=
+      ( vx vy vz ccompose cvv wfn cv wcel ccom wceq coprab copab weu coex eueq1
+      wa vex a1i fnoprab wb cmpt2 df-compose df-mpt2 eqtri cxp xpvv df-xp fneq1
+      eqtr3i fneq2 sylan9bb mp2an mpbir ) DEFZAGZEHBGZEHPZCGUOUPIZJZPABCKZUQABL
+      ZFZUQUSABCUSCMUQCURUOUPAQBQNORSDUTJZEVAJZUNVBTDABEEURUAUTABUBABCEEURUCUDE
+      EUEEVAUFABEEUGUIVCUNUTEFVDVBEDUTUHEVAUTUJUKULUM $.
   $}
 
   $( Binary relationship form of the compose function.  (Contributed by Scott
@@ -55040,42 +55351,42 @@ $)
     LZABMZCKUGINOUHNFUJUKPQABDERNUHCISTUGUIULCUGUIABIUAULABIUBABDEUCUDUEUF $.
 
   ${
-     $d x y z w t u v $.
-     $( The compose function is a set.  (Contributed by Scott Fenton,
-        19-Apr-2021.) $)
-     composeex $p |- Compose e. _V $=
-       ( vx vy vw vu vt vv cvv csset cins2 c1c cv wbr wex wcel cop vex otelins2
-       wa bitri ins2ex vz ccompose cxp c1st ccnv c2nd cin csi3 cins4 cswap cima
-       cid cins3 csymdif cdif ccom cmpt2 df-compose copab wceq csn elopab df-co
-       eleq2i elima1c elin opex oqelins4 otsnelsi3 opelxp mpbiran df-br 3bitr2i
-       brcnv anbi12i op1st2nd 3bitri snex wel df-clel opelssetsn exbii 3bitr4ri
-       brswap2 ideq otelins3 releqmpt2 eqtr4i vvex 1stex cnvex xpex 2ndex si3ex
-       inex ins4ex swapex ssetex 1cex imaex idex ins3ex mpt2exlem eqeltri ) UBG
-       GUCGUCHIZGUDUEZUCZUFUEZIZUGZUHZUIZUJUHZUIZXEIZIZIZUGZJUKZIZULUHZUIZHUMZI
-       ZIZIZIZUGZJUKZUGZJUKZUGZJUKZJUKZUMUNJUKUOZGUBABGGAKZBKZUPZUQYOABURABUAGG
-       YNYRUAKZCKZDKZYQLZUUAEKZYPLZRZDMZCEUSZNYSYTUUCOUTZUUFRZEMZCMZYSYRNYSVAZY
-       PYQOZOZYNNZUUFCEYSVBYRUUGYSCEDYPYQVCVDUUOYTVAZUUNOZYMNZCMUUKCUUNYMVEUURU
-       UJCUURUUCVAZUUQOZYLNZEMUUJEUUQYLVEUVAUUIEUVAUUTXLNZUUTYKNZRUUIUUTXLYKVFU
-       VBUUHUVCUUFUVBUUSUUPUULOOXKNUUCYTYSOZOZXJNZUUHUUSUUPUULUUMXKYPYQAPZBPZVG
-       ZVHUUCYTYSXJEPZCPZUAPVIUVFUVEXGNZUVEXINZRYSYTUDLZYSUUCUFLZRUUHUVEXGXIVFU
-       VLUVNUVMUVOUVLUVDXFNZYTYSXFLUVNUVLUUCGNUVPUVJUUCUVDGXFVJVKYTYSXFVLYTYSUD
-       VNVMUVMUUCYSOXHNUUCYSXHLUVOUUCYTYSXHUVKQUUCYSXHVLUUCYSUFVNVMVOYTUUCYSUVK
-       UVJVPVQVQUVCUUAVAZUUTOZYJNZDMUUFDUUTYJVEUVSUUEDUVSUVRXTNZUVRYINZRUUEUVRX
-       TYIVFUVTUUBUWAUUDUVTUVQUUQOZXSNZUUBUVQUUSUUQXSUUCVRZQYTUUAOZYQNUUCUWEUTZ
-       EBVSZRZEMZUUBUWCEUWEYQVTYTUUAYQVLUWCUUSUWBOZXRNZEMUWIEUWBXRVEUWKUWHEUWKU
-       WJXNNZUWJXQNZRUWHUWJXNXQVFUWLUWFUWMUWGUWLUUSUVQUUPOOXMNZUWFUUSUVQUUPUUNX
-       MUULUUMYSVRZUVIVGZVHUWNUUCUUAYTOZOUJNUUCUWQUJLUWFUUCUUAYTUJUVJDPZUVKVIUU
-       CUWQUJVLUUCUUAYTUWRUVKWDVMSUWMUUTXPNUUSUUNOXONZUWGUUSUVQUUQXPUUAVRZQUUSU
-       UPUUNXOYTVRZQUWSUUSUUMOXENUUSYQOHNUWGUUSUULUUMXEUWOQUUSYPYQHUVGQUUCYQUVJ
-       UVHWAVQVQVOSWBSWCSUUAUUCOZYPNFKZUXBUTZFAVSZRZFMZUUDUWAFUXBYPVTUUAUUCYPVL
-       UWAUXCVAZUVROZYHNZFMUXGFUVRYHVEUXJUXFFUXJUXIYBNZUXIYGNZRUXFUXIYBYGVFUXKU
-       XDUXLUXEUXKUXHUVQUUSOOYANZUXDUXHUVQUUSUUQYAUUPUUNUXAUWPVGVHUXMUXCUXBOULN
-       UXCUXBULLUXDUXCUUAUUCULFPZUWRUVJVIUXCUXBULVLUXCUXBUUAUUCUWRUVJVGWEVMSUXL
-       UXHUUTOYFNUXHUUQOYENZUXEUXHUVQUUTYFUWTQUXHUUSUUQYEUWDQUXOUXHUUNOYDNUXHUU
-       MOYCNZUXEUXHUUPUUNYDUXAQUXHUULUUMYCUWOQUXPUXHYPOHNUXEUXHYPYQHUVHWFUXCYPU
-       XNUVGWASVQVQVOSWBSWCVOSWBSVOSWBSWBSWCWGWHGGYNWIWIYMJYLJXLYKXKXJXGXIGXFWI
-       UDWJWKWLXHUFWMWKTWOWNWPYJJXTYIXSXRJXNXQXMUJWQWNWPXPXOXEHWRTTTTWOWSWTTYHJ
-       YBYGYAULXAWNWPYFYEYDYCHWRXBTTTTWOWSWTWOWSWTWOWSWTWSWTXCXD $.
+    $d x y z w t u v $.
+    $( The compose function is a set.  (Contributed by Scott Fenton,
+       19-Apr-2021.) $)
+    composeex $p |- Compose e. _V $=
+      ( vx vy vw vu vt vv cvv csset cins2 c1c cv wbr wa wex wcel otelins2 bitri
+      cop vex ins2ex vz ccompose cxp c1st ccnv c2nd csi3 cins4 cswap cima cins3
+      cin cid csymdif cdif ccom cmpt2 df-compose copab wceq elopab df-co eleq2i
+      elima1c elin opex oqelins4 otsnelsi3 opelxp mpbiran df-br 3bitr2i anbi12i
+      csn brcnv op1st2nd 3bitri snex wel df-clel opelssetsn exbii 3bitr4ri ideq
+      brswap2 otelins3 releqmpt2 eqtr4i vvex 1stex cnvex xpex 2ndex inex ins4ex
+      si3ex swapex ssetex 1cex imaex idex ins3ex mpt2exlem eqeltri ) UBGGUCGUCH
+      IZGUDUEZUCZUFUEZIZULZUGZUHZUIUGZUHZXEIZIZIZULZJUJZIZUMUGZUHZHUKZIZIZIZIZU
+      LZJUJZULZJUJZULZJUJZJUJZUKUNJUJUOZGUBABGGAKZBKZUPZUQYOABURABUAGGYNYRUAKZC
+      KZDKZYQLZUUAEKZYPLZMZDNZCEUSZOYSYTUUCRUTZUUFMZENZCNZYSYROYSVNZYPYQRZRZYNO
+      ZUUFCEYSVAYRUUGYSCEDYPYQVBVCUUOYTVNZUUNRZYMOZCNUUKCUUNYMVDUURUUJCUURUUCVN
+      ZUUQRZYLOZENUUJEUUQYLVDUVAUUIEUVAUUTXLOZUUTYKOZMUUIUUTXLYKVEUVBUUHUVCUUFU
+      VBUUSUUPUULRRXKOUUCYTYSRZRZXJOZUUHUUSUUPUULUUMXKYPYQASZBSZVFZVGUUCYTYSXJE
+      SZCSZUASVHUVFUVEXGOZUVEXIOZMYSYTUDLZYSUUCUFLZMUUHUVEXGXIVEUVLUVNUVMUVOUVL
+      UVDXFOZYTYSXFLUVNUVLUUCGOUVPUVJUUCUVDGXFVIVJYTYSXFVKYTYSUDVOVLUVMUUCYSRXH
+      OUUCYSXHLUVOUUCYTYSXHUVKPUUCYSXHVKUUCYSUFVOVLVMYTUUCYSUVKUVJVPVQVQUVCUUAV
+      NZUUTRZYJOZDNUUFDUUTYJVDUVSUUEDUVSUVRXTOZUVRYIOZMUUEUVRXTYIVEUVTUUBUWAUUD
+      UVTUVQUUQRZXSOZUUBUVQUUSUUQXSUUCVRZPYTUUARZYQOUUCUWEUTZEBVSZMZENZUUBUWCEU
+      WEYQVTYTUUAYQVKUWCUUSUWBRZXROZENUWIEUWBXRVDUWKUWHEUWKUWJXNOZUWJXQOZMUWHUW
+      JXNXQVEUWLUWFUWMUWGUWLUUSUVQUUPRRXMOZUWFUUSUVQUUPUUNXMUULUUMYSVRZUVIVFZVG
+      UWNUUCUUAYTRZRUIOUUCUWQUILUWFUUCUUAYTUIUVJDSZUVKVHUUCUWQUIVKUUCUUAYTUWRUV
+      KWEVLQUWMUUTXPOUUSUUNRXOOZUWGUUSUVQUUQXPUUAVRZPUUSUUPUUNXOYTVRZPUWSUUSUUM
+      RXEOUUSYQRHOUWGUUSUULUUMXEUWOPUUSYPYQHUVGPUUCYQUVJUVHWAVQVQVMQWBQWCQUUAUU
+      CRZYPOFKZUXBUTZFAVSZMZFNZUUDUWAFUXBYPVTUUAUUCYPVKUWAUXCVNZUVRRZYHOZFNUXGF
+      UVRYHVDUXJUXFFUXJUXIYBOZUXIYGOZMUXFUXIYBYGVEUXKUXDUXLUXEUXKUXHUVQUUSRRYAO
+      ZUXDUXHUVQUUSUUQYAUUPUUNUXAUWPVFVGUXMUXCUXBRUMOUXCUXBUMLUXDUXCUUAUUCUMFSZ
+      UWRUVJVHUXCUXBUMVKUXCUXBUUAUUCUWRUVJVFWDVLQUXLUXHUUTRYFOUXHUUQRYEOZUXEUXH
+      UVQUUTYFUWTPUXHUUSUUQYEUWDPUXOUXHUUNRYDOUXHUUMRYCOZUXEUXHUUPUUNYDUXAPUXHU
+      ULUUMYCUWOPUXPUXHYPRHOUXEUXHYPYQHUVHWFUXCYPUXNUVGWAQVQVQVMQWBQWCVMQWBQVMQ
+      WBQWBQWCWGWHGGYNWIWIYMJYLJXLYKXKXJXGXIGXFWIUDWJWKWLXHUFWMWKTWNWPWOYJJXTYI
+      XSXRJXNXQXMUIWQWPWOXPXOXEHWRTTTTWNWSWTTYHJYBYGYAUMXAWPWOYFYEYDYCHWRXBTTTT
+      WNWSWTWNWSWTWNWSWTWSWTXCXD $.
   $}
 
   ${
@@ -55157,7 +55468,7 @@ $)
   ${
     $d x y $.
     $( ` AddC ` is a function over the universe.  (Contributed by SF,
-       2-Mar-2015.) (Revised by Scott Fenton, 19-Apr-2021.) $)
+       2-Mar-2015.)  (Revised by Scott Fenton, 19-Apr-2021.) $)
     addcfn $p |- AddC Fn _V $=
       ( vx vy caddcfn cvv cxp wfn cplc df-addcfn vex addcex fnmpt2i xpvv fneq2i
       cv mpbi ) CDDEZFCDFABDDANZBNZGCABHQRAIBIJKPDCLMO $.
@@ -55536,14 +55847,15 @@ $)
       AVSWBTWCWBETWDWCWEWF $.
   $}
 
-  $( Functionhood statement for ` Pw1Fn ` (Contributed by SF, 25-Feb-2015.) $)
+  $( Functionhood statement for ` Pw1Fn ` .  (Contributed by SF,
+     25-Feb-2015.) $)
   fnpw1fn $p |- Pw1Fn Fn 1c $=
     ( vx cv cuni cpw1 cvv wcel cpw1fn c1c wfn df-pw1fn fnmpt vex uniex a1i mprg
     pw1ex ) ABZCZDZEFZGHIAHAHSGEAJKTQHFRQALMPNO $.
 
   ${
     brpw1fn.1 $e |- A e. _V $.
-    $( Binary relationship form of ` Pw1Fn ` (Contributed by SF,
+    $( Binary relationship form of ` Pw1Fn ` .  (Contributed by SF,
        25-Feb-2015.) $)
     brpw1fn $p |- ( { A } Pw1Fn B <-> B = ~P1 A ) $=
       ( csn cpw1fn cfv wceq cpw1 wbr pw1fnval eqeq1i c1c wcel wb fnpw1fn snel1c
@@ -55708,8 +56020,8 @@ $)
   ${
     brfullfunop.1 $e |- A e. _V $.
     brfullfunop.2 $e |- B e. _V $.
-    $( Binary relationship of the full function operation over an ordered
-       pair.  (Contributed by SF, 9-Mar-2015.) $)
+    $( Binary relationship of the full function operation over an ordered pair.
+       (Contributed by SF, 9-Mar-2015.) $)
     brfullfunop $p |- ( <. A , B >. FullFun F C <-> ( A F B ) = C ) $=
       ( cop cfullfun wbr cfv wceq co opex brfullfun df-ov eqeq1i bitr4i ) ABGZC
       DHIRDJZCKABDLZCKRCDABEFMNTSCABDOPQ $.
@@ -55763,9 +56075,10 @@ $)
       FCWOWKVMVHVIVJFWIVKWHKWGKWDWFWCHVLVNVOWEGVPVQVQVRVSVTVSVTWAWB $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Closure operation
+  Closure operation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -56009,16 +56322,17 @@ $)
       APAGJQGRUMEAULFUHUKUJUHUKUGSTUAUBUCEFABGHGQCDUDUEARUF $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-       Orderings
+  Orderings
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Basic ordering relationships
+  Basic ordering relationships
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -56499,7 +56813,7 @@ $)
     refrd.1 $e |- ( ph -> R e. V ) $.
     refrd.2 $e |- ( ph -> A e. W ) $.
     refrd.3 $e |- ( ( ph /\ x e. A ) -> x R x ) $.
-    $( Deduce reflexitiviy from its properties.  (Contributed by SF,
+    $( Deduce reflexivity from its properties.  (Contributed by SF,
        12-Mar-2015.) $)
     refrd $p |- ( ph -> R Ref A ) $=
       ( vr va cref wbr cv wral ralrimiva wcel wb wceq breq ralbidv raleq df-ref
@@ -56512,7 +56826,7 @@ $)
     $d r x $.  $d R x $.  $d X x $.
     refd.1 $e |- ( ph -> R Ref A ) $.
     refd.2 $e |- ( ph -> X e. A ) $.
-    $( Natural deduction form of reflexitivity.  (Contributed by SF,
+    $( Natural deduction form of reflexivity.  (Contributed by SF,
        20-Mar-2015.) $)
     refd $p |- ( ph -> X R X ) $=
       ( vx vr va cv wbr wral wcel cref cvv wa wb brex wceq syl breq raleq brabg
@@ -56775,7 +57089,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Equivalence relations and classes
+  Equivalence relations and classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -57349,7 +57663,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The mapping operation
+  The mapping operation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -57362,9 +57676,9 @@ $)
      ` A ` .) $)
   cmap $a class ^m $.
 
-  $( Extend the definition of a class to include the partial mapping
-     operation.  (Read for ` A ^m B ` , "the set of all partial functions that
-     map from ` B ` to ` A ` .) $)
+  $( Extend the definition of a class to include the partial mapping operation.
+     (Read for ` A ^m B ` , "the set of all partial functions that map from
+     ` B ` to ` A ` .) $)
   cpm $a class ^pm $.
 
   ${
@@ -57462,13 +57776,13 @@ $)
     $d f x y $.
     $( Set exponentiation has a universal domain.  (Contributed by set.mm
        contributors, 8-Dec-2003.)  (Revised by set.mm contributors,
-       8-Sep-2013.) (Revised by Scott Fenton, 19-Apr-2019.) $)
+       8-Sep-2013.)  (Revised by Scott Fenton, 19-Apr-2019.) $)
     fnmap $p |- ^m Fn _V $=
       ( vx vy vf cmap cvv cxp wfn cv wf cab df-map vex mapexi fnmpt2i xpvv mpbi
       fneq2i ) DEEFZGDEGABEEBHZAHZCHICJDABCKSTCBLALMNREDOQP $.
 
     $( Partial function exponentiation has a universal domain.  (Contributed by
-       set.mm contributors, 14-Nov-2013.) (Revised by Scott Fenton,
+       set.mm contributors, 14-Nov-2013.)  (Revised by Scott Fenton,
        19-Apr-2019.) $)
     fnpm $p |- ^pm Fn _V $=
       ( vx vy vf cpm cvv cxp wfn cv wfun cpw crab df-pm cfuns cin wcel cab elin
@@ -57631,7 +57945,7 @@ $)
       QUNUQDANARUNUPDAUNUPDMDULDSUAUBUCUDUEUFUGADCBUKUHCDUIUJ $.
 
     $( Set exponentiation with an empty base is the empty set, provided the
-       exponent is non-empty.  Theorem 96 of [Suppes] p. 89.  (Contributed by
+       exponent is nonempty.  Theorem 96 of [Suppes] p. 89.  (Contributed by
        set.mm contributors, 10-Dec-2003.)  (Revised by set.mm contributors,
        19-Mar-2007.) $)
     map0b $p |- ( A =/= (/) -> ( (/) ^m A ) = (/) ) $=
@@ -57693,7 +58007,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Equinumerosity
+  Equinumerosity
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -57830,8 +58144,8 @@ $)
   ${
     $d x y z a b F $.
     fundmen.1 $e |- F e. _V $.
-    $( A function is equinumerous to its domain.  Exercise 4 of [Suppes]
-       p. 98.  (Contributed by SF, 23-Feb-2015.) $)
+    $( A function is equinumerous to its domain.  Exercise 4 of [Suppes] p. 98.
+       (Contributed by SF, 23-Feb-2015.) $)
     fundmen $p |- ( Fun F -> dom F ~~ F ) $=
       ( vx vy vz va vb wfun cen wbr c1st wceq cvv cv wa wi wal wcel wex bitr4i
       cdm cres wf1o wfn ccnv crn wss ssv wfo 1stfo fofn fnssresb mp2b mpbir a1i
@@ -57853,15 +58167,15 @@ $)
 
   ${
     $d x A $.  $d x F $.
-    $( A function is equinumerous to its domain.  Exercise 4 of [Suppes]
-       p. 98.  (Contributed by set.mm contributors, 17-Sep-2013.) $)
+    $( A function is equinumerous to its domain.  Exercise 4 of [Suppes] p. 98.
+       (Contributed by set.mm contributors, 17-Sep-2013.) $)
     fundmeng $p |- ( ( F e. V /\ Fun F ) -> dom F ~~ F ) $=
       ( vx wcel wfun cdm cen wbr cv wceq funeq dmeq breq12d imbi12d vex fundmen
       wi id vtoclg imp ) ABDAEZAFZAGHZCIZEZUDFZUDGHZQUAUCQCABUDAJZUEUAUGUCUDAKU
       HUFUBUDAGUDALUHRMNUDCOPST $.
 
     $( A relational set is equinumerous to its converse.  (Contributed by
-       set.mm contributors, 28-Dec-2014.) (Modified by Scott Fenton,
+       set.mm contributors, 28-Dec-2014.)  (Modified by Scott Fenton,
        17-Apr-2021.) $)
     cnven $p |- ( A e. V -> A ~~ `' A ) $=
       ( wcel cswap cres cvv ccnv wf1o cen wbr swapex resexg mpan swapres f1oeng
@@ -57976,7 +58290,7 @@ $)
   $}
 
   ${
-    $d x t $. $d y t $.
+    $d x t $.  $d y t $.
     $( Lemma for ~ xpassen .  Compute a projection.  (Contributed by Scott
        Fenton, 19-Apr-2021.) $)
     xpassenlem $p |- ( y ( ( 1st o. 1st ) (x) ( ( 2nd o. 1st ) (x) 2nd ) ) x
@@ -57997,7 +58311,7 @@ $)
   $}
 
   ${
-    $d A a b c x y z t p $. $d B a b c x y z t p $. $d C a b c x y z t p $.
+    $d A a b c x y z t p $.  $d B a b c x y z t p $.  $d C a b c x y z t p $.
     xpassen.1 $e |- A e. _V $.
     xpassen.2 $e |- B e. _V $.
     xpassen.3 $e |- C e. _V $.
@@ -58293,7 +58607,7 @@ $)
   $}
 
   ${
-    $d A p r s x $. $d G p s x $.
+    $d A p r s x $.  $d G p s x $.
     enmap1lem1.1 $e |- W = ( s e. ( A ^m G ) |-> ( r o. s ) ) $.
     $( Lemma for ~ enmap1 .  Set up stratification.  (Contributed by SF,
        3-Mar-2015.) $)
@@ -58671,7 +58985,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Cardinal numbers
+  Cardinal numbers
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -58943,8 +59257,8 @@ $)
 
   ${
     $d A y $.  $d X y $.
-    $( A cardinal is equal to the cardinality of a set iff it contains the
-       set.  (Contributed by SF, 24-Feb-2015.) $)
+    $( A cardinal is equal to the cardinality of a set iff it contains the set.
+       (Contributed by SF, 24-Feb-2015.) $)
     ncseqnc $p |- ( A e. NC -> ( A = Nc X <-> X e. A ) ) $=
       ( vy cncs wcel cv cnc wceq wex elncs cen wbr cvv cec vex ncid eleq2 df-nc
       wb a1i mpbiri syl6eleq ecexr syl brex simpld cer ener cdm dmen id eqeq12i
@@ -59015,7 +59329,7 @@ $)
 
   ${
     $d A x y $.  $d B x y $.
-    $( Closure law for cardinal multiplicaton.  (Contributed by SF,
+    $( Closure law for cardinal multiplication.  (Contributed by SF,
        10-Mar-2015.) $)
     muccl $p |- ( ( A e. NC /\ B e. NC ) -> ( A .c B ) e. NC ) $=
       ( vx vy cncs wcel wa cv cnc wceq wex co elncs anbi12i eeanv bitr4i oveq12
@@ -59068,8 +59382,8 @@ $)
   ${
     $d A x $.  $d A y $.  $d A z $.  $d B x $.  $d B y $.  $d B z $.  $d C x $.
     $d C y $.  $d C z $.  $d x y $.  $d x z $.  $d y z $.
-    $( Cardinal multiplication associates.  Theorem XI.2.29 of [Rosser]
-       p. 378.  (Contributed by SF, 10-Mar-2015.) $)
+    $( Cardinal multiplication associates.  Theorem XI.2.29 of [Rosser] p. 378.
+       (Contributed by SF, 10-Mar-2015.) $)
     mucass $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
        ( ( A .c B ) .c C ) = ( A .c ( B .c C ) ) ) $=
       ( vx vy vz cncs wcel w3a cv cnc wceq wex cmuc co elncs cxp vex xpex mucnc
@@ -59629,8 +59943,8 @@ $)
 
   ${
     $d a b $.  $d a g $.  $d b g $.  $d M a $.  $d M b $.  $d M g $.
-    $( A condition for cardinal exponentiation being non-empty.  Theorem
-       XI.2.42 of [Rosser] p. 382.  (Contributed by SF, 6-Mar-2015.) $)
+    $( A condition for cardinal exponentiation being nonempty.  Theorem XI.2.42
+       of [Rosser] p. 382.  (Contributed by SF, 6-Mar-2015.) $)
     ce0nnul $p |- ( M e. NC -> ( ( M ^c 0c ) =/= (/) <->
        E. a ~P1 a e. M ) ) $=
       ( vg vb cncs wcel cv c0c cce co wex cpw1 cmap cen wbr w3a c0 wb wa wceq
@@ -59658,8 +59972,8 @@ $)
     $d a b $.  $d a g $.  $d a p $.  $d a q $.  $d b g $.  $d b p $.  $d b q $.
     $d g p $.  $d g q $.  $d M a $.  $d M b $.  $d M g $.  $d N a $.  $d N b $.
     $d N g $.  $d p q $.
-    $( The sum of two cardinals raised to ` 0c ` is non-empty iff each addend
-       raised to ` 0c ` is non-empty.  Theorem XI.2.43 of [Rosser] p. 383.
+    $( The sum of two cardinals raised to ` 0c ` is nonempty iff each addend
+       raised to ` 0c ` is nonempty.  Theorem XI.2.43 of [Rosser] p. 383.
        (Contributed by SF, 9-Mar-2015.) $)
     ce0addcnnul $p |- ( ( M e. NC /\ N e. NC ) ->
        ( ( ( M +c N ) ^c 0c ) =/= (/) <->
@@ -59700,7 +60014,7 @@ $)
 
   ${
     $d m t $.  $d m n $.  $d N m $.
-    $( A natural raised to cardinal zero is non-empty.  Theorem XI.2.44 of
+    $( A natural raised to cardinal zero is nonempty.  Theorem XI.2.44 of
        [Rosser] p. 383.  (Contributed by SF, 9-Mar-2015.) $)
     ce0nn $p |- ( N e. Nn -> ( N ^c 0c ) =/= (/) ) $=
       ( vm vn vt cv c0c cce co wne c1c c1st c2nd csn cima wcel wbr oveq1 neeq1d
@@ -59745,8 +60059,8 @@ $)
   ${
     $d a b $.  $d a g $.  $d b g $.  $d M a $.  $d M b $.  $d M g $.  $d N a $.
     $d N b $.  $d N g $.
-    $( Cardinal exponentiation is non-empty iff the two sets raised to zero are
-       non-empty.  Theorem XI.2.47 of [Rosser] p. 384.  (Contributed by SF,
+    $( Cardinal exponentiation is nonempty iff the two sets raised to zero are
+       nonempty.  Theorem XI.2.47 of [Rosser] p. 384.  (Contributed by SF,
        9-Mar-2015.) $)
     ce0nnulb $p |- ( ( N e. NC /\ M e. NC ) -> ( ( ( N ^c 0c ) =/= (/) /\ ( M
         ^c 0c ) =/= (/) ) <-> ( N ^c M ) =/= (/) ) ) $=
@@ -59777,7 +60091,7 @@ $)
       UCUKUFUGUHUIULUMVHVFVCVGKLVHVGKVGKRVHKEFUNVGKEUTUOUPBAUQURUS $.
   $}
 
-  $( Cardinal exponentiation to zero is a cardinal iff it is non-empty.
+  $( Cardinal exponentiation to zero is a cardinal iff it is nonempty.
      Corollary 1 of theorem XI.2.38 of [Rosser] p. 384.  (Contributed by SF,
      13-Mar-2015.) $)
   ce0nulnc $p |- ( M e. NC -> ( ( M ^c 0c ) =/= (/) <-> ( M ^c 0c ) e. NC ) )
@@ -59844,7 +60158,7 @@ $)
 
   ${
     $d M a $.
-    $( The value of non-empty cardinal exponentiation.  Theorem XI.2.49 of
+    $( The value of nonempty cardinal exponentiation.  Theorem XI.2.49 of
        [Rosser] p. 385.  (Contributed by SF, 9-Mar-2015.) $)
     ce0 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) -> ( M ^c 0c ) = 1c ) $=
       ( va cncs wcel c0c cce co wa c0 csn cnc c1c wceq cv cpw1 wex ce0ncpw1 vex
@@ -59915,7 +60229,7 @@ $)
 
   ${
     $d A x y $.
-    $( A non-empty set is less than or equal to itself.  Theorem XI.2.14 of
+    $( A nonempty set is less than or equal to itself.  Theorem XI.2.14 of
        [Rosser] p. 375.  (Contributed by SF, 4-Mar-2015.) $)
     lecidg $p |- ( ( A e. V /\ A =/= (/) ) -> A <_c A ) $=
       ( vx vy wcel c0 wne wa clec wbr cv wss wrex ssid sseq2 rspcev mpan2 ancli
@@ -60103,7 +60417,7 @@ $)
   ${
     $d M x $.  $d M y $.  $d M z $.  $d N x $.  $d N y $.  $d N z $.  $d x y $.
     $d x z $.  $d y z $.
-    $( For non-empty sets, cardinal sum always increases cardinal less than or
+    $( For nonempty sets, cardinal sum always increases cardinal less than or
        equal.  Theorem XI.2.19 of [Rosser] p. 376.  (Contributed by SF,
        11-Mar-2015.) $)
     addlec $p |- ( ( M e. V /\ N e. W /\ ( M +c N ) =/= (/) ) ->
@@ -60587,8 +60901,8 @@ $)
 
   ${
     $d M n $.
-    $( ` ( M ^c 0c ) ` is a cardinal iff ` M ` is a T-raising of some
-       cardinal.  (Contributed by SF, 17-Mar-2015.) $)
+    $( ` ( M ^c 0c ) ` is a cardinal iff ` M ` is a T-raising of some cardinal.
+       (Contributed by SF, 17-Mar-2015.) $)
     ce0tb $p |- ( M e. NC -> ( ( M ^c 0c ) e. NC <-> E. n e. NC M = T_c n ) )
         $=
       ( cncs wcel c0c cce co cv ctc wceq wrex ce0t te0c oveq1 eleq1d syl5ibrcom
@@ -61149,7 +61463,7 @@ $)
       MKZXKXONZWBVBXPXNXQUOWFDUPUQSXLDWGVAURUSVCSVDVEVFVGVH $.
   $}
 
-  $( Cardinal less than is irreflexive. (Contributed by Scott Fenton,
+  $( Cardinal less than is irreflexive.  (Contributed by Scott Fenton,
      12-Dec-2021.) $)
   ltcirr $p |- -. A <c A $=
     ( clec wbr wn wne wo cltc neirr olci wa brltc anor bitri con2bii mpbi ) AAB
@@ -61158,9 +61472,10 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Specker's disproof of the axiom of choice
+  Specker's disproof of the axiom of choice
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
+
   $c Sp[ac] $. $( Special set generator for axiom of choice. $)
 
   $( Extend the definition of a class to include the special set generator for
@@ -61815,8 +62130,8 @@ $)
 
   ${
     $d M x $.
-    $( Lemma for ~ nchoice .  The cardinality of a special set is at least
-       one.  (Contributed by SF, 18-Mar-2015.) $)
+    $( Lemma for ~ nchoice .  The cardinality of a special set is at least one.
+       (Contributed by SF, 18-Mar-2015.) $)
     nchoicelem13 $p |- ( M e. NC -> 1c <_c Nc ( Sp[ac] ` M ) ) $=
       ( vx cncs wcel cv cspac cfv wss c1c wrex cnc wbr csn snel1cg spacid snssi
       clec syl sseq1 rspcev syl2anc wb 1cnc fvex lenc ax-mp sylibr ) ACDZBEZAFG
@@ -62114,9 +62429,10 @@ m ) e. Fin /\ ( Nc ( Sp[ac] ` T_c m ) = ( T_c Nc ( Sp[ac] ` m ) +c 1c ) \/ Nc (
       $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Finite recursion
+  Finite recursion
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -62405,9 +62721,10 @@ $)
       YGYMRXBXDBXATWT $.
   $}
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-       Cantorian and Strongly Cantorian Sets
+  Cantorian and Strongly Cantorian Sets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -62427,79 +62744,79 @@ $)
   $( Extend the definition of class to include the class of all strongly
      Cantorian sets. $)
   cscan $a class SCan $.
-  
+
   ${
-     $d x y $.
-     $( Define the class of strongly Cantorian sets.  Unlike general Cantorian
-        sets, this fixes a specific mapping between ` x ` and ` ~P1 x ` .
-	Definition from [Holmes] p. 134.
-	(Contributed by Scott Fenton, 19-Apr-2021.) $)
-     df-scan $a |- SCan = { x | ( y e. x |-> { y } ) e. _V } $.
+    $d x y $.
+    $( Define the class of strongly Cantorian sets.  Unlike general Cantorian
+       sets, this fixes a specific mapping between ` x ` and ` ~P1 x ` .
+       Definition from [Holmes] p. 134.  (Contributed by Scott Fenton,
+       19-Apr-2021.) $)
+    df-scan $a |- SCan = { x | ( y e. x |-> { y } ) e. _V } $.
   $}
 
   ${
-     $d x A $.
-     $( The domain of the singleton function.  (Contributed by Scott Fenton,
-        20-Apr-2021.) $)
-     dmsnfn $p |- dom ( x e. A |-> { x } ) = A $=
-       ( cv csn cvv wcel crab wa cab cmpt df-rab eqid dmmpt snex biantru abbi2i
-       cdm 3eqtr4i ) ACZDZEFZABGSBFZUAHZAIABTJZQBUAABKABTUDUDLMUCABUAUBSNOPR $.
+    $d x A $.
+    $( The domain of the singleton function.  (Contributed by Scott Fenton,
+       20-Apr-2021.) $)
+    dmsnfn $p |- dom ( x e. A |-> { x } ) = A $=
+      ( cv csn cvv wcel crab cab cmpt cdm df-rab eqid dmmpt snex biantru abbi2i
+      wa 3eqtr4i ) ACZDZEFZABGSBFZUAQZAHABTIZJBUAABKABTUDUDLMUCABUAUBSNOPR $.
   $}
 
   ${
-     epelcres.1 $e |- Y e. _V $.
-     $( Version of ~ epelc with a restriction in place.  (Contributed by
-        Scott Fenton, 20-Apr-2021.) $)
-     epelcres $p |- ( X e. A -> ( X ( _E |` A ) Y <-> X e. Y ) ) $=
-       ( wcel cep wbr wa cres iba bicomd brres epelc bicomi 3bitr4g ) BAEZBCFGZ
-       PHZQBCFAIGBCEZPQRPQJKBCFALQSBCDMNO $.
+    epelcres.1 $e |- Y e. _V $.
+    $( Version of ~ epelc with a restriction in place.  (Contributed by Scott
+       Fenton, 20-Apr-2021.) $)
+    epelcres $p |- ( X e. A -> ( X ( _E |` A ) Y <-> X e. Y ) ) $=
+      ( wcel cep wbr wa cres iba bicomd brres epelc bicomi 3bitr4g ) BAEZBCFGZP
+      HZQBCFAIGBCEZPQRPQJKBCFALQSBCDMNO $.
   $}
 
   ${
-     $d A x y $.
-     $( Membership in the class of Cantorian sets.  (Contributed by Scott
-        Fenton, 19-Apr-2021.) $)
-     elcan $p |- ( A e. Can <-> ~P1 A ~~ A ) $=
-       ( vx ccan wcel cvv cpw1 cen wbr elex brrelrnex wceq pw1eq breq12d df-can
-       cv id elab2g pm5.21nii ) ACDAEDAFZAGHZACISAGJBOZFZUAGHTBACEUAAKZUBSUAAGU
-       AALUCPMBNQR $.
+    $d A x y $.
+    $( Membership in the class of Cantorian sets.  (Contributed by Scott
+       Fenton, 19-Apr-2021.) $)
+    elcan $p |- ( A e. Can <-> ~P1 A ~~ A ) $=
+      ( vx ccan wcel cvv cpw1 cen wbr elex brrelrnex cv pw1eq id breq12d df-can
+      wceq elab2g pm5.21nii ) ACDAEDAFZAGHZACISAGJBKZFZUAGHTBACEUAAPZUBSUAAGUAA
+      LUCMNBOQR $.
 
-     $( Membership in the class of strongly Cantorian sets.  (Contributed by
-        Scott Fenton, 19-Apr-2021.) $)
-     elscan $p |- ( A e. SCan <-> ( x e. A |-> { x } ) e. _V ) $=
-       ( vy cscan wcel cvv csn cmpt elex cdm dmsnfn dmexg syl5eqelr wceq mpteq1
-       cv eleq1d df-scan elab2g pm5.21nii ) BDEBFEABAPGZHZFEZBDIUCBUBJFABKUBFLM
-       ACPZUAHZFEUCCBDFUDBNUEUBFAUDBUAOQCARST $.
-   $}
+    $( Membership in the class of strongly Cantorian sets.  (Contributed by
+       Scott Fenton, 19-Apr-2021.) $)
+    elscan $p |- ( A e. SCan <-> ( x e. A |-> { x } ) e. _V ) $=
+      ( vy cscan wcel cvv cv csn cmpt elex dmsnfn dmexg syl5eqelr mpteq1 eleq1d
+      cdm wceq df-scan elab2g pm5.21nii ) BDEBFEABAGHZIZFEZBDJUCBUBPFABKUBFLMAC
+      GZUAIZFEUCCBDFUDBQUEUBFAUDBUANOCARST $.
+  $}
 
-   ${
-      $d A x y z $.
-      $( Strongly Cantorian implies Cantorian.  Observation from [Holmes],
-         p. 134. (Contributed by Scott Fenton, 19-Apr-2021.) $)
-      scancan $p |- ( A e. SCan -> A e. Can ) $=
-        ( vx vy vz cv csn cmpt cvv wcel cpw1 cen wbr cscan wfn ccnv wceq weu wa
-        weq copab ccan wf1o snex eqid fnmpti wrex elpw1 euequ1 eqeq1 vex equcom
-        sneqb bitri syl6bb eubidv mpbiri rexlimivw sylbi df-mpt cnvopab snelpw1
-        cnveqi eleq1 syl6rbb pm5.32ri opabbii 3eqtri fnopab dff1o4 f1oeng mpan2
-        mpbir2an ensymi syl elscan elcan 3imtr4i ) BABEZFZGZHIZAJZAKLZAMIAUAIWA
-        AWBKLZWCWAAWBVTUBZWDWEVTANVTOZWBNBAVSVTVRUCVTUDUECEZVSPZCBWBWFWGWBIZWGD
-        EZFZPZDAUFWHBQZDWGAUGWLWMDAWLWMBDSZBQBDUHWLWHWNBWLWHWKVSPZWNWGWKVSUIWOD
-        BSWNWJVRDUJULDBUKUMUNUOUPUQURWFVRAIZWHRZBCTZOWQCBTWIWHRZCBTVTWRBCAVSUSV
-        BWQBCUTWQWSCBWHWPWIWHWIVSWBIWPWGVSWBVCVRAVAVDVEVFVGVHAWBVTVIVLAWBHVTVJV
-        KAWBVMVNBAVOAVPVQ $.
+  ${
+    $d A x y z $.
+    $( Strongly Cantorian implies Cantorian.  Observation from [Holmes],
+       p. 134.  (Contributed by Scott Fenton, 19-Apr-2021.) $)
+    scancan $p |- ( A e. SCan -> A e. Can ) $=
+      ( vx vy vz cv csn cmpt cvv wcel cpw1 cen wbr cscan wfn ccnv weu weq copab
+      wceq wa ccan wf1o snex eqid fnmpti elpw1 euequ1 eqeq1 sneqb equcom syl6bb
+      wrex vex bitri eubidv mpbiri rexlimivw sylbi df-mpt cnvopab eleq1 snelpw1
+      cnveqi syl6rbb pm5.32ri 3eqtri fnopab dff1o4 mpbir2an f1oeng mpan2 ensymi
+      opabbii syl elscan elcan 3imtr4i ) BABEZFZGZHIZAJZAKLZAMIAUAIWAAWBKLZWCWA
+      AWBVTUBZWDWEVTANVTOZWBNBAVSVTVRUCVTUDUECEZVSSZCBWBWFWGWBIZWGDEZFZSZDAULWH
+      BPZDWGAUFWLWMDAWLWMBDQZBPBDUGWLWHWNBWLWHWKVSSZWNWGWKVSUHWODBQWNWJVRDUMUID
+      BUJUNUKUOUPUQURWFVRAIZWHTZBCRZOWQCBRWIWHTZCBRVTWRBCAVSUSVCWQBCUTWQWSCBWHW
+      PWIWHWIVSWBIWPWGVSWBVAVRAVBVDVEVMVFVGAWBVTVHVIAWBHVTVJVKAWBVLVNBAVOAVPVQ
+      $.
 
   $}
 
-   $( The cardinality of a Cantorian set is equal to the cardinality
-      of its unit power set.  (Contributed by Scott Fenton, 23-Apr-2021.) $)
-   canncb $p |- ( A e. V -> ( A e. Can <-> Nc ~P1 A = Nc A ) ) $=
-     ( wcel cpw1 cnc wceq cen wbr ccan cvv wb pw1exg eqncg syl elcan syl6rbbr )
-     ABCZADZEAEFZRAGHZAICQRJCSTKABLRAJMNAOP $.
+  $( The cardinality of a Cantorian set is equal to the cardinality of its unit
+     power set.  (Contributed by Scott Fenton, 23-Apr-2021.) $)
+  canncb $p |- ( A e. V -> ( A e. Can <-> Nc ~P1 A = Nc A ) ) $=
+    ( wcel cpw1 cnc wceq cen wbr ccan cvv wb pw1exg eqncg syl elcan syl6rbbr )
+    ABCZADZEAEFZRAGHZAICQRJCSTKABLRAJMNAOP $.
 
-   $( The cardinality of a Cantorian set is equal to the cardinality
-      of its unit power set.  (Contributed by Scott Fenton, 21-Apr-2021.) $)
-   cannc $p |- ( A e. Can -> Nc ~P1 A = Nc A ) $=
-     ( ccan wcel cpw1 cnc wceq canncb ibi ) ABCADEAEFABGH $.
+  $( The cardinality of a Cantorian set is equal to the cardinality of its unit
+     power set.  (Contributed by Scott Fenton, 21-Apr-2021.) $)
+  cannc $p |- ( A e. Can -> Nc ~P1 A = Nc A ) $=
+    ( ccan wcel cpw1 cnc wceq canncb ibi ) ABCADEAEFABGH $.
 
   $( The cardinality of a Cantorian set is strictly less than the cardinality
      of its power set.  (Contributed by Scott Fenton, 21-Apr-2021.) $)
@@ -62507,14 +62824,14 @@ $)
     ( ccan wcel cpw1 cnc cpw cltc cannc ltcpw1pwg eqbrtrrd ) ABCADEAEAFEGAHABIJ
     $.
 
-  $( The cardinality of a Cantorian set is equal to the ` T_c ` raising
-     of that cardinal.  (Contributed by Scott Fenton, 23-Apr-2021.) $)
+  $( The cardinality of a Cantorian set is equal to the ` T_c ` raising of that
+     cardinal.  (Contributed by Scott Fenton, 23-Apr-2021.) $)
   cantcb $p |- ( A e. V -> ( A e. Can <-> T_c Nc A = Nc A ) ) $=
     ( wcel ccan cpw1 cnc wceq ctc canncb tcncg eqeq1d bitr4d ) ABCZADCAEFZAFZGO
     HZOGABIMPNOABJKL $.
 
-  $( The cardinality of a Cantorian set is equal to the ` T_c ` raising
-     of that cardinal.  (Contributed by Scott Fenton, 22-Apr-2021.) $)
+  $( The cardinality of a Cantorian set is equal to the ` T_c ` raising of that
+     cardinal.  (Contributed by Scott Fenton, 22-Apr-2021.) $)
   cantc $p |- ( A e. Can -> T_c Nc A = Nc A ) $=
     ( ccan wcel cnc ctc wceq cantcb ibi ) ABCADZEIFABGH $.
 
@@ -62524,12 +62841,74 @@ $)
     ( cvv ccan wcel cnc cltc wbr ltcirr cpw canltpw pwv nceqi syl6breq mto ) AB
     CZADZOEFOGNOAHZDOEAIPAJKLM $.
 
+
+$(
+###############################################################################
+  GUIDES AND MISCELLANEA
+###############################################################################
+$)
+
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-       Appendix:  Typesetting definitions for the tokens in this file
+  Guides (conventions, explanations, and examples)
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Conventions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  This section describes the conventions we use.  These conventions often refer
+  to existing mathematical practices, which are discussed in more detail in
+  other references.
+
+$)
+
+  ${
+    $( Dummy premise for ~ conventions . $)
+    conventions.1 $e |- ph $.
+    $( Unless there is a reason to diverge, we follow the conventions of the
+       Metamath Proof Explorer (MPE, set.mm).
+
+       <HTML><ul><li><b>Community.</b>
+       The Metamath mailing list also covers New Foundations set theory and is
+       at:
+       ~ https://groups.google.com/g/metamath .
+       </li>
+       </ul></HTML>
+
+       (Contributed by the Metamath team, 20-Jan-2024.)
+       (New usage is discouraged.) $)
+    conventions $p |- ph $=
+      (  ) B $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Appendix:  Typesetting definitions for the tokens in this file
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+  $( Warn the parser about which particular formula prefixes are ambiguous.
+     The set.mm grammar itself is not ambiguous, but some strings of symbols
+     might be prefixes for entirely different expressions. For example,
+     ` ( x e. A ` is a prefix for both the maps-to ` ( x e. A |-> B ) = C `
+     and the expression ( x e. A /\ x e. B ) ` .
+     Mario mentioned the name "garden path sentences" for those.
+
+     LALR parsers would normally detect them as shift-reduce or
+     reduce-reduce conflicts, but the current implementation of metamath-knife
+     cannot, and therefore requires those hints. $)
+  $( $j garden_path ( A   =>   ( ph ;
+        type_conversions;
+        garden_path ( x e. A   =>   ( ph ;
+        garden_path { <.   =>   { A ;
+        garden_path { <. <.   =>   { A ;
+  $)
 
 $( $t
 
@@ -62593,13 +62972,21 @@ htmldef "-." as
 htmldef "wff" as
     "<IMG SRC='_wff.gif' WIDTH=24 HEIGHT=19 TITLE='wff' ALIGN=TOP> ";
   althtmldef "wff" as '<FONT COLOR="#808080">wff </FONT>'; /* was #00CC00 */
-  latexdef "wff" as "{\rm wff}";
+  latexdef "wff" as "\mathrm{wff}";
 htmldef "|-" as
     "<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 TITLE='|-' ALIGN=TOP> ";
   althtmldef "|-" as
     '<FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>'; /* &vdash; */
     /* Without sans-serif, way too big in FF3 */
   latexdef "|-" as "\vdash";
+htmldef "&" as
+    " <IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'> ";
+  althtmldef "&" as " &amp; ";
+  latexdef "&" as "\mathrel{\&}";
+htmldef "=>" as
+  " <IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'> ";
+  althtmldef "=>" as " &rArr; ";
+  latexdef "=>" as " \Rightarrow ";
 htmldef "ph" as
     "<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 TITLE='ph' ALIGN=TOP>";
   althtmldef "ph" as '<FONT COLOR="#0000FF"><I>&phi;</I></FONT>';
@@ -62643,7 +63030,7 @@ htmldef "ka" as
   latexdef "ka" as "\rho";
 htmldef "~P" as "<IMG SRC='scrp.gif' WIDTH=16 HEIGHT=19 TITLE='~P' ALIGN=TOP>";
   althtmldef "~P" as '<FONT FACE=sans-serif>&weierp;</FONT>';
-  latexdef "~P" as "{\cal P}";
+  latexdef "~P" as "\mathcal{P}";
 htmldef "<->" as " <IMG SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 " +
     "TITLE='&lt;-&gt;' ALIGN=TOP> ";
   althtmldef "<->" as ' &harr; ';
@@ -62670,10 +63057,10 @@ htmldef "-/\" as
   latexdef "-/\" as "\barwedge";
 htmldef "hadd" as "hadd";
   althtmldef "hadd" as "hadd";
-  latexdef "hadd" as "\mbox{hadd}";
+  latexdef "hadd" as "\text{ hadd }";
 htmldef "cadd" as "cadd";
   althtmldef "cadd" as "cadd";
-  latexdef "cadd" as "\mbox{cadd}";
+  latexdef "cadd" as "\text{ cadd }";
 htmldef "A." as
     "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALIGN=TOP>";
   althtmldef "A." as '<FONT FACE=sans-serif>&forall;</FONT>'; /* &#8704; */
@@ -62681,7 +63068,7 @@ htmldef "A." as
 htmldef "setvar" as
     "<IMG SRC='_setvar.gif' WIDTH=20 HEIGHT=19 TITLE='setvar' ALIGN=TOP> ";
   althtmldef "setvar" as '<FONT COLOR="#808080">setvar </FONT>';
-  latexdef "setvar" as "{\rm setvar}";
+  latexdef "setvar" as "\mathrm{setvar}";
 htmldef "x" as "<IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALIGN=TOP>";
   althtmldef "x" as '<I><FONT COLOR="#FF0000">x</FONT></I>';
   latexdef "x" as "x";
@@ -62753,7 +63140,7 @@ htmldef "F/_" as
 htmldef "class" as
     "<IMG SRC='_class.gif' WIDTH=32 HEIGHT=19 TITLE='class' ALIGN=TOP> ";
   althtmldef "class" as '<FONT COLOR="#808080">class </FONT>';
-  latexdef "class" as "{\rm class}";
+  latexdef "class" as "\mathrm{class}";
 htmldef "./\" as
     " <IMG SRC='_.wedge.gif' WIDTH=11 HEIGHT=19 ALT=' ./\' TITLE='./\'> ";
   althtmldef "./\" as
@@ -62852,13 +63239,13 @@ htmldef ".+^" as
   althtmldef ".+^" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#x2A23;</SPAN> ';       /* &plusacir; */
-  latexdef ".+^" as "\hat{+}";
+  latexdef ".+^" as "\mathbin{\hat{+}}";
 htmldef ".+b" as
     " <IMG SRC='_.plusb.gif' WIDTH=14 HEIGHT=19 ALT=' .+b' TITLE='.+b'> ";
   althtmldef ".+b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#x271A;</SPAN> ';
-  latexdef ".+b" as "\boldsymbol{+}";
+  latexdef ".+b" as "\pmb{+}";
 htmldef ".(+)" as
     " <IMG SRC='_.oplus.gif' WIDTH=13 HEIGHT=19 ALT=' .(+)' TITLE='.(+)'> ";
   althtmldef ".(+)" as
@@ -62900,7 +63287,7 @@ htmldef ".0b" as
   althtmldef ".0b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#x1D7CE</SPAN> ';
-  latexdef ".0b" as "\mbox{\boldmath$0$}";
+  latexdef ".0b" as "\pmb{0}";
 htmldef "A" as "<IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 TITLE='A' ALIGN=TOP>";
   althtmldef "A" as '<I><FONT COLOR="#CC33CC">A</FONT></I>';
   latexdef "A" as "A";
@@ -62935,7 +63322,7 @@ htmldef "e/" as
   latexdef "e/" as "\notin";
 htmldef "_V" as "<IMG SRC='rmcv.gif' WIDTH=10 HEIGHT=19 TITLE='_V' ALIGN=TOP>";
   althtmldef "_V" as 'V';
-  latexdef "_V" as "{\rm V}";
+  latexdef "_V" as "\mathrm{V}";
 htmldef "[." as
     "<IMG SRC='_dlbrack.gif' WIDTH=6 HEIGHT=19 ALT=' [.' TITLE='[.'>";
   /* althtmldef "[." as '&#x298F;'; */   /* corner tick */
@@ -63003,8 +63390,8 @@ htmldef "if" as "<IMG SRC='_if.gif' WIDTH=11 HEIGHT=19 TITLE='if' ALIGN=TOP>";
     "<IMG SRC='_ded.gif' WIDTH=23 HEIGHT=19 TITLE='ded' ALIGN=TOP>";*/
   althtmldef "if" as ' if';
     /*althtmldef "ded" as 'ded';*/
-  latexdef "if" as "{\rm if}";
-    /*latexdef "ded" as "{\rm ded}";*/
+  latexdef "if" as "\mathrm{if}";
+    /*latexdef "ded" as "\mathrm{ded}";*/
 htmldef "," as "<IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 TITLE=',' ALIGN=TOP> ";
   althtmldef "," as ', ';
   latexdef "," as ",";
@@ -63028,7 +63415,6 @@ htmldef "|^|" as
   althtmldef "|^|" as '<FONT SIZE="+1">&cap;</FONT>'; /* &xcap; */
     /*althtmldef "|^|" as '&#8898;';*/ /* &xcap; */
   latexdef "|^|" as "\bigcap";
-
 htmldef "Q" as "<IMG SRC='_cq.gif' WIDTH=12 HEIGHT=19 TITLE='Q' ALIGN=TOP>";
   althtmldef "Q" as '<I><FONT COLOR="#CC33CC">Q</FONT></I>';
   latexdef "Q" as "Q";
@@ -63122,7 +63508,6 @@ htmldef "Y" as "<IMG SRC='_cy.gif' WIDTH=12 HEIGHT=19 TITLE='Y' ALIGN=TOP>";
 htmldef "Z" as "<IMG SRC='_cz.gif' WIDTH=11 HEIGHT=19 TITLE='Z' ALIGN=TOP>";
   althtmldef "Z" as '<I><FONT COLOR="#CC33CC">Z</FONT></I>';
   latexdef "Z" as "Z";
-
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
@@ -63136,18 +63521,16 @@ htmldef "F." as
     " <IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 TITLE='F.' ALIGN=TOP> ";
   althtmldef "F." as ' &perp; ';
   latexdef "F." as "\bot";
-
 htmldef "iota" as
     "<IMG SRC='riota.gif' WIDTH=6 HEIGHT=19 TITLE='iota' ALIGN=TOP>";
   althtmldef "iota" as '&#8489;';
-  latexdef "iota" as "\mathrm{\rotatebox[origin=C]{180}{$\iota$}}";
+  latexdef "iota" as "\text{\riota}";
 htmldef "h" as "<IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 TITLE='h' ALIGN=TOP>";
   althtmldef "h" as '<I><FONT COLOR="#FF0000">h</FONT></I>';
   latexdef "h" as "h";
 htmldef "H" as "<IMG SRC='_ch.gif' WIDTH=14 HEIGHT=19 TITLE='H' ALIGN=TOP>";
   althtmldef "H" as '<I><FONT COLOR="#CC33CC">H</FONT></I>';
   latexdef "H" as "H";
-
 htmldef "X." as
     " <IMG SRC='times.gif' WIDTH=9 HEIGHT=19 TITLE='X.' ALIGN=TOP> ";
   althtmldef "X." as ' &times; ';
@@ -63162,11 +63545,11 @@ htmldef "`'" as "<IMG SRC='_cnv.gif' WIDTH=10 HEIGHT=19 TITLE=" + '"' + "`'" +
 htmldef "dom" as
     "<IMG SRC='_dom.gif' WIDTH=26 HEIGHT=19 TITLE='dom' ALIGN=TOP> ";
   althtmldef "dom" as 'dom ';
-  latexdef "dom" as "{\rm dom}";
+  latexdef "dom" as "\mathrm{dom}";
 htmldef "ran" as
     "<IMG SRC='_ran.gif' WIDTH=22 HEIGHT=19 TITLE='ran' ALIGN=TOP> ";
   althtmldef "ran" as 'ran ';
-  latexdef "ran" as "{\rm ran}";
+  latexdef "ran" as "\mathrm{ran}";
 htmldef "|`" as " <IMG SRC='restriction.gif' WIDTH=5 HEIGHT=19 TITLE='|`'" +
     " ALIGN=TOP> ";
   althtmldef "|`" as ' <FONT FACE=sans-serif>&#8638;</FONT> '; /* &uharr; */
@@ -63182,11 +63565,11 @@ htmldef "o." as
 htmldef
     "Fun" as "<IMG SRC='_fun.gif' WIDTH=25 HEIGHT=19 TITLE='Fun' ALIGN=TOP> ";
   althtmldef "Fun" as 'Fun ';
-  latexdef "Fun" as "{\rm Fun}";
+  latexdef "Fun" as "\mathrm{Fun}";
 htmldef "Fn" as
     " <IMG SRC='_fn.gif' WIDTH=17 HEIGHT=19 TITLE='Fn' ALIGN=TOP> ";
   althtmldef "Fn" as ' Fn ';
-  latexdef "Fn" as "{\rm Fn}";
+  latexdef "Fn" as "\mathrm{Fn}";
 htmldef ":" as "<IMG SRC='colon.gif' WIDTH=4 HEIGHT=19 TITLE=':' ALIGN=TOP>";
   althtmldef ":" as ':';
   latexdef ":" as ":";
@@ -63199,27 +63582,19 @@ htmldef "-1-1->" as
     "<IMG SRC='onetoone.gif' WIDTH=23 HEIGHT=19 TITLE='-1-1-&gt;' ALIGN=TOP>";
   althtmldef "-1-1->" as
     '&ndash;<FONT SIZE=-2 FACE=sans-serif>1-1</FONT>&rarr;';
-  latexdef "-1-1->" as
-    "\raisebox{.5ex}{${\textstyle{\:}_{\mbox{\footnotesize\rm 1" +
-    "\tt -\rm 1}}}\atop{\textstyle{" +
-    "\longrightarrow}\atop{\textstyle{}^{\mbox{\footnotesize\rm {\ }}}}}$}";
+  latexdef "-1-1->" as "\overset{\mathrm{1-1}}{\longrightarrow}";
 htmldef "-onto->" as
     "<IMG SRC='onto.gif' WIDTH=23 HEIGHT=19 TITLE='-onto-&gt;' ALIGN=TOP>";
   althtmldef "-onto->" as
     '&ndash;<FONT SIZE=-2 FACE=sans-serif>onto</FONT>&rarr;';
-  latexdef "-onto->" as
-    "\raisebox{.5ex}{${\textstyle{\:}_{\mbox{\footnotesize\rm {\ }}}}" +
-    "\atop{\textstyle{" +
-    "\longrightarrow}\atop{\textstyle{}^{\mbox{\footnotesize\rm onto}}}}$}";
+  latexdef "-onto->" as "\underset{\mathrm{onto}}{\longrightarrow}";
 htmldef "-1-1-onto->" as "<IMG SRC='onetooneonto.gif' WIDTH=23 HEIGHT=19 " +
     "TITLE='-1-1-onto-&gt;' ALIGN=TOP>";
   althtmldef "-1-1-onto->" as '&ndash;<FONT SIZE=-2 '
     + 'FACE=sans-serif>1-1</FONT>-<FONT SIZE=-2 '
     + 'FACE=sans-serif>onto</FONT>&rarr;';
-  latexdef "-1-1-onto->" as
-    "\raisebox{.5ex}{${\textstyle{\:}_{\mbox{\footnotesize\rm 1" +
-    "\tt -\rm 1}}}\atop{\textstyle{" +
-    "\longrightarrow}\atop{\textstyle{}^{\mbox{\footnotesize\rm onto}}}}$}";
+  latexdef "-1-1-onto->" as "\overset{\mathrm{1-1}}{\underset{\mathrm{onto}}" +
+    "{\longrightarrow}}";
 htmldef "`" as
     "<IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 TITLE='` ' ALIGN=TOP>";
     /* Above, IE7 _printing_ is corrupted by '`'; use '` ' which works */
@@ -63228,7 +63603,7 @@ htmldef "`" as
 htmldef "Isom" as
     " <IMG SRC='_isom.gif' WIDTH=30 HEIGHT=19 TITLE='Isom' ALIGN=TOP> ";
   althtmldef "Isom" as ' Isom ';
-  latexdef "Isom" as "{\rm Isom}";
+  latexdef "Isom" as "\mathrm{Isom}";
 htmldef "|->" as " <IMG SRC='mapsto.gif' WIDTH=15 HEIGHT=19 TITLE='|-&gt;'" +
     " ALIGN=TOP> ";
   althtmldef "|->" as ' <FONT FACE=sans-serif>&#8614;</FONT> ';
@@ -63236,25 +63611,23 @@ htmldef "|->" as " <IMG SRC='mapsto.gif' WIDTH=15 HEIGHT=19 TITLE='|-&gt;'" +
 htmldef "1st" as
     "<IMG SRC='_1st.gif' WIDTH=15 HEIGHT=19 TITLE='1st' ALIGN=TOP>";
   althtmldef "1st" as '1<SUP>st</SUP> ';
-  latexdef "1st" as "1^{\rm st}";
+  latexdef "1st" as "1^\mathrm{st}";
 htmldef "2nd" as
     "<IMG SRC='_2nd.gif' WIDTH=21 HEIGHT=19 TITLE='2nd' ALIGN=TOP>";
   althtmldef "2nd" as '2<SUP>nd</SUP> ';
-  latexdef "2nd" as "2^{\rm nd}";
+  latexdef "2nd" as "2^\mathrm{nd}";
 htmldef "Swap" as
     "<FONT FACE=sans-serif> Swap </FONT>";
   althtmldef "Swap" as '<FONT FACE=sans-serif> Swap </FONT>';
-  latexdef "Swap" as "{\rm Swap}";
-
+  latexdef "Swap" as "\mathrm{Swap}";
 htmldef "_E" as
     " <IMG SRC='rmce.gif' WIDTH=9 HEIGHT=19 TITLE='_E' ALIGN=TOP> ";
   althtmldef "_E" as ' E ';
-  latexdef "_E" as "{\rm E}";
+  latexdef "_E" as "\mathrm{E}";
 htmldef "_I" as
     " <IMG SRC='rmci.gif' WIDTH=4 HEIGHT=19 TITLE='_I' ALIGN=TOP> ";
   althtmldef "_I" as ' I ';
-  latexdef "_I" as "{\rm I}";
-
+  latexdef "_I" as "\mathrm{I}";
 htmldef "U_" as
     "<IMG SRC='_cupbar.gif' WIDTH=13 HEIGHT=19 TITLE='U_' ALIGN=TOP>";
   althtmldef "U_" as '<U><FONT SIZE="+1">&cup;</FONT></U>'; /* &xcup; */
@@ -63263,12 +63636,10 @@ htmldef "|^|_" as
     "<IMG SRC='_capbar.gif' WIDTH=13 HEIGHT=19 TITLE='|^|_' ALIGN=TOP>";
   althtmldef "|^|_" as '<U><FONT SIZE="+1">&cap;</FONT></U>'; /* &xcap; */
   latexdef "|^|_" as "\underline{\bigcap}";
-
 htmldef "(+)" as
     " <IMG SRC='oplus.gif' WIDTH=13 HEIGHT=19 TITLE='(+)' ALIGN=TOP> ";
   althtmldef "(+)" as " &#x2295; ";
   latexdef "(+)" as "\oplus";
-
 htmldef "0c" as '0<SUB><I>c</I></SUB>';
   althtmldef "0c" as '0<SUB><I>c</I></SUB>';
   latexdef "0c" as "0_c";
@@ -63279,15 +63650,13 @@ htmldef "+c" as
     " <IMG SRC='_plc.gif' WIDTH=18 HEIGHT=19 TITLE='+o' ALIGN=TOP> ";
   althtmldef "+c" as ' +<SUB><I>c</I></SUB> ';
   latexdef "+c" as "+_c";
-
 htmldef "l" as "<IMG SRC='_l.gif' WIDTH=6 HEIGHT=19 TITLE='l' ALIGN=TOP>";
   althtmldef "l" as '<I><FONT COLOR="#FF0000">l</FONT></I>';
   latexdef "l" as "l";
-
 htmldef "Fix" as
     "<IMG SRC='_fix.gif' WIDTH=21 HEIGHT=19 TITLE='Fix' ALIGN=TOP>";
   althtmldef "Fix" as '<FONT FACE=sans-serif> Fix </FONT>';
-  latexdef "Fix" as "{\rm Fix}";
+  latexdef "Fix" as "\mathrm{Fix}";
 htmldef "<<" as
     "<IMG SRC='llangle.gif' WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALIGN=TOP>";
   althtmldef "<<" as "&#10218;";
@@ -63302,17 +63671,14 @@ htmldef "(x)" as
   latexdef "(x)" as "\otimes";
 htmldef "Image" as "Image";
   althtmldef "Image" as "Image";
-  latexdef "Image" as "{\rm Image}";
-
+  latexdef "Image" as "\mathrm{Image}";
 htmldef "Image_k" as "Image<SUB><I>k</I></SUB>";
   althtmldef "Image_k" as "Image<SUB><I>k</I></SUB>";
-  latexdef "Image_k" as "{\rm Image}_k";
-
+  latexdef "Image_k" as "\mathrm{Image}_k";
 htmldef "~P1" as
   "<IMG SRC='scrp.gif' WIDTH=16 HEIGHT=19 TITLE='~P' ALIGN=TOP><SUB>1</SUB> ";
   althtmldef "~P1" as '<FONT FACE=sans-serif>&weierp;</FONT><SUB>1</SUB>';
-  latexdef "~P1" as "{\cal P}_1";
-
+  latexdef "~P1" as "\mathcal{P}_1";
 htmldef "X._k" as
     " <IMG SRC='times.gif' WIDTH=9 HEIGHT=19 TITLE='X.'" +
        "ALIGN=TOP><SUB><I>k</I></SUB> ";
@@ -63339,27 +63705,27 @@ htmldef "o._k" as
 htmldef "SI" as
     "<FONT FACE=sans-serif> SI </FONT>";
   althtmldef "SI" as '<FONT FACE=sans-serif> SI </FONT>';
-  latexdef "SI" as "{\rm SI}";
+  latexdef "SI" as "\mathrm{SI}";
 htmldef "Clos1" as
     "<FONT FACE=sans-serif> Clos1 </FONT>";
   althtmldef "Clos1" as '<FONT FACE=sans-serif> Clos1 </FONT>';
-  latexdef "Clos1" as "{\rm Clos1}";
+  latexdef "Clos1" as "\mathrm{Clos1}";
 htmldef "Phi" as
     "<FONT FACE=sans-serif> Phi </FONT>";
   althtmldef "Phi" as '<FONT FACE=sans-serif> Phi </FONT>';
-  latexdef "Phi" as "{\rm Phi}";
+  latexdef "Phi" as "\mathrm{Phi}";
 htmldef "Proj1" as
     "<FONT FACE=sans-serif> Proj1 </FONT>";
   althtmldef "Proj1" as '<FONT FACE=sans-serif> Proj1 </FONT>';
-  latexdef "Proj1" as "{\rm Proj1}";
+  latexdef "Proj1" as "\mathrm{Proj1}";
 htmldef "Proj2" as
     "<FONT FACE=sans-serif> Proj2 </FONT>";
   althtmldef "Proj2" as '<FONT FACE=sans-serif> Proj2 </FONT>';
-  latexdef "Proj2" as "{\rm Proj2}";
+  latexdef "Proj2" as "\mathrm{Proj2}";
 htmldef "_S" as
     "<FONT FACE=sans-serif> S </FONT>";
   althtmldef "_S" as '<FONT FACE=sans-serif> S </FONT>';
-  latexdef "_S" as "{\rm S}";
+  latexdef "_S" as "\mathrm{S}";
 htmldef "U.1" as '&xcup;<SUB>1</SUB>';
   althtmldef "U.1" as '&xcup;<SUB>1</SUB>';
   latexdef "U.1" as "\bigcup_1";
@@ -63367,194 +63733,181 @@ htmldef "_I_k" as
     " <IMG SRC='rmci.gif' WIDTH=4 HEIGHT=19 TITLE='_I_k' ALIGN=TOP>" +
     "<SUB><I>k</I></SUB> ";
   althtmldef "_I_k" as ' I<SUB><I>k</I></SUB> ';
-  latexdef "_I_k" as "{\rm I}_k";
+  latexdef "_I_k" as "\mathrm{I}_k";
 htmldef "_S_k" as
     " <FONT FACE=sans-serif>S</FONT><SUB><I>k</I></SUB> ";
   althtmldef "_S_k" as
     ' <FONT FACE=sans-serif>S</FONT><SUB><I>k</I></SUB> ';
-  latexdef "_S_k" as "{\rm S}_k";
+  latexdef "_S_k" as "\mathrm{S}_k";
 htmldef "Ins2_k" as
     " <FONT FACE=sans-serif>Ins2</FONT><SUB><I>k</I></SUB> ";
   althtmldef "Ins2_k" as
     ' <FONT FACE=sans-serif>Ins2</FONT><SUB><I>k</I></SUB> ';
-  latexdef "Ins2_k" as "{\rm Ins2}_k";
+  latexdef "Ins2_k" as "\mathrm{Ins2}_k";
 htmldef "Ins3_k" as
     " <FONT FACE=sans-serif>Ins3</FONT><SUB><I>k</I></SUB> ";
   althtmldef "Ins3_k" as
     ' <FONT FACE=sans-serif>Ins3</FONT><SUB><I>k</I></SUB> ';
-  latexdef "Ins3_k" as "{\rm Ins3}_k";
+  latexdef "Ins3_k" as "\mathrm{Ins3}_k";
 htmldef "SI_k" as
     " <FONT FACE=sans-serif>SI</FONT><SUB><I>k</I></SUB> ";
   althtmldef "SI_k" as ' <FONT FACE=sans-serif>SI</FONT><SUB><I>k</I></SUB> ';
-  latexdef "SI_k" as "{\rm SI}_k";
-
-
+  latexdef "SI_k" as "\mathrm{SI}_k";
 htmldef "Ins2" as
     " <FONT FACE=sans-serif>Ins2</FONT> ";
   althtmldef "Ins2" as ' <FONT FACE=sans-serif>Ins2</FONT> ';
-  latexdef "Ins2" as "{\rm Ins2}";
+  latexdef "Ins2" as "\mathrm{Ins2}";
 htmldef "Ins3" as
     " <FONT FACE=sans-serif>Ins3</FONT> ";
   althtmldef "Ins3" as ' <FONT FACE=sans-serif>Ins3</FONT> ';
-  latexdef "Ins3" as "{\rm Ins3}";
+  latexdef "Ins3" as "\mathrm{Ins3}";
 htmldef "Ins4" as
     " <FONT FACE=sans-serif>Ins4</FONT> ";
   althtmldef "Ins4" as ' <FONT FACE=sans-serif>Ins4</FONT> ';
-  latexdef "Ins4" as "{\rm Ins4}";
+  latexdef "Ins4" as "\mathrm{Ins4}";
 htmldef "Cup" as
     " <FONT FACE=sans-serif>Cup</FONT> ";
   althtmldef "Cup" as ' <FONT FACE=sans-serif>Cup</FONT> ';
-  latexdef "Cup" as "{\rm Cup}";
+  latexdef "Cup" as "\mathrm{Cup}";
 htmldef "Compose" as
     " <FONT FACE=sans-serif>Compose</FONT> ";
   althtmldef "Compose" as ' <FONT FACE=sans-serif>Compose</FONT> ';
-  latexdef "Compose" as "{\rm Compose}";
+  latexdef "Compose" as "\mathrm{Compose}";
 htmldef "Disj" as
     " <FONT FACE=sans-serif>Disj</FONT> ";
   althtmldef "Disj" as ' <FONT FACE=sans-serif>Disj</FONT> ';
-  latexdef "Disj" as "{\rm Disj}";
+  latexdef "Disj" as "\mathrm{Disj}";
 htmldef "AddC" as
     " <FONT FACE=sans-serif>AddC</FONT> ";
   althtmldef "AddC" as ' <FONT FACE=sans-serif>AddC</FONT> ';
-  latexdef "AddC" as "{\rm AddC}";
-
+  latexdef "AddC" as "\mathrm{AddC}";
 htmldef "SI_3" as
     " <FONT FACE=sans-serif>SI</FONT><SUB><I>3</I></SUB> ";
   althtmldef "SI_3" as ' <FONT FACE=sans-serif>SI</FONT><SUB><I>3</I></SUB> ';
-  latexdef "SI_3" as "{\rm SI}_3";
-
-
+  latexdef "SI_3" as "\mathrm{SI}_3";
 htmldef "P6" as
     " <FONT FACE=sans-serif>P6</FONT> ";
   althtmldef "P6" as ' <FONT FACE=sans-serif>P6</FONT> ';
-  latexdef "P6" as "{\rm P6}";
-
-
+  latexdef "P6" as "\mathrm{P6}";
 htmldef "Nn" as
     " <FONT FACE=sans-serif>Nn</FONT> ";
   althtmldef "Nn" as ' <FONT FACE=sans-serif>Nn</FONT> ';
-  latexdef "Nn" as "{\rm Nn}";
+  latexdef "Nn" as "\mathrm{Nn}";
 htmldef "Fin" as
     " <FONT FACE=sans-serif>Fin</FONT> ";
   althtmldef "Fin" as ' <FONT FACE=sans-serif>Fin</FONT> ';
-  latexdef "Fin" as "{\rm Fin}";
-
+  latexdef "Fin" as "\mathrm{Fin}";
 htmldef "<_[fin]" as
     " <IMG SRC='le.gif' WIDTH=11 HEIGHT=19 ALT='&lt;_' ALIGN=TOP>" +
     "<SUB>fin</SUB> ";
   althtmldef "<_[fin]" as ' &le;<SUB>fin</SUB> ';
-  latexdef "<_[fin]" as "{\le}_{\rm fin}";
+  latexdef "<_[fin]" as "\le_\mathrm{fin}";
 htmldef "<[fin]" as
     " <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT='&lt;' ALIGN=TOP>" +
     "<SUB>fin</SUB> ";
   althtmldef "<[fin]" as ' &lt;<SUB>fin</SUB> ';
-  latexdef "<[fin]" as "<_{\rm fin}";
+  latexdef "<[fin]" as "<_\mathrm{fin}";
 htmldef "Nc[fin]" as
     " <FONT FACE=sans-serif>Nc</FONT><SUB>fin</SUB> ";
   althtmldef "Nc[fin]" as ' <FONT FACE=sans-serif>Nc</FONT><SUB>fin</SUB> ';
-  latexdef "Nc[fin]" as "{\rm Nc}_{\rm fin}";
+  latexdef "Nc[fin]" as "\mathrm{Nc}_\mathrm{fin}";
 htmldef "_T[fin]" as
     " <FONT FACE=sans-serif>T</FONT><SUB>fin</SUB> ";
   althtmldef "_T[fin]" as ' <FONT FACE=sans-serif>T</FONT><SUB>fin</SUB> ';
-  latexdef "_T[fin]" as "{\rm T}_{\rm fin}";
+  latexdef "_T[fin]" as "\mathrm{T}_\mathrm{fin}";
 htmldef "Even[fin]" as
     " <FONT FACE=sans-serif>Even</FONT><SUB>fin</SUB> ";
   althtmldef "Even[fin]" as
     ' <FONT FACE=sans-serif>Even</FONT><SUB>fin</SUB> ';
-  latexdef "Even[fin]" as "{\rm Even}_{\rm fin}";
+  latexdef "Even[fin]" as "\mathrm{Even}_\mathrm{fin}";
 htmldef "Odd[fin]" as
     " <FONT FACE=sans-serif>Odd</FONT><SUB>fin</SUB> ";
   althtmldef "Odd[fin]" as ' <FONT FACE=sans-serif>Odd</FONT><SUB>fin</SUB> ';
-  latexdef "Odd[fin]" as "{\rm Odd}_{\rm fin}";
+  latexdef "Odd[fin]" as "\mathrm{Odd}_\mathrm{fin}";
 htmldef "_S[fin]" as
     " <FONT FACE=sans-serif>S</FONT><SUB>fin</SUB> ";
   althtmldef "_S[fin]" as ' <FONT FACE=sans-serif>S</FONT><SUB>fin</SUB> ';
-  latexdef "_S[fin]" as "{\rm S}_{\rm fin}";
+  latexdef "_S[fin]" as "\mathrm{S}_\mathrm{fin}";
 htmldef "Sp[fin]" as
     " <FONT FACE=sans-serif>Sp</FONT><SUB>fin</SUB> ";
   althtmldef "Sp[fin]" as ' <FONT FACE=sans-serif>Sp</FONT><SUB>fin</SUB> ';
-  latexdef "Sp[fin]" as "{\rm Sp}_{\rm fin}";
-
+  latexdef "Sp[fin]" as "\mathrm{Sp}_\mathrm{fin}";
 htmldef "Funs" as
     " <FONT FACE=sans-serif>Funs</FONT> ";
   althtmldef "Funs" as ' <FONT FACE=sans-serif>Funs</FONT> ';
-  latexdef "Funs" as "{\rm Funs}";
+  latexdef "Funs" as "\mathrm{Funs}";
 htmldef "Fns" as
     " <FONT FACE=sans-serif>Fns</FONT> ";
   althtmldef "Fns" as ' <FONT FACE=sans-serif>Fns</FONT> ';
-  latexdef "Fns" as "{\rm Fns}";
+  latexdef "Fns" as "\mathrm{Fns}";
 htmldef "PProd" as
     " <FONT FACE=sans-serif>PProd</FONT> ";
   althtmldef "PProd" as ' <FONT FACE=sans-serif>PProd</FONT> ';
-  latexdef "PProd" as "{\rm PProd}";
+  latexdef "PProd" as "\mathrm{PProd}";
 htmldef "Cross" as
     " <FONT FACE=sans-serif>Cross</FONT> ";
   althtmldef "Cross" as ' <FONT FACE=sans-serif>Cross</FONT> ';
-  latexdef "Cross" as "{\rm Cross}";
+  latexdef "Cross" as "\mathrm{Cross}";
 htmldef "Pw1Fn" as
     " <FONT FACE=sans-serif>Pw1Fn</FONT> ";
   althtmldef "Pw1Fn" as ' <FONT FACE=sans-serif>Pw1Fn</FONT> ';
-  latexdef "Pw1Fn" as "{\rm Pw1Fn}";
+  latexdef "Pw1Fn" as "\mathrm{Pw1Fn}";
 htmldef "FullFun" as
     " <FONT FACE=sans-serif>FullFun</FONT> ";
   althtmldef "FullFun" as ' <FONT FACE=sans-serif>FullFun</FONT> ';
-  latexdef "FullFun" as "{\rm FullFun}";
-
+  latexdef "FullFun" as "\mathrm{FullFun}";
 htmldef "Trans" as
     " <FONT FACE=sans-serif>Trans</FONT> ";
   althtmldef "Trans" as ' <FONT FACE=sans-serif>Trans</FONT> ';
-  latexdef "Trans" as "{\rm Trans}";
+  latexdef "Trans" as "\mathrm{Trans}";
 htmldef "Ref" as
     " <FONT FACE=sans-serif>Ref</FONT> ";
   althtmldef "Ref" as ' <FONT FACE=sans-serif>Ref</FONT> ';
-  latexdef "Ref" as "{\rm Ref}";
+  latexdef "Ref" as "\mathrm{Ref}";
 htmldef "Antisym" as
     " <FONT FACE=sans-serif>Antisym</FONT> ";
   althtmldef "Antisym" as ' <FONT FACE=sans-serif>Antisym</FONT> ';
-  latexdef "Antisym" as "{\rm Antisym}";
+  latexdef "Antisym" as "\mathrm{Antisym}";
 htmldef "Po" as
     " <FONT FACE=sans-serif>Po</FONT> ";
   althtmldef "Po" as ' <FONT FACE=sans-serif>Po</FONT> ';
-  latexdef "Po" as "{\rm Po}";
+  latexdef "Po" as "\mathrm{Po}";
 htmldef "Connex" as
     " <FONT FACE=sans-serif>Connex</FONT> ";
   althtmldef "Connex" as ' <FONT FACE=sans-serif>Connex</FONT> ';
-  latexdef "Connex" as "{\rm Connex}";
+  latexdef "Connex" as "\mathrm{Connex}";
 htmldef "Or" as
     " <FONT FACE=sans-serif>Or</FONT> ";
   althtmldef "Or" as ' <FONT FACE=sans-serif>Or</FONT> ';
-  latexdef "Or" as "{\rm Or}";
+  latexdef "Or" as "\mathrm{Or}";
 htmldef "Fr" as
     " <FONT FACE=sans-serif>Fr</FONT> ";
   althtmldef "Fr" as ' <FONT FACE=sans-serif>Fr</FONT> ';
-  latexdef "Fr" as "{\rm Fr}";
+  latexdef "Fr" as "\mathrm{Fr}";
 htmldef "We" as
     " <FONT FACE=sans-serif>We</FONT> ";
   althtmldef "We" as ' <FONT FACE=sans-serif>We</FONT> ';
-  latexdef "We" as "{\rm We}";
+  latexdef "We" as "\mathrm{We}";
 htmldef "Ext" as
     " <FONT FACE=sans-serif>Ext</FONT> ";
   althtmldef "Ext" as ' <FONT FACE=sans-serif>Ext</FONT> ';
-  latexdef "Ext" as "{\rm Ext}";
+  latexdef "Ext" as "\mathrm{Ext}";
 htmldef "Sym" as
     " <FONT FACE=sans-serif>Sym</FONT> ";
   althtmldef "Sym" as ' <FONT FACE=sans-serif>Sym</FONT> ';
-  latexdef "Sym" as "{\rm Sym}";
+  latexdef "Sym" as "\mathrm{Sym}";
 htmldef "Er" as
     " <FONT FACE=sans-serif>Er</FONT> ";
   althtmldef "Er" as ' <FONT FACE=sans-serif>Er</FONT> ';
-  latexdef "Er" as "{\rm Er}";
-
+  latexdef "Er" as "\mathrm{Er}";
 htmldef "/." as
     "<IMG SRC='diagup.gif' WIDTH=14 HEIGHT=19 TITLE='/.' ALIGN=TOP>";
   althtmldef "/." as ' <B>/</B> ';
   latexdef "/." as "\diagup";
-
 htmldef "~~" as
     " <IMG SRC='approx.gif' WIDTH=13 HEIGHT=19 TITLE='~~' ALIGN=TOP> ";
   althtmldef "~~" as ' &#8776; '; /* &ap; */
   latexdef "~~" as "\approx";
-
 htmldef "^m" as
     " <IMG SRC='_hatm.gif' WIDTH=15 HEIGHT=19 TITLE='^m' ALIGN=TOP> ";
   althtmldef "^m" as ' &uarr;<SUB><I>m</I></SUB> ';
@@ -63563,16 +63916,15 @@ htmldef "^pm" as
     " <IMG SRC='_hatpm.gif' WIDTH=21 HEIGHT=19 TITLE='^pm' ALIGN=TOP> ";
   althtmldef "^pm" as ' &uarr;<SUB><I>pm</I></SUB> ';
   latexdef "^pm" as "\uparrow_{pm}";
-
 htmldef "NC" as
     " <FONT FACE=sans-serif>NC</FONT> ";
   althtmldef "NC" as ' <FONT FACE=sans-serif>NC</FONT> ';
-  latexdef "NC" as "{\rm NC}";
+  latexdef "NC" as "\mathrm{NC}";
 htmldef "<_c" as
     " <IMG SRC='le.gif' WIDTH=11 HEIGHT=19 ALT='&lt;_' ALIGN=TOP>" +
     "<SUB>c</SUB> ";
   althtmldef "<_c" as ' &le;<SUB>c</SUB> ';
-  latexdef "<_c" as "{\le}_c";
+  latexdef "<_c" as "\le_c";
 htmldef "<c" as
     " <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT='&lt;' ALIGN=TOP><SUB>c</SUB> ";
   althtmldef "<c" as ' &lt;<SUB>c</SUB> ';
@@ -63580,14 +63932,14 @@ htmldef "<c" as
 htmldef "Nc" as
     " <FONT FACE=sans-serif>Nc</FONT> ";
   althtmldef "Nc" as ' <FONT FACE=sans-serif>Nc</FONT> ';
-  latexdef "Nc" as "{\rm Nc}";
+  latexdef "Nc" as "\mathrm{Nc}";
 htmldef ".c" as ' &middot;<SUB><I>c</I></SUB> ';
   althtmldef ".c" as ' &middot;<SUB><I>c</I></SUB> ';
   latexdef ".c" as "\cdot_c";
 htmldef "T_c" as
     " <FONT FACE=sans-serif>T</FONT><SUB>c</SUB> ";
   althtmldef "T_c" as ' <FONT FACE=sans-serif>T</FONT><SUB>c</SUB> ';
-  latexdef "T_c" as "{\rm T}_c ";
+  latexdef "T_c" as "\mathrm{T}_c ";
 htmldef "2c" as '2<SUB><I>c</I></SUB>';
   althtmldef "2c" as '2<SUB><I>c</I></SUB>';
   latexdef "2c" as "2_c";
@@ -63597,36 +63949,28 @@ htmldef "3c" as '3<SUB><I>c</I></SUB>';
 htmldef "^c" as ' &uarr;<SUB><I>c</I></SUB> ';
   althtmldef "^c" as ' &uarr;<SUB><I>c</I></SUB> ';
   latexdef "^c" as "\uparrow_c";
-
 htmldef "Sp[ac]" as
     " <FONT FACE=sans-serif>Sp</FONT><SUB>ac</SUB> ";
   althtmldef "Sp[ac]" as ' <FONT FACE=sans-serif>Sp</FONT><SUB>ac</SUB> ';
-  latexdef "Sp[ac]" as "{\rm Sp}_{\rm ac}";
-
+  latexdef "Sp[ac]" as "\mathrm{Sp}_\mathrm{ac}";
 htmldef "TcFn" as "TcFn";
   althtmldef "TcFn" as "TcFn";
-  latexdef "TcFn" as "{\rm TcFn}";
-
+  latexdef "TcFn" as "\mathrm{TcFn}";
 htmldef "FRec" as " <FONT FACE=sans-serif>FRec</FONT> ";
   althtmldef "FRec" as " <FONT FACE=sans-serif>FRec</FONT> ";
-  latexdef "FRec" as "{\rm FRec}";
-
+  latexdef "FRec" as "\mathrm{FRec}";
 htmldef "Dom" as " <FONT FACE=sans-serif>Dom</FONT> ";
   althtmldef "Dom" as " <FONT FACE=sans-serif>Dom</FONT> ";
-  latexdef "Dom" as "{\rm Dom}";
-
+  latexdef "Dom" as "\mathrm{Dom}";
 htmldef "Ran" as " <FONT FACE=sans-serif>Ran</FONT> ";
   althtmldef "Ran" as " <FONT FACE=sans-serif>Ran</FONT> ";
-  latexdef "Ran" as "{\rm Ran}";
-
-
+  latexdef "Ran" as "\mathrm{Ran}";
 htmldef "Can" as
     " <FONT FACE=sans-serif>Can</FONT> ";
   althtmldef "Can" as ' <FONT FACE=sans-serif>Can</FONT> ';
-  latexdef "Can" as "{\rm Can}";
-  
+  latexdef "Can" as "\mathrm{Can}";
 htmldef "SCan" as
     " <FONT FACE=sans-serif>SCan</FONT> ";
   althtmldef "SCan" as ' <FONT FACE=sans-serif>SCan</FONT> ';
-  latexdef "SCan" as "{\rm SCan}";
+  latexdef "SCan" as "\mathrm{SCan}";
  $)

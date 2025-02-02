@@ -1,5 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+   "https://www.w3.org/TR/html4/loose.dtd">
+<!-- The file mmnatded.html is generated from mmnatded.raw.html -
+  see the regen-from-raw script for details -->
 <HTML LANG="EN-US">
 <HEAD>
 
@@ -274,7 +276,7 @@ prefix ("true implies") using <A HREF="a1i.html">a1i</a>.
 You can then use the existing assertion Td to prove the resulting conclusion
 with a <tt>T. -&gt;</tt> prefix.
 Finally, you can remove that prefix using
-<A HREF="trud.html">trud</A>, resulting in the conclusion you
+<A HREF="mptru.html">mptru</A>, resulting in the conclusion you
 wanted to prove.</LI>
 
 <LI>To prove some assertion T in closed form,
@@ -388,7 +390,7 @@ The special case where ` ps ` is ` ph ` is given by ~ nf5di .
 It is possible to prove the not-free theorem for a term constructor given
 the equality theorem, provided you can substitute the terms for variables.
 Mario demonstrates this in
-<A HREF="https://github.com/digama0/mm0/blob/master/examples/peano.mm1#L1019-L1024"
+<A HREF="https://github.com/digama0/mm0/blob/ab134f40/examples/peano.mm1#L1019-L1024"
 >nfnlem of peano.mm1</A>, as follows.
 Suppose we have a constructor "foo ` ( A , B )`" and we want to prove
 ` ( A e. V /\ B e. V /\ F/_ x A /\ F/_ x B ) -> F/_ x ` foo ` ( A , B ) ` .
@@ -525,7 +527,7 @@ natural deduction (ND) rules</A> for a list of equivalences.
 This approach for applying an ND approach within MPE
 relies on Metamath's wff metavariables in an essential way, and
 is described in more detail in the presentation
-<A HREF="http://us.metamath.org/ocat/natded.pdf">"Natural Deductions in the
+<A HREF="https://us.metamath.org/ocat/natded.pdf">"Natural Deductions in the
 Metamath Proof Language" by Mario Carneiro, 2014</A>.
 
 <P>
@@ -581,12 +583,9 @@ Here are a few examples of proven assertions
 that can be useful for proofs in deduction form:
 
 <UL>
-<LI><A HREF="ovmpt2d.html">ovmpt2d</A> - value of (2-operand) operation
-    given maps-to notation.
-<LI><A HREF="fvmptd.html">fvmptd</A> - value of (1-argument)
-     function given maps-to notation
-<LI><A HREF="breq1d">breq1d</A>, <A HREF="breqd">breqd</A>, and
-    <A HREF="breq2d">breq2d</A> - relations with an equality
+<li>~ ovmpod : value of (2-operand) operation given maps-to notation</li>
+<li>~ fvmptd : value of (1-argument) function given maps-to notation</li>
+<li>~ breq1d , ~ breqd , and ~ breq2d : relations with an equality</li>
 </UL>
 
 <P>
@@ -615,7 +614,7 @@ HREF="iunconlem2.html">iunconlem2</A>.
 the outermost implication arrow ` -> ` with a different symbol ` ->. ` .
 Alan Sare believed this change made it easier to
 visualize proofs, while others disagree.  The <A
-HREF="http://us.metamath.org/other.html#completeusersproof">completeusersproof
+HREF="https://us.metamath.org/other.html#completeusersproof">completeusersproof
 tool</A> is available which supports this alternative approach.
 
 <P>
@@ -691,7 +690,7 @@ As far as we know there is nothing in the literature
 like either the weak deduction theorem or
 Mario Carneiro's natural deduction method
 (Mario Carneiro's method is presented in
-<A HREF="http://us.metamath.org/ocat/natded.pdf">"Natural Deductions in the
+<A HREF="https://us.metamath.org/ocat/natded.pdf">"Natural Deductions in the
 Metamath Proof Language" by Mario Carneiro, 2014</A>).
 In order to transform a hypothesis into an antecedent,
 the literature's standard "Deduction
@@ -847,7 +846,7 @@ Copyright terms:
 <TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
 <FONT FACE="ARIAL" SIZE=-2>
 <A
-HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
+HREF="https://validator.w3.org/check?uri=referer">W3C HTML validation</A>
 [external]
 </FONT>
 </TD>

@@ -50,7 +50,7 @@ COMMANDS
 run_verify | tee mm$$.log
 
 # Get status, which is false (nonzero) if an error or warning was found.
-! grep -E -q '[?]Error|[?]Warning' < mm$$.log > /dev/null
+! grep -E '[?]Error|[?]Warning' < mm$$.log > /dev/null
 result=$?
 
 # Remove the log, or we'll have lots of useless logs

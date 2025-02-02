@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Generate and show HTML of theorem $1 in source file $2 ($2 default "set.mm")
-if [ "$#" -lt 0 ] ; then
+if [ "$#" -le 0 ] ; then
   echo 'Must have at least one argument' >&2
   exit 1
 fi

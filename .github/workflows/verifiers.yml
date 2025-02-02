@@ -55,13 +55,13 @@ jobs:
     steps:
       # By default checkout fetches a single commit, which is what we want.
       # See: https://github.com/actions/checkout
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: echo 'Starting'
       - run: pwd
       - run: ls -l
       - run: g++ --version
       # Get and compile checkmm, a C++ verifier by Eric Schmidt
-      - run: wget -N -q http://us.metamath.org/downloads/checkmm.cpp
+      - run: wget -N https://github.com/metamath/metamath-website-seed/raw/main/downloads/checkmm.cpp
       - run: g++ -O2 -o checkmm checkmm.cpp
       # Use it to verify set.mm and iset.mm
       - run: ./checkmm set.mm
@@ -74,7 +74,7 @@ jobs:
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # Use GITHUB_PATH to set PATH. For details see:
       # https://docs.github.com/en/free-pro-team@latest/actions/reference/
       # workflow-commands-for-github-actions#setting-an-environment-variable
@@ -86,11 +86,13 @@ jobs:
         run: scripts/download-metamath
       - name: Record latest version of metamath as env variable
         run: |
-          echo "METAMATH_LATEST_VERSION=$(cat metamath/.latest_version)" >> $GITHUB_ENV
+          dirname=$(zipinfo -1 metamath-program.zip | head -1)
+          dirname=${dirname#metamath-metamath-exe-}
+          echo "METAMATH_LATEST_VERSION=${dirname%/}" >> $GITHUB_ENV
       # Note: cache key includes version of metamath in use
       - name: Cache metamathexe
         id: cache-metamathexe
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         env:
           cache-name: cache-metamathexe
         with:
@@ -104,6 +106,7 @@ jobs:
       # Create mmset.html and mmil.html so we can verify against them.
       - run: metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
       - run: metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit
+      - run: mv mmbiblio.raw.html mmbiblio.html || true
       - run: scripts/verify --top_date_skip --extra 'write bibliography mmbiblio.html' set.mm
       - run: scripts/verify --top_date_skip iset.mm
       - run: ls -1 *.mm | sed -e '/^set\.mm$/d' -e '/^iset\.mm$/d' | while read db; do scripts/verify --top_date_skip --no-verify-markup "$db"; done
@@ -131,16 +134,71 @@ jobs:
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
 
   ###########################################################
+  tex:
+    name: Generate TeX output using metamath.exe
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    steps:
+      - uses: actions/checkout@v3
+      # Update first to counter problems installing texlive
+      - run: sudo apt-get update --fix-missing
+      # Install LaTeX so we can test generated LaTeX. We use extended packages:
+      # texlive-extra-utils provides pdflatex
+      # texlive-fonts-extra provides phonetic.sty
+      # texlive-science provides accents.sty
+      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra texlive-science
+      # Here's an eXample of how to install "extra" LaTeX packages. See:
+      # https://tex.stackexchange.com/questions/38978/how-can-i-manually-install-a-latex-package-debian-ubuntu-linux/39259#39259
+      # - run: mkdir -p "$HOME/texmf"
+      # - run: wget https://mirrors.ctan.org/macros/latex/contrib/accents.zip -o "$HOME/texmf/accents.zip"
+      # - run: cd "$HOME/texmf"; unzip -j accents.zip
+      # - run: texhash texmf
+      # Use GITHUB_PATH to set PATH. For details see:
+      # https://docs.github.com/en/free-pro-team@latest/actions/reference/
+      # workflow-commands-for-github-actions#setting-an-environment-variable
+      - name: Ensure ~/bin is in PATH
+        run: |
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          mkdir -p "$HOME/bin"
+      - name: Get metamath C program and supporting files
+        run: scripts/download-metamath
+      - name: Record latest version of metamath as env variable
+        run: |
+          dirname=$(zipinfo -1 metamath-program.zip | head -1)
+          dirname=${dirname#metamath-metamath-exe-}
+          echo "METAMATH_LATEST_VERSION=${dirname%/}" >> $GITHUB_ENV
+      # Note: cache key includes version of metamath in use
+      - name: Cache metamathexe
+        id: cache-metamathexe
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-metamathexe
+        with:
+          path: ~/bin/metamath
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ env.METAMATH_LATEST_VERSION }}
+      - name: Build/install metamath, a C verifier (and more) by Norm Megill
+        if: ${{ !steps.cache-metamathexe.outputs.cache-hit }}
+        run: |
+          gcc --version
+          scripts/build-metamath
+      # Check generated LaTeX, to ensure the TeX definitions are okay. set.mm:
+      - run: python3 scripts/latex_collector.py set.mm list-set.tex
+      - run: pdflatex -halt-on-error list-set.tex 2>&1 | tee ,latex-output
+      # Complain if the pdflatex output says something is invalid
+      - run: "! grep ' invalid ' ,latex-output"
+
+  ###########################################################
   smetamath-rs:
     name: Verify using smetamath-rs (smm3) (Rust verifier by Stefan O'Rear)
     runs-on: ubuntu-latest
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Cache smm3
         id: cache-smm3
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         env:
           cache-name: cache-smetamath
         with:
@@ -162,21 +220,60 @@ jobs:
           ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
 
   ###########################################################
+  metamath-knife:
+    name: Verify using metamath-knife
+    runs-on: ubuntu-latest
+    needs: skip_dups
+    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Cache metamath-knife
+        id: cache-metamath-knife
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-knife
+        with:
+          path: metamath-knife/target/release/metamath-knife
+          key: ${{ runner.os }}-build-${{ env.cache-name }}
+      - name: Install rust
+        if: ${{ !steps.cache-metamath-knife.outputs.cache-hit }}
+        uses: hecrj/setup-rust-action@v1
+        with:
+          rust-version: stable
+      - name: Install metamath-knife
+        if: ${{ !steps.cache-metamath-knife.outputs.cache-hit }}
+        run: |
+          rm -rf metamath-knife &&
+          git clone --depth 1 https://github.com/metamath/metamath-knife.git &&
+          cd metamath-knife &&
+          cargo build --release
+      - name : Update PATH
+        run: echo "metamath-knife/target/release" >> "$GITHUB_PATH"
+      - name: Verify set.mm
+        run: scripts/verify-knife ./set.mm ./discouraged
+      - name: Verify iset.mm
+        run: scripts/verify-knife ./iset.mm ./iset-discouraged
+
+  ###########################################################
   mmj2:
     name: Verify using mmj2 (Java verifier by Mel L. O'Cat and Mario Carneiro)
     runs-on: ubuntu-latest
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # See: https://github.com/actions/setup-java
-      - uses: actions/setup-java@v1
+      - uses: actions/setup-java@v3
         with:
-          java-version: '10' # The JDK version to make available on the path.
-          # java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
-          # architecture: x64 # (x64 or x86) - defaults to x64
-      - run: wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
-      - run: unzip -q mmj2jar.zip
+          distribution: 'zulu' # ('temurin', 'zulu', ...) - required field
+          java-version: '11' # The JDK version to make available on the path.
+          # java-package: jdk # (jdk, jre, jdk+fx, or jre+fx) - defaults to jdk
+          # architecture: x64 # (x86, x64, armv7, aarch64, or ppc64le) - default value derived from the runner machine
+      - run: wget -N https://github.com/digama0/mmj2/raw/master/mmj2jar/mmj2.jar
+      - run: mkdir macros
+      - run: wget -O macros/definitionCheck.js https://github.com/digama0/mmj2/raw/master/mmj2jar/macros/definitionCheck.js
+      - run: wget -O macros/init.js https://github.com/digama0/mmj2/raw/master/mmj2jar/macros/init.js
+      - run: wget -O macros/showDiscouraged.js https://github.com/digama0/mmj2/raw/master/mmj2jar/macros/showDiscouraged.js
       # Do extra checking and generate the '*discouraged.new' file
       # (the 'printf' lets us insert multiple lines).
       # We use setparser to check that definitions don't create
@@ -187,38 +284,23 @@ jobs:
       - run: echo 'Checking iset-discouraged file:' && diff -U 0 iset-discouraged iset-discouraged.new
 
   ###########################################################
-  # Python is relatively slow, so we just split up the work.
-  # We should try to speed up the main mmverify.py culprits, e.g.,
-  # ./mmverify.py:299(verify), ./mmverify.py:223(apply_subst), or
-  # ./mmverify.py:237(decompress_proof)
   mmverifypy-setmm:
-    name: Verify set.mm body using mmverify.py (Python verifier by Raph Levien)
+    name: Verify set.mm using mmverify.py (Python verifier by Raph Levien)
     runs-on: ubuntu-latest
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
-      - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
-      # Python3 is very slow.  We can speed it up by deleting all
-      # logging calls, since we don't use the logging anyway.
+      - uses: actions/checkout@v3
+      # See https://github.com/actions/setup-python
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '>=3.9'
+      - run: wget -N https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
+      # We can speed up the script by deleting all logging calls, since we do
+      # not need them.
       - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
       - run: chmod a+x mmverify.faster.py
-      - run: ./mmverify.faster.py --stop-label mathbox < set.mm
-
-  ###########################################################
-  mmverifypy-setmm-mathboxes:
-    name: Verify set.mm mathboxes using mmverify.py (Python verifier by Raph Levien)
-    runs-on: ubuntu-latest
-    needs: skip_dups
-    if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
-    steps:
-      - uses: actions/checkout@v2
-      - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
-      # Python3 is very slow.  We can speed it up by deleting all
-      # logging calls, since we don't use the logging anyway.
-      - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
-      - run: chmod a+x mmverify.faster.py
-      - run: ./mmverify.faster.py --begin-label mathbox < set.mm
+      - run: ./mmverify.faster.py set.mm
 
   ###########################################################
   mmverifypy-isetmm:
@@ -227,13 +309,17 @@ jobs:
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v2
-      - run: wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
-      # Python3 is very slow.  We can speed it up by deleting all
-      # logging calls, since we don't use the logging anyway.
+      - uses: actions/checkout@v3
+      # See https://github.com/actions/setup-python
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '>=3.9'
+      - run: wget -N https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
+      # We can speed up the script by deleting all logging calls, since we do
+      # not need them.
       - run: sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
       - run: chmod a+x mmverify.faster.py
-      - run: ./mmverify.faster.py < iset.mm
+      - run: ./mmverify.faster.py iset.mm
 
   ###########################################################
   check-dates:
@@ -249,7 +335,7 @@ jobs:
     # an exception.
     # TODO: Check other .mm files, currently this only checks set.mm.
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: pip3 install ply
       - run: scripts/report-changes.py --gource > /dev/null
 

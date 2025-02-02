@@ -40,7 +40,7 @@ java -Xms512M -Xmx1024M -jar mmj2.jar runparams$$.txt | tee mmj2-$$.log
 
 # Get status, which is false (nonzero) if an error or warning was found.
 ! egrep 'Exception|.-..-[0-9]{4}' < mmj2-$$.log | \
-  egrep -qv 'I-UT-0015|I-MA-0001' > /dev/null
+  egrep -v 'I-UT-0015|I-MA-0001' > /dev/null
 result=$?
 
 # Remove temp files, or we'll have lots of useless files

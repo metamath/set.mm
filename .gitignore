@@ -1,3 +1,4 @@
+.DS_Store
 *~*
 mm.log
 *.demo.html
@@ -10,4 +11,10 @@ mmnf.html
 mmset.html
 mmzfcnd.html
 mmfrege.html
+mmtheorems*.html
 xits-math.woff
+metamath
+metamath.exe
+*.mmp
+*.mmt
+*.mms
