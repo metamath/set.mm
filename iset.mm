@@ -150399,8 +150399,8 @@ $)
       $.
 
     unitgrp.3 $e |- .1. = ( 1r ` R ) $.
-    $( The identity of the multiplicative group is ` 1r ` .  (Contributed by
-       Mario Carneiro, 2-Dec-2014.) $)
+    $( The identity of the group of units of a ring is the ring unity.
+       (Contributed by Mario Carneiro, 2-Dec-2014.) $)
     unitgrpid $p |- ( R e. Ring -> .1. = ( 0g ` G ) ) $=
       ( crg wcel cbs cfv wss c0g wceq eqidd cui a1i ringsrg unitssd 1unit eqid
       ringidss mpd3an23 ) AHIZBAJKZLCBICDMKNUDUEABUDUEOBAPKNUDEQARSABCEGTBUEACD
