@@ -150407,6 +150407,20 @@ $)
       FUEUAGUBUC $.
   $}
 
+  ${
+    unitsubm.1 $e |- U = ( Unit ` R ) $.
+    unitsubm.2 $e |- M = ( mulGrp ` R ) $.
+    $( The group of units is a submonoid of the multiplicative monoid of the
+       ring.  (Contributed by Mario Carneiro, 18-Jun-2015.) $)
+    unitsubm $p |- ( R e. Ring -> U e. ( SubMnd ` M ) ) $=
+      ( crg wcel csubmnd cfv cbs wss cur cress co cmnd eqidd cui wceq eqid w3a
+      a1i ringsrg unitssd 1unit cmgp oveq1i unitgrp grpmndd c0g ringmgp issubm2
+      wb syl mgpbasg sseq2d ringidvalg eleq1d 3anbi12d bitr4d mpbir3and ) AFGZB
+      CHIGZBAJIZKZALIZBGZCBMNZOGZVAVCABVAVCPBAQIRVADUAAUBUCABVEDVESZUDVAVGABVGD
+      CAUEIBMEUFUGUHVAVBBCJIZKZCUIIZBGZVHTZVDVFVHTVACOGVBVNULACEUJVJBVGCVLVJSVL
+      SVGSUKUMVAVDVKVFVMVHVAVCVJBVCACFEVCSUNUOVAVEVLBAVECFEVIUPUQURUSUT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
