@@ -150430,6 +150430,24 @@ $)
   df-invr $a |- invr = ( r e. _V |-> ( invg `
     ( ( mulGrp ` r ) |`s ( Unit ` r ) ) ) ) $.
 
+  ${
+    $d r G $.  $d r R $.  $d r ph $.
+    invrfvald.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    invrfvald.g $e |- ( ph -> G = ( ( mulGrp ` R ) |`s U ) ) $.
+    invrfvald.i $e |- ( ph -> I = ( invr ` R ) ) $.
+    invrfvald.r $e |- ( ph -> R e. Ring ) $.
+    $( Multiplicative inverse function for a ring.  (Contributed by NM,
+       21-Sep-2011.)  (Revised by Mario Carneiro, 25-Dec-2014.) $)
+    invrfvald $p |- ( ph -> I = ( invg ` G ) ) $=
+      ( vr cmgp cfv cress co cminusg cui cvv cbs wcel eqid oveq2d cinvr df-invr
+      fveq2d cv wceq fveq2 oveq12d crg elexd wfn cgrp unitgrp grpinvfng funfvex
+      syl basfn funfni sylancr fnex syl2anc fvmptd3 eqtrd 3eqtr4rd ) ABKLZCMNZO
+      LVEBPLZMNZOLZDOLEAVFVHOACVGVEMFUAUDADVFOGUDAEBUBLVIHAJBJUEZKLZVJPLZMNZOLV
+      IQUBQJUCVJBUFZVMVHOVNVKVEVLVGMVJBKUGVJBPUGUHUDABUIIUJAVIVHRLZUKZVOQSZVIQS
+      AVHULSZVPABUISVRIBVGVHVGTVHTUMUPZVOVHVIULVOTVITUNUPARQUKVHQSVQUQAVHULVSUJ
+      VQQVHRVHRUOURUSVOQVIUTVAVBVCVD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
