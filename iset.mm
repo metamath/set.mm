@@ -144875,6 +144875,34 @@ $)
   $}
 
   ${
+    $d u v w x y B $.  $d u v w x y G $.  $d u v w x y H $.  $d u v w x y .+ $.
+    $d u v w x y S $.  $d u v w x y .0. $.
+    issubmnd.b $e |- B = ( Base ` G ) $.
+    issubmnd.p $e |- .+ = ( +g ` G ) $.
+    issubmnd.z $e |- .0. = ( 0g ` G ) $.
+    issubmnd.h $e |- H = ( G |`s S ) $.
+    $( Characterize a submonoid by closure properties.  (Contributed by Mario
+       Carneiro, 10-Jan-2015.) $)
+    issubmnd $p |- ( ( G e. Mnd /\ S C_ B /\ .0. e. S ) ->
+      ( H e. Mnd <-> A. x e. S A. y e. S ( x .+ y ) e. S ) ) $=
+      ( cmnd wcel cv co wa cbs wceq cvv vu vv vw wss w3a wral cplusg cfv simplr
+      simprl cress a1i simp1 simp2 ressbas2d ad2antrr eleqtrd simprr eqid mndcl
+      syl3anc basfn elex funfvex funfni sylancr eqeltrid ssexd ressplusgd oveqd
+      wfn 3eltr4d ralrimivva adantr ovrspc2v ancoms 3impb 3adant1l simpl1 sseld
+      syl simpl2 imp mndass syl2an2r simpl3 sselda mndlid mndrid ismndd impbida
+      3anim123d ) FMNZECUDZHENZUEZGMNZAOZBOZDPZENZBEUFAEUFZWPWQQZXAABEEXCWRENZW
+      SENZQZQZWRWSGUGUHZPZGRUHZWTEXGWQWRXJNWSXJNXIXJNWPWQXFUIXGWREXJXCXDXEUJWPE
+      XJSZWQXFWPECGFMGFEUKPSWPLULZCFRUHZSWPIULWMWNWOUMZWMWNWOUNZUOZUPZUQXGWSEXJ
+      XCXDXEURXQUQXJXHGWRWSXJUSXHUSUTVAXGDXHWRWSWPDXHSZWQXFWPEDFGTMXLDFUGUHSWPJ
+      ULWPECTWPWMCTNXNWMCXMTIWMRTVKFTNXMTNZVBFMVCXSTFRFRVDVEVFVGWAXOVHXNVIZUPVJ
+      XQVLVMWPXBQZUAUBUCEDGHWPXKXBXPVNWPXRXBXTVNXBUAOZENZUBOZENZYBYDDPZENZWPXBY
+      CYEYGYCYEQXBYGABEEEDYBYDVOVPVQVRYAWMYCYEUCOZENZUEZYBCNZYDCNZYHCNZUEZYFYHD
+      PYBYDYHDPDPSWMWNWOXBVSZYAYJYNYAYCYKYEYLYIYMYAECYBWMWNWOXBWBZVTYAECYDYPVTY
+      AECYHYPVTWLWCCDFYBYDYHIJWDWEWMWNWOXBWFYAWMYCYKHYBDPYBSYOYAECYBYPWGZCDFYBH
+      IJKWHWEYAWMYCYKYBHDPYBSYOYQCDFYBHIJKWIWEWJWK $.
+  $}
+
+  ${
     $d A v w $.  $d B v w $.  $d .0. v w $.  $d .+ v w $.  $d ph v w $.
     mndinvmod.b $e |- B = ( Base ` G ) $.
     mndinvmod.0 $e |- .0. = ( 0g ` G ) $.
