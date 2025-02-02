@@ -150421,6 +150421,15 @@ $)
       SVGSUKUMVAVDVKVFVMVHVAVCVJBVCACFEVCSUNUOVAVEVLBAVECFEVIUPUQURUSUT $.
   $}
 
+  $c invr $.
+
+  $( Extend class notation with multiplicative inverse. $)
+  cinvr $a class invr $.
+
+  $( Define multiplicative inverse.  (Contributed by NM, 21-Sep-2011.) $)
+  df-invr $a |- invr = ( r e. _V |-> ( invg `
+    ( ( mulGrp ` r ) |`s ( Unit ` r ) ) ) ) $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -167684,6 +167693,10 @@ htmldef "Unit" as "Unit";
 htmldef "Irred" as "Irred";
   althtmldef "Irred" as "Irred";
   latexdef "Irred" as "\mathrm{Irred}";
+htmldef "invr" as
+    "<IMG SRC='_invr.gif' WIDTH=23 HEIGHT=19 ALT=' invr' TITLE='invr'>";
+  althtmldef "invr" as "inv<SUB>r</SUB>";
+  latexdef "invr" as "\mathrm{inv}_r";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
