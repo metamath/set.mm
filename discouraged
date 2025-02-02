@@ -18146,6 +18146,7 @@ New usage of "nnfiOLD" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnne0ALT" is discouraged (0 uses).
 New usage of "nnsdomgOLD" is discouraged (0 uses).
+New usage of "nnzOLD" is discouraged (0 uses).
 New usage of "noelOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
 New usage of "norcomOLD" is discouraged (0 uses).
@@ -21052,6 +21053,7 @@ Proof modification of "nnfiOLD" is discouraged (14 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnne0ALT" is discouraged (19 steps).
 Proof modification of "nnsdomgOLD" is discouraged (97 steps).
+Proof modification of "nnzOLD" is discouraged (5 steps).
 Proof modification of "noelOLD" is discouraged (77 steps).
 Proof modification of "norcomOLD" is discouraged (27 steps).
 Proof modification of "normlem7tALT" is discouraged (177 steps).
