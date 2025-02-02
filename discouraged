@@ -3249,6 +3249,7 @@
 "cbvralf" is used by "cbvrexf".
 "cbvralv" is used by "cbvral2v".
 "cbvralv" is used by "cbvral3v".
+"cbvralv2" is used by "pgindnf".
 "cbvreu" is used by "cbvreuv".
 "cbvreu" is used by "cbvrmo".
 "cbvrex" is used by "cbviung".
@@ -11708,14 +11709,11 @@
 "pexmidlem6N" is used by "pexmidlem8N".
 "pexmidlem7N" is used by "pexmidlem8N".
 "pexmidlem8N" is used by "pexmidALTN".
-<<<<<<< HEAD
-"pgindlem" is used by "pgindnf".
-"pgindnf" is used by "pgind".
-=======
 "pfxnndmnd" is used by "pfxnd0".
 "pfxnndmnd" is used by "pfxval0".
 "pfxval0" is used by "pfxwrdsymb".
->>>>>>> upstream/develop
+"pgindlem" is used by "pgindnf".
+"pgindnf" is used by "pgind".
 "phnv" is used by "ajval".
 "phnv" is used by "dipassr".
 "phnv" is used by "dipdi".
@@ -15375,7 +15373,7 @@ New usage of "cbvralf" is discouraged (2 uses).
 New usage of "cbvralfwOLD" is discouraged (0 uses).
 New usage of "cbvralsv" is discouraged (0 uses).
 New usage of "cbvralv" is discouraged (2 uses).
-New usage of "cbvralv2" is discouraged (0 uses).
+New usage of "cbvralv2" is discouraged (1 uses).
 New usage of "cbvreu" is discouraged (2 uses).
 New usage of "cbvreucsf" is discouraged (0 uses).
 New usage of "cbvreuv" is discouraged (0 uses).
@@ -18442,15 +18440,11 @@ New usage of "pexmidlem5N" is discouraged (1 uses).
 New usage of "pexmidlem6N" is discouraged (1 uses).
 New usage of "pexmidlem7N" is discouraged (1 uses).
 New usage of "pexmidlem8N" is discouraged (1 uses).
-<<<<<<< HEAD
-New usage of "pgindlem" is discouraged (1 uses).
-New usage of "pgindnf" is discouraged (1 uses).
-New usage of "phnv" is discouraged (19 uses).
-=======
 New usage of "pfxnndmnd" is discouraged (2 uses).
 New usage of "pfxval0" is discouraged (1 uses).
+New usage of "pgindlem" is discouraged (1 uses).
+New usage of "pgindnf" is discouraged (1 uses).
 New usage of "phnv" is discouraged (18 uses).
->>>>>>> upstream/develop
 New usage of "phnvi" is discouraged (22 uses).
 New usage of "phoeqi" is discouraged (1 uses).
 New usage of "phop" is discouraged (1 uses).
