@@ -145200,6 +145200,21 @@ $)
   $}
 
   ${
+    $d B x y $.  $d H x y $.  $d M x y $.  $d S x y $.  $d .0. x y $.
+    issubm2.b $e |- B = ( Base ` M ) $.
+    issubm2.z $e |- .0. = ( 0g ` M ) $.
+    issubm2.h $e |- H = ( M |`s S ) $.
+    $( Submonoids are subsets that are also monoids with the same zero.
+       (Contributed by Mario Carneiro, 7-Mar-2015.) $)
+    issubm2 $p |- ( M e. Mnd -> ( S e. ( SubMnd ` M ) <->
+          ( S C_ B /\ .0. e. S /\ H e. Mnd ) ) ) $=
+      ( vx vy cmnd wcel csubmnd cfv wss cv wral w3a wa df-3an cplusg co eqid wb
+      issubm issubmnd bicomd 3expb pm5.32da 3bitr4g bitrd ) DKLZBDMNLBAOZEBLZIP
+      JPDUANZUBBLJBQIBQZRZUMUNCKLZRZIJAUOBDEFGUOUCZUEULUMUNSZUPSVAURSUQUSULVAUP
+      URULUMUNUPURUDULUMUNRURUPIJAUOBDCEFUTGHUFUGUHUIUMUNUPTUMUNURTUJUK $.
+  $}
+
+  ${
     $d x y z B $.  $d x y M $.  $d x y ph $.  $d x y ps $.  $d z .+ $.
     $d z .0. $.  $d z ch $.  $d z et $.  $d z ta $.  $d z th $.
     issubmd.b $e |- B = ( Base ` M ) $.
