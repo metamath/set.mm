@@ -150460,6 +150460,16 @@ $)
       ZUSUQDVEHZIVFUQURVGUQBVEDUQABVBBAPJQUQERZVBVBQUQVBSZRZATUBZUCUDUQVBUEHVGV
       FABVBEVIUFVEVBVCDVESVCSUGUHUIUQVAVFUAURUQUTVDBVEUQDCVCUQABVBCVHVJCAULJQUQ
       FRUQUJUKUMVKUNUOUP $.
+
+    $( The inverse of the inverse of a unit is the same element.  (Contributed
+       by Mario Carneiro, 4-Dec-2014.) $)
+    unitinvinv $p |- ( ( R e. Ring /\ X e. U ) -> ( I ` ( I ` X ) ) = X ) $=
+      ( crg wcel wa cfv wceq cmgp cress co cminusg cbs cui a1i eqid ringsrg wb
+      unitgrpbasd pm5.32i cgrp unitgrp grpinvinv sylan sylbi cinvr id invrfvald
+      eleq2d fveq1d fveq12d eqeq1d adantr mpbird ) AGHZDBHZIZDCJZCJZDKZDALJBMNZ
+      OJZJZVEJZDKZUTURDVDPJZHZIVHURUSVJURBVIDURABVDBAQJKURERZVDVDKURVDSZRZATUBU
+      LUCURVDUDHVJVHABVDEVLUEVIVDVEDVISVESUFUGUHURVCVHUAUSURVBVGDURVAVFCVEURABV
+      DCVKVMCAUIJKURFRURUJUKZURDCVEVNUMUNUOUPUQ $.
   $}
 
 
