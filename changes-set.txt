@@ -70,8 +70,7 @@ proposed  syl5com   imtridcom
 proposed  syl5      imtrid      alternate proposal: sylid
 proposed  syl56     imtridi
 proposed  syl5d     imtridd
-proposed  syl5bir   biimtrrid
-proposed  syl5ib    imbitrid
+underway  syl5ib    imbitrid
 proposed  syl5ibcom imbitridcom
 proposed  syl5ibr   imbitrrid
 proposed  syl5ibrcom imbitrridcom
@@ -87,6 +86,25 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+01-Feb-25 sucelon   onsucb      biconditional form of onsuc
+01-Feb-25 suceloni  onsuc       closed form of onsuci
+31-Jan-25 ---       ---         Moved surreal cofinality theorems
+                                from SF's mathbox to main set.mm
+30-Jan-25 syl5bir   biimtrrid
+26-Jan-25 an2anr    [same]      Moved from PM's mathbox to main set.mm
+26-Jan-25 ismhmd    [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 ringcld   [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 ablcmnd   [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 ringabld  [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 ringcmnd  [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 pwsexpg   [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 drnginvrcld [same]    Moved from SN's mathbox to main set.mm
+26-Jan-25 pwspjmhmmgpd [same]   Moved from SN's mathbox to main set.mm
+24-Jan-25 rextru    [same]      Moved from ZW's mathbox to main set.mm
+19-Jan-25 ---       ---         Moved surreal cut and option theorems
+                                from SF's mathbox to main set.mm
+19-Jan-25 imaindm   [same]      Moved from SF's mathbox to main set.mm
+19-Jan-25 onsselex  [same]      Moved from SF's mathbox to main set.mm
 19-Jan-25 ---       ---         Moved surreal zero and one theorems
                                 from SF's mathbox to main set.mm
 19-Jan-25 fnssintima [same]     Moved from SF's mathbox to main set.mm
