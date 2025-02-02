@@ -150448,6 +150448,20 @@ $)
       VQQVHRVHRUOURUSVOQVIUTVAVBVCVD $.
   $}
 
+  ${
+    unitinvcl.1 $e |- U = ( Unit ` R ) $.
+    unitinvcl.2 $e |- I = ( invr ` R ) $.
+    $( The inverse of a unit exists and is a unit.  (Contributed by Mario
+       Carneiro, 2-Dec-2014.) $)
+    unitinvcl $p |- ( ( R e. Ring /\ X e. U ) -> ( I ` X ) e. U ) $=
+      ( crg wcel wa cfv cmgp cress co cminusg cbs cui wceq a1i eqid ringsrg wb
+      unitgrpbasd eleq2d pm5.32i cgrp unitgrp grpinvcl sylan sylbi id invrfvald
+      cinvr fveq1d eleq12d adantr mpbird ) AGHZDBHZIZDCJZBHZDAKJBLMZNJZJZVBOJZH
+      ZUSUQDVEHZIVFUQURVGUQBVEDUQABVBBAPJQUQERZVBVBQUQVBSZRZATUBZUCUDUQVBUEHVGV
+      FABVBEVIUFVEVBVCDVESVCSUGUHUIUQVAVFUAURUQUTVDBVEUQDCVCUQABVBCVHVJCAULJQUQ
+      FRUQUJUKUMVKUNUOUP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
