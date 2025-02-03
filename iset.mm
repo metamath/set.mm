@@ -150520,6 +150520,19 @@ $)
       EAUGCBUIDUESZNOUEAUCBUBUKUCSZEPOUAUHUDBKUJAUCUGBCBUIDULEQOT $.
   $}
 
+  ${
+    0unit.1 $e |- U = ( Unit ` R ) $.
+    0unit.2 $e |- .0. = ( 0g ` R ) $.
+    0unit.3 $e |- .1. = ( 1r ` R ) $.
+    $( The additive identity is a unit if and only if ` 1 = 0 ` , i.e. we are
+       in the zero ring.  (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+    0unit $p |- ( R e. Ring -> ( .0. e. U <-> .1. = .0. ) ) $=
+      ( crg wcel wceq wa cinvr cfv cmulr co eqid unitrinv cbs ringinvcl ringlz
+      syldan eqtr3d simpr 1unit adantr eqeltrrd impbida ) AHIZDBIZCDJZUHUIKDDAL
+      MZMZANMZOZCDAUMBCUKDEUKPZUMPZGQUHUIULARMZIUNDJUQABUKDEUOUQPZSUQAUMULDURUP
+      FTUAUBUHUJKCDBUHUJUCUHCBIUJABCEGUDUEUFUG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
