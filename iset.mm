@@ -150470,6 +150470,15 @@ $)
       OJZJZVEJZDKZUTURDVDPJZHZIVHURUSVJURBVIDURABVDBAQJKURERZVDVDKURVDSZRZATUBU
       LUCURVDUDHVJVHABVDEVLUEVIVDVEDVISVESUFUGUHURVCVHUAUSURVBVGDURVAVFCVEURABV
       DCVKVMCAUIJKURFRURUJUKZURDCVEVNUMUNUOUPUQ $.
+
+    ${
+      ringinvcl.3 $e |- B = ( Base ` R ) $.
+      $( The inverse of a unit is an element of the ring.  (Contributed by
+         Mario Carneiro, 2-Dec-2014.) $)
+      ringinvcl $p |- ( ( R e. Ring /\ X e. U ) -> ( I ` X ) e. B ) $=
+        ( crg wcel wa cfv cbs wceq a1i cui csrg ringsrg adantr unitinvcl
+        unitcld ) BIJZECJZKZABCEDLABMLNUDHOCBPLNUDFOUBBQJUCBRSBCDEFGTUA $.
+    $}
   $}
 
 
