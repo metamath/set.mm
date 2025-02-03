@@ -150479,6 +150479,21 @@ $)
         ( crg wcel wa cfv cbs wceq a1i cui csrg ringsrg adantr unitinvcl
         unitcld ) BIJZECJZKZABCEDLABMLNUDHOCBPLNUDFOUBBQJUCBRSBCDEFGTUA $.
     $}
+
+    unitinvcl.3 $e |- .x. = ( .r ` R ) $.
+    unitinvcl.4 $e |- .1. = ( 1r ` R ) $.
+    $( A unit times its inverse is the ring unity.  (Contributed by Mario
+       Carneiro, 2-Dec-2014.) $)
+    unitlinv $p |- ( ( R e. Ring /\ X e. U ) -> ( ( I ` X ) .x. X ) = .1. ) $=
+      ( crg wcel wa cfv co cbs wceq eqidd eqid cvv cress cminusg cplusg c0g cui
+      cmgp a1i ringsrg unitgrpbasd pm5.32i cgrp unitgrp grplinv sylan mgpplusgg
+      eleq2d sylbi wfn basfn elex funfvex funfni sylancr ssexd mgpex ressplusgd
+      unitssd cinvr id invrfvald fveq1d oveq123d adantr unitgrpid 3eqtr4d ) AKL
+      ZFCLZMZFAUFNZCUAOZUBNZNZFVTUCNZOZVTUDNZFENZFBOZDVRVPFVTPNZLZMWDWEQZVPVQWI
+      VPCWHFVPACVTCAUENQVPGUGZVPVTRZAUHZUIUPUJVPVTUKLWIWJACVTGVTSZULWHWCVTWAFWE
+      WHSWCSWESWASUMUNUQVPWGWDQVQVPWFWBFFBWCVPCBVSVTTTWLABVSKVSSZIUOVPCAPNZTVPP
+      TURATLWPTLZUSAKUTWQTAPAPVAVBVCVPWPACVPWPRWKWMVGVDAVSKWOVEVFVPFEWAVPACVTEW
+      KWLEAVHNQVPHUGVPVIVJVKVPFRVLVMVPDWEQVQACDVTGWNJVNVMVO $.
   $}
 
 
