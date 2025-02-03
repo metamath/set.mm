@@ -150509,6 +150509,17 @@ $)
       VTEWKWLEAVHNQVPHUGVPVIVJVKVLVMVPDWEQVQACDVTGWNJVNVMVO $.
   $}
 
+  ${
+    1rinv.1 $e |- I = ( invr ` R ) $.
+    1rinv.2 $e |- .1. = ( 1r ` R ) $.
+    $( The inverse of the ring unity is the ring unity.  (Contributed by Mario
+       Carneiro, 18-Jun-2015.) $)
+    1rinv $p |- ( R e. Ring -> ( I ` .1. ) = .1. ) $=
+      ( crg wcel cfv cmulr cbs wceq cui 1unit ringinvcl mpdan ringlidm unitrinv
+      co eqid eqtr3d ) AFGZBBCHZAIHZRZUBBUAUBAJHZGZUDUBKUABALHZGZUFAUGBUGSZEMZU
+      EAUGCBUIDUESZNOUEAUCBUBUKUCSZEPOUAUHUDBKUJAUCUGBCBUIDULEQOT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
