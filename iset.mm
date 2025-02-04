@@ -150725,6 +150725,19 @@ $)
       OSVMWAWPXAVIXIVSVRVOVNDXKXLUQURVMVPAVRBVOVSVNWHWQWRWSWTWIUNVJ $.
   $}
 
+  $c /r $.
+
+  $( Extend class notation with ring division. $)
+  cdvr $a class /r $.
+
+  ${
+    $d r x y $.
+    $( Define ring division.  (Contributed by Mario Carneiro, 2-Jul-2014.) $)
+    df-dvr $a |- /r = ( r e. _V
+     |-> ( x e. ( Base ` r ) , y e. ( Unit ` r )
+         |-> ( x ( .r ` r ) ( ( invr ` r ) ` y ) ) ) ) $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -167998,6 +168011,9 @@ htmldef "invr" as
     "<IMG SRC='_invr.gif' WIDTH=23 HEIGHT=19 ALT=' invr' TITLE='invr'>";
   althtmldef "invr" as "inv<SUB>r</SUB>";
   latexdef "invr" as "\mathrm{inv}_r";
+htmldef "/r" as "/<SUB>r</SUB>";
+  althtmldef "/r" as "/<SUB>r</SUB>";
+  latexdef "/r" as "/_r";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
