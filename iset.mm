@@ -150738,6 +150738,30 @@ $)
          |-> ( x ( .r ` r ) ( ( invr ` r ) ` y ) ) ) ) $.
   $}
 
+  ${
+    $d r x y B $.  $d r x y I $.  $d r x y R $.  $d r x y .x. $.  $d r x y U $.
+    $d x y X $.  $d x y Y $.  $d x y ph $.
+    dvrvald.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    dvrvald.t $e |- ( ph -> .x. = ( .r ` R ) ) $.
+    dvrvald.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    dvrvald.i $e |- ( ph -> I = ( invr ` R ) ) $.
+    dvrvald.d $e |- ( ph -> ./ = ( /r ` R ) ) $.
+    dvrvald.r $e |- ( ph -> R e. SRing ) $.
+    $( Division operation in a ring.  (Contributed by Mario Carneiro,
+       2-Jul-2014.)  (Revised by Mario Carneiro, 2-Dec-2014.)  (Proof shortened
+       by AV, 2-Mar-2024.) $)
+    dvrfvald $p |- ( ph
+        -> ./ = ( x e. B , y e. U |-> ( x .x. ( I ` y ) ) ) ) $=
+      ( cfv cbs cvv fveq2 eqidd vr cdvr cui cinvr cmulr cmpo df-dvr wceq fveq1d
+      cv oveq123d mpoeq123dv csrg elexd wcel wfn funfvex funfni sylancr unitssd
+      co basfn ssexd mpoexga syl2anc fvmptd3 3eqtr4d ) AFUBPBCFQPZFUCPZBUJZCUJZ
+      FUDPZPZFUEPZVAZUFZEBCDHVJVKIPZGVAZUFAUAFBCUAUJZQPZVSUCPZVJVKVSUDPZPZVSUEP
+      ZVAZUFVPRUBRBCUAUGVSFUHZBCVTWAWEVHVIVOVSFQSVSFUCSWFVJVJWCVMWDVNVSFUESWFVJ
+      TWFVKWBVLVSFUDSUIUKULAFUMOUNZAVHRUOZVIRUOVPRUOAQRUPFRUOWHVBWGWHRFQFQUQURU
+      SZAVIVHRWIAVHFVIAVHTAVITOUTVCBCVHVIVORRVDVEVFNABCDHVRVHVIVOJLAVJVJVQVMGVN
+      KAVJTAVKIVLMUIUKULVG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
