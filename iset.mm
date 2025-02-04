@@ -150533,6 +150533,26 @@ $)
       FTUAUBUHUJKCDBUHUJUCUHCBIUJABCEGUDUEUFUG $.
   $}
 
+  ${
+    unitnegcl.1 $e |- U = ( Unit ` R ) $.
+    unitnegcl.2 $e |- N = ( invg ` R ) $.
+    $( The negative of a unit is a unit.  (Contributed by Mario Carneiro,
+       4-Dec-2014.) $)
+    unitnegcl $p |- ( ( R e. Ring /\ X e. U ) -> ( N ` X ) e. U ) $=
+      ( crg wcel wa cfv cdsr wbr cbs wceq adantr eqid syl2an2r dvdsrneg breqtrd
+      eqidd cur coppr simpl cgrp ringgrp cui a1i ringsrg simpr unitcld grpinvcl
+      syldan grpinvinv isunitd mpbid simpld dvdsrtr syl3anc opprring cminusg wb
+      csrg opprbasg eleq2d opprnegg fveq1d breq2d mpbird simprd mpbir2and ) AGH
+      ZDBHZIZDCJZBHVNAUAJZAKJZLZVNVOAUBJZKJZLZVMVKVNDVPLDVOVPLZVQVKVLUCVMVNVNCJ
+      ZDVPVKVLVNAMJZHZVNWBVPLVKAUDHZVLDWCHZWDAUEZVMWCABDVMWCTBAUFJNVMEUGZVKAVBH
+      VLAUHOZVKVLUIZUJZWCACDWCPZFUKQZWCVPACVNWLVPPZFRULVKWEVLWFWBDNWGWKWCACDWLF
+      UMQZSVMWADVOVSLZVMVLWAWPIWJVMVPAVRBVOVSDWHVMVOTZVMVPTZVMVRTZVMVSTZWIUNUOZ
+      UPWCVPAVOVNDWLWNUQURVMVRGHZVNDVSLWPVTVKXBVLAVRVRPZUSZOVMVNWBDVSVMVNWBVSLZ
+      VNVNVRUTJZJZVSLZVKXBVLVNVRMJZHZXHXDVMWDXJWMVKWDXJVAVLVKWCXIVNWCAVRGXCWLVC
+      VDOUOXIVSVRXFVNXIPZVSPZXFPRQVKXEXHVAVLVKWBXGVNVSVKVNCXFACVRGXCFVEVFVGOVHW
+      OSVMWAWPXAVIXIVSVRVOVNDXKXLUQURVMVPAVRBVOVSVNWHWQWRWSWTWIUNVJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
