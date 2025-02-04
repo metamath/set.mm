@@ -10997,6 +10997,30 @@ $)
   $}
 
   ${
+    $( Premise for Stoic logic thema 1. $)
+    stoic1.1 $e |- ( ( ph /\ ps ) -> th ) $.
+    $( Stoic logic Thema 1 (part a).
+
+       The first thema of the four Stoic logic themata, in its basic form, was:
+
+       "When from two (assertibles) a third follows, then from either of them
+       together with the contradictory of the conclusion the contradictory of
+       the other follows."  (Apuleius Int. 209.9-14), see [Bobzien] p. 117 and
+       ~ https://plato.stanford.edu/entries/logic-ancient/
+
+       We will represent thema 1 as two very similar rules ~ stoic1a and
+       ~ stoic1b to represent each side.  (Contributed by David A. Wheeler,
+       16-Feb-2019.)  (Proof shortened by Wolf Lammen, 21-May-2020.) $)
+    stoic1a $p |- ( ( ph /\ -. th ) -> -. ps ) $=
+      ( ex con3dimp ) ABCABCDEF $.
+
+    $( Stoic logic Thema 1 (part b).  The other part of thema 1 of Stoic logic;
+       see ~ stoic1a .  (Contributed by David A. Wheeler, 16-Feb-2019.) $)
+    stoic1b $p |- ( ( ps /\ -. th ) -> -. ph ) $=
+      ( ancoms stoic1a ) BACABCDEF $.
+  $}
+
+  ${
     $( Premise 1 for Stoic logic thema 2 version a. $)
     stoic2a.1 $e |- ( ( ph /\ ps ) -> ch ) $.
     $( Premise 2 for Stoic logic thema 2 version a. $)
@@ -44862,14 +44886,19 @@ $)
       ( vx wcel cvv csn cima wbr cab wceq elex wrex dfima2 rexsng abbidv eqtrid
       cv breq1 syl ) BCFBGFZDBHZIZBASZDJZAKZLBCMUBUDESZUEDJZEUCNZAKUGEADUCOUBUJ
       UFAUIUFEBGUHBUEDTPQRUA $.
+  $}
 
-    $( Elementhood in the image of a singleton.  (Contributed by Jim Kingdon,
-       10-Dec-2018.) $)
-    elreimasng $p |- ( ( Rel R /\ A e. V ) -> ( B e. ( R " { A } ) <->
-        A R B ) ) $=
-      ( vx wcel csn cima cv wbr cab wrel imasng eleq2d cvv wi wb brrelex2 breq2
-      ex elab3g syl sylan9bbr ) ADFZBCAGHZFBAEIZCJZEKZFZCLZABCJZUDUEUHBEADCMNUJ
-      UKBOFZPUIUKQUJUKULABCRTUGUKEBOUFBACSUAUBUC $.
+  ${
+    $d x y A $.  $d x y B $.  $d x y R $.
+    $( Elementhood in the image of a singleton.  (Contributed by Mario
+       Carneiro, 3-Nov-2015.) $)
+    elrelimasn $p |- ( Rel R -> ( B e. ( R " { A } ) <-> A R B ) ) $=
+      ( vy vx wrel cvv wcel csn cima wbr wi cv wceq wex wrex elimag ibi ex wb
+      rexm elsni eximi 3syl isset sylibr a1i brrelex1 cab imasng brrelex2 breq2
+      eleq2d elab3g syl sylan9bbr pm5.21ndd ) CFZAGHZBCAIZJZHZABCKZVBUSLURVBDMZ
+      ANZDOZUSVBVDBCKZDUTPZVDUTHZDOVFVBVHDBCUTVAQRVGDUTUAVIVEDVDAUBUCUDDAUEUFUG
+      URVCUSABCUHSURUSVBVCTUSVBBAEMZCKZEUIZHZURVCUSVAVLBEAGCUJUMURVCBGHZLVMVCTU
+      RVCVNABCUKSVKVCEBGVJBACULUNUOUPSUQ $.
   $}
 
   ${
@@ -44991,6 +45020,12 @@ $)
     ( wrel cvv wcel wa ccnv wbr wi relcnv brrelex12 mpan ancomd ex wb pm5.21ndd
     a1i brcnvg ) CDZAEFZBEFZGZABCHZIZBACIZUEUCJTUDDUEUCCKABUDLMRTUFUCTUFGUBUABA
     CLNOUCUEUFPJTABEECSRQ $.
+
+  $( Eliminate the class existence constraint in ~ eliniseg .  (Contributed by
+     Mario Carneiro, 5-Dec-2014.)  (Revised by Mario Carneiro, 17-Nov-2015.) $)
+  eliniseg2 $p |- ( Rel A -> ( C e. ( `' A " { B } ) <-> C A B ) ) $=
+    ( ccnv csn cima wcel wbr wrel wb relcnv elrelimasn ax-mp relbrcnvg bitrid )
+    CADZBEFGZBCPHZAICBAHPIQRJAKBCPLMBCANO $.
 
   ${
     relbrcnv.1 $e |- Rel R $.
@@ -142922,6 +142957,19 @@ $)
       ( cplusg c2 df-plusg 1lt2 2nn 2stropg ) ABGCHDEFIJKL $.
   $}
 
+  ${
+    ressplusgd.1 $e |- ( ph -> H = ( G |`s A ) ) $.
+    ressplusgd.2 $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    ressplusgd.a $e |- ( ph -> A e. V ) $.
+    ressplusgd.g $e |- ( ph -> G e. W ) $.
+    $( ` +g ` is unaffected by restriction.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.) $)
+    ressplusgd $p |- ( ph -> .+ = ( +g ` H ) ) $=
+      ( cplusg cfv cress co eqid plusgslid cnx cbs basendxnplusgndx resseqnbasd
+      necomi fveq2d 3eqtr4d ) ADLMZDBNOZLMCELMABUEUFLFDGUFPUEPQRSMRLMTUBKJUAIAE
+      UFLHUCUD $.
+  $}
+
   $( Index value of the ~ df-mulr slot.  (Contributed by Mario Carneiro,
      14-Aug-2015.) $)
   mulrndx $p |- ( .r ` ndx ) = 3 $=
@@ -144827,6 +144875,34 @@ $)
   $}
 
   ${
+    $d u v w x y B $.  $d u v w x y G $.  $d u v w x y H $.  $d u v w x y .+ $.
+    $d u v w x y S $.  $d u v w x y .0. $.
+    issubmnd.b $e |- B = ( Base ` G ) $.
+    issubmnd.p $e |- .+ = ( +g ` G ) $.
+    issubmnd.z $e |- .0. = ( 0g ` G ) $.
+    issubmnd.h $e |- H = ( G |`s S ) $.
+    $( Characterize a submonoid by closure properties.  (Contributed by Mario
+       Carneiro, 10-Jan-2015.) $)
+    issubmnd $p |- ( ( G e. Mnd /\ S C_ B /\ .0. e. S ) ->
+      ( H e. Mnd <-> A. x e. S A. y e. S ( x .+ y ) e. S ) ) $=
+      ( cmnd wcel cv co wa cbs wceq cvv vu vv vw wss w3a wral cplusg cfv simplr
+      simprl cress a1i simp1 simp2 ressbas2d ad2antrr eleqtrd simprr eqid mndcl
+      syl3anc basfn elex funfvex funfni sylancr eqeltrid ssexd ressplusgd oveqd
+      wfn 3eltr4d ralrimivva adantr ovrspc2v ancoms 3impb 3adant1l simpl1 sseld
+      syl simpl2 imp mndass syl2an2r simpl3 sselda mndlid mndrid ismndd impbida
+      3anim123d ) FMNZECUDZHENZUEZGMNZAOZBOZDPZENZBEUFAEUFZWPWQQZXAABEEXCWRENZW
+      SENZQZQZWRWSGUGUHZPZGRUHZWTEXGWQWRXJNWSXJNXIXJNWPWQXFUIXGWREXJXCXDXEUJWPE
+      XJSZWQXFWPECGFMGFEUKPSWPLULZCFRUHZSWPIULWMWNWOUMZWMWNWOUNZUOZUPZUQXGWSEXJ
+      XCXDXEURXQUQXJXHGWRWSXJUSXHUSUTVAXGDXHWRWSWPDXHSZWQXFWPEDFGTMXLDFUGUHSWPJ
+      ULWPECTWPWMCTNXNWMCXMTIWMRTVKFTNXMTNZVBFMVCXSTFRFRVDVEVFVGWAXOVHXNVIZUPVJ
+      XQVLVMWPXBQZUAUBUCEDGHWPXKXBXPVNWPXRXBXTVNXBUAOZENZUBOZENZYBYDDPZENZWPXBY
+      CYEYGYCYEQXBYGABEEEDYBYDVOVPVQVRYAWMYCYEUCOZENZUEZYBCNZYDCNZYHCNZUEZYFYHD
+      PYBYDYHDPDPSWMWNWOXBVSZYAYJYNYAYCYKYEYLYIYMYAECYBWMWNWOXBWBZVTYAECYDYPVTY
+      AECYHYPVTWLWCCDFYBYDYHIJWDWEWMWNWOXBWFYAWMYCYKHYBDPYBSYOYAECYBYPWGZCDFYBH
+      IJKWHWEYAWMYCYKYBHDPYBSYOYQCDFYBHIJKWIWEWJWK $.
+  $}
+
+  ${
     $d A v w $.  $d B v w $.  $d .0. v w $.  $d .+ v w $.  $d ph v w $.
     mndinvmod.b $e |- B = ( Base ` G ) $.
     mndinvmod.0 $e |- .0. = ( 0g ` G ) $.
@@ -145121,6 +145197,21 @@ $)
       YEAWIEWOYDBWIEWIEWNVIVKVKUOVLWFXCXDXGRZRZEWSUGZYGRZXHYHYJYLVMWFXCYKYIYGCW
       SEHVNXDYCXGYFGWHEIVOXFYDABEEXEWNEDWMWKWLJVPVOVQVRVRWAXHYJVMWFXCXDXGVSWAWF
       YBYKYGWFXTYBYKVMYAEWSTVTVJWBWCWDWE $.
+  $}
+
+  ${
+    $d B x y $.  $d H x y $.  $d M x y $.  $d S x y $.  $d .0. x y $.
+    issubm2.b $e |- B = ( Base ` M ) $.
+    issubm2.z $e |- .0. = ( 0g ` M ) $.
+    issubm2.h $e |- H = ( M |`s S ) $.
+    $( Submonoids are subsets that are also monoids with the same zero.
+       (Contributed by Mario Carneiro, 7-Mar-2015.) $)
+    issubm2 $p |- ( M e. Mnd -> ( S e. ( SubMnd ` M ) <->
+          ( S C_ B /\ .0. e. S /\ H e. Mnd ) ) ) $=
+      ( vx vy cmnd wcel csubmnd cfv wss cv wral w3a wa df-3an cplusg co eqid wb
+      issubm issubmnd bicomd 3expb pm5.32da 3bitr4g bitrd ) DKLZBDMNLBAOZEBLZIP
+      JPDUANZUBBLJBQIBQZRZUMUNCKLZRZIJAUOBDEFGUOUCZUEULUMUNSZUPSVAURSUQUSULVAUP
+      URULUMUNUPURUDULUMUNRURUPIJAUOBDCEFUTGHUFUGUHUIUMUNUPTUMUNURTUJUK $.
   $}
 
   ${
@@ -148056,6 +148147,22 @@ $)
       TUHUMVGUNUPUOKZVEVCSUQVHUQVIUNUOUPUIUJFUSDEACBGVFHTUKUL $.
   $}
 
+  ${
+    $d x y G $.  $d x y H $.  $d x y S $.  $d ph x y $.
+    subcmnd.h $e |- ( ph -> H = ( G |`s S ) ) $.
+    subcmnd.g $e |- ( ph -> G e. CMnd ) $.
+    subcmnd.m $e |- ( ph -> H e. Mnd ) $.
+    subcmnd.s $e |- ( ph -> S e. V ) $.
+    $( A submonoid of a commutative monoid is also commutative.  (Contributed
+       by Mario Carneiro, 10-Jan-2015.) $)
+    subcmnd $p |- ( ph -> H e. CMnd ) $=
+      ( vx vy cbs cfv eqidd ccmn cv wcel co sselda eqid ressplusgd w3a 3ad2ant1
+      cplusg wceq ressbasssd 3adant3 3adant2 cmncom syl3anc iscmnd ) AJKDLMZCUD
+      MZDAULNABUMCDEOFAUMNIGUAHAJPZULQZKPZULQZUBCOQZUNCLMZQZUPUSQZUNUPUMRUPUNUM
+      RUEAUOURUQGUCAUOUTUQAULUSUNABUSDECOFAUSNGIUFZSUGAUQVAUOAULUSUPVBSUHUSUMCU
+      NUPUSTUMTUIUJUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -149137,6 +149244,29 @@ $)
   $}
 
   ${
+    $d y A $.  $d y B $.  $d y M $.  $d y .1. $.  $d y R $.
+    ringidss.g $e |- M = ( ( mulGrp ` R ) |`s A ) $.
+    ringidss.b $e |- B = ( Base ` R ) $.
+    ringidss.u $e |- .1. = ( 1r ` R ) $.
+    $( A subset of the multiplicative group has the multiplicative identity as
+       its identity if the identity is in the subset.  (Contributed by Mario
+       Carneiro, 27-Dec-2014.)  (Revised by Mario Carneiro, 30-Apr-2015.) $)
+    ringidss $p |- ( ( R e. Ring /\ A C_ B /\ .1. e. A ) ->
+      .1. = ( 0g ` M ) ) $=
+      ( vy crg wcel cbs cfv cplusg eqid cvv co wceq 3ad2ant1 oveqd wss w3a cmgp
+      c0g simp3 cress a1i mgpbasg mgpex simp2 ressbas2d eleqtrd eqsstrrd sselda
+      cv wa cmulr mgpplusgg wfn basfn simp1 elexd funfvex funfni eqeltrid ssexd
+      sylancr ressplusgd adantr ringlidm 3ad2antl1 eqtr3d ringridm ismgmid2
+      syldan ) CJKZABUAZDAKZUBZIELMZENMZDEEUDMZVTOWBOWAOVSDAVTVPVQVRUEVSABECUCM
+      ZPEWCAUFQRVSFUGZVPVQBWCLMRVRBCWCJWCOZGUHSVPVQWCPKVRCWCJWEUISZVPVQVRUJZUKZ
+      ULVSIUOZVTKZWIBKZDWIWAQZWIRVSVTBWIVSVTABWHWGUMUNZVSWKUPZDWICUQMZQZWLWIWNW
+      OWADWIVSWOWARWKVSAWOWCEPPWDVPVQWOWCNMRVRCWOWCJWEWOOZURSVSABPVSBCLMZPGVSLP
+      USCPKWRPKZUTVSCJVPVQVRVAVBWSPCLCLVCVDVGVEWGVFWFVHVIZTVPVQWKWPWIRVRBCWODWI
+      GWQHVJVKVLVOVSWJWKWIDWAQZWIRWMWNWIDWOQZXAWIWNWOWAWIDWTTVPVQWKXBWIRVRBCWOD
+      WIGWQHVMVKVLVOVN $.
+  $}
+
+  ${
     ringacl.b $e |- B = ( Base ` R ) $.
     ringacl.p $e |- .+ = ( +g ` R ) $.
     $( Closure of the addition operation of a ring.  (Contributed by Mario
@@ -149943,6 +150073,21 @@ $)
   $}
 
   ${
+    $d R x y z $.
+    $( Existence of the divisibility relation.  (Contributed by Jim Kingdon,
+       28-Jan-2025.) $)
+    dvdsrex $p |- ( R e. SRing -> ( ||r ` R ) e. _V ) $=
+      ( vx vz vy csrg wcel cdsr cfv cv cbs cmulr co wceq wrex wa copab eqidd id
+      cvv eqid dvdsrvald cxp wfn basfn elex funfvex funfni sylancr xpexg simprr
+      syl2anc simpll simprl simplr srgcl syl3anc eqeltrrd rexlimdvaa imdistanda
+      ssopab2dv df-xp sseqtrrdi ssexd eqeltrd ) AEFZAGHZBIZAJHZFZCIZVGAKHZLZDIZ
+      MZCVHNZOZBDPZSVEBDCVHVFAVKVEVHQVEVFQVERVEVKQUAVEVQVHVHUBZSVEVHSFZVSVRSFVE
+      JSUCASFVSUDAEUEVSSAJAJUFUGUHZVTVHVHSSUIUKVEVQVIVMVHFZOZBDPVRVEVPWBBDVEVIV
+      OWAVEVIOZVNWACVHWCVJVHFZVNOZOZVLVMVHWCWDVNUJWFVEWDVIVLVHFVEVIWEULWCWDVNUM
+      VEVIWEUNVHAVKVJVGVHTVKTUOUPUQURUSUTBDVHVHVAVBVCVD $.
+  $}
+
+  ${
     $d x y .|| $.  $d r x y z B $.  $d x y z X $.  $d x y z Y $.  $d x y Z $.
     $d r x y z R $.  $d r x y z .x. $.
     dvdsr.1 $e |- B = ( Base ` R ) $.
@@ -150032,6 +150177,248 @@ $)
       DIABCVFEDACUFOPVDFRBCUDOPVDGRVBCUELVCCUGSVFVFPVDVFUQZRVBEALZVCACEFHUHZSUI
       VBVIVJTVCVBVIVJIAQZVJVBVHVJIAVBVEALMZVHEDPVJVOVGEDACVFVEEFVKHUJUKEDULUMUN
       VBVLJNALJUOVJVNTVMJEAUPVJIJAURUSUTSVA $.
+  $}
+
+  ${
+    $d r .|| $.  $d r E $.  $d r .1. $.  $d r R $.
+    isunitd.1 $e |- ( ph -> U = ( Unit ` R ) ) $.
+    isunitd.2 $e |- ( ph -> .1. = ( 1r ` R ) ) $.
+    ${
+      isunitd.3 $e |- ( ph -> .|| = ( ||r ` R ) ) $.
+      isunitd.4 $e |- ( ph -> S = ( oppR ` R ) ) $.
+      isunitd.5 $e |- ( ph -> E = ( ||r ` S ) ) $.
+      isunitd.r $e |- ( ph -> R e. SRing ) $.
+      $( Property of being a unit of a ring.  A unit is an element that left-
+         and right-divides one.  (Contributed by Mario Carneiro, 1-Dec-2014.)
+         (Revised by Mario Carneiro, 8-Dec-2015.) $)
+      isunitd $p |- ( ph -> ( X e. U <-> ( X .|| .1. /\ X E .1. ) ) ) $=
+        ( vr wcel cdsr cfv coppr cvv cin ccnv cur csn cima wbr cui df-unit wceq
+        wa fveq2 2fveq3 ineq12d cnveqd sneqd imaeq12d csrg elexd dvdsrex inex1g
+        cv 3syl cnvexg imaexg fvmptd3 eqtrd eleq2d fveq2d wb reldvdsrsrg releqd
+        wrel syl mpbird relin1 eliniseg2 brin bitrdi 3bitr2d ) AHEPHCQRZCSRZQRZ
+        UAZUBZCUCRZUDZUEZPHBGUAZUBZFUDZUEZPZHFBUFHFGUFUJZAEWGHAECUGRWGIAOCOVAZQ
+        RZWNSRQRZUAZUBZWNUCRZUDZUEWGTUGTOUHWNCUIZWRWDWTWFXAWQWCXAWOVTWPWBWNCQUK
+        WNCQSULUMUNXAWSWEWNCUCUKUOUPACUQNURAWCTPZWDTPWGTPACUQPZVTTPXBNCUSVTWBTU
+        TVBWCTVCWDWFTVDVBVEVFVGAWKWGHAWIWDWJWFAWHWCABVTGWBKAGDQRWBMADWAQLVHVFUM
+        UNAFWEJUOUPVGAWLHFWHUFZWMABVLZWHVLWLXDVIAXEVTVLZAXCXFNCVJVMABVTKVKVNBGV
+        OWHFHVPVBHFBGVQVRVS $.
+    $}
+  $}
+
+  ${
+    $d r .|| $.  $d r E $.  $d r .1. $.  $d r R $.
+    unit.1 $e |- U = ( Unit ` R ) $.
+    unit.2 $e |- .1. = ( 1r ` R ) $.
+    $( The multiplicative identity is a unit.  (Contributed by Mario Carneiro,
+       1-Dec-2014.) $)
+    1unit $p |- ( R e. Ring -> .1. e. U ) $=
+      ( crg wcel cdsr cfv wbr coppr cbs eqid ringidcl dvdsrid opprring wceq a1i
+      mpdan eqidd opprbasg eleqtrd syl2anc cui cur ringsrg isunitd mpbir2and )
+      AFGZCBGCCAHIZJZCCAKIZHIZJZUICALIZGUKUOACUOMZENZUOUJACUPUJMOSUIULFGCULLIZG
+      UNAULULMZPUICUOURUQUOAULFUSUPUAUBURUMULCURMUMMOUCUIUJAULBCUMCBAUDIQUIDRCA
+      UEIQUIERUIUJTUIULTUIUMTAUFUGUH $.
+  $}
+
+  ${
+    unitcld.1 $e |- ( ph -> B = ( Base ` R ) ) $.
+    unitcld.2 $e |- ( ph -> U = ( Unit ` R ) ) $.
+    unitcld.r $e |- ( ph -> R e. SRing ) $.
+
+    ${
+      unitcld.x $e |- ( ph -> X e. U ) $.
+      $( A unit is an element of the base set.  (Contributed by Mario Carneiro,
+         1-Dec-2014.) $)
+      unitcld $p |- ( ph -> X e. B ) $=
+        ( cdsr cfv cur eqidd wbr coppr wcel wa isunitd mpbid simpld dvdsrcld )
+        ABCJKZCECLKZFAUBMZHAEUCUBNZEUCCOKZJKZNZAEDPUEUHQIAUBCUFDUCUGEGAUCMUDAUF
+        MAUGMHRSTUA $.
+    $}
+
+    $d x B $.  $d x R $.  $d x U $.  $d x X $.  $d x ph $.
+    $( The set of units is contained in the base set.  (Contributed by Mario
+       Carneiro, 5-Oct-2015.) $)
+    unitssd $p |- ( ph -> U C_ B ) $=
+      ( vx cv wcel wa cbs cfv wceq adantr cui csrg simpr unitcld ex ssrdv ) AHD
+      BAHIZDJZUBBJAUCKBCDUBABCLMNUCEOADCPMNUCFOACQJUCGOAUCRSTUA $.
+  $}
+
+  ${
+    $d y R $.  $d x y S $.  $d x U $.  $d ph x y $.
+    opprunitd.1 $e |- ( ph -> U = ( Unit ` R ) ) $.
+    opprunitd.2 $e |- ( ph -> S = ( oppR ` R ) ) $.
+    opprunitd.r $e |- ( ph -> R e. Ring ) $.
+    $( Being a unit is a symmetric property, so it transfers to the opposite
+       ring.  (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+    opprunitd $p |- ( ph -> U = ( Unit ` S ) ) $=
+      ( vy cfv wcel cur wa eqidd crg syl cbs cmulr wceq cvv eqid vx cui cv cdsr
+      wbr coppr csrg ringsrg isunitd wrex opprring eqeltrd vex opprmulg syl3anc
+      co a1i fveq2d oveqd 3eqtrrd eqeq1d rexbidv anbi2d dvdsrd opprbasg 3eqtr2d
+      3bitr4d anbi1d bitrd biancomd oppr1g eqtr4d bitr4d eqrdv ) AUADCUBIZAUAUC
+      ZDJZVPBKIZCUDIZUEZVPVRCUFIZUDIZUEZLVPVOJAVQVTWCAVQVPVRBUDIZUEZVTLWCVTLAWD
+      BCDVRVSVPEAVRMAWDMZFAVSMZABNJZBUGJZGBUHOZUIAWEWCVTAVPBPIZJZHUCZVPBQIZUPZV
+      RRZHWKUJZLWLWMVPWAQIZUPZVRRZHWKUJZLWEWCAWQXAWLAWPWTHWKAWOWSVRAWSVPWMCQIZU
+      PZVPWMBUFIZQIZUPZWOACNJZWMSJZVPSJZWSXCRACXDNFAWHXDNJGBXDXDTZUKOULZXHAHUMU
+      QZXIAUAUMUQZCPIZCWRXBSWANSWMVPXNTZXBTWATZWRTUNUOAXBXEVPWMACXDQFURUSAWHXIX
+      HXFWORGXMXLWKBXEWNSXDNSVPWMWKTZWNTXJXETUNUOUTVAVBVCAHWKWDBWNVPVRAWKMWFWJA
+      WNMVDAHWKWBWAWRVPVRAWKXDPIZXNWAPIZAWIWKXRRWJWKBXDUGXJXQVEOACXDPFURAXGXNXS
+      RXKXNCWANXPXOVEOVFAWBMZAWANJZWAUGJAXGYAXKCWAXPUKOWAUHOAWRMVDVGVHVIVJAVSCW
+      AVOVRWBVPAVOMAVRXDKIZCKIAWHVRYBRGBVRXDNXJVRTVKOACXDKFURVLWGAWAMXTAXGCUGJX
+      KCUHOUIVMVN $.
+  $}
+
+  ${
+    $d y .1. $.  $d y R $.  $d y X $.
+    crngunit.1 $e |- U = ( Unit ` R ) $.
+    crngunit.2 $e |- .1. = ( 1r ` R ) $.
+    crngunit.3 $e |- .|| = ( ||r ` R ) $.
+    $( Property of being a unit in a commutative ring.  (Contributed by Mario
+       Carneiro, 18-Apr-2016.) $)
+    crngunit $p |- ( R e. CRing -> ( X e. U <-> X .|| .1. ) ) $=
+      ( vy ccrg wcel wbr wa cfv cdsr wceq a1i eqidd crg eqid coppr cui cur csrg
+      crngring ringsrg syl isunitd cv cmulr co wrex crngoppr 3expa eqcomd an32s
+      cbs eqeq1d rexbidva pm5.32da opprbasg opprring 3syl dvdsrd 3bitr4d anbi2d
+      bitrd pm4.24 bitr4di ) BJKZECKZEDALZVLMZVLVJVKVLEDBUANZONZLZMVMVJABVNCDVO
+      ECBUBNPVJFQDBUCNPVJGQABONPVJHQZVJVNRVJVORZVJBSKZBUDKBUEZBUFUGZUHVJVPVLVLV
+      JEBUQNZKZIUIZEVNUJNZUKZDPZIWBULZMWCWDEBUJNZUKZDPZIWBULZMVPVLVJWCWHWLVJWCM
+      ZWGWKIWBWMWDWBKZMWFWJDVJWNWCWFWJPVJWNMWCMWJWFVJWNWCWJWFPWBBWEWIVNWDEWBTZW
+      ITVNTZWETUMUNUOUPURUSUTVJIWBVOVNWEEDWBBVNJWPWOVAVRVJVSVNSKVNUDKVTBVNWPVBV
+      NUFVCVJWERVDVJIWBABWIEDVJWBRVQWAVJWIRVDVEVFVGVLVHVI $.
+  $}
+
+  ${
+    dvdsunit.1 $e |- U = ( Unit ` R ) $.
+    dvdsunit.3 $e |- .|| = ( ||r ` R ) $.
+    $( A divisor of a unit is a unit.  (Contributed by Mario Carneiro,
+       18-Apr-2016.) $)
+    dvdsunit $p |- ( ( R e. CRing /\ Y .|| X /\ X e. U ) -> Y e. U ) $=
+      ( ccrg wcel wbr wa cur cfv crg wi crngring eqid wb crngunit adantr 3expia
+      cbs dvdsrtr sylan 3imtr4d 3impia ) BHIZEDAJZDCIZECIZUGUHKDBLMZAJZEUKAJZUI
+      UJUGBNIZUHULUMOBPUNUHULUMBUBMZABUKEDUOQGUCUAUDUGUIULRUHABCUKDFUKQZGSTUGUJ
+      UMRUHABCUKEFUPGSTUEUF $.
+  $}
+
+  ${
+    unitmulcl.1 $e |- U = ( Unit ` R ) $.
+    ${
+      unitmulcl.2 $e |- .x. = ( .r ` R ) $.
+      $( The product of units is a unit.  (Contributed by Mario Carneiro,
+         2-Dec-2014.) $)
+      unitmulcl $p |- ( ( R e. Ring /\ X e. U /\ Y e. U ) ->
+        ( X .x. Y ) e. U ) $=
+        ( crg wcel co cfv cdsr wbr cbs eqidd wceq syl isunitd eqid syl3anc csrg
+        w3a cur coppr simp1 cui a1i ringsrg simp3 unitcld wa simp2 mpbid simpld
+        ringlidm syl2anc breqtrd dvdsrtr opprring cmulr opprbasg eleqtrd simprd
+        dvdsrmul1 opprmulg 3com23 srgidcl ringridm eqtrd 3brtr3d mpbir2and ) AH
+        IZDCIZECIZUBZDEBJZCIVPAUCKZALKZMZVPVQAUDKZLKZMZVOVLVPEVRMEVQVRMZVSVLVMV
+        NUEZVOVPVQEBJZEVRVOVLEANKZIZDVQVRMZVPWEVRMWDVOWFACEVOWFOZCAUFKPVOFUGZVO
+        VLAUAIZWDAUHQZVLVMVNUIZUJZVOWHDVQWAMZVOVMWHWOUKVLVMVNULZVOVRAVTCVQWADWJ
+        VOVQOZVOVROZVOVTOZVOWAOZWLRUMZUNWFVRABDVQEWFSZVRSZGVDTVOVLWGWEEPWDWNWFA
+        BVQEXBGVQSZUOUPUQVOWCEVQWAMZVOVNWCXEUKWMVOVRAVTCVQWAEWJWQWRWSWTWLRUMZUN
+        WFVRAVQVPEXBXCURTVOVTHIZVPDWAMWOWBVOVLXGWDAVTVTSZUSQZVOEDVTUTKZJZVQDXJJ
+        ZVPDWAVOXGDVTNKZIXEXKXLWAMXIVODWFXMVOWFACDWIWJWLWPUJZVOVLWFXMPWDWFAVTHX
+        HXBVAQVBVOWCXEXFVCXMWAVTXJEVQDXMSZWASZXJSZVDTVLVNVMXKVPPWFAXJBCVTHCEDXB
+        GXHXQVEVFVOXLDVQBJZDVOVLVQWFIZVMXLXRPWDVOWKXSWLWFAVQXBXDVGQWPWFAXJBCVTH
+        WFVQDXBGXHXQVETVOVLDWFIXRDPWDXNWFABVQDXBGXDVHUPVIVJVOWHWOXAVCXMWAVTVQVP
+        DXOXPURTVOVRAVTCVQWAVPWJWQWRWSWTWLRVK $.
+
+      unitmulclb.1 $e |- B = ( Base ` R ) $.
+      $( Reversal of ~ unitmulcl in a commutative ring.  (Contributed by Mario
+         Carneiro, 18-Apr-2016.) $)
+      unitmulclb $p |- ( ( R e. CRing /\ X e. B /\ Y e. B ) ->
+        ( ( X .x. Y ) e. U <-> ( X e. U /\ Y e. U ) ) ) $=
+        ( wcel co cfv wbr wi wceq a1i syl dvdsrmuld dvdsunit 3expia ccrg w3a wa
+        cdsr simp1 cbs eqid csrg crngringd ringsrg cmulr simp2 crngcom breqtrrd
+        crg simp3 syl2anc jcad crngring 3ad2ant1 unitmulcl 3expib impbid ) BUAJ
+        ZEAJZFAJZUBZEFCKZDJZEDJZFDJZUCZVGVIVJVKVGVDEVHBUDLZMZVIVJNVDVEVFUEZVGEF
+        ECKVHVMVGAVMBCEFABUFLOVGIPZVMVMOVGVMUGZPZVGBUOJZBUHJVGBVOUIBUJQZCBUKLOV
+        GHPZVDVEVFULZVDVEVFUPZRABCEFIHUMUNVDVNVIVJVMBDVHEGVQSTUQVGVDFVHVMMZVIVK
+        NVOVGAVMBCFEVPVRVTWAWCWBRVDWDVIVKVMBDVHFGVQSTUQURVGVSVLVINVDVEVSVFBUSUT
+        VSVJVKVIBCDEFGHVAVBQVC $.
+    $}
+  $}
+
+  ${
+    unitgrpbasd.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    unitgrpbasd.g $e |- ( ph -> G = ( ( mulGrp ` R ) |`s U ) ) $.
+    unitgrpbasd.r $e |- ( ph -> R e. SRing ) $.
+    $( The base set of the group of units.  (Contributed by Mario Carneiro,
+       25-Dec-2014.) $)
+    unitgrpbasd $p |- ( ph -> U = ( Base ` G ) ) $=
+      ( cbs cfv cmgp cvv csrg wcel wceq eqid mgpbasg syl mgpex eqidd unitssd
+      ressbas2d ) ACBHIZDBJIZKFABLMZUBUCHINGUBBUCLUCOZUBOPQAUDUCKMGBUCLUERQAUBB
+      CAUBSEGTUA $.
+  $}
+
+  ${
+    $d G x y z $.  $d R x y z m $.  $d U x y z m $.
+    unitgrp.1 $e |- U = ( Unit ` R ) $.
+    unitgrp.2 $e |- G = ( ( mulGrp ` R ) |`s U ) $.
+    $( The group of units is a group under multiplication.  (Contributed by
+       Mario Carneiro, 2-Dec-2014.) $)
+    unitgrp $p |- ( R e. Ring -> G e. Grp ) $=
+      ( vy vm crg wcel cfv wceq a1i co cvv eqid cbs eqidd cv wa wrex vx cur cui
+      vz cmulr cmgp cress ringsrg unitgrpbasd mgpplusgg wfn elex funfvex funfni
+      basfn sylancr unitssd ssexd mgpex ressplusgd unitmulcl csrg adantr simpr1
+      unitcld simpr2 simpr3 3jca ringass syldan 1unit simpr ringlidm cdsr coppr
+      w3a wbr isunitd mpbid dvdsr2d opprbasg opprring syl anbi12d reeanv simprl
+      ad2antrr dvdsrmuld simplll simplr syl13anc simprrl oveq1d syl3anc simprrr
+      opprmulg eqtr3d oveq2d 3eqtr3d syl2anc ringridm 3brtr3d breqtrd mpbir2and
+      eqtrd jca rexlimdvaa expimpd reximdv2 biimtrrid sylbid mpd isgrpde ) AHIZ
+      UAFUDBAUEJZCAUBJZXNABCBAUCJKZXNDLZCAUFJZBUGMKXNELZAUHZUIXNBXOXSCNNXTAXOXS
+      HXSOZXOOZUJXNBAPJZNXNPNUKANIYDNIZUOAHULYENAPAPUMUNUPXNYDABXNYDQXRYAUQURAX
+      SHYBUSUTAXOBUARZFRZDYCVAXNYFBIZYGBIZUDRZBIZVPZYFYDIZYGYDIZYJYDIZVPYFYGXOM
+      YJXOMYFYGYJXOMXOMKXNYLSZYMYNYOYPYDABYFYPYDQZXQYPDLZXNAVBIZYLYAVCZXNYHYIYK
+      VDVEYPYDABYGYQYRYTXNYHYIYKVFVEYPYDABYJYQYRYTXNYHYIYKVGVEVHYDAXOYFYGYJYDOZ
+      YCVIVJABXPDXPOZVKXNYHYMXPYFXOMYFKXNYHSZYDABYFUUCYDQZXQUUCDLZXNYSYHYAVCZXN
+      YHVLZVEZYDAXOXPYFUUAYCUUBVMVJUUCYFXPAVNJZVQZYFXPAVOJZVNJZVQZSZYGYFXOMZXPK
+      ZFBTZUUCYHUUNUUGUUCUUIAUUKBXPUULYFUUEUUCXPQUUCUUIQZUUCUUKQUUCUULQZUUFVRVS
+      UUCUUNUUPFYDTZGRZYFUUKUEJZMZXPKZGYDTZSZUUQUUCUUJUUTUUMUVEUUCFYDUUIAXOYFXP
+      UUDUURUUFUUCXOQUUHVTUUCGYDUULUUKUVBYFXPXNYDUUKPJKZYHYDAUUKHUUKOZUUAWAZVCU
+      USXNUUKVBIZYHXNUUKHIUVJAUUKUVHWBUUKUHWCZVCUUCUVBQUUHVTWDUVFUUPUVDSZGYDTZF
+      YDTUUCUUQUUPUVDFGYDYDWEUUCUVMUUPFYDBUUCYNUVMYIUUPSZUUCYNSZUVLUVNGYDUVOUVA
+      YDIZUVLSZSZYIUUPUVRYIYGXPUUIVQYGXPUULVQUVRUVAYFUVAXOMZYGXPUUIUVRYDUUIAXOU
+      VAYFUVRYDQUVRUUIQZUUCYSYNUVQUUFWGZUVRXOQUVOUVPUVLWFZUUCYMYNUVQUUHWGZWHUVR
+      XPUVAXOMZYGXPXOMZUVAYGUVRUUOUVAXOMZYGUVSXOMZUWDUWEUVRXNYNYMUVPUWFUWGKXNYH
+      YNUVQWIZUUCYNUVQWJZUWCUWBYDAXOYGYFUVAUUAYCVIWKUVRUUOXPUVAXOUVOUVPUUPUVDWL
+      ZWMUVRUVSXPYGXOUVRUVCUVSXPUVRXNUVPYHUVCUVSKUWHUWBUUCYHYNUVQUUGWGZYDAUVBXO
+      BUUKHYDUVAYFUUAYCUVHUVBOZWPWNUVOUVPUUPUVDWOWQZWRWSUVRXNUVPUWDUVAKUWHUWBYD
+      AXOXPUVAUUAYCUUBVMWTUVRXNYNUWEYGKUWHUWIYDAXOXPYGUUAYCUUBXAWTWSUWMXBUVRYGY
+      FYGUVBMZXPUULUVRYDUULUUKUVBYGYFUVRXNUVGUWHUVIWCUVRUULQZUVRXNUVJUWHUVKWCUV
+      RUVBQUWIUWCWHUVRUWNUUOXPUVRXNYHYNUWNUUOKUWHUWKUWIYDAUVBXOYDUUKHBYFYGUUAYC
+      UVHUWLWPWNUWJXEXCUVRUUIAUUKBXPUULYGXQUVRDLUVRXPQUVTUVRUUKQUWOUWAVRXDUWJXF
+      XGXHXIXJXKXLXM $.
+
+    $( The group of units of a commutative ring is abelian.  (Contributed by
+       Mario Carneiro, 19-Apr-2016.) $)
+    unitabl $p |- ( R e. CRing -> G e. Abel ) $=
+      ( ccrg wcel cgrp ccmn cabl crg crngring unitgrp syl cmgp cfv cvv wceq a1i
+      cbs cress co eqid crngmgp grpmndd basfn elex funfvex funfni sylancr eqidd
+      wfn cui csrg ringsrg unitssd ssexd subcmnd isabl sylanbrc ) AFGZCHGZCIGCJ
+      GVAAKGZVBALZABCDEMNZVABAOPZCQCVFBUAUBRVAESAVFVFUCUDVACVEUEVABATPZQVATQULA
+      QGVGQGZUFAFUGVHQATATUHUIUJVAVGABVAVGUKBAUMPRVADSVAVCAUNGVDAUONUPUQURCUSUT
+      $.
+
+    unitgrp.3 $e |- .1. = ( 1r ` R ) $.
+    $( The identity of the group of units of a ring is the ring unity.
+       (Contributed by Mario Carneiro, 2-Dec-2014.) $)
+    unitgrpid $p |- ( R e. Ring -> .1. = ( 0g ` G ) ) $=
+      ( crg wcel cbs cfv wss c0g wceq eqidd cui a1i ringsrg unitssd 1unit eqid
+      ringidss mpd3an23 ) AHIZBAJKZLCBICDMKNUDUEABUDUEOBAPKNUDEQARSABCEGTBUEACD
+      FUEUAGUBUC $.
+  $}
+
+  ${
+    unitsubm.1 $e |- U = ( Unit ` R ) $.
+    unitsubm.2 $e |- M = ( mulGrp ` R ) $.
+    $( The group of units is a submonoid of the multiplicative monoid of the
+       ring.  (Contributed by Mario Carneiro, 18-Jun-2015.) $)
+    unitsubm $p |- ( R e. Ring -> U e. ( SubMnd ` M ) ) $=
+      ( crg wcel csubmnd cfv cbs wss cur cress co cmnd eqidd cui wceq eqid w3a
+      a1i ringsrg unitssd 1unit cmgp oveq1i unitgrp grpmndd c0g ringmgp issubm2
+      wb syl mgpbasg sseq2d ringidvalg eleq1d 3anbi12d bitr4d mpbir3and ) AFGZB
+      CHIGZBAJIZKZALIZBGZCBMNZOGZVAVCABVAVCPBAQIRVADUAAUBUCABVEDVESZUDVAVGABVGD
+      CAUEIBMEUFUGUHVAVBBCJIZKZCUIIZBGZVHTZVDVFVHTVACOGVBVNULACEUJVJBVGCVLVJSVL
+      SVGSUKUMVAVDVKVFVMVHVAVCVJBVCACFEVCSUNUOVAVEVLBAVECFEVIUPUQURUSUT $.
   $}
 
 
