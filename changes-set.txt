@@ -86,6 +86,16 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+03-Feb-25 ---       ---         Moved cross product induction theorems
+                                from SF's mathbox to main set.mm
+03-Feb-25 el2xpss   ---         Moved from SF's mathbox to main set.mm
+03-Feb-25 otthne    ---         Moved from SF's mathbox to main set.mm
+03-Feb-25 otelxp    ---         Moved from SF's mathbox to main set.mm
+03-Feb-25 ralxp3es  ---         Moved from SF's mathbox to main set.mm
+03-Feb-25 ralxp3f   ---         Moved from SF's mathbox to main set.mm
+03-Feb-25 ralxp3    ---         Moved from SF's mathbox to main set.mm
+03-Feb-25 sbcoteq1a ---         Moved from SF's mathbox to main set.mm
+03-Feb-25 ralxpes   ---         Moved from SF's mathbox to main set.mm
 01-Feb-25 sucelon   onsucb      biconditional form of onsuc
 01-Feb-25 suceloni  onsuc       closed form of onsuci
 31-Jan-25 ---       ---         Moved surreal cofinality theorems
