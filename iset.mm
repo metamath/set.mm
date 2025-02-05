@@ -150878,6 +150878,23 @@ $)
       UIVAVCVEFDURUTVCVERUSBCEVEGIJVEUJZUKULUMURUSVFFRUTACDVEFHKVIUNUOUP $.
   $}
 
+  ${
+    dvreq1.b $e |- B = ( Base ` R ) $.
+    dvreq1.o $e |- U = ( Unit ` R ) $.
+    dvreq1.d $e |- ./ = ( /r ` R ) $.
+    dvreq1.t $e |- .1. = ( 1r ` R ) $.
+    $( A cancellation law for division.  ( ~ diveqap1 analog.)  (Contributed by
+       Mario Carneiro, 28-Apr-2016.) $)
+    dvreq1 $p |- ( ( R e. Ring /\ X e. B /\ Y e. U ) ->
+                   ( ( X ./ Y ) = .1. <-> X = Y ) ) $=
+      ( crg wcel w3a co wceq cfv oveq1 a1i 3adant2 eqid dvrcan1 wa cbs cui csrg
+      cmulr ringsrg adantr simpr unitcld ringlidm syldan eqeq12d imbitrid dvrid
+      eqeq1d syl5ibrcom impbid ) CLMZFAMZGDMZNZFGBOZEPZFGPZVEVDGCUGQZOZEGVGOZPV
+      CVFVDEGVGRVCVHFVIGABCVGDFGHIJVGUAZUBUTVBVIGPZVAUTVBGAMVKUTVBUCZACDGACUDQP
+      VLHSDCUEQPVLISUTCUFMVBCUHUIUTVBUJUKACVGEGHVJKULUMTUNUOVCVEVFGGBOZEPZUTVBV
+      NVABCDEGIJKUPTVFVDVMEFGGBRUQURUS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
