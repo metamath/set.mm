@@ -150799,6 +150799,19 @@ $)
       GUSTUJUKUL $.
   $}
 
+  ${
+    unitdvcl.o $e |- U = ( Unit ` R ) $.
+    unitdvcl.d $e |- ./ = ( /r ` R ) $.
+    $( The units are closed under division.  (Contributed by Mario Carneiro,
+       2-Jul-2014.) $)
+    unitdvcl $p |- ( ( R e. Ring /\ X e. U /\ Y e. U ) -> ( X ./ Y ) e. U ) $=
+      ( crg wcel w3a co cinvr cfv cmulr cbs eqidd cui wceq a1i eqid simp1 simp2
+      cdvr ringsrg 3ad2ant1 unitcld dvrvald unitinvcl 3adant2 unitmulcl eqeltrd
+      csrg simp3 syld3an3 ) BHIZDCIZECIZJZDEAKDEBLMZMZBNMZKZCURBOMZABVACUSDEURV
+      CPZURVAPCBQMRURFSZURUSPABUCMRURGSUOUPUQUAURVCBCDVDVEUOUPBULIUQBUDUEUOUPUQ
+      UBUFUOUPUQUMUGUOUPUQUTCIZVBCIUOUQVFUPBCUSEFUSTUHUIBVACDUTFVATUJUNUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
