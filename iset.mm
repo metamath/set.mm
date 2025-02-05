@@ -150741,12 +150741,12 @@ $)
   ${
     $d r x y B $.  $d r x y I $.  $d r x y R $.  $d r x y .x. $.  $d r x y U $.
     $d x y X $.  $d x y Y $.  $d x y ph $.
-    dvrvald.b $e |- ( ph -> B = ( Base ` R ) ) $.
-    dvrvald.t $e |- ( ph -> .x. = ( .r ` R ) ) $.
-    dvrvald.u $e |- ( ph -> U = ( Unit ` R ) ) $.
-    dvrvald.i $e |- ( ph -> I = ( invr ` R ) ) $.
-    dvrvald.d $e |- ( ph -> ./ = ( /r ` R ) ) $.
-    dvrvald.r $e |- ( ph -> R e. SRing ) $.
+    dvrfvald.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    dvrfvald.t $e |- ( ph -> .x. = ( .r ` R ) ) $.
+    dvrfvald.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    dvrfvald.i $e |- ( ph -> I = ( invr ` R ) ) $.
+    dvrfvald.d $e |- ( ph -> ./ = ( /r ` R ) ) $.
+    dvrfvald.r $e |- ( ph -> R e. SRing ) $.
     $( Division operation in a ring.  (Contributed by Mario Carneiro,
        2-Jul-2014.)  (Revised by Mario Carneiro, 2-Dec-2014.)  (Proof shortened
        by AV, 2-Mar-2024.) $)
@@ -150760,6 +150760,29 @@ $)
       TWFVKWBVLVSFUDSUIUKULAFUMOUNZAVHRUOZVIRUOVPRUOAQRUPFRUOWHVBWGWHRFQFQUQURU
       SZAVIVHRWIAVHFVIAVHTAVITOUTVCBCVHVIVORRVDVEVFNABCDHVRVHVIVOJLAVJVJVQVMGVN
       KAVJTAVKIVLMUIUKULVG $.
+  $}
+
+  ${
+    $d r x y B $.  $d r x y I $.  $d r x y R $.  $d r x y .x. $.  $d r x y U $.
+    $d x y X $.  $d x y Y $.  $d x y ph $.
+    dvrvald.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    dvrvald.t $e |- ( ph -> .x. = ( .r ` R ) ) $.
+    dvrvald.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    dvrvald.i $e |- ( ph -> I = ( invr ` R ) ) $.
+    dvrvald.d $e |- ( ph -> ./ = ( /r ` R ) ) $.
+    dvrvald.r $e |- ( ph -> R e. Ring ) $.
+    dvrvald.x $e |- ( ph -> X e. B ) $.
+    dvrvald.y $e |- ( ph -> Y e. U ) $.
+    $( Division operation in a ring.  (Contributed by Mario Carneiro,
+       2-Jul-2014.)  (Revised by Mario Carneiro, 2-Dec-2014.) $)
+    dvrvald $p |- ( ph -> ( X ./ Y ) = ( X .x. ( I ` Y ) ) ) $=
+      ( cfv wcel wceq vx vy cv co cbs crg csrg ringsrg syl dvrfvald simpl fveq2
+      adantl oveq12d cmulr oveqd eleqtrd eqidd cinvr cui eqid unitinvcl syl2anc
+      wa fveq1d 3eltr4d unitcld ringcl syl3anc eqeltrd ovmpod ) AUAUBHIBFUAUCZU
+      BUCZGRZEUDZHIGRZEUDZCDUERZAUAUBBCDEFGJKLMNADUFSZDUGSODUHUIZUJVLHTZVMITZVD
+      ZVOVQTAWCVLHVNVPEWAWBUKWBVNVPTWAVMIGULUMUNUMPQAVQHVPDUORZUDZVRAEWDHVPKUPA
+      VSHVRSVPVRSWEVRSOAHBVRPJUQAVRDFVPAVRURLVTAIDUSRZRZDUTRZVPFAVSIWHSWGWHSOAI
+      FWHQLUQDWHWFIWHVAWFVAVBVCAIGWFMVELVFVGVRDWDHVPVRVAWDVAVHVIVJVK $.
   $}
 
 
