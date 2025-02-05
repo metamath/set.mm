@@ -150785,6 +150785,20 @@ $)
       FWHQLUQDWHWFIWHVAWFVAVBVCAIGWFMVELVFVGVRDWDHVPVRVAWDVAVHVIVJVK $.
   $}
 
+  ${
+    dvrcl.b $e |- B = ( Base ` R ) $.
+    dvrcl.o $e |- U = ( Unit ` R ) $.
+    dvrcl.d $e |- ./ = ( /r ` R ) $.
+    $( Closure of division operation.  (Contributed by Mario Carneiro,
+       2-Jul-2014.) $)
+    dvrcl $p |- ( ( R e. Ring /\ X e. B /\ Y e. U ) -> ( X ./ Y ) e. B ) $=
+      ( crg wcel w3a co cinvr cfv cmulr wceq a1i eqidd eqid cbs cui simp1 simp2
+      cdvr simp3 dvrvald ringinvcl 3adant2 ringcl syld3an3 eqeltrd ) CJKZEAKZFD
+      KZLZEFBMEFCNOZOZCPOZMZAUPABCUSDUQEFACUAOQUPGRUPUSSDCUBOQUPHRUPUQSBCUEOQUP
+      IRUMUNUOUCUMUNUOUDUMUNUOUFUGUMUNUOURAKZUTAKUMUOVAUNACDUQFHUQTGUHUIACUSEUR
+      GUSTUJUKUL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
