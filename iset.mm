@@ -150851,6 +150851,20 @@ $)
       EVGHJVGUFZIUHUIACDFGVHILUJUKVEABCDEVGVFHACULQRVEISZDCUMQRVELSZECUQQRVEJSZ
       VGVGRVEVQSZBCURQRVEKSZVNUTVAVBVFANVCACDFGILUNUOVPTVEVLVJFDVEABCDEVGGHVRVS
       VTWAWBVNVOVPTUPUS $.
+
+    $( A cancellation law for division.  ( ~ divcanap1 analog.)  (Contributed
+       by Mario Carneiro, 2-Jul-2014.)  (Revised by Mario Carneiro,
+       2-Dec-2014.) $)
+    dvrcan1 $p |- ( ( R e. Ring /\ X e. B /\ Y e. U ) ->
+      ( ( X ./ Y ) .x. Y ) = X ) $=
+      ( crg wcel w3a co cfv wceq a1i eqid 3adant2 cinvr cmulr simp1 simp2 simp3
+      cbs cui dvrvald oveq1d ringinvcl ringsrg syl unitcld ringass syl13anc cur
+      cdvr csrg unitlinv oveq2d ringridm 3adant3 eqtrd 3eqtrd ) CLMZFAMZGEMZNZF
+      GBOZGDOFGCUAPZPZDOZGDOZFVKGDOZDOZFVHVIVLGDVHABCDEVJFGACUFPQVHHRZDCUBPQVHK
+      RECUGPQVHIRZVJVJQVHVJSZRBCUQPQVHJRVEVFVGUCZVEVFVGUDZVEVFVGUEZUHUIVHVEVFVK
+      AMZGAMVMVOQVSVTVEVGWBVFACEVJGIVRHUJTVHACEGVPVQVHVECURMVSCUKULWAUMACDFVKGH
+      KUNUOVHVOFCUPPZDOZFVHVNWCFDVEVGVNWCQVFCDEWCVJGIVRKWCSZUSTUTVEVFWDFQVGACDW
+      CFHKWEVAVBVCVD $.
   $}
 
 
