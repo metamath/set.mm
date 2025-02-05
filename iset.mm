@@ -150835,6 +150835,24 @@ $)
       $.
   $}
 
+  ${
+    dvrass.b $e |- B = ( Base ` R ) $.
+    dvrass.o $e |- U = ( Unit ` R ) $.
+    dvrass.d $e |- ./ = ( /r ` R ) $.
+    dvrass.t $e |- .x. = ( .r ` R ) $.
+    $( An associative law for division.  ( ~ divassap analog.)  (Contributed by
+       Mario Carneiro, 4-Dec-2014.) $)
+    dvrass $p |- ( ( R e. Ring /\ ( X e. B /\ Y e. B /\ Z e. U ) ) ->
+      ( ( X .x. Y ) ./ Z ) = ( X .x. ( Y ./ Z ) ) ) $=
+      ( crg wcel w3a co cfv wceq a1i dvrvald wa cinvr simpr1 simpr2 simpr3 eqid
+      simpl ringinvcl syldan ringass syl13anc cbs cmulr ringcl 3adant3r3 oveq2d
+      cui cdvr 3eqtr4d ) CMNZFANZGANZHENZOZUAZFGDPZHCUBQZQZDPZFGVHDPZDPZVFHBPFG
+      HBPZDPVEUTVAVBVHANZVIVKRUTVDUGZUTVAVBVCUCUTVAVBVCUDZUTVDVCVMUTVAVBVCUEZAC
+      EVGHJVGUFZIUHUIACDFGVHILUJUKVEABCDEVGVFHACULQRVEISZDCUMQRVELSZECUQQRVEJSZ
+      VGVGRVEVQSZBCURQRVEKSZVNUTVAVBVFANVCACDFGILUNUOVPTVEVLVJFDVEABCDEVGGHVRVS
+      VTWAWBVNVOVPTUPUS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
