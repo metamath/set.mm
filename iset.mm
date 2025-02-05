@@ -150810,6 +150810,29 @@ $)
       csrg simp3 syld3an3 ) BHIZDCIZECIZJZDEAKDEBLMZMZBNMZKZCURBOMZABVACUSDEURV
       CPZURVAPCBQMRURFSZURUSPABUCMRURGSUOUPUQUAURVCBCDVDVEUOUPBULIUQBUDUEUOUPUQ
       UBUFUOUPUQUMUGUOUPUQUTCIZVBCIUOUQVFUPBCUSEFUSTUHUIBVACDUTFVATUJUNUK $.
+
+    dvrid.o $e |- .1. = ( 1r ` R ) $.
+    $( A cancellation law for division.  ( ~ dividap analog.)  (Contributed by
+       Mario Carneiro, 18-Jun-2015.) $)
+    dvrid $p |- ( ( R e. Ring /\ X e. U ) -> ( X ./ X ) = .1. ) $=
+      ( crg wcel wa co cinvr cfv cmulr cbs eqidd wceq a1i eqid cui cdvr ringsrg
+      simpl csrg adantr simpr unitcld dvrvald unitrinv eqtrd ) BIJZECJZKZEEALEE
+      BMNZNBONZLDUNBPNZABUPCUOEEUNUQQZUNUPQCBUANRUNFSZUNUOQABUBNRUNGSULUMUDUNUQ
+      BCEURUSULBUEJUMBUCUFULUMUGZUHUTUIBUPCDUOEFUOTUPTHUJUK $.
+  $}
+
+  ${
+    dvr1.b $e |- B = ( Base ` R ) $.
+    dvr1.d $e |- ./ = ( /r ` R ) $.
+    dvr1.o $e |- .1. = ( 1r ` R ) $.
+    $( A cancellation law for division.  ( ~ div1 analog.)  (Contributed by
+       Mario Carneiro, 18-Jun-2015.) $)
+    dvr1 $p |- ( ( R e. Ring /\ X e. B ) -> ( X ./ .1. ) = X ) $=
+      ( crg wcel wa co cinvr cfv cmulr wceq a1i eqidd eqid adantr cui cbs simpl
+      cdvr simpr 1unit dvrvald 1rinv oveq2d ringridm 3eqtrd ) CIJZEAJZKZEDBLEDC
+      MNZNZCONZLEDUQLEUNABCUQCUANZUOEDACUBNPUNFQUNUQRUNURRUNUORBCUDNPUNGQULUMUC
+      ULUMUEULDURJUMCURDURSHUFTUGUNUPDEUQULUPDPUMCDUOUOSHUHTUIACUQDEFUQSHUJUK
+      $.
   $}
 
 
