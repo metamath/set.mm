@@ -72365,6 +72365,156 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Apartness relations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c TAp $.
+
+  $( Tight apartness predicate symbol. $)
+  wtap $a wff R TAp A $.
+
+  ${
+    $d x y z A $.  $d x y z R $.
+    $( Tight apartness predicate.  A relation ` R ` is a tight apartness if it
+       is irreflexive, symmetric, cotransitive, and tight.  (Contributed by Jim
+       Kingdon, 5-Feb-2025.) $)
+    df-tap $a |- ( R TAp A <-> ( R C_ ( A X. A ) /\ ( A. x e. A -. x R x /\
+      A. x e. A A. y e. A ( x R y -> y R x ) ) /\
+      ( A. x e. A A. y e. A A. z e. A ( x R y -> ( x R z \/ y R z ) ) /\
+      A. x e. A A. y e. A ( -. x R y -> x = y ) ) ) ) $.
+  $}
+
+  ${
+    $d A x y z $.  $d R x y z $.  $d S x y z $.
+    $( Equality theorem for tight apartness predicate.  (Contributed by Jim
+       Kingdon, 8-Feb-2025.) $)
+    tapeq1 $p |- ( R = S -> ( R TAp A <-> S TAp A ) ) $=
+      ( vx vy vz wceq wss cv wbr wn wral wi wa wo w3a wtap breq notbid 2ralbidv
+      cxp sseq1 ralbidv imbi12d anbi12d orbi12d imbi1d 3anbi123d df-tap 3bitr4g
+      ) BCGZBAAUAZHZDIZUNBJZKZDALZUNEIZBJZURUNBJZMZEALDALZNZUSUNFIZBJZURVDBJZOZ
+      MZFALZEALDALZUSKZUNURGZMZEALDALZNZPCULHZUNUNCJZKZDALZUNURCJZURUNCJZMZEALD
+      ALZNZVTUNVDCJZURVDCJZOZMZFALZEALDALZVTKZVLMZEALDALZNZPABQACQUKUMVPVCWDVOW
+      NBCULUBUKUQVSVBWCUKUPVRDAUKUOVQUNUNBCRSUCUKVAWBDEAAUKUSVTUTWAUNURBCRZURUN
+      BCRUDTUEUKVJWJVNWMUKVIWIDEAAUKVHWHFAUKUSVTVGWGWOUKVEWEVFWFUNVDBCRURVDBCRU
+      FUDUCTUKVMWLDEAAUKVKWKVLUKUSVTWOSUGTUEUHDEFABUIDEFACUIUJ $.
+  $}
+
+  ${
+    $d A a b c u v $.  $d A a b c x y $.
+    $( Negated equality on a set with decidable equality is a tight apartness.
+       (Contributed by Jim Kingdon, 5-Feb-2025.) $)
+    netap $p |- ( A. x e. A A. y e. A DECID x = y
+        -> { <. u , v >. | ( ( u e. A /\ v e. A ) /\ u =/= v ) } TAp A ) $=
+      ( va vb vc weq wral cv wcel wa wne wbr wn cop df-br wb neeq2 wdc copab wi
+      cxp wss wtap opabssxp a1i neirr neeq1 opelopab2 anidms bitrid mtbiri rgen
+      wo ancoms necom bitrdi bitr4d biimpd rgen2 jca w3a 3adant3 simpr eqnetrrd
+      adantl simplr necomd neqned equequ2 dcbid equequ1 ralbidv simplr1 rspcdva
+      olcd simpll simplr3 exmiddc syl mpjaodan 3adant2 3adant1 orbi12d ad2antlr
+      orcd mpbird ex sylbid ralrimivvva notbid df-ne notbii simpl simprl simprr
+      notnotrdc ralrimivva df-tap syl3anbrc ) ABIZUAZBEJZAEJZDKZELCKZELMXGXHNZM
+      DCUBZEEUDUEZFKZXLXJOZPZFEJZXLGKZXJOZXPXLXJOZUCZGEJFEJZMXQXLHKZXJOZXPYAXJO
+      ZUPZUCZHEJGEJFEJZXQPZFGIZUCZGEJFEJZMEXJUFXKXFXIDCEEUGUHXFXOXTXOXFXNFEXLEL
+      ZXMXLXLNZXLUIXMXLXLQXJLZYKYLXLXLXJRYKYMYLSXIXLXHNZYLDCXLXLEEXGXLXHUJZXHXL
+      XLTUKULUMUNUOUHXTXFXSFGEEYKXPELZMZXQXRYQXQXLXPNZXRXQXLXPQXJLYQYRXLXPXJRXI
+      YNYRDCXLXPEEYOXHXPXLTUKUMZXRXPXLQXJLZYQYRXPXLXJRYQYTXPXLNZYRYPYKYTUUASXIX
+      PXHNZUUADCXPXLEEXGXPXHUJZXHXLXPTUKUQXPXLURUSUMUTVAVBUHVCXFYFYJXFYEFGHEEEX
+      FYKYPYAELZVDZMZXQYRYDUUEXQYRSZXFYKYPUUGUUDYSVEVHUUFYRYDUUFYRMZYDXLYANZXPY
+      ANZUPZUUHFHIZUUKUULPZUUHUULMZUUJUUIUUNYAXPUUNXLYAXPUUHUULVFUUFYRUULVIVGVJ
+      VRUUHUUMMZUUIUUJUUOXLYAUUHUUMVFVKWHUUHUULUAZUULUUMUPUUHFBIZUAZUUPBEYABHIU
+      UQUULBHFVLVMUUHXEUURBEJZAEXLAFIZXDUURBEUUTXCUUQAFBVNVMVOZXFUUEYRVSYKYPUUD
+      XFYRVPVQYKYPUUDXFYRVTVQUULWAWBWCUUEYDUUKSXFYRUUEYBUUIYCUUJYBXLYAQXJLZUUEU
+      UIXLYAXJRYKUUDUVBUUISYPXIYNUUIDCXLYAEEYOXHYAXLTUKWDUMYCXPYAQXJLZUUEUUJXPY
+      AXJRYPUUDUVCUUJSYKXIUUBUUJDCXPYAEEUUCXHYAXPTUKWEUMWFWGWIWJWKWLXFYIFGEEXFY
+      QMZYGYHPZPZYHYQYGUVFSXFYQYGYRPUVFYQXQYRYSWMYRUVEXLXPWNWOUSVHUVDYHUAZUVFYH
+      UCUVDUURUVGBEXPBGIUUQYHBGFVLVMUVDXEUUSAEXLUVAXFYQWPXFYKYPWQVQXFYKYPWRVQYH
+      WSWBWKWTVCFGHEXJXAXB $.
+  $}
+
+  ${
+    $d u v $.  $d x y $.
+    $( Negated equality is a tight apartness on ` 2o ` .  (Contributed by Jim
+       Kingdon, 6-Feb-2025.) $)
+    2onetap $p |- { <. u , v >. |
+        ( ( u e. 2o /\ v e. 2o ) /\ u =/= v ) } TAp 2o $=
+      ( vx vy weq wdc c2o wral cv wcel wa wne copab wtap 2onn elnn mpan2 nndceq
+      com syl2an rgen2 netap ax-mp ) CDEFZDGHCGHGBIZGJAIZGJKUEUFLKBAMNUDCDGGCIZ
+      GJZUGSJZDIZSJZUDUJGJZUHGSJZUIOUGGPQULUMUKOUJGPQUGUJRTUACDABGUBUC $.
+  $}
+
+  ${
+    $d u v $.
+    $( The set ` 2o ` with negated equality as an apartness, has two points
+       apart.  (Contributed by Jim Kingdon, 8-Feb-2025.) $)
+    2oneel $p |- <. (/) , 1o >. e. { <. u , v >. |
+        ( ( u e. 2o /\ v e. 2o ) /\ u =/= v ) } $=
+      ( c0 c1o cop cv c2o wcel wa wne copab 1n0 necomi wb 0lt2o 1lt2o opelopab2
+      neeq1 neeq2 mp2an mpbir ) CDEBFZGHAFZGHIUBUCJZIBAKHZCDJZDCLMCGHDGHUEUFNOP
+      UDCUCJUFBACDGGUBCUCRUCDCSQTUA $.
+  $}
+
+  ${
+    $d a b c ph u v $.
+    $( Lemma for ~ 2omotap .  (Contributed by Jim Kingdon, 6-Feb-2025.) $)
+    2omotaplemap $p |- ( -. -. ph -> { <. u , v >. |
+        ( ( u e. 2o /\ v e. 2o ) /\ ( ph /\ u =/= v ) ) } TAp 2o ) $=
+      ( va vb vc wn cv c2o wcel wa wne wbr wral weq cop df-br anbi2d neeq2 wb
+      copab cxp wss wi wo wtap opabssxp a1i neeq1 opelopab2 bitrid ancoms necom
+      anbi2i bitrdi bitr4d biimpd rgen2 neirr intnan anidms mtbiri rgen 3adant3
+      jctil w3a simpr simplrr eqnetrrd necomd olcd neqned orcd simpl1 2onn elnn
+      wdc com sylancl simpl3 nndceq syl2anc exmiddc syl mpjaodan 3adant2 adantr
+      ibar adantl 3adant1 orbi12d mpbird sylbid ralrimivvva notbid simpll ancom
+      ex sylnib imnan sylibr mtod simplrl nnedc ralrimivva jca df-tap syl3anbrc
+      mpbid ) AGZGZCHZIJBHZIJKAXLXMLZKZKCBUAZIIUBUCZDHZXRXPMZGZDINZXREHZXPMZYBX
+      RXPMZUDZEINDINZKYCXRFHZXPMZYBYGXPMZUEZUDZFINEINDINZYCGZDEOZUDZEINDINZKIXP
+      UFXQXKXOCBIIUGUHXKYFYAYFXKYEDEIIXRIJZYBIJZKZYCYDYSYCAXRYBLZKZYDYCXRYBPXPJ
+      YSUUAXRYBXPQXOAXRXMLZKZUUACBXRYBIICDOXNUUBAXLXRXMUIRZBEOUUBYTAXMYBXRSRUJU
+      KZYDYBXRPXPJZYSUUAYBXRXPQYSUUFAYBXRLZKZUUAYRYQUUFUUHTXOAYBXMLZKZUUHCBYBXR
+      IICEOXNUUIAXLYBXMUIRZBDOZUUIUUGAXMXRYBSRUJULUUGYTAYBXRUMUNUOUKUPUQURUHXTD
+      IYQXSAXRXRLZKZUUMAXRUSUTXSXRXRPXPJZYQUUNXRXRXPQYQUUOUUNTXOUUCUUNCBXRXRIIU
+      UDUULUUBUUMAXMXRXRSRUJVAUKVBVCVEXKYLYPXKYKDEFIIIYQYRYGIJZVFZYKXKUUQYCUUAY
+      JYQYRYCUUATUUPUUEVDUUQUUAYJUUQUUAKZYJXRYGLZYBYGLZUEZUURDFOZUVAUVBGZUURUVB
+      KZUUTUUSUVDYGYBUVDXRYGYBUURUVBVGUUQAYTUVBVHVIVJVKUURUVCKZUUSUUTUVEXRYGUUR
+      UVCVGVLVMUURUVBVQZUVBUVCUEUURXRVRJZYGVRJZUVFUURYQIVRJZUVGYQYRUUPUUAVNVOXR
+      IVPZVSUURUUPUVIUVHYQYRUUPUUAVTVOYGIVPVSXRYGWAWBUVBWCWDWEUURYHUUSYIUUTUURY
+      HAUUSKZUUSUUQYHUVKTUUAYHXRYGPXPJZUUQUVKXRYGXPQYQUUPUVLUVKTYRXOUUCUVKCBXRY
+      GIIUUDBFOZUUBUUSAXMYGXRSRUJWFUKWGUUAUUSUVKTZUUQAUVNYTAUUSWHWGWIUPUURYIAUU
+      TKZUUTUUQYIUVOTUUAYIYBYGPXPJZUUQUVOYBYGXPQYRUUPUVPUVOTYQXOUUJUVOCBYBYGIIU
+      UKUVMUUIUUTAXMYGYBSRUJWJUKWGUUAUUTUVOTZUUQAUVQYTAUUTWHWGWIUPWKWLWRWMWIWNX
+      KYODEIIXKYSKZYMUUAGZYNYSYMUVSTXKYSYCUUAUUEWOWIUVRUVSYNUVRUVSKZYTGZYNUVTYT
+      XJXKYSUVSWPUVTYTAKZGYTXJUDUVTUUAUWBUVRUVSVGAYTWQWSYTAWTXAXBUVTYNVQZUWAYNT
+      UVTUVGYBVRJZUWCUVTYQUVIUVGXKYQYRUVSXCVOUVJVSUVTYRUVIUWDXKYQYRUVSVHVOYBIVP
+      VSXRYBWAWBXRYBXDWDXIWRWMXEXFDEFIXPXGXH $.
+  $}
+
+  ${
+    $d ph r u v $.
+    $( Lemma for ~ 2omotap .  (Contributed by Jim Kingdon, 6-Feb-2025.) $)
+    2omotaplemst $p |- ( ( E* r r TAp 2o /\ -. -. ph ) -> ph ) $=
+      ( vu vv c2o cv wtap wn wa c0 c1o wne wcel copab cvv wb opabssxp ssexi a1i
+      wceq wmo cop 2oneel 2omotaplemap adantl cxp 2onn elexi xpex simpl 2onetap
+      tapeq1 syl211anc mpbird eleqtrid 0lt2o 1lt2o neeq1 anbi2d neeq2 opelopab2
+      com mob mp2an sylib simpld ) EBFZGZBUAZAHHZIZAJKLZVKJKUBZCFZEMDFZEMIZAVNV
+      OLZIZICDNZMZAVLIZVKVMVPVQICDNZVSDCUCVKWBVSTZEVSGZVJWDVIADCUDUEVKWBOMZVSOM
+      ZVIEWBGZWCWDPWEVKWBEEUFZEEEVBUGUHZWIUIZVQCDEEQRSWFVKVSWHWJVRCDEEQRSVIVJUJ
+      WGVKDCUKSVHWGWDBWBVSOOEVGWBULEVGVSULVCUMUNUOJEMKEMVTWAPUPUQVRAJVOLZIWACDJ
+      KEEVNJTVQWKAVNJVOURUSVOKTWKVLAVOKJUTUSVAVDVEVF $.
+  $}
+
+  ${
+    $d r x $.
+    $( If there is at most one tight apartness on ` 2o ` , excluded middle
+       follows.  Based on online discussions by Tom de Jong, Andrew W Swan, and
+       Martin Escardo.  (Contributed by Jim Kingdon, 6-Feb-2025.) $)
+    2omotap $p |- ( E* r r TAp 2o -> EXMID ) $=
+      ( vx c2o cv wtap wmo c0 csn wceq wstab wss wn 2omotaplemst df-stab sylibr
+      wi ex adantr exmid1stab ) CADEAFZBTBDZGHZIZJZUAUBKTUCLLZUCPUDTUEUCUCAMQUC
+      NORS $.
+  $}
+
+
+$(
 ###############################################################################
   CHOICE PRINCIPLES
 ###############################################################################
@@ -166119,6 +166269,9 @@ $)
        <td> ~ df-seqfrec </td>
        <td> </td><td>Yes</td><td> ~ seq3-1 , ~ fsum3 </td></tr>
 
+       <tr><td>tap</td><td>tight apartness</td><td> ~ df-tap </td>
+       <td> </td><td>Yes</td><td> ~ df-tap </td></tr>
+
        </table>
        </HTML>
 
@@ -167251,6 +167404,9 @@ htmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
 htmldef "CCHOICE" as "<SMALL>CCHOICE</SMALL>";
   althtmldef "CCHOICE" as "<SMALL>CCHOICE</SMALL>";
   latexdef "CCHOICE" as "\mathrm{CCHOICE}";
+htmldef "TAp" as ' TAp ';
+  althtmldef "TAp" as ' TAp ';
+  latexdef "TAp" as "\mathrm{TAp}";
 htmldef "N." as "<IMG SRC='caln.gif' WIDTH=17 HEIGHT=19 ALT=' N.' TITLE='N.'>";
   althtmldef "N." as '<I><B>N</B></I>';
   latexdef "N." as "\mathcal{N}";
