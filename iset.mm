@@ -150421,6 +150421,138 @@ $)
       SVGSUKUMVAVDVKVFVMVHVAVCVJBVCACFEVCSUNUOVAVEVLBAVECFEVIUPUQURUSUT $.
   $}
 
+  $c invr $.
+
+  $( Extend class notation with multiplicative inverse. $)
+  cinvr $a class invr $.
+
+  $( Define multiplicative inverse.  (Contributed by NM, 21-Sep-2011.) $)
+  df-invr $a |- invr = ( r e. _V |-> ( invg `
+    ( ( mulGrp ` r ) |`s ( Unit ` r ) ) ) ) $.
+
+  ${
+    $d r G $.  $d r R $.  $d r ph $.
+    invrfvald.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    invrfvald.g $e |- ( ph -> G = ( ( mulGrp ` R ) |`s U ) ) $.
+    invrfvald.i $e |- ( ph -> I = ( invr ` R ) ) $.
+    invrfvald.r $e |- ( ph -> R e. Ring ) $.
+    $( Multiplicative inverse function for a ring.  (Contributed by NM,
+       21-Sep-2011.)  (Revised by Mario Carneiro, 25-Dec-2014.) $)
+    invrfvald $p |- ( ph -> I = ( invg ` G ) ) $=
+      ( vr cmgp cfv cress co cminusg cui cvv cbs wcel eqid oveq2d cinvr df-invr
+      fveq2d cv wceq fveq2 oveq12d crg elexd wfn cgrp unitgrp grpinvfng funfvex
+      syl basfn funfni sylancr fnex syl2anc fvmptd3 eqtrd 3eqtr4rd ) ABKLZCMNZO
+      LVEBPLZMNZOLZDOLEAVFVHOACVGVEMFUAUDADVFOGUDAEBUBLVIHAJBJUEZKLZVJPLZMNZOLV
+      IQUBQJUCVJBUFZVMVHOVNVKVEVLVGMVJBKUGVJBPUGUHUDABUIIUJAVIVHRLZUKZVOQSZVIQS
+      AVHULSZVPABUISVRIBVGVHVGTVHTUMUPZVOVHVIULVOTVITUNUPARQUKVHQSVQUQAVHULVSUJ
+      VQQVHRVHRUOURUSVOQVIUTVAVBVCVD $.
+  $}
+
+  ${
+    unitinvcl.1 $e |- U = ( Unit ` R ) $.
+    unitinvcl.2 $e |- I = ( invr ` R ) $.
+    $( The inverse of a unit exists and is a unit.  (Contributed by Mario
+       Carneiro, 2-Dec-2014.) $)
+    unitinvcl $p |- ( ( R e. Ring /\ X e. U ) -> ( I ` X ) e. U ) $=
+      ( crg wcel wa cfv cmgp cress co cminusg cbs cui wceq a1i eqid ringsrg wb
+      unitgrpbasd eleq2d pm5.32i cgrp unitgrp grpinvcl sylan sylbi id invrfvald
+      cinvr fveq1d eleq12d adantr mpbird ) AGHZDBHZIZDCJZBHZDAKJBLMZNJZJZVBOJZH
+      ZUSUQDVEHZIVFUQURVGUQBVEDUQABVBBAPJQUQERZVBVBQUQVBSZRZATUBZUCUDUQVBUEHVGV
+      FABVBEVIUFVEVBVCDVESVCSUGUHUIUQVAVFUAURUQUTVDBVEUQDCVCUQABVBCVHVJCAULJQUQ
+      FRUQUJUKUMVKUNUOUP $.
+
+    $( The inverse of the inverse of a unit is the same element.  (Contributed
+       by Mario Carneiro, 4-Dec-2014.) $)
+    unitinvinv $p |- ( ( R e. Ring /\ X e. U ) -> ( I ` ( I ` X ) ) = X ) $=
+      ( crg wcel wa cfv wceq cmgp cress co cminusg cbs cui a1i eqid ringsrg wb
+      unitgrpbasd pm5.32i cgrp unitgrp grpinvinv sylan sylbi cinvr id invrfvald
+      eleq2d fveq1d fveq12d eqeq1d adantr mpbird ) AGHZDBHZIZDCJZCJZDKZDALJBMNZ
+      OJZJZVEJZDKZUTURDVDPJZHZIVHURUSVJURBVIDURABVDBAQJKURERZVDVDKURVDSZRZATUBU
+      LUCURVDUDHVJVHABVDEVLUEVIVDVEDVISVESUFUGUHURVCVHUAUSURVBVGDURVAVFCVEURABV
+      DCVKVMCAUIJKURFRURUJUKZURDCVEVNUMUNUOUPUQ $.
+
+    ${
+      ringinvcl.3 $e |- B = ( Base ` R ) $.
+      $( The inverse of a unit is an element of the ring.  (Contributed by
+         Mario Carneiro, 2-Dec-2014.) $)
+      ringinvcl $p |- ( ( R e. Ring /\ X e. U ) -> ( I ` X ) e. B ) $=
+        ( crg wcel wa cfv cbs wceq a1i cui csrg ringsrg adantr unitinvcl
+        unitcld ) BIJZECJZKZABCEDLABMLNUDHOCBPLNUDFOUBBQJUCBRSBCDEFGTUA $.
+    $}
+
+    unitinvcl.3 $e |- .x. = ( .r ` R ) $.
+    unitinvcl.4 $e |- .1. = ( 1r ` R ) $.
+    $( A unit times its inverse is the ring unity.  (Contributed by Mario
+       Carneiro, 2-Dec-2014.) $)
+    unitlinv $p |- ( ( R e. Ring /\ X e. U ) -> ( ( I ` X ) .x. X ) = .1. ) $=
+      ( crg wcel wa cfv co cbs wceq eqidd eqid cvv cress cminusg cplusg c0g cui
+      cmgp a1i ringsrg unitgrpbasd pm5.32i cgrp unitgrp grplinv sylan mgpplusgg
+      eleq2d sylbi wfn basfn elex funfvex funfni sylancr ssexd mgpex ressplusgd
+      unitssd cinvr id invrfvald fveq1d oveq123d adantr unitgrpid 3eqtr4d ) AKL
+      ZFCLZMZFAUFNZCUAOZUBNZNZFVTUCNZOZVTUDNZFENZFBOZDVRVPFVTPNZLZMWDWEQZVPVQWI
+      VPCWHFVPACVTCAUENQVPGUGZVPVTRZAUHZUIUPUJVPVTUKLWIWJACVTGVTSZULWHWCVTWAFWE
+      WHSWCSWESWASUMUNUQVPWGWDQVQVPWFWBFFBWCVPCBVSVTTTWLABVSKVSSZIUOVPCAPNZTVPP
+      TURATLWPTLZUSAKUTWQTAPAPVAVBVCVPWPACVPWPRWKWMVGVDAVSKWOVEVFVPFEWAVPACVTEW
+      KWLEAVHNQVPHUGVPVIVJVKVPFRVLVMVPDWEQVQACDVTGWNJVNVMVO $.
+
+    $( A unit times its inverse is the ring unity.  (Contributed by Mario
+       Carneiro, 2-Dec-2014.) $)
+    unitrinv $p |- ( ( R e. Ring /\ X e. U ) -> ( X .x. ( I ` X ) ) = .1. ) $=
+      ( crg wcel wa cfv co cbs wceq eqidd eqid cvv cress cminusg cplusg c0g cui
+      cmgp a1i ringsrg unitgrpbasd pm5.32i cgrp unitgrp grprinv sylan mgpplusgg
+      eleq2d sylbi wfn basfn elex funfvex funfni sylancr ssexd mgpex ressplusgd
+      unitssd cinvr id invrfvald fveq1d oveq123d adantr unitgrpid 3eqtr4d ) AKL
+      ZFCLZMZFFAUFNZCUAOZUBNZNZVTUCNZOZVTUDNZFFENZBOZDVRVPFVTPNZLZMWDWEQZVPVQWI
+      VPCWHFVPACVTCAUENQVPGUGZVPVTRZAUHZUIUPUJVPVTUKLWIWJACVTGVTSZULWHWCVTWAFWE
+      WHSWCSWESWASUMUNUQVPWGWDQVQVPFFWFWBBWCVPCBVSVTTTWLABVSKVSSZIUOVPCAPNZTVPP
+      TURATLWPTLZUSAKUTWQTAPAPVAVBVCVPWPACVPWPRWKWMVGVDAVSKWOVEVFVPFRVPFEWAVPAC
+      VTEWKWLEAVHNQVPHUGVPVIVJVKVLVMVPDWEQVQACDVTGWNJVNVMVO $.
+  $}
+
+  ${
+    1rinv.1 $e |- I = ( invr ` R ) $.
+    1rinv.2 $e |- .1. = ( 1r ` R ) $.
+    $( The inverse of the ring unity is the ring unity.  (Contributed by Mario
+       Carneiro, 18-Jun-2015.) $)
+    1rinv $p |- ( R e. Ring -> ( I ` .1. ) = .1. ) $=
+      ( crg wcel cfv cmulr cbs wceq cui 1unit ringinvcl mpdan ringlidm unitrinv
+      co eqid eqtr3d ) AFGZBBCHZAIHZRZUBBUAUBAJHZGZUDUBKUABALHZGZUFAUGBUGSZEMZU
+      EAUGCBUIDUESZNOUEAUCBUBUKUCSZEPOUAUHUDBKUJAUCUGBCBUIDULEQOT $.
+  $}
+
+  ${
+    0unit.1 $e |- U = ( Unit ` R ) $.
+    0unit.2 $e |- .0. = ( 0g ` R ) $.
+    0unit.3 $e |- .1. = ( 1r ` R ) $.
+    $( The additive identity is a unit if and only if ` 1 = 0 ` , i.e. we are
+       in the zero ring.  (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+    0unit $p |- ( R e. Ring -> ( .0. e. U <-> .1. = .0. ) ) $=
+      ( crg wcel wceq wa cinvr cfv cmulr co eqid unitrinv cbs ringinvcl ringlz
+      syldan eqtr3d simpr 1unit adantr eqeltrrd impbida ) AHIZDBIZCDJZUHUIKDDAL
+      MZMZANMZOZCDAUMBCUKDEUKPZUMPZGQUHUIULARMZIUNDJUQABUKDEUOUQPZSUQAUMULDURUP
+      FTUAUBUHUJKCDBUHUJUCUHCBIUJABCEGUDUEUFUG $.
+  $}
+
+  ${
+    unitnegcl.1 $e |- U = ( Unit ` R ) $.
+    unitnegcl.2 $e |- N = ( invg ` R ) $.
+    $( The negative of a unit is a unit.  (Contributed by Mario Carneiro,
+       4-Dec-2014.) $)
+    unitnegcl $p |- ( ( R e. Ring /\ X e. U ) -> ( N ` X ) e. U ) $=
+      ( crg wcel wa cfv cdsr wbr cbs wceq adantr eqid syl2an2r dvdsrneg breqtrd
+      eqidd cur coppr simpl cgrp ringgrp cui a1i ringsrg simpr unitcld grpinvcl
+      syldan grpinvinv isunitd mpbid simpld dvdsrtr syl3anc opprring cminusg wb
+      csrg opprbasg eleq2d opprnegg fveq1d breq2d mpbird simprd mpbir2and ) AGH
+      ZDBHZIZDCJZBHVNAUAJZAKJZLZVNVOAUBJZKJZLZVMVKVNDVPLDVOVPLZVQVKVLUCVMVNVNCJ
+      ZDVPVKVLVNAMJZHZVNWBVPLVKAUDHZVLDWCHZWDAUEZVMWCABDVMWCTBAUFJNVMEUGZVKAVBH
+      VLAUHOZVKVLUIZUJZWCACDWCPZFUKQZWCVPACVNWLVPPZFRULVKWEVLWFWBDNWGWKWCACDWLF
+      UMQZSVMWADVOVSLZVMVLWAWPIWJVMVPAVRBVOVSDWHVMVOTZVMVPTZVMVRTZVMVSTZWIUNUOZ
+      UPWCVPAVOVNDWLWNUQURVMVRGHZVNDVSLWPVTVKXBVLAVRVRPZUSZOVMVNWBDVSVMVNWBVSLZ
+      VNVNVRUTJZJZVSLZVKXBVLVNVRMJZHZXHXDVMWDXJWMVKWDXJVAVLVKWCXIVNWCAVRGXCWLVC
+      VDOUOXIVSVRXFVNXIPZVSPZXFPRQVKXEXHVAVLVKWBXGVNVSVKVNCXFACVRGXCFVEVFVGOVHW
+      OSVMWAWPXAVIXIVSVRVOVNDXKXLUQURVMVPAVRBVOVSVNWHWQWRWSWTWIUNVJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -167684,6 +167816,10 @@ htmldef "Unit" as "Unit";
 htmldef "Irred" as "Irred";
   althtmldef "Irred" as "Irred";
   latexdef "Irred" as "\mathrm{Irred}";
+htmldef "invr" as
+    "<IMG SRC='_invr.gif' WIDTH=23 HEIGHT=19 ALT=' invr' TITLE='invr'>";
+  althtmldef "invr" as "inv<SUB>r</SUB>";
+  latexdef "invr" as "\mathrm{inv}_r";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
