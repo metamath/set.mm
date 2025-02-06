@@ -150895,6 +150895,22 @@ $)
       NVABCDEGIJKUPTVFVDVMEFGGBRUQURUS $.
   $}
 
+  ${
+    ringinvdv.b $e |- B = ( Base ` R ) $.
+    ringinvdv.u $e |- U = ( Unit ` R ) $.
+    ringinvdv.d $e |- ./ = ( /r ` R ) $.
+    ringinvdv.o $e |- .1. = ( 1r ` R ) $.
+    ringinvdv.i $e |- I = ( invr ` R ) $.
+    $( Write the inverse function in terms of division.  (Contributed by Mario
+       Carneiro, 2-Jul-2014.) $)
+    ringinvdv $p |- ( ( R e. Ring /\ X e. U ) -> ( I ` X ) = ( .1. ./ X ) ) $=
+      ( crg wcel wa co cfv cmulr wceq a1i eqid cinvr cdvr simpl ringidcl adantr
+      cbs cui simpr dvrvald ringinvcl ringlidm syldan eqtr2d ) CMNZGDNZOZEGBPEG
+      FQZCRQZPZURUQABCUSDFEGACUGQSUQHTUSUSSUQUSUAZTDCUHQSUQITFCUBQSUQLTBCUCQSUQ
+      JTUOUPUDUOEANUPACEHKUEUFUOUPUIUJUOUPURANUTURSACDFGILHUKACUSEURHVAKULUMUN
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
