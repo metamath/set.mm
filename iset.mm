@@ -150911,6 +150911,26 @@ $)
       $.
   $}
 
+  ${
+    $d x y B $.  $d x y z K $.  $d x y z L $.  $d x y z ph $.
+    rngidpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    rngidpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    rngidpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    rngidpropdg.k $e |- ( ph -> K e. V ) $.
+    rngidpropdg.l $e |- ( ph -> L e. W ) $.
+    $( The ring identity depends only on the ring's base set and multiplication
+       operation.  (Contributed by Mario Carneiro, 26-Dec-2014.) $)
+    rngidpropdg $p |- ( ph -> ( 1r ` K ) = ( 1r ` L ) ) $=
+      ( cfv cvv cbs wcel wceq eqid syl cmgp c0g mgpbasg eqtrd mgpex cv wa cmulr
+      cur co cplusg mgpplusgg oveqdr 3eqtr3d grpidpropdg ringidvalg 3eqtr4d ) A
+      EUANZUBNZFUANZUBNZEUINZFUINZABCDURUTOOADEPNZURPNZIAEGQZVDVERLVDEURGURSZVD
+      SUCTUDADFPNZUTPNZJAFHQZVHVIRMVHFUTHUTSZVHSUCTUDAVFUROQLEURGVGUETAVJUTOQMF
+      UTHVKUETABUFZDQCUFZDQUGZUGVLVMEUHNZUJVLVMFUHNZUJVLVMURUKNZUJVLVMUTUKNZUJK
+      AVNBCVOVQAVFVOVQRLEVOURGVGVOSULTUMAVNBCVPVRAVJVPVRRMFVPUTHVKVPSULTUMUNUOA
+      VFVBUSRLEVBURGVGVBSUPTAVJVCVARMFVCUTHVKVCSUPTUQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
