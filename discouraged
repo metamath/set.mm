@@ -16562,6 +16562,10 @@ New usage of "elunirn2OLD" is discouraged (0 uses).
 New usage of "elunirnALT" is discouraged (0 uses).
 New usage of "elunop" is discouraged (7 uses).
 New usage of "elunop2" is discouraged (0 uses).
+New usage of "eluzaddOLD" is discouraged (0 uses).
+New usage of "eluzaddiOLD" is discouraged (0 uses).
+New usage of "eluzsubOLD" is discouraged (0 uses).
+New usage of "eluzsubiOLD" is discouraged (0 uses).
 New usage of "en0ALT" is discouraged (0 uses).
 New usage of "en0OLD" is discouraged (0 uses).
 New usage of "en1OLD" is discouraged (0 uses).
@@ -20471,6 +20475,10 @@ Proof modification of "elrnustOLD" is discouraged (4 steps).
 Proof modification of "eltpsgOLD" is discouraged (73 steps).
 Proof modification of "elunirn2OLD" is discouraged (65 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
+Proof modification of "eluzaddOLD" is discouraged (144 steps).
+Proof modification of "eluzaddiOLD" is discouraged (102 steps).
+Proof modification of "eluzsubOLD" is discouraged (143 steps).
+Proof modification of "eluzsubiOLD" is discouraged (99 steps).
 Proof modification of "en0ALT" is discouraged (62 steps).
 Proof modification of "en0OLD" is discouraged (86 steps).
 Proof modification of "en1OLD" is discouraged (164 steps).
