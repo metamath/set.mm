@@ -70,7 +70,6 @@ proposed  syl5com   imtridcom
 proposed  syl5      imtrid      alternate proposal: sylid
 proposed  syl56     imtridi
 proposed  syl5d     imtridd
-underway  syl5ib    imbitrid
 proposed  syl5ibcom imbitridcom
 proposed  syl5ibr   imbitrrid
 proposed  syl5ibrcom imbitrridcom
@@ -86,6 +85,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 7-Feb-25 syl5ib    imbitrid
  3-Feb-25 ---       ---         Moved cross product induction theorems
                                 from SF's mathbox to main set.mm
  3-Feb-25 el2xpss   ---         Moved from SF's mathbox to main set.mm
