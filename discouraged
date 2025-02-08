@@ -3249,6 +3249,7 @@
 "cbvralf" is used by "cbvrexf".
 "cbvralv" is used by "cbvral2v".
 "cbvralv" is used by "cbvral3v".
+"cbvralv2" is used by "pgindnf".
 "cbvreu" is used by "cbvreuv".
 "cbvreu" is used by "cbvrmo".
 "cbvrex" is used by "cbviung".
@@ -11711,6 +11712,8 @@
 "pfxnndmnd" is used by "pfxnd0".
 "pfxnndmnd" is used by "pfxval0".
 "pfxval0" is used by "pfxwrdsymb".
+"pgindlem" is used by "pgindnf".
+"pgindnf" is used by "pgind".
 "phnv" is used by "ajval".
 "phnv" is used by "dipassr".
 "phnv" is used by "dipdi".
@@ -14281,6 +14284,7 @@ New usage of "0r" is discouraged (11 uses).
 New usage of "0reALT" is discouraged (0 uses).
 New usage of "0sdom1domALT" is discouraged (0 uses).
 New usage of "0sdomgOLD" is discouraged (0 uses).
+New usage of "0subgALT" is discouraged (0 uses).
 New usage of "0subgOLD" is discouraged (0 uses).
 New usage of "0vfval" is discouraged (9 uses).
 New usage of "139prmALT" is discouraged (0 uses).
@@ -15370,7 +15374,7 @@ New usage of "cbvralf" is discouraged (2 uses).
 New usage of "cbvralfwOLD" is discouraged (0 uses).
 New usage of "cbvralsv" is discouraged (0 uses).
 New usage of "cbvralv" is discouraged (2 uses).
-New usage of "cbvralv2" is discouraged (0 uses).
+New usage of "cbvralv2" is discouraged (1 uses).
 New usage of "cbvreu" is discouraged (2 uses).
 New usage of "cbvreucsf" is discouraged (0 uses).
 New usage of "cbvreuv" is discouraged (0 uses).
@@ -18145,6 +18149,7 @@ New usage of "nnfiOLD" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnne0ALT" is discouraged (0 uses).
 New usage of "nnsdomgOLD" is discouraged (0 uses).
+New usage of "nnzOLD" is discouraged (0 uses).
 New usage of "noelOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
 New usage of "norcomOLD" is discouraged (0 uses).
@@ -18439,6 +18444,8 @@ New usage of "pexmidlem7N" is discouraged (1 uses).
 New usage of "pexmidlem8N" is discouraged (1 uses).
 New usage of "pfxnndmnd" is discouraged (2 uses).
 New usage of "pfxval0" is discouraged (1 uses).
+New usage of "pgindlem" is discouraged (1 uses).
+New usage of "pgindnf" is discouraged (1 uses).
 New usage of "phnv" is discouraged (18 uses).
 New usage of "phnvi" is discouraged (22 uses).
 New usage of "phoeqi" is discouraged (1 uses).
@@ -19659,6 +19666,7 @@ Proof modification of "0posOLD" is discouraged (66 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "0sdom1domALT" is discouraged (31 steps).
 Proof modification of "0sdomgOLD" is discouraged (53 steps).
+Proof modification of "0subgALT" is discouraged (80 steps).
 Proof modification of "0subgOLD" is discouraged (209 steps).
 Proof modification of "139prmALT" is discouraged (758 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
@@ -21050,6 +21058,7 @@ Proof modification of "nnfiOLD" is discouraged (14 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnne0ALT" is discouraged (19 steps).
 Proof modification of "nnsdomgOLD" is discouraged (97 steps).
+Proof modification of "nnzOLD" is discouraged (5 steps).
 Proof modification of "noelOLD" is discouraged (77 steps).
 Proof modification of "norcomOLD" is discouraged (27 steps).
 Proof modification of "normlem7tALT" is discouraged (177 steps).
