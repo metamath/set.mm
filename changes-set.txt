@@ -85,6 +85,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 7-Feb-25 ---       ---         Moved surreal induction/recursion theorems
+                                from SF's mathbox to main set.mm
  7-Feb-25 syl5ib    imbitrid
  3-Feb-25 ---       ---         Moved cross product induction theorems
                                 from SF's mathbox to main set.mm
