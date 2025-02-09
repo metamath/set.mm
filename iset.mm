@@ -37247,6 +37247,28 @@ $)
       TVMVOQVPVQCVRVSVT $.
   $}
 
+  ${
+    $d ph x y $.
+    exmid1stab.x $e |- ( ( ph /\ x C_ { (/) } ) -> STAB x = { (/) } ) $.
+    $( If any proposition is stable, excluded middle follows.  We are thinking
+       of ` x ` as a proposition and ` x = { (/) } ` as "x is true".
+       (Contributed by Jim Kingdon, 28-Nov-2023.) $)
+    exmid1stab $p |- ( ph -> EXMID ) $=
+      ( vy cv c0 wss wcel wi wal wa wn wo cdif cun wceq eqtrdi ex adantl wstab
+      csn wdc wem 0ex snid nnexmid uneq1 undifabs a1i wne df-ne pwntru sylan2br
+      difeq2d dif0 uneq12d uncom un0 eqtri jaod con3d mtoi difss biimpi alrimiv
+      unss mpan2 cvv p0ex ssex sseq1 eqeq1 stbid imbi12d spcgv 3syl mpd df-stab
+      mpan9 sylib eleqtrrid elun eldifn orim2i syl df-dc sylibr df-exmid ) ADEZ
+      FUAZGZFWIHZUBZIZDJUCAWNDAWKWMAWKKZWLWLLZMZWMWOWLFWJWINZHZMZWQWOFWIWROZHWT
+      WOFWJXAFUDUEWOXAWJPZLZLZXBWKXDAWKXCWIWJPZXELZMZLXEUFWKXGXBWKXEXBXFXEXBIWK
+      XEXAWJWROWJWIWJWRUGWJWIUHQUIWKXFXBWKXFKZXAFWJOZWJXHWIFWRWJXFWKWIWJUJWIFPW
+      IWJUKWIULUMZXHWRWJFNWJXHWIFWJXJUNWJUOQUPXIWJFOWJFWJUQWJURUSQRUTVAVBSWOXBT
+      ZXDXBIWOXAWJGZXKWKXLAWKWRWJGZXLWJWIVCWKXMKXLWIWRWJVFVDVGZSABEZWJGZXOWJPZT
+      ZIZBJZWKXLXKIZAXSBAXPXRCRVEWKXLXAVHHXTYAIXNXAWJVIVJXSYABXAVHXOXAPZXPXLXRX
+      KXOXAWJVKYBXQXBXOXAWJVLVMVNVOVPVSVQXBVRVTVQWAFWIWRWBVTWSWPWLFWJWIWCWDWEWL
+      WFWGRVEDWHWG $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -171210,28 +171232,6 @@ $)
       KNMZLXAWODKNXMXPVRVSVTWAWQWTIZWPWRXRXKWPWRIXRWPXKWNWPWTVFXRXDWOWBGZWPXKTX
       RBKNMKWONMXDXRBDKNWNXEWPWTXHQWQWSLWCVRXRWOKXRLXQWQWSLWDVSWEZRBKWOVKSXRXSK
       WBGZXOYAXRVLKWFWGXRXQXSYATXTWOKWHWIWJBWOCWKSVOXLWEWLWM $.
-  $}
-
-  ${
-    $d ph x y $.
-    exmid1stab.x $e |- ( ( ph /\ x C_ { (/) } ) -> STAB x = { (/) } ) $.
-    $( If any proposition is stable, excluded middle follows.  We are thinking
-       of ` x ` as a proposition and ` x = { (/) } ` as "x is true".
-       (Contributed by Jim Kingdon, 28-Nov-2023.) $)
-    exmid1stab $p |- ( ph -> EXMID ) $=
-      ( vy cv c0 wss wcel wi wal wa wn wo cdif cun wceq eqtrdi ex adantl wstab
-      csn wdc wem 0ex snid nnexmid uneq1 undifabs a1i wne df-ne pwntru sylan2br
-      difeq2d dif0 uneq12d uncom un0 eqtri jaod con3d mtoi difss biimpi alrimiv
-      unss mpan2 cvv p0ex ssex sseq1 eqeq1 stbid imbi12d spcgv 3syl mpd df-stab
-      mpan9 sylib eleqtrrid elun eldifn orim2i syl df-dc sylibr df-exmid ) ADEZ
-      FUAZGZFWIHZUBZIZDJUCAWNDAWKWMAWKKZWLWLLZMZWMWOWLFWJWINZHZMZWQWOFWIWROZHWT
-      WOFWJXAFUDUEWOXAWJPZLZLZXBWKXDAWKXCWIWJPZXELZMZLXEUFWKXGXBWKXEXBXFXEXBIWK
-      XEXAWJWROWJWIWJWRUGWJWIUHQUIWKXFXBWKXFKZXAFWJOZWJXHWIFWRWJXFWKWIWJUJWIFPW
-      IWJUKWIULUMZXHWRWJFNWJXHWIFWJXJUNWJUOQUPXIWJFOWJFWJUQWJURUSQRUTVAVBSWOXBT
-      ZXDXBIWOXAWJGZXKWKXLAWKWRWJGZXLWJWIVCWKXMKXLWIWRWJVFVDVGZSABEZWJGZXOWJPZT
-      ZIZBJZWKXLXKIZAXSBAXPXRCRVEWKXLXAVHHXTYAIXNXAWJVIVJXSYABXAVHXOXAPZXPXLXRX
-      KXOXAWJVKYBXQXBXOXAWJVLVMVNVOVPVSVQXBVRVTVQWAFWIWRWBVTWSWPWLFWJWIWCWDWEWL
-      WFWGRVEDWHWG $.
   $}
 
   ${
