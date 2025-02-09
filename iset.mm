@@ -150931,6 +150931,27 @@ $)
       VFVBUSRLEVBURGVGVBSUPTAVJVCVARMFVCUTHVKVCSUPTUQ $.
   $}
 
+  ${
+    $d x y B $.  $d x y z K $.  $d x y z L $.  $d x y z ph $.
+    dvdsrpropdg.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    dvdsrpropdg.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    dvdsrpropdg.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    dvdsrpropdg.k $e |- ( ph -> K e. SRing ) $.
+    dvdsrpropdg.l $e |- ( ph -> L e. SRing ) $.
+    $( The divisibility relation depends only on the ring's base set and
+       multiplication operation.  (Contributed by Mario Carneiro,
+       26-Dec-2014.) $)
+    dvdsrpropdg $p |- ( ph -> ( ||r ` K ) = ( ||r ` L ) ) $=
+      ( vz cv cbs cfv wcel wceq wrex wa eqidd cmulr co copab cdsr anassrs an32s
+      eqeq1d rexbidva pm5.32da eleq2d rexeqdv anbi12d 3bitr3d dvdsrvald 3eqtr4d
+      wb opabbidv ) ACMZENOZPZBMZUREUAOZUBZLMZQZBUSRZSZCLUCURFNOZPZVAURFUAOZUBZ
+      VDQZBVHRZSZCLUCEUDOZFUDOZAVGVNCLAURDPZVEBDRZSVQVLBDRZSVGVNAVQVRVSAVQSVEVL
+      BDAVADPZVQVEVLUPAVTSVQSVCVKVDAVTVQVCVKQIUEUGUFUHUIAVQUTVRVFADUSURGUJAVEBD
+      USGUKULAVQVIVSVMADVHURHUJAVLBDVHHUKULUMUQACLBUSVOEVBAUSTAVOTJAVBTUNACLBVH
+      VPFVJAVHTAVPTKAVJTUNUO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
