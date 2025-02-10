@@ -150952,6 +150952,32 @@ $)
       VPFVJAVHTAVPTKAVJTUNUO $.
   $}
 
+  ${
+    $d x y B $.  $d x y z K $.  $d x y z L $.  $d x y z ph $.
+    unitpropdg.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    unitpropdg.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    unitpropdg.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    unitpropdg.k $e |- ( ph -> K e. Ring ) $.
+    unitpropdg.l $e |- ( ph -> L e. Ring ) $.
+    $( The set of units depends only on the ring's base set and multiplication
+       operation.  (Contributed by Mario Carneiro, 26-Dec-2014.) $)
+    unitpropdg $p |- ( ph -> ( Unit ` K ) = ( Unit ` L ) ) $=
+      ( cfv cdsr wbr wa wcel crg wceq eqid eqidd vz cv coppr rngidpropdg breq2d
+      cui cur anbi12d ringsrg syl dvdsrpropdg breqd cbs opprbasg eqtrd cmulr co
+      csrg ancom2s adantr simprl simprr opprmulg syl3anc 3eqtr4d opprring bitrd
+      3syl isunitd 3bitr4d eqrdv ) AUAEUFLZFUFLZAUAUBZEUGLZEMLZNZVNVOEUCLZMLZNZ
+      OZVNFUGLZFMLZNZVNWBFUCLZMLZNZOZVNVLPVNVMPAWAVNWBVPNZVNWBVSNZOWHAVQWIVTWJA
+      VOWBVNVPABCDEFQQGHIJKUDZUEAVOWBVNVSWKUEUHAWIWDWJWGAVPWCVNWBABCDEFGHIAEQPZ
+      EURPJEUIUJZAFQPZFURPKFUIUJZUKULAVSWFVNWBACBDVRWEADEUMLZVRUMLZGAWLWPWQRJWP
+      EVRQVRSZWPSZUNUJUOADFUMLZWEUMLZHAWNWTXARKWTFWEQWESZWTSZUNUJUOACUBZDPZBUBZ
+      DPZOZOZXFXDEUPLZUQZXFXDFUPLZUQZXDXFVRUPLZUQZXDXFWEUPLZUQZAXGXEXKXMRIUSXIW
+      LXEXGXOXKRAWLXHJUTAXEXGVAZAXEXGVBZWPEXNXJDVRQDXDXFWSXJSWRXNSVCVDXIWNXEXGX
+      QXMRAWNXHKUTXRXSWTFXPXLDWEQDXDXFXCXLSXBXPSVCVDVEAWLVRQPVRURPJEVRWRVFVRUIV
+      HAWNWEQPWEURPKFWEXBVFWEUIVHUKULUHVGAVPEVRVLVOVSVNAVLTAVOTAVPTAVRTAVSTWMVI
+      AWCFWEVMWBWFVNAVMTAWBTAWCTAWETAWFTWOVIVJVK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
