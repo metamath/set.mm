@@ -85,6 +85,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+10-Feb-25 ---       ---         Moved surreal addition theorems
+                                from SF's mathbox to main set.mm
+10-Feb-25 onunel    ---         Moved from SF's mathbox to main set.mm
  9-Feb-25 ---       ---         Moved natural ordinal addition theorems
                                 from SF's mathbox to main set.mm
  9-Feb-25 imaeqexov ---         Moved from SF's mathbox to main set.mm
