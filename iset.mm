@@ -37250,9 +37250,9 @@ $)
   ${
     $d ph x y $.
     exmid1stab.x $e |- ( ( ph /\ x C_ { (/) } ) -> STAB x = { (/) } ) $.
-    $( If any proposition is stable, excluded middle follows.  We are thinking
-       of ` x ` as a proposition and ` x = { (/) } ` as "x is true".
-       (Contributed by Jim Kingdon, 28-Nov-2023.) $)
+    $( If every proposition is stable, excluded middle follows.  We are
+       thinking of ` x ` as a proposition and ` x = { (/) } ` as " ` x ` is
+       true".  (Contributed by Jim Kingdon, 28-Nov-2023.) $)
     exmid1stab $p |- ( ph -> EXMID ) $=
       ( vy cv c0 wss wcel wi wal wa wn wo cdif cun wceq eqtrdi ex adantl wstab
       csn wdc wem 0ex snid nnexmid uneq1 undifabs a1i wne df-ne pwntru sylan2br
@@ -72445,8 +72445,8 @@ $)
 
   ${
     $d u v $.
-    $( The set ` 2o ` with negated equality as an apartness, has two points
-       apart.  (Contributed by Jim Kingdon, 8-Feb-2025.) $)
+    $( ` (/) ` and ` 1o ` are two unequal elements of ` 2o ` .  (Contributed by
+       Jim Kingdon, 8-Feb-2025.) $)
     2oneel $p |- <. (/) , 1o >. e. { <. u , v >. |
         ( ( u e. 2o /\ v e. 2o ) /\ u =/= v ) } $=
       ( c0 c1o cop cv c2o wcel wa wne copab 1n0 necomi wb 0lt2o 1lt2o opelopab2
