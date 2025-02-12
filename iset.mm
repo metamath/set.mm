@@ -150998,6 +150998,38 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Ring homomorphisms
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c RingHom $. $( Ring homomorphism $)
+  $c RingIso $. $( Ring isomorphism $)
+
+  $( Extend class notation with the ring homomorphisms. $)
+  crh $a class RingHom $.
+
+  $( Extend class notation with the ring isomorphisms. $)
+  crs $a class RingIso $.
+
+  ${
+    $d r s v w f x y $.
+    $( Define the set of ring homomorphisms from ` r ` to ` s ` .  (Contributed
+       by Stefan O'Rear, 7-Mar-2015.) $)
+    df-rnghom $a |- RingHom = ( r e. Ring , s e. Ring |->
+      [_ ( Base ` r ) / v ]_ [_ ( Base ` s ) / w ]_
+   { f e. ( w ^m v ) | ( ( f ` ( 1r ` r ) ) = ( 1r ` s ) /\ A. x e. v A. y e. v
+   ( ( f ` ( x ( +g ` r ) y ) ) = ( ( f ` x ) ( +g ` s ) ( f ` y ) ) /\
+     ( f ` ( x ( .r ` r ) y ) ) = ( ( f ` x ) ( .r ` s ) ( f ` y ) ) ) ) } ) $.
+
+    $( Define the set of ring isomorphisms from ` r ` to ` s ` .  (Contributed
+       by Stefan O'Rear, 7-Mar-2015.) $)
+    df-rngiso $a |- RingIso = ( r e. _V , s e. _V |->
+      { f e. ( r RingHom s ) | `' f e. ( s RingHom r ) } ) $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -168272,6 +168304,12 @@ htmldef "invr" as
 htmldef "/r" as "/<SUB>r</SUB>";
   althtmldef "/r" as "/<SUB>r</SUB>";
   latexdef "/r" as "/_r";
+htmldef "RingHom" as " RingHom ";
+  althtmldef "RingHom" as " RingHom ";
+  latexdef "RingHom" as " \mathrm{RingHom} ";
+htmldef "RingIso" as " RingIso ";
+  althtmldef "RingIso" as " RingIso ";
+  latexdef "RingIso" as " \mathrm{RingIso} ";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
