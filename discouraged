@@ -14414,6 +14414,7 @@ New usage of "aaanOLD" is discouraged (0 uses).
 New usage of "ab0ALT" is discouraged (0 uses).
 New usage of "ab0OLD" is discouraged (0 uses).
 New usage of "ab0orvALT" is discouraged (0 uses).
+New usage of "abeq2OLD" is discouraged (0 uses).
 New usage of "abfOLD" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (4 uses).
 New usage of "ablo4" is discouraged (3 uses).
@@ -19715,6 +19716,7 @@ Proof modification of "aaanOLD" is discouraged (38 steps).
 Proof modification of "ab0ALT" is discouraged (33 steps).
 Proof modification of "ab0OLD" is discouraged (146 steps).
 Proof modification of "ab0orvALT" is discouraged (19 steps).
+Proof modification of "abeq2OLD" is discouraged (47 steps).
 Proof modification of "abfOLD" is discouraged (13 steps).
 Proof modification of "abn0OLD" is discouraged (28 steps).
 Proof modification of "abrexexgOLD" is discouraged (43 steps).
