@@ -150812,8 +150812,8 @@ $)
       UBUFUOUPUQUMUGUOUPUQUTCIZVBCIUOUQVFUPBCUSEFUSTUHUIBVACDUTFVATUJUNUK $.
 
     dvrid.o $e |- .1. = ( 1r ` R ) $.
-    $( A cancellation law for division.  ( ~ dividap analog.)  (Contributed by
-       Mario Carneiro, 18-Jun-2015.) $)
+    $( A ring element divided by itself is the ring unity.  ( ~ dividap
+       analog.)  (Contributed by Mario Carneiro, 18-Jun-2015.) $)
     dvrid $p |- ( ( R e. Ring /\ X e. U ) -> ( X ./ X ) = .1. ) $=
       ( crg wcel wa co cinvr cfv cmulr cbs eqidd wceq a1i eqid cui cdvr ringsrg
       simpl csrg adantr simpr unitcld dvrvald unitrinv eqtrd ) BIJZECJZKZEEALEE
@@ -150825,8 +150825,8 @@ $)
     dvr1.b $e |- B = ( Base ` R ) $.
     dvr1.d $e |- ./ = ( /r ` R ) $.
     dvr1.o $e |- .1. = ( 1r ` R ) $.
-    $( A cancellation law for division.  ( ~ div1 analog.)  (Contributed by
-       Mario Carneiro, 18-Jun-2015.) $)
+    $( A ring element divided by the ring unity is itself.  ( ~ div1 analog.)
+       (Contributed by Mario Carneiro, 18-Jun-2015.) $)
     dvr1 $p |- ( ( R e. Ring /\ X e. B ) -> ( X ./ .1. ) = X ) $=
       ( crg wcel wa co cinvr cfv cmulr wceq a1i eqidd eqid adantr cui cbs simpl
       cdvr simpr 1unit dvrvald 1rinv oveq2d ringridm 3eqtrd ) CIJZEAJZKZEDBLEDC
@@ -150883,8 +150883,8 @@ $)
     dvreq1.o $e |- U = ( Unit ` R ) $.
     dvreq1.d $e |- ./ = ( /r ` R ) $.
     dvreq1.t $e |- .1. = ( 1r ` R ) $.
-    $( A cancellation law for division.  ( ~ diveqap1 analog.)  (Contributed by
-       Mario Carneiro, 28-Apr-2016.) $)
+    $( Equality in terms of ratio equal to ring unity.  ( ~ diveqap1 analog.)
+       (Contributed by Mario Carneiro, 28-Apr-2016.) $)
     dvreq1 $p |- ( ( R e. Ring /\ X e. B /\ Y e. U ) ->
                    ( ( X ./ Y ) = .1. <-> X = Y ) ) $=
       ( crg wcel w3a co wceq cfv oveq1 a1i 3adant2 eqid dvrcan1 wa cbs cui csrg
@@ -150919,7 +150919,7 @@ $)
       ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
     rngidpropdg.k $e |- ( ph -> K e. V ) $.
     rngidpropdg.l $e |- ( ph -> L e. W ) $.
-    $( The ring identity depends only on the ring's base set and multiplication
+    $( The ring unity depends only on the ring's base set and multiplication
        operation.  (Contributed by Mario Carneiro, 26-Dec-2014.) $)
     rngidpropdg $p |- ( ph -> ( 1r ` K ) = ( 1r ` L ) ) $=
       ( cfv cvv cbs wcel wceq eqid syl cmgp c0g mgpbasg eqtrd mgpex cv wa cmulr
