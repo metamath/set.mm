@@ -151097,6 +151097,28 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Ring apartness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c #r $. $( Ring apartness $)
+
+  $( Extend class notation with ring apartness. $)
+  capr $a class #r $.
+
+  ${
+    $d w x y $.
+    $( An apartness relation for a ring, defined in terms of which elements
+       have multiplicative inverses.  (Contributed by Jim Kingdon,
+       13-Feb-2025.) $)
+    df-apr $a |- #r = ( w e. _V |-> { <. x , y >. |
+      ( ( x e. ( Base ` w ) /\ y e. ( Base ` w ) )
+      /\ ( x ( -g ` w ) y ) e. ( Unit ` w ) ) } ) $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -168377,6 +168399,9 @@ htmldef "RingHom" as " RingHom ";
 htmldef "RingIso" as " RingIso ";
   althtmldef "RingIso" as " RingIso ";
   latexdef "RingIso" as " \mathrm{RingIso} ";
+htmldef "#r" as "#<sub>r</sub>";
+  althtmldef "#r" as "#<sub>r</sub>";
+  latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
