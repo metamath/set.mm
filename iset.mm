@@ -72371,6 +72371,21 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+  $c Ap $.
+
+  $( Apartness predicate symbol. $)
+  wap $a wff R Ap A $.
+
+  ${
+    $d x y z A $.  $d x y z R $.
+    $( Apartness predicate.  A relation ` R ` is an apartness if it is
+       irreflexive, symmetric, and cotransitive.  (Contributed by Jim Kingdon,
+       14-Feb-2025.) $)
+    df-pap $a |- ( R Ap A <-> ( ( R C_ ( A X. A ) /\ A. x e. A -. x R x ) /\
+      ( A. x e. A A. y e. A ( x R y -> y R x ) /\
+      A. x e. A A. y e. A A. z e. A ( x R y -> ( x R z \/ y R z ) ) ) ) ) $.
+  $}
+
   $c TAp $.
 
   $( Tight apartness predicate symbol. $)
@@ -166651,7 +166666,7 @@ $)
 
        <tr><th>Abbreviation</th><th>Mnenomic/Meaning</th><th>Source</th>
        <th>Expression</th><th>Syntax?</th><th>Example(s)</th></tr>
-       <tr><td>ap</td><td>apart</td><td> ~ df-ap </td>
+       <tr><td>ap</td><td>apart</td><td> ~ df-pap , ~ df-ap </td>
        <td> </td><td>Yes</td><td> ~ apadd1 , ~ apne </td></tr>
 
        <tr><td>g</td><td>with "is a set" condition</td><td> </td><td> </td>
@@ -167796,6 +167811,9 @@ htmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
 htmldef "CCHOICE" as "<SMALL>CCHOICE</SMALL>";
   althtmldef "CCHOICE" as "<SMALL>CCHOICE</SMALL>";
   latexdef "CCHOICE" as "\mathrm{CCHOICE}";
+htmldef "Ap" as ' Ap ';
+  althtmldef "Ap" as ' Ap ';
+  latexdef "Ap" as "\mathrm{Ap}";
 htmldef "TAp" as ' TAp ';
   althtmldef "TAp" as ' TAp ';
   latexdef "TAp" as "\mathrm{TAp}";
