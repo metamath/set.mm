@@ -72402,6 +72402,19 @@ $)
   $}
 
   ${
+    $d R x y z $.  $d A x y z $.  $d B x y z $.
+    $( Equality theorem for tight apartness predicate.  (Contributed by Jim
+       Kingdon, 15-Feb-2025.) $)
+    tapeq2 $p |- ( A = B -> ( R TAp A <-> R TAp B ) ) $=
+      ( vx vy vz wceq cxp wss cv wbr wn wral wi wa w3a raleq raleqbi1dv anbi12d
+      wtap wo xpeq12 anidms sseq2d 3anbi123d df-tap 3bitr4g ) ABGZCAAHZIZDJZUKC
+      KLZDAMZUKEJZCKZUNUKCKNZEAMZDAMZOZUOUKFJZCKUNUTCKUANZFAMZEAMZDAMZUOLUKUNGN
+      ZEAMZDAMZOZPCBBHZIZULDBMZUPEBMZDBMZOZVAFBMZEBMZDBMZVEEBMZDBMZOZPACTBCTUHU
+      JVJUSVNVHVTUHUIVICUHUIVIGABABUBUCUDUHUMVKURVMULDABQUQVLDABUPEABQRSUHVDVQV
+      GVSVCVPDABVBVOEABVAFABQRRVFVRDABVEEABQRSUEDEFACUFDEFBCUFUG $.
+  $}
+
+  ${
     $d A a b c u v $.  $d A a b c x y $.
     $( Negated equality on a set with decidable equality is a tight apartness.
        (Contributed by Jim Kingdon, 5-Feb-2025.) $)
