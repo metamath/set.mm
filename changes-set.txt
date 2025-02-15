@@ -85,6 +85,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+15-Feb-25 abeq2i    eqabi
 15-Feb-25 abeq2d    eqabd
 15-Feb-25 abeq2w    eqabw
 15-Feb-25 abeq2impr eqab1r      Reverse direction of abeq
