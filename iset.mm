@@ -72526,6 +72526,55 @@ $)
       NORS $.
   $}
 
+  ${
+    $d A p u v x y $.  $d A x y z $.  $d R p x y z $.
+    $( Excluded middle implies there is only one tight apartness on any class,
+       namely negated equality.  (Contributed by Jim Kingdon, 14-Feb-2025.) $)
+    exmidapne $p |- ( EXMID -> ( R TAp A <->
+        R = { <. u , v >. | ( ( u e. A /\ v e. A ) /\ u =/= v ) } ) ) $=
+      ( vx vy vz wem cv wcel wa wne wceq simpr wbr wn wral wi syl adantr vp cfv
+      wtap copab c1st c2nd cop cxp simplr wss wo w3a df-tap biimpi simp1d sseld
+      sylc 1st2nd2 xp1st xp2nd eqeltrrd opeq2d id notbid simp2d simpld ad3antlr
+      breq12d df-br sylnib eqneltrrd pm2.65da neqned jca31 eleq1 bi2anan9 simpl
+      rspcdva wb neeq12d anbi12d opelopabga syl2anc mpbird eqeltrd wrel relopab
+      1st2nd mpan adantl breq2 eqeq2 imbi12d breq1 eqeq1 simp3d simprd ad2antlr
+      ralbidv anbi1d neeq1 anbi2d elopabi neneqd wdc exmidexmid con1dc ad2antrr
+      neeq2 mp2d sylib impbida eqrdv ralrimivw netap tapeq1 ) HCDUCZDBIZCJZAIZC
+      JZKZXRXTLZKZBAUDZMZHXQKZUADYEYGUAIZDJZYHYEJZYGYIKZYHYHUEUBZYHUFUBZUGZYEYK
+      YHCCUHZJZYHYNMZYKXQYIYPHXQYIUIYGYINZXQDYOYHXQDYOUJZEIZYTDOZPZECQZYTFIZDOZ
+      UUDYTDORFCQECQZKZUUEYTGIZDOUUDUUHDOUKRGCQFCQECQZUUEPZYTUUDMZRZFCQZECQZKZX
+      QYSUUGUUOULEFGCDUMUNZUOUPUQZYHCCURSZYKYNYEJZYLCJZYMCJZKZYLYMLZKZYKUUTUVAU
+      VCYKYPUUTUUQYHCCUSSZYKYPUVAUUQYHCCUTSZYKYLYMYKYLYMMZYNDJZYKUVHUVGYKYHYNDU
+      URYRVATYKUVGKZYLYLUGZYNDUVIYLYMYLYKUVGNVBUVIYLYLDOZUVJDJUVIUUBUVKPECYLYTY
+      LMZUUAUVKUVLYTYLYTYLDUVLVCZUVMVHVDXQUUCHYIUVGXQUUCUUFXQYSUUGUUOUUPVEVFVGY
+      KUUTUVGUVETVRYLYLDVIVJVKVLVMVNYKUUTUVAUUSUVDVSUVEUVFYDUVDBAYLYMCCXRYLMZXT
+      YMMZKZYBUVBYCUVCUVNXSUUTUVOYAUVAXRYLCVOZXTYMCVOZVPUVPXRYLXTYMUVNUVOVQUVNU
+      VONVTWAWBWCWDWEYGYJKZYHYNDYJYQYGYEWFYJYQYDBAWGYHYEWHWIWJUVSYLYMDOZUVHUVSU
+      VTPZUVGRZUVGPZUVTUVSYLUUDDOZPZYLUUDMZRZUWBFCYMUUDYMMZUWEUWAUWFUVGUWHUWDUV
+      TUUDYMYLDWKVDUUDYMYLWLWMUVSUUMUWGFCQECYLUVLUULUWGFCUVLUUJUWEUUKUWFUVLUUEU
+      WDYTYLUUDDWNVDYTYLUUDWOWMWSXQUUNHYJXQUUIUUNXQYSUUGUUOUUPWPWQWRUVSUUTUVAUV
+      SUVBUVCYJUVDYGYDUUTYAKZYLXTLZKUVDBAYHUVNYBUWIYCUWJUVNXSUUTYAUVQWTXRYLXTXA
+      WAUVOUWIUVBUWJUVCUVOYAUVAUUTUVRXBXTYMYLXIWAXCWJZVFZVFVRUVSUUTUVAUWLWQVRUV
+      SYLYMUVSUVBUVCUWKWQXDHUWBUWCUVTRRZXQYJHUVTXEUWMUVTXFUVTUVGXGSXHXJYLYMDVIX
+      KWEXLXMHYFKXQCYEUCZHUWNYFHUUKXEZFCQZECQUWNHUWPECHUWOFCUUKXFXNXNEFABCXOSTY
+      FXQUWNVSHCDYEXPWJWDXL $.
+  $}
+
+  ${
+    $d r s u v x $.
+    $( The proposition that every class has at most one tight apartness is
+       equivalent to excluded middle.  (Contributed by Jim Kingdon,
+       14-Feb-2025.) $)
+    exmidmotap $p |- ( EXMID <-> A. x E* r r TAp x ) $=
+      ( vs vu vv wem cv wtap wmo wal wa wceq wi wel wb exmidapne adantr c2o com
+      mpbid wne simprl simprr eqtr4d ex alrimivv tapeq1 mo4 sylibr alrimiv wcel
+      copab 2onn tapeq2 mobidv spcgv ax-mp 2omotap syl impbii ) FAGZBGZHZBIZAJZ
+      FVDAFVCVACGZHZKZVBVFLZMZCJBJVDFVJBCFVHVIFVHKZVBDANEANKDGEGUAKDEULZVFVKVCV
+      BVLLZFVCVGUBFVCVMOVHEDVAVBPQTVKVGVFVLLZFVCVGUCFVGVNOVHEDVAVFPQTUDUEUFVCVG
+      BCVAVBVFUGUHUIUJVERVBHZBIZFRSUKVEVPMUMVDVPARSVARLVCVOBVARVBUNUOUPUQBURUSU
+      T $.
+  $}
+
 
 $(
 ###############################################################################
