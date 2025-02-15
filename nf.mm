@@ -20257,7 +20257,7 @@ $)
      a setvar variable ` x ` for a class variable: all sets are classes by
      ~ cvjust (but not necessarily vice-versa).  For a full description of how
      classes are introduced and how to recover the primitive language, see the
-     discussion in Quine (and under ~ abeq2 for a quick overview).
+     discussion in Quine (and under ~ eqab for a quick overview).
 
      Because class variables can be substituted with compound expressions and
      setvar variables cannot, it is often useful to convert a theorem
@@ -20343,7 +20343,7 @@ $)
        definition.  This also makes some proofs shorter and probably easier to
        read, without the constant switching between two kinds of equality.
 
-       See also comments under ~ df-clab , ~ df-clel , and ~ abeq2 .
+       See also comments under ~ df-clab , ~ df-clel , and ~ eqab .
 
        In the form of ~ dfcleq , this is called the "axiom of extensionality"
        by [Levy] p. 338, who treats the theory of classes as an extralogical
