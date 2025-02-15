@@ -37247,6 +37247,28 @@ $)
       TVMVOQVPVQCVRVSVT $.
   $}
 
+  ${
+    $d ph x y $.
+    exmid1stab.x $e |- ( ( ph /\ x C_ { (/) } ) -> STAB x = { (/) } ) $.
+    $( If every proposition is stable, excluded middle follows.  We are
+       thinking of ` x ` as a proposition and ` x = { (/) } ` as " ` x ` is
+       true".  (Contributed by Jim Kingdon, 28-Nov-2023.) $)
+    exmid1stab $p |- ( ph -> EXMID ) $=
+      ( vy cv c0 wss wcel wi wal wa wn wo cdif cun wceq eqtrdi ex adantl wstab
+      csn wdc wem 0ex snid nnexmid uneq1 undifabs a1i wne df-ne pwntru sylan2br
+      difeq2d dif0 uneq12d uncom un0 eqtri jaod con3d mtoi difss biimpi alrimiv
+      unss mpan2 cvv p0ex ssex sseq1 eqeq1 stbid imbi12d spcgv 3syl mpd df-stab
+      mpan9 sylib eleqtrrid elun eldifn orim2i syl df-dc sylibr df-exmid ) ADEZ
+      FUAZGZFWIHZUBZIZDJUCAWNDAWKWMAWKKZWLWLLZMZWMWOWLFWJWINZHZMZWQWOFWIWROZHWT
+      WOFWJXAFUDUEWOXAWJPZLZLZXBWKXDAWKXCWIWJPZXELZMZLXEUFWKXGXBWKXEXBXFXEXBIWK
+      XEXAWJWROWJWIWJWRUGWJWIUHQUIWKXFXBWKXFKZXAFWJOZWJXHWIFWRWJXFWKWIWJUJWIFPW
+      IWJUKWIULUMZXHWRWJFNWJXHWIFWJXJUNWJUOQUPXIWJFOWJFWJUQWJURUSQRUTVAVBSWOXBT
+      ZXDXBIWOXAWJGZXKWKXLAWKWRWJGZXLWJWIVCWKXMKXLWIWRWJVFVDVGZSABEZWJGZXOWJPZT
+      ZIZBJZWKXLXKIZAXSBAXPXRCRVEWKXLXAVHHXTYAIXNXAWJVIVJXSYABXAVHXOXAPZXPXLXRX
+      KXOXAWJVKYBXQXBXOXAWJVLVMVNVOVPVSVQXBVRVTVQWAFWIWRWBVTWSWPWLFWJWIWCWDWEWL
+      WFWGRVEDWHWG $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -72339,6 +72361,156 @@ $)
         <-> A. x e. On A. y e. On -. -. ( x C_ y \/ y C_ x ) ) $=
       ( wem wn cv wss wo con0 wral onntri52 onntri24 syl onntri45 impbii ) CDDZ
       AEZBEZFQPFGZDDBHIAHIZORBHIAHIDDSABJABKLABMN $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Apartness relations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c TAp $.
+
+  $( Tight apartness predicate symbol. $)
+  wtap $a wff R TAp A $.
+
+  ${
+    $d x y z A $.  $d x y z R $.
+    $( Tight apartness predicate.  A relation ` R ` is a tight apartness if it
+       is irreflexive, symmetric, cotransitive, and tight.  (Contributed by Jim
+       Kingdon, 5-Feb-2025.) $)
+    df-tap $a |- ( R TAp A <-> ( R C_ ( A X. A ) /\ ( A. x e. A -. x R x /\
+      A. x e. A A. y e. A ( x R y -> y R x ) ) /\
+      ( A. x e. A A. y e. A A. z e. A ( x R y -> ( x R z \/ y R z ) ) /\
+      A. x e. A A. y e. A ( -. x R y -> x = y ) ) ) ) $.
+  $}
+
+  ${
+    $d A x y z $.  $d R x y z $.  $d S x y z $.
+    $( Equality theorem for tight apartness predicate.  (Contributed by Jim
+       Kingdon, 8-Feb-2025.) $)
+    tapeq1 $p |- ( R = S -> ( R TAp A <-> S TAp A ) ) $=
+      ( vx vy vz wceq wss cv wbr wn wral wi wa wo w3a wtap breq notbid 2ralbidv
+      cxp sseq1 ralbidv imbi12d anbi12d orbi12d imbi1d 3anbi123d df-tap 3bitr4g
+      ) BCGZBAAUAZHZDIZUNBJZKZDALZUNEIZBJZURUNBJZMZEALDALZNZUSUNFIZBJZURVDBJZOZ
+      MZFALZEALDALZUSKZUNURGZMZEALDALZNZPCULHZUNUNCJZKZDALZUNURCJZURUNCJZMZEALD
+      ALZNZVTUNVDCJZURVDCJZOZMZFALZEALDALZVTKZVLMZEALDALZNZPABQACQUKUMVPVCWDVOW
+      NBCULUBUKUQVSVBWCUKUPVRDAUKUOVQUNUNBCRSUCUKVAWBDEAAUKUSVTUTWAUNURBCRZURUN
+      BCRUDTUEUKVJWJVNWMUKVIWIDEAAUKVHWHFAUKUSVTVGWGWOUKVEWEVFWFUNVDBCRURVDBCRU
+      FUDUCTUKVMWLDEAAUKVKWKVLUKUSVTWOSUGTUEUHDEFABUIDEFACUIUJ $.
+  $}
+
+  ${
+    $d A a b c u v $.  $d A a b c x y $.
+    $( Negated equality on a set with decidable equality is a tight apartness.
+       (Contributed by Jim Kingdon, 5-Feb-2025.) $)
+    netap $p |- ( A. x e. A A. y e. A DECID x = y
+        -> { <. u , v >. | ( ( u e. A /\ v e. A ) /\ u =/= v ) } TAp A ) $=
+      ( va vb vc weq wral cv wcel wa wne wbr wn cop df-br wb neeq2 wdc copab wi
+      cxp wss wtap opabssxp a1i neirr neeq1 opelopab2 anidms bitrid mtbiri rgen
+      wo ancoms necom bitrdi bitr4d biimpd rgen2 jca w3a 3adant3 simpr eqnetrrd
+      adantl simplr necomd neqned equequ2 dcbid equequ1 ralbidv simplr1 rspcdva
+      olcd simpll simplr3 exmiddc syl mpjaodan 3adant2 3adant1 orbi12d ad2antlr
+      orcd mpbird ex sylbid ralrimivvva notbid df-ne notbii simpl simprl simprr
+      notnotrdc ralrimivva df-tap syl3anbrc ) ABIZUAZBEJZAEJZDKZELCKZELMXGXHNZM
+      DCUBZEEUDUEZFKZXLXJOZPZFEJZXLGKZXJOZXPXLXJOZUCZGEJFEJZMXQXLHKZXJOZXPYAXJO
+      ZUPZUCZHEJGEJFEJZXQPZFGIZUCZGEJFEJZMEXJUFXKXFXIDCEEUGUHXFXOXTXOXFXNFEXLEL
+      ZXMXLXLNZXLUIXMXLXLQXJLZYKYLXLXLXJRYKYMYLSXIXLXHNZYLDCXLXLEEXGXLXHUJZXHXL
+      XLTUKULUMUNUOUHXTXFXSFGEEYKXPELZMZXQXRYQXQXLXPNZXRXQXLXPQXJLYQYRXLXPXJRXI
+      YNYRDCXLXPEEYOXHXPXLTUKUMZXRXPXLQXJLZYQYRXPXLXJRYQYTXPXLNZYRYPYKYTUUASXIX
+      PXHNZUUADCXPXLEEXGXPXHUJZXHXLXPTUKUQXPXLURUSUMUTVAVBUHVCXFYFYJXFYEFGHEEEX
+      FYKYPYAELZVDZMZXQYRYDUUEXQYRSZXFYKYPUUGUUDYSVEVHUUFYRYDUUFYRMZYDXLYANZXPY
+      ANZUPZUUHFHIZUUKUULPZUUHUULMZUUJUUIUUNYAXPUUNXLYAXPUUHUULVFUUFYRUULVIVGVJ
+      VRUUHUUMMZUUIUUJUUOXLYAUUHUUMVFVKWHUUHUULUAZUULUUMUPUUHFBIZUAZUUPBEYABHIU
+      UQUULBHFVLVMUUHXEUURBEJZAEXLAFIZXDUURBEUUTXCUUQAFBVNVMVOZXFUUEYRVSYKYPUUD
+      XFYRVPVQYKYPUUDXFYRVTVQUULWAWBWCUUEYDUUKSXFYRUUEYBUUIYCUUJYBXLYAQXJLZUUEU
+      UIXLYAXJRYKUUDUVBUUISYPXIYNUUIDCXLYAEEYOXHYAXLTUKWDUMYCXPYAQXJLZUUEUUJXPY
+      AXJRYPUUDUVCUUJSYKXIUUBUUJDCXPYAEEUUCXHYAXPTUKWEUMWFWGWIWJWKWLXFYIFGEEXFY
+      QMZYGYHPZPZYHYQYGUVFSXFYQYGYRPUVFYQXQYRYSWMYRUVEXLXPWNWOUSVHUVDYHUAZUVFYH
+      UCUVDUURUVGBEXPBGIUUQYHBGFVLVMUVDXEUUSAEXLUVAXFYQWPXFYKYPWQVQXFYKYPWRVQYH
+      WSWBWKWTVCFGHEXJXAXB $.
+  $}
+
+  ${
+    $d u v $.  $d x y $.
+    $( Negated equality is a tight apartness on ` 2o ` .  (Contributed by Jim
+       Kingdon, 6-Feb-2025.) $)
+    2onetap $p |- { <. u , v >. |
+        ( ( u e. 2o /\ v e. 2o ) /\ u =/= v ) } TAp 2o $=
+      ( vx vy weq wdc c2o wral cv wcel wa wne copab wtap 2onn elnn mpan2 nndceq
+      com syl2an rgen2 netap ax-mp ) CDEFZDGHCGHGBIZGJAIZGJKUEUFLKBAMNUDCDGGCIZ
+      GJZUGSJZDIZSJZUDUJGJZUHGSJZUIOUGGPQULUMUKOUJGPQUGUJRTUACDABGUBUC $.
+  $}
+
+  ${
+    $d u v $.
+    $( ` (/) ` and ` 1o ` are two unequal elements of ` 2o ` .  (Contributed by
+       Jim Kingdon, 8-Feb-2025.) $)
+    2oneel $p |- <. (/) , 1o >. e. { <. u , v >. |
+        ( ( u e. 2o /\ v e. 2o ) /\ u =/= v ) } $=
+      ( c0 c1o cop cv c2o wcel wa wne copab 1n0 necomi wb 0lt2o 1lt2o opelopab2
+      neeq1 neeq2 mp2an mpbir ) CDEBFZGHAFZGHIUBUCJZIBAKHZCDJZDCLMCGHDGHUEUFNOP
+      UDCUCJUFBACDGGUBCUCRUCDCSQTUA $.
+  $}
+
+  ${
+    $d a b c ph u v $.
+    $( Lemma for ~ 2omotap .  (Contributed by Jim Kingdon, 6-Feb-2025.) $)
+    2omotaplemap $p |- ( -. -. ph -> { <. u , v >. |
+        ( ( u e. 2o /\ v e. 2o ) /\ ( ph /\ u =/= v ) ) } TAp 2o ) $=
+      ( va vb vc wn cv c2o wcel wa wne wbr wral weq cop df-br anbi2d neeq2 wb
+      copab cxp wss wi wo wtap opabssxp a1i neeq1 opelopab2 bitrid ancoms necom
+      anbi2i bitrdi bitr4d biimpd rgen2 neirr intnan anidms mtbiri rgen 3adant3
+      jctil w3a simpr simplrr eqnetrrd necomd olcd neqned orcd simpl1 2onn elnn
+      wdc com sylancl simpl3 nndceq syl2anc exmiddc syl mpjaodan 3adant2 adantr
+      ibar adantl 3adant1 orbi12d mpbird sylbid ralrimivvva notbid simpll ancom
+      ex sylnib imnan sylibr mtod simplrl nnedc ralrimivva jca df-tap syl3anbrc
+      mpbid ) AGZGZCHZIJBHZIJKAXLXMLZKZKCBUAZIIUBUCZDHZXRXPMZGZDINZXREHZXPMZYBX
+      RXPMZUDZEINDINZKYCXRFHZXPMZYBYGXPMZUEZUDZFINEINDINZYCGZDEOZUDZEINDINZKIXP
+      UFXQXKXOCBIIUGUHXKYFYAYFXKYEDEIIXRIJZYBIJZKZYCYDYSYCAXRYBLZKZYDYCXRYBPXPJ
+      YSUUAXRYBXPQXOAXRXMLZKZUUACBXRYBIICDOXNUUBAXLXRXMUIRZBEOUUBYTAXMYBXRSRUJU
+      KZYDYBXRPXPJZYSUUAYBXRXPQYSUUFAYBXRLZKZUUAYRYQUUFUUHTXOAYBXMLZKZUUHCBYBXR
+      IICEOXNUUIAXLYBXMUIRZBDOZUUIUUGAXMXRYBSRUJULUUGYTAYBXRUMUNUOUKUPUQURUHXTD
+      IYQXSAXRXRLZKZUUMAXRUSUTXSXRXRPXPJZYQUUNXRXRXPQYQUUOUUNTXOUUCUUNCBXRXRIIU
+      UDUULUUBUUMAXMXRXRSRUJVAUKVBVCVEXKYLYPXKYKDEFIIIYQYRYGIJZVFZYKXKUUQYCUUAY
+      JYQYRYCUUATUUPUUEVDUUQUUAYJUUQUUAKZYJXRYGLZYBYGLZUEZUURDFOZUVAUVBGZUURUVB
+      KZUUTUUSUVDYGYBUVDXRYGYBUURUVBVGUUQAYTUVBVHVIVJVKUURUVCKZUUSUUTUVEXRYGUUR
+      UVCVGVLVMUURUVBVQZUVBUVCUEUURXRVRJZYGVRJZUVFUURYQIVRJZUVGYQYRUUPUUAVNVOXR
+      IVPZVSUURUUPUVIUVHYQYRUUPUUAVTVOYGIVPVSXRYGWAWBUVBWCWDWEUURYHUUSYIUUTUURY
+      HAUUSKZUUSUUQYHUVKTUUAYHXRYGPXPJZUUQUVKXRYGXPQYQUUPUVLUVKTYRXOUUCUVKCBXRY
+      GIIUUDBFOZUUBUUSAXMYGXRSRUJWFUKWGUUAUUSUVKTZUUQAUVNYTAUUSWHWGWIUPUURYIAUU
+      TKZUUTUUQYIUVOTUUAYIYBYGPXPJZUUQUVOYBYGXPQYRUUPUVPUVOTYQXOUUJUVOCBYBYGIIU
+      UKUVMUUIUUTAXMYGYBSRUJWJUKWGUUAUUTUVOTZUUQAUVQYTAUUTWHWGWIUPWKWLWRWMWIWNX
+      KYODEIIXKYSKZYMUUAGZYNYSYMUVSTXKYSYCUUAUUEWOWIUVRUVSYNUVRUVSKZYTGZYNUVTYT
+      XJXKYSUVSWPUVTYTAKZGYTXJUDUVTUUAUWBUVRUVSVGAYTWQWSYTAWTXAXBUVTYNVQZUWAYNT
+      UVTUVGYBVRJZUWCUVTYQUVIUVGXKYQYRUVSXCVOUVJVSUVTYRUVIUWDXKYQYRUVSVHVOYBIVP
+      VSXRYBWAWBXRYBXDWDXIWRWMXEXFDEFIXPXGXH $.
+  $}
+
+  ${
+    $d ph r u v $.
+    $( Lemma for ~ 2omotap .  (Contributed by Jim Kingdon, 6-Feb-2025.) $)
+    2omotaplemst $p |- ( ( E* r r TAp 2o /\ -. -. ph ) -> ph ) $=
+      ( vu vv c2o cv wtap wn wa c0 c1o wne wcel copab cvv wb opabssxp ssexi a1i
+      wceq wmo cop 2oneel 2omotaplemap adantl cxp 2onn elexi xpex simpl 2onetap
+      tapeq1 syl211anc mpbird eleqtrid 0lt2o 1lt2o neeq1 anbi2d neeq2 opelopab2
+      com mob mp2an sylib simpld ) EBFZGZBUAZAHHZIZAJKLZVKJKUBZCFZEMDFZEMIZAVNV
+      OLZIZICDNZMZAVLIZVKVMVPVQICDNZVSDCUCVKWBVSTZEVSGZVJWDVIADCUDUEVKWBOMZVSOM
+      ZVIEWBGZWCWDPWEVKWBEEUFZEEEVBUGUHZWIUIZVQCDEEQRSWFVKVSWHWJVRCDEEQRSVIVJUJ
+      WGVKDCUKSVHWGWDBWBVSOOEVGWBULEVGVSULVCUMUNUOJEMKEMVTWAPUPUQVRAJVOLZIWACDJ
+      KEEVNJTVQWKAVNJVOURUSVOKTWKVLAVOKJUTUSVAVDVEVF $.
+  $}
+
+  ${
+    $d r x $.
+    $( If there is at most one tight apartness on ` 2o ` , excluded middle
+       follows.  Based on online discussions by Tom de Jong, Andrew W Swan, and
+       Martin Escardo.  (Contributed by Jim Kingdon, 6-Feb-2025.) $)
+    2omotap $p |- ( E* r r TAp 2o -> EXMID ) $=
+      ( vx c2o cv wtap wmo c0 csn wceq wstab wss wn 2omotaplemst df-stab sylibr
+      wi ex adantr exmid1stab ) CADEAFZBTBDZGHZIZJZUAUBKTUCLLZUCPUDTUEUCUCAMQUC
+      NORS $.
   $}
 
 
@@ -150553,6 +150725,277 @@ $)
       OSVMWAWPXAVIXIVSVRVOVNDXKXLUQURVMVPAVRBVOVSVNWHWQWRWSWTWIUNVJ $.
   $}
 
+  $c /r $.
+
+  $( Extend class notation with ring division. $)
+  cdvr $a class /r $.
+
+  ${
+    $d r x y $.
+    $( Define ring division.  (Contributed by Mario Carneiro, 2-Jul-2014.) $)
+    df-dvr $a |- /r = ( r e. _V
+     |-> ( x e. ( Base ` r ) , y e. ( Unit ` r )
+         |-> ( x ( .r ` r ) ( ( invr ` r ) ` y ) ) ) ) $.
+  $}
+
+  ${
+    $d r x y B $.  $d r x y I $.  $d r x y R $.  $d r x y .x. $.  $d r x y U $.
+    $d x y X $.  $d x y Y $.  $d x y ph $.
+    dvrfvald.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    dvrfvald.t $e |- ( ph -> .x. = ( .r ` R ) ) $.
+    dvrfvald.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    dvrfvald.i $e |- ( ph -> I = ( invr ` R ) ) $.
+    dvrfvald.d $e |- ( ph -> ./ = ( /r ` R ) ) $.
+    dvrfvald.r $e |- ( ph -> R e. SRing ) $.
+    $( Division operation in a ring.  (Contributed by Mario Carneiro,
+       2-Jul-2014.)  (Revised by Mario Carneiro, 2-Dec-2014.)  (Proof shortened
+       by AV, 2-Mar-2024.) $)
+    dvrfvald $p |- ( ph
+        -> ./ = ( x e. B , y e. U |-> ( x .x. ( I ` y ) ) ) ) $=
+      ( cfv cbs cvv fveq2 eqidd vr cdvr cui cinvr cmulr cmpo df-dvr wceq fveq1d
+      cv oveq123d mpoeq123dv csrg elexd wcel wfn funfvex funfni sylancr unitssd
+      co basfn ssexd mpoexga syl2anc fvmptd3 3eqtr4d ) AFUBPBCFQPZFUCPZBUJZCUJZ
+      FUDPZPZFUEPZVAZUFZEBCDHVJVKIPZGVAZUFAUAFBCUAUJZQPZVSUCPZVJVKVSUDPZPZVSUEP
+      ZVAZUFVPRUBRBCUAUGVSFUHZBCVTWAWEVHVIVOVSFQSVSFUCSWFVJVJWCVMWDVNVSFUESWFVJ
+      TWFVKWBVLVSFUDSUIUKULAFUMOUNZAVHRUOZVIRUOVPRUOAQRUPFRUOWHVBWGWHRFQFQUQURU
+      SZAVIVHRWIAVHFVIAVHTAVITOUTVCBCVHVIVORRVDVEVFNABCDHVRVHVIVOJLAVJVJVQVMGVN
+      KAVJTAVKIVLMUIUKULVG $.
+  $}
+
+  ${
+    $d r x y B $.  $d r x y I $.  $d r x y R $.  $d r x y .x. $.  $d r x y U $.
+    $d x y X $.  $d x y Y $.  $d x y ph $.
+    dvrvald.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    dvrvald.t $e |- ( ph -> .x. = ( .r ` R ) ) $.
+    dvrvald.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    dvrvald.i $e |- ( ph -> I = ( invr ` R ) ) $.
+    dvrvald.d $e |- ( ph -> ./ = ( /r ` R ) ) $.
+    dvrvald.r $e |- ( ph -> R e. Ring ) $.
+    dvrvald.x $e |- ( ph -> X e. B ) $.
+    dvrvald.y $e |- ( ph -> Y e. U ) $.
+    $( Division operation in a ring.  (Contributed by Mario Carneiro,
+       2-Jul-2014.)  (Revised by Mario Carneiro, 2-Dec-2014.) $)
+    dvrvald $p |- ( ph -> ( X ./ Y ) = ( X .x. ( I ` Y ) ) ) $=
+      ( cfv wcel wceq vx vy cv co cbs crg csrg ringsrg syl dvrfvald simpl fveq2
+      adantl oveq12d cmulr oveqd eleqtrd eqidd cinvr cui eqid unitinvcl syl2anc
+      wa fveq1d 3eltr4d unitcld ringcl syl3anc eqeltrd ovmpod ) AUAUBHIBFUAUCZU
+      BUCZGRZEUDZHIGRZEUDZCDUERZAUAUBBCDEFGJKLMNADUFSZDUGSODUHUIZUJVLHTZVMITZVD
+      ZVOVQTAWCVLHVNVPEWAWBUKWBVNVPTWAVMIGULUMUNUMPQAVQHVPDUORZUDZVRAEWDHVPKUPA
+      VSHVRSVPVRSWEVRSOAHBVRPJUQAVRDFVPAVRURLVTAIDUSRZRZDUTRZVPFAVSIWHSWGWHSOAI
+      FWHQLUQDWHWFIWHVAWFVAVBVCAIGWFMVELVFVGVRDWDHVPVRVAWDVAVHVIVJVK $.
+  $}
+
+  ${
+    dvrcl.b $e |- B = ( Base ` R ) $.
+    dvrcl.o $e |- U = ( Unit ` R ) $.
+    dvrcl.d $e |- ./ = ( /r ` R ) $.
+    $( Closure of division operation.  (Contributed by Mario Carneiro,
+       2-Jul-2014.) $)
+    dvrcl $p |- ( ( R e. Ring /\ X e. B /\ Y e. U ) -> ( X ./ Y ) e. B ) $=
+      ( crg wcel w3a co cinvr cfv cmulr wceq a1i eqidd eqid cbs cui simp1 simp2
+      cdvr simp3 dvrvald ringinvcl 3adant2 ringcl syld3an3 eqeltrd ) CJKZEAKZFD
+      KZLZEFBMEFCNOZOZCPOZMZAUPABCUSDUQEFACUAOQUPGRUPUSSDCUBOQUPHRUPUQSBCUEOQUP
+      IRUMUNUOUCUMUNUOUDUMUNUOUFUGUMUNUOURAKZUTAKUMUOVAUNACDUQFHUQTGUHUIACUSEUR
+      GUSTUJUKUL $.
+  $}
+
+  ${
+    unitdvcl.o $e |- U = ( Unit ` R ) $.
+    unitdvcl.d $e |- ./ = ( /r ` R ) $.
+    $( The units are closed under division.  (Contributed by Mario Carneiro,
+       2-Jul-2014.) $)
+    unitdvcl $p |- ( ( R e. Ring /\ X e. U /\ Y e. U ) -> ( X ./ Y ) e. U ) $=
+      ( crg wcel w3a co cinvr cfv cmulr cbs eqidd cui wceq a1i eqid simp1 simp2
+      cdvr ringsrg 3ad2ant1 unitcld dvrvald unitinvcl 3adant2 unitmulcl eqeltrd
+      csrg simp3 syld3an3 ) BHIZDCIZECIZJZDEAKDEBLMZMZBNMZKZCURBOMZABVACUSDEURV
+      CPZURVAPCBQMRURFSZURUSPABUCMRURGSUOUPUQUAURVCBCDVDVEUOUPBULIUQBUDUEUOUPUQ
+      UBUFUOUPUQUMUGUOUPUQUTCIZVBCIUOUQVFUPBCUSEFUSTUHUIBVACDUTFVATUJUNUK $.
+
+    dvrid.o $e |- .1. = ( 1r ` R ) $.
+    $( A ring element divided by itself is the ring unity.  ( ~ dividap
+       analog.)  (Contributed by Mario Carneiro, 18-Jun-2015.) $)
+    dvrid $p |- ( ( R e. Ring /\ X e. U ) -> ( X ./ X ) = .1. ) $=
+      ( crg wcel wa co cinvr cfv cmulr cbs eqidd wceq a1i eqid cui cdvr ringsrg
+      simpl csrg adantr simpr unitcld dvrvald unitrinv eqtrd ) BIJZECJZKZEEALEE
+      BMNZNBONZLDUNBPNZABUPCUOEEUNUQQZUNUPQCBUANRUNFSZUNUOQABUBNRUNGSULUMUDUNUQ
+      BCEURUSULBUEJUMBUCUFULUMUGZUHUTUIBUPCDUOEFUOTUPTHUJUK $.
+  $}
+
+  ${
+    dvr1.b $e |- B = ( Base ` R ) $.
+    dvr1.d $e |- ./ = ( /r ` R ) $.
+    dvr1.o $e |- .1. = ( 1r ` R ) $.
+    $( A ring element divided by the ring unity is itself.  ( ~ div1 analog.)
+       (Contributed by Mario Carneiro, 18-Jun-2015.) $)
+    dvr1 $p |- ( ( R e. Ring /\ X e. B ) -> ( X ./ .1. ) = X ) $=
+      ( crg wcel wa co cinvr cfv cmulr wceq a1i eqidd eqid adantr cui cbs simpl
+      cdvr simpr 1unit dvrvald 1rinv oveq2d ringridm 3eqtrd ) CIJZEAJZKZEDBLEDC
+      MNZNZCONZLEDUQLEUNABCUQCUANZUOEDACUBNPUNFQUNUQRUNURRUNUORBCUDNPUNGQULUMUC
+      ULUMUEULDURJUMCURDURSHUFTUGUNUPDEUQULUPDPUMCDUOUOSHUHTUIACUQDEFUQSHUJUK
+      $.
+  $}
+
+  ${
+    dvrass.b $e |- B = ( Base ` R ) $.
+    dvrass.o $e |- U = ( Unit ` R ) $.
+    dvrass.d $e |- ./ = ( /r ` R ) $.
+    dvrass.t $e |- .x. = ( .r ` R ) $.
+    $( An associative law for division.  ( ~ divassap analog.)  (Contributed by
+       Mario Carneiro, 4-Dec-2014.) $)
+    dvrass $p |- ( ( R e. Ring /\ ( X e. B /\ Y e. B /\ Z e. U ) ) ->
+      ( ( X .x. Y ) ./ Z ) = ( X .x. ( Y ./ Z ) ) ) $=
+      ( crg wcel w3a co cfv wceq a1i dvrvald wa cinvr simpr1 simpr2 simpr3 eqid
+      simpl ringinvcl syldan ringass syl13anc cbs cmulr ringcl 3adant3r3 oveq2d
+      cui cdvr 3eqtr4d ) CMNZFANZGANZHENZOZUAZFGDPZHCUBQZQZDPZFGVHDPZDPZVFHBPFG
+      HBPZDPVEUTVAVBVHANZVIVKRUTVDUGZUTVAVBVCUCUTVAVBVCUDZUTVDVCVMUTVAVBVCUEZAC
+      EVGHJVGUFZIUHUIACDFGVHILUJUKVEABCDEVGVFHACULQRVEISZDCUMQRVELSZECUQQRVEJSZ
+      VGVGRVEVQSZBCURQRVEKSZVNUTVAVBVFANVCACDFGILUNUOVPTVEVLVJFDVEABCDEVGGHVRVS
+      VTWAWBVNVOVPTUPUS $.
+
+    $( A cancellation law for division.  ( ~ divcanap1 analog.)  (Contributed
+       by Mario Carneiro, 2-Jul-2014.)  (Revised by Mario Carneiro,
+       2-Dec-2014.) $)
+    dvrcan1 $p |- ( ( R e. Ring /\ X e. B /\ Y e. U ) ->
+      ( ( X ./ Y ) .x. Y ) = X ) $=
+      ( crg wcel w3a co cfv wceq a1i eqid 3adant2 cinvr cmulr simp1 simp2 simp3
+      cbs cui dvrvald oveq1d ringinvcl ringsrg syl unitcld ringass syl13anc cur
+      cdvr csrg unitlinv oveq2d ringridm 3adant3 eqtrd 3eqtrd ) CLMZFAMZGEMZNZF
+      GBOZGDOFGCUAPZPZDOZGDOZFVKGDOZDOZFVHVIVLGDVHABCDEVJFGACUFPQVHHRZDCUBPQVHK
+      RECUGPQVHIRZVJVJQVHVJSZRBCUQPQVHJRVEVFVGUCZVEVFVGUDZVEVFVGUEZUHUIVHVEVFVK
+      AMZGAMVMVOQVSVTVEVGWBVFACEVJGIVRHUJTVHACEGVPVQVHVECURMVSCUKULWAUMACDFVKGH
+      KUNUOVHVOFCUPPZDOZFVHVNWCFDVEVGVNWCQVFCDEWCVJGIVRKWCSZUSTUTVEVFWDFQVGACDW
+      CFHKWEVAVBVCVD $.
+
+    $( A cancellation law for division.  ( ~ divcanap3 analog.)  (Contributed
+       by Mario Carneiro, 2-Jul-2014.)  (Revised by Mario Carneiro,
+       18-Jun-2015.) $)
+    dvrcan3 $p |- ( ( R e. Ring /\ X e. B /\ Y e. U ) ->
+      ( ( X .x. Y ) ./ Y ) = X ) $=
+      ( crg wcel w3a co cur cfv wceq simp1 a1i simp2 cbs cui csrg ringsrg simp3
+      unitcld dvrass syl13anc eqid dvrid 3adant2 oveq2d ringridm 3adant3 3eqtrd
+      syl ) CLMZFAMZGEMZNZFGDOGBOZFGGBOZDOZFCPQZDOZFVAURUSGAMUTVBVDRURUSUTSZURU
+      SUTUAVAACEGACUBQRVAHTECUCQRVAITVAURCUDMVGCUEUQURUSUTUFZUGVHABCDEFGGHIJKUH
+      UIVAVCVEFDURUTVCVERUSBCEVEGIJVEUJZUKULUMURUSVFFRUTACDVEFHKVIUNUOUP $.
+  $}
+
+  ${
+    dvreq1.b $e |- B = ( Base ` R ) $.
+    dvreq1.o $e |- U = ( Unit ` R ) $.
+    dvreq1.d $e |- ./ = ( /r ` R ) $.
+    dvreq1.t $e |- .1. = ( 1r ` R ) $.
+    $( Equality in terms of ratio equal to ring unity.  ( ~ diveqap1 analog.)
+       (Contributed by Mario Carneiro, 28-Apr-2016.) $)
+    dvreq1 $p |- ( ( R e. Ring /\ X e. B /\ Y e. U ) ->
+                   ( ( X ./ Y ) = .1. <-> X = Y ) ) $=
+      ( crg wcel w3a co wceq cfv oveq1 a1i 3adant2 eqid dvrcan1 wa cbs cui csrg
+      cmulr ringsrg adantr simpr unitcld ringlidm syldan eqeq12d imbitrid dvrid
+      eqeq1d syl5ibrcom impbid ) CLMZFAMZGDMZNZFGBOZEPZFGPZVEVDGCUGQZOZEGVGOZPV
+      CVFVDEGVGRVCVHFVIGABCVGDFGHIJVGUAZUBUTVBVIGPZVAUTVBGAMVKUTVBUCZACDGACUDQP
+      VLHSDCUEQPVLISUTCUFMVBCUHUIUTVBUJUKACVGEGHVJKULUMTUNUOVCVEVFGGBOZEPZUTVBV
+      NVABCDEGIJKUPTVFVDVMEFGGBRUQURUS $.
+  $}
+
+  ${
+    ringinvdv.b $e |- B = ( Base ` R ) $.
+    ringinvdv.u $e |- U = ( Unit ` R ) $.
+    ringinvdv.d $e |- ./ = ( /r ` R ) $.
+    ringinvdv.o $e |- .1. = ( 1r ` R ) $.
+    ringinvdv.i $e |- I = ( invr ` R ) $.
+    $( Write the inverse function in terms of division.  (Contributed by Mario
+       Carneiro, 2-Jul-2014.) $)
+    ringinvdv $p |- ( ( R e. Ring /\ X e. U ) -> ( I ` X ) = ( .1. ./ X ) ) $=
+      ( crg wcel wa co cfv cmulr wceq a1i eqid cinvr cdvr simpl ringidcl adantr
+      cbs cui simpr dvrvald ringinvcl ringlidm syldan eqtr2d ) CMNZGDNZOZEGBPEG
+      FQZCRQZPZURUQABCUSDFEGACUGQSUQHTUSUSSUQUSUAZTDCUHQSUQITFCUBQSUQLTBCUCQSUQ
+      JTUOUPUDUOEANUPACEHKUEUFUOUPUIUJUOUPURANUTURSACDFGILHUKACUSEURHVAKULUMUN
+      $.
+  $}
+
+  ${
+    $d x y B $.  $d x y z K $.  $d x y z L $.  $d x y z ph $.
+    rngidpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    rngidpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    rngidpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    rngidpropdg.k $e |- ( ph -> K e. V ) $.
+    rngidpropdg.l $e |- ( ph -> L e. W ) $.
+    $( The ring unity depends only on the ring's base set and multiplication
+       operation.  (Contributed by Mario Carneiro, 26-Dec-2014.) $)
+    rngidpropdg $p |- ( ph -> ( 1r ` K ) = ( 1r ` L ) ) $=
+      ( cfv cvv cbs wcel wceq eqid syl cmgp c0g mgpbasg eqtrd mgpex cv wa cmulr
+      cur co cplusg mgpplusgg oveqdr 3eqtr3d grpidpropdg ringidvalg 3eqtr4d ) A
+      EUANZUBNZFUANZUBNZEUINZFUINZABCDURUTOOADEPNZURPNZIAEGQZVDVERLVDEURGURSZVD
+      SUCTUDADFPNZUTPNZJAFHQZVHVIRMVHFUTHUTSZVHSUCTUDAVFUROQLEURGVGUETAVJUTOQMF
+      UTHVKUETABUFZDQCUFZDQUGZUGVLVMEUHNZUJVLVMFUHNZUJVLVMURUKNZUJVLVMUTUKNZUJK
+      AVNBCVOVQAVFVOVQRLEVOURGVGVOSULTUMAVNBCVPVRAVJVPVRRMFVPUTHVKVPSULTUMUNUOA
+      VFVBUSRLEVBURGVGVBSUPTAVJVCVARMFVCUTHVKVCSUPTUQ $.
+  $}
+
+  ${
+    $d x y B $.  $d x y z K $.  $d x y z L $.  $d x y z ph $.
+    dvdsrpropdg.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    dvdsrpropdg.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    dvdsrpropdg.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    dvdsrpropdg.k $e |- ( ph -> K e. SRing ) $.
+    dvdsrpropdg.l $e |- ( ph -> L e. SRing ) $.
+    $( The divisibility relation depends only on the ring's base set and
+       multiplication operation.  (Contributed by Mario Carneiro,
+       26-Dec-2014.) $)
+    dvdsrpropdg $p |- ( ph -> ( ||r ` K ) = ( ||r ` L ) ) $=
+      ( vz cv cbs cfv wcel wceq wrex wa eqidd cmulr co copab cdsr anassrs an32s
+      eqeq1d rexbidva pm5.32da eleq2d rexeqdv anbi12d 3bitr3d dvdsrvald 3eqtr4d
+      wb opabbidv ) ACMZENOZPZBMZUREUAOZUBZLMZQZBUSRZSZCLUCURFNOZPZVAURFUAOZUBZ
+      VDQZBVHRZSZCLUCEUDOZFUDOZAVGVNCLAURDPZVEBDRZSVQVLBDRZSVGVNAVQVRVSAVQSVEVL
+      BDAVADPZVQVEVLUPAVTSVQSVCVKVDAVTVQVCVKQIUEUGUFUHUIAVQUTVRVFADUSURGUJAVEBD
+      USGUKULAVQVIVSVMADVHURHUJAVLBDVHHUKULUMUQACLBUSVOEVBAUSTAVOTJAVBTUNACLBVH
+      VPFVJAVHTAVPTKAVJTUNUO $.
+  $}
+
+  ${
+    $d x y B $.  $d x y z K $.  $d x y z L $.  $d x y z ph $.
+    unitpropdg.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    unitpropdg.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    unitpropdg.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    unitpropdg.k $e |- ( ph -> K e. Ring ) $.
+    unitpropdg.l $e |- ( ph -> L e. Ring ) $.
+    $( The set of units depends only on the ring's base set and multiplication
+       operation.  (Contributed by Mario Carneiro, 26-Dec-2014.) $)
+    unitpropdg $p |- ( ph -> ( Unit ` K ) = ( Unit ` L ) ) $=
+      ( cfv cdsr wbr wa wcel crg wceq eqid eqidd vz cv coppr rngidpropdg breq2d
+      cui cur anbi12d ringsrg syl dvdsrpropdg breqd cbs opprbasg eqtrd cmulr co
+      csrg ancom2s adantr simprl simprr opprmulg syl3anc 3eqtr4d opprring bitrd
+      3syl isunitd 3bitr4d eqrdv ) AUAEUFLZFUFLZAUAUBZEUGLZEMLZNZVNVOEUCLZMLZNZ
+      OZVNFUGLZFMLZNZVNWBFUCLZMLZNZOZVNVLPVNVMPAWAVNWBVPNZVNWBVSNZOWHAVQWIVTWJA
+      VOWBVNVPABCDEFQQGHIJKUDZUEAVOWBVNVSWKUEUHAWIWDWJWGAVPWCVNWBABCDEFGHIAEQPZ
+      EURPJEUIUJZAFQPZFURPKFUIUJZUKULAVSWFVNWBACBDVRWEADEUMLZVRUMLZGAWLWPWQRJWP
+      EVRQVRSZWPSZUNUJUOADFUMLZWEUMLZHAWNWTXARKWTFWEQWESZWTSZUNUJUOACUBZDPZBUBZ
+      DPZOZOZXFXDEUPLZUQZXFXDFUPLZUQZXDXFVRUPLZUQZXDXFWEUPLZUQZAXGXEXKXMRIUSXIW
+      LXEXGXOXKRAWLXHJUTAXEXGVAZAXEXGVBZWPEXNXJDVRQDXDXFWSXJSWRXNSVCVDXIWNXEXGX
+      QXMRAWNXHKUTXRXSWTFXPXLDWEQDXDXFXCXLSXBXPSVCVDVEAWLVRQPVRURPJEVRWRVFVRUIV
+      HAWNWEQPWEURPKFWEXBVFWEUIVHUKULUHVGAVPEVRVLVOVSVNAVLTAVOTAVPTAVRTAVSTWMVI
+      AWCFWEVMWBWFVNAVMTAWBTAWCTAWETAWFTWOVIVJVK $.
+
+    $( The ring inverse function depends only on the ring's base set and
+       multiplication operation.  (Contributed by Mario Carneiro, 26-Dec-2014.)
+       (Revised by Mario Carneiro, 5-Oct-2015.) $)
+    invrpropdg $p |- ( ph -> ( invr ` K ) = ( invr ` L ) ) $=
+      ( cfv co cvv eqidd crg wcel syl cbs cmnd cmgp cress cminusg cinvr ringsrg
+      cui csrg unitgrpbasd unitpropdg eqtrd eqid ringmgp wfn basfn elexd funfni
+      funfvex sylancr eqeltrd unitssd ssexd ressex syl2anc eqeltrrd cv wa cmulr
+      cplusg wceq sselda anim12dan syldan mgpplusgg oveqdr 3eqtr3d grpinvpropdg
+      ressplusgd invrfvald 3eqtr4d ) AEUALZEUFLZUBMZUCLFUALZFUFLZUBMZUCLEUDLZFU
+      DLZABCWAWBWENNAEWAWBAWAOZAWBOZAEPQZEUGQJEUERZUHAWAWDWESLABCDEFGHIJKUIZAFW
+      DWEAWDOZAWEOZAFPQZFUGQKFUERUHUJAVTTQZWANQWBNQAWJWPJEVTVTUKZULRZAWADNADESL
+      ZNGASNUMENQWSNQZUNAEPJUOWTNESESUQUPURUSADEWAGWHWKUTZVAZWAVTTNVBVCAWCTQZWD
+      NQWENQAWOXCKFWCWCUKZULRZAWAWDNWLXBVDZWDWCTNVBVCABVEZWAQZCVEZWAQZVFZVFXGXI
+      EVGLZMZXGXIFVGLZMZXGXIWBVHLZMXGXIWEVHLZMAXKXGDQZXIDQZVFXMXOVIAXHXRXJXSAWA
+      DXGXAVJAWADXIXAVJVKIVLAXKBCXLXPAWAXLVTWBNTWIAWJXLVTVHLVIJEXLVTPWQXLUKVMRX
+      BWRVQVNAXKBCXNXQAWDXNWCWENTWNAWOXNWCVHLVIKFXNWCPXDXNUKVMRXFXEVQVNVOVPAEWA
+      WBWFWHWIAWFOJVRAFWDWEWGWMWNAWGOKVRVS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -166097,6 +166540,9 @@ $)
        <td> ~ df-seqfrec </td>
        <td> </td><td>Yes</td><td> ~ seq3-1 , ~ fsum3 </td></tr>
 
+       <tr><td>tap</td><td>tight apartness</td><td> ~ df-tap </td>
+       <td> </td><td>Yes</td><td> ~ df-tap </td></tr>
+
        </table>
        </HTML>
 
@@ -167229,6 +167675,9 @@ htmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
 htmldef "CCHOICE" as "<SMALL>CCHOICE</SMALL>";
   althtmldef "CCHOICE" as "<SMALL>CCHOICE</SMALL>";
   latexdef "CCHOICE" as "\mathrm{CCHOICE}";
+htmldef "TAp" as ' TAp ';
+  althtmldef "TAp" as ' TAp ';
+  latexdef "TAp" as "\mathrm{TAp}";
 htmldef "N." as "<IMG SRC='caln.gif' WIDTH=17 HEIGHT=19 ALT=' N.' TITLE='N.'>";
   althtmldef "N." as '<I><B>N</B></I>';
   latexdef "N." as "\mathcal{N}";
@@ -167820,6 +168269,9 @@ htmldef "invr" as
     "<IMG SRC='_invr.gif' WIDTH=23 HEIGHT=19 ALT=' invr' TITLE='invr'>";
   althtmldef "invr" as "inv<SUB>r</SUB>";
   latexdef "invr" as "\mathrm{inv}_r";
+htmldef "/r" as "/<SUB>r</SUB>";
+  althtmldef "/r" as "/<SUB>r</SUB>";
+  latexdef "/r" as "/_r";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
@@ -171210,28 +171662,6 @@ $)
       KNMZLXAWODKNXMXPVRVSVTWAWQWTIZWPWRXRXKWPWRIXRWPXKWNWPWTVFXRXDWOWBGZWPXKTX
       RBKNMKWONMXDXRBDKNWNXEWPWTXHQWQWSLWCVRXRWOKXRLXQWQWSLWDVSWEZRBKWOVKSXRXSK
       WBGZXOYAXRVLKWFWGXRXQXSYATXTWOKWHWIWJBWOCWKSVOXLWEWLWM $.
-  $}
-
-  ${
-    $d ph x y $.
-    exmid1stab.x $e |- ( ( ph /\ x C_ { (/) } ) -> STAB x = { (/) } ) $.
-    $( If any proposition is stable, excluded middle follows.  We are thinking
-       of ` x ` as a proposition and ` x = { (/) } ` as "x is true".
-       (Contributed by Jim Kingdon, 28-Nov-2023.) $)
-    exmid1stab $p |- ( ph -> EXMID ) $=
-      ( vy cv c0 wss wcel wi wal wa wn wo cdif cun wceq eqtrdi ex adantl wstab
-      csn wdc wem 0ex snid nnexmid uneq1 undifabs a1i wne df-ne pwntru sylan2br
-      difeq2d dif0 uneq12d uncom un0 eqtri jaod con3d mtoi difss biimpi alrimiv
-      unss mpan2 cvv p0ex ssex sseq1 eqeq1 stbid imbi12d spcgv 3syl mpd df-stab
-      mpan9 sylib eleqtrrid elun eldifn orim2i syl df-dc sylibr df-exmid ) ADEZ
-      FUAZGZFWIHZUBZIZDJUCAWNDAWKWMAWKKZWLWLLZMZWMWOWLFWJWINZHZMZWQWOFWIWROZHWT
-      WOFWJXAFUDUEWOXAWJPZLZLZXBWKXDAWKXCWIWJPZXELZMZLXEUFWKXGXBWKXEXBXFXEXBIWK
-      XEXAWJWROWJWIWJWRUGWJWIUHQUIWKXFXBWKXFKZXAFWJOZWJXHWIFWRWJXFWKWIWJUJWIFPW
-      IWJUKWIULUMZXHWRWJFNWJXHWIFWJXJUNWJUOQUPXIWJFOWJFWJUQWJURUSQRUTVAVBSWOXBT
-      ZXDXBIWOXAWJGZXKWKXLAWKWRWJGZXLWJWIVCWKXMKXLWIWRWJVFVDVGZSABEZWJGZXOWJPZT
-      ZIZBJZWKXLXKIZAXSBAXPXRCRVEWKXLXAVHHXTYAIXNXAWJVIVJXSYABXAVHXOXAPZXPXLXRX
-      KXOXAWJVKYBXQXBXOXAWJVLVMVNVOVPVSVQXBVRVTVQWAFWIWRWBVTWSWPWLFWJWIWCWDWEWL
-      WFWGRVEDWHWG $.
   $}
 
   ${
