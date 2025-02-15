@@ -87,6 +87,18 @@ DONE:
 Date      Old       New         Notes
 15-Feb-25 grpinvcld ---         Moved from SN's mathbox to main set.mm
 15-Feb-25 fnfvelrnd ---         Moved from GS's mathbox to main set.mm
+10-Feb-25 ---       ---         Moved surreal addition theorems
+                                from SF's mathbox to main set.mm
+10-Feb-25 onunel    ---         Moved from SF's mathbox to main set.mm
+ 9-Feb-25 ---       ---         Moved natural ordinal addition theorems
+                                from SF's mathbox to main set.mm
+ 9-Feb-25 imaeqexov ---         Moved from SF's mathbox to main set.mm
+ 9-Feb-25 imaeqalov ---         Moved from SF's mathbox to main set.mm
+ 9-Feb-25 imaeqsexv ---         Moved from SF's mathbox to main set.mm
+ 9-Feb-25 imaeqsalv ---         Moved from SF's mathbox to main set.mm
+ 7-Feb-25 eluzaddi  [same]      removed extra hypothesis
+ 7-Feb-25 ---       ---         Moved surreal induction/recursion theorems
+                                from SF's mathbox to main set.mm
  7-Feb-25 syl5ib    imbitrid
  3-Feb-25 ---       ---         Moved cross product induction theorems
                                 from SF's mathbox to main set.mm
