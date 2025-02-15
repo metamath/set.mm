@@ -91,8 +91,7 @@ Date      Old       New         Notes
 15-Feb-25 abeq2i    eqabi
 15-Feb-25 abeq2d    eqabd
 15-Feb-25 abeq2w    eqabw
-15-Feb-25 abeq2impr eqab1r      Reverse direction of abeq
-15-Feb-25 abeq1     eqabc       Commuted form of abeqb
+15-Feb-25 abeq1     eqabc       Commuted form of eqab
 15-Feb-25 abeq2     eqab        Basic tautological form
 10-Feb-25 ---       ---         Moved surreal addition theorems
                                 from SF's mathbox to main set.mm
