@@ -72431,6 +72431,21 @@ $)
   $}
 
   ${
+    $d A x y z $.  $d R x y z $.
+    $( Tight apartness in terms of apartness.  (Contributed by Jim Kingdon,
+       16-Feb-2025.) $)
+    dftapap $p |- ( R TAp A <-> ( R Ap A /\
+        A. x e. A A. y e. A ( -. x R y -> x = y ) ) ) $=
+      ( vz wtap wap cv wbr wn weq wi wral cxp biimpi simpld simprd jca adantr
+      wa wss wo df-tap simp1d simp2d simp3d df-pap syl21anbrc simprrd syl3anbrc
+      w3a anim1i impbii ) CDFZCDGZAHZBHZDIZJABKLBCMACMZTZUNUOUSUNDCCNUAZUPUPDIJ
+      ACMZURUQUPDILBCMACMZURUPEHZDIUQVDDIUBLECMBCMACMZTZUOUNVAVBVCTZVEUSTZUNVAV
+      GVHUKABECDUCZOZUDUNVBVCUNVAVGVHVJUEZPUNVCVEUNVBVCVKQUNVEUSUNVAVGVHVJUFZPR
+      ABECDUGZUHUNVEUSVLQRUTVAVGVHUNUOVAUSUOVAVBUOVAVBTZVFUOVNVFTVMOZPZPSUOVGUS
+      UOVBVCUOVAVBVPQUOVCVEUOVNVFVOQPRSUOVEUSUOVNVCVEVOUIULVIUJUM $.
+  $}
+
+  ${
     $d A a b c u v $.  $d A a b c x y $.
     $( Negated equality on a set with decidable equality is a tight apartness.
        (Contributed by Jim Kingdon, 5-Feb-2025.) $)
