@@ -20257,7 +20257,7 @@ $)
      a setvar variable ` x ` for a class variable: all sets are classes by
      ~ cvjust (but not necessarily vice-versa).  For a full description of how
      classes are introduced and how to recover the primitive language, see the
-     discussion in Quine (and under ~ abeq2 for a quick overview).
+     discussion in Quine (and under ~ eqab for a quick overview).
 
      Because class variables can be substituted with compound expressions and
      setvar variables cannot, it is often useful to convert a theorem
@@ -20343,7 +20343,7 @@ $)
        definition.  This also makes some proofs shorter and probably easier to
        read, without the constant switching between two kinds of equality.
 
-       See also comments under ~ df-clab , ~ df-clel , and ~ abeq2 .
+       See also comments under ~ df-clab , ~ df-clel , and ~ eqab .
 
        In the form of ~ dfcleq , this is called the "axiom of extensionality"
        by [Levy] p. 338, who treats the theory of classes as an extralogical
@@ -21367,7 +21367,7 @@ $)
        equivalent formulation cplem2 in set.mm.  For more information on class
        variables, see Quine pp. 15-21 and/or Takeuti and Zaring pp. 10-13.
        (Contributed by NM, 5-Aug-1993.) $)
-    abeq2 $p |- ( A = { x | ph } <-> A. x ( x e. A <-> ph ) ) $=
+    eqab $p |- ( A = { x | ph } <-> A. x ( x e. A <-> ph ) ) $=
       ( vy cab wceq cv wcel wb wal ax-17 hbab1 cleqh abid bibi2i albii bitri )
       CABEZFBGZCHZSRHZIZBJTAIZBJBDCRDGCHBKABDLMUBUCBUAATABNOPQ $.
   $}
@@ -21376,8 +21376,8 @@ $)
     $d x A $.
     $( Equality of a class variable and a class abstraction.  (Contributed by
        NM, 20-Aug-1993.) $)
-    abeq1 $p |- ( { x | ph } = A <-> A. x ( ph <-> x e. A ) ) $=
-      ( cab wceq cv wcel wb wal abeq2 eqcom bicom albii 3bitr4i ) CABDZEBFCGZAH
+    eqabc $p |- ( { x | ph } = A <-> A. x ( ph <-> x e. A ) ) $=
+      ( cab wceq cv wcel wb wal eqab eqcom bicom albii 3bitr4i ) CABDZEBFCGZAH
       ZBIOCEAPHZBIABCJOCKRQBAPLMN $.
   $}
 
@@ -21385,7 +21385,7 @@ $)
     abeqi.1 $e |- A = { x | ph } $.
     $( Equality of a class variable and a class abstraction (inference rule).
        (Contributed by NM, 3-Apr-1996.) $)
-    abeq2i $p |- ( x e. A <-> ph ) $=
+    eqabi $p |- ( x e. A <-> ph ) $=
       ( cv wcel cab eleq2i abid bitri ) BEZCFKABGZFACLKDHABIJ $.
   $}
 
@@ -21393,7 +21393,7 @@ $)
     abeqri.1 $e |- { x | ph } = A $.
     $( Equality of a class variable and a class abstraction (inference rule).
        (Contributed by NM, 31-Jul-1994.) $)
-    abeq1i $p |- ( ph <-> x e. A ) $=
+    eqabci $p |- ( ph <-> x e. A ) $=
       ( cv cab wcel abid eleq2i bitr3i ) ABEZABFZGKCGABHLCKDIJ $.
   $}
 
@@ -21401,7 +21401,7 @@ $)
     abeqd.1 $e |- ( ph -> A = { x | ps } ) $.
     $( Equality of a class variable and a class abstraction (deduction).
        (Contributed by NM, 16-Nov-1995.) $)
-    abeq2d $p |- ( ph -> ( x e. A <-> ps ) ) $=
+    eqabd $p |- ( ph -> ( x e. A <-> ps ) ) $=
       ( cv wcel cab eleq2d abid syl6bb ) ACFZDGLBCHZGBADMLEIBCJK $.
   $}
 
@@ -21421,7 +21421,7 @@ $)
     $( Equality of a class variable and a class abstraction (inference rule).
        (Contributed by NM, 5-Aug-1993.) $)
     abbi2i $p |- A = { x | ph } $=
-      ( cab wceq cv wcel wb abeq2 mpgbir ) CABEFBGCHAIBABCJDK $.
+      ( cab wceq cv wcel wb eqab mpgbir ) CABEFBGCHAIBABCJDK $.
   $}
 
   ${
@@ -21460,7 +21460,7 @@ $)
     $( Deduction from a wff to a class abstraction.  (Contributed by NM,
        9-Jul-1994.) $)
     abbi2dv $p |- ( ph -> A = { x | ps } ) $=
-      ( cv wcel wb wal cab wceq alrimiv abeq2 sylibr ) ACFDGBHZCIDBCJKAOCELBCDM
+      ( cv wcel wb wal cab wceq alrimiv eqab sylibr ) ACFDGBHZCIDBCJKAOCELBCDM
       N $.
   $}
 
@@ -21470,7 +21470,7 @@ $)
     $( Deduction from a wff to a class abstraction.  (Contributed by NM,
        9-Jul-1994.) $)
     abbi1dv $p |- ( ph -> { x | ps } = A ) $=
-      ( cv wcel wb wal cab wceq alrimiv abeq1 sylibr ) ABCFDGHZCIBCJDKAOCELBCDM
+      ( cv wcel wb wal cab wceq alrimiv eqabc sylibr ) ABCFDGHZCIBCJDKAOCELBCDM
       N $.
   $}
 
@@ -21521,7 +21521,7 @@ $)
        17-Jan-2006.) $)
     clabel $p |- ( { x | ph } e. A <->
                  E. y ( y e. A /\ A. x ( x e. y <-> ph ) ) ) $=
-      ( cab wcel cv wceq wa wex wb wal df-clel abeq2 anbi2ci exbii bitri ) ABEZ
+      ( cab wcel cv wceq wa wex wb wal df-clel eqab anbi2ci exbii bitri ) ABEZ
       DFCGZRHZSDFZIZCJUABGSFAKBLZIZCJCRDMUBUDCTUCUAABSNOPQ $.
   $}
 
@@ -21873,7 +21873,7 @@ $)
        (Contributed by NM, 27-Sep-2003.)  (Revised by Mario Carneiro,
        7-Oct-2016.) $)
     sbabel $p |- ( [ y / x ] { z | ph } e. A <-> { z | [ y / x ] ph } e. A ) $=
-      ( vv cv cab wceq wcel wa wex wsb wb wal sbf abeq2 sbbii 3bitr4i sbex sban
+      ( vv cv cab wceq wcel wa wex wsb wb wal sbf eqab sbbii 3bitr4i sbex sban
       nfv sbrbis sbalv nfcri anbi12i bitri exbii df-clel ) GHZADIZJZUKEKZLZGMZB
       CNZUKABCNZDIZJZUNLZGMZULEKZBCNUSEKUQUOBCNZGMVBUOGBCUAVDVAGVDUMBCNZUNBCNZL
       VAUMUNBCUBVEUTVFUNDHUKKZAOZDPZBCNVGUROZDPVEUTVHVJBCDVGVGABCVGBCVGBUCQUDUE
@@ -24063,14 +24063,14 @@ $)
   $( An "identity" law of concretion for restricted abstraction.  Special case
      of Definition 2.1 of [Quine] p. 16.  (Contributed by NM, 9-Oct-2003.) $)
   rabid $p |- ( x e. { x e. A | ph } <-> ( x e. A /\ ph ) ) $=
-    ( cv wcel wa crab df-rab abeq2i ) BDCEAFBABCGABCHI $.
+    ( cv wcel wa crab df-rab eqabi ) BDCEAFBABCGABCHI $.
 
   ${
     $d x A $.
     $( An "identity" law for restricted class abstraction.  (Contributed by NM,
        9-Oct-2003.)  (Proof shortened by Andrew Salmon, 30-May-2011.) $)
     rabid2 $p |- ( A = { x e. A | ph } <-> A. x e. A ph ) $=
-      ( cv wcel wa cab wceq wi wal crab abeq2 pm4.71 albii bitr4i df-rab eqeq2i
+      ( cv wcel wa cab wceq wi wal crab eqab pm4.71 albii bitr4i df-rab eqeq2i
       wral wb df-ral 3bitr4i ) CBDCEZAFZBGZHZUBAIZBJZCABCKZHABCRUEUBUCSZBJUGUCB
       CLUFUIBUBAMNOUHUDCABCPQABCTUA $.
   $}
@@ -24633,7 +24633,7 @@ $)
     rabeqi.1 $e |- A = { x e. B | ph } $.
     $( Inference rule from equality of a class variable and a restricted class
        abstraction.  (Contributed by NM, 16-Feb-2004.) $)
-    rabeq2i $p |- ( x e. A <-> ( x e. B /\ ph ) ) $=
+    reqabi $p |- ( x e. A <-> ( x e. B /\ ph ) ) $=
       ( cv wcel crab wa eleq2i rabid bitri ) BFZCGMABDHZGMDGAICNMEJABDKL $.
   $}
 
@@ -24694,7 +24694,7 @@ $)
   $( All setvar variables are sets (see ~ isset ).  Theorem 6.8 of [Quine]
      p. 43.  (Contributed by NM, 5-Aug-1993.) $)
   vex $p |- x e. _V $=
-    ( cv cvv wcel wceq eqid df-v abeq2i mpbir ) ABZCDJJEZJFKACAGHI $.
+    ( cv cvv wcel wceq eqid df-v eqabi mpbir ) ABZCDJJEZJFKACAGHI $.
 
   ${
     $d x A $.
@@ -26843,7 +26843,7 @@ $)
        (Contributed by NM, 7-Aug-1994.) $)
     ru $p |- { x | x e/ x } e/ _V $=
       ( vy cv wnel cab cvv wcel wn wceq wex wb wal pm5.19 df-nel eleq12d notbid
-      eleq1 id syl5bb mtbir bibi12d spv mto abeq2 nex isset mpbir ) ACZUHDZAEZF
+      eleq1 id syl5bb mtbir bibi12d spv mto eqab nex isset mpbir ) ACZUHDZAEZF
       DUJFGZHUKBCZUJIZBJUMBUMUHULGZUIKZALZUPULULGZUQHZKZUQMUOUSABUHULIZUNUQUIUR
       UHULULQUIUHUHGZHUTURUHUHNUTVAUQUTUHULUHULUTRZVBOPSUAUBUCUIAULUDTUEBUJUFTU
       JFNUG $.
@@ -27662,7 +27662,7 @@ $)
        NM, 5-Nov-2005.) $)
     sbcabel $p |- ( A e. V -> ( [. A / x ]. { y | ph } e. B <->
                   { y | [. A / x ]. ph } e. B ) ) $=
-      ( vw wcel cvv cab wsbc wb cv wceq wa wex wal abeq2 bitrd elex sbcexg sbcg
+      ( vw wcel cvv cab wsbc wb cv wceq wa wex wal eqab bitrd elex sbcexg sbcg
       sbcang sbcbii sbcalg sbcbig bibi1d albidv syl6bbr anbi12d df-clel 3bitr4g
       syl5bb nfcri sbcgf exbidv syl ) DFIDJIZACKZEIZBDLZABDLZCKZEIZMDFUAUSHNZUT
       OZVFEIZPZHQZBDLZVFVDOZVHPZHQZVBVEUSVKVIBDLZHQVNVIHBDJUBUSVOVMHUSVOVGBDLZV
@@ -27874,7 +27874,7 @@ $)
     $( Composition law for chained substitutions into a class.  (Contributed by
        NM, 10-Nov-2005.) $)
     csbco $p |- [_ A / y ]_ [_ y / x ]_ B = [_ A / x ]_ B $=
-      ( vz cv csb wcel wsbc cab df-csb abeq2i sbcbii sbcco bitri abbii 3eqtr4i
+      ( vz cv csb wcel wsbc cab df-csb eqabi sbcbii sbcco bitri abbii 3eqtr4i
       ) EFZABFZDGZHZBCIZEJRDHZACIZEJBCTGACDGUBUDEUBUCASIZBCIUDUAUEBCUEETAESDKLM
       UCABCNOPBECTKAECDKQ $.
   $}
@@ -28283,7 +28283,7 @@ $)
        23-Nov-2005.)  (Proof shortened by Mario Carneiro, 10-Nov-2016.) $)
     csbnestgf $p |- ( ( A e. V /\ A. y F/_ x C ) ->
          [_ A / x ]_ [_ B / y ]_ C = [_ [_ A / x ]_ B / y ]_ C ) $=
-      ( vz wcel wnfc wal wa cv csb wsbc cab cvv wceq elex df-csb abeq2i wb nfcr
+      ( vz wcel wnfc wal wa cv csb wsbc cab cvv wceq elex df-csb eqabi wb nfcr
       sbcbii wnf alimi sbcnestgf sylan2 syl5bb abbidv sylan 3eqtr4g ) CFHZAEIZB
       JZKGLZBDEMZHZACNZGOZUOEHZBACDMZNZGOZACUPMBVAEMULCPHZUNUSVCQCFRVDUNKZURVBG
       URUTBDNZACNZVEVBUQVFACVFGUPBGDESTUCUNVDUTAUDZBJVGVBUAUMVHBAGEUBUEUTABCDPU
@@ -32674,7 +32674,7 @@ $)
     $( Subclass relationship for power class.  (Contributed by NM,
        21-Jun-2009.) $)
     pwss $p |- ( ~P A C_ B <-> A. x ( x C_ A -> x e. B ) ) $=
-      ( cpw wss cv wcel wi wal dfss2 df-pw abeq2i imbi1i albii bitri ) BDZCEAFZ
+      ( cpw wss cv wcel wi wal dfss2 df-pw eqabi imbi1i albii bitri ) BDZCEAFZ
       PGZQCGZHZAIQBEZSHZAIAPCJTUBARUASUAAPABKLMNO $.
   $}
 
@@ -32756,7 +32756,7 @@ $)
     $( There is only one element in a singleton.  Exercise 2 of [TakeutiZaring]
        p. 15.  (Contributed by NM, 5-Aug-1993.) $)
     elsn $p |- ( x e. { A } <-> x = A ) $=
-      ( cv wceq csn df-sn abeq2i ) ACBDABEABFG $.
+      ( cv wceq csn df-sn eqabi ) ACBDABEABFG $.
   $}
 
   ${
@@ -33128,7 +33128,7 @@ $)
        abstraction is a singleton.  (Contributed by Mario Carneiro,
        14-Nov-2016.) $)
     euabsn2 $p |- ( E! x ph <-> E. y { x | ph } = { y } ) $=
-      ( weu cv wceq wb wal wex cab csn df-eu wcel abeq1 elsn bibi2i albii bitri
+      ( weu cv wceq wb wal wex cab csn df-eu wcel eqabc elsn bibi2i albii bitri
       exbii bitr4i ) ABDABEZCEZFZGZBHZCIABJUBKZFZCIABCLUGUECUGAUAUFMZGZBHUEABUF
       NUIUDBUHUCABUBOPQRST $.
 
@@ -33769,7 +33769,7 @@ $)
     $( The singleton of a class is a subset of its power class.  (Contributed
        by NM, 5-Aug-1993.) $)
     snsspw $p |- { A } C_ ~P A $=
-      ( vx csn cpw cv wceq wss wcel eqimss elsn df-pw abeq2i 3imtr4i ssriv ) BA
+      ( vx csn cpw cv wceq wss wcel eqimss elsn df-pw eqabi 3imtr4i ssriv ) BA
       CZADZBEZAFQAGZQOHQPHQAIBAJRBPBAKLMN $.
   $}
 
@@ -36315,7 +36315,7 @@ $)
     $( Cardinal one is a set.  (Contributed by SF, 12-Jan-2015.) $)
     1cex $p |- 1c e. _V $=
       ( vy vx vw vz c1c cvv wcel wel weq wb wal wex ax-1c cv isset bitri bibi2i
-      wceq albii exbii csn cab df-1c eqeq2i abeq2 dfcleq df-sn abeq2i mpbir ) E
+      wceq albii exbii csn cab df-1c eqeq2i eqab dfcleq df-sn eqabi mpbir ) E
       FGZABHZCAHZCDIZJZCKZDLZJZAKZBLZBADCMUJBNZERZBLUSBEOVAURBVAUKANZDNZUAZRZDL
       ZJZAKZURVAUTVFAUBZRVHEVIUTADUCUDVFAUTUEPVGUQAVFUPUKVEUODVEULCNVDGZJZCKUOC
       VBVDUFVKUNCVJUMULUMCVDCVCUGUHQSPTQSPTPUI $.
@@ -37382,7 +37382,7 @@ $)
     elp6 $p |- ( A e. V -> ( A e. P6 B <-> A. x << x , { A } >> e. B ) ) $=
       ( vy wcel cp6 cvv csn cxpk wss cv copk wal wceq sneq wi vex albii bitri
       sneqd xpkeq2d sseq1d df-p6 elab2g xpkssvvk ssrelk ax-mp opkelxpk biantrur
-      wb wa df-sn abeq2i 3bitr2i imbi1i snex opkeq2 eleq1d ceqsalv syl6bb ) BDF
+      wb wa df-sn eqabi 3bitr2i imbi1i snex opkeq2 eleq1d ceqsalv syl6bb ) BDF
       BCGZFHBIZIZJZCKZALZVCMZCFZANZHELZIZIZJZCKVFEBVBDVKBOZVNVECVOVMVDHVOVLVCVK
       BPUAUBUCECUDUEVFVGVKMZVEFZVPCFZQZENZANZVJVEHHJKVFWAUKHVDUFAEVECUGUHVTVIAV
       TVKVCOZVRQZENVIVSWCEVQWBVRVQVGHFZVKVDFZULWEWBVGVKHVDARZERUIWDWEWFUJWBEVDE
@@ -38092,7 +38092,7 @@ $)
        SF, 20-Jan-2015.) $)
     unipw1 $p |- U. ~P1 A = A $=
       ( vx vy vz cpw1 cuni cv wcel wel wa wex csn wceq eluni elpw1 anbi1i ancom
-      wrex weq 3bitri r19.41v 3bitr4i exbii risset ceqsexv abeq2i equcom rexbii
+      wrex weq 3bitri r19.41v 3bitr4i exbii risset ceqsexv eqabi equcom rexbii
       snex eleq2 df-sn rexcom4 3bitr2ri eqriv ) BAEZFZABGZUPHBCIZCGZUOHZJZCKUSD
       GZLZMZURJZDARZCKZUQAHZCUQUONVAVFCUTURJVDDARZURJVAVFUTVIURDUSAOPURUTQVDURD
       AUAUBUCVHDBSZDARVECKZDARVGDUQAUDVKVJDAVKUQVCHZBDSZVJURVLCVCVBUIUSVCUQUJUE
@@ -39754,7 +39754,7 @@ $)
       wn df-rex 3bitr4i opkeq1 eleq1d ceqsexv elpw131c 19.41v excom wb elpw161c
       wel elsymdif otkelins3k vex elssetk otkelins2k elpw181c ndisjrelk elcompl
       bitri notbii df-ne con2bii elpw1111c orbi12i elun bibi12i wal dfcleq alex
-      wo anbi12i rexcom df-addc eqeq2i abeq2 opkelimagek dfaddc2 addcex addceq1
+      wo anbi12i rexcom df-addc eqeq2i eqab opkelimagek dfaddc2 addcex addceq1
       eqeq2d rexbii opkelxpk mpbiran2 elsnc anbi2i syl6bb pm5.32i 2exbii bitr3i
       eldif ancom abbi2i eqtr4i vvex xpkex ssetkex ins3kex ins2kex pw1ex imakex
       inex complex symdifex 1cex unex addcexlem imagekex nncex difex eqeltri )
@@ -40076,7 +40076,7 @@ $)
       cins2k csik cins3k csymdif c1c cimak wss ccompl cpw opkex elimak elpw121c
       anbi1i 19.41v bitr4i exbii df-rex excom 3bitr4i opkeq1 ceqsexv otkelins2k
       eleq1d elsymdif vex elssetk bitri otkelins3k opksnelsik opkelssetkg mp2an
-      wrex bibi12i notbii elcompl cab wal df-pw eqeq2i abeq2 alex ) AGZBHZIUAZI
+      wrex bibi12i notbii elcompl cab wal df-pw eqeq2i eqab alex ) AGZBHZIUAZI
       UBZUCZUDZUEJJZUFZKZLEMZBKZWKAUGZNZLZEOZLZWCWIUHKBAUIZPZWJWPWJFMZWCHZWGKZF
       WHVLZWTWKGZGZGZPZXBQZFOZEOZWPFWGWHWCWBBUJZUKWTWHKZXBQZFOXHEOZFOXCXJXMXNFX
       MXGEOZXBQXNXLXOXBEWTULUMXGXBEUNUOUPXBFWHUQXHEFURUSXIWOEXIXFWCHZWGKZXPWDKZ
@@ -40989,7 +40989,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
       wral elin wel wal opkex elimak elpw121c anbi1i 19.41v bitr4i df-rex excom
       wb opkeq1 ceqsexv elsymdif otkelins3k elssetk bitri otkelins2k opksnelsik
       eleq1d elpw141c ndisjrelk notbii elcompl con2bii elpw171c orbi12i bibi12i
-      df-ne elun dfcleq alex anbi12i rexcom df-addc eqeq2i abeq2 opkelxpk elsnc
+      df-ne elun dfcleq alex anbi12i rexcom df-addc eqeq2i eqab opkelxpk elsnc
       weq elpw11c opkelcnvk opkelimagek dfaddc2 addcex addceq1 eqeq2d opkelidkg
       mpbiran2 eldif mp2an equcom 1cex eqeq2 eqeq1 notbid anbi12d annim ssetkex
       rexbii ins3kex ins2kex inex pw1ex imakex complex sikex unex symdifex vvex
@@ -41210,7 +41210,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
       cab cpw1 cxpk cin ccompl cins3k cins2k cv cun csymdif csik cdif cuni wceq
       cimak wrex wral snex opkeq1 eleq1d ceqsexv elin vex elssetk eldif elcompl
       wi elimak el1c anbi1i 19.41v bitr4i df-rex excom opkelxpk mpbiran2 elequ2
-      snelpw1 elab anbi12i eluni xchbinx wb wal abeq2 opkex elpw121c otkelins3k
+      snelpw1 elab anbi12i eluni xchbinx wb wal eqab opkex elpw121c otkelins3k
       df-clel opksnelsik elsymdif bitri otkelins2k alex dfcleq wo elsnc orbi12i
       sneqb elun bibi12i 3bitr4ri notbii annim dfral2 abbi2i ssetkex setswithex
       weq pw1ex vvex xpkex inex 1cex imakex complex ins3kex unex symdifex sikex
@@ -41460,7 +41460,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
       cin wsfin opkelxpk wrex opkex elimak elpw131c anbi1i 19.41v bitr4i df-rex
       excom opkeq1 eleq1d ceqsexv elin elpw121c otkelins3k opksnelsik eqpw1relk
       w3a vex otkelins2k elssetk bitri anbi12i df-clel wel elsymdif opkelssetkg
-      wss wb wal wn mp2an bibi12i notbii elcompl alex df-pw eqeq2i abeq2 df-3an
+      wss wb wal wn mp2an bibi12i notbii elcompl alex df-pw eqeq2i eqab df-3an
       cab df-sfin ) ABIZJJUAZKZWSUBUCUDUALUEZLUFZUGZUHZUBUIUIZUIZUJUKZUFZUEZLUG
       ZUNZXFUJZUEZXEXFUJZULZUFZUEZXKUNZXFUJZUGZUNZXGUJZKZMZAJKZBJKZEUMZUIZAKZYH
       UCZBKZMZENZVNZWSWTYCUNKABUOYEYFYGMZYNMYOXAYPYDYNABJJCDUPYDFUMZWSIZYBKZFXG
@@ -41689,7 +41689,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
       wral wel eleq1d ceqsexv elin opksnelsik elssetk opkelxpk mpbiran2 snelpw1
       eldif otkelins2k opkelcnvk eqtfinrelk opkex elimak elpw121c anbi1i 19.41v
       bitr4i df-rex excom wb elsymdif otkelins3k anbi12i bibi12i notbii elcompl
-      elpw abeq2 df-clel elpw11c tfinex clel3 annim dfral2 abbi2i ssetkex sikex
+      elpw eqab df-clel elpw11c tfinex clel3 annim dfral2 abbi2i ssetkex sikex
       wal alex nncex pwex pw1ex vvex xpkex tfinrelkex ins2kex ins3kex inex 1cex
       cnvkex imakex symdifex complex difex uni1ex eqeltrri ) HUAZUBUCZUDZUEUFZU
       AZUGIZIZYMUFHUHZHUIUJUBUEUFYHUHZUKUCUEUFHUJZYPULUKUDZUDZUDZJUMUAUJYOUNYSJ
@@ -42743,7 +42743,7 @@ $)
     phi011lem1 $p |- ( ( Phi A u. { 0c } ) = ( Phi B u. { 0c } ) ->
       Phi A C_ Phi B ) $=
       ( vz cphi c0c csn wceq cv wcel wn ssun1 sseli eleq2 syl5ib 0cnelphi eleq1
-      cun wi mtbiri wo con2i a1i elun df-sn abeq2i orbi2i bitri biimpi ord ee22
+      cun wi mtbiri wo con2i a1i elun df-sn eqabi orbi2i bitri biimpi ord ee22
       orcomd ssrdv ) ADZEFZQZBDZUNQZGZCUMUPURCHZUMIZUSUQIZUSEGZJZUSUPIZUTUSUOIU
       RVAUMUOUSUMUNKLUOUQUSMNUTVCRURVBUTVBUTEUMIAOUSEUMPSUAUBVAVBVDVAVDVBVAVDVB
       TZVAVDUSUNIZTVEUSUPUNUCVFVBVDVBCUNCEUDUEUFUGUHUKUIUJUL $.
@@ -42961,7 +42961,7 @@ $)
     phidisjnn $p |- ( ( A i^i Nn ) = (/) -> Phi A = A ) $=
       ( vx vy cnnc cin c0 wceq cv wcel c1c cplc cif wrex wb wal cphi wa syl6bbr
       weq wn wral disj biimpi r19.21bi iffalse syl eqeq2d equcom risset alrimiv
-      rexbidva cab df-phi eqeq1i abeq1 bitri sylibr ) ADEFGZBHZCHZDIZUTJKZUTLZG
+      rexbidva cab df-phi eqeq1i eqabc bitri sylibr ) ADEFGZBHZCHZDIZUTJKZUTLZG
       ZCAMZUSAIZNZBOZAPZAGZURVGBURVECBSZCAMVFURVDVKCAURUTAIQZVDBCSVKVLVCUTUSVLV
       ATZVCUTGURVMCAURVMCAUACADUBUCUDVAVBUTUEUFUGCBUHRUKCUSAUIRUJVJVEBULZAGVHVI
       VNACBAUMUNVEBAUOUPUQ $.
@@ -45412,7 +45412,7 @@ $)
     $( Representation of a constant function using ordered pairs.  (Contributed
        by NM, 12-Oct-1999.) $)
     fconstopab $p |- ( A X. { B } ) = { <. x , y >. | ( x e. A /\ y = B ) } $=
-      ( csn cxp cv wcel wa copab wceq df-xp df-sn abeq2i anbi2i opabbii eqtri )
+      ( csn cxp cv wcel wa copab wceq df-xp df-sn eqabi anbi2i opabbii eqtri )
       CDEZFAGCHZBGZRHZIZABJSTDKZIZABJABCRLUBUDABUAUCSUCBRBDMNOPQ $.
   $}
 
@@ -46413,7 +46413,7 @@ $)
     dmopab3 $p |- ( A. x e. A E. y ph <->
                dom { <. x , y >. | ( x e. A /\ ph ) } = A ) $=
       ( wex wral cv wcel wi wal wa wb copab cdm wceq df-ral pm4.71 albii dmopab
-      cab 19.42v abbii eqtri eqeq1i eqcom abeq2 3bitr2ri 3bitri ) ACEZBDFBGDHZU
+      cab 19.42v abbii eqtri eqeq1i eqcom eqab 3bitr2ri 3bitri ) ACEZBDFBGDHZU
       IIZBJUJUJUIKZLZBJZUJAKZBCMNZDOZUIBDPUKUMBUJUIQRUQULBTZDODUROUNUPURDUPUOCE
       ZBTURUOBCSUSULBUJACUAUBUCUDDURUEULBDUFUGUH $.
   $}
@@ -46449,7 +46449,7 @@ $)
     $( An empty domain implies an empty range.  (Contributed by set.mm
        contributors, 21-May-1998.) $)
     dm0rn0 $p |- ( dom A = (/) <-> ran A = (/) ) $=
-      ( vx vy cv wbr wex cab c0 wceq wcel wb wal alnex noel albii abeq1 3bitr4i
+      ( vx vy cv wbr wex cab c0 wceq wcel wb wal alnex noel albii eqabc 3bitr4i
       wn nbn eqeq1i cdm crn excom xchbinx bitr4i 3bitr3i dfdm2 dfrn2 ) BDZCDZAE
       ZCFZBGZHIZUKBFZCGZHIZAUAZHIAUBZHIULUIHJZKZBLZUOUJHJZKZCLZUNUQULRZBLZUORZC
       LZVBVEVGUOCFZRVIVGULBFVJULBMUKBCUCUDUOCMUEVFVABUTULUINSOVHVDCVCUOUJNSOUFU
@@ -50336,7 +50336,7 @@ $)
                   E. x e. B ( F ` x ) = C ) ) $=
       ( vy wfn wss wa cima wcel cv cfv wceq wrex cvv anim2i eleq1 wb wi rexbidv
       elex fvex mpbii rexlimivw eqeq2 bibi12d imbi2d wfun cdm fnfun adantr fndm
-      cab sseq2d biimpar dfimafn syl2anc abeq2d vtoclg impcom pm5.21nd ) EBGZCB
+      cab sseq2d biimpar dfimafn syl2anc eqabd vtoclg impcom pm5.21nd ) EBGZCB
       HZIZDECJZKZALZEMZDNZACOZVEDPKZIVGVLVEDVFUBQVKVLVEVJVLACVJVIPKVLVHEUCVIDPR
       UDUEQVLVEVGVKSZVEFLZVFKZVIVNNZACOZSZTVEVMTFDPVNDNZVRVMVEVSVOVGVQVKVNDVFRV
       SVPVJACVNDVIUFUAUGUHVEVQFVFVEEUIZCEUJZHZVFVQFUNNVCVTVDBEUKULVCWBVDVCWABCB
@@ -50889,7 +50889,7 @@ $)
                   A. y e. B E. x e. A y = ( F ` x ) ) ) $=
       ( wfo wf crn wceq wa cv cfv wrex wral dffo2 cab wb wcel wal wi wfn fnrnfv
       ffn eqeq1d simpr ffvelrn adantr eqeltrd exp31 rexlimdv biantrurd syl6rbbr
-      syl dfbi2 albidv abeq1 df-ral 3bitr4g bitrd pm5.32i bitri ) CDEFCDEGZEHZD
+      syl dfbi2 albidv eqabc df-ral 3bitr4g bitrd pm5.32i bitri ) CDEFCDEGZEHZD
       IZJVBBKZAKZELZIZACMZBDNZJCDEOVBVDVJVBVDVIBPZDIZVJVBECUAZVDVLQCDEUCVMVCVKD
       ABCEUBUDUMVBVIVEDRZQZBSVNVITZBSVLVJVBVOVPBVBVPVIVNTZVPJVOVBVQVPVBVHVNACVB
       VFCRZVHVNVBVRJZVHJVEVGDVSVHUEVSVGDRVHCDVFEUFUGUHUIUJUKVIVNUNULUOVIBDUPVIB
@@ -54206,7 +54206,7 @@ $)
        ` A ` .  (Contributed by Mario Carneiro, 13-Feb-2015.) $)
     fvmptss $p |- ( A. x e. A B C_ C -> ( F ` D ) C_ C ) $=
       ( vy wss wcel cfv cv wi wceq fveq2 sseq1d imbi2d nfcv wa c0 dmmptss sseli
-      wral cdm nfra1 cmpt nfmpt1 nfcxfr nffv nfss nfim cvv dmmpt rabeq2i fvmpt2
+      wral cdm nfra1 cmpt nfmpt1 nfcxfr nffv nfss nfim cvv dmmpt reqabi fvmpt2
       eqimss syl sylbi ndmfv 0ss a1i eqsstrd pm2.61i rsp impcom syl5ss vtoclgaf
       wn ex vtoclga sylan2 adantl pm2.61dan ) CDIZABUCZEFUDZJZEFKZDIZVQVOEBJZVS
       VPBEABCFGUAUBVTVOVSVOHLZFKZDIZMZVOVSMHEBWAENZWCVSVOWEWBVRDWAEFOPQVOALZFKZ
@@ -55972,7 +55972,7 @@ $)
        9-Mar-2015.) $)
     fvfullfunlem3 $p |- ( A e. dom ( ( _I o. F ) \ ( ~ _I o. F ) ) ->
        ( ( ( _I o. F ) \ ( ~ _I o. F ) ) ` A ) = ( F ` A ) ) $=
-      ( vx vy vz cid ccom wcel cfv wss wceq cv wbr wal weu fvfullfunlem1 abeq2i
+      ( vx vy vz cid ccom wcel cfv wss wceq cv wbr wal weu fvfullfunlem1 eqabi
       wa brres cvv ccompl cdif cdm cres wfun weq wi dffun2 anbi2i bitri adantrl
       tz6.12-1 adantl eqtr3d adantlr syl2anb gen2 cxp cin fvfullfunlem2 crn ssv
       mpgbir ssdmrn xpss2 ax-mp sstri ssini df-res sseqtr4i funssfv mp3an12
@@ -55992,7 +55992,7 @@ $)
       ( vx vy cvv wcel cfv wceq cv fveq2 cid ccom ccompl c0 wfn wa mp3an12 mpan
       0ex eqtr4d cfullfun eqeq12d cdm csn cxp cun df-fullfun fveq1i cin incompl
       cdif wfun fnfullfunlem2 funfn fnconstg ax-mp fvun1 fvfullfunlem3 eqtrd wn
-      mpbi vex elcompl sylbir wbr fvfullfunlem1 abeq2i tz6.12-2 sylnbi fvconst2
+      mpbi vex elcompl sylbir wbr fvfullfunlem1 eqabi tz6.12-2 sylnbi fvconst2
       fvun2 weu pm2.61i eqtri vtoclg fvprc ) AEFZABUAZGZABGZHZCIZVRGZWBBGZHWACA
       EWBAHWCVSWDVTWBAVRJWBABJUBWCWBKBLKMBLUKZWEUCZMZNUDUEZUFZGZWDWBVRWIBUGUHWB
       WFFZWJWDHWKWJWBWEGZWDWFWGUINHZWKWJWLHZWFUJZWEWFOZWHWGOZWMWKPWNWEULWPBUMWE
@@ -57812,7 +57812,7 @@ $)
     pmvalg $p |- ( ( A e. C /\ B e. D ) ->
                   ( A ^pm B ) = { f e. ~P ( B X. A ) | Fun f } ) $=
       ( vx vy wcel cvv cpm cv cxp cpw crab wceq elex wa cab pweqd biidd co wfun
-      wss df-rab ancom df-pw abeq2i anbi2i bitri abbii eqtri syl5eqel rabeqbidv
+      wss df-rab ancom df-pw eqabi anbi2i bitri abbii eqtri syl5eqel rabeqbidv
       pmex ancoms xpeq2 xpeq1 df-pm ovmpt2g mpd3an3 syl2an ) ACHAIHZBIHZABJUAEK
       ZUBZEBALZMZNZOZBDHACPBDPVBVCVHIHVIVBVCQVHVEVDVFUCZQZERZIVHVDVGHZVEQZERVLV
       EEVGUDVNVKEVNVEVMQVKVMVEUEVMVJVEVJEVGEVFUFUGUHUIUJUKVCVBVLIHBAIIEUNUOULFG
@@ -58716,7 +58716,7 @@ $)
     enpw1pw $p |- ~P1 ~P A ~~ ~P ~P1 A $=
       ( vy vx vz cpw cpw1 cpw1fn wf1o wbr c1c wss ax-mp wceq cv wrex wa wex vex
       wcel cres cen cima wf1 pw1fnf1o f1of1 pw1ss1c f1ores mp2an wb df-ima elpw
-      cab sspw1 df-rex df-pw abeq2i anbi1i exbii bitr2i 3bitri csn elpw1 bitr4i
+      cab sspw1 df-rex df-pw eqabi anbi1i exbii bitr2i 3bitri csn elpw1 bitr4i
       r19.41v rexcom4 snex breq1 ceqsexv bitri rexbii bitr3i abbi2i eqtr4i mpbi
       brpw1fn f1oeq3 pw1fnex pwex pw1ex resex f1oen ) AFZGZAGZFZHWDUAZIZWDWFUBJ
       WDHWDUCZWGIZWHKKFZHUDZWDKLWJKWKHIWLUEKWKHUFMWCUGKWKWDHUHUIWIWFNWJWHUJWICO
@@ -59805,7 +59805,7 @@ $)
       wf wb wn snex opex elcompl elsymdif opelssetsn otelins2 otsnelsi3 wfn wss
       df-br brfns bitr3i opelco brimage dfrn5 eqeq2i bitr4i brsset rnex ceqsexv
       exbii sseq1 oteltxp bibi12i xchbinx exnal 3bitrri con1bii oqelins4 mapval
-      df-f abeq2 ovex breq2 df-3an abbi2i cnvex imaexg mpan xpexg syl2an cnvexg
+      df-f eqab ovex breq2 df-3an abbi2i cnvex imaexg mpan xpexg syl2an cnvexg
       pw1fnex ins3exg syl ssetex ins3ex fnsex 2ndex coex ins2ex 1cex mpan2 3syl
       imageex txpex si3ex symdifex imaex complex ins4ex enex inexg syl5eqelr
       inex ) CDJZBEJZKZFUAZUBZCJZGUAZUBZBJZAUAZUUNUUQUEUCZLMZUDZGNZFNZAUFOUGZCU
