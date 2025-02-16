@@ -90051,6 +90051,32 @@ $)
       ( cr wcel cc0 clt wbr cap lt0ap0 syl2anc ) ABEFBGHIBGJICDBKL $.
   $}
 
+  ${
+    $d p q r s t u v $.  $d x y z $.
+    $( Complex apartness (as defined at ~ df-ap ) is a tight apartness (as
+       defined at ~ df-tap ).  (Contributed by Jim Kingdon, 16-Feb-2025.) $)
+    aptap $p |- =//= TAp CC $=
+      ( vx vy vz vp vq vr vs vu vv cc cap cv wbr wral wa wceq wcel ci cr wrex
+      vt wtap cxp wss wn wi wo c1st cmul co caddc c2nd creap copab eqeq1 anbi1d
+      cfv 2rexbidv anbi2d elopabi df-ap eleq2s cop wrel relopabi simp-5l 1st2nd
+      sylancr simprll simp-5r ax-icn a1i simp-4r mulcld eqeltrd simprlr simpllr
+      recnd addcld jca elxp6 sylanbrc rexlimdva2 rexlimdva mpd ssriv apirr rgen
+      simplr apsym biimpd rgen2 pm3.2i apcotr rgen3 biimprd df-tap mpbir3an
+      apti ) JKUBKJJUCZUDALZXAKMUEZAJNZXABLZKMZXDXAKMZUFZBJNAJNZOXEXACLZKMXDXIK
+      MUGUFZCJNBJNAJNZXEUEZXAXDPZUFZBJNAJNZOUAKWTUALZKQZXPUHUQZDLZRELZUIUJZUKUJ
+      ZPZXPULUQZFLZRGLZUIUJZUKUJZPZOZXSYEUMMXTYFUMMUGZOZGSTZFSTZESTZDSTZXPWTQZY
+      PXPHLZYBPZILZYHPZOZYKOZGSTFSTZESTDSTZHIUNKUUEYCUUAOZYKOZGSTFSTZESTDSTYPHI
+      XPYRXRPZUUDUUHDESSUUIUUCUUGFGSSUUIUUBUUFYKUUIYSYCUUAYRXRYBUOUPUPURURYTYDP
+      ZUUHYNDESSUUJUUGYLFGSSUUJUUFYJYKUUJUUAYIYCYTYDYHUOUSUPURURUTHIGFEDVAZVBXQ
+      YOYQDSXQXSSQZOZYNYQESUUMXTSQZOZYMYQFSUUOYESQZOZYLYQGSUUQYFSQZOZYLOZXPXRYD
+      VCPZXRJQZYDJQZOYQUUTKVDXQUVAUUEHIKUUKVEXQUULUUNUUPUURYLVFXPKVGVHUUTUVBUVC
+      UUTXRYBJUUSYCYIYKVIUUTXSYAUUTXSXQUULUUNUUPUURYLVJVRUUTRXTRJQUUTVKVLZUUTXT
+      UUMUUNUUPUURYLVMVRVNVSVOUUTYDYHJUUSYCYIYKVPUUTYEYGUUTYEUUOUUPUURYLVQVRUUT
+      RYFUVDUUTYFUUQUURYLWIVRVNVSVOVTXPJJWAWBWCWDWDWDWEWFXCXHXBAJXAWGWHXGABJJXA
+      JQXDJQOZXEXFXAXDWJWKWLWMXKXOXJABCJJJXAXDXIWNWOXNABJJUVEXMXLXAXDWSWPWLWMAB
+      CJKWQWR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
