@@ -18309,6 +18309,7 @@ $)
   $v .0. $.
   $v .1. $.
   $v .|| $.
+  $v .# $.
   $v .~ $.
   $v ._|_ $.
   $v .+^ $.
@@ -18367,6 +18368,7 @@ $)
 
   $( Define a connective symbol for use as a class variable. $)
   c.pa $f class .|| $.
+  c.ap $f class .# $.
 
   $( Let ` D ` be a class variable. $)
   cD $f class D $.
@@ -151173,6 +151175,62 @@ $)
       /\ ( x ( -g ` w ) y ) e. ( Unit ` w ) ) } ) $.
   $}
 
+  ${
+    $d R r x y $.  $d X x y $.  $d Y x y $.
+    aprval.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    aprval.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
+    aprval.s $e |- ( ph -> .- = ( -g ` R ) ) $.
+    aprval.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    aprval.r $e |- ( ph -> R e. Ring ) $.
+    aprval.x $e |- ( ph -> X e. B ) $.
+    aprval.y $e |- ( ph -> Y e. B ) $.
+    $( Expand the ~ df-apr definition.  (Contributed by Jim Kingdon,
+       17-Feb-2025.) $)
+    aprval $p |- ( ph -> ( X .# Y <-> ( X .- Y ) e. U ) ) $=
+      ( vx vy cfv wcel cvv vr wbr csg co cui cop df-br cv cbs copab capr df-apr
+      wa wceq fveq2 eleq2d anbi12d oveqd eleq12d opabbidv crg elexd cxp funfvex
+      wfn basfn funfni sylancr xpexg syl2anc wss opabssxp ssexd fvmptd3 eleqtrd
+      a1i eqtrd wb oveq12 eleq1d opelopab2a bitrd bitrid bitr4d ) AGHCUBZGHDUCR
+      ZUDZDUERZSZGHFUDZESWEGHUFZCSZAWIGHCUGAWLWKPUHZDUIRZSZQUHZWNSZUMZWMWPWFUDZ
+      WHSZUMZPQUJZSZWIACXBWKACDUKRXBJAUADWMUAUHZUIRZSZWPXESZUMZWMWPXDUCRZUDZXDU
+      ERZSZUMZPQUJXBTUKTPQUAULXDDUNZXMXAPQXNXHWRXLWTXNXFWOXGWQXNXEWNWMXDDUIUOZU
+      PXNXEWNWPXOUPUQXNXJWSXKWHXNXIWFWMWPXDDUCUOURXDDUEUOUSUQUTADVAMVBZAXBWNWNV
+      CZTAWNTSZXRXQTSAUITVEDTSXRVFXPXRTDUIDUIVDVGVHZXSWNWNTTVIVJXBXQVKAWTPQWNWN
+      VLVPVMVNVQUPAGWNSHWNSXCWIVRAGBWNNIVOAHBWNOIVOWTWIPQGHWNWNWMGUNWPHUNUMWSWG
+      WHWMGWPHWFVSVTWAVJWBWCAWJWGEWHAFWFGHKURLUSWD $.
+  $}
+
+  ${
+    aprirr.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    aprirr.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
+    aprirr.r $e |- ( ph -> R e. Ring ) $.
+    aprirr.x $e |- ( ph -> X e. B ) $.
+
+    ${
+      $d R r x y $.  $d X x y $.
+      aprirr.nz $e |- ( ph -> ( 1r ` R ) =/= ( 0g ` R ) ) $.
+      $( The apartness relation given by ~ df-apr for a non-zero ring is
+         irreflexive.  (Contributed by Jim Kingdon, 16-Feb-2025.) $)
+      aprirr $p |- ( ph -> -. X .# X ) $=
+        ( wbr csg cfv co cui wcel wceq eqid mtbird eqidd cgrp ringgrpd grpsubid
+        c0g cbs eleqtrd syl2anc cur neneqd crg wb 0unit syl eqneltrd aprval ) A
+        EECKEEDLMZNZDOMZPAUQDUDMZURADUAPEDUEMZPUQUSQADHUBAEBUTIFUFUTDUPEUSUTRUS
+        RZUPRUCUGAUSURPZDUHMZUSQZAVCUSJUIADUJPVBVDUKHDURVCUSURRVAVCRULUMSUNABCD
+        URUPEEFGAUPTAURTHIIUOS $.
+    $}
+
+    aprsym.y $e |- ( ph -> Y e. B ) $.
+    $( The apartness relation given by ~ df-apr for a ring is symmetric.
+       (Contributed by Jim Kingdon, 17-Feb-2025.) $)
+    aprsym $p |- ( ph -> ( X .# Y -> Y .# X ) ) $=
+      ( wbr cfv co wcel eqidd aprval eqid wb eleqtrd csg cui cminusg crg biimpa
+      unitnegcl syl2an2r cgrp cbs wceq ringgrpd grpinvsub syl3anc eleq1d adantr
+      wa mpbid mpbird ex ) AEFCLZFECLZAUTUPZVAFEDUAMZNZDUBMZOZVBEFVCNZDUCMZMZVE
+      OZVFADUDOUTVGVEOZVJIAUTVKABCDVEVCEFGHAVCPZAVEPZIJKQUEDVEVHVGVERVHRZUFUGAV
+      JVFSUTAVIVDVEADUHOEDUIMZOFVOOVIVDUJADIUKAEBVOJGTAFBVOKGTVODVCVHEFVORVCRVN
+      ULUMUNUOUQAVAVFSUTABCDVEVCFEGHVLVMIKJQUOURUS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -167231,6 +167289,13 @@ htmldef ".||" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#8741;</SPAN> ';
   latexdef ".||" as "\parallel";
+htmldef ".#" as
+    ' <span class=symvar style="border-bottom:1px dotted;color:#c3c">' +
+    '#</span> ';
+  althtmldef ".#" as
+    ' <span class=symvar style="border-bottom:1px dotted;color:#c3c">' +
+    '#</span> ';
+  latexdef ".#" as "\neq\mathrel{\mkern -10mu}\neq";
 htmldef ".~" as
     " <IMG SRC='_.sim.gif' WIDTH=13 HEIGHT=19 ALT=' .~' TITLE='.~'> ";
   althtmldef ".~" as
