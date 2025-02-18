@@ -85,8 +85,18 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+15-Feb-25 abeq2f    eqabf
+15-Feb-25 rabeq2i   reqabi
+15-Feb-25 abeq1i    eqabci
+15-Feb-25 abeq2i    eqabi
+15-Feb-25 abeq2d    eqabd
+15-Feb-25 abeq2w    eqabw
+15-Feb-25 abeq1     eqabc       Commuted form of eqab
+15-Feb-25 abeq2     eqab        Basic closed form
 14-Feb-25 ---       ---         Moved surreal negation theorems
                                 from SF's mathbox to main set.mm
+14-Feb-25 grpinvcld ---         Moved from SN's mathbox to main set.mm
+14-Feb-25 fnfvelrnd ---         Moved from GS's mathbox to main set.mm
 10-Feb-25 ---       ---         Moved surreal addition theorems
                                 from SF's mathbox to main set.mm
 10-Feb-25 onunel    ---         Moved from SF's mathbox to main set.mm

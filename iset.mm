@@ -72402,6 +72402,19 @@ $)
   $}
 
   ${
+    $d R x y z $.  $d A x y z $.  $d B x y z $.
+    $( Equality theorem for tight apartness predicate.  (Contributed by Jim
+       Kingdon, 15-Feb-2025.) $)
+    tapeq2 $p |- ( A = B -> ( R TAp A <-> R TAp B ) ) $=
+      ( vx vy vz wceq cxp wss cv wbr wn wral wi wa w3a raleq raleqbi1dv anbi12d
+      wtap wo xpeq12 anidms sseq2d 3anbi123d df-tap 3bitr4g ) ABGZCAAHZIZDJZUKC
+      KLZDAMZUKEJZCKZUNUKCKNZEAMZDAMZOZUOUKFJZCKUNUTCKUANZFAMZEAMZDAMZUOLUKUNGN
+      ZEAMZDAMZOZPCBBHZIZULDBMZUPEBMZDBMZOZVAFBMZEBMZDBMZVEEBMZDBMZOZPACTBCTUHU
+      JVJUSVNVHVTUHUIVICUHUIVIGABABUBUCUDUHUMVKURVMULDABQUQVLDABUPEABQRSUHVDVQV
+      GVSVCVPDABVBVOEABVAFABQRRVFVRDABVEEABQRSUEDEFACUFDEFBCUFUG $.
+  $}
+
+  ${
     $d A a b c u v $.  $d A a b c x y $.
     $( Negated equality on a set with decidable equality is a tight apartness.
        (Contributed by Jim Kingdon, 5-Feb-2025.) $)
@@ -72511,6 +72524,55 @@ $)
       ( vx c2o cv wtap wmo c0 csn wceq wstab wss wn 2omotaplemst df-stab sylibr
       wi ex adantr exmid1stab ) CADEAFZBTBDZGHZIZJZUAUBKTUCLLZUCPUDTUEUCUCAMQUC
       NORS $.
+  $}
+
+  ${
+    $d A p u v x y $.  $d A x y z $.  $d R p x y z $.
+    $( Excluded middle implies there is only one tight apartness on any class,
+       namely negated equality.  (Contributed by Jim Kingdon, 14-Feb-2025.) $)
+    exmidapne $p |- ( EXMID -> ( R TAp A <->
+        R = { <. u , v >. | ( ( u e. A /\ v e. A ) /\ u =/= v ) } ) ) $=
+      ( vx vy vz wem cv wcel wa wne wceq simpr wbr wn wral wi syl adantr vp cfv
+      wtap copab c1st c2nd cop cxp simplr wss wo w3a df-tap biimpi simp1d sseld
+      sylc 1st2nd2 xp1st xp2nd eqeltrrd opeq2d id notbid simp2d simpld ad3antlr
+      breq12d df-br sylnib eqneltrrd pm2.65da neqned jca31 eleq1 bi2anan9 simpl
+      rspcdva wb neeq12d anbi12d opelopabga syl2anc mpbird eqeltrd wrel relopab
+      1st2nd mpan adantl breq2 eqeq2 imbi12d breq1 eqeq1 simp3d simprd ad2antlr
+      ralbidv anbi1d neeq1 anbi2d elopabi neneqd wdc exmidexmid con1dc ad2antrr
+      neeq2 mp2d sylib impbida eqrdv ralrimivw netap tapeq1 ) HCDUCZDBIZCJZAIZC
+      JZKZXRXTLZKZBAUDZMZHXQKZUADYEYGUAIZDJZYHYEJZYGYIKZYHYHUEUBZYHUFUBZUGZYEYK
+      YHCCUHZJZYHYNMZYKXQYIYPHXQYIUIYGYINZXQDYOYHXQDYOUJZEIZYTDOZPZECQZYTFIZDOZ
+      UUDYTDORFCQECQZKZUUEYTGIZDOUUDUUHDOUKRGCQFCQECQZUUEPZYTUUDMZRZFCQZECQZKZX
+      QYSUUGUUOULEFGCDUMUNZUOUPUQZYHCCURSZYKYNYEJZYLCJZYMCJZKZYLYMLZKZYKUUTUVAU
+      VCYKYPUUTUUQYHCCUSSZYKYPUVAUUQYHCCUTSZYKYLYMYKYLYMMZYNDJZYKUVHUVGYKYHYNDU
+      URYRVATYKUVGKZYLYLUGZYNDUVIYLYMYLYKUVGNVBUVIYLYLDOZUVJDJUVIUUBUVKPECYLYTY
+      LMZUUAUVKUVLYTYLYTYLDUVLVCZUVMVHVDXQUUCHYIUVGXQUUCUUFXQYSUUGUUOUUPVEVFVGY
+      KUUTUVGUVETVRYLYLDVIVJVKVLVMVNYKUUTUVAUUSUVDVSUVEUVFYDUVDBAYLYMCCXRYLMZXT
+      YMMZKZYBUVBYCUVCUVNXSUUTUVOYAUVAXRYLCVOZXTYMCVOZVPUVPXRYLXTYMUVNUVOVQUVNU
+      VONVTWAWBWCWDWEYGYJKZYHYNDYJYQYGYEWFYJYQYDBAWGYHYEWHWIWJUVSYLYMDOZUVHUVSU
+      VTPZUVGRZUVGPZUVTUVSYLUUDDOZPZYLUUDMZRZUWBFCYMUUDYMMZUWEUWAUWFUVGUWHUWDUV
+      TUUDYMYLDWKVDUUDYMYLWLWMUVSUUMUWGFCQECYLUVLUULUWGFCUVLUUJUWEUUKUWFUVLUUEU
+      WDYTYLUUDDWNVDYTYLUUDWOWMWSXQUUNHYJXQUUIUUNXQYSUUGUUOUUPWPWQWRUVSUUTUVAUV
+      SUVBUVCYJUVDYGYDUUTYAKZYLXTLZKUVDBAYHUVNYBUWIYCUWJUVNXSUUTYAUVQWTXRYLXTXA
+      WAUVOUWIUVBUWJUVCUVOYAUVAUUTUVRXBXTYMYLXIWAXCWJZVFZVFVRUVSUUTUVAUWLWQVRUV
+      SYLYMUVSUVBUVCUWKWQXDHUWBUWCUVTRRZXQYJHUVTXEUWMUVTXFUVTUVGXGSXHXJYLYMDVIX
+      KWEXLXMHYFKXQCYEUCZHUWNYFHUUKXEZFCQZECQUWNHUWPECHUWOFCUUKXFXNXNEFABCXOSTY
+      FXQUWNVSHCDYEXPWJWDXL $.
+  $}
+
+  ${
+    $d r s u v x $.
+    $( The proposition that every class has at most one tight apartness is
+       equivalent to excluded middle.  (Contributed by Jim Kingdon,
+       14-Feb-2025.) $)
+    exmidmotap $p |- ( EXMID <-> A. x E* r r TAp x ) $=
+      ( vs vu vv wem cv wtap wmo wal wa wceq wi wel wb exmidapne adantr c2o com
+      mpbid wne simprl simprr eqtr4d ex alrimivv tapeq1 mo4 sylibr alrimiv wcel
+      copab 2onn tapeq2 mobidv spcgv ax-mp 2omotap syl impbii ) FAGZBGZHZBIZAJZ
+      FVDAFVCVACGZHZKZVBVFLZMZCJBJVDFVJBCFVHVIFVHKZVBDANEANKDGEGUAKDEULZVFVKVCV
+      BVLLZFVCVGUBFVCVMOVHEDVAVBPQTVKVGVFVLLZFVCVGUCFVGVNOVHEDVAVFPQTUDUEUFVCVG
+      BCVAVBVFUGUHUIUJVERVBHZBIZFRSUKVEVPMUMVDVPARSVARLVCVOBVARVBUNUOUPUQBURUSU
+      T $.
   $}
 
 
@@ -150998,6 +151060,38 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Ring homomorphisms
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c RingHom $. $( Ring homomorphism $)
+  $c RingIso $. $( Ring isomorphism $)
+
+  $( Extend class notation with the ring homomorphisms. $)
+  crh $a class RingHom $.
+
+  $( Extend class notation with the ring isomorphisms. $)
+  crs $a class RingIso $.
+
+  ${
+    $d r s v w f x y $.
+    $( Define the set of ring homomorphisms from ` r ` to ` s ` .  (Contributed
+       by Stefan O'Rear, 7-Mar-2015.) $)
+    df-rnghom $a |- RingHom = ( r e. Ring , s e. Ring |->
+      [_ ( Base ` r ) / v ]_ [_ ( Base ` s ) / w ]_
+   { f e. ( w ^m v ) | ( ( f ` ( 1r ` r ) ) = ( 1r ` s ) /\ A. x e. v A. y e. v
+   ( ( f ` ( x ( +g ` r ) y ) ) = ( ( f ` x ) ( +g ` s ) ( f ` y ) ) /\
+     ( f ` ( x ( .r ` r ) y ) ) = ( ( f ` x ) ( .r ` s ) ( f ` y ) ) ) ) } ) $.
+
+    $( Define the set of ring isomorphisms from ` r ` to ` s ` .  (Contributed
+       by Stefan O'Rear, 7-Mar-2015.) $)
+    df-rngiso $a |- RingIso = ( r e. _V , s e. _V |->
+      { f e. ( r RingHom s ) | `' f e. ( s RingHom r ) } ) $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -168272,6 +168366,12 @@ htmldef "invr" as
 htmldef "/r" as "/<SUB>r</SUB>";
   althtmldef "/r" as "/<SUB>r</SUB>";
   latexdef "/r" as "/_r";
+htmldef "RingHom" as " RingHom ";
+  althtmldef "RingHom" as " RingHom ";
+  latexdef "RingHom" as " \mathrm{RingHom} ";
+htmldef "RingIso" as " RingIso ";
+  althtmldef "RingIso" as " RingIso ";
+  latexdef "RingIso" as " \mathrm{RingIso} ";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
