@@ -151421,6 +151421,29 @@ $)
       ULUMUNUOUQAVAVFSUTABCDVEVCFEGHVLVMIKJQUOURUS $.
   $}
 
+  ${
+    aprcotr.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    aprcotr.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
+    aprcotr.r $e |- ( ph -> R e. LRing ) $.
+    aprcotr.x $e |- ( ph -> X e. B ) $.
+    aprcotr.y $e |- ( ph -> Y e. B ) $.
+    aprcotr.z $e |- ( ph -> Z e. B ) $.
+    $( The apartness relation given by ~ df-apr for a local ring is
+       cotransitive.  (Contributed by Jim Kingdon, 17-Feb-2025.) $)
+    aprcotr $p |- ( ph -> ( X .# Y -> ( X .# Z \/ Y .# Z ) ) ) $=
+      ( wbr cfv co wcel adantr eqidd eleqtrd wo wa csg cui cdvr cplusg cbs wceq
+      cmulr clring cgrp crg lringring syl ringgrpd eqid grpnpncan aprval biimpa
+      syl13anc eqeltrd grpsubcl syl3anc eleqtrrd biimprd aprsym sylbird orim12d
+      lringuplu wi mpd ex ) AEFCNZEGCNZFGCNZUAZAVMUBZEGDUCOZPZDUDOZQZGFVRPZVTQZ
+      UAVPVQBDUEOZDUFOZDDUIOZVTVSWBABDUGOZUHVMHRVQVTSVQWESVQWFSVQWDSADUJQZVMJRV
+      QVSWBWEPZEFVRPZVTAWIWJUHZVMADUKQZEWGQZGWGQZFWGQZWKADAWHDULQJDUMUNZUOZAEBW
+      GKHTZAGBWGMHTZAFBWGLHTZWGWEDVREGFWGUPZWEUPVRUPZUQUTRAVMWJVTQABCDVTVREFHIA
+      VRSZAVTSZWPKLURUSVAAVSBQVMAVSWGBAWLWMWNVSWGQWQWRWSWGDVREGXAXBVBVCHVDRAWBB
+      QVMAWBWGBAWLWNWOWBWGQWQWSWTWGDVRGFXAXBVBVCHVDRVIVQWAVNWCVOAWAVNVJVMAVNWAA
+      BCDVTVREGHIXCXDWPKMURVERAWCVOVJVMAWCGFCNVOABCDVTVRGFHIXCXDWPMLURABCDGFHIW
+      PMLVFVGRVHVKVL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
