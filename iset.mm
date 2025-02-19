@@ -151156,6 +151156,29 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Local rings
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c LRing $.
+  $( Extend class notation with class of all local rings. $)
+  clring $a class LRing $.
+
+  ${
+    $d x y r $.
+    $( A local ring is a non-zero ring where any sum which equals one has one
+       of the two summands which has a multiplicative inverse.  Any field is a
+       local ring; the ring of integers is an example of a ring which is not a
+       local ring.  (Contributed by Jim Kingdon, 18-Feb-2025.) $)
+    df-lring $a |- LRing = { r e. Ring | ( ( 1r ` r ) =/= ( 0g ` r ) /\
+      A. x e. ( Base ` r ) A. y e. ( Base ` r )
+      ( ( x ( +g ` r ) y ) = ( 1r ` r ) ->
+      ( x e. ( Unit ` r ) \/ y e. ( Unit ` r ) ) ) ) } $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Ring apartness
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -168494,6 +168517,9 @@ htmldef "CRing" as
     "<IMG SRC='_cring.gif' WIDTH=40 HEIGHT=19 ALT=' CRing' TITLE='CRing'>";
   althtmldef "CRing" as "CRing";
   latexdef "CRing" as "\mathrm{CRing}";
+htmldef "LRing" as "LRing";
+  althtmldef "LRing" as "LRing";
+  latexdef "LRing" as "\mathrm{LRing}";
 htmldef "1r" as "<IMG SRC='_1r.gif' WIDTH=13 HEIGHT=19 ALT=' 1r' TITLE='1r'>";
   althtmldef "1r" as "1<SUB>r</SUB>";
   latexdef "1r" as "1_\mathrm{r}";
