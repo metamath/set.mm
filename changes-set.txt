@@ -85,6 +85,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+19-Feb-25 isdrngrd  [same]      removed extra hypothesis
+19-Feb-25 isdrngd   [same]      removed extra hypothesis
 15-Feb-25 abeq2f    eqabf
 15-Feb-25 rabeq2i   reqabi
 15-Feb-25 abeq1i    eqabci
