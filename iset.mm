@@ -148622,6 +148622,26 @@ $)
     $}
   $}
 
+  ${
+    mgpress.1 $e |- S = ( R |`s A ) $.
+    mgpress.2 $e |- M = ( mulGrp ` R ) $.
+    $( Subgroup commutes with the multiplication group operator.  (Contributed
+       by Mario Carneiro, 10-Jan-2015.)  (Proof shortened by AV,
+       18-Oct-2024.) $)
+    mgpress $p |- ( ( R e. V /\ A e. W ) -> ( M |`s A ) = ( mulGrp ` S ) ) $=
+      ( wcel cbs cfv cop csts co cmulr wceq eqid adantr cvv cn wa cnx cin cress
+      cplusg cmgp mgpvalg oveq1d mgpex ressvalsets mgpbasg ineq2d opeq2d oveq2d
+      sylan eqtr4d eqtrid ressmulrg ancoms eqcomd oveq12d ressex eqeltrid cslot
+      syl plusgslid simpri a1i basendxnn simpl basendxnplusgndx necomi mulrslid
+      wne slotex inex1g adantl setscomd 3eqtr4d ) BEIZAFIZUAZDUBJKZABJKZUCZLZMN
+      ZBUBUEKZBOKZLZMNZWFMNZDAUDNZCUFKZWBDWKWFMVTDWKPWABWIDEHWIQZUGRUHWBWMDWCAD
+      JKZUCZLZMNZWGVTDSIWAWMWSPBDEHUIADSFUJUOWBWFWRDMWBWEWQWCWBWDWPAVTWDWPPWAWD
+      BDEHWDQUKRULUMUNUPWBCWHCOKZLZMNZBWFMNZWJMNWNWLWBCXCXAWJMWBCBAUDNZXCGABEFU
+      JUQWBWTWIWHWBWIWTWAVTWIWTPABCWIFEGWOURUSUTUMVAWBCSIWNXBPWBCXDSGABEFVBVCCW
+      TWNSWNQWTQUGVEWBWHWCWIWEBESSTTWHTIZWBUEWHVDPXEVFVGVHWCTIWBVIVHVTWAVJWHWCV
+      NWBWCWHVKVLVHVTWISIWABOEVMVORWAWESIVTAWDFVPVQVRVSVS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
