@@ -142514,6 +142514,29 @@ $)
   $}
 
   ${
+    $d A a b $.  $d B b $.  $d C a b $.  $d D a b $.  $d S a b $.  $d a b ph $.
+    setscomd.a $e |- ( ph -> A e. Y ) $.
+    setscomd.b $e |- ( ph -> B e. Z ) $.
+    setscomd.s $e |- ( ph -> S e. V ) $.
+    setscomd.ab $e |- ( ph -> A =/= B ) $.
+    setscomd.c $e |- ( ph -> C e. W ) $.
+    setscomd.d $e |- ( ph -> D e. X ) $.
+    $( Component-setting is commutative when the x-values are different.
+       (Contributed by Jim Kingdon, 20-Feb-2025.) $)
+    setscomd $p |- ( ph ->
+       ( ( S sSet <. A , C >. ) sSet <. B , D >. ) =
+       ( ( S sSet <. B , D >. ) sSet <. A , C >. ) ) $=
+      ( csts co wceq vb va wne cop cv wi wa neeq2d opeq1d oveq2d oveq1d eqeq12d
+      simpr imbi12d neeq1d wcel adantr vex setscom syl22anc ex vtocld mpd ) ABC
+      UCZFBDUDZRSZCEUDZRSZFVGRSZVERSZTZOABUAUEZUCZVFVLEUDZRSZFVNRSZVERSZTZUFZVD
+      VKUFUACKMAVLCTZUGZVMVDVRVKWAVLCBAVTUMZUHWAVOVHVQVJWAVNVGVFRWAVLCEWBUIZUJW
+      AVPVIVERWAVNVGFRWCUJUKULUNAUBUEZVLUCZFWDDUDZRSZVNRSZVPWFRSZTZUFVSUBBJLAWD
+      BTZUGZWEVMWJVRWLWDBVLAWKUMZUOWLWHVOWIVQWLWGVFVNRWLWFVEFRWLWDBDWMUIZUJUKWL
+      WFVEVPRWNUJULUNAWEWJAWEUGFGUPZWEDHUPZEIUPZWJAWOWENUQAWEUMAWPWEPUQAWQWEQUQ
+      WDVLDEFGHIUBURUAURUSUTVAVBVBVC $.
+  $}
+
+  ${
     strslfvd.e $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
     strfvd.s $e |- ( ph -> S e. V ) $.
     strfvd.f $e |- ( ph -> Fun S ) $.
