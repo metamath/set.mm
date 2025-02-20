@@ -85,6 +85,11 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+20-Feb-25 lmodgrpd  ---         Moved from SN's mathbox to main set.mm
+20-Feb-25 lveclmodd ---         Moved from SN's mathbox to main set.mm
+20-Feb-25 isfsuppd  ---         Moved from SN's mathbox to main set.mm
+20-Feb-25 mnfled    ---         Moved from GS's mathbox to main set.mm
+20-Feb-25 fidmfisupp ---        Moved from GS's mathbox to main set.mm
 15-Feb-25 abeq2f    eqabf
 15-Feb-25 rabeq2i   reqabi
 15-Feb-25 abeq1i    eqabci
