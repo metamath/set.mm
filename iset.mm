@@ -151021,6 +151021,25 @@ $)
   $}
 
   ${
+    dvrdir.b $e |- B = ( Base ` R ) $.
+    dvrdir.u $e |- U = ( Unit ` R ) $.
+    dvrdir.p $e |- .+ = ( +g ` R ) $.
+    dvrdir.t $e |- ./ = ( /r ` R ) $.
+    $( Distributive law for the division operation of a ring.  (Contributed by
+       Thierry Arnoux, 30-Oct-2017.) $)
+    dvrdir $p |- ( ( R e. Ring /\ ( X e. B /\ Y e. B /\ Z e. U ) ) ->
+                     ( ( X .+ Y ) ./ Z ) = ( ( X ./ Z ) .+ ( Y ./ Z ) ) ) $=
+      ( wcel co cfv wceq a1i adantr eqid dvrvald crg w3a wa cinvr simpr1 simpr2
+      cmulr simpl cbs cui csrg ringsrg simpr3 unitinvcl syldan unitcld syl13anc
+      ringdir eqidd cdvr cgrp ringgrp grpcld oveq12d 3eqtr4d ) DUAMZFAMZGAMZHEM
+      ZUBZUCZFGCNZHDUDOZOZDUGOZNZFVNVONZGVNVONZCNZVLHBNFHBNZGHBNZCNVKVFVGVHVNAM
+      VPVSPVFVJUHZVFVGVHVIUEZVFVGVHVIUFZVKADEVNADUIOPVKIQZEDUJOPVKJQZVFDUKMVJDU
+      LRVFVJVIVNEMVFVGVHVIUMZDEVMHJVMSUNUOUPACDVOFGVNIKVOSURUQVKABDVOEVMVLHWEVK
+      VOUSZWFVKVMUSZBDUTOPVKLQZWBVKACDFGIKVFDVAMVJDVBRWCWDVCWGTVKVTVQWAVRCVKABD
+      VOEVMFHWEWHWFWIWJWBWCWGTVKABDVOEVMGHWEWHWFWIWJWBWDWGTVDVE $.
+  $}
+
+  ${
     ringinvdv.b $e |- B = ( Base ` R ) $.
     ringinvdv.u $e |- U = ( Unit ` R ) $.
     ringinvdv.d $e |- ./ = ( /r ` R ) $.
