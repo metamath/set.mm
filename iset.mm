@@ -143348,6 +143348,18 @@ $)
     ( cstv c4 df-starv 4nn ndxslid ) ABCDE $.
 
   ${
+    ressmulr.1 $e |- S = ( R |`s A ) $.
+    ${
+      ressmulr.2 $e |- .x. = ( .r ` R ) $.
+      $( ` .r ` is unaffected by restriction.  (Contributed by Stefan O'Rear,
+         27-Nov-2014.) $)
+      ressmulrg $p |- ( ( A e. V /\ R e. W ) -> .x. = ( .r ` S ) ) $=
+        ( wcel wa cmulr mulrslid cnx cbs cfv basendxnmulrndx necomi simpr simpl
+        resseqnbasd ) AEIZBFIZJADCKEBFGHLMNOMKOPQUAUBRUAUBST $.
+    $}
+  $}
+
+  ${
     srngstr.r $e |- R = ( {
       <. ( Base ` ndx ) , B >. , <. ( +g ` ndx ) , .+ >. ,
       <. ( .r ` ndx ) , .x. >. } u. { <. ( *r ` ndx ) , .* >. } ) $.
