@@ -151300,6 +151300,20 @@ $)
   $}
 
   ${
+    $d R r x y $.
+    $( A local ring is a non-zero ring.  (Contributed by Jim Kingdon,
+       20-Feb-2025.) $)
+    lringnz $p |- ( R e. LRing -> ( 1r ` R ) =/= ( 0g ` R ) ) $=
+      ( vx vy vr clring wcel cur cfv c0g wne cv cplusg co wceq cui wo cbs fveq2
+      wi wral wa neeq12d oveqd eqeq12d eleq2d orbi12d imbi12d raleqbidv anbi12d
+      crg df-lring elrab2 simprbi simpld ) AEFZAGHZAIHZJZBKZCKZALHZMZUPNZUSAOHZ
+      FZUTVDFZPZSZCAQHZTZBVITZUOAUJFURVKUAZDKZGHZVMIHZJZUSUTVMLHZMZVNNZUSVMOHZF
+      ZUTVTFZPZSZCVMQHZTZBWETZUAVLDAUJEVMANZVPURWGVKWHVNUPVOUQVMAGRZVMAIRUBWHWF
+      VJBWEVIVMAQRZWHWDVHCWEVIWJWHVSVCWCVGWHVRVBVNUPWHVQVAUSUTVMALRUCWIUDWHWAVE
+      WBVFWHVTVDUSVMAORZUEWHVTVDUTWKUEUFUGUHUHUIBCDUKULUMUN $.
+  $}
+
+  ${
     $d .+ u v $.  $d ./ u v $.  $d R r u v $.  $d X u v $.  $d Y u v $.
     lring.b $e |- ( ph -> B = ( Base ` R ) ) $.
     lring.u $e |- ( ph -> U = ( Unit ` R ) ) $.
