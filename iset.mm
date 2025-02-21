@@ -151458,6 +151458,28 @@ $)
       PMLVFVGRVHVKVL $.
   $}
 
+  ${
+    $d R r x y z $.
+    $( The relation given by ~ df-apr for a local ring is an apartness
+       relation.  (Contributed by Jim Kingdon, 20-Feb-2025.) $)
+    aprap $p |- ( R e. LRing -> ( #r ` R ) Ap ( Base ` R ) ) $=
+      ( vx vy vz vr clring wcel capr cfv cbs cv wbr wral wa csg cui fveq2 eqidd
+      cvv adantr cxp wss wn wi wo wap co copab df-apr wceq eleq2d anbi12d oveqd
+      eleq12d opabbidv elex wfn basfn a1i funfvex funfni syl2anc xpexg opabssxp
+      ssexd fvmptd3 eqsstrdi crg lringring cur c0g wne lringnz aprirr ralrimiva
+      simpr simprl simprr aprsym ralrimivva w3a simpl simpr1 simpr2 ralrimivvva
+      simpr3 aprcotr jca df-pap syl21anbrc ) AFGZAHIZAJIZWMUAZUBBKZWOWLLUCZBWMM
+      WOCKZWLLZWQWOWLLUDZCWMMBWMMZWRWODKZWLLWQXAWLLUEUDZDWMMCWMMBWMMZNWMWLUFWKW
+      LWOWMGZWQWMGZNZWOWQAOIZUGZAPIZGZNZBCUHZWNWKEAWOEKZJIZGZWQXNGZNZWOWQXMOIZU
+      GZXMPIZGZNZBCUHXLSHSBCEUIXMAUJZYBXKBCYCXQXFYAXJYCXOXDXPXEYCXNWMWOXMAJQZUK
+      YCXNWMWQYDUKULYCXSXHXTXIYCXRXGWOWQXMAOQUMXMAPQUNULUOAFUPZWKXLWNSWKWMSGZYF
+      WNSGWKJSUQZASGYFYGWKURUSYEYFSAJAJUTVAVBZYHWMWMSSVCVBXLWNUBWKXJBCWMWMVDZUS
+      VEVFYIVGWKWPBWMWKXDNZWMWLAWOYJWMRYJWLRWKAVHGZXDAVIZTWKXDVPWKAVJIAVKIVLXDA
+      VMTVNVOWKWTXCWKWSBCWMWMWKXFNZWMWLAWOWQYMWMRYMWLRWKYKXFYLTWKXDXEVQWKXDXEVR
+      VSVTWKXBBCDWMWMWMWKXDXEXAWMGZWAZNZWMWLAWOWQXAYPWMRYPWLRWKYOWBWKXDXEYNWCWK
+      XDXEYNWDWKXDXEYNWFWGWEWHBCDWMWLWIWJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
