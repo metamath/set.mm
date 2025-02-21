@@ -151287,6 +151287,19 @@ $)
   $}
 
   ${
+    $d R r x y $.
+    $( A local ring is a ring.  (Contributed by Jim Kingdon, 20-Feb-2025.) $)
+    lringring $p |- ( R e. LRing -> R e. Ring ) $=
+      ( vx vy vr clring wcel crg cur cfv c0g wne cv cplusg co wceq cui cbs wral
+      wo fveq2 wi neeq12d oveqd eqeq12d eleq2d orbi12d imbi12d anbi12d df-lring
+      wa raleqbidv elrab2 simplbi ) AEFAGFAHIZAJIZKZBLZCLZAMIZNZUNOZUQAPIZFZURV
+      BFZSZUAZCAQIZRZBVGRZUJZDLZHIZVKJIZKZUQURVKMIZNZVLOZUQVKPIZFZURVRFZSZUAZCV
+      KQIZRZBWCRZUJVJDAGEVKAOZVNUPWEVIWFVLUNVMUOVKAHTZVKAJTUBWFWDVHBWCVGVKAQTZW
+      FWBVFCWCVGWHWFVQVAWAVEWFVPUTVLUNWFVOUSUQURVKAMTUCWGUDWFVSVCVTVDWFVRVBUQVK
+      APTZUEWFVRVBURWIUEUFUGUKUKUHBCDUIULUM $.
+  $}
+
+  ${
     $d .+ u v $.  $d ./ u v $.  $d R r u v $.  $d X u v $.  $d Y u v $.
     lring.b $e |- ( ph -> B = ( Base ` R ) ) $.
     lring.u $e |- ( ph -> U = ( Unit ` R ) ) $.
