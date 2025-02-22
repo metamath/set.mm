@@ -151869,6 +151869,38 @@ $)
       ) filGen ran ( a e. RR+ |-> ( `' d " ( 0 [,) a ) ) ) ) ) $.
   $}
 
+  $c CCfld $.
+
+  $( Extend class notation with the field of complex numbers. $)
+  ccnfld $a class CCfld $.
+
+  $( The field of complex numbers.  Other number fields and rings can be
+     constructed by applying the ` |``s ` restriction operator.
+
+     The contract of this set is defined entirely by ~ cnfldex , ~ cnfldadd ,
+     ~ cnfldmul , ~ cnfldcj , and ~ cnfldbas .
+
+     We may add additional members to this in the future.
+
+     At least for now, this structure does not include a topology, order, a
+     distance function, or function mapping metrics.
+
+     (Contributed by Stefan O'Rear, 27-Nov-2014.)  (Revised by Thierry Arnoux,
+     15-Dec-2017.)  (New usage is discouraged.) $)
+  df-icnfld $a |- CCfld = ( { <. ( Base ` ndx ) , CC >. ,
+      <. ( +g ` ndx ) , + >. , <. ( .r ` ndx ) , x. >. } u.
+      { <. ( *r ` ndx ) , * >. } ) $.
+
+  $( The field of complex numbers is a structure.  (Contributed by Mario
+     Carneiro, 14-Aug-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.) $)
+  cnfldstr $p |- CCfld Struct <. 1 , ; 1 3 >. $=
+    ( ccnfld c1 c3 cdc cop wbr wtru c4 cc caddc cmul ccj cvv wcel cnex wf mp2an
+    a1i fex cz cstr df-icnfld cxp ax-addf xpex ax-mulf cjf srngstrd cuz cfv cle
+    4z 1nn0 3nn decnncl nnzi 1nn 3nn0 4nn0 4re 9re ltleii declei eluz2 mpbir3an
+    c9 4lt9 strext mptru ) ABBCDZEUAFGBHVJAGIJAKLMMMMUBIMNZGORJMNZGIIUCZIJPVMMN
+    ZVLUDIIOOUEZVMIMJSQRKMNZGVMIKPVNVPUFVOVMIMKSQRLMNZGIILPVKVQUGOIIMLSQRUHVJHU
+    IUJNZGVRHTNVJTNHVJUKFULVJBCUMUNUOUPBCHUQURUSHVFUTVAVGVBVCHVJVDVERVHVI $.
+
 
 $(
 ###############################################################################
@@ -169097,6 +169129,11 @@ htmldef "MetOpen" as
   "<IMG SRC='_metopen.gif' WIDTH=59 HEIGHT=19 ALT=' MetOpen' TITLE='MetOpen'>";
   althtmldef "MetOpen" as "MetOpen";
   latexdef "MetOpen" as "\mathrm{MetOpen}";
+htmldef "CCfld" as "&#8450;<SUB>fld</SUB>";
+    /* 2-Jan-2016 reverted sans-serif */
+  althtmldef "CCfld" as "&#8450;<SUB>fld</SUB>";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "CCfld" as "\mathrm{CCfld}";
 htmldef "fBas" as
     "<IMG SRC='_fbas.gif' WIDTH=29 HEIGHT=19 ALT=' fBas' TITLE='fBas'>";
   althtmldef "fBas" as "fBas";
