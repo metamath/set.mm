@@ -151385,7 +151385,7 @@ $)
     aprval.r $e |- ( ph -> R e. Ring ) $.
     aprval.x $e |- ( ph -> X e. B ) $.
     aprval.y $e |- ( ph -> Y e. B ) $.
-    $( Expand the ~ df-apr definition.  (Contributed by Jim Kingdon,
+    $( Expand Definition ~ df-apr .  (Contributed by Jim Kingdon,
        17-Feb-2025.) $)
     aprval $p |- ( ph -> ( X .# Y <-> ( X .- Y ) e. U ) ) $=
       ( vx vy cfv wcel cvv vr wbr csg co cui cop df-br cv cbs copab capr df-apr
