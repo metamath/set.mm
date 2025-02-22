@@ -72394,14 +72394,29 @@ $)
   wtap $a wff R TAp A $.
 
   ${
-    $d x y z A $.  $d x y z R $.
+    $d x y A $.  $d x y R $.
     $( Tight apartness predicate.  A relation ` R ` is a tight apartness if it
        is irreflexive, symmetric, cotransitive, and tight.  (Contributed by Jim
        Kingdon, 5-Feb-2025.) $)
-    df-tap $a |- ( R TAp A <-> ( R C_ ( A X. A ) /\ ( A. x e. A -. x R x /\
+    df-tap $a |- ( R TAp A <-> ( R Ap A /\
+      A. x e. A A. y e. A ( -. x R y -> x = y ) ) ) $.
+  $}
+
+  ${
+    $d A x y z $.  $d R x y z $.
+    $( Tight apartness with the apartness properties from ~ df-pap expanded.
+       (Contributed by Jim Kingdon, 21-Feb-2025.) $)
+    dftap2 $p |- ( R TAp A <-> ( R C_ ( A X. A ) /\ ( A. x e. A -. x R x /\
       A. x e. A A. y e. A ( x R y -> y R x ) ) /\
       ( A. x e. A A. y e. A A. z e. A ( x R y -> ( x R z \/ y R z ) ) /\
-      A. x e. A A. y e. A ( -. x R y -> x = y ) ) ) ) $.
+      A. x e. A A. y e. A ( -. x R y -> x = y ) ) ) ) $=
+      ( wtap cxp wss cv wbr wn wral wi wa wo weq simpld simprd jca sylanbrc w3a
+      df-tap biimpi df-pap sylib 3jca simp1 simp2l simp2r simp3l simp3r impbii
+      wap ) DEFZEDDGHZAIZUPEJKADLZUPBIZEJZURUPEJMBDLADLZNZUSUPCIZEJURVBEJOMCDLB
+      DLADLZUSKABPMBDLADLZNZUAZUNUOVAVEUNUOUQUNUOUQNZUTVCNZUNDEUMZVGVHNUNVIVDUN
+      VIVDNABDEUBZUCZQABCDEUDZUEZQZQUNUQUTUNUOUQVNRUNUTVCUNVGVHVMRZQSUNVCVDUNUT
+      VCVORUNVIVDVKRSUFVFVIVDUNVFVGVHVIVFUOUQUOVAVEUGUOUQUTVEUHSVFUTVCUOUQUTVEU
+      IUOVAVCVDUJSVLTUOVAVCVDUKVJTUL $.
   $}
 
   ${
@@ -72410,7 +72425,7 @@ $)
        Kingdon, 8-Feb-2025.) $)
     tapeq1 $p |- ( R = S -> ( R TAp A <-> S TAp A ) ) $=
       ( vx vy vz wceq wss cv wbr wn wral wi wa wo w3a wtap breq notbid 2ralbidv
-      cxp sseq1 ralbidv imbi12d anbi12d orbi12d imbi1d 3anbi123d df-tap 3bitr4g
+      cxp sseq1 ralbidv imbi12d anbi12d orbi12d imbi1d 3anbi123d dftap2 3bitr4g
       ) BCGZBAAUAZHZDIZUNBJZKZDALZUNEIZBJZURUNBJZMZEALDALZNZUSUNFIZBJZURVDBJZOZ
       MZFALZEALDALZUSKZUNURGZMZEALDALZNZPCULHZUNUNCJZKZDALZUNURCJZURUNCJZMZEALD
       ALZNZVTUNVDCJZURVDCJZOZMZFALZEALDALZVTKZVLMZEALDALZNZPABQACQUKUMVPVCWDVOW
@@ -72425,26 +72440,11 @@ $)
        Kingdon, 15-Feb-2025.) $)
     tapeq2 $p |- ( A = B -> ( R TAp A <-> R TAp B ) ) $=
       ( vx vy vz wceq cxp wss cv wbr wn wral wi wa w3a raleq raleqbi1dv anbi12d
-      wtap wo xpeq12 anidms sseq2d 3anbi123d df-tap 3bitr4g ) ABGZCAAHZIZDJZUKC
+      wtap wo xpeq12 anidms sseq2d 3anbi123d dftap2 3bitr4g ) ABGZCAAHZIZDJZUKC
       KLZDAMZUKEJZCKZUNUKCKNZEAMZDAMZOZUOUKFJZCKUNUTCKUANZFAMZEAMZDAMZUOLUKUNGN
       ZEAMZDAMZOZPCBBHZIZULDBMZUPEBMZDBMZOZVAFBMZEBMZDBMZVEEBMZDBMZOZPACTBCTUHU
       JVJUSVNVHVTUHUIVICUHUIVIGABABUBUCUDUHUMVKURVMULDABQUQVLDABUPEABQRSUHVDVQV
       GVSVCVPDABVBVOEABVAFABQRRVFVRDABVEEABQRSUEDEFACUFDEFBCUFUG $.
-  $}
-
-  ${
-    $d A x y z $.  $d R x y z $.
-    $( Tight apartness in terms of apartness.  (Contributed by Jim Kingdon,
-       16-Feb-2025.) $)
-    dftapap $p |- ( R TAp A <-> ( R Ap A /\
-        A. x e. A A. y e. A ( -. x R y -> x = y ) ) ) $=
-      ( vz wtap wap cv wbr wn weq wi wral cxp biimpi simpld simprd jca adantr
-      wa wss wo df-tap simp1d simp2d simp3d df-pap syl21anbrc simprrd syl3anbrc
-      w3a anim1i impbii ) CDFZCDGZAHZBHZDIZJABKLBCMACMZTZUNUOUSUNDCCNUAZUPUPDIJ
-      ACMZURUQUPDILBCMACMZURUPEHZDIUQVDDIUBLECMBCMACMZTZUOUNVAVBVCTZVEUSTZUNVAV
-      GVHUKABECDUCZOZUDUNVBVCUNVAVGVHVJUEZPUNVCVEUNVBVCVKQUNVEUSUNVAVGVHVJUFZPR
-      ABECDUGZUHUNVEUSVLQRUTVAVGVHUNUOVAUSUOVAVBUOVAVBTZVFUOVNVFTVMOZPZPSUOVGUS
-      UOVBVCUOVAVBVPQUOVCVEUOVNVFVOQPRSUOVEUSUOVNVCVEVOUIULVIUJUM $.
   $}
 
   ${
@@ -72459,7 +72459,7 @@ $)
       adantl simplr necomd neqned equequ2 dcbid equequ1 ralbidv simplr1 rspcdva
       olcd simpll simplr3 exmiddc syl mpjaodan 3adant2 3adant1 orbi12d ad2antlr
       orcd mpbird ex sylbid ralrimivvva notbid df-ne notbii simpl simprl simprr
-      notnotrdc ralrimivva df-tap syl3anbrc ) ABIZUAZBEJZAEJZDKZELCKZELMXGXHNZM
+      notnotrdc ralrimivva dftap2 syl3anbrc ) ABIZUAZBEJZAEJZDKZELCKZELMXGXHNZM
       DCUBZEEUDUEZFKZXLXJOZPZFEJZXLGKZXJOZXPXLXJOZUCZGEJFEJZMXQXLHKZXJOZXPYAXJO
       ZUPZUCZHEJGEJFEJZXQPZFGIZUCZGEJFEJZMEXJUFXKXFXIDCEEUGUHXFXOXTXOXFXNFEXLEL
       ZXMXLXLNZXLUIXMXLXLQXJLZYKYLXLXLXJRYKYMYLSXIXLXHNZYLDCXLXLEEXGXLXHUJZXHXL
@@ -72511,7 +72511,7 @@ $)
       jctil w3a simpr simplrr eqnetrrd necomd olcd neqned orcd simpl1 2onn elnn
       wdc com sylancl simpl3 nndceq syl2anc exmiddc syl mpjaodan 3adant2 adantr
       ibar adantl 3adant1 orbi12d mpbird sylbid ralrimivvva notbid simpll ancom
-      ex sylnib imnan sylibr mtod simplrl nnedc ralrimivva jca df-tap syl3anbrc
+      ex sylnib imnan sylibr mtod simplrl nnedc ralrimivva jca dftap2 syl3anbrc
       mpbid ) AGZGZCHZIJBHZIJKAXLXMLZKZKCBUAZIIUBUCZDHZXRXPMZGZDINZXREHZXPMZYBX
       RXPMZUDZEINDINZKYCXRFHZXPMZYBYGXPMZUEZUDZFINEINDINZYCGZDEOZUDZEINDINZKIXP
       UFXQXKXOCBIIUGUHXKYFYAYFXKYEDEIIXRIJZYBIJZKZYCYDYSYCAXRYBLZKZYDYCXRYBPXPJ
@@ -72566,7 +72566,7 @@ $)
     exmidapne $p |- ( EXMID -> ( R TAp A <->
         R = { <. u , v >. | ( ( u e. A /\ v e. A ) /\ u =/= v ) } ) ) $=
       ( vx vy vz wem cv wcel wa wne wceq simpr wbr wn wral wi syl adantr vp cfv
-      wtap copab c1st c2nd cop cxp simplr wss wo w3a df-tap biimpi simp1d sseld
+      wtap copab c1st c2nd cop cxp simplr wss wo w3a dftap2 biimpi simp1d sseld
       sylc 1st2nd2 xp1st xp2nd eqeltrrd opeq2d id notbid simp2d simpld ad3antlr
       breq12d df-br sylnib eqneltrrd pm2.65da neqned jca31 eleq1 bi2anan9 simpl
       rspcdva wb neeq12d anbi12d opelopabga syl2anc mpbird eqeltrd wrel relopab
@@ -90063,7 +90063,7 @@ $)
       cfv 2rexbidv anbi2d elopabi df-ap eleq2s cop wrel relopabi simp-5l 1st2nd
       sylancr simprll simp-5r ax-icn a1i simp-4r mulcld eqeltrd simprlr simpllr
       recnd addcld jca elxp6 sylanbrc rexlimdva2 rexlimdva mpd ssriv apirr rgen
-      simplr apsym biimpd rgen2 pm3.2i apcotr rgen3 biimprd df-tap mpbir3an
+      simplr apsym biimpd rgen2 pm3.2i apcotr rgen3 biimprd dftap2 mpbir3an
       apti ) JKUBKJJUCZUDALZXAKMUEZAJNZXABLZKMZXDXAKMZUFZBJNAJNZOXEXACLZKMXDXIK
       MUGUFZCJNBJNAJNZXEUEZXAXDPZUFZBJNAJNZOUAKWTUALZKQZXPUHUQZDLZRELZUIUJZUKUJ
       ZPZXPULUQZFLZRGLZUIUJZUKUJZPZOZXSYEUMMXTYFUMMUGZOZGSTZFSTZESTZDSTZXPWTQZY
