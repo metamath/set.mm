@@ -142487,9 +142487,8 @@ $)
   ${
     setscom.1 $e |- A e. _V $.
     setscom.2 $e |- B e. _V $.
-    $( Component-setting is commutative when the x-values are different.
-       (Contributed by Mario Carneiro, 5-Dec-2014.)  (Revised by Mario
-       Carneiro, 30-Apr-2015.) $)
+    $( Different components can be set in any order.  (Contributed by Mario
+       Carneiro, 5-Dec-2014.)  (Revised by Mario Carneiro, 30-Apr-2015.) $)
     setscom $p |- ( ( ( S e. V /\ A =/= B ) /\ ( C e. W /\ D e. X ) ) ->
        ( ( S sSet <. A , C >. ) sSet <. B , D >. ) =
        ( ( S sSet <. B , D >. ) sSet <. A , C >. ) ) $=
@@ -142521,8 +142520,8 @@ $)
     setscomd.ab $e |- ( ph -> A =/= B ) $.
     setscomd.c $e |- ( ph -> C e. W ) $.
     setscomd.d $e |- ( ph -> D e. X ) $.
-    $( Component-setting is commutative when the x-values are different.
-       (Contributed by Jim Kingdon, 20-Feb-2025.) $)
+    $( Different components can be set in any order.  (Contributed by Jim
+       Kingdon, 20-Feb-2025.) $)
     setscomd $p |- ( ph ->
        ( ( S sSet <. A , C >. ) sSet <. B , D >. ) =
        ( ( S sSet <. B , D >. ) sSet <. A , C >. ) ) $=
@@ -143372,14 +143371,12 @@ $)
 
   ${
     ressmulr.1 $e |- S = ( R |`s A ) $.
-    ${
-      ressmulr.2 $e |- .x. = ( .r ` R ) $.
-      $( ` .r ` is unaffected by restriction.  (Contributed by Stefan O'Rear,
-         27-Nov-2014.) $)
-      ressmulrg $p |- ( ( A e. V /\ R e. W ) -> .x. = ( .r ` S ) ) $=
-        ( wcel wa cmulr mulrslid cnx cbs cfv basendxnmulrndx necomi simpr simpl
-        resseqnbasd ) AEIZBFIZJADCKEBFGHLMNOMKOPQUAUBRUAUBST $.
-    $}
+    ressmulr.2 $e |- .x. = ( .r ` R ) $.
+    $( ` .r ` is unaffected by restriction.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.) $)
+    ressmulrg $p |- ( ( A e. V /\ R e. W ) -> .x. = ( .r ` S ) ) $=
+      ( wcel wa cmulr mulrslid cnx cbs basendxnmulrndx necomi simpr resseqnbasd
+      cfv simpl ) AEIZBFIZJADCKEBFGHLMNSMKSOPUAUBQUAUBTR $.
   $}
 
   ${
@@ -148625,7 +148622,7 @@ $)
   ${
     mgpress.1 $e |- S = ( R |`s A ) $.
     mgpress.2 $e |- M = ( mulGrp ` R ) $.
-    $( Subgroup commutes with the multiplication group operator.  (Contributed
+    $( Subgroup commutes with the multiplicative group operator.  (Contributed
        by Mario Carneiro, 10-Jan-2015.)  (Proof shortened by AV,
        18-Oct-2024.) $)
     mgpress $p |- ( ( R e. V /\ A e. W ) -> ( M |`s A ) = ( mulGrp ` S ) ) $=
@@ -151276,10 +151273,10 @@ $)
 
   ${
     $d x y r $.
-    $( A local ring is a non-zero ring where any sum which equals one has one
-       of the two summands which has a multiplicative inverse.  Any field is a
-       local ring; the ring of integers is an example of a ring which is not a
-       local ring.  (Contributed by Jim Kingdon, 18-Feb-2025.) $)
+    $( A local ring is a nonzero ring where for any two elements summing to
+       one, at least one is invertible.  Any field is a local ring; the ring of
+       integers is an example of a ring which is not a local ring.
+       (Contributed by Jim Kingdon, 18-Feb-2025.) $)
     df-lring $a |- LRing = { r e. Ring | ( ( 1r ` r ) =/= ( 0g ` r ) /\
       A. x e. ( Base ` r ) A. y e. ( Base ` r )
       ( ( x ( +g ` r ) y ) = ( 1r ` r ) ->
@@ -151301,7 +151298,7 @@ $)
 
   ${
     $d R r x y $.
-    $( A local ring is a non-zero ring.  (Contributed by Jim Kingdon,
+    $( A local ring is a nonzero ring.  (Contributed by Jim Kingdon,
        20-Feb-2025.) $)
     lringnz $p |- ( R e. LRing -> ( 1r ` R ) =/= ( 0g ` R ) ) $=
       ( vx vy vr clring wcel cur cfv c0g wne cv cplusg co wceq cui wo cbs fveq2
@@ -151324,8 +151321,8 @@ $)
     lring.s $e |- ( ph -> ( X .+ Y ) e. U ) $.
     lring.x $e |- ( ph -> X e. B ) $.
     lring.y $e |- ( ph -> Y e. B ) $.
-    $( If the sum of two elements of a local ring is invertible, then one of
-       the summands must be invertible.  (Contributed by Jim Kingdon,
+    $( If the sum of two elements of a local ring is invertible, then at least
+       one of the summands must be invertible.  (Contributed by Jim Kingdon,
        18-Feb-2025.) $)
     lringuplu $p |- ( ph -> ( X e. U \/ Y e. U ) ) $=
       ( co wcel vu vv vr cui cfv cplusg cur wceq cdvr oveqd oveq12d crg cbs c0g
@@ -151413,7 +151410,7 @@ $)
     ${
       $d R r x y $.  $d X x y $.
       aprirr.nz $e |- ( ph -> ( 1r ` R ) =/= ( 0g ` R ) ) $.
-      $( The apartness relation given by ~ df-apr for a non-zero ring is
+      $( The apartness relation given by ~ df-apr for a nonzero ring is
          irreflexive.  (Contributed by Jim Kingdon, 16-Feb-2025.) $)
       aprirr $p |- ( ph -> -. X .# X ) $=
         ( wbr csg cfv co cui wcel wceq eqid mtbird eqidd cgrp ringgrpd grpsubid
