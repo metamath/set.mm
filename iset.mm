@@ -173940,6 +173940,44 @@ $)
       WKVOWANPWBVRWC $.
   $}
 
+  ${
+    $d x y z $.
+    $( The analytic Markov principle can be expressed either with two arbitrary
+       real numbers, or one arbitrary number and zero.  (Contributed by Jim
+       Kingdon, 23-Feb-2025.) $)
+    neap0mkv $p |- ( A. x e. RR A. y e. RR ( x =/= y -> x =//= y )
+        <-> A. x e. RR ( x =/= 0 -> x =//= 0 ) ) $=
+      ( vz cv wne cap wbr wi cr wral cc0 wcel wceq imbi12d neeq1 breq1 wa recnd
+      0re cc neeq2 breq2 rspcv ax-mp ralimi cbvralv cmin co simpl simprl simprr
+      resubcld rspcdva necon3bid subap0 syl2anc 3imtr3d ralrimivva sylbi impbii
+      subeq0ad wb ) ADZBDZEZVCVDFGZHZBIJZAIJZVCKEZVCKFGZHZAIJZVHVLAIKILVHVLHSVG
+      VLBKIVDKMVEVJVFVKVDKVCUAVDKVCFUBNUCUDUEVMCDZKEZVNKFGZHZCIJZVIVLVQACIVCVNM
+      VJVOVKVPVCVNKOVCVNKFPNUFVRVGABIIVRVCILZVDILZQZQZVCVDUGUHZKEZWCKFGZVEVFWBV
+      QWDWEHCIWCVNWCMVOWDVPWEVNWCKOVNWCKFPNVRWAUIWBVCVDVRVSVTUJZVRVSVTUKZULUMWB
+      WCKVCVDWBVCVDWBVCWFRZWBVDWGRZVAUNWBVCTLVDTLWEVFVBWHWIVCVDUOUPUQURUSUT $.
+  $}
+
+  ${
+    $d x y z $.
+    $( If ` < ` can be expressed as holding exactly when ` <_ ` holds and the
+       values are not equal, then the analytic Markov's Principle applies.  (To
+       get the regular Markov's Principle, combine with ~ neapmkv ).
+       (Contributed by Jim Kingdon, 23-Feb-2025.) $)
+    ltlenmkv $p |- ( A. x e. RR A. y e. RR
+        ( x < y <-> ( x <_ y /\ y =/= x ) ) ->
+        A. x e. RR A. y e. RR ( x =/= y -> x =//= y ) ) $=
+      ( vz cv clt wbr cle wne wa wb cr wral cc0 cap wcel wceq breq2 neeq1 breq1
+      wi cabs simplr recnd abscld absge0d simpr absne0d anbi12d bibi12d ralbidv
+      cfv neeq2 simpll rspcdva mpbir2and gt0ap0d cc abs00ap syl mpbid ralrimiva
+      0red ex imbi12d cbvralv sylib neap0mkv sylibr ) ADZBDZEFZVIVJGFZVJVIHZIZJ
+      ZBKLZAKLZVIMHZVIMNFZTZAKLZVIVJHVIVJNFTBKLAKLVQCDZMHZWBMNFZTZCKLWAVQWECKVQ
+      WBKOZIZWCWDWGWCIZWBUAUKZMNFZWDWHWIWHWBWHWBVQWFWCUBUCZUDZWHMWIEFZMWIGFZWIM
+      HZWHWBWKUEWHWBWKWGWCUFUGWHMVJEFZMVJGFZVJMHZIZJZWMWNWOIZJBKWIVJWIPZWPWMWSX
+      AVJWIMEQXBWQWNWRWOVJWIMGQVJWIMRUHUIWHVPWTBKLAKMVIMPZVOWTBKXCVKWPVNWSVIMVJ
+      ESXCVLWQVMWRVIMVJGSVIMVJULUHUIUJVQWFWCUMWHVBUNWLUNUOUPWHWBUQOWJWDJWKWBURU
+      SUTVCVAWEVTCAKWBVIPWCVRWDVSWBVIMRWBVIMNSVDVEVFABVGVH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
