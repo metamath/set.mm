@@ -18309,6 +18309,7 @@ $)
   $v .0. $.
   $v .1. $.
   $v .|| $.
+  $v .# $.
   $v .~ $.
   $v ._|_ $.
   $v .+^ $.
@@ -18367,6 +18368,7 @@ $)
 
   $( Define a connective symbol for use as a class variable. $)
   c.pa $f class .|| $.
+  c.ap $f class .# $.
 
   $( Let ` D ` be a class variable. $)
   cD $f class D $.
@@ -72371,20 +72373,50 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+  $c Ap $.
+
+  $( Apartness predicate symbol. $)
+  wap $a wff R Ap A $.
+
+  ${
+    $d x y z A $.  $d x y z R $.
+    $( Apartness predicate.  A relation ` R ` is an apartness if it is
+       irreflexive, symmetric, and cotransitive.  (Contributed by Jim Kingdon,
+       14-Feb-2025.) $)
+    df-pap $a |- ( R Ap A <-> ( ( R C_ ( A X. A ) /\ A. x e. A -. x R x ) /\
+      ( A. x e. A A. y e. A ( x R y -> y R x ) /\
+      A. x e. A A. y e. A A. z e. A ( x R y -> ( x R z \/ y R z ) ) ) ) ) $.
+  $}
+
   $c TAp $.
 
   $( Tight apartness predicate symbol. $)
   wtap $a wff R TAp A $.
 
   ${
-    $d x y z A $.  $d x y z R $.
+    $d x y A $.  $d x y R $.
     $( Tight apartness predicate.  A relation ` R ` is a tight apartness if it
        is irreflexive, symmetric, cotransitive, and tight.  (Contributed by Jim
        Kingdon, 5-Feb-2025.) $)
-    df-tap $a |- ( R TAp A <-> ( R C_ ( A X. A ) /\ ( A. x e. A -. x R x /\
+    df-tap $a |- ( R TAp A <-> ( R Ap A /\
+      A. x e. A A. y e. A ( -. x R y -> x = y ) ) ) $.
+  $}
+
+  ${
+    $d A x y z $.  $d R x y z $.
+    $( Tight apartness with the apartness properties from ~ df-pap expanded.
+       (Contributed by Jim Kingdon, 21-Feb-2025.) $)
+    dftap2 $p |- ( R TAp A <-> ( R C_ ( A X. A ) /\ ( A. x e. A -. x R x /\
       A. x e. A A. y e. A ( x R y -> y R x ) ) /\
       ( A. x e. A A. y e. A A. z e. A ( x R y -> ( x R z \/ y R z ) ) /\
-      A. x e. A A. y e. A ( -. x R y -> x = y ) ) ) ) $.
+      A. x e. A A. y e. A ( -. x R y -> x = y ) ) ) ) $=
+      ( wtap cxp wss cv wbr wn wral wi wa wo weq simpld simprd jca sylanbrc w3a
+      df-tap biimpi df-pap sylib 3jca simp1 simp2l simp2r simp3l simp3r impbii
+      wap ) DEFZEDDGHZAIZUPEJKADLZUPBIZEJZURUPEJMBDLADLZNZUSUPCIZEJURVBEJOMCDLB
+      DLADLZUSKABPMBDLADLZNZUAZUNUOVAVEUNUOUQUNUOUQNZUTVCNZUNDEUMZVGVHNUNVIVDUN
+      VIVDNABDEUBZUCZQABCDEUDZUEZQZQUNUQUTUNUOUQVNRUNUTVCUNVGVHVMRZQSUNVCVDUNUT
+      VCVORUNVIVDVKRSUFVFVIVDUNVFVGVHVIVFUOUQUOVAVEUGUOUQUTVEUHSVFUTVCUOUQUTVEU
+      IUOVAVCVDUJSVLTUOVAVCVDUKVJTUL $.
   $}
 
   ${
@@ -72393,7 +72425,7 @@ $)
        Kingdon, 8-Feb-2025.) $)
     tapeq1 $p |- ( R = S -> ( R TAp A <-> S TAp A ) ) $=
       ( vx vy vz wceq wss cv wbr wn wral wi wa wo w3a wtap breq notbid 2ralbidv
-      cxp sseq1 ralbidv imbi12d anbi12d orbi12d imbi1d 3anbi123d df-tap 3bitr4g
+      cxp sseq1 ralbidv imbi12d anbi12d orbi12d imbi1d 3anbi123d dftap2 3bitr4g
       ) BCGZBAAUAZHZDIZUNBJZKZDALZUNEIZBJZURUNBJZMZEALDALZNZUSUNFIZBJZURVDBJZOZ
       MZFALZEALDALZUSKZUNURGZMZEALDALZNZPCULHZUNUNCJZKZDALZUNURCJZURUNCJZMZEALD
       ALZNZVTUNVDCJZURVDCJZOZMZFALZEALDALZVTKZVLMZEALDALZNZPABQACQUKUMVPVCWDVOW
@@ -72408,7 +72440,7 @@ $)
        Kingdon, 15-Feb-2025.) $)
     tapeq2 $p |- ( A = B -> ( R TAp A <-> R TAp B ) ) $=
       ( vx vy vz wceq cxp wss cv wbr wn wral wi wa w3a raleq raleqbi1dv anbi12d
-      wtap wo xpeq12 anidms sseq2d 3anbi123d df-tap 3bitr4g ) ABGZCAAHZIZDJZUKC
+      wtap wo xpeq12 anidms sseq2d 3anbi123d dftap2 3bitr4g ) ABGZCAAHZIZDJZUKC
       KLZDAMZUKEJZCKZUNUKCKNZEAMZDAMZOZUOUKFJZCKUNUTCKUANZFAMZEAMZDAMZUOLUKUNGN
       ZEAMZDAMZOZPCBBHZIZULDBMZUPEBMZDBMZOZVAFBMZEBMZDBMZVEEBMZDBMZOZPACTBCTUHU
       JVJUSVNVHVTUHUIVICUHUIVIGABABUBUCUDUHUMVKURVMULDABQUQVLDABUPEABQRSUHVDVQV
@@ -72427,7 +72459,7 @@ $)
       adantl simplr necomd neqned equequ2 dcbid equequ1 ralbidv simplr1 rspcdva
       olcd simpll simplr3 exmiddc syl mpjaodan 3adant2 3adant1 orbi12d ad2antlr
       orcd mpbird ex sylbid ralrimivvva notbid df-ne notbii simpl simprl simprr
-      notnotrdc ralrimivva df-tap syl3anbrc ) ABIZUAZBEJZAEJZDKZELCKZELMXGXHNZM
+      notnotrdc ralrimivva dftap2 syl3anbrc ) ABIZUAZBEJZAEJZDKZELCKZELMXGXHNZM
       DCUBZEEUDUEZFKZXLXJOZPZFEJZXLGKZXJOZXPXLXJOZUCZGEJFEJZMXQXLHKZXJOZXPYAXJO
       ZUPZUCZHEJGEJFEJZXQPZFGIZUCZGEJFEJZMEXJUFXKXFXIDCEEUGUHXFXOXTXOXFXNFEXLEL
       ZXMXLXLNZXLUIXMXLXLQXJLZYKYLXLXLXJRYKYMYLSXIXLXHNZYLDCXLXLEEXGXLXHUJZXHXL
@@ -72479,7 +72511,7 @@ $)
       jctil w3a simpr simplrr eqnetrrd necomd olcd neqned orcd simpl1 2onn elnn
       wdc com sylancl simpl3 nndceq syl2anc exmiddc syl mpjaodan 3adant2 adantr
       ibar adantl 3adant1 orbi12d mpbird sylbid ralrimivvva notbid simpll ancom
-      ex sylnib imnan sylibr mtod simplrl nnedc ralrimivva jca df-tap syl3anbrc
+      ex sylnib imnan sylibr mtod simplrl nnedc ralrimivva jca dftap2 syl3anbrc
       mpbid ) AGZGZCHZIJBHZIJKAXLXMLZKZKCBUAZIIUBUCZDHZXRXPMZGZDINZXREHZXPMZYBX
       RXPMZUDZEINDINZKYCXRFHZXPMZYBYGXPMZUEZUDZFINEINDINZYCGZDEOZUDZEINDINZKIXP
       UFXQXKXOCBIIUGUHXKYFYAYFXKYEDEIIXRIJZYBIJZKZYCYDYSYCAXRYBLZKZYDYCXRYBPXPJ
@@ -72534,7 +72566,7 @@ $)
     exmidapne $p |- ( EXMID -> ( R TAp A <->
         R = { <. u , v >. | ( ( u e. A /\ v e. A ) /\ u =/= v ) } ) ) $=
       ( vx vy vz wem cv wcel wa wne wceq simpr wbr wn wral wi syl adantr vp cfv
-      wtap copab c1st c2nd cop cxp simplr wss wo w3a df-tap biimpi simp1d sseld
+      wtap copab c1st c2nd cop cxp simplr wss wo w3a dftap2 biimpi simp1d sseld
       sylc 1st2nd2 xp1st xp2nd eqeltrrd opeq2d id notbid simp2d simpld ad3antlr
       breq12d df-br sylnib eqneltrrd pm2.65da neqned jca31 eleq1 bi2anan9 simpl
       rspcdva wb neeq12d anbi12d opelopabga syl2anc mpbird eqeltrd wrel relopab
@@ -90019,6 +90051,32 @@ $)
        (Contributed by Jim Kingdon, 24-Feb-2024.) $)
     lt0ap0d $p |- ( ph -> A =//= 0 ) $=
       ( cr wcel cc0 clt wbr cap lt0ap0 syl2anc ) ABEFBGHIBGJICDBKL $.
+  $}
+
+  ${
+    $d p q r s t u v $.  $d x y z $.
+    $( Complex apartness (as defined at ~ df-ap ) is a tight apartness (as
+       defined at ~ df-tap ).  (Contributed by Jim Kingdon, 16-Feb-2025.) $)
+    aptap $p |- =//= TAp CC $=
+      ( vx vy vz vp vq vr vs vu vv cc cap cv wbr wral wa wceq wcel ci cr wrex
+      vt wtap cxp wss wn wi wo c1st cmul co caddc c2nd creap copab eqeq1 anbi1d
+      cfv 2rexbidv anbi2d elopabi df-ap eleq2s cop wrel relopabi simp-5l 1st2nd
+      sylancr simprll simp-5r ax-icn a1i simp-4r mulcld eqeltrd simprlr simpllr
+      recnd addcld jca elxp6 sylanbrc rexlimdva2 rexlimdva mpd ssriv apirr rgen
+      simplr apsym biimpd rgen2 pm3.2i apcotr rgen3 biimprd dftap2 mpbir3an
+      apti ) JKUBKJJUCZUDALZXAKMUEZAJNZXABLZKMZXDXAKMZUFZBJNAJNZOXEXACLZKMXDXIK
+      MUGUFZCJNBJNAJNZXEUEZXAXDPZUFZBJNAJNZOUAKWTUALZKQZXPUHUQZDLZRELZUIUJZUKUJ
+      ZPZXPULUQZFLZRGLZUIUJZUKUJZPZOZXSYEUMMXTYFUMMUGZOZGSTZFSTZESTZDSTZXPWTQZY
+      PXPHLZYBPZILZYHPZOZYKOZGSTFSTZESTDSTZHIUNKUUEYCUUAOZYKOZGSTFSTZESTDSTYPHI
+      XPYRXRPZUUDUUHDESSUUIUUCUUGFGSSUUIUUBUUFYKUUIYSYCUUAYRXRYBUOUPUPURURYTYDP
+      ZUUHYNDESSUUJUUGYLFGSSUUJUUFYJYKUUJUUAYIYCYTYDYHUOUSUPURURUTHIGFEDVAZVBXQ
+      YOYQDSXQXSSQZOZYNYQESUUMXTSQZOZYMYQFSUUOYESQZOZYLYQGSUUQYFSQZOZYLOZXPXRYD
+      VCPZXRJQZYDJQZOYQUUTKVDXQUVAUUEHIKUUKVEXQUULUUNUUPUURYLVFXPKVGVHUUTUVBUVC
+      UUTXRYBJUUSYCYIYKVIUUTXSYAUUTXSXQUULUUNUUPUURYLVJVRUUTRXTRJQUUTVKVLZUUTXT
+      UUMUUNUUPUURYLVMVRVNVSVOUUTYDYHJUUSYCYIYKVPUUTYEYGUUTYEUUOUUPUURYLVQVRUUT
+      RYFUVDUUTYFUUQUURYLWIVRVNVSVOVTXPJJWAWBWCWDWDWDWEWFXCXHXBAJXAWGWHXGABJJXA
+      JQXDJQOZXEXFXAXDWJWKWLWMXKXOXJABCJJJXAXDXIWNWOXNABJJUVEXMXLXAXDWSWPWLWMAB
+      CJKWQWR $.
   $}
 
 
@@ -142429,9 +142487,8 @@ $)
   ${
     setscom.1 $e |- A e. _V $.
     setscom.2 $e |- B e. _V $.
-    $( Component-setting is commutative when the x-values are different.
-       (Contributed by Mario Carneiro, 5-Dec-2014.)  (Revised by Mario
-       Carneiro, 30-Apr-2015.) $)
+    $( Different components can be set in any order.  (Contributed by Mario
+       Carneiro, 5-Dec-2014.)  (Revised by Mario Carneiro, 30-Apr-2015.) $)
     setscom $p |- ( ( ( S e. V /\ A =/= B ) /\ ( C e. W /\ D e. X ) ) ->
        ( ( S sSet <. A , C >. ) sSet <. B , D >. ) =
        ( ( S sSet <. B , D >. ) sSet <. A , C >. ) ) $=
@@ -142453,6 +142510,29 @@ $)
       WTXHTZYQXGOTWTOTYPUUHUTXGWAWTWAXGWTOWBWJVJVKXDXHVLVMVNVOVPVQWCWQWSOKZYTWO
       XLXESWKWNUUIWLWOWKYFWNUUIIACEFGOWDUQUIYTWQJWEWMWNWOWFBDWSOHOUHWGWQXFOKZYF
       WNXMXKSWKWOUUJWLWNWKYTWOUUJJBDEFHOWDUQVRYFWQIWEWMWNWOWHACXFOGOUHWGWI $.
+  $}
+
+  ${
+    $d A a b $.  $d B b $.  $d C a b $.  $d D a b $.  $d S a b $.  $d a b ph $.
+    setscomd.a $e |- ( ph -> A e. Y ) $.
+    setscomd.b $e |- ( ph -> B e. Z ) $.
+    setscomd.s $e |- ( ph -> S e. V ) $.
+    setscomd.ab $e |- ( ph -> A =/= B ) $.
+    setscomd.c $e |- ( ph -> C e. W ) $.
+    setscomd.d $e |- ( ph -> D e. X ) $.
+    $( Different components can be set in any order.  (Contributed by Jim
+       Kingdon, 20-Feb-2025.) $)
+    setscomd $p |- ( ph ->
+       ( ( S sSet <. A , C >. ) sSet <. B , D >. ) =
+       ( ( S sSet <. B , D >. ) sSet <. A , C >. ) ) $=
+      ( csts co wceq vb va wne cop cv wi wa neeq2d opeq1d oveq2d oveq1d eqeq12d
+      simpr imbi12d neeq1d wcel adantr vex setscom syl22anc ex vtocld mpd ) ABC
+      UCZFBDUDZRSZCEUDZRSZFVGRSZVERSZTZOABUAUEZUCZVFVLEUDZRSZFVNRSZVERSZTZUFZVD
+      VKUFUACKMAVLCTZUGZVMVDVRVKWAVLCBAVTUMZUHWAVOVHVQVJWAVNVGVFRWAVLCEWBUIZUJW
+      AVPVIVERWAVNVGFRWCUJUKULUNAUBUEZVLUCZFWDDUDZRSZVNRSZVPWFRSZTZUFVSUBBJLAWD
+      BTZUGZWEVMWJVRWLWDBVLAWKUMZUOWLWHVOWIVQWLWGVFVNRWLWFVEFRWLWDBDWMUIZUJUKWL
+      WFVEVPRWNUJULUNAWEWJAWEUGFGUPZWEDHUPZEIUPZWJAWOWENUQAWEUMAWPWEPUQAWQWEQUQ
+      WDVLDEFGHIUBURUAURUSUTVAVBVBVC $.
   $}
 
   ${
@@ -143288,6 +143368,16 @@ $)
   $( Slot property of ` *r ` .  (Contributed by Jim Kingdon, 4-Feb-2023.) $)
   starvslid $p |- ( *r = Slot ( *r ` ndx ) /\ ( *r ` ndx ) e. NN ) $=
     ( cstv c4 df-starv 4nn ndxslid ) ABCDE $.
+
+  ${
+    ressmulr.1 $e |- S = ( R |`s A ) $.
+    ressmulr.2 $e |- .x. = ( .r ` R ) $.
+    $( ` .r ` is unaffected by restriction.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.) $)
+    ressmulrg $p |- ( ( A e. V /\ R e. W ) -> .x. = ( .r ` S ) ) $=
+      ( wcel wa cmulr mulrslid cnx cbs basendxnmulrndx necomi simpr resseqnbasd
+      cfv simpl ) AEIZBFIZJADCKEBFGHLMNSMKSOPUAUBQUAUBTR $.
+  $}
 
   ${
     srngstr.r $e |- R = ( {
@@ -148529,6 +148619,26 @@ $)
     $}
   $}
 
+  ${
+    mgpress.1 $e |- S = ( R |`s A ) $.
+    mgpress.2 $e |- M = ( mulGrp ` R ) $.
+    $( Subgroup commutes with the multiplicative group operator.  (Contributed
+       by Mario Carneiro, 10-Jan-2015.)  (Proof shortened by AV,
+       18-Oct-2024.) $)
+    mgpress $p |- ( ( R e. V /\ A e. W ) -> ( M |`s A ) = ( mulGrp ` S ) ) $=
+      ( wcel cbs cfv cop csts co cmulr wceq eqid adantr cvv cn wa cnx cin cress
+      cplusg cmgp mgpvalg oveq1d mgpex ressvalsets mgpbasg ineq2d opeq2d oveq2d
+      sylan eqtr4d eqtrid ressmulrg ancoms eqcomd oveq12d ressex eqeltrid cslot
+      syl plusgslid simpri a1i basendxnn simpl basendxnplusgndx necomi mulrslid
+      wne slotex inex1g adantl setscomd 3eqtr4d ) BEIZAFIZUAZDUBJKZABJKZUCZLZMN
+      ZBUBUEKZBOKZLZMNZWFMNZDAUDNZCUFKZWBDWKWFMVTDWKPWABWIDEHWIQZUGRUHWBWMDWCAD
+      JKZUCZLZMNZWGVTDSIWAWMWSPBDEHUIADSFUJUOWBWFWRDMWBWEWQWCWBWDWPAVTWDWPPWAWD
+      BDEHWDQUKRULUMUNUPWBCWHCOKZLZMNZBWFMNZWJMNWNWLWBCXCXAWJMWBCBAUDNZXCGABEFU
+      JUQWBWTWIWHWBWIWTWAVTWIWTPABCWIFEGWOURUSUTUMVAWBCSIWNXBPWBCXDSGABEFVBVCCW
+      TWNSWNQWTQUGVEWBWHWCWIWEBESSTTWHTIZWBUEWHVDPXEVFVGVHWCTIWBVIVHVTWAVJWHWCV
+      NWBWCWHVKVLVHVTWISIWABOEVMVORWAWESIVTAWDFVPVQVRVSVS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -150963,6 +151073,61 @@ $)
   $}
 
   ${
+    dvrdir.b $e |- B = ( Base ` R ) $.
+    dvrdir.u $e |- U = ( Unit ` R ) $.
+    dvrdir.p $e |- .+ = ( +g ` R ) $.
+    dvrdir.t $e |- ./ = ( /r ` R ) $.
+    $( Distributive law for the division operation of a ring.  (Contributed by
+       Thierry Arnoux, 30-Oct-2017.) $)
+    dvrdir $p |- ( ( R e. Ring /\ ( X e. B /\ Y e. B /\ Z e. U ) ) ->
+                     ( ( X .+ Y ) ./ Z ) = ( ( X ./ Z ) .+ ( Y ./ Z ) ) ) $=
+      ( wcel co cfv wceq a1i adantr eqid dvrvald crg w3a wa cinvr simpr1 simpr2
+      cmulr simpl cbs cui csrg ringsrg simpr3 unitinvcl syldan unitcld syl13anc
+      ringdir eqidd cdvr cgrp ringgrp grpcld oveq12d 3eqtr4d ) DUAMZFAMZGAMZHEM
+      ZUBZUCZFGCNZHDUDOZOZDUGOZNZFVNVONZGVNVONZCNZVLHBNFHBNZGHBNZCNVKVFVGVHVNAM
+      VPVSPVFVJUHZVFVGVHVIUEZVFVGVHVIUFZVKADEVNADUIOPVKIQZEDUJOPVKJQZVFDUKMVJDU
+      LRVFVJVIVNEMVFVGVHVIUMZDEVMHJVMSUNUOUPACDVOFGVNIKVOSURUQVKABDVOEVMVLHWEVK
+      VOUSZWFVKVMUSZBDUTOPVKLQZWBVKACDFGIKVFDVAMVJDVBRWCWDVCWGTVKVTVQWAVRCVKABD
+      VOEVMFHWEWHWFWIWJWBWCWGTVKABDVOEVMGHWEWHWFWIWJWBWDWGTVDVE $.
+
+    rdivmuldivd.p $e |- .x. = ( .r ` R ) $.
+    rdivmuldivd.r $e |- ( ph -> R e. CRing ) $.
+    rdivmuldivd.a $e |- ( ph -> X e. B ) $.
+    rdivmuldivd.b $e |- ( ph -> Y e. U ) $.
+    rdivmuldivd.c $e |- ( ph -> Z e. B ) $.
+    rdivmuldivd.d $e |- ( ph -> W e. U ) $.
+    $( Multiplication of two ratios.  Theorem I.14 of [Apostol] p. 18.
+       (Contributed by Thierry Arnoux, 30-Oct-2017.) $)
+    rdivmuldivd $p |- ( ph -> ( ( X ./ Y ) .x. ( Z ./ W ) ) =
+                             ( ( X .x. Z ) ./ ( Y .x. W ) ) ) $=
+      ( co cinvr cfv cbs wceq a1i cmulr cui eqidd cdvr crngringd dvrvald oveq1d
+      crg wcel csrg ringsrg unitssd eqid unitinvcl syl2anc sseldd dvrcl syl3anc
+      syl ringass syl13anc ccrg crngcom oveq2d 3eqtrd cmgp cress cplusg cminusg
+      cgrp unitgrp unitgrpbasd eleqtrd grpinvadd fveq1d oveq12d 3eqtr4d cvv wfn
+      invrfvald basfn elexd funfvex funfni sylancr eqeltrid wa ressex mgpplusgg
+      ssexd ressmulrg mgpress fveq2d ringcl unitmulcl eqtr4d 3eqtr3rd 3eqtr4rd
+      oveqd eqtrd ) AIJCUBZKHCUBZFUBZIXIJEUCUDZUDZFUBZFUBZIKFUBZJHFUBZCUBZAXJIX
+      LFUBZXIFUBZIXLXIFUBZFUBZXNAXHXRXIFABCEFGXKIJBEUEUDZUFALUGZFEUHUDUFAPUGZGE
+      UIUDUFAMUGZAXKUJZCEUKUDUFAOUGZAEQULZRSUMUNAEUOUPZIBUPZXLBUPZXIBUPZXSYAUFY
+      HRAGBXLABEGYCYEAYIEUQUPYHEURVFZUSZAYIJGUPZXLGUPYHSEGXKJMXKUTZVAVBVCZAYIKB
+      UPZHGUPZYLYHTUABCEGKHLMOVDVEZBEFIXLXILPVGVHAXTXMIFAEVIUPZYKYLXTXMUFQYQYTB
+      EFXLXILPVJVEVKVLAXOXPXKUDZFUBXOHXKUDZXLFUBZFUBZXQXNAUUBUUDXOFAJHEVMUDZGVN
+      UBZVOUDZUBZXKUDZUUCXLUUHUBZUUBUUDAUUIUUGVPUDZUDZHUULUDZJUULUDZUUHUBZUUJUU
+      KAUUGVQUPZJUUGUEUDZUPHUURUPUUMUUPUFAYIUUQYHEGUUGMUUGUTVRVFAJGUURSAEGUUGYE
+      AUUGUJZYMVSZVTAHGUURUAUUTVTUURUUHUUGUULJHUURUTUUHUTUULUTWAVEAUUIXKUULAEGU
+      UGXKYEUUSYFYHWGZWBAUUCUUNXLUUOUUHAHXKUULUVAWBAJXKUULUVAWBWCWDAXPUUIXKAFUU
+      HJHAEGVNUBZUHUDZUVBVMUDZVOUDZFUUHAUUAGWEUPZUVCUVEUFZQAGBWEABYBWELAUEWEWFE
+      WEUPYBWEUPZWHAEVIQWIUVHWEEUEEUEWJWKWLWMYNWQZUUAUVFWNUVBWEUPUVGGEVIWEWOUVB
+      UVCUVDWEUVDUTUVCUTWPVFVBAUVFUUAFUVCUFUVIQGEUVBFWEVIUVBUTZPWRVBAUUGUVDVOAY
+      IUVFUUGUVDUFYHUVIGEUVBUUFUOWEUVJUUFUTWSVBWTWDZXFWTAFUUHUUCXLUVKXFWDVKABCE
+      FGXKXOXPYCYDYEYFYGYHAYIYJYRXOBUPZYHRTBEFIKLPXAVEZAYIYOYSXPGUPYHSUAEFGJHMP
+      XBVEUMAXOUUCFUBZXLFUBZIXIFUBZXLFUBZUUEXNAUVNUVPXLFAUVNIKUUCFUBZFUBZUVPAYI
+      YJYRUUCBUPZUVNUVSUFYHRTAGBUUCYNAYIYSUUCGUPYHUAEGXKHMYPVAVBVCZBEFIKUUCLPVG
+      VHAXIUVRIFABCEFGXKKHYCYDYEYFYGYHTUAUMVKXCUNAYIUVLUVTYKUVOUUEUFYHUVMUWAYQB
+      EFXOUUCXLLPVGVHAYIYJYLYKUVQXNUFYHRYTYQBEFIXIXLLPVGVHXDXEXG $.
+  $}
+
+  ${
     ringinvdv.b $e |- B = ( Base ` R ) $.
     ringinvdv.u $e |- U = ( Unit ` R ) $.
     ringinvdv.d $e |- ./ = ( /r ` R ) $.
@@ -151093,6 +151258,223 @@ $)
        by Stefan O'Rear, 7-Mar-2015.) $)
     df-rngiso $a |- RingIso = ( r e. _V , s e. _V |->
       { f e. ( r RingHom s ) | `' f e. ( s RingHom r ) } ) $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Local rings
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c LRing $.
+  $( Extend class notation with class of all local rings. $)
+  clring $a class LRing $.
+
+  ${
+    $d x y r $.
+    $( A local ring is a nonzero ring where for any two elements summing to
+       one, at least one is invertible.  Any field is a local ring; the ring of
+       integers is an example of a ring which is not a local ring.
+       (Contributed by Jim Kingdon, 18-Feb-2025.) $)
+    df-lring $a |- LRing = { r e. Ring | ( ( 1r ` r ) =/= ( 0g ` r ) /\
+      A. x e. ( Base ` r ) A. y e. ( Base ` r )
+      ( ( x ( +g ` r ) y ) = ( 1r ` r ) ->
+      ( x e. ( Unit ` r ) \/ y e. ( Unit ` r ) ) ) ) } $.
+  $}
+
+  ${
+    $d R r x y $.
+    $( A local ring is a ring.  (Contributed by Jim Kingdon, 20-Feb-2025.) $)
+    lringring $p |- ( R e. LRing -> R e. Ring ) $=
+      ( vx vy vr clring wcel crg cur cfv c0g wne cv cplusg co wceq cui cbs wral
+      wo fveq2 wi neeq12d oveqd eqeq12d eleq2d orbi12d imbi12d anbi12d df-lring
+      wa raleqbidv elrab2 simplbi ) AEFAGFAHIZAJIZKZBLZCLZAMIZNZUNOZUQAPIZFZURV
+      BFZSZUAZCAQIZRZBVGRZUJZDLZHIZVKJIZKZUQURVKMIZNZVLOZUQVKPIZFZURVRFZSZUAZCV
+      KQIZRZBWCRZUJVJDAGEVKAOZVNUPWEVIWFVLUNVMUOVKAHTZVKAJTUBWFWDVHBWCVGVKAQTZW
+      FWBVFCWCVGWHWFVQVAWAVEWFVPUTVLUNWFVOUSUQURVKAMTUCWGUDWFVSVCVTVDWFVRVBUQVK
+      APTZUEWFVRVBURWIUEUFUGUKUKUHBCDUIULUM $.
+  $}
+
+  ${
+    $d R r x y $.
+    $( A local ring is a nonzero ring.  (Contributed by Jim Kingdon,
+       20-Feb-2025.) $)
+    lringnz $p |- ( R e. LRing -> ( 1r ` R ) =/= ( 0g ` R ) ) $=
+      ( vx vy vr clring wcel cur cfv c0g wne cv cplusg co wceq cui wo cbs fveq2
+      wi wral wa neeq12d oveqd eqeq12d eleq2d orbi12d imbi12d raleqbidv anbi12d
+      crg df-lring elrab2 simprbi simpld ) AEFZAGHZAIHZJZBKZCKZALHZMZUPNZUSAOHZ
+      FZUTVDFZPZSZCAQHZTZBVITZUOAUJFURVKUAZDKZGHZVMIHZJZUSUTVMLHZMZVNNZUSVMOHZF
+      ZUTVTFZPZSZCVMQHZTZBWETZUAVLDAUJEVMANZVPURWGVKWHVNUPVOUQVMAGRZVMAIRUBWHWF
+      VJBWEVIVMAQRZWHWDVHCWEVIWJWHVSVCWCVGWHVRVBVNUPWHVQVAUSUTVMALRUCWIUDWHWAVE
+      WBVFWHVTVDUSVMAORZUEWHVTVDUTWKUEUFUGUHUHUIBCDUKULUMUN $.
+  $}
+
+  ${
+    $d .+ u v $.  $d ./ u v $.  $d R r u v $.  $d X u v $.  $d Y u v $.
+    lring.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    lring.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    lring.p $e |- ( ph -> .+ = ( +g ` R ) ) $.
+    lring.m $e |- ( ph -> .x. = ( .r ` R ) ) $.
+    lring.d $e |- ( ph -> ./ = ( /r ` R ) ) $.
+    lring.l $e |- ( ph -> R e. LRing ) $.
+    lring.s $e |- ( ph -> ( X .+ Y ) e. U ) $.
+    lring.x $e |- ( ph -> X e. B ) $.
+    lring.y $e |- ( ph -> Y e. B ) $.
+    $( If the sum of two elements of a local ring is invertible, then at least
+       one of the summands must be invertible.  (Contributed by Jim Kingdon,
+       18-Feb-2025.) $)
+    lringuplu $p |- ( ph -> ( X e. U \/ Y e. U ) ) $=
+      ( co wcel vu vv vr cui cfv cplusg cur wceq cdvr oveqd oveq12d crg cbs c0g
+      wo wne cv wi wral clring neeq12d eqeq12d eleq2d orbi12d imbi12d raleqbidv
+      fveq2 anbi12d df-lring elrab2 sylib simpld eleqtrd dvrdir syl13anc eqcomd
+      wa eqid ringgrpd grpcld dvreq1 syl3anc mpbird 3eqtr2d oveq2 eqeq1d orbi2d
+      eleq1 oveq1 orbi1d ralbidv simprrd dvrcl eqeltrd rspcdva mpd cmulr oveq1d
+      wb dvrcan1 eqtrd adantr simpr unitmulcl eqeltrrd eleqtrrd ex orim12d ) AH
+      HIDSZCSZEUDUEZTZIXICSZXKTZUOZHGTZIGTZUOAXJXMEUFUEZSZEUGUEZUHZXOAXSHXIEUIU
+      EZSZIXIYBSZXRSZHIXRSZXIYBSZXTAXJYCXMYDXRACYBHXINUJZACYBIXINUJZUKAEULTZHEU
+      MUEZTZIYKTZXIXKTZYGYEUHAYJXTEUNUEZUPZUAUQZUBUQZXRSZXTUHZYQXKTZYRXKTZUOZUR
+      ZUBYKUSZUAYKUSZVQZAEUTTYJUUGVQOUCUQZUGUEZUUHUNUEZUPZYQYRUUHUFUEZSZUUIUHZY
+      QUUHUDUEZTZYRUUOTZUOZURZUBUUHUMUEZUSZUAUUTUSZVQUUGUCEULUTUUHEUHZUUKYPUVBU
+      UFUVCUUIXTUUJYOUUHEUGVGZUUHEUNVGVAUVCUVAUUEUAUUTYKUUHEUMVGZUVCUUSUUDUBUUT
+      YKUVEUVCUUNYTUURUUCUVCUUMYSUUIXTUVCUULXRYQYRUUHEUFVGUJUVDVBUVCUUPUUAUUQUU
+      BUVCUUOXKYQUUHEUDVGZVCUVCUUOXKYRUVFVCVDVEVFVFVHUAUBUCVIVJVKZVLZAHBYKQJVMZ
+      AIBYKRJVMZAXIGXKPKVMZYKYBXREXKHIXIYKVRZXKVRZXRVRZYBVRZVNVOAYGXTUHZYFXIUHZ
+      AXRDHIADXRLVPUJAYJYFYKTYNUVPUVQWSUVHAYKXREHIUVLUVNAEUVHVSUVIUVJVTUVKYKYBE
+      XKXTYFXIUVLUVMUVOXTVRWAWBWCWDAXJYRXRSZXTUHZXLUUBUOZURZYAXOURUBYKXMYRXMUHZ
+      UVSYAUVTXOUWBUVRXSXTYRXMXJXRWEWFUWBUUBXNXLYRXMXKWHWGVEAUUEUWAUBYKUSUAYKXJ
+      YQXJUHZUUDUWAUBYKUWCYTUVSUUCUVTUWCYSUVRXTYQXJYRXRWIWFUWCUUAXLUUBYQXJXKWHW
+      JVEWKAYJYPUUFUVGWLAXJYCYKYHAYJYLYNYCYKTUVHUVIUVKYKYBEXKHXIUVLUVMUVOWMWBWN
+      WOAXMYDYKYIAYJYMYNYDYKTUVHUVJUVKYKYBEXKIXIUVLUVMUVOWMWBWNWOWPAXLXPXNXQAXL
+      XPAXLVQZHXKGUWDXJXIEWQUEZSZHXKAUWFHUHXLAUWFYCXIUWESZHAXJYCXIUWEYHWRAYJYLY
+      NUWGHUHUVHUVIUVKYKYBEUWEXKHXIUVLUVMUVOUWEVRZWTWBXAXBUWDYJXLYNUWFXKTAYJXLU
+      VHXBAXLXCAYNXLUVKXBEUWEXKXJXIUVMUWHXDWBXEAGXKUHZXLKXBXFXGAXNXQAXNVQZIXKGU
+      WJXMXIUWESZIXKAUWKIUHXNAUWKYDXIUWESZIAXMYDXIUWEYIWRAYJYMYNUWLIUHUVHUVJUVK
+      YKYBEUWEXKIXIUVLUVMUVOUWHWTWBXAXBUWJYJXNYNUWKXKTAYJXNUVHXBAXNXCAYNXNUVKXB
+      EUWEXKXMXIUVMUWHXDWBXEAUWIXNKXBXFXGXHWP $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Ring apartness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c #r $. $( Ring apartness $)
+
+  $( Extend class notation with ring apartness. $)
+  capr $a class #r $.
+
+  ${
+    $d w x y $.
+    $( An apartness relation for a ring, defined in terms of which elements
+       have multiplicative inverses.  (Contributed by Jim Kingdon,
+       13-Feb-2025.) $)
+    df-apr $a |- #r = ( w e. _V |-> { <. x , y >. |
+      ( ( x e. ( Base ` w ) /\ y e. ( Base ` w ) )
+      /\ ( x ( -g ` w ) y ) e. ( Unit ` w ) ) } ) $.
+  $}
+
+  ${
+    $d R r x y $.  $d X x y $.  $d Y x y $.
+    aprval.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    aprval.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
+    aprval.s $e |- ( ph -> .- = ( -g ` R ) ) $.
+    aprval.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    aprval.r $e |- ( ph -> R e. Ring ) $.
+    aprval.x $e |- ( ph -> X e. B ) $.
+    aprval.y $e |- ( ph -> Y e. B ) $.
+    $( Expand Definition ~ df-apr .  (Contributed by Jim Kingdon,
+       17-Feb-2025.) $)
+    aprval $p |- ( ph -> ( X .# Y <-> ( X .- Y ) e. U ) ) $=
+      ( vx vy cfv wcel cvv vr wbr csg co cui cop df-br cv cbs copab capr df-apr
+      wa wceq fveq2 eleq2d anbi12d oveqd eleq12d opabbidv crg elexd cxp funfvex
+      wfn basfn funfni sylancr xpexg syl2anc wss opabssxp ssexd fvmptd3 eleqtrd
+      a1i eqtrd wb oveq12 eleq1d opelopab2a bitrd bitrid bitr4d ) AGHCUBZGHDUCR
+      ZUDZDUERZSZGHFUDZESWEGHUFZCSZAWIGHCUGAWLWKPUHZDUIRZSZQUHZWNSZUMZWMWPWFUDZ
+      WHSZUMZPQUJZSZWIACXBWKACDUKRXBJAUADWMUAUHZUIRZSZWPXESZUMZWMWPXDUCRZUDZXDU
+      ERZSZUMZPQUJXBTUKTPQUAULXDDUNZXMXAPQXNXHWRXLWTXNXFWOXGWQXNXEWNWMXDDUIUOZU
+      PXNXEWNWPXOUPUQXNXJWSXKWHXNXIWFWMWPXDDUCUOURXDDUEUOUSUQUTADVAMVBZAXBWNWNV
+      CZTAWNTSZXRXQTSAUITVEDTSXRVFXPXRTDUIDUIVDVGVHZXSWNWNTTVIVJXBXQVKAWTPQWNWN
+      VLVPVMVNVQUPAGWNSHWNSXCWIVRAGBWNNIVOAHBWNOIVOWTWIPQGHWNWNWMGUNWPHUNUMWSWG
+      WHWMGWPHWFVSVTWAVJWBWCAWJWGEWHAFWFGHKURLUSWD $.
+  $}
+
+  ${
+    aprirr.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    aprirr.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
+    aprirr.r $e |- ( ph -> R e. Ring ) $.
+    aprirr.x $e |- ( ph -> X e. B ) $.
+
+    ${
+      $d R r x y $.  $d X x y $.
+      aprirr.nz $e |- ( ph -> ( 1r ` R ) =/= ( 0g ` R ) ) $.
+      $( The apartness relation given by ~ df-apr for a nonzero ring is
+         irreflexive.  (Contributed by Jim Kingdon, 16-Feb-2025.) $)
+      aprirr $p |- ( ph -> -. X .# X ) $=
+        ( wbr csg cfv co cui wcel wceq eqid mtbird eqidd cgrp ringgrpd grpsubid
+        c0g cbs eleqtrd syl2anc cur neneqd crg wb 0unit syl eqneltrd aprval ) A
+        EECKEEDLMZNZDOMZPAUQDUDMZURADUAPEDUEMZPUQUSQADHUBAEBUTIFUFUTDUPEUSUTRUS
+        RZUPRUCUGAUSURPZDUHMZUSQZAVCUSJUIADUJPVBVDUKHDURVCUSURRVAVCRULUMSUNABCD
+        URUPEEFGAUPTAURTHIIUOS $.
+    $}
+
+    aprsym.y $e |- ( ph -> Y e. B ) $.
+    $( The apartness relation given by ~ df-apr for a ring is symmetric.
+       (Contributed by Jim Kingdon, 17-Feb-2025.) $)
+    aprsym $p |- ( ph -> ( X .# Y -> Y .# X ) ) $=
+      ( wbr cfv co wcel eqidd aprval eqid wb eleqtrd csg cui cminusg crg biimpa
+      unitnegcl syl2an2r cgrp cbs wceq ringgrpd grpinvsub syl3anc eleq1d adantr
+      wa mpbid mpbird ex ) AEFCLZFECLZAUTUPZVAFEDUAMZNZDUBMZOZVBEFVCNZDUCMZMZVE
+      OZVFADUDOUTVGVEOZVJIAUTVKABCDVEVCEFGHAVCPZAVEPZIJKQUEDVEVHVGVERVHRZUFUGAV
+      JVFSUTAVIVDVEADUHOEDUIMZOFVOOVIVDUJADIUKAEBVOJGTAFBVOKGTVODVCVHEFVORVCRVN
+      ULUMUNUOUQAVAVFSUTABCDVEVCFEGHVLVMIKJQUOURUS $.
+  $}
+
+  ${
+    aprcotr.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    aprcotr.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
+    aprcotr.r $e |- ( ph -> R e. LRing ) $.
+    aprcotr.x $e |- ( ph -> X e. B ) $.
+    aprcotr.y $e |- ( ph -> Y e. B ) $.
+    aprcotr.z $e |- ( ph -> Z e. B ) $.
+    $( The apartness relation given by ~ df-apr for a local ring is
+       cotransitive.  (Contributed by Jim Kingdon, 17-Feb-2025.) $)
+    aprcotr $p |- ( ph -> ( X .# Y -> ( X .# Z \/ Y .# Z ) ) ) $=
+      ( wbr cfv co wcel adantr eqidd eleqtrd wo wa csg cui cdvr cplusg cbs wceq
+      cmulr clring cgrp crg lringring syl ringgrpd eqid grpnpncan aprval biimpa
+      syl13anc eqeltrd grpsubcl syl3anc eleqtrrd biimprd aprsym sylbird orim12d
+      lringuplu wi mpd ex ) AEFCNZEGCNZFGCNZUAZAVMUBZEGDUCOZPZDUDOZQZGFVRPZVTQZ
+      UAVPVQBDUEOZDUFOZDDUIOZVTVSWBABDUGOZUHVMHRVQVTSVQWESVQWFSVQWDSADUJQZVMJRV
+      QVSWBWEPZEFVRPZVTAWIWJUHZVMADUKQZEWGQZGWGQZFWGQZWKADAWHDULQJDUMUNZUOZAEBW
+      GKHTZAGBWGMHTZAFBWGLHTZWGWEDVREGFWGUPZWEUPVRUPZUQUTRAVMWJVTQABCDVTVREFHIA
+      VRSZAVTSZWPKLURUSVAAVSBQVMAVSWGBAWLWMWNVSWGQWQWRWSWGDVREGXAXBVBVCHVDRAWBB
+      QVMAWBWGBAWLWNWOWBWGQWQWSWTWGDVRGFXAXBVBVCHVDRVIVQWAVNWCVOAWAVNVJVMAVNWAA
+      BCDVTVREGHIXCXDWPKMURVERAWCVOVJVMAWCGFCNVOABCDVTVRGFHIXCXDWPMLURABCDGFHIW
+      PMLVFVGRVHVKVL $.
+  $}
+
+  ${
+    $d R r x y z $.
+    $( The relation given by ~ df-apr for a local ring is an apartness
+       relation.  (Contributed by Jim Kingdon, 20-Feb-2025.) $)
+    aprap $p |- ( R e. LRing -> ( #r ` R ) Ap ( Base ` R ) ) $=
+      ( vx vy vz vr clring wcel capr cfv cbs cv wbr wral wa csg cui fveq2 eqidd
+      cvv adantr cxp wss wn wi wo wap co copab df-apr wceq eleq2d anbi12d oveqd
+      eleq12d opabbidv elex wfn basfn a1i funfvex funfni syl2anc xpexg opabssxp
+      ssexd fvmptd3 eqsstrdi crg lringring cur c0g wne lringnz aprirr ralrimiva
+      simpr simprl simprr aprsym ralrimivva w3a simpl simpr1 simpr2 ralrimivvva
+      simpr3 aprcotr jca df-pap syl21anbrc ) AFGZAHIZAJIZWMUAZUBBKZWOWLLUCZBWMM
+      WOCKZWLLZWQWOWLLUDZCWMMBWMMZWRWODKZWLLWQXAWLLUEUDZDWMMCWMMBWMMZNWMWLUFWKW
+      LWOWMGZWQWMGZNZWOWQAOIZUGZAPIZGZNZBCUHZWNWKEAWOEKZJIZGZWQXNGZNZWOWQXMOIZU
+      GZXMPIZGZNZBCUHXLSHSBCEUIXMAUJZYBXKBCYCXQXFYAXJYCXOXDXPXEYCXNWMWOXMAJQZUK
+      YCXNWMWQYDUKULYCXSXHXTXIYCXRXGWOWQXMAOQUMXMAPQUNULUOAFUPZWKXLWNSWKWMSGZYF
+      WNSGWKJSUQZASGYFYGWKURUSYEYFSAJAJUTVAVBZYHWMWMSSVCVBXLWNUBWKXJBCWMWMVDZUS
+      VEVFYIVGWKWPBWMWKXDNZWMWLAWOYJWMRYJWLRWKAVHGZXDAVIZTWKXDVPWKAVJIAVKIVLXDA
+      VMTVNVOWKWTXCWKWSBCWMWMWKXFNZWMWLAWOWQYMWMRYMWLRWKYKXFYLTWKXDXEVQWKXDXEVR
+      VSVTWKXBBCDWMWMWMWKXDXEXAWMGZWAZNZWMWLAWOWQXAYPWMRYPWLRWKYOWBWKXDXEYNWCWK
+      XDXEYNWDWKXDXEYNWFWGWEWHBCDWMWLWIWJ $.
   $}
 
 
@@ -166629,7 +167011,7 @@ $)
 
        <tr><th>Abbreviation</th><th>Mnenomic/Meaning</th><th>Source</th>
        <th>Expression</th><th>Syntax?</th><th>Example(s)</th></tr>
-       <tr><td>ap</td><td>apart</td><td> ~ df-ap </td>
+       <tr><td>ap</td><td>apart</td><td> ~ df-pap , ~ df-ap </td>
        <td> </td><td>Yes</td><td> ~ apadd1 , ~ apne </td></tr>
 
        <tr><td>g</td><td>with "is a set" condition</td><td> </td><td> </td>
@@ -167153,6 +167535,13 @@ htmldef ".||" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#8741;</SPAN> ';
   latexdef ".||" as "\parallel";
+htmldef ".#" as
+    ' <span class=symvar style="border-bottom:1px dotted;color:#c3c">' +
+    '#</span> ';
+  althtmldef ".#" as
+    ' <span class=symvar style="border-bottom:1px dotted;color:#c3c">' +
+    '#</span> ';
+  latexdef ".#" as "\neq\mathrel{\mkern -10mu}\neq";
 htmldef ".~" as
     " <IMG SRC='_.sim.gif' WIDTH=13 HEIGHT=19 ALT=' .~' TITLE='.~'> ";
   althtmldef ".~" as
@@ -167774,6 +168163,9 @@ htmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
 htmldef "CCHOICE" as "<SMALL>CCHOICE</SMALL>";
   althtmldef "CCHOICE" as "<SMALL>CCHOICE</SMALL>";
   latexdef "CCHOICE" as "\mathrm{CCHOICE}";
+htmldef "Ap" as ' Ap ';
+  althtmldef "Ap" as ' Ap ';
+  latexdef "Ap" as "\mathrm{Ap}";
 htmldef "TAp" as ' TAp ';
   althtmldef "TAp" as ' TAp ';
   latexdef "TAp" as "\mathrm{TAp}";
@@ -168348,6 +168740,9 @@ htmldef "CRing" as
     "<IMG SRC='_cring.gif' WIDTH=40 HEIGHT=19 ALT=' CRing' TITLE='CRing'>";
   althtmldef "CRing" as "CRing";
   latexdef "CRing" as "\mathrm{CRing}";
+htmldef "LRing" as "LRing";
+  althtmldef "LRing" as "LRing";
+  latexdef "LRing" as "\mathrm{LRing}";
 htmldef "1r" as "<IMG SRC='_1r.gif' WIDTH=13 HEIGHT=19 ALT=' 1r' TITLE='1r'>";
   althtmldef "1r" as "1<SUB>r</SUB>";
   latexdef "1r" as "1_\mathrm{r}";
@@ -168377,6 +168772,9 @@ htmldef "RingHom" as " RingHom ";
 htmldef "RingIso" as " RingIso ";
   althtmldef "RingIso" as " RingIso ";
   latexdef "RingIso" as " \mathrm{RingIso} ";
+htmldef "#r" as "#<sub>r</sub>";
+  althtmldef "#r" as "#<sub>r</sub>";
+  latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
