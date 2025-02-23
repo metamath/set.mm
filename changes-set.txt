@@ -85,12 +85,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-<<<<<<< HEAD
 23-Feb-25 abbi      abbib       flip sides of bi-conditional
-=======
 22-Feb-25 rdivmuldivd [same]    Moved from TA's mathbox to main set.mm
 22-Feb-25 dvrdir    [same]      Moved from TA's mathbox to main set.mm
->>>>>>> develop
 19-Feb-25 isdrngrd  [same]      removed extra hypothesis
 19-Feb-25 isdrngd   [same]      removed extra hypothesis
 15-Feb-25 abeq2f    eqabf
