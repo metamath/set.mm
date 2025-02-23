@@ -85,6 +85,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+23-Feb-25 addsid1   addsrid
+23-Feb-25 addsid2   addslid
 15-Feb-25 abeq2f    eqabf
 15-Feb-25 rabeq2i   reqabi
 15-Feb-25 abeq1i    eqabci
