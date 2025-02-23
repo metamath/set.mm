@@ -151368,9 +151368,9 @@ $)
 
   ${
     $d w x y $.
-    $( An apartness relation for a ring, defined in terms of which elements
-       have multiplicative inverses.  (Contributed by Jim Kingdon,
-       13-Feb-2025.) $)
+    $( The relation between elements whose difference is invertible, which for
+       a local ring is an apartness relation by ~ aprap .  (Contributed by Jim
+       Kingdon, 13-Feb-2025.) $)
     df-apr $a |- #r = ( w e. _V |-> { <. x , y >. |
       ( ( x e. ( Base ` w ) /\ y e. ( Base ` w ) )
       /\ ( x ( -g ` w ) y ) e. ( Unit ` w ) ) } ) $.
