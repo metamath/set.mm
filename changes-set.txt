@@ -85,6 +85,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+23-Feb-25 bj-rabbida2 rabbida4  moved from BJ's mathbox to main set.mm
+23-Feb-25 bj-rabeqd rabeqd      moved from BJ's mathbox to main set.mm
+23-Feb-25 bj-rabeqbida rabeqbida moved from BJ's mathbox to main set.mm
 22-Feb-25 rdivmuldivd [same]    Moved from TA's mathbox to main set.mm
 22-Feb-25 dvrdir    [same]      Moved from TA's mathbox to main set.mm
 19-Feb-25 isdrngrd  [same]      removed extra hypothesis
