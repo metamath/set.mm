@@ -85,6 +85,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+24-Feb-25 ---       ---         rename all theorems of the form *1id to
+                                *rid and all theorems of the form *2id
+				to *lid
 23-Feb-25 abbi      abbib       flip sides of bi-conditional
 23-Feb-25 addsid1   addsrid
 23-Feb-25 addsid2   addslid
