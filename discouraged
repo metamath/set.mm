@@ -6347,10 +6347,8 @@
 "equs4" is used by "equs45f".
 "equs4" is used by "equs5".
 "equs4" is used by "equsex".
-"equs4" is used by "sb1OLD".
 "equs45f" is used by "sb5f".
 "equs5" is used by "bj-sbsb".
-"equs5" is used by "sb3OLD".
 "equs5" is used by "sb3b".
 "equs5a" is used by "equs45f".
 "equs5e" is used by "sb4e".
@@ -10295,7 +10293,6 @@
 "nfeqf2" is used by "dveeq2".
 "nfeqf2" is used by "nfeqf1".
 "nfeqf2" is used by "sb4b".
-"nfeqf2" is used by "sb4bOLD".
 "nfeqf2" is used by "sbal1".
 "nfeqf2" is used by "wl-equsb3".
 "nfeqf2" is used by "wl-eudf".
@@ -12783,7 +12780,6 @@
 "rspsbc2" is used by "tratrb".
 "rspsbc2" is used by "tratrbVD".
 "sb1" is used by "dfsb1".
-"sb1" is used by "sb3bOLD".
 "sb1" is used by "sb4e".
 "sb2" is used by "dfsb2".
 "sb2" is used by "equsb1".
@@ -12791,18 +12787,15 @@
 "sb2" is used by "hbsb2".
 "sb2" is used by "hbsb2a".
 "sb2" is used by "hbsb2e".
-"sb2" is used by "sb3OLD".
 "sb2" is used by "sb6f".
 "sb2" is used by "sbeqal1".
 "sb3" is used by "dfsb1".
-"sb3" is used by "sb3bOLD".
 "sb3b" is used by "sb1".
 "sb3b" is used by "sb3".
 "sb4a" is used by "hbsb2a".
 "sb4a" is used by "sb6f".
 "sb4b" is used by "dfsb2".
 "sb4b" is used by "hbsb2".
-"sb4b" is used by "sb1OLD".
 "sb4b" is used by "sb2".
 "sb4b" is used by "sb3b".
 "sb4b" is used by "sb4a".
@@ -16607,9 +16600,9 @@ New usage of "equidq" is discouraged (0 uses).
 New usage of "equidqe" is discouraged (2 uses).
 New usage of "equncomVD" is discouraged (0 uses).
 New usage of "equncomiVD" is discouraged (0 uses).
-New usage of "equs4" is discouraged (5 uses).
+New usage of "equs4" is discouraged (4 uses).
 New usage of "equs45f" is discouraged (1 uses).
-New usage of "equs5" is discouraged (3 uses).
+New usage of "equs5" is discouraged (2 uses).
 New usage of "equs5a" is discouraged (1 uses).
 New usage of "equs5aALT" is discouraged (0 uses).
 New usage of "equs5e" is discouraged (1 uses).
@@ -17965,7 +17958,7 @@ New usage of "nfcvf2" is discouraged (16 uses).
 New usage of "nfdisj" is discouraged (0 uses).
 New usage of "nfeqf" is discouraged (9 uses).
 New usage of "nfeqf1" is discouraged (6 uses).
-New usage of "nfeqf2" is discouraged (16 uses).
+New usage of "nfeqf2" is discouraged (15 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfeu" is discouraged (2 uses).
 New usage of "nfeu1ALT" is discouraged (0 uses).
@@ -18959,18 +18952,14 @@ New usage of "ruvALT" is discouraged (0 uses).
 New usage of "rzalALT" is discouraged (0 uses).
 New usage of "s1dmALT" is discouraged (0 uses).
 New usage of "s2dmALT" is discouraged (0 uses).
-New usage of "sb1" is discouraged (3 uses).
+New usage of "sb1" is discouraged (2 uses).
 New usage of "sb10f" is discouraged (0 uses).
-New usage of "sb1OLD" is discouraged (0 uses).
-New usage of "sb2" is discouraged (9 uses).
+New usage of "sb2" is discouraged (8 uses).
 New usage of "sb2ae" is discouraged (0 uses).
-New usage of "sb3" is discouraged (2 uses).
-New usage of "sb3OLD" is discouraged (0 uses).
+New usage of "sb3" is discouraged (1 uses).
 New usage of "sb3b" is discouraged (2 uses).
-New usage of "sb3bOLD" is discouraged (0 uses).
 New usage of "sb4a" is discouraged (2 uses).
-New usage of "sb4b" is discouraged (11 uses).
-New usage of "sb4bOLD" is discouraged (0 uses).
+New usage of "sb4b" is discouraged (10 uses).
 New usage of "sb4e" is discouraged (1 uses).
 New usage of "sb56OLD" is discouraged (0 uses).
 New usage of "sb5ALT" is discouraged (0 uses).
@@ -20181,7 +20170,7 @@ Proof modification of "csbopabgALT" is discouraged (85 steps).
 Proof modification of "csbresgVD" is discouraged (195 steps).
 Proof modification of "csbrngVD" is discouraged (266 steps).
 Proof modification of "csbsngVD" is discouraged (204 steps).
-Proof modification of "csbunigVD" is discouraged (302 steps).
+Proof modification of "csbunigVD" is discouraged (301 steps).
 Proof modification of "csbxpgVD" is discouraged (538 steps).
 Proof modification of "cshwsexaOLD" is discouraged (168 steps).
 Proof modification of "curryset" is discouraged (72 steps).
@@ -21306,10 +21295,6 @@ Proof modification of "ruvALT" is discouraged (24 steps).
 Proof modification of "rzalALT" is discouraged (21 steps).
 Proof modification of "s1dmALT" is discouraged (25 steps).
 Proof modification of "s2dmALT" is discouraged (38 steps).
-Proof modification of "sb1OLD" is discouraged (54 steps).
-Proof modification of "sb3OLD" is discouraged (29 steps).
-Proof modification of "sb3bOLD" is discouraged (24 steps).
-Proof modification of "sb4bOLD" is discouraged (110 steps).
 Proof modification of "sb56OLD" is discouraged (25 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
