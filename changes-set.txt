@@ -86,6 +86,8 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 23-Feb-25 abbi      abbib       flip sides of bi-conditional
+23-Feb-25 addsid1   addsrid
+23-Feb-25 addsid2   addslid
 22-Feb-25 rdivmuldivd [same]    Moved from TA's mathbox to main set.mm
 22-Feb-25 dvrdir    [same]      Moved from TA's mathbox to main set.mm
 19-Feb-25 isdrngrd  [same]      removed extra hypothesis
