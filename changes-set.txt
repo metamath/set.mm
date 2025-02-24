@@ -85,6 +85,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+24-Feb-25 abbi1     abbi        reverse direction of abbib
 23-Feb-25 abbi      abbib       flip sides of bi-conditional
 23-Feb-25 addsid1   addsrid
 23-Feb-25 addsid2   addslid

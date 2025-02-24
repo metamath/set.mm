@@ -10225,7 +10225,6 @@
 "nfcsb" is used by "cbvreucsf".
 "nfcsb" is used by "elfvmptrab1".
 "nfcsb" is used by "elovmporab1".
-"nfcsb" is used by "nfsumOLD".
 "nfcsbd" is used by "nfcsb".
 "nfcvf" is used by "axacnd".
 "nfcvf" is used by "axacndlem4".
@@ -10305,7 +10304,6 @@
 "nfeud2" is used by "nfeud".
 "nfeud2" is used by "nfreud".
 "nfexd2" is used by "nfeud2".
-"nfiota" is used by "nfsumOLD".
 "nfiotad" is used by "nfiota".
 "nfiotad" is used by "nfriotad".
 "nfmo" is used by "2euex".
@@ -17950,7 +17948,7 @@ New usage of "nfcriOLD" is discouraged (0 uses).
 New usage of "nfcriOLDOLD" is discouraged (0 uses).
 New usage of "nfcriOLDOLDOLD" is discouraged (0 uses).
 New usage of "nfcriiOLD" is discouraged (0 uses).
-New usage of "nfcsb" is discouraged (6 uses).
+New usage of "nfcsb" is discouraged (5 uses).
 New usage of "nfcsbd" is discouraged (1 uses).
 New usage of "nfcvb" is discouraged (0 uses).
 New usage of "nfcvf" is discouraged (26 uses).
@@ -17966,7 +17964,7 @@ New usage of "nfeud" is discouraged (1 uses).
 New usage of "nfeud2" is discouraged (2 uses).
 New usage of "nfexd2" is discouraged (1 uses).
 New usage of "nfiing" is discouraged (0 uses).
-New usage of "nfiota" is discouraged (1 uses).
+New usage of "nfiota" is discouraged (0 uses).
 New usage of "nfiotad" is discouraged (2 uses).
 New usage of "nfiundg" is discouraged (0 uses).
 New usage of "nfiung" is discouraged (0 uses).
@@ -18007,7 +18005,6 @@ New usage of "nfsbc" is discouraged (4 uses).
 New usage of "nfsbcd" is discouraged (3 uses).
 New usage of "nfsbd" is discouraged (3 uses).
 New usage of "nfsbvOLD" is discouraged (0 uses).
-New usage of "nfsumOLD" is discouraged (0 uses).
 New usage of "nfunidALT" is discouraged (0 uses).
 New usage of "nfunidALT2" is discouraged (0 uses).
 New usage of "nfwrecsOLD" is discouraged (0 uses).
@@ -21002,7 +20999,6 @@ Proof modification of "nfreuwOLD" is discouraged (56 steps).
 Proof modification of "nfrmowOLD" is discouraged (55 steps).
 Proof modification of "nfsbOLD" is discouraged (23 steps).
 Proof modification of "nfsbvOLD" is discouraged (47 steps).
-Proof modification of "nfsumOLD" is discouraged (216 steps).
 Proof modification of "nfunidALT" is discouraged (33 steps).
 Proof modification of "nfunidALT2" is discouraged (49 steps).
 Proof modification of "nfwrecsOLD" is discouraged (125 steps).
