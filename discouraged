@@ -8987,6 +8987,7 @@
 "iscom2" is used by "iscrngo2".
 "isdivrngo" is used by "isdrngo1".
 "isdivrngo" is used by "zrdivrng".
+"isdrngdOLD" is used by "isdrngrdOLD".
 "isexid" is used by "exidres".
 "isexid" is used by "isexid2".
 "isexid" is used by "ismndo".
@@ -17413,6 +17414,8 @@ New usage of "iscsgrpALT" is discouraged (0 uses).
 New usage of "iscvlat2N" is discouraged (0 uses).
 New usage of "isdilN" is discouraged (0 uses).
 New usage of "isdivrngo" is discouraged (2 uses).
+New usage of "isdrngdOLD" is discouraged (1 uses).
+New usage of "isdrngrdOLD" is discouraged (0 uses).
 New usage of "iseriALT" is discouraged (0 uses).
 New usage of "isexid" is discouraged (4 uses).
 New usage of "isexid2" is discouraged (1 uses).
@@ -20852,6 +20855,8 @@ Proof modification of "isanmbfmOLD" is discouraged (15 steps).
 Proof modification of "isarep1OLD" is discouraged (106 steps).
 Proof modification of "iscmgmALT" is discouraged (57 steps).
 Proof modification of "iscsgrpALT" is discouraged (57 steps).
+Proof modification of "isdrngdOLD" is discouraged (603 steps).
+Proof modification of "isdrngrdOLD" is discouraged (334 steps).
 Proof modification of "iseriALT" is discouraged (54 steps).
 Proof modification of "isinfOLD" is discouraged (588 steps).
 Proof modification of "ismgmALT" is discouraged (53 steps).
