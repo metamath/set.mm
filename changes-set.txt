@@ -87,11 +87,11 @@ DONE:
 Date      Old       New         Notes
 24-Feb-25 naddid1   naddrid
 24-Feb-25 naddid2   naddlid
-24-Feb-25 muid1     mulrid
+24-Feb-25 mulid1    mulrid
 24-Feb-25 mulid2    mullid
-24-Feb-25 muid1i    mulridi
+24-Feb-25 mulid1i   mulridi
 24-Feb-25 mulid2i   mullidi
-24-Feb-25 muid1d    mulridd
+24-Feb-25 mulid1d   mulridd
 24-Feb-25 mulid2d   mullidd
 24-Feb-25 addid1    addrid
 24-Feb-25 addid2    addlid
@@ -102,7 +102,7 @@ Date      Old       New         Notes
 24-Feb-25 xaddid1   xaddrid
 24-Feb-25 xaddid2   xaddlid
 24-Feb-25 xaddid1d  xaddridd
-24-Feb-25 xmuid1    xmulrid
+24-Feb-25 xmulid1   xmulrid
 24-Feb-25 xmulid2   xmullid
 24-Feb-25 mulrid    mulridx
 24-Feb-25 dchrmulid2 dchrmullid
