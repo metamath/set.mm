@@ -21346,7 +21346,7 @@ $)
     $( Equality of a class variable and a class abstraction (also called a
        class builder).  Theorem 5.1 of [Quine] p. 34.  This theorem shows the
        relationship between expressions with class abstractions and expressions
-       with class variables.  Note that ~ abbi and its relatives are among
+       with class variables.  Note that ~ abbib and its relatives are among
        those useful for converting theorems with class variables to equivalent
        theorems with wff variables, by first substituting a class abstraction
        for each class variable.
@@ -21409,10 +21409,11 @@ $)
     $d ph y $.  $d ps y $.  $d x y $.
     $( Equivalent wff's correspond to equal class abstractions.  (Contributed
        by NM, 25-Nov-2013.)  (Revised by Mario Carneiro, 11-Aug-2016.) $)
-    abbi $p |- ( A. x ( ph <-> ps ) <-> { x | ph } = { x | ps } ) $=
-      ( vy cab wceq wcel wal dfcleq nfsab1 nfbi nfv wsb df-clab sbequ12r syl5bb
-      cv wb bibi12d cbval bitr2i ) ACEZBCEZFDQZUBGZUDUCGZRZDHABRZCHDUBUCIUGUHDC
-      UEUFCACDJBCDJKUHDLUDCQFZUEAUFBUEACDMUIAADCNADCOPUFBCDMUIBBDCNBDCOPSTUA $.
+    abbib $p |- ( { x | ph } = { x | ps } <-> A. x ( ph <-> ps ) ) $=
+      ( vy cab wceq cv wcel wal dfcleq nfsab1 nfbi nfv weq wsb df-clab sbequ12r
+      wb syl5bb bibi12d cbval bitri ) ACEZBCEZFDGZUCHZUEUDHZRZDIABRZCIDUCUDJUHU
+      IDCUFUGCACDKBCDKLUIDMDCNZUFAUGBUFACDOUJAADCPADCQSUGBCDOUJBBDCPBDCQSTUAUB
+      $.
   $}
 
   ${
@@ -21429,7 +21430,7 @@ $)
     $( Equivalent wff's yield equal class abstractions (inference rule).
        (Contributed by NM, 5-Aug-1993.) $)
     abbii $p |- { x | ph } = { x | ps } $=
-      ( wb cab wceq abbi mpgbi ) ABEACFBCFGCABCHDI $.
+      ( cab wceq wb abbib mpgbir ) ACEBCEFABGCABCHDI $.
 
     $( Theorem abbii is the congruence law for class abstraction. $)
     $( $j congruence 'abbii'; $)
@@ -21442,7 +21443,7 @@ $)
        (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
        7-Oct-2016.) $)
     abbid $p |- ( ph -> { x | ps } = { x | ch } ) $=
-      ( wb wal cab wceq alrimi abbi sylib ) ABCGZDHBDICDIJANDEFKBCDLM $.
+      ( wb wal cab wceq alrimi abbib sylibr ) ABCGZDHBDICDIJANDEFKBCDLM $.
   $}
 
   ${
@@ -24079,9 +24080,9 @@ $)
      Closed theorem form of ~ rabbidva .  (Contributed by NM, 25-Nov-2013.) $)
   rabbi $p |- ( A. x e. A ( ps <-> ch )
        <-> { x e. A | ps } = { x e. A | ch } ) $=
-    ( cv wcel wa wb wal wceq wral crab abbi wi df-ral pm5.32 albii bitri df-rab
-    cab eqeq12i 3bitr4i ) CEDFZAGZUCBGZHZCIZUDCTZUECTZJABHZCDKZACDLZBCDLZJUDUEC
-    MUKUCUJNZCIUGUJCDOUNUFCUCABPQRULUHUMUIACDSBCDSUAUB $.
+    ( cv wcel wa cab wceq wb wal crab wral abbib df-rab eqeq12i wi df-ral albii
+    pm5.32 bitri 3bitr4ri ) CEDFZAGZCHZUCBGZCHZIUDUFJZCKZACDLZBCDLZIABJZCDMZUDU
+    FCNUJUEUKUGACDOBCDOPUMUCULQZCKUIULCDRUNUHCUCABTSUAUB $.
 
   $( Swap with a membership relation in a restricted class abstraction.
      (Contributed by NM, 4-Jul-2005.) $)
@@ -38201,9 +38202,9 @@ $)
     $( Alternate definition of existential uniqueness in terms of abstraction.
        (Contributed by SF, 29-Jan-2015.) $)
     dfeu2 $p |- ( E! x ph <-> { x | ph } e. 1c ) $=
-      ( vy weq wb wal wex cab cv csn wceq weu c1c wcel abbi df-sn eqeq2i bitr4i
-      exbii df-eu el1c 3bitr4i ) ABCDZEBFZCGABHZCIZJZKZCGABLUEMNUDUHCUDUEUCBHZK
-      UHAUCBOUGUIUEBUFPQRSABCTCUEUAUB $.
+      ( vy weq wb wal wex cab cv csn wceq weu c1c wcel df-sn eqeq2i abbib exbii
+      bitr2i df-eu el1c 3bitr4i ) ABCDZEBFZCGABHZCIZJZKZCGABLUEMNUDUHCUHUEUCBHZ
+      KUDUGUIUEBUFOPAUCBQSRABCTCUEUAUB $.
   $}
 
   $( If there is a unique object satisfying a property ` ph ` , then the set of
@@ -38275,9 +38276,9 @@ $)
     $( Alternate definition for descriptions.  Definition 8.18 in [Quine]
        p. 56.  (Contributed by Andrew Salmon, 30-Jun-2011.) $)
     dfiota2 $p |- ( iota x ph ) = U. { y | A. x ( ph <-> x = y ) } $=
-      ( cio cab cv csn wceq cuni wb wal df-iota df-sn eqeq2i abbi bitr4i unieqi
-      abbii eqtri ) ABDABEZCFZGZHZCEZIABFUAHZJBKZCEZIABCLUDUGUCUFCUCTUEBEZHUFUB
-      UHTBUAMNAUEBOPRQS $.
+      ( cio cab cv csn wceq cuni weq wal df-iota df-sn eqeq2i abbib bitri abbii
+      wb unieqi eqtri ) ABDABEZCFZGZHZCEZIABCJZRBKZCEZIABCLUEUHUDUGCUDUAUFBEZHU
+      GUCUIUABUBMNAUFBOPQST $.
   $}
 
   ${
@@ -38363,16 +38364,17 @@ $)
     $( Equivalence theorem for descriptions.  (Contributed by Andrew Salmon,
        30-Jun-2011.) $)
     iotabi $p |- ( A. x ( ph <-> ps ) -> ( iota x ph ) = ( iota x ps ) ) $=
-      ( vz wb wal cab cv csn wceq cuni abbi biimpi eqeq1d abbidv unieqd df-iota
-      cio 3eqtr4g ) ABECFZACGZDHIZJZDGZKBCGZUBJZDGZKACRBCRTUDUGTUCUFDTUAUEUBTUA
-      UEJABCLMNOPACDQBCDQS $.
+      ( vz wb wal cab cv csn wceq cuni cio biimpri eqeq1d abbidv unieqd df-iota
+      abbib 3eqtr4g ) ABECFZACGZDHIZJZDGZKBCGZUBJZDGZKACLBCLTUDUGTUCUFDTUAUEUBU
+      AUEJTABCRMNOPACDQBCDQS $.
 
     $( Part of Theorem 8.17 in [Quine] p. 56.  This theorem serves as a lemma
        for the fundamental property of iota.  (Contributed by Andrew Salmon,
        11-Jul-2011.) $)
     uniabio $p |- ( A. x ( ph <-> x = y ) -> U. { x | ph } = y ) $=
-      ( cv wceq wb wal cab cuni csn abbi biimpi df-sn syl6eqr unieqd vex syl6eq
-      unisn ) ABDCDZEZFBGZABHZISJZISUAUBUCUAUBTBHZUCUAUBUDEATBKLBSMNOSCPRQ $.
+      ( weq wb wal cab cuni cv csn abbib biimpri df-sn syl6eqr unieqd vex unisn
+      wceq syl6eq ) ABCDZEBFZABGZHCIZJZHUCUAUBUDUAUBTBGZUDUBUERUAATBKLBUCMNOUCC
+      PQS $.
 
     $( Theorem 8.19 in [Quine] p. 57.  This theorem is the fundamental property
        of iota.  (Contributed by Andrew Salmon, 11-Jul-2011.) $)
@@ -38406,11 +38408,11 @@ $)
        isn't exactly one ` x ` that satisfies ` ph ` .  (Contributed by Andrew
        Salmon, 11-Jul-2011.) $)
     iotanul $p |- ( -. E! x ph -> ( iota x ph ) = (/) ) $=
-      ( vz weu cv wceq wb wal wex cio c0 df-eu wn cuni dfiota2 alnex ax-1 eqidd
-      cab impbid1 con2bid alimi abbi dfnul2 syl6eqr sylbir unieqd syl6eq syl5eq
-      sylib uni0 sylnbi ) ABDABECEZFGBHZCIZABJZKFABCLUOMZUPUNCSZNZKABCOUQUSKNKU
-      QURKUQUNMZCHZURKFUNCPVAURUMUMFZMZCSZKVAUNVCGZCHURVDFUTVECUTVBUNUTVBUTUTVB
-      QUTUMRTUAUBUNVCCUCUJCUDUEUFUGUKUHUIUL $.
+      ( vz weu weq wb wal wex cio c0 wceq df-eu wn cab cuni dfiota2 alnex eqidd
+      ax-1 cv impbid1 con2bid sylibr dfnul2 syl6eqr sylbir unieqd syl6eq syl5eq
+      alimi abbib uni0 sylnbi ) ABDABCEFBGZCHZABIZJKABCLUOMZUPUNCNZOZJABCPUQUSJ
+      OJUQURJUQUNMZCGZURJKUNCQVAURCCEZMZCNZJVAUNVCFZCGURVDKUTVECUTVBUNUTVBUTUTV
+      BSUTCTRUAUBUJUNVCCUKUCCUDUEUFUGULUHUIUM $.
 
     $( The ` iota ` class is a subset of the union of all elements satisfying
        ` ph ` .  (Contributed by Mario Carneiro, 24-Dec-2016.) $)
