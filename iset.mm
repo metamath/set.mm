@@ -151263,6 +151263,87 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Nonzero rings and zero rings
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c NzRing $.
+
+  $( The class of nonzero rings. $)
+  cnzr $a class NzRing $.
+
+  $( A nonzero or nontrivial ring is a ring with at least two values, or
+     equivalently where 1 and 0 are different.  (Contributed by Stefan O'Rear,
+     24-Feb-2015.) $)
+  df-nzr $a |- NzRing = { r e. Ring | ( 1r ` r ) =/= ( 0g ` r ) } $.
+
+  ${
+    $d .1. r $.  $d R r $.  $d .0. r $.
+    isnzr.o $e |- .1. = ( 1r ` R ) $.
+    isnzr.z $e |- .0. = ( 0g ` R ) $.
+    $( Property of a nonzero ring.  (Contributed by Stefan O'Rear,
+       24-Feb-2015.) $)
+    isnzr $p |- ( R e. NzRing <-> ( R e. Ring /\ .1. =/= .0. ) ) $=
+      ( vr cv cur cfv c0g wne crg cnzr wceq fveq2 eqtr4di neeq12d df-nzr elrab2
+      ) FGZHIZTJIZKBCKFALMTANZUABUBCUCUAAHIBTAHODPUCUBAJICTAJOEPQFRS $.
+
+    $( One and zero are different in a nonzero ring.  (Contributed by Stefan
+       O'Rear, 24-Feb-2015.) $)
+    nzrnz $p |- ( R e. NzRing -> .1. =/= .0. ) $=
+      ( cnzr wcel crg wne isnzr simprbi ) AFGAHGBCIABCDEJK $.
+  $}
+
+  ${
+    $d R r $.
+    $( A nonzero ring is a ring.  (Contributed by Stefan O'Rear, 24-Feb-2015.)
+       (Proof shortened by SN, 23-Feb-2025.) $)
+    nzrring $p |- ( R e. NzRing -> R e. Ring ) $=
+      ( vr cnzr crg cv cur cfv c0g wne df-nzr ssrab3 sseli ) CDABEZFGMHGIBDCBJK
+      L $.
+  $}
+
+  ${
+    ringelnzr.z $e |- .0. = ( 0g ` R ) $.
+    ringelnzr.b $e |- B = ( Base ` R ) $.
+    $( A ring is nonzero if it has a nonzero element.  (Contributed by Stefan
+       O'Rear, 6-Feb-2015.)  (Revised by Mario Carneiro, 13-Jun-2015.) $)
+    ringelnzr $p |- ( ( R e. Ring /\ X e. ( B \ { .0. } ) ) -> R e. NzRing ) $=
+      ( crg wcel csn cdif wa cur cfv wne cnzr simpl eldifsni adantl wceq wi mpd
+      eldifi ring0cl adantr eqid ring1eq0 syl3anc necon3d isnzr sylanbrc ) BGHZ
+      CADIZJHZKZUKBLMZDNZBOHUKUMPZUNCDNZUPUMURUKCADQRUNUODCDUNUKCAHZDAHZUODSCDS
+      TUQUMUSUKCAULUBRUKUTUMABDFEUCUDABUOCDDFUOUEZEUFUGUHUABUODVAEUIUJ $.
+  $}
+
+  ${
+    nzrunit.1 $e |- U = ( Unit ` R ) $.
+    nzrunit.2 $e |- .0. = ( 0g ` R ) $.
+    $( A unit is nonzero in any nonzero ring.  (Contributed by Mario Carneiro,
+       6-Oct-2015.) $)
+    nzrunit $p |- ( ( R e. NzRing /\ A e. U ) -> A =/= .0. ) $=
+      ( cnzr wcel wne wn wceq cur cfv eqid nzrnz crg nzrring 0unit necon3bbid
+      wb syl mpbird eleq1 notbid syl5ibrcom necon2ad imp ) BGHZACHZADIUHUIADUHU
+      IJADKZDCHZJZUHULBLMZDIZBUMDUMNZFOUHBPHZULUNTBQUPUKUMDBCUMDEFUORSUAUBUJUIU
+      KADCUCUDUEUFUG $.
+  $}
+
+  ${
+    $d .0. x $.  $d .1. x $.  $d B x $.  $d R x $.
+    0ring.b $e |- B = ( Base ` R ) $.
+    0ring.0 $e |- .0. = ( 0g ` R ) $.
+    0ring01eq.1 $e |- .1. = ( 1r ` R ) $.
+    $( If the zero and the identity element of a ring are the same, the ring is
+       the zero ring.  (Contributed by AV, 16-Apr-2019.)  (Proof shortened by
+       SN, 23-Feb-2025.) $)
+    01eq0ring $p |- ( ( R e. Ring /\ .0. = .1. ) -> B = { .0. } ) $=
+      ( vx wceq crg wcel csn eqcom cv wex wral ring0cl elex2 syl wa wi ring1eq0
+      adantr mpd3an3 impancom ralrimiv eqsnm biimpar syl2an2r sylan2b ) DCIBJKZ
+      CDIZADLIZDCMUKHNZAKZHOZULUNDIZHAPZUMUKDAKZUPABDEFQZHDARSUKULTUQHAUKUOULUQ
+      UKUOUSULUQUAUKUSUOUTUCABCUNDDEGFUBUDUEUFUPUMURHADUGUHUIUJ $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Local rings
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -151276,82 +151357,85 @@ $)
     $( A local ring is a nonzero ring where for any two elements summing to
        one, at least one is invertible.  Any field is a local ring; the ring of
        integers is an example of a ring which is not a local ring.
-       (Contributed by Jim Kingdon, 18-Feb-2025.) $)
-    df-lring $a |- LRing = { r e. Ring | ( ( 1r ` r ) =/= ( 0g ` r ) /\
+       (Contributed by Jim Kingdon, 18-Feb-2025.)  (Revised by SN,
+       23-Feb-2025.) $)
+    df-lring $a |- LRing = { r e. NzRing |
       A. x e. ( Base ` r ) A. y e. ( Base ` r )
       ( ( x ( +g ` r ) y ) = ( 1r ` r ) ->
-      ( x e. ( Unit ` r ) \/ y e. ( Unit ` r ) ) ) ) } $.
+      ( x e. ( Unit ` r ) \/ y e. ( Unit ` r ) ) ) } $.
+  $}
+
+  ${
+    $d R r x y $.  $d B r x y $.  $d .+ r $.  $d .1. r $.  $d U r $.
+    islring.b $e |- B = ( Base ` R ) $.
+    islring.a $e |- .+ = ( +g ` R ) $.
+    islring.1 $e |- .1. = ( 1r ` R ) $.
+    islring.u $e |- U = ( Unit ` R ) $.
+    $( The predicate "is a local ring".  (Contributed by SN, 23-Feb-2025.) $)
+    islring $p |- ( R e. LRing <-> ( R e. NzRing /\
+      A. x e. B A. y e. B ( ( x .+ y ) = .1. -> ( x e. U \/ y e. U ) ) ) ) $=
+      ( vr cv cplusg cfv cur wcel wral fveq2 eqtr4di co wceq cui wo wi cbs cnzr
+      clring oveqd eqeq12d eleq2d orbi12d imbi12d raleqbidv df-lring elrab2 ) A
+      MZBMZLMZNOZUAZUSPOZUBZUQUSUCOZQZURVDQZUDZUEZBUSUFOZRZAVIRUQURDUAZGUBZUQFQ
+      ZURFQZUDZUEZBCRZACRLEUGUHUSEUBZVJVQAVICVRVIEUFOCUSEUFSHTZVRVHVPBVICVSVRVC
+      VLVGVOVRVAVKVBGVRUTDUQURVRUTENODUSENSITUIVRVBEPOGUSEPSJTUJVRVEVMVFVNVRVDF
+      UQVRVDEUCOFUSEUCSKTZUKVRVDFURVTUKULUMUNUNABLUOUP $.
   $}
 
   ${
     $d R r x y $.
-    $( A local ring is a ring.  (Contributed by Jim Kingdon, 20-Feb-2025.) $)
-    lringring $p |- ( R e. LRing -> R e. Ring ) $=
-      ( vx vy vr clring wcel crg cur cfv c0g wne cv cplusg co wceq cui cbs wral
-      wo fveq2 wi neeq12d oveqd eqeq12d eleq2d orbi12d imbi12d anbi12d df-lring
-      wa raleqbidv elrab2 simplbi ) AEFAGFAHIZAJIZKZBLZCLZAMIZNZUNOZUQAPIZFZURV
-      BFZSZUAZCAQIZRZBVGRZUJZDLZHIZVKJIZKZUQURVKMIZNZVLOZUQVKPIZFZURVRFZSZUAZCV
-      KQIZRZBWCRZUJVJDAGEVKAOZVNUPWEVIWFVLUNVMUOVKAHTZVKAJTUBWFWDVHBWCVGVKAQTZW
-      FWBVFCWCVGWHWFVQVAWAVEWFVPUTVLUNWFVOUSUQURVKAMTUCWGUDWFVSVCVTVDWFVRVBUQVK
-      APTZUEWFVRVBURWIUEUFUGUKUKUHBCDUIULUM $.
+    $( A local ring is a nonzero ring.  (Contributed by SN, 23-Feb-2025.) $)
+    lringnzr $p |- ( R e. LRing -> R e. NzRing ) $=
+      ( vx vy vr clring cnzr cv cplusg cfv co cur wceq cui wcel wo cbs df-lring
+      wi wral ssrab3 sseli ) EFABGZCGZDGZHIJUDKILUBUDMIZNUCUENORCUDPIZSBUFSDFEB
+      CDQTUA $.
   $}
 
+  $( A local ring is a ring.  (Contributed by Jim Kingdon, 20-Feb-2025.)
+     (Revised by SN, 23-Feb-2025.) $)
+  lringring $p |- ( R e. LRing -> R e. Ring ) $=
+    ( clring wcel cnzr crg lringnzr nzrring syl ) ABCADCAECAFAGH $.
+
   ${
-    $d R r x y $.
+    lringnz.1 $e |- .1. = ( 1r ` R ) $.
+    lringnz.2 $e |- .0. = ( 0g ` R ) $.
     $( A local ring is a nonzero ring.  (Contributed by Jim Kingdon,
-       20-Feb-2025.) $)
-    lringnz $p |- ( R e. LRing -> ( 1r ` R ) =/= ( 0g ` R ) ) $=
-      ( vx vy vr clring wcel cur cfv c0g wne cv cplusg co wceq cui wo cbs fveq2
-      wi wral wa neeq12d oveqd eqeq12d eleq2d orbi12d imbi12d raleqbidv anbi12d
-      crg df-lring elrab2 simprbi simpld ) AEFZAGHZAIHZJZBKZCKZALHZMZUPNZUSAOHZ
-      FZUTVDFZPZSZCAQHZTZBVITZUOAUJFURVKUAZDKZGHZVMIHZJZUSUTVMLHZMZVNNZUSVMOHZF
-      ZUTVTFZPZSZCVMQHZTZBWETZUAVLDAUJEVMANZVPURWGVKWHVNUPVOUQVMAGRZVMAIRUBWHWF
-      VJBWEVIVMAQRZWHWDVHCWEVIWJWHVSVCWCVGWHVRVBVNUPWHVQVAUSUTVMALRUCWIUDWHWAVE
-      WBVFWHVTVDUSVMAORZUEWHVTVDUTWKUEUFUGUHUHUIBCDUKULUMUN $.
+       20-Feb-2025.)  (Revised by SN, 23-Feb-2025.) $)
+    lringnz $p |- ( R e. LRing -> .1. =/= .0. ) $=
+      ( clring wcel cnzr wne lringnzr nzrnz syl ) AFGAHGBCIAJABCDEKL $.
   $}
 
   ${
-    $d .+ u v $.  $d ./ u v $.  $d R r u v $.  $d X u v $.  $d Y u v $.
+    $d .+ u v $.  $d R r u v $.  $d X u v $.  $d Y u v $.
     lring.b $e |- ( ph -> B = ( Base ` R ) ) $.
     lring.u $e |- ( ph -> U = ( Unit ` R ) ) $.
     lring.p $e |- ( ph -> .+ = ( +g ` R ) ) $.
-    lring.m $e |- ( ph -> .x. = ( .r ` R ) ) $.
-    lring.d $e |- ( ph -> ./ = ( /r ` R ) ) $.
     lring.l $e |- ( ph -> R e. LRing ) $.
     lring.s $e |- ( ph -> ( X .+ Y ) e. U ) $.
     lring.x $e |- ( ph -> X e. B ) $.
     lring.y $e |- ( ph -> Y e. B ) $.
     $( If the sum of two elements of a local ring is invertible, then at least
        one of the summands must be invertible.  (Contributed by Jim Kingdon,
-       18-Feb-2025.) $)
+       18-Feb-2025.)  (Revised by SN, 23-Feb-2025.) $)
     lringuplu $p |- ( ph -> ( X e. U \/ Y e. U ) ) $=
-      ( co wcel vu vv vr cui cfv cplusg cur wceq cdvr oveqd oveq12d crg cbs c0g
-      wo wne cv wi wral clring neeq12d eqeq12d eleq2d orbi12d imbi12d raleqbidv
-      fveq2 anbi12d df-lring elrab2 sylib simpld eleqtrd dvrdir syl13anc eqcomd
-      wa eqid ringgrpd grpcld dvreq1 syl3anc mpbird 3eqtr2d oveq2 eqeq1d orbi2d
-      eleq1 oveq1 orbi1d ralbidv simprrd dvrcl eqeltrd rspcdva mpd cmulr oveq1d
-      wb dvrcan1 eqtrd adantr simpr unitmulcl eqeltrrd eleqtrrd ex orim12d ) AH
-      HIDSZCSZEUDUEZTZIXICSZXKTZUOZHGTZIGTZUOAXJXMEUFUEZSZEUGUEZUHZXOAXSHXIEUIU
-      EZSZIXIYBSZXRSZHIXRSZXIYBSZXTAXJYCXMYDXRACYBHXINUJZACYBIXINUJZUKAEULTZHEU
-      MUEZTZIYKTZXIXKTZYGYEUHAYJXTEUNUEZUPZUAUQZUBUQZXRSZXTUHZYQXKTZYRXKTZUOZUR
-      ZUBYKUSZUAYKUSZVQZAEUTTYJUUGVQOUCUQZUGUEZUUHUNUEZUPZYQYRUUHUFUEZSZUUIUHZY
-      QUUHUDUEZTZYRUUOTZUOZURZUBUUHUMUEZUSZUAUUTUSZVQUUGUCEULUTUUHEUHZUUKYPUVBU
-      UFUVCUUIXTUUJYOUUHEUGVGZUUHEUNVGVAUVCUVAUUEUAUUTYKUUHEUMVGZUVCUUSUUDUBUUT
-      YKUVEUVCUUNYTUURUUCUVCUUMYSUUIXTUVCUULXRYQYRUUHEUFVGUJUVDVBUVCUUPUUAUUQUU
-      BUVCUUOXKYQUUHEUDVGZVCUVCUUOXKYRUVFVCVDVEVFVFVHUAUBUCVIVJVKZVLZAHBYKQJVMZ
-      AIBYKRJVMZAXIGXKPKVMZYKYBXREXKHIXIYKVRZXKVRZXRVRZYBVRZVNVOAYGXTUHZYFXIUHZ
-      AXRDHIADXRLVPUJAYJYFYKTYNUVPUVQWSUVHAYKXREHIUVLUVNAEUVHVSUVIUVJVTUVKYKYBE
-      XKXTYFXIUVLUVMUVOXTVRWAWBWCWDAXJYRXRSZXTUHZXLUUBUOZURZYAXOURUBYKXMYRXMUHZ
-      UVSYAUVTXOUWBUVRXSXTYRXMXJXRWEWFUWBUUBXNXLYRXMXKWHWGVEAUUEUWAUBYKUSUAYKXJ
-      YQXJUHZUUDUWAUBYKUWCYTUVSUUCUVTUWCYSUVRXTYQXJYRXRWIWFUWCUUAXLUUBYQXJXKWHW
-      JVEWKAYJYPUUFUVGWLAXJYCYKYHAYJYLYNYCYKTUVHUVIUVKYKYBEXKHXIUVLUVMUVOWMWBWN
-      WOAXMYDYKYIAYJYMYNYDYKTUVHUVJUVKYKYBEXKIXIUVLUVMUVOWMWBWNWOWPAXLXPXNXQAXL
-      XPAXLVQZHXKGUWDXJXIEWQUEZSZHXKAUWFHUHXLAUWFYCXIUWESZHAXJYCXIUWEYHWRAYJYLY
-      NUWGHUHUVHUVIUVKYKYBEUWEXKHXIUVLUVMUVOUWEVRZWTWBXAXBUWDYJXLYNUWFXKTAYJXLU
-      VHXBAXLXCAYNXLUVKXBEUWEXKXJXIUVMUWHXDWBXEAGXKUHZXLKXBXFXGAXNXQAXNVQZIXKGU
-      WJXMXIUWESZIXKAUWKIUHXNAUWKYDXIUWESZIAXMYDXIUWEYIWRAYJYMYNUWLIUHUVHUVJUVK
-      YKYBEUWEXKIXIUVLUVMUVOUWHWTWBXAXBUWJYJXNYNUWKXKTAYJXNUVHXBAXNXCAYNXNUVKXB
-      EUWEXKXMXIUVMUWHXDWBXEAUWIXNKXBXFXGXHWP $.
+      ( vv co wcel wceq syl3anc adantr vu cfv cui wo wa cmulr crg cbs lringring
+      cdvr syl eleqtrd eqid dvrcan1 simpr unitmulcl eqeltrrd eleqtrrd orcd olcd
+      clring cplusg cur dvrdir syl13anc eqcomd wb ringgrpd grpcld dvreq1 mpbird
+      oveqd eqtr3d cv wi oveq2 eqeq1d eleq1 orbi2d imbi12d oveq1 orbi1d ralbidv
+      wral cnzr islring sylib simprd dvrcl rspcdva mpd mpjaodan ) AFFGCPZDUJUBZ
+      PZDUCUBZQZFEQZGEQZUDGWMWNPZWPQZAWQUEZWRWSXBFWPEXBWOWMDUFUBZPZFWPAXDFRZWQA
+      DUGQZFDUHUBZQZWMWPQZXEADVAQZXFKDUIUKZAFBXGMHULZAWMEWPLIULZXGWNDXCWPFWMXGU
+      MZWPUMZWNUMZXCUMZUNSTXBXFWQXIXDWPQAXFWQXKTAWQUOAXIWQXMTDXCWPWOWMXOXQUPSUQ
+      AEWPRZWQITURUSAXAUEZWSWRXSGWPEXSWTWMXCPZGWPAXTGRZXAAXFGXGQZXIYAXKAGBXGNHU
+      LZXMXGWNDXCWPGWMXNXOXPXQUNSTXSXFXAXIXTWPQAXFXAXKTAXAUOAXIXAXMTDXCWPWTWMXO
+      XQUPSUQAXRXAITURUTAWOWTDVBUBZPZDVCUBZRZWQXAUDZAFGYDPZWMWNPZYEYFAXFXHYBXIY
+      JYERXKXLYCXMXGWNYDDWPFGWMXNXOYDUMZXPVDVEAYJYFRZYIWMRZAYDCFGACYDJVFVLAXFYI
+      XGQXIYLYMVGXKAXGYDDFGXNYKADXKVHXLYCVIXMXGWNDWPYFYIWMXNXOXPYFUMZVJSVKVMAWO
+      OVNZYDPZYFRZWQYOWPQZUDZVOZYGYHVOOXGWTYOWTRZYQYGYSYHUUAYPYEYFYOWTWOYDVPVQU
+      UAYRXAWQYOWTWPVRVSVTAUAVNZYOYDPZYFRZUUBWPQZYRUDZVOZOXGWDZYTOXGWDUAXGWOUUB
+      WORZUUGYTOXGUUIUUDYQUUFYSUUIUUCYPYFUUBWOYOYDWAVQUUIUUEWQYRUUBWOWPVRWBVTWC
+      ADWEQZUUHUAXGWDZAXJUUJUUKUEKUAOXGYDDWPYFXNYKYNXOWFWGWHAXFXHXIWOXGQXKXLXMX
+      GWNDWPFWMXNXOXPWISWJAXFYBXIWTXGQXKYCXMXGWNDWPGWMXNXOXPWISWJWKWL $.
   $}
 
 
@@ -151442,17 +151526,16 @@ $)
     $( The apartness relation given by ~ df-apr for a local ring is
        cotransitive.  (Contributed by Jim Kingdon, 17-Feb-2025.) $)
     aprcotr $p |- ( ph -> ( X .# Y -> ( X .# Z \/ Y .# Z ) ) ) $=
-      ( wbr cfv co wcel adantr eqidd eleqtrd wo wa csg cui cdvr cplusg cbs wceq
-      cmulr clring cgrp crg lringring syl ringgrpd eqid grpnpncan aprval biimpa
-      syl13anc eqeltrd grpsubcl syl3anc eleqtrrd biimprd aprsym sylbird orim12d
-      lringuplu wi mpd ex ) AEFCNZEGCNZFGCNZUAZAVMUBZEGDUCOZPZDUDOZQZGFVRPZVTQZ
-      UAVPVQBDUEOZDUFOZDDUIOZVTVSWBABDUGOZUHVMHRVQVTSVQWESVQWFSVQWDSADUJQZVMJRV
-      QVSWBWEPZEFVRPZVTAWIWJUHZVMADUKQZEWGQZGWGQZFWGQZWKADAWHDULQJDUMUNZUOZAEBW
-      GKHTZAGBWGMHTZAFBWGLHTZWGWEDVREGFWGUPZWEUPVRUPZUQUTRAVMWJVTQABCDVTVREFHIA
-      VRSZAVTSZWPKLURUSVAAVSBQVMAVSWGBAWLWMWNVSWGQWQWRWSWGDVREGXAXBVBVCHVDRAWBB
-      QVMAWBWGBAWLWNWOWBWGQWQWSWTWGDVRGFXAXBVBVCHVDRVIVQWAVNWCVOAWAVNVJVMAVNWAA
-      BCDVTVREGHIXCXDWPKMURVERAWCVOVJVMAWCGFCNVOABCDVTVRGFHIXCXDWPMLURABCDGFHIW
-      PMLVFVGRVHVKVL $.
+      ( wbr cfv co wcel adantr eqidd eleqtrd wo wa csg cui cplusg cbs wceq cgrp
+      clring crg lringring syl ringgrpd eqid grpnpncan syl13anc aprval grpsubcl
+      biimpa eqeltrd syl3anc lringuplu wi biimprd aprsym sylbird orim12d mpd ex
+      eleqtrrd ) AEFCNZEGCNZFGCNZUAZAVKUBZEGDUCOZPZDUDOZQZGFVPPZVRQZUAVNVOBDUEO
+      ZDVRVQVTABDUFOZUGVKHRVOVRSVOWBSADUIQZVKJRVOVQVTWBPZEFVPPZVRAWEWFUGZVKADUH
+      QZEWCQZGWCQZFWCQZWGADAWDDUJQJDUKULZUMZAEBWCKHTZAGBWCMHTZAFBWCLHTZWCWBDVPE
+      GFWCUNZWBUNVPUNZUOUPRAVKWFVRQABCDVRVPEFHIAVPSZAVRSZWLKLUQUSUTAVQBQVKAVQWC
+      BAWHWIWJVQWCQWMWNWOWCDVPEGWQWRURVAHVJRAVTBQVKAVTWCBAWHWJWKVTWCQWMWOWPWCDV
+      PGFWQWRURVAHVJRVBVOVSVLWAVMAVSVLVCVKAVLVSABCDVRVPEGHIWSWTWLKMUQVDRAWAVMVC
+      VKAWAGFCNVMABCDVRVPGFHIWSWTWLMLUQABCDGFHIWLMLVEVFRVGVHVI $.
   $}
 
   ${
@@ -151463,18 +151546,18 @@ $)
       ( vx vy vz vr clring wcel capr cfv cbs cv wbr wral wa csg cui fveq2 eqidd
       cvv adantr cxp wss wn wi wo wap co copab df-apr wceq eleq2d anbi12d oveqd
       eleq12d opabbidv elex wfn basfn a1i funfvex funfni syl2anc xpexg opabssxp
-      ssexd fvmptd3 eqsstrdi crg lringring cur c0g wne lringnz aprirr ralrimiva
-      simpr simprl simprr aprsym ralrimivva w3a simpl simpr1 simpr2 ralrimivvva
-      simpr3 aprcotr jca df-pap syl21anbrc ) AFGZAHIZAJIZWMUAZUBBKZWOWLLUCZBWMM
-      WOCKZWLLZWQWOWLLUDZCWMMBWMMZWRWODKZWLLWQXAWLLUEUDZDWMMCWMMBWMMZNWMWLUFWKW
-      LWOWMGZWQWMGZNZWOWQAOIZUGZAPIZGZNZBCUHZWNWKEAWOEKZJIZGZWQXNGZNZWOWQXMOIZU
-      GZXMPIZGZNZBCUHXLSHSBCEUIXMAUJZYBXKBCYCXQXFYAXJYCXOXDXPXEYCXNWMWOXMAJQZUK
-      YCXNWMWQYDUKULYCXSXHXTXIYCXRXGWOWQXMAOQUMXMAPQUNULUOAFUPZWKXLWNSWKWMSGZYF
-      WNSGWKJSUQZASGYFYGWKURUSYEYFSAJAJUTVAVBZYHWMWMSSVCVBXLWNUBWKXJBCWMWMVDZUS
-      VEVFYIVGWKWPBWMWKXDNZWMWLAWOYJWMRYJWLRWKAVHGZXDAVIZTWKXDVPWKAVJIAVKIVLXDA
-      VMTVNVOWKWTXCWKWSBCWMWMWKXFNZWMWLAWOWQYMWMRYMWLRWKYKXFYLTWKXDXEVQWKXDXEVR
-      VSVTWKXBBCDWMWMWMWKXDXEXAWMGZWAZNZWMWLAWOWQXAYPWMRYPWLRWKYOWBWKXDXEYNWCWK
-      XDXEYNWDWKXDXEYNWFWGWEWHBCDWMWLWIWJ $.
+      ssexd fvmptd3 eqsstrdi crg lringring simpr cur c0g eqid lringnz ralrimiva
+      wne aprirr simprl simprr aprsym ralrimivva w3a simpl simpr1 simpr2 simpr3
+      aprcotr ralrimivvva jca df-pap syl21anbrc ) AFGZAHIZAJIZWNUAZUBBKZWPWMLUC
+      ZBWNMWPCKZWMLZWRWPWMLUDZCWNMBWNMZWSWPDKZWMLWRXBWMLUEUDZDWNMCWNMBWNMZNWNWM
+      UFWLWMWPWNGZWRWNGZNZWPWRAOIZUGZAPIZGZNZBCUHZWOWLEAWPEKZJIZGZWRXOGZNZWPWRX
+      NOIZUGZXNPIZGZNZBCUHXMSHSBCEUIXNAUJZYCXLBCYDXRXGYBXKYDXPXEXQXFYDXOWNWPXNA
+      JQZUKYDXOWNWRYEUKULYDXTXIYAXJYDXSXHWPWRXNAOQUMXNAPQUNULUOAFUPZWLXMWOSWLWN
+      SGZYGWOSGWLJSUQZASGYGYHWLURUSYFYGSAJAJUTVAVBZYIWNWNSSVCVBXMWOUBWLXKBCWNWN
+      VDZUSVEVFYJVGWLWQBWNWLXENZWNWMAWPYKWNRYKWMRWLAVHGZXEAVIZTWLXEVJWLAVKIZAVL
+      IZVPXEAYNYOYNVMYOVMVNTVQVOWLXAXDWLWTBCWNWNWLXGNZWNWMAWPWRYPWNRYPWMRWLYLXG
+      YMTWLXEXFVRWLXEXFVSVTWAWLXCBCDWNWNWNWLXEXFXBWNGZWBZNZWNWMAWPWRXBYSWNRYSWM
+      RWLYRWCWLXEXFYQWDWLXEXFYQWEWLXEXFYQWFWGWHWIBCDWNWMWJWK $.
   $}
 
 
@@ -168772,6 +168855,9 @@ htmldef "RingHom" as " RingHom ";
 htmldef "RingIso" as " RingIso ";
   althtmldef "RingIso" as " RingIso ";
   latexdef "RingIso" as " \mathrm{RingIso} ";
+htmldef "NzRing" as "NzRing";
+  althtmldef "NzRing" as "NzRing";
+  latexdef "NzRing" as "\mathrm{NzRing}";
 htmldef "#r" as "#<sub>r</sub>";
   althtmldef "#r" as "#<sub>r</sub>";
   latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";
