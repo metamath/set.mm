@@ -122,6 +122,8 @@ Date      Old       New         Notes
 24-Feb-25 remulid2  remullid
 24-Feb-25 sn-mulid2 sn-mullid
 24-Feb-25 xaddid2d  xaddlidd
+24-Feb-25 abbi1     abbi        reverse direction of abbib
+23-Feb-25 abbi      abbib       flip sides of bi-conditional
 23-Feb-25 addsid1   addsrid
 23-Feb-25 addsid2   addslid
 22-Feb-25 rdivmuldivd [same]    Moved from TA's mathbox to main set.mm
