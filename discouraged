@@ -10397,7 +10397,6 @@
 "nfsb2" is used by "sb9".
 "nfsb2" is used by "sbco3".
 "nfsb2" is used by "wl-nfs1t".
-"nfsb4" is used by "nfsbOLD".
 "nfsb4" is used by "sbco2".
 "nfsb4t" is used by "nfsb4".
 "nfsb4t" is used by "nfsbd".
@@ -16579,7 +16578,7 @@ New usage of "epweonALT" is discouraged (0 uses).
 New usage of "eq0ALT" is discouraged (0 uses).
 New usage of "eq0OLDOLD" is discouraged (0 uses).
 New usage of "eq0rdvALT" is discouraged (0 uses).
-New usage of "eqabOLD" is discouraged (0 uses).
+New usage of "eqabbOLD" is discouraged (0 uses).
 New usage of "eqeq12OLD" is discouraged (1 uses).
 New usage of "eqeq12dOLD" is discouraged (1 uses).
 New usage of "eqeq1dALT" is discouraged (0 uses).
@@ -17999,9 +17998,8 @@ New usage of "nfs1" is discouraged (2 uses).
 New usage of "nfsabg" is discouraged (1 uses).
 New usage of "nfsb" is discouraged (17 uses).
 New usage of "nfsb2" is discouraged (4 uses).
-New usage of "nfsb4" is discouraged (2 uses).
+New usage of "nfsb4" is discouraged (1 uses).
 New usage of "nfsb4t" is discouraged (2 uses).
-New usage of "nfsbOLD" is discouraged (0 uses).
 New usage of "nfsbc" is discouraged (4 uses).
 New usage of "nfsbcd" is discouraged (3 uses).
 New usage of "nfsbd" is discouraged (3 uses).
@@ -20477,7 +20475,7 @@ Proof modification of "epweonALT" is discouraged (86 steps).
 Proof modification of "eq0ALT" is discouraged (31 steps).
 Proof modification of "eq0OLDOLD" is discouraged (6 steps).
 Proof modification of "eq0rdvALT" is discouraged (25 steps).
-Proof modification of "eqabOLD" is discouraged (47 steps).
+Proof modification of "eqabbOLD" is discouraged (47 steps).
 Proof modification of "eqeq12OLD" is discouraged (24 steps).
 Proof modification of "eqeq12dOLD" is discouraged (22 steps).
 Proof modification of "eqeq1dALT" is discouraged (62 steps).
@@ -21000,7 +20998,6 @@ Proof modification of "nfraldwOLD" is discouraged (41 steps).
 Proof modification of "nfralwOLD" is discouraged (27 steps).
 Proof modification of "nfreuwOLD" is discouraged (56 steps).
 Proof modification of "nfrmowOLD" is discouraged (55 steps).
-Proof modification of "nfsbOLD" is discouraged (23 steps).
 Proof modification of "nfsbvOLD" is discouraged (47 steps).
 Proof modification of "nfunidALT" is discouraged (33 steps).
 Proof modification of "nfunidALT2" is discouraged (49 steps).
