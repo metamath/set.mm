@@ -143610,6 +143610,33 @@ $)
   ipslid $p |- ( .i = Slot ( .i ` ndx ) /\ ( .i ` ndx ) e. NN ) $=
     ( cip c8 df-ip 8nn ndxslid ) ABCDE $.
 
+  $( The slot for the inner product is not the slot for the base set in an
+     extensible structure.  (Contributed by AV, 21-Oct-2024.) $)
+  ipndxnbasendx $p |- ( .i ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx cip cfv cbs wne c8 c1 1re 1lt8 gtneii ipndx basendx neeq12i mpbir ) A
+    BCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slot for the inner product is not the slot for the group operation in
+     an extensible structure.  (Contributed by AV, 29-Oct-2024.) $)
+  ipndxnplusgndx $p |- ( .i ` ndx ) =/= ( +g ` ndx ) $=
+    ( cnx cip cfv cplusg wne c8 c2 2re 2lt8 gtneii ipndx plusgndx neeq12i mpbir
+    ) ABCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slot for the inner product is not the slot for the ring
+     (multiplication) operation in an extensible structure.  Formerly part of
+     proof for ~ mgpsca .  (Contributed by AV, 29-Oct-2024.) $)
+  ipndxnmulrndx $p |- ( .i ` ndx ) =/= ( .r ` ndx ) $=
+    ( cnx cip cfv cmulr wne c8 c3 3re 3lt8 gtneii ipndx mulrndx neeq12i mpbir )
+    ABCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slot for the scalar is not the index of other slots.  Formerly part of
+     proof for ~ srasca and ~ sravsca .  (Contributed by AV, 12-Nov-2024.) $)
+  slotsdifipndx $p |- ( ( .s ` ndx ) =/= ( .i ` ndx )
+                       /\ ( Scalar ` ndx ) =/= ( .i ` ndx ) ) $=
+    ( cnx cvsca cfv cip wne csca c6 6re 6lt8 ltneii vscandx ipndx neeq12i mpbir
+    c8 c5 5re 5lt8 scandx pm3.2i ) ABCZADCZEZAFCZUBEZUCGOEGOHIJUAGUBOKLMNUEPOEP
+    OQRJUDPUBOSLMNT $.
+
   ${
     ipspart.a $e |- A = ( { <. ( Base ` ndx ) , B >. ,
        <. ( +g ` ndx ) , .+ >. , <. ( .r ` ndx ) , .X. >. } u.
