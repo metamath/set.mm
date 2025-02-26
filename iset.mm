@@ -143381,6 +143381,27 @@ $)
   starvslid $p |- ( *r = Slot ( *r ` ndx ) /\ ( *r ` ndx ) e. NN ) $=
     ( cstv c4 df-starv 4nn ndxslid ) ABCDE $.
 
+  $( The slot for the involution function is not the slot for the base set in
+     an extensible structure.  Formerly part of proof for ~ ressstarv .
+     (Contributed by AV, 18-Oct-2024.) $)
+  starvndxnbasendx $p |- ( *r ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx cstv cfv cbs wne c4 c1 1re 1lt4 gtneii starvndx basendx neeq12i mpbir
+    ) ABCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slot for the involution function is not the slot for the base set in
+     an extensible structure.  Formerly part of proof for ~ ressstarv .
+     (Contributed by AV, 18-Oct-2024.) $)
+  starvndxnplusgndx $p |- ( *r ` ndx ) =/= ( +g ` ndx ) $=
+    ( cnx cstv cfv cplusg wne c4 c2 2lt4 gtneii starvndx plusgndx neeq12i mpbir
+    2re ) ABCZADCZEFGEGFNHIOFPGJKLM $.
+
+  $( The slot for the involution function is not the slot for the base set in
+     an extensible structure.  Formerly part of proof for ~ ressstarv .
+     (Contributed by AV, 18-Oct-2024.) $)
+  starvndxnmulrndx $p |- ( *r ` ndx ) =/= ( .r ` ndx ) $=
+    ( cnx cstv cfv cmulr wne c4 3re 3lt4 gtneii starvndx mulrndx neeq12i mpbir
+    c3 ) ABCZADCZEFNENFGHIOFPNJKLM $.
+
   ${
     ressmulr.1 $e |- S = ( R |`s A ) $.
     ressmulr.2 $e |- .x. = ( .r ` R ) $.
