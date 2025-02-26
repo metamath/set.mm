@@ -143834,6 +143834,62 @@ $)
   pleslid $p |- ( le = Slot ( le ` ndx ) /\ ( le ` ndx ) e. NN ) $=
     ( cple c1 cc0 cdc df-ple 10nn ndxslid ) ABCDEFG $.
 
+  $( The index value of the order slot is a positive integer.  This property
+     should be ensured for every concrete coding because otherwise it could not
+     be used in an extensible structure (slots must be positive integers).
+     (Contributed by AV, 30-Oct-2024.) $)
+  plendxnn $p |- ( le ` ndx ) e. NN $=
+    ( cnx cple cfv c1 cc0 cdc cn plendx 10nn eqeltri ) ABCDEFGHIJ $.
+
+  $( The index value of the ` Base ` slot is less than the index value of the
+     ` le ` slot.  (Contributed by AV, 30-Oct-2024.) $)
+  basendxltplendx $p |- ( Base ` ndx ) < ( le ` ndx ) $=
+    ( c1 cc0 cdc cnx cbs cfv cple clt 1lt10 basendx plendx 3brtr4i ) AABCDEFDGF
+    HIJKL $.
+
+  $( The slot for the order is not the slot for the base set in an extensible
+     structure.  (Contributed by AV, 21-Oct-2024.)  (Proof shortened by AV,
+     30-Oct-2024.) $)
+  plendxnbasendx $p |- ( le ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx cbs cfv cple basendxnn nnrei basendxltplendx gtneii ) ABCZADCIEFGH $.
+
+  $( The slot for the "less than or equal to" ordering is not the slot for the
+     group operation in an extensible structure.  Formerly part of proof for
+     ~ oppgle .  (Contributed by AV, 18-Oct-2024.) $)
+  plendxnplusgndx $p |- ( le ` ndx ) =/= ( +g ` ndx ) $=
+    ( cnx cfv cplusg wne c1 cc0 cdc c2 2re 2lt10 gtneii plendx plusgndx neeq12i
+    cple mpbir ) AOBZACBZDEFGZHDHSIJKQSRHLMNP $.
+
+  $( The slot for the "less than or equal to" ordering is not the slot for the
+     ring multiplication operation in an extensible structure.  Formerly part
+     of proof for ~ opsrmulr .  (Contributed by AV, 1-Nov-2024.) $)
+  plendxnmulrndx $p |- ( le ` ndx ) =/= ( .r ` ndx ) $=
+    ( cnx cple cfv cmulr wne c1 cc0 cdc 3re 3lt10 gtneii plendx mulrndx neeq12i
+    c3 mpbir ) ABCZADCZEFGHZOEOSIJKQSROLMNP $.
+
+  $( The slot for the "less than or equal to" ordering is not the slot for the
+     scalar in an extensible structure.  Formerly part of proof for ~ opsrsca .
+     (Contributed by AV, 1-Nov-2024.) $)
+  plendxnscandx $p |- ( le ` ndx ) =/= ( Scalar ` ndx ) $=
+    ( cnx cple cfv csca wne c1 cc0 cdc c5 5re 5lt10 gtneii plendx neeq12i mpbir
+    scandx ) ABCZADCZEFGHZIEISJKLQSRIMPNO $.
+
+  $( The slot for the "less than or equal to" ordering is not the slot for the
+     scalar product in an extensible structure.  Formerly part of proof for
+     ~ opsrvsca .  (Contributed by AV, 1-Nov-2024.) $)
+  plendxnvscandx $p |- ( le ` ndx ) =/= ( .s ` ndx ) $=
+    ( cnx cple cfv cvsca wne c1 cc0 cdc 6re 6lt10 gtneii plendx vscandx neeq12i
+    c6 mpbir ) ABCZADCZEFGHZOEOSIJKQSROLMNP $.
+
+  $( The index of the slot for the distance is not the index of other slots.
+     Formerly part of proof for ~ cnfldfunALT .  (Contributed by AV,
+     11-Nov-2024.) $)
+  slotsdifplendx $p |- ( ( *r ` ndx ) =/= ( le ` ndx )
+                         /\ ( TopSet ` ndx ) =/= ( le ` ndx ) ) $=
+    ( cnx cstv cfv cple wne cts c4 c1 cc0 cdc 4re 4lt10 ltneii starvndx neeq12i
+    plendx mpbir c9 9re 9lt10 tsetndx pm3.2i ) ABCZADCZEZAFCZUDEZUEGHIJZEGUHKLM
+    UCGUDUHNPOQUGRUHERUHSTMUFRUDUHUAPOQUB $.
+
   $( Index value of the ~ df-ds slot.  (Contributed by Mario Carneiro,
      14-Aug-2015.) $)
   dsndx $p |- ( dist ` ndx ) = ; 1 2 $=
