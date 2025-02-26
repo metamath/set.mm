@@ -143962,6 +143962,59 @@ $)
     2nn ) ABCZADCZEZAFCZULEZUMGHIJZEGUPKHIGQLMNUAOUKGULUPUBRPSUOHTJZUPEUQUPUCHT
     IUDUEUJUFUGOUNUQULUPUHRPSUI $.
 
+  $( Index value of the ~ df-unif slot.  (Contributed by Thierry Arnoux,
+     17-Dec-2017.)  (New usage is discouraged.) $)
+  unifndx $p |- ( UnifSet ` ndx ) = ; 1 3 $=
+    ( cunif c1 c3 cdc df-unif 1nn0 3nn decnncl ndxarg ) ABCDEBCFGHI $.
+
+  $( Utility theorem: index-independent form of ~ df-unif .  (Contributed by
+     Thierry Arnoux, 17-Dec-2017.) $)
+  unifid $p |- UnifSet = Slot ( UnifSet ` ndx ) $=
+    ( cunif c1 c3 cdc df-unif 1nn0 3nn decnncl ndxid ) ABCDEBCFGHI $.
+
+  $( The index of the slot for the uniform set in an extensible structure is a
+     positive integer.  Formerly part of proof for ~ tuslem .  (Contributed by
+     AV, 28-Oct-2024.) $)
+  unifndxnn $p |- ( UnifSet ` ndx ) e. NN $=
+    ( cnx cunif cfv c1 c3 cdc cn unifndx 1nn0 3nn decnncl eqeltri ) ABCDEFGHDEI
+    JKL $.
+
+  $( The index of the slot for the base set is less then the index of the slot
+     for the uniform set in an extensible structure.  Formerly part of proof
+     for ~ tuslem .  (Contributed by AV, 28-Oct-2024.) $)
+  basendxltunifndx $p |- ( Base ` ndx ) < ( UnifSet ` ndx ) $=
+    ( c1 cdc cnx cbs cfv cunif clt 1nn 3nn0 1nn0 declti basendx unifndx 3brtr4i
+    c3 1lt10 ) AAOBCDECFEGAOAHIJPKLMN $.
+
+  $( The slot for the uniform set is not the slot for the base set in an
+     extensible structure.  (Contributed by AV, 21-Oct-2024.) $)
+  unifndxnbasendx $p |- ( UnifSet ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx cbs cfv cunif basendxnn nnrei basendxltunifndx gtneii ) ABCZADCIEFGH
+    $.
+
+  $( The slot for the uniform set is not the slot for the topology in an
+     extensible structure.  Formerly part of proof for ~ tuslem .  (Contributed
+     by AV, 28-Oct-2024.) $)
+  unifndxntsetndx $p |- ( UnifSet ` ndx ) =/= ( TopSet ` ndx ) $=
+    ( cnx cunif cfv cts wne c1 c3 cdc c9 9re 1nn 3nn0 9nn0 9lt10 declti unifndx
+    gtneii tsetndx neeq12i mpbir ) ABCZADCZEFGHZIEIUCJFGIKLMNOQUAUCUBIPRST $.
+
+  $( The index of the slot for the uniform set is not the index of other slots.
+     Formerly part of proof for ~ cnfldfunALT .  (Contributed by AV,
+     10-Nov-2024.) $)
+  slotsdifunifndx $p |- ( ( ( +g ` ndx ) =/= ( UnifSet ` ndx )
+                         /\ ( .r ` ndx ) =/= ( UnifSet ` ndx )
+                         /\ ( *r ` ndx ) =/= ( UnifSet ` ndx ) )
+                       /\ ( ( le ` ndx ) =/= ( UnifSet ` ndx )
+                         /\ ( dist ` ndx ) =/= ( UnifSet ` ndx ) ) ) $=
+    ( cnx cfv wne c2 c1 c3 cdc 3nn0 2nn0 declti ltneii unifndx neeq12i mpbir c4
+    1nn cc0 1nn0 3nn declt cplusg cunif cmulr cstv w3a cple cds wa 2re plusgndx
+    2lt10 3re 3lt10 mulrndx 4re 4nn0 starvndx 3pm3.2i 10re 0nn0 3pos plendx 2nn
+    4lt10 decnncl nnrei 2lt3 dsndx pm3.2i ) AUABZAUBBZCZAUCBZVKCZAUDBZVKCZUEAUF
+    BZVKCZAUGBZVKCZUHVLVNVPVLDEFGZCDWAUIEFDPHIUKJKVJDVKWAUJLMNVNFWACFWAULEFFPHH
+    UMJKVMFVKWAUNLMNVPOWACOWAUOEFOPHUPVDJKVOOVKWAUQLMNURVRVTVREQGZWACWBWAUSEQFR
+    UTSVATKVQWBVKWAVBLMNVTEDGZWACWCWAWCEDRVCVEVFEDFRISVGTKVSWCVKWAVHLMNVIVI $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
