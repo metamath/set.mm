@@ -143092,6 +143092,23 @@ $)
   $}
 
   ${
+    strext.f $e |- ( ph -> F Struct <. A , B >. ) $.
+    strext.c $e |- ( ph -> C e. ( ZZ>= ` B ) ) $.
+    $( Extending the upper range of a structure.  This works because when we
+       say that a structure has components in ` A ... C ` we are not saying
+       that every slot in that range is present, just that all the slots that
+       are present are within that range.  (Contributed by Jim Kingdon,
+       26-Feb-2025.) $)
+    strext $p |- ( ph -> F Struct <. A , C >. ) $=
+      ( cn wcel cle wbr cvv cfz co wss cop cstr w3a syl nnred csn cdif wfun cdm
+      c0 isstructim simp1d cuz cfv simp2d eluznn syl2anc simp3d eluzle structex
+      letrd fzss2 sstrd isstructr syl33anc ) ABHIZDHIZBDJKEUEUAUBUCZELIZEUDZBDM
+      NZOEBDPQKAVACHIZBCJKZAVAVGVHRZVCVEBCMNZOZAEBCPZQKZVIVCVKRFEBCUFSZUGZUGZAV
+      GDCUHUIIZVBAVAVGVHVOUJZGDCUKULZABCDABVPTACVRTADVSTAVAVGVHVOUMAVQCDJKGCDUN
+      SUPAVIVCVKVNUJAVMVDFEVLUOSAVEVJVFAVIVCVKVNUMAVQVJVFOGCBDUQSUREBDLUSUT $.
+  $}
+
+  ${
     strle1.i $e |- I e. NN $.
     strle1.a $e |- A = I $.
     $( Make a structure from a singleton.  (Contributed by Mario Carneiro,
