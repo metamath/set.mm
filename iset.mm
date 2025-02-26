@@ -143139,9 +143139,21 @@ $)
   plusgid $p |- +g = Slot ( +g ` ndx ) $=
     ( cplusg c2 df-plusg 2nn ndxid ) ABCDE $.
 
+  $( The index of the slot for the group operation in an extensible structure
+     is a positive integer.  (Contributed by AV, 17-Oct-2024.) $)
+  plusgndxnn $p |- ( +g ` ndx ) e. NN $=
+    ( cnx cplusg cfv c2 cn plusgndx 2nn eqeltri ) ABCDEFGH $.
+
   $( Slot property of ` +g ` .  (Contributed by Jim Kingdon, 3-Feb-2023.) $)
   plusgslid $p |- ( +g = Slot ( +g ` ndx ) /\ ( +g ` ndx ) e. NN ) $=
     ( cplusg c2 df-plusg 2nn ndxslid ) ABCDE $.
+
+  $( The index of the slot for the base set is less then the index of the slot
+     for the group operation in an extensible structure.  (Contributed by AV,
+     17-Oct-2024.) $)
+  basendxltplusgndx $p |- ( Base ` ndx ) < ( +g ` ndx ) $=
+    ( c1 c2 cnx cbs cfv cplusg clt 1lt2 basendx plusgndx 3brtr4i ) ABCDECFEGHIJ
+    K $.
 
   ${
     opelstrsl.e $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
