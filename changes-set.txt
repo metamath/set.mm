@@ -113,8 +113,8 @@ Date      Old       New         Notes
 24-Feb-25 homulid2  homullid
 24-Feb-25 readdid1addid2d readdridaddlidd
 24-Feb-25 reneg0addid2 reneg0addlid
-24-Feb-25 resubidaddid1lem resubidaddridlem
-24-Feb-25 resubidaddid1 resubidaddrid
+24-Feb-25 resubidaddid1lem resubidaddlidlem
+24-Feb-25 resubidaddid1 resubidaddlid
 24-Feb-25 readdid2  readdlid
 24-Feb-25 sn-addid2 sn-addlid
 24-Feb-25 readdid1  readdrid
