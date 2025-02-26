@@ -99,10 +99,50 @@ Date      Old       New         Notes
 25-Feb-25 sdrgunit  [same]      Moved from SN's mathbox to main set.mm
 25-Feb-25 imadrhmcl [same]      Moved from SN's mathbox to main set.mm
 25-Feb-25 lmhmlvec  [same]      Moved from SN's mathbox to main set.mm
+24-Feb-25 naddid1   naddrid
+24-Feb-25 naddid2   naddlid
+24-Feb-25 mulid1    mulrid
+24-Feb-25 mulid2    mullid
+24-Feb-25 mulid1i   mulridi
+24-Feb-25 mulid2i   mullidi
+24-Feb-25 mulid1d   mulridd
+24-Feb-25 mulid2d   mullidd
+24-Feb-25 addid1    addrid
+24-Feb-25 addid2    addlid
+24-Feb-25 addid1i   addridi
+24-Feb-25 addid2i   addlidi
+24-Feb-25 addid1d   addridd
+24-Feb-25 addid2d   addlidd
+24-Feb-25 xaddid1   xaddrid
+24-Feb-25 xaddid2   xaddlid
+24-Feb-25 xaddid1d  xaddridd
+24-Feb-25 xmulid1   xmulrid
+24-Feb-25 xmulid2   xmullid
+24-Feb-25 mulrid    mulridx
+24-Feb-25 dchrmulid2 dchrmullid
+24-Feb-25 hvaddid2  hvaddlid
+24-Feb-25 hvaddid2i hvaddlidi
+24-Feb-25 hoaddid1i hoaddridi
+24-Feb-25 hoaddid1  hoaddrid
+24-Feb-25 homulid2  homullid
+24-Feb-25 readdid1addid2d readdridaddlidd
+24-Feb-25 reneg0addid2 reneg0addlid
+24-Feb-25 resubidaddid1lem resubidaddlidlem
+24-Feb-25 resubidaddid1 resubidaddlid
+24-Feb-25 readdid2  readdlid
+24-Feb-25 sn-addid2 sn-addlid
+24-Feb-25 readdid1  readdrid
+24-Feb-25 sn-addid1 sn-addrid
+24-Feb-25 remulid2  remullid
+24-Feb-25 sn-mulid2 sn-mullid
+24-Feb-25 xaddid2d  xaddlidd
 24-Feb-25 abbi1     abbi        reverse direction of abbib
 23-Feb-25 abbi      abbib       flip sides of bi-conditional
 23-Feb-25 addsid1   addsrid
 23-Feb-25 addsid2   addslid
+23-Feb-25 bj-rabbida2 rabbida4  moved from BJ's mathbox to main set.mm
+23-Feb-25 bj-rabeqd rabeqd      moved from BJ's mathbox to main set.mm
+23-Feb-25 bj-rabeqbida rabeqbida moved from BJ's mathbox to main set.mm
 22-Feb-25 rdivmuldivd [same]    Moved from TA's mathbox to main set.mm
 22-Feb-25 dvrdir    [same]      Moved from TA's mathbox to main set.mm
 20-Feb-25 lmodgrpd  ---         Moved from SN's mathbox to main set.mm
