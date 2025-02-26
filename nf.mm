@@ -21376,7 +21376,7 @@ $)
     $d x A $.
     $( Equality of a class variable and a class abstraction.  (Contributed by
        NM, 20-Aug-1993.) $)
-    eqabc $p |- ( { x | ph } = A <-> A. x ( ph <-> x e. A ) ) $=
+    eqabbc $p |- ( { x | ph } = A <-> A. x ( ph <-> x e. A ) ) $=
       ( cab wceq cv wcel wb wal eqabb eqcom bicom albii 3bitr4i ) CABDZEBFCGZAH
       ZBIOCEAPHZBIABCJOCKRQBAPLMN $.
   $}
@@ -21471,8 +21471,8 @@ $)
     $( Deduction from a wff to a class abstraction.  (Contributed by NM,
        9-Jul-1994.) $)
     abbi1dv $p |- ( ph -> { x | ps } = A ) $=
-      ( cv wcel wb wal cab wceq alrimiv eqabc sylibr ) ABCFDGHZCIBCJDKAOCELBCDM
-      N $.
+      ( cv wcel wb wal cab wceq alrimiv eqabbc sylibr ) ABCFDGHZCIBCJDKAOCELBCD
+      MN $.
   $}
 
   ${
@@ -33129,9 +33129,9 @@ $)
        abstraction is a singleton.  (Contributed by Mario Carneiro,
        14-Nov-2016.) $)
     euabsn2 $p |- ( E! x ph <-> E. y { x | ph } = { y } ) $=
-      ( weu cv wceq wb wal wex cab csn df-eu wcel eqabc elsn bibi2i albii bitri
-      exbii bitr4i ) ABDABEZCEZFZGZBHZCIABJUBKZFZCIABCLUGUECUGAUAUFMZGZBHUEABUF
-      NUIUDBUHUCABUBOPQRST $.
+      ( weu cv wceq wb wal wex cab csn df-eu wcel eqabbc elsn albii bitri exbii
+      bibi2i bitr4i ) ABDABEZCEZFZGZBHZCIABJUBKZFZCIABCLUGUECUGAUAUFMZGZBHUEABU
+      FNUIUDBUHUCABUBOSPQRT $.
 
     $( Another way to express existential uniqueness of a wff: its class
        abstraction is a singleton.  (Contributed by NM, 22-Feb-2004.) $)
@@ -42963,10 +42963,10 @@ $)
     phidisjnn $p |- ( ( A i^i Nn ) = (/) -> Phi A = A ) $=
       ( vx vy cnnc cin c0 wceq cv wcel c1c cplc cif wrex wb wal cphi wa syl6bbr
       weq wn wral disj biimpi r19.21bi iffalse syl eqeq2d equcom risset alrimiv
-      rexbidva cab df-phi eqeq1i eqabc bitri sylibr ) ADEFGZBHZCHZDIZUTJKZUTLZG
-      ZCAMZUSAIZNZBOZAPZAGZURVGBURVECBSZCAMVFURVDVKCAURUTAIQZVDBCSVKVLVCUTUSVLV
-      ATZVCUTGURVMCAURVMCAUACADUBUCUDVAVBUTUEUFUGCBUHRUKCUSAUIRUJVJVEBULZAGVHVI
-      VNACBAUMUNVEBAUOUPUQ $.
+      rexbidva cab df-phi eqeq1i eqabbc bitri sylibr ) ADEFGZBHZCHZDIZUTJKZUTLZ
+      GZCAMZUSAIZNZBOZAPZAGZURVGBURVECBSZCAMVFURVDVKCAURUTAIQZVDBCSVKVLVCUTUSVL
+      VATZVCUTGURVMCAURVMCAUACADUBUCUDVAVBUTUEUFUGCBUHRUKCUSAUIRUJVJVEBULZAGVHV
+      IVNACBAUMUNVEBAUOUPUQ $.
   $}
 
   ${
@@ -46451,11 +46451,11 @@ $)
     $( An empty domain implies an empty range.  (Contributed by set.mm
        contributors, 21-May-1998.) $)
     dm0rn0 $p |- ( dom A = (/) <-> ran A = (/) ) $=
-      ( vx vy cv wbr wex cab c0 wceq wcel wb wal alnex noel albii eqabc 3bitr4i
-      wn nbn eqeq1i cdm crn excom xchbinx bitr4i 3bitr3i dfdm2 dfrn2 ) BDZCDZAE
-      ZCFZBGZHIZUKBFZCGZHIZAUAZHIAUBZHIULUIHJZKZBLZUOUJHJZKZCLZUNUQULRZBLZUORZC
-      LZVBVEVGUOCFZRVIVGULBFVJULBMUKBCUCUDUOCMUEVFVABUTULUINSOVHVDCVCUOUJNSOUFU
-      LBHPUOCHPQURUMHBCAUGTUSUPHBCAUHTQ $.
+      ( vx vy cv wbr wex cab c0 wceq wcel wb wal wn alnex noel nbn albii eqabbc
+      3bitr4i eqeq1i cdm crn excom xchbinx bitr4i 3bitr3i dfdm2 dfrn2 ) BDZCDZA
+      EZCFZBGZHIZUKBFZCGZHIZAUAZHIAUBZHIULUIHJZKZBLZUOUJHJZKZCLZUNUQULMZBLZUOMZ
+      CLZVBVEVGUOCFZMVIVGULBFVJULBNUKBCUCUDUOCNUEVFVABUTULUIOPQVHVDCVCUOUJOPQUF
+      ULBHRUOCHRSURUMHBCAUGTUSUPHBCAUHTS $.
 
     $( A class is empty iff its domain is empty.  (Contributed by set.mm
        contributors, 15-Sep-2004.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
@@ -50891,11 +50891,11 @@ $)
                   A. y e. B E. x e. A y = ( F ` x ) ) ) $=
       ( wfo wf crn wceq wa cv cfv wrex wral dffo2 cab wb wcel wal wi wfn fnrnfv
       ffn eqeq1d simpr ffvelrn adantr eqeltrd exp31 rexlimdv biantrurd syl6rbbr
-      syl dfbi2 albidv eqabc df-ral 3bitr4g bitrd pm5.32i bitri ) CDEFCDEGZEHZD
-      IZJVBBKZAKZELZIZACMZBDNZJCDEOVBVDVJVBVDVIBPZDIZVJVBECUAZVDVLQCDEUCVMVCVKD
-      ABCEUBUDUMVBVIVEDRZQZBSVNVITZBSVLVJVBVOVPBVBVPVIVNTZVPJVOVBVQVPVBVHVNACVB
-      VFCRZVHVNVBVRJZVHJVEVGDVSVHUEVSVGDRVHCDVFEUFUGUHUIUJUKVIVNUNULUOVIBDUPVIB
-      DUQURUSUTVA $.
+      syl dfbi2 albidv eqabbc df-ral 3bitr4g bitrd pm5.32i bitri ) CDEFCDEGZEHZ
+      DIZJVBBKZAKZELZIZACMZBDNZJCDEOVBVDVJVBVDVIBPZDIZVJVBECUAZVDVLQCDEUCVMVCVK
+      DABCEUBUDUMVBVIVEDRZQZBSVNVITZBSVLVJVBVOVPBVBVPVIVNTZVPJVOVBVQVPVBVHVNACV
+      BVFCRZVHVNVBVRJZVHJVEVGDVSVHUEVSVGDRVHCDVFEUFUGUHUIUJUKVIVNUNULUOVIBDUPVI
+      BDUQURUSUTVA $.
 
     $( Alternate definition of an onto mapping.  (Contributed by set.mm
        contributors, 20-Mar-2007.) $)
