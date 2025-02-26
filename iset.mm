@@ -143509,6 +143509,34 @@ $)
   vscaid $p |- .s = Slot ( .s ` ndx ) $=
     ( cvsca c6 df-vsca 6nn ndxid ) ABCDE $.
 
+  $( The slot for the scalar product is not the slot for the base set in an
+     extensible structure.  Formerly part of proof for ~ rmodislmod .
+     (Contributed by AV, 18-Oct-2024.) $)
+  vscandxnbasendx $p |- ( .s ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx cvsca cfv cbs wne c6 c1 1re 1lt6 gtneii vscandx basendx neeq12i mpbir
+    ) ABCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slot for the scalar product is not the slot for the group operation in
+     an extensible structure.  Formerly part of proof for ~ rmodislmod .
+     (Contributed by AV, 18-Oct-2024.) $)
+  vscandxnplusgndx $p |- ( .s ` ndx ) =/= ( +g ` ndx ) $=
+    ( cnx cvsca cfv cplusg wne c6 c2 2lt6 gtneii vscandx plusgndx neeq12i mpbir
+    2re ) ABCZADCZEFGEGFNHIOFPGJKLM $.
+
+  $( The slot for the scalar product is not the slot for the ring
+     (multiplication) operation in an extensible structure.  Formerly part of
+     proof for ~ rmodislmod .  (Contributed by AV, 29-Oct-2024.) $)
+  vscandxnmulrndx $p |- ( .s ` ndx ) =/= ( .r ` ndx ) $=
+    ( cnx cvsca cfv cmulr wne c6 3re 3lt6 gtneii vscandx mulrndx neeq12i mpbir
+    c3 ) ABCZADCZEFNENFGHIOFPNJKLM $.
+
+  $( The slot for the scalar product is not the slot for the scalar field in an
+     extensible structure.  Formerly part of proof for ~ rmodislmod .
+     (Contributed by AV, 18-Oct-2024.) $)
+  vscandxnscandx $p |- ( .s ` ndx ) =/= ( Scalar ` ndx ) $=
+    ( cnx cvsca cfv csca wne c6 c5 5re 5lt6 gtneii vscandx scandx neeq12i mpbir
+    ) ABCZADCZEFGEGFHIJOFPGKLMN $.
+
   $( Slot property of ` .s ` .  (Contributed by Jim Kingdon, 5-Feb-2023.) $)
   vscaslid $p |- ( .s = Slot ( .s ` ndx ) /\ ( .s ` ndx ) e. NN ) $=
     ( cvsca c6 df-vsca 6nn ndxslid ) ABCDE $.
