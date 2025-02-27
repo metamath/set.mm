@@ -151901,6 +151901,13 @@ $)
     ZVLUDIIOOUEZVMIMJSQRKMNZGVMIKPVNVPUFVOVMIMKSQRLMNZGIILPVKVQUGOIIMLSQRUHVJHU
     IUJNZGVRHTNVJTNHVJUKFULVJBCUMUNUOUPBCHUQURUSHVFUTVAVGVBVCHVJVDVERVHVI $.
 
+  $( The field of complex numbers is a set.  (Contributed by Stefan O'Rear,
+     27-Nov-2014.)  (Revised by Mario Carneiro, 14-Aug-2015.)  (Revised by
+     Thierry Arnoux, 17-Dec-2017.) $)
+  cnfldex $p |- CCfld e. _V $=
+    ( ccnfld c1 c3 cdc cop cstr wbr cvv wcel cnfldstr structex ax-mp ) ABBCDEZF
+    GAHIJAMKL $.
+
 
 $(
 ###############################################################################
