@@ -143382,22 +143382,19 @@ $)
     ( cstv c4 df-starv 4nn ndxslid ) ABCDE $.
 
   $( The slot for the involution function is not the slot for the base set in
-     an extensible structure.  Formerly part of proof for ~ ressstarv .
-     (Contributed by AV, 18-Oct-2024.) $)
+     an extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
   starvndxnbasendx $p |- ( *r ` ndx ) =/= ( Base ` ndx ) $=
     ( cnx cstv cfv cbs wne c4 c1 1re 1lt4 gtneii starvndx basendx neeq12i mpbir
     ) ABCZADCZEFGEGFHIJOFPGKLMN $.
 
   $( The slot for the involution function is not the slot for the base set in
-     an extensible structure.  Formerly part of proof for ~ ressstarv .
-     (Contributed by AV, 18-Oct-2024.) $)
+     an extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
   starvndxnplusgndx $p |- ( *r ` ndx ) =/= ( +g ` ndx ) $=
     ( cnx cstv cfv cplusg wne c4 c2 2lt4 gtneii starvndx plusgndx neeq12i mpbir
     2re ) ABCZADCZEFGEGFNHIOFPGJKLM $.
 
   $( The slot for the involution function is not the slot for the base set in
-     an extensible structure.  Formerly part of proof for ~ ressstarv .
-     (Contributed by AV, 18-Oct-2024.) $)
+     an extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
   starvndxnmulrndx $p |- ( *r ` ndx ) =/= ( .r ` ndx ) $=
     ( cnx cstv cfv cmulr wne c4 3re 3lt4 gtneii starvndx mulrndx neeq12i mpbir
     c3 ) ABCZADCZEFNENFGHIOFPNJKLM $.
@@ -143510,29 +143507,26 @@ $)
     ( cvsca c6 df-vsca 6nn ndxid ) ABCDE $.
 
   $( The slot for the scalar product is not the slot for the base set in an
-     extensible structure.  Formerly part of proof for ~ rmodislmod .
-     (Contributed by AV, 18-Oct-2024.) $)
+     extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
   vscandxnbasendx $p |- ( .s ` ndx ) =/= ( Base ` ndx ) $=
     ( cnx cvsca cfv cbs wne c6 c1 1re 1lt6 gtneii vscandx basendx neeq12i mpbir
     ) ABCZADCZEFGEGFHIJOFPGKLMN $.
 
   $( The slot for the scalar product is not the slot for the group operation in
-     an extensible structure.  Formerly part of proof for ~ rmodislmod .
-     (Contributed by AV, 18-Oct-2024.) $)
+     an extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
   vscandxnplusgndx $p |- ( .s ` ndx ) =/= ( +g ` ndx ) $=
     ( cnx cvsca cfv cplusg wne c6 c2 2lt6 gtneii vscandx plusgndx neeq12i mpbir
     2re ) ABCZADCZEFGEGFNHIOFPGJKLM $.
 
   $( The slot for the scalar product is not the slot for the ring
-     (multiplication) operation in an extensible structure.  Formerly part of
-     proof for ~ rmodislmod .  (Contributed by AV, 29-Oct-2024.) $)
+     (multiplication) operation in an extensible structure.  (Contributed by
+     AV, 29-Oct-2024.) $)
   vscandxnmulrndx $p |- ( .s ` ndx ) =/= ( .r ` ndx ) $=
     ( cnx cvsca cfv cmulr wne c6 3re 3lt6 gtneii vscandx mulrndx neeq12i mpbir
     c3 ) ABCZADCZEFNENFGHIOFPNJKLM $.
 
   $( The slot for the scalar product is not the slot for the scalar field in an
-     extensible structure.  Formerly part of proof for ~ rmodislmod .
-     (Contributed by AV, 18-Oct-2024.) $)
+     extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
   vscandxnscandx $p |- ( .s ` ndx ) =/= ( Scalar ` ndx ) $=
     ( cnx cvsca cfv csca wne c6 c5 5re 5lt6 gtneii vscandx scandx neeq12i mpbir
     ) ABCZADCZEFGEGFHIJOFPGKLMN $.
@@ -143623,14 +143617,14 @@ $)
     ) ABCZADCZEFGEGFHIJOFPGKLMN $.
 
   $( The slot for the inner product is not the slot for the ring
-     (multiplication) operation in an extensible structure.  Formerly part of
-     proof for ~ mgpsca .  (Contributed by AV, 29-Oct-2024.) $)
+     (multiplication) operation in an extensible structure.  (Contributed by
+     AV, 29-Oct-2024.) $)
   ipndxnmulrndx $p |- ( .i ` ndx ) =/= ( .r ` ndx ) $=
     ( cnx cip cfv cmulr wne c8 c3 3re 3lt8 gtneii ipndx mulrndx neeq12i mpbir )
     ABCZADCZEFGEGFHIJOFPGKLMN $.
 
-  $( The slot for the scalar is not the index of other slots.  Formerly part of
-     proof for ~ srasca and ~ sravsca .  (Contributed by AV, 12-Nov-2024.) $)
+  $( The slot for the scalar is not the index of other slots.  (Contributed by
+     AV, 12-Nov-2024.) $)
   slotsdifipndx $p |- ( ( .s ` ndx ) =/= ( .i ` ndx )
                        /\ ( Scalar ` ndx ) =/= ( .i ` ndx ) ) $=
     ( cnx cvsca cfv cip wne csca c6 6re 6lt8 ltneii vscandx ipndx neeq12i mpbir
@@ -143854,36 +143848,34 @@ $)
     ( cnx cbs cfv cple basendxnn nnrei basendxltplendx gtneii ) ABCZADCIEFGH $.
 
   $( The slot for the "less than or equal to" ordering is not the slot for the
-     group operation in an extensible structure.  Formerly part of proof for
-     ~ oppgle .  (Contributed by AV, 18-Oct-2024.) $)
+     group operation in an extensible structure.  (Contributed by AV,
+     18-Oct-2024.) $)
   plendxnplusgndx $p |- ( le ` ndx ) =/= ( +g ` ndx ) $=
     ( cnx cfv cplusg wne c1 cc0 cdc c2 2re 2lt10 gtneii plendx plusgndx neeq12i
     cple mpbir ) AOBZACBZDEFGZHDHSIJKQSRHLMNP $.
 
   $( The slot for the "less than or equal to" ordering is not the slot for the
-     ring multiplication operation in an extensible structure.  Formerly part
-     of proof for ~ opsrmulr .  (Contributed by AV, 1-Nov-2024.) $)
+     ring multiplication operation in an extensible structure.  (Contributed by
+     AV, 1-Nov-2024.) $)
   plendxnmulrndx $p |- ( le ` ndx ) =/= ( .r ` ndx ) $=
     ( cnx cple cfv cmulr wne c1 cc0 cdc 3re 3lt10 gtneii plendx mulrndx neeq12i
     c3 mpbir ) ABCZADCZEFGHZOEOSIJKQSROLMNP $.
 
   $( The slot for the "less than or equal to" ordering is not the slot for the
-     scalar in an extensible structure.  Formerly part of proof for ~ opsrsca .
-     (Contributed by AV, 1-Nov-2024.) $)
+     scalar in an extensible structure.  (Contributed by AV, 1-Nov-2024.) $)
   plendxnscandx $p |- ( le ` ndx ) =/= ( Scalar ` ndx ) $=
     ( cnx cple cfv csca wne c1 cc0 cdc c5 5re 5lt10 gtneii plendx neeq12i mpbir
     scandx ) ABCZADCZEFGHZIEISJKLQSRIMPNO $.
 
   $( The slot for the "less than or equal to" ordering is not the slot for the
-     scalar product in an extensible structure.  Formerly part of proof for
-     ~ opsrvsca .  (Contributed by AV, 1-Nov-2024.) $)
+     scalar product in an extensible structure.  (Contributed by AV,
+     1-Nov-2024.) $)
   plendxnvscandx $p |- ( le ` ndx ) =/= ( .s ` ndx ) $=
     ( cnx cple cfv cvsca wne c1 cc0 cdc 6re 6lt10 gtneii plendx vscandx neeq12i
     c6 mpbir ) ABCZADCZEFGHZOEOSIJKQSROLMNP $.
 
   $( The index of the slot for the distance is not the index of other slots.
-     Formerly part of proof for ~ cnfldfunALT .  (Contributed by AV,
-     11-Nov-2024.) $)
+     (Contributed by AV, 11-Nov-2024.) $)
   slotsdifplendx $p |- ( ( *r ` ndx ) =/= ( le ` ndx )
                          /\ ( TopSet ` ndx ) =/= ( le ` ndx ) ) $=
     ( cnx cstv cfv cple wne cts c4 c1 cc0 cdc 4re 4lt10 ltneii starvndx neeq12i
@@ -143973,15 +143965,14 @@ $)
     ( cunif c1 c3 cdc df-unif 1nn0 3nn decnncl ndxid ) ABCDEBCFGHI $.
 
   $( The index of the slot for the uniform set in an extensible structure is a
-     positive integer.  Formerly part of proof for ~ tuslem .  (Contributed by
-     AV, 28-Oct-2024.) $)
+     positive integer.  (Contributed by AV, 28-Oct-2024.) $)
   unifndxnn $p |- ( UnifSet ` ndx ) e. NN $=
     ( cnx cunif cfv c1 c3 cdc cn unifndx 1nn0 3nn decnncl eqeltri ) ABCDEFGHDEI
     JKL $.
 
   $( The index of the slot for the base set is less then the index of the slot
-     for the uniform set in an extensible structure.  Formerly part of proof
-     for ~ tuslem .  (Contributed by AV, 28-Oct-2024.) $)
+     for the uniform set in an extensible structure.  (Contributed by AV,
+     28-Oct-2024.) $)
   basendxltunifndx $p |- ( Base ` ndx ) < ( UnifSet ` ndx ) $=
     ( c1 cdc cnx cbs cfv cunif clt 1nn 3nn0 1nn0 declti basendx unifndx 3brtr4i
     c3 1lt10 ) AAOBCDECFEGAOAHIJPKLMN $.
@@ -143993,15 +143984,13 @@ $)
     $.
 
   $( The slot for the uniform set is not the slot for the topology in an
-     extensible structure.  Formerly part of proof for ~ tuslem .  (Contributed
-     by AV, 28-Oct-2024.) $)
+     extensible structure.  (Contributed by AV, 28-Oct-2024.) $)
   unifndxntsetndx $p |- ( UnifSet ` ndx ) =/= ( TopSet ` ndx ) $=
     ( cnx cunif cfv cts wne c1 c3 cdc c9 9re 1nn 3nn0 9nn0 9lt10 declti unifndx
     gtneii tsetndx neeq12i mpbir ) ABCZADCZEFGHZIEIUCJFGIKLMNOQUAUCUBIPRST $.
 
   $( The index of the slot for the uniform set is not the index of other slots.
-     Formerly part of proof for ~ cnfldfunALT .  (Contributed by AV,
-     10-Nov-2024.) $)
+     (Contributed by AV, 10-Nov-2024.) $)
   slotsdifunifndx $p |- ( ( ( +g ` ndx ) =/= ( UnifSet ` ndx )
                          /\ ( .r ` ndx ) =/= ( UnifSet ` ndx )
                          /\ ( *r ` ndx ) =/= ( UnifSet ` ndx ) )
