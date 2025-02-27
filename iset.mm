@@ -84808,7 +84808,7 @@ $)
     $d A x y $.
     $( ` 1 ` is an identity element for multiplication.  Based on ideas by Eric
        Schmidt.  (Contributed by Scott Fenton, 3-Jan-2013.) $)
-    mulid1 $p |- ( A e. CC -> ( A x. 1 ) = A ) $=
+    mulrid $p |- ( A e. CC -> ( A x. 1 ) = A ) $=
       ( vx vy cc wcel cv ci cmul co caddc wceq cr wrex c1 ax-icn ax-1cn ax-1rid
       recn syl eqtrd cnre wa sylancr adddir mp3an3 syl2an mulass mp3an13 oveq2d
       mulcl oveqan12d oveq1 id eqeq12d syl5ibrcom rexlimivv ) ADEABFZGCFZHIZJIZ
@@ -84818,10 +84818,10 @@ $)
       QUITUKTVAVBVGAUTAUTNHULVAUMUNUOUPS $.
   $}
 
-  $( Identity law for multiplication.  Note: see ~ mulid1 for commuted version.
+  $( Identity law for multiplication.  Note: see ~ mulrid for commuted version.
      (Contributed by NM, 8-Oct-1999.) $)
   mullid $p |- ( A e. CC -> ( 1 x. A ) = A ) $=
-    ( cc wcel c1 cmul co wceq ax-1cn mulcom mpan mulid1 eqtrd ) ABCZDAEFZADEFZA
+    ( cc wcel c1 cmul co wceq ax-1cn mulcom mpan mulrid eqtrd ) ABCZDAEFZADEFZA
     DBCMNOGHDAIJAKL $.
 
   $( ` 1 ` is a real number.  (Contributed by Jim Kingdon, 13-Jan-2020.) $)
@@ -84844,7 +84844,7 @@ $)
     axi.1 $e |- A e. CC $.
     $( Identity law for multiplication.  (Contributed by NM, 14-Feb-1995.) $)
     mulid1i $p |- ( A x. 1 ) = A $=
-      ( cc wcel c1 cmul co wceq mulid1 ax-mp ) ACDAEFGAHBAIJ $.
+      ( cc wcel c1 cmul co wceq mulrid ax-mp ) ACDAEFGAHBAIJ $.
 
     $( Identity law for multiplication.  (Contributed by NM, 14-Feb-1995.) $)
     mulid2i $p |- ( 1 x. A ) = A $=
@@ -84928,7 +84928,7 @@ $)
     $( Identity law for multiplication.  (Contributed by Mario Carneiro,
        27-May-2016.) $)
     mulid1d $p |- ( ph -> ( A x. 1 ) = A ) $=
-      ( cc wcel c1 cmul co wceq mulid1 syl ) ABDEBFGHBICBJK $.
+      ( cc wcel c1 cmul co wceq mulrid syl ) ABDEBFGHBICBJK $.
 
     $( Identity law for multiplication.  (Contributed by Mario Carneiro,
        27-May-2016.) $)
@@ -90287,7 +90287,7 @@ $)
   muleqadd $p |- ( ( A e. CC /\ B e. CC ) ->
              ( ( A x. B ) = ( A + B ) <-> ( ( A - 1 ) x. ( B - 1 ) ) = 1 ) ) $=
     ( cc wcel wa c1 cmin co cmul wceq caddc ax-1cn mulsub mpanr2 mpanl2 mulid1i
-    cc0 oveq2i a1i mulid1 oveqan12d oveq12d addsub mp3an2 syl2anc 3eqtrd eqeq1d
+    cc0 oveq2i a1i mulrid oveqan12d oveq12d addsub mp3an2 syl2anc 3eqtrd eqeq1d
     mulcl addcl subcld 0cn addcan2 mp3an23 syl addid2i eqeq2i subeq0ad 3bitr2rd
     wb bitr3di ) ACDZBCDZEZAFGHBFGHIHZFJABIHZABKHZGHZFKHZFJZVGQJZVEVFJVCVDVHFVC
     VDVEFFIHZKHZAFIHZBFIHZKHZGHZVEFKHZVFGHZVHVAFCDZVBVDVPJZLVAVSEVBVSVTLAFBFMNO
@@ -90801,7 +90801,7 @@ $)
   divdivap1 $p |- ( ( A e. CC /\ ( B e. CC /\ B =//= 0 ) /\
        ( C e. CC /\ C =//= 0 ) ) -> ( ( A / B ) / C ) = ( A / ( B x. C ) ) ) $=
     ( cc wcel cc0 cap wbr wa w3a cdiv co c1 cmul wceq ax-1cn pm3.2i divdivdivap
-    1ap0 mpanr2 3impa oveq2d ad2antrl 3adant1 mulid1 oveq1d 3ad2ant1 3eqtr3d
+    1ap0 mpanr2 3impa oveq2d ad2antrl 3adant1 mulrid oveq1d 3ad2ant1 3eqtr3d
     div1 ) ADEZBDEBFGHIZCDEZCFGHZIZJABKLZCMKLZKLZAMNLZBCNLZKLZUOCKLZAUSKLZUJUKU
     NUQUTOZUJUKIUNMDEZMFGHZIVCVDVEPSQABCMRTUAUKUNUQVAOZUJULVFUKUMULUPCUOKCUIUBU
     CUDUJUKUTVBOUNUJURAUSKAUEUFUGUH $.
@@ -90863,7 +90863,7 @@ $)
   conjmulap $p |- ( ( ( P e. CC /\ P =//= 0 ) /\ ( Q e. CC /\ Q =//= 0 ) ) ->
       ( ( ( 1 / P ) + ( 1 / Q ) ) = 1 <-> ( ( P - 1 ) x. ( Q - 1 ) ) = 1 ) ) $=
     ( cc wcel cc0 cap wa cmul co c1 cdiv caddc wceq cmin recclap adantr recidap
-    wbr 3eqtrd ad2ant2r simpll simprl mul32d oveq1d mullid adantl oveq2d mulid1
+    wbr 3eqtrd ad2ant2r simpll simprl mul32d oveq1d mullid adantl oveq2d mulrid
     ad2antrl mulassd ad2antrr oveq12d mulcl adddid addcom 3eqtr4d mulid1d addcl
     eqeq12d syl2an mulap0 ax-1cn mulcanap mp3an2 syl12anc eqcom muleqadd bitrid
     wb 3bitr3d ) ACDZAEFRZGZBCDZBEFRZGZGZABHIZJAKIZJBKIZLIZHIZVRJHIZMZABLIZVRMZ
@@ -93166,7 +93166,7 @@ $)
     $( Closure of multiplication of positive integers.  (Contributed by NM,
        12-Jan-1997.) $)
     nnmulcl $p |- ( ( A e. NN /\ B e. NN ) -> ( A x. B ) e. NN ) $=
-      ( vx vy cn wcel cmul co cv wi c1 caddc wceq oveq2 eleq1d imbi2d cc mulid1
+      ( vx vy cn wcel cmul co cv wi c1 caddc wceq oveq2 eleq1d imbi2d cc mulrid
       nncn wa biimprd mpcom nnaddcl ancoms ax-1cn adddi mp3an3 oveq2d imbitrrid
       adantr eqtrd syl2an exp4b pm2.43b a2d nnind impcom ) BEFAEFZABGHZEFZURACI
       ZGHZEFZJURAKGHZEFZJURADIZGHZEFZJURAVFKLHZGHZEFZJURUTJCDBVAKMZVCVEURVLVBVD
@@ -110197,7 +110197,7 @@ $)
                ( A ^ ( M x. N ) ) = ( ( A ^ M ) ^ N ) ) $=
       ( vj cc wcel cn0 cmul co cexp wceq wa wi cc0 c1 caddc oveq2 oveq2d imbi2d
       eqeq12d vk cv nn0cn mul01d exp0 sylan9eqr expcl eqtr4d oveq1 ax-1cn adddi
-      mp3an3 mulid1 adantr syl2an adantll simpll nn0mulcl simplr expadd syl3anc
+      mp3an3 mulrid adantr syl2an adantll simpll nn0mulcl simplr expadd syl3anc
       syl eqtrd expp1 sylan imbitrrid expcom a2d nn0ind expdcom 3imp ) AEFZBGFZ
       CGFZABCHIZJIZABJIZCJIZKZVNVLVMVSVLVMLZABDUBZHIZJIZVQWAJIZKZMVTABNHIZJIZVQ
       NJIZKZMVTABUAUBZHIZJIZVQWJJIZKZMVTABWJOPIZHIZJIZVQWOJIZKZMVTVSMDUACWANKZW
@@ -110788,7 +110788,7 @@ $)
      11-May-2014.) $)
   binom21 $p |- ( A e. CC -> ( ( A + 1 ) ^ 2 ) = ( ( ( A ^ 2
       ) + ( 2 x. A ) ) + 1 ) ) $=
-    ( cc wcel c1 caddc co c2 cexp cmul wceq ax-1cn binom2 mulid1 oveq2d sq1 a1i
+    ( cc wcel c1 caddc co c2 cexp cmul wceq ax-1cn binom2 mulrid oveq2d sq1 a1i
     mpan2 oveq12d eqtrd ) ABCZADEFGHFZAGHFZGADIFZIFZEFZDGHFZEFZUBGAIFZEFZDEFTDB
     CUAUGJKADLQTUEUIUFDETUDUHUBETUCAGIAMNNUFDJTOPRS $.
 
@@ -110808,7 +110808,7 @@ $)
      2-Aug-2021.) $)
   binom2sub1 $p |- ( A e. CC -> ( ( A - 1 ) ^ 2 )
                                 = ( ( ( A ^ 2 ) - ( 2 x. A ) ) + 1 ) ) $=
-    ( cc wcel c1 cmin co cexp cmul caddc wceq binom2sub mpdan mulid1 oveq2d sq1
+    ( cc wcel c1 cmin co cexp cmul caddc wceq binom2sub mpdan mulrid oveq2d sq1
     c2 1cnd a1i oveq12d eqtrd ) ABCZADEFPGFZAPGFZPADHFZHFZEFZDPGFZIFZUCPAHFZEFZ
     DIFUADBCUBUHJUAQADKLUAUFUJUGDIUAUEUIUCEUAUDAPHAMNNUGDJUAORST $.
 
@@ -110900,7 +110900,7 @@ $)
       1re simpl syl2anc remulcld reexpcl anidms msqge0 jca nn0ge0 mulge0 syl2an
       sylan nn0cn adantl mul32d breqtrd addge01d mulcld addassd muladd11 eqtr4d
       mpbid mulcl wb neg1rr leadd2 mp3an13 1pneg1e0 breq1i bitrdi biimpa simprr
-      ad2ant2r letrd adddi mp3an3 mulid1 eqtrd addass expp1 3brtr4d exp43 com12
+      ad2ant2r letrd adddi mp3an3 mulrid eqtrd addass expp1 3brtr4d exp43 com12
       lemul1ad mp3an1 impd a2d nn0ind expd 3imp ) ACDZBUCDZEUDZAFGZEABHIZJIZEAJ
       IZBKIZFGZXOXNXQYBLXOXNXQYBXNXQMZEAUAUEZHIZJIZXTYDKIZFGZLYCEASHIZJIZXTSKIZ
       FGZLYCEAUBUEZHIZJIZXTYMKIZFGZLYCEAYMEJIZHIZJIZXTYRKIZFGZLYCYBLUAUBBYDSNZY
@@ -123110,7 +123110,7 @@ $)
     hashiun $p |- ( ph -> ( # ` U_ x e. A B ) = sum_ x e. A ( # ` B ) ) $=
       ( vk c1 csu chash cfv cv wcel wa cmul co cfn cc wceq ciun 1cnd wral wdisj
       fsumiun ralrimiva iunfidisj syl3anc ax-1cn fsumconst sylancl hashcl nn0cn
-      cn0 mulid1 4syl eqtrd sumeq2dv 3eqtr3d ) ABCDUAZIHJZCDIHJZBJUTKLZCDKLZBJA
+      cn0 mulrid 4syl eqtrd sumeq2dv 3eqtr3d ) ABCDUAZIHJZCDIHJZBJUTKLZCDKLZBJA
       BCDIHEFGABMCNZHMDNOOUBUEAVAVCIPQZVCAUTRNZISNZVAVFTACRNDRNZBCUCBCDUDVGEAVI
       BCFUFGBCDUGUHZUIUTIHUJUKAVGVCUNNVCSNVFVCTVJUTULVCUMVCUOUPUQACVBVDBAVEOZVB
       VDIPQZVDVKVIVHVBVLTFUIDIHUJUKVKVIVDUNNVDSNVLVDTFDULVDUMVDUOUPUQURUS $.
@@ -125550,7 +125550,7 @@ $)
             seq M ( x. , F ) ~~> ( seq M ( x. , F ) ` N ) ) $=
           ( cfv wcel cz cc wa c1 wceq adantl vn vm vv cmul cseq cvv cuz eluzelz
           syl seqex a1i eluzel2 cv cif wn iftrue adantlr eqeltrd iffalse ax-1cn
-          eqid eqeltrdi wdc wo exmiddc mpjaodan fvmpt2 syl2anc ffvelcdmd mulid1
+          eqid eqeltrdi wdc wo exmiddc mpjaodan fvmpt2 syl2anc ffvelcdmd mulrid
           prodf co adantr simpr caddc elfzuz cdif sseld fznuz syl6 con2d eldifd
           cfz fveqeq2 eldifi eldifn eqtrd vtoclga sylan2 fveq2 eleq1d ralrimiva
           imp wral ad2antrr rspcdva mulcl seq3id2 eqcomd climconst ) AGUDEFUEZM
@@ -125681,7 +125681,7 @@ $)
         rspc sylc wn wdc ifcldadc nfcv nfv nfif ifbieq1d fvmptf syl2an2 eqeltrd
         eleq1 breq1 fveq2 csbeq1d ad2antlr breqtrd jca fvmptd3 eqtrd iftrued ex
         f1ocnv ffvelcdmda fzssuz leisorel syl122anc eqbrtrrd sselid eluz mpbird
-        a1i elfzuzb ssrdv fproddccvg mullid mulid1 mulcl eleqtrrd dcbid rspcdva
+        a1i elfzuzb ssrdv fproddccvg mullid mulrid mulcl eleqtrrd dcbid rspcdva
         elnnuz biimpri w3a 3jca eluzle elfz2 zdcle cdif eldifi elfzelz iffalsed
         eldifn ax-1cn eqeltrdi elfznn eleqtrd 3eqtr4d seq3coll prodmodclem3
         eqtr4d ) AUFGKUGZLJUHZUWAUHZLUFHUIUGUHZUJABCFGKUWBMNQABKUKUHZUWBTAUILUL
@@ -127942,7 +127942,7 @@ $)
       ( cc wcel wa cmul co ce cfv cexp sylan2 fveq2d cc0 c1 caddc oveq2 eqeq12d
       wceq adantr eqtrd vj vk cz zcn mulcom cv cneg ef0 mul01 exp0d 3eqtr4a cn0
       efcl oveq1 adantl nn0cn ax-1cn adddi mp3an3 mulcl simpl efadd expp1 sylan
-      mulid1 oveq2d syl2anc 3eqtr4d exp31 cn wi cdiv nncn mulneg2 efneg syl cap
+      mulrid oveq2d syl2anc 3eqtr4d exp31 cn wi cdiv nncn mulneg2 efneg syl cap
       wbr efap0 nnnn0 expnegap0 syl2an3an imbitrrid ex zindd imp eqtr3d ) ACDZB
       UCDZEZABFGZHIZBAFGZHIAHIZBJGZWJWKWMHWIWHBCDWKWMRBUDABUEKLWHWIWLWORZAUAUFZ
       FGZHIZWNWQJGZRAMFGZHIZWNMJGZRAUBUFZFGZHIZWNXDJGZRZAXDUGZFGZHIZWNXIJGZRZAX
@@ -164603,7 +164603,7 @@ $)
      (Contributed by Mario Carneiro, 2-Aug-2014.) $)
   ecxp $p |- ( A e. CC -> ( _e ^c A ) = ( exp ` A ) ) $=
     ( cc wcel ceu ccxp co clog cfv cmul ce crp wceq rpcxpef mpan c1 loge oveq2i
-    epr mulid1 eqtrid fveq2d eqtrd ) ABCZDAEFZADGHZIFZJHZAJHDKCUCUDUGLRDAMNUCUF
+    epr mulrid eqtrid fveq2d eqtrd ) ABCZDAEFZADGHZIFZJHZAJHDKCUCUDUGLRDAMNUCUF
     AJUCUFAOIFAUEOAIPQASTUAUB $.
 
   $( Closure of the complex power function.  (Contributed by Jim Kingdon,
@@ -166453,7 +166453,7 @@ $)
       $( Lemma for ~ lgsdi .  (Contributed by Mario Carneiro, 4-Feb-2015.) $)
       lgsdilem2 $p |- ( ph -> ( seq 1 ( x. , F ) ` ( abs ` M ) ) =
         ( seq 1 ( x. , F ) ` ( abs ` ( M x. N ) ) ) ) $=
-        ( cfv c1 co wcel cn cz cc0 syl2anc vk vv cmul cc cabs mulid1 adantl cuz
+        ( cfv c1 co wcel cn cz cc0 syl2anc vk vv cmul cc cabs mulrid adantl cuz
         cv wceq wne nnabscl nnuz eleqtrdi cle wbr nnzd zmulcld zcnd wb 0z zapne
         cap sylancl mpbird mulap0d mpbid abscld absge0d nnge1d absmuld breqtrrd
         lemulge11d eluz2 syl3anbrc cseq wf lgsfcl3 syl3anc ffvelcdmda wa zmulcl
