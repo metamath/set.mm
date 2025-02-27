@@ -140,9 +140,9 @@ Date      Old       New         Notes
 19-Feb-25 isdrngd   [same]      removed extra hypothesis
 15-Feb-25 abeq2f    eqabf
 15-Feb-25 rabeq2i   reqabi
-15-Feb-25 abeq1i    eqabci
-15-Feb-25 abeq2i    eqabi
-15-Feb-25 abeq2d    eqabd
+15-Feb-25 abeq1i    eqabrci
+15-Feb-25 abeq2i    eqabri
+15-Feb-25 abeq2d    eqabrd
 15-Feb-25 abeq2w    eqabbw
 15-Feb-25 abeq1     eqabbc      Commuted form of eqabb
 15-Feb-25 abeq2     eqabb       Basic closed form
