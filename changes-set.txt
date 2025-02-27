@@ -85,6 +85,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+27-Feb-25 elnelall  pm2.24nel
 24-Feb-25 naddid1   naddrid
 24-Feb-25 naddid2   naddlid
 24-Feb-25 mulid1    mulrid
