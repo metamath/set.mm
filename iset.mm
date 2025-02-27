@@ -151938,6 +151938,15 @@ $)
     sseqtrri strslfv ax-mp ) ABCADEFGHADEBIINJKLMOEFAKZPOQFRKZULOSFTKZUAZDUMULU
     NUBUOUOOUCFUDKPZUEDUOUPUFUGUIUHUJUK $.
 
+  $( The multiplication operation of the field of complex numbers.
+     (Contributed by Stefan O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro,
+     6-Oct-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.) $)
+  cnfldmul $p |- x. = ( .r ` CCfld ) $=
+    ( cmul cvv wcel ccnfld cmulr cfv wceq mulex c1 c3 cdc cop cnfldstr mulrslid
+    cnx csn cbs cc cplusg caddc ctp snsstp3 cstv ssun1 df-icnfld sseqtrri sstri
+    ccj cun strslfv ax-mp ) ABCADEFGHADEBIIJKLMNOEFALZPOQFRLZOSFTLZULUAZDUMUNUL
+    UBUOUOOUCFUHLPZUIDUOUPUDUEUFUGUJUK $.
+
 
 $(
 ###############################################################################
