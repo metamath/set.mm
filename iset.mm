@@ -151970,6 +151970,11 @@ $)
       NVQVLGEUSZVRVLIRVIVKVLIRZIRPFVIVKVLVATVSVIVKVLHRIRVRVIVLIRZHRPFVIVKVLUTTV
       SVIVKHRVLIRWAVTHRPFVIVKVLVBTFVCVNJVIIRVIPFVIVDTVNVIJIRVIPFVIVETVNVQVRVKVI
       IRPFVIVKVFSVGVH $.
+
+    $( The complex numbers form a ring.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.) $)
+    cnring $p |- CCfld e. Ring $=
+      ( ccnfld ccrg wcel crg cncrng crngring ax-mp ) ABCADCEAFG $.
   $}
 
 
