@@ -98886,6 +98886,18 @@ $)
       UVICLUURXGUVICWBUUPUUQCVBVCWQWTWSVNEFXCJCXAVPXCJCXBVP $.
   $}
 
+  $( The addition operation is a set.  (Contributed by NM, 19-Oct-2004.)
+     (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  addex $p |- + e. _V $=
+    ( cc cxp caddc wf cvv wcel ax-addf cnex xpex fex2 mp3an ) AABZACDLEFAEFCEFG
+    AAHHIHLACEEJK $.
+
+  $( The multiplication operation is a set.  (Contributed by NM, 19-Oct-2004.)
+     (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  mulex $p |- x. e. _V $=
+    ( cc cxp cmul wf cvv wcel ax-mulf cnex xpex fex2 mp3an ) AABZACDLEFAEFCEFGA
+    AHHIHLACEEJK $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -151894,12 +151906,12 @@ $)
   $( The field of complex numbers is a structure.  (Contributed by Mario
      Carneiro, 14-Aug-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.) $)
   cnfldstr $p |- CCfld Struct <. 1 , ; 1 3 >. $=
-    ( ccnfld c1 c3 cdc cop wbr wtru c4 cc caddc cmul ccj cvv wcel cnex wf mp2an
-    a1i fex cz cstr df-icnfld cxp ax-addf xpex ax-mulf cjf srngstrd cuz cfv cle
-    4z 1nn0 3nn decnncl nnzi 1nn 3nn0 4nn0 4re 9re ltleii declei eluz2 mpbir3an
-    c9 4lt9 strext mptru ) ABBCDZEUAFGBHVJAGIJAKLMMMMUBIMNZGORJMNZGIIUCZIJPVMMN
-    ZVLUDIIOOUEZVMIMJSQRKMNZGVMIKPVNVPUFVOVMIMKSQRLMNZGIILPVKVQUGOIIMLSQRUHVJHU
-    IUJNZGVRHTNVJTNHVJUKFULVJBCUMUNUOUPBCHUQURUSHVFUTVAVGVBVCHVJVDVERVHVI $.
+    ( ccnfld c1 c3 cdc cop cstr wbr wtru c4 cc cmul ccj cvv df-icnfld wcel cnex
+    caddc a1i addex cz mulex wf cjf fex mp2an srngstrd cuz cfv cle 1nn0 decnncl
+    4z 3nn nnzi 1nn 3nn0 4nn0 4re 9re ltleii declei eluz2 mpbir3an strext mptru
+    c9 4lt9 ) ABBCDZEFGHBIVHAHJQAKLMMMMNJMOZHPRQMOHSRKMOHUARLMOZHJJLUBVIVJUCPJJ
+    MLUDUERUFVHIUGUHOZHVKITOVHTOIVHUIGULVHBCUJUMUKUNBCIUOUPUQIVFURUSVGUTVAIVHVB
+    VCRVDVE $.
 
   $( The field of complex numbers is a set.  (Contributed by Stefan O'Rear,
      27-Nov-2014.)  (Revised by Mario Carneiro, 14-Aug-2015.)  (Revised by
