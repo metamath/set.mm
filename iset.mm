@@ -151956,6 +151956,22 @@ $)
     cmul ssun2 strslfv ax-mp ) ABCZADEFGHHAIHBCUNJKHHBALMADEBNNOQRPSTEFARUAZTUB
     FHRTUCFUDRTUEFUJRUFZUOUGDUOUPUKUHUIULUM $.
 
+  ${
+    $d x y z A $.  $d x y B $.
+    $( The complex numbers form a commutative ring.  (Contributed by Mario
+       Carneiro, 8-Jan-2015.) $)
+    cncrng $p |- CCfld e. CRing $=
+      ( vx vy vz ccnfld wcel wtru cc caddc cmul c1 cfv cnfldbas a1i cnfldadd cv
+      wceq cc0 co 3adant1 adantl ccrg cbs cplusg cmulr cnfldmul cgrp cneg addcl
+      addass 0cn addlid negcl addcom mpancom negid eqtrd isgrpi mulcl w3a adddi
+      mulass adddir 1cnd mullid mulrid mulcom iscrngd mptru ) DUAEFABCGHDIJGDUB
+      KPFLMHDUCKPFNMIDUDKPFUEMDUFEFABCGHDAOZUGZQLNVIBOZUHVIVKCOZUIUJVIUKVIULZVI
+      GEZVJVIHRZVIVJHRZQVJGEVNVOVPPVMVJVIUMUNVIUOUPUQMVNVKGEZVIVKIRZGEFVIVKURSV
+      NVQVLGEUSZVRVLIRVIVKVLIRZIRPFVIVKVLVATVSVIVKVLHRIRVRVIVLIRZHRPFVIVKVLUTTV
+      SVIVKHRVLIRWAVTHRPFVIVKVLVBTFVCVNJVIIRVIPFVIVDTVNVIJIRVIPFVIVETVNVQVRVKVI
+      IRPFVIVKVFSVGVH $.
+  $}
+
 
 $(
 ###############################################################################
