@@ -84820,7 +84820,7 @@ $)
 
   $( Identity law for multiplication.  Note: see ~ mulid1 for commuted version.
      (Contributed by NM, 8-Oct-1999.) $)
-  mulid2 $p |- ( A e. CC -> ( 1 x. A ) = A ) $=
+  mullid $p |- ( A e. CC -> ( 1 x. A ) = A ) $=
     ( cc wcel c1 cmul co wceq ax-1cn mulcom mpan mulid1 eqtrd ) ABCZDAEFZADEFZA
     DBCMNOGHDAIJAKL $.
 
@@ -84848,7 +84848,7 @@ $)
 
     $( Identity law for multiplication.  (Contributed by NM, 14-Feb-1995.) $)
     mulid2i $p |- ( 1 x. A ) = A $=
-      ( cc wcel c1 cmul co wceq mulid2 ax-mp ) ACDEAFGAHBAIJ $.
+      ( cc wcel c1 cmul co wceq mullid ax-mp ) ACDEAFGAHBAIJ $.
 
     axi.2 $e |- B e. CC $.
     $( Closure law for addition.  (Contributed by NM, 23-Nov-1994.) $)
@@ -84933,7 +84933,7 @@ $)
     $( Identity law for multiplication.  (Contributed by Mario Carneiro,
        27-May-2016.) $)
     mulid2d $p |- ( ph -> ( 1 x. A ) = A ) $=
-      ( cc wcel c1 cmul co wceq mulid2 syl ) ABDEFBGHBICBJK $.
+      ( cc wcel c1 cmul co wceq mullid syl ) ABDEFBGHBICBJK $.
 
     addcld.2 $e |- ( ph -> B e. CC ) $.
     $( Closure law for addition.  (Contributed by Mario Carneiro,
@@ -85774,7 +85774,7 @@ $)
   muladd11 $p |- ( ( A e. CC /\ B e. CC ) -> ( ( 1 + A ) x. ( 1 + B ) ) =
                  ( ( 1 + A ) + ( B + ( A x. B ) ) ) ) $=
     ( cc wcel wa c1 caddc cmul wceq ax-1cn addcl mpan adddi mp3an2 sylan adantr
-    co mulid1d adddir eqtrd mp3an1 mulid2 adantl oveq1d oveq12d ) ACDZBCDZEZFAG
+    co mulid1d adddir eqtrd mp3an1 mullid adantl oveq1d oveq12d ) ACDZBCDZEZFAG
     QZFBGQHQZUIFHQZUIBHQZGQZUIBABHQZGQZGQUFUICDZUGUJUMIZFCDZUFUPJFAKLZUPURUGUQJ
     UIFBMNOUHUKUIULUOGUFUKUIIUGUFUIUSRPUHULFBHQZUNGQZUOURUFUGULVAIJFABSUAUHUTBU
     NGUGUTBIUFBUBUCUDTUET $.
@@ -85782,7 +85782,7 @@ $)
   $( Two times a number.  (Contributed by NM, 18-May-1999.)  (Revised by Mario
      Carneiro, 27-May-2016.) $)
   1p1times $p |- ( A e. CC -> ( ( 1 + 1 ) x. A ) = ( A + A ) ) $=
-    ( cc wcel c1 caddc co cmul ax-1cn a1i id adddird mulid2 oveq12d eqtrd ) ABC
+    ( cc wcel c1 caddc co cmul ax-1cn a1i id adddird mullid oveq12d eqtrd ) ABC
     ZDDEFAGFDAGFZPEFAAEFODDADBCOHIZQOJKOPAPAEALZRMN $.
 
   $( A theorem for complex numbers analogous the second Peano postulate
@@ -87804,7 +87804,7 @@ $)
 
   $( Product with minus one is negative.  (Contributed by NM, 16-Nov-1999.) $)
   mulm1 $p |- ( A e. CC -> ( -u 1 x. A ) = -u A ) $=
-    ( cc wcel c1 cneg cmul co wceq ax-1cn mulneg1 mpan mulid2 negeqd eqtrd ) AB
+    ( cc wcel c1 cneg cmul co wceq ax-1cn mulneg1 mpan mullid negeqd eqtrd ) AB
     CZDEAFGZDAFGZEZAEDBCOPRHIDAJKOQAALMN $.
 
   $( Product of two differences.  (Contributed by NM, 14-Jan-2006.) $)
@@ -90603,7 +90603,7 @@ $)
   $( A number divided by 1 is itself.  (Contributed by NM, 9-Jan-2002.)  (Proof
      shortened by Mario Carneiro, 27-May-2016.) $)
   div1 $p |- ( A e. CC -> ( A / 1 ) = A ) $=
-    ( cc wcel c1 cdiv co wceq cmul mulid2 wb cc0 cap wbr ax-1cn pm3.2i divmulap
+    ( cc wcel c1 cdiv co wceq cmul mullid wb cc0 cap wbr ax-1cn pm3.2i divmulap
     wa 1ap0 mp3an3 anidms mpbird ) ABCZADEFAGZDAHFAGZAIUBUCUDJZUBUBDBCZDKLMZQUE
     UFUGNROAADPSTUA $.
 
@@ -90754,7 +90754,7 @@ $)
   recdivap $p |- ( ( ( A e. CC /\ A =//= 0 ) /\ ( B e. CC /\ B =//= 0 ) ) ->
                 ( 1 / ( A / B ) ) = ( B / A ) ) $=
     ( cc wcel cc0 cap wa c1 cdiv co cmul 1div1e1 oveq1i wceq ax-1cn 1ap0 pm3.2i
-    wbr divdivdivap mulid2 mpanl12 eqtr3id oveqan12rd ad2ant2r eqtrd ) ACDZAEFR
+    wbr divdivdivap mullid mpanl12 eqtr3id oveqan12rd ad2ant2r eqtrd ) ACDZAEFR
     ZGBCDZBEFRZGGZHABIJZIJZHBKJZHAKJZIJZBAIJZUJULHHIJZUKIJZUOUQHUKILMHCDZUSHEFR
     ZGUJURUONOUSUTOPQHHABSUAUBUFUHUOUPNUGUIUHUFUMBUNAIBTATUCUDUE $.
 
@@ -90811,7 +90811,7 @@ $)
       /\ ( C e. CC /\ C =//= 0 ) )
       -> ( A / ( B / C ) ) = ( ( A x. C ) / B ) ) $=
     ( cc wcel cc0 cap wbr wa w3a c1 cdiv co cmul wceq ax-1cn pm3.2i divdivdivap
-    1ap0 mpanl2 3impb 3ad2ant1 oveq1d mulid2 ad2antrl 3adant3 oveq2d 3eqtr3d
+    1ap0 mpanl2 3impb 3ad2ant1 oveq1d mullid ad2antrl 3adant3 oveq2d 3eqtr3d
     div1 ) ADEZBDEZBFGHZIZCDECFGHIZJZAKLMZBCLMZLMZACNMZKBNMZLMZAUQLMUSBLMUJUMUN
     URVAOZUJKDEZKFGHZIUMUNIVBVCVDPSQAKBCRTUAUOUPAUQLUJUMUPAOUNAUIUBUCUOUTBUSLUJ
     UMUTBOZUNUKVEUJULBUDUEUFUGUH $.
@@ -90863,7 +90863,7 @@ $)
   conjmulap $p |- ( ( ( P e. CC /\ P =//= 0 ) /\ ( Q e. CC /\ Q =//= 0 ) ) ->
       ( ( ( 1 / P ) + ( 1 / Q ) ) = 1 <-> ( ( P - 1 ) x. ( Q - 1 ) ) = 1 ) ) $=
     ( cc wcel cc0 cap wa cmul co c1 cdiv caddc wceq cmin recclap adantr recidap
-    wbr 3eqtrd ad2ant2r simpll simprl mul32d oveq1d mulid2 adantl oveq2d mulid1
+    wbr 3eqtrd ad2ant2r simpll simprl mul32d oveq1d mullid adantl oveq2d mulid1
     ad2antrl mulassd ad2antrr oveq12d mulcl adddid addcom 3eqtr4d mulid1d addcl
     eqeq12d syl2an mulap0 ax-1cn mulcanap mp3an2 syl12anc eqcom muleqadd bitrid
     wb 3bitr3d ) ACDZAEFRZGZBCDZBEFRZGZGZABHIZJAKIZJBKIZLIZHIZVRJHIZMZABLIZVRMZ
@@ -109737,7 +109737,7 @@ $)
       ( vx vy wcel cc cn cc0 wceq c1 caddc co cexp cmul cfv simpr elnnuz oveq1d
       wa cv cn0 wo elnn0 csn cxp cseq sylib simpll wb fvconst2g eleq1d sylan2br
       adantlr mpbird mulcl adantl seq3p1 peano2nn sylan2 eqtrd expnnval 3eqtr4d
-      oveq2d exp1 mulid2 eqtr4d adantr 0p1e1 eqtrdi oveq2 exp0 sylan9eqr jaodan
+      oveq2d exp1 mullid eqtr4d adantr 0p1e1 eqtrdi oveq2 exp0 sylan9eqr jaodan
       cuz sylan2b ) BUAEAFEZBGEZBHIZUBABJKLZMLZABMLZANLZIZBUCVPVQWCVRVPVQSZVSNG
       AUDUEZJUFZOZBWFOZANLZVTWBWDWGWHVSWEOZNLWIWDCDNFWEJBWDVQBJVNOZEVPVQPBQUGWD
       CTZWKEZSWLWEOZFEZVPVPVQWMUHVPWMWOVPUIZVQWMVPWLGEZWPWLQVPWQSWNAFGAWLFUJUKU
@@ -116829,7 +116829,7 @@ $)
     recan $p |- ( ( A e. CC /\ B e. CC ) -> ( A. x e. CC
                  ( Re ` ( x x. A ) ) = ( Re ` ( x x. B ) ) <-> A = B ) ) $=
       ( cc wcel cmul co cre cfv wceq c1 ci caddc wi oveq1 fveq2d eqeq12d oveq2d
-      rspcv oveq12d wa cv wral cneg ax-1cn negicn cim replim mulid2 eqcomd imre
+      rspcv oveq12d wa cv wral cneg ax-1cn negicn cim replim mullid eqcomd imre
       ax-mp eqtrd eqeqan12d imbitrrid oveq2 ralrimivw impbid1 ) BDEZCDEZUAZAUBZ
       BFGZHIZVBCFGZHIZJZADUCZBCJZVHVIVAKBFGZHIZLLUDZBFGZHIZFGZMGZKCFGZHIZLVLCFG
       ZHIZFGZMGZJVHVKVRVOWAMKDEVHVKVRJZNUEVGWCAKDVBKJZVDVKVFVRWDVCVJHVBKBFOPWDV
@@ -123621,7 +123621,7 @@ $)
       oveq1d cn wo cv cexp elnn0 cmin 1zzd nnz elfzelz zcnd adantl id fsumshftm
       1m1e0 oveq1i sumeq1i elfznn0 bcnp1n nn0cnd ax-1cn addcom sylancl sumeq2dv
       wa eqtr3d 1nn0 nnm1nn0 bcxmas sylancr eqtr4d 1cnd ppncand comraddd bcp1m1
-      nnnn0 sqval eqcomd mulid2 oveq12d joinlmuladdmuld 3eqtrd c0 oveq2 sumeq1d
+      nnnn0 sqval eqcomd mullid oveq12d joinlmuladdmuld 3eqtrd c0 oveq2 sumeq1d
       nncn fz10 sum0 sq0i 00id 2cn 2ap0 div0api jaoi sylbi ) BDEZBUAEZBFGZUBHBI
       JZAUCZAKZBLUDJZBMJZLNJZGZBUEWPXDWQWPWTFBHUFJZIJZCUCZHMJZCKZHHMJXEMJZXEOJZ
       XCWPWTHHUFJZXEIJZXHCKXIWPWSXHACHHBWPUGZXNBUHWSWREZWSPEWPXOWSWSHBUIUJUKWSX
@@ -124017,7 +124017,7 @@ $)
       elfzelz peano2nn0 syl div12apd 3eqtr4d sumeq2dv 0zd zsubcld fzfigd halfcl
       fsummulc1 eqtr4d eqtrid 1mhlfehlf oveq12d simpr divrecap2d nnnn0 nnrecred
       ax-1cn recnd recap0d mulassd divcanap1d oveq1d 3eqtr2d halfre 1re halflt1
-      cz subcl ltapii geoserap mulid2 eqcomd subdird 3eqtrd ) CEFZAGFZUAZHCIJZA
+      cz subcl ltapii geoserap mullid eqcomd subdird 3eqtrd ) CEFZAGFZUAZHCIJZA
       TBUBZKJZLJZBMHHNJZCHNJZIJZATDUBZHUCJZKJZLJZDMZOXTIJZHTLJZYBKJZDMZATLJZPJZ
       AATCKJZLJZNJZXNXRYEBDHHCXNUDZYPXLCXDFXMCUEUFZXNXPXOFZUAZAXQXLXMYRUGYSXQYS
       TEFZXPUHFXQEFUIYSXPYRXPEFXNXPCUJQUKTXPULRZUMYSXQUUAUNUOXPYCUPXQYDALXPYCTK
@@ -125523,7 +125523,7 @@ $)
          (Revised by Jim Kingdon, 4-Apr-2024.) $)
       prodrbdclem $p |- ( ( ph /\ A C_ ( ZZ>= ` N ) ) ->
           ( seq M ( x. , F ) |` ( ZZ>= ` N ) ) = seq N ( x. , F ) ) $=
-        ( cfv wa cc c1 wcel co wceq adantl cz vn vz cuz wss cmul cv mulid2 1cnd
+        ( cfv wa cc c1 wcel co wceq adantl cz vn vz cuz wss cmul cv mullid 1cnd
         adantr csb cif eluzelz syl wral wn wo exmiddc wi iftrue eqeltrd iffalse
         wdc ex ax-1cn eqeltrdi a1i jaod ralrimiva nfcv nfel1 nfcsb1v nfif eleq1
         mpd csbeq1a ifbieq1d eleq1d rspc sylc fvmptf syl2anc cfz elfzelz elfzuz
@@ -125681,7 +125681,7 @@ $)
         rspc sylc wn wdc ifcldadc nfcv nfv nfif ifbieq1d fvmptf syl2an2 eqeltrd
         eleq1 breq1 fveq2 csbeq1d ad2antlr breqtrd jca fvmptd3 eqtrd iftrued ex
         f1ocnv ffvelcdmda fzssuz leisorel syl122anc eqbrtrrd sselid eluz mpbird
-        a1i elfzuzb ssrdv fproddccvg mulid2 mulid1 mulcl eleqtrrd dcbid rspcdva
+        a1i elfzuzb ssrdv fproddccvg mullid mulid1 mulcl eleqtrrd dcbid rspcdva
         elnnuz biimpri w3a 3jca eluzle elfz2 zdcle cdif eldifi elfzelz iffalsed
         eldifn ax-1cn eqeltrdi elfznn eleqtrd 3eqtr4d seq3coll prodmodclem3
         eqtr4d ) AUFGKUGZLJUHZUWAUHZLUFHUIUGUHZUJABCFGKUWBMNQABKUKUHZUWBTAUILUL
@@ -129293,7 +129293,7 @@ $)
       co c1 ax-icn syl2anc vx vk cn0 cv wi oveq2 oveq1 imbi2d coscl sincl mulcl
       eqeq12d sylancr addcl exp0 mul02 cos0 eqtrdi mul01i ax-1cn addid1i eqtr4d
       syl sin0 wa expp1 sylan ancoms adantr adantl nn0cn sinadd sylancom mulcom
-      oveq1d addcom 3eqtr2d w3a adddir mulid2 3ad2ant3 syl3an1 mp3an2 cmin cneg
+      oveq1d addcom 3eqtr2d w3a adddir mullid 3ad2ant3 syl3an1 mp3an2 cmin cneg
       eqtrd mpan 3syl jca muladd syl21anc jctil mul4 oveq1i mul12 mp3an1 3eqtrd
       ixi adddi mulm1 negsub cosadd 3eqtr4rd exp31 a2d nn0ind impcom ) BUCCADCZ
       AEFZGAHFZIQZJQZBKQZBAIQZEFZGXNHFZIQZJQZLZXHXLUAUDZKQZXTAIQZEFZGYBHFZIQZJQ
@@ -132163,7 +132163,7 @@ $)
      (Contributed by Scott Fenton, 20-Apr-2014.) $)
   gcdadd $p |- ( ( M e. ZZ /\ N e. ZZ ) ->
   ( M gcd N ) = ( M gcd ( N + M ) ) ) $=
-    ( cz wcel wa cgcd co c1 cmul caddc wceq 1z gcdaddm mp3an1 zcn mulid2 oveq2d
+    ( cz wcel wa cgcd co c1 cmul caddc wceq 1z gcdaddm mp3an1 zcn mullid oveq2d
     cc syl adantr eqtrd ) ACDZBCDZEABFGZABHAIGZJGZFGZABAJGZFGZHCDUBUCUDUGKLHABM
     NUBUGUIKZUCUBARDZUJAOUKUFUHAFUKUEABJAPQQSTUA $.
 
@@ -132171,7 +132171,7 @@ $)
      Paul Chapman, 31-Mar-2011.) $)
   gcdid $p |- ( N e. ZZ -> ( N gcd N ) = ( abs ` N ) ) $=
     ( cz wcel cc0 cgcd co c1 cmul caddc cabs cfv wceq 1z gcdaddm mp3an13 gcdid0
-    0z cc zcn oveq2d mulid2 addlid eqtrd syl 3eqtr3rd ) ABCZADEFZADGAHFZIFZEFZA
+    0z cc zcn oveq2d mullid addlid eqtrd syl 3eqtr3rd ) ABCZADEFZADGAHFZIFZEFZA
     JKAAEFGBCUFDBCUGUJLMQGADNOAPUFUIAAEUFARCZUIALASUKUIDAIFAUKUHADIAUATAUBUCUDT
     UE $.
 
