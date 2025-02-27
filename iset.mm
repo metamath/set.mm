@@ -151975,6 +151975,21 @@ $)
        27-Nov-2014.) $)
     cnring $p |- CCfld e. Ring $=
       ( ccnfld ccrg wcel crg cncrng crngring ax-mp ) ABCADCEAFG $.
+
+    $( Zero is the zero element of the field of complex numbers.  (Contributed
+       by Stefan O'Rear, 27-Nov-2014.) $)
+    cnfld0 $p |- 0 = ( 0g ` CCfld ) $=
+      ( ccnfld c0g cfv cc0 caddc co wceq 00id cgrp wcel cc wb crg ringgrp ax-mp
+      cnring 0cn cnfldbas cnfldadd eqid grpid mp2an mpbi eqcomi ) ABCZDDDEFDGZU
+      EDGZHAIJZDKJUFUGLAMJUHPANOQKEADUERSUETUAUBUCUD $.
+
+    $( One is the unity element of the field of complex numbers.  (Contributed
+       by Stefan O'Rear, 27-Nov-2014.) $)
+    cnfld1 $p |- 1 = ( 1r ` CCfld ) $=
+      ( vx ccnfld cur cfv c1 cc wcel cv cmul wceq wral ax-1cn mullid mulrid jca
+      co wa rgen pm3.2i crg cnring cnfldbas cnfldmul eqid isringid ax-mp eqcomi
+      wb mpbi ) BCDZEEFGZEAHZIPULJZULEIPULJZQZAFKZQZUJEJZUKUPLUOAFULFGUMUNULMUL
+      NORSBTGUQURUHUAAFBIUJEUBUCUJUDUEUFUIUG $.
   $}
 
 
