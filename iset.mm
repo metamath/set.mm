@@ -85806,7 +85806,7 @@ $)
 
   $( ` 0 ` is a left identity for addition.  (Contributed by Scott Fenton,
      3-Jan-2013.) $)
-  addid2 $p |- ( A e. CC -> ( 0 + A ) = A ) $=
+  addlid $p |- ( A e. CC -> ( 0 + A ) = A ) $=
     ( cc wcel cc0 caddc co wceq 0cn addcom mpan2 addid1 eqtr3d ) ABCZADEFZDAEFZ
     AMDBCNOGHADIJAKL $.
 
@@ -85816,7 +85816,7 @@ $)
        Fenton, 3-Jan-2013.) $)
     readdcan $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
         ( ( C + A ) = ( C + B ) <-> A = B ) ) $=
-      ( vx cr wcel caddc co wceq wa oveq2 recnd addassd adantr cc oveq1d addid2
+      ( vx cr wcel caddc co wceq wa oveq2 recnd addassd adantr cc oveq1d addlid
       cc0 syl eqtrd w3a cv wi ax-rnegex 3ad2ant3 adantl wb simprl simpl3 simpl1
       simpl2 eqeq12d mpbird addcom syl2anc simplrr 3eqtr3d ex rexlimddv impbid1
       wrex eqtr3d ) AEFZBEFZCEFZUAZCAGHZCBGHZIZABIZVFCDUBZGHZRIZVIVJUCDEVEVCVMD
@@ -85842,7 +85842,7 @@ $)
     $( ` 0 ` is a left identity for addition.  (Contributed by NM,
        3-Jan-2013.) $)
     addid2i $p |- ( 0 + A ) = A $=
-      ( cc wcel cc0 caddc co wceq addid2 ax-mp ) ACDEAFGAHBAIJ $.
+      ( cc wcel cc0 caddc co wceq addlid ax-mp ) ACDEAFGAHBAIJ $.
 
     mul.2 $e |- B e. CC $.
     $( Addition commutes.  Based on ideas by Eric Schmidt.  (Contributed by
@@ -85887,7 +85887,7 @@ $)
     $( ` 0 ` is a left identity for addition.  (Contributed by Mario Carneiro,
        27-May-2016.) $)
     addid2d $p |- ( ph -> ( 0 + A ) = A ) $=
-      ( cc wcel cc0 caddc co wceq addid2 syl ) ABDEFBGHBICBJK $.
+      ( cc wcel cc0 caddc co wceq addlid syl ) ABDEFBGHBICBJK $.
 
     addcomd.2 $e |- ( ph -> B e. CC ) $.
     $( Addition commutes.  Based on ideas by Eric Schmidt.  (Contributed by
@@ -86103,7 +86103,7 @@ $)
                   ( ( A + B ) = ( A + C ) <-> B = C ) ) $=
       ( vx cr wcel cc caddc co wceq cc0 wi recn wa oveq2 addassd eqeq12d adantl
       wb oveq1 w3a cv ax-rnegex 3ad2ant1 simpr simpll simplrl simplrr imbitrrid
-      wrex adantr addcom eqeq1d adantlr addid2 eqeqan12d ad2antrr ex sylbid imp
+      wrex adantr addcom eqeq1d adantlr addlid eqeqan12d ad2antrr ex sylbid imp
       bitrd sylibd sylan2 rexlimdva 3impb syl3an1 mpd impbid1 ) AEFZBGFZCGFZUAZ
       ABHIZACHIZJZBCJZVLADUBZHIZKJZDEUJZVOVPLZVIVJVTVKDAUCUDVIAGFZVJVKVTWALZAMW
       BVJVKWCWBVJVKNZNZVSWADEVQEFWEVQGFZVSWALVQMWEWFNZVSWAWGVSNVOVQAHIZBHIZWHCH
@@ -86118,7 +86118,7 @@ $)
        prove that yet).  Lemma for ~ cnegex .  (Contributed by Eric Schmidt,
        22-May-2007.) $)
     cnegexlem2 $p |- E. y e. RR ( _i x. y ) e. RR $=
-      ( vx vz cc wcel cv ci cmul co caddc wceq cr wrex wa wi adantr recn addid2
+      ( vx vz cc wcel cv ci cmul co caddc wceq cr wrex wa wi adantr recn addlid
       cc0 oveq1 0cn cnre ax-rnegex ax-icn mulcl sylancr 3ad2ant3 ad2antrl add32
       w3a 3com23 eqcomd sylan9eq adantrl 3ad2ant2 eqtr3d ex syl3an 3expa simplr
       3eqtr3d imp eqeltrrd exp32 rexlimdva mpd reximdva rexlimiv mp2b ) SDESBFZ
@@ -86184,7 +86184,7 @@ $)
        27-May-2016.) $)
     addcan $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
                    ( ( A + B ) = ( A + C ) <-> B = C ) ) $=
-      ( vx cc wcel w3a cv caddc co cc0 wceq wb wa oveq1d addassd addid2 3eqtr3d
+      ( vx cc wcel w3a cv caddc co cc0 wceq wb wa oveq1d addassd addlid 3eqtr3d
       oveq2 syl wrex cnegex2 simprr simprl simpl1 simpl2 simpl3 eqeq12d impbid1
       3ad2ant1 imbitrid rexlimddv ) AEFZBEFZCEFZGZDHZAIJZKLZABIJZACIJZLZBCLZMDE
       UMUNUSDEUAUODAUBUJUPUQEFZUSNZNZVBVCVBUQUTIJZUQVAIJZLVFVCUTVAUQISVFVGBVHCV
@@ -86757,7 +86757,7 @@ $)
      [Apostol] p. 18.  (Contributed by NM, 12-Jan-2002.)  (Revised by Mario
      Carneiro, 27-May-2016.) $)
   negneg $p |- ( A e. CC -> -u -u A = A ) $=
-    ( cc wcel cneg cc0 caddc co cmin df-neg wceq 0cn subneg eqtrid addid2 eqtrd
+    ( cc wcel cneg cc0 caddc co cmin df-neg wceq 0cn subneg eqtrid addlid eqtrd
     mpan ) ABCZADZDZEAFGZAQSERHGZTRIEBCQUATJKEALPMANO $.
 
   $( Negative is one-to-one.  (Contributed by NM, 8-Feb-2005.)  (Revised by
@@ -100561,7 +100561,7 @@ $)
     ZUPURFMAIUBUCUMAAUIUDUJUNEIJKZEUPAIBCZIGNZUTEFRUSVBMIUEOIUFPAEIJQUNSTUOGIJK
     ZGUPAVAIENZVCGFRUSVDMIUGOIUHPAGIJQUOSTUKUL $.
 
-  $( Extended real version of ~ addid2 .  (Contributed by Mario Carneiro,
+  $( Extended real version of ~ addlid .  (Contributed by Mario Carneiro,
      20-Aug-2015.) $)
   xaddid2 $p |- ( A e. RR* -> ( 0 +e A ) = A ) $=
     ( cxr wcel cc0 cxad co wceq 0xr xaddcom mpan xaddid1 eqtrd ) ABCZDAEFZADEFZ
@@ -103343,7 +103343,7 @@ $)
     ( cc0 c4 cfz co c2 caddc c1 c3 cuz cfv wcel wceq eqtri cz cle wbr 3z ltleii
     eluz1i ax-mp cun ctp cpr df-3 2cn addid2i eqcomi oveq1i 0re 3re 0z mpbir2an
     3pos eqeltrri 4z 2re 4re 2lt4 2z fveq2i eleqtri fzsplit2 mp2an ax-1cn eqidd
-    fztp cc addid2 tpeq123d oveq1d eqtr4di wa eqid df-4 pm3.2i wb fzopth sylibr
+    fztp cc addlid tpeq123d oveq1d eqtr4di wa eqid df-4 pm3.2i wb fzopth sylibr
     a1i 3lt4 fzpr eqtrd preq2i eqtrdi uneq12i ) ABCDZAAEFDZCDZWGGFDZBCDZUAZAGEU
     BZHBUCZUAWIAIJZKBWGIJZKWFWKLHWIWNHEGFDZWIUDEWGGFWGEEUEUFZUGZUHMHWNKHNKZAHOP
     QAHUIUJUMRAHUKSULUNBEIJZWOBWTKBNKZEBOPUOEBUPUQURREBUSSULEWGIWRUTVAWGABVBVCW
@@ -104046,7 +104046,7 @@ $)
      (Contributed by Stefan O'Rear, 15-Aug-2015.) $)
   fzoaddel2 $p |- ( ( A e. ( 0 ..^ ( B - C ) ) /\ B e. ZZ /\ C e. ZZ ) ->
       ( A + C ) e. ( C ..^ B ) ) $=
-    ( cc0 cmin co cfzo wcel cz w3a caddc fzoaddel 3adant2 wceq cc zcn wa addid2
+    ( cc0 cmin co cfzo wcel cz w3a caddc fzoaddel 3adant2 wceq cc zcn wa addlid
     adantl npcan oveq12d syl2an 3adant1 eleqtrd ) ADBCEFZGFHZBIHZCIHZJACKFZDCKF
     ZUECKFZGFZCBGFZUFUHUIULHUGADUECLMUGUHULUMNZUFUGBOHZCOHZUNUHBPCPUOUPQUJCUKBG
     UPUJCNUOCRSBCTUAUBUCUD $.
@@ -105324,7 +105324,7 @@ $)
   divfl0 $p |- ( ( A e. NN0 /\ B e. NN )
                  -> ( A < B <-> ( |_ ` ( A / B ) ) = 0 ) ) $=
     ( cn0 wcel cn wa cdiv co cfl cfv cc0 wceq caddc cle wbr c1 clt cq cz wb znq
-    cc nn0z sylan qcn addid2 eqcomd 3syl fveq2d eqeq1d flqbi2 sylancr nn0ge0div
+    cc nn0z sylan qcn addlid eqcomd 3syl fveq2d eqeq1d flqbi2 sylancr nn0ge0div
     0z biantrurd cr crp nn0re nnrp divlt1lt syl2an bitr3d 3bitrrd ) ACDZBEDZFZA
     BGHZIJZKLKVGMHZIJZKLZKVGNOZVGPQOZFZABQOZVFVHVJKVFVGVIIVFVGRDZVGUBDZVGVILVDA
     SDVEVPAUCABUAUDZVGUEVQVIVGVGUFUGUHUIUJVFKSDVPVKVNTUNVRVGKUKULVFVMVNVOVFVLVM
@@ -105884,7 +105884,7 @@ $)
       -> ( A mod B ) = A ) $=
     ( cq wcel wa cc0 cle wbr clt co cfl cfv cmul cmin wceq cr qre syl3anc eqtrd
     c1 cmo cdiv simpll simplr 0red ad2antrr simprl simprr lelttrd modqval caddc
-    ad2antlr cc wne gt0ne0d qdivcl qcn addid2 fveq2d 3syl divge0 syl22anc recnd
+    ad2antlr cc wne gt0ne0d qdivcl qcn addlid fveq2d 3syl divge0 syl22anc recnd
     mulid1d breqtrrd wb 1red ltdivmul syl112anc mpbird flqbi2 sylancr mpbir2and
     cz 0z eqtr3d oveq2d mul01d subid1d ) ACDZBCDZEZFAGHZABIHZEZEZABUAJZABABUBJZ
     KLZMJZNJZAWFVTWAFBIHZWGWKOVTWAWEUCZVTWAWEUDZWFFABWFUEVTAPDZWAWEAQUFZWABPDZV
@@ -120585,7 +120585,7 @@ $)
          (Revised by Jim Kingdon, 8-Apr-2023.) $)
       sumrbdclem $p |- ( ( ph /\ A C_ ( ZZ>= ` N ) ) ->
                      ( seq M ( + , F ) |` ( ZZ>= ` N ) ) = seq N ( + , F ) ) $=
-        ( cfv wa cc cc0 wcel co wceq adantl cz vn vz cuz caddc cv addid2 adantr
+        ( cfv wa cc cc0 wcel co wceq adantl cz vn vz cuz caddc cv addlid adantr
         wss 0cnd csb cif eluzelz syl wral wn wdc exmiddc iftrue eqeltrd iffalse
         wo wi 0cn eqeltrdi a1i jaod mpd ralrimiva nfcsb1v nfcv nfif nfel1 eleq1
         ex nfv csbeq1a ifbieq1d eleq1d rspc sylc fvmptf syl2anc c1 cmin elfzelz
@@ -120738,7 +120738,7 @@ $)
         ad2antlr jca iftrued nfv nfcsb1v nfcv nfif nfel1 eleq1 csbeq1a ifbieq1d
         eleq1d eqeltrrd weq breq1 fveq2 csbeq1d fvmptg eqtrd wi cmpt sselda a1i
         eleqtrdi eluzfz2 ccnv f1ocnvfv2 f1ocnv leisorel syl122anc eqbrtrrd eluz
-        fzssuz elfzuzb ssrdv fsum3cvg addid2 addid1 addcl iftrue iffalse simpll
+        fzssuz elfzuzb ssrdv fsum3cvg addlid addid1 addcl iftrue iffalse simpll
         ex eleqtrrd ssneld eluzdc fmptd ffvelcdm syl2an elnnuz biimpri w3a 3jca
         eluzle elfz2 wral eleq2d sselid ralrimiva zdcle ifcldadc fveqeq2 eldifi
         rspc elfzelz eldifn fvmpt2 vtoclga simpl anbi2d imbi12d vtoclg1f csbeq1
@@ -122432,7 +122432,7 @@ $)
       csb expr ralrimiv eleq1d cbvralv sylibr adantrr nfcsb1v csbeq1a rspc sylc
       nfel1 fisum0diag 0zd adantr elfzelz adantl zsubcld mpan9 csbeq1 fisumrev2
       cz cn0 elfz3nn0 ad2antlr nn0cn zcn syl2an syl2anc addid2d oveq1d sumeq2dv
-      subcl csbeq1d eqtrd addid2 oveq2d sub32 syl3an syl3anc sumeq12rdv 3eqtr4d
+      subcl csbeq1d eqtrd addlid oveq2d sub32 syl3an syl3anc sumeq12rdv 3eqtr4d
       3syl fzfigd cuz cfv elfzuz3 elfzuzb sylanbrc wb ad2antrr fzsubel syl22anc
       mpbid subid eleqtrd simpll wss fzss2 syl sselda fsumcl oveq2 oveq1 eqtr4d
       sumeq12dv vex csbie a1i sumeq2i csbied 3eqtr3g ) ANHUAOZNHFUBZPOZUAOZBGUB
@@ -128048,7 +128048,7 @@ $)
       wb eqbrtrd cmin a1i eleq2d seqex sylancr sylancl breldmg syl3anc eqtr4d
       nnexpcl expge0d faclbnd6 lemul1a syl31anc nnrpd lemuldiv2d nn0z exprecapd
       jca divrecapd 3eqtr2rd nngt0d ledivmul syl112anc znegcld 0cn mpan pm5.32i
-      subneg addid2 sylbi readdcl seq3shft negcld ovshftex isumrecl seqeq1d 1nn
+      subneg addlid sylbi readdcl seq3shft negcld ovshftex isumrecl seqeq1d 1nn
       climshft nnge1d nnleltp1 absidd breqtrrd georeclim isermulc2 ax-1cn pncan
       nn0ge0d mulcomd 3eqtrd isumle fveq2 addid2d biimpa sumeq1d eqtr3d 3brtr3d
       div23apd isumshft isumclim ) AHUCOZCUDZEOZCUEZUFOUWLUWMFOZCUEZBUFOZHUGPZH
@@ -132171,7 +132171,7 @@ $)
      Paul Chapman, 31-Mar-2011.) $)
   gcdid $p |- ( N e. ZZ -> ( N gcd N ) = ( abs ` N ) ) $=
     ( cz wcel cc0 cgcd co c1 cmul caddc cabs cfv wceq 1z gcdaddm mp3an13 gcdid0
-    0z cc zcn oveq2d mulid2 addid2 eqtrd syl 3eqtr3rd ) ABCZADEFZADGAHFZIFZEFZA
+    0z cc zcn oveq2d mulid2 addlid eqtrd syl 3eqtr3rd ) ABCZADEFZADGAHFZIFZEFZA
     JKAAEFGBCUFDBCUGUJLMQGADNOAPUFUIAAEUFARCZUIALASUKUIDAIFAUKUHADIAUATAUBUCUDT
     UE $.
 
@@ -163609,7 +163609,7 @@ $)
            ( ( ( sin ` A ) x. ( sin ` B ) ) + ( ( sin ` C ) x. ( sin ` D ) ) )
            = ( ( sin ` ( B + C ) ) x. ( sin ` ( A + C ) ) ) ) $=
     ( cc wcel wa caddc co cpi wceq cmin ccos cfv c2 cdiv csin cneg syl 3adant3
-    cmul addcl 3ad2ant2 coscld negnegd addid2 oveq1d 0cnd adantr pnpcan2d simp3
+    cmul addcl 3ad2ant2 coscld negnegd addlid oveq1d 0cnd adantr pnpcan2d simp3
     w3a oveq2d 3eqtr3rd df-neg eqtr4di fveq2d cosmpi cosneg negeqd eqtr3d subcl
     cc0 3eqtr3d adantl subnegd eqtrd cap wbr 3ad2ant1 subcld addcld 2ap0 pm3.2i
     2cn a1i divdirap syl3anc nppcan3d sinmul oveq12d simplr simpll simprl oveq1
