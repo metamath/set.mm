@@ -143337,7 +143337,7 @@ $)
 
   $( Utility theorem: index-independent form of ~ df-mulr .  (Contributed by
      Mario Carneiro, 8-Jun-2013.) $)
-  mulrid $p |- .r = Slot ( .r ` ndx ) $=
+  mulridx $p |- .r = Slot ( .r ` ndx ) $=
     ( cmulr c3 df-mulr 3nn ndxid ) ABCDE $.
 
   $( Slot property of ` .r ` .  (Contributed by Jim Kingdon, 3-Feb-2023.) $)
