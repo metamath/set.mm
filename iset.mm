@@ -151929,6 +151929,15 @@ $)
     sseqtrri sstri ax-mp ) ABCADEFGHADEBIIPJKLMNEFAKZOULNQFRKZNSFTKZUAZDULUMUNU
     BUOUONUCFUDKOZUEDUOUPUFUGUIUJUHUK $.
 
+  $( The addition operation of the field of complex numbers.  (Contributed by
+     Stefan O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro, 6-Oct-2015.)
+     (Revised by Thierry Arnoux, 17-Dec-2017.) $)
+  cnfldadd $p |- + = ( +g ` CCfld ) $=
+    ( caddc cvv wcel ccnfld cplusg cfv wceq addex c1 cdc cop cnfldstr plusgslid
+    c3 cnx csn cbs cc cmulr cmul ctp snsstp2 cstv ccj cun ssun1 df-icnfld sstri
+    sseqtrri strslfv ax-mp ) ABCADEFGHADEBIINJKLMOEFAKZPOQFRKZULOSFTKZUAZDUMULU
+    NUBUOUOOUCFUDKPZUEDUOUPUFUGUIUHUJUK $.
+
 
 $(
 ###############################################################################
