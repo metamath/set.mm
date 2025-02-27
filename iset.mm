@@ -151908,6 +151908,15 @@ $)
     ( ccnfld c1 c3 cdc cop cstr wbr cvv wcel cnfldstr structex ax-mp ) ABBCDEZF
     GAHIJAMKL $.
 
+  $( The base set of the field of complex numbers.  (Contributed by Stefan
+     O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro, 6-Oct-2015.)  (Revised
+     by Thierry Arnoux, 17-Dec-2017.) $)
+  cnfldbas $p |- CC = ( Base ` CCfld ) $=
+    ( cc cvv wcel ccnfld cbs cfv wceq cnex c1 cdc cop cnfldstr baseslid cnx csn
+    c3 cplusg caddc cmulr cmul ctp snsstp1 cstv ccj cun ssun1 df-icnfld strslfv
+    sseqtrri sstri ax-mp ) ABCADEFGHADEBIIPJKLMNEFAKZOULNQFRKZNSFTKZUAZDULUMUNU
+    BUOUONUCFUDKOZUEDUOUPUFUGUIUJUHUK $.
+
 
 $(
 ###############################################################################
