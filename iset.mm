@@ -151947,6 +151947,15 @@ $)
     ccj cun strslfv ax-mp ) ABCADEFGHADEBIIJKLMNOEFALZPOQFRLZOSFTLZULUAZDUMUNUL
     UBUOUOOUCFUHLPZUIDUOUPUDUEUFUGUJUK $.
 
+  $( The conjugation operation of the field of complex numbers.  (Contributed
+     by Mario Carneiro, 6-Oct-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.)
+     (Revised by Thierry Arnoux, 17-Dec-2017.) $)
+  cnfldcj $p |- * = ( *r ` CCfld ) $=
+    ( ccj cvv wcel ccnfld cstv cfv wceq cc wf cjf cnex fex mp2an c1 c3 cnfldstr
+    cdc cop starvslid cnx csn cbs cplusg caddc cmulr ctp cun df-icnfld sseqtrri
+    cmul ssun2 strslfv ax-mp ) ABCZADEFGHHAIHBCUNJKHHBALMADEBNNOQRPSTEFARUAZTUB
+    FHRTUCFUDRTUEFUJRUFZUOUGDUOUPUKUHUIULUM $.
+
 
 $(
 ###############################################################################
