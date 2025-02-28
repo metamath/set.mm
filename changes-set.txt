@@ -87,6 +87,7 @@ DONE:
 Date      Old       New         Notes
 28-Feb-25 abbi1dv   eqabcdv
 28-Feb-25 abbi2dv   eqabdv
+28-Feb-25 abbi2i    eqabi
 27-Feb-25 elnelall  pm2.24nel
 25-Feb-25 eqimssd   [same]      Moved from SN's mathbox to main set.mm
 25-Feb-25 eqimss2d  eqimsscd    Moved from SN's mathbox to main set.mm
