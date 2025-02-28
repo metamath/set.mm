@@ -21467,10 +21467,10 @@ $)
 
   ${
     $d x A $.  $d ph x $.
-    abbildv.1 $e |- ( ph -> ( ps <-> x e. A ) ) $.
+    eqabcdv.1 $e |- ( ph -> ( ps <-> x e. A ) ) $.
     $( Deduction from a wff to a class abstraction.  (Contributed by NM,
        9-Jul-1994.) $)
-    abbi1dv $p |- ( ph -> { x | ps } = A ) $=
+    eqabcdv $p |- ( ph -> { x | ps } = A ) $=
       ( cv wcel wb wal cab wceq alrimiv eqabcb sylibr ) ABCFDGHZCIBCJDKAOCELBCD
       MN $.
   $}
@@ -26287,7 +26287,7 @@ $)
        hypothesis builders for class expressions.  (Contributed by NM,
        10-Nov-2005.)  (Proof shortened by Mario Carneiro, 12-Oct-2016.) $)
     abidnf $p |- ( F/_ x A -> { z | A. x z e. A } = A ) $=
-      ( wnfc cv wcel wal sp nfcr nfrd impbid2 abbi1dv ) ACDZBECFZAGZBCMONNAHMNA
+      ( wnfc cv wcel wal sp nfcr nfrd impbid2 eqabcdv ) ACDZBECFZAGZBCMONNAHMNA
       ABCIJKL $.
   $}
 
@@ -27905,7 +27905,7 @@ $)
     $( Substitution doesn't affect a constant ` B ` (in which ` x ` is not
        free).  (Contributed by Mario Carneiro, 14-Oct-2016.) $)
     csbtt $p |- ( ( A e. V /\ F/_ x B ) -> [_ A / x ]_ B = B ) $=
-      ( vy wcel wnfc wa csb cv wsbc cab df-csb wnf wb nfcr sbctt sylan2 abbi1dv
+      ( vy wcel wnfc wa csb cv wsbc cab df-csb wnf wb nfcr sbctt sylan2 eqabcdv
       syl5eq ) BDFZACGZHZABCIEJCFZABKZELCAEBCMUCUEECUBUAUDANUEUDOAECPUDABDQRST
       $.
   $}
@@ -28050,7 +28050,7 @@ $)
     $( The proper substitution of a class for setvar variable results in the
        class (if the class exists).  (Contributed by NM, 10-Nov-2005.) $)
     csbvarg $p |- ( A e. V -> [_ A / x ]_ x = A ) $=
-      ( vz vy wcel cvv cv csb wceq elex wsbc cab df-csb sbcel2gv abbi1dv syl5eq
+      ( vz vy wcel cvv cv csb wceq elex wsbc cab df-csb sbcel2gv eqabcdv syl5eq
       vex ax-mp csbeq2i csbco 3eqtr3i syl ) BCFBGFZABAHZIZBJBCKUDUFDHZEHZFEBLZD
       MZBEBAUHUEIZIEBUHIUFUJEBUKUHUHGFZUKUHJERULUKUGUEFAUHLZDMUHADUHUENULUMDUHA
       UGUHGOPQSTAEBUEUAEDBUHNUBUDUIDBEUGBGOPQUC $.
@@ -28263,7 +28263,7 @@ $)
        This version of ~ sbcie avoids a disjointness condition on ` x , A ` by
        substituting twice.  (Contributed by Mario Carneiro, 11-Nov-2016.) $)
     csbie2g $p |- ( A e. V -> [_ A / x ]_ B = D ) $=
-      ( vz wcel csb cv wsbc cab df-csb wceq eleq2d sbcie2g abbi1dv syl5eq ) CGK
+      ( vz wcel csb cv wsbc cab df-csb wceq eleq2d sbcie2g eqabcdv syl5eq ) CGK
       ZACDLJMZDKZACNZJOFAJCDPUBUEJFUDUCEKUCFKABCGAMBMZQDEUCHRUFCQEFUCIRSTUA $.
   $}
 
@@ -31148,7 +31148,7 @@ $)
        either the universal class or the empty set.  (Contributed by Mario
        Carneiro, 29-Aug-2013.) $)
     abvor0 $p |- ( { x | ph } = _V \/ { x | ph } = (/) ) $=
-      ( cab cvv wceq c0 wn cv wcel vex a1i 2thd abbi1dv con3i noel 2falsed orri
+      ( cab cvv wceq c0 wn cv wcel vex a1i 2thd eqabcdv con3i noel 2falsed orri
       id syl ) ABCZDEZTFEZUAGAGZUBAUAAABDAABHZDIZARUEABJKLMNUCABFUCAUDFIZUCRUFG
       UCUDOKPMSQ $.
   $}
@@ -35325,7 +35325,7 @@ $)
        argument.  (Contributed by NM, 15-Jan-2012.)  (Proof shortened by Mario
        Carneiro, 17-Nov-2016.) $)
     iinxsng $p |- ( A e. V -> |^|_ x e. { A } B = C ) $=
-      ( vy wcel csn ciin cv wral cab df-iin wceq eleq2d ralsng abbi1dv syl5eq )
+      ( vy wcel csn ciin cv wral cab df-iin wceq eleq2d ralsng eqabcdv syl5eq )
       BEHZABIZCJGKZCHZAUALZGMDAGUACNTUDGDUCUBDHABEAKBOCDUBFPQRS $.
   $}
 
@@ -58464,7 +58464,7 @@ $)
       crn eqtr3i syl5eqr dff1o4 vex siex f1oen exlimiv sylbi csn wmo weq wi w3a
       copab fununiq sneqb 3expib alrimivv sneq mo4 alrimiv funopab cab wel eldm
       dmopab brelrn eleq2d wrex elpw1 spcev syl6bi rexlimivw com23 mpdi exlimdv
-      syl5bi breldm impbid1 bitr3d snelpw1 syl6bb abbi1dv brcnv 3imtr3g cnvopab
+      syl5bi breldm impbid1 bitr3d snelpw1 syl6bb eqabcdv brcnv 3imtr3g cnvopab
       f1ocnv elrn fneq1i enpw1lem1 impbii vtocl2g pm5.21nii ) ABGHZAIJZBIJZUEZA
       KZBKZGHZABGUFUUAYSIJZYTIJZUEYRYSYTGUFUUBYPUUCYQAUGBUGUHUIUASZUBSZGHZUUDKZ
       UUEKZGHZVGAUUEGHZYSUUHGHZVGYOUUAVGUAUBABIIUUDALZUUFUUJUUIUUKUUDAUUEGUJUUL
