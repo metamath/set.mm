@@ -21457,10 +21457,10 @@ $)
 
   ${
     $d x A $.  $d ph x $.
-    abbirdv.1 $e |- ( ph -> ( x e. A <-> ps ) ) $.
+    eqabdv.1 $e |- ( ph -> ( x e. A <-> ps ) ) $.
     $( Deduction from a wff to a class abstraction.  (Contributed by NM,
        9-Jul-1994.) $)
-    abbi2dv $p |- ( ph -> A = { x | ps } ) $=
+    eqabdv $p |- ( ph -> A = { x | ps } ) $=
       ( cv wcel wb wal cab wceq alrimiv eqabb sylibr ) ACFDGBHZCIDBCJKAOCELBCDM
       N $.
   $}
@@ -21532,7 +21532,7 @@ $)
        proper substitution of ` y ` for ` x ` into a class variable.
        (Contributed by NM, 14-Sep-2003.) $)
     sbab $p |- ( x = y -> A = { z | [ y / x ] z e. A } ) $=
-      ( cv wceq wcel wsb sbequ12 abbi2dv ) AEBEFCEDGZABHCDKABIJ $.
+      ( cv wceq wcel wsb sbequ12 eqabdv ) AEBEFCEDGZABHCDKABIJ $.
   $}
 
 
@@ -32005,14 +32005,14 @@ $)
        (Contributed by NM, 15-May-1999.)  (Proof shortened by Andrew Salmon,
        26-Jun-2011.) $)
     iftrue $p |- ( ph -> if ( ph , A , B ) = A ) $=
-      ( vx cv wcel wi wa cab cif dedlem0a abbi2dv dfif2 syl6reqr ) ABDEZCFZAGOB
-      FZAHGZDIABCJARDBAQPKLADBCMN $.
+      ( vx cv wcel wi wa cab cif dedlem0a eqabdv dfif2 syl6reqr ) ABDEZCFZAGOBF
+      ZAHGZDIABCJARDBAQPKLADBCMN $.
 
     $( Value of the conditional operator when its first argument is false.
        (Contributed by NM, 14-Aug-1999.) $)
     iffalse $p |- ( -. ph -> if ( ph , A , B ) = B ) $=
-      ( vx wn cv wcel wa wo cab cif dedlemb abbi2dv df-if syl6reqr ) AEZCDFZBGZ
-      AHQCGZPHIZDJABCKPTDCARSLMADBCNO $.
+      ( vx wn cv wcel wa wo cab cif dedlemb eqabdv df-if syl6reqr ) AEZCDFZBGZA
+      HQCGZPHIZDJABCKPTDCARSLMADBCNO $.
   $}
 
   $( When values are unequal, but an "if" condition checks if they are equal,
@@ -42978,23 +42978,23 @@ $)
       ( vz vy vw cnnc c0c wcel wa cv c1c wceq wrex cab eqeq2d cssetk cpw1 cimak
       cins3k wss wn cplc crab cphi wex weq wo eleq1 biimpcd con3d adantll ssel2
       impcom adantlr nnc0suc sylib orel1 anidm anbi2d syl5bbr rexbidv syl5ibcom
-      sylc eqeq1 eqtr3 rexlimivw impbid1 rexbidva risset rexcom 3bitr4g abbi2dv
-      cif df-phi addceq1 rexrab r19.41v syl6bbr rexbiia bitri abbii syl6eqr cin
-      iftrue eqtri cvv dfrab2 cins2k ccompl csik cun csymdif cdif cimagek ccnvk
-      copk elimak opkelimagek opkelcnvk dfaddc2 eqeq2i 3bitr4i rexbii addcexlem
-      vex abbi2i 1cex pw1ex imakex imagekex cnvkex eqeltrri nncex eqeltri phieq
-      inex spcev syl ) BGUAZHBIZUBZJZBDKZEKZLUCZMZDBNZEGUDZUEZMZBAKZUEZMZAUFYCB
-      YDYLLUCZMZFKZYOMZJZDBNZAGNZFOZYJYCUUAFBYCDFUGZDBNYSAGNZDBNYQBIUUAYCUUCUUD
-      DBYCYDBIZJZUUCUUDUUFYPAGNZUUCUUDUUFYDHMZUBZUUHUUGUHZUUGYBUUEUUIXTUUEYBUUI
-      UUEUUHYAUUHUUEYAYDHBUIUJUKUNULUUFYDGIZUUJXTUUEUUKYBBGYDUMUOAYDUPUQUUHUUGU
-      RVDUUCYPYSAGYPYPYPJUUCYSYPUSUUCYPYRYPYDYQYOVEUTVAVBVCYSUUCAGYDYQYOVFVGVHV
-      IDYQBVJYSADGBVKVLVMYJYQYLGIZYOYLVNZMZAYINZFOUUBAFYIVOUUOUUAFUUOYPDBNZUUNJ
-      ZAGNUUAYHUUPUUNAEGEAUGZYGYPDBUURYFYOYDYEYLLVPPVBVQUUQYTAGUULUUQUUPYRJYTUU
-      LUUNYRUUPUULUUMYOYQUULYOYLWEPUTYPYRDBVRVSVTWAWBWFWCYNYKAYIYIYHEOZGWDWGYHE
-      GWHUUSGQTZQWIZWDLRZRZSWJTUVAWIUUTWIQWKWKTWLWMUVCRRSWNZUVCSZWOZWPZBSZUUSWG
-      YHEUVHYEUVHIYDYEWQUVGIZDBNYHDUVGBYEEXFZWRUVIYGDBYEYDWQUVFIYDUVEYESZMUVIYG
-      YEYDUVEUVJDXFZWSYDYEUVFUVLUVJWTYFUVKYDYELXAXBXCXDWAXGUVGBUVFUVEUVDUVCXEUV
-      BLXHXIXIXJXKXLCXJXMXNXQXOYLYIMYMYJBYLYIXPPXRXS $.
+      sylc eqeq1 rexlimivw impbid1 rexbidva risset rexcom 3bitr4g eqabdv df-phi
+      eqtr3 cif addceq1 rexrab iftrue r19.41v syl6bbr rexbiia bitri abbii eqtri
+      syl6eqr cin cvv dfrab2 cins2k ccompl csik csymdif cdif cimagek ccnvk copk
+      cun vex elimak opkelimagek opkelcnvk dfaddc2 eqeq2i 3bitr4i rexbii abbi2i
+      addcexlem pw1ex imakex imagekex cnvkex eqeltrri nncex eqeltri phieq spcev
+      1cex inex syl ) BGUAZHBIZUBZJZBDKZEKZLUCZMZDBNZEGUDZUEZMZBAKZUEZMZAUFYCBY
+      DYLLUCZMZFKZYOMZJZDBNZAGNZFOZYJYCUUAFBYCDFUGZDBNYSAGNZDBNYQBIUUAYCUUCUUDD
+      BYCYDBIZJZUUCUUDUUFYPAGNZUUCUUDUUFYDHMZUBZUUHUUGUHZUUGYBUUEUUIXTUUEYBUUIU
+      UEUUHYAUUHUUEYAYDHBUIUJUKUNULUUFYDGIZUUJXTUUEUUKYBBGYDUMUOAYDUPUQUUHUUGUR
+      VDUUCYPYSAGYPYPYPJUUCYSYPUSUUCYPYRYPYDYQYOVEUTVAVBVCYSUUCAGYDYQYOVNVFVGVH
+      DYQBVIYSADGBVJVKVLYJYQYLGIZYOYLVOZMZAYINZFOUUBAFYIVMUUOUUAFUUOYPDBNZUUNJZ
+      AGNUUAYHUUPUUNAEGEAUGZYGYPDBUURYFYOYDYEYLLVPPVBVQUUQYTAGUULUUQUUPYRJYTUUL
+      UUNYRUUPUULUUMYOYQUULYOYLVRPUTYPYRDBVSVTWAWBWCWDWEYNYKAYIYIYHEOZGWFWGYHEG
+      WHUUSGQTZQWIZWFLRZRZSWJTUVAWIUUTWIQWKWKTWQWLUVCRRSWMZUVCSZWNZWOZBSZUUSWGY
+      HEUVHYEUVHIYDYEWPUVGIZDBNYHDUVGBYEEWRZWSUVIYGDBYEYDWPUVFIYDUVEYESZMUVIYGY
+      EYDUVEUVJDWRZWTYDYEUVFUVLUVJXAYFUVKYDYELXBXCXDXEWBXFUVGBUVFUVEUVDUVCXGUVB
+      LXQXHXHXIXJXKCXIXLXMXRXNYLYIMYMYJBYLYIXOPXPXS $.
 
     $( Lemma for ~ phiall .  Any set without ` 0c ` is equal to the ` Phi ` of
        a set.  (Contributed by Scott Fenton, 8-Apr-2021.) $)
@@ -45990,7 +45990,7 @@ $)
     $d x y A $.  $d x y ph $.
     opabbi2dv.1 $e |- ( ph -> ( <. x , y >. e. A <-> ps ) ) $.
     $( Deduce equality of a relation and an ordered-pair class builder.
-       Compare ~ abbi2dv .  (Contributed by NM, 24-Feb-2014.) $)
+       Compare ~ eqabdv .  (Contributed by NM, 24-Feb-2014.) $)
     opabbi2dv $p |- ( ph -> A = { <. x , y >. | ps } ) $=
       ( cv cop wcel copab opabid2 opabbidv syl5eqr ) AECGDGHEIZCDJBCDJCDEKANBCD
       FLM $.
@@ -51788,15 +51788,15 @@ $)
       cv eliniseg anbi2i wceq crn wfo wf1o isof1o f1ofo forn eleq2d wfn fvelrnb
       f1ofn bitr3d anbi1d adantr anbi1i anass wi fnbrfvb adantrr bicomd anbi12d
       sylan isorel ancom breq1 pm5.32i 3bitr3g exp32 com23 imp pm5.32d rexbidv2
-      syl5bb r19.41v syl6bb bitr4d abbi2dv df-ima syl6reqr ) ABDEFUAZCAIZJZBEKC
-      FLZMNZOZGUDZHUDZFPZGADKCMNZOZQZHUBFWPNWHWQHWKWMWKIZWMBIZWMWIEPZJZWHWQWRWS
-      WMWJIZJXAWMBWJUCXBWTWSEWIWMUEUFRWHXAWLFLZWMUGZGAQZWTJZWQWFXAXFSWGWFWSXEWT
-      WFWMFUHZIZWSXEWFXGBWMWFABFUIZXGBUGWFABFUJZXIABDEFUKZABFULTABFUMTUNWFFAUOZ
-      XHXESWFXJXLXKABFUQTZGAWMFUPTURUSUTWHWQXDWTJZGAQXFWHWNXNGWPAWLWPIZWNJZWLAI
-      ZWLCDPZWNJZJZWHXQXNJXPXQXRJZWNJXTXOYAWNXOXQWLWOIZJYAWLAWOUCYBXRXQDCWLUEUF
-      RVAXQXRWNVBRWHXQXSXNWFWGXQXSXNSZVCWFXQWGYCWFXQWGYCWFXQWGJJZWNXRJXDXCWIEPZ
-      JXSXNYDWNXDXRYEYDXDWNWFXQXDWNSZWGWFXLXQYFXMAWLWMFVDVHVEVFABWLCDEFVIVGWNXR
-      VJXDYEWTXCWMWIEVKVLVMVNVOVPVQVSVRXDWTGAVTWAWBVSWCHGFWPWDWE $.
+      syl5bb r19.41v syl6bb bitr4d eqabdv df-ima syl6reqr ) ABDEFUAZCAIZJZBEKCF
+      LZMNZOZGUDZHUDZFPZGADKCMNZOZQZHUBFWPNWHWQHWKWMWKIZWMBIZWMWIEPZJZWHWQWRWSW
+      MWJIZJXAWMBWJUCXBWTWSEWIWMUEUFRWHXAWLFLZWMUGZGAQZWTJZWQWFXAXFSWGWFWSXEWTW
+      FWMFUHZIZWSXEWFXGBWMWFABFUIZXGBUGWFABFUJZXIABDEFUKZABFULTABFUMTUNWFFAUOZX
+      HXESWFXJXLXKABFUQTZGAWMFUPTURUSUTWHWQXDWTJZGAQXFWHWNXNGWPAWLWPIZWNJZWLAIZ
+      WLCDPZWNJZJZWHXQXNJXPXQXRJZWNJXTXOYAWNXOXQWLWOIZJYAWLAWOUCYBXRXQDCWLUEUFR
+      VAXQXRWNVBRWHXQXSXNWFWGXQXSXNSZVCWFXQWGYCWFXQWGYCWFXQWGJJZWNXRJXDXCWIEPZJ
+      XSXNYDWNXDXRYEYDXDWNWFXQXDWNSZWGWFXLXQYFXMAWLWMFVDVHVEVFABWLCDEFVIVGWNXRV
+      JXDYEWTXCWMWIEVKVLVMVNVOVPVQVSVRXDWTGAVTWAWBVSWCHGFWPWDWE $.
   $}
 
   ${
