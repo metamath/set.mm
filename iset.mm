@@ -151990,6 +151990,14 @@ $)
       co wa rgen pm3.2i crg cnring cnfldbas cnfldmul eqid isringid ax-mp eqcomi
       wb mpbi ) BCDZEEFGZEAHZIPULJZULEIPULJZQZAFKZQZUJEJZUKUPLUOAFULFGUMUNULMUL
       NORSBTGUQURUHUAAFBIUJEUBUCUJUDUEUFUIUG $.
+
+    $( The additive inverse in the field of complex numbers.  (Contributed by
+       Stefan O'Rear, 27-Nov-2014.) $)
+    cnfldneg $p |- ( X e. CC -> ( ( invg ` CCfld ) ` X ) = -u X ) $=
+      ( cc wcel ccnfld cminusg cfv cneg wceq caddc co cc0 negid wb negcl cnring
+      cgrp crg ringgrp ax-mp cnfldbas cnfld0 eqid grpinvid1 mp3an1 mpdan mpbird
+      cnfldadd ) ABCZADEFZFAGZHZAUJIJKHZALUHUJBCZUKULMZANDPCZUHUMUNDQCUOODRSBID
+      UIAUJKTUGUAUIUBUCUDUEUF $.
   $}
 
 
