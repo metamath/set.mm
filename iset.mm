@@ -152005,6 +152005,17 @@ $)
       ( ccnfld cplusf cfv caddc cvv wcel cc cxp wfn wceq cnfldex wf ax-addf ffn
       ax-mp cnfldbas cnfldadd eqid plusfeqg mp2an eqcomi ) ABCZDAEFDGGHZIZUBDJK
       UCGDLUDMUCGDNOGDUBAEPQUBRSTUA $.
+
+    $( The subtraction operator in the field of complex numbers.  (Contributed
+       by Mario Carneiro, 15-Jun-2015.) $)
+    cnfldsub $p |- - = ( -g ` CCfld ) $=
+      ( vx vy cc cv cmin co cmpo ccnfld cfv wcel caddc cnfldbas eqid wf wfn ffn
+      wceq fnovim mp2b ax-mp wa cminusg cneg cnfldadd grpsubval cnfldneg adantl
+      csg oveq2d negsub 3eqtrrd mpoeq3ia cxp crg cnring ringgrp grpsubf 3eqtr4i
+      subf cgrp ) ABCCADZBDZEFZGZABCCVAVBHUHIZFZGZEVEABCCVCVFVACJZVBCJZUAZVFVAV
+      BHUBIZIZKFVAVBUCZKFVCCKHVKVEVAVBLUDVKMVEMZUEVJVLVMVAKVIVLVMQVHVBUFUGUIVAV
+      BUJUKULCCUMZCENEVOOEVDQUSVOCEPABCCERSVEVOOZVEVGQHUTJZVOCVENVPHUNJVQUOHUPT
+      CHVELVNUQVOCVEPSABCCVERTUR $.
   $}
 
 
