@@ -151998,6 +151998,13 @@ $)
       cgrp crg ringgrp ax-mp cnfldbas cnfld0 eqid grpinvid1 mp3an1 mpdan mpbird
       cnfldadd ) ABCZADEFZFAGZHZAUJIJKHZALUHUJBCZUKULMZANDPCZUHUMUNDQCUOODRSBID
       UIAUJKTUGUAUIUBUCUDUEUF $.
+
+    $( The functionalized addition operation of the field of complex numbers.
+       (Contributed by Mario Carneiro, 2-Sep-2015.) $)
+    cnfldplusf $p |- + = ( +f ` CCfld ) $=
+      ( ccnfld cplusf cfv caddc cvv wcel cc cxp wfn wceq cnfldex wf ax-addf ffn
+      ax-mp cnfldbas cnfldadd eqid plusfeqg mp2an eqcomi ) ABCZDAEFDGGHZIZUBDJK
+      UCGDLUDMUCGDNOGDUBAEPQUBRSTUA $.
   $}
 
 
