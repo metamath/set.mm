@@ -62,6 +62,7 @@
 "ax-addcl" is used by "addcl".
 "ax-addcom" is used by "addcom".
 "ax-addf" is used by "addcncntop".
+"ax-addf" is used by "addex".
 "ax-addrcl" is used by "readdcl".
 "ax-arch" is used by "arch".
 "ax-caucvg" is used by "caucvgre".
@@ -79,6 +80,7 @@
 "ax-mulcl" is used by "mulcl".
 "ax-mulcom" is used by "mulcom".
 "ax-mulf" is used by "mulcncntop".
+"ax-mulf" is used by "mulex".
 "ax-mulrcl" is used by "remulcl".
 "ax16ALT" is used by "dvelimALT".
 "ax16ALT" is used by "dvelimfv".
@@ -108,12 +110,18 @@
 "basendx" is used by "2strstr1g".
 "basendx" is used by "2strstrg".
 "basendx" is used by "basendxltdsndx".
+"basendx" is used by "basendxltplendx".
+"basendx" is used by "basendxltplusgndx".
 "basendx" is used by "basendxlttsetndx".
+"basendx" is used by "basendxltunifndx".
+"basendx" is used by "ipndxnbasendx".
 "basendx" is used by "lmodstrd".
 "basendx" is used by "rngstrg".
 "basendx" is used by "scandxnbasendx".
 "basendx" is used by "setsmsbasg".
+"basendx" is used by "starvndxnbasendx".
 "basendx" is used by "topgrpstrd".
+"basendx" is used by "vscandxnbasendx".
 "bj-axemptylem" is used by "bj-axempty".
 "bj-axemptylem" is used by "bj-axempty2".
 "cbv3" is used by "bdsetindis".
@@ -132,6 +140,11 @@
 "csbco" is used by "zsumdc".
 "df-div" is used by "divfnzn".
 "df-div" is used by "divvalap".
+"df-icnfld" is used by "cnfldadd".
+"df-icnfld" is used by "cnfldbas".
+"df-icnfld" is used by "cnfldcj".
+"df-icnfld" is used by "cnfldmul".
+"df-icnfld" is used by "cnfldstr".
 "df-ilim" is used by "dflim2".
 "df-inn" is used by "dfnn2".
 "df-iom" is used by "dfom3".
@@ -288,6 +301,10 @@
 "strnfvn" is used by "baseval".
 "strnfvn" is used by "ndxarg".
 "strnfvn" is used by "strsl0".
+"unifndx" is used by "basendxltunifndx".
+"unifndx" is used by "slotsdifunifndx".
+"unifndx" is used by "unifndxnn".
+"unifndx" is used by "unifndxntsetndx".
 New usage of "0cnALT" is discouraged (0 uses).
 New usage of "0reALT" is discouraged (0 uses).
 New usage of "19.21h" is discouraged (3 uses).
@@ -310,7 +327,7 @@ New usage of "ax-1re" is discouraged (1 uses).
 New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
 New usage of "ax-addcom" is discouraged (1 uses).
-New usage of "ax-addf" is discouraged (1 uses).
+New usage of "ax-addf" is discouraged (2 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-arch" is discouraged (1 uses).
 New usage of "ax-caucvg" is discouraged (1 uses).
@@ -326,7 +343,7 @@ New usage of "ax-io" is discouraged (1 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
-New usage of "ax-mulf" is discouraged (1 uses).
+New usage of "ax-mulf" is discouraged (2 uses).
 New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax0id" is discouraged (0 uses).
 New usage of "ax0lt1" is discouraged (0 uses).
@@ -367,7 +384,7 @@ New usage of "axpre-suploc" is discouraged (0 uses).
 New usage of "axprecex" is discouraged (2 uses).
 New usage of "axresscn" is discouraged (4 uses).
 New usage of "axrnegex" is discouraged (0 uses).
-New usage of "basendx" is discouraged (12 uses).
+New usage of "basendx" is discouraged (18 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
@@ -392,6 +409,7 @@ New usage of "dcapnconstALT" is discouraged (0 uses).
 New usage of "dcnnOLD" is discouraged (0 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-div" is discouraged (2 uses).
+New usage of "df-icnfld" is discouraged (5 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
@@ -449,6 +467,7 @@ New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
 New usage of "strnfvn" is discouraged (3 uses).
 New usage of "tfri1dALT" is discouraged (0 uses).
+New usage of "unifndx" is discouraged (4 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).

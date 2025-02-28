@@ -98886,6 +98886,18 @@ $)
       UVICLUURXGUVICWBUUPUUQCVBVCWQWTWSVNEFXCJCXAVPXCJCXBVP $.
   $}
 
+  $( The addition operation is a set.  (Contributed by NM, 19-Oct-2004.)
+     (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  addex $p |- + e. _V $=
+    ( cc cxp caddc wf cvv wcel ax-addf cnex xpex fex2 mp3an ) AABZACDLEFAEFCEFG
+    AAHHIHLACEEJK $.
+
+  $( The multiplication operation is a set.  (Contributed by NM, 19-Oct-2004.)
+     (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  mulex $p |- x. e. _V $=
+    ( cc cxp cmul wf cvv wcel ax-mulf cnex xpex fex2 mp3an ) AABZACDLEFAEFCEFGA
+    AHHIHLACEEJK $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -143092,6 +143104,23 @@ $)
   $}
 
   ${
+    strext.f $e |- ( ph -> F Struct <. A , B >. ) $.
+    strext.c $e |- ( ph -> C e. ( ZZ>= ` B ) ) $.
+    $( Extending the upper range of a structure.  This works because when we
+       say that a structure has components in ` A ... C ` we are not saying
+       that every slot in that range is present, just that all the slots that
+       are present are within that range.  (Contributed by Jim Kingdon,
+       26-Feb-2025.) $)
+    strext $p |- ( ph -> F Struct <. A , C >. ) $=
+      ( cn wcel cle wbr cvv cfz co wss cop cstr w3a syl nnred csn cdif wfun cdm
+      c0 isstructim simp1d cuz cfv simp2d eluznn syl2anc simp3d eluzle structex
+      letrd fzss2 sstrd isstructr syl33anc ) ABHIZDHIZBDJKEUEUAUBUCZELIZEUDZBDM
+      NZOEBDPQKAVACHIZBCJKZAVAVGVHRZVCVEBCMNZOZAEBCPZQKZVIVCVKRFEBCUFSZUGZUGZAV
+      GDCUHUIIZVBAVAVGVHVOUJZGDCUKULZABCDABVPTACVRTADVSTAVAVGVHVOUMAVQCDJKGCDUN
+      SUPAVIVCVKVNUJAVMVDFEVLUOSAVEVJVFAVIVCVKVNUMAVQVJVFOGCBDUQSUREBDLUSUT $.
+  $}
+
+  ${
     strle1.i $e |- I e. NN $.
     strle1.a $e |- A = I $.
     $( Make a structure from a singleton.  (Contributed by Mario Carneiro,
@@ -143139,9 +143168,21 @@ $)
   plusgid $p |- +g = Slot ( +g ` ndx ) $=
     ( cplusg c2 df-plusg 2nn ndxid ) ABCDE $.
 
+  $( The index of the slot for the group operation in an extensible structure
+     is a positive integer.  (Contributed by AV, 17-Oct-2024.) $)
+  plusgndxnn $p |- ( +g ` ndx ) e. NN $=
+    ( cnx cplusg cfv c2 cn plusgndx 2nn eqeltri ) ABCDEFGH $.
+
   $( Slot property of ` +g ` .  (Contributed by Jim Kingdon, 3-Feb-2023.) $)
   plusgslid $p |- ( +g = Slot ( +g ` ndx ) /\ ( +g ` ndx ) e. NN ) $=
     ( cplusg c2 df-plusg 2nn ndxslid ) ABCDE $.
+
+  $( The index of the slot for the base set is less then the index of the slot
+     for the group operation in an extensible structure.  (Contributed by AV,
+     17-Oct-2024.) $)
+  basendxltplusgndx $p |- ( Base ` ndx ) < ( +g ` ndx ) $=
+    ( c1 c2 cnx cbs cfv cplusg clt 1lt2 basendx plusgndx 3brtr4i ) ABCDECFEGHIJ
+    K $.
 
   ${
     opelstrsl.e $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
@@ -143369,6 +143410,24 @@ $)
   starvslid $p |- ( *r = Slot ( *r ` ndx ) /\ ( *r ` ndx ) e. NN ) $=
     ( cstv c4 df-starv 4nn ndxslid ) ABCDE $.
 
+  $( The slot for the involution function is not the slot for the base set in
+     an extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
+  starvndxnbasendx $p |- ( *r ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx cstv cfv cbs wne c4 c1 1re 1lt4 gtneii starvndx basendx neeq12i mpbir
+    ) ABCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slot for the involution function is not the slot for the base set in
+     an extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
+  starvndxnplusgndx $p |- ( *r ` ndx ) =/= ( +g ` ndx ) $=
+    ( cnx cstv cfv cplusg wne c4 c2 2lt4 gtneii starvndx plusgndx neeq12i mpbir
+    2re ) ABCZADCZEFGEGFNHIOFPGJKLM $.
+
+  $( The slot for the involution function is not the slot for the base set in
+     an extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
+  starvndxnmulrndx $p |- ( *r ` ndx ) =/= ( .r ` ndx ) $=
+    ( cnx cstv cfv cmulr wne c4 3re 3lt4 gtneii starvndx mulrndx neeq12i mpbir
+    c3 ) ABCZADCZEFNENFGHIOFPNJKLM $.
+
   ${
     ressmulr.1 $e |- S = ( R |`s A ) $.
     ressmulr.2 $e |- .x. = ( .r ` R ) $.
@@ -143476,6 +143535,31 @@ $)
   vscaid $p |- .s = Slot ( .s ` ndx ) $=
     ( cvsca c6 df-vsca 6nn ndxid ) ABCDE $.
 
+  $( The slot for the scalar product is not the slot for the base set in an
+     extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
+  vscandxnbasendx $p |- ( .s ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx cvsca cfv cbs wne c6 c1 1re 1lt6 gtneii vscandx basendx neeq12i mpbir
+    ) ABCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slot for the scalar product is not the slot for the group operation in
+     an extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
+  vscandxnplusgndx $p |- ( .s ` ndx ) =/= ( +g ` ndx ) $=
+    ( cnx cvsca cfv cplusg wne c6 c2 2lt6 gtneii vscandx plusgndx neeq12i mpbir
+    2re ) ABCZADCZEFGEGFNHIOFPGJKLM $.
+
+  $( The slot for the scalar product is not the slot for the ring
+     (multiplication) operation in an extensible structure.  (Contributed by
+     AV, 29-Oct-2024.) $)
+  vscandxnmulrndx $p |- ( .s ` ndx ) =/= ( .r ` ndx ) $=
+    ( cnx cvsca cfv cmulr wne c6 3re 3lt6 gtneii vscandx mulrndx neeq12i mpbir
+    c3 ) ABCZADCZEFNENFGHIOFPNJKLM $.
+
+  $( The slot for the scalar product is not the slot for the scalar field in an
+     extensible structure.  (Contributed by AV, 18-Oct-2024.) $)
+  vscandxnscandx $p |- ( .s ` ndx ) =/= ( Scalar ` ndx ) $=
+    ( cnx cvsca cfv csca wne c6 c5 5re 5lt6 gtneii vscandx scandx neeq12i mpbir
+    ) ABCZADCZEFGEGFHIJOFPGKLMN $.
+
   $( Slot property of ` .s ` .  (Contributed by Jim Kingdon, 5-Feb-2023.) $)
   vscaslid $p |- ( .s = Slot ( .s ` ndx ) /\ ( .s ` ndx ) e. NN ) $=
     ( cvsca c6 df-vsca 6nn ndxslid ) ABCDE $.
@@ -143548,6 +143632,33 @@ $)
   $( Slot property of ` .i ` .  (Contributed by Jim Kingdon, 7-Feb-2023.) $)
   ipslid $p |- ( .i = Slot ( .i ` ndx ) /\ ( .i ` ndx ) e. NN ) $=
     ( cip c8 df-ip 8nn ndxslid ) ABCDE $.
+
+  $( The slot for the inner product is not the slot for the base set in an
+     extensible structure.  (Contributed by AV, 21-Oct-2024.) $)
+  ipndxnbasendx $p |- ( .i ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx cip cfv cbs wne c8 c1 1re 1lt8 gtneii ipndx basendx neeq12i mpbir ) A
+    BCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slot for the inner product is not the slot for the group operation in
+     an extensible structure.  (Contributed by AV, 29-Oct-2024.) $)
+  ipndxnplusgndx $p |- ( .i ` ndx ) =/= ( +g ` ndx ) $=
+    ( cnx cip cfv cplusg wne c8 c2 2re 2lt8 gtneii ipndx plusgndx neeq12i mpbir
+    ) ABCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slot for the inner product is not the slot for the ring
+     (multiplication) operation in an extensible structure.  (Contributed by
+     AV, 29-Oct-2024.) $)
+  ipndxnmulrndx $p |- ( .i ` ndx ) =/= ( .r ` ndx ) $=
+    ( cnx cip cfv cmulr wne c8 c3 3re 3lt8 gtneii ipndx mulrndx neeq12i mpbir )
+    ABCZADCZEFGEGFHIJOFPGKLMN $.
+
+  $( The slot for the scalar is not the index of other slots.  (Contributed by
+     AV, 12-Nov-2024.) $)
+  slotsdifipndx $p |- ( ( .s ` ndx ) =/= ( .i ` ndx )
+                       /\ ( Scalar ` ndx ) =/= ( .i ` ndx ) ) $=
+    ( cnx cvsca cfv cip wne csca c6 6re 6lt8 ltneii vscandx ipndx neeq12i mpbir
+    c8 c5 5re 5lt8 scandx pm3.2i ) ABCZADCZEZAFCZUBEZUCGOEGOHIJUAGUBOKLMNUEPOEP
+    OQRJUDPUBOSLMNT $.
 
   ${
     ipspart.a $e |- A = ( { <. ( Base ` ndx ) , B >. ,
@@ -143746,6 +143857,60 @@ $)
   pleslid $p |- ( le = Slot ( le ` ndx ) /\ ( le ` ndx ) e. NN ) $=
     ( cple c1 cc0 cdc df-ple 10nn ndxslid ) ABCDEFG $.
 
+  $( The index value of the order slot is a positive integer.  This property
+     should be ensured for every concrete coding because otherwise it could not
+     be used in an extensible structure (slots must be positive integers).
+     (Contributed by AV, 30-Oct-2024.) $)
+  plendxnn $p |- ( le ` ndx ) e. NN $=
+    ( cnx cple cfv c1 cc0 cdc cn plendx 10nn eqeltri ) ABCDEFGHIJ $.
+
+  $( The index value of the ` Base ` slot is less than the index value of the
+     ` le ` slot.  (Contributed by AV, 30-Oct-2024.) $)
+  basendxltplendx $p |- ( Base ` ndx ) < ( le ` ndx ) $=
+    ( c1 cc0 cdc cnx cbs cfv cple clt 1lt10 basendx plendx 3brtr4i ) AABCDEFDGF
+    HIJKL $.
+
+  $( The slot for the order is not the slot for the base set in an extensible
+     structure.  (Contributed by AV, 21-Oct-2024.)  (Proof shortened by AV,
+     30-Oct-2024.) $)
+  plendxnbasendx $p |- ( le ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx cbs cfv cple basendxnn nnrei basendxltplendx gtneii ) ABCZADCIEFGH $.
+
+  $( The slot for the "less than or equal to" ordering is not the slot for the
+     group operation in an extensible structure.  (Contributed by AV,
+     18-Oct-2024.) $)
+  plendxnplusgndx $p |- ( le ` ndx ) =/= ( +g ` ndx ) $=
+    ( cnx cfv cplusg wne c1 cc0 cdc c2 2re 2lt10 gtneii plendx plusgndx neeq12i
+    cple mpbir ) AOBZACBZDEFGZHDHSIJKQSRHLMNP $.
+
+  $( The slot for the "less than or equal to" ordering is not the slot for the
+     ring multiplication operation in an extensible structure.  (Contributed by
+     AV, 1-Nov-2024.) $)
+  plendxnmulrndx $p |- ( le ` ndx ) =/= ( .r ` ndx ) $=
+    ( cnx cple cfv cmulr wne c1 cc0 cdc 3re 3lt10 gtneii plendx mulrndx neeq12i
+    c3 mpbir ) ABCZADCZEFGHZOEOSIJKQSROLMNP $.
+
+  $( The slot for the "less than or equal to" ordering is not the slot for the
+     scalar in an extensible structure.  (Contributed by AV, 1-Nov-2024.) $)
+  plendxnscandx $p |- ( le ` ndx ) =/= ( Scalar ` ndx ) $=
+    ( cnx cple cfv csca wne c1 cc0 cdc c5 5re 5lt10 gtneii plendx neeq12i mpbir
+    scandx ) ABCZADCZEFGHZIEISJKLQSRIMPNO $.
+
+  $( The slot for the "less than or equal to" ordering is not the slot for the
+     scalar product in an extensible structure.  (Contributed by AV,
+     1-Nov-2024.) $)
+  plendxnvscandx $p |- ( le ` ndx ) =/= ( .s ` ndx ) $=
+    ( cnx cple cfv cvsca wne c1 cc0 cdc 6re 6lt10 gtneii plendx vscandx neeq12i
+    c6 mpbir ) ABCZADCZEFGHZOEOSIJKQSROLMNP $.
+
+  $( The index of the slot for the distance is not the index of other slots.
+     (Contributed by AV, 11-Nov-2024.) $)
+  slotsdifplendx $p |- ( ( *r ` ndx ) =/= ( le ` ndx )
+                         /\ ( TopSet ` ndx ) =/= ( le ` ndx ) ) $=
+    ( cnx cstv cfv cple wne cts c4 c1 cc0 cdc 4re 4lt10 ltneii starvndx neeq12i
+    plendx mpbir c9 9re 9lt10 tsetndx pm3.2i ) ABCZADCZEZAFCZUDEZUEGHIJZEGUHKLM
+    UCGUDUHNPOQUGRUHERUHSTMUFRUDUHUAPOQUB $.
+
   $( Index value of the ~ df-ds slot.  (Contributed by Mario Carneiro,
      14-Aug-2015.) $)
   dsndx $p |- ( dist ` ndx ) = ; 1 2 $=
@@ -143817,6 +143982,56 @@ $)
     1nn dsndx mpbir cc0 declti starvndx 10re 1nn0 0nn0 2pos declt plendx pm3.2i
     2nn ) ABCZADCZEZAFCZULEZUMGHIJZEGUPKHIGQLMNUAOUKGULUPUBRPSUOHTJZUPEUQUPUCHT
     IUDUEUJUFUGOUNUQULUPUHRPSUI $.
+
+  $( Index value of the ~ df-unif slot.  (Contributed by Thierry Arnoux,
+     17-Dec-2017.)  (New usage is discouraged.) $)
+  unifndx $p |- ( UnifSet ` ndx ) = ; 1 3 $=
+    ( cunif c1 c3 cdc df-unif 1nn0 3nn decnncl ndxarg ) ABCDEBCFGHI $.
+
+  $( Utility theorem: index-independent form of ~ df-unif .  (Contributed by
+     Thierry Arnoux, 17-Dec-2017.) $)
+  unifid $p |- UnifSet = Slot ( UnifSet ` ndx ) $=
+    ( cunif c1 c3 cdc df-unif 1nn0 3nn decnncl ndxid ) ABCDEBCFGHI $.
+
+  $( The index of the slot for the uniform set in an extensible structure is a
+     positive integer.  (Contributed by AV, 28-Oct-2024.) $)
+  unifndxnn $p |- ( UnifSet ` ndx ) e. NN $=
+    ( cnx cunif cfv c1 c3 cdc cn unifndx 1nn0 3nn decnncl eqeltri ) ABCDEFGHDEI
+    JKL $.
+
+  $( The index of the slot for the base set is less then the index of the slot
+     for the uniform set in an extensible structure.  (Contributed by AV,
+     28-Oct-2024.) $)
+  basendxltunifndx $p |- ( Base ` ndx ) < ( UnifSet ` ndx ) $=
+    ( c1 cdc cnx cbs cfv cunif clt 1nn 3nn0 1nn0 declti basendx unifndx 3brtr4i
+    c3 1lt10 ) AAOBCDECFEGAOAHIJPKLMN $.
+
+  $( The slot for the uniform set is not the slot for the base set in an
+     extensible structure.  (Contributed by AV, 21-Oct-2024.) $)
+  unifndxnbasendx $p |- ( UnifSet ` ndx ) =/= ( Base ` ndx ) $=
+    ( cnx cbs cfv cunif basendxnn nnrei basendxltunifndx gtneii ) ABCZADCIEFGH
+    $.
+
+  $( The slot for the uniform set is not the slot for the topology in an
+     extensible structure.  (Contributed by AV, 28-Oct-2024.) $)
+  unifndxntsetndx $p |- ( UnifSet ` ndx ) =/= ( TopSet ` ndx ) $=
+    ( cnx cunif cfv cts wne c1 c3 cdc c9 9re 1nn 3nn0 9nn0 9lt10 declti unifndx
+    gtneii tsetndx neeq12i mpbir ) ABCZADCZEFGHZIEIUCJFGIKLMNOQUAUCUBIPRST $.
+
+  $( The index of the slot for the uniform set is not the index of other slots.
+     (Contributed by AV, 10-Nov-2024.) $)
+  slotsdifunifndx $p |- ( ( ( +g ` ndx ) =/= ( UnifSet ` ndx )
+                         /\ ( .r ` ndx ) =/= ( UnifSet ` ndx )
+                         /\ ( *r ` ndx ) =/= ( UnifSet ` ndx ) )
+                       /\ ( ( le ` ndx ) =/= ( UnifSet ` ndx )
+                         /\ ( dist ` ndx ) =/= ( UnifSet ` ndx ) ) ) $=
+    ( cnx cfv wne c2 c1 c3 cdc 3nn0 2nn0 declti ltneii unifndx neeq12i mpbir c4
+    1nn cc0 1nn0 3nn declt cplusg cunif cmulr cstv w3a cple cds wa 2re plusgndx
+    2lt10 3re 3lt10 mulrndx 4re 4nn0 starvndx 3pm3.2i 10re 0nn0 3pos plendx 2nn
+    4lt10 decnncl nnrei 2lt3 dsndx pm3.2i ) AUABZAUBBZCZAUCBZVKCZAUDBZVKCZUEAUF
+    BZVKCZAUGBZVKCZUHVLVNVPVLDEFGZCDWAUIEFDPHIUKJKVJDVKWAUJLMNVNFWACFWAULEFFPHH
+    UMJKVMFVKWAUNLMNVPOWACOWAUOEFOPHUPVDJKVOOVKWAUQLMNURVRVTVREQGZWACWBWAUSEQFR
+    UTSVATKVQWBVKWAVBLMNVTEDGZWACWCWAWCEDRVCVEVFEDFRISVGTKVSWCVKWAVHLMNVIVI $.
 
 
 $(
@@ -151263,6 +151478,87 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Nonzero rings and zero rings
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c NzRing $.
+
+  $( The class of nonzero rings. $)
+  cnzr $a class NzRing $.
+
+  $( A nonzero or nontrivial ring is a ring with at least two values, or
+     equivalently where 1 and 0 are different.  (Contributed by Stefan O'Rear,
+     24-Feb-2015.) $)
+  df-nzr $a |- NzRing = { r e. Ring | ( 1r ` r ) =/= ( 0g ` r ) } $.
+
+  ${
+    $d .1. r $.  $d R r $.  $d .0. r $.
+    isnzr.o $e |- .1. = ( 1r ` R ) $.
+    isnzr.z $e |- .0. = ( 0g ` R ) $.
+    $( Property of a nonzero ring.  (Contributed by Stefan O'Rear,
+       24-Feb-2015.) $)
+    isnzr $p |- ( R e. NzRing <-> ( R e. Ring /\ .1. =/= .0. ) ) $=
+      ( vr cv cur cfv c0g wne crg cnzr wceq fveq2 eqtr4di neeq12d df-nzr elrab2
+      ) FGZHIZTJIZKBCKFALMTANZUABUBCUCUAAHIBTAHODPUCUBAJICTAJOEPQFRS $.
+
+    $( One and zero are different in a nonzero ring.  (Contributed by Stefan
+       O'Rear, 24-Feb-2015.) $)
+    nzrnz $p |- ( R e. NzRing -> .1. =/= .0. ) $=
+      ( cnzr wcel crg wne isnzr simprbi ) AFGAHGBCIABCDEJK $.
+  $}
+
+  ${
+    $d R r $.
+    $( A nonzero ring is a ring.  (Contributed by Stefan O'Rear, 24-Feb-2015.)
+       (Proof shortened by SN, 23-Feb-2025.) $)
+    nzrring $p |- ( R e. NzRing -> R e. Ring ) $=
+      ( vr cnzr crg cv cur cfv c0g wne df-nzr ssrab3 sseli ) CDABEZFGMHGIBDCBJK
+      L $.
+  $}
+
+  ${
+    ringelnzr.z $e |- .0. = ( 0g ` R ) $.
+    ringelnzr.b $e |- B = ( Base ` R ) $.
+    $( A ring is nonzero if it has a nonzero element.  (Contributed by Stefan
+       O'Rear, 6-Feb-2015.)  (Revised by Mario Carneiro, 13-Jun-2015.) $)
+    ringelnzr $p |- ( ( R e. Ring /\ X e. ( B \ { .0. } ) ) -> R e. NzRing ) $=
+      ( crg wcel csn cdif wa cur cfv wne cnzr simpl eldifsni adantl wceq wi mpd
+      eldifi ring0cl adantr eqid ring1eq0 syl3anc necon3d isnzr sylanbrc ) BGHZ
+      CADIZJHZKZUKBLMZDNZBOHUKUMPZUNCDNZUPUMURUKCADQRUNUODCDUNUKCAHZDAHZUODSCDS
+      TUQUMUSUKCAULUBRUKUTUMABDFEUCUDABUOCDDFUOUEZEUFUGUHUABUODVAEUIUJ $.
+  $}
+
+  ${
+    nzrunit.1 $e |- U = ( Unit ` R ) $.
+    nzrunit.2 $e |- .0. = ( 0g ` R ) $.
+    $( A unit is nonzero in any nonzero ring.  (Contributed by Mario Carneiro,
+       6-Oct-2015.) $)
+    nzrunit $p |- ( ( R e. NzRing /\ A e. U ) -> A =/= .0. ) $=
+      ( cnzr wcel wne wn wceq cur cfv eqid nzrnz crg nzrring 0unit necon3bbid
+      wb syl mpbird eleq1 notbid syl5ibrcom necon2ad imp ) BGHZACHZADIUHUIADUHU
+      IJADKZDCHZJZUHULBLMZDIZBUMDUMNZFOUHBPHZULUNTBQUPUKUMDBCUMDEFUORSUAUBUJUIU
+      KADCUCUDUEUFUG $.
+  $}
+
+  ${
+    $d .0. x $.  $d .1. x $.  $d B x $.  $d R x $.
+    0ring.b $e |- B = ( Base ` R ) $.
+    0ring.0 $e |- .0. = ( 0g ` R ) $.
+    0ring01eq.1 $e |- .1. = ( 1r ` R ) $.
+    $( If the zero and the identity element of a ring are the same, the ring is
+       the zero ring.  (Contributed by AV, 16-Apr-2019.)  (Proof shortened by
+       SN, 23-Feb-2025.) $)
+    01eq0ring $p |- ( ( R e. Ring /\ .0. = .1. ) -> B = { .0. } ) $=
+      ( vx wceq crg wcel csn eqcom cv wex wral ring0cl elex2 syl wa wi ring1eq0
+      adantr mpd3an3 impancom ralrimiv eqsnm biimpar syl2an2r sylan2b ) DCIBJKZ
+      CDIZADLIZDCMUKHNZAKZHOZULUNDIZHAPZUMUKDAKZUPABDEFQZHDARSUKULTUQHAUKUOULUQ
+      UKUOUSULUQUAUKUSUOUTUCABCUNDDEGFUBUDUEUFUPUMURHADUGUHUIUJ $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Local rings
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -151276,82 +151572,85 @@ $)
     $( A local ring is a nonzero ring where for any two elements summing to
        one, at least one is invertible.  Any field is a local ring; the ring of
        integers is an example of a ring which is not a local ring.
-       (Contributed by Jim Kingdon, 18-Feb-2025.) $)
-    df-lring $a |- LRing = { r e. Ring | ( ( 1r ` r ) =/= ( 0g ` r ) /\
+       (Contributed by Jim Kingdon, 18-Feb-2025.)  (Revised by SN,
+       23-Feb-2025.) $)
+    df-lring $a |- LRing = { r e. NzRing |
       A. x e. ( Base ` r ) A. y e. ( Base ` r )
       ( ( x ( +g ` r ) y ) = ( 1r ` r ) ->
-      ( x e. ( Unit ` r ) \/ y e. ( Unit ` r ) ) ) ) } $.
+      ( x e. ( Unit ` r ) \/ y e. ( Unit ` r ) ) ) } $.
+  $}
+
+  ${
+    $d R r x y $.  $d B r x y $.  $d .+ r $.  $d .1. r $.  $d U r $.
+    islring.b $e |- B = ( Base ` R ) $.
+    islring.a $e |- .+ = ( +g ` R ) $.
+    islring.1 $e |- .1. = ( 1r ` R ) $.
+    islring.u $e |- U = ( Unit ` R ) $.
+    $( The predicate "is a local ring".  (Contributed by SN, 23-Feb-2025.) $)
+    islring $p |- ( R e. LRing <-> ( R e. NzRing /\
+      A. x e. B A. y e. B ( ( x .+ y ) = .1. -> ( x e. U \/ y e. U ) ) ) ) $=
+      ( vr cv cplusg cfv cur wcel wral fveq2 eqtr4di co wceq cui wo wi cbs cnzr
+      clring oveqd eqeq12d eleq2d orbi12d imbi12d raleqbidv df-lring elrab2 ) A
+      MZBMZLMZNOZUAZUSPOZUBZUQUSUCOZQZURVDQZUDZUEZBUSUFOZRZAVIRUQURDUAZGUBZUQFQ
+      ZURFQZUDZUEZBCRZACRLEUGUHUSEUBZVJVQAVICVRVIEUFOCUSEUFSHTZVRVHVPBVICVSVRVC
+      VLVGVOVRVAVKVBGVRUTDUQURVRUTENODUSENSITUIVRVBEPOGUSEPSJTUJVRVEVMVFVNVRVDF
+      UQVRVDEUCOFUSEUCSKTZUKVRVDFURVTUKULUMUNUNABLUOUP $.
   $}
 
   ${
     $d R r x y $.
-    $( A local ring is a ring.  (Contributed by Jim Kingdon, 20-Feb-2025.) $)
-    lringring $p |- ( R e. LRing -> R e. Ring ) $=
-      ( vx vy vr clring wcel crg cur cfv c0g wne cv cplusg co wceq cui cbs wral
-      wo fveq2 wi neeq12d oveqd eqeq12d eleq2d orbi12d imbi12d anbi12d df-lring
-      wa raleqbidv elrab2 simplbi ) AEFAGFAHIZAJIZKZBLZCLZAMIZNZUNOZUQAPIZFZURV
-      BFZSZUAZCAQIZRZBVGRZUJZDLZHIZVKJIZKZUQURVKMIZNZVLOZUQVKPIZFZURVRFZSZUAZCV
-      KQIZRZBWCRZUJVJDAGEVKAOZVNUPWEVIWFVLUNVMUOVKAHTZVKAJTUBWFWDVHBWCVGVKAQTZW
-      FWBVFCWCVGWHWFVQVAWAVEWFVPUTVLUNWFVOUSUQURVKAMTUCWGUDWFVSVCVTVDWFVRVBUQVK
-      APTZUEWFVRVBURWIUEUFUGUKUKUHBCDUIULUM $.
+    $( A local ring is a nonzero ring.  (Contributed by SN, 23-Feb-2025.) $)
+    lringnzr $p |- ( R e. LRing -> R e. NzRing ) $=
+      ( vx vy vr clring cnzr cv cplusg cfv co cur wceq cui wcel wo cbs df-lring
+      wi wral ssrab3 sseli ) EFABGZCGZDGZHIJUDKILUBUDMIZNUCUENORCUDPIZSBUFSDFEB
+      CDQTUA $.
   $}
 
+  $( A local ring is a ring.  (Contributed by Jim Kingdon, 20-Feb-2025.)
+     (Revised by SN, 23-Feb-2025.) $)
+  lringring $p |- ( R e. LRing -> R e. Ring ) $=
+    ( clring wcel cnzr crg lringnzr nzrring syl ) ABCADCAECAFAGH $.
+
   ${
-    $d R r x y $.
+    lringnz.1 $e |- .1. = ( 1r ` R ) $.
+    lringnz.2 $e |- .0. = ( 0g ` R ) $.
     $( A local ring is a nonzero ring.  (Contributed by Jim Kingdon,
-       20-Feb-2025.) $)
-    lringnz $p |- ( R e. LRing -> ( 1r ` R ) =/= ( 0g ` R ) ) $=
-      ( vx vy vr clring wcel cur cfv c0g wne cv cplusg co wceq cui wo cbs fveq2
-      wi wral wa neeq12d oveqd eqeq12d eleq2d orbi12d imbi12d raleqbidv anbi12d
-      crg df-lring elrab2 simprbi simpld ) AEFZAGHZAIHZJZBKZCKZALHZMZUPNZUSAOHZ
-      FZUTVDFZPZSZCAQHZTZBVITZUOAUJFURVKUAZDKZGHZVMIHZJZUSUTVMLHZMZVNNZUSVMOHZF
-      ZUTVTFZPZSZCVMQHZTZBWETZUAVLDAUJEVMANZVPURWGVKWHVNUPVOUQVMAGRZVMAIRUBWHWF
-      VJBWEVIVMAQRZWHWDVHCWEVIWJWHVSVCWCVGWHVRVBVNUPWHVQVAUSUTVMALRUCWIUDWHWAVE
-      WBVFWHVTVDUSVMAORZUEWHVTVDUTWKUEUFUGUHUHUIBCDUKULUMUN $.
+       20-Feb-2025.)  (Revised by SN, 23-Feb-2025.) $)
+    lringnz $p |- ( R e. LRing -> .1. =/= .0. ) $=
+      ( clring wcel cnzr wne lringnzr nzrnz syl ) AFGAHGBCIAJABCDEKL $.
   $}
 
   ${
-    $d .+ u v $.  $d ./ u v $.  $d R r u v $.  $d X u v $.  $d Y u v $.
+    $d .+ u v $.  $d R r u v $.  $d X u v $.  $d Y u v $.
     lring.b $e |- ( ph -> B = ( Base ` R ) ) $.
     lring.u $e |- ( ph -> U = ( Unit ` R ) ) $.
     lring.p $e |- ( ph -> .+ = ( +g ` R ) ) $.
-    lring.m $e |- ( ph -> .x. = ( .r ` R ) ) $.
-    lring.d $e |- ( ph -> ./ = ( /r ` R ) ) $.
     lring.l $e |- ( ph -> R e. LRing ) $.
     lring.s $e |- ( ph -> ( X .+ Y ) e. U ) $.
     lring.x $e |- ( ph -> X e. B ) $.
     lring.y $e |- ( ph -> Y e. B ) $.
     $( If the sum of two elements of a local ring is invertible, then at least
        one of the summands must be invertible.  (Contributed by Jim Kingdon,
-       18-Feb-2025.) $)
+       18-Feb-2025.)  (Revised by SN, 23-Feb-2025.) $)
     lringuplu $p |- ( ph -> ( X e. U \/ Y e. U ) ) $=
-      ( co wcel vu vv vr cui cfv cplusg cur wceq cdvr oveqd oveq12d crg cbs c0g
-      wo wne cv wi wral clring neeq12d eqeq12d eleq2d orbi12d imbi12d raleqbidv
-      fveq2 anbi12d df-lring elrab2 sylib simpld eleqtrd dvrdir syl13anc eqcomd
-      wa eqid ringgrpd grpcld dvreq1 syl3anc mpbird 3eqtr2d oveq2 eqeq1d orbi2d
-      eleq1 oveq1 orbi1d ralbidv simprrd dvrcl eqeltrd rspcdva mpd cmulr oveq1d
-      wb dvrcan1 eqtrd adantr simpr unitmulcl eqeltrrd eleqtrrd ex orim12d ) AH
-      HIDSZCSZEUDUEZTZIXICSZXKTZUOZHGTZIGTZUOAXJXMEUFUEZSZEUGUEZUHZXOAXSHXIEUIU
-      EZSZIXIYBSZXRSZHIXRSZXIYBSZXTAXJYCXMYDXRACYBHXINUJZACYBIXINUJZUKAEULTZHEU
-      MUEZTZIYKTZXIXKTZYGYEUHAYJXTEUNUEZUPZUAUQZUBUQZXRSZXTUHZYQXKTZYRXKTZUOZUR
-      ZUBYKUSZUAYKUSZVQZAEUTTYJUUGVQOUCUQZUGUEZUUHUNUEZUPZYQYRUUHUFUEZSZUUIUHZY
-      QUUHUDUEZTZYRUUOTZUOZURZUBUUHUMUEZUSZUAUUTUSZVQUUGUCEULUTUUHEUHZUUKYPUVBU
-      UFUVCUUIXTUUJYOUUHEUGVGZUUHEUNVGVAUVCUVAUUEUAUUTYKUUHEUMVGZUVCUUSUUDUBUUT
-      YKUVEUVCUUNYTUURUUCUVCUUMYSUUIXTUVCUULXRYQYRUUHEUFVGUJUVDVBUVCUUPUUAUUQUU
-      BUVCUUOXKYQUUHEUDVGZVCUVCUUOXKYRUVFVCVDVEVFVFVHUAUBUCVIVJVKZVLZAHBYKQJVMZ
-      AIBYKRJVMZAXIGXKPKVMZYKYBXREXKHIXIYKVRZXKVRZXRVRZYBVRZVNVOAYGXTUHZYFXIUHZ
-      AXRDHIADXRLVPUJAYJYFYKTYNUVPUVQWSUVHAYKXREHIUVLUVNAEUVHVSUVIUVJVTUVKYKYBE
-      XKXTYFXIUVLUVMUVOXTVRWAWBWCWDAXJYRXRSZXTUHZXLUUBUOZURZYAXOURUBYKXMYRXMUHZ
-      UVSYAUVTXOUWBUVRXSXTYRXMXJXRWEWFUWBUUBXNXLYRXMXKWHWGVEAUUEUWAUBYKUSUAYKXJ
-      YQXJUHZUUDUWAUBYKUWCYTUVSUUCUVTUWCYSUVRXTYQXJYRXRWIWFUWCUUAXLUUBYQXJXKWHW
-      JVEWKAYJYPUUFUVGWLAXJYCYKYHAYJYLYNYCYKTUVHUVIUVKYKYBEXKHXIUVLUVMUVOWMWBWN
-      WOAXMYDYKYIAYJYMYNYDYKTUVHUVJUVKYKYBEXKIXIUVLUVMUVOWMWBWNWOWPAXLXPXNXQAXL
-      XPAXLVQZHXKGUWDXJXIEWQUEZSZHXKAUWFHUHXLAUWFYCXIUWESZHAXJYCXIUWEYHWRAYJYLY
-      NUWGHUHUVHUVIUVKYKYBEUWEXKHXIUVLUVMUVOUWEVRZWTWBXAXBUWDYJXLYNUWFXKTAYJXLU
-      VHXBAXLXCAYNXLUVKXBEUWEXKXJXIUVMUWHXDWBXEAGXKUHZXLKXBXFXGAXNXQAXNVQZIXKGU
-      WJXMXIUWESZIXKAUWKIUHXNAUWKYDXIUWESZIAXMYDXIUWEYIWRAYJYMYNUWLIUHUVHUVJUVK
-      YKYBEUWEXKIXIUVLUVMUVOUWHWTWBXAXBUWJYJXNYNUWKXKTAYJXNUVHXBAXNXCAYNXNUVKXB
-      EUWEXKXMXIUVMUWHXDWBXEAUWIXNKXBXFXGXHWP $.
+      ( vv co wcel wceq syl3anc adantr vu cfv cui wo wa cmulr crg cbs lringring
+      cdvr syl eleqtrd eqid dvrcan1 simpr unitmulcl eqeltrrd eleqtrrd orcd olcd
+      clring cplusg cur dvrdir syl13anc eqcomd wb ringgrpd grpcld dvreq1 mpbird
+      oveqd eqtr3d cv wi oveq2 eqeq1d eleq1 orbi2d imbi12d oveq1 orbi1d ralbidv
+      wral cnzr islring sylib simprd dvrcl rspcdva mpd mpjaodan ) AFFGCPZDUJUBZ
+      PZDUCUBZQZFEQZGEQZUDGWMWNPZWPQZAWQUEZWRWSXBFWPEXBWOWMDUFUBZPZFWPAXDFRZWQA
+      DUGQZFDUHUBZQZWMWPQZXEADVAQZXFKDUIUKZAFBXGMHULZAWMEWPLIULZXGWNDXCWPFWMXGU
+      MZWPUMZWNUMZXCUMZUNSTXBXFWQXIXDWPQAXFWQXKTAWQUOAXIWQXMTDXCWPWOWMXOXQUPSUQ
+      AEWPRZWQITURUSAXAUEZWSWRXSGWPEXSWTWMXCPZGWPAXTGRZXAAXFGXGQZXIYAXKAGBXGNHU
+      LZXMXGWNDXCWPGWMXNXOXPXQUNSTXSXFXAXIXTWPQAXFXAXKTAXAUOAXIXAXMTDXCWPWTWMXO
+      XQUPSUQAXRXAITURUTAWOWTDVBUBZPZDVCUBZRZWQXAUDZAFGYDPZWMWNPZYEYFAXFXHYBXIY
+      JYERXKXLYCXMXGWNYDDWPFGWMXNXOYDUMZXPVDVEAYJYFRZYIWMRZAYDCFGACYDJVFVLAXFYI
+      XGQXIYLYMVGXKAXGYDDFGXNYKADXKVHXLYCVIXMXGWNDWPYFYIWMXNXOXPYFUMZVJSVKVMAWO
+      OVNZYDPZYFRZWQYOWPQZUDZVOZYGYHVOOXGWTYOWTRZYQYGYSYHUUAYPYEYFYOWTWOYDVPVQU
+      UAYRXAWQYOWTWPVRVSVTAUAVNZYOYDPZYFRZUUBWPQZYRUDZVOZOXGWDZYTOXGWDUAXGWOUUB
+      WORZUUGYTOXGUUIUUDYQUUFYSUUIUUCYPYFUUBWOYOYDWAVQUUIUUEWQYRUUBWOWPVRWBVTWC
+      ADWEQZUUHUAXGWDZAXJUUJUUKUEKUAOXGYDDWPYFXNYKYNXOWFWGWHAXFXHXIWOXGQXKXLXMX
+      GWNDWPFWMXNXOXPWISWJAXFYBXIWTXGQXKYCXMXGWNDWPGWMXNXOXPWISWJWKWL $.
   $}
 
 
@@ -151368,9 +151667,9 @@ $)
 
   ${
     $d w x y $.
-    $( An apartness relation for a ring, defined in terms of which elements
-       have multiplicative inverses.  (Contributed by Jim Kingdon,
-       13-Feb-2025.) $)
+    $( The relation between elements whose difference is invertible, which for
+       a local ring is an apartness relation by ~ aprap .  (Contributed by Jim
+       Kingdon, 13-Feb-2025.) $)
     df-apr $a |- #r = ( w e. _V |-> { <. x , y >. |
       ( ( x e. ( Base ` w ) /\ y e. ( Base ` w ) )
       /\ ( x ( -g ` w ) y ) e. ( Unit ` w ) ) } ) $.
@@ -151442,17 +151741,16 @@ $)
     $( The apartness relation given by ~ df-apr for a local ring is
        cotransitive.  (Contributed by Jim Kingdon, 17-Feb-2025.) $)
     aprcotr $p |- ( ph -> ( X .# Y -> ( X .# Z \/ Y .# Z ) ) ) $=
-      ( wbr cfv co wcel adantr eqidd eleqtrd wo wa csg cui cdvr cplusg cbs wceq
-      cmulr clring cgrp crg lringring syl ringgrpd eqid grpnpncan aprval biimpa
-      syl13anc eqeltrd grpsubcl syl3anc eleqtrrd biimprd aprsym sylbird orim12d
-      lringuplu wi mpd ex ) AEFCNZEGCNZFGCNZUAZAVMUBZEGDUCOZPZDUDOZQZGFVRPZVTQZ
-      UAVPVQBDUEOZDUFOZDDUIOZVTVSWBABDUGOZUHVMHRVQVTSVQWESVQWFSVQWDSADUJQZVMJRV
-      QVSWBWEPZEFVRPZVTAWIWJUHZVMADUKQZEWGQZGWGQZFWGQZWKADAWHDULQJDUMUNZUOZAEBW
-      GKHTZAGBWGMHTZAFBWGLHTZWGWEDVREGFWGUPZWEUPVRUPZUQUTRAVMWJVTQABCDVTVREFHIA
-      VRSZAVTSZWPKLURUSVAAVSBQVMAVSWGBAWLWMWNVSWGQWQWRWSWGDVREGXAXBVBVCHVDRAWBB
-      QVMAWBWGBAWLWNWOWBWGQWQWSWTWGDVRGFXAXBVBVCHVDRVIVQWAVNWCVOAWAVNVJVMAVNWAA
-      BCDVTVREGHIXCXDWPKMURVERAWCVOVJVMAWCGFCNVOABCDVTVRGFHIXCXDWPMLURABCDGFHIW
-      PMLVFVGRVHVKVL $.
+      ( wbr cfv co wcel adantr eqidd eleqtrd wo wa csg cui cplusg cbs wceq cgrp
+      clring crg lringring syl ringgrpd eqid grpnpncan syl13anc aprval grpsubcl
+      biimpa eqeltrd syl3anc lringuplu wi biimprd aprsym sylbird orim12d mpd ex
+      eleqtrrd ) AEFCNZEGCNZFGCNZUAZAVKUBZEGDUCOZPZDUDOZQZGFVPPZVRQZUAVNVOBDUEO
+      ZDVRVQVTABDUFOZUGVKHRVOVRSVOWBSADUIQZVKJRVOVQVTWBPZEFVPPZVRAWEWFUGZVKADUH
+      QZEWCQZGWCQZFWCQZWGADAWDDUJQJDUKULZUMZAEBWCKHTZAGBWCMHTZAFBWCLHTZWCWBDVPE
+      GFWCUNZWBUNVPUNZUOUPRAVKWFVRQABCDVRVPEFHIAVPSZAVRSZWLKLUQUSUTAVQBQVKAVQWC
+      BAWHWIWJVQWCQWMWNWOWCDVPEGWQWRURVAHVJRAVTBQVKAVTWCBAWHWJWKVTWCQWMWOWPWCDV
+      PGFWQWRURVAHVJRVBVOVSVLWAVMAVSVLVCVKAVLVSABCDVRVPEGHIWSWTWLKMUQVDRAWAVMVC
+      VKAWAGFCNVMABCDVRVPGFHIWSWTWLMLUQABCDGFHIWLMLVEVFRVGVHVI $.
   $}
 
   ${
@@ -151463,18 +151761,18 @@ $)
       ( vx vy vz vr clring wcel capr cfv cbs cv wbr wral wa csg cui fveq2 eqidd
       cvv adantr cxp wss wn wi wo wap co copab df-apr wceq eleq2d anbi12d oveqd
       eleq12d opabbidv elex wfn basfn a1i funfvex funfni syl2anc xpexg opabssxp
-      ssexd fvmptd3 eqsstrdi crg lringring cur c0g wne lringnz aprirr ralrimiva
-      simpr simprl simprr aprsym ralrimivva w3a simpl simpr1 simpr2 ralrimivvva
-      simpr3 aprcotr jca df-pap syl21anbrc ) AFGZAHIZAJIZWMUAZUBBKZWOWLLUCZBWMM
-      WOCKZWLLZWQWOWLLUDZCWMMBWMMZWRWODKZWLLWQXAWLLUEUDZDWMMCWMMBWMMZNWMWLUFWKW
-      LWOWMGZWQWMGZNZWOWQAOIZUGZAPIZGZNZBCUHZWNWKEAWOEKZJIZGZWQXNGZNZWOWQXMOIZU
-      GZXMPIZGZNZBCUHXLSHSBCEUIXMAUJZYBXKBCYCXQXFYAXJYCXOXDXPXEYCXNWMWOXMAJQZUK
-      YCXNWMWQYDUKULYCXSXHXTXIYCXRXGWOWQXMAOQUMXMAPQUNULUOAFUPZWKXLWNSWKWMSGZYF
-      WNSGWKJSUQZASGYFYGWKURUSYEYFSAJAJUTVAVBZYHWMWMSSVCVBXLWNUBWKXJBCWMWMVDZUS
-      VEVFYIVGWKWPBWMWKXDNZWMWLAWOYJWMRYJWLRWKAVHGZXDAVIZTWKXDVPWKAVJIAVKIVLXDA
-      VMTVNVOWKWTXCWKWSBCWMWMWKXFNZWMWLAWOWQYMWMRYMWLRWKYKXFYLTWKXDXEVQWKXDXEVR
-      VSVTWKXBBCDWMWMWMWKXDXEXAWMGZWAZNZWMWLAWOWQXAYPWMRYPWLRWKYOWBWKXDXEYNWCWK
-      XDXEYNWDWKXDXEYNWFWGWEWHBCDWMWLWIWJ $.
+      ssexd fvmptd3 eqsstrdi crg lringring simpr cur c0g eqid lringnz ralrimiva
+      wne aprirr simprl simprr aprsym ralrimivva w3a simpl simpr1 simpr2 simpr3
+      aprcotr ralrimivvva jca df-pap syl21anbrc ) AFGZAHIZAJIZWNUAZUBBKZWPWMLUC
+      ZBWNMWPCKZWMLZWRWPWMLUDZCWNMBWNMZWSWPDKZWMLWRXBWMLUEUDZDWNMCWNMBWNMZNWNWM
+      UFWLWMWPWNGZWRWNGZNZWPWRAOIZUGZAPIZGZNZBCUHZWOWLEAWPEKZJIZGZWRXOGZNZWPWRX
+      NOIZUGZXNPIZGZNZBCUHXMSHSBCEUIXNAUJZYCXLBCYDXRXGYBXKYDXPXEXQXFYDXOWNWPXNA
+      JQZUKYDXOWNWRYEUKULYDXTXIYAXJYDXSXHWPWRXNAOQUMXNAPQUNULUOAFUPZWLXMWOSWLWN
+      SGZYGWOSGWLJSUQZASGYGYHWLURUSYFYGSAJAJUTVAVBZYIWNWNSSVCVBXMWOUBWLXKBCWNWN
+      VDZUSVEVFYJVGWLWQBWNWLXENZWNWMAWPYKWNRYKWMRWLAVHGZXEAVIZTWLXEVJWLAVKIZAVL
+      IZVPXEAYNYOYNVMYOVMVNTVQVOWLXAXDWLWTBCWNWNWLXGNZWNWMAWPWRYPWNRYPWMRWLYLXG
+      YMTWLXEXFVRWLXEXFVSVTWAWLXCBCDWNWNWNWLXEXFXBWNGZWBZNZWNWMAWPWRXBYSWNRYSWM
+      RWLYRWCWLXEXFYQWDWLXEXFYQWEWLXEXFYQWFWGWHWIBCDWNWMWJWK $.
   $}
 
 
@@ -151582,6 +151880,81 @@ $)
     df-metu $a |- metUnif = ( d e. U. ran PsMet |-> ( ( dom dom d X. dom dom d
       ) filGen ran ( a e. RR+ |-> ( `' d " ( 0 [,) a ) ) ) ) ) $.
   $}
+
+  $c CCfld $.
+
+  $( Extend class notation with the field of complex numbers. $)
+  ccnfld $a class CCfld $.
+
+  $( The field of complex numbers.  Other number fields and rings can be
+     constructed by applying the ` |``s ` restriction operator.
+
+     The contract of this set is defined entirely by ~ cnfldex , ~ cnfldadd ,
+     ~ cnfldmul , ~ cnfldcj , and ~ cnfldbas .
+
+     We may add additional members to this in the future.
+
+     At least for now, this structure does not include a topology, order, a
+     distance function, or function mapping metrics.
+
+     (Contributed by Stefan O'Rear, 27-Nov-2014.)  (Revised by Thierry Arnoux,
+     15-Dec-2017.)  (New usage is discouraged.) $)
+  df-icnfld $a |- CCfld = ( { <. ( Base ` ndx ) , CC >. ,
+      <. ( +g ` ndx ) , + >. , <. ( .r ` ndx ) , x. >. } u.
+      { <. ( *r ` ndx ) , * >. } ) $.
+
+  $( The field of complex numbers is a structure.  (Contributed by Mario
+     Carneiro, 14-Aug-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.) $)
+  cnfldstr $p |- CCfld Struct <. 1 , ; 1 3 >. $=
+    ( ccnfld c1 c3 cdc cop cstr wbr wtru c4 cc cmul ccj cvv df-icnfld wcel cnex
+    caddc a1i addex cz mulex wf cjf fex mp2an srngstrd cuz cfv cle 1nn0 decnncl
+    4z 3nn nnzi 1nn 3nn0 4nn0 4re 9re ltleii declei eluz2 mpbir3an strext mptru
+    c9 4lt9 ) ABBCDZEFGHBIVHAHJQAKLMMMMNJMOZHPRQMOHSRKMOHUARLMOZHJJLUBVIVJUCPJJ
+    MLUDUERUFVHIUGUHOZHVKITOVHTOIVHUIGULVHBCUJUMUKUNBCIUOUPUQIVFURUSVGUTVAIVHVB
+    VCRVDVE $.
+
+  $( The field of complex numbers is a set.  (Contributed by Stefan O'Rear,
+     27-Nov-2014.)  (Revised by Mario Carneiro, 14-Aug-2015.)  (Revised by
+     Thierry Arnoux, 17-Dec-2017.) $)
+  cnfldex $p |- CCfld e. _V $=
+    ( ccnfld c1 c3 cdc cop cstr wbr cvv wcel cnfldstr structex ax-mp ) ABBCDEZF
+    GAHIJAMKL $.
+
+  $( The base set of the field of complex numbers.  (Contributed by Stefan
+     O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro, 6-Oct-2015.)  (Revised
+     by Thierry Arnoux, 17-Dec-2017.) $)
+  cnfldbas $p |- CC = ( Base ` CCfld ) $=
+    ( cc cvv wcel ccnfld cbs cfv wceq cnex c1 cdc cop cnfldstr baseslid cnx csn
+    c3 cplusg caddc cmulr cmul ctp snsstp1 cstv ccj cun ssun1 df-icnfld strslfv
+    sseqtrri sstri ax-mp ) ABCADEFGHADEBIIPJKLMNEFAKZOULNQFRKZNSFTKZUAZDULUMUNU
+    BUOUONUCFUDKOZUEDUOUPUFUGUIUJUHUK $.
+
+  $( The addition operation of the field of complex numbers.  (Contributed by
+     Stefan O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro, 6-Oct-2015.)
+     (Revised by Thierry Arnoux, 17-Dec-2017.) $)
+  cnfldadd $p |- + = ( +g ` CCfld ) $=
+    ( caddc cvv wcel ccnfld cplusg cfv wceq addex c1 cdc cop cnfldstr plusgslid
+    c3 cnx csn cbs cc cmulr cmul ctp snsstp2 cstv ccj cun ssun1 df-icnfld sstri
+    sseqtrri strslfv ax-mp ) ABCADEFGHADEBIINJKLMOEFAKZPOQFRKZULOSFTKZUAZDUMULU
+    NUBUOUOOUCFUDKPZUEDUOUPUFUGUIUHUJUK $.
+
+  $( The multiplication operation of the field of complex numbers.
+     (Contributed by Stefan O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro,
+     6-Oct-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.) $)
+  cnfldmul $p |- x. = ( .r ` CCfld ) $=
+    ( cmul cvv wcel ccnfld cmulr cfv wceq mulex c1 c3 cdc cop cnfldstr mulrslid
+    cnx csn cbs cc cplusg caddc ctp snsstp3 cstv ssun1 df-icnfld sseqtrri sstri
+    ccj cun strslfv ax-mp ) ABCADEFGHADEBIIJKLMNOEFALZPOQFRLZOSFTLZULUAZDUMUNUL
+    UBUOUOOUCFUHLPZUIDUOUPUDUEUFUGUJUK $.
+
+  $( The conjugation operation of the field of complex numbers.  (Contributed
+     by Mario Carneiro, 6-Oct-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.)
+     (Revised by Thierry Arnoux, 17-Dec-2017.) $)
+  cnfldcj $p |- * = ( *r ` CCfld ) $=
+    ( ccj cvv wcel ccnfld cstv cfv wceq cc wf cjf cnex fex mp2an c1 c3 cnfldstr
+    cdc cop starvslid cnx csn cbs cplusg caddc cmulr ctp cun df-icnfld sseqtrri
+    cmul ssun2 strslfv ax-mp ) ABCZADEFGHHAIHBCUNJKHHBALMADEBNNOQRPSTEFARUAZTUB
+    FHRTUCFUDRTUEFUJRUFZUOUGDUOUPUKUHUIULUM $.
 
 
 $(
@@ -168772,6 +169145,9 @@ htmldef "RingHom" as " RingHom ";
 htmldef "RingIso" as " RingIso ";
   althtmldef "RingIso" as " RingIso ";
   latexdef "RingIso" as " \mathrm{RingIso} ";
+htmldef "NzRing" as "NzRing";
+  althtmldef "NzRing" as "NzRing";
+  latexdef "NzRing" as "\mathrm{NzRing}";
 htmldef "#r" as "#<sub>r</sub>";
   althtmldef "#r" as "#<sub>r</sub>";
   latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";
@@ -168808,6 +169184,11 @@ htmldef "MetOpen" as
   "<IMG SRC='_metopen.gif' WIDTH=59 HEIGHT=19 ALT=' MetOpen' TITLE='MetOpen'>";
   althtmldef "MetOpen" as "MetOpen";
   latexdef "MetOpen" as "\mathrm{MetOpen}";
+htmldef "CCfld" as "&#8450;<SUB>fld</SUB>";
+    /* 2-Jan-2016 reverted sans-serif */
+  althtmldef "CCfld" as "&#8450;<SUB>fld</SUB>";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "CCfld" as "\mathrm{CCfld}";
 htmldef "fBas" as
     "<IMG SRC='_fbas.gif' WIDTH=29 HEIGHT=19 ALT=' fBas' TITLE='fBas'>";
   althtmldef "fBas" as "fBas";
@@ -173938,6 +174319,44 @@ $)
       EFWLXFXLVAWSVBWIWRVCWHXOXEWEHZXEWEIJZKABXERLLWDXESWFXPWGXQWDXEWEVDWDXEWEI
       VEVFWERSXPXMXQXNWERXEVGWERXEIVHVFVIVJVKVLVMNVNOWJWQVOVPCNDVNVQVRVSNPVTJWJ
       WKVOWANPWBVRWC $.
+  $}
+
+  ${
+    $d x y z $.
+    $( The analytic Markov principle can be expressed either with two arbitrary
+       real numbers, or one arbitrary number and zero.  (Contributed by Jim
+       Kingdon, 23-Feb-2025.) $)
+    neap0mkv $p |- ( A. x e. RR A. y e. RR ( x =/= y -> x =//= y )
+        <-> A. x e. RR ( x =/= 0 -> x =//= 0 ) ) $=
+      ( vz cv wne cap wbr wi cr wral cc0 wcel wceq imbi12d neeq1 breq1 wa recnd
+      0re cc neeq2 breq2 rspcv ax-mp ralimi cbvralv cmin co simpl simprl simprr
+      resubcld rspcdva necon3bid subap0 syl2anc 3imtr3d ralrimivva sylbi impbii
+      subeq0ad wb ) ADZBDZEZVCVDFGZHZBIJZAIJZVCKEZVCKFGZHZAIJZVHVLAIKILVHVLHSVG
+      VLBKIVDKMVEVJVFVKVDKVCUAVDKVCFUBNUCUDUEVMCDZKEZVNKFGZHZCIJZVIVLVQACIVCVNM
+      VJVOVKVPVCVNKOVCVNKFPNUFVRVGABIIVRVCILZVDILZQZQZVCVDUGUHZKEZWCKFGZVEVFWBV
+      QWDWEHCIWCVNWCMVOWDVPWEVNWCKOVNWCKFPNVRWAUIWBVCVDVRVSVTUJZVRVSVTUKZULUMWB
+      WCKVCVDWBVCVDWBVCWFRZWBVDWGRZVAUNWBVCTLVDTLWEVFVBWHWIVCVDUOUPUQURUSUT $.
+  $}
+
+  ${
+    $d x y z $.
+    $( If ` < ` can be expressed as holding exactly when ` <_ ` holds and the
+       values are not equal, then the analytic Markov's Principle applies.  (To
+       get the regular Markov's Principle, combine with ~ neapmkv ).
+       (Contributed by Jim Kingdon, 23-Feb-2025.) $)
+    ltlenmkv $p |- ( A. x e. RR A. y e. RR
+        ( x < y <-> ( x <_ y /\ y =/= x ) ) ->
+        A. x e. RR A. y e. RR ( x =/= y -> x =//= y ) ) $=
+      ( vz cv clt wbr cle wne wa wb cr wral cc0 cap wcel wceq breq2 neeq1 breq1
+      wi cabs simplr recnd abscld absge0d simpr absne0d anbi12d bibi12d ralbidv
+      cfv neeq2 simpll rspcdva mpbir2and gt0ap0d cc abs00ap syl mpbid ralrimiva
+      0red ex imbi12d cbvralv sylib neap0mkv sylibr ) ADZBDZEFZVIVJGFZVJVIHZIZJ
+      ZBKLZAKLZVIMHZVIMNFZTZAKLZVIVJHVIVJNFTBKLAKLVQCDZMHZWBMNFZTZCKLWAVQWECKVQ
+      WBKOZIZWCWDWGWCIZWBUAUKZMNFZWDWHWIWHWBWHWBVQWFWCUBUCZUDZWHMWIEFZMWIGFZWIM
+      HZWHWBWKUEWHWBWKWGWCUFUGWHMVJEFZMVJGFZVJMHZIZJZWMWNWOIZJBKWIVJWIPZWPWMWSX
+      AVJWIMEQXBWQWNWRWOVJWIMGQVJWIMRUHUIWHVPWTBKLAKMVIMPZVOWTBKXCVKWPVNWSVIMVJ
+      ESXCVLWQVMWRVIMVJGSVIMVJULUHUIUJVQWFWCUMWHVBUNWLUNUOUPWHWBUQOWJWDJWKWBURU
+      SUTVCVAWEVTCAKWBVIPWCVRWDVSWBVIMRWBVIMNSVDVEVFABVGVH $.
   $}
 
 

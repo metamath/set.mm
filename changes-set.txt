@@ -85,20 +85,82 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+27-Feb-25 elnelall  pm2.24nel
+25-Feb-25 eqimssd   [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 eqimss2d  eqimsscd    Moved from SN's mathbox to main set.mm
+25-Feb-25 hashfundm [same]      Moved from BT's mathbox to main set.mm
+25-Feb-25 hashf1dmrn [same]     Moved from BT's mathbox to main set.mm
+25-Feb-25 ressbasssg [same]     Moved from SN's mathbox to main set.mm
+25-Feb-25 ressbasss2 [same]     Moved from SN's mathbox to main set.mm
+25-Feb-25 resrhm2b  [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgrcl   [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgdrng  [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgsubrg [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgbas   [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgunit  [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 imadrhmcl [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 lmhmlvec  [same]      Moved from SN's mathbox to main set.mm
+24-Feb-25 naddid1   naddrid
+24-Feb-25 naddid2   naddlid
+24-Feb-25 mulid1    mulrid
+24-Feb-25 mulid2    mullid
+24-Feb-25 mulid1i   mulridi
+24-Feb-25 mulid2i   mullidi
+24-Feb-25 mulid1d   mulridd
+24-Feb-25 mulid2d   mullidd
+24-Feb-25 addid1    addrid
+24-Feb-25 addid2    addlid
+24-Feb-25 addid1i   addridi
+24-Feb-25 addid2i   addlidi
+24-Feb-25 addid1d   addridd
+24-Feb-25 addid2d   addlidd
+24-Feb-25 xaddid1   xaddrid
+24-Feb-25 xaddid2   xaddlid
+24-Feb-25 xaddid1d  xaddridd
+24-Feb-25 xmulid1   xmulrid
+24-Feb-25 xmulid2   xmullid
+24-Feb-25 mulrid    mulridx
+24-Feb-25 dchrmulid2 dchrmullid
+24-Feb-25 hvaddid2  hvaddlid
+24-Feb-25 hvaddid2i hvaddlidi
+24-Feb-25 hoaddid1i hoaddridi
+24-Feb-25 hoaddid1  hoaddrid
+24-Feb-25 homulid2  homullid
+24-Feb-25 readdid1addid2d readdridaddlidd
+24-Feb-25 reneg0addid2 reneg0addlid
+24-Feb-25 resubidaddid1lem resubidaddlidlem
+24-Feb-25 resubidaddid1 resubidaddlid
+24-Feb-25 readdid2  readdlid
+24-Feb-25 sn-addid2 sn-addlid
+24-Feb-25 readdid1  readdrid
+24-Feb-25 sn-addid1 sn-addrid
+24-Feb-25 remulid2  remullid
+24-Feb-25 sn-mulid2 sn-mullid
+24-Feb-25 xaddid2d  xaddlidd
+24-Feb-25 abbi1     abbi        reverse direction of abbib
+23-Feb-25 abbi      abbib       flip sides of bi-conditional
 23-Feb-25 addsid1   addsrid
 23-Feb-25 addsid2   addslid
+23-Feb-25 bj-rabbida2 rabbida4  moved from BJ's mathbox to main set.mm
+23-Feb-25 bj-rabeqd rabeqd      moved from BJ's mathbox to main set.mm
+23-Feb-25 bj-rabeqbida rabeqbida moved from BJ's mathbox to main set.mm
 22-Feb-25 rdivmuldivd [same]    Moved from TA's mathbox to main set.mm
 22-Feb-25 dvrdir    [same]      Moved from TA's mathbox to main set.mm
+20-Feb-25 lmodgrpd  ---         Moved from SN's mathbox to main set.mm
+20-Feb-25 lveclmodd ---         Moved from SN's mathbox to main set.mm
+20-Feb-25 isfsuppd  ---         Moved from SN's mathbox to main set.mm
+20-Feb-25 mnfled    ---         Moved from GS's mathbox to main set.mm
+20-Feb-25 fidmfisupp ---        Moved from GS's mathbox to main set.mm
 19-Feb-25 isdrngrd  [same]      removed extra hypothesis
 19-Feb-25 isdrngd   [same]      removed extra hypothesis
 15-Feb-25 abeq2f    eqabf
 15-Feb-25 rabeq2i   reqabi
-15-Feb-25 abeq1i    eqabci
-15-Feb-25 abeq2i    eqabi
-15-Feb-25 abeq2d    eqabd
-15-Feb-25 abeq2w    eqabw
-15-Feb-25 abeq1     eqabc       Commuted form of eqab
-15-Feb-25 abeq2     eqab        Basic closed form
+15-Feb-25 abeq1i    eqabrci
+15-Feb-25 abeq2i    eqabri
+15-Feb-25 abeq2d    eqabrd
+15-Feb-25 abeq2w    eqabbw
+15-Feb-25 abeq1     eqabbc      Commuted form of eqabb
+15-Feb-25 abeq2     eqabb       Basic closed form
 14-Feb-25 ---       ---         Moved surreal negation theorems
                                 from SF's mathbox to main set.mm
 14-Feb-25 grpinvcld ---         Moved from SN's mathbox to main set.mm
