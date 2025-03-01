@@ -148298,6 +148298,23 @@ $)
         ( ( ( invg ` r ) ` x ) ( +g ` r ) y ) e. i ) } ) $.
   $}
 
+  ${
+    $d s w B $.  $d s w G $.  $d s S $.
+    issubg.b $e |- B = ( Base ` G ) $.
+    $( The subgroup predicate.  (Contributed by Mario Carneiro, 2-Dec-2014.) $)
+    issubg $p |- ( S e. ( SubGrp ` G ) <->
+      ( G e. Grp /\ S C_ B /\ ( G |`s S ) e. Grp ) ) $=
+      ( vw vs csubg cfv wcel cgrp cress co cv cbs cpw crab wa cvv wceq eleq1d
+      wss w3a df-subg mptrcl simp1 fveq2 eqtr4di pweqd oveq1 rabeqbidv id basfn
+      wfn funfvex funfni sylancr eqeltrid pwexd rabexg syl fvmptd3 eleq2d oveq2
+      elex elrab wb elpw2g anbi1d bitrid ibar 3bitrd 3anass bitr4di pm5.21nii )
+      BCGHZIZCJIZVQBAUAZCBKLZJIZUBZEJEMZFMZKLZJIZFWBNHZOZPZGBCEFUCZUDVQVRVTUEVQ
+      VPVQVRVTQZQZWAVQVPBCWCKLZJIZFAOZPZIZWJWKVQVOWOBVQECWHWOJGRWIWBCSZWEWMFWGW
+      NWQWFAWQWFCNHZAWBCNUFDUGUHWQWDWLJWBCWCKUITUJVQUKVQWNRIWORIVQARVQAWRRDVQNR
+      UMCRIWRRIZULCJVDWSRCNCNUNUOUPUQZURWMFWNRUSUTVAVBWPBWNIZVTQVQWJWMVTFBWNWCB
+      SWLVSJWCBCKVCTVEVQXAVRVTVQARIXAVRVFWTBARVGUTVHVIVQWJVJVKVQVRVTVLVMVN $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
