@@ -148335,6 +148335,12 @@ $)
     subgss $p |- ( S e. ( SubGrp ` G ) -> S C_ B ) $=
       ( csubg cfv wcel cgrp wss cress co issubg simp2bi ) BCEFGCHGBAICBJKHGABCD
       LM $.
+
+    $( A group is a subgroup of itself.  (Contributed by Mario Carneiro,
+       7-Dec-2014.) $)
+    subgid $p |- ( G e. Grp -> B e. ( SubGrp ` G ) ) $=
+      ( cgrp wcel wss cress co csubg cfv id ssidd grpressid issubg syl3anbrc )
+      BDEZPAAFBAGHDEABIJEPKPALABCMAABCNO $.
   $}
 
 
