@@ -148397,6 +148397,16 @@ $)
       WGRVCVGVKAWMVNWPUSVDWMVPBDFVNVRWOVPSWKHVEVHVI $.
   $}
 
+  ${
+    subg0cl.i $e |- .0. = ( 0g ` G ) $.
+    $( The group identity is an element of any subgroup.  (Contributed by Mario
+       Carneiro, 2-Dec-2014.) $)
+    subg0cl $p |- ( S e. ( SubGrp ` G ) -> .0. e. S ) $=
+      ( csubg cfv wcel cress co c0g cbs cgrp eqid subggrp grpidcl subg0 subgbas
+      syl 3eltr4d ) ABEFGZBAHIZJFZUAKFZCATUALGUBUCGABUAUAMZNUCUAUBUCMUBMORABUAC
+      UDDPABUAUDQS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
