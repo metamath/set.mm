@@ -148407,6 +148407,17 @@ $)
       UDDPABUAUDQS $.
   $}
 
+  ${
+    subginvcl.i $e |- I = ( invg ` G ) $.
+    $( The inverse of an element is closed in a subgroup.  (Contributed by
+       Mario Carneiro, 2-Dec-2014.) $)
+    subginvcl $p |- ( ( S e. ( SubGrp ` G ) /\ X e. S ) -> ( I ` X ) e. S ) $=
+      ( csubg cfv wcel wa cress co cminusg cgrp eqid subggrp simpr wceq subgbas
+      cbs adantr eleqtrd grpinvcl syl2an2r subginv 3eltr4d ) ABFGHZDAHZIZDBAJKZ
+      LGZGZUISGZDCGAUFUIMHUGDULHUKULHABUIUINZOUHDAULUFUGPUFAULQUGABUIUMRTZUAULU
+      IUJDULNUJNZUBUCABUICUJDUMEUOUDUNUE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
