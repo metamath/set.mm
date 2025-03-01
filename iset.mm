@@ -148431,6 +148431,19 @@ $)
       NAURQUOUMBACUQULNUMUQUEACLHQUMFUFUMUGBCUHUIPUKVAUJ $.
   $}
 
+  ${
+    subgsubcl.p $e |- .- = ( -g ` G ) $.
+    $( A subgroup is closed under group subtraction.  (Contributed by Mario
+       Carneiro, 18-Jan-2015.) $)
+    subgsubcl $p |- ( ( S e. ( SubGrp ` G ) /\ X e. S /\ Y e. S ) ->
+      ( X .- Y ) e. S ) $=
+      ( cfv wcel w3a co cminusg cplusg cbs wceq wss eqid subgss 3ad2ant1 sseldd
+      csubg simp2 grpsubval syl2anc subginvcl 3adant2 subgcl syld3an3 eqeltrd
+      simp3 ) ABTGHZDAHZEAHZIZDECJZDEBKGZGZBLGZJZAUMDBMGZHEUSHUNURNUMAUSDUJUKAU
+      SOULUSABUSPZQRZUJUKULUASUMAUSEVAUJUKULUISUSUQBUOCDEUTUQPZUOPZFUBUCUJUKULU
+      PAHZURAHUJULVDUKABUOEVCUDUEUQABDUPVBUFUGUH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
