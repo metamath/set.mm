@@ -148343,6 +148343,14 @@ $)
       BDEZPAAFBAGHDEABIJEPKPALABCMAABCNO $.
   $}
 
+  ${
+    subggrp.h $e |- H = ( G |`s S ) $.
+    $( A subgroup is a group.  (Contributed by Mario Carneiro, 2-Dec-2014.) $)
+    subggrp $p |- ( S e. ( SubGrp ` G ) -> H e. Grp ) $=
+      ( csubg cfv wcel cress co cgrp cbs wss eqid issubg simp3bi eqeltrid ) ABE
+      FGZCBAHIZJDQBJGABKFZLRJGSABSMNOP $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
