@@ -146665,6 +146665,23 @@ $)
   $}
 
   ${
+    $d B x y z $.  $d G x y z $.
+    grpressid.b $e |- B = ( Base ` G ) $.
+    $( A group restricted to its base set is a group.  It will usually be the
+       original group exactly, of course, but to show that needs additional
+       conditions such as those in ~ strressid .  (Contributed by Jim Kingdon,
+       28-Feb-2025.) $)
+    grpressid $p |- ( G e. Grp -> ( G |`s B ) e. Grp ) $=
+      ( vx vy vz cgrp wcel cplusg cfv cress co cv cminusg c0g cin cbs cvv eqidd
+      eqid inidm wceq a1i id wfn basfn funfvex funfni sylancr eqeltrid ressbasd
+      eqtr3id ressplusgd grpcl grpass grpidcl grplid grpinvcl grplinv isgrpd
+      elex ) BGHZDEFABIJZBAKLZDMZBNJZJBOJZVBAAAPVDQJAUAVBAAVDRBGVBVDSZABQJZUBVB
+      CUCVBUDVBAVIRCVBQRUEBRHVIRHZUFBGVAZVJRBQBQUGUHUIUJZUKULVBAVCBVDRRVHVBVCSV
+      LVKUMAVCBVEEMZCVCTZUNAVCBVEVMFMCVNUOABVGCVGTZUPAVCBVEVGCVNVOUQABVFVECVFTZ
+      URAVCBVFVEVGCVNVOVPUSUT $.
+  $}
+
+  ${
     grplcan.b $e |- B = ( Base ` G ) $.
     grplcan.p $e |- .+ = ( +g ` G ) $.
     $( Left cancellation law for groups.  (Contributed by NM, 25-Aug-2011.) $)
