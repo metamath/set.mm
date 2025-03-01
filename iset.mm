@@ -148358,6 +148358,12 @@ $)
       CSQ $.
   $}
 
+  $( Reverse closure for the subgroup predicate.  (Contributed by Mario
+     Carneiro, 2-Dec-2014.) $)
+  subgrcl $p |- ( S e. ( SubGrp ` G ) -> G e. Grp ) $=
+    ( csubg cfv wcel cgrp cbs wss cress co eqid issubg simp1bi ) ABCDEBFEABGDZH
+    BAIJFENABNKLM $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
