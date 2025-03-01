@@ -148442,6 +148442,21 @@ $)
       simp3 ) ABTGHZDAHZEAHZIZDECJZDEBKGZGZBLGZJZAUMDBMGZHEUSHUNURNUMAUSDUJUKAU
       SOULUSABUSPZQRZUJUKULUASUMAUSEVAUJUKULUISUSUQBUOCDEUTUQPZUOPZFUBUCUJUKULU
       PAHZURAHUJULVDUKABUOEVCUDUEUQABDUPVBUFUGUH $.
+
+    subgsub.h $e |- H = ( G |`s S ) $.
+    subgsub.n $e |- N = ( -g ` H ) $.
+    $( The subtraction of elements in a subgroup is the same as subtraction in
+       the group.  (Contributed by Mario Carneiro, 15-Jun-2015.) $)
+    subgsub $p |- ( ( S e. ( SubGrp ` G ) /\ X e. S /\ Y e. S ) ->
+      ( X .- Y ) = ( X N Y ) ) $=
+      ( cfv wcel cminusg cplusg co wceq eqidd 3ad2ant1 eqid cbs csubg w3a cress
+      cgrp a1i id subgrcl ressplusgd subginv 3adant2 oveq123d wss subgss sseldd
+      simp2 simp3 grpsubval syl2anc subgbas eleqtrd 3eqtr4d ) ABUAKZLZFALZGALZU
+      BZFGBMKZKZBNKZOZFGCMKZKZCNKZOZFGDOZFGEOZVFFFVHVLVIVMVCVDVIVMPVEVCAVIBCVBU
+      DCBAUCOPVCIUEVCVIQVCUFABUGUHRVFFQVCVEVHVLPVDABCVGVKGIVGSZVKSZUIUJUKVFFBTK
+      ZLGVSLVOVJPVFAVSFVCVDAVSULVEVSABVSSZUMRZVCVDVEUOZUNVFAVSGWAVCVDVEUPZUNVSV
+      IBVGDFGVTVISVQHUQURVFFCTKZLGWDLVPVNPVFFAWDWBVCVDAWDPVEABCIUSRZUTVFGAWDWCW
+      EUTWDVMCVKEFGWDSVMSVRJUQURVA $.
   $}
 
 
