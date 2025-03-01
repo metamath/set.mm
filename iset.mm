@@ -148459,6 +148459,18 @@ $)
       EUTWDVMCVKEFGWDSVMSVRJUQURVA $.
   $}
 
+  ${
+    $d x y G $.  $d x y N $.  $d x y S $.  $d x .x. $.  $d x y X $.
+    subgmulgcl.t $e |- .x. = ( .g ` G ) $.
+    $( Closure of the group multiple (exponentiation) operation in a subgroup.
+       (Contributed by Mario Carneiro, 13-Jan-2015.) $)
+    subgmulgcl $p |- ( ( S e. ( SubGrp ` G ) /\ N e. ZZ /\ X e. S ) ->
+      ( N .x. X ) e. S ) $=
+      ( vx vy csubg cfv wcel cbs cplusg cminusg cgrp c0g eqid subgrcl subgss cv
+      subgcl subg0cl subginvcl mulgsubcl ) ACIJKGHCLJZCMJZABCCNJZDOECPJZUEQZFUF
+      QZACRUEACUISUFACGTZHTUJUAUHQZACUHULUBUGQZACUGUKUMUCUD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
