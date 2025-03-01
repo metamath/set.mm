@@ -148379,6 +148379,22 @@ $)
         HZIZVDURMABCEUDZUQVGVIVJVHCURVHQZURQZUEUKZVHVCCURURVKVCQVLUFTUGUQBNIURB
         SHZIVAVBUHVFUQAVNURVNABVNQZUIUQURVHAVMABCEUJULUMVNUSBURDVOVEFUNTUO $.
     $}
+
+    subginv.i $e |- I = ( invg ` G ) $.
+    subginv.j $e |- J = ( invg ` H ) $.
+    $( The inverse of an element in a subgroup is the same as the inverse in
+       the larger group.  (Contributed by Mario Carneiro, 2-Dec-2014.) $)
+    subginv $p |- ( ( S e. ( SubGrp ` G ) /\ X e. S ) ->
+      ( I ` X ) = ( J ` X ) ) $=
+      ( cfv wcel wceq cplusg co c0g cgrp cbs eleq2d eqid adantr subggrp subgbas
+      csubg wa biimpa grprinv syl2an2r cress a1i eqidd subgrcl ressplusgd oveqd
+      id subg0 3eqtr4d wb subgss sselda wi grpinvcl ex 3imtr4d syldan grpinvid1
+      syl imp syl3anc mpbird ) ABUCJZKZFAKZUDZFDJFEJZLZFVNBMJZNZBOJZLZVMFVNCMJZ
+      NZCOJZVQVRVKCPKZVLFCQJZKZWAWBLABCGUAZVKVLWEVKAWDFABCGUBZRZUEWDVTCEFWBWDSZ
+      VTSWBSIUFUGVMVPVTFVNVKVPVTLVLVKAVPBCVJPCBAUHNLVKGUIVKVPUJVKUNABUKZULTUMVK
+      VRWBLVLABCVRGVRSZUOTUPVMBPKZFBQJZKVNWMKZVOVSUQVKWLVLWJTVKAWMFWMABWMSZURZU
+      SVKVLVNAKZWNVKVLWQVKWEVNWDKZVLWQVKWCWEWRUTWFWCWEWRWDCEFWIIVAVBVFWHVKAWDVN
+      WGRVCVGVKAWMVNWPUSVDWMVPBDFVNVRWOVPSWKHVEVHVI $.
   $}
 
 
