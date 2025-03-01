@@ -148349,6 +148349,13 @@ $)
     subggrp $p |- ( S e. ( SubGrp ` G ) -> H e. Grp ) $=
       ( csubg cfv wcel cress co cgrp cbs wss eqid issubg simp3bi eqeltrid ) ABE
       FGZCBAHIZJDQBJGABKFZLRJGSABSMNOP $.
+
+    $( The base of the restricted group in a subgroup.  (Contributed by Mario
+       Carneiro, 2-Dec-2014.) $)
+    subgbas $p |- ( S e. ( SubGrp ` G ) -> S = ( Base ` H ) ) $=
+      ( csubg cfv wcel cbs cgrp cress co wceq a1i eqid issubg simp1bi ressbas2d
+      wss subgss ) ABEFGZABHFZCBICBAJKZLTDMUAUALTUANZMTBIGAUARUBIGUAABUCOPUAABU
+      CSQ $.
   $}
 
 
