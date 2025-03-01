@@ -31369,10 +31369,19 @@ $)
   ${
     ifeq1dadc.1 $e |- ( ( ph /\ ps ) -> A = B ) $.
     ifeq1dadc.dc $e |- ( ph -> DECID ps ) $.
-    $( Conditional equality.  (Contributed by Jim Kingdon, 1-Jan-2022.) $)
+    $( Conditional equality.  (Contributed by Jeff Madsen, 2-Sep-2009.) $)
     ifeq1dadc $p |- ( ph -> if ( ps , A , C ) = if ( ps , B , C ) ) $=
       ( cif wceq wn wa ifeq1d iffalse eqtr4d adantl wdc wo exmiddc syl mpjaodan
       ) ABBCEHZBDEHZIZBJZABKBCDEFLUDUCAUDUAEUBBCEMBDEMNOABPBUDQGBRST $.
+  $}
+
+  ${
+    ifeq2da.1 $e |- ( ( ph /\ -. ps ) -> A = B ) $.
+    ifeq2dadc.dc $e |- ( ph -> DECID ps ) $.
+    $( Conditional equality.  (Contributed by Jeff Madsen, 2-Sep-2009.) $)
+    ifeq2dadc $p |- ( ph -> if ( ps , C , A ) = if ( ps , C , B ) ) $=
+      ( cif wceq wn wa simpr iftrued eqtr4d ifeq2d wdc wo exmiddc syl mpjaodan
+      ) ABBECHZBEDHZIBJZABKZUAEUBUDBECABLZMUDBEDUEMNAUCKBCDEFOABPBUCQGBRST $.
   $}
 
   ${
