@@ -148364,6 +148364,23 @@ $)
     ( csubg cfv wcel cgrp cbs wss cress co eqid issubg simp1bi ) ABCDEBFEABGDZH
     BAIJFENABNKLM $.
 
+  ${
+    subg0.h $e |- H = ( G |`s S ) $.
+    ${
+      subg0.i $e |- .0. = ( 0g ` G ) $.
+      $( A subgroup of a group must have the same identity as the group.
+         (Contributed by Stefan O'Rear, 27-Nov-2014.)  (Revised by Mario
+         Carneiro, 30-Apr-2015.) $)
+      subg0 $p |- ( S e. ( SubGrp ` G ) -> .0. = ( 0g ` H ) ) $=
+        ( csubg cfv wcel c0g cplusg co wceq cgrp cress a1i eqid id cbs syl2anc
+        subgrcl ressplusgd oveqd subggrp grpidcl grplid eqtrd wb subgss subgbas
+        syl eleqtrrd sseldd grpid mpbid ) ABGHZIZCJHZURBKHZLZURMZDURMZUQUTURURC
+        KHZLZURUQUSVCURURUQAUSBCUPNCBAOLMUQEPUSUSMUQUSQZPUQRABUAZUBUCUQCNIZURCS
+        HZIZVDURMABCEUDZUQVGVIVJVHCURVHQZURQZUEUKZVHVCCURURVKVCQVLUFTUGUQBNIURB
+        SHZIVAVBUHVFUQAVNURVNABVNQZUIUQURVHAVMABCEUJULUMVNUSBURDVOVEFUNTUO $.
+    $}
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
