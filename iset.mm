@@ -148418,6 +148418,19 @@ $)
       IUJDULNUJNZUBUCABUICUJDUMEUOUDUNUE $.
   $}
 
+  ${
+    subgcl.p $e |- .+ = ( +g ` G ) $.
+    $( A subgroup is closed under group operation.  (Contributed by Mario
+       Carneiro, 2-Dec-2014.) $)
+    subgcl $p |- ( ( S e. ( SubGrp ` G ) /\ X e. S /\ Y e. S ) ->
+      ( X .+ Y ) e. S ) $=
+      ( csubg cfv wcel w3a cress cplusg eqid cgrp subggrp 3ad2ant1 wceq eleqtrd
+      co cbs simp2 subgbas simp3 grpcld eqidd a1i id subgrcl ressplusgd 3eltr4d
+      oveqd ) BCGHZIZDBIZEBIZJZDECBKSZLHZSUQTHZDEASBUPUSURUQDEUSMURMUMUNUQNIUOB
+      CUQUQMZOPUPDBUSUMUNUOUAUMUNBUSQUOBCUQUTUBPZRUPEBUSUMUNUOUCVARUDUPAURDEUMU
+      NAURQUOUMBACUQULNUMUQUEACLHQUMFUFUMUGBCUHUIPUKVAUJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
