@@ -148676,6 +148676,23 @@ $)
       S $.
   $}
 
+  ${
+    subsubg.h $e |- H = ( G |`s S ) $.
+    $( A subgroup of a subgroup is a subgroup.  (Contributed by Mario Carneiro,
+       19-Jan-2015.) $)
+    subsubg $p |- ( S e. ( SubGrp ` G ) -> ( A e. ( SubGrp ` H ) <->
+      ( A e. ( SubGrp ` G ) /\ A C_ S ) ) ) $=
+      ( csubg cfv wcel wss wa cgrp cbs cress co adantr eqid subgss wceq subggrp
+      adantl subgrcl subgbas sseqtrrd sstrd oveq1i mpd3an3 eqtrid syldan issubg
+      ressabsg eqeltrrd syl3anbrc jca sseqtrd adantrl ad2antrl eqeltrd impbida
+      simprr ) BCFGZHZADFGHZAUTHZABIZJZVAVBJZVCVDVFCKHZACLGZICAMNZKHZVCVAVGVBBC
+      UAZOVFABVHVFADLGZBVBAVLIZVAVLADVLPZQTVABVLRZVBBCDEUBZOUCZVABVHIVBVHBCVHPZ
+      QOUDVFDAMNZVIKVAVBVDVSVIRZVQVAVDJVSCBMNZAMNZVIDWAAMEUEVAVDVGWBVIRVAVGVDVK
+      OBACUTKUJUFUGZUHVBVSKHZVAADVSVSPSTUKVHACVRUIULVQUMVAVEJZDKHZVMWDVBVAWFVEB
+      CDESOWEABVLVAVCVDUSVAVOVEVPOUNWEVSVIKVAVDVTVCWCUOVCVJVAVDACVIVIPSUPUQVLAD
+      VNUIULUR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
