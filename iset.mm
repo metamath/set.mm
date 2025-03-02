@@ -148544,6 +148544,28 @@ $)
       OXIWPWQUVSUVPXJDFGIXMXKXNXOXP $.
   $}
 
+  ${
+    $d x y w .0. $.  $d x y w D $.  $d x y w I $.  $d x y .+ $.  $d x y w ph $.
+    $d x y w S $.
+    issubgrpd.s $e |- ( ph -> S = ( I |`s D ) ) $.
+    issubgrpd.z $e |- ( ph -> .0. = ( 0g ` I ) ) $.
+    issubgrpd.p $e |- ( ph -> .+ = ( +g ` I ) ) $.
+    issubgrpd.ss $e |- ( ph -> D C_ ( Base ` I ) ) $.
+    issubgrpd.zcl $e |- ( ph -> .0. e. D ) $.
+    issubgrpd.acl $e |- ( ( ph /\ x e. D /\ y e. D ) -> ( x .+ y ) e. D ) $.
+    issubgrpd.ncl $e |- ( ( ph /\ x e. D ) -> ( ( invg ` I ) ` x ) e. D ) $.
+    issubgrpd.g $e |- ( ph -> I e. Grp ) $.
+    $( Prove a subgroup by closure (definition version).  (Contributed by
+       Stefan O'Rear, 7-Dec-2014.) $)
+    issubgrpd2 $p |- ( ph -> D e. ( SubGrp ` I ) ) $=
+      ( vw cfv wcel cv csubg cbs wss wex cplusg co wral cminusg elex2 syl oveqd
+      wa wceq ad2antrr 3expa eqeltrrd ralrimiva jca cgrp w3a issubg2m mpbir3and
+      wb eqid ) ADGUARSZDGUBRZUCZQTDSQUDZBTZCTZGUERZUFZDSZCDUGZVIGUHRZRDSZULZBD
+      UGZLAHDSVHMQHDUIUJAVQBDAVIDSZULZVNVPVTVMCDVTVJDSZULVIVJEUFZVLDAWBVLUMVSWA
+      AEVKVIVJKUKUNAVSWAWBDSNUOUPUQOURUQAGUSSVEVGVHVRUTVCPBCQVFVKDGVOVFVDVKVDVO
+      VDVAUJVB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
