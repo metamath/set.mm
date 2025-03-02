@@ -148572,6 +148572,24 @@ $)
       QRZSIADGUAUBTUHSTABCDEFGHIJKLMNOPUCDGUHUHUDUEUFUG $.
   $}
 
+  ${
+    $d G x y w $.  $d I x y w $.  $d S x y w $.
+    issubg3.i $e |- I = ( invg ` G ) $.
+    $( A subgroup is a symmetric submonoid.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    issubg3 $p |- ( G e. Grp -> ( S e. ( SubGrp ` G ) <->
+        ( S e. ( SubMnd ` G ) /\ A. x e. S ( I ` x ) e. S ) ) ) $=
+      ( vw vy cgrp wcel cfv cv wral wa wi eqid a1i adantr wb w3a df-3an csubmnd
+      c0g csubg subg0cl subm0cl cbs wss cplusg co elex2 id 2thd adantl 3anbi23d
+      wex r19.26 anass anbi1i 3bitr4ri bitrdi issubg2m grpmnd issubm syl anbi1d
+      cmnd 3bitr4d ex pm5.21ndd ) CHIZCUBJZBIZBCUCJIZBCUAJIZAKZDJBIZABLZMZVMVLN
+      VJBCVKVKOZUDPVRVLNVJVNVLVQBCVKVSUEQPVJVLVMVRRVJVLMZBCUFJZUGZFKBIFUOZVOGKC
+      UHJZUIBIGBLZVPMABLZSZWBVLWEABLZSZVQMZVMVRVTWGWBVLWHVQMZSZWJVTWCVLWFWKWBVL
+      WCVLRVJVLWCVLFVKBUJVLUKULUMWFWKRVTWEVPABUPPUNWBVLMZWHMZVQMWMWKMWJWLWMWHVQ
+      UQWIWNVQWBVLWHTURWBVLWKTUSUTVJVMWGRVLAGFWAWDBCDWAOZWDOZEVAQVJVRWJRVLVJVNW
+      IVQVJCVFIVNWIRCVBAGWAWDBCVKWOVSWPVCVDVEQVGVHVI $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
