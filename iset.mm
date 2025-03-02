@@ -148625,6 +148625,34 @@ $)
       VCUVDXFXIXJ $.
   $}
 
+  ${
+    $d B a b x y w $.  $d G a b x y w $.  $d H a b x y w $.  $d S a b x y w $.
+    grpissubg.b $e |- B = ( Base ` G ) $.
+    grpissubg.s $e |- S = ( Base ` H ) $.
+    $( If the base set of a group is contained in the base set of another
+       group, and the group operation of the group is the restriction of the
+       group operation of the other group to its base set, then the (base set
+       of the) group is subgroup of the other group.  (Contributed by AV,
+       14-Mar-2019.) $)
+    grpissubg $p |- ( ( G e. Grp /\ H e. Grp )
+                   -> ( ( S C_ B /\ ( +g ` H ) = ( ( +g ` G ) |` ( S X. S ) ) )
+                                                  -> S e. ( SubGrp ` G ) ) ) $=
+      ( vw va vb vx vy wcel wa cfv wceq cv co adantl eqid syl cgrp wss cxp cres
+      cplusg csubg wex wral cminusg simpl c0g grpidcl ad2antlr cmgm cmnd grpmnd
+      elex2 mndmgm anim12i adantr simpr anim1i mgmsscl syl3anc ralrimiva simplr
+      ad2antrr cbs sseq2i biimpi ovres eqcomd ralrimivva grpinvssd imp grpinvcl
+      oveq eqtr3d ad4ant24 eqeltrrd jca w3a wb issubg2m mpbir3and ex ) CUALZDUA
+      LZMZBAUBZDUENZCUENZBBUCUDZOZMZBCUFNLZWIWOMZWPWJGPBLGUGZHPZIPZWLQBLZIBUHZW
+      SCUINZNZBLZMZHBUHZWOWJWIWJWNUJRWHWRWGWOWHDUKNZBLWRBDXHFXHSULGXHBUQTUMWQXF
+      HBWQWSBLZMZXBXEXJXAIBXJWTBLZMCUNLZDUNLZMZWOXIXKMXAWQXNXIXKWIXNWOWGXLWHXMW
+      GCUOLXLCUPCURTWHDUOLXMDUPDURTUSUTVGWQWOXIXKWIWOVAVGXJXIXKWQXIVAVBABCDWSWT
+      EFVCVDVEXJWSDUINZNZXDBWQXIXPXDOWQJKBDCWSWIWGWOWGWHUJUTWGWHWOVFFWOBCVHNZUB
+      ZWIWJXRWNWJXRAXQBEVIVJUTRWQJPZKPZWLQZXSXTWKQZOJKBBWQXSBLXTBLMZMXSXTWMQZYA
+      YBYCYDYAOWQXSXTBBWLVKRWOYDYBOWIYCWOYBYDWNYBYDOWJXSXTWKWMVQRVLUMVRVMVNVOWH
+      XIXPBLWGWOBDXOWSFXOSVPVSVTWAVEWGWPWJWRXGWBWCWHWOHIGAWLBCXCEWLSXCSWDVGWEWF
+      $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
