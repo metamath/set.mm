@@ -148666,6 +148666,16 @@ $)
       ZUSUJUMUPVAUCUKUNUTUPUDUEUJUMUPUFSABCEUGSUHUI $.
   $}
 
+  ${
+    $d x G $.  $d x S $.
+    $( A subgroup is a submonoid.  (Contributed by Mario Carneiro,
+       18-Jun-2015.) $)
+    subgsubm $p |- ( S e. ( SubGrp ` G ) -> S e. ( SubMnd ` G ) ) $=
+      ( vx csubg cfv wcel csubmnd cv cminusg wral cgrp subgrcl eqid issubg3 syl
+      wa wb ibi simpld ) ABDEFZABGEFZCHBIEZEAFCAJZTUAUCPZTBKFTUDQABLCABUBUBMNOR
+      S $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
