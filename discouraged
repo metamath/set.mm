@@ -18820,6 +18820,7 @@ New usage of "rescbasOLD" is discouraged (0 uses).
 New usage of "resccoOLD" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
 New usage of "ressbasOLD" is discouraged (0 uses).
+New usage of "ressbasssOLD" is discouraged (0 uses).
 New usage of "resslemOLD" is discouraged (0 uses).
 New usage of "ressval3dOLD" is discouraged (0 uses).
 New usage of "resvbasOLD" is discouraged (0 uses).
@@ -21233,6 +21234,7 @@ Proof modification of "rescbasOLD" is discouraged (106 steps).
 Proof modification of "resccoOLD" is discouraged (115 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
 Proof modification of "ressbasOLD" is discouraged (197 steps).
+Proof modification of "ressbasssOLD" is discouraged (61 steps).
 Proof modification of "resslemOLD" is discouraged (167 steps).
 Proof modification of "ressval3dOLD" is discouraged (285 steps).
 Proof modification of "resvbasOLD" is discouraged (17 steps).

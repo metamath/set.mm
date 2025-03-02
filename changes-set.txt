@@ -85,6 +85,24 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+28-Feb-25 abbi1dv   eqabcdv
+28-Feb-25 abbi2dv   eqabdv
+28-Feb-25 abbi2i    eqabi
+27-Feb-25 elnelall  pm2.24nel
+25-Feb-25 eqimssd   [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 eqimss2d  eqimsscd    Moved from SN's mathbox to main set.mm
+25-Feb-25 hashfundm [same]      Moved from BT's mathbox to main set.mm
+25-Feb-25 hashf1dmrn [same]     Moved from BT's mathbox to main set.mm
+25-Feb-25 ressbasssg [same]     Moved from SN's mathbox to main set.mm
+25-Feb-25 ressbasss2 [same]     Moved from SN's mathbox to main set.mm
+25-Feb-25 resrhm2b  [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgrcl   [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgdrng  [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgsubrg [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgbas   [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgunit  [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 imadrhmcl [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 lmhmlvec  [same]      Moved from SN's mathbox to main set.mm
 24-Feb-25 naddid1   naddrid
 24-Feb-25 naddid2   naddlid
 24-Feb-25 mulid1    mulrid
@@ -140,9 +158,9 @@ Date      Old       New         Notes
 19-Feb-25 isdrngd   [same]      removed extra hypothesis
 15-Feb-25 abeq2f    eqabf
 15-Feb-25 rabeq2i   reqabi
-15-Feb-25 abeq1i    eqabci
-15-Feb-25 abeq2i    eqabi
-15-Feb-25 abeq2d    eqabd
+15-Feb-25 abeq1i    eqabrci
+15-Feb-25 abeq2i    eqabri
+15-Feb-25 abeq2d    eqabrd
 15-Feb-25 abeq2w    eqabbw
 15-Feb-25 abeq1     eqabbc      Commuted form of eqabb
 15-Feb-25 abeq2     eqabb       Basic closed form
