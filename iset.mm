@@ -148564,6 +148564,12 @@ $)
       UGZLAHDSVHMQHDUIUJAVQBDAVIDSZULZVNVPVTVMCDVTVJDSZULVIVJEUFZVLDAWBVLUMVSWA
       AEVKVIVJKUKUNAVSWAWBDSNUOUPUQOURUQAGUSSVEVGVHVRUTVCPBCQVFVKDGVOVFVDVKVDVO
       VDVAUJVB $.
+
+    $( Prove a subgroup by closure.  (Contributed by Stefan O'Rear,
+       7-Dec-2014.) $)
+    issubgrpd $p |- ( ph -> S e. Grp ) $=
+      ( cress co cgrp wcel csubg cfv issubgrpd2 eqid subggrp syl eqeltrd ) AFGD
+      QRZSIADGUAUBTUHSTABCDEFGHIJKLMNOPUCDGUHUHUDUEUFUG $.
   $}
 
 
