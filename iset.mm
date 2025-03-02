@@ -148296,7 +148296,7 @@ $)
   ${
     $d b i p r s w x y $.
     $( Define a subgroup of a group as a set of elements that is a group in its
-       own right.  Equivalently ( ~ issubg2 ), a subgroup is a subset of the
+       own right.  Equivalently ( ~ issubg2m ), a subgroup is a subset of the
        group that is closed for the group internal operation (see ~ subgcl ),
        contains the neutral element of the group (see ~ subg0 ) and contains
        the inverses for all of its elements (see ~ subginvcl ).  (Contributed
@@ -148505,6 +148505,43 @@ $)
       WRWSWLXJXHUVDXKWOUUHXJWTFMXATWSWLXJXHUUNYMYCNUUHUUTUUMXNXPCDXTFGXLUURYSYO
       UVBHUVAXBTXJXHGEVOKZLYNYLNUUHXJGAUVEUUSXGXHAUVENXIADEIXCRXDUVEYEYFBEYIFGY
       DUVEQYEQYDQUVCJYFQXBTXE $.
+  $}
+
+  ${
+    $d .+ u v w x y $.  $d B u v w $.  $d G u v w x y $.  $d I u v w x y $.
+    $d S r u v w $.  $d S u v w x y $.
+    issubg2.b $e |- B = ( Base ` G ) $.
+    issubg2.p $e |- .+ = ( +g ` G ) $.
+    issubg2.i $e |- I = ( invg ` G ) $.
+    $( Characterize the subgroups of a group by closure properties.
+       (Contributed by Mario Carneiro, 2-Dec-2014.) $)
+    issubg2m $p |- ( G e. Grp -> ( S e. ( SubGrp ` G ) <-> (
+      S C_ B /\ E. u u e. S
+      /\ A. x e. S ( A. y e. S ( x .+ y ) e. S /\ ( I ` x ) e. S ) ) ) ) $=
+      ( cgrp wcel cfv cv co wa cbs wceq cvv vr vv csubg wss wex wral w3a subgss
+      vw cress c0g eqid subggrp grpidcl syl subgbas eleqtrrd elex2 subgcl 3expa
+      ralrimiva subginvcl jca 3jca eleq1w cbvexv 3anbi2i simpl simpr1 a1i simpr
+      ressbas2d 3ad2antr1 cplusg wfn basfn elexd funfvex sylancr eqeltrid ssexd
+      funfni ressplusgd simpr3 ralimi oveq1 eleq1d oveq2 rspc2v sseld 3anim123d
+      syl5com 3impib imp grpass adantlr syldan simpr2 sylib grplinv fveq2 sylan
+      sselda adantr ovrspc2v syl21anc eqeltrrd exlimddv grplid isgrpd syl3anbrc
+      rspccva issubg ex biimtrrid impbid2 ) GLMZFGUCNMZFDUDZCOZFMZCUEZAOZBOZEPZ
+      FMZBFUFZYCHNZFMZQZAFUFZUGZXRXSYBYKDFGIUHXRGFUJPZUKNZFMYBXRYNYMRNZFXRYMLMZ
+      YNYOMFGYMYMULZUMYOYMYNYOULYNULUNUOFGYMYQUPUQCYNFURUOXRYJAFXRYCFMZQZYGYIYS
+      YFBFXRYRYDFMYFEFGYCYDJUSUTVAFGHYCKVBVCVAVDYLXSUAOFMZUAUEZYKUGZXQXRUUAYBXS
+      YKYTYAUACUACFVEVFZVGXQUUBXRXQUUBQZXQXSYPXRXQUUBVHXQXSUUAYKVIZUUDCUBUIFEYM
+      XTHNZGUKNZXQUUAXSFYOSYKXQXSQZFDYMGLYMYMSUUHYQVJZDGRNZSUUHIVJXQXSVHZXQXSVK
+      ZVLVMXQUUAXSEYMVNNSYKUUHFEGYMTLUUIEGVNNSUUHJVJUUHFDTUUHDUUJTIUUHRTVOGTMUU
+      JTMZVPUUHGLUUKVQUUMTGRGRVRWBVSVTUULWAUUKWCVMUUDYAUBOZFMZXTUUNEPZFMZUUDYGA
+      FUFZYAUUOQUUQUUDYKUURXQXSUUAYKWDZYJYGAFYGYIVHWEUOZYFUUQXTYDEPZFMABXTUUNFF
+      YCXTSZYEUVAFYCXTYDEWFWGYDUUNSUVAUUPFYDUUNXTEWHWGWIWLWMUUDYAUUOUIOZFMZUGZX
+      TDMZUUNDMZUVCDMZUGZUUPUVCEPXTUUNUVCEPEPSZUUDUVEUVIUUDYAUVFUUOUVGUVDUVHUUD
+      FDXTUUEWJUUDFDUUNUUEWJUUDFDUVCUUEWJWKWNXQUVIUVJUUBDEGXTUUNUVCIJWOWPWQUUDY
+      AUUGFMCUUDUUAYBXQXSUUAYKWRUUCWSUUDYAQZUUFXTEPZUUGFUUDYAUVFUVLUUGSZUUDFDXT
+      UUEXCZXQUVFUVMUUBDEGHXTUUGIJUUGULZKWTWPWQZUVKUUFFMZYAUURUVLFMUUDYIAFUFZYA
+      UVQUUDYKUVRUUSYJYIAFYGYIVKWEUOYIUVQAXTFUVBYHUUFFYCXTHXAWGXLXBZUUDYAVKUUDU
+      URYAUUTXDABFFFEUUFXTXEXFXGXHUUDYAUVFUUGXTEPXTSZUVNXQUVFUVTUUBDEGXTUUGIJUV
+      OXIWPWQUVSUVPXJDFGIXMXKXNXOXP $.
   $}
 
 
