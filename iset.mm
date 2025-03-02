@@ -148651,6 +148651,19 @@ $)
       YBYCYDYAOWQXSXTBBWLVKRWOYDYBOWIYCWOYBYDWNYBYDOWJXSXTWKWMVQRVLUMVRVMVNVOWH
       XIXPBLWGWOBDXOWSFXOSVPVSVTWAVEWGWPWJWRXGWBWCWHWOHIGAWLBCXCEWLSXCSWDVGWEWF
       $.
+
+    $( If the base set of a group is contained in the base set of another
+       group, and the group operation of the group is the restriction of the
+       group operation of the other group to its base set, then the other group
+       restricted to the base set of the group is a group.  (Contributed by AV,
+       14-Mar-2019.) $)
+    resgrpisgrp $p |- ( ( G e. Grp /\ H e. Grp )
+                   -> ( ( S C_ B /\ ( +g ` H ) = ( ( +g ` G ) |` ( S X. S ) ) )
+                                                   -> ( G |`s S ) e. Grp ) ) $=
+      ( cgrp wcel wa wss cplusg cfv cxp cres wceq cress csubg grpissubg bitr4di
+      co imp w3a wb ibar ad2ant2r df-3an issubg mpbird ex ) CGHZDGHZIZBAJZDKLCK
+      LBBMNOZIZCBPTGHZULUOIZUPBCQLHZULUOURABCDEFRUAUQUPUJUMUPUBZURUQUPUJUMIZUPI
+      ZUSUJUMUPVAUCUKUNUTUPUDUEUJUMUPUFSABCEUGSUHUI $.
   $}
 
 
