@@ -148745,6 +148745,20 @@ $)
       ABEKZCABUCABCUCABDLMNZBCOJCBDFPQIRAEBAUDEBNJBDEGSQTUAIUB $.
   $}
 
+  ${
+    $d x B $.  $d x G $.  $d x ph $.  $d x .0. $.
+    trivsubgsnd.1 $e |- B = ( Base ` G ) $.
+    trivsubgsnd.2 $e |- .0. = ( 0g ` G ) $.
+    trivsubgsnd.3 $e |- ( ph -> G e. Grp ) $.
+    trivsubgsnd.4 $e |- ( ph -> B = { .0. } ) $.
+    $( The only subgroup of a trivial group is itself.  (Contributed by Rohan
+       Ridenour, 3-Aug-2023.) $)
+    trivsubgsnd $p |- ( ph -> ( SubGrp ` G ) = { B } ) $=
+      ( vx csubg cfv csn cv wcel wa wceq cgrp adantr simpr trivsubgd sylibr syl
+      velsn ex ssrdv subgid snssd eqssd ) ACJKZBLZAIUIUJAIMZUINZUKUJNZAULOZUKBP
+      UMUNUKBCDEFACQNZULGRABDLPULHRAULSTIBUCUAUDUEABUIAUOBUINGBCEUFUBUGUH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
