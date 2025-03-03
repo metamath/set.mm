@@ -152357,6 +152357,14 @@ $)
       XFTVTWDWBWEVNVKVOVTWBWCWFVTWBVPVMVOVQ $.
   $}
 
+  ${
+    subrgss.1 $e |- B = ( Base ` R ) $.
+    $( A subring is a subset.  (Contributed by Stefan O'Rear, 27-Nov-2014.) $)
+    subrgss $p |- ( A e. ( SubRing ` R ) -> A C_ B ) $=
+      ( csubrg cfv wcel wss cur crg cress co wa eqid issubrg simprbi simpld ) A
+      CEFGZABHZCIFZAGZRCJGCAKLJGMSUAMABCTDTNOPQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
