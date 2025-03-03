@@ -152336,6 +152336,27 @@ $)
         |^| { t e. ( SubRing ` w ) | s C_ t } ) ) $.
   $}
 
+  ${
+    $d s A $.  $d r s B $.  $d r s .1. $.  $d r s R $.
+    issubrg.b $e |- B = ( Base ` R ) $.
+    issubrg.i $e |- .1. = ( 1r ` R ) $.
+    $( The subring predicate.  (Contributed by Stefan O'Rear, 27-Nov-2014.)
+       (Proof shortened by AV, 12-Oct-2020.) $)
+    issubrg $p |- ( A e. ( SubRing ` R ) <->
+      ( ( R e. Ring /\ ( R |`s A ) e. Ring ) /\ ( A C_ B /\ .1. e. A ) ) ) $=
+      ( vr vs csubrg cfv wcel crg cress co wa cur cbs cvv eleq1d wb wss cv crab
+      cpw df-subrg mptrcl simpll fveq2 eqtr4di pweqd oveq1 anbi12d rabeqbidv id
+      wceq wfn basfn elex funfvex funfni sylancr eqeltrid rabexg fvmptd3 eleq2d
+      pwexd syl oveq2 eleq2 elrab a1i elpw2g anbi1d an12 3bitrd ibar pm5.21nii
+      ) ACIJZKZCLKZVTCAMNZLKZOZABUAZDAKZOZOZGLGUBZHUBZMNZLKZWHPJZWIKZOZHWHQJZUD
+      ZUCZIACGHUEZUFVTWBWFUGVTVSACWIMNZLKZDWIKZOZHBUDZUCZKZWBWFOZWGVTVRXDAVTGCW
+      QXDLIRWRWHCUOZWNXBHWPXCXGWOBXGWOCQJZBWHCQUHEUIUJXGWKWTWMXAXGWJWSLWHCWIMUK
+      SXGWLDWIXGWLCPJDWHCPUHFUISULUMVTUNVTXCRKXDRKVTBRVTBXHREVTQRUPCRKXHRKZUQCL
+      URXIRCQCQUSUTVAVBZVFXBHXCRVCVGVDVEVTXEAXCKZWBWEOZOZWDXLOZXFXEXMTVTXBXLHAX
+      CWIAUOZWTWBXAWEXOWSWALWIACMVHSWIADVIULVJVKVTXKWDXLVTBRKXKWDTXJABRVLVGVMXN
+      XFTVTWDWBWEVNVKVOVTWBWCWFVTWBVPVMVOVQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
