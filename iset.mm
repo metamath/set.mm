@@ -152167,6 +152167,13 @@ $)
 
 
 $(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Division rings and fields
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Ring apartness
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -152285,6 +152292,48 @@ $)
       IZVPXEAYNYOYNVMYOVMVNTVQVOWLXAXDWLWTBCWNWNWLXGNZWNWMAWPWRYPWNRYPWMRWLYLXG
       YMTWLXEXFVRWLXEXFVSVTWAWLXCBCDWNWNWNWLXEXFXBWNGZWBZNZWNWMAWPWRXBYSWNRYSWM
       RWLYRWCWLXEXFYQWDWLXEXFYQWEWLXEXFYQWFWGWHWIBCDWNWMWJWK $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subrings of a ring
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c SubRing $.
+  $c RingSpan $.
+
+  $( Extend class notation with all subrings of a ring. $)
+  csubrg $a class SubRing $.
+
+  $( Extend class notation with span of a set of elements over a ring. $)
+  crgspn $a class RingSpan $.
+
+  ${
+    $d w s t $.
+    $( Define a subring of a ring as a set of elements that is a ring in its
+       own right and contains the multiplicative identity.
+
+       The additional constraint is necessary because the multiplicative
+       identity of a ring, unlike the additive identity of a ring/group or the
+       multiplicative identity of a field, cannot be identified by a local
+       property.  Thus, it is possible for a subset of a ring to be a ring
+       while not containing the true identity if it contains a false identity.
+       For instance, the subset ` ( ZZ X. { 0 } ) ` of ` ( ZZ X. ZZ ) ` (where
+       multiplication is componentwise) contains the false identity
+       ` <. 1 , 0 >. ` which preserves every element of the subset and thus
+       appears to be the identity of the subset, but is not the identity of the
+       larger ring.  (Contributed by Stefan O'Rear, 27-Nov-2014.) $)
+    df-subrg $a |- SubRing = ( w e. Ring |-> { s e. ~P ( Base ` w ) |
+        ( ( w |`s s ) e. Ring /\ ( 1r ` w ) e. s ) } ) $.
+
+    $( The ring-span of a set of elements in a ring is the smallest subring
+       which contains all of them.  (Contributed by Stefan O'Rear,
+       7-Dec-2014.) $)
+    df-rgspn $a |- RingSpan = ( w e. _V |-> ( s e. ~P ( Base ` w ) |->
+        |^| { t e. ( SubRing ` w ) | s C_ t } ) ) $.
   $}
 
 
@@ -169766,6 +169815,12 @@ htmldef "RingIso" as " RingIso ";
 htmldef "NzRing" as "NzRing";
   althtmldef "NzRing" as "NzRing";
   latexdef "NzRing" as "\mathrm{NzRing}";
+htmldef "SubRing" as "SubRing";
+  althtmldef "SubRing" as "SubRing";
+  latexdef "SubRing" as "\mathrm{SubRing}";
+htmldef "RingSpan" as "RingSpan";
+  althtmldef "RingSpan" as "RingSpan";
+  latexdef "RingSpan" as "\mathrm{RingSpan}";
 htmldef "#r" as "#<sub>r</sub>";
   althtmldef "#r" as "#<sub>r</sub>";
   latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";
