@@ -148693,6 +148693,31 @@ $)
       VNUIULUR $.
   $}
 
+  ${
+    $d g x y w G $.  $d g x y w S $.
+    $( The intersection of an inhabited collection of subgroups is a subgroup.
+       (Contributed by Mario Carneiro, 7-Dec-2014.) $)
+    subgintm $p |- ( ( S C_ ( SubGrp ` G ) /\ E. w w e. S ) ->
+      |^| S e. ( SubGrp ` G ) ) $=
+      ( vx vy vg cfv wss cv wcel wex wa wral adantlr eqid syl ralrimiva imp cvv
+      wb csubg cint cplusg co cminusg cuni intssunim adantl ssel2 subgss unissb
+      cbs sylibr sstrd c0g subg0cl cgrp ssel eximdv subgrcl exlimiv elintg 3syl
+      grpidcl mpbird elex2 simprl elinti sylan simprr syl3anc vex a1i plusgslid
+      subgcl slotex ovexg adantr anassrs adantll subginvcl syl2anc grpinvcl jca
+      sselda w3a issubg2m mpbir3and ) BCUAGZHZAIZBJZAKZLZBUBZWIJZWOCULGZHZWKWOJ
+      AKZDIZEIZCUCGZUDZWOJZEWOMZWTCUEGZGZWOJZLZDWOMZWNWOBUFZWQWMWOXKHWJABUGUHWN
+      FIZWQHZFBMXKWQHWNXMFBWNXLBJZLZXLWIJZXMWJXNXPWMBWIXLUINZWQXLCWQOZUJPQFBWQU
+      KUMUNZWNCUOGZWOJZWSWNYAXTXLJZFBMZWNYBFBXOXPYBXQXLCXTXTOZUPPQWNCUQJZXTWQJY
+      AYCTWNWKWIJZAKZYEWJWMYGWJWLYFABWIWKURUSRZYFYEAWKCUTVAZPZWQCXTXRYDVDFXTBWQ
+      VBVCVEAXTWOVFPWNXIDWOWNWTWOJZLZXEXHYLXDEWOWNYKXAWOJZXDWNYKYMLZLZXDXCXLJZF
+      BMZYOYPFBYOXNLXPWTXLJZXAXLJZYPWNXNXPYNXQNYOYKXNYRWNYKYMVGYKXNYRWTBXLVHRZV
+      IYOYMXNYSWNYKYMVJYMXNYSXABXLVHRVIXBXLCWTXAXBOZVOVKQWNXDYQTZYNWNXCSJZUUBWN
+      WTSJZXBSJZXASJZUUCUUDWNDVLVMWNYGYEUUEYHYICUCUQVNVPVCUUFWNEVLVMWTXAXBSSSVQ
+      VKFXCBSVBPVRVEVSQYLXHXGXLJZFBMZYLUUGFBYLXNLXPYRUUGWNXNXPYKXQNYKXNYRWNYTVT
+      XLCXFWTXFOZWAWBQYLXGWQJZXHUUHTYLYEWTWQJUUJWNYEYKYJVRWNWOWQWTXSWEWQCXFWTXR
+      UUIWCWBFXGBWQVBPVEWDQWNYGYEWPWRWSXJWFTYHYIDEAWQXBWOCXFXRUUAUUIWGVCWH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
