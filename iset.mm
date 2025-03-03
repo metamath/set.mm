@@ -148718,6 +148718,20 @@ $)
       UUIWCWBFXGBWQVBPVEWDQWNYGYEWPWRWSXJWFTYHYIDEAWQXBWOCXFXRUUAUUIWGVCWH $.
   $}
 
+  ${
+    $d G a $.  $d .0. a $.
+    0subg.z $e |- .0. = ( 0g ` G ) $.
+    $( The zero subgroup of an arbitrary group.  (Contributed by Stefan O'Rear,
+       10-Dec-2014.)  (Proof shortened by SN, 31-Jan-2025.) $)
+    0subg $p |- ( G e. Grp -> { .0. } e. ( SubGrp ` G ) ) $=
+      ( va cgrp wcel csn csubg cfv csubmnd cv cminusg wral cmnd grpmnd syl wceq
+      eqid wb mpbird 0subm grpinvid cbs grpidcl mpdan elsng fveq2 eleq1d ralsng
+      grpinvcl issubg3 mpbir2and ) AEFZBGZAHIFUNAJIFZDKZALIZIZUNFZDUNMZUMANFUOA
+      OABCUAPUMUTBUQIZUNFZUMVBVABQZAUQBCUQRZUBUMVAAUCIZFZVBVCSUMBVEFZVFVEABVERZ
+      CUDZVEAUQBVHVDUJUEVABVEUFPTUMVGUTVBSVIUSVBDBVEUPBQURVAUNUPBUQUGUHUIPTDUNA
+      UQVDUKUL $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
