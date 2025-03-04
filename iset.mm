@@ -150791,6 +150791,24 @@ $)
     ( vz cv cvv wcel cnx cbs cfv csn cop cplusg cmulr ctp crg c0 wne eqid ring1
     vex ne0i mp2b ) ABZCDEFGUAHIEJGUAUAIUAIHZIEKGUBILZMDMNOARUCCUAUCPQMUCST $.
 
+  ${
+    $d B x y z $.  $d G x y z $.
+    ringressid.b $e |- B = ( Base ` G ) $.
+    $( A ring restricted to its base set is a ring.  It will usually be the
+       original ring exactly, of course, but to show that needs additional
+       conditions such as those in ~ strressid .  (Contributed by Jim Kingdon,
+       28-Feb-2025.) $)
+    ringressid $p |- ( G e. Ring -> ( G |`s B ) e. Ring ) $=
+      ( vx vy vz crg wcel cplusg cfv cress co cmulr eqidd cbs wceq eqid cgrp cv
+      cvv cur a1i id ssidd ressbas2d basfn elex funfvex funfni sylancr eqeltrid
+      wfn ressplusgd ressmulrg mpancom ringgrp grpressid ringcl ringass ringdir
+      syl ringdi ringidcl ringlidm ringridm isringd ) BGHZDEFABIJZBAKLZBMJZBUAJ
+      ZVGAAVIBGVGVINZABOJZPVGCUBVGUCZVGAUDUEVGAVHBVITGVLVGVHNVGAVMTCVGOTULBTHVM
+      THZUFBGUGVOTBOBOUHUIUJUKZVNUMATHVGVJVIMJPVPABVIVJTGVIQVJQZUNUOVGBRHVIRHBU
+      PABCUQVAABVJDSZESZCVQURABVJVRVSFSZCVQUSAVHBVJVRVSVTCVHQZVQVBAVHBVJVRVSVTC
+      WAVQUTABVKCVKQZVCABVJVKVRCVQWBVDABVJVKVRCVQWBVEVF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
