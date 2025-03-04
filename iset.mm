@@ -152413,6 +152413,12 @@ $)
     ( csubrg cfv wcel crg cress co wa cbs wss cur eqid issubrg simplbi simpld )
     ABCDEZBFEZBAGHFEZQRSIABJDZKBLDZAEIATBUATMUAMNOP $.
 
+  $( A subring is a subgroup.  (Contributed by Mario Carneiro, 3-Dec-2014.) $)
+  subrgsubg $p |- ( A e. ( SubRing ` R ) -> A e. ( SubGrp ` R ) ) $=
+    ( csubrg cfv wcel cgrp cbs wss cress co csubg crg subrgrcl ringgrp syl eqid
+    subrgss subrgring issubg syl3anbrc ) ABCDEZBFEZABGDZHBAIJZFEZABKDEUABLEUBAB
+    MBNOAUCBUCPZQUAUDLEUEABUDUDPRUDNOUCABUFST $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
