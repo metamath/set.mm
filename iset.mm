@@ -152447,6 +152447,24 @@ $)
       BKABCDLM $.
   $}
 
+  ${
+    $d S x $.  $d R x $.  $d A x $.
+    subrg1.1 $e |- S = ( R |`s A ) $.
+    subrg1.2 $e |- .1. = ( 1r ` R ) $.
+    $( A subring always has the same multiplicative identity.  (Contributed by
+       Stefan O'Rear, 27-Nov-2014.) $)
+    subrg1 $p |- ( A e. ( SubRing ` R ) -> .1. = ( 1r ` S ) ) $=
+      ( vx cfv wcel cur cbs cmulr co wceq wa eqid crg oveqd eqeq1d syldan sylan
+      csubrg cv wral subrg1cl subrgbas eleqtrd subrgss eqsstrrd sselda subrgrcl
+      ringidmlem ressmulrg mpdan anbi12d biimpa ralrimiva wb subrgring isringid
+      syl mpbi2and eqtr4id ) ABUBHZIZDBJHZCJHZFVEVFCKHZIZVFGUCZCLHZMZVJNZVJVFVK
+      MZVJNZOZGVHUDZVGVFNZVEVFAVHABVFVFPZUEABCEUFZUGVEVPGVHVEVJVHIVJBKHZIZVPVEV
+      HWAVJVEVHAWAVTAWABWAPZUHUIUJVEWBVFVJBLHZMZVJNZVJVFWDMZVJNZOZVPVEBQIZWBWIA
+      BUKZWABWDVFVJWCWDPZVSULUAVEWIVPVEWFVMWHVOVEWEVLVJVEWDVKVFVJVEWJWDVKNWKABC
+      WDVDQEWLUMUNZRSVEWGVNVJVEWDVKVJVFWMRSUOUPTTUQVECQIVIVQOVRURABCEUSGVHCVKVG
+      VFVHPVKPVGPUTVAVBVC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
