@@ -152407,6 +152407,12 @@ $)
       UEUKUMUFUGUHCUPVBUIUJ $.
   $}
 
+  $( Reverse closure for a subring predicate.  (Contributed by Mario Carneiro,
+     3-Dec-2014.) $)
+  subrgrcl $p |- ( A e. ( SubRing ` R ) -> R e. Ring ) $=
+    ( csubrg cfv wcel crg cress co wa cbs wss cur eqid issubrg simplbi simpld )
+    ABCDEZBFEZBAGHFEZQRSIABJDZKBLDZAEIATBUATMUAMNOP $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
