@@ -152429,6 +152429,15 @@ $)
       ABCDEFNO $.
   $}
 
+  ${
+    subrg1cl.a $e |- .1. = ( 1r ` R ) $.
+    $( A subring contains the multiplicative identity.  (Contributed by Stefan
+       O'Rear, 27-Nov-2014.) $)
+    subrg1cl $p |- ( A e. ( SubRing ` R ) -> .1. e. A ) $=
+      ( csubrg cfv wcel cbs wss crg cress co wa eqid issubrg simprbi simprd ) A
+      BEFGZABHFZIZCAGZRBJGBAKLJGMTUAMASBCSNDOPQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
