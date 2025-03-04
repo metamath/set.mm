@@ -152465,6 +152465,16 @@ $)
       VFVHPVKPVGPUTVAVBVC $.
   $}
 
+  ${
+    subrgacl.p $e |- .+ = ( +g ` R ) $.
+    $( A subring is closed under addition.  (Contributed by Mario Carneiro,
+       2-Dec-2014.) $)
+    subrgacl $p |- ( ( A e. ( SubRing ` R ) /\ X e. A /\ Y e. A ) ->
+      ( X .+ Y ) e. A ) $=
+      ( csubrg cfv wcel csubg co subrgsubg subgcl syl3an1 ) ACGHIACJHIDAIEAIDEB
+      KAIACLBACDEFMN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
