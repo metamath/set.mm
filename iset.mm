@@ -152475,6 +152475,19 @@ $)
       KAIACLBACDEFMN $.
   $}
 
+  ${
+    subrgmcl.p $e |- .x. = ( .r ` R ) $.
+    $( A subgroup is closed under multiplication.  (Contributed by Mario
+       Carneiro, 2-Dec-2014.) $)
+    subrgmcl $p |- ( ( A e. ( SubRing ` R ) /\ X e. A /\ Y e. A ) ->
+      ( X .x. Y ) e. A ) $=
+      ( csubrg cfv wcel w3a cress co cmulr cbs crg eqid subrgring 3ad2ant1 wceq
+      eleqtrd simp2 subrgbas simp3 ringcl syl3anc ressmulrg mpdan oveqd 3eltr4d
+      subrgrcl ) ABGHZIZDAIZEAIZJZDEBAKLZMHZLZUPNHZDECLAUOUPOIZDUSIEUSIURUSIULU
+      MUTUNABUPUPPZQRUODAUSULUMUNUAULUMAUSSUNABUPVAUBRZTUOEAUSULUMUNUCVBTUSUPUQ
+      DEUSPUQPUDUEUOCUQDEULUMCUQSZUNULBOIVCABUJABUPCUKOVAFUFUGRUHVBUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
