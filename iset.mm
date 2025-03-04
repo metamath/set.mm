@@ -152390,6 +152390,14 @@ $)
       CCUCMZNAOPAABUCCUEST $.
   $}
 
+  ${
+    subrgring.1 $e |- S = ( R |`s A ) $.
+    $( A subring is a ring.  (Contributed by Stefan O'Rear, 27-Nov-2014.) $)
+    subrgring $p |- ( A e. ( SubRing ` R ) -> S e. Ring ) $=
+      ( csubrg cfv wcel cress co crg wa cbs wss cur eqid issubrg simplbi simprd
+      eqeltrid ) ABEFGZCBAHIZJDTBJGZUAJGZTUBUCKABLFZMBNFZAGKAUDBUEUDOUEOPQRS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
