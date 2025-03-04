@@ -152419,6 +152419,16 @@ $)
     subrgss subrgring issubg syl3anbrc ) ABCDEZBFEZABGDZHBAIJZFEZABKDEUABLEUBAB
     MBNOAUCBUCPZQUAUDLEUEABUDUDPRUDNOUCABUFST $.
 
+  ${
+    subrg0.1 $e |- S = ( R |`s A ) $.
+    subrg0.2 $e |- .0. = ( 0g ` R ) $.
+    $( A subring always has the same additive identity.  (Contributed by Stefan
+       O'Rear, 27-Nov-2014.) $)
+    subrg0 $p |- ( A e. ( SubRing ` R ) -> .0. = ( 0g ` S ) ) $=
+      ( csubrg cfv wcel csubg c0g wceq subrgsubg subg0 syl ) ABGHIABJHIDCKHLABM
+      ABCDEFNO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
