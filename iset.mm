@@ -152438,6 +152438,15 @@ $)
       BEFGZABHFZIZCAGZRBJGBAKLJGMTUAMASBCSNDOPQ $.
   $}
 
+  ${
+    subrgbas.b $e |- S = ( R |`s A ) $.
+    $( Base set of a subring structure.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.) $)
+    subrgbas $p |- ( A e. ( SubRing ` R ) -> A = ( Base ` S ) ) $=
+      ( csubrg cfv wcel csubg cbs wceq subrgsubg subgbas syl ) ABEFGABHFGACIFJA
+      BKABCDLM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
