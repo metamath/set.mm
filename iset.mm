@@ -152396,6 +152396,15 @@ $)
     subrgring $p |- ( A e. ( SubRing ` R ) -> S e. Ring ) $=
       ( csubrg cfv wcel cress co crg wa cbs wss cur eqid issubrg simplbi simprd
       eqeltrid ) ABEFGZCBAHIZJDTBJGZUAJGZTUBUCKABLFZMBNFZAGKAUDBUEUDOUEOPQRS $.
+
+    $( A subring of a commutative ring is a commutative ring.  (Contributed by
+       Mario Carneiro, 10-Jan-2015.) $)
+    subrgcrng $p |- ( ( R e. CRing /\ A e. ( SubRing ` R ) ) -> S e. CRing ) $=
+      ( ccrg wcel csubrg cfv wa crg cmgp ccmn subrgring adantl cress co mgpress
+      eqid eqidd cmnd crngmgp adantr ringmgp syl eqeltrd simpr subcmnd eqeltrrd
+      iscrng sylanbrc ) BEFZABGHZFZIZCJFZCKHZLFCEFUMUOUKABCDMNZUNBKHZAOPZUPLABC
+      UREULDURRZQZUNAURUSULUNUSSUKURLFUMBURUTUAUBUNUSUPTVAUNUOUPTFUQCUPUPRZUCUD
+      UEUKUMUFUGUHCUPVBUIUJ $.
   $}
 
 
