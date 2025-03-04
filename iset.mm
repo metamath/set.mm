@@ -152381,6 +152381,13 @@ $)
     subrgss $p |- ( A e. ( SubRing ` R ) -> A C_ B ) $=
       ( csubrg cfv wcel wss cur crg cress co wa eqid issubrg simprbi simpld ) A
       CEFGZABHZCIFZAGZRCJGCAKLJGMSUAMABCTDTNOPQ $.
+
+    $( Every ring is a subring of itself.  (Contributed by Stefan O'Rear,
+       30-Nov-2014.) $)
+    subrgid $p |- ( R e. Ring -> B e. ( SubRing ` R ) ) $=
+      ( crg wcel cress co wss cur wa csubrg ringressid eqid ringidcl ssid jctil
+      cfv id issubrg syl21anbrc ) BDEZUABAFGDEAAHZBIQZAEZJABKQEUARABCLUAUDUBABU
+      CCUCMZNAOPAABUCCUEST $.
   $}
 
 
