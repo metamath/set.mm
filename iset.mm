@@ -152650,6 +152650,35 @@ $)
       OWRWPWSXGYCEXBOXHXJXKYBVGWTYDBDEHJXCLMKXIXNFEXRXISXNSXRSXDVJXE $.
   $}
 
+  ${
+    $d u v w x y A $.  $d u v w .1. $.  $d u v w x y R $.  $d u v w x y .x. $.
+    issubrg2.b $e |- B = ( Base ` R ) $.
+    issubrg2.o $e |- .1. = ( 1r ` R ) $.
+    issubrg2.t $e |- .x. = ( .r ` R ) $.
+    $( Characterize the subrings of a ring by closure properties.  (Contributed
+       by Mario Carneiro, 3-Dec-2014.) $)
+    issubrg2 $p |- ( R e. Ring -> ( A e. ( SubRing ` R ) <->
+                     ( A e. ( SubGrp ` R ) /\ .1. e. A /\
+                       A. x e. A A. y e. A ( x .x. y ) e. A ) ) ) $=
+      ( wcel cfv cv co w3a wceq syl cgrp adantlr syldan vu vv vw crg csubg wral
+      csubrg subrgsubg subrg1cl subrgmcl 3expb ralrimivva 3jca cress wss cplusg
+      wa simpl cbs simpr1 eqid subgbas eqidd subgrcl ressplusgd cmulr ressmulrg
+      id syl2anc2 subggrp simpr3 oveq1 eleq1d oveq2 rspc2v syl5com 3impib sseld
+      subgss 3anim123d imp ringass ringdi ringdir ringlidm ringridm isringd jca
+      simpr2 issubrg syl21anbrc ex impbid2 ) EUDKZCEUGLKZCEUELZKZGCKZAMZBMZFNZC
+      KZBCUFACUFZOZWOWQWRXCCEUHCEGIUIWOXBABCCWOWSCKWTCKXBCEFWSWTJUJUKULUMWNXDWO
+      WNXDUQZWNECUNNZUDKCDUOZWRUQWOWNXDURXEUAUBUCCEUPLZXFFGXEWQCXFUSLPWNWQWRXCU
+      TZCEXFXFVAZVBQXEWQXHXFUPLPXIWQCXHEXFWPRWQXFVCWQXHVCWQVHCEVDZVEQXEWQERKFXF
+      VFLPXIXKCEXFFWPRXJJVGVIXEWQXFRKXICEXFXJVJQXEUAMZCKZUBMZCKZXLXNFNZCKZXEXCX
+      MXOUQXQWNWQWRXCVKXBXQXLWTFNZCKABXLXNCCWSXLPXAXRCWSXLWTFVLVMWTXNPXRXPCWTXN
+      XLFVNVMVOVPVQXEXMXOUCMZCKZOZXLDKZXNDKZXSDKZOZXPXSFNXLXNXSFNZFNPZXEYAYEXEX
+      MYBXOYCXTYDXECDXLXEWQXGXIDCEHVSQZVRZXECDXNYHVRXECDXSYHVRVTWAZWNYEYGXDDEFX
+      LXNXSHJWBSTXEYAYEXLXNXSXHNFNXPXLXSFNZXHNPZYJWNYEYLXDDXHEFXLXNXSHXHVAZJWCS
+      TXEYAYEXLXNXHNXSFNYKYFXHNPZYJWNYEYNXDDXHEFXLXNXSHYMJWDSTWNWQWRXCWIZXEXMYB
+      GXLFNXLPZXEXMYBYIWAZWNYBYPXDDEFGXLHJIWESTXEXMYBXLGFNXLPZYQWNYBYRXDDEFGXLH
+      JIWFSTWGXEXGWRYHYOWHCDEGHIWJWKWLWM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
