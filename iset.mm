@@ -152524,6 +152524,33 @@ $)
       WCWDVRWOTBCUELRVRGVKVRXCCNMXDCUDPVRWQTVLVMWCWDEVNWCWDBVNVOVP $.
   $}
 
+  ${
+    $d x A $.  $d x R $.  $d x U $.  $d x V $.
+    subrguss.1 $e |- S = ( R |`s A ) $.
+    subrguss.2 $e |- U = ( Unit ` R ) $.
+    subrguss.3 $e |- V = ( Unit ` S ) $.
+    $( A unit of a subring is a unit of the parent ring.  (Contributed by Mario
+       Carneiro, 4-Dec-2014.) $)
+    subrguss $p |- ( A e. ( SubRing ` R ) -> V C_ U ) $=
+      ( cfv wcel cdsr wbr wceq a1i eqidd crg csrg ringsrg eqid adantr vx csubrg
+      cv cur coppr cui subrgring syl isunitd simprbda subrg1 breqtrrd subrgdvds
+      wa wss ssbrd mpd cinvr cmulr cbs subrgrcl opprbasg opprring 3syl subrgbas
+      subrgss eqsstrrd simpr unitcld sseldd ringinvcl sylan dvdsrmuld unitinvcl
+      opprmulg syl3anc unitrinv ressmulrg mpdan oveqd 3eqtr4d breqtrd mpbir2and
+      co eqtrd wb ex ssrdv ) ABUBIZJZUAEDWJUAUCZEJZWKDJZWJWLUNZWMWKBUDIZBKIZLZW
+      KWOBUEIZKIZLZWNWKWOCKIZLWQWNWKCUDIZWOXAWJWLWKXBXALWKXBCUEIZKIZLWJXACXCEXB
+      XDWKECUFIMZWJHNWJXBOWJXAOWJXCOWJXDOWJCPJZCQJZABCFUGZCRUHZUIUJWJWOXBMWLABC
+      WOFWOSUKTZULWNXAWPWKWOWJXAWPUOWLAWPBCXAFWPSXASUMTUPUQWNWKWKCURIZIZWKWRUSI
+      ZWDZWOWSWNBUTIZWSWRXMWKXLWNBPJZXOWRUTIMWJXPWLABVAZTZXOBWRPWRSZXOSZVBUHWNW
+      SOWNXPWRPJWRQJXRBWRXSVCWRRVDWNXMOWNCUTIZXOWKWNYAAXOWJAYAMWLABCFVETWJAXOUO
+      WLAXOBXTVFTVGZWNYACEWKWNYAOXEWNHNWJXGWLXITWJWLVHZVIVJWNYAXOXLYBWJXFWLXLYA
+      JXHYACEXKWKHXKSZYASVKVLVJVMWNXNWKXLBUSIZWDZWOWNXPXLEJZWLXNYFMXRWJXFWLYGXH
+      CEXKWKHYDVNVLYCXOBXMYEEWRPEXLWKXTYESZXSXMSVOVPWNWKXLCUSIZWDZXBYFWOWJXFWLY
+      JXBMXHCYIEXBXKWKHYDYISXBSVQVLWNYEYIWKXLWJYEYIMZWLWJXPYKXQABCYEWIPFYHVRVST
+      VTXJWAWEWBWJWMWQWTUNWFWLWJWPBWRDWOWSWKDBUFIMWJGNWJWOOWJWPOWJWROWJWSOWJXPB
+      QJXQBRUHUITWCWGWH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
