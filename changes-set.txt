@@ -84,6 +84,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 5-Mar-25 nabbi     nabbib
  2-Mar-25 isassad   [same]      revised - scalars may be noncommutative
  2-Mar-25 assasca   [same]      revised - scalars may be noncommutative
  2-Mar-25 isassa    [same]      revised - scalars may be noncommutative
