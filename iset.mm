@@ -152488,6 +152488,21 @@ $)
       DEUSPUQPUDUEUOCUQDEULUMCUQSZUNULBOIVCABUJABUPCUKOVAFUFUGRUHVBUI $.
   $}
 
+  ${
+    subrgsubm.1 $e |- M = ( mulGrp ` R ) $.
+    $( A subring is a submonoid of the multiplicative monoid.  (Contributed by
+       Mario Carneiro, 15-Jun-2015.) $)
+    subrgsubm $p |- ( A e. ( SubRing ` R ) -> A e. ( SubMnd ` M ) ) $=
+      ( csubrg cfv wcel csubmnd cbs wss cur cress cmnd eqid crg ringmgp syl w3a
+      co wb subrgss subrg1cl cmgp wceq subrgrcl mgpress mpancom eqeltrd issubm2
+      subrgring c0g mgpbasg sseq2d ringidvalg eleq1d 3anbi12d bibi2d mpbir3and
+      mpbird ) ABEFZGZACHFGZABIFZJZBKFZAGZCALSZMGZAVCBVCNZUAABVEVENZUBVAVGBALSZ
+      UCFZMBOGZVAVGVLUDABUEZABVKCOUTVKNZDUFUGVAVKOGVLMGABVKVOUJVKVLVLNPQUHVAVBV
+      DVFVHRZTZVBACIFZJZCUKFZAGZVHRZTZVAVMWCVNVMCMGWCBCDPVRAVGCVTVRNVTNVGNUIQQV
+      AVMVQWCTVNVMVPWBVBVMVDVSVFWAVHVMVCVRAVCBCODVIULUMVMVEVTABVECODVJUNUOUPUQQ
+      USUR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
