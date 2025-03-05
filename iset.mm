@@ -152596,8 +152596,8 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x y G $.  $d x I $.  $d x y R $.  $d x y V $.  $d x S $.
-    $d x X $.
+    $d x y A $.  $d x y w G $.  $d x I $.  $d x y R $.  $d x y w V $.
+    $d x w S $.  $d x X $.
     subrgugrp.1 $e |- S = ( R |`s A ) $.
     subrgugrp.2 $e |- U = ( Unit ` R ) $.
     subrgugrp.3 $e |- V = ( Unit ` S ) $.
@@ -152626,6 +152626,28 @@ $)
         WCWFXMGWPYESZYGYTXNWLYHWRWNUUAYGOYIYJBYEDYGEGIKYKYLWDVQXMYEXTGWPYNVOYOV
         RWEVSWLWMXPXSNWGWRWLXOCXQFXNXRGXDWLJUHWLXNTWLXOTWLXQTWLXRTXHWHPWIWJ $.
     $}
+
+    subrgugrp.4 $e |- G = ( ( mulGrp ` R ) |`s U ) $.
+    $( The units of a subring form a subgroup of the unit group of the original
+       ring.  (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+    subrgugrp $p |- ( A e. ( SubRing ` R ) -> V e. ( SubGrp ` G ) ) $=
+      ( vw vx vy cfv wcel cbs crg wceq eqid cvv csubrg csubg wss cv cplusg wral
+      wex co cminusg wa subrguss subrgrcl cui a1i cress ringsrg unitgrpbasd syl
+      cmgp sseqtrd cur subrgring 1unit elex2 cmulr cinvr w3a ressmulrg 3ad2ant1
+      3syl mpdan oveqd unitmulcl syl3an1 eqeltrd 3expa ralrimiva subrginv sylan
+      unitinvcl jca cmnd mgpplusgg wfn basfn elex funfvex sylancr eqidd unitssd
+      funfni ssexd ringmgp ressplusgd eleq1d ralbidv invrfvald anbi12d mpbid wb
+      fveq1d cgrp unitgrp issubg2m mpbir3and ) ABUANZOZFEUBNOZFEPNZUCZKUDFOKUGZ
+      LUDZMUDZEUENZUHZFOZMFUFZXLEUINZNZFOZUJZLFUFZXGFDXIABCDFGHIUKXGBQOZDXIRABU
+      LZYCBDEDBUMNRZYCHUNZEBUSNZDUOUHRZYCJUNZBUPZUQURUTXGCQOZCVANZFOXKABCGVBZCF
+      YLIYLSVCKYLFVDVJXGXLXMBVENZUHZFOZMFUFZXLBVFNZNZFOZUJZLFUFYBXGUUALFXGXLFOZ
+      UJZYQYTUUCYPMFXGUUBXMFOZYPXGUUBUUDVGZYOXLXMCVENZUHZFUUEYNUUFXLXMXGUUBYNUU
+      FRZUUDXGYCUUHYDABCYNXFQGYNSZVHVKVIVLXGYKUUBUUDUUGFOYMCUUFFXLXMIUUFSVMVNVO
+      VPVQUUCYSXLCVFNZNZFABCFYRUUJXLGYRSIUUJSZVRXGYKUUBUUKFOYMCFUUJXLIUULVTVSVO
+      WAVQXGUUAYALFXGYQXQYTXTXGYPXPMFXGYOXOFXGYNXNXLXMXGYCYNXNRYDYCDYNYGETWBYIB
+      YNYGQYGSZUUIWCYCDBPNZTYCPTWDBTOUUNTOZWEBQWFUUOTBPBPWGWKWHYCUUNBDYCUUNWIYF
+      YJWJWLBYGUUMWMWNURVLWOWPXGYSXSFXGXLYRXRXGBDEYRYEXGHUNYHXGJUNXGYRWIYDWQXAW
+      OWRWPWSXGYCEXBOXHXJXKYBVGWTYDBDEHJXCLMKXIXNFEXRXISXNSXRSXDVJXE $.
   $}
 
 
