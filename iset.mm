@@ -152595,6 +152595,39 @@ $)
       UOMPVLLUPVIVJDRNVKACDIVCSVLGAWHWFVIVJAWHPVKACDIVDSVEWGVBVF $.
   $}
 
+  ${
+    $d x y A $.  $d x y G $.  $d x I $.  $d x y R $.  $d x y V $.  $d x S $.
+    $d x X $.
+    subrgugrp.1 $e |- S = ( R |`s A ) $.
+    subrgugrp.2 $e |- U = ( Unit ` R ) $.
+    subrgugrp.3 $e |- V = ( Unit ` S ) $.
+    ${
+      subrgunit.4 $e |- I = ( invr ` R ) $.
+      $( An element of a ring is a unit of a subring iff it is a unit of the
+         parent ring and both it and its inverse are in the subring.
+         (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+      subrgunit $p |- ( A e. ( SubRing ` R ) ->
+        ( X e. V <-> ( X e. U /\ X e. A /\ ( I ` X ) e. A ) ) ) $=
+        ( cfv wcel wa wceq adantr crg eqid co eqidd csubrg w3a subrguss cbs cui
+        sselda subrgbas a1i subrgring ringsrg syl simpr unitcld cinvr ringinvcl
+        csrg sylan subrginv 3eltr4d 3jca cur cdsr wbr coppr cmulr simpr2 simpr3
+        eleqtrd dvdsrmuld subrgrcl simpr1 unitlinv ressmulrg mpdan oveqd subrg1
+        syl2an2r 3eqtr3d breqtrd opprbasg opprring 3syl opprmulg unitrinv eqtrd
+        syl3anc wb isunitd mpbir2and impbida ) ABUALZMZGFMZGDMZGAMZGELZAMZUBZWL
+        WMNZWNWOWQWLFDGABCDFHIJUCUFWSACFGWLACUDLZOZWMABCHUGZPZFCUELOZWSJUHWLCUP
+        MZWMWLCQMZXEABCHUIZCUJUKZPWLWMULUMWSGCUNLZLZWTWPAWLXFWMXJWTMXGWTCFXIGJX
+        IRZWTRZUOUQABCFEXIGHKJXKURXCUSUTWLWRNZWMGCVALZCVBLZVCZGXNCVDLZVBLZVCZXM
+        GWPGCVELZSZXNXOXMWTXOCXTGWPXMWTTXMXOTWLXEWRXHPXMXTTXMGAWTWLWNWOWQVFWLXA
+        WRXBPZVHZXMWPAWTWLWNWOWQVGYBVHZVIXMWPGBVELZSZBVALZYAXNWLBQMZWRWNYFYGOAB
+        VJZWLWNWOWQVKZBYEDYGEGIKYERZYGRZVLVQXMYEXTWPGWLYEXTOZWRWLYHYMYIABCYEWKQ
+        HYKVMVNPZVOWLYGXNOWRABCYGHYLVPPZVRVSXMGWPGXQVELZSZXNXRXMWTXRXQYPGWPXMXF
+        WTXQUDLOWLXFWRXGPZWTCXQQXQRZXLVTUKXMXRTXMXFXQQMXQUPMYRCXQYSWAXQUJWBXMYP
+        TYCYDVIXMYQGWPXTSZXNXMXFWPWTMGWTMYQYTOYRYDYCWTCYPXTWTXQQWTWPGXLXTRYSYPR
+        WCWFXMGWPYESZYGYTXNWLYHWRWNUUAYGOYIYJBYEDYGEGIKYKYLWDVQXMYEXTGWPYNVOYOV
+        RWEVSWLWMXPXSNWGWRWLXOCXQFXNXRGXDWLJUHWLXNTWLXOTWLXQTWLXRTXHWHPWIWJ $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
