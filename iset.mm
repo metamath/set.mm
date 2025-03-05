@@ -152503,6 +152503,27 @@ $)
       USUR $.
   $}
 
+  ${
+    $d x y z A $.  $d x y z .|| $.  $d x y E $.  $d x y z R $.  $d z S $.
+    subrgdvds.1 $e |- S = ( R |`s A ) $.
+    subrgdvds.2 $e |- .|| = ( ||r ` R ) $.
+    subrgdvds.3 $e |- E = ( ||r ` S ) $.
+    $( If an element divides another in a subring, then it also divides the
+       other in the parent ring.  (Contributed by Mario Carneiro,
+       4-Dec-2014.) $)
+    subrgdvds $p |- ( A e. ( SubRing ` R ) -> E C_ .|| ) $=
+      ( vx vy vz cfv wcel csrg crg syl cv wceq wrex eqidd csubrg wrel subrgring
+      ringsrg cdsr reldvdsrsrg releqi sylibr wbr cop cbs cmulr co subrgbas eqid
+      subrgss eqsstrrd sseld subrgrcl ressmulrg mpdan eqeq1d rexbidv wss ssrexv
+      wa oveqd wi sylbird anim12d a1i dvdsrd 3imtr4d df-br 3imtr3g relssdv ) AC
+      UALZMZIJEBVRDNMZEUBZVRDOMVSACDFUCDUDPZVSDUELZUBVTDUFEWBHUGUHPVRIQZJQZEUIZ
+      WCWDBUIZWCWDUJZEMWGBMVRWCDUKLZMZKQZWCDULLZUMZWDRZKWHSZVFWCCUKLZMZWJWCCULL
+      ZUMZWDRZKWOSZVFWEWFVRWIWPWNWTVRWHWOWCVRWHAWOACDFUNAWOCWOUOUPUQZURVRWNWSKW
+      HSZWTVRWSWMKWHVRWRWLWDVRWQWKWJWCVRCOMZWQWKRACUSZACDWQVQOFWQUOUTVAVGVBVCVR
+      WHWOVDXBWTVHXAWSKWHWOVEPVIVJVRKWHEDWKWCWDVRWHTEWBRVRHVKWAVRWKTVLVRKWOBCWQ
+      WCWDVRWOTBCUELRVRGVKVRXCCNMXDCUDPVRWQTVLVMWCWDEVNWCWDBVNVOVP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
