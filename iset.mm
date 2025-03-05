@@ -152551,6 +152551,30 @@ $)
       QJXQBRUHUITWCWGWH $.
   $}
 
+  ${
+    subrginv.1 $e |- S = ( R |`s A ) $.
+    subrginv.2 $e |- I = ( invr ` R ) $.
+    subrginv.3 $e |- U = ( Unit ` S ) $.
+    subrginv.4 $e |- J = ( invr ` S ) $.
+    $( A subring always has the same inversion function, for elements that are
+       invertible.  (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+    subrginv $p |- ( ( A e. ( SubRing ` R ) /\ X e. U ) ->
+      ( I ` X ) = ( J ` X ) ) $=
+      ( cfv wcel cur co crg wceq adantr eqid syl2an2r csubrg cmulr cbs subrgrcl
+      wa wss subrgbas subrgss eqsstrrd subrgring ringinvcl sylan sseldd cui a1i
+      eqidd ringsrg syl simpr unitcld subrguss sselda ringass syl13anc unitlinv
+      csrg ressmulrg mpdan oveqd subrg1 3eqtr4d oveq1d unitrinv oveq2d ringlidm
+      3eqtr3d ringridm ) ABUALZMZGDMZUEZBNLZGELZBUBLZOZGFLZWBWDOZWCWFWAWFGWDOZW
+      CWDOZWFGWCWDOZWDOZWEWGWABPMZWFBUCLZMZGWMMWCWMMZWIWKQVSWLVTABUDZRWACUCLZWM
+      WFVSWQWMUFVTVSWQAWMABCHUGAWMBWMSZUHUIRZVSCPMZVTWFWQMABCHUJZWQCDFGJKWQSUKU
+      LUMZWAWQWMGWSWAWQCDGWAWQUPDCUNLQWAJUOWAWTCVFMVSWTVTXARCUQURVSVTUSUTUMVSWL
+      VTGBUNLZMZWOWPVSDXCGABCXCDHXCSZJVAVBZWMBXCEGXEIWRUKTZWMBWDWFGWCWRWDSZVCVD
+      WAWHWBWCWDWAWFGCUBLZOZCNLZWHWBVSWTVTXJXKQXACXIDXKFGJKXISXKSVEULWAWDXIWFGV
+      SWDXIQZVTVSWLXLWPABCWDVRPHXHVGVHRVIVSWBXKQVTABCWBHWBSZVJRVKVLWAWJWBWFWDVS
+      WLVTXDWJWBQWPXFBWDXCWBEGXEIXHXMVMTVNVPVSWLVTWOWEWCQWPXGWMBWDWBWCWRXHXMVOT
+      VSWLVTWNWGWFQWPXBWMBWDWBWFWRXHXMVQTVP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
