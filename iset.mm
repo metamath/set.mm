@@ -152575,6 +152575,26 @@ $)
       VSWLVTWNWGWFQWPXBWMBWDWBWFWRXHXMVQTVP $.
   $}
 
+  ${
+    subrgdv.1 $e |- S = ( R |`s A ) $.
+    subrgdv.2 $e |- ./ = ( /r ` R ) $.
+    subrgdv.3 $e |- U = ( Unit ` S ) $.
+    subrgdv.4 $e |- E = ( /r ` S ) $.
+    $( A subring always has the same division function, for elements that are
+       invertible.  (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+    subrgdv $p |- ( ( A e. ( SubRing ` R ) /\ X e. A /\ Y e. U ) ->
+      ( X ./ Y ) = ( X E Y ) ) $=
+      ( cfv wcel co wceq eqid crg 3ad2ant1 eqidd csubrg w3a cinvr cmulr 3adant2
+      subrginv oveq2d subrgrcl ressmulrg mpdan oveqd eqtrd cbs cui cdvr a1i wss
+      subrgss simp2 sseldd subrguss dvrvald subrgring subrgbas eleqtrd 3eqtr4d
+      simp3 ) ACUAMZNZGANZHENZUBZGHCUCMZMZCUDMZOZGHDUCMZMZDUDMZOZGHBOGHFOVLVPGV
+      RVOOVTVLVNVRGVOVIVKVNVRPVJACDEVMVQHIVMQKVQQUFUEUGVLVOVSGVRVIVJVOVSPZVKVIC
+      RNZWAACUHZACDVOVHRIVOQUIUJSUKULVLCUMMZBCVOCUNMZVMGHVLWDTVLVOTVLWETVLVMTBC
+      UOMPVLJUPVIVJWBVKWCSVLAWDGVIVJAWDUQVKAWDCWDQURSVIVJVKUSZUTVLEWEHVIVJEWEUQ
+      VKACDWEEIWEQKVASVIVJVKVGZUTVBVLDUMMZFDVSEVQGHVLWHTVLVSTEDUNMPVLKUPVLVQTFD
+      UOMPVLLUPVIVJDRNVKACDIVCSVLGAWHWFVIVJAWHPVKACDIVDSVEWGVBVF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
