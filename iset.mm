@@ -152752,6 +152752,24 @@ $)
       UDHZMUIUFUAUDOUKUHUGEASPQRT $.
   $}
 
+  ${
+    $d M x y $.  $d R x y $.  $d S x y $.
+    issubrg3.m $e |- M = ( mulGrp ` R ) $.
+    $( A subring is an additive subgroup which is also a multiplicative
+       submonoid.  (Contributed by Mario Carneiro, 7-Mar-2015.) $)
+    issubrg3 $p |- ( R e. Ring -> ( S e. ( SubRing ` R ) <->
+        ( S e. ( SubGrp ` R ) /\ S e. ( SubMnd ` M ) ) ) ) $=
+      ( vx vy crg wcel cfv cv co wral wa w3a cbs eqid 3anass bitrdi wss wb cmnd
+      csubrg csubg cur cmulr csubmnd issubrg2 subgss c0g cplusg ringmgp mgpbasg
+      issubm sseq2d ringidvalg eleq1d mgpplusgg oveqd 2ralbidv 3anbi123d bitr4d
+      syl baibd sylan2 pm5.32da ) AGHZBAUBIHZBAUCIHZAUDIZBHZEJZFJZAUEIZKZBHZFBL
+      EBLZMZMZVHBCUFIHZMVFVGVHVJVPNVREFBAOIZAVMVIVTPZVIPZVMPZUGVHVJVPQRVFVHVSVQ
+      VHVFBVTSZVSVQTVTBAWAUHVFVSWDVQVFVSWDVJVPNZWDVQMVFVSBCOIZSZCUIIZBHZVKVLCUJ
+      IZKZBHZFBLEBLZNZWEVFCUAHVSWNTACDUKEFWFWJBCWHWFPWHPWJPUMVBVFWDWGVJWIVPWMVF
+      VTWFBVTACGDWAULUNVFVIWHBAVICGDWBUOUPVFVOWLEFBBVFVNWKBVFVMWJVKVLAVMCGDWCUQ
+      URUPUSUTVAWDVJVPQRVCVDVEVA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
