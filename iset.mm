@@ -152691,6 +152691,28 @@ $)
       ULUJSUEABCULDUNUANUBCUIUJUIOUJOUCUD $.
   $}
 
+  ${
+    $d r x y w R $.  $d r x y w S $.
+    $( The intersection of an inhabited collection of subrings is a subring.
+       (Contributed by Stefan O'Rear, 30-Nov-2014.)  (Revised by Mario
+       Carneiro, 7-Dec-2014.) $)
+    subrgintm $p |- ( ( S C_ ( SubRing ` R ) /\ E. w w e. S ) ->
+      |^| S e. ( SubRing ` R ) ) $=
+      ( vx vy vr cfv wss cv wcel wex wa wral sylan adantlr syl ralrimiva wb imp
+      eqid csubrg cint csubg cmulr co subrgsubg ssriv sstr mpan2 subgintm ssel2
+      cur subrg1cl crg csrg ssel subrgrcl syl6 exlimdv ringsrg cbs srgidcl 3syl
+      elintg mpbird simprl elinti simprr syl3anc cvv simplr eleq1w cbvexv elexd
+      subrgmcl ex biimtrrid mpd ralrimivva w3a issubrg2 mpbir3and ) CBUAGZHZAIZ
+      CJZAKZLZCUBZWCJZWIBUCGZJZBULGZWIJZDIZEIZBUDGZUEZWIJZEWIMDWIMZWDCWKHZWGWLW
+      DWCWKHXAFWCWKFIZBUFUGCWCWKUHUIACBUJNWHWNWMXBJZFCMZWHXCFCWHXBCJZLXBWCJZXCW
+      DXEXFWGCWCXBUKOZXBBWMWMTZUMPQWHBUNJZBUOJZWNXDRZWDWGXIWDWFXIAWDWFWEWCJXICW
+      CWEUPWEBUQURUSSZBUTXJWMBVAGZJXKXMBWMXMTZXHVBFWMCXMVDPVCVEWHWSDEWIWIWHWOWI
+      JZWPWIJZLZLZWSWRXBJZFCMZXRXSFCXRXELZXFWOXBJZWPXBJZXSWHXEXFXQXGOXRXOXEYBWH
+      XOXPVFXOXEYBWOCXBVGSNXRXPXEYCWHXOXPVHXPXEYCWPCXBVGSNXBBWQWOWPWQTZVOVIZQXR
+      WRVJJZWSXTRXRWGYFWDWGXQVKWGXEFKXRYFXEWFFAFACVLVMXRXEYFFXRXEYFYAWRXBYEVNVP
+      USVQVRFWRCVJVDPVEVSWHXIWJWLWNWTVTRXLDEWIXMBWQWMXNXHYDWAPWB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
