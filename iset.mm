@@ -152724,6 +152724,26 @@ $)
       RZUGUBGABUBOUCUHUDDABUBSPDCUFQTUA $.
   $}
 
+  ${
+    $d A a $.  $d R a $.  $d S a $.
+    subsubrg.s $e |- S = ( R |`s A ) $.
+    $( A subring of a subring is a subring.  (Contributed by Mario Carneiro,
+       4-Dec-2014.) $)
+    subsubrg $p |- ( A e. ( SubRing ` R ) -> ( B e. ( SubRing ` S ) <->
+      ( B e. ( SubRing ` R ) /\ B C_ A ) ) ) $=
+      ( csubrg cfv wcel wss crg cress cbs adantr wceq eqid adantl subrgring jca
+      wa co cur subrgrcl subrgss subrgbas sseqtrrd oveq1i ressabsg 3expa mpidan
+      eqtrid syldan eqeltrrd subrg1 subrg1cl eqeltrd issubrg syl21anbrc adantrl
+      sstrd ad2antrl simprr sseqtrd impbida ) ACFGZHZBDFGHZBVDHZBAIZSZVEVFSZVGV
+      HVJCJHZCBKTZJHZBCLGZIZCUAGZBHZSVGVEVKVFACUBZMVJDBKTZVLJVEVFVHVSVLNZVJBDLG
+      ZAVFBWAIZVEBWADWAOZUCPVEAWANZVFACDEUDZMUEZVEVHSVSCAKTZBKTZVLDWGBKEUFVEVHV
+      KWHVLNZVRVEVHVKWIABCVDJUGUHUIUJZUKVFVSJHZVEBDVSVSOQPULVJVOVQVJBAVNWFVEAVN
+      IVFAVNCVNOZUCMUSVJVPDUAGZBVEVPWMNZVFACDVPEVPOZUMZMVFWMBHZVEBDWMWMOZUNPUOR
+      BVNCVPWLWOUPUQWFRVEVISZDJHZWKWBWQSVFVEWTVIACDEQMWSVSVLJVEVHVTVGWJURVGVMVE
+      VHBCVLVLOQUTUOWSWBWQWSBAWAVEVGVHVAVEWDVIWEMVBWSVPWMBVEWNVIWPMVGVQVEVHBCVP
+      WOUNUTULRBWADWMWCWRUPUQVC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
