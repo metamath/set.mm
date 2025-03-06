@@ -152679,6 +152679,18 @@ $)
       JIWFSTWGXEXGWRYHYOWHCDEGHIWJWKWLWM $.
   $}
 
+  ${
+    subrgnzr.1 $e |- S = ( R |`s A ) $.
+    $( A subring of a nonzero ring is nonzero.  (Contributed by Mario Carneiro,
+       15-Jun-2015.) $)
+    subrgnzr $p |-
+      ( ( R e. NzRing /\ A e. ( SubRing ` R ) ) -> S e. NzRing ) $=
+      ( cnzr wcel csubrg cfv crg cur c0g wne subrgring adantl eqid nzrnz adantr
+      wa wceq subrg1 subrg0 3netr3d isnzr sylanbrc ) BEFZABGHFZRZCIFZCJHZCKHZLC
+      EFUFUHUEABCDMNUGBJHZBKHZUIUJUEUKULLUFBUKULUKOZULOZPQUFUKUISUEABCUKDUMTNUF
+      ULUJSUEABCULDUNUANUBCUIUJUIOUJOUCUD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
