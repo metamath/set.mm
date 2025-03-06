@@ -152713,6 +152713,17 @@ $)
       USVQVRFWRCVJVDPVEVSWHXIWJWLWNWTVTRXLDEWIXMBWQWMXNXHYDWAPWB $.
   $}
 
+  ${
+    $d A w $.  $d B w $.  $d R w $.
+    $( The intersection of two subrings is a subring.  (Contributed by Stefan
+       O'Rear, 30-Nov-2014.)  (Revised by Mario Carneiro, 7-Dec-2014.) $)
+    subrgin $p |- ( ( A e. ( SubRing ` R ) /\ B e. ( SubRing ` R ) ) ->
+    ( A i^i B ) e. ( SubRing ` R ) ) $=
+      ( vw csubrg cfv wcel wa cpr cint cin intprg wss cv prssi adantr subrgintm
+      wex prmg syl2anc eqeltrrd ) ACEFZGZBUBGZHZABIZJZABKUBABUBUBLUEUFUBMDNUFGD
+      RZUGUBGABUBOUCUHUDDABUBSPDCUFQTUA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
