@@ -153313,6 +153313,14 @@ $)
       ULOISUMTSVQUSMUNFMUOFSUPMUQUTHMVAOISURTVBVCVD $.
   $}
 
+  $( The additive inverse of an element of the ring of integers.  (Contributed
+     by AV, 24-May-2019.)  (Revised by AV, 10-Jun-2019.) $)
+  zringinvg $p |- ( A e. ZZ -> -u A = ( ( invg ` ZZring ) ` A ) ) $=
+    ( cz wcel czring cminusg cfv cneg wceq caddc co cc0 negidd cgrp wb zringgrp
+    zcn id znegcl zringbas zringplusg zring0 grpinvid1 mp3an2i mpbird eqcomd
+    eqid ) ABCZADEFZFZAGZUGUIUJHZAUJIJKHZUGAAPLDMCUGUGUJBCUKULNOUGQARBIDUHAUJKS
+    TUAUHUFUBUCUDUE $.
+
 
 $(
 ###############################################################################
