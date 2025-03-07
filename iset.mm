@@ -153226,6 +153226,19 @@ $)
     wtru wcel zex cnfldex ressplusgd mptru ) ABCDENFAGBHHBGFIJENKLAGCDENMLFHONP
     LGHONQLRS $.
 
+  ${
+    $d x y $.
+    $( The multiplication (group power) operation of the group of integers.
+       (Contributed by Thierry Arnoux, 31-Oct-2017.)  (Revised by AV,
+       9-Jun-2019.) $)
+    zringmulg $p |- ( ( A e. ZZ /\ B e. ZZ )
+                      -> ( A ( .g ` ZZring ) B ) = ( A x. B ) ) $=
+      ( vx vy cz wcel wa ccnfld cmg cfv co czring cmul csubg wceq c1 zcn zaddcl
+      cv eqid znegcl 1z cnsubglem df-zring subgmulg mp3an1 simpr zcnd cnfldmulg
+      cc syldan eqtr3d ) AEFZBEFZGZABHIJZKZABLIJZKZABMKZEHNJFUMUNUQUSOCDEPCSZQV
+      ADSRVAUAUBUCEURUPHLABUPTUDURTUEUFUMUNBUJFUQUTOUOBUMUNUGUHABUIUKUL $.
+  $}
+
 
 $(
 ###############################################################################
