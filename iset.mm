@@ -153298,6 +153298,21 @@ $)
     ( czring cnzr wcel crg cc0 wne zringring 1ne0 zring1 zring0 isnzr mpbir2an
     c1 ) ABCADCMEFGHAMEIJKL $.
 
+  ${
+    $d x y z $.
+    $( Ring divisibility in the ring of integers corresponds to ordinary
+       divisibility in ` ZZ ` .  (Contributed by Stefan O'Rear, 3-Jan-2015.)
+       (Revised by AV, 9-Jun-2019.) $)
+    dvdsrzring $p |- || = ( ||r ` ZZring ) $=
+      ( vx vy vz cv cz wcel wa cmul wceq wrex copab cdvds czring cdsr cfv simpl
+      co anim1i wtru a1i zmulcl ancoms eleq1 syl5ibcom rexlimdva impbii opabbii
+      imp simpr jca31 df-dvds cbs zringbas crg csrg zringring ringsrg zringmulr
+      eqidd mp1i cmulr dvdsrvald mptru 3eqtr4i ) ADZEFZBDZEFZGZCDZVEHQZVGIZCEJZ
+      GZABKVFVMGZABKZLMNOZVNVOABVNVOVIVFVMVFVHPRVOVFVHVMVFVMPVFVMVHVFVLVHCEVFVJ
+      EFZGVKEFZVLVHVRVFVSVJVEUAUBVKVGEUCUDUEUHVFVMUIUJUFUGABCUKVQVPISABCEVQMHEM
+      ULOISUMTSVQUSMUNFMUOFSUPMUQUTHMVAOISURTVBVCVD $.
+  $}
+
 
 $(
 ###############################################################################
