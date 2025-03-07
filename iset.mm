@@ -153192,6 +153192,12 @@ $)
      9-Jun-2019.) $)
   df-zring $a |- ZZring = ( CCfld |`s ZZ ) $.
 
+  $( The ring of integers is a commutative ring.  (Contributed by AV,
+     13-Jun-2019.) $)
+  zringcrng $p |- ZZring e. CRing $=
+    ( ccnfld ccrg wcel csubrg cfv czring cncrng zsubrg df-zring subrgcrng mp2an
+    cz ) ABCLADECFBCGHLAFIJK $.
+
 
 $(
 ###############################################################################
