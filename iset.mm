@@ -153208,6 +153208,11 @@ $)
   zringabl $p |- ZZring e. Abel $=
     ( czring crg wcel cabl zringring ringabl ax-mp ) ABCADCEAFG $.
 
+  $( The ring of integers is an (additive) group.  (Contributed by AV,
+     10-Jun-2019.) $)
+  zringgrp $p |- ZZring e. Grp $=
+    ( czring crg wcel cgrp zringring ringgrp ax-mp ) ABCADCEAFG $.
+
 
 $(
 ###############################################################################
