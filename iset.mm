@@ -153139,6 +153139,12 @@ $)
        (Contributed by Mario Carneiro, 18-Jun-2015.) $)
     nn0subm $p |- NN0 e. ( SubMnd ` CCfld ) $=
       ( vx vy cn0 cv nn0cn nn0addcl 0nn0 cnsubmlem ) ABCADZEIBDFGH $.
+
+    $( The nonnegative reals form a submonoid of the complex numbers.
+       (Contributed by Mario Carneiro, 20-Jun-2015.) $)
+    rege0subm $p |- ( 0 [,) +oo ) e. ( SubMnd ` CCfld ) $=
+      ( vx vy cc0 cpnf cico co cv wcel rge0ssre sseli recnd 0e0icopnf cnsubmlem
+      cr ge0addcl ) ABCDEFZAGZPHQPNQIJKQBGOLM $.
   $}
 
 
