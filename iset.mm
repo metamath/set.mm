@@ -153239,6 +153239,12 @@ $)
       ADSRVAUAUBUCEURUPHLABUPTUDURTUEUFUMUNBUJFUQUTOUOBUMUNUGUHABUIUKUL $.
   $}
 
+  $( The multiplication operation of the ring of integers.  (Contributed by
+     Thierry Arnoux, 1-Nov-2017.)  (Revised by AV, 9-Jun-2019.) $)
+  zringmulr $p |- x. = ( .r ` ZZring ) $=
+    ( cvv wcel ccnfld cmul czring cmulr cfv wceq zex cnfldex df-zring ressmulrg
+    cz cnfldmul mp2an ) MABCABDEFGHIJMCEDAAKNLO $.
+
 
 $(
 ###############################################################################
