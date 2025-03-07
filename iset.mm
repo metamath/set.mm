@@ -145473,6 +145473,23 @@ $)
   $}
 
   ${
+    $d x B $.  $d x G $.  $d x H $.  $d x S $.  $d x .0. $.
+    submnd0.b $e |- B = ( Base ` G ) $.
+    submnd0.z $e |- .0. = ( 0g ` G ) $.
+    submnd0.h $e |- H = ( G |`s S ) $.
+    $( The zero of a submonoid is the same as the zero in the parent monoid.
+       (Note that we must add the condition that the zero of the parent monoid
+       is actually contained in the submonoid, because it is possible to have
+       "subsets that are monoids" which are not submonoids because they have a
+       different identity element.  (Contributed by Mario Carneiro,
+       10-Jan-2015.) $)
+    submnd0 $p |- ( ( ( G e. Mnd /\ H e. Mnd ) /\ ( S C_ B /\ .0. e. S ) ) ->
+      .0. = ( 0g ` H ) ) $=
+      ( cmnd wcel wa wss c0g cfv wceq simpll simprr simprl ress0g syl3anc ) CIJ
+      ZDIJZKZBALZEBJZKZKUAUEUDEDMNOUAUBUFPUCUDUEQUCUDUERBACDEHFGST $.
+  $}
+
+  ${
     $d A v w $.  $d B v w $.  $d .0. v w $.  $d .+ v w $.  $d ph v w $.
     mndinvmod.b $e |- B = ( Base ` G ) $.
     mndinvmod.0 $e |- .0. = ( 0g ` G ) $.
