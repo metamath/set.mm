@@ -153128,6 +153128,12 @@ $)
     zsubrg $p |- ZZ e. ( SubRing ` CCfld ) $=
       ( vx vy cz cv zcn zaddcl znegcl 1z zmulcl cnsubrglem ) ABCADZEKBDZFKGHKLI
       J $.
+
+    $( The gaussian integers form a subring of the complex numbers.
+       (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+    gzsubrg $p |- Z[i] e. ( SubRing ` CCfld ) $=
+      ( vx vy cgz cv gzcn gzaddcl gznegcl c1 cz 1z zgz ax-mp gzmulcl cnsubrglem
+      wcel ) ABCADZEPBDZFPGHIOHCOJHKLPQMN $.
   $}
 
 
