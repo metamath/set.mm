@@ -153121,6 +153121,15 @@ $)
       UIUJUK $.
   $}
 
+  ${
+    $d x y z R $.
+    $( The integers form a subring of the complex numbers.  (Contributed by
+       Mario Carneiro, 4-Dec-2014.) $)
+    zsubrg $p |- ZZ e. ( SubRing ` CCfld ) $=
+      ( vx vy cz cv zcn zaddcl znegcl 1z zmulcl cnsubrglem ) ABCADZEKBDZFKGHKLI
+      J $.
+  $}
+
 
 $(
 ###############################################################################
