@@ -153134,6 +153134,11 @@ $)
     gzsubrg $p |- Z[i] e. ( SubRing ` CCfld ) $=
       ( vx vy cgz cv gzcn gzaddcl gznegcl c1 cz 1z zgz ax-mp gzmulcl cnsubrglem
       wcel ) ABCADZEPBDZFPGHIOHCOJHKLPQMN $.
+
+    $( The nonnegative integers form a submonoid of the complex numbers.
+       (Contributed by Mario Carneiro, 18-Jun-2015.) $)
+    nn0subm $p |- NN0 e. ( SubMnd ` CCfld ) $=
+      ( vx vy cn0 cv nn0cn nn0addcl 0nn0 cnsubmlem ) ABCADZEIBDFGH $.
   $}
 
 
