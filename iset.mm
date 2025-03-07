@@ -153109,6 +153109,16 @@ $)
         VICMZVKVNVQVJBCFUEVQVMVIUFZCVQVINMVMVRUGEVIUHUIGUJUKULJUMMJUNMVFVGVHVPU
         OUPURJUSABINRCJVLUTVAVLVBVCVDVE $.
     $}
+
+    cnsubrglem.4 $e |- 1 e. A $.
+    cnsubrglem.5 $e |- ( ( x e. A /\ y e. A ) -> ( x x. y ) e. A ) $.
+    $( Lemma for ~ resubdrg and friends.  (Contributed by Mario Carneiro,
+       4-Dec-2014.) $)
+    cnsubrglem $p |- A e. ( SubRing ` CCfld ) $=
+      ( ccnfld csubrg cfv wcel csubg c1 cv cmul co wral cnsubglem rgen2 crg w3a
+      wb cnring cc cnfldbas cnfld1 cnfldmul issubrg2 ax-mp mpbir3an ) CIJKLZCIM
+      KLZNCLZAOBOPQCLZBCRACRZABCNDEFGSGUOABCCHTIUALULUMUNUPUBUCUDABCUEIPNUFUGUH
+      UIUJUK $.
   $}
 
 
