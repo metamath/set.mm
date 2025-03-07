@@ -153198,6 +153198,11 @@ $)
     ( ccnfld ccrg wcel csubrg cfv czring cncrng zsubrg df-zring subrgcrng mp2an
     cz ) ABCLADECFBCGHLAFIJK $.
 
+  $( The ring of integers is a ring.  (Contributed by AV, 20-May-2019.)
+     (Revised by AV, 9-Jun-2019.)  (Proof shortened by AV, 13-Jun-2019.) $)
+  zringring $p |- ZZring e. Ring $=
+    ( czring ccrg wcel crg zringcrng crngring ax-mp ) ABCADCEAFG $.
+
 
 $(
 ###############################################################################
