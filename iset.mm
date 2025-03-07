@@ -153158,6 +153158,42 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Ring of integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ("Integer", 25-May-2019,
+  ~ https://en.wikipedia.org/wiki/Integer ) "The integers form a unital ring
+  which is the most basic one, in the following sense: for any unital ring,
+  there is a unique ring homomorphism from the integers into this ring.  This
+  universal property, namely to be an initial object in the category of
+  [[unital] rings, characterizes the ring ` Z ` ."  In set.mm, there was no
+  explicit definition for the ring of integers until June 2019, but it was
+  denoted by ` ( CCfld |``s ZZ ) ` , the field of complex numbers restricted to
+  the integers.  In ~ zringring it is shown that this restriction is a ring (it
+  is actually a principal ideal ring as shown in ~ zringlpir ), and ~ zringbas
+  shows that its base set is the integers.  As of June 2019, there is an
+  abbreviation of this expression as Definition ~ df-zring of the ring of
+  integers.
+
+  Remark: Instead of using the symbol "ZZrng" analogous to ` CCfld ` used for
+  the field of complex numbers, we have chosen the version with an "i" to
+  indicate that the ring of integers is a unital ring, see also Wikipedia ("Rng
+  (algebra)", 9-Jun-2019, ~ https://en.wikipedia.org/wiki/Rng_(algebra) ).
+
+$)
+
+  $c ZZring $.
+
+  $( Extend class notation with the (unital) ring of integers. $)
+  czring $a class ZZring $.
+
+  $( The (unital) ring of integers.  (Contributed by Alexander van der Vekens,
+     9-Jun-2019.) $)
+  df-zring $a |- ZZring = ( CCfld |`s ZZ ) $.
+
+
+$(
 ###############################################################################
   BASIC TOPOLOGY
 ###############################################################################
@@ -170404,6 +170440,9 @@ htmldef "CCfld" as "&#8450;<SUB>fld</SUB>";
   althtmldef "CCfld" as "&#8450;<SUB>fld</SUB>";
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "CCfld" as "\mathrm{CCfld}";
+htmldef "ZZring" as "&#8484;<SUB>ring</SUB>";
+  althtmldef "ZZring" as "&#8484;<SUB>ring</SUB>";
+  latexdef "ZZring" as "\mathrm{ZZring}";
 htmldef "fBas" as
     "<IMG SRC='_fbas.gif' WIDTH=29 HEIGHT=19 ALT=' fBas' TITLE='fBas'>";
   althtmldef "fBas" as "fBas";
