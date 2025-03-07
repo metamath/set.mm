@@ -153094,6 +153094,21 @@ $)
         wb ) CGHIJZCKLZMCJZANBNOPCJZBCQACQZACKDRFUOABCCESGTJGUAJULUMUNUPUBUKUCG
         UDABKOCGMUEUFUGUHUIUJ $.
     $}
+
+    cnsubglem.3 $e |- ( x e. A -> -u x e. A ) $.
+    ${
+      $d A x y w $.  $d B w $.
+      cnsubglem.4 $e |- B e. A $.
+      $( Lemma for ~ cnsubrglem and friends.  (Contributed by Mario Carneiro,
+         4-Dec-2014.) $)
+      cnsubglem $p |- A e. ( SubGrp ` CCfld ) $=
+        ( vw ccnfld csubg cfv wcel cc wss cv wex caddc co wral cminusg wa ssriv
+        elex2 ralrimiva cneg wceq cnfldneg syl eqeltrd jca rgen crg cgrp w3a wb
+        ax-mp cnring ringgrp cnfldbas cnfldadd eqid issubg2m mp2b mpbir3an ) CJ
+        KLMZCNOZIPCMIQZAPZBPRSCMZBCTZVIJUALZLZCMZUBZACTZACNEUCDCMVHHIDCUDUQVOAC
+        VICMZVKVNVQVJBCFUEVQVMVIUFZCVQVINMVMVRUGEVIUHUIGUJUKULJUMMJUNMVFVGVHVPU
+        OUPURJUSABINRCJVLUTVAVLVBVCVDVE $.
+    $}
   $}
 
 
