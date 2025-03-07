@@ -153220,6 +153220,13 @@ $)
     a1i cnfldex wss zsscn ressbas2d mptru ) ABCDEFAGBHIBHAJKEFLOGHCDEFMOHINFPOA
     GQFROST $.
 
+  $( The addition operation of the ring of integers.  (Contributed by Thierry
+     Arnoux, 8-Nov-2017.)  (Revised by AV, 9-Jun-2019.) $)
+  zringplusg $p |- + = ( +g ` ZZring ) $=
+    ( caddc czring cplusg cfv wceq cz ccnfld cvv cress co df-zring a1i cnfldadd
+    wtru wcel zex cnfldex ressplusgd mptru ) ABCDENFAGBHHBGFIJENKLAGCDENMLFHONP
+    LGHONQLRS $.
+
 
 $(
 ###############################################################################
