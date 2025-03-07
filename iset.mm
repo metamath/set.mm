@@ -153279,6 +153279,13 @@ $)
     ( cvv wcel ccnfld cmul czring cmulr cfv wceq zex cnfldex df-zring ressmulrg
     cz cnfldmul mp2an ) MABCABDEFGHIJMCEDAAKNLO $.
 
+  $( The zero element of the ring of integers.  (Contributed by Thierry Arnoux,
+     1-Nov-2017.)  (Revised by AV, 9-Jun-2019.) $)
+  zring0 $p |- 0 = ( 0g ` ZZring ) $=
+    ( ccnfld cmnd wcel cc0 cz wss czring c0g cfv wceq ccrg crg crngring ringmnd
+    cc cncrng mp2b 0z zsscn df-zring cnfldbas cnfld0 ress0g mp3an ) ABCZDECEOFD
+    GHIJAKCALCUEPAMANQRSEOAGDTUAUBUCUD $.
+
 
 $(
 ###############################################################################
