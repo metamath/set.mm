@@ -153145,6 +153145,15 @@ $)
     rege0subm $p |- ( 0 [,) +oo ) e. ( SubMnd ` CCfld ) $=
       ( vx vy cc0 cpnf cico co cv wcel rge0ssre sseli recnd 0e0icopnf cnsubmlem
       cr ge0addcl ) ABCDEFZAGZPHQPNQIJKQBGOLM $.
+
+    $( The integers are a subset of any subring of the complex numbers.
+       (Contributed by Mario Carneiro, 15-Oct-2015.) $)
+    zsssubrg $p |- ( R e. ( SubRing ` CCfld ) -> ZZ C_ R ) $=
+      ( vx ccnfld csubrg cfv wcel cz cv wa c1 cmg co cmul wceq ax-1cn cnfldmulg
+      cc simpr sylancl adantr zcn adantl mulridd eqtrd csubg subrgsubg subrg1cl
+      cnfld1 eqid subgmulgcl syl3anc eqeltrrd ex ssrdv ) ACDEFZBGAUOBHZGFZUPAFU
+      OUQIZUPJCKEZLZUPAURUTUPJMLZUPURUQJQFUTVANUOUQRZOUPJPSURUPUQUPQFUOUPUAUBUC
+      UDURACUEEFZUQJAFZUTAFUOVCUQACUFTVBUOVDUQACJUHUGTAUSCUPJUSUIUJUKULUMUN $.
   $}
 
 
