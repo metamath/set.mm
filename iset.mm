@@ -152770,6 +152770,38 @@ $)
       URUPUSUTVAWDVJVPQRVCVDVEVA $.
   $}
 
+  ${
+    $d s x y B $.  $d s x y K $.  $d s x y ph $.  $d s x y L $.
+    subrgpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    subrgpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    subrgpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    subrgpropd.4 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    $( If two structures have the same group components (properties), they have
+       the same set of subrings.  (Contributed by Mario Carneiro,
+       9-Feb-2015.) $)
+    subrgpropd $p |- ( ph -> ( SubRing ` K ) = ( SubRing ` L ) ) $=
+      ( vs cfv crg wcel wa co adantr wceq cvv eqid csubrg cv subrgrcl ringpropd
+      wi a1i imbitrrid cress cbs wss cur cin ineq2d eqidd simplr simpr ressbasd
+      elvd eqtrd biimpa cplusg elinel2 anim12i adantlr ressplusgd oveqdr sylan2
+      wb 3eqtr3d cmulr ressmulrg mpan adantl sylancr anbi12d eqtr3d rngidpropdg
+      vex sseq2d eleq1d issubrg 3bitr4g ex pm5.21ndd eqrdv ) AKEUALZFUALZAEMNZK
+      UBZWFNZWIWGNZWJWHUEAWIEUCUFWKWHAFMNZWIFUCABCDEFGHIJUDZUGAWHWJWKVHAWHOZWHE
+      WIUHPZMNZOZWIEUILZUJZEUKLZWINZOZOWLFWIUHPZMNZOZWIFUILZUJZFUKLZWINZOZOWJWK
+      WNWQXEXBXJWNWHWLWPXDAWHWLVHWHWMQWNBCWIDULZWOXCWNXKWIWRULZWOUILZAXKXLRWHAD
+      WRWIGUMQWNXLXMRKWNWISNZOZWIWRWOSEMXOWOUNZXOWRUNAWHXNUOZWNXNUPZUQURUSWNXKW
+      IXFULZXCUILZAXKXSRWHADXFWIHUMQWNXSXTRKXOWIXFXCSFMXOXCUNZXOXFUNWNWLXNAWHWL
+      WMUTZQZXRUQURUSBUBZXKNZCUBZXKNZOZWNYDDNZYFDNZOZYDYFWOVALZPZYDYFXCVALZPZRY
+      EYIYGYJYDWIDVBYFWIDVBVCZWNYKOZYDYFEVALZPZYDYFFVALZPZYMYOAYKYSUUARWHIVDWNY
+      KBCYRYLWNYRYLRKXOWIYREWOSMXPXOYRUNXRXQVEURVFWNYKBCYTYNWNYTYNRKXOWIYTFXCSM
+      YAXOYTUNXRYCVEURVFVIVGYHWNYKYDYFWOVJLZPZYDYFXCVJLZPZRYPYQYDYFEVJLZPZYDYFF
+      VJLZPZUUCUUEAYKUUGUUIRWHJVDZWNYKBCUUFUUBWHUUFUUBRZAXNWHUUKKVRZWIEWOUUFSMW
+      OTUUFTVKVLVMVFWNYKBCUUHUUDWNXNWLUUHUUDRUULYBWIFXCUUHSMXCTUUHTVKVNVFVIVGUD
+      VOWNWSXGXAXIAWSXGVHWHAWRXFWIADWRXFGHVPVSQWNWTXHWIWNBCDEFMMADWRRWHGQADXFRW
+      HHQUUJAWHUPYBVQVTVOVOWIWREWTWRTWTTWAWIXFFXHXFTXHTWAWBWCWDWE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
