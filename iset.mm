@@ -153170,11 +153170,10 @@ $(
   [[unital] rings, characterizes the ring ` Z ` ."  In set.mm, there was no
   explicit definition for the ring of integers until June 2019, but it was
   denoted by ` ( CCfld |``s ZZ ) ` , the field of complex numbers restricted to
-  the integers.  In ~ zringring it is shown that this restriction is a ring (it
-  is actually a principal ideal ring as shown in ~ zringlpir ), and ~ zringbas
-  shows that its base set is the integers.  As of June 2019, there is an
-  abbreviation of this expression as Definition ~ df-zring of the ring of
-  integers.
+  the integers.  In ~ zringring it is shown that this restriction is a ring,
+  and ~ zringbas shows that its base set is the integers.  As of June 2019,
+  there is an abbreviation of this expression as Definition ~ df-zring of
+  the ring of integers.
 
   Remark: Instead of using the symbol "ZZrng" analogous to ` CCfld ` used for
   the field of complex numbers, we have chosen the version with an "i" to
