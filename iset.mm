@@ -153286,6 +153286,12 @@ $)
     cc cncrng mp2b 0z zsscn df-zring cnfldbas cnfld0 ress0g mp3an ) ABCZDECEOFD
     GHIJAKCALCUEPAMANQRSEOAGDTUAUBUCUD $.
 
+  $( The unity element of the ring of integers.  (Contributed by Thierry
+     Arnoux, 1-Nov-2017.)  (Revised by AV, 9-Jun-2019.) $)
+  zring1 $p |- 1 = ( 1r ` ZZring ) $=
+    ( cz ccnfld csubrg cfv wcel c1 czring cur wceq zsubrg df-zring cnfld1 ax-mp
+    subrg1 ) ABCDEFGHDIJABGFKLNM $.
+
 
 $(
 ###############################################################################
