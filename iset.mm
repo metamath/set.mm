@@ -145456,6 +145456,23 @@ $)
   $}
 
   ${
+    $d x .0. $.  $d x A $.  $d x B $.  $d x R $.  $d x S $.
+    ress0g.s $e |- S = ( R |`s A ) $.
+    ress0g.b $e |- B = ( Base ` R ) $.
+    ress0g.0 $e |- .0. = ( 0g ` R ) $.
+    $( ` 0g ` is unaffected by restriction.  This is a bit more generic than
+       ~ submnd0 .  (Contributed by Thierry Arnoux, 23-Oct-2017.) $)
+    ress0g $p |- ( ( R e. Mnd /\ .0. e. A /\ A C_ B ) -> .0. = ( 0g ` S ) ) $=
+      ( vx cmnd wcel wss w3a cfv co wceq a1i cbs cvv syl2anc cplusg cress simp1
+      simp3 ressbas2d eqidd wfn basfn elexd funfvex sylancr eqeltrid ressplusgd
+      funfni ssexd simp2 cv wa simpl1 sselda eqid mndlid mndrid grpidd ) CJKZEA
+      KZABLZMZIACUANZDEVHABDCJDCAUBOPVHFQZBCRNZPVHGQVEVFVGUCZVEVFVGUDZUEVHAVICD
+      SJVJVHVIUFVHABSVHBVKSGVHRSUGCSKVKSKZUHVHCJVLUIVNSCRCRUJUNUKULVMUOVLUMVEVF
+      VGUPVHIUQZAKZURZVEVOBKZEVOVIOVOPVEVFVGVPUSZVHABVOVMUTZBVICVOEGVIVAZHVBTVQ
+      VEVRVOEVIOVOPVSVTBVICVOEGWAHVCTVD $.
+  $}
+
+  ${
     $d A v w $.  $d B v w $.  $d .0. v w $.  $d .+ v w $.  $d ph v w $.
     mndinvmod.b $e |- B = ( Base ` G ) $.
     mndinvmod.0 $e |- .0. = ( 0g ` G ) $.
