@@ -153213,6 +153213,13 @@ $)
   zringgrp $p |- ZZring e. Grp $=
     ( czring crg wcel cgrp zringring ringgrp ax-mp ) ABCADCEAFG $.
 
+  $( The integers are the base of the ring of integers.  (Contributed by
+     Thierry Arnoux, 31-Oct-2017.)  (Revised by AV, 9-Jun-2019.) $)
+  zringbas $p |- ZZ = ( Base ` ZZring ) $=
+    ( cz czring cbs cfv wceq wtru cc ccnfld cvv cress co df-zring cnfldbas wcel
+    a1i cnfldex wss zsscn ressbas2d mptru ) ABCDEFAGBHIBHAJKEFLOGHCDEFMOHINFPOA
+    GQFROST $.
+
 
 $(
 ###############################################################################
