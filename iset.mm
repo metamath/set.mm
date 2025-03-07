@@ -153080,6 +153080,22 @@ $)
       KVL $.
   $}
 
+  ${
+    $d x y A $.
+    cnsubglem.1 $e |- ( x e. A -> x e. CC ) $.
+    cnsubglem.2 $e |- ( ( x e. A /\ y e. A ) -> ( x + y ) e. A ) $.
+    ${
+      cnsubmlem.3 $e |- 0 e. A $.
+      $( Lemma for ~ nn0subm and friends.  (Contributed by Mario Carneiro,
+         18-Jun-2015.) $)
+      cnsubmlem $p |- A e. ( SubMnd ` CCfld ) $=
+        ( ccnfld csubmnd cfv wcel cc wss cc0 cv caddc co wral ssriv rgen2 crg
+        cmnd w3a cnring ringmnd cnfldbas cnfld0 cnfldadd issubm mp2b mpbir3an
+        wb ) CGHIJZCKLZMCJZANBNOPCJZBCQACQZACKDRFUOABCCESGTJGUAJULUMUNUPUBUKUCG
+        UDABKOCGMUEUFUGUHUIUJ $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
