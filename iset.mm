@@ -153292,6 +153292,12 @@ $)
     ( cz ccnfld csubrg cfv wcel c1 czring cur wceq zsubrg df-zring cnfld1 ax-mp
     subrg1 ) ABCDEFGHDIJABGFKLNM $.
 
+  $( The ring of integers is a nonzero ring.  (Contributed by AV,
+     18-Apr-2020.) $)
+  zringnzr $p |- ZZring e. NzRing $=
+    ( czring cnzr wcel crg cc0 wne zringring 1ne0 zring1 zring0 isnzr mpbir2an
+    c1 ) ABCADCMEFGHAMEIJKL $.
+
 
 $(
 ###############################################################################
