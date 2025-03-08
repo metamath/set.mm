@@ -148897,6 +148897,22 @@ $)
       EDYBXSXDXCFWDWLXCCVQURVLVMVNVOVPUDKLCDEGHIVRVSVT $.
   $}
 
+  ${
+    $d x z A $.  $d z B $.  $d u w x y z G $.  $d u w z N $.  $d u w x y z S $.
+    $d u w x y z .+ $.  $d w z H $.  $d u w x y z X $.
+    elnmz.1 $e |- N = { x e. X |
+      A. y e. X ( ( x .+ y ) e. S <-> ( y .+ x ) e. S ) } $.
+    $( Elementhood in the normalizer.  (Contributed by Mario Carneiro,
+       18-Jan-2015.) $)
+    elnmz $p |- ( A e. N <-> ( A e. X /\
+      A. z e. X ( ( A .+ z ) e. S <-> ( z .+ A ) e. S ) ) ) $=
+      ( cv co wcel wb wral wceq oveq2 eleq1d oveq1 bibi12d cbvralvw ralbidv
+      bitrid elrab2 ) AJZBJZEKZFLZUEUDEKZFLZMZBHNZDCJZEKZFLZULDEKZFLZMZCHNZADHG
+      UKUDULEKZFLZULUDEKZFLZMZCHNUDDOZURUJVCBCHUEULOZUGUTUIVBVEUFUSFUEULUDEPQVE
+      UHVAFUEULUDERQSTVDVCUQCHVDUTUNVBUPVDUSUMFUDDULERQVDVAUOFUDDULEPQSUAUBIUC
+      $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
