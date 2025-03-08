@@ -153331,8 +153331,8 @@ $)
       PJABCRSDTUA $.
   $}
 
-  $( The multiplication group of the ring of integers is the restriction of the
-     multiplication group of the complex numbers to the integers.  (Contributed
+  $( The multiplicative group of the ring of integers is the restriction of the
+     multiplicative group of the complex numbers to the integers.  (Contributed
      by AV, 15-Jun-2019.) $)
   zringmpg $p |- ( ( mulGrp ` CCfld ) |`s ZZ ) = ( mulGrp ` ZZring ) $=
     ( ccnfld crg wcel cz cvv cmgp cfv cress co czring wceq cnring df-zring eqid
