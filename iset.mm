@@ -148911,6 +148911,14 @@ $)
       UKUDULEKZFLZULUDEKZFLZMZCHNUDDOZURUJVCBCHUEULOZUGUTUIVBVEUFUSFUEULUDEPQVE
       UHVAFUEULUDERQSTVDVCUQCHVDUTUNVBUPVDUSUMFUDDULERQVDVAUOFUDDULEPQSUAUBIUC
       $.
+
+    $( Defining property of the normalizer.  (Contributed by Mario Carneiro,
+       18-Jan-2015.) $)
+    nmzbi $p |- ( ( A e. N /\ B e. X ) ->
+      ( ( A .+ B ) e. S <-> ( B .+ A ) e. S ) ) $=
+      ( vz wcel cv co wb wral elnmz simprbi wceq oveq2 eleq1d bibi12d rspccva
+      oveq1 sylan ) CGKZCJLZEMZFKZUFCEMZFKZNZJHOZDHKCDEMZFKZDCEMZFKZNZUECHKULAB
+      JCEFGHIPQUKUQJDHUFDRZUHUNUJUPURUGUMFUFDCESTURUIUOFUFDCEUCTUAUBUD $.
   $}
 
 
