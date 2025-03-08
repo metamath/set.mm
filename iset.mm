@@ -148387,6 +148387,18 @@ $)
   $}
 
   ${
+    $d G s w $.
+    $( The class of subgroups of a group is a set.  (Contributed by Jim
+       Kingdon, 8-Mar-2025.) $)
+    subgex $p |- ( G e. Grp -> ( SubGrp ` G ) e. _V ) $=
+      ( vs vw cgrp wcel csubg cfv cv cress cbs cpw crab cvv df-subg fveq2 pweqd
+      co wceq oveq1 eleq1d rabeqbidv id basfn elex funfvex funfni sylancr pwexd
+      wfn rabexg syl fvmptd3 eqeltrd ) ADEZAFGABHZIQZDEZBAJGZKZLZMUNCACHZUOIQZD
+      EZBVAJGZKZLUTDFMCBNVAARZVCUQBVEUSVFVDURVAAJOPVFVBUPDVAAUOISTUAUNUBUNUSMEU
+      TMEUNURMUNJMUIAMEURMEZUCADUDVGMAJAJUEUFUGUHUQBUSMUJUKZULVHUM $.
+  $}
+
+  ${
     subggrp.h $e |- H = ( G |`s S ) $.
     $( A subgroup is a group.  (Contributed by Mario Carneiro, 2-Dec-2014.) $)
     subggrp $p |- ( S e. ( SubGrp ` G ) -> H e. Grp ) $=
