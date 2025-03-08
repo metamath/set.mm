@@ -153321,6 +153321,16 @@ $)
     eqid ) ABCZADEFZFZAGZUGUIUJHZAUJIJKHZUGAAPLDMCUGUGUJBCUKULNOUGQARBIDUHAUJKS
     TUAUHUFUBUCUDUE $.
 
+  ${
+    zringsubgval.m $e |- .- = ( -g ` ZZring ) $.
+    $( Subtraction in the ring of integers.  (Contributed by AV,
+       3-Aug-2019.) $)
+    zringsubgval $p |- ( ( X e. ZZ /\ Y e. ZZ ) -> ( X - Y ) = ( X .- Y ) ) $=
+      ( cz ccnfld csubg cfv wcel cmin wceq csubrg zsubrg subrgsubg ax-mp czring
+      co cnfldsub df-zring subgsub mp3an1 ) EFGHIZBEICEIBCJQBCAQKEFLHIUBMEFNOEF
+      PJABCRSDTUA $.
+  $}
+
 
 $(
 ###############################################################################
