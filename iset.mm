@@ -148805,6 +148805,30 @@ $)
       UMUNUKBCDEFACQNZULGRABDLPULHRAULSTIBUCUAUDUEABUIAUOBUINGBCEUFUBUGUH $.
   $}
 
+  ${
+    $d x y A $.  $d b g p s x y z G $.  $d b g p s x y z .+ $.  $d s x y z S $.
+    $d y B $.  $d b g p s x y z X $.
+    isnsg.1 $e |- X = ( Base ` G ) $.
+    isnsg.2 $e |- .+ = ( +g ` G ) $.
+    $( Property of being a normal subgroup.  (Contributed by Mario Carneiro,
+       18-Jan-2015.) $)
+    isnsg $p |- ( S e. ( NrmSGrp ` G ) <-> ( S e. ( SubGrp ` G ) /\
+      A. x e. X A. y e. X ( ( x .+ y ) e. S <-> ( y .+ x ) e. S ) ) ) $=
+      ( vg vp vs vb cfv wcel cv co wral cplusg cbs cvv cnsg cgrp wb wsbc df-nsg
+      csubg crab mptrcl subgrcl adantr wceq fveq2 wfn basfn funfvex funfni mpan
+      elv a1i eqtr4di plusgslid slotex simpl fveq2d simplr simpr eleq1d bibi12d
+      wa oveqd raleqbidv sbcied2 rabeqbidv id subgex rabexg syl eleq2d 2ralbidv
+      fvmptd3 eleq2 elrab bitrdi pm5.21nii ) DEUAMZNZEUBNZDEUFMZNZAOZBOZCPZDNZW
+      KWJCPZDNZUCZBFQAFQZVIZIUBWJWKJOZPZKOZNZWKWJWSPZXANZUCZBLOZQZAXFQZJIOZRMZU
+      DZLXISMZUDZKXIUFMZUGZUADEABIKJLUEZUHWIWGWQDEUIUJWGWFDWLXANZWNXANZUCZBFQZA
+      FQZKWHUGZNWRWGWEYBDWGIEXOYBUBUATXPXIEUKZXMYAKXNWHXIEUFULYCXKYALXLFTXLTNZY
+      CYDISTUMXITNYDUNYDTXISXISUOUPUQURUSYCXLESMFXIESULGUTYCXFFUKZVIZXHYAJXJCTX
+      JTNZYFYGIXIRTVAVBURUSYFXJERMCYFXIERYCYEVCVDHUTYFWSCUKZVIZXGXTAXFFYCYEYHVE
+      ZYIXEXSBXFFYJYIXBXQXDXRYIWTWLXAYIWSCWJWKYFYHVFZVJVGYIXCWNXAYIWSCWKWJYKVJV
+      GVHVKVKVLVLVMWGVNWGWHTNYBTNEVOYAKWHTVPVQVTVRYAWQKDWHXADUKZXSWPABFFYLXQWMX
+      RWOXADWLWAXADWNWAVHVSWBWCWD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
