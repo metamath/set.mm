@@ -148861,6 +148861,21 @@ $)
     nsgsubg $p |- ( S e. ( NrmSGrp ` G ) -> S e. ( SubGrp ` G ) ) $=
       ( vx vy cnsg cfv wcel csubg cv cplusg co wb cbs wral eqid isnsg simplbi )
       ABEFGABHFGCIZDIZBJFZKAGSRTKAGLDBMFZNCUANCDTABUAUAOTOPQ $.
+
+    isnsg3.1 $e |- X = ( Base ` G ) $.
+    isnsg3.2 $e |- .+ = ( +g ` G ) $.
+    isnsg3.3 $e |- .- = ( -g ` G ) $.
+    $( The conjugation of an element of a normal subgroup is in the subgroup.
+       (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    nsgconj $p |- ( ( S e. ( NrmSGrp ` G ) /\ A e. X /\ B e. S ) ->
+      ( ( A .+ B ) .- A ) e. S ) $=
+      ( cnsg cfv wcel w3a co cgrp wceq syl syl3anc eqeltrd csubg 3ad2ant1 simp2
+      nsgsubg subgrcl wss subgss simp3 sseldd grpaddsubass syl13anc grpnpcan wb
+      simp1 grpsubcl nsgbi mpbid ) DEKLMZAGMZBDMZNZABCOAFOZABAFOZCOZDVAEPMZUSBG
+      MZUSVBVDQVADEUALMZVEURUSVGUTDEUDUBZDEUERZURUSUTUCZVADGBVAVGDGUFVHGDEHUGRU
+      RUSUTUHZUIZVJGCEFABAHIJUJUKVAVCACOZDMZVDDMZVAVMBDVAVEVFUSVMBQVIVLVJGCEFBA
+      HIJULSVKTVAURVCGMZUSVNVOUMURUSUTUNVAVEVFUSVPVIVLVJGEFBAHJUOSVJVCACDEGHIUP
+      SUQT $.
   $}
 
 
