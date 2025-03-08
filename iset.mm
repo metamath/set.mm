@@ -148853,6 +148853,16 @@ $)
       NVIUPVKVFUMDUSBACTSVKVHUODUSBACRSUFUGUHUI $.
   $}
 
+  ${
+    $d w x y z .- $.  $d w x y z G $.  $d w x y z .+ $.  $d w x y z S $.
+    $d w x y z X $.
+    $( A normal subgroup is a subgroup.  (Contributed by Mario Carneiro,
+       18-Jan-2015.) $)
+    nsgsubg $p |- ( S e. ( NrmSGrp ` G ) -> S e. ( SubGrp ` G ) ) $=
+      ( vx vy cnsg cfv wcel csubg cv cplusg co wb cbs wral eqid isnsg simplbi )
+      ABEFGABHFGCIZDIZBJFZKAGSRTKAGLDBMFZNCUANCDTABUAUAOTOPQ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
