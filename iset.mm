@@ -150791,6 +150791,24 @@ $)
     ( vz cv cvv wcel cnx cbs cfv csn cop cplusg cmulr ctp crg c0 wne eqid ring1
     vex ne0i mp2b ) ABZCDEFGUAHIEJGUAUAIUAIHZIEKGUBILZMDMNOARUCCUAUCPQMUCST $.
 
+  ${
+    $d B x y z $.  $d G x y z $.
+    ringressid.b $e |- B = ( Base ` G ) $.
+    $( A ring restricted to its base set is a ring.  It will usually be the
+       original ring exactly, of course, but to show that needs additional
+       conditions such as those in ~ strressid .  (Contributed by Jim Kingdon,
+       28-Feb-2025.) $)
+    ringressid $p |- ( G e. Ring -> ( G |`s B ) e. Ring ) $=
+      ( vx vy vz crg wcel cplusg cfv cress co cmulr eqidd cbs wceq eqid cgrp cv
+      cvv cur a1i id ssidd ressbas2d basfn elex funfvex funfni sylancr eqeltrid
+      wfn ressplusgd ressmulrg mpancom ringgrp grpressid ringcl ringass ringdir
+      syl ringdi ringidcl ringlidm ringridm isringd ) BGHZDEFABIJZBAKLZBMJZBUAJ
+      ZVGAAVIBGVGVINZABOJZPVGCUBVGUCZVGAUDUEVGAVHBVITGVLVGVHNVGAVMTCVGOTULBTHVM
+      THZUFBGUGVOTBOBOUHUIUJUKZVNUMATHVGVJVIMJPVPABVIVJTGVIQVJQZUNUOVGBRHVIRHBU
+      PABCUQVAABVJDSZESZCVQURABVJVRVSFSZCVQUSAVHBVJVRVSVTCVHQZVQVBAVHBVJVRVSVTC
+      WAVQUTABVKCVKQZVCABVJVKVRCVQWBVDABVJVKVRCVQWBVEVF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -152167,6 +152185,13 @@ $)
 
 
 $(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Division rings and fields
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Ring apartness
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -152285,6 +152310,496 @@ $)
       IZVPXEAYNYOYNVMYOVMVNTVQVOWLXAXDWLWTBCWNWNWLXGNZWNWMAWPWRYPWNRYPWMRWLYLXG
       YMTWLXEXFVRWLXEXFVSVTWAWLXCBCDWNWNWNWLXEXFXBWNGZWBZNZWNWMAWPWRXBYSWNRYSWM
       RWLYRWCWLXEXFYQWDWLXEXFYQWEWLXEXFYQWFWGWHWIBCDWNWMWJWK $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subrings of a ring
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c SubRing $.
+  $c RingSpan $.
+
+  $( Extend class notation with all subrings of a ring. $)
+  csubrg $a class SubRing $.
+
+  $( Extend class notation with span of a set of elements over a ring. $)
+  crgspn $a class RingSpan $.
+
+  ${
+    $d w s t $.
+    $( Define a subring of a ring as a set of elements that is a ring in its
+       own right and contains the multiplicative identity.
+
+       The additional constraint is necessary because the multiplicative
+       identity of a ring, unlike the additive identity of a ring/group or the
+       multiplicative identity of a field, cannot be identified by a local
+       property.  Thus, it is possible for a subset of a ring to be a ring
+       while not containing the true identity if it contains a false identity.
+       For instance, the subset ` ( ZZ X. { 0 } ) ` of ` ( ZZ X. ZZ ) ` (where
+       multiplication is componentwise) contains the false identity
+       ` <. 1 , 0 >. ` which preserves every element of the subset and thus
+       appears to be the identity of the subset, but is not the identity of the
+       larger ring.  (Contributed by Stefan O'Rear, 27-Nov-2014.) $)
+    df-subrg $a |- SubRing = ( w e. Ring |-> { s e. ~P ( Base ` w ) |
+        ( ( w |`s s ) e. Ring /\ ( 1r ` w ) e. s ) } ) $.
+
+    $( The ring-span of a set of elements in a ring is the smallest subring
+       which contains all of them.  (Contributed by Stefan O'Rear,
+       7-Dec-2014.) $)
+    df-rgspn $a |- RingSpan = ( w e. _V |-> ( s e. ~P ( Base ` w ) |->
+        |^| { t e. ( SubRing ` w ) | s C_ t } ) ) $.
+  $}
+
+  ${
+    $d s A $.  $d r s B $.  $d r s .1. $.  $d r s R $.
+    issubrg.b $e |- B = ( Base ` R ) $.
+    issubrg.i $e |- .1. = ( 1r ` R ) $.
+    $( The subring predicate.  (Contributed by Stefan O'Rear, 27-Nov-2014.)
+       (Proof shortened by AV, 12-Oct-2020.) $)
+    issubrg $p |- ( A e. ( SubRing ` R ) <->
+      ( ( R e. Ring /\ ( R |`s A ) e. Ring ) /\ ( A C_ B /\ .1. e. A ) ) ) $=
+      ( vr vs csubrg cfv wcel crg cress co wa cur cbs cvv eleq1d wb wss cv crab
+      cpw df-subrg mptrcl simpll fveq2 eqtr4di pweqd oveq1 anbi12d rabeqbidv id
+      wceq wfn basfn elex funfvex funfni sylancr eqeltrid rabexg fvmptd3 eleq2d
+      pwexd syl oveq2 eleq2 elrab a1i elpw2g anbi1d an12 3bitrd ibar pm5.21nii
+      ) ACIJZKZCLKZVTCAMNZLKZOZABUAZDAKZOZOZGLGUBZHUBZMNZLKZWHPJZWIKZOZHWHQJZUD
+      ZUCZIACGHUEZUFVTWBWFUGVTVSACWIMNZLKZDWIKZOZHBUDZUCZKZWBWFOZWGVTVRXDAVTGCW
+      QXDLIRWRWHCUOZWNXBHWPXCXGWOBXGWOCQJZBWHCQUHEUIUJXGWKWTWMXAXGWJWSLWHCWIMUK
+      SXGWLDWIXGWLCPJDWHCPUHFUISULUMVTUNVTXCRKXDRKVTBRVTBXHREVTQRUPCRKXHRKZUQCL
+      URXIRCQCQUSUTVAVBZVFXBHXCRVCVGVDVEVTXEAXCKZWBWEOZOZWDXLOZXFXEXMTVTXBXLHAX
+      CWIAUOZWTWBXAWEXOWSWALWIACMVHSWIADVIULVJVKVTXKWDXLVTBRKXKWDTXJABRVLVGVMXN
+      XFTVTWDWBWEVNVKVOVTWBWCWFVTWBVPVMVOVQ $.
+  $}
+
+  ${
+    subrgss.1 $e |- B = ( Base ` R ) $.
+    $( A subring is a subset.  (Contributed by Stefan O'Rear, 27-Nov-2014.) $)
+    subrgss $p |- ( A e. ( SubRing ` R ) -> A C_ B ) $=
+      ( csubrg cfv wcel wss cur crg cress co wa eqid issubrg simprbi simpld ) A
+      CEFGZABHZCIFZAGZRCJGCAKLJGMSUAMABCTDTNOPQ $.
+
+    $( Every ring is a subring of itself.  (Contributed by Stefan O'Rear,
+       30-Nov-2014.) $)
+    subrgid $p |- ( R e. Ring -> B e. ( SubRing ` R ) ) $=
+      ( crg wcel cress co wss cur wa csubrg ringressid eqid ringidcl ssid jctil
+      cfv id issubrg syl21anbrc ) BDEZUABAFGDEAAHZBIQZAEZJABKQEUARABCLUAUDUBABU
+      CCUCMZNAOPAABUCCUEST $.
+  $}
+
+  ${
+    subrgring.1 $e |- S = ( R |`s A ) $.
+    $( A subring is a ring.  (Contributed by Stefan O'Rear, 27-Nov-2014.) $)
+    subrgring $p |- ( A e. ( SubRing ` R ) -> S e. Ring ) $=
+      ( csubrg cfv wcel cress co crg wa cbs wss cur eqid issubrg simplbi simprd
+      eqeltrid ) ABEFGZCBAHIZJDTBJGZUAJGZTUBUCKABLFZMBNFZAGKAUDBUEUDOUEOPQRS $.
+
+    $( A subring of a commutative ring is a commutative ring.  (Contributed by
+       Mario Carneiro, 10-Jan-2015.) $)
+    subrgcrng $p |- ( ( R e. CRing /\ A e. ( SubRing ` R ) ) -> S e. CRing ) $=
+      ( ccrg wcel csubrg cfv wa crg cmgp ccmn subrgring adantl cress co mgpress
+      eqid eqidd cmnd crngmgp adantr ringmgp syl eqeltrd simpr subcmnd eqeltrrd
+      iscrng sylanbrc ) BEFZABGHZFZIZCJFZCKHZLFCEFUMUOUKABCDMNZUNBKHZAOPZUPLABC
+      UREULDURRZQZUNAURUSULUNUSSUKURLFUMBURUTUAUBUNUSUPTVAUNUOUPTFUQCUPUPRZUCUD
+      UEUKUMUFUGUHCUPVBUIUJ $.
+  $}
+
+  $( Reverse closure for a subring predicate.  (Contributed by Mario Carneiro,
+     3-Dec-2014.) $)
+  subrgrcl $p |- ( A e. ( SubRing ` R ) -> R e. Ring ) $=
+    ( csubrg cfv wcel crg cress co wa cbs wss cur eqid issubrg simplbi simpld )
+    ABCDEZBFEZBAGHFEZQRSIABJDZKBLDZAEIATBUATMUAMNOP $.
+
+  $( A subring is a subgroup.  (Contributed by Mario Carneiro, 3-Dec-2014.) $)
+  subrgsubg $p |- ( A e. ( SubRing ` R ) -> A e. ( SubGrp ` R ) ) $=
+    ( csubrg cfv wcel cgrp cbs wss cress co csubg crg subrgrcl ringgrp syl eqid
+    subrgss subrgring issubg syl3anbrc ) ABCDEZBFEZABGDZHBAIJZFEZABKDEUABLEUBAB
+    MBNOAUCBUCPZQUAUDLEUEABUDUDPRUDNOUCABUFST $.
+
+  ${
+    subrg0.1 $e |- S = ( R |`s A ) $.
+    subrg0.2 $e |- .0. = ( 0g ` R ) $.
+    $( A subring always has the same additive identity.  (Contributed by Stefan
+       O'Rear, 27-Nov-2014.) $)
+    subrg0 $p |- ( A e. ( SubRing ` R ) -> .0. = ( 0g ` S ) ) $=
+      ( csubrg cfv wcel csubg c0g wceq subrgsubg subg0 syl ) ABGHIABJHIDCKHLABM
+      ABCDEFNO $.
+  $}
+
+  ${
+    subrg1cl.a $e |- .1. = ( 1r ` R ) $.
+    $( A subring contains the multiplicative identity.  (Contributed by Stefan
+       O'Rear, 27-Nov-2014.) $)
+    subrg1cl $p |- ( A e. ( SubRing ` R ) -> .1. e. A ) $=
+      ( csubrg cfv wcel cbs wss crg cress co wa eqid issubrg simprbi simprd ) A
+      BEFGZABHFZIZCAGZRBJGBAKLJGMTUAMASBCSNDOPQ $.
+  $}
+
+  ${
+    subrgbas.b $e |- S = ( R |`s A ) $.
+    $( Base set of a subring structure.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.) $)
+    subrgbas $p |- ( A e. ( SubRing ` R ) -> A = ( Base ` S ) ) $=
+      ( csubrg cfv wcel csubg cbs wceq subrgsubg subgbas syl ) ABEFGABHFGACIFJA
+      BKABCDLM $.
+  $}
+
+  ${
+    $d S x $.  $d R x $.  $d A x $.
+    subrg1.1 $e |- S = ( R |`s A ) $.
+    subrg1.2 $e |- .1. = ( 1r ` R ) $.
+    $( A subring always has the same multiplicative identity.  (Contributed by
+       Stefan O'Rear, 27-Nov-2014.) $)
+    subrg1 $p |- ( A e. ( SubRing ` R ) -> .1. = ( 1r ` S ) ) $=
+      ( vx cfv wcel cur cbs cmulr co wceq wa eqid crg oveqd eqeq1d syldan sylan
+      csubrg cv wral subrg1cl subrgbas eleqtrd subrgss eqsstrrd sselda subrgrcl
+      ringidmlem ressmulrg mpdan anbi12d biimpa ralrimiva wb subrgring isringid
+      syl mpbi2and eqtr4id ) ABUBHZIZDBJHZCJHZFVEVFCKHZIZVFGUCZCLHZMZVJNZVJVFVK
+      MZVJNZOZGVHUDZVGVFNZVEVFAVHABVFVFPZUEABCEUFZUGVEVPGVHVEVJVHIVJBKHZIZVPVEV
+      HWAVJVEVHAWAVTAWABWAPZUHUIUJVEWBVFVJBLHZMZVJNZVJVFWDMZVJNZOZVPVEBQIZWBWIA
+      BUKZWABWDVFVJWCWDPZVSULUAVEWIVPVEWFVMWHVOVEWEVLVJVEWDVKVFVJVEWJWDVKNWKABC
+      WDVDQEWLUMUNZRSVEWGVNVJVEWDVKVJVFWMRSUOUPTTUQVECQIVIVQOVRURABCEUSGVHCVKVG
+      VFVHPVKPVGPUTVAVBVC $.
+  $}
+
+  ${
+    subrgacl.p $e |- .+ = ( +g ` R ) $.
+    $( A subring is closed under addition.  (Contributed by Mario Carneiro,
+       2-Dec-2014.) $)
+    subrgacl $p |- ( ( A e. ( SubRing ` R ) /\ X e. A /\ Y e. A ) ->
+      ( X .+ Y ) e. A ) $=
+      ( csubrg cfv wcel csubg co subrgsubg subgcl syl3an1 ) ACGHIACJHIDAIEAIDEB
+      KAIACLBACDEFMN $.
+  $}
+
+  ${
+    subrgmcl.p $e |- .x. = ( .r ` R ) $.
+    $( A subgroup is closed under multiplication.  (Contributed by Mario
+       Carneiro, 2-Dec-2014.) $)
+    subrgmcl $p |- ( ( A e. ( SubRing ` R ) /\ X e. A /\ Y e. A ) ->
+      ( X .x. Y ) e. A ) $=
+      ( csubrg cfv wcel w3a cress co cmulr cbs crg eqid subrgring 3ad2ant1 wceq
+      eleqtrd simp2 subrgbas simp3 ringcl syl3anc ressmulrg mpdan oveqd 3eltr4d
+      subrgrcl ) ABGHZIZDAIZEAIZJZDEBAKLZMHZLZUPNHZDECLAUOUPOIZDUSIEUSIURUSIULU
+      MUTUNABUPUPPZQRUODAUSULUMUNUAULUMAUSSUNABUPVAUBRZTUOEAUSULUMUNUCVBTUSUPUQ
+      DEUSPUQPUDUEUOCUQDEULUMCUQSZUNULBOIVCABUJABUPCUKOVAFUFUGRUHVBUI $.
+  $}
+
+  ${
+    subrgsubm.1 $e |- M = ( mulGrp ` R ) $.
+    $( A subring is a submonoid of the multiplicative monoid.  (Contributed by
+       Mario Carneiro, 15-Jun-2015.) $)
+    subrgsubm $p |- ( A e. ( SubRing ` R ) -> A e. ( SubMnd ` M ) ) $=
+      ( csubrg cfv wcel csubmnd cbs wss cur cress cmnd eqid crg ringmgp syl w3a
+      co wb subrgss subrg1cl cmgp wceq subrgrcl mgpress mpancom eqeltrd issubm2
+      subrgring c0g mgpbasg sseq2d ringidvalg eleq1d 3anbi12d bibi2d mpbir3and
+      mpbird ) ABEFZGZACHFGZABIFZJZBKFZAGZCALSZMGZAVCBVCNZUAABVEVENZUBVAVGBALSZ
+      UCFZMBOGZVAVGVLUDABUEZABVKCOUTVKNZDUFUGVAVKOGVLMGABVKVOUJVKVLVLNPQUHVAVBV
+      DVFVHRZTZVBACIFZJZCUKFZAGZVHRZTZVAVMWCVNVMCMGWCBCDPVRAVGCVTVRNVTNVGNUIQQV
+      AVMVQWCTVNVMVPWBVBVMVDVSVFWAVHVMVCVRAVCBCODVIULUMVMVEVTABVECODVJUNUOUPUQQ
+      USUR $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z .|| $.  $d x y E $.  $d x y z R $.  $d z S $.
+    subrgdvds.1 $e |- S = ( R |`s A ) $.
+    subrgdvds.2 $e |- .|| = ( ||r ` R ) $.
+    subrgdvds.3 $e |- E = ( ||r ` S ) $.
+    $( If an element divides another in a subring, then it also divides the
+       other in the parent ring.  (Contributed by Mario Carneiro,
+       4-Dec-2014.) $)
+    subrgdvds $p |- ( A e. ( SubRing ` R ) -> E C_ .|| ) $=
+      ( vx vy vz cfv wcel csrg crg syl cv wceq wrex eqidd csubrg wrel subrgring
+      ringsrg cdsr reldvdsrsrg releqi sylibr wbr cop cbs cmulr co subrgbas eqid
+      subrgss eqsstrrd sseld subrgrcl ressmulrg mpdan eqeq1d rexbidv wss ssrexv
+      wa oveqd wi sylbird anim12d a1i dvdsrd 3imtr4d df-br 3imtr3g relssdv ) AC
+      UALZMZIJEBVRDNMZEUBZVRDOMVSACDFUCDUDPZVSDUELZUBVTDUFEWBHUGUHPVRIQZJQZEUIZ
+      WCWDBUIZWCWDUJZEMWGBMVRWCDUKLZMZKQZWCDULLZUMZWDRZKWHSZVFWCCUKLZMZWJWCCULL
+      ZUMZWDRZKWOSZVFWEWFVRWIWPWNWTVRWHWOWCVRWHAWOACDFUNAWOCWOUOUPUQZURVRWNWSKW
+      HSZWTVRWSWMKWHVRWRWLWDVRWQWKWJWCVRCOMZWQWKRACUSZACDWQVQOFWQUOUTVAVGVBVCVR
+      WHWOVDXBWTVHXAWSKWHWOVEPVIVJVRKWHEDWKWCWDVRWHTEWBRVRHVKWAVRWKTVLVRKWOBCWQ
+      WCWDVRWOTBCUELRVRGVKVRXCCNMXDCUDPVRWQTVLVMWCWDEVNWCWDBVNVOVP $.
+  $}
+
+  ${
+    $d x A $.  $d x R $.  $d x U $.  $d x V $.
+    subrguss.1 $e |- S = ( R |`s A ) $.
+    subrguss.2 $e |- U = ( Unit ` R ) $.
+    subrguss.3 $e |- V = ( Unit ` S ) $.
+    $( A unit of a subring is a unit of the parent ring.  (Contributed by Mario
+       Carneiro, 4-Dec-2014.) $)
+    subrguss $p |- ( A e. ( SubRing ` R ) -> V C_ U ) $=
+      ( cfv wcel cdsr wbr wceq a1i eqidd crg csrg ringsrg eqid adantr vx csubrg
+      cv cur coppr cui subrgring syl isunitd simprbda subrg1 breqtrrd subrgdvds
+      wa wss ssbrd mpd cinvr cmulr cbs subrgrcl opprbasg opprring 3syl subrgbas
+      subrgss eqsstrrd simpr unitcld sseldd ringinvcl sylan dvdsrmuld unitinvcl
+      opprmulg syl3anc unitrinv ressmulrg mpdan oveqd 3eqtr4d breqtrd mpbir2and
+      co eqtrd wb ex ssrdv ) ABUBIZJZUAEDWJUAUCZEJZWKDJZWJWLUNZWMWKBUDIZBKIZLZW
+      KWOBUEIZKIZLZWNWKWOCKIZLWQWNWKCUDIZWOXAWJWLWKXBXALWKXBCUEIZKIZLWJXACXCEXB
+      XDWKECUFIMZWJHNWJXBOWJXAOWJXCOWJXDOWJCPJZCQJZABCFUGZCRUHZUIUJWJWOXBMWLABC
+      WOFWOSUKTZULWNXAWPWKWOWJXAWPUOWLAWPBCXAFWPSXASUMTUPUQWNWKWKCURIZIZWKWRUSI
+      ZWDZWOWSWNBUTIZWSWRXMWKXLWNBPJZXOWRUTIMWJXPWLABVAZTZXOBWRPWRSZXOSZVBUHWNW
+      SOWNXPWRPJWRQJXRBWRXSVCWRRVDWNXMOWNCUTIZXOWKWNYAAXOWJAYAMWLABCFVETWJAXOUO
+      WLAXOBXTVFTVGZWNYACEWKWNYAOXEWNHNWJXGWLXITWJWLVHZVIVJWNYAXOXLYBWJXFWLXLYA
+      JXHYACEXKWKHXKSZYASVKVLVJVMWNXNWKXLBUSIZWDZWOWNXPXLEJZWLXNYFMXRWJXFWLYGXH
+      CEXKWKHYDVNVLYCXOBXMYEEWRPEXLWKXTYESZXSXMSVOVPWNWKXLCUSIZWDZXBYFWOWJXFWLY
+      JXBMXHCYIEXBXKWKHYDYISXBSVQVLWNYEYIWKXLWJYEYIMZWLWJXPYKXQABCYEWIPFYHVRVST
+      VTXJWAWEWBWJWMWQWTUNWFWLWJWPBWRDWOWSWKDBUFIMWJGNWJWOOWJWPOWJWROWJWSOWJXPB
+      QJXQBRUHUITWCWGWH $.
+  $}
+
+  ${
+    subrginv.1 $e |- S = ( R |`s A ) $.
+    subrginv.2 $e |- I = ( invr ` R ) $.
+    subrginv.3 $e |- U = ( Unit ` S ) $.
+    subrginv.4 $e |- J = ( invr ` S ) $.
+    $( A subring always has the same inversion function, for elements that are
+       invertible.  (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+    subrginv $p |- ( ( A e. ( SubRing ` R ) /\ X e. U ) ->
+      ( I ` X ) = ( J ` X ) ) $=
+      ( cfv wcel cur co crg wceq adantr eqid syl2an2r csubrg cmulr cbs subrgrcl
+      wa wss subrgbas subrgss eqsstrrd subrgring ringinvcl sylan sseldd cui a1i
+      eqidd ringsrg syl simpr unitcld subrguss sselda ringass syl13anc unitlinv
+      csrg ressmulrg mpdan oveqd subrg1 3eqtr4d oveq1d unitrinv oveq2d ringlidm
+      3eqtr3d ringridm ) ABUALZMZGDMZUEZBNLZGELZBUBLZOZGFLZWBWDOZWCWFWAWFGWDOZW
+      CWDOZWFGWCWDOZWDOZWEWGWABPMZWFBUCLZMZGWMMWCWMMZWIWKQVSWLVTABUDZRWACUCLZWM
+      WFVSWQWMUFVTVSWQAWMABCHUGAWMBWMSZUHUIRZVSCPMZVTWFWQMABCHUJZWQCDFGJKWQSUKU
+      LUMZWAWQWMGWSWAWQCDGWAWQUPDCUNLQWAJUOWAWTCVFMVSWTVTXARCUQURVSVTUSUTUMVSWL
+      VTGBUNLZMZWOWPVSDXCGABCXCDHXCSZJVAVBZWMBXCEGXEIWRUKTZWMBWDWFGWCWRWDSZVCVD
+      WAWHWBWCWDWAWFGCUBLZOZCNLZWHWBVSWTVTXJXKQXACXIDXKFGJKXISXKSVEULWAWDXIWFGV
+      SWDXIQZVTVSWLXLWPABCWDVRPHXHVGVHRVIVSWBXKQVTABCWBHWBSZVJRVKVLWAWJWBWFWDVS
+      WLVTXDWJWBQWPXFBWDXCWBEGXEIXHXMVMTVNVPVSWLVTWOWEWCQWPXGWMBWDWBWCWRXHXMVOT
+      VSWLVTWNWGWFQWPXBWMBWDWBWFWRXHXMVQTVP $.
+  $}
+
+  ${
+    subrgdv.1 $e |- S = ( R |`s A ) $.
+    subrgdv.2 $e |- ./ = ( /r ` R ) $.
+    subrgdv.3 $e |- U = ( Unit ` S ) $.
+    subrgdv.4 $e |- E = ( /r ` S ) $.
+    $( A subring always has the same division function, for elements that are
+       invertible.  (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+    subrgdv $p |- ( ( A e. ( SubRing ` R ) /\ X e. A /\ Y e. U ) ->
+      ( X ./ Y ) = ( X E Y ) ) $=
+      ( cfv wcel co wceq eqid crg 3ad2ant1 eqidd csubrg w3a cinvr cmulr 3adant2
+      subrginv oveq2d subrgrcl ressmulrg mpdan oveqd eqtrd cbs cui cdvr a1i wss
+      subrgss simp2 sseldd subrguss dvrvald subrgring subrgbas eleqtrd 3eqtr4d
+      simp3 ) ACUAMZNZGANZHENZUBZGHCUCMZMZCUDMZOZGHDUCMZMZDUDMZOZGHBOGHFOVLVPGV
+      RVOOVTVLVNVRGVOVIVKVNVRPVJACDEVMVQHIVMQKVQQUFUEUGVLVOVSGVRVIVJVOVSPZVKVIC
+      RNZWAACUHZACDVOVHRIVOQUIUJSUKULVLCUMMZBCVOCUNMZVMGHVLWDTVLVOTVLWETVLVMTBC
+      UOMPVLJUPVIVJWBVKWCSVLAWDGVIVJAWDUQVKAWDCWDQURSVIVJVKUSZUTVLEWEHVIVJEWEUQ
+      VKACDWEEIWEQKVASVIVJVKVGZUTVBVLDUMMZFDVSEVQGHVLWHTVLVSTEDUNMPVLKUPVLVQTFD
+      UOMPVLLUPVIVJDRNVKACDIVCSVLGAWHWFVIVJAWHPVKACDIVDSVEWGVBVF $.
+  $}
+
+  ${
+    $d x y A $.  $d x y w G $.  $d x I $.  $d x y R $.  $d x y w V $.
+    $d x w S $.  $d x X $.
+    subrgugrp.1 $e |- S = ( R |`s A ) $.
+    subrgugrp.2 $e |- U = ( Unit ` R ) $.
+    subrgugrp.3 $e |- V = ( Unit ` S ) $.
+    ${
+      subrgunit.4 $e |- I = ( invr ` R ) $.
+      $( An element of a ring is a unit of a subring iff it is a unit of the
+         parent ring and both it and its inverse are in the subring.
+         (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+      subrgunit $p |- ( A e. ( SubRing ` R ) ->
+        ( X e. V <-> ( X e. U /\ X e. A /\ ( I ` X ) e. A ) ) ) $=
+        ( cfv wcel wa wceq adantr crg eqid co eqidd csubrg w3a subrguss cbs cui
+        sselda subrgbas a1i subrgring ringsrg syl simpr unitcld cinvr ringinvcl
+        csrg sylan subrginv 3eltr4d 3jca cur cdsr wbr coppr cmulr simpr2 simpr3
+        eleqtrd dvdsrmuld subrgrcl simpr1 unitlinv ressmulrg mpdan oveqd subrg1
+        syl2an2r 3eqtr3d breqtrd opprbasg opprring 3syl opprmulg unitrinv eqtrd
+        syl3anc wb isunitd mpbir2and impbida ) ABUALZMZGFMZGDMZGAMZGELZAMZUBZWL
+        WMNZWNWOWQWLFDGABCDFHIJUCUFWSACFGWLACUDLZOZWMABCHUGZPZFCUELOZWSJUHWLCUP
+        MZWMWLCQMZXEABCHUIZCUJUKZPWLWMULUMWSGCUNLZLZWTWPAWLXFWMXJWTMXGWTCFXIGJX
+        IRZWTRZUOUQABCFEXIGHKJXKURXCUSUTWLWRNZWMGCVALZCVBLZVCZGXNCVDLZVBLZVCZXM
+        GWPGCVELZSZXNXOXMWTXOCXTGWPXMWTTXMXOTWLXEWRXHPXMXTTXMGAWTWLWNWOWQVFWLXA
+        WRXBPZVHZXMWPAWTWLWNWOWQVGYBVHZVIXMWPGBVELZSZBVALZYAXNWLBQMZWRWNYFYGOAB
+        VJZWLWNWOWQVKZBYEDYGEGIKYERZYGRZVLVQXMYEXTWPGWLYEXTOZWRWLYHYMYIABCYEWKQ
+        HYKVMVNPZVOWLYGXNOWRABCYGHYLVPPZVRVSXMGWPGXQVELZSZXNXRXMWTXRXQYPGWPXMXF
+        WTXQUDLOWLXFWRXGPZWTCXQQXQRZXLVTUKXMXRTXMXFXQQMXQUPMYRCXQYSWAXQUJWBXMYP
+        TYCYDVIXMYQGWPXTSZXNXMXFWPWTMGWTMYQYTOYRYDYCWTCYPXTWTXQQWTWPGXLXTRYSYPR
+        WCWFXMGWPYESZYGYTXNWLYHWRWNUUAYGOYIYJBYEDYGEGIKYKYLWDVQXMYEXTGWPYNVOYOV
+        RWEVSWLWMXPXSNWGWRWLXOCXQFXNXRGXDWLJUHWLXNTWLXOTWLXQTWLXRTXHWHPWIWJ $.
+    $}
+
+    subrgugrp.4 $e |- G = ( ( mulGrp ` R ) |`s U ) $.
+    $( The units of a subring form a subgroup of the unit group of the original
+       ring.  (Contributed by Mario Carneiro, 4-Dec-2014.) $)
+    subrgugrp $p |- ( A e. ( SubRing ` R ) -> V e. ( SubGrp ` G ) ) $=
+      ( vw vx vy cfv wcel cbs crg wceq eqid cvv csubrg csubg wss cv cplusg wral
+      wex co cminusg wa subrguss subrgrcl cui a1i cress ringsrg unitgrpbasd syl
+      cmgp sseqtrd cur subrgring 1unit elex2 cmulr cinvr w3a ressmulrg 3ad2ant1
+      3syl mpdan oveqd unitmulcl syl3an1 eqeltrd 3expa ralrimiva subrginv sylan
+      unitinvcl jca cmnd mgpplusgg wfn basfn elex funfvex sylancr eqidd unitssd
+      funfni ssexd ringmgp ressplusgd eleq1d ralbidv invrfvald anbi12d mpbid wb
+      fveq1d cgrp unitgrp issubg2m mpbir3and ) ABUANZOZFEUBNOZFEPNZUCZKUDFOKUGZ
+      LUDZMUDZEUENZUHZFOZMFUFZXLEUINZNZFOZUJZLFUFZXGFDXIABCDFGHIUKXGBQOZDXIRABU
+      LZYCBDEDBUMNRZYCHUNZEBUSNZDUOUHRZYCJUNZBUPZUQURUTXGCQOZCVANZFOXKABCGVBZCF
+      YLIYLSVCKYLFVDVJXGXLXMBVENZUHZFOZMFUFZXLBVFNZNZFOZUJZLFUFYBXGUUALFXGXLFOZ
+      UJZYQYTUUCYPMFXGUUBXMFOZYPXGUUBUUDVGZYOXLXMCVENZUHZFUUEYNUUFXLXMXGUUBYNUU
+      FRZUUDXGYCUUHYDABCYNXFQGYNSZVHVKVIVLXGYKUUBUUDUUGFOYMCUUFFXLXMIUUFSVMVNVO
+      VPVQUUCYSXLCVFNZNZFABCFYRUUJXLGYRSIUUJSZVRXGYKUUBUUKFOYMCFUUJXLIUULVTVSVO
+      WAVQXGUUAYALFXGYQXQYTXTXGYPXPMFXGYOXOFXGYNXNXLXMXGYCYNXNRYDYCDYNYGETWBYIB
+      YNYGQYGSZUUIWCYCDBPNZTYCPTWDBTOUUNTOZWEBQWFUUOTBPBPWGWKWHYCUUNBDYCUUNWIYF
+      YJWJWLBYGUUMWMWNURVLWOWPXGYSXSFXGXLYRXRXGBDEYRYEXGHUNYHXGJUNXGYRWIYDWQXAW
+      OWRWPWSXGYCEXBOXHXJXKYBVGWTYDBDEHJXCLMKXIXNFEXRXISXNSXRSXDVJXE $.
+  $}
+
+  ${
+    $d u v w x y A $.  $d u v w .1. $.  $d u v w x y R $.  $d u v w x y .x. $.
+    issubrg2.b $e |- B = ( Base ` R ) $.
+    issubrg2.o $e |- .1. = ( 1r ` R ) $.
+    issubrg2.t $e |- .x. = ( .r ` R ) $.
+    $( Characterize the subrings of a ring by closure properties.  (Contributed
+       by Mario Carneiro, 3-Dec-2014.) $)
+    issubrg2 $p |- ( R e. Ring -> ( A e. ( SubRing ` R ) <->
+                     ( A e. ( SubGrp ` R ) /\ .1. e. A /\
+                       A. x e. A A. y e. A ( x .x. y ) e. A ) ) ) $=
+      ( wcel cfv cv co w3a wceq syl cgrp adantlr syldan vu vv vw crg csubg wral
+      csubrg subrgsubg subrg1cl subrgmcl 3expb ralrimivva 3jca cress wss cplusg
+      wa simpl cbs simpr1 eqid subgbas eqidd subgrcl ressplusgd cmulr ressmulrg
+      id syl2anc2 subggrp simpr3 oveq1 eleq1d oveq2 rspc2v syl5com 3impib sseld
+      subgss 3anim123d imp ringass ringdi ringdir ringlidm ringridm isringd jca
+      simpr2 issubrg syl21anbrc ex impbid2 ) EUDKZCEUGLKZCEUELZKZGCKZAMZBMZFNZC
+      KZBCUFACUFZOZWOWQWRXCCEUHCEGIUIWOXBABCCWOWSCKWTCKXBCEFWSWTJUJUKULUMWNXDWO
+      WNXDUQZWNECUNNZUDKCDUOZWRUQWOWNXDURXEUAUBUCCEUPLZXFFGXEWQCXFUSLPWNWQWRXCU
+      TZCEXFXFVAZVBQXEWQXHXFUPLPXIWQCXHEXFWPRWQXFVCWQXHVCWQVHCEVDZVEQXEWQERKFXF
+      VFLPXIXKCEXFFWPRXJJVGVIXEWQXFRKXICEXFXJVJQXEUAMZCKZUBMZCKZXLXNFNZCKZXEXCX
+      MXOUQXQWNWQWRXCVKXBXQXLWTFNZCKABXLXNCCWSXLPXAXRCWSXLWTFVLVMWTXNPXRXPCWTXN
+      XLFVNVMVOVPVQXEXMXOUCMZCKZOZXLDKZXNDKZXSDKZOZXPXSFNXLXNXSFNZFNPZXEYAYEXEX
+      MYBXOYCXTYDXECDXLXEWQXGXIDCEHVSQZVRZXECDXNYHVRXECDXSYHVRVTWAZWNYEYGXDDEFX
+      LXNXSHJWBSTXEYAYEXLXNXSXHNFNXPXLXSFNZXHNPZYJWNYEYLXDDXHEFXLXNXSHXHVAZJWCS
+      TXEYAYEXLXNXHNXSFNYKYFXHNPZYJWNYEYNXDDXHEFXLXNXSHYMJWDSTWNWQWRXCWIZXEXMYB
+      GXLFNXLPZXEXMYBYIWAZWNYBYPXDDEFGXLHJIWESTXEXMYBXLGFNXLPZYQWNYBYRXDDEFGXLH
+      JIWFSTWGXEXGWRYHYOWHCDEGHIWJWKWLWM $.
+  $}
+
+  ${
+    subrgnzr.1 $e |- S = ( R |`s A ) $.
+    $( A subring of a nonzero ring is nonzero.  (Contributed by Mario Carneiro,
+       15-Jun-2015.) $)
+    subrgnzr $p |-
+      ( ( R e. NzRing /\ A e. ( SubRing ` R ) ) -> S e. NzRing ) $=
+      ( cnzr wcel csubrg cfv crg cur c0g wne subrgring adantl eqid nzrnz adantr
+      wa wceq subrg1 subrg0 3netr3d isnzr sylanbrc ) BEFZABGHFZRZCIFZCJHZCKHZLC
+      EFUFUHUEABCDMNUGBJHZBKHZUIUJUEUKULLUFBUKULUKOZULOZPQUFUKUISUEABCUKDUMTNUF
+      ULUJSUEABCULDUNUANUBCUIUJUIOUJOUCUD $.
+  $}
+
+  ${
+    $d r x y w R $.  $d r x y w S $.
+    $( The intersection of an inhabited collection of subrings is a subring.
+       (Contributed by Stefan O'Rear, 30-Nov-2014.)  (Revised by Mario
+       Carneiro, 7-Dec-2014.) $)
+    subrgintm $p |- ( ( S C_ ( SubRing ` R ) /\ E. w w e. S ) ->
+      |^| S e. ( SubRing ` R ) ) $=
+      ( vx vy vr cfv wss cv wcel wex wa wral sylan adantlr syl ralrimiva wb imp
+      eqid csubrg cint csubg cmulr co subrgsubg ssriv sstr mpan2 subgintm ssel2
+      cur subrg1cl crg csrg ssel subrgrcl syl6 exlimdv ringsrg cbs srgidcl 3syl
+      elintg mpbird simprl elinti simprr syl3anc cvv simplr eleq1w cbvexv elexd
+      subrgmcl ex biimtrrid mpd ralrimivva w3a issubrg2 mpbir3and ) CBUAGZHZAIZ
+      CJZAKZLZCUBZWCJZWIBUCGZJZBULGZWIJZDIZEIZBUDGZUEZWIJZEWIMDWIMZWDCWKHZWGWLW
+      DWCWKHXAFWCWKFIZBUFUGCWCWKUHUIACBUJNWHWNWMXBJZFCMZWHXCFCWHXBCJZLXBWCJZXCW
+      DXEXFWGCWCXBUKOZXBBWMWMTZUMPQWHBUNJZBUOJZWNXDRZWDWGXIWDWFXIAWDWFWEWCJXICW
+      CWEUPWEBUQURUSSZBUTXJWMBVAGZJXKXMBWMXMTZXHVBFWMCXMVDPVCVEWHWSDEWIWIWHWOWI
+      JZWPWIJZLZLZWSWRXBJZFCMZXRXSFCXRXELZXFWOXBJZWPXBJZXSWHXEXFXQXGOXRXOXEYBWH
+      XOXPVFXOXEYBWOCXBVGSNXRXPXEYCWHXOXPVHXPXEYCWPCXBVGSNXBBWQWOWPWQTZVOVIZQXR
+      WRVJJZWSXTRXRWGYFWDWGXQVKWGXEFKXRYFXEWFFAFACVLVMXRXEYFFXRXEYFYAWRXBYEVNVP
+      USVQVRFWRCVJVDPVEVSWHXIWJWLWNWTVTRXLDEWIXMBWQWMXNXHYDWAPWB $.
+  $}
+
+  ${
+    $d A w $.  $d B w $.  $d R w $.
+    $( The intersection of two subrings is a subring.  (Contributed by Stefan
+       O'Rear, 30-Nov-2014.)  (Revised by Mario Carneiro, 7-Dec-2014.) $)
+    subrgin $p |- ( ( A e. ( SubRing ` R ) /\ B e. ( SubRing ` R ) ) ->
+    ( A i^i B ) e. ( SubRing ` R ) ) $=
+      ( vw csubrg cfv wcel wa cpr cint cin intprg wss cv prssi adantr subrgintm
+      wex prmg syl2anc eqeltrrd ) ACEFZGZBUBGZHZABIZJZABKUBABUBUBLUEUFUBMDNUFGD
+      RZUGUBGABUBOUCUHUDDABUBSPDCUFQTUA $.
+  $}
+
+  ${
+    $d A a $.  $d R a $.  $d S a $.
+    subsubrg.s $e |- S = ( R |`s A ) $.
+    $( A subring of a subring is a subring.  (Contributed by Mario Carneiro,
+       4-Dec-2014.) $)
+    subsubrg $p |- ( A e. ( SubRing ` R ) -> ( B e. ( SubRing ` S ) <->
+      ( B e. ( SubRing ` R ) /\ B C_ A ) ) ) $=
+      ( csubrg cfv wcel wss crg cress cbs adantr wceq eqid adantl subrgring jca
+      wa co cur subrgrcl subrgss subrgbas sseqtrrd oveq1i ressabsg 3expa mpidan
+      eqtrid syldan eqeltrrd subrg1 subrg1cl eqeltrd issubrg syl21anbrc adantrl
+      sstrd ad2antrl simprr sseqtrd impbida ) ACFGZHZBDFGHZBVDHZBAIZSZVEVFSZVGV
+      HVJCJHZCBKTZJHZBCLGZIZCUAGZBHZSVGVEVKVFACUBZMVJDBKTZVLJVEVFVHVSVLNZVJBDLG
+      ZAVFBWAIZVEBWADWAOZUCPVEAWANZVFACDEUDZMUEZVEVHSVSCAKTZBKTZVLDWGBKEUFVEVHV
+      KWHVLNZVRVEVHVKWIABCVDJUGUHUIUJZUKVFVSJHZVEBDVSVSOQPULVJVOVQVJBAVNWFVEAVN
+      IVFAVNCVNOZUCMUSVJVPDUAGZBVEVPWMNZVFACDVPEVPOZUMZMVFWMBHZVEBDWMWMOZUNPUOR
+      BVNCVPWLWOUPUQWFRVEVISZDJHZWKWBWQSVFVEWTVIACDEQMWSVSVLJVEVHVTVGWJURVGVMVE
+      VHBCVLVLOQUTUOWSWBWQWSBAWAVEVGVHVAVEWDVIWEMVBWSVPWMBVEWNVIWPMVGVQVEVHBCVP
+      WOUNUTULRBWADWMWCWRUPUQVC $.
+
+    $( The set of subrings of a subring are the smaller subrings.  (Contributed
+       by Stefan O'Rear, 9-Mar-2015.) $)
+    subsubrg2 $p |- ( A e. ( SubRing ` R ) ->
+        ( SubRing ` S ) = ( ( SubRing ` R ) i^i ~P A ) ) $=
+      ( va csubrg cfv wcel cpw cin cv wss wa subsubrg elin anbi2i bitr2i bitrdi
+      velpw eqrdv ) ABFGZHZECFGZUAAIZJZUBEKZUCHUFUAHZUFALZMZUFUEHZAUFBCDNUJUGUF
+      UDHZMUIUFUAUDOUKUHUGEASPQRT $.
+  $}
+
+  ${
+    $d M x y $.  $d R x y $.  $d S x y $.
+    issubrg3.m $e |- M = ( mulGrp ` R ) $.
+    $( A subring is an additive subgroup which is also a multiplicative
+       submonoid.  (Contributed by Mario Carneiro, 7-Mar-2015.) $)
+    issubrg3 $p |- ( R e. Ring -> ( S e. ( SubRing ` R ) <->
+        ( S e. ( SubGrp ` R ) /\ S e. ( SubMnd ` M ) ) ) ) $=
+      ( vx vy crg wcel cfv cv co wral wa w3a cbs eqid 3anass bitrdi wss wb cmnd
+      csubrg csubg cur cmulr csubmnd issubrg2 subgss c0g cplusg ringmgp mgpbasg
+      issubm sseq2d ringidvalg eleq1d mgpplusgg oveqd 2ralbidv 3anbi123d bitr4d
+      syl baibd sylan2 pm5.32da ) AGHZBAUBIHZBAUCIHZAUDIZBHZEJZFJZAUEIZKZBHZFBL
+      EBLZMZMZVHBCUFIHZMVFVGVHVJVPNVREFBAOIZAVMVIVTPZVIPZVMPZUGVHVJVPQRVFVHVSVQ
+      VHVFBVTSZVSVQTVTBAWAUHVFVSWDVQVFVSWDVJVPNZWDVQMVFVSBCOIZSZCUIIZBHZVKVLCUJ
+      IZKZBHZFBLEBLZNZWEVFCUAHVSWNTACDUKEFWFWJBCWHWFPWHPWJPUMVBVFWDWGVJWIVPWMVF
+      VTWFBVTACGDWAULUNVFVIWHBAVICGDWBUOUPVFVOWLEFBBVFVNWKBVFVMWJVKVLAVMCGDWCUQ
+      URUPUSUTVAWDVJVPQRVCVDVEVA $.
+  $}
+
+  ${
+    $d s x y B $.  $d s x y K $.  $d s x y ph $.  $d s x y L $.
+    subrgpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    subrgpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    subrgpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    subrgpropd.4 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    $( If two structures have the same group components (properties), they have
+       the same set of subrings.  (Contributed by Mario Carneiro,
+       9-Feb-2015.) $)
+    subrgpropd $p |- ( ph -> ( SubRing ` K ) = ( SubRing ` L ) ) $=
+      ( vs cfv crg wcel wa co adantr wceq cvv eqid csubrg cv subrgrcl ringpropd
+      wi a1i imbitrrid cress cbs wss cur cin ineq2d eqidd simplr simpr ressbasd
+      elvd eqtrd biimpa cplusg elinel2 anim12i adantlr ressplusgd oveqdr sylan2
+      wb 3eqtr3d cmulr ressmulrg mpan adantl sylancr anbi12d eqtr3d rngidpropdg
+      vex sseq2d eleq1d issubrg 3bitr4g ex pm5.21ndd eqrdv ) AKEUALZFUALZAEMNZK
+      UBZWFNZWIWGNZWJWHUEAWIEUCUFWKWHAFMNZWIFUCABCDEFGHIJUDZUGAWHWJWKVHAWHOZWHE
+      WIUHPZMNZOZWIEUILZUJZEUKLZWINZOZOWLFWIUHPZMNZOZWIFUILZUJZFUKLZWINZOZOWJWK
+      WNWQXEXBXJWNWHWLWPXDAWHWLVHWHWMQWNBCWIDULZWOXCWNXKWIWRULZWOUILZAXKXLRWHAD
+      WRWIGUMQWNXLXMRKWNWISNZOZWIWRWOSEMXOWOUNZXOWRUNAWHXNUOZWNXNUPZUQURUSWNXKW
+      IXFULZXCUILZAXKXSRWHADXFWIHUMQWNXSXTRKXOWIXFXCSFMXOXCUNZXOXFUNWNWLXNAWHWL
+      WMUTZQZXRUQURUSBUBZXKNZCUBZXKNZOZWNYDDNZYFDNZOZYDYFWOVALZPZYDYFXCVALZPZRY
+      EYIYGYJYDWIDVBYFWIDVBVCZWNYKOZYDYFEVALZPZYDYFFVALZPZYMYOAYKYSUUARWHIVDWNY
+      KBCYRYLWNYRYLRKXOWIYREWOSMXPXOYRUNXRXQVEURVFWNYKBCYTYNWNYTYNRKXOWIYTFXCSM
+      YAXOYTUNXRYCVEURVFVIVGYHWNYKYDYFWOVJLZPZYDYFXCVJLZPZRYPYQYDYFEVJLZPZYDYFF
+      VJLZPZUUCUUEAYKUUGUUIRWHJVDZWNYKBCUUFUUBWHUUFUUBRZAXNWHUUKKVRZWIEWOUUFSMW
+      OTUUFTVKVLVMVFWNYKBCUUHUUDWNXNWLUUHUUDRUULYBWIFXCUUHSMXCTUUHTVKVNVFVIVGUD
+      VOWNWSXGXAXIAWSXGVHWHAWRXFWIADWRXFGHVPVSQWNWTXHWIWNBCDEFMMADWRRWHGQADXFRW
+      HHQUUJAWHUPYBVQVTVOVOWIWREWTWRTWTTWAWIXFFXHXFTXHTWAWBWCWDWE $.
   $}
 
 
@@ -169766,6 +170281,12 @@ htmldef "RingIso" as " RingIso ";
 htmldef "NzRing" as "NzRing";
   althtmldef "NzRing" as "NzRing";
   latexdef "NzRing" as "\mathrm{NzRing}";
+htmldef "SubRing" as "SubRing";
+  althtmldef "SubRing" as "SubRing";
+  latexdef "SubRing" as "\mathrm{SubRing}";
+htmldef "RingSpan" as "RingSpan";
+  althtmldef "RingSpan" as "RingSpan";
+  latexdef "RingSpan" as "\mathrm{RingSpan}";
 htmldef "#r" as "#<sub>r</sub>";
   althtmldef "#r" as "#<sub>r</sub>";
   latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";

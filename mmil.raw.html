@@ -9981,7 +9981,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>ressid</td>
-  <td>~ strressid , ~ grpressid</td>
+  <td>~ strressid , ~ grpressid , ~ ringressid</td>
 </tr>
 
 <TR>
@@ -10320,12 +10320,17 @@ intuitionistic and it is lightly used in set.mm</TD>
   in iset.mm).</td>
 </tr>
 
+<tr>
+  <td>df-mre (Moore syntax)</td>
+  <td><i>none</i></td>
+  <td>seems like this might be feasible if nonempty is changed
+  to inhabited</td>
+</tr>
+
 <TR>
-  <TD>df-mre , df-mrc and all theorems using the Moore or mrCls syntax</TD>
+  <TD>df-mrc (mrCls syntax)</TD>
   <TD><I>none</I></TD>
-  <TD>The closest we have currently is ~ df-cls but even that
-  doesn't function as it does in set.mm (because complements
-  are different without excluded middle).</TD>
+  <TD>this may be possible if df-mre is defined</TD>
 </TR>
 
 <tr>
@@ -11098,6 +11103,77 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>df-field</td>
   <td><i>none</i></td>
   <td>once we define division rings this should follow</td>
+</tr>
+
+<tr>
+  <td>opprsubrg</td>
+  <td><i>none</i></td>
+  <td>presumably provable (either as-is or with a set existence
+  condition for ` R ` )</td>
+</tr>
+
+<tr>
+  <td>subrgint</td>
+  <td>~ subrgintm</td>
+</tr>
+
+<tr>
+  <td>subrgmre</td>
+  <td><i>none</i></td>
+  <td>may be possible if we define notation and theorems related
+  to Moore systems</td>
+</tr>
+
+<tr>
+  <td>issubdrg</td>
+  <td><i>none</i></td>
+  <td>in addition to relying on division ring notation, this
+  theorem would seem to need to be reformulated to be in terms of
+  invertibility or some concept other than being not equal
+  to the additive identity</td>
+</tr>
+
+<tr>
+  <td>resrhm</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have df-ghm , rhmmhm , rhmghm ,
+  and resghm</td>
+</tr>
+
+<tr>
+  <td>resrhm2b , rhmeql</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have df-ghm and other prerequisites</td>
+</tr>
+
+<tr>
+  <td>rhmghm</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have rhmghm and other prerequisites</td>
+</tr>
+
+<tr>
+  <td>rnrhmsubrg</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have rhmf and other prerequisites</td>
+</tr>
+
+<tr>
+  <td>cntzsubr</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have defined centralizers</td>
+</tr>
+
+<tr>
+  <td>pwsdiagrhm</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have defined structure power</td>
+</tr>
+
+<tr>
+  <td>rhmpropd</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have df-ghm and other prerequisites</td>
 </tr>
 
 <tr>
