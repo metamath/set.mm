@@ -149045,6 +149045,20 @@ $)
       BRLGBCEONP $.
   $}
 
+  ${
+    $d x B $.  $d x G $.  $d x ph $.  $d x .0. $.
+    trivnsgd.1 $e |- B = ( Base ` G ) $.
+    trivnsgd.2 $e |- .0. = ( 0g ` G ) $.
+    trivnsgd.3 $e |- ( ph -> G e. Grp ) $.
+    trivnsgd.4 $e |- ( ph -> B = { .0. } ) $.
+    $( The only normal subgroup of a trivial group is itself.  (Contributed by
+       Rohan Ridenour, 3-Aug-2023.) $)
+    trivnsgd $p |- ( ph -> ( NrmSGrp ` G ) = { B } ) $=
+      ( vx cnsg cfv csn csubg cv wcel wi nsgsubg a1i ssrdv trivsubgsnd cgrp syl
+      sseqtrd nsgid snssd eqssd ) ACJKZBLZAUGCMKZUHAIUGUIINZUGOUJUIOPAUJCQRSABC
+      DEFGHTUCABUGACUAOBUGOGBCEUDUBUEUF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
