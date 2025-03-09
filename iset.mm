@@ -149034,6 +149034,17 @@ $)
       G $.
   $}
 
+  ${
+    0idnsgd.1 $e |- B = ( Base ` G ) $.
+    0idnsgd.2 $e |- .0. = ( 0g ` G ) $.
+    0idnsgd.3 $e |- ( ph -> G e. Grp ) $.
+    $( The whole group and the zero subgroup are normal subgroups of a group.
+       (Contributed by Rohan Ridenour, 3-Aug-2023.) $)
+    0idnsgd $p |- ( ph -> { { .0. } , B } C_ ( NrmSGrp ` G ) ) $=
+      ( csn cnsg cfv cgrp wcel 0nsg syl nsgid prssd ) ADHZBCIJZACKLZQRLGCDFMNAS
+      BRLGBCEONP $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
