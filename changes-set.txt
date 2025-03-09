@@ -85,6 +85,16 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 9-Mar-25 2rspcedvdw [same]     Moved from SN's mathbox to main set.mm
+ 9-Mar-25 elmapdd   [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 grpassd   [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 grplidd   [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 sn-grpridd grpridd    Moved from SN's mathbox to main set.mm
+ 9-Mar-25 grpridd   grprida
+ 9-Mar-25 grplinvd  [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 ringassd  [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 ringlidmd [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 ringridmd [same]      Moved from SN's mathbox to main set.mm
 27-Feb-25 elnelall  pm2.24nel
 25-Feb-25 eqimssd   [same]      Moved from SN's mathbox to main set.mm
 25-Feb-25 eqimss2d  eqimsscd    Moved from SN's mathbox to main set.mm
