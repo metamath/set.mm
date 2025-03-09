@@ -149085,6 +149085,26 @@ $)
       UIUMJZUMQRSUMUJKAUNUOGCDFUDPZHUIUMUAUEUFAUITJUKULUBAUIUMUPUGBUITUCPUH $.
   $}
 
+  ${
+    $d G i r x y $.  $d S i r x y $.
+    releqg.r $e |- R = ( G ~QG S ) $.
+    $( The left coset equivalence relation is a relation.  (Contributed by
+       Mario Carneiro, 14-Jun-2015.) $)
+    releqgg $p |- ( ( G e. V /\ S e. W ) -> Rel R ) $=
+      ( vx vy vr vi wcel wa cv cbs cfv wss cminusg cplusg copab cvv wrel cpr co
+      relopab cqg wceq elex adantr adantl vex prss anbi1i opabbii cxp wfn basfn
+      funfvex funfni sylancr xpexg syl2anc opabssxp a1i eqeltrrid sseq2d fveq1d
+      ssexd fveq2 oveq123d eleq1d anbi12d opabbidv anbi2d df-eqg ovmpog syl3anc
+      eqidd eleq2 eqtrid releqd mpbiri ) CDKZBEKZLZAUAGMZHMZUBZCNOZPZWECQOZOZWF
+      CROZUCZBKZLZGHSZUAWOGHUDWDAWPWDACBUEUCZWPFWDCTKZBTKZWPTKWQWPUFWBWRWCCDUGU
+      HZWCWSWBBEUGUIWDWPWEWHKWFWHKLZWNLZGHSZTXBWOGHXAWIWNWEWFWHGUJHUJUKULUMWDXC
+      WHWHUNZTWDWHTKZXEXDTKWDNTUOWRXEUPWTXETCNCNUQURUSZXFWHWHTTUTVAXCXDPWDWNGHW
+      HWHVBVCVGVDIJCBTTWGIMZNOZPZWEXGQOZOZWFXGROZUCZJMZKZLZGHSWPUEWIWMXNKZLZGHS
+      TXGCUFZXPXRGHXSXIWIXOXQXSXHWHWGXGCNVHVEXSXMWMXNXSXKWKWFWFXLWLXGCRVHXSWEXJ
+      WJXGCQVHVFXSWFVQVIVJVKVLXNBUFZXRWOGHXTXQWNWIXNBWMVRVMVLGHJIVNVOVPVSVTWA
+      $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
