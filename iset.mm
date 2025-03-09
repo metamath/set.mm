@@ -148977,6 +148977,21 @@ $)
       ( cnsg cfv wcel csubg cv co wb wral wa wceq eqeq2i rabid2 3bitri anbi2i
       isnsg crab eqcom bitr4i ) DEKLMDENLMZAOZBOZCPDMUKUJCPDMQBGRZAGRZSUIFGTZSA
       BCDEGIJUEUNUMUIUNGFTGULAGUFZTUMFGUGFUOGHUAULAGUBUCUDUH $.
+
+    nmznsg.4 $e |- H = ( G |`s N ) $.
+    $( Any subgroup is a normal subgroup of its normalizer.  (Contributed by
+       Mario Carneiro, 19-Jan-2015.) $)
+    nmznsg $p |- ( S e. ( SubGrp ` G ) -> S e. ( NrmSGrp ` H ) ) $=
+      ( vz vw cfv wcel cv co wb wral csubg cnsg cbs id ssnmz wa subgrcl nmzsubg
+      wss syl subsubg mpbir2and ssrab3 sseli nmzbi sylan2 rgen2 subgbas raleqdv
+      cgrp wceq raleqbidv mpbii cplusg eqid isnsg cress ressplusgd oveqd eleq1d
+      a1i bibi12d 2ralbidv anbi2d bitr4id ) DEUAOZPZDFUBOPZDFUAOPZMQZNQZCRZDPZW
+      AVTCRZDPZSZNFUCOZTZMWGTZVQVSVQDGUIZVQUDABCDEGHIJKUEVQGVPPZVSVQWJUFSVQEUTP
+      WKDEUGZABCDEGHIJKUHUJZDGEFLUKUJULVQWFNGTZMGTWIWFMNGGWAGPVTGPWAHPWFGHWAAQZ
+      BQZCRDPWPWOCRDPSBHTAHGIUMUNABVTWACDGHIUOUPUQVQWNWHMGWGVQWKGWGVAWMGEFLURUJ
+      ZVQWFNGWGWQUSVBVCVQVRVSVTWAFVDOZRZDPZWAVTWRRZDPZSZNWGTMWGTZUFVSWIUFMNWRDF
+      WGWGVEWRVEVFVQWIXDVSVQWFXCMNWGWGVQWCWTWEXBVQWBWSDVQCWRVTWAVQGCEFVPUTFEGVG
+      RVAVQLVKCEVDOVAVQKVKWMWLVHZVIVJVQWDXADVQCWRWAVTXEVIVJVLVMVNVOUL $.
   $}
 
 
