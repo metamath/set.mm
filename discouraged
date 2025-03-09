@@ -18849,6 +18849,7 @@ New usage of "rexcomOLD" is discouraged (0 uses).
 New usage of "rexdif1enOLD" is discouraged (0 uses).
 New usage of "rexeqOLD" is discouraged (0 uses).
 New usage of "rexeqbidvvOLD" is discouraged (0 uses).
+New usage of "rexeqfOLD" is discouraged (0 uses).
 New usage of "reximdvaiOLD" is discouraged (0 uses).
 New usage of "reximiaOLD" is discouraged (0 uses).
 New usage of "rexlimddvcbv" is discouraged (0 uses).
@@ -21272,6 +21273,7 @@ Proof modification of "rexcomOLD" is discouraged (67 steps).
 Proof modification of "rexdif1enOLD" is discouraged (120 steps).
 Proof modification of "rexeqOLD" is discouraged (11 steps).
 Proof modification of "rexeqbidvvOLD" is discouraged (47 steps).
+Proof modification of "rexeqfOLD" is discouraged (55 steps).
 Proof modification of "reximdvaiOLD" is discouraged (28 steps).
 Proof modification of "reximiaOLD" is discouraged (21 steps).
 Proof modification of "rexlimivOLD" is discouraged (23 steps).
