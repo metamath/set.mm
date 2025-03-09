@@ -32816,6 +32816,16 @@ $)
   prssi $p |- ( ( A e. C /\ B e. C ) -> { A , B } C_ C ) $=
     ( wcel wa cpr wss prssg ibi ) ACDBCDEABFCGABCCCHI $.
 
+  ${
+    prssd.1 $e |- ( ph -> A e. C ) $.
+    prssd.2 $e |- ( ph -> B e. C ) $.
+    $( Deduction version of ~ prssi :  A pair of elements of a class is a
+       subset of the class.  (Contributed by Glauco Siliprandi,
+       17-Aug-2020.) $)
+    prssd $p |- ( ph -> { A , B } C_ C ) $=
+      ( wcel cpr wss prssi syl2anc ) ABDGCDGBCHDIEFBCDJK $.
+  $}
+
   $( An unordered pair belongs to the power class of a class iff each member
      belongs to the class.  (Contributed by Thierry Arnoux, 3-Oct-2016.)
      (Revised by NM, 18-Jan-2018.) $)
