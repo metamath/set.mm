@@ -149072,6 +149072,19 @@ $)
       BCDEFSTDBUBTUABOUCTUD $.
   $}
 
+  ${
+    1nsgtrivd.1 $e |- B = ( Base ` G ) $.
+    1nsgtrivd.2 $e |- .0. = ( 0g ` G ) $.
+    1nsgtrivd.3 $e |- ( ph -> G e. Grp ) $.
+    1nsgtrivd.4 $e |- ( ph -> ( NrmSGrp ` G ) ~~ 1o ) $.
+    $( A group with exactly one normal subgroup is trivial.  (Contributed by
+       Rohan Ridenour, 3-Aug-2023.) $)
+    1nsgtrivd $p |- ( ph -> B = { .0. } ) $=
+      ( csn wcel wceq cnsg cfv cgrp nsgid syl c1o cen wbr cvv en1eqsn wb elsn2g
+      0nsg syl2anc eleqtrd elexd mpbid ) ABDIZIZJZBUIKZABCLMZUJACNJZBUMJGBCEOPA
+      UIUMJZUMQRSUMUJKAUNUOGCDFUDPZHUIUMUAUEUFAUITJUKULUBAUIUMUPUGBUITUCPUH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
