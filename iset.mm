@@ -148994,6 +148994,23 @@ $)
       RVAVQLVKCEVDOVAVQKVKWMWLVHZVIVJVQWDXADVQCWRWAVTXEVIVJVLVMVNVOUL $.
   $}
 
+  ${
+    $d G x y $.  $d .0. x y $.
+    0nsg.z $e |- .0. = ( 0g ` G ) $.
+    $( The zero subgroup is normal.  (Contributed by Mario Carneiro,
+       4-Feb-2015.) $)
+    0nsg $p |- ( G e. Grp -> { .0. } e. ( NrmSGrp ` G ) ) $=
+      ( vx vy cgrp wcel csn csubg cfv cv cplusg co wral wceq eqid adantrr eqtrd
+      csg wa cbs cnsg 0subg elsni ad2antll oveq2d grprid oveq1d grpsubid simprl
+      simpl grpidcl adantr eqeltrd grpcld grpsubcl syl3anc elsng syl ralrimivva
+      wb mpbird isnsg3 sylanbrc ) AFGZBHZAIJGDKZEKZALJZMZVGASJZMZVFGZEVFNDAUAJZ
+      NVFAUBJGABCUCVEVMDEVNVFVEVGVNGZVHVFGZTZTZVMVLBOZVRVLVGVGVKMZBVRVJVGVGVKVR
+      VJVGBVIMZVGVRVHBVGVIVPVHBOVEVOVHBUDUEZUFVEVOWAVGOVPVNVIAVGBVNPZVIPZCUGQRU
+      HVEVOVTBOVPVNAVKVGBWCCVKPZUIQRVRVLVNGZVMVSVAVRVEVJVNGVOWFVEVQUKZVRVNVIAVG
+      VHWCWDWGVEVOVPUJZVRVHBVNWBVEBVNGVQVNABWCCULUMUNUOWHVNAVKVJVGWCWEUPUQVLBVN
+      URUSVBUTDEVIVFAVKVNWCWDWEVCVD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
