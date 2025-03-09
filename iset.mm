@@ -149011,6 +149011,19 @@ $)
       URUSVBUTDEVIVFAVKVNWCWDWEVCVD $.
   $}
 
+  ${
+    $d G x y $.  $d B x y $.
+    nsgid.z $e |- B = ( Base ` G ) $.
+    $( The whole group is a normal subgroup of itself.  (Contributed by Mario
+       Carneiro, 4-Feb-2015.) $)
+    nsgid $p |- ( G e. Grp -> B e. ( NrmSGrp ` G ) ) $=
+      ( vx vy cgrp wcel csubg cfv cv cplusg csg wral cnsg subgid w3a simp1 eqid
+      co grpcl simp2 grpsubcl syl3anc 3expb ralrimivva isnsg3 sylanbrc ) BFGZAB
+      HIGDJZEJZBKIZSZUIBLIZSAGZEAMDAMABNIGABCOUHUNDEAAUHUIAGZUJAGZUNUHUOUPPUHUL
+      AGUOUNUHUOUPQAUKBUIUJCUKRZTUHUOUPUAABUMULUICUMRZUBUCUDUEDEUKABUMACUQURUFU
+      G $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
