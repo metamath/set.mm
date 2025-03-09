@@ -84,7 +84,11 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
- 8-Mar-25 sn-grplidd grplidd    Moved from SN's mathbox to main set.mm
+ 8-Mar-25 fovcld    [same]      Moved from TA's mathbox to main set.mm
+ 8-Mar-25 grplinvd  [same]      Moved from SN's mathbox to main set.mm
+ 8-Mar-25 sn-grprinvd grprinvd  Moved from SN's mathbox to main set.mm
+ 8-Mar-25 grprinvd  grplinvlidrinvd 
+ 8-Mar-25 grplidd   [same]      Moved from SN's mathbox to main set.mm
  8-Mar-25 sn-grpridd grpridd    Moved from SN's mathbox to main set.mm
  8-Mar-25 grpridd   grplinvlidridd 
  5-Mar-25 nabbi     nabbib
