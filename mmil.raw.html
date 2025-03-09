@@ -1870,7 +1870,7 @@ is double negation elimination.</TD>
 
 <TR>
 <TD>ifeq2da</TD>
-<TD><I>none</I></TD>
+<TD>~ ifeq2dadc</TD>
 </TR>
 
 <TR>
@@ -2029,6 +2029,31 @@ favor of theorems in deduction form.</TD>
   <TD>pwpwpw0</TD>
   <TD>~ pwpwpw0ss</TD>
 </TR>
+
+<tr>
+  <td>intssuni</td>
+  <td>~ intssunim</td>
+</tr>
+
+<tr>
+  <td>unissint</td>
+  <td><i>none</i></td>
+</tr>
+
+<tr>
+  <td>intssuni2</td>
+  <td>~ intssuni2m</td>
+</tr>
+
+<tr>
+  <td>uniintsn</td>
+  <td>~ uniintsnr</td>
+</tr>
+
+<tr>
+  <td>uniintab</td>
+  <td>~ uniintabim</td>
+</tr>
 
 <TR>
 <TD>iundif2</TD>
@@ -9956,7 +9981,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>ressid</td>
-  <td>~ strressid</td>
+  <td>~ strressid , ~ grpressid , ~ ringressid</td>
 </tr>
 
 <TR>
@@ -10295,12 +10320,17 @@ intuitionistic and it is lightly used in set.mm</TD>
   in iset.mm).</td>
 </tr>
 
+<tr>
+  <td>df-mre (Moore syntax)</td>
+  <td><i>none</i></td>
+  <td>seems like this might be feasible if nonempty is changed
+  to inhabited</td>
+</tr>
+
 <TR>
-  <TD>df-mre , df-mrc and all theorems using the Moore or mrCls syntax</TD>
+  <TD>df-mrc (mrCls syntax)</TD>
   <TD><I>none</I></TD>
-  <TD>The closest we have currently is ~ df-cls but even that
-  doesn't function as it does in set.mm (because complements
-  are different without excluded middle).</TD>
+  <TD>this may be possible if df-mre is defined</TD>
 </TR>
 
 <tr>
@@ -10459,18 +10489,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>sgrpidmnd</td>
   <td>~ sgrpidmndm</td>
   <td>changes nonempty to inhabited</td>
-</tr>
-
-<tr>
-  <td>ress0g</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses ressbas2 and ressplusg</td>
-</tr>
-
-<tr>
-  <td>submnd0</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses ressbas2 , ressbasss , and ressplusg</td>
 </tr>
 
 <tr>
@@ -10704,6 +10722,21 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>pwsmulg</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses pwspjmhm and pwsmnd</td>
+</tr>
+
+<tr>
+  <td>issubg2</td>
+  <td>~ issubg2m</td>
+</tr>
+
+<tr>
+  <td>issubg4</td>
+  <td>~ issubg4m</td>
+</tr>
+
+<tr>
+  <td>subgint</td>
+  <td>~ subgintm</td>
 </tr>
 
 <tr>
@@ -11061,6 +11094,77 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>opprsubrg</td>
+  <td><i>none</i></td>
+  <td>presumably provable (either as-is or with a set existence
+  condition for ` R ` )</td>
+</tr>
+
+<tr>
+  <td>subrgint</td>
+  <td>~ subrgintm</td>
+</tr>
+
+<tr>
+  <td>subrgmre</td>
+  <td><i>none</i></td>
+  <td>may be possible if we define notation and theorems related
+  to Moore systems</td>
+</tr>
+
+<tr>
+  <td>issubdrg</td>
+  <td><i>none</i></td>
+  <td>in addition to relying on division ring notation, this
+  theorem would seem to need to be reformulated to be in terms of
+  invertibility or some concept other than being not equal
+  to the additive identity</td>
+</tr>
+
+<tr>
+  <td>resrhm</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have df-ghm , rhmmhm , rhmghm ,
+  and resghm</td>
+</tr>
+
+<tr>
+  <td>resrhm2b , rhmeql</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have df-ghm and other prerequisites</td>
+</tr>
+
+<tr>
+  <td>rhmghm</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have rhmghm and other prerequisites</td>
+</tr>
+
+<tr>
+  <td>rnrhmsubrg</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have rhmf and other prerequisites</td>
+</tr>
+
+<tr>
+  <td>cntzsubr</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have defined centralizers</td>
+</tr>
+
+<tr>
+  <td>pwsdiagrhm</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have defined structure power</td>
+</tr>
+
+<tr>
+  <td>rhmpropd</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have df-ghm and other prerequisites</td>
+</tr>
+
+<tr>
   <td>df-cnfld</td>
   <td>~ df-icnfld</td>
 </tr>
@@ -11075,6 +11179,121 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>cnfldfun</td>
   <td><i>none</i></td>
   <td>presumably provable (somehow) but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>cndrng</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we define division rings</td>
+</tr>
+
+<tr>
+  <td>cnflddiv</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on drngui . There are probably
+  enough details around not equal to zero versus apart from
+  zero that the theorem needs to be stated a bit differently
+  (or ~ df-div changed), but something along these lines
+  should be possible</td>
+</tr>
+
+<tr>
+  <td>cnfldinv</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof relies on drngui .  If not equal is
+  changed to apart, this presumably is provable</td>
+</tr>
+
+<tr>
+  <td>cnsrng</td>
+  <td><i>none</i></td>
+  <td>should be provable once we define star rings</td>
+</tr>
+
+<tr>
+  <td>cnsubdrglem</td>
+  <td><i>none</i></td>
+  <td>once we define division rings, may be able to prove something
+  of the sort (with not equal to zero changed to invertible,
+  or some similar change)</td>
+</tr>
+
+<tr>
+  <td>qsubdrg</td>
+  <td><i>none</i></td>
+  <td>once we define division rings, should be provable</td>
+</tr>
+
+<tr>
+  <td>absabv</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we define AbsVal</td>
+</tr>
+
+<tr>
+  <td>qsssubdrg</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we define division rings</td>
+</tr>
+
+<tr>
+  <td>cnsubrg</td>
+  <td><i>none</i></td>
+  <td>presumably not provable</td>
+</tr>
+
+<tr>
+  <td>zringlpirlem1 , zringlpirlem2 , zringlpirlem3 , zringlpir ,
+  zringndrg , zringcyg</td>
+  <td><i>none</i></td>
+  <td>Depend on syntax and theorems we don't have yet.  Some of these
+  will likely need revision for things like not equal to zero versus
+  invertibile.</td>
+</tr>
+
+<tr>
+  <td>zringunit</td>
+  <td><i>none</i></td>
+  <td>presumably provable but the set.mm proof may or may not be easily
+  adapted</td>
+</tr>
+
+<tr>
+  <td>prmirredlem</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses irredn1 , irredmul , and isirred2</td>
+</tr>
+
+<tr>
+  <td>dfprm2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses prmirredlem</td>
+</tr>
+
+<tr>
+  <td>prmirred</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses irredcl , irredn0 , prmirredlem ,
+  and irrednegb</td>
+</tr>
+
+<tr>
+  <td>expghm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses drngui - there would appear to be issues
+  around not equal to zero versus invertible</td>
+</tr>
+
+<tr>
+  <td>mulgghm2</td>
+  <td><i>none</i></td>
+  <td>seems provable once GrpHom is defined</td>
+</tr>
+
+<tr>
+  <td>mulgrhm , mulgrhm2</td>
+  <td><i>none</i></td>
+  <td>seem provable once more ~ df-rnghom related theorems are proved</td>
 </tr>
 
 <tr>
