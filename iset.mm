@@ -148969,6 +148969,14 @@ $)
       EWCVRJVDTWMWGNZVQVSWOWEVQWLWGUHZVQVSWKWGUMZXOWFVREVHLZOZWCDXOXDWKWBXSWCPX
       OVQXDXPXEQVQVSWKWGUSXOVQVSWBXPXQWJSGCEXRWCVRIJXRRZVFTXOVQWGVSXSDMXPWMWGVC
       XQDEXRWFVRXTVITVECDEVRWCJVDTVJVKVLABKVRCDFGHVMVNVOVP $.
+
+    $( A subgroup is normal iff its normalizer is the entire group.
+       (Contributed by Mario Carneiro, 18-Jan-2015.) $)
+    isnsg4 $p |- ( S e. ( NrmSGrp ` G ) <->
+                   ( S e. ( SubGrp ` G ) /\ N = X ) ) $=
+      ( cnsg cfv wcel csubg cv co wb wral wa wceq eqeq2i rabid2 3bitri anbi2i
+      isnsg crab eqcom bitr4i ) DEKLMDENLMZAOZBOZCPDMUKUJCPDMQBGRZAGRZSUIFGTZSA
+      BCDEGIJUEUNUMUIUNGFTGULAGUFZTUMFGUGFUOGHUAULAGUBUCUDUH $.
   $}
 
 
