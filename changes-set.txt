@@ -84,7 +84,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-10-Mar-25 brrici    [same]     Moved from SN's mathbox to main set.mm
+10-Mar-25 brrici    [same]      Moved from SN's mathbox to main set.mm
  9-Mar-25 2rspcedvdw [same]     Moved from SN's mathbox to main set.mm
  9-Mar-25 elmapdd   [same]      Moved from SN's mathbox to main set.mm
  9-Mar-25 grpassd   [same]      Moved from SN's mathbox to main set.mm
