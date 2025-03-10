@@ -42946,6 +42946,12 @@ $)
   relopab $p |- Rel { <. x , y >. | ph } $=
     ( copab eqid relopabi ) ABCABCDZGEF $.
 
+  $( If two classes are in a relationship given by an ordered-pair class
+     abstraction, the classes are sets.  (Contributed by Alexander van der
+     Vekens, 5-Nov-2017.) $)
+  brabv $p |- ( X { <. x , y >. | ph } Y -> ( X e. _V /\ Y e. _V ) ) $=
+    ( copab relopab brrelex12i ) DEABCFABCGH $.
+
   ${
     $d A y $.  $d B y $.  $d x y $.
     $( The maps-to notation always describes a relationship.  (Contributed by
