@@ -149105,6 +149105,30 @@ $)
       $.
   $}
 
+  ${
+    $d x y A $.  $d x y B $.  $d g s x y G $.  $d g s x y N $.  $d g s x y S $.
+    $d g s x y .+ $.  $d g s x y X $.
+    eqgval.x $e |- X = ( Base ` G ) $.
+    eqgval.n $e |- N = ( invg ` G ) $.
+    eqgval.p $e |- .+ = ( +g ` G ) $.
+    eqgval.r $e |- R = ( G ~QG S ) $.
+    $( Value of the subgroup left coset equivalence relation.  (Contributed by
+       Mario Carneiro, 15-Jan-2015.) $)
+    eqgfval $p |- ( ( G e. V /\ S C_ X ) -> R = { <. x , y >. |
+      ( { x , y } C_ X /\ ( ( N ` x ) .+ y ) e. S ) } ) $=
+      ( wcel wss wa cv cfv cvv cbs vg vs cqg co cpr copab wceq adantr wfn basfn
+      elex funfvex funfni sylancr eqeltrid simpr ssexd xpexg syl2anc simpl prss
+      cxp vex sylibr ssopab2i sseqtrri a1i cminusg cplusg fveq2d eqtr4di sseq2d
+      df-xp fveq1d eqidd oveq123d eleq12d anbi12d df-eqg ovmpoga syl3anc eqtrid
+      opabbidv ) FHNZEIOZPZDFEUCUDZAQZBQZUEZIOZWHGRZWICUDZENZPZABUFZMWFFSNZESNW
+      PSNWGWPUGWDWQWEFHUKZUHWFEISWDISNZWEWDIFTRZSJWDTSUIWQWTSNZUJWRXASFTFTULUMU
+      NUOUHZWDWEUPUQWFWPIIVBZSWFWSWSXCSNXBXBIISSURUSWPXCOWFWPWHINWIINPZABUFXCWO
+      XDABWOWKXDWKWNUTWHWIIAVCBVCVAVDVEABIIVMVFVGUQUAUBFESSWJUAQZTRZOZWHXEVHRZR
+      ZWIXEVIRZUDZUBQZNZPZABUFWPUCSXEFUGZXLEUGZPZXNWOABXQXGWKXMWNXQXFIWJXQXFWTI
+      XQXEFTXOXPUTZVJJVKVLXQXKWMXLEXQXIWLWIWIXJCXQXJFVIRCXQXEFVIXRVJLVKXQWHXHGX
+      QXHFVHRGXQXEFVHXRVJKVKVNXQWIVOVPXOXPUPVQVRWCABUBUAVSVTWAWB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
