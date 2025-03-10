@@ -694,14 +694,113 @@ FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">x</FONT></I> &rarr; suc
 
 </TABLE></CENTER>
 
-<P>We develop set theory based on the Intuitionistic Zermelo-Fraenkel
-(IZF) system, mostly following the IZF axioms as laid out in [Crosilla].
-The one exception to the statement that we use IZF is that a few sections
-develop set theory using Constructive Zermelo-Fraenkel (CZF), also described
+<P>The above axioms fairly closely follow the Intuitionistic Zermelo-Fraenkel
+(IZF) axioms as laid out in [Crosilla].</P>
+
+<P></P><HR NOSHADE SIZE=1><A NAME="flavors"></A><B><FONT COLOR="#006633">Different
+flavors of constructive mathematics</FONT></B>
+
+<p>Most of our development is based on the Intuitionistic Zermelo-Fraenkel
+(IZF) set theory axioms shown above.</p>
+
+<p>We do have a few sections which develop set theory using the weaker
+Constructive Zermelo-Fraenkel (CZF) system, also described
 in Crosilla. These sections start at ~ wbd (including the section header right
 before it) and the biggest complication is the machinery to classify formulas
 as bounded formulas, for purposes of the Axiom of Restricted Separation
-~ ax-bdsep .</P>
+~ ax-bdsep .</p>
+
+<p>There are also a variety of statements stronger than IZF, up to and
+including the law of the excluded middle, which we have theorems about.
+We have notations for these statements, shown in the table below,
+rather than including them as axioms.</p>
+
+<p>Most of these statements are known as omniscience principles or
+choice principles. In the case of the omniscience principles, most of
+them also have an analytic form (stated in terms of real numbers),
+which implies the corresponding non-analytic form. In reading the
+following table ` RR ` is the real numbers and ` DECID ph ` is
+` ph \/ -. ph ` (see ~ df-dc ).</p>
+
+<table border cellspacing=0 bgcolor="#EEFFFA">
+
+<tr>
+  <th>Name</th>
+  <th>our notation</th>
+  <th>analytic principle</th>
+  <th>notes and related theorems</th>
+</tr>
+
+<tr>
+  <td>Principle of Omniscience (law of excluded middle)</td>
+  <td>EXMID</td>
+  <td>-</td>
+  <td>~ df-exmid</td>
+</tr>
+
+<tr>
+  <td>Limited Principle of Omniscience (LPO)</td>
+  <td>` _om e. Omni `</td>
+  <td>` A. x e. RR A. y e. RR ( x < y \/ x = y \/ y < x ) `</td>
+  <td>~ trilpo</td>
+</tr>
+
+<tr>
+  <td>Weak Limited Principle of Omniscience (WLPO)</td>
+  <td>` _om e. WOmni `</td>
+  <td>` A. x e. RR A. y e. RR DECID x = y `</td>
+  <td>~ redcwlpo</td>
+</tr>
+
+<tr>
+  <td>Markov's Principle (MP)</td>
+  <td>` _om e. Markov `</td>
+  <td>` A. x e. RR A. y e. RR ( x =/= y -> x =//= y ) `</td>
+  <td>~ neapmkv</td>
+</tr>
+
+<tr>
+  <td>Lesser limited principle of omniscience (LLPO)</td>
+  <td><i>not yet defined, but the definition will be something like</i>
+  `A. f e. ( 2o ^m _om ) A. g e. ( 2o ^m _om ) ( -. 1o e. ( ran f i^i ran g ) ->
+  ( -. 1o e. ran f \/ -. 1o e. ran g ) ) `</td>
+  <td>` A. x e. RR A. y e. RR ( x <_ y \/ y <_ x ) `</td>
+  <td>not yet defined but <a href="https://github.com/metamath/set.mm/issues/4058"
+  >issue 4058</a> sketches out how we will be able to define it and prove relevant
+  theorems</td>
+</tr>
+
+<tr>
+  <td>Axiom of choice</td>
+  <td>CHOICE</td>
+  <td>-</td>
+  <td>implies excluded middle as shown at ~ exmidac</td>
+</tr>
+
+<tr>
+  <td>dependent choice</td>
+  <td><i>not yet defined</i></td>
+  <td>-</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>countable choice</td>
+  <td>CCHOICE</td>
+  <td>-</td>
+  <td>~ df-cc</td>
+</tr>
+
+<tr>
+  <td>Zorn's Lemma</td>
+  <td><i>not yet defined</i></td>
+  <td>-</td>
+  <td>not equivalent to the axiom of choice in the absence of
+  excluded middle; see <a href="https://github.com/metamath/set.mm/issues/4497"
+  >issue 4497</a> for discussion about adding it</td>
+</tr>
+
+</table>
 
 <P></P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
 Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
