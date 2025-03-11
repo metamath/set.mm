@@ -144346,6 +144346,41 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition of the structure quotient
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c "s $. $( Image structure $)
+
+  $( Image structure function. $)
+  cimas $a class "s $.
+
+  ${
+    $d f p q r v $.
+    $( Define an image structure, which takes a structure and a function on the
+       base set, and maps all the operations via the function.  For this to
+       work properly ` f ` must either be injective or satisfy the
+       well-definedness condition ` f ( a ) = f ( c ) /\ f ( b ) = f ( d ) -> `
+       ` f ( a + b ) = f ( c + d ) ` for each relevant operation.
+
+       Note that although we call this an "image" by association to ~ df-ima ,
+       in order to keep the definition simple we consider only the case when
+       the domain of ` F ` is equal to the base set of ` R ` .  Other cases can
+       be achieved by restricting ` F ` (with ~ df-res ) and/or ` R ` ( with
+       ~ df-iress ) to their common domain.  (Contributed by Mario Carneiro,
+       23-Feb-2015.)  (Revised by AV, 6-Oct-2020.) $)
+    df-iimas $a |- "s = ( f e. _V , r e. _V |-> [_ ( Base ` r ) / v ]_
+     { <. ( Base ` ndx ) , ran f >. ,
+        <. ( +g ` ndx ) , U_ p e. v U_ q e. v
+     { <. <. ( f ` p ) , ( f ` q ) >. , ( f ` ( p ( +g ` r ) q ) ) >. } >. ,
+        <. ( .r ` ndx ) , U_ p e. v U_ q e. v
+     { <. <. ( f ` p ) , ( f ` q ) >. , ( f ` ( p ( .r ` r ) q ) ) >. } >. }
+     ) $.
+  $}
+
+
+$(
 ###############################################################################
   BASIC ALGEBRAIC STRUCTURES
 ###############################################################################
@@ -170902,6 +170937,10 @@ htmldef "gsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
     "ALT=' gsum' TITLE='gsum'><sub><i>g</i></sub> ";
   althtmldef "gsum" as " &Sigma;<sub><i>g</i></sub> ";
   latexdef "gsum" as "\sum_g";
+htmldef '"s' as " <IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 ALT=' " + '"' +
+    "' TITLE='" + '"' + "'><sub><i>s</i></sub> ";
+  althtmldef '"s' as ' &ldquo;<sub><i>s</i></sub> ';
+  latexdef '"s' as "``_s";
 htmldef "Mgm" as 'Mgm';
   althtmldef "Mgm" as 'Mgm';
   latexdef "Mgm" as "\mathrm{Mgm}";
