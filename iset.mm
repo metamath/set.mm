@@ -149180,6 +149180,24 @@ $)
       KZWMXBUUMWMXBUUMWMXBLUULUUIDWMWNXBUULUUISWOCXEBXCWPUUIEXOUUKXNVRVSWMUUIDH
       XBDBUUIUUKVTTWAWDWBWMUUOXBXBUUMNZUUNWMWNXLUUOUUPOWOXMWPWPXEADBXCICEXNXOFQ
       RUUPXBXBLZUUMLUUNXBXBUUMWEUUQXBUUMXBWFWGWHWIWJWK $.
+
+    ${
+      eqglact.3 $e |- .+ = ( +g ` G ) $.
+      $( A left coset can be expressed as the image of a left action.
+         (Contributed by Mario Carneiro, 20-Sep-2015.) $)
+      eqglact $p |- ( ( G e. Grp /\ Y C_ X /\ A e. X ) ->
+        [ A ] .~ = ( ( x e. X |-> ( A .+ x ) ) " Y ) ) $=
+        ( vg wcel cfv co wa cmpt cima eqid wceq ccnv wss w3a cv wbr cab cminusg
+        cgrp cec wb eqgval 3anass bitrdi baibd 3impa abbidv dfec2 3ad2ant3 wf1o
+        grplactcnv simprd grplactfval adantl cnveqd syl 3eqtr3d 3adant2 imaeq1d
+        grpinvcl imacnvcnv crab mptpreima df-rab eqtri 3eqtr3g 3eqtr4d ) EUGLZG
+        FUAZBFLZUBZBAUCZDUDZAUEZVTFLZBEUFMZMZVTCNZGLZOZAUEZBDUHZAFBVTCNPZGQZVSW
+        AWHAVPVQVRWAWHUIVPVQOZWAVRWHWMWAVRWCWGUBVRWHOBVTCDGEWDUGFHWDRZJIUJVRWCW
+        GUKULUMUNUOVRVPWJWBSVQABDFUPUQVSWKTZTZGQAFWFPZTZGQZWLWIVSWPWRGVPVRWPWRS
+        VQVPVROZWOWQWTBKFAFKUCVTCNPPZMZTZWEXAMZWOWQWTFFXBURXCXDSBCKXAEWDFAXARZH
+        JWNUSUTWTXBWKVRXBWKSVPBCKXAEFAXEHVAVBVCWTWEFLXDWQSFEWDBHWNVHWECKXAEFAXE
+        HVAVDVEVCVFVGWKGVIWSWGAFVJWIAFWFGWQWQRVKWGAFVLVMVNVO $.
+    $}
   $}
 
 
