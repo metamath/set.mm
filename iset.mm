@@ -149214,6 +149214,23 @@ $)
         LZVQWHNWACDBFUSZVMVTWNWACBEFHVEPVTWMRZVQWNWHWPVQWNWBWGVFWNWHREVOWEADBWC
         OCFWKWLGUTWNWBWGVAVBVCVDVMVRWBVMDCVOWOVGVHVIVJVK $.
     $}
+
+    $( Each coset is equipotent to the subgroup itself (which is also the coset
+       containing the identity).  (Contributed by Mario Carneiro,
+       20-Sep-2015.) $)
+    eqgen $p |- ( ( Y e. ( SubGrp ` G ) /\ A e. ( X /. .~ ) ) -> Y ~~ A ) $=
+      ( vz vy cv cen wbr cfv wcel eqid wa cmpt cvv wf1o cbs cec csubg cqs breq2
+      vx cplusg co cima cres simpl cgrp wss wceq subgrcl subgss jca 3expa sylan
+      eqglact wer eqger wfn basfn elexd funfvex funfni eqeltrid erex sylc ecexg
+      sylancr syl adantr eqeltrrd wf1 grplactf1o grplactfval adantl mpbid f1of1
+      f1oeq1d f1ores syl2anc f1oen2g syl3anc breqtrrd ectocld ) EUEJZBUAZKLEAKL
+      ECUBMZNZUEADBDBUCZWLOWIAEKUDWKWHDNZPZEHDWHHJZCUFMZUGQZEUHZWIKWNWKWRRNEWRW
+      QEUIZSZEWRKLWKWMUJWNWIWRRWKCUKNZEDULZPWMWIWRUMZWKXAXBECUNZDECFUOZUPXAXBWM
+      XCHWHWPBCDEFGWPOZUSUQURZWKWIRNZWMWKBRNZXHWKDBUTDRNXIBCDEFGVAWKDCTMZRFWKTR
+      VBCRNXJRNZVCWKCUKXDVDXKRCTCTVEVFVKVGDBRVHVIWHRBVJVLVMVNWNDDWQVOZXBWTWNDDW
+      QSZXLWKXAWMXMXDXAWMPZDDWHIDHDIJWOWPUGQQZMZSXMWHWPIXOCDHXOOZFXFVPXNDDXPWQW
+      MXPWQUMXAWHWPIXOCDHXQFVQVRWAVSURDDWQVTVLWKXBWMXEVMDDEWQWBWCEWRWSWJRWDWEXG
+      WFWG $.
   $}
 
 
