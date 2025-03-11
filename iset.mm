@@ -149198,6 +149198,22 @@ $)
         JWNUSUTWTXBWKVRXBWKSVPBCKXAEFAXEHVAVBVCWTWEFLXDWQSFEWDBHWNVHWECKXAEFAXE
         HVAVDVEVCVFVGWKGVIWSWGAFVJWIAFWFGWQWQRVKWGAFVLVMVNVO $.
     $}
+
+    ${
+      eqgid.3 $e |- .0. = ( 0g ` G ) $.
+      $( The left coset containing the identity is the original subgroup.
+         (Contributed by Mario Carneiro, 20-Sep-2015.) $)
+      eqgid $p |- ( Y e. ( SubGrp ` G ) -> [ .0. ] .~ = Y ) $=
+        ( vx csubg cfv wcel cec wb cgrp syl co wa wceq eqid cv wbr wrel subgrcl
+        releqgg mpancom relelec cminusg cplusg adantr oveq1d grplid sylan eqtrd
+        grpinvid eleq1d pm5.32da wss subgss eqgval 3anass bitrdi baibd syl21anc
+        grpidcl w3a sseld pm4.71rd 3bitr4d bitrd eqrdv ) DBJKZLZIEAMZDVMIUAZVNL
+        ZEVOAUBZVODLZVMAUCZVPVQNBOLZVMVSDBUDZADBOVLGUEUFVOEAUGPVMVOCLZEBUHKZKZV
+        OBUIKZQZDLZRZWBVRRVQVRVMWBWGVRVMWBRZWFVODWIWFEVOWEQZVOWIWDEVOWEWIVTWDES
+        VMVTWBWAUJBWCEHWCTZUOPUKVMVTWBWJVOSWACWEBVOEFWETZHULUMUNUPUQVMVTDCURZEC
+        LZVQWHNWACDBFUSZVMVTWNWACBEFHVEPVTWMRZVQWNWHWPVQWNWBWGVFWNWHREVOWEADBWC
+        OCFWKWLGUTWNWBWGVAVBVCVDVMVRWBVMDCVOWOVGVHVIVJVK $.
+    $}
   $}
 
 
