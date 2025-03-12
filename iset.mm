@@ -52139,6 +52139,15 @@ $)
     ( wf wfn wcel cvv ffn fnex sylan ) ABDEDAFACGDHGABDIACDJK $.
 
   ${
+    fexd.1 $e |- ( ph -> F : A --> B ) $.
+    fexd.2 $e |- ( ph -> A e. C ) $.
+    $( If the domain of a mapping is a set, the function is a set.
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    fexd $p |- ( ph -> F e. _V ) $=
+      ( wf wcel cvv fex syl2anc ) ABCEHBDIEJIFGBCDEKL $.
+  $}
+
+  ${
     $d f x y A $.  $d f y B $.
     eufnfv.1 $e |- A e. _V $.
     eufnfv.2 $e |- B e. _V $.
