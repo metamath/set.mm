@@ -85,15 +85,20 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 12-Mar-25 rabeqsnd  [same]      Moved from TA's mathbox to main set.mm
- 9-Mar-25 ringridmd [same]      Moved from SN's mathbox to main set.mm
- 9-Mar-25 ringlidmd [same]      Moved from SN's mathbox to main set.mm
+10-Mar-25 brrici    [same]      Moved from SN's mathbox to main set.mm
  9-Mar-25 fovcld    [same]      Moved from TA's mathbox to main set.mm
- 9-Mar-25 grplinvd  [same]      Moved from SN's mathbox to main set.mm
  9-Mar-25 sn-grprinvd grprinvd  Moved from SN's mathbox to main set.mm
- 9-Mar-25 grprinvd  grplinvlidrinvd 
- 8-Mar-25 grplidd   [same]      Moved from SN's mathbox to main set.mm
- 8-Mar-25 sn-grpridd grpridd    Moved from SN's mathbox to main set.mm
- 8-Mar-25 grpridd   grplinvlidridd 
+ 9-Mar-25 grprinvd  grplinvlidrinvd   => grprinva!
+ 9-Mar-25 2rspcedvdw [same]     Moved from SN's mathbox to main set.mm
+ 9-Mar-25 elmapdd   [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 grpassd   [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 grplidd   [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 sn-grpridd grpridd    Moved from SN's mathbox to main set.mm
+ 9-Mar-25 grpridd   grprida
+ 9-Mar-25 grplinvd  [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 ringassd  [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 ringlidmd [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 ringridmd [same]      Moved from SN's mathbox to main set.mm
  5-Mar-25 nabbi     nabbib
  2-Mar-25 isassad   [same]      revised - scalars may be noncommutative
  2-Mar-25 assasca   [same]      revised - scalars may be noncommutative
