@@ -89,7 +89,7 @@ Date      Old       New         Notes
 10-Mar-25 brrici    [same]      Moved from SN's mathbox to main set.mm
  9-Mar-25 fovcld    [same]      Moved from TA's mathbox to main set.mm
  9-Mar-25 sn-grprinvd grprinvd  Moved from SN's mathbox to main set.mm
- 9-Mar-25 grprinvd  grplinvlidrinvd   => grprinva!
+ 9-Mar-25 grprinvd  grprinva
  9-Mar-25 2rspcedvdw [same]     Moved from SN's mathbox to main set.mm
  9-Mar-25 elmapdd   [same]      Moved from SN's mathbox to main set.mm
  9-Mar-25 grpassd   [same]      Moved from SN's mathbox to main set.mm
