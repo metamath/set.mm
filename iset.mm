@@ -144443,6 +144443,37 @@ $)
       WJUPUPXPXSXONKUWKUPUPXPXIWTYIFXGUPXEWSYFYHYJUPUPUPYCXNYDVT $.
   $}
 
+  ${
+    $d F p q $.  $d R p q $.  $d V p q $.  $d p ph q $.
+    imasbas.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasbas.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasbas.f $e |- ( ph -> F : V -onto-> B ) $.
+    imasbas.r $e |- ( ph -> R e. Z ) $.
+    $( The base set of an image structure.  (Contributed by Mario Carneiro,
+       23-Feb-2015.)  (Revised by Mario Carneiro, 11-Jul-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.)  (Revised by AV, 6-Oct-2020.) $)
+    imasbas $p |- ( ph -> B = ( Base ` U ) ) $=
+      ( vp vq cbs cfv cop cvv wcel cn syl2anc cnx cplusg cv co ciun cmulr cvsca
+      csn ctp eqid eqidd imasival fveq1d basendxnn wfo wfn basfn funfvex funfni
+      elexd sylancr eqeltrd focdmex sylc opexg plusgndxnn wral fof syl fexd vex
+      wf fvexg sylancl a1i plusgslid slotex ovexg syl3anc snexg ralrimivw cslot
+      iunexg wceq mulrslid simpri tpexg baseid basendxnplusgndx basendxnmulrndx
+      strndxid wne fvtp1g syl22anc 3eqtr3rd ) AUANOZDOWPWPBPZUAUBOZLFMFLUCZEOZM
+      UCZEOZPZWSXACUBOZUDZEOZPZUHZUEZUEZPZUAUFOZLFMFXCWSXACUFOZUDZEOZPZUHZUEZUE
+      ZPZUIZOZDNOBAWPDYAABXDXJCXSCUGOZXMDEFGMLHIXDUJXMUJYCUJAXJUKAXSUKJKULZUMAD
+      NWPQADYAQYDAWQQRZXKQRZXTQRZYAQRAWPSRZBQRZYEUNAFQRZFBEUOZYIAFCNOZQIANQUPCQ
+      RYLQRZUQACGKUTYMQCNCNURUSVAVBZJFBQEVCVDZWPBSQVEVAAWRSRXJQRZYFVFAYJXIQRZLF
+      VGYPYNAYQLFAYJXHQRZMFVGYQYNAYRMFAXGQRZYRAXCQRZXFQRZYSAWTQRZXBQRZYTAEQRZWS
+      QRZUUBAFBQEAYKFBEVLJFBEVHVIYNVJZLVKZWSEQQVMVNAUUDXAQRZUUCUUFMVKZXAEQQVMVN
+      WTXBQQVETZAUUDXEQRZUUAUUFAUUEXDQRZUUHUUKUUEAUUGVOZACGRZUULKCUBGVPVQVIUUHA
+      UUIVOZWSXAXDQQQVRVSXEEQQVMTXCXFQQVETXGQVTVIWAMFXHQQWCTWALFXIQQWCTWRXJSQVE
+      VAAXLSRZXSQRZYGUFXLWBWDUUPWEWFAYJXRQRZLFVGUUQYNAUURLFAYJXQQRZMFVGUURYNAUU
+      SMFAXPQRZUUSAYTXOQRZUUTUUJAUUDXNQRZUVAUUFAUUEXMQRZUUHUVBUUMAUUNUVCKCUFGWE
+      VQVIUUOWSXAXMQQQVRVSXNEQQVMTXCXOQQVETXPQVTVIWAMFXQQQWCTWALFXRQQWCTXLXSSQV
+      EVAWQXKXTQQQWGVSVBWHUNWKAYHYIWPWRWLZWPXLWLZYBBWDYHAUNVOYOUVDAWIVOUVEAWJVO
+      WPWRXLBXJXSSQWMWNWO $.
+  $}
+
 
 $(
 ###############################################################################
