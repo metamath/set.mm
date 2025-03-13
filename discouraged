@@ -18840,6 +18840,7 @@ New usage of "retbwax2" is discouraged (3 uses).
 New usage of "retbwax3" is discouraged (0 uses).
 New usage of "retbwax4" is discouraged (0 uses).
 New usage of "reuanidOLD" is discouraged (0 uses).
+New usage of "reueq1OLD" is discouraged (0 uses).
 New usage of "reutruALT" is discouraged (0 uses).
 New usage of "rexabOLD" is discouraged (0 uses).
 New usage of "rexbiOLD" is discouraged (0 uses).
@@ -18893,6 +18894,7 @@ New usage of "rmoanidOLD" is discouraged (0 uses).
 New usage of "rmoanimALT" is discouraged (0 uses).
 New usage of "rmobidvaOLD" is discouraged (0 uses).
 New usage of "rmodislmodOLD" is discouraged (0 uses).
+New usage of "rmoeq1OLD" is discouraged (0 uses).
 New usage of "rmxyelqirrOLD" is discouraged (0 uses).
 New usage of "rnbra" is discouraged (2 uses).
 New usage of "rnelshi" is discouraged (1 uses).
@@ -21265,6 +21267,7 @@ Proof modification of "retbwax2" is discouraged (127 steps).
 Proof modification of "retbwax3" is discouraged (20 steps).
 Proof modification of "retbwax4" is discouraged (13 steps).
 Proof modification of "reuanidOLD" is discouraged (37 steps).
+Proof modification of "reueq1OLD" is discouraged (49 steps).
 Proof modification of "reutruALT" is discouraged (45 steps).
 Proof modification of "rexabOLD" is discouraged (40 steps).
 Proof modification of "rexbiOLD" is discouraged (65 steps).
@@ -21291,6 +21294,7 @@ Proof modification of "rmoanidOLD" is discouraged (37 steps).
 Proof modification of "rmoanimALT" is discouraged (93 steps).
 Proof modification of "rmobidvaOLD" is discouraged (10 steps).
 Proof modification of "rmodislmodOLD" is discouraged (1641 steps).
+Proof modification of "rmoeq1OLD" is discouraged (49 steps).
 Proof modification of "rmxyelqirrOLD" is discouraged (238 steps).
 Proof modification of "rngopidOLD" is discouraged (27 steps).
 Proof modification of "rnmptcOLD" is discouraged (54 steps).
