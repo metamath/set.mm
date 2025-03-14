@@ -144593,6 +144593,14 @@ $)
       syl f1fveq oveq2 fveq2d syl6bi ) ABGKZCHKZDHKZLZMZCFNDFNOZCDOZBCEPZFNBDEP
       ZFNOUNHIFQZUKULUOUPRAUSUMAHIFSUSJHIFTUEUAAUJUKULUBAUJUKULUCHICDFUFUDUPUQU
       RFCDBEUGUHUI $.
+
+    $( An injection is compatible with any relations on the base set.
+       (Contributed by Mario Carneiro, 24-Feb-2015.) $)
+    f1olecpbl $p |- ( ( ph /\ ( A e. V /\ B e. V ) /\ ( C e. V /\ D e. V ) ) ->
+      ( ( ( F ` A ) = ( F ` C ) /\ ( F ` B ) = ( F ` D ) ) ->
+        ( A N B <-> C N D ) ) ) $=
+      ( wcel wa w3a cfv wceq wbr wb f1ocpbllem breq12 syl6bi ) ABHKCHKLDHKEHKLM
+      BFNDFNOCFNEFNOLBDOCEOLBCGPDEGPQABCDEFHIJRBDCEGST $.
   $}
 
 
