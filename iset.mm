@@ -34499,6 +34499,15 @@ $)
   $}
 
   ${
+    $d C x $.  $d ph x $.
+    iunssd.1 $e |- ( ( ph /\ x e. A ) -> B C_ C ) $.
+    $( Subset theorem for an indexed union.  (Contributed by Glauco Siliprandi,
+       8-Apr-2021.) $)
+    iunssd $p |- ( ph -> U_ x e. A B C_ C ) $=
+      ( wss wral ciun ralrimiva iunss sylibr ) ADEGZBCHBCDIEGAMBCFJBCDEKL $.
+  $}
+
+  ${
     $d y A $.  $d x y $.  $d x B $.
     $( The indexed union of a class abstraction.  (Contributed by NM,
        27-Dec-2004.) $)
