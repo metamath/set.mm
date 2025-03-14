@@ -144539,6 +144539,31 @@ $)
         YIWPZYSXRWHUUKAVIVRUVLUWAAWLVRUWBAWMVRYFYEYIBXRYPUPSWQWRWSWTKHYCXQYCXQW
         HXGHTJHYBXPYBXPWHXIHTYAXOXTXNXKXSXMGCXLXGXIPXAXBXCXDVRXEVRXEXF $.
     $}
+
+    ${
+      imasmulr.p $e |- .x. = ( .r ` R ) $.
+      imasmulr.t $e |- .xb = ( .r ` U ) $.
+      $( The ring multiplication in an image structure.  (Contributed by Mario
+         Carneiro, 23-Feb-2015.)  (Revised by Mario Carneiro, 11-Jul-2015.)
+         (Revised by Thierry Arnoux, 16-Jun-2019.) $)
+      imasmulr $p |- ( ph -> .xb = U_ p e. V U_ q e. V
+        { <. <. ( F ` p ) , ( F ` q ) >. , ( F ` ( p .x. q ) ) >. } ) $=
+        ( cfv cvv wcel cmulr cv cop co csn ciun cnx cbs cplusg cvsca eqid eqidd
+        ctp imasival fveq1d cimas wfo wf fof syl wfn basfn elexd funfvex funfni
+        sylancr eqeltrd fexd imasex syl2anc cslot wceq mulrslid simpri strndxid
+        mulridx cn wne a1i wral vex fvexg sylancl opexg slotex eqeltrid mp3an2i
+        ovexg ralrimivw iunexg basendxnmulrndx plusgndxnmulrndx fvtp3g syl22anc
+        snexg 3eqtr3rd eqtr4id ) ADFUARZKHJHKUBZGRZJUBZGRZUCZWSXAEUDZGRZUCZUEZU
+        FZUFZQAUGUARZFRXJUGUHRZBUCUGUIRZKHJHXCWSXACUIRZUDGRUCUEUFUFZUCXJXIUCUMZ
+        RZWRXIAXJFXOABXMXNCXICUJRZEFGHIJKLMXMUKPXQUKAXNULAXIULNOUNUOAFUAXJSAFGC
+        UPUDZSLAGSTZCITZXRSTAHBSGAHBGUQHBGURNHBGUSUTAHCUHRZSMAUHSVACSTYASTZVBAC
+        IOVCYBSCUHCUHVDVEVFVGZVHZOCGSIVIVJVGVPUAXJVKVLXJVQTZVMVNZVOAYEXISTZXKXJ
+        VRZXLXJVRZXPXIVLYEAYFVSAHSTZXHSTZKHVTYGYCAYKKHAYJXGSTZJHVTYKYCAYLJHAXFS
+        TZYLAXCSTZXESTZYMAWTSTZXBSTZYNAXSWSSTZYPYDKWAZWSGSSWBWCAXSXASTZYQYDJWAZ
+        XAGSSWBWCWTXBSSWDVJAXSXDSTZYOYDYRAESTYTUUBYSAECUARZSPAXTUUCSTOCUAIVMWEU
+        TWFYTAUUAVSWSXAESSSWHWGXDGSSWBVJXCXESSWDVJXFSWOUTWIJHXGSSWJVJWIKHXHSSWJ
+        VJYHAWKVSYIAWLVSXKXLXJBXNXIVQSWMWNWPWQ $.
+    $}
   $}
 
 
