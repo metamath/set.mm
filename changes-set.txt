@@ -84,6 +84,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+13-Mar-25 drnginvlrd [same]     Moved from SN's mathbox to main set.mm
+13-Mar-25 drnginvrrd [same]     Moved from SN's mathbox to main set.mm
 12-Mar-25 rabeqsnd  [same]      Moved from TA's mathbox to main set.mm
 12-Mar-25 sbievg    cbvsbvf
 10-Mar-25 brrici    [same]      Moved from SN's mathbox to main set.mm
