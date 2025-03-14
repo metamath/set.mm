@@ -144584,6 +144584,15 @@ $)
         ( F ` ( A .+ B ) ) = ( F ` ( C .+ D ) ) ) ) $=
       ( wcel wa w3a cfv wceq co f1ocpbllem oveq12 fveq2d syl6bi ) ABHKCHKLDHKEH
       KLMBGNDGNOCGNEGNOLBDOCEOLZBCFPZGNDEFPZGNOABCDEGHIJQUAUBUCGBDCEFRST $.
+
+    $( An injection is compatible with any operations on the base set.
+       (Contributed by Mario Carneiro, 15-Aug-2015.) $)
+    f1ovscpbl $p |- ( ( ph /\ ( A e. K /\ B e. V /\ C e. V ) ) ->
+      ( ( F ` B ) = ( F ` C ) -> ( F ` ( A .+ B ) ) = ( F ` ( A .+ C ) ) ) ) $=
+      ( wcel w3a wa cfv wceq co wf1 wb wf1o f1of1 adantr simpr2 simpr3 syl12anc
+      syl f1fveq oveq2 fveq2d syl6bi ) ABGKZCHKZDHKZLZMZCFNDFNOZCDOZBCEPZFNBDEP
+      ZFNOUNHIFQZUKULUOUPRAUSUMAHIFSUSJHIFTUEUAAUJUKULUBAUJUKULUCHICDFUFUDUPUQU
+      RFCDBEUGUHUI $.
   $}
 
 
