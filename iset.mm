@@ -144566,6 +144566,18 @@ $)
     $}
   $}
 
+  ${
+    f1ocpbl.f $e |- ( ph -> F : V -1-1-onto-> X ) $.
+    $( Lemma for ~ f1ocpbl .  (Contributed by Mario Carneiro, 24-Feb-2015.) $)
+    f1ocpbllem $p |- ( ( ph /\ ( A e. V /\ B e. V ) /\ ( C e. V /\ D e. V ) )
+      -> ( ( ( F ` A ) = ( F ` C ) /\ ( F ` B ) = ( F ` D ) )
+        <-> ( A = C /\ B = D ) ) ) $=
+      ( wcel wa w3a cfv wceq wf1 wb wf1o f1of1 f1fveq syl12anc 3ad2ant1 anbi12d
+      syl simp2l simp3l simp2r simp3r ) ABGJZCGJZKZDGJZEGJZKZLZBFMDFMNZBDNZCFME
+      FMNZCENZUNGHFOZUHUKUOUPPAUJUSUMAGHFQUSIGHFRUCUAZAUHUIUMUDAUJUKULUEGHBDFST
+      UNUSUIULUQURPUTAUHUIUMUFAUJUKULUGGHCEFSTUB $.
+  $}
+
 
 $(
 ###############################################################################
