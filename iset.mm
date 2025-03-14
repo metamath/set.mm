@@ -144576,6 +144576,14 @@ $)
       syl simp2l simp3l simp2r simp3r ) ABGJZCGJZKZDGJZEGJZKZLZBFMDFMNZBDNZCFME
       FMNZCENZUNGHFOZUHUKUOUPPAUJUSUMAGHFQUSIGHFRUCUAZAUHUIUMUDAUJUKULUEGHBDFST
       UNUSUIULUQURPUTAUHUIUMUFAUJUKULUGGHCEFSTUB $.
+
+    $( An injection is compatible with any operations on the base set.
+       (Contributed by Mario Carneiro, 24-Feb-2015.) $)
+    f1ocpbl $p |- ( ( ph /\ ( A e. V /\ B e. V ) /\ ( C e. V /\ D e. V ) ) ->
+      ( ( ( F ` A ) = ( F ` C ) /\ ( F ` B ) = ( F ` D ) ) ->
+        ( F ` ( A .+ B ) ) = ( F ` ( C .+ D ) ) ) ) $=
+      ( wcel wa w3a cfv wceq co f1ocpbllem oveq12 fveq2d syl6bi ) ABHKCHKLDHKEH
+      KLMBGNDGNOCGNEGNOLBDOCEOLZBCFPZGNDEFPZGNOABCDEGHIJQUAUBUCGBDCEFRST $.
   $}
 
 
