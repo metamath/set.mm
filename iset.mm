@@ -144816,6 +144816,22 @@ $)
       ULUTOQVFUKBGUMOUNVBBOGVFFLUOBOGCUPUQUTVBGFURUSUJ $.
   $}
 
+  ${
+    $d x .~ $.  $d x ph $.  $d x R $.  $d x V $.
+    qusin.u $e |- ( ph -> U = ( R /s .~ ) ) $.
+    qusin.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    qusin.e $e |- ( ph -> .~ e. W ) $.
+    qusin.r $e |- ( ph -> R e. Z ) $.
+    qusin.s $e |- ( ph -> ( .~ " V ) C_ V ) $.
+    $( Restrict the equivalence relation in a quotient structure to the base
+       set.  (Contributed by Mario Carneiro, 23-Feb-2015.) $)
+    qusin $p |- ( ph -> U = ( R /s ( .~ i^i ( V X. V ) ) ) ) $=
+      ( vx cec cmpt cimas co wcel eqid qusval cxp cin cqus cima wss wceq ecinxp
+      cv sylan mpteq2dva oveq1d cvv eqidd inex1g syl 3eqtr4d ) AMEMUHZBNZOZCPQM
+      EUQBEEUAZUBZNZOZCPQDCVAUCQZAUSVCCPAMEURVBABEUDEUEUQERURVBUFLEUQBUGUIUJUKA
+      MBCDUSEFGHIUSSJKTAMVACVDVCEULGAVDUMIVCSABFRVAULRJBUTFUNUOKTUP $.
+  $}
+
 
 $(
 ###############################################################################
