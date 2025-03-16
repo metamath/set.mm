@@ -144740,6 +144740,18 @@ $)
         OABEDCFGHIJKPQNRSTUCAHCUDUEZUBQAUDUBUMCUBUFUTUBUFZUGACIRUHVAUBCUDCUDUIU
         JUKULAECUNUEZUBSACIUFVBUBUFRCUNIUOUPUQURUAUS $.
     $}
+
+    ${
+      imasmulf.p $e |- .x. = ( .r ` R ) $.
+      imasmulf.a $e |- .xb = ( .r ` U ) $.
+      $( The image structure's ring multiplication is a function.  (Contributed
+         by Mario Carneiro, 23-Feb-2015.) $)
+      imasmulfn $p |- ( ph -> .xb Fn ( B X. B ) ) $=
+        ( cvv imasmulr cbs cfv basfn elexd funfvex funfni sylancr eqeltrd cmulr
+        wfn wcel mulrslid slotex syl eqeltrid imasaddfnlemg ) ABUADEGHUAJKLMNOA
+        BCDEFGHIJKPQNRSTUBAHCUCUDZUAQAUCUAULCUAUMUSUAUMZUEACIRUFUTUACUCCUCUGUHU
+        IUJAECUKUDZUASACIUMVAUAUMRCUKIUNUOUPUQUR $.
+    $}
   $}
 
 
