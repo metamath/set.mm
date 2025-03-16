@@ -42946,6 +42946,12 @@ $)
   relopab $p |- Rel { <. x , y >. | ph } $=
     ( copab eqid relopabi ) ABCABCDZGEF $.
 
+  $( If two classes are in a relationship given by an ordered-pair class
+     abstraction, the classes are sets.  (Contributed by Alexander van der
+     Vekens, 5-Nov-2017.) $)
+  brabv $p |- ( X { <. x , y >. | ph } Y -> ( X e. _V /\ Y e. _V ) ) $=
+    ( copab relopab brrelex12i ) DEABCFABCGH $.
+
   ${
     $d A y $.  $d B y $.  $d x y $.
     $( The maps-to notation always describes a relationship.  (Contributed by
@@ -149083,6 +149089,171 @@ $)
       ( csn wcel wceq cnsg cfv cgrp nsgid syl c1o cen wbr cvv en1eqsn wb elsn2g
       0nsg syl2anc eleqtrd elexd mpbid ) ABDIZIZJZBUIKZABCLMZUJACNJZBUMJGBCEOPA
       UIUMJZUMQRSUMUJKAUNUOGCDFUDPZHUIUMUAUEUFAUITJUKULUBAUIUMUPUGBUITUCPUH $.
+  $}
+
+  ${
+    $d G i r x y $.  $d S i r x y $.
+    releqg.r $e |- R = ( G ~QG S ) $.
+    $( The left coset equivalence relation is a relation.  (Contributed by
+       Mario Carneiro, 14-Jun-2015.) $)
+    releqgg $p |- ( ( G e. V /\ S e. W ) -> Rel R ) $=
+      ( vx vy vr vi wcel wa cv cbs cfv wss cminusg cplusg copab cvv wrel cpr co
+      relopab cqg wceq elex adantr adantl vex prss anbi1i opabbii cxp wfn basfn
+      funfvex funfni sylancr xpexg syl2anc opabssxp a1i eqeltrrid sseq2d fveq1d
+      ssexd fveq2 oveq123d eleq1d anbi12d opabbidv anbi2d df-eqg ovmpog syl3anc
+      eqidd eleq2 eqtrid releqd mpbiri ) CDKZBEKZLZAUAGMZHMZUBZCNOZPZWECQOZOZWF
+      CROZUCZBKZLZGHSZUAWOGHUDWDAWPWDACBUEUCZWPFWDCTKZBTKZWPTKWQWPUFWBWRWCCDUGU
+      HZWCWSWBBEUGUIWDWPWEWHKWFWHKLZWNLZGHSZTXBWOGHXAWIWNWEWFWHGUJHUJUKULUMWDXC
+      WHWHUNZTWDWHTKZXEXDTKWDNTUOWRXEUPWTXETCNCNUQURUSZXFWHWHTTUTVAXCXDPWDWNGHW
+      HWHVBVCVGVDIJCBTTWGIMZNOZPZWEXGQOZOZWFXGROZUCZJMZKZLZGHSWPUEWIWMXNKZLZGHS
+      TXGCUFZXPXRGHXSXIWIXOXQXSXHWHWGXGCNVHVEXSXMWMXNXSXKWKWFWFXLWLXGCRVHXSWEXJ
+      WJXGCQVHVFXSWFVQVIVJVKVLXNBUFZXRWOGHXTXQWNWIXNBWMVRVMVLGHJIVNVOVPVSVTWA
+      $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d g s x y G $.  $d g s x y N $.  $d g s x y S $.
+    $d g s x y .+ $.  $d g s x y X $.
+    eqgval.x $e |- X = ( Base ` G ) $.
+    eqgval.n $e |- N = ( invg ` G ) $.
+    eqgval.p $e |- .+ = ( +g ` G ) $.
+    eqgval.r $e |- R = ( G ~QG S ) $.
+    $( Value of the subgroup left coset equivalence relation.  (Contributed by
+       Mario Carneiro, 15-Jan-2015.) $)
+    eqgfval $p |- ( ( G e. V /\ S C_ X ) -> R = { <. x , y >. |
+      ( { x , y } C_ X /\ ( ( N ` x ) .+ y ) e. S ) } ) $=
+      ( wcel wss wa cv cfv cvv cbs vg vs cqg co cpr copab wceq adantr wfn basfn
+      elex funfvex funfni sylancr eqeltrid simpr ssexd xpexg syl2anc simpl prss
+      cxp vex sylibr ssopab2i sseqtrri a1i cminusg cplusg fveq2d eqtr4di sseq2d
+      df-xp fveq1d eqidd oveq123d eleq12d anbi12d df-eqg ovmpoga syl3anc eqtrid
+      opabbidv ) FHNZEIOZPZDFEUCUDZAQZBQZUEZIOZWHGRZWICUDZENZPZABUFZMWFFSNZESNW
+      PSNWGWPUGWDWQWEFHUKZUHWFEISWDISNZWEWDIFTRZSJWDTSUIWQWTSNZUJWRXASFTFTULUMU
+      NUOUHZWDWEUPUQWFWPIIVBZSWFWSWSXCSNXBXBIISSURUSWPXCOWFWPWHINWIINPZABUFXCWO
+      XDABWOWKXDWKWNUTWHWIIAVCBVCVAVDVEABIIVMVFVGUQUAUBFESSWJUAQZTRZOZWHXEVHRZR
+      ZWIXEVIRZUDZUBQZNZPZABUFWPUCSXEFUGZXLEUGZPZXNWOABXQXGWKXMWNXQXFIWJXQXFWTI
+      XQXEFTXOXPUTZVJJVKVLXQXKWMXLEXQXIWLWIWIXJCXQXJFVIRCXQXEFVIXRVJLVKXQWHXHGX
+      QXHFVHRGXQXEFVHXRVJKVKVNXQWIVOVPXOXPUPVQVRWCABUBUAVSVTWAWB $.
+
+    $( Value of the subgroup left coset equivalence relation.  (Contributed by
+       Mario Carneiro, 15-Jan-2015.)  (Revised by Mario Carneiro,
+       14-Jun-2015.) $)
+    eqgval $p |- ( ( G e. V /\ S C_ X ) -> ( A R B <->
+      ( A e. X /\ B e. X /\ ( ( N ` A ) .+ B ) e. S ) ) ) $=
+      ( vx vy wcel wss wa wbr cvv cv cpr cfv co copab w3a eqgfval adantl simpr1
+      breqd brabv elexd simpr2 jca wceq vex prss eleq1 bi2anan9 fveq2 oveqan12d
+      bitr3id id eleq1d anbi12d df-3an bitr4di eqid brabga pm5.21nd bitrd ) FHP
+      EIQRZABDSABNUAZOUAZUBIQZVMGUCZVNCUDZEPZRZNOUEZSZAIPZBIPZAGUCZBCUDZEPZUFZV
+      LDVTABNOCDEFGHIJKLMUGUJVLWAWGATPZBTPZRZWAWJVLVSNOABUKUHVLWGRZWHWIWKAIVLWB
+      WCWFUIULWKBIVLWBWCWFUMULUNVSWGNOABVTTTVMAUOZVNBUOZRZVSWBWCRZWFRWGWNVOWOVR
+      WFVOVMIPZVNIPZRWNWOVMVNINUPOUPUQWLWPWBWMWQWCVMAIURVNBIURUSVBWNVQWEEWLWMVP
+      WDVNBCVMAGUTWMVCVAVDVEWBWCWFVFVGVTVHVIVJVK $.
+  $}
+
+  ${
+    $d g x .+ $.  $d x y z .~ $.  $d x .0. $.  $d g x y z G $.  $d g x y z X $.
+    $d g x A $.  $d x y z Y $.
+    eqger.x $e |- X = ( Base ` G ) $.
+    eqger.r $e |- .~ = ( G ~QG Y ) $.
+    $( The subgroup coset equivalence relation is an equivalence relation.
+       (Contributed by Mario Carneiro, 13-Jan-2015.) $)
+    eqger $p |- ( Y e. ( SubGrp ` G ) -> .~ Er X ) $=
+      ( cfv wcel cgrp cv wbr wa co w3a wb eqid eqgval syl2anc wceq adantr vx vy
+      vz csubg wrel subgrcl releqgg mpancom cminusg cplusg subgss biimpa simp2d
+      simp1d grpinvcl grpinvadd syl3anc grpinvinv oveq2d eqtrd simp3d subginvcl
+      wss syldan eqeltrrd mpbir3and adantrr adantrl grpcld syl13anc c0g grprinv
+      grpass oveq1d grplid 3eqtr3d simpl grplinv sylan subg0cl eqeltrd pm4.71rd
+      subgcl ex df-3an anidm anbi2ci bitri bitrdi bitr4d iserd ) DBUDGZHZUAUBUC
+      CABIHZWMAUEDBUFZADBIWLFUGUHWMUAJZUBJZAKZLZWQWPAKZWQCHZWPCHZWQBUIGZGZWPBUJ
+      GZMZDHZWSXBXAWPXCGZWQXEMZDHZWMWRXBXAXJNZWMWNDCVCZWRXKOWOCDBEUKZWPWQXEADBX
+      CICEXCPZXEPZFQRULZUMZWSXBXAXJXPUNZWSXIXCGZXFDWSXSXDXHXCGZXEMZXFWSWNXHCHZX
+      AXSYASWMWNWRWOTZWSWNXBYBYCXRCBXCWPEXNUOZRXQCXEBXCXHWQEXOXNUPUQWSXTWPXDXEW
+      SWNXBXTWPSYCXRCBXCWPEXNURRUSUTWMWRXJXSDHWSXBXAXJXPVAZDBXCXIXNVBVDVEWSWNXL
+      WTXAXBXGNOYCWMXLWRXMTWQWPXEADBXCICEXNXOFQRVFWMWRWQUCJZAKZLZLZWPYFAKZXBYFC
+      HZXHYFXEMZDHZWMWRXBYGXRVGZYIXAYKXDYFXEMZDHZWMYGXAYKYPNZWRWMYGYQWMWNXLYGYQ
+      OWOXMWQYFXEADBXCICEXNXOFQRULVHZUMZYIXIYOXEMZYLDYIYTXHWQYOXEMZXEMZYLYIWNYB
+      XAYOCHYTUUBSWMWNYHWOTZYIWNXBYBUUCYNYDRWMWRXAYGXQVGZYICXEBXDYFEXOUUCYIWNXA
+      XDCHZUUCUUDCBXCWQEXNUORZYSVICXEBXHWQYOEXOVMVJYIUUAYFXHXEYIWQXDXEMZYFXEMZB
+      VKGZYFXEMZUUAYFYIUUGUUIYFXEYIWNXAUUGUUISUUCUUDCXEBXCWQUUIEXOUUIPZXNVLRVNY
+      IWNXAUUEYKUUHUUASUUCUUDUUFYSCXEBWQXDYFEXOVMVJYIWNYKUUJYFSUUCYSCXEBYFUUIEX
+      OUUKVORVPUSUTYIWMXJYPYTDHWMYHVQWMWRXJYGYEVGYIXAYKYPYRVAXEDBXIYOXOWCUQVEYI
+      WNXLYJXBYKYMNOUUCWMXLYHXMTWPYFXEADBXCICEXNXOFQRVFWMXBXHWPXEMZDHZXBLZWPWPA
+      KZWMXBUUMWMXBUUMWMXBLUULUUIDWMWNXBUULUUISWOCXEBXCWPUUIEXOUUKXNVRVSWMUUIDH
+      XBDBUUIUUKVTTWAWDWBWMUUOXBXBUUMNZUUNWMWNXLUUOUUPOWOXMWPWPXEADBXCICEXNXOFQ
+      RUUPXBXBLZUUMLUUNXBXBUUMWEUUQXBUUMXBWFWGWHWIWJWK $.
+
+    ${
+      eqglact.3 $e |- .+ = ( +g ` G ) $.
+      $( A left coset can be expressed as the image of a left action.
+         (Contributed by Mario Carneiro, 20-Sep-2015.) $)
+      eqglact $p |- ( ( G e. Grp /\ Y C_ X /\ A e. X ) ->
+        [ A ] .~ = ( ( x e. X |-> ( A .+ x ) ) " Y ) ) $=
+        ( vg wcel cfv co wa cmpt cima eqid wceq ccnv wss w3a cv wbr cab cminusg
+        cgrp cec wb eqgval 3anass bitrdi baibd 3impa abbidv dfec2 3ad2ant3 wf1o
+        grplactcnv simprd grplactfval adantl cnveqd syl 3eqtr3d 3adant2 imaeq1d
+        grpinvcl imacnvcnv crab mptpreima df-rab eqtri 3eqtr3g 3eqtr4d ) EUGLZG
+        FUAZBFLZUBZBAUCZDUDZAUEZVTFLZBEUFMZMZVTCNZGLZOZAUEZBDUHZAFBVTCNPZGQZVSW
+        AWHAVPVQVRWAWHUIVPVQOZWAVRWHWMWAVRWCWGUBVRWHOBVTCDGEWDUGFHWDRZJIUJVRWCW
+        GUKULUMUNUOVRVPWJWBSVQABDFUPUQVSWKTZTZGQAFWFPZTZGQZWLWIVSWPWRGVPVRWPWRS
+        VQVPVROZWOWQWTBKFAFKUCVTCNPPZMZTZWEXAMZWOWQWTFFXBURXCXDSBCKXAEWDFAXARZH
+        JWNUSUTWTXBWKVRXBWKSVPBCKXAEFAXEHVAVBVCWTWEFLXDWQSFEWDBHWNVHWECKXAEFAXE
+        HVAVDVEVCVFVGWKGVIWSWGAFVJWIAFWFGWQWQRVKWGAFVLVMVNVO $.
+    $}
+
+    ${
+      eqgid.3 $e |- .0. = ( 0g ` G ) $.
+      $( The left coset containing the identity is the original subgroup.
+         (Contributed by Mario Carneiro, 20-Sep-2015.) $)
+      eqgid $p |- ( Y e. ( SubGrp ` G ) -> [ .0. ] .~ = Y ) $=
+        ( vx csubg cfv wcel cec wb cgrp syl co wa wceq eqid cv wbr wrel subgrcl
+        releqgg mpancom relelec cminusg cplusg adantr oveq1d grplid sylan eqtrd
+        grpinvid eleq1d pm5.32da wss subgss eqgval 3anass bitrdi baibd syl21anc
+        grpidcl w3a sseld pm4.71rd 3bitr4d bitrd eqrdv ) DBJKZLZIEAMZDVMIUAZVNL
+        ZEVOAUBZVODLZVMAUCZVPVQNBOLZVMVSDBUDZADBOVLGUEUFVOEAUGPVMVOCLZEBUHKZKZV
+        OBUIKZQZDLZRZWBVRRVQVRVMWBWGVRVMWBRZWFVODWIWFEVOWEQZVOWIWDEVOWEWIVTWDES
+        VMVTWBWAUJBWCEHWCTZUOPUKVMVTWBWJVOSWACWEBVOEFWETZHULUMUNUPUQVMVTDCURZEC
+        LZVQWHNWACDBFUSZVMVTWNWACBEFHVEPVTWMRZVQWNWHWPVQWNWBWGVFWNWHREVOWEADBWC
+        OCFWKWLGUTWNWBWGVAVBVCVDVMVRWBVMDCVOWOVGVHVIVJVK $.
+    $}
+
+    $( Each coset is equipotent to the subgroup itself (which is also the coset
+       containing the identity).  (Contributed by Mario Carneiro,
+       20-Sep-2015.) $)
+    eqgen $p |- ( ( Y e. ( SubGrp ` G ) /\ A e. ( X /. .~ ) ) -> Y ~~ A ) $=
+      ( vz vy cv cen wbr cfv wcel eqid wa cmpt cvv wf1o cbs cec csubg cqs breq2
+      vx cplusg co cima cres simpl cgrp wss wceq subgrcl subgss jca 3expa sylan
+      eqglact wer eqger wfn basfn elexd funfvex funfni eqeltrid erex sylc ecexg
+      sylancr syl adantr eqeltrrd wf1 grplactf1o grplactfval adantl mpbid f1of1
+      f1oeq1d f1ores syl2anc f1oen2g syl3anc breqtrrd ectocld ) EUEJZBUAZKLEAKL
+      ECUBMZNZUEADBDBUCZWLOWIAEKUDWKWHDNZPZEHDWHHJZCUFMZUGQZEUHZWIKWNWKWRRNEWRW
+      QEUIZSZEWRKLWKWMUJWNWIWRRWKCUKNZEDULZPWMWIWRUMZWKXAXBECUNZDECFUOZUPXAXBWM
+      XCHWHWPBCDEFGWPOZUSUQURZWKWIRNZWMWKBRNZXHWKDBUTDRNXIBCDEFGVAWKDCTMZRFWKTR
+      VBCRNXJRNZVCWKCUKXDVDXKRCTCTVEVFVKVGDBRVHVIWHRBVJVLVMVNWNDDWQVOZXBWTWNDDW
+      QSZXLWKXAWMXMXDXAWMPZDDWHIDHDIJWOWPUGQQZMZSXMWHWPIXOCDHXOOZFXFVPXNDDXPWQW
+      MXPWQUMXAWHWPIXOCDHXQFVQVRWAVSURDDWQVTVLWKXBWMXEVMDDEWQWBWCEWRWSWJRWDWEXG
+      WFWG $.
+
+    eqgcpbl.p $e |- .+ = ( +g ` G ) $.
+    $( The subgroup coset equivalence relation is compatible with addition when
+       the subgroup is normal.  (Contributed by Mario Carneiro,
+       14-Jun-2015.) $)
+    eqgcpbl $p |- ( Y e. ( NrmSGrp ` G ) ->
+        ( ( A .~ C /\ B .~ D ) -> ( A .+ B ) .~ ( C .+ D ) ) ) $=
+      ( cfv wcel co cgrp wb syl2anc mpbid syl3anc cnsg wa cminusg csubg nsgsubg
+      wbr adantr subgrcl syl w3a simprl subgss eqid eqgval simp1d simprr simp2d
+      wss grpcl wceq grpinvadd oveq1d grpinvcl grpass eqtrd eqtr3d simp3d simpl
+      syl13anc nsgbi subgcl eqeltrd mpbir3and ex ) IGUAMNZACFUFZBDFUFZUBZABEOZC
+      DEOZFUFZVOVRUBZWAVSHNZVTHNZVSGUCMZMZVTEOZINZWBGPNZAHNZBHNZWCWBIGUDMNZWIVO
+      WLVRIGUEUGZIGUHUIZWBWJCHNZAWEMZCEOZINZWBVPWJWOWRUJZVOVPVQUKWBWIIHURZVPWSQ
+      WNWBWLWTWMHIGJULUIZACEFIGWEPHJWEUMZLKUNRSZUOZWBWKDHNZBWEMZDEOINZWBVQWKXEX
+      GUJZVOVPVQUPWBWIWTVQXHQWNXABDEFIGWEPHJXBLKUNRSZUOZHEGABJLUSTWBWIWOXEWDWNW
+      BWJWOWRXCUQZWBWKXEXGXIUQZHEGCDJLUSTZWBWGXFWPVTEOZEOZIWBWGXFWPEOZVTEOZXOWB
+      WFXPVTEWBWIWJWKWFXPUTWNXDXJHEGWEABJLXBVATVBWBWIXFHNZWPHNZWDXQXOUTWNWBWIWK
+      XRWNXJHGWEBJXBVCRZWBWIWJXSWNXDHGWEAJXBVCRZXMHEGXFWPVTJLVDVIVEWBXNXFEOZINZ
+      XOINZWBYBWQDXFEOZEOZIWBWQDEOZXFEOZYBYFWBYGXNXFEWBWIXSWOXEYGXNUTWNYAXKXLHE
+      GWPCDJLVDVIVBWBWIWQHNZXEXRYHYFUTWNWBWIXSWOYIWNYAXKHEGWPCJLUSTXLXTHEGWQDXF
+      JLVDVIVFWBWLWRYEINZYFINWMWBWJWOWRXCVGWBXGYJWBWKXEXGXIVGWBVOXRXEXGYJQVOVRV
+      HZXTXLXFDEIGHJLVJTSEIGWQYELVKTVLWBVOXNHNZXRYCYDQYKWBWIXSWDYLWNYAXMHEGWPVT
+      JLUSTXTXNXFEIGHJLVJTSVLWBWIWTWAWCWDWHUJQWNXAVSVTEFIGWEPHJXBLKUNRVMVN $.
   $}
 
 
