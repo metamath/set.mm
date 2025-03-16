@@ -144372,9 +144372,13 @@ $(
 $)
 
   $c "s $. $( Image structure $)
+  $c /s $. $( Quotient structure $)
 
   $( Image structure function. $)
   cimas $a class "s $.
+
+  $( Quotient structure function. $)
+  cqus $a class /s $.
 
   ${
     $d f p q r v $.
@@ -144397,6 +144401,15 @@ $)
         <. ( .r ` ndx ) , U_ p e. v U_ q e. v
      { <. <. ( f ` p ) , ( f ` q ) >. , ( f ` ( p ( .r ` r ) q ) ) >. } >. }
      ) $.
+  $}
+
+  ${
+    $d e f g h i j n p q r s v x y $.
+    $( Define a quotient ring (or quotient group), which is a special case of
+       an image structure ~ df-iimas where the image function is
+       ` x |-> [ x ] e ` .  (Contributed by Mario Carneiro, 23-Feb-2015.) $)
+    df-qus $a |- /s = ( r e. _V , e e. _V |->
+      ( ( x e. ( Base ` r ) |-> [ x ] e ) "s r ) ) $.
   $}
 
   ${
@@ -171337,6 +171350,10 @@ htmldef '"s' as " <IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 ALT=' " + '"' +
     "' TITLE='" + '"' + "'><sub><i>s</i></sub> ";
   althtmldef '"s' as ' &ldquo;<sub><i>s</i></sub> ';
   latexdef '"s' as "``_s";
+htmldef "/s" as " <IMG SRC='diagup.gif' WIDTH=14 HEIGHT=19 ALT=' /.' " +
+    "TITLE='/.'><sub><i>s</i></sub> ";
+  althtmldef "/s" as " /<sub><i>s</i></sub> ";
+  latexdef "/s" as " \diagup_s ";
 htmldef "Mgm" as 'Mgm';
   althtmldef "Mgm" as 'Mgm';
   latexdef "Mgm" as "\mathrm{Mgm}";
