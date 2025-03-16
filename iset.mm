@@ -144806,6 +144806,14 @@ $)
       PDRUEZGWEVODRAWBWCUJZUMAGWHSWDKUNUOWCVSWFSAWBVRCVQUPUQURLUSWIUTADINVBZACH
       MVBAFQTDITVNQTAFWGQLABGWFQAGWHQKARQVADQTWHQTZVCWJWKQDRDRVDVEVFVGVHVINDFQI
       VJVKVLVM $.
+
+    $( The function in ~ qusval is a surjection onto a quotient set.
+       (Contributed by Mario Carneiro, 23-Feb-2015.) $)
+    quslem $p |- ( ph -> F : V -onto-> ( V /. .~ ) ) $=
+      ( vy wfo cv cvv wcel syl crn cqs wfn cec wral ecexg ralrimivw fnmpt dffn4
+      sylib wceq wb wrex cab rnmpt df-qs eqtr4i foeq3 ax-mp ) AGFUAZFPZGGCUBZFP
+      ZAFGUCZVAABQZCUDZRSZBGUEVDAVGBGACHSVGMVEHCUFTUGBGVFFRLUHTGFUIUJUTVBUKVAVC
+      ULUTOQVFUKBGUMOUNVBBOGVFFLUOBOGCUPUQUTVBGFURUSUJ $.
   $}
 
 
