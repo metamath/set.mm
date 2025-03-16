@@ -4735,6 +4735,7 @@
 "df-cnfld" is used by "cnfldstr".
 "df-cnfld" is used by "cnfldtset".
 "df-cnfld" is used by "cnfldunif".
+"df-cnfld" is used by "gg-cnfldex".
 "df-cnfn" is used by "elcnfn".
 "df-cnfn" is used by "hhcnf".
 "df-cnop" is used by "elcnop".
@@ -4748,6 +4749,7 @@
 "df-div" is used by "divcn".
 "df-div" is used by "divval".
 "df-div" is used by "elq".
+"df-div" is used by "gg-divcn".
 "df-dmd" is used by "dmdbr".
 "df-drngo" is used by "drngoi".
 "df-drngo" is used by "isdivrngo".
@@ -15888,13 +15890,13 @@ New usage of "df-ch0" is discouraged (8 uses).
 New usage of "df-chj" is discouraged (1 uses).
 New usage of "df-chsup" is discouraged (1 uses).
 New usage of "df-cm" is discouraged (1 uses).
-New usage of "df-cnfld" is discouraged (13 uses).
+New usage of "df-cnfld" is discouraged (14 uses).
 New usage of "df-cnfn" is discouraged (2 uses).
 New usage of "df-cnop" is discouraged (2 uses).
 New usage of "df-com2" is discouraged (1 uses).
 New usage of "df-cv" is discouraged (1 uses).
 New usage of "df-dip" is discouraged (1 uses).
-New usage of "df-div" is discouraged (6 uses).
+New usage of "df-div" is discouraged (7 uses).
 New usage of "df-dmd" is discouraged (1 uses).
 New usage of "df-drngo" is discouraged (3 uses).
 New usage of "df-ds" is discouraged (7 uses).
