@@ -144788,6 +144788,26 @@ $)
     $}
   $}
 
+  ${
+    $d e r x y .~ $.  $d e r F $.  $d e r x ph $.  $d e r x R $.  $d x y V $.
+    qusval.u $e |- ( ph -> U = ( R /s .~ ) ) $.
+    qusval.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    qusval.f $e |- F = ( x e. V |-> [ x ] .~ ) $.
+    qusval.e $e |- ( ph -> .~ e. W ) $.
+    qusval.r $e |- ( ph -> R e. Z ) $.
+    $( Value of a quotient structure.  (Contributed by Mario Carneiro,
+       23-Feb-2015.) $)
+    qusval $p |- ( ph -> U = ( F "s R ) ) $=
+      ( vr ve cvv cbs wceq wcel cqus co cimas cv cfv cec cmpt df-qus a1i simprl
+      cmpo wa fveq2d adantr eqtr4d eceq2 ad2antll mpteq12dv eqtr4di oveq12d wfn
+      elexd basfn funfvex funfni sylancr eqeltrd mptexd eqeltrid imasex syl2anc
+      ovmpod eqtrd ) AEDCUAUBFDUCUBZJAOPDCQQBOUDZRUEZBUDZPUDZUFZUGZVOUCUBZVNUAQ
+      UAOPQQWAUKSABPOUHUIAVODSZVRCSZULZULZVTFVODUCWEVTBGVQCUFZUGZFWEBVPVSGWFWEV
+      PDRUEZGWEVODRAWBWCUJZUMAGWHSWDKUNUOWCVSWFSAWBVRCVQUPUQURLUSWIUTADINVBZACH
+      MVBAFQTDITVNQTAFWGQLABGWFQAGWHQKARQVADQTWHQTZVCWJWKQDRDRVDVEVFVGVHVINDFQI
+      VJVKVLVM $.
+  $}
+
 
 $(
 ###############################################################################
