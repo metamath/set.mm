@@ -144751,6 +144751,15 @@ $)
         wfn wcel mulrslid slotex syl eqeltrid imasaddfnlemg ) ABUADEGHUAJKLMNOA
         BCDEFGHIJKPQNRSTUBAHCUCUDZUAQAUCUAULCUAUMUSUAUMZUEACIRUFUTUACUCCUCUGUHU
         IUJAECUKUDZUASACIUMVAUAUMRCUKIUNUOUPUQUR $.
+
+      $( The value of an image structure's ring multiplication.  (Contributed
+         by Mario Carneiro, 23-Feb-2015.) $)
+      imasmulval $p |- ( ( ph /\ X e. V /\ Y e. V ) ->
+        ( ( F ` X ) .xb ( F ` Y ) ) = ( F ` ( X .x. Y ) ) ) $=
+        ( cvv imasmulr cbs cfv basfn elexd funfvex funfni sylancr eqeltrd cmulr
+        wfn wcel mulrslid slotex syl eqeltrid imasaddvallemg ) ABUCDEGHUCIJLMNO
+        PQABCDEFGHKLMRSPTUAUBUDAHCUEUFZUCSAUEUCUNCUCUOVAUCUOZUGACKTUHVBUCCUECUE
+        UIUJUKULAECUMUFZUCUAACKUOVCUCUOTCUMKUPUQURUSUT $.
     $}
   $}
 
