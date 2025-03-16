@@ -144832,6 +144832,19 @@ $)
       MBCDUSEFGHIUSSJKTAMVACVDVCEULGAVDUMIVCSABFRVAULRJBUTFUNUOKTUP $.
   $}
 
+  ${
+    $d x .~ $.  $d x ph $.  $d x R $.  $d x V $.
+    qusbas.u $e |- ( ph -> U = ( R /s .~ ) ) $.
+    qusbas.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    qusbas.e $e |- ( ph -> .~ e. W ) $.
+    qusbas.r $e |- ( ph -> R e. Z ) $.
+    $( Base set of a quotient structure.  (Contributed by Mario Carneiro,
+       23-Feb-2015.) $)
+    qusbas $p |- ( ph -> ( V /. .~ ) = ( Base ` U ) ) $=
+      ( vx cqs cv cec cmpt eqid qusval quslem imasbas ) AEBMCDLELNBOPZEGALBCDUA
+      EFGHIUAQZJKRIALBCDUAEFGHIUBJKSKT $.
+  $}
+
 
 $(
 ###############################################################################
