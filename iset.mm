@@ -144705,6 +144705,22 @@ $)
         JBSZVLBSZTWDWCVSWFVTWGGBVIFULGBVKFULUOVJVLBBUPUNUQAWCWAVNGSVOBSWERGBVNF
         ULURUSVDUTVAVAVBVGBDVEVF $.
     $}
+
+    imasaddf.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasaddf.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasaddf.r $e |- ( ph -> R e. Z ) $.
+    ${
+      imasaddf.p $e |- .x. = ( +g ` R ) $.
+      imasaddf.a $e |- .xb = ( +g ` U ) $.
+      $( The image structure's group operation is a function.  (Contributed by
+         Mario Carneiro, 23-Feb-2015.)  (Revised by Mario Carneiro,
+         10-Jul-2015.) $)
+      imasaddfn $p |- ( ph -> .xb Fn ( B X. B ) ) $=
+        ( cvv imasplusg cbs cfv wcel basfn elexd funfvex funfni sylancr eqeltrd
+        wfn cplusg plusgslid slotex syl eqeltrid imasaddfnlemg ) ABUADEGHUAJKLM
+        NOABEDCFGHIJKPQNRSTUBAHCUCUDZUAQAUCUAULCUAUEUSUAUEZUFACIRUGUTUACUCCUCUH
+        UIUJUKAECUMUDZUASACIUEVAUAUERCUMIUNUOUPUQUR $.
+    $}
   $}
 
 
