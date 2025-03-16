@@ -144691,6 +144691,19 @@ $)
         YIWNFTUAZWLYKWNGBHFAWLGBFVOZWMAGBFVQYNOGBFVRUNUKAWLGHUAWMRUKVSZAWLWMVTZ
         IFTGWAWBWNYMWMYLYOAWLWMWCZJFTGWAWBWOWPTTWDWBWNYMWSTUAZYJYOWNWLECUAZWMYR
         YPAWLYSWMSUKYQIJEGCGWEWFWSFTTWAWBWQWTTTWDWBXBDTWGUNWHWQWTDWIWJWK $.
+
+      imasaddflem.c $e |- ( ( ph /\ ( p e. V /\ q e. V ) ) ->
+        ( p .x. q ) e. V ) $.
+      $( The image set operations are closed if the original operation is.
+         (Contributed by Mario Carneiro, 23-Feb-2015.) $)
+      imasaddflemg $p |- ( ph -> .xb : ( B X. B ) --> B ) $=
+        ( wcel wa cxp wfn wss wf imasaddfnlemg cv cfv cop csn ciun wfo ffvelcdm
+        fof syl anim12dan opelxpi sylan syl2an2r opelxpd anassrs iunssd eqsstrd
+        co snssd dff2 sylanbrc ) ADBBUAZUBDVGBUAZUCVGBDUDABCDEFGHIJKLMNOPQUEADJ
+        GIGJUFZFUGZIUFZFUGZUHZVIVKEVCZFUGZUHZUIZUJZUJVHOAJGVRVHAVIGSZTIGVQVHAVS
+        VKGSZVQVHUCAVSVTTZTZVPVHWBVMVOVGBAGBFUDZWAVMVGSZAGBFUKWCMGBFUMUNZWCWATV
+        JBSZVLBSZTWDWCVSWFVTWGGBVIFULGBVKFULUOVJVLBBUPUNUQAWCWAVNGSVOBSWERGBVNF
+        ULURUSVDUTVAVAVBVGBDVEVF $.
     $}
   $}
 
