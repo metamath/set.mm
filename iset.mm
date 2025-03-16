@@ -144729,6 +144729,16 @@ $)
         wfn cplusg plusgslid slotex syl eqeltrid imasaddvallemg ) ABUCDEGHUCIJL
         MNOPQABEDCFGHKLMRSPTUAUBUDAHCUEUFZUCSAUEUCUNCUCUGVAUCUGZUHACKTUIVBUCCUE
         CUEUJUKULUMAECUOUFZUCUAACKUGVCUCUGTCUOKUPUQURUSUT $.
+
+      imasaddf.c $e |- ( ( ph /\ ( p e. V /\ q e. V ) ) ->
+        ( p .x. q ) e. V ) $.
+      $( The image structure's group operation is closed in the base set.
+         (Contributed by Mario Carneiro, 23-Feb-2015.) $)
+      imasaddf $p |- ( ph -> .xb : ( B X. B ) --> B ) $=
+        ( cvv imasplusg cbs cfv wcel basfn elexd funfvex funfni sylancr eqeltrd
+        wfn cplusg plusgslid slotex syl eqeltrid imasaddflemg ) ABUBDEGHUBJKLMN
+        OABEDCFGHIJKPQNRSTUCAHCUDUEZUBQAUDUBUMCUBUFUTUBUFZUGACIRUHVAUBCUDCUDUIU
+        JUKULAECUNUEZUBSACIUFVBUBUFRCUNIUOUPUQURUAUS $.
     $}
   $}
 
