@@ -144720,6 +144720,15 @@ $)
         wfn cplusg plusgslid slotex syl eqeltrid imasaddfnlemg ) ABUADEGHUAJKLM
         NOABEDCFGHIJKPQNRSTUBAHCUCUDZUAQAUCUAULCUAUEUSUAUEZUFACIRUGUTUACUCCUCUH
         UIUJUKAECUMUDZUASACIUEVAUAUERCUMIUNUOUPUQUR $.
+
+      $( The value of an image structure's group operation.  (Contributed by
+         Mario Carneiro, 23-Feb-2015.) $)
+      imasaddval $p |- ( ( ph /\ X e. V /\ Y e. V ) ->
+        ( ( F ` X ) .xb ( F ` Y ) ) = ( F ` ( X .x. Y ) ) ) $=
+        ( cvv imasplusg cbs cfv wcel basfn elexd funfvex funfni sylancr eqeltrd
+        wfn cplusg plusgslid slotex syl eqeltrid imasaddvallemg ) ABUCDEGHUCIJL
+        MNOPQABEDCFGHKLMRSPTUAUBUDAHCUEUFZUCSAUEUCUNCUCUGVAUCUGZUHACKTUIVBUCCUE
+        CUEUJUKULUMAECUOUFZUCUAACKUGVCUCUGTCUOKUPUQURUSUT $.
     $}
   $}
 
