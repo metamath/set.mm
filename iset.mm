@@ -144760,6 +144760,16 @@ $)
         wfn wcel mulrslid slotex syl eqeltrid imasaddvallemg ) ABUCDEGHUCIJLMNO
         PQABCDEFGHKLMRSPTUAUBUDAHCUEUFZUCSAUEUCUNCUCUOVAUCUOZUGACKTUHVBUCCUECUE
         UIUJUKULAECUMUFZUCUAACKUOVCUCUOTCUMKUPUQURUSUT $.
+
+      imasmulf.c $e |- ( ( ph /\ ( p e. V /\ q e. V ) ) ->
+        ( p .x. q ) e. V ) $.
+      $( The image structure's ring multiplication is closed in the base set.
+         (Contributed by Mario Carneiro, 23-Feb-2015.) $)
+      imasmulf $p |- ( ph -> .xb : ( B X. B ) --> B ) $=
+        ( cvv imasmulr cbs cfv basfn elexd funfvex funfni sylancr eqeltrd cmulr
+        wfn wcel mulrslid slotex syl eqeltrid imasaddflemg ) ABUBDEGHUBJKLMNOAB
+        CDEFGHIJKPQNRSTUCAHCUDUEZUBQAUDUBUMCUBUNUTUBUNZUFACIRUGVAUBCUDCUDUHUIUJ
+        UKAECULUEZUBSACIUNVBUBUNRCULIUOUPUQURUAUS $.
     $}
   $}
 
