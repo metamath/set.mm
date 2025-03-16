@@ -144861,6 +144861,16 @@ $)
         ( cv cec cvv eceq1 ecss ssexd fvmptd3 ) ABCBLZDMCDMZFENJSCDOKATFGIACDFH
         PQR $.
     $}
+
+    ${
+      ercpbllem.1 $e |- ( ph -> A e. V ) $.
+      ercpbllem.b $e |- ( ph -> B e. V ) $.
+      $( Lemma for ~ ercpbl .  (Contributed by Mario Carneiro, 24-Feb-2015.)
+         (Revised by AV, 12-Jul-2024.) $)
+      ercpbllemg $p |- ( ph -> ( ( F ` A ) = ( F ` B ) <-> A .~ B ) ) $=
+        ( cfv wceq cec wbr divsfvalg eqeq12d erth bitr4d ) ACFNZDFNZOCEPZDEPZOC
+        DEQAUBUDUCUEABCEFGHIJKLRABDEFGHIJKMRSACDEGILTUA $.
+    $}
   $}
 
 
