@@ -144845,6 +144845,24 @@ $)
       EFGHIUAQZJKRIALBCDUAEFGHIUBJKSKT $.
   $}
 
+  ${
+    $d x .~ $.  $d a b x A $.  $d b x B $.  $d x C $.  $d x D $.  $d a b x V $.
+    $d a b x .+ $.  $d a b x ph $.
+    ercpbl.r $e |- ( ph -> .~ Er V ) $.
+    ercpbl.v $e |- ( ph -> V e. W ) $.
+    ercpbl.f $e |- F = ( x e. V |-> [ x ] .~ ) $.
+
+    ${
+      ercpbl.a $e |- ( ph -> A e. V ) $.
+      $( Value of the function in ~ qusval .  (Contributed by Mario Carneiro,
+         24-Feb-2015.)  (Revised by Mario Carneiro, 12-Aug-2015.)  (Revised by
+         AV, 12-Jul-2024.) $)
+      divsfvalg $p |- ( ph -> ( F ` A ) = [ A ] .~ ) $=
+        ( cv cec cvv eceq1 ecss ssexd fvmptd3 ) ABCBLZDMCDMZFENJSCDOKATFGIACDFH
+        PQR $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
