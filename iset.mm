@@ -144894,6 +144894,19 @@ $)
         TWOWLWRGUFZJSLMUAUBJJWQWLUMWSXAJWQWLWRGVBVEWRWMUMXAWNJWRWMWLGVFVEVGVHVM
         UAUBJJJGEFVIVJVKULVL $.
     $}
+
+    erlecpbl.e $e |- ( ph ->
+      ( ( A .~ C /\ B .~ D ) -> ( A N B <-> C N D ) ) ) $.
+    $( Translate the relation compatibility relation to a quotient set.
+       (Contributed by Mario Carneiro, 24-Feb-2015.)  (Revised by Mario
+       Carneiro, 12-Aug-2015.)  (Revised by AV, 12-Jul-2024.) $)
+    erlecpbl $p |- ( ( ph /\ ( A e. V /\ B e. V ) /\ ( C e. V /\ D e. V ) ) ->
+      ( ( ( F ` A ) = ( F ` C ) /\ ( F ` B ) = ( F ` D ) ) ->
+        ( A N B <-> C N D ) ) ) $=
+      ( wcel wa cfv wbr 3ad2ant1 wceq wb simp2l simp3l ercpbllemg simp2r simp3r
+      w3a wer anbi12d wi sylbid ) ACJPZDJPZQZEJPZFJPZQZUHZCHREHRUAZDHRFHRUAZQCE
+      GSZDFGSZQZCDISEFISUBZUSUTVBVAVCUSBCEGHJKAUOJGUIURLTZAUOJKPURMTZNAUMUNURUC
+      AUOUPUQUDUEUSBDFGHJKVFVGNAUMUNURUFAUOUPUQUGUEUJAUOVDVEUKUROTUL $.
   $}
 
 
