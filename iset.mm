@@ -144871,6 +144871,29 @@ $)
         ( cfv wceq cec wbr divsfvalg eqeq12d erth bitr4d ) ACFNZDFNZOCEPZDEPZOC
         DEQAUBUDUCUEABCEFGHIJKLRABDEFGHIJKMRSACDEGILTUA $.
     $}
+
+    ${
+      $d .+ c d $.  $d a b c d $.  $d V c d $.  $d D c d $.  $d C c d $.
+      ercpbl.c $e |- ( ( ph /\ ( a e. V /\ b e. V ) ) -> ( a .+ b ) e. V ) $.
+      ercpbl.e $e |- ( ph ->
+        ( ( A .~ C /\ B .~ D ) -> ( A .+ B ) .~ ( C .+ D ) ) ) $.
+      $( Translate the function compatibility relation to a quotient set.
+         (Contributed by Mario Carneiro, 24-Feb-2015.)  (Revised by Mario
+         Carneiro, 12-Aug-2015.)  (Revised by AV, 12-Jul-2024.) $)
+      ercpbl $p |- ( ( ph /\ ( A e. V /\ B e. V ) /\ ( C e. V /\ D e. V ) ) ->
+        ( ( ( F ` A ) = ( F ` C ) /\ ( F ` B ) = ( F ` D ) ) ->
+          ( F ` ( A .+ B ) ) = ( F ` ( C .+ D ) ) ) ) $=
+        ( wcel cfv vc vd wa w3a wbr co wi 3ad2ant1 wer simp2l simp3l ercpbllemg
+        wceq simp2r simp3r anbi12d caovclg 3adant3 wral simprl ralrimivva oveq1
+        cv simprr eleq1d oveq2 cbvral2v sylib ovrspc2v syl21anc 3adant2 3imtr4d
+        adantr ) ACJSZDJSZUCZEJSZFJSZUCZUDZCEHUEZDFHUEZUCZCDGUFZEFGUFZHUEZCITEI
+        TUMZDITFITUMZUCWDITWEITUMAVPWCWFUGVSRUHVTWGWAWHWBVTBCEHIJKAVPJHUIVSNUHZ
+        AVPJKSVSOUHZPAVNVOVSUJAVPVQVRUKULVTBDFHIJKWIWJPAVNVOVSUNAVPVQVRUOULUPVT
+        BWDWEHIJKWIWJPAVPWDJSVSALMCDJJJGQUQURAVSWEJSZVPAVSUCVQVRUAVCZUBVCZGUFZJ
+        SZUBJUSUAJUSZWKAVQVRUTAVQVRVDAWPVSALVCZMVCZGUFZJSZMJUSLJUSWPAWTLMJJQVAW
+        TWOWLWRGUFZJSLMUAUBJJWQWLUMWSXAJWQWLWRGVBVEWRWMUMXAWNJWRWMWLGVFVEVGVHVM
+        UAUBJJJGEFVIVJVKULVL $.
+    $}
   $}
 
 
