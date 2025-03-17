@@ -144909,6 +144909,39 @@ $)
       AUOUPUQUDUEUSBDFGHJKVFVGNAUMUNURUFAUOUPUQUGUEUJAUOVDVEUKUROTUL $.
   $}
 
+  ${
+    $d a b p q x .~ $.  $d a b p q F $.  $d a b p q x ph $.  $d a b p q x V $.
+    $d p q x R $.  $d p q x .x. $.  $d p q x X $.  $d a b p q .xb $.
+    $d p q x Y $.
+    qusaddf.u $e |- ( ph -> U = ( R /s .~ ) ) $.
+    qusaddf.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    qusaddf.r $e |- ( ph -> .~ Er V ) $.
+    qusaddf.z $e |- ( ph -> R e. Z ) $.
+    qusaddf.e $e |- ( ph ->
+      ( ( a .~ p /\ b .~ q ) -> ( a .x. b ) .~ ( p .x. q ) ) ) $.
+    qusaddf.c $e |- ( ( ph /\ ( p e. V /\ q e. V ) ) ->
+      ( p .x. q ) e. V ) $.
+    ${
+      qusaddflem.f $e |- F = ( x e. V |-> [ x ] .~ ) $.
+      qusaddflem.g $e |- ( ph -> .xb = U_ p e. V U_ q e. V
+          { <. <. ( F ` p ) , ( F ` q ) >. , ( F ` ( p .x. q ) ) >. } ) $.
+      qusaddflemg.x $e |- ( ph -> .x. e. W ) $.
+      $( Value of an operation defined on a quotient structure.  (Contributed
+         by Mario Carneiro, 24-Feb-2015.) $)
+      qusaddvallemg $p |- ( ( ph /\ X e. V /\ Y e. V ) ->
+        ( [ X ] .~ .xb [ Y ] .~ ) = [ ( X .x. Y ) ] .~ ) $=
+        ( wcel w3a cfv co cec cqs cvv wer cbs basfn elex funfvex funfni sylancr
+        wfn syl eqeltrd erex quslem cv ercpbl imasaddvallemg 3ad2ant1 divsfvalg
+        sylc simp2 simp3 oveq12d wa 3ad2antl1 caovcld 3eqtr3d ) AKIUGZLIUGZUHZK
+        HUIZLHUIZEUJKLFUJZHUIKCUKZLCUKZEUJWDCUKAICULJEFHIUMKLNOPQABCDGHIUMMRSUD
+        AICUNZIUMUGZCUMUGTAIDUOUIZUMSADMUGZWIUMUGZUAWJUOUMVADUMUGWKUPDMUQWKUMDU
+        ODUOURUSUTVBVCZICUMVDVKUAVEABPVFQVFOVFZNVFZFCHIUMONTWLUDUCUBVGUEWLUFVHW
+        AWBWEWCWFEWABKCHIUMAVSWGVTTVIZAVSWHVTWLVIZUDAVSVTVLZVJWABLCHIUMWOWPUDAV
+        SVTVMZVJVNWABWDCHIUMWOWPUDWAONKLIIIFAVSWMIUGWNIUGVOWMWNFUJIUGVTUCVPWQWR
+        VQVJVR $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
