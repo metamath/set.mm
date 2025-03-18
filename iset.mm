@@ -145003,6 +145003,15 @@ $)
     $}
   $}
 
+  $( Function with a domain of ` 2o ` .  (Contributed by Jim Kingdon,
+     25-Sep-2023.) $)
+  fnpr2o $p |- ( ( A e. V /\ B e. W )
+      -> { <. (/) , A >. , <. 1o , B >. } Fn 2o ) $=
+    ( wcel wa c0 cop c1o cpr wfn c2o com wne peano1 a1i 1onn simpl simpr 1n0
+    necomi fnprg syl221anc df2o3 fneq2i sylibr ) ACEZBDEZFZGAHIBHJZGIJZKZUJLKUI
+    GMEZIMEZUGUHGINZULUMUIOPUNUIQPUGUHRUGUHSUOUIIGTUAPGIABMMCDUBUCLUKUJUDUEUF
+    $.
+
 
 $(
 ###############################################################################
