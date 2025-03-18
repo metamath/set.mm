@@ -145092,6 +145092,18 @@ $)
       URPZAOZHURPZBOZUBZDAOZEBOZQZABCURUCVDDROZEROZQZVGUSVAVJVCVJUSDEUDUEUFVEVH
       VFVIDASEBSULVDUSVAVCQZQZVJVGUSVAVCUGVJVKVLVGVJUSVKDERRUHUIVHVAVEVIVCVFVHU
       TDADERUJTVIVBEBDERUMTUKUNUOUPUQ $.
+
+    $( Equivalent condition for the pair function to be a proper function on
+       ` A ` .  (Contributed by Mario Carneiro, 20-Aug-2015.) $)
+    xpscf $p |- ( { <. (/) , X >. , <. 1o , Y >. } : 2o --> A <->
+        ( X e. A /\ Y e. A ) ) $=
+      ( vk c2o c0 cop c1o cpr wf cv wceq cif wcel wral com 2onn mpan2 3bitr4i
+      wa wfn cfv wdc peano1 nndceq sylancl ifiddc syl eleq2d ralbiia anbi2i cvv
+      cixp elnn w3a df-3an elixp2 fnex pm4.71ri anbi1i ffnfv xpsfrnel2 bitr3i )
+      EAFBGHCGIZJZVDDEDKZFLZAAMZUMNZBANCANTVDEUAZVFVDUBZVHNZDEOZTZVJVKANZDEOZTV
+      IVEVMVPVJVLVODEVFENZVHAVKVQVGUCZVHALVQVFPNZFPNVRVQEPNZVSQVFEUNRUDVFFUEUFV
+      GAUGUHUIUJUKVDULNZVJVMUOWAVJTZVMTVIVNWAVJVMUPDEVHVDUQVJWBVMVJWAVJVTWAQEPV
+      DURRUSUTSDEAVDVASAADBCVBVC $.
   $}
 
 
