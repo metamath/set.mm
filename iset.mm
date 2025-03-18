@@ -144939,6 +144939,15 @@ $)
         AWBWEWCWFEWABKCHIUMAVSWGVTTVIZAVSWHVTWLVIZUDAVSVTVLZVJWABLCHIUMWOWPUDAV
         SVTVMZVJVNWABWDCHIUMWOWPUDWAONKLIIIFAVSWMIUGWNIUGVOWMWNFUJIUGVTUCVPWQWR
         VQVJVR $.
+
+      $( The operation of a quotient structure is a function.  (Contributed by
+         Mario Carneiro, 24-Feb-2015.) $)
+      qusaddflemg $p |- ( ph ->
+        .xb : ( ( V /. .~ ) X. ( V /. .~ ) ) --> ( V /. .~ ) ) $=
+        ( cqs cvv wer wcel cbs cfv wfn basfn elexd funfvex sylancr eqeltrd erex
+        funfni sylc quslem cv ercpbl imasaddflemg ) AICUEJEFHIUFLMNOABCDGHIUFKP
+        QUBAICUGIUFUHCUFUHRAIDUIUJZUFQAUIUFUKDUFUHVDUFUHZULADKSUMVEUFDUIDUIUNUR
+        UOUPZICUFUQUSSUTABNVAOVAMVALVAFCHIUFMLRVFUBUATVBUCVFUDUAVC $.
     $}
   $}
 
