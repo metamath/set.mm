@@ -144975,6 +144975,21 @@ $)
         EUIVLUEUIZUMACHPUPVMUECUJCUJUNUOUQVFGBUEURUSZPUTNAUABCFVJGUEHMNVKVNPVAP
         STVBAECVCUKZUESACHUIVOUEUIPCVCHVDVEVGVHVI $.
     $}
+
+    ${
+      qusmulf.p $e |- .x. = ( .r ` R ) $.
+      qusmulf.a $e |- .xb = ( .r ` U ) $.
+      $( The base set of an image structure.  (Contributed by Mario Carneiro,
+         24-Feb-2015.) $)
+      qusmulval $p |- ( ( ph /\ X e. V /\ Y e. V ) ->
+        ( [ X ] .~ .xb [ Y ] .~ ) = [ ( X .x. Y ) ] .~ ) $=
+        ( vx cv cec cmpt cvv eqid cqs wer wcel cbs cfv wfn basfn funfvex funfni
+        elexd sylancr eqeltrd erex qusval quslem imasmulr cmulr mulrslid slotex
+        sylc syl eqeltrid qusaddvallemg ) AUCBCDEFUCGUCUDBUEUFZGUGHIJKLMNOPQRST
+        VLUHZAGBUICDEFVLGJKLAUCBCFVLGUGJOPVMAGBUJGUGUKBUGUKQAGCULUMZUGPAULUGUNC
+        UGUKVNUGUKZUOACJRURVOUGCULCULUPUQUSUTGBUGVAVHZRVBPAUCBCFVLGUGJOPVMVPRVC
+        RUAUBVDAECVEUMZUGUAACJUKVQUGUKRCVEJVFVGVIVJVK $.
+    $}
   $}
 
 
