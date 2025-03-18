@@ -145041,6 +145041,33 @@ $)
     ( c1o com wcel c0 wne cop cpr cfv wceq 1onn 1n0 necomi fvpr2g mp3an13 ) DEF
     BCFGDHDGAIDBIJKBLMDGNOGDABECPQ $.
 
+  $( The value of the pair function at an element of ` 2o ` .  (Contributed by
+     Mario Carneiro, 14-Aug-2015.) $)
+  fvprif $p |- ( ( A e. V /\ B e. W /\ C e. 2o )
+      -> ( { <. (/) , A >. , <. 1o , B >. } ` C ) = if ( C = (/) , A , B ) ) $=
+    ( wcel c2o w3a c0 wceq cop c1o cpr cfv cif wa adantr simpr fveq2d 3eqtr4d
+    fvpr0o 3ad2ant1 iftrued fvpr1o 3ad2ant2 1n0 eqeq1d mtbiri iffalsed wo elpri
+    neii df2o3 eleq2s 3ad2ant3 mpjaodan ) ADFZBEFZCGFZHZCIJZCIAKLBKMZNZVAABOZJC
+    LJZUTVAPZIVBNZAVCVDUTVGAJZVAUQURVHUSABDUAUBQVFCIVBUTVARZSVFVAABVIUCTUTVEPZL
+    VBNZBVCVDUTVKBJZVEURUQVLUSABEUDUEQVJCLVBUTVERZSVJVAABVJVALIJLIUFULVJCLIVMUG
+    UHUITUSUQVAVEUJZURVNCILMGCILUKUMUNUOUP $.
+
+  ${
+    $d k A $.  $d k B $.  $d k G $.
+    $( Elementhood in the target space of the function ` F ` appearing in
+       ~ xpsval .  (Contributed by Mario Carneiro, 14-Aug-2015.) $)
+    xpsfrnel $p |- ( G e. X_ k e. 2o if ( k = (/) , A , B ) <-> ( G Fn 2o /\
+       ( G ` (/) ) e. A /\ ( G ` 1o ) e. B ) ) $=
+      ( c2o cv c0 wceq wcel cfv wral w3a c1o cfn fveq2 eleq12d wne bitri 3anass
+      wa cif cixp cvv elixp2 3ancoma 2onn nnfi ax-mp fnfi mpan2 elexd biantrurd
+      wfn com cpr df2o3 raleqi 0ex 1oex iftrue 1n0 neeq1 mpbiri ifnefalse ralpr
+      syl bitr3di pm5.32i 3bitr4i ) DCECFZGHZABUAZUBIDUCIZDEUMZVJDJZVLIZCEKZLZV
+      NGDJZAIZMDJZBIZLZCEVLDUDVRVNVMVQLZWCVMVNVQUEVNVMVQTZTVNVTWBTZTWDWCVNWEWFV
+      NVQWEWFVNVMVQVNDNVNENIZDNIEUNIWGUFEUGUHEDUIUJUKULVQVPCGMUOZKWFVPCEWHUPUQV
+      PVTWBCGMURUSVKVOVSVLAVJGDOVKABUTPVJMHZVOWAVLBVJMDOWIVJGQZVLBHWIWJMGQVAVJM
+      GVBVCVJGABVDVFPVERVGVHVNVMVQSVNVTWBSVIRR $.
+  $}
+
 
 $(
 ###############################################################################
