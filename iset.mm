@@ -145081,6 +145081,17 @@ $)
       VEEOZVEHOZUFZVEUTFZVEAFZOZVHVEEHICVEEHUGUHUIUQVFVKVGUQVFPEUTFZURVIVJUQVLU
       ROZVFUQVAVMVCURUSJUJQRVFVIVLOUQVEEUTSTVFVJUROUQVEEASTULUQVGPHUTFZUSVIVJUQ
       VNUSOZVGUQVBVOVDURUSJUMQRVGVIVNOUQVEHUTSTVGVJUSOUQVEHASTULUNUOUP $.
+
+    $( Elementhood in the target space of the function ` F ` appearing in
+       ~ xpsval .  (Contributed by Mario Carneiro, 15-Aug-2015.) $)
+    xpsfrnel2 $p |- ( { <. (/) , X >. , <. 1o , Y >. } e.
+        X_ k e. 2o if ( k = (/) , A , B ) <-> ( X e. A /\ Y e. B ) ) $=
+      ( c0 cop c1o cpr c2o cv wceq cif cixp wcel cfv wa cvv elex eleq1d wfn w3a
+      xpsfrnel fnpr2ob biimpri 3ad2ant1 3anass fnpr2o biantrurd fvpr0o bi2anan9
+      anim12i fvpr1o bitr3d bitrid pm5.21nii bitri ) FDGHEGIZCJCKFLABMNOURJUAZF
+      URPZAOZHURPZBOZUBZDAOZEBOZQZABCURUCVDDROZEROZQZVGUSVAVJVCVJUSDEUDUEUFVEVH
+      VFVIDASEBSULVDUSVAVCQZQZVJVGUSVAVCUGVJVKVLVGVJUSVKDERRUHUIVHVAVEVIVCVFVHU
+      TDADERUJTVIVBEBDERUMTUKUNUOUPUQ $.
   $}
 
 
