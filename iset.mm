@@ -145068,6 +145068,21 @@ $)
       GVBVCVJGABVDVFPVERVGVHVNVMVQSVNVTWBSVIRR $.
   $}
 
+  ${
+    $d k A $.  $d k B $.  $d k G $.  $d k X $.  $d k Y $.
+    $( A function on ` 2o ` is determined by its values at zero and one.
+       (Contributed by Mario Carneiro, 27-Aug-2015.) $)
+    xpsfeq $p |- ( G Fn 2o ->
+       { <. (/) , ( G ` (/) ) >. , <. 1o , ( G ` 1o ) >. } = G ) $=
+      ( vk c2o wfn c0 cfv cop c1o cpr cvv wcel funfvex funfni mpan2 wceq wa syl
+      adantr fveq2 adantl 0lt2o 1lt2o fnpr2o id cv wo elpri df2o3 eleq2s fvpr0o
+      syl2anc 3eqtr4d fvpr1o jaodan sylan2 eqfnfvd ) ACDZBCEEAFZGHHAFZGIZAUQURJ
+      KZUSJKZUTCDUQECKVAUAVACEAEALMNZUQHCKVBUBVBCHAHALMNZURUSJJUCUKUQUDBUEZCKUQ
+      VEEOZVEHOZUFZVEUTFZVEAFZOZVHVEEHICVEEHUGUHUIUQVFVKVGUQVFPEUTFZURVIVJUQVLU
+      ROZVFUQVAVMVCURUSJUJQRVFVIVLOUQVEEUTSTVFVJUROUQVEEASTULUQVGPHUTFZUSVIVJUQ
+      VNUSOZVGUQVBVOVDURUSJUMQRVGVIVNOUQVEHUTSTVGVJUSOUQVEHASTULUNUOUP $.
+  $}
+
 
 $(
 ###############################################################################
