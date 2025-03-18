@@ -145106,6 +145106,22 @@ $)
       DURRUSUTSDEAVDVASAADBCVBVC $.
   $}
 
+  ${
+    $d A a b k x y z w $.  $d B a b k x y z w $.  $d F a b w z $.  $d X x y $.
+    $d Y x y $.
+    xpsff1o.f $e |- F = ( x e. A , y e. B
+      |-> { <. (/) , x >. , <. 1o , y >. } ) $.
+    $( The value of the function appearing in ~ xpsval .  (Contributed by Mario
+       Carneiro, 15-Aug-2015.) $)
+    xpsfval $p |- ( ( X e. A /\ Y e. B ) ->
+        ( X F Y ) = { <. (/) , X >. , <. 1o , Y >. } ) $=
+      ( wcel c0 cop c1o cpr cvv wceq wa c2o simpl opexg sylancr co 0lt2o opeq2d
+      1lt2o simpr prexg syl2anc cv preq12d ovmpoga mpd3an3 ) FCIZGDIZJFKZLGKZMZ
+      NIZFGEUAUPOULUMPZUNNIZUONIZUQURJQIULUSUBULUMRJFQCSTURLQIUMUTUDULUMUELGQDS
+      TUNUONNUFUGABFGCDJAUHZKZLBUHZKZMUPENVAFOZVCGOZPZVBUNVDUOVGVAFJVEVFRUCVGVC
+      GLVEVFUEUCUIHUJUK $.
+  $}
+
 
 $(
 ###############################################################################
