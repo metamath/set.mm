@@ -145012,6 +145012,23 @@ $)
     GMEZIMEZUGUHGINZULUMUIOPUNUIQPUGUHRUGUHSUOUIIGTUAPGIABMMCDUBUCLUKUJUDUEUF
     $.
 
+  ${
+    $d A k $.  $d B k $.
+    $( Biconditional version of ~ fnpr2o .  (Contributed by Jim Kingdon,
+       27-Sep-2023.) $)
+    fnpr2ob $p |- ( ( A e. _V /\ B e. _V )
+        <-> { <. (/) , A >. , <. 1o , B >. } Fn 2o ) $=
+      ( vk cvv wcel wa cop c1o cpr c2o wex df2o3 eleqtrri eleqtrrid eldm2 sylib
+      c0 0ex wceq 1oex wfn fnpr2o cv cdm prid1 fndm wn 1n0 nesymi vex opth1 mto
+      wo elpri orel2 mpsyl opth simprd eximi isset sylibr syl prid2 neii orcomd
+      jca impbii ) ADEZBDEZFQAGZHBGZIZJUAZABDDUBVMVHVIVMQCUCZGZVLEZCKZVHVMQVLUD
+      ZEVQVMQJVRQQHIZJQHRUELMJVLUFZNCQVLROPVQVNASZCKVHVPWACVPQQSZWAVPVOVJSZWBWA
+      FVOVKSZUGVPWCWDUMWCWDQHSHQUHUIQVNHBRCUJZUKULVOVJVKUNWDWCUOUPQVNQARWEUQPUR
+      USCAUTVAVBVMHVNGZVLEZCKZVIVMHVREWHVMHJVRHVSJQHTVCLMVTNCHVLTOPWHVNBSZCKVIW
+      GWICWGHHSZWIWGWFVKSZWJWIFWFVJSZUGWGWKWLUMWKWLHQSHQUHVDHVNQATWEUKULWGWLWKW
+      FVJVKUNVEWLWKUOUPHVNHBTWEUQPURUSCBUTVAVBVFVG $.
+  $}
+
 
 $(
 ###############################################################################
