@@ -145029,6 +145029,12 @@ $)
       FVJVKUNVEWLWKUOUPHVNHBTWEUQPURUSCBUTVAVBVFVG $.
   $}
 
+  $( The value of a function with a domain of (at most) two elements.
+     (Contributed by Jim Kingdon, 25-Sep-2023.) $)
+  fvpr0o $p |- ( A e. V -> ( { <. (/) , A >. , <. 1o , B >. } ` (/) ) = A ) $=
+    ( c0 com wcel c1o wne cop cpr cfv wceq peano1 1n0 necomi fvpr1g mp3an13 ) D
+    EFACFDGHDDAIGBIJKALMGDNODGABECPQ $.
+
 
 $(
 ###############################################################################
