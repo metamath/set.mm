@@ -144373,12 +144373,16 @@ $)
 
   $c "s $. $( Image structure $)
   $c /s $. $( Quotient structure $)
+  $c Xs. $. $( Binary structure $)
 
   $( Image structure function. $)
   cimas $a class "s $.
 
   $( Quotient structure function. $)
   cqus $a class /s $.
+
+  $( Binary product structure function. $)
+  cxps $a class Xs. $.
 
   ${
     $d f p q r v $.
@@ -144410,6 +144414,13 @@ $)
        ` x |-> [ x ] e ` .  (Contributed by Mario Carneiro, 23-Feb-2015.) $)
     df-qus $a |- /s = ( r e. _V , e e. _V |->
       ( ( x e. ( Base ` r ) |-> [ x ] e ) "s r ) ) $.
+
+    $( Define a binary product on structures.  (Contributed by Mario Carneiro,
+       14-Aug-2015.)  (Revised by Jim Kingdon, 25-Sep-2023.) $)
+    df-xps $a |- Xs. = ( r e. _V , s e. _V |->
+        ( `' ( x e. ( Base ` r ) , y e. ( Base ` s )
+        |-> { <. (/) , x >. , <. 1o , y >. } )
+        "s ( ( Scalar ` r ) Xs_ { <. (/) , r >. , <. 1o , s >. } ) ) ) $.
   $}
 
   ${
@@ -171727,6 +171738,10 @@ htmldef "/s" as " <IMG SRC='diagup.gif' WIDTH=14 HEIGHT=19 ALT=' /.' " +
     "TITLE='/.'><sub><i>s</i></sub> ";
   althtmldef "/s" as " /<sub><i>s</i></sub> ";
   latexdef "/s" as " \diagup_s ";
+htmldef "Xs." as " <IMG SRC='times.gif' WIDTH=9 HEIGHT=19 ALT=' X.' " +
+    "TITLE='X.'><sub><i>s</i></sub> ";
+  althtmldef "Xs." as ' &times;<sub><i>s</i></sub> ';
+  latexdef "Xs." as "\times_s";
 htmldef "Mgm" as 'Mgm';
   althtmldef "Mgm" as 'Mgm';
   latexdef "Mgm" as "\mathrm{Mgm}";
