@@ -34499,6 +34499,15 @@ $)
   $}
 
   ${
+    $d C x $.  $d ph x $.
+    iunssd.1 $e |- ( ( ph /\ x e. A ) -> B C_ C ) $.
+    $( Subset theorem for an indexed union.  (Contributed by Glauco Siliprandi,
+       8-Apr-2021.) $)
+    iunssd $p |- ( ph -> U_ x e. A B C_ C ) $=
+      ( wss wral ciun ralrimiva iunss sylibr ) ADEGZBCHBCDIEGAMBCFJBCDEKL $.
+  $}
+
+  ${
     $d y A $.  $d x y $.  $d x B $.
     $( The indexed union of a class abstraction.  (Contributed by NM,
        27-Dec-2004.) $)
@@ -52137,6 +52146,15 @@ $)
      by NM, 3-Oct-1999.) $)
   fex $p |- ( ( F : A --> B /\ A e. C ) -> F e. _V ) $=
     ( wf wfn wcel cvv ffn fnex sylan ) ABDEDAFACGDHGABDIACDJK $.
+
+  ${
+    fexd.1 $e |- ( ph -> F : A --> B ) $.
+    fexd.2 $e |- ( ph -> A e. C ) $.
+    $( If the domain of a mapping is a set, the function is a set.
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    fexd $p |- ( ph -> F e. _V ) $=
+      ( wf wcel cvv fex syl2anc ) ABCEHBDIEJIFGBCDEKL $.
+  $}
 
   ${
     $d f x y A $.  $d f y B $.
@@ -144346,6 +144364,417 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition of the structure quotient
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c "s $. $( Image structure $)
+
+  $( Image structure function. $)
+  cimas $a class "s $.
+
+  ${
+    $d f p q r v $.
+    $( Define an image structure, which takes a structure and a function on the
+       base set, and maps all the operations via the function.  For this to
+       work properly ` f ` must either be injective or satisfy the
+       well-definedness condition ` f ( a ) = f ( c ) /\ f ( b ) = f ( d ) -> `
+       ` f ( a + b ) = f ( c + d ) ` for each relevant operation.
+
+       Note that although we call this an "image" by association to ~ df-ima ,
+       in order to keep the definition simple we consider only the case when
+       the domain of ` F ` is equal to the base set of ` R ` .  Other cases can
+       be achieved by restricting ` F ` (with ~ df-res ) and/or ` R ` ( with
+       ~ df-iress ) to their common domain.  (Contributed by Mario Carneiro,
+       23-Feb-2015.)  (Revised by AV, 6-Oct-2020.) $)
+    df-iimas $a |- "s = ( f e. _V , r e. _V |-> [_ ( Base ` r ) / v ]_
+     { <. ( Base ` ndx ) , ran f >. ,
+        <. ( +g ` ndx ) , U_ p e. v U_ q e. v
+     { <. <. ( f ` p ) , ( f ` q ) >. , ( f ` ( p ( +g ` r ) q ) ) >. } >. ,
+        <. ( .r ` ndx ) , U_ p e. v U_ q e. v
+     { <. <. ( f ` p ) , ( f ` q ) >. , ( f ` ( p ( .r ` r ) q ) ) >. } >. }
+     ) $.
+  $}
+
+  ${
+    $d F f p q r v $.  $d R f p q r v $.  $d V p q v $.  $d W p q v $.
+    $( Existence of the image structure.  (Contributed by Jim Kingdon,
+       13-Mar-2025.) $)
+    imasex $p |- ( ( F e. V /\ R e. W ) -> ( F "s R ) e. _V ) $=
+      ( vv vp vq wcel cbs cfv cop csn cmulr cvv sylancr cn opexg opeq2d iuneq2d
+      ciun vf vr wa cimas co cnx crn cplusg ctp csb wceq elex adantr adantl wal
+      cv wfn basfn funfvex funfni basendxnn rnexg plusgndxnn wral vex a1i fvexg
+      syldan syl2anc plusgslid slotex ovexg snexg syl ralrimivw iunexg mulrslid
+      syl3anc cslot simpri tpexg alrimiv csbexga rneq opeq12d tpeq123d csbeq2dv
+      fveq1 sneqd fveq2 csbeq1d eqidd oveqd fveq2d df-iimas ovmpog eqeltrd
+      eqtrd ) BCHZADHZUCZBAUDUEZEAIJZUFIJZBUGZKZUFUHJZFEUPZGXHFUPZBJZGUPZBJZKZX
+      IXKAUHJZUEZBJZKZLZTZTZKZUFMJZFXHGXHXMXIXKAMJZUEZBJZKZLZTZTZKZUIZUJZNXABNH
+      ZANHZYLNHZXBYLUKWSYMWTBCULUMWTYNWSADULZUNXAXCNHZYKNHZEUOYOWTYQWSWTINUQYNY
+      QURYPYQNAIAIUSUTOUNXAYREXAXFNHZYANHZYJNHZYRXAXDPHXENHZYSVAWSUUBWTBCVBUMXD
+      XEPNQOXAXGPHXTNHZYTVCXAXHNHZXSNHZFXHVDUUCEVEZXAUUEFXHXAUUDXRNHZGXHVDUUEUU
+      FXAUUGGXHXAXQNHZUUGXAXMNHZXPNHZUUHXAXJNHZXLNHZUUIWSWTXINHZUUKUUMXAFVEVFZX
+      IBCNVGVHWSWTXKNHZUULUUOXAGVEVFZXKBCNVGVHXJXLNNQVIZWSWTXONHZUUJXAUUMXNNHZU
+      UOUURUUNWTUUSWSAUHDVJVKUNUUPXIXKXNNNNVLVRXOBCNVGVHXMXPNNQVIXQNVMVNVOGXHXR
+      NNVPOVOFXHXSNNVPOXGXTPNQOXAYBPHZYINHZUUAMYBVSUKUUTVQVTXAUUDYHNHZFXHVDUVAU
+      UFXAUVBFXHXAUUDYGNHZGXHVDUVBUUFXAUVCGXHXAYFNHZUVCXAUUIYENHZUVDUUQWSWTYDNH
+      ZUVEXAUUMYCNHZUUOUVFUUNWTUVGWSAMDVQVKUNUUPXIXKYCNNNVLVRYDBCNVGVHXMYENNQVI
+      YFNVMVNVOGXHYGNNVPOVOFXHYHNNVPOYBYIPNQOXFYAYJNNNWAVRWBEXCYKNNWCVIZUAUBBAN
+      NEUBUPZIJZXDUAUPZUGZKZXGFXHGXHXIUVKJZXKUVKJZKZXIXKUVIUHJZUEZUVKJZKZLZTZTZ
+      KZYBFXHGXHUVPXIXKUVIMJZUEZUVKJZKZLZTZTZKZUIZUJYLUDEUVJXFXGFXHGXHXMUVRBJZK
+      ZLZTZTZKZYBFXHGXHXMUWFBJZKZLZTZTZKZUIZUJZNUVKBUKZEUVJUWMUXFUXHUVMXFUWDUWS
+      UWLUXEUXHUVLXEXDUVKBWDRUXHUWCUWRXGUXHFXHUWBUWQUXHGXHUWAUWPUXHUVTUWOUXHUVP
+      XMUVSUWNUXHUVNXJUVOXLXIUVKBWHXKUVKBWHWEZUVRUVKBWHWEWISSRUXHUWKUXDYBUXHFXH
+      UWJUXCUXHGXHUWIUXBUXHUWHUXAUXHUVPXMUWGUWTUXIUWFUVKBWHWEWISSRWFWGUVIAUKZUX
+      GEXCUXFUJYLUXJEUVJXCUXFUVIAIWJWKUXJEXCUXFYKUXJXFXFUWSYAUXEYJUXJXFWLUXJUWR
+      XTXGUXJFXHUWQXSUXJGXHUWPXRUXJUWOXQUXJUWNXPXMUXJUVRXOBUXJUVQXNXIXKUVIAUHWJ
+      WMWNRWISSRUXJUXDYIYBUXJFXHUXCYHUXJGXHUXBYGUXJUXAYFUXJUWTYEXMUXJUWFYDBUXJU
+      WEYCXIXKUVIAMWJWMWNRWISSRWFWGWREUAUBGFWOWPVRUVHWQ $.
+  $}
+
+  ${
+    $d .+b f r v $.  $d .xb f r v $.  $d B f r v $.  $d F f p q r v $.
+    $d R f p q r v $.  $d V p q $.  $d f p ph q r v $.
+    imasval.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasval.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasval.p $e |- .+ = ( +g ` R ) $.
+    imasval.m $e |- .X. = ( .r ` R ) $.
+    imasval.q $e |- .x. = ( .s ` R ) $.
+    imasval.a $e |- ( ph -> .+b = U_ p e. V U_ q e. V
+     { <. <. ( F ` p ) , ( F ` q ) >. , ( F ` ( p .+ q ) ) >. } ) $.
+    imasval.t $e |- ( ph -> .xb = U_ p e. V U_ q e. V
+     { <. <. ( F ` p ) , ( F ` q ) >. , ( F ` ( p .X. q ) ) >. } ) $.
+    imasval.f $e |- ( ph -> F : V -onto-> B ) $.
+    imasval.r $e |- ( ph -> R e. Z ) $.
+    $( Value of an image structure.  The is a lemma for the theorems
+       ~ imasbas , ~ imasplusg , and ~ imasmulr and should not be needed once
+       they are proved.  (Contributed by Mario Carneiro, 23-Feb-2015.)
+       (Revised by Jim Kingdon, 11-Mar-2025.)  (New usage is discouraged.) $)
+    imasival $p |- ( ph -> U = { <. ( Base ` ndx ) , B >. ,
+        <. ( +g ` ndx ) , .+b >. , <. ( .r ` ndx ) , .xb >. } ) $=
+      ( vf vr vv cimas co cnx cbs cfv cop cplusg cmulr ctp cvv crn csn ciun csb
+      cv cmpo wceq df-iimas a1i wcel wfn basfn vex funfvex funfni mp2an simplrl
+      wa rneqd wfo forn syl ad2antrr eqtrd opeq2d simplrr fveq2d 3eqtr4d fveq1d
+      simpr opeq12d eqtr4di oveqd fveq12d sneqd iuneq12d eqtr4d tpeq123d csbied
+      wf fof elexd sylancr eqeltrd fexd basendxnn focdmex sylc opexg plusgndxnn
+      cn fvexg syl2anc plusgslid slotex eqeltrid ovexg syl3anc ralrimiva iunexg
+      wral snexg syl2an2r cslot mulrslid simpri tpexg ovmpod ) AIJEUGUHUIUJUKZB
+      ULZUIUMUKZDULZUIUNUKZFULZUOZOAUDUEJEUPUPUFUEVAZUJUKZYEUDVAZUQZULZYGNUFVAZ
+      MYQNVAZYNUKZMVAZYNUKZULZYRYTYLUMUKZUHZYNUKZULZURZUSZUSZULZYINYQMYQUUBYRYT
+      YLUNUKZUHZYNUKZULZURZUSZUSZULZUOZUTZYKUGUPUGUDUEUPUPUUTVBVCAUFUDUEMNVDVEA
+      YNJVCZYLEVCZVNZVNZUFYMUUSYKUPYMUPVFZUVDUJUPVGZYLUPVFUVEVHUEVIUVEUPYLUJYLU
+      JVJVKVLVEUVDYQYMVCZVNZYPYFUUJYHUURYJUVHYOBYEUVHYOJUQZBUVHYNJAUVAUVBUVGVMZ
+      VOAUVIBVCZUVCUVGAKBJVPZUVKUBKBJVQVRVSVTWAUVHUUIDYGUVHUUINKMKYRJUKZYTJUKZU
+      LZYRYTCUHZJUKZULZURZUSZUSZDUVHNYQKUUHUVTUVHYMEUJUKZYQKUVHYLEUJAUVAUVBUVGW
+      BZWCUVDUVGWFAKUWBVCUVCUVGPVSWDZUVHMYQKUUGUVSUWDUVHUUFUVRUVHUUBUVOUUEUVQUV
+      HYSUVMUUAUVNUVHYRYNJUVJWEUVHYTYNJUVJWEWGZUVHUUDUVPYNJUVJUVHUUCCYRYTUVHUUC
+      EUMUKZCUVHYLEUMUWCWCQWHWIWJWGWKWLWLADUWAVCUVCUVGTVSWMWAUVHUUQFYIUVHUUQNKM
+      KUVOYRYTHUHZJUKZULZURZUSZUSZFUVHNYQKUUPUWKUWDUVHMYQKUUOUWJUWDUVHUUNUWIUVH
+      UUBUVOUUMUWHUWEUVHUULUWGYNJUVJUVHUUKHYRYTUVHUUKEUNUKZHUVHYLEUNUWCWCRWHWIW
+      JWGWKWLWLAFUWLVCUVCUVGUAVSWMWAWNWOAKBUPJAUVLKBJWPUBKBJWQVRAKUWBUPPAUVFEUP
+      VFUWBUPVFZVHAELUCWRZUWNUPEUJEUJVJVKWSWTZXAZUWOAYFUPVFZYHUPVFZYJUPVFZYKUPV
+      FAYEXGVFBUPVFZUWRXBAKUPVFZUVLUXAUWPUBKBUPJXCXDYEBXGUPXEWSAYGXGVFDUPVFUWSX
+      FADUWAUPTAUXBUVTUPVFZNKXQUWAUPVFUWPAUXCNKAUXBYRKVFZUVSUPVFZMKXQUXCUWPAUXD
+      VNZUXEMKUXFYTKVFZVNZUVRUPVFZUXEUXHUVOUPVFZUVQUPVFZUXIUXHUVMUPVFZUVNUPVFZU
+      XJUXHJUPVFZYRUPVFZUXLAUXNUXDUXGUWQVSZUXOUXHNVIVEZYRJUPUPXHXIUXHUXNYTUPVFZ
+      UXMUXPUXRUXHMVIVEZYTJUPUPXHXIUVMUVNUPUPXEXIZUXHUXNUVPUPVFZUXKUXPUXHUXOCUP
+      VFZUXRUYAUXQAUYBUXDUXGACUWFUPQAELVFZUWFUPVFUCEUMLXJXKVRXLVSUXSYRYTCUPUPUP
+      XMXNUVPJUPUPXHXIUVOUVQUPUPXEXIUVRUPXRVRXOMKUVSUPUPXPXSXONKUVTUPUPXPXIWTYG
+      DXGUPXEWSAYIXGVFZFUPVFUWTUNYIXTVCUYDYAYBAFUWLUPUAAUXBUWKUPVFZNKXQUWLUPVFU
+      WPAUYENKAUXBUXDUWJUPVFZMKXQUYEUWPUXFUYFMKUXHUWIUPVFZUYFUXHUXJUWHUPVFZUYGU
+      XTUXHUXNUWGUPVFZUYHUXPUXHUXOHUPVFZUXRUYIUXQAUYJUXDUXGAHUWMUPRAUYCUWMUPVFU
+      CEUNLYAXKVRXLVSUXSYRYTHUPUPUPXMXNUWGJUPUPXHXIUVOUWHUPUPXEXIUWIUPXRVRXOMKU
+      WJUPUPXPXSXONKUWKUPUPXPXIWTYIFXGUPXEWSYFYHYJUPUPUPYCXNYDVT $.
+  $}
+
+  ${
+    $d F p q $.  $d R p q $.  $d V p q $.  $d p ph q $.
+    imasbas.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasbas.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasbas.f $e |- ( ph -> F : V -onto-> B ) $.
+    imasbas.r $e |- ( ph -> R e. Z ) $.
+    $( The base set of an image structure.  (Contributed by Mario Carneiro,
+       23-Feb-2015.)  (Revised by Mario Carneiro, 11-Jul-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.)  (Revised by AV, 6-Oct-2020.) $)
+    imasbas $p |- ( ph -> B = ( Base ` U ) ) $=
+      ( vp vq cbs cfv cop cvv wcel cn syl2anc cnx cplusg cv co ciun cmulr cvsca
+      csn ctp eqid eqidd imasival fveq1d basendxnn wfo wfn basfn funfvex funfni
+      elexd sylancr eqeltrd focdmex sylc opexg plusgndxnn wral fof syl fexd vex
+      wf fvexg sylancl a1i plusgslid slotex ovexg syl3anc snexg ralrimivw cslot
+      iunexg wceq mulrslid simpri tpexg baseid basendxnplusgndx basendxnmulrndx
+      strndxid wne fvtp1g syl22anc 3eqtr3rd ) AUANOZDOWPWPBPZUAUBOZLFMFLUCZEOZM
+      UCZEOZPZWSXACUBOZUDZEOZPZUHZUEZUEZPZUAUFOZLFMFXCWSXACUFOZUDZEOZPZUHZUEZUE
+      ZPZUIZOZDNOBAWPDYAABXDXJCXSCUGOZXMDEFGMLHIXDUJXMUJYCUJAXJUKAXSUKJKULZUMAD
+      NWPQADYAQYDAWQQRZXKQRZXTQRZYAQRAWPSRZBQRZYEUNAFQRZFBEUOZYIAFCNOZQIANQUPCQ
+      RYLQRZUQACGKUTYMQCNCNURUSVAVBZJFBQEVCVDZWPBSQVEVAAWRSRXJQRZYFVFAYJXIQRZLF
+      VGYPYNAYQLFAYJXHQRZMFVGYQYNAYRMFAXGQRZYRAXCQRZXFQRZYSAWTQRZXBQRZYTAEQRZWS
+      QRZUUBAFBQEAYKFBEVLJFBEVHVIYNVJZLVKZWSEQQVMVNAUUDXAQRZUUCUUFMVKZXAEQQVMVN
+      WTXBQQVETZAUUDXEQRZUUAUUFAUUEXDQRZUUHUUKUUEAUUGVOZACGRZUULKCUBGVPVQVIUUHA
+      UUIVOZWSXAXDQQQVRVSXEEQQVMTXCXFQQVETXGQVTVIWAMFXHQQWCTWALFXIQQWCTWRXJSQVE
+      VAAXLSRZXSQRZYGUFXLWBWDUUPWEWFAYJXRQRZLFVGUUQYNAUURLFAYJXQQRZMFVGUURYNAUU
+      SMFAXPQRZUUSAYTXOQRZUUTUUJAUUDXNQRZUVAUUFAUUEXMQRZUUHUVBUUMAUUNUVCKCUFGWE
+      VQVIUUOWSXAXMQQQVRVSXNEQQVMTXCXOQQVETXPQVTVIWAMFXQQQWCTWALFXRQQWCTXLXSSQV
+      EVAWQXKXTQQQWGVSVBWHUNWKAYHYIWPWRWLZWPXLWLZYBBWDYHAUNVOYOUVDAWIVOUVEAWJVO
+      WPWRXLBXJXSSQWMWNWO $.
+
+    ${
+      imasplusg.p $e |- .+ = ( +g ` R ) $.
+      imasplusg.a $e |- .+b = ( +g ` U ) $.
+      $( The group operation in an image structure.  (Contributed by Mario
+         Carneiro, 23-Feb-2015.)  (Revised by Mario Carneiro, 11-Jul-2015.)
+         (Revised by Thierry Arnoux, 16-Jun-2019.) $)
+      imasplusg $p |- ( ph -> .+b = U_ p e. V U_ q e. V
+        { <. <. ( F ` p ) , ( F ` q ) >. , ( F ` ( p .+ q ) ) >. } ) $=
+        ( cfv cvv wcel cv cop cplusg co csn ciun cnx cbs cmulr cvsca eqid eqidd
+        ctp imasival fveq1d cn basendxnn wfo basfn elexd funfvex funfni sylancr
+        wfn eqeltrd focdmex sylc opexg plusgndxnn wral fof syl fexd vex sylancl
+        fvexg syl2anc a1i plusgslid slotex ovexg syl3anc snexg ralrimivw iunexg
+        wf cslot wceq mulrslid simpri plusgid basendxnplusgndx plusgndxnmulrndx
+        tpexg strndxid wne fvtp2g syl22anc 3eqtr3rd eqtr4id oveqi fveq2i opeq2i
+        sneqi iuneq2i eqtr4di ) ADKHJHKUAZGRZJUAZGRZUBZXGXIEUCRZUDZGRZUBZUEZUFZ
+        UFZKHJHXKXGXICUDZGRZUBZUEZUFZUFADFUCRZXRQAUGUCRZFRYEUGUHRZBUBZYEXRUBZUG
+        UIRZKHJHXKXGXIEUIRZUDZGRZUBZUEZUFZUFZUBZUMZRZYDXRAYEFYRABXLXREYPEUJRZYJ
+        FGHIJKLMXLUKYJUKYTUKAXRULAYPULNOUNZUOAFUCYESAFYRSUUAAYGSTZYHSTZYQSTZYRS
+        TAYFUPTBSTZUUBUQAHSTZHBGURZUUEAHEUHRZSMAUHSVDESTUUHSTZUSAEIOUTUUISEUHEU
+        HVAVBVCVEZNHBSGVFVGYFBUPSVHVCAYEUPTZXRSTZUUCVIAUUFXQSTZKHVJUULUUJAUUMKH
+        AUUFXPSTZJHVJUUMUUJAUUNJHAXOSTZUUNAXKSTZXNSTZUUOAXHSTZXJSTZUUPAGSTZXGST
+        ZUURAHBSGAUUGHBGWFNHBGVKVLUUJVMZKVNZXGGSSVPVOAUUTXISTZUUSUVBJVNZXIGSSVP
+        VOXHXJSSVHVQZAUUTXMSTZUUQUVBAUVAXLSTZUVDUVGUVAAUVCVRZAEITZUVHOEUCIVSVTV
+        LUVDAUVEVRZXGXIXLSSSWAWBXMGSSVPVQXKXNSSVHVQXOSWCVLWDJHXPSSWEVQWDKHXQSSW
+        EVQZYEXRUPSVHVCAYIUPTZYPSTZUUDUIYIWGWHUVMWIWJAUUFYOSTZKHVJUVNUUJAUVOKHA
+        UUFYNSTZJHVJUVOUUJAUVPJHAYMSTZUVPAUUPYLSTZUVQUVFAUUTYKSTZUVRUVBAUVAYJST
+        ZUVDUVSUVIAUVJUVTOEUIIWIVTVLUVKXGXIYJSSSWAWBYKGSSVPVQXKYLSSVHVQYMSWCVLW
+        DJHYNSSWEVQWDKHYOSSWEVQYIYPUPSVHVCYGYHYQSSSWNWBVEWKVIWOAUUKUULYFYEWPZYE
+        YIWPZYSXRWHUUKAVIVRUVLUWAAWLVRUWBAWMVRYFYEYIBXRYPUPSWQWRWSWTKHYCXQYCXQW
+        HXGHTJHYBXPYBXPWHXIHTYAXOXTXNXKXSXMGCXLXGXIPXAXBXCXDVRXEVRXEXF $.
+    $}
+
+    ${
+      imasmulr.p $e |- .x. = ( .r ` R ) $.
+      imasmulr.t $e |- .xb = ( .r ` U ) $.
+      $( The ring multiplication in an image structure.  (Contributed by Mario
+         Carneiro, 23-Feb-2015.)  (Revised by Mario Carneiro, 11-Jul-2015.)
+         (Revised by Thierry Arnoux, 16-Jun-2019.) $)
+      imasmulr $p |- ( ph -> .xb = U_ p e. V U_ q e. V
+        { <. <. ( F ` p ) , ( F ` q ) >. , ( F ` ( p .x. q ) ) >. } ) $=
+        ( cfv cvv wcel cmulr cv cop co csn ciun cnx cbs cplusg cvsca eqid eqidd
+        ctp imasival fveq1d cimas wfo wf fof syl wfn basfn elexd funfvex funfni
+        sylancr eqeltrd fexd imasex syl2anc cslot wceq mulrslid simpri strndxid
+        mulridx cn wne a1i wral vex fvexg sylancl opexg slotex eqeltrid mp3an2i
+        ovexg ralrimivw iunexg basendxnmulrndx plusgndxnmulrndx fvtp3g syl22anc
+        snexg 3eqtr3rd eqtr4id ) ADFUARZKHJHKUBZGRZJUBZGRZUCZWSXAEUDZGRZUCZUEZU
+        FZUFZQAUGUARZFRXJUGUHRZBUCUGUIRZKHJHXCWSXACUIRZUDGRUCUEUFUFZUCXJXIUCUMZ
+        RZWRXIAXJFXOABXMXNCXICUJRZEFGHIJKLMXMUKPXQUKAXNULAXIULNOUNUOAFUAXJSAFGC
+        UPUDZSLAGSTZCITZXRSTAHBSGAHBGUQHBGURNHBGUSUTAHCUHRZSMAUHSVACSTYASTZVBAC
+        IOVCYBSCUHCUHVDVEVFVGZVHZOCGSIVIVJVGVPUAXJVKVLXJVQTZVMVNZVOAYEXISTZXKXJ
+        VRZXLXJVRZXPXIVLYEAYFVSAHSTZXHSTZKHVTYGYCAYKKHAYJXGSTZJHVTYKYCAYLJHAXFS
+        TZYLAXCSTZXESTZYMAWTSTZXBSTZYNAXSWSSTZYPYDKWAZWSGSSWBWCAXSXASTZYQYDJWAZ
+        XAGSSWBWCWTXBSSWDVJAXSXDSTZYOYDYRAESTYTUUBYSAECUARZSPAXTUUCSTOCUAIVMWEU
+        TWFYTAUUAVSWSXAESSSWHWGXDGSSWBVJXCXESSWDVJXFSWOUTWIJHXGSSWJVJWIKHXHSSWJ
+        VJYHAWKVSYIAWLVSXKXLXJBXNXIVQSWMWNWPWQ $.
+    $}
+  $}
+
+  ${
+    f1ocpbl.f $e |- ( ph -> F : V -1-1-onto-> X ) $.
+    $( Lemma for ~ f1ocpbl .  (Contributed by Mario Carneiro, 24-Feb-2015.) $)
+    f1ocpbllem $p |- ( ( ph /\ ( A e. V /\ B e. V ) /\ ( C e. V /\ D e. V ) )
+      -> ( ( ( F ` A ) = ( F ` C ) /\ ( F ` B ) = ( F ` D ) )
+        <-> ( A = C /\ B = D ) ) ) $=
+      ( wcel wa w3a cfv wceq wf1 wb wf1o f1of1 f1fveq syl12anc 3ad2ant1 anbi12d
+      syl simp2l simp3l simp2r simp3r ) ABGJZCGJZKZDGJZEGJZKZLZBFMDFMNZBDNZCFME
+      FMNZCENZUNGHFOZUHUKUOUPPAUJUSUMAGHFQUSIGHFRUCUAZAUHUIUMUDAUJUKULUEGHBDFST
+      UNUSUIULUQURPUTAUHUIUMUFAUJUKULUGGHCEFSTUB $.
+
+    $( An injection is compatible with any operations on the base set.
+       (Contributed by Mario Carneiro, 24-Feb-2015.) $)
+    f1ocpbl $p |- ( ( ph /\ ( A e. V /\ B e. V ) /\ ( C e. V /\ D e. V ) ) ->
+      ( ( ( F ` A ) = ( F ` C ) /\ ( F ` B ) = ( F ` D ) ) ->
+        ( F ` ( A .+ B ) ) = ( F ` ( C .+ D ) ) ) ) $=
+      ( wcel wa w3a cfv wceq co f1ocpbllem oveq12 fveq2d syl6bi ) ABHKCHKLDHKEH
+      KLMBGNDGNOCGNEGNOLBDOCEOLZBCFPZGNDEFPZGNOABCDEGHIJQUAUBUCGBDCEFRST $.
+
+    $( An injection is compatible with any operations on the base set.
+       (Contributed by Mario Carneiro, 15-Aug-2015.) $)
+    f1ovscpbl $p |- ( ( ph /\ ( A e. K /\ B e. V /\ C e. V ) ) ->
+      ( ( F ` B ) = ( F ` C ) -> ( F ` ( A .+ B ) ) = ( F ` ( A .+ C ) ) ) ) $=
+      ( wcel w3a wa cfv wceq co wf1 wb wf1o f1of1 adantr simpr2 simpr3 syl12anc
+      syl f1fveq oveq2 fveq2d syl6bi ) ABGKZCHKZDHKZLZMZCFNDFNOZCDOZBCEPZFNBDEP
+      ZFNOUNHIFQZUKULUOUPRAUSUMAHIFSUSJHIFTUEUAAUJUKULUBAUJUKULUCHICDFUFUDUPUQU
+      RFCDBEUGUHUI $.
+
+    $( An injection is compatible with any relations on the base set.
+       (Contributed by Mario Carneiro, 24-Feb-2015.) $)
+    f1olecpbl $p |- ( ( ph /\ ( A e. V /\ B e. V ) /\ ( C e. V /\ D e. V ) ) ->
+      ( ( ( F ` A ) = ( F ` C ) /\ ( F ` B ) = ( F ` D ) ) ->
+        ( A N B <-> C N D ) ) ) $=
+      ( wcel wa w3a cfv wceq wbr wb f1ocpbllem breq12 syl6bi ) ABHKCHKLDHKEHKLM
+      BFNDFNOCFNEFNOLBDOCEOLBCGPDEGPQABCDEFHIJRBDCEGST $.
+  $}
+
+  ${
+    $d p q B $.  $d p q R $.  $d a b p q w y z V $.  $d p q w .x. $.  $d p X $.
+    $d a b p q w x y z F $.  $d a b p q w ph $.  $d a b p q w x y z .xb $.
+    $d p q Y $.
+    imasaddf.f $e |- ( ph -> F : V -onto-> B ) $.
+    imasaddf.e $e |- ( ( ph /\ ( a e. V /\ b e. V ) /\ ( p e. V /\ q e. V ) )
+      -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
+        -> ( F ` ( a .x. b ) ) = ( F ` ( p .x. q ) ) ) ) $.
+    ${
+      imasaddflem.a $e |- ( ph -> .xb = U_ p e. V U_ q e. V
+          { <. <. ( F ` p ) , ( F ` q ) >. , ( F ` ( p .x. q ) ) >. } ) $.
+      imasaddfnlemg.v $e |- ( ph -> V e. W ) $.
+      imasaddfnlemg.x $e |- ( ph -> .x. e. C ) $.
+      $( The image structure operation is a function if the original operation
+         is compatible with the function.  (Contributed by Mario Carneiro,
+         23-Feb-2015.) $)
+      imasaddfnlemg $p |- ( ph -> .xb Fn ( B X. B ) ) $=
+        ( wral cvv wcel vx vw vy vz wfun cdm cxp wceq wfn cv wbr wmo cfv cop co
+        wrel csn ciun wfo wf fof syl fexd vex fvexg sylancl opexg syl2anc ovexg
+        a1i mp3an2i relsnopg ralrimivw reliun sylibr releqd mpbird crn ffvelcdm
+        wss anim12dan sylan opelxpi adantr opelxpd snssd anassrs iunssd eqsstrd
+        wa dmss wex vn0m dmxpm ax-mp sseqtrdi forn sqxpeqd sseqtrrd wi wal wrex
+        wb eleq2d df-br eliun rexbii bitr2i 3bitr4g elsng 3ad2ant1 opthg sylbid
+        eqeq2 biimprd syl6 impd 3expa rexlimdvva alrimiv mo2icl ralrimivva fofn
+        w3a opeq2 breq1d mobidv ralrn ralbidv opeq1 breq1 ralxp ssralv sylanbrc
+        sylc dffun7 eqimss2 iunss ralimdv eleq1d sylib opeldmg sylbird biimtrid
+        snssg mpd eleq1 dfss3 eqsstrrd eqssd df-fn ) ADUEZDUFZBBUGZUHDUUNUIADUP
+        ZUAUJZUBUJZDUKZUBULZUAUUMRZUULAUUOJGIGJUJZFUMZIUJZFUMZUNZUVAUVCEUOZFUMZ
+        UNZUQZURZURZUPZAUVJUPZJGRUVLAUVMJGAUVIUPZIGRUVMAUVNIGAUVESTZUVGSTZUVNAU
+        VBSTZUVDSTZUVOAFSTZUVASTZUVQAGBHFAGBFUSZGBFUTZMGBFVAVBZPVCZJVDZUVAFSSVE
+        VFAUVSUVCSTZUVRUWDIVDZUVCFSSVEVFUVBUVDSSVGVHZAUVSUVFSTZUVPUWDUVTAECTUWF
+        UWIUWEQUWFAUWGVJUVAUVCESCSVIVKUVFFSSVEVHZUVEUVGSSVLVHVMIGUVIVNVOVMJGUVJ
+        VNVOADUVKOVPVQAUUMFVRZUWKUGZVTUUSUAUWLRZUUTAUUMUUNUWLAUUMUUNSUGZUFZUUNA
+        DUWNVTUUMUWOVTADUVKUWNOAJGUVJUWNAUVAGTZWJIGUVIUWNAUWPUVCGTZUVIUWNVTAUWP
+        UWQWJZWJZUVHUWNUWSUVEUVGUUNSUWSUVBBTZUVDBTZWJZUVEUUNTAUWBUWRUXBUWCUWBUW
+        PUWTUWQUXAGBUVAFVSGBUVCFVSWAWBUVBUVDBBWCVBAUVPUWRUWJWDWEWFWGWHWHWIDUWNW
+        KVBUUQSTZUBWLUWOUUNUHUBWMUBUUNSWNWOWPZAUWKBAUWAUWKBUHMGBFWQVBWRZWSAUCUJ
+        ZUDUJZUNZUUQDUKZUBULZUDUWKRZUCUWKRZUWMAUXLKUJZFUMZUXGUNZUUQDUKZUBULZUDU
+        WKRZKGRZAUXSUXNLUJZFUMZUNZUUQDUKZUBULZLGRZKGRAUYDKLGGAUXMGTUXTGTWJZWJZU
+        YCUUQUXMUXTEUOFUMZUHZWTZUBXAUYDUYGUYJUBUYGUYCUYBUUQUNZUVITZIGXBZJGXBZUY
+        IUYGUYKDTZUYKUVKTZUYCUYNAUYOUYPXCUYFADUVKUYKOXDWDUYBUUQDXEUYPUYKUVJTZJG
+        XBUYNJUYKGUVJXFUYQUYMJGIUYKGUVIXFXGXHXIUYGUYLUYIJIGGAUYFUWRUYLUYIWTAUYF
+        UWRYDZUYLUYKUVHUHZUYIAUYFUYLUYSXCZUWRAUYKSTZUYTAUYBSTZUXCVUAAUXNSTZUYAS
+        TZVUBAUVSUXMSTVUCUWDKVDUXMFSSVEVFZAUVSUXTSTVUDUWDLVDUXTFSSVEVFZUXNUYASS
+        VGVHZUBVDZUYBUUQSSVGVFUYKUVHSXJVBXKUYRUYSUYBUVEUHZUUQUVGUHZWJZUYIAUYFUY
+        SVUKXCZUWRAVUBUXCVULVUGVUHUYBUUQUVEUVGSSXLVFXKUYRVUIVUJUYIUYRVUIUYHUVGU
+        HZVUJUYIWTUYRVUIUXNUVBUHUYAUVDUHWJZVUMAUYFVUIVUNXCZUWRAVUCVUDVUOVUEVUFU
+        XNUYAUVBUVDSSXLVHXKNXMVUMUYIVUJUYHUVGUUQXNXOXPXQXMXMXRXSXMXTUYCUBUYHYAV
+        BYBAUXRUYEKGAFGUIZUXRUYEXCAUWAVUPMGBFYCVBZUXQUYDUDLGFUXGUYAUHZUXPUYCUBV
+        URUXOUYBUUQDUXGUYAUXNYEYFYGYHVBYIVQAVUPUXLUXSXCVUQUXKUXRUCKGFUXFUXNUHZU
+        XJUXQUDUWKVUSUXIUXPUBVUSUXHUXOUUQDUXFUXNUXGYJYFYGYIYHVBVQUUSUXJUAUCUDUW
+        KUWKUUPUXHUHUURUXIUBUUPUXHUUQDYKYGYLVOUUSUAUUMUWLYMYOUAUBDYPYNAUUMUUNUX
+        DAUUNUWLUUMUXEAUUPUUMTZUAUWLRZUWLUUMVTAUXHUUMTZUDUWKRZUCUWKRZVVAAVVDUVB
+        UXGUNZUUMTZUDUWKRZJGRZAVVHUVEUUMTZIGRZJGRZAUVJDVTZJGRZVVKAUVKDVTZVVMADU
+        VKUHVVNOUVKDYQVBJGUVJDYRUUAAVVLVVJJGVVLUVIDVTZIGRAVVJIGUVIDYRAVVOVVIIGA
+        VVOUVHDTZVVIAUVHSTZVVPVVOXCAUVOUVPVVQUWHUWJUVEUVGSSVGVHUVHDSUUEVBAUVOUV
+        PVVPVVIWTUWHUWJUVEUVGDSSUUBVHUUCYSUUDYSUUFAVVGVVJJGAVUPVVGVVJXCVUQVVFVV
+        IUDIGFUXGUVDUHVVEUVEUUMUXGUVDUVBYEYTYHVBYIVQAVUPVVDVVHXCVUQVVCVVGUCJGFU
+        XFUVBUHZVVBVVFUDUWKVVRUXHVVEUUMUXFUVBUXGYJYTYIYHVBVQVUTVVBUAUCUDUWKUWKU
+        UPUXHUUMUUGYLVOUAUWLUUMUUHVOUUIUUJDUUNUUKYN $.
+
+      $( The operation of an image structure is defined to distribute over the
+         mapping function.  (Contributed by Mario Carneiro, 23-Feb-2015.) $)
+      imasaddvallemg $p |- ( ( ph /\ X e. V /\ Y e. V ) ->
+        ( ( F ` X ) .xb ( F ` Y ) ) = ( F ` ( X .x. Y ) ) ) $=
+        ( cvv wcel w3a cfv cop df-ov wfun wceq cxp imasaddfnlemg fnfun 3ad2ant1
+        co wfn syl csn wss cv ciun fveq2 fvoveq1 opeq12d sneqd ssiun2s 3ad2ant2
+        opeq1d wral opeq2d oveq2 fveq2d ralrimivw 3ad2ant3 sstrd sseqtrrd wb wf
+        ss2iun wfo fof fexd simp2 fvexg syl2anc simp3 opexg ovexg syl3anc snssg
+        mpbird funopfv sylc eqtrid ) AIGUAZJGUAZUBZIFUCZJFUCZDULWOWPUDZDUCZIJEU
+        LZFUCZWOWPDUEWNDUFZWQWTUDZDUAZWRWTUGAWLXAWMADBBUHZUMXAABCDEFGHKLMNOPQRS
+        UIXDDUJUNUKWNXCXBUOZDUPZWNXELGKGLUQZFUCZKUQZFUCZUDZXGXIEULZFUCZUDZUOZUR
+        ZURZDWNXELGXHWPUDZXGJEULZFUCZUDZUOZURZXQWLAXEYCUPWMLGYBIXEXGIUGZYAXBYDX
+        RWQXTWTYDXHWOWPXGIFUSVEXGIJFEUTVAVBVCVDWMAYCXQUPZWLWMYBXPUPZLGVFYEWMYFL
+        GKGXOJYBXIJUGZXNYAYGXKXRXMXTYGXJWPXHXIJFUSVGYGXLXSFXIJXGEVHVIVAVBVCVJLG
+        YBXPVPUNVKVLAWLDXQUGWMQUKVMWNXBTUAZXCXFVNWNWQTUAZWTTUAZYHWNWOTUAZWPTUAZ
+        YIWNFTUAZWLYKWNGBHFAWLGBFVOZWMAGBFVQYNOGBFVRUNUKAWLGHUAWMRUKVSZAWLWMVTZ
+        IFTGWAWBWNYMWMYLYOAWLWMWCZJFTGWAWBWOWPTTWDWBWNYMWSTUAZYJYOWNWLECUAZWMYR
+        YPAWLYSWMSUKYQIJEGCGWEWFWSFTTWAWBWQWTTTWDWBXBDTWGUNWHWQWTDWIWJWK $.
+
+      imasaddflem.c $e |- ( ( ph /\ ( p e. V /\ q e. V ) ) ->
+        ( p .x. q ) e. V ) $.
+      $( The image set operations are closed if the original operation is.
+         (Contributed by Mario Carneiro, 23-Feb-2015.) $)
+      imasaddflemg $p |- ( ph -> .xb : ( B X. B ) --> B ) $=
+        ( wcel wa cxp wfn wss wf imasaddfnlemg cv cfv cop csn ciun wfo ffvelcdm
+        fof syl anim12dan opelxpi sylan syl2an2r opelxpd anassrs iunssd eqsstrd
+        co snssd dff2 sylanbrc ) ADBBUAZUBDVGBUAZUCVGBDUDABCDEFGHIJKLMNOPQUEADJ
+        GIGJUFZFUGZIUFZFUGZUHZVIVKEVCZFUGZUHZUIZUJZUJVHOAJGVRVHAVIGSZTIGVQVHAVS
+        VKGSZVQVHUCAVSVTTZTZVPVHWBVMVOVGBAGBFUDZWAVMVGSZAGBFUKWCMGBFUMUNZWCWATV
+        JBSZVLBSZTWDWCVSWFVTWGGBVIFULGBVKFULUOVJVLBBUPUNUQAWCWAVNGSVOBSWERGBVNF
+        ULURUSVDUTVAVAVBVGBDVEVF $.
+    $}
+
+    imasaddf.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasaddf.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasaddf.r $e |- ( ph -> R e. Z ) $.
+    ${
+      imasaddf.p $e |- .x. = ( +g ` R ) $.
+      imasaddf.a $e |- .xb = ( +g ` U ) $.
+      $( The image structure's group operation is a function.  (Contributed by
+         Mario Carneiro, 23-Feb-2015.)  (Revised by Mario Carneiro,
+         10-Jul-2015.) $)
+      imasaddfn $p |- ( ph -> .xb Fn ( B X. B ) ) $=
+        ( cvv imasplusg cbs cfv wcel basfn elexd funfvex funfni sylancr eqeltrd
+        wfn cplusg plusgslid slotex syl eqeltrid imasaddfnlemg ) ABUADEGHUAJKLM
+        NOABEDCFGHIJKPQNRSTUBAHCUCUDZUAQAUCUAULCUAUEUSUAUEZUFACIRUGUTUACUCCUCUH
+        UIUJUKAECUMUDZUASACIUEVAUAUERCUMIUNUOUPUQUR $.
+
+      $( The value of an image structure's group operation.  (Contributed by
+         Mario Carneiro, 23-Feb-2015.) $)
+      imasaddval $p |- ( ( ph /\ X e. V /\ Y e. V ) ->
+        ( ( F ` X ) .xb ( F ` Y ) ) = ( F ` ( X .x. Y ) ) ) $=
+        ( cvv imasplusg cbs cfv wcel basfn elexd funfvex funfni sylancr eqeltrd
+        wfn cplusg plusgslid slotex syl eqeltrid imasaddvallemg ) ABUCDEGHUCIJL
+        MNOPQABEDCFGHKLMRSPTUAUBUDAHCUEUFZUCSAUEUCUNCUCUGVAUCUGZUHACKTUIVBUCCUE
+        CUEUJUKULUMAECUOUFZUCUAACKUGVCUCUGTCUOKUPUQURUSUT $.
+
+      imasaddf.c $e |- ( ( ph /\ ( p e. V /\ q e. V ) ) ->
+        ( p .x. q ) e. V ) $.
+      $( The image structure's group operation is closed in the base set.
+         (Contributed by Mario Carneiro, 23-Feb-2015.) $)
+      imasaddf $p |- ( ph -> .xb : ( B X. B ) --> B ) $=
+        ( cvv imasplusg cbs cfv wcel basfn elexd funfvex funfni sylancr eqeltrd
+        wfn cplusg plusgslid slotex syl eqeltrid imasaddflemg ) ABUBDEGHUBJKLMN
+        OABEDCFGHIJKPQNRSTUCAHCUDUEZUBQAUDUBUMCUBUFUTUBUFZUGACIRUHVAUBCUDCUDUIU
+        JUKULAECUNUEZUBSACIUFVBUBUFRCUNIUOUPUQURUAUS $.
+    $}
+
+    ${
+      imasmulf.p $e |- .x. = ( .r ` R ) $.
+      imasmulf.a $e |- .xb = ( .r ` U ) $.
+      $( The image structure's ring multiplication is a function.  (Contributed
+         by Mario Carneiro, 23-Feb-2015.) $)
+      imasmulfn $p |- ( ph -> .xb Fn ( B X. B ) ) $=
+        ( cvv imasmulr cbs cfv basfn elexd funfvex funfni sylancr eqeltrd cmulr
+        wfn wcel mulrslid slotex syl eqeltrid imasaddfnlemg ) ABUADEGHUAJKLMNOA
+        BCDEFGHIJKPQNRSTUBAHCUCUDZUAQAUCUAULCUAUMUSUAUMZUEACIRUFUTUACUCCUCUGUHU
+        IUJAECUKUDZUASACIUMVAUAUMRCUKIUNUOUPUQUR $.
+
+      $( The value of an image structure's ring multiplication.  (Contributed
+         by Mario Carneiro, 23-Feb-2015.) $)
+      imasmulval $p |- ( ( ph /\ X e. V /\ Y e. V ) ->
+        ( ( F ` X ) .xb ( F ` Y ) ) = ( F ` ( X .x. Y ) ) ) $=
+        ( cvv imasmulr cbs cfv basfn elexd funfvex funfni sylancr eqeltrd cmulr
+        wfn wcel mulrslid slotex syl eqeltrid imasaddvallemg ) ABUCDEGHUCIJLMNO
+        PQABCDEFGHKLMRSPTUAUBUDAHCUEUFZUCSAUEUCUNCUCUOVAUCUOZUGACKTUHVBUCCUECUE
+        UIUJUKULAECUMUFZUCUAACKUOVCUCUOTCUMKUPUQURUSUT $.
+
+      imasmulf.c $e |- ( ( ph /\ ( p e. V /\ q e. V ) ) ->
+        ( p .x. q ) e. V ) $.
+      $( The image structure's ring multiplication is closed in the base set.
+         (Contributed by Mario Carneiro, 23-Feb-2015.) $)
+      imasmulf $p |- ( ph -> .xb : ( B X. B ) --> B ) $=
+        ( cvv imasmulr cbs cfv basfn elexd funfvex funfni sylancr eqeltrd cmulr
+        wfn wcel mulrslid slotex syl eqeltrid imasaddflemg ) ABUBDEGHUBJKLMNOAB
+        CDEFGHIJKPQNRSTUCAHCUDUEZUBQAUDUBUMCUBUNUTUBUNZUFACIRUGVAUBCUDCUDUHUIUJ
+        UKAECULUEZUBSACIUNVBUBUNRCULIUOUPUQURUAUS $.
+    $}
+  $}
+
+
+$(
 ###############################################################################
   BASIC ALGEBRAIC STRUCTURES
 ###############################################################################
@@ -170902,6 +171331,10 @@ htmldef "gsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
     "ALT=' gsum' TITLE='gsum'><sub><i>g</i></sub> ";
   althtmldef "gsum" as " &Sigma;<sub><i>g</i></sub> ";
   latexdef "gsum" as "\sum_g";
+htmldef '"s' as " <IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 ALT=' " + '"' +
+    "' TITLE='" + '"' + "'><sub><i>s</i></sub> ";
+  althtmldef '"s' as ' &ldquo;<sub><i>s</i></sub> ';
+  latexdef '"s' as "``_s";
 htmldef "Mgm" as 'Mgm';
   althtmldef "Mgm" as 'Mgm';
   latexdef "Mgm" as "\mathrm{Mgm}";
