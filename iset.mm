@@ -145145,6 +145145,12 @@ $)
       COZDSZXCUUCUUEFUTZNUUAUUBXCUBWDZUUDUUFCDEXCWEZWFZUUBUUHUUDUUFUUIWGZUUBUUG
       MUUCQRUUEQUJZXCUUBUUDUUFUUGUULNUUJUUKABCDFUUCUUEGVDVEUUBUUHUULXCNEUBWRXCW
       LXCWHWMWIJKCDUUCUUEXCFWJWKWNJKHCDWSFWOVTWQWSFWPVT $.
+
+    $( A short expression for the indexed cartesian product on two indices.
+       (Contributed by Mario Carneiro, 15-Aug-2015.) $)
+    xpsfrn $p |- ran F = X_ k e. 2o if ( k = (/) , A , B ) $=
+      ( cxp c2o cv c0 wceq cif cixp wf1o wfo crn xpsff1o f1ofo forn mp2b ) CDHZ
+      EIEJKLCDMNZFOUBUCFPFQUCLABCDEFGRUBUCFSUBUCFTUA $.
   $}
 
 
