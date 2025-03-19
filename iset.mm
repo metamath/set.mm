@@ -145151,6 +145151,14 @@ $)
     xpsfrn $p |- ran F = X_ k e. 2o if ( k = (/) , A , B ) $=
       ( cxp c2o cv c0 wceq cif cixp wf1o wfo crn xpsff1o f1ofo forn mp2b ) CDHZ
       EIEJKLCDMNZFOUBUCFPFQUCLABCDEFGRUBUCFSUBUCFTUA $.
+
+    $( The function appearing in ~ xpsval is a bijection from the cartesian
+       product to the indexed cartesian product indexed on the pair
+       ` 2o = { (/) , 1o } ` .  (Contributed by Mario Carneiro,
+       24-Jan-2015.) $)
+    xpsff1o2 $p |- F : ( A X. B ) -1-1-onto-> ran F $=
+      ( vk cxp c2o cv c0 wceq cif cixp wf1o wf1 crn xpsff1o f1of1 f1f1orn mp2b
+      ) CDHZGIGJKLCDMNZEOUBUCEPUBEQEOABCDGEFRUBUCESUBUCETUA $.
   $}
 
 
