@@ -144087,6 +144087,15 @@ $)
   homslid $p |- ( Hom = Slot ( Hom ` ndx ) /\ ( Hom ` ndx ) e. NN ) $=
     ( chom c1 c4 cdc df-hom 1nn0 4nn decnncl ndxslid ) ABCDEBCFGHI $.
 
+  $( Utility theorem: index-independent form of ~ df-cco .  (Contributed by
+     Mario Carneiro, 7-Jan-2017.) $)
+  ccoid $p |- comp = Slot ( comp ` ndx ) $=
+    ( cco c1 c5 cdc df-cco 1nn0 5nn decnncl ndxid ) ABCDEBCFGHI $.
+
+  $( Slot property of ` comp ` .  (Contributed by Jim Kingdon, 20-Mar-2025.) $)
+  ccoslid $p |- ( comp = Slot ( comp ` ndx ) /\ ( comp ` ndx ) e. NN ) $=
+    ( cco c1 c5 cdc df-cco 1nn0 5nn decnncl ndxslid ) ABCDEBCFGHI $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
