@@ -144083,6 +144083,10 @@ $)
   homid $p |- Hom = Slot ( Hom ` ndx ) $=
     ( chom c1 c4 cdc df-hom 1nn0 4nn decnncl ndxid ) ABCDEBCFGHI $.
 
+  $( Slot property of ` Hom ` .  (Contributed by Jim Kingdon, 20-Mar-2025.) $)
+  homslid $p |- ( Hom = Slot ( Hom ` ndx ) /\ ( Hom ` ndx ) e. NN ) $=
+    ( chom c1 c4 cdc df-hom 1nn0 4nn decnncl ndxslid ) ABCDEBCFGHI $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
