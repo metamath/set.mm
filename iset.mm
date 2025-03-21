@@ -145311,6 +145311,43 @@ $)
       ) CDHZGIGJKLCDMNZEOUBUCEPUBEQEOABCDGEFRUBUCESUBUCETUA $.
   $}
 
+  ${
+    $d r s y $.  $d c k x y A $.  $d c k x y B $.  $d c d k x y C $.  $d k G $.
+    $d c d k x y D $.  $d r s F $.  $d c d k r s S $.  $d k r s U $.  $d x W $.
+    $d a b c d k ph $.  $d k x y .x. $.  $d k x y .X. $.  $d a b c d k x y X $.
+    $d c d k r s x R $.  $d a b c d .xb $.  $d a b c d k x y Y $.
+    xpsval.t $e |- T = ( R Xs. S ) $.
+    xpsval.x $e |- X = ( Base ` R ) $.
+    xpsval.y $e |- Y = ( Base ` S ) $.
+    xpsval.1 $e |- ( ph -> R e. V ) $.
+    xpsval.2 $e |- ( ph -> S e. W ) $.
+
+    ${
+      xpsval.f $e |- F = ( x e. X , y e. Y
+        |-> { <. (/) , x >. , <. 1o , y >. } ) $.
+      xpsval.k $e |- G = ( Scalar ` R ) $.
+      xpsval.u $e |- U = ( G Xs_ { <. (/) , R >. , <. 1o , S >. } ) $.
+      $( Value of the binary structure product function.  (Contributed by Mario
+         Carneiro, 14-Aug-2015.)  (Revised by Jim Kingdon, 25-Sep-2023.) $)
+      xpsval $p |- ( ph -> T = ( `' F "s U ) ) $=
+        ( vr vs cxps co ccnv cimas cvv wcel wceq elexd cbs cfv wfn basfn funfni
+        funfvex sylancr eqeltrid c0 cop c1o cpr mpoexg syl2anc cnvexg syl cprds
+        cv csca scaslid slotex 0lt2o opexg 1lt2o prexg prdsex imasex cmpo fveq2
+        c2o wa eqtr4di mpoeq12 syl2an cnveqd adantr simpl simpr preq12d oveq12d
+        opeq2d df-xps ovmpoga syl3anc eqtrid ) AFDEUDUEZHUFZGUGUEZNADUHUIZEUHUI
+        ZWSUHUIZWQWSUJADJQUKZAEKRUKZAWRUHUIZGUHUIXBAHUHUIZXEALUHUIMUHUIXFALDULU
+        MZUHOAULUHUNZWTXGUHUIZUOXCXIUHDULDULUQUPURUSAMEULUMZUHPAXHXAXJUHUIZUOXD
+        XKUHEULEULUQUPURUSBCLMUTBVIVAVBCVIVAVCZUHUHHSVDVEHUHVFVGAGIUTDVAZVBEVAZ
+        VCZVHUEZUHUAAIUHUIXOUHUIZXPUHUIAIDVJUMZUHTADJUIZXRUHUIQDVJJVKVLVGUSAXMU
+        HUIZXNUHUIZXQAUTWAUIXSXTVMQUTDWAJVNURAVBWAUIEKUIYAVORVBEWAKVNURXMXNUHUH
+        VPVEXOIUHUHVQVEUSGWRUHUHVRVEUBUCDEUHUHBCUBVIZULUMZUCVIZULUMZXLVSZUFZYBV
+        JUMZUTYBVAZVBYDVAZVCZVHUEZUGUEWSUDUHYBDUJZYDEUJZWBZYGWRYLGUGYOYFHYOYFBC
+        LMXLVSZHYMYCLUJYEMUJYFYPUJYNYMYCXGLYBDULVTOWCYNYEXJMYDEULVTPWCBCYCYELMX
+        LWDWESWCWFYOYLXPGYOYHIYKXOVHYOYHXRIYMYHXRUJYNYBDVJVTWGTWCYOYIXMYJXNYOYB
+        DUTYMYNWHWLYOYDEVBYMYNWIWLWJWKUAWCWKBCUCUBWMWNWOWP $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
