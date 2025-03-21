@@ -15534,6 +15534,7 @@ New usage of "ceqsralvOLD" is discouraged (0 uses).
 New usage of "cgcdOLD" is discouraged (1 uses).
 New usage of "cghomOLD" is discouraged (13 uses).
 New usage of "cgsex4gOLD" is discouraged (0 uses).
+New usage of "cgsex4gOLDOLD" is discouraged (0 uses).
 New usage of "ch0" is discouraged (3 uses).
 New usage of "ch0le" is discouraged (5 uses).
 New usage of "ch0lei" is discouraged (3 uses).
@@ -20148,7 +20149,8 @@ Proof modification of "ceqsexOLD" is discouraged (49 steps).
 Proof modification of "ceqsexvOLD" is discouraged (47 steps).
 Proof modification of "ceqsexvOLDOLD" is discouraged (10 steps).
 Proof modification of "ceqsralvOLD" is discouraged (38 steps).
-Proof modification of "cgsex4gOLD" is discouraged (218 steps).
+Proof modification of "cgsex4gOLD" is discouraged (318 steps).
+Proof modification of "cgsex4gOLDOLD" is discouraged (218 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
 Proof modification of "clel2gOLD" is discouraged (30 steps).
 Proof modification of "clel4OLD" is discouraged (24 steps).
