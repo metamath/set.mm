@@ -84976,6 +84976,11 @@ $)
 
     $( Identity law for multiplication.  (Contributed by Mario Carneiro,
        27-May-2016.) $)
+    mullidd $p |- ( ph -> ( 1 x. A ) = A ) $=
+      ( cc wcel c1 cmul co wceq mullid syl ) ABDEFBGHBICBJK $.
+
+    $( Identity law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
     mulid2d $p |- ( ph -> ( 1 x. A ) = A ) $=
       ( cc wcel c1 cmul co wceq mullid syl ) ABDEFBGHBICBJK $.
 
