@@ -84,6 +84,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-Mar-25 funimassd [same]      Moved from GS's mathbox to main set.mm
+22-Mar-25 flddrngd  [same]      Moved from SN's mathbox to main set.mm
+22-Mar-25 isdomn5   [same]      Moved from SN's mathbox to main set.mm
+22-Mar-25 isdomn4   [same]      Moved from SN's mathbox to main set.mm
 13-Mar-25 drnginvlrd [same]     Moved from SN's mathbox to main set.mm
 13-Mar-25 drnginvrrd [same]     Moved from SN's mathbox to main set.mm
 12-Mar-25 sbievg    cbvsbvf
