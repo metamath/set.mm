@@ -4736,6 +4736,7 @@
 "df-cnfld" is used by "cnfldstr".
 "df-cnfld" is used by "cnfldtset".
 "df-cnfld" is used by "cnfldunif".
+"df-cnfld" is used by "gg-cnfldex".
 "df-cnfn" is used by "elcnfn".
 "df-cnfn" is used by "hhcnf".
 "df-cnop" is used by "elcnop".
@@ -4749,6 +4750,7 @@
 "df-div" is used by "divcn".
 "df-div" is used by "divval".
 "df-div" is used by "elq".
+"df-div" is used by "gg-divcn".
 "df-dmd" is used by "dmdbr".
 "df-drngo" is used by "drngoi".
 "df-drngo" is used by "isdivrngo".
@@ -15533,6 +15535,7 @@ New usage of "ceqsralvOLD" is discouraged (0 uses).
 New usage of "cgcdOLD" is discouraged (1 uses).
 New usage of "cghomOLD" is discouraged (13 uses).
 New usage of "cgsex4gOLD" is discouraged (0 uses).
+New usage of "cgsex4gOLDOLD" is discouraged (0 uses).
 New usage of "ch0" is discouraged (3 uses).
 New usage of "ch0le" is discouraged (5 uses).
 New usage of "ch0lei" is discouraged (3 uses).
@@ -15889,13 +15892,13 @@ New usage of "df-ch0" is discouraged (8 uses).
 New usage of "df-chj" is discouraged (1 uses).
 New usage of "df-chsup" is discouraged (1 uses).
 New usage of "df-cm" is discouraged (1 uses).
-New usage of "df-cnfld" is discouraged (13 uses).
+New usage of "df-cnfld" is discouraged (14 uses).
 New usage of "df-cnfn" is discouraged (2 uses).
 New usage of "df-cnop" is discouraged (2 uses).
 New usage of "df-com2" is discouraged (1 uses).
 New usage of "df-cv" is discouraged (1 uses).
 New usage of "df-dip" is discouraged (1 uses).
-New usage of "df-div" is discouraged (6 uses).
+New usage of "df-div" is discouraged (7 uses).
 New usage of "df-dmd" is discouraged (1 uses).
 New usage of "df-drngo" is discouraged (3 uses).
 New usage of "df-ds" is discouraged (7 uses).
@@ -16839,6 +16842,8 @@ New usage of "grpstr" is discouraged (0 uses).
 New usage of "grpsubfvalALT" is discouraged (0 uses).
 New usage of "gsumbagdiagOLD" is discouraged (1 uses).
 New usage of "gsumbagdiaglemOLD" is discouraged (2 uses).
+New usage of "gsummulc1OLD" is discouraged (0 uses).
+New usage of "gsummulc2OLD" is discouraged (0 uses).
 New usage of "gt-lt" is discouraged (0 uses).
 New usage of "gt-lth" is discouraged (1 uses).
 New usage of "gt0srpr" is discouraged (2 uses).
@@ -18625,6 +18630,8 @@ New usage of "pl42lem4N" is discouraged (1 uses).
 New usage of "plendx" is discouraged (23 uses).
 New usage of "plpv" is discouraged (1 uses).
 New usage of "plusgndx" is discouraged (24 uses).
+New usage of "ply1scl0OLD" is discouraged (0 uses).
+New usage of "ply1scl1OLD" is discouraged (0 uses).
 New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
 New usage of "pm13.181OLD" is discouraged (0 uses).
@@ -19434,6 +19441,7 @@ New usage of "un01" is discouraged (0 uses).
 New usage of "un10" is discouraged (0 uses).
 New usage of "un2122" is discouraged (1 uses).
 New usage of "undif3VD" is discouraged (0 uses).
+New usage of "undifrOLD" is discouraged (0 uses).
 New usage of "undomOLD" is discouraged (0 uses).
 New usage of "unfiOLD" is discouraged (0 uses).
 New usage of "unieqOLD" is discouraged (0 uses).
@@ -20143,7 +20151,8 @@ Proof modification of "ceqsexOLD" is discouraged (49 steps).
 Proof modification of "ceqsexvOLD" is discouraged (47 steps).
 Proof modification of "ceqsexvOLDOLD" is discouraged (10 steps).
 Proof modification of "ceqsralvOLD" is discouraged (38 steps).
-Proof modification of "cgsex4gOLD" is discouraged (218 steps).
+Proof modification of "cgsex4gOLD" is discouraged (318 steps).
+Proof modification of "cgsex4gOLDOLD" is discouraged (218 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
 Proof modification of "clel2gOLD" is discouraged (30 steps).
 Proof modification of "clel4OLD" is discouraged (24 steps).
@@ -20776,6 +20785,8 @@ Proof modification of "grpplusgOLD" is discouraged (11 steps).
 Proof modification of "grpsubfvalALT" is discouraged (176 steps).
 Proof modification of "gsumbagdiagOLD" is discouraged (209 steps).
 Proof modification of "gsumbagdiaglemOLD" is discouraged (571 steps).
+Proof modification of "gsummulc1OLD" is discouraged (103 steps).
+Proof modification of "gsummulc2OLD" is discouraged (103 steps).
 Proof modification of "hashf1lem1OLD" is discouraged (886 steps).
 Proof modification of "hashfacenOLD" is discouraged (753 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
@@ -21141,6 +21152,8 @@ Proof modification of "phplem2OLD" is discouraged (173 steps).
 Proof modification of "phplem3OLD" is discouraged (82 steps).
 Proof modification of "phplem4OLD" is discouraged (306 steps).
 Proof modification of "pige3ALT" is discouraged (1082 steps).
+Proof modification of "ply1scl0OLD" is discouraged (137 steps).
+Proof modification of "ply1scl1OLD" is discouraged (132 steps).
 Proof modification of "pm13.181OLD" is discouraged (20 steps).
 Proof modification of "pm2.21ddALT" is discouraged (10 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
@@ -21519,6 +21532,7 @@ Proof modification of "un01" is discouraged (18 steps).
 Proof modification of "un10" is discouraged (18 steps).
 Proof modification of "un2122" is discouraged (44 steps).
 Proof modification of "undif3VD" is discouraged (295 steps).
+Proof modification of "undifrOLD" is discouraged (26 steps).
 Proof modification of "undomOLD" is discouraged (322 steps).
 Proof modification of "unfiOLD" is discouraged (227 steps).
 Proof modification of "unieqOLD" is discouraged (40 steps).
