@@ -102299,6 +102299,19 @@ $)
       UOUPUDULURUEUFUGUHUI $.
   $}
 
+  ${
+    elfzd.1 $e |- ( ph -> M e. ZZ ) $.
+    elfzd.2 $e |- ( ph -> N e. ZZ ) $.
+    elfzd.3 $e |- ( ph -> K e. ZZ ) $.
+    elfzd.4 $e |- ( ph -> M <_ K ) $.
+    elfzd.5 $e |- ( ph -> K <_ N ) $.
+    $( Membership in a finite set of sequential integers.  (Contributed by
+       Glauco Siliprandi, 23-Oct-2021.) $)
+    elfzd $p |- ( ph -> K e. ( M ... N ) ) $=
+      ( cz wcel w3a cle wbr wa cfz co 3jca jca32 elfz2 sylibr ) ACJKZDJKZBJKZLZ
+      CBMNZBDMNZOOBCDPQKAUEUFUGAUBUCUDEFGRHISBCDTUA $.
+  $}
+
   $( Membership in a finite set of sequential integers.  (Contributed by NM,
      26-Dec-2005.) $)
   elfz5 $p |- ( ( K e. ( ZZ>= ` M ) /\ N e. ZZ ) ->
