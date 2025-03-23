@@ -4778,6 +4778,8 @@
 "df-erq" is used by "nqerf".
 "df-erq" is used by "nqerid".
 "df-erq" is used by "nqerrel".
+"df-euf" is used by "eufid".
+"df-euf" is used by "eufndx".
 "df-exid" is used by "isexid".
 "df-fld" is used by "fldcrngo".
 "df-fld" is used by "flddivrng".
@@ -15908,6 +15910,7 @@ New usage of "df-eigvec" is discouraged (1 uses).
 New usage of "df-enq" is discouraged (3 uses).
 New usage of "df-enr" is discouraged (4 uses).
 New usage of "df-erq" is discouraged (3 uses).
+New usage of "df-euf" is discouraged (2 uses).
 New usage of "df-exid" is discouraged (1 uses).
 New usage of "df-fld" is discouraged (3 uses).
 New usage of "df-gcdOLD" is discouraged (1 uses).
@@ -16642,6 +16645,7 @@ New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "estrreslem1OLD" is discouraged (0 uses).
 New usage of "et-ltneverrefl" is discouraged (1 uses).
 New usage of "eubiOLD" is discouraged (0 uses).
+New usage of "eufndx" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
 New usage of "euxfr" is discouraged (0 uses).
 New usage of "euxfr2" is discouraged (1 uses).
