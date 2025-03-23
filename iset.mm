@@ -145103,7 +145103,7 @@ $)
     ${
       qusaddf.p $e |- .x. = ( +g ` R ) $.
       qusaddf.a $e |- .xb = ( +g ` U ) $.
-      $( The base set of an image structure.  (Contributed by Mario Carneiro,
+      $( The addition in a quotient structure.  (Contributed by Mario Carneiro,
          24-Feb-2015.) $)
       qusaddval $p |- ( ( ph /\ X e. V /\ Y e. V ) ->
         ( [ X ] .~ .xb [ Y ] .~ ) = [ ( X .x. Y ) ] .~ ) $=
@@ -145114,8 +145114,8 @@ $)
         UNCUGUKVNUGUKZUOACJRURVOUGCULCULUPUQUSVHGBUGUTVAZRVBPAUCBCFVLGUGJOPVMVP
         RVCRUAUBVDAECVEUMZUGUAACJUKVQUGUKRCVEJVFVGVIVJVK $.
 
-      $( The base set of an image structure.  (Contributed by Mario Carneiro,
-         24-Feb-2015.) $)
+      $( The addition in a quotient structure as a function.  (Contributed by
+         Mario Carneiro, 24-Feb-2015.) $)
       qusaddf $p |- ( ph ->
         .xb : ( ( V /. .~ ) X. ( V /. .~ ) ) --> ( V /. .~ ) ) $=
         ( vx cv cec cmpt cvv eqid cqs wer wcel cbs cfv wfn basfn funfvex funfni
@@ -145129,8 +145129,8 @@ $)
     ${
       qusmulf.p $e |- .x. = ( .r ` R ) $.
       qusmulf.a $e |- .xb = ( .r ` U ) $.
-      $( The base set of an image structure.  (Contributed by Mario Carneiro,
-         24-Feb-2015.) $)
+      $( The multiplication in a quotient structure.  (Contributed by Mario
+         Carneiro, 24-Feb-2015.) $)
       qusmulval $p |- ( ( ph /\ X e. V /\ Y e. V ) ->
         ( [ X ] .~ .xb [ Y ] .~ ) = [ ( X .x. Y ) ] .~ ) $=
         ( vx cv cec cmpt cvv eqid cqs wer wcel cbs cfv wfn basfn funfvex funfni
@@ -145140,8 +145140,8 @@ $)
         UGUKVNUGUKZUOACJRURVOUGCULCULUPUQUSUTGBUGVAVHZRVBPAUCBCFVLGUGJOPVMVPRVC
         RUAUBVDAECVEUMZUGUAACJUKVQUGUKRCVEJVFVGVIVJVK $.
 
-      $( The base set of an image structure.  (Contributed by Mario Carneiro,
-         24-Feb-2015.) $)
+      $( The multiplication in a quotient structure as a function.
+         (Contributed by Mario Carneiro, 24-Feb-2015.) $)
       qusmulf $p |- ( ph ->
         .xb : ( ( V /. .~ ) X. ( V /. .~ ) ) --> ( V /. .~ ) ) $=
         ( vx cv cec cmpt cvv eqid cqs wer wcel cbs cfv wfn basfn funfvex funfni
