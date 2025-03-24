@@ -130208,6 +130208,18 @@ $)
     VPGVQAVIVLPRUAVKVCVDVMBUJVBVCVFVJMWAVCVDGZVMVICUKJBWBVICWBVIVDVCVNVTULUMVDC
     UNQVCCUOUPZUQWBCBWCVCBUNQVDBUOTURVASUSUT $.
 
+  $( Adding a multiple of the base does not affect divisibility.  Variant of
+     ~ dvdsadd2b only requiring ` B ` to be a real number (not necessarily an
+     integer).  (Contributed by AV, 19-Jul-2021.) $)
+  dvdsaddre2b $p |- ( ( A e. ZZ /\ B e. RR /\ ( C e. ZZ /\ A || C ) ) ->
+    ( A || B <-> A || ( C + B ) ) ) $=
+    ( cz wcel cr cdvds wbr wa w3a caddc co wi dvdszrcl simprd cmin simpl3l zcnd
+    a1i simpl2 recnd pncan2d adantl zsubcld eqeltrrd ex wb dvdsadd2b 3exp com24
+    a1d 3imp pm5.21ndd ) ADEZBFEZCDEZACGHZIZJZBDEZABGHZACBKLZGHZVAUTMUSVAUNUTAB
+    NOSUSVCUTUSVCIZVBCPLBDVDCBVDCUPUQUNUOVCQZRVDBUNUOURVCTUAUBVDVBCVCVBDEZUSVCU
+    NVFAVBNOUCVEUDUEUFUNUOURUTVAVCUGZMUNUTURUOVGUNUTURUOVGMUNUTURJVGUOABCUHUKUI
+    UJULUM $.
+
   ${
     dvdslelemd.1 $e |- ( ph -> M e. ZZ ) $.
     dvdslelemd.2 $e |- ( ph -> N e. NN ) $.
