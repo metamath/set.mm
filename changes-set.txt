@@ -84,6 +84,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+24-Mar-25 rngurd    ringurd     Moved from TA's mathbox to main set.mm
+24-Mar-25 mptima2   mptimass    Moved from GS's mathbox to main set.mm
+24-Mar-25 rspcedvdw [same]      Moved from SN's mathbox to main set.mm
+24-Mar-25 opelxpii  [same]      Moved from SN's mathbox to main set.mm
 17-Mar-25 fmptssfisupp [same]   Moved from TA's mathbox to main set.mm
 16-Mar-25 eqfnun    [same]      Moved from JM's mathbox to main set.mm
 16-Mar-25 fnunres2  [same]      Moved from TA's mathbox to main set.mm
