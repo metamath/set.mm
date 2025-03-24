@@ -169938,6 +169938,18 @@ $)
     BRUULUVMUWBUVOUWCPUULUUCAEHXJWNUUDUUQEUUPEUSDZHUSDZQEUTNEHVANUUQEGUYAUYBUUE
     EVCVDUXEUYCXLHVCVDUUFUUGEHVIUUIUUHUUJ $.
 
+  $( Lemma 1 for ~ 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
+  2lgsoddprmlem1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ N = ( ( 8 x. A ) + B ) )
+            -> ( ( ( N ^ 2 ) - 1 ) / 8 ) = ( ( ( 8 x. ( A ^ 2 ) )
+                                               + ( 2 x. ( A x. B ) ) )
+                                             + ( ( ( B ^ 2 ) - 1 ) / 8 ) ) ) $=
+    ( cz wcel c8 cmul co caddc wceq w3a c2 cexp c1 cmin cdiv oveq1d wa cc zcn
+    oveq1 3ad2ant3 cc0 cap wbr adantr adantl 8cn 8re gt0ap0ii mulsubdivbinom2ap
+    1cnd 8pos pm3.2i a1i syl31anc 3adant3 eqtrd ) ADEZBDEZCFAGHBIHZJZKZCLMHZNOH
+    ZFPHVALMHZNOHZFPHZFALMHGHLABGHGHIHBLMHNOHFPHIHZVCVEVGFPVCVDVFNOVBUSVDVFJUTC
+    VALMUAUBQQUSUTVHVIJZVBUSUTRZASEZBSEZNSEFSEZFUCUDUEZRZVJUSVLUTATUFUTVMUSBTUG
+    VKULVPVKVNVOUHFUIUMUJUNUOABFNUKUPUQUR $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
