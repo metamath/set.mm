@@ -110500,6 +110500,13 @@ $)
     BHIZUJJIZAAJIZBBJIZHIZUJKLIZAKLIZBKLIZHIZUIUFUFUGUHMZUSUKUNNUFUGUHOZUTUFUGU
     HPZVAAABBQSUIUJCDUOUKNABUAUJTUBUFUGURUNNUHUFUGUPULUQUMHATBTUCUDUE $.
 
+  $( The square of a complex number apart from zero divided by itself equals
+     that number.  (Contributed by AV, 19-Jul-2021.) $)
+  sqdividap $p |- ( ( A e. CC /\ A =//= 0 ) -> ( ( A ^ 2 ) / A ) = A ) $=
+    ( cc wcel cc0 cap wbr wa c2 cexp co cdiv cmul sqval adantr oveq1d divcanap3
+    wceq 3anidm12 eqtrd ) ABCZADEFZGZAHIJZAKJAALJZAKJZAUBUCUDAKTUCUDQUAAMNOTUAU
+    EAQAAPRS $.
+
   $( A number is nonzero iff its square is nonzero.  See also ~ sqap0 which is
      the same but with not equal changed to apart.  (Contributed by NM,
      11-Mar-2006.) $)
