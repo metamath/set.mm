@@ -90,6 +90,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-Mar-25 funimassd [same]      Moved from GS's mathbox to main set.mm
+22-Mar-25 flddrngd  [same]      Moved from SN's mathbox to main set.mm
+22-Mar-25 isdomn5   [same]      Moved from SN's mathbox to main set.mm
+22-Mar-25 isdomn4   [same]      Moved from SN's mathbox to main set.mm
 22-Mar-25 rgmoddim  rlmdim
 21-Mar-25 sraring   [same]      Moved from TA's mathbox to main set.mm
 17-Mar-25 fmptssfisupp [same]   Moved from TA's mathbox to main set.mm
