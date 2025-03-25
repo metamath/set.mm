@@ -14,6 +14,12 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
+proposed  df-rgmod  df-rlm
+proposed  crglmod   crlm
+proposed  df-rngiso df-rim
+proposed  df-rnghom df-rhm
+proposed  crs       crim
+proposed  crh       crhm
 proposed  nfiundg   nfiund
 proposed  bnj1441g  bnj1441
 proposed  cbviinvg  cbviinv
@@ -88,6 +94,8 @@ Date      Old       New         Notes
 24-Mar-25 mptima2   mptimass    Moved from GS's mathbox to main set.mm
 24-Mar-25 rspcedvdw [same]      Moved from SN's mathbox to main set.mm
 24-Mar-25 opelxpii  [same]      Moved from SN's mathbox to main set.mm
+22-Mar-25 rgmoddim  rlmdim
+21-Mar-25 sraring   [same]      Moved from TA's mathbox to main set.mm
 17-Mar-25 fmptssfisupp [same]   Moved from TA's mathbox to main set.mm
 16-Mar-25 eqfnun    [same]      Moved from JM's mathbox to main set.mm
 16-Mar-25 fnunres2  [same]      Moved from TA's mathbox to main set.mm
