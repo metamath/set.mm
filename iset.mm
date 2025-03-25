@@ -169994,6 +169994,11 @@ $)
       KPEUUCUUPOUUKUVKXGWQXJXKXLXNXOXPVBRFYQUUMXQXRXSXOXTYAYB $.
   $}
 
+  $( Lemma 1 for ~ 2lgsoddprmlem3 .  (Contributed by AV, 20-Jul-2021.) $)
+  2lgsoddprmlem3a $p |- ( ( ( 1 ^ 2 ) - 1 ) / 8 ) = 0 $=
+    ( c1 c2 cexp co cmin c8 cc0 sq1 oveq1i 1m1e0 eqtri 8cn 8re gt0ap0ii div0api
+    cdiv 8pos ) ABCDZAEDZFPDGFPDGSGFPSAAEDGRAAEHIJKIFLFMQNOK $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
