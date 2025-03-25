@@ -84891,7 +84891,7 @@ $)
       ( cc wcel c1 cmul co wceq mulrid ax-mp ) ACDAEFGAHBAIJ $.
 
     $( Identity law for multiplication.  (Contributed by NM, 14-Feb-1995.) $)
-    mulid2i $p |- ( 1 x. A ) = A $=
+    mullidi $p |- ( 1 x. A ) = A $=
       ( cc wcel c1 cmul co wceq mullid ax-mp ) ACDEAFGAHBAIJ $.
 
     axi.2 $e |- B e. CC $.
@@ -94275,7 +94275,7 @@ $)
   halfpm6th $p |- ( ( ( 1 / 2 ) - ( 1 / 6 ) ) = ( 1 / 3 ) /\
                        ( ( 1 / 2 ) + ( 1 / 6 ) ) = ( 2 / 3 ) ) $=
     ( c1 c2 cdiv co c6 cmin c3 wceq caddc cmul 3cn ax-1cn 2cn 2ap0 divmuldivapi
-    oveq1i mulid1i 3t2e6 oveq12i 3eqtr3i 3re 3pos gt0ap0ii halfcn mulid2i eqtri
+    oveq1i mulid1i 3t2e6 oveq12i 3eqtr3i 3re 3pos gt0ap0ii halfcn mullidi eqtri
     dividapi cc wcel cc0 cap wbr wa 6cn 6re 6pos pm3.2i divsubdirap mp3an 3m1e2
     oveq2i recclapi 3eqtr2i c4 divdirapi df-4 3eqtr4ri 2t2e4 divclapi ) ABCDZAE
     CDZFDZAGCDZHVJVKIDZBGCDZHVLGECDZVKFDZGAFDZECDZVMVJVPVKFGGCDZVJJDZGAJDZGBJDZ
@@ -94557,7 +94557,7 @@ $)
     ( cr wcel c6 cle wbr c4 co c1 caddc cmin c2 cmul a1i wceq adantr wb syl3anc
     cc cc0 wa cdiv 6re id leadd2d biimpa times2d breqtrrd 4cn 2cn addassd 4p2e6
     recn oveq2i eqtrdi breq1d mpbird clt 4re 4ap0 redivclapd peano2re peano2rem
-    cap syl rehalfcld 4pos pm3.2i recnd 1cnd divcanap1d mulid2i joinlmuladdmuld
+    cap syl rehalfcld 4pos pm3.2i recnd 1cnd divcanap1d mullidi joinlmuladdmuld
     lemul1 oveq12d 2t2e4 eqcomi oveq2d mulass eqcomd 2ap0 oveq1d subdird 3eqtrd
     w3a breq12d readdcld 2re remulcld leaddsub bicomd 3bitrd ) ABCZDAEFZUAZAGUB
     HZIJHZAIKHZLUBHZEFZAGJHZLJHZALMHZEFZWOXDADJHZXCEFZWOXEAAJHZXCEWMWNXEXGEFWMD
@@ -95929,7 +95929,7 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
   $( Three halves is not an integer.  (Contributed by AV, 2-Jun-2020.) $)
   3halfnz $p |- -. ( 3 / 2 ) e. ZZ $=
     ( c1 cz wcel c3 c2 cdiv co clt wbr caddc wn cmul cr wb 3re 2re mp3an breq2i
-    c4 mpbir 1z 2cn mulid2i 2lt3 eqbrtri cc0 1re 2pos pm3.2i ltmuldiv mpbi 3lt4
+    c4 mpbir 1z 2cn mullidi 2lt3 eqbrtri cc0 1re 2pos pm3.2i ltmuldiv mpbi 3lt4
     wa 2t2e4 1p1e2 ltdivmul bitri btwnnz ) ABCADEFGZHIZUSAAJGZHIZUSBCKUAAELGZDH
     IZUTVCEDHEUBUCUDUEAMCDMCZEMCZUFEHIZUMZVDUTNUGOVFVGPUHUIZADEUJQUKVBDEELGZHIZ
     VKDSHIULVJSDHUNRTVBUSEHIZVKVAEUSHUORVEVFVHVLVKNOPVIDEEUPQUQTAUSURQ $.
@@ -111514,7 +111514,7 @@ $)
   $( The square of 10 is 100.  (Contributed by AV, 14-Jun-2021.)  (Revised by
      AV, 1-Aug-2021.) $)
   sq10 $p |- ( ; 1 0 ^ 2 ) = ; ; 1 0 0 $=
-    ( c1 cc0 cdc c2 cexp cmul 1nn0 0nn0 deccl nn0cni sqvali eqid mulid2i mul02i
+    ( c1 cc0 cdc c2 cexp cmul 1nn0 0nn0 deccl nn0cni sqvali eqid mullidi mul02i
     co decmul1 eqtri ) ABCZDEORRFORBCRRABGHIZJZKABRBRRSGHRLHRTMRTNPQ $.
 
   $( The square of 10 is 99 plus 1.  (Contributed by AV, 14-Jun-2021.)
@@ -111769,7 +111769,7 @@ $)
   $( The factorial of 2.  (Contributed by NM, 17-Mar-2005.) $)
   fac2 $p |- ( ! ` 2 ) = 2 $=
     ( c2 cfa cfv c1 caddc df-2 fveq2i cmul cn0 wcel wceq 1nn0 facp1 ax-mp 1p1e2
-    co fac1 oveq12i 2cn eqtri mulid2i ) ABCDDEPZBCZAAUBBFGUCDBCZUBHPZADIJUCUEKL
+    co fac1 oveq12i 2cn eqtri mullidi ) ABCDDEPZBCZAAUBBFGUCDBCZUBHPZADIJUCUEKL
     DMNUEDAHPAUDDUBAHQORASUATTT $.
 
   $( The factorial of 3.  (Contributed by NM, 17-Mar-2005.) $)
@@ -128707,7 +128707,7 @@ $)
     ( cc wcel ci cmul co ce cfv caddc c2 cdiv wceq ax-icn mulcl syl 2cn 3eqtr4d
     2ap0 c1 eqtr3i cneg cmin ccos csin mpan negicn addcld subcld cc0 cap wbr wa
     efcl pm3.2i divdirap mp3an3 syl2anc pncan3d oveq2d addassd oveq1d divcanap3
-    2timesd mp3an23 eqtr2d cosval 2mulicn div12ap mp3an13 sinval mulid2i oveq1i
+    2timesd mp3an23 eqtr2d cosval 2mulicn div12ap mp3an13 sinval mullidi oveq1i
     2muliap0 divrecap iap0 dividapi oveq2i divmuldivapi mulid1i eqtr4di oveq12d
     ax-1cn halfcn ) ABCZDAEFZGHZDUAZAEFZGHZIFZWFWIUBFZIFZJKFZWJJKFZWKJKFZIFZWFA
     UCHZDAUDHZEFZIFWDWJBCZWKBCZWMWPLZWDWFWIWDWEBCZWFBCZDBCZWDXCMDANUEWEUMOZWDWH
@@ -129046,7 +129046,7 @@ $)
       4z 3lt4 eluz1i mpbir2an mp3an eqeltri 6re 6pos df-4 sq2 oveq2i fac3 recni
       3z 6cn 3eqtr3i 2nn0 eqtr3i gt0ap0ii leexp2a 8re 2nn nnexpcl nnrei ltletri
       remulcli nngt0i mulgt0ii ltdiv1ii df-5 fveq2i facp1 eqtr2i 3eqtri mulassi
-      3nn0 2p2e4 expadd oveq12i mulid2i dividapi ax-1cn divmuldivapi rerecclapi
+      3nn0 2p2e4 expadd oveq12i mullidi dividapi ax-1cn divmuldivapi rerecclapi
       2cn nncni mulid1i rpexpcl wa elrp ltmul2 mp3an12 sylbi mpbii cap divrecap
       mp3an23 breqtrrd lelttrd ) AUAFUBGHZIUCJBUDDJBUEZUFJZAIKGZIFUGGZIUHJZILGZ
       MGZLGZUWDNMGZUWAUWBUWAUIALGZUJHZIUKHZUWBUJHUWAUIUJHZAUJHZUWLULUWAAUWAAOHZ
@@ -130519,7 +130519,7 @@ $)
        (Revised by AV, 8-Sep-2021.) $)
     3dvdsdec $p |- ( 3 || ; A B <-> 3 || ( A + B ) ) $=
       ( c3 cdc cdvds wbr c9 cmul co caddc c1 eqcomi oveq1i 9cn cz wcel 3z mp2an
-      dfdec10 9p1e10 ax-1cn nn0cni adddiri mulid2i oveq2i 3eqtri mulcli addassi
+      dfdec10 9p1e10 ax-1cn nn0cni adddiri mullidi oveq2i 3eqtri mulcli addassi
       cc0 breq2i wa wb nn0zi zaddcl 9nn zmulcl dvdsmul1 3t3e9 3cn mulassi eqtri
       nnzi breqtrri pm3.2i dvdsadd2b mp3an bitr4i ) EABFZGHEIAJKZABLKZLKZGHZEVL
       GHZVJVMEGVJMUKFZAJKZBLKVKALKZBLKVMABUAVQVRBLVQIMLKZAJKVKMAJKZLKVRVPVSAJVS
@@ -130538,7 +130538,7 @@ $)
     3dvds2dec $p |- ( 3 || ; ; A B C <-> 3 || ( ( A + B ) + C ) ) $=
       ( c3 cdc cdvds c1 cmul co caddc c9 oveq1i nn0cni 3eqtri wcel cz mp2an wbr
       cc0 c2 cexp 3dec sq10e99m1 9nn0 deccl ax-1cn adddiri oveq2i 9p1e10 eqcomi
-      mulid2i 9cn oveq12i cc wceq mulcli wa oveq1d mp4an addcli addassi 9t11e99
+      mullidi 9cn oveq12i cc wceq mulcli wa oveq1d mp4an addcli addassi 9t11e99
       add4 1nn0 mulassi eqtri adddii 3t3e9 3cn breq2i wb 3z nn0zi zaddcl zmulcl
       dvdsmul1 pm3.2i dvdsadd2b mp3an bitr4i ) GABHCHZIUAGGGJJHZAKLZBMLZKLZKLZA
       BMLZCMLZMLZIUAZGWKIUAZWDWLGIWDJUBHZUCUDLZAKLZWOBKLZMLZCMLNNHZAKLZAMLZNBKL
@@ -130616,7 +130616,7 @@ $)
       ( vy c2 cv cmul co c1 caddc wceq cz wrex wo cc0 eqeq2 rexbidv eqeq1d wcel
       2cn vj vx vm orbi12d weq oveq2 oveq1d bitrdi oveq1 0z mul02i rspcev mp2an
       cbvrexv olci cn0 orcom wa cc zcn mulcom sylancl adantl wi mpan2 syl5ibcom
-      eqid eqeq2d sylbid rexlimdva peano2z mulid2i oveq12d oveq2i eqtrdi ax-1cn
+      eqid eqeq2d sylbid rexlimdva peano2z mullidi oveq12d oveq2i eqtrdi ax-1cn
       a1i df-2 adddir mp3an23 mulcl addass syl 3eqtr4d syl2anc orim12d biimtrid
       mpan nn0ind ) EBFZGHZIJHZUAFZKZBLMZAFZEGHZWMKZALMZNWLOKZBLMZWQOKZALMZNEUB
       FZGHZIJHZUCFZKZUBLMZDFZEGHZXGKZDLMZNZWLXGIJHZKZBLMZWQXOKZALMZNZWLCKZBLMZW
@@ -131010,7 +131010,7 @@ $)
     m1expo $p |- ( ( N e. ZZ /\ -. 2 || N ) -> ( -u 1 ^ N ) = -u 1 ) $=
       ( vn cz wcel c2 cdvds wbr wn c1 cneg cexp co wceq cmul caddc wrex odd2np1
       cv neg1cn a1i wa oveq2 eqcoms cc0 cap neg1ap0 zmulcld expp1zapd m1expeven
-      cc 2z id oveq1d mulid2i eqtrdi eqtrd adantl sylan9eqr ex rexlimdva sylbid
+      cc 2z id oveq1d mullidi eqtrdi eqtrd adantl sylan9eqr ex rexlimdva sylbid
       imp ) ACDZEAFGHZIJZAKLZVEMZVCVDEBRZNLZIOLZAMZBCPVGBAQVCVKVGBCVCVHCDZUAZVK
       VGVKVMVFVEVJKLZVEVFVNMAVJAVJVEKUBUCVLVNVEMVCVLVNVEVIKLZVENLZVEVLVEVIVEUJD
       VLSTVEUDUEGVLUFTVLEVHECDVLUKTVLULUGUHVLVPIVENLVEVLVOIVENVHUIUMVESUNUOUPUQ
@@ -131022,7 +131022,7 @@ $)
       ( vn cz wcel c2 wbr c1 cexp co wceq wb wa cmul wrex 2z oveq2 eqcoms eqtrd
       cc0 a1i cdvds cneg wn cv divides mpan zcn 2cnd oveq2d m1expeven sylan9eqr
       mulcomd rexlimiva syl6bi impcom simpl 2thd expcom 1ne0 eqcom ax-1cn bitri
-      eqnegi nemtbir caddc odd2np1 neg1cn cap neg1ap0 zmulcld expp1zapd mulid2i
+      eqnegi nemtbir caddc odd2np1 neg1cn cap neg1ap0 zmulcld expp1zapd mullidi
       cc id oveq1d eqtrdi eqeq1d mtbiri 2falsed zeo3 mpjaod ) ACDZEAUAFZGUBZAHI
       ZGJZWCKZWCUCZWCWBWGWCWBLWFWCWBWCWFWBWCBUDZEMIZAJZBCNZWFECDZWBWCWLKOBEAUEU
       FWKWFBCWKWICDZWEWDWJHIZGWEWOJAWJAWJWDHPQWNWOWDEWIMIZHIZGWNWJWPWDHWNWIEWIU
@@ -131077,7 +131077,7 @@ $)
                     -> ( ( N - 1 ) / 2 ) e. NN ) $=
     ( c2 wcel c1 co cdiv cn0 cmin cn wa wi wceq clt wbr a1d cz cc0 adantr mpbid
     cr cuz cfv caddc wne eluz2b3 wo nnnn0 nn0o1gt2 sylan eqneqall nn0z peano2zm
-    syl ad2antlr cmul 2cn mulid2i nnre ltp1d 2re peano2nn nnred syl3anc expdimp
+    syl ad2antlr cmul 2cn mullidi nnre ltp1d 2re peano2nn nnred syl3anc expdimp
     a1i lttr mpd eqbrtrid wb 1red 2pos ltmuldiv rehalfcld posdifd adantlr elnnz
     pm3.2i sylanbrc nncn xp1d2m1eqxm1d2 eleq1d expcom jaoi mpcom impancom sylbi
     cc imp ) ABUAUBCZADUCEZBFEZGCZADHEBFEZICZWIAICZADUDZJWLWNKAUEWOWLWPWNADLZBA
@@ -166384,7 +166384,7 @@ $)
   sin2pim $p |- ( A e. CC ->
                 ( sin ` ( ( 2 x. _pi ) - A ) ) = -u ( sin ` A ) ) $=
     ( cc wcel cneg csin cfv c2 cpi cmul co cmin c1 caddc cz wceq sinper sylancl
-    negcl 1z eqtr3d 2cn picn mulcli mulid2i oveq2i wa negsubdi negsubdi2 eqtrid
+    negcl 1z eqtr3d 2cn picn mulcli mullidi oveq2i wa negsubdi negsubdi2 eqtrid
     mpan2 fveq2d sinneg ) ABCZADZEFZGHIJZAKJZEFZAEFDUMUNLUPIJZMJZEFZUOURUMUNBCL
     NCVAUOOARSUNLPQUMUTUQEUMUTUNUPMJZUQUSUPUNMUPGHUAUBUCZUDUEUMUPBCZVBUQOVCUMVD
     UFAUPKJDVBUQAUPUGAUPUHTUJUIUKTAULT $.
@@ -166393,7 +166393,7 @@ $)
      Chapman, 15-Mar-2008.) $)
   cos2pim $p |- ( A e. CC -> ( cos ` ( ( 2 x. _pi ) - A ) ) = ( cos ` A ) ) $=
     ( cc wcel cneg ccos cfv c2 cpi cmul co cmin c1 caddc cz wceq cosper sylancl
-    negcl 1z eqtr3d 2cn picn mulcli mulid2i oveq2i wa negsubdi negsubdi2 eqtrid
+    negcl 1z eqtr3d 2cn picn mulcli mullidi oveq2i wa negsubdi negsubdi2 eqtrid
     mpan2 fveq2d cosneg ) ABCZADZEFZGHIJZAKJZEFZAEFUMUNLUPIJZMJZEFZUOURUMUNBCLN
     CVAUOOARSUNLPQUMUTUQEUMUTUNUPMJZUQUSUPUNMUPGHUAUBUCZUDUEUMUPBCZVBUQOVCUMVDU
     FAUPKJDVBUQAUPUGAUPUHTUJUIUKTAULT $.
@@ -166580,7 +166580,7 @@ $)
     ( cpi c3 c2 co cmul wcel cr clt wbr csin cfv ccos wa wb pire halfpire caddc
     cc0 cxr cdiv cioo w3a 3re remulcli rexr elioo2 mp2an cmin cneg pidiv2halves
     syl2an breq1i ltaddsub mp3an12 bitr3id ltsubadd mp3an23 c1 oveq1i 2cn recni
-    df-3 ax-1cn adddiri 2ap0 divcanap2i mulid2i oveq12i 3eqtrri bitr2di anbi12d
+    df-3 ax-1cn adddiri 2ap0 divcanap2i mullidi oveq12i 3eqtrri bitr2di anbi12d
     breq2i resubcl mpan2 sincosq2sgn ancom 3imtr3i syl3an1 3expib sylbid anbi2d
     resincld lt0neg2d sylibd cc wceq pncan3 sylancr fveq2d recnd sinhalfpip syl
     recn eqtr3d breq1d coshalfpip sylibrd 3impib sylbi ) ABCBDUAEZFEZUBEGZAHGZB
@@ -166601,7 +166601,7 @@ $)
                       ( ( sin ` A ) < 0 /\ 0 < ( cos ` A ) ) ) $=
     ( c3 cpi c2 co cmul wcel cr clt wbr csin cfv cc0 wa halfpire caddc c1 c4 cc
     ccos cdiv cioo w3a cxr wb 3re remulcli rexri 2re pire elioo2 cmin cneg df-3
-    mp2an oveq1i ax-1cn recni adddiri divcanap2i mulid2i oveq12i 3eqtrri breq1i
+    mp2an oveq1i ax-1cn recni adddiri divcanap2i mullidi oveq12i 3eqtrri breq1i
     2cn 2ap0 ltaddsub mp3an12 bitr3id ltsubadd mp3an23 df-4 oveq2i cap wceq 4cn
     pm3.2i div12ap mp3an 4d2e2 mulcomi eqtri breq2i bitr2di anbi12d sincosq3sgn
     resubcl sylbir syl3an1 3expib sylbid resincld lt0neg1d anbi1d sylibd pncan3
@@ -166675,7 +166675,7 @@ $)
     ( cpi c2 cdiv co c3 cmul wcel caddc cc0 clt cc wbr cr halfpire cxr rexri c4
     c1 oveq1i cioo csin cfv ccos wceq elioore recnd sinhalfpip syl a1i readdcld
     pidiv2halves w3a wb remulcli elioo2 mp2an simp2bi ltadd2dd eqbrtrrid ax-1cn
-    3re simp3bi 3cn recni adddiri addcomli mulid2i 3eqtr3ri cap wa 4cn 2cn 2ap0
+    3re simp3bi 3cn recni adddiri addcomli mullidi 3eqtr3ri cap wa 4cn 2cn 2ap0
     3p1e4 pm3.2i picn div32ap mp3an 4d2e2 3eqtr2i breqtrdi syl3anbrc sinq34lt0t
     pire 2re eqbrtrrd ) ABCDEZFWHGEZUAEHZWHAIEZUBUCZAUDUCZJKWJALHWLWMUEWJAAWHWI
     UFZUGAUHUIWJWKBCBGEZUAEHZWLJKMWJWKNHZBWKKMZWKWOKMZWPWJWHAWHNHWJOUJZWNUKWJBW
@@ -166768,7 +166768,7 @@ $)
     ccos ctan syl 3nn nndivre sylancl resubcl 2re remulcl resincld 2cn cap 2ap0
     divcanap2d fveq2d wceq eqtr3d cioc wa cle eliooord simpld 2pos divgt0d pire
     cos2t mp1i simprd pigt2lt4 simpri 2t2e4 breqtrri ltdivmul mp3an mpbir lttrd
-    c4 pm3.2i mulid2i breqtrrdi ltdivmul2 syl112anc mpbird ltled cxr w3a elioc2
+    c4 pm3.2i mullidi breqtrrdi ltdivmul2 syl112anc mpbird ltled cxr w3a elioc2
     0xr mp2an syl3anbrc cos01bnd cos01gt0 wi 0re ltle mpd lt2sqd mpbid ltsub1dd
     ltmul2 eqbrtrd 3re readdcl 3lt4 gt0ap0d sqgt0apd 3pos ltmul1 mpbii ltsub2dd
     4re ax-1cn addcl subcld mulid2d oveq2d oveq12d oveq1d subdid oveq1i mulassd
@@ -166834,7 +166834,7 @@ $)
   sincosq1eq $p |- ( ( A e. CC /\ B e. CC /\ ( A + B ) = 1 ) ->
            ( sin ` ( A x. ( _pi / 2 ) ) ) = ( cos ` ( B x. ( _pi / 2 ) ) ) ) $=
     ( cc wcel caddc co c1 wceq w3a cpi c2 cdiv cmul cmin ccos cfv mulcl 3adant3
-    mpan2 eqtr3d csin halfpire recni coshalfpim syl adddir mp3an3 oveq1 mulid2i
+    mpan2 eqtr3d csin halfpire recni coshalfpim syl adddir mp3an3 oveq1 mullidi
     3ad2ant1 eqtrdi 3ad2ant3 wb subadd mp3an3an mpbird fveq2d ) ACDZBCDZABEFZGH
     ZIZJKLFZAVCMFZNFZOPZVDUAPZBVCMFZOPURUSVFVGHZVAURVDCDZVIURVCCDZVJVCUBUCZAVCQ
     SZVDUDUEUJVBVEVHOVBVEVHHZVDVHEFZVCHZVBUTVCMFZVOVCURUSVQVOHZVAURUSVKVRVLABVC
@@ -166847,7 +166847,7 @@ $)
                       ( cos ` ( _pi / 4 ) ) = ( 1 / ( sqrt ` 2 ) ) ) $=
     ( cpi c4 cdiv co csin cfv c1 c2 csqrt wceq cmul cc wcel ax-mp recni 4re cc0
     pire wbr clt ccos caddc halfcn ax-1cn 2halves sincosq1eq mp3an divmuldivapi
-    oveq2i 2cn 2ap0 mulid2i 2t2e4 oveq12i fveq2i recidapi oveq1i 2re redivclapi
+    oveq2i 2cn 2ap0 mullidi 2t2e4 oveq12i fveq2i recidapi oveq1i 2re redivclapi
     eqtri mulassi 3eqtr3i sin2t sinhalfpi cr 4ap0 resincl remulcli 0le2 msqge0i
     mulcli sqrtmulii sqrt1 3eqtr3ri cap wa wb cle sqrtcli sqrt2re 2pos gt0ap0ii
     sqrtgt0ii pm3.2i divmulap2 mpbir 0re cioc 4pos divgt0ii 1re pigt2lt4 simpri
@@ -166882,7 +166882,7 @@ $)
     cexp csin ccos csqrt wtru a1i pire 6re 6pos gt0ap0ii redivclapi recni sincl
     cap 2ap0 recoscl mulassi sin2t eqtr4i caddc 3cn 3ap0 divclapi recclapi df-3
     oveq1i dividapi divdirapi 3eqtr3ri sincosq1eq mp3an picn divmuldivapi 3t2e6
-    ax-1cn oveq2i 6cn divassapi 3eqtri fveq2i eqtr3i mulid2i eqtri wa wb mulcli
+    ax-1cn oveq2i 6cn divassapi 3eqtri fveq2i eqtr3i mullidi eqtri wa wb mulcli
     oveq12i cioo divgt0ii 2lt6 2re 2pos pm3.2i ltdiv2 mpbi w3a 0re halfpire cxr
     pipos rexr elioo2 syl2an mp2an mpbir3an sincosq1sgn simpri mvllmulapd mptru
     mulcanap2 3re 3pos sqdivapi cle ltleii sqsqrti sq2 sqrtge0i divge0i sqrtsqi
@@ -166946,7 +166946,7 @@ $)
     ( cc wcel wa c2 co cpi cmul caddc csin cfv cabs wceq 2cn picn mp3an23 eqtrd
     c1 syl cz cdiv zcn halfcl mulass cc0 cap wbr divcanap1 oveq1d eqtr3d adantl
     2ap0 oveq2d fveq2d eqcomd adantr sinper adantlr cneg peano2cn mulcl sylancl
-    cmin mulcli mp3an2 sylan2 ax-1cn adddir mulid2i oveq2i eqtr2di eqtr2d mpan2
+    cmin mulcli mp3an2 sylan2 ax-1cn adddir mullidi oveq2i eqtr2di eqtr2d mpan2
     subadd23 pncan subcl sylan sinmpi ad2antrr sincl absnegd wo zeo mpjaodan )
     ACDZBUADZEZBFUBGZUADZABHIGZJGZKLZMLZAKLZMLZNBSJGZFUBGZUADZWHWJEZWMWOMWTWMAW
     IFHIGZIGZJGZKLZWOWHWMXDNWJWHXDWMWHXCWLKWHXBWKAJWGXBWKNZWFWGBCDZXEBUCZXFWIFI
@@ -167019,7 +167019,7 @@ $)
     mulcli subcld cosneg syl mulm1d oveq2d negsubd eqtrd fveq2d cz neg1z cosper
     picn sylancl 3eqtr2d 0xr 0re pipos ltleii lbicc2 mp3an12i resubcld renegcld
     simp3bi posdifd mpbid negsubdi2d breqtrrd ltled ax-1cn subdiri 2m1e1 oveq1i
-    cicc mulid2i eqtri oveq2i 3eqtr3ri simp2bi subled eqbrtrd elicc2i syl3anbrc
+    cicc mullidi eqtri oveq2i 3eqtr3ri simp2bi subled eqbrtrd elicc2i syl3anbrc
     eqbrtrid cosordlem cos0 breqtrdi eqbrtrrd ) ABCBDEZUAEFZAXBGEZHZIJZAIJZKLXC
     XFXDIJZAKHZXBDEZMEZIJZXGXCXDNFXFXHUBXCAXBXCAXCAOFZBAPQZAXBLQZBOFZXBUCFXCXMX
     NXOUDUETXBCBUFTUGZUHBXBAUIUJZUKZULZXBNFXCCBUMVFUNRZUOXDUPUQXCXKXDIXCXKAXBHZ
@@ -169058,7 +169058,7 @@ $)
     lgsdir2lem1 $p |- ( ( ( 1 mod 8 ) = 1 /\ ( -u 1 mod 8 ) = 7 ) /\
       ( ( 3 mod 8 ) = 3 /\ ( -u 3 mod 8 ) = 5 ) ) $=
       ( c1 c8 cmo co wceq c7 c3 c5 cq wcel cc0 cle wbr clt cn ax-mp mp4an caddc
-      nnq 8cn cneg wa 1nn 0le1 1lt8 modqid mulid2i oveq2i ax-1cn negcli negsubi
+      nnq 8cn cneg wa 1nn 0le1 1lt8 modqid mullidi oveq2i ax-1cn negcli negsubi
       8nn cmul cmin 8m1e7 eqtri addcomli oveq1i qnegcl 8pos modqcyc 7nn 0re 7re
       cz 1z 7pos ltleii 7lt8 3eqtr3i pm3.2i 3nn 3re 3pos 3lt8 3cn 5cn subaddrii
       5p3e8 5nn 5re 5pos 5lt8 ) ABCDAEZAUAZBCDZFEZUBGBCDGEZGUAZBCDZHEZUBWDWGAIJ
@@ -169122,7 +169122,7 @@ $)
       syl vx cpr wo id cn 8nn zmodcld elprg pm5.32i ad2antrr 1nn nnq simplr cc0
       zq ax-mp clt 8pos simpr cneg c3 c5 lgsdir2lem1 simpli eqtr4di modqmul1 cc
       wbr zcn ad2antlr mulid2d eqtrd qnegcl simpri mulm1d wi znegcl oveq1 negeq
-      cv imbi12d neg1cn mulcom mpan2 mulm1 neg1z eqtr3d mulid2i oveq1i eqtri ex
+      cv imbi12d neg1cn mulcom mpan2 mulm1 neg1z eqtr3d mullidi oveq1i eqtri ex
       eqtrdi neg1mulneg1e1 orim12d zmodcl bitrdi 3imtr4d vtoclga negnegd sylibd
       orcom impbid bitrd jaodan sylbi ) ACDZBCDZEZAFGHZIJUBZDZEXHXIIKZXIJKZUCZE
       ABLHFGHZXJDZBFGHZXJDZMZXHXKXNXFXKXNMZXGXFXINDXTXFAFXFUDFUEDZXFUFOUGXIIJNU
@@ -169155,7 +169155,7 @@ $)
       elprg simplr cq nnq ax-mp cc0 clt simprl lgsdir2lem1 simpri simpli simprr
       wbr modqmul12d orcd ex znegcl mp1i mulneg1i oveq1i olcd mulneg2i mul2negi
       eqtrdi ccased sylbid imp zmulcld zmodcld mpbird caddc c9 df-9 8cn addcomi
-      ax-1cn eqtri 3t3e9 mulid2i oveq2i 3eqtr4i 1nn modqcyc mp4an nnmulcli nnzi
+      ax-1cn eqtri 3t3e9 mullidi oveq2i 3eqtr4i 1nn modqcyc mp4an nnmulcli nnzi
       1z 3nn eqidd mptru mulcli mulm1i 3eqtr3i preq12i eleqtrdi ) ACDZBCDZEZAFG
       HZIJUAZDZBFGHZXNDZEZEZABKHZFGHZIIKHZFGHZYBUBZFGHZUAZLUCUAXSYAYFDZYAYCMZYA
       YEMZUDZXLXRYJXLXRXMIMZXMJMZUDZXPIMZXPJMZUDZEYJXLXOYMXQYPXLXMNDZXOYMUEXJYQ
@@ -170661,7 +170661,7 @@ $)
      Carneiro, 18-Jun-2015.) $)
   ex-fl $p |- ( ( |_ ` ( 3 / 2 ) ) = 1 /\ ( |_ ` -u ( 3 / 2 ) ) = -u 2 ) $=
     ( c3 c2 co c1 wceq cneg wbr clt 1re 3re 2cn eqbrtri wb 2re ax-mp mpbi wa cz
-    wcel mp2an cdiv cfl cfv cle caddc rehalfcli cmul mulid2i 2lt3 cc0 ltmuldivi
+    wcel mp2an cdiv cfl cfv cle caddc rehalfcli cmul mullidi 2lt3 cc0 ltmuldivi
     2pos ltleii c4 3lt4 2t2e4 breqtrri pm3.2i ltdivmul mp3an mpbir df-2 breqtri
     cr cq cn 3z 2nn znq 1z flqbi mpbir2an renegcli ltnegi cmin cc negcli ax-1cn
     negdi2 negnegi oveq1i eqtri 2m1e1 readdcli ltnegcon1i qnegcl 2z znegcl ) AB
