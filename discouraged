@@ -18870,6 +18870,7 @@ New usage of "rexprgOLD" is discouraged (0 uses).
 New usage of "rexrnmpt" is discouraged (0 uses).
 New usage of "rexsngOLD" is discouraged (0 uses).
 New usage of "rgen2a" is discouraged (0 uses).
+New usage of "rgmoddimOLD" is discouraged (0 uses).
 New usage of "rhmsubcALTV" is discouraged (1 uses).
 New usage of "rhmsubcALTVcat" is discouraged (0 uses).
 New usage of "rhmsubcALTVlem1" is discouraged (1 uses).
@@ -19232,6 +19233,7 @@ New usage of "sps-o" is discouraged (7 uses).
 New usage of "spv" is discouraged (1 uses).
 New usage of "sqgt0sr" is discouraged (1 uses).
 New usage of "sraaddgOLD" is discouraged (0 uses).
+New usage of "sraassaOLD" is discouraged (0 uses).
 New usage of "srabaseOLD" is discouraged (0 uses).
 New usage of "sradsOLD" is discouraged (0 uses).
 New usage of "sralemOLD" is discouraged (6 uses).
@@ -21302,6 +21304,7 @@ Proof modification of "rexn0OLD" is discouraged (17 steps).
 Proof modification of "rexprgOLD" is discouraged (17 steps).
 Proof modification of "rexsngOLD" is discouraged (10 steps).
 Proof modification of "rgen2a" is discouraged (81 steps).
+Proof modification of "rgmoddimOLD" is discouraged (318 steps).
 Proof modification of "rimrhmOLD" is discouraged (25 steps).
 Proof modification of "rlimaddOLD" is discouraged (159 steps).
 Proof modification of "rlimmulOLD" is discouraged (159 steps).
@@ -21408,6 +21411,7 @@ Proof modification of "speimfwALT" is discouraged (35 steps).
 Proof modification of "spimvALT" is discouraged (16 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
 Proof modification of "sraaddgOLD" is discouraged (21 steps).
+Proof modification of "sraassaOLD" is discouraged (282 steps).
 Proof modification of "srabaseOLD" is discouraged (21 steps).
 Proof modification of "sradsOLD" is discouraged (34 steps).
 Proof modification of "sralemOLD" is discouraged (368 steps).

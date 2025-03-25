@@ -90,6 +90,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-Mar-25 rgmoddim  rlmdim
+21-Mar-25 sraring   [same]      Moved from TA's mathbox to main set.mm
 17-Mar-25 fmptssfisupp [same]   Moved from TA's mathbox to main set.mm
 16-Mar-25 eqfnun    [same]      Moved from JM's mathbox to main set.mm
 16-Mar-25 fnunres2  [same]      Moved from TA's mathbox to main set.mm
