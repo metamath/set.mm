@@ -169950,7 +169950,7 @@ $)
     BRUULUVMUWBUVOUWCPUULUUCAEHXJWNUUDUUQEUUPEUSDZHUSDZQEUTNEHVANUUQEGUYAUYBUUE
     EVCVDUXEUYCXLHVCVDUUFUUGEHVIUUIUUHUUJ $.
 
-  $( Lemma 1 for ~ 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
+  $( Lemma 1 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
   2lgsoddprmlem1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ N = ( ( 8 x. A ) + B ) )
             -> ( ( ( N ^ 2 ) - 1 ) / 8 ) = ( ( ( 8 x. ( A ^ 2 ) )
                                                + ( 2 x. ( A x. B ) ) )
@@ -169964,7 +169964,7 @@ $)
 
   ${
     $d N k $.  $d R k $.
-    $( Lemma 2 for ~ 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
+    $( Lemma 2 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
     2lgsoddprmlem2 $p |- ( ( N e. ZZ /\ -. 2 || N /\ R = ( N mod 8 ) )
                            -> ( 2 || ( ( ( N ^ 2 ) - 1 ) / 8 )
                                 <-> 2 || ( ( ( R ^ 2 ) - 1 ) / 8 ) ) ) $=
@@ -170026,7 +170026,7 @@ $)
     UQWIBISBVELUFLUGVFWKVRINVRWKVRSINDZBCDZWKAWPBCVGOBVHVIZWQWKVNLWRSBSVHVIWRVE
     VJWRVOVKVLRUIOVBRRVMOJGAQTVPUMVQ $.
 
-  $( Lemma 3 for ~ 2lgsoddprm .  (Contributed by AV, 20-Jul-2021.) $)
+  $( Lemma 3 for 2lgsoddprm .  (Contributed by AV, 20-Jul-2021.) $)
   2lgsoddprmlem3 $p |- ( ( N e. ZZ /\ -. 2 || N /\ R = ( N mod 8 ) )
                   -> ( 2 || ( ( ( R ^ 2 ) - 1 ) / 8 ) <-> R e. { 1 , 7 } ) ) $=
     ( cz wcel c2 cdvds wbr c8 co wceq cexp c1 cmin cdiv c7 c3 c5 oveq1 oveq1d
@@ -170042,7 +170042,7 @@ $)
     LMALEKRSSVHUNVIXGEEPVJIZWFFECDPCDEXJFGVKVLEPVMVOXGWFOEKIZLMIZHNIXJXGWEXLHNX
     GWDXKLMAOEKRSSVPUNVIVBVDVQURVRVS $.
 
-  $( Lemma 4 for ~ 2lgsoddprm .  (Contributed by AV, 20-Jul-2021.) $)
+  $( Lemma 4 for 2lgsoddprm .  (Contributed by AV, 20-Jul-2021.) $)
   2lgsoddprmlem4 $p |- ( ( N e. ZZ /\ -. 2 || N )
                          -> ( 2 || ( ( ( N ^ 2 ) - 1 ) / 8 )
                               <-> ( N mod 8 ) e. { 1 , 7 } ) ) $=
