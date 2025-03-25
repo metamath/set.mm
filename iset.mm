@@ -170004,6 +170004,15 @@ $)
     ( c3 c2 cexp co c1 cmin c8 cdiv c9 sq3 oveq1i 9m1e8 eqtri 8cn 8pos gt0ap0ii
     8re dividapi ) ABCDZEFDZGHDGGHDETGGHTIEFDGSIEFJKLMKGNGQOPRM $.
 
+  $( Lemma 3 for ~ 2lgsoddprmlem3 .  (Contributed by AV, 20-Jul-2021.) $)
+  2lgsoddprmlem3c $p |- ( ( ( 5 ^ 2 ) - 1 ) / 8 ) = 3 $=
+    ( c5 c2 cexp co c1 cmin c8 cdiv c3 cmul caddc df-5 oveq1i 4cn eqtri 3cn 8cn
+    c4 ax-1cn 2cn wcel wceq binom21 ax-mp mulcli sq4e2t8 4t2e8 mullidi mulcomli
+    eqtr4i oveq12i adddiri 2p1e3 3eqtr2i mvrraddi 8re 8pos gt0ap0ii divcanap4i
+    cc ) ABCDZEFDZGHDIGJDZGHDIVBVCGHVBRBCDZBRJDZKDZEKDZEFDVCVAVGEFVAREKDZBCDZVG
+    AVHBCLMRUTUAVIVGUBNRUCUDOMVGVCEIGPQUESVFVCEKVFBGJDZEGJDZKDBEKDZGJDVCVDVJVEV
+    KKUFRBVKNTRBJDGVKUGGQUHUJUIUKBEGTSQULVLIGJUMMUNMUOOMIGPQGUPUQURUSO $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
