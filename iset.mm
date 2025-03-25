@@ -170042,6 +170042,15 @@ $)
     LMALEKRSSVHUNVIXGEEPVJIZWFFECDPCDEXJFGVKVLEPVMVOXGWFOEKIZLMIZHNIXJXGWEXLHNX
     GWDXKLMAOEKRSSVPUNVIVBVDVQURVRVS $.
 
+  $( Lemma 4 for ~ 2lgsoddprm .  (Contributed by AV, 20-Jul-2021.) $)
+  2lgsoddprmlem4 $p |- ( ( N e. ZZ /\ -. 2 || N )
+                         -> ( 2 || ( ( ( N ^ 2 ) - 1 ) / 8 )
+                              <-> ( N mod 8 ) e. { 1 , 7 } ) ) $=
+    ( cz wcel c2 cdvds wbr wn wa cexp co c1 cmin c8 cdiv cmo c7 wceq wb mpd3an3
+    cpr eqidd 2lgsoddprmlem2 2lgsoddprmlem3 bitrd ) ABCZDAEFGZHZDADIJKLJMNJEFZD
+    AMOJZDIJKLJMNJEFZUIKPTCZUEUFUIUIQZUHUJRUGUIUAZUIAUBSUEUFULUJUKRUMUIAUCSUD
+    $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
