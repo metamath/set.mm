@@ -154367,6 +154367,53 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Left modules
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c LMod $.
+  $c .sf $.
+
+  $( Extend class notation with class of all left modules. $)
+  clmod $a class LMod $.
+
+  $( The functionalization of the scalar multiplication operation. $)
+  cscaf $a class .sf $.
+
+  ${
+    $d a f g k p q r s t v w x y $.
+    $( Define the class of all left modules, which are generalizations of left
+       vector spaces.  A left module over a ring is an (Abelian) group
+       (vectors) together with a ring (scalars) and a left scalar product
+       connecting them.  (Contributed by NM, 4-Nov-2013.) $)
+    df-lmod $a |- LMod = { g e. Grp | [. ( Base ` g ) / v ].
+      [. ( +g ` g ) / a ]. [. ( Scalar ` g ) / f ]. [. ( .s ` g ) / s ].
+      [. ( Base ` f ) / k ]. [. ( +g ` f ) / p ]. [. ( .r ` f ) / t ].
+      ( f e. Ring /\ A. q e. k A. r e. k A. x e. v A. w e. v
+                ( ( ( r s w ) e. v
+                 /\ ( r s ( w a x ) ) = ( ( r s w ) a ( r s x ) )
+                 /\ ( ( q p r ) s w ) = ( ( q s w ) a ( r s w ) )
+               ) /\ ( ( ( q t r ) s w ) = ( q s ( r s w ) )
+                 /\ ( ( 1r ` f ) s w ) = w ) ) ) } $.
+
+    $( Define the functionalization of the ` .s ` operator.  This restricts the
+       value of ` .s ` to the stated domain, which is necessary when working
+       with restricted structures, whose operations may be defined on a larger
+       set than the true base.  (Contributed by Mario Carneiro, 5-Oct-2015.) $)
+    df-scaf $a |- .sf = ( g e. _V |-> ( x e. ( Base ` ( Scalar ` g ) ) ,
+      y e. ( Base ` g ) |-> ( x ( .s ` g ) y ) ) ) $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
@@ -172399,6 +172446,15 @@ htmldef "RingSpan" as "RingSpan";
 htmldef "#r" as "#<sub>r</sub>";
   althtmldef "#r" as "#<sub>r</sub>";
   latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";
+htmldef "LMod" as
+    "<IMG SRC='_lmod.gif' WIDTH=36 HEIGHT=19 ALT=' LMod' TITLE='LMod'>";
+  althtmldef "LMod" as "LMod";
+  latexdef "LMod" as "\mathrm{LMod}";
+htmldef ".sf" as
+    "<IMG SRC='_cds.gif' WIDTH=9 HEIGHT=19 ALT=' .s' TITLE='.s'>" +
+    "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT='f' TITLE='f'>";
+  althtmldef ".sf" as ' <B>&middot;</B><SUB><I>sf</I></SUB> ';
+  latexdef ".sf" as '\cdot_{sf}';
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
