@@ -154681,6 +154681,20 @@ $)
       FDAMFEAMNDENOCPBACDEFGHQR $.
   $}
 
+  ${
+    lmodvscl.v $e |- V = ( Base ` W ) $.
+    lmodvscl.f $e |- F = ( Scalar ` W ) $.
+    lmodvscl.s $e |- .x. = ( .s ` W ) $.
+    lmodvscl.k $e |- K = ( Base ` F ) $.
+    $( Closure of scalar product for a left module.  (Contributed by NM,
+       8-Dec-2013.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvscl $p |- ( ( W e. LMod /\ R e. K /\ X e. V ) -> ( R .x. X ) e. V ) $=
+      ( wcel wa co pm4.24 w3a cplusg cfv wceq eqid clmod biid cur simpld simp1d
+      cmulr lmodlema syl3anb ) FUALZUIADLZUJUJMZGELZULULMZAGBNZELZUIUBUJOULOUIU
+      KUMPZUOAGGFQRZNBNUNUNUQNZSZAACQRZNGBNURSZUPUOUSVAPAACUFRZNGBNAUNBNSCUCRZG
+      BNGSMUQUTAABVBVCCDEFGGHUQTJIKUTTVBTVCTUGUDUEUH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
