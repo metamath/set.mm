@@ -154581,6 +154581,18 @@ $)
       QXNUUKXNYLXNYSXNUUDXNXOXP $.
   $}
 
+  ${
+    $d q r w x F $.  $d q r w x W $.
+    $( A left module is a group.  (Contributed by NM, 8-Dec-2013.)  (Revised by
+       Mario Carneiro, 25-Jun-2014.) $)
+    lmodgrp $p |- ( W e. LMod -> W e. Grp ) $=
+      ( vr vw vx vq clmod wcel cgrp csca cfv crg cv cvsca co cbs cplusg wceq wa
+      wral eqid w3a cmulr cur islmod simp1bi ) AFGAHGAIJZKGBLZCLZAMJZNZAOJZGUGU
+      HDLZAPJZNUINUJUGULUINUMNQELZUGUFPJZNUHUINUNUHUINUJUMNQUAUNUGUFUBJZNUHUINU
+      NUJUINQUFUCJZUHUINUHQRRCUKSDUKSBUFOJZSEURSDCUMUOUIUPUQUFURUKABEUKTUMTUITU
+      FTURTUOTUPTUQTUDUE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
