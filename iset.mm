@@ -154636,6 +154636,17 @@ $)
       HIOP $.
   $}
 
+  ${
+    lmodmcl.f $e |- F = ( Scalar ` W ) $.
+    lmodmcl.k $e |- K = ( Base ` F ) $.
+    lmodmcl.t $e |- .x. = ( .r ` F ) $.
+    $( Closure of ring multiplication for a left module.  (Contributed by NM,
+       14-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodmcl $p |- ( ( W e. LMod /\ X e. K /\ Y e. K ) -> ( X .x. Y ) e. K ) $=
+      ( clmod wcel crg co lmodring ringcl syl3an1 ) DJKBLKECKFCKEFAMCKBDGNCBAEF
+      HIOP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
