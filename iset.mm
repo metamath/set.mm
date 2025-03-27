@@ -154591,6 +154591,16 @@ $)
       HDLZAPJZNUINUJUGULUINUMNQELZUGUFPJZNUHUINUNUHUINUJUMNQUAUNUGUFUBJZNUHUINU
       NUJUINQUFUCJZUHUINUHQRRCUKSDUKSBUFOJZSEURSDCUMUOUIUPUQUFURUKABEUKTUMTUITU
       FTURTUOTUPTUQTUDUE $.
+
+    lmodring.1 $e |- F = ( Scalar ` W ) $.
+    $( The scalar component of a left module is a ring.  (Contributed by NM,
+       8-Dec-2013.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodring $p |- ( W e. LMod -> F e. Ring ) $=
+      ( vr vw vx vq clmod wcel cgrp crg cv cfv co cbs cplusg wceq wa wral eqid
+      cvsca w3a cmulr cur islmod simp2bi ) BHIBJIAKIDLZELZBUAMZNZBOMZIUGUHFLZBP
+      MZNUINUJUGULUINUMNQGLZUGAPMZNUHUINUNUHUINUJUMNQUBUNUGAUCMZNUHUINUNUJUINQA
+      UDMZUHUINUHQRREUKSFUKSDAOMZSGURSFEUMUOUIUPUQAURUKBDGUKTUMTUITCURTUOTUPTUQ
+      TUEUF $.
   $}
 
 
