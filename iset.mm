@@ -154601,6 +154601,12 @@ $)
       MZNUINUJUGULUINUMNQGLZUGAPMZNUHUINUNUHUINUJUMNQUBUNUGAUCMZNUHUINUNUJUINQA
       UDMZUHUINUHQRREUKSFUKSDAOMZSGURSFEUMUOUIUPUQAURUKBDGUKTUMTUITCURTUOTUPTUQ
       TUEUF $.
+
+    $( The scalar component of a left module is an additive group.
+       (Contributed by NM, 8-Dec-2013.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lmodfgrp $p |- ( W e. LMod -> F e. Grp ) $=
+      ( clmod wcel crg cgrp lmodring ringgrp syl ) BDEAFEAGEABCHAIJ $.
   $}
 
 
