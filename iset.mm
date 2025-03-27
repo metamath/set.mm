@@ -154695,6 +154695,30 @@ $)
       BNGSMUQUTAABVBVCCDEFGGHUQTJIKUTTVBTVCTUGUDUEUH $.
   $}
 
+  ${
+    $d w x y B $.  $d w x y K $.  $d w x y .x. $.  $d w x y W $.  $d x y X $.
+    $d x y Y $.
+    scaffval.b $e |- B = ( Base ` W ) $.
+    scaffval.f $e |- F = ( Scalar ` W ) $.
+    scaffval.k $e |- K = ( Base ` F ) $.
+    scaffval.a $e |- .xb = ( .sf ` W ) $.
+    ${
+      scaffval.s $e |- .x. = ( .s ` W ) $.
+      $( The scalar multiplication operation as a function.  (Contributed by
+         Mario Carneiro, 5-Oct-2015.)  (Proof shortened by AV, 2-Mar-2024.) $)
+      scaffvalg $p |- ( W e. V ->
+          .xb = ( x e. K , y e. B |-> ( x .x. y ) ) ) $=
+        ( wcel cfv cvv csca cbs eqtr4di vw cscaf cv co cmpo cvsca df-scaf fveq2
+        wceq elex fveq2d oveqd mpoeq123dv basfn scaslid slotex eqeltrid funfvex
+        wfn funfni sylancr mpan mpoexga syl2anc fvmptd3 syl eqtrid ) IHOZDIUBPZ
+        ABGCAUCZBUCZEUDZUEZMVHIQOZVIVMUIIHUJVNUAIABUAUCZRPZSPZVOSPZVJVKVOUFPZUD
+        ZUEVMQUBQABUAUGVOIUIZABVQVRVTGCVLWAVQFSPZGWAVPFSWAVPIRPZFVOIRUHKTUKLTWA
+        VRISPZCVOISUHJTWAVSEVJVKWAVSIUFPEVOIUFUHNTULUMIQUJVNGQOCQOVMQOVNGWBQLVN
+        SQUSZFQOWBQOZUNVNFWCQKIRQUOUPUQWFQFSFSURUTVAUQVNCWDQJWEVNWDQOZUNWGQISIS
+        URUTVBUQABGCVLQQVCVDVEVFVG $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
