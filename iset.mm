@@ -154609,6 +154609,13 @@ $)
       ( clmod wcel crg cgrp lmodring ringgrp syl ) BDEAFEAGEABCHAIJ $.
   $}
 
+  ${
+    lmodgrpd.1 $e |- ( ph -> W e. LMod ) $.
+    $( A left module is a group.  (Contributed by SN, 16-May-2024.) $)
+    lmodgrpd $p |- ( ph -> W e. Grp ) $=
+      ( clmod wcel cgrp lmodgrp syl ) ABDEBFECBGH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
