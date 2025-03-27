@@ -154625,6 +154625,17 @@ $)
       ( clmod wcel cgrp c0 wne lmodgrp grpbn0 syl ) BDEBFEAGHBIABCJK $.
   $}
 
+  ${
+    lmodacl.f $e |- F = ( Scalar ` W ) $.
+    lmodacl.k $e |- K = ( Base ` F ) $.
+    lmodacl.p $e |- .+ = ( +g ` F ) $.
+    $( Closure of ring addition for a left module.  (Contributed by NM,
+       14-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodacl $p |- ( ( W e. LMod /\ X e. K /\ Y e. K ) -> ( X .+ Y ) e. K ) $=
+      ( clmod wcel cgrp co lmodfgrp grpcl syl3an1 ) DJKBLKECKFCKEFAMCKBDGNCABEF
+      HIOP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
