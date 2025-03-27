@@ -154647,6 +154647,16 @@ $)
       HIOP $.
   $}
 
+  ${
+    lmodsn0.f $e |- F = ( Scalar ` W ) $.
+    lmodsn0.b $e |- B = ( Base ` F ) $.
+    $( The set of scalars in a left module is nonempty.  It is also inhabited,
+       by ~ lmodfgrp and ~ grpidcl .  (Contributed by NM, 8-Dec-2013.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodsn0 $p |- ( W e. LMod -> B =/= (/) ) $=
+      ( clmod wcel cgrp c0 wne lmodfgrp grpbn0 syl ) CFGBHGAIJBCDKABELM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
