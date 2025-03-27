@@ -154657,6 +154657,30 @@ $)
       ( clmod wcel cgrp c0 wne lmodfgrp grpbn0 syl ) CFGBHGAIJBCDKABELM $.
   $}
 
+  ${
+    lmodvacl.v $e |- V = ( Base ` W ) $.
+    lmodvacl.a $e |- .+ = ( +g ` W ) $.
+    $( Closure of vector addition for a left module.  (Contributed by NM,
+       8-Dec-2013.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvacl $p |- ( ( W e. LMod /\ X e. V /\ Y e. V ) -> ( X .+ Y ) e. V ) $=
+      ( clmod wcel cgrp co lmodgrp grpcl syl3an1 ) CHICJIDBIEBIDEAKBICLBACDEFGM
+      N $.
+
+    $( Left module vector sum is associative.  (Contributed by NM,
+       10-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodass $p |- ( ( W e. LMod /\ ( X e. V /\ Y e. V /\ Z e. V ) ) ->
+                    ( ( X .+ Y ) .+ Z ) = ( X .+ ( Y .+ Z ) ) ) $=
+      ( clmod wcel cgrp w3a co wceq lmodgrp grpass sylan ) CIJCKJDBJEBJFBJLDEAM
+      FAMDEFAMAMNCOBACDEFGHPQ $.
+
+    $( Left cancellation law for vector sum.  (Contributed by NM, 12-Jan-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodlcan $p |- ( ( W e. LMod /\ ( X e. V /\ Y e. V /\ Z e. V ) ) ->
+                     ( ( Z .+ X ) = ( Z .+ Y ) <-> X = Y ) ) $=
+      ( clmod wcel cgrp w3a co wceq wb lmodgrp grplcan sylan ) CIJCKJDBJEBJFBJL
+      FDAMFEAMNDENOCPBACDEFGHQR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
