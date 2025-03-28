@@ -153748,135 +153748,6 @@ $)
 
 
 $(
-#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-  Division rings and fields
-#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-$)
-
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Ring apartness
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-  $c #r $. $( Ring apartness $)
-
-  $( Extend class notation with ring apartness. $)
-  capr $a class #r $.
-
-  ${
-    $d w x y $.
-    $( The relation between elements whose difference is invertible, which for
-       a local ring is an apartness relation by ~ aprap .  (Contributed by Jim
-       Kingdon, 13-Feb-2025.) $)
-    df-apr $a |- #r = ( w e. _V |-> { <. x , y >. |
-      ( ( x e. ( Base ` w ) /\ y e. ( Base ` w ) )
-      /\ ( x ( -g ` w ) y ) e. ( Unit ` w ) ) } ) $.
-  $}
-
-  ${
-    $d R r x y $.  $d X x y $.  $d Y x y $.
-    aprval.b $e |- ( ph -> B = ( Base ` R ) ) $.
-    aprval.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
-    aprval.s $e |- ( ph -> .- = ( -g ` R ) ) $.
-    aprval.u $e |- ( ph -> U = ( Unit ` R ) ) $.
-    aprval.r $e |- ( ph -> R e. Ring ) $.
-    aprval.x $e |- ( ph -> X e. B ) $.
-    aprval.y $e |- ( ph -> Y e. B ) $.
-    $( Expand Definition ~ df-apr .  (Contributed by Jim Kingdon,
-       17-Feb-2025.) $)
-    aprval $p |- ( ph -> ( X .# Y <-> ( X .- Y ) e. U ) ) $=
-      ( vx vy cfv wcel cvv vr wbr csg co cui cop df-br cv cbs copab capr df-apr
-      wa wceq fveq2 eleq2d anbi12d oveqd eleq12d opabbidv crg elexd cxp funfvex
-      wfn basfn funfni sylancr xpexg syl2anc wss opabssxp ssexd fvmptd3 eleqtrd
-      a1i eqtrd wb oveq12 eleq1d opelopab2a bitrd bitrid bitr4d ) AGHCUBZGHDUCR
-      ZUDZDUERZSZGHFUDZESWEGHUFZCSZAWIGHCUGAWLWKPUHZDUIRZSZQUHZWNSZUMZWMWPWFUDZ
-      WHSZUMZPQUJZSZWIACXBWKACDUKRXBJAUADWMUAUHZUIRZSZWPXESZUMZWMWPXDUCRZUDZXDU
-      ERZSZUMZPQUJXBTUKTPQUAULXDDUNZXMXAPQXNXHWRXLWTXNXFWOXGWQXNXEWNWMXDDUIUOZU
-      PXNXEWNWPXOUPUQXNXJWSXKWHXNXIWFWMWPXDDUCUOURXDDUEUOUSUQUTADVAMVBZAXBWNWNV
-      CZTAWNTSZXRXQTSAUITVEDTSXRVFXPXRTDUIDUIVDVGVHZXSWNWNTTVIVJXBXQVKAWTPQWNWN
-      VLVPVMVNVQUPAGWNSHWNSXCWIVRAGBWNNIVOAHBWNOIVOWTWIPQGHWNWNWMGUNWPHUNUMWSWG
-      WHWMGWPHWFVSVTWAVJWBWCAWJWGEWHAFWFGHKURLUSWD $.
-  $}
-
-  ${
-    aprirr.b $e |- ( ph -> B = ( Base ` R ) ) $.
-    aprirr.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
-    aprirr.r $e |- ( ph -> R e. Ring ) $.
-    aprirr.x $e |- ( ph -> X e. B ) $.
-
-    ${
-      $d R r x y $.  $d X x y $.
-      aprirr.nz $e |- ( ph -> ( 1r ` R ) =/= ( 0g ` R ) ) $.
-      $( The apartness relation given by ~ df-apr for a nonzero ring is
-         irreflexive.  (Contributed by Jim Kingdon, 16-Feb-2025.) $)
-      aprirr $p |- ( ph -> -. X .# X ) $=
-        ( wbr csg cfv co cui wcel wceq eqid mtbird eqidd cgrp ringgrpd grpsubid
-        c0g cbs eleqtrd syl2anc cur neneqd crg wb 0unit syl eqneltrd aprval ) A
-        EECKEEDLMZNZDOMZPAUQDUDMZURADUAPEDUEMZPUQUSQADHUBAEBUTIFUFUTDUPEUSUTRUS
-        RZUPRUCUGAUSURPZDUHMZUSQZAVCUSJUIADUJPVBVDUKHDURVCUSURRVAVCRULUMSUNABCD
-        URUPEEFGAUPTAURTHIIUOS $.
-    $}
-
-    aprsym.y $e |- ( ph -> Y e. B ) $.
-    $( The apartness relation given by ~ df-apr for a ring is symmetric.
-       (Contributed by Jim Kingdon, 17-Feb-2025.) $)
-    aprsym $p |- ( ph -> ( X .# Y -> Y .# X ) ) $=
-      ( wbr cfv co wcel eqidd aprval eqid wb eleqtrd csg cui cminusg crg biimpa
-      unitnegcl syl2an2r cgrp cbs wceq ringgrpd grpinvsub syl3anc eleq1d adantr
-      wa mpbid mpbird ex ) AEFCLZFECLZAUTUPZVAFEDUAMZNZDUBMZOZVBEFVCNZDUCMZMZVE
-      OZVFADUDOUTVGVEOZVJIAUTVKABCDVEVCEFGHAVCPZAVEPZIJKQUEDVEVHVGVERVHRZUFUGAV
-      JVFSUTAVIVDVEADUHOEDUIMZOFVOOVIVDUJADIUKAEBVOJGTAFBVOKGTVODVCVHEFVORVCRVN
-      ULUMUNUOUQAVAVFSUTABCDVEVCFEGHVLVMIKJQUOURUS $.
-  $}
-
-  ${
-    aprcotr.b $e |- ( ph -> B = ( Base ` R ) ) $.
-    aprcotr.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
-    aprcotr.r $e |- ( ph -> R e. LRing ) $.
-    aprcotr.x $e |- ( ph -> X e. B ) $.
-    aprcotr.y $e |- ( ph -> Y e. B ) $.
-    aprcotr.z $e |- ( ph -> Z e. B ) $.
-    $( The apartness relation given by ~ df-apr for a local ring is
-       cotransitive.  (Contributed by Jim Kingdon, 17-Feb-2025.) $)
-    aprcotr $p |- ( ph -> ( X .# Y -> ( X .# Z \/ Y .# Z ) ) ) $=
-      ( wbr cfv co wcel adantr eqidd eleqtrd wo wa csg cui cplusg cbs wceq cgrp
-      clring crg lringring syl ringgrpd eqid grpnpncan syl13anc aprval grpsubcl
-      biimpa eqeltrd syl3anc lringuplu wi biimprd aprsym sylbird orim12d mpd ex
-      eleqtrrd ) AEFCNZEGCNZFGCNZUAZAVKUBZEGDUCOZPZDUDOZQZGFVPPZVRQZUAVNVOBDUEO
-      ZDVRVQVTABDUFOZUGVKHRVOVRSVOWBSADUIQZVKJRVOVQVTWBPZEFVPPZVRAWEWFUGZVKADUH
-      QZEWCQZGWCQZFWCQZWGADAWDDUJQJDUKULZUMZAEBWCKHTZAGBWCMHTZAFBWCLHTZWCWBDVPE
-      GFWCUNZWBUNVPUNZUOUPRAVKWFVRQABCDVRVPEFHIAVPSZAVRSZWLKLUQUSUTAVQBQVKAVQWC
-      BAWHWIWJVQWCQWMWNWOWCDVPEGWQWRURVAHVJRAVTBQVKAVTWCBAWHWJWKVTWCQWMWOWPWCDV
-      PGFWQWRURVAHVJRVBVOVSVLWAVMAVSVLVCVKAVLVSABCDVRVPEGHIWSWTWLKMUQVDRAWAVMVC
-      VKAWAGFCNVMABCDVRVPGFHIWSWTWLMLUQABCDGFHIWLMLVEVFRVGVHVI $.
-  $}
-
-  ${
-    $d R r x y z $.
-    $( The relation given by ~ df-apr for a local ring is an apartness
-       relation.  (Contributed by Jim Kingdon, 20-Feb-2025.) $)
-    aprap $p |- ( R e. LRing -> ( #r ` R ) Ap ( Base ` R ) ) $=
-      ( vx vy vz vr clring wcel capr cfv cbs cv wbr wral wa csg cui fveq2 eqidd
-      cvv adantr cxp wss wn wi wo wap co copab df-apr wceq eleq2d anbi12d oveqd
-      eleq12d opabbidv elex wfn basfn a1i funfvex funfni syl2anc xpexg opabssxp
-      ssexd fvmptd3 eqsstrdi crg lringring simpr cur c0g eqid lringnz ralrimiva
-      wne aprirr simprl simprr aprsym ralrimivva w3a simpl simpr1 simpr2 simpr3
-      aprcotr ralrimivvva jca df-pap syl21anbrc ) AFGZAHIZAJIZWNUAZUBBKZWPWMLUC
-      ZBWNMWPCKZWMLZWRWPWMLUDZCWNMBWNMZWSWPDKZWMLWRXBWMLUEUDZDWNMCWNMBWNMZNWNWM
-      UFWLWMWPWNGZWRWNGZNZWPWRAOIZUGZAPIZGZNZBCUHZWOWLEAWPEKZJIZGZWRXOGZNZWPWRX
-      NOIZUGZXNPIZGZNZBCUHXMSHSBCEUIXNAUJZYCXLBCYDXRXGYBXKYDXPXEXQXFYDXOWNWPXNA
-      JQZUKYDXOWNWRYEUKULYDXTXIYAXJYDXSXHWPWRXNAOQUMXNAPQUNULUOAFUPZWLXMWOSWLWN
-      SGZYGWOSGWLJSUQZASGYGYHWLURUSYFYGSAJAJUTVAVBZYIWNWNSSVCVBXMWOUBWLXKBCWNWN
-      VDZUSVEVFYJVGWLWQBWNWLXENZWNWMAWPYKWNRYKWMRWLAVHGZXEAVIZTWLXEVJWLAVKIZAVL
-      IZVPXEAYNYOYNVMYOVMVNTVQVOWLXAXDWLWTBCWNWNWLXGNZWNWMAWPWRYPWNRYPWMRWLYLXG
-      YMTWLXEXFVRWLXEXFVSVTWAWLXCBCDWNWNWNWLXEXFXBWNGZWBZNZWNWMAWPWRXBYSWNRYSWM
-      RWLYRWCWLXEXFYQWDWLXEXFYQWEWLXEXFYQWFWGWHWIBCDWNWMWJWK $.
-  $}
-
-
-$(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Subrings of a ring
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -154363,6 +154234,134 @@ $)
       OTUUFTVKVLVMVFWNYKBCUUHUUDWNXNWLUUHUUDRUULYBWIFXCUUHSMXCTUUHTVKVNVFVIVGUD
       VOWNWSXGXAXIAWSXGVHWHAWRXFWIADWRXFGHVPVSQWNWTXHWIWNBCDEFMMADWRRWHGQADXFRW
       HHQUUJAWHUPYBVQVTVOVOWIWREWTWRTWTTWAWIXFFXHXFTXHTWAWBWCWDWE $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Division rings and fields
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Ring apartness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c #r $. $( Ring apartness $)
+
+  $( Extend class notation with ring apartness. $)
+  capr $a class #r $.
+
+  ${
+    $d w x y $.
+    $( The relation between elements whose difference is invertible, which for
+       a local ring is an apartness relation by ~ aprap .  (Contributed by Jim
+       Kingdon, 13-Feb-2025.) $)
+    df-apr $a |- #r = ( w e. _V |-> { <. x , y >. |
+      ( ( x e. ( Base ` w ) /\ y e. ( Base ` w ) )
+      /\ ( x ( -g ` w ) y ) e. ( Unit ` w ) ) } ) $.
+  $}
+
+  ${
+    $d R r x y $.  $d X x y $.  $d Y x y $.
+    aprval.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    aprval.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
+    aprval.s $e |- ( ph -> .- = ( -g ` R ) ) $.
+    aprval.u $e |- ( ph -> U = ( Unit ` R ) ) $.
+    aprval.r $e |- ( ph -> R e. Ring ) $.
+    aprval.x $e |- ( ph -> X e. B ) $.
+    aprval.y $e |- ( ph -> Y e. B ) $.
+    $( Expand Definition ~ df-apr .  (Contributed by Jim Kingdon,
+       17-Feb-2025.) $)
+    aprval $p |- ( ph -> ( X .# Y <-> ( X .- Y ) e. U ) ) $=
+      ( vx vy cfv wcel cvv vr wbr csg co cui cop df-br cv cbs copab capr df-apr
+      wa wceq fveq2 eleq2d anbi12d oveqd eleq12d opabbidv crg elexd cxp funfvex
+      wfn basfn funfni sylancr xpexg syl2anc wss opabssxp ssexd fvmptd3 eleqtrd
+      a1i eqtrd wb oveq12 eleq1d opelopab2a bitrd bitrid bitr4d ) AGHCUBZGHDUCR
+      ZUDZDUERZSZGHFUDZESWEGHUFZCSZAWIGHCUGAWLWKPUHZDUIRZSZQUHZWNSZUMZWMWPWFUDZ
+      WHSZUMZPQUJZSZWIACXBWKACDUKRXBJAUADWMUAUHZUIRZSZWPXESZUMZWMWPXDUCRZUDZXDU
+      ERZSZUMZPQUJXBTUKTPQUAULXDDUNZXMXAPQXNXHWRXLWTXNXFWOXGWQXNXEWNWMXDDUIUOZU
+      PXNXEWNWPXOUPUQXNXJWSXKWHXNXIWFWMWPXDDUCUOURXDDUEUOUSUQUTADVAMVBZAXBWNWNV
+      CZTAWNTSZXRXQTSAUITVEDTSXRVFXPXRTDUIDUIVDVGVHZXSWNWNTTVIVJXBXQVKAWTPQWNWN
+      VLVPVMVNVQUPAGWNSHWNSXCWIVRAGBWNNIVOAHBWNOIVOWTWIPQGHWNWNWMGUNWPHUNUMWSWG
+      WHWMGWPHWFVSVTWAVJWBWCAWJWGEWHAFWFGHKURLUSWD $.
+  $}
+
+  ${
+    aprirr.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    aprirr.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
+    aprirr.r $e |- ( ph -> R e. Ring ) $.
+    aprirr.x $e |- ( ph -> X e. B ) $.
+
+    ${
+      $d R r x y $.  $d X x y $.
+      aprirr.nz $e |- ( ph -> ( 1r ` R ) =/= ( 0g ` R ) ) $.
+      $( The apartness relation given by ~ df-apr for a nonzero ring is
+         irreflexive.  (Contributed by Jim Kingdon, 16-Feb-2025.) $)
+      aprirr $p |- ( ph -> -. X .# X ) $=
+        ( wbr csg cfv co cui wcel wceq eqid mtbird eqidd cgrp ringgrpd grpsubid
+        c0g cbs eleqtrd syl2anc cur neneqd crg wb 0unit syl eqneltrd aprval ) A
+        EECKEEDLMZNZDOMZPAUQDUDMZURADUAPEDUEMZPUQUSQADHUBAEBUTIFUFUTDUPEUSUTRUS
+        RZUPRUCUGAUSURPZDUHMZUSQZAVCUSJUIADUJPVBVDUKHDURVCUSURRVAVCRULUMSUNABCD
+        URUPEEFGAUPTAURTHIIUOS $.
+    $}
+
+    aprsym.y $e |- ( ph -> Y e. B ) $.
+    $( The apartness relation given by ~ df-apr for a ring is symmetric.
+       (Contributed by Jim Kingdon, 17-Feb-2025.) $)
+    aprsym $p |- ( ph -> ( X .# Y -> Y .# X ) ) $=
+      ( wbr cfv co wcel eqidd aprval eqid wb eleqtrd csg cui cminusg crg biimpa
+      unitnegcl syl2an2r cgrp cbs wceq ringgrpd grpinvsub syl3anc eleq1d adantr
+      wa mpbid mpbird ex ) AEFCLZFECLZAUTUPZVAFEDUAMZNZDUBMZOZVBEFVCNZDUCMZMZVE
+      OZVFADUDOUTVGVEOZVJIAUTVKABCDVEVCEFGHAVCPZAVEPZIJKQUEDVEVHVGVERVHRZUFUGAV
+      JVFSUTAVIVDVEADUHOEDUIMZOFVOOVIVDUJADIUKAEBVOJGTAFBVOKGTVODVCVHEFVORVCRVN
+      ULUMUNUOUQAVAVFSUTABCDVEVCFEGHVLVMIKJQUOURUS $.
+  $}
+
+  ${
+    aprcotr.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    aprcotr.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
+    aprcotr.r $e |- ( ph -> R e. LRing ) $.
+    aprcotr.x $e |- ( ph -> X e. B ) $.
+    aprcotr.y $e |- ( ph -> Y e. B ) $.
+    aprcotr.z $e |- ( ph -> Z e. B ) $.
+    $( The apartness relation given by ~ df-apr for a local ring is
+       cotransitive.  (Contributed by Jim Kingdon, 17-Feb-2025.) $)
+    aprcotr $p |- ( ph -> ( X .# Y -> ( X .# Z \/ Y .# Z ) ) ) $=
+      ( wbr cfv co wcel adantr eqidd eleqtrd wo wa csg cui cplusg cbs wceq cgrp
+      clring crg lringring syl ringgrpd eqid grpnpncan syl13anc aprval grpsubcl
+      biimpa eqeltrd syl3anc lringuplu wi biimprd aprsym sylbird orim12d mpd ex
+      eleqtrrd ) AEFCNZEGCNZFGCNZUAZAVKUBZEGDUCOZPZDUDOZQZGFVPPZVRQZUAVNVOBDUEO
+      ZDVRVQVTABDUFOZUGVKHRVOVRSVOWBSADUIQZVKJRVOVQVTWBPZEFVPPZVRAWEWFUGZVKADUH
+      QZEWCQZGWCQZFWCQZWGADAWDDUJQJDUKULZUMZAEBWCKHTZAGBWCMHTZAFBWCLHTZWCWBDVPE
+      GFWCUNZWBUNVPUNZUOUPRAVKWFVRQABCDVRVPEFHIAVPSZAVRSZWLKLUQUSUTAVQBQVKAVQWC
+      BAWHWIWJVQWCQWMWNWOWCDVPEGWQWRURVAHVJRAVTBQVKAVTWCBAWHWJWKVTWCQWMWOWPWCDV
+      PGFWQWRURVAHVJRVBVOVSVLWAVMAVSVLVCVKAVLVSABCDVRVPEGHIWSWTWLKMUQVDRAWAVMVC
+      VKAWAGFCNVMABCDVRVPGFHIWSWTWLMLUQABCDGFHIWLMLVEVFRVGVHVI $.
+  $}
+
+  ${
+    $d R r x y z $.
+    $( The relation given by ~ df-apr for a local ring is an apartness
+       relation.  (Contributed by Jim Kingdon, 20-Feb-2025.) $)
+    aprap $p |- ( R e. LRing -> ( #r ` R ) Ap ( Base ` R ) ) $=
+      ( vx vy vz vr clring wcel capr cfv cbs cv wbr wral wa csg cui fveq2 eqidd
+      cvv adantr cxp wss wn wi wo wap co copab df-apr wceq eleq2d anbi12d oveqd
+      eleq12d opabbidv elex wfn basfn a1i funfvex funfni syl2anc xpexg opabssxp
+      ssexd fvmptd3 eqsstrdi crg lringring simpr cur c0g eqid lringnz ralrimiva
+      wne aprirr simprl simprr aprsym ralrimivva w3a simpl simpr1 simpr2 simpr3
+      aprcotr ralrimivvva jca df-pap syl21anbrc ) AFGZAHIZAJIZWNUAZUBBKZWPWMLUC
+      ZBWNMWPCKZWMLZWRWPWMLUDZCWNMBWNMZWSWPDKZWMLWRXBWMLUEUDZDWNMCWNMBWNMZNWNWM
+      UFWLWMWPWNGZWRWNGZNZWPWRAOIZUGZAPIZGZNZBCUHZWOWLEAWPEKZJIZGZWRXOGZNZWPWRX
+      NOIZUGZXNPIZGZNZBCUHXMSHSBCEUIXNAUJZYCXLBCYDXRXGYBXKYDXPXEXQXFYDXOWNWPXNA
+      JQZUKYDXOWNWRYEUKULYDXTXIYAXJYDXSXHWPWRXNAOQUMXNAPQUNULUOAFUPZWLXMWOSWLWN
+      SGZYGWOSGWLJSUQZASGYGYHWLURUSYFYGSAJAJUTVAVBZYIWNWNSSVCVBXMWOUBWLXKBCWNWN
+      VDZUSVEVFYJVGWLWQBWNWLXENZWNWMAWPYKWNRYKWMRWLAVHGZXEAVIZTWLXEVJWLAVKIZAVL
+      IZVPXEAYNYOYNVMYOVMVNTVQVOWLXAXDWLWTBCWNWNWLXGNZWNWMAWPWRYPWNRYPWMRWLYLXG
+      YMTWLXEXFVRWLXEXFVSVTWAWLXCBCDWNWNWNWLXEXFXBWNGZWBZNZWNWMAWPWRXBYSWNRYSWM
+      RWLYRWCWLXEXFYQWDWLXEXFYQWEWLXEXFYQWFWGWHWIBCDWNWMWJWK $.
   $}
 
 
