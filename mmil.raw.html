@@ -8052,6 +8052,11 @@ dividing by zero.</TD>
 <TD>~ sqdivap</TD>
 </TR>
 
+<tr>
+  <td>sqdivid</td>
+  <td>~ sqdividap</td>
+</tr>
+
 <TR>
 <TD>sqgt0</TD>
 <TD>~ sqgt0ap</TD>
@@ -8198,8 +8203,7 @@ or not.</TD>
 
 <TR>
   <TD>mulsubdivbinom2</TD>
-  <TD><I>none</I></TD>
-  <TD>Presumably provable if not equal is changed to apart.</TD>
+  <TD>~ mulsubdivbinom2ap</TD>
 </TR>
 
 <TR>
@@ -9661,13 +9665,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD><I>none</I></TD>
   <TD>A proof would need either excluded middle or countable choice,
   per [BauerHanson]</TD>
-</TR>
-
-<TR>
-  <TD>dvdsaddre2b</TD>
-  <TD><I>none</I></TD>
-  <TD>Something along these lines (perhaps with real changed to
-  rational) may be possible</TD>
 </TR>
 
 <TR>
@@ -13717,9 +13714,51 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>lgseisenlem3 , lgseisenlem4 , lgseisen</td>
+  <td><i>none</i></td>
+  <td>presumably the set.mm proofs can be adapted once we
+  have added Z/nZ and ZRHom and have added more theorems
+  concerning ` gsum ` .</td>
+</tr>
+
+<tr>
+  <td>lgsquad including lemmas</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses gausslemma2dlem0a , gausslemma2dlem0b
+  and possibly other theorems we don't have yet, and may also need
+  adjustments to the logic.  Also see "Law of Quadratic Reciprocity"
+  entry below in the Metamath 100 section.</td>
+</tr>
+
+<tr>
+  <td>lgsquad2 including lemmas</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses lgsquad</td>
+</tr>
+
+<tr>
+  <td>lgsquad3</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses lgsquad2 and also needs a closer look
+  at the use of excluded middle</td>
+</tr>
+
+<tr>
+  <td>2lgs and lemmas</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses, at least, gausslemma2d</td>
+</tr>
+
+<tr>
+  <td>2lgsoddprm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses 2lgs</td>
+</tr>
+
+<tr>
   <td>2sqlem11</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses lgsqr and m1lgs</td>
+  <td>the set.mm proof uses lgsqr</td>
 </tr>
 
 <tr>
