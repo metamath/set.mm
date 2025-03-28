@@ -154697,7 +154697,7 @@ $)
 
   ${
     $d w x y B $.  $d w x y K $.  $d w x y .x. $.  $d w x y W $.  $d x y X $.
-    $d x y Y $.
+    $d x y Y $.  $d V x y $.
     scaffval.b $e |- B = ( Base ` W ) $.
     scaffval.f $e |- F = ( Scalar ` W ) $.
     scaffval.k $e |- K = ( Base ` F ) $.
@@ -154717,7 +154717,6 @@ $)
         SQUSZFQOWBQOZUNVNFWCQKIRQUOUPUQWFQFSFSURUTVAUQVNCWDQJWEVNWDQOZUNWGQISIS
         URUTVBUQABGCVLQQVCVDVEVFVG $.
 
-      $d V x y $.
       $( The scalar multiplication operation as a function.  (Contributed by
          Mario Carneiro, 5-Oct-2015.) $)
       scafvalg $p |- ( ( W e. V /\ X e. K /\ Y e. B )
@@ -154736,6 +154735,15 @@ $)
         eqtr4d ) GFOZCEAPQZRBMNEAMSNSCUAUBZCUHBUJTUIMNABCDEFGHIJKLUCUDUICUJTUHM
         NEACUEUFUG $.
     $}
+
+    $( The scalar multiplication operation is a function.  (Contributed by
+       Mario Carneiro, 5-Oct-2015.) $)
+    scaffng $p |- ( W e. V -> .xb Fn ( K X. B ) ) $=
+      ( vx vy wcel wfn cv cvsca cvv wral vex ralrimivw cxp cfv co cmpo vscaslid
+      slotex a1i ovexg mp3an2i eqid fnmpo syl scaffvalg fneq1d mpbird ) FEMZBDA
+      UAZNKLDAKOZLOZFPUBZUCZUDZUQNZUPVAQMZLARZKDRVCUPVEKDUPVDLAURQMUPUTQMUSQMZV
+      DKSFPEUEUFVFUPLSUGURUSUTQQQUHUITTKLDAVAVBQVBUJUKULUPUQBVBKLABUTCDEFGHIJUT
+      UJUMUNUO $.
   $}
 
 
