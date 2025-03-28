@@ -154716,6 +154716,17 @@ $)
         VRISPZCVOISUHJTWAVSEVJVKWAVSIUFPEVOIUFUHNTULUMIQUJVNGQOCQOVMQOVNGWBQLVN
         SQUSZFQOWBQOZUNVNFWCQKIRQUOUPUQWFQFSFSURUTVAUQVNCWDQJWEVNWDQOZUNWGQISIS
         URUTVBUQABGCVLQQVCVDVEVFVG $.
+
+      $d V x y $.
+      $( The scalar multiplication operation as a function.  (Contributed by
+         Mario Carneiro, 5-Oct-2015.) $)
+      scafvalg $p |- ( ( W e. V /\ X e. K /\ Y e. B )
+          -> ( X .xb Y ) = ( X .x. Y ) ) $=
+        ( vx vy wcel cv cvv wceq w3a co cmpo scaffvalg 3ad2ant1 wa oveq12 simp2
+        adantl simp3 cvsca cfv vscaslid slotex eqeltrid ovexg syl3anc ovmpod )
+        GFQZHEQZIAQZUAZOPHIEAORZPRZCUBZHICUBZBSUSUTBOPEAVEUCTVAOPABCDEFGJKLMNUD
+        UEVCHTVDITUFVEVFTVBVCHVDICUGUIUSUTVAUHZUSUTVAUJZVBUTCSQZVAVFSQVGUSUTVIV
+        AUSCGUKULSNGUKFUMUNUOUEVHHICESAUPUQUR $.
     $}
   $}
 
