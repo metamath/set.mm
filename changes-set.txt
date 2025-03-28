@@ -89,6 +89,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+28-Mar-25 ---       ---         Moved non-unital subring def. and theorems 
+                                from AV's mathbox to main set.mm
 28-Mar-25 mgmpropd  [same]      Moved from AV's mathbox to main set.mm
 28-Mar-25 ismgmd    [same]      Moved from AV's mathbox to main set.mm
 28-Mar-25 ismhm0    [same]      Moved from AV's mathbox to main set.mm 
