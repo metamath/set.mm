@@ -154727,6 +154727,14 @@ $)
         GFQZHEQZIAQZUAZOPHIEAORZPRZCUBZHICUBZBSUSUTBOPEAVEUCTVAOPABCDEFGJKLMNUD
         UEVCHTVDITUFVEVFTVBVCHVDICUGUIUSUTVAUHZUSUTVAUJZVBUTCSQZVAVFSQVGUSUTVIV
         AUSCGUKULSNGUKFUMUNUOUEVHHICESAUPUQUR $.
+
+      $( If the scalar multiplication operation is already a function, the
+         functionalization of it is equal to the original operation.
+         (Contributed by Mario Carneiro, 5-Oct-2015.) $)
+      scafeqg $p |- ( ( W e. V /\ .x. Fn ( K X. B ) ) -> .xb = .x. ) $=
+        ( vx vy wcel cxp wfn wa cv wceq co cmpo scaffvalg adantr fnovim adantl
+        eqtr4d ) GFOZCEAPQZRBMNEAMSNSCUAUBZCUHBUJTUIMNABCDEFGHIJKLUCUDUICUJTUHM
+        NEACUEUFUG $.
     $}
   $}
 
