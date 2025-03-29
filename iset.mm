@@ -154850,6 +154850,17 @@ $)
       ( clmod wcel cgrp lmodgrp grpidcl syl ) BFGBHGCAGBIABCDEJK $.
   $}
 
+  ${
+    0vlid.v $e |- V = ( Base ` W ) $.
+    0vlid.a $e |- .+ = ( +g ` W ) $.
+    0vlid.z $e |- .0. = ( 0g ` W ) $.
+    $( Left identity law for the zero vector.  (Contributed by NM,
+       10-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmod0vlid $p |- ( ( W e. LMod /\ X e. V ) -> ( .0. .+ X ) = X ) $=
+      ( clmod wcel cgrp co wceq lmodgrp grplid sylan ) CIJCKJDBJEDALDMCNBACDEFG
+      HOP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
