@@ -154841,6 +154841,15 @@ $)
       TOZPFAPUSQSBBCUDOZPFAPBUMAPQUNURUTBBAVABCUKDEFFGURRIHUOUTRVARJUFUGUH $.
   $}
 
+  ${
+    0vcl.v $e |- V = ( Base ` W ) $.
+    0vcl.z $e |- .0. = ( 0g ` W ) $.
+    $( The zero vector is a vector.  (Contributed by NM, 10-Jan-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmod0vcl $p |- ( W e. LMod -> .0. e. V ) $=
+      ( clmod wcel cgrp lmodgrp grpidcl syl ) BFGBHGCAGBIABCDEJK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
