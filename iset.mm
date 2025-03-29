@@ -154744,6 +154744,14 @@ $)
       UAZNKLDAKOZLOZFPUBZUCZUDZUQNZUPVAQMZLARZKDRVCUPVEKDUPVDLAURQMUPUTQMUSQMZV
       DKSFPEUEUFVFUPLSUGURUSUTQQQUHUITTKLDAVAVBQVBUJUKULUPUQBVBKLABUTCDEFGHIJUT
       UJUMUNUO $.
+
+    $( The scalar multiplication operation is a function.  (Contributed by
+       Mario Carneiro, 5-Oct-2015.) $)
+    lmodscaf $p |- ( W e. LMod -> .xb : ( K X. B ) --> B ) $=
+      ( vx vy clmod wcel cxp wf cv cvsca cfv wral eqid cmpo lmodvscl ralrimivva
+      co 3expb fmpo sylib scaffvalg feq1d mpbird ) ELMZDANZABOULAJKDAJPZKPZEQRZ
+      UDZUAZOZUKUPAMZKASJDSURUKUSJKDAUKUMDMUNAMUSUMUOCDAEUNFGUOTZHUBUEUCJKDAUPA
+      UQUQTUFUGUKULABUQJKABUOCDLEFGHIUTUHUIUJ $.
   $}
 
 
