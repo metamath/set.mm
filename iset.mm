@@ -154816,6 +154816,17 @@ $)
       ( clmod wcel crg lmodring ring0cl syl ) CHIAJIDBIACEKBADFGLM $.
   $}
 
+  ${
+    lmod1cl.f $e |- F = ( Scalar ` W ) $.
+    lmod1cl.k $e |- K = ( Base ` F ) $.
+    lmod1cl.u $e |- .1. = ( 1r ` F ) $.
+    $( The ring unity in a left module belongs to the ring base set.
+       (Contributed by NM, 11-Jan-2014.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lmod1cl $p |- ( W e. LMod -> .1. e. K ) $=
+      ( clmod wcel crg lmodring ringidcl syl ) DHIBJIACIBDEKCBAFGLM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
