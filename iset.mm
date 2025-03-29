@@ -154771,6 +154771,24 @@ $)
       VETVGTVHTUFUGUHUJUKULUMUN $.
   $}
 
+  ${
+    lmodvsdir.v $e |- V = ( Base ` W ) $.
+    lmodvsdir.a $e |- .+ = ( +g ` W ) $.
+    lmodvsdir.f $e |- F = ( Scalar ` W ) $.
+    lmodvsdir.s $e |- .x. = ( .s ` W ) $.
+    lmodvsdir.k $e |- K = ( Base ` F ) $.
+    lmodvsdir.p $e |- .+^ = ( +g ` F ) $.
+    $( Distributive law for scalar product (right-distributivity).
+       (Contributed by NM, 10-Jan-2014.)  (Revised by Mario Carneiro,
+       22-Sep-2015.) $)
+    lmodvsdir $p |- ( ( W e. LMod /\ ( Q e. K /\ R e. K /\ X e. V ) ) ->
+                    ( ( Q .+^ R ) .x. X ) = ( ( Q .x. X ) .+ ( R .x. X ) ) ) $=
+      ( wcel co wceq wa clmod w3a cmulr cfv cur lmodlema simpld simp3d anabsan2
+      eqid 3expa exp42 3imp2 ) IUAQZCGQZDGQZJHQZCDBRJERCJERDJERZARSZUNUOUPUQUSU
+      NUOUPTZTUQUSUNUTUQUQTZUSUNUTVAUBZURHQZDJJARERURURARSZUSVBVCVDUSUBCDFUCUDZ
+      RJERCURERSFUEUDZJERJSTABCDEVEVFFGHIJJKLNMOPVEUJVFUJUFUGUHUKUIULUM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
