@@ -154865,6 +154865,14 @@ $)
     lmod0vrid $p |- ( ( W e. LMod /\ X e. V ) -> ( X .+ .0. ) = X ) $=
       ( clmod wcel cgrp co wceq lmodgrp grprid sylan ) CIJCKJDBJDEALDMCNBACDEFG
       HOP $.
+
+    $( Identity equivalent to the value of the zero vector.  Provides a
+       convenient way to compute the value.  (Contributed by NM, 9-Mar-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmod0vid $p |- ( ( W e. LMod /\ X e. V )
+        -> ( ( X .+ X ) = X <-> .0. = X ) ) $=
+      ( clmod wcel cgrp co wceq wb lmodgrp grpid sylan ) CIJCKJDBJDDALDMEDMNCOB
+      ACDEFGHPQ $.
   $}
 
 
