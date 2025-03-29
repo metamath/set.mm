@@ -154859,6 +154859,12 @@ $)
     lmod0vlid $p |- ( ( W e. LMod /\ X e. V ) -> ( .0. .+ X ) = X ) $=
       ( clmod wcel cgrp co wceq lmodgrp grplid sylan ) CIJCKJDBJEDALDMCNBACDEFG
       HOP $.
+
+    $( Right identity law for the zero vector.  (Contributed by NM,
+       10-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmod0vrid $p |- ( ( W e. LMod /\ X e. V ) -> ( X .+ .0. ) = X ) $=
+      ( clmod wcel cgrp co wceq lmodgrp grprid sylan ) CIJCKJDBJDEALDMCNBACDEFG
+      HOP $.
   $}
 
 
