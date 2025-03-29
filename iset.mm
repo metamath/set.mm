@@ -154789,6 +154789,22 @@ $)
       RJERCURERSFUEUDZJERJSTABCDEVEVFFGHIJJKLNMOPVEUJVFUJUFUGUHUKUIULUM $.
   $}
 
+  ${
+    lmodvsass.v $e |- V = ( Base ` W ) $.
+    lmodvsass.f $e |- F = ( Scalar ` W ) $.
+    lmodvsass.s $e |- .x. = ( .s ` W ) $.
+    lmodvsass.k $e |- K = ( Base ` F ) $.
+    lmodvsass.t $e |- .X. = ( .r ` F ) $.
+    $( Associative law for scalar product.  (Contributed by NM, 10-Jan-2014.)
+       (Revised by Mario Carneiro, 22-Sep-2015.) $)
+    lmodvsass $p |- ( ( W e. LMod /\ ( Q e. K /\ R e. K /\ X e. V ) ) ->
+                      ( ( Q .X. R ) .x. X ) = ( Q .x. ( R .x. X ) ) ) $=
+      ( wcel co wceq wa cfv eqid clmod w3a cplusg cur lmodlema simprld anabsan2
+      3expa exp42 3imp2 ) HUAOZAFOZBFOZIGOZABDPICPABICPZCPQZUKULUMUNUPUKULUMRZR
+      UNUPUKUQUNUNRZUPUKUQURUBUOGOBIIHUCSZPCPUOUOUSPQABEUCSZPICPAICPUOUSPQUBUPE
+      UDSZICPIQUSUTABCDVAEFGHIIJUSTLKMUTTNVATUEUFUHUGUIUJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
