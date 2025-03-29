@@ -154827,6 +154827,20 @@ $)
       ( clmod wcel crg lmodring ringidcl syl ) DHIBJIACIBDEKCBAFGLM $.
   $}
 
+  ${
+    lmodvs1.v $e |- V = ( Base ` W ) $.
+    lmodvs1.f $e |- F = ( Scalar ` W ) $.
+    lmodvs1.s $e |- .x. = ( .s ` W ) $.
+    lmodvs1.u $e |- .1. = ( 1r ` F ) $.
+    $( Scalar product with the ring unity.  (Contributed by NM, 10-Jan-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvs1 $p |- ( ( W e. LMod /\ X e. V ) -> ( .1. .x. X ) = X ) $=
+      ( clmod wcel wa cbs cfv co wceq eqid w3a cplusg simpl lmod1cl simpr cmulr
+      adantr lmodlema simprrd syl122anc ) EKLZFDLZMUIBCNOZLZULUJUJBFAPZFQZUIUJU
+      AUIULUJBCUKEHUKRZJUBUEZUPUIUJUCZUQUIULULMUJUJMSUMDLBFFETOZPAPUMUMURPZQBBC
+      TOZPFAPUSQSBBCUDOZPFAPBUMAPQUNURUTBBAVABCUKDEFFGURRIHUOUTRVARJUFUGUH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
