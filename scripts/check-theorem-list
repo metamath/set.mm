@@ -1,5 +1,8 @@
 #!/bin/sh
-# check-theorem-list - check if theorem list output is okay
+# check-theorem-list - check when that generating the theorem list,
+# metamath.exe does not encounter any error or warning, including
+# missing bibliographic references
+#
 # $1 = MMFILE
 
 mmfile="$1"
