@@ -154809,7 +154809,7 @@ $)
     lmod0cl.f $e |- F = ( Scalar ` W ) $.
     lmod0cl.k $e |- K = ( Base ` F ) $.
     lmod0cl.z $e |- .0. = ( 0g ` F ) $.
-    $( The ring zero in a left module belongs to the ring base set.
+    $( The ring zero in a left module belongs to the set of scalars.
        (Contributed by NM, 11-Jan-2014.)  (Revised by Mario Carneiro,
        19-Jun-2014.) $)
     lmod0cl $p |- ( W e. LMod -> .0. e. K ) $=
@@ -154820,7 +154820,7 @@ $)
     lmod1cl.f $e |- F = ( Scalar ` W ) $.
     lmod1cl.k $e |- K = ( Base ` F ) $.
     lmod1cl.u $e |- .1. = ( 1r ` F ) $.
-    $( The ring unity in a left module belongs to the ring base set.
+    $( The ring unity in a left module belongs to the set of scalars.
        (Contributed by NM, 11-Jan-2014.)  (Revised by Mario Carneiro,
        19-Jun-2014.) $)
     lmod1cl $p |- ( W e. LMod -> .1. e. K ) $=
