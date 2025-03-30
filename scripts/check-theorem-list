@@ -1,0 +1,26 @@
+#!/bin/sh
+# check-theorem-list - check if theorem list output is okay
+# $1 = MMFILE
+
+mmfile="$1"
+shift
+
+error=0
+
+generate_metamath_commands () {
+  echo "read \"$mmfile\""
+  echo 'set scroll continuous'
+  echo "write theorem_list/alt_html"
+  echo quit
+}
+
+generate_metamath_commands | metamath | tee ,check-theorem-list-log
+
+if grep -E '^\?(Warning|Error): ' ,check-theorem-list-log ; then
+  error=1
+fi
+
+rm -fr ,*.TRASH
+rm -fr ,check-theorem-list-log
+
+exit "$error"

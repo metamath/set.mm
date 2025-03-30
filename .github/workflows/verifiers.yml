@@ -129,6 +129,10 @@ jobs:
       - run: cp iset.mm iset-wrapped.mm
       - run: scripts/rewrap iset-wrapped.mm
       - run: echo 'Checking for iset.mm rewrapping:' && diff -U 0 iset.mm iset-wrapped.mm
+      - run: echo 'Checking for set.mm theorem list'
+      - run: scripts/check-theorem-list set.mm
+      - run: echo 'Checking for iset.mm theorem list'
+      - run: scripts/check-theorem-list iset.mm
       # The following checks are arbitrarily included in the metamath job.
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
