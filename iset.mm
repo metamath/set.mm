@@ -154896,6 +154896,23 @@ $)
       WAWBCABVODEFHIJVTUPUSVHDEVGGHWCLUTVAVBVC $.
   $}
 
+  ${
+    lmodvs0.f $e |- F = ( Scalar ` W ) $.
+    lmodvs0.s $e |- .x. = ( .s ` W ) $.
+    lmodvs0.k $e |- K = ( Base ` F ) $.
+    lmodvs0.z $e |- .0. = ( 0g ` W ) $.
+    $( Anything times the zero vector is the zero vector.  Equation 1b of
+       [Kreyszig] p. 51.  (Contributed by NM, 12-Jan-2014.)  (Revised by Mario
+       Carneiro, 19-Jun-2014.) $)
+    lmodvs0 $p |- ( ( W e. LMod /\ X e. K ) -> ( X .x. .0. ) = .0. ) $=
+      ( clmod wcel wa c0g cfv cmulr co wceq eqid adantr crg ringrz sylan oveq1d
+      lmodring cbs simpl ring0cl syl lmod0vcl lmodvsass syl13anc lmod0vs syldan
+      simpr oveq2d eqtrd 3eqtr3d ) DKLZECLZMZEBNOZBPOZQZFAQZVBFAQZEFAQZFVAVDVBF
+      AUSBUALZUTVDVBRBDGUEZCBVCEVBIVCSZVBSZUBUCUDVAVEEVFAQZVGVAUSUTVBCLZFDUFOZL
+      ZVEVLRUSUTUGUSUTUOVAVHVMUSVHUTVITCBVBIVKUHUIUSVOUTVNDFVNSZJUJTZEVBAVCBCVN
+      DFVPGHIVJUKULVAVFFEAUSUTVOVFFRVQABVBVNDFFVPGHVKJUMUNZUPUQVRUR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
