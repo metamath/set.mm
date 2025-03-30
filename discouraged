@@ -1052,6 +1052,7 @@
 "ax-cnex" is used by "cnex".
 "ax-cnre" is used by "cnre".
 "ax-distr" is used by "adddi".
+"ax-flt" is used by "nrt2irr".
 "ax-frege1" is used by "frege11".
 "ax-frege1" is used by "frege24".
 "ax-frege1" is used by "frege26".
@@ -14594,6 +14595,7 @@ New usage of "ax-c9" is discouraged (7 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
 New usage of "ax-distr" is discouraged (1 uses).
+New usage of "ax-flt" is discouraged (1 uses).
 New usage of "ax-frege1" is discouraged (10 uses).
 New usage of "ax-frege2" is discouraged (11 uses).
 New usage of "ax-frege28" is discouraged (3 uses).
