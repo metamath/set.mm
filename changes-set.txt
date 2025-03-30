@@ -89,6 +89,16 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+30-Mar-25 df-rnghom df-ringhm
+30-Mar-25 df-rngiso df-ringim
+30-Mar-25 isrngisom isrngim
+30-Mar-25 isrngim   isrngim2
+30-Mar-25 df-rngisom df-rngim
+30-Mar-25 crngs     crngim
+30-Mar-25 df-rnghomo df-rnghm
+30-Mar-25 crngh     crnghm
+30-Mar-25 crngiso   crngoiso    in JM's mathbox
+30-Mar-25 crnghom   crngohom    in JM's mathbox
 28-Mar-25 ---       ---         Moved ideals of non-unital subring theorems 
                                 from AV's mathbox to main set.mm
 28-Mar-25 ---       ---         Moved non-unital subring def. and theorems 
