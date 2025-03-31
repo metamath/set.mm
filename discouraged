@@ -18296,7 +18296,6 @@ New usage of "nvz" is discouraged (9 uses).
 New usage of "nvz0" is discouraged (8 uses).
 New usage of "nvzcl" is discouraged (21 uses).
 New usage of "nzrringOLD" is discouraged (0 uses).
-New usage of "o2p2e4OLD" is discouraged (0 uses).
 New usage of "oc0" is discouraged (2 uses).
 New usage of "occl" is discouraged (15 uses).
 New usage of "occllem" is discouraged (1 uses).
@@ -18737,6 +18736,8 @@ New usage of "pwsnOLD" is discouraged (0 uses).
 New usage of "pwtrVD" is discouraged (0 uses).
 New usage of "pwtrrVD" is discouraged (0 uses).
 New usage of "pythi" is discouraged (0 uses).
+New usage of "pzriprng1ALT" is discouraged (0 uses).
+New usage of "pzriprngALT" is discouraged (0 uses).
 New usage of "qexALT" is discouraged (1 uses).
 New usage of "qlax1i" is discouraged (0 uses).
 New usage of "qlax2i" is discouraged (0 uses).
@@ -21096,7 +21097,6 @@ Proof modification of "notnotriALT" is discouraged (7 steps).
 Proof modification of "nrt2irr" is discouraged (453 steps).
 Proof modification of "nsnlpligALT" is discouraged (110 steps).
 Proof modification of "nzrringOLD" is discouraged (22 steps).
-Proof modification of "o2p2e4OLD" is discouraged (67 steps).
 Proof modification of "odfvalALT" is discouraged (181 steps).
 Proof modification of "odubasOLD" is discouraged (62 steps).
 Proof modification of "ominfOLD" is discouraged (79 steps).
@@ -21205,6 +21205,8 @@ Proof modification of "pwfilemOLD" is discouraged (197 steps).
 Proof modification of "pwsnOLD" is discouraged (164 steps).
 Proof modification of "pwtrVD" is discouraged (110 steps).
 Proof modification of "pwtrrVD" is discouraged (110 steps).
+Proof modification of "pzriprng1ALT" is discouraged (534 steps).
+Proof modification of "pzriprngALT" is discouraged (150 steps).
 Proof modification of "qexALT" is discouraged (64 steps).
 Proof modification of "quoremnn0ALT" is discouraged (360 steps).
 Proof modification of "r19.12OLD" is discouraged (69 steps).
