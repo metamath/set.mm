@@ -155036,6 +155036,18 @@ $)
       $.
   $}
 
+  ${
+    lmodvnegid.v $e |- V = ( Base ` W ) $.
+    lmodvnegid.p $e |- .+ = ( +g ` W ) $.
+    lmodvnegid.z $e |- .0. = ( 0g ` W ) $.
+    lmodvnegid.n $e |- N = ( invg ` W ) $.
+    $( Addition of a vector with its negative.  (Contributed by NM,
+       18-Apr-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvnegid $p |- ( ( W e. LMod /\ X e. V ) -> ( X .+ ( N ` X ) ) = .0. ) $=
+      ( clmod wcel cgrp cfv co wceq lmodgrp grprinv sylan ) DKLDMLECLEEBNAOFPDQ
+      CADBEFGHIJRS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
