@@ -155172,6 +155172,17 @@ $)
       IKLNRPQSTUAUDUBUPAJCFEHGIKMNRPQSTUAUEUCUPURUS $.
   $}
 
+  ${
+    lmod4.v $e |- V = ( Base ` W ) $.
+    lmod4.p $e |- .+ = ( +g ` W ) $.
+    $( Commutative/associative law for left module vector sum.  (Contributed by
+       NM, 4-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmod4 $p |- ( ( W e. LMod /\ ( X e. V /\ Y e. V ) /\ ( Z e. V /\ U e. V ) )
+        -> ( ( X .+ Y ) .+ ( Z .+ U ) ) = ( ( X .+ Z ) .+ ( Y .+ U ) ) ) $=
+      ( clmod wcel ccmn wa co wceq lmodcmn cmn4 syl3an1 ) DJKDLKECKFCKMGCKBCKME
+      FANGBANANEGANFBANANODPCADBEFGHIQR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
