@@ -155197,6 +155197,13 @@ $)
       ( ( A .+ B ) = ( C .+ D ) <-> ( A .- C ) = ( D .- B ) ) ) $=
       ( clmod wcel cabl wa co wceq wb lmodabl abladdsub4 syl3an1 ) HLMHNMAGMBGM
       OCGMDGMOABEPCDEPQACFPDBFPQRHSGEHFDABCIJKTUA $.
+
+    $( Addition/subtraction cancellation law for vectors.  (Contributed by NM,
+       16-Apr-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvpncan $p |- ( ( W e. LMod /\ A e. V /\ B e. V ) ->
+                       ( ( A .+ B ) .- B ) = A ) $=
+      ( clmod wcel cgrp co wceq lmodgrp grppncan syl3an1 ) FJKFLKAEKBEKABCMBDMA
+      NFOECFDABGHIPQ $.
   $}
 
 
