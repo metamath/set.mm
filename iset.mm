@@ -154976,6 +154976,15 @@ $)
       HVJRVNVLVIVQRVIVLVNVQVIVLCVKQZVNVQRVKACUCVRVNVQVKVMCUDTUEUFUGVHVQVJVHVQVJ
       EEOZVHLUHENLUIZVTVQVJVSSUJVHFUKNFULUMZENVTFUNEFWAIWAUOUPLWAEUQURZWBLLEEDE
       USUTVAVBVCVDTVEVFVG $.
+
+    lmodfopne.0 $e |- .0. = ( 0g ` S ) $.
+    lmodfopne.1 $e |- .1. = ( 1r ` S ) $.
+    $( Lemma 2 for ~ lmodfopne .  (Contributed by AV, 2-Oct-2021.) $)
+    lmodfopnelem2 $p |- ( ( W e. LMod /\ .+ = .x. )
+                          -> ( .0. e. V /\ .1. e. V ) ) $=
+      ( clmod wcel wceq wa eleq2 lmodfopnelem1 lmod0cl lmod1cl jca anbi12d syld
+      ex syl5ibrcom imp ) GPQZACRZHFQZDFQZSZUJUKFERZUNUJUKUOABCEFGIJKLMUAUGUJUN
+      UOHEQZDEQZSUJUPUQBEGHLMNUBDBEGLMOUCUDUOULUPUMUQFEHTFEDTUEUHUFUI $.
   $}
 
 
