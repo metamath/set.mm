@@ -152273,7 +152273,7 @@ $)
     $( Ring multiplication distributes over subtraction.  ( ~ subdir analog.)
        (Contributed by Jeff Madsen, 19-Jun-2010.)  (Revised by Mario Carneiro,
        2-Jul-2014.) $)
-    rngsubdir $p |- ( ph ->
+    ringsubdir $p |- ( ph ->
       ( ( X .- Y ) .x. Z ) = ( ( X .x. Z ) .- ( Y .x. Z ) ) ) $=
       ( cfv co wcel wceq syl2anc cminusg crg cgrp ringgrp eqid grpinvcl ringdir
       cplusg syl ringmneg1 oveq2d eqtrd grpsubval oveq1d ringcl syl3anc 3eqtr4d
