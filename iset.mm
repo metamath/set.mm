@@ -155255,6 +155255,34 @@ $)
       AUCVMBDWCEFIJLMQPRWCULZVBVCAWDVPLDAFEWCVLHBRWKWBSWJUAVFVDVGVHVI $.
   $}
 
+  ${
+    lmodsubdi.v $e |- V = ( Base ` W ) $.
+    lmodsubdi.t $e |- .x. = ( .s ` W ) $.
+    lmodsubdi.f $e |- F = ( Scalar ` W ) $.
+    lmodsubdi.k $e |- K = ( Base ` F ) $.
+    lmodsubdi.m $e |- .- = ( -g ` W ) $.
+    lmodsubdi.w $e |- ( ph -> W e. LMod ) $.
+    lmodsubdi.a $e |- ( ph -> A e. K ) $.
+    lmodsubdi.x $e |- ( ph -> X e. V ) $.
+    lmodsubdi.y $e |- ( ph -> Y e. V ) $.
+    $( Scalar multiplication distributive law for subtraction.  (Contributed by
+       NM, 2-Jul-2014.) $)
+    lmodsubdi $p |- ( ph
+       -> ( A .x. ( X .- Y ) ) = ( ( A .x. X ) .- ( A .x. Y ) ) ) $=
+      ( co cur cminusg cplusg clmod wcel wceq lmodvsubval2 syl3anc oveq2d cmulr
+      cfv eqid crg lmodring syl ringnegr ringnegl eqtr4d cgrp ringidcl grpinvcl
+      ringgrp syl2anc lmodvsass syl13anc 3eqtr3d lmodvscl lmodvsdi 3eqtr4rd
+      oveq1d ) ABIJFTZCTBIDUAUKZDUBUKZUKZJCTZHUCUKZTZCTZBICTZBJCTZFTZAVKVQBCAHU
+      DUEZIGUEZJGUEZVKVQUFPRSIJVPCVLDFVMGHKVPULZOMLVMULZVLULZUGUHUIAVSBVOCTZVPT
+      ZVSVNVTCTZVPTZVRWAAWHWJVSVPABVNDUJUKZTZJCTZVNBWLTZJCTZWHWJAWMWOJCAWMBVMUK
+      WOAEDWLVLVMBNWLULZWGWFAWBDUMUEZPDHMUNUOZQUPAEDWLVLVMBNWQWGWFWSQUQURVJAWBB
+      EUEZVNEUEZWDWNWHUFPQADUSUEZVLEUEZXAAWRXBWSDVBUOAWRXCWSEDVLNWGUTUOEDVMVLNW
+      FVAVCZSBVNCWLDEGHJKMLNWQVDVEAWBXAWTWDWPWJUFPXDQSVNBCWLDEGHJKMLNWQVDVEVFUI
+      AWBWTWCVOGUEZVRWIUFPQRAWBXAWDXEPXDSVNCDEGHJKMLNVGUHVPBCDEGHIVOKWEMLNVHVEA
+      WBVSGUEZVTGUEZWAWKUFPAWBWTWCXFPQRBCDEGHIKMLNVGUHAWBWTWDXGPQSBCDEGHJKMLNVG
+      UHVSVTVPCVLDFVMGHKWEOMLWFWGUGUHVIUR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
