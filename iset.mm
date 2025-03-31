@@ -155213,6 +155213,23 @@ $)
       NFOECFDABGHIPQ $.
   $}
 
+  ${
+    lmodvsubval2.v $e |- V = ( Base ` W ) $.
+    lmodvsubval2.p $e |- .+ = ( +g ` W ) $.
+    lmodvsubval2.m $e |- .- = ( -g ` W ) $.
+    lmodvsubval2.f $e |- F = ( Scalar ` W ) $.
+    lmodvsubval2.s $e |- .x. = ( .s ` W ) $.
+    lmodvsubval2.n $e |- N = ( invg ` F ) $.
+    lmodvsubval2.u $e |- .1. = ( 1r ` F ) $.
+    $( Value of vector subtraction in terms of addition.  (Contributed by NM,
+       31-Mar-2014.)  (Proof shortened by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvsubval2 $p |- ( ( W e. LMod /\ A e. V /\ B e. V )
+          -> ( A .- B ) = ( A .+ ( ( N ` .1. ) .x. B ) ) ) $=
+      ( wcel co cfv clmod cminusg wceq eqid grpsubval 3adant1 lmodvneg1 3adant2
+      w3a oveq2d eqtr4d ) JUARZAIRZBIRZUIZABGSZABJUBTZTZCSZAEHTBDSZCSUMUNUPUSUC
+      ULICJUQGABKLUQUDZMUEUFUOUTURACULUNUTURUCUMDEFHUQIJBKVANOQPUGUHUJUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
