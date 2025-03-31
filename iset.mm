@@ -152204,7 +152204,7 @@ $)
     $( Negation in a ring is the same as right multiplication by -1.
        (Contributed by Jeff Madsen, 19-Jun-2010.)  (Revised by Mario Carneiro,
        2-Jul-2014.) $)
-    rngnegr $p |- ( ph -> ( X .x. ( N ` .1. ) ) = ( N ` X ) ) $=
+    ringnegr $p |- ( ph -> ( X .x. ( N ` .1. ) ) = ( N ` X ) ) $=
       ( cfv co wceq wcel syl syl2anc eqid cplusg c0g crg cgrp ringidcl grpinvcl
       ringgrp ringdi syl13anc grplinv oveq2d ringrz ringridm 3eqtr3rd wb ringcl
       eqtrd syl3anc grpinvid2 mpbird eqcomd ) AGFNZGEFNZDOZAVBVDPZVDGCUANZOZCUB
@@ -152234,11 +152234,11 @@ $)
     $( Negation of a product in a ring.  ( ~ mulneg2 analog.)  (Contributed by
        Jeff Madsen, 19-Jun-2010.)  (Revised by Mario Carneiro, 2-Jul-2014.) $)
     ringmneg2 $p |- ( ph -> ( X .x. ( N ` Y ) ) = ( N ` ( X .x. Y ) ) ) $=
-      ( co cur cfv crg wcel syl rngnegr wceq cgrp ringgrp eqid ringidcl syl2anc
-      grpinvcl ringass syl13anc ringcl syl3anc oveq2d 3eqtr3rd ) AFGDNZCOPZEPZD
-      NZFGUPDNZDNZUNEPFGEPZDNACQRZFBRZGBRZUPBRZUQUSUAKLMACUBRZUOBRZVDAVAVEKCUCS
-      AVAVFKBCUOHUOUDZUESBCEUOHJUGUFBCDFGUPHIUHUIABCDUOEUNHIVGJKAVAVBVCUNBRKLMB
-      CDFGHIUJUKTAURUTFDABCDUOEGHIVGJKMTULUM $.
+      ( co cur cfv crg wcel syl ringnegr wceq ringgrp ringidcl grpinvcl syl2anc
+      cgrp eqid ringass syl13anc ringcl syl3anc oveq2d 3eqtr3rd ) AFGDNZCOPZEPZ
+      DNZFGUPDNZDNZUNEPFGEPZDNACQRZFBRZGBRZUPBRZUQUSUAKLMACUFRZUOBRZVDAVAVEKCUB
+      SAVAVFKBCUOHUOUGZUCSBCEUOHJUDUEBCDFGUPHIUHUIABCDUOEUNHIVGJKAVAVBVCUNBRKLM
+      BCDFGHIUJUKTAURUTFDABCDUOEGHIVGJKMTULUM $.
 
     $( Double negation of a product in a ring.  ( ~ mul2neg analog.)
        (Contributed by Mario Carneiro, 4-Dec-2014.) $)
