@@ -155148,6 +155148,30 @@ $)
       ( clmod wcel cabl ccmn lmodabl ablcmn syl ) ABCADCAECAFAGH $.
   $}
 
+  ${
+    lmodnegadd.v $e |- V = ( Base ` W ) $.
+    lmodnegadd.p $e |- .+ = ( +g ` W ) $.
+    lmodnegadd.t $e |- .x. = ( .s ` W ) $.
+    lmodnegadd.n $e |- N = ( invg ` W ) $.
+    lmodnegadd.r $e |- R = ( Scalar ` W ) $.
+    lmodnegadd.k $e |- K = ( Base ` R ) $.
+    lmodnegadd.i $e |- I = ( invg ` R ) $.
+    lmodnegadd.w $e |- ( ph -> W e. LMod ) $.
+    lmodnegadd.a $e |- ( ph -> A e. K ) $.
+    lmodnegadd.b $e |- ( ph -> B e. K ) $.
+    lmodnegadd.x $e |- ( ph -> X e. V ) $.
+    lmodnegadd.y $e |- ( ph -> Y e. V ) $.
+    $( Distribute negation through addition of scalar products.  (Contributed
+       by NM, 9-Apr-2015.) $)
+    lmodnegadd $p |- ( ph -> ( N ` ( ( A .x. X ) .+ ( B .x. Y ) ) )
+           = ( ( ( I ` A ) .x. X ) .+ ( ( I ` B ) .x. Y ) ) ) $=
+      ( co cfv cabl wcel clmod lmodabl syl lmodvscl syl3anc ablinvadd lmodvsneg
+      wceq oveq12d eqtrd ) ABLFUFZCMFUFZDUFIUGZUTIUGZVAIUGZDUFZBGUGLFUFZCGUGMFU
+      FZDUFAKUHUIZUTJUIZVAJUIZVBVEUQAKUJUIZVHUAKUKULAVKBHUILJUIVIUAUBUDBFEHJKLN
+      RPSUMUNAVKCHUIMJUIVJUAUCUECFEHJKMNRPSUMUNJDKIUTVANOQUOUNAVCVFVDVGDAJBFEHG
+      IKLNRPQSTUAUDUBUPAJCFEHGIKMNRPQSTUAUEUCUPURUS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
