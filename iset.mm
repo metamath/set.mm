@@ -155007,6 +155007,25 @@ $)
       XCVOVPVQVTVRWAWBWCWD $.
   $}
 
+  ${
+    $d x y B $.  $d x y G $.  $d x y K $.  $d x y ph $.  $d x y .x. $.
+    $d y H $.
+    lcomf.f $e |- F = ( Scalar ` W ) $.
+    lcomf.k $e |- K = ( Base ` F ) $.
+    lcomf.s $e |- .x. = ( .s ` W ) $.
+    lcomf.b $e |- B = ( Base ` W ) $.
+    lcomf.w $e |- ( ph -> W e. LMod ) $.
+    lcomf.g $e |- ( ph -> G : I --> K ) $.
+    lcomf.h $e |- ( ph -> H : I --> B ) $.
+    lcomf.i $e |- ( ph -> I e. V ) $.
+    $( A linear-combination sum is a function.  (Contributed by Stefan O'Rear,
+       28-Feb-2015.) $)
+    lcomf $p |- ( ph -> ( G oF .x. H ) : I --> B ) $=
+      ( vx wcel vy clmod cv wa co lmodvscl 3expb sylan inidm off ) ASUAGGGCHBBE
+      FIIAJUBTZSUCZHTZUAUCZBTZUDULUNCUEBTZOUKUMUOUPULCDHBJUNNKMLUFUGUHPQRRGUIUJ
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
