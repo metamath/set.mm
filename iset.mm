@@ -155141,6 +155141,11 @@ $)
     lmodabl $p |- ( W e. LMod -> W e. Abel ) $=
       ( vx vy clmod wcel cbs cfv cplusg eqidd lmodgrp cv eqid lmodcom isabld )
       ADEZBCAFGZAHGZAOPIOQIAJQPABKCKPLQLMN $.
+
+    $( A left module is a commutative monoid under addition.  (Contributed by
+       NM, 7-Jan-2015.) $)
+    lmodcmn $p |- ( W e. LMod -> W e. CMnd ) $=
+      ( clmod wcel cabl ccmn lmodabl ablcmn syl ) ABCADCAECAFAGH $.
   $}
 
 
