@@ -155095,6 +155095,17 @@ $)
       $.
   $}
 
+  ${
+    lmodvsubcl.v $e |- V = ( Base ` W ) $.
+    lmodvsubcl.m $e |- .- = ( -g ` W ) $.
+    $( Closure of vector subtraction.  (Contributed by NM, 31-Mar-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvsubcl $p |- ( ( W e. LMod /\ X e. V /\ Y e. V ) ->
+      ( X .- Y ) e. V ) $=
+      ( clmod wcel cgrp co lmodgrp grpsubcl syl3an1 ) CHICJIDBIEBIDEAKBICLBCADE
+      FGMN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
