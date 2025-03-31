@@ -155204,6 +155204,13 @@ $)
                        ( ( A .+ B ) .- B ) = A ) $=
       ( clmod wcel cgrp co wceq lmodgrp grppncan syl3an1 ) FJKFLKAEKBEKABCMBDMA
       NFOECFDABGHIPQ $.
+
+    $( Cancellation law for vector subtraction (Contributed by NM,
+       19-Apr-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvnpcan $p |- ( ( W e. LMod /\ A e. V /\ B e. V ) ->
+                       ( ( A .- B ) .+ B ) = A ) $=
+      ( clmod wcel cgrp co wceq lmodgrp grpnpcan syl3an1 ) FJKFLKAEKBEKABDMBCMA
+      NFOECFDABGHIPQ $.
   $}
 
 
