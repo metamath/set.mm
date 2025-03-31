@@ -155311,6 +155311,19 @@ $)
       VRWAWCEVSFHVMIJLWSPNMWRXEVJVIVK $.
   $}
 
+  ${
+    lmodsubeq0.v $e |- V = ( Base ` W ) $.
+    lmodsubeq0.o $e |- .0. = ( 0g ` W ) $.
+    lmodsubeq0.m $e |- .- = ( -g ` W ) $.
+    $( If the difference between two vectors is zero, they are equal.
+       (Contributed by NM, 31-Mar-2014.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lmodsubeq0 $p |- ( ( W e. LMod /\ A e. V /\ B e. V )
+                  -> ( ( A .- B ) = .0. <-> A = B ) ) $=
+      ( clmod wcel cgrp co wceq wb lmodgrp grpsubeq0 syl3an1 ) EJKELKADKBDKABCM
+      FNABNOEPDECABFGHIQR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
