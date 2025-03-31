@@ -155073,6 +155073,28 @@ $)
       VLWMVOVNVPVPEFGHVOIWKWLJVHVBVJVKWRWOVRRWSVPFGVRVOIWKWLVIUQVFT $.
   $}
 
+  ${
+    lmodvsneg.b $e |- B = ( Base ` W ) $.
+    lmodvsneg.f $e |- F = ( Scalar ` W ) $.
+    lmodvsneg.s $e |- .x. = ( .s ` W ) $.
+    lmodvsneg.n $e |- N = ( invg ` W ) $.
+    lmodvsneg.k $e |- K = ( Base ` F ) $.
+    lmodvsneg.m $e |- M = ( invg ` F ) $.
+    lmodvsneg.w $e |- ( ph -> W e. LMod ) $.
+    lmodvsneg.x $e |- ( ph -> X e. B ) $.
+    lmodvsneg.r $e |- ( ph -> R e. K ) $.
+    $( Multiplication of a vector by a negated scalar.  (Contributed by Stefan
+       O'Rear, 28-Feb-2015.) $)
+    lmodvsneg $p |- ( ph -> ( N ` ( R .x. X ) ) = ( ( M ` R ) .x. X ) ) $=
+      ( wcel cur cfv cmulr co clmod wceq cgrp crg lmodring syl ringgrp ringidcl
+      eqid grpinvcl syl2anc lmodvsass syl13anc ringnegl oveq1d lmodvscl syl3anc
+      lmodvneg1 3eqtr3rd ) AEUAUBZGUBZCEUCUBZUDZJDUDZVECJDUDZDUDZCGUBZJDUDVIHUB
+      ZAIUETZVEFTZCFTZJBTZVHVJUFQAEUGTZVDFTZVNAEUHTZVQAVMVSQEILUIUJZEUKUJAVSVRV
+      TFEVDOVDUMZULUJFEGVDOPUNUOSRVECDVFEFBIJKLMOVFUMZUPUQAVGVKJDAFEVFVDGCOWBWA
+      PVTSURUSAVMVIBTZVJVLUFQAVMVOVPWCQSRCDEFBIJKLMOUTVADVDEGHBIVIKNLMWAPVBUOVC
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
