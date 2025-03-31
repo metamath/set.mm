@@ -154369,6 +154369,517 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Left modules
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c LMod $.
+  $c .sf $.
+
+  $( Extend class notation with class of all left modules. $)
+  clmod $a class LMod $.
+
+  $( The functionalization of the scalar multiplication operation. $)
+  cscaf $a class .sf $.
+
+  ${
+    $d a f g k p q r s t v w x y $.
+    $( Define the class of all left modules, which are generalizations of left
+       vector spaces.  A left module over a ring is an (Abelian) group
+       (vectors) together with a ring (scalars) and a left scalar product
+       connecting them.  (Contributed by NM, 4-Nov-2013.) $)
+    df-lmod $a |- LMod = { g e. Grp | [. ( Base ` g ) / v ].
+      [. ( +g ` g ) / a ]. [. ( Scalar ` g ) / f ]. [. ( .s ` g ) / s ].
+      [. ( Base ` f ) / k ]. [. ( +g ` f ) / p ]. [. ( .r ` f ) / t ].
+      ( f e. Ring /\ A. q e. k A. r e. k A. x e. v A. w e. v
+                ( ( ( r s w ) e. v
+                 /\ ( r s ( w a x ) ) = ( ( r s w ) a ( r s x ) )
+                 /\ ( ( q p r ) s w ) = ( ( q s w ) a ( r s w ) )
+               ) /\ ( ( ( q t r ) s w ) = ( q s ( r s w ) )
+                 /\ ( ( 1r ` f ) s w ) = w ) ) ) } $.
+
+    $( Define the functionalization of the ` .s ` operator.  This restricts the
+       value of ` .s ` to the stated domain, which is necessary when working
+       with restricted structures, whose operations may be defined on a larger
+       set than the true base.  (Contributed by Mario Carneiro, 5-Oct-2015.) $)
+    df-scaf $a |- .sf = ( g e. _V |-> ( x e. ( Base ` ( Scalar ` g ) ) ,
+      y e. ( Base ` g ) |-> ( x ( .s ` g ) y ) ) ) $.
+  $}
+
+  ${
+    $d a f g k p q r s v w x F $.  $d a f g k p q r s v w x K $.  $d r w x R $.
+    $d a f g k p q r s v w x .+^ $.  $d a f g k p q r s v w x V $.  $d w x X $.
+    $d a f g k p q r s v w x .+ $.  $d q r w x Q $.  $d a f g k p s t v W $.
+    $d w Y $.  $d a f g k p q r s v w x .1. $.
+    $d a f g k p q r s t v w x .X. $.  $d a f g k p q r s v w x .x. $.
+    islmod.v $e |- V = ( Base ` W ) $.
+    islmod.a $e |- .+ = ( +g ` W ) $.
+    islmod.s $e |- .x. = ( .s ` W ) $.
+    islmod.f $e |- F = ( Scalar ` W ) $.
+    islmod.k $e |- K = ( Base ` F ) $.
+    islmod.p $e |- .+^ = ( +g ` F ) $.
+    islmod.t $e |- .X. = ( .r ` F ) $.
+    islmod.u $e |- .1. = ( 1r ` F ) $.
+    $( The predicate "is a left module".  (Contributed by NM, 4-Nov-2013.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    islmod $p |- ( W e. LMod <->
+      ( W e. Grp /\ F e. Ring /\ A. q e. K A. r e. K A. x e. V A. w e. V
+                ( ( ( r .x. w ) e. V
+                 /\ ( r .x. ( w .+ x ) ) = ( ( r .x. w ) .+ ( r .x. x ) )
+                 /\ ( ( q .+^ r ) .x. w ) = ( ( q .x. w ) .+ ( r .x. w ) )
+               ) /\ ( ( ( q .X. r ) .x. w ) = ( q .x. ( r .x. w ) )
+                 /\ ( .1. .x. w ) = w ) ) ) ) $=
+      ( vf vs vv va vp vt vk vg cgrp wcel cv crg co wceq w3a cur cfv wral cmulr
+      wa wsbc cplusg cbs clmod cvv elex wfn basfn funfvex funfni mpan plusgslid
+      wb eqeltrid slotex adantr csca scaslid simplrl simplrr simpr simp3 fveq2d
+      eqtr4di syl3anc sbceq1d simpll mulrslid syl oveq1d eqeq1d anbi1d 2ralbidv
+      oveq anbi2d adantl sbcied eleq1d simp1 eleq2d simp2 oveq2d eqeq12d eqeq2d
+      oveqd 3anbi123d anbi12d raleqbidv sylan9bb syl13anc bitrd sbcbidv anassrs
+      sbceqbid cvsca vscaslid sylancr oveq12d eqtrd 3expa adantll pm5.32i fveq2
+      df-lmod elrab2 3anass 3bitr4i ) KUJUKZUBULZUMUKZLULZBULZUCULZUNZUDULZUKZY
+      LYMAULZUEULZUNZYNUNZYOYLYRYNUNZYSUNZUOZMULZYLUFULZUNZYMYNUNZUUEYMYNUNZYOY
+      SUNZUOZUPZUUEYLUGULZUNZYMYNUNZUUEYOYNUNZUOZYJUQURZYMYNUNZYMUOZVAZVAZBYPUS
+      AYPUSZLUHULZUSMUVDUSZVAZUGYJUTURZVBZUFYJVCURZVBZUHYJVDURZVBZUCEVBZUBHVBZU
+      ECVBZUDJVBZVAYIHUMUKZYLYMEUNZJUKZYLYMYRCUNZEUNZUVRYLYREUNZCUNZUOZUUEYLDUN
+      ZYMEUNZUUEYMEUNZUVRCUNZUOZUPZUUEYLFUNZYMEUNZUUEUVREUNZUOZGYMEUNZYMUOZVAZV
+      AZBJUSAJUSZLIUSZMIUSZVAZVAKVEUKYIUVQUXAUPYIUVPUXBYIKVFUKZUVPUXBVNKUJVGUXC
+      UVPUVQYOJUKZYLUVTYNUNZYOUUBCUNZUOZUUHUUIYOCUNZUOZUPZUWKYMYNUNZUUPUOZGYMYN
+      UNZYMUOZVAZVAZBJUSZAJUSZLUVDUSZMUVDUSZVAZUFDVBZUHIVBZUCEVBZUXBUXCUVOUYDUD
+      JVFUXCJKVDURZVFNVDVFVHZUXCUYEVFUKZVIUYGVFKVDKVDVJVKVLVOUXCYPJUOZVAUVNUYDU
+      ECVFUXCCVFUKUYHUXCCKVCURZVFOKVCVFVMVPVOVQUXCUYHYSCUOZUVNUYDVNUXCUYHUYJVAZ
+      VAZUVMUYDUBHVFUXCHVFUKZUYKUXCHKVRURZVFQKVRVFVSVPVOZVQUYLYJHUOZVAZUVLUYCUC
+      EUYQUVJUYBUHUVKIUYQUYHUYJUYPUVKIUOUXCUYHUYJUYPVTZUXCUYHUYJUYPWAZUYLUYPWBZ
+      UYHUYJUYPUPZUVKHVDURZIVUAYJHVDUYHUYJUYPWCZWDRWEWFUYQUVHUYAUFUVIDUYQUYHUYJ
+      UYPUVIDUOUYRUYSUYTVUAUVIHVCURZDVUAYJHVCVUCWDSWEWFUYQUVHUVFUGFVBZUYAUYQUYH
+      UYJUYPUVHVUEVNUYRUYSUYTVUAUVFUGUVGFVUAUVGHUTURZFVUAYJHUTVUCWDTWEWGWFUYQUX
+      CUYHUYJUYPVUEUYAVNUXCUYKUYPWHUYRUYSUYTUXCVUEYKUULUXLUUTVAZVAZBYPUSZAYPUSZ
+      LUVDUSMUVDUSZVAZVUAUYAUXCUVFVULUGFVFUXCFVUFVFTUXCUYMVUFVFUKUYOHUTVFWIVPWJ
+      VOUUMFUOZUVFVULVNUXCVUMUVEVUKYKVUMUVCVUJMLUVDUVDVUMUVBVUHABYPYPVUMUVAVUGU
+      ULVUMUUQUXLUUTVUMUUOUXKUUPVUMUUNUWKYMYNUUEYLUUMFWOWKWLWMWPWNWNWPWQWRVUAYK
+      UVQVUKUXTVUAYJHUMVUCWSVUAVUJUXRMLUVDUVDVUAVUIUXQAYPJUYHUYJUYPWTZVUAVUHUXP
+      BYPJVUNVUAUULUXJVUGUXOVUAYQUXDUUDUXGUUKUXIVUAYPJYOVUNXAVUAUUAUXEUUCUXFVUA
+      YTUVTYLYNVUAYSCYMYRUYHUYJUYPXBZXFXCVUAYSCYOUUBVUOXFXDVUAUUJUXHUUHVUAYSCUU
+      IYOVUOXFXEXGVUAUUTUXNUXLVUAUUSUXMYMVUAUURGYMYNVUAUURHUQURGVUAYJHUQVUCWDUA
+      WEWKWLWPXHXIXIWNXHXJXKXLXOXOXMWRXNWRWRUXCUYCUXBUCEVFUXCEKXPURZVFPKXPVFXQV
+      PVOUXCYNEUOZVAUYBUXBUHIVFUXCIVFUKVUQUXCIVUBVFRUXCUYFUYMVUBVFUKZVIUYOVURVF
+      HVDHVDVJVKXRVOVQUXCVUQUVDIUOZUYBUXBVNUXCVUQVUSVAZVAUYAUXBUFDVFUXCDVFUKVUT
+      UXCDVUDVFSUXCUYMVUDVFUKUYOHVCVFVMVPWJVOVQVUTUUFDUOZUYAUXBVNZUXCVUQVUSVVAV
+      VBVUQVUSVVAUPZUXTUXAUVQVVCUXSUWTMUVDIVUQVUSVVAXBZVVCUXRUWSLUVDIVVDVVCUXPU
+      WRABJJVVCUXJUWJUXOUWQVVCUXDUVSUXGUWDUXIUWIVVCYOUVRJVVCYNEYLYMVUQVUSVVAWTZ
+      XFZWSVVCUXEUWAUXFUWCVVCYNEYLUVTVVEXFVVCYOUVRUUBUWBCVVFVVCYNEYLYRVVEXFXSXD
+      VVCUUHUWFUXHUWHVVCUUHUWEYMYNUNUWFVVCUUGUWEYMYNVVCUUFDUUEYLVUQVUSVVAWCXFWK
+      VVCYNEUWEYMVVEXFXTVVCUUIUWGYOUVRCVVCYNEUUEYMVVEXFVVFXSXDXGVVCUXLUWNUXNUWP
+      VVCUXKUWLUUPUWMVVCYNEUWKYMVVEXFVVCUUPUUEUVRYNUNUWMVVCYOUVRUUEYNVVFXCVVCYN
+      EUUEUVRVVEXFXTXDVVCUXMUWOYMVVCYNEGYMVVEXFWLXHXHWNXIXIWPYAYBWRXNWRWRXLWJYC
+      UVLUCUIULZXPURZVBZUBVVGVRURZVBZUEVVGVCURZVBZUDVVGVDURZVBUVPUIKUJVEVVGKUOZ
+      VVMUVOUDVVNJVVOVVNUYEJVVGKVDYDNWEVVOVVKUVNUEVVLCVVOVVLUYICVVGKVCYDOWEVVOV
+      VIUVMUBVVJHVVOVVJUYNHVVGKVRYDQWEVVOUVLUCVVHEVVOVVHVUPEVVGKXPYDPWEWGXOXOXO
+      ABUDUGUBUIUHUCLMUFUEYEYFYIUVQUXAYGYH $.
+
+    $( Lemma for properties of a left module.  (Contributed by NM, 8-Dec-2013.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodlema $p |- ( ( W e. LMod /\ ( Q e. K /\ R e. K )
+          /\ ( X e. V /\ Y e. V ) ) ->
+                ( ( ( R .x. Y ) e. V
+                 /\ ( R .x. ( Y .+ X ) ) = ( ( R .x. Y ) .+ ( R .x. X ) )
+                 /\ ( ( Q .+^ R ) .x. Y ) = ( ( Q .x. Y ) .+ ( R .x. Y ) )
+               ) /\ ( ( ( Q .X. R ) .x. Y ) = ( Q .x. ( R .x. Y ) )
+                 /\ ( .1. .x. Y ) = Y ) ) ) $=
+      ( vw vx vr vq clmod wcel wa co wceq w3a cv wral cgrp islmod simp3bi oveq1
+      crg oveq1d eqeq12d 3anbi3d anbi1d anbi12d 2ralbidv eleq1d oveq2 3anbi123d
+      oveq12d oveq2d rspc2v mpan9 3anbi2d id syl5com 3impia ) KUFUGZCIUGDIUGUHZ
+      LJUGMJUGUHZDMEUIZJUGZDMLAUIZEUIZVSDLEUIZAUIZUJZCDBUIZMEUIZCMEUIZVSAUIZUJZ
+      UKZCDFUIZMEUIZCVSEUIZUJZGMEUIZMUJZUHZUHZVPVQUHDUBULZEUIZJUGZDWTUCULZAUIZE
+      UIZXADXCEUIZAUIZUJZWFWTEUIZCWTEUIZXAAUIZUJZUKZWLWTEUIZCXAEUIZUJZGWTEUIZWT
+      UJZUHZUHZUBJUMUCJUMZVRWSVPUDULZWTEUIZJUGZYBXDEUIZYCYBXCEUIZAUIZUJZUEULZYB
+      BUIZWTEUIZYIWTEUIZYCAUIZUJZUKZYIYBFUIZWTEUIZYIYCEUIZUJZXRUHZUHZUBJUMUCJUM
+      ZUDIUMUEIUMZVQYAVPKUNUGHURUGUUCUCUBABEFGHIJKUDUENOPQRSTUAUOUPUUBYAYDYHCYB
+      BUIZWTEUIZXJYCAUIZUJZUKZCYBFUIZWTEUIZCYCEUIZUJZXRUHZUHZUBJUMUCJUMUEUDCDII
+      YICUJZUUAUUNUCUBJJUUOYOUUHYTUUMUUOYNUUGYDYHUUOYKUUEYMUUFUUOYJUUDWTEYICYBB
+      UQUSUUOYLXJYCAYICWTEUQUSUTVAUUOYSUULXRUUOYQUUJYRUUKUUOYPUUIWTEYICYBFUQUSY
+      ICYCEUQUTVBVCVDYBDUJZUUNXTUCUBJJUUPUUHXMUUMXSUUPYDXBYHXHUUGXLUUPYCXAJYBDW
+      TEUQZVEUUPYEXEYGXGYBDXDEUQUUPYCXAYFXFAUUQYBDXCEUQVHUTUUPUUEXIUUFXKUUPUUDW
+      FWTEYBDCBVFUSUUPYCXAXJAUUQVIUTVGUUPUULXPXRUUPUUJXNUUKXOUUPUUIWLWTEYBDCFVF
+      USUUPYCXACEUUQVIUTVBVCVDVJVKXTWSXBDWTLAUIZEUIZXAWCAUIZUJZXLUKZXSUHUCUBLMJ
+      JXCLUJZXMUVBXSUVCXHUVAXBXLUVCXEUUSXGUUTUVCXDUURDEXCLWTAVFVIUVCXFWCXAAXCLD
+      EVFVIUTVLVBWTMUJZUVBWKXSWRUVDXBVTUVAWEXLWJUVDXAVSJWTMDEVFZVEUVDUUSWBUUTWD
+      UVDUURWADEWTMLAUQVIUVDXAVSWCAUVEUSUTUVDXIWGXKWIWTMWFEVFUVDXJWHXAVSAWTMCEV
+      FUVEVHUTVGUVDXPWOXRWQUVDXNWMXOWNWTMWLEVFUVDXAVSCEUVEVIUTUVDXQWPWTMWTMGEVF
+      UVDVMUTVCVCVJVNVO $.
+  $}
+
+  ${
+    $d y z .+^ $.  $d r u w x y z B $.  $d r u w x y z ph $.  $d u w x y z V $.
+    $d x y z .+ $.  $d r u w x W $.  $d x y z .x. $.  $d y z .X. $.
+    $d x .1. $.
+    islmodd.v $e |- ( ph -> V = ( Base ` W ) ) $.
+    islmodd.a $e |- ( ph -> .+ = ( +g ` W ) ) $.
+    islmodd.f $e |- ( ph -> F = ( Scalar ` W ) ) $.
+    islmodd.s $e |- ( ph -> .x. = ( .s ` W ) ) $.
+    islmodd.b $e |- ( ph -> B = ( Base ` F ) ) $.
+    islmodd.p $e |- ( ph -> .+^ = ( +g ` F ) ) $.
+    islmodd.t $e |- ( ph -> .X. = ( .r ` F ) ) $.
+    islmodd.u $e |- ( ph -> .1. = ( 1r ` F ) ) $.
+    islmodd.r $e |- ( ph -> F e. Ring ) $.
+    $( Group operations $)
+    islmodd.l $e |- ( ph -> W e. Grp ) $.
+    $( Scalar product operation $)
+    islmodd.w $e |- ( ( ph /\ x e. B /\ y e. V ) -> ( x .x. y ) e. V ) $.
+    islmodd.c $e |- ( ( ph /\ ( x e. B /\ y e. V /\ z e. V ) )
+        -> ( x .x. ( y .+ z ) ) = ( ( x .x. y ) .+ ( x .x. z ) ) ) $.
+    islmodd.d $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. V ) )
+        -> ( ( x .+^ y ) .x. z ) = ( ( x .x. z ) .+ ( y .x. z ) ) ) $.
+    islmodd.e $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. V ) )
+        -> ( ( x .X. y ) .x. z ) = ( x .x. ( y .x. z ) ) ) $.
+    islmodd.g $e |- ( ( ph /\ x e. V ) -> ( .1. .x. x ) = x ) $.
+    $( Properties that determine a left module.  See note in ~ isgrpd2
+       regarding the ` ph ` on hypotheses that name structure components.
+       (Contributed by Mario Carneiro, 22-Jun-2014.) $)
+    islmodd $p |- ( ph -> W e. LMod ) $=
+      ( vr vw vu cgrp wcel csca cfv crg cv cvsca co cbs cplusg w3a cmulr cur wa
+      wceq wral clmod eqeltrrd 3expb ralrimivva weq oveq1 eleq1d oveq2 ad2ant2l
+      wi rspc2v ralrimivvva oveq12d eqeq12d oveq2d oveq1d rspc3v 3com23 adantll
+      mpan9 simpll 3exp2 imp43 sylan2 simprlr simprrr syl2anc 3jca ralrimiva id
+      rspcv ad2antll jca32 anassrs eqtrd oveqd eleq12d eqidd oveq123d 3anbi123d
+      mpd fveq2d eqeq1d anbi12d raleqbidv mpbid eqid islmod syl3anbrc ) AMULUMM
+      UNUOZUPUMUIUQZUJUQZMURUOZUSZMUTUOZUMZXRXSUKUQZMVAUOZUSZXTUSZYAXRYDXTUSZYE
+      USZVFZBUQZXRXQVAUOZUSZXSXTUSZYKXSXTUSZYAYEUSZVFZVBZYKXRXQVCUOZUSZXSXTUSZY
+      KYAXTUSZVFZXQVDUOZXSXTUSZXSVFZVEZVEZUJYBVGZUKYBVGZUIXQUTUOZVGZBUUKVGZMVHU
+      MUCAKXQUPPUBVIAXRXSHUSZLUMZXRXSYDFUSZHUSZUUNXRYDHUSZFUSZVFZYKXRGUSZXSHUSZ
+      YKXSHUSZUUNFUSZVFZVBZYKXRIUSZXSHUSZYKUUNHUSZVFZJXSHUSZXSVFZVEZVEZUJLVGZUK
+      LVGZUIEVGZBEVGUUMAUVPBUIEEAYKEUMZXREUMZVEZVEUVNUKUJLLAUVTYDLUMZXSLUMZVEZU
+      VNAUVTUWCVEZVEZUVFUVJUVLUWEUUOUUTUVEAYKCUQZHUSZLUMZCLVGBEVGZUWDUUOAUWHBCE
+      LAUVRUWFLUMUWHUDVJVKUVSUWBUWIUUOVQUVRUWAUWHUUOXRUWFHUSZLUMBCXRXSELBUIVLZU
+      WGUWJLYKXRUWFHVMZVNCUJVLZUWJUUNLUWFXSXRHVOZVNVRVPWGAYKUWFDUQZFUSZHUSZUWGY
+      KUWOHUSZFUSZVFZDLVGCLVGBEVGZUWDUUTAUWTBCDELLUEVSUVSUWCUXAUUTVQZUVRUVSUWAU
+      WBUXBUVSUWBUWAUXBUWTUUTXRUWPHUSZUWJXRUWOHUSZFUSZVFXRXSUWOFUSZHUSZUUNUXDFU
+      SZVFBCDXRXSYDELLUWKUWQUXCUWSUXEYKXRUWPHVMUWKUWGUWJUWRUXDFUWLYKXRUWOHVMVTW
+      AUWMUXCUXGUXEUXHUWMUWPUXFXRHUWFXSUWOFVMWBUWMUWJUUNUXDFUWNWCWADUKVLZUXGUUQ
+      UXHUUSUXIUXFUUPXRHUWOYDXSFVOWBUXIUXDUURUUNFUWOYDXRHVOWBWAWDWEVJWFWGUWEYKU
+      WFGUSZUWOHUSZUWRUWFUWOHUSZFUSZVFZDLVGCEVGZUVEUWDAUVRUXOUVRUVSUWCWHZAUVRVE
+      ZUXNCDELAUVRUWFEUMZUWOLUMZUXNAUVRUXRUXSUXNUFWIWJVKWKUWEUVSUWBUXOUVEVQAUVR
+      UVSUWCWLZAUVTUWAUWBWMZUXNUVEUVAUWOHUSZUWRUXDFUSZVFCDXRXSELCUIVLZUXKUYBUXM
+      UYCUYDUXJUVAUWOHUWFXRYKGVOWCUYDUXLUXDUWRFUWFXRUWOHVMZWBWADUJVLZUYBUVBUYCU
+      VDUWOXSUVAHVOUYFUWRUVCUXDUUNFUWOXSYKHVOUWOXSXRHVOZVTWAVRWNXHWOUWEYKUWFIUS
+      ZUWOHUSZYKUXLHUSZVFZDLVGCEVGZUVJUWDAUVRUYLUXPUXQUYKCDELAUVRUXRUXSUYKAUVRU
+      XRUXSUYKUGWIWJVKWKUWEUVSUWBUYLUVJVQUXTUYAUYKUVJUVGUWOHUSZYKUXDHUSZVFCDXRX
+      SELUYDUYIUYMUYJUYNUYDUYHUVGUWOHUWFXRYKIVOWCUYDUXLUXDYKHUYEWBWAUYFUYMUVHUY
+      NUVIUWOXSUVGHVOUYFUXDUUNYKHUYGWBWAVRWNXHAJYKHUSZYKVFZBLVGZUWDUVLAUYPBLUHW
+      PUWBUYQUVLVQUVTUWAUYPUVLBXSLBUJVLZUYOUVKYKXSYKXSJHVOUYRWQWAWRWSWGWTXAVKVK
+      AUVQUULBEUUKAEKUTUOUUKRAKXQUTPXIXBZAUVPUUJUIEUUKUYSAUVOUUIUKLYBNAUVNUUHUJ
+      LYBNAUVFYRUVMUUGAUUOYCUUTYJUVEYQAUUNYALYBAHXTXRXSQXCZNXDAUUQYGUUSYIAXRXRU
+      UPYFHXTQAXRXEAFYEXSYDOXCXFAUUNYAUURYHFYEOUYTAHXTXRYDQXCXFWAAUVBYNUVDYPAUV
+      AYMXSXSHXTQAGYLYKXRAGKVAUOYLSAKXQVAPXIXBXCAXSXEZXFAUVCYOUUNYAFYEOAHXTYKXS
+      QXCUYTXFWAXGAUVJUUCUVLUUFAUVHUUAUVIUUBAUVGYTXSXSHXTQAIYSYKXRAIKVCUOYSTAKX
+      QVCPXIXBXCVUAXFAYKYKUUNYAHXTQAYKXEUYTXFWAAUVKUUEXSAJUUDXSXSHXTQAJKVDUOUUD
+      UAAKXQVDPXIXBVUAXFXJXKXKXLXLXLXLXMUKUJYEYLXTYSUUDXQUUKYBMUIBYBXNYEXNXTXNX
+      QXNUUKXNYLXNYSXNUUDXNXOXP $.
+  $}
+
+  ${
+    $d q r w x F $.  $d q r w x W $.
+    $( A left module is a group.  (Contributed by NM, 8-Dec-2013.)  (Revised by
+       Mario Carneiro, 25-Jun-2014.) $)
+    lmodgrp $p |- ( W e. LMod -> W e. Grp ) $=
+      ( vr vw vx vq clmod wcel cgrp csca cfv crg cv cvsca co cbs cplusg wceq wa
+      wral eqid w3a cmulr cur islmod simp1bi ) AFGAHGAIJZKGBLZCLZAMJZNZAOJZGUGU
+      HDLZAPJZNUINUJUGULUINUMNQELZUGUFPJZNUHUINUNUHUINUJUMNQUAUNUGUFUBJZNUHUINU
+      NUJUINQUFUCJZUHUINUHQRRCUKSDUKSBUFOJZSEURSDCUMUOUIUPUQUFURUKABEUKTUMTUITU
+      FTURTUOTUPTUQTUDUE $.
+
+    lmodring.1 $e |- F = ( Scalar ` W ) $.
+    $( The scalar component of a left module is a ring.  (Contributed by NM,
+       8-Dec-2013.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodring $p |- ( W e. LMod -> F e. Ring ) $=
+      ( vr vw vx vq clmod wcel cgrp crg cv cfv co cbs cplusg wceq wa wral eqid
+      cvsca w3a cmulr cur islmod simp2bi ) BHIBJIAKIDLZELZBUAMZNZBOMZIUGUHFLZBP
+      MZNUINUJUGULUINUMNQGLZUGAPMZNUHUINUNUHUINUJUMNQUBUNUGAUCMZNUHUINUNUJUINQA
+      UDMZUHUINUHQRREUKSFUKSDAOMZSGURSFEUMUOUIUPUQAURUKBDGUKTUMTUITCURTUOTUPTUQ
+      TUEUF $.
+
+    $( The scalar component of a left module is an additive group.
+       (Contributed by NM, 8-Dec-2013.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lmodfgrp $p |- ( W e. LMod -> F e. Grp ) $=
+      ( clmod wcel crg cgrp lmodring ringgrp syl ) BDEAFEAGEABCHAIJ $.
+  $}
+
+  ${
+    lmodgrpd.1 $e |- ( ph -> W e. LMod ) $.
+    $( A left module is a group.  (Contributed by SN, 16-May-2024.) $)
+    lmodgrpd $p |- ( ph -> W e. Grp ) $=
+      ( clmod wcel cgrp lmodgrp syl ) ABDEBFECBGH $.
+  $}
+
+  ${
+    lmodbn0.b $e |- B = ( Base ` W ) $.
+    $( The base set of a left module is nonempty.  It is also inhabited (by
+       ~ lmodgrp and ~ grpidcl ).  (Contributed by NM, 8-Dec-2013.)  (Revised
+       by Mario Carneiro, 19-Jun-2014.) $)
+    lmodbn0 $p |- ( W e. LMod -> B =/= (/) ) $=
+      ( clmod wcel cgrp c0 wne lmodgrp grpbn0 syl ) BDEBFEAGHBIABCJK $.
+  $}
+
+  ${
+    lmodacl.f $e |- F = ( Scalar ` W ) $.
+    lmodacl.k $e |- K = ( Base ` F ) $.
+    lmodacl.p $e |- .+ = ( +g ` F ) $.
+    $( Closure of ring addition for a left module.  (Contributed by NM,
+       14-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodacl $p |- ( ( W e. LMod /\ X e. K /\ Y e. K ) -> ( X .+ Y ) e. K ) $=
+      ( clmod wcel cgrp co lmodfgrp grpcl syl3an1 ) DJKBLKECKFCKEFAMCKBDGNCABEF
+      HIOP $.
+  $}
+
+  ${
+    lmodmcl.f $e |- F = ( Scalar ` W ) $.
+    lmodmcl.k $e |- K = ( Base ` F ) $.
+    lmodmcl.t $e |- .x. = ( .r ` F ) $.
+    $( Closure of ring multiplication for a left module.  (Contributed by NM,
+       14-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodmcl $p |- ( ( W e. LMod /\ X e. K /\ Y e. K ) -> ( X .x. Y ) e. K ) $=
+      ( clmod wcel crg co lmodring ringcl syl3an1 ) DJKBLKECKFCKEFAMCKBDGNCBAEF
+      HIOP $.
+  $}
+
+  ${
+    lmodsn0.f $e |- F = ( Scalar ` W ) $.
+    lmodsn0.b $e |- B = ( Base ` F ) $.
+    $( The set of scalars in a left module is nonempty.  It is also inhabited,
+       by ~ lmodfgrp and ~ grpidcl .  (Contributed by NM, 8-Dec-2013.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodsn0 $p |- ( W e. LMod -> B =/= (/) ) $=
+      ( clmod wcel cgrp c0 wne lmodfgrp grpbn0 syl ) CFGBHGAIJBCDKABELM $.
+  $}
+
+  ${
+    lmodvacl.v $e |- V = ( Base ` W ) $.
+    lmodvacl.a $e |- .+ = ( +g ` W ) $.
+    $( Closure of vector addition for a left module.  (Contributed by NM,
+       8-Dec-2013.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvacl $p |- ( ( W e. LMod /\ X e. V /\ Y e. V ) -> ( X .+ Y ) e. V ) $=
+      ( clmod wcel cgrp co lmodgrp grpcl syl3an1 ) CHICJIDBIEBIDEAKBICLBACDEFGM
+      N $.
+
+    $( Left module vector sum is associative.  (Contributed by NM,
+       10-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodass $p |- ( ( W e. LMod /\ ( X e. V /\ Y e. V /\ Z e. V ) ) ->
+                    ( ( X .+ Y ) .+ Z ) = ( X .+ ( Y .+ Z ) ) ) $=
+      ( clmod wcel cgrp w3a co wceq lmodgrp grpass sylan ) CIJCKJDBJEBJFBJLDEAM
+      FAMDEFAMAMNCOBACDEFGHPQ $.
+
+    $( Left cancellation law for vector sum.  (Contributed by NM, 12-Jan-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodlcan $p |- ( ( W e. LMod /\ ( X e. V /\ Y e. V /\ Z e. V ) ) ->
+                     ( ( Z .+ X ) = ( Z .+ Y ) <-> X = Y ) ) $=
+      ( clmod wcel cgrp w3a co wceq wb lmodgrp grplcan sylan ) CIJCKJDBJEBJFBJL
+      FDAMFEAMNDENOCPBACDEFGHQR $.
+  $}
+
+  ${
+    lmodvscl.v $e |- V = ( Base ` W ) $.
+    lmodvscl.f $e |- F = ( Scalar ` W ) $.
+    lmodvscl.s $e |- .x. = ( .s ` W ) $.
+    lmodvscl.k $e |- K = ( Base ` F ) $.
+    $( Closure of scalar product for a left module.  (Contributed by NM,
+       8-Dec-2013.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvscl $p |- ( ( W e. LMod /\ R e. K /\ X e. V ) -> ( R .x. X ) e. V ) $=
+      ( wcel wa co pm4.24 w3a cplusg cfv wceq eqid clmod biid cur simpld simp1d
+      cmulr lmodlema syl3anb ) FUALZUIADLZUJUJMZGELZULULMZAGBNZELZUIUBUJOULOUIU
+      KUMPZUOAGGFQRZNBNUNUNUQNZSZAACQRZNGBNURSZUPUOUSVAPAACUFRZNGBNAUNBNSCUCRZG
+      BNGSMUQUTAABVBVCCDEFGGHUQTJIKUTTVBTVCTUGUDUEUH $.
+  $}
+
+  ${
+    $d w x y B $.  $d w x y K $.  $d w x y .x. $.  $d w x y W $.  $d x y X $.
+    $d x y Y $.  $d V x y $.
+    scaffval.b $e |- B = ( Base ` W ) $.
+    scaffval.f $e |- F = ( Scalar ` W ) $.
+    scaffval.k $e |- K = ( Base ` F ) $.
+    scaffval.a $e |- .xb = ( .sf ` W ) $.
+    ${
+      scaffval.s $e |- .x. = ( .s ` W ) $.
+      $( The scalar multiplication operation as a function.  (Contributed by
+         Mario Carneiro, 5-Oct-2015.)  (Proof shortened by AV, 2-Mar-2024.) $)
+      scaffvalg $p |- ( W e. V ->
+          .xb = ( x e. K , y e. B |-> ( x .x. y ) ) ) $=
+        ( wcel cfv cvv csca cbs eqtr4di vw cscaf cv co cmpo cvsca df-scaf fveq2
+        wceq elex fveq2d oveqd mpoeq123dv basfn scaslid slotex eqeltrid funfvex
+        wfn funfni sylancr mpan mpoexga syl2anc fvmptd3 syl eqtrid ) IHOZDIUBPZ
+        ABGCAUCZBUCZEUDZUEZMVHIQOZVIVMUIIHUJVNUAIABUAUCZRPZSPZVOSPZVJVKVOUFPZUD
+        ZUEVMQUBQABUAUGVOIUIZABVQVRVTGCVLWAVQFSPZGWAVPFSWAVPIRPZFVOIRUHKTUKLTWA
+        VRISPZCVOISUHJTWAVSEVJVKWAVSIUFPEVOIUFUHNTULUMIQUJVNGQOCQOVMQOVNGWBQLVN
+        SQUSZFQOWBQOZUNVNFWCQKIRQUOUPUQWFQFSFSURUTVAUQVNCWDQJWEVNWDQOZUNWGQISIS
+        URUTVBUQABGCVLQQVCVDVEVFVG $.
+
+      $( The scalar multiplication operation as a function.  (Contributed by
+         Mario Carneiro, 5-Oct-2015.) $)
+      scafvalg $p |- ( ( W e. V /\ X e. K /\ Y e. B )
+          -> ( X .xb Y ) = ( X .x. Y ) ) $=
+        ( vx vy wcel cv cvv wceq w3a co cmpo scaffvalg 3ad2ant1 wa oveq12 simp2
+        adantl simp3 cvsca cfv vscaslid slotex eqeltrid ovexg syl3anc ovmpod )
+        GFQZHEQZIAQZUAZOPHIEAORZPRZCUBZHICUBZBSUSUTBOPEAVEUCTVAOPABCDEFGJKLMNUD
+        UEVCHTVDITUFVEVFTVBVCHVDICUGUIUSUTVAUHZUSUTVAUJZVBUTCSQZVAVFSQVGUSUTVIV
+        AUSCGUKULSNGUKFUMUNUOUEVHHICESAUPUQUR $.
+
+      $( If the scalar multiplication operation is already a function, the
+         functionalization of it is equal to the original operation.
+         (Contributed by Mario Carneiro, 5-Oct-2015.) $)
+      scafeqg $p |- ( ( W e. V /\ .x. Fn ( K X. B ) ) -> .xb = .x. ) $=
+        ( vx vy wcel cxp wfn wa cv wceq co cmpo scaffvalg adantr fnovim adantl
+        eqtr4d ) GFOZCEAPQZRBMNEAMSNSCUAUBZCUHBUJTUIMNABCDEFGHIJKLUCUDUICUJTUHM
+        NEACUEUFUG $.
+    $}
+
+    $( The scalar multiplication operation is a function.  (Contributed by
+       Mario Carneiro, 5-Oct-2015.) $)
+    scaffng $p |- ( W e. V -> .xb Fn ( K X. B ) ) $=
+      ( vx vy wcel wfn cv cvsca cvv wral vex ralrimivw cxp cfv co cmpo vscaslid
+      slotex a1i ovexg mp3an2i eqid fnmpo syl scaffvalg fneq1d mpbird ) FEMZBDA
+      UAZNKLDAKOZLOZFPUBZUCZUDZUQNZUPVAQMZLARZKDRVCUPVEKDUPVDLAURQMUPUTQMUSQMZV
+      DKSFPEUEUFVFUPLSUGURUSUTQQQUHUITTKLDAVAVBQVBUJUKULUPUQBVBKLABUTCDEFGHIJUT
+      UJUMUNUO $.
+
+    $( The scalar multiplication operation is a function.  (Contributed by
+       Mario Carneiro, 5-Oct-2015.) $)
+    lmodscaf $p |- ( W e. LMod -> .xb : ( K X. B ) --> B ) $=
+      ( vx vy clmod wcel cxp wf cv cvsca cfv wral eqid cmpo lmodvscl ralrimivva
+      co 3expb fmpo sylib scaffvalg feq1d mpbird ) ELMZDANZABOULAJKDAJPZKPZEQRZ
+      UDZUAZOZUKUPAMZKASJDSURUKUSJKDAUKUMDMUNAMUSUMUOCDAEUNFGUOTZHUBUEUCJKDAUPA
+      UQUQTUFUGUKULABUQJKABUOCDLEFGHIUTUHUIUJ $.
+  $}
+
+  ${
+    lmodvsdi.v $e |- V = ( Base ` W ) $.
+    lmodvsdi.a $e |- .+ = ( +g ` W ) $.
+    lmodvsdi.f $e |- F = ( Scalar ` W ) $.
+    lmodvsdi.s $e |- .x. = ( .s ` W ) $.
+    lmodvsdi.k $e |- K = ( Base ` F ) $.
+    $( Distributive law for scalar product (left-distributivity).  (Contributed
+       by NM, 10-Jan-2014.)  (Revised by Mario Carneiro, 22-Sep-2015.) $)
+    lmodvsdi $p |- ( ( W e. LMod /\ ( R e. K /\ X e. V /\ Y e. V ) ) ->
+                     ( R .x. ( X .+ Y ) ) = ( ( R .x. X ) .+ ( R .x. Y ) ) ) $=
+      ( wcel co wceq wa cfv eqid clmod wi w3a cplusg cur lmodlema simpld simp2d
+      cmulr 3expia anabsan2 exp4b com34 3imp2 ) GUAOZBEOZHFOZIFOZBHIAPCPBHCPZBI
+      CPAPQZUOUPURUQUTUOUPURUQUTUOUPURUQRZUTUBUOUPUPRZVAUTUOVBVAUCZUSFOZUTBBDUD
+      SZPHCPUSUSAPQZVCVDUTVFUCBBDUISZPHCPBUSCPQDUESZHCPHQRAVEBBCVGVHDEFGIHJKMLN
+      VETVGTVHTUFUGUHUJUKULUMUN $.
+  $}
+
+  ${
+    lmodvsdir.v $e |- V = ( Base ` W ) $.
+    lmodvsdir.a $e |- .+ = ( +g ` W ) $.
+    lmodvsdir.f $e |- F = ( Scalar ` W ) $.
+    lmodvsdir.s $e |- .x. = ( .s ` W ) $.
+    lmodvsdir.k $e |- K = ( Base ` F ) $.
+    lmodvsdir.p $e |- .+^ = ( +g ` F ) $.
+    $( Distributive law for scalar product (right-distributivity).
+       (Contributed by NM, 10-Jan-2014.)  (Revised by Mario Carneiro,
+       22-Sep-2015.) $)
+    lmodvsdir $p |- ( ( W e. LMod /\ ( Q e. K /\ R e. K /\ X e. V ) ) ->
+                    ( ( Q .+^ R ) .x. X ) = ( ( Q .x. X ) .+ ( R .x. X ) ) ) $=
+      ( wcel co wceq wa clmod w3a cmulr cfv cur lmodlema simpld simp3d anabsan2
+      eqid 3expa exp42 3imp2 ) IUAQZCGQZDGQZJHQZCDBRJERCJERDJERZARSZUNUOUPUQUSU
+      NUOUPTZTUQUSUNUTUQUQTZUSUNUTVAUBZURHQZDJJARERURURARSZUSVBVCVDUSUBCDFUCUDZ
+      RJERCURERSFUEUDZJERJSTABCDEVEVFFGHIJJKLNMOPVEUJVFUJUFUGUHUKUIULUM $.
+  $}
+
+  ${
+    lmodvsass.v $e |- V = ( Base ` W ) $.
+    lmodvsass.f $e |- F = ( Scalar ` W ) $.
+    lmodvsass.s $e |- .x. = ( .s ` W ) $.
+    lmodvsass.k $e |- K = ( Base ` F ) $.
+    lmodvsass.t $e |- .X. = ( .r ` F ) $.
+    $( Associative law for scalar product.  (Contributed by NM, 10-Jan-2014.)
+       (Revised by Mario Carneiro, 22-Sep-2015.) $)
+    lmodvsass $p |- ( ( W e. LMod /\ ( Q e. K /\ R e. K /\ X e. V ) ) ->
+                      ( ( Q .X. R ) .x. X ) = ( Q .x. ( R .x. X ) ) ) $=
+      ( wcel co wceq wa cfv eqid clmod w3a cplusg cur lmodlema simprld anabsan2
+      3expa exp42 3imp2 ) HUAOZAFOZBFOZIGOZABDPICPABICPZCPQZUKULUMUNUPUKULUMRZR
+      UNUPUKUQUNUNRZUPUKUQURUBUOGOBIIHUCSZPCPUOUOUSPQABEUCSZPICPAICPUOUSPQUBUPE
+      UDSZICPIQUSUTABCDVAEFGHIIJUSTLKMUTTNVATUEUFUHUGUIUJ $.
+  $}
+
+  ${
+    lmod0cl.f $e |- F = ( Scalar ` W ) $.
+    lmod0cl.k $e |- K = ( Base ` F ) $.
+    lmod0cl.z $e |- .0. = ( 0g ` F ) $.
+    $( The ring zero in a left module belongs to the set of scalars.
+       (Contributed by NM, 11-Jan-2014.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lmod0cl $p |- ( W e. LMod -> .0. e. K ) $=
+      ( clmod wcel crg lmodring ring0cl syl ) CHIAJIDBIACEKBADFGLM $.
+  $}
+
+  ${
+    lmod1cl.f $e |- F = ( Scalar ` W ) $.
+    lmod1cl.k $e |- K = ( Base ` F ) $.
+    lmod1cl.u $e |- .1. = ( 1r ` F ) $.
+    $( The ring unity in a left module belongs to the set of scalars.
+       (Contributed by NM, 11-Jan-2014.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lmod1cl $p |- ( W e. LMod -> .1. e. K ) $=
+      ( clmod wcel crg lmodring ringidcl syl ) DHIBJIACIBDEKCBAFGLM $.
+  $}
+
+  ${
+    lmodvs1.v $e |- V = ( Base ` W ) $.
+    lmodvs1.f $e |- F = ( Scalar ` W ) $.
+    lmodvs1.s $e |- .x. = ( .s ` W ) $.
+    lmodvs1.u $e |- .1. = ( 1r ` F ) $.
+    $( Scalar product with the ring unity.  (Contributed by NM, 10-Jan-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvs1 $p |- ( ( W e. LMod /\ X e. V ) -> ( .1. .x. X ) = X ) $=
+      ( clmod wcel wa cbs cfv co wceq eqid w3a cplusg simpl lmod1cl simpr cmulr
+      adantr lmodlema simprrd syl122anc ) EKLZFDLZMUIBCNOZLZULUJUJBFAPZFQZUIUJU
+      AUIULUJBCUKEHUKRZJUBUEZUPUIUJUCZUQUIULULMUJUJMSUMDLBFFETOZPAPUMUMURPZQBBC
+      TOZPFAPUSQSBBCUDOZPFAPBUMAPQUNURUTBBAVABCUKDEFFGURRIHUOUTRVARJUFUGUH $.
+  $}
+
+  ${
+    0vcl.v $e |- V = ( Base ` W ) $.
+    0vcl.z $e |- .0. = ( 0g ` W ) $.
+    $( The zero vector is a vector.  (Contributed by NM, 10-Jan-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmod0vcl $p |- ( W e. LMod -> .0. e. V ) $=
+      ( clmod wcel cgrp lmodgrp grpidcl syl ) BFGBHGCAGBIABCDEJK $.
+  $}
+
+  ${
+    0vlid.v $e |- V = ( Base ` W ) $.
+    0vlid.a $e |- .+ = ( +g ` W ) $.
+    0vlid.z $e |- .0. = ( 0g ` W ) $.
+    $( Left identity law for the zero vector.  (Contributed by NM,
+       10-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmod0vlid $p |- ( ( W e. LMod /\ X e. V ) -> ( .0. .+ X ) = X ) $=
+      ( clmod wcel cgrp co wceq lmodgrp grplid sylan ) CIJCKJDBJEDALDMCNBACDEFG
+      HOP $.
+
+    $( Right identity law for the zero vector.  (Contributed by NM,
+       10-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmod0vrid $p |- ( ( W e. LMod /\ X e. V ) -> ( X .+ .0. ) = X ) $=
+      ( clmod wcel cgrp co wceq lmodgrp grprid sylan ) CIJCKJDBJDEALDMCNBACDEFG
+      HOP $.
+
+    $( Identity equivalent to the value of the zero vector.  Provides a
+       convenient way to compute the value.  (Contributed by NM, 9-Mar-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmod0vid $p |- ( ( W e. LMod /\ X e. V )
+        -> ( ( X .+ X ) = X <-> .0. = X ) ) $=
+      ( clmod wcel cgrp co wceq wb lmodgrp grpid sylan ) CIJCKJDBJDDALDMEDMNCOB
+      ACDEFGHPQ $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
@@ -172401,6 +172912,15 @@ htmldef "RingSpan" as "RingSpan";
 htmldef "#r" as "#<sub>r</sub>";
   althtmldef "#r" as "#<sub>r</sub>";
   latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";
+htmldef "LMod" as
+    "<IMG SRC='_lmod.gif' WIDTH=36 HEIGHT=19 ALT=' LMod' TITLE='LMod'>";
+  althtmldef "LMod" as "LMod";
+  latexdef "LMod" as "\mathrm{LMod}";
+htmldef ".sf" as
+    "<IMG SRC='_cds.gif' WIDTH=9 HEIGHT=19 ALT=' .s' TITLE='.s'>" +
+    "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT='f' TITLE='f'>";
+  althtmldef ".sf" as ' <B>&middot;</B><SUB><I>sf</I></SUB> ';
+  latexdef ".sf" as '\cdot_{sf}';
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
