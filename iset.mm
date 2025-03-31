@@ -155189,6 +155189,14 @@ $)
           -> ( ( A .- B ) = C <-> ( B .+ C ) = A ) ) $=
       ( clmod wcel cabl w3a co wceq wb lmodabl ablsubadd sylan ) GKLGMLAFLBFLCF
       LNABEOCPBCDOAPQGRFDGEABCHIJST $.
+
+    $( Vector addition/subtraction law.  (Contributed by NM, 31-Mar-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvaddsub4 $p |- ( ( W e. LMod /\ ( A e. V /\ B e. V ) /\
+                           ( C e. V /\ D e. V ) ) ->
+      ( ( A .+ B ) = ( C .+ D ) <-> ( A .- C ) = ( D .- B ) ) ) $=
+      ( clmod wcel cabl wa co wceq wb lmodabl abladdsub4 syl3an1 ) HLMHNMAGMBGM
+      OCGMDGMOABEPCDEPQACFPDBFPQRHSGEHFDABCIJKTUA $.
   $}
 
 
