@@ -8410,6 +8410,7 @@
 "idALT" is used by "id1".
 "idcnop" is used by "nmcopex".
 "idcnop" is used by "nmcoplb".
+"iddii" is used by "aprilfools2025".
 "idhmop" is used by "hmopidmch".
 "idhmop" is used by "hmopidmpj".
 "idhmop" is used by "idleop".
@@ -14530,6 +14531,7 @@ New usage of "an33reanOLD" is discouraged (0 uses).
 New usage of "anabss7p1" is discouraged (0 uses).
 New usage of "ancomstVD" is discouraged (0 uses).
 New usage of "anmp" is discouraged (11 uses).
+New usage of "aprilfools2025" is discouraged (0 uses).
 New usage of "archnq" is discouraged (1 uses).
 New usage of "arglem1N" is discouraged (0 uses).
 New usage of "atabs2i" is discouraged (1 uses).
@@ -17296,6 +17298,7 @@ New usage of "icccmpALT" is discouraged (0 uses).
 New usage of "id1" is discouraged (0 uses).
 New usage of "idALT" is discouraged (1 uses).
 New usage of "idcnop" is discouraged (2 uses).
+New usage of "iddii" is discouraged (1 uses).
 New usage of "iden2" is discouraged (0 uses).
 New usage of "idhmop" is discouraged (6 uses).
 New usage of "idi" is discouraged (10 uses).
@@ -19791,6 +19794,7 @@ Proof modification of "an33reanOLD" is discouraged (209 steps).
 Proof modification of "anabss7p1" is discouraged (5 steps).
 Proof modification of "ancomstVD" is discouraged (22 steps).
 Proof modification of "anmp" is discouraged (8 steps).
+Proof modification of "aprilfools2025" is discouraged (116 steps).
 Proof modification of "avril1" is discouraged (194 steps).
 Proof modification of "ax1" is discouraged (3 steps).
 Proof modification of "ax10fromc7" is discouraged (50 steps).
