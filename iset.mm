@@ -155048,6 +155048,31 @@ $)
       CADBEFGHIJRS $.
   $}
 
+  ${
+    lmodvneg1.v $e |- V = ( Base ` W ) $.
+    lmodvneg1.n $e |- N = ( invg ` W ) $.
+    lmodvneg1.f $e |- F = ( Scalar ` W ) $.
+    lmodvneg1.s $e |- .x. = ( .s ` W ) $.
+    lmodvneg1.u $e |- .1. = ( 1r ` F ) $.
+    lmodvneg1.m $e |- M = ( invg ` F ) $.
+    $( Minus 1 times a vector is the negative of the vector.  Equation 2 of
+       [Kreyszig] p. 51.  (Contributed by NM, 18-Apr-2014.)  (Revised by Mario
+       Carneiro, 19-Jun-2014.) $)
+    lmodvneg1 $p |- ( ( W e. LMod /\ X e. V ) ->
+                      ( ( M ` .1. ) .x. X ) = ( N ` X ) ) $=
+      ( wcel cfv co wceq eqid eqtr3d clmod wa c0g cplusg cbs simpl cgrp lmod1cl
+      lmodfgrp adantr grpinvcl syl2an2r simpr lmodvscl syl3anc lmod0vrid syldan
+      lmodvnegcl lmodass syl13anc lmodvs1 oveq2d grplinv oveq1d lmod0vs 3eqtr3d
+      lmodvsdir lmodvnegid lmod0vlid ) GUAOZHFOZUBZBDPZHAQZGUCPZGUDPZQZVNHEPZVJ
+      VKVNFOZVQVNRVLVJVMCUEPZOZVKVSVJVKUFZVJCUGOZVKBVTOZWACGKUIZVJWDVKBCVTGKVTS
+      ZMUHUJZVTCDBWFNUKULZVJVKUMZVMACVTFGHIKLWFUNUOZVPFGVNVOIVPSZVOSZUPUQVLVNHV
+      RVPQZVPQZVOVRVPQZVQVRVLVNHVPQZVRVPQZWNWOVLVJVSVKVRFOZWQWNRWBWJWIEFGHIJURZ
+      VPFGVNHVRIWKUSUTVLWPVOVRVPVLVNBHAQZVPQZWPVOVLWTHVNVPABCFGHIKLMVAVBVLVMBCU
+      DPZQZHAQZCUCPZHAQXAVOVLXCXEHAVJWCVKWDXCXERWEWGVTXBCDBXEWFXBSZXESZNVCULVDV
+      LVJWAWDVKXDXARWBWHWGWIVPXBVMBACVTFGHIWKKLWFXFVGUTACXEFGHVOIKLXGWLVEVFTVDT
+      VLWMVOVNVPVPEFGHVOIWKWLJVHVBVJVKWRWOVRRWSVPFGVRVOIWKWLVIUQVFT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
