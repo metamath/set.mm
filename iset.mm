@@ -155181,6 +155181,14 @@ $)
         -> ( ( X .+ Y ) .+ ( Z .+ U ) ) = ( ( X .+ Z ) .+ ( Y .+ U ) ) ) $=
       ( clmod wcel ccmn wa co wceq lmodcmn cmn4 syl3an1 ) DJKDLKECKFCKMGCKBCKME
       FANGBANANEGANFBANANODPCADBEFGHIQR $.
+
+    lmodvaddsub4.m $e |- .- = ( -g ` W ) $.
+    $( Relationship between vector subtraction and addition.  (Contributed by
+       NM, 31-Mar-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvsubadd $p |- ( ( W e. LMod /\ ( A e. V /\ B e. V /\ C e. V ) )
+          -> ( ( A .- B ) = C <-> ( B .+ C ) = A ) ) $=
+      ( clmod wcel cabl w3a co wceq wb lmodabl ablsubadd sylan ) GKLGMLAFLBFLCF
+      LNABEOCPBCDOAPQGRFDGEABCHIJST $.
   $}
 
 
