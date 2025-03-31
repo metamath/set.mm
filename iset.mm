@@ -148921,6 +148921,19 @@ $)
   $}
 
   ${
+    mulgnn0cld.b $e |- B = ( Base ` G ) $.
+    mulgnn0cld.t $e |- .x. = ( .g ` G ) $.
+    mulgnn0cld.m $e |- ( ph -> G e. Mnd ) $.
+    mulgnn0cld.n $e |- ( ph -> N e. NN0 ) $.
+    mulgnn0cld.x $e |- ( ph -> X e. B ) $.
+    $( Closure of the group multiple (exponentiation) operation for a
+       nonnegative multiplier in a monoid.  Deduction associated with
+       ~ mulgnn0cl .  (Contributed by SN, 1-Feb-2025.) $)
+    mulgnn0cld $p |- ( ph -> ( N .x. X ) e. B ) $=
+      ( cmnd wcel cn0 co mulgnn0cl syl3anc ) ADLMENMFBMEFCOBMIJKBCDEFGHPQ $.
+  $}
+
+  ${
     mulgcld.1 $e |- B = ( Base ` G ) $.
     mulgcld.2 $e |- .x. = ( .g ` G ) $.
     mulgcld.3 $e |- ( ph -> G e. Grp ) $.
