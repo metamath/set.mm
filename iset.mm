@@ -155026,6 +155026,16 @@ $)
       $.
   $}
 
+  ${
+    lmodvnegcl.v $e |- V = ( Base ` W ) $.
+    lmodvnegcl.n $e |- N = ( invg ` W ) $.
+    $( Closure of vector negative.  (Contributed by NM, 18-Apr-2014.)  (Revised
+       by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvnegcl $p |- ( ( W e. LMod /\ X e. V ) -> ( N ` X ) e. V ) $=
+      ( clmod wcel cgrp cfv lmodgrp grpinvcl sylan ) CGHCIHDBHDAJBHCKBCADEFLM
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
