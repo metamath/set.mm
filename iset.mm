@@ -155322,6 +155322,12 @@ $)
                   -> ( ( A .- B ) = .0. <-> A = B ) ) $=
       ( clmod wcel cgrp co wceq wb lmodgrp grpsubeq0 syl3an1 ) EJKELKADKBDKABCM
       FNABNOEPDECABFGHIQR $.
+
+    $( Subtraction of a vector from itself.  (Contributed by NM, 16-Apr-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodsubid $p |- ( ( W e. LMod /\ A e. V ) -> ( A .- A ) = .0. ) $=
+      ( clmod wcel cgrp co wceq lmodgrp grpsubid sylan ) DIJDKJACJAABLEMDNCDBAE
+      FGHOP $.
   $}
 
 
