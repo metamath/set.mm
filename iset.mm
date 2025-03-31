@@ -155133,6 +155133,16 @@ $)
       DFGOVDXFABCVJVLDFGVENVC $.
   $}
 
+  ${
+    $d x y W $.
+    $( A left module is an abelian group (of vectors, under addition).
+       (Contributed by NM, 8-Dec-2013.)  (Revised by Mario Carneiro,
+       25-Jun-2014.) $)
+    lmodabl $p |- ( W e. LMod -> W e. Abel ) $=
+      ( vx vy clmod wcel cbs cfv cplusg eqidd lmodgrp cv eqid lmodcom isabld )
+      ADEZBCAFGZAHGZAOPIOQIAJQPABKCKPLQLMN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
