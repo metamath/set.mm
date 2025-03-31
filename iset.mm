@@ -154960,6 +154960,24 @@ $)
       WKWL $.
   $}
 
+  ${
+    $d V w $.  $d W w $.
+    lmodfopne.t $e |- .x. = ( .sf ` W ) $.
+    lmodfopne.a $e |- .+ = ( +f ` W ) $.
+    lmodfopne.v $e |- V = ( Base ` W ) $.
+    lmodfopne.s $e |- S = ( Scalar ` W ) $.
+    lmodfopne.k $e |- K = ( Base ` S ) $.
+    $( Lemma 1 for ~ lmodfopne .  (Contributed by AV, 2-Oct-2021.) $)
+    lmodfopnelem1 $p |- ( ( W e. LMod /\ .+ = .x. ) -> V = K ) $=
+      ( vw clmod wcel wceq cxp wfn wi wa ex plusffng scaffng fneq1 fndmu syl6bi
+      com13 impcom cv wex wb cgrp c0g cfv lmodgrp eqid grpidcl elex2 3syl xp11m
+      syl2anc simprbda expcom syl6 com23 com3r mp2d imp ) FMNZACOZEDOZVHAEEPZQZ
+      CDEPZQZVIVJRZEAFMIHUAECBDMFIJKGUBVLVNVHVOVLVNVHVORVLVNSZVIVHVJVPVIVKVMOZV
+      HVJRVNVLVIVQRVIVLVNVQVIVLCVKQZVNVQRVKACUCVRVNVQVKVMCUDTUEUFUGVHVQVJVHVQVJ
+      EEOZVHLUHENLUIZVTVQVJVSSUJVHFUKNFULUMZENVTFUNEFWAIWAUOUPLWAEUQURZWBLLEEDE
+      USUTVAVBVCVDTVEVFVG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
