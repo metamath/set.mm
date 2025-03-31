@@ -154926,6 +154926,40 @@ $)
       DFVPGHIVJUKULVAVFFEAUSUTVOVFFRVQABVBVNDFFVPGHVKJUMUNZUPUQVRUR $.
   $}
 
+  ${
+    $d C x y $.  $d E x y $.  $d K x y $.  $d N x y $.  $d V x y $.
+    $d W x y $.  $d X x y $.  $d .^ x y $.  $d .x. x y $.
+    lmodvsmmulgdi.v $e |- V = ( Base ` W ) $.
+    lmodvsmmulgdi.f $e |- F = ( Scalar ` W ) $.
+    lmodvsmmulgdi.s $e |- .x. = ( .s ` W ) $.
+    lmodvsmmulgdi.k $e |- K = ( Base ` F ) $.
+    lmodvsmmulgdi.p $e |- .^ = ( .g ` W ) $.
+    lmodvsmmulgdi.e $e |- E = ( .g ` F ) $.
+    $( Distributive law for a group multiple of a scalar multiplication.
+       (Contributed by AV, 2-Sep-2019.) $)
+    lmodvsmmulgdi $p |- ( ( W e. LMod /\ ( C e. K /\ N e. NN0 /\ X e. V ) ) ->
+                     ( N .^ ( C .x. X ) ) = ( ( N E C ) .x. X ) ) $=
+      ( wcel co wceq oveq1 vx vy cn0 w3a clmod wi wa cv c1 caddc oveq1d eqeq12d
+      cc0 imbi2d weq c0g simpr adantr eqid lmod0vs syl2anc simpl mulg0 lmodvscl
+      cfv syl syl3anc 3eqtr4rd cplusg lmodgrp grpmndd ad2antll adantl mulgnn0p1
+      cmnd lmodring ringmnd simprll mulgnn0cld lmodvsdir syl13anc eqcomd eqtr3d
+      crg sylan9eqr eqtrd exp31 a2d nn0ind exp4c 3imp21 impcom ) AFQZGUCQZJHQZU
+      DIUEQZGAJBRZDRZGACRZJBRZSZWNWMWOWPXAUFWNWMWOWPXAWMWOUGZWPUGZUAUHZWQDRZXDA
+      CRZJBRZSZUFXCUMWQDRZUMACRZJBRZSZUFXCUBUHZWQDRZXMACRZJBRZSZUFXCXMUIUJRZWQD
+      RZXRACRZJBRZSZUFXCXAUFUAUBGXDUMSZXHXLXCYCXEXIXGXKXDUMWQDTYCXFXJJBXDUMACTU
+      KULUNUAUBUOZXHXQXCYDXEXNXGXPXDXMWQDTYDXFXOJBXDXMACTUKULUNXDXRSZXHYBXCYEXE
+      XSXGYAXDXRWQDTYEXFXTJBXDXRACTUKULUNXDGSZXHXAXCYFXEWRXGWTXDGWQDTYFXFWSJBXD
+      GACTUKULUNXCEUPVEZJBRZIUPVEZXKXIXCWPWOYHYISXBWPUQZXBWOWPWMWOUQURZBEYGHIJY
+      IKLMYGUSZYIUSZUTVAXCXJYGJBXCWMXJYGSXBWMWPWMWOVBURZFCEAYGNYLPVCVFUKXCWQHQZ
+      XIYISXCWPWMWOYOYJYNYKABEFHIJKLMNVDVGZHDIWQYIKYMOVCVFVHXMUCQZXCXQYBYQXCXQY
+      BYQXCUGZXQUGXSXNWQIVIVEZRZYAYRXSYTSZXQYRIVOQZYQYOUUAWPUUBYQXBWPIIVJVKVLYQ
+      XCVBZXCYOYQYPVMHYSDIXMWQKOYSUSZVNVGURXQYRYTXPWQYSRZYAXNXPWQYSTYRXOAEVIVEZ
+      RZJBRZUUEYAYRWPXOFQWMWOUUHUUESXCWPYQYJVMYRFCEXMANPWPEVOQZYQXBWPEWDQUUIEIL
+      VPEVQVFVLZUUCYQWMWOWPVRZVSUUKXCWOYQYKVMYSUUFXOABEFHIJKUUDLMNUUFUSZVTWAYRU
+      UGXTJBYRXTUUGYRUUIYQWMXTUUGSUUJUUCUUKFUUFCEXMANPUULVNVGWBUKWCWEWFWGWHWIWJ
+      WKWL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
