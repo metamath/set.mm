@@ -155230,6 +155230,31 @@ $)
       ULICJUQGABKLUQUDZMUEUFUOUTURACULUNUTURUCUMDEFHUQIJBKVANOQPUGUHUJUK $.
   $}
 
+  ${
+    lmodsubvs.v $e |- V = ( Base ` W ) $.
+    lmodsubvs.p $e |- .+ = ( +g ` W ) $.
+    lmodsubvs.m $e |- .- = ( -g ` W ) $.
+    lmodsubvs.t $e |- .x. = ( .s ` W ) $.
+    lmodsubvs.f $e |- F = ( Scalar ` W ) $.
+    lmodsubvs.k $e |- K = ( Base ` F ) $.
+    lmodsubvs.n $e |- N = ( invg ` F ) $.
+    lmodsubvs.w $e |- ( ph -> W e. LMod ) $.
+    lmodsubvs.a $e |- ( ph -> A e. K ) $.
+    lmodsubvs.x $e |- ( ph -> X e. V ) $.
+    lmodsubvs.y $e |- ( ph -> Y e. V ) $.
+    $( Subtraction of a scalar product in terms of addition.  (Contributed by
+       NM, 9-Apr-2015.) $)
+    lmodsubvs $p |- ( ph
+          -> ( X .- ( A .x. Y ) ) = ( X .+ ( ( N ` A ) .x. Y ) ) ) $=
+      ( co cur cfv clmod wcel wceq lmodvscl syl3anc eqid lmodvsubval2 cmulr crg
+      cgrp lmodring ringgrp ringidcl grpinvcl syl2anc lmodvsass syl13anc oveq1d
+      syl ringnegl eqtr3d oveq2d eqtrd ) AKBLDUDZGUDZKEUEUFZHUFZVJDUDZCUDZKBHUF
+      ZLDUDZCUDAJUGUHZKIUHVJIUHZVKVOUITUBAVRBFUHZLIUHZVSTUAUCBDEFIJLMQPRUJUKKVJ
+      CDVLEGHIJMNOQPSVLULZUMUKAVNVQKCAVMBEUNUFZUDZLDUDZVNVQAVRVMFUHZVTWAWEVNUIT
+      AEUPUHZVLFUHZWFAEUOUHZWGAVRWITEJQUQVEZEURVEAWIWHWJFEVLRWBUSVEFEHVLRSUTVAU
+      AUCVMBDWCEFIJLMQPRWCULZVBVCAWDVPLDAFEWCVLHBRWKWBSWJUAVFVDVGVHVI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
