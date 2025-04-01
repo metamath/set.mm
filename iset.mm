@@ -22703,6 +22703,16 @@ $)
   $}
 
   ${
+    $d z A $.  $d z B $.  $d x C $.  $d y C $.  $d x z $.  $d y z $.
+    $( Rotate three restricted universal quantifiers.  (Contributed by AV,
+       3-Dec-2021.) $)
+    ralrot3 $p |- ( A. x e. A A. y e. B A. z e. C ph
+                    <-> A. z e. C A. x e. A A. y e. B ph ) $=
+      ( wral ralcom ralbii bitri ) ADGHCFHZBEHACFHZDGHZBEHMBEHDGHLNBEACDFGIJMBD
+      EGIK $.
+  $}
+
+  ${
     $d y z A $.  $d x z B $.  $d x y C $.
     $( Swap 1st and 3rd restricted existential quantifiers.  (Contributed by
        NM, 8-Apr-2015.) $)
