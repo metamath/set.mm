@@ -155409,6 +155409,27 @@ $)
       UWNUWTUXFUYNDUWMUWLVWCYDXSYEXTXTXTXTYAXEUVSUYFYBVNYC $.
   $}
 
+  ${
+    $d x y B $.  $d x y K $.  $d x y L $.  $d x y P $.  $d x y ph $.
+    lmodpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    lmodpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    lmodpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    lmodpropd.4 $e |- ( ph -> F = ( Scalar ` K ) ) $.
+    lmodpropd.5 $e |- ( ph -> F = ( Scalar ` L ) ) $.
+    lmodpropd.6 $e |- P = ( Base ` F ) $.
+    lmodpropd.7 $e |- ( ( ph /\ ( x e. P /\ y e. B ) ) ->
+      ( x ( .s ` K ) y ) = ( x ( .s ` L ) y ) ) $.
+    $( If two structures have the same components (properties), one is a left
+       module iff the other one is.  (Contributed by Mario Carneiro,
+       8-Feb-2015.)  (Revised by Mario Carneiro, 27-Jun-2015.) $)
+    lmodpropd $p |- ( ph -> ( K e. LMod <-> L e. LMod ) ) $=
+      ( cfv cbs fveq2d cplusg cmulr csca eqid eqtrid cv wcel wceq eqtr3d adantr
+      wa oveqd lmodprop2d ) ABCDEGUAPZHUAPZGHIJULUBUMUBAEFQPZULQPNAFULQLRUCAEUN
+      UMQPNAFUMQMRUCKABUDZEUECUDZEUEUIZUIZULSPUMSPUOUPURULUMSAULUMUFUQAFULUMLMU
+      GUHZRUJURULTPUMTPUOUPURULUMTUSRUJOUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
