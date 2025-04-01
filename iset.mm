@@ -155440,6 +155440,69 @@ $)
       GUHZRUJURULTPUMTPUOUPURULUMTUSRUJOUK $.
   $}
 
+  ${
+    $d .X. q r w x $.  $d .X. s v $.  $d .x. q r w x $.  $d .x. s v $.
+    $d K q r x $.  $d K s v $.  $d V q r w x $.  $d V s v $.  $d a r w $.
+    $d a s v $.  $d b q r w $.  $d b s v $.  $d c s v $.  $d c w $.  $d F j $.
+    $d K j $.  $d R j $.  $d V j $.
+    rmodislmod.v $e |- V = ( Base ` R ) $.
+    rmodislmod.a $e |- .+ = ( +g ` R ) $.
+    rmodislmod.s $e |- .x. = ( .s ` R ) $.
+    rmodislmod.f $e |- F = ( Scalar ` R ) $.
+    rmodislmod.k $e |- K = ( Base ` F ) $.
+    rmodislmod.p $e |- .+^ = ( +g ` F ) $.
+    rmodislmod.t $e |- .X. = ( .r ` F ) $.
+    rmodislmod.u $e |- .1. = ( 1r ` F ) $.
+    rmodislmod.r $e |- ( R e. Grp /\ F e. Ring
+                         /\ A. q e. K A. r e. K A. x e. V A. w e. V
+                     ( ( ( w .x. r ) e. V
+                      /\ ( ( w .+ x ) .x. r ) = ( ( w .x. r ) .+ ( x .x. r ) )
+                      /\ ( w .x. ( q .+^ r ) ) = ( ( w .x. q ) .+ ( w .x. r ) )
+                    ) /\ ( ( w .x. ( q .X. r ) ) = ( ( w .x. q ) .x. r )
+                      /\ ( w .x. .1. ) = w ) ) ) $.
+    rmodislmod.m $e |- .* = ( s e. K , v e. V |-> ( v .x. s ) ) $.
+    rmodislmod.l $e |- L = ( R sSet <. ( .s ` ndx ) , .* >. ) $.
+    $( Lemma for ~ rmodislmod .  This is the part of the proof of ~ rmodislmod
+       which requires the scalar ring to be commutative.  (Contributed by AV,
+       3-Dec-2021.) $)
+    rmodislmodlem $p |- ( ( F e. CRing /\ ( a e. K /\ b e. K /\ c e. V ) )
+                          -> ( ( a .X. b ) .* c ) = ( a .* ( b .* c ) ) ) $=
+      ( vj ccrg wcel cv w3a wa co wceq cgrp crg wral simprl 2ralimi ralrot3 wex
+      wi simp1i c0g cfv eqid grpidcl elex2 syl r19.3rmv mp2b biimpri weq oveq2d
+      wb oveq1 oveq2 oveq1d eqeq12d rspc3v 3com12 syl5com sylbi eqcom imbitrrdi
+      3ad2ant3 ax-mp adantl crngcom 3expb expcom ancoms 3adant3 impcom cvv cmpo
+      eqtrd a1i oveq12 simp2 simp3 vex cvsca vscaslid slotex ovexg mp3an ovmpod
+      eqeltri simp1 simpl1 simp2i ringgrp ralcom eleq1d rspc2v 3adant1 3ad2ant2
+      3syl ringcl 3expib cmulr mulrslid 3eqtr4rd ) JUMUNZRUOZLUNZSUOZLUNZTUOZNU
+      NZUPZUQZYOYMGURZYKGURZYOYKYMHURZGURZYKYMYOKURZKURZUUAYOKURZYRYTYOYMYKHURZ
+      GURZUUBYQYTUUGUSZYJFUTUNZJVAUNZBUOZPUOZGURZNUNZUUKAUOZDURUULGURUUMUUOUULG
+      URDURUSZUUKQUOZUULEURGURUUKUUQGURZUUMDURUSZUPZUUKUUQUULHURZGURZUURUULGURZ
+      USZUUKIGURUUKUSZUQZUQZBNVBANVBZPLVBQLVBZUPZYQUUHVGZUIUVIUUIUVKUUJUVIUVDBN
+      VBZANVBZPLVBQLVBZUVKUVHUVMQPLLUVGUVDABNNUUTUVDUVEVCVDVDUVNYQUUGYTUSZUUHUV
+      NUVLPLVBQLVBZANVBZYQUVOVGUVLQPALLNVEUVQUVPYQUVOUVPUVQUUIULUOZNUNULVFZUVPU
+      VQVTUUIUUJUVIUIVHZUUIFVIVJZNUNUVSNFUWAUAUWAVKVLULUWANVMVNZUVPAULNVOVPVQYN
+      YLYPUVPUVOVGUVDUVOUUKYMUULHURZGURZUUKYMGURZUULGURZUSUUKUUFGURZUWEYKGURZUS
+      QPBYMYKYOLLNQSVRZUVBUWDUVCUWFUWIUVAUWCUUKGUUQYMUULHWAVSUWIUURUWEUULGUUQYM
+      UUKGWBWCWDPRVRZUWDUWGUWFUWHUWJUWCUUFUUKGUULYKYMHWBVSUULYKUWEGWBWDBTVRZUWG
+      UUGUWHYTUUKYOUUFGWAUWKUWEYSYKGUUKYOYMGWAZWCWDWEWFWGWHYTUUGWIWJVNWKWLWMYRU
+      UFUUAYOGYQYJUUFUUAUSZYLYNYJUWMVGZYPYNYLUWNYJYNYLUQUWMYJYNYLUWMLJHYMYKUEUG
+      WNWOWPWQWRWSVSXBYQUUDYTUSYJYQUUDYKYSKURYTYQUUCYSYKKYQOCYMYOLNCUOZOUOZGURZ
+      YSKWTKOCLNUWQXAUSYQUJXCZOSVRZCTVRZUQUWQYSUSZYQUWTUWSUXAUWOYOUWPYMGXDWQWMY
+      LYNYPXEYLYNYPXFZYSWTUNZYQYOWTUNZGWTUNZYMWTUNZUXCTXGZGFXHVJZWTUCUUIUXHWTUN
+      UVTFXHUTXIXJWLXNZSXGZYOYMGWTWTWTXKXLZXCXMVSYQOCYKYSLNUWQYTKWTUWRORVRZUWOY
+      SUSZUQUWQYTUSZYQUXMUXLUXNUWOYSUWPYKGXDWQWMYLYNYPXOYNYPYSNUNZYLUVJYNYPUQZU
+      XOVGZUIUVIUUIUXQUUJUVIUUNBNVBZANVBZPLVBZQLVBZUXTUXQUVHUXSQPLLUVGUUNABNNUU
+      NUUPUUSUVFXPVDVDUXTUYAJVIVJZLUNZUVRLUNULVFUXTUYAVTUUJJUTUNUYCUUIUUJUVIUIX
+      QZJXRLJUYBUEUYBVKVLVPULUYBLVMUXTQULLVOVPVQUXTUXRPLVBZANVBZUXQUXRPALNXSUYF
+      UYEUXPUXOUYEUYFUUIUVSUYEUYFVTUVTUWBUYEAULNVOVPVQUUNUXOUWENUNPBYMYOLNPSVRU
+      UMUWENUULYMUUKGWBXTUWKUWEYSNUWLXTYAWGWHYDWKWLYBYTWTUNZYQUXCUXEYKWTUNZUYGU
+      XKUXIRXGZYSYKGWTWTWTXKXLXCXMXBWMYQUUEUUBUSYJYQOCUUAYOLNUWQUUBKWTUWRUWPUUA
+      USZUWTUQUWQUUBUSZYQUWTUYJUYKUWOYOUWPUUAGXDWQWMYLYNUUALUNZYPUVJYLYNUQUYLVG
+      ZUIUUJUUIUYMUVIUUJYLYNUYLLJHYKYMUEUGYEYFYCWLWRUXBUUBWTUNZYQUXDUXEUUAWTUNZ
+      UYNUXGUXIUYHHWTUNUXFUYOUYIHJYGVJZWTUGUUJUYPWTUNUYDJYGVAYHXJWLXNUXJYKYMHWT
+      WTWTXKXLYOUUAGWTWTWTXKXLXCXMWMYI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
