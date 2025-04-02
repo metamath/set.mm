@@ -155600,6 +155600,16 @@ $)
      vector space. $)
   clss $a class LSubSp $.
 
+  ${
+    $d a b j s x w $.
+    $( Define the set of linear subspaces of a left module or left vector
+       space.  (Contributed by NM, 8-Dec-2013.) $)
+    df-lssm $a |- LSubSp = ( w e. _V |->
+     { s e. ~P ( Base ` w ) | ( E. j j e. s /\
+        A. x e. ( Base ` ( Scalar ` w ) ) A. a e. s A. b e. s
+          ( ( x ( .s ` w ) a ) ( +g ` w ) b ) e. s ) } ) $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
