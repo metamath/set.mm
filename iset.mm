@@ -155610,6 +155610,33 @@ $)
           ( ( x ( .s ` w ) a ) ( +g ` w ) b ) e. s ) } ) $.
   $}
 
+  ${
+    $d s w .+ $.  $d s w x B $.  $d s w V $.  $d a b s w x W $.  $d s w .x. $.
+    $d a b s x U $.  $d a b j s w x $.
+    lssset.f $e |- F = ( Scalar ` W ) $.
+    lssset.b $e |- B = ( Base ` F ) $.
+    lssset.v $e |- V = ( Base ` W ) $.
+    lssset.p $e |- .+ = ( +g ` W ) $.
+    lssset.t $e |- .x. = ( .s ` W ) $.
+    lssset.s $e |- S = ( LSubSp ` W ) $.
+    $( The set of all (not necessarily closed) linear subspaces of a left
+       module or left vector space.  (Contributed by NM, 8-Dec-2013.)  (Revised
+       by Mario Carneiro, 15-Jul-2014.) $)
+    lsssetm $p |- ( W e. X -> S = { s e. ~P V | ( E. j j e. s /\
+         A. x e. B A. a e. s A. b e. s ( ( x .x. a ) .+ b ) e. s ) } ) $=
+      ( cfv vw wcel clss cv wex co wral wa cpw crab cplusg csca cbs cvv df-lssm
+      cvsca wceq fveq2 eqtr4di pweqd fveq2d oveqd oveq1d eqtrd eleq1d raleqbidv
+      2ralbidv anbi2d rabeqbidv wfn basfn funfvex funfni sylancr eqeltrid pwexd
+      elex rabexg syl fvmptd3 eqtrid ) IJUBZDIUCTFUDKUDZUBFUEZAUDZLUDZEUFZMUDZC
+      UFZWCUBZMWCUGLWCUGZABUGZUHZKHUIZUJZSWBUAIWDWEWFUAUDZUPTZUFZWHWPUKTZUFZWCU
+      BZMWCUGLWCUGZAWPULTZUMTZUGZUHZKWPUMTZUIZUJWOUNUCUNAUAFKLMUOWPIUQZXFWMKXHW
+      NXIXGHXIXGIUMTZHWPIUMURPUSUTXIXEWLWDXIXBWKAXDBXIXDGUMTBXIXCGUMXIXCIULTGWP
+      IULURNUSVAOUSXIXAWJLMWCWCXIWTWIWCXIWTWGWHWSUFWIXIWRWGWHWSXIWQEWEWFXIWQIUP
+      TEWPIUPURRUSVBVCXIWSCWGWHXIWSIUKTCWPIUKURQUSVBVDVEVGVFVHVIIJVQZWBWNUNUBWO
+      UNUBWBHUNWBHXJUNPWBUMUNVJIUNUBXJUNUBZVKXKXLUNIUMIUMVLVMVNVOVPWMKWNUNVRVSV
+      TWA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
