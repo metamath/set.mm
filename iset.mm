@@ -155589,6 +155589,19 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subspaces and spans in a left module
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c LSubSp $.
+
+  $( Extend class notation with linear subspaces of a left module or left
+     vector space. $)
+  clss $a class LSubSp $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -173631,6 +173644,10 @@ htmldef ".sf" as
     "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT='f' TITLE='f'>";
   althtmldef ".sf" as ' <B>&middot;</B><SUB><I>sf</I></SUB> ';
   latexdef ".sf" as '\cdot_{sf}';
+htmldef "LSubSp" as
+    "<IMG SRC='_lsubsp.gif' WIDTH=49 HEIGHT=19 ALT=' LSubSp' TITLE='LSubSp'>";
+  althtmldef "LSubSp" as "LSubSp";
+  latexdef "LSubSp" as "\mathrm{LSubSp}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
