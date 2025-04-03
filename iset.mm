@@ -155652,6 +155652,33 @@ $)
       DWOLVSFWCWNMVSFVSFWBVIVJVJVKVLVMWKWMWQVNVOVP $.
   $}
 
+  ${
+    $d a b x ph $.  $d a b x U $.  $d a b x W $.  $d a b B $.  $d U a b j x $.
+    islssd.f $e |- ( ph -> F = ( Scalar ` W ) ) $.
+    islssd.b $e |- ( ph -> B = ( Base ` F ) ) $.
+    islssd.v $e |- ( ph -> V = ( Base ` W ) ) $.
+    islssd.p $e |- ( ph -> .+ = ( +g ` W ) ) $.
+    islssd.t $e |- ( ph -> .x. = ( .s ` W ) ) $.
+    islssd.s $e |- ( ph -> S = ( LSubSp ` W ) ) $.
+    islssd.u $e |- ( ph -> U C_ V ) $.
+    islssmd.m $e |- ( ph -> E. j j e. U ) $.
+    islssd.c $e |- ( ( ph /\ ( x e. B /\ a e. U /\ b e. U ) ) ->
+            ( ( x .x. a ) .+ b ) e. U ) $.
+    islssmd.w $e |- ( ph -> W e. X ) $.
+    $( Properties that determine a subspace of a left module or left vector
+       space.  (Contributed by NM, 8-Dec-2013.)  (Revised by Mario Carneiro,
+       8-Jan-2015.) $)
+    islssmd $p |- ( ph -> U e. S ) $=
+      ( clss cfv wcel cbs wss cv wex cvsca co cplusg wral csca sseqtrd wa 3exp2
+      imp43 ralrimivva fveq2d eqtrd eleq2d oveqd oveq1d eleq1d 2ralbidv 3imtr3d
+      ex ralrimiv w3a wb eqid islssm syl mpbir3and eleqtrrd ) AGKUEUFZEAGVSUGZG
+      KUHUFZUIZHUJGUGHUKZBUJZMUJZKULUFZUMZNUJZKUNUFZUMZGUGZNGUOMGUOZBKUPUFZUHUF
+      ZUOZAGJWAUAQUQUBAWLBWNAWDCUGZWDWEFUMZWHDUMZGUGZNGUOMGUOZWDWNUGWLAWPWTAWPU
+      RWSMNGGAWPWEGUGZWHGUGZWSAWPXAXBWSUCUSUTVAVJACWNWDACIUHUFWNPAIWMUHOVBVCVDA
+      WSWKMNGGAWRWJGAWRWQWHWIUMWJADWIWQWHRVEAWQWGWHWIAFWFWDWESVEVFVCVGVHVIVKAKL
+      UGVTWBWCWOVLVMUDBWNWIVSWFGHWMWAKLMNWMVNWNVNWAVNWIVNWFVNVSVNVOVPVQTVR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
