@@ -155635,6 +155635,21 @@ $)
       TEWPIUPURRUSVBVCXIWSCWGWHXIWSIUKTCWPIUKURQUSVBVDVEVGVFVHVIIJVQZWBWNUNUBWO
       UNUBWBHUNWBHXJUNPWBUMUNVJIUNUBXJUNUBZVKXKXLUNIUMIUMVLVMVNVOVPWMKWNUNVRVSV
       TWA $.
+
+    $d U a b j s x $.
+    $( The predicate "is a subspace" (of a left module or left vector space).
+       (Contributed by NM, 8-Dec-2013.)  (Revised by Mario Carneiro,
+       8-Jan-2015.) $)
+    islssm $p |- ( W e. X -> ( U e. S <-> ( U C_ V /\ E. j j e. U
+          /\ A. x e. B A. a e. U A. b e. U ( ( x .x. a ) .+ b ) e. U ) ) ) $=
+      ( wcel vs cv wex co wral wa cpw wss w3a lsssetm eleq2d cvv wb cbs cfv wfn
+      crab basfn elex funfvex funfni sylancr eqeltrid elpw2g anbi1d wceq exbidv
+      syl eleq2 raleqbi1dv ralbidv anbi12d elrab 3anass 3bitr4g bitrd ) JKTZFDT
+      FGUBZUAUBZTZGUCZAUBLUBEUDMUBCUDZVSTZMVSUEZLVSUEZABUEZUFZUAIUGZUQZTZFIUHZV
+      RFTZGUCZWBFTZMFUEZLFUEZABUEZUIZVQDWIFABCDEGHIJKUALMNOPQRSUJUKVQFWHTZWMWQU
+      FZUFWKWTUFWJWRVQWSWKWTVQIULTWSWKUMVQIJUNUOZULPVQUNULUPJULTXAULTZURJKUSXBU
+      LJUNJUNUTVAVBVCFIULVDVHVEWGWTUAFWHVSFVFZWAWMWFWQXCVTWLGVSFVRVIVGXCWEWPABW
+      DWOLVSFWCWNMVSFVSFWBVIVJVJVKVLVMWKWMWQVNVOVP $.
   $}
 
 
