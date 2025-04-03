@@ -155679,6 +155679,18 @@ $)
       UGVTWBWCWOVLVMUDBWNWIVSWFGHWMWAKLMNWMVNWNVNWAVNWIVNWFVNVSVNVOVPVQTVR $.
   $}
 
+  ${
+    $d a b j x U $.  $d a b x V $.  $d a b x W $.
+    lssss.v $e |- V = ( Base ` W ) $.
+    lssss.s $e |- S = ( LSubSp ` W ) $.
+    $( A subspace is a set of vectors.  (Contributed by NM, 8-Dec-2013.)
+       (Revised by Mario Carneiro, 8-Jan-2015.) $)
+    lssssg $p |- ( ( W e. X /\ U e. S ) -> U C_ V ) $=
+      ( vj vx va vb wcel wa wss cv wex cfv co wral eqid cvsca cplusg cbs islssm
+      csca w3a biimpa simp1d ) DELZBALZMBCNZHOBLHPZIOJODUAQZRKODUBQZRBLKBSJBSID
+      UEQZUCQZSZUIUJUKULUQUFIUPUNAUMBHUOCDEJKUOTUPTFUNTUMTGUDUGUH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
