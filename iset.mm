@@ -155689,6 +155689,12 @@ $)
       ( vj vx va vb wcel wa wss cv wex cfv co wral eqid cvsca cplusg cbs islssm
       csca w3a biimpa simp1d ) DELZBALZMBCNZHOBLHPZIOJODUAQZRKODUBQZRBLKBSJBSID
       UEQZUCQZSZUIUJUKULUQUFIUPUNAUMBHUOCDEJKUOTUPTFUNTUMTGUDUGUH $.
+
+    $( A subspace member is a vector.  (Contributed by NM, 11-Jan-2014.)
+       (Revised by Mario Carneiro, 8-Jan-2015.) $)
+    lsselg $p |- ( ( W e. C /\ U e. S /\ X e. U ) -> X e. V ) $=
+      ( wcel w3a wss lssssg 3adant3 simp3 sseldd ) EAIZCBIZFCIZJCDFPQCDKRBCDEAG
+      HLMPQRNO $.
   $}
 
 
