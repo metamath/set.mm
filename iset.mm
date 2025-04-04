@@ -155706,6 +155706,15 @@ $)
       BCUAHIVAVBOVAVCOBCNMPVADQVAVDOVAVEOACUBMPVAEQVABUEVACUFMZBKGRBKGUGBCVFDVF
       SUHGVFBUIUJVAFRZVCKZHRZBKZIRZBKZUOZUKVAVGVIVETZBKZVLVNVKVDTBKVAVMULVAVHVJ
       VOVLVGVEVBVCBCVIDVBSVESVCSUMUNVAVHVJVLUPVDBCVNVKDVDSUQURCUSUT $.
+
+    $d x S $.
+    lssuni.w $e |- ( ph -> W e. LMod ) $.
+    $( The union of all subspaces is the vector space.  (Contributed by NM,
+       13-Mar-2015.) $)
+    lssuni $p |- ( ph -> U. S = V ) $=
+      ( vx cuni cv wss crab clmod wcel wceq wral lssssg ralrimiva rabid2 sylibr
+      unieqd syl lss1 unimax 3syl eqtrd ) ABIZHJZCKZHBLZIZCADMNZUGUKOGULBUJULUI
+      HBPBUJOULUIHBBUHCDMEFQRUIHBSTUAUBAULCBNUKCOGBCDEFUCHCBUDUEUF $.
   $}
 
 
