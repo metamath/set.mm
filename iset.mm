@@ -155695,6 +155695,17 @@ $)
     lsselg $p |- ( ( W e. C /\ U e. S /\ X e. U ) -> X e. V ) $=
       ( wcel w3a wss lssssg 3adant3 simp3 sseldd ) EAIZCBIZFCIZJCDFPQCDKRBCDEAG
       HLMPQRNO $.
+
+    $d V j $.  $d W j $.
+    $( The set of vectors in a left module is a subspace.  (Contributed by NM,
+       8-Dec-2013.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lss1 $p |- ( W e. LMod -> V e. S ) $=
+      ( vx vj va vb clmod wcel csca cfv cbs eqidd wceq a1i cv eqid co cgrp clss
+      cplusg cvsca ssidd c0g wex lmod0vcl elex2 syl wa simpl lmodvscl 3adant3r3
+      w3a simpr3 lmodvacl syl3anc lmodgrp islssmd ) CJKZFCLMZNMZCUCMZACUDMZBGVB
+      BCUAHIVAVBOVAVCOBCNMPVADQVAVDOVAVEOACUBMPVAEQVABUEVACUFMZBKGRBKGUGBCVFDVF
+      SUHGVFBUIUJVAFRZVCKZHRZBKZIRZBKZUOZUKVAVGVIVETZBKZVLVNVKVDTBKVAVMULVAVHVJ
+      VOVLVGVEVBVCBCVIDVBSVESVCSUMUNVAVHVJVLUPVDBCVNVKDVDSUQURCUSUT $.
   $}
 
 
