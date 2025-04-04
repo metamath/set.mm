@@ -154644,8 +154644,8 @@ $)
   ${
     lmodbn0.b $e |- B = ( Base ` W ) $.
     $( The base set of a left module is nonempty.  It is also inhabited (by
-       ~ lmodgrp and ~ grpidcl ).  (Contributed by NM, 8-Dec-2013.)  (Revised
-       by Mario Carneiro, 19-Jun-2014.) $)
+       ~ lmod0vcl ).  (Contributed by NM, 8-Dec-2013.)  (Revised by Mario
+       Carneiro, 19-Jun-2014.) $)
     lmodbn0 $p |- ( W e. LMod -> B =/= (/) ) $=
       ( clmod wcel cgrp c0 wne lmodgrp grpbn0 syl ) BDEBFEAGHBIABCJK $.
   $}
