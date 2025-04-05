@@ -155717,6 +155717,27 @@ $)
       HBPBUJOULUIHBBUHCDMEFQRUIHBSTUAUBAULCBNUKCOGBCDEFUCHCBUDUEUF $.
   $}
 
+  ${
+    $d x B $.  $d a b x .+ $.  $d a b x .x. $.  $d a b j x U $.  $d a b x W $.
+    $d a b X $.  $d b Y $.  $d a b x Z $.
+    lsscl.f $e |- F = ( Scalar ` W ) $.
+    lsscl.b $e |- B = ( Base ` F ) $.
+    lsscl.p $e |- .+ = ( +g ` W ) $.
+    lsscl.t $e |- .x. = ( .s ` W ) $.
+    lsscl.s $e |- S = ( LSubSp ` W ) $.
+    $( Closure property of a subspace.  (Contributed by NM, 8-Dec-2013.)
+       (Revised by Mario Carneiro, 8-Jan-2015.) $)
+    lssclg $p |- ( ( W e. C /\ U e. S /\ ( Z e. B /\ X e. U /\ Y e. U ) ) ->
+        ( ( Z .x. X ) .+ Y ) e. U ) $=
+      ( vx va wcel co vb vj w3a wral cbs cfv wss wex simp2 eqid islssm 3ad2ant1
+      cv wb mpbid simp3d wi wceq oveq1 oveq1d eleq1d oveq2 rspc3v 3ad2ant3 mpd
+      ) HBSZFDSZKASIFSJFSUCZUCZQUMZRUMZETZUAUMZCTZFSZUAFUDRFUDQAUDZKIETZJCTZFSZ
+      VIFHUEUFZUGZUBUMFSUBUHZVPVIVGWAWBVPUCZVFVGVHUIVFVGVGWCUNVHQACDEFUBGVTHBRU
+      ALMVTUJNOPUKULUOUPVHVFVPVSUQVGVOVSKVKETZVMCTZFSVQVMCTZFSQRUAKIJAFFVJKURZV
+      NWEFWGVLWDVMCVJKVKEUSUTVAVKIURZWEWFFWHWDVQVMCVKIKEVBUTVAVMJURWFVRFVMJVQCV
+      BVAVCVDVE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
