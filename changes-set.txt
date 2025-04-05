@@ -90,8 +90,8 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
  1-Apr-25 cxpgt0d   [same]      Moved from SN's mathbox to main set.mm
-30-Mar-25 df-rnghom df-ringhm
-30-Mar-25 df-rngiso df-ringim
+30-Mar-25 df-rnghom df-rhm
+30-Mar-25 df-rngiso df-rim
 30-Mar-25 isrngisom isrngim
 30-Mar-25 isrngim   isrngim2
 30-Mar-25 df-rngisom df-rngim
