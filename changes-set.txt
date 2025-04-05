@@ -258,6 +258,10 @@ Date      Old       New         Notes
                                 from SF's mathbox to main set.mm
 14-Feb-25 grpinvcld ---         Moved from SN's mathbox to main set.mm
 14-Feb-25 fnfvelrnd ---         Moved from GS's mathbox to main set.mm
+12-Feb-25 rngo2times ringo2times
+12-Feb-25 rngnegr   ringnegr
+12-Feb-25 rngsubdir ringsubdir
+12-Feb-25 df-rng0   df-rng
 10-Feb-25 ---       ---         Moved surreal addition theorems
                                 from SF's mathbox to main set.mm
 10-Feb-25 onunel    ---         Moved from SF's mathbox to main set.mm
