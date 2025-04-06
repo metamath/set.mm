@@ -22703,6 +22703,16 @@ $)
   $}
 
   ${
+    $d z A $.  $d z B $.  $d x C $.  $d y C $.  $d x z $.  $d y z $.
+    $( Rotate three restricted universal quantifiers.  (Contributed by AV,
+       3-Dec-2021.) $)
+    ralrot3 $p |- ( A. x e. A A. y e. B A. z e. C ph
+                    <-> A. z e. C A. x e. A A. y e. B ph ) $=
+      ( wral ralcom ralbii bitri ) ADGHCFHZBEHACFHZDGHZBEHMBEHDGHLNBEACDFGIJMBD
+      EGIK $.
+  $}
+
+  ${
     $d y z A $.  $d x z B $.  $d x y C $.
     $( Swap 1st and 3rd restricted existential quantifiers.  (Contributed by
        NM, 8-Apr-2015.) $)
@@ -148921,6 +148931,19 @@ $)
   $}
 
   ${
+    mulgnn0cld.b $e |- B = ( Base ` G ) $.
+    mulgnn0cld.t $e |- .x. = ( .g ` G ) $.
+    mulgnn0cld.m $e |- ( ph -> G e. Mnd ) $.
+    mulgnn0cld.n $e |- ( ph -> N e. NN0 ) $.
+    mulgnn0cld.x $e |- ( ph -> X e. B ) $.
+    $( Closure of the group multiple (exponentiation) operation for a
+       nonnegative multiplier in a monoid.  Deduction associated with
+       ~ mulgnn0cl .  (Contributed by SN, 1-Feb-2025.) $)
+    mulgnn0cld $p |- ( ph -> ( N .x. X ) e. B ) $=
+      ( cmnd wcel cn0 co mulgnn0cl syl3anc ) ADLMENMFBMEFCOBMIJKBCDEFGHPQ $.
+  $}
+
+  ${
     mulgcld.1 $e |- B = ( Base ` G ) $.
     mulgcld.2 $e |- .x. = ( .g ` G ) $.
     mulgcld.3 $e |- ( ph -> G e. Grp ) $.
@@ -151872,11 +151895,11 @@ $)
       PVAVCUSUOUOCNZOUPVDUSUPVDUSOUOFUOFCRSTVCUTVDUSVCUKVBVBULUTVDOUKULVBUAUMVB
       UCZVEUKULVBUDBCDEUNUNFGHIUEUBUFUGUHUIUJ $.
 
-    rngo2times.u $e |- .1. = ( 1r ` R ) $.
+    ringo2times.u $e |- .1. = ( 1r ` R ) $.
     $( A ring element plus itself is two times the element.  "Two" in an
        arbitrary unital ring is the sum of the unity element with itself.
        (Contributed by AV, 24-Aug-2021.) $)
-    rngo2times $p |- ( ( R e. Ring /\ A e. B )
+    ringo2times $p |- ( ( R e. Ring /\ A e. B )
                        -> ( A .+ A ) = ( ( .1. .+ .1. ) .x. A ) ) $=
       ( crg wcel wa co ringlidm eqcomd oveq12d wceq simpl ringidcl adantr simpr
       ringdir syl13anc eqtr4d ) DKLZABLZMZAACNFAENZUICNZFFCNAENZUHAUIAUICUHUIAB
@@ -152191,7 +152214,7 @@ $)
     $( Negation in a ring is the same as right multiplication by -1.
        (Contributed by Jeff Madsen, 19-Jun-2010.)  (Revised by Mario Carneiro,
        2-Jul-2014.) $)
-    rngnegr $p |- ( ph -> ( X .x. ( N ` .1. ) ) = ( N ` X ) ) $=
+    ringnegr $p |- ( ph -> ( X .x. ( N ` .1. ) ) = ( N ` X ) ) $=
       ( cfv co wceq wcel syl syl2anc eqid cplusg c0g crg cgrp ringidcl grpinvcl
       ringgrp ringdi syl13anc grplinv oveq2d ringrz ringridm 3eqtr3rd wb ringcl
       eqtrd syl3anc grpinvid2 mpbird eqcomd ) AGFNZGEFNZDOZAVBVDPZVDGCUANZOZCUB
@@ -152221,11 +152244,11 @@ $)
     $( Negation of a product in a ring.  ( ~ mulneg2 analog.)  (Contributed by
        Jeff Madsen, 19-Jun-2010.)  (Revised by Mario Carneiro, 2-Jul-2014.) $)
     ringmneg2 $p |- ( ph -> ( X .x. ( N ` Y ) ) = ( N ` ( X .x. Y ) ) ) $=
-      ( co cur cfv crg wcel syl rngnegr wceq cgrp ringgrp eqid ringidcl syl2anc
-      grpinvcl ringass syl13anc ringcl syl3anc oveq2d 3eqtr3rd ) AFGDNZCOPZEPZD
-      NZFGUPDNZDNZUNEPFGEPZDNACQRZFBRZGBRZUPBRZUQUSUAKLMACUBRZUOBRZVDAVAVEKCUCS
-      AVAVFKBCUOHUOUDZUESBCEUOHJUGUFBCDFGUPHIUHUIABCDUOEUNHIVGJKAVAVBVCUNBRKLMB
-      CDFGHIUJUKTAURUTFDABCDUOEGHIVGJKMTULUM $.
+      ( co cur cfv crg wcel syl ringnegr wceq ringgrp ringidcl grpinvcl syl2anc
+      cgrp eqid ringass syl13anc ringcl syl3anc oveq2d 3eqtr3rd ) AFGDNZCOPZEPZ
+      DNZFGUPDNZDNZUNEPFGEPZDNACQRZFBRZGBRZUPBRZUQUSUAKLMACUFRZUOBRZVDAVAVEKCUB
+      SAVAVFKBCUOHUOUGZUCSBCEUOHJUDUEBCDFGUPHIUHUIABCDUOEUNHIVGJKAVAVBVCUNBRKLM
+      BCDFGHIUJUKTAURUTFDABCDUOEGHIVGJKMTULUM $.
 
     $( Double negation of a product in a ring.  ( ~ mul2neg analog.)
        (Contributed by Mario Carneiro, 4-Dec-2014.) $)
@@ -152260,7 +152283,7 @@ $)
     $( Ring multiplication distributes over subtraction.  ( ~ subdir analog.)
        (Contributed by Jeff Madsen, 19-Jun-2010.)  (Revised by Mario Carneiro,
        2-Jul-2014.) $)
-    rngsubdir $p |- ( ph ->
+    ringsubdir $p |- ( ph ->
       ( ( X .- Y ) .x. Z ) = ( ( X .x. Z ) .- ( Y .x. Z ) ) ) $=
       ( cfv co wcel wceq syl2anc cminusg crg cgrp ringgrp eqid grpinvcl ringdir
       cplusg syl ringmneg1 oveq2d eqtrd grpsubval oveq1d ringcl syl3anc 3eqtr4d
@@ -154875,6 +154898,693 @@ $)
         -> ( ( X .+ X ) = X <-> .0. = X ) ) $=
       ( clmod wcel cgrp co wceq wb lmodgrp grpid sylan ) CIJCKJDBJDDALDMEDMNCOB
       ACDEFGHPQ $.
+  $}
+
+  ${
+    lmod0vs.v $e |- V = ( Base ` W ) $.
+    lmod0vs.f $e |- F = ( Scalar ` W ) $.
+    lmod0vs.s $e |- .x. = ( .s ` W ) $.
+    lmod0vs.o $e |- O = ( 0g ` F ) $.
+    lmod0vs.z $e |- .0. = ( 0g ` W ) $.
+    $( Zero times a vector is the zero vector.  Equation 1a of [Kreyszig]
+       p. 51.  (Contributed by NM, 12-Jan-2014.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lmod0vs $p |- ( ( W e. LMod /\ X e. V ) -> ( O .x. X ) = .0. ) $=
+      ( clmod wcel co cplusg cfv wceq eqid syl wa cbs simpl crg lmodring adantr
+      ring0cl simpr syl13anc cgrp ringgrp grplid syl2anc oveq1d eqtr3d lmodvscl
+      lmodvsdir wb syl3anc lmod0vid syldan mpbid eqcomd ) EMNZFDNZUAZGCFAOZVFVG
+      VGEPQZOZVGRZGVGRZVFCCBPQZOZFAOZVIVGVFVDCBUBQZNZVPVEVNVIRVDVEUCZVFBUDNZVPV
+      DVRVEBEIUEUFZVOBCVOSZKUGTZWAVDVEUHZVHVLCCABVODEFHVHSZIJVTVLSZUQUIVFVMCFAV
+      FBUJNZVPVMCRVFVRWEVSBUKTWAVOVLBCCVTWDKULUMUNUOVDVEVGDNZVJVKURVFVDVPVEWFVQ
+      WAWBCABVODEFHIJVTUPUSVHDEVGGHWCLUTVAVBVC $.
+  $}
+
+  ${
+    lmodvs0.f $e |- F = ( Scalar ` W ) $.
+    lmodvs0.s $e |- .x. = ( .s ` W ) $.
+    lmodvs0.k $e |- K = ( Base ` F ) $.
+    lmodvs0.z $e |- .0. = ( 0g ` W ) $.
+    $( Anything times the zero vector is the zero vector.  Equation 1b of
+       [Kreyszig] p. 51.  (Contributed by NM, 12-Jan-2014.)  (Revised by Mario
+       Carneiro, 19-Jun-2014.) $)
+    lmodvs0 $p |- ( ( W e. LMod /\ X e. K ) -> ( X .x. .0. ) = .0. ) $=
+      ( clmod wcel wa c0g cfv cmulr co wceq eqid adantr crg ringrz sylan oveq1d
+      lmodring cbs simpl ring0cl syl lmod0vcl lmodvsass syl13anc lmod0vs syldan
+      simpr oveq2d eqtrd 3eqtr3d ) DKLZECLZMZEBNOZBPOZQZFAQZVBFAQZEFAQZFVAVDVBF
+      AUSBUALZUTVDVBRBDGUEZCBVCEVBIVCSZVBSZUBUCUDVAVEEVFAQZVGVAUSUTVBCLZFDUFOZL
+      ZVEVLRUSUTUGUSUTUOVAVHVMUSVHUTVITCBVBIVKUHUIUSVOUTVNDFVNSZJUJTZEVBAVCBCVN
+      DFVPGHIVJUKULVAVFFEAUSUTVOVFFRVQABVBVNDFFVPGHVKJUMUNZUPUQVRUR $.
+  $}
+
+  ${
+    $d C x y $.  $d E x y $.  $d K x y $.  $d N x y $.  $d V x y $.
+    $d W x y $.  $d X x y $.  $d .^ x y $.  $d .x. x y $.
+    lmodvsmmulgdi.v $e |- V = ( Base ` W ) $.
+    lmodvsmmulgdi.f $e |- F = ( Scalar ` W ) $.
+    lmodvsmmulgdi.s $e |- .x. = ( .s ` W ) $.
+    lmodvsmmulgdi.k $e |- K = ( Base ` F ) $.
+    lmodvsmmulgdi.p $e |- .^ = ( .g ` W ) $.
+    lmodvsmmulgdi.e $e |- E = ( .g ` F ) $.
+    $( Distributive law for a group multiple of a scalar multiplication.
+       (Contributed by AV, 2-Sep-2019.) $)
+    lmodvsmmulgdi $p |- ( ( W e. LMod /\ ( C e. K /\ N e. NN0 /\ X e. V ) ) ->
+                     ( N .^ ( C .x. X ) ) = ( ( N E C ) .x. X ) ) $=
+      ( wcel co wceq oveq1 vx vy cn0 w3a clmod wi wa cv c1 caddc oveq1d eqeq12d
+      cc0 imbi2d weq c0g simpr adantr eqid lmod0vs syl2anc simpl mulg0 lmodvscl
+      cfv syl syl3anc 3eqtr4rd cplusg lmodgrp grpmndd ad2antll adantl mulgnn0p1
+      cmnd lmodring ringmnd simprll mulgnn0cld lmodvsdir syl13anc eqcomd eqtr3d
+      crg sylan9eqr eqtrd exp31 a2d nn0ind exp4c 3imp21 impcom ) AFQZGUCQZJHQZU
+      DIUEQZGAJBRZDRZGACRZJBRZSZWNWMWOWPXAUFWNWMWOWPXAWMWOUGZWPUGZUAUHZWQDRZXDA
+      CRZJBRZSZUFXCUMWQDRZUMACRZJBRZSZUFXCUBUHZWQDRZXMACRZJBRZSZUFXCXMUIUJRZWQD
+      RZXRACRZJBRZSZUFXCXAUFUAUBGXDUMSZXHXLXCYCXEXIXGXKXDUMWQDTYCXFXJJBXDUMACTU
+      KULUNUAUBUOZXHXQXCYDXEXNXGXPXDXMWQDTYDXFXOJBXDXMACTUKULUNXDXRSZXHYBXCYEXE
+      XSXGYAXDXRWQDTYEXFXTJBXDXRACTUKULUNXDGSZXHXAXCYFXEWRXGWTXDGWQDTYFXFWSJBXD
+      GACTUKULUNXCEUPVEZJBRZIUPVEZXKXIXCWPWOYHYISXBWPUQZXBWOWPWMWOUQURZBEYGHIJY
+      IKLMYGUSZYIUSZUTVAXCXJYGJBXCWMXJYGSXBWMWPWMWOVBURZFCEAYGNYLPVCVFUKXCWQHQZ
+      XIYISXCWPWMWOYOYJYNYKABEFHIJKLMNVDVGZHDIWQYIKYMOVCVFVHXMUCQZXCXQYBYQXCXQY
+      BYQXCUGZXQUGXSXNWQIVIVEZRZYAYRXSYTSZXQYRIVOQZYQYOUUAWPUUBYQXBWPIIVJVKVLYQ
+      XCVBZXCYOYQYPVMHYSDIXMWQKOYSUSZVNVGURXQYRYTXPWQYSRZYAXNXPWQYSTYRXOAEVIVEZ
+      RZJBRZUUEYAYRWPXOFQWMWOUUHUUESXCWPYQYJVMYRFCEXMANPWPEVOQZYQXBWPEWDQUUIEIL
+      VPEVQVFVLZUUCYQWMWOWPVRZVSUUKXCWOYQYKVMYSUUFXOABEFHIJKUUDLMNUUFUSZVTWAYRU
+      UGXTJBYRXTUUGYRUUIYQWMXTUUGSUUJUUCUUKFUUFCEXMANPUULVNVGWBUKWCWEWFWGWHWIWJ
+      WKWL $.
+  $}
+
+  ${
+    $d V w $.  $d W w $.
+    lmodfopne.t $e |- .x. = ( .sf ` W ) $.
+    lmodfopne.a $e |- .+ = ( +f ` W ) $.
+    lmodfopne.v $e |- V = ( Base ` W ) $.
+    lmodfopne.s $e |- S = ( Scalar ` W ) $.
+    lmodfopne.k $e |- K = ( Base ` S ) $.
+    $( Lemma 1 for ~ lmodfopne .  (Contributed by AV, 2-Oct-2021.) $)
+    lmodfopnelem1 $p |- ( ( W e. LMod /\ .+ = .x. ) -> V = K ) $=
+      ( vw clmod wcel wceq cxp wfn wi wa ex plusffng scaffng fneq1 fndmu syl6bi
+      com13 impcom cv wex wb cgrp c0g cfv lmodgrp eqid grpidcl elex2 3syl xp11m
+      syl2anc simprbda expcom syl6 com23 com3r mp2d imp ) FMNZACOZEDOZVHAEEPZQZ
+      CDEPZQZVIVJRZEAFMIHUAECBDMFIJKGUBVLVNVHVOVLVNVHVORVLVNSZVIVHVJVPVIVKVMOZV
+      HVJRVNVLVIVQRVIVLVNVQVIVLCVKQZVNVQRVKACUCVRVNVQVKVMCUDTUEUFUGVHVQVJVHVQVJ
+      EEOZVHLUHENLUIZVTVQVJVSSUJVHFUKNFULUMZENVTFUNEFWAIWAUOUPLWAEUQURZWBLLEEDE
+      USUTVAVBVCVDTVEVFVG $.
+
+    lmodfopne.0 $e |- .0. = ( 0g ` S ) $.
+    lmodfopne.1 $e |- .1. = ( 1r ` S ) $.
+    $( Lemma 2 for ~ lmodfopne .  (Contributed by AV, 2-Oct-2021.) $)
+    lmodfopnelem2 $p |- ( ( W e. LMod /\ .+ = .x. )
+                          -> ( .0. e. V /\ .1. e. V ) ) $=
+      ( clmod wcel wceq wa eleq2 lmodfopnelem1 lmod0cl lmod1cl jca anbi12d syld
+      ex syl5ibrcom imp ) GPQZACRZHFQZDFQZSZUJUKFERZUNUJUKUOABCEFGIJKLMUAUGUJUN
+      UOHEQZDEQZSUJUPUQBEGHLMNUBDBEGLMOUCUDUOULUPUMUQFEHTFEDTUEUHUFUI $.
+
+    $( The (functionalized) operations of a left module (over a nonzero ring)
+       cannot be identical.  (Contributed by NM, 31-May-2008.)  (Revised by AV,
+       2-Oct-2021.) $)
+    lmodfopne $p |- ( ( W e. LMod /\ .1. =/= .0. ) -> .+ =/= .x. ) $=
+      ( clmod wcel wceq co ad2antrr wa lmodfopnelem2 cplusg simpll simpl adantl
+      wne c0g cfv eqid lmod0vcl w3a plusfvalg eqcomd syl3anc oveq ad2antlr cgrp
+      eqtrd lmodgrp adantr grprid syl2an cvsca lmod0cl scafvalg ancli syl simpr
+      lmodvs0 lmod1cl lmodvs1 ad2ant2rl 3eqtr2d grplcan syl13anc mpbid 3eqtr3rd
+      wb 3eqtrd mpdan ex necon3d imp ) GPQZDHUGACUGWEACDHWEACRZDHRZWEWFUAZHFQZD
+      FQZUAZWGABCDEFGHIJKLMNOUBWHWKUAZHGUHUIZGUCUIZSZHWMCSZHDWLWOHWMASZWPWLWEWI
+      WMFQZWOWQRWEWFWKUDZWKWIWHWIWJUEZUFWEWRWFWKFGWMKWMUJZUKTZWEWIWRULWQWOFWNAG
+      PHWMKWNUJZJUMUNUOWFWQWPRWEWKHWMACUPUQUSWHGURQZWIWOHRWKWEXDWFGUTZVAZWTFWNG
+      HWMKXCXAVBVCWLWPHWMGVDUIZSZWMDWLWEHEQZWRWPXHRWSWEXIWFWKBEGHLMNVEZTXBFCXGB
+      EPGHWMKLMIXGUJZVFUOWLWEXIUAZXHWMRWEXLWFWKWEXIXJVGTXGBEGHWMLXKMXAVJVHWLDWM
+      WNSZDDWNSZRZWMDRZWLXMDDDCSZXNWHXDWJXMDRWKXFWIWJVIZFWNGDWMKXCXAVBVCWLXQDDX
+      GSZDWLWEDEQZWJXQXSRWSWEXTWFWKDBEGLMOVKTWKWJWHXRUFZFCXGBEPGDDKLMIXKVFUOWEW
+      JXSDRWFWIXGDBFGDKLXKOVLVMUSWLXQDDASZXNWFXQYBRWEWKWFYBXQDDACUPUNUQWLWEWJWJ
+      YBXNRWSYAYAFWNAGPDDKXCJUMUOUSVNWLXDWRWJWJXOXPVSWEXDWFWKXETXBYAYAFWNGWMDDK
+      XCVOVPVQVTVRWAWBWCWD $.
+  $}
+
+  ${
+    $d x y B $.  $d x y G $.  $d x y K $.  $d x y ph $.  $d x y .x. $.
+    $d y H $.
+    lcomf.f $e |- F = ( Scalar ` W ) $.
+    lcomf.k $e |- K = ( Base ` F ) $.
+    lcomf.s $e |- .x. = ( .s ` W ) $.
+    lcomf.b $e |- B = ( Base ` W ) $.
+    lcomf.w $e |- ( ph -> W e. LMod ) $.
+    lcomf.g $e |- ( ph -> G : I --> K ) $.
+    lcomf.h $e |- ( ph -> H : I --> B ) $.
+    lcomf.i $e |- ( ph -> I e. V ) $.
+    $( A linear-combination sum is a function.  (Contributed by Stefan O'Rear,
+       28-Feb-2015.) $)
+    lcomf $p |- ( ph -> ( G oF .x. H ) : I --> B ) $=
+      ( vx wcel vy clmod cv wa co lmodvscl 3expb sylan inidm off ) ASUAGGGCHBBE
+      FIIAJUBTZSUCZHTZUAUCZBTZUDULUNCUEBTZOUKUMUOUPULCDHBJUNNKMLUFUGUHPQRRGUIUJ
+      $.
+  $}
+
+  ${
+    lmodvnegcl.v $e |- V = ( Base ` W ) $.
+    lmodvnegcl.n $e |- N = ( invg ` W ) $.
+    $( Closure of vector negative.  (Contributed by NM, 18-Apr-2014.)  (Revised
+       by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvnegcl $p |- ( ( W e. LMod /\ X e. V ) -> ( N ` X ) e. V ) $=
+      ( clmod wcel cgrp cfv lmodgrp grpinvcl sylan ) CGHCIHDBHDAJBHCKBCADEFLM
+      $.
+  $}
+
+  ${
+    lmodvnegid.v $e |- V = ( Base ` W ) $.
+    lmodvnegid.p $e |- .+ = ( +g ` W ) $.
+    lmodvnegid.z $e |- .0. = ( 0g ` W ) $.
+    lmodvnegid.n $e |- N = ( invg ` W ) $.
+    $( Addition of a vector with its negative.  (Contributed by NM,
+       18-Apr-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvnegid $p |- ( ( W e. LMod /\ X e. V ) -> ( X .+ ( N ` X ) ) = .0. ) $=
+      ( clmod wcel cgrp cfv co wceq lmodgrp grprinv sylan ) DKLDMLECLEEBNAOFPDQ
+      CADBEFGHIJRS $.
+  $}
+
+  ${
+    lmodvneg1.v $e |- V = ( Base ` W ) $.
+    lmodvneg1.n $e |- N = ( invg ` W ) $.
+    lmodvneg1.f $e |- F = ( Scalar ` W ) $.
+    lmodvneg1.s $e |- .x. = ( .s ` W ) $.
+    lmodvneg1.u $e |- .1. = ( 1r ` F ) $.
+    lmodvneg1.m $e |- M = ( invg ` F ) $.
+    $( Minus 1 times a vector is the negative of the vector.  Equation 2 of
+       [Kreyszig] p. 51.  (Contributed by NM, 18-Apr-2014.)  (Revised by Mario
+       Carneiro, 19-Jun-2014.) $)
+    lmodvneg1 $p |- ( ( W e. LMod /\ X e. V ) ->
+                      ( ( M ` .1. ) .x. X ) = ( N ` X ) ) $=
+      ( wcel cfv co wceq eqid eqtr3d clmod wa c0g cplusg cbs simpl cgrp lmod1cl
+      lmodfgrp adantr grpinvcl syl2an2r simpr lmodvscl syl3anc lmod0vrid syldan
+      lmodvnegcl lmodass syl13anc lmodvs1 oveq2d grplinv oveq1d lmod0vs 3eqtr3d
+      lmodvsdir lmodvnegid lmod0vlid ) GUAOZHFOZUBZBDPZHAQZGUCPZGUDPZQZVNHEPZVJ
+      VKVNFOZVQVNRVLVJVMCUEPZOZVKVSVJVKUFZVJCUGOZVKBVTOZWACGKUIZVJWDVKBCVTGKVTS
+      ZMUHUJZVTCDBWFNUKULZVJVKUMZVMACVTFGHIKLWFUNUOZVPFGVNVOIVPSZVOSZUPUQVLVNHV
+      RVPQZVPQZVOVRVPQZVQVRVLVNHVPQZVRVPQZWNWOVLVJVSVKVRFOZWQWNRWBWJWIEFGHIJURZ
+      VPFGVNHVRIWKUSUTVLWPVOVRVPVLVNBHAQZVPQZWPVOVLWTHVNVPABCFGHIKLMVAVBVLVMBCU
+      DPZQZHAQZCUCPZHAQXAVOVLXCXEHAVJWCVKWDXCXERWEWGVTXBCDBXEWFXBSZXESZNVCULVDV
+      LVJWAWDVKXDXARWBWHWGWIVPXBVMBACVTFGHIWKKLWFXFVGUTACXEFGHVOIKLXGWLVEVFTVDT
+      VLWMVOVNVPVPEFGHVOIWKWLJVHVBVJVKWRWOVRRWSVPFGVRVOIWKWLVIUQVFT $.
+  $}
+
+  ${
+    lmodvsneg.b $e |- B = ( Base ` W ) $.
+    lmodvsneg.f $e |- F = ( Scalar ` W ) $.
+    lmodvsneg.s $e |- .x. = ( .s ` W ) $.
+    lmodvsneg.n $e |- N = ( invg ` W ) $.
+    lmodvsneg.k $e |- K = ( Base ` F ) $.
+    lmodvsneg.m $e |- M = ( invg ` F ) $.
+    lmodvsneg.w $e |- ( ph -> W e. LMod ) $.
+    lmodvsneg.x $e |- ( ph -> X e. B ) $.
+    lmodvsneg.r $e |- ( ph -> R e. K ) $.
+    $( Multiplication of a vector by a negated scalar.  (Contributed by Stefan
+       O'Rear, 28-Feb-2015.) $)
+    lmodvsneg $p |- ( ph -> ( N ` ( R .x. X ) ) = ( ( M ` R ) .x. X ) ) $=
+      ( wcel cur cfv cmulr co clmod wceq cgrp crg lmodring syl ringgrp ringidcl
+      eqid grpinvcl syl2anc lmodvsass syl13anc ringnegl oveq1d lmodvscl syl3anc
+      lmodvneg1 3eqtr3rd ) AEUAUBZGUBZCEUCUBZUDZJDUDZVECJDUDZDUDZCGUBZJDUDVIHUB
+      ZAIUETZVEFTZCFTZJBTZVHVJUFQAEUGTZVDFTZVNAEUHTZVQAVMVSQEILUIUJZEUKUJAVSVRV
+      TFEVDOVDUMZULUJFEGVDOPUNUOSRVECDVFEFBIJKLMOVFUMZUPUQAVGVKJDAFEVFVDGCOWBWA
+      PVTSURUSAVMVIBTZVJVLUFQAVMVOVPWCQSRCDEFBIJKLMOUTVADVDEGHBIVIKNLMWAPVBUOVC
+      $.
+  $}
+
+  ${
+    lmodvsubcl.v $e |- V = ( Base ` W ) $.
+    lmodvsubcl.m $e |- .- = ( -g ` W ) $.
+    $( Closure of vector subtraction.  (Contributed by NM, 31-Mar-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvsubcl $p |- ( ( W e. LMod /\ X e. V /\ Y e. V ) ->
+      ( X .- Y ) e. V ) $=
+      ( clmod wcel cgrp co lmodgrp grpsubcl syl3an1 ) CHICJIDBIEBIDEAKBICLBCADE
+      FGMN $.
+  $}
+
+  ${
+    lmodcom.v $e |- V = ( Base ` W ) $.
+    lmodcom.a $e |- .+ = ( +g ` W ) $.
+    $( Left module vector sum is commutative.  (Contributed by G&eacute;rard
+       Lang, 25-Jun-2014.) $)
+    lmodcom $p |- ( ( W e. LMod /\ X e. V /\ Y e. V ) ->
+                    ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( wcel co wceq cfv eqid syl3anc syl13anc lmodvacl lmodvs1 syl2anc oveq12d
+      lmodvsdir lmodass clmod w3a csca cur cplusg cvsca cbs lmod1cl syl lmodacl
+      simp1 simp2 simp3 lmodvsdi eqtr3d 3eqtr3d 3eqtr4d cgrp wb lmodgrp grprcan
+      eqtrd mpbid 3com23 lmodlcan ) CUAHZDBHZEBHZUBZDDEAIZAIZDEDAIZAIZJZVJVLJZV
+      IDDAIZEAIZVJDAIZVKVMVIVQEAIZVREAIZJZVQVRJZVIVPEEAIZAIZVJVJAIZVSVTVICUCKZU
+      DKZWGWFUEKZIZDCUFKZIZWIEWJIZAIZWGVJWJIZWNAIZWDWEVIWIVJWJIZWMWOVIVFWIWFUGK
+      ZHZVGVHWPWMJVFVGVHUKZVIVFWGWQHZWTWRWSVIVFWTWSWGWFWQCWFLZWQLZWGLZUHUIZXDWH
+      WFWQCWGWGXAXBWHLZUJMVFVGVHULZVFVGVHUMZAWIWJWFWQBCDEFGXAWJLZXBUNNVIVFWTWTV
+      JBHZWPWOJWSXDXDABCDEFGOZAWHWGWGWJWFWQBCVJFGXAXHXBXESNUOVIWKVPWLWCAVIWKWGD
+      WJIZXKAIZVPVIVFWTWTVGWKXLJWSXDXDXFAWHWGWGWJWFWQBCDFGXAXHXBXESNVIXKDXKDAVI
+      VFVGXKDJWSXFWJWGWFBCDFXAXHXCPQZXMRVBVIWLWGEWJIZXNAIZWCVIVFWTWTVHWLXOJWSXD
+      XDXGAWHWGWGWJWFWQBCEFGXAXHXBXESNVIXNEXNEAVIVFVHXNEJWSXGWJWGWFBCEFXAXHXCPQ
+      ZXPRVBRVIWNVJWNVJAVIVFXIWNVJJWSXJWJWGWFBCVJFXAXHXCPQZXQRUPVIVFVPBHZVHVHVS
+      WDJWSVIVFVGVGXRWSXFXFABCDDFGOMZXGXGABCVPEEFGTNVIVFXIVGVHVTWEJWSXJXFXGABCV
+      JDEFGTNUQVICURHZVQBHZVRBHZVHWAWBUSVIVFXTWSCUTUIVIVFXRVHYAWSXSXGABCVPEFGOM
+      VIVFXIVGYBWSXJXFABCVJDFGOMXGBACVQVREFGVANVCVIVFVGVGVHVQVKJWSXFXFXGABCDDEF
+      GTNVIVFVGVHVGVRVMJWSXFXGXFABCDEDFGTNUPVIVFXIVLBHZVGVNVOUSWSXJVFVHVGYCABCE
+      DFGOVDXFABCVJVLDFGVENVC $.
+  $}
+
+  ${
+    $d x y W $.
+    $( A left module is an abelian group (of vectors, under addition).
+       (Contributed by NM, 8-Dec-2013.)  (Revised by Mario Carneiro,
+       25-Jun-2014.) $)
+    lmodabl $p |- ( W e. LMod -> W e. Abel ) $=
+      ( vx vy clmod wcel cbs cfv cplusg eqidd lmodgrp cv eqid lmodcom isabld )
+      ADEZBCAFGZAHGZAOPIOQIAJQPABKCKPLQLMN $.
+
+    $( A left module is a commutative monoid under addition.  (Contributed by
+       NM, 7-Jan-2015.) $)
+    lmodcmn $p |- ( W e. LMod -> W e. CMnd ) $=
+      ( clmod wcel cabl ccmn lmodabl ablcmn syl ) ABCADCAECAFAGH $.
+  $}
+
+  ${
+    lmodnegadd.v $e |- V = ( Base ` W ) $.
+    lmodnegadd.p $e |- .+ = ( +g ` W ) $.
+    lmodnegadd.t $e |- .x. = ( .s ` W ) $.
+    lmodnegadd.n $e |- N = ( invg ` W ) $.
+    lmodnegadd.r $e |- R = ( Scalar ` W ) $.
+    lmodnegadd.k $e |- K = ( Base ` R ) $.
+    lmodnegadd.i $e |- I = ( invg ` R ) $.
+    lmodnegadd.w $e |- ( ph -> W e. LMod ) $.
+    lmodnegadd.a $e |- ( ph -> A e. K ) $.
+    lmodnegadd.b $e |- ( ph -> B e. K ) $.
+    lmodnegadd.x $e |- ( ph -> X e. V ) $.
+    lmodnegadd.y $e |- ( ph -> Y e. V ) $.
+    $( Distribute negation through addition of scalar products.  (Contributed
+       by NM, 9-Apr-2015.) $)
+    lmodnegadd $p |- ( ph -> ( N ` ( ( A .x. X ) .+ ( B .x. Y ) ) )
+           = ( ( ( I ` A ) .x. X ) .+ ( ( I ` B ) .x. Y ) ) ) $=
+      ( co cfv cabl wcel clmod lmodabl syl lmodvscl syl3anc ablinvadd lmodvsneg
+      wceq oveq12d eqtrd ) ABLFUFZCMFUFZDUFIUGZUTIUGZVAIUGZDUFZBGUGLFUFZCGUGMFU
+      FZDUFAKUHUIZUTJUIZVAJUIZVBVEUQAKUJUIZVHUAKUKULAVKBHUILJUIVIUAUBUDBFEHJKLN
+      RPSUMUNAVKCHUIMJUIVJUAUCUECFEHJKMNRPSUMUNJDKIUTVANOQUOUNAVCVFVDVGDAJBFEHG
+      IKLNRPQSTUAUDUBUPAJCFEHGIKMNRPQSTUAUEUCUPURUS $.
+  $}
+
+  ${
+    lmod4.v $e |- V = ( Base ` W ) $.
+    lmod4.p $e |- .+ = ( +g ` W ) $.
+    $( Commutative/associative law for left module vector sum.  (Contributed by
+       NM, 4-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmod4 $p |- ( ( W e. LMod /\ ( X e. V /\ Y e. V ) /\ ( Z e. V /\ U e. V ) )
+        -> ( ( X .+ Y ) .+ ( Z .+ U ) ) = ( ( X .+ Z ) .+ ( Y .+ U ) ) ) $=
+      ( clmod wcel ccmn wa co wceq lmodcmn cmn4 syl3an1 ) DJKDLKECKFCKMGCKBCKME
+      FANGBANANEGANFBANANODPCADBEFGHIQR $.
+
+    lmodvaddsub4.m $e |- .- = ( -g ` W ) $.
+    $( Relationship between vector subtraction and addition.  (Contributed by
+       NM, 31-Mar-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvsubadd $p |- ( ( W e. LMod /\ ( A e. V /\ B e. V /\ C e. V ) )
+          -> ( ( A .- B ) = C <-> ( B .+ C ) = A ) ) $=
+      ( clmod wcel cabl w3a co wceq wb lmodabl ablsubadd sylan ) GKLGMLAFLBFLCF
+      LNABEOCPBCDOAPQGRFDGEABCHIJST $.
+
+    $( Vector addition/subtraction law.  (Contributed by NM, 31-Mar-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvaddsub4 $p |- ( ( W e. LMod /\ ( A e. V /\ B e. V ) /\
+                           ( C e. V /\ D e. V ) ) ->
+      ( ( A .+ B ) = ( C .+ D ) <-> ( A .- C ) = ( D .- B ) ) ) $=
+      ( clmod wcel cabl wa co wceq wb lmodabl abladdsub4 syl3an1 ) HLMHNMAGMBGM
+      OCGMDGMOABEPCDEPQACFPDBFPQRHSGEHFDABCIJKTUA $.
+
+    $( Addition/subtraction cancellation law for vectors.  (Contributed by NM,
+       16-Apr-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvpncan $p |- ( ( W e. LMod /\ A e. V /\ B e. V ) ->
+                       ( ( A .+ B ) .- B ) = A ) $=
+      ( clmod wcel cgrp co wceq lmodgrp grppncan syl3an1 ) FJKFLKAEKBEKABCMBDMA
+      NFOECFDABGHIPQ $.
+
+    $( Cancellation law for vector subtraction (Contributed by NM,
+       19-Apr-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvnpcan $p |- ( ( W e. LMod /\ A e. V /\ B e. V ) ->
+                       ( ( A .- B ) .+ B ) = A ) $=
+      ( clmod wcel cgrp co wceq lmodgrp grpnpcan syl3an1 ) FJKFLKAEKBEKABDMBCMA
+      NFOECFDABGHIPQ $.
+  $}
+
+  ${
+    lmodvsubval2.v $e |- V = ( Base ` W ) $.
+    lmodvsubval2.p $e |- .+ = ( +g ` W ) $.
+    lmodvsubval2.m $e |- .- = ( -g ` W ) $.
+    lmodvsubval2.f $e |- F = ( Scalar ` W ) $.
+    lmodvsubval2.s $e |- .x. = ( .s ` W ) $.
+    lmodvsubval2.n $e |- N = ( invg ` F ) $.
+    lmodvsubval2.u $e |- .1. = ( 1r ` F ) $.
+    $( Value of vector subtraction in terms of addition.  (Contributed by NM,
+       31-Mar-2014.)  (Proof shortened by Mario Carneiro, 19-Jun-2014.) $)
+    lmodvsubval2 $p |- ( ( W e. LMod /\ A e. V /\ B e. V )
+          -> ( A .- B ) = ( A .+ ( ( N ` .1. ) .x. B ) ) ) $=
+      ( wcel co cfv clmod cminusg wceq eqid grpsubval 3adant1 lmodvneg1 3adant2
+      w3a oveq2d eqtr4d ) JUARZAIRZBIRZUIZABGSZABJUBTZTZCSZAEHTBDSZCSUMUNUPUSUC
+      ULICJUQGABKLUQUDZMUEUFUOUTURACULUNUTURUCUMDEFHUQIJBKVANOQPUGUHUJUK $.
+  $}
+
+  ${
+    lmodsubvs.v $e |- V = ( Base ` W ) $.
+    lmodsubvs.p $e |- .+ = ( +g ` W ) $.
+    lmodsubvs.m $e |- .- = ( -g ` W ) $.
+    lmodsubvs.t $e |- .x. = ( .s ` W ) $.
+    lmodsubvs.f $e |- F = ( Scalar ` W ) $.
+    lmodsubvs.k $e |- K = ( Base ` F ) $.
+    lmodsubvs.n $e |- N = ( invg ` F ) $.
+    lmodsubvs.w $e |- ( ph -> W e. LMod ) $.
+    lmodsubvs.a $e |- ( ph -> A e. K ) $.
+    lmodsubvs.x $e |- ( ph -> X e. V ) $.
+    lmodsubvs.y $e |- ( ph -> Y e. V ) $.
+    $( Subtraction of a scalar product in terms of addition.  (Contributed by
+       NM, 9-Apr-2015.) $)
+    lmodsubvs $p |- ( ph
+          -> ( X .- ( A .x. Y ) ) = ( X .+ ( ( N ` A ) .x. Y ) ) ) $=
+      ( co cur cfv clmod wcel wceq lmodvscl syl3anc eqid lmodvsubval2 cmulr crg
+      cgrp lmodring ringgrp ringidcl grpinvcl syl2anc lmodvsass syl13anc oveq1d
+      syl ringnegl eqtr3d oveq2d eqtrd ) AKBLDUDZGUDZKEUEUFZHUFZVJDUDZCUDZKBHUF
+      ZLDUDZCUDAJUGUHZKIUHVJIUHZVKVOUITUBAVRBFUHZLIUHZVSTUAUCBDEFIJLMQPRUJUKKVJ
+      CDVLEGHIJMNOQPSVLULZUMUKAVNVQKCAVMBEUNUFZUDZLDUDZVNVQAVRVMFUHZVTWAWEVNUIT
+      AEUPUHZVLFUHZWFAEUOUHZWGAVRWITEJQUQVEZEURVEAWIWHWJFEVLRWBUSVEFEHVLRSUTVAU
+      AUCVMBDWCEFIJLMQPRWCULZVBVCAWDVPLDAFEWCVLHBRWKWBSWJUAVFVDVGVHVI $.
+  $}
+
+  ${
+    lmodsubdi.v $e |- V = ( Base ` W ) $.
+    lmodsubdi.t $e |- .x. = ( .s ` W ) $.
+    lmodsubdi.f $e |- F = ( Scalar ` W ) $.
+    lmodsubdi.k $e |- K = ( Base ` F ) $.
+    lmodsubdi.m $e |- .- = ( -g ` W ) $.
+    lmodsubdi.w $e |- ( ph -> W e. LMod ) $.
+    lmodsubdi.a $e |- ( ph -> A e. K ) $.
+    lmodsubdi.x $e |- ( ph -> X e. V ) $.
+    lmodsubdi.y $e |- ( ph -> Y e. V ) $.
+    $( Scalar multiplication distributive law for subtraction.  (Contributed by
+       NM, 2-Jul-2014.) $)
+    lmodsubdi $p |- ( ph
+       -> ( A .x. ( X .- Y ) ) = ( ( A .x. X ) .- ( A .x. Y ) ) ) $=
+      ( co cur cminusg cplusg clmod wcel wceq lmodvsubval2 syl3anc oveq2d cmulr
+      cfv eqid crg lmodring syl ringnegr ringnegl eqtr4d cgrp ringidcl grpinvcl
+      ringgrp syl2anc lmodvsass syl13anc 3eqtr3d lmodvscl lmodvsdi 3eqtr4rd
+      oveq1d ) ABIJFTZCTBIDUAUKZDUBUKZUKZJCTZHUCUKZTZCTZBICTZBJCTZFTZAVKVQBCAHU
+      DUEZIGUEZJGUEZVKVQUFPRSIJVPCVLDFVMGHKVPULZOMLVMULZVLULZUGUHUIAVSBVOCTZVPT
+      ZVSVNVTCTZVPTZVRWAAWHWJVSVPABVNDUJUKZTZJCTZVNBWLTZJCTZWHWJAWMWOJCAWMBVMUK
+      WOAEDWLVLVMBNWLULZWGWFAWBDUMUEZPDHMUNUOZQUPAEDWLVLVMBNWQWGWFWSQUQURVJAWBB
+      EUEZVNEUEZWDWNWHUFPQADUSUEZVLEUEZXAAWRXBWSDVBUOAWRXCWSEDVLNWGUTUOEDVMVLNW
+      FVAVCZSBVNCWLDEGHJKMLNWQVDVEAWBXAWTWDWPWJUFPXDQSVNBCWLDEGHJKMLNWQVDVEVFUI
+      AWBWTWCVOGUEZVRWIUFPQRAWBXAWDXEPXDSVNCDEGHJKMLNVGUHVPBCDEGHIVOKWEMLNVHVEA
+      WBVSGUEZVTGUEZWAWKUFPAWBWTWCXFPQRBCDEGHIKMLNVGUHAWBWTWDXGPQSBCDEGHJKMLNVG
+      UHVSVTVPCVLDFVMGHKWEOMLWFWGUGUHVIUR $.
+  $}
+
+  ${
+    lmodsubdir.v $e |- V = ( Base ` W ) $.
+    lmodsubdir.t $e |- .x. = ( .s ` W ) $.
+    lmodsubdir.f $e |- F = ( Scalar ` W ) $.
+    lmodsubdir.k $e |- K = ( Base ` F ) $.
+    lmodsubdir.m $e |- .- = ( -g ` W ) $.
+    lmodsubdir.s $e |- S = ( -g ` F ) $.
+    lmodsubdir.w $e |- ( ph -> W e. LMod ) $.
+    lmodsubdir.a $e |- ( ph -> A e. K ) $.
+    lmodsubdir.b $e |- ( ph -> B e. K ) $.
+    lmodsubdir.x $e |- ( ph -> X e. V ) $.
+    $( Scalar multiplication distributive law for subtraction.  (Contributed by
+       NM, 2-Jul-2014.) $)
+    lmodsubdir $p |- ( ph
+       -> ( ( A S B ) .x. X ) = ( ( A .x. X ) .- ( B .x. X ) ) ) $=
+      ( cminusg cfv cplusg co cur clmod wcel wceq cgrp crg lmodring syl ringgrp
+      eqid grpinvcl lmodvsdir syl13anc cmulr ringnegl oveq1d ringidcl lmodvsass
+      syl2anc eqtr3d oveq2d grpsubval lmodvscl syl3anc lmodvsubval2 3eqtr4d
+      eqtrd ) ABCFUBUCZUCZFUDUCZUEZKEUEZBKEUEZFUFUCZVMUCZCKEUEZEUEZJUDUCZUEZBCD
+      UEZKEUEVRWAHUEZAVQVRVNKEUEZWCUEZWDAJUGUHZBGUHZVNGUHZKIUHZVQWHUIRSAFUJUHZC
+      GUHZWKAFUKUHZWMAWIWORFJNULUMZFUNUMZTGFVMCOVMUOZUPVDUAWCVOBVNEFGIJKLWCUOZN
+      MOVOUOZUQURAWGWBVRWCAVTCFUSUCZUEZKEUEZWGWBAXBVNKEAGFXAVSVMCOXAUOZVSUOZWRW
+      PTUTVAAWIVTGUHZWNWLXCWBUIRAWMVSGUHZXFWQAWOXGWPGFVSOXEVBUMGFVMVSOWRUPVDTUA
+      VTCEXAFGIJKLNMOXDVCURVEVFVLAWEVPKEAWJWNWEVPUISTGVOFVMDBCOWTWRQVGVDVAAWIVR
+      IUHZWAIUHZWFWDUIRAWIWJWLXHRSUABEFGIJKLNMOVHVIAWIWNWLXIRTUACEFGIJKLNMOVHVI
+      VRWAWCEVSFHVMIJLWSPNMWRXEVJVIVK $.
+  $}
+
+  ${
+    lmodsubeq0.v $e |- V = ( Base ` W ) $.
+    lmodsubeq0.o $e |- .0. = ( 0g ` W ) $.
+    lmodsubeq0.m $e |- .- = ( -g ` W ) $.
+    $( If the difference between two vectors is zero, they are equal.
+       (Contributed by NM, 31-Mar-2014.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lmodsubeq0 $p |- ( ( W e. LMod /\ A e. V /\ B e. V )
+                  -> ( ( A .- B ) = .0. <-> A = B ) ) $=
+      ( clmod wcel cgrp co wceq wb lmodgrp grpsubeq0 syl3an1 ) EJKELKADKBDKABCM
+      FNABNOEPDECABFGHIQR $.
+
+    $( Subtraction of a vector from itself.  (Contributed by NM, 16-Apr-2014.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lmodsubid $p |- ( ( W e. LMod /\ A e. V ) -> ( A .- A ) = .0. ) $=
+      ( clmod wcel cgrp co wceq lmodgrp grpsubid sylan ) DIJDKJACJAABLEMDNCDBAE
+      FGHOP $.
+  $}
+
+  ${
+    $d q r w x y z B $.  $d q r w x y z F $.  $d q r w x y z ph $.
+    $d q r w x y z G $.  $d q r w x y z K $.  $d q r w x y z L $.
+    $d q r w x y z P $.
+    lmodprop2d.b1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    lmodprop2d.b2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    lmodprop2d.f $e |- F = ( Scalar ` K ) $.
+    lmodprop2d.g $e |- G = ( Scalar ` L ) $.
+    lmodprop2d.p1 $e |- ( ph -> P = ( Base ` F ) ) $.
+    lmodprop2d.p2 $e |- ( ph -> P = ( Base ` G ) ) $.
+    lmodprop2d.1 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    lmodprop2d.2 $e |- ( ( ph /\ ( x e. P /\ y e. P ) ) ->
+      ( x ( +g ` F ) y ) = ( x ( +g ` G ) y ) ) $.
+    lmodprop2d.3 $e |- ( ( ph /\ ( x e. P /\ y e. P ) ) ->
+      ( x ( .r ` F ) y ) = ( x ( .r ` G ) y ) ) $.
+    lmodprop2d.4 $e |- ( ( ph /\ ( x e. P /\ y e. B ) ) ->
+      ( x ( .s ` K ) y ) = ( x ( .s ` L ) y ) ) $.
+    $( If two structures have the same components (properties), one is a left
+       module iff the other one is.  This version of ~ lmodpropd also breaks up
+       the components of the scalar ring.  (Contributed by Mario Carneiro,
+       27-Jun-2015.) $)
+    lmodprop2d $p |- ( ph -> ( K e. LMod <-> L e. LMod ) ) $=
+      ( co vr vw vz vq cgrp wcel crg cv cvsca cfv wral w3a clmod wi lmodgrp a1i
+      cbs cplusg wceq cur wa eqid islmod simp2bi simplr simprl ad2antrr eleqtrd
+      cmulr simprr lmodvscl eleqtrrd ralrimivva ex grppropd imbitrrid ringpropd
+      syl3anc 3jcad adantlr 3eltr4d wb adantr simpll simprlr simprrr oveqrspc2v
+      syl12anc eleq1d simplr1 simprrl simplr3 ovrspc2v syl21anc oveq12d eqeq12d
+      grpcld oveq2d eqtrd simplr2 simprll ringacl ad2ant2r oveq1d 3anbi123d syl
+      ringcl ringidcl 3ad2antl1 simp3 biimpa 3adant2 rngidpropdg eqeq1d anbi12d
+      3ad2ant1 anassrs 2ralbidva 3anbi1d raleqbidv 3bitr3d 3bitr4g pm5.21ndd
+      eleq2d anbi1d ) AHUEUFZFUGUFZBUHZCUHZHUIUJZTZDUFZCDUKBEUKZULZHUMUFZIUMUFZ
+      AYOYFYGYMYOYFUNAHUOUPYOYGUNAYOYFYGUAUHZUBUHZYJTZHUQUJZUFZYQYRUCUHZHURUJZT
+      ZYJTZYSYQUUBYJTZUUCTZUSZUDUHZYQFURUJZTZYRYJTZUUIYRYJTZYSUUCTZUSZULZUUIYQF
+      VIUJZTZYRYJTZUUIYSYJTZUSZFUTUJZYRYJTZYRUSZVAZVAZUBYTUKZUCYTUKZUAFUQUJZUKZ
+      UDUVIUKZUCUBUUCUUJYJUUQUVBFUVIYTHUAUDYTVBZUUCVBZYJVBZLUVIVBZUUJVBZUUQVBZU
+      VBVBZVCZVDUPAYOYMAYOVAZYLBCEDUVTYHEUFZYIDUFZVAZVAZYKYTDUWDYOYHUVIUFYIYTUF
+      YKYTUFAYOUWCVEUWDYHEUVIUVTUWAUWBVFAEUVIUSZYOUWCNVGVHUWDYIDYTUVTUWAUWBVJAD
+      YTUSZYOUWCJVGZVHYHYJFUVIYTHYIUVLLUVNUVOVKVRUWGVLVMVNVSAYPYFYGYMYPYFAIUEUF
+      ZIUOABCDHIJKPVOZVPYPYGAGUGUFZYPUWHUWJYQYRIUIUJZTZIUQUJZUFZYQYRUUBIURUJZTZ
+      UWKTZUWLYQUUBUWKTZUWOTZUSZUUIYQGURUJZTZYRUWKTZUUIYRUWKTZUWLUWOTZUSZULZUUI
+      YQGVIUJZTZYRUWKTZUUIUWLUWKTZUSZGUTUJZYRUWKTZYRUSZVAZVAZUBUWMUKZUCUWMUKZUA
+      GUQUJZUKZUDUXTUKZUCUBUWOUXAUWKUXHUXMGUXTUWMIUAUDUWMVBZUWOVBUWKVBZMUXTVBZU
+      XAVBUXHVBUXMVBVCZVDABCEFGNOQRVQZVPAYPYMAYPVAZYLBCEDUYHUWCVAZYHYIUWKTZUWMY
+      KDUYIYPYHUXTUFYIUWMUFUYJUWMUFAYPUWCVEUYIYHEUXTUYHUWAUWBVFAEUXTUSZYPUWCOVG
+      VHUYIYIDUWMUYHUWAUWBVJADUWMUSZYPUWCKVGZVHYHUWKGUXTUWMIYIUYCMUYDUYEVKVRAUW
+      CYKUYJUSYPSVTUYMWAVMVNVSAYNYOYPWBAYNVAZYFYGUVKULUWHUWJUYBULYOYPUYNYFUWHYG
+      UWJUVKUYBAYFUWHWBYNUWIWCAYGUWJWBYNUYGWCUYNYSDUFZUUHUUOULZUVEVAZUBDUKZUCDU
+      KZUAEUKZUDEUKUWLDUFZUWTUXFULZUXPVAZUBDUKZUCDUKZUAEUKZUDEUKUVKUYBUYNUYSVUE
+      UDUAEEUYNUUIEUFZYQEUFZVAZVAUYQVUCUCUBDDUYNVUIUUBDUFZYRDUFZVAZUYQVUCWBUYNV
+      UIVULVAZVAZUYPVUBUVEUXPVUNUYOVUAUUHUWTUUOUXFVUNYSUWLDVUNAVUHVUKYSUWLUSAYN
+      VUMWDZUYNVUGVUHVULWEZUYNVUIVUJVUKWFZABCEDYJUWKYQYRSWGWHZWIVUNUUEUWQUUGUWS
+      VUNUUEYQUUDUWKTZUWQVUNAVUHUUDDUFUUEVUSUSVUOVUPVUNUUDYTDVUNYTUUCHYRUUBUVLU
+      VMYFYGYMAVUMWJZVUNYRDYTVUQAUWFYNVUMJVGZVHVUNUUBDYTUYNVUIVUJVUKWKZVVAVHWQV
+      VAVLABCEDYJUWKYQUUDSWGWHVUNUUDUWPYQUWKVUNAVUKVUJUUDUWPUSVUOVUQVVBABCDDUUC
+      UWOYRUUBPWGWHWRWSVUNUUGYSUUFUWOTZUWSVUNAUYOUUFDUFZUUGVVCUSVUOVUNVUHVUKYMU
+      YOVUPVUQYFYGYMAVUMWLZBCEDDYJYQYRWMWNZVUNVUHVUJYMVVDVUPVVBVVEBCEDDYJYQUUBW
+      MWNABCDDUUCUWOYSUUFPWGWHVUNYSUWLUUFUWRUWOVURVUNAVUHVUJUUFUWRUSVUOVUPVVBAB
+      CEDYJUWKYQUUBSWGWHWOWSWPVUNUULUXCUUNUXEVUNUULUUKYRUWKTZUXCVUNAUUKEUFVUKUU
+      LVVGUSVUOVUNUUKUVIEVUNYGUUIUVIUFZYQUVIUFZUUKUVIUFYFYGYMAVUMWTZVUNUUIEUVIU
+      YNVUGVUHVULXAZAUWEYNVUMNVGZVHZVUNYQEUVIVUPVVLVHZUVIUUJFUUIYQUVOUVPXBVRVVL
+      VLVUQABCEDYJUWKUUKYRSWGWHVUNUUKUXBYRUWKAVUIUUKUXBUSYNVULABCEEUUJUXAUUIYQQ
+      WGXCXDWSVUNUUNUUMYSUWOTZUXEVUNAUUMDUFZUYOUUNVVOUSVUOVUNVUGVUKYMVVPVVKVUQV
+      VEBCEDDYJUUIYRWMWNVVFABCDDUUCUWOUUMYSPWGWHVUNUUMUXDYSUWLUWOVUNAVUGVUKUUMU
+      XDUSVUOVVKVUQABCEDYJUWKUUIYRSWGWHVURWOWSWPXEVUNUVAUXLUVDUXOVUNUUSUXJUUTUX
+      KVUNUUSUURYRUWKTZUXJVUNAUUREUFVUKUUSVVQUSVUOVUNUURUVIEVUNYGVVHVVIUURUVIUF
+      VVJVVMVVNUVIFUUQUUIYQUVOUVQXGVRVVLVLVUQABCEDYJUWKUURYRSWGWHVUNUURUXIYRUWK
+      AVUIUURUXIUSYNVULABCEEUUQUXHUUIYQRWGXCXDWSVUNUUTUUIYSUWKTZUXKVUNAVUGUYOUU
+      TVVRUSVUOVVKVVFABCEDYJUWKUUIYSSWGWHVUNYSUWLUUIUWKVURWRWSWPVUNUVCUXNYRVUNU
+      VCUVBYRUWKTZUXNVUNAUVBEUFVUKUVCVVSUSVUOVUNUVBUVIEVUNYGUVBUVIUFVVJUVIFUVBU
+      VOUVRXHXFVVLVLVUQABCEDYJUWKUVBYRSWGWHVUNUVBUXMYRUWKVUNAYFYGUVBUXMUSVUOVUT
+      VVJAYFYGULBCEFGUGUGAYFUWEYGNXPAYFUYKYGOXPAYFUWAYIEUFVAYHYIUUQTYHYIUXHTUSY
+      GRXIAYFYGXJAYGUWJYFAYGUWJUYGXKXLXMVRXDWSXNXOXOXQXRXRUYNUYTUVJUDEUVIAUWEYN
+      NWCZUYNUYSUVHUAEUVIVVTUYNUYRUVGUCDYTAUWFYNJWCZUYNUYQUVFUBDYTVWAUYNUYPUUPU
+      VEUYNUYOUUAUUHUUOUYNDYTYSVWAYDXSYEXTXTXTXTUYNVUFUYAUDEUXTAUYKYNOWCZUYNVUE
+      UXSUAEUXTVWBUYNVUDUXRUCDUWMAUYLYNKWCZUYNVUCUXQUBDUWMVWCUYNVUBUXGUXPUYNVUA
+      UWNUWTUXFUYNDUWMUWLVWCYDXSYEXTXTXTXTYAXEUVSUYFYBVNYC $.
+  $}
+
+  ${
+    $d x y B $.  $d x y K $.  $d x y L $.  $d x y P $.  $d x y ph $.
+    lmodpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    lmodpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    lmodpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    lmodpropd.4 $e |- ( ph -> F = ( Scalar ` K ) ) $.
+    lmodpropd.5 $e |- ( ph -> F = ( Scalar ` L ) ) $.
+    lmodpropd.6 $e |- P = ( Base ` F ) $.
+    lmodpropd.7 $e |- ( ( ph /\ ( x e. P /\ y e. B ) ) ->
+      ( x ( .s ` K ) y ) = ( x ( .s ` L ) y ) ) $.
+    $( If two structures have the same components (properties), one is a left
+       module iff the other one is.  (Contributed by Mario Carneiro,
+       8-Feb-2015.)  (Revised by Mario Carneiro, 27-Jun-2015.) $)
+    lmodpropd $p |- ( ph -> ( K e. LMod <-> L e. LMod ) ) $=
+      ( cfv cbs fveq2d cplusg cmulr csca eqid eqtrid cv wcel wceq eqtr3d adantr
+      wa oveqd lmodprop2d ) ABCDEGUAPZHUAPZGHIJULUBUMUBAEFQPZULQPNAFULQLRUCAEUN
+      UMQPNAFUMQMRUCKABUDZEUECUDZEUEUIZUIZULSPUMSPUOUPURULUMSAULUMUFUQAFULUMLMU
+      GUHZRUJURULTPUMTPUOUPURULUMTUSRUJOUK $.
+  $}
+
+  ${
+    $d .X. q r w x $.  $d .X. s v $.  $d .x. q r w x $.  $d .x. s v $.
+    $d K q r x $.  $d K s v $.  $d V q r w x $.  $d V s v $.  $d a r w $.
+    $d a s v $.  $d b q r w $.  $d b s v $.  $d c s v $.  $d c w $.  $d F j $.
+    $d K j $.  $d R j $.  $d V j $.
+    rmodislmod.v $e |- V = ( Base ` R ) $.
+    rmodislmod.a $e |- .+ = ( +g ` R ) $.
+    rmodislmod.s $e |- .x. = ( .s ` R ) $.
+    rmodislmod.f $e |- F = ( Scalar ` R ) $.
+    rmodislmod.k $e |- K = ( Base ` F ) $.
+    rmodislmod.p $e |- .+^ = ( +g ` F ) $.
+    rmodislmod.t $e |- .X. = ( .r ` F ) $.
+    rmodislmod.u $e |- .1. = ( 1r ` F ) $.
+    rmodislmod.r $e |- ( R e. Grp /\ F e. Ring
+                         /\ A. q e. K A. r e. K A. x e. V A. w e. V
+                     ( ( ( w .x. r ) e. V
+                      /\ ( ( w .+ x ) .x. r ) = ( ( w .x. r ) .+ ( x .x. r ) )
+                      /\ ( w .x. ( q .+^ r ) ) = ( ( w .x. q ) .+ ( w .x. r ) )
+                    ) /\ ( ( w .x. ( q .X. r ) ) = ( ( w .x. q ) .x. r )
+                      /\ ( w .x. .1. ) = w ) ) ) $.
+    rmodislmod.m $e |- .* = ( s e. K , v e. V |-> ( v .x. s ) ) $.
+    rmodislmod.l $e |- L = ( R sSet <. ( .s ` ndx ) , .* >. ) $.
+    $( Lemma for ~ rmodislmod .  This is the part of the proof of ~ rmodislmod
+       which requires the scalar ring to be commutative.  (Contributed by AV,
+       3-Dec-2021.) $)
+    rmodislmodlem $p |- ( ( F e. CRing /\ ( a e. K /\ b e. K /\ c e. V ) )
+                          -> ( ( a .X. b ) .* c ) = ( a .* ( b .* c ) ) ) $=
+      ( vj ccrg wcel cv w3a wa co wceq cgrp crg wral simprl 2ralimi ralrot3 wex
+      wi simp1i c0g cfv eqid grpidcl elex2 syl r19.3rmv mp2b biimpri weq oveq2d
+      wb oveq1 oveq2 oveq1d eqeq12d rspc3v 3com12 syl5com sylbi eqcom imbitrrdi
+      3ad2ant3 ax-mp adantl crngcom 3expb expcom ancoms 3adant3 impcom cvv cmpo
+      eqtrd a1i oveq12 simp2 simp3 vex cvsca vscaslid slotex ovexg mp3an ovmpod
+      eqeltri simp1 simpl1 simp2i ringgrp ralcom eleq1d rspc2v 3adant1 3ad2ant2
+      3syl ringcl 3expib cmulr mulrslid 3eqtr4rd ) JUMUNZRUOZLUNZSUOZLUNZTUOZNU
+      NZUPZUQZYOYMGURZYKGURZYOYKYMHURZGURZYKYMYOKURZKURZUUAYOKURZYRYTYOYMYKHURZ
+      GURZUUBYQYTUUGUSZYJFUTUNZJVAUNZBUOZPUOZGURZNUNZUUKAUOZDURUULGURUUMUUOUULG
+      URDURUSZUUKQUOZUULEURGURUUKUUQGURZUUMDURUSZUPZUUKUUQUULHURZGURZUURUULGURZ
+      USZUUKIGURUUKUSZUQZUQZBNVBANVBZPLVBQLVBZUPZYQUUHVGZUIUVIUUIUVKUUJUVIUVDBN
+      VBZANVBZPLVBQLVBZUVKUVHUVMQPLLUVGUVDABNNUUTUVDUVEVCVDVDUVNYQUUGYTUSZUUHUV
+      NUVLPLVBQLVBZANVBZYQUVOVGUVLQPALLNVEUVQUVPYQUVOUVPUVQUUIULUOZNUNULVFZUVPU
+      VQVTUUIUUJUVIUIVHZUUIFVIVJZNUNUVSNFUWAUAUWAVKVLULUWANVMVNZUVPAULNVOVPVQYN
+      YLYPUVPUVOVGUVDUVOUUKYMUULHURZGURZUUKYMGURZUULGURZUSUUKUUFGURZUWEYKGURZUS
+      QPBYMYKYOLLNQSVRZUVBUWDUVCUWFUWIUVAUWCUUKGUUQYMUULHWAVSUWIUURUWEUULGUUQYM
+      UUKGWBWCWDPRVRZUWDUWGUWFUWHUWJUWCUUFUUKGUULYKYMHWBVSUULYKUWEGWBWDBTVRZUWG
+      UUGUWHYTUUKYOUUFGWAUWKUWEYSYKGUUKYOYMGWAZWCWDWEWFWGWHYTUUGWIWJVNWKWLWMYRU
+      UFUUAYOGYQYJUUFUUAUSZYLYNYJUWMVGZYPYNYLUWNYJYNYLUQUWMYJYNYLUWMLJHYMYKUEUG
+      WNWOWPWQWRWSVSXBYQUUDYTUSYJYQUUDYKYSKURYTYQUUCYSYKKYQOCYMYOLNCUOZOUOZGURZ
+      YSKWTKOCLNUWQXAUSYQUJXCZOSVRZCTVRZUQUWQYSUSZYQUWTUWSUXAUWOYOUWPYMGXDWQWMY
+      LYNYPXEYLYNYPXFZYSWTUNZYQYOWTUNZGWTUNZYMWTUNZUXCTXGZGFXHVJZWTUCUUIUXHWTUN
+      UVTFXHUTXIXJWLXNZSXGZYOYMGWTWTWTXKXLZXCXMVSYQOCYKYSLNUWQYTKWTUWRORVRZUWOY
+      SUSZUQUWQYTUSZYQUXMUXLUXNUWOYSUWPYKGXDWQWMYLYNYPXOYNYPYSNUNZYLUVJYNYPUQZU
+      XOVGZUIUVIUUIUXQUUJUVIUUNBNVBZANVBZPLVBZQLVBZUXTUXQUVHUXSQPLLUVGUUNABNNUU
+      NUUPUUSUVFXPVDVDUXTUYAJVIVJZLUNZUVRLUNULVFUXTUYAVTUUJJUTUNUYCUUIUUJUVIUIX
+      QZJXRLJUYBUEUYBVKVLVPULUYBLVMUXTQULLVOVPVQUXTUXRPLVBZANVBZUXQUXRPALNXSUYF
+      UYEUXPUXOUYEUYFUUIUVSUYEUYFVTUVTUWBUYEAULNVOVPVQUUNUXOUWENUNPBYMYOLNPSVRU
+      UMUWENUULYMUUKGWBXTUWKUWEYSNUWLXTYAWGWHYDWKWLYBYTWTUNZYQUXCUXEYKWTUNZUYGU
+      XKUXIRXGZYSYKGWTWTWTXKXLXCXMXBWMYQUUEUUBUSYJYQOCUUAYOLNUWQUUBKWTUWRUWPUUA
+      USZUWTUQUWQUUBUSZYQUWTUYJUYKUWOYOUWPUUAGXDWQWMYLYNUUALUNZYPUVJYLYNUQUYLVG
+      ZUIUUJUUIUYMUVIUUJYLYNUYLLJHYKYMUEUGYEYFYCWLWRUXBUUBWTUNZYQUXDUXEUUAWTUNZ
+      UYNUXGUXIUYHHWTUNUXFUYOUYIHJYGVJZWTUGUUJUYPWTUNUYDJYGVAYHXJWLXNUXJYKYMHWT
+      WTWTXKXLYOUUAGWTWTWTXKXLXCXMWMYI $.
+
+    $d F a b c $.  $d F s v $.  $d K a b c $.  $d L a $.  $d V a b c $.
+    $d .1. a $.  $d .1. s v $.  $d .1. q r w x $.  $d .X. b c $.
+    $d .+ a b c $.  $d .+ q r w x $.  $d .+ s v $.  $d .+^ q r w x $.
+    $d .+^ s v $.  $d .+^ b c $.  $d .* a b c $.  $d a q x $.  $d c x $.
+    $d .1. j $.  $d F j $.  $d K j $.  $d R j $.  $d V j $.
+    $( The right module ` R ` induces a left module ` L ` by replacing the
+       scalar multiplication with a reversed multiplication if the scalar ring
+       is commutative.  The hypothesis "rmodislmod.r" is a definition of a
+       right module analogous to Definition ~ df-lmod of a left module, see
+       also ~ islmod .  (Contributed by AV, 3-Dec-2021.)  (Proof shortened by
+       AV, 18-Oct-2024.) $)
+    rmodislmod $p |- ( F e. CRing -> L e. LMod ) $=
+      ( va vb vc vj ccrg wcel cbs cfv wceq cnx cvsca cop csts co cvv crg cv w3a
+      cgrp wa simp1i wfn basfn simp2i elexi funfvex funfni mp2an eqeltri mpoexg
+      baseslid vscandxnbasendx necomi cslot cn vscaslid simpri setsslnid eqcomi
+      eqtri fveq2i a1i cplusg plusgslid vscandxnplusgndx 3eqtr4i vscandxnscandx
+      wral scaslid setsslid cmulr cur crngring eqtr4i grpprop weq oveq12 ancoms
+      csca adantl simp2 simp3 vex slotex ax-mp ovexg mp3an ovmpod wi 2ralimi wb
+      wex elex2 syl r19.3rmv biimpri oveq2 oveq1 3adant1 syl5com sylbi 3ad2ant3
+      eleq1d 3syl simp1 grpcl oveq12d eqeq12d oveq1d oveq2d rspc3v eqtrd simpl1
+      mpbi cmpo ringidcl ralcom c0g grpidcl rspc2v eqeltrd mp3an1 simpl2 3com23
+      eqid eqtr4d simpl3 ralrot3 ringgrp 3ad2ant2 3adant3 3eqtr4d rmodislmodlem
+      3expib adantr simpr simprr id rspcv sylbir islmodd ) JUMUNZUIUJUKLDEKHIJN
+      MNMUOUPZUQUVJNFURUSUPZKUTVAVBZUOUPZUVKNFUOUPZUVNRFVGUNZKVCUNZUVOUVNUQUVPJ
+      VDUNZBVEZPVEZGVBZNUNZUVSAVEZDVBZUVTGVBZUWAUWCUVTGVBZDVBZUQZUVSQVEZUVTEVBZ
+      GVBZUVSUWIGVBZUWADVBZUQZVFZUVSUWIUVTHVBGVBUWLUVTGVBUQZUVSIGVBZUVSUQZVHZVH
+      ZBNWPANWPZPLWPQLWPZUFVIZLVCUNNVCUNUVQLJUOUPZVCUBUOVCVJZJVCUNUXDVCUNZVKJVD
+      UVPUVRUXBUFVLZVMUXFVCJUOJUOVNVOVPVQNUVOVCRUXEFVCUNUVOVCUNZVKFVGUXCVMUXHVC
+      FUOFUOVNVOVPVQOCLNCVEZOVEZGVBZVCVCKUGVRVPZVGKUVLUOVCFVSUVLURUOUPVTWAUSUVL
+      WBUQUVLWCUNWDWEZWFVPWHUVMMUOMUVMUHWGZWIWHZWJDMWKUPZUQUVJFWKUPZUVMWKUPZDUX
+      PUVPUVQUXQUXRUQUXCUXLVGKUVLWKVCFWLUVLURWKUPWMWAUXMWFVPZSMUVMWKUHWIZWNWJJM
+      XGUPZUQUVJFXGUPZUVMXGUPZJUYAUVPUVQUYBUYCUQUXCUXLVGKUVLXGVCFWQUVLURXGUPWOW
+      AUXMWFVPUAMUVMXGUHWIWNWJKMUSUPZUQUVJKUVMUSUPZUYDUVPUVQKUYEUQUXCUXLVGKUSVC
+      FWDWRVPUVMMUSUXNWIWHWJLUXDUQUVJUBWJEJWKUPZUQUVJUCWJHJWSUPUQUVJUDWJIJWTUPU
+      QUVJUEWJJXAZMVGUNZUVJUVPUYHUXCFMUVONUVKNUVORWGUXOWHUXQUXRUXPUXSUXTXBXCUUB
+      WJUVJUIVEZLUNZUJVEZNUNZVFZUYIUYKKVBZUYKUYIGVBZNUYMOCUYIUYKLNUXKUYOKVCKOCL
+      NUXKUUCUQZUYMUGWJOUIXDZCUJXDZVHZUXKUYOUQZUYMUYRUYQUYTUXIUYKUXJUYIGXEXFZXH
+      UVJUYJUYLXIUVJUYJUYLXJUYOVCUNZUYMUYKVCUNZGVCUNZUYIVCUNZVUBUJXKZGFUSUPZVCT
+      UVPVUGVCUNUXCFUSVGWDXLXMVQZUIXKZUYKUYIGVCVCVCXNXOZWJXPUVPUVRUXBVFZUYMUYON
+      UNZXQZUFUXBUVPVUMUVRUXBUWBBNWPZANWPZPLWPZQLWPZVUPVUMUXAVUOQPLLUWTUWBABNNU
+      WBUWHUWNUWSUUAXRXRVUPVUQULVEZLUNULXTZVUPVUQXSUVRVUSUXGUVRILUNZVUSLJIUBUEU
+      UDZULILYAYBXMZVUPQULLYCXMYDVUPVUNPLWPZANWPZVUMVUNPALNUUEVVDVVCUYMVULVVCVV
+      DVURNUNULXTZVVCVVDXSFUUFUPZNUNZVVEUVPVVGUXCNFVVFRVVFUUMUUGXMULVVFNYAXMZVV
+      CAULNYCXMYDUYJUYLVVCVULXQUVJUWBVULUVSUYIGVBZNUNPBUYIUYKLNPUIXDZUWAVVINUVT
+      UYIUVSGYEZYKBUJXDZVVIUYONUVSUYKUYIGYFZYKUUHYGYHYIYLYJXMUUIUVJUYJUYLUKVEZN
+      UNZVFZVHUYIUYKVVNDVBZKVBZUYOVVNUYIGVBZDVBZUYNUYIVVNKVBZDVBZVVPVVRVVTUQUVJ
+      VVPVVRVVQUYIGVBZVVTVVPOCUYIVVQLNUXKVWCKVCUYPVVPUGWJZUYQUXIVVQUQZVHUXKVWCU
+      QZVVPVWEUYQVWFUXIVVQUXJUYIGXEXFXHUYJUYLVVOYMZUYLVVOVVQNUNZUYJUVPUYLVVOVWH
+      UXCNDFUYKVVNRSYNUUJYGVWCVCUNZVVPVVQVCUNZVUDVUEVWIVUCDVCUNVVNVCUNZVWJVUFDU
+      XQVCSUVPUXQVCUNUXCFWKVGWLXLXMVQUKXKZUYKVVNDVCVCVCXNXOVUHVUIVVQUYIGVCVCVCX
+      NXOWJXPVUKVVPVWCVVTUQZXQZUFUXBUVPVWNUVRUXBUWHBNWPANWPZPLWPZQLWPZVWNUXAVWO
+      QPLLUWTUWHABNNUWBUWHUWNUWSUUKXRXRVWQVWPVVPVWMVWPVWQVUSVWPVWQXSVVBVWPQULLY
+      CXMYDUYJVVOUYLVWPVWMXQUWHVWMUWDUYIGVBZVVIUWCUYIGVBZDVBZUQUVSVVNDVBZUYIGVB
+      ZVVIVVSDVBZUQPABUYIVVNUYKLNNVVJUWEVWRUWGVWTUVTUYIUWDGYEVVJUWAVVIUWFVWSDVV
+      KUVTUYIUWCGYEYOYPAUKXDZVWRVXBVWTVXCVXDUWDVXAUYIGUWCVVNUVSDYEYQVXDVWSVVSVV
+      IDUWCVVNUYIGYFYRYPVVLVXBVWCVXCVVTVVLVXAVVQUYIGUVSUYKVVNDYFYQVVLVVIUYOVVSD
+      VVMYQYPYSUULYHYBYJXMYTXHVVPVWBVVTUQUVJVVPUYNUYOVWAVVSDVVPOCUYIUYKLNUXKUYO
+      KVCVWDUYSUYTVVPVUAXHVWGUYJUYLVVOXIVUBVVPVUJWJXPVVPOCUYIVVNLNUXKVVSKVCVWDU
+      YQCUKXDZVHZUXKVVSUQZVVPVXEUYQVXGUXIVVNUXJUYIGXEXFZXHVWGUYJUYLVVOXJVVSVCUN
+      ZVVPVWKVUDVUEVXIVWLVUHVUIVVNUYIGVCVCVCXNXOZWJXPYOXHUUNUYJUYKLUNZVVOVFZUYI
+      UYKEVBZVVNKVBZVWAUYKVVNKVBZDVBZUQUVJVXLVVNVXMGVBZVVSVVNUYKGVBZDVBZVXNVXPV
+      UKVXLVXQVXSUQZXQZUFUXBUVPVYAUVRUXBUWNBNWPZANWPZPLWPQLWPZVYAUXAVYCQPLLUWTU
+      WNABNNUWBUWHUWNUWSUUOXRXRVYDVYBPLWPQLWPZANWPZVYAVYBQPALLNUUPVYFVYEVXLVXTV
+      YEVYFVVEVYEVYFXSVVHVYEAULNYCXMYDUWNVXTUVSUYIUVTEVBZGVBZVVIUWADVBZUQUVSVXM
+      GVBZVVIUVSUYKGVBZDVBZUQQPBUYIUYKVVNLLNQUIXDZUWKVYHUWMVYIVYMUWJVYGUVSGUWIU
+      YIUVTEYFYRVYMUWLVVIUWADUWIUYIUVSGYEYQYPPUJXDZVYHVYJVYIVYLVYNVYGVXMUVSGUVT
+      UYKUYIEYEYRVYNUWAVYKVVIDUVTUYKUVSGYEYRYPBUKXDZVYJVXQVYLVXSUVSVVNVXMGYFVYO
+      VVIVVSVYKVXRDUVSVVNUYIGYFUVSVVNUYKGYFYOYPYSYHYIYBYJXMVXLOCVXMVVNLNUXKVXQK
+      VCUYPVXLUGWJZUXJVXMUQZVXEVHUXKVXQUQZVXLVXEVYQVYRUXIVVNUXJVXMGXEXFXHUYJVXK
+      VXMLUNZVVOVUKUYJVXKVHVYSXQZUFUVRUVPVYTUXBUVRJVGUNZVYTJUUQWUAUYJVXKVYSLEJU
+      YIUYKUBUCYNUVBYBUURXMUUSUYJVXKVVOXJZVXQVCUNZVXLVWKVUDVXMVCUNZWUCVWLVUHVUE
+      EVCUNVUCWUDVUIEUYFVCUCUVRUYFVCUNUXGJWKVDWLXLXMVQVUFUYIUYKEVCVCVCXNXOVVNVX
+      MGVCVCVCXNXOWJXPVXLVWAVVSVXOVXRDVXLOCUYIVVNLNUXKVVSKVCVYPVXFVXGVXLVXHXHUY
+      JVXKVVOYMWUBVXIVXLVXJWJXPVXLOCUYKVVNLNUXKVXRKVCVYPOUJXDZVXEVHUXKVXRUQZVXL
+      VXEWUEWUFUXIVVNUXJUYKGXEXFXHUYJVXKVVOXIWUBVXRVCUNZVXLVWKVUDVUCWUGVWLVUHVU
+      FVVNUYKGVCVCVCXNXOWJXPYOUUTXHABCDEFGHIJKLMNOPQUIUJUKRSTUAUBUCUDUEUFUGUHUV
+      AUVJUYINUNZVHZIUYIKVBUYIIGVBZUYIWUIOCIUYILNUXKWUJKVCUYPWUIUGWJUXJIUQZCUIX
+      DZVHUXKWUJUQZWUIWULWUKWUMUXIUYIUXJIGXEXFXHUVJVUTWUHUVJUVRVUTUYGVVAYBUVCUV
+      JWUHUVDWUJVCUNZWUIVUEVUDVUTWUNVUIVUHUVRVUTUXGVVAXMUYIIGVCVCLXNXOWJXPVUKWU
+      IWUJUYIUQZXQZUFUXBUVPWUPUVRUXBUWRBNWPZANWPZPLWPZQLWPZWUSWUPUXAWURQPLLUWTU
+      WRABNNUWOUWPUWRUVEXRXRWUSWUTVUSWUSWUTXSVVBWUSQULLYCXMYDWUSWURWUPVUSWURWUS
+      XSVVBWURPULLYCXMWURWUQWUIWUOWUQWURVVEWUQWURXSVVHWUQAULNYCXMYDWUHWUQWUOXQU
+      VJUWRWUOBUYINBUIXDZUWQWUJUVSUYIUVSUYIIGYFWVAUVFYPUVGXHYHUVHYLYJXMYTUVI $.
   $}
 
 
