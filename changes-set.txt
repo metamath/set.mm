@@ -81,7 +81,6 @@ proposed  syl5ibrcom imbitrridcom
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
-underway  syl6ibr   imbitrrdi
 proposed  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
 (Please send any comments on these proposals to the mailing list or
@@ -92,6 +91,7 @@ Date      Old       New         Notes
  6-Apr-25 mpomulcn  [same]      Moved from GG's mathbox to main set.mm
  6-Apr-25 ovmul     [same]      Moved from GG's mathbox to main set.mm
  6-Apr-25 mpomulf   [same]      Moved from GG's mathbox to main set.mm
+ 5-Apr-25 syl6ibr   imbitrrdi
  1-Apr-25 cxpgt0d   [same]      Moved from SN's mathbox to main set.mm
 25-Mar-25 syl6ib    imbitrdi
 24-Mar-25 rngurd    ringurd     Moved from TA's mathbox to main set.mm
