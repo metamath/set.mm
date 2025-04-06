@@ -155756,6 +155756,26 @@ $)
       WFUQRVFUTVAWNVDVCWKBJVSVTWRWDWAWMIVNAVLBVHDFEVKWGWQWFWHHURUSTT $.
   $}
 
+  ${
+    lssvancl.v $e |- V = ( Base ` W ) $.
+    lssvancl.p $e |- .+ = ( +g ` W ) $.
+    lssvancl.s $e |- S = ( LSubSp ` W ) $.
+    lssvancl.w $e |- ( ph -> W e. LMod ) $.
+    lssvancl.u $e |- ( ph -> U e. S ) $.
+    lssvancl.x $e |- ( ph -> X e. U ) $.
+    lssvancl.y $e |- ( ph -> Y e. V ) $.
+    lssvancl.n $e |- ( ph -> -. Y e. U ) $.
+    $( Non-closure: if one vector belongs to a subspace but another does not,
+       their sum does not belong.  Useful for obtaining a new vector not in a
+       subspace.  (Contributed by NM, 14-May-2015.) $)
+    lssvancl1 $p |- ( ph -> -. ( X .+ Y ) e. U ) $=
+      ( co wcel clmod adantr wa csg cfv wceq cabl lmodabl syl syl3anc ablpncan2
+      lsselg eqid simpr lssvsubcl syl22anc eqeltrrd mtand ) AGHBQZDRZHDRPAURUAZ
+      UQGFUBUCZQZHDAVAHUDZURAFUERZGERZHERVBAFSRZVCLFUFUGAVEDCRZGDRZVDLMNSCDEFGI
+      KUJUHOEBFUTGHIJUTUKZUIUHTUSVEVFURVGVADRAVEURLTAVFURMTAURULAVGURNTCDUTFUQG
+      VHKUMUNUOUP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
