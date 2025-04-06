@@ -89,6 +89,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 6-Apr-25 mpomulcn  [same]      Moved from GG's mathbox to main set.mm
+ 6-Apr-25 ovmul     [same]      Moved from GG's mathbox to main set.mm
+ 6-Apr-25 mpomulf   [same]      Moved from GG's mathbox to main set.mm
  1-Apr-25 cxpgt0d   [same]      Moved from SN's mathbox to main set.mm
 25-Mar-25 syl6ib    imbitrdi
 24-Mar-25 rngurd    ringurd     Moved from TA's mathbox to main set.mm
