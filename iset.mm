@@ -155784,6 +155784,25 @@ $)
       NOPUDUE $.
   $}
 
+  ${
+    $d x S $.  $d x U $.  $d a b x W $.  $d y X $.  $d a b x y .0. $.
+    lss0cl.z $e |- .0. = ( 0g ` W ) $.
+    lss0cl.s $e |- S = ( LSubSp ` W ) $.
+    ${
+      $d U a b c x $.  $d W a b c x $.
+      $( The zero vector belongs to every subspace.  (Contributed by NM,
+         12-Jan-2014.)  (Proof shortened by Mario Carneiro, 19-Jun-2014.) $)
+      lss0cl $p |- ( ( W e. LMod /\ U e. S ) -> .0. e. U ) $=
+        ( vx va vb vc clmod wcel wa cv cbs cfv co wral w3a eqid wex cplusg csca
+        wss cvsca islssm biimpa simp2d simp1 lsselg lmodsubid syl2anc lssvsubcl
+        csg wceq anabsan2 3impa eqeltrrd 3expia exlimdv mpd ) CKLZBALZMZGNZBLZG
+        UAZDBLZVDBCOPZUDZVGHNINCUEPZQJNCUBPZQBLJBRIBRHCUCPZOPZRZVBVCVJVGVOSHVNV
+        LAVKBGVMVICKIJVMTVNTVITZVLTVKTFUFUGUHVDVFVHGVBVCVFVHVBVCVFSZVEVECUNPZQZ
+        DBVQVBVEVILVSDUOVBVCVFUIKABVICVEVPFUJVEVRVICDVPEVRTZUKULVBVCVFVSBLZVDVF
+        WAABVRCVEVEVTFUMUPUQURUSUTVA $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
