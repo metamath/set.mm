@@ -155774,6 +155774,14 @@ $)
       UQGFUBUCZQZHDAVAHUDZURAFUERZGERZHERVBAFSRZVCLFUFUGAVEDCRZGDRZVDLMNSCDEFGI
       KUJUHOEBFUTGHIJUTUKZUIUHTUSVEVFURVGVADRAVEURLTAVFURMTAURULAVGURNTCDUTFUQG
       VHKUMUNUOUP $.
+
+    $( Non-closure: if one vector belongs to a subspace but another does not,
+       their sum does not belong.  Useful for obtaining a new vector not in a
+       subspace.  (Contributed by NM, 20-May-2015.) $)
+    lssvancl2 $p |- ( ph -> -. ( Y .+ X ) e. U ) $=
+      ( co clmod wcel syl3anc wceq lsselg lmodcom lssvancl1 eqneltrrd ) AGHBQZH
+      GBQZDAFRSZGESZHESUFUGUALAUHDCSGDSUILMNRCDEFGIKUBTOBEFGHIJUCTABCDEFGHIJKLM
+      NOPUDUE $.
   $}
 
 
