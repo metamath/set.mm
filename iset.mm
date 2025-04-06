@@ -155738,6 +155738,24 @@ $)
       BVAVCVDVE $.
   $}
 
+  ${
+    lssvsubcl.m $e |- .- = ( -g ` W ) $.
+    lssvsubcl.s $e |- S = ( LSubSp ` W ) $.
+    $( Closure of vector subtraction in a subspace.  (Contributed by NM,
+       31-Mar-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lssvsubcl $p |- ( ( ( W e. LMod /\ U e. S )
+          /\ ( X e. U /\ Y e. U ) ) -> ( X .- Y ) e. U ) $=
+      ( clmod wcel wa co cfv cbs wceq eqid lsselg syl3anc syl eqeltrd cur cvsca
+      csca cminusg cplusg simpll simplr simprl simprr lmodvsubval2 cgrp lmod1cl
+      lmodfgrp grpinvcl syl2anc lmodvscl lmodcom lssclg syl113anc ) DIJZBAJZKZE
+      BJZFBJZKZKZEFCLZEDUCMZUAMZVHUDMZMZFDUBMZLZDUEMZLZBVFUTEDNMZJZFVPJZVGVOOUT
+      VAVEUFZVFUTVAVCVQVSUTVAVEUGZVBVCVDUHZIABVPDEVPPZHQRZVFUTVAVDVRVSVTVBVCVDU
+      IZIABVPDFWBHQRZEFVNVLVIVHCVJVPDWBVNPZGVHPZVLPZVJPZVIPZUJRVFVOVMEVNLZBVFUT
+      VQVMVPJZVOWKOVSWCVFUTVKVHNMZJZVRWLVSVFVHUKJZVIWMJZWNVFUTWOVSVHDWGUMSVFUTW
+      PVSVIVHWMDWGWMPZWJULSWMVHVJVIWQWIUNUOZWEVKVLVHWMVPDFWBWGWHWQUPRVNVPDEVMWB
+      WFUQRVFUTVAWNVDVCWKBJVSVTWRWDWAWMIVNAVLBVHDFEVKWGWQWFWHHURUSTT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
