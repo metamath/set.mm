@@ -4752,9 +4752,9 @@
 "df-div" is used by "1div0apr".
 "df-div" is used by "cnflddiv".
 "df-div" is used by "divcn".
+"df-div" is used by "divcnOLD".
 "df-div" is used by "divval".
 "df-div" is used by "elq".
-"df-div" is used by "gg-divcn".
 "df-dmd" is used by "dmdbr".
 "df-drngo" is used by "drngoi".
 "df-drngo" is used by "isdivrngo".
@@ -16190,6 +16190,8 @@ New usage of "distrnq" is discouraged (7 uses).
 New usage of "distrpi" is discouraged (5 uses).
 New usage of "distrpr" is discouraged (7 uses).
 New usage of "distrsr" is discouraged (3 uses).
+New usage of "divccnOLD" is discouraged (0 uses).
+New usage of "divcnOLD" is discouraged (0 uses).
 New usage of "djaclN" is discouraged (0 uses).
 New usage of "djaffvalN" is discouraged (1 uses).
 New usage of "djafvalN" is discouraged (1 uses).
@@ -16689,6 +16691,7 @@ New usage of "exinst" is discouraged (1 uses).
 New usage of "exinst01" is discouraged (1 uses).
 New usage of "exinst11" is discouraged (1 uses).
 New usage of "exlimexi" is discouraged (2 uses).
+New usage of "expcnOLD" is discouraged (0 uses).
 New usage of "expcomdg" is discouraged (0 uses).
 New usage of "f1coOLD" is discouraged (0 uses).
 New usage of "f1cofveqaeqALT" is discouraged (0 uses).
@@ -20275,6 +20278,8 @@ Proof modification of "difidALT" is discouraged (14 steps).
 Proof modification of "difopabOLD" is discouraged (171 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
 Proof modification of "disjOLD" is discouraged (71 steps).
+Proof modification of "divccnOLD" is discouraged (105 steps).
+Proof modification of "divcnOLD" is discouraged (642 steps).
 Proof modification of "dju1p1e2" is discouraged (72 steps).
 Proof modification of "dju1p1e2ALT" is discouraged (34 steps).
 Proof modification of "djuexALT" is discouraged (51 steps).
@@ -20576,6 +20581,7 @@ Proof modification of "exinst" is discouraged (12 steps).
 Proof modification of "exinst01" is discouraged (16 steps).
 Proof modification of "exinst11" is discouraged (21 steps).
 Proof modification of "exlimexi" is discouraged (15 steps).
+Proof modification of "expcnOLD" is discouraged (294 steps).
 Proof modification of "f1coOLD" is discouraged (99 steps).
 Proof modification of "f1cofveqaeqALT" is discouraged (124 steps).
 Proof modification of "f1dmOLD" is discouraged (19 steps).
