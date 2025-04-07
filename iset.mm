@@ -155833,6 +155833,19 @@ $)
       ZSRCKZICRLQTSABCDEFMNCROP $.
   $}
 
+  ${
+    lssvneln0.o $e |- .0. = ( 0g ` W ) $.
+    lssvneln0.s $e |- S = ( LSubSp ` W ) $.
+    lssvneln0.w $e |- ( ph -> W e. LMod ) $.
+    lssvneln0.u $e |- ( ph -> U e. S ) $.
+    lssvneln0.n $e |- ( ph -> -. X e. U ) $.
+    $( A vector ` X ` which doesn't belong to a subspace ` U ` is nonzero.
+       (Contributed by NM, 14-May-2015.)  (Revised by AV, 19-Jul-2022.) $)
+    lssvneln0 $p |- ( ph -> X =/= .0. ) $=
+      ( wcel wn wne wceq wi clmod lss0cl syl2anc eleq1a syl necon3bd mpd ) AECL
+      ZMEFNKAUDEFAFCLZEFOUDPADQLCBLUEIJBCDFGHRSFCETUAUBUC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
