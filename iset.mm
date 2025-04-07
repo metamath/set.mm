@@ -155824,6 +155824,13 @@ $)
        27-Mar-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
     lss0ss $p |- ( ( W e. LMod /\ X e. S ) -> { .0. } C_ X ) $=
       ( clmod wcel wa lss0cl snssd ) BGHCAHIDCACBDEFJK $.
+
+    $( No subspace is smaller than the zero subspace.  (Contributed by NM,
+       20-Apr-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lssle0 $p |- ( ( W e. LMod /\ X e. S )
+         -> ( X C_ { .0. } <-> X = { .0. } ) ) $=
+      ( clmod wcel wa csn wss wceq lss0ss biantrud eqss bitr4di ) BGHCAHIZCDJZK
+      ZSRCKZICRLQTSABCDEFMNCROP $.
   $}
 
 
