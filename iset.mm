@@ -155819,6 +155819,11 @@ $)
         OWMTKZVRTKWITKZXAVOWETKZVSTKWGTKZXBXDVOFVFOBUDJVDVGXEVOHVFOWEWGVSTTTVHV
         IBUCJVJVGXCVOIVFOWMWIVRTTTVHVIWNCTVKRVCVLVOVMVN $.
     $}
+
+    $( The zero subspace is included in every subspace.  (Contributed by NM,
+       27-Mar-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lss0ss $p |- ( ( W e. LMod /\ X e. S ) -> { .0. } C_ X ) $=
+      ( clmod wcel wa lss0cl snssd ) BGHCAHIDCACBDEFJK $.
   $}
 
 
