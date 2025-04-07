@@ -155921,6 +155921,12 @@ $)
       VQVQRDUFEVQBUGSVBVNFBVBVGBIZJZVKVMVSVJGBVBVRVHBIVJVIABCVGVHVIRZDUHUITUTVA
       VRVMABVLCVGDVLRZUJUKULTVBCUMIZVCVEVFVOUNUOUTWBVACUPUQFGEVDVIBCVLVPVTWAURS
       US $.
+
+    $( All subspaces are subgroups.  (Contributed by Mario Carneiro,
+       19-Apr-2016.) $)
+    lsssssubg $p |- ( W e. LMod -> S C_ ( SubGrp ` W ) ) $=
+      ( vx clmod wcel csubg cfv cv lsssubg ex ssrdv ) BEFZDABGHZMDIZAFONFAOBCJK
+      L $.
   $}
 
 
