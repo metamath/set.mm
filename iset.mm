@@ -155846,6 +155846,21 @@ $)
       ZMEFNKAUDEFAFCLZEFOUDPADQLCBLUEIJBCDFGHRSFCETUAUBUC $.
   $}
 
+  ${
+    lssneln0.o $e |- .0. = ( 0g ` W ) $.
+    lssneln0.s $e |- S = ( LSubSp ` W ) $.
+    lssneln0.w $e |- ( ph -> W e. LMod ) $.
+    lssneln0.u $e |- ( ph -> U e. S ) $.
+    lssneln0.x $e |- ( ph -> X e. V ) $.
+    lssneln0.n $e |- ( ph -> -. X e. U ) $.
+    $( A vector ` X ` which doesn't belong to a subspace ` U ` is nonzero.
+       (Contributed by NM, 14-May-2015.)  (Revised by AV, 17-Jul-2022.)  (Proof
+       shortened by AV, 19-Jul-2022.) $)
+    lssneln0 $p |- ( ph -> X e. ( V \ { .0. } ) ) $=
+      ( wcel wne csn cdif lssvneln0 eldifsn sylanbrc ) AFDNFGOFDGPQNLABCEFGHIJK
+      MRFDGST $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
