@@ -155893,6 +155893,21 @@ $)
       RVBBDFVEVQLULUMAMVFBCDEFHVEGIKVPJLUNUPUO $.
   $}
 
+  ${
+    lssvnegcl.s $e |- S = ( LSubSp ` W ) $.
+    lssvnegcl.n $e |- N = ( invg ` W ) $.
+    $( Closure of negative vectors in a subspace.  (Contributed by Stefan
+       O'Rear, 11-Dec-2014.) $)
+    lssvnegcl $p |- ( ( W e. LMod /\ U e. S /\ X e. U ) -> ( N ` X ) e. U ) $=
+      ( clmod wcel w3a csca cfv cur cminusg cvsca co cbs wceq eqid syl2anc cgrp
+      simp1 lsselg lmodvneg1 simp2 lmodring 3ad2ant1 ringgrpd ringidcl grpinvcl
+      crg syl simp3 lssvscl syl22anc eqeltrrd ) DHIZBAIZEBIZJZDKLZMLZVANLZLZEDO
+      LZPZECLZBUTUQEDQLZIVFVGRUQURUSUBZHABVHDEVHSZFUCVEVBVAVCCVHDEVJGVASZVESZVB
+      SZVCSZUDTUTUQURVDVAQLZIZUSVFBIVIUQURUSUEUTVAUAIVBVOIZVPUTVAUQURVAUKIZUSVA
+      DVKUFUGZUHUTVRVQVSVOVAVBVOSZVMUIULVOVAVCVBVTVNUJTUQURUSUMVOAVEBVADVDEVKVL
+      VTFUNUOUP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
