@@ -155876,6 +155876,23 @@ $)
       UIVJUPUQURULVOIABVCCVADEFVBVLVQGVMHUMUJUK $.
   $}
 
+  ${
+    lssvscl.f $e |- F = ( Scalar ` W ) $.
+    lssvscl.t $e |- .x. = ( .s ` W ) $.
+    lssvscl.b $e |- B = ( Base ` F ) $.
+    lssvscl.s $e |- S = ( LSubSp ` W ) $.
+    $( Closure of scalar product in a subspace.  (Contributed by NM,
+       11-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lssvscl $p |- ( ( ( W e. LMod /\ U e. S ) /\ ( X e. B /\ Y e. U ) )
+       -> ( X .x. Y ) e. U ) $=
+      ( clmod wcel wa co c0g cfv eqid syl3anc cplusg cbs simpll simprl lmodvscl
+      wceq simplr simprr lsselg lmod0vrid syl2anc lss0cl adantr lssclg eqeltrrd
+      syl113anc ) FMNZDBNZOZGANZHDNZOZOZGHCPZFQRZFUARZPZVDDVCUQVDFUBRZNZVGVDUFU
+      QURVBUCZVCUQUTHVHNZVIVJUSUTVAUDZVCUQURVAVKVJUQURVBUGZUSUTVAUHZMBDVHFHVHSZ
+      LUITGCEAVHFHVOIJKUETVFVHFVDVEVOVFSZVESZUJUKVCUQURUTVAVEDNZVGDNVJVMVLVNUSV
+      RVBBDFVEVQLULUMAMVFBCDEFHVEGIKVPJLUNUPUO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
