@@ -155908,6 +155908,21 @@ $)
       VTFUNUOUP $.
   $}
 
+  ${
+    $d x y S $.  $d x y w U $.  $d x y w W $.
+    lsssubg.s $e |- S = ( LSubSp ` W ) $.
+    $( All subspaces are subgroups.  (Contributed by Stefan O'Rear,
+       11-Dec-2014.) $)
+    lsssubg $p |- ( ( W e. LMod /\ U e. S ) -> U e. ( SubGrp ` W ) ) $=
+      ( vw vx vy clmod wcel wa csubg cfv cbs wss cv wex wral eqid syl ralrimiva
+      cplusg co cminusg lssssg c0g lss0cl elex2 lssvacl anassrs lssvnegcl 3expa
+      jca cgrp w3a wb lmodgrp adantr issubg2m mpbir3and ) CHIZBAIZJZBCKLIZBCMLZ
+      NZEOBIEPZFOZGOZCUALZUBBIZGBQZVGCUCLZLBIZJZFBQZABVDCHVDRZDUDVBCUELZBIVFABC
+      VQVQRDUFEVQBUGSVBVNFBVBVGBIZJZVKVMVSVJGBVBVRVHBIVJVIABCVGVHVIRZDUHUITUTVA
+      VRVMABVLCVGDVLRZUJUKULTVBCUMIZVCVEVFVOUNUOUTWBVACUPUQFGEVDVIBCVLVPVTWAURS
+      US $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
