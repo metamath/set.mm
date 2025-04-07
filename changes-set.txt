@@ -81,7 +81,6 @@ proposed  syl5ibrcom imbitrridcom
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
-underway  syl6ibr   imbitrrdi
 proposed  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
 (Please send any comments on these proposals to the mailing list or
@@ -89,6 +88,15 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 5-Apr-25 syl6ibr   imbitrrdi
+ 2-Apr-25 dffo3     [same]      Moved from GS's mathbox to main set.mm
+ 2-Apr-25 foelrnf   [same]      Moved from GS's mathbox to main set.mm
+ 2-Apr-25 fompt     [same]      Moved from GS's mathbox to main set.mm
+ 2-Apr-25 ringlzd   [same]      Moved from SN's mathbox to main set.mm
+ 2-Apr-25 ringrzd   [same]      Moved from SN's mathbox to main set.mm
+ 2-Apr-25 lmodvscld [same]      Moved from SN's mathbox to main set.mm
+ 2-Apr-25 lvecgrpd  [same]      Moved from SN's mathbox to main set.mm
+ 2-Apr-25 ply1ass23l [same]     Moved from AV's mathbox to main set.mm
  1-Apr-25 cxpgt0d   [same]      Moved from SN's mathbox to main set.mm
 30-Mar-25 df-rnghom df-rhm
 30-Mar-25 df-rngiso df-rim
