@@ -155801,6 +155801,24 @@ $)
         DBVQVBVEVILVSDUOVBVCVFUIKABVICVEVPFUJVEVRVICDVPEVRTZUKULVBVCVFVSBLZVDVF
         WAABVRCVEVEVTFUMUPUQURUSUTVA $.
     $}
+
+    ${
+      $d .0. a b j x $.
+      $( The singleton of the zero vector is a subspace.  (Contributed by NM,
+         13-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+      lsssn0 $p |- ( W e. LMod -> { .0. } e. S ) $=
+        ( vx vj va vb clmod wcel cfv eqidd wceq a1i eqid cv syl co cvv csca cbs
+        cplusg cvsca csn clss lmod0vcl snssd wex snmg w3a simpr2 oveq2d lmodvs0
+        wa elsni 3ad2antr1 eqtrd simpr3 oveq12d lmod0vlid mpdan adantr vscaslid
+        wb vex slotex ovexg syl3anc plusgslid elsng mpbird id islssmd ) BJKZFBU
+        ALZUBLZBUCLZABUDLZCUEZGVPBUBLZBJHIVOVPMVOVQMVOWAMVOVRMVOVSMABUFLNVOEOVO
+        CWAWABCWAPZDUGZUHVOCWAKZGQVTKGUIWCGCWAUJRVOFQZVQKZHQZVTKZIQZVTKZUKZUOZW
+        EWGVSSZWIVRSZVTKZWNCNZWLWNCCVRSZCWLWMCWICVRWLWMWECVSSZCWLWGCWEVSWLWHWGC
+        NVOWFWHWJULWGCUPRUMVOWHWFWRCNWJVSVPVQBWECVPPVSPVQPDUNUQURWLWJWICNVOWFWH
+        WJUSWICUPRUTVOWQCNZWKVOWDWSWCVRWABCCWBVRPDVAVBVCURVOWOWPVEZWKVOWNTKZWTV
+        OWMTKZVRTKWITKZXAVOWETKZVSTKWGTKZXBXDVOFVFOBUDJVDVGXEVOHVFOWEWGVSTTTVHV
+        IBUCJVJVGXCVOIVFOWMWIVRTTTVHVIWNCTVKRVCVLVOVMVN $.
+    $}
   $}
 
 
