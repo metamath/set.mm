@@ -10509,7 +10509,7 @@ $)
 
   $( Anything implies ` T. ` .  (Contributed by FL, 20-Mar-2011.)  (Proof
      shortened by Anthony Hart, 1-Aug-2011.) $)
-  a1tru $p |- ( ph -> T. ) $=
+  trud $p |- ( ph -> T. ) $=
     ( wtru tru a1i ) BACD $.
 
   $( True can be removed from a conjunction.  (Contributed by FL, 20-Mar-2011.)
@@ -37808,18 +37808,18 @@ $)
     euotd $p |- ( ph -> E! x E. a E. b E. c ( x = <. a , b , c >. /\ ps ) ) $=
       ( vy cv wceq wa wex cvv wtru cotp wb wal weu otexg syl3anc w3a biimpa vex
       wcel otth sylibr eqeq2d biimpd impancom expimpd exlimdv exlimdvv wsbc tru
-      adantr ad2antrr simpr eqcomd biimpar jca a1tru 2thd sbcied mpbiri spesbcd
-      3anassrs nfcv nfsbc1v nfex sbceq1a exbidv spcegf sylc 2exbidv sylib eqeq1
-      excom13 anbi1d 3exbidv syl5ibrcom impbid eqeq2 bibi2d albidv spcegv df-eu
-      alrimiv ) ACOZGOZHOZIOZUAZPZBQZIRZHRGRZWNNOZPZUBZCUCZNRZXBCUDADEFUAZSUJZX
-      BWNXHPZUBZCUCZXGADSUJESUJZFSUJZXIJKLDEFSSSUEUFAXKCAXBXJAXAXJGHAWTXJIAWSBX
-      JABWSXJABQZWSXJXOWRXHWNXOWODPZWPEPZWQFPZUGZWRXHPZABXSMUHWOWPDEWQFGUIHUIIU
-      IUKZULUMUNUOUPUQURAXBXJXHWRPZBQZIRHRGRZAYCGRHRZIRZYDAXNYCIFUSZGRZHRZYFLAX
-      MYGHEUSZGRZYIKAYJGDAYJGDUSTUTAYJTGDSJAXPQZYGTHESAXMXPKVAYLXQQYCTIFSAXNXPX
-      QLVBAXPXQXRYCTUBAXSQZYCTYMYBBYMWRXHYMXSXTAXSVCYAULVDABXSMVEVFYMVGVHVLVIVI
-      VIVJVKYHYKHESHEVMYJHGYGHEVNVOXQYGYJGYGHEVPVQVRVSYEYIIFSIFVMYHIHYGIGYCIFVN
-      VOVOXRYCYGHGYCIFVPVTVRVSYCIHGWCWAXJWTYCGHIXJWSYBBWNXHWRWBWDWEWFWGWMXFXLNX
-      HSXCXHPZXEXKCYNXDXJXBXCXHWNWHWIWJWKVSXBCNWLUL $.
+      adantr ad2antrr simpr eqcomd biimpar jca trud 2thd 3anassrs sbcied mpbiri
+      spesbcd nfcv nfsbc1v nfex sbceq1a exbidv sylc 2exbidv excom13 sylib eqeq1
+      spcegf anbi1d 3exbidv syl5ibrcom impbid alrimiv eqeq2 bibi2d albidv df-eu
+      spcegv ) ACOZGOZHOZIOZUAZPZBQZIRZHRGRZWNNOZPZUBZCUCZNRZXBCUDADEFUAZSUJZXB
+      WNXHPZUBZCUCZXGADSUJESUJZFSUJZXIJKLDEFSSSUEUFAXKCAXBXJAXAXJGHAWTXJIAWSBXJ
+      ABWSXJABQZWSXJXOWRXHWNXOWODPZWPEPZWQFPZUGZWRXHPZABXSMUHWOWPDEWQFGUIHUIIUI
+      UKZULUMUNUOUPUQURAXBXJXHWRPZBQZIRHRGRZAYCGRHRZIRZYDAXNYCIFUSZGRZHRZYFLAXM
+      YGHEUSZGRZYIKAYJGDAYJGDUSTUTAYJTGDSJAXPQZYGTHESAXMXPKVAYLXQQYCTIFSAXNXPXQ
+      LVBAXPXQXRYCTUBAXSQZYCTYMYBBYMWRXHYMXSXTAXSVCYAULVDABXSMVEVFYMVGVHVIVJVJV
+      JVKVLYHYKHESHEVMYJHGYGHEVNVOXQYGYJGYGHEVPVQWCVRYEYIIFSIFVMYHIHYGIGYCIFVNV
+      OVOXRYCYGHGYCIFVPVSWCVRYCIHGVTWAXJWTYCGHIXJWSYBBWNXHWRWBWDWEWFWGWHXFXLNXH
+      SXCXHPZXEXKCYNXDXJXBXCXHWNWIWJWKWMVRXBCNWLUL $.
   $}
 
   ${
@@ -52303,11 +52303,11 @@ $)
     $( Elementhood in an image set.  (Contributed by Mario Carneiro,
        14-Jan-2014.) $)
     elabrex $p |- ( x e. A -> B e. { y | E. x e. A y = B } ) $=
-      ( vz cv wcel csb wceq wrex cab wtru tru csbeq1a equcoms a1tru 2thd rspcev
-      mpan2 eqeq1 rexbidv elab sylibr nfv nfcsb1v nfeq2 eqeq2d cbvrex eleqtrrdi
-      abbii ) AGZCHZDBGZAFGZDIZJZFCKZBLZUNDJZACKZBLUMDUPJZFCKZDUSHUMMVCNVBMFULC
-      UOULJZVBMVBAFAUODOZPVDQRSTURVCBDEUTUQVBFCUNDUPUAUBUCUDVAURBUTUQAFCUTFUEAU
-      NUPAUODUFUGULUOJDUPUNVEUHUIUKUJ $.
+      ( vz cv wcel csb wceq wrex cab wtru tru csbeq1a equcoms trud rspcev mpan2
+      2thd eqeq1 rexbidv sylibr nfv nfcsb1v nfeq2 eqeq2d cbvrex abbii eleqtrrdi
+      elab ) AGZCHZDBGZAFGZDIZJZFCKZBLZUNDJZACKZBLUMDUPJZFCKZDUSHUMMVCNVBMFULCU
+      OULJZVBMVBAFAUODOZPVDQTRSURVCBDEUTUQVBFCUNDUPUAUBUKUCVAURBUTUQAFCUTFUDAUN
+      UPAUODUEUFULUOJDUPUNVEUGUHUIUJ $.
   $}
 
   ${
@@ -53522,15 +53522,15 @@ $)
     $( A method for computing restricted iota.  (Contributed by NM,
        16-Apr-2013.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
     riota5f $p |- ( ph -> ( iota_ x e. A ps ) = B ) $=
-      ( vy cv wceq wb wral ralrimiva wi wcel wa wtru a1tru nfv crio wsbc adantl
-      wreu reu6i nfra1 nfan nfcvd nfvd simprl simpr simplrr simplrl eqeltrd rsp
-      sylc mpbird 2thd mpdan mpbid expr rspsbc nfeqd nfan1 eqeq2d bibi2d ralbid
-      riota2df imbi12d sbcied mpd ) ABCJZEKZLZCDMZBCDUAZEKZAVNCDHNABVLIJZKZLZCD
-      MZVPVRKZOZIEUBZVOVQOZAEDPWCIDMWDGAWCIDAVRDPZWAWBAWFWAQZQZRWBWHSWHBCDUDZRW
-      BLWGWIABCDVRUEUCWHBRCDVRAWGCACTZWFWACWFCTVTCDUFUGUGWHCVRUHWHRCUIAWFWAUJWH
-      VSQZBRWKBVSWHVSUKZWKWAVLDPVTAWFWAVSULWKVLVRDWLAWFWAVSUMUNVTCDUOUPUQWKSURV
-      HUSUTVANWCIEDVBUPAWCWEIEDGAVREKZQZWAVOWBVQWNVTVNCDAWMCWJACVREACVRUHFVCVDW
-      NVSVMBWNVREVLAWMUKZVEVFVGWNVREVPWOVEVIVJUTVK $.
+      ( vy cv wceq wb wral ralrimiva wi wcel wa wtru trud nfv crio reu6i adantl
+      wsbc wreu nfra1 nfan nfcvd nfvd simprl simpr simplrr simplrl eqeltrd sylc
+      mpbird 2thd riota2df mpdan mpbid rspsbc nfeqd nfan1 eqeq2d bibi2d imbi12d
+      rsp expr ralbid sbcied mpd ) ABCJZEKZLZCDMZBCDUAZEKZAVNCDHNABVLIJZKZLZCDM
+      ZVPVRKZOZIEUDZVOVQOZAEDPWCIDMWDGAWCIDAVRDPZWAWBAWFWAQZQZRWBWHSWHBCDUEZRWB
+      LWGWIABCDVRUBUCWHBRCDVRAWGCACTZWFWACWFCTVTCDUFUGUGWHCVRUHWHRCUIAWFWAUJWHV
+      SQZBRWKBVSWHVSUKZWKWAVLDPVTAWFWAVSULWKVLVRDWLAWFWAVSUMUNVTCDVGUOUPWKSUQUR
+      USUTVHNWCIEDVAUOAWCWEIEDGAVREKZQZWAVOWBVQWNVTVNCDAWMCWJACVREACVRUHFVBVCWN
+      VSVMBWNVREVLAWMUKZVDVEVIWNVREVPWOVDVFVJUTVK $.
   $}
 
   ${
@@ -176725,12 +176725,12 @@ $)
        (Proof modification is discouraged.) $)
     bj-nn0suc0 $p |- ( A e. _om -> ( A = (/) \/ E. x e. A A = suc x ) ) $=
       ( vy vz cv c0 wceq csuc wrex wo com eqeq1 rexeqbi1dv wtru wi wral a1d weq
-      a1tru wn orbi12d tru rgenw bdeq0 bdeqsuc ax-bdex ax-bdor nfv orc expi wel
-      wcel vex sucid eleq2 mpbiri suceq eqeq2d rspcev mpancom bj-bdfindis mp2an
-      olcd vtoclri ) CEZFGZVEAEZHZGZAVEIZJZBFGZBVHGZABIZJCBKVEBGVFVLVJVNVEBFLVI
-      VMAVEBVEBVHLMUANNNOZDKPVKCKPUBVODKNSUCVKNNNCDVFVJCUDVIACCAUEUFUGNCUHZVPVP
-      VFVKNVFVJUIQCDRZVKNVQVKTOTSUJVEDEZHZGZVKNVTVJVFDCUKZVTVJVTWAVRVSULVRDUMUN
-      VEVSVRUOUPVIVTAVRVEADRVHVSVEVGVRUQURUSUTVCQVAVBVD $.
+      trud wn orbi12d tru rgenw bdeq0 bdeqsuc ax-bdex ax-bdor nfv orc expi wcel
+      wel sucid eleq2 mpbiri suceq eqeq2d rspcev mpancom olcd bj-bdfindis mp2an
+      vex vtoclri ) CEZFGZVEAEZHZGZAVEIZJZBFGZBVHGZABIZJCBKVEBGVFVLVJVNVEBFLVIV
+      MAVEBVEBVHLMUANNNOZDKPVKCKPUBVODKNSUCVKNNNCDVFVJCUDVIACCAUEUFUGNCUHZVPVPV
+      FVKNVFVJUIQCDRZVKNVQVKTOTSUJVEDEZHZGZVKNVTVJVFDCULZVTVJVTWAVRVSUKVRDVCUMV
+      EVSVRUNUOVIVTAVRVEADRVHVSVEVGVRUPUQURUSUTQVAVBVD $.
   $}
 
   ${
