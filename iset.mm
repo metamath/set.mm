@@ -52322,6 +52322,19 @@ $)
   $}
 
   ${
+    $d A x y z $.  $d B y z $.
+    $( Elementhood in an image set.  (Contributed by Glauco Siliprandi,
+       11-Dec-2019.) $)
+    elabrexg $p |- ( ( x e. A /\ B e. V ) -> B e. { y | E. x e. A y = B } ) $=
+      ( vz cv wcel csb wceq wrex cab wtru tru csbeq1a equcoms trud 2thd rspcev
+      wa mpan2 adantr wb eqeq1 rexbidv elabg adantl mpbird nfcsb1v nfeq2 eqeq2d
+      nfv cbvrexw abbii eleqtrrdi ) AGZCHZDEHZTZDBGZAFGZDIZJZFCKZBLZUTDJZACKZBL
+      USDVEHZDVBJZFCKZUQVJURUQMVJNVIMFUPCVAUPJZVIMVIAFAVADOZPVKQRSUAUBURVHVJUCU
+      QVDVJBDEVFVCVIFCUTDVBUDUEUFUGUHVGVDBVFVCAFCVFFULAUTVBAVADUIUJUPVAJDVBUTVL
+      UKUMUNUO $.
+  $}
+
+  ${
     $d A y z $.  $d B y z $.  $d C w $.  $d D y $.  $d w x y $.  $d w z y $.
     abrexco.1 $e |- B e. _V $.
     abrexco.2 $e |- ( y = B -> C = D ) $.
