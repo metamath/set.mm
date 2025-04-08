@@ -143860,6 +143860,18 @@ $)
       HURZINURVQUBVJUSUTVRUFVAUAVJIVHNVBVCVKUPVMVNVDVKVOVLVIVEOVFVG $.
   $}
 
+  ${
+    resssca.1 $e |- H = ( G |`s A ) $.
+    ${
+      resssca.2 $e |- F = ( Scalar ` G ) $.
+      $( ` Scalar ` is unaffected by restriction.  (Contributed by Mario
+         Carneiro, 7-Dec-2014.) $)
+      ressscag $p |- ( ( G e. X /\ A e. V ) -> F = ( Scalar ` H ) ) $=
+        ( wcel wa csca scaslid scandxnbasendx simpl simpr resseqnbasd ) CFIZAEI
+        ZJABDKECFGHLMQRNQROP $.
+    $}
+  $}
+
   $( Index value of the ~ df-tset slot.  (Contributed by Mario Carneiro,
      14-Aug-2015.) $)
   tsetndx $p |- ( TopSet ` ndx ) = 9 $=
