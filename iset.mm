@@ -155995,6 +155995,16 @@ $)
       UVJUNUUTIUVAUVLUVBYCUUSEYNYRYLUUSSUUTSUVASUVBSUVOXEXFUVGXGWMXH $.
   $}
 
+  ${
+    lsslss.x $e |- X = ( W |`s U ) $.
+    lsslss.s $e |- S = ( LSubSp ` W ) $.
+    $( A submodule is a module.  (Contributed by Stefan O'Rear,
+       12-Dec-2014.) $)
+    lsslmod $p |- ( ( W e. LMod /\ U e. S ) -> X e. LMod ) $=
+      ( clmod wcel cbs cfv wss eqid islss3 simplbda ) CGHBAHBCIJZKDGHABOCDEOLFM
+      N $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
