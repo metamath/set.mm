@@ -156019,6 +156019,29 @@ $)
       NVFVGVOUOCDEAJUPUQURVEVFVQWFRVGVOADVREWCWCSVTHUAUSUTVAVBVC $.
   $}
 
+  ${
+    $d F a b c $.  $d W a b c j $.  $d B a b c $.  $d V a b c $.
+    $d .x. a b c $.  $d S a b c $.  $d U a b c j $.
+    islss4.f $e |- F = ( Scalar ` W ) $.
+    islss4.b $e |- B = ( Base ` F ) $.
+    islss4.v $e |- V = ( Base ` W ) $.
+    islss4.t $e |- .x. = ( .s ` W ) $.
+    islss4.s $e |- S = ( LSubSp ` W ) $.
+    $( A linear subspace is a subgroup which respects scalar multiplication.
+       (Contributed by Stefan O'Rear, 11-Dec-2014.)  (Revised by Mario
+       Carneiro, 19-Apr-2016.) $)
+    islss4 $p |- ( W e. LMod -> ( U e. S <-> ( U e. ( SubGrp ` W ) /\
+          A. a e. B A. b e. U ( a .x. b ) e. U ) ) ) $=
+      ( vj vc wcel cv wral wa clmod csubg cfv co lsssubg lssvscl ralrimivva jca
+      wss wex cplusg subgss ad2antrl c0g eqid subg0cl syl wi subgcl 3exp adantl
+      elex2 ralrimdv ralimdv impr w3a wb islssm adantr mpbir3and impbida ) GUAQ
+      ZDBQZDGUBUCQZHRZIRZCUDZDQZIDSZHASZTZVLVMTZVNVTBDGNUEWBVRHIADABCDEGVOVPJMK
+      NUFUGUHVLWATVMDFUIZORDQOUJZVQPRZGUKUCZUDDQZPDSZIDSZHASZVNWCVLVTFDGLULUMVN
+      WDVLVTVNGUNUCZDQWDDGWKWKUOUPOWKDVBUQUMVLVNVTWJVLVNTZVSWIHAWLVRWHIDWLVRWGP
+      DVNVRWEDQZWGURURVLVNVRWMWGWFDGVQWEWFUOZUSUTVAVCVDVDVEVLVMWCWDWJVFVGWAHAWF
+      BCDOEFGUAIPJKLWNMNVHVIVJVK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
