@@ -143879,6 +143879,15 @@ $)
         ( wcel wa cvsca vscaslid vscandxnbasendx simpl simpr resseqnbasd ) CFIZ
         AEIZJABDKECFGHLMQRNQROP $.
     $}
+
+    ${
+      ressip.2 $e |- ., = ( .i ` G ) $.
+      $( The inner product is unaffected by restriction.  (Contributed by
+         Thierry Arnoux, 16-Jun-2019.) $)
+      ressipg $p |- ( ( G e. X /\ A e. V ) -> ., = ( .i ` H ) ) $=
+        ( wcel wa cip ipslid ipndxnbasendx simpl simpr resseqnbasd ) BFIZAEIZJA
+        DCKEBFGHLMQRNQROP $.
+    $}
   $}
 
   $( Index value of the ~ df-tset slot.  (Contributed by Mario Carneiro,
