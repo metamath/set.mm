@@ -23143,9 +23143,11 @@ $)
     cbvrexfw.4 $e |- F/ x ps $.
     cbvrexfw.5 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Rule used to change bound variables, using implicit substitution.
-       Version of ~ cbvrexf with a disjoint variable condition, which does not
-       require ~ ax-13 .  (Contributed by FL, 27-Apr-2008.)  (Revised by Gino
-       Giotto, 10-Jan-2024.) $)
+       Version of ~ cbvrexf with a disjoint variable condition.  Although we
+       don't do so yet, we expect this disjoint variable condition will allow
+       us to remove reliance on ~ ax-i12 and ~ ax-bndl in the proof.
+       (Contributed by FL, 27-Apr-2008.)  (Revised by Gino Giotto,
+       10-Jan-2024.) $)
     cbvrexfw $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
       ( cv wcel wa wex wrex nfcri nfan weq eleq1w df-rex anbi12d cbvexv1
       3bitr4i ) CKELZAMZCNDKELZBMZDNACEOBDEOUEUGCDUDADDCEGPHQUFBCCDEFPIQCDRUDUF
