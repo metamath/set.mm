@@ -143870,6 +143870,15 @@ $)
         ( wcel wa csca scaslid scandxnbasendx simpl simpr resseqnbasd ) CFIZAEI
         ZJABDKECFGHLMQRNQROP $.
     $}
+
+    ${
+      ressvsca.2 $e |- .x. = ( .s ` G ) $.
+      $( ` .s ` is unaffected by restriction.  (Contributed by Mario Carneiro,
+         7-Dec-2014.) $)
+      ressvscag $p |- ( ( G e. X /\ A e. V ) -> .x. = ( .s ` H ) ) $=
+        ( wcel wa cvsca vscaslid vscandxnbasendx simpl simpr resseqnbasd ) CFIZ
+        AEIZJABDKECFGHLMQRNQROP $.
+    $}
   $}
 
   $( Index value of the ~ df-tset slot.  (Contributed by Mario Carneiro,
