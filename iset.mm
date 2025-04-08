@@ -23195,6 +23195,15 @@ $)
        10-Jan-2024.) $)
     cbvralw $p |- ( A. x e. A ph <-> A. y e. A ps ) $=
       ( nfcv cbvralfw ) ABCDECEIDEIFGHJ $.
+
+    $( Rule used to change bound variables, using implicit substitution.
+       Version of ~ cbvrexfw with more disjoint variable conditions.  Although
+       we don't do so yet, we expect the disjoint variable conditions will
+       allow us to remove reliance on ~ ax-i12 and ~ ax-bndl in the proof.
+       (Contributed by NM, 31-Jul-2003.)  (Revised by Gino Giotto,
+       10-Jan-2024.) $)
+    cbvrexw $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
+      ( nfcv cbvrexfw ) ABCDECEIDEIFGHJ $.
   $}
 
   ${
