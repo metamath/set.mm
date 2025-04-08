@@ -156003,6 +156003,20 @@ $)
     lsslmod $p |- ( ( W e. LMod /\ U e. S ) -> X e. LMod ) $=
       ( clmod wcel cbs cfv wss eqid islss3 simplbda ) CGHBAHBCIJZKDGHABOCDEOLFM
       N $.
+
+    lsslss.t $e |- T = ( LSubSp ` X ) $.
+    $( The subspaces of a subspace are the smaller subspaces.  (Contributed by
+       Stefan O'Rear, 12-Dec-2014.) $)
+    lsslss $p |- ( ( W e. LMod /\ U e. S ) ->
+      ( V e. T <-> ( V e. S /\ V C_ U ) ) ) $=
+      ( clmod wcel wa cbs cfv wss cress co wb eqid wceq islss3 syl simpl lssssg
+      lsslmod ressbas2d sseq2d anbi1d sstr2 mpan9 biantrurd oveq1i simplr simpr
+      simpll ressabsg syl3anc eqtrid ad2antrr 3bitr4d pm5.32da biancomd 3bitr2d
+      a1i eleq1d ) EJKZCAKZLZDBKZDFMNZOZFDPQZJKZLZDCOZVMLZDAKZVOLVHFJKVIVNRACEF
+      GHUEBDVJFVLVLSVJSIUAUBVHVOVKVMVHCVJDVHCEMNZFEJFECPQZTVHGVDVRVRTVHVRSZVDVF
+      VGUCACVREJVTHUDZUFUGUHVHVPVQVOVHVOVMVQVHVOLZEDPQZJKZDVROZWDLZVMVQWBWEWDVH
+      CVROVOWEWADCVRUIUJUKWBVLWCJWBVLVSDPQZWCFVSDPGULWBVGVOVFWGWCTVFVGVOUMVHVOU
+      NVFVGVOUOCDEAJUPUQURVEVFVQWFRVGVOADVREWCWCSVTHUAUSUTVAVBVC $.
   $}
 
 
