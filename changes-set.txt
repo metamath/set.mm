@@ -98,6 +98,46 @@ Date      Old       New         Notes
  2-Apr-25 lvecgrpd  [same]      Moved from SN's mathbox to main set.mm
  2-Apr-25 ply1ass23l [same]     Moved from AV's mathbox to main set.mm
  1-Apr-25 cxpgt0d   [same]      Moved from SN's mathbox to main set.mm
+30-Mar-25 df-rnghom df-rhm
+30-Mar-25 df-rngiso df-rim
+30-Mar-25 isrngisom isrngim
+30-Mar-25 isrngim   isrngim2
+30-Mar-25 df-rngisom df-rngim
+30-Mar-25 crngs     crngim
+30-Mar-25 df-rnghomo df-rnghm
+30-Mar-25 crngh     crnghm
+30-Mar-25 crngiso   crngoiso    in JM's mathbox
+30-Mar-25 crnghom   crngohom    in JM's mathbox
+28-Mar-25 ---       ---         Moved ideals of non-unital subring theorems 
+                                from AV's mathbox to main set.mm
+28-Mar-25 ---       ---         Moved non-unital subring def. and theorems 
+                                from AV's mathbox to main set.mm
+28-Mar-25 mgmpropd  [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 ismgmd    [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 ismhm0    [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 mhmismgmhm [same]     Moved from AV's mathbox to main set.mm
+28-Mar-25 rhmisrnghm [same]     Moved from AV's mathbox to main set.mm
+28-Mar-25 rhmfn     [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 rhmval    [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 0ringdif  [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 0ringbas  [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 0ring1eq0 [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 c0rhm     [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 c0rnghm   [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 zrrnghm   [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 ---       ---         Moved non-unital ring hom def. and theorems 
+                                from AV's mathbox to main set.mm
+28-Mar-25 ---       ---         Moved non-unital ring def. and theorems 
+                                from AV's mathbox to main set.mm
+28-Mar-25 ---       ---         Moved magma hom def. and theorems 
+                                from AV's mathbox to main set.mm
+28-Mar-25 prdsmgp   [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 ringrng   [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 ringssrng [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 isringrng [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 opprrng   [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 opprrngb  [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 zringrng  [same]      Moved from AV's mathbox to main set.mm
 25-Mar-25 syl6ib    imbitrdi
 24-Mar-25 rngurd    ringurd     Moved from TA's mathbox to main set.mm
 24-Mar-25 mptima2   mptimass    Moved from GS's mathbox to main set.mm
