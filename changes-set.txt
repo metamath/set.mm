@@ -88,6 +88,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+10-Apr-25 dvcobr    [same]      revised - remove unneeded hypotheses
+10-Apr-25 dvmulbr   [same]      revised - remove unneeded hypotheses
+10-Apr-25 dvaddbr   [same]      revised - remove unneeded hypotheses
  6-Apr-25 mpomulcn  [same]      Moved from GG's mathbox to main set.mm
  6-Apr-25 ovmul     [same]      Moved from GG's mathbox to main set.mm
  6-Apr-25 mpomulf   [same]      Moved from GG's mathbox to main set.mm
