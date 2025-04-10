@@ -32576,8 +32576,8 @@ $)
   ${
     $d x A $.  $d x B $.
     prnz.1 $e |- A e. _V $.
-    $( A pair containing a set is not empty.  (Contributed by NM,
-       9-Apr-1994.) $)
+    $( A pair containing a set is not empty.  It is also inhabited (see
+       ~ prm ).  (Contributed by NM, 9-Apr-1994.) $)
     prnz $p |- { A , B } =/= (/) $=
       ( cpr wcel c0 wne prid1 ne0i ax-mp ) AABDZEKFGABCHKAIJ $.
 
@@ -32589,8 +32589,8 @@ $)
 
   ${
     $d x A $.  $d x B $.
-    $( A pair containing a set is not empty.  (Contributed by FL,
-       19-Sep-2011.) $)
+    $( A pair containing a set is not empty.  It is also inhabited (see
+       ~ prmg ).  (Contributed by FL, 19-Sep-2011.) $)
     prnzg $p |- ( A e. V -> { A , B } =/= (/) ) $=
       ( vx cv cpr c0 wne wceq preq1 neeq1d vex prnz vtoclg ) DEZBFZGHABFZGHDACO
       AIPQGOABJKOBDLMN $.
@@ -156137,6 +156137,16 @@ $)
       PYSWRWOYKTKZYSWOYJTKZXBTKYFTKZYTWOYBTKZXCTKYDTKZUUAUUCWOFWEPDUFJWFWGUUDWO
       GWEPYBYDXCTTTWHWJDUAJWKWGUUBWOHWEPYJYFXBTTTWHWJIYKBTVLVMSWLVRWOWPWRWMWN
       $.
+
+    $d T w $.  $d U w $.
+    $( The intersection of two subspaces is a subspace.  (Contributed by NM,
+       7-Mar-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lssincl $p |- ( ( W e. LMod /\ T e. S /\ U e. S )
+         -> ( T i^i U ) e. S ) $=
+      ( vw clmod wcel w3a cpr cint cin wceq intprg 3adant1 wss wex simp1 prssi
+      cv prmg 3ad2ant2 lssintclm syl3anc eqeltrrd ) DGHZBAHZCAHZIZBCJZKZBCLZAUG
+      UHUKULMUFBCAANOUIUFUJAPZFTUJHFQZUKAHUFUGUHRUGUHUMUFBCASOUGUFUNUHFBCAUAUBF
+      UJADEUCUDUE $.
   $}
 
 
