@@ -156112,6 +156112,33 @@ $)
       DSUUAUVFDFYRUVDYTWGWHYGVBYHYKYNYOYLYM $.
   $}
 
+  ${
+    $d a b w x y A $.  $d a b x y S $.  $d a b w x y W $.
+    lssintcl.s $e |- S = ( LSubSp ` W ) $.
+    $( The intersection of a nonempty set of subspaces is a subspace.
+       (Contributed by NM, 8-Dec-2013.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lssintclm $p |- ( ( W e. LMod /\ A C_ S /\ E. w w e. A )
+        -> |^| A e. S ) $=
+      ( vx va vb vy clmod wcel wss cv cfv eqidd a1i wa eqid 3ad2ant1 cvv cplusg
+      wex w3a csca cbs cvsca cint clss wceq intssuni2m 3adant1 cpw lssssg velpw
+      cuni sylibr ssrdv sspwuni sylib sstrd c0g wral simpl1 simp2 sselda lss0cl
+      ex syl2anc ralrimiva wb lmod0vcl elintg syl elex2 adantlr simplr1 simplr2
+      mpbird co simpr elinti simplr3 lssclg syl113anc vex vscaslid slotex ovexg
+      sylc syl3anc plusgslid adantr simp1 islssmd ) DJKZBCLZAMZBKAUBZUCZFDUDNZU
+      ENZDUANZCDUFNZBUGZAWTDUENZDJGHWSWTOWSXAOWSXEOWSXBOWSXCOCDUHNUIWSEPWSXDCUO
+      ZXEWPWRXDXFLWOABCUJUKWOWPXFXELZWRWOCXEULZLXGWOICXHWOIMZCKZXIXHKZWOXJQXIXE
+      LXKCXIXEDJXERZEUMIXEUNUPVGUQCXEURUSSUTWSDVANZXDKZWQXDKAUBWSXNXMXIKZIBVBZW
+      SXOIBWSXIBKZQWOXJXOWOWPWRXQVCZWSBCXIWOWPWRVDVEZCXIDXMXMRZEVFVHVIWOWPXNXPV
+      JZWRWOXMXEKYAXEDXMXLXTVKIXMBXEVLVMSVRAXMXDVNVMWSFMZXAKZGMZXDKZHMZXDKZUCZQ
+      ZYBYDXCVSZYFXBVSZXDKZYKXIKZIBVBZYIYMIBYIXQQZWOXJYCYDXIKZYFXIKZYMWSXQWOYHX
+      RVOWSXQXJYHXSVOYCYEYGWSXQVPYOYEXQYPYCYEYGWSXQVQYIXQVTZYDBXIWAWIYOYGXQYQYC
+      YEYGWSXQWBYRYFBXIWAWIXAJXBCXCXIWTDYDYFYBWTRXARXBRXCREWCWDVIWSYLYNVJZYHWOW
+      PYSWRWOYKTKZYSWOYJTKZXBTKYFTKZYTWOYBTKZXCTKYDTKZUUAUUCWOFWEPDUFJWFWGUUDWO
+      GWEPYBYDXCTTTWHWJDUAJWKWGUUBWOHWEPYJYFXBTTTWHWJIYKBTVLVMSWLVRWOWPWRWMWN
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
