@@ -156166,6 +156166,24 @@ $)
          |^| { t e. ( LSubSp ` w ) | s C_ t } ) ) $.
   $}
 
+  ${
+    $d p s t w S $.  $d s t U $.  $d p s t w V $.  $d s w W $.
+    lspval.v $e |- V = ( Base ` W ) $.
+    lspval.s $e |- S = ( LSubSp ` W ) $.
+    lspval.n $e |- N = ( LSpan ` W ) $.
+    $( The span function for a left vector space (or a left module).
+       (Contributed by NM, 8-Dec-2013.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lspfval $p |- ( W e. X
+      -> N = ( s e. ~P V |-> |^| { t e. S | s C_ t } ) ) $=
+      ( vw wcel clspn cfv cpw cv crab cbs clss cvv wss cint cmpt df-lsp eqtr4di
+      wceq fveq2 pweqd rabeqdv inteqd mpteq12dv elex wfn funfvex funfni sylancr
+      basfn eqeltrid pwexd mptexd fvmptd3 eqtrid ) EFLZCEMNGDOZGPAPUAZABQZUBZUC
+      ZJVCKEGKPZRNZOZVEAVISNZQZUBZUCVHTMTKAGUDVIEUFZGVKVNVDVGVOVJDVOVJERNZDVIER
+      UGHUEUHVOVMVFVOVEAVLBVOVLESNBVIESUGIUEUIUJUKEFULZVCGVDVGTVCDTVCDVPTHVCRTU
+      METLVPTLZUQVQVRTERERUNUOUPURUSUTVAVB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
