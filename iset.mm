@@ -156248,6 +156248,18 @@ $)
       CKJZHQCLJHRABCDERMZFNRQCSOP $.
   $}
 
+  ${
+    $d t S $.  $d t U $.  $d t W $.
+    lspid.s $e |- S = ( LSubSp ` W ) $.
+    lspid.n $e |- N = ( LSpan ` W ) $.
+    $( The span of a subspace is itself.  (Contributed by NM, 15-Dec-2013.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspid $p |- ( ( W e. LMod /\ U e. S ) -> ( N ` U ) = U ) $=
+      ( vt clmod wcel wa cfv cv wss crab cint cbs wceq eqid lssssg lspval eqtrd
+      syldan intmin adantl ) DHIZBAIZJBCKZBGLMGANOZBUEUFBDPKZMUGUHQABUIDHUIRZES
+      GABCUIDUJEFTUBUFUHBQUEGBAUCUDUA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
