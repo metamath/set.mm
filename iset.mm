@@ -156204,6 +156204,14 @@ $)
       MCVOLZVLVKVLUKVMESLWGVLULVMEFTNZSGVMTSUQFSLZWHSLZUMVKWIVLFKURUFWJSFTFTUNU
       OUPUSCESUTVHVAVMWCABVBZWESLVKEBLVLWKBEFGHVCWCVLAEBVQECVDVEVIWCABVFVHVGVJ
       $.
+
+    $( The span of a set of vectors is a subspace.  (Contributed by NM,
+       9-Dec-2013.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspcl $p |- ( ( W e. LMod /\ U C_ V ) -> ( N ` U ) e. S ) $=
+      ( clmod wcel wss wa cpw wf lspf adantr simpr cvv wb cbs cfv basfn funfvex
+      wfn elex funfni sylancr eqeltrid elpw2g syl mpbird ffvelcdmd ) EIJZBDKZLZ
+      DMZABCUMUPACNUNACDEFGHOPUOBUPJZUNUMUNQUODRJUQUNSUODETUAZRFUOTRUDERJZURRJZ
+      UBUMUSUNEIUEPUTRETETUCUFUGUHBDRUIUJUKUL $.
   $}
 
 
