@@ -156285,6 +156285,13 @@ $)
     lspssid $p |- ( ( W e. LMod /\ U C_ V ) -> U C_ ( N ` U ) ) $=
       ( vt clmod wcel wss wa clss cfv crab cint ssintub eqid lspval sseqtrrid
       cv ) DHIACJKAGTJGDLMZNOAABMGAUAPGUAABCDEUAQFRS $.
+
+    $( The span of a set of vectors is idempotent.  (Contributed by NM,
+       22-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspidm $p |- ( ( W e. LMod /\ U C_ V )
+                  -> ( N ` ( N ` U ) ) = ( N ` U ) ) $=
+      ( clmod wcel wss cfv clss wceq eqid lspcl lspid syldan ) DGHACIABJZDKJZHQ
+      BJQLRABCDERMZFNRQBDSFOP $.
   $}
 
 
