@@ -156269,6 +156269,16 @@ $)
     lspssv $p |- ( ( W e. LMod /\ U C_ V ) -> ( N ` U ) C_ V ) $=
       ( clmod wcel wss cfv clss eqid lspcl lssssg syldan ) DGHACIABJZDKJZHPCIQA
       BCDEQLZFMQPCDGERNO $.
+
+    $( Span preserves subset ordering.  (Contributed by NM, 11-Dec-2013.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspss $p |- ( ( W e. LMod /\ U C_ V /\ T C_ U )
+          -> ( N ` T ) C_ ( N ` U ) ) $=
+      ( vt clmod wcel wss w3a cv clss cfv crab cint syl wceq lspval wa wi sstr2
+      simpl3 ss2rabdv intss simp1 simp3 simp2 sstrd syl2anc 3adant3 3sstr4d
+      eqid ) EIJZBDKZABKZLZAHMZKZHENOZPZQZBUSKZHVAPZQZACOZBCOZURVEVBKVCVFKURVDU
+      THVAURUSVAJZUAUQVDUTUBUOUPUQVIUDABUSUCRUEVEVBUFRURUOADKVGVCSUOUPUQUGURABD
+      UOUPUQUHUOUPUQUIUJHVAACDEFVAUNZGTUKUOUPVHVFSUQHVABCDEFVJGTULUM $.
   $}
 
 
