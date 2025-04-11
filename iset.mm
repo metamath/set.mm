@@ -156191,6 +156191,19 @@ $)
       lss1 ) DKLZHCMZHNZINZOZIAPZQZABIABCDKHEFGRUOUQUPLZSZUOUTAOZJNUTLJTZVAALUO
       VBUDVDVCUSIAUAUBVCUSIAUCZVEUOCALUQCOZVFVBACDEFUNUQCUEUSVGICAURCUQUFUGUHUS
       IJAUIUJJUTADFUKULUM $.
+
+    $( The span of a set of vectors (in a left module).  (Contributed by NM,
+       8-Dec-2013.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspval $p |- ( ( W e. LMod /\ U C_ V )
+       -> ( N ` U ) = |^| { t e. S | U C_ t } ) $=
+      ( vs clmod wcel wss cfv cv crab cint wceq cvv cbs cpw cmpt lspfval fveq1d
+      wa adantr eqid sseq1 rabbidv inteqd simpr wb basfn funfvex funfni sylancr
+      wfn elex eqeltrid elpw2g mpbird wrex lss1 sseq2 rspcev intexrabim fvmptd3
+      syl sylan eqtrd ) FKLZCEMZUEZCDNZCJEUAZJOZAOZMZABPZQZUBZNZCVQMZABPZQZVKVN
+      WBRVLVKCDWAABDEFKJGHIUCUDUFVMJCVTWEVOWASWAUGVPCRZVSWDWFVRWCABVPCVQUHUIUJV
+      MCVOLZVLVKVLUKVMESLWGVLULVMEFTNZSGVMTSUQFSLZWHSLZUMVKWIVLFKURUFWJSFTFTUNU
+      OUPUSCESUTVHVAVMWCABVBZWESLVKEBLVLWKBEFGHVCWCVLAEBVQECVDVEVIWCABVFVHVGVJ
+      $.
   $}
 
 
