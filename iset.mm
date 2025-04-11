@@ -156212,6 +156212,12 @@ $)
       wfn elex funfni sylancr eqeltrid elpw2g syl mpbird ffvelcdmd ) EIJZBDKZLZ
       DMZABCUMUPACNUNACDEFGHOPUOBUPJZUNUMUNQUODRJUQUNSUODETUAZRFUOTRUDERJZURRJZ
       UBUMUSUNEIUEPUTRETETUCUFUGUHBDRUIUJUKUL $.
+
+    $( The span of a singleton is a subspace (frequently used special case of
+       ~ lspcl ).  (Contributed by NM, 17-Jul-2014.) $)
+    lspsncl $p |- ( ( W e. LMod /\ X e. V ) -> ( N ` { X } ) e. S ) $=
+      ( wcel clmod csn wss cfv snssi lspcl sylan2 ) ECIDJIEKZCLQBMAIECNAQBCDFGH
+      OP $.
   $}
 
 
