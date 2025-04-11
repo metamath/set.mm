@@ -14335,7 +14335,6 @@ New usage of "2eu8" is discouraged (0 uses).
 New usage of "2euex" is discouraged (1 uses).
 New usage of "2euswap" is discouraged (2 uses).
 New usage of "2exeu" is discouraged (3 uses).
-New usage of "2falsedOLD" is discouraged (0 uses).
 New usage of "2irrexpqALT" is discouraged (0 uses).
 New usage of "2llnjN" is discouraged (1 uses).
 New usage of "2llnjaN" is discouraged (1 uses).
@@ -19570,6 +19569,7 @@ New usage of "vsfval" is discouraged (4 uses).
 New usage of "vtocl2OLD" is discouraged (0 uses).
 New usage of "vtocl3gaOLD" is discouraged (0 uses).
 New usage of "vtoclALT" is discouraged (0 uses).
+New usage of "vtoclbOLD" is discouraged (0 uses).
 New usage of "vtocldOLD" is discouraged (0 uses).
 New usage of "vtoclegftOLD" is discouraged (0 uses).
 New usage of "vtoclfOLD" is discouraged (0 uses).
@@ -19728,7 +19728,6 @@ Proof modification of "1strwunOLD" is discouraged (20 steps).
 Proof modification of "1t1e1ALT" is discouraged (13 steps).
 Proof modification of "2bornot2b" is discouraged (26 steps).
 Proof modification of "2cnALT" is discouraged (3 steps).
-Proof modification of "2falsedOLD" is discouraged (14 steps).
 Proof modification of "2irrexpqALT" is discouraged (90 steps).
 Proof modification of "2logb9irrALT" is discouraged (141 steps).
 Proof modification of "2oexOLD" is discouraged (9 steps).
@@ -21648,6 +21647,7 @@ Proof modification of "vn0ALT" is discouraged (6 steps).
 Proof modification of "vtocl2OLD" is discouraged (38 steps).
 Proof modification of "vtocl3gaOLD" is discouraged (45 steps).
 Proof modification of "vtoclALT" is discouraged (11 steps).
+Proof modification of "vtoclbOLD" is discouraged (22 steps).
 Proof modification of "vtocldOLD" is discouraged (21 steps).
 Proof modification of "vtoclegftOLD" is discouraged (50 steps).
 Proof modification of "vtoclfOLD" is discouraged (28 steps).
