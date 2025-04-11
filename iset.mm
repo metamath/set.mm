@@ -156279,6 +156279,12 @@ $)
       eqid ) EIJZBDKZABKZLZAHMZKZHENOZPZQZBUSKZHVAPZQZACOZBCOZURVEVBKVCVFKURVDU
       THVAURUSVAJZUAUQVDUTUBUOUPUQVIUDABUSUCRUEVEVBUFRURUOADKVGVCSUOUPUQUGURABD
       UOUPUQUHUOUPUQUIUJHVAACDEFVAUNZGTUKUOUPVHVFSUQHVABCDEFVJGTULUM $.
+
+    $( A set of vectors is a subset of its span.  (Contributed by NM,
+       6-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspssid $p |- ( ( W e. LMod /\ U C_ V ) -> U C_ ( N ` U ) ) $=
+      ( vt clmod wcel wss wa clss cfv crab cint ssintub eqid lspval sseqtrrid
+      cv ) DHIACJKAGTJGDLMZNOAABMGAUAPGUAABCDEUAQFRS $.
   $}
 
 
