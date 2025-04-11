@@ -156227,6 +156227,14 @@ $)
     lspprcl $p |- ( ph -> ( N ` { X , Y } ) e. S ) $=
       ( clmod wcel cpr wss cfv prssd lspcl syl2anc ) AENOFGPZDQUBCRBOKAFGDLMSBU
       BCDEHIJTUA $.
+
+    lsptpcl.z $e |- ( ph -> Z e. V ) $.
+    $( The span of an unordered triple is a subspace (frequently used special
+       case of ~ lspcl ).  (Contributed by NM, 22-May-2015.) $)
+    lsptpcl $p |- ( ph -> ( N ` { X , Y , Z } ) e. S ) $=
+      ( clmod wcel ctp wss cfv cpr csn df-tp prssd snssd unssd eqsstrid syl2anc
+      cun lspcl ) AEPQFGHRZDSUKCTBQLAUKFGUAZHUBZUIDFGHUCAULUMDAFGDMNUDAHDOUEUFU
+      GBUKCDEIJKUJUH $.
   $}
 
 
