@@ -23517,7 +23517,6 @@ $)
         ( nfcv rabeqif ) ABCDBCFBDFEG $.
     $}
 
-    $d ph x $.
     rabeqdv.1 $e |- ( ph -> A = B ) $.
     $( Equality of restricted class abstractions.  Deduction form of ~ rabeq .
        (Contributed by Glauco Siliprandi, 5-Apr-2020.) $)
