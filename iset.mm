@@ -156260,6 +156260,17 @@ $)
       GABCUIDUJEFTUBUFUHBQUEGBAUCUDUA $.
   $}
 
+  ${
+    $d t T $.  $d t U $.  $d t V $.  $d t W $.
+    lspss.v $e |- V = ( Base ` W ) $.
+    lspss.n $e |- N = ( LSpan ` W ) $.
+    $( A span is a set of vectors.  (Contributed by NM, 22-Feb-2014.)  (Revised
+       by Mario Carneiro, 19-Jun-2014.) $)
+    lspssv $p |- ( ( W e. LMod /\ U C_ V ) -> ( N ` U ) C_ V ) $=
+      ( clmod wcel wss cfv clss eqid lspcl lssssg syldan ) DGHACIABJZDKJZHPCIQA
+      BCDEQLZFMQPCDGERNO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
