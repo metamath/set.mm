@@ -156154,6 +156154,19 @@ $)
       UJADEUCUDUE $.
   $}
 
+  $c LSpan $.
+
+  $( Extend class notation with span of a set of vectors. $)
+  clspn $a class LSpan $.
+
+  ${
+    $d w s t $.
+    $( Define span of a set of vectors of a left module or left vector space.
+       (Contributed by NM, 8-Dec-2013.) $)
+    df-lsp $a |- LSpan = ( w e. _V |-> ( s e. ~P ( Base ` w ) |->
+         |^| { t e. ( LSubSp ` w ) | s C_ t } ) ) $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -174202,6 +174215,10 @@ htmldef "LSubSp" as
     "<IMG SRC='_lsubsp.gif' WIDTH=49 HEIGHT=19 ALT=' LSubSp' TITLE='LSubSp'>";
   althtmldef "LSubSp" as "LSubSp";
   latexdef "LSubSp" as "\mathrm{LSubSp}";
+htmldef "LSpan" as
+    "<IMG SRC='_lspan.gif' WIDTH=41 HEIGHT=19 ALT=' LSpan' TITLE='LSpan'>";
+  althtmldef "LSpan" as "LSpan";
+  latexdef "LSpan" as "\mathrm{LSpan}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
