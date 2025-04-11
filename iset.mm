@@ -156237,6 +156237,17 @@ $)
       GBUKCDEIJKUJUH $.
   $}
 
+  ${
+    lspsnsubg.v $e |- V = ( Base ` W ) $.
+    lspsnsubg.n $e |- N = ( LSpan ` W ) $.
+    $( The span of a singleton is an additive subgroup (frequently used special
+       case of ~ lspcl ).  (Contributed by Mario Carneiro, 21-Apr-2016.) $)
+    lspsnsubg $p |- ( ( W e. LMod /\ X e. V ) ->
+        ( N ` { X } ) e. ( SubGrp ` W ) ) $=
+      ( clmod wcel csn cfv clss csubg eqid lspsncl lsssubg syldan ) CGHDBHDIAJZ
+      CKJZHQCLJHRABCDERMZFNRQCSOP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
