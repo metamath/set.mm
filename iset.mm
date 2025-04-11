@@ -156167,7 +156167,7 @@ $)
   $}
 
   ${
-    $d p s t w S $.  $d s t U $.  $d p s t w V $.  $d s w W $.
+    $d j p s t w S $.  $d s t U $.  $d p s t w V $.  $d j s w W $.
     lspval.v $e |- V = ( Base ` W ) $.
     lspval.s $e |- S = ( LSubSp ` W ) $.
     lspval.n $e |- N = ( LSpan ` W ) $.
@@ -156182,6 +156182,15 @@ $)
       ZJVCKEGKPZRNZOZVEAVISNZQZUBZUCVHTMTKAGUDVIEUFZGVKVNVDVGVOVJDVOVJERNZDVIER
       UGHUEUHVOVMVFVOVEAVLBVOVLESNBVIESUGIUEUIUJUKEFULZVCGVDVGTVCDTVCDVPTHVCRTU
       METLVPTLZUQVQVRTERERUNUOUPURUSUTVAVB $.
+
+    $( The span operator on a left module maps subsets to subsets.
+       (Contributed by Stefan O'Rear, 12-Dec-2014.) $)
+    lspf $p |- ( W e. LMod -> N : ~P V --> S ) $=
+      ( vs vp vj clmod wcel cpw cv wss crab cint lspfval wa wex ssrab2 a1i wrex
+      simpl elpwi sseq2 rspcev syl2an rabn0m sylibr lssintclm syl3anc fmpt3d
+      lss1 ) DKLZHCMZHNZINZOZIAPZQZABIABCDKHEFGRUOUQUPLZSZUOUTAOZJNUTLJTZVAALUO
+      VBUDVDVCUSIAUAUBVCUSIAUCZVEUOCALUQCOZVFVBACDEFUNUQCUEUSVGICAURCUQUFUGUHUS
+      IJAUIUJJUTADFUKULUM $.
   $}
 
 
