@@ -156306,6 +156306,18 @@ $)
       CMZURUPUMVKVAURJVBVNJVDVLVJVAURCDEFGPQUPUMVEVNURUHVDVHUQCDEFGUIRUJUK $.
   $}
 
+  ${
+    lspssp.s $e |- S = ( LSubSp ` W ) $.
+    lspssp.n $e |- N = ( LSpan ` W ) $.
+    $( If a set of vectors is a subset of a subspace, then the span of those
+       vectors is also contained in the subspace.  (Contributed by Mario
+       Carneiro, 4-Sep-2014.) $)
+    lspssp $p |- ( ( W e. LMod /\ U e. S /\ T C_ U ) -> ( N ` T ) C_ U ) $=
+      ( clmod wcel wss w3a cfv eqid lssssg 3adant3 lspss syld3an2 wceq lspid
+      cbs sseqtrd ) EHIZCAIZBCJZKBDLZCDLZCUBCETLZJZUCUDUEUFJUBUCUHUDACUGEHUGMZF
+      NOBCDUGEUIGPQUBUCUFCRUDACDEFGSOUA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
