@@ -155656,8 +155656,11 @@ $)
 
   ${
     $d a b j s x w $.
-    $( Define the set of linear subspaces of a left module or left vector
-       space.  (Contributed by NM, 8-Dec-2013.) $)
+    $( A linear subspace of a left module or left vector space is an inhabited
+       (in contrast to non-empty for non-intuitionistic logic) subset of the
+       base set of the left-module/vector space with a closure condition on
+       vector addition and scalar multiplication.  (Contributed by NM,
+       8-Dec-2013.) $)
     df-lssm $a |- LSubSp = ( w e. _V |->
      { s e. ~P ( Base ` w ) | ( E. j j e. s /\
         A. x e. ( Base ` ( Scalar ` w ) ) A. a e. s A. b e. s
