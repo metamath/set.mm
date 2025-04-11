@@ -156292,6 +156292,18 @@ $)
                   -> ( N ` ( N ` U ) ) = ( N ` U ) ) $=
       ( clmod wcel wss cfv clss wceq eqid lspcl lspid syldan ) DGHACIABJZDKJZHQ
       BJQLRABCDERMZFNRQBDSFOP $.
+
+    $( The span of union is the span of the union of spans.  (Contributed by
+       NM, 22-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspun $p |- ( ( W e. LMod /\ T C_ V /\ U C_ V )
+       -> ( N ` ( T u. U ) ) = ( N ` ( ( N ` T ) u. ( N ` U ) ) ) ) $=
+      ( clmod wcel wss w3a cun cfv simp1 unssd lspss syl3anc syl2anc lspssid
+      a1i simp2 simp3 ssun1 ssun2 lspssv sstrd unss12 wceq lspidm sseqtrd eqssd
+      3imp3i2an ) EHIZADJZBDJZKZABLZCMZACMZBCMZLZCMZUPUMVADJUQVAJZURVBJUMUNUONZ
+      UPVAURDUPUSUTURUPUMUQDJZAUQJZUSURJVDUPABDUMUNUOUAZUMUNUOUBOZVFUPABUCTAUQC
+      DEFGPQUPUMVEBUQJZUTURJVDVHVIUPBAUDTBUQCDEFGPQOZUPUMVEURDJZVDVHUQCDEFGUERZ
+      UFUMUNUOAUSJZBUTJVCUPUMUNVMVDVGACDEFGSRBCDEFGSAUSBUTUGULUQVACDEFGPQUPVBUR
+      CMZURUPUMVKVAURJVBVNJVDVLVJVAURCDEFGPQUPUMVEVNURUHVDVHUQCDEFGUIRUJUK $.
   $}
 
 
