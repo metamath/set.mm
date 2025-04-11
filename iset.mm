@@ -156218,6 +156218,15 @@ $)
     lspsncl $p |- ( ( W e. LMod /\ X e. V ) -> ( N ` { X } ) e. S ) $=
       ( wcel clmod csn wss cfv snssi lspcl sylan2 ) ECIDJIEKZCLQBMAIECNAQBCDFGH
       OP $.
+
+    lspprcl.w $e |- ( ph -> W e. LMod ) $.
+    lspprcl.x $e |- ( ph -> X e. V ) $.
+    lspprcl.y $e |- ( ph -> Y e. V ) $.
+    $( The span of a pair is a subspace (frequently used special case of
+       ~ lspcl ).  (Contributed by NM, 11-Apr-2015.) $)
+    lspprcl $p |- ( ph -> ( N ` { X , Y } ) e. S ) $=
+      ( clmod wcel cpr wss cfv prssd lspcl syl2anc ) AENOFGPZDQUBCRBOKAFGDLMSBU
+      BCDEHIJTUA $.
   $}
 
 
