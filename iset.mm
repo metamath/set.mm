@@ -156469,6 +156469,29 @@ $)
       OUNOQFGHIJNUFTEULCUKDHBILKMUPUGUH $.
   $}
 
+  ${
+    $d k F $.  $d k v K $.  $d k v N $.  $d k v U $.  $d k v V $.  $d k v W $.
+    $d k R $.  $d k v .x. $.  $d k v X $.
+    lspsn.f $e |- F = ( Scalar ` W ) $.
+    lspsn.k $e |- K = ( Base ` F ) $.
+    lspsn.v $e |- V = ( Base ` W ) $.
+    lspsn.t $e |- .x. = ( .s ` W ) $.
+    lspsn.n $e |- N = ( LSpan ` W ) $.
+    $( Span of the singleton of a vector.  (Contributed by NM, 14-Jan-2014.)
+       (Proof shortened by Mario Carneiro, 19-Jun-2014.) $)
+    lspsn $p |- ( ( W e. LMod /\ X e. V )
+        -> ( N ` { X } ) = { v | E. k e. K v = ( k .x. X ) } ) $=
+      ( wcel wa cfv cv wceq adantr clmod csn wrex cab clss eqid simpl lss1d cur
+      co lmod1cl lmodvs1 eqcomd oveq1 rspceeqv syl2an2r wb eqeq1 rexbidv adantl
+      elabg mpbird lspsnel5a wi lspsncl simpr lspsnid syl22anc eleq1a rexlimdva
+      lssvscl syl abssdv eqssd ) HUAOZIGOZPZIUBFQZARZCRZIBUJZSZCEUCZAUDZVQHUEQZ
+      WDFHIWEUFZNVOVPUGZAWEBCDEGHILJMKWFUHVQIWDOZIWASZCEUCZVODUIQZEOVPIWKIBUJZS
+      WJWKDEHJKWKUFZUKVQWLIBWKDGHILJMWMULUMCWKEWAWLIVTWKIBUNUOUPVPWHWJUQVOWCWJA
+      IGVSISWBWICEVSIWAURUSVAUTVBVCVQWCAVRVQWBVSVROZCEVQVTEOZPZWAVROZWBWNVDWPVO
+      VRWEOZWOIVROZWQVQVOWOWGTVQWRWOWEFGHILWFNVETVQWOVFVQWSWOFGHILNVGTEWEBVRDHV
+      TIJMKWFVKVHWAVRVSVIVLVJVMVN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
