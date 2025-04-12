@@ -156354,6 +156354,16 @@ $)
       LMSBUBCDEHITUA $.
   $}
 
+  ${
+    lspsnid.v $e |- V = ( Base ` W ) $.
+    lspsnid.n $e |- N = ( LSpan ` W ) $.
+    $( A vector belongs to the span of its singleton.  (Contributed by NM,
+       9-Apr-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspsnid $p |- ( ( W e. LMod /\ X e. V ) -> X e. ( N ` { X } ) ) $=
+      ( clmod wcel wa csn cfv wss snssi lspssid sylan2 wb snssg adantl mpbird )
+      CGHZDBHZIDDJZAKZHZUBUCLZUATUBBLUEDBMUBABCEFNOUAUDUEPTDUCBQRS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
