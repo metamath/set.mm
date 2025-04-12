@@ -156607,6 +156607,21 @@ $)
       BCDGIUOSTT $.
   $}
 
+  ${
+    lspsneq0.v $e |- V = ( Base ` W ) $.
+    lspsneq0.z $e |- .0. = ( 0g ` W ) $.
+    lspsneq0.n $e |- N = ( LSpan ` W ) $.
+    $( Span of the singleton is the zero subspace iff the vector is zero.
+       (Contributed by NM, 27-Apr-2014.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lspsneq0 $p |- ( ( W e. LMod /\ X e. V )
+         -> ( ( N ` { X } ) = { .0. } <-> X = .0. ) ) $=
+      ( clmod wcel wa csn cfv wceq lspsnid eleq2 syl5ibcom elsni syl6 lspsn0
+      adantr sneq fveqeq2d syl5ibrcom impbid ) CIJZDBJZKZDLZAMZELZNZDENZUHULDUK
+      JZUMUHDUJJULUNABCDFHOUJUKDPQDERSUHULUMUKAMUKNZUFUOUGACEGHTUAUMUIUKUKADEUB
+      UCUDUE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
