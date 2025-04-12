@@ -156386,6 +156386,19 @@ $)
       ( wcel csn cfv wss lspsnel6 mpbirand ) AGCNGENGODPCQMABCDEFGHIJKLRS $.
   $}
 
+  ${
+    lspsnel5a.s $e |- S = ( LSubSp ` W ) $.
+    lspsnel5a.n $e |- N = ( LSpan ` W ) $.
+    lspsnel5a.w $e |- ( ph -> W e. LMod ) $.
+    lspsnel5a.a $e |- ( ph -> U e. S ) $.
+    lspsnel5a.x $e |- ( ph -> X e. U ) $.
+    $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
+       generates.  (Contributed by NM, 20-Feb-2015.) $)
+    lspsnel5a $p |- ( ph -> ( N ` { X } ) C_ U ) $=
+      ( wcel csn cfv wss cbs eqid clmod lsselg syl3anc lspsnel5 mpbid ) AFCLZFM
+      DNCOKABCDEPNZEFUDQZGHIJAERLCBLUCFUDLIJKRBCUDEFUEGSTUAUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
