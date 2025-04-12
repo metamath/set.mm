@@ -156340,6 +156340,20 @@ $)
       KLBCDEFHISTMUA $.
   $}
 
+  ${
+    lspprss.s $e |- S = ( LSubSp ` W ) $.
+    lspprss.n $e |- N = ( LSpan ` W ) $.
+    lspprss.w $e |- ( ph -> W e. LMod ) $.
+    lspprss.u $e |- ( ph -> U e. S ) $.
+    lspprss.x $e |- ( ph -> X e. U ) $.
+    lspprss.y $e |- ( ph -> Y e. U ) $.
+    $( The span of a pair of vectors in a subspace belongs to the subspace.
+       (Contributed by NM, 12-Jan-2015.) $)
+    lspprss $p |- ( ph -> ( N ` { X , Y } ) C_ U ) $=
+      ( clmod wcel cpr wss cfv prssd lspssp syl3anc ) AENOCBOFGPZCQUBDRCQJKAFGC
+      LMSBUBCDEHITUA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
