@@ -179155,6 +179155,26 @@ $)
   $}
 
   ${
+    $d w x y z $.
+    $( Real number trichotomy is equivalent to decidability of complex number
+       apartness.  (Contributed by Jim Kingdon, 10-Apr-2025.) $)
+    cndcap $p |- ( A. x e. RR A. y e. RR ( x < y \/ x = y \/ y < x )
+        <-> A. z e. CC A. w e. CC DECID z =//= w ) $=
+      ( cv wbr wceq cr wral cap wdc cc wa cfv breq2 dcbid breq1 ralbidv rspcdva
+      wcel clt w3o cre cim wo triap ralbidva ralbiia biimpi adantr simprl recld
+      simprr imcld dcor sylc cnreim adantl mpbird ralrimivva simpl recnd impbii
+      wb ) AEZBEZUAFVEVFGVFVEUAFUBZBHIZAHIZCEZDEZJFZKZDLIZCLIZVIVMCDLLVIVJLTZVK
+      LTZMZMZVMVJUCNZVKUCNZJFZVJUDNZVKUDNZJFZUEZKZVSWBKZWEKZWGVSVTVFJFZKZWHBHWA
+      VFWAGWJWBVFWAVTJOPVSVEVFJFZKZBHIZWKBHIAHVTVEVTGZWMWKBHWOWLWJVEVTVFJQPRVIW
+      NAHIZVRVIWPVHWNAHVEHTZVGWMBHVEVFUFZUGUHUIUJZVSVJVIVPVQUKZULSVSVKVIVPVQUMZ
+      ULSVSWCVFJFZKZWIBHWDVFWDGXBWEVFWDWCJOPVSWNXCBHIAHWCVEWCGZWMXCBHXDWLXBVEWC
+      VFJQPRWSVSVJWTUNSVSVKXAUNSWBWEUOUPVRVMWGVDVIVRVLWFVJVKUQPURUSUTVOVGABHHVO
+      WQVFHTZMZMZVGWMXGVEVKJFZKZWMDLVFVKVFGXHWLVKVFVEJOPXGVNXIDLICLVEVJVEGZVMXI
+      DLXJVLXHVJVEVKJQPRVOXFVAXGVEVOWQXEUKVBSXGVFVOWQXEUMVBSXFVGWMVDVOWRURUSUTV
+      C $.
+  $}
+
+  ${
     $d f u x $.  $d f x y $.  $d x y z $.
     $( Decidability of real number equality implies the existence of a certain
        non-constant function from real numbers to integers.  Variation of
