@@ -156411,6 +156411,12 @@ $)
       ( cpr cfv wcel csn wss clmod prssd snsspr1 a1i lspss syl3anc clss lspprcl
       eqid lspsnel5 mpbird ) AEEFLZBMZNEOZBMUIPZADQNUHCPUJUHPZUKIAEFCJKRULAEFST
       UJUHBCDGHUAUBADUCMZUIBCDEGUMUEZHIAUMBCDEFGUNHIJKUDJUFUG $.
+
+    $( A member of a pair of vectors belongs to their span.  (Contributed by
+       NM, 14-May-2015.) $)
+    lspprid2 $p |- ( ph -> Y e. ( N ` { X , Y } ) ) $=
+      ( cpr cfv lspprid1 prcom fveq2i eleqtrdi ) AFFELZBMEFLZBMABCDFEGHIKJNRSBF
+      EOPQ $.
   $}
 
 
