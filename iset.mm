@@ -156639,6 +156639,25 @@ $)
       FAUKPZURUJVDUPUMUNAUQUKNSAUOUKVCUDUHAUTUKVASUFUI $.
   $}
 
+  ${
+    lmodindp1.v $e |- V = ( Base ` W ) $.
+    lmodindp1.p $e |- .+ = ( +g ` W ) $.
+    lmodindp1.o $e |- .0. = ( 0g ` W ) $.
+    lmodindp1.n $e |- N = ( LSpan ` W ) $.
+    lmodindp1.w $e |- ( ph -> W e. LMod ) $.
+    lmodindp1.x $e |- ( ph -> X e. V ) $.
+    lmodindp1.y $e |- ( ph -> Y e. V ) $.
+    lmodindp1.q $e |- ( ph -> ( N ` { X } ) =/= ( N ` { Y } ) ) $.
+    $( Two independent (non-colinear) vectors have nonzero sum.  (Contributed
+       by NM, 22-Apr-2015.) $)
+    lmodindp1 $p |- ( ph -> ( X .+ Y ) =/= .0. ) $=
+      ( csn cfv wceq wcel wne co wa cminusg eqid lspsnneg syl2anc eqcomd adantr
+      clmod cgrp wb lmodgrp syl grpinvid1 syl3anc biimpar sneqd fveq2d eqtrd ex
+      necon3d mpd ) AFQCRZGQZCRZUAFGBUBZHUAPAVGHVDVFAVGHSZVDVFSAVHUCZVDFEUDRZRZ
+      QZCRZVFAVDVMSVHAVMVDAEUJTZFDTZVMVDSMNVJCDEFIVJUEZLUFUGUHUIVIVLVECVIVKGAVK
+      GSZVHAEUKTZVOGDTVQVHULAVNVRMEUMUNNODBEVJFGHIJKVPUOUPUQURUSUTVAVBVC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
