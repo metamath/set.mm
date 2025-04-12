@@ -156399,6 +156399,20 @@ $)
       DNCOKABCDEPNZEFUDQZGHIJAERLCBLUCFUDLIJKRBCUDEFUEGSTUAUB $.
   $}
 
+  ${
+    lspprid.v $e |- V = ( Base ` W ) $.
+    lspprid.n $e |- N = ( LSpan ` W ) $.
+    lspprid.w $e |- ( ph -> W e. LMod ) $.
+    lspprid.x $e |- ( ph -> X e. V ) $.
+    lspprid.y $e |- ( ph -> Y e. V ) $.
+    $( A member of a pair of vectors belongs to their span.  (Contributed by
+       NM, 14-May-2015.) $)
+    lspprid1 $p |- ( ph -> X e. ( N ` { X , Y } ) ) $=
+      ( cpr cfv wcel csn wss clmod prssd snsspr1 a1i lspss syl3anc clss lspprcl
+      eqid lspsnel5 mpbird ) AEEFLZBMZNEOZBMUIPZADQNUHCPUJUHPZUKIAEFCJKRULAEFST
+      UJUHBCDGHUAUBADUCMZUIBCDEGUMUEZHIAUMBCDEFGUNHIJKUDJUFUG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
