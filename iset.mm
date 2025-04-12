@@ -156490,6 +156490,17 @@ $)
       IGVSISWBWICEVSIWAURUSVAUTVBVCVQWCAVRVQWBVSVROZCEVQVTEOZPZWAVROZWBWNVDWPVO
       VRWEOZWOIVROZWQVQVOWOWGTVQWRWOWEFGHILWFNVETVQWOVFVQWSWOFGHILNVGTEWEBVRDHV
       TIJMKWFVKVHWAVRVSVIVLVJVMVN $.
+
+    $( Member of span of the singleton of a vector.  (Contributed by NM,
+       22-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspsnel $p |- ( ( W e. LMod /\ X e. V )
+       -> ( U e. ( N ` { X } ) <-> E. k e. K U = ( k .x. X ) ) ) $=
+      ( vv clmod wcel wa wceq cvv csn cfv cv co wrex cab lspsn eleq2d wi wb vex
+      simpr cvsca vscaslid slotex eqeltrid ovexg mp3an2ani eqeltrd ex rexlimdvw
+      adantr eqeq1 rexbidv elab3g syl bitrd ) HPQZIGQZRZBIUAFUBZQBOUCZCUCZIAUDZ
+      SZCEUEZOUFZQZBVNSZCEUEZVJVKVQBOACDEFGHIJKLMNUGUHVJVTBTQZUIVRVTUJVJVSWACEV
+      JVSWAVJVSRBVNTVJVSULVJVNTQZVSVMTQVHATQVIVIWBCUKVHAHUMUBTMHUMPUNUOUPVHVIUL
+      VMIATTGUQURVBUSUTVAVPVTOBTVLBSVOVSCEVLBVNVCVDVEVFVG $.
   $}
 
 
