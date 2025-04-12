@@ -156567,6 +156567,16 @@ $)
       AUPUTCAUOUSAEUERZVCVDUOUSSAVAVFKEUGUHLMDEBUNFGHIVEUITUJUKUL $.
   $}
 
+  ${
+    lspsn0.z $e |- .0. = ( 0g ` W ) $.
+    lspsn0.n $e |- N = ( LSpan ` W ) $.
+    $( Span of the singleton of the zero vector.  (Contributed by NM,
+       15-Jan-2014.)  (Proof shortened by Mario Carneiro, 19-Jun-2014.) $)
+    lspsn0 $p |- ( W e. LMod -> ( N ` { .0. } ) = { .0. } ) $=
+      ( clmod wcel csn clss cfv wceq eqid lsssn0 lspid mpdan ) BFGCHZBIJZGPAJPK
+      QBCDQLZMQPABRENO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
