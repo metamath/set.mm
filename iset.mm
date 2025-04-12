@@ -156512,6 +156512,26 @@ $)
       IUJ $.
   $}
 
+  ${
+    $d k K $.  $d k N $.  $d k S $.  $d k V $.  $d k W $.  $d k X $.  $d k Y $.
+    $d k .x. $.
+    lspsnss2.v $e |- V = ( Base ` W ) $.
+    lspsnss2.s $e |- S = ( Scalar ` W ) $.
+    lspsnss2.k $e |- K = ( Base ` S ) $.
+    lspsnss2.t $e |- .x. = ( .s ` W ) $.
+    lspsnss2.n $e |- N = ( LSpan ` W ) $.
+    lspsnss2.w $e |- ( ph -> W e. LMod ) $.
+    lspsnss2.x $e |- ( ph -> X e. V ) $.
+    lspsnss2.y $e |- ( ph -> Y e. V ) $.
+    $( Comparable spans of singletons must have proportional vectors.
+       (Contributed by NM, 7-Jun-2015.) $)
+    lspsnss2 $p |- ( ph ->
+ ( ( N ` { X } ) C_ ( N ` { Y } ) <-> E. k e. K X = ( k .x. Y ) ) ) $=
+      ( cfv wcel csn wss cv co wceq wrex clss clmod lspsncl syl2anc lspsnel5 wb
+      eqid lspsnel bitr3d ) AIJUAFSZTZIUAFSUPUBIDUCJCUDUEDEUFZAHUGSZUPFGHIKUSUM
+      ZOPAHUHTZJGTZUPUSTPRUSFGHJKUTOUIUJQUKAVAVBUQURULPRCIDBEFGHJLMKNOUNUJUO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
