@@ -156318,6 +156318,18 @@ $)
       NOBCDUGEUIGPQUBUCUFCRUDACDEFGSOUA $.
   $}
 
+  ${
+    lspsnss.s $e |- S = ( LSubSp ` W ) $.
+    lspsnss.n $e |- N = ( LSpan ` W ) $.
+    $( The span of the singleton of a subspace member is included in the
+       subspace.  (Contributed by NM, 9-Apr-2014.)  (Revised by Mario Carneiro,
+       4-Sep-2014.) $)
+    lspsnss $p |- ( ( W e. LMod /\ U e. S /\ X e. U )
+            -> ( N ` { X } ) C_ U ) $=
+      ( wcel clmod csn wss cfv snssi lspssp syl3an3 ) EBHDIHBAHEJZBKPCLBKEBMAPB
+      CDFGNO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
