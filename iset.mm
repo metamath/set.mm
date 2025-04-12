@@ -156328,6 +156328,16 @@ $)
             -> ( N ` { X } ) C_ U ) $=
       ( wcel clmod csn wss cfv snssi lspssp syl3an3 ) EBHDIHBAHEJZBKPCLBKEBMAPB
       CDFGNO $.
+
+    lspsnel3.w $e |- ( ph -> W e. LMod ) $.
+    lspsnel3.u $e |- ( ph -> U e. S ) $.
+    lspsnel3.x $e |- ( ph -> X e. U ) $.
+    lspsnel3.y $e |- ( ph -> Y e. ( N ` { X } ) ) $.
+    $( A member of the span of the singleton of a vector is a member of a
+       subspace containing the vector.  (Contributed by NM, 4-Jul-2014.) $)
+    lspsnel3 $p |- ( ph -> Y e. U ) $=
+      ( csn cfv clmod wcel wss lspsnss syl3anc sseldd ) AFNDOZCGAEPQCBQFCQUBCRJ
+      KLBCDEFHISTMUA $.
   $}
 
 
