@@ -156590,6 +156590,23 @@ $)
       c0 syl ) BFGZSAHZICJZIZCUAUBUCABCDEKLUACBMHZGUDCNUEBCUEODPCUEQTR $.
   $}
 
+  ${
+    lspun0.v $e |- V = ( Base ` W ) $.
+    lspun0.o $e |- .0. = ( 0g ` W ) $.
+    lspun0.n $e |- N = ( LSpan ` W ) $.
+    lspun0.w $e |- ( ph -> W e. LMod ) $.
+    lspun0.x $e |- ( ph -> X C_ V ) $.
+    $( The span of a union with the zero subspace.  (Contributed by NM,
+       22-May-2015.) $)
+    lspun0 $p |- ( ph -> ( N ` ( X u. { .0. } ) ) = ( N ` X ) ) $=
+      ( csn cun cfv wcel wss wceq syl syl2anc eqtrd clmod lmod0vcl snssd lspsn0
+      lspun syl3anc uneq2d clss eqid lspcl lss0ss ssequn2 sylib fveq2d lspidm )
+      AEFLZMBNZEBNZUPBNZMZBNZURADUAOZECPZUPCPUQVAQJKAFCAVBFCOJCDFGHUBRUCEUPBCDG
+      IUEUFAVAURBNZURAUTURBAUTURUPMZURAUSUPURAVBUSUPQJBDFHIUDRUGAUPURPZVEURQAVB
+      URDUHNZOZVFJAVBVCVHJKVGEBCDGVGUIZIUJSVGDURFHVIUKSUPURULUMTUNAVBVCVDURQJKE
+      BCDGIUOSTT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
