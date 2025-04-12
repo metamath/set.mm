@@ -156419,6 +156419,21 @@ $)
       EOPQ $.
   $}
 
+  ${
+    lspprvacl.v $e |- V = ( Base ` W ) $.
+    lspprvacl.p $e |- .+ = ( +g ` W ) $.
+    lspprvacl.n $e |- N = ( LSpan ` W ) $.
+    lspprvacl.w $e |- ( ph -> W e. LMod ) $.
+    lspprvacl.x $e |- ( ph -> X e. V ) $.
+    lspprvacl.y $e |- ( ph -> Y e. V ) $.
+    $( The sum of two vectors belongs to their span.  (Contributed by NM,
+       20-May-2015.) $)
+    lspprvacl $p |- ( ph -> ( X .+ Y ) e. ( N ` { X , Y } ) ) $=
+      ( clmod wcel cpr cfv clss co eqid lspprcl lspprid1 lspprid2 syl22anc
+      lssvacl ) AENOFGPCQZERQZOFUFOGUFOFGBSUFOKAUGCDEFGHUGTZJKLMUAACDEFGHJKLMUB
+      ACDEFGHJKLMUCBUGUFEFGIUHUEUD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
