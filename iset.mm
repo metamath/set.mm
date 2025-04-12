@@ -156658,6 +156658,29 @@ $)
       GSZVHAEUKTZVOGDTVQVHULAVNVRMEUMUNNODBEVJFGHIJKVPUOUPUQURUSUTVAVBVC $.
   $}
 
+  ${
+    lsslsp.x $e |- X = ( W |`s U ) $.
+    lsslsp.m $e |- M = ( LSpan ` W ) $.
+    lsslsp.n $e |- N = ( LSpan ` X ) $.
+    lsslsp.l $e |- L = ( LSubSp ` W ) $.
+    $( Spans in submodules correspond to spans in the containing module.
+       (Contributed by Stefan O'Rear, 12-Dec-2014.)  TODO:  Shouldn't we swap
+       ` M `` G ` and ` N `` G ` since we are computing a property of
+       ` N `` G ` ?  (Like we say sin 0 = 0 and not 0 = sin 0.) - NM
+       15-Mar-2015. $)
+    lsslsp $p |- ( ( W e. LMod /\ U e. L /\ G C_ U ) ->
+      ( M ` G ) = ( N ` G ) ) $=
+      ( clmod wcel wss cfv wa 3adant3 eqid syl2anc lspssp w3a simp1 cbs lsslmod
+      clss simp3 cress co a1i eqidd lssssg ressbas2d sseqtrd lspcl lsslss mpbid
+      wceq wb simpld lspssid syl3anc sstrd mpbir2and eqssd ) FLMZACMZBANZUAZBDO
+      ZBEOZVHVEVJCMZBVJNZVIVJNVEVFVGUBZVHVKVJANZVHVJGUEOZMZVKVNPZVHGLMZBGUCOZNZ
+      VPVEVFVRVGCAFGHKUDQZVHBAVSVEVFVGUFZVHAFUCOZGFLGFAUGUHUQVHHUIVHWCUJVMVEVFA
+      WCNVGCAWCFLWCRZKUKQZULUMZVOBEVSGVSRZVORZJUNSVEVFVPVQURVGCVOAVJFGHKWHUOQUP
+      USVHVRVTVLWAWFBEVSGWGJUTSCBVJDFKITVAVHVRVIVOMZBVINZVJVINWAVHWIVICMZVIANZV
+      HVEBWCNZWKVMVHBAWCWBWEVBZCBDWCFWDKIUNSCBADFKITVEVFWIWKWLPURVGCVOAVIFGHKWH
+      UOQVCVHVEWMWJVMWNBDWCFWDIUTSVOBVIEGWHJTVAVD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
