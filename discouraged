@@ -16271,6 +16271,8 @@ New usage of "dtruOLD" is discouraged (0 uses).
 New usage of "dtrucor2" is discouraged (0 uses).
 New usage of "dummylink" is discouraged (0 uses).
 New usage of "dvadiaN" is discouraged (1 uses).
+New usage of "dvcnp2OLD" is discouraged (0 uses).
+New usage of "dvcobrOLD" is discouraged (0 uses).
 New usage of "dveel1" is discouraged (1 uses).
 New usage of "dveel2" is discouraged (1 uses).
 New usage of "dveel2ALT" is discouraged (0 uses).
@@ -16299,6 +16301,7 @@ New usage of "dvhopaddN" is discouraged (1 uses).
 New usage of "dvhopclN" is discouraged (0 uses).
 New usage of "dvhopspN" is discouraged (1 uses).
 New usage of "dvhvaddcomN" is discouraged (0 uses).
+New usage of "dvmulbrOLD" is discouraged (0 uses).
 New usage of "dvrunz" is discouraged (3 uses).
 New usage of "e00" is discouraged (2 uses).
 New usage of "e000" is discouraged (1 uses).
@@ -18655,6 +18658,7 @@ New usage of "plpv" is discouraged (1 uses).
 New usage of "plusgndx" is discouraged (24 uses).
 New usage of "ply1scl0OLD" is discouraged (0 uses).
 New usage of "ply1scl1OLD" is discouraged (0 uses).
+New usage of "plycnOLD" is discouraged (0 uses).
 New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
 New usage of "pm13.181OLD" is discouraged (0 uses).
@@ -20305,12 +20309,15 @@ Proof modification of "dtruALT" is discouraged (79 steps).
 Proof modification of "dtruALT2" is discouraged (161 steps).
 Proof modification of "dtruOLD" is discouraged (157 steps).
 Proof modification of "dummylink" is discouraged (1 steps).
+Proof modification of "dvcnp2OLD" is discouraged (854 steps).
+Proof modification of "dvcobrOLD" is discouraged (1156 steps).
 Proof modification of "dveel2ALT" is discouraged (22 steps).
 Proof modification of "dveeq1-o" is discouraged (20 steps).
 Proof modification of "dveeq1-o16" is discouraged (22 steps).
 Proof modification of "dveeq2-o" is discouraged (20 steps).
 Proof modification of "dveeq2ALT" is discouraged (14 steps).
 Proof modification of "dvelimf-o" is discouraged (129 steps).
+Proof modification of "dvmulbrOLD" is discouraged (2036 steps).
 Proof modification of "e00" is discouraged (7 steps).
 Proof modification of "e000" is discouraged (13 steps).
 Proof modification of "e001" is discouraged (16 steps).
@@ -21193,6 +21200,7 @@ Proof modification of "phplem4OLD" is discouraged (306 steps).
 Proof modification of "pige3ALT" is discouraged (1082 steps).
 Proof modification of "ply1scl0OLD" is discouraged (137 steps).
 Proof modification of "ply1scl1OLD" is discouraged (132 steps).
+Proof modification of "plycnOLD" is discouraged (172 steps).
 Proof modification of "pm13.181OLD" is discouraged (20 steps).
 Proof modification of "pm2.21ddALT" is discouraged (10 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
