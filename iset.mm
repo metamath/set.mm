@@ -156434,6 +156434,24 @@ $)
       ACDEFGHJKLMUCBUGUFEFGIUHUEUD $.
   $}
 
+  ${
+    $d x y N $.  $d x y U $.  $d x y ph $.
+    lssats2.s $e |- S = ( LSubSp ` W ) $.
+    lssats2.n $e |- N = ( LSpan ` W ) $.
+    lssats2.w $e |- ( ph -> W e. LMod ) $.
+    lssats2.u $e |- ( ph -> U e. S ) $.
+    $( A way to express atomisticity (a subspace is the union of its atoms).
+       (Contributed by NM, 3-Feb-2015.) $)
+    lssats2 $p |- ( ph -> U = U_ x e. U ( N ` { x } ) ) $=
+      ( vy cv csn cfv wcel wa simpr clmod adantr syl2anc ciun wrex eqid syl3anc
+      cbs lsselg lspsnid sneq fveq2d eleq2d rspcev ex lspsnel5a sseld rexlimdva
+      weq impbid eliun bitr4di eqrdv ) AKDBDBLZMZENZUAZAKLZDOZVEVCOZBDUBZVEVDOA
+      VFVHAVFVHAVFPZVFVEVEMZENZOZVHAVFQZVIFROZVEFUENZOZVLAVNVFISZVIVNDCOZVFVPVQ
+      AVRVFJSVMRCDVOFVEVOUCZGUFUDEVOFVEVSHUGTVGVLBVEDBKUPZVCVKVEVTVBVJEVAVEUHUI
+      UJUKTULAVGVFBDAVADOZPZVCDVEWBCDEFVAGHAVNWAISAVRWAJSAWAQUMUNUOUQBVEDVCURUS
+      UT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
