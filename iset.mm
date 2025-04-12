@@ -156582,6 +156582,12 @@ $)
       eqid mpan2 lss0ss eqssd ) BFGZHAIZCJZUDUFBKIZGZUEUFLZUGBCDUGTZMUDUHHUFLUI
       UFNUGHUFABUJEOPQUDUEUGGZUFUELUDHBRIZLUKULNUGHAULBULTUJESUAUGBUECDUJUBQUC
       $.
+
+    $( Union of the span of the empty set.  (Contributed by NM,
+       14-Mar-2015.) $)
+    lspuni0 $p |- ( W e. LMod -> U. ( N ` (/) ) = .0. ) $=
+      ( clmod wcel cfv cuni csn lsp0 unieqd cbs wceq eqid lmod0vcl unisng eqtrd
+      c0 syl ) BFGZSAHZICJZIZCUAUBUCABCDEKLUACBMHZGUDCNUEBCUEODPCUEQTR $.
   $}
 
 
