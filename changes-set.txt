@@ -81,13 +81,14 @@ proposed  syl5ibrcom imbitrridcom
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
-proposed  syl6bi    biimtrdi
+underway  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+11-Apr-25 elabrexg  [same]      Moved from GS's mathbox to main set.mm
 10-Apr-25 dvcobr    [same]      revised - remove unneeded hypotheses
 10-Apr-25 dvmulbr   [same]      revised - remove unneeded hypotheses
 10-Apr-25 dvaddbr   [same]      revised - remove unneeded hypotheses
