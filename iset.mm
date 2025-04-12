@@ -156532,6 +156532,25 @@ $)
       ZOPAHUHTZJGTZUPUSTPRUSFGHJKUTOUIUJQUKAVAVBUQURULPRCIDBEFGHJLMKNOUNUJUO $.
   $}
 
+  ${
+    lspsnneg.v $e |- V = ( Base ` W ) $.
+    lspsnneg.m $e |- M = ( invg ` W ) $.
+    lspsnneg.n $e |- N = ( LSpan ` W ) $.
+    $( Negation does not change the span of a singleton.  (Contributed by NM,
+       24-Apr-2014.)  (Proof shortened by Mario Carneiro, 19-Jun-2014.) $)
+    lspsnneg $p |- ( ( W e. LMod /\ X e. V )
+        -> ( N ` { ( M ` X ) } ) = ( N ` { X } ) ) $=
+      ( wcel cfv csn co eqid lmodvneg1 sneqd fveq2d wss cgrp lspsnvsi syl3anc
+      clmod wa csca cur cminusg cvsca cbs simpl lmodfgrp lmod1cl syl2anc adantr
+      grpinvcl simpr wceq lmodvnegcl syldan lmodgrp grpinvinv sylan eqtrd eqssd
+      eqsstrrd ) DUAIZECIZUBZEAJZKZBJZEKZBJZVFVIDUCJZUDJZVLUEJZJZEDUFJZLZKZBJZV
+      KVFVRVHBVFVQVGVPVMVLVNACDEFGVLMZVPMZVMMZVNMZNOPVFVDVOVLUGJZIZVEVSVKQVDVEU
+      HZVDWEVEVDVLRIVMWDIWEVLDVTUIVMVLWDDVTWDMZWBUJWDVLVNVMWGWCUMUKULZVDVEUNVOV
+      PVLWDBCDEVTWGFWAHSTVCVFVKVOVGVPLZKZBJZVIVFWJVJBVFWIEVFWIVGAJZEVDVEVGCIZWI
+      WLUOACDEFGUPZVPVMVLVNACDVGFGVTWAWBWCNUQVDDRIVEWLEUODURCDAEFGUSUTVAOPVFVDW
+      EWMWKVIQWFWHWNVOVPVLWDBCDVGVTWGFWAHSTVCVB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
