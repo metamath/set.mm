@@ -156622,6 +156622,23 @@ $)
       UCUDUE $.
   $}
 
+  ${
+    lspsneq0b.v $e |- V = ( Base ` W ) $.
+    lspsneq0b.o $e |- .0. = ( 0g ` W ) $.
+    lspsneq0b.n $e |- N = ( LSpan ` W ) $.
+    lspsneq0b.w $e |- ( ph -> W e. LMod ) $.
+    lspsneq0b.x $e |- ( ph -> X e. V ) $.
+    lspsneq0b.y $e |- ( ph -> Y e. V ) $.
+    lspsneq0b.e $e |- ( ph -> ( N ` { X } ) = ( N ` { Y } ) ) $.
+    $( Equal singleton spans imply both arguments are zero or both are nonzero.
+       (Contributed by NM, 21-Mar-2015.) $)
+    lspsneq0b $p |- ( ph -> ( X = .0. <-> Y = .0. ) ) $=
+      ( wceq wa csn cfv adantr wcel clmod lspsneq0 syl2anc biimpar eqtr3d mpbid
+      wb eqtrd impbida ) AEGOZFGOZAUJPZFQBRZGQZOZUKULEQBRZUMUNAUPUMOZUJNSAUPUNO
+      ZUJADUATZECTURUJUGZKLBCDEGHIJUBUCZUDUEAUOUKUGZUJAUSFCTVBKMBCDFGHIJUBUCZSU
+      FAUKPZURUJVDUPUMUNAUQUKNSAUOUKVCUDUHAUTUKVASUFUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
