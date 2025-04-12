@@ -156452,6 +156452,23 @@ $)
       UT $.
   $}
 
+  ${
+    lspsnvsel.v $e |- V = ( Base ` W ) $.
+    lspsnvsel.t $e |- .x. = ( .s ` W ) $.
+    lspsnvsel.f $e |- F = ( Scalar ` W ) $.
+    lspsnvsel.k $e |- K = ( Base ` F ) $.
+    lspsnvsel.n $e |- N = ( LSpan ` W ) $.
+    lspsnvsel.w $e |- ( ph -> W e. LMod ) $.
+    lspsnvsel.a $e |- ( ph -> A e. K ) $.
+    lspsnvsel.x $e |- ( ph -> X e. V ) $.
+    $( A scalar product with a vector belongs to the span of its singleton.
+       (Contributed by NM, 2-Jul-2014.) $)
+    lspsneli $p |- ( ph -> ( A .x. X ) e. ( N ` { X } ) ) $=
+      ( wcel cfv syl2anc clmod csn clss eqid lspsncl lspsnid lssvscl syl22anc
+      co ) AHUARZIUBFSZHUCSZRZBERIUKRZBICUIUKROAUJIGRZUMOQULFGHIJULUDZNUETPAUJU
+      OUNOQFGHIJNUFTEULCUKDHBILKMUPUGUH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
