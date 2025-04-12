@@ -156551,6 +156551,22 @@ $)
       EWMWKVIQWFWHWNVOVPVLWDBCDVGVTWGFWAHSTVCVB $.
   $}
 
+  ${
+    lspsnsub.v $e |- V = ( Base ` W ) $.
+    lspsnsub.s $e |- .- = ( -g ` W ) $.
+    lspsnsub.n $e |- N = ( LSpan ` W ) $.
+    lspsnsub.w $e |- ( ph -> W e. LMod ) $.
+    lspsnsub.x $e |- ( ph -> X e. V ) $.
+    lspsnsub.y $e |- ( ph -> Y e. V ) $.
+    $( Swapping subtraction order does not change the span of a singleton.
+       (Contributed by NM, 4-Apr-2015.) $)
+    lspsnsub $p |- ( ph -> ( N ` { ( X .- Y ) } ) = ( N ` { ( Y .- X ) } ) ) $=
+      ( co cminusg cfv csn wcel wceq syl3anc clmod lmodvsubcl eqid syl2anc cgrp
+      lspsnneg lmodgrp syl grpinvsub sneqd fveq2d eqtr3d ) AFGBNZEOPZPZQZCPZUMQ
+      CPZGFBNZQZCPAEUARZUMDRZUQURSKAVAFDRZGDRZVBKLMBDEFGHIUBTUNCDEUMHUNUCZJUFUD
+      AUPUTCAUOUSAEUERZVCVDUOUSSAVAVFKEUGUHLMDEBUNFGHIVEUITUJUKUL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
