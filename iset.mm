@@ -156501,6 +156501,15 @@ $)
       SZCEUEZOUFZQZBVNSZCEUEZVJVKVQBOACDEFGHIJKLMNUGUHVJVTBTQZUIVRVTUJVJVSWACEV
       JVSWAVJVSRBVNTVJVSULVJVNTQZVSVMTQVHATQVIVIWBCUKVHAHUMUBTMHUMPUNUOUPVHVIUL
       VMIATTGUQURVBUSUTVAVPVTOBTVLBSVOVSCEVLBVNVCVDVEVFVG $.
+
+    $( Span of a scalar product of a singleton.  (Contributed by NM,
+       23-Apr-2014.)  (Proof shortened by Mario Carneiro, 4-Sep-2014.) $)
+    lspsnvsi $p |- ( ( W e. LMod /\ R e. K /\ X e. V )
+        -> ( N ` { ( R .x. X ) } ) C_ ( N ` { X } ) ) $=
+      ( clmod wcel w3a clss cfv csn co eqid simp1 wss simp3 snssd lspcl syl2anc
+      simp2 lspsneli lspsnel5a ) GNOZADOZHFOZPZGQRZHSZERZEGAHBTUOUAZMUKULUMUBZU
+      NUKUPFUCUQUOOUSUNHFUKULUMUDZUEUOUPEFGKURMUFUGUNABCDEFGHKLIJMUSUKULUMUHUTU
+      IUJ $.
   $}
 
 
