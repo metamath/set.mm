@@ -156575,6 +156575,13 @@ $)
     lspsn0 $p |- ( W e. LMod -> ( N ` { .0. } ) = { .0. } ) $=
       ( clmod wcel csn clss cfv wceq eqid lsssn0 lspid mpdan ) BFGCHZBIJZGPAJPK
       QBCDQLZMQPABRENO $.
+
+    $( Span of the empty set.  (Contributed by Mario Carneiro, 5-Sep-2014.) $)
+    lsp0 $p |- ( W e. LMod -> ( N ` (/) ) = { .0. } ) $=
+      ( clmod wcel c0 cfv csn clss wss lsssn0 0ss lspssp mp3an3 mpdan cbs lspcl
+      eqid mpan2 lss0ss eqssd ) BFGZHAIZCJZUDUFBKIZGZUEUFLZUGBCDUGTZMUDUHHUFLUI
+      UFNUGHUFABUJEOPQUDUEUGGZUFUELUDHBRIZLUKULNUGHAULBULTUJESUAUGBUECDUJUBQUC
+      $.
   $}
 
 
