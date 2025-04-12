@@ -156681,6 +156681,21 @@ $)
       UOQVCVHVEWMWJVMWNBDWCFWDIUTSVOBVIEGWHJTVAVD $.
   $}
 
+  ${
+    lss0v.x $e |- X = ( W |`s U ) $.
+    lss0v.o $e |- .0. = ( 0g ` W ) $.
+    lss0v.z $e |- Z = ( 0g ` X ) $.
+    lss0v.l $e |- L = ( LSubSp ` W ) $.
+    $( The zero vector in a submodule equals the zero vector in the including
+       module.  (Contributed by NM, 15-Mar-2015.) $)
+    lss0v $p |- ( ( W e. LMod /\ U e. L ) -> Z = .0. ) $=
+      ( clmod wcel csn cuni c0 clspn cfv wceq eqid lsp0 wa lsslsp mp3an3 adantr
+      wss 0ss lsslmod syl 3eqtr3rd unieqd cbs lmod0vcl unisng 3syl 3eqtr3d ) CK
+      LZABLZUAZFMZNZEMZNZFEURUSVAUROCPQZQZODPQZQZVAUSUPUQOAUEVDVFRAUFAOBVCVECDG
+      VCSZVESZJUBUCUPVDVARUQVCCEHVGTUDURDKLZVFUSRBACDGJUGZVEDFIVHTUHUIUJURVIFDU
+      KQZLUTFRVJVKDFVKSIULFVKUMUNUPVBERZUQUPECUKQZLVLVMCEVMSHULEVMUMUHUDUO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
