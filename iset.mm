@@ -156733,6 +156733,18 @@ $)
       XMYIYBWRADXLWOLWDAXSUCEYARWEWFWHAFIUKYDXKUTSUCXIXDWMXAWOUBXHWPFIUDUEXHWGX
       IWGWPWGXDWGXAWGWMWGWIWJAGJUKYEYCUTTUCYAXPWNXNWOUBXTXLGJUDUEXTWGYAWGXLWGXP
       WGXNWGWNWGWIWJWKWL $.
+
+    $( If two structures have the same components (properties), they have the
+       same span function.  (Contributed by Mario Carneiro, 9-Feb-2015.)
+       (Revised by Mario Carneiro, 14-Jun-2015.)  (Revised by AV,
+       24-Apr-2024.) $)
+    lsppropd $p |- ( ph -> ( LSpan ` K ) = ( LSpan ` L ) ) $=
+      ( vs vt cbs cfv cpw cv wss clss crab cint cmpt clspn eqtr3d pweqd rabeqdv
+      lsspropdg inteqd mpteq12dv wcel wceq eqid lspfval syl 3eqtr4d ) AUAFUCUDZ
+      UEZUAUFUBUFUGZUBFUHUDZUIZUJZUKZUAGUCUDZUEZVGUBGUHUDZUIZUJZUKZFULUDZGULUDZ
+      AUAVFVJVMVPAVEVLADVEVLKLUMUNAVIVOAVGUBVHVNABCDEFGHIJKLMNOPQRSTUPUOUQURAFI
+      USVRVKUTSUBVHVRVEFIUAVEVAVHVAVRVAVBVCAGJUSVSVQUTTUBVNVSVLGJUAVLVAVNVAVSVA
+      VBVCVD $.
   $}
 
 
