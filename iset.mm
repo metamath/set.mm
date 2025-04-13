@@ -156696,6 +156696,45 @@ $)
       KQZLUTFRVJVKDFVKSIULFVKUMUNUPVBERZUQUPECUKQZLVLVMCEVMSHULEVMUMUHUDUO $.
   $}
 
+  ${
+    $d a b x y z B $.  $d a b s t x y z K $.  $d a b s x y z ph $.  $d x y W $.
+    $d a b s t x y z L $.  $d a b x y z P $.  $d a b j s z $.
+    lsspropd.b1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    lsspropd.b2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    lsspropd.w $e |- ( ph -> B C_ W ) $.
+    lsspropd.p $e |- ( ( ph /\ ( x e. W /\ y e. W ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    lsspropd.s1 $e |- ( ( ph /\ ( x e. P /\ y e. B ) ) ->
+      ( x ( .s ` K ) y ) e. W ) $.
+    lsspropd.s2 $e |- ( ( ph /\ ( x e. P /\ y e. B ) ) ->
+      ( x ( .s ` K ) y ) = ( x ( .s ` L ) y ) ) $.
+    lsspropd.p1 $e |- ( ph -> P = ( Base ` ( Scalar ` K ) ) ) $.
+    lsspropd.p2 $e |- ( ph -> P = ( Base ` ( Scalar ` L ) ) ) $.
+    lsppropd.v1 $e |- ( ph -> K e. X ) $.
+    lsppropd.v2 $e |- ( ph -> L e. Y ) $.
+    $( If two structures have the same components (properties), they have the
+       same subspace structure.  (Contributed by Mario Carneiro, 9-Feb-2015.)
+       (Revised by Mario Carneiro, 14-Jun-2015.) $)
+    lsspropdg $p |- ( ph -> ( LSubSp ` K ) = ( LSubSp ` L ) ) $=
+      ( vs vj vz va vb clss cfv cv cbs wss wcel wex cvsca co cplusg wral w3a wa
+      csca wb simpll simprl simplr sseldd ralrimivva ad2antrr ovrspc2v syl21anc
+      simprrl simprrr oveqrspc2v syl12anc oveq1d eqtrd eleq1d anassrs 2ralbidva
+      wceq ralbidva anbi2d pm5.32da 3anass 3bitr4g sseq2d raleqdv 3anbi13d eqid
+      3bitr3d islssm syl 3bitr4d eqrdv ) AUAFUFUGZGUFUGZAUAUHZFUIUGZUJZUBUHWOUK
+      UBULZUCUHZUDUHZFUMUGZUNZUEUHZFUOUGZUNZWOUKZUEWOUPUDWOUPZUCFUSUGZUIUGZUPZU
+      QZWOGUIUGZUJZWRWSWTGUMUGZUNZXCGUOUGZUNZWOUKZUEWOUPUDWOUPZUCGUSUGZUIUGZUPZ
+      UQZWOWMUKZWOWNUKZAWODUJZWRXGUCEUPZUQZYFWRXSUCEUPZUQZXKYCAYFWRYGURZURYFWRY
+      IURZURYHYJAYFYKYLAYFURZYGYIWRYMXGXSUCEYMWSEUKZURXFXRUDUEWOWOYMYNWTWOUKZXC
+      WOUKZURZXFXRUTYMYNYQURZURZXEXQWOYSXEXBXCXPUNZXQYSAXBHUKZXCHUKXEYTVRAYFYRV
+      AZYSYNWTDUKZBUHCUHXAUNHUKZCDUPBEUPZUUAYMYNYQVBZYSWODWTAYFYRVCZYMYNYOYPVIV
+      DZAUUEYFYRAUUDBCEDOVEVFBCEDHXAWSWTVGVHYSDHXCADHUJYFYRMVFYSWODXCUUGYMYNYOY
+      PVJVDVDABCHHXDXPXBXCNVKVLYSXBXOXCXPYSAYNUUCXBXOVRUUBUUFUUHABCEDXAXNWSWTPV
+      KVLVMVNVOVPVQVSVTWAYFWRYGWBYFWRYIWBWCAYFWQYGXJWRADWPWOKWDAXGUCEXIQWEWFAYF
+      XMYIYBWRADXLWOLWDAXSUCEYARWEWFWHAFIUKYDXKUTSUCXIXDWMXAWOUBXHWPFIUDUEXHWGX
+      IWGWPWGXDWGXAWGWMWGWIWJAGJUKYEYCUTTUCYAXPWNXNWOUBXTXLGJUDUEXTWGYAWGXLWGXP
+      WGXNWGWNWGWIWJWKWL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
