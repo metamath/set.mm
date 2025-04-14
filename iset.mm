@@ -156183,7 +156183,7 @@ $)
       UGHUEUHVOVMVFVOVEAVLBVOVLESNBVIESUGIUEUIUJUKEFULZVCGVDVGTVCDTVCDVPTHVCRTU
       METLVPTLZUQVQVRTERERUNUOUPURUSUTVAVB $.
 
-    $( The span operator on a left module maps subsets to subsets.
+    $( The span function on a left module maps subsets to subspaces.
        (Contributed by Stefan O'Rear, 12-Dec-2014.) $)
     lspf $p |- ( W e. LMod -> N : ~P V --> S ) $=
       ( vs vp vj clmod wcel cpw cv wss crab cint lspfval wa wex ssrab2 a1i wrex
