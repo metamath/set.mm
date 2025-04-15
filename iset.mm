@@ -156842,6 +156842,30 @@ $)
       ZYPWHWJVMYRWKUCWLRSYRVNVOVPWHWJAOFYSWKAXIYLVQACBOVSVTWLXDCBOTWAWBYQWKUEWQ
       RSYQWCVOVPWHYOWJCNBWDWEUJZWQWRXFOOTWAWBYNWKUFXARSYNWFVOVPYTXAWRXGOOTWAWBW
       G $.
+
+    srapart.a $e |- ( ph -> A = ( ( subringAlg ` W ) ` S ) ) $.
+    srapart.s $e |- ( ph -> S C_ ( Base ` W ) ) $.
+    srapart.ex $e |- ( ph -> W e. X ) $.
+    ${
+      sralemg.1 $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
+      sralem.2 $e |- ( Scalar ` ndx ) =/= ( E ` ndx ) $.
+      sralem.3 $e |- ( .s ` ndx ) =/= ( E ` ndx ) $.
+      sralem.4 $e |- ( .i ` ndx ) =/= ( E ` ndx ) $.
+      $( Lemma for ~ srabaseg and similar theorems.  (Contributed by Mario
+         Carneiro, 4-Oct-2015.)  (Revised by Thierry Arnoux, 16-Jun-2019.)
+         (Revised by AV, 29-Oct-2024.) $)
+      sralemg $p |- ( ph -> ( E ` W ) = ( E ` A ) ) $=
+        ( cfv cnx wcel cvv wceq syl2anc cn csca cress co cop csts cvsca cip cbs
+        cmulr wfn basfn elexd funfvex funfni sylancr ssexd ressex cslot scaslid
+        necomi simpri setsslnid a1i setsex syl3anc mulrslid slotex syl vscaslid
+        ipslid 3eqtrd csra wss sraval eqtrd fveq2d eqtr4d ) AEDNZEOUANZECUBUCZU
+        DUEUCZOUFNZEUINZUDUEUCZOUGNZWCUDUEUCZDNZBDNAVRWADNZWDDNZWGAEFPZVTQPZVRW
+        HRIAWJCQPWKIACEUHNZQAUHQUJEQPWLQPZUKAEFIULWMQEUHEUHUMUNUOHUPCEFQUQSZFVT
+        VSDQEJVSODNZKUTUAVSURRVSTPZUSVAZVBSAWAQPZWCQPZWHWIRAWJWPWKWRIWPAWQVCWNV
+        SVTEFQTVDVEZAWJWSIEUIFVFVGVHZQWCWBDQWAJWBWOLUTUFWBURRWBTPZVIVAZVBSAWDQP
+        ZWSWIWGRAWRXBWSXDWTXBAXCVCXAWBWCWAQQTVDVEXAQWCWEDQWDJWEWOMUTUGWEURRWETP
+        VJVAVBSVKABWFDABCEVLNNZWFGAWJCWLVMXEWFRIHCFEVNSVOVPVQ $.
+    $}
   $}
 
 
