@@ -156820,8 +156820,8 @@ $)
 
   ${
     $d s S $.  $d s V $.  $d s w W $.
-    $( Lemma for ~ srabase through ~ sravsca .  (Contributed by Mario Carneiro,
-       27-Nov-2014.)  (Revised by Thierry Arnoux, 16-Jun-2019.) $)
+    $( Lemma for ~ srabaseg through ~ sravsca .  (Contributed by Mario
+       Carneiro, 27-Nov-2014.)  (Revised by Thierry Arnoux, 16-Jun-2019.) $)
     sraval $p |- ( ( W e. V /\ S C_ ( Base ` W ) ) ->
         ( ( subringAlg ` W ) ` S ) = ( ( ( W
         sSet <. ( Scalar ` ndx ) , ( W |`s S ) >. )
@@ -156866,6 +156866,13 @@ $)
         ZWSWIWGRAWRXBWSXDWTXBAXCVCXAWBWCWAQQTVDVEXAQWCWEDQWDJWEWOMUTUGWEURRWETP
         VJVAVBSVKABWFDABCEVLNNZWFGAWJCWLVMXEWFRIHCFEVNSVOVPVQ $.
     $}
+
+    $( Base set of a subring algebra.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.)  (Revised by Mario Carneiro, 4-Oct-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.)  (Revised by AV, 29-Oct-2024.) $)
+    srabaseg $p |- ( ph -> ( Base ` W ) = ( Base ` A ) ) $=
+      ( cbs baseslid scandxnbasendx vscandxnbasendx ipndxnbasendx sralemg ) ABC
+      IDEFGHJKLMN $.
   $}
 
 
