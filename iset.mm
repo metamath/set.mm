@@ -49952,6 +49952,12 @@ $)
       DMZCNUHOAUDCPSQUEBRTUEBUAUBUC $.
   $}
 
+  $( A function value of a function value at a proper class is the empty set.
+     (Contributed by AV, 8-Apr-2021.) $)
+  fv2prc $p |- ( -. A e. _V -> ( ( F ` A ) ` B ) = (/) ) $=
+    ( cvv wcel wn cfv c0 fvprc fveq1d 0fv eqtrdi ) ADEFZBACGZGBHGHMBNHACIJBKL
+    $.
+
   ${
     $d y A $.  $d y B $.  $d y C $.  $d y F $.  $d x y $.
     $( Move class substitution in and out of a function value.  (Contributed by
