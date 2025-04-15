@@ -156812,6 +156812,32 @@ $)
     df-rsp $a |- RSpan = ( LSpan o. ringLMod ) $.
   $}
 
+  ${
+    $d s S $.  $d s V $.  $d s w W $.
+    $( Lemma for ~ srabase through ~ sravsca .  (Contributed by Mario Carneiro,
+       27-Nov-2014.)  (Revised by Thierry Arnoux, 16-Jun-2019.) $)
+    sraval $p |- ( ( W e. V /\ S C_ ( Base ` W ) ) ->
+        ( ( subringAlg ` W ) ` S ) = ( ( ( W
+        sSet <. ( Scalar ` ndx ) , ( W |`s S ) >. )
+        sSet <. ( .s ` ndx ) , ( .r ` W ) >. )
+        sSet <. ( .i ` ndx ) , ( .r ` W ) >. ) ) $=
+      ( vs vw wcel cbs cfv cnx cress co cop csts cmulr cvv opeq2d oveq12d cslot
+      wceq cn wss wa csca cv cvsca cip csra cmpt elex adantr df-sra fveq2 pweqd
+      cpw id oveq1 mpteq12dv wfn basfn funfvex funfni mpan pwexd mptexd fvmptd3
+      syl simpr oveq2d oveq1d elpw2g 3syl mpbird simpl scaslid simpri a1i elexd
+      wb ressex syldan setsex syl3anc vscaslid mulrslid slotex ipslid fvmptd )
+      CBFZACGHZUAZUBZDACIUCHZCDUDZJKZLZMKZIUEHZCNHZLZMKZIUFHZWRLZMKZCWLCAJKZLZM
+      KZWSMKZXBMKZWIUNZCUGHZOWKCOFZXJDXIXCUHZSWHXKWJCBUIUJZXKECDEUDZGHZUNZXNWLX
+      NWMJKZLZMKZWQXNNHZLZMKZXAXTLZMKZUHXLOUGOEDUKXNCSZDXPYDXIXCYEXOWIXNCGULUMY
+      EYBWTYCXBMYEXSWPYAWSMYEXNCXRWOMYEUOYEXQWNWLXNCWMJUPPQYEXTWRWQXNCNULZPQYEX
+      TWRXAYFPQUQCOUIXKDXIXCOXKWIOGOURXKWIOFZUSYGOCGCGUTVAVBZVCVDVEVFWKWMASZUBZ
+      WTXGXBMYJWPXFWSMYJWOXECMYJWNXDWLYJWMACJWKYIVGVHPVHVIVIWKAXIFZWJWHWJVGWKXK
+      YGYKWJVRXMYHAWIOVJVKVLZWKXGOFZXATFZWROFZXHOFWKXFOFZWQTFZYOYMWKWHWLTFZXDOF
+      ZYPWHWJVMYRWKUCWLRSYRVNVOVPWHWJAOFYSWKAXIYLVQACBOVSVTWLXDCBOTWAWBYQWKUEWQ
+      RSYQWCVOVPWHYOWJCNBWDWEUJZWQWRXFOOTWAWBYNWKUFXARSYNWFVOVPYTXAWRXGOOTWAWBW
+      G $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
