@@ -156749,6 +156749,72 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Ideals
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The subring algebra; ideals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c subringAlg $.
+  $c ringLMod $.
+  $c RSpan $. $( Ring span function $)
+  $c LIdeal $.
+
+  $( Extend class notation with the subring algebra generator. $)
+  csra $a class subringAlg $.
+
+  $( Extend class notation with the left module induced by a ring over
+     itself. $)
+  crglmod $a class ringLMod $.
+
+  $( Ring left-ideal function. $)
+  clidl $a class LIdeal $.
+
+  $( Ring span function. $)
+  crsp $a class RSpan $.
+
+  ${
+    $d w s $.
+    $( Any ring can be regarded as a left algebra over any of its subrings.
+       The function ` subringAlg ` associates with any ring and any of its
+       subrings the left algebra consisting in the ring itself regarded as a
+       left algebra over the subring.  It has an inner product which is simply
+       the ring product.  (Contributed by Mario Carneiro, 27-Nov-2014.)
+       (Revised by Thierry Arnoux, 16-Jun-2019.) $)
+    df-sra $a |- subringAlg = ( w e. _V |-> ( s e. ~P ( Base ` w ) |->
+                          ( ( ( w sSet <. ( Scalar ` ndx ) , ( w |`s s ) >. )
+                                  sSet <. ( .s ` ndx ) , ( .r ` w ) >. )
+                                  sSet <. ( .i ` ndx ) , ( .r ` w ) >. ) ) ) $.
+
+    $( Any ring can be regarded as a left algebra over itself.  The function
+       ` ringLMod ` associates with any ring the left algebra consisting in the
+       ring itself regarded as a left algebra over itself.  It has an inner
+       product which is simply the ring product.  (Contributed by Stefan
+       O'Rear, 6-Dec-2014.) $)
+    df-rgmod $a |- ringLMod = ( w e. _V |->
+                                     ( ( subringAlg ` w ) ` ( Base ` w ) ) ) $.
+
+    $( Define the class of left ideals of a given ring.  An ideal is a
+       submodule of the ring viewed as a module over itself.  For the usual
+       textbook definition of a (left) ideal of a ring to be a subgroup of the
+       additive group of the ring which is closed under left-multiplication by
+       elements of the full ring, see ~ dflidl2 .  (Contributed by Stefan
+       O'Rear, 31-Mar-2015.) $)
+    df-lidl $a |- LIdeal = ( LSubSp o. ringLMod ) $.
+
+    $( Define the linear span function in a ring (Ideal generator).
+       (Contributed by Stefan O'Rear, 4-Apr-2015.) $)
+    df-rsp $a |- RSpan = ( LSpan o. ringLMod ) $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
@@ -174798,6 +174864,18 @@ htmldef "LSpan" as
     "<IMG SRC='_lspan.gif' WIDTH=41 HEIGHT=19 ALT=' LSpan' TITLE='LSpan'>";
   althtmldef "LSpan" as "LSpan";
   latexdef "LSpan" as "\mathrm{LSpan}";
+htmldef "subringAlg" as "subringAlg ";
+  althtmldef "subringAlg" as "subringAlg ";
+  latexdef "subringAlg" as "\mathrm{subringAlg}";
+htmldef "ringLMod" as "ringLMod";
+  althtmldef "ringLMod" as "ringLMod";
+  latexdef "ringLMod" as "\mathrm{ringLMod}";
+htmldef "RSpan" as "RSpan";
+  althtmldef "RSpan" as "RSpan";
+  latexdef "RSpan" as "\mathrm{RSpan}";
+htmldef "LIdeal" as "LIdeal";
+  althtmldef "LIdeal" as "LIdeal";
+  latexdef "LIdeal" as "\mathrm{LIdeal}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
