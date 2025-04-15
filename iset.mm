@@ -156888,6 +156888,21 @@ $)
     sramulrg $p |- ( ph -> ( .r ` W ) = ( .r ` A ) ) $=
       ( cmulr mulrslid scandxnmulrndx vscandxnmulrndx ipndxnmulrndx sralemg ) A
       BCIDEFGHJKLMN $.
+
+    $( The set of scalars of a subring algebra.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.)  (Revised by Mario Carneiro, 4-Oct-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.)  (Proof shortened by AV, 12-Nov-2024.) $)
+    srascag $p |- ( ph -> ( W |`s S ) = ( Scalar ` A ) ) $=
+      ( cnx csca cfv co cvv wcel wceq cn scaslid simpri cbs syl2anc cress cvsca
+      cop csts cmulr cip cslot a1i wfn basfn elexd funfvex funfni sylancr ssexd
+      ressex setsex syl3anc mulrslid slotex syl vscandxnscandx necomi setsslnid
+      vscaslid wne slotsdifipndx ipslid setsslid csra wss sraval fveq2d 3eqtr4d
+      eqtrd ) ADIJKZDCUALZUCUDLZJKZVRIUBKZDUEKZUCUDLZIUFKZWAUCUDLZJKZVQBJKAVSWB
+      JKZWEAVRMNZWAMNZVSWFOADENZVPPNZVQMNZWGHWJAJVPUGOWJQRUHAWICMNWKHACDSKZMASM
+      UIDMNZWLMNZUJADEHUKZWNMDSDSULUMUNGUOCDEMUPTZVPVQDEMPUQURZAWIWHHDUEEUSUTVA
+      ZMWAVTJMVRQVTVPVBVCUBVTUGOVTPNZVERZVDTAWBMNZWHWFWEOAWGWSWHXAWQWSAWTUHWRVT
+      WAVRMMPUQURWRMWAWCJMWBQVTWCVFVPWCVFVGRUFWCUGOWCPNVHRVDTVOAWIWKVQVSOHWPEVQ
+      JMDQVITABWDJABCDVJKKZWDFAWMCWLVKXBWDOWOGCMDVLTVOVMVN $.
   $}
 
 
