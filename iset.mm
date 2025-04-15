@@ -156820,7 +156820,7 @@ $)
 
   ${
     $d s S $.  $d s V $.  $d s w W $.
-    $( Lemma for ~ srabaseg through ~ sravsca .  (Contributed by Mario
+    $( Lemma for ~ srabaseg through ~ sravscag .  (Contributed by Mario
        Carneiro, 27-Nov-2014.)  (Revised by Thierry Arnoux, 16-Jun-2019.) $)
     sraval $p |- ( ( W e. V /\ S C_ ( Base ` W ) ) ->
         ( ( subringAlg ` W ) ` S ) = ( ( ( W
@@ -156903,6 +156903,21 @@ $)
       ZMWAVTJMVRQVTVPVBVCUBVTUGOVTPNZVERZVDTAWBMNZWHWFWEOAWGWSWHXAWQWSAWTUHWRVT
       WAVRMMPUQURWRMWAWCJMWBQVTWCVFVPWCVFVGRUFWCUGOWCPNVHRVDTVOAWIWKVQVSOHWPEVQ
       JMDQVITABWDJABCDVJKKZWDFAWMCWLVKXBWDOWOGCMDVLTVOVMVN $.
+
+    $( The scalar product operation of a subring algebra.  (Contributed by
+       Stefan O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro, 4-Oct-2015.)
+       (Revised by Thierry Arnoux, 16-Jun-2019.)  (Proof shortened by AV,
+       12-Nov-2024.) $)
+    sravscag $p |- ( ph -> ( .r ` W ) = ( .s ` A ) ) $=
+      ( cnx cfv co cop csts cvsca cvv wcel wceq cn cbs syl2anc csca cress cmulr
+      cip cslot scaslid simpri a1i wfn basfn elexd funfvex funfni sylancr ssexd
+      ressex setsex syl3anc vscaslid slotex syl wne slotsdifipndx simpli ipslid
+      mulrslid setsslnid setsslid csra wss sraval eqtrd fveq2d 3eqtr4d ) ADIUAJ
+      ZDCUBKZLMKZINJZDUCJZLMKZNJZVTIUDJZVSLMKZNJZVSBNJAVTOPZVSOPZWAWDQAVQOPZVRR
+      PZWFWEADEPZVORPZVPOPZWGHWJAUAVOUEQWJUFUGUHAWICOPWKHACDSJZOASOUIDOPZWLOPZU
+      JADEHUKZWNODSDSULUMUNGUOCDEOUPTVOVPDEORUQURZWHANVRUEQWHUSUGUHAWIWFHDUCEVF
+      UTVAZVRVSVQOORUQURWQOVSWBNOVTUSVRWBVBVOWBVBVCVDUDWBUEQWBRPVEUGVGTAWGWFVSW
+      AQWPWQOVSNOVQUSVHTABWCNABCDVIJJZWCFAWMCWLVJWRWCQWOGCODVKTVLVMVN $.
   $}
 
 
