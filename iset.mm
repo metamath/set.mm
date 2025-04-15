@@ -156880,6 +156880,14 @@ $)
     sraaddgg $p |- ( ph -> ( +g ` W ) = ( +g ` A ) ) $=
       ( plusgslid scandxnplusgndx vscandxnplusgndx ipndxnplusgndx sralemg
       cplusg ) ABCNDEFGHIJKLM $.
+
+    $( Multiplicative operation of a subring algebra.  (Contributed by Stefan
+       O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro, 4-Oct-2015.)
+       (Revised by Thierry Arnoux, 16-Jun-2019.)  (Revised by AV,
+       29-Oct-2024.) $)
+    sramulrg $p |- ( ph -> ( .r ` W ) = ( .r ` A ) ) $=
+      ( cmulr mulrslid scandxnmulrndx vscandxnmulrndx ipndxnmulrndx sralemg ) A
+      BCIDEFGHJKLMN $.
   $}
 
 
