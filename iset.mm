@@ -156961,6 +156961,20 @@ $)
       UCUHUEUGUIQUASUB $.
   $}
 
+  ${
+    $d A x y $.  $d B x y $.  $d R x y $.  $d V x y $.
+    sraring.1 $e |- A = ( ( subringAlg ` R ) ` V ) $.
+    sraring.2 $e |- B = ( Base ` R ) $.
+    $( Condition for a subring algebra to be a ring.  (Contributed by Thierry
+       Arnoux, 24-Jul-2023.) $)
+    sraring $p |- ( ( R e. Ring /\ V C_ B ) -> A e. Ring ) $=
+      ( vx vy crg wcel wss wa cbs cfv wceq a1i cv cplusg oveqdr cmulr id adantl
+      simpl csra sseqtrdi srabaseg eqtrid sraaddgg sramulrg ringpropd mpbid ) C
+      IJZDBKZLZULAIJULUMUCZUNGHBCABCMNZOUNFPUNBUPAMNFUNADCIADCUDNNOUNEPZUMDUPKU
+      LUMDBUPUMUAFUEUBZUOUFUGUNGQBJHQBJLZGHCRNARNUNADCIUQURUOUHSUNUSGHCTNATNUNA
+      DCIUQURUOUISUJUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
