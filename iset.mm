@@ -156975,6 +156975,30 @@ $)
       DCIUQURUOUISUJUK $.
   $}
 
+  ${
+    $d x y z S $.  $d x y A $.  $d x y z W $.
+    sralmod.a $e |- A = ( ( subringAlg ` W ) ` S ) $.
+    $( The subring algebra is a left module.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.) $)
+    sralmod $p |- ( S e. ( SubRing ` W ) -> A e. LMod ) $=
+      ( vx vy vz cfv wcel cplusg co crg wceq eqid eqidd cv w3a elin2d syl13anc
+      wa csubrg cbs cin cmulr cur cress csra subrgss subrgrcl srabaseg sraaddgg
+      a1i srascag sravscag ressbasd ressplusgd ressmulrg mpdan subrg1 subrgring
+      id ringgrpd oveqdr grppropd mpbid 3ad2ant1 elinel2 3ad2ant2 simp3 syl3anc
+      ringcl adantr simpr1 simpr2 simpr3 ringdir ringass ringlidm sylan islmodd
+      cgrp ringdi ) BCUAHZIZEFGBCUBHZUCZCJHZWGCUDHZWHCUEHZCBUFKZWEAWDABCLABCUGH
+      HMWDDULZBWECWENZUHZBCUIZUJZWDABCLWKWMWNUKZWDABCLWKWMWNUMWDABCLWKWMWNUNWDB
+      WEWJWCCLWDWJOZWDWEOZWNWDVAZUOWDBWGCWJWCLWQWDWGOWSWNUPWDCLIZWHWJUDHMWNBCWJ
+      WHWCLWJNZWHNZUQURBCWJWIXAWINZUSBCWJXAUTWDCWAIAWAIWDCWNVBWDEFWECAWRWOWDEPZ
+      WEIZFPZWEIZTEFWGAJHWPVCVDVEWDXDWFIZXGQWTXEXGXDXFWHKZWEIWDXHWTXGWNVFXHWDXE
+      XGXDBWEVGVHWDXHXGVIWECWHXDXFWLXBVKVJWDXHXGGPZWEIZQZTZWTXEXGXKXDXFXJWGKWHK
+      XIXDXJWHKZWGKMWDWTXLWNVLXMBWEXDWDXHXGXKVMRWDXHXGXKVNWDXHXGXKVOWEWGCWHXDXF
+      XJWLWGNZXBWBSWDXHXFWFIZXKQZTZWTXEXGXKXDXFWGKXJWHKXNXFXJWHKZWGKMWDWTXQWNVL
+      ZXRBWEXDWDXHXPXKVMRZXRBWEXFWDXHXPXKVNRZWDXHXPXKVOZWEWGCWHXDXFXJWLXOXBVPSX
+      RWTXEXGXKXIXJWHKXDXSWHKMXTYAYBYCWECWHXDXFXJWLXBVQSWDWTXEWIXDWHKXDMWNWECWH
+      WIXDWLXBXCVRVSVT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
