@@ -157051,6 +157051,14 @@ $)
     rlmfn $p |- ringLMod Fn _V $=
       ( va cvv cv cbs cfv csra crglmod wcel wtru eqidd ssidd vex sraex df-rgmod
       a1i mptru fnmpti ) ABACZDEZRFEEZGTBHITSRBITJISKRBHIALOMPANQ $.
+
+    $( Value of the ring module.  (Contributed by Stefan O'Rear,
+       31-Mar-2015.) $)
+    rlmvalg $p |- ( W e. V
+        -> ( ringLMod ` W ) = ( ( subringAlg ` W ) ` ( Base ` W ) ) ) $=
+      ( va wcel cbs cfv csra cvv crglmod df-rgmod wceq fveq2 fveq12d elex eqidd
+      cv ssidd id sraex fvmptd3 ) BADZCBCPZEFZUBGFZFBEFZBGFZFZHIHCJUBBKUCUEUDUF
+      UBBGLUBBELMBANUAUGUEBAUAUGOUAUEQUARST $.
   $}
 
 
