@@ -157059,6 +157059,14 @@ $)
       ( va wcel cbs cfv csra cvv crglmod df-rgmod wceq fveq2 fveq12d elex eqidd
       cv ssidd id sraex fvmptd3 ) BADZCBCPZEFZUBGFZFBEFZBGFZFZHIHCJUBBKUCUEUDUF
       UBBGLUBBELMBANUAUGUEBAUAUGOUAUEQUARST $.
+
+    $( Value of the set of ring ideals.  (Contributed by Stefan O'Rear,
+       31-Mar-2015.) $)
+    lidlvalg $p |- ( W e. V
+        -> ( LIdeal ` W ) = ( LSubSp ` ( ringLMod ` W ) ) ) $=
+      ( wcel clidl cfv clss crglmod ccom df-lidl fveq1i cvv wfn wceq rlmfn elex
+      fvco2 sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAOKFGBPQR
+      $.
   $}
 
 
