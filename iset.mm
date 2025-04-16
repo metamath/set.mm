@@ -156939,18 +156939,23 @@ $)
       cip simp3i sralemg ) ABCIDEFGHJKILZKMLZUCUDNZUCKOLZNZUCKTLZNZPQRUCUFUEUGU
       IPSRUCUHUEUGUIPUARUB $.
 
+    $( Existence of a subring algebra.  (Contributed by Jim Kingdon,
+       16-Apr-2025.) $)
+    sraex $p |- ( ph -> A e. _V ) $=
+      ( cfv cvv cnx co cop csts wcel cbs wceq cn cslot simpri cress cvsca cmulr
+      csra csca cip wss sraval syl2anc scaslid a1i basfn funfvex funfni sylancr
+      wfn elexd ssexd ressex setsex syl3anc vscaslid mulrslid slotex syl ipslid
+      eqeltrd ) ABCDUDIIZJFAVHDKUEIZDCUALZMNLZKUBIZDUCIZMNLZKUFIZVMMNLZJADEOZCD
+      PIZUGVHVPQHGCEDUHUIAVNJOZVOROZVMJOZVPJOAVKJOZVLROZWAVSAVQVIROZVJJOZWBHWDA
+      UEVISQWDUJTUKAVQCJOWEHACVRJAPJUPDJOVRJOZULADEHUQWFJDPDPUMUNUOGURCDEJUSUIV
+      IVJDEJRUTVAWCAUBVLSQWCVBTUKAVQWAHDUCEVCVDVEZVLVMVKJJRUTVAVTAUFVOSQVTVFTUK
+      WGVOVMVNJJRUTVAVGVG $.
+
     $( Topology component of a subring algebra.  (Contributed by Mario
        Carneiro, 4-Oct-2015.)  (Revised by Thierry Arnoux, 16-Jun-2019.) $)
     sratopng $p |- ( ph -> ( TopOpen ` W ) = ( TopOpen ` A ) ) $=
-      ( cvv cfv cnx co cop csts wcel cbs wceq cn cslot simpri srabaseg sratsetg
-      csra cress cvsca cmulr cip wss sraval syl2anc scaslid a1i wfn basfn elexd
-      csca funfvex funfni sylancr ssexd ressex setsex syl3anc vscaslid mulrslid
-      slotex syl ipslid eqeltrd topnpropgd ) ADBEIABCDEFGHUAABCDEFGHUBHABCDUCJJ
-      ZIFAVKDKUPJZDCUDLZMNLZKUEJZDUFJZMNLZKUGJZVPMNLZIADEOZCDPJZUHVKVSQHGCEDUIU
-      JAVQIOZVRROZVPIOZVSIOAVNIOZVOROZWDWBAVTVLROZVMIOZWEHWGAUPVLSQWGUKTULAVTCI
-      OWHHACWAIAPIUMDIOWAIOZUNADEHUOWIIDPDPUQURUSGUTCDEIVAUJVLVMDEIRVBVCWFAUEVO
-      SQWFVDTULAVTWDHDUFEVEVFVGZVOVPVNIIRVBVCWCAUGVRSQWCVHTULWJVRVPVQIIRVBVCVIV
-      IVJ $.
+      ( cvv srabaseg sratsetg sraex topnpropgd ) ADBEIABCDEFGHJABCDEFGHKHABCDEF
+      GHLM $.
 
     $( Distance function of a subring algebra.  (Contributed by Mario Carneiro,
        4-Oct-2015.)  (Revised by Thierry Arnoux, 16-Jun-2019.)  (Revised by AV,
