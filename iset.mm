@@ -157018,6 +157018,32 @@ $)
       RUHSLRUHSUBKLDTNBTNABCDEGIJUCUDUFUG $.
   $}
 
+  ${
+    $d x y .0. $.  $d x y D $.  $d x y I $.  $d x y .+ $.  $d x y ph $.
+    $d x y S $.  $d x y .x. $.
+    issubrgd.s $e |- ( ph -> S = ( I |`s D ) ) $.
+    issubrgd.z $e |- ( ph -> .0. = ( 0g ` I ) ) $.
+    issubrgd.p $e |- ( ph -> .+ = ( +g ` I ) ) $.
+    issubrgd.ss $e |- ( ph -> D C_ ( Base ` I ) ) $.
+    issubrgd.zcl $e |- ( ph -> .0. e. D ) $.
+    issubrgd.acl $e |- ( ( ph /\ x e. D /\ y e. D ) -> ( x .+ y ) e. D ) $.
+    issubrgd.ncl $e |- ( ( ph /\ x e. D ) -> ( ( invg ` I ) ` x ) e. D ) $.
+    issubrgd.o $e |- ( ph -> .1. = ( 1r ` I ) ) $.
+    issubrgd.t $e |- ( ph -> .x. = ( .r ` I ) ) $.
+    issubrgd.ocl $e |- ( ph -> .1. e. D ) $.
+    issubrgd.tcl $e |- ( ( ph /\ x e. D /\ y e. D ) -> ( x .x. y ) e. D ) $.
+    issubrgd.g $e |- ( ph -> I e. Ring ) $.
+    $( Prove a subring by closure (definition version).  (Contributed by Stefan
+       O'Rear, 7-Dec-2014.) $)
+    issubrgd $p |- ( ph -> D e. ( SubRing ` I ) ) $=
+      ( csubrg cfv wcel csubg cur cv cmulr wral crg cgrp ringgrp syl issubgrpd2
+      co eqeltrrd wa oveqdr 3expb ralrimivva w3a wb cbs eqid issubrg2 mpbir3and
+      ) ADIUCUDUEZDIUFUDUEZIUGUDZDUEZBUHZCUHZIUIUDZUPZDUEZCDUJBDUJZABCDEFIJKLMN
+      OPQAIUKUEZIULUEUBIUMUNUOAHVJDRTUQAVPBCDDAVLDUEZVMDUEZURZURVLVMGUPZVODAWAB
+      CGVNSUSAVSVTWBDUEUAUTUQVAAVRVHVIVKVQVBVCUBBCDIVDUDZIVNVJWCVEVJVEVNVEVFUNV
+      G $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
