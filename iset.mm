@@ -156918,6 +156918,26 @@ $)
       JADEHUKZWNODSDSULUMUNGUOCDEOUPTVOVPDEORUQURZWHANVRUEQWHUSUGUHAWIWFHDUCEVF
       UTVAZVRVSVQOORUQURWQOVSWBNOVTUSVRWBVBVOWBVBVCVDUDWBUEQWBRPVEUGVGTAWGWFVSW
       AQWPWQOVSNOVQUSVHTABWCNABCDVIJJZWCFAWMCWLVJWRWCQWOGCODVKTVLVMVN $.
+
+    $( The inner product operation of a subring algebra.  (Contributed by
+       Thierry Arnoux, 16-Jun-2019.) $)
+    sraipg $p |- ( ph -> ( .r ` W ) = ( .i ` A ) ) $=
+      ( cfv cnx co cop csts cip cvv wcel wceq cn cbs syl2anc cmulr csca scaslid
+      cress cvsca cslot simpri a1i wfn basfn elexd funfvex funfni sylancr ssexd
+      ressex setsex syl3anc vscaslid mulrslid slotex syl ipslid setsslid sraval
+      csra wss eqtrd fveq2d eqtr4d ) ADUAIZDJUBIZDCUDKZLMKZJUEIZVKLMKZJNIVKLMKZ
+      NIZBNIAVPOPZVKOPZVKVRQAVNOPZVORPZVTVSADEPZVLRPZVMOPZWAHWDAUBVLUFQWDUCUGUH
+      AWCCOPWEHACDSIZOASOUIDOPZWFOPZUJADEHUKZWHODSDSULUMUNGUOCDEOUPTVLVMDEORUQU
+      RWBAUEVOUFQWBUSUGUHAWCVTHDUAEUTVAVBZVOVKVNOORUQURWJOVKNOVPVCVDTABVQNABCDV
+      FIIZVQFAWGCWFVGWKVQQWIGCODVETVHVIVJ $.
+
+    $( Topology component of a subring algebra.  (Contributed by Mario
+       Carneiro, 4-Oct-2015.)  (Revised by Thierry Arnoux, 16-Jun-2019.)
+       (Revised by AV, 29-Oct-2024.) $)
+    sratsetg $p |- ( ph -> ( TopSet ` W ) = ( TopSet ` A ) ) $=
+      ( cts tsetslid cnx cfv csca wne cvsca slotstnscsi simp1i necomi simp2i
+      cip simp3i sralemg ) ABCIDEFGHJKILZKMLZUCUDNZUCKOLZNZUCKTLZNZPQRUCUFUEUGU
+      IPSRUCUHUEUGUIPUARUB $.
   $}
 
 
