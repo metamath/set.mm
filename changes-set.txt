@@ -88,6 +88,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+13-Apr-25 ovmul     ovmpot      Generalized for all operations
 11-Apr-25 elabrexg  [same]      Moved from GS's mathbox to main set.mm
 10-Apr-25 dvcobr    [same]      revised - remove unneeded hypotheses
 10-Apr-25 dvmulbr   [same]      revised - remove unneeded hypotheses
