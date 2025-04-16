@@ -156951,6 +156951,14 @@ $)
       OWHHACWAIAPIUMDIOWAIOZUNADEHUOWIIDPDPUQURUSGUTCDEIVAUJVLVMDEIRVBVCWFAUEVO
       SQWFVDTULAVTWDHDUFEVEVFVGZVOVPVNIIRVBVCWCAUGVRSQWCVHTULWJVRVPVQIIRVBVCVIV
       IVJ $.
+
+    $( Distance function of a subring algebra.  (Contributed by Mario Carneiro,
+       4-Oct-2015.)  (Revised by Thierry Arnoux, 16-Jun-2019.)  (Revised by AV,
+       29-Oct-2024.) $)
+    sradsg $p |- ( ph -> ( dist ` W ) = ( dist ` A ) ) $=
+      ( cds dsslid cnx cfv csca wne cvsca cip slotsdnscsi simp1i necomi simp2i
+      simp3i sralemg ) ABCIDEFGHJKILZKMLZUCUDNZUCKOLZNZUCKPLZNZQRSUCUFUEUGUIQTS
+      UCUHUEUGUIQUASUB $.
   $}
 
 
