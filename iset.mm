@@ -157044,6 +157044,15 @@ $)
       G $.
   $}
 
+  ${
+    $d W a $.
+    $( ` ringLMod ` is a function.  (Contributed by Stefan O'Rear,
+       6-Dec-2014.) $)
+    rlmfn $p |- ringLMod Fn _V $=
+      ( va cvv cv cbs cfv csra crglmod wcel wtru eqidd ssidd vex sraex df-rgmod
+      a1i mptru fnmpti ) ABACZDEZRFEEZGTBHITSRBITJISKRBHIALOMPANQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
