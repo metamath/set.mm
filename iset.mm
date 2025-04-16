@@ -157067,6 +157067,13 @@ $)
       ( wcel clidl cfv clss crglmod ccom df-lidl fveq1i cvv wfn wceq rlmfn elex
       fvco2 sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAOKFGBPQR
       $.
+
+    $( Value of the ring span function.  (Contributed by Stefan O'Rear,
+       4-Apr-2015.) $)
+    rspvalg $p |- ( W e. V
+        -> ( RSpan ` W ) = ( LSpan ` ( ringLMod ` W ) ) ) $=
+      ( wcel crsp cfv clspn crglmod ccom df-rsp fveq1i cvv wfn wceq rlmfn fvco2
+      elex sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAPKFGBOQR $.
   $}
 
 
