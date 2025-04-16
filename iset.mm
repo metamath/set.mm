@@ -157004,6 +157004,20 @@ $)
       WIXDWLXBXCVRVSVT $.
   $}
 
+  ${
+    $d a b A $.  $d a b ph $.  $d a b W $.
+    sralmod0.a $e |- ( ph -> A = ( ( subringAlg ` W ) ` S ) ) $.
+    sralmod0.z $e |- ( ph -> .0. = ( 0g ` W ) ) $.
+    sralmod0.s $e |- ( ph -> S C_ ( Base ` W ) ) $.
+    sralmod0g.w $e |- ( ph -> W e. X ) $.
+    $( The subring module inherits a zero from its ring.  (Contributed by
+       Stefan O'Rear, 27-Dec-2014.) $)
+    sralmod0g $p |- ( ph -> .0. = ( 0g ` A ) ) $=
+      ( va vb c0g cfv cbs cvv eqidd cv wcel cplusg srabaseg wa sraaddgg oveqdr
+      sraex grpidpropdg eqtrd ) AFDMNBMNHAKLDONZDBEPAUHQABCDEGIJUAJABCDEGIJUEAK
+      RUHSLRUHSUBKLDTNBTNABCDEGIJUCUDUFUG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
