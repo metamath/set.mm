@@ -156938,6 +156938,19 @@ $)
       ( cts tsetslid cnx cfv csca wne cvsca slotstnscsi simp1i necomi simp2i
       cip simp3i sralemg ) ABCIDEFGHJKILZKMLZUCUDNZUCKOLZNZUCKTLZNZPQRUCUFUEUGU
       IPSRUCUHUEUGUIPUARUB $.
+
+    $( Topology component of a subring algebra.  (Contributed by Mario
+       Carneiro, 4-Oct-2015.)  (Revised by Thierry Arnoux, 16-Jun-2019.) $)
+    sratopng $p |- ( ph -> ( TopOpen ` W ) = ( TopOpen ` A ) ) $=
+      ( cvv cfv cnx co cop csts wcel cbs wceq cn cslot simpri srabaseg sratsetg
+      csra cress cvsca cmulr cip wss sraval syl2anc scaslid a1i wfn basfn elexd
+      csca funfvex funfni sylancr ssexd ressex setsex syl3anc vscaslid mulrslid
+      slotex syl ipslid eqeltrd topnpropgd ) ADBEIABCDEFGHUAABCDEFGHUBHABCDUCJJ
+      ZIFAVKDKUPJZDCUDLZMNLZKUEJZDUFJZMNLZKUGJZVPMNLZIADEOZCDPJZUHVKVSQHGCEDUIU
+      JAVQIOZVRROZVPIOZVSIOAVNIOZVOROZWDWBAVTVLROZVMIOZWEHWGAUPVLSQWGUKTULAVTCI
+      OWHHACWAIAPIUMDIOWAIOZUNADEHUOWIIDPDPUQURUSGUTCDEIVAUJVLVMDEIRVBVCWFAUEVO
+      SQWFVDTULAVTWDHDUFEVEVFVGZVOVPVNIIRVBVCWCAUGVRSQWCVHTULWJVRVPVQIIRVBVCVIV
+      IVJ $.
   $}
 
 
