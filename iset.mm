@@ -157112,6 +157112,13 @@ $)
     ( wcel crglmod cfv cbs rlmvalg ssidd id sravscag ) ABCZADEAFEZABBAGKLHKIJ
     $.
 
+  $( Topology component of the ring module.  (Contributed by Mario Carneiro,
+     6-Oct-2015.) $)
+  rlmtopng $p |- ( R e. V
+      -> ( TopOpen ` R ) = ( TopOpen ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs rlmvalg ssidd id sratopng ) ABCZADEAFEZABBAGKLHKIJ
+    $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
