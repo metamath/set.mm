@@ -157088,6 +157088,12 @@ $)
     ( wcel crglmod cfv cbs rlmvalg ssidd id sraaddgg ) ABCZADEAFEZABBAGKLHKIJ
     $.
 
+  $( Zero vector in the ring module.  (Contributed by Stefan O'Rear,
+     6-Dec-2014.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+  rlm0g $p |- ( R e. V -> ( 0g ` R ) = ( 0g ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs c0g rlmvalg eqidd ssidd id sralmod0g ) ABCZADEAFEZAB
+    AGEZBAHMOIMNJMKL $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
