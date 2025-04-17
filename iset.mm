@@ -157106,6 +157106,12 @@ $)
     ( wcel crglmod cfv cbs rlmvalg ssidd id sramulrg ) ABCZADEAFEZABBAGKLHKIJ
     $.
 
+  $( Scalar multiplication in the ring module.  (Contributed by Stefan O'Rear,
+     31-Mar-2015.) $)
+  rlmvscag $p |- ( R e. V -> ( .r ` R ) = ( .s ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs rlmvalg ssidd id sravscag ) ABCZADEAFEZABBAGKLHKIJ
+    $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
