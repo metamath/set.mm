@@ -10509,7 +10509,7 @@ $)
 
   $( Anything implies ` T. ` .  (Contributed by FL, 20-Mar-2011.)  (Proof
      shortened by Anthony Hart, 1-Aug-2011.) $)
-  a1tru $p |- ( ph -> T. ) $=
+  trud $p |- ( ph -> T. ) $=
     ( wtru tru a1i ) BACD $.
 
   $( True can be removed from a conjunction.  (Contributed by FL, 20-Mar-2011.)
@@ -23144,9 +23144,11 @@ $)
     cbvrexfw.4 $e |- F/ x ps $.
     cbvrexfw.5 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Rule used to change bound variables, using implicit substitution.
-       Version of ~ cbvrexf with a disjoint variable condition, which does not
-       require ~ ax-13 .  (Contributed by FL, 27-Apr-2008.)  (Revised by Gino
-       Giotto, 10-Jan-2024.) $)
+       Version of ~ cbvrexf with a disjoint variable condition.  Although we
+       don't do so yet, we expect this disjoint variable condition will allow
+       us to remove reliance on ~ ax-i12 and ~ ax-bndl in the proof.
+       (Contributed by FL, 27-Apr-2008.)  (Revised by Gino Giotto,
+       10-Jan-2024.) $)
     cbvrexfw $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
       ( cv wcel wa wex wrex nfcri nfan weq eleq1w df-rex anbi12d cbvexv1
       3bitr4i ) CKELZAMZCNDKELZBMZDNACEOBDEOUEUGCDUDADDCEGPHQUFBCCDEFPIQCDRUDUF
@@ -23194,6 +23196,15 @@ $)
        10-Jan-2024.) $)
     cbvralw $p |- ( A. x e. A ph <-> A. y e. A ps ) $=
       ( nfcv cbvralfw ) ABCDECEIDEIFGHJ $.
+
+    $( Rule used to change bound variables, using implicit substitution.
+       Version of ~ cbvrexfw with more disjoint variable conditions.  Although
+       we don't do so yet, we expect the disjoint variable conditions will
+       allow us to remove reliance on ~ ax-i12 and ~ ax-bndl in the proof.
+       (Contributed by NM, 31-Jul-2003.)  (Revised by Gino Giotto,
+       10-Jan-2024.) $)
+    cbvrexw $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
+      ( nfcv cbvrexfw ) ABCDECEIDEIFGHJ $.
   $}
 
   ${
@@ -23506,7 +23517,6 @@ $)
         ( nfcv rabeqif ) ABCDBCFBDFEG $.
     $}
 
-    $d ph x $.
     rabeqdv.1 $e |- ( ph -> A = B ) $.
     $( Equality of restricted class abstractions.  Deduction form of ~ rabeq .
        (Contributed by Glauco Siliprandi, 5-Apr-2020.) $)
@@ -32566,8 +32576,8 @@ $)
   ${
     $d x A $.  $d x B $.
     prnz.1 $e |- A e. _V $.
-    $( A pair containing a set is not empty.  (Contributed by NM,
-       9-Apr-1994.) $)
+    $( A pair containing a set is not empty.  It is also inhabited (see
+       ~ prm ).  (Contributed by NM, 9-Apr-1994.) $)
     prnz $p |- { A , B } =/= (/) $=
       ( cpr wcel c0 wne prid1 ne0i ax-mp ) AABDZEKFGABCHKAIJ $.
 
@@ -32579,8 +32589,8 @@ $)
 
   ${
     $d x A $.  $d x B $.
-    $( A pair containing a set is not empty.  (Contributed by FL,
-       19-Sep-2011.) $)
+    $( A pair containing a set is not empty.  It is also inhabited (see
+       ~ prmg ).  (Contributed by FL, 19-Sep-2011.) $)
     prnzg $p |- ( A e. V -> { A , B } =/= (/) ) $=
       ( vx cv cpr c0 wne wceq preq1 neeq1d vex prnz vtoclg ) DEZBFZGHABFZGHDACO
       AIPQGOABJKOBDLMN $.
@@ -37809,18 +37819,18 @@ $)
     euotd $p |- ( ph -> E! x E. a E. b E. c ( x = <. a , b , c >. /\ ps ) ) $=
       ( vy cv wceq wa wex cvv wtru cotp wb wal weu otexg syl3anc w3a biimpa vex
       wcel otth sylibr eqeq2d biimpd impancom expimpd exlimdv exlimdvv wsbc tru
-      adantr ad2antrr simpr eqcomd biimpar jca a1tru 2thd sbcied mpbiri spesbcd
-      3anassrs nfcv nfsbc1v nfex sbceq1a exbidv spcegf sylc 2exbidv sylib eqeq1
-      excom13 anbi1d 3exbidv syl5ibrcom impbid eqeq2 bibi2d albidv spcegv df-eu
-      alrimiv ) ACOZGOZHOZIOZUAZPZBQZIRZHRGRZWNNOZPZUBZCUCZNRZXBCUDADEFUAZSUJZX
-      BWNXHPZUBZCUCZXGADSUJESUJZFSUJZXIJKLDEFSSSUEUFAXKCAXBXJAXAXJGHAWTXJIAWSBX
-      JABWSXJABQZWSXJXOWRXHWNXOWODPZWPEPZWQFPZUGZWRXHPZABXSMUHWOWPDEWQFGUIHUIIU
-      IUKZULUMUNUOUPUQURAXBXJXHWRPZBQZIRHRGRZAYCGRHRZIRZYDAXNYCIFUSZGRZHRZYFLAX
-      MYGHEUSZGRZYIKAYJGDAYJGDUSTUTAYJTGDSJAXPQZYGTHESAXMXPKVAYLXQQYCTIFSAXNXPX
-      QLVBAXPXQXRYCTUBAXSQZYCTYMYBBYMWRXHYMXSXTAXSVCYAULVDABXSMVEVFYMVGVHVLVIVI
-      VIVJVKYHYKHESHEVMYJHGYGHEVNVOXQYGYJGYGHEVPVQVRVSYEYIIFSIFVMYHIHYGIGYCIFVN
-      VOVOXRYCYGHGYCIFVPVTVRVSYCIHGWCWAXJWTYCGHIXJWSYBBWNXHWRWBWDWEWFWGWMXFXLNX
-      HSXCXHPZXEXKCYNXDXJXBXCXHWNWHWIWJWKVSXBCNWLUL $.
+      adantr ad2antrr simpr eqcomd biimpar jca trud 2thd 3anassrs sbcied mpbiri
+      spesbcd nfcv nfsbc1v nfex sbceq1a exbidv sylc 2exbidv excom13 sylib eqeq1
+      spcegf anbi1d 3exbidv syl5ibrcom impbid alrimiv eqeq2 bibi2d albidv df-eu
+      spcegv ) ACOZGOZHOZIOZUAZPZBQZIRZHRGRZWNNOZPZUBZCUCZNRZXBCUDADEFUAZSUJZXB
+      WNXHPZUBZCUCZXGADSUJESUJZFSUJZXIJKLDEFSSSUEUFAXKCAXBXJAXAXJGHAWTXJIAWSBXJ
+      ABWSXJABQZWSXJXOWRXHWNXOWODPZWPEPZWQFPZUGZWRXHPZABXSMUHWOWPDEWQFGUIHUIIUI
+      UKZULUMUNUOUPUQURAXBXJXHWRPZBQZIRHRGRZAYCGRHRZIRZYDAXNYCIFUSZGRZHRZYFLAXM
+      YGHEUSZGRZYIKAYJGDAYJGDUSTUTAYJTGDSJAXPQZYGTHESAXMXPKVAYLXQQYCTIFSAXNXPXQ
+      LVBAXPXQXRYCTUBAXSQZYCTYMYBBYMWRXHYMXSXTAXSVCYAULVDABXSMVEVFYMVGVHVIVJVJV
+      JVKVLYHYKHESHEVMYJHGYGHEVNVOXQYGYJGYGHEVPVQWCVRYEYIIFSIFVMYHIHYGIGYCIFVNV
+      OVOXRYCYGHGYCIFVPVSWCVRYCIHGVTWAXJWTYCGHIXJWSYBBWNXHWRWBWDWEWFWGWHXFXLNXH
+      SXCXHPZXEXKCYNXDXJXBXCXHWNWIWJWKWMVRXBCNWLUL $.
   $}
 
   ${
@@ -52305,11 +52315,24 @@ $)
     $( Elementhood in an image set.  (Contributed by Mario Carneiro,
        14-Jan-2014.) $)
     elabrex $p |- ( x e. A -> B e. { y | E. x e. A y = B } ) $=
-      ( vz cv wcel csb wceq wrex cab wtru tru csbeq1a equcoms a1tru 2thd rspcev
-      mpan2 eqeq1 rexbidv elab sylibr nfv nfcsb1v nfeq2 eqeq2d cbvrex eleqtrrdi
-      abbii ) AGZCHZDBGZAFGZDIZJZFCKZBLZUNDJZACKZBLUMDUPJZFCKZDUSHUMMVCNVBMFULC
-      UOULJZVBMVBAFAUODOZPVDQRSTURVCBDEUTUQVBFCUNDUPUAUBUCUDVAURBUTUQAFCUTFUEAU
-      NUPAUODUFUGULUOJDUPUNVEUHUIUKUJ $.
+      ( vz cv wcel csb wceq wrex cab wtru tru csbeq1a equcoms trud rspcev mpan2
+      2thd eqeq1 rexbidv sylibr nfv nfcsb1v nfeq2 eqeq2d cbvrex abbii eleqtrrdi
+      elab ) AGZCHZDBGZAFGZDIZJZFCKZBLZUNDJZACKZBLUMDUPJZFCKZDUSHUMMVCNVBMFULCU
+      OULJZVBMVBAFAUODOZPVDQTRSURVCBDEUTUQVBFCUNDUPUAUBUKUCVAURBUTUQAFCUTFUDAUN
+      UPAUODUEUFULUOJDUPUNVEUGUHUIUJ $.
+  $}
+
+  ${
+    $d A x y z $.  $d B y z $.
+    $( Elementhood in an image set.  (Contributed by Glauco Siliprandi,
+       11-Dec-2019.) $)
+    elabrexg $p |- ( ( x e. A /\ B e. V ) -> B e. { y | E. x e. A y = B } ) $=
+      ( vz cv wcel csb wceq wrex cab wtru tru csbeq1a equcoms trud 2thd rspcev
+      wa mpan2 adantr wb eqeq1 rexbidv elabg adantl mpbird nfcsb1v nfeq2 eqeq2d
+      nfv cbvrexw abbii eleqtrrdi ) AGZCHZDEHZTZDBGZAFGZDIZJZFCKZBLZUTDJZACKZBL
+      USDVEHZDVBJZFCKZUQVJURUQMVJNVIMFUPCVAUPJZVIMVIAFAVADOZPVKQRSUAUBURVHVJUCU
+      QVDVJBDEVFVCVIFCUTDVBUDUEUFUGUHVGVDBVFVCAFCVFFULAUTVBAVADUIUJUPVAJDVBUTVL
+      UKUMUNUO $.
   $}
 
   ${
@@ -53524,15 +53547,15 @@ $)
     $( A method for computing restricted iota.  (Contributed by NM,
        16-Apr-2013.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
     riota5f $p |- ( ph -> ( iota_ x e. A ps ) = B ) $=
-      ( vy cv wceq wb wral ralrimiva wi wcel wa wtru a1tru nfv crio wsbc adantl
-      wreu reu6i nfra1 nfan nfcvd nfvd simprl simpr simplrr simplrl eqeltrd rsp
-      sylc mpbird 2thd mpdan mpbid expr rspsbc nfeqd nfan1 eqeq2d bibi2d ralbid
-      riota2df imbi12d sbcied mpd ) ABCJZEKZLZCDMZBCDUAZEKZAVNCDHNABVLIJZKZLZCD
-      MZVPVRKZOZIEUBZVOVQOZAEDPWCIDMWDGAWCIDAVRDPZWAWBAWFWAQZQZRWBWHSWHBCDUDZRW
-      BLWGWIABCDVRUEUCWHBRCDVRAWGCACTZWFWACWFCTVTCDUFUGUGWHCVRUHWHRCUIAWFWAUJWH
-      VSQZBRWKBVSWHVSUKZWKWAVLDPVTAWFWAVSULWKVLVRDWLAWFWAVSUMUNVTCDUOUPUQWKSURV
-      HUSUTVANWCIEDVBUPAWCWEIEDGAVREKZQZWAVOWBVQWNVTVNCDAWMCWJACVREACVRUHFVCVDW
-      NVSVMBWNVREVLAWMUKZVEVFVGWNVREVPWOVEVIVJUTVK $.
+      ( vy cv wceq wb wral ralrimiva wi wcel wa wtru trud nfv crio reu6i adantl
+      wsbc wreu nfra1 nfan nfcvd nfvd simprl simpr simplrr simplrl eqeltrd sylc
+      mpbird 2thd riota2df mpdan mpbid rspsbc nfeqd nfan1 eqeq2d bibi2d imbi12d
+      rsp expr ralbid sbcied mpd ) ABCJZEKZLZCDMZBCDUAZEKZAVNCDHNABVLIJZKZLZCDM
+      ZVPVRKZOZIEUDZVOVQOZAEDPWCIDMWDGAWCIDAVRDPZWAWBAWFWAQZQZRWBWHSWHBCDUEZRWB
+      LWGWIABCDVRUBUCWHBRCDVRAWGCACTZWFWACWFCTVTCDUFUGUGWHCVRUHWHRCUIAWFWAUJWHV
+      SQZBRWKBVSWHVSUKZWKWAVLDPVTAWFWAVSULWKVLVRDWLAWFWAVSUMUNVTCDVGUOUPWKSUQUR
+      USUTVHNWCIEDVAUOAWCWEIEDGAVREKZQZWAVOWBVQWNVTVNCDAWMCWJACVREACVRUHFVBVCWN
+      VSVMBWNVREVLAWMUKZVDVEVIWNVREVPWOVDVFVJUTVK $.
   $}
 
   ${
@@ -143862,6 +143885,36 @@ $)
       HURZINURVQUBVJUSUTVRUFVAUAVJIVHNVBVCVKUPVMVNVDVKVOVLVIVEOVFVG $.
   $}
 
+  ${
+    resssca.1 $e |- H = ( G |`s A ) $.
+    ${
+      resssca.2 $e |- F = ( Scalar ` G ) $.
+      $( ` Scalar ` is unaffected by restriction.  (Contributed by Mario
+         Carneiro, 7-Dec-2014.) $)
+      ressscag $p |- ( ( G e. X /\ A e. V ) -> F = ( Scalar ` H ) ) $=
+        ( wcel wa csca scaslid scandxnbasendx simpl simpr resseqnbasd ) CFIZAEI
+        ZJABDKECFGHLMQRNQROP $.
+    $}
+
+    ${
+      ressvsca.2 $e |- .x. = ( .s ` G ) $.
+      $( ` .s ` is unaffected by restriction.  (Contributed by Mario Carneiro,
+         7-Dec-2014.) $)
+      ressvscag $p |- ( ( G e. X /\ A e. V ) -> .x. = ( .s ` H ) ) $=
+        ( wcel wa cvsca vscaslid vscandxnbasendx simpl simpr resseqnbasd ) CFIZ
+        AEIZJABDKECFGHLMQRNQROP $.
+    $}
+
+    ${
+      ressip.2 $e |- ., = ( .i ` G ) $.
+      $( The inner product is unaffected by restriction.  (Contributed by
+         Thierry Arnoux, 16-Jun-2019.) $)
+      ressipg $p |- ( ( G e. X /\ A e. V ) -> ., = ( .i ` H ) ) $=
+        ( wcel wa cip ipslid ipndxnbasendx simpl simpr resseqnbasd ) BFIZAEIZJA
+        DCKEBFGHLMQRNQROP $.
+    $}
+  $}
+
   $( Index value of the ~ df-tset slot.  (Contributed by Mario Carneiro,
      14-Aug-2015.) $)
   tsetndx $p |- ( TopSet ` ndx ) = 9 $=
@@ -154646,8 +154699,8 @@ $)
   ${
     lmodbn0.b $e |- B = ( Base ` W ) $.
     $( The base set of a left module is nonempty.  It is also inhabited (by
-       ~ lmodgrp and ~ grpidcl ).  (Contributed by NM, 8-Dec-2013.)  (Revised
-       by Mario Carneiro, 19-Jun-2014.) $)
+       ~ lmod0vcl ).  (Contributed by NM, 8-Dec-2013.)  (Revised by Mario
+       Carneiro, 19-Jun-2014.) $)
     lmodbn0 $p |- ( W e. LMod -> B =/= (/) ) $=
       ( clmod wcel cgrp c0 wne lmodgrp grpbn0 syl ) BDEBFEAGHBIABCJK $.
   $}
@@ -154678,8 +154731,8 @@ $)
     lmodsn0.f $e |- F = ( Scalar ` W ) $.
     lmodsn0.b $e |- B = ( Base ` F ) $.
     $( The set of scalars in a left module is nonempty.  It is also inhabited,
-       by ~ lmodfgrp and ~ grpidcl .  (Contributed by NM, 8-Dec-2013.)
-       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+       by ~ lmod0cl .  (Contributed by NM, 8-Dec-2013.)  (Revised by Mario
+       Carneiro, 19-Jun-2014.) $)
     lmodsn0 $p |- ( W e. LMod -> B =/= (/) ) $=
       ( clmod wcel cgrp c0 wne lmodfgrp grpbn0 syl ) CFGBHGAIJBCDKABELM $.
   $}
@@ -155587,6 +155640,1111 @@ $)
       WRABNNUWOUWPUWRUVEXRXRWUSWUTVUSWUSWUTXSVVBWUSQULLYCXMYDWUSWURWUPVUSWURWUS
       XSVVBWURPULLYCXMWURWUQWUIWUOWUQWURVVEWUQWURXSVVHWUQAULNYCXMYDWUHWUQWUOXQU
       VJUWRWUOBUYINBUIXDZUWQWUJUVSUYIUVSUYIIGYFWVAUVFYPUVGXHYHUVHYLYJXMYTUVI $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subspaces and spans in a left module
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c LSubSp $.
+
+  $( Extend class notation with linear subspaces of a left module or left
+     vector space. $)
+  clss $a class LSubSp $.
+
+  ${
+    $d a b j s x w $.
+    $( A linear subspace of a left module or left vector space is an inhabited
+       (in contrast to non-empty for non-intuitionistic logic) subset of the
+       base set of the left-module/vector space with a closure condition on
+       vector addition and scalar multiplication.  (Contributed by NM,
+       8-Dec-2013.) $)
+    df-lssm $a |- LSubSp = ( w e. _V |->
+     { s e. ~P ( Base ` w ) | ( E. j j e. s /\
+        A. x e. ( Base ` ( Scalar ` w ) ) A. a e. s A. b e. s
+          ( ( x ( .s ` w ) a ) ( +g ` w ) b ) e. s ) } ) $.
+  $}
+
+  ${
+    $d s w .+ $.  $d s w x B $.  $d s w V $.  $d a b s w x W $.  $d s w .x. $.
+    $d a b s x U $.  $d a b j s w x $.
+    lssset.f $e |- F = ( Scalar ` W ) $.
+    lssset.b $e |- B = ( Base ` F ) $.
+    lssset.v $e |- V = ( Base ` W ) $.
+    lssset.p $e |- .+ = ( +g ` W ) $.
+    lssset.t $e |- .x. = ( .s ` W ) $.
+    lssset.s $e |- S = ( LSubSp ` W ) $.
+    $( The set of all (not necessarily closed) linear subspaces of a left
+       module or left vector space.  (Contributed by NM, 8-Dec-2013.)  (Revised
+       by Mario Carneiro, 15-Jul-2014.) $)
+    lsssetm $p |- ( W e. X -> S = { s e. ~P V | ( E. j j e. s /\
+         A. x e. B A. a e. s A. b e. s ( ( x .x. a ) .+ b ) e. s ) } ) $=
+      ( cfv vw wcel clss cv wex co wral wa cpw crab cplusg csca cbs cvv df-lssm
+      cvsca wceq fveq2 eqtr4di pweqd fveq2d oveqd oveq1d eqtrd eleq1d raleqbidv
+      2ralbidv anbi2d rabeqbidv wfn basfn funfvex funfni sylancr eqeltrid pwexd
+      elex rabexg syl fvmptd3 eqtrid ) IJUBZDIUCTFUDKUDZUBFUEZAUDZLUDZEUFZMUDZC
+      UFZWCUBZMWCUGLWCUGZABUGZUHZKHUIZUJZSWBUAIWDWEWFUAUDZUPTZUFZWHWPUKTZUFZWCU
+      BZMWCUGLWCUGZAWPULTZUMTZUGZUHZKWPUMTZUIZUJWOUNUCUNAUAFKLMUOWPIUQZXFWMKXHW
+      NXIXGHXIXGIUMTZHWPIUMURPUSUTXIXEWLWDXIXBWKAXDBXIXDGUMTBXIXCGUMXIXCIULTGWP
+      IULURNUSVAOUSXIXAWJLMWCWCXIWTWIWCXIWTWGWHWSUFWIXIWRWGWHWSXIWQEWEWFXIWQIUP
+      TEWPIUPURRUSVBVCXIWSCWGWHXIWSIUKTCWPIUKURQUSVBVDVEVGVFVHVIIJVQZWBWNUNUBWO
+      UNUBWBHUNWBHXJUNPWBUMUNVJIUNUBXJUNUBZVKXKXLUNIUMIUMVLVMVNVOVPWMKWNUNVRVSV
+      TWA $.
+
+    $d U a b j s x $.
+    $( The predicate "is a subspace" (of a left module or left vector space).
+       (Contributed by NM, 8-Dec-2013.)  (Revised by Mario Carneiro,
+       8-Jan-2015.) $)
+    islssm $p |- ( W e. X -> ( U e. S <-> ( U C_ V /\ E. j j e. U
+          /\ A. x e. B A. a e. U A. b e. U ( ( x .x. a ) .+ b ) e. U ) ) ) $=
+      ( wcel vs cv wex co wral wa cpw wss w3a lsssetm eleq2d cvv wb cbs cfv wfn
+      crab basfn elex funfvex funfni sylancr eqeltrid elpw2g anbi1d wceq exbidv
+      syl eleq2 raleqbi1dv ralbidv anbi12d elrab 3anass 3bitr4g bitrd ) JKTZFDT
+      FGUBZUAUBZTZGUCZAUBLUBEUDMUBCUDZVSTZMVSUEZLVSUEZABUEZUFZUAIUGZUQZTZFIUHZV
+      RFTZGUCZWBFTZMFUEZLFUEZABUEZUIZVQDWIFABCDEGHIJKUALMNOPQRSUJUKVQFWHTZWMWQU
+      FZUFWKWTUFWJWRVQWSWKWTVQIULTWSWKUMVQIJUNUOZULPVQUNULUPJULTXAULTZURJKUSXBU
+      LJUNJUNUTVAVBVCFIULVDVHVEWGWTUAFWHVSFVFZWAWMWFWQXCVTWLGVSFVRVIVGXCWEWPABW
+      DWOLVSFWCWNMVSFVSFWBVIVJVJVKVLVMWKWMWQVNVOVP $.
+  $}
+
+  ${
+    $d a b x ph $.  $d a b x U $.  $d a b x W $.  $d a b B $.  $d U a b j x $.
+    islssd.f $e |- ( ph -> F = ( Scalar ` W ) ) $.
+    islssd.b $e |- ( ph -> B = ( Base ` F ) ) $.
+    islssd.v $e |- ( ph -> V = ( Base ` W ) ) $.
+    islssd.p $e |- ( ph -> .+ = ( +g ` W ) ) $.
+    islssd.t $e |- ( ph -> .x. = ( .s ` W ) ) $.
+    islssd.s $e |- ( ph -> S = ( LSubSp ` W ) ) $.
+    islssd.u $e |- ( ph -> U C_ V ) $.
+    islssmd.m $e |- ( ph -> E. j j e. U ) $.
+    islssd.c $e |- ( ( ph /\ ( x e. B /\ a e. U /\ b e. U ) ) ->
+            ( ( x .x. a ) .+ b ) e. U ) $.
+    islssmd.w $e |- ( ph -> W e. X ) $.
+    $( Properties that determine a subspace of a left module or left vector
+       space.  (Contributed by NM, 8-Dec-2013.)  (Revised by Mario Carneiro,
+       8-Jan-2015.) $)
+    islssmd $p |- ( ph -> U e. S ) $=
+      ( clss cfv wcel cbs wss cv wex cvsca co cplusg wral csca sseqtrd wa 3exp2
+      imp43 ralrimivva fveq2d eqtrd eleq2d oveqd oveq1d eleq1d 2ralbidv 3imtr3d
+      ex ralrimiv w3a wb eqid islssm syl mpbir3and eleqtrrd ) AGKUEUFZEAGVSUGZG
+      KUHUFZUIZHUJGUGHUKZBUJZMUJZKULUFZUMZNUJZKUNUFZUMZGUGZNGUOMGUOZBKUPUFZUHUF
+      ZUOZAGJWAUAQUQUBAWLBWNAWDCUGZWDWEFUMZWHDUMZGUGZNGUOMGUOZWDWNUGWLAWPWTAWPU
+      RWSMNGGAWPWEGUGZWHGUGZWSAWPXAXBWSUCUSUTVAVJACWNWDACIUHUFWNPAIWMUHOVBVCVDA
+      WSWKMNGGAWRWJGAWRWQWHWIUMWJADWIWQWHRVEAWQWGWHWIAFWFWDWESVEVFVCVGVHVIVKAKL
+      UGVTWBWCWOVLVMUDBWNWIVSWFGHWMWAKLMNWMVNWNVNWAVNWIVNWFVNVSVNVOVPVQTVR $.
+  $}
+
+  ${
+    $d a b j x U $.  $d a b x V $.  $d a b x W $.
+    lssss.v $e |- V = ( Base ` W ) $.
+    lssss.s $e |- S = ( LSubSp ` W ) $.
+    $( A subspace is a set of vectors.  (Contributed by NM, 8-Dec-2013.)
+       (Revised by Mario Carneiro, 8-Jan-2015.) $)
+    lssssg $p |- ( ( W e. X /\ U e. S ) -> U C_ V ) $=
+      ( vj vx va vb wcel wa wss cv wex cfv co wral eqid cvsca cplusg cbs islssm
+      csca w3a biimpa simp1d ) DELZBALZMBCNZHOBLHPZIOJODUAQZRKODUBQZRBLKBSJBSID
+      UEQZUCQZSZUIUJUKULUQUFIUPUNAUMBHUOCDEJKUOTUPTFUNTUMTGUDUGUH $.
+
+    $( A subspace member is a vector.  (Contributed by NM, 11-Jan-2014.)
+       (Revised by Mario Carneiro, 8-Jan-2015.) $)
+    lsselg $p |- ( ( W e. C /\ U e. S /\ X e. U ) -> X e. V ) $=
+      ( wcel w3a wss lssssg 3adant3 simp3 sseldd ) EAIZCBIZFCIZJCDFPQCDKRBCDEAG
+      HLMPQRNO $.
+
+    $d V j $.  $d W j $.
+    $( The set of vectors in a left module is a subspace.  (Contributed by NM,
+       8-Dec-2013.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lss1 $p |- ( W e. LMod -> V e. S ) $=
+      ( vx vj va vb clmod wcel csca cfv cbs eqidd wceq a1i cv eqid co cgrp clss
+      cplusg cvsca ssidd c0g wex lmod0vcl elex2 syl wa simpl lmodvscl 3adant3r3
+      w3a simpr3 lmodvacl syl3anc lmodgrp islssmd ) CJKZFCLMZNMZCUCMZACUDMZBGVB
+      BCUAHIVAVBOVAVCOBCNMPVADQVAVDOVAVEOACUBMPVAEQVABUEVACUFMZBKGRBKGUGBCVFDVF
+      SUHGVFBUIUJVAFRZVCKZHRZBKZIRZBKZUOZUKVAVGVIVETZBKZVLVNVKVDTBKVAVMULVAVHVJ
+      VOVLVGVEVBVCBCVIDVBSVESVCSUMUNVAVHVJVLUPVDBCVNVKDVDSUQURCUSUT $.
+
+    $d x S $.
+    lssuni.w $e |- ( ph -> W e. LMod ) $.
+    $( The union of all subspaces is the vector space.  (Contributed by NM,
+       13-Mar-2015.) $)
+    lssuni $p |- ( ph -> U. S = V ) $=
+      ( vx cuni cv wss crab clmod wcel wceq wral lssssg ralrimiva rabid2 sylibr
+      unieqd syl lss1 unimax 3syl eqtrd ) ABIZHJZCKZHBLZIZCADMNZUGUKOGULBUJULUI
+      HBPBUJOULUIHBBUHCDMEFQRUIHBSTUAUBAULCBNUKCOGBCDEFUCHCBUDUEUF $.
+  $}
+
+  ${
+    $d x B $.  $d a b x .+ $.  $d a b x .x. $.  $d a b j x U $.  $d a b x W $.
+    $d a b X $.  $d b Y $.  $d a b x Z $.
+    lsscl.f $e |- F = ( Scalar ` W ) $.
+    lsscl.b $e |- B = ( Base ` F ) $.
+    lsscl.p $e |- .+ = ( +g ` W ) $.
+    lsscl.t $e |- .x. = ( .s ` W ) $.
+    lsscl.s $e |- S = ( LSubSp ` W ) $.
+    $( Closure property of a subspace.  (Contributed by NM, 8-Dec-2013.)
+       (Revised by Mario Carneiro, 8-Jan-2015.) $)
+    lssclg $p |- ( ( W e. C /\ U e. S /\ ( Z e. B /\ X e. U /\ Y e. U ) ) ->
+        ( ( Z .x. X ) .+ Y ) e. U ) $=
+      ( vx va wcel co vb vj w3a wral cbs cfv wss wex simp2 eqid islssm 3ad2ant1
+      cv wb mpbid simp3d wi wceq oveq1 oveq1d eleq1d oveq2 rspc3v 3ad2ant3 mpd
+      ) HBSZFDSZKASIFSJFSUCZUCZQUMZRUMZETZUAUMZCTZFSZUAFUDRFUDQAUDZKIETZJCTZFSZ
+      VIFHUEUFZUGZUBUMFSUBUHZVPVIVGWAWBVPUCZVFVGVHUIVFVGVGWCUNVHQACDEFUBGVTHBRU
+      ALMVTUJNOPUKULUOUPVHVFVPVSUQVGVOVSKVKETZVMCTZFSVQVMCTZFSQRUAKIJAFFVJKURZV
+      NWEFWGVLWDVMCVJKVKEUSUTVAVKIURZWEWFFWHWDVQVMCVKIKEVBUTVAVMJURWFVRFVMJVQCV
+      BVAVCVDVE $.
+  $}
+
+  ${
+    lssvsubcl.m $e |- .- = ( -g ` W ) $.
+    lssvsubcl.s $e |- S = ( LSubSp ` W ) $.
+    $( Closure of vector subtraction in a subspace.  (Contributed by NM,
+       31-Mar-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lssvsubcl $p |- ( ( ( W e. LMod /\ U e. S )
+          /\ ( X e. U /\ Y e. U ) ) -> ( X .- Y ) e. U ) $=
+      ( clmod wcel wa co cfv cbs wceq eqid lsselg syl3anc syl eqeltrd cur cvsca
+      csca cminusg cplusg simpll simplr simprl simprr lmodvsubval2 cgrp lmod1cl
+      lmodfgrp grpinvcl syl2anc lmodvscl lmodcom lssclg syl113anc ) DIJZBAJZKZE
+      BJZFBJZKZKZEFCLZEDUCMZUAMZVHUDMZMZFDUBMZLZDUEMZLZBVFUTEDNMZJZFVPJZVGVOOUT
+      VAVEUFZVFUTVAVCVQVSUTVAVEUGZVBVCVDUHZIABVPDEVPPZHQRZVFUTVAVDVRVSVTVBVCVDU
+      IZIABVPDFWBHQRZEFVNVLVIVHCVJVPDWBVNPZGVHPZVLPZVJPZVIPZUJRVFVOVMEVNLZBVFUT
+      VQVMVPJZVOWKOVSWCVFUTVKVHNMZJZVRWLVSVFVHUKJZVIWMJZWNVFUTWOVSVHDWGUMSVFUTW
+      PVSVIVHWMDWGWMPZWJULSWMVHVJVIWQWIUNUOZWEVKVLVHWMVPDFWBWGWHWQUPRVNVPDEVMWB
+      WFUQRVFUTVAWNVDVCWKBJVSVTWRWDWAWMIVNAVLBVHDFEVKWGWQWFWHHURUSTT $.
+  $}
+
+  ${
+    lssvancl.v $e |- V = ( Base ` W ) $.
+    lssvancl.p $e |- .+ = ( +g ` W ) $.
+    lssvancl.s $e |- S = ( LSubSp ` W ) $.
+    lssvancl.w $e |- ( ph -> W e. LMod ) $.
+    lssvancl.u $e |- ( ph -> U e. S ) $.
+    lssvancl.x $e |- ( ph -> X e. U ) $.
+    lssvancl.y $e |- ( ph -> Y e. V ) $.
+    lssvancl.n $e |- ( ph -> -. Y e. U ) $.
+    $( Non-closure: if one vector belongs to a subspace but another does not,
+       their sum does not belong.  Useful for obtaining a new vector not in a
+       subspace.  (Contributed by NM, 14-May-2015.) $)
+    lssvancl1 $p |- ( ph -> -. ( X .+ Y ) e. U ) $=
+      ( co wcel clmod adantr wa csg cfv wceq cabl lmodabl syl syl3anc ablpncan2
+      lsselg eqid simpr lssvsubcl syl22anc eqeltrrd mtand ) AGHBQZDRZHDRPAURUAZ
+      UQGFUBUCZQZHDAVAHUDZURAFUERZGERZHERVBAFSRZVCLFUFUGAVEDCRZGDRZVDLMNSCDEFGI
+      KUJUHOEBFUTGHIJUTUKZUIUHTUSVEVFURVGVADRAVEURLTAVFURMTAURULAVGURNTCDUTFUQG
+      VHKUMUNUOUP $.
+
+    $( Non-closure: if one vector belongs to a subspace but another does not,
+       their sum does not belong.  Useful for obtaining a new vector not in a
+       subspace.  (Contributed by NM, 20-May-2015.) $)
+    lssvancl2 $p |- ( ph -> -. ( Y .+ X ) e. U ) $=
+      ( co clmod wcel syl3anc wceq lsselg lmodcom lssvancl1 eqneltrrd ) AGHBQZH
+      GBQZDAFRSZGESZHESUFUGUALAUHDCSGDSUILMNRCDEFGIKUBTOBEFGHIJUCTABCDEFGHIJKLM
+      NOPUDUE $.
+  $}
+
+  ${
+    $d x S $.  $d x U $.  $d a b x W $.  $d y X $.  $d a b x y .0. $.
+    lss0cl.z $e |- .0. = ( 0g ` W ) $.
+    lss0cl.s $e |- S = ( LSubSp ` W ) $.
+    ${
+      $d U a b c x $.  $d W a b c x $.
+      $( The zero vector belongs to every subspace.  (Contributed by NM,
+         12-Jan-2014.)  (Proof shortened by Mario Carneiro, 19-Jun-2014.) $)
+      lss0cl $p |- ( ( W e. LMod /\ U e. S ) -> .0. e. U ) $=
+        ( vx va vb vc clmod wcel wa cv cbs cfv co wral w3a eqid wex cplusg csca
+        wss cvsca islssm biimpa simp2d simp1 lsselg lmodsubid syl2anc lssvsubcl
+        csg wceq anabsan2 3impa eqeltrrd 3expia exlimdv mpd ) CKLZBALZMZGNZBLZG
+        UAZDBLZVDBCOPZUDZVGHNINCUEPZQJNCUBPZQBLJBRIBRHCUCPZOPZRZVBVCVJVGVOSHVNV
+        LAVKBGVMVICKIJVMTVNTVITZVLTVKTFUFUGUHVDVFVHGVBVCVFVHVBVCVFSZVEVECUNPZQZ
+        DBVQVBVEVILVSDUOVBVCVFUIKABVICVEVPFUJVEVRVICDVPEVRTZUKULVBVCVFVSBLZVDVF
+        WAABVRCVEVEVTFUMUPUQURUSUTVA $.
+    $}
+
+    ${
+      $d .0. a b j x $.
+      $( The singleton of the zero vector is a subspace.  (Contributed by NM,
+         13-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+      lsssn0 $p |- ( W e. LMod -> { .0. } e. S ) $=
+        ( vx vj va vb clmod wcel cfv eqidd wceq a1i eqid cv syl co cvv csca cbs
+        cplusg cvsca csn clss lmod0vcl snssd wex snmg w3a simpr2 oveq2d lmodvs0
+        wa elsni 3ad2antr1 eqtrd simpr3 oveq12d lmod0vlid mpdan adantr vscaslid
+        wb vex slotex ovexg syl3anc plusgslid elsng mpbird id islssmd ) BJKZFBU
+        ALZUBLZBUCLZABUDLZCUEZGVPBUBLZBJHIVOVPMVOVQMVOWAMVOVRMVOVSMABUFLNVOEOVO
+        CWAWABCWAPZDUGZUHVOCWAKZGQVTKGUIWCGCWAUJRVOFQZVQKZHQZVTKZIQZVTKZUKZUOZW
+        EWGVSSZWIVRSZVTKZWNCNZWLWNCCVRSZCWLWMCWICVRWLWMWECVSSZCWLWGCWEVSWLWHWGC
+        NVOWFWHWJULWGCUPRUMVOWHWFWRCNWJVSVPVQBWECVPPVSPVQPDUNUQURWLWJWICNVOWFWH
+        WJUSWICUPRUTVOWQCNZWKVOWDWSWCVRWABCCWBVRPDVAVBVCURVOWOWPVEZWKVOWNTKZWTV
+        OWMTKZVRTKWITKZXAVOWETKZVSTKWGTKZXBXDVOFVFOBUDJVDVGXEVOHVFOWEWGVSTTTVHV
+        IBUCJVJVGXCVOIVFOWMWIVRTTTVHVIWNCTVKRVCVLVOVMVN $.
+    $}
+
+    $( The zero subspace is included in every subspace.  (Contributed by NM,
+       27-Mar-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lss0ss $p |- ( ( W e. LMod /\ X e. S ) -> { .0. } C_ X ) $=
+      ( clmod wcel wa lss0cl snssd ) BGHCAHIDCACBDEFJK $.
+
+    $( No subspace is smaller than the zero subspace.  (Contributed by NM,
+       20-Apr-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lssle0 $p |- ( ( W e. LMod /\ X e. S )
+         -> ( X C_ { .0. } <-> X = { .0. } ) ) $=
+      ( clmod wcel wa csn wss wceq lss0ss biantrud eqss bitr4di ) BGHCAHIZCDJZK
+      ZSRCKZICRLQTSABCDEFMNCROP $.
+  $}
+
+  ${
+    lssvneln0.o $e |- .0. = ( 0g ` W ) $.
+    lssvneln0.s $e |- S = ( LSubSp ` W ) $.
+    lssvneln0.w $e |- ( ph -> W e. LMod ) $.
+    lssvneln0.u $e |- ( ph -> U e. S ) $.
+    lssvneln0.n $e |- ( ph -> -. X e. U ) $.
+    $( A vector ` X ` which doesn't belong to a subspace ` U ` is nonzero.
+       (Contributed by NM, 14-May-2015.)  (Revised by AV, 19-Jul-2022.) $)
+    lssvneln0 $p |- ( ph -> X =/= .0. ) $=
+      ( wcel wn wne wceq wi clmod lss0cl syl2anc eleq1a syl necon3bd mpd ) AECL
+      ZMEFNKAUDEFAFCLZEFOUDPADQLCBLUEIJBCDFGHRSFCETUAUBUC $.
+  $}
+
+  ${
+    lssneln0.o $e |- .0. = ( 0g ` W ) $.
+    lssneln0.s $e |- S = ( LSubSp ` W ) $.
+    lssneln0.w $e |- ( ph -> W e. LMod ) $.
+    lssneln0.u $e |- ( ph -> U e. S ) $.
+    lssneln0.x $e |- ( ph -> X e. V ) $.
+    lssneln0.n $e |- ( ph -> -. X e. U ) $.
+    $( A vector ` X ` which doesn't belong to a subspace ` U ` is nonzero.
+       (Contributed by NM, 14-May-2015.)  (Revised by AV, 17-Jul-2022.)  (Proof
+       shortened by AV, 19-Jul-2022.) $)
+    lssneln0 $p |- ( ph -> X e. ( V \ { .0. } ) ) $=
+      ( wcel wne csn cdif lssvneln0 eldifsn sylanbrc ) AFDNFGOFDGPQNLABCEFGHIJK
+      MRFDGST $.
+  $}
+
+  ${
+    lssvacl.p $e |- .+ = ( +g ` W ) $.
+    lssvacl.s $e |- S = ( LSubSp ` W ) $.
+    $( Closure of vector addition in a subspace.  (Contributed by NM,
+       11-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lssvacl $p |- ( ( ( W e. LMod /\ U e. S ) /\ ( X e. U /\ Y e. U ) )
+       -> ( X .+ Y ) e. U ) $=
+      ( clmod wcel wa csca cfv cur cvsca co cbs wceq simpll eqid simplr syl3anc
+      simprl lsselg lmodvs1 syl2anc oveq1d lmod1cl ad2antrr syl113anc eqeltrrd
+      simprr lssclg ) DIJZCBJZKZECJZFCJZKZKZDLMZNMZEDOMZPZFAPZEFAPCUTVDEFAUTUNE
+      DQMZJZVDERUNUOUSSZUTUNUOUQVGVHUNUOUSUAZUPUQURUCZIBCVFDEVFTZHUDUBVCVBVAVFD
+      EVKVATZVCTZVBTZUEUFUGUTUNUOVBVAQMZJZUQURVECJVHVIUNVPUOUSVBVAVODVLVOTZVNUH
+      UIVJUPUQURULVOIABVCCVADEFVBVLVQGVMHUMUJUK $.
+  $}
+
+  ${
+    lssvscl.f $e |- F = ( Scalar ` W ) $.
+    lssvscl.t $e |- .x. = ( .s ` W ) $.
+    lssvscl.b $e |- B = ( Base ` F ) $.
+    lssvscl.s $e |- S = ( LSubSp ` W ) $.
+    $( Closure of scalar product in a subspace.  (Contributed by NM,
+       11-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lssvscl $p |- ( ( ( W e. LMod /\ U e. S ) /\ ( X e. B /\ Y e. U ) )
+       -> ( X .x. Y ) e. U ) $=
+      ( clmod wcel wa co c0g cfv eqid syl3anc cplusg cbs simpll simprl lmodvscl
+      wceq simplr simprr lsselg lmod0vrid syl2anc lss0cl adantr lssclg eqeltrrd
+      syl113anc ) FMNZDBNZOZGANZHDNZOZOZGHCPZFQRZFUARZPZVDDVCUQVDFUBRZNZVGVDUFU
+      QURVBUCZVCUQUTHVHNZVIVJUSUTVAUDZVCUQURVAVKVJUQURVBUGZUSUTVAUHZMBDVHFHVHSZ
+      LUITGCEAVHFHVOIJKUETVFVHFVDVEVOVFSZVESZUJUKVCUQURUTVAVEDNZVGDNVJVMVLVNUSV
+      RVBBDFVEVQLULUMAMVFBCDEFHVEGIKVPJLUNUPUO $.
+  $}
+
+  ${
+    lssvnegcl.s $e |- S = ( LSubSp ` W ) $.
+    lssvnegcl.n $e |- N = ( invg ` W ) $.
+    $( Closure of negative vectors in a subspace.  (Contributed by Stefan
+       O'Rear, 11-Dec-2014.) $)
+    lssvnegcl $p |- ( ( W e. LMod /\ U e. S /\ X e. U ) -> ( N ` X ) e. U ) $=
+      ( clmod wcel w3a csca cfv cur cminusg cvsca co cbs wceq eqid syl2anc cgrp
+      simp1 lsselg lmodvneg1 simp2 lmodring 3ad2ant1 ringgrpd ringidcl grpinvcl
+      crg syl simp3 lssvscl syl22anc eqeltrrd ) DHIZBAIZEBIZJZDKLZMLZVANLZLZEDO
+      LZPZECLZBUTUQEDQLZIVFVGRUQURUSUBZHABVHDEVHSZFUCVEVBVAVCCVHDEVJGVASZVESZVB
+      SZVCSZUDTUTUQURVDVAQLZIZUSVFBIVIUQURUSUEUTVAUAIVBVOIZVPUTVAUQURVAUKIZUSVA
+      DVKUFUGZUHUTVRVQVSVOVAVBVOSZVMUIULVOVAVCVBVTVNUJTUQURUSUMVOAVEBVADVDEVKVL
+      VTFUNUOUP $.
+  $}
+
+  ${
+    $d x y S $.  $d x y w U $.  $d x y w W $.
+    lsssubg.s $e |- S = ( LSubSp ` W ) $.
+    $( All subspaces are subgroups.  (Contributed by Stefan O'Rear,
+       11-Dec-2014.) $)
+    lsssubg $p |- ( ( W e. LMod /\ U e. S ) -> U e. ( SubGrp ` W ) ) $=
+      ( vw vx vy clmod wcel wa csubg cfv cbs wss cv wex wral eqid syl ralrimiva
+      cplusg co cminusg lssssg c0g lss0cl elex2 lssvacl anassrs lssvnegcl 3expa
+      jca cgrp w3a wb lmodgrp adantr issubg2m mpbir3and ) CHIZBAIZJZBCKLIZBCMLZ
+      NZEOBIEPZFOZGOZCUALZUBBIZGBQZVGCUCLZLBIZJZFBQZABVDCHVDRZDUDVBCUELZBIVFABC
+      VQVQRDUFEVQBUGSVBVNFBVBVGBIZJZVKVMVSVJGBVBVRVHBIVJVIABCVGVHVIRZDUHUITUTVA
+      VRVMABVLCVGDVLRZUJUKULTVBCUMIZVCVEVFVOUNUOUTWBVACUPUQFGEVDVIBCVLVPVTWAURS
+      US $.
+
+    $( All subspaces are subgroups.  (Contributed by Mario Carneiro,
+       19-Apr-2016.) $)
+    lsssssubg $p |- ( W e. LMod -> S C_ ( SubGrp ` W ) ) $=
+      ( vx clmod wcel csubg cfv cv lsssubg ex ssrdv ) BEFZDABGHZMDIZAFONFAOBCJK
+      L $.
+  $}
+
+  ${
+    $d a b x S $.  $d a b x U $.  $d a b x V $.  $d a b x W $.  $d a b j x X $.
+    islss3.x $e |- X = ( W |`s U ) $.
+    islss3.v $e |- V = ( Base ` W ) $.
+    islss3.s $e |- S = ( LSubSp ` W ) $.
+    $( A linear subspace of a module is a subset which is a module in its own
+       right.  (Contributed by Stefan O'Rear, 6-Dec-2014.)  (Revised by Mario
+       Carneiro, 30-Apr-2015.) $)
+    islss3 $p |- ( W e. LMod -> ( U e. S <-> ( U C_ V /\ X e. LMod ) ) ) $=
+      ( clmod wcel wa cfv cbs wceq co a1i syldan eqidd eqid cvv vx va vb vj wss
+      lssssg csca cplusg cvsca cmulr cur cress simpl simpr ressbas2d ressplusgd
+      ressscag ressvscag crg lmodring adantr csubg cgrp lsssubg subggrp lssvscl
+      syl cv w3a simpll simpr1 simpr2 sseldd simpr3 lmodvsdi syl13anc lmodvsdir
+      3impb lmodvsass sselda lmodvs1 adantlr islmodd jca simprl wfn basfn elexd
+      simprr funfvex funfni sylancr eqeltrd eqcomd eqsstrrd c0g lmodgrp grpidcl
+      clss wex ad2antll elex2 3syl lss1 lssclg syl3anc islssmd impbida ) DIJZBA
+      JZBCUEZEIJZKZXIXJKZXKXLABCDIGHUFZXNUAUBUCDUGLZMLZDUHLZXPUHLZDUILZXPUJLZXP
+      UKLZXPBEXIXJXKBEMLZNZXOXIXKKZBCEDIEDBULONZYEFPCDMLNZYEGPXIXKUMXIXKUNUOZQX
+      NBXRDEAIYFXNFPXNXRRXIXJUNXIXJUMUPBXPDEAIFXPSZUQBXTDEAIFXTSZURXNXQRXNXSRXN
+      YARXNYBRXIXPUSJXJXPDYIUTVAXNBDVBLJEVCJZABDHVDBDEFVEVGXNUAVHZXQJZUBVHZBJZY
+      LYNXTOZBJXQAXTBXPDYLYNYIYJXQSZHVFVRXNYMYOUCVHZBJZVIZKZXIYMYNCJYRCJZYLYNYR
+      XROXTOYPYLYRXTOZXRONXIXJYTVJXNYMYOYSVKUUABCYNXNXKYTXOVAZXNYMYOYSVLVMUUABC
+      YRUUDXNYMYOYSVNVMXRYLXTXPXQCDYNYRGXRSZYIYJYQVOVPXNYMYNXQJZYSVIZKZXIYMUUFU
+      UBYLYNXSOYRXTOUUCYNYRXTOZXRONXIXJUUGVJZXNYMUUFYSVKZXNYMUUFYSVLZUUHBCYRXNX
+      KUUGXOVAXNYMUUFYSVNVMZXRXSYLYNXTXPXQCDYRGUUEYIYJYQXSSVQVPUUHXIYMUUFUUBYLY
+      NYAOYRXTOYLUUIXTONUUJUUKUULUUMYLYNXTYAXPXQCDYRGYIYJYQYASVSVPXNYLBJYLCJZYB
+      YLXTOYLNZXNBCYLXOVTXIUUNUUOXJXTYBXPCDYLGYIYJYBSWAWBQWCWDXIXMKZBYCAXIXMXKY
+      DXIXKXLWEZYHQZUUPUAEUGLZMLZEUHLZAEUILZYCUDUUSCDIUBUCUUPXPUUSXIXMBTJZXPUUS
+      NUUPBYCTUURUUPMTWFETJYCTJZWGUUPEIXIXKXLWIZWHUVDTEMEMWJWKWLWMZBXPDETIFYIUQ
+      QWNUUPUUTRYGUUPGPUUPXRUVAUUPBXRDETIYFUUPFPUUPXRRUVFXIXMUMZUPWNUUPXTUVBXIX
+      MUVCXTUVBNUVFBXTDETIFYJURQWNADWSLNUUPHPUUPYCBCUURUUQWOUUPYKEWPLZYCJUDVHYC
+      JUDWTXLYKXIXKEWQXAYCEUVHYCSZUVHSWRUDUVHYCXBXCUUPYLUUTJYNYCJYRYCJVIZKZXLYC
+      EWSLZJZUVJYLYNUVBOYRUVAOYCJUUPXLUVJUVEVAZUVKXLUVMUVNUVLYCEUVIUVLSZXDVGUUP
+      UVJUNUUTIUVAUVLUVBYCUUSEYNYRYLUUSSUUTSUVASUVBSUVOXEXFUVGXGWMXH $.
+  $}
+
+  ${
+    lsslss.x $e |- X = ( W |`s U ) $.
+    lsslss.s $e |- S = ( LSubSp ` W ) $.
+    $( A submodule is a module.  (Contributed by Stefan O'Rear,
+       12-Dec-2014.) $)
+    lsslmod $p |- ( ( W e. LMod /\ U e. S ) -> X e. LMod ) $=
+      ( clmod wcel cbs cfv wss eqid islss3 simplbda ) CGHBAHBCIJZKDGHABOCDEOLFM
+      N $.
+
+    lsslss.t $e |- T = ( LSubSp ` X ) $.
+    $( The subspaces of a subspace are the smaller subspaces.  (Contributed by
+       Stefan O'Rear, 12-Dec-2014.) $)
+    lsslss $p |- ( ( W e. LMod /\ U e. S ) ->
+      ( V e. T <-> ( V e. S /\ V C_ U ) ) ) $=
+      ( clmod wcel wa cbs cfv wss cress co wb eqid wceq islss3 syl simpl lssssg
+      lsslmod ressbas2d sseq2d anbi1d sstr2 mpan9 biantrurd oveq1i simplr simpr
+      simpll ressabsg syl3anc eqtrid ad2antrr 3bitr4d pm5.32da biancomd 3bitr2d
+      a1i eleq1d ) EJKZCAKZLZDBKZDFMNZOZFDPQZJKZLZDCOZVMLZDAKZVOLVHFJKVIVNRACEF
+      GHUEBDVJFVLVLSVJSIUAUBVHVOVKVMVHCVJDVHCEMNZFEJFECPQZTVHGVDVRVRTVHVRSZVDVF
+      VGUCACVREJVTHUDZUFUGUHVHVPVQVOVHVOVMVQVHVOLZEDPQZJKZDVROZWDLZVMVQWBWEWDVH
+      CVROVOWEWADCVRUIUJUKWBVLWCJWBVLVSDPQZWCFVSDPGULWBVGVOVFWGWCTVFVGVOUMVHVOU
+      NVFVGVOUOCDEAJUPUQURVEVFVQWFRVGVOADVREWCWCSVTHUAUSUTVAVBVC $.
+  $}
+
+  ${
+    $d F a b c $.  $d W a b c j $.  $d B a b c $.  $d V a b c $.
+    $d .x. a b c $.  $d S a b c $.  $d U a b c j $.
+    islss4.f $e |- F = ( Scalar ` W ) $.
+    islss4.b $e |- B = ( Base ` F ) $.
+    islss4.v $e |- V = ( Base ` W ) $.
+    islss4.t $e |- .x. = ( .s ` W ) $.
+    islss4.s $e |- S = ( LSubSp ` W ) $.
+    $( A linear subspace is a subgroup which respects scalar multiplication.
+       (Contributed by Stefan O'Rear, 11-Dec-2014.)  (Revised by Mario
+       Carneiro, 19-Apr-2016.) $)
+    islss4 $p |- ( W e. LMod -> ( U e. S <-> ( U e. ( SubGrp ` W ) /\
+          A. a e. B A. b e. U ( a .x. b ) e. U ) ) ) $=
+      ( vj vc wcel cv wral wa clmod csubg cfv co lsssubg lssvscl ralrimivva jca
+      wss wex cplusg subgss ad2antrl c0g eqid subg0cl syl wi subgcl 3exp adantl
+      elex2 ralrimdv ralimdv impr w3a wb islssm adantr mpbir3and impbida ) GUAQ
+      ZDBQZDGUBUCQZHRZIRZCUDZDQZIDSZHASZTZVLVMTZVNVTBDGNUEWBVRHIADABCDEGVOVPJMK
+      NUFUGUHVLWATVMDFUIZORDQOUJZVQPRZGUKUCZUDDQZPDSZIDSZHASZVNWCVLVTFDGLULUMVN
+      WDVLVTVNGUNUCZDQWDDGWKWKUOUPOWKDVBUQUMVLVNVTWJVLVNTZVSWIHAWLVRWHIDWLVRWGP
+      DVNVRWEDQZWGURURVLVNVRWMWGWFDGVQWEWFUOZUSUTVAVCVDVDVEVLVMWCWDWJVFVGWAHAWF
+      BCDOEFGUAIPJKLWNMNVHVIVJVK $.
+  $}
+
+  ${
+    $d a b j k v x y z K $.  $d a b j k v x y z .x. $.  $d a b k v x y z V $.
+    $d k x F $.  $d a b k v x y z W $.  $d a b j k v x y z X $.
+    lss1d.v $e |- V = ( Base ` W ) $.
+    lss1d.f $e |- F = ( Scalar ` W ) $.
+    lss1d.t $e |- .x. = ( .s ` W ) $.
+    lss1d.k $e |- K = ( Base ` F ) $.
+    lss1d.s $e |- S = ( LSubSp ` W ) $.
+    $( One-dimensional subspace (or zero-dimensional if ` X ` is the zero
+       vector).  (Contributed by NM, 14-Jan-2014.)  (Proof shortened by Mario
+       Carneiro, 19-Jun-2014.) $)
+    lss1d $p |- ( ( W e. LMod /\ X e. V )
+        -> { v | E. k e. K v = ( k .x. X ) } e. S ) $=
+      ( wcel wa cfv co wceq cvv vx vj va vb vy vz clmod cplusg cv wrex cab csca
+      a1i cbs eqidd cvsca clss lmodvscl 3expa an32s eleq1a syl rexlimdva abssdv
+      wi wex c0g eqid lmod0cl elex2 adantr nfv nfre1 nfsab nfex vscaslid slotex
+      vex eqeltrid simpr ovexg mp3an2i elabrexg sylan2 expcom mpd eqeq1 rexbidv
+      exlimd w3a oveq1 eqeq2d cbvrexvw bitri anbi12i reeanv bitr4i cmulr simpll
+      simprr simprll lmodmcl syl3anc simprlr lmodacl simplr lmodvsdir lmodvsass
+      elab syl13anc oveq1d eqtr2d rspceeqv oveq2 oveq12 sylan eqeq1d syl5ibrcom
+      syl2anc expr com23 rexlimdvva biimtrid expcomd com24 3imp2 elabg ad2antrr
+      wb plusgslid mpbird simpl islssmd ) HUGOZIGOZPZUAFHUHQZBCAUIZDUIZICRZSZDF
+      UJZAUKZUBEGHUGUCUDEHULQSYPKUMFEUNQSYPMUMGHUNQSYPJUMYPYQUOCHUPQZSYPLUMBHUQ
+      QSYPNUMYPUUBAGYPUUAYRGOZDFYPYSFOZPYTGOZUUAUUEVEYNUUFYOUUGYNUUFYOUUGYSCEFG
+      HIJKLMURUSUTYTGYRVAVBVCVDYPUUFDVFZUBUIUUCOZUBVFZYNUUHYOYNEVGQZFOUUHEFHUUK
+      KMUUKVHVIDUUKFVJVBVKYPUUFUUJDYPDVLUUIDUBUUBDAUBUUADFVMVNVOUUFYPUUJUUFYPPY
+      TUUCOZUUJYPUUFYTTOZUULYSTOYPCTOZYOUUMDVRYNUUNYOYNCUUDTLHUPUGVPVQVSZVKYNYO
+      VTYSICTTGWAWBDAFYTTWCWDUBYTUUCVJVBWEWIWFYPUAUIZFOZUCUIZUUCOZUDUIZUUCOZWJZ
+      PUUPUURCRZUUTYQRZUUCOZUVDYTSZDFUJZYPUUQUUSUVAUVGYPUVAUUSUUQUVGYPUUSUVAUUQ
+      UVGVEZUUSUVAPZUURUEUIZICRZSZUUTUFUIZICRZSZPZUFFUJUEFUJZYPUVHUVIUVLUEFUJZU
+      VOUFFUJZPUVQUUSUVRUVAUVSUUSUURYTSZDFUJZUVRUUBUWAAUURUCVRZYRUURSUUAUVTDFYR
+      UURYTWGWHXIUVTUVLDUEFYSUVJSYTUVKUURYSUVJICWKWLWMWNUVAUUTYTSZDFUJZUVSUUBUW
+      DAUUTUDVRZYRUUTSUUAUWCDFYRUUTYTWGWHXIUWCUVODUFFYSUVMSYTUVNUUTYSUVMICWKWLW
+      MWNWOUVLUVOUEUFFFWPWQYPUVPUVHUEUFFFYPUVJFOZUVMFOZPZPUUQUVPUVGYPUWHUUQUVPU
+      VGVEYPUWHUUQPZPZUVGUVPUUPUVKCRZUVNYQRZYTSZDFUJZUWJUUPUVJEWRQZRZUVMEUHQZRZ
+      FOZUWLUWRICRZSUWNUWJYNUWPFOZUWGUWSYNYOUWIWSZUWJYNUUQUWFUXAUXBYPUWHUUQWTZY
+      PUWFUWGUUQXAZUWOEFHUUPUVJKMUWOVHZXBXCZYPUWFUWGUUQXDZUWQEFHUWPUVMKMUWQVHZX
+      EXCUWJUWTUWPICRZUVNYQRZUWLUWJYNUXAUWGYOUWTUXJSUXBUXFUXGYNYOUWIXFZYQUWQUWP
+      UVMCEFGHIJYQVHKLMUXHXGXJUWJUXIUWKUVNYQUWJYNUUQUWFYOUXIUWKSUXBUXCUXDUXKUUP
+      UVJCUWOEFGHIJKLMUXEXHXJXKXLDUWRFYTUWTUWLYSUWRICWKXMXSUVPUVFUWMDFUVPUVDUWL
+      YTUVLUVCUWKSUVOUVDUWLSUURUVKUUPCXNUVCUWKUUTUVNYQXOXPXQWHXRXTYAYBYCYDYEYFY
+      NUVEUVGYIZYOUVBYNUVDTOZUXLYNUVCTOZYQTOUUTTOZUXMUUPTOYNUUNUURTOZUXNUAVRUUO
+      UXPYNUWBUMUUPUURCTTTWAWBHUHUGYJVQUXOYNUWEUMUVCUUTYQTTTWAXCUUBUVGAUVDTYRUV
+      DSUUAUVFDFYRUVDYTWGWHYGVBYHYKYNYOYLYM $.
+  $}
+
+  ${
+    $d a b w x y A $.  $d a b x y S $.  $d a b w x y W $.
+    lssintcl.s $e |- S = ( LSubSp ` W ) $.
+    $( The intersection of an inhabited set of subspaces is a subspace.
+       (Contributed by NM, 8-Dec-2013.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lssintclm $p |- ( ( W e. LMod /\ A C_ S /\ E. w w e. A )
+        -> |^| A e. S ) $=
+      ( vx va vb vy clmod wcel wss cv cfv eqidd a1i wa eqid 3ad2ant1 cvv cplusg
+      wex w3a csca cbs cvsca cint clss wceq intssuni2m 3adant1 cpw lssssg velpw
+      cuni sylibr ssrdv sspwuni sylib sstrd c0g wral simpl1 simp2 sselda lss0cl
+      ex syl2anc ralrimiva wb lmod0vcl elintg syl elex2 adantlr simplr1 simplr2
+      mpbird co simpr elinti simplr3 lssclg syl113anc vex vscaslid slotex ovexg
+      sylc syl3anc plusgslid adantr simp1 islssmd ) DJKZBCLZAMZBKAUBZUCZFDUDNZU
+      ENZDUANZCDUFNZBUGZAWTDUENZDJGHWSWTOWSXAOWSXEOWSXBOWSXCOCDUHNUIWSEPWSXDCUO
+      ZXEWPWRXDXFLWOABCUJUKWOWPXFXELZWRWOCXEULZLXGWOICXHWOIMZCKZXIXHKZWOXJQXIXE
+      LXKCXIXEDJXERZEUMIXEUNUPVGUQCXEURUSSUTWSDVANZXDKZWQXDKAUBWSXNXMXIKZIBVBZW
+      SXOIBWSXIBKZQWOXJXOWOWPWRXQVCZWSBCXIWOWPWRVDVEZCXIDXMXMRZEVFVHVIWOWPXNXPV
+      JZWRWOXMXEKYAXEDXMXLXTVKIXMBXEVLVMSVRAXMXDVNVMWSFMZXAKZGMZXDKZHMZXDKZUCZQ
+      ZYBYDXCVSZYFXBVSZXDKZYKXIKZIBVBZYIYMIBYIXQQZWOXJYCYDXIKZYFXIKZYMWSXQWOYHX
+      RVOWSXQXJYHXSVOYCYEYGWSXQVPYOYEXQYPYCYEYGWSXQVQYIXQVTZYDBXIWAWIYOYGXQYQYC
+      YEYGWSXQWBYRYFBXIWAWIXAJXBCXCXIWTDYDYFYBWTRXARXBRXCREWCWDVIWSYLYNVJZYHWOW
+      PYSWRWOYKTKZYSWOYJTKZXBTKYFTKZYTWOYBTKZXCTKYDTKZUUAUUCWOFWEPDUFJWFWGUUDWO
+      GWEPYBYDXCTTTWHWJDUAJWKWGUUBWOHWEPYJYFXBTTTWHWJIYKBTVLVMSWLVRWOWPWRWMWN
+      $.
+
+    $d T w $.  $d U w $.
+    $( The intersection of two subspaces is a subspace.  (Contributed by NM,
+       7-Mar-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lssincl $p |- ( ( W e. LMod /\ T e. S /\ U e. S )
+         -> ( T i^i U ) e. S ) $=
+      ( vw clmod wcel w3a cpr cint cin wceq intprg 3adant1 wss wex simp1 prssi
+      cv prmg 3ad2ant2 lssintclm syl3anc eqeltrrd ) DGHZBAHZCAHZIZBCJZKZBCLZAUG
+      UHUKULMUFBCAANOUIUFUJAPZFTUJHFQZUKAHUFUGUHRUGUHUMUFBCASOUGUFUNUHFBCAUAUBF
+      UJADEUCUDUE $.
+  $}
+
+  $c LSpan $.
+
+  $( Extend class notation with span of a set of vectors. $)
+  clspn $a class LSpan $.
+
+  ${
+    $d w s t $.
+    $( Define span of a set of vectors of a left module or left vector space.
+       (Contributed by NM, 8-Dec-2013.) $)
+    df-lsp $a |- LSpan = ( w e. _V |-> ( s e. ~P ( Base ` w ) |->
+         |^| { t e. ( LSubSp ` w ) | s C_ t } ) ) $.
+  $}
+
+  ${
+    $d j p s t w S $.  $d s t U $.  $d p s t w V $.  $d j s w W $.
+    lspval.v $e |- V = ( Base ` W ) $.
+    lspval.s $e |- S = ( LSubSp ` W ) $.
+    lspval.n $e |- N = ( LSpan ` W ) $.
+    $( The span function for a left vector space (or a left module).
+       (Contributed by NM, 8-Dec-2013.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lspfval $p |- ( W e. X
+      -> N = ( s e. ~P V |-> |^| { t e. S | s C_ t } ) ) $=
+      ( vw wcel clspn cfv cpw cv crab cbs clss cvv wss cint cmpt df-lsp eqtr4di
+      wceq fveq2 pweqd rabeqdv inteqd mpteq12dv elex wfn funfvex funfni sylancr
+      basfn eqeltrid pwexd mptexd fvmptd3 eqtrid ) EFLZCEMNGDOZGPAPUAZABQZUBZUC
+      ZJVCKEGKPZRNZOZVEAVISNZQZUBZUCVHTMTKAGUDVIEUFZGVKVNVDVGVOVJDVOVJERNZDVIER
+      UGHUEUHVOVMVFVOVEAVLBVOVLESNBVIESUGIUEUIUJUKEFULZVCGVDVGTVCDTVCDVPTHVCRTU
+      METLVPTLZUQVQVRTERERUNUOUPURUSUTVAVB $.
+
+    $( The span function on a left module maps subsets to subspaces.
+       (Contributed by Stefan O'Rear, 12-Dec-2014.) $)
+    lspf $p |- ( W e. LMod -> N : ~P V --> S ) $=
+      ( vs vp vj clmod wcel cpw cv wss crab cint lspfval wa wex ssrab2 a1i wrex
+      simpl elpwi sseq2 rspcev syl2an rabn0m sylibr lssintclm syl3anc fmpt3d
+      lss1 ) DKLZHCMZHNZINZOZIAPZQZABIABCDKHEFGRUOUQUPLZSZUOUTAOZJNUTLJTZVAALUO
+      VBUDVDVCUSIAUAUBVCUSIAUCZVEUOCALUQCOZVFVBACDEFUNUQCUEUSVGICAURCUQUFUGUHUS
+      IJAUIUJJUTADFUKULUM $.
+
+    $( The span of a set of vectors (in a left module).  (Contributed by NM,
+       8-Dec-2013.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspval $p |- ( ( W e. LMod /\ U C_ V )
+       -> ( N ` U ) = |^| { t e. S | U C_ t } ) $=
+      ( vs clmod wcel wss cfv cv crab cint wceq cvv cbs cpw cmpt lspfval fveq1d
+      wa adantr eqid sseq1 rabbidv inteqd simpr wb basfn funfvex funfni sylancr
+      wfn elex eqeltrid elpw2g mpbird wrex lss1 sseq2 rspcev intexrabim fvmptd3
+      syl sylan eqtrd ) FKLZCEMZUEZCDNZCJEUAZJOZAOZMZABPZQZUBZNZCVQMZABPZQZVKVN
+      WBRVLVKCDWAABDEFKJGHIUCUDUFVMJCVTWEVOWASWAUGVPCRZVSWDWFVRWCABVPCVQUHUIUJV
+      MCVOLZVLVKVLUKVMESLWGVLULVMEFTNZSGVMTSUQFSLZWHSLZUMVKWIVLFKURUFWJSFTFTUNU
+      OUPUSCESUTVHVAVMWCABVBZWESLVKEBLVLWKBEFGHVCWCVLAEBVQECVDVEVIWCABVFVHVGVJ
+      $.
+
+    $( The span of a set of vectors is a subspace.  (Contributed by NM,
+       9-Dec-2013.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspcl $p |- ( ( W e. LMod /\ U C_ V ) -> ( N ` U ) e. S ) $=
+      ( clmod wcel wss wa cpw wf lspf adantr simpr cvv wb cbs cfv basfn funfvex
+      wfn elex funfni sylancr eqeltrid elpw2g syl mpbird ffvelcdmd ) EIJZBDKZLZ
+      DMZABCUMUPACNUNACDEFGHOPUOBUPJZUNUMUNQUODRJUQUNSUODETUAZRFUOTRUDERJZURRJZ
+      UBUMUSUNEIUEPUTRETETUCUFUGUHBDRUIUJUKUL $.
+
+    $( The span of a singleton is a subspace (frequently used special case of
+       ~ lspcl ).  (Contributed by NM, 17-Jul-2014.) $)
+    lspsncl $p |- ( ( W e. LMod /\ X e. V ) -> ( N ` { X } ) e. S ) $=
+      ( wcel clmod csn wss cfv snssi lspcl sylan2 ) ECIDJIEKZCLQBMAIECNAQBCDFGH
+      OP $.
+
+    lspprcl.w $e |- ( ph -> W e. LMod ) $.
+    lspprcl.x $e |- ( ph -> X e. V ) $.
+    lspprcl.y $e |- ( ph -> Y e. V ) $.
+    $( The span of a pair is a subspace (frequently used special case of
+       ~ lspcl ).  (Contributed by NM, 11-Apr-2015.) $)
+    lspprcl $p |- ( ph -> ( N ` { X , Y } ) e. S ) $=
+      ( clmod wcel cpr wss cfv prssd lspcl syl2anc ) AENOFGPZDQUBCRBOKAFGDLMSBU
+      BCDEHIJTUA $.
+
+    lsptpcl.z $e |- ( ph -> Z e. V ) $.
+    $( The span of an unordered triple is a subspace (frequently used special
+       case of ~ lspcl ).  (Contributed by NM, 22-May-2015.) $)
+    lsptpcl $p |- ( ph -> ( N ` { X , Y , Z } ) e. S ) $=
+      ( clmod wcel ctp wss cfv cpr csn df-tp prssd snssd unssd eqsstrid syl2anc
+      cun lspcl ) AEPQFGHRZDSUKCTBQLAUKFGUAZHUBZUIDFGHUCAULUMDAFGDMNUDAHDOUEUFU
+      GBUKCDEIJKUJUH $.
+  $}
+
+  ${
+    lspsnsubg.v $e |- V = ( Base ` W ) $.
+    lspsnsubg.n $e |- N = ( LSpan ` W ) $.
+    $( The span of a singleton is an additive subgroup (frequently used special
+       case of ~ lspcl ).  (Contributed by Mario Carneiro, 21-Apr-2016.) $)
+    lspsnsubg $p |- ( ( W e. LMod /\ X e. V ) ->
+        ( N ` { X } ) e. ( SubGrp ` W ) ) $=
+      ( clmod wcel csn cfv clss csubg eqid lspsncl lsssubg syldan ) CGHDBHDIAJZ
+      CKJZHQCLJHRABCDERMZFNRQCSOP $.
+  $}
+
+  ${
+    $d t S $.  $d t U $.  $d t W $.
+    lspid.s $e |- S = ( LSubSp ` W ) $.
+    lspid.n $e |- N = ( LSpan ` W ) $.
+    $( The span of a subspace is itself.  (Contributed by NM, 15-Dec-2013.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspid $p |- ( ( W e. LMod /\ U e. S ) -> ( N ` U ) = U ) $=
+      ( vt clmod wcel wa cfv cv wss crab cint cbs wceq eqid lssssg lspval eqtrd
+      syldan intmin adantl ) DHIZBAIZJBCKZBGLMGANOZBUEUFBDPKZMUGUHQABUIDHUIRZES
+      GABCUIDUJEFTUBUFUHBQUEGBAUCUDUA $.
+  $}
+
+  ${
+    $d t T $.  $d t U $.  $d t V $.  $d t W $.
+    lspss.v $e |- V = ( Base ` W ) $.
+    lspss.n $e |- N = ( LSpan ` W ) $.
+    $( A span is a set of vectors.  (Contributed by NM, 22-Feb-2014.)  (Revised
+       by Mario Carneiro, 19-Jun-2014.) $)
+    lspssv $p |- ( ( W e. LMod /\ U C_ V ) -> ( N ` U ) C_ V ) $=
+      ( clmod wcel wss cfv clss eqid lspcl lssssg syldan ) DGHACIABJZDKJZHPCIQA
+      BCDEQLZFMQPCDGERNO $.
+
+    $( Span preserves subset ordering.  (Contributed by NM, 11-Dec-2013.)
+       (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspss $p |- ( ( W e. LMod /\ U C_ V /\ T C_ U )
+          -> ( N ` T ) C_ ( N ` U ) ) $=
+      ( vt clmod wcel wss w3a cv clss cfv crab cint syl wceq lspval wa wi sstr2
+      simpl3 ss2rabdv intss simp1 simp3 simp2 sstrd syl2anc 3adant3 3sstr4d
+      eqid ) EIJZBDKZABKZLZAHMZKZHENOZPZQZBUSKZHVAPZQZACOZBCOZURVEVBKVCVFKURVDU
+      THVAURUSVAJZUAUQVDUTUBUOUPUQVIUDABUSUCRUEVEVBUFRURUOADKVGVCSUOUPUQUGURABD
+      UOUPUQUHUOUPUQUIUJHVAACDEFVAUNZGTUKUOUPVHVFSUQHVABCDEFVJGTULUM $.
+
+    $( A set of vectors is a subset of its span.  (Contributed by NM,
+       6-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspssid $p |- ( ( W e. LMod /\ U C_ V ) -> U C_ ( N ` U ) ) $=
+      ( vt clmod wcel wss wa clss cfv crab cint ssintub eqid lspval sseqtrrid
+      cv ) DHIACJKAGTJGDLMZNOAABMGAUAPGUAABCDEUAQFRS $.
+
+    $( The span of a set of vectors is idempotent.  (Contributed by NM,
+       22-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspidm $p |- ( ( W e. LMod /\ U C_ V )
+                  -> ( N ` ( N ` U ) ) = ( N ` U ) ) $=
+      ( clmod wcel wss cfv clss wceq eqid lspcl lspid syldan ) DGHACIABJZDKJZHQ
+      BJQLRABCDERMZFNRQBDSFOP $.
+
+    $( The span of union is the span of the union of spans.  (Contributed by
+       NM, 22-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspun $p |- ( ( W e. LMod /\ T C_ V /\ U C_ V )
+       -> ( N ` ( T u. U ) ) = ( N ` ( ( N ` T ) u. ( N ` U ) ) ) ) $=
+      ( clmod wcel wss w3a cun cfv simp1 unssd lspss syl3anc syl2anc lspssid
+      a1i simp2 simp3 ssun1 ssun2 lspssv sstrd unss12 wceq lspidm sseqtrd eqssd
+      3imp3i2an ) EHIZADJZBDJZKZABLZCMZACMZBCMZLZCMZUPUMVADJUQVAJZURVBJUMUNUONZ
+      UPVAURDUPUSUTURUPUMUQDJZAUQJZUSURJVDUPABDUMUNUOUAZUMUNUOUBOZVFUPABUCTAUQC
+      DEFGPQUPUMVEBUQJZUTURJVDVHVIUPBAUDTBUQCDEFGPQOZUPUMVEURDJZVDVHUQCDEFGUERZ
+      UFUMUNUOAUSJZBUTJVCUPUMUNVMVDVGACDEFGSRBCDEFGSAUSBUTUGULUQVACDEFGPQUPVBUR
+      CMZURUPUMVKVAURJVBVNJVDVLVJVAURCDEFGPQUPUMVEVNURUHVDVHUQCDEFGUIRUJUK $.
+  $}
+
+  ${
+    lspssp.s $e |- S = ( LSubSp ` W ) $.
+    lspssp.n $e |- N = ( LSpan ` W ) $.
+    $( If a set of vectors is a subset of a subspace, then the span of those
+       vectors is also contained in the subspace.  (Contributed by Mario
+       Carneiro, 4-Sep-2014.) $)
+    lspssp $p |- ( ( W e. LMod /\ U e. S /\ T C_ U ) -> ( N ` T ) C_ U ) $=
+      ( clmod wcel wss w3a cfv eqid lssssg 3adant3 lspss syld3an2 wceq lspid
+      cbs sseqtrd ) EHIZCAIZBCJZKBDLZCDLZCUBCETLZJZUCUDUEUFJUBUCUHUDACUGEHUGMZF
+      NOBCDUGEUIGPQUBUCUFCRUDACDEFGSOUA $.
+  $}
+
+  ${
+    lspsnss.s $e |- S = ( LSubSp ` W ) $.
+    lspsnss.n $e |- N = ( LSpan ` W ) $.
+    $( The span of the singleton of a subspace member is included in the
+       subspace.  (Contributed by NM, 9-Apr-2014.)  (Revised by Mario Carneiro,
+       4-Sep-2014.) $)
+    lspsnss $p |- ( ( W e. LMod /\ U e. S /\ X e. U )
+            -> ( N ` { X } ) C_ U ) $=
+      ( wcel clmod csn wss cfv snssi lspssp syl3an3 ) EBHDIHBAHEJZBKPCLBKEBMAPB
+      CDFGNO $.
+
+    lspsnel3.w $e |- ( ph -> W e. LMod ) $.
+    lspsnel3.u $e |- ( ph -> U e. S ) $.
+    lspsnel3.x $e |- ( ph -> X e. U ) $.
+    lspsnel3.y $e |- ( ph -> Y e. ( N ` { X } ) ) $.
+    $( A member of the span of the singleton of a vector is a member of a
+       subspace containing the vector.  (Contributed by NM, 4-Jul-2014.) $)
+    lspsnel3 $p |- ( ph -> Y e. U ) $=
+      ( csn cfv clmod wcel wss lspsnss syl3anc sseldd ) AFNDOZCGAEPQCBQFCQUBCRJ
+      KLBCDEFHISTMUA $.
+  $}
+
+  ${
+    lspprss.s $e |- S = ( LSubSp ` W ) $.
+    lspprss.n $e |- N = ( LSpan ` W ) $.
+    lspprss.w $e |- ( ph -> W e. LMod ) $.
+    lspprss.u $e |- ( ph -> U e. S ) $.
+    lspprss.x $e |- ( ph -> X e. U ) $.
+    lspprss.y $e |- ( ph -> Y e. U ) $.
+    $( The span of a pair of vectors in a subspace belongs to the subspace.
+       (Contributed by NM, 12-Jan-2015.) $)
+    lspprss $p |- ( ph -> ( N ` { X , Y } ) C_ U ) $=
+      ( clmod wcel cpr wss cfv prssd lspssp syl3anc ) AENOCBOFGPZCQUBDRCQJKAFGC
+      LMSBUBCDEHITUA $.
+  $}
+
+  ${
+    lspsnid.v $e |- V = ( Base ` W ) $.
+    lspsnid.n $e |- N = ( LSpan ` W ) $.
+    $( A vector belongs to the span of its singleton.  (Contributed by NM,
+       9-Apr-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspsnid $p |- ( ( W e. LMod /\ X e. V ) -> X e. ( N ` { X } ) ) $=
+      ( clmod wcel wa csn cfv wss snssi lspssid sylan2 wb snssg adantl mpbird )
+      CGHZDBHZIDDJZAKZHZUBUCLZUATUBBLUEDBMUBABCEFNOUAUDUEPTDUCBQRS $.
+  $}
+
+  ${
+    lspsnel5.v $e |- V = ( Base ` W ) $.
+    lspsnel5.s $e |- S = ( LSubSp ` W ) $.
+    lspsnel5.n $e |- N = ( LSpan ` W ) $.
+    lspsnel5.w $e |- ( ph -> W e. LMod ) $.
+    lspsnel5.a $e |- ( ph -> U e. S ) $.
+    $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
+       generates.  (Contributed by NM, 8-Aug-2014.)  (Revised by Mario
+       Carneiro, 8-Jan-2015.) $)
+    lspsnel6 $p |- ( ph -> ( X e. U <-> ( X e. V /\ ( N ` { X } ) C_ U ) ) ) $=
+      ( wcel csn cfv wss wa clmod adantr syl3anc simpr lsselg lspsnss jca sylan
+      lspsnid ssel syl5com impr impbida ) AGCMZGEMZGNDOZCPZQAUKQZULUNUOFRMZCBMZ
+      UKULAUPUKKSZAUQUKLSZAUKUAZRBCEFGHIUBTUOUPUQUKUNURUSUTBCDFGIJUCTUDAULUNUKA
+      ULQGUMMZUNUKAUPULVAKDEFGHJUFUEUMCGUGUHUIUJ $.
+
+    lspsnel5.x $e |- ( ph -> X e. V ) $.
+    $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
+       generates.  (Contributed by NM, 8-Aug-2014.) $)
+    lspsnel5 $p |- ( ph -> ( X e. U <-> ( N ` { X } ) C_ U ) ) $=
+      ( wcel csn cfv wss lspsnel6 mpbirand ) AGCNGENGODPCQMABCDEFGHIJKLRS $.
+  $}
+
+  ${
+    lspsnel5a.s $e |- S = ( LSubSp ` W ) $.
+    lspsnel5a.n $e |- N = ( LSpan ` W ) $.
+    lspsnel5a.w $e |- ( ph -> W e. LMod ) $.
+    lspsnel5a.a $e |- ( ph -> U e. S ) $.
+    lspsnel5a.x $e |- ( ph -> X e. U ) $.
+    $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
+       generates.  (Contributed by NM, 20-Feb-2015.) $)
+    lspsnel5a $p |- ( ph -> ( N ` { X } ) C_ U ) $=
+      ( wcel csn cfv wss cbs eqid clmod lsselg syl3anc lspsnel5 mpbid ) AFCLZFM
+      DNCOKABCDEPNZEFUDQZGHIJAERLCBLUCFUDLIJKRBCUDEFUEGSTUAUB $.
+  $}
+
+  ${
+    lspprid.v $e |- V = ( Base ` W ) $.
+    lspprid.n $e |- N = ( LSpan ` W ) $.
+    lspprid.w $e |- ( ph -> W e. LMod ) $.
+    lspprid.x $e |- ( ph -> X e. V ) $.
+    lspprid.y $e |- ( ph -> Y e. V ) $.
+    $( A member of a pair of vectors belongs to their span.  (Contributed by
+       NM, 14-May-2015.) $)
+    lspprid1 $p |- ( ph -> X e. ( N ` { X , Y } ) ) $=
+      ( cpr cfv wcel csn wss clmod prssd snsspr1 a1i lspss syl3anc clss lspprcl
+      eqid lspsnel5 mpbird ) AEEFLZBMZNEOZBMUIPZADQNUHCPUJUHPZUKIAEFCJKRULAEFST
+      UJUHBCDGHUAUBADUCMZUIBCDEGUMUEZHIAUMBCDEFGUNHIJKUDJUFUG $.
+
+    $( A member of a pair of vectors belongs to their span.  (Contributed by
+       NM, 14-May-2015.) $)
+    lspprid2 $p |- ( ph -> Y e. ( N ` { X , Y } ) ) $=
+      ( cpr cfv lspprid1 prcom fveq2i eleqtrdi ) AFFELZBMEFLZBMABCDFEGHIKJNRSBF
+      EOPQ $.
+  $}
+
+  ${
+    lspprvacl.v $e |- V = ( Base ` W ) $.
+    lspprvacl.p $e |- .+ = ( +g ` W ) $.
+    lspprvacl.n $e |- N = ( LSpan ` W ) $.
+    lspprvacl.w $e |- ( ph -> W e. LMod ) $.
+    lspprvacl.x $e |- ( ph -> X e. V ) $.
+    lspprvacl.y $e |- ( ph -> Y e. V ) $.
+    $( The sum of two vectors belongs to their span.  (Contributed by NM,
+       20-May-2015.) $)
+    lspprvacl $p |- ( ph -> ( X .+ Y ) e. ( N ` { X , Y } ) ) $=
+      ( clmod wcel cpr cfv clss co eqid lspprcl lspprid1 lspprid2 syl22anc
+      lssvacl ) AENOFGPCQZERQZOFUFOGUFOFGBSUFOKAUGCDEFGHUGTZJKLMUAACDEFGHJKLMUB
+      ACDEFGHJKLMUCBUGUFEFGIUHUEUD $.
+  $}
+
+  ${
+    $d x y N $.  $d x y U $.  $d x y ph $.
+    lssats2.s $e |- S = ( LSubSp ` W ) $.
+    lssats2.n $e |- N = ( LSpan ` W ) $.
+    lssats2.w $e |- ( ph -> W e. LMod ) $.
+    lssats2.u $e |- ( ph -> U e. S ) $.
+    $( A way to express atomisticity (a subspace is the union of its atoms).
+       (Contributed by NM, 3-Feb-2015.) $)
+    lssats2 $p |- ( ph -> U = U_ x e. U ( N ` { x } ) ) $=
+      ( vy cv csn cfv wcel wa simpr clmod adantr syl2anc ciun wrex eqid syl3anc
+      cbs lsselg lspsnid sneq fveq2d eleq2d rspcev ex lspsnel5a sseld rexlimdva
+      weq impbid eliun bitr4di eqrdv ) AKDBDBLZMZENZUAZAKLZDOZVEVCOZBDUBZVEVDOA
+      VFVHAVFVHAVFPZVFVEVEMZENZOZVHAVFQZVIFROZVEFUENZOZVLAVNVFISZVIVNDCOZVFVPVQ
+      AVRVFJSVMRCDVOFVEVOUCZGUFUDEVOFVEVSHUGTVGVLBVEDBKUPZVCVKVEVTVBVJEVAVEUHUI
+      UJUKTULAVGVFBDAVADOZPZVCDVEWBCDEFVAGHAVNWAISAVRWAJSAWAQUMUNUOUQBVEDVCURUS
+      UT $.
+  $}
+
+  ${
+    lspsnvsel.v $e |- V = ( Base ` W ) $.
+    lspsnvsel.t $e |- .x. = ( .s ` W ) $.
+    lspsnvsel.f $e |- F = ( Scalar ` W ) $.
+    lspsnvsel.k $e |- K = ( Base ` F ) $.
+    lspsnvsel.n $e |- N = ( LSpan ` W ) $.
+    lspsnvsel.w $e |- ( ph -> W e. LMod ) $.
+    lspsnvsel.a $e |- ( ph -> A e. K ) $.
+    lspsnvsel.x $e |- ( ph -> X e. V ) $.
+    $( A scalar product with a vector belongs to the span of its singleton.
+       (Contributed by NM, 2-Jul-2014.) $)
+    lspsneli $p |- ( ph -> ( A .x. X ) e. ( N ` { X } ) ) $=
+      ( wcel cfv syl2anc clmod csn clss eqid lspsncl lspsnid lssvscl syl22anc
+      co ) AHUARZIUBFSZHUCSZRZBERIUKRZBICUIUKROAUJIGRZUMOQULFGHIJULUDZNUETPAUJU
+      OUNOQFGHIJNUFTEULCUKDHBILKMUPUGUH $.
+  $}
+
+  ${
+    $d k F $.  $d k v K $.  $d k v N $.  $d k v U $.  $d k v V $.  $d k v W $.
+    $d k R $.  $d k v .x. $.  $d k v X $.
+    lspsn.f $e |- F = ( Scalar ` W ) $.
+    lspsn.k $e |- K = ( Base ` F ) $.
+    lspsn.v $e |- V = ( Base ` W ) $.
+    lspsn.t $e |- .x. = ( .s ` W ) $.
+    lspsn.n $e |- N = ( LSpan ` W ) $.
+    $( Span of the singleton of a vector.  (Contributed by NM, 14-Jan-2014.)
+       (Proof shortened by Mario Carneiro, 19-Jun-2014.) $)
+    lspsn $p |- ( ( W e. LMod /\ X e. V )
+        -> ( N ` { X } ) = { v | E. k e. K v = ( k .x. X ) } ) $=
+      ( wcel wa cfv cv wceq adantr clmod csn wrex cab clss eqid simpl lss1d cur
+      co lmod1cl lmodvs1 eqcomd oveq1 rspceeqv syl2an2r wb eqeq1 rexbidv adantl
+      elabg mpbird lspsnel5a wi lspsncl simpr lspsnid syl22anc eleq1a rexlimdva
+      lssvscl syl abssdv eqssd ) HUAOZIGOZPZIUBFQZARZCRZIBUJZSZCEUCZAUDZVQHUEQZ
+      WDFHIWEUFZNVOVPUGZAWEBCDEGHILJMKWFUHVQIWDOZIWASZCEUCZVODUIQZEOVPIWKIBUJZS
+      WJWKDEHJKWKUFZUKVQWLIBWKDGHILJMWMULUMCWKEWAWLIVTWKIBUNUOUPVPWHWJUQVOWCWJA
+      IGVSISWBWICEVSIWAURUSVAUTVBVCVQWCAVRVQWBVSVROZCEVQVTEOZPZWAVROZWBWNVDWPVO
+      VRWEOZWOIVROZWQVQVOWOWGTVQWRWOWEFGHILWFNVETVQWOVFVQWSWOFGHILNVGTEWEBVRDHV
+      TIJMKWFVKVHWAVRVSVIVLVJVMVN $.
+
+    $( Member of span of the singleton of a vector.  (Contributed by NM,
+       22-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lspsnel $p |- ( ( W e. LMod /\ X e. V )
+       -> ( U e. ( N ` { X } ) <-> E. k e. K U = ( k .x. X ) ) ) $=
+      ( vv clmod wcel wa wceq cvv csn cfv cv co wrex cab lspsn eleq2d wi wb vex
+      simpr cvsca vscaslid slotex eqeltrid ovexg mp3an2ani eqeltrd ex rexlimdvw
+      adantr eqeq1 rexbidv elab3g syl bitrd ) HPQZIGQZRZBIUAFUBZQBOUCZCUCZIAUDZ
+      SZCEUEZOUFZQZBVNSZCEUEZVJVKVQBOACDEFGHIJKLMNUGUHVJVTBTQZUIVRVTUJVJVSWACEV
+      JVSWAVJVSRBVNTVJVSULVJVNTQZVSVMTQVHATQVIVIWBCUKVHAHUMUBTMHUMPUNUOUPVHVIUL
+      VMIATTGUQURVBUSUTVAVPVTOBTVLBSVOVSCEVLBVNVCVDVEVFVG $.
+
+    $( Span of a scalar product of a singleton.  (Contributed by NM,
+       23-Apr-2014.)  (Proof shortened by Mario Carneiro, 4-Sep-2014.) $)
+    lspsnvsi $p |- ( ( W e. LMod /\ R e. K /\ X e. V )
+        -> ( N ` { ( R .x. X ) } ) C_ ( N ` { X } ) ) $=
+      ( clmod wcel w3a clss cfv csn co eqid simp1 wss simp3 snssd lspcl syl2anc
+      simp2 lspsneli lspsnel5a ) GNOZADOZHFOZPZGQRZHSZERZEGAHBTUOUAZMUKULUMUBZU
+      NUKUPFUCUQUOOUSUNHFUKULUMUDZUEUOUPEFGKURMUFUGUNABCDEFGHKLIJMUSUKULUMUHUTU
+      IUJ $.
+  $}
+
+  ${
+    $d k K $.  $d k N $.  $d k S $.  $d k V $.  $d k W $.  $d k X $.  $d k Y $.
+    $d k .x. $.
+    lspsnss2.v $e |- V = ( Base ` W ) $.
+    lspsnss2.s $e |- S = ( Scalar ` W ) $.
+    lspsnss2.k $e |- K = ( Base ` S ) $.
+    lspsnss2.t $e |- .x. = ( .s ` W ) $.
+    lspsnss2.n $e |- N = ( LSpan ` W ) $.
+    lspsnss2.w $e |- ( ph -> W e. LMod ) $.
+    lspsnss2.x $e |- ( ph -> X e. V ) $.
+    lspsnss2.y $e |- ( ph -> Y e. V ) $.
+    $( Comparable spans of singletons must have proportional vectors.
+       (Contributed by NM, 7-Jun-2015.) $)
+    lspsnss2 $p |- ( ph ->
+ ( ( N ` { X } ) C_ ( N ` { Y } ) <-> E. k e. K X = ( k .x. Y ) ) ) $=
+      ( cfv wcel csn wss cv co wceq wrex clss clmod lspsncl syl2anc lspsnel5 wb
+      eqid lspsnel bitr3d ) AIJUAFSZTZIUAFSUPUBIDUCJCUDUEDEUFZAHUGSZUPFGHIKUSUM
+      ZOPAHUHTZJGTZUPUSTPRUSFGHJKUTOUIUJQUKAVAVBUQURULPRCIDBEFGHJLMKNOUNUJUO $.
+  $}
+
+  ${
+    lspsnneg.v $e |- V = ( Base ` W ) $.
+    lspsnneg.m $e |- M = ( invg ` W ) $.
+    lspsnneg.n $e |- N = ( LSpan ` W ) $.
+    $( Negation does not change the span of a singleton.  (Contributed by NM,
+       24-Apr-2014.)  (Proof shortened by Mario Carneiro, 19-Jun-2014.) $)
+    lspsnneg $p |- ( ( W e. LMod /\ X e. V )
+        -> ( N ` { ( M ` X ) } ) = ( N ` { X } ) ) $=
+      ( wcel cfv csn co eqid lmodvneg1 sneqd fveq2d wss cgrp lspsnvsi syl3anc
+      clmod wa csca cur cminusg cvsca cbs simpl lmodfgrp lmod1cl syl2anc adantr
+      grpinvcl simpr wceq lmodvnegcl syldan lmodgrp grpinvinv sylan eqtrd eqssd
+      eqsstrrd ) DUAIZECIZUBZEAJZKZBJZEKZBJZVFVIDUCJZUDJZVLUEJZJZEDUFJZLZKZBJZV
+      KVFVRVHBVFVQVGVPVMVLVNACDEFGVLMZVPMZVMMZVNMZNOPVFVDVOVLUGJZIZVEVSVKQVDVEU
+      HZVDWEVEVDVLRIVMWDIWEVLDVTUIVMVLWDDVTWDMZWBUJWDVLVNVMWGWCUMUKULZVDVEUNVOV
+      PVLWDBCDEVTWGFWAHSTVCVFVKVOVGVPLZKZBJZVIVFWJVJBVFWIEVFWIVGAJZEVDVEVGCIZWI
+      WLUOACDEFGUPZVPVMVLVNACDVGFGVTWAWBWCNUQVDDRIVEWLEUODURCDAEFGUSUTVAOPVFVDW
+      EWMWKVIQWFWHWNVOVPVLWDBCDVGVTWGFWAHSTVCVB $.
+  $}
+
+  ${
+    lspsnsub.v $e |- V = ( Base ` W ) $.
+    lspsnsub.s $e |- .- = ( -g ` W ) $.
+    lspsnsub.n $e |- N = ( LSpan ` W ) $.
+    lspsnsub.w $e |- ( ph -> W e. LMod ) $.
+    lspsnsub.x $e |- ( ph -> X e. V ) $.
+    lspsnsub.y $e |- ( ph -> Y e. V ) $.
+    $( Swapping subtraction order does not change the span of a singleton.
+       (Contributed by NM, 4-Apr-2015.) $)
+    lspsnsub $p |- ( ph -> ( N ` { ( X .- Y ) } ) = ( N ` { ( Y .- X ) } ) ) $=
+      ( co cminusg cfv csn wcel wceq syl3anc clmod lmodvsubcl eqid syl2anc cgrp
+      lspsnneg lmodgrp syl grpinvsub sneqd fveq2d eqtr3d ) AFGBNZEOPZPZQZCPZUMQ
+      CPZGFBNZQZCPAEUARZUMDRZUQURSKAVAFDRZGDRZVBKLMBDEFGHIUBTUNCDEUMHUNUCZJUFUD
+      AUPUTCAUOUSAEUERZVCVDUOUSSAVAVFKEUGUHLMDEBUNFGHIVEUITUJUKUL $.
+  $}
+
+  ${
+    lspsn0.z $e |- .0. = ( 0g ` W ) $.
+    lspsn0.n $e |- N = ( LSpan ` W ) $.
+    $( Span of the singleton of the zero vector.  (Contributed by NM,
+       15-Jan-2014.)  (Proof shortened by Mario Carneiro, 19-Jun-2014.) $)
+    lspsn0 $p |- ( W e. LMod -> ( N ` { .0. } ) = { .0. } ) $=
+      ( clmod wcel csn clss cfv wceq eqid lsssn0 lspid mpdan ) BFGCHZBIJZGPAJPK
+      QBCDQLZMQPABRENO $.
+
+    $( Span of the empty set.  (Contributed by Mario Carneiro, 5-Sep-2014.) $)
+    lsp0 $p |- ( W e. LMod -> ( N ` (/) ) = { .0. } ) $=
+      ( clmod wcel c0 cfv csn clss wss lsssn0 0ss lspssp mp3an3 mpdan cbs lspcl
+      eqid mpan2 lss0ss eqssd ) BFGZHAIZCJZUDUFBKIZGZUEUFLZUGBCDUGTZMUDUHHUFLUI
+      UFNUGHUFABUJEOPQUDUEUGGZUFUELUDHBRIZLUKULNUGHAULBULTUJESUAUGBUECDUJUBQUC
+      $.
+
+    $( Union of the span of the empty set.  (Contributed by NM,
+       14-Mar-2015.) $)
+    lspuni0 $p |- ( W e. LMod -> U. ( N ` (/) ) = .0. ) $=
+      ( clmod wcel cfv cuni csn lsp0 unieqd cbs wceq eqid lmod0vcl unisng eqtrd
+      c0 syl ) BFGZSAHZICJZIZCUAUBUCABCDEKLUACBMHZGUDCNUEBCUEODPCUEQTR $.
+  $}
+
+  ${
+    lspun0.v $e |- V = ( Base ` W ) $.
+    lspun0.o $e |- .0. = ( 0g ` W ) $.
+    lspun0.n $e |- N = ( LSpan ` W ) $.
+    lspun0.w $e |- ( ph -> W e. LMod ) $.
+    lspun0.x $e |- ( ph -> X C_ V ) $.
+    $( The span of a union with the zero subspace.  (Contributed by NM,
+       22-May-2015.) $)
+    lspun0 $p |- ( ph -> ( N ` ( X u. { .0. } ) ) = ( N ` X ) ) $=
+      ( csn cun cfv wcel wss wceq syl syl2anc eqtrd clmod lmod0vcl snssd lspsn0
+      lspun syl3anc uneq2d clss eqid lspcl lss0ss ssequn2 sylib fveq2d lspidm )
+      AEFLZMBNZEBNZUPBNZMZBNZURADUAOZECPZUPCPUQVAQJKAFCAVBFCOJCDFGHUBRUCEUPBCDG
+      IUEUFAVAURBNZURAUTURBAUTURUPMZURAUSUPURAVBUSUPQJBDFHIUDRUGAUPURPZVEURQAVB
+      URDUHNZOZVFJAVBVCVHJKVGEBCDGVGUIZIUJSVGDURFHVIUKSUPURULUMTUNAVBVCVDURQJKE
+      BCDGIUOSTT $.
+  $}
+
+  ${
+    lspsneq0.v $e |- V = ( Base ` W ) $.
+    lspsneq0.z $e |- .0. = ( 0g ` W ) $.
+    lspsneq0.n $e |- N = ( LSpan ` W ) $.
+    $( Span of the singleton is the zero subspace iff the vector is zero.
+       (Contributed by NM, 27-Apr-2014.)  (Revised by Mario Carneiro,
+       19-Jun-2014.) $)
+    lspsneq0 $p |- ( ( W e. LMod /\ X e. V )
+         -> ( ( N ` { X } ) = { .0. } <-> X = .0. ) ) $=
+      ( clmod wcel wa csn cfv wceq lspsnid eleq2 syl5ibcom elsni syl6 lspsn0
+      adantr sneq fveqeq2d syl5ibrcom impbid ) CIJZDBJZKZDLZAMZELZNZDENZUHULDUK
+      JZUMUHDUJJULUNABCDFHOUJUKDPQDERSUHULUMUKAMUKNZUFUOUGACEGHTUAUMUIUKUKADEUB
+      UCUDUE $.
+  $}
+
+  ${
+    lspsneq0b.v $e |- V = ( Base ` W ) $.
+    lspsneq0b.o $e |- .0. = ( 0g ` W ) $.
+    lspsneq0b.n $e |- N = ( LSpan ` W ) $.
+    lspsneq0b.w $e |- ( ph -> W e. LMod ) $.
+    lspsneq0b.x $e |- ( ph -> X e. V ) $.
+    lspsneq0b.y $e |- ( ph -> Y e. V ) $.
+    lspsneq0b.e $e |- ( ph -> ( N ` { X } ) = ( N ` { Y } ) ) $.
+    $( Equal singleton spans imply both arguments are zero or both are nonzero.
+       (Contributed by NM, 21-Mar-2015.) $)
+    lspsneq0b $p |- ( ph -> ( X = .0. <-> Y = .0. ) ) $=
+      ( wceq wa csn cfv adantr wcel clmod lspsneq0 syl2anc biimpar eqtr3d mpbid
+      wb eqtrd impbida ) AEGOZFGOZAUJPZFQBRZGQZOZUKULEQBRZUMUNAUPUMOZUJNSAUPUNO
+      ZUJADUATZECTURUJUGZKLBCDEGHIJUBUCZUDUEAUOUKUGZUJAUSFCTVBKMBCDFGHIJUBUCZSU
+      FAUKPZURUJVDUPUMUNAUQUKNSAUOUKVCUDUHAUTUKVASUFUI $.
+  $}
+
+  ${
+    lmodindp1.v $e |- V = ( Base ` W ) $.
+    lmodindp1.p $e |- .+ = ( +g ` W ) $.
+    lmodindp1.o $e |- .0. = ( 0g ` W ) $.
+    lmodindp1.n $e |- N = ( LSpan ` W ) $.
+    lmodindp1.w $e |- ( ph -> W e. LMod ) $.
+    lmodindp1.x $e |- ( ph -> X e. V ) $.
+    lmodindp1.y $e |- ( ph -> Y e. V ) $.
+    lmodindp1.q $e |- ( ph -> ( N ` { X } ) =/= ( N ` { Y } ) ) $.
+    $( Two independent (non-colinear) vectors have nonzero sum.  (Contributed
+       by NM, 22-Apr-2015.) $)
+    lmodindp1 $p |- ( ph -> ( X .+ Y ) =/= .0. ) $=
+      ( csn cfv wceq wcel wne co wa cminusg eqid lspsnneg syl2anc eqcomd adantr
+      clmod cgrp wb lmodgrp syl grpinvid1 syl3anc biimpar sneqd fveq2d eqtrd ex
+      necon3d mpd ) AFQCRZGQZCRZUAFGBUBZHUAPAVGHVDVFAVGHSZVDVFSAVHUCZVDFEUDRZRZ
+      QZCRZVFAVDVMSVHAVMVDAEUJTZFDTZVMVDSMNVJCDEFIVJUEZLUFUGUHUIVIVLVECVIVKGAVK
+      GSZVHAEUKTZVOGDTVQVHULAVNVRMEUMUNNODBEVJFGHIJKVPUOUPUQURUSUTVAVBVC $.
+  $}
+
+  ${
+    lsslsp.x $e |- X = ( W |`s U ) $.
+    lsslsp.m $e |- M = ( LSpan ` W ) $.
+    lsslsp.n $e |- N = ( LSpan ` X ) $.
+    lsslsp.l $e |- L = ( LSubSp ` W ) $.
+    $( Spans in submodules correspond to spans in the containing module.
+       (Contributed by Stefan O'Rear, 12-Dec-2014.)  TODO:  Shouldn't we swap
+       ` M `` G ` and ` N `` G ` since we are computing a property of
+       ` N `` G ` ?  (Like we say sin 0 = 0 and not 0 = sin 0.) - NM
+       15-Mar-2015. $)
+    lsslsp $p |- ( ( W e. LMod /\ U e. L /\ G C_ U ) ->
+      ( M ` G ) = ( N ` G ) ) $=
+      ( clmod wcel wss cfv wa 3adant3 eqid syl2anc lspssp w3a simp1 cbs lsslmod
+      clss simp3 cress co a1i eqidd lssssg ressbas2d sseqtrd lspcl lsslss mpbid
+      wceq wb simpld lspssid syl3anc sstrd mpbir2and eqssd ) FLMZACMZBANZUAZBDO
+      ZBEOZVHVEVJCMZBVJNZVIVJNVEVFVGUBZVHVKVJANZVHVJGUEOZMZVKVNPZVHGLMZBGUCOZNZ
+      VPVEVFVRVGCAFGHKUDQZVHBAVSVEVFVGUFZVHAFUCOZGFLGFAUGUHUQVHHUIVHWCUJVMVEVFA
+      WCNVGCAWCFLWCRZKUKQZULUMZVOBEVSGVSRZVORZJUNSVEVFVPVQURVGCVOAVJFGHKWHUOQUP
+      USVHVRVTVLWAWFBEVSGWGJUTSCBVJDFKITVAVHVRVIVOMZBVINZVJVINWAVHWIVICMZVIANZV
+      HVEBWCNZWKVMVHBAWCWBWEVBZCBDWCFWDKIUNSCBADFKITVEVFWIWKWLPURVGCVOAVIFGHKWH
+      UOQVCVHVEWMWJVMWNBDWCFWDIUTSVOBVIEGWHJTVAVD $.
+  $}
+
+  ${
+    lss0v.x $e |- X = ( W |`s U ) $.
+    lss0v.o $e |- .0. = ( 0g ` W ) $.
+    lss0v.z $e |- Z = ( 0g ` X ) $.
+    lss0v.l $e |- L = ( LSubSp ` W ) $.
+    $( The zero vector in a submodule equals the zero vector in the including
+       module.  (Contributed by NM, 15-Mar-2015.) $)
+    lss0v $p |- ( ( W e. LMod /\ U e. L ) -> Z = .0. ) $=
+      ( clmod wcel csn cuni c0 clspn cfv wceq eqid lsp0 wa lsslsp mp3an3 adantr
+      wss 0ss lsslmod syl 3eqtr3rd unieqd cbs lmod0vcl unisng 3syl 3eqtr3d ) CK
+      LZABLZUAZFMZNZEMZNZFEURUSVAUROCPQZQZODPQZQZVAUSUPUQOAUEVDVFRAUFAOBVCVECDG
+      VCSZVESZJUBUCUPVDVARUQVCCEHVGTUDURDKLZVFUSRBACDGJUGZVEDFIVHTUHUIUJURVIFDU
+      KQZLUTFRVJVKDFVKSIULFVKUMUNUPVBERZUQUPECUKQZLVLVMCEVMSHULEVMUMUHUDUO $.
+  $}
+
+  ${
+    $d a b x y z B $.  $d a b s t x y z K $.  $d a b s x y z ph $.  $d x y W $.
+    $d a b s t x y z L $.  $d a b x y z P $.  $d a b j s z $.
+    lsspropd.b1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    lsspropd.b2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    lsspropd.w $e |- ( ph -> B C_ W ) $.
+    lsspropd.p $e |- ( ( ph /\ ( x e. W /\ y e. W ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    lsspropd.s1 $e |- ( ( ph /\ ( x e. P /\ y e. B ) ) ->
+      ( x ( .s ` K ) y ) e. W ) $.
+    lsspropd.s2 $e |- ( ( ph /\ ( x e. P /\ y e. B ) ) ->
+      ( x ( .s ` K ) y ) = ( x ( .s ` L ) y ) ) $.
+    lsspropd.p1 $e |- ( ph -> P = ( Base ` ( Scalar ` K ) ) ) $.
+    lsspropd.p2 $e |- ( ph -> P = ( Base ` ( Scalar ` L ) ) ) $.
+    lsppropd.v1 $e |- ( ph -> K e. X ) $.
+    lsppropd.v2 $e |- ( ph -> L e. Y ) $.
+    $( If two structures have the same components (properties), they have the
+       same subspace structure.  (Contributed by Mario Carneiro, 9-Feb-2015.)
+       (Revised by Mario Carneiro, 14-Jun-2015.) $)
+    lsspropdg $p |- ( ph -> ( LSubSp ` K ) = ( LSubSp ` L ) ) $=
+      ( vs vj vz va vb clss cfv cv cbs wss wcel wex cvsca co cplusg wral w3a wa
+      csca wb simpll simprl simplr sseldd ralrimivva ad2antrr ovrspc2v syl21anc
+      simprrl simprrr oveqrspc2v syl12anc oveq1d eqtrd eleq1d anassrs 2ralbidva
+      wceq ralbidva anbi2d pm5.32da 3anass 3bitr4g sseq2d raleqdv 3anbi13d eqid
+      3bitr3d islssm syl 3bitr4d eqrdv ) AUAFUFUGZGUFUGZAUAUHZFUIUGZUJZUBUHWOUK
+      UBULZUCUHZUDUHZFUMUGZUNZUEUHZFUOUGZUNZWOUKZUEWOUPUDWOUPZUCFUSUGZUIUGZUPZU
+      QZWOGUIUGZUJZWRWSWTGUMUGZUNZXCGUOUGZUNZWOUKZUEWOUPUDWOUPZUCGUSUGZUIUGZUPZ
+      UQZWOWMUKZWOWNUKZAWODUJZWRXGUCEUPZUQZYFWRXSUCEUPZUQZXKYCAYFWRYGURZURYFWRY
+      IURZURYHYJAYFYKYLAYFURZYGYIWRYMXGXSUCEYMWSEUKZURXFXRUDUEWOWOYMYNWTWOUKZXC
+      WOUKZURZXFXRUTYMYNYQURZURZXEXQWOYSXEXBXCXPUNZXQYSAXBHUKZXCHUKXEYTVRAYFYRV
+      AZYSYNWTDUKZBUHCUHXAUNHUKZCDUPBEUPZUUAYMYNYQVBZYSWODWTAYFYRVCZYMYNYOYPVIV
+      DZAUUEYFYRAUUDBCEDOVEVFBCEDHXAWSWTVGVHYSDHXCADHUJYFYRMVFYSWODXCUUGYMYNYOY
+      PVJVDVDABCHHXDXPXBXCNVKVLYSXBXOXCXPYSAYNUUCXBXOVRUUBUUFUUHABCEDXAXNWSWTPV
+      KVLVMVNVOVPVQVSVTWAYFWRYGWBYFWRYIWBWCAYFWQYGXJWRADWPWOKWDAXGUCEXIQWEWFAYF
+      XMYIYBWRADXLWOLWDAXSUCEYARWEWFWHAFIUKYDXKUTSUCXIXDWMXAWOUBXHWPFIUDUEXHWGX
+      IWGWPWGXDWGXAWGWMWGWIWJAGJUKYEYCUTTUCYAXPWNXNWOUBXTXLGJUDUEXTWGYAWGXLWGXP
+      WGXNWGWNWGWIWJWKWL $.
+
+    $( If two structures have the same components (properties), they have the
+       same span function.  (Contributed by Mario Carneiro, 9-Feb-2015.)
+       (Revised by Mario Carneiro, 14-Jun-2015.)  (Revised by AV,
+       24-Apr-2024.) $)
+    lsppropd $p |- ( ph -> ( LSpan ` K ) = ( LSpan ` L ) ) $=
+      ( vs vt cbs cfv cpw cv wss clss crab cint cmpt clspn eqtr3d pweqd rabeqdv
+      lsspropdg inteqd mpteq12dv wcel wceq eqid lspfval syl 3eqtr4d ) AUAFUCUDZ
+      UEZUAUFUBUFUGZUBFUHUDZUIZUJZUKZUAGUCUDZUEZVGUBGUHUDZUIZUJZUKZFULUDZGULUDZ
+      AUAVFVJVMVPAVEVLADVEVLKLUMUNAVIVOAVGUBVHVNABCDEFGHIJKLMNOPQRSTUPUOUQURAFI
+      USVRVKUTSUBVHVRVEFIUAVEVAVHVAVRVAVBVCAGJUSVSVQUTTUBVNVSVLGJUAVLVAVNVAVSVA
+      VBVCVD $.
   $}
 
 
@@ -173633,6 +174791,14 @@ htmldef ".sf" as
     "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT='f' TITLE='f'>";
   althtmldef ".sf" as ' <B>&middot;</B><SUB><I>sf</I></SUB> ';
   latexdef ".sf" as '\cdot_{sf}';
+htmldef "LSubSp" as
+    "<IMG SRC='_lsubsp.gif' WIDTH=49 HEIGHT=19 ALT=' LSubSp' TITLE='LSubSp'>";
+  althtmldef "LSubSp" as "LSubSp";
+  latexdef "LSubSp" as "\mathrm{LSubSp}";
+htmldef "LSpan" as
+    "<IMG SRC='_lspan.gif' WIDTH=41 HEIGHT=19 ALT=' LSpan' TITLE='LSpan'>";
+  althtmldef "LSpan" as "LSpan";
+  latexdef "LSpan" as "\mathrm{LSpan}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
@@ -176268,12 +177434,12 @@ $)
        (Proof modification is discouraged.) $)
     bj-nn0suc0 $p |- ( A e. _om -> ( A = (/) \/ E. x e. A A = suc x ) ) $=
       ( vy vz cv c0 wceq csuc wrex wo com eqeq1 rexeqbi1dv wtru wi wral a1d weq
-      a1tru wn orbi12d tru rgenw bdeq0 bdeqsuc ax-bdex ax-bdor nfv orc expi wel
-      wcel vex sucid eleq2 mpbiri suceq eqeq2d rspcev mpancom bj-bdfindis mp2an
-      olcd vtoclri ) CEZFGZVEAEZHZGZAVEIZJZBFGZBVHGZABIZJCBKVEBGVFVLVJVNVEBFLVI
-      VMAVEBVEBVHLMUANNNOZDKPVKCKPUBVODKNSUCVKNNNCDVFVJCUDVIACCAUEUFUGNCUHZVPVP
-      VFVKNVFVJUIQCDRZVKNVQVKTOTSUJVEDEZHZGZVKNVTVJVFDCUKZVTVJVTWAVRVSULVRDUMUN
-      VEVSVRUOUPVIVTAVRVEADRVHVSVEVGVRUQURUSUTVCQVAVBVD $.
+      trud wn orbi12d tru rgenw bdeq0 bdeqsuc ax-bdex ax-bdor nfv orc expi wcel
+      wel sucid eleq2 mpbiri suceq eqeq2d rspcev mpancom olcd bj-bdfindis mp2an
+      vex vtoclri ) CEZFGZVEAEZHZGZAVEIZJZBFGZBVHGZABIZJCBKVEBGVFVLVJVNVEBFLVIV
+      MAVEBVEBVHLMUANNNOZDKPVKCKPUBVODKNSUCVKNNNCDVFVJCUDVIACCAUEUFUGNCUHZVPVPV
+      FVKNVFVJUIQCDRZVKNVQVKTOTSUJVEDEZHZGZVKNVTVJVFDCULZVTVJVTWAVRVSUKVRDVCUMV
+      EVSVRUNUOVIVTAVRVEADRVHVSVEVGVRUPUQURUSUTQVAVBVD $.
   $}
 
   ${
@@ -178583,6 +179749,26 @@ $)
       IVRVHINZVIINZOZOZVMVHVILFZMZWMVHVIUMUNZKLFZMZWOWMVQWRCIWPVOWPPVPWQVOWPKLS
       UOVRWLQWLWPINVRVHVIUPUQURWMWQWNWMVHUSNVIUSNWQWNTWMVHVRWJWKUTVAWMVIVRWJWKV
       BVAVHVIVDVCUOULWLVMWOTVRVHVIUJUQVEVFVG $.
+  $}
+
+  ${
+    $d w x y z $.
+    $( Real number trichotomy is equivalent to decidability of complex number
+       apartness.  (Contributed by Jim Kingdon, 10-Apr-2025.) $)
+    cndcap $p |- ( A. x e. RR A. y e. RR ( x < y \/ x = y \/ y < x )
+        <-> A. z e. CC A. w e. CC DECID z =//= w ) $=
+      ( cv wbr wceq cr wral cap wdc cc wa cfv breq2 dcbid breq1 ralbidv rspcdva
+      wcel clt w3o cre cim wo triap ralbidva ralbiia biimpi adantr simprl recld
+      simprr imcld dcor sylc cnreim adantl mpbird ralrimivva simpl recnd impbii
+      wb ) AEZBEZUAFVEVFGVFVEUAFUBZBHIZAHIZCEZDEZJFZKZDLIZCLIZVIVMCDLLVIVJLTZVK
+      LTZMZMZVMVJUCNZVKUCNZJFZVJUDNZVKUDNZJFZUEZKZVSWBKZWEKZWGVSVTVFJFZKZWHBHWA
+      VFWAGWJWBVFWAVTJOPVSVEVFJFZKZBHIZWKBHIAHVTVEVTGZWMWKBHWOWLWJVEVTVFJQPRVIW
+      NAHIZVRVIWPVHWNAHVEHTZVGWMBHVEVFUFZUGUHUIUJZVSVJVIVPVQUKZULSVSVKVIVPVQUMZ
+      ULSVSWCVFJFZKZWIBHWDVFWDGXBWEVFWDWCJOPVSWNXCBHIAHWCVEWCGZWMXCBHXDWLXBVEWC
+      VFJQPRWSVSVJWTUNSVSVKXAUNSWBWEUOUPVRVMWGVDVIVRVLWFVJVKUQPURUSUTVOVGABHHVO
+      WQVFHTZMZMZVGWMXGVEVKJFZKZWMDLVFVKVFGXHWLVKVFVEJOPXGVNXIDLICLVEVJVEGZVMXI
+      DLXJVLXHVJVEVKJQPRVOXFVAXGVEVOWQXEUKVBSXGVFVOWQXEUMVBSXFVGWMVDVOWRURUSUTV
+      C $.
   $}
 
   ${
