@@ -157100,6 +157100,12 @@ $)
     ( wcel crglmod cfv cvv rlmbasg rlmplusgg id wfn elex funfvex funfni sylancr
     rlmfn grpsubpropdg ) ABCZAADEZBFABGABHQIQDFJAFCRFCZOABKSFADADLMNP $.
 
+  $( Ring multiplication in the ring module.  (Contributed by Mario Carneiro,
+     6-Oct-2015.) $)
+  rlmmulrg $p |- ( R e. V -> ( .r ` R ) = ( .r ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs rlmvalg ssidd id sramulrg ) ABCZADEAFEZABBAGKLHKIJ
+    $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
