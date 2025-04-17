@@ -157094,6 +157094,12 @@ $)
     ( wcel crglmod cfv cbs c0g rlmvalg eqidd ssidd id sralmod0g ) ABCZADEAFEZAB
     AGEZBAHMOIMNJMKL $.
 
+  $( Subtraction in the ring module.  (Contributed by Thierry Arnoux,
+     30-Jun-2019.) $)
+  rlmsubg $p |- ( R e. V -> ( -g ` R ) = ( -g ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cvv rlmbasg rlmplusgg id wfn elex funfvex funfni sylancr
+    rlmfn grpsubpropdg ) ABCZAADEZBFABGABHQIQDFJAFCRFCZOABKSFADADLMNP $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
