@@ -157082,6 +157082,12 @@ $)
     ( wcel crglmod cfv cbs rlmvalg ssidd id srabaseg ) ABCZADEAFEZABBAGKLHKIJ
     $.
 
+  $( Vector addition in the ring module.  (Contributed by Stefan O'Rear,
+     31-Mar-2015.) $)
+  rlmplusgg $p |- ( R e. V -> ( +g ` R ) = ( +g ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs rlmvalg ssidd id sraaddgg ) ABCZADEAFEZABBAGKLHKIJ
+    $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
