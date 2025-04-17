@@ -157076,6 +157076,12 @@ $)
       elex sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAPKFGBOQR $.
   $}
 
+  $( Base set of the ring module.  (Contributed by Stefan O'Rear,
+     31-Mar-2015.) $)
+  rlmbasg $p |- ( R e. V -> ( Base ` R ) = ( Base ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs rlmvalg ssidd id srabaseg ) ABCZADEAFEZABBAGKLHKIJ
+    $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
