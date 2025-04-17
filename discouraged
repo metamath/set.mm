@@ -9929,7 +9929,7 @@
 "mnringnmulrdOLD" is used by "mnringvscadOLD".
 "moexex" is used by "2moswap".
 "moexex" is used by "moexexv".
-"mptmpoopabbrdOLD" is used by "mptmpoopabovdOLD".
+"mptmpoopabbrdOLDOLD" is used by "mptmpoopabovdOLD".
 "mptmpoopabovdOLD" is used by "wksonproplemOLD".
 "mpv" is used by "mulcompr".
 "mulassnq" is used by "1idpr".
@@ -11585,7 +11585,7 @@
 "onsetreclem3" is used by "onsetrec".
 "opabid" is used by "brabidga".
 "opabid" is used by "ssopab2b".
-"opabresex2d" is used by "mptmpoopabbrdOLD".
+"opabresex2d" is used by "mptmpoopabbrdOLDOLD".
 "opelcn" is used by "axicn".
 "opelreal" is used by "ax1cn".
 "opelreal" is used by "axaddrcl".
@@ -17916,7 +17916,8 @@ New usage of "mpteq1iOLD" is discouraged (0 uses).
 New usage of "mpteq2daOLD" is discouraged (0 uses).
 New usage of "mpteq2dvaOLD" is discouraged (0 uses).
 New usage of "mpteq2iaOLD" is discouraged (0 uses).
-New usage of "mptmpoopabbrdOLD" is discouraged (1 uses).
+New usage of "mptmpoopabbrdOLD" is discouraged (0 uses).
+New usage of "mptmpoopabbrdOLDOLD" is discouraged (1 uses).
 New usage of "mptmpoopabovdOLD" is discouraged (1 uses).
 New usage of "mptssALT" is discouraged (0 uses).
 New usage of "mpv" is discouraged (1 uses).
@@ -18730,6 +18731,7 @@ New usage of "prstcocvalOLD" is discouraged (0 uses).
 New usage of "prstcval" is discouraged (2 uses).
 New usage of "prub" is discouraged (6 uses).
 New usage of "psercn2OLD" is discouraged (0 uses).
+New usage of "psraddclOLD" is discouraged (0 uses).
 New usage of "psrass1lemOLD" is discouraged (0 uses).
 New usage of "psrbagaddclOLD" is discouraged (1 uses).
 New usage of "psrbagconOLD" is discouraged (3 uses).
@@ -21045,7 +21047,8 @@ Proof modification of "mpteq1iOLD" is discouraged (19 steps).
 Proof modification of "mpteq2daOLD" is discouraged (47 steps).
 Proof modification of "mpteq2dvaOLD" is discouraged (10 steps).
 Proof modification of "mpteq2iaOLD" is discouraged (37 steps).
-Proof modification of "mptmpoopabbrdOLD" is discouraged (247 steps).
+Proof modification of "mptmpoopabbrdOLD" is discouraged (208 steps).
+Proof modification of "mptmpoopabbrdOLDOLD" is discouraged (247 steps).
 Proof modification of "mptmpoopabovdOLD" is discouraged (89 steps).
 Proof modification of "mptssALT" is discouraged (57 steps).
 Proof modification of "mrelatglbALT" is discouraged (66 steps).
@@ -21225,6 +21228,7 @@ Proof modification of "prstchom2ALT" is discouraged (121 steps).
 Proof modification of "prstclevalOLD" is discouraged (86 steps).
 Proof modification of "prstcocvalOLD" is discouraged (88 steps).
 Proof modification of "psercn2OLD" is discouraged (372 steps).
+Proof modification of "psraddclOLD" is discouraged (204 steps).
 Proof modification of "psrass1lemOLD" is discouraged (1513 steps).
 Proof modification of "psrbagaddclOLD" is discouraged (392 steps).
 Proof modification of "psrbagconOLD" is discouraged (365 steps).
@@ -21237,7 +21241,7 @@ Proof modification of "psrbagfsuppOLD" is discouraged (63 steps).
 Proof modification of "psrbagleclOLD" is discouraged (96 steps).
 Proof modification of "psrbaglefiOLD" is discouraged (464 steps).
 Proof modification of "psrbaglesuppOLD" is discouraged (254 steps).
-Proof modification of "psrgrpOLD" is discouraged (458 steps).
+Proof modification of "psrgrpOLD" is discouraged (467 steps).
 Proof modification of "pssnnOLD" is discouraged (942 steps).
 Proof modification of "pweqALT" is discouraged (34 steps).
 Proof modification of "pwfiOLD" is discouraged (185 steps).
