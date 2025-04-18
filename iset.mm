@@ -157124,6 +157124,12 @@ $)
   rlmdsg $p |- ( R e. V -> ( dist ` R ) = ( dist ` ( ringLMod ` R ) ) ) $=
     ( wcel crglmod cfv cbs rlmvalg ssidd id sradsg ) ABCZADEAFEZABBAGKLHKIJ $.
 
+  $( The ring module is a module.  (Contributed by Stefan O'Rear,
+     6-Dec-2014.) $)
+  rlmlmod $p |- ( R e. Ring -> ( ringLMod ` R ) e. LMod ) $=
+    ( crg wcel crglmod cfv cbs csra rlmvalg csubrg eqid subrgid sralmod eqeltrd
+    clmod syl ) ABCZADEAFEZAGEEZNBAHPQAIECRNCQAQJKRQARJLOM $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
