@@ -157158,6 +157158,20 @@ $)
       VIUQUOTRVDVTWEQVEBDURUSUTVAVBVCT $.
   $}
 
+  ${
+    $d a b j s w x $.
+    lidlmex.i $e |- I = ( LIdeal ` W ) $.
+    $( Existence of the set a left ideal is built from (when the ideal is
+       inhabited).  (Contributed by Jim Kingdon, 18-Apr-2025.) $)
+    lidlmex $p |- ( U e. I -> W e. _V ) $=
+      ( vw vj vs vx va vb wcel clidl cfv wfun clss crglmod cvv cv co wral cvsca
+      cdm wrel ccom wex cplusg csca cbs wa cpw crab df-lssm funmpt2 rlmfn fnfun
+      wfn ax-mp funco mp2an df-lidl funeqi mpbir funrel eleq2i biimpi relelfvdm
+      sylancr elexd ) ABKZCLUBZVILUCZACLMZKZCVJKLNZVKVNOPUDZNZONPNZVPEQFRGRZKFU
+      EHRIRERZUAMSJRVSUFMSVRKJVRTIVRTHVSUGMUHMTUIGVSUHMUJUKOHEFGIJULUMPQUPVQUNQ
+      PUOUQOPURUSLVOUTVAVBLVCUQVIVMBVLADVDVEACLVFVGVH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
