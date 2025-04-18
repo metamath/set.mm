@@ -157130,6 +157130,17 @@ $)
     ( crg wcel crglmod cfv cbs csra rlmvalg csubrg eqid subrgid sralmod eqeltrd
     clmod syl ) ABCZADEAFEZAGEEZNBAHPQAIECRNCQAQJKRQARJLOM $.
 
+  ${
+    $d x y R $.  $d x y V $.
+    $( Vector negation in the ring module.  (Contributed by Stefan O'Rear,
+       6-Dec-2014.)  (Revised by Mario Carneiro, 5-Jun-2015.) $)
+    rlmvnegg $p |- ( R e. V -> ( invg ` R ) = ( invg ` ( ringLMod ` R ) ) ) $=
+      ( vx vy wcel cbs cfv crglmod cvv eqidd rlmbasg id wfn elex funfvex funfni
+      rlmfn sylancr cv cplusg wa rlmplusgg oveqdr grpinvpropdg ) ABEZCDAFGZAAHG
+      ZBIUEUFJABKUELUEHIMAIEUGIEZQABNUHIAHAHOPRUECSUFEDSUFEUACDATGUGTGABUBUCUD
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
