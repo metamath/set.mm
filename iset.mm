@@ -157185,6 +157185,17 @@ $)
       QUTUNQURDKUKTRUI $.
   $}
 
+  ${
+    lidlssbas.l $e |- L = ( LIdeal ` R ) $.
+    lidlssbas.i $e |- I = ( R |`s U ) $.
+    $( The base set of the restriction of the ring to a (left) ideal is a
+       subset of the base set of the ring.  (Contributed by AV,
+       17-Feb-2020.) $)
+    lidlssbas $p |- ( U e. L -> ( Base ` I ) C_ ( Base ` R ) ) $=
+      ( wcel cbs cfv cvv cress co wceq a1i eqidd lidlmex id ressbasssd ) BDGZBA
+      HIZCDAJCABKLMSFNSTOBDAEPSQR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
