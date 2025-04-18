@@ -1439,12 +1439,12 @@
 "ax-mulcom" is used by "mulcom".
 "ax-mulf" is used by "cncvcOLD".
 "ax-mulf" is used by "dvdsmulf1o".
-"ax-mulf" is used by "fsumdvdsmul".
+"ax-mulf" is used by "fsumdvdsmulOLD".
 "ax-mulf" is used by "gg-dfcnfld".
 "ax-mulf" is used by "iimulcnOLD".
 "ax-mulf" is used by "mulcn".
 "ax-mulf" is used by "mulex".
-"ax-mulf" is used by "mulnzcnopr".
+"ax-mulf" is used by "mulnzcnf".
 "ax-mulf" is used by "rlimmulOLD".
 "ax-mulf" is used by "xrge0pluscn".
 "ax-mulrcl" is used by "remulcl".
@@ -16737,6 +16737,7 @@ New usage of "footexALT" is discouraged (0 uses).
 New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
 New usage of "friOLD" is discouraged (0 uses).
 New usage of "fsetprcnexALT" is discouraged (0 uses).
+New usage of "fsumdvdsmulOLD" is discouraged (0 uses).
 New usage of "fuchomOLD" is discouraged (0 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
@@ -20799,6 +20800,7 @@ Proof modification of "frege98" is discouraged (116 steps).
 Proof modification of "frgrwopreglem5ALT" is discouraged (519 steps).
 Proof modification of "friOLD" is discouraged (96 steps).
 Proof modification of "fsetprcnexALT" is discouraged (190 steps).
+Proof modification of "fsumdvdsmulOLD" is discouraged (538 steps).
 Proof modification of "fuchomOLD" is discouraged (229 steps).
 Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "fundcmpsurinjALT" is discouraged (221 steps).
