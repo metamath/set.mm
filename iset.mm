@@ -157141,6 +157141,23 @@ $)
       $.
   $}
 
+  ${
+    $d R f x $.  $d V f $.  $d W f $.  $d X f x $.
+    $( The value of an infinite Cartesian product of the base of a left module
+       over a ring with a singleton.  (Contributed by AV, 3-Dec-2018.) $)
+    ixpsnbasval $p |- ( ( R e. V /\ X e. W )
+         -> X_ x e. { X } ( Base ` ( ( { X } X. { ( ringLMod ` R ) } ) ` x ) )
+            = { f | ( f Fn { X } /\ ( f ` X ) e. ( Base ` R ) ) } ) $=
+      ( wcel wa csn cv crglmod cfv cbs wfn csb cab wceq adantl cvv eqtrd funfni
+      cxp cixp ixpsnval cop rlmfn elex funfvex sylancr anim1ci xpsng syl fveq1d
+      fvsng fveq2d csbfv2g csbfvg rlmbasg adantr 3eqtr4d eleq2d anbi2d abbidv )
+      BDGZFEGZHZAFIZAJVGBKLZIUBZLZMLZUCZCJZVGNZFVMLZAFVKOZGZHZCPZVNVOBMLZGZHZCP
+      VEVLVSQVDAVKCEFUDRVFVRWBCVFVQWAVNVFVPVTVOVFFVILZMLZVHMLZVPVTVFWCVHMVFWCFF
+      VHUEIZLZVHVFFVIWFVFVEVHSGZHZVIWFQVDWHVEVDKSNBSGWHUFBDUGWHSBKBKUHUAUIUJZFV
+      HESUKULUMVFWIWGVHQWJFVHESUNULTUOVEVPWDQVDVEVPAFVJOZMLWDAFVJEMUPVEWKWCMAFE
+      VIUQUOTRVDVTWEQVEBDURUSUTVAVBVCT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
