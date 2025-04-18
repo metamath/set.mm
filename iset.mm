@@ -157119,6 +157119,11 @@ $)
     ( wcel crglmod cfv cbs rlmvalg ssidd id sratopng ) ABCZADEAFEZABBAGKLHKIJ
     $.
 
+  $( Metric component of the ring module.  (Contributed by Mario Carneiro,
+     6-Oct-2015.) $)
+  rlmdsg $p |- ( R e. V -> ( dist ` R ) = ( dist ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs rlmvalg ssidd id sradsg ) ABCZADEAFEZABBAGKLHKIJ $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
