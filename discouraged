@@ -1446,7 +1446,6 @@
 "ax-mulf" is used by "mulex".
 "ax-mulf" is used by "mulnzcnopr".
 "ax-mulf" is used by "rlimmulOLD".
-"ax-mulf" is used by "rmulccn".
 "ax-mulf" is used by "xrge0pluscn".
 "ax-mulrcl" is used by "remulcl".
 "ax-pre-ltadd" is used by "axltadd".
@@ -14646,7 +14645,7 @@ New usage of "ax-luk3" is discouraged (6 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
-New usage of "ax-mulf" is discouraged (11 uses).
+New usage of "ax-mulf" is discouraged (10 uses).
 New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax-pre-ltadd" is discouraged (1 uses).
 New usage of "ax-pre-lttri" is discouraged (1 uses).
@@ -15855,6 +15854,7 @@ New usage of "cvr2N" is discouraged (1 uses).
 New usage of "cvrletrN" is discouraged (0 uses).
 New usage of "cvrnrefN" is discouraged (0 uses).
 New usage of "cvrval4N" is discouraged (0 uses).
+New usage of "cxpcnOLD" is discouraged (0 uses).
 New usage of "dalem31N" is discouraged (0 uses).
 New usage of "daraptiALT" is discouraged (0 uses).
 New usage of "dariiALT" is discouraged (0 uses).
@@ -16292,6 +16292,8 @@ New usage of "dvelimf-o" is discouraged (3 uses).
 New usage of "dvelimh" is discouraged (6 uses).
 New usage of "dvelimnf" is discouraged (2 uses).
 New usage of "dvelimv" is discouraged (4 uses).
+New usage of "dvfsumleOLD" is discouraged (0 uses).
+New usage of "dvfsumlem2OLD" is discouraged (0 uses).
 New usage of "dvh2dimatN" is discouraged (0 uses).
 New usage of "dvh3dim3N" is discouraged (0 uses).
 New usage of "dvh3dimatN" is discouraged (1 uses).
@@ -20247,6 +20249,7 @@ Proof modification of "currysetlem" is discouraged (49 steps).
 Proof modification of "currysetlem1" is discouraged (71 steps).
 Proof modification of "currysetlem2" is discouraged (20 steps).
 Proof modification of "currysetlem3" is discouraged (82 steps).
+Proof modification of "cxpcnOLD" is discouraged (298 steps).
 Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
@@ -20320,6 +20323,8 @@ Proof modification of "dveeq1-o16" is discouraged (22 steps).
 Proof modification of "dveeq2-o" is discouraged (20 steps).
 Proof modification of "dveeq2ALT" is discouraged (14 steps).
 Proof modification of "dvelimf-o" is discouraged (129 steps).
+Proof modification of "dvfsumleOLD" is discouraged (1224 steps).
+Proof modification of "dvfsumlem2OLD" is discouraged (2595 steps).
 Proof modification of "dvmulbrOLD" is discouraged (2036 steps).
 Proof modification of "e00" is discouraged (7 steps).
 Proof modification of "e000" is discouraged (13 steps).
