@@ -155797,6 +155797,21 @@ $)
   $}
 
   ${
+    lssvacl.p $e |- .+ = ( +g ` W ) $.
+    lssvacl.s $e |- S = ( LSubSp ` W ) $.
+    $( Closure of vector addition in a subspace.  (Contributed by NM,
+       11-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
+    lssvacl $p |- ( ( ( W e. LMod /\ U e. S ) /\ ( X e. U /\ Y e. U ) )
+       -> ( X .+ Y ) e. U ) $=
+      ( clmod wcel wa csca cfv cur cvsca co cbs wceq simpll eqid simplr syl3anc
+      simprl lsselg lmodvs1 syl2anc oveq1d lmod1cl ad2antrr syl113anc eqeltrrd
+      simprr lssclg ) DIJZCBJZKZECJZFCJZKZKZDLMZNMZEDOMZPZFAPZEFAPCUTVDEFAUTUNE
+      DQMZJZVDERUNUOUSSZUTUNUOUQVGVHUNUOUSUAZUPUQURUCZIBCVFDEVFTZHUDUBVCVBVAVFD
+      EVKVATZVCTZVBTZUEUFUGUTUNUOVBVAQMZJZUQURVECJVHVIUNVPUOUSVBVAVODVLVOTZVNUH
+      UIVJUPUQURULVOIABVCCVADEFVBVLVQGVMHUMUJUK $.
+  $}
+
+  ${
     lssvsubcl.m $e |- .- = ( -g ` W ) $.
     lssvsubcl.s $e |- S = ( LSubSp ` W ) $.
     $( Closure of vector subtraction in a subspace.  (Contributed by NM,
@@ -155917,21 +155932,6 @@ $)
     lssneln0 $p |- ( ph -> X e. ( V \ { .0. } ) ) $=
       ( wcel wne csn cdif lssvneln0 eldifsn sylanbrc ) AFDNFGOFDGPQNLABCEFGHIJK
       MRFDGST $.
-  $}
-
-  ${
-    lssvacl.p $e |- .+ = ( +g ` W ) $.
-    lssvacl.s $e |- S = ( LSubSp ` W ) $.
-    $( Closure of vector addition in a subspace.  (Contributed by NM,
-       11-Jan-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
-    lssvacl $p |- ( ( ( W e. LMod /\ U e. S ) /\ ( X e. U /\ Y e. U ) )
-       -> ( X .+ Y ) e. U ) $=
-      ( clmod wcel wa csca cfv cur cvsca co cbs wceq simpll eqid simplr syl3anc
-      simprl lsselg lmodvs1 syl2anc oveq1d lmod1cl ad2antrr syl113anc eqeltrrd
-      simprr lssclg ) DIJZCBJZKZECJZFCJZKZKZDLMZNMZEDOMZPZFAPZEFAPCUTVDEFAUTUNE
-      DQMZJZVDERUNUOUSSZUTUNUOUQVGVHUNUOUSUAZUPUQURUCZIBCVFDEVFTZHUDUBVCVBVAVFD
-      EVKVATZVCTZVBTZUEUFUGUTUNUOVBVAQMZJZUQURVECJVHVIUNVPUOUSVBVAVODVLVOTZVNUH
-      UIVJUPUQURULVOIABVCCVADEFVBVLVQGVMHUMUJUK $.
   $}
 
   ${

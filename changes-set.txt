@@ -89,6 +89,12 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 13-Apr-25 ovmul     ovmpot      Generalized for all operations
+12-Apr-25 ---       ---         Moved categories of rings theorems 
+                                from AV's mathbox to main set.mm
+12-Apr-25 nrhmzr    [same]      Moved from AV's mathbox to main set.mm
+12-Apr-25 inclfusubc [same]     Moved from AV's mathbox to main set.mm
+12-Apr-25 idfusubc  [same]      Moved from AV's mathbox to main set.mm 
+12-Apr-25 idfusubc0 [same]      Moved from AV's mathbox to main set.mm
 11-Apr-25 elabrexg  [same]      Moved from GS's mathbox to main set.mm
 10-Apr-25 dvcobr    [same]      revised - remove unneeded hypotheses
 10-Apr-25 dvmulbr   [same]      revised - remove unneeded hypotheses
