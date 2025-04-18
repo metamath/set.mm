@@ -157194,6 +157194,13 @@ $)
     lidlssbas $p |- ( U e. L -> ( Base ` I ) C_ ( Base ` R ) ) $=
       ( wcel cbs cfv cvv cress co wceq a1i eqidd lidlmex id ressbasssd ) BDGZBA
       HIZCDAJCABKLMSFNSTOBDAEPSQR $.
+
+    $( A (left) ideal of a ring is the base set of the restriction of the ring
+       to this ideal.  (Contributed by AV, 17-Feb-2020.) $)
+    lidlbas $p |- ( U e. L -> ( Base ` I ) = U ) $=
+      ( wcel cbs cfv cin cvv cress co wceq a1i eqid lidlmex id ressbasd wss
+      lidlss df-ss sylib eqtr3d ) BDGZBAHIZJZCHIBUEBUFCDAKCABLMNUEFOUFUFNUEUFPZ
+      OBDAEQUERSUEBUFTUGBNUFBDAUHEUABUFUBUCUD $.
   $}
 
 
