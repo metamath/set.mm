@@ -157172,6 +157172,19 @@ $)
       PUOUQOPURUSLVOUTVAVBLVCUQVIVMBVLADVDVEACLVFVGVH $.
   $}
 
+  ${
+    lidlss.b $e |- B = ( Base ` W ) $.
+    lidlss.i $e |- I = ( LIdeal ` W ) $.
+    $( An ideal is a subset of the base set.  (Contributed by Stefan O'Rear,
+       28-Mar-2015.) $)
+    lidlss $p |- ( U e. I -> U C_ B ) $=
+      ( wcel crglmod cfv cbs cvv clss wss wfn rlmfn lidlmex wceq eqtrid eqid
+      syl funfvex funfni sylancr clidl lidlvalg eleqtrd lssssg syl2anc sseqtrrd
+      id rlmbasg ) BCGZBDHIZJIZAULUMKGZBUMLIZGBUNMULHKNDKGZUOOBCDFPZUOKDHDHUAUB
+      UCULBCUPULUJULCDUDIZUPFULUQUSUPQURKDUETRUFUPBUNUMKUNSUPSUGUHULADJIZUNEULU
+      QUTUNQURDKUKTRUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
