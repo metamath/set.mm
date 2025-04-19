@@ -157252,6 +157252,17 @@ $)
       EVCAUFLZCIVGABCVRDVRRUGEVRCUHSVCVOFCVCVHCIZJZVLVNVTVKGCVCVSVICIVKVJABCVHV
       IDVJRZUIULTVAVBVSVNABCVMVHDVMRZUJUKUMTVCAUNIZVDVFVGVPUOUPVAWCVBAUQURFGEVE
       VJCAVMVQWAWBUSSUT $.
+
+    ${
+      lidlsubcl.m $e |- .- = ( -g ` R ) $.
+      $( An ideal is closed under subtraction.  (Contributed by Stefan O'Rear,
+         28-Mar-2015.)  (Proof shortened by OpenAI, 25-Mar-2020.) $)
+      lidlsubcl $p |- ( ( ( R e. Ring /\ I e. U ) /\ ( X e. I /\ Y e. I ) ) ->
+          ( X .- Y ) e. I ) $=
+        ( crg wcel wa co w3a csubg cfv lidlsubg 3adant3 simp3l simp3r subgsubcl
+        syl3anc 3expa ) AIJZCBJZECJZFCJZKZEFDLCJZUCUDUGMCANOJZUEUFUHUCUDUIUGABC
+        GPQUCUDUEUFRUCUDUEUFSCADEFHTUAUB $.
+    $}
   $}
 
 
