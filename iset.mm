@@ -157203,6 +157203,19 @@ $)
       OBDAEQUERSUEBUFTUGBNUFBDAUHEUABUFUBUCUD $.
   $}
 
+  ${
+    lidlcl.u $e |- U = ( LIdeal ` R ) $.
+    ${
+      lidl0cl.z $e |- .0. = ( 0g ` R ) $.
+      $( An ideal contains 0.  (Contributed by Stefan O'Rear, 3-Jan-2015.) $)
+      lidl0cl $p |- ( ( R e. Ring /\ I e. U ) -> .0. e. I ) $=
+        ( crg wcel wa crglmod cfv c0g wceq rlm0g adantr clmod clss rlmlmod eqid
+        eqtrid simpr clidl lidlvalg eleqtrd lss0cl syl2an2r eqeltrd ) AGHZCBHZI
+        ZDAJKZLKZCUJDALKZULFUHUMULMUIAGNOTUHUKPHUICUKQKZHULCHARUJCBUNUHUIUAUJBA
+        UBKZUNEUHUOUNMUIGAUCOTUDUNCUKULULSUNSUEUFUG $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
