@@ -157240,6 +157240,18 @@ $)
         UPUNEDUTUNDAMKUTGAHOPQRUQUSSIZCUSUJKZIZUPVACIUNUOVBUPAUARUNUOVDUPUNUOUB
         CBVCUNUOUCUNBVCNUOUNBAUDKVCFHAUEPUFUGUHUNUOUPUIVCCUTUSEVCTUTTUKULUM $.
     $}
+
+    $d j x y I $.  $d j x y R $.  $d x y U $.
+    $( An ideal is a subgroup of the additive group.  (Contributed by Mario
+       Carneiro, 14-Jun-2015.) $)
+    lidlsubg $p |- ( ( R e. Ring /\ I e. U ) -> I e. ( SubGrp ` R ) ) $=
+      ( vj vx vy crg wcel wa csubg cfv cbs wss cv wex wral eqid syl ralrimiva
+      cplusg co cminusg lidlss adantl c0g lidl0cl elex2 lidlacl lidlnegcl 3expa
+      anassrs jca cgrp w3a wb ringgrp adantr issubg2m mpbir3and ) AHIZCBIZJZCAK
+      LIZCAMLZNZEOCIEPZFOZGOZAUALZUBCIZGCQZVHAUCLZLCIZJZFCQZVBVFVAVECBAVERZDUDU
+      EVCAUFLZCIVGABCVRDVRRUGEVRCUHSVCVOFCVCVHCIZJZVLVNVTVKGCVCVSVICIVKVJABCVHV
+      IDVJRZUIULTVAVBVSVNABCVMVHDVMRZUJUKUMTVCAUNIZVDVFVGVPUOUPVAWCVBAUQURFGEVE
+      VJCAVMVQWAWBUSSUT $.
   $}
 
 
