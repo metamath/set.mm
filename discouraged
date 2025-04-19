@@ -8423,7 +8423,6 @@
 "idhmop" is used by "opsqrlem6".
 "idi" is used by "dvmptfprod".
 "idi" is used by "dvnprodlem1".
-"idi" is used by "fprodcnlem".
 "idi" is used by "imo72b2lem0".
 "idi" is used by "limsupvaluz2".
 "idi" is used by "madjusmdetlem2".
@@ -16465,6 +16464,7 @@ New usage of "eelTTT" is discouraged (0 uses).
 New usage of "eeorOLD" is discouraged (0 uses).
 New usage of "eexinst01" is discouraged (2 uses).
 New usage of "eexinst11" is discouraged (2 uses).
+New usage of "efrlimOLD" is discouraged (0 uses).
 New usage of "eighmorth" is discouraged (0 uses).
 New usage of "eighmre" is discouraged (1 uses).
 New usage of "eigorth" is discouraged (1 uses).
@@ -17321,7 +17321,7 @@ New usage of "idcnop" is discouraged (2 uses).
 New usage of "iddii" is discouraged (1 uses).
 New usage of "iden2" is discouraged (0 uses).
 New usage of "idhmop" is discouraged (6 uses).
-New usage of "idi" is discouraged (10 uses).
+New usage of "idi" is discouraged (9 uses).
 New usage of "idiALT" is discouraged (12 uses).
 New usage of "idiVD" is discouraged (0 uses).
 New usage of "idleop" is discouraged (1 uses).
@@ -20485,6 +20485,7 @@ Proof modification of "eelTTT" is discouraged (50 steps).
 Proof modification of "eeorOLD" is discouraged (38 steps).
 Proof modification of "eexinst01" is discouraged (15 steps).
 Proof modification of "eexinst11" is discouraged (19 steps).
+Proof modification of "efrlimOLD" is discouraged (2283 steps).
 Proof modification of "el021old" is discouraged (18 steps).
 Proof modification of "el0321old" is discouraged (20 steps).
 Proof modification of "el1" is discouraged (12 steps).
