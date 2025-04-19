@@ -88,6 +88,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Apr-25 mulnzcnopr mulnzcnf   Align with modern suffix conventions.
 13-Apr-25 ovmul     ovmpot      Generalized for all operations
 12-Apr-25 ---       ---         Moved categories of rings theorems 
                                 from AV's mathbox to main set.mm
