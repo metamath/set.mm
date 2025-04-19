@@ -157214,6 +157214,19 @@ $)
         ZDAJKZLKZCUJDALKZULFUHUMULMUIAGNOTUHUKPHUICUKQKZHULCHARUJCBUNUHUIUAUJBA
         UBKZUNEUHUOUNMUIGAUCOTUDUNCUKULULSUNSUEUFUG $.
     $}
+
+    ${
+      lidlacl.p $e |- .+ = ( +g ` R ) $.
+      $( An ideal is closed under addition.  (Contributed by Stefan O'Rear,
+         3-Jan-2015.) $)
+      lidlacl $p |- ( ( ( R e. Ring /\ I e. U ) /\ ( X e. I /\ Y e. I ) ) ->
+          ( X .+ Y ) e. I ) $=
+        ( crg wcel wa co crglmod cfv cplusg wceq rlmplusgg eqtrid adantr eqid
+        oveqd ad2antrr clmod rlmlmod simpr clidl lidlvalg eleqtrd lssvacl sylan
+        clss jca eqeltrd ) BIJZDCJZKZEDJFDJKZKEFALZEFBMNZONZLZDUNURVAPUOUQUNAUT
+        EFUNABONUTHBIQRUAUBUPUSUCJZDUSUKNZJZKUQVADJUPVBVDUNVBUOBUDSUPDCVCUNUOUE
+        UNCVCPUOUNCBUFNVCGIBUGRSUHULUTVCDUSEFUTTVCTUIUJUM $.
+    $}
   $}
 
 
