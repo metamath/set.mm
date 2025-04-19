@@ -156664,21 +156664,20 @@ $)
     lsslsp.n $e |- N = ( LSpan ` X ) $.
     lsslsp.l $e |- L = ( LSubSp ` W ) $.
     $( Spans in submodules correspond to spans in the containing module.
-       (Contributed by Stefan O'Rear, 12-Dec-2014.)  TODO:  Shouldn't we swap
-       ` M `` G ` and ` N `` G ` since we are computing a property of
-       ` N `` G ` ?  (Like we say sin 0 = 0 and not 0 = sin 0.) - NM
-       15-Mar-2015. $)
+       (Contributed by Stefan O'Rear, 12-Dec-2014.)  Terms in the equation were
+       swapped as proposed by NM on 15-Mar-2015.  (Revised by AV,
+       18-Apr-2025.) $)
     lsslsp $p |- ( ( W e. LMod /\ U e. L /\ G C_ U ) ->
-      ( M ` G ) = ( N ` G ) ) $=
-      ( clmod wcel wss cfv wa 3adant3 eqid syl2anc lspssp w3a simp1 cbs lsslmod
-      clss simp3 cress co a1i eqidd lssssg ressbas2d sseqtrd lspcl lsslss mpbid
-      wceq wb simpld lspssid syl3anc sstrd mpbir2and eqssd ) FLMZACMZBANZUAZBDO
-      ZBEOZVHVEVJCMZBVJNZVIVJNVEVFVGUBZVHVKVJANZVHVJGUEOZMZVKVNPZVHGLMZBGUCOZNZ
-      VPVEVFVRVGCAFGHKUDQZVHBAVSVEVFVGUFZVHAFUCOZGFLGFAUGUHUQVHHUIVHWCUJVMVEVFA
-      WCNVGCAWCFLWCRZKUKQZULUMZVOBEVSGVSRZVORZJUNSVEVFVPVQURVGCVOAVJFGHKWHUOQUP
-      USVHVRVTVLWAWFBEVSGWGJUTSCBVJDFKITVAVHVRVIVOMZBVINZVJVINWAVHWIVICMZVIANZV
-      HVEBWCNZWKVMVHBAWCWBWEVBZCBDWCFWDKIUNSCBADFKITVEVFWIWKWLPURVGCVOAVIFGHKWH
-      UOQVCVHVEWMWJVMWNBDWCFWDIUTSVOBVIEGWHJTVAVD $.
+      ( N ` G ) = ( M ` G ) ) $=
+      ( clmod wcel wss cfv 3adant3 cbs eqid syl2anc lspssp w3a clss simp1 simp3
+      lsslmod lssssg sstrd lspcl wa lsslss mpbir2and lspssid syl3anc cress wceq
+      wb co a1i eqidd ressbas2d sseqtrd mpbid simpld eqssd ) FLMZACMZBANZUAZBEO
+      ZBDOZVHGLMZVJGUBOZMZBVJNZVIVJNVEVFVKVGCAFGHKUEPZVHVMVJCMZVJANZVHVEBFQOZNZ
+      VPVEVFVGUCZVHBAVRVEVFVGUDZVEVFAVRNVGCAVRFLVRRZKUFPZUGZCBDVRFWBKIUHSCBADFK
+      ITVEVFVMVPVQUIUPVGCVLAVJFGHKVLRZUJPUKVHVEVSVNVTWDBDVRFWBIULSVLBVJEGWEJTUM
+      VHVEVICMZBVINZVJVINVTVHWFVIANZVHVIVLMZWFWHUIZVHVKBGQOZNZWIVOVHBAWKWAVHAVR
+      GFLGFAUNUQUOVHHURVHVRUSVTWCUTVAZVLBEWKGWKRZWEJUHSVEVFWIWJUPVGCVLAVIFGHKWE
+      UJPVBVCVHVKWLWGVOWMBEWKGWNJULSCBVIDFKITUMVD $.
   $}
 
   ${
@@ -156690,10 +156689,10 @@ $)
        module.  (Contributed by NM, 15-Mar-2015.) $)
     lss0v $p |- ( ( W e. LMod /\ U e. L ) -> Z = .0. ) $=
       ( clmod wcel csn cuni c0 clspn cfv wceq eqid lsp0 wa lsslsp mp3an3 adantr
-      wss 0ss lsslmod syl 3eqtr3rd unieqd cbs lmod0vcl unisng 3syl 3eqtr3d ) CK
-      LZABLZUAZFMZNZEMZNZFEURUSVAUROCPQZQZODPQZQZVAUSUPUQOAUEVDVFRAUFAOBVCVECDG
-      VCSZVESZJUBUCUPVDVARUQVCCEHVGTUDURDKLZVFUSRBACDGJUGZVEDFIVHTUHUIUJURVIFDU
-      KQZLUTFRVJVKDFVKSIULFVKUMUNUPVBERZUQUPECUKQZLVLVMCEVMSHULEVMUMUHUDUO $.
+      wss 0ss lsslmod syl 3eqtr3d unieqd cbs lmod0vcl unisng 3syl ) CKLZABLZUAZ
+      FMZNZEMZNZFEUQURUTUQODPQZQZOCPQZQZURUTUOUPOAUEVCVERAUFAOBVDVBCDGVDSZVBSZJ
+      UBUCUQDKLZVCURRBACDGJUGZVBDFIVGTUHUOVEUTRUPVDCEHVFTUDUIUJUQVHFDUKQZLUSFRV
+      IVJDFVJSIULFVJUMUNUOVAERZUPUOECUKQZLVKVLCEVLSHULEVLUMUHUDUI $.
   $}
 
   ${
