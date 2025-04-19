@@ -157227,6 +157227,19 @@ $)
         EFUNABONUTHBIQRUAUBUPUSUCJZDUSUKNZJZKUQVADJUPVBVDUNVBUOBUDSUPDCVCUNUOUE
         UNCVCPUOUNCBUFNVCGIBUGRSUHULUTVCDUSEFUTTVCTUIUJUM $.
     $}
+
+    ${
+      lidlnegcl.n $e |- N = ( invg ` R ) $.
+      $( An ideal contains negatives.  (Contributed by Stefan O'Rear,
+         3-Jan-2015.) $)
+      lidlnegcl $p |- ( ( R e. Ring /\ I e. U /\ X e. I ) ->
+          ( N ` X ) e. I ) $=
+        ( crg wcel w3a cfv crglmod cminusg wceq rlmvnegg eqtrid fveq1d 3ad2ant1
+        clmod eqid rlmlmod wa simpr clidl lidlvalg adantr eleqtrd 3adant3 simp3
+        clss lssvnegcl syl3anc eqeltrd ) AHIZCBIZECIZJZEDKZEALKZMKZKZCUNUOURVAN
+        UPUNEDUTUNDAMKUTGAHOPQRUQUSSIZCUSUJKZIZUPVACIUNUOVBUPAUARUNUOVDUPUNUOUB
+        CBVCUNUOUCUNBVCNUOUNBAUDKVCFHAUEPUFUGUHUNUOUPUIVCCUTUSEVCTUTTUKULUM $.
+    $}
   $}
 
 
