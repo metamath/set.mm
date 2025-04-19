@@ -10024,6 +10024,30 @@
 "mulclsr" is used by "sqgt0sr".
 "mulcmpblnr" is used by "mulsrmo".
 "mulcmpblnrlem" is used by "mulcmpblnr".
+"mulcn" is used by "cmvthOLD".
+"mulcn" is used by "cnrehmeoOLD".
+"mulcn" is used by "cxpcnOLD".
+"mulcn" is used by "dipcn".
+"mulcn" is used by "divccnOLD".
+"mulcn" is used by "divcnOLD".
+"mulcn" is used by "dvcnp2OLD".
+"mulcn" is used by "dvcobrOLD".
+"mulcn" is used by "dvfsumleOLD".
+"mulcn" is used by "dvfsumlem2OLD".
+"mulcn" is used by "dvmulbrOLD".
+"mulcn" is used by "efrlimOLD".
+"mulcn" is used by "expcnOLD".
+"mulcn" is used by "icchmeoOLD".
+"mulcn" is used by "iihalf1cnOLD".
+"mulcn" is used by "iihalf2cnOLD".
+"mulcn" is used by "iimulcnOLD".
+"mulcn" is used by "ipasslem7".
+"mulcn" is used by "mulcncfOLD".
+"mulcn" is used by "negcncfOLD".
+"mulcn" is used by "plycnOLD".
+"mulcn" is used by "psercn2OLD".
+"mulcn" is used by "reparphtiOLD".
+"mulcn" is used by "taylthlem2".
 "mulcnsr" is used by "axcnre".
 "mulcnsr" is used by "axi2m1".
 "mulcnsr" is used by "axmulf".
@@ -17939,6 +17963,7 @@ New usage of "mulclprlem" is discouraged (1 uses).
 New usage of "mulclsr" is discouraged (11 uses).
 New usage of "mulcmpblnr" is discouraged (1 uses).
 New usage of "mulcmpblnrlem" is discouraged (1 uses).
+New usage of "mulcn" is discouraged (24 uses).
 New usage of "mulcncfOLD" is discouraged (0 uses).
 New usage of "mulcnsr" is discouraged (5 uses).
 New usage of "mulcnsrec" is discouraged (3 uses).
