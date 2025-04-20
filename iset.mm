@@ -157273,6 +157273,14 @@ $)
         eqtrid sneqd clidl lidlvalg 3eltr4d ) AFGZAHIZJIZKZUELIZCKBUDUEMGUGUHGA
         NUHUEUFUFOUHOPQUDCUFUDCAJIUFEAFRSTUDBAUAIUHDFAUBSUC $.
     $}
+
+    lidl1.b $e |- B = ( Base ` R ) $.
+    $( Every ring contains a unit ideal.  (Contributed by Stefan O'Rear,
+       3-Jan-2015.) $)
+    lidl1 $p |- ( R e. Ring -> B e. U ) $=
+      ( crg wcel crglmod cfv cbs clss clmod rlmlmod eqid lss1 syl rlmbasg clidl
+      eqtrid lidlvalg 3eltr4d ) BFGZBHIZJIZUCKIZACUBUCLGUDUEGBMUEUDUCUDNUENOPUB
+      ABJIUDEBFQSUBCBRIUEDFBTSUA $.
   $}
 
 
