@@ -157308,6 +157308,17 @@ $)
         BGHZCAIZJCCDKZIZCCBLKZMKZKZIZUJUNNHUKCUNSKZIZUQBOUJUKUSUJAURCUJABSKURFB
         GPQRUACUOURUNURTUOTUBUCUJUMUQUDUKUJULUPCUJCDUOUJDBUEKUOEGBUFQUGRUHUI $.
     $}
+
+    ${
+      rsp0.z $e |- .0. = ( 0g ` R ) $.
+      $( The span of the zero element is the zero ideal.  (Contributed by
+         Stefan O'Rear, 3-Jan-2015.) $)
+      rsp0 $p |- ( R e. Ring -> ( K ` { .0. } ) = { .0. } ) $=
+        ( crg wcel crglmod cfv c0g csn clspn clmod wceq rlmlmod eqid lspsn0 syl
+        crsp eqtrid rspvalg rlm0g sneqd fveq12d 3eqtr4d ) AFGZAHIZJIZKZUGLIZIZU
+        ICKZBIULUFUGMGUKUINAOUJUGUHUHPUJPQRUFULUIBUJUFBASIUJDFAUATUFCUHUFCAJIUH
+        EAFUBTUCZUDUMUE $.
+    $}
   $}
 
 
