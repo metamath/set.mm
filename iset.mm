@@ -157299,6 +157299,14 @@ $)
           UQDUTRMZKZVDBUBUPUQVFUPAVEDUPABRMVEGBIUCSUAUDVCDVAVEUTVETVCTVATUEUFUP
           USVDUGUQUPURVBCVCUPDEVAUPEBUHMVAFIBUISUJUPCBULMVCHIBUKSUMUNUO $.
       $}
+
+      $( The span of a set of ring elements contains those elements.
+         (Contributed by Stefan O'Rear, 3-Jan-2015.) $)
+      rspssid $p |- ( ( R e. Ring /\ G C_ B ) -> G C_ ( K ` G ) ) $=
+        ( crg wcel wss wa cfv crglmod clspn clmod rlmlmod rlmbasg eqtrid sseq2d
+        cbs eqid biimpa lspssid syl2an2r wb crsp rspvalg fveq1d adantr mpbird )
+        BGHZCAIZJCCDKZIZCCBLKZMKZKZIZUJUNNHUKCUNSKZIZUQBOUJUKUSUJAURCUJABSKURFB
+        GPQRUACUOURUNURTUOTUBUCUJUMUQUDUKUJULUPCUJCDUOUJDBUEKUOEGBUFQUGRUHUI $.
     $}
   $}
 
