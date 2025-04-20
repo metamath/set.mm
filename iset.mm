@@ -157283,6 +157283,25 @@ $)
       ABJIUDEBFQSUBCBRIUEDFBTSUA $.
   $}
 
+  ${
+    rspcl.k $e |- K = ( RSpan ` R ) $.
+    ${
+      rspcl.b $e |- B = ( Base ` R ) $.
+      ${
+        rspcl.u $e |- U = ( LIdeal ` R ) $.
+        $( The span of a set of ring elements is an ideal.  (Contributed by
+           Stefan O'Rear, 3-Jan-2015.)  (Revised by Mario Carneiro,
+           2-Oct-2015.) $)
+        rspcl $p |- ( ( R e. Ring /\ G C_ B ) -> ( K ` G ) e. U ) $=
+          ( crg wcel wss wa cfv crglmod clspn clss clmod cbs eqtrid eqid sseq2d
+          rlmlmod rlmbasg biimpa lspcl syl2an2r wb crsp rspvalg fveq1d lidlvalg
+          clidl eleq12d adantr mpbird ) BIJZDAKZLDEMZCJZDBNMZOMZMZUTPMZJZUPUTQJ
+          UQDUTRMZKZVDBUBUPUQVFUPAVEDUPABRMVEGBIUCSUAUDVCDVAVEUTVETVCTVATUEUFUP
+          USVDUGUQUPURVBCVCUPDEVAUPEBUHMVAFIBUISUJUPCBULMVCHIBUKSUMUNUO $.
+      $}
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
