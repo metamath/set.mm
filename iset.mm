@@ -156806,11 +156806,8 @@ $)
                                      ( ( subringAlg ` w ) ` ( Base ` w ) ) ) $.
 
     $( Define the class of left ideals of a given ring.  An ideal is a
-       submodule of the ring viewed as a module over itself.  For the usual
-       textbook definition of a (left) ideal of a ring to be a subgroup of the
-       additive group of the ring which is closed under left-multiplication by
-       elements of the full ring, see ~ dflidl2 .  (Contributed by Stefan
-       O'Rear, 31-Mar-2015.) $)
+       submodule of the ring viewed as a module over itself.  (Contributed by
+       Stefan O'Rear, 31-Mar-2015.) $)
     df-lidl $a |- LIdeal = ( LSubSp o. ringLMod ) $.
 
     $( Define the linear span function in a ring (Ideal generator).
