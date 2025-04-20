@@ -157262,6 +157262,19 @@ $)
     $}
   $}
 
+  ${
+    lidl0.u $e |- U = ( LIdeal ` R ) $.
+    ${
+      lidl0.z $e |- .0. = ( 0g ` R ) $.
+      $( Every ring contains a zero ideal.  (Contributed by Stefan O'Rear,
+         3-Jan-2015.) $)
+      lidl0 $p |- ( R e. Ring -> { .0. } e. U ) $=
+        ( crg wcel crglmod cfv c0g csn clss clmod rlmlmod eqid lsssn0 syl rlm0g
+        eqtrid sneqd clidl lidlvalg 3eltr4d ) AFGZAHIZJIZKZUELIZCKBUDUEMGUGUHGA
+        NUHUEUFUFOUHOPQUDCUFUDCAJIUFEAFRSTUDBAUAIUHDFAUBSUC $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
