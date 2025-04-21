@@ -157319,6 +157319,20 @@ $)
         ICKZBIULUFUGMGUKUINAOUJUGUHUHPUJPQRUFULUIBUJUFBASIUJDFAUATUFCUHUFCAJIUH
         EAFUBTUCZUDUMUE $.
     $}
+
+    ${
+      rspssp.u $e |- U = ( LIdeal ` R ) $.
+      $( The ideal span of a set of elements in a ring is contained in any
+         subring which contains those elements.  (Contributed by Stefan O'Rear,
+         3-Jan-2015.) $)
+      rspssp $p |- ( ( R e. Ring /\ I e. U /\ G C_ I ) -> ( K ` G ) C_ I ) $=
+        ( crg wcel wss w3a cfv crglmod clspn clmod clss 3ad2ant1 wb eqtrid eqid
+        rlmlmod simp2 clidl lidlvalg eleq2d mpbid lspssp syl3anc rspvalg fveq1d
+        simp3 crsp sseq1d mpbird ) AHIZDBIZCDJZKZCELZDJZCAMLZNLZLZDJZURVAOIZDVA
+        PLZIZUQVDUOUPVEUQAUAQURUPVGUOUPUQUBUOUPUPVGRUQUOBVFDUOBAUCLVFGHAUDSUEQU
+        FUOUPUQUKVFCDVBVAVFTVBTUGUHUOUPUTVDRUQUOUSVCDUOCEVBUOEAULLVBFHAUISUJUMQ
+        UN $.
+    $}
   $}
 
 
