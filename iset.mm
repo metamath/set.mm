@@ -157884,6 +157884,16 @@ $)
     df-zlm $a |- ZMod = ( g e. _V |-> ( ( g
       sSet <. ( Scalar ` ndx ) , ZZring >. )
       sSet <. ( .s ` ndx ) , ( .g ` g ) >. ) ) $.
+
+    $( Define the ring of integers ` mod n ` .  This is literally the quotient
+       ring of ` ZZ ` by the ideal ` n ZZ ` , but we augment it with a total
+       order.  (Contributed by Mario Carneiro, 14-Jun-2015.)  (Revised by AV,
+       12-Jun-2019.) $)
+    df-zn $a |- Z/nZ = ( n e. NN0 |-> [_ ZZring / z ]_
+      [_ ( z /s ( z ~QG ( ( RSpan ` z ) ` { n } ) ) ) / s ]_
+      ( s sSet <. ( le ` ndx ) , [_ ( ( ZRHom ` s ) |`
+      if ( n = 0 , ZZ , ( 0 ..^ n ) ) ) / f ]_
+        ( ( f o. <_ ) o. `' f ) >. ) ) $.
   $}
 
 
