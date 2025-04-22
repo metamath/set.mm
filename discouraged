@@ -8423,7 +8423,6 @@
 "idhmop" is used by "opsqrlem6".
 "idi" is used by "dvmptfprod".
 "idi" is used by "dvnprodlem1".
-"idi" is used by "fprodcnlem".
 "idi" is used by "imo72b2lem0".
 "idi" is used by "limsupvaluz2".
 "idi" is used by "madjusmdetlem2".
@@ -10025,6 +10024,30 @@
 "mulclsr" is used by "sqgt0sr".
 "mulcmpblnr" is used by "mulsrmo".
 "mulcmpblnrlem" is used by "mulcmpblnr".
+"mulcn" is used by "cmvthOLD".
+"mulcn" is used by "cnrehmeoOLD".
+"mulcn" is used by "cxpcnOLD".
+"mulcn" is used by "dipcn".
+"mulcn" is used by "divccnOLD".
+"mulcn" is used by "divcnOLD".
+"mulcn" is used by "dvcnp2OLD".
+"mulcn" is used by "dvcobrOLD".
+"mulcn" is used by "dvfsumleOLD".
+"mulcn" is used by "dvfsumlem2OLD".
+"mulcn" is used by "dvmulbrOLD".
+"mulcn" is used by "efrlimOLD".
+"mulcn" is used by "expcnOLD".
+"mulcn" is used by "icchmeoOLD".
+"mulcn" is used by "iihalf1cnOLD".
+"mulcn" is used by "iihalf2cnOLD".
+"mulcn" is used by "iimulcnOLD".
+"mulcn" is used by "ipasslem7".
+"mulcn" is used by "mulcncfOLD".
+"mulcn" is used by "negcncfOLD".
+"mulcn" is used by "plycnOLD".
+"mulcn" is used by "psercn2OLD".
+"mulcn" is used by "reparphtiOLD".
+"mulcn" is used by "taylthlem2".
 "mulcnsr" is used by "axcnre".
 "mulcnsr" is used by "axi2m1".
 "mulcnsr" is used by "axmulf".
@@ -16465,6 +16488,7 @@ New usage of "eelTTT" is discouraged (0 uses).
 New usage of "eeorOLD" is discouraged (0 uses).
 New usage of "eexinst01" is discouraged (2 uses).
 New usage of "eexinst11" is discouraged (2 uses).
+New usage of "efrlimOLD" is discouraged (0 uses).
 New usage of "eighmorth" is discouraged (0 uses).
 New usage of "eighmre" is discouraged (1 uses).
 New usage of "eigorth" is discouraged (1 uses).
@@ -17321,7 +17345,7 @@ New usage of "idcnop" is discouraged (2 uses).
 New usage of "iddii" is discouraged (1 uses).
 New usage of "iden2" is discouraged (0 uses).
 New usage of "idhmop" is discouraged (6 uses).
-New usage of "idi" is discouraged (10 uses).
+New usage of "idi" is discouraged (9 uses).
 New usage of "idiALT" is discouraged (12 uses).
 New usage of "idiVD" is discouraged (0 uses).
 New usage of "idleop" is discouraged (1 uses).
@@ -17940,6 +17964,7 @@ New usage of "mulclprlem" is discouraged (1 uses).
 New usage of "mulclsr" is discouraged (11 uses).
 New usage of "mulcmpblnr" is discouraged (1 uses).
 New usage of "mulcmpblnrlem" is discouraged (1 uses).
+New usage of "mulcn" is discouraged (24 uses).
 New usage of "mulcncfOLD" is discouraged (0 uses).
 New usage of "mulcnsr" is discouraged (5 uses).
 New usage of "mulcnsrec" is discouraged (3 uses).
@@ -20486,6 +20511,7 @@ Proof modification of "eelTTT" is discouraged (50 steps).
 Proof modification of "eeorOLD" is discouraged (38 steps).
 Proof modification of "eexinst01" is discouraged (15 steps).
 Proof modification of "eexinst11" is discouraged (19 steps).
+Proof modification of "efrlimOLD" is discouraged (2283 steps).
 Proof modification of "el021old" is discouraged (18 steps).
 Proof modification of "el0321old" is discouraged (20 steps).
 Proof modification of "el1" is discouraged (12 steps).
