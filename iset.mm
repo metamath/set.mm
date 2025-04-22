@@ -157870,6 +157870,22 @@ $)
   $( The ring of integers modulo ` n ` . $)
   czn $a class Z/nZ $.
 
+  ${
+    $d n z s f r $.
+    $( Define the unique homomorphism from the integers into a ring.  This
+       encodes the usual notation of ` n = 1r + 1r + ... + 1r ` for integers
+       (see also ~ df-mulg ).  (Contributed by Mario Carneiro, 13-Jun-2015.)
+       (Revised by AV, 12-Jun-2019.) $)
+    df-zrh $a |- ZRHom = ( r e. _V |-> U. ( ZZring RingHom r ) ) $.
+
+    $( Augment an abelian group with vector space operations to turn it into a
+       ` ZZ ` -module.  (Contributed by Mario Carneiro, 2-Oct-2015.)  (Revised
+       by AV, 12-Jun-2019.) $)
+    df-zlm $a |- ZMod = ( g e. _V |-> ( ( g
+      sSet <. ( Scalar ` ndx ) , ZZring >. )
+      sSet <. ( .s ` ndx ) , ( .g ` g ) >. ) ) $.
+  $}
+
 
 $(
 ###############################################################################
