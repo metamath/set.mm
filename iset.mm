@@ -156755,21 +156755,19 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-  Ideals
+  Subring algebras and ideals
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  The subring algebra; ideals
+  Subring algebras
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
   $c subringAlg $.
   $c ringLMod $.
-  $c RSpan $. $( Ring span function $)
-  $c LIdeal $.
 
   $( Extend class notation with the subring algebra generator. $)
   csra $a class subringAlg $.
@@ -156777,12 +156775,6 @@ $)
   $( Extend class notation with the left module induced by a ring over
      itself. $)
   crglmod $a class ringLMod $.
-
-  $( Ring left-ideal function. $)
-  clidl $a class LIdeal $.
-
-  $( Ring span function. $)
-  crsp $a class RSpan $.
 
   ${
     $d w s $.
@@ -156804,15 +156796,6 @@ $)
        O'Rear, 6-Dec-2014.) $)
     df-rgmod $a |- ringLMod = ( w e. _V |->
                                      ( ( subringAlg ` w ) ` ( Base ` w ) ) ) $.
-
-    $( Define the class of left ideals of a given ring.  An ideal is a
-       submodule of the ring viewed as a module over itself.  (Contributed by
-       Stefan O'Rear, 31-Mar-2015.) $)
-    df-lidl $a |- LIdeal = ( LSubSp o. ringLMod ) $.
-
-    $( Define the linear span function in a ring (Ideal generator).
-       (Contributed by Stefan O'Rear, 4-Apr-2015.) $)
-    df-rsp $a |- RSpan = ( LSpan o. ringLMod ) $.
   $}
 
   ${
@@ -157056,21 +157039,6 @@ $)
       ( va wcel cbs cfv csra cvv crglmod df-rgmod wceq fveq2 fveq12d elex eqidd
       cv ssidd id sraex fvmptd3 ) BADZCBCPZEFZUBGFZFBEFZBGFZFZHIHCJUBBKUCUEUDUF
       UBBGLUBBELMBANUAUGUEBAUAUGOUAUEQUARST $.
-
-    $( Value of the set of ring ideals.  (Contributed by Stefan O'Rear,
-       31-Mar-2015.) $)
-    lidlvalg $p |- ( W e. V
-        -> ( LIdeal ` W ) = ( LSubSp ` ( ringLMod ` W ) ) ) $=
-      ( wcel clidl cfv clss crglmod ccom df-lidl fveq1i cvv wfn wceq rlmfn elex
-      fvco2 sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAOKFGBPQR
-      $.
-
-    $( Value of the ring span function.  (Contributed by Stefan O'Rear,
-       4-Apr-2015.) $)
-    rspvalg $p |- ( W e. V
-        -> ( RSpan ` W ) = ( LSpan ` ( ringLMod ` W ) ) ) $=
-      ( wcel crsp cfv clspn crglmod ccom df-rsp fveq1i cvv wfn wceq rlmfn fvco2
-      elex sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAPKFGBOQR $.
   $}
 
   $( Base set of the ring module.  (Contributed by Stefan O'Rear,
@@ -157153,6 +157121,50 @@ $)
       VHUEIZLZVHVFFVIWFVFVEVHSGZHZVIWFQVDWHVEVDKSNBSGWHUFBDUGWHSBKBKUHUAUIUJZFV
       HESUKULUMVFWIWGVHQWJFVHESUNULTUOVEVPWDQVDVEVPAFVJOZMLWDAFVJEMUPVEWKWCMAFE
       VIUQUOTRVDVTWEQVEBDURUSUTVAVBVCT $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Ideals and spans
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c LIdeal $.
+  $c RSpan $. $( Ring span function $)
+
+  $( Ring left-ideal function. $)
+  clidl $a class LIdeal $.
+
+  $( Ring span function. $)
+  crsp $a class RSpan $.
+
+  $( Define the class of left ideals of a given ring.  An ideal is a submodule
+     of the ring viewed as a module over itself.  (Contributed by Stefan
+     O'Rear, 31-Mar-2015.) $)
+  df-lidl $a |- LIdeal = ( LSubSp o. ringLMod ) $.
+
+  $( Define the linear span function in a ring (Ideal generator).  (Contributed
+     by Stefan O'Rear, 4-Apr-2015.) $)
+  df-rsp $a |- RSpan = ( LSpan o. ringLMod ) $.
+
+  ${
+    $d W a $.
+
+    $( Value of the set of ring ideals.  (Contributed by Stefan O'Rear,
+       31-Mar-2015.) $)
+    lidlvalg $p |- ( W e. V
+        -> ( LIdeal ` W ) = ( LSubSp ` ( ringLMod ` W ) ) ) $=
+      ( wcel clidl cfv clss crglmod ccom df-lidl fveq1i cvv wfn wceq rlmfn elex
+      fvco2 sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAOKFGBPQR
+      $.
+
+    $( Value of the ring span function.  (Contributed by Stefan O'Rear,
+       4-Apr-2015.) $)
+    rspvalg $p |- ( W e. V
+        -> ( RSpan ` W ) = ( LSpan ` ( ringLMod ` W ) ) ) $=
+      ( wcel crsp cfv clspn crglmod ccom df-rsp fveq1i cvv wfn wceq rlmfn fvco2
+      elex sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAPKFGBOQR $.
   $}
 
   ${
