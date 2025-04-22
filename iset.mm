@@ -157851,6 +157851,27 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Algebraic constructions based on the complex numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c ZRHom $. $( Map the integers into a field $)
+  $c ZMod $. $( Turn an abelian group into a ZZ-module $)
+  $c Z/nZ $. $( Integers mod n $)
+
+  $( Map the rationals into a field, or the integers into a ring. $)
+  czrh $a class ZRHom $.
+
+  $( Augment an abelian group with vector space operations to turn it into a
+     ` ZZ ` -module. $)
+  czlm $a class ZMod $.
+
+  $( The ring of integers modulo ` n ` . $)
+  czn $a class Z/nZ $.
+
+
+$(
 ###############################################################################
   BASIC TOPOLOGY
 ###############################################################################
@@ -175452,6 +175473,21 @@ htmldef "CCfld" as "&#8450;<SUB>fld</SUB>";
 htmldef "ZZring" as "&#8484;<SUB>ring</SUB>";
   althtmldef "ZZring" as "&#8484;<SUB>ring</SUB>";
   latexdef "ZZring" as "\mathrm{ZZring}";
+htmldef "ZRHom" as
+    "<IMG SRC='bbz.gif' WIDTH=13 HEIGHT=19 ALT=' Z' TITLE='Z'>RHom";
+  althtmldef "ZRHom" as "&#8484;RHom";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "ZRHom" as "\mathrm{ZRHom}";
+htmldef "ZMod" as
+    "<IMG SRC='bbz.gif' WIDTH=13 HEIGHT=19 ALT=' Z' TITLE='Z'>Mod";
+  althtmldef "ZMod" as "&#8484;Mod";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "ZMod" as "\mathrm{ZMod}";
+htmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
+    /* 2-Jan-2016 reverted sans-serif */
+  althtmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "Z/nZ" as "\mathrm{Z/nZ}";
 htmldef "fBas" as
     "<IMG SRC='_fbas.gif' WIDTH=29 HEIGHT=19 ALT=' fBas' TITLE='fBas'>";
   althtmldef "fBas" as "fBas";
