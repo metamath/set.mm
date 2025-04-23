@@ -148750,6 +148750,18 @@ $)
   $}
 
   ${
+    $d G n x $.
+    $( Existence of the group multiple operation.  (Contributed by Jim Kingdon,
+       22-Apr-2025.) $)
+    mulgex $p |- ( G e. V -> ( .g ` G ) e. _V ) $=
+      ( vn vx wcel cmg cfv cbs cc0 wceq c0g clt wbr cplusg cif cvv eqid sylancr
+      cz cv cn csn cxp c1 cseq cneg cminusg cmpo mulgfvalg zex wfn elex funfvex
+      basfn funfni mpoexga eqeltrd ) ABEZAFGZCDSAHGZCTZIJAKGZIVALMVAANGZUADTUBU
+      CUDUEZGVAUFVDGAUGGZGOOZUHZPDUTVCUSCAVEBVBUTQVCQVBQVEQUSQUIURSPEUTPEZVGPEU
+      JURHPUKAPEVHUNABULVHPAHAHUMUORCDSUTVFPPUPRUQ $.
+  $}
+
+  ${
     $d B u v n x $.  $d G u v n x $.  $d V u v n x $.
     mulgfn.b $e |- B = ( Base ` G ) $.
     mulgfn.t $e |- .x. = ( .g ` G ) $.
