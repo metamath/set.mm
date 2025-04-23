@@ -157926,6 +157926,44 @@ $)
       OVAVBVC $.
   $}
 
+  ${
+    zlmbas.w $e |- W = ( ZMod ` G ) $.
+    ${
+      zlmlem.2 $e |- E = Slot ( E ` ndx ) $.
+      zlmlem.nn $e |- ( E ` ndx ) e. NN $.
+      zlmlem.3 $e |- ( E ` ndx ) =/= ( Scalar ` ndx ) $.
+      zlmlem.4 $e |- ( E ` ndx ) =/= ( .s ` ndx ) $.
+      $( Lemma for ~ zlmbasg and ~ zlmplusgg .  (Contributed by Mario Carneiro,
+         2-Oct-2015.)  (Revised by AV, 3-Nov-2024.) $)
+      zlmlemg $p |- ( G e. V -> ( E ` G ) = ( E ` W ) ) $=
+        ( wcel cnx csca cfv czring cop csts cvv wceq cn crg cvsca cslot scaslid
+        co cmg simpri zringring setsex mp3an23 mulgex ndxslid setsslnid syl2anc
+        vscaslid mpan2 eqid zlmval fveq2d 3eqtr4d ) BCJZBKLMZNOPUDZAMZVBKUAMZBU
+        EMZOPUDZAMZBAMZDAMUTVBQJZVEQJVCVGRUTVASJZNTJZVILVAUBRVJUCUFZUGVANBCTSUH
+        UIBCUJQVEVDAQVBAKAMFGUKZIUAVDUBRVDSJUNUFULUMUTVKVHVCRUGCNVAATBVMHVLULUO
+        UTDVFAVEBCDEVEUPUQURUS $.
+    $}
+
+    ${
+      zlmbas.2 $e |- B = ( Base ` G ) $.
+      $( Base set of a ` ZZ ` -module.  (Contributed by Mario Carneiro,
+         2-Oct-2015.)  (Revised by AV, 3-Nov-2024.) $)
+      zlmbasg $p |- ( G e. V -> B = ( Base ` W ) ) $=
+        ( wcel cbs cfv baseid basendxnn cnx csca scandxnbasendx vscandxnbasendx
+        necomi cvsca zlmlemg eqtrid ) BCGABHIDHIFHBCDEJKLMILHIZNPLQITOPRS $.
+    $}
+
+    ${
+      zlmplusg.2 $e |- .+ = ( +g ` G ) $.
+      $( Group operation of a ` ZZ ` -module.  (Contributed by Mario Carneiro,
+         2-Oct-2015.)  (Revised by AV, 3-Nov-2024.) $)
+      zlmplusgg $p |- ( G e. V -> .+ = ( +g ` W ) ) $=
+        ( wcel cfv plusgid plusgndxnn cnx csca scandxnplusgndx vscandxnplusgndx
+        cplusg necomi cvsca zlmlemg eqtrid ) BCGABOHDOHFOBCDEIJKLHKOHZMPKQHTNPR
+        S $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
