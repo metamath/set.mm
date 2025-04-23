@@ -17601,6 +17601,8 @@ New usage of "lhpmcvr5N" is discouraged (1 uses).
 New usage of "lhpmcvr6N" is discouraged (1 uses).
 New usage of "lhpoc2N" is discouraged (1 uses).
 New usage of "lhprelat3N" is discouraged (0 uses).
+New usage of "lidl0ALT" is discouraged (0 uses).
+New usage of "lidl1ALT" is discouraged (0 uses).
 New usage of "linepsubN" is discouraged (0 uses).
 New usage of "linepsubclN" is discouraged (0 uses).
 New usage of "lkreqN" is discouraged (2 uses).
@@ -20986,6 +20988,8 @@ Proof modification of "joincomALT" is discouraged (83 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
 Proof modification of "lediv2aALT" is discouraged (264 steps).
+Proof modification of "lidl0ALT" is discouraged (48 steps).
+Proof modification of "lidl1ALT" is discouraged (47 steps).
 Proof modification of "lsslspOLD" is discouraged (256 steps).
 Proof modification of "luk-1" is discouraged (73 steps).
 Proof modification of "luk-2" is discouraged (52 steps).
