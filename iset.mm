@@ -49952,6 +49952,12 @@ $)
       DMZCNUHOAUDCPSQUEBRTUEBUAUBUC $.
   $}
 
+  $( A function value of a function value at a proper class is the empty set.
+     (Contributed by AV, 8-Apr-2021.) $)
+  fv2prc $p |- ( -. A e. _V -> ( ( F ` A ) ` B ) = (/) ) $=
+    ( cvv wcel wn cfv c0 fvprc fveq1d 0fv eqtrdi ) ADEFZBACGZGBHGHMBNHACIJBKL
+    $.
+
   ${
     $d y A $.  $d y B $.  $d y C $.  $d y F $.  $d x y $.
     $( Move class substitution in and out of a function value.  (Contributed by
@@ -156749,6 +156755,601 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Subring algebras and ideals
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subring algebras
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c subringAlg $.
+  $c ringLMod $.
+
+  $( Extend class notation with the subring algebra generator. $)
+  csra $a class subringAlg $.
+
+  $( Extend class notation with the left module induced by a ring over
+     itself. $)
+  crglmod $a class ringLMod $.
+
+  ${
+    $d w s $.
+    $( Any ring can be regarded as a left algebra over any of its subrings.
+       The function ` subringAlg ` associates with any ring and any of its
+       subrings the left algebra consisting in the ring itself regarded as a
+       left algebra over the subring.  It has an inner product which is simply
+       the ring product.  (Contributed by Mario Carneiro, 27-Nov-2014.)
+       (Revised by Thierry Arnoux, 16-Jun-2019.) $)
+    df-sra $a |- subringAlg = ( w e. _V |-> ( s e. ~P ( Base ` w ) |->
+                          ( ( ( w sSet <. ( Scalar ` ndx ) , ( w |`s s ) >. )
+                                  sSet <. ( .s ` ndx ) , ( .r ` w ) >. )
+                                  sSet <. ( .i ` ndx ) , ( .r ` w ) >. ) ) ) $.
+
+    $( Any ring can be regarded as a left algebra over itself.  The function
+       ` ringLMod ` associates with any ring the left algebra consisting in the
+       ring itself regarded as a left algebra over itself.  It has an inner
+       product which is simply the ring product.  (Contributed by Stefan
+       O'Rear, 6-Dec-2014.) $)
+    df-rgmod $a |- ringLMod = ( w e. _V |->
+                                     ( ( subringAlg ` w ) ` ( Base ` w ) ) ) $.
+  $}
+
+  ${
+    $d s S $.  $d s V $.  $d s w W $.
+    $( Lemma for ~ srabaseg through ~ sravscag .  (Contributed by Mario
+       Carneiro, 27-Nov-2014.)  (Revised by Thierry Arnoux, 16-Jun-2019.) $)
+    sraval $p |- ( ( W e. V /\ S C_ ( Base ` W ) ) ->
+        ( ( subringAlg ` W ) ` S ) = ( ( ( W
+        sSet <. ( Scalar ` ndx ) , ( W |`s S ) >. )
+        sSet <. ( .s ` ndx ) , ( .r ` W ) >. )
+        sSet <. ( .i ` ndx ) , ( .r ` W ) >. ) ) $=
+      ( vs vw wcel cbs cfv cnx cress co cop csts cmulr cvv opeq2d oveq12d cslot
+      wceq cn wss wa csca cv cvsca cip csra cmpt elex adantr df-sra fveq2 pweqd
+      cpw id oveq1 mpteq12dv wfn basfn funfvex funfni mpan pwexd mptexd fvmptd3
+      syl simpr oveq2d oveq1d elpw2g 3syl mpbird simpl scaslid simpri a1i elexd
+      wb ressex syldan setsex syl3anc vscaslid mulrslid slotex ipslid fvmptd )
+      CBFZACGHZUAZUBZDACIUCHZCDUDZJKZLZMKZIUEHZCNHZLZMKZIUFHZWRLZMKZCWLCAJKZLZM
+      KZWSMKZXBMKZWIUNZCUGHZOWKCOFZXJDXIXCUHZSWHXKWJCBUIUJZXKECDEUDZGHZUNZXNWLX
+      NWMJKZLZMKZWQXNNHZLZMKZXAXTLZMKZUHXLOUGOEDUKXNCSZDXPYDXIXCYEXOWIXNCGULUMY
+      EYBWTYCXBMYEXSWPYAWSMYEXNCXRWOMYEUOYEXQWNWLXNCWMJUPPQYEXTWRWQXNCNULZPQYEX
+      TWRXAYFPQUQCOUIXKDXIXCOXKWIOGOURXKWIOFZUSYGOCGCGUTVAVBZVCVDVEVFWKWMASZUBZ
+      WTXGXBMYJWPXFWSMYJWOXECMYJWNXDWLYJWMACJWKYIVGVHPVHVIVIWKAXIFZWJWHWJVGWKXK
+      YGYKWJVRXMYHAWIOVJVKVLZWKXGOFZXATFZWROFZXHOFWKXFOFZWQTFZYOYMWKWHWLTFZXDOF
+      ZYPWHWJVMYRWKUCWLRSYRVNVOVPWHWJAOFYSWKAXIYLVQACBOVSVTWLXDCBOTWAWBYQWKUEWQ
+      RSYQWCVOVPWHYOWJCNBWDWEUJZWQWRXFOOTWAWBYNWKUFXARSYNWFVOVPYTXAWRXGOOTWAWBW
+      G $.
+
+    srapart.a $e |- ( ph -> A = ( ( subringAlg ` W ) ` S ) ) $.
+    srapart.s $e |- ( ph -> S C_ ( Base ` W ) ) $.
+    srapart.ex $e |- ( ph -> W e. X ) $.
+    ${
+      sralemg.1 $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
+      sralem.2 $e |- ( Scalar ` ndx ) =/= ( E ` ndx ) $.
+      sralem.3 $e |- ( .s ` ndx ) =/= ( E ` ndx ) $.
+      sralem.4 $e |- ( .i ` ndx ) =/= ( E ` ndx ) $.
+      $( Lemma for ~ srabaseg and similar theorems.  (Contributed by Mario
+         Carneiro, 4-Oct-2015.)  (Revised by Thierry Arnoux, 16-Jun-2019.)
+         (Revised by AV, 29-Oct-2024.) $)
+      sralemg $p |- ( ph -> ( E ` W ) = ( E ` A ) ) $=
+        ( cfv cnx wcel cvv wceq syl2anc cn csca cress co cop csts cvsca cip cbs
+        cmulr wfn basfn elexd funfvex funfni sylancr ssexd ressex cslot scaslid
+        necomi simpri setsslnid a1i setsex syl3anc mulrslid slotex syl vscaslid
+        ipslid 3eqtrd csra wss sraval eqtrd fveq2d eqtr4d ) AEDNZEOUANZECUBUCZU
+        DUEUCZOUFNZEUINZUDUEUCZOUGNZWCUDUEUCZDNZBDNAVRWADNZWDDNZWGAEFPZVTQPZVRW
+        HRIAWJCQPWKIACEUHNZQAUHQUJEQPWLQPZUKAEFIULWMQEUHEUHUMUNUOHUPCEFQUQSZFVT
+        VSDQEJVSODNZKUTUAVSURRVSTPZUSVAZVBSAWAQPZWCQPZWHWIRAWJWPWKWRIWPAWQVCWNV
+        SVTEFQTVDVEZAWJWSIEUIFVFVGVHZQWCWBDQWAJWBWOLUTUFWBURRWBTPZVIVAZVBSAWDQP
+        ZWSWIWGRAWRXBWSXDWTXBAXCVCXAWBWCWAQQTVDVEXAQWCWEDQWDJWEWOMUTUGWEURRWETP
+        VJVAVBSVKABWFDABCEVLNNZWFGAWJCWLVMXEWFRIHCFEVNSVOVPVQ $.
+    $}
+
+    $( Base set of a subring algebra.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.)  (Revised by Mario Carneiro, 4-Oct-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.)  (Revised by AV, 29-Oct-2024.) $)
+    srabaseg $p |- ( ph -> ( Base ` W ) = ( Base ` A ) ) $=
+      ( cbs baseslid scandxnbasendx vscandxnbasendx ipndxnbasendx sralemg ) ABC
+      IDEFGHJKLMN $.
+
+    $( Additive operation of a subring algebra.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.)  (Revised by Mario Carneiro, 4-Oct-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.)  (Revised by AV, 29-Oct-2024.) $)
+    sraaddgg $p |- ( ph -> ( +g ` W ) = ( +g ` A ) ) $=
+      ( plusgslid scandxnplusgndx vscandxnplusgndx ipndxnplusgndx sralemg
+      cplusg ) ABCNDEFGHIJKLM $.
+
+    $( Multiplicative operation of a subring algebra.  (Contributed by Stefan
+       O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro, 4-Oct-2015.)
+       (Revised by Thierry Arnoux, 16-Jun-2019.)  (Revised by AV,
+       29-Oct-2024.) $)
+    sramulrg $p |- ( ph -> ( .r ` W ) = ( .r ` A ) ) $=
+      ( cmulr mulrslid scandxnmulrndx vscandxnmulrndx ipndxnmulrndx sralemg ) A
+      BCIDEFGHJKLMN $.
+
+    $( The set of scalars of a subring algebra.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.)  (Revised by Mario Carneiro, 4-Oct-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.)  (Proof shortened by AV, 12-Nov-2024.) $)
+    srascag $p |- ( ph -> ( W |`s S ) = ( Scalar ` A ) ) $=
+      ( cnx csca cfv co cvv wcel wceq cn scaslid simpri cbs syl2anc cress cvsca
+      cop csts cmulr cip cslot a1i wfn basfn elexd funfvex funfni sylancr ssexd
+      ressex setsex syl3anc mulrslid slotex syl vscandxnscandx necomi setsslnid
+      vscaslid wne slotsdifipndx ipslid setsslid csra wss sraval fveq2d 3eqtr4d
+      eqtrd ) ADIJKZDCUALZUCUDLZJKZVRIUBKZDUEKZUCUDLZIUFKZWAUCUDLZJKZVQBJKAVSWB
+      JKZWEAVRMNZWAMNZVSWFOADENZVPPNZVQMNZWGHWJAJVPUGOWJQRUHAWICMNWKHACDSKZMASM
+      UIDMNZWLMNZUJADEHUKZWNMDSDSULUMUNGUOCDEMUPTZVPVQDEMPUQURZAWIWHHDUEEUSUTVA
+      ZMWAVTJMVRQVTVPVBVCUBVTUGOVTPNZVERZVDTAWBMNZWHWFWEOAWGWSWHXAWQWSAWTUHWRVT
+      WAVRMMPUQURWRMWAWCJMWBQVTWCVFVPWCVFVGRUFWCUGOWCPNVHRVDTVOAWIWKVQVSOHWPEVQ
+      JMDQVITABWDJABCDVJKKZWDFAWMCWLVKXBWDOWOGCMDVLTVOVMVN $.
+
+    $( The scalar product operation of a subring algebra.  (Contributed by
+       Stefan O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro, 4-Oct-2015.)
+       (Revised by Thierry Arnoux, 16-Jun-2019.)  (Proof shortened by AV,
+       12-Nov-2024.) $)
+    sravscag $p |- ( ph -> ( .r ` W ) = ( .s ` A ) ) $=
+      ( cnx cfv co cop csts cvsca cvv wcel wceq cn cbs syl2anc csca cress cmulr
+      cip cslot scaslid simpri a1i wfn basfn elexd funfvex funfni sylancr ssexd
+      ressex setsex syl3anc vscaslid slotex syl wne slotsdifipndx simpli ipslid
+      mulrslid setsslnid setsslid csra wss sraval eqtrd fveq2d 3eqtr4d ) ADIUAJ
+      ZDCUBKZLMKZINJZDUCJZLMKZNJZVTIUDJZVSLMKZNJZVSBNJAVTOPZVSOPZWAWDQAVQOPZVRR
+      PZWFWEADEPZVORPZVPOPZWGHWJAUAVOUEQWJUFUGUHAWICOPWKHACDSJZOASOUIDOPZWLOPZU
+      JADEHUKZWNODSDSULUMUNGUOCDEOUPTVOVPDEORUQURZWHANVRUEQWHUSUGUHAWIWFHDUCEVF
+      UTVAZVRVSVQOORUQURWQOVSWBNOVTUSVRWBVBVOWBVBVCVDUDWBUEQWBRPVEUGVGTAWGWFVSW
+      AQWPWQOVSNOVQUSVHTABWCNABCDVIJJZWCFAWMCWLVJWRWCQWOGCODVKTVLVMVN $.
+
+    $( The inner product operation of a subring algebra.  (Contributed by
+       Thierry Arnoux, 16-Jun-2019.) $)
+    sraipg $p |- ( ph -> ( .r ` W ) = ( .i ` A ) ) $=
+      ( cfv cnx co cop csts cip cvv wcel wceq cn cbs syl2anc cmulr csca scaslid
+      cress cvsca cslot simpri a1i wfn basfn elexd funfvex funfni sylancr ssexd
+      ressex setsex syl3anc vscaslid mulrslid slotex syl ipslid setsslid sraval
+      csra wss eqtrd fveq2d eqtr4d ) ADUAIZDJUBIZDCUDKZLMKZJUEIZVKLMKZJNIVKLMKZ
+      NIZBNIAVPOPZVKOPZVKVRQAVNOPZVORPZVTVSADEPZVLRPZVMOPZWAHWDAUBVLUFQWDUCUGUH
+      AWCCOPWEHACDSIZOASOUIDOPZWFOPZUJADEHUKZWHODSDSULUMUNGUOCDEOUPTVLVMDEORUQU
+      RWBAUEVOUFQWBUSUGUHAWCVTHDUAEUTVAVBZVOVKVNOORUQURWJOVKNOVPVCVDTABVQNABCDV
+      FIIZVQFAWGCWFVGWKVQQWIGCODVETVHVIVJ $.
+
+    $( Topology component of a subring algebra.  (Contributed by Mario
+       Carneiro, 4-Oct-2015.)  (Revised by Thierry Arnoux, 16-Jun-2019.)
+       (Revised by AV, 29-Oct-2024.) $)
+    sratsetg $p |- ( ph -> ( TopSet ` W ) = ( TopSet ` A ) ) $=
+      ( cts tsetslid cnx cfv csca wne cvsca slotstnscsi simp1i necomi simp2i
+      cip simp3i sralemg ) ABCIDEFGHJKILZKMLZUCUDNZUCKOLZNZUCKTLZNZPQRUCUFUEUGU
+      IPSRUCUHUEUGUIPUARUB $.
+
+    $( Existence of a subring algebra.  (Contributed by Jim Kingdon,
+       16-Apr-2025.) $)
+    sraex $p |- ( ph -> A e. _V ) $=
+      ( cfv cvv cnx co cop csts wcel cbs wceq cn cslot simpri cress cvsca cmulr
+      csra csca cip wss sraval syl2anc scaslid a1i basfn funfvex funfni sylancr
+      wfn elexd ssexd ressex setsex syl3anc vscaslid mulrslid slotex syl ipslid
+      eqeltrd ) ABCDUDIIZJFAVHDKUEIZDCUALZMNLZKUBIZDUCIZMNLZKUFIZVMMNLZJADEOZCD
+      PIZUGVHVPQHGCEDUHUIAVNJOZVOROZVMJOZVPJOAVKJOZVLROZWAVSAVQVIROZVJJOZWBHWDA
+      UEVISQWDUJTUKAVQCJOWEHACVRJAPJUPDJOVRJOZULADEHUQWFJDPDPUMUNUOGURCDEJUSUIV
+      IVJDEJRUTVAWCAUBVLSQWCVBTUKAVQWAHDUCEVCVDVEZVLVMVKJJRUTVAVTAUFVOSQVTVFTUK
+      WGVOVMVNJJRUTVAVGVG $.
+
+    $( Topology component of a subring algebra.  (Contributed by Mario
+       Carneiro, 4-Oct-2015.)  (Revised by Thierry Arnoux, 16-Jun-2019.) $)
+    sratopng $p |- ( ph -> ( TopOpen ` W ) = ( TopOpen ` A ) ) $=
+      ( cvv srabaseg sratsetg sraex topnpropgd ) ADBEIABCDEFGHJABCDEFGHKHABCDEF
+      GHLM $.
+
+    $( Distance function of a subring algebra.  (Contributed by Mario Carneiro,
+       4-Oct-2015.)  (Revised by Thierry Arnoux, 16-Jun-2019.)  (Revised by AV,
+       29-Oct-2024.) $)
+    sradsg $p |- ( ph -> ( dist ` W ) = ( dist ` A ) ) $=
+      ( cds dsslid cnx cfv csca wne cvsca cip slotsdnscsi simp1i necomi simp2i
+      simp3i sralemg ) ABCIDEFGHJKILZKMLZUCUDNZUCKOLZNZUCKPLZNZQRSUCUFUEUGUIQTS
+      UCUHUEUGUIQUASUB $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d R x y $.  $d V x y $.
+    sraring.1 $e |- A = ( ( subringAlg ` R ) ` V ) $.
+    sraring.2 $e |- B = ( Base ` R ) $.
+    $( Condition for a subring algebra to be a ring.  (Contributed by Thierry
+       Arnoux, 24-Jul-2023.) $)
+    sraring $p |- ( ( R e. Ring /\ V C_ B ) -> A e. Ring ) $=
+      ( vx vy crg wcel wss wa cbs cfv wceq a1i cv cplusg oveqdr cmulr id adantl
+      simpl csra sseqtrdi srabaseg eqtrid sraaddgg sramulrg ringpropd mpbid ) C
+      IJZDBKZLZULAIJULUMUCZUNGHBCABCMNZOUNFPUNBUPAMNFUNADCIADCUDNNOUNEPZUMDUPKU
+      LUMDBUPUMUAFUEUBZUOUFUGUNGQBJHQBJLZGHCRNARNUNADCIUQURUOUHSUNUSGHCTNATNUNA
+      DCIUQURUOUISUJUK $.
+  $}
+
+  ${
+    $d x y z S $.  $d x y A $.  $d x y z W $.
+    sralmod.a $e |- A = ( ( subringAlg ` W ) ` S ) $.
+    $( The subring algebra is a left module.  (Contributed by Stefan O'Rear,
+       27-Nov-2014.) $)
+    sralmod $p |- ( S e. ( SubRing ` W ) -> A e. LMod ) $=
+      ( vx vy vz cfv wcel cplusg co crg wceq eqid eqidd cv w3a elin2d syl13anc
+      wa csubrg cbs cin cmulr cur cress csra subrgss subrgrcl srabaseg sraaddgg
+      a1i srascag sravscag ressbasd ressplusgd ressmulrg mpdan subrg1 subrgring
+      id ringgrpd oveqdr grppropd mpbid 3ad2ant1 elinel2 3ad2ant2 simp3 syl3anc
+      ringcl adantr simpr1 simpr2 simpr3 ringdir ringass ringlidm sylan islmodd
+      cgrp ringdi ) BCUAHZIZEFGBCUBHZUCZCJHZWGCUDHZWHCUEHZCBUFKZWEAWDABCLABCUGH
+      HMWDDULZBWECWENZUHZBCUIZUJZWDABCLWKWMWNUKZWDABCLWKWMWNUMWDABCLWKWMWNUNWDB
+      WEWJWCCLWDWJOZWDWEOZWNWDVAZUOWDBWGCWJWCLWQWDWGOWSWNUPWDCLIZWHWJUDHMWNBCWJ
+      WHWCLWJNZWHNZUQURBCWJWIXAWINZUSBCWJXAUTWDCWAIAWAIWDCWNVBWDEFWECAWRWOWDEPZ
+      WEIZFPZWEIZTEFWGAJHWPVCVDVEWDXDWFIZXGQWTXEXGXDXFWHKZWEIWDXHWTXGWNVFXHWDXE
+      XGXDBWEVGVHWDXHXGVIWECWHXDXFWLXBVKVJWDXHXGGPZWEIZQZTZWTXEXGXKXDXFXJWGKWHK
+      XIXDXJWHKZWGKMWDWTXLWNVLXMBWEXDWDXHXGXKVMRWDXHXGXKVNWDXHXGXKVOWEWGCWHXDXF
+      XJWLWGNZXBWBSWDXHXFWFIZXKQZTZWTXEXGXKXDXFWGKXJWHKXNXFXJWHKZWGKMWDWTXQWNVL
+      ZXRBWEXDWDXHXPXKVMRZXRBWEXFWDXHXPXKVNRZWDXHXPXKVOZWEWGCWHXDXFXJWLXOXBVPSX
+      RWTXEXGXKXIXJWHKXDXSWHKMXTYAYBYCWECWHXDXFXJWLXBVQSWDWTXEWIXDWHKXDMWNWECWH
+      WIXDWLXBXCVRVSVT $.
+  $}
+
+  ${
+    $d a b A $.  $d a b ph $.  $d a b W $.
+    sralmod0.a $e |- ( ph -> A = ( ( subringAlg ` W ) ` S ) ) $.
+    sralmod0.z $e |- ( ph -> .0. = ( 0g ` W ) ) $.
+    sralmod0.s $e |- ( ph -> S C_ ( Base ` W ) ) $.
+    sralmod0g.w $e |- ( ph -> W e. X ) $.
+    $( The subring module inherits a zero from its ring.  (Contributed by
+       Stefan O'Rear, 27-Dec-2014.) $)
+    sralmod0g $p |- ( ph -> .0. = ( 0g ` A ) ) $=
+      ( va vb c0g cfv cbs cvv eqidd cv wcel cplusg srabaseg wa sraaddgg oveqdr
+      sraex grpidpropdg eqtrd ) AFDMNBMNHAKLDONZDBEPAUHQABCDEGIJUAJABCDEGIJUEAK
+      RUHSLRUHSUBKLDTNBTNABCDEGIJUCUDUFUG $.
+  $}
+
+  ${
+    $d x y .0. $.  $d x y D $.  $d x y I $.  $d x y .+ $.  $d x y ph $.
+    $d x y S $.  $d x y .x. $.
+    issubrgd.s $e |- ( ph -> S = ( I |`s D ) ) $.
+    issubrgd.z $e |- ( ph -> .0. = ( 0g ` I ) ) $.
+    issubrgd.p $e |- ( ph -> .+ = ( +g ` I ) ) $.
+    issubrgd.ss $e |- ( ph -> D C_ ( Base ` I ) ) $.
+    issubrgd.zcl $e |- ( ph -> .0. e. D ) $.
+    issubrgd.acl $e |- ( ( ph /\ x e. D /\ y e. D ) -> ( x .+ y ) e. D ) $.
+    issubrgd.ncl $e |- ( ( ph /\ x e. D ) -> ( ( invg ` I ) ` x ) e. D ) $.
+    issubrgd.o $e |- ( ph -> .1. = ( 1r ` I ) ) $.
+    issubrgd.t $e |- ( ph -> .x. = ( .r ` I ) ) $.
+    issubrgd.ocl $e |- ( ph -> .1. e. D ) $.
+    issubrgd.tcl $e |- ( ( ph /\ x e. D /\ y e. D ) -> ( x .x. y ) e. D ) $.
+    issubrgd.g $e |- ( ph -> I e. Ring ) $.
+    $( Prove a subring by closure (definition version).  (Contributed by Stefan
+       O'Rear, 7-Dec-2014.) $)
+    issubrgd $p |- ( ph -> D e. ( SubRing ` I ) ) $=
+      ( csubrg cfv wcel csubg cur cv cmulr wral crg cgrp ringgrp syl issubgrpd2
+      co eqeltrrd wa oveqdr 3expb ralrimivva w3a wb cbs eqid issubrg2 mpbir3and
+      ) ADIUCUDUEZDIUFUDUEZIUGUDZDUEZBUHZCUHZIUIUDZUPZDUEZCDUJBDUJZABCDEFIJKLMN
+      OPQAIUKUEZIULUEUBIUMUNUOAHVJDRTUQAVPBCDDAVLDUEZVMDUEZURZURVLVMGUPZVODAWAB
+      CGVNSUSAVSVTWBDUEUAUTUQVAAVRVHVIVKVQVBVCUBBCDIVDUDZIVNVJWCVEVJVEVNVEVFUNV
+      G $.
+  $}
+
+  ${
+    $d W a $.
+    $( ` ringLMod ` is a function.  (Contributed by Stefan O'Rear,
+       6-Dec-2014.) $)
+    rlmfn $p |- ringLMod Fn _V $=
+      ( va cvv cv cbs cfv csra crglmod wcel wtru eqidd ssidd vex sraex df-rgmod
+      a1i mptru fnmpti ) ABACZDEZRFEEZGTBHITSRBITJISKRBHIALOMPANQ $.
+
+    $( Value of the ring module.  (Contributed by Stefan O'Rear,
+       31-Mar-2015.) $)
+    rlmvalg $p |- ( W e. V
+        -> ( ringLMod ` W ) = ( ( subringAlg ` W ) ` ( Base ` W ) ) ) $=
+      ( va wcel cbs cfv csra cvv crglmod df-rgmod wceq fveq2 fveq12d elex eqidd
+      cv ssidd id sraex fvmptd3 ) BADZCBCPZEFZUBGFZFBEFZBGFZFZHIHCJUBBKUCUEUDUF
+      UBBGLUBBELMBANUAUGUEBAUAUGOUAUEQUARST $.
+  $}
+
+  $( Base set of the ring module.  (Contributed by Stefan O'Rear,
+     31-Mar-2015.) $)
+  rlmbasg $p |- ( R e. V -> ( Base ` R ) = ( Base ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs rlmvalg ssidd id srabaseg ) ABCZADEAFEZABBAGKLHKIJ
+    $.
+
+  $( Vector addition in the ring module.  (Contributed by Stefan O'Rear,
+     31-Mar-2015.) $)
+  rlmplusgg $p |- ( R e. V -> ( +g ` R ) = ( +g ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs rlmvalg ssidd id sraaddgg ) ABCZADEAFEZABBAGKLHKIJ
+    $.
+
+  $( Zero vector in the ring module.  (Contributed by Stefan O'Rear,
+     6-Dec-2014.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+  rlm0g $p |- ( R e. V -> ( 0g ` R ) = ( 0g ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs c0g rlmvalg eqidd ssidd id sralmod0g ) ABCZADEAFEZAB
+    AGEZBAHMOIMNJMKL $.
+
+  $( Subtraction in the ring module.  (Contributed by Thierry Arnoux,
+     30-Jun-2019.) $)
+  rlmsubg $p |- ( R e. V -> ( -g ` R ) = ( -g ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cvv rlmbasg rlmplusgg id wfn elex funfvex funfni sylancr
+    rlmfn grpsubpropdg ) ABCZAADEZBFABGABHQIQDFJAFCRFCZOABKSFADADLMNP $.
+
+  $( Ring multiplication in the ring module.  (Contributed by Mario Carneiro,
+     6-Oct-2015.) $)
+  rlmmulrg $p |- ( R e. V -> ( .r ` R ) = ( .r ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs rlmvalg ssidd id sramulrg ) ABCZADEAFEZABBAGKLHKIJ
+    $.
+
+  $( Scalar multiplication in the ring module.  (Contributed by Stefan O'Rear,
+     31-Mar-2015.) $)
+  rlmvscag $p |- ( R e. V -> ( .r ` R ) = ( .s ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs rlmvalg ssidd id sravscag ) ABCZADEAFEZABBAGKLHKIJ
+    $.
+
+  $( Topology component of the ring module.  (Contributed by Mario Carneiro,
+     6-Oct-2015.) $)
+  rlmtopng $p |- ( R e. V
+      -> ( TopOpen ` R ) = ( TopOpen ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs rlmvalg ssidd id sratopng ) ABCZADEAFEZABBAGKLHKIJ
+    $.
+
+  $( Metric component of the ring module.  (Contributed by Mario Carneiro,
+     6-Oct-2015.) $)
+  rlmdsg $p |- ( R e. V -> ( dist ` R ) = ( dist ` ( ringLMod ` R ) ) ) $=
+    ( wcel crglmod cfv cbs rlmvalg ssidd id sradsg ) ABCZADEAFEZABBAGKLHKIJ $.
+
+  $( The ring module is a module.  (Contributed by Stefan O'Rear,
+     6-Dec-2014.) $)
+  rlmlmod $p |- ( R e. Ring -> ( ringLMod ` R ) e. LMod ) $=
+    ( crg wcel crglmod cfv cbs csra rlmvalg csubrg eqid subrgid sralmod eqeltrd
+    clmod syl ) ABCZADEAFEZAGEEZNBAHPQAIECRNCQAQJKRQARJLOM $.
+
+  ${
+    $d x y R $.  $d x y V $.
+    $( Vector negation in the ring module.  (Contributed by Stefan O'Rear,
+       6-Dec-2014.)  (Revised by Mario Carneiro, 5-Jun-2015.) $)
+    rlmvnegg $p |- ( R e. V -> ( invg ` R ) = ( invg ` ( ringLMod ` R ) ) ) $=
+      ( vx vy wcel cbs cfv crglmod cvv eqidd rlmbasg id wfn elex funfvex funfni
+      rlmfn sylancr cv cplusg wa rlmplusgg oveqdr grpinvpropdg ) ABEZCDAFGZAAHG
+      ZBIUEUFJABKUELUEHIMAIEUGIEZQABNUHIAHAHOPRUECSUFEDSUFEUACDATGUGTGABUBUCUD
+      $.
+  $}
+
+  ${
+    $d R f x $.  $d V f $.  $d W f $.  $d X f x $.
+    $( The value of an infinite Cartesian product of the base of a left module
+       over a ring with a singleton.  (Contributed by AV, 3-Dec-2018.) $)
+    ixpsnbasval $p |- ( ( R e. V /\ X e. W )
+         -> X_ x e. { X } ( Base ` ( ( { X } X. { ( ringLMod ` R ) } ) ` x ) )
+            = { f | ( f Fn { X } /\ ( f ` X ) e. ( Base ` R ) ) } ) $=
+      ( wcel wa csn cv crglmod cfv cbs wfn csb cab wceq adantl cvv eqtrd funfni
+      cxp cixp ixpsnval cop rlmfn elex funfvex sylancr anim1ci xpsng syl fveq1d
+      fvsng fveq2d csbfv2g csbfvg rlmbasg adantr 3eqtr4d eleq2d anbi2d abbidv )
+      BDGZFEGZHZAFIZAJVGBKLZIUBZLZMLZUCZCJZVGNZFVMLZAFVKOZGZHZCPZVNVOBMLZGZHZCP
+      VEVLVSQVDAVKCEFUDRVFVRWBCVFVQWAVNVFVPVTVOVFFVILZMLZVHMLZVPVTVFWCVHMVFWCFF
+      VHUEIZLZVHVFFVIWFVFVEVHSGZHZVIWFQVDWHVEVDKSNBSGWHUFBDUGWHSBKBKUHUAUIUJZFV
+      HESUKULUMVFWIWGVHQWJFVHESUNULTUOVEVPWDQVDVEVPAFVJOZMLWDAFVJEMUPVEWKWCMAFE
+      VIUQUOTRVDVTWEQVEBDURUSUTVAVBVCT $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Ideals and spans
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c LIdeal $.
+  $c RSpan $. $( Ring span function $)
+
+  $( Ring left-ideal function. $)
+  clidl $a class LIdeal $.
+
+  $( Ring span function. $)
+  crsp $a class RSpan $.
+
+  $( Define the class of left ideals of a given ring.  An ideal is a submodule
+     of the ring viewed as a module over itself.  (Contributed by Stefan
+     O'Rear, 31-Mar-2015.) $)
+  df-lidl $a |- LIdeal = ( LSubSp o. ringLMod ) $.
+
+  $( Define the linear span function in a ring (Ideal generator).  (Contributed
+     by Stefan O'Rear, 4-Apr-2015.) $)
+  df-rsp $a |- RSpan = ( LSpan o. ringLMod ) $.
+
+  ${
+    $d W a $.
+
+    $( Value of the set of ring ideals.  (Contributed by Stefan O'Rear,
+       31-Mar-2015.) $)
+    lidlvalg $p |- ( W e. V
+        -> ( LIdeal ` W ) = ( LSubSp ` ( ringLMod ` W ) ) ) $=
+      ( wcel clidl cfv clss crglmod ccom df-lidl fveq1i cvv wfn wceq rlmfn elex
+      fvco2 sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAOKFGBPQR
+      $.
+
+    $( Value of the ring span function.  (Contributed by Stefan O'Rear,
+       4-Apr-2015.) $)
+    rspvalg $p |- ( W e. V
+        -> ( RSpan ` W ) = ( LSpan ` ( ringLMod ` W ) ) ) $=
+      ( wcel crsp cfv clspn crglmod ccom df-rsp fveq1i cvv wfn wceq rlmfn fvco2
+      elex sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAPKFGBOQR $.
+  $}
+
+  ${
+    $d a b j s w x $.
+    lidlmex.i $e |- I = ( LIdeal ` W ) $.
+    $( Existence of the set a left ideal is built from (when the ideal is
+       inhabited).  (Contributed by Jim Kingdon, 18-Apr-2025.) $)
+    lidlmex $p |- ( U e. I -> W e. _V ) $=
+      ( vw vj vs vx va vb wcel clidl cfv wfun clss crglmod cvv cv co wral cvsca
+      cdm wrel ccom wex cplusg csca cbs wa cpw crab df-lssm funmpt2 rlmfn fnfun
+      wfn ax-mp funco mp2an df-lidl funeqi mpbir funrel eleq2i biimpi relelfvdm
+      sylancr elexd ) ABKZCLUBZVILUCZACLMZKZCVJKLNZVKVNOPUDZNZONPNZVPEQFRGRZKFU
+      EHRIRERZUAMSJRVSUFMSVRKJVRTIVRTHVSUGMUHMTUIGVSUHMUJUKOHEFGIJULUMPQUPVQUNQ
+      PUOUQOPURUSLVOUTVAVBLVCUQVIVMBVLADVDVEACLVFVGVH $.
+  $}
+
+  ${
+    lidlss.b $e |- B = ( Base ` W ) $.
+    lidlss.i $e |- I = ( LIdeal ` W ) $.
+    $( An ideal is a subset of the base set.  (Contributed by Stefan O'Rear,
+       28-Mar-2015.) $)
+    lidlss $p |- ( U e. I -> U C_ B ) $=
+      ( wcel crglmod cfv cbs cvv clss wss wfn rlmfn lidlmex wceq eqtrid eqid
+      syl funfvex funfni sylancr clidl lidlvalg eleqtrd lssssg syl2anc sseqtrrd
+      id rlmbasg ) BCGZBDHIZJIZAULUMKGZBUMLIZGBUNMULHKNDKGZUOOBCDFPZUOKDHDHUAUB
+      UCULBCUPULUJULCDUDIZUPFULUQUSUPQURKDUETRUFUPBUNUMKUNSUPSUGUHULADJIZUNEULU
+      QUTUNQURDKUKTRUI $.
+  $}
+
+  ${
+    lidlssbas.l $e |- L = ( LIdeal ` R ) $.
+    lidlssbas.i $e |- I = ( R |`s U ) $.
+    $( The base set of the restriction of the ring to a (left) ideal is a
+       subset of the base set of the ring.  (Contributed by AV,
+       17-Feb-2020.) $)
+    lidlssbas $p |- ( U e. L -> ( Base ` I ) C_ ( Base ` R ) ) $=
+      ( wcel cbs cfv cvv cress co wceq a1i eqidd lidlmex id ressbasssd ) BDGZBA
+      HIZCDAJCABKLMSFNSTOBDAEPSQR $.
+
+    $( A (left) ideal of a ring is the base set of the restriction of the ring
+       to this ideal.  (Contributed by AV, 17-Feb-2020.) $)
+    lidlbas $p |- ( U e. L -> ( Base ` I ) = U ) $=
+      ( wcel cbs cfv cin cvv cress co wceq a1i eqid lidlmex id ressbasd wss
+      lidlss df-ss sylib eqtr3d ) BDGZBAHIZJZCHIBUEBUFCDAKCABLMNUEFOUFUFNUEUFPZ
+      OBDAEQUERSUEBUFTUGBNUFBDAUHEUABUFUBUCUD $.
+  $}
+
+  ${
+    lidlcl.u $e |- U = ( LIdeal ` R ) $.
+    ${
+      lidl0cl.z $e |- .0. = ( 0g ` R ) $.
+      $( An ideal contains 0.  (Contributed by Stefan O'Rear, 3-Jan-2015.) $)
+      lidl0cl $p |- ( ( R e. Ring /\ I e. U ) -> .0. e. I ) $=
+        ( crg wcel wa crglmod cfv c0g wceq rlm0g adantr clmod clss rlmlmod eqid
+        eqtrid simpr clidl lidlvalg eleqtrd lss0cl syl2an2r eqeltrd ) AGHZCBHZI
+        ZDAJKZLKZCUJDALKZULFUHUMULMUIAGNOTUHUKPHUICUKQKZHULCHARUJCBUNUHUIUAUJBA
+        UBKZUNEUHUOUNMUIGAUCOTUDUNCUKULULSUNSUEUFUG $.
+    $}
+
+    ${
+      lidlacl.p $e |- .+ = ( +g ` R ) $.
+      $( An ideal is closed under addition.  (Contributed by Stefan O'Rear,
+         3-Jan-2015.) $)
+      lidlacl $p |- ( ( ( R e. Ring /\ I e. U ) /\ ( X e. I /\ Y e. I ) ) ->
+          ( X .+ Y ) e. I ) $=
+        ( crg wcel wa co crglmod cfv cplusg wceq rlmplusgg eqtrid adantr eqid
+        oveqd ad2antrr clmod rlmlmod simpr clidl lidlvalg eleqtrd lssvacl sylan
+        clss jca eqeltrd ) BIJZDCJZKZEDJFDJKZKEFALZEFBMNZONZLZDUNURVAPUOUQUNAUT
+        EFUNABONUTHBIQRUAUBUPUSUCJZDUSUKNZJZKUQVADJUPVBVDUNVBUOBUDSUPDCVCUNUOUE
+        UNCVCPUOUNCBUFNVCGIBUGRSUHULUTVCDUSEFUTTVCTUIUJUM $.
+    $}
+
+    ${
+      lidlnegcl.n $e |- N = ( invg ` R ) $.
+      $( An ideal contains negatives.  (Contributed by Stefan O'Rear,
+         3-Jan-2015.) $)
+      lidlnegcl $p |- ( ( R e. Ring /\ I e. U /\ X e. I ) ->
+          ( N ` X ) e. I ) $=
+        ( crg wcel w3a cfv crglmod cminusg wceq rlmvnegg eqtrid fveq1d 3ad2ant1
+        clmod eqid rlmlmod wa simpr clidl lidlvalg adantr eleqtrd 3adant3 simp3
+        clss lssvnegcl syl3anc eqeltrd ) AHIZCBIZECIZJZEDKZEALKZMKZKZCUNUOURVAN
+        UPUNEDUTUNDAMKUTGAHOPQRUQUSSIZCUSUJKZIZUPVACIUNUOVBUPAUARUNUOVDUPUNUOUB
+        CBVCUNUOUCUNBVCNUOUNBAUDKVCFHAUEPUFUGUHUNUOUPUIVCCUTUSEVCTUTTUKULUM $.
+    $}
+
+    $d j x y I $.  $d j x y R $.  $d x y U $.
+    $( An ideal is a subgroup of the additive group.  (Contributed by Mario
+       Carneiro, 14-Jun-2015.) $)
+    lidlsubg $p |- ( ( R e. Ring /\ I e. U ) -> I e. ( SubGrp ` R ) ) $=
+      ( vj vx vy crg wcel wa csubg cfv cbs wss cv wex wral eqid syl ralrimiva
+      cplusg co cminusg lidlss adantl c0g lidl0cl elex2 lidlacl lidlnegcl 3expa
+      anassrs jca cgrp w3a wb ringgrp adantr issubg2m mpbir3and ) AHIZCBIZJZCAK
+      LIZCAMLZNZEOCIEPZFOZGOZAUALZUBCIZGCQZVHAUCLZLCIZJZFCQZVBVFVAVECBAVERZDUDU
+      EVCAUFLZCIVGABCVRDVRRUGEVRCUHSVCVOFCVCVHCIZJZVLVNVTVKGCVCVSVICIVKVJABCVHV
+      IDVJRZUIULTVAVBVSVNABCVMVHDVMRZUJUKUMTVCAUNIZVDVFVGVPUOUPVAWCVBAUQURFGEVE
+      VJCAVMVQWAWBUSSUT $.
+
+    ${
+      lidlsubcl.m $e |- .- = ( -g ` R ) $.
+      $( An ideal is closed under subtraction.  (Contributed by Stefan O'Rear,
+         28-Mar-2015.)  (Proof shortened by OpenAI, 25-Mar-2020.) $)
+      lidlsubcl $p |- ( ( ( R e. Ring /\ I e. U ) /\ ( X e. I /\ Y e. I ) ) ->
+          ( X .- Y ) e. I ) $=
+        ( crg wcel wa co w3a csubg cfv lidlsubg 3adant3 simp3l simp3r subgsubcl
+        syl3anc 3expa ) AIJZCBJZECJZFCJZKZEFDLCJZUCUDUGMCANOJZUEUFUHUCUDUIUGABC
+        GPQUCUDUEUFRUCUDUEUFSCADEFHTUAUB $.
+    $}
+  $}
+
+  ${
+    lidl0.u $e |- U = ( LIdeal ` R ) $.
+    ${
+      lidl0.z $e |- .0. = ( 0g ` R ) $.
+      $( Every ring contains a zero ideal.  (Contributed by Stefan O'Rear,
+         3-Jan-2015.) $)
+      lidl0 $p |- ( R e. Ring -> { .0. } e. U ) $=
+        ( crg wcel crglmod cfv c0g csn clss clmod rlmlmod eqid lsssn0 syl rlm0g
+        eqtrid sneqd clidl lidlvalg 3eltr4d ) AFGZAHIZJIZKZUELIZCKBUDUEMGUGUHGA
+        NUHUEUFUFOUHOPQUDCUFUDCAJIUFEAFRSTUDBAUAIUHDFAUBSUC $.
+    $}
+
+    lidl1.b $e |- B = ( Base ` R ) $.
+    $( Every ring contains a unit ideal.  (Contributed by Stefan O'Rear,
+       3-Jan-2015.) $)
+    lidl1 $p |- ( R e. Ring -> B e. U ) $=
+      ( crg wcel crglmod cfv cbs clss clmod rlmlmod eqid lss1 syl rlmbasg clidl
+      eqtrid lidlvalg 3eltr4d ) BFGZBHIZJIZUCKIZACUBUCLGUDUEGBMUEUDUCUDNUENOPUB
+      ABJIUDEBFQSUBCBRIUEDFBTSUA $.
+  $}
+
+  ${
+    rspcl.k $e |- K = ( RSpan ` R ) $.
+    ${
+      rspcl.b $e |- B = ( Base ` R ) $.
+      ${
+        rspcl.u $e |- U = ( LIdeal ` R ) $.
+        $( The span of a set of ring elements is an ideal.  (Contributed by
+           Stefan O'Rear, 3-Jan-2015.)  (Revised by Mario Carneiro,
+           2-Oct-2015.) $)
+        rspcl $p |- ( ( R e. Ring /\ G C_ B ) -> ( K ` G ) e. U ) $=
+          ( crg wcel wss wa cfv crglmod clspn clss clmod cbs eqtrid eqid sseq2d
+          rlmlmod rlmbasg biimpa lspcl syl2an2r wb crsp rspvalg fveq1d lidlvalg
+          clidl eleq12d adantr mpbird ) BIJZDAKZLDEMZCJZDBNMZOMZMZUTPMZJZUPUTQJ
+          UQDUTRMZKZVDBUBUPUQVFUPAVEDUPABRMVEGBIUCSUAUDVCDVAVEUTVETVCTVATUEUFUP
+          USVDUGUQUPURVBCVCUPDEVAUPEBUHMVAFIBUISUJUPCBULMVCHIBUKSUMUNUO $.
+      $}
+
+      $( The span of a set of ring elements contains those elements.
+         (Contributed by Stefan O'Rear, 3-Jan-2015.) $)
+      rspssid $p |- ( ( R e. Ring /\ G C_ B ) -> G C_ ( K ` G ) ) $=
+        ( crg wcel wss wa cfv crglmod clspn clmod rlmlmod rlmbasg eqtrid sseq2d
+        cbs eqid biimpa lspssid syl2an2r wb crsp rspvalg fveq1d adantr mpbird )
+        BGHZCAIZJCCDKZIZCCBLKZMKZKZIZUJUNNHUKCUNSKZIZUQBOUJUKUSUJAURCUJABSKURFB
+        GPQRUACUOURUNURTUOTUBUCUJUMUQUDUKUJULUPCUJCDUOUJDBUEKUOEGBUFQUGRUHUI $.
+    $}
+
+    ${
+      rsp0.z $e |- .0. = ( 0g ` R ) $.
+      $( The span of the zero element is the zero ideal.  (Contributed by
+         Stefan O'Rear, 3-Jan-2015.) $)
+      rsp0 $p |- ( R e. Ring -> ( K ` { .0. } ) = { .0. } ) $=
+        ( crg wcel crglmod cfv c0g csn clspn clmod wceq rlmlmod eqid lspsn0 syl
+        crsp eqtrid rspvalg rlm0g sneqd fveq12d 3eqtr4d ) AFGZAHIZJIZKZUGLIZIZU
+        ICKZBIULUFUGMGUKUINAOUJUGUHUHPUJPQRUFULUIBUJUFBASIUJDFAUATUFCUHUFCAJIUH
+        EAFUBTUCZUDUMUE $.
+    $}
+
+    ${
+      rspssp.u $e |- U = ( LIdeal ` R ) $.
+      $( The ideal span of a set of elements in a ring is contained in any
+         subring which contains those elements.  (Contributed by Stefan O'Rear,
+         3-Jan-2015.) $)
+      rspssp $p |- ( ( R e. Ring /\ I e. U /\ G C_ I ) -> ( K ` G ) C_ I ) $=
+        ( crg wcel wss w3a cfv crglmod clspn clmod clss 3ad2ant1 wb eqtrid eqid
+        rlmlmod simp2 clidl lidlvalg eleq2d mpbid lspssp syl3anc rspvalg fveq1d
+        simp3 crsp sseq1d mpbird ) AHIZDBIZCDJZKZCELZDJZCAMLZNLZLZDJZURVAOIZDVA
+        PLZIZUQVDUOUPVEUQAUAQURUPVGUOUPUQUBUOUPUPVGRUQUOBVFDUOBAUCLVFGHAUDSUEQU
+        FUOUPUQUKVFCDVBVAVFTVBTUGUHUOUPUTVDRUQUOUSVCDUOCEVBUOEAULLVBFHAUISUJUMQ
+        UN $.
+    $}
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
@@ -174798,6 +175399,18 @@ htmldef "LSpan" as
     "<IMG SRC='_lspan.gif' WIDTH=41 HEIGHT=19 ALT=' LSpan' TITLE='LSpan'>";
   althtmldef "LSpan" as "LSpan";
   latexdef "LSpan" as "\mathrm{LSpan}";
+htmldef "subringAlg" as "subringAlg ";
+  althtmldef "subringAlg" as "subringAlg ";
+  latexdef "subringAlg" as "\mathrm{subringAlg}";
+htmldef "ringLMod" as "ringLMod";
+  althtmldef "ringLMod" as "ringLMod";
+  latexdef "ringLMod" as "\mathrm{ringLMod}";
+htmldef "RSpan" as "RSpan";
+  althtmldef "RSpan" as "RSpan";
+  latexdef "RSpan" as "\mathrm{RSpan}";
+htmldef "LIdeal" as "LIdeal";
+  althtmldef "LIdeal" as "LIdeal";
+  latexdef "LIdeal" as "\mathrm{LIdeal}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
