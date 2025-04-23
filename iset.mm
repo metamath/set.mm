@@ -157962,6 +157962,16 @@ $)
         cplusg necomi cvsca zlmlemg eqtrid ) BCGABOHDOHFOBCDEIJKLHKOHZMPKQHTNPR
         S $.
     $}
+
+    ${
+      zlmmulr.2 $e |- .x. = ( .r ` G ) $.
+      $( Ring operation of a ` ZZ ` -module (if present).  (Contributed by
+         Mario Carneiro, 2-Oct-2015.)  (Revised by AV, 3-Nov-2024.) $)
+      zlmmulrg $p |- ( G e. V -> .x. = ( .r ` W ) ) $=
+        ( wcel cmulr cfv mulridx cnx cslot wceq cn mulrslid csca scandxnmulrndx
+        simpri necomi cvsca vscandxnmulrndx zlmlemg eqtrid ) BCGABHIDHIFHBCDEJH
+        KHIZLMUDNGORKPIUDQSKTIUDUASUBUC $.
+    $}
   $}
 
 
