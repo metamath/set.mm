@@ -157908,6 +157908,24 @@ $)
         ( ( f o. <_ ) o. `' f ) >. ) ) $.
   $}
 
+  ${
+    $d g G $.  $d g .x. $.
+    zlmval.w $e |- W = ( ZMod ` G ) $.
+    zlmval.m $e |- .x. = ( .g ` G ) $.
+    $( Augment an abelian group with vector space operations to turn it into a
+       ` ZZ ` -module.  (Contributed by Mario Carneiro, 2-Oct-2015.)  (Revised
+       by AV, 12-Jun-2019.) $)
+    zlmval $p |- ( G e. V -> W = ( ( G sSet <. ( Scalar ` ndx ) , ZZring >. )
+                                       sSet <. ( .s ` ndx ) , .x. >. ) ) $=
+      ( vg wcel czlm cfv cnx csca czring cop csts co cmg cvv wceq cn cv eqtr4di
+      cvsca df-zlm oveq1 fveq2 opeq2d oveq12d elex crg scaslid simpri zringring
+      cslot setsex mp3an23 vscaslid a1i mulgex eqeltrid syl3anc fvmptd3 eqtrid
+      ) BCHZDBIJBKLJZMNZOPZKUCJZANZOPZEVDGBGUAZVFOPZVHVKQJZNZOPVJRIRGUDVKBSZVLV
+      GVNVIOVKBVFOUEVOVMAVHVOVMBQJZAVKBQUFFUBUGUHBCUIVDVGRHZVHTHZARHVJRHVDVETHZ
+      MUJHVQLVEUNSVSUKULUMVEMBCUJTUOUPVRVDUCVHUNSVRUQULURVDAVPRFBCUSUTVHAVGRRTU
+      OVAVBVC $.
+  $}
+
 
 $(
 ###############################################################################
