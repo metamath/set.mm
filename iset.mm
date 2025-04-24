@@ -157972,6 +157972,17 @@ $)
         simpri necomi cvsca vscandxnmulrndx zlmlemg eqtrid ) BCGABHIDHIFHBCDEJH
         KHIZLMUDNGORKPIUDQSKTIUDUASUBUC $.
     $}
+
+    $( Scalar ring of a ` ZZ ` -module.  (Contributed by Mario Carneiro,
+       2-Oct-2015.)  (Revised by AV, 12-Jun-2019.)  (Proof shortened by AV,
+       2-Nov-2024.) $)
+    zlmsca $p |- ( G e. V -> ZZring = ( Scalar ` W ) ) $=
+      ( wcel cnx csca cfv czring cop csts co cvsca cvv wceq cn crg cslot simpri
+      scaslid zringring setsex mp3an23 mulgex vscandxnscandx vscaslid setsslnid
+      cmg necomi syl2anc setsslid mpan2 eqid zlmval fveq2d 3eqtr4d ) ABEZAFGHZI
+      JKLZGHZUSFMHZAUHHZJKLZGHZICGHUQUSNEZVBNEUTVDOUQURPEZIQEZVEGURROVFTSUAURIA
+      BQPUBUCABUDNVBVAGNUSTVAURUEUIMVAROVAPEUFSUGUJUQVGIUTOUABIGQATUKULUQCVCGVB
+      ABCDVBUMUNUOUP $.
   $}
 
 
