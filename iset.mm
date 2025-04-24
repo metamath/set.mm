@@ -157983,6 +157983,18 @@ $)
       JKLZGHZUSFMHZAUHHZJKLZGHZICGHUQUSNEZVBNEUTVDOUQURPEZIQEZVEGURROVFTSUAURIA
       BQPUBUCABUDNVBVAGNUSTVAURUEUIMVAROVAPEUFSUGUJUQVGIUTOUABIGQATUKULUQCVCGVB
       ABCDVBUMUNUOUP $.
+
+    ${
+      zlmvsca.2 $e |- .x. = ( .g ` G ) $.
+      $( Scalar multiplication operation of a ` ZZ ` -module.  (Contributed by
+         Mario Carneiro, 2-Oct-2015.) $)
+      zlmvscag $p |- ( G e. V -> .x. = ( .s ` W ) ) $=
+        ( wcel cnx csca cfv czring cop csts co cvsca cvv wceq cn crg cslot cmg
+        scaslid simpri setsex mp3an23 mulgex eqeltrid vscaslid setsslid syl2anc
+        zringring zlmval fveq2d eqtr4d ) BCGZABHIJZKLMNZHOJALMNZOJZDOJUOUQPGZAP
+        GAUSQUOUPRGZKSGUTIUPTQVAUBUCUKUPKBCSRUDUEUOABUAJPFBCUFUGPAOPUQUHUIUJUOD
+        UROABCDEFULUMUN $.
+    $}
   $}
 
 
