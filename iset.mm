@@ -157997,6 +157997,16 @@ $)
     $}
   $}
 
+  ${
+    $d f n s z .<_ $.  $d f n s z N $.  $d n s z U $.
+    znval.s $e |- S = ( RSpan ` ZZring ) $.
+    $( The set ` n ZZ ` is an ideal in ` ZZ ` .  (Contributed by Mario
+       Carneiro, 14-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+    znlidl $p |- ( N e. ZZ -> ( S ` { N } ) e. ( LIdeal ` ZZring ) ) $=
+      ( wcel czring crg csn wss cfv clidl zringring snssi zringbas eqid sylancr
+      cz rspcl ) BPDEFDBGZPHRAIEJIZDKBPLPESRACMSNQO $.
+  $}
+
 
 $(
 ###############################################################################
